@@ -130,7 +130,7 @@ Sous quelques minutes, le numéro renseigné recevra un appel. Décrochez et ind
 
 Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client, sinon il sera prioritaire sur la présentation de votre IPBX.
 
-![désactiver-anonyme](images/display-incoming-call-trunk-anonymous-step1.png){.thumbnail}
+![désactiver-anonyme](images/display-incoming-call-trunk-anonymous-step7.png){.thumbnail}
 
 Vous pouvez à présent configurer la présentation du numéro sur votre équipement IPBX.
 
