@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Obtenir mes identifiants PPPoE"
 slug: connectivity-api
 excerpt: 'Développez en utilisant notre API connectivity'
 section: 'Configurations techniques avancées'
