@@ -32,6 +32,10 @@ L'adresse à utiliser est la suivante :
 
 https://api.ovh.com/console/#/xdsl/%7BserviceName%7D/requestPPPLoginMail#POST
 
+Attention : 
+
+Chaque utilisation de l'API vous enverra un nouveau mot de passe, si la session est active elle sera donc coupée. N'utilisez donc l'API qu'en étant certain de pouvoir reconfigurer votre équipement personnel dans la foulée. 
+
 #### Aperçu
 
 ![api_pppoe](images/api_pppoe.png){.thumbnail}
@@ -46,9 +50,7 @@ En utilisant le bouton execute : l'API répondra alors "null" en cas de succès 
 
 Sous un délai d'environ deux à trois minutes, vous receverez un mail sur votre adresse de contact contenant les informations avec votre identifiant PPPoE et le mot de passe.
 
-Attention : 
 
-Chaque utilisation de l'API vous enverra un nouveau mot de passe, si la session est active elle sera donc coupée. N'utilisez donc l'API qu'en étant certain de pouvoir reconfigurer votre équipement personnel dans la foulée. 
 
 #### Retrouver ce mail dans mon espace client
 
