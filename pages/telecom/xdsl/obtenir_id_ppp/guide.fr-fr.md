@@ -48,6 +48,19 @@ Sous un délai d'environ deux à trois minutes, vous récupérer un mail sur vot
 
 Chaque utilisation de l'API vous enverra un nouveau mot de passe, si la session est active elle sera donc coupée. N'utilisez donc l'API qu'en étant certin de pouvoir reconfigurer votre équipement personnel dans la foulée. 
 
+#### Retrouver ce mail dans mon espace client
+
+
+Depuis votre espace client dans les emails de service : 
+
+![email_recus](images/email_recus.png){.thumbnail}
+
+![email_recus](images/mailtype.png){.thumbnail}
+
+![email_recus](images/contenumailtyperesetppp.png){.thumbnail}
+
+
+
 > [!primary]
 >
 > Vous devez vérifier l'état de la tâche, et réessayer quelques secondes plus tard si la tâche est toujours en état "doing" (en attente).
