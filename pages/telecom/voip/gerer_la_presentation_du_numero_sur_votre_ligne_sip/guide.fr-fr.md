@@ -15,7 +15,11 @@ Votre ligne téléphonique OVHcloud vous permet de recevoir et d'émettre des ap
 
 ## Prérequis
 
-- Disposer d'au moins deux [lignes VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}, d'une [ligne VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/) et un [numéro alias OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/), ou d'une ligne Trunk.
+- Disposer de (au choix) :
+    - deux [lignes VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external};
+    - une [ligne VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/) et un [numéro alias OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/);
+    - une [ligne Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk/);
+    - un [pack SIP Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk-forfait-inclus/).
 - Posséder un [forfait compatible](https://www.ovhtelecom.fr/telephonie/services_inclus/){.external} avec le service « Fonctionnalités du téléphone ».
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`.
 
@@ -58,12 +62,12 @@ Dans le cas d'une offre Trunk, voici les configurations possibles.
 
 Dès que vous êtes prêt, poursuivez la lecture de cette documentation en fonction de la configuration que vous souhaitez mettre en place.
 
-- [Masquer son numéro](./#masquer-son-numero) (depuis l'espace client).
-- [Présenter de manière unique un numéro OVHcloud](./#presenter-de-maniere-unique-un-numero-ovhcloud) (depuis l'espace client).
-- [Présenter « à la volée » un numéro OVHcloud](./#presenter-a-la-volee-un-numero-ovhcloud) (depuis votre propre équipement IPBX).
-- [Présenter « à la volée » un numéro externe](./#presenter-a-la-volee-un-numero-externe) (depuis votre propre équipement IPBX).
+- [Rester anonyme](#rester-anonyme) (depuis l'espace client OVHcloud).
+- [Présenter de manière unique un numéro OVHcloud](#presenter-numero-unique) (depuis l'espace client OVHcloud).
+- [Présenter « à la volée » un numéro OVHcloud](#presenter-numero-volee) (depuis votre propre équipement IPBX).
+- [Présenter « à la volée » un numéro externe](#presenter-numero-volee-externe) (depuis votre propre équipement IPBX).
 
-#### Rester anonyme
+#### Rester anonyme <a name="rester-anonyme"></a>
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne Trunk concernée.
 
@@ -75,7 +79,7 @@ La page qui s'affiche vous indique la configuration actuelle de la présentation
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-anonymous-step1.png){.thumbnail}
 
-#### Présenter de manière unique un numéro OVHcloud
+#### Présenter de manière unique un numéro OVHcloud <a name="presenter-numero-unique"></a>
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne Trunk concernée.
 
@@ -90,7 +94,7 @@ Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step2.png){.thumbnail}
 
 
-#### Présenter « à la volée » un numéro OVHcloud
+#### Présenter « à la volée » un numéro OVHcloud <a name="presenter-numero-volee"></a>
 
 > [!warning]
 >
@@ -101,7 +105,7 @@ Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.
 > - le numéro pour lequel vous souhaitez modifier la présentation dispose bien d'une redirection avec présentation. Si besoin, reportez-vous aux instructions décrites dans notre documentation [Créer une redirection avec présentation](../creer-redirection-avec-presentation/).
 >
 
-**Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client, sinon il sera prioritaire sur la présentation de votre IPBX.**
+**Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client OVHcloud, sinon il sera prioritaire sur la présentation de votre IPBX.**
 
 Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne Trunk concernée.
 
@@ -116,13 +120,13 @@ Décochez la case `Rester anonyme`{.action}, puis cliquez sur le bouton `Appliqu
 Vous pouvez à présent configurer la présentation du numéro sur votre équipement IPBX.
 
 > [!primary]
-> 
+> 
 > - Des connaissances avancées sur l'équipement que vous utilisez sont nécessaires pour pouvoir le configurer. Nous vous recommandons de faire appel à un prestataire spécialisé ou de vous rapprocher du constructeur de l'équipement si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
 > 
 > - Il ne sera pas possible de présenter à la volée le même numéro depuis deux lignes Trunk différentes.
 >
 
-#### Présenter « à la volée » un numéro Externe
+#### Présenter « à la volée » un numéro externe <a name="presenter-numero-volee-externe"></a>
 
 La présentation d'un numéro externe depuis votre IPBX nécessite la validation du numéro souhaité.
 
@@ -142,8 +146,7 @@ Sous quelques minutes, le numéro renseigné recevra un appel. Décrochez et ind
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step5.png){.thumbnail}
 
-
-**Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client, sinon il sera prioritaire sur la présentation de votre IPBX.**
+**Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client OVHcloud. Dans le cas contraire, il sera prioritaire sur la présentation de votre IPBX.**
 
 Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne Trunk concernée.
 
@@ -158,7 +161,7 @@ Décochez la case `Rester anonyme`{.action}, puis cliquez sur le bouton `Appliqu
 Vous pouvez à présent configurer la présentation du numéro sur votre équipement IPBX.
 
 > [!primary]
-> 
+> 
 > - Des connaissances avancées sur l'équipement que vous utilisez sont nécessaires pour pouvoir le configurer. Nous vous recommandons de faire appel à un prestataire spécialisé ou de vous rapprocher du constructeur de l'équipement si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
 > 
 > - Il ne sera pas possible de présenter à la volée le même numéro depuis deux lignes Trunk différentes.
