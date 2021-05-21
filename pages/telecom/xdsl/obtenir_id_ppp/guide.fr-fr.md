@@ -6,8 +6,6 @@ section: 'Configurations techniques avancées'
 order: 5
 ---
 
-> [!primary]
-
 **Dernière mise à jour le 21/05/2021**
 
 ## Objectif
