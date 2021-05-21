@@ -1,95 +1,76 @@
 ---
-title: Monitoring
+title: Activer une alerte de monitoring
 slug: monitoring
-legacy_guide_number: '7962638'
-space_key: CRXDSL
-space_name: XDSL
+excerpt: Découvrez comment activer des notifications par e-mail ou SMS pour vous alerter en cas d'injoignabilité d'un accès à Internet
 section: Diagnostic et dépannage
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 10/05/2021**
 
-Le monitoring permet de vous alerter lorsque votre accès n'est plus joignable selon une fréquence définie. Les notifications sont envoyées par e-mail ou par SMS. (Il faut que votre compte SMS soit crédité.)
+## Objectif
 
-**Sommaire :**
+Le monitoring permet de vous alerter, selon une fréquence définie par vos soins, lorsque votre accès n'est plus joignable. Les notifications seront envoyées lorsque votre accès ne répondra plus aux requêtes ICMP (ping).
+Les notifications sont envoyées par e-mail ou par SMS (il est alors nécessaire de disposer d'un compte SMS OVHcloud crédité).
 
-Niveau : Débutant
+**Découvrez comment activer des alertes de monitoring sur un accès à Internet OVHcloud.**
 
-------------------------------------------------------------------------
+### Prérequis
 
-### Prérequis {#prérequis}
+- Disposer d'un accès ADSL / SDSL / FTTH qui répond aux requêtes ICMP (c'est le cas par défaut sur les modems distribués par OVHcloud).
+- Une adresse e-mail pour recevoir les notifications.
+- Un [compte SMS crédité](https://www.ovhtelecom.fr/sms/) si vous souhaitez recevoir les SMS de notifications sur votre mobile.
+- Etre connecté à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr).
 
--   Disposer d'un accès ADSL / SDSL qui répond aux requêtes ICMP (OK par défaut sur les modems distribués par OVH).
--   Une adresse e-mail pour recevoir les notifications.
--   Un compte SMS crédité si vous souhaitez recevoir les SMS de notifications sur votre mobile.
+## En pratique
 
-------------------------------------------------------------------------
+Pour pouvoir gérer vos alertes, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) dans la partie `Telecom`{.action}. 
+<br>Cliquez sur `Accès Internet`{.action}, sélectionnez votre offre puis votre accès à Internet.
 
-### Notifications par e-mail {#notifications-par-e-mail}
+Dans l'onglet `Mon accès`{.action}, cliquez sur `Afficher les alertes`{.action} dans le cadre `Informations générales`.
 
-Pour créer une notification par e-mail :
+![espace client](images/espace-client.png){.thumbnail}
 
--   Connectez-vous à votre Espace Client : <https://www.ovhtelecom.fr/espaceclient/>.
--   Cliquez sur l'onglet "**Configuration**".
--   Cliquez sur l'icône "**xDSL**".
--   Cliquez sur "**Notifications Monitoring**".
--   Cliquez ensuite sur "**Créer des notifications e-mail**".
--   Sélectionnez la ligne xDSL pour laquelle vous souhaitez recevoir les notifications par e-mail.
--   Vous arrivez alors sur le formulaire de création de notification.
+Vous arrivez alors sur le formulaire de création de notifications.
 
-![](images/2015-05-21-163407_1284x553_scrot.png){.thumbnail}
+![afficher alertes](images/XDSL%20monitoring.png){.thumbnail}
 
--   Dans le champ "**e-mail**", entrez l'adresse à notifier.
--   Le lien "**Ajouter un e-mail supplémentaire**" vous permet d'ajouter d'autres adresses e-mails à notifier.
--   La partie "**fréquence**" vous permet de choisir la fréquence des notifications e-mail lors d'une coupure.
+### Activer les notifications par e-mail
+
+Pour créer une notification par e-mail, cliquez sur `Ajouter une alerte`{.action}. 
+
+Sélectionnez « E-mail » dans le menu déroulant correspondant au type de notification.
+
+Renseignez l'adresse e-mail à notifier dans le champ `Contact à notifier en cas d'alertes`.
+<br>Précisez, dans le champ `Fréquence d'envoi`, la fréquence d'envoi des notifications par e-mail lors d'une coupure. Si vous sélectionnez « Une fois », vous recevrez un e-mail lors de la coupure et un e-mail lors du rétablissement de l’accès à Internet concerné.
+
+Validez l'alerte via le bouton dédié, à droite de la ligne.
 
 Si vous ajoutez une adresse commune à plusieurs accès, vous recevrez un seul e-mail contenant toutes les notifications de coupure.
 
--   Cliquez sur le bouton "**Suivant**" pour accéder à la confirmation de création.
--   Cliquez sur "**Oui**" pour valider la création.
+![notification e-mail](images/XDSL%20Monitoring%20alerte.png){.thumbnail}
 
-Les notifications seront effectives lorsque votre accès ne répondra plus aux requêtes ICMP (ping).
+### Activer les notifications par SMS
 
-------------------------------------------------------------------------
+Pour créer une notification par SMS, cliquez sur `Ajouter une alerte`{.action}.
 
-### Notifications par SMS {#notifications-par-sms}
+Sélectionnez « SMS » dans le menu déroulant correspondant au type de notification. 
 
--   Connectez-vous à votre Espace Client : <https://www.ovhtelecom.fr/espaceclient/>.
--   Cliquez sur l'onglet "**Configuration**".
--   Cliquez sur l'icône "**xDSL**".
--   Cliquez sur "**Notifications Monitoring**".
--   Cliquez ensuite sur "**Créer des notifications SMS**".
--   Sélectionnez la ligne xDSL pour laquelle vous souhaitez recevoir les notifications par e-mail.
--   Vous arrivez alors sur le formulaire de création de notification :
+Choisissez, dans le champ `Compte SMS à débiter`, le compte SMS à utiliser pour envoyer les notifications. 
+<br>Renseignez, dans le champ `Numéro de téléphone`, le numéro de mobile à notifier, au format international (00336xxxxxxxx).
+<br>Précisez, dans le champ `Fréquence d'envoi`, la fréquence d'envoi des notifications SMS lors d'une coupure.Si vous sélectionnez « Une fois », vous recevrez un SMS lors de la coupure et un SMS lors du rétablissement de l’accès à Internet concerné.
 
-![](images/2015-05-21-173630_1260x579_scrot.png){.thumbnail}
+Validez l'alerte via le bouton dédié, à droite de la ligne.
 
--   Dans le champ "**Numéro de téléphone**", entrez le numéro de mobile à notifier au format **International**.
--   Dans le champ "**Compte SMS à débiter**", choisissez le compte SMS à utiliser pour envoyer les notifications.
--   Dans la partie "**Fréquence**", choisissez la fréquence des notifications SMS lors d'une coupure.
--   Cliquez sur le bouton "**Suivant**" pour accéder à la confirmation de création.
+![notification SMS](images/XDSL%20Monitoring%20alerte.png){.thumbnail}
 
--   Cliquez sur "**Oui**" pour valider la création.
+Les SMS vous prévenant de l'injoignabilité de votre accès à Internet, ou de son rétablissement, se présentent sous la forme suivante :
 
-    ![](images/Screenshot_2015-05-25-08-33-15.png){.thumbnail}
+![sms d'alerte](images/XDSL-monitoring-alertes-sms.png){.thumbnail}
 
-Vous recevrez un SMS indiquant la perte de votre accès.
+### Supprimer une alerte
 
-------------------------------------------------------------------------
+Pour supprimer une alerte préalablement activée, cliquez sur l'icône prévue à cet effet à droite de l'alerte. Confirmez la suppression en cliquant sur `OK`{.action}.
 
-### Supprimer les notifications {#supprimer-les-notifications}
+## Aller plus loin
 
-Vous pouvez, si vous le souhaitez, supprimer une ou la totalité des notifications en place. Pour ce faire :
-
--   Connectez-vous à votre Espace Client : <https://www.ovhtelecom.fr/espaceclient/>.
--   Cliquez sur l'onglet "**Configuration**".
--   Cliquez sur l'icône "**xDSL**".
--   Cliquez sur "**Notifications Monitoring**".
--   Sélectionnez l'accès concerné par les suppressions.
--   Cochez la ou les notifications à supprimer.
-
-![](images/2015-05-25-083329_957x378_scrot.png){.thumbnail}
-
--   Cliquez sur "**Suivant**" pour accéder à la confirmation de suppression.
--   Cliquez sur "**Oui**" pour confirmer la suppression.
-
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
