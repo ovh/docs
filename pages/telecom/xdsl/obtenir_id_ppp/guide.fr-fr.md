@@ -36,17 +36,19 @@ https://api.ovh.com/console/#/xdsl/%7BserviceName%7D/requestPPPLoginMail#POST
 
 ![api_pppoe](images/api_pppoe.png){.thumbnail}
 
-Le champs servicename est la référence interne de votre accès :
+Le champ servicename correspond à la référence de votre accès :
 
-Pour un accès xdsl vous aurez cela sous la forme : xdsl-nichandle-x 
+ - Pour un accès xdsl vous aurez cela sous la forme : xdsl-nichandle-x 
 
-Pour un accès ftth : ftth-nichandle-x 
+ - Pour un accès ftth : ftth-nichandle-x 
 
-Avec le bouton execute : l'API répondra alors "null" confirmant la bonne pris en compte de votre demande.
+En utilisant le bouton execute : l'API répondra alors "null" en cas de succès confirmant la bonne pris en compte de votre demande. Dans le cas contraitre n'hésitez à faire le point avec votre support.
 
-Sous un délai d'environ deux à trois minutes, vous récupérer un mail sur votre adresse de contact contenant les informations avec votre identifiant PPPoE et le mot de passe.
+Sous un délai d'environ deux à trois minutes, vous receverez un mail sur votre adresse de contact contenant les informations avec votre identifiant PPPoE et le mot de passe.
 
-Chaque utilisation de l'API vous enverra un nouveau mot de passe, si la session est active elle sera donc coupée. N'utilisez donc l'API qu'en étant certin de pouvoir reconfigurer votre équipement personnel dans la foulée. 
+Attention : 
+
+Chaque utilisation de l'API vous enverra un nouveau mot de passe, si la session est active elle sera donc coupée. N'utilisez donc l'API qu'en étant certain de pouvoir reconfigurer votre équipement personnel dans la foulée. 
 
 #### Retrouver ce mail dans mon espace client
 
