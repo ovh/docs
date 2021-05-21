@@ -10,17 +10,18 @@ order: 5
 > Une version en langue anglaise de ce guide est disponible [ici](https://docs.ovh.com/gb/en/xdsl/connectivity-api/)
 >
 
-**Dernière mise à jour le 07/12/2020**
+**Dernière mise à jour le 21/05/2021**
 
 ## Objectif
 
-Cette documentation a pour objectif d'aider les développeurs à utiliser nos API, afin de créer leurs propres applications.
+Cette documentation a pour objectif de vous permettre d'obtenir vos identifiants PPPoe afin de connecter votre routeur personnel sur votre offre XDSL/FTTH OVHCloud.
 
 ## Prérequis
 
 - Disposer d'un compte OVHcloud actif et connaître ses identifiants.
 - Être sur la page web des [API OVHcloud](https://api.ovh.com/){.external}.
 - Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+- Disposer d'un abonnement xDSL(ADSL/VDSL)ou FTTH actif.
 
 ## En pratique
 
