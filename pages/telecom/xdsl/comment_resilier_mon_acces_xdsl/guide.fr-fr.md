@@ -5,7 +5,7 @@ excerpt: Découvrez comment demander la résiliation de votre accès Internet
 section: Gestion de mon offre
 ---
 
-**Dernière mise à jour le 04/11/2020**
+**Dernière mise à jour le 21/05/2021**
 
 ## Objectif
 
@@ -15,8 +15,11 @@ La résiliation sera effective à la prochaine facturation de votre accès à In
 ## Prérequis
 
 - Disposer d'un accès xDSL/FTTH actif.
-- Pour les accès Packsiptrunk il faut demander la résiliation via un ticket créé dans "demande d'assistance" afin que le support puisse la mettre en place.
 - Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`.
+
+> [!primary]
+> La résiliation d'un [pack SIP Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk/) doit faire l'objet d'une [« demande d'assistance »](https://www.ovh.com/manager/dedicated/index.html#/support/tickets) via l'espace-client OVHcloud afin que les équipes du support la mettent en place.
+> 
 
 ## En pratique
 
