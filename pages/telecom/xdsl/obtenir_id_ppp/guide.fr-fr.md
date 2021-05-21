@@ -7,14 +7,12 @@ order: 5
 ---
 
 > [!primary]
-> Une version en langue anglaise de ce guide est disponible [ici](https://docs.ovh.com/gb/en/xdsl/connectivity-api/)
->
 
 **Dernière mise à jour le 21/05/2021**
 
 ## Objectif
 
-Cette documentation a pour objectif de vous permettre d'obtenir vos identifiants PPPoe afin de connecter votre routeur personnel sur votre offre XDSL/FTTH OVHCloud.
+Cette documentation a pour objectif de vous permettre d'obtenir vos identifiants PPPoE afin de connecter votre routeur personnel sur votre offre XDSL/FTTH OVHCloud.
 
 ## Prérequis
 
