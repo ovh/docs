@@ -77,11 +77,6 @@ La page qui s'affiche vous indique la configuration actuelle de la présentation
 
 #### Présenter de manière unique un numéro OVHcloud
 
-> [!primary]
-> 
-> En choisissant de présenter un numéro (le vôtre ou un autre), vous ne pourrez plus administrer la présentation de numéro depuis votre propre équipement IPBX. Si vous souhaitez la gérer depuis ce dernier, reportez-vous à la section « [Présenter « à la volée » un numéro OVHcloud ou externe](./#presenter-a-la-volee-un-numero-ovhcloud-ou-externe){.external} » de cette documentation.
-> 
-
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne Trunk concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
