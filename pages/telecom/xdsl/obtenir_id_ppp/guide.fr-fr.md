@@ -34,7 +34,7 @@ https://api.ovh.com/console/#/xdsl/%7BserviceName%7D/requestPPPLoginMail#POST
 
 #### Aperçu
 
-(images/api_pppoe.png){.thumbnail}
+ (images/api_pppoe.png){.thumbnail}
 
 Un exemple de tâche réussie :
 
