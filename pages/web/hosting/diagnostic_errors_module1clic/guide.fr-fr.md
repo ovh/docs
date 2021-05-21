@@ -26,7 +26,7 @@ La création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou av
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web](https://www.ovh.com/fr/hebergement-web/) compatible.
-- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir utilisé la fonctionnalité [Module en 1 clic](../modules-en-1-clic/), afin de créer un nouveau site.
 
 
