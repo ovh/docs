@@ -15,6 +15,7 @@ La résiliation sera effective à la prochaine facturation de votre accès à In
 ## Prérequis
 
 - Disposer d'un accès xDSL/FTTH actif.
+- Pour les accès Packsiptrunk il faut demander la résiliation via un ticket créé dans "demande d'assistance" afin que le support puisse la mettre en place.
 - Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`.
 
 ## En pratique
