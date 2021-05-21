@@ -103,6 +103,14 @@ Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.
 
 Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client, sinon il sera prioritaire sur la présentation de votre IPBX.
 
+Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne Trunk concernée.
+
+Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
+
+![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
+
+
+
 ![désactiver-anonyme](images/display-incoming-call-trunk-anonymous-step7.png){.thumbnail}
 
 Vous pouvez à présent configurer la présentation du numéro sur votre équipement IPBX.
@@ -136,6 +144,11 @@ Sous quelques minutes, le numéro renseigné recevra un appel. Décrochez et ind
 
 
 Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client, sinon il sera prioritaire sur la présentation de votre IPBX.
+
+Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne Trunk concernée.
+
+Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
+
 
 ![désactiver-anonyme](images/display-incoming-call-trunk-anonymous-step7.png){.thumbnail}
 
