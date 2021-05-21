@@ -63,7 +63,7 @@ Dès que vous êtes prêt, poursuivez la lecture de cette documentation en fonct
 - [Présenter « à la volée » un numéro OVHcloud](./#presenter-a-la-volee-un-numero-ovhcloud) (depuis votre propre équipement IPBX).
 - [Présenter « à la volée » un numéro externe](./#presenter-a-la-volee-un-numero-externe) (depuis votre propre équipement IPBX).
 
-#### Masquer son numéro
+#### Rester anonyme
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne Trunk concernée.
 
