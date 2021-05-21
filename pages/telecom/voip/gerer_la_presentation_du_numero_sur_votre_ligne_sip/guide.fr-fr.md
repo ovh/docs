@@ -53,13 +53,15 @@ Vous pouvez opter pour quatre autres configurations de présentation du numéro.
 |---|---|---|
 |Masquer son numéro|Permet de rester anonyme lorsque vous émettez un appel.|Depuis l'espace client OVHcloud|
 |Présenter de manière unique un numéro OVHcloud|Permet de présenter un numéro OVHcloud défini.|Depuis l'espace client OVHcloud|
-|Présenter « à la volée » un numéro OVHcloud ou externe|Permet de présenter « à la volée » les alias en redirection avec présentation vers votre ligne Trunk et les numéros externes validés.|Depuis votre propre équipement IPBX|
+|Présenter « à la volée » un numéro OVHcloud|Permet de présenter « à la volée » les alias en redirection avec présentation vers votre ligne Trunk.|Depuis votre propre équipement IPBX|
+|Présenter « à la volée » un numéro externe|Permet de présenter « à la volée » les numéros externes validés.|Depuis votre propre équipement IPBX|
 
 Dès que vous êtes prêt, poursuivez la lecture de cette documentation en fonction de la configuration que vous souhaitez mettre en place.
 
 - [Masquer son numéro](./#masquer-son-numero) (depuis l'espace client).
 - [Présenter de manière unique un numéro OVHcloud](./#presenter-de-maniere-unique-un-numero-ovhcloud) (depuis l'espace client).
-- [Présenter « à la volée » un numéro OVHcloud ou externe](./#presenter-a-la-volee-un-numero-ovh-ou-externe) (depuis votre propre équipement IPBX).
+- [Présenter « à la volée » un numéro OVHcloud](./#presenter-a-la-volee-un-numero-ovhcloud) (depuis votre propre équipement IPBX).
+- [Présenter « à la volée » un numéro externe](./#presenter-a-la-volee-un-numero-externe) (depuis votre propre équipement IPBX).
 
 #### Masquer son numéro
 
