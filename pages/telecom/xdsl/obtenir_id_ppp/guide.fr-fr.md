@@ -21,45 +21,20 @@ Cette documentation a pour objectif de vous permettre d'obtenir vos identifiants
 
 ## En pratique
 
-### Offres Internet
 
-OVHcloud propose différentes offres d'accès à Internet par le biais de packages contenant au moins un accès Internet mais aussi des lignes VoIP, des e-mails, des noms de domaine.
+Vos identifiants PPPoE sont envoyés pendant la livraison de votre accès, sur votre accès mail de contact. Ces derniers vous permettent de configurer votre équipement OVHCloud ou un équipement personnel pour l’usage de votre accès internet. 
 
-Les offres sont visibles ici : [https://www.ovhtelecom.fr/offre-internet/](https://www.ovhtelecom.fr/offre-internet/){.external}.
+Si vous disposez d’un modem fournit par OVHCloud avec mon offre, ils sont envoyés systématiquement après chaque reset de votre modem. Le login est identique, le mot de passe lui est modifié pour des raisons de sécurité.
 
-Les services peuvent être gérés à l'aide de ces points de terminaison d'API :
-* `/pack/xdsl` : Gérer les packages d'offres Internet;
-* `/xdsl` : Gérer les accès Internet, les sous-services et les options;
-* `/connectivity` : va remplacer `/xdsl`. Pour l'instant il permet de faire l'éligibilité aux offres cuivre et fibre.
+Si vous ne disposez pas d’un modem OVHCloud ou si vous utilisez directement un équipement , vous avez alors la possibilité d’utiliser l’API suivante afin de déclencher l’envoi du mail quand vous le désirez. 
 
-### Éligibilité
+L'adresse à utiliser est la suivante : 
+
+https://api.ovh.com/console/#/xdsl/%7BserviceName%7D/requestPPPLoginMail#POST
 
 #### Aperçu
 
-Les méthodes d'éligibilité sont disponibles sur le chemin d'accès `/connectivity/eligibility/`.
 
-L'objectif de l'éligibilité est de renvoyer les offres Internet éligibles pour un *endpoint* (point de livraison) donné, afin de commander cette offre.
-Un *endpoint* peut être une adresse ou une ligne existante, identifiée par le numéro de ligne et son état (actif ou inactif).
-
-Les méthodes retournent une structure *xdsl.AsyncTask* en asynchrone, telle que :
-
-```
-{
-  "status" : une chaîne de caractères, le statut de la tâche ("pending" (en attente), "done" (terminé) ou "error" (erreur))
-  "result" : un objet, en cas de succès, le résultat de la méthode
-  "error" : une chaîne de caractères, le message d'erreur en cas d'erreur
-}
-```
-
-Voici un exemple de tâche en attente :
-
-```json
-{
-  "status": "pending",
-  "result": null,
-  "error": null
-}
-```
 
 Un exemple de tâche réussie :
 
