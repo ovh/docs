@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment configurer la présentation du numéro de votre lig
 section: 'Lignes téléphoniques'
 ---
 
-**Dernière mise à jour le 15/10/2020**
+**Dernière mise à jour le 21/05/2021**
 
 ## Objectif
 
