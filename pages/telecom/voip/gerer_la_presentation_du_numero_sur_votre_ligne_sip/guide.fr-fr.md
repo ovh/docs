@@ -51,7 +51,7 @@ Dans le cas d'une offre Trunk, voici les configurations possibles.
 
 |Configuration|Description|Mise en place|
 |---|---|---|
-|Reset anonyme|Permet de masquer votre numéro lorsque vous émettez un appel.|Depuis l'espace client OVHcloud|
+|Rester anonyme|Permet de masquer votre numéro lorsque vous émettez un appel.|Depuis l'espace client OVHcloud|
 |Présenter de manière unique un numéro OVHcloud|Permet de présenter un numéro OVHcloud défini.|Depuis l'espace client OVHcloud|
 |Présenter « à la volée » un numéro OVHcloud|Permet de présenter « à la volée » les alias en redirection avec présentation vers votre ligne Trunk.|Depuis votre propre équipement IPBX|
 |Présenter « à la volée » un numéro externe|Permet de présenter « à la volée » les numéros externes validés.|Depuis votre propre équipement IPBX|
