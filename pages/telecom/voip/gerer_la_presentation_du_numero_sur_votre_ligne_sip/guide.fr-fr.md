@@ -47,7 +47,7 @@ Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.
 
 ### Configurer la présentation du numéro d'une ligne Trunk
 
-Vous pouvez opter pour quatre autres configurations de présentation du numéro. La manipulation à réaliser sera différente selon celle que vous choisirez.
+Dans le cas d'une offre Trunk, voici les configurations possibles.
 
 |Configuration|Description|Mise en place|
 |---|---|---|
