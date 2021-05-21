@@ -36,9 +36,9 @@ Questo metodo di pagamento è utilizzato di default per i tuoi rinnovi e propost
 
 Puoi aggiungere un nuovo metodo di pagamento per i tuoi futuri ordini o prelevamenti.
 
-È possibile salvare 3 metodi di pagamento:
+È possibile salvare 2 metodi di pagamento:
 
-- Carta bancaria
+- Carta di credito
 - Account PayPal
 
 Per farlo, clicca su`Aggiungi un metodo di pagamento`{.action}.
@@ -89,17 +89,17 @@ L’eliminazione di un metodo di pagamento può essere effettuato tramite le API
 > @api {DELETE} /me/payment/method/{paymentMethodId}
 >
 
-### Attiva il pagamento frazionato
+### Attiva il meccanismo dello split payment <a name="attiva-split-payment"></a>
 
-Se la società o l'organizzazione è [autorizzata al pagamento frazionato](https://www1.finanze.gov.it/finanze3/split_payment/public/#/#testata){.external}, è possibile attivarlo dallo Spazio Cliente OVHcloud.
+Se la società o l'organizzazione è [autorizzata all’applicazione dello Split Payment](https://www1.finanze.gov.it/finanze3/split_payment/public/#/#testata){.external}, è possibile attivarlo dallo Spazio Cliente OVHcloud.
 
-Nella sezione `Metodi di pagamento`{.action}, clicca su `Attiva il pagamento frazionato`{.action} e conferma l'attivazione nella finestra che appare.
+Nella sezione `Metodi di pagamento`{.action}, clicca su `Attiva il meccanismo dello split payment`{.action} e conferma l'attivazione nella finestra che appare.
 
-La tua idoneità al pagamento frazionato verrà verificata dai nostri team per la convalida nel più breve tempo possibile.
+La tua idoneità all’utilizzo dello split payment verrà verificata dai nostri team per la convalida nel più breve tempo possibile.
 
-### Disattiva il pagamento frazionato
+### Disattiva il meccanismo dello split payment <a name="disattiva-split-payment"></a>
 
-Per disattivare il pagamento frazionato sul tuo account OVHcloud, accedi alla sezione `Metodi di pagamento`{.action}. Clicca su `Disattiva il pagamento frazionato`{.action} e conferma la disattivazione nella nuova finestra.
+Per disattivare il meccanismo dello split payment sul tuo account OVHcloud, accedi alla sezione `Metodi di pagamento`{.action}. Clicca su `Disattiva lo split payment`{.action} e conferma la disattivazione nella nuova finestra.
 
 ## Per saperne di più
 
