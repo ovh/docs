@@ -51,9 +51,9 @@ Vous pouvez opter pour quatre autres configurations de présentation du numéro.
 
 |Configuration|Description|Mise en place|
 |---|---|---|
-|Masquer son numéro|Permet de ne plus présenter votre numéro lorsque vous émettez un appel.|Depuis l'espace client OVHcloud|
+|Masquer son numéro|Permet de rester anonyme lorsque vous émettez un appel.|Depuis l'espace client OVHcloud|
 |Présenter de manière unique un numéro OVHcloud|Permet de présenter un numéro OVHcloud défini.|Depuis l'espace client OVHcloud|
-|Présenter « à la volée » un numéro OVHcloud ou externe|Permet de présenter « à la volée » les alias en redirection avec présentation vers votre ligne Trunk et les numéros externes validés sur votre équipement IPBX.|Depuis votre propre équipement IPBX|
+|Présenter « à la volée » un numéro OVHcloud ou externe|Permet de présenter « à la volée » les alias en redirection avec présentation vers votre ligne Trunk et les numéros externes validés.|Depuis votre propre équipement IPBX|
 
 Dès que vous êtes prêt, poursuivez la lecture de cette documentation en fonction de la configuration que vous souhaitez mettre en place.
 
@@ -86,14 +86,14 @@ Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Pré
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
 
-La page qui s'affiche vous indique la configuration actuelle de la présentation du numéro. Par défaut, votre numéro est présenté. Pour en présenter un autre, cliquez sur `Choisir un autre numéro`{.action}, puis sélectionnez celui souhaité dans la liste. Seuls les numéros rattachés à vos groupes de facturation apparaissent ici. Si vous ne le trouvez pas, reportez-vous à la section « [Présenter de manière unique un numéro externe](./#presenter-de-maniere-unique-un-numero-externe){.external} » de cette documentation.
+La page qui s'affiche vous indique la configuration actuelle de la présentation du numéro. Par défaut, votre numéro est présenté. Pour en présenter un autre, cliquez sur `Choisir un autre numéro`{.action}, puis sélectionnez celui souhaité dans la liste. Seuls les numéros rattachés à vos groupes de facturation apparaissent ici.
 
 Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.action}. Vous avez aussi la possibilité de cliquer sur `Appliquer à plusieurs lignes`{.action} pour dupliquer les paramètres sur d’autres lignes OVHcloud.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step2.png){.thumbnail}
 
 
-#### Présenter « à la volée » un numéro OVHcloud ou externe
+#### Présenter « à la volée » un numéro OVHcloud
 
 > [!warning]
 >
@@ -117,7 +117,9 @@ Vous pouvez à présent configurer la présentation du numéro sur votre équipe
 > - Il ne sera pas possible de présenter à la volée le même numéro depuis deux lignes Trunk différentes.
 >
 
-##### Valider un numéro externe pour le présenter depuis une ligne SIP Trunk
+#### Présenter « à la volée » un numéro Externe
+
+La présentation d'un numéro externe depuis votre IPBX nécessite la validation du numéro souhaité.
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne Trunk concernée.
 
@@ -135,9 +137,18 @@ Sous quelques minutes, le numéro renseigné recevra un appel. Décrochez et ind
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step5.png){.thumbnail}
 
-> [!primary]
+
+Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client, sinon il sera prioritaire sur la présentation de votre IPBX.
+
+![désactiver-anonyme](images/display-incoming-call-trunk-anonymous-step7.png){.thumbnail}
+
+Vous pouvez à présent configurer la présentation du numéro sur votre équipement IPBX.
+
+> [!warning]
 > 
-> Une fois votre numéro externe validé, sa présentation effective lors de vos appels sortants doit être gérée depuis votre propre équipement IPBX.
+> - Des connaissances avancées sur l'équipement que vous utilisez sont nécessaires pour pouvoir le configurer. Nous vous recommandons de faire appel à un prestataire spécialisé ou de vous rapprocher du constructeur de l'équipement si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
+> 
+> - Il ne sera pas possible de présenter à la volée le même numéro depuis deux lignes Trunk différentes.
 >
 
 ## Aller plus loin
