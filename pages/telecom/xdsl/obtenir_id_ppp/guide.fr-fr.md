@@ -1,7 +1,7 @@
 ---
 title: "Obtenir mes identifiants PPPoE"
 slug: connectivity-api
-excerpt: 'Développez en utilisant notre API connectivity'
+excerpt: 'Découvrez comment récupérer vos identifiants PPPoE de votre accès internet OVHcloud depuis les API, via le modem et votre espace client'
 section: 'Configurations techniques avancées'
 order: 5
 ---
