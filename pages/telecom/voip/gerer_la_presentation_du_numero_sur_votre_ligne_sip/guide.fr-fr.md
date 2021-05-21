@@ -109,7 +109,7 @@ Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Pré
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
 
-Ensuite, décochez l'option rester anonyme.
+Décochez la case `Rester anonyme`{.action}, puis cliquez sur le bouton `Appliquer les modifications`{.action}
 
 ![désactiver-anonyme](images/display-incoming-call-trunk-anonymous-step7.png){.thumbnail}
 
@@ -149,7 +149,9 @@ Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
 
-Ensuite, décochez l'option rester anonyme.
+![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
+
+Décochez la case `Rester anonyme`{.action}, puis cliquez sur le bouton `Appliquer les modifications`{.action}
 
 ![désactiver-anonyme](images/display-incoming-call-trunk-anonymous-step7.png){.thumbnail}
 
