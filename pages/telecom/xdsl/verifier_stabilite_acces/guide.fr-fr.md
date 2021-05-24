@@ -43,10 +43,9 @@ Le champ servicename correspond à la référence de votre accès :
 
  - Pour un accès ftth : ftth-nichandle-x 
 
-En utilisant le bouton execute : l'API répondra alors "null" en cas de succès confirmant la bonne pris en compte de votre demande. Dans le cas contraitre n'hésitez à faire le point avec votre support.
+En utilisant le bouton execute : l'API répondra alors : 
 
-Sous un délai d'environ deux à trois minutes, vous receverez un mail sur votre adresse de contact contenant les informations avec votre identifiant PPPoE et le mot de passe.
-
+![api_radex](images/api_radex.png){.thumbnail}
 
 
 #### Retrouver ce mail dans mon espace client
