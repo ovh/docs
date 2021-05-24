@@ -45,7 +45,7 @@ Le champ servicename correspond à la référence de votre accès :
 
 En utilisant le bouton execute : l'API répondra alors : 
 
-![api_radex](images/api_radex.png){.thumbnail}
+![api_radex](images/api_radex2.png){.thumbnail}
 
 
 #### Retrouver ce mail dans mon espace client
