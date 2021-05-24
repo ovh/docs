@@ -109,7 +109,7 @@ Passé le délai de clôture du RMA, soit au bout de 45 jours, la caution n'est 
         
         Sachez que sur le rma figure une liste complète du matériel à retourner et qu'un élement majeur manquant vous risquez de ne pas récupérer votre caution dans sa totalité ou avoir un malus que plusieurs euros. 
         
-### erreur d'envoi d'un téléphone 
+### Erreur d'envoi d'un téléphone 
 
 Si vous renvoyez le mauvais téléphone, nous devez quand même retourner le matériel réclamé sur le bon RMA car le délai cours toujours. 
 
