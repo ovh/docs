@@ -88,7 +88,7 @@ Lorsque nous avons reçu votre équipement, vous recevez cet e-mail :
         accessible à partir de votre espace Client Télécom > Facturation > Mon Compte OVH. Vous pouvez à tout moment
         procéder à un transfert vers votre compte bancaire depuis votre espace client.
 
-Si une caution est restituée, elle sera disponible sur votre compte OVHcloud pour payer vos prochaines factures. Si vous le souhaitez , vous pouvez en demander le versement sur votre compte bancaire via ces étapes :
+Si une caution est restituée, elle sera disponible sur votre compte OVHcloud pour payer vos prochaines factures de manières automatique. Si vous le souhaitez , vous pouvez en demander le versement sur votre compte bancaire via ces étapes :
 
 -   connectez vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie **Telecom** ;
 -   cliquez sur **Téléphonie**;****
@@ -98,14 +98,22 @@ Si une caution est restituée, elle sera disponible sur votre compte OVHcloud po
 
 Entrez le compte bancaire à créditer et validez. Le virement sera effectué sous 48 heures ouvrées.
 
-### Le matériel n'est pas reçu
+### Le matériel n'est pas reçu 
 
-Passé le délai de clôture du RMA, soit au bout de 45 jours, vous recevez l'e-mail suivant :
+Passé le délai de clôture du RMA, soit au bout de 45 jours, la caution n'est pas restituée et facturons la TVA vous recevez également l'e-mail suivant :
 
     Titre: [OVH-TELECOM] Fermeture du dossier retour : #RMA# #IDENT# Bonjour, Sauf erreur de notre part, nous n'avons
         pas reçu le matériel lié au retour ouvert en date du #DATE# : Modèle : #MODEL# Réference/Mac : #REFERENCE# Le bon de
         retour, pour le renvoi de ce matériel, était le suivant : Lien vers le PDF du RMA. Nous sommes donc dans
         l'obligation de fermer votre ticket.
+        
+        Sachez que sur le rma figure une liste complète du matériel à retourner et qu'un élement majeur manquant vous risquez de ne pas récupérer votre caution dans sa totalité ou avoir un malus que plusieurs euros. 
+        
+### erreur d'envoi d'un téléphone 
+
+Si vous renvoyez le mauvais téléphone, nous devez quand même retourner le matériel réclamé sur le bon RMA car le délai cours toujours. 
+
+Contacter le support par ticket pour indiquer votre erreur d'envoi afin qu'on puisse trouver une solution pour le matériel envoyé par erreur.  
 
 ## Aller plus loin
 
