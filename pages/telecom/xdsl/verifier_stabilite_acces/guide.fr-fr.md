@@ -13,6 +13,8 @@ order: 5
 
 Cette documentation a pour objectif de vous permettre de vérifier la stabilité de votre accès via les logs Radius disponible par API en complément de la réponse au ping de votre lien.
 
+Ce guide n'a pas vocation à expliquer le fonctionnement d'une connexion PPPoE mais d'utiliser les logs pour déduire de la stabilité d'un lien.
+
 ## Prérequis
 
 - Disposer d'un abonnement xDSL ou FTTH OVHCloud actif.
