@@ -8,7 +8,7 @@ space_name: Téléphonie
 section: Administratif
 ---
 
-**Dernière mise à jour le 06/05/2020**
+**Dernière mise à jour le 25/06/2021**
 
 ## Objectif
 
@@ -53,7 +53,8 @@ Lorsque vous recevrez le mail, le lien du PDF est disponible dans le corps de l'
 
 Une partie du bon est impérativement à joindre dans le colis et l'autre volet est à scotcher sur le colis pour l'affranchissement.
 
-Le volet à joindre dans le colis contient une checklist des éléments à renvoyer. N'oubliez rien pour récupérer la totalité de la caution.
+Le volet à joindre dans le colis contient une checklist des éléments à renvoyer. N'oubliez aucun élement pour récupérer la totalité de la caution. 
+<br>Si vous disposez de plusieurs téléphones similaires, vérifiez que l'adresse MAC (une adresse unique par téléphone) du téléphone correspond bien à celle écrite sur le bon RMA.
 
 Conservez le récépissé de dépôt du colis tant que vous n'avez pas eu confirmation de la bonne réception dans nos locaux.
 
@@ -88,7 +89,7 @@ Lorsque nous avons reçu votre équipement, vous recevez cet e-mail :
         accessible à partir de votre espace Client Télécom > Facturation > Mon Compte OVH. Vous pouvez à tout moment
         procéder à un transfert vers votre compte bancaire depuis votre espace client.
 
-Si une caution est restituée, elle sera disponible sur votre compte OVHcloud pour payer vos prochaines factures de manières automatique. Si vous le souhaitez , vous pouvez en demander le versement sur votre compte bancaire via ces étapes :
+Si une caution est restituée, elle sera disponible sur votre compte OVHcloud et servira ainsi à régler vos prochaines factures de manière automatique. Si vous le souhaitez , vous pouvez en demander le versement sur votre compte bancaire via ces étapes :
 
 -   connectez vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie **Telecom** ;
 -   cliquez sur **Téléphonie**;****
@@ -98,9 +99,11 @@ Si une caution est restituée, elle sera disponible sur votre compte OVHcloud po
 
 Entrez le compte bancaire à créditer et validez. Le virement sera effectué sous 48 heures ouvrées.
 
-### Le matériel n'est pas reçu 
+### Le matériel n'est pas reçu
 
-Passé le délai de clôture du RMA, soit au bout de 45 jours, la caution n'est pas restituée et facturons la TVA vous recevez également l'e-mail suivant :
+Passé le délai de clôture du RMA, soit au bout de 45 jours, la caution n'est pas restituable. La caution étant HT, la TVA correspondant au matériel non restitué est facturée.
+
+Vous recevez alors l'e-mail suivant :
 
     Titre: [OVH-TELECOM] Fermeture du dossier retour : #RMA# #IDENT# Bonjour, Sauf erreur de notre part, nous n'avons
         pas reçu le matériel lié au retour ouvert en date du #DATE# : Modèle : #MODEL# Réference/Mac : #REFERENCE# Le bon de
@@ -111,9 +114,9 @@ Passé le délai de clôture du RMA, soit au bout de 45 jours, la caution n'est 
         
 ### Erreur d'envoi d'un téléphone 
 
-Si vous renvoyez le mauvais téléphone, nous devez quand même retourner le matériel réclamé sur le bon RMA car le délai cours toujours. 
+Si vous renvoyez à OVHcloud un téléphone autre que celui concerné par le RMA, il est malgré tout indispensable de nous retourner le matériel réclamé sur le bon RMA. En effet, le délai de renvoi court toujours et le matériel correspondant au RMA doit nous être restitué. 
 
-Contacter le support par ticket pour indiquer votre erreur d'envoi afin qu'on puisse trouver une solution pour le matériel envoyé par erreur.  
+Nous vous conseillons de contacter le support, via un [ticket d'assistance depuis votre espace client OVHcloud]((https://www.ovh.com/manager/dedicated/index.html#/support/tickets), pour indiquer votre erreur d'envoi afin qu'une solution soit étudiée concernant le matériel renvoyé par erreur.  
 
 ## Aller plus loin
 
