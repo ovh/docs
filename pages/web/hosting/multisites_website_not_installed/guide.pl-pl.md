@@ -84,4 +84,4 @@ W tym celu przejdź do sekcji `Domeny`{.action}, wybierz domenę i przejdź do z
 
 Jeśli chcesz uzyskać pomoc w zakresie korzystania z i konfiguracji Twoich rozwiązań OVHcloud, sprawdź nasze [oferty pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
