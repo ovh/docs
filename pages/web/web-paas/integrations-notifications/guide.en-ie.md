@@ -4,7 +4,7 @@ slug: integrations-notifications
 section: Integrations
 ---
 
-**Last updated 11th May 2021**
+**Last updated 25th May 2021**
 
 
 ## Objective  
@@ -12,7 +12,7 @@ section: Integrations
 Web PaaS can notify you when various events happen on your project, in any environment. At this time the only notification provided is a low disk space warning, but others may be added in the future.
 
 > [!primary]  
-> Remember that you must have `admin` access to a project in order to add or modify an integration.  See [User administration roles](../administration-users#user-roles) for more details.
+> Remember that you must have `admin` access to a project in order to add or modify an integration. Be aware that sync uses the backup mechanism and will have the same caveats.
 > 
 
 ## Available notifications
