@@ -11,7 +11,7 @@ section: Diagnostic
 
 ## Objectif
 
-La création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou avancée peut occasionner différentes anomalies.
+La création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou avancé peut occasionner différentes anomalies.
 
 **Découvez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de modules en 1 clic**
 
@@ -48,14 +48,14 @@ Si ce message apparaît quand vous lancez l'installation de votre module, c'est 
 
 > [!primary]
 >
-> Si vous disposez d'une offre [Perso2014](https://www.ovh.com/fr/hebergement-web/hebergement-perso.xml) et que vous souhaitez créer un second site web, changez votre abonnement pour la formule [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml). C'est à la fois la solution la plus simple d'un point de vue technique et la plus avantageuse économiquement (Retrouvez le comparatif de nos différentes [offres d'hébergement](https://www.ovh.com/fr/hebergement-web/)).
+> Retrouvez le comparatif de nos différentes [offres d'hébergement](https://www.ovh.com/fr/hebergement-web/).
 >
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}, sur l'hébergement concerné et sur `Changer d'offre` dans la partie `Abonnement` - `Offre`:
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Les offres [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) et [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml) vous permettront de créer jusqu'à trois modules 1 clic supplémentaires. Les offres `Performance` vous permettront aussi d'activer gratuitement une offre [SQL privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml).
+Les offres [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) et [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml) vous permettront de créer jusqu'à trois modules 1 clic supplémentaires. Les offres `Performance` vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml).
 
 #### Solution 2 : Supprimer une base de données non utilisée <a name="supprimer-la-base"></a>
 
@@ -70,20 +70,20 @@ Pour supprimer une base de données, dans votre [espace client OVHcloud](https:/
 
 #### Solution 3 : Commander de nouvelles bases de données
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}, `Bases de données`{.action}, sur `Actions`{.action} :
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}, `Bases de données`{.action} et sur `Actions`{.action} :
 
 ![order_a_database](images/order_a_database.png){.thumbnail}
 
 > [!primary]
 >
-> Comparez nos différentes [offres de bases de données](https://www.ovh.com/fr/hebergement-web/options-sql.xml)
+> Retrouvez le comparatif de nos différentes [offres de bases de données](https://www.ovh.com/fr/hebergement-web/options-sql.xml)
 >
 
 #### Solution 4 : Installer votre module sur une base déjà utilisée
 
 Pour installer votre module sur une base de données déjà utilisée, vous devrez utilisez le [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) d'installation d'un nouveau `Module en 1 clic`.
 
-(Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/)).
+Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
 
 
 ### "Le répertoire d'installation n'est pas vide"
@@ -94,7 +94,7 @@ Après avoir lancé la création de votre module, vous avez reçu un mail indiqu
 
 Ce message signifie que le `Dossier racine` auquel est lié votre domaine contient un ou plusieurs fichiers ou dossiers.
 
-Pour modifier ce `Dossier racine`, cliquez sur `Modifier le domaine`{.action} dans l'onglet `Multisite`{.action} de votre hébergement puis indiquez le nom d'un nouveau `Dossier racine` (Un répertoire vide sera créé automatiquement sur votre hébergement).
+Pour relier votre domaine à un autre répertoire, cliquez sur `Modifier le domaine`{.action} dans l'onglet `Multisite`{.action} puis indiquez le nom d'un nouveau `Dossier racine` (Un répertoire vide sera créé automatiquement sur votre hébergement).
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
