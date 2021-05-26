@@ -4,7 +4,7 @@ slug: frameworks
 section: Php
 ---
 
-**Last updated 11th May 2021**
+**Last updated 25th May 2021**
 
 
 
@@ -18,7 +18,7 @@ Full Drush support and Composer-based builds make handling dependencies and buil
 [Drupal](https://www.drupal.org/) is an open-source content management framework written in PHP. Since Composer comes pre-installed on Web PaaS, Drupal can be installed and updated completely using Composer. The default [build flavor](../../overview-build-deploy#building-the-application) for PHP application runs `composer install` during build, handling all of your dependencies automatically.
 
 * [Drupal 7 Best Practices](../../frameworks-drupal7)
-* [Drupal 8/9 Guide](../../guides-drupal9)
+
 
 ### Community Support
 
@@ -40,7 +40,7 @@ Drupal FAQs, how-to guides and other tutorials right on [Web PaaS Community](htt
 
 [eZ Platform](https://ezplatform.com/) is a CMS based on the Symfony full-stack framework. eZ WebPaas comes pre-configured for use with Web PaaS for versions 1.13 and later, all it takes is mapping a few environment variables to an existing project. Consult the caching, configuration, and local development best practices for eZ WebPaas and Fastly integration for more information.
 
-* [Ibexa DXP Best Practices](../../frameworks-ibexa)
+
 
 ### Example Projects
 
@@ -71,7 +71,7 @@ Symfony FAQs, how-to guides and other tutorials right on [Web PaaS Community](ht
 
 [TYPO3](https://typo3.org/) is an open-source CMS written in PHP. Utilized Web PaaS native Composer to handle builds and maintain dependencies.
 
-* [TYPO3 Guide](../../guides-typo3/deploy)
+
 
 ### Templates
 
@@ -81,7 +81,7 @@ Symfony FAQs, how-to guides and other tutorials right on [Web PaaS Community](ht
 
 [Wordpress](https://wordpress.com/) is a PHP content management system. Web PaaS recommends using the composer-based installation method for Wordpress.
 
-* [Wordpress Best Practices](../../guides-wordpress)
+
 
 ### Community Support
 
