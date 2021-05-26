@@ -12,7 +12,7 @@ order: 1
 
 Vous pouvez héberger plusieurs sites internet sur une même offre d'hébergement web, même si les noms de domaine ne sont pas enregistrés chez OVHcloud.
 
-**Découvrez comment héberger différents sites internet sur votre offre d'hébergement web.**
+**Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web.**
 
 ## Prérequis
 
