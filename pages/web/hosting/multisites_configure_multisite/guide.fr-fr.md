@@ -18,7 +18,7 @@ Vous pouvez héberger plusieurs sites internet sur une même offre d'hébergemen
 
 - Disposer d'une offre [d'hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external} compatible.
 - Disposer d'un ou plusieurs [noms de domaine](https://www.ovh.com/fr/domaines/){.external}.
-- Pouvoir modifier la configuration de vos noms de domaine (la zone DNS).
+- Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
@@ -38,7 +38,7 @@ Le tableau qui s'affiche liste tous les noms de domaine et sous-domaines ajouté
 
 ### Étape 2 : ajouter un domaine ou un sous-domaine
 
-Pour ajouter un nouveau nom de domaine ou sous-domaine à votre hébergement web, cliquez sur le bouton `Actions` situé à gauche de l'écran puis sur `Ajouter un domaine ou sous domaine`{.action} puis effectuez votre choix dans la fenêtre qui s’affiche.
+Pour ajouter un nouveau nom de domaine ou sous-domaine à votre hébergement web, cliquez sur le bouton `Actions`{.action} situé à gauche de l'écran puis sur `Ajouter un domaine ou sous domaine`{.action} et effectuez votre choix dans la fenêtre qui s’affiche.
 
 ![actions](images/actions-multisite-ovh.png){.thumbnail}
 
@@ -48,7 +48,7 @@ Seuls s'affichent ici les noms de domaine OVHcloud pour lesquels vous êtes [con
 
 - **Ajouter un nom de domaine externe** :
 
-Dans le cas d'un nom de domaine externe à votre compte client (autre identifiant client) ou externe à OVHcloud (fournisseur de nom de domaine tiers), sélectionnez `Ajouter un nom de domaine externe`{.action} puis cliquez sur `Suivant`{.action}. Poursuivez alors vers l'[étape 2.2: ajouter un nom de domaine externe](#add-external-domain).
+Dans le cas d'un nom de domaine externe à votre compte client (autre identifiant client) ou externe à OVHcloud (fournisseur de nom de domaine tiers), sélectionnez `Ajouter un domaine externe`{.action} puis cliquez sur `Suivant`{.action}. Poursuivez alors vers l'[étape 2.2: ajouter un nom de domaine externe](#add-external-domain).
 
 ![multisite](images/add-multisite-step1.png){.thumbnail}
 
@@ -61,11 +61,12 @@ Cette étape ne s'applique que si vous avez sélectionné « Ajouter un domaine 
 
 Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon votre offre d'[hébergement web](https://www.ovh.com/fr/hebergement-web/){.external}, certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
 
+![multisite](images/add-multisite-step2.png){.thumbnail}
+
 |Information|Description|
 |---|---|
 |Domaines|Par défaut, le nom de domaine que vous avez sélectionné est renseigné automatiquement. Vous pouvez y ajouter un sous-domaine (par exemple, **blog**.mydomain.ovh) et créer simultanément le sous-domaine « www » correspondant (par exemple, **www.blog**.mydomain.ovh). En définitive, ce domaine sera l'adresse internet du site que vous souhaitez mettre en ligne.|
 |Dossier racine|Définissez le dossier, sur votre espace de stockage, vers lequel le domaine pointe . C'est dans cet espace que les fichiers du site devront être mis en ligne. Par exemple, pour blog.mydomain.ovh, le dossier racine pourrait être « blog ». Si le dossier n'existe pas, il sera créé automatiquement.|
-|Activer l'IPv6|Permet d'activer le protocole IPv6 sur le domaine renseigné. Apprenez-en plus grâce à [notre page IP](https://www.ovh.com/fr/hebergement-web/ip.xml){.external}.|
 |SSL|Vous permet de bénéficier d'une connexion sécurisée (HTTPS://) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page SSL](https://www.ovh.com/fr/ssl/){.external}. En activant le SSL et le CDN (Content Delivery Network), vous pourrez également bénéficier du protocole **HTTP2** (ce dernier est activé par défaut dans notre datacenter de Gravelines).|
 |Activer le CDN|Permet d'activer le CDN (mise en cache des éléments statiques de votre site, comme des images) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page CDN](https://www.ovh.com/fr/hebergement-web/cdn.xml){.external}. En activant le SSL et le CDN, vous pourrez également bénéficier du protocole **HTTP2** (ce dernier est activé par défaut dans notre datacenter de Gravelines).|
 |IP du pays|Permet de bénéficier d'une adresse IP géolocalisée (parmi une liste de pays) pour le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page IP](https://www.ovh.com/fr/hebergement-web/ip.xml){.external}.|
@@ -74,7 +75,7 @@ Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon
 
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}. Vérifiez ensuite le récapitulatif qui s'affiche.
 
-![multisite](images/add-multisite-step2.png){.thumbnail}
+![multisite](images/add-multisite-step3.png){.thumbnail}
 
 En ayant sélectionné un nom de domaine enregistré chez OVHcloud, vous avez la possibilité de modifier automatiquement ou manuellement sa configuration DNS :
 
@@ -99,13 +100,14 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 >
 > |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
-> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh). Vous devez valider uniquement le domaine principal, pas tous les sous-domaines. Dans le cas d'une délégation de zone, le champ doit être ajouté dans la zone faisant autorité pour le nom de domaine externe à ajouter.|
+> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh) dans la zone DNS faisant autorité pour votre nom de domaine.<br></br>
+Pour retrouver cette dernière, retrouvez les [serveurs DNS](.../.../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) auxquels votre domaine est lié.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
 > |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
-> |A et AAAA|Onglet `Informations générales`{.action} puis à côté de **IPv4** et **IPv6**|Permet à votre domaine d'afficher le site internet que vous mettrez en ligne sur votre hébergement web. Associez votre nom de domaine ou sous-domaine à l'adresse IP de vore hébergement.|
+> |A et AAAA|Onglet `Informations générales`{.action} puis à côté de **IPv4** et **IPv6**|Permet à votre domaine d'afficher le site internet que vous mettrez en ligne sur votre hébergement web. Associez votre nom de domaine ou sous-domaine à l'adresse IP de votre hébergement.|
 >
 > ![multisite](images/add-multisite-external-step4.png){.thumbnail}
 >
