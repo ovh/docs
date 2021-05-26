@@ -1,7 +1,7 @@
 ---
 title: 'Partager son hébergement entre plusieurs sites'
 slug: multisites-configurer-un-multisite-sur-mon-hebergement-web
-excerpt: "Découvrez comment héberger différents sites internet sur votre offre d'hébergement web"
+excerpt: "Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web"
 section: 'Premiers pas'
 order: 1
 ---
@@ -10,7 +10,7 @@ order: 1
 
 ## Objectif
 
-Vous pouvez héberger plusieurs sites internet sur une même offre d'hébergement web, même si les noms de domaine ne sont pas enregistrés chez OVHcloud.
+Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergement web, même si les noms de domaine ne sont pas enregistrés chez OVHcloud.
 
 **Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web.**
 
@@ -31,7 +31,7 @@ Le tableau qui s'affiche liste tous les noms de domaine et sous-domaines ajouté
 
 > [!primary]
 >
-> Si vous migrez votre site internet et souhaitez éviter toute interruption de service, suivez l'[étape 3 : mettre votre site web en ligne](#site-online).
+> Si vous migrez votre site Internet et souhaitez éviter toute interruption de service, suivez l'[étape 3 : mettre votre site web en ligne](#site-online).
 >
 
 ![multisite](images/access-multisite-ovh.png){.thumbnail}
@@ -65,8 +65,8 @@ Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon
 
 |Information|Description|
 |---|---|
-|Domaines|Par défaut, le nom de domaine que vous avez sélectionné est renseigné automatiquement. Vous pouvez y ajouter un sous-domaine (par exemple, **blog**.mydomain.ovh) et créer simultanément le sous-domaine « www » correspondant (par exemple, **www.blog**.mydomain.ovh). En définitive, ce domaine sera l'adresse internet du site que vous souhaitez mettre en ligne.|
-|Dossier racine|Définissez le dossier, sur votre espace de stockage, vers lequel le domaine pointe . C'est dans cet espace que les fichiers du site devront être mis en ligne. Par exemple, pour blog.mydomain.ovh, le dossier racine pourrait être « blog ». Si le dossier n'existe pas, il sera créé automatiquement.|
+|Domaines|Par défaut, le nom de domaine que vous avez sélectionné est renseigné automatiquement. Vous pouvez y ajouter un sous-domaine (par exemple, **blog**.mydomain.ovh) et créer simultanément le sous-domaine « www » correspondant (par exemple, **www.blog**.mydomain.ovh). En définitive, ce domaine sera l'adresse Internet du site que vous souhaitez mettre en ligne.|
+|Dossier racine|Définissez le dossier, sur votre espace de stockage, vers lequel le domaine pointe. C'est dans cet espace que les fichiers du site devront être mis en ligne. Par exemple, pour blog.mydomain.ovh, le dossier racine pourrait être « blog ». Si le dossier n'existe pas, il sera créé automatiquement.|
 |SSL|Vous permet de bénéficier d'une connexion sécurisée (HTTPS://) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page SSL](https://www.ovh.com/fr/ssl/){.external}. En activant le SSL et le CDN (Content Delivery Network), vous pourrez également bénéficier du protocole **HTTP2** (ce dernier est activé par défaut dans notre datacenter de Gravelines).|
 |Activer le CDN|Permet d'activer le CDN (mise en cache des éléments statiques de votre site, comme des images) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page CDN](https://www.ovh.com/fr/hebergement-web/cdn.xml){.external}. En activant le SSL et le CDN, vous pourrez également bénéficier du protocole **HTTP2** (ce dernier est activé par défaut dans notre datacenter de Gravelines).|
 |IP du pays|Permet de bénéficier d'une adresse IP géolocalisée (parmi une liste de pays) pour le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page IP](https://www.ovh.com/fr/hebergement-web/ip.xml){.external}.|
@@ -82,7 +82,7 @@ En ayant sélectionné un nom de domaine enregistré chez OVHcloud, vous avez la
 - **pour une configuration DNS automatique** : cochez la case `Configuration automatique (recommandée)`{.action} ;
 - **pour une configuration DNS manuelle** : décochez la case `Configuration automatique (recommandée)`{.action} puis notez les informations qui s'affichent. Lorsque vous souhaiterez réaliser ce paramétrage, aidez-vous de notre documentation [« Éditer une zone DNS OVHcloud »](../../domains/editer-ma-zone-dns/){.external}.
 
-Cliquez alors sur `Valider`{.action} pour lancer l’ajout du domaine. Cela peut prendre jusqu'à une heure. Cependant, la modification de la configuration DNS de votre domaine nécessite un temps de propagation de 4 à 24 heures avant d’être pleinement effective.
+Cliquez alors sur `Valider`{.action} pour lancer l’ajout du domaine. Cela peut prendre jusqu'à une heure. Cependant, la modification de la configuration DNS de votre domaine nécessite un temps de propagation de 1 à 24 heures avant d’être pleinement effective.
 
 Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre votre site web en ligne](#site-online).
 
@@ -100,8 +100,8 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 >
 > |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
-> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh) dans la zone DNS faisant autorité pour votre nom de domaine.<br></br>
-Pour retrouver cette dernière, retrouvez les [serveurs DNS](.../.../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) auxquels votre domaine est lié.|
+> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br></br>
+Pour retrouver cette dernière, retrouvez les [serveurs DNS](.../.../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -139,9 +139,9 @@ Notez les éléments qui s’affichent, puis cliquez sur le bouton `Valider`{.ac
 
 Une fois le nom de domaine ajouté, il ne vous reste plus qu’à mettre en ligne le site associé à ce dernier. Pour rappel, vous devez réaliser cette manipulation dans le dossier racine que vous avez défini lors de l’étape précédente.
 
-Pour vous aider dans cette démarche, vous pouvez bénéficier d’une structure de site prête à l’emploi grâce aux modules en 1 clic d’OVHcloud. Le site sera alors installé automatiquement dans le dossier racine configuré précédemment. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Installer son site avec les modules en 1 clic »](../modules-en-1-clic/){.external}. 
+Pour vous aider dans cette démarche, vous pouvez bénéficier d’une structure de site prête à l’emploi grâce aux modules en 1 clic d’OVHcloud. Le site sera alors installé automatiquement dans le dossier racine configuré précédemment. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Installer son site avec les modules en 1 clic »](../modules-en-1-clic/){.external}.
 
-A contrario, si vous souhaitez installer manuellement votre site, munissez-vous de ses fichiers puis mettez-les en ligne dans le bon dossier racine sur votre espace de stockage. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Mettre en ligne un site internet sur son hébergement web »](../mettre-mon-site-en-ligne/){.external}.
+A contrario, si vous souhaitez installer manuellement votre site, munissez-vous de ses fichiers puis mettez-les en ligne dans le bon dossier racine sur votre espace de stockage. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Mettre en ligne un site Internet sur son hébergement web »](../mettre-mon-site-en-ligne/){.external}.
 
 > [!primary]
 >
@@ -156,6 +156,6 @@ A contrario, si vous souhaitez installer manuellement votre site, munissez-vous 
 
 [Éditer une zone DNS OVHcloud.](../../domains/editer-ma-zone-dns/){.external}
 
-[Mettre en ligne un site internet sur son hébergement web.](../mettre-mon-site-en-ligne/){.external}
+[Mettre en ligne un site Internet sur son hébergement web.](../mettre-mon-site-en-ligne/){.external}
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
