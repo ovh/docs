@@ -107,7 +107,7 @@ Pour retrouver cette dernière, retrouvez les [serveurs DNS](.../.../domains/gen
 >
 > |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
-> |A et AAAA|Onglet `Informations générales`{.action} puis à côté de **IPv4** et **IPv6**|Permet à votre domaine d'afficher le site internet que vous mettrez en ligne sur votre hébergement web. Associez votre nom de domaine ou sous-domaine à l'adresse IP de votre hébergement.|
+> |A et AAAA|Onglet `Informations générales`{.action} puis à côté de **IPv4** et **IPv6**|Permet à votre domaine d'afficher le site Internet que vous mettrez en ligne sur votre hébergement web. Associez votre nom de domaine ou sous-domaine à l'adresse IP de votre hébergement.|
 >
 > ![multisite](images/add-multisite-external-step4.png){.thumbnail}
 >
@@ -116,7 +116,7 @@ Pour retrouver cette dernière, retrouvez les [serveurs DNS](.../.../domains/gen
 
 |Information|Description|
 |---|---|
-|Domaine|Renseignez le nom de domaine que vous souhaitez utiliser. Ajoutez-y au besoin un sous-domaine (par exemple, **blog**.mydomain.ovh) et créez simultanément le sous-domaine « www » correspondant (par exemple, **www.blog**.mydomain.ovh). En définitive, celui-ci correspondra à l'adresse internet du site que vous souhaitez mettre en ligne. Sachez que vous devez être en mesure de modifier la configuration du domaine (sa zone DNS) afin que l'ajout puisse être finalisé.|
+|Domaine|Renseignez le nom de domaine que vous souhaitez utiliser. Ajoutez-y au besoin un sous-domaine (par exemple, **blog**.mydomain.ovh) et créez simultanément le sous-domaine « www » correspondant (par exemple, **www.blog**.mydomain.ovh). En définitive, celui-ci correspondra à l'adresse Internet du site que vous souhaitez mettre en ligne. Sachez que vous devez être en mesure de modifier la configuration du domaine (sa zone DNS) afin que l'ajout puisse être finalisé.|
 |Dossier racine| Définissez le dossier, sur votre espace de stockage, vers lequel le domaine pointe . C'est dans cet espace que les fichiers du site devront être mis en ligne. Par exemple, pour blog.mydomain.ovh, le dossier racine pourrait être « blog ». Si le dossier n'existe pas, il sera créé automatiquement.|
 |Activer l'IPv6|Permet d'activer le protocole IPv6 sur le domaine renseigné. Apprenez-en plus grâce à [notre page IP](https://www.ovh.com/fr/hebergement-web/ip.xml){.external}.|
 
@@ -147,7 +147,7 @@ A contrario, si vous souhaitez installer manuellement votre site, munissez-vous 
 >
 > Si vous souhaitez ajouter plusieurs sites web, vous devrez répéter cette étape.
 >
-> Nous vous invitons à être vigilant sur le nombre de sites que vous partagez sur votre hébergement. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} indique le nombre de sites internet que vous pouvez accueillir sur votre espace.
+> Nous vous invitons à être vigilant sur le nombre de sites que vous partagez sur votre hébergement. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} indique le nombre de sites Internet que vous pouvez accueillir sur votre espace.
 >
 
 ## Aller plus loin
