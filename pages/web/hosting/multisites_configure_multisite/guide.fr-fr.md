@@ -38,7 +38,9 @@ Le tableau qui s'affiche liste tous les noms de domaine et sous-domaines ajouté
 
 ### Étape 2 : ajouter un domaine ou un sous-domaine
 
-Pour ajouter un nouveau nom de domaine ou sous-domaine à votre hébergement web, cliquez sur le bouton `Ajouter un domaine ou sous-domaine`{.action} puis effectuez votre choix dans la fenêtre qui s’affiche.
+Pour ajouter un nouveau nom de domaine ou sous-domaine à votre hébergement web, cliquez sur le bouton `Actions` situé à gauche de l'écran puis sur `Ajouter un domaine ou sous domaine`{.action} puis effectuez votre choix dans la fenêtre qui s’affiche.
+
+![actions](images/actions-multisite-ovh.png){.thumbnail}
 
 - **Ajouter un domaine enregistré chez OVHcloud** :
 
