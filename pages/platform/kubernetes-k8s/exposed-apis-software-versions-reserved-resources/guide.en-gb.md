@@ -95,7 +95,7 @@ Feature gates:
 Each worker node has a certain amount of GB of RAM and mCPU reserved for Kubernetes components.  
 These reserved quotas may evolve in the future; the page will be updated accordingly.
 
-To guarantee the availabilty of a customer's node, we are reserving resources (CPU and RAM), proportionally on the instance flavor.
+To guarantee the availability of a customer's node, we are reserving resources (CPU and RAM), proportionally on the instance flavor.
 
 * CPU
 
