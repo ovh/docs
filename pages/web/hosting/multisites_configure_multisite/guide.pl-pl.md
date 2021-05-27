@@ -141,7 +141,7 @@ Po dodaniu domeny wystarczy umieścić w Internecie powiązaną z nią stronę W
 
 Aby wesprzeć Cię w tym procesie, możesz skorzystać z gotowej do użycia struktury strony WWW, która jest dostępna za 1 kliknięciem od OVHcloud. Strona zostanie wówczas automatycznie zainstalowana w uprzednio skonfigurowanym katalogu głównym. O modułach dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}. 
 
-Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a następnie umieść je online w odpowiednim katalogu głównym na przestrzeni dyskowej.  Dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](../hosting_www_umieszczenie_strony_w_internecie/){.external}.
+Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a następnie umieść je online w odpowiednim katalogu głównym na przestrzeni dyskowej. Dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](../hosting_www_umieszczenie_strony_w_internecie/){.external}.
 
 > [!primary]
 >
