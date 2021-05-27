@@ -102,7 +102,7 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 >
 > |Feld|Wo finde ich die Information?|Durchzuführende Maßnahme|
 > |---|---|---|
-> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain ovhcontrol (z. B. ovhcontrol.mydomain.ovh) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Um zu dieser zu gelangen, finden Sie die [DNS Server](../../domains/webhosting_bearbeiten_der_dns_zone/), mit denen Ihre Domain verbunden ist. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
+> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain ovhcontrol (z. B. ovhcontrol.mydomain.ovh) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Um zu dieser zu gelangen, finden Sie die [DNS Server](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-konzept-verstehen), mit denen Ihre Domain verbunden ist. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
 >
 > ![Multisite](images/add-multisite-external-step3.png){.thumbnail}
 >

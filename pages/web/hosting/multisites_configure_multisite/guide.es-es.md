@@ -10,7 +10,7 @@ order: 1
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 19/01/2021**
+**Última actualización: 27/05/2021**
 
 ## Objetivo
 
@@ -22,7 +22,7 @@ Es posible alojar varios sitios web en un mismo plan de hosting, aunque los domi
 
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.es/hosting/){.external} compatible.
 - Tener uno o más [dominios](https://www.ovh.es/dominios/){.external}.
-- Poder modificar la configuración de sus dominios (la zona DNS).
+- Poder modificar la configuración de sus dominios (la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns)).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
@@ -35,7 +35,7 @@ Se mostrará una tabla con todos los dominios y subdominios añadidos a su soluc
 
 > [!primary]
 >
-> Si quiere migrar su sitio web evitando cualquier interrupción del servicio, vaya al [paso 3\. publicar un sitio web en internet](#site-online).
+> Si quiere migrar su sitio web evitando cualquier interrupción del servicio, vaya al [paso 3\. publicar un sitio web en Internet](#site-online).
 >
 
 ![Multisitio](images/access-multisite-ovh.png){.thumbnail}
@@ -63,11 +63,12 @@ Este paso solo es pertinente si ha seleccionado la opción "Añadir un dominio r
 
 A continuación, deberá personalizar la adición del dominio o subdominio. Según el [plan de hosting de OVHcloud](https://www.ovh.es/hosting/){.external} contratado, algunas opciones podrían no estar disponibles.
 
+![Multisitio](images/add-multisite-step2.png){.thumbnail}
+
 |Campo|Descripción|
 |---|---|
-|Dominios|El nombre de dominio seleccionado se autocompletará por defecto. Puede añadir un subdominio (p. ej., **blog**.mydomain.ovh) y crear simultáneamente el subdominio www correspondiente (p. ej., **ww.blog**.mydomain.ovh). El dominio que introduzca aquí será la dirección de internet del sitio web una vez publicado.|
+|Dominios|El nombre de dominio seleccionado se autocompletará por defecto. Puede añadir un subdominio (p. ej., **blog**.mydomain.ovh) y crear simultáneamente el subdominio www correspondiente (p. ej., **www.blog**.mydomain.ovh). El dominio que introduzca aquí será la dirección de internet del sitio web una vez publicado.|
 |Carpeta raíz|Defina la carpeta, en su espacio de almacenamiento, hacia la que apunta el dominio . Los archivos del sitio web deberán publicarse en este espacio. Por ejemplo, para blog.mydomain.ovh, la carpeta raíz podría ser "blog". Si la carpeta no existe, se creará automáticamente.|
-|Activar IPv6|Permite activar el protocolo IPv6 en el dominio indicado. Más información en nuestra página sobre las [IP](https://www.ovh.es/hosting/ip.xml){.external}.|
 |SSL|Permite disfrutar de una conexión segura (https://) en el dominio seleccionado. Más información en nuestra página sobre [SSL](https://www.ovh.es/ssl/){.external}. Si activa conjuntamente las opciones SSL y CDN (Content Delivery Network), podrá disfrutar también del protocolo **HTTP2** (activo por defecto en nuestro datacenter de Gravelines).|
 |Activar la CDN|Permite activar el servicio CDN (almacenamiento en caché de los elementos estáticos del sitio web, como las imágenes) en el dominio seleccionado. Más información en nuestra página sobre [CDN](https://www.ovh.es/hosting/cdn.xml){.external}. Si activa conjuntamente las opciones SSL y CDN, podrá disfrutar también del protocolo **HTTP2** (activo por defecto en nuestro datacenter de Gravelines).|
 |IP del país|Permite disfrutar de una dirección IP geolocalizada (a elegir entre diversos países) en el dominio seleccionado. Más información en nuestra página sobre las [IP](https://www.ovh.es/hosting/ip.xml){.external}.|
@@ -76,14 +77,14 @@ A continuación, deberá personalizar la adición del dominio o subdominio. Seg�
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}. Compruebe que la información que se muestra en el resumen es correcta.
 
-![Multisitio](images/add-multisite-step2.png){.thumbnail}
+![Multisitio](images/add-multisite-step3.png){.thumbnail}
 
 Al añadir un dominio registrado en OVHcloud, podrá modificar la configuración DNS de forma automática o manual:
 
 - **Para una configuración DNS automática**, marque la casilla `Configuración automática (recomendado)`{.action}.
 - **Para una configuración DNS manual**, desmarque la casilla `Configuración automática (recomendado)`{.action}. En este caso, se mostrarán los parámetros que debe modificar.  Si desea realizar esta configuración, consulte nuestra guía ["Editar una zona DNS de OVHcloud"](../../domains/web_hosting_como_editar_mi_zona_dns/){.external}.
 
-Haga clic en `Aceptar`{.action} para añadir el dominio. Esta operación puede tardar un máximo de una hora. No obstante, la modificación de la configuración DNS del dominio tarda entre 4 y 24 horas en propagarse y ser efectiva.
+Haga clic en `Aceptar`{.action} para añadir el dominio. Esta operación puede tardar un máximo de una hora. No obstante, la modificación de la configuración DNS del dominio tarda entre 1 y 24 horas en propagarse y ser efectiva.
 
 Una vez añadido el dominio, vaya al [paso 3\. publicar un sitio web en internet](#site-online).
 
@@ -101,7 +102,7 @@ Una vez añadido el dominio, vaya al [paso 3\. publicar un sitio web en internet
 >
 > |Campo|¿Dónde encontrar la información?|Acción a realizar|
 > |---|---|---|
-> |TXT|En la pestaña `Multisitio`{.action}, haciendo clic en `Configuración del código de verificación ovhcontrol`{.action}|Permite a OVHcloud asegurarse de que la adición de cada dominio externo es legítima. Deberá crear el registro TXT con el subdominio ovhcontrol (p. ej., "ovhcontrol.mydomain.ovh"). Solo debe validar el dominio principal, no todos los subdominios. En el caso de una delegación de zona, el campo debe añadirse al área que da autoridad al dominio externo que vaya a añadirse.|
+> |TXT|En la pestaña `Multisitio`{.action}, haciendo clic en `Configuración del código de verificación ovhcontrol`{.action}|Permite a OVHcloud asegurarse de que la adición de cada dominio externo es legítima. Deberá crear el registro TXT con el subdominio ovhcontrol (p. ej., "ovhcontrol.mydomain.ovh") en la zona DNS autorizada para el dominio que quiera añadir.<br></br>Para consultar la configuración DNS, acceda a los [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/) a los que pertenece el dominio. Solo deberá validar el dominio principal, no todos los subdominios.|
 >
 > ![Multisitio](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -157,6 +158,8 @@ Si, por el contrario, quiere instalar manualmente su sitio web, deberá subir lo
 [Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
 
 [Publicar un sitio web en internet](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/){.external}
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
 
