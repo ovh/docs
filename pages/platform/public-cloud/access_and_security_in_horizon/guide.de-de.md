@@ -1,56 +1,57 @@
 ---
-title: Zugriff und Sicherheit in Horizon
-excerpt: In dieser Hilfe werden der Zugriff auf die Instanzen und deren Absicherung beschrieben
+title: Zugriffs- und Sicherheitseinstellungen in Horizon
+excerpt: Erfahren Sie hier, wie Sie sicheren Zugang zu Ihren Instanzen einrichten
 slug: zugriff_und_sicherheit_in_horizon
 legacy_guide_number: g1774
 section: 'Horizon'
 ---
 
+**Letzte Aktualisierung am 26.05.2021**
 
-## 
-OpenStack Horizon stellt Ihnen ein Menü zur Verfügung, in dem Sie die verschiedenen Einstellungen zum Zugriff auf Ihre Instanzen und anderen Dienstleistungen konfigurieren können.
+## Ziel
 
-Sie können darin beispielsweise Sicherheitsgruppen konfigurieren, um die ein- und ausgehenden Verbindungen Ihrer Instanzen zu filtern, oder die OpenRC Datei mit Ihren Kennungen zur Verwendung mit der OpenStack API herunterladen.
-
-In dieser Hilfe wird die Verwendung des OpenStack Horizon Menüs beschrieben.
-
+Das OpenStack Horizon-Interface bietet Optionen zur Konfiguration des Zugriffs auf Ihre Instanzen und andere Dienste.<br>
+Sie können zum Beispiel Sicherheitsgruppen definieren, um ein- und ausgehende Verbindungen zu filtern, oder eine OpenRC-Datei herunterladen, die Zugangsdaten für die OpenStack API enthält.
 
 ## Voraussetzungen
 
-- [Erstellung eines Zugangs zu Horizon]({legacy}1773)
+- [Zugang zum Horizon-Interface](../erstellung_eines_zugangs_zu_horizon/)
 
 
+## In der praktischen Anwendung
 
+Loggen Sie sich im [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) ein.
 
-## 
+Die Zugriffs- und Sicherheitseinstellungen bestehen aus den folgenden Abschnitten, die über das Menü links zugänglich sind:
 
-- Verbinden Sie sich mit dem [Horizon Interface](https://horizon.cloud.ovh.net/auth/login/)
-- Klicken Sie auf die Rubrik Zugriff und Sicherheit
+- **API Access** (unter `Project`{.action})
 
+Die Tabelle unter "API Access" listet die Service-Endpunkte der OpenStack API auf.
 
-Sie finden dort drei Rubriken:
+![Sicherheit Horizon](images/api_access.png){.thumbnail}
 
+Um die Werte für den API-Zugriff einzusehen, klicken Sie auf `View Credentials`{.action}.
 
-- Sicherheitsgruppen: In dieser Rubrik können Sie in Kürze die Sicherheitsregeln für den Zugang zu den Instanzen verwalten, um zum Beispiel den Zugriff auf bestimmte Ports zu beschränken.
+Über den Button `Download OpenStack RC File`{.action} öffnen Sie ein Untermenü, aus dem Sie die passende RC-Datei zum Download auswählen können.
 
+- **Key Pairs** (unter `Project`{.action} / `Compute`{.action})
 
+In diesem Bereich können Sie SSH-Schlüsselpaare anlegen und verwalten. Sie können einfach einen öffentlichen und einen privaten Schlüssel erstellen und hinzufügen, indem Sie auf die Schaltfläche `Create Key Pair`{.action} klicken.
 
-![](images/img_2630.jpg){.thumbnail}
+![Sicherheit Horizon](images/key_pairs.png){.thumbnail}
 
-- Schlüsselpaare: Erlaubt die Verwaltung der SSH Schlüssel auf zwei verschiedene Arten:
+Wenn Sie einen vorhandenen Schlüssel hinzufügen möchten, klicken Sie auf `Import Public Key`{.action}. Im Popup-Fenster können Sie dann den Schlüssel direkt oder über eine Datei hinzufügen.
 
-|Schlüsselpaar erzeugen|Sie vergeben einen Namen für den Schlüssel und können diesen über Ihren Browser herunterladen|
-|Schlüsselpaar importieren|Import eines bestehenden öffentlichen SSH Schlüssels|
+Dieser Teil der Benutzeroberfläche enthält einige grundlegende Anweisungen; ausführlichere Informationen zu SSH-Schlüsseln finden Sie in [dieser Anleitung](../create-ssh-keys/).
 
+- **Security Groups** (unter `Project`{.action} / `Network`{.action})
 
+Sicherheitsgruppen bestehen aus Filterregeln, die auf Netzwerkschnittstellen angewendet werden. Sie können sie verwenden, um den Zugriff auf Instanzen nach IP-Adressen und Ports zu verwalten.
 
-- API Zugriff: Ermöglicht einen Überblick über die Informationen in Zusammenhang mit der API und den Download der openrc.sh Datei für die Verwendung der OpenStack API
+![Sicherheit Horizon](images/security_groups.png){.thumbnail}
 
+Fügen Sie eine Sicherheitsgruppe mit dem Button `Create Security Group`{.action} hinzu. Anschließend können Sie über `Manage Rules`{.action} in der Tabelle angepasste oder vorkonfigurierte einrichten.
 
+## Weiterführende Informationen
 
-![](images/img_2632.jpg){.thumbnail}
-
-
-## 
-[Zurück zum Index der Cloud Hilfen]({legacy}1785)
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

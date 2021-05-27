@@ -11,7 +11,7 @@ order: 1
 >
 
 
-**Letzte Aktualisierung am 16.02.2021**
+**Letzte Aktualisierung am 27.05.2021**
 
 ## Ziel
 
@@ -141,6 +141,22 @@ Sie können jedoch jederzeit einen "Hard Reboot" in Ihrem [OVHcloud Kundencenter
 ### Absicherung Ihres Dedicated Servers
 
 Wie oben erläutert, sind Sie der Administrator Ihres dedizierten Servers. Als solcher sind Sie für Ihre Daten und deren Sicherheit verantwortlich. Mehr Informationen zur Sicherung Ihres Servers finden Sie in unserer Anleitung zur [Absicherung eines Servers](../dedizierten-server-sichern/).
+
+### OVHcloud Monitoring 
+
+Sie können den Monitoring-Status eines Servers im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) vom Tab `Allgemeine Informationen`{.action} aus kontrollieren (Abschnitt **Dienststatus**).
+
+![Monitoring](images/monitoring-your-server.png){.thumbnail}
+
+- Wenn **Monitoring** auf `Aktiviert` gestellt ist, werden Sie per E-Mail benachrichtigt sobald der Server sich unerwartet verhält. Sie können diese Benachrichtungen über den `...`{.action} Button deaktivieren.
+
+- Wenn Sie die Option **Eingriffe am Standort** aktivieren, stimmen Sie der Überwachung durch Techniker im Rechenzentrum zu. Die Hardware wird dann geprüft, falls Ihr Server nicht mehr auf Pings reagiert. 
+
+> [!warning]
+> Wenn die *on-site* Interventionen auf `On`{.action} gesetzt sind, stellen Sie sicher, dass Sie die Option **deaktivieren**, bevor Sie relevante Aktionen auf Ihrem Server durchführen (Hardwaretests, Neustarts, etc.). Sie erhalten Sie weiterhin automatische E-Mails, solange "Monitoring" aktiv ist.
+>
+
+Weitere Informationen zum OVHcloud Monitoring finden Sie in [unserer Anleitung](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/).
 
 ### Netzwerkkonfiguration
 
