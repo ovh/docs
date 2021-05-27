@@ -74,7 +74,7 @@ Once you have expanded the section, you can try out the endpoints directly in th
 >
 > The "serviceName" parameter for each endpoint of the `cloud` section requires your Public Cloud project ID.
 
-For further information about an endpoint, the `Response Class` tab under the `Execute`{.action}` button shows what the API response will look like. Switch the tabs to display wrapper code examples.
+For further information about an endpoint, the `Response Class` tab under the `Execute`{.action} button shows what the API response will look like. Switch the tabs to display wrapper code examples.
 
 ![Response class tab in UI](images/response.png){.thumbnail}
 
