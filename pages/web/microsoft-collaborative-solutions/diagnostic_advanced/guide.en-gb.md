@@ -12,13 +12,13 @@ Go to your OVHcloud control panel using this link: [OVHcloud control panel](http
 
 Once logged in, choose the Microsoft menu from the left column then go to your Exchange account.
 
-![](images/img_4450.png){.thumbnail}
+![](images/img_4450.png)
 
 Click on the "Diagnostic" tab: in order to start the diagnostic, you need to enter the Exchange email account that's affected followed by the correct password.
 
 The diagnostic can take anywhere between 3 and 10 minutes.
 
-![](images/img_4451.jpg){.thumbnail}
+![](images/img_4451.png)
 
 Here's an example of the diagnostic results for an Exchange email account:
 
@@ -29,9 +29,7 @@ Possible actions:
 
 - Create a help request: this allows you to create a ticket for our technical support which will include the results of your diagnostic
 
-
-
-![](images/img_4471.jpg){.thumbnail}
+![](images/img_4471.png)
 
 
 ### Any errors in your diagnostic?
