@@ -18,7 +18,7 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 
 - a compatible [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
 - one or more [domain names](https://www.ovh.co.uk/domains/){.external}
-- the right to modify your domain name's configuration (the [DNS zone](/domains/web_hosting_how_to_edit_my_dns_zone/))
+- the right to modify your domain name's configuration (the [DNS Zone](/domains/web_hosting_how_to_edit_my_dns_zone/))
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
