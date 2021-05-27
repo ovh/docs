@@ -46,7 +46,7 @@ When your account is blocked due to spam, it is still visible from your Exchange
 
 You have to reply to this email in order to unblock the account.
 
-![](images/img_4453.jpg){.thumbnail}
+![](images/img_4453.png)
 
 ### Subscription to the account has expired:
 
