@@ -92,32 +92,25 @@ Feature gates:
 
 ## Reserved resources
 
-Each worker node has a certain amount of GB of RAM and mCPU reserved for Kubernetes components.  
+Each worker node has a certain amount of CPU, RAM and storage reserved for Kubernetes components.  
 These reserved quotas may evolve in the future; the page will be updated accordingly.
 
-To guarantee the availability of a customer's node, we are reserving resources (CPU and RAM), proportionally on the instance flavor.
+To guarantee the availability of a customer's node, the amount of reserved resources depends on the instance flavor.
 
-* CPU
+* **CPU** reservation is defined through this formula:
+    > 15 % of 1 CPU + 0,5% of all CPU cores
 
-The calculation used to estimate the reservation is: (10 % of 1 CPU + 0,5% of all CPU cores)
-The unit is in seconds: 1 CPU = 1 second, 10% of 1 CPU = 100 ms, 50% of 2 CPU = 1 s
+* **RAM** reservation is defined through this formula:
+    > 1024 MB + 5% of total memory
 
-For example, the result for the flavour b2-15 with 4 CPU cores: (10 % of 1 CPU + (0,5 * 4)= 120 ms
+* **Storage** reservation is defined through this formula:
+    > log(total storage in GB) * 10 + 10% of total storage
+    >
+    > Note: The mathematical "log" function corresponds to "log10". For example: log(100) = 2.
 
-* RAM
+This table sums up the reserved resources on b2 flavors:
 
-The calculation used to estimate the reservation is: ( (768M Kubernetes + 5% of total memory) + ( 256M system) )
-
-* Storage
-
-The mathematical "log" function is egal to "ln(10)".
-
-The calculation used to estimate the reservation is: ( ( log(total storage)*2 ) + ( log(total storage)*8 ) + ( 10% of total storage ) )
-for example: `log(100) = 2`.
-
-This array helps you to predict available resouces.
-
-| Flavor | VCore | CPU Reserved ms | RAM Total | RAM Reserved Mb | Storage Total | Storage Reserved Mb |
+| Flavor | vCore | Reserved CPU (ms) | Total RAM | Reserved RAM (MB) | Total storage (GB) | Reserved storage (GB) |
 |-|-|-|-|-|-|-|
 | b2-7 | 2 | 160 | 7 | 1,85 | 50 | 22 |
 | b2-15 | 4 | 170 | 15 | 2,25 | 100 | 30 |

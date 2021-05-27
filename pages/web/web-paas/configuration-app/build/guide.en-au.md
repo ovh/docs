@@ -4,7 +4,7 @@ slug: build
 section: App
 ---
 
-**Last updated 11th May 2021**
+**Last updated 25th May 2021**
 
 
 
@@ -16,10 +16,10 @@ The `.platform.app.yaml` file provides a number of ways to control how an applic
 
 The `build` defines what happens when building the application.  Its only property is `flavor`, which specifies a default set of build tasks to run. Flavors are language-specific.
 
-See what the build flavor is for your language:
-- [Node.js](/languages/nodejs#build-flavor)
 
-- [PHP](/languages/php#build-flavor)
+
+
+
 
 
 In all languages, you can also specify a flavor of `none` (which is the default for any language other than PHP and Node.js); as the name suggests it will take no action at all. That is useful when you want complete control over your build steps, such as to run a custom Composer command or use an alternate Node.js package manager.

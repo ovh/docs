@@ -4,7 +4,7 @@ slug: api-tokens
 section: Cli
 ---
 
-**Last updated 11th May 2021**
+**Last updated 25th May 2021**
 
 
 ## Obtaining a token
@@ -79,7 +79,7 @@ crons:
             fi
 ```
 
-(If you have [renamed the default branch](../../guides-general/default-branch) from `master` to something else, modify the above example accordingly.)
+(If you have renamed the default branch from `master` to something else, modify the above example accordingly.)
 
 > [!primary]  
 > Seriously, please use `--no-wait` for all CLI commands placed in a cron hook. Failure to do so may result in long deploy times and site downtime.
