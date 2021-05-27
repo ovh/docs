@@ -34,11 +34,12 @@ Possible actions:
 ![](images/img_4471.jpg){.thumbnail}
 
 
-## Any errors in your diagnostic?
+### Any errors in your diagnostic?
+
 We will go over every possible error in order to help you solve any of them:
 
 
-## This account has been blocked for sending spam:
+### This account has been blocked for sending spam:
 
 
 This means that sending emails from your account has been temporarily disabled. You can still receive emails, though.
@@ -49,11 +50,11 @@ You have to reply to this email in order to unblock the account.
 
 ![](images/img_4453.jpg){.thumbnail}
 
-WARNING: Subscription to the account has expired:
+### Subscription to the account has expired:
 
 In this instance, your subscription is no longer active, so sending and receiving have been disabled. You should to renew the subscription to reactivate the service.
 
-## This account is blocked due to the security policy:
+### This account is blocked due to the security policy:
 
 You can set a security policy directly from your Exchange service. This can cause the account to get blocked for a certain period of time while this policy is being configured. 
 
@@ -64,14 +65,14 @@ If there's a blockage at that point, you can either wait until the set period of
 You can find more info about security policy and how to configure on this guide: https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-security-policy-password/
 
 
-## Webmail authentication has failed:
+### Webmail authentication has failed:
 
 
 This can be caused by an incorrect password entered while running the diagnostic. In that case, you can restart the diagnostic.
 
 You can also update the password from your Exchange service in the email account tab and then restart the diagnostic. If the issue persists, create a support request.
 
-## The domain's MX record is not valid:
+### The domain's MX record is not valid:
 
 
 This error indicates that emails cannot be received and it is also linked to this error: WARNING: The test email has not been received.
@@ -80,11 +81,20 @@ Here's a list of valid MX servers for the Exchange product offer:
 
 
 - Exchange only : mx1.mail.ovh.net
-- Exchange + POP/IMAP email hosted by OVH : mx1.mail.ovh.net
-- Exchange + POP/IMAP email not hosted by OVH : ex.mail.ovh.net or ex2.mail.ovh.net
+- Exchange + POP/IMAP email hosted by OVHcloud : mx1.mail.ovh.net
+- Exchange + POP/IMAP email not hosted by OVHcloud : ex?.mail.ovh.net
 
+> [!primary]
+>
+> The name of an Exchange service in your OVH Control Panel starts with **hosted-** or **private-**, contains a part of your NIC handle, and ends with a figure (1 for the first Hosted or Private Exchange service installed, 2 for the second, etc.).
+> 
+In our guides, we use as the server name: ex?.mail.ovh.net You will need to replace the “?” with the actual number indicating the appropriate server for your Exchange service.
 
-## The domain's SRV record is not valid:
+You can find this information in the OVHcloud Control Panel, in the Web Cloud section, if you select Microsoft > Exchange in the left-hand column. The server name is displayed in the Connection box in the General Information tab.
+
+> 
+
+### The domain's SRV record is not valid:
 
 
 The SRV record is essential to the automatic configuration of your Exchange account with a compatible email software such as Outlook 2016.
@@ -98,11 +108,9 @@ Field        | Value
 Priority     | 0
 Weight       | 0
 Port         | 443
-Target Hosted product offer: ex.mail.ovh.net or ex2.mail.ovh.net 
-- Target Private product offer: Your-host-name
+Target Hosted product offer:       | Your host name
 
-## The test email could not be sent from this account 
-
+### The test email could not be sent from this account 
 
 This error indicates that emails cannot be sent from your account.
 
