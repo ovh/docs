@@ -15,12 +15,14 @@ Cette documentation a pour objectif de vous permettre d'obtenir vos identifiants
 ## Prérequis
 
 - Disposer d'un abonnement xDSL ou FTTH OVHCloud actif.
-- Être sur la page web des [API OVHcloud](https://api.ovh.com/){.external}.
+- Être connecté sur la page web des [API OVHcloud](https://api.ovh.com/){.external}. 
 - Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
+N'hésitez pas à suivre le guide de premier pas à l'API pour y être bien connecté avant toute chose :
+
+https://docs.ovh.com/fr/api/api-premiers-pas/
 
 ## En pratique
-
 
 Vos identifiants PPPoE sont envoyés pendant la livraison de votre accès, sur votre accès mail de contact. Ces derniers vous permettent de configurer votre équipement OVHCloud ou un équipement personnel pour l’usage de votre accès internet. 
 
