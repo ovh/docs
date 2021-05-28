@@ -149,7 +149,7 @@ Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir 
 
 > [!warning]
 >
-> Si les interventions sur site sont activées (le curseur est alors sur `On`{.action}, veillez à **désactiver** l'option avant d'effectuer les actions appropriées sur votre serveur (tests matériels, redémarrages, etc.). Vous recevrez toujours des e-mails automatiques tant que la fonction « Monitoring » est active.
+> Si les interventions sur site sont activées (le curseur est alors sur `On`{.action}), veillez à **désactiver** l'option avant d'effectuer les actions appropriées sur votre serveur (tests matériels, redémarrages, etc.). Vous recevrez toujours des e-mails automatiques tant que la fonction « Monitoring » est active.
 >
 
 Vous trouverez plus d'informations sur le monitoring OVHcloud dans [ce guide](../monitoring-ip-ovh/).
