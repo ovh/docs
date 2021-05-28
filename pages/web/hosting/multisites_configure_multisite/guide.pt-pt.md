@@ -10,7 +10,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 19/01/2021**
+**Última atualização: 27/05/2021**
 
 ## Objetivo
 
@@ -22,7 +22,7 @@ Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de dom�
 
 - Ter um serviço [de alojamento web OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external} compatível.
 - Dispor de um ou vários [domínios](https://www.ovh.pt/dominios/){.external}.
-- Poder alterar a configuração dos seus nomes de domínio (a zona DNS).
+- Poder alterar a configuração dos seus nomes de domínio (a [zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/)).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
@@ -42,7 +42,9 @@ Aparecerá uma tabela com todos os domínios e subdomínios adicionados à sua s
 
 ### 2 - Adicionar um domínio ou subdomínio
 
-Para adicionar um novo domínio ou subdomínio ao seu alojamento web, clique no botão `Adicionar um domínio ou subdomínio`{.action} e faça a sua escolha na janela que aparece.
+Para adicionar um novo domínio ou subdomínio ao seu alojamento web, clique no botão `Ações`{.action} situado à esquerda do ecrã e, a seguir, em `Adicionar um domínio ou subdomínio`{.action} e faça a sua escolha na nova janela.
+
+![ações](images/actions-multisite-ovh.png){.thumbnail}
 
 - **Adicionar um domínio registado na OVHcloud**:
 
@@ -63,11 +65,12 @@ Esta etapa só se aplica se tiver selecionado "Adicionar um domínio registado n
 
 Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu serviço de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, alguns elementos propostos não poderão ser selecionados.
 
+![multisite](images/add-multisite-step2.png){.thumbnail}
+
 |Informação|Descrição|
 |---|---|
 |Domínios|Por predefinição, o nome de domínio que selecionou é automaticamente indicado. Pode adicionar um subdomínio (por exemplo, **blog**.mydomain.ovh) e criar simultaneamente o subdomínio "www" correspondente (por exemplo, **www.blog**.mydomain.ovh). No final, este domínio será o endereço web do site que pretende publicar.|
 |Pasta raiz|Defina a pasta no seu espaço de armazenamento, para o qual o domínio aponta. É neste espaço que os ficheiros do site deverão ser publicados. Por exemplo, para blog.mydomain.ovh, a pasta raiz poderia ser um "blog". Se a pasta não existir, esta será criada automaticamente.|
-|Ativar o IPv6|Permite ativar o protocolo IPv6 no domínio indicado. Obtenha mais informações na [nossa página sobre IP](https://www.ovh.pt/alojamento-partilhado/ip.xml){.external}.|
 |SSL|Permite-lhe beneficiar de uma ligação segura (HTTPS://) no nome de domínio selecionado. Saiba mais na nossa [página sobre SSL](https://www.ovh.pt/ssl/){.external}. Ao ativar o SSL e o CDN (Content Delivery Network), poderá também beneficiar do protocolo **HTTP2** (este é ativado por predefinição no nosso datacenter de Gravelines).|
 |Ativar o CDN|Permite ativar o CDN (implementação de cache dos elementos estáticos do seu site, como as imagens) no nome de domínio selecionado. Saiba mais na [nossa página sobre CDN](https://www.ovh.pt/alojamento-partilhado/cdn.xml){.external}. Ao ativar o SSL e o CDN, poderá também beneficiar do protocolo **HTTP2** (este é ativado por predefinição no nosso datacenter de Gravelines).|
 |IP do país|Permite beneficiar de um endereço de IP geolocalizado (a partir de uma lista de países) para o nome de domínio selecionado. Obtenha mais informações na [nossa página sobre IP](https://www.ovh.pt/alojamento-partilhado/ip.xml){.external}.|
@@ -76,14 +79,14 @@ Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifique o resumo que aparece.
 
-![multisite](images/add-multisite-step2.png){.thumbnail}
+![multisite](images/add-multisite-step3.png){.thumbnail}
 
 Ao selecionar um domínio registado na OVHcloud, tem a possibilidade de modificar automaticamente ou manualmente a sua configuração DNS:
 
 - **para uma configuração DNS automática**: selecione a opção `Configuração automática (recomendada)`{.action};
 - **para uma configuração DNS manual**: desselecione a opção `Configuração automática (recomendada)`{.action} e anote as informações apresentadas. Quando efetuar esta configuração, consulte a nossa documentação ["Editar uma zona DNS da OVHcloud"](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}.
 
-Em seguida, clique em `Validar`{.action} para adicionar o domínio. Esta operação pode demorar até uma hora. No entanto, a propagação das alterações da configuração DNS do seu domínio pode demorar entre 4 a 24 horas.
+Em seguida, clique em `Validar`{.action} para adicionar o domínio. Esta operação pode demorar até uma hora. No entanto, a propagação das alterações da configuração DNS do seu domínio pode demorar entre 1 a 24 horas.
 
 Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website online](#site-online).
 
@@ -101,7 +104,7 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 >
 > |Campo|Onde posso encontrar a informação?|Ação a realizar|
 > |---|---|---|
-> |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Crie o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.mydomainovh). Deverá validar apenas o domínio principal, e não os subdomínios. No caso de uma delegação de zona, o campo deve ser adicionado na zona que confere autoridade ao nome de domínio externo a adicionar.|
+> |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Certifique-se de que cria o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.mydomain.ovh) na zona DNS que faz autoridade para o nome de domínio a adicionar.<br></br>Para consultar esta última, encontre os [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#entender-el-concepto-de-dns) aos quais o seu domínio está associado. Deverá validar apenas o domínio principal, não todos os subdomínios.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -154,8 +157,10 @@ Se, pelo contrário, pretender instalar manualmente o seu site web, deverá recu
 
 ["Módulos 1 clique: como instalar um CMS para criar um site"](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}
 
-["Editar uma zona DNS da OVH"](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}
+["Editar uma zona DNS da OVHcloud"](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}
 
 ["Publicar um site num alojamento web"](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external}
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
