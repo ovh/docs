@@ -27,15 +27,15 @@ Cette documentation a pour objectif de vous permettre de vérifier la stabilité
 ## En pratique
 
 
-Lors de la connexion de votre routeur sur les équipements OVHCloud, une trace est systématiquement laissé à notre niveau sur les logs de l’équipement nommé radius. 
+Lors de la connexion de votre routeur sur les équipements OVHCloud, une trace est systématiquement laissée à notre niveau sur les logs de l’équipement nommé radius. 
 
-Suite à cela chaque reconnexion du lien, laisse une nouvelle trace horodatée de la connexion. Tout cela permet de vérifier la date de la dernière connexion et la fréquence à laquelle votre équipement se connecte chez nous. Une coupure électrique entraînerai donc une reconnexion de votre routeur dans les minutes qui suivent par exemple.
-
-L’API permettant de récupérer ces informations est disponible ici : 
-
-https://api.ovh.com/console/#/xdsl/%7BserviceName%7D/radiusConnectionLogs#GET
+Chaque reconnexion du lien, une nouvelle trace horodatée de la connexion est crée. Une reconnexion peut être liée à un reboot de votre box, une perte de sychronisation, un incident générique ou avoir générer les identifiants de connexion. 
 
 Il est en revanche important de noter que seules les reconnexions sont indiquées, une déconnexion serait alors supposée si l'accès (répondant au ping en temps normal, n'y réponds plus).
+
+L’API permettant de récupérer ces informations est disponible via le lien suivant : 
+
+https://api.ovh.com/console/#/xdsl/%7BserviceName%7D/radiusConnectionLogs#GET
 
 #### Aperçu
 
@@ -53,8 +53,8 @@ En utilisant le bouton execute : l'API répondra alors :
 
 Vous retrouvez dans l'encadré orange, l'information d'un log de reconnexion séparé en deux éléments :
 
-- La date au format AAAA/MM/JJ et l'heure
-- Message : lié à l'opérateur de collecte KOSC
+- La date au format AAAA-MM-JJTHH:mm:ss+GMT
+- Message : lié à l'opérateur de collectee
 - State : l'état de connexion, ici fonctionnel résultant dans le "OK". Il faut noter qu'un refus d'authenfication donnera "KO" avec un message "wrong login or password" le plus souvent.
 - Login : rappel de votre identifiant PPPoE
 
