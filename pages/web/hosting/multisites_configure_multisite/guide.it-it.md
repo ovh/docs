@@ -155,9 +155,9 @@ Se invece vuoi effettuare un’installazione manuale, assicurati di avere a disp
 
 ## Per saperne di più
 
-[Installare i moduli in 1 click OVH](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
+[Installare i moduli in 1 click OVHcloud](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
 
-[Modificare una zona DNS OVH](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}
+[Modificare una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}
 
 [Mettere online un sito Internet su un hosting Web](../hosting_condiviso_come_mettere_online_il_tuo_sito/){.external}
 

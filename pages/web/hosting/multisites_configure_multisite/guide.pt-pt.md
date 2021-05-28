@@ -157,7 +157,7 @@ Se, pelo contrário, pretender instalar manualmente o seu site web, deverá recu
 
 ["Módulos 1 clique: como instalar um CMS para criar um site"](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}
 
-["Editar uma zona DNS da OVH"](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}
+["Editar uma zona DNS da OVHcloud"](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}
 
 ["Publicar um site num alojamento web"](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external}
 
