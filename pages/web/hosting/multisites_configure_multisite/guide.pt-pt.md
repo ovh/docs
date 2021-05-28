@@ -42,7 +42,9 @@ Aparecerá uma tabela com todos os domínios e subdomínios adicionados à sua s
 
 ### 2 - Adicionar um domínio ou subdomínio
 
-Para adicionar um novo domínio ou subdomínio ao seu alojamento web, clique no botão `Adicionar um domínio ou subdomínio`{.action} e faça a sua escolha na janela que aparece.
+Para adicionar um novo domínio ou subdomínio ao seu alojamento web, clique no botão `Ações`{.action} situado à esquerda do ecrã e, a seguir, em `Adicionar um domínio ou subdomínio`{.action} e faça a sua escolha na nova janela.
+
+![ações](images/actions-multisite-ovh.png){.thumbnail}
 
 - **Adicionar um domínio registado na OVHcloud**:
 

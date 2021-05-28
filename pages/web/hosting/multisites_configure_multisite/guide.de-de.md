@@ -42,7 +42,9 @@ Die angezeigte Tabelle listet alle Domains und Subdomains auf, die Ihrer Webhost
 
 ### Schritt 2: Eine Domain oder Subdomain hinzufügen
 
-Um Ihrem Webhosting eine neue Domain oder Subdomain hinzuzufügen, klicken Sie auf den Button `Domain oder Subdomain hinzufügen`{.action} und wählen Sie dann im angezeigten Fenster aus.
+Um eine neue Domain oder Subdomain zu Ihrem Webhosting hinzuzufügen, klicken Sie links auf den Button `Aktionen`{.action}, dann auf `Eine Domain oder Subdomain hinzufügen`{.action} und wählen Sie im angezeigten Fenster aus.
+
+![Aktionen](images/actions-multisite-ovh.png){.thumbnail}
 
 - **Eine bei OVHcloud registrierte Domain hinzufügen**:
 

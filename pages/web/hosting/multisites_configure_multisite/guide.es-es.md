@@ -42,7 +42,9 @@ Se mostrará una tabla con todos los dominios y subdominios añadidos a su soluc
 
 ### 2\. Añadir un dominio o subdominio
 
-Para añadir un nuevo dominio o subdominio al alojamiento, haga clic en el botón `Añadir un dominio o subdominio`{.action} y siga los pasos que se indican.
+Para añadir un nuevo dominio o subdominio al alojamiento, haga clic en el botón `Acciones`{.action} situado a la izquierda de la pantalla y seleccione `Añadir un dominio o subdominio`{.action}.
+
+![acciones](images/actions-multisite-ovh.png){.thumbnail}
 
 - **Añadir un dominio registrado con OVHcloud** :
 

@@ -41,7 +41,9 @@ Tabela, która się wyświetla zawiera listę wszystkich domen i subdomen dodany
 
 ### Etap 2: dodanie domeny lub subdomeny
 
-Aby dodać nową domenę lub subdomenę do Twojego hostingu, kliknij przycisk `Dodaj domenę lub subdomenę`{.action}, a następnie wybierz domenę w oknie, które się wyświetli.
+Aby dodać nową domenę lub subdomenę do Twojego hostingu, kliknij przycisk `Operacje`{.action} po lewej stronie ekranu, a następnie `Dodaj domenę lub subdomenę`{.action} i wybierz domenę w oknie, które się wyświetli.
+
+![akcje](images/actions-multisite-ovh.png){.thumbnail}
 
 - **Dodaj domenę zarejestrowaną w OVHcloud**:
 

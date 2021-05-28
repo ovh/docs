@@ -42,7 +42,9 @@ Visualizzi una tabella con tutti i domini e i sottodomini aggiunti alla tua solu
 
 ### Step 2: aggiungi un dominio o un sottodominio
 
-Per aggiungere un nuovo dominio o sottodominio al tuo hosting, clicca sul pulsante `Aggiungi un dominio o un sottodominio`{.action} e seleziona una delle opzioni proposte.
+Per aggiungere un nuovo dominio o sottodominio al tuo hosting Web, clicca sul pulsante `Azioni`{.action} a sinistra e poi su `Aggiungi un dominio o un sottodominio`{.action}, seleziona la scheda che appare.
+
+![azioni](images/actions-multisite-ovh.png){.thumbnail}
 
 - **Aggiungi un dominio registrato in OVHcloud**:
 
