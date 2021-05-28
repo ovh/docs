@@ -7,7 +7,7 @@ section: 'Configurations techniques avancées'
 order: 5
 ---
 
-**Dernière mise à jour le 24/05/2021**
+**Dernière mise à jour le 28/05/2021**
 
 ## Objectif
 
@@ -49,20 +49,29 @@ En utilisant le bouton execute : l'API répondra alors :
 
 ![api_radex](images/api_radex2.png){.thumbnail}
 
+Vous retrouvez dans l'encadré orange, l'information d'un log de reconnexion séparé en deux éléments :
 
-#### Retrouver ce mail dans mon espace client
+- La date au format AAAA/MM/JJ et l'heure
+- Message : lié à l'opérateur de collecte KOSC
+- State : l'état de connexion, ici fonctionnel résultant dans le "OK". Il faut noter qu'un refus d'authenfication donnera "KO" avec un message "wrong login or password" le plus souvent.
+- Login : rappel de votre identifiant PPPoE
 
+La seconde partie dans l'encadré est l'effet mirroir sur les équipements OVHCloud qui finalise l'authenfiication. 
 
-Depuis votre espace client dans les emails de service : 
-
-![email_recus](images/email_recus.png){.thumbnail}
-
-![email_recus](images/mailtype.png){.thumbnail}
-
-![email_recus](images/contenumailtyperesetppp.png){.thumbnail}
-
+Il faudra donc bien noter qu'une connexion génère deux logs. Un maximum de 50 logs sont stockés, donc 25 reconnexions au total.
 
 
+#### Déduire le temps de session de votre accès. 
+
+Avec les logs de l'exemple précédent, nous pouvons en déduire que si mon accès répond toujours à une requête "ping" à ce jour et que la dernière reconnexion sur les équipements OVHCloud est datée du 22/05/2021, alors ma session PPPoE est montée depuis 6 jours environ.
+
+Il n'y donc pas eu de coupure sur l'accès concerné car la moindre reconnexion suite un redémarrage de votre box par exemple, résultatera d'une reconnexion sur nos équipements. 
+
+Notez bien en revanche que si l'accès n'est plus synchronisé, il ne pourra bien entendu plus s'authentifier chez nous.
+
+Si mon accès en revanche remonte plus de cinq reconnexions sur une même tranche de 24h, qui ne seraient pas la conséquence d'une action sur votre box. Il peut être possible considérer l'accès comme instable. 
+
+Vous pouvez par la suite faire le point sur votre desserte interne avec notre guide disponible à l'adresse suivante : https://docs.ovh.com/fr/xdsl/la-desserte-interne/
 
 
 ## Aller plus loin
