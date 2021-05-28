@@ -117,7 +117,7 @@ Pour supprimer un groupe de téléphonie, sélectionnez-le dans le menu de gauch
 > [!warning]
 > Si des services sont encore présent dans ce groupe, ils seront également supprimer à la prochaine date de facturation.
 > Si vous souhaitez les conserver, il faut déplacer ces services dans un autre groupe de téléphonie.
-> Pour cela, référez vous au guide ["Gestion des groupes de téléphonie"](https://docs.ovh.com/fr/voip/gestion-des-groupes-de-telephonie/#regrouper-des-services-dans-un-groupe-de-telephonie)
+> Pour cela, référez vous au guide ["Gestion des groupes de téléphonie"](https://docs.ovh.com/fr/voip/gestion-des-groupes-de-telephonie/) afin d ecréer un nouveau groupe ou déplacer ces services dans un groupe existant.
 
 
 ### Les transferts entre groupes
