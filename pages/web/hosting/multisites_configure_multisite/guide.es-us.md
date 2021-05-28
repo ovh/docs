@@ -63,7 +63,7 @@ Este paso solo es pertinente si ha seleccionado la opción "Añadir un dominio r
 > [!primary]
 > Para añadir un subdominio, es necesario seleccionar primero el dominio principal de la lista (por ejemplo: mydomain.ovh). En la siguiente etapa podrá indicar el subdominio (por ejemplo: **blog**.mydomain.ovh).
 
-A continuación, deberá personalizar la adición del dominio o subdominio. Según el [plan de hosting de OVHcloud](https://www.ovh.es/hosting/){.external} contratado, algunas opciones podrían no estar disponibles.
+A continuación, deberá personalizar la adición del dominio o subdominio. Según el [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external} contratado, algunas opciones podrían no estar disponibles.
 
 ![Multisitio](images/add-multisite-step2.png){.thumbnail}
 
@@ -75,7 +75,7 @@ A continuación, deberá personalizar la adición del dominio o subdominio. Seg�
 |Activar la CDN|Permite activar el servicio CDN (almacenamiento en caché de los elementos estáticos del sitio web, como las imágenes) en el dominio seleccionado. Más información en nuestra página sobre [CDN](https://www.ovh.es/hosting/cdn.xml){.external}. Si activa conjuntamente las opciones SSL y CDN, podrá disfrutar también del protocolo **HTTP2** (activo por defecto en nuestro datacenter de Gravelines).|
 |IP del país|Permite disfrutar de una dirección IP geolocalizada (a elegir entre diversos países) en el dominio seleccionado. Más información en nuestra página sobre las [IP](https://www.ovh.es/hosting/ip.xml){.external}.|
 |Activar el firewall|Permite activar un firewall (análisis de las peticiones) en el dominio seleccionado. Más información en nuestra página sobre [Mod Security](https://www.ovh.es/hosting/mod_security.xml){.external}.|
-|Logs separados|Permite activar un nuevo espacio de logs en el dominio seleccionado. Deberá elegir un dominio de la lista, que determinará el nombre de acceso al nuevo espacio. Más información en [nuestra página sobre estadísticas completas](https://www.ovh.es/hosting/estadisticas-web.xml){.external}.|
+|Logs separados|Permite activar un nuevo espacio de logs en el dominio seleccionado. Deberá elegir un dominio de la lista, que determinará el nombre de acceso al nuevo espacio. Más información en [nuestra página sobre estadísticas completas](https://www.ovh.com/world/es/hosting/web_estadisticas.xml){.external}.|
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}. Compruebe que la información que se muestra en el resumen es correcta.
 
@@ -115,7 +115,7 @@ Una vez añadido el dominio, vaya al [paso 3\. publicar un sitio web en internet
 > ![Multisitio](images/add-multisite-external-step4.png){.thumbnail}
 >
 
- Una vez seleccionado el dominio que quiera asociar al alojamiento, deberá personalizar su información. Tenga en cuenta que algunas opciones incluidas en su [plan de hosting de OVH](https://www.ovh.es/hosting/){.external} no pueden activarse durante este proceso. Es necesario añadir el dominio en primer lugar y posteriormente activar dichas opciones modificando la configuración del multisitio.
+ Una vez seleccionado el dominio que quiera asociar al alojamiento, deberá personalizar su información. Tenga en cuenta que algunas opciones incluidas en su [plan de hosting de OVH](https://www.ovh.com/world/es/hosting/){.external} no pueden activarse durante este proceso. Es necesario añadir el dominio en primer lugar y posteriormente activar dichas opciones modificando la configuración del multisitio.
 
 |Campo|Descripción|
 |---|---|
@@ -150,18 +150,18 @@ Si, por el contrario, quiere instalar manualmente su sitio web, deberá subir lo
 >
 > Si quiere utilizar su hosting para alojar varios sitios web, deberá realizar esta operación tantas veces como sea necesario.
 >
-> Recuerde que cuantos más sitios web aloje en su hosting, mayor será la demanda de recursos asignados. [En la página de nuestros planes de hosting](https://www.ovh.es/hosting/){.external} puede consultar el número de sitios web que puede alojar en su espacio.
+> Recuerde que cuantos más sitios web aloje en su hosting, mayor será la demanda de recursos asignados. [En la página de nuestros planes de hosting](https://www.ovh.com/world/es/hosting/){.external} puede consultar el número de sitios web que puede alojar en su espacio.
 >
 
 ## Más información
 
-[Instalar un sitio web con un módulo en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/){.external}
+[Instalar un sitio web con un módulo en un clic](../modulos-en-un-clic/){.external}
 
-[Editar una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
+[Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/){.external}
 
-[Publicar un sitio web en internet](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/){.external}
+[Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet/){.external}
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
 

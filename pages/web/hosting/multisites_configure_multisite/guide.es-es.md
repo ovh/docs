@@ -155,11 +155,11 @@ Si, por el contrario, quiere instalar manualmente su sitio web, deberá subir lo
 
 ## Más información
 
-[Instalar un sitio web con un módulo en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/){.external}
+[Instalar un sitio web con un módulo en un clic](../modulos-en-un-clic/){.external}
 
-[Editar una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
+[Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/){.external}
 
-[Publicar un sitio web en internet](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/){.external}
+[Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet/){.external}
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
