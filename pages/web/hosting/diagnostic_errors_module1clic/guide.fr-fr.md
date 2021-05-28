@@ -5,9 +5,7 @@ excerpt: Diagnostiquez les cas les plus courants d'erreurs liées aux créations
 section: Diagnostic
 ---
 
-
-**Dernière mise à jour le 21/05/21**
-
+**Dernière mise à jour le 28/05/21**
 
 ## Objectif
 
@@ -22,13 +20,11 @@ La création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou av
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
 
-
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web](https://www.ovh.com/fr/hebergement-web/) compatible.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir utilisé la fonctionnalité [Module en 1 clic](../modules-en-1-clic/), afin de créer un nouveau site.
-
 
 ## En pratique
 
@@ -37,40 +33,39 @@ La création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou av
 > Nous indiquons ici les erreurs les plus courantes. Si vous rencontrez une autre anomalie, consultez notre [FAQ sur les hébergements Web](https://www.ovh.com/fr/hebergement-web/faq/).
 >
 
-
-### "Une erreur s'est produite lors du chargement des informations. (You need at least one free database)"
+### « Une erreur s'est produite lors du chargement des informations. (You need at least one free database) »
 
 ![1freeDB](images/1freeDB.png){.thumbnail}
 
 Si ce message apparaît quand vous lancez l'installation de votre module, c'est qu'il n'est pas possible de créer une nouvelle base de données sur votre hébergement.
 
-#### Solution 1 : Changer votre offre d'hébergement
+#### Solution 1 : modifier votre offre d'hébergement
 
 > [!primary]
 >
 > Retrouvez le comparatif de nos différentes [offres d'hébergement](https://www.ovh.com/fr/hebergement-web/).
 >
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}, sur l'hébergement concerné et sur `Changer d'offre` dans la partie `Abonnement` - `Offre`:
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}. Choisissez l'hébergement concerné puis cliquez sur `Changer d'offre` dans la partie `Abonnement` - `Offre` :
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Les offres [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) et [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml) vous permettront de créer jusqu'à trois modules 1 clic supplémentaires. Les offres `Performance` vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml).
+Les offres [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) et [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres Performance vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml).
 
-#### Solution 2 : Supprimer une base de données non utilisée <a name="supprimer-la-base"></a>
+#### Solution n°2 : supprimer une base de données non utilisée <a name="supprimer-la-base"></a>
 
 > [!warning]
 >
 > L'opération de suppression d'une base de données est définitive. Elle entraîne également la suppression des sauvegardes de la base concernée. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre webmaster ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
 >
 
-Pour supprimer une base de données, dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}, `Bases de données`{.action}. Supprimez enfin la base de données souhaitée :
+Pour supprimer une base de données, dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action} et enfin `Bases de données`{.action}. Supprimez la base de données souhaitée :
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
 
-#### Solution 3 : Commander de nouvelles bases de données
+#### Solution n°3 : commander de nouvelles bases de données
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}, `Bases de données`{.action} et sur `Actions`{.action} :
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}. Dans `Bases de données`{.action}, cliquez sur `Actions`{.action} :
 
 ![order_a_database](images/order_a_database.png){.thumbnail}
 
@@ -79,42 +74,39 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 > Retrouvez le comparatif de nos différentes [offres de bases de données](https://www.ovh.com/fr/hebergement-web/options-sql.xml)
 >
 
-#### Solution 4 : Installer votre module sur une base déjà utilisée
+#### Solution n°4 : installer votre module sur une base de données déjà utilisée
 
-Pour installer votre module sur une base de données déjà utilisée, vous devrez utilisez le [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) d'installation d'un nouveau `Module en 1 clic`.
+Pour installer votre module sur une base de données déjà utilisée, vous devrez utilisez le [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) d'installation d'un nouveau **Module en 1 clic**.
 
 Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
 
-
-### "Le répertoire d'installation n'est pas vide"
+### « Le répertoire d'installation n'est pas vide »
 
 ![folder_not_empty](images/folder_not_empty.png){.thumbnail}
 
-Après avoir lancé la création de votre module, vous avez reçu un mail indiquant que le répertoire d'installation de votre module n'est pas vide.
+Après avoir lancé la création de votre module, vous avez reçu un e-mail indiquant que le répertoire d'installation de votre module n'est pas vide.
 
-Ce message signifie que le `Dossier racine` auquel est lié votre domaine contient un ou plusieurs fichiers ou dossiers.
+Ce message signifie que le **Dossier racine** auquel est lié votre domaine contient un ou plusieurs fichiers ou dossiers.
 
-Pour relier votre domaine à un autre répertoire, cliquez sur `Modifier le domaine`{.action} dans l'onglet `Multisite`{.action} puis indiquez le nom d'un nouveau `Dossier racine` (Un répertoire vide sera créé automatiquement sur votre hébergement).
+Pour relier votre domaine à un autre répertoire, cliquez sur `Modifier le domaine`{.action} dans l'onglet `Multisite`{.action} puis indiquez le nom d'un nouveau **Dossier racine** (un répertoire vide sera créé automatiquement sur votre hébergement).
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
-Vous pouvez également vous connecter à votre hébergement via [FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/), puis supprimer ou déplacer le contenu du dossier, après l'avoir sauvegardé.
+Vous pouvez également vous connecter à votre hébergement via [FTP](../connexion-espace-stockage-ftp-hebergement-web/), puis supprimer ou déplacer le contenu du dossier, après l'avoir sauvegardé.
 
-
-### "Impossible de se connecter à la base de données" <a name="supprimer-le-module"></a>
+### « Impossible de se connecter à la base de données » <a name="supprimer-le-module"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
-Après avoir lancé l'installation de votre module en mode avancé, vous avez reçu un mail indiquant que votre module ne peut pas se connecter à la base de données indiquée. 
+Après avoir lancé l'installation de votre module en mode avancé, vous avez reçu un e-mail indiquant que votre module ne peut pas se connecter à la base de données indiquée. 
 
-Vous devez donc vérifier les identifiants de votre base de données (Pour les retrouver, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/)).
+Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
 
-<a name="supprimer-le-module"></a>Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
+Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
 
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
 
 Puis relancez l'installation d'un nouveau module.
-
 
 ### Votre nom de domaine n'est pas proposé lors de la création du module
 
@@ -125,24 +117,21 @@ Cliquez sur l’onglet `Multisite`{.action}, puis effectuez les vérifications s
 |Scénario|Action à entreprendre|
 |---|---|
 |Le domaine ou le sous-domaine lié au site que vous souhaitez créer n'apparaît pas dans le `Multisite`{.action}.|Ajoutez votre domaine en suivant [ces indications](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
-|Le nom de domaine a été supprimé du multisite sans action de votre part.|Si votre domaine ou sa [Zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre domaine au `Multisite`{.action} selon [ce guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
+|Le nom de domaine a été supprimé du multisite sans action de votre part.|Si votre domaine ou sa [Zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre domaine au `Multisite`{.action} en suivant [ce guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
 
-
-### Votre module s'affiche sur une adresse web de type "xxxxx.cluster0xx.hosting.ovh.net"
+### Votre module s'affiche sur une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net »
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
 Après avoir réalisé toutes les sauvegardes nécessaires, [supprimez votre module](#supprimer-le-module), puis sa [base de données](#supprimer-la-base). Puis relancez son installation sur le nom de domaine souhaité.
 
-
-### C'est toujours votre ancien site qui s'affiche
+### Votre ancien site continue de s'afficher
 
 Cette anomalie peut avoir plusieurs causes : 
 
 - Vous avez effectué récemment un changement dans votre zone ou vos serveurs [DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) ou un [transfert de nom de domaine](../../domains/transferer-mon-domaine-generique/). Patientez jusqu'à ce que ces opérations soient finalisées (48 heures pour des changements dans vos DNS). Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.
 
 - Votre nom de domaine est toujours relié à votre ancien hébergement. Modifiez dans ce cas votre [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) ou vos [serveurs DNS](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns) ou contacter votre ancien hébergeur à ce sujet.
-
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
