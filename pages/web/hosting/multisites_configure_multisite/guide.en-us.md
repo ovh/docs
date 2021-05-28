@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 3
 ---
 
-**Last updated 27th May 2021**
+**Last updated 28th May 2021**
 
 ## Objective
 
@@ -16,16 +16,16 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
-- one or more [domain names](https://www.ovh.co.uk/domains/){.external}
-- the right to modify your domain name's configuration (the [DNS Zone](/domains/web_hosting_how_to_edit_my_dns_zone/))
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/){.external}
+- one or more [domain names](https://www.ovh.com/world/domains/){.external}
+- the right to modify your domain name's configuration (the [DNS Zone](../../domains/web_hosting_how_to_edit_my_dns_zone/))
+- access to the [OVHcloud Control Panel](	https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
 
 ## Instructions
 
 ### Step 1: Access multisite management
 
-First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and select `Web Cloud`{.action}. Click `Hosting plans`{.action} in the services bar on the left-hand side, select the plan concerned, then choose the `Multisite`{.action} tab.
+First, log in to the [OVHcloud Control Panel](	https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} and select `Web Cloud`{.action}. Click `Hosting plans`{.action} in the services bar on the left-hand side, select the plan concerned, then choose the `Multisite`{.action} tab.
 
 The table displayed will list all of the domain names and subdomains added to your Web Hosting plan. Some of these will have been created automatically, when your hosting was set up.
 
