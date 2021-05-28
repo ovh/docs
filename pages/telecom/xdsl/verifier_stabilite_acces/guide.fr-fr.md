@@ -31,7 +31,7 @@ Lors de la connexion de votre routeur sur les équipements OVHCloud, une trace e
 
 Chaque reconnexion du lien, une nouvelle trace horodatée de la connexion est crée. Une reconnexion peut être liée à un reboot de votre box, une perte de sychronisation, un incident générique ou avoir générer les identifiants de connexion. 
 
-Il est en revanche important de noter que seules les reconnexions sont indiquées, une déconnexion serait alors supposée si l'accès (répondant au ping en temps normal, n'y réponds plus).
+Il est important de noter que seul les reconnexions sont retournées. Une absence de trace est donc possible sur un accès n'ayant pas eu de coupures récente ou pour un accès actuellement déconnecté.
 
 L’API permettant de récupérer ces informations est disponible via le lien suivant : 
 
