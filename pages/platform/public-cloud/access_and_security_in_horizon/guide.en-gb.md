@@ -1,6 +1,6 @@
 ---
 title: Access and security settings in Horizon
-excerpt: Find out how to to manage secure access to your instances
+excerpt: Find out how to manage secure access to your instances
 slug: access_and_security_in_horizon
 legacy_guide_number: g1774
 section: Horizon
