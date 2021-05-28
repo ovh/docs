@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 16/02/2021**
+**Dernière mise à jour le 28/05/2021**
 
 ## Objectif
 
@@ -136,6 +136,23 @@ Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre 
 ### Sécurisation de votre serveur dédié
 
 Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'administrateur de votre serveur dédié. En tant que tel, vous êtes responsable de vos données et de leur sécurité. Pour en savoir plus sur la sécurisation de votre serveur, consultez notre guide « [Sécuriser un serveur dédié](../securiser-un-serveur-dedie/) ».
+
+### Monitoring OVHcloud
+
+Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). L'option se situe dans la section `État des services`.
+
+![monitoring](images/monitoring-your-server.png){.thumbnail}
+
+- Si le **Monitoring** est `Activé`, vous serez averti par e-mail chaque fois que le serveur se comporte de manière inattendue. Vous pouvez désactiver ces messages via le bouton `...`{.action}.
+
+- Si vous activez l'option **Interventions sur site**, vous autorisez les techniciens du data center à contrôler le matériel au cas où votre serveur ne répondrait plus aux pings.
+
+> [!warning]
+>
+> Si les interventions sur site sont activées (le curseur est alors sur `On`{.action}, veillez à **désactiver** l'option avant d'effectuer les actions appropriées sur votre serveur (tests matériels, redémarrages, etc.). Vous recevrez toujours des e-mails automatiques tant que la fonction « Monitoring » est active.
+>
+
+Vous trouverez plus d'informations sur le monitoring OVHcloud dans [ce guide](../monitoring-ip-ovh/).
 
 ### Configuration réseau
 
