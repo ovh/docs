@@ -31,7 +31,7 @@ Lors de la connexion de votre routeur sur les équipements OVHCloud, une trace e
 
 Chaque reconnexion du lien, une nouvelle trace horodatée de la connexion est crée. Une reconnexion peut être liée à un reboot de votre box, une perte de sychronisation, un incident générique ou avoir générer les identifiants de connexion. 
 
-Il est important de noter que seul les reconnexions sont retournées. Une absence de trace est donc possible sur un accès n'ayant pas eu de coupures récente ou pour un accès actuellement déconnecté.
+Il est important de noter que seul les reconnexions sont retournées. Une absence de trace est donc possible sur un accès n'ayant pas eu de coupures récente ou pour un accès actuellement déconnecté. Vous pouvez récupérer les logs sur trois mois au maximum.
 
 L’API permettant de récupérer ces informations est disponible via le lien suivant : 
 
@@ -54,7 +54,7 @@ En utilisant le bouton execute : l'API répondra alors :
 Vous retrouvez dans l'encadré orange, l'information d'un log de reconnexion séparé en deux éléments :
 
 - La date au format AAAA-MM-JJTHH:mm:ss+GMT
-- Message : lié à l'opérateur de collectee
+- Message : lié à l'opérateur de collecte
 - State : l'état de connexion, ici fonctionnel résultant dans le "OK". Il faut noter qu'un refus d'authenfication donnera "KO" avec un message "wrong login or password" le plus souvent.
 - Login : rappel de votre identifiant PPPoE
 
@@ -67,7 +67,7 @@ Il faudra donc bien noter qu'une connexion génère deux logs. Un maximum de 50 
 
 Avec les logs de l'exemple précédent, nous pouvons en déduire que si mon accès répond toujours à une requête "ping" à ce jour et que la dernière reconnexion sur les équipements OVHCloud est datée du 22/05/2021, alors ma session PPPoE est montée depuis 6 jours environ.
 
-Il n'y donc pas eu de coupure sur l'accès concerné car la moindre reconnexion suite un redémarrage de votre box par exemple, résultatera d'une reconnexion sur nos équipements. 
+Il n'y donc pas eu de coupure sur l'accès concerné car la moindre reconnexion suite un redémarrage de votre box par exemple, résultera d'une reconnexion sur nos équipements. 
 
 Notez bien en revanche que si l'accès n'est plus synchronisé, il ne pourra bien entendu plus s'authentifier chez nous.
 
