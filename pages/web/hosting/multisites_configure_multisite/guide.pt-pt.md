@@ -104,7 +104,7 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 >
 > |Campo|Onde posso encontrar a informação?|Ação a realizar|
 > |---|---|---|
-> |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Certifique-se de que cria o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.mydomain.ovh) na zona DNS que faz autoridade para o nome de domínio a adicionar.<br></br>Para consultar esta última, encontre os [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#entender-el-concepto-de-dns) aos quais o seu domínio está associado. Deverá validar apenas o domínio principal, não todos os subdomínios.|
+> |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Certifique-se de que cria o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.mydomain.ovh) na zona DNS que faz autoridade para o nome de domínio a adicionar.<br></br>Para consultar esta última, encontre os [servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/) aos quais o seu domínio está associado. Deverá validar apenas o domínio principal, não todos os subdomínios.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
