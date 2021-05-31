@@ -95,6 +95,8 @@ Se la società o l'organizzazione è [autorizzata all’applicazione dello Split
 
 Nella sezione `Metodi di pagamento`{.action}, clicca su `Attiva il meccanismo dello split payment`{.action} e conferma l'attivazione nella finestra che appare.
 
+![manage-payment-methods](images/split-payment.png){.thumbnail}
+
 La tua idoneità all’utilizzo dello split payment verrà verificata dai nostri team per la convalida nel più breve tempo possibile.
 
 ### Disattiva il meccanismo dello split payment <a name="disattiva-split-payment"></a>

@@ -53,7 +53,7 @@ Here is the list of the main commands:
 |**tempurl**|Generates a temporary URL for a Swift object.|
 
 
-For an explanation of a specific Swift command, add "--help" at the end of it:
+For an explanation of a specific Swift command, add `--help` at the end of it:
 
 ```
 admin@server-1:~$ swift post --help
@@ -130,7 +130,7 @@ text2.txt
 text3.txt
 ```
 
-You can display all files with a particular prefix using the "--prefix" argument:
+You can display all files with a particular prefix using the `--prefix` argument:
 
 ```
 admin@server-1:~$ swift list container1 --prefix images
