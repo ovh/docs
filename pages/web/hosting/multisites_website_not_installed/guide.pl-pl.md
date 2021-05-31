@@ -34,7 +34,7 @@ W przeglądarce internetowej możesz wyświetlić nie zainstalowaną stronę **b
 
 Niezainstalowana strona **Strona nie została zainstalowana** wyświetla się w dwóch sytuacjach :
 
-1. Twoja domena nie występuje w części [MultiSite](../hosting/konfiguracja-multisite-na-hostingu/) hostingu.
+1. Twoja domena nie występuje w części [MultiSite](../konfiguracja-multisite-na-hostingu/) hostingu.
 
 2. Twoja domena nie jest powiązana z Twoim hostingiem za pośrednictwem `Strefa DNS`{.action}.
 
