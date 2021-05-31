@@ -61,7 +61,7 @@ To manage access to CephFS the same set of IP ACL is used as for whole CDA. Howe
 POST /dedicated/ceph/{serviceName}/user
 ```
 
-You'll also need to grant that user write access to CephFS data pool, which is called ```cephfs.fs-default.data```. Do it using following API call:
+You'll also need to grant that user read and write access to CephFS data and metadata pools, called ```cephfs.fs-default.data``` and ```cephfs.fs-default.meta``` respectively. Do it using following API call:
 ```bash
 POST /dedicated/ceph/{serviceName}/user/{userName}/pool
 ```
