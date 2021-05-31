@@ -49,7 +49,7 @@ Le champ servicename correspond à la référence de votre accès :
 
 En utilisant le bouton execute : l'API répondra alors : 
 
-![api_radex](images/api_radex2.png){.thumbnail}
+![api_radex](images/api_radex3.png){.thumbnail}
 
 Vous retrouvez dans l'encadré orange, l'information d'un log de reconnexion séparé en deux éléments :
 
