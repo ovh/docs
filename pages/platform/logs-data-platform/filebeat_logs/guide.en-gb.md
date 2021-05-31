@@ -238,7 +238,7 @@ It will generate a new module file: **/etc/filebeat/modules.d/apache.yml**, plea
 
     # Set custom paths for the log files. If left empty,
     # Filebeat will choose the paths depending on your OS.
-    var.paths: ["/var/apache2/httpd/error_log*","/var/log/apache2/ssl_error_log*"]
+    var.paths: ["/var/LOG/apache2/error_log*","/var/log/apache2/ssl_error_log*"]
 ```
 
 #### Enable System Filebeat module
