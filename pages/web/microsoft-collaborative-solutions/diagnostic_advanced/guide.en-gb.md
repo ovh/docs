@@ -43,23 +43,21 @@ The results page offers two actions to continue:
 
 ### Error explanations
 
-Use the following summary of possible errors to .
+Refer to the following summary of possible errors to find the quickest resolution.
 
-### This account has been blocked for sending spam <a name="blocked"></a>
+### The account has been blocked for sending spam <a name="blocked"></a>
 
 A blocked account still receives emails but sending has been disabled by the automatic spam protection system.
 
 You can verify this in the `Email accounts`{.action} tab of your Exchange service. The account will have the `SPAM`{.action} status displayed in the table.
 
-![Exchange Diagnostic](images/img_4453.png){.thumbnail}
-
-Please follow the instructions in [this guide](../blocked-for-spam/) to enable our security teams to unlock the account.
+Please follow the instructions in [this guide](../blocked-for-spam/) to enable our security teams to re-enable the account.
 
 ### Subscription to the account has expired <a name="expired"></a>
 
 Your subscription is no longer active, so sending and receiving have been disabled. You can [review the billing status of the service](../manage-exchange-billing/) in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and renew it to reactivate the account.
 
-### Account blocked due to the security policy
+### Account locked due to the security policy
 
 If there is a security policy activated in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), the account could be temporarily locked. 
 
@@ -82,10 +80,10 @@ This error indicates that emails cannot be received and it is also linked to the
 Depending on your Exchange service usage, the following MX servers are valid:
 
 - Exchange only: mx1.mail.ovh.net
-- Exchange + POP/IMAP email hosted by OVHcloud: mx1.mail.ovh.net
-- Exchange + POP/IMAP email not hosted by OVHcloud: ex**?**.mail.ovh.net
+- Exchange & POP/IMAP email hosted by OVHcloud: mx1.mail.ovh.net
+- Exchange & POP/IMAP email not hosted by OVHcloud: ex<b>?</b>.mail.ovh.net
 
-In our guides, we use as the server name: ex**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Exchange service.
+In our guides, we use as the server name: ex<b>?</b>.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Exchange service.
 
 <a name="hostname"></a>You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} section: Open `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action} and select your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 
@@ -98,7 +96,7 @@ In our guides, we use as the server name: ex**?**.mail.ovh.net. You will need to
 
 The SRV record is essential to the automatic configuration of your Exchange account with a compatible email software such as Microsoft Outlook.
 
-You can verify the correct values in your [domain's DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/).
+You can verify these settings in your [domain's DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/).
 
 Here are the mandatory values for an Exchange service:
 
