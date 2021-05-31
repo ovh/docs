@@ -75,35 +75,53 @@ Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site Internet.
 
 #### Que faire si après publication de mon site, la page « Félicitations » d'OVHcloud reste affichée ?
 
-À l'installation de votre hébergement, OVHcloud met en place cette page d'attente, sous la forme d'un fichier "index.html" contenu dans le dossier "www" de votre serveur FTP.
+À l'installation de votre hébergement, OVHcloud met en place cette page d'attente, sous la forme d'un fichier **index.html** contenu dans le dossier **www** de votre serveur FTP.
 
 Ce fichier est automatiquement désactivé lors de la création de votre [module en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/#etape-3-ajouter-un-module).
 
-Si vous avez choisi d'installer [votre site manuellement](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) ou en utilisant [l'installation en mode avancée](../modules-en-1-clic/#installation-avancee-dun-module) de module en 1 clic.
+Si vous avez choisi d'installer [votre site manuellement](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/), [connectez-vous à votre hébergement en FTP](../connexion-espace-stockage-ftp-hebergement-web/), afin de le renommer en **index.html.old**. 
 
-**Autre information utile** : les fichiers de votre site doivent être déposés dans le dossier « www » afin d'être pris en compte.
+**Autre information utile** : Afin d'être pris en compte, les fichiers de votre site doivent être [téléchargés en FTP](../connexion-espace-stockage-ftp-hebergement-web/) sur votre hébergement. Le répertoire dans lequel vous mettrez ces fichiers devra correspondre au `Dossier racine`, auquel est lié votre domaine dans le multisite.
 
 #### Que faire si mon site affiche une erreur "403 forbidden" ?
 
-(screenshot à ajouter sur le guide concerné)
+(mettre screenshot ici (voir si possible avec droits chmod) screenshot à ajouter sur le guide concerné)
 
-Consultez le guide https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/
+Consultez le guide [Réagir en cas de désactivation pour sécurité d’un hébergement](../site-ferme-pour-hack/)
 
 #### Que faire si mon site affiche une erreur indiquant que la version PHP de mon hébergement est insuffisante ?
 
-Suivre ce guide(../configurer-le-php-sur-son-hebergement-web-mutu-2014/)
+![erreur_wp_php](images/erreur_wp_php.png){.thumbnail}
+
+Consultez le guide [Changer la version de PHP de son hébergement web](../configurer-le-php-sur-son-hebergement-web-mutu-2014/)
 
 #### Que faire si mon site affiche une page "Index of" ?
 
-![error500](images/error-500-2.png){.thumbnail}	
+![index_of](images/index_of.png){.thumbnail}
 
-#### Que faire si mon site s'affiche sur un domaine "cluster" ?
+Votre nom de domaine est relié par le multisite de votre hébergement à un répertoire ("Dossier racine") dans votre serveur FTP.
+
+Cette anomalie indique que le répertoire concerné ne contient pas de fichier **index.php** ou **index.html**.
+
+Pour résoudre l'anomalie "index of", vous devrez donc lier votre domaine au dossier racine qui contient le fichiet **index.php** ou **index.html** de votre site.
+
+### Que faire si mon site s'affiche sur un domaine "cluster" ? (ou notation IDN)
+
+![url-cluster](images/url-cluster.png){.thumbnail}
 
 #### Que faire si mon site redirige vers le webmail OVHcloud ?
 
+![webmail](images/webmail.png){.thumbnail}
+
+
+
 #### Que faire si mon site redirige vers un site inconnu ?
 
+
+
 #### Que faire si mon site affiche une page "Site non installé" ?
+
+![site-not-installed2021](images/site-not-installed2021.png){.thumbnail}
 
 https://docs.ovh.com/fr/hosting/erreur-site-non-installe/
 
@@ -113,7 +131,7 @@ https://docs.ovh.com/fr/hosting/erreur-site-non-installe/
 
 ### Que faire si mon site affiche une erreur "Serveurs inaccessibles" ?
 
-### Que faire si mon site s'affiche sur un domaine "cluster" ? (ou notation IDN)
+
 
 ### Que faire si mon site affiche une erreur "500 Internet Server Error" ?
 
