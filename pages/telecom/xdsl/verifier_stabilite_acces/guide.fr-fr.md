@@ -1,80 +1,95 @@
 ---
-title: "Vérifier la stabilité de son accès OVHCloud"
-slug: connectivity-api
-excerpt: 'Découvrez comment vérifier la stabilité de votre accès OVHCloud via les API'
-section: 'Configurations techniques avancées'
-order: 5
+title: 'Vérifier la stabilité de son accès OVHcloud via les logs radius'
+slug: verifier-stabilite-acces-logs-radius
+excerpt: 'Découvrez comment vérifier la stabilité de votre accès xDSL ou FTTH en utilisant les API OVHcloud'
+section: 'Diagnostic et dépannage'
+order: 9
 ---
 
 **Dernière mise à jour le 28/05/2021**
 
 ## Objectif
 
-Cette documentation a pour objectif de vous permettre de vérifier la stabilité de votre accès via les logs Radius disponible par API en complément de la réponse au ping de votre lien.
+Les *logs radius* disponibles via les API OVHcloud, combinés avec la réponse au ping de votre accès, permettent de vérifiré la stabilité de celui-ci.
 
-
-> [!warning]
-> Ce guide n'a pas vocation à expliquer le fonctionnement d'une connexion PPPoE mais d'utiliser les logs pour déduire de la stabilité d'un lien.
->
+**Découvez comment vérifier la stabilité d'un lien xDSL ou FTTH en utilisant les logs fournis par les API OVHcloud**
 
 ## Prérequis
 
-- Disposer d'un abonnement xDSL ou FTTH OVHCloud actif.
-- Être sur la page web des [API OVHcloud](https://api.ovh.com/){.external}.
+- Disposer d'une [offre xDSL ou FTTH OVHcloud](https://www.ovhtelecom.fr/offre-internet/) active.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr).
+- Être connecté aux [API OVHcloud](https://api.ovh.com/){.external}.
 - Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
-
 
 ## En pratique
 
+> [!primary]
+> Ce guide n'a pas vocation à expliquer le fonctionnement d'une connexion PPPoE.
+>
 
-Lors de la connexion de votre routeur sur les équipements OVHCloud, une trace est systématiquement laissée à notre niveau sur les logs de l’équipement nommé radius. 
+### Détails des logs radius
 
-Chaque reconnexion du lien, une nouvelle trace horodatée de la connexion est crée. Une reconnexion peut être liée à un reboot de votre box, une perte de sychronisation, un incident générique ou avoir générer les identifiants de connexion. 
+Lors de chaque connexion de votre routeur sur les équipements OVHcloud, une trace est systématiquement laissée à notre niveau sur les logs de l’équipement nommé **radius**. 
 
-Il est important de noter que seul les reconnexions sont retournées. Une absence de trace est donc possible sur un accès n'ayant pas eu de coupures récente ou pour un accès actuellement déconnecté. Vous pouvez récupérer les logs sur trois mois au maximum.
+Lors de chaque reconnexion du lien, une nouvelle trace horodatée de la connexion est créée.<br>
+Une reconnexion peut avoir l'une des causes suivantes :
 
-L’API permettant de récupérer ces informations est disponible via le lien suivant : 
+* un redémarrage de votre modem;
+* une perte de sychronisation;
+* un incident générique;
+* la création de nouveaux identifiants de connexion. 
 
-https://api.ovh.com/console/#/xdsl/%7BserviceName%7D/radiusConnectionLogs#GET
+> [!primary]
+>
+> Seules les **reconnexions** font l'objet de *logs radius*. <br>
+> Une absence de traces est donc possible sur un accès n'ayant pas connu de coupure récente ou sur un accès actuellement déconnecté.
+>
 
-#### Aperçu
+Vous pouvez récupérer les logs pour une prériode de trois mois maximum.
 
-![api_radiuslogs](images/api_radiuslogs.png){.thumbnail}
+### Récupérer le serviceName de votre accès xDSL ou FTTH
 
-Le champ servicename correspond à la référence de votre accès :
+Le *serviceName* correspond à la référence interne de votre accès. Pour la retrouver, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr), partie `Telecom`{.action}. Cliquez sur `Accès Internet`{.action} dans le menu de gauche puis sélectionnez votre offre xDSL ou FTTH. La référence interne est affichée dans le cadre `Accès Internet` à droite.
 
- - Pour un accès xdsl vous aurez cela sous la forme : xdsl-nichandle-x 
+![serviceName dans espace client](images/servicename.png){.thumbnail}
 
- - Pour un accès ftth : ftth-nichandle-x 
+### Utiliser les API OVHcloud
 
-En utilisant le bouton execute : l'API répondra alors : 
+Utilisez l'appel API suivant pour récupérer les logs :
+
+> [!api]
+>
+> @api {GET} /xdsl/{serviceName}/radiusConnectionLogs
+>
+
+Saisissez, dans le champ `serviceName`, la référence de votre accès obtenue à l'étape précédente. Cliquez alors sur `Execute`{.action} 
+
+Voici un exemple de retour :
 
 ![api_radex](images/api_radex3.png){.thumbnail}
 
-Vous retrouvez dans l'encadré orange, l'information d'un log de reconnexion séparé en deux éléments :
+Vous retrouvez, dans l'encadré orange ci-dessus, les informations d'un log de reconnexion. La première partie détaille les informations suivantes :
 
-- La date au format AAAA-MM-JJTHH:mm:ss+GMT
-- Message : lié à l'opérateur de collecte
-- State : l'état de connexion, ici fonctionnel résultant dans le "OK". Il faut noter qu'un refus d'authenfication donnera "KO" avec un message "wrong login or password" le plus souvent.
-- Login : rappel de votre identifiant PPPoE
+- date: la date au format AAAA-MM-JJTHH:mm:ss+GMT;
+- message : lié à l'opérateur de collecte;
+- state : l'état de connexion, ici fonctionnel car `OK`. À noter qu'un refus d'authenfication donnera `KO` ainsi que, le plus souvant, un message `wrong login or password`.
+- login : l'identifiant PPPoE de votre accès.
 
-La seconde partie dans l'encadré est l'effet mirroir sur les équipements OVHCloud qui finalise l'authenfiication. 
+La seconde partie, telle qu'affichée dans l'encadré orange, est l'effet miroir sur les équipements OVHCloud qui finalisent l'authenfiication. 
 
-Il faudra donc bien noter qu'une connexion génère deux logs. Un maximum de 50 logs sont stockés, donc 25 reconnexions au total.
-
+Une connexion génère donc deux logs. Sont stockés 50 logs au maximum, donc un total de 25 reconnexions.
 
 #### Déduire le temps de session de votre accès. 
 
-Avec les logs de l'exemple précédent, nous pouvons en déduire que si mon accès répond toujours à une requête "ping" à ce jour et que la dernière reconnexion sur les équipements OVHCloud est datée du 22/05/2021, alors ma session PPPoE est montée depuis 6 jours environ.
+Grâce aux logs de l'exemple ci-dessus, nous pouvons déduire que si cet accès répond toujours à une requête de *ping* le 28/05/2021 et que la dernière reconnexion sur les équipements OVHCloud est datée du 22/05/2021, alors la session PPPoE est montée depuis 6 jours environ.
 
-Il n'y donc pas eu de coupure sur l'accès concerné car la moindre reconnexion suite un redémarrage de votre box par exemple, résultera d'une reconnexion sur nos équipements. 
+Il n'y donc pas eu de coupure sur l'accès concerné car la moindre reconnexion suite, par exemple, à un redémarrage du modem, entraînerait une reconnexion sur nos équipements. 
 
-Notez bien en revanche que si l'accès n'est plus synchronisé, il ne pourra bien entendu plus s'authentifier chez nous.
+En revanche, si l'accès n'est plus synchronisé, il ne pourra bien entendu plus s'authentifier sur les équipements OVHcloud.
 
-Si mon accès en revanche remonte plus de cinq reconnexions sur une même tranche de 24h, qui ne seraient pas la conséquence d'une action sur votre box. Il peut être possible considérer l'accès comme instable. 
+Si un accès remonte plus de cinq reconnexions sur une même tranche de 24h, sans que celles-ci ne soient consécutives à une action de votre part sur le modem (rédémarrage ou réinitialisation), il est alors légitime de considérer cet accès comme instable. 
 
-Vous pouvez par la suite faire le point sur votre desserte interne avec notre guide disponible à l'adresse suivante : https://docs.ovh.com/fr/xdsl/la-desserte-interne/
-
+Nous vous conseillons alors de faire le point sur votre [desserte interne](../la-desserte-interne/) et de consulter nos guides de [diagnostic et dépannage](../).
 
 ## Aller plus loin
 
