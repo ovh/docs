@@ -75,6 +75,21 @@ Si vous souhaitez changer votre offre actuelle pour une offre supérieure, rende
 
 Depuis l'onglet `Informations générales`, dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} devant « Offre » puis cliquez sur  `Changer d'offre`{.action}. Suivez les instructions suivantes pour finaliser votre commande. Un prorata du temps restant de votre offre actuelle est rajouté sur la nouvelle offre.
 
+### Que faire si mon site affiche une erreur "403 forbidden" ?
+
+Consultez le guide https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#objectif
+
+
+### Que faire si mon site affiche une erreur "501 version PHP insuffisante" ou (erreur wordpress) ?
+
+### Que faire si mon site affiche une page "Index of" ?
+
+### Que faire si mon site s'affiche sur un domaine "cluster" ?
+
+### Que faire si mon site redirige vers le webmail OVHcloud ?
+
+### Que faire si mon site redirige vers un site inconnu ?
+
 
 ## Aller plus loin
 
