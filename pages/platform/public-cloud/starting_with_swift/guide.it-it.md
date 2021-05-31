@@ -5,95 +5,93 @@ slug: come_utilizzare_lapi_swift
 legacy_guide_number: g1916
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## 
-Se vuoi automatizzare le tue operazioni sul Public Cloud, puoi utilizzare le API di OpenStack per creare diversi script.
-Il client Swift di OpenStack ti consente di gestire ed eseguire operazioni sui tuoi container e i tuoi oggetti.
+**Ultimo aggiornamento: 25/06/2021**
 
-Ad esempio, puoi salvare i tuoi file inviandoli regolarmente verso i tuoi container.
+## Obiettivo
 
-Questa guida ti mostra come utilizzare le API OpenStack per gestire i tuoi container di oggetti con il client Python Swfit.
+Utilizza l'API OpenStack per generare diversi script per automatizzare le tue azioni sulle tue istanze Public Cloud.
 
+Lo *swiftclient* OpenStack permette di interagire con i tuoi container e oggetti e di gestirli. Ad esempio, è possibile inviare file in modo regolare verso i container per salvarli.
 
-## Requisiti necessari
+**Questa guida ti mostra come utilizzare l'API OpenStack per gestire i tuoi container di oggetti con l'aiuto di *python-swiftclient*.**
 
-- [Prepara il tuo ambiente di sviluppo per utilizzare l'API OpenStack]({legacy}1851)
-- [Imposta le variabili d'ambiente OpenStack]({legacy}1852)
+## Prerequisiti
 
+- [Preparare l'ambiente di sviluppo per utilizzare l'API OpenStack](../prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/) installando python-swiftclient
+- [Impostare le variabili d'ambiente OpenStack](../impostare-le-variabili-dambiente-openstack/)
 
+## Procedura
 
+> [!primary]
+>
+Si ricorda che, dopo aver applicato i requisiti di cui sopra, le seguenti istruzioni riguardano esclusivamente l'interfaccia di linea di comando di una distribuzione GNU/Linux.
+>
 
-## Documentazione Swift
-Per visualizzare la lista dei comandi disponibili, consulta la documentazione del client:
+### Documentazione Swift
 
+Nella documentazione del cliente è possibile recuperare la lista dei possibili ordini:
 
 ```
 admin@server-1:~$ swift --help
 ```
 
+Ecco la lista dei comandi principali:
 
-Ecco i comandi principali:
+|Comando|Descrizione|
+|---|---|
+|**delete**|Elimina un container o gli oggetti presenti in un container|
+|**download**|Scarica oggetti da container|
+|**list**|Ripristina i container di un account o gli oggetti di un container|
+|**post**|Aggiorna i metadati dell'account, del container o dell'oggetto. Se il container non è raggiungibile, verrà creato automaticamente.|
+|**stat**|Indica le informazioni relative all'account, al container o all'oggetto.|
+|**upload**|Scarica i file e le directory specificati verso il container dato.|
+|**capacità**|Estrai la capacità del proxy.|
+|**tempurl**|Genera un URL temporaneo per un oggetto Swift.|
 
-|delete|Elimina un container o gli oggetti presenti in un container|
-|---|
-|delete|Elimina un container o gli oggetti presenti in un container|
-|download|Scarica i file di un container|
-|list|Mostra la lista dei container di un account o gli oggetti di un container|
-|post|Aggiorna i metadati per l'account, il container o l'oggetto. Se il container non esiste, lo crea|
-|stat|Visualizza le informazioni dell'account, del container o dell'oggetto|
-|upload|Carica file o cartelle nel container|
-|capabilities|Elenca i container presenti nel tuo ambiente Swift e la loro quota|
-|tempurl|Crea un URL temporaneo|
-
-
-Se hai bisogno di aiuto per utilizzare un comando specifico, aggiungi "--help" alla fine:
-
+Per maggiori informazioni su uno specifico ordine Swift, aggiungi `--help` alla fine:
 
 ```
 admin@server-1:~$ swift post --help
 
-Updates meta information for the account, container, or object.
+Update meta information for the account, container, oro object.
 If the container is not found, it will be created automatically.
 
-Positional arguments:
+Positional argomentazione:
 [container] Name of container to post to.
-[object] Name of object to post. Specify multiple times
-for multiple objects.
+[object] Name of object to post. Specify multitime
+per diversi obiettivi.
 [...]
 ```
 
+È inoltre possibile consultare la documentazione Swift disponibile sul [sito OpenStack](http://docs.openstack.org/cli-reference/content/swiftclient_commands.html).
 
-La documentazione del client Swift è disponibile anche sul [sito Openstack](http://docs.openstack.org/cli-reference/content/swiftclient_commands.html)
+### Crea un container di oggetti pubblici
 
-
-## Crea un container di oggetti pubblico
-
-- Crea il container "container1"
-
+- Crea il container "container1":
 
 ```
 admin@server-1:~$ swift post container1
 ```
 
-
-- Definisci i permessi di accesso per rendere pubblico il tuo container 
-
+- Configura i diritti di accesso per rendere pubblico il container:
 
 ```
 admin@server-1:~$ swift post --header "X-Container-Read: .r:*" container1
 ```
 
-
-- Verifica la configurazione del container
-
+- Verifica la configurazione del container:
 
 ```
 admin@server-1:~$ swift stat container1
 
 Account: AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29
 Container: container1
-Objects: 0
-Bytes: 0
+Obiettivi: 0
+Byte: 0
 Read ACL: .r:*
 Write ACL:
 Sync To:
@@ -101,19 +99,14 @@ Sync Key:
 Accept-Ranges: bytes
 X-Trans-Id: B2210C05:8D93_052711A1:01BB_561CC9DF_1B305:30D7
 X-Storage-Policy: Policy-0
-Connection: close
+Connessione: close
 X-Timestamp: 1444726875.27475
 Content-Type: text/plain; charset=utf-8
 ```
 
+### Invio di file nel tuo container
 
-
-
-
-## Carica file sul tuo container
-
-- Invia il contenuto di una cartella locale verso un container
-
+- Seleziona il contenuto di una cartella locale in un container:
 
 ```
 admin@server-1:~$ swift upload container1 images/
@@ -122,12 +115,9 @@ images/OVHlogo.png
 images/OVHSummitKeynote.jpg
 ```
 
+Se invii una cartella intera al posto di un file, verrà aggiunto automaticamente un prefisso.
 
-
-Se non invii un singolo file ma una cartella completa, viene aggiunto automaticamente un prefisso ai tuoi file.
-
-- Visualizza la lista dei file del container
-
+- Lista i file di un container:
 
 ```
 admin@server-1:~$ swift list container1
@@ -139,10 +129,7 @@ text2.txt
 text3.txt
 ```
 
-
-
-Per visualizzare i file con un prefisso specifico, utilizza l'argomento "--prefix":
-
+Puoi visualizzare i file con un prefisso specifico grazie all'argomento `--prefix`:
 
 ```
 admin@server-1:~$ swift list container1 --prefix images
@@ -151,21 +138,17 @@ images/OVHSummitKeynote.jpg
 images/OVHlogo.png
 ```
 
-
-Se il container è stato configurato come pubblico, è possibile accedere al file utilizzando un URL:
+Se il container è configurato come pubblico, puoi accedere al file utilizzando un URL:
 
 ```
 https://storage.gra1.cloud.ovh.net/v1/AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29/container1/images/OVHlogo.png
 ```
 
+Questo URL è composto da un punto terminale, disponibile dall'[interfaccia Horizon](../accesso_e_sicurezza_con_horizon/), dal nome del container e dal nome del tuo oggetto (incluso il prefisso).
 
-Questo URL è formato da un endpoint, che puoi recuperare nel menu [Accesso e Sicurezza in Horizon]({legacy}1774), dal nome del tuo container e dal nome del tuo oggetto (prefisso incluso).
-
-
-## Scarica i tuoi file
+### Scaricamento di file
 
 - Scarica un file:
-
 
 ```
 admin@server-1:~$ swift download container1 text1.txt
@@ -173,10 +156,7 @@ admin@server-1:~$ swift download container1 text1.txt
 text1.txt [auth 0.328s, headers 0.452s, total 0.453s, 0.000 MB/s]
 ```
 
-
-
-Per scaricare più file con lo stesso prefisso, utilizza questo comando:
-
+Puoi scaricare più file con lo stesso prefisso utilizzando questo comando:
 
 ```
 admin@server-1:~$ swift download container1 --prefix images
@@ -185,13 +165,9 @@ images/OVHlogo.png [auth 0.383s, headers 0.520s, total 0.522s, 0.135 MB/s]
 images/OVHSummitKeynote.jpg [auth 0.371s, headers 0.514s, total 0.559s, 2.657 MB/s]
 ```
 
-
-
-
-## Elimina i tuoi container o i tuoi oggetti
+### Eliminazione di container o oggetti
 
 - Elimina un file:
-
 
 ```
 admin@server-1:~$ swift delete container1 text1.txt
@@ -199,21 +175,17 @@ admin@server-1:~$ swift delete container1 text1.txt
 text1.txt
 ```
 
-
-
-Come per il download, puoi eliminare più file con lo stesso prefisso utilizzando questo comando:
+Come per il download, è possibile eliminare diversi file con lo stesso prefisso utilizzando il seguente comando:
 
 ```
-admin@server-1:~$ swift delete container1 images/*
+admin@server-1:~$ swift 
+delete container1 images/*
 
 images/OVHSummitKeynote.jpg
 images/OVHlogo.png
 ```
 
-
-
-- Elimina un container
-
+- Elimina un container:
 
 ```
 admin@server-1:~$ swift delete container1
@@ -222,11 +194,8 @@ text2.txt
 text3.txt
 ```
 
+Questa operazione comporta la cancellazione di tutti i file del container.
 
+## Per saperne di più
 
-Questa operazione comporta la cancellazione di tutti i file presenti nel container.
-
-
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
