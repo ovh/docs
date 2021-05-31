@@ -79,7 +79,7 @@ La seconde partie, telle qu'affichée dans l'encadré orange, est l'effet miroir
 
 Une connexion génère donc deux logs. Sont stockés 50 logs au maximum, donc un total de 25 reconnexions.
 
-#### Déduire le temps de session de votre accès. 
+### Vérifier la stabilité de votre accès
 
 Grâce aux logs de l'exemple ci-dessus, nous pouvons déduire que si cet accès répond toujours à une requête de *ping* le 28/05/2021 et que la dernière reconnexion sur les équipements OVHCloud est datée du 22/05/2021, alors la session PPPoE est montée depuis 6 jours environ.
 
