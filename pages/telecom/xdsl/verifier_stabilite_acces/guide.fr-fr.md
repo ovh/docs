@@ -89,7 +89,7 @@ En revanche, si l'accès n'est plus synchronisé, il ne pourra bien entendu plus
 
 Si un accès remonte plus de cinq reconnexions sur une même tranche de 24h, sans que celles-ci ne soient consécutives à une action de votre part sur le modem (rédémarrage ou réinitialisation), il est alors légitime de considérer cet accès comme instable. 
 
-Nous vous conseillons alors de faire le point sur votre [desserte interne](../la-desserte-interne/) et de consulter nos guides de [diagnostic et dépannage](../).
+Si vous constatez des reconnexions fréquentes sur l'un de vos accès xDSL ou FTTH, nous vous conseillons de faire le point sur votre [desserte interne](../la-desserte-interne/) et de consulter nos guides de [diagnostic et dépannage](../).
 
 ## Aller plus loin
 
