@@ -6,131 +6,123 @@ legacy_guide_number: g1916
 section: Zarządzanie w interfejsie Horizon
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-## 
-Aby zautomatyzować operacje w ramach Public Cloud, można skorzystać z API OpenStack do wygenerowania różnych skryptów. Klient Swift firmy OpenStack pozwala na zarządzanie kontenerami i obiektami. 
+**Ostatnia aktualizacja z dnia 25-06-2021**
 
-Będziesz mógł na przykład w sposób regularny  wysyłać pliki do kontenerów, aby wykonywać ich kopie zapasowe. 
+## Wprowadzenie
 
-Przewodnik ten wyjaśnia, jak korzystać z API OpenStack, w celu zarządzania instancjami za pomocą klienta Python Swfit.
+API OpenStack umożliwia wygenerowanie skryptów do automatyzacji Twoich działań na instancjach Public Cloud.
 
+*Swiftclient* OpenStack umożliwia interakcję z kontenerami i obiektami i zarządzanie nimi. Możesz na przykład regularnie wysyłać pliki do Twoich kontenerów, aby je zapisać.
 
-## Wstępne wymagania
+**Niniejszy przewodnik pomoże Ci zapoznać się z API OpenStack, aby zarządzać kontenerami obiektów za pomocą *python-swiftclient*.**
 
-- [Przygotowanie środowiska do korzystania z API OpenStack]({legacy}1851) poprzez zainstalowanie python-swift client
-- [Pobranie zmiennych środowiskowych OpenStack]({legacy}1852)
+## Wymagania początkowe
 
+- [Przygotowanie środowiska do korzystania z API OpenStack](../przygotowanie_srodowiska_dla_api_openstack/) poprzez instalację python-swiftclient
+- [Pobranie zmiennych środowiskowych OpenStack](../zmienne-srodowiskowe-openstack/)
 
+## W praktyce
 
+> [!primary]
+>
+Należy pamiętać, że poniższe instrukcje dotyczą wyłącznie interfejsu wiersza poleceń dystrybucji GNU/Linux, po wdrożeniu powyższych wymagań.
+>
 
-## Dokumentacja Swift
-Możesz uzyskać listę dostępnych poleceń czytając dokumentację:
+### Dokumentacja Swift
 
-
-```
-admin@serveur-1:~$ swift --help
-```
-
-
-Oto lista najważniejszych poleceń:
-
-|delete|Usuwa kontener lub obiekty znajdujące się w kontenerze.|
-|---|
-|delete|Usuwa kontener lub obiekty znajdujące się w kontenerze.|
-|download|Pobieranie plików z kontenera|
-|list|Wyświetlenie listy kontenerów konta lub obiektów kontenera|
-|post|Aktualizuje metadane dla konta, kontenera lub obiektu. Tworzy kontener, jeśli ten nie istnieje.|
-|stat|Wyświetla informacje dotyczące konta, kontenera lub obiektu.|
-|upload|Wysyła pliki lub katalogi na kontener.|
-|capabilities|Wyświetla listę parametrów środowiska Swift|
-|tempurl|Tworzy tymczasowy adres URL.|
-
-
-Można również otrzymać pomoc w zakresie określonej komendy dodając do niej "--help".
-
+Listę możliwych zamówień znajdziesz w dokumentacji klienta:
 
 ```
-admin@serveur-1:~$ swift post --help
+admin@server-1:~$ swift --help
+```
+
+Oto lista głównych zamówień:
+
+|Zamówienie|Opis|
+|---|---|
+|**delete**|Usuwa kontener lub obiekty znajdujące się w kontenerze|
+|**download**|Pobieranie obiektów z kontenerów|
+|**lista**|Wyświetla kontenery konta lub obiekty kontenera|
+|**post**|Aktualizuj metadane konta, kontenera lub obiektu. Jeśli kontener nie zostanie odnaleziony, zostanie on automatycznie utworzony.|
+|**stat**|Wyświetla informacje dotyczące konta, kontenera lub obiektu.|
+|**upload**|Pobierz pliki i katalogi określone do danego kontenera.|
+|**zdolność**|Wyciągnij pojemność proxy.|
+|**świątynia**|generuje tymczasowy adres URL dla obiektu Swift.|
+
+
+Aby uzyskać więcej informacji na temat konkretnego zamówienia Swift, dodaj `--help` na końcu zamówienia:
+
+```
+admin@server-1:~$ swift post --help
 
 Updates meta information for the account, container, or object.
 If the container is not found, it will be created automatically.
 
-Positional arguments:
+Positional argumenty:
 [container] Name of container to post to.
-[object] Name of object to post. Specify multiple times
-for multiple objects.
+[object] Name of object to post. Wielokierunkowy Specify
+dla wielu obiektów.
 [...]
 ```
 
+Znajdziesz również dokumentację Swift dostępną na [stronie OpenStack](http://docs.openstack.org/cli-reference/content/swiftclient_commands.html).
 
-Dokumentacja jest również dostępna na [stronie Openstack](http://docs.openstack.org/cli-reference/content/swiftclient_commands.html).
-
-
-## Utworzenie publicznego kontenera obiektów
+### Tworzenie kontenera obiektów publicznych
 
 - Utwórz kontener "container1":
 
-
 ```
-admin@serveur-1:~$ swift post container1
-```
-
-
-- Skonfiguruj uprawnienia tak, aby był on kontenerem publicznym:
-
-
-```
-admin@serveur-1:~$ swift post --header "X-Container-Read: .r:*" container1
+admin@server-1:~$ swift post container1
 ```
 
+- Skonfiguruj prawa dostępu, aby udostępnić Twój kontener publicznie:
+
+```
+admin@server-1:~$ swift post --header "X-Container-Read: .r:*" container1
+```
 
 - Sprawdź konfigurację kontenera:
 
-
 ```
-admin@serveur-1:~$ swift stat container1
+admin@server-1:~$ swift stat container1
 
 Account: AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29
-Container: container1
+Container: kontener1
 Objects: 0
-Bytes: 0
-Read ACL: .r:*
+Bajty: 0
+Read ACL: r:*
 Write ACL:
 Sync To:
 Sync Key:
 Accept-Ranges: bytes
 X-Trans-Id: B2210C05:8D93_052711A1:01BB_561CC9DF_1B305:30D7
 X-Storage-Policy: Policy-0
-Connection: close
+Connection: klosz
 X-Timestamp: 1444726875.27475
 Content-Type: text/plain; charset=utf-8
 ```
 
+### Wysyłanie plików do kontenera
 
-
-
-
-## Wysyłka pliku na kontener
-
-- Wyślij zawartość lokalnego katalogu na kontener:
-
+- Prześlij zawartość katalogu lokalnego do kontenera:
 
 ```
-admin@serveur-1:~$ swift upload container1 images/
+admin@server-1:~$ swift upload container1 images/
 
 images/OVHlogo.png
 images/OVHSummitKeynote.jpg
 ```
 
+Prefiks zostanie automatycznie dodany do plików, jeśli wyślesz cały folder zamiast jednego pliku.
 
-
-Jeśli przesyłasz cały katalog a nie pojedynczy plik, do plików zostanie automatycznie dodany prefiks.
-
-- Pobierz listę plików kontenera:
-
+- Wyświetl listę plików kontenera:
 
 ```
-admin@serveur-1:~$ swift list container1
+admin@server-1:~$ swift list container1
 
 images/OVHSummitKeynote.jpg
 images/OVHlogo.png
@@ -139,94 +131,73 @@ text2.txt
 text3.txt
 ```
 
-
-
-Można wyświetlić pliki posiadające określony prefiks korzystając z argumentu "--prefix":
-
+Możliwe jest wyświetlenie plików z określonym prefiksem dzięki argumentowi `--prefix`:
 
 ```
-admin@serveur-1:~$ swift list container1 --prefix images
+admin@server-1:~$ swift list container1 --prefix images
 
 images/OVHSummitKeynote.jpg
 images/OVHlogo.png
 ```
 
-
-W związku z tym, że kontener został skonfigurowany tak, żeby był publiczny, plik jest dostępny pod tym adresem:
+Jeśli kontener jest skonfigurowany jako publiczny, możesz uzyskać dostęp do pliku za pomocą adresu URL:
 
 ```
 https://storage.gra1.cloud.ovh.net/v1/AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29/container1/images/OVHlogo.png
 ```
 
+Ten adres URL składa się z punktu zakończenia dostępnego w [interfejsie Horizon](../dostęp-i-bezpieczenstwo-w-horizon/), nazwy kontenera i nazwy obiektu (w tym prefiksu).
 
-Adres ten składa się z punktu dostępu API dla Object Storage, który możesz pobrać w menu [Dostęp i bezpieczeństwo w interfejsie Horizon]({legacy}1774) oraz z nazwy kontenera i nazwy pliku (wraz z prefiksem).
-
-
-## Pobieranie plików
+### Pobieranie plików
 
 - Pobierz plik:
 
-
 ```
-admin@serveur-1:~$ swift download container1 text1.txt
+admin@server-1:~$ swift download container1 text1.txt
 
-text1.txt [auth 0.328s, headers 0.452s, total 0.453s, 0.000 MB/s]
-```
-
-
-
-Można pobrać kilka plików posiadających taki sam prefiks. Skorzystaj z tego polecenia:
-
-
-```
-admin@serveur-1:~$ swift download container1 --prefix images
-
-images/OVHlogo.png [auth 0.383s, headers 0.520s, total 0.522s, 0.135 MB/s]
-images/OVHSummitKeynote.jpg [auth 0.371s, headers 0.514s, total 0.559s, 2.657 MB/s]
+text1.txt [auth 0.328s, headers 0.452s, razem 0.453s, 0.000 MB/s]
 ```
 
+Możesz pobrać kilka plików z tym samym prefiksem, wpisując następujące polecenie:
 
+```
+admin@server-1:~$ swift download container1 --prefix images
 
+images/OVHlogo.png [auth 0.383s, headers 0.520s, łącznie 0.522s, 0.135 MB/s]
+images/OVHSummitKeynote.jpg [auth 0.371s, headers 0.514s, łącznie 0.559s, 2.657 MB/s]
+```
 
-## Usuwanie kontenera lub obiektu
+### Usuwanie kontenerów lub obiektów
 
 - Usuń plik:
 
-
 ```
-admin@serveur-1:~$ swift delete container1 text1.txt
+admin@server-1:~$ swift delete container1 text1.txt
 
 text1.txt
 ```
 
-
-
-Podobnie jak w przypadku pobierania, można usunąć kilka plików posiadających  taki sam prefiks. Skorzystaj z tego polecenia:
+Podobnie jak w przypadku pobierania, możesz usunąć kilka plików z tym samym prefiksem za pomocą polecenia:
 
 ```
-admin@serveur-1:~$ swift delete container1 images/*
+admin@server-1:~$ swift 
+delete container1 images/*
 
 images/OVHSummitKeynote.jpg
 images/OVHlogo.png
 ```
 
-
-
 - Usuń kontener:
 
-
 ```
-admin@serveur-1:~$ swift delete container1
+admin@server-1:~$ swift delete container1
 
 text2.txt
 text3.txt
 ```
 
+Operacja ta spowoduje usunięcie wszystkich plików z kontenera.
 
-
-Operacja ta spowoduje usunięcie wszystkich plików znajdujących się na kontenerze.
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+## Sprawdź również
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
