@@ -7,12 +7,11 @@ section: Gestion via OpenStack
 order: 4
 ---
 
-
 **Dernière mise à jour le 25/06/2021**
 
 ## Objectif
 
-Vous pouvez utiliser l'API OpenStack pour générer divers scripts afin d'automatiser vos actions sur vos instances Public Cloud 
+Vous pouvez utiliser l'API OpenStack pour générer divers scripts afin d'automatiser vos actions sur vos instances Public Cloud.
 
 Le *swiftclient* OpenStack vous permet d'interagir avec vos conteneurs et objets et de les gérer. Vous pourrez par exemple envoyer des fichiers de manière régulière vers vos conteneurs afin de les sauvegarder.
 
@@ -52,7 +51,7 @@ Voici la liste des commandes principales :
 |**tempurl**|Génère une URL temporaire pour un objet Swift.|
 
 
-Pour obtenir plus de d'explications sur une commande Swift spécifique, ajoutez « --help » à la fin de celle-ci :
+Pour obtenir plus de d'explications sur une commande Swift spécifique, ajoutez `--help` à la fin de celle-ci :
 
 ```
 admin@server-1:~$ swift post --help
@@ -129,7 +128,7 @@ text2.txt
 text3.txt
 ```
 
-Il est possible d'afficher les fichiers ayant un préfixe particulier grâce à l'argument **--prefix** :
+Il est possible d'afficher les fichiers ayant un préfixe particulier grâce à l'argument `--prefix` :
 
 ```
 admin@server-1:~$ swift list container1 --prefix images
