@@ -6,7 +6,7 @@ legacy_guide_number: '7536699'
 section: Administratif
 ---
 
-**Dernière mise à jour le 14/12/2020**
+**Dernière mise à jour le 01/06/2021**
 
 ## Objectif
 
@@ -109,16 +109,19 @@ Un bon de commande sera alors généré. Cliquez sur le numéro de bon de comman
 ### Comment récupérer le dépôt de garantie ?
 
 Si vous souhaitez récupérer le dépôt de garantie de l'un de vos groupes de téléphonie, il vous faut demander la fermeture du groupe en question.
-Le dépôt de garantie vous sera alors crédité sur votre compte prépayé OVH à la date de facturation suivant la suppression du groupe.
+
+Le dépôt de garantie sera alors crédité sur votre compte prépayé OVHcloud, à la date de facturation suivant la suppression du groupe.
 
 Pour supprimer un groupe de téléphonie, sélectionnez-le dans le menu de gauche puis cliquez sur l’onglet `Administration`{.action} et sur `Supprimer le groupe`{.action}.
+
 ![Suppression groupe de téléphonie](images/SupprGroup.png)
 
 > [!warning]
-> Si des services sont encore présent dans ce groupe, ils seront également supprimer à la prochaine date de facturation.
-> Si vous souhaitez les conserver, il faut déplacer ces services dans un autre groupe de téléphonie.
-> Pour cela, référez vous au guide ["Gestion des groupes de téléphonie"](https://docs.ovh.com/fr/voip/gestion-des-groupes-de-telephonie/) afin de créer un nouveau groupe ou déplacer ces services dans un groupe existant.
-
+>
+> Si des services sont encore présents dans ce groupe, ils seront également supprimés à la prochaine date de facturation.
+> Si vous souhaitez conserver ces services, vous devez les déplacer dans un autre groupe de téléphonie, **avant** de supprimer le groupe initial.
+> Pour cela, consultez le guide ["Gestion des groupes de téléphonie"](../gestion-des-groupes-de-telephonie/) afin de créer un nouveau groupe ou de déplacer les services dans un groupe existant.
+>
 
 ### Les transferts entre groupes
 
@@ -132,7 +135,6 @@ Dans l'onglet `Facturation`{.action}, cliquez sur `Transfert de vos dépôts de 
 Sélectionnez le groupe « Source » qui va transférer le dépôt de garantie, choisissez le montant à transférer puis choisissez le groupe « Destination ». Confirmez le transfert en cliquant sur `Valider`{.action}. 
 
 ![transfert depot de garantie](images/transferdeposit2.png){.thumbnail}
-
 
 > [!warning]
 > Le transfert entre groupes n'est pas possible si le groupe source ou destination est suspendu pour dépassement du hors forfait autorisé.
