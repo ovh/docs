@@ -19,6 +19,23 @@ This documentation will only apply to [VPS](https://www.ovhcloud.com/en/vps/comp
 
 This section will display changelogs for each month in the year 2021.
 
+### June
+
+```
+--- 01 June 2021 ---
+Image: All
+Product: Public Cloud / VPS
+Travaux: https://travaux.ovh.net/?do=details&id=50873
+Changelog:
+1. Adding new image: Fedora 34
+2. Adding new image: Ubuntu 21.04
+3. New image property "distro_family" added to each image to help group images into distributions.
+4. New image property "hypervisor_type" added to each image which will be used by Nova to filter suitable hosts. This is to prevent spawning images made for QEMU to be spawned on Ironic hosts as they are not compatible.
+5. Patch issue with Centos 7 - Plesk and Debian 10 - Plesk image with Lets Encrypt SSL. Plesk will now generate unique hostname for each installation unless there is a valid hostname detected on first boot.
+6. General system updates applied to all images.
+
+```
+
 ### February
 
 ```
