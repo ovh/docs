@@ -1,73 +1,79 @@
 ---
-title: "Obtenir mes identifiants PPPoE"
-slug: connectivity-api
-excerpt: 'Découvrez comment récupérer vos identifiants PPPoE de votre accès internet OVHcloud depuis les API, via le modem et votre espace client'
+title: 'Obtenir les identifiants PPPoE'
+slug: obtenir-identifiants-ppoe
+excerpt: 'Découvrez comment récupérer les identifiants PPPoE de votre accès à Internet OVHcloud via les API'
 section: 'Configurations techniques avancées'
-order: 5
+order: 6
 ---
 
-**Dernière mise à jour le 28/05/2021**
+**Dernière mise à jour le 01/06/2021**
 
 ## Objectif
 
-Cette documentation a pour objectif de vous permettre d'obtenir vos identifiants PPPoE afin de connecter votre routeur personnel sur votre offre XDSL/FTTH OVHCloud.
+Si vous souhaitez connecter votre propre routeur sur votre offre xDSL/FTTH OVHcloud, vous devez alors récupérer les identifiants PPPoE de votre accès.
+
+**Découvrez comment utiliser les API OVHcloud pour récupérer les identifiants PPPoE d'un accès à Internet**.
 
 ## Prérequis
 
-- Disposer d'un abonnement xDSL ou FTTH OVHCloud actif.
-- Être connecté sur la page web des [API OVHcloud](https://api.ovh.com/){.external}. 
+- Disposer d'une [offre xDSL ou FTTH OVHcloud](https://www.ovhtelecom.fr/offre-internet/) active.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr).
+- Être connecté aux [API OVHcloud](https://api.ovh.com/){.external}.
 - Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
-
-N'hésitez pas à suivre le guide de premier pas à l'API pour y être bien connecté avant toute chose :
-
-https://docs.ovh.com/fr/api/api-premiers-pas/
 
 ## En pratique
 
-Vos identifiants PPPoE sont envoyés pendant la livraison de votre accès, sur votre accès mail de contact. Ces derniers vous permettent de configurer votre équipement OVHCloud ou un équipement personnel pour l’usage de votre accès internet. 
+Les identifiants PPPoE vous sont envoyés par e-mail (à l'adresse e-mail de contact de votre compte OVHcloud) pendant la livraison de votre accès.<br>
+Ces identifiants vous permettent de configurer  le modem OVHcloud ou un équipement personnel pour l’usage de votre accès à Internet. 
 
-Si vous disposez d’un modem fournit par OVHCloud avec mon offre, ils sont envoyés systématiquement après chaque reset de votre modem. Le login est identique, le mot de passe lui est modifié pour des raisons de sécurité.
+Si votre offre a été fournie avec un modem OVHcloud, les identifiants PPPoE vous sont envoyés par e-mail systématiquement après chaque réinitialisation du modem.
 
-Si vous ne disposez pas d’un modem OVHCloud ou si vous utilisez directement un équipement , vous avez alors la possibilité d’utiliser l’API suivante afin de déclencher l’envoi du mail quand vous le désirez. 
+Le *login* reste identique après chaque réinitialisation.
+Pour des raisons de sécurité, le *mot de passe* est systématiquement modifié après chaque réinitialisation.
 
-L'adresse à utiliser est la suivante : 
+Si vous ne disposez pas d’un modem OVHcloud ou si vous utilisez votre propre modem/routeur, vous pouvez utiliser les API OVHcloud afin de générer l'envoi de nouveaux identifiants PPPoE par e-mail. 
 
-https://api.ovh.com/console/#/xdsl/%7BserviceName%7D/requestPPPLoginMail#POST
+Dans un premier temps, il vous faut retrouver le *serviceName* de votre accès à Internet.
 
-Attention : 
+### Récupérer le serviceName de votre accès xDSL ou FTTH
 
-Chaque utilisation de l'API vous enverra un nouveau mot de passe, si la session est active elle sera donc coupée. N'utilisez donc l'API qu'en étant certain de pouvoir reconfigurer votre équipement personnel dans la foulée. 
+Le *serviceName* correspond à la référence interne de votre accès. Pour la retrouver, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr), partie `Telecom`{.action}. Cliquez sur `Accès Internet`{.action} dans le menu de gauche puis sélectionnez votre offre xDSL ou FTTH. La référence interne est affichée dans le cadre `Accès Internet` à droite.
 
-#### Aperçu
+![serviceName dans espace client](images/servicename.png){.thumbnail}
 
-![api_pppoe](images/api_pppoe.png){.thumbnail}
+### Générer l'envoi de nouveaux identifiants par e-mail
 
-Le champ servicename correspond à la référence de votre accès :
+> [!warning]
+>
+> Chaque utilisation de l'appel API décrit ci-dessous générera un nouveau mot de passe PPPoE. **Cela aura pour effet de couper la session de votre modem si elle est active, occasionnant une déconnexion**. N'utilisez donc cet appel API que si vous êtes certain de pouvoir reconfigurer votre équipement personnel dans la foulée.
+>
 
- - Pour un accès xdsl vous aurez cela sous la forme : xdsl-nichandle-x 
+Utilisez l'appel API :
 
- - Pour un accès ftth : ftth-nichandle-x 
+> [!api]
+>
+> @api {POST} /xdsl/{serviceName}/requestPPPLoginMail
+>
 
-En utilisant le bouton execute : l'API répondra alors "null" en cas de succès confirmant la bonne pris en compte de votre demande. Dans le cas contraitre n'hésitez à faire le point avec votre support.
+Saisissez, dans le champ `serviceName`, la référence de votre accès obtenue à l'étape précédente. Cliquez alors sur `Execute`{.action}. Le message `null` confirmera la bonne prise en compte de votre demande.
 
-Sous un délai d'environ deux à trois minutes, vous receverez un mail sur votre adresse de contact contenant les informations avec votre identifiant PPPoE et le mot de passe.
+Dans un délai approximatif de deux à trois minutes, vous recevrez un e-mail, **sur l'adresse e-mail de contact du compte OVHcloud**, contenant l'identifiant PPPoE et le nouveau mot de passe.
 
+#### Retrouver l'email dans l'espace client OVHcloud
 
+Si vous n'avez pas accès à l'adresse e-mail de contact du compte OVHcloud, vous pouvez consulter les e-mails de service depuis l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr).
 
-#### Retrouver ce mail dans mon espace client
+Une fois connecté, cliquez sur `E-mails de service`{.action} sous votre identifiant.
 
+![emails de service](images/emails.png){.thumbnail}
 
-Depuis votre espace client dans les emails de service : 
-
-![email_recus](images/email_recus.png){.thumbnail}
+L'objet de l'e-mail est le suivant :
 
 ![email_recus](images/mailtype.png){.thumbnail}
 
+Voici un exemple d'e-mail contenant les identifiants PPPoE :
+
 ![email_recus](images/contenumailtyperesetppp.png){.thumbnail}
-
-
-
-
 
 ## Aller plus loin
 
