@@ -6,71 +6,50 @@ section: 'E-Mail Clients'
 order: 7
 ---
 
-**Stand 27.06.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Einleitung
+**Letzte Aktualisierung am 21.05.2021**
+
+## Ziel
 
 E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E-Mail-Clients und -Applikationen eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Versand und Empfang Ihrer E-Mails verwenden.
 
-**In dieser Anleitung erfahren Sie, wie Sie eine MX Plan Adresse auf iPhone oder iPad einrichten.**
+**In dieser Anleitung erfahren Sie, wie Sie eine MX Plan E-Mail-Adresse über die Mail App auf einem iPhone oder iPad einrichten.**
+
+> [!warning]
+>
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+>
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+>
 
 ## Voraussetzungen
 
-- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder bei einem [OVH Webhosting](https://www.ovh.de/hosting/){.external} enthalten).
-- Die Mail App ist auf Ihrem Gerät installiert.
+- Sie verfügen über eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [OVH Webhosting](https://www.ovh.de/hosting/){.external} enthalten).
+- Die Mail App ist auf Ihrem iOS Gerät installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
-> [!primary]
->
-> Diese Anleitung gilt für folgende iOS-Versionen: iOS 7 und neuere Versionen.
->
+## In der praktischen Anwendung
 
-## Beschreibung
+### Account hinzufügen
 
-Es gibt zwei Möglichkeiten, um Ihre E-Mail-Adresse zur Mail App hinzuzufügen:
+Gehen Sie auf den Bildschirm Ihres Geräts und klicken Sie auf `Einstellungen`{.action} (Zahnradsymbol). Je nach Ihrer iOS-Version erfolgt das Hinzufügen eines Accounts auf verschiedene Arten:
 
-- **In nur wenigen Klicks über unser Apple Devices Tool**: Klicken Sie auf den Link <https://autodiscover.mail.ovh.net/AppleDevices/> und folgen Sie den Konfigurationsschritten.
+- **iOS 7, 8, 9 und 10**: tippen Sie auf `Mail, Kontakte, Kalender`{.action} und dann auf `Account hinzufügen`{.action}. Als Accounttyp wählen Sie `Andere`{.action}, und klicken anschließend auf `Mail-Account hinzufügen`{.action}. Gehen Sie dann zu Schritt 5 der folgenden Tabelle.
 
-- **Folgen Sie dem Konfigurationsassistenten Ihres Geräts**.
+- **iOS 11**: tippen Sie auf `Accounts und Passwörter`{.action} und dann auf `Account hinzufügen`{.action}. Als Accounttyp wählen Sie `Andere`{.action}, und klicken anschließend auf `Mail-Account hinzufügen`{.action}. Gehen Sie dann zu Schritt 5 der folgenden Tabelle.
 
-Die vorliegende Anleitung beschreibt von hier an nur die Konfiguration über Ihr Gerät.
+- **Für die aktuellen Versionen**: Folgen Sie den Anweisungen in der folgenden Tabelle.
 
-### Schritt 1: Account hinzufügen
-
-Tippen Sie auf dem Bildschirm Ihres Gerätes auf `Einstellungen`{.action}. Abhängig von Ihrer iOS-Version gibt es zwei Möglichkeiten, um den Account hinzuzufügen:
-
-- **bei iOS 7, 8, 9 und 10**: Gehen Sie auf `Mail, Kontakte, Kalender`{.action} und dann auf `Accounts`{.action} und `Account hinzufügen`{.action}. Als Accounttyp wählen Sie `Andere`{.action}, und klicken anschließend auf `Mail-Account hinzufügen`{.action}.
-
-- **bei iOS 11**: Gehen Sie auf `Accounts und Passwörter`{.action} und dann auf `Account hinzufügen`{.action}. Als Accounttyp wählen Sie `Andere`{.action}, und klicken anschließend auf `Mail-Account hinzufügen`{.action}.
-
-![Exchange](images/configuration-mail-ios-step1.png){.thumbnail}
-
-Geben Sie Ihre Account-Daten ein:
-
-|Information|Beschreibung|
+| | |
 |---|---|
-|Name|Geben Sie den Namen ein, der als Absender angezeigt werden soll, wenn E-Mails von dieser Adresse aus versendet werden.|
-|E-Mail-Adresse|Geben Sie die vollständige E-Mail-Adresse ein.|
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
-|Beschreibung|Geben Sie einen Namen für diesen Account ein, damit Sie ihn später von anderen Accounts in der Mail App unterscheiden können.|
+|![Exchange](images/configuration-mail-ios-step01.gif){.thumbnail}|1. In `Einstellungen` gehen Sie auf `Mail`. <br><br> 2. Tippen Sie auf `Accounts`.<br><br> 3. Tippen Sie auf `Account hinzufügen`.<br><br> 4. Wählen `Sie` unten Anderes.|
+|5. Tippen Sie auf `Mail-Account hinzufügen`.<br><br>6. Geben Sie **Ihren** Namen, Ihre **E-Mail**-Adresse, **Ihr Passwort** und eine **Beschreibung** Ihres Accounts an.<br><br>7. Drücken Sie auf `Weiter`.|![Exchange](images/configuration-mail-ios-step02.png){.thumbnail}|
+|![Exchange](images/configuration-mail-ios-step03.png){.thumbnail}|8. Wählen Sie den Typ des `IMAP`- oder `POP`-Empfangsservers.<br><br>Geben Sie in den Bereichen `EMPFANGSSERVER` und `VERSENDUNGSSERVER` trotz der Angabe "optional" folgende Angaben ein: <br>- Hostname **ssl0.ovh.net** <br>- Ihre vollständige **E-Mail-Adresse** im Benutzernamen <br>- das Passwort Ihrer E-Mail-Adresse|
 
-Tippen Sie nun auf `Weiter`{.action} und geben Sie dann die folgenden Informationen ein:
-
-|Information|Beschreibung| 
-|---|---| 
-|IMAP oder POP|Wir empfehlen, die Standardauswahl **IMAP** zu verwenden. Sie können auch **POP** auswählen (dann werden Ihre E-Mails lokal in Ihrer Mail-Applikation gespeichert).|
-|Hostname (eintreffende Mails)|Tragen Sie den Server „ssl0.ovh.net“ ein.|
-|Benutzername (eintreffende Mails)|Geben Sie die vollständige E-Mail-Adresse ein.|
-|Passwort (eintreffende Mails)|Geben Sie das Passwort der E-Mail-Adresse ein.|  
-|Hostname (ausgehende Mails)|Tragen Sie den Server „ssl0.ovh.net“ ein.|
-|Benutzername (ausgehende Mails)|Geben Sie die vollständige E-Mail-Adresse ein.|
-|Passwort (ausgehende Mails)|Geben Sie das Passwort der E-Mail-Adresse ein.| 
-
-Tippen Sie nun auf `Weiter`{.action}. Wenn Ihre Angaben korrekt sind, wird die Verbindung zu Ihrem Account hergestellt.
-
-![Exchange](images/configuration-mail-ios-step2.png){.thumbnail}
-
-Stellen Sie sicher, dass Sie bei der Wahl der Anwendungen `Mail`{.action} ausgewählt lassen, damit die App den Account verwenden kann. Klicken Sie anschließend auf `Sichern`{.action}.
+Am Ende der Konfiguration stellen Sie sicher, dass Sie `Mail`{.action} ausgewählt lassen, damit die Anwendung diesen Account verwenden kann, und klicken Sie dann auf `Speichern`{.action}.
 
 Sie können eine Test-E-Mail versenden, um zu überprüfen, ob der Account korrekt eingerichtet ist.
 
@@ -80,23 +59,33 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 |Servertyp|Servername|SSL|Port|
 |---|---|---|---|
-|Für eintreffende E-Mails|ssl0.ovh.net|Ja|993|
-|Für ausgehende E-Mails|ssl0.ovh.net|Ja|465|
+|Eingangsserver|ssl0.ovh.net|Ja|993|
+|Ausgangsserver|ssl0.ovh.net|Ja|465|
 
 - **POP-Konfiguration**
 
 |Servertyp|Servername|SSL|Port|
 |---|---|---|---|
-|Für eintreffende E-Mails|ssl0.ovh.net|Ja|995|
-|Für ausgehende E-Mails|ssl0.ovh.net|Ja|465|
+|Eingangsserver|ssl0.ovh.net|Ja|995|
+|Ausgangsserver|ssl0.ovh.net|Ja|465|
 
-### Schritt 2: E-Mail-Adresse verwenden
+### E-Mail-Adresse verwenden
 
-Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
+Wenn Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-Eine OVH Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können, ist verfügbar unter <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+OVHcloud bietet eine Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen <https://www.ovh.de/mail/> können. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
+> [!primary]
+>
+> Bei Schwierigkeiten beim Empfang oder beim Versand von E-Mails konsultieren Sie bitte unsere [FAQ zu den OVHcloud E-Mail-Diensten](https://docs.ovh.com/de/emails/e-mails-faq/).
+>
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+[Konfiguration von Exchange auf iPhone oder iPad](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_automatische_konfiguration_in_ios_iphone_-_ipad/){.external}
+
+[Konfiguration von E-Mail Pro auf iPhone oder iPad](https://docs.ovh.com/de/emails-pro/iphone-konfiguration/){.external}
+
+[E-Mails FAQ](https://docs.ovh.com/de/emails/e-mails-faq/)
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

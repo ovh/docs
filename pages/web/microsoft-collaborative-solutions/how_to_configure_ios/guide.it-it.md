@@ -1,89 +1,84 @@
 ---
 title: 'Configurare un account Exchange su un iPhone o un iPad'
 slug: exchange_20132016_configurazione_automatica_con_ios_iphone-ipad
+routes:
+    canonical: 'https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_iphone_ios_91/'
 excerpt: 'Scopri come configurare un account Exchange su un iPhone o un iPad tramite l’applicazione Mail'
 legacy_guide_number: g1272
 ---
 
-**Ultimo aggiornamento: 11/09/2018**
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 21/05/2020**
 
 ## Obiettivo
 
-Gli account Exchange possono essere configurati su client di posta compatibili, per permetterti di utilizzare il tuo account email dal dispositivo che preferisci. 
+Gli account Exchange possono essere configurati su client di posta compatibili, per permetterti di utilizzare il tuo account email dal dispositivo che preferisci.
 
-**Questa guida ti mostra come configurare il tuo account Exchange su un iPhone o un iPad tramite l’applicazione Mail.**
+**Questa guida ti mostra come configurare il tuo account Exchange su un iPhone o un iPad tramite l'applicazione Mail.**
+
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+>
+> Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo sito. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVH non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+>
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange](https://www.ovh.it/emails/){.external}
-- Aver installato l’applicazione Mail sul proprio dispositivo
+- Disporre di un [account email Exchange](https://www.ovh.it/emails/){.external}
+- Aver installato l'applicazione Mail sul proprio dispositivo iOS
 - Disporre delle credenziali associate all’account email da configurare
-
-> [!primary]
->
-> Questa guida è valida per le versioni iOS 7 e successive.
->
 
 ## Procedura
 
-La configurazione dell’account può essere effettuata in due modi diversi:
+### Aggiungi l'account <a name="addaccount"></a>
 
-- **in pochi click con il nostro tool Apple Devices**: accedi alla pagina [https://autodiscover.mail.ovh.net/AppleDevices/](https://autodiscover.mail.ovh.net/AppleDevices/){.external} e segui gli step di configurazione
+> [!primary]
+>
+> Nel nostro esempio, usiamo il nome del server: ex**?**.mail.ovh.net. Dovrai sostituire il ""? " dalla cifra che indica il server del tuo servizio Email Pro.
+>
+> Questa cifra è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nella sezione `Web Cloud`{.action} e `Microsoft`{.action} a sinistra.
+> Clicca su `Exchange`{.action} e poi sulla piattaforma Exchange. Il nome del server è visibile nel riquadro **Connessione** della `scheda Informazioni generali`{.action}.
+>
 
-- **tramite la configurazione guidata disponibile sul tuo dispositivo**
+Sulla schermata Home del tuo dispositivo clicca su Impostazioni` `{.action} (icona a ruota dentata). L'aggiunta di un account si effettua in diversi modi, a seconda della tua versione iOS:
 
-Questa guida descrive esclusivamente gli step per la configurazione delle email sul tuo dispositivo.
+- **Per iOS 7, 8, 9 e 10**: clicca su `Mail, Contatti, Calendario`{.action}, poi su `Aggiungi account`{.action}. Infine seleziona Altro, poi Aggiungi account Mail. A questo punto, passa allo Step 5 della tabella seguente.
 
-### Step 1: aggiungi il tuo account
+- **Per iOS 11**: clicca su `Account e password`{.action} e poi su `Aggiungi account`{.action}. Infine seleziona Altro, poi Aggiungi account Mail. A questo punto, passa allo Step 5 della tabella seguente.
 
-Sulla schermata Home del tuo dispositivo clicca su `Impostazioni`{.action}. L’aggiunta di un account si effettua in due modi diversi a seconda della versione iOS:
+- **Per le versioni attuali**: seguire le istruzioni riportate nella tabella seguente.
 
-- **per iOS 7, 8, 9, e 10**: clicca su `Posta, Contatti, Calendari`{.action} > `Aggiungi account`{.action} > `Exchange`{.action} 
-
-- **per iOS 11** clicca su `Account e password`{.action} > `Aggiungi account`{.action} > `Exchange`{.action} 
-
-![exchange](images/configuration-mail-exchange-ios-step1.png){.thumbnail}
-
-Inserisci le informazioni del tuo account:
-
-|Informazione|Descrizione|
+| | |
 |---|---|
-|Email|Inserisci l’indirizzo email completo|
-|Descrizione|Inserisci un nome che ti permetterà di riconoscere questo account tra quelli presenti nella tua applicazione Mail|
-
-Clicca sul pulsante `Avanti`{.action} e poi su `Configura manualmente`{.action}.
-
-Inserisci la password associata al tuo indirizzo e clicca su `Avanti`{.action}.
-
-Inserisci le informazioni richieste:
-
-|Informazione|Descrizione|
-|---|---|
-|Email|Questo campo dovrebbe essere precompilato. Se così non fosse, inserisci l’indirizzo email completo.|
-|Server|Indica il server che ospita il il tuo servizio Exchange. Puoi ritrovarlo nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > scheda `Informazioni generali`{.action} del servizio Exchange corrispondente > sezione `Connessione`{.action}.|
-|Dominio|Lascia il campo vuoto|
-|Nome utente|Inserisci l’indirizzo email completo|  
-|Password|Questo campo dovrebbe essere precompilato. In caso contrario, inserisci la password associata all’indirizzo email.|
-|Descrizione|Questo campo dovrebbe essere precompilato. In caso contrario, inserisci un nome che ti permetterà di riconoscere questo account tra quelli presenti nella tua applicazione Mail.|
-
-Clicca su `Avanti`{.action}. Se le informazioni inserite sono corrette, l’accesso all’account andrà a buon fine.
-
-![exchange](images/configuration-mail-exchange-ios-step2.png){.thumbnail}
-
-Per il corretto funzionamento del tuo account assicurati che durante la scelta delle applicazioni la voce `Mail`{.action} sia selezionata. Le altre applicazioni, come *Calendario* e *Note*, possono utilizzare alcune delle funzionalità collaborative legate ad Exchange. Una volta effettuata la scelta, clicca su `Salva`{.action}. 
+|![exchange](images/configuration-mailex-ios-step01.gif){.thumbnail}|1. Nelle `Impostazioni`, vai su `Mail`. <br><br> 2. Premi su `Account`.<br><br> 3. Clicca su `Aggiungi account`.<br><br> 4. Scegli `Microsoft Exchange`.|
+|5. Inserisci il tuo **indirizzo email** e una **descrizione** del tuo account email, clicca su `Avanti`.<br><br>6. Seleziona `Configurazione manuale`.<br><br>|![exchange](images/configuration-mailex-ios-step02.png){.thumbnail}|
+|![exchange](images/configuration-mailex-ios-step03.png){.thumbnail}|7. Inserisci: <br>- il server **ex?.mail.ovh.net** (sostituisci il server **?** per [numero del tuo server Exchange](#addaccount))<br>- il tuo **indirizzo email completo** nel nome utente <br>- la password del tuo indirizzo email|
+|8. Assicurati di lasciare almeno `Selezionata Mail`{.action} affinché l'applicazione possa utilizzare questo account. Le altre applicazioni, come *Calendario* e *Note*, possono utilizzare alcune delle funzionalità collaborative legate ad Exchange.<br><br>9. Clicca su `Salva` per completare l'aggiunta del tuo account Exchange.|![exchange](images/configuration-mailex-ios-step04.png){.thumbnail}|
 
 Per verificare la corretta configurazione dell’account esegui un test di invio.
 
-### Step 2: utilizza il tuo account
+### Utilizza l'indirizzo email
 
-Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
+Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovh.it/emails/){.external}. Accedi a questo link [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} utilizzando le credenziali del tuo account.
+OVHcloud propone un'applicazione Web con [funzionalità collaborative Exchange](https://www.ovh.it/emails/){.external}, disponibile all'indirizzo <https://www.ovh.it/mail/>. e accessibile con le credenziali del tuo account.
+
+> [!primary]
+>
+> In caso di difficoltà a ricevere o inviare email, consulta le nostre [FAQ sui servizi di posta OVHcloud](https://docs.ovh.com/it/emails/faq-emails/).
+>
 
 ## Per saperne di più
 
-[Configurare un account email su un iPhone o un iPad](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_iphone_ios_91/){.external}
+[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur un iPhone ou un iPad](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_iphone_ios_91/)
 
-[Configurare un account Email Pro su un iPhone o un iPad](https://docs.ovh.com/it/emails-pro/configurazione-iphone-ios/){.external}
+[Configurare un account Email Pro su un iPhone o un iPad](https://docs.ovh.com/it/emails-pro/configurazione-iphone-ios/)
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}. 
+[FAQ e-mail](https://docs.ovh.com/it/emails/faq-emails/)
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
