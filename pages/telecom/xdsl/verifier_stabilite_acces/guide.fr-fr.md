@@ -23,10 +23,6 @@ Les *logs radius* disponibles via les API OVHcloud, combinés avec la réponse a
 
 ## En pratique
 
-> [!primary]
-> Ce guide n'a pas vocation à expliquer le fonctionnement d'une connexion PPPoE.
->
-
 ### Détails des logs radius
 
 Lors de chaque connexion de votre routeur sur les équipements OVHcloud, une trace est systématiquement laissée à notre niveau sur les logs de l’équipement nommé **radius**. 
@@ -45,7 +41,7 @@ Une reconnexion peut avoir l'une des causes suivantes :
 > Une absence de traces est donc possible sur un accès n'ayant pas connu de coupure récente ou sur un accès actuellement déconnecté.
 >
 
-Vous pouvez récupérer les logs pour une prériode de trois mois maximum.
+La période de récupération des logs radius est de trois mois maximum.
 
 ### Récupérer le serviceName de votre accès xDSL ou FTTH
 
@@ -77,19 +73,22 @@ Vous retrouvez, dans l'encadré orange ci-dessus, les informations d'un log de r
 
 La seconde partie, telle qu'affichée dans l'encadré orange, est l'effet miroir sur les équipements OVHCloud qui finalisent l'authenfiication. 
 
-Une connexion génère donc deux logs. Sont stockés 50 logs au maximum, donc un total de 25 reconnexions.
+Une reconnexion génère donc deux logs. Sont stockés 50 logs au maximum, donc un total de 25 reconnexions.
 
 ### Vérifier la stabilité de votre accès
 
 Grâce aux logs de l'exemple ci-dessus, nous pouvons déduire que si cet accès répond toujours à une requête de *ping* le 28/05/2021 et que la dernière reconnexion sur les équipements OVHCloud est datée du 22/05/2021, alors la session PPPoE est montée depuis 6 jours environ.
 
-Il n'y donc pas eu de coupure sur l'accès concerné car la moindre reconnexion suite, par exemple, à un redémarrage du modem, entraînerait une reconnexion sur nos équipements. 
+Il n'y donc pas eu de coupure sur l'accès concerné pendant cet intervalle. En effet, la moindre reconnexion suite, par exemple, à un redémarrage du modem, aurait généré des logs radius de reconnexion sur nos équipements. 
 
-En revanche, si l'accès n'est plus synchronisé, il ne pourra bien entendu plus s'authentifier sur les équipements OVHcloud.
-
-Si un accès remonte plus de cinq reconnexions sur une même tranche de 24h, sans que celles-ci ne soient consécutives à une action de votre part sur le modem (rédémarrage ou réinitialisation), il est alors légitime de considérer cet accès comme instable. 
+Si un accès remonte plus de cinq reconnexions sur une même tranche de 24h, sans que celles-ci ne soient consécutives à des actions intentionnelles sur le modem (rédémarrage ou réinitialisation), il est alors légitime de considérer cet accès comme instable. 
 
 Si vous constatez des reconnexions fréquentes sur l'un de vos accès xDSL ou FTTH, nous vous conseillons de faire le point sur votre [desserte interne](../la-desserte-interne/) et de consulter nos guides de [diagnostic et dépannage](../).
+
+> [!primary]
+>
+> Si un accès n'est plus synchronisé, il ne pourra évidemment plus s'authentifier sur les équipements OVHcloud.
+> 
 
 ## Aller plus loin
 
