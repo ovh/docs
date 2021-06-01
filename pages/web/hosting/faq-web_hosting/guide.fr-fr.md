@@ -87,11 +87,15 @@ Si vous avez choisi d'installer [votre site manuellement](https://docs.ovh.com/f
 
 (mettre screenshot ici (voir si possible avec droits chmod) screenshot à ajouter sur le guide concerné)
 
+![403](images/403.png){.thumbnail}
+
 Consultez le guide [Réagir en cas de désactivation pour sécurité d’un hébergement](../site-ferme-pour-hack/)
 
 #### Que faire si mon site affiche une erreur indiquant que la version PHP de mon hébergement est insuffisante ?
 
 ![erreur_wp_php](images/erreur_wp_php.png){.thumbnail}
+
+(501 method not implemented ? > Antoine)
 
 Consultez le guide [Changer la version de PHP de son hébergement web](../configurer-le-php-sur-son-hebergement-web-mutu-2014/)
 
@@ -99,11 +103,17 @@ Consultez le guide [Changer la version de PHP de son hébergement web](../config
 
 ![index_of](images/index_of.png){.thumbnail}
 
-Votre nom de domaine est relié par le multisite de votre hébergement à un répertoire ("Dossier racine") dans votre serveur FTP.
+Votre nom de domaine est relié par le multisite de votre hébergement à un répertoire (`Dossier racine`) dans votre serveur FTP.
 
 Cette anomalie indique que le répertoire concerné ne contient pas de fichier **index.php** ou **index.html**.
 
 Pour résoudre l'anomalie "index of", vous devrez donc lier votre domaine au dossier racine qui contient le fichiet **index.php** ou **index.html** de votre site.
+
+Exemple : Vous avez importé les fichiers de votre site **mydomain.ovh** dans le dossier `www` de votre hébergement par FTP. Hors, votre nom de domaine n'est pas relié à ce dossier dans la colonne `Dossier racine` de votre `Multisite".
+
+![index_of_multisite](images/index_of_multisite.png){.thumbnail}
+
+Modifiez le `Dossier racine` en cliquant sur le bouton `...` à droite du tableau, puis `Dossier racine`
 
 ### Que faire si mon site s'affiche sur un domaine "cluster" ? (ou notation IDN)
 
