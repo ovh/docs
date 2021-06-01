@@ -77,15 +77,13 @@ Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site Internet.
 
 À l'installation de votre hébergement, OVHcloud met en place cette page d'attente, sous la forme d'un fichier **index.html** contenu dans le dossier **www** de votre serveur FTP.
 
-Ce fichier est automatiquement désactivé lors de la création de votre [module en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/#etape-3-ajouter-un-module).
+Ce fichier est automatiquement désactivé lors de la création de votre [module en 1 clic](../modules-en-1-clic/#etape-3-ajouter-un-module).
 
-Si vous avez choisi d'installer [votre site manuellement](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/), [connectez-vous à votre hébergement en FTP](../connexion-espace-stockage-ftp-hebergement-web/), afin de le renommer en **index.html.old**. 
+Si vous avez choisi d'installer [votre site manuellement](../mutualise-installer-manuellement-mon-cms/), [connectez-vous à votre hébergement en FTP](../connexion-espace-stockage-ftp-hebergement-web/), afin de le renommer en **index.html.old**. 
 
 **Autre information utile** : Afin d'être pris en compte, les fichiers de votre site doivent être [téléchargés en FTP](../connexion-espace-stockage-ftp-hebergement-web/) sur votre hébergement. Le répertoire dans lequel vous mettrez ces fichiers devra correspondre au `Dossier racine`, auquel est lié votre domaine dans le multisite.
 
 #### Que faire si mon site affiche une erreur "403 forbidden" ?
-
-(mettre screenshot ici (voir si possible avec droits chmod) screenshot à ajouter sur le guide concerné)
 
 ![403](images/403.png){.thumbnail}
 
@@ -113,7 +111,13 @@ Exemple : Vous avez importé les fichiers de votre site **mydomain.ovh** dans le
 
 ![index_of_multisite](images/index_of_multisite.png){.thumbnail}
 
-Modifiez le `Dossier racine` en cliquant sur le bouton `...` à droite du tableau, puis `Dossier racine`
+Modifiez le `Dossier racine` en cliquant sur le bouton `...` à droite du tableau, puis `Modifier le domaine` :
+
+![modify_domain](images/modify_domain.png){.thumbnail}
+
+Vous obtiendrez, ensuite, le résultat suivant : 
+
+![modify_domain](images/modify_domain.png){.thumbnail}
 
 ### Que faire si mon site s'affiche sur un domaine "cluster" ? (ou notation IDN)
 
@@ -124,9 +128,7 @@ Modifiez le `Dossier racine` en cliquant sur le bouton `...` à droite du tablea
 ![webmail](images/webmail.png){.thumbnail}
 
 
-
 #### Que faire si mon site redirige vers un site inconnu ?
-
 
 
 #### Que faire si mon site affiche une page "Site non installé" ?
