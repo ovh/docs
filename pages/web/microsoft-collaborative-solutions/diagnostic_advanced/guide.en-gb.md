@@ -105,7 +105,7 @@ Field        | Value
 Priority     | 0
 Weight       | 0
 Port         | 443
-Target       | [Your host name](#hostname)
+Target       | [Your hostname](#hostname)
 
 ### The test email could not be sent from this account 
 
@@ -115,5 +115,7 @@ This error indicates a general email sending failure wich may have several cause
 - [The password that was entered is incorrect](#password)
 - [Your account has been blocked for sending spam](#blocked)
 - [An incident has occurred on the infrastructure](http://status.ovh.co.uk/?project=30&status=all&perpage=50)
+
+## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
