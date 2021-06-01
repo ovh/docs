@@ -109,7 +109,7 @@ Un bon de commande sera alors généré. Cliquez sur le numéro de bon de comman
 ### Comment récupérer le dépôt de garantie ?
 
 Si vous souhaitez récupérer le dépôt de garantie de l'un de vos groupes de téléphonie, il vous faut demander la fermeture du groupe en question.
-Le dépot de garantie vous sera alors crédité sur votre compte prépayé OVH à la date de facturation suivant la suppression du groupe.
+Le dépôt de garantie vous sera alors crédité sur votre compte prépayé OVH à la date de facturation suivant la suppression du groupe.
 
 Pour supprimer un groupe de téléphonie, sélectionnez-le dans le menu de gauche puis cliquez sur l’onglet `Administration`{.action} et sur `Supprimer le groupe`{.action}.
 ![Suppression groupe de téléphonie](images/SupprGroup.png)
