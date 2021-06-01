@@ -68,6 +68,11 @@ Sélectionnez d'abord le groupe qui contient actuellement les lignes souhaitées
 
 Cette action prend quelques minutes pour être prise en compte.
 
+#### Cas particulier des lignes liées à une offre Découverte
+
+Les lignes liées à un forfait découverte ne peuvent être déplacées dans un autre groupe de téléphonie.
+De même, il n'est pas possible d'intégrer d'autres lignes dans un groupe de téléphonie comportant une ligne découverte.
+
 #### Cas particulier des lignes liées à un accès à Internet OVHcloud
 
 Les accès à Internet OVHcloud comprennent souvent des lignes téléphoniques qu'il faut activer dans l'espace client OVHcloud, dans la partie `Accès Internet`{.action}. Ces lignes, une fois activées, génèrent leur propre groupe de téléphonie (un groupe pour chaque accès à Internet).
