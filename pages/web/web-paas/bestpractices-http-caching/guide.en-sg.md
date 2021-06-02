@@ -1,11 +1,10 @@
 ---
 title: HTTP caching
 slug: bestpractices-http-caching
-section: Best practices
-order: 10
+section: Bestpractices
 ---
 
-**Last updated 11th May 2021**
+**Last updated 2nd June 2021**
 
 
 ## Objective  
@@ -14,7 +13,7 @@ There are several different "levels" at which you could configure HTTP caching f
 
 * **The Web PaaS [Router cache](../configuration-routes/cache)**.  Every project includes a router instance, which includes optional HTTP caching.  It is reasonably configurable and obeys HTTP cache directives, but does not support push-based clearing.  If you are uncertain what caching tool to use, start with this one.  It is more than sufficient for the majority of use cases.
 
-* **A Content Delivery Network (CDN)**.  Web PaaS is compatible with most commercial CDNs.  If your Web PaaS Enterprise project has a Dedicated production environment it will typically come with the [Fastly CDN](../domains-cdn/fastly).  A CDN will generally offer the best performance as it is the only option that includes multiple geographic locations, but it also tends to be the most expensive.  Functionality will vary widely depending on the CDN.  Setup instructions for Fastly and [Cloudflare](../domains-cdn/cloudflare) are available, and will be similar for most other CDNs.
+* **A Content Delivery Network (CDN)**.  Web PaaS is compatible with most commercial CDNs.    A CDN will generally offer the best performance as it is the only option that includes multiple geographic locations, but it also tends to be the most expensive.  Functionality will vary widely depending on the CDN.  
 
 * **[Varnish](../configuration-services/varnish)**.  Web PaaS offers a Varnish service that you can declare as part of your application and insert between the router and your application.  Performance will be roughly comparable to the Router cache.  Varnish is more configurable than the Router cache as you are able to customize your VCL file, but make sure you are comfortable with Varnish configuration.  Web PaaS does not provide assistance with VCL configuration and a misconfiguration may cause difficult to debug behavior.  Generally speaking, you should use Varnish only if your application requires push-based clearing or relies on Varnish-specific business logic.
 
