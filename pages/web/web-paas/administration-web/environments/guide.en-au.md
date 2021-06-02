@@ -4,7 +4,7 @@ slug: environments
 section: Web
 ---
 
-**Last updated 11th May 2021**
+**Last updated 2nd June 2021**
 
 
 ## Objective  
@@ -26,7 +26,7 @@ Every Web PaaS project starts with a Master environment which corresponds to the
 If you subscribed to a production plan, this environment is your **live site** and can be mapped to a domain name and a custom SSL certificate.
 
 > [!primary]  
-> Your project must have a default branch, but you can configure it to be a different branch than `master`. See the ["Renaming a project's root environment"](../../guides-general/default-branch) guide for more details.
+> Your project must have a default branch, but you can configure it to be a different branch than `master`. 
 > 
 
 
