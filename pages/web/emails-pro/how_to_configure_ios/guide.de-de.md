@@ -18,7 +18,7 @@ order: 3
 
 E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden.
 
-**Diese Anleitung erklärt, wie Sieeinen E-Mail Pro Account via Mail App auf einem iPhone oder iPad einrichten.**
+**Diese Anleitung erklärt, wie Sie einen E-Mail Pro Account via Mail App auf einem iPhone oder iPad einrichten.**
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
@@ -70,9 +70,9 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 ### E-Mail-Adresse verwenden
 
-Wenn Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
+Sobald Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-OVHcloud bietet auch eine Webanwendung mit [kollaborativen Funktionen](https://www.ovh.de/emails/){.external}, unter <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+OVHcloud bietet auch eine Webanwendung mit [kollaborativen Funktionen](https://www.ovh.de/emails/){.external} an, unter <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 > [!primary]
 >
@@ -81,7 +81,7 @@ OVHcloud bietet auch eine Webanwendung mit [kollaborativen Funktionen](https://w
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder aus einem Webhosting Angebot auf iPhone oder iPad](../../emails/mail-konfiguration-iphone-ios-91/)
+[Konfiguration Ihrer MX Plan E-Mail-Adresse auf iPhone oder iPad](../../emails/mail-konfiguration-iphone-ios-91/)
 
 [Konfiguration von Exchange auf iPhone oder iPad](../../microsoft-collaborative-solutions/exchange_20132016_automatische_konfiguration_in_ios_iphone_-_ipad/)
 
