@@ -135,6 +135,8 @@ Vous obtiendrez, sous quelques minutes, le résultat suivant :
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
+Si votre site s'affiche sous cette url suite 
+
 #### Que faire si mon site redirige vers le webmail OVHcloud ?
 
 ![webmail](images/webmail.png){.thumbnail}
