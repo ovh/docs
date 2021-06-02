@@ -44,11 +44,12 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 > Clique em `Exchange`{.action} e, a seguir, na plataforma Exchange pretendida. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 >
 
-No ecrã principal do seu dispositivo, aceda a `Settings`{.action} (ícone de roda dentada). A adição de uma conta efetua-se de diferentes formas consoante a sua versão do iOS:
 
-- **Para iOS 7, 8, 9 e 10**: aceda a `Mail, Contacts, Calendário`{.action} e depois a `Adicionar uma conta`{.action}. A seguir selecione `Other`{.action}, depois `Add Mail Account`{.action}. Passe em seguida à etapa 5 da tabela seguinte.
+No ecrã principal do seu dispositivo, aceda a `Regulações`{.action} (ícone de roda dentada). A adição de uma conta efetua-se de diferentes formas consoante a sua versão do iOS:
 
-- **Para iOS 11**: carregue em `Contas e palavras-passe`{.action} e depois em `Adicionar uma conta`{.action}. A seguir selecione `Other`{.action}, depois `Add Mail Account`{.action}. Passe em seguida à etapa 5 da tabela seguinte.
+- **Para iOS 7, 8, 9 e 10**: aceda a `Mail, Contacts, Calendário`{.action} e depois a `Adicionar uma conta`{.action}. A seguir selecione `Outra`{.action}, depois `Adicionar uma conta de e-mail`{.action}. Passe em seguida à etapa 5 da tabela seguinte.
+
+- **Para iOS 11**: carregue em `Contas e palavras-passe`{.action} e depois em `Adicionar uma conta`{.action}. A seguir selecione `Outra`{.action}, depois `Adicionar uma conta de e-mail`{.action}. Passe em seguida à etapa 5 da tabela seguinte.
 
 - **Para as versões atuais**: siga as instruções da tabela abaixo.
 

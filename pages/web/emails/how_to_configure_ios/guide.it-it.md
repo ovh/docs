@@ -35,7 +35,7 @@ Gli account email del servizio MX Plan possono essere configurati su client o ap
 
 ### Aggiungi l'account
 
-Sulla schermata Home del tuo dispositivo clicca su Impostazioni` `{.action} (icona a ruota dentata). L'aggiunta di un account si effettua in diversi modi, a seconda della tua versione iOS:
+Sulla schermata Home del tuo dispositivo clicca su `Impostazioni`{.action} (icona a ruota dentata). L'aggiunta di un account si effettua in diversi modi, a seconda della tua versione iOS:
 
 - **Per iOS 7, 8, 9 e 10**: clicca su `Mail, Contatti, Calendario`{.action}, poi su `Aggiungi account`{.action}. Infine seleziona Altro, poi Aggiungi account Mail. A questo punto, passa allo Step 5 della tabella seguente.
 

@@ -44,11 +44,11 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 > Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}, na coluna à esquerda. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 >
 
-No ecrã principal do seu dispositivo, aceda a `Settings`{.action} (ícone de roda dentada). A adição de uma conta efetua-se de diferentes formas consoante a sua versão do iOS:
+No ecrã principal do seu dispositivo, aceda a `Regulações`{.action} (ícone de roda dentada). A adição de uma conta efetua-se de diferentes formas consoante a sua versão do iOS:
 
-- **Para iOS 7, 8, 9 e 10**: aceda a `Mail, Contacts, Calendário`{.action} e depois a `Adicionar uma conta`{.action}. A seguir selecione `Other`{.action}, depois `Add Mail Account`{.action}. Passe em seguida à etapa 5 da tabela seguinte.
+- **Para iOS 7, 8, 9 e 10**: aceda a `Mail, Contacts, Calendário`{.action} e depois a `Adicionar uma conta`{.action}. A seguir selecione `Outra`{.action}, depois `Adicionar uma conta de e-mail`{.action}. Passe em seguida à etapa 5 da tabela seguinte.
 
-- **Para iOS 11**: carregue em `Contas e palavras-passe`{.action} e depois em `Adicionar uma conta`{.action}. A seguir selecione `Other`{.action}, depois `Add Mail Account`{.action}. Passe em seguida à etapa 5 da tabela seguinte.
+- **Para iOS 11**: carregue em `Contas e palavras-passe`{.action} e depois em `Adicionar uma conta`{.action}. A seguir selecione `Outra`{.action}, depois `Adicionar uma conta de e-mail`{.action}. Passe em seguida à etapa 5 da tabela seguinte.
 
 - **Para as versões atuais**: siga as instruções da tabela abaixo.
 
