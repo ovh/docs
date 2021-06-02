@@ -93,7 +93,9 @@ Consultez le guide [Réagir en cas de désactivation pour sécurité d’un héb
 
 ![erreur_wp_php](images/erreur_wp_php.png){.thumbnail}
 
-(501 method not implemented ? > Antoine)
+> refaire screenshot avec plus de largeur sinon on ne voit pas la différence entre le msg d'erreur et le reste du texte
+
+(501 method not implemented ? > Antoine > waiting)
 
 Consultez le guide [Changer la version de PHP de son hébergement web](../configurer-le-php-sur-son-hebergement-web-mutu-2014/)
 
@@ -157,7 +159,13 @@ https://docs.ovh.com/fr/hosting/erreur-site-non-installe/
 
 ### Que faire si mon site affiche une erreur "Serveurs inaccessibles" ?
 
+Firefox : 
 
+![unabletoconnect](images/unabletoconnect.png){.thumbnail}
+
+Google : 
+
+![sitecantbereached](images/sitecantbereached.png){.thumbnail}
 
 ### Que faire si mon site affiche une erreur "500 Internet Server Error" ?
 
