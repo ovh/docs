@@ -1,5 +1,5 @@
 ---
-title: Mit der Verwaltung der Volumes in der OpenStack-API beginnen
+title: Erste Schritte mit der Volume-Verwaltung in der OpenStack API
 slug: api-openstack-volumes
 section: OpenStack
 order: 7
@@ -114,7 +114,7 @@ admin@server-1:~$ openstack volume create --type high-speed --size 10 volume1
 +---------------------+--------------------------------------+
 ```
 
-Sie können ein Image mit dem Argument - Image - auf einem Volume `installieren`:
+Sie können ein Image mit dem Argument `--image` auf einem Volume installieren:
 
 ```bash
 admin@server-1:~$ openstack volume create --type high-speed --image be66762f-b849-43e1-b57c-005d9fe28088 --size 20 volume_debian
