@@ -5,7 +5,7 @@ section: Configuration
 order: 3
 ---
 
-**Last updated 31st March 2021**
+**Last updated 2nd June 2021**
 
 
 ## Objective  
@@ -58,12 +58,10 @@ Service types and their supported versions include:
 | **Service** | **`type`** | **Supported `version`** |
 |----------------------------------|---------------|-------------------------|
 | [Headless Chrome](headless-chrome) | `chrome-headless` | 73 |
-| [Elasticsearch](elasticsearch) | `elasticsearch` | 6.5, 7.2, 7.5, 7.7, 7.9 |
 | [InfluxDB](influxdb) | `influxdb` | 1.2, 1.3, 1.7, 1.8 |
 | [Kafka](kafka) | `kafka` | 2.1, 2.2, 2.3, 2.4, 2.5 |
 | [MariaDB](mysql) | `mariadb` | 10.0, 10.1, 10.2, 10.3, 10.4, 10.5 |
 | [Memcached](memcached) | `memcached` | 1.4, 1.5, 1.6 |
-| [MongoDB](mongodb) | `mongodb` | 3.0, 3.2, 3.4, 3.6 |
 | [Network Storage](network-storage) | `network-storage` | 1.0 |
 | [Oracle MySQL](mysql) | `oracle-mysql` | 5.7, 8.0 |
 | [PostgreSQL](postgresql) | `postgresql` | 9.6, 10, 11, 12, 13 |
