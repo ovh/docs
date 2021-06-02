@@ -105,7 +105,7 @@ Votre nom de domaine est relié par le multisite de votre hébergement à un ré
 
 Cette anomalie indique que le répertoire concerné ne contient pas de fichier **index.php** ou **index.html**.
 
-Pour résoudre l'anomalie "index of", vous devrez donc lier votre domaine au dossier racine qui contient le fichiet **index.php** ou **index.html** de votre site.
+Pour résoudre l'anomalie "index of", vous devrez donc lier votre domaine au dossier racine qui contient le fichier **index.php** ou **index.html** de votre site.
 
 Exemple : Vous avez importé les fichiers de votre site **mydomain.ovh** dans le dossier `www` de votre hébergement par FTP. Hors, votre nom de domaine n'est pas relié à ce dossier dans la colonne `Dossier racine` de votre `Multisite".
 
@@ -113,11 +113,23 @@ Exemple : Vous avez importé les fichiers de votre site **mydomain.ovh** dans le
 
 Modifiez le `Dossier racine` en cliquant sur le bouton `...` à droite du tableau, puis `Modifier le domaine` :
 
+![change_root_folder](images/change_root_folder.png){.thumbnail}
+
+Cochez la case `Modifier également le sous domaine www` et indiquez le répertoire contenant le fichier **index** de votre site comme `Dossier racine`. Faites `Suivant` :
+
+![change_root_folder](images/change_root_folder.png){.thumbnail}
+
+Puis `Valider` :
+
+![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
+
+Vous obtiendrez, sous quelques minutes, le résultat suivant : 
+
 ![modify_domain](images/modify_domain.png){.thumbnail}
 
-Vous obtiendrez, ensuite, le résultat suivant : 
-
-![modify_domain](images/modify_domain.png){.thumbnail}
+> [!primary]
+>
+> Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre serveur FTP.
 
 ### Que faire si mon site s'affiche sur un domaine "cluster" ? (ou notation IDN)
 
@@ -128,7 +140,7 @@ Vous obtiendrez, ensuite, le résultat suivant :
 ![webmail](images/webmail.png){.thumbnail}
 
 
-#### Que faire si mon site redirige vers un site inconnu ?
+#### Que faire si mon nom de domaine redirige vers un site inconnu ?
 
 
 #### Que faire si mon site affiche une page "Site non installé" ?
