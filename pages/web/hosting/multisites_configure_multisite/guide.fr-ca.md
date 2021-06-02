@@ -38,7 +38,7 @@ Le tableau qui s'affiche liste tous les noms de domaine et sous-domaines ajouté
 
 ### Étape 2 : ajouter un domaine ou un sous-domaine
 
-Pour ajouter un nouveau nom de domaine ou sous-domaine à votre hébergement web, cliquez sur le bouton `Ajouter un domaine ou sous domaine`{.action} puis effectuez votre choix dans la fenêtre qui s’affiche.
+Pour ajouter un nouveau nom de domaine ou sous-domaine à votre hébergement web, cliquez sur le bouton `Actions`{.action} situé à gauche de l'écran puis sur `Ajouter un domaine ou sous domaine`{.action} et effectuez votre choix dans la fenêtre qui s’affiche.
 
 ![actions](images/actions-multisite-ovh.png){.thumbnail}
 
@@ -100,7 +100,7 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 >
 > |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
-> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br></br>Pour retrouver cette dernière, retrouvez les [serveurs DNS](.../.../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
+> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br></br>Pour retrouver cette dernière, retrouvez les [serveurs DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >

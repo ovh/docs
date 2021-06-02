@@ -10,7 +10,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 16/02/2021**
+**Ostatnia aktualizacja z dnia 28/05/2021**
 
 ## Wprowadzenie
 
@@ -140,6 +140,23 @@ W każdej chwili możesz jednak wykonać "reboot hard" w Panelu [klienta OVHclou
 ### Bezpieczeństwo serwera dedykowanego
 
 Zgodnie z informacją w części „Wprowadzenie” niniejszego przewodnika, jesteś administratorem Twojego serwera dedykowanego. Jesteś odpowiedzialny za Twoje dane i ich bezpieczeństwo. Aby uzyskać więcej informacji na temat bezpieczeństwa serwera, zapoznaj się z naszym przewodnikiem [Zabezpieczenie serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/).
+
+### Monitoring OVHcloud
+
+Możesz włączyć lub wyłączyć monitoring serwera dedykowanego w zakładce `Informacje ogólne`{.action} w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Wariant ten znajduje się w sekcji `Status usług`.
+
+![monitoring](images/monitoring-your-server.png){.thumbnail}
+
+- Jeśli **Monitoring** jest `Aktywny`, zostaniesz powiadomiony e-mailem o nieoczekiwanym działaniu serwera. Możesz wyłączyć te wiadomości za pomocą przycisku `...`{.action}.
+
+- Jeśli włączysz opcję **Interwencje w centrum danych**, zezwolisz technikom centrum danych na sprawdzenie sprzętu na wypadek gdyby Twój serwer przestał odpowiadać na pingi.
+
+> [!warning]
+>
+> Jeśli interwencje na miejscu są włączone (kursor jest wtedy na `On`{.action}, **wyłącz** opcję przed wykonaniem odpowiednich operacji na serwerze (testy sprzętowe, restart, itp.). Gdy funkcja "Monitoring" jest aktywna, otrzymasz zawsze automatyczne e-maile.
+>
+
+Więcej informacji na temat monitoringu OVHcloud znajdziesz w [tym przewodniku](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/).
 
 ### Konfiguracja sieci
 

@@ -93,13 +93,15 @@ L’eliminazione di un metodo di pagamento può essere effettuato tramite le API
 
 Se la società o l'organizzazione è [autorizzata all’applicazione dello Split Payment](https://www1.finanze.gov.it/finanze3/split_payment/public/#/#testata){.external}, è possibile attivarlo dallo Spazio Cliente OVHcloud.
 
-Nella sezione `Metodi di pagamento`{.action}, clicca su `Attiva il meccanismo dello split payment`{.action} e conferma l'attivazione nella finestra che appare.
+Nella sezione `Metodi di pagamento`{.action}, clicca su `Attiva lo Split Payment`{.action} e conferma l'attivazione nella finestra che appare.
+
+![manage-payment-methods](images/split-payment.png){.thumbnail}
 
 La tua idoneità all’utilizzo dello split payment verrà verificata dai nostri team per la convalida nel più breve tempo possibile.
 
 ### Disattiva il meccanismo dello split payment <a name="disattiva-split-payment"></a>
 
-Per disattivare il meccanismo dello split payment sul tuo account OVHcloud, accedi alla sezione `Metodi di pagamento`{.action}. Clicca su `Disattiva lo split payment`{.action} e conferma la disattivazione nella nuova finestra.
+Per disattivare il meccanismo dello split payment sul tuo account OVHcloud, accedi alla sezione `Metodi di pagamento`{.action}. Clicca su `Disattiva lo Split Payment`{.action} e conferma la disattivazione nella nuova finestra.
 
 ## Per saperne di più
 

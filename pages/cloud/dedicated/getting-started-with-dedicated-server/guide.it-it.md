@@ -10,7 +10,7 @@ order: 1
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 16/02/2021**
+**Ultimo aggiornamento: 28/05/2021**
 
 ## Obiettivo
 
@@ -141,6 +141,23 @@ ma è possibile effettuare un reboot "hard" in qualsiasi momento dal tuo [Spazio
 
 Come spiegato nella parte iniziale di questa guida, in quanto amministratore del tuo server dedicato In quanto tale, sei responsabile dei tuoi dati e della loro sicurezza. Per maggiori informazioni sulla sicurezza del tuo server, consulta la guida Mettere in sicurezza [un server dedicato](../mettere-in-sicurezza-un-server-dedicato/).
 
+### Monitoraggio OVHcloud
+
+È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). L'opzione si trova nella sezione `Stato dei servizi`.
+
+![monitoring](images/monitoring-your-server.png){.thumbnail}
+
+- Se il **Monitoraggio** è `attivo`, riceverai un'email ogni volta che il server si comporta in modo inaspettato. Puoi disattivare questi messaggi tramite il pulsante `...`{.action}.
+
+- Attivando l'opzione **Interventi in loco**, autorizzi i tecnici del datacenter a controllare l'hardware nel caso in cui il tuo server non risponda più ai ping.
+
+> [!warning]
+>
+> Se gli interventi sul sito sono attivi (il cursore è su `ON`{.action}), ti consigliamo di **disattivare** l'opzione prima di effettuare le azioni appropriate sul tuo server (test hardware, riavvio, ecc...). Riceverai sempre email automatiche finché la funzione "Monitoraggio" sarà attiva.
+>
+
+Per maggiori informazioni sul monitoraggio, consulta [questa guida](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/).
+
 ### Configurazione rete
 
 #### Modalità Bridge IP
@@ -178,7 +195,6 @@ Per maggiori informazioni, consulta la guida Utilizzare [l'IPMI sui server dedic
 I server dedicati OVHcloud includono uno spazio di storage con controllo degli accessi e vengono forniti come opzione gratuita. È preferibile utilizzarlo come opzione di backup supplementare se il server stesso dovesse subire una perdita di dati.
 
 Per attivare e utilizzare l'opzione Backup Storage, consulta [questa guida](../servizio-backup-storage/).
-
 
 ## Per saperne di più
 

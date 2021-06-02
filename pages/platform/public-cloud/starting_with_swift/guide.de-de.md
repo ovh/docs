@@ -50,7 +50,7 @@ Hier die wichtigsten Befehle im Überblick:
 |**capabilities**|Eigenschaften des Proxy auflisten.|
 |**tempurl**|Temporäre URL für ein Swift-Objekt erstellen.|
 
-Sie können die Erklärung zu einem speziellen Swift-Befehl aufrufen, indem Sie "--help" anhängen:
+Sie können die Erklärung zu einem speziellen Swift-Befehl aufrufen, indem Sie `--help` anhängen:
 
 ```
 admin@server-1:~$ swift post --help
@@ -127,7 +127,7 @@ text2.txt
 text3.txt
 ```
 
-Sie können sich mithilfe von "--prefix" alle Dateien mit einem bestimmten Präfix anzeigen lassen:
+Sie können sich mithilfe von `--prefix` alle Dateien mit einem bestimmten Präfix anzeigen lassen:
 
 ```
 admin@server-1:~$ swift list container1 --prefix images

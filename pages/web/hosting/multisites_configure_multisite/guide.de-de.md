@@ -10,7 +10,7 @@ order: 3
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 26.01.2021**
+**Letzte Aktualisierung am 28.05.2021**
 
 ## Ziel
 
@@ -21,8 +21,8 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 ## Voraussetzungen
 
 - Sie haben ein kompatibles [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
-- Sie besitzen eine oder mehrere [Domains](https://www.ovh.de/domains/){.external}.
-- Sie sind berechtigt, die Konfiguration Ihrer Domains (die DNS-Zone) zu ändern.
+- Sie besitzen eine oder mehrere [Domainnamen](https://www.ovh.de/domains/){.external}.
+- Sie sind berechtigt, die Konfiguration Ihrer Domains (die [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen)) zu ändern.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -42,7 +42,9 @@ Die angezeigte Tabelle listet alle Domains und Subdomains auf, die Ihrer Webhost
 
 ### Schritt 2: Eine Domain oder Subdomain hinzufügen
 
-Um Ihrem Webhosting eine neue Domain oder Subdomain hinzuzufügen, klicken Sie auf den Button `Domain oder Subdomain hinzufügen`{.action} und wählen Sie dann im angezeigten Fenster aus.
+Um eine neue Domain oder Subdomain zu Ihrem Webhosting hinzuzufügen, klicken Sie links auf den Button `Aktionen`{.action}, dann auf `Eine Domain oder Subdomain hinzufügen`{.action} und wählen Sie den Domainnamen im angezeigten Fenster aus.
+
+![Aktionen](images/actions-multisite-ovh.png){.thumbnail}
 
 - **Eine bei OVHcloud registrierte Domain hinzufügen**:
 
@@ -63,11 +65,12 @@ Dieser Schritt gilt nur, wenn Sie "Eine bei OVHcloud registrierte Domain hinzuf�
 
 Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [Webhosting-Angebot](https://www.ovh.de/hosting/){.external} sind manche Optionen gegebenenfalls nicht verfügbar.
 
+![multisite](images/add-multisite-step2.png){.thumbnail}
+
 |Information|Beschreibung|
 |---|---|
 |Domains|Die ausgewählte Domain wird in der Standardeinstellung automatisch angezeigt. Sie können dort eine Subdomain hinzufügen (zum Beispiel **blog**.mydomain.ovh) und gleichzeitig die zugehörige www-Subdomain erstellen (zum Beispiel **www.blog**.mydomain.ovh). Diese Domain ist die Internetadresse der Website, die Sie online stellen möchten.|
 |Wurzelverzeichnis|Legen Sie den Ordner auf Ihrem Speicherplatz fest, auf den die Domain verweist. Die Dateien der Website müssen in diesem Ordner liegen. Bei blog.mydomain.ovh zum Beispiel könnte das Wurzelverzeichnis "blog" sein. Sollte das Verzeichnis nicht existieren, wird es automatisch erstellt.|
-|IPv6 aktivieren|Hier können Sie für die angegebene Domain das IPv6-Protokoll aktivieren. Weitere Informationen hierzu finden Sie auf unserer Seite zu [IPs und Geolokalisierung](https://www.ovh.de/hosting/ip.xml){.external}.|
 |SSL|Mit SSL können Sie für die ausgewählte Domain eine verschlüsselte Verbindung (HTTPS://) einrichten. Weitere Informationen finden Sie auf unserer Seite zu [SSL-Zertifikaten](https://www.ovh.de/ssl/){.external}. Wenn Sie SSL und CDN (Content Delivery Network) aktivieren, können Sie auch das **HTTP/2**-Protokoll verwenden (letzteres ist standardmäßig in unserem Rechenzentrum in Gravelines aktiviert).|
 |CDN aktivieren|Hier können Sie für die ausgewählte Domain ein CDN aktivieren (Caching statischer Inhalte Ihrer Website, beispielsweise Bilder). Weitere Informationen finden Sie auf unserer Seite zum [Content Delivery Network](https://www.ovh.de/hosting/cdn.xml){.external}. Wenn Sie SSL und CDN aktivieren, können Sie auch das **HTTP/2**-Protokoll verwenden (letzteres ist standardmäßig in unserem Rechenzentrum in Gravelines aktiviert).|
 |IP des Landes|Bei diesem Punkt können Sie für die ausgewählte Domain eine geolokalisierte IP-Adresse aus einer Länderliste auswählen. Weitere Informationen hierzu finden Sie auf unserer Seite zu [IPs und Geolokalisierung](https://www.ovh.de/hosting/ip.xml){.external}.|
@@ -76,7 +79,7 @@ Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. Überprüfen Sie die angezeigte Zusammenfassung.
 
-![Multisite](images/add-multisite-step2.png){.thumbnail}
+![Multisite](images/add-multisite-step3.png){.thumbnail}
 
 Wenn Sie eine bei OVHcloud registrierte Domain ausgewählt haben, können Sie deren DNS-Konfiguration automatisch oder manuell ändern.
 
@@ -101,7 +104,7 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 >
 > |Feld|Wo finde ich die Information?|Durchzuführende Maßnahme|
 > |---|---|---|
-> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain ovhcontrol (z.B. ovhcontrol.mydomain.ovh) zu erstellen. Es muss nur die Hauptdomain validiert werden, die Subdomains sind nicht erforderlich. Im Fall einer Zonenübertragung muss der Eintrag in die Zone, die die externe Domain autorisiert, eingefügt werden.|
+> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain ovhcontrol (z. B. ovhcontrol.mydomain.ovh) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Um zu dieser zu gelangen, finden Sie die [DNS Server](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-konzept-verstehen), mit denen Ihre Domain verbunden ist. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
 >
 > ![Multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -157,5 +160,7 @@ Möchten Sie Ihre Website hingegen manuell installieren, tragen Sie alle zugehö
 [Bearbeiten der DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/){.external}
 
 [Eine Website auf Ihrem Webhosting online stellen](../webhosting_meine_seite_online_stellen/){.external}
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie [hier unsere Support-Angebote einsehen](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

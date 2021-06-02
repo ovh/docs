@@ -1,7 +1,7 @@
 ---
 title: ¿Cuáles son las direcciones IP monitoreo de OVHcloud?
 excerpt: Encuentre aquí las direcciones IP que debe completar al configurar un firewall para que el sistema de monitoreo de OVHcloud continúe funcionando en su servidor.
-slug: montoring-ip-ovh
+slug: monitoring-ip-ovh
 section: Red e IP
 ---
 

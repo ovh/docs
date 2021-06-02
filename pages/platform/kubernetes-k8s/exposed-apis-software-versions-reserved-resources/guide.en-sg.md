@@ -97,16 +97,14 @@ These reserved quotas may evolve in the future; the page will be updated accordi
 
 To guarantee the availability of a customer's node, the amount of reserved resources depends on the instance flavor.
 
-* **CPU** reservation is defined through this formula:
+* **CPU** reservation is defined through this formula:  
     > 15 % of 1 CPU + 0,5% of all CPU cores
 
-* **RAM** reservation is defined through this formula:
+* **RAM** reservation is defined through this formula:  
     > 1024 MB + 5% of total memory
 
-* **Storage** reservation is defined through this formula:
-    > log(total storage in GB) * 10 + 10% of total storage
-    >
-    > Note: The mathematical "log" function corresponds to "log10". For example: log(100) = 2.
+* **Storage** reservation is defined through this formula:  
+    > log10(total storage in GB) * 10 + 10% of total storage
 
 This table sums up the reserved resources on b2 flavors:
 

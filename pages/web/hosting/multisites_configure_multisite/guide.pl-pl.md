@@ -9,7 +9,7 @@ section: 'Pierwsze kroki'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 19-01-2021**
+**Ostatnia aktualizacja z dnia 27-05-2021**
 
 ## Wprowadzenie
 
@@ -21,7 +21,7 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 
 - Posiadanie kompatybilnego [hostingu OVHcloud](https://www.ovh.pl/hosting/){.external}.
 - Zarejestrowana domena lub kilka [domen](https://www.ovh.pl/domeny/){.external}.
-- Możliwość modyfikacji konfiguracji Twoich domen (strefy DNS)
+- Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns))
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
@@ -41,7 +41,9 @@ Tabela, która się wyświetla zawiera listę wszystkich domen i subdomen dodany
 
 ### Etap 2: dodanie domeny lub subdomeny
 
-Aby dodać nową domenę lub subdomenę do Twojego hostingu, kliknij przycisk `Dodaj domenę lub subdomenę`{.action}, a następnie wybierz domenę w oknie, które się wyświetli.
+Aby dodać nową domenę lub subdomenę do Twojego hostingu, kliknij przycisk `Operacje`{.action} po lewej stronie ekranu, a następnie `Dodaj domenę lub subdomenę`{.action} i wybierz domenę w oknie, które się wyświetli.
+
+![akcje](images/actions-multisite-ovh.png){.thumbnail}
 
 - **Dodaj domenę zarejestrowaną w OVHcloud**:
 
@@ -62,11 +64,12 @@ Ten etap ma zastosowanie jedynie, jeśli zaznaczyłeś opcję "Dodaj domenę zar
 
 Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego w OVH hostingu niektóre z oferowanych elementów mogą być dostępne, inne zaś nie.
 
+![MultiSite](images/add-multisite-step2.png){.thumbnail}
+
 |Informacja|Opis|
 |---|---|
 |Domena|Nazwa wybranej domeny wprowadzana jest automatycznie. Możesz dodać subdomenę (np. **blog**.mydomain.ovh) i jednocześnie utworzyć jej wersję wraz z WWW (np. **www.blog**.mydomain.ovh). Domena ta stanie się adresem strony WWW, którą chcesz umieścić w Internecie.|
 |Katalog główny|Określ folder na przestrzeni dyskowej, do której wskazuje domena. Pliki strony WWW będą musiały zostać umieszczone w Internecie. Na przykład, dla blog.mydomain.ovh katalogiem głównym może być "blog". Jeśli folder nie istnieje, zostanie automatycznie utworzony.|
-|Włącz obsługę IPv6|Umożliwia aktywację protokołu IPv6 dla danej domeny. Dowiedz się więcej na [naszej stronie IP](https://www.ovh.pl/hosting/ip.xml){.external}.|
 |SSL|Umożliwia korzystanie z bezpiecznego połączenia (HTTPS: //) z wybraną nazwą domeny. Dowiedz się więcej na [naszej stronie SSL](https://www.ovh.pl/ssl/){.external}. Aktywując SSL i CDN (Content Delivery Network), możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
 |Włącz CDN|Umożliwia aktywację CDN dla wybranej domeny (zapisywanie w pamięci podręcznej elementów statycznych Twojej strony WWW, takich jak obrazy). Dowiedz się więcej na [naszej stronie CDN](https://www.ovh.pl/hosting/cdn.xml){.external}. Aktywując SSL i CDN, możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
 |Krajowy adres IP|Umożliwia korzystanie z geolokalizowanego adresu IP (w wymienionych krajach) dla wybranej domeny. Dowiedz się więcej na [naszej stronie IP](https://www.ovh.pl/hosting/ip.xml){.external}.|
@@ -75,7 +78,7 @@ Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego 
 
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
 
-![MultiSite](images/add-multisite-step2.png){.thumbnail}
+![MultiSite](images/add-multisite-step3.png){.thumbnail}
 
 Po wybraniu domeny zarejestrowanej w OVHcloud możesz automatycznie lub ręcznie zmienić jej konfigurację DNS:
 
@@ -100,7 +103,7 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 >
 > |Pole|Gdzie znaleźć informację?|Działania|
 > |---|---|---|
-> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (np. ovhcontrol.mydomainovh). Zatwierdź tylko domenę główną, nie wszystkie subdomeny. W przypadku delegacji strefy, pole należy dodać w polu uprawniającym do dodania domeny zewnętrznej.|
+> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.mydomain.ovh) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zrozumienie-pojecia-dns), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
 >
 > ![MultiSite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -140,7 +143,7 @@ Po dodaniu domeny wystarczy umieścić w Internecie powiązaną z nią stronę W
 
 Aby wesprzeć Cię w tym procesie, możesz skorzystać z gotowej do użycia struktury strony WWW, która jest dostępna za 1 kliknięciem od OVHcloud. Strona zostanie wówczas automatycznie zainstalowana w uprzednio skonfigurowanym katalogu głównym. O modułach dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}. 
 
-Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a następnie umieść je online w odpowiednim katalogu głównym na przestrzeni dyskowej.  Dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](../hosting_www_umieszczenie_strony_w_internecie/){.external}.
+Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a następnie umieść je online w odpowiednim katalogu głównym na przestrzeni dyskowej. Dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](../hosting_www_umieszczenie_strony_w_internecie/){.external}.
 
 > [!primary]
 >
@@ -153,8 +156,10 @@ Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a nast
 
 [Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}
 
-[Modyfikacja strefy DNS ](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}
+[Modyfikacja strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}
 
 [Uruchomienie strony WWW na Twoim hostingu](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external}
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

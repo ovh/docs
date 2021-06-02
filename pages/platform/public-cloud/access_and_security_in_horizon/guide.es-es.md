@@ -1,44 +1,61 @@
 ---
-title: Acceso y seguridad en Horizon
-excerpt: Esta guía explica cómo acceder a las instancias y cómo protegerlas.
+title: Parámetros de acceso y seguridad en Horizon
+excerpt: Cómo gestionar y proteger el acceso a sus instancias
 slug: acceso_y_seguridad_en_horizon
 legacy_guide_number: g1774
 section: Horizon
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 26 de mayo de 2021**
+
 ## Objetivo
 
-OpenStack Horizon pone a su disposición un menú desde el que podrá configurar diferentes elementos relativos al acceso a las instancias, entre otros servicios. Puede, por ejemplo, configurar grupos de seguridad que garanticen el filtro de las conexiones entrantes y salientes de las instancias, o incluso descargar el archivo OpenRC con sus claves para poder utilizar las API de OpenStack.
-Esta guía explica cómo acceder a dicho menú.
+La interfaz OpenStack Horizon ofrece opciones para configurar el acceso a sus instancias y a otros servicios.<br>
+Por ejemplo, puede configurar grupos de seguridad para filtrar las conexiones entrantes y salientes o descargar el archivo OpenRC que contiene sus claves para utilizar las API OpenStack.
+
+**Cómo gestionar y proteger el acceso a sus instancias**
 
 ## Requisitos
 
-- [Crear un acceso a Horizon](../crear_un_acceso_a_horizon/)
+- [Conectarse a Horizon](../crear_un_acceso_a_horizon/)
 
 ## Procedimiento
 
-- Conéctese a [Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Conéctese a [Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
-- En el menú izquierdo, haga clic en «Acceso y seguridad».
+Los parámetros de acceso y seguridad se componen de las siguientes secciones, disponibles a través del menú de la izquierda:
 
-Grupos de seguridad
+- **API Access** (en `Project`{.action})
 
-Desde esta pestaña podrá administrar las reglas de seguridad y de acceso a las instancias, en concreto limitando el acceso a determinados puertos.
+La tabla de acceso a la API enumera los puntos de las API OpenStack.
 
-![Horizon](images/img_2630.jpg){.thumbnail}
+![horizon - acceso a la API](images/api_access.png){.thumbnail}
 
-Pares de claves
+Para comprobar los valores de acceso a utilizar con las API, haga clic en `View Credentials`{.action}.
 
-Esta pestaña permite gestionar las claves SSH de dos formas distintas:
+Haga clic en el botón `Download OpenStack RC File`{.action} para abrir un menú desplegable en el que puede elegir el archivo RC apropiado para descargar.
 
-- «Crear par de claves»: Asigne un nombre a la clave. Su navegador la descargará o le propondrá descargarla.
-- «Importar par de claves»: Desde aquí podrá importar una clave pública existente.
+- **Key Pairs** (bajo `Project`{.action} y luego `Compute`{.action})
 
-Acceso a la API
+Esta sección permite almacenar y gestionar pares de claves SSH. Simplemente puede crear y añadir una clave pública y privada haciendo clic en el botón `Create Key Pair`{.action}.
 
-Muestra la información relacionada con la API y permite descargar el archivo openrc.sh para utilizar la API de OpenStack.
+![horizon - llaves SSH](images/key_pairs.png){.thumbnail}
 
-![Horizon](images/img_2632.jpg){.thumbnail}
+Si desea añadir una llave preexistente, haga clic en `Importar Public Key`{.action}. Se abrirá una ventana en la que podrá introducir una clave o seleccionar un archivo de claves.
+
+Esta sección de la interfaz contiene instrucciones básicas. Para más información sobre las llaves SSH, consulte [esta guía](../crear-llave-ssh/).
+
+- **Security Groups** (bajo `Project`{.action} y luego `Network`{.action})
+
+Los grupos de seguridad son conjuntos de reglas de filtrado que se aplican a las interfaces de red. Los puede utilizar para restringir el acceso a las instancias a direcciones IP y puertos.
+
+![horizon - grupos de seguridad](images/security_groups.png){.thumbnail}
+
+Añada un grupo de seguridad haciendo clic en `Create Security Group`{.action} y aplicándole las reglas personalizadas o predefinidas en la tabla con el botón `Manage Rules`{.action}.
 
 ## Más información
 

@@ -9,7 +9,7 @@ section: Introdução
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em “Contribuir” nesta página.
 >
 
-**Última atualização: 16/02/2021**
+**Última atualização: 28/05/2021**
 
 ## Objetivo
 
@@ -139,6 +139,23 @@ No entanto, pode efetuar um "hard reboot" a qualquer momento na sua [Área de Cl
 ### Segurança do seu servidor dedicado
 
 Como explicado acima, o cliente é o administrador do seu servidor dedicado. Enquanto tal, é responsável pelos seus dados e pela sua segurança. Para saber mais sobre a segurança do seu servidor, consulte o nosso guia [Proteger um servidor dedicado](../proteger-um-servidor-dedicado/).
+
+### Monitorização OVHcloud
+
+Pode ativar ou desativar o monitoring de um servidor dedicado a partir do separador `Informações gerais`{.action} da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A opção situa - se na secção `Estado dos serviços`.
+
+![monitoring](images/monitoring-your-server.png){.thumbnail}
+
+- Se a **Monitorização** estiver `Ativado`, será alertado por e-mail cada vez que o servidor agir de forma inesperada. Pode desativar estas mensagens através do botão `...`{.action}.
+
+- Se ativar a opção **Intervenções no local**, autoriza os técnicos do datacenter a controlar o hardware caso o seu servidor deixe de responder aos pings.
+
+> [!warning]
+>
+> Se as intervenções no local estiverem ativadas (o cursor está no `On`{.action}, queira **desativar** a opção antes de efetuar as ações adequadas no seu servidor (testes materiais, reinicializações, etc.). Receberá sempre e-mails automáticos enquanto a função "Monitoring" estiver ativa.
+>
+
+Para mais informações sobre o sistema de monitorização, consulte [este manual](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/).
 
 ### Configuração de rede
 
