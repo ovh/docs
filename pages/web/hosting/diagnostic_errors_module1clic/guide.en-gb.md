@@ -88,19 +88,19 @@ After creating your module, you received an email stating that your module’s c
 
 This message means that the **Root folder** your domain is linked to within your FTP server contains at least one file or folder.
 
-To link your domain to another directory, click `Change domain`{.action} in the `Multisite`{.action} tab, then enter the name of a new **Root folder** (an empty directory will be created automatically on your hosting).
+To link your domain to another directory, click on `Modify domain`{.action} in the `Multisite`{.action} tab, then enter the name of a new **Root folder** (an empty directory will be created automatically on your web hosting).
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
-You can also log in to your hosting plan via [FTP](../connexion-espace-stockage-ftp-hebergement-web/), then delete or move the folder contents after you have saved it.
+You can also log in to your hosting plan via [FTP](../connexion-espace-stockage-ftp-hebergement-web/), then delete or move the folder content after backing it up.
 
 ### “Unable to connect to database“ <a name="deleteModule"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
-After you launched your module installation in advanced mode, you received an email stating that your module cannot connect to the specified database. 
+After you launched your module installation in advanced mode, you received an e-mail stating that your module cannot connect to the specified database. 
 
-You will need to check your database credentials. To find them, please read our [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
+First check your database credentials. To find them, please read our [FAQ](https://www.ovh.co.uk/web-hosting/faq/).
 
 Then delete your module via the 1-click `modules tab`{.action}:
 
@@ -116,31 +116,27 @@ Click the `Multisite`{.action} tab, and then perform the following checks:
 
 |Scenario|What to do|
 |---|---|
-|The domain or subdomain linked to the website you want to create does not appear in the `Multisite`{.action}.|Add your domain by following [these guidelines](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
-|The domain name has been deleted from the multisite without any action on your part.|If your domain or its DNS [zone](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) are not managed from your OVHcloud account, add your domain to the `Multisite`{.action} by following [this guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
+|The domain or subdomain linked to the website you want to create does not appear in the `Multisite`{.action}.|Add your domain by following [this page](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).|
+|The domain name has been deleted from the `Multisite`{.action} without any action on your side.|If your domain or its [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) are not managed on your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), follow this [guide](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain)add your domain name to the `Multisite`{.action}.|
 
 ### Your module will appear on a web address such as “xxxxx.cluster0xx.hosting.ovh.net”
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
-Once you have made all the necessary backups, [delete your module](#supprimer-le-module), then its [database](#supprimer-la-base). Then try installing it again on the domain name you want.
+Back up the actual **1-click modules** and its **Database**, if necessary. Then, [delete your module](#deleteModule), then its [database](#deleteDB) and create a new module on the right `Domain name`.
 
 ### Your old website will still appear
 
 This anomaly can have several causes: 
 
-- You have recently changed your [DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) zone or servers, or [transferred your domain](../../domains/transferer-mon-domaine-generique/) name. Wait until these operations are complete (48 hours for changes to your DNS). Also remember to restart your devices (PC, smartphone, box, etc.) and clear your browser’s cache.
+- You have recently changed your [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) or servers, or [transferred your domain name](../../domains/domain_transfer.xml). Wait until these operations are complete (48 hours for changes on your `DNS servers`). Restart your devices regularly (PC, smartphone, box, etc.) and refresh your web browser’s cache.
 
-- Your domain name is still linked to your old hosting plan. In this case, edit your DNS [Zone](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) or DNS [servers](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), or contact your old hosting provider to do so.
+- Your domain name is still linked to your old hosting plan. In this case, edit your [DNS Zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone_1) or [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/#modifying-dns-servers), or contact your old hosting provider to do so.
 
 ## Go further <a name="#gofurther"></a>
 
-[How to diagnose a blank page?](../comment-diagnostiquer-page-blanche/)
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/fr/)
 
-[HTTP server reply codes](../mutualise-les-codes-de-reponse-dun-serveur-http/)
+If you would like assistance using and configuring your OVHcloud solutions, please check our [support offers](https://www.ovhcloud.com/fr/support-levels/).
 
-For specialised services (SEO, development, etc.), contact OVHcloud [partners](https://partner.ovhcloud.com/fr/)
-
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/fr/support-levels/).
-
-Join our community of users on <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.
