@@ -5,7 +5,7 @@ section: Domains
 order: 7
 ---
 
-**Last updated 11th May 2021**
+**Last updated 2nd June 2021**
 
 
 ## Objective  
@@ -19,7 +19,7 @@ Configuring custom domains on Web PaaS is a simple two or three step process. Yo
 
 ## 2. (CDN version) Configure your DNS provider
 
-If you are serving the site through a CDN, configure your DNS provider to point at your CDN account.  The address or CNAME to set for that will vary with the CDN provider.  Refer to their documentation or to the [CDN guide](../domains-cdn).
+If you are serving the site through a CDN, configure your DNS provider to point at your CDN account.  The address or CNAME to set for that will vary with the CDN provider.
 
 ## 2. (Non-CDN version) Configure your DNS provider
 
