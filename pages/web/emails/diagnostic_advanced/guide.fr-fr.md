@@ -2,7 +2,7 @@
 title: 'Envoi ou réception impossible des e-mails'
 slug: utilisation-avancee-des-e-mails
 legacy_guide_number: 2117
-excerpt: 'Découvrez comment réagir en cas de dysfonctionnement à l'envoi ou la réception des e-mails chez OVHcloud.'
+excerpt: "Découvrez comment réagir en cas de dysfonctionnement à l'envoi ou la réception des e-mails chez OVHcloud"
 section: 'Diagnostic'
 order: 9
 ---
