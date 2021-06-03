@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 11th May 2021**
+**Last updated 3rd June 2021**
 
 
 ## Objective  
@@ -114,7 +114,9 @@ Note that there will still be an Nginx proxy server sitting in front of your app
 Web PaaS offers a project templates for Go applications using the structure described above.  It can be used as a starting point or reference for building your own website or web application.
 
 
-### Hugo  
+### Hugo 
+
+![image](images/hugo.png)
 
 <p>This template provides a basic Hugo skeleton.  All files are generated at build time, so at runtime only static files need to be served.  The Hugo executable itself is downloaded during the build hook. You can specify the version to use by updating the `.platform.app.yaml` file.  It also includes a minimal template to get you started, but you are free to replace it with your own template.</p>
 <p>Hugo is a static site generator written in Go, using Go's native template packages for formatting.</p>
@@ -126,7 +128,9 @@ Web PaaS offers a project templates for Go applications using the structure desc
  
 [View the repository](https://github.com/platformsh-templates/hugo) on GitHub.
 
-### Basic Go  
+### Basic Go 
+
+![image](images/BasicGo.png)
 
 <p>This template provides the most basic configuration for running a custom Go project using Go modules.  It demonstrates the Web PaaS `config-reader` library and connecting to a MariaDB instance.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.</p>
 <p>Go is a statically typed, compiled language with an emphasis on easy concurrency and network services.</p>
@@ -139,7 +143,9 @@ Web PaaS offers a project templates for Go applications using the structure desc
  
 [View the repository](https://github.com/platformsh-templates/golang) on GitHub.
 
-### Beego  
+### Beego 
+
+![image](images/beego.png)
 
 <p>This template demonstrates building the Beego framework for Web PaaS using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Beego is a popular web framework written in Go.</p>
@@ -152,7 +158,9 @@ Web PaaS offers a project templates for Go applications using the structure desc
  
 [View the repository](https://github.com/platformsh-templates/beego) on GitHub.
 
-### Echo  
+### Echo 
+
+![image](images/BasicGo.png)
 
 <p>This template demonstrates building the Echo framework for Web PaaS using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Echo is a lightweight, minimalist web framework written in Go.</p>
@@ -165,7 +173,9 @@ Web PaaS offers a project templates for Go applications using the structure desc
  
 [View the repository](https://github.com/platformsh-templates/echo) on GitHub.
 
-### Gin  
+### Gin 
+
+![image](images/gin.png)
 
 <p>This template demonstrates building the Gin framework for Web PaaS using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Gin is a lightweight web framework written in Go that emphasizes performance.</p>

@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 26th February 2021**
+**Last updated 3rd June 2021**
 
 
 ## Objective  
@@ -95,7 +95,9 @@ web:
 Web PaaS offers project templates for .NET Core applications using the structure described above.  They can be used as a starting point or reference for building your own website or web application.
 
 
-### ASP.NET Core  
+### ASP.NET Core 
+
+![image](images/aspnet-core.png)
 
 <p>This template deploys the ASP.NET Core framework. It includes a minimalist application skeleton for demonstration, but you are free to alter it as needed.  It includes demonstration-level connections for MariaDB and a Redis cache server.</p>
 <p>ASP.NET Core is an open-source and cross-platform .NET framework for building modern cloud-based web applications.</p>
