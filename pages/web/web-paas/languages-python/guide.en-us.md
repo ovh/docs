@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 31st March 2021**
+**Last updated 3rd June 2021**
 
 
 ## Objective  
@@ -213,7 +213,9 @@ To access various [services](../configuration-services) with Python, see the fol
 A number of project templates for Python applications are available on GitHub.  Not all of them are proactively maintained but all can be used as a starting point or reference for building your own website or web application.
 
 
-### Django 2  
+### Django 2 
+
+![image](images/django2.png)
 
 <p>This template deploys the Django 2 application framework on Web PaaS, using the gunicorn application runner.  It also includes a PostgreSQL database connection pre-configured.</p>
 <p>New projects should be built using Django 3, but this project is a reference for existing migrating sites.  Version 2 is in legacy support.</p>
@@ -226,7 +228,9 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/django2) on GitHub.
 
-### Python 3 running UWSGI  
+### Python 3 running UWSGI 
+
+![image](images/python.png)
 
 <p>This template provides the most basic configuration for running a custom Python 3.7 project.  It includes the `platformshconfig` package and demonstrates using it to connect to MariaDB and Redis.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.  The application runs through the UWSGI runner.</p>
 <p>Python is a general purpose scripting language often used in web development.</p>
@@ -240,7 +244,9 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/python3-uwsgi) on GitHub.
 
-### Wagtail  
+### Wagtail 
+
+![image](images/wagtail.png)
 
 <p>This template builds the Wagtail CMS on Web PaaS, using the gunicorn application runner.  It includes a PostgreSQL database that is configured automatically, and a basic demonstration app that shows how to use it.  It is intended for you to use as a starting point and modify for your own needs.  You will need to run the command line installation process by logging into the project over SSH after the first deploy.</p>
 <p>Wagtail is a web CMS built using the Django framework for Python.</p>
@@ -253,7 +259,9 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/wagtail) on GitHub.
 
-### Flask  
+### Flask 
+
+![image](images/flask.png)
 
 <p>This template demonstrates building the Flask framework for Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage and Redis for caching.  The application starts as a bare Python process with no separate runner.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Flask is a lightweight web microframework for Python.</p>
@@ -267,7 +275,9 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/flask) on GitHub.
 
-### Django 3  
+### Django 3 
+
+![image](images/django2.png)
 
 <p>This template deploys the Django 3 application framework on Web PaaS, using the gunicorn application runner.  It also includes a PostgreSQL database connection pre-configured.</p>
 <p>Django is a Python-based web application framework with a built-in ORM.</p>
@@ -280,7 +290,9 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/django3) on GitHub.
 
-### Basic Python 3  
+### Basic Python 3 
+
+![image](images/basicpython3.png)
 
 <p>This template provides the most basic configuration for running a custom Python 3.7 project.  It includes the `platformshconfig` package and demonstrates using it to connect to MariaDB and Redis.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.  The application starts as a bare Python process with no separate runner.</p>
 <p>Python is a general purpose scripting language often used in web development.</p>
@@ -294,7 +306,9 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/python3) on GitHub.
 
-### Pyramid  
+### Pyramid 
+
+![image](images/pyramid.png)
 
 <p>This template builds Pyramid on Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage and Redis for caching.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Pyramid is a web framework written in Python.</p>
@@ -308,7 +322,9 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/pyramid) on GitHub.
 
-### Pelican  
+### Pelican 
+
+![image](images/pelican.png)
 
 <p>This template provides a basic Pelican skeleton.  Only content files need to be committed, as Pelican itself is downloaded at build time via the Pipfile.  All files are generated at build time, so at runtime only static files need to be served.</p>
 <p>Pelican is a static site generator written in Python and using Jinja for templating.</p>
