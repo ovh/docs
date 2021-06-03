@@ -2,7 +2,7 @@
 title: "Utilisation du diagnostic d'erreurs Exchange"
 slug: exchange-que-verifier-lors-dun-probleme-denvoi-ou-de-reception
 legacy_guide_number: 2277
-excerpt: 'Découvrez comment réaliser des diagnosctics automatisés des erreurs sur les comptes Exchange'
+excerpt: 'Découvrez comment réaliser un diagnostic automatisé des erreurs sur les comptes Exchange'
 section: 'Diagnostic Exchange'
 order: 1
 ---
@@ -11,7 +11,7 @@ order: 1
 
 ## Objectif
 
-Les erreurs sur les comptes e-mail Exchange peuvent avoir une multitude de causes possibles. Une vérification automatique des fonctionnalités du compte permet de réduire ce nombre de causes. Les résultats de ces tests seront également utiles en cas de demande d'assistance concernant votre service Exchange
+Les erreurs sur les comptes e-mail Exchange peuvent avoir une multitude de causes possibles. Un diagnostic automatique des fonctionnalités du compte permet de réduire ce nombre de causes. Les résultats de ces tests seront également utiles en cas de demande d'assistance concernant votre service Exchange.
 
 **Découvrez comment lancer un diagnostic Exchange et en interpréter les résultats.**
 
