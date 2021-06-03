@@ -1,49 +1,49 @@
 ---
-title: Pierwsze kroki z zarządzaniem wolumenami w API Openstack
-slug: pierwsze-wolumeny-api-openstack
+title: "Começar com a gestão dos volumes na API OpenStack"
+slug: debuter-avec-volumes-api-openstack
 legacy_guide_number: 2071
-section: Zarządzanie w OpenStack CLI
-order: 6
+section: OpenStack
+order: 7
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Ostatnia aktualizacja z dnia 19-05-2021**
+**Última atualização: 19/05/2021**
 
-## Wprowadzenie
+## Objetivo
 
-Aby zautomatyzować Twoje operacje w infrastrukturze Public Cloud, możesz użyć interfejsu API OpenStack do tworzenia różnych skryptów.
-<br>Możesz na przykład utworzyć nowy wolumen typu "wysoka wydajność" i przypisać go do instancji Public Cloud.
+De forma a automatizar as suas operações no Public Cloud, é possível utilizar as API OpenStack para gerar diferentes scripts.
+<br>Poderá, por exemplo, criar um novo volume do tipo "alto desempenho" para o associar a uma instância Public Cloud.
 
-**Niniejszy przewodnik pomoże Ci w korzystaniu z API OpenStack w zarządzaniu wolumenami za pomocą klienta Python OpenStack.**
+**Este guia ajudá-lo-á a gerir as API OpenStack para gerir os seus volumes com a ajuda do cliente Python OpenStack.**
 
-## Wymagania początkowe
+## Requisitos
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](../przygotowanie_srodowiska_dla_api_openstack/) poprzez instalację Python-cinderclient oraz python-novaclient
-- [Pobranie zmiennych środowiskowych OpenStack](../zmienne-srodowiskowe-openstack/)
+- [Preparar o ambiente para utilizar a API OpenStack](../preparar_o_ambiente_para_utilizar_a_api_openstack/) instalando pithon-cinderclient e python-novaclient
+- [Carregar as variáveis de ambiente OpenStack](../carregar-as-variaveis-de-ambiente-openstack/)
 
-## W praktyce
+## Instruções
 
-### Dokumentacja Cinder
+### Documentação Cinder
 
-Możesz otrzymać listę możliwych zamówień, czytając dokumentację klienta OpenStack:
+Pode obter a lista dos comandos possíveis lendo a documentação do cliente OpenStack:
 
 ```bash
 admin@server-1:~$ openstack help
 ```
 
-Oto lista głównych zamówień:
+Eis a lista dos comandos principais:
 
-|Zamówienie|Opis|
+|Comando|Descrição|
 |---|---|
-|wolumen create|Stwórz nowy wolumen|
-|objętość|Usuń wolumen|
-|wolumen|Lista wolumenów|
-|wolumen snapshot create|Stwórz snapshot wolumenu|
+|volume creme|Criar um novo volume|
+|volume delete|Eliminar um volume|
+|volume list|Lista dos volumes|
+|volume snapshot create|Criar uma snapshot de um volume|
 
-Możesz również uzyskać informacje dotyczące konkretnego zamówienia, dodając `help` przed nim:
+Também pode obter informações sobre uma encomenda específica adicionando `help` a esta:
 
 ```bash
 admin@server-1:~$ openstack help volume snapshot create
@@ -66,14 +66,14 @@ optional arguments:
 
 > [!primary]
 >
-> Możesz również zapoznać się z dokumentacją klienta Openstack bezpośrednio na [stronie OpenStack](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Também pode consultar a documentação do cliente Openstack diretamente [no site OpenStack](https://docs.openstack.org/python-openstackclient/latest/){.external}.
 > 
 
-### Operacje podstawowe
+### Operações básicas
 
-#### Utwórz wolumen o wysokiej wydajności
+#### Criar um volume de alta performance
 
-- Wyświetl rodzaje wolumenów:
+- Listar os tipos de volumes: 
 
 ```bash
 admin@server-1:~$ openstack volume type list
@@ -85,7 +85,7 @@ admin@server-1:~$ openstack volume type list
 +--------------------------------------+------------+-----------+
 ```
 
-- Utwórz wolumen typu high-speed 10GB o nazwie Volume1:
+- Criar o volume do tipo high-speed de 10GB chamado volume1:
 
 ``` bash
 admin@server-1:~$ openstack volume create --type high-speed --size 10 volume1
@@ -115,7 +115,7 @@ admin@server-1:~$ openstack volume create --type high-speed --size 10 volume1
 +---------------------+--------------------------------------+
 ```
 
-Możesz zainstalować obraz na woluminie za pomocą argumentu `--image`:
+Pode instalar uma imagem num volume com a ajuda do argumento `--image`:
 
 ```bash
 admin@server-1:~$ openstack volume create --type high-speed --image be66762f-b849-43e1-b57c-005d9fe28088 --size 20 volume_debian
@@ -144,14 +144,14 @@ admin@server-1:~$ openstack volume create --type high-speed --image be66762f-b84
 +---------------------+--------------------------------------+
 ```
 
-Gdzie **be66762f-b849-43e1-b57c-005d9fe2808** odpowiada ID obrazu Debiana 10.
+Onde **be66762f-b849-43e1-b57c-005d9fe28088** corresponde ao ID da imagem Debian 10.
 
-#### Przypisz wolumen do instancji
+#### Associar um volume a uma instância
 
-- Wyświetl dodatkowe wolumeny:
+- Listar os volumes adicionais:
 
 ```bash
-admin@serveur-1:~$ openstack volume list
+admin@server-1:~$ openstack volume list
 +--------------------------------------+---------------+-----------+------+-------------+
 | ID                                   | Name          | Status    | Size | Attached to |
 +--------------------------------------+---------------+-----------+------+-------------+
@@ -162,16 +162,16 @@ admin@serveur-1:~$ openstack volume list
 
 > [!primary]
 >
-> Większość poniższych poleceń wymaga podania identyfikatora wolumenu zamiast jego nazwy.
->
+> A maioria dos comandos seguintes exigirá que indique o ID do volume em vez do seu nome.
+> 
 
-- Montowanie wolumenu na instancji z klientem Openstack:
+- Montar o volume numa instância com o cliente Openstack:
 
 ```bash
-admin@serveur-1:~$ openstack server add volume 46aec29f-fe50-4562-b3f9-2e6665a7270d f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
+admin@server-1:~$ openstack server add volume 46aec29f-fe50-4562-b3f9-2e6665a7270d f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 ```
 
-- Sprawdź, czy wolumen do instancji jest prawidłowo przypisany do klienta OpenStack:
+- Verificar a ligação correta do volume à instância com o cliente OpenStack:
 
 ```bash
 admin@server-1:~$ openstack volume list
@@ -183,20 +183,20 @@ admin@server-1:~$ openstack volume list
 +--------------------------------------+---------------+-----------+------+-----------------------------------------+
 ```
 
-#### Usuwanie wolumenu
+#### Eliminação de um volume
 
-- Odłącz wolumen od instancji:
+- Desassociar o volume da instância:
 
 ```bash
 admin@server-1:~$ openstack server remove volume 46aec29f-fe50-4562-b3f9-2e6665a7270d f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 ```
 
-- Usuń wolumen:
+- Eliminar o volume:
 
 ```bash
 admin@server-1:~$ openstack volume delete f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 ```
 
-## Sprawdź również
+## Saiba mais
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
