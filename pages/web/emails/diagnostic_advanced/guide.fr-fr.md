@@ -28,7 +28,7 @@ Pour que vos e-mails soient fonctionnels, vous devez posséder une offre e-mail 
 - **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action} dans la colonne de gauche, puis selectionner votre plateforme. Cliquez sur `Comptes e-mail`{.action}, dans la colonne `Statut` vous avez l'état du compte e-mail concerné.
 - **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis cliquez sur `Exchange`{.action} et selectionner votre plateforme. Cliquez sur `Comptes e-mail`{.action}, dans la colonne `Statut` vous avez l'état du compte e-mail concerné.
 
-### Je ne parvient pas à envoyer d'e-mails depuis mon logiciel de messagerie?
+### Je ne parviens pas à envoyer d'e-mails depuis mon logiciel de messagerie?
 
 Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail de Mac, Thunderbird, etc.) ou votre smartphone (iOS, Android, etc.), et que vous rencontrez un dysfonctionnement à l'envoi ou à la réception. Vérifiez les paramètres de configuration selon votre offre e-mail et le logiciel de messsagerie ou application utilisé.
 
