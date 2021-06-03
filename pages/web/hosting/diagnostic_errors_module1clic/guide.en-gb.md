@@ -9,7 +9,7 @@ section: Diagnostics
 
 ## Objective
 
-Creating a 1-click [Module](../web_hosting_web_hosting_modules/) in single or advanced mode can cause various anomalies.
+Creating a [1-click Module](../web_hosting_web_hosting_modules/) in single or advanced mode can cause various anomalies.
 
 **This guides explains how to diagnose the most common cases of errors when creating 1-click modules**
 
@@ -33,11 +33,11 @@ Creating a 1-click [Module](../web_hosting_web_hosting_modules/) in single or ad
 > The most common errors are listed here. If you experience any other anomaly, please refer to our [Web Hosting FAQ](../web-hosting-faq/).
 >
 
-### \`An error has occurred loading the information. (You need at least one free database)
+### “An error has occurred loading the information. (You need at least one free database)“
 
 ![1freeDB](images/1freeDB.png){.thumbnail}
 
-This message might appear when you try to create a new module. It means that a new database can't be created on your web hosting. A 1 click module needing its own database, the following solutions might be considered :
+This message might appear when you try to create a new module. It means that a new database can't be created on your web hosting. A 1-click module needing its own database, the following solutions might be considered :
 
 #### Solution 1: change your hosting plan
 
