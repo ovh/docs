@@ -1,8 +1,8 @@
 ---
-title: "Utilisation des diagnostics d'erreur Exchange"
+title: "Utilisation du diagnostic d'erreurs Exchange"
 slug: exchange-que-verifier-lors-dun-probleme-denvoi-ou-de-reception
 legacy_guide_number: 2277
-excerpt: 'Découvrez comment exécuter des vérifications automatisées des erreurs sur les comptes Exchange'
+excerpt: 'Découvrez comment réaliser des diagnosctics automatisés des erreurs sur les comptes Exchange'
 section: 'Diagnostic Exchange'
 order: 1
 ---
