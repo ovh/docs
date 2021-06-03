@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 11th May 2021**
+**Last updated 3rd June 2021**
 
 
 ## Supported versions
@@ -255,7 +255,9 @@ runtime:
 A number of project templates for major PHP applications are available on GitHub. Not all of them are proactively maintained but all can be used as a starting point or reference for building your own website or web application.
 
 
-### Gatsby with Drupal  
+### Gatsby with Drupal 
+
+![image](images/gatsby.png)
 
 <p>This template builds a two-application project to deploy the Headless CMS pattern using Gatsby as its frontend and Drupal for its backend. The <code>gatsby-source-drupal</code> source plugin is used to pull data from Drupal during the <code>post_deploy</code> hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Note that after you have completed the Drupal installation and included a few articles, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
@@ -274,7 +276,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/gatsby-drupal) on GitHub.
 
-### Gatsby with Wordpress  
+### Gatsby with Wordpress 
+
+![image](images/gatsby.png)
 
 <p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Note that after you have completed the Wordpress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
@@ -292,7 +296,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/gatsby-wordpress) on GitHub.
 
-### Drupal 9  
+### Drupal 9 
+
+![image](images/drupal8.png)
 
 <p>This template builds Drupal 9 using the "Drupal Recommended" Composer project.  It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
 <p>Drupal is a flexible and extensible PHP-based CMS framework.</p>
@@ -307,7 +313,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/drupal9) on GitHub.
 
-### Drupal 8 Multisite  
+### Drupal 8 Multisite 
+
+![image](images/drupal8.png)
 
 <p>This template builds Drupal 8 in a multisite configuration using the "Drupal Recommended" Composer project.  It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
 <p>It also includes instructions and a script to help with setting up additional multisite instances, although depending on your particular needs it may require some customization.</p>
@@ -324,7 +332,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/drupal8-multisite) on GitHub.
 
-### GovCMS 8  
+### GovCMS 8 
+
+![image](images/drupal8.png)
 
 <p>This template builds the Australian government's GovCMS Drupal 8 distribution using the Drupal Composer project for better flexibility.  It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
 <p>GovCMS is a Drupal distribution built for the Australian government, and includes configuration optimized for managing government websites.</p>
@@ -339,7 +349,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/drupal8-govcms8) on GitHub.
 
-### Drupal 8  
+### Drupal 8 
+
+![image](images/drupal8.png)
 
 <p>This template builds Drupal 8 using the "Drupal Recommended" Composer project.  It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
 <p>Drupal is a flexible and extensible PHP-based CMS framework.</p>
@@ -353,7 +365,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/drupal8) on GitHub.
 
-### Backdrop  
+### Backdrop 
+
+![image](images/backdrop.png)
 
 <p>This template deploys a Backdrop CMS site, with the entire site committed to Git.  It comes configured for MariaDB, the most popular database used with Backdrop.  It supports a quick web installation to configure the site.</p>
 <p>Backdrop is a PHP-based CMS, originally forked from Drupal 7.</p>
@@ -366,7 +380,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/backdrop) on GitHub.
 
-### Magento 2 Community Edition  
+### Magento 2 Community Edition 
+
+![image](images/magento2.png)
 
 <p>This template builds Magento 2 CE on Web PaaS.  It includes additional scripts to customize Magento to run effectively in a build-and-deploy environment.  A MariaDB database and Redis cache server come pre-configured and work out of the box.  The installer has been modified to not ask for database information.  Background workers are run using a worker container rather than via cron.</p>
 <p>Magento is a fully integrated ecommerce system and web store written in PHP.  This is the Open Source version.</p>
@@ -381,7 +397,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/magento2ce) on GitHub.
 
-### Symfony 4  
+### Symfony 4 
+
+![image](images/symfony3.png)
 
 <p>This template provides a basic Symfony 4 skeleton.  It comes pre-configured to use a MariaDB database using a Symfony-specific bridge library that runs during Composer autoload.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>It is configured for Production mode by default, so the usual Symfony "welcome" page will not appear.  Instead, you will see a 404 page after the site first deploys, which is normal.  You may switch it into dev mode via `.platform.app.yaml` if desired.</p>
@@ -396,7 +414,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/symfony4) on GitHub.
 
-### Pimcore  
+### Pimcore 
+
+![image](images/pimcore.png)
 
 <p>This template builds Pimcore 5 on Web PaaS.  It comes pre-installed with a MariaDB database connecting through Doctrine and Redis for caching via a custom configuration file.  It will self-install on the first deploy.</p>
 <p>Pimcore is a Symfony-based Digital Experience Platform.</p>
@@ -410,7 +430,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/pimcore) on GitHub.
 
-### TYPO3  
+### TYPO3 
+
+![image](images/typo3.png)
 
 <p>This template builds the TYPO3 CMS for Web PaaS.  It comes pre-configured with MariaDB for storage and Redis for caching.  A command line installer will automatically initialize the site on first deploy.</p>
 <p>TYPO3 is a PHP-based Content Management System</p>
@@ -424,7 +446,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/typo3) on GitHub.
 
-### Symfony 3  
+### Symfony 3 
+
+![image](images/symfony3.png)
 
 <p>This template provides a basic Symfony 3 skeleton.  It comes pre-configured to use a MariaDB database via a custom config file.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>It is configured for Production mode by default, so the usual Symfony "welcome" page will not appear.  Instead, you will see a 404 page after the site first deploys, which is normal.  You may switch it into dev mode via `.platform.app.yaml` if desired.</p>
@@ -439,7 +463,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/symfony3) on GitHub.
 
-### Symfony 5  
+### Symfony 5 
+
+![image](images/symfony3.png)
 
 <p>This template provides a basic Symfony 5 skeleton.  It comes pre-configured to use a MariaDB database using a Symfony-specific bridge library that runs during Composer autoload.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>It is configured for Production mode by default, so the usual Symfony "welcome" page will not appear.  Instead, you will see a 404 page after the site first deploys, which is normal.  You may switch it into dev mode via `.platform.app.yaml` if desired.</p>
@@ -453,7 +479,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/symfony5) on GitHub.
 
-### Opigno  
+### Opigno 
+
+![image](images/opigno.png)
 
 <p>This template builds the Opigno Drupal 8 distribution using the [Drupal Composer project](https://github.com/drupal-composer/drupal-project) for better flexibility.  It also includes configuration to use Redis for caching, although that must be enabled post-install in `.platform.app.yaml`.</p>
 <p>Opigno is a Learning Management system built as a Drupal distribution.</p>
@@ -468,7 +496,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/drupal8-opigno) on GitHub.
 
-### Nextcloud  
+### Nextcloud 
+
+![image](images/nextcloud.png)
 
 <p>This template builds Nextcloud on Web PaaS.  Nextcloud itself is downloaded on the fly during the build step, and pre-configured for use with MariaDB and Redis.  Add-on applications can be provided in a separate directory and will be merged into Nextcloud automatically during build.  (Self-update through the web interface is not supported.)</p>
 <p>The admin user is created automatically during the first deploy, and its name and password will be available in the deploy log.  Be sure to check for it there so you can log in.</p>
@@ -483,7 +513,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/nextcloud) on GitHub.
 
-### Mautic  
+### Mautic 
+
+![image](images/mautic.png)
 
 <p>This template provides a basic Mautic installation.  It includes MariaDB for storage, which will be auto-selected during the installer.  It also includes a RabbitMQ queue server that may be enabled manually post-install.</p>
 <p>Mautic is an Open Source marketing automation tool built on Symfony. </p>
@@ -497,7 +529,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/mautic) on GitHub.
 
-### Laravel  
+### Laravel 
+
+![image](images/laravel.png)
 
 <p>This template provides a basic Laravel skeleton.  It comes pre-configured to use a MariaDB database and Redis for caching and sessions using a Laravel-specific bridge library that runs during Composer autoload.  The public files symlink is also replaced with a custom web path definition so it is unnecessary.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Laravel is an opinionated, integrated rapid-application-development framework for PHP.</p>
@@ -511,7 +545,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/laravel) on GitHub.
 
-### Wordpress (Composer)  
+### Wordpress (Composer) 
+
+![image](images/wordpress.png)
 
 <p>This template builds WordPress on Web PaaS using the <a href="https://github.com/johnpbloch/wordpress"><code>johnbolch/wordpress</code></a> "Composer Fork" of WordPress.  Plugins and themes should be managed with Composer exclusively.  A custom configuration file is provided that runs on Web PaaS to automatically configure the database, so the installer will not ask you for database credentials.  For local-only configuration you can use a `wp-config-local.php` file that gets excluded from Git.</p>
 <p>WordPress is a blogging and lightweight CMS written in PHP.</p>
@@ -524,7 +560,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/wordpress-composer) on GitHub.
 
-### Sculpin  
+### Sculpin 
+
+![image](images/sculpin.png)
 
 <p>This template provides a basic Sculpin skeleton.  All files are generated at build time, so at runtime only static files need to be served.</p>
 <p>Sculpin is a static site generator written in PHP and using the Twig templating engine.</p>
@@ -536,7 +574,9 @@ A number of project templates for major PHP applications are available on GitHub
  
 [View the repository](https://github.com/platformsh-templates/sculpin) on GitHub.
 
-### Basic PHP  
+### Basic PHP 
+
+![image](images/basicphp.png)
 
 <p>This template provides the most basic configuration for running a custom PHP project built with Composer.  It includes but doesn't make use of the Web PaaS `config-reader` library.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.</p>
 <p>PHP is a high-performance scripting language especially well suited to web development.</p>

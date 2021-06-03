@@ -1,204 +1,202 @@
 ---
-title: Rozpoczęcie pracy z API Cinder
-excerpt: Rozpoczęcie pracy z API Cinder
-slug: rozpoczecie_pracy_z_api_cinder
-legacy_guide_number: g2071
+title: Pierwsze kroki z zarządzaniem wolumenami w API Openstack
+slug: pierwsze-wolumeny-api-openstack
+legacy_guide_number: 2071
 section: Zarządzanie w OpenStack CLI
+order: 6
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-## 
-Jeśli chcesz zautomatyzować operacje wykonywane w ramach usługi Public Cloud, możesz skorzystać z API OpenStack do generowania skryptów. Oprogramowanie Cinder OpenStack pozwoli Ci na wykonywanie operacji na dodatkowych woluminach. 
+**Ostatnia aktualizacja z dnia 19-05-2021**
 
-Będziesz mógł na przykład utworzyć nowy wolumin o wysokiej wydajności i podłączyć go do instancji Public Cloud (niezbędny jest do tego klient Nova).
+## Wprowadzenie
 
-Przewodnik ten pozwala na zapoznanie się z API OpenStack, dzięki któremu można zarządzać woluminami za pomocą klienta Python Cinder.
+Aby zautomatyzować Twoje operacje w infrastrukturze Public Cloud, możesz użyć interfejsu API OpenStack do tworzenia różnych skryptów.
+<br>Możesz na przykład utworzyć nowy wolumen typu "wysoka wydajność" i przypisać go do instancji Public Cloud.
 
+**Niniejszy przewodnik pomoże Ci w korzystaniu z API OpenStack w zarządzaniu wolumenami za pomocą klienta Python OpenStack.**
 
-## Wymagania
+## Wymagania początkowe
 
-- [Przygotowanie środowiska dla API OpenStack]({legacy}1851) poprzez zainstalowanie python-cinderclient i python-novaclient
-- [Pobranie zmiennych środowiskowych OpenStack]({legacy}1852)
+- [Przygotowanie środowiska do korzystania z API OpenStack](../przygotowanie_srodowiska_dla_api_openstack/) poprzez instalację Python-cinderclient oraz python-novaclient
+- [Pobranie zmiennych środowiskowych OpenStack](../zmienne-srodowiskowe-openstack/)
 
+## W praktyce
 
+### Dokumentacja Cinder
 
+Możesz otrzymać listę możliwych zamówień, czytając dokumentację klienta OpenStack:
 
-## Dokumentacja Cinder
-W dokumentacji oprogramowania dostępna jest lista możliwych poleceń:
-
-
-```
-admin@serveur-1:~$ cinder help
-```
-
-
-Lista najważniejszych poleceń:
-
-|create|Tworzenie nowego woluminu|
-|---|
-|create|Tworzenie nowego woluminu|
-|delete|Usuwanie woluminu|
-|list|Lista woluminów|
-|snapshot-create|Tworzenie zrzutu woluminu|
-
-Informacje na temat danego polecenia można uzyskać dodając "help" przed poleceniem:
-
-
-```
-admin@serveur-1:~$ cinder help snapshot-create
-usage: cinder snapshot-create [--force <True|False>]
-[--display-name <display-name>]
-[--display-description <display-description>]
-<volume>
-
-Add a new snapshot.
-
-Positional arguments:
-<volume> Name or ID of the volume to snapshot
-
-Optional arguments:
---force <True|False> Optional flag to indicate whether to snapshot a volume
-even if it's attached to an instance. (Default=False)
---display-name <display-name>
-Optional snapshot name. (Default=None)
---display-description <display-description>
-Optional snapshot description. (Default=None)
+```bash
+admin@server-1:~$ openstack help
 ```
 
+Oto lista głównych zamówień:
 
-Dokumentacja dotycząca programu Cinder znajduje się na [stronie OpenStack](http://docs.openstack.org/cli-reference/content/cinderclient_commands.html).
+|Zamówienie|Opis|
+|---|---|
+|wolumen create|Stwórz nowy wolumen|
+|objętość|Usuń wolumen|
+|wolumen|Lista wolumenów|
+|wolumen snapshot create|Stwórz snapshot wolumenu|
 
+Możesz również uzyskać informacje dotyczące konkretnego zamówienia, dodając `help` przed nim:
 
-## Tworzenie woluminu o wysokiej wydajności
+```bash
+admin@server-1:~$ openstack help volume snapshot create
+usage: openstack volume snapshot create [-h] [-f {json,shell,table,value,yaml}] [-c COLUMN] [--noindent] [--prefix PREFIX] [--max-width <integer>] [--fit-width] [--print-empty] [--volume <volume>] [--description <description>] [--force] [--property <key=value>]
+                                        [--remote-source <key=value>]
+                                        <snapshot-name>
 
-- Pobieranie listy typów woluminów:
+Create new volume snapshot
 
+positional arguments:
+  <snapshot-name>       Name of the new snapshot
 
+optional arguments:
+  -h, --help            show this help message and exit
+  --volume <volume>     Volume to snapshot (name or ID) (default is <snapshot-name>)
+  --description <description>
+                        Description of the snapshot
+  --force               Create a snapshot attached to an instance. Default is False
 ```
-admin@serveur-1:~$ cinder type-list
 
-+--------------------------------------+------------+
-| ID | Name |
-+--------------------------------------+------------+
-| 07673884-d6f0-49b0-8bfb-1cec1b6f3905 | high-speed |
-| 28b78be3-5e7b-480a-b20d-3c0d3e144c70 | classic |
-+--------------------------------------+------------+
+> [!primary]
+>
+> Możesz również zapoznać się z dokumentacją klienta Openstack bezpośrednio na [stronie OpenStack](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> 
+
+### Operacje podstawowe
+
+#### Utwórz wolumen o wysokiej wydajności
+
+- Wyświetl rodzaje wolumenów:
+
+```bash
+admin@server-1:~$ openstack volume type list
++--------------------------------------+------------+-----------+
+| ID                                   | Name       | Is Public |
++--------------------------------------+------------+-----------+
+| e9551830-6362-4bf8-92e5-391829456b03 | classic    | True      |
+| 6fc8e512-3cac-4f39-b9a8-af098d710506 | high-speed | True      |
++--------------------------------------+------------+-----------+
 ```
 
+- Utwórz wolumen typu high-speed 10GB o nazwie Volume1:
 
-- Tworzenie woluminu typu high-speed o rozmiarze 10GB i nazwie volume1:
-
-
-```
-admin@serveur-1:~$ cinder create --volume-type high-speed --display_name volume1 10
+``` bash
+admin@server-1:~$ openstack volume create --type high-speed --size 10 volume1
 
 +---------------------+--------------------------------------+
-| Property | Value |
+| Field               | Value                                |
 +---------------------+--------------------------------------+
-| attachments | [] |
-| availability_zone | nova |
-| bootable | false |
-| created_at | 2016-01-13T15:56:44.676098 |
-| display_description | None |
-| display_name | volume1 |
-| encrypted | False |
-| id | 1dd5fa60-6346-465a-ac8f-eb848da97f7f |
-| metadata | {} |
-| multiattach | false |
-| size | 10 |
-| snapshot_id | None |
-| source_volid | None |
-| status | creating |
-| volume_type | high-speed |
+| attachments         | []                                   |
+| availability_zone   | nova                                 |
+| bootable            | false                                |
+| consistencygroup_id | None                                 |
+| created_at          | 2021-05-18T14:16:28.658308           |
+| description         | None                                 |
+| encrypted           | False                                |
+| id                  | f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8 |
+| multiattach         | False                                |
+| name                | volume1                              |
+| properties          |                                      |
+| replication_status  | disabled                             |
+| size                | 10                                   |
+| snapshot_id         | None                                 |
+| source_volid        | None                                 |
+| status              | creating                             |
+| type                | high-speed                           |
+| updated_at          | None                                 |
+| user_id             | ...                                  |
 +---------------------+--------------------------------------+
 ```
 
+Możesz zainstalować obraz na woluminie za pomocą argumentu `--image`:
 
-
-
-## Ważne
-Można zainstalować obraz na woluminie za pomocą argumentu --image-id:
-
-
-```
-admin@serveur-1:~$ cinder create --volume-type high-speed --image-id bdcb5042-3548-40d0-b06f-79551d3b4377 --display_name volume_debian 20
-```
-
-
-Gdzie bdcb5042-3548-40d0-b06f-79551d3b4377 to ID obrazu Debian 8.
-
-
-## Podłączanie woluminu do instancji
-
-- Pobieranie listy dodatkowych woluminów:
-
-
-```
-admin@serveur-1:~$ cinder list
-
-+--------------------------------------+-----------+---------------+------+-------------+----------+---------------------+
-| ID | Status | Display Name | Size | Volume Type | Bootable | Attached to |
-+--------------------------------------+-----------+---------------+------+-------------+----------+---------------------+
-| 1dd5fa60-6346-465a-ac8f-eb848da97f7f | available | volume1 | 10 | high-speed | false | |
-| fe78323f-9e6c-4a8c-9e51-06a112a467c2 | available | volume_debian | 20 | high-speed | true | |
-+--------------------------------------+-----------+---------------+------+-------------+----------+---------------------+
+```bash
+admin@server-1:~$ openstack volume create --type high-speed --image be66762f-b849-43e1-b57c-005d9fe28088 --size 20 volume_debian
++---------------------+--------------------------------------+
+| Field               | Value                                |
++---------------------+--------------------------------------+
+| attachments         | []                                   |
+| availability_zone   | nova                                 |
+| bootable            | false                                |
+| consistencygroup_id | None                                 |
+| created_at          | 2021-05-18T14:26:38.887508           |
+| description         | None                                 |
+| encrypted           | False                                |
+| id                  | 442d9dff-7df5-41b2-95e9-fa8ac5f4784a |
+| multiattach         | False                                |
+| name                | volume_debian                        |
+| properties          |                                      |
+| replication_status  | disabled                             |
+| size                | 20                                   |
+| snapshot_id         | None                                 |
+| source_volid        | None                                 |
+| status              | creating                             |
+| type                | high-speed                           |
+| updated_at          | None                                 |
+| user_id             | ...                                  |
++---------------------+--------------------------------------+
 ```
 
+Gdzie **be66762f-b849-43e1-b57c-005d9fe2808** odpowiada ID obrazu Debiana 10.
 
+#### Przypisz wolumen do instancji
 
+- Wyświetl dodatkowe wolumeny:
 
-## Ważne
-Większość kolejnych poleceń będzie wymagała podania IP woluminu a nie jego nazwy.
-
-- Montowanie woluminu na instancji za pomocą programu Nova:
-
-
-```
-admin@serveur-1:~$ nova volume-attach 84f5dde4-cf64-40f5-8499-75d6849fc5d6 1dd5fa60-6346-465a-ac8f-eb848da97f7f auto
-+----------+--------------------------------------+
-| Property | Value |
-+----------+--------------------------------------+
-| device | /dev/vdb |
-| id | 1dd5fa60-6346-465a-ac8f-eb848da97f7f |
-| serverId | 84f5dde4-cf64-40f5-8499-75d6849fc5d6 |
-| volumeId | 1dd5fa60-6346-465a-ac8f-eb848da97f7f |
-+----------+--------------------------------------+
+```bash
+admin@serveur-1:~$ openstack volume list
++--------------------------------------+---------------+-----------+------+-------------+
+| ID                                   | Name          | Status    | Size | Attached to |
++--------------------------------------+---------------+-----------+------+-------------+
+| 442d9dff-7df5-41b2-95e9-fa8ac5f4784a | volume_debian | available |   20 |             |
+| f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8 | volume1       | available |   10 |             |
++--------------------------------------+---------------+-----------+------+-------------+
 ```
 
+> [!primary]
+>
+> Większość poniższych poleceń wymaga podania identyfikatora wolumenu zamiast jego nazwy.
+>
 
+- Montowanie wolumenu na instancji z klientem Openstack:
 
-Czyli nova volume-attach <instance_id> <volume_id> auto.
-
-
-## Usuwanie woluminu
-
-- Odłączanie woluminu od instancji
-
-
-```
-admin@serveur-1:~$ nova volume-detach 84f5dde4-cf64-40f5-8499-75d6849fc5d6 1dd5fa60-6346-465a-ac8f-eb848da97f7f
+```bash
+admin@serveur-1:~$ openstack server add volume 46aec29f-fe50-4562-b3f9-2e6665a7270d f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 ```
 
+- Sprawdź, czy wolumen do instancji jest prawidłowo przypisany do klienta OpenStack:
 
-- Usuwanie woluminu
-
-
+```bash
+admin@server-1:~$ openstack volume list
++--------------------------------------+---------------+-----------+------+-----------------------------------------+
+| ID                                   | Name          | Status    | Size | Attached to                             |
++--------------------------------------+---------------+-----------+------+-----------------------------------------+
+| 442d9dff-7df5-41b2-95e9-fa8ac5f4784a | volume_debian | available |   20 |                                         |
+| f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8 | volume1       | in-use    |   10 | Attached to cli-playground on /dev/sdb  |
++--------------------------------------+---------------+-----------+------+-----------------------------------------+
 ```
-admin@serveur-1:~$ cinder delete 1dd5fa60-6346-465a-ac8f-eb848da97f7f
+
+#### Usuwanie wolumenu
+
+- Odłącz wolumen od instancji:
+
+```bash
+admin@server-1:~$ openstack server remove volume 46aec29f-fe50-4562-b3f9-2e6665a7270d f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 ```
 
+- Usuń wolumen:
 
+```bash
+admin@server-1:~$ openstack volume delete f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
+```
 
+## Sprawdź również
 
-
-## 
-
-- [Rozpoczęcie pracy z API Nova]({legacy}1935)
-- [Uruchomienie instancji z podłączonego woluminu]({legacy}2064)
-
-
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
