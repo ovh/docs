@@ -135,8 +135,8 @@ This anomaly can have several causes:
 
 ## Go further <a name="#gofurther"></a>
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/fr/)
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/)
 
-If you would like assistance using and configuring your OVHcloud solutions, please check our [support offers](https://www.ovhcloud.com/fr/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please check our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
