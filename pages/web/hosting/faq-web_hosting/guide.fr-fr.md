@@ -81,7 +81,7 @@ Ce fichier est automatiquement désactivé lors de la création de votre [module
 
 Si vous avez choisi d'installer [votre site manuellement](../mutualise-installer-manuellement-mon-cms/), [connectez-vous à votre hébergement en FTP](../connexion-espace-stockage-ftp-hebergement-web/), afin de le renommer en **index.html.old**. 
 
-**Autre information utile** : Afin d'être pris en compte, les fichiers de votre site doivent être [téléchargés en FTP](../connexion-espace-stockage-ftp-hebergement-web/) sur votre hébergement. Le répertoire dans lequel vous mettrez ces fichiers devra correspondre au `Dossier racine`, auquel est lié votre domaine dans le multisite.
+**Autre information utile** : Afin d'être pris en compte, les fichiers de votre site doivent être téléchargés [en FTP](../connexion-espace-stockage-ftp-hebergement-web/) sur votre hébergement. Le répertoire dans lequel vous mettrez ces fichiers devra correspondre au `Dossier racine`, auquel est lié votre domaine dans le multisite.
 
 #### Que faire si mon site affiche une erreur "403 forbidden" ?
 
@@ -92,10 +92,6 @@ Consultez le guide [Réagir en cas de désactivation pour sécurité d’un héb
 #### Que faire si mon site affiche une erreur indiquant que la version PHP de mon hébergement est insuffisante ?
 
 ![erreur_wp_php](images/erreur_wp_php.png){.thumbnail}
-
-> refaire screenshot avec plus de largeur sinon on ne voit pas la différence entre le msg d'erreur et le reste du texte
-
-(501 method not implemented ? > Antoine > waiting)
 
 Consultez le guide [Changer la version de PHP de son hébergement web](../configurer-le-php-sur-son-hebergement-web-mutu-2014/)
 
@@ -133,19 +129,55 @@ Vous obtiendrez, sous quelques minutes, le résultat suivant :
 >
 > Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre serveur FTP.
 
-### Que faire si mon site s'affiche sur un domaine "cluster" ? (ou notation IDN)
+#### Que faire si mon site s'affiche sur une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net » ?
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
-Si votre site s'affiche sous cette url suite 
+Deux scénarii sont possibles. Soit votre site a été créé sous cette adresse web, soit celle-ci est apparue suite à une modification :
+
+Scénario 1 : Votre site a été créé sur une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net »
+
+> [!warning]
+>
+> L'opération de suppression d'une base de données comme celle d'un module en 1 clic sont définitives. Elles entraînent également la suppression des sauvegardes des données concernées. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre webmaster ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
+>
+
+Dans le premier cas, après avoir réalisé toutes les sauvegardes nécessaires, supprimez votre module depuis la partie `Hébergements` de votre espace client OVHcloud :
+
+![delete_a_module](images/delete_a_module.png){.thumbnail}
+
+Puis sa base de données depuis l'onglet du même nom situé à droite de votre écran, toujours dans la partie `Hébergements` : 
+
+![delete_a_database](images/delete_a_database.png){.thumbnail}
+ 
+Puis relancez son installation sur le nom de domaine souhaité, [manuellement](../mutualise-installer-manuellement-mon-cms/) ou en utilisant la fonctionnalité [Module en 1 clic](../modules-en-1-clic/).
+
+Scénario 2 : 
+
+Si votre site s'affiche sous cette url suite à une manipulation, restaurez-le à son état antérieur.
+
+> [!warning]
+>
+> La restauration de votre hébergement OVHcloud entraînera celle de l'ensemble des sites qu'il contient.
+>
+> Lors d'une restauration, le contenu de votre espace FTP, ou celui de votre base de données, est remplacé par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur juste avant la restauration.
+>
+
+Pour restaurer le code source de votre site, consultez notre guide « [Restaurer l’espace de stockage de son hébergement web](../restauration-ftp-filezilla-espace-client/) ».
+
+Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client) ».
 
 #### Que faire si mon site redirige vers le webmail OVHcloud ?
 
 ![webmail](images/webmail.png){.thumbnail}
 
+Cette anomalie indique une configuration erronée au niveau des [serveurs DNS] ou de la [zone DNS] associés à votre nom de domaine.
+
+Le cas le plus courant est lié au fait que votre nom de domaine et votre hébergement ayant été commandés séparément, ils ne sont pas reliés entre eux.
+
+Rendez-vous dans la partie Domaines de votre espace client OVHcloud, 
 
 #### Que faire si mon nom de domaine redirige vers un site inconnu ?
-
 
 #### Que faire si mon site affiche une page "Site non installé" ?
 
@@ -159,6 +191,8 @@ https://docs.ovh.com/fr/hosting/erreur-site-non-installe/
 
 ### Que faire si mon site affiche une erreur "Serveurs inaccessibles" ?
 
+Si votre site affiche des erreurs de ce type : 
+
 Firefox : 
 
 ![unabletoconnect](images/unabletoconnect.png){.thumbnail}
@@ -167,19 +201,31 @@ Google :
 
 ![sitecantbereached](images/sitecantbereached.png){.thumbnail}
 
-### Que faire si mon site affiche une erreur "500 Internet Server Error" ?
+Safari : 
 
-https://docs.ovh.com/fr/hosting/erreur-500-internal-server-error/
+(Attendre un peu pour tester mypersonaldomainname.ovh sur safari (pas dispo sur windows))
+
+### Que faire si mon site affiche une erreur "500 Internal Server Error" ?
+
+Si votre site affiche une erreur **500 Internal Server Error**, consultez ce [guide](https://docs.ovh.com/fr/hosting/erreur-500-internal-server-error/).
 
 ### Que faire si mon site rencontre des lenteurs ?
 
-https://docs.ovh.com/fr/hosting/optimisation-performances-site/
+En cas de lenteurs sur votre site, consultez ce [guide](https://docs.ovh.com/fr/hosting/optimisation-performances-site/).
 
 ### Que faire si mon site affiche une page blanche ?
 
-https://docs.ovh.com/fr/hosting/comment-diagnostiquer-page-blanche/
+Si votre site affiche une page entièrement blanche, consultez ce [guide](https://docs.ovh.com/fr/hosting/comment-diagnostiquer-page-blanche/).
 
 ### Que faire si ma base de données est pleine ?
+
+### Que faire si mon site affiche "Connexion non sécurisée ?
+
+### Que faire si mon site affiche une erreur "503 error Backend fetch failed (Varnish cache)" ?
+
+### Que faire si mon site affiche une erreur  "Your request has been blocked" ou Your IP has been banned" ?
+
+### Le nom de domaine qui apparaît dans mon espace client est bizarre et ne correspond pas à celui que j'ai commandé. Que dois-je faire ? (notation IDN)
 
 
 ## Aller plus loin <a name="allerplusloin"></a>
