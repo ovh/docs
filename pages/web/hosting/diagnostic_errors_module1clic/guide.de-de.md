@@ -20,9 +20,9 @@ Die Erstellung eines [1-Klick-Moduls](../webhosting_installation_von_webhosting-
 
 > [!warning]
 >
-> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> OVHcloud stellt Ihnen Dienste zur Verfügung, deren Konfiguration, Verwaltung und Verantwortung Sie selbst tragen. Es liegt daher an Ihnen, dafür zu sorgen, dass sie ordnungsgemäß funktionieren.
 >
-> Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVHcloud Community unter [https://community.ovh.com/en/](https://community.ovh.com/en/) (Englisch). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#gofurther) zu dieser Anleitung.
 >
 
 ## Voraussetzungen
@@ -76,14 +76,14 @@ Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=go
 
 > [!primary]
 >
-> Hier finden Sie den Vergleich unserer [Datenbankangebote](https://www.ovh.de/hosting/sql-optionen.xml)
+> Hier finden Sie den Vergleich unserer [Datenbanken Angebote](https://www.ovh.de/hosting/sql-optionen.xml)
 >
 
 #### Lösung Nr. 4: Ihr Modul auf einer bereits genutzten Datenbank installieren
 
-Um Ihr Modul auf einer bereits genutzten Datenbank zu installieren, [verwenden](../modules-en-1-clic/#installation-avancee-dun-module) Sie den fortgeschrittenen 1-Klick-**Modus**.
+Um Ihr Modul auf einer bereits genutzten Datenbank zu installieren, verwenden Sie den [fortgeschrittenen Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls).
 
-Um die Login-Daten Ihrer Datenbank zu finden, lesen Sie unsere [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
+Um die Login-Daten Ihrer Datenbank zu finden, lesen Sie unsere [FAQ](https://www.ovh.de/hosting/faq/).
 
 ### “Das Installationsverzeichnis ist nicht leer“
 
@@ -93,11 +93,11 @@ Nachdem Sie mit der Erstellung Ihres Moduls begonnen haben, erhalten Sie eine E-
 
 Diese Nachricht bedeutet, dass das **Wurzelverzeichnis**, an das Ihre Domain gebunden ist, eine oder mehrere Dateien oder Ordner enthält.
 
-Um Ihre Domain mit einem anderen Verzeichnis zu verbinden, klicken Sie auf `Domain`{.action} im Tab `Multisite`{.action} ändern und geben Sie dann den Namen eines neuen **Wurzelverzeichnisses** ein (auf Ihrem Hosting wird automatisch ein leeres Verzeichnis erstellt).
+Um Ihre Domain mit einem anderen Verzeichnis zu verbinden, klicken Sie auf `Domain bearbeiten`{.action} im `Multisite`{.action} Tab und geben Sie dann den Namen eines neuen **Wurzelverzeichnisses** ein (auf Ihrem Hosting wird automatisch ein leeres Verzeichnis erstellt).
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
-Sie können sich auch via [FTP](../connexion-espace-stockage-ftp-hebergement-web/) mit Ihrem Hosting verbinden und den Inhalt des Ordners löschen oder verschieben, nachdem Sie ihn gespeichert haben.
+Sie können sich auch mit einer [ftp-Verbindung](../verbindung-ftp-speicher-webhosting/) mit Ihrem Hosting verbinden und den Inhalt des Ordners löschen oder verschieben, nachdem Sie ihn gespeichert haben.
 
 ### “Keine Verbindung zur Datenbank“ <a name="deleteModule"></a>
 
@@ -105,9 +105,9 @@ Sie können sich auch via [FTP](../connexion-espace-stockage-ftp-hebergement-web
 
 Nachdem Sie die Installation Ihres Moduls im Experten-Modus gestartet haben, erhalten Sie eine E-Mail, die anzeigt, dass Ihr Modul sich nicht mit der angegebenen Datenbank verbinden kann. 
 
-Überprüfen Sie deshalb die Login-Daten Ihrer Datenbank. Um sie zu finden, ziehen Sie unsere [FAQ zu Rate](https://www.ovh.com/fr/hebergement-web/faq/).
+Überprüfen Sie deshalb die Login-Daten Ihrer Datenbank. Um sie zu finden, ziehen Sie unsere [FAQ](https://www.ovh.de/hosting/faq/) zu Rate.
 
-Löschen Sie anschließend Ihr Modul über den Tab `1 Klick Module`{.action}:
+Löschen Sie anschließend Ihr Modul über den Tab `1-Klick-Module`{.action}:
 
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
 
@@ -117,35 +117,31 @@ Starten Sie anschließend die Installation eines neuen Moduls neu.
 
 ![domainenotproposed](images/domainenotproposed.png){.thumbnail}
 
-Klicken Sie auf den Tab `Multisite`{.action} und führen Sie folgende Überprüfungen durch:
+Klicken Sie auf den `Multisite`{.action} Tab und führen Sie folgende Überprüfungen durch:
 
 |Szenario|Erforderliche Maßnahme|
 |---|---|
-|Die Domain oder Subdomain der Website, die Sie erstellen möchten, erscheint nicht in der `Multisite`{.action}.|Fügen Sie Ihre Domain entsprechend [diesen Angaben hinzu](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
-|Die Domain wurde ohne Aktion Ihrerseits aus der Multisite gelöscht.|Wenn Ihre Domain oder die [DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) Zone nicht über Ihren OVHcloud Account verwaltet werden, fügen Sie Ihre Domain zur `Multisite`{.action} gemäß dieser [Anleitung hinzu](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
+|Die Domain oder Subdomain der Website, die Sie erstellen möchten, erscheint nicht in der `Multisite`{.action}.|Fügen Sie Ihre Domain entsprechend [diesen Angaben](../multisites-mehrere-websites-konfigurieren/#schritt-21-eine-bei-ovhcloud-registrierte-domain-hinzufugen) hinzu.|
+|Die Domain wurde ohne Aktion Ihrerseits aus der Multisite gelöscht.|Wenn Ihre Domain oder die [DNS Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen) nicht über Ihren OVHcloud Account verwaltet werden, fügen Sie Ihre Domain zur `Multisite`{.action} gemäß dieser [Anleitung](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe) hinzu.|
 
 ### Ihr Modul wird auf einer Webadresse vom Typ "xxxxx.cluster0xx.hosting.ovh.net"angezeigt
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
-Nachdem Sie alle notwendigen Backups durchgeführt haben, [löschen Sie](#supprimer-le-module) Ihr Modul und [anschließend dessen Datenbank](#supprimer-la-base). Setzen Sie dann die Installation auf der gewünschten Domain erneut ein.
+Nachdem Sie alle notwendigen Backups durchgeführt haben, [löschen Sie Ihr Modul](#deleteModule) und anschließend dessen [Datenbank](#deleteDB). Setzen Sie dann die Installation auf der gewünschten Domain erneut ein.
 
 ### Ihre alte Website wird weiterhin angezeigt
 
 Diese Anomalie kann mehrere Ursachen haben: 
 
-- Sie haben kürzlich eine Änderung Ihrer DNS Zone oder Ihrer [DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) Server [oder einen Transfer Ihrer Domain durchgeführt](../../domains/transferer-mon-domaine-generique/). Warten Sie, bis diese Operationen abgeschlossen sind (48 Stunden bei Änderungen an Ihren DNS). Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Box usw.) neu zu starten und den Cache Ihres Browsers zu leeren.
+- Sie haben kürzlich eine Änderung Ihrer [DNS Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen) oder Server, oder einen [Transfer Ihrer Domain durchgeführt](../../domains/transfer-einer-generischen-domain/). Warten Sie, bis diese Operationen abgeschlossen sind (48 Stunden bei Änderungen an Ihren DNS). Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Box usw.) neuzustarten und den Cache Ihres Browsers zu leeren.
 
-- Ihre Domain ist immer mit Ihrem alten Hosting verbunden. Ändern Sie in diesem Fall Ihre [DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) Zone oder [Ihre DNS](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns) Server oder kontaktieren Sie Ihren bisherigen Hosting-Anbieter.
+- Ihre Domain ist immer mit Ihrem alten Hosting verbunden. Ändern Sie in diesem Fall Ihre [DNS Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain_1) oder Ihre [DNS Server](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-server-andern) oder kontaktieren Sie Ihren bisherigen Hosting-Anbieter.
 
-## Mehr <a name="aller-plus-loin"></a>
+## Weiterführende Informationen <a name="gofurther"></a>
 
-[Diagnose und Korrektur bei einer weißen Seite](../comment-diagnostiquer-page-blanche/)
+Kontaktieren Sie für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/)
 
-[Antwortcodes eines HTTP-Servers](../mutualise-les-codes-de-reponse-dun-serveur-http/)
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/) einsehen.
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) [die OVHcloud Partner](https://partner.ovhcloud.com/fr/)
-
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere Support-Angebote [einsehen](https://www.ovhcloud.com/fr/support-levels/).
-
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
