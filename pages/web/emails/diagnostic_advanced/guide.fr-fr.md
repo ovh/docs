@@ -22,15 +22,15 @@ Vous rencontrez l'impossibilité de recevoir ou envoyer vos e-mails depuis votre
 
 Pour que vos e-mails soient fonctionnels, vous devez posséder une offre e-mail active. Si vous possédez des e-mails associés à une offre d'hébergement, vérifiez qu'elle ne soit pas expirée. Il vous est possible de voir cette information directement dans l'espace client. Au même titre votre nom de domaine doit lui aussi être actif. 
 
-- **Nom de domaine**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action} dans la colonne de gauche, puis selectionner votre nom de domaine.
-- **Hébergement Web**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis selectionner votre hébergement.
-- **MXplan**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mails`{.action} dans la colonne de gauche, puis selectionner le nom de domaine concerné. Cliquez sur `Comptes e-mail`{.action}, dans la colonne `Statut` vous avez l'état du compte e-mail concerné.
-- **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action} dans la colonne de gauche, puis selectionner votre plateforme. Cliquez sur `Comptes e-mail`{.action}, dans la colonne `Statut` vous avez l'état du compte e-mail concerné.
-- **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis cliquez sur `Exchange`{.action} et selectionner votre plateforme. Cliquez sur `Comptes e-mail`{.action}, dans la colonne `Statut` vous avez l'état du compte e-mail concerné.
+- **Nom de domaine**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action} dans la colonne de gauche, puis sélectionnez votre nom de domaine.
+- **Hébergement Web**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez votre hébergement.
+- **MXplan**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mails`{.action} dans la colonne de gauche, puis sélectionnez le nom de domaine concerné. Cliquez sur `Comptes e-mail`{.action}, dans la colonne `Statut` vous avez l'état du compte e-mail concerné.
+- **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action} dans la colonne de gauche, puis sélectionnez votre plateforme. Cliquez sur `Comptes e-mail`{.action}, dans la colonne `Statut` vous avez l'état du compte e-mail concerné.
+- **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Cliquez sur `Comptes e-mail`{.action}, dans la colonne `Statut` vous avez l'état du compte e-mail concerné.
 
 ### Je ne parviens pas à envoyer d'e-mails depuis mon logiciel de messagerie?
 
-Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail de Mac, Thunderbird, etc.) ou votre smartphone (iOS, Android, etc.), et que vous rencontrez un dysfonctionnement à l'envoi ou à la réception. Vérifiez les paramètres de configuration selon votre offre e-mail et le logiciel de messsagerie ou application utilisé.
+Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail de Mac, Thunderbird, etc.) ou votre smartphone (iOS, Android, etc.), et que vous rencontrez un dysfonctionnement à l'envoi ou à la réception. Vérifiez les paramètres de configuration selon votre offre e-mail et le logiciel de messagerie ou application utilisé.
 
 - Pour **MXplan**, dans la section [E-mails mutualisés - MX Plan](https://docs.ovh.com/fr/emails/) de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration sur ordinateur` ou de votre smartphone dans `Configuration sur smartphone`
 
@@ -53,9 +53,9 @@ Assurez-vous d'avoir le bon mot de passe, si nécessaire il vous est possible de
 
 - Sur **MXplan**, consulter notre guide [Modifier le mot de passe d’une adresse e-mail MX Plan](https://docs.ovh.com/fr/emails/modifier-mot-de-passe-adresse-email/)
 
-- Sur **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action} dans la colonne de gauche, puis selectionner votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `modifier`{.action} pour modifier le mot de passe.
+- Sur **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action} dans la colonne de gauche, puis sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `modifier`{.action} pour modifier le mot de passe.
 
-- Sur **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis cliquez sur `Exchange`{.action} et selectionner votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `modifier`{.action} pour modifier le mot de passe . <br> Vérifier si la double authentification est activée en consultant notre guide [Configurer la double authentification sur un compte Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configurer-2fa-exchange/)
+- Sur **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `modifier`{.action} pour modifier le mot de passe . <br> Vérifier si la double authentification est activée en consultant notre guide [Configurer la double authentification sur un compte Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configurer-2fa-exchange/)
 
 ### Une tâche travaux est-elle en cours sur mon service?
 
@@ -72,9 +72,9 @@ Vérifiez que votre nom de domaine pointe correctement vers les serveurs e-mail 
 ![DNSzone](images/DNS.png){.thumbnail}
 
 
-### Après l'envoi d'un e-mail, je recoie un message indiquant que mon e-mail n'a pas pu être envoyer, comprenant un code à 3 chiffres.
+### Après l'envoi d'un e-mail, je reçoie un message indiquant que mon e-mail n'a pas pu être envoyé, comprenant un code à 3 chiffres.
 
-Il s'agit d'un retour d'erreur SMTP. Cela indique que l'échange entre le serveur d'envoi vers le serveur e-mail de réception n'a pas pu se faire correctement. Le code sert à déterminer le type d'erreur que le serveur à rencontré, il est généralement accompagné d'un message détaillant cette erreur.
+Il s'agit d'un retour d'erreur SMTP. Cela indique que l'échange entre le serveur d'envoi vers le serveur e-mail de réception n'a pas pu se faire correctement. Le code sert à déterminer le type d'erreur que le serveur a rencontré, il est généralement accompagné d'un message détaillant cette erreur.
 
 Une réponse SMTP est constituée d'un nombre à trois chiffres. Les trois chiffres de la réponse ont chacun une signification particulière :
 
@@ -102,10 +102,10 @@ Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP ut
 |451|Action requise abandonnée : Erreur de traitement local|Cela peut être dû à une surcharge momentanée, ou à une vérification du SPF du domaine émetteur incorrecte. Référez-vous au message complémentaire fourni par le serveur, ou contactez l'administrateur de celui-ci si cela persiste|
 |452|Action demandée non effectuée : système de stockage insuffisant|Votre serveur de messagerie est « surchargé ». Cela pourrait également être causé par un trop grand nombre de messages qui tentent d'être envoyé à la fois. Veuillez vérifier votre boîte d'envoi puis réessayez|
 |455|Serveur incapable de recevoir les paramètres|Patientez quelque temps puis effectuez une nouvelle tentative. En cas d'échec, contactez l'administrateur du serveur de messagerie du destinataire|
-|500|Erreur de syntaxe, commande non reconnue (Cela peut inclure des erreurs comme une ligne de commande trop longue)|Cela est souvent causer par l'antivirus ou le firewall de l'expéditeur. Vérifiez cela puis essayez à nouveau|
+|500|Erreur de syntaxe, commande non reconnue (Cela peut inclure des erreurs comme une ligne de commande trop longue)|Cela est souvent causé par l'antivirus ou le firewall de l'expéditeur. Vérifiez cela puis essayez à nouveau|
 |501|Erreur de syntaxe dans les paramètres ou les arguments|Cela est souvent causé par une adresse e-mail de destinataire erronée ou un problème d'antivirus ou firewall côté expéditeur. Veuillez vérifier l'adresse de destination ainsi que votre antivirus ou firewall|
 |502|Commande non implémentée|Les paramètres ou les options utilisées lors de l'envoi de l'e-mail avec votre serveur SMTP sont reconnus mais désactivés dans sa configuration. Veuillez contacter votre fournisseur de service|
-|503|Le serveur à rencontré une mauvaise séquence de commandes|Cela est généralement dû un problème d'authentification, assurez-vous d'être bien authentifié sur le serveur SMTP au niveau de la configuration de votre logiciel de messagerie|
+|503|Le serveur a rencontré une mauvaise séquence de commandes|Cela est généralement dû un problème d'authentification, assurez-vous d'être bien authentifié sur le serveur SMTP au niveau de la configuration de votre logiciel de messagerie|
 |504|Paramètre de commande non implémentée|Les paramètres ou les options utilisées lors de l'envoi de l'e-mail avec votre serveur SMTP sont reconnus mais désactivés dans sa configuration. Veuillez contacter votre fournisseur de service|
 |550|Action demandée non effectuée : boîte aux lettres indisponible|Le serveur de messagerie de destination n'a pas pu vérifier l'adresse e-mail utilisée. Ceci est le plus souvent causé par une adresse e-mail de destination invalide, mais peut également signifier que le serveur de messagerie de destination a des problèmes de pare-feu ou de connectivité. Vérifier l'adresse e-mail du destinataire, et/ou réessayez à nouveau|
 |551|Utilisateur non local|Ceci est en général utilisé comme une stratégie de prévention contre le spam. Il est indiqué que le relais de courrier n'est pas autorisé pour une raison quelconque à relayer votre message vers un autre serveur que le vôtre. Veuillez contacter votre fournisseur de service|
