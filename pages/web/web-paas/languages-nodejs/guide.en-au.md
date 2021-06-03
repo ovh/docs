@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 11th May 2021**
+**Last updated 3rd June 2021**
 
 
 ## Objective  
@@ -221,7 +221,9 @@ To access various [services](../configuration-services) with Node.js, see the fo
 A number of project templates for Node.js applications and typical configurations are available on GitHub. Not all of them are proactively maintained but all can be used as a starting point or reference for building your own website or web application.
 
 
-### strapi  
+### strapi 
+
+![image](images/strapi.png)
 
 <p>This template builds a Strapi backend for Web PaaS, which can be used to quickly create an API that can be served by itself or as a Headless CMS data source for another frontend application in the same project. This repository does not include a frontend application, but you can add one of your choice and access Strapi by defining it in a relationship in your frontend's <code>.platform.app.yaml</code> file.</p>
 <p>Strapi is a Headless CMS framework written in Node.js.</p>
@@ -236,7 +238,9 @@ A number of project templates for Node.js applications and typical configuration
  
 [View the repository](https://github.com/platformsh-templates/strapi) on GitHub.
 
-### Gatsby with Strapi  
+### Gatsby with Strapi 
+
+![image](images/gatsby.png)
 
 <p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Strapi for its backend. The `gatsby-source-strapi` source plugin is used to pull data from Strapi during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Note that there are several setup steps required after the first deploy to create your first content types and access permissions in Strapi. See the included README's post-install section for details.</p>
@@ -252,7 +256,9 @@ A number of project templates for Node.js applications and typical configuration
  
 [View the repository](https://github.com/platformsh-templates/gatsby-strapi) on GitHub.
 
-### Probot  
+### Probot 
+
+![image](images/probot.png)
 
 <p>This template builds a simple GitHub App using [Probot](https://github.com/probot/probot) for Node.js.  It includes a minimalist skeleton GitHub app that demonstrates a basic GitHub connection response.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Note that there are several setup steps required after first deploy to connect your project to GitHub.  See the included README file for details.</p>
@@ -265,7 +271,9 @@ A number of project templates for Node.js applications and typical configuration
  
 [View the repository](https://github.com/platformsh-templates/probot) on GitHub.
 
-### Gatsby with Drupal  
+### Gatsby with Drupal 
+
+![image](images/gatsby.png)
 
 <p>This template builds a two-application project to deploy the Headless CMS pattern using Gatsby as its frontend and Drupal for its backend. The <code>gatsby-source-drupal</code> source plugin is used to pull data from Drupal during the <code>post_deploy</code> hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Note that after you have completed the Drupal installation and included a few articles, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
@@ -284,7 +292,9 @@ A number of project templates for Node.js applications and typical configuration
  
 [View the repository](https://github.com/platformsh-templates/gatsby-drupal) on GitHub.
 
-### Gatsby with Wordpress  
+### Gatsby with Wordpress 
+
+![image](images/gatsby.png)
 
 <p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Note that after you have completed the Wordpress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
@@ -302,7 +312,9 @@ A number of project templates for Node.js applications and typical configuration
  
 [View the repository](https://github.com/platformsh-templates/gatsby-wordpress) on GitHub.
 
-### Gatsby  
+### Gatsby 
+
+![image](images/gatsby.png)
 
 <p>This template builds a simple application using Gatsby.  Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps.  The website is statically generated by a Node.js application during the build step, and then served statically at runtime.</p>
 <p>Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps.</p>
@@ -314,7 +326,9 @@ A number of project templates for Node.js applications and typical configuration
  
 [View the repository](https://github.com/platformsh-templates/gatsby) on GitHub.
 
-### Express  
+### Express 
+
+![image](images/express.png)
 
 <p>This template demonstrates building the Express framework for Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Express is a minimalist web framework written in Node.js.</p>
@@ -327,7 +341,9 @@ A number of project templates for Node.js applications and typical configuration
  
 [View the repository](https://github.com/platformsh-templates/express) on GitHub.
 
-### NuxtJS  
+### NuxtJS 
+
+![image](images/nuxtjs.png)
 
 <p>This template builds a simple application using the NuxtJS web framework that can be used as a starting point.</p>
 <p>NuxtJS is an open-source web framework based on Vue.js.</p>
@@ -339,7 +355,9 @@ A number of project templates for Node.js applications and typical configuration
  
 [View the repository](https://github.com/platformsh-templates/nuxtjs) on GitHub.
 
-### Koa  
+### Koa 
+
+![image](images/koa.png)
 
 <p>This template demonstrates building the Koa framework for Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Koa is a lightweight web microframework for Node.js.</p>
@@ -352,7 +370,9 @@ A number of project templates for Node.js applications and typical configuration
  
 [View the repository](https://github.com/platformsh-templates/koa) on GitHub.
 
-### Node.js  
+### Node.js 
+
+![image](images/nodejs.png)
 
 <p>This template builds a simple application using the Node.js built-in `http` web server. It includes a minimalist application skeleton that demonstrates how to connect to the included MariaDB server, but you are free to alter it as needed.</p>
 <p>Node.js is an open-source JavaScript runtime built on Chrome's V8 JavaScript engine.</p>
@@ -365,7 +385,9 @@ A number of project templates for Node.js applications and typical configuration
  
 [View the repository](https://github.com/platformsh-templates/nodejs) on GitHub.
 
-### Next.js  
+### Next.js 
+
+![image](images/nextjs.png)
 
 <p>This template builds a simple application using the Next.js web framework. It includes a minimal application skeleton that demonstrates how to set up an optimized build using Next.js and Yarn, as well as how to begin defining individual pages (such as the <code>/api/hello</code>) endpoint that comes pre-defined with this template.</p>
 <p>Next.js is an open-source web framework written for Javascript.</p>

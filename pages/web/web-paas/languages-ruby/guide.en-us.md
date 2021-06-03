@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 31st March 2021**
+**Last updated 3rd June 2021**
 
 
 ## Objective  
@@ -215,7 +215,9 @@ A number of project templates for Ruby applications and typical configurations a
 Web PaaS also provides a [helper library](https://github.com/platformsh/platformsh-ruby-helper) for Ruby applications that simplifies presenting environment information to your application.  It is not required to run Ruby applications on Web PaaS but is recommended.
 
 
-### Ruby on Rails  
+### Ruby on Rails 
+
+![image](images/rubyonrails.png)
 
 <p>This template builds Ruby on Rails 5 on Web PaaS.  It includes a bridge library that will auto-configure most databases and services, and ships with PostgreSQL out of the box.  Otherwise it is the same as the result of running "rails new".</p>
 <p>Rails is an opinionated rapid application development framework written in Ruby.</p>

@@ -69,9 +69,9 @@ optional arguments:
 
 #### Créer un volume haute performance
 
-- Lister les types de volumes : 
+- Lister les types de volumes :
 
-```
+```bash
 admin@serveur-1:~$ openstack volume type list
 +--------------------------------------+------------+-----------+
 | ID                                   | Name       | Is Public |
@@ -110,6 +110,7 @@ admin@serveur-1:~$ openstack volume create --type high-speed --size 10 volume1
 | user_id             | ...                                  |
 +---------------------+--------------------------------------+
 ```
+
 Vous pouvez installer une image sur un volume à l'aide de l'argument `--image` :
 
 ```bash
@@ -155,11 +156,10 @@ admin@serveur-1:~$ openstack volume list
 +--------------------------------------+---------------+-----------+------+-------------+
 ```
 
-
 > [!primary]
 >
 > La majorité des commandes suivantes nécessiteront de renseigner l'ID du volume plutôt que son nom.
-> 
+>
 
 - Monter le volume sur une instance avec le client Openstack :
 
@@ -190,7 +190,7 @@ admin@serveur-1:~$ openstack server remove volume 46aec29f-fe50-4562-b3f9-2e6665
 - Supprimer le volume :
 
 ```bash
-admin@serveur-1:~$ opesntack volume delete f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
+admin@serveur-1:~$ openstack volume delete f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 ```
 
 ## Aller plus loin
