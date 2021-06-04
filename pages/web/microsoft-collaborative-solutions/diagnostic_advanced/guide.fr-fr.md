@@ -11,14 +11,14 @@ order: 1
 
 ## Objectif
 
-Les erreurs sur les comptes e-mail Exchange peuvent avoir une multitude de causes possibles. Un diagnostic automatique des fonctionnalités du compte permet de réduire ce nombre de causes. Les résultats de ces tests seront également utiles en cas de demande d'assistance concernant votre service Exchange.
+Les erreurs sur les comptes e-mail Exchange peuvent avoir une multitude de causes. Un diagnostic automatique des fonctionnalités du compte permet de réduire ce nombre de causes. Les résultats de ces tests seront également utiles en cas de demande d'assistance concernant votre service Exchange.
 
 **Découvrez comment lancer un diagnostic Exchange et en interpréter les résultats.**
 
 ## Prérequis
 
-- Disposer d'une [solution Exchange OVHcloud](https://www.ovh.co.uk/emails/hosted-exchange) est déjà installée
-- Disposer des informations d'identification pour le compte Exchange à vérifier.
+- Disposer d'une [solution Exchange OVHcloud](https://www.ovh.co.uk/emails/hosted-exchange)déjà installée
+- Disposer des informations d'identification pour le compte Exchange à vérifier
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
@@ -45,15 +45,15 @@ La page de résultats propose deux actions pour continuer :
 
 ### Explications des erreurs
 
-Reportez-vous au résumé suivant des erreurs possibles pour trouver la résolution la plus rapide.
+Reportez-vous au résumé suivant des erreurs possibles pour trouver la solution la plus rapide.
 
 ### Le compte est bloqué pour envoi de spam <a name="blocked"></a>
 
 Un compte bloqué reçoit toujours des e-mails mais l'envoi a été désactivé par le système de protection automatique contre le spam.
 
-Vous pouvez le vérifier dans l'onglet `Comptes e-mail`{.action} de votre service Exchange. Le compte aura un statut `SPAM` dans le tableau.
+Vous pouvez le vérifier dans l'onglet `Comptes e-mail`{.action} de votre service Exchange. Le compte aura une mention `SPAM` dans la colonne « statut » du tableau.
 
-Veuillez suivre les instructions de [ce guide](../bloque-pour-spam/) pour permettre à nos équipes de sécurité de réactiver le compte.
+Veuillez consulter notre guide [Que faire en cas de compte bloqué pour spam ?](../bloque-pour-spam/) pour permettre à nos équipes de sécurité de réactiver le compte.
 
 ### L'abonnement au compte est expiré <a name="expired"></a>
 
@@ -67,9 +67,9 @@ Vous pouvez, par exemple, décider que le compte sera verrouillé après plusieu
 
 Dans ce cas, vous pouvez attendre que le compte soit de nouveau disponible ou contacter nos équipes Exchange en créant une demande d'assistance.
 
-Pour plus d'informations sur cette fonctionnalité, consultez le [guide sur la politique de sécurité](../gerer-politique-de-securite-mot-de-passe/).
+Pour plus d'informations sur cette fonctionnalité, consultez notre [guide sur la politique de sécurité](../gerer-politique-de-securite-mot-de-passe/).
 
-### L'authentification au webmail a échoué <a name="password"></a>
+### L'authentification au webmail a échouée <a name="password"></a>
 
 Cela peut être dû à la saisie d'un mot de passe de compte incorrect. Vérifiez d'abord que le mot de passe est correct, en vous connectant au [webmail](../exchange-2016-guide-utilisation-outlook-web-app/), puis redémarrez le diagnostic.
 
@@ -81,13 +81,14 @@ Cette erreur indique que les e-mails ne peuvent pas être reçus et sera égalem
 
 En fonction de l'utilisation de votre service Exchange, les serveurs MX suivants sont valides :
 
-- Exchange seul : mx1.mail.ovh.net
-- Exchange + E-mail POP/IMAP hébergé par OVHcloud: mx1.mail.ovh.net
-- Exchange + E-mail POP/IMAP non hébergé par OVHcloud: ex<b>?</b>.mail.ovh.net
+- Exchange seul : mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net et mx4.mail.ovh.net
+- Exchange + E-mail POP/IMAP hébergé par OVHcloud: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net et mx4.mail.ovh.net
+- Exchange + E-mail POP/IMAP non hébergé par OVHcloud: ex**?**.mail.ovh.net 
 
-Dans nos guides, nous utilisons comme nom de serveur: ex<b>?</b>.mail.ovh.net. Vous devrez remplacer le « ? » par le numéro réel indiquant le serveur approprié pour votre service Exchange.
-
-<a name="hostname"></a>Vous trouverez ces informations dans l'espace client OVHcloud, dans la section `Web Cloud`{.action}.  Ouvrez `Microsoft`{.action} dans le menu à gauche, puis `Exchange`{.action} et sélectionnez votre service. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.
+<a name="hostname"></a>
+> [!warning] 
+> Dans nos guides, nous utilisons comme nom de serveur: ex<b>?</b>.mail.ovh.net. Vous devrez remplacer le « ? » par le numéro correspondant au serveur de votre service Exchange.<br>
+>Vous trouverez ces informations dans l'espace client OVHcloud, dans la section `Web Cloud`{.action}.  Ouvrez `Microsoft`{.action} dans le menu à gauche, puis `Exchange`{.action} et sélectionnez votre service. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.
 
 > [!primary]
 >
@@ -96,18 +97,18 @@ Dans nos guides, nous utilisons comme nom de serveur: ex<b>?</b>.mail.ovh.net. V
 
 ### L'enregistrement SRV du domaine n'est pas valide
 
-L'enregistrement SRV est essentiel à la configuration automatique de votre compte Exchange avec un logiciel de messagerie compatible tel que Microsoft Outlook.
+L'enregistrement SRV est sert à la configuration automatique de votre compte Exchange avec un logiciel de messagerie compatible tel que Microsoft Outlook.
 
 Vous pouvez vérifier ces paramètres dans la [zone DNS de votre domaine](../../domains/editer-ma-zone-dns/).
 
-Voici les valeurs obligatoires pour un service Exchange:
+Voici les valeurs pour un service Exchange:
 
 Champ | Valeur
 ------------ | -------------
 Priorité | 0
 Poids | 0
 Port | 443
-Cible | [Votre nom d'hôte](#hostname)
+Cible | [ex**?**.mail.ovh.net ](#hostname) (remplacer le « ? » par le numéro correspondant au serveur de votre service Exchange)
 
 ### L'email de test n'a pas pu être envoyé à partir du compte
 
