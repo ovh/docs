@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer vos groupes de téléphonie et déplacer vos
 section: Administratif
 ---
 
-**Dernière mise à jour le 06/04/2021**
+**Dernière mise à jour le 04/06/2021**
 
 ## Objectif
 
@@ -67,6 +67,11 @@ Sélectionnez d'abord le groupe qui contient actuellement les lignes souhaitées
 ![regrouper lignes](images/03-regrouper-02.png){.thumbnail}
 
 Cette action prend quelques minutes pour être prise en compte.
+
+#### Cas particulier des lignes liées à une offre Découverte
+
+Les lignes liées à un forfait découverte ne peuvent être déplacées dans un autre groupe de téléphonie.
+De même, il n'est pas possible d'intégrer d'autres lignes dans un groupe de téléphonie comportant une ligne découverte.
 
 #### Cas particulier des lignes liées à un accès à Internet OVHcloud
 
