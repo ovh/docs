@@ -4,7 +4,7 @@ slug: network-storage
 section: Services
 ---
 
-**Last updated 26th March 2021**
+**Last updated 3rd June 2021**
 
 
 

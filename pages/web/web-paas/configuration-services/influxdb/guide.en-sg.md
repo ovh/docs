@@ -4,7 +4,7 @@ slug: influxdb
 section: Services
 ---
 
-**Last updated 12th February 2021**
+**Last updated 3rd June 2021**
 
 
 ## Objective  
@@ -61,7 +61,25 @@ relationships:
     influxtimedb: "timedb:influxdb"
 ```  
 
-
+> You will need to use `influxdb` type when defining the service
+>
+> ```yaml
+> # .platform/services.yaml
+> service_name:
+>       type: influxdb:version
+>	disk:256
+> ```
+>
+> and the endpoint `influxdb` when defining the relationship
+>
+> ```yaml
+> # .platform.app.yaml
+>  relationships:
+>       relationship_name: “service_name:influxdb”
+> ```
+>
+> Your `service_name` and `relationship_name` are defined by you, but we recommend making them distinct from each other.
+>
 
 
 You can then use the service in a configuration file of your application with something like:
