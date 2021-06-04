@@ -22,7 +22,7 @@ Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel 
 ## Prérequis
 
 - Posséder une offre **MX Plan** ou une offre **E-mail Pro** ou une offre **Exchange**.
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
 
