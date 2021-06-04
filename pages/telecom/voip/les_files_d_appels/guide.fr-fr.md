@@ -250,6 +250,24 @@ Pour **supprimer des éléments de vos listes**, sélectionnez-les dans le table
 
 ![fileappels](images/configurer-file-appels-etape-20.png){.thumbnail}
 
+
+### Consulter les enregistrements <a name="enregistrements"></a>
+
+La file d'appels vous permet d'enregistrer les appels entrants sur votre numéro. 
+
+> [!primary]
+>
+> L'activation de l'enregistrement des appels entraînera le déclenchement automatique d'un message d'avertissement pré-configuré par OVHcloud lorsque votre file d'appels sera appelé. Ce message ne peut être supprimé ou modifié tant que l'enregistrement des appels est activé.
+>
+
+Pour activer l'enregistrement des appels, cliquez sur l'onglet `Enregistrements`{.action} en haut de page.
+
+![accès_enregistrements](images/acces-enregistrements.png){.thumbnail}
+
+Cliquez sur la case `Activé`{.action} pour activer l'enregistrement. Vous pouvez également laisser à vos appelants la possibilité de ne pas être enregistrés, via une touche à presser que vous pourrez choisir. 
+
+![activation_enregistrements](images/activation-enregistrements.png){.thumbnail}
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
