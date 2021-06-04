@@ -7,6 +7,8 @@ section: 'Diagnostic'
 order: 9
 ---
 
+**Dernière mise à jour le 04/06/2021**
+
 ## Objectif
 
 Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel de messagerie ou depuis le webmail ?
@@ -16,7 +18,13 @@ Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel 
 > [!primary]
 >
 > Si vous avez d'autres questions qui ne sont pas traitées par ce guide, n'hésitez pas à consulter notre [FAQ E-mail](https://docs.ovh.com/fr/emails/faq-emails/).
->
+
+## Prérequis
+
+- Posséder une offre **MX Plan** ou une offre **E-mail Pro** ou une offre **Exchange**.
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+
+## En pratique
 
 ### Mon offre e-mail et/ou mes comptes sont-ils actifs ?
 
@@ -50,13 +58,15 @@ Depuis le navigateur de votre ordinateur ou depuis un smartphone, allez sur l'ad
 
 ### Vous ne parvenez à vous connecter au webmail
 
-Assurez-vous d'avoir le bon mot de passe. Si nécessaire, vous pouvez le modifier. Vérifiez également si la double authentification est activée ([Exchange](https://www.ovh.com/fr/emails/hosted-exchange/) uniquement)
+Assurez-vous d'avoir le bon mot de passe. Si nécessaire, vous pouvez le modifier. Vérifiez également si la double authentification est activée ([Exchange](https://www.ovh.com/fr/emails/hosted-exchange/) uniquement).
+
+Voici comment modifier le mot de passe d'une adresse e-mail :
 
 - Pour une offre **MXplan**, consultez notre guide [Modifier le mot de passe d’une adresse e-mail MX Plan](https://docs.ovh.com/fr/emails/modifier-mot-de-passe-adresse-email/)
 
 - Pour une offre **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action} dans la colonne de gauche, puis sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe.
 
-- Pour une offre **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe . <br> Vérifiez si la double authentification est activée en consultant notre guide [Configurer la double authentification sur un compte Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configurer-2fa-exchange/).
+- Pour une offre **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe. <br> Vérifiez si la double authentification est activée en consultant notre guide [Configurer la double authentification sur un compte Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configurer-2fa-exchange/).
 
 ### Y a-t-il un incident ou une maintenance en cours sur mon service ?
 
@@ -72,7 +82,7 @@ Vérifiez que votre nom de domaine pointe correctement vers les serveurs e-mail 
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
-### Après l'envoi d'un e-mail, je reçois un message indiquant que mon e-mail n'a pas pu être envoyé, comprenant un code à 3 chiffres.
+### Après l'envoi d'un e-mail, je reçois un message indiquant que mon e-mail n'a pas pu être envoyé, comprenant un code à 3 chiffres
 
 Il s'agit d'un retour d'erreur SMTP. Cela indique que l'échange entre le serveur d'envoi et le serveur e-mail de réception n'a pas pu se faire correctement. Le code sert à déterminer le type d'erreur que le serveur a rencontré. Il est généralement accompagné d'un message détaillant cette erreur.
 
@@ -85,10 +95,10 @@ Il y a quatre valeurs possibles pour le premier chiffre du code de réponse :
 
 |Code|Description|  
 |---|---|  
-|2 xx|Réponse positive : l'action demandée a été effectuée avec succès. Une nouvelle demande peut être initiée.| 
-|3 xx|Réponse positive temporaire : la commande a été acceptée, mais l'action demandée est en attente de réception de plus amples informations. Le client SMTP devrait envoyer une autre commande spécifiant cette information.| 
-|4 xx|Réponse négative d'achèvement transitoire : la commande n'a pas été acceptée et l'action demandée n'a pas pu se produire. Toutefois, la condition de l'erreur est temporaire et l'action peut être demandée à nouveau.| 
-|5 xx|Réponse négative : la commande n'a pas été acceptée et l'action demandée n'a pas pu se produire. Le client SMTP ne devrait pas répéter la même demande.| 
+|2 xx|Réponse positive : l'action demandée a été effectuée avec succès. Une nouvelle demande peut être initiée.|
+|3 xx|Réponse positive temporaire : la commande a été acceptée, mais l'action demandée est en attente de réception de plus amples informations. Le client SMTP devrait envoyer une autre commande spécifiant cette information.|
+|4 xx|Réponse négative d'achèvement transitoire : la commande n'a pas été acceptée et l'action demandée n'a pas pu se produire. Toutefois, la condition de l'erreur est temporaire et l'action peut être demandée à nouveau.|
+|5 xx|Réponse négative : la commande n'a pas été acceptée et l'action demandée n'a pas pu se produire. Le client SMTP ne devrait pas répéter la même demande.|
 
 Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP utilisés par les serveurs :
 
