@@ -69,7 +69,7 @@ Dans ce cas, vous pouvez attendre que le compte soit de nouveau disponible ou co
 
 Pour plus d'informations sur cette fonctionnalité, consultez notre [guide sur la politique de sécurité](../gerer-politique-de-securite-mot-de-passe/).
 
-### L'authentification au webmail a échouée <a name="password"></a>
+### L'authentification au webmail a échoué <a name="password"></a>
 
 Cela peut être dû à la saisie d'un mot de passe de compte incorrect. Vérifiez d'abord que le mot de passe est correct, en vous connectant au [webmail](../exchange-2016-guide-utilisation-outlook-web-app/), puis redémarrez le diagnostic.
 
@@ -97,7 +97,7 @@ En fonction de l'utilisation de votre service Exchange, les serveurs MX suivants
 
 ### L'enregistrement SRV du domaine n'est pas valide
 
-L'enregistrement SRV est sert à la configuration automatique de votre compte Exchange avec un logiciel de messagerie compatible tel que Microsoft Outlook.
+L'enregistrement SRV sert à la configuration automatique de votre compte Exchange avec un logiciel de messagerie compatible tel que Microsoft Outlook.
 
 Vous pouvez vérifier ces paramètres dans la [zone DNS de votre domaine](../../domains/editer-ma-zone-dns/).
 
@@ -108,7 +108,7 @@ Champ | Valeur
 Priorité | 0
 Poids | 0
 Port | 443
-Cible | [ex**?**.mail.ovh.net ](#hostname) (remplacer le « ? » par le numéro correspondant au serveur de votre service Exchange)
+Cible | [ex**?**.mail.ovh.net ](#hostname) (remplacez le « ? » par le numéro correspondant au serveur de votre service Exchange)
 
 ### L'email de test n'a pas pu être envoyé à partir du compte
 
