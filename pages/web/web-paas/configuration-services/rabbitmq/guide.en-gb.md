@@ -4,7 +4,7 @@ slug: rabbitmq
 section: Services
 ---
 
-**Last updated 26th March 2021**
+**Last updated 3rd June 2021**
 
 
 
@@ -72,7 +72,25 @@ relationships:
     rabbitmqqueue: "queuerabbit:rabbitmq"
 ```  
 
-
+> You will need to use `rabbitmq` type when defining the service
+>
+> ```yaml
+> # .platform/services.yaml
+> service_name:
+>       type: rabbitmq:version
+>       disk: 512
+> ```
+>
+> and the endpoint `rabbitmq` when defining the relationship
+>
+> ```yaml
+> # .platform.app.yaml
+>  relationships:
+>       relationship_name: “service_name:rabbitmq”
+> ```
+>
+> Your `service_name` and `relationship_name` are defined by you, but we recommend making them distinct from each other.
+>
 
 
 You can then use the service in a configuration file of your application with something like:
