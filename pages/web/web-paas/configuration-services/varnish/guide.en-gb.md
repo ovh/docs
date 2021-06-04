@@ -4,7 +4,7 @@ slug: varnish
 section: Services
 ---
 
-**Last updated 31st March 2021**
+**Last updated 3rd June 2021**
 
 
 
