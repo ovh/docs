@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer vos groupes de téléphonie et déplacer vos
 section: Administratif
 ---
 
-**Dernière mise à jour le 06/04/2021**
+**Dernière mise à jour le 04/06/2021**
 
 ## Objectif
 
