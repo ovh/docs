@@ -54,7 +54,7 @@ Depuis le navigateur de votre ordinateur ou depuis un smartphone, allez sur l'ad
 
 ![webmail](images/webmail.png){.thumbnail}
 
-### Vous ne parvenez à vous connecter au webmail
+### Je ne parviens pas à me connecter au webmail
 
 Assurez-vous d'avoir le bon mot de passe. Si nécessaire, vous pouvez le modifier.
 
