@@ -111,7 +111,7 @@ Exemple : Vous avez importé les fichiers de votre site **mydomain.ovh** dans le
 
 Modifiez le `Dossier racine` en cliquant sur le bouton `...` à droite du tableau, puis `Modifier le domaine` :
 
-![change_root_folder](images/change_root_folder.png){.thumbnail}
+![modify_domain](images/modify_domain.png){.thumbnail}
 
 Cochez la case `Modifier également le sous domaine www` et indiquez le répertoire contenant le fichier **index** de votre site comme `Dossier racine`. Faites `Suivant` :
 
@@ -123,7 +123,7 @@ Puis `Valider` :
 
 Vous obtiendrez, sous quelques minutes, le résultat suivant : 
 
-![modify_domain](images/modify_domain.png){.thumbnail}
+![multisite_modified](images/multisite_modified.png){.thumbnail}
 
 > [!primary]
 >
