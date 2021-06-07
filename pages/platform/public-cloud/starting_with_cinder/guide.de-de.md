@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit der Volume-Verwaltung in der OpenStack API
+title: Erste Schritte mit der Volume-Verwaltung über die OpenStack API
 slug: api-openstack-volumes
 section: OpenStack
 order: 7
@@ -9,40 +9,40 @@ order: 7
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Stand 19.05.2021**
+**Letzte Aktualisierung am 19.05.2021**
 
 ## Ziel
 
-Zur Automatisierung Ihrer Operationen in der Public Cloud können Sie die OpenStack-APIs verwenden, um verschiedene Skripte zu erstellen.
-<br>Sie können zum Beispiel ein neues Volume vom Typ "High Performance" erstellen, um es an eine Public Cloud Instanz anzuhängen.
+Um Ihre Operationen für die Public Cloud zu automatisieren, können Sie die OpenStack API für die Erstellung verschiedener Skripte verwenden.
+<br>Sie können zum Beispiel ein neues Hochleistungsvolume erstellen, um es an eine Public Cloud Instanz anzuhängen.
 
-**Diese Anleitung hilft Ihnen dabei, die OpenStack-APIs zu verwenden, um Ihre Volumes mit dem OpenStack-Python-Client zu verwalten.**
+**Diese Anleitung erklärt, wie Sie die OpenStack API nutzen, um Ihre Volumes mit dem Python-Client zu verwalten.**
 
 ## Voraussetzungen
 
-- [Umgebung für die Verwendung der OpenStack-API vorbereiten](../vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/) durch die Installation von python-cinderclient und python-novaclient
-- [Laden der OpenStack-Umgebungsvariablen](../die-variablen-der-umgebung-openstack-laden/)
+- [Vorbereitung der Umgebung für die Verwendung der OpenStack API](../vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/) durch Installation des *python-cinderclient* und des *python-novaclient*
+- [Laden der OpenStack Umgebungsvariablen](../die-variablen-der-umgebung-openstack-laden/)
 
 ## In der praktischen Anwendung
 
 ### Cinder Dokumentation
 
-Die Liste der möglichen Bestellungen finden Sie in der Dokumentation des OpenStack-Clients:
+Alle existierenden Befehle können Sie der Dokumentation zum Client entnehmen:
 
 ```bash
 admin@server-1:~$ openstack help
 ```
 
-Hier die Liste der Hauptbestellungen:
+Hier die wichtigsten Befehle im Überblick:
 
 |Befehl|Beschreibung|
 |---|---|
-|Kreatvolumen|Ein neues Volume erstellen|
-|Volume Delete|Volume löschen|
-|Volume|Liste der Volumes|
-|Volume Snapshot Create|Erstellt einen Snaspshot mit einem|
+|volume create|Neues Volume erstellen|
+|volume delete|Volume löschen|
+|list volume|Volumes auflisten|
+|volume snapshot create|Snaspshot eines Volumes erstellen|
 
-Sie können auch Informationen zu einer bestimmten Bestellung erhalten, indem Sie `help` vor dieser hinzufügen:
+Sie können die Erklärung zu einem speziellen Swift-Befehl aufrufen, indem Sie "help" einfügen:
 
 ```bash
 admin@server-1:~$ openstack help volume snapshot create
@@ -65,12 +65,13 @@ optional arguments:
 
 > [!primary]
 >
-> Die Dokumentation des OpenStack-Clients ist auch direkt auf der [OpenStack-Seite einsehbar](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Sie können auch die Dokumentation zum OpenStack-Client auf der [OpenStack-Webseite](https://docs.openstack.org/python-openstackclient/latest/){.external} einsehen.
 >
+
 
 ### Einfache Operationen
 
-#### High Performance Volume erstellen
+#### Volume vom Typ "high speed" erstellen
 
 - Die Volume-Typen auflisten:
 
@@ -84,7 +85,7 @@ admin@server-1:~$ openstack volume type list
 +--------------------------------------+------------+-----------+
 ```
 
-- High-Speed-Volume mit 10 GB, Volume1, erstellen:
+- High-Speed-Volume namens **volume1** mit 10 GB erstellen:
 
 ``` bash
 admin@server-1:~$ openstack volume create --type high-speed --size 10 volume1
@@ -143,11 +144,11 @@ admin@server-1:~$ openstack volume create --type high-speed --image be66762f-b84
 +---------------------+--------------------------------------+
 ```
 
-wobei **be66762f-b849-43e1-b57c-005d9fe28088** der ID des Images Debian 10 entspricht.
+Hierbei ist **be66762f-b849-43e1-b57c-005d9fe28088** die Image-ID für "Debian 10".
 
-#### Volume mit einer Instanz verbinden
+#### Volume einer Instanz zuordnen
 
-- Die zusätzlichen Volumes auflisten:
+- Zusätzliche Volumes auflisten:
 
 ```bash
 admin@server-1:~$ openstack volume list
@@ -161,7 +162,7 @@ admin@server-1:~$ openstack volume list
 
 > [!primary]
 >
-> Für die meisten der folgenden Befehle muss die Volume-ID statt ihres Namens angegeben werden.
+> Für die meisten der nachfolgenden Befehle muss die Volume-ID statt des Namens angegeben werden.
 >
 
 - Volume mit dem OpenStack-Client auf einer Instanz mounten:
@@ -170,7 +171,7 @@ admin@server-1:~$ openstack volume list
 admin@server-1: openstack server add volume 46aec29f-fe50-4562-b3f9-2e6665a7270a f75db60b-4179-b-8-3ca-4-e9e e faf ef
 ```
 
-- Überprüfen Sie die korrekte Bindung des Volumes an die Instanz mit dem OpenStack-Client:
+- Überprüfen Sie mit dem OpenStack-Client, ob das Volume korrekt an die Instanz angehängt wurde:
 
 ```bash
 admin@server-1:~$ openstack volume list
