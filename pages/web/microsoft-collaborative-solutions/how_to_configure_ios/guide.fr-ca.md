@@ -73,8 +73,6 @@ OVHcloud propose également une application web disposant des [fonctions collabo
 
 [Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur un iPhone ou un iPad](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/){.external}.
 
-[Configurer son compte E-mail Pro sur un iPhone ou un iPad](https://docs.ovh.com/ca/fr/emails-pro/configuration-iphone/){.external}.
-
 [FAQ e-mails](https://docs.ovh.com/ca/fr/emails/faq-emails/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

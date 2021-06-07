@@ -1,7 +1,7 @@
 ---
 title: Parametry dostępu i bezpieczeństwa w interfejsie Horizon
 excerpt: Dowiedz się, jak zarządzać dostępem do instancji i zabezpieczyć dostęp do nich
-slug: dostęp-i-bezpieczenstwo-w-horizon
+slug: dostep-i-bezpieczenstwo-w-horizon
 section: Zarządzanie w interfejsie Horizon
 order: 4
 ---
