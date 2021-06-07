@@ -57,7 +57,7 @@ Veuillez consulter notre guide [Que faire en cas de compte bloqué pour spam ?](
 
 ### L'abonnement au compte est expiré <a name="expired"></a>
 
-Votre abonnement n'étant plus actif, l'envoi et la réception ont été désactivés. Vous pouvez [vérifier le statut de facturation du service](../gestion-facturation-exchange/) dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et le renouveler pour réactiver le compte.
+Votre abonnement n'étant plus actif, l'envoi et la réception ont été désactivés. Vous pouvez vérifier le statut de facturation du service dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et le renouveler pour réactiver le compte.
 
 ### Le compte est bloqué par la politique de sécurité
 
