@@ -80,4 +80,4 @@ When everything is up and running you see the **build status** as `Deployed` and
 
 ## Going Further
 
--   You can check the official documentation of the open source product **ML Serving** about [Models](https://serving-doc-mlg.ai.ovh.net/component/models.html)
+-   You can check the official documentation of the open source product **ML Serving** about [Models](../models)
