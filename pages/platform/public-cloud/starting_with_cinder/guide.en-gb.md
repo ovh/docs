@@ -10,15 +10,15 @@ order: 7
 
 ## Objective
 
-To automate your Public Cloud operations, you can use the OpenStack APIs to generate different scripts.
+You can use the OpenStack API to generate various scripts in order to automate your actions on the Public Cloud. 
 <br>For example, you can create a new high-performance volume to attach to a Public Cloud instance.
 
-**This guide will help you manage your OpenStack APIs, and manage your volumes using the OpenStack Python client.**
+**This guide will help you manage manage your volumes using the OpenStack API and the Python client.**
 
 ## Requirements
 
-- [Preparing the environment to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/) by installing python-cinderclient and python-novaclient
-- [Setting OpenStack environment variables](../set-openstack-environment-variables/)
+- Preparing the environment to [use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/) by installing *python-cinderclient* and *python-novaclient*
+- Setting the [OpenStack environment variables](../set-openstack-environment-variables/)
 
 ## Instructions
 
@@ -30,7 +30,7 @@ You can get a list of possible commands by reading the OpenStack client document
 admin@server-1:~$ openstack help
 ```
 
-Here is the list of main commands:
+Here is the list of the main commands:
 
 |Command|Description|
 |---|---|
@@ -62,7 +62,7 @@ optional arguments:
 
 > [!primary]
 >
-> You can also read the OpenStack customer’s documentation directly on [the OpenStack website](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> You can also consult the OpenStack documentation available on the [OpenStack website](https://docs.openstack.org/python-openstackclient/latest/){.external}.
 >
 
 ### Basic operations
@@ -140,7 +140,7 @@ admin@server-1:~$ openstack volume create --type high-speed --image be66762f-b84
 +---------------------+--------------------------------------+
 ```
 
-Where **be66762f-b849-43e1-b57c-005d9fe28088** is the Debian Image ID 10.
+In this command, **be66762f-b849-43e1-b57c-005d9fe28088** is the Debian 10 image ID.
 
 #### Attaching a volume to an instance
 
