@@ -20,15 +20,15 @@ Los errores en las cuentas de correo Exchange pueden tener múltiples causas. Un
 
 ## Requisitos
 
-- Tener una [solución Exchange de OVHcloud](https://www.ovh.es/emails/hosted-exchange/) ya instalada.
+- Tener una [solución Exchange de OVHcloud](https://www.ovh.com/world/es/emails/hosted-exchange/) ya instalada.
 - Disponer de las claves de acceso para la cuenta Exchange que debe verificar.
-- Estar conectado al [área de cliente de OVHcloud.](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Estar conectado al [área de cliente de OVHcloud.](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
 ## Procedimiento
 
 ### Realizar un diagnóstico
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Web Cloud`{.action}. Seleccione `Microsoft`{.action} en el menú de la izquierda, haga clic en `Exchange`{.action} y seleccione su servicio.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Web Cloud`{.action}. Seleccione `Microsoft`{.action} en el menú de la izquierda, haga clic en `Exchange`{.action} y seleccione su servicio.
 
 ![Diagnóstico Exchange](images/img_4450.png){.thumbnail}
 
@@ -60,11 +60,11 @@ Consulte nuestra guía ¿[Qué hacer en caso de cuenta bloqueada por spam?](../b
 
 ### La suscripción a la cuenta ha expirado. <a name="expired"></a>
 
-La suscripción ya no está activa, por lo que se ha desactivado el envío y la recepción. Puede [comprobar el estado de facturación del servicio](../gestion-de-la-facturacion-exchange/) en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y renovarlo para reactivar la cuenta.
+La suscripción ya no está activa, por lo que se ha desactivado el envío y la recepción. Puede comprobar el estado de facturación del servicio en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y renovarlo para reactivar la cuenta.
 
 ### La cuenta está bloqueada por la política de seguridad.
 
-Si una política de seguridad está activada en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), la cuenta puede bloquearse temporalmente.
+Si una política de seguridad está activada en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), la cuenta puede bloquearse temporalmente.
 
 Por ejemplo, puede decidir que la cuenta se bloquee después de varios intentos de conexión fallidos, por un período determinado por usted mismo.
 
@@ -76,17 +76,17 @@ Para más información sobre esta funcionalidad, consulte nuestra [guía sobre l
 
 Esto puede deberse a la introducción de una contraseña de cuenta incorrecta. En primer lugar, compruebe que la contraseña es correcta conectándose al [webmail](../exchange_2016_guia_de_uso_de_outlook_web_app/) y reinicie el diagnóstico.
 
-Si lo necesita, puede cambiar la contraseña de la cuenta en la pestaña `Cuentas de correo`{.action} del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Si el problema persiste, cree una solicitud de asistencia.
+Si lo necesita, puede cambiar la contraseña de la cuenta en la pestaña `Cuentas de correo`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Si el problema persiste, cree una solicitud de asistencia.
 
 ### El registro MX del dominio no es válido
 
-Este error indica que los mensajes de correo no pueden ser recibidos y que también estará relacionado con el error "**ATENCIÓN: El mensaje de correo de prueba no se ha recibido.** ".
+Este error indica que los mensajes de correo no pueden ser recibidos y que también estará relacionado con el error "**ATENCIÓN: El mensaje de correo de prueba no se ha recibido.**".
 
 En función del uso de su servicio Exchange, son válidos los siguientes servidores MX:
 
 - Solo Exchange: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net y mx4.mail.ovh.net
 - Exchange + Correo POP/IMAP alojado en OVHcloud: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net y mx4.mail.ovh.net
-- Exchange + Correo POP/IMAP no alojado en OVHcloud: ex\*\*?**.mail.ovh.net
+- Exchange + Correo POP/IMAP no alojado en OVHcloud: ex<b>?</b>.mail.ovh.net
 
 <a name="hostname"></a>
 

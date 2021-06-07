@@ -80,8 +80,6 @@ OVHcloud propose une application web permettant d'accéder à votre adresse e-ma
 
 [Configurer son compte Exchange sur un iPhone ou un iPad](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-ios-iphone-ipad/){.external}.
 
-[Configurer son compte E-mail Pro sur un iPhone ou un iPad](https://docs.ovh.com/ca/fr/emails-pro/configuration-iphone/){.external}.
-
 [FAQ e-mails](https://docs.ovh.com/ca/fr/emails/faq-emails/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
