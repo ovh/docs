@@ -148,6 +148,8 @@ Here is a checklist of aspects to take into account:
 - List of VMs being backed up
 - Backup settings
 
+Please refer to our guide on [activating and using Veeam Managed Backup](../veeam-backup-as-a-service/).
+
 **Automation tips:** OVHcloud API provides VM backup information attached to each VM via:
 
 > [!api]
@@ -156,8 +158,6 @@ Here is a checklist of aspects to take into account:
 >
 
 The “backup” section of the returning json will give information on current backup configuration.
-
-Please refer to our guide on [activating and using Veeam Managed Backup](../veeam-backup-as-a-service/).
 
 #### Inventory organisation
 

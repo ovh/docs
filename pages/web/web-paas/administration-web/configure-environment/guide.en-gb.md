@@ -4,7 +4,7 @@ slug: configure-environment
 section: Web
 ---
 
-**Last updated 11th May 2021**
+**Last updated 3rd June 2021**
 
 
 ## Objective  
@@ -40,7 +40,7 @@ git push origin :BRANCH-NAME
 ```
 
 > [!primary]  
-> The Master environment is protected. It cannot be deleted through the management console or the CLI, and should not be deleted through the API unless you are planning on configuring another branch to become the `default_branch` to replace it. See the [Renaming the default branch guide](../../guides-general/default-branch) for more information. 
+> The Master environment is protected. It cannot be deleted through the management console or the CLI, and should not be deleted through the API unless you are planning on configuring another branch to become the `default_branch` to replace it.
 > 
 
 ### Outgoing emails
