@@ -4,7 +4,7 @@ slug: migrating
 section: Drupal7
 ---
 
-**Last updated 11th May 2021**
+**Last updated 3rd June 2021**
 
 
 
@@ -65,7 +65,7 @@ web@[PROJECT-ID]-master--php:~$ mysql -h database.internal main < tmp/database.s
 
 ### With Drush
 
-You can use [*Drush site aliases*](http://docs.drush.org/en/master/usage/#site-aliases) to import your existing local files.
+You can use Drush site aliases to import your existing local files.
 
 ```bash
 $ drush rsync @platform._local:%files @platform.master:%files
