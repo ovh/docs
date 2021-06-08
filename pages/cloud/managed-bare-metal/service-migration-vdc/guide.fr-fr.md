@@ -77,11 +77,11 @@ La migration implique de refaire la configuration du VMware High Availability (H
 
 Voici une liste d'éléments à prendre en compte :
 
-- Réglages de monitoring du host
-- Réglages de monitoring des VM
-- Contrôle d'admission
-- Options HA avancées
-- Remplacements de VM
+* Réglages de monitoring du host
+* Réglages de monitoring des VM
+* Contrôle d'admission
+* Options HA avancées
+* Remplacements de VM
 
 **Conseils d'automatisation :**
 L'applet de commande Powercli « Get-Cluster » renvoie des informations sur les paramètres de configuration HA et DRS qui peuvent être appliqués au cluster de destination avec l'applet de commande « Set-Cluster ».
@@ -92,10 +92,10 @@ La migration implique la reconfiguration de la fonction VMware DRS (Distributed 
 
 Voici une liste des éléments à prendre en compte:
 
-- Niveau d'automatisation
-- Groupes de VMs / d'hôtes
-- Règles d'affinité / d'anti-affinité des VMs / hôtes
-- Remplacements des machines virtuelles
+* Niveau d'automatisation
+* Groupes de VMs / d'hôtes
+* Règles d'affinité / d'anti-affinité des VMs / hôtes
+* Remplacements des machines virtuelles
 
 **Conseils d'automatisation :** [Ce fil de discussion de la communauté VMware](https://communities.vmware.com/t5/VMware-PowerCLI-Discussions/Backup-Restore-DRS-VM-affinity-anti-affinity-rules-can-these-be/td-p/733981/page/2) détaille les options d'exportation et d'importation des règles d'affinité via powercli.
 
@@ -107,10 +107,10 @@ Pour plus d'informations, consultez la documentation de [VMware pour la gestion 
 
 Voici une liste d'éléments à prendre en compte:
 
-- Paramètres des partages CPU/mémoire
-- Réservations CPU/mémoire
-- Option évolutive CPU/Memory
-- Limites CPU/mémoire
+* Paramètres des partages CPU/mémoire
+* Réservations CPU/mémoire
+* Option évolutive CPU/Memory
+* Limites CPU/mémoire
 
 **Conseils d'automatisation :** L'applet de commande Powercli « Get-ResourcePool » pour rassembler les informations de la liste de ressources partagées et l'applet de commande « New-ResourcePool » pour recréer la liste de ressources partagées sur le vDC de destination.
 
@@ -120,10 +120,10 @@ Si des clusters de datastores sont présents dans l'infrastructure d'origine, la
 
 Voici une liste des éléments à prendre en compte:
 
-- Niveau d'automatisation SDRS
-- Espace SDRS, I/O, règle, stratégie, paramètres d'évacuation des VMs
-- Règles d'affinité/anti-affinité SDRS
-- Modifications des VMs SDRS
+* Niveau d'automatisation SDRS
+* Espace SDRS, I/O, règle, stratégie, paramètres d'évacuation des VMs
+* Règles d'affinité/anti-affinité SDRS
+* Modifications des VMs SDRS
 
 ##### **Réseaux**
 
@@ -131,10 +131,10 @@ La migration implique la recréation des groupes de ports virtuels de vRack sur 
 
 Voici une liste des éléments à prendre en compte:
 
-- Type de VLAN des portgroups
-- Paramètres de sécurité
-- Paramètres de Teaming et de Failover
-- Allocation des ressources réseau du client
+* Type de VLAN des portgroups
+* Paramètres de sécurité
+* Paramètres de Teaming et de Failover
+* Allocation des ressources réseau du client
 
 Pour plus d'informations, consultez la documentation de VMware :
 <br>- [Paramètres généraux des portgroups](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html) 
@@ -148,8 +148,8 @@ Si l'application Veeam fournie par OVHcloud est actuellement utilisée pour sauv
 
 Voici une liste des éléments à prendre en compte:
 
-- Liste des VMs en cours de sauvegarde
-- Paramètres de sauvegarde
+* Liste des VMs en cours de sauvegarde
+* Paramètres de sauvegarde
 
 Consultez notre guide pour [activer et utiliser Veeam Backup Managed](../veeam-backup-as-a-service/).
 
