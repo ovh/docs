@@ -5,7 +5,7 @@ section: Administration
 order: 11
 ---
 
-**Last updated 11th May 2021**
+**Last updated 3rd June 2021**
 
 
 ## Objective  
@@ -84,7 +84,7 @@ These options are provided in a separate dialog box that will appear when you cl
 
 ![sync confirmation cli](images/header-sync-box.png "0.4")
 
-Be aware that sync uses the backup mechanism and will have the same caveats.
+Be aware that sync uses the [Backup](../administration-backup-and-restore#backups-and-downtime) mechanism and will have the same caveats.
 
 Note that `Sync` is only available if your branch has no unmerged commits, and can be fast-forwarded.
 
@@ -92,7 +92,7 @@ It is good practice to take a backup of your environment before performing a syn
 
 #### Backup
 
-Creating a backup for an environment means saving a copy of the environment so that it can be restored. You will see the backup in the activity feed of your environment in the Web PaaS management console where you can trigger the restore by clicking on the `restore` link. 
+Creating a backup for an environment means saving a copy of the environment so that it can be restored. You will see the backup in the activity feed of your environment in the Web PaaS management console where you can trigger the restore by clicking on the `restore` link. For more information please refer [here](../administration-backup-and-restore).
 
 After clicking `Backup` a dialog box will appear that will provide commands to execute future merges from the command line using the Web PaaS CLI.
 
@@ -120,7 +120,7 @@ The URLs pull-down exposes the domains that can be used to access application en
 
 The "Git" pull-down displays the commands to use to clone the codebase via Git. If you are using Web PaaS as your primary remote repository, the command shown will clone from the project. Otherwise if you have set up an [external integration](../integrations-source), the command will clone directly from the integrated remote repository.
 
-If the project uses an external integration to a repository that you have not been given access to, you will not be able to clone until your access has been updated. See [User access and integrations](../administration-users#user-access-and-integrations) for more information.
+If the project uses an external integration to a repository that you have not been given access to, you will not be able to clone until your access has been updated.
 
 #### CLI
 
