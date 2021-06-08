@@ -1,114 +1,130 @@
 ---
-title: 'Diagnóstico Exchange: O que fazer em caso de erro?'
-excerpt: 'Diagnóstico Exchange: O que fazer em caso de erro?'
+title: 'Utilização do diagnóstico de erros Exchange'
+excerpt: 'Saiba como realizar um diagnóstico automatizado dos erros nas contas Exchange'
 slug: diagnostico_exchange_o_que_fazer_em_caso_de_erro
 legacy_guide_number: g2277
+section: Diagnóstico Exchange
+order: 1
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Efetuar um diagnóstico
-Aceda ao seu Espaço Cliente a partir deste link: [Espaço cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+**Última atualização: 28/05/2021**
 
-Após estar ligado selecione na coluna da esquerda o menu Microsoft e depois clique no seu serviço Exchange.
+## Objetivo
 
-![](images/img_4450.jpg){.thumbnail}
-Clique de seguida no separador "Diagnóstico", devendo depois introduzir a conta de e-mail Exchange e a respetiva password para dar inicio ao diagnóstico.
+Os erros nas contas de e-mail Exchange podem ter várias causas. Um diagnóstico automático das funcionalidades da conta permite reduzir este número de causas. Os resultados destes testes também serão úteis em caso de pedido de assistência relativo ao seu serviço Exchange.
 
-O diagnóstico Exchange poderá levar entre 3 e 10 minutos.
+**Saiba como lançar um diagnóstico Exchange e interpretar os resultados.**
 
-![](images/img_4451.jpg){.thumbnail}
-Deixamos um exemplo do resultado do diagnóstico de uma conta Exchange:
+## Requisitos
 
+- Dispor de uma [solução Exchange OVHcloud](https://www.ovh.pt/emails/hosted-exchange/) já instalada
+- Dispor das informações de identificação para a conta Exchange a verificar
+- Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
-- Novo diagnóstico: Efetuar um novo diagnóstico
+## Instruções
 
-- Criar um pedido de assistência: Permite a criação de um ticket para o nosso suporte com o resultado do seu diagnóstico
+### Realizar um diagnóstico
 
+Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}. Selecione `Microsoft`{.action} no menu à esquerda e clique em `Exchange`{.action} e selecione o seu serviço.
 
+![Diagnóstico Exchange](images/img_4450.png){.thumbnail}
 
-![](images/img_4471.jpg){.thumbnail}
+Clique no separador `Diagnósticos`{.action} e selecione a conta Exchange correspondente no menu pendente. Introduza a palavra-passe da conta no campo previsto para este efeito e clique em `Iniciar o diagnóstico`{.action}.
 
+![Diagnóstico Exchange](images/img_4451.png){.thumbnail}
 
-## Ocorreram erros no seu diagnóstico?
-Vamos detalhar cada erro de forma a que tenha uma ajuda quanto à sua resolução:
+O diagnóstico demorará cerca de 3 a 10 minutos. Eis um exemplo:
 
+![Diagnóstico Exchange](images/img_4471.png){.thumbnail}
 
-- ATENÇÃO: A conta está bloqueada por envio de spam:
+A página de resultados propõe duas ações para continuar:
 
+- `Novo diagnóstico`{.action}: lança outro diagnóstico.
 
-Este erro indica que o envio de e-mail a partir da sua conta está temporariamente desativado. Não haverá problemas quanto à receção de e-mails.
+- `Criar um pedido de assistência`{.action}: permite-lhe criar um ticket junto do nosso suporte técnico. O ticket conterá os resultados do diagnóstico.
 
-Quando uma conta é bloqueada por SPAM é possível verificar, no serviço Exchange e na secção de e-mail, uma tag SPAM. Ao clicar nela será reencaminhado para o e-mail recebido no seguimento do bloqueio.
+### Explicações dos erros
 
-É necessário responder a este e-mail para que solicite o desbloqueio da conta.
+Recorra ao seguinte resumo dos erros possíveis para encontrar a solução mais rápida.
 
-![](images/img_4453.jpg){.thumbnail}
+### A conta está bloqueada por envio de spam <a name="blocked"></a>
 
-- ATENÇÃO: A subscrição da conta expirou:
+Uma conta bloqueada recebe sempre e-mails mas o envio foi desativado pelo sistema de proteção automática contra spam.
 
+Pode verificá-lo no separador `Contas de e-mail`{.action} do seu serviço Exchange. A conta terá uma menção `SPAM` na coluna "Estado" do quadro.
 
-Neste caso a sua subscrição já não se encontra ativa. A receção e o envio estão desativados. É então necessário que contacte o nosso suporte para que o serviço seja reativado.
+Consulte o nosso guia [O que fazer em caso de conta bloqueada por spam?](../bloqueado-por-spam/) para permitir às nossas equipas de segurança reativar a conta.
 
-- ATENÇÃO: A conta está bloqueada devido à política de segurança:
+### A subscrição à conta expirou <a name="expired"></a>
 
+Uma vez que a sua subscrição já não está ativa, o envio e a receção foram desativados. Pode [verificar o estado de faturação do serviço](../gestao-faturacao-exchange/) na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e renová-lo para reativar a conta.
 
-É possível que defina no seu serviço Exchange uma política de segurança. Ela pode levar ao bloqueio da conta durante um determinado prazo aquando da configuração desta política.
+### A conta está bloqueada pela política de segurança
 
-Pode definir que a conta seja bloqueada após um determinado número de tentativas de ligação durante um prazo que também pode definir.
+Se uma política de segurança estiver ativa na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), a conta pode ser temporariamente bloqueada.
 
-Se encontrar um bloqueio a este nível deverá aguardar até que o prazo indicado seja ultrapassado de forma a que a sua conta seja desbloqueada ou contacte o nosso suporte ao criar um pedido de assistência.
+Pode, por exemplo, decidir que a conta será bloqueada após várias tentativas de ligação sem efeito, por um período determinado por si.
 
-- ATENÇÃO: A autenticação ao webmail falhou:
+Neste caso, pode aguardar que a conta esteja de novo disponível ou contactar as nossas equipas Exchange criando um pedido de assistência.
 
+Para mais informações sobre esta funcionalidade, consulte o nosso [guia sobre a política de segurança](../gerir-politica-de-seguranca-palavra-passe/).
 
-Este erro pode ocorrer caso a password introduzida aquando do pedido de realização do diagnóstico não é a correta, e neste caso deve efetuar um novo diagnóstico.
+### A autenticação ao webmail falhou <a name="password"></a>
 
-Pode igualmente atualizar a password a partir do seu serviço Exchange, separador conta de e-mail e depois relance o diagnóstico. Se o problema persistir crie um pedido de assistência.
+Isto pode dever-se à introdução de uma palavra-passe de conta incorreta. Verifique primeiro que a palavra-passe está correta, ligando-se ao [webmail](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/) e reinicie o diagnóstico.
 
-- ATENÇÃO: O rgisto MX do domínio não é válido:
+Se necessário, pode alterar a palavra-passe da conta em causa no separador `Contas de e-mail`{.action} na sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Se o problema persistir, crie um pedido de assistência.
 
+### O registo MX do domínio não é válido
 
-Este erro indica uma impossibilidade de receção d e-mails e será igualmente associado a este erro: ATENÇÃO: O e-mail de teste não foi recebido.
+Este erro indica que os e-mails não podem ser recebidos e estará também associado a este erro "**ATENÇÃO: O e-mail de teste não foi recebido.** ".
 
-Veja os servidores MX que validam a sua oferta Exchange:
+Em função da utilização do seu serviço Exchange, os seguintes servidores MX são válidos:
 
+- Exchange sozinho: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net e mx4.mail.ovh.net
+- Exchange + E-mail POP/IMAP alojado pela OVHcloud: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net e mx4.mail.ovh.net
+- Exchange + E-mail POP/IMAP não alojado pela OVHcloud: ex<b>?</b>.mail.ovh.net
 
-- Apenas Exchange: mx1.mail.ovh.net
-- Exchange + E-mail pop/imap alojado pela OVH: mx1.mail.ovh.net
-- Exchange + E-mail pop/imap não alojado pela OVH: ex.mail.ovh.net ou ex2.mail.ovh.net
+<a name="hostname"></a>
 
+> [!warning]
+> Nos nossos guias, utilizamos como nome de servidor: ex<b>?</b>.mail.ovh.net. Deverá substituir o "? " pelo número correspondente ao servidor do seu serviço Exchange.<br>
+> Encontrará estas informações na Área de Cliente OVHcloud, na secção `Web Cloud`{.action}.  Abra `Microsoft`{.action} no menu à esquerda, depois `Exchange`{.action} e selecione o seu serviço. O nome do servidor aparece na zona **Ligação** do separador `Informações gerais`{.action}.
+>
 
+> [!primary]
+>
+> O nome técnico de um serviço Exchange OVHcloud é composto por um prefixo (**hosted-** ou **private-**), uma parte do seu "identificador de cliente" e um número incremental que indica o número de serviços Exchange alojados ou privados registados na sua conta de cliente.
+>
 
-- ATENÇÃO: O registo SRV do domínio não é válido:
+### O registo SRV do domínio não é válido
 
+O registo SRV serve para a configuração automática da sua conta Exchange com um software de mensagens compatível como o Microsoft Outlook.
 
-O registo SRV é necessário para a configuração automática da sua conta Exchange num software de e-mails compatível como o Outlook 2010, 2013 e 2016.
+Pode verificar estes parâmetros na [zona DNS do seu domínio](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
 
-Pode verificar os seus campos SRV na zona DNS do seu domínio.
+Eis os valores para um serviço Exchange:
 
-Veja o campo SRV necessário para uma oferta Exchange:
+Campo | Valor
+------------ | -------------
+Prioridade | 0
+Peso | 0
+Porta | 443
+Destino | [ex<b>?</b>.mail.ovh.net](#hostname)(substituir o "?" pelo número correspondente ao servidor do seu serviço Exchange)
 
-|A prioridade|0|
-|O peso|0|
-|A porta|443|
-|O alvo oferta Hosted| ex.mail.ovh.net ou ex2.mail.ovh.net |
-|O alvo oferta Private| O-nome-do-seu-host|
+### O e-mail de teste não pôde ser enviado a partir da conta
 
+Este erro indica um erro geral de envio de e-mails que pode ter várias causas:
 
+- [A sua conta foi suspensa](#expired)
+- [A password introduzida está incorreta](#password)
+- [A sua conta foi bloqueada devido ao envio de correio indesejável](#blocked)
+- [Ocorreu um incidente na infraestrutura](http://travaux.ovh.net/?project=31&status=all&perpage=50)
 
-- ATENÇÃO: O e-mail de teste não pôde ser enviado a partir da conta
+## Saiba mais
 
-
-Este erro indica uma impossibilidade de enviar um e-mail a partir da sua conta.
-
-Poderão haver então várias causas. A saber:
-
-
-- A sua conta está suspensa
-- A password indicada não está correta
-- A sua conta está bloqueada por envio de SPAM
-- Um incidente na infraestrutura Exchange
-
-
-Neste caso consulte as indicações dadas em cima para corrigir este erro ou declarar um pedido de assistência no seguimento do seu diagnóstico.
-
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

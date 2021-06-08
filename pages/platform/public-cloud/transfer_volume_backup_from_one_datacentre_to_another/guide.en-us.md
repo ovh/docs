@@ -22,7 +22,7 @@ Before following these steps, it’s recommended that you first complete this gu
 
 You will also need the following:
 
-* a [Public Cloud Instance]({ovh_www}/public-cloud/instances/){.external} in your OVHcloud account
+* a [Public Cloud Instance](https://www.ovhcloud.com/en/public-cloud/){.external} in your OVHcloud account
 * administrative (root) access to your datacentre via SSH
 
 > [!primary]

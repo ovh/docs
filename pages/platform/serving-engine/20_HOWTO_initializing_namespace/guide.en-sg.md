@@ -65,4 +65,4 @@ Your container should appear in the list.
 
 ## Going Further
 
--   You can check the official documentation of the open source product **ML Serving** about [Namespaces](https://serving-doc-mlg.ai.ovh.net/component/namespaces.html)
+-   You can check the official documentation of the open source product **ML Serving** about [Namespaces](../namespaces)
