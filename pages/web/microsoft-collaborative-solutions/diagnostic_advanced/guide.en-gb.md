@@ -82,10 +82,10 @@ Depending on your Exchange service usage, the following MX servers are valid:
 - Exchange only: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
 - Exchange & POP/IMAP email hosted by OVHcloud: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
 - Exchange & POP/IMAP email not hosted by OVHcloud: ex<b>?</b>.mail.ovh.net
-
 <a name="hostname"></a>
+
 > [!warning]
-> In our guides, we use as the server name: ex<b>?</b>.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server > for your Exchange service.
+> In our guides, we use as the server name: ex<b>?</b>.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server  for your Exchange service.
 >
 > You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} section: Open `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action} and select your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
