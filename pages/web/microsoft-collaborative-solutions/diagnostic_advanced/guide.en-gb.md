@@ -79,8 +79,8 @@ This error indicates that emails cannot be received and it is also linked to the
 
 Depending on your Exchange service usage, the following MX servers are valid:
 
-- Exchange only: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
-- Exchange & POP/IMAP email hosted by OVHcloud: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange only: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange & POP/IMAP email hosted by OVHcloud: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
 - Exchange & POP/IMAP email not hosted by OVHcloud: ex<b>?</b>.mail.ovh.net
 <a name="hostname"></a>
 
@@ -90,11 +90,6 @@ Depending on your Exchange service usage, the following MX servers are valid:
 > You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} section: Open `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action} and select your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
-
-> [!primary]
->
-> The technical name of an OVHcloud Exchange service consists of a prefix (**hosted-** or **private-**), a part of your customer ID, and an incremental number indicating how many Hosted or Private Exchange services have been registered in your customer account.
->
 
 ### The domain's SRV record is not valid
 
