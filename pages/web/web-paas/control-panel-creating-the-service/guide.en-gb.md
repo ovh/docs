@@ -6,7 +6,7 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 1st April 2021**
+**Last updated 28th May 2021**
 
 ## Objective
 
@@ -19,17 +19,6 @@ OVHcloud Web PaaS powered by Platform.sh enables web developers to manage, devel
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - visiting the [product page](https://www.ovhcloud.com/en-gb/web-paas/) to decide which plan is suitable for your project's requirements
 
-> [!warning]
-> **Beta restrictions**
->
-> This service is currently in the beta phase. Some of the service options of the full Web PaaS solution mentioned below are not available:
->
-> - Only one project can be created per OVHcloud customer account.
-> - Only the **Start** plan is available (free of charge, not upgradeable).
-> - Only one user (type admin) will be created.
-> - Storage is limited to 5 GB.
-> - Projects are located in a fixed region.
-
 ## Instructions
 
 ### Subscribing to the service
@@ -38,42 +27,45 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 Select `Web PaaS`{.action} in the services bar on the left-hand side, then click on the button `New project`{.action}.
 
-![order service](images/creation_manager_beta01.png){.thumbnail}
+![order service](images/creation_manager01.png){.thumbnail}
 
-#### Step 1: Choose a plan (restricted for beta)
+#### Step 1: Name your project
 
-Select a plan that best suits your needs after verifying the details on the [product page](https://www.ovhcloud.com/en-gb/web-paas/). You can upgrade the project later in the Control Panel.
+Give your project a name and click on `Next`{.action}.
+
+#### Step 2: Choose a plan
+
+Select a plan that best suits your needs after verifying the details and capabilities on the [product page](https://www.ovhcloud.com/en-gb/web-paas/). If necessary, increase the number of vCPUs in the drop-down menu of the chosen solution.
+
+You can upgrade or downgrade the project later in the Control Panel. Note that a downgrade to the `Start`{.action} plan will not be possible after creating the project.
 
 ![choose plan](images/creation_manager02.png){.thumbnail}
 
-#### Step 2: Enter project details (restricted for beta)
+#### Step 3: Select the region
 
-Give your project a name and choose a region near you in this step.
+Choose the geographical region of the data centre in which your project will be hosted.
 
 ![project details](images/creation_manager03.png){.thumbnail}
+ 
+#### Step 4: Select the project type
 
-#### Step 3: Select the project type
+- If the project relies on your own pre-existing code, you will be able to import it: click on `Create your template`{.action} and continue with `Next`{.action}.
 
-- If the project relies on your own code, you will be able to import it: click on `Create your template`{.action} in this step.
-
-- If you click on `Select an existing template`{.action}, a list of available templates will be displayed.
+- If you click on `Select an existing template`{.action}, the list of available templates will be displayed along with their properties. You can check the [product page FAQ](https://www.ovhcloud.com/en-gb/web-paas/) to find out which templates are included in the respective plan. Select one and click on `Next`{.action}.
 
 ![project type](images/creation_manager04.png){.thumbnail}
 
-#### Step 4: Configure your project (restricted for beta)
+#### Step 5: Configure your project
 
-In this step you can choose options for the project, according to the plan you have selected. Please refer to our [product page](https://www.ovhcloud.com/en-gb/web-paas/) for details about the available
-**Storage**, **Environments** and **User licenses** for each plan. 
+In this step you can choose additional resources for the project, according to the plan you have selected. Please refer to our [product page](https://www.ovhcloud.com/en-gb/web-paas/) for details about the available **Environments**, **Storage**, and **User licenses** for each plan.
 
 ![configure details](images/creation_manager05.png){.thumbnail}
 
-#### Step 5: Proceed to complete your order
+Note that it will not be possible to downgrade **Storage** after it has been increased.
 
-> [!primary]
-> During the beta phase, you only need to click on `Confirm`{.action} to accept the contract.
->
+#### Step 6: Proceed to complete your order
 
-Finally, take note of the payment information and click on `Order`{.action} to confirm. This will start the payment process.
+Finally, review the order summary and click on `Create project`{.action} to confirm. This will initiate the payment process.
 
 > [!primary]
 > You can order the service from the [product page](https://www.ovhcloud.com/en-gb/web-paas/) as well.
@@ -82,7 +74,7 @@ Finally, take note of the payment information and click on `Order`{.action} to c
 
 After the payment is completed, the project will be deployed and you will be able to log in to the Management Console from the OVHcloud Control Panel.
 
-### Step 5: Verifying the project's deployment in the Management Console
+### Step 7: Check the deployment of your project in the Management Console
 
 On your project's `General information` page, click on `Access project`{.action} in the **Management interface** section. 
 
@@ -92,17 +84,7 @@ You will be redirected to the `OVERVIEW` tab of the Web PaaS Management Console.
 
 ![console project](images/manage_console02.png){.thumbnail}
 
-### Managing the service in the Control Panel (restricted for beta)
-
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action} in the top navigation bar. Click on `Web PaaS`{.action} in the left-hand sidebar an select your project.
-
-The `General information` page displays the basic configuration options of the project. Use the **Management interface** section for the following actions:
-
-- Access project: opens the Management Console of your project.
-- New project: begins the process of ordering a new project.
-- Delete project: will delete the project after confirming the action in the popup window. 
-
-To upgrade the project, click on `Upgrade`{.action} in the **General information** box.
+The "Go further" section below contains links to some useful guides for the next steps.
 
 
 ## Go further
@@ -112,5 +94,7 @@ To upgrade the project, click on `Upgrade`{.action} in the **General information
 [Configuring the CLI](../development-cli/)
 
 [Using YAML](../configuration-yaml/)
+
+[Managing Web PaaS from the OVHcloud Control Panel](../web-paas-managing-service/)
 
 Join our community of users on <https://community.ovh.com/en/>.
