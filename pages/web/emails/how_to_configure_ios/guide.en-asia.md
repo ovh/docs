@@ -43,7 +43,7 @@ On your device’s home screen, go to `Settings`{.action} (cogwheel icon). There
 |---|---|
 |![iPhone](images/configuration-mail-ios-step01.gif){.thumbnail}|1. In `Settings`, go to `Mail`. <br><br> 2. Tap `Accounts`.<br><br> 3. Tap `Add Account`.<br><br> 4. Choose `Other` at the bottom.|
 |5. Tap `Add Mail Account`.<br><br>6. Enter your **name**, **email** address, **password** and account **description**.<br><br>7. Press `Next`.|![iPhone](images/configuration-mail-ios-step02.png){.thumbnail}|
-|![iPhone](images/configuration-mail-ios-step03.png){.thumbnail}|8. Select `IMAP` (recommended) or `POP`.<br><br>In the `INCOMING MAIL SERVER` and `OUTGOING MAIL SERVER` sections, despite the word "optional", enter: <br>- the hostnames **imap.mail.ovh.ca** (IN) / **smtp.mail.ovh.ca** (OUT) <br>- your **full email address** as username <br>- your email password|
+|![iPhone](images/configuration-mail-ios-step03-ca.png){.thumbnail}|8. Select `IMAP` (recommended) or `POP`.<br><br>In the `INCOMING MAIL SERVER` and `OUTGOING MAIL SERVER` sections, despite the word "optional", enter: <br>- the hostnames **imap.mail.ovh.ca** (IN) / **smtp.mail.ovh.ca** (OUT) <br>- your **full email address** as username <br>- your email password|
 
 At the end of the configuration process, ensure that you leave `Mail`{.action} ticked, so that the application can use this account, then click `Save`{.action}.
 

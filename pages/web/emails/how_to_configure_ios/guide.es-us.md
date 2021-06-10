@@ -46,7 +46,7 @@ En la pantalla de bienvenida de su dispositivo, acceda a `Ajustes`{.action} (ico
 |---|---|
 |![exchange](images/configuration-mail-ios-step01.gif){.thumbnail}|1. En `Ajustes`, vaya a `Mail`. <br><br> 2. Pulse `Cuentas`.<br><br> 3. Pulse `Añadir cuenta`.<br><br> 3.4. Seleccione `Otro` abajo.|
 |5. Pulse `Añadir cuenta de correo`.<br><br>6. Introduzca su **nombre**, dirección **de correo electrónico**, **contraseña** y una **descripción** de su cuenta.<br><br>7. Pulse `Siguiente`.|![exchange](images/configuration-mail-ios-step02.png){.thumbnail}|
-|![exchange](images/configuration-mail-ios-step03.png){.thumbnail}|8. Seleccione el tipo de servidor de recepción `IMAP` (recomendado) o `POP`.<br><br>En las secciones `SERVIDOR DE RECEPCIÓN` y `SERVIDOR DE ENVÍO`, a pesar de la indicación "opcional", escriba: <br>- nombre del host **ssl0.ovh.net** <br>- su **dirección de correo electrónico completa** en nombre de usuario <br>- la contraseña de su dirección de correo electrónico|
+|![exchange](images/configuration-mail-ios-step03-ca.png){.thumbnail}|8. Seleccione el tipo de servidor de recepción `IMAP` (recomendado) o `POP`.<br><br>En las secciones `SERVIDOR DE RECEPCIÓN` y `SERVIDOR DE ENVÍO`, a pesar de la indicación "opcional", escriba: <br>- nombre del host **imap.mail.ovh.ca**(RECEPCIÓN) y **smtp.mail.ovh.ca** (ENVÍO) <br>- su **dirección de correo electrónico completa** en nombre de usuario <br>- la contraseña de su dirección de correo electrónico|
 
 Al finalizar la configuración, asegúrese de dejar `Mail`{.action} marcado para que la aplicación pueda utilizar la cuenta y haga clic en `Guardar`{.action}.
 
@@ -58,15 +58,15 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|Sí|993|
-|Saliente|ssl0.ovh.net|Sí|465|
+|Entrante|imap.mail.ovh.ca|Sí|993|
+|Saliente|smtp.mail.ovh.ca|Sí|465|
 
 - **Configuración en POP**
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|Sí|995|
-|Saliente|ssl0.ovh.net|Sí|465|
+|Entrante|pop.mail.ovh.ca|Sí|995|
+|Saliente|smtp.mail.ovh.ca|Sí|465|
 
 ### Utilizar la dirección de correo
 
