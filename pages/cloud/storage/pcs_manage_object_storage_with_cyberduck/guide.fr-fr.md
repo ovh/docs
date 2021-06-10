@@ -17,7 +17,7 @@ Si vous n'êtes pas familiarisé avec la gestion du stockage en ligne de command
 
 ## Prérequis
 
-- Avoir [accès à l'interface Horizon](../../public-cloud/creer-un-acces-a-horizon/)
+- Télécharger et installer [Cyberduck](https://cyberduck.io/)
 - Disposer de vos identifiants utilisateur (*OS_USERNAME*) et de projet (*OS_PROJECT_NAME*), que vous pouvez obtenir en téléchargeant le fichier OpenRC dans le menu [Users and Roles](../../public-cloud/charger-les-variables-denvironnement-openstack/#etape-1-recuperer-les-variables) de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Disposer de votre mot de passe d'utilisateur OpenStack.
 
@@ -27,8 +27,7 @@ Si vous n'êtes pas familiarisé avec la gestion du stockage en ligne de command
 
 ## En pratique
 
-- Téléchargez [Cyberduck](https://cyberduck.io/)
-- Ouvrez une connexion « OpenStack Swift (Keystone 3) »
+Dans Cyberduck, ouvrez une connexion « OpenStack Swift (Keystone 3) »
 
 ![objectstorage-cyberduck](images/login.png){.thumbnail}
 
@@ -38,7 +37,7 @@ Renseignez les informations suivantes :
 - Project:Domain:Username : OS_PROJECT_NAME:default:OS_USERNAME
 - Mot de passe : le mot de passe de votre utilisateur OpenStack
 
-Cliquez alors sur `Connecter`{.action}
+Cliquez alors sur `Connecter`{.action}. Une fois connecté, vous aurez accès à l'arborescence de vos dossiers et fichiers.
 
 ![objectstorage-cyberduck](images/successful-login.png){.thumbnail}
 
