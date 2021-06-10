@@ -1,96 +1,136 @@
 ---
-title: Zaawansowane korzystanie z e-maili OVH
-excerpt: Zaawansowane korzystanie z e-maili OVH
+title: 'Wysyłanie lub otrzymywanie e-maili niemożliwe'
 slug: zaawansowane_korzystanie_z_e-maili_ovh
-legacy_guide_number: g2117
+legacy_guide_number: 2117
+excerpt: "Dowiedz się, jak należy zareagować w przypadku problemów z wysyłaniem lub odbieraniem wiadomości e-mail do OVHcloud"
+section: 'Diagnostyka'
+order: 9
 ---
 
-## Co należy sprawdzić w przypadku problemu z e-mailami?
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
 
-W przypadku problemów z wysyłką lub odbieraniem e-maili można sprawdzić poniższe punkty:
 
-- Czy moja usługa e-mail została włączona?Aby konta e-mail działały, musisz dysponować aktywną usługą e-mail. Jeśli posiadasz konta e-mail przypisane do oferty hostingu, sprawdź czy oferta ta nie wygasła. Informacja ta jest widoczna w panelu klienta. Domena również musi być aktywna.
+**Ostatnia aktualizacja z dnia 04-06-2021**
 
-- Czy e-maile działają z poziomu interfejsu webmail?Jeśli chcesz się upewnić, że problem nie jest związany z konfiguracją, wykonaj test wysyłki i pobrania bezpośrednio z interfejsu webmail OVH. Jeśli wszystko działa prawidłowo, sprawdź konfigurację programu pocztowego korzystając z udostępnionych przewodników.
+## Wprowadzenie
 
-- Nie możesz się zalogować do interfejsu webmail? 
-Sprawdź, czy posiadasz prawidłowe hasło. Możesz również je zmienić.
+Nie można odbierać ani wysyłać e-maili przy użyciu programu pocztowego lub webmaila?
 
-- Czy na mojej usłudze wykonywane są prace?Możesz sprawdzać prace w trakcie na [tej stronie](http://prace.ovh.pl/).
+**Dowiedz się, jak przeprowadzić diagnostykę błędu wysyłki lub odbioru w Twojej usłudze e-mail OVHcloud.**
 
-- Czy moja domena jest prawidłowo przekierowana?Sprawdź, czy domena korzysta z prawidłowych serwerów e-mail (wpisy MX). Zapoznaj się z [tym przewodnikiem](https://docs.ovh.com/pl/domains/hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh/).
+> [!primary]
+>
+> Jeśli masz dodatkowe pytania, które nie są poruszone w tym przewodniku, zapoznaj się z naszym [FAQ E-mail](https://docs.ovh.com/pl/emails/faq-konta-email/).
 
-## Kody odpowiedzi serwera SMTP
+## Wymagania początkowe
 
-### Polecenia SMTP
+- Posiadanie usługi **MX Plan** lub usługi **E-mail Pro** lub usługi **Exchange**.
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Polecenia SMTP są używane do przekazywania poczty elektronicznej. Aby odpytać serwer SMTP, należy komunikować się z nim wysyłając "polecenia".
-Gdy serwer otrzyma polecenie, prześle odpowiedź SMTP.
+## W praktyce
 
-### Odpowiedzi SMTP
+### Czy moja oferta e-mail i/lub moje konta są aktywne?
 
-Odpowiedzi na polecenia SMTP służą do zapewnienia synchronizacji zapytań i operacji w procesie trasferu poczty elektronicznej, w celu zagwarantowania klientowi SMTP znajomości stanu serwera SMTP. Każde polecenie powinno generować odpowiedź. 
+Aby Twoje e-maile działały, musisz posiadać aktywną ofertę e-mail. Jeśli Twoja usługa e-mail jest przypisana do hostingu, sprawdź, czy oferta nie wygasła. Informacje te możesz sprawdzić bezpośrednio w Panelu klienta. Podobnie Twoja domena musi być aktywna.
 
-Odpowiedź SMTP składa się z trzy cyfrowej liczby i tekstu.
-Liczba jest używana przez serwery do określenia kolejnego etapu. 
-Tekst jest użyteczny jedynie dla użytkownika. 
+Sprawdź, czy Twoje usługi działają poprawnie:
 
-Trzy cyfry w odpowiedzi mają określone znaczenie:
+- W przypadku **domeny** przejdź do sekcji `Web Cloud`{.action}, kliknij `Domeny`{.action} w kolumnie z lewej strony i wybierz Twoją domenę. Jeśli Twoja domena wygasła, zostanie to wyświetlone na górze strony.
+- W przypadku **hostingu WWW** przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action} w kolumnie z lewej strony, a następnie wybierz Twój hosting. Data wygaśnięcia lub automatycznego odnowienia hostingu zostanie pokazana na górze strony.
+- W przypadku oferty **MXplan** przejdź do sekcji `Web Cloud`{.action}, kliknij `E-maile`{.action} w kolumnie z lewej strony, a następnie wybierz odpowiednią nazwę domeny. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
+- W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action} w kolumnie z lewej strony, a następnie wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
+- W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action} w kolumnie z lewej strony, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
 
-- Pierwsza cyfra wskazuje, czy odpowiedź jest dobra, zła czy niekompletna. Klient SMTP będzie mógł określić kolejna operację po sprawdzeniu tej pierwszej cyfry. 
+### Nie mogę wysyłać e-maili z programu pocztowego
 
-- Druga i trzecia cyfra dostarczają informacji uzupełniających.
+Jeśli korzystasz z programu pocztowego na Twoim komputerze (Outlook, Mail firmy Mac, Thunderbird, itp.) lub na smartfonie (iOS, Android, etc.) i masz problemy z wysyłaniem lub odbieraniem wiadomości, sprawdź parametry konfiguracji zgodnie z Twoją ofertą e-mail oraz używanym oprogramowaniem poczty lub aplikacją.
 
-### Szybka analiza odpowiedzi SMTP
+- W przypadku oferty **MXplan** w sekcji [E-maile na hostingu - MX Plan](https://docs.ovh.com/pl/emails/) w przewodnikach **Web Cloud** sprawdź konfigurację oprogramowania pocztowego w punkcie `Konfiguracja na komputerze` lub smartfonie w `Konfiguracji na smartfonie`.
 
-W przypadku pierwszej cyfry w kodzie odpowiedzi możliwe są cztery wartości:
+- W przypadku oferty **E-mail Pro**, w sekcji [E-mail Pro](https://docs.ovh.com/pl/emails-pro/), przewodników **Web Cloud**, sprawdź konfigurację oprogramowania pocztowego w sekcji `Konfiguracja na komputerze` lub smartfonie w `Konfiguracji na smartfonie`.
 
-- 2xx  Odpowiedź pozytywna:
+- W przypadku oferty **Exchange**, w sekcji [Rozwiązania do pracy zespołowej Microsoft](https://docs.ovh.com/pl/microsoft-collaborative-solutions/) w przewodnikach **Web Cloud** sprawdź konfigurację programu pocztowego w sekcji `Konfiguracja Exchange na komputerze` lub smartphonie w `Konfiguracji Exchange na smartfonie`
 
-Zlecona operacja została wykonana. Można zlecić kolejną operację. 
+### Czy e-maile działają w interfejsie Webmail?
 
-- 3xx  Tymczasowa odpowiedź pozytywna:
+Aby upewnić się, że problem nie jest związany z błędem konfiguracji, przeprowadź test wysyłki i odbioru bezpośrednio przez interfejs webmail OVHcloud. Jeśli wszystko działa poprawnie, sprawdź konfigurację oprogramowania w dostępnych przewodnikach.
 
-Polecenie zostało zaakceptowane, ale zlecona operacja oczekuje na dokładniejsze informacje. Klient SMTP powinien przesłać inne polecenie z tą informacją. 
+Przejdź na adres z poziomu przeglądarki internetowej lub smartfona <https://www.ovh.pl/mail/>.
 
-- 4xx  Negatywna odpowiedź przejściowego zakończenia:
+![webmail](images/webmail.png){.thumbnail}
 
-Polecenie nie zostało zaakceptowane i zlecona operacja nie została wykonana. Warunek błędu jest tymczasowy, operacja może zostać ponownie zlecona. 
+### Nie mogę się zalogować do interfejsu Webmail
 
-- 5xx  Odpowiedź negatywna:
+Upewnij się, że posiadasz właściwe hasło. W razie potrzeby możesz go zmienić. Sprawdź również, czy weryfikacja dwuetapowa jest aktywna ([tylko Exchange](https://www.ovh.pl/emaile/hosted-exchange/)).
 
-Polecenie nie zostało zaakceptowane i zlecona operacja nie została wykonana. Klient SMTP nie powtórzy tego samego zlecenia.
+W jaki sposób zmienić hasło do konta e-mail:
 
-### Interpretacja
+- W przypadku oferty **MXplan** zapoznaj się z naszym przewodnikiem [Zmiana hasła do konta e-mail MX Plan](https://docs.ovh.com/pl/emails/zmiana-hasla-do-konta-email/)
 
-Poniżej znajduje się większość kodów odpowiedzi SMTP używanych przez serwery:
+- W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action} w kolumnie z lewej strony, a następnie wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło.
 
-|Kody odpowiedzi|Szczegóły|Operacje|
+- W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action} w kolumnie z lewej strony, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło. <br> Sprawdź, czy weryfikacja dwuetapowa jest włączona, sprawdzając nasz przewodnik [Konfiguracja weryfikacji dwuetapowej na koncie Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-2fa-exchange/).
+
+### Masz problem z utrzymaniem usługi?
+
+Możesz sprawdzić różne zadania obecnie wykonywane prace na <http://travaux.ovh.net/>.
+
+- Aby **MXplan**, sprawdź w sekcji `E-maile`
+- W przypadku **E-mail Pro** przejdź do sekcji `Microsoft`
+- W przypadku **Exchange** przejdź do sekcji `Microsoft`
+
+### Czy wskazanie domeny do mojej usługi e-mail jest poprawne?
+
+Sprawdź, czy Twoja domena wskazuje poprawnie na serwery e-mail OVHcloud. W tym celu rekordy typu MX muszą być skonfigurowane w strefie DNS. <br>Zapoznaj się z naszym przewodnikiem [Dodaj pole MX do konfiguracji domeny](https://docs.ovh.com/pl/domains/hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh/).
+
+![DNSzone](images/DNS.png){.thumbnail}
+
+### Po wysłaniu wiadomości e-mail otrzymuję wiadomość informującą, że mój e-mail nie mógł zostać wysłany, w tym 3-cyfrowy kod
+
+Jest to powrót błędu SMTP. Oznacza to, że nie można przeprowadzić prawidłowej wymiany między serwerem poczty wychodzącej a serwerem poczty wychodzącej. Kod służy do określenia rodzaju błędu, który wystąpił na serwerze. Zazwyczaj towarzyszy mu komunikat opisujący ten błąd.
+
+Odpowiedź SMTP składa się z liczby trzycyfrowej. Wszystkie trzy cyfry odpowiedzi mają szczególne znaczenie:
+
+- pierwsza cyfra wskazuje czy odpowiedź jest poprawna, zła czy niepełna. Klient SMTP będzie mógł określić swoją kolejną operację, sprawdzając ją;
+- Druga i trzecia cyfra dostarczają dodatkowych informacji.
+
+Istnieją cztery możliwe wartości dla pierwszej cyfry kodu odpowiedzi:
+
+|Kod|Opis|  
+|---|---|  
+|2|Odpowiedź pozytywna: wymagane działanie zostało zrealizowane. Może zostać złożony nowy wniosek.|
+|3|Tymczasowa pozytywna odpowiedź: zamówienie zostało zaakceptowane, ale wymagane działanie oczekuje na dalsze informacje. Klient SMTP powinien przesłać kolejne zamówienie, które opisuje te informacje.|
+|4 xx|Negatywna odpowiedź na przejściowe zakończenie: zamówienie nie zostało zaakceptowane i nie mogło nastąpić wymagane działanie. Jednakże warunek błędu ma charakter tymczasowy i działanie może być wymagane ponownie.|
+|5|Odpowiedź negatywna: zamówienie nie zostało zaakceptowane i nie mogło nastąpić wymagane działanie. Klient SMTP nie powinien powtarzać tego samego wniosku.|
+
+Poniżej znajdziesz większość ujemnych kodów odpowiedzi SMTP używanych przez serwery:
+
+|Kody odpowiedzi|Szczegóły|Działania|
 |---|---|---|
-|211|Komunikat stanu systemu lub odpowiedź pomocy|Komunikat jest poprzedzony dodatkowymi informacjami.|
-|214|Komunikat pomocy|Zawiera informacje na temat serwera i przekierowuje na stronę pomocy FAQ.|
-|220|Serwer jest gotowy.﻿|Komunikat wskazujący, że serwer jest gotowy.|
-|221|Kanał transmisji zamknięty|Oznacza to, że serwer zamyka połączenie na skutek udanej komunikacji.|
-|250|Transmisja wiadomości zakończona|E-mail został przekazany.|
-|251|Użytkownik końcowy nie jest obecny na tym serwerze, ale wiadomość zostanie przekazana.|Oznacza to, że wiadomość zostanie przekazana na inny serwer (przekierowanie, inny serwer MX, ...)|
-|252|Serwer nie może zweryfikować użytkownika końcowego, ale spróbuje przekazać wiadomość.|Aktualnie nie można zweryfikować użytkownika końcowego, ale wiadomość zostanie prawdopodobnie przekazana później.|
-|354|Serwer uzyskał adresy wysyłki i odbioru.|Oznacza to, że serwer czeka na odebranie treści wiadomości, aby ją przekazać.|
-|420|Przekroczony czas, problem z połączeniem|Ten komunikat błędu jest zwracany tylko przez serwery GroupWise. Skontaktuj się z administratorem tych serwerów.|
-|421|Usługa niedostępna, trwa zamykanie kanału transmisyjnego.|Nieokreślone pochodzenie błędu. Sprawdź, czy działa wysyłanie wiadomości na inną domenę. Jeśli tak, spróbuj później wysłać wiadomość jeszcze raz.|
-|432|Wstrzymany odbiór wiadomości na serwerze Exchange.|Ten komunikat błędu jest zwracany tylko przez serwery mailowe Microsoft Exchange. Skontaktuj się z administratorem serwera docelowego.|
-|449|Błąd routingu|Ten komunikat błędu jest zwracany tylko przez serwery mailowe Microsoft Exchange. Microsoft zaleca wykonanie diagnostyki za pomocą narzędzia WinRoute|
-|450|Zlecona operacja nie została wykonana: skrzynka e-mail niedostępna (na przykład skrzynka e-mail zajęta lub tymczasowo zablokowana ze względów bezpieczeństwa|Sprawdź, czy adres IP Twojego serwera poczty elektronicznej nie jest zblacklistowany ([SpamHaus](https://www.spamhaus.org/lookup/)) lub czy Twoja wiadomość nie zawiera słów odnoszących się do SPAM-u.|
-|451|Operacja została przerwana: Błąd lokalnego przetwarzania|Błąd ten może być związany z chwilowym przeciążeniem, z weryfikacją wpisu SPF domeny. Sprawdź pełną informację dostarczoną przez serwer lub skontaktuj się z administratorem serwera, jeśli problem się powtarza.|
-|452|Zlecona operacja nie została wykonana: niewystarczający system przestrzeni dyskowej.|Twój serwer poczty elektronicznej jest przeciążony. Błąd ten może również być spowodowany zbyt dużą liczbą wiadomości, które były wysyłane jednocześnie. Sprawdź swoja skrzynkę nadawczą i spróbuj ponownie.|
-|455|Serwer nie może pobrać ustawień.|Poczekaj chwilę i spróbuj ponownie. W przypadku problemu, skontaktuj się z administratorem serwera odbiorcy.|
-|500|Błąd składni, nierozpoznane zlecenie|Błąd ten jest często spowodowany przez program antywirusowy lub przez firewalla nadawcy. Sprawdź to i spróbuj ponownie.|
-|501|Błąd składni w ustawieniach lub argumentach|Błąd ten jest często spowodowany nieprawidłowym adresem e-mail odbiorcy lub problemem z programem antywirusowym lub z firewallem nadawcy. Sprawdź adres e-mail odbiorcy oraz swój antywirus i firewall.|
-|502|Polecenie nie zaimplementowane|Ustawienia lub opcje wykorzystywane podczas wysyłania e-maila przez serwer SMTP są rozpoznawane ale wyłączone w jego konfiguracji. Skontaktuj się z dostawcą usługi.|
-|503|Serwer rozpoznał nieprawidłową sekwencję poleceń.|Jest to błąd związany z uwierzytelnianiem. Sprawdź uwierzytelnianie na serwerze SMTP na poziomie konfiguracji swojego programu pocztowego.|
-|504|Parametr polecenia nie zaimplementowany|Ustawienia lub opcje wykorzystywane podczas wysyłania e-maila przez serwer SMTP są rozpoznawane ale wyłączone w jego konfiguracji. Skontaktuj się z dostawcą usługi.|
-|550|Zlecona operacja nie została wykonana: skrzynka e-mail niedostępna. |Serwer poczty elektronicznej odbiorcy nie mógł sprawdzić używanego adresu e-mail. Jest to najczęściej spowodowane nieprawidłowym adresem e-mail odbiorcy, ale może również oznaczać, że serwer poczty elektronicznej odbiorcy ma problemy z firewallem lub z łącznością. Sprawdź adres e-mail odbiorcy i spróbuj ponownie.|
-|551|Użytkownik nie jest użytkownikiem lokalnym.|Jest to strategia ochrony przed spamem. Komunikat ten wskazuje, że nie można przesyłać poczty na inny serwer. Skontaktuj się z dostawcą usługi.|
-|552|Zlecona operacja została przerwana: przekroczono limit przestrzeni.|Użytkownik, z którym chcesz się skontaktować, nie może odbierać wiadomości, z powodu przekroczenia limitu dostępnej przestrzeni dyskowej. Należy skontaktować się z odbiorcą w inny sposób.|
-|553|Zlecona operacja nie została wykonana: nie autoryzowany adres e-mail.|Błąd ten jest spowodowany nieprawidłowym adresem e-mail odbiorcy. Sprawdź poprawność tego adresu.|
-|554|Transakcja nie powiodła się, brak serwera SMTP.|Błąd ten jest związany z blacklistą. Sprawdź, czy adres IP Twojego serwera poczty elektronicznej nie znajduje się na czarnej liście ([SpamHaus](https://www.spamhaus.org/lookup/))|
-|555|MAIL FROM / RCPT TO, ustawienia nie rozpoznane lub nie zrealizowane|Serwer SMTP nie rejestruje prawidłowo używanego adresu e-mail w ustawieniach "Od" lub "Do". Sprawdź, czy wskazane adresy e-mail są prawidłowe. Sprawdź również, czy nie przekroczyłeś zdefiniowanych przez OVH limitów: 200 maili / godzina / konto i 300 maili / godzina / ip|
+|420|Przekroczony czas, problem z logowaniem|Ten komunikat błędu jest zwracany tylko przez serwery mail GroupWise. Skontaktuj się z administratorem docelowego serwera poczty elektronicznej|
+|421|Usługa niedostępna, kanał transmisji w trakcie zamykania|Upewnij się, czy wysyłka wiadomości do innej domeny działa w wyniku błędu nieokreślonego. Jeśli tak, spróbuj ponownie później wysłać wiadomość|
+|432|Otrzymanie wiadomości e-mail na zatrzymanym serwerze Exchange|Ten komunikat błędu jest zwracany tylko przez serwery pocztowe Microsoft Exchange. Skontaktuj się z administratorem docelowego serwera poczty elektronicznej|
+|449|Błąd routingu|Ten komunikat błędu jest zwracany tylko przez serwery pocztowe Microsoft Exchange. Microsoft zaleca przeprowadzenie diagnostyki z ich narzędzie WinRoute|
+|450|Nie wykonano operacji poczty elektronicznej: niedostępna skrzynka e-mail (np. okupowana lub czasowo zablokowana skrzynka e-mail ze względów bezpieczeństwa lub lista czarna)|Sprawdź, czy Twój adres IP na serwerze poczty elektronicznej nie jest wyświetlany czarno ([SpamHaus](https://www.spamhaus.org/lookup/){.external}) i sprawdź, czy Twój e-mail nie zawiera słów odnoszących się do SPAM.|
+|451|Zrezygnowałeś z działania: Błąd podczas przetwarzania lokalnego|Może to być spowodowane chwilowym przeciążeniem lub weryfikacją SPF nieprawidłowej domeny nadającej. Skontaktuj się z administratorem serwera, jeśli taka wiadomość zostanie utrzymana|
+|452|Operacja nie została wykonana: niewystarczający system przechowywania danych|Twój serwer poczty elektronicznej jest "przeciążony". Może to być również spowodowane zbyt dużą liczbę wiadomości, które próbują być wysyłane jednocześnie. Prosimy o sprawdzenie skrzynki pocztowej i spróbuj ponownie|
+|455|Serwer, który nie może otrzymać parametrów|Odczekaj chwilę i spróbuj ponownie. W przypadku awarii, skontaktuj się z administratorem serwera poczty elektronicznej odbiorcy|
+|500|Błąd składni, zamówienie nie rozpoznane (Może to obejmować błędy jako zbyt długi wiersz poleceń)|Jest to często spowodowane przez antywirus lub firewall nadawcy. Sprawdź to i spróbuj ponownie|
+|501|Błąd składni w ustawieniach lub argumentach|Jest to często spowodowane przez błędny adres e-mail odbiorcy lub problem z antywirusowym lub firewall po stronie nadawcy. Sprawdź adres docelowy oraz antywirus lub firewall|
+|502|Zamówienie nie zostało zrealizowane|Parametry lub opcje używane podczas wysyłki e-maila do serwera SMTP są rozpoznawane, ale są wyłączone w konfiguracji. Skontaktuj się z dostawcą usług|
+|503|Serwer napotkał złą sekwencję poleceń|Powodem tego problemu jest problem z uwierzytelnianiem. Upewnij się, że jesteś uwierzytelniony na serwerze SMTP podczas konfiguracji programu pocztowego.|
+|504|Parametr zamówienia nie został zrealizowany|Parametry lub opcje używane podczas wysyłki e-maila do serwera SMTP są rozpoznawane, ale są wyłączone w konfiguracji. Skontaktuj się z dostawcą usług|
+|550|Operacja nie została wykonana: skrzynka pocztowa niedostępna|Docelowy serwer poczty elektronicznej nie mógł sprawdzić używanego adresu e-mail. Jest to najczęściej spowodowane nieprawidłowym adresem e-mail docelowym, ale może również oznaczać, że docelowy serwer poczty elektronicznej ma problemy z zaporą lub połączeniem. Sprawdź adres e-mail odbiorcy i/lub spróbuj ponownie|
+|551|Użytkownik nielokalny|Jest to powszechnie stosowane jako strategia zapobiegania spamowi. Wiadomo, że przekazywanie poczty nie jest dozwolone z jakiegokolwiek powodu, aby przekazać wiadomość do innego serwera niż twój. Skontaktuj się z dostawcą usług|
+|552|Polecenie połączenia zostało przerwane: przekroczona przestrzeń dyskowa|Użytkownik, z którym próbowałeś się skontaktować, nie ma już dostępnej przestrzeni na otrzymywanie wiadomości. Niestety, jedynym rozwiązaniem jest kontakt z odbiorcą za pomocą innej metody|
+|553|Operacja nie została wykonana: nieautoryzowany adres e-mail|Jest to zazwyczaj spowodowane przez nieprawidłowy adres e-mail docelowy. Sprawdź, czy dany adres e-mail jest poprawny|
+|554|Transakcja nie powiodła się, "Brak usług SMTP tutaj")|To zazwyczaj problem czarnej plamki. Sprawdź, czy Twój adres IP serwera poczty elektronicznej nie jest czarna ([SpamHaus](https://www.spamhaus.org/lookup/){.external})|
+|555|MAIL FROM / RCPT TO, ustawienia nie rozpoznane lub nie zostały wdrożone|Wychodzący serwer SMTP nie rejestruje poprawnie adresu e-mail używanego w ustawieniach "De" lub "A". Sprawdź, czy podane adresy e-mail są poprawne i sprawdź, czy nie przekroczyłeś limitu określonego przez OVHcloud: 200 e-maili /godzina /konto i 300 e-maili /godzina /ip|
+
+## Sprawdź również
+
+[FAQ E-mail](https://docs.ovh.com/pl/emails/faq-konta-email/)
+
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

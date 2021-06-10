@@ -1,98 +1,135 @@
 ---
-title: Utilização avançada dos e-mails OVH
-excerpt: Utilização avançada dos e-mails OVH
+title: 'Envio ou receção de e-mails impossível'
 slug: utilizacao_avancada_dos_e-mails_ovh
-legacy_guide_number: g2117
+legacy_guide_number: 2117
+excerpt: "Saiba como reagir em caso de problemas de envio ou receção de e-mails na OVHcloud"
+section: 'Diagnóstico'
+order: 9
 ---
 
-## O que devo verificar em caso de problemas com os meus e-mails?
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-Em caso de problemas nos envios ou na receção dos seus e-mails, vejamos alguns pontos a verificar:
+**Última atualização: 04/06/2021**
 
-- A minha oferta de e-mail está ativa? Para que os seus e-mails estejam funcionais, deverá dispor de uma oferta de e-mail ativa. Se possui e-mails associados a uma oferta de alojamento, queira certificar-se de que ela não expirou. É possível verificar essa informação diretamente no seu Espaço Cliente. Deve ainda verificar que o seu nome de domínio está igualmente ativo.
+## Objetivo
 
-- Os e-mails funcionam a partir do webmail? De forma a verificar que o problema não está associado a um erro de configuração, efetue um teste de envio e receção a partir do webmail OVH. Se tudo funcionar corretamente, queira verificar a configuração do seu software através dos guias que temos à sua disposição.
+Não é possível receber ou enviar e-mails a partir do seu software de correio eletrónico ou a partir do webmail?
 
-- Não se consegue ligar ao webmail? Confirme que a password é a correta, e se necessário altere-a no seu Espaço Cliente. Para tal, consulte as questões anteriores neste guia.
+**Saiba como diagnosticar um erro de envio ou de receção na sua oferta de e-mail OVHcloud.**
 
-- Existe um incidente em curso para o meu serviço? É possível verificar os diferentes trabalhos que estão atualmente em curso [nesta página](http://estado.ovh.pt/).
+> [!primary]
+>
+> Se tiver outras questões que não sejam tratadas neste manual, não hesite em consultar a nossa [FAQ de E-mail](https://docs.ovh.com/pt/emails/faq-emails/).
 
-- O apontamento do meu domínio está correto?Verifique se o seu nome de domínio utiliza corretamente os servidores de e-mail (registos do tipo MX) da oferta de e-mail da OVH.
+## Requisitos
 
-## Os códigos de resposta de um servidor SMTP
+- Dispor de uma oferta **MX Plan** ou de uma oferta **E-mail Pro** ou de uma oferta **Exchange**.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-### Comandos SMTP
+## Instruções
 
-Os comandos SMTP são utilizados para a transferência de correio eletrónico.
-Para interrogar um servidor SMTP é necessário dialogar com ele ao enviar-lhe "Comandos".
-Após o servidor ter recebido um comando, ele retornará uma resposta SMTP.
+### A minha oferta de e-mail e/ou as minhas contas estão ativas?
 
-### Respostas SMTP
+Para que os seus e-mails sejam funcionais, deve possuir uma oferta de e-mail ativa. Se a sua oferta de e-mail estiver associada a uma oferta de alojamento, verifique se esta não expirou. Pode verificar esta informação diretamente na Área de Cliente. Da mesma forma, o seu domínio também deve estar ativo.
 
-As respostas aos comandos SMTP servem para assegurar a sincronização dos pedidos e as ações nos processos de transferência de correio, de forma a garantir que o cliente SMTP conhece o estado do servidor SMTP.
-Cada comando deverá gerar uma resposta.
+Eis como verificar que os seus serviços estão corretamente operacionais:
 
-Uma resposta SMTP é constituída por três números seguindo de um texto.
-O texto é útil apenas e só para um humano.
+- Para o seu **domínio**, aceda à secção `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} na coluna da esquerda e selecione o seu domínio. Se o domínio expirar, isto ser-lhe-á indicado no topo da página.
+- Para o seu **Alojamento Web**, dirija-se à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na coluna da esquerda e selecione o seu alojamento. A data de expiração ou de renovação automática do seu alojamento será indicada no topo da página.
+- Para uma oferta **MXplan**, aceda à secção `Web Cloud`{.action}, clique em `E-mails`{.action} na coluna da esquerda e selecione o domínio em causa. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
+- Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} na coluna à esquerda e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
+- Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action} na coluna à esquerda, e depois clique em `Exchange`{.action} e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
 
-Os três números da resposta tem, cada um deles, um significado particular: :
+### Não consigo enviar e-mails a partir do meu software de e-mail
 
-- o primeiro número indica se a resposta é boa, má ou incompleta. Um servidor SMTP será então capaz de determinar a sua próxima ação ao examinar este primemiro número.
+Se utiliza um software de mensagens no seu computador (Outlook, Mail do Mac, Thunderbird, etc.) ou no seu smartphone (iOS, Android, etc.) e encontra uma falha no envio ou na receção, verifique os parâmetros de configuração de acordo com a sua oferta de e-mail e o software de mensagens ou de aplicação utilizado.
 
-- O segundo e o terceiro número fornecem informações complementares.
+- Para uma oferta **MXplan**, na secção [E-mails partilhados - MX Plan](https://docs.ovh.com/pt/emails/) dos nossos guias **Web Cloud**, verifique a configuração do seu software de e-mail no parágrafo `Configuração num computador` ou do seu smartphone em `Configuração no smartphone`.
 
-## Rápida análise das respostas SMTP
-Existem quatro valores possíveis para o primeiro número do código de resposta:
+- Para uma oferta **E-mail Pro**, na secção [E-mail Pro](https://docs.ovh.com/pt/emails-pro/), dos nossos guias **Web Cloud**, verifique a configuração do seu software de e-mail no `Configuração num computador` ou do seu smartphone em `Configuração no smartphone`.
 
-- 2xx  Resposta positiva:
+- Para uma oferta **Exchange**, na secção [Soluções colaborativas Microsoft](https://docs.ovh.com/pt/microsoft-collaborative-solutions/) dos nossos guias **Web Cloud**, verifique a configuração do seu software de mensagens no parágrafo `Configuração Exchange num computador` ou do seu smartphone em `Configuração Exchange no smartphone`
 
-A ação pedida foi efetuada com sucesso. Poderá ser iniciado um novo pedido.
+### Os e-mails estão a funcionar a partir do webmail?
 
-- 3xx  Resposta positiva temporária:
+Para garantir que a avaria não está associada a um erro de configuração, realize um teste de envio e de receção diretamente através do webmail da OVHcloud. Se tudo estiver a funcionar corretamente, verifique a configuração do seu software através dos guias postos à sua disposição.
 
-O comando foi aceite, mas a ação pedida esta aguardar a receção de mais informações.
-O cliente SMTP deverá enviar um outro comando especificando essa informação.
+A partir do browser do seu computador ou a partir de um smartphone, vá ao endereço <https://www.ovh.pt/mail/>.
 
-- 4xx  Resposta negativa de conclusão transitória:
+![webmail](images/webmail.png){.thumbnail}
 
-O comando não foi aceite e a ação pedida não pode ser efetuada.
-Porém, a condição de erro é temporária e a ação pode ser solicitada novamente.
+### Não consigo aceder ao webmail
 
-- 5xx  Resposta negativa :
+Certifique-se de que tem a palavra-passe correta. Se necessário, pode alterá-lo. Verifique igualmente se a dupla autenticação está ativada ([apenas Exchange](https://www.ovh.pt/emails/hosted-exchange/)).
 
-O comando não foi aceite e a ação pedida não pode ser efetuada.
-O cliente SMTP não deverá repetir o mesmo pedido.
+Como alterar a palavra-passe de um endereço de e-mail:
 
-### Interpretação
+- Para uma oferta **MXplan**, consulte o nosso guia [Alterar a palavra-passe de um endereço de e-mail MX Plan](https://docs.ovh.com/pt/emails/alterar-palavra-passe-endereco-email/)
 
-Encontrará aqui a maioria dos códigos de resposta SMTP utilizados pelos servidores:
+- Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} na coluna à esquerda e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe.
+
+- Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action} na coluna à esquerda, e depois clique em `Exchange`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe. <br> Verifique se a dupla autenticação está ativada ao consultar o nosso guia [Configurar a dupla autenticação numa conta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/configurar-2fa-exchange/).
+
+### Há algum incidente ou manutenção em curso no meu serviço?
+
+Pode verificar as diferentes tarefas em curso no <http://travaux.ovh.net/>.
+
+- Para **MXplan**, verifique na secção `E-mails`
+- Para o **E-mail Pro**, dirija-se à secção `Microsoft`
+- Para **Exchange**, dirija-se à secção `Microsoft`
+
+### O apontamento do domínio para o meu serviço de e-mail está correto?
+
+Verifique que o seu domínio está a apontar corretamente para os servidores de e-mail OVHcloud. Para isso, devem ser configurados registos do tipo MX na sua zona DNS. <br>Consulte o nosso manual [Adicionar um campo MX à configuração do domínio](https://docs.ovh.com/pt/domains/e-mail-partilhado-manual-de-configuracao-mx-com-zona-dns-ovh/).
+
+![DNSzone](images/DNS.png){.thumbnail}
+
+### Após o envio de um e-mail, recebo uma mensagem indicando que o meu e-mail não pôde ser enviado, incluindo um código de 3 dígitos
+
+Trata-se de uma resposta de erro SMTP. Isto indica que a troca entre o servidor de envio e o servidor de e-mail de receção não pôde ser realizada corretamente. O código serve para determinar o tipo de erro que o servidor encontrou. É geralmente acompanhado de uma mensagem que detalha este erro.
+
+Uma resposta SMTP é constituída por um número de três dígitos. Os três algarismos da resposta têm um significado especial:
+
+- o primeiro algarismo indica se a resposta é boa, má ou incompleta. Um cliente SMTP será capaz de determinar a sua próxima ação através da análise deste primeiro número;
+- O segundo e o terceiro algarismos fornecem informações complementares.
+
+Há quatro valores possíveis para o primeiro número do código de resposta:
+
+|Código|Descrição|  
+|---|---|  
+|2 xx|Resposta positiva: a ação solicitada foi efetuada com sucesso. Pode ser iniciado um novo pedido.|
+|3 xx|Resposta positiva temporária: a encomenda foi aceite, mas a ação solicitada está aguardar a receção de mais informações. O cliente SMTP deverá enviar uma outra encomenda especificando esta informação.|
+|4 xx|Resposta negativa de conclusão transitória: a encomenda não foi aceite e a ação solicitada não pôde ser realizada. No entanto, a condição do erro é temporária e a ação pode ser novamente solicitada.|
+|5 xx|Resposta negativa: a encomenda não foi aceite e a ação solicitada não pôde ser realizada. O cliente SMTP não deve repetir o mesmo pedido.|
+
+Encontrará abaixo a maioria dos códigos de respostas negativas SMTP utilizados pelos servidores:
 
 |Códigos de resposta|Detalhes|Ações|
 |---|---|---|
-|211|Mensagens de estado do sistema ou resposta de ajuda|A mensagem é seguida de mais informações|
-|214|Mensagem de ajuda|Contém informações sobre o seu servidor e reencaminha-o normalmente para uma página de FAQ|
-|220|O servidor está pronto﻿|Trata-se de uma mensagem que indica que o servidor está pronto|
-|221|Canal de transmissão fechada|Significa que o servidor fecha a ligação após a comunicação ser recebida|
-|250|Transmissão da mensagem terminada|O seu e-mail foi transmitido corretamente|
-|251|Utilizador final não presente no servidor, mas ela vai ser transmitida|Significa que a mensagem será transmitida a um outro servidor (reencaminhamento, outro servidor MX, ...)|
-|252|O servidor não pode verificar o utilizador final mas vai tentar transmitir a mensagem|O utilizador final não pode ser verificado de momento mas é provável que será transmitida mais tarde|
-|354|O servidor recebeu os endereços do remetente e de receção|Significa que está à espera de receber o conteúdo do e-mail para o poder transmitir|
-|420|Problema de ligação|Esta nebsagen de erro foi devolvida unicamente para os servidores de e-mail GroupWise. Contacte o administrador do servidor de e-mail de destino|
-|421|Serviço não disponível, canal de transmissão em curso de encerramento|Proveniência do erro indeterminado, assegure-se de que o outro domínio funciona. Se sim, tente enviar o e-mail mais tarde|
-|432|Receção do e-mail no servidor Exchange parada|Esta mensagem de erro é devolvida unicamente para os servidores de e-mail Exchange. Contacte o administrador do servidor de e-mail de destino|
-|449|Erro de roteamento|Esta mensagem de erro é devolvida unicamente para os servidores de e-mail Exchange. A Microsoft recomenda que efetue um diagnóstico com a sua ferramenta WinRoute|
-|450|Ação do e-mail pedida não efetuada: caixa de e-mail indisponível (por exemplo, caixa de e-mail ocupada ou temporariamente bloqueada por razões de segurança ou de backlist)|Verifique se o seu endereço IP do servidor de e-mail não está blacklistado ([SpamHaus](https://www.spamhaus.org/lookup/)), e verifique igualmente se o seu e-mail não contém palavras que podem ser categorizadas como  SPAM.|
-|451|Ação pedida abandonada: Erro de tratamento local|Esta situação pode ocorrer devido a uma sobrecarga momentânea ou devido a uma verificação do SPF do domínio emissor incorreta. Consulte a mensagem complementar fornecida pelo servidor ou contacte o administrador do servidor caso o problema persista|
-|452|Ação pedida não efetuada:sistema de armazenamento insuficiente|O seu servidor de e-mail está « sobrecarregado ». Poderá ocorrer igualmente devido a um elevado número de mensagens que tentam ser enviados de uma só vez. Queira verificar a sua caixa de envio e tente mais tarde|
-|455|Servidor incapaz de receber os parâmetros|Aguarde mais alguns minutos antes de efetuar uma nova tentativa. Caso volte a dar erro contacte o administrador do servidor de destino|
-|500|Erro de sintaxe, comando não recebido (Pode incluir erros como uma linha de comandos demasiado longa)|Pode ocorrer devido a um anti-vírus ou a firewall do remetente. Queira verificar e tente novamente|
-|501|Erro de sintaxe nos parâmetros ou nos argumentos|Tal ocorre devido a um endereço de e-mail de destino errado ou um problema com o anti-vírus ou a firewall do remetente. Queira verificar o endereço de destino bem como o sue anti-vírus ou firewall|
-|502|Comando não implementado|Os parâmetros ou as opções utilizadas aquando do envio d e-mail com o seu servidor SMTP são reconhecidos mas estão desativados na sua configuração. Queira contactar o seu fornecedor de serviço|
-|503|O servidor encontrou uma má sequência de comandos|Esta situação ocorre normalmente devido a um problema de autenticação. Assegure-se que se autenticou corretamente no servidor SMTP ao verificar a configuração do seu software de e-mail.e|
-|504|Parâmetro de comando não implementado|Os parâmetros ou as opções utilizadas aquando do envio d e-mail com o seu servidor SMTP são reconhecidos mas estão desativados na sua configuração. Queira contactar o seu fornecedor de serviço|
-|550|Ação pedida não efetuada: caixa de correio indisponível|O servidor de e-mail de dstino não pôde verificar o endereço de e-mail utilizador. É frequente ser causado por um endereço de destino inválido mas pode igualmente significar que o servidor de e-mail de destino tem problemas de firewall ou de ligação. Verifique o endereço de e-mail de destino e tente novamente|
-|551|Utilizador não local|É normalmente utilizado como uma estratégia de prevenção contra o spam. Indica que o relais de correio não é autorizado por qualquer razão para um outro servidor. Queira contactar o seu fornecedor de serviço|
-|552|Ação de mensagem pedida interrompida. O espaço de armazenamento foi ultrapassado|O utilizador que tente contactar não tem espaço disponível para receber as suas mensagens. A única solução, infelizmente, é de contactar o destinatário através de um outro método|
-|553|Ação de mensagem pedida não efetuada: o endereço de e-mail não é autorizado|É geralmente causado por um endereço de e-mail de destino incorreto. Queira verificar que o endereço de e-mail está correto|
-|554|Transação falhou, "Nenhum serviço SMTP aqui")|Trata-se geralmente de um problema de backlist. Verifique se o seu endereço IP do seu servidor de e-mail não está blacklistado ([SpamHaus](https://www.spamhaus.org/lookup/))|
-|555|MAIL FROM / RCPT TO, parâmetros não reconhecidos ou não implementados|O servidor SMTP de saída não registou corretamente o endereço de e-mail utilizado nos seus parâmetros "De" ou "A". Queira verificar que os endereços de e-mail indicados estão corretos, e verifique igualmente se não ultrapassou o limite definido pela OVH: 200 e-mails/hora /conta e 300 e-mails/hora /ip|
+|420|Prazo ultrapassado, problema de ligação|Esta mensagem de erro é devolvida unicamente pelos servidores mail GroupWise. Contacte o administrador do servidor de e-mail de destino|
+|421|Serviço não disponível, canal de transmissão em curso de encerramento|Proveniência do erro indeterminado, certifique-se de que o envio para outro domínio funciona. Em caso afirmativo, queira tentar novamente o envio inicial mais tarde|
+|432|Receção do e-mail no servidor Exchange parado|Esta mensagem de erro é devolvida unicamente pelos servidores de e-mail Microsoft Exchange. Contacte o administrador do servidor de e-mail de destino|
+|449|Erro de roteamento|Esta mensagem de erro é retornada unicamente pelos servidores de e-mail Microsoft Exchange. Microsoft recomenda que efetue um diagnóstico com a sua ferramenta WinRoute|
+|450|Ação de mensagens pedida não efetuada: caixa de email indisponível (por exemplo, caixa de email ocupada ou temporariamente bloqueada por razões de segurança ou de blacklistagem)|Verifique se o endereço IP do servidor de e-mail não está "blacklistado" ([SpamHaus](https://www.spamhaus.org/lookup/){.external}) e verifique se o seu e-mail não contém palavras relacionadas com SPAM.|
+|451|Ação requerida abandonada: Erro de tratamento local|Isto pode dever-se a uma sobrecarga momentânea ou à verificação do registo SPF do domínio emissor incorreto. Refira-se à mensagem adicional fornecida pelo servidor, ou contacte o administrador do servidor se persistir|
+|452|Ação solicitada não efetuada: sistema de armazenamento insuficiente|O seu servidor de e-mail está "sobrecarregado". Isto também pode ser causado por demasiadas mensagens que tentam ser enviadas ao mesmo tempo. Verifique a sua caixa de envio e tente novamente|
+|455|Servidor incapaz de receber os parâmetros|Aguarde algum tempo e tente novamente. Em caso de falha, contacte o administrador do servidor de e-mail do destinatário|
+|500|Erro de sintaxe, encomenda não reconhecida (isto pode incluir erros como uma linha de encomenda demasiado longa)|Isto é frequentemente causado pelo antivírus ou pela firewall do remetente. Verifique isso e tente novamente|
+|501|Erro de sintaxe nos parâmetros ou nos argumentos|Isto é frequentemente causado por um endereço de e-mail de destinatário errado ou por um problema de antivírus ou de firewall relativamente ao remetente. Queira verificar o endereço de destino bem como o seu antivírus ou firewall|
+|502|Encomenda não implementada|Os parâmetros ou as opções utilizadas aquando do envio do e-mail com o seu servidor SMTP são reconhecidos mas desativados na sua configuração. Contacte o seu fornecedor de serviço|
+|503|O servidor encontrou uma má sequência de encomendas|Isto deve-se geralmente a um problema de autenticação. Certifique-se de que está autenticado no servidor SMTP ao nível da configuração do seu software de mensagens.|
+|504|Parâmetro de comando não implementado|Os parâmetros ou as opções utilizadas aquando do envio do e-mail com o seu servidor SMTP são reconhecidos mas desativados na sua configuração. Contacte o seu fornecedor de serviço|
+|550|Ação solicitada não efetuada: caixa de correio indisponível|O servidor de e-mail de destino não pôde verificar o endereço de e-mail utilizado. Isto é causado, na maioria dos casos, por um endereço de e-mail de destino inválido, mas pode também significar que o servidor de e-mail de destino tem problemas com firewall ou com a conectividade. Verificar o endereço de e-mail do destinatário e/ou tente novamente|
+|551|Utilizador não local|Esta é geralmente utilizada como uma estratégia de prevenção contra o spam. Indica-se que o envio de correio não é autorizado, por qualquer razão, a transmitir a sua mensagem para outro servidor que não o seu. Contacte o seu fornecedor de serviço|
+|552|Serviço de mensagens pedido interrompido: espaço de armazenamento ultrapassado|O utilizador que tentou contactar já não tem espaço disponível para receber mensagens. Infelizmente, a única solução é contactar o destinatário através de outro método|
+|553|Ação solicitada não efetuada: endereço de e-mail não autorizado|Esta situação é geralmente causada por um endereço de e-mail de destino incorreto. Verifique que o endereço de e-mail está correto|
+|554|Transação falhada, "Nenhum serviço SMTP aqui")|Trata-se geralmente de um problema de blacklist. Verifique se o endereço IP do servidor de e-mail não está "blacklistado" ([SpamHaus](https://www.spamhaus.org/lookup/){.external})|
+|555|MAIL FROM / RCPT TO, parâmetros não reconhecidos ou não utilizados|O servidor SMTP de saída não regista corretamente o endereço de e-mail utilizado nos seus parâmetros "De" ou "A". Verifique que os endereços de e-mail indicados estão corretos e verifique que não ultrapassou o limite definido pela OVHcloud: 200 emails /hora /conta e 300 emails /hora /ip|
+
+## Saiba mais
+
+[FAQ E-mail](https://docs.ovh.com/pt/emails/faq-emails/)
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
