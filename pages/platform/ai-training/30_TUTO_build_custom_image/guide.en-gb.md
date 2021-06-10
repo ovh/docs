@@ -79,11 +79,23 @@ COPY example.txt /example.txt
 
 > [!warning]
 >
-> Images in AI Training are not run as root user. It means that if you want to be able to write in a specific directory at runtime you will have to give it specific rights.
+> Images in AI Training are not run as root user, but by an "ovh" user with UID 42420. It means that if you want to be able to write in a specific directory at runtime you will have to give it specific rights.
 > You can do it with the following instruction :
 >
 >     RUN chown -R 42420:42420 <your-target-directory>
+> 
 
+
+> [!warning]
+> 
+> The home directory for the "ovh" user (with UID 42420) will be /workspace.
+> If your base image (the one used by the FROM instruction) does not create the /workspace directory (and it probably doesn't if you didn't use an image provided by OVHcloud), then you should create it in your Dockerfile.
+>
+>     WORKDIR /workspace
+>     RUN chown -R 42420:42420 /workspace> 
+>
+
+    
 You can set environment variables with the `ENV` prefix.
 
 Example if you want to add an environment variable `KEY` with value `VALUE`
