@@ -88,7 +88,7 @@ COPY example.txt /example.txt
 
 > [!warning]
 > 
-> The home directory for user "ovh" (with UID 42420) will be /workspace.
+> The home directory for the "ovh" user (with UID 42420) will be /workspace.
 > If your base image (the one used by the FROM instruction) does not create the /workspace directory (and it probably doesn't if you didn't use an image provided by OVHcloud), then you should create it in your Dockerfile.
 >
 >     WORKDIR /workspace
