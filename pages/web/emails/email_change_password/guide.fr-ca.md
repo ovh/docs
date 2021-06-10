@@ -48,6 +48,8 @@ Il existe deux possibilités pour modifier le mot de passe d'une adresse e-mail.
 
 #### Modifier le mot de passe depuis le webmail OWA
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Commencez en accédant à la page « [Connexion au webmail](https://www.ovh.com/ca/fr/mail/){.external} ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
