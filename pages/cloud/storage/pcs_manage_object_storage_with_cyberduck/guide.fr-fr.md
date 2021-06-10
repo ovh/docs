@@ -44,7 +44,7 @@ Cliquez alors sur `Connecter`{.action}
 
 > [!primary]
 >
-> Pour plus de détails sur le fonctionnement de Cyberduck, nous vous invitons à consulter la [documentation de Cyberduck](https://trac.cyberduck.io/wiki/help/en).
+> Pour plus de détails sur le fonctionnement de ce logiciel, nous vous invitons à consulter la [documentation de Cyberduck](https://trac.cyberduck.io/wiki/help/en).
 >
 
 ## Aller plus loin
