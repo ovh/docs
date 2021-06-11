@@ -2,7 +2,6 @@
 title: Information System Security Policy (ISSP)
 slug: issp
 section: Security policies
-hidden: true
 ---
 
 **Last updated 15th February 2021**

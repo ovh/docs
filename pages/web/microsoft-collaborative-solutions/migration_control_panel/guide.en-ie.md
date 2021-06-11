@@ -18,7 +18,7 @@ OVHcloud offers several email solutions: MX Plan (stand-alone or included in a W
 
 - an MX Plan email address (via the MX Plan solution or included in an OVHcloud [Web Hosting plan](https://www.ovh.ie/web-hosting/){.external})
 - an [Exchange](https://www.ovh.ie/emails/hosted-exchange/){.external} or [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} service with at least one unconfigured account (which will appear as “@configureme.me”).
-- no redirections set on the MX Plan email address you want to migrate
+- **no redirections set on the MX Plan email address you want to migrate**
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 
@@ -66,6 +66,9 @@ You can migrate from two interfaces:<br>
 
 - **the configuration wizard for Hosted Exchange**, only if you have just ordered a Hosted Exchange service and have not yet set up anything on it.
 - **the MX Plan** solution, as soon as you have an Email Pro or Exchange service (already configured or not) and an MX Plan address that you want to migrate.
+
+> As a reminder, before starting the migration, make sure that no **redirection** or **auto-replies** are configured on your MXplan.
+> ![email](images/mxplan-legacy-redirect.png){.thumbnail}
 
 Once you are ready, follow the steps below, depending on the interface you have selected. Please note that the migration time depends on the quantity of content to be migrated to your new account. This may vary from a few minutes to several hours.
 

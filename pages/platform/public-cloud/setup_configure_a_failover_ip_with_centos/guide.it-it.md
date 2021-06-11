@@ -3,6 +3,7 @@ title: Configura un IP Failover su CentOS
 excerpt: Configura un IP Failover su CentOS
 slug: configura_un_ip_failover_su_centos
 legacy_guide_number: g2044
+hidden: true
 ---
 
 

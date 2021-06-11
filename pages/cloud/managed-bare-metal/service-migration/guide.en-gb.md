@@ -1,9 +1,9 @@
 ---
 title: Migrating an infrastructure to a Managed Bare Metal solution
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/service-migration/'
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/sddc-migration/'
 excerpt: Find out how to manage all aspects of migrating an infrastructure to Managed Bare Metal
-slug: service-migration
+slug: sddc-migration
 section: Getting started
 order: 6
 ---
@@ -21,8 +21,8 @@ There are two aspects to migrating an infrastructure to a Managed Bare Metal sol
 
 > [!primary]
 >
-> Should you choose to migrate an infrastructure to a new vDC instead, please follow [this dedicated guide](../service-migration-vdc).
-> 
+> Should you choose to migrate an infrastructure to a new vDC instead, please follow [this dedicated guide](../vdc-migration).
+>
 
 ## Requirements
 
@@ -64,7 +64,6 @@ Please refer to our guide on [Enabling Virtual Machine Encryption](../vm-encrypt
 >
 
 As part of a migration process, you can link your Managed Mare Metal services within the same vRack. Please consult our guide to [Using Managed Bare Metal within a vRack](../using-managed-bare-metal-with-vrack/).
-
 
 ##### **Public network**
 
@@ -179,6 +178,8 @@ For organisational reasons, the VMs, hosts or datastores may have been placed in
 
 If you still need this organisation, you will need to create it again in the destination Managed Bare Metal.
 
+**AutomationtTips:** Powercli cmdlet "Get-Folder" collects folder information and cmdlet "New-Folder" recreates the folder on the destination Managed Bare Metal.
+
 #### VM
 
 There are several ways of migrating VMs from one Private Cloud to another. We offer to migrate using the Veeam solution and Veeam Replication technology.
@@ -202,7 +203,6 @@ The video below shows how to configure Hosted Private Cloud with the Veeam Backu
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NqNtKrJSH8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>You can also refer to the [Veeam documentation](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf){.external} (PDF).
-
 
 ## Go further
 

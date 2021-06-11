@@ -5,7 +5,7 @@ excerpt: Learn how to submit an AI Training job via UI
 section: How to (with UI)
 order: 1
 ---
-*Last updated 10th December, 2020.*
+*Last updated 18th May, 2021.*
 
 ## Objective
 
@@ -14,7 +14,7 @@ This guide covers the initialisation of **AI Training** and the submission of [*
 ## Requirements
 
 -   a **Public cloud** project
--   optionally **data** objects to attach to the **job** at step 8, see our [create **data** object](../data) guide.
+-   optionally container objects to attach data to the **job** at step 6, see our [create data container](https://docs.ovh.com/gb/en/storage/pcs/create-container/) guide.
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
@@ -73,7 +73,7 @@ OVHcloud provides a set of images from which you can choose to ease the submissi
 
 Preset images cannot cover all your needs so you can specify your own image if necessary. You can use any image that is accessible from **AI Training**.
 
-This includes public images (e.g. Dockerhub), images within the shared registry or images in your attached private registry. For more information, see how to [attach a private registry](../attach-private-registry).
+This includes public images (e.g. Dockerhub), images within the shared registry or images in your added private registry. For more information, see how to [add a private registry](../add-private-registry).
 
 Once your image is chosen, click `Next`{.action}.
 
@@ -87,21 +87,25 @@ To attach a **data** object, just select from the list on the left. Next to each
 
 ![image](images/10_submit_data_selected.png){.thumbnail}
 
+> [!warning]
+>
+> To attach a **data** object you must click on the plus (+) button after filling the fields
+
 Once the data is configured click `Next`{.action}.
 
 ### Step 7 - Overriding the Docker entrypoint (optional)
 
-The Docker image you provided in Step 6 includes an entrypoint for your container. You can override this entrypoint by specifying your own command. Once the entrypoint is set up click `Next`{.action}.
+The Docker image you provided in Step 5 includes an entrypoint for your container. You can override this entrypoint by specifying your own command. Once the entrypoint is set up click `Next`{.action}.
 
 ![image](images/11_submit_entrypoint.png){.thumbnail}
 
 ### Step 8 - Specifying the amount of resources
 
-In this step you can select the amount of GPUs you want to be used during your training workload.
+In this step you can either select the amount of GPUs or CPUs you need for your training workload.
 
-The max amount of GPUs you can select for your **job** is region dependent. For more information see the [capabilities](../capabilities).
+The max amount of GPUs or CPUs you can select for your **job** is region dependent. If you choose a GPU a fixed ratio of CPU is applied based on the number of GPUs. Similarly, there is a fixed ratio of Memory based on the number of CPUs. For more information see the [capabilities](../capabilities).
 
-Once the number of GPUs is set you can see a preview of the billing rate for this amount of resources. Click `Next`{.action}.
+Once the amount of resources is set you can see a preview of the billing rate. Click `Next`{.action}.
 
 ![image](images/12_submit_resources.png){.thumbnail}
 
@@ -137,7 +141,7 @@ From this list you can access your job details either by clicking on its `ID` or
 
 ### Step 11 - Cancelling your job
 
-If you are done using your notebook, if your model converged prematurely or if you just wish to interrupt your job you can do so from the **jobs** list.
+If you are done using your job, if your model converged prematurely or if you just wish to interrupt your job you can do so from the **jobs** list.
 
 From the list of **jobs** you can list the available actions at the far right of each entry and interrupt the job by clicking `Stop`{.action}. Alternatively, from the **job** details you can also interrupt the **job** from the list of actions.
 

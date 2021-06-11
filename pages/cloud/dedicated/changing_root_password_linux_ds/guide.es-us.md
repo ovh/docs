@@ -1,57 +1,74 @@
 ---
-title: 'Cambiar la contraseña root en un servidor dedicado Linux'
+title: 'Cambiar la contraseña root en un servidor dedicado'
 slug: cambiar-contrasena-root-linux-en-servidor-dedicado
-excerpt: 'Cómo cambiar la contraseña root en un servidor dedicado Linux'
+excerpt: 'Cómo cambiar la contraseña root de un servidor dedicado'
 section: 'Diagnóstico y modo de rescate'
 ---
 
-**Última actualización: 26/10/2018**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+**Última actualización: 16/02/2021**
 
 ## Objetivo
 
-Al instalar o reinstalar una distribución o sistema operativo, recibirá una contraseña para acceder en modo root. Es altamente recomendable cambiar esta contraseña, tal y como se explica en la guía [Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/){.external}. También es posible que necesite cambiarla porque la haya perdido.
+Puede ser necesario cambiar la contraseña root (o la de su usuario admin/sudo) en su sistema operativo GNU/Linux.
+<br>Existen dos posibles situaciones:
 
-**Esta guía explica cómo cambiar la contraseña root en un servidor dedicado Linux en ambos casos.**
+- Todavía puede conectarse por SSH
+- No puede conectarse por SSH porque ha perdido la contraseña.
 
+**Esta guía explica cómo cambiar la contraseña de administrador en función de la situación inicial.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requisitos
 
-* Tener un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external} con una distribución Linux instalada.
-* Estar conectado por SSH con el usuario root (si dispone de la contraseña actual).
-* Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} (si no dispone de la contraseña actual).
+- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external}.
+- Disponer de las claves de acceso recibidas por correo electrónico tras la instalación (si estas siguen siendo válidas).
+- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} (para utilizar el modo de rescate).
 
+> [!warning]
+>OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
+>
+>Esta guía le ayudará en la mayor medida posible a realizar las tareas habituales. No obstante, si tiene dificultades o dudas con respecto a la administración, el uso o la ejecución de los servicios en un servidor, le recomendamos que contacte con un proveedor de servicios especializado.
+>
 
 ## Procedimiento
 
-### Cambiar la contraseña si puede conectarse como root
+### Cambiar la contraseña si siempre tiene acceso (usuario sudo o root)
 
-Si su usuario tiene permisos de root y conoce la contraseña, conéctese al servidor como root por SSH e introduzca el siguiente comando:
+Conéctese al servidor por SSH. Cambie al usuario root si fuera necesario:
 
-```sh
-passwd
+```
+~$ sudo su -
+~#
 ```
 
-A continuación introduzca la nueva contraseña una primera vez y después confírmela introduciéndola de nuevo. Recibirá la siguiente respuesta:
+Para cambiar la contraseña del usuario actual, escriba `passwd`. A continuación introduzca la nueva contraseña una primera vez y después confírmela introduciéndola de nuevo. Recibirá la siguiente respuesta:
 
-```sh
-Enter new UNIX password:
-Retype new UNIX password:
+```
+~# passwd
+
+New password:
+Retype new password:
 passwd: password updated successfully
 ```
 
 > [!primary]
 >
-> En las distribuciones Linux, **la contraseña no se mostrará** mientras la introduzca.
+> Tenga en cuenta que en una distribución GNU/Linux, los caracteres de su contraseña **no aparecen** mientras los escribe.
 >
 
-### Cambiar la contraseña en caso de haberla perdido u olvidado
+### Cambiar la contraseña si la ha perdido
 
 #### 1. Identificar la partición del sistema
 
-Una vez activado el [modo de rescate](../modo_de_rescate/){.external} en el servidor, debe identificar la partición del sistema. Para ello, ejecute el siguiente comando:
+Una vez reiniciado el servidor en [modo de rescate](../modo_de_rescate/), deberá identificar la partición del sistema. Para ello, ejecute el siguiente comando:
 
-```sh
-fdisk -l
+```
+# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -70,48 +87,52 @@ Device Boot Start End Blocks Id System
 /dev/sda1 1 31488 8060912 c W95 FAT32 (LBA)
 ```
 
-En el ejemplo anterior, la partición del sistema es **/dev/hda1**. 
+En el ejemplo anterior, la partición del sistema es /dev/hda1.
 
 > [!primary]
 >
-> Si el servidor dispone de una configuración de RAID por software, deberá montar el volumen RAID (por lo general **/dev/mdX**). 
+> Si su servidor dispone de una configuración RAID, debe montar el volumen RAID:
+>
+> - con un RAID por software, la partición raíz será `/dev/mdX`.
+> - con un RAID por hardware, la partición raíz será `/dev/sdX`.
 >
 
 #### 2. Montar la partición del sistema
 
 Una vez identificada la partición del sistema, móntela utilizando el siguiente comando:
 
-```sh
-mount /dev/hda1 /mnt/
+```
+# mount /dev/hda1 /mnt/
 ```
 
 #### 3. Cambiar la partición root
 
-Por defecto, no es posible editar la partición del sistema. Para desbloquear la edición, deberá crear un acceso de escritura utilizando el siguiente comando:
+De forma predeterminada, la partición del sistema está bloqueada para editarla. Para acceder a la escritura, utilice el siguiente comando:
 
-```sh
-chroot /mnt
+```
+# chroot /mnt
 ```
 
-#### 4. Cambiar la contraseña root
+#### 4. cambiar la contraseña root
 
-Por último, modifique la contraseña con el siguiente comando:
+Para terminar, debe cambiar la contraseña con el siguiente comando:
 
-```sh
-passwd
+```
+# passwd
 
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
 ```
 
-Una vez modificada la contraseña, cambie el modo de arranque en el servidor seleccionando `Arrancar en el disco duro`{.action} y reinicie. La contraseña se habrá cambiado.
-
+Una vez realizado este paso, cambie el modo de arranque en el servidor para `arrancar en el disco duro`{.action} y reinicie. Se ha cambiado la contraseña root.
 
 ## Más información
 
-[Activar y utilizar el modo de rescate](../modo_de_rescate/){.external}
+[Activar y utilizar el modo de rescate](../modo_de_rescate/)
 
-[Cambiar la contraseña de administrador en un servidor dedicado Windows](../cambiar-contrasena-administrador-en-servidor-windows/){.external}
+[Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/)
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://community.ovh.com){.external}.
+[Cambiar la contraseña de administrador en un servidor dedicado Windows](../cambiar-contrasena-administrador-en-servidor-windows/)
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

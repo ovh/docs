@@ -14,8 +14,8 @@ Ce guide vous explique comment lancer un script lors de la création de votre in
 
 
 ### Prérequis
-- [Préparer l'environnement pour utiliser l'API OpenStack]({legacy}1851){.ref}
-- [Charger les variables d'environnement OpenStack]({legacy}1852){.ref}
+- [Préparer l'environnement pour utiliser l'API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
+- [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
 
 
 ## Creation d'une instance avec script

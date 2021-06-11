@@ -58,7 +58,7 @@ Dès lors, deux possibilités peuvent se présenter :
 
 ### Étape 3 : créer le champ CNAME dans la configuration OVH
 
-Cliquez sur `Domaines`{.action} dans la barre de services à gauche dans votre espace client, puis sur le nom de domaine concerné. Sélectionnez ensuite l'onglet `Zone DNS`{.action}.
+Cliquez sur `Noms de domaine`{.action} dans la barre de services à gauche dans votre espace client, puis sur le nom de domaine concerné. Sélectionnez ensuite l'onglet `Zone DNS`{.action}.
 
 Un tableau devrait apparaître. Ce dernier affiche la configuration de votre domaine chez OVH. Celle-ci est constituée de plusieurs enregistrements DNS, tous symbolisés par une ligne du tableau.
 

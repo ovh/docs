@@ -1,5 +1,5 @@
 ---
-title: Gestión de cuenta 
+title: API / Gestión de cuenta 
 slug: account
 excerpt: Gestione sus cuentas y su facturación de OVH
 color: grey

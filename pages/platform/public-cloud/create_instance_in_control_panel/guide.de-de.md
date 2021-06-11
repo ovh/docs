@@ -6,7 +6,7 @@ legacy_guide_number: g1775
 section: Erste Schritte
 ---
 
-**Letzte Aktualisierung am 03.12.2019**
+**Letzte Aktualisierung am 30.03.2021**
 
 ## Ziel
 
@@ -19,7 +19,6 @@ Sie können die OVHcloud [Public Cloud](https://www.ovhcloud.com/de/public-cloud
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben bereits ein [Public Cloud-Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account angelegt.
 - Sie haben im OVHcloud Kundencenter einen SSH-Schlüssel hinzugefügt.
-
 
 ## In der praktischen Anwendung
 
@@ -35,7 +34,7 @@ Sobald Sie das richtige Projekt ausgewählt haben, klicken Sie auf `Instances`{.
 
 Als Nächstes klicken Sie auf die Schaltfläche `Instanz erstellen`{.action}. Sie gelangen in das folgende Menü, wo Sie die Instanz konfigurieren können, die Sie erstellen möchten:
 
-![create_instance1](images/create_instance1.png){.thumbnail}
+![create_instance1](images/create_instance1-2021.png){.thumbnail}
 
 Die folgende Tabelle enthält eine kurze Erläuterung der Unterschiede zwischen den Instanz-Arten:
 

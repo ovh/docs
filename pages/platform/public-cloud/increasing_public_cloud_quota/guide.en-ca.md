@@ -1,39 +1,45 @@
 ---
-title: 'Increasing Public Cloud quota'
-excerpt: 'Find out how to increase your Public Cloud quotas'
+title: 'Increasing Public Cloud quotas'
+excerpt: 'Find out how to apply for a Public Cloud quota extension'
 slug: increase-public-cloud-quota
 legacy_guide_number: 1904
 section: Project management
 order: 5
 ---
 
-**Last updated 03rd January 2020**
+**Last updated 26th March 2021**
 
 ## Objective
 
-By default, the number of resources (RAM, CPU, disk space, number of instances, etc.) and projects you can create is limited.
+By default, the Public Cloud projects as well as the resources total (RAM, CPU, disk space, number of instances, etc.) you can use are limited for security reasons.
 
-To create more resources and projects, you need to increase your quota. 
+To be able to use additional resources and projects, the quotas need to be increased.
 
-**Find out how to do so by following this guide.**
+**This guide explains how to request a Public Cloud quota increase in the OVHcloud Control Panel.**
 
 
 ## Requirements
 
-- a registered payment method
-- a maximum number of projects used on your OVHcloud account
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- a [valid payment method](../../billing/manage-payment-methods/) registered in your OVHcloud account
+- you have exhausted the project quota of your OVHcloud account
 
 ## Instructions
 
-To request for an increase in the number of projects and/or quotas for a project, you will need to contact the support team.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and switch to the `Public Cloud`{.action} section. Click on `Quota and Regions`{.action} in the left-hand sidebar.
 
-To do this, select your project, then go to the `Quota and Localisation`{.action} section. You will then see your project’s current quotas.
+This page provides an overview of regions and their available resources. A warning will be displayed next to a resource as soon as 80% of its current quota is reached.
 
-Next, click `Increase your quota!`{.action}.
+![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
-![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
+In order to request a quota increase of any kind, click on the `Increase your quota!`{.action} button.
 
-You will then be redirected to create a support ticket. Simply fill in the fields required, and your request will be processed as soon as possible.
+Use the text field in the popup window to provide the following information:
+
+- which quotas you would like to increase
+- specific reasons for each resource increase, i.e. what the project and its instances will be used for (you can point out existing use cases as examples).
+
+Once you have specified your need, click on `Confirm`{.action} Your request will be processed as soon as possible.
 
 ## Go further
 

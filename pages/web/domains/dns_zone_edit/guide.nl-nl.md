@@ -106,4 +106,4 @@ U kunt ook de TTL van een individueel DNS-record wijzigen. U kunt dit slechts vo
 
 [Bescherm uw data tegen DNS Cache Poisoning met DNSSEC](https://www.ovh.nl/domains/dnssec_dienst.xml){.external}.
 
-Ga in gesprek met andere communityleden op <https://community.ovh.com/en>.
+Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

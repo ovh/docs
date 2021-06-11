@@ -2,93 +2,86 @@
 title: 'Resolver o erro “Site não instalado”'
 excerpt: 'Saiba como resolver o erro da página “Site não instalado”'
 slug: alojamento_web_erro_de_site_nao_instalado
-section: 'Configuração do alojamento'
-order: 2
+section: Diagnóstico
 ---
 
-**Última atualização: 14/09/2018**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+**Última atualização: 18/05/2021**
 
-A página “Site não instalado” aparece quando a configuração DNS do seu nome de domínio está incorreta ou quando o nome de domínio utilizado pelo seu site está mal configurado no seu alojamento web da OVH.
+## Objetivo
 
-**Este manual explica como resolver o erro “Site não instalado”.**
+É possível que apareça no seu browser a página de erro **Site não instalado**, nomeadamente aquando da primeira instalação do seu website.
+
+![site-not-installed](images/site-not-installed2021.png){.thumbnail}
+
+**Saiba como identificar e resolver a página de erro "Site não instalado"**
+
+> [!warning]
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+>
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
-- Poder gerir o [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} no qual está alojado o site em questão.
-- Poder gerir a configuração do nome de domínio afetado (ou seja, a sua zona DNS).
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Dispor de uma [oferta de alojamento partilhado](https://www.ovh.pt/alojamento-partilhado/).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter também à disposição a gestão da [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/) à qual está associado o seu domínio.
 
 ## Instruções
 
-A página “Site não instalado” só aparece em dois casos específicos:
+A página **Site não instalado** aparece em duas situações:
 
-- o nome de domínio utilizado pelo seu site foi adicionado incorretamente enquanto **Multi-site** à configuração do seu alojamento web da OVH;
-- o nome de domínio utilizado pelo seu site não foi corretamente associado ao seu alojamento web da OVH, porque o endereço de IP utilizado na sua configuração DNS não é correto.
+1. O seu domínio não está presente na parte [Multisite](../multisites-configurar-um-multisite-no-meu-alojamento-web/) do seu alojamento.
 
-A seguir, explicamos-lhe como verificar as duas configurações para resolver o erro “Site não instalado”.
+2. O seu domínio não está associado ao seu alojamento através da sua `Zona DNS`{.action}.
 
-![sitenotinstalled](images/site-not-installed-webpage.png){.thumbnail}
+As etapas seguintes permitem-lhe corrigir o erro `Site não instalado` nestas duas situações.
 
-### 1 - Verificar a configuração do alojamento web (Multi-site)
+### Etapa 1: verificar a parte multi-site do seu alojamento
 
-Para verificar se o nome de domínio foi adicionado corretamente enquanto multi-site no alojamento web, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique em `Alojamentos`{.action} na barra à esquerda. Na lista, selecione o alojamento onde está alojado o site que apresenta a página “Site não instalado”. Por fim, clique no separador `Multi-site`{.action}.
+Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action}.
 
-A tabela que vai aparecer contém todos os domínios adicionados ao seu alojamento enquanto multi-site. A barra de pesquisa pode ajudá-lo a encontrar o domínio afetado.
+Selecione o alojamento correspondente na lista e clique no separador `Multisite`{.action}.
 
-Procure o domínio na tabela. A seguir, podem ocorrer várias situações:
-
-|Situações possíveis|Medidas a adotar|
+|Cenário|Medidas a adotar|
 |---|---|
-|O domínio aparece na tabela|O domínio foi corretamente adicionado enquanto multi-site no seu alojamento web. Se o adicionou há menos de 15 minutos, aguarde até que a página “Site não instalado” desapareça. Se esta página continuar a aparecer, consulte o passo [2 - Verificar a configuração DNS do domínio](https://docs.ovh.com/pt/hosting/alojamento_web_erro_de_site_nao_instalado/#2-verificar-a-configuracao-dns-do-dominio){.external}.|
-|O domínio desapareceu da tabela|Se adicionou o domínio, mas este não aparece na tabela, é possível que não tenha seguido todos os passos para adicionar o domínio ao seu alojamento web ou que o tenha eliminado por engano. Sugerimos que siga os passos descritos no manual [“Partilhar o alojamento entre vários sites”](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/){.external} para adicionar novamente o domínio.|
-|O domínio não aparece na tabela.|Todavia, ainda não adicionou o domínio enquanto multi-site ao seu alojamento web da OVH. Para o adicionar, siga os passos descritos no manual [“Partilhar o alojamento entre vários sites”](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/){.external}.|
+|O nome do seu site aparece na tabela.|Se acabou de adicionar o nome do seu site na parte multisite do seu alojamento, aguarde cerca de 20 minutos e atualize a cache do seu browser. Se a mensagem "Site não instalado" aparecer, passe para o [passo 2](#checkdomainlink).|
+|O domínio ou subdomínio associado ao seu site não aparece na tabela.|Adicione o seu domínio ao `Multisite`{.action} seguindo a secção dedicada do guia [Partilhar o alojamento entre vários sites - adicionar um domínio ou subdomínio](../multisites-configurar-um-multisite-no-meu-alojamento-web/#2-adicionar-um-dominio-ou-subdominio).|
+|O domínio foi eliminado do multi-site sem nenhuma ação da sua parte.|O seu domínio ou a sua zona DNS podem ser geridos a partir de outra conta. Adicione o seu domínio ao multisite seguindo a secção dedicada do guia [Partilhar o alojamento entre vários sites - adicionar um domínio externo](../multisites-configurar-um-multisite-no-meu-alojamento-web/#etapa-22-adicionar-um-dominio-externo).|
 
-Se, apesar disto, a página “Site não instalado” continuar a aparecer no seu site, consulte o passo [2 - Verificar a configuração DNS do domínio](https://docs.ovh.com/pt/hosting/alojamento_web_erro_de_site_nao_instalado/#2-verificar-a-configuracao-dns-do-dominio){.external}.
-
-### 2 - Verificar a configuração DNS do domínio
-
-Em primeiro lugar, deve reunir a informação correspondente à configuração OVH que deve utilizar. Para isso, na janela `Informações gerais`{.action}, consulte os endereços que aparecem abaixo de **IPv4** e **IPv6**.
-
-![sitenotinstalled](images/site-not-installed-know-a-records.png){.thumbnail}
-
-Esta informação irá permitir-lhe verificar a configuração DNS do seu domínio. Para realizar a verificação, aceda à interface do responsável pela gestão desta configuração.
+### Etapa 2 : verificar a zona DNS do seu domínio <a name="checkdomainlink"></a>
 
 > [!primary]
 >
-> Se o domínio estiver registado na OVH, pode verificar se este último utiliza a nossa configuração. Inicie sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Domínios`{.action} na barra à esquerda e, em seguida, no domínio em questão. Por fim, clique no separador `Servidores DNS`{.action}.
->
+> Este passo destina-se a verificar que o seu domínio, através da sua `Zona DNS`{.action}, está ligado ao alojamento do seu site.
+> Para saber mais sobre a noção de DNS, consulte o nosso guia [Editar uma zona DNS da OVHcloud](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns).
 
-Dependendo da configuração utilizada pelo seu domínio, poderá realizar a verificação de duas formas:
+#### 2.1 Identificar o endereço IP do seu alojamento OVHcloud
 
-- **o seu domínio não utiliza a configuração da OVH**: deverá efetuar a verificação (descrita acima) através da interface do agente responsável pela configuração do seu domínio;
+Para encontrar o endereço IP, clique em `Alojamentos` na coluna da esquerda da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione o alojamento em causa.
 
-- **o seu domínio utiliza a configuração da OVH**: a verificação é efetuada através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Aceda à janela `Zona DNS`{.action} do domínio correspondente. A configuração DNS aparece numa tabela onde cada linha representa um registo DNS específico. Poderá filtrar o conteúdo por tipo de registo ou por nome de domínio.
+![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
-![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
+#### 2.2 Verificar o endereço IP registado na zona DNS do seu domínio
 
-A seguir, certifique-se de que os registos DNS do domínio ao qual corresponde a página “Site não instalado” estão corretamente configurados.
+Para verificar se o endereço IP do alojamento está na zona DNS ativa do seu domínio,
 
-|Registo|Destino|
-|---|---|
-|A|O destino deve corresponder ao endereço **IPv4** que aparecia na janela  **Informações gerais** do seu domínio.|
-|AAAA|O destino deve corresponder ao endereço **IPv6** que aparecia na janela  **Informações gerais** do seu domínio.|
-
-A partir daqui, duas situações são possíveis:
+Para isso, aceda à secção `Nomes de domínio`{.action}, selecione o seu domínio e clique no separador `Zona DNS`{.action}.
 
 |Situações possíveis|Medidas a adotar|
 |---|---|
-|Os destinos são corretos|Isto indica que a configuração do seu domínio está correta. Se alterou a sua configuração DNS há menos de 24 horas, deixe passar esse período de tempo para que a alteração seja corretamente registada.|
-|Os destinos são incorretos|A configuração do domínio deve ser alterada. Se utiliza a configuração da OVH, sugerimos que siga os passos do manual [“Editing an OVH DNS zone”](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external} (versão em inglês - Editar uma zona DNS da OVH). Caso contrário, siga as indicações descritas na interface do seu prestador de serviços. Depois de efetuar a alteração, será necessário aguardar um tempo máximo de 24 horas para que a modificação seja efetiva.|
+|Na zona DNS, o seu domínio está ligado ao endereço IP do seu alojamento com uma entrada do tipo A (para IPv4) ou AAAA (para IPv6) :<br><br>![zonaDNS_IP2](images/zonedns_ip2.png){.thumbnail}|Isto indica que a configuração do seu domínio está correta.<br><br>Após as últimas modificações nos seus DNS, o seu site será apresentado num prazo máximo de 48 horas.<br><br>Também pode reiniciar os seus dispositivos (PC, smartphone, Internet box, etc.) e esvaziar a cache do seu browser.|
+|A zona DNS não inclui nenhuma entrada de tipo A ou AAAA que associe o seu domínio ao endereço IP do seu alojamento. Ou a entrada existente aponta para outro endereço IP.|Adicione uma nova entrada de tipo A ou AAAA ou corrija a entrada existente seguindo [este guia](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).|
+|O seu domínio não aparece na secção `Nomes de domínio`{.action} da sua Área de Cliente.<br><br>Ou o separador `Zona DNS`{.action} do seu domínio apresenta-se da seguinte forma :<br><br>![zonedns_ndd_pas_sobre_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Isto significa que o seu domínio não é gerido a partir da Área de Cliente OVHcloud.<br><br>Determine o seu registar através da nossa ferramenta [WHOIS](https://www.ovh.pt/suporte/ferramentas/check_whois.pl) e os servidores DNS aos quais está associado.<br><br>Encontre e modifique a zona DNS em causa em conformidade, de acordo com [este guia](../multisites-configurar-um-multisite-no-meu-alojamento-web/#etapa-22-adicionar-um-dominio-externo).|
+|Este aviso aparece no separador Zona `DNS`{.action} :<br><br>![aviso_zonedns_pas_sur_srv_Dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Assim, deverá alterar os servidores DNS do seu domínio de acordo com [este guia](../../domains/partilhado_generalidades_sobre_os_servidores_dns/).|
 
-Se realizou as operações dos passos 1 e 2 e esperou o tempo necessário, a página “Site não instalado” deveria desaparecer.
+## Quer saber mais? <a name="gofurther"></a>
 
-## Quer saber mais? 
+[Lista dos endereços IP dos clusters e alojamentos web](../lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web/)
 
-[Partilhar o alojamento entre vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/){.external}
+Para obter ajuda na utilização e configuração das suas soluções OVHcloud, consulte as nossas [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-[Editing an OVH DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external} (versão inglesa - Editar uma zona DNS OVH)
-
-Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/){.external}
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

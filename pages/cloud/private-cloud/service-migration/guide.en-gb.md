@@ -1,21 +1,26 @@
 ---
-title: Migrating a Hosted Private Cloud service 
-excerpt: Find out how to manage all aspects of migrating a Hosted Private Cloud service
-slug: service-migration
+title: Migrating a PCC to Hosted Private Cloud 
+excerpt: Find out how to manage all aspects of migrating a PCC infrastructure
+slug: sddc-migration
 section: Getting started
 order: 6
 ---
 
-**Last updated 23rd November 2020**
+**Last updated 12th February 2021**
 
 ## Objective
 
-There are two aspects to migrating a Hosted Private Cloud service:
+There are two aspects to migrating a PCC infrastructure:
 
-- The Hosted Private Cloud (OVHcloud), which includes the customer's side of administrating an infrastructure.
+- The Hosted Private Cloud (OVHcloud) context, which includes the customer's side of administrating an infrastructure.
 - The VMware infrastructure, which includes the entire VMware eco-system.
 
-**This guide explains how to cover all aspects of migrating a Hosted Private Cloud service.**
+**This guide explains how to cover all aspects of migrating a PCC service.**
+
+> [!primary]
+>
+> Should you choose to migrate an infrastructure to a new vDC instead, please follow [this dedicated guide](../vdc-migration).
+>
 
 ## Requirements
 
@@ -24,7 +29,7 @@ There are two aspects to migrating a Hosted Private Cloud service:
 
 ## Instructions
 
-This guide will utilise the notions of a **source Hosted Private Cloud** and a **destination Hosted Private Cloud**.
+This guide will use the notions of a **source PCC** and a **destination Hosted Private Cloud**.
 
 ### Hosted Private Cloud context
 
@@ -34,11 +39,11 @@ This guide will utilise the notions of a **source Hosted Private Cloud** and a *
 
 For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](../modify-vcenter-access-policy/) for details.
 
-If the access policy has been changed to "Restricted", you will need to apply the same connection IPs to the destination Hosted Private Cloud as to the source Hosted Private Cloud service.
+If the access policy has been changed to "Restricted", you will need to apply the same connection IPs to the destination Hosted Private Cloud as to the source PCC.
 
 ##### **Hosted Private Cloud users**
 
-In the lifecycle of the source Hosted Private Cloud, a list of users may have been created for business or organisational needs. You must therefore create them again on the destination Hosted Private Cloud and assign them the appropriate rights, depending on the configuration of the destination Hosted Private Cloud.
+In the lifecycle of the source PCC, a list of users may have been created for business or organisational needs. You must therefore create them again on the destination Hosted Private Cloud and assign them the appropriate rights, depending on the configuration of the destination Hosted Private Cloud.
 
 To do this, please refer to our guides on [Changing user rights](../change-users-rights/), [Changing the User Password](../changing-user-password/) and [Associating an email with a vSphere user](../associate-email-with-vsphere-user/).
 
@@ -49,7 +54,7 @@ Please refer to our guide on [Enabling Virtual Machine Encryption](../vm-encrypt
 
 ##### **Certifications**
 
-For compliance reasons, [PCI DSS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) and [HDS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/hds/) options may have been enabled on the source Hosted Private Cloud.
+For compliance reasons, [PCI DSS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) and [HDS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/hds/) options may have been enabled on the source PCC.
 
 These options must therefore be reactivated on the destination Hosted Private Cloud. To do this, please refer to our [guide on activating them](../activate-pci-dss-option/).
 
@@ -62,17 +67,16 @@ These options must therefore be reactivated on the destination Hosted Private Cl
 > VMnetworks located in the same region cannot be interconnected in a vRack.
 >
 
-As part of a migration process, you can link your Hosted Private Cloud services within the same vRack. Please consult our guide to [Using Private Cloud within a vRack](../using-private-cloud-with-vrack/).
-
+As part of a migration process, you can link your PCC services within the same vRack. Please consult our guide to [Using Private Cloud within a vRack](../using-private-cloud-with-vrack/).
 
 ##### **Public network**
 
 > [!warning]
 >
-> If your Hosted Private Cloud/PCC offer pre-dates 2016, please contact our support teams to verify the requirements.
+> If your PCC offer pre-dates 2016, please contact our support teams to verify the requirements.
 >
 
-If the public IP addresses attached to the source Hosted Private Cloud are required on the destination Hosted Private Cloud, it will be necessary to transfer them.
+If the public IP addresses attached to the source PCC are required on the destination Hosted Private Cloud, it will be necessary to transfer them.
 
 Please consult our guide to [Migrate an IP block between two Hosted Private Cloud services](../add-ip-block/#migrate-an-ip-block-between-two-hosted-private-cloud-solutions).
 
@@ -80,17 +84,11 @@ The video below also shows how to migrate an IP block between two Hosted Private
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-##### **Distributed port group settings**
-
-Please verify portgroup settings including Security, VLAN, Teaming and failover, as if they have been modified on the source environment the same configuration will need to be applied on the destination.
-
-For more information, consult VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html) and on [how to edit distributed port teaming and failover policies](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-BB8EC262-5F85-4F42-AFC5-5FED456E2C11.html).
-
 ### VMware context
 
-#### Cluster configuration
+#### Step 1: Preparing your destination Hosted Private Cloud
 
-##### **Configuring VMware HA**
+##### **1.1 HA**
 
 The migration involves reconfiguring VMware High Availability (HA), including boot order and priority. Please consult our guide about [VMware HA configuration](../vmware-ha-high-availability/).
 
@@ -104,7 +102,7 @@ Here is a checklist of aspect to take into account:
 
 **Automation tips:** Powercli cmdlet “Get-Cluster” returns information on HA and DRS configuration settings that can be applied to the destination cluster with “Set-Cluster” cmdlet.
 
-##### **Configuring VMware DRS**
+##### **1.2 DRS**
 
 The migration involves reconfiguring the VMware Distributed Resource Scheduler (DRS) feature, in particular the affinity or anti-affinity rules for groups of hosts and VMs. Please consult our guide about [configuring VMware DRS](../vmware-drs-distributed-ressource-scheduler/).
 
@@ -117,7 +115,7 @@ Here is a checklist of aspects to take into account:
 
 **Automation tips:** [This VMware community thread](https://communities.vmware.com/t5/VMware-PowerCLI-Discussions/Backup-Restore-DRS-VM-affinity-anti-affinity-rules-can-these-be/td-p/733981/page/2) details options to export and import affinity-rules via powercli.
 
-##### **Resource pools**
+##### **1.3 Resource pools**
 
 The migration requires rebuilding resource pools including reservations, shares, and vApps. This also applies to vApps and any start-up order configuration set in the vApps.
 
@@ -132,9 +130,9 @@ Here is a checklist of aspects to take into account:
 
 **Automation tips:** Powercli cmdlet “Get-ResourcePool” to gather the resource pool information and cmdlet “New-ResourcePool” to recreate the resource pool on the destination Hosted Private Cloud.
 
-##### **Datastore Clusters**
+##### **1.4 Datastore Clusters**
 
-If datastore clusters are present in the source Hosted Private Cloud, migration may involve the need to recreate these Datastore Clusters on the destination Hosted Private Cloud if the same level of structure and SDRS is needed.
+If datastore clusters are present in the source PCC, migration may involve the need to recreate these Datastore Clusters on the destination Hosted Private Cloud if the same level of structure and SDRS is needed.
 
 Here is a checklist of aspects to take into account:
 
@@ -143,9 +141,13 @@ Here is a checklist of aspects to take into account:
 - SDRS affinity/anti-affinity rules
 - SDRS VM Overrides
 
-##### **Networks**
+##### **1.5 vSAN**
 
-Migration involves recreating the vRack VLAN-backed portgroups on the destination Hosted Private Cloud to ensure VM network consistency. If vRack VLANs are in use on the source Hosted Private Cloud vRack can be used to stretch the L2 domain to the destination Hosted Private Cloud to allow for a more phased migration plan. For more information consult our guide about [Using Private Cloud within a vRack](../using-private-cloud-with-vrack/).
+If vSAN was enabled on your source PCC, you will need to enable it again on the destination Hosted Private Cloud. Please refer to our guide on [Using VMware Hyperconvergence with vSAN](../vmware-vsan/).
+
+##### **1.6 vSphere networking**
+
+Migration involves recreating the vRack VLAN-backed portgroups on the destination Hosted Private Cloud to ensure VM network consistency. If vRack VLANs are in use on the source PCC vRack can be used to stretch the L2 domain to the destination Hosted Private Cloud to allow for a more phased migration plan. For more information consult our guide about [Using Private Cloud within a vRack](../using-private-cloud-with-vrack/).
 
 Here is a checklist of aspects to take into account:
 
@@ -154,11 +156,13 @@ Here is a checklist of aspects to take into account:
 - Teaming and Failover settings
 - Customer network resource allocation
 
+For more information, consult VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external} and on [how to edit distributed port teaming and failover policies](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-BB8EC262-5F85-4F42-AFC5-5FED456E2C11.html){.external}.
+
 **Automation tips:** Powercli cmdlet “Export-VDPortGroup” can retrieve Distibuted Virtual Portgroup information which can then be imported into the destination Distributed Switch with the use of the “New-VDPortgroup -BackupPath” cmdlet.
 
-##### **OVHcloud provided Veeam Backup**
+##### **1.7 Veeam backup config**
 
-If OVHcloud provided Veeam is currently in use to backup VMs on the source Hosted Private Cloud, it will be necessary to recreate the backup configuration for the VMs in the destination Hosted Private Cloud post-migration.
+If OVHcloud provided Veeam is currently in use to backup VMs on the source PCC, it will be necessary to recreate the backup configuration for the VMs in the destination Hosted Private Cloud post-migration.
 
 Here is a checklist of aspects to take into account:
 
@@ -176,7 +180,7 @@ Please refer to our guide on [activating and using Veeam Managed Backup](../veea
 
 The “backup” section of the returning json will give information on current backup configuration.
 
-#### Inventory organisation
+##### **1.8 Inventory organisation (optional)**
 
 For organisational reasons, the VMs, hosts or datastores may have been placed in directories.
 
@@ -184,16 +188,58 @@ If you still need this organisation, you will need to create it again in the des
 
 **Automation tips:** Powercli cmdlet “Get-Folder” to gather the folder information and cmdlet “New-Folder” to recreate the folder on the destination Hosted Private Cloud.
 
-#### VM
+##### **1.9 NSX**
 
-There are several ways of migrating VMs from one Private Cloud to another. We offer to migrate using the Veeam solution and Veeam Replication technology.
+###### **1.9.1 NSX Objects**
+
+NSX objects include IP Sets, MAC Sets, Services, Service Groups, Security Groups, Networks, Clusters and Datacenters. These are objects that are used to dynamically group vSphere entities for use in, for example, an NSX Edge firewall rule.
+
+These objects will have locally significant IDs in the source PCC and, when re-created in the destination Hosted Private Cloud, will generate a different ID.
+Keeping track of these IDs is crucial to automating the migration of Edge firewall rules and distributed firewall rules.
+
+**Automation tips:** The [NSX API guide](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf){.external} gives examples on how to get object IDs and how to create them.
+
+Example: Get a "Service Object": `GET /api/2.0/services/application/scope/{scopeId}`
+<br>
+Example: Get a "Service Object": `POST /api/2.0/services/application/{scopeId}` (body containing xml configuration of the service object)
+
+###### **1.9.2 NSX Edges**
+
+On the destination Hosted Private Cloud, it will be necessary to recreate any NSX edges that are in use on the source PCC. Items to recreate include:
+
+- Edge HA settings
+- Interfaces on the destination Edge so that it mirrors the source Edge
+- Edge services (Firewall, NAT, IPSEC, etc) on the destination Edge so that it mirrors the source Edge (**NOTE:** If automating this process, be sure to map any referenced object IDs to object IDs that exist in the destination Hosted Private Cloud)
+
+**Automation tips:** The [NSX API guide](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf){.external} gives examples on how to GET Edge configurations and how to add service
+configurations onto new Edges.
+
+Example: Get an Edge current configuration: `GET /api/4.0/edges/{edgeId}`
+<br>
+Example: Push a new firewall ruleset to an Edge: `PUT /api/4.0/edges/{edgeId}/firewall/config` (body containing firewall xml config)
+
+###### **1.9.3 NSX Distributed Firewall**
+
+On the destination Hosted Private Cloud, it will be necessary to recreate any Distributed Firewall rules that are in use on the source PCC. Items to recreate include:
+
+- DFW sections on the destination DFW so that it mirrors the source DFW
+- DFW rules on the destination DFW so that it mirrors the source DFW (**Note**: If automating this process, be sure to map any referenced object IDs to object IDs that exist in the destination Hosted Private Cloud)
+
+**Automation tips:** The [NSX API guide](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf){.external} gives examples on how to GET the DFW configuration and how to create DFW
+rules and sections.
+
+Example: Get DFW current configuration: `GET /api/4.0/firewall/globalroot-0/config`
+<br>
+Example: Create a new Layer 3 section in a DFW: `POST /api/4.0/firewall/globalroot-0/config/layer3sections` (body containing section xml config)
+
+#### Step 2: Preparing Veeam for migration
 
 The following elements are required:
 
-- SPLA licences (on source and destination Hosted Private Cloud)
+- SPLA licences (on source PCC and destination Hosted Private Cloud)
 - A Veeam licence
-- An IP address available on the source and destination Hosted Private Cloud services
-- A [Veeam Backup & Replication](../../storage/veeam-backup-replication/) virtual machine on the source Hosted Private Cloud
+- An IP address available on the source PCC and destination Hosted Private Cloud
+- A [Veeam Backup & Replication](../../storage/veeam-backup-replication/) virtual machine on the source PCC
 - [Authorising the Veeam Backup & Replication virtual machine to connect](../authorise-ip-addresses-vcenter/) to the source and destination vCenter
 
 Please refer to our guide on setting up [Veeam Backup & Replication](../../storage/veeam-backup-replication/).
@@ -208,34 +254,24 @@ The video below shows how to configure Hosted Private Cloud with the Veeam Backu
 
 <br>You can also refer to the [Veeam documentation](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf){.external} (PDF).
 
-#### vSAN
+#### Step 2: Post migration tasks
 
-If vSAN was enabled on your source Hosted Private Cloud, you will need to enable it again on the destination Hosted Private Cloud. Please refer to our guide on [Using VMware Hyperconvergence with vSAN](../vmware-vsan/).
+##### **2.1 Affinity rules**
 
-#### NSX Configuration
+Affinity rules are based on VM objects so rules can only be created after VMs have been migrated to the destination Hosted Private Cloud. Once the migration is completed, affinity rules can be re-applied on the destination Hosted Private Cloud.
 
-##### **Configuring NSX Edge**
+**Automation tips:** [This VMware community thread](https://communities.vmware.com/t5/VMware-PowerCLI-Discussions/Backup-Restore-DRS-VM-affinity-anti-affinity-rules-can-these-be/td-p/733981/page/2) details options to export and import affinity-rules via powercli.
 
-The migration involves re-creating your NSX edge gateway(s) in the destination Hosted Private Cloud.
+##### **2.2 Veeam Backup configuration**
 
-Here is a checklist of elements to consider:
+OVHcloud provided Veeam backups are configured per VM so can only be re-applied after the migration. Once the migration is completed, VMs can have their Veeam backups re-enabled using the UI or API
 
-- Edge services (Firewall rules, DHCP, DNS, NAT, Load-balancer, VPN, Routing)
-- Interface configuration
-- HA configuration
-- Syslog configuration
-- Resource allocation
-- NSX Edge objects (IP Sets, Services, Service Groups)
+**Automation tips:** OVHcloud API allows VM backups to be enabled for each vm via (body containing the list of backup days, e.g.  backupDays='["Friday","Monday","Saturday","Sunday"):
 
-##### **Configuring NSX Distributed Firewall**
-
-The migration involves re-creating the NSX Distributed Firewall in the destination Hosted Private Cloud.
-
-Here is a checklist of elements to consider:
-
-- NSX Distributed firewall sections
-- NSX Distributed firewall rules (source, destination, service, applied-to, action, logging)
-- NSX Distributed Firewall objects (Security Groups, IP Sets, MAC Sets, Services, Service Groups, IP Pools, Security Tags)
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
+>
 
 ## Go further
 

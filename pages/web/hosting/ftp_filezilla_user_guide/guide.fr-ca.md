@@ -129,7 +129,7 @@ Ce type de message est généré par une erreur dans le couple : Login // Mdp
 
 Vérifiez vos identifiants afin de vous assurer qu'aucune erreur ne soit renseignée, cas échéant il vous est possible de modifier le mot de passe de l'accès FTP de votre hébergement, directement dans l'espace client.
 
-*Un guide est disponible concernant la modification du mot de passe FTP sur les offres mutualisées :* []({legacy}1374){.ref}
+*Un guide est disponible concernant la [modification du mot de passe FTP](../modifier-mot-de-passe-utilisateur-ftp/) sur les offres mutualisées.*
 
 
 ![hosting](images/1820.png){.thumbnail}

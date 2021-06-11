@@ -78,4 +78,4 @@ All of the choices you have enabled will then appear:
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en>.
+Join our community of users on <https://community.ovh.com/en/>.

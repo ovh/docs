@@ -2,8 +2,8 @@
 title: Convertir une ligne Ecofax Perso en offre Ecofax Pro
 slug: convertir-une-ligne-ecofax-perso-en-offre-ecofax-pro
 legacy_guide_number: '8355850'
-space_key: CRFAX
-space_name: Fax
+section: Premiers pas
+order: 4
 ---
 
 ### Préambule {#préambule}
@@ -18,7 +18,7 @@ Niveau : Débutant
 
 ### Prérequis {#prérequis}
 
-Pour effectuer la conversion, vous devez avoir réalisé **[la procédure de validation VOIP]({legacy}7536703)** sur votre identifiant client.
+Pour effectuer la conversion, vous devez avoir réalisé **[la procédure de validation VOIP](https://docs.ovh.com/fr/voip/la-procedure-de-validation-voip/)** sur votre identifiant client.
 
 ------------------------------------------------------------------------
 

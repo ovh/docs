@@ -20,12 +20,10 @@ Par exemple : vous souhaitez que tout e-mail contenant "[SPAM]" dans le sujet so
 
 **Découvrez comment créer et configurer un filtre sur votre adresse e-mail**
 
-
 ## Prérequis
 
 - Avoir une offre e-mail MX Plan ou un [Pack Hébergement Web](https://www.ovh.com/fr/hebergement-web/){.external} .
 - Avoir l'accès à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
-
 
 ## En pratique
 
@@ -41,18 +39,15 @@ Vous accéderez à la liste de vos filtres actuellement configurés pour cette a
 
 ![emails](images/img_3240.jpg){.thumbnail}
 
-
 ### Comprendre la configuration des filtres d'e-mails
 
 ![emails](images/img_3241.jpg){.thumbnail}
-
 
 #### Informations
 
 - **Nom du filtre :** Cela sert à différencier vos filtres dans l'espace client.
 - **Priorité :** Cela définit l'ordre d'exécution de vos filtres sur une même boite e-mail. Un filtre de priorité 1 s'exécutera avant un filtre de priorité 5.
 - **Activer le filtre :** Cela détermine si le filtre sera effectif ou pas (Vous pouvez créer un filtre en décochant l'option si vous souhaitez l'activer plus tard par exemple).
-
 
 #### Règles
 
@@ -77,12 +72,12 @@ Troisième choix (valeur):
 
 Quatrième choix (+) :
 
-- Cela vous permet d'ajouter une ou plusieurs conditions pour la même action (voir partie [règles multiples](#MULTI){.external} )
+- Cela vous permet d'ajouter une ou plusieurs conditions pour la même action.
 
 **Résultat de ces conditions** - Exemple : "Si le sujet du message contient [SPAM]"
 
-
 #### Actions
+
 C'est ici que vous allez choisir ce qui sera fait par le filtre si les conditions au dessus sont réunies.
 
 Vous avez le choix entre :
@@ -91,7 +86,6 @@ Vous avez le choix entre :
 - **Rediriger vers une adresse locale :** Redirige les e-mails remplissant les conditions vers une des adresses e-mails de votre domaine.
 - **Suppression :** Les e-mails remplissant les conditions seront supprimés.
 - **Rediriger vers une adresse distante :** Redirige les e-mails remplissant les conditions vers l'adresse e-mail de votre choix.
-
 
 ### Exemples
 
@@ -102,14 +96,12 @@ Vous avez le choix entre :
 |Paramètres du filtre|Sujet du message|contient|[SPAM]|suppression|
 |Ce que le filtre va faire|Si le sujet du message|contient|la suite "[SPAM]"|alors, supprimer le message.|
 
-
 #### Rediriger les e-mails d'un destinataire
 
 ||En-tête|Règle|Valeur|Action|
 |---|---|---|---|---|
 |Paramètres du filtre|De|contient|contact@domaintest.ovh|rediriger vers une adresse distante : jean@otherdomain.ovh|
 |Ce que le filtre va faire|Si l'expéditeur|est|contact@domaintest.ovh|alors, renvoyer l'e-mail vers jean@otherdomain.ovh|
-
 
 #### Rediriger les e-mails adressés a une Mailing-List
 
@@ -118,9 +110,7 @@ Vous avez le choix entre :
 |Paramètres du filtre|À|contient|ML@mailing.com|Rediriger vers une adresse locale : recipient@mypersonaldomain.ovh|
 |Ce que le filtre va faire|Si le message a été envoyé à la Mailing-List|appelée|ML@mailing.com|alors, renvoyer le message vers mon autre adresse : recipient@mypersonaldomain.ovh|
 
-<a name="MULTI"></a>
-
-#### Supprimer les e-mails contenant une mention indésirable à l'exception d'un expéditeur 
+#### Supprimer les e-mails contenant une mention indésirable à l'exception d'un expéditeur
 
 Deux filtres sont à ajouter :
 
@@ -134,3 +124,7 @@ Si le sujet du message contient le mot "money", **et que** l'expéditeur du mess
 Dans ce cas, la configuration sera la suivante :
 
 ![emails](images/img_3242.jpg){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

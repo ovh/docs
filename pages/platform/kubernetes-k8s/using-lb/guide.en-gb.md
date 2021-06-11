@@ -6,7 +6,7 @@ section: Getting started
 ---
 
 
-**Last updated 19<sup>st</sup> May, 2020.**
+**Last updated 22<sup>st</sup> Mar, 2021.**
 
 <style>
  pre {
@@ -80,7 +80,7 @@ The `LoadBalancer` is the best option for a production environnement, with two c
 - The `LoadBalancer` is usually billed by the number of exposed services, it can be expensive.
 
 > [!primary]
-> There is a limit of 16 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request through our support team
+> There is a limit of 16 active `LoadBalancer` per Openstack project (also named Openstack tenant). This limit can be exceptionally raised upon request through our support team
 
 ### Supported annotations
 
@@ -108,7 +108,7 @@ In our OVHcloud Managed Kubernetes we propose a load balancing service enabling 
 
 ## Deploying a Hello World LoadBalancer service
 
-Create a `hello.yaml` file for our `ovhplatform/hello` Docker image, defining the service type as `LoadBalancer`:
+Create a `hello.yml` file for our `ovhplatform/hello` Docker image, defining the service type as `LoadBalancer`:
 
 ```yaml
 apiVersion: v1

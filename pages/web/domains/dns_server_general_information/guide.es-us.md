@@ -19,7 +19,6 @@ Dicho de otra forma, los registros DNS, que se almacenan en los servidores DNS, 
 ## Requisitos
 
 - Tener un dominio registrado en OVHcloud.
-- Disponer de los [permisos necesarios para gestionar el dominio](../../customer/gestion-de-los-contactos/) desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 > [!warning]

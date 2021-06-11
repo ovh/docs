@@ -19,7 +19,7 @@ Il est possible que vous soyez amener à vouloir réinstaller votre instance, qu
 
 
 ### Prérequis
-- [Créer un accès à Horizon]({legacy}1773){.ref}
+- [Créer un accès à Horizon](../creer-un-acces-a-horizon/)
 - Une instance
 
 

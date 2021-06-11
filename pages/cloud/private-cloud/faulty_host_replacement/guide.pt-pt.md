@@ -13,7 +13,7 @@ Recomendamos que mantenha o host "spare", se tiver um à disposição, até que 
 
 ## Devolver o host com "defeito"
 Deve começar pela restituição do host com defeito.
-Basta seguir o procedimento indicado no parágrafo "Eliminação de um host" do guia [Como adicionar um host ?]({legacy}605)
+Basta seguir o procedimento indicado no parágrafo "Eliminação de um host" do guia [Como adicionar um host ?](../como_adicionar_um_host/)
 
 
 ## Contacte o suporte para a substituição
@@ -24,5 +24,5 @@ Esse host será substituído após algumas horas (úteis. Dentro do horário de 
 
 ## Devolução do host "spare"
 Assim que a situação for reestabelecida na sua infraestrutura e já tiver o host com defeito substituído por um novo, poderá devolver o host "spare".
-Apenas tem de seguir o procedimento indicado no parágrafo "Eliminação de um host" do guia [Como adicionar um host ?]({legacy}605)
+Apenas tem de seguir o procedimento indicado no parágrafo "Eliminação de um host" do guia [Como adicionar um host ?](../como_adicionar_um_host/)
 

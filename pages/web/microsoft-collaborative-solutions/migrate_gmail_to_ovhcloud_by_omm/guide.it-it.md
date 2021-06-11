@@ -167,7 +167,7 @@ Compare una finestra con lo stato di avanzamento della migrazione. Puoi lasciarl
 
 [Consentire alle applicazioni meno sicure di accedere al tuo account Gmail](../migrazione-account-gmail-con-ovh-mail-migrator/sicurezza-gmail){.external}.
 
-Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en](https://community.ovh.com/en){.external}
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en](https://community.ovh.com/en/){.external}
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Web
+title: Web Cloud
 slug: web
 excerpt: All about OVHcloud Web products
 color: green

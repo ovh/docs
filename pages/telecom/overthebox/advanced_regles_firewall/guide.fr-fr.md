@@ -4,7 +4,7 @@ keywords: 'Règle, Firewall'
 description: 'Règles Firewall'
 slug: regles-firewall
 excerpt: "Par défaut tout le trafic entrant est bloqué, vous pouvez néanmoins activer des redirections de ports. Vous pouvez aussi bloquer des flux de votre LAN vers le WAN, c'est le propos de ce guide."
-section: 'Configurations techniques complexes'
+section: "Configurations de l'OverTheBox"
 ---
 
 ## Créer une “Traffic Rule”

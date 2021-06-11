@@ -18,7 +18,7 @@ In dieser Online-Hilfe erfahren Sie, wie Sie Ihrem Container einen Domainnamen z
 
 ## Voraussetzungen
 
-- [Hinzufügen von Storage-Bereichen]({legacy}1790)
+- [Hinzufügen von Storage-Bereichen](https://docs.ovh.com/de/public-cloud/hinzufugen_von_storage-bereichen/)
 - Ein Domainname
 
 

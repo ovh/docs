@@ -3,6 +3,8 @@ title: Envoyer des Fax via l’imprimante virtuelle EcoFax- Windows
 excerpt: Comment envoyer des Fax depuis Ecofax en utilisant l'imprimante virtuelle - Version Windows
 slug: envoyer_des_fax_via_limprimante_virtuelle_ecofax-_windows
 legacy_guide_number: g1685
+section: Envoi/Réception de fax
+order: 4
 ---
 
 Il vous faut avant tout posséder une ligne de Fax OVH. Vous trouverez le détail de cette offre via ces liens : 

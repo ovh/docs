@@ -177,4 +177,4 @@ Wed Nov 1 09:14:38 2017
 
 ## Go further
 
-Join our user community on  <https://community.ovh.com/en>
+Join our user community on  <https://community.ovh.com/en/>

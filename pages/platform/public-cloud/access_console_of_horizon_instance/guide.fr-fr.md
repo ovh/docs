@@ -24,9 +24,9 @@ En cas de perte d'accès à votre instance, que cela soit suite à une mauvaise 
 
 
 ### Prérequis
-- [Créer un accès à Horizon]({legacy}1773){.ref}
+- [Créer un accès à Horizon](../creer-un-acces-a-horizon/)
 - Une instance
-- [Passer root et définir un mot de passe]({legacy}1786){.ref}
+- [Passer root et définir un mot de passe](../passer-root-et-definir-un-mot-de-passe/)
 
 
 ## Acceder a la console d'une instance

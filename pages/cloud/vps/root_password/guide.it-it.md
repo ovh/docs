@@ -5,7 +5,7 @@ excerpt: Come modificare la password dell’utente root sui VPS OVH
 section: Diagnostica e modalità Rescue
 ---
 
-**Ultimo aggiornamento: 10 novembre 2020**
+**Ultimo aggiornamento: 27/04/2021**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -29,7 +29,7 @@ Potrebbe essere necessario modificare la password di root sul tuo sistema operat
 > [!warning]
 >
 > OVHcloud mette a disposizione i server,  ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
-> 
+>
 
 ## Procedura
 
@@ -73,7 +73,7 @@ Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotoman
 
 #### Step 2: Identificare il punto di mount
 
-Il mount viene creato automaticamente. Utilizza questi comandi per identificare la posizione di montaggio della tua partizione:
+Sulle gamme precedenti di VPS, le tue partizioni saranno automaticamente installate in modalità Rescue. Puoi utilizzare questi comandi per identificare il punto di mount della tua partizione:
 
 ##### **df -h**
 
@@ -85,7 +85,7 @@ tmpfs           1.2G   17M  1.2G   2% /run
 /dev/sda1       2.4G  1.5G  788M  66% /
 tmpfs           5.8G     0  5.8G   0% /dev/shm
 tmpfs           5.0M     0  5.0M   0% /run/lock
-tmpfs 5.8G 0 5.8G 0% /sys/fs/cgroup
+tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 /dev/sdb1        49G  1.2G   48G   3% /mnt/sdb1
 /dev/sdb15      105M  3.6M  101M   4% /mnt/sdb15
 ```
@@ -94,9 +94,9 @@ tmpfs 5.8G 0 5.8G 0% /sys/fs/cgroup
 
 ```sh
 lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0  2.5G  0 disk
-└ ─ sda1 8:1 0 2.5G 0 part /
+└─sda1    8:1    0  2.5G  0 part /
 sdb       8:16   0   50G  0 disk
 ├─sdb1    8:17   0 49.9G  0 part /mnt/sdb1
 ├─sdb14   8:30   0    4M  0 part
@@ -104,6 +104,13 @@ sdb       8:16   0   50G  0 disk
 ```
 
 L'esempio che hai mostrato qui sopra mostra che la partizione di sistema è montata su **/mnt/sdb1**.
+
+Se il tuo VPS è recente, la colonna `MOUNTPOINT` dovrebbe essere vuota. In questo caso, esegui il mount della partizione:
+
+```sh
+mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
+```
 
 #### Step 3: autorizzazioni CHROOT
 

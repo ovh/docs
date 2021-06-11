@@ -1,72 +1,92 @@
 ---
-title: 'Creating and restoring a virtual server from a backup'
+title: Using instance backups to create or restore an instance
 slug: create-restore-virtual-server-from-backup
-excerpt: 'Find out how to create or restore an instance backup'
+excerpt: Find out how to restore an instance or create a new one from a backup
 legacy_guide_number: 1882
 section: Management via Control Panel
 order: 2
 ---
 
-**Last updated 02nd December 2019**
+**Last updated 19th March 2021**
 
 ## Objective
-There may be situations where where you need to restore your instance using a backup. For example, you may want to do this if you make a mistake configuring your instance. 
 
-You can also use a backup to create a new instance, duplicate the first one for load balancing purposes, and ensure that you have a high-availability infrastructure.
+The OVHcloud Control Panel enables you to [create backups of your instances](../back-up-instance/) within a few clicks, as well as automating this process.
+You can make use of these instance backups for two basic purposes:
 
-This guide will show you how to use backups to re-create, duplicate and restore your instances.
+- Creating a new instance with the backup as a template in order to duplicate the original instance, for example if you are configuring a load balancing infrastructure.
+- Restoring instances from a backup, for example if recent changes broke critical configurations on the instance.
+
+**This guide explains how to use backups to duplicate and restore your instances.**
 
 ## Requirements
-- A backup of a Public Cloud instance. To find out how to create one, please refer to out guide on [Backing up an instance](../back-up-instance/).
-- access to the OVHcloud Control Panel
+
+- a backup of a [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/instance-backup/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
-### Create an instance from a backup.
+### Creating an instance from a backup
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then select `Public Cloud`{.action}. Next, select the `Instance backup`{.action} section.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to the `Public Cloud`{.action} section. Click on `Instance Backup`{.action} in the left-hand sidebar.
 
-Click on the `...`{.action} button to the right of the backup, then `Create an instance`{.action}.
+![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 
-![public-cloud-instance-backup](images/restorebackup1.png){.thumbnail}
+Click on the `...`{.action} button in the row of the relevant backup, then select `Create an instance`{.action}.
 
-The page for creating an instance will pop up.
+You will see a shortened version of the instance creation page where you can decide on some options.
 
-![public-cloud-instance-backup](images/restorebackup2.png){.thumbnail}
+![public-cloud-instance-backup](images/restorebackup02.png){.thumbnail}
 
 Some elements are pre-defined:
 
-* <b>Location</b>. Your instance will be created in the same datacentre as your backup.
-* <b>Image</b>. The image will correspond to your backup.
-* <b>Models</b>. Only the models that are compatible with your image are available, depending on your quota.
+- **Region**: Your instance will be created in the same data centre as your backup.
+- **Image**: The image will correspond to your backup.
+- **Model**: Only the models that are compatible with your image are available, depending on your quota.
 
-For further information on creating an instance, please refer to [this guide](../create_an_instance_in_your_ovh_customer_account/).
+![public-cloud-instance-backup](images/restorebackup03.png){.thumbnail}
 
-To create an instance in a different datacentre to the one your backup is stored in, you will need to transfer it to the region you want. If you would like to do this, please refer to our guide to [transferring an instance backup from one datacentre to another](../transfer_instance_backup_from_one_datacentre_to_another/).
+Choose the new instance's name, SSH key, vRack and billing period, then click on the `Create the instance`{.action} button.
 
-### Restore an instance from a backup.
+For further information on creating an instance, please refer to [this guide](../public-cloud-first-steps/).
 
-To restore an instance from a backup, select the `Instance`{.action} menu, then click on the `...`{.action} button on the right-hand side of the instance you want to restore. Next, click `Edit`{.action}.
-
-![public-cloud-instance-backup](images/restorebackup3.png){.thumbnail}
-
-The page for editing an instance will pop up. You can change:
-
-* the instance name
-* the instance image
-* the instance model
-* the instance’s billing mode (from ‘hourly’ to ‘monthly’ only)
-
-Go to the `Image`{.action} section for the backup you want to restore.
-
-![public-cloud-instance-backup](images/restorebackup4.png){.thumbnail}
-
-
-> [!alert]
+> [!primary]
 >
->As detailed in the yellow box above, any data added after this backup is created cannot be recovered.
+>In order to create the instance in a different data centre, you will first need to transfer the backup to the appropriate region. Please refer to our guide to [transferring an instance backup](../transfer_instance_backup_from_one_datacentre_to_another/).
+>
+
+### Restoring an instance from a backup
+
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to the `Public Cloud`{.action} section. Click on `Instances`{.action} in the left-hand sidebar.
+
+![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
+
+Click on the `...`{.action} button in the row of the relevant instance, then select `Edit`{.action}.
+
+This opens the page for editing an instance where you can change:
+
+- the instance's name
+- the instance's image
+- the instance's model
+- the instance's billing mode (from `hourly` to `monthly` only)
+
+Make your changes if necessary and switch to the `Backups`{.action} tab of the **Image** section.
+
+![public-cloud-instance-backup](images/restorebackup05.png){.thumbnail}
+
+Select from the list of available backups. Click on `Modify image`{.action} if you are certain that you want to overwrite the current image with the backup. 
+
+The instance will have the status `Re-installation` until the process is completed. It might be necessary to refresh the page in the browser in order to see the current status.
+
+> [!warning]
+>
+>As stated in the warning message, any data added after the backup creation will be lost.
 >
 
 ## Go further
+
+[First steps](../public-cloud-first-steps/)
+
+[Creating instance backups](../back-up-instance/)
 
 Join our community of users on <https://community.ovh.com/en/>.

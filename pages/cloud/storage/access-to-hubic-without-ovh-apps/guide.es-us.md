@@ -14,7 +14,7 @@ El servicio hubiC está basado en clusters de almacenamiento OpenStack Swift. Es
 > [!warning]
 > Este tutorial explica cómo utilizar una solución de OVH con herramientas externas en un contexto concreto. Tenga en cuenta que puede ser necesario adaptar las indicaciones a su caso particular. 
 >
-> Si necesita ayuda, le recomendamos que contacte con un proveedor especializado o que comparta sus dudas con nuestra comunidad en <https://community.ovh.com/en>. Nosotros no podremos asistirle. 
+> Si necesita ayuda, le recomendamos que contacte con un proveedor especializado o que comparta sus dudas con nuestra comunidad en <https://community.ovh.com/en/>. Nosotros no podremos asistirle. 
 >
 
 ## Requisitos

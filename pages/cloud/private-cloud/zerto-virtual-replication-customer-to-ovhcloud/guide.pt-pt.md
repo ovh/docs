@@ -100,7 +100,7 @@ Pode conservar os valores predefinidos:
 
 - Método de conexão: Default
 - Protocolo de troca de chaves: V2
-- Protocolo Internet: IPV4
+- Protocolo Internet: IPv4
 - Interface: WAN
 
 No entanto, é indispensável que informe o IP do ponto de conexão IPSec da OVHcloud, no campo `Remote gateway`{.action}.
@@ -146,7 +146,7 @@ Clique no botão `+`{.action}.
 
 ![Zerto VPN](images/image-EN-17.png){.thumbnail}
 
-Verifique se o modo se encontra em «Túnel IPV4».
+Verifique se o modo se encontra em «Túnel IPv4».
 
 ##### 3.2.2. Fase 2: Rede local
 

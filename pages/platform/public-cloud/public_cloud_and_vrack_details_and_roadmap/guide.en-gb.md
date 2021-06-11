@@ -66,5 +66,5 @@ One of the consequences of this is that when you are using lots of VLANS the Pub
 
 
 ## 
-[Configure user access to Horizon]({legacy}1773)
+[Configure user access to Horizon](../configure_user_access_to_horizon/)
 

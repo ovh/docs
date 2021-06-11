@@ -1,5 +1,5 @@
 ---
-title: Web
+title: Web Cloud
 slug: web
 excerpt: Tout savoir sur les produits Web OVH
 color: green

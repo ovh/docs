@@ -40,8 +40,14 @@ La récupération des éléments supprimés peut être effectuée depuis le webm
 > dans la récupération des éléments supprimés.
 > 
 
+## Depuis le webmail (OWA)
 
-### Depuis le webmail (OWA)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Exchange 2010
+Le lien d'accès au webmail Exchange 2010 est différent selon le serveur sur le quel votre compte est installé.
+
+Pour vous connecter au webmail cliquez [ici](https://ssl0.ovh.net/fr){.external}.
 
 #### MX Plan, E-mail Pro et Exchange 2016 ou supérieur
 Connectez-vous au [webmail] (https://www.ovh.com/fr/mail/) {.external}.

@@ -10,9 +10,9 @@ order: 08
 
 ## Objectif
 
-Le firewall distribué permet 
+Le firewall distribué permet d'appliquer des restrictions sur l'ensemble des réseaux présent sur votre PCC. Le trafic sera directement arrêté depuis la source sans avoir besoin d'être arrêté à la destination. Il permet notamment de s'affranchir du pare-feu de vos VM.
 
-**Ce guide explique comment établir cette solution**
+**Ce guide explique comment établir cette solution.**
 
 ## Prérequis
 

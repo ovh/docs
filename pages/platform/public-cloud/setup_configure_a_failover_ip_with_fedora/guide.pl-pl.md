@@ -3,7 +3,7 @@ title: Konfiguracja adresu IP Fail Over w systemie Fedora
 excerpt: Konfiguracja adresu IP Fail Over w systemie Fedora
 slug: konfiguracja_adresu_ip_fail_over_w_systemie_fedora
 legacy_guide_number: g2045
-section: Tutoriale
+hidden: true
 ---
 
 

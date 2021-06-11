@@ -5,7 +5,11 @@ excerpt: 'Dowiedz się, jak przesłać dane z serwera dedykowanego na komputer l
 section: Tutoriale
 ---
 
-**Ostatnia aktualizacja z dnia 03-04-2019**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 18-05-2021**
 
 ## Wprowadzenie
 
@@ -14,77 +18,58 @@ W procesie migracji może być konieczne pobranie danych z serwera dedykowanego,
 **Tutorial ten wyjaśnia, jak przesyłać lub pobierać dane z serwera dedykowanego za pomocą SFTP.**
 
 > [!warning]
->Tutorial przedstawia zastosowanie jednego lub kilku rozwiązań OVH w powiązaniu z zewnętrznymi narzędziami i opisuje operacje, jakie należy wykonać w konkretnym przypadku. Wybierz odpowiednie dla Ciebie rozwiązanie. Jeśli napotkasz trudności podczas przeprowadzania tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług administracyjnych i/lub zadaj pytanie na forum społeczności OVH <https://community.ovh.com/en/>. Niestety OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie.
+>Tutorial przedstawia zastosowanie jednego lub kilku rozwiązań OVHcloud w powiązaniu z zewnętrznymi narzędziami i opisuje operacje, jakie należy wykonać w konkretnym przypadku. Wybierz odpowiednie dla Ciebie rozwiązanie. Jeśli napotkasz trudności podczas przeprowadzania tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług administracyjnych i/lub zadaj pytanie na forum społeczności OVHcloud <https://community.ovh.com/en/>. Niestety OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie.
 >
-
 
 ## Wymagania początkowe
 
-### Co powinieneś umieć:
-
-*     Podstawy administrowania systemem Linux;
-*     Łączyć się z serwerem za pomocą SSH;
-*     Zainstalować dystrybucję (w niniejszym tutorialu mowa o dystrybucji Debian 9.4).
-
-
-### Co powinieneś mieć:
-
-*     Co najmniej jeden serwer dedykowany OVH;
-*     Program obsługujący SFTP (w niniejszym tutorialu mowa o programie [FileZilla](https://filezilla-project.org/)).
-
+- Serwer [dedykowany](https://www.ovhcloud.com/pl/bare-metal/){.external}, na którym zainstalowana jest dystrybucja GNU/Linux.
+- Klient FTP, który obsługuje połączenia SFTP (ten przewodnik dokumentuje korzystanie z [FileZilla](https://filezilla-project.org/){.external}).
+- Dostęp administracyjny przez SSH do Twojego serwera.
 
 ## W praktyce
 
-### Etap 1: pobieranie danych
+### Użyj programu FileZilla do pobierania i upuszczania danych
 
-Domyślnie serwer zainstalowany z systemem Linux będzie dostępny przez SSH na porcie 22.
+Protokół SFTP może być używany do przesyłania plików za pomocą bezpiecznego połączenia (SSH). W przypadku tego scenariusza istnieją dwie możliwości: lub masz normalny dostęp do serwera, lub możesz łączyć się z nim w [trybie rescue](../ovh-rescue/).
 
-Protokół SFTP (Secure File Transfert Protocol) umożliwia transfer plików za pomocą bezpiecznego połączenia SSH. Poniżej przedstawiamy, jak używać tego protokołu w dwóch sytuacjach: kiedy masz dostęp do Twojego serwera i kiedy Twój serwer znajduje się w trybie Rescue.
+Domyślnie serwer z systemem operacyjnym GNU/Linux będzie miał dostęp SSH przez port 22. Być może zmodyfikowałeś już ten port (na przykład postępując zgodnie z [naszym przewodnikiem dotyczącym bezpieczeństwa serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/)).
 
+#### Jeśli masz dostęp do serwera
 
-#### Kiedy masz dostęp do serwera
+W graficznym interfejsie FileZilla wprowadź adres IP Twojego serwera w polu `Host`, a także nazwę użytkownika i hasło w odpowiednich polach. Jeśli chodzi o pole `Port`, wprowadź "22" lub port, który słucha Twoja usługa SSH, jeśli ją zmodyfikowałeś.
 
-W programie FileZilla wprowadź IP w polu „Host”. Następnie wpisz nazwę użytkownika „root” oraz hasło. W polu „Port” wpisz numer „22” lub, jeśli go zmodyfikowałeś, wpisz numer Twojej usługi SSH.
+Po nawiązaniu połączenia pojawi się drzewo plików w odległej części `Strony`.
 
-Połączenie zostało teraz ustanowione, a w sekcji „Serwer” wyświetla się drzewo katalogów.
+![site distant sftp](images/sftp_sd_01.png){.thumbnail}
 
- 
-![site distant sftp](images/sftp_ds_01.png)
- 
+W poniższym przykładzie dane do pobrania znajdują się w katalogu "/home/data". Możesz przeciągnąć i upuścić pliki do pobrania z prawej strony (zdalna `strona`) do lewego okienka (`strona lokalna`), aby je zapisać na lokalnym urządzeniu.
 
-Możesz przeciągać i upuszczać dane z prawego okna (`zdalny serwer`) do lewego okna (`adres lokalny`), aby zapisać je na komputerze osobistym. W przedstawionym przez nas przypadku informacje zawarte są w katalogu „/home/data” widocznym w prawym oknie (`zdalny serwer`).
+Aby umieszczać pliki na serwerze, przeciągnij i upuść pliki z lokalnego folderu do zdalnego docelowego folderu znajdującego się w prawym okienku.
 
-Postęp transferu jest widoczny w oknie FileZilla na dole:
+Postępy transferu danych wyświetlają się wówczas na dole interfejsu FileZilla.
 
- 
-![progression transfert sftp](images/sftp_ds_02.png)
+![postęp transferu sftp](images/sftp_sd_02.png){.thumbnail}
 
+#### Jeśli Twój serwer znajduje się w trybie Rescue
 
-#### Kiedy serwer znajduje się w trybie Rescue
+W trybie rescue najpierw zamontuj partycję. W tym celu postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](../ovh-rescue/).
 
-W przypadku trybu Rescue przede wszystkim konieczne jest zamontowanie partycji.  W tym celu wykonaj czynności opisane w [tym przewodniku](https://docs.ovh.com/pl/dedicated/ovh-rescue/). 
-
-Po zamontowaniu partycji połącz się ponownie za pomocą portu 22 przy użyciu odpowiedniego programu (w tym przypadku FileZilla).
-
+Po zamontowaniu partycji kliknij klienta FileZilla w sposób opisany powyżej, korzystając z portu 22 do połączenia z serwerem.
 
 > [!primary]
 >
-> Użyj loginu i hasła wysłanych do Ciebie e-mailem po przełączeniu serwera w tryb Rescue.
+> Dane do logowania, których używasz są wysyłane e-mailem po włączeniu trybu Rescue na Twoim serwerze.
 >
 
+Jeśli poprawnie utworzyłeś punkt montowania, dane znajdują się w katalogu "/mnt" ("/mnt/home/data" w tym przykładzie).
 
-Jeśli prawidłowo ustawiłeś punkt montowania, dane będą się znajdowały w katalogu „/mnt” (czyli „/mnt/data/” w naszym przykładzie).
+![tryb rescue - sftp na zdalnej stronie](images/sftp_sd_03.png){.thumbnail}
 
-![site distant sftp mode rescue](images/sftp_ds_03.png)
+## Sprawdź również
 
- 
-### Etap 2: przesyłanie danych na serwer
+[Tryb Rescue](../ovh-rescue/)
 
-Zasada logowania jest w tym przypadku identyczna: uzyskaj dostęp SSH przez port 22, korzystając z loginu root i postępując zgodnie z instrukcjami podanymi powyżej.
+[Zabezpieczanie serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/)
 
-Po połączeniu z serwerem, na który chcesz przesłać dane, możesz ponownie użyć funkcji „przeciągnij i upuść”. Tym razem jednak przeciągnij dane z lewego okna (`adres lokalny`) do okna prawego (`serwer zdalny`), co zaskutkuje transferem danych z Twojego komputera osobistego na serwer. 
-
-## Podsumowanie
-
-Dzięki tutorialowi dowiedziałeś się, jak przesyłać lub pobierać dane z serwera dedykowanego za pośrednictwem SFTP.
-Aby dowiedzieć się więcej, przyłącz się do społeczności naszych użytkowników <https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.

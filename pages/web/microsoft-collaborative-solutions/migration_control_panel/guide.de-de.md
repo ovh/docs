@@ -22,7 +22,7 @@ OVHcloud bietet mehrere E-Mail-Lösungen an: MX Plan (autonom oder in einem Webh
 
 - Sie verfügen über eine MX Plan E-Mail-Adresse (über das MX Plan Angebot oder in einem OVHcloud Webhosting [Angebot](https://www.ovh.de/hosting/){.external}).
 - Sie verfügen über einen [Exchange](https://www.ovh.de/emails/hosted-exchange/){.external} oder [E-Mail Pro ](https://www.ovh.de/emails/email-pro/){.external} Dienst mit mindestens einem nicht konfigurierten Account (dieser wird als "@configureme.me"angezeigt).
-- Sie haben keine Weiterleitungen für die MX Plan E-Mail-Adresse eingerichtet, die Sie migrieren möchten.
+- **Sie haben keine Weiterleitungen für die MX Plan E-Mail-Adresse eingerichtet, die Sie migrieren möchten.**
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
@@ -71,6 +71,9 @@ Die Migration kann über zwei Interfaces durchgeführt werden:<br>
 - **den Konfigurationsassistenten von Hosted Exchange**, nur wenn Sie einen Hosted Exchange Dienst bestellt haben und noch keine Einstellungen für diesen vorgenommen haben;
 - **den MX Plan-Bereich**, sobald Sie über einen E-Mail Pro oder Exchange Dienst (bereits konfiguriert oder nicht konfiguriert) und eine MX Plan Adresse verfügen, die Sie migrieren möchten.
 
+> Zur Erinnerung: Vergewissern Sie sich, dass vor Beginn der Migration keine **Weiterleitung** oder **Auto-Antworten** für Ihren MXplan eingerichtet sind.
+> ![E-Mail](images/mxplan-legacy-redirect.png) {.thumbnail}
+
 Wenn Sie bereit sind, folgen Sie der Anleitung entsprechend dem gewählten Interface. Die Migrationsdauer hängt davon ab, wie viele Inhalte auf Ihren neuen Account migriert werden. Es kann sich daher um einige Minuten bis zu mehreren Stunden handeln.
 
 > [!warning]
@@ -103,6 +106,7 @@ Bestätigen Sie anschließend das Passwort der Quell-E-Mail-Adresse (die Adresse
 #### 3.2 Die neue MXPlan-Version migrieren <a name="NouvelleVersionMxplan"></a>
 
 Wenn Sie Ihr neues E-Mail-Angebot gerade bestellt haben, fügen Sie zuerst den Domainnamen zu Ihrer [E-Mail Pro oder](../../emails-pro/erstkonfiguration/#schritt-2-ihre-domain-hinzufugen)[Exchange](../domain-zu-exchange-hinzufugen/) Plattform hinzu.
+
 
 Die Migration Ihres MXPlan erfolgt in 3 Schritten: **Umbenennen**, **Erstellen** und **Migrieren**.
 

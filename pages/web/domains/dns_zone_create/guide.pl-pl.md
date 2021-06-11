@@ -70,4 +70,4 @@ Następnie **zmodyfikuj serwery DNS domeny za pośrednictwem interfejsu administ
 
 [Modyfikacja strefy DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}.
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

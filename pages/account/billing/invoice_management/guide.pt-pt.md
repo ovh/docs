@@ -5,7 +5,7 @@ excerpt: 'Saiba como gerir as suas faturas e pagamentos na OVHcloud'
 section: Faturação
 ---
 
-**Última atualização: 18/01/2021**
+**Última atualização: 08/04/2021**
 
 ## Sumário
 
@@ -46,7 +46,7 @@ Abaixo, a fatura também inclui os detalhes dos serviços faturados:
 
 - “Assinatura” ou “Consumo”: descrição do serviço e do período de faturação;
 - “Domínio”: referência do serviço faturado;
-- “Quantidade”: número de unidades do serviço faturado; 
+- “Quantidade”: número de unidades do serviço faturado;
 - “Preço unitário” e “Preço s/IVA”: preço dos serviços.
 
 O preço com IVA aparece no final da tabela, com a menção “Total c/IVA”.
@@ -56,16 +56,15 @@ O preço com IVA aparece no final da tabela, com a menção “Total c/IVA”.
 > Se a menção “Extracto de conta” aparece na linha correspondente ao pagamento, isto significa que se trata de uma renovação automática. O método de pagamento utilizado será obrigatoriamente aquele que foi validado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 >
 
-
 ### Descobrir a área de faturação
 
 #### Consultar e gerir faturas
 
-Para consultar as suas faturas, aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Faturas`{.action} clicando no seu ID de cliente no canto superior direito. 
+Para consultar as suas faturas, aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Faturas`{.action} clicando no seu ID de cliente no canto superior direito.
 
 ![Area de cliente](images/hubinvoices.png){.thumbnail}
 
-Aparecerá uma página onde poderá consultar todas as suas faturas. 
+Aparecerá uma página onde poderá consultar todas as suas faturas.
 
 ![Recapitulativo das faturas](images/billing_section.png){.thumbnail}
 
@@ -75,9 +74,8 @@ Em cada linha da tabela, encontrará as seguintes informações:
 - data de emissão da fatura;
 - montante da fatura;
 - saldo a pagar;
-- data de vencimento; 
+- data de vencimento;
 - `...`{.action}: diferentes ações possíveis.
-
 
 > [!primary]
 >
@@ -92,7 +90,6 @@ Se aparecer a menção “Informações indisponíveis”, isto significa que a 
 - `Ver a versão PDF`{.action}: será gerado um ficheiro PDF que poderá descarregar;
 - `Consultar os detalhes desta fatura`{.action}: pode consultar o histórico de operações realizadas na fatura.
 
-
 Para facilitar a leitura, pode utilizar os filtros que aparecem na parte superior da tabela:
 
 ![Filtros de tri](images/sort_filters.png){.thumbnail}
@@ -101,14 +98,13 @@ Pode procurar uma determinada fatura introduzindo a sua referência ou filtrar a
 
 O botão `Exportar em CSV`{.action} permite-lhe descarregar um ficheiro Excel em formato CSV com as faturas selecionadas. Neste ficheiro, aparecerá o montante, a referência e a data de emissão dessas faturas.
 
-#### Pagar o montante pendente
+#### Pagar as minhas faturas <a name="pagar-faturas"></a>
 
 Para pagar o montante pendente das suas faturas, clique no botão `Pagar a minha dívida imediatamente`{.action}.
 
 ![Pagamento da dívida](images/pay_debt.png){.thumbnail}
 
 Será criada uma [nota de encomenda](https://docs.ovh.com/pt/billing/gerir-as-encomendas-ovh/#a-nota-de-encomenda){.external} de regularização. Uma vez realizado o pagamento, a situação ficará regularizada.
-
 
 ### Seguir os pagamentos
 
@@ -122,7 +118,6 @@ Nesta página, pode também exportar os comprovativos de pagamento em formato CS
 >
 > Se detetar uma discrepância entre um pagamento e o montante de uma fatura, significa que um crédito foi automaticamente aplicado.
 >
-
 
 ## Quer saber mais?
 

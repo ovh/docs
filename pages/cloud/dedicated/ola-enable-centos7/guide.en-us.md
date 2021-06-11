@@ -3,25 +3,32 @@ title: How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7
 slug: ola-centos7
 excerpt: Enable OVHcloud Link Aggregation in your CentOS 7 server
 section: 'Advanced use'
+order: 3
 ---
 
-**Last updated October 24th, 2019**
+**Last updated March 25th, 2021**
 
 ## Objective
 
-OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. In this article, we will discuss how to bond your NICs to use them for OLA in CentOS 7.
+OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link.
+
+**This guide explains how to bond your NICs to use them for OLA in CentOS 7.**  
 
 ## Requirements
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in the OVHcloud Manager](../ola-manager){.external}
+- [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](../ola-manager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
-Because we have a private-private configuration for our NICs in OLA, we will be unable to SSH into the server. Thus, we will need to leverage the IPMI tool to access the server. To do so, first log in to the [OVHcloud Manager](https://ca.ovh.com/manager/){.external}.  Then select the server you wish to configure on the left-hand sidebar and click the **IPMI** tab.
+Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
+<br>To do so, first log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). In the `Bare Metal Cloud`{.action} section, click on `Dedicated Servers`{.action} in the left-hand menu, select your server and click the `IPMI`{.action} tab (1).
 
-![remote_kvm](images/remote_kvm_2020.png){.thumbnail}
+Next, click the `From a Java applet (KVM)`{.action} button (2).
 
-Next, click the **From a Java applet (KVM)** button. A JNLP program will download. Open the program to enter the IPMI. Log in using valid credentials for the server.
+![remote kvm](images/remote_kvm2021.png){.thumbnail}
+
+ A JNLP program will download. Open the program to enter the IPMI. Log in using valid credentials for the server.
 
 By default, using an OVHcloud template, the NICs will be named *eth0* and *eth1*. If you are not using an OVHcloud template, you can find the names of your interfaces using the following command:
 
@@ -59,7 +66,7 @@ BONDING_OPTS="mode=802.3ad miimon=100"
 > You can use any private IP address and subnet you wish you to use.
 >
 
-Save and exit the file once you have confirmed that the information is correct.  Next, we need to configure both physical interfaces. By default, on an OVHcloud server, only *eth0* will have a configuration file. Open it using the following command:
+Save and exit the file once you have confirmed that the information is correct.  Next, we need to configure both physical interfaces. By default, on an OVH server, only *eth0* will have a configuration file. Open it using the following command:
 
 ```bash
 vi /etc/sysconfig/network-scripts/ifcfg-eth0
@@ -133,6 +140,12 @@ systemctl restart network
 
 To test that our bond is working, ping another server on the same vRack. If it works, you are all set. If it does not, double-check your configurations or try rebooting the server.
 
-## Conclusion
+## Go further
 
-OVHcloud gives our customers the freedom and flexibility to leverage their hardware in the way that best fits their needs. Now that you have read this article, you should be able to configure OVHcloud Link Aggregation (OLA) in CentOS 7 in order to use both of your NICs as bonded private interfaces. 
+[Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](../ola-manager/).
+
+[How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](../ola-debian9/).
+
+[How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/).
+
+Join our community of users on <https://community.ovh.com/en/>.

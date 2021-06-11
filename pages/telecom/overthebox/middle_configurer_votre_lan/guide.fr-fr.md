@@ -3,7 +3,7 @@ title: 'Configurer votre LAN'
 slug: configurer-votre-lan
 keywords: 'LAN, IP, passerelle, gateway, OverTheBox'
 excerpt: "Par défaut, votre LAN  OverTheBox  s'autoconfigure en fonction de votre premier modem.  Vous pouvez changer l'IP LAN d'OverTheBox  ainsi que la plage  DHCP des adresses dynamiques."
-section: 'Fonctionnalités principales'
+section: "Configurations de l'OverTheBox"
 ---
 
 ## Modifier l'adresse IP d'OverTheBox

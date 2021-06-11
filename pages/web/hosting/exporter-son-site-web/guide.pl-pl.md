@@ -109,4 +109,4 @@ Po wybraniu logów danego typu i z konkretnego miesiąca, są one prezentowane d
 
 [Wszystko o prywatnym serwerze SQL](https://docs.ovh.com/pl/hosting/prywatny_sql/){.external}.
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en>.
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

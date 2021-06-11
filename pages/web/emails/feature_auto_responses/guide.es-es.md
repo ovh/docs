@@ -1,83 +1,79 @@
 ---
-title: Guía de creación de un contestador
-excerpt: Guía de creación de un contestador
+title: Crear un contestador para su dirección de correo
+excerpt: Cómo configurar un contestador de correo
 slug: guia_de_creacion_de_un_contestador
 legacy_guide_number: g2052
 section: Gestión de la cuenta de correo
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+**Última actualización: 28/08/2020**
+
+## Objetivo
+
+En caso de ausencia en su despacho, puede poner en marcha un contestador email que dejará un mensaje a los interlocutores que deseen contactar con usted por email.
+
+**Esta guía explica cómo instalar un contestador de correo.**
 
 ## Requisitos
 
-- Tener acceso al área de cliente. 
-- Disponer de una solución OVH que permita crear mensajes de correo. 
-- Utilizar los servidores MX* de OVH. 
+- Tener una solución MX Plan. (disponible en: un [plan de hosting](https://www.ovh.es/hosting/){.external}, el [alojamiento gratuito Start 10M](https://www.ovh.es/dominios/oferta_hosting_start10m.xml){.external} incluido con un dominio (previamente activado) o el MX Plan contratado por separado.
+- Haber iniciado sesión en el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
+## Procedimiento
 
-* Para más información sobre los servidores MX, consulte la guía: []({legacy}2003)
+> [!primary]
+>
+> Si su dirección de correo electrónico está en un servicio [**Exchange**](https://www.ovh.es/emails/hosted-exchange/), [**Email Pro**](https://www.ovh.es/emails/email-pro/) o no hay una sección de `Gestión de contestadores`{.action} en su MXplan, deberá crear el contestador desde su webmail utilizando la guía ["Implementar un contestador automático desde la interfaz OWA"](../../microsoft-collaborative-solutions/exchange_2016_crear_un_contestador_con_el_webmail_owa/).
 
+### Creación del contestador
 
-## Conexión al área de cliente
+Inicie sesión en el  [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, 
 
-- Conéctese al [área de cliente](https://www.ovh.com/manager/web) e introduzca su ID de cliente y contraseña.
+Seleccione el dominio en la sección `Correo electrónico`{.action} de la columna izquierda.
 
+Abra la pestaña `Correo electrónico`{.action} en la parte superior y haga clic en `Gestión de contestadores`{.action}.
 
+El sistema le redirigirá a la ventana de `Gestión de contestadores`, que muestra todos los contestadores de correo electrónico de su solución de correo.
 
-![](images/img_3592.jpg){.thumbnail}
+Haga clic en `Añadir un contestador`{.action}
 
+![hosting](images/email_responder01.gif){.thumbnail}
 
-## Selección del dominio asociado a la solución de correo
-Acceda a la sección «Correo electrónico», tal y como se indica en la captura de pantalla, y seleccione su dominio.
+Se abrirá la ventana de adición. Puede completarla con los siguientes datos:
 
-![](images/img_3600.jpg){.thumbnail}
+- `Tipo de contestador`:
 
+Asociado a una cuenta de correo: que debe utilizar si se trata de una dirección de correo electrónico existente en su servicio de correo.
+"Libre": para un alias. Por lo tanto, no está asociado a una dirección existente.
 
-## Correo electrónico
-Para gestionar sus contestadores, acceda a la pestaña «Correo electrónico» y haga clic en «Gestión de los contestadores».
+- `Buzón de correo` o `Nombre del contestador`: la dirección de correo electrónico o el alias correspondiente al contestador.
 
-![](images/img_3597.jpg){.thumbnail}
+- `Duración del contestador`:
 
+"Temporal": establezca una fecha de inicio y de fin a tener en cuenta para el funcionamiento de su contestador (útil si se va de vacaciones, por ejemplo).
+"Permanente": el contestador funcionará hasta que lo haya desactivado.
 
-## Contestador
-A continuación, haga clic en «Añadir un contestador».
+- `Enviar una copia` o `guardar los mensajes en el servidor`: permite reenviar los mensajes recibidos durante su ausencia a la dirección que usted elija o conservarlos en la dirección de correo electrónico.
 
-![](images/img_3598.jpg){.thumbnail}
+> [!warning]
+> Si desmarca esta casilla, los mensajes recibidos durante su ausencia se borrarán automáticamente.
 
+- `Dirección en copia` (solo en modo libre): en caso de un alias, seleccione la dirección de correo electrónico en la que quiera recibir los mensajes enviados al alias.
 
-## Configuración del contestador
-Debe introducir los detalles del contestador: 
+- `Mensaje` : Se trata del mensaje que sus interlocutores recibirán cuando le envíen un mensaje de correo electrónico.
 
-«Tipo de contestador» (1):
+A continuación, puede hacer clic en `Aceptar`{.action} para que el contestador esté instalado.
 
-- «Asociado a un buzón de correo»: Si se trata de una dirección de correo existente y no un alias).
-- «Libre»: Si se trata de un alias.
+### Modificación o supresión del contestador
 
-«Buzón de correo»:
-- La dirección de correo o el alias del contestador.
+Una vez creado el contestador de correo, aparecerá en la lista visible en la sección `Gestión de contestadores`{.action} de su solución de correo. Puede eliminarlo o modificarlo haciendo clic en `...`{.action} a la derecha.
 
-«Duración del contestador» (2):
-- «Temporal»: Permite definir una fecha de inicio y de finalización para su contestador (esta opción resulta muy útil si, por ejemplo, se va de vacaciones).  
-- «Permanente»: El contestador funcionará a no ser que lo desactive. 
+![hosting](images/email_responder02.png){.thumbnail}
 
-«No eliminar el mensaje» (3):
-- Permite conservar una copia del mensaje recibido. Si ha seleccionado un contestador libre, podrá elegir la dirección de correo de destino de la copia del mensaje recibido. 
+## Más información
 
-«Mensaje» (4):
-- El mensaje que recibirán los usuarios cuando le envíen un correo electrónico. 
-
-«Aceptar» (5):
-- Haga clic en «Aceptar» para activar el contestador.
-
-
-
-![](images/img_3589.jpg){.thumbnail}
-Si el contestador se ha creado correctamente, aparecerá el siguiente mensaje de confirmación:
-
-![](images/img_3590.jpg){.thumbnail}
-
-
-## Visualización del contestador
-El contestador aparecerá en la lista. Haga clic en el icono con forma de engranaje para modificarlo o eliminarlo.
-
-![](images/img_3599.jpg){.thumbnail}
-
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

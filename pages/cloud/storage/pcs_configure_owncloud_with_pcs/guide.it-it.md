@@ -17,7 +17,7 @@ Questa guida ti mostra come configurare il tuo Object Storage su OwnCloud.
 ## Requisiti necessari
 
 - Scarica il file OpenRC dal tuo Spazio Cliente OVH o dall'interfaccia Horizon
-- [Aggiungi spazio di storage]({legacy}1790) per Owncloud
+- [Aggiungi spazio di storage](https://docs.ovh.com/it/public-cloud/aggiungi_storage_al_tuo_cloud/) per Owncloud
 
 
 

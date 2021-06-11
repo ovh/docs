@@ -30,13 +30,11 @@ order: 2
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Ruby** applications, and you want to deploy [Rails](https://rubyonrails.org/) on it.
+You've subscribed to a Web POWER web hosting plan to deploy **Ruby** applications, and you want to deploy [Camaleon](http://camaleon.tuzitio.com/){.external} on it.
 
 This guide will explain how to do it.
 
-
-**Find out how to install Rails on your POWER web hosting plan.**
-
+**Find out how to install Camaleon on your POWER web hosting plan.**
 
 ## Requirements
 
@@ -98,7 +96,7 @@ Force the right Node.js engine for Camaleon Javascript:
 sed -i 's@\["nodejs", "node"\],@["/usr/local/nodejs14/bin/node"],@' ${GEM_HOME}/gems/execjs-2.7.0/lib/execjs/runtimes.rb
 ```
 
-Run Camaleon with your `sqlite` database (beware, there are four differents command to run):
+Run Camaleon with your `sqlite` database (beware, there are four different commands to run):
 
 ```sh
 rails generate camaleon_cms:install

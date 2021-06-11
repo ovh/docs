@@ -6,7 +6,7 @@ section: Per iniziare
 order: 1
 ---
 
-**Ultimo aggiornamento 1° Luglio 2020**
+**Ultimo aggiornamento: 30/03/2021**
 
 ## Obiettivo
 
@@ -155,7 +155,7 @@ Clicca sul pulsante `Aggiungi una chiave SSH`{.action}. Nella nuova pagina, inse
 
 Accedi allo [Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina “Istanze”, cliccando su`Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
 
-![instance select](images/instance-creation-01.png){.thumbnail}
+![instance select](images/instance-creation-01-2021.png){.thumbnail}
 
 Per prima cosa, seleziona un modello di server in base alle tue esigenze. La procedura guidata fornisce una descrizione dei diversi casi d'uso e della disponibilità del modello di server. Puoi scegliere tra le seguenti categorie personalizzate:
 
@@ -166,12 +166,13 @@ Per prima cosa, seleziona un modello di server in base alle tue esigenze. La pro
 | RAM   | ✓     | Database, analisi e calcoli in-memory    |
 | GPU     | ✓       | Potenza di elaborazione parallela di massa (rendering, Big Data, deep learning, etc.)       |
 | Sandbox    | -       | Hosting in risorse condivise per ambienti di test e sviluppo      |
+| Discovery    | -       | Hosting in risorse condivise per ambienti di test e sviluppo      |
 | IOPS   | ✓     | Ottimizzato per il trasferimento dei dati su disco    |
 
 
 > [!primary]
 >
-Le risorse totali delle tue istanze Public Cloud saranno inizialmente limitate per motivi di sicurezza. È possibile verificare le quote e richiedere un aumento dallo Spazio Cliente OVHcloud cliccando su `Quota and Localisation`{.action} nella barra di navigazione a sinistra situata sotto alla voce “Project Management”.
+Le risorse totali delle tue istanze Public Cloud saranno inizialmente limitate per motivi di sicurezza. È possibile verificare le quote e richiedere un aumento dallo Spazio Cliente OVHcloud cliccando su `Quota and Regions`{.action} nella barra di navigazione a sinistra situata sotto alla voce “Project Management”.
 >
 È possibile aggiornare l’istanza in un secondo momento, ma non sarà possibile passare a un modello più piccolo (a meno che tu non scelga l’opzione “Flex” allo step 4). Per maggiori dettagli, consulta la sezione qui di seguito.
 >

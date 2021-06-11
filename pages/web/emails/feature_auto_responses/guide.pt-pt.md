@@ -1,84 +1,78 @@
 ---
-title: Guia de ajuda à implementação de respostas automáticas
-excerpt: Guia de ajuda à implementação de respostas automáticas
+title: Criar uma resposta automática para o seu endereço de e-mail
+excerpt: Saiba como configurar uma resposta automática de e-mail
 slug: guia_de_ajuda_a_implementacao_de_respostas_automaticas
 legacy_guide_number: g2052
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Pré-requisitos
+**Última atualização: 28/08/2020**
 
-- Ter acesso ao painel de cliente OVH;
-- Dispor de um serviço OVH que permita a criação de contas de email;
-- Utilizar os servidores MX* da OVH;
+## Objetivo
 
+Em caso de ausência no seu escritório, pode configurar um respondedor de e-mail, que enviará uma mensagem aos interlocutores que o desejem contactar por e-mail.
 
+**Saiba como configurar uma resposta automática de e-mail.**
 
-* para mais informações consulte o seguinte guia: []({legacy}2003)
+## Requisitos
 
+- Dispor do serviço MX Plan Está disponível através de: um plano de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, o [alojamento gratuito Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external} incluído com um domínio (previamente ativado) ou a oferta MX Plan encomendada separadamente.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
-## Ligação ao Espaço Cliente
+## Instruções
 
-- Ligue-se ao seu [Espaço Cliente](https://www.ovh.com/manager/web) com o seu identificador de cliente (nic-handle) e palavra-passe.
+> [!primary]
+>
+> Se o seu endereço de e-mail estiver numa oferta [**Exchange**](https://www.ovh.pt/emails/hosted-exchange/), [**Email Pro**](https://www.ovh.pt/emails/email-pro/) ou não existir nenhuma secção de `Gestão das respostas automáticas`{.action} no seu MXplan, deverá criar a resposta automática a partir do seu webmail, ajudando-o na documentação ["Criar uma resposta automática a partir da interface OWA"](../../microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/).
 
+### Criação da resposta automática
 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. 
 
-![](images/img_3592.jpg){.thumbnail}
+Selecione o domínio correspondente na secção `Emails`{.action}, na coluna à esquerda.
 
+Clique no separador `E-mails`{.action} em cima e, a seguir, em `Gestão das respostas automáticas`{.action}.
 
-## Seleção do nome de domínio associado ao serviço de email
-Uma vez ligado à sua interface de gestão, clique na secção Emailscomo aqui indicado e selecione o seu nome de domínio.
+Será reencaminhado para a janela `Gestão das respostas automáticas` que apresentam o conjunto das respostas automáticas de e-mail no seu serviço de e-mail.
 
-![](images/img_3600.jpg){.thumbnail}
+Clique em `Adicionar uma resposta automática`{.action}
 
+![alojamento](images/email_responder01.gif){.thumbnail}
 
-## Separador Email
-Para aceder à gestão de respostas automáticas, deve clicar no separador "E-mails" (1) e, de seguida, clicar em "Gestão das respostas automáticas" (2).
+Aparecerá a janela de adição. Pode completá-la conforme as informações abaixo.
 
-![](images/img_3597.jpg){.thumbnail}
+- `Tipo de resposta automática`:
 
+"Associado a uma caixa de e-mail": a utilizar caso diga respeito a um endereço de e-mail existente na sua oferta de e-mail.
+"Livre": a utilizar no caso de um alias. Por conseguinte, não está ligado a um endereço existente.
 
-## Menu "Respostas automáticas"
-Poderá, de seguida, clicar em Adicionar uma resposta automático.
+- `Caixa de e-mail` ou `nome da resposta automática`: o endereço de e-mail ou o alias em causa pelo voicemail.
 
-![](images/img_3598.jpg){.thumbnail}
+- `Duração da resposta automática`:
 
+"Temporário": defina uma data de início e de fim a ter em conta para o funcionamento da sua resposta automática (útil se partir em férias, por exemplo).
+"Permanente": a resposta automática funcionará enquanto não a tiver desativado.
 
-## Configuração das respostas automáticas
-Tipo de resposta (1):
+- `Enviar uma cópia` ou `Guardar as mensagens no servidor`: permite reenviar as mensagens recebidas durante a sua ausência para o endereço à sua escolha ou conservá-las no endereço de e-mail.
 
-- "Associada a uma caixa de e-mail" (utilizar apenas no caso de se tratar de uma caixa de email existente e nao de um "alias").
-- "Livre" (a utilizar apenas no caso de um "alias").
+> [!warning]
+> Se desmarcar esta opção, as mensagens recebidas durante a sua ausência serão eliminadas automaticamente.
 
-Endereços de e-mail:
-- o endereço de caixa de correio ou alias para o qual haverá uma resposta automática.
+- `Endereço em cópia` (Apenas em modo livre): no caso de um alias, selecione o endereço de e-mail que receberá os e-mails enviados para o alias.
 
-Duração da ativação(2):
-- "Temporária": permite-lhe definir uma data de início e uma data de fim a ter em consideração para o funcionamento das respostas automáticas (útil no caso de ir de férias, por exemplo).
-- "Permanente": as respostas automáticas serão sempre enviadas enquanto a funcionalidade não for desativada;
+- `Mensagem`: Trata-se da mensagem que os seus correspondentes receberão quando lhe enviarem um e-mail.
 
-Não eliminar a mensagem (3):
--  "livre", poderá escolher o endereço de email alvo da cópia da mensagem recebida.
+De seguida, pode clicar em `Validar`{.action} para que a resposta automática seja configurada.
 
-Mensagem (4):
-- Trata-se da mensagem que deseja que seja enviada sempre que alguém lhe enviar um email e as respostas automáticas estiverem ativas.
+### Modificação ou supressão da resposta automática
 
-Validação (5):
-- Deverá clicar em "Validar" para que seja dado início à criação da resposta automática.
+Depois de criada a resposta automática, esta ficará visível na secção `Gestão das respostas automáticas`{.action} da sua oferta de e-mail. Pode eliminá-lo ou modificá-lo ao clicar em `...`{.action} à direita deste.
 
+![alojamento](images/email_responder02.png){.thumbnail}
 
+## Quer saber mais?
 
-![](images/img_3589.jpg){.thumbnail}
-
-- A seguinte mensagem irá aparecer com a confirmação de que a adição da resposta automática está em curso.
-
-
-
-![](images/img_3590.jpg){.thumbnail}
-
-
-## Visualização da resposta automática
-Poderá, assim, ver a sua resposta automática aparecer na lista. Poderá clicar no ícone da roda dentada à direita de cada linha de respostas automáticas na lista, caso as deseje modificar ou eliminar.
-
-![](images/img_3599.jpg){.thumbnail}
-
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

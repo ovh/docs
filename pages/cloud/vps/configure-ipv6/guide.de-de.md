@@ -391,7 +391,7 @@ Je nach Betriebssystem verwaltet Cloud-init: das Netzwerk, den Hostnamen, die Da
 
 Bei neueren Distributionen (CentOS, Debian 9, Ubuntu 16.x und nachfolgenden Versionen) kann die Standardkonfiguration von Cloud-init manchmal automatisch die Netzwerkkonfiguration beim Start des Servers zurücksetzen.
 
-In bestimmten Anwendungsfällen wird empfohlen, ein Zurücksetzen zu vermeiden, indem die automatische Netzwerkverwaltung in Cloud-init deaktiviert wird. Verwenden Sie hierzu den folgenden Befehl, um eine Datei `/etc/cloud/cloud.cfg.d/98-disable-network-config.cf` mit dem Wert `network: {config: disabled}` zu erstellen:
+In bestimmten Anwendungsfällen wird empfohlen, ein Zurücksetzen zu vermeiden, indem die automatische Netzwerkverwaltung in Cloud-init deaktiviert wird. Verwenden Sie hierzu den folgenden Befehl, um eine Datei `/etc/cloud/cloud.cfg.d/98-disable-network-config.cfg` mit dem Wert `network: {config: disabled}` zu erstellen:
 
 ```bash
 echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-network-config.cfg

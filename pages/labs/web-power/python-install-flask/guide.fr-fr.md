@@ -30,38 +30,34 @@ order: 2
 
 ## Objectif
 
-
-Vous avez souscrit à un hébergement web POWER Python et vous souhaitez y déployer [Flask](https://flask.palletsprojects.com/en/1.1.x/), le micro-framework Python pour des projets simples mais qui restent extensibles.
+Vous avez souscrit à un hébergement web POWER Python et vous souhaitez y déployer [Flask](https://flask.palletsprojects.com/en/1.1.x/){.external}, le micro-framework Python pour des projets simples mais qui restent extensibles.
 
 **Découvrez comment installer Flask sur votre hébergement web POWER**
 
 ## Prérequis
 
-- Disposer d'une de l'offre d'hébergement web POWER [Python](https://labs.ovh.com/managed-python).
+- Disposer de l'offre d'hébergement web POWER [Python](https://labs.ovh.com/managed-python).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
+Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) » avant de poursuivre la lecture de ce guide.
 
 ## En pratique
 
 ### Installer et mettre en ligne une première page
 
-
 Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
-- Moteur : Python 3.8 
-- Point d'entrée : app.py 
-- Dossier racine : www 
-
+- Moteur : Python 3.8
+- Point d'entrée : app.py
+- Dossier racine : www
 
 > [!primary]
 >
 > Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
 
-
 Pour utiliser les frameworks [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html), le plus simple est d'utiliser [virtualenv](https://pypi.org/project/virtualenv/). 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et activez `virtualenv`: 
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et activez `virtualenv` :
 
 ```sh
 cd www
@@ -147,8 +143,6 @@ Successfully installed Flask-1.1.2 Jinja2-2.11.3 MarkupSafe-1.1.1 Werkzeug-1.0.1
 
 ~/www $ touch tmp/restart.txt
 </code></pre>
-
-
 
 ## Aller plus loin
 

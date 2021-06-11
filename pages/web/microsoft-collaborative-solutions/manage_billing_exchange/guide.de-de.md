@@ -82,4 +82,4 @@ Dazu loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?ac
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,54 +1,69 @@
 ---
-title: 'Changer le mot de passe root sur un serveur dédié sous Linux'
+title: 'Changer le mot de passe root sur un serveur dédié'
 slug: changer-mot-passe-root-linux-sur-serveur-dedie
-excerpt: 'Découvrez comment modifier le mot de passe root de votre serveur, pour des raisons de sécurité ou suite à un oubli'
+excerpt: 'Découvrez comment modifier le mot de passe root de votre serveur dédié'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 20/06/2018**
+**Dernière mise à jour le 16/02/2021**
 
 ## Objectif
 
-Lors de l’installation ou de la réinstallation d’une distribution ou d’un système d’exploitation, un mot de passe pour l’accès root vous est fourni. Nous vous conseillons vivement de le modifier, comme expliqué dans notre guide [« Sécuriser un serveur dédié »](../securiser-un-serveur-dedie/){.external}. Il est également possible que vous ne retrouviez plus ce mot de passe et que vous ayez donc besoin de le changer.
+Il peut s'avérer nécessaire de changer le mot de passe root (ou celui de votre utilisateur admin/sudo) sur votre système d'exploitation GNU/Linux. 
+<br>Deux scénarios sont possibles :
 
-**Ce guide détaille ces deux situations et vous montre comment modifier le mot de passe root de votre serveur.**
+- Vous pouvez toujours vous connecter via SSH
+- Vous ne pouvez pas vous connecter via SSH car vous avez perdu votre mot de passe
+
+**Découvrez comment modifier votre mot de passe administrateur en fonction de la situation initiale.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
-* Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
-* Être connecté en SSH avec l’identifiant root.
-* Avoir accès à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}.
+- Disposer des identifiants de connexion reçus par e-mail suite à l'installation (si ceux-ci sont toujours valides)
+- Avoir accès à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} (pour utiliser le mode rescue).
+
+> [!warning]
+>OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
+>
+>Ce guide est conçu pour vous aider le plus possible dans les tâches courantes. Néanmoins, nous vous recommandons de contacter un prestataire de services spécialisé si vous rencontrez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en oeuvre des services sur un serveur.
+>
 
 ## En pratique
 
-### Changer le mot de passe pour l’accès root
+### Modifier le mot de passe si vous avez toujours accès (utilisateur sudo ou root)
 
-Si vous êtes déjà connecté via votre accès root avec votre mot de passe actuel et que vous souhaitez simplement le modifier, établissez une connexion SSH au serveur via la ligne de commande et tapez la commande suivante :
+Connectez-vous à votre serveur via SSH. Basculez vers l'utilisateur root, si nécessaire :
 
-```sh
-# passwd
 ```
-Vous devrez alors indiquer votre nouveau mot de passe à deux reprises, comme indiqué ci-dessous :
+~$ sudo su -
+~#
+```
 
-```sh
-Enter new UNIX password:
-Retype new UNIX password:
+Pour modifier le mot de passe de l'utilisateur actuel, tapez `passwd`. Vous devrez alors indiquer votre nouveau mot de passe à deux reprises, comme indiqué ci-dessous :
+
+```
+~# passwd
+
+New password:
+Retype new password:
 passwd: password updated successfully
 ```
 
-
 > [!primary]
 >
-> Veuillez noter que sur une distribution Linux, les caractères de votre mot de passe **n'apparaissent pas** au fur et à mesure que vous les tapez.
+> Veuillez noter que sur une distribution GNU/Linux, les caractères de votre mot de passe **n'apparaissent pas** au fur et à mesure que vous les tapez.
 >
 
-### Changer un mot de passe perdu ou oublié
+### Modifier le mot de passe si vous l'avez perdu
 
-#### Étape 1 : identifier la partition système
+#### Étape 1 : identifier la partition système
 
-Après avoir activé le [mode rescue](../ovh-rescue/){.external} sur votre serveur, vous devez identifier la partition système. Vous pouvez le faire via la commande suivante :
+Après avoir redémarré votre serveur en [mode rescue](../ovh-rescue/), vous devez identifier la partition système. Pour ce faire, exécutez la commande suivante :
 
-```sh
+```
 # fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
@@ -68,21 +83,20 @@ Device Boot Start End Blocks Id System
 /dev/sda1 1 31488 8060912 c W95 FAT32 (LBA)
 ```
 
-Dans l'exemple ci-dessus, la partition système est `/dev/hda`.
+Dans l'exemple ci-dessus, la partition système est /dev/hda1.
 
 > [!primary]
 >
-Si votre serveur dispose d'une configuration RAID, vous devez monter votre volume :
-- avec un RAID logiciel, votre partition racine sera `/dev/md` ;
-- avec un RAID matériel, votre partition racine sera `/dev/sd`.
-
+> Si votre serveur dispose d'une configuration RAID, vous devez monter votre volume raid :
+> - avec un RAID logiciel, votre partition racine sera `/dev/mdX` ;
+> - avec un RAID matériel, votre partition racine sera `/dev/sdX`.
 >
 
-#### Étape 2 : monter la partition système
+#### Étape 2 : monter la partition système
 
-Une fois la partition système identifiée, vous pouvez la monter avec la commande suivante :
+Une fois la partition système identifiée, vous pouvez la monter avec la commande suivante :
 
-```sh
+```
 # mount /dev/hda1 /mnt/
 ```
 
@@ -90,15 +104,15 @@ Une fois la partition système identifiée, vous pouvez la monter avec la comman
 
 Par défaut, la partition système est verrouillée pour l'édition. Vous devez donc l'ouvrir pour un accès en écriture, via la commande suivante :
 
-```sh
+```
 # chroot /mnt
 ```
 
-#### Étape 4 : changer le mot de passe root
+#### Étape 4 : modifier le mot de passe root
 
 La dernière étape consiste à modifier votre mot de passe, avec la commande suivante :
 
-```sh
+```
 # passwd
 
 Enter new UNIX password:
@@ -106,14 +120,14 @@ Retype new UNIX password:
 passwd: password updated successfully
 ```
 
-Ensuite, changez le mode de démarrage sur votre serveur pour `Booter sur le disque dur`{.action} et redémarrez-le. Votre mot de passe root est maintenant modifié.
-
-
+Une fois cette étape effectuée, changez le mode de démarrage sur votre serveur pour `Booter sur le disque dur`{.action} et redémarrez-le. Votre mot de passe root est maintenant modifié.
 
 ## Aller plus loin
 
-[« Activer et utiliser le mode rescue. »](../ovh-rescue/){.external}
+[Activer et utiliser le mode rescue](../ovh-rescue/)
 
-[« Changer le mot de passe administrateur sur un serveur dédié Windows. »](../changer-mot-passe-admin-windows/){.external}
+[Sécuriser un serveur dédié](../securiser-un-serveur-dedie/)
+
+[Changer le mot de passe administrateur sur un serveur dédié Windows](../changer-mot-passe-admin-windows/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

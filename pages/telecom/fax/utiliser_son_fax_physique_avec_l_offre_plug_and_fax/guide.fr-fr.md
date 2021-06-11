@@ -1,97 +1,113 @@
 ---
-title: Utiliser son fax physique avec l’offre Plug And Fax
+title: Utiliser son fax physique avec l’offre Plug & Fax
 slug: utiliser-son-fax-physique-avec-l-offre-plug-and-fax
+excerpt: Découvrez comment configurer l’offre Plug & Fax pour utiliser un fax physique
 legacy_guide_number: '8355855'
-space_key: CRFAX
-space_name: Fax
+section: Premiers pas
+order: 2
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 11/03/2021**
 
-Ce guide vous permet de comprendre le fonctionnement de l'offre Plug And Fax et d'ajuster la configuration du télécopieur utilisé pour obtenir le meilleur rendu.
+## Objectif
 
-***![](images/information.png){.thumbnail} Pour commander les offres Fax : <https://www.ovhtelecom.fr/fax/>***
+Vous pouvez configurer la réception de vos fax via votre espace client OVHcloud afin d'ajuster la configuration du télécopieur utilisé pour obtenir le meilleur rendu.
 
-**Sommaire :**
+**Ce guide vous permet de comprendre le fonctionnement de l'offre Plug & Fax.**
 
-Niveau : Intermédiaire
+## Prérequis
 
-------------------------------------------------------------------------
+- Disposer d’une ligne [Plug & Fax OVHcloud](https://www.ovhtelecom.fr/fax/plug-and-fax.xml)
+- Disposer d'un télécopieur
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr)
 
-### Branchement du fax sur le PAP2T/SPA112 {#branchement-du-fax-sur-le-pap2tspa112}
+## En pratique
 
-Le télécopieur utilisé se branche sur la prise RJ11 "**Phone 1**" (En vert sur les images) de votre adaptateur. L'adaptateur doit également être branché en **Ethernet** sur votre routeur.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug & Fax. Sélectionnez la ligne Plug & Fax.
 
- ![](images/datasheet_C78-691106-2.png){.thumbnail}
+## En pratique
 
-------------------------------------------------------------------------
+### Branchement du fax sur le Cisco ATA 191
 
-### Configurer son Fax {#configurer-son-fax}
+Le télécopieur utilisé se branche sur la prise RJ11 « **Phone 1** » de votre adaptateur. Bien évidemment, l'adaptateur doit être raccordé au secteur et également être branché en **Ethernet** sur votre routeur.
 
-Dans le cadre de l'utilisation de votre fax physique avec l'offre Plug And Fax, il faut adapter la configuration de ce fax :
+![branchement Cisco ATA-191](images/cisco-ATA-191.png){.thumbnail}
 
--   **La vitesse de transmission :** 9600 bauds maximum.
--   **Décroché automatique :** À activer au bout de 2 ou 3 sonneries maximum.
--   **La correction d'erreur :** À désactiver.
+### Configurer votre télécopieur
 
-Sur certains fax, la correction d'erreur peut être appelée **ECM** ou **EMC**.
+Dans le cadre de l'utilisation de l'offre Plug & Fax, nous vous conseillons d'adapter la configuration de votre télécopieur. Vérifiez les paramètres suivants :
 
-------------------------------------------------------------------------
+- **La vitesse de transmission** : 9600 bauds/sec maximum.
+- **Décroché automatique** : à activer au bout de 2 ou 3 sonneries maximum.
+- **La correction d'erreur** : à désactiver.
 
-### Configurer le mode de réception des fax {#configurer-le-mode-de-réception-des-fax}
+Sur certains télécopieurs, la correction d'erreur peut être appelée **ECM** ou **EMC**.
 
-L'offre**Plug And Fax** permet d'utiliser deux modes de **réception** :
+### Configurer le mode de réception des fax
 
--   Uniquement sur **le télécopieur** (En **secours**, réception par e-mail ou via Ecofax). Pour utiliser ce mode :
+L'offre Plug & Fax permet d'utiliser deux modes de réception, au choix :
 
-    -   Connectez-vous à votre Espace Client OVH : <https://www.ovhtelecom.fr/espaceclient/>
-    -   Cliquez sur le lien "**Accéder à l'ancienne interface**".
-    -   Cliquez sur l'icône "**Téléphonie**".
-    -   Cliquez sur la ligne "**Plug and Fax**" à configurer.
-    -   Cliquez sur "**Gestion des appels**" dans le menu "**Navigation**".
-    -   Cliquez sur "**Renvoi d'appel**".
+- uniquement sur le télécopieur;
+- uniquement par e-mail ou via le logiciel Ecofax.
 
-![](images/2015-03-18-124239_721x457_scrot.png){.thumbnail}
+La sélection d'un de ces deux modes s'effectue via les renvois d'appels sur votre ligne Plug & Fax.
+Pour y accéder, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. 
+<br>Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug & Fax. Sélectionnez la ligne concernée.
+<br>Cliquez sur `Gestion des appels`{.action} puis sur `Renvoi d'appel`{.action}
 
--   -   Cliquez sur le bouton "**Gérer**".
-    -   Cochez la case devant "**Si pas de réponse avant \_\_ sec:**".
-        -   Définissez le nombre de secondes à 45. (Si votre fax est débranché, éteint ou en panne, vous recevrez toujours vos fax par mail ou via le logiciel Ecofax si le télécopieur n'a pas décroché après 45 secondes.)
-        -   Choisissez le type de redirection vers **fax** et sélectionnez le numéro de votre ligne de **fax**.
-    -   Cochez la case devant "**Si la ligne n'est pas disponible :**".
-        -   Choisissez le type de redirection vers **fax** et sélectionnez le numéro de votre ligne de **fax**. Cette fonction permet de recevoir vos fax par mail ou le logiciel Ecofax en cas de non-réponse de la ligne.
+![Gestion des appels](images/gestion_des_appels.png){.thumbnail}
 
-    ![](images/2015-03-18-140425_548x142_scrot.png){.thumbnail}
+#### Réception via le télécopieur
 
--   Uniquement par e-mail ou via **Ecofax :**
-    -   Connectez-vous à votre Espace Client OVH : <https://www.ovhtelecom.fr/espaceclient/>
-    -   Cliquez sur le lien "**Accéder à l'ancienne interface**".
-    -   Cliquez sur l'icône "**Téléphonie**".
-    -   Cliquez sur la ligne "**Plug and Fax**" à configurer.
-    -   Cliquez sur "**Gestion des appels**" dans le menu "**Navigation**".
-    -   Cliquez sur "**Renvoi d'appel**".
-    -   Cliquez sur le bouton "**Gérer**".
-    -   Cochez la case "**Renvoyer tous les appels vers**"
-    -   Sélectionnez "**Fax**" et sélectionnez le numéro de la ligne **Plug And Fax**. Dans cette configuration, tous les fax reçus seront disponibles uniquement par e-mail ou via le logiciel Ecofax.
+Il s'agit du mode normal de réception des fax, lorsqu'un télécopieur fonctionnel est raccordé à l'adaptateur Plug & Fax. Si votre télécopieur est débranché, éteint ou en panne, les renvois d'appels décrits ci-dessous permettent d'assurer une continuité de la réception des fax. En effet, vous recevrez ainsi toujours vos fax par e-mail ou via le logiciel Ecofax.
 
-Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro]({originalUrl}/display/CRFAX/Configurer+ma+ligne+Ecofax+Pro).
+Depuis le menu de `Renvoi d'appel`{.action}, cochez la case devant `Renvoi quand il n'y a pas de réponse`{.action} et définissez le nombre de secondes à 45.
+<br>Ce renvoi laisse donc 45 secondes à votre télécopieur pour décrocher lors d'une réception de fax. Au delà de ce délai, le fax est renvoyé vers votre adresse e-mail ou vers le logiciel Ecofax. 
+<br>Choisissez de `Renvoyer vers un`{.action} **Fax** et renseignez le numéro de votre ligne Plug & Fax.
 
-------------------------------------------------------------------------
+De même, cochez la case devant `Renvoi quand la ligne est injoignable ou déconnectée`{.action}.
+<br>Choisissez de `Renvoyer vers un`{.action} **Fax** et renseignez le numéro de votre ligne Plug & Fax.
 
-### Configurer la présentation du numéro en appel sortant {#configurer-la-présentation-du-numéro-en-appel-sortant}
+Enfin, cliquez sur `Valider`{.action}.
 
-Avec l'offre Plug And Fax, vous pouvez choisir la présentation du numéro en appel sortant. Pour configurer l'option :
+![renvoi d'appels](images/renvoi_dappel.png){.thumbnail}
 
--   Connectez-vous à votre Espace Client OVH : <https://www.ovhtelecom.fr/espaceclient/>
--   Cliquez sur le lien "**Accéder à l'ancienne interface**".
--   Cliquez sur l'icône "**Téléphonie**".
--   Cliquez sur la ligne "**Plug and Fax**" à configurer.
--   Cliquez sur "**Gestion des appels**" dans le menu "**Navigation**".
--   Cliquez sur "**Présentation du numéro**"
--   Cliquez sur le bouton "**Gérer**".
-    -   Pour ne pas présenter de numéro, **décochez**la case "**Présenter le numéro**".
-    -   Choisissez le **numéro à présenter** parmi la liste.
--   Confirmez la configuration en appuyant sur le bouton **Valider**. ![](images/2015-03-18-143938_719x406_scrot.png){.thumbnail}
+Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro](../utilisation_de_loffre_ecofax_pro_plug_and_fax/#options-de-notifications).
 
+#### Réception uniquement par e-mail ou Ecofax
 
+Vous pouvez choisir de ne recevoir les fax que par e-mail, par exemple lors d'un déplacement ou en cas de panne prolongée de votre télécopieur.
 
+Dans ce cas de figure, un renvoi d'appel inconditionnel est préconisé afin de rediriger tous les fax entrants vers votre adresse e-mail ou le logiciel Ecofax.
 
+Depuis le menu de `Renvoi d'appel`{.action}, cochez la case devant `Renvoi de tous les appels`{.action}.
+<br>Choisissez de `Renvoyer vers un`{.action} **Fax** et renseignez le numéro de votre ligne Plug & Fax.
+
+Enfin, cliquez sur `Valider`{.action}.
+
+![renvoi d'appels inconditionnel](images/renvoi_dappel2.png){.thumbnail}
+
+Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro](../utilisation_de_loffre_ecofax_pro_plug_and_fax/#options-de-notifications).
+
+### Configurer la présentation du numéro en appel sortant
+
+Avec l'offre Plug & Fax, vous pouvez modifier la présentation du numéro lors des appels sortants.
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. 
+<br>Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug & Fax. Sélectionnez la ligne concernée.
+
+<br>Cliquez sur `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}
+
+![présentation numéro](images/pres-numero1.png){.thumbnail}
+
+Le bouton `Choisir un autre numéro`{.action} vous permet d'accéder à la liste des numéros qu'il est possible de présenter depuis votre ligne Plug & Fax.
+
+Si vous ne souhaitez pas présenter de numéro, cochez la case `Rester anonyme`{.action}.
+
+![présentation numéro](images/pres-numero2.png){.thumbnail}
+
+Validez votre choix en cliquant sur `Appliquer les modifications`{.action}.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -15,7 +15,6 @@ This project is under active development, and new guides are added or updated on
 
 ## Test it
 
-* [docs-developer-env](https://github.com/ovh/docs-developer-env) - Our developer environment over docker, to live test your guides with our theme.
 * [docs-rendering-engine](https://github.com/ovh/docs-rendering) - Our HTML templating engine based on Pelican. ISO-rendering of docs.ovh.com
 
 ## Contributing

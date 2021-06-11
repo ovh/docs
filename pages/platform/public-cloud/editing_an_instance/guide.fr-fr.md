@@ -14,7 +14,7 @@ Ce guide vous indique la procédure à suivre afin d'effectuer cela.
 
 
 ### Prérequis
-- [Créer un accès à Horizon]({legacy}1773){.ref}
+- [Créer un accès à Horizon](../creer-un-acces-a-horizon/)
 - Une instance
 
 

@@ -3,6 +3,7 @@ title: Prywatny SQL
 excerpt: Prywatny SQL
 slug: prywatny_sql
 section: Private SQL
+hidden: true
 ---
 
 

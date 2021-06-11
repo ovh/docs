@@ -6,7 +6,7 @@ section: Server Management
 order: 1
 ---
 
-**Last updated 15th January 2021**
+**Last updated 16th February 2021**
 
 ## Objective
 
@@ -36,14 +36,14 @@ It may become necessary to change the root password (or the one of your admin/su
 
 Log in to your server via SSH. Switch to the root user, if necessary:
 
-```sh
+```
 ~$ sudo su -
 ~#
 ```
 
 To change the password of the current user, type `passwd`:
 
-```sh
+```
 ~# passwd
 
 New password:
@@ -63,7 +63,7 @@ passwd: password updated successfully
 
 After restarting your server into [rescue mode](../rescue-mode/), you will need to identify the system partition. You can do this with the following command:
 
-```sh
+```
 # fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
@@ -97,7 +97,7 @@ If your server has a RAID configuration, you will need to mount your raid volume
 
 Once you have identified the system partition, you can mount it with the following command:
 
-```sh
+```
 # mount /dev/hda1 /mnt/
 ```
 
@@ -105,7 +105,7 @@ Once you have identified the system partition, you can mount it with the followi
 
 The system partition is locked for editing by default so you need to open it for write access first, which you can do with the following command:
 
-```sh
+```
 # chroot /mnt
 ```
 
@@ -113,7 +113,7 @@ The system partition is locked for editing by default so you need to open it for
 
 The final step is to change the password with the following command:
 
-```sh
+```
 # passwd
 
 Enter new UNIX password:

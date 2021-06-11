@@ -1,5 +1,5 @@
 ---
-title: Cloud
+title: All the cloud universes
 slug: cloud
 excerpt: Toda la información sobre los productos cloud de OVHcloud
 color: gold

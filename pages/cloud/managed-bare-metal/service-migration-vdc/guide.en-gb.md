@@ -1,9 +1,9 @@
 ---
 title: Migrating an infrastructure to a new vDC
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/service-migration/'
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/sddc-migration/'
 excerpt: Find out how to manage all aspects of migrating an infrastructure to a vDC
-slug: service-migration-vdc
+slug: vdc-migration
 section: Getting started
 order: 6
 hidden: true
@@ -148,6 +148,8 @@ Here is a checklist of aspects to take into account:
 - List of VMs being backed up
 - Backup settings
 
+Please refer to our guide on [activating and using Veeam Managed Backup](../veeam-backup-as-a-service/).
+
 **Automation tips:** OVHcloud API provides VM backup information attached to each VM via:
 
 > [!api]
@@ -156,8 +158,6 @@ Here is a checklist of aspects to take into account:
 >
 
 The “backup” section of the returning json will give information on current backup configuration.
-
-Please refer to our guide on [activating and using Veeam Managed Backup](../veeam-backup-as-a-service/).
 
 #### Inventory organisation
 

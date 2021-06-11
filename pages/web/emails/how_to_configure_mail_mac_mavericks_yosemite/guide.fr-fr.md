@@ -7,7 +7,7 @@ section: Configuration sur ordinateur
 hidden: true
 ---
 
-Configurer sa boîte e-mail sur son Mac est très simple, cependant, voici un tutoriel pour vous aider à le faire de plusieurs manières. [Cliquez ici]({legacy}1474){.ref} pour retrouver nos différents guides de configuration e-mail.
+Configurer sa boîte e-mail sur son Mac est très simple, cependant, voici un tutoriel pour vous aider à le faire de plusieurs manières. [Cliquez ici](../) pour retrouver nos différents guides de configuration e-mail.
 
 - Vous pouvez aussi vous référer à notre [guide iPhone sur iOS3]({legacy}1296){.ref}.
 - Vous pouvez aussi vous référer à notre [guide dédié à l'iPad iOS 7]({legacy}1348){.ref}.
@@ -122,7 +122,7 @@ Sélectionnez le compte e-mail, les informations de ce compte vont apparaître.
 - Serveur de réception : Le serveur e-mail SSL0.OVH.NET
 - Nom d'utilisateur : Votre adresse e-mail complète.
 - Mot de passe : Le mot de passe que vous avez défini dans [l'espace
-client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} .
+client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} .
 - Serveur d'envoi (SMTP) : Le serveur mail d'envoi configuré pour le compte.
 
 

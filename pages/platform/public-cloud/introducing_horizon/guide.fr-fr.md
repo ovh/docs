@@ -12,7 +12,7 @@ Cette page présente l'interface Horizon, cette interface est nativement propos�
 
 
 ### Prérequis
-- [Créer un accès à Horizon]({legacy}1773){.ref}
+- [Créer un accès à Horizon](../creer-un-acces-a-horizon/)
 
 
 ## Vue d'ensemble

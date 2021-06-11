@@ -1,7 +1,7 @@
 ---
 title: Installer Strapi sur votre hébergement web POWER
 slug: nodejs-installer-strapi
-excerpt: Découvrez comment installer strapi sur votre hébergement web POWER
+excerpt: Découvrez comment installer Strapi sur votre hébergement web POWER
 section: Node.js
 order: 6
 ---
@@ -31,32 +31,30 @@ order: 6
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer un CMS *headless* basé sur [Strapi](https://strapi.io/).
+Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer un CMS *headless* basé sur [Strapi](https://strapi.io/){.external}.
 
-**Découvrez comment installer strapi sur votre hébergement web POWER**
+**Découvrez comment installer Strapi sur votre hébergement web POWER**
 
 ## Prérequis
 
-- Disposer d'une de l'offre d'hébergement web POWER [Node.js](https://labs.ovh.com/managed-nodejs).
+- Disposer de l'offre d'hébergement web POWER [Node.js](https://labs.ovh.com/managed-nodejs).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
+Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) » avant de poursuivre la lecture de ce guide.
 
 ## En pratique
 
 Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
-- Moteur : nodejs 14 
-- Point d'entrée : index.js 
-- Dossier racine : www 
-
+- Moteur : nodejs 14
+- Point d'entrée : index.js
+- Dossier racine : www
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration).
 
-
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER. 
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
 
 Effacez le répertoire `www` et installez ensuite Strapi :
 
@@ -73,6 +71,12 @@ const strapi = require('strapi');
 strapi(/* {...} */).start();
 ```
 
+Construire le site admin UI : 
+```sh
+cd www
+yarn build
+```
+
 Créez un fichier `.htaccess` pour gérer la redirection HTTPS :
 
 ```sh
@@ -80,12 +84,11 @@ RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 
-
-[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre CMS sur Strapi sera en ligne.
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre CMS sur Strapi sera alors en ligne.
 
 ![Strapi](images/nodejs-install-strapi-01.png){.thumbnail}
 
-Terminal output:
+Sortie du terminal :
 
 <pre class="console"><code> ~ $ rm -rf www
 
@@ -113,9 +116,8 @@ EOF
 
 </code></pre>
 
-
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
-**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting)**
+**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting).**

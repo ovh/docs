@@ -1,7 +1,7 @@
 ---
 title: Migrer une infrastructure vers Hosted Private Cloud
 excerpt: Découvrez comment gérer tous les aspects liés à la migration d'une infrastructure vers la solution Hosted Private Cloud
-slug: service-migration
+slug: sddc-migration
 section: Premiers pas
 order: 6
 ---

@@ -1,85 +1,79 @@
 ---
-title: 'Tworzenie autorespondera'
-excerpt: 'Przewodnik dotyczący aktywacji autorespondera'
+title: 'Tworzenie autorespondera dla konta e-mail'
+excerpt: 'Dowiedz się, jak zainstalować autoresponder e-mail'
 slug: przewodnik_dotyczacy_aktywacji_autorespondera
 legacy_guide_number: g2052
 section: 'Funkcjonalności kont e-mail'
 ---
 
-## Wstępne wymagania
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
 
-- dostęp do panelu klienta
-- dysponowanie ofertą OVH pozwalającą na tworzenie kont e-mail
-- korzystanie z serwerów MX* OVH
+**Ostatnia aktualizacja z dnia 28-08-2020**
 
+## Wprowadzenie
 
-* Przewodnik na temat serwerów MX: []({legacy}2003)
+W przypadku Twojej nieobecności w biurze możesz utworzyć autoresponder e-mail, który zostawi wiadomość dla rozmówców chcących skontaktować się z Tobą za pośrednictwem poczty e-mail.
 
+**Dowiedz się, jak uruchomić autoresponder e-mail.**
 
-## Logowanie do panelu klienta
+## Wymagania początkowe
 
-- Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web) za pomocą identyfikatora klienta i hasła.
+- Wykupienie usługi MX Plan. Jest ona dostępna przez: oferta [hostingu](https://www.ovh.pl/hosting/){.external}, bezpłatny [hosting Start 10M](https://www.ovh.pl/domeny/oferta_serwer_start10m.xml){.external} zawarty w ofercie domeny (wcześniej aktywowanej) lub oferta MX Plan zamówiona oddzielnie.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
-- Kliknij na "Login".
+## W praktyce
 
+> [!primary]
+>
+> Jeśli Twoje konto e-mail znajduje się w ofercie [**Exchange**](https://www.ovh.pl/emaile/hosted-exchange/), [**Email Pro**](https://www.ovh.pl/emaile/email-pro/) lub nie ma sekcji `Zarządzanie autoresponderami`{.action} w Twoim MXplan, utwórz autoresponder w interfejsie Webmail korzystając z dokumentacji ["Instalacja autorespondera z poziomu interfejsu OWA"](../../microsoft-collaborative-solutions/exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/).
 
+### Utworzenie autorespondera
 
-![](images/img_3592.jpg){.thumbnail}
+Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. 
 
+Wybierz odpowiednią domenę w sekcji `E-maile`{.action}, w kolumnie po lewej stronie.
 
-## Wybór domeny, do której przypisana jest usługa kont e-mail.
-Wybierz sekcję E-maile i nazwę domeny.
+Kliknij kartę `E-maile`{.action} u góry, a następnie `Zarządzanie automatycznymi odpowiedziami`{.action}.
 
-![](images/img_3600.jpg){.thumbnail}
+Zostaniesz przekierowany do okna `Zarządzanie autoresponderami`, które wyświetlają wszystkie autorespondery e-mail na Twojej usłudze e-mail.
 
+Kliknij `Dodaj autoresponder`{.action}
 
-## Zakładka E-maile
-Wybierz zakładkę "E-maile" (1) i kliknij na "Zarządzanie autoresponderami" (2).
+![hosting](images/email_responder01.gif){.thumbnail}
 
-![](images/img_3597.jpg){.thumbnail}
+Pojawi się okno dodawania. Możesz ją uzupełnić zgodnie z poniższymi informacjami.
 
+- `Typ autorespondera`:
 
-## Menu autoresponder
-Kliknij na "Dodaj autoresponder".
+"Przypisany do skrzynki e-mail": do wykorzystania, jeśli dotyczy to istniejącego konta e-mail w Twojej usłudze e-mail.
+"Wolne": do użycia w przypadku aliasu. Nie jest więc przypisany do istniejącego adresu.
 
-![](images/img_3598.jpg){.thumbnail}
+- `Skrzynka e-mail` lub `Nazwa autorespondera`: adres e-mail lub alias, którego dotyczy autoresponder.
 
+- `Czas działania autorespondera`:
 
-## Konfiguracja autorespondera
-Typ autorespondera (1):
+"Tymczasowe": zdefiniuj datę rozpoczęcia i zakończenia działania autorespondera (przydatną, jeśli chcesz odejść na urlop).
+"Stałe": autoresponder będzie działał, dopóki nie zostanie wyłączony.
 
-- "Przypisany do skrzynki e-mail" (jeśli dotyczy istniejącego adresu e-mail a nie aliasu).
-- "Wolny" (jeśli dotyczy aliasu).
+- `Wyślij kopię` lub `Zachowaj wiadomości na serwerze`: umożliwia przekierowanie wiadomości otrzymanych w trakcie Twojej nieobecności na wybrany adres lub zachowanie ich na adres e-mail.
 
-Skrzynka e-mail:
-- Adres e-mail lub alias, dla którego chcesz utworzyć autoresponder.
+> [!warning]
+> Jeśli usuniesz zaznaczenie tej kratki, wiadomości otrzymane podczas Twojej nieobecności zostaną automatycznie usunięte.
 
-Czas aktywności autorespondera (2):
-- "Tymczasowy": pozwala na określenie daty początku i końca działania autorespondera (użyteczne w przypadku wyjazdu na wakacje).
-- "Stały": autoresponder będzie działał do momentu jego wyłączenia. 
+- `Adres w kopii` (tylko w trybie wolnym): w przypadku aliasu wybierz adres e-mail, który otrzyma e-maile wysłane do aliasu.
 
-Nie usuwaj wiadomości (3):
-- Pozwala na zachowanie kopii otrzymanej wiadomości, jeśli opcja ta jest zaznaczona. Jeśli wybrałeś autoresponder "wolny", będziesz mógł wybrać adres e-mail, na który będzie przesyłana kopia otrzymanej wiadomości.
+- `Wiadomość`: Jest to wiadomość, którą Twoi rozmówcy otrzymają podczas wysyłki wiadomości e-mail.
 
-Wiadomość (4):
-- Wiadomość autorespondera. Chodzi o wiadomość, którą otrzymają odbiorcy po wysłaniu wiadomości e-mail.
+Następnie kliknij przycisk `Zatwierdź`{.action}, aby uruchomić autoresponder.
 
-Potwierdzenie (5):
-- Kliknij na "Zatwierdź", aby uruchomić autoresponder.
+### Zmiana lub usunięcie autorespondera
 
+Po utworzeniu autorespondera e-mail pojawia się on na liście widocznej w sekcji `Zarządzanie autoresponderami`{.action} w Twojej usłudze e-mail. Możesz go usunąć lub zmienić, klikając przycisk `...`{.action} znajdujący się po prawej stronie.
 
+![hosting](images/email_responder02.png){.thumbnail}
 
-![](images/img_3589.jpg){.thumbnail}
+## Sprawdź również
 
-- Pojawi się komunikat o trwającej operacji dodawania autorespondera.
-
-
-
-![](images/img_3590.jpg){.thumbnail}
-
-
-## Widoczność autorespondera
-Autoresponder pojawi się na liście. Ikonka koła zębatego pozwoli na jego usunięcie lub modyfikację.
-
-![](images/img_3599.jpg){.thumbnail}
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -22,7 +22,7 @@ OVHcloud propone diverse soluzioni email: MX Plan (venduto da solo o incluso in 
 
 - Disporre di un account email MX Plan (incluso in una soluzione di [hosting Web OVHcloud](https://www.ovh.it/hosting-web/){.external})
 - Disporre di un servizio [Exchange](https://www.ovh.it/emails/hosted-exchange/){.external} o [Email Pro](https://www.ovh.it/emails/email-pro/){.external} con almeno un account non configurato (che apparirà nel formato "@configureme.me")
-- Non aver configurato un reindirizzamento sull'indirizzo email MX Plan che vuoi migrare.
+- **Non aver configurato un reindirizzamento sull'indirizzo email MX Plan che vuoi migrare.**
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 
@@ -71,6 +71,9 @@ La migrazione può essere effettuata da due interfacce:<br>
 - **quella dell'assistente di configurazione Hosted Exchange**, solo se hai appena ordinato un servizio Hosted Exchange e non hai ancora configurato nulla su quest'ultimo;
 - **la soluzione MX Plan**, non appena disponi di un servizio Email Pro o Exchange (già configurato o meno) e di un indirizzo MX Plan da migrare.
 
+> Ti ricordiamo che, prima di iniziare la migrazione, assicurati che sul tuo MXplan non siano configurati **reindirizzamento** o che non siano impostati **segreteria**.
+> ![email](images/mxplan-legacy-redirect.png){.thumbnail}
+
 Quando tutto è pronto, prosegui nella lettura di questa guida utilizzando l'interfaccia selezionata. Ti ricordiamo che il tempo di migrazione dipende dalla quantità di contenuto da migrare verso il tuo nuovo account. che può variare da pochi minuti a diverse ore.
 
 > [!warning]
@@ -103,6 +106,7 @@ Conferma la password associata all'indirizzo email sorgente (quello che vuoi mig
 #### 3.2 Migrare la nuova versione del MXPlan <a name="NouvelleVersionMxplan"></a>
 
 Se hai appena ordinato il nuovo servizio di posta, prima aggiungi il dominio alla tua piattaforma [Email Pro](../../emails-pro/prima-configurazione/) o [Exchange](../aggiungere-dominio-su-exchange/).
+
 
 La migrazione del tuo MXPlan avverrà in 3 step, **Rinommer**, **Creare** e **Migrare**.
 

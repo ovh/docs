@@ -100,7 +100,7 @@ tmpfs 393M 5.2M 388M 2% /run
 tmpfs 982M 0 982M 0% /dev/shm
 tmpfs 5.0M 0 5.0M 0% /run/lock
 tmpfs 982M 0 982M 0% /sys/fs/cgroup
-swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
+swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME 1.0T 0 1.0T 0% /mnt/container
 ```
 
 

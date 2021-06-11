@@ -73,7 +73,7 @@ nano /etc/ssh/sshd_config
 > The command `nano` is used as an example; you can also use `vim` or any other command that allows you to edit configuration files.
 >
 
-You then need to find the following lines:
+You should find the following or similar lines:
 
 ```sh
 # What ports, IPs and protocols we listen for
@@ -204,8 +204,8 @@ The concept of security is not limited to protecting a system against attacks.
 
 Securing your data is a key element, which is why OVHcloud offers you several backup options as a service:
 
-- The `Snapshot` option which allows you to create a manual snapshot.
-- The `Automated Backup` option allows you to keep regular backups of your VPS (excluding additional disks).
+- The `Snapshot` option allows you to create a manual snapshot.
+- The `Automated Backup` option enables you to keep regular backups of your VPS (excluding additional disks).
 
 You can find all information on the available backup solutions for your service on the [product page](https://www.ovhcloud.com/en-ie/vps/options/) and in the [respective guides](../).
 

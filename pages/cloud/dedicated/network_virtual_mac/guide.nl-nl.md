@@ -65,4 +65,4 @@ Klik ten slotte op de knop`...`{.action} rechts en klik vervolgens op `Virtuele 
 
 ## Verder
 
-Ga in gesprek met onze communitygebruikers via <https://community.ovh.com/en>.
+Ga in gesprek met onze communitygebruikers via <https://community.ovh.com/en/>.

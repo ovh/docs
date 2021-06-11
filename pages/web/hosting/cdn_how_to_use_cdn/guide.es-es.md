@@ -6,7 +6,7 @@ legacy_guide_number: g1290
 section: 'Optimización del sitio web'
 ---
 
-**Última actualización: 19/11/2020**
+**Última actualización: 26/04/2021**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -86,7 +86,9 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 #### Configurar las opciones del Shared CDN
 
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego `Editar la CDN`{.action}.
+Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego en `Editar la CDN`{.action}. 
+
+También puede hacer clic en el icono de lápiz situado a la derecha de una entrada multisitio, cuando la opción CDN esté activada. Haga clic en `Editar su CDN`{.action}.
 
 > [!warning]
 > 
@@ -102,13 +104,13 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 - **Brotli**:  tipo de compresión que permite optimizar el tamaño de los archivos en caché.
 
-- **Regla de caché**: Cree hasta 5 reglas. Dichas indicaciones determinan la frecuencia de actualización del cacheado para determinados recursos del sitio web. ([seguir el siguiente paso](./#crear-una-regla-de-almacenamiento-en-cache).
+- **Regla de caché**: Cree hasta 5 reglas. Dichas indicaciones determinan la frecuencia de actualización del cacheado para determinados recursos del sitio web. ([seguir el siguiente paso](./#crear-una-regla-de-almacenamiento-en-cache)).
 
 Una vez seleccionadas las opciones, haga clic en `Aplicar la configuración`{.action} y seleccione `Aceptar la configuración`{.action} en la siguiente ventana.
 
 ![CDN](images/manage_sharedCDN_03.png){.thumbnail}
 
-##### Crear una regla de almacenamiento en caché
+##### **Crear una regla de almacenamiento en caché**
 
 Para añadir una regla de caché a uno de los elementos de su sitio, acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y seleccione `Configurar la CDN`{.action}.
 
@@ -118,9 +120,9 @@ Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla
 
 - **Nombre de la regla**: Asigne un nombre a la regla.
 
-- **URI** : Introduzca el subconjunto de recursos de su sitio web en el directorio de su sitio web. Para la solución CDN-Basic, solo es posible introducir una extensión de archivo.
+- **URI** : Introduzca el subconjunto de recursos de su sitio web en el directorio de su sitio web. En los servicios CDN-Basic y CDN-Security, solo es posible introducir una extensión de archivo.
 
-- **Duración**: especifique la vida útil de la regla para el recurso seleccionado.
+- **Duración**: especifique el tiempo de cacheado del recurso seleccionado.
 
 - **Clasificación**:  Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
 
@@ -131,6 +133,60 @@ Las reglas aparecen en una lista.  Puede modificarla haciendo clic en `...`{.act
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
 Una vez que haya configurado las reglas y las opciones, haga clic en `Aplicar la configuración`{.action} y seleccione `Aceptar la configuración`{.action} en la siguiente ventana.
+
+#### Configurar las opciones de la CDN Security
+
+> [!primary]
+>  las opciones que se presentan a continuación requieren la suscripción a la [CDN Security](https://www.ovh.es/hosting/cdn.xml) o a la [CDN Advanced](https://www.ovh.es/hosting/cdn.xml)
+
+Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego `Editar la CDN`{.action}. 
+
+También puede hacer clic en el icono de lápiz situado a la derecha de una entrada multisitio, cuando la opción CDN esté activada. Haga clic en `Editar su CDN`{.action}.
+
+- **Cross-Origin Resource Sharing (CORS)** : Indique en la lista los dominios externos que estarán autorizados a acceder a los recursos de su sitio web para compartirlos. 
+
+Una vez activada la función, haga clic en `Editar la lista de recursos externos`{.action} para añadir los dominios autorizados a compartir sus recursos.
+
+![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
+
+Una vez que haya completado la lista, haga clic en `Confirmar`{.action}.
+
+> [!primary]
+> Si activa la opción CORS sin especificar ningún dominio en la lista, significa que todos los dominios están autorizados a utilizar los recursos de su sitio web.
+
+- **HTTPS-redirect**: Proteja la globalidad del tráfico de su sitio web redirigiéndolo hacia el protocolo HTTPS de forma temporal o permanente.
+
+Una vez activada la función, haga clic en el menú desplegable para elegir entre `Redirección permanente (301)` o `Redirección temporal (302)`.
+
+![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
+
+- **HTTP Strict Transport Security (HSTS)** : Imponga el acceso a su sitio web únicamente en HTTPS. De este modo, su solución web estará protegida contra los ataques de degradado (o de tipo "ataque por replicación").
+
+Una vez activada la función, deberá determinar la duración en la que el navegador aplicará la función HSTS en su sitio web. 
+
+![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
+
+> [!primary]
+> 
+> Cuando active la función HSTS en su sitio web, forzará el protocolo HTTPS en su navegador hasta el final del período denominado "edad máxima", incluso después de desactivar la función en su área de cliente. No obstante, cuando la caché se vacie en el navegador que ya haya realizado una visita al sitio web, este último aplicará el nuevo estado de la función HSTS.
+
+- **Mixed content**: Force todo el contenido de sus páginas web. Se cargarán de forma segura, participando así en una experiencia de usuario óptima. Todos los recursos del sitio web, tanto internos como externos, deben estar disponibles en HTTPS para evitar un error del navegador.
+
+- **Firewall de aplicación**: El **W**eb **A**pplation **F**irewall (WAF) protege su sitio web de ataques fraudulentos, como inyección de código, peticiones ilegítimas o robo de datos. Este solución cubre los principales fallos conocidos de la web filtrando las peticiones y los paquetes transmitidos (la lista de fallos es administrada por OVHcloud y se actualiza regularmente).  
+
+> [!warning]
+> 
+> Para a instalação de um [módulo 1 clique da OVHcloud](../modulos-en-un-clic/), o WAF deve ser desativado para evitar que a instalação do módulo seja bloqueada.
+
+> [!primary]
+>  
+> El WAF está íntegramente administrado por OVHcloud. La lista de fallos se actualiza regularmente.
+
+### Ver las estadísticas de la CDN
+
+En la pestaña `Multisitios`{.action} de su alojamiento, bajo la tabla, podrá consultar las estadísticas de su CDN, indicando el número de peticiones por minutos medidas sobre el mismo.
+
+![CDN](images/manage_CDNstat_01.png){.thumbnail}
 
 ### Gestionar su CDN (versión histórica)
 

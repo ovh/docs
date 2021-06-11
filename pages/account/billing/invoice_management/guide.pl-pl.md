@@ -23,7 +23,6 @@ OVHcloud oddaje do Twojej dyspozycji Panel klienta, w którym możesz wyświetla
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Zalogowanie jako kontakt księgowy (więcej szczegółów o rodzajach kontaktów w przewodniku [Zarządzanie kontaktami](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/){.external})
 
-
 ## W praktyce
 
 > [!primary]
@@ -57,16 +56,15 @@ Kwota podatku jest wyszczególniona na dole w podsumowaniu całkowitej kwoty nal
 > Jeśli przy użytym sposobie płatności pojawia się napis „Termin zapłaty wg regulaminu”, oznacza to, że usługa objęta jest automatycznym odnowieniem. Użyty sposób płatności to sposób zarejestrowany w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 >
 
-
 ### Sekcja płatności w Panelu klienta
 
 #### Wyświetlanie i zarządzanie fakturami
 
-Aby wyświetlać faktury, przejdź do sekcji `Faktury`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, klikając Twoje imię na górze po prawej stronie. 
+Aby wyświetlać faktury, przejdź do sekcji `Faktury`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, klikając Twoje imię na górze po prawej stronie.
 
 ![Panelu klienta](images/hubinvoices.png){.thumbnail}
 
-Zostaniesz wówczas przekierowany do strony z listą Twoich faktur: 
+Zostaniesz wówczas przekierowany do strony z listą Twoich faktur:
 
 ![Lista faktur](images/billing_section.png){.thumbnail}
 
@@ -76,9 +74,8 @@ W poszczególnych wierszach tabelki znajdziesz następujące informacje:
 - data wystawienia faktury
 - kwota należności na fakturze;
 - saldo do uregulowania;
-- termin płatności faktury; 
+- termin płatności faktury;
 - `...`{.action}: możliwe będą różne działania.
-
 
 > [!primary]
 >
@@ -89,27 +86,25 @@ Jeśli wyświetla się napis „Informacja niedostępna”, oznacza to, że fakt
 
 ![Operacje dotyczące faktur](images/actions_choices.png){.thumbnail}
 
-- `Wyświetl wersję HTML`{.action}: faktura otworzy się w nowej zakładce w przeglądarce internetowej; 
+- `Wyświetl wersję HTML`{.action}: faktura otworzy się w nowej zakładce w przeglądarce internetowej;
 - `Wyświetl wersję PDF`{.action}: wygenerowany zostanie plik w formacie PDF, który będziesz mógł pobrać;
-- `Wyświetl szczegóły faktury`{.action}: będziesz mógł sprawdzić historię operacji wykonanych w związku z fakturą. 
-
+- `Wyświetl szczegóły faktury`{.action}: będziesz mógł sprawdzić historię operacji wykonanych w związku z fakturą.
 
 Dostępnych jest kilka filtrów ułatwiających sortowanie faktur:
 
 ![Filtry sortowania](images/sort_filters.png){.thumbnail}
 
-Aby odnaleźć konkretną fakturę, wprowadź jej numer lub wyszukaj fakturę(y) w danym okresie: trzech miesięcy, sześciu miesięcy, roku lub w innym wskazanym przez Ciebie przedziale czasu. 
+Aby odnaleźć konkretną fakturę, wprowadź jej numer lub wyszukaj fakturę(y) w danym okresie: trzech miesięcy, sześciu miesięcy, roku lub w innym wskazanym przez Ciebie przedziale czasu.
 
 Przycisk `Eksportuj w CSV`{.action} umożliwia pobranie pliku Excel w formacie .csv, w którym wyszczególnione będą wybrane faktury. Plik ten będzie zawierał kwotę, numer i datę wystawienia faktur.
 
-#### Regulowanie salda
+#### Opłacanie rachunków <a name="oplacanie-rachunkow"></a>
 
 Aby uregulować zaległe płatności, kliknij przycisk `Ureguluj saldo teraz`{.action}.
 
 ![Spłata zaległej należności](images/pay_debt.png){.thumbnail}
 
 Utworzony zostanie wówczas formularz [zamówienia](https://docs.ovh.com/pl/billing/zarzadzanie-zamowieniami-ovh/#zamowienie){.external} umożliwiający uregulowanie należnej kwoty. Po dokonaniu płatności saldo zostanie uregulowane.
-
 
 ### Śledzenie płatności
 
@@ -123,7 +118,6 @@ Z tej sekcji możesz również eksportować dokumenty potwierdzające płatnoś�
 >
 > Jeśli zauważysz różnicę między płatnością a kwotą na fakturze, oznacza to, że otrzymałeś zwrot płatności lub rekompensatę, która automatycznie pomniejszyła kwotę do zapłaty.
 >
-
 
 ## Sprawdź również
 

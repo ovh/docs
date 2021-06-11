@@ -168,5 +168,5 @@ Aparece la ventana de seguimiento de la migración, la que puede dejar abierta p
 
 [Cómo autorizar las conexiones poco seguras en Gmail](https://docs.ovh.com/es/microsoft-collaborative-solutions/migracion-de-gmail-mediante-ovh-mail-migrator/seguridad_gmail){.external}.
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en](https://community.ovh.com/en){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en](https://community.ovh.com/en/){.external}.
 

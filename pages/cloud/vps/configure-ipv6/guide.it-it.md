@@ -393,7 +393,7 @@ In base al sistema operativo, cloud-init sarà in grado di gestire la rete, l’
 
 Nelle distribuzioni più recenti (come CentOS, Debian 9, Ubuntu 16.x e versioni successive), la configurazione di default di cloud.init può a volte reinizializzare automaticamente la configurazione di rete all'avvio del server.
 
-In casi specifici di utilizzo, ti consigliamo di evitare la reinizializzazione disattivando la gestione automatica della rete in Cloud-Init. tramite un comando che permetterà di creare un file `/etc/cloud/cloud.cfg.d/98-disable-network-config.cf` contenente il valore `network: {config: disabled}`:
+In casi specifici di utilizzo, ti consigliamo di evitare la reinizializzazione disattivando la gestione automatica della rete in Cloud-Init. tramite un comando che permetterà di creare un file `/etc/cloud/cloud.cfg.d/98-disable-network-config.cfg` contenente il valore `network: {config: disabled}`:
 
 ```bash
 echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-network-config.cfg

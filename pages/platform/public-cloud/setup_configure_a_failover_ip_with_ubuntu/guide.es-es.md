@@ -4,6 +4,7 @@ excerpt: Configurar una dirección IP failover en Ubuntu
 slug: configurar_una_direccion_ip_failover_en_ubuntu
 legacy_guide_number: g2043
 section: Red e IP
+hidden: true
 ---
 
 

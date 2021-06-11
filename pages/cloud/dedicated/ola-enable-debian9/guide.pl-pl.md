@@ -3,9 +3,10 @@ title: 'Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debia
 slug: ola-debian9
 excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze Debian 9'
 section: 'Poziom zaawansowany'
+order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 02-12-2019**
+**Ostatnia aktualizacja z dnia 25-03-2021**
 
 ## Wprowadzenie
 
@@ -15,7 +16,8 @@ Technologia OVHcloud Link Aggregation (OLA) została przez nas zaprojektowana w 
 
 ## Wymagania początkowe
 
-- [Konfiguracja karty sieciowej dla OVHcloud Link Aggregation w Panelu klienta](https://docs.ovh.com/pl/dedicated/ola-manager){.external}
+- [Konfiguracja karty sieciowej dla OVHcloud Link Aggregation w Panelu klienta](../ola-manager)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 > [!warning]
 >
@@ -28,11 +30,14 @@ Technologia OVHcloud Link Aggregation (OLA) została przez nas zaprojektowana w 
 
 ## W praktyce
 
-Ponieważ konfiguracja kart sieciowych w OLA jest prywatna, nie będziesz mógł połączyć się z serwerem za pomocą SSH. W związku z tym do uzyskania dostępu do serwera użyj narzędzia IPMI. Zaloguj się do [Panelu klienta](https://www.ovh.com/manager/){.external}. Następnie na pasku bocznym po lewej stronie wybierz serwer, który chcesz skonfigurować i kliknij zakładkę **IPMI**.
+Ponieważ konfiguracja kart sieciowych w OLA jest prywatna, nie będziesz mógł połączyć się z serwerem za pomocą SSH. W związku z tym do uzyskania dostępu do serwera użyj narzędzia IPMI.
+<br>Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W części `Bare Metal Cloud`{.action} kliknij `Serwery dedykowane`{.action} w menu po lewej stronie, wybierz serwer i kliknij zakładkę `IPMI`{.action} (1).
 
-![zdalny kvm](images/remote_kvm.png){.thumbnail}
+Teraz kliknij przycisk `Z apletu Java (KVM)`{.action} (2).
 
-Teraz kliknij przycisk **Z apletu Java (KVM)**. Zostanie pobrany program JNLP. Otwórz program, aby skorzystać z połączenia IPMI. Zaloguj się, używając aktualnych danych do logowania do serwera.
+![remote_kvm](images/remote_kvm2021.png){.thumbnail}
+
+Zostanie pobrany program JNLP. Otwórz program, aby skorzystać z połączenia IPMI. Zaloguj się, używając aktualnych danych do logowania do serwera.
 
 Po zastosowaniu szablonu systemu operacyjnego dostarczanego przez OVHcloud interfejsy sieciowe będą miały domyślnie nazwy *ethX* lub *enoX*. Jeśli nie używasz szablonu OVHcloud, odszukaj nazwy Twoich interfejsów, używając następującego polecenia:
 
@@ -82,8 +87,14 @@ Restart może trwać kilka minut, w tym czasie budowany jest interfejs powiązan
 
 ## Podsumowanie
 
-OVHcloud zapewnia klientom swobodę i elastyczność wykorzystania sprzętu w sposób najlepiej odpowiadający ich potrzebom. Po przeczytaniu tego przewodnika będziesz potrafił skonfigurować OVHcloud Link Aggregation (OLA) w Debianie 9 w celu wykorzystania obu interfejsów sieciowych jako powiązanych interfejsów prywatnych. 
+OVHcloud zapewnia klientom swobodę i elastyczność wykorzystania sprzętu w sposób najlepiej odpowiadający ich potrzebom. Po przeczytaniu tego przewodnika będziesz potrafił skonfigurować OVHcloud Link Aggregation (OLA) w Debianie 9 w celu wykorzystania obu interfejsów sieciowych jako powiązanych interfejsów prywatnych.
 
 ## Sprawdź również
+
+[Konfiguracja OVHcloud Link Aggregation w Panelu klienta](../ola-manager/)
+
+[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation CentOS 7](../ola-centos7/)
+
+[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Windows Server 2019](../ola-w2k19/)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

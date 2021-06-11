@@ -1,4 +1,4 @@
 ---
-title: Guides OVHcloud
-excerpt: Comment pouvons-nous vous aider ? Sélectionnez le produit qui vous intéresse parmi les univers Web, Cloud et Public Cloud et retrouvez tous les guides dédiés rédigés pour vous par OVHcloud.
+title: Documentation et Tutoriels
+excerpt: Accédez à la documentation et aux tutoriels relatifs à nos univers Cloud pour vous accompagner dans le déploiement et l'usage de nos solutions.
 ---

@@ -1,11 +1,11 @@
 ---
-title: Basic operations via CLI
-slug: usage-client
+title: Overview of ovhai CLI
+slug: overview-cli
 excerpt: Learn how to use the CLI to interact with AI Training
 section: How to (with CLI)
-order: 1
+order: 3
 ---
-*Last updated 29th October, 2020.*
+*Last updated 20th April, 2021.*
 
 ## Objective
 
@@ -29,7 +29,7 @@ ovhai job run ubuntu --gpu 1 -- echo "Hello from my first job"
 
 > [!primary]
 > * Add the flag `--help` to get more information about a command.
-> * You can give access to your job to more GPUs with the flag `--gpu <x>`.
+> * You can increase the number of GPUs with the flag `--gpu <x>` or choose to use CPUs with the flag `--cpu <x>`.
 
 You can then list your current and old jobs with:
 
@@ -41,12 +41,18 @@ ovhai job list
 > * Add the flag `--watch` to watch changes in live.
 > * Most commands handle the flag `--output <format>` if you want a different output (JSON or YAML)
 
-You should see the job you just ran, you need its `Id` to get more information about it.
+You should see the job you just ran, you need its `ID` to get more information about it.
+
+To see information about a job use the following command:
+
+``` {.console}
+ovhai job get <job-id>
+```
 
 To see its logs in live use the following command:
 
 ``` {.console}
-ovhai job logs <job-id>
+ovhai job logs <job-id> --follow
 ```
 
 You should see the output of the `echo` command:
@@ -54,7 +60,7 @@ You should see the output of the `echo` command:
 
 ### Use data in your job
 
-You can upload data to the Object Storage and mount that data when you run a job. If you mount that data with read/write access you can save data from a job.
+You can upload data to the Object Storage and mount that data when you run a job. If you mount that data with read/write it will be saved to the Object Storage when the job ends.
 
 Let's upload some data and use it in a job that will produce more data.
 
@@ -82,6 +88,20 @@ ovhai data list <region> <container>
 ovhai data download <region> <container> --prefix /some-data
 ```
 
+### Synchronize data while a job is running
+
+You can synchronize data to the Object Storage while a job is running with:
+
+``` {.console}
+ovhai job push-data <job-id>
+```
+
+You can see the progress with:
+
+``` {.console}
+ovhai job get <job-id>
+```
+
 ### Execute commands inside a running job
 
 You can execute commands (like `bash`) while a job is running.
@@ -91,6 +111,67 @@ ovhai job exec <id> -- bash
 ```
 
 This way you can interact with a running job.
+
+### Run a job with ssh access
+
+You can create a job with some ssh access:
+
+``` {.console}
+ovhai job run -s ~/.ssh/id_ed25519.pub ovhcom/ai-training-fastai
+```
+
+Multiple `-s` arguments can be used to provide multiple SSH public keys.
+
+Once the job is in `RUNNING` state, you can retrieve the `sshUrl` with:
+
+``` {.console}
+ovhai job get <job-id>
+
+---
+id: 0d916855-1cd4-4b66-8803-b4782bc13902
+createdAt: "2021-02-23T08:45:01.297780Z"
+updatedAt: "2021-02-23T08:45:19.823082Z"
+user: user-xxx
+spec:
+  image: ovhcom/ai-training-fastai
+  env: []
+  defaultHttpPort: 8080
+  resources:
+    gpu: 1
+    gpuModel: Tesla-V100S
+    cpu: 7
+  volumes: []
+  timeout: 0
+  name: ai-training-fastai-kind
+  sshPublicKeys:
+    - ssh-ed25519 AAAAC3NzaC1someKey
+status:
+  state: RUNNING
+  queuedAt: "2021-02-23T08:45:01.297318Z"
+  startedAt: "2021-02-23T08:45:13Z"
+  stoppedAt: ~
+  ip: 10.42.155.122
+  infos: ~
+  history:
+    - state: QUEUED
+      date: "2021-02-23T08:45:01.297012Z"
+    - state: INITIALIZING
+      date: "2021-02-23T08:45:04.356856Z"
+    - state: PENDING
+      date: "2021-02-23T08:45:10.163754Z"
+    - state: RUNNING
+      date: "2021-02-23T08:45:19.822354Z"
+  duration: 6
+  jobUrl: "http://0d916855-1cd4-4b66-8803-b4782bc13902.job.gra.training.ai.cloud.ovh.net"
+  sshUrl: "ssh://0d916855-1cd4-4b66-8803-b4782bc13902@gra.training.ai.cloud.ovh.net"
+  monitoringUrl: "http://monitoring.gra.training.ai.cloud.ovh.net/d/job/job-monitoring?var-job=0d916855-1cd4-4b66-8803-b4782bc13902&from=1614069913000"
+```
+
+Then you can connect to it with a terminal:
+
+``` {.console}
+ssh 0d916855-1cd4-4b66-8803-b4782bc13902@gra.training.ai.cloud.ovh.net -i ~/.ssh/id_ed25519
+```
 
 ### Manage registries
 

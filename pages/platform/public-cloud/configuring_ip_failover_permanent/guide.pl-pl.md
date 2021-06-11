@@ -4,6 +4,7 @@ excerpt: Trwała konfiguracja IP Fail Over
 slug: trwala_konfiguracja_ip_fail_over
 legacy_guide_number: g1885
 section: Tutoriale
+hidden: true
 ---
 
 

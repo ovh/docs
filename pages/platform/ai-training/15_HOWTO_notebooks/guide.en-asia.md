@@ -5,7 +5,7 @@ excerpt: Learn how to start and use notebooks over AI training
 section: How to (with UI)
 order: 5
 ---
-*Last updated 8th December, 2020.*
+*Last updated 3rd May, 2021.*
 
 ## Objective
 
@@ -38,8 +38,8 @@ Currently the following configurations are available :
 -   **Hugging Face Transformers** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDEand `hugging face` libraries
 -   **MXNet** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDE and `mxnet` libraries
 -   **Fast.ai** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDE and `fast.ai` libraries
-
-![image](images/01_submit_image.png){.thumbnail}
+-   **autogluon** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDE and `AutoGluon` + `mxnet` libraries
+    ![image](images/01_submit_image.png){.thumbnail}
 
 Once your image is chosen, click `Next`{.action}.
 
@@ -58,7 +58,7 @@ Once your job is `In progress`, in the job description panel you should see the 
 
 ### Step 5 - Login as an AI Training user
 
-If your are not authenticated as a AI Training user you should a see a screen asking your username and password.
+If your are not authenticated as a AI Training user you should see a screen asking your username and password.
 
 > [!primary]
 > If you have never created a user for AI Training yet you can follow the instruction [here](../create-user)

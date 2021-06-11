@@ -1,84 +1,100 @@
 ---
 title: 'Editing the DNS servers for an OVHcloud domain name'
 slug: web_hosting_general_information_about_dns_servers
-excerpt: 'Find out how to edit the DNS servers for your OVHcloud domain name'
+excerpt: 'Find out how to modify DNS servers via the OVHcloud Control Panel'
 section: 'DNS and DNS zone'
 order: 1
 ---
 
-**Last updated 5th May 2020**
+**Last updated 18th February 2021**
 
 ## Objective
 
-DNS servers are designed to store DNS configurations for domain names. These configuration areas, which are called DNS zones, contain technical information in the form of records. DNS records are usually used to link your domain name to the server (or servers) that host your website and email addresses.
+### Understanding DNS 
 
-In other words, these records stored on DNS servers are what make your domain names accessible on the internet.
+DNS stands for **D**omain **N**ame **S**ystem and is a set of elements used to map a domain name to an IP address.
 
-**Find out how to edit the DNS servers for your OVHcloud domain name.**
+See the full explanation in our guide on [Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/#understanddns).
+
+### DNS servers 
+
+**DNS servers** contain DNS configuration files for domain names, called **DNS zones**.
+
+![DNS](images/dnsserver.png){.thumbnail}
+
+DNS servers are generally used in groups of two (primary and secondary), in order to obtain redundancy in the event of one of the DNS servers failing.
+
+**This guide explains how to edit the DNS servers for your OVHcloud domain name.**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requirements
 
-- You must have a domain name registered with OVHcloud.
-- You must have the [appropriate permissions to manage](../../customer/managing-contacts/) the domain name from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
+- a [domain name](https://www.ovh.com.au/domains/) registered with OVHcloud
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
-> [!warning]
+> [!primary]
 >
-> If your domain name is not registered with OVHcloud, you will need to edit the DNS servers using the interface given by the service provider that manages it.
+> If your domain name is not registered with OVHcloud, you will need to modify the DNS servers using the interface provided by the service provider that manages it.
 >
 
 ## Instructions
 
-**We strongly recommend taking great care when you edit a domain name’s DNS servers.** Incorrect changes could render your website inaccessible, and prevent your email addresses from receiving new emails. By learning more about the impact of modifying DNS servers, you can get a better understanding of the changes you will make.
+> [!warning]
+>
+> **We recommend taking care when you modify a domain name’s DNS servers.** A misconfiguration can make your website inaccessible or prevent your email addresses from receiving new emails. By learning more about the impact of making configuration changes, you can get a better understanding of the changes you will make.
+>
 
-When you modify your domain name’s DNS servers, you are modifying its DNS configuration. The new configuration replaces the old one, and is stored on the newly-set DNS servers. Technically, the domain then uses a new DNS zone.
+When you modify your domain name’s DNS servers, you are modifying its DNS configuration. The new DNS configuration replaces the old one and is stored on the newly-defined DNS servers. Technically, the domain name then uses a new DNS zone.
 
 However, it is important to note that:
 
-- The content of the old DNS configuration is not automatically replicated in the new configuration. Please ensure that your new configuration includes all of the information required for the services associated with your domain name to work properly (e.g. your website and email addresses).
+- When declaring different DNS servers (for example: OVHcloud DNS servers replacing external ones), the content of the old DNS configuration is not automatically replicated in the new configuration. Ensure that your new DNS zone includes all of the DNS records required for the services associated with your domain name to work correctly (for example, your website and email addresses).
 
-- If you only want to edit a single element of your current DNS configuration (e.g. one DNS record), we recommend following our guide to editing the DNS zone instead: [Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/).
+- If you only want to modify one element of your current DNS configuration (i.e. a DNS record), we recommend following our guide to [modify the DNS zone](../web_hosting_how_to_edit_my_dns_zone/) instead.
 
-- Some of the organisations that manage the domain name extensions (registries) have special requirements regarding DNS Servers (amount of nameservers, value of records, ...). In case of doubt, check with the registry responsible for the domain ending.
+- Some organisations and registries managing domain name extensions have specific requirements for DNS servers (number of name servers, value of records, etc.). If in doubt, check with the registry responsible for the domain.
 
-> [!warning]
->
-> Before you start making any changes, please ensure that the changes you are about to make will not render your domain name inaccessible. If you are unsure about this, please check with the person asking you to make these changes.
->
+Please ensure that the modifications will not render your domain name inaccessible. If you are unsure of this, please contact the person asking you to make these changes.
 
-### Step 1: Access the area for managing your domain’s OVHcloud DNS servers
+### Accessing the OVHcloud DNS server management
 
-First of all, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, go to the `DNS servers`{.action} tab.
+First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS servers`{.action} tab.
 
-The table that appears will show the DNS servers currently set with OVHcloud for your domain name. Several DNS servers may be listed, each with their own row in the table.
+The table that appears will list the DNS servers currently set by OVHcloud for your domain name. Several DNS servers can be listed, each with its own row in the table.
 
 ![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
-### Step 2: Edit your domain’s DNS servers
+### Modifying DNS servers
 
-To start editing your DNS servers, click the `Modify DNS servers`{.action} button.
+If you would like to use external DNS servers, you will need to **replace** the current OVHcloud ones, instead of adding them to the configuration.
 
-In the text fields, replace the current DNS server details with the information for the new servers you would like to set. To add more servers to the current list, click the `+`{.action} icon to the right of the last table line. An additional row will then appear in the table, with text fields you can complete.
+Click `Modify DNS servers`{.action} on the right-hand side.
 
-Once you have entered this information, click `Apply configuration`{.action}. The statuses for the DNS servers will then update in the table, showing the new information that you have just provided.
+In the text fields, **replace** the current DNS server values with the information about the new servers you want to set. To add more servers to the current list, click the `+`{.action} button to the right of the last table row. An additional row will then appear in the table, with text fields that you can fill in.
 
-> [!primary]
+> [!warning]
 >
-> By clicking the `Reset the DNS servers`{.action} button, you can change the current DNS servers by automatically resetting them to the original OVHcloud DNS servers. We advise only using this option if you would like to use OVHcloud’s DNS servers again. 
->
+> Please do not mix one DNS server group with another.<br>
+> For example, *dns19.ovh.net* and *ns19.ovh.net* correspond to a group of OVHcloud DNS servers, they are identical and synchronised. If you add DNS servers that are external to OVHcloud (or from a different OVHcloud group), the DNS resolution will be random between the OVHcloud DNS servers and the external DNS servers entered.
+
+Once you have entered this information, click `Apply configuration`{.action}. The statuses of the DNS servers will then be updated in the table, and will display the new information you have just provided.
 
 ![dnsserver](images/edit-dns-server-ovh-step2.png){.thumbnail}
 
-### Step 3: Wait for the modifications to fully propagate
+### Resetting DNS servers
 
-Once you have made the required changes, you will need to wait for them to become fully effective. Two successive time periods need to be taken into account:
+By clicking the `Reset the DNS servers`{.action} button, you can reset the current DNS servers by automatically replacing them with the original OVHcloud DNS servers. We only recommend using this option if you would like to use OVHcloud DNS servers again. 
 
-- The change made on the OVHcloud side needs to be taken into account by the organisation that manages your domain name extension (registry). You can track the progress for this in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} by going to the `Domains`{.action} section in the services bar on the left-hand side, then `Ongoing operations`{.action}.
+![dnsserver](images/edit-dns-server-ovh-step3.png){.thumbnail}
 
-- Once the change has been taken into account by the organisation managing your domain name extension, you will need to wait for a maximum of 48 hours for the changes you have made to fully propagate.
+Once you have made the required changes, there is a waiting period for them to become fully effective. Two successive periods must be taken into account:
+
+- The change made on the OVHcloud side must be taken into account by the registry that manages your domain name extension. You can track the progress for this operation in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) by going to the `Domains`{.action} section in the services bar on the left-hand side, then `Ongoing operations`{.action}.
+- Once the change has been taken into account by the organisation managing your domain name extension, it will take a maximum of 48 hours for the changes you have made to be fully propagated.
 
 ## Go further
 
-[Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/)
+[Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

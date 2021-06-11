@@ -75,7 +75,7 @@ Allow from 192.168.1
 
 
 ## Le fichier .htaccess
-Tout sur le fichier .htaccess sur le lien suivant : [Cliquer ici]({legacy}1967){.ref}
+Tout sur le fichier .htaccess sur le lien suivant : [Cliquer ici](../mutualise-tout-sur-le-fichier-htaccess/)
 
 ## Aller plus loin
 

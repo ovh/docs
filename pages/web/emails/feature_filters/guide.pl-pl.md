@@ -1,129 +1,132 @@
 ---
 title: 'Konfiguracja filtrów e-mail w Panelu klienta'
-excerpt: 'Hosting www: Konfiguracja filtrów e-mail w panelu klienta'
+excerpt: 'Dowiedz się, jak utworzyć i skonfigurować filtr na Twoim koncie e-mail'
 slug: hosting_www_konfiguracja_filtrow_e-mail_w_panelu_klienta
 legacy_guide_number: g1973
 section: 'Funkcjonalności kont e-mail'
 ---
 
-## Czym jest filtr e-mail?
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 
-Filtr pozwala na skonfigurowanie warunków i operacji do wykonania.
+**Ostatnia aktualizacja z dnia 12-08-2020**
 
-Przykładowo możesz wybrać taką konfigurację:
-Jeśli
+## Wprowadzenie
 
-- Warunek=[e-mail zawiera SPAM]
+Filtr pozwala na skonfigurowanie warunków dotyczących otrzymywanych wiadomości e-mail oraz związanych z nimi działań.
 
-to
+Na przykład: chcesz, aby wszystkie e-maile zawierające "[SPAM]" w temacie zostały usunięte.
 
-- Operacja=[usunięcie e-maila].
+- Warunek = temat wiadomości e-mail zawiera *SPAM*
+- Action = usuń e-mail
 
-## Wymagania
+**Dowiedz się, jak utworzyć i skonfigurować filtr na Twoim koncie e-mail**
 
-- Posiadanie oferty e-mail [MX Plan](https://www.ovh.pl/produkty/mxplan.xml) lub [hostingu www](https://www.ovh.pl/hosting/).
+## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Posiadanie usługi e-mail MX Plan lub [Pakiet hostingu www](https://www.ovh.pl/hosting/){.external}.
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
-Jeśli nie masz dostępu do panelu klienta, możesz skorzystać z tego [przewodnika](https://www.ovh.pl/g1909.uslugi_www_zarzadzanie_haslami_i_dostep_do_nich).
+## W praktyce
 
-## Gdzie można skonfigurować filtr e-mail?
+Najpierw zaloguj się do Twojego [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
-Zaloguj się do [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Wybierz odpowiednią domenę w sekcji `E-maile`{.action}.
 
-Po zalogowaniu wybierz nazwę domeny w zakładce E-maile w menu z lewej strony. 
+W tabeli z listą adresów e-mail kliknij ikonę `Filtr`{.action} odpowiedniego konta.
 
-W tabeli z listą adresów e-mail odnajdziesz kolumnę "Filtry".
+![emails](images/img_3239.jpg){.thumbnail}
 
-Kliknij na ikonkę w kształcie trójkąta w tej kolumnie. Uzyskasz dostęp do listy filtrów skonfigurowanych dla tego konta e-mail.
+Pojawi się lista filtrów aktualnie skonfigurowanych dla tego konta e-mail. Aby dodać filtr, kliknij przycisk po prawej stronie `Dodaj Filtr`{.action}.
 
-![](images/img_3240.jpg){.thumbnail}
-Jeśli chcesz dodać filtr, kliknij na przycisk Dodaj filtr.
+![emails](images/img_3240.jpg){.thumbnail}
 
-![](images/img_3239.jpg){.thumbnail}
+### Dowiedz się, jak skonfigurować filtry e-maili
 
-## Informacje
+![emails](images/img_3241.jpg){.thumbnail}
 
-- Nazwa filtra: Dzięki nazwie będziesz mógł rozróżnić poszczególne filtry w tabeli z podsumowaniem. 
+#### Informacje
 
-- Priorytet: Ten parametr określa kolejność wykonywania filtrów dla tej samej skrzynki e-mail. Filtr z priorytetem 1 będzie wykonywany przed filtrem z priorytetem 5. 
+- **Nazwa filtra:** Dzięki temu możesz wyróżnić Twoje filtry w Panelu klienta.
+- **Priorytet:** Dzięki temu możesz zarządzać filtrami na tej samej skrzynce e-mail. Filtr priorytetowy 1 zostanie uruchomiony przed filtrem priorytetowym 5.
+- **Włącz filtr:** Określa to, czy filtr będzie skuteczny czy nie (Możesz utworzyć filtr, wybierając opcję, jeśli chcesz ją aktywować później).
 
-- Włącz filtr: Ten parametr określa, czy filtr będzie działał czy nie. Możesz utworzyć filtr odznaczając tę opcję, jeśli chcesz włączyć filtr później.
+#### Zasady
 
-## Reguły
+Tutaj skonfigurujesz warunki, zasady filtra.
 
-Na tym etapie możesz zdefiniować warunki i reguły działania filtrów.
+Wybór (Nagłówek):
 
-Pierwszy wybór (Nagłówek):
+- **Od:** Przykład korespondencji z nadawcą: "Jeśli nadawca ..."
+- **DO:** Odbiorca: "Jeśli odbiorca ..."
+- **Temat wiadomości:** Odpowiadający treści wiadomości, przykład: "Jeśli temat wiadomości ..."
+- **Inne:** Inny parametr
 
-- Od: Dotyczy nadawcy, na przykład: "Jeśli nadawca"...
-- Do: Dotyczy adresata, na przykład: "Jeśli adresat"...
-- Temat wiadomości: Dotyczy tematu wiadomości, na przykład: "Jeśli temat wiadomości"...
-- Inne: Inne parametry
+Drugi wybór (Zasada):
 
+- **spf:** Parametr zależny od pola SPF, na przykład: "... nie ma pola SPF ..."
+- **zawiera:** przykład: "... zawiera ..."
+- **nie zawiera:** przykład: "... nie zawiera ..."
 
-Drugi wybór (Reguła):
+Trzeci wybór (wartość):
 
-- spf: Parametr, który zależy od pola SPF, na przykład: Jeśli nadawca nie posiada pola SPF ...
-- zawiera: przykład: Jeśli temat wiadomości "zawiera"...
-- nie zawiera: przykład: Jeśli temat wiadomości "nie zawiera"...
-
-
-Trzeci wybór (Wartość):
-
-- Przykład: Jeśli temat wiadomości zawiera [SPAM]...
-
+- Przykład: [SPAM]
 
 Czwarty wybór (+):
 
-- Ta opcja pozwala na zdefiniowanie wielu warunków dla tego samego filtra (sprawdź część [wiele reguł](#MULTI)).
+- Dzięki temu możesz dodać jeden lub więcej warunków dla tej samej operacji.
 
-![](images/img_3241.jpg){.thumbnail}
+**Wynik tych warunków** - Przykład: "Jeśli temat wiadomości zawiera [SPAM]"
 
-## Operacje
+#### Działania
 
-W tej części możesz skonfigurować operacje, czyli to co zostanie wykonane przez filtr, jeśli powyższe warunki zostaną spełnione. Masz do wyboru takie opcje:
+Tutaj właśnie wybierzecie, co zostanie zrobione przez filtr, jeśli powyższe warunki są spełnione.
 
-- Akceptuj: E-mail jest akceptowany i normalnie dostarczany na Twoją skrzynkę.
-- Przekierowanie na adres lokalny: E-mail jest przekierowywany na jedną ze skrzynek e-mail przypisanych do tej samej domeny. 
-- Usuwanie: E-mail zostanie usunięty.
-- Przekierowanie na zdalny adres: E-mail jest przekierowywany na wybrany przez Ciebie adres e-mail.
+Możesz wybrać:
 
-## Usuwanie spamu
+- **Zaakceptuj:** Wiadomości spełniające te warunki będą zwykle otrzymywane.
+- **Przekieruj na adres lokalny:** Przekieruj e-maile spełniające te warunki na jeden z kont e-mail domeny.
+- **Usuwanie:** Zostaną usunięte e-maile spełniające warunki.
+- **Przekieruj na zdalny adres:** Przekieruj wiadomości spełniające warunki na wybrany przez Ciebie adres e-mail.
 
-|Nagłówek|Reguła|Wartość|Operacja|
-|---|---|---|---|
-||Nagłówek|Reguła|Wartość|Operacja|
+### Przykłady
+
+#### Usuń spam
+
+||Nagłówek|Zasada|Wartość|Działanie|
+|---|---|---|---|---|
 |Parametry filtra|Temat wiadomości|zawiera|[SPAM]|usuwanie|
-|Czynność wykonana przez filtr|Jeśli temat wiadomości|zawiera|oznaczenie "[SPAM]"|usuń wiadomość|
+|Co zrobi filtr|Jeśli temat wiadomości|zawiera|ciąg dalszy "[SPAM]"|więc usuń wiadomość.|
 
-## Przekierowanie e-maili od danego nadawcy
+#### Przekierowanie wiadomości e-mail odbiorcy
 
-|Nagłówek|Reguła|Wartość|Operacja|
-|---|---|---|---|
-||Nagłówek|Reguła|Wartość|Operacja|
-|Parametry filtra|Od|zawiera|contact@test.com|przekierowanie na zdalny adres: compta@finance.com|
-|Czynność wykonana przez filtr|Jeśli nadawca wiadomości|to|contact@test.com,|przekieruj e-mail na compta@finance.com|
+||Nagłówek|Zasada|Wartość|Działanie|
+|---|---|---|---|---|
+|Parametry filtra|Od|zawiera|contact@domaintest.ovh|przekierowanie na zdalny adres: john@otherdomain.ovh|
+|Co zrobi filtr|Jeśli nadawca|jest|contact@domaintest.ovh|prześlij e-mail na adres john@otherdomain.ovh|
 
-## Przekierowanie e-maili wysyłanych na listę mailingową
+#### Przekierowanie adresów e-mail do listy mailingowej
 
-|Nagłówek|Reguła|Wartość|Operacja|
-|---|---|---|---|
-||Nagłówek|Reguła|Wartość|Operacja|
-|Parametry filtra|Do|zawiera|ML@mailing.com|Przekierowanie na adres lokalny:  lui@mypersonaldomain.ovh|
-|Czynność wykonywana przez filtr|Jeśli wiadomość została wysłana na listę mailingową |o nazwie|ML@mailing.com|przekieruj wiadomość na inny adres:lui@mypersonaldomain.ovh|
+||Nagłówek|Zasada|Wartość|Działanie|
+|---|---|---|---|---|
+|Parametry filtra|DO|zawiera|ML@mailing.com|Przekieruj na adres lokalny: recipient@mypersonaldomain.ovh|
+|Co zrobi filtr|Jeśli wiadomość została wysłana na listę mailingową|nazywane|ML@mailing.com|prześlij wiadomość na inny adres: recipient@mypersonaldomain.ovh|
 
-## Usunąć wiadomości e-mail zawierające niechcianą informację z wyjątkiem nadawcy
+#### Usuń e-maile zawierające niechcianą informację z wyjątkiem nadawcy
 
-|Nagłówek|Reguła|Wartość|Operacja|
-|---|---|---|---|
-||Nagłówek|Reguła|Wartość|Operacja|
+Dodaje się dwa filtry:
+
+||Nagłówek|Zasada|Wartość|Działanie|
+|---|---|---|---|---|
 |Parametry filtra 1|Temat wiadomości|zawiera|"money"|usuwanie|
 |Parametry filtra 2|Od|nie zawiera|john@mybank.ovh|usuwanie|
-|Czynność wykonywana przez filtr 1|Jeśli temat wiadomości|zawiera|słowo "money"|i|
-|Czynność wykonywana przez filtr 2|nadawca wiadomości|to nie|john@mybank.ovh|usuń wiadomość|
 
-W tym przypadku należy skonfigurować dwie reguły:
+Jeśli temat wiadomości zawiera słowo "money", **a** nadawcą wiadomości nie jest "john@mybank.ovh", wówczas wiadomość zostanie usunięta.
 
-![](images/img_3242.jpg){.thumbnail}
+W takim przypadku konfiguracja będzie następująca:
 
+![emails](images/img_3242.jpg){.thumbnail}
+
+## Sprawdź również
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

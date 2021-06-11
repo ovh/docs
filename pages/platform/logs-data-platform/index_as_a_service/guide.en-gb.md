@@ -17,7 +17,7 @@ Elasticsearch is one of the main components of the Logs Data Platform, regarded 
 This is what you need to know to get you started:
 
 - You have created a [Logs Data Platform account](../quick-start){.ref}
-- Your have access to the port 9200 of your cluster (head to the **Home** page in manager to know the address of your cluster).
+- You have access to the port 9200 of your cluster (head to the **Home** page in manager to know the address of your cluster).
 
 ## Instructions
 

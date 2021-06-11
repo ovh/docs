@@ -10,7 +10,7 @@ Ce guide technique vous indiquera comment récupérer les métriques (RAM par ex
 - Cela s'adresse à des utilisateurs avancés.
 - Vous devez disposez d'un serveur SQL Privé de type "Docker" pour utiliser Grafana
 
-Vous retrouverez sur le guide suivant comment utiliser et gérer votre serveur SQL Privé : []({legacy}2023){.ref}
+Vous retrouverez sur [ce guide](../premiers-pas-avec-sql-prive/) comment utiliser et gérer votre serveur SQL Privé.
 
 - Il est possible de récupérer les métriques directement depuis votre espace client dans l'onglet "Métriques" sur les serveurs de type "Docker".
 
@@ -64,7 +64,7 @@ Vous retrouverez plus d'informations sur [ce lien](http://docs.grafana.org/insta
 
 
 ### Un serveur SQL privé
-Votre serveur SQL Privé doit être de type " **Docker**" pour récupérer des métriques. Si vous disposez d'un hébergement performance, vous pouvez activer un serveur SQL Privé gratuitement en vous aidant du [guide suivant]({legacy}2023){.ref}. Vous pouvez commander un serveur SQL Privé directement dans votre espace client.
+Votre serveur SQL Privé doit être de type " **Docker**" pour récupérer des métriques. Si vous disposez d'un hébergement performance, vous pouvez activer un serveur SQL Privé gratuitement en vous aidant du [guide suivant](../premiers-pas-avec-sql-prive/). Vous pouvez commander un serveur SQL Privé directement dans votre espace client.
 
 - Tous les nouveaux serveurs SQL Privé mis en place sont de type "Docker".
 

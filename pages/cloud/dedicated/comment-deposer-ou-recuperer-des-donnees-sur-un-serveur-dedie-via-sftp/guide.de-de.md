@@ -1,94 +1,76 @@
 ---
-title: 'Daten via SFTP auf einem dedizierten Server ablegen oder herunterladen'
+title: 'Daten via SFTP auf einem Dedicated Server ablegen oder herunterladen'
 slug: daten-via-sftp-exportieren-und-ablegen
-excerpt: 'Hier erfahren Sie, wie Sie Daten ganz einfach von Ihrem Server auf Ihren PC übertragen oder umgekehrt.'
+excerpt: 'Erfahren Sie hier, wie Sie SFTP zur Datenübertragung verwenden'
 section: Tutorial
 ---
 
-**Stand: 05.04.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Einleitung
+**Letzte Aktualisierung am 18.05.2021**
 
-Bei einer Migration kann es erforderlich werden, Daten von einem dedizierten Server herunterzuladen, um sie anschließend auf einer anderen Maschine abzulegen. Hierfür gibt es mehrere mögliche Vorgehensweisen. Mit dem Protokoll SFTP (Secure File Transfer Protocol) können Daten einfach und schnell über eine gesicherte SSH-Verbindung übertragen werden.
+## Ziel
 
-**In dieser Anleitung erfahren Sie, wie Sie Daten via SFTP auf einen dedizierten Server übertragen oder von diesem herunterladen.**
+Bei einer Migration kann es erforderlich werden, eine große Datenmenge von einem Dedicated Server auf einen anderen zu übertragen. Hierfür gibt es mehrere Vorgehensweisen. Mit dem Protokoll SFTP (Secure File Transfer Protocol) können Daten einfach und schnell über eine gesicherte SSH-Verbindung übertragen werden.
+
+**Diese Anleitung erklärt, wie Sie Daten via SFTP auf einen dedizierten Server übertragen oder von diesem herunterladen.**
 
 > [!warning]
 >
-In diesem Tutorial zeigen wir Ihnen die Verwendung einer oder mehrerer OVH Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVH Community unter <https://community.ovh.com/en/> (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+> In diesem Tutorial zeigen wir Ihnen die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVHcloud Community unter <https://community.ovh.com/en/> (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
-
 
 ## Voraussetzungen
 
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, auf dem eine GNU/Linux Distribution installiert ist.
+- Ein FTP-Client, der SFTP-Verbindungen unterstützt (diese Anleitung dokumentiert die Verwendung von [FileZilla](https://filezilla-project.org/){.external}).
+- Sie haben administrativen Zugriff (Root) über SSH auf Ihren Server.
 
-### Erforderliche Kenntnisse
+## In der praktischen Anwendung
 
-*     Sie kennen die Grundlagen der Linux-Administration.
-*     Sie wissen, wie Sie sich via SSH verbinden.
-*     Sie können eine Distribution installieren (im vorliegenden Beispiel Debian 9.4).
+### FileZilla für das Übertragen Ihrer Daten verwenden
 
+Das SFTP Protokoll kann verwendet werden, um Dateien über eine gesicherte Verbindung (SSH) zu übertragen. Für dieses Szenario gibt es zwei Möglichkeiten: entweder haben Sie normalen Zugriff auf Ihren Server oder verbinden sich im [Rescue-Modus](../ovh-rescue/).
 
-### Sie benötigen
+Standardmäßig erhält ein Server, der ein GNU/Linux-Betriebssystem verwendet, über Port 22 SSH-Zugriff. Möglicherweise haben Sie diesen Port jedoch bereits geändert (zum Beispiel anhand unserer [Anleitung zur Sicherung eines Dedicated Servers](../dedizierten-server-sichern/)).
 
-*     mindestens einen OVH Dedicated Server
-*     einen Client, der SFTP unterstützt (in diesem Tutorial verwenden wir [FileZilla](https://filezilla-project.org/))
+#### Wenn Sie Zugriff auf Ihren Server haben
 
+Tragen Sie im FileZilla-Interface die IP-Adresse Ihres Servers ins `Host`-Feld sowie Ihren Benutzernamen und Ihr Passwort in die jeweiligen Feldern ein. Geben Sie als den `Port` "22" bzw. die Portnummer ein, die Ihr SSH-Dienst verwendet.
 
-## Beschreibung
+Sobald die Verbindung hergestellt ist, wird im Bereich `Remote Site` eine Ordnerstruktur Ihrer Dateien angezeigt.
 
+![SFTP Remote-Verzeichnis](images/sftp_sd_01.png){.thumbnail}
 
-### Schritt 1: Daten exportieren
+In diesem Beispiel befinden sich die Daten im Ordner "/home/data". Sie können die Dateien, die Sie herunterladen möchten, per Drag-and-Drop aus dem rechten Fensterbereich (`Remote`) in den linken Fensterbereich (`Local`) ziehen, um sie auf Ihrem lokalen Gerät zu speichern.
 
-Server, die auf einem Linux-System installiert wurden, verfügen standardmäßig über SSH-Zugriff via Port „22“.
+Um Dateien auf dem Server abzulegen, ziehen Sie diese von Ihrem lokalen Ordner zum Remote-Zielordner im rechten Bereich.
 
-Mit dem Protokoll SFTP (Secure File Transfer Protocol) können Daten über eine gesicherte SSH-Verbindung übertragen werden. Wir zeigen Ihnen, wie Sie das Protokoll in zwei verschiedenen Situationen verwenden: wenn Sie Zugriff auf Ihren Server haben, und wenn sich der Server im Rescue-Modus befindet.
+Der Fortschritt der Datenübertragung wird dann unten im FileZilla-Interface angezeigt.
 
+![Fortschritt des SFTP Transfers](images/sftp_sd_02.png){.thumbnail}
 
-#### Sie haben Zugriff auf Ihren Server
+#### Wenn Ihr Server im Rescue-Modus ist
 
-Geben Sie in FileZilla Ihre IP im Feld „Host“ an. Geben Sie dann Ihren Root-Benutzer und Ihr Passwort ein. Geben Sie als Port entweder „22“ oder den Port ein, den Sie für Ihren SSH-Dienst verwenden.
+Im Rescue-Modus müssen Sie zuerst Ihre Partition mounten. Folgen Sie hierzu den Anweisungen in dieser [Anleitung](../ovh-rescue/).
 
-Die Verbindung wurde nun hergestellt und die Ordnerstruktur wird im Bereich „Server“ angezeigt.
-
- 
-![SFTP Remote-Verzeichnis](images/sftp_ds_01.png)
- 
-
-Sie können Dateien, die Sie vom Server exportieren möchten, über Drag-and-drop vom rechten Fenster (`Bare Metal Cloud`) zum linken Fenster ziehen (`Lokal`), um Sie auf Ihrem PC zu speichern. In unserem Beispiel sind die Dateien im Verzeichnis „/home/data“ im rechten Fenster (`Bare Metal Cloud`)  zu sehen.
-
-Der Fortschritt der Übertragung wird im unteren Teil Ihres FileZilla-Fensters angezeigt.
-
- 
-![Fortschritt SFTP-Transfer](images/sftp_ds_02.png)
-
-
-#### Ihr Server befindet sich im Rescue-Modus 
-
-Im Rescue-Modus muss zuerst die Partition gemountet werden. Folgen Sie hierzu den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/dedicated/ovh-rescue/).
-
-Wenn Ihre Partition gemountet ist, verbinden Sie sich erneut mit Ihrem Programm (hier FileZilla) über den Port 22.
-
+Wenn die Partition gemountet ist, verwenden Sie den FileZilla-Client wie oben beschrieben, und nutzen Sie Port 22 für die Verbindung zu Ihrem Server.
 
 > [!primary]
 >
-> Verwenden Sie hierzu die Verbindungsinformationen, die Sie beim Start des Rescue-Modus per E-Mail erhalten haben.
+> Die in diesem Fall zu verwendenden Login-Daten werden Ihnen per E-Mail zugesandt, sobald Sie den Rescue-Modus auf Ihrem Server aktivieren.
 >
 
+Wenn Sie den Mount korrekt erstellt haben, befinden sich die Daten im Verzeichnis "/mnt" ("/mnt/home/data" in diesem Beispiel).
 
-Wenn die Partition korrekt gemountet wurde, sind die Daten im Verzeichnis „/mnt“ (in unserem Beispiel „mnt/data/“) verfügbar.
+![Rescue-Modus - SFTP des Remote-Standorts](images/sftp_sd_03.png){.thumbnail}
 
- ![Remote-Server SFTP Rescue-Modus](images/sftp_ds_03.png)
+## Weiterführende Informationen
 
- 
-### Schritt 2: Daten auf Ihren Server übertragen
+[Rescue-Modus](../ovh-rescue/)
 
-Die Vorgehensweise zum Herstellen der Verbindung ist die gleiche wie zuvor: Verwenden Sie wie obenstehend beschrieben den Port 22 für eine SFTP-Verbindung mit Ihrem Root-Benutzer.
-
-Wenn Sie mit dem gewünschten Server verbunden sind, können Sie die Daten ebenfalls per Drag-und-drop übertragen. Verschieben Sie sie in diesem Fall vom linken Fenster (`Lokal`) in das rechte Fenster (`Bare Metal Cloud`), um die Daten von Ihrem PC auf den Server zu übertragen.
-
-## Fazit
-
-Sie haben nun erfahren, wie Sie Daten via SFTP auf einen dedizierten Server übertragen oder von diesem herunterladen.
+[Einen dedizierten Server sichern](../dedizierten-server-sichern/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

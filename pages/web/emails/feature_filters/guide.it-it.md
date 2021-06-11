@@ -1,131 +1,132 @@
 ---
-title: 'Servizio Email: configura i filtri email nel tuo Spazio Cliente OVH'
-excerpt: 'Servizio Email: configura i filtri email nel tuo Spazio Cliente OVH'
+title: Creare filtri per i tuoi indirizzi email
+excerpt: Come creare e configurare un filtro sul tuo indirizzo email
 slug: servizio_email_configura_i_filtri_email_nel_tuo_spazio_cliente_ovh
 legacy_guide_number: g1973
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## Che cos'è un filtro email?
-Un filtro permette di definire delle condizioni, da cui derivano azioni specifiche.
+**Ultimo aggiornamento: 12/08/2020**
 
-Ad esempio, puoi definire che:
-Se
+## Obiettivo
 
-- condizione=[l'email contiene SPAM]
+Un filtro permette di configurare le condizioni sulle email ricevute e le azioni che ne derivano.
 
-allora,
+Ad esempio: vuoi che tutte le email contenenti "[SPAM]" nell'oggetto siano eliminate.
 
-- Azione=[elimina l'email].
+- Requisito = soggetto dell'email contenente *SPAM*
+- Azione = eliminare l'email
 
+**Come creare e configurare un filtro sul tuo indirizzo email**
 
+## Prerequisiti
 
+- Disporre di una soluzione email MX Plan o di un [Pack Hosting Web](https://www.ovh.it/hosting-web/){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
-## Requisiti necessari
+## Procedura
 
-- Aver attivato un servizio email [MX Plan](https://www.ovh.it/prodotti/mxplan.xml) o un [Pack Hosting Web](https://www.ovh.it/hosting-web/).
+Per prima cosa accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
-- Avere accesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Seleziona il dominio dalla sezione `Email`{.action}.
 
-Se non riesci ad accedere al tuo Spazio Cliente OVH, consulta [questa guida](https://www.ovh.it/g1909.hosting_web_gestisci_le_tue_password#le_password_associate_ai_tuoi_servizi_di_web_hosting_ovh_accesso_al_tuo_spazio_cliente_ovh).
+Nella tabella con gli indirizzi email, clicca su `Filtro`{.action} dell'indirizzo corrispondente.
 
+![email](images/img_3239.jpg){.thumbnail}
 
-## Dove configurare il filtro email?
+Puoi accedere alla lista dei tuoi filtri configurati per questo indirizzo email. Per aggiungerne uno, clicca sul pulsante a destra `Aggiungi un Filtro`{.action}.
 
-Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+![email](images/img_3240.jpg){.thumbnail}
 
-Seleziona il tuo dominio nella sezione Email del menu a sinistra e clicca sul tab Email.
+### Come configurare i filtri email
 
-Visualizzi una tabella con la lista dei tuoi indirizzi email. Per accedere ai filtri configurati per la tua casella di posta, clicca sull'icona in corrispondenza del tuo account nella colonna Filtri.
+![email](images/img_3241.jpg){.thumbnail}
 
-![](images/img_3240.jpg){.thumbnail}
-Per aggiungere un filtro, clicca sul tasto Aggiungi un filtro.
+#### Campo
 
-![](images/img_3239.jpg){.thumbnail}
+- **Nome del filtro:** per differenziare i filtri nello Spazio Cliente.
+- **Priorità:** Questa guida ti mostra l'ordine di esecuzione dei filtri su una stessa casella di posta. Un filtro di priorità 1 verrà eseguito prima di un filtro di priorità 5.
+- **Attiva il filtro:** Ciò determina se il filtro sarà effettivo o no (per esempio, è possibile creare un filtro deselezionando l'opzione se desideri attivarla più tardi).
 
+#### Regole
 
-## Informazioni
+È qui che state per configurare le condizioni, le regole del filtro.
 
-- Nome del filtro: identifica i tuoi filtri nella tabella riepilogativa. Questa informazione è puramente descrittiva, non contiene indicazioni tecniche.
+Prima scelta (intestazione):
 
-- Priorità: determina l'ordine di esecuzione dei tuoi filtri su una stessa casella di posta. Ad esempio, un filtro con priorità 1 viene applicato prima di un filtro con priorità 5.
+- **Da:** Corrisponde al mittente, ad esempio: "Se il mittente ..."
+- **A:** Corrisponde al destinatario, ad esempio: "Se il destinatario ..."
+- **Oggetto del messaggio:** Corrisponde all'argomento del messaggio, ad esempio: "Se il soggetto del messaggio ..."
+- **Altro:** Altro parametro
 
-- Attiva il filtro: indica se il filtro è attivo.
-Deseleziona questa opzione se vuoi creare il filtro ma attivarlo in secondo momento.
+Seconda scelta (Regola):
 
-## Regole
+- **spf:** Parametro che dipende dal record SPF, ad esempio: "... non ha record SPF ..."
+- **contiene:** esempio: "... contiene ..."
+- **non contiene:** esempio: "... non contiene..."
 
-In questa sezione definisci le condizioni e le regole dei tuoi filtri.
+Terza scelta (valore):
 
-Condizione:
+- Esempio: [SPAM]
 
-- Da: corrisponde al mittente (Esempio: Se il mittente...)
-- A: corrisponde al destinatario (Esempio: Se il destinatario...)
-- Oggetto del messaggio: corrisponde all'oggetto del messaggio (Esempio: Se l'oggetto del messaggio...)
-- Altro: altro parametro
+Quarta scelta (+):
 
-Regola:
-- spf: parametro che dipende dal record SPF (Esempio: Se il mittente non ha record SPF...)
-- contiene: Esempio: Se l'oggetto del messaggio contiene...
-- non contiene: Esempio: Se l'oggetto del messaggio non contiene
+- per permetterti di aggiungere una o più condizioni per la stessa azione.
 
-Valore:
-- Esempio: Se l'oggetto del messaggio contiene [SPAM]...
+**Risultato di queste condizioni** - Esempio: "Se il soggetto del messaggio contiene [SPAM]"
 
+#### Azione
 
-+:
+È qui che sceglierete cosa verrà fatto dal filtro se le condizioni sopra sono soddisfatte.
 
-- Ti permette di definire più condizioni per lo stesso filtro, cioè di impostare [regole multiple](#MULTI))
+Puoi scegliere tra:
 
+- **Accettare:** Le email che soddisfano questi requisiti saranno ricevute normalmente.
+- **Reindirizza verso un indirizzo locale:** Reindirizza le email che soddisfano i requisiti necessari verso uno degli indirizzi email del tuo dominio.
+- **Eliminazione:** Le email che soddisfano queste condizioni verranno eliminate.
+- **Reindirizzare verso un indirizzo remoto:** Reindirizza le email che soddisfano i requisiti all'indirizzo email che preferisci.
 
+### Esempi
 
-![](images/img_3241.jpg){.thumbnail}
+#### Elimina Spam
 
-## Azione
+||Intestazione|Regola|Valore|Scenario possibile|
+|---|---|---|---|---|
+|Impostazioni del filtro|Oggetto del messaggio|contiene|[SPAM]|eliminazione|
+|Cosa farà il filtro|Se il soggetto del messaggio|contiene|la suite "[SPAM]"|elimina il messaggio.|
 
-In questa sezione puoi configurare l' azione, cioè l'operazione eseguita dal filtro se le condizioni definite sono rispettate. Puoi scegliere tra:
+#### Reindirizzare le email di un destinatario
 
+||Intestazione|Regola|Valore|Scenario possibile|
+|---|---|---|---|---|
+|Impostazioni del filtro|De|contiene|contact@domaintest.ovh|reindirizzare verso un indirizzo remoto: john@otherdomain.ovh|
+|Cosa farà il filtro|Se il mittente|è|contact@domaintest.ovh|allora, reindirizza l'email verso john@otherdomain.ovh|
 
-- Accetta: ricevi l'email normalmente
-- Reindirizza a un indirizzo locale: reindirizza l'email verso una delle caselle di posta associate allo stesso dominio
-- Eliminazione: l'email verrà eliminata
-- Reindirizza verso un altro indirizzo: reindirizza l'email verso un account di tua scelta
+#### Reindirizzare le email indirizzate a una Mailing list
 
-## Elimina i messaggi di Spam
+||Intestazione|Regola|Valore|Scenario possibile|
+|---|---|---|---|---|
+|Impostazioni del filtro|À|contiene|ML@mailing.com|Reindirizza verso un indirizzo locale: recipient@mypersonaldomain.ovh|
+|Cosa farà il filtro|Se il messaggio è stato inviato alla Mailing List|chiamata|ML@mailing.com|quindi, reindirizza il messaggio al mio altro indirizzo: recipient@mypersonaldomain.ovh|
 
-|Condizione|Regola|Valore|Azione|
-|---|---|---|---|
-||Condizione|Regola|Valore|Azione|
-|Parametri del filtro|Oggetto del messaggio|contiene|[SPAM]|eliminazione|
-|Azione del filtro|Se l'oggetto del messaggio|contiene|[SPAM]|allora, elimina il messaggio|
+#### Eliminare le email contenenti una menzione indesiderata ad eccezione di un mittente
 
-## Reindirizza le email a un altro destinatario
+Aggiungi due filtri:
 
-|Condizione|Regola|Valore|Azione|
-|---|---|---|---|
-||Condizione|Regola|Valore|Azione|
-|Parametri del filtro|Da|contiene|contatto@test.com|Reindirizza verso un altro indirizzo: account@finance.com|
-|Azione del filtro|Se il mittente del messaggio|è|contatto@test.com|allora, reindirizza l'email a account@finance.com|
-
-## Reindirizza le email inviate a una mailing list
-
-|Condizione|Regola|Valore|Azione|
-|---|---|---|---|
-||Condizione|Regola|Valore|Azione|
-|Parametri del filtro|A|contiene|ML@mailing.com|Reindirizza a un indirizzo locale:  nome@tuodominio.com|
-|Azione del filtro|Se il messaggio è stato inviato alla mailing list |chiamata|ML@mailing.com|allora, reindirizza il messaggio a un tuo altro indirizzo:nome@tuodominio.com|
-
-## Elimina email che contengono una menzione indesiderabile, ad eccezione di uno speditore
-
-|Condizione|Regola|Valore|Azione|
-|---|---|---|---|
-||Condizione|Regola|Valore|Azione|
+||Intestazione|Regola|Valore|Scenario possibile|
+|---|---|---|---|---|
 |Parametri del filtro 1|Oggetto del messaggio|contiene|"money"|eliminazione|
-|Parametri del filtro 2|Da|non contiene|john@mybank.ovh|eliminazione|
-|Azione del filtro 1|Se l'oggetto del messaggio|contiene|la parola "money"|e se|
-|Azione del filtro 2|il mittente del messaggio|non è|john@mybank.ovh, elimina il messaggio|money
+|Impostazioni del filtro 2|De|non contiene |john@mybank.ovh|eliminazione|
 
-Esempio di configurazione di queste due regole:
+Se l'oggetto del messaggio contiene la parola "money" **e** il mittente del messaggio non è "john@mybank.ovh", il messaggio sarà soppresso.
 
-![](images/img_3242.jpg){.thumbnail}
+In questo caso, la configurazione sarà la seguente:
 
+![email](images/img_3242.jpg){.thumbnail}
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

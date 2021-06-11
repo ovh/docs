@@ -25,7 +25,7 @@ Depuis la Edge souhaitée, rendez-vous dans la partie "Gérer" pour ensuite acc�
 
 ### Configuration globale
 
-Vous pouvez alors visualiser le menu "onfiguration globale" disposant d'un bouton `Modifier`{.action} vous permettant de configurer les options suivantes.
+Vous pouvez alors visualiser le menu "configuration globale" disposant d'un bouton `Modifier`{.action} vous permettant de configurer les options suivantes.
 
 - Enable Load Balancer : Active la fonctionnalité de Load Balancer si coché.
 - Enable Accelerator : Utilise le Load Balancer de couche 4 (réseau) le plus rapide plutôt que de couche 7 (applicatif) si coché.

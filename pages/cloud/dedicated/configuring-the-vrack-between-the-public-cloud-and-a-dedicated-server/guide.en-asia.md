@@ -9,15 +9,15 @@ section: 'Network Management'
 
 ## Objective
 
-The [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](https://www.ovh.com/asia/dedicated_servers/){.external}. But it also allows you to add [Public Cloud instances](https://www.ovh.com/asia/public-cloud/instances/){.external} to your private network so that you can create an infrastructure of both physical and virtual resources.
+The [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](https://www.ovhcloud.com/asia/bare-metal/){.external}. But it also allows you to add [Public Cloud instances](https://www.ovh.com/asia/public-cloud/instances/){.external} to your private network so that you can create an infrastructure of both physical and virtual resources.
 
-**This guide will show you how to configure private networking between a [Public Cloud instance](https://www.ovh.com/asia/public-cloud/instances/){.external} and a [Dedicated Server](https://www.ovh.com/asia/dedicated_servers/){.external}.**
+**This guide will show you how to configure private networking between a [Public Cloud instance](https://www.ovh.com/asia/public-cloud/instances/){.external} and a [Dedicated Server](https://www.ovhcloud.com/asia/bare-metal/){.external}.**
 
 
 ## Requirements
 
 * a [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} service activated in your account
-* a vRack-compatible [Dedicated Server](https://www.ovh.com/asia/dedicated_servers/){.external}
+* a vRack-compatible [Dedicated Server](https://www.ovhcloud.com/asia/bare-metal/){.external}
 * access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
 * your chosen private IP address range
 
@@ -75,7 +75,7 @@ Finally, choose your billing period  and then click the `Create an instance`{.ac
 
 ### Configure your network interfaces
 
-Next, configure the the network interfaces on your new [Public Cloud instance](https://www.ovh.com/asia/public-cloud/instances/) and [Dedicated Server](https://www.ovh.com/asia/dedicated_servers/) using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/).
+Next, configure the the network interfaces on your new [Public Cloud instance](https://www.ovh.com/asia/public-cloud/instances/) and [Dedicated Server](https://www.ovhcloud.com/asia/bare-metal/) using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/).
 
 
 ## Go further

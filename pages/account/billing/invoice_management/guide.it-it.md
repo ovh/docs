@@ -5,7 +5,7 @@ excerpt: 'Come amministrare fatture e pagamenti dallo Spazio Cliente'
 section: Fatturazione
 ---
 
-**Ultimo aggiornamento: 18/01/2021**
+**Ultimo aggiornamento: 08/04/2021**
 
 ## Obiettivo
 
@@ -22,7 +22,6 @@ Lo Spazio Cliente OVHcloud offre un’amministrazione completa di tutti i serviz
 
 - Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Essere connesso come contatto di fatturazione del servizio (per maggiori informazioni sulle diverse tipologie di contatti, consulta la guida [Gestire i contatti dei servizi OVHcloud](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/){.external}.
-
 
 ## Procedura
 
@@ -47,7 +46,7 @@ Più in basso vengono visualizzati i dettagli dei servizi fatturati:
 
 - <b>Abbonamento</b>: descrizione del servizio e del periodo fatturato
 - <b>Dominio</b>: riferimento del servizio fatturato
-- <b>Quantità</b>: numero di unità del servizio fatturato 
+- <b>Quantità</b>: numero di unità del servizio fatturato
 - <b>Prezzo unitario</b> e <b>Prezzo IVA esclusa</b>: tariffa del servizio fatturato
 
 L’importo totale e comprensivo di IVA è indicato alla fine della tabella, in corrispondenza della voce <b>Totale IVA inclusa</b>.
@@ -57,16 +56,15 @@ L’importo totale e comprensivo di IVA è indicato alla fine della tabella, in 
 > Se in corrispondenza del metodo di pagamento compare la dicitura “Informativa conto”, significa che si tratta di un rinnovo automatico. In questo caso il metodo di pagamento utilizzato è quello impostato nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 >
 
-
 ### Sezione fatturazione dello Spazio Cliente
 
 #### Consulta e gestisci le tue fatture
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul tuo nome utente in alto a destra e seleziona `Fatture`{.action}. 
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul tuo nome utente in alto a destra e seleziona `Fatture`{.action}.
 
 ![Spazio cliente](images/hubinvoices.png){.thumbnail}
 
-Visualizzi una tabella con tutte le fatture associate al tuo identificativo: 
+Visualizzi una tabella con tutte le fatture associate al tuo identificativo:
 
 ![Riepilogo delle fatture](images/billing_section.png){.thumbnail}
 
@@ -76,9 +74,8 @@ Per ciascuna vengono riportate queste informazioni:
 - data di emissione
 - importo IVA inclusa
 - importo da saldare
-- data di scadenza per il pagamento 
+- data di scadenza per il pagamento
 - pulsante `...`{.action} con le diverse azioni disponibili
-
 
 > [!primary]
 >
@@ -93,7 +90,6 @@ Se la fattura non è associata a un rinnovo automatico, nelle colonne relative a
 - `Visualizza in PDF`{.action}: il documento verrà generato in formato PDF e il file sarà disponibili al download
 - `Visualizza i dettagli di questa fattura`{.action}\: questa opzione consente di visualizzare lo storico delle operazioni effettuate sulla fattura
 
-
 Per semplificare la lettura della tabella, in alto a destra sono disponibili alcuni filtri:
 
 ![Filtri](images/sort_filters.png){.thumbnail}
@@ -102,14 +98,13 @@ Per trovare una fattura specifica è possibile inserire il numero di riferimento
 
 Per scaricare in formato CSV un file Excel contenente le fatture selezionate, clicca sul pulsante `Azioni`{.action} in alto a sinistra della tabella e seleziona l’opzione `Esporta in CSV`{.action}. Il file mostrerà l’importo, il riferimento e la data di emissione di queste fatture.
 
-#### Salda l'importo dovuto
+#### Salda le tue fatture <a name="salda-fatture"></a>
 
 Per procedere al saldo delle fatture in attesa di pagamento è sufficiente selezionare l’opzione `Salda subito l’importo dovuto`{.action}.
 
 ![Pagamento dell’importo dovuto](images/pay_debt.png){.thumbnail}
 
 Verrà creato un buono d’ordine e, una volta effettuato il pagamento, la situazione risulterà regolarizzata.
-
 
 ### Verifica i pagamenti
 
@@ -123,7 +118,6 @@ Proprio come per le fatture, è possibile esportare i giustificativi in formato 
 >
 > In caso di mancata corrispondenza tra un pagamento effettuato e l’importo della relativa fattura, è possibile che parte della somma sia stata detratta da un credito disponibile e che l’addebito sia quindi di cifra inferiore.
 >
-
 
 ## Per saperne di più
 

@@ -27,7 +27,7 @@ Niveau : Expert
 Pour réaliser les étapes proposées dans ce guide, il faut :
 
 -   Un serveur avec Debian d'installé et un accès Internet.
--   Deux alias configurés en **[redirection DDI]({legacy}7536740)** vers le trunk.
+-   Deux alias configurés en **[redirection DDI](../creer-redirection-avec-presentation/)** vers le trunk.
 -   Une ligne SIP Trunk. Pour en commander une : **<https://www.ovhtelecom.fr/telephonie/sip_trunk/>**
 
     (La configuration de gestion des numéros appelés ne fonctionne pas sur une ligne SIP.)

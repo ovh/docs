@@ -5,7 +5,7 @@ excerpt: 'Hier erfahren Sie, wie Sie Ihre Rechnungen und deren Bezahlung verwalt
 section: Abrechnung
 ---
 
-**Stand 18.01.2021**
+**Stand 08.04.2021**
 
 ## Einleitung
 
@@ -22,7 +22,6 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie alle Ihre Rech
 
 - Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Sie sind der Rechnungskontakt für Ihren Dienst (mehr Informationen zu den verschiedenen Kontakten finden Sie in der Anleitung „[Verwaltung der Kontakte Ihrer Dienstleistungen](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/){.external}“).
-
 
 ## Beschreibung
 
@@ -47,7 +46,7 @@ Im Folgenden werden Ihnen Details zu den abgerechneten Diensten aufgeführt:
 
 - Abonnement: Beschreibung des Dienstes und des Abrechnungszeitraums;
 - Domain: Referenz des abgerechneten Dienstes;
-- Menge: Anzahl der Einheiten des abgerechneten Dienstes; 
+- Menge: Anzahl der Einheiten des abgerechneten Dienstes;
 - Stückpreis und Preis ohne MwSt.: Tarif des Dienstes.
 
 Die Steuern werden auf der Rechnung erst unten beim Gesamtpreis „Total inkl. MwSt.“ hinzugefügt.
@@ -57,7 +56,6 @@ Die Steuern werden auf der Rechnung erst unten beim Gesamtpreis „Total inkl. M
 > Wenn unter verwendetes Zahlungsmittel „Bankeinzug“ angegeben ist, dann handelt es sich um eine automatische Verlängerung, die von Ihrem Account abgebucht wird. Das genutzte Zahlungsmittel ist das Mittel, das in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} hinterlegt wurde.
 >
 
-
 ### Der Abrechnungsbereich in Ihrem Kundencenter
 
 #### Rechnungen einsehen und verwalten
@@ -66,19 +64,18 @@ Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotom
 
 ![Kundencenter](images/hubinvoices.png){.thumbnail}
 
-Sie gelangen dann auf eine Übersichtsseite, auf der alle Ihre Rechnungen aufgelistet werden: 
+Sie gelangen dann auf eine Übersichtsseite, auf der alle Ihre Rechnungen aufgelistet werden:
 
 ![Rechnungsübersicht](images/billing_section.png){.thumbnail}
 
 Hier finden Sie zu jeder Tabellenzeile folgende Informationen:
 
-- die Rechnungsnummer (zum Beispiel: DE12345678); 
+- die Rechnungsnummer (zum Beispiel: DE12345678);
 - das Ausstellungsdatum;
 - den gesamten Rechnungsbetrag;
 - den noch ausstehenden Betrag;
-- die Rechnungsfrist; 
+- die Rechnungsfrist;
 - `...`{.action}: verschiedene Aktionen.
-
 
 > [!primary]
 >
@@ -102,14 +99,13 @@ Um eine bestimmte Rechnung zu finden, können Sie die Rechnungsnummer eingeben o
 
 Um eine Übersicht der von Ihnen ausgewählten Rechnungen als Excel-Datei im .csv-Format herunterzuladen, klicken Sie auf den Button `CSV exportieren`{.action}. In dieser Datei werden Ihnen Rechnungsbetrag, Rechnungsnummer und das Ausstellungsdatum dieser Rechnungen aufgelistet.
 
-#### Account ausgleichen
+#### Rechnung begleichen <a name="rechnung-begleichen"></a>
 
 Um ausstehende Rechnungen zu begleichen, müssen Sie lediglich auf den Button `Rechnung sofort begleichen`{.action} klicken.
 
 ![Bezahlung ausstehender Beträge](images/pay_debt.png){.thumbnail}
 
 Wir erstellen Ihnen für den Zahlungsvorgang dann einen [Bestellschein](https://docs.ovh.com/de/billing/bestellungen-verwalten-ovh/){.external}. Nach Bezahlung ist Ihr Account beglichen.
-
 
 ### Zahlungsverfolgung
 
@@ -123,7 +119,6 @@ In diesem Bereich können Sie ebenfalls Ihre Zahlungsbelege im .csv-Format expor
 >
 > Sollten Sie einen Unterschied zwischen gezahltem Betrag und Rechnungsbetrag feststellen, dann hatten Sie auf Ihrem Account ein Guthaben, von dem der Rechnungsbetrag automatisch abgezogen wurde.
 >
-
 
 ## Weiterführende Informationen
 

@@ -1,50 +1,65 @@
 ---
-title: Erstkonfiguration von Windows Server (Firewall)
+title: Eine neue Windows Server Installation konfigurieren
 slug: windows-first-config
-excerpt: So aktivieren Sie eine deaktivierte Remotedesktop-Verbindung via KVM
-section: 'Erste Schritte'
+excerpt: Hier erfahren Sie, wie Sie die Remotedesktop-Verbindung und die ICMP Antwort aktivieren.
+section: Erste Schritte
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 16.02.2021**
+
+## Ziel
+
+Nach der Neuinstallation eines Windows Server Betriebssystems auf einem VPS können der Fernzugriff und die ICMP-Antwort (Internet Control Message Protocol) manchmal deaktiviert werden.
+
+**In dieser Anleitung erfahren Sie, wie Sie Windows konfigurieren, um ICMP wieder zu aktivieren und Verbindungen über das Remote Desktop Protocol zu erlauben.**
 
 ## Voraussetzungen
-Bei der Installation von Windows Server 2012, 2012 R2 oder 2016 auf einem VPS kann es vorkommen, dass die Remotedesktop-Verbindung sowie die ICMP-Antwort deaktiviert sind. In dieser Anleitung wird erklärt, wo Sie die entsprechenden Änderungen vornehmen, um diese zu aktivieren.
 
-Sie benötigen dazu:
+- Sie haben einen Windows [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
-- Einen VPS mit Windows 2012, 2012 R oder 2016.
-- Zugang zu Ihrem OVH Kundencenter.
+## In der praktischen Anwendung
 
+### Schritt 1: KVM Zugang
 
-## Beschreibung
+Um auf die KVM-Konsole Ihres VPS zuzugreifen, folgen Sie dieser [Anleitung](../verwendung_von_kvm_fur_vps/).
 
-### Schritt 1&#58; Mit dem KVM verbinden
-Um sich mit dem KVM zu verbinden, begeben Sie sich zunächst in Ihr `OVH Kundencenter`{.action} in den Bereich `Dedicated`{.action} und gehen dort zu Ihrem VPS.
+### Schritt 2: Die Installation von Windows abschließen
 
-Dann klicken Sie rechts auf den Button `KVM`{.action}.
+Sobald die KVM-Session abgeschlossen ist, werden die Bildschirme mit der ursprünglichen Konfiguration angezeigt. Konfigurieren Sie hier Ihr **Land/Region**, die **Sprache von Windows** und **Ihre Tastaturanordnung**. Wenn Sie diese Operation durchgeführt haben, klicken Sie auf `Next`{.action}.
 
+![KVM](images/setup-03.png){.thumbnail}
 
-![KVM](images/windowsvps.png){.thumbnail}
+Geben Sie im zweiten Fenster ein Passwort für Ihren Administrator-Account ein und bestätigen Sie dieses und klicken Sie dann auf `Finish`{.action}.
 
-Sie haben nun Zugriff zu Ihrem VPS per virtueller Maus und Tastatur.
+![KVM](images/setup-04.png){.thumbnail}
 
+Windows wendet Ihre Einstellungen an und zeigt dann den Login-Screen an. Klicken Sie in der oberen rechten Ecke auf `Send CtrlAltDel`{.action}, um sich zu einzuloggen.
 
-### Schritt 2&#58; Erste Windows-Einstellungen
-Windows wird in dem KVM Fenster gestartet. Legen Sie nun die Windows-Tastatursprache fest und geben Sie ein **Administrator-Passwort** ein.
+![KVM](images/setup-05.png){.thumbnail}
 
+Geben Sie das Passwort ein, das Sie für Ihren Administrator-Account erstellt haben, und klicken Sie auf den Pfeil.
 
-![Sprache](images/windows2.png){.thumbnail}
+![KVM](images/setup-06.png){.thumbnail}
 
+Damit ist die Erstkonfiguration abgeschlossen. Sobald Sie eingeloggt sind, ändern Sie die notwendigen Einstellungen der Windows Firewall.
 
-![Passwort](images/windows3.png){.thumbnail}
+### Schritt 3: Windows Firewall ändern
 
-
-### Schritt 3&#58; Windows Firewall einstellen
-Gehen Sie nach der Installation in den Bereich `Verwaltung`{.action} und klicken Sie auf `Windows-Firewall mit erweiterter Sicherheit`{.action}.
-
+Öffnen Sie die `Verwaltungstools`{.action} des Konfigurationspanel `System und Sicherheit`{.action} und klicken Sie auf `Windows Firewall mit erweiterter Sicherheit`{.action}.
 
 ![Admin](images/windows4.png){.thumbnail}
 
-Hier aktivieren Sie das ICMP-Protokoll sowie die Remotedesktop-Verbindung *(Rechtsklick -> Regel aktivieren)*.
+Hier können Sie jeweils die Eingangsregeln für `ICMP` und `Remote Desktop` aktivieren. (Klicken Sie mit der rechten Maustaste auf die Regel und wählen Sie `Regel aktivieren`{.action} im Kontextmenü.)
 
+![Aktiviert](images/windows5.png){.thumbnail}
 
-![Activ](images/windows5.png){.thumbnail}
+Ihr Server sollte nun auf Anfragen antworten, die diese Protokolle verwenden.
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.

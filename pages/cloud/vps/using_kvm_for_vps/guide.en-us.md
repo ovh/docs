@@ -24,13 +24,13 @@ The KVM console allows you to connect directly to your VPS without the need to u
 
 #### With a current VPS range
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `VPS`{.action}. In this section, click on `...`{.action} next to the name of your VPS in the "Your VPS" box.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Virtual Private Servers`{.action}. In this section, click on `...`{.action} next to the name of your VPS in the "Your VPS" box.
 
 ![Open KVM](images/kvm-new1.png){.thumbnail}
 
 #### With older VPS ranges
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `VPS`{.action}. In this section, click on the shortcut link labelled `KVM`{.action}.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Virtual Private Servers`{.action}. In this section, click on the shortcut link labelled `KVM`{.action}.
 
 ![Click on the KVM button](images/kvm-new2.png){.thumbnail}
 

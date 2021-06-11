@@ -37,7 +37,7 @@ Sachez que la mise en place d'une redirection peut avoir un impact sur le réfé
 
 ### Rediriger un nom de domaine via l'espace client
 
-Une fois connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, dans la barre de services à gauche, rendez-vous dans la section `Domaines`{.action} (*1* sur l'image ci-dessous), puis sur l'onglet `Redirection`{.action} (*2* sur l'image ci-dessous).
+Une fois connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, dans la barre de services à gauche, rendez-vous dans la section `Noms de domaine`{.action} (*1* sur l'image ci-dessous), puis sur l'onglet `Redirection`{.action} (*2* sur l'image ci-dessous).
 
 Le tableau affiche les redirections actives pour votre nom de domaine.
 

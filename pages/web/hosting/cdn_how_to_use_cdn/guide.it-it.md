@@ -6,7 +6,7 @@ ection: 'Ottimizza il tuo sito'
 legacy_guide_number: g1290
 ---
 
-**Ultimo aggiornamento: 19/11/2020**
+**Ultimo aggiornamento: 26/04/2021**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -86,7 +86,9 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 #### Configura le opzioni della CDN Shared
 
-Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini...` a destra del record multisito e poi `{.action}Modifica la CDN` `{.action}.
+Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini...` a destra del record multisito e poi su `{.action}Modifica la CDN` `{.action}. 
+
+Clicca sull'icona di penna in corrispondenza di un record Multisito, quando la CDN è attiva. Clicca su Modifica `la tua CDN`{.action}.
 
 > [!warning]
 > 
@@ -118,9 +120,9 @@ Seleziona **Regole di cache** e clicca sul pulsante `Aggiungi una regola`{.actio
 
 - **Regola**: Assegna un nome alla tua regola.
 
-- **URI**: Inserisci la sottounità di risorse del tuo sito Web tramite la sua directory. Per l'offerta CDN-Basic, è possibile solo inserire un'estensione di file.
+- **URI**: Inserisci la sottounità di risorse del tuo sito Web tramite la sua directory. Per le offerte CDN-Basic e CDN-Security, è possibile inserire solo un'estensione di file.
 
-- **Durata**: indica la durata di vita della regola per la risorsa scelta.
+- **Durata**: indica la durata di messa in cache della risorsa scelta.
 
 - **Classificazione**:  Classifica per ordine di esecuzione le tue regole (da minimo a massimo).
 
@@ -131,6 +133,60 @@ Le regole figurano in un elenco.  Per modificarli, clicca sui tre puntini `...`{
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
 Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
+
+#### Configura le opzioni della CDN Security
+
+> [!primary]
+>  le opzioni presentate qui sotto richiedono la sottoscrizione della [CDN security](https://www.ovh.com/fr/hebergement-web/cdn.xml) o della [CDN Advanced](https://www.ovh.com/fr/hebergement-web/cdn.xml)
+
+Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini `...`{.action} a destra del record multisito e poi  `Modifica la CDN `{.action}. 
+
+Clicca sull'icona di penna in corrispondenza di un record Multisito, quando la CDN è attiva. Clicca su Modifica `la tua CDN`{.action}.
+
+- **Cross-Origin Resource Sharing (CORS)**: Indica, nell'elenco, i domini esterni che saranno autorizzati ad accedere alle risorse del tuo sito web per condividerle. 
+
+Una volta attivata la funzione, clicca su `Modifica l'elenco delle risorse esterne`{.action} per aggiungere i domini autorizzati a condividere le tue risorse.
+
+![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
+
+Una volta completata la lista, clicca su `Conferma`{.action}.
+
+> [!primary]
+> Attivando l'opzione CORS senza specificare alcun dominio nella lista, significa che tutti i domini sono autorizzati ad utilizzare le risorse del tuo sito Web.
+
+- **HTTPS-redirect**: Proteggi il traffico totale del tuo sito Web reindirizzandolo al protocollo HTTPS in modo temporaneo o permanente.
+
+Una volta attivata la funzione, clicca sul menu a tendina per scegliere tra `Reindirizzamento permanente (301)` o `Reindirizzamento temporaneo (302)`.
+
+![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
+
+- **HTTP Strict Transport Security (HSTS)**: Imposta l'accesso al tuo sito in HTTPS. In questo modo la tua soluzione Web è protetta contro gli attacchi di declassamento (o attacchi di ripiego).
+
+Una volta attivata la funzione, determina la durata di vita durante la quale il browser applicherà la funzione HSTS sul tuo sito Web. 
+
+![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
+
+> [!primary]
+> 
+> Una volta attivata la funzione HSTS sul tuo sito, forgierà il protocollo HTTPS sul tuo browser fino alla fine del periodo detto "età massima", anche dopo la disattivazione della funzione nello Spazio Cliente. Tuttavia, quando la cache viene svuotata sul browser che ha già effettuato una visita sul tuo sito, quest'ultimo applicherà il nuovo stato della funzione HSTS.
+
+- **Mixed content**: Costruisci l'intero contenuto delle tue pagine Web. Saranno caricate in modo sicuro, partecipando così a un'esperienza utente ottimale. Tutte le risorse del tuo sito, interne ed esterne, devono essere disponibili in HTTPS per evitare errori nel browser.
+
+- **Firewall applicativo**: Il **W**eb **A**pplction **F**irewall (WAF) protegge il tuo sito da attacchi fraudolenti come l'inoltro del codice, le richieste illegittime o il furto di dati. e copre le principali falle note del web filtrando le richieste e i pacchetti trasmessi (la lista delle falle è gestita da OVHcloud e aggiornata regolarmente).  
+
+> [!warning]
+>
+> Per l'installazione di un [modulo in 1 click OVHcloud](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/), il WAF deve essere disattivato per evitare che l'installazione del modulo sia bloccata.
+
+> [!primary]
+>  
+> Il WAF è gestito totalmente da OVHcloud, la lista delle falle viene aggiornata regolarmente.
+
+### Visualizza le statistiche della CDN
+
+Nella scheda `Multisito`{.action} del tuo hosting, sotto la tabella, puoi visualizzare le statistiche della tua CDN, indicando il numero di richieste al minuto misurate su di esso.
+
+![CDN](images/manage_CDNstat_01.png){.thumbnail}
 
 ### Gestisci la tua CDN (versione storica)
 

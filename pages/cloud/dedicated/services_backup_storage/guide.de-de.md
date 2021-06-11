@@ -1,124 +1,150 @@
 ---
-title: 'Storage-Backup auf einem dedizierten Server verwenden'
+title: 'Backup Storage auf einem Dedicated Server verwenden'
 slug: dienste-storage-backup
-excerpt: 'So aktivieren und verwenden Sie Ihr Storage-Backup'
+excerpt: 'Erfahren Sie hier, wie Sie zusätzlichen Speicherplatz aktivieren und auf diesen zugreifen'
 section: Server Management
 ---
 
-**Stand 18.12.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Einleitung
+**Letzte Aktualisierung am 15.03.2021**
 
-Alle [ OVH Dedicated Server](https://www.ovh.de/dedicated_server/){.external} Angebote enthalten einen 500 GB Backup-Speicher pro Server, auf dem Sie [Ihre Daten sichern](https://docs.ovh.com/de/dedicated/dedizierten-server-sichern/){.external} können.
+## Ziel
 
-**In dieser Anleitung erfahren Sie, wie Sie diesen Backup-Speicher aktivieren und verwenden.**
+Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speicher für die Speicherung wichtiger Daten und Konfigurationsdateien. Dieser Bereich ist skalierbar, abgesichert und vom Hauptserver unabhängig.
 
+**Diese Anleitung erklärt, wie Sie Ihren Backup-Speicherplatz aktivieren und verwenden.**
+
+> [!primary]
+> Für weitere Informationen empfehlen wir Ihnen, die [Produktseite](https://www.ovhcloud.com/de/bare-metal/backup-storage/) der Backup Storage Option einzusehen.
+>
+> Beachten Sie, dass diese Anleitung nicht für OVHcloud US Dienstleistungen gilt.
+>
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [dedizierten Server](https://www.ovh.de/dedicated_server/){.external}.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Bare Metal Cloud`{.action}.
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
+## In der praktischen Anwendung
 
-## Beschreibung
+### Backup Storage aktivieren
 
-### Backup-Speicher aktivieren
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) 
+ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button  `Storage-Backup aktivieren`{.action}.
 
-Loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie im Bereich `Bare Metal Cloud`{.action} auf die Seite Ihres Servers. Klicken Sie auf den Tab `Storage Backup`{.action}, klicken Sie dann auf den Button `Storage-Backup aktivieren`{.action} und bestätigen Sie.
+![Backup Storage aktivieren](images/backup-storage01.png){.thumbnail}
 
-![Backup-Speicher aktivieren](images/backup_storage_activation.png){.thumbnail}
+Klicken Sie im angezeigten Kontextmenü auf `Bestätigen`{.action}.
 
-Sie erhalten anschließend eine Bestätigungsmail für die Aktivierung und Ihr Storage-Backup ist in wenigen Minuten verfügbar.
+![Backup Storage aktivieren](images/backup-storage02.png){.thumbnail}
 
+Ihr Backup Storage wird innerhalb weniger Minuten konfiguriert. Sie erhalten eine Bestätigungsmail, sobald die Konfiguration abgeschlossen ist.
 
-### Zugangskontrolle konfigurieren
+### ACL konfigurieren
 
-Der Zugang zu Ihrem Backup-Speicher ist auf bestimmte IP-Adressen beschränkt, die mithilfe einer Zugriffsliste, der sogenannten *Access Control List* (ACL), festgelegt werden. Für alle IP-Adressen Ihres Accounts ist standardmäßig ein FTP/FTPS-Zugang zum Backup-Speicher eingerichtet. Die anderen Protokolle (NFS und CIFS) haben standardmäßig keinen Zugriff. Um diesen Protokollen Zugriff auf Ihren Backup-Speicher zu erlauben, muss eine entsprechende ACL erstellt werden.
+Der Zugriff auf Ihren Speicherplatz ist per IP-Adresse mithilfe einer Zugriffskontrollliste (<i>Access Control List</i> oder ACL) geregelt. Auf den Speicher können nur die Ihrem Account zugehörigen IP-Adressen zugreifen, die der ACL hinzugefügt wurden. Die Zugriffsprotokolle (FTP, NFS und CIFS) sind standardmäßig nicht freigegeben, können aber beim Hinzufügen von IP-Adressen ausgewählt werden.
 
+#### Zugang zum Backup Storage hinzufügen
 
-#### Zugang hinzufügen
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
 
-Klicken Sie im Bereich `Storage-Backup`{.action} auf `Zugang hinzufügen`{.action}.
+![Zugang zum Backup-Speicher hinzufügen](images/backup-storage03.png){.thumbnail}
 
-![Zugang zum Backup-Speicher hinzufügen](images/add_access.png){.thumbnail}
-
-Wählen Sie zunächst den IP-Block und dann das Protokoll aus, für die Sie den Zugang aktivieren möchten. Klicken Sie dann auf `Weiter`{.action}.
+Wählen Sie den IP-Block aus, den Sie autorisieren möchten. Wählen Sie danach die freizugebenden Protokolle aus und klicken Sie auf `Weiter`{.action}.
 
 > [!primary]
 >
-> Sie können den Zugang zum Backup-Speicher nur für in Ihrem OVH Account vorhandene IP-Blöcke aktivieren.
+> Über Ihr Kundencenter können nur IP-Blöcke Ihres OVHcloud Kunden-Accounts zur ACL hinzugefügt werden.
 >
 
-![Zugang zum Backup-Speicher hinzufügen](images/add_access_ip.png){.thumbnail}
+![Zugang zum Backup-Speicher hinzufügen](images/backup-storage04.png){.thumbnail}
 
-Um den Vorgang zu bestätigen, klicken Sie auf `Beenden`{.action}.
+Bestätigen Sie, indem Sie auf `Beenden`{.action} klicken.
 
-![Zugang zum Backup-Speicher hinzufügen](images/add_access_confirmation.png){.thumbnail}
+Sie können anschließend über den von Ihnen gewählten IP-Block auf den Backup Storage Ihres Servers zugreifen.
 
-Sie können nun über den ausgewählten IP-Block auf das Storage-Backup Ihres Servers zugreifen.
+#### Zugang zum Backup Storage bearbeiten oder löschen
 
+Sobald der Dienst aktiviert ist, wird Ihre ACL Tabelle im Tab `Storage-Backup`{.action} angezeigt. Klicken Sie auf `...`{.action}. rechts neben einem IP-Block, um das Zugangsmenü zu öffnen.
 
-#### Zugang bearbeiten
+![Zugang zum Backup-Speicher hinzufügen](images/backup-storage05.png){.thumbnail}
 
-Um die Protokolle eines freigegebenen IP-Blocks zu ändern, klicken Sie in der Zeile des betreffenden Blocks auf den Button `...`{.action} und dann auf `Zugang bearbeiten`{.action}. Aktivieren oder deaktivieren Sie dann die gewünschten Protokolle. Bestätigen Sie Ihre Änderungen anschließend, indem Sie auf `Bestätigen`{.action} klicken.
+Um die Protokolle für einen autorisierten IP-Block zu ändern, klicken Sie im Popup-Fenster auf `Zugang bearbeiten`{.action} und wählen Sie die Protokolle im angezeigten Menü aus. Speichern Sie die Änderungen, indem Sie auf `Bestätigen`{.action} klicken.
 
-![Zugang bearbeiten](images/modify_access.png){.thumbnail}
+Um die Autorisierung für einen IP-Block zu widerrufen, klicken Sie auf `Zugang löschen`{.action} und dann auf `Bestätigen`{.action}. 
 
+#### Zugriff auf den Backup Storage über eine IP außerhalb Ihres Kunden-Accounts <a name="accessbackup"></a>
 
-#### Zugang löschen
+Der Zugang zu Ihrem Backup Storage über Ihr OVHcloud Kundencenter ist auf Ihre damit verbundenen Dienste beschränkt.
 
-Um einen freigegebenen IP-Block zu sperren, klicken Sie in der Zeile des betreffenden Blocks auf den Button `...`{.action} und dann auf `Zugang löschen`{.action}.
-
-![Zugang bearbeiten](images/delete_access.png){.thumbnail}
-
-Bestätigen Sie abschließend, indem Sie auf `Bestätigen`{.action} klicken. Der Zugang zum Storage-Backup ist nun für den betreffenden IP-Block gesperrt.
-
-
-### Passwort ändern
-
-Klicken Sie im Tab `Storage Backup`{.action} auf `Haben Sie Ihre Passwort verloren?`{.action} und bestätigen Sie.
-
-![Passwort ändern](images/forgotten_password.png){.thumbnail}
-
-Eine E-Mail mit Informationen zur Wiederherstellung des Passworts wird an die E-Mail-Adresse versandt, die in Ihrem Administrator-Account gespeichert ist. Folgen Sie einfach den Anweisungen in der E-Mail, um Ihr Passwort zurückzusetzen.
-
-
-### Storage-Backup löschen
-
-Klicken Sie im Tab `Storage Backup`{.action} auf `Storage-Backup löschen`{.action} und bestätigen Sie.
-
-![Storage-Backup löschen](images/backup_storage_delete.png){.thumbnail}
+Um weitere IP-Adressen verschiedener Dienste hinzuzufügen, können Sie die OVHcloud API verwenden.
+Auf diese Weise können Sie Ihre gesicherten Daten von einem anderen Dienst aus abrufen.
 
 > [!warning]
-> 
-> Achtung: Das Löschen kann nicht rückgängig gemacht werden!
-> 
+> Es können nur IP-Adressen von OVHcloud autorisiert werden.
+>
 
-Ihr Storage-Backup wird nach wenigen Minuten komplett gelöscht.
+Loggen Sie sich auf [api.ovh.com](https://api.ovh.com/) ein und verwenden Sie folgenden Aufruf:
 
+> [!api]
+>
+> @api {POST} /dedicated/server/{serviceName}/features/backupFTP/access
+>
 
-### Zusätzlichen Backup-Speicherplatz bestellen
+Geben Sie die Felder wie folgt ein:
 
-Klicken Sie im Tab `Storage Backup`{.action} auf `Speicherplatz bestellen`{.action}. 
+- `serviceName`: der Name Ihres Dedicated Servers
+- `cifs`: Anhaken, falls erforderlich
+- `ftp`: Anhaken, falls erforderlich
+- `ipBlock`: Geben Sie die zugreifende IP-Adresse ein, in der Form `1.2.3.4/32`
+- `nfs`: Anhaken, falls erforderlich
 
-![Speicherplatz bestellen](images/additional_space_order.png){.thumbnail}
+![Apiacladdress](images/aclapi01.png){.thumbnail}
 
-Wählen Sie die gewünschte Speicherkapazität aus und klicken Sie dann auf `Weiter`{.action}.
+Um zu überprüfen, ob Ihre IP-Adresse autorisiert ist, verwenden Sie folgenden Aufruf:
 
-![Auswahl zusätzlicher Speicherplatz](images/additional_space_order_selection.png){.thumbnail}
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/features/backupFTP/access
+>
 
-Lesen und akzeptieren Sie nun die Allgemeinen Geschäftsbedingungen, indem Sie einen Haken im entsprechenden Feld setzen, und bestätigen Sie Ihre Bestellung über den Button `Bestätigen`{.action}.
+![Apiacladdress](images/aclapi02.png){.thumbnail}
 
-Ein Bestellschein wird erstellt. Sobald die Zahlung durchgeführt wurde, steht Ihnen der zusätzliche Speicherplatz zur Verfügung.
+### Passwort zurücksetzen
 
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) 
+ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Sie haben Ihr Passwort vergessen?`{.action}.
 
-### Storage-Backup nutzen
+Nachdem Sie im angezeigten Fenster auf `Bestätigen`{.action} geklickt haben, wird eine E-Mail an die für Ihren Administrator-Kontakt eingetragene E-Mail-Adresse versandt. Folgen Sie den darin enthaltenen Anweisungen, um Ihr Passwort zurückzusetzen.
+
+### Backup Storage löschen
+
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) 
+ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
+
+Klicken Sie auf `Bestätigen`{.action}, um mit der Löschung fortzufahren. Ihr Backup Storage wird nach einigen Minuten abgeschaltet. Alle Daten des Speicherplatzes werden gelöscht.
+
+### Zusätzlichen Speicherplatz bestellen
+
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) 
+ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Speicherplatz bestellen`{.action}.
+
+![Zusätzlichen Backup-Speicherplatz bestellen](images/backup-storage06.png){.thumbnail}
+
+Wählen Sie die Speicherkapazität aus, die Sie bestellen möchten, und klicken Sie dann auf `Weiter`{.action}.
+
+Beachten Sie die Informationen zu den Preisen sowie den Verträgen und bestätigen Sie Ihre Bestellung, indem Sie auf `Bestätigen`{.action} klicken.
+Es wird ein Bestellschein erzeugt und sobald Ihre Zahlung verbucht wurde, erhalten Sie eine Benachrichtigung über die erfolgreiche Erweiterung Ihres Speicherplatzes.
+
+### Backup Storage verwenden
 
 > [!primary]
 >
-> Storage-Backup erstellt keine automatischen Backups Ihrer Daten. Der Dienst stellt lediglich den Speicherplatz und die Übertragungsprotokolle zur Verfügung. Es liegt somit in Ihrer Verantwortung, eine angemessene Backup-Strategie mit den Tools Ihrer Wahl einzurichten. OVH ist für auf dem Backup-Speicher abgelegte Daten nicht verantwortlich.
+> Der Backup Storage Dienst führt kein automatisches Backup Ihrer Daten durch. Der Dienst stellt lediglich den Speicherplatz und die Übertragungsprotokolle zur Verfügung. Es liegt somit in Ihrer Verantwortung, eine angemessene Backup-Strategie mit den Tools Ihrer Wahl einzurichten. OVHcloud kann nicht für die in diesen Bereichen enthaltenen Daten verantwortlich gemacht werden.
 >
-
 
 #### FTP/FTPS
 
@@ -136,7 +162,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Storage-Backups
+* **HostName**: Name Ihres Backup Storages
 * **FolderLocation**: Zugriffspfad zum Zielverzeichnis, in dem Sie die Datei speichern möchten
 * **File**: Name der Datei, für die Sie ein Backup erstellen möchten
 
@@ -151,7 +177,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 * **FolderName**: Zugriffspfad zum Verzeichnis, für das Sie ein Backup erstellen möchten
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Storage-Backups
+* **HostName**: Name Ihres Backup Storages
 * **ArchiveName**: Name des Verzeichnisses, für das Sie ein Backup erstellen möchten
 
 Um eine Archivdatei aus Ihrem Backup-Speicher herunterzuladen, können Sie folgenden Befehl verwenden:
@@ -164,7 +190,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Storage-Backups
+* **HostName**: Name Ihres Backup Storages
 * **LocalFolder**: Zugriffspfad zum lokalen Verzeichnis, in dem Sie die Datei speichern möchten
 * **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
 
@@ -172,7 +198,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 > [!primary]
 >
-> Um das FTPS-Protokoll zu verwenden, muss der Name Ihres Storage-Backups geändert werden. Lautet der Name beispielsweise „ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net“, muss er zu „ftpback-rbxX-YYY.mybackup.ovh.net“ abgeändert werden. Fügen Sie außerdem dem untenstehenden Befehl ein `-ssl` Argument hinzu.
+> Um das FTPS-Protokoll zu verwenden, muss der Name Ihres Backup Storage geändert werden. Lautet der Name beispielsweise „ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net“, muss er zu „ftpback-rbxX-YYY.mybackup.ovh.net“ abgeändert werden. Fügen Sie außerdem dem untenstehenden Befehl ein `-ssl` Argument hinzu.
 >
 
 Geben Sie für das Backup einer einzelnen Datei folgenden Befehl ein:
@@ -186,7 +212,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 * **File**: Name der Datei, für die Sie ein Backup erstellen möchten
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Storage-Backups
+* **HostName**: Name Ihres Backup Storages
 * **FolderLocation**: Zugriffspfad zum Zielverzeichnis, in dem Sie die Datei speichern möchten
 
 Um ein Backup für ein komplettes Verzeichnis zu erstellen, archivieren Sie dieses und übertragen Sie es dann mit folgendem Befehl in Ihren Backup-Bereich:
@@ -200,7 +226,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 * **FolderName**: Zugriffspfad zum Verzeichnis, für das Sie ein Backup erstellen möchten
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Storage-Backups
+* **HostName**: Name Ihres Backup Storages
 * **FolderLocation**: Zugriffspfad zum lokalen Verzeichnis, in dem Sie die Datei speichern möchten
 * **ArchiveName**: Name des Verzeichnisses, für das Sie ein Backup erstellen möchten
 
@@ -215,7 +241,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Storage-Backups
+* **HostName**: Name Ihres Backup Storages
 * **LocalFolder**: Name des lokalen Verzeichnisses, in dem Sie die Datei speichern möchten
 * **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
 
@@ -224,7 +250,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 > [!primary]
 >
-> lftp verwendet standardmäßig FTP+SSL/TLS. Ändern Sie deshalb den Namen Ihres Storage-Backups. Lautet dieser beispielsweise „ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net“, muss er zu „ftpback-rbxX-YYY.mybackup.ovh.net“ abgeändert werden.
+> lftp verwendet standardmäßig FTP+SSL/TLS. Ändern Sie deshalb den Namen Ihres Backup Storages. Lautet dieser beispielsweise „ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net“, muss er zu „ftpback-rbxX-YYY.mybackup.ovh.net“ abgeändert werden.
 >
 
 Geben Sie für das Backup einer einzelnen Datei folgenden Befehl ein:
@@ -238,7 +264,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 * **File**: Name der Datei, für die Sie ein Backup erstellen möchten
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Storage-Backups
+* **HostName**: Name Ihres Backup Storages
 * **FolderLocation**: Zugriffspfad zum Zielverzeichnis, in dem Sie die Datei speichern möchten
 
 Um ein Backup für ein komplettes Verzeichnis zu erstellen, archivieren Sie dieses und übertragen Sie es dann mit folgendem Befehl in Ihren Backup-Bereich:
@@ -252,7 +278,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 * **FolderName**: Zugriffspfad zum Verzeichnis, für das Sie ein Backup erstellen möchten
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Storage-Backups
+* **HostName**: Name Ihres Backup Storages
 * **FolderLocation**: Zugriffspfad zum lokalen Verzeichnis, in dem Sie die Datei speichern möchten
 * **ArchiveName**: Name des Verzeichnisses, für das Sie ein Backup erstellen möchten
 
@@ -267,13 +293,13 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Storage-Backups
+* **HostName**: Name Ihres Backup Storages
 * **LocalFolder**: Name des lokalen Verzeichnisses, in dem Sie die Datei speichern möchten
 * **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
 
 ##### FileZilla
 
-Nachdem Sie FileZilla auf Ihrem Server installiert haben, können Sie die Software konfigurieren, um sich in Ihren Backup-Speicher einzuloggen. Verwenden Sie hierfür die FTP-Login-Daten, die Ihnen bei der Aktivierung Ihres Storage-Backups zugesandt wurden. Für den Login benötigen Sie den Benutzernamen und das zugehörige Passwort.
+Nachdem Sie FileZilla auf Ihrem Server installiert haben, können Sie die Software konfigurieren, um sich in Ihren Backup-Speicher einzuloggen. Verwenden Sie hierfür die FTP-Login-Daten, die Ihnen bei der Aktivierung Ihres Backup Storages zugesandt wurden. Für den Login benötigen Sie den Benutzernamen und das zugehörige Passwort.
 
 
 #### NFS
@@ -288,7 +314,7 @@ mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **HostName**: Name Ihres Storage-Backups
+* **HostName**: Name Ihres Backup Storages
 * **ServiceName**: Name Ihres Servers (z. B.: ns0000000.ip-123-123-123.net)
 * **FolderMount**: Verzeichnis, in das Sie die NFS-Freigabe mounten möchten
 
@@ -307,7 +333,7 @@ net use z: \\HostName\ServiceName
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **HostName**: Name Ihres Storage-Backups
+* **HostName**: Name Ihres Backup Storages
 * **ServiceName**: Name Ihres Servers (z. B.: ns0000000.ip-123-123-123.net)
 
 ##### Linux
@@ -320,11 +346,11 @@ mount -t cifs -o sec=ntlm,uid=root,gid=100,dir_mode=0700,username=root,password=
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **HostName**: Name Ihres Storage-Backups
+* **HostName**: Name Ihres Backup Storages
 * **ServiceName**: Name Ihres Servers (z. B.: ns0000000.ip-123-123-123.net)
 * **FolderMount**: Verzeichnis, in das Sie die Freigabe mounten möchten (es muss bereits existieren)
 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

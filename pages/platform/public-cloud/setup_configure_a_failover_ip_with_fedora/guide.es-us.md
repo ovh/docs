@@ -4,6 +4,7 @@ excerpt: Configurar una dirección IP failover en Fedora
 slug: configurar_una_direccion_ip_failover_en_fedora
 legacy_guide_number: g2045
 section: Red e IP
+hidden: true
 ---
 
 

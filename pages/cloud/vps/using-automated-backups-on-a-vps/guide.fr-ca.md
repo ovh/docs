@@ -73,7 +73,7 @@ Connectez-vous à votre VPS en SSH.
 
 Vous pouvez utiliser la commande suivante pour vérifier le nom du nouveau périphérique connecté:
 ```
-# lsblk
+$ lsblk
 ```
 Voici un exemple de résultat de cette commande :
 
@@ -87,15 +87,14 @@ sdb       8:16   0   25G  0 disk
 ├─sdb1    8:17   0 24.9G  0 part 
 ├─sdb14   8:30   0    4M  0 part 
 └─sdb15   8:31   0  106M  0 part /boot/efi
-sdc       8:32   0   50G  0 disk 
 ```
 
 Dans cet exemple, la partition contenant votre système de fichiers de sauvegarde est nommée "sdb1".
 Créez à présent un répertoire pour cette partition et définissez-le comme point de montage :
 
 ```
-# mkdir -p /mnt/restore
-# mount /dev/sdb1 /mnt/restore
+$ mkdir -p /mnt/restore
+$ mount /dev/sdb1 /mnt/restore
 ```
 Vous pouvez maintenant basculer vers ce dossier et accéder à vos données de sauvegarde.
 

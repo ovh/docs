@@ -129,7 +129,7 @@ Wanneer u hulp bij de functies van uw site wilt, kunt u naar de site-editor van 
 
 |CMS|Officiële documentatie|
 |---|---|
-|WordPress|[Aan de slag met WordPress](https://codex.wordpress.org/First_Steps_With_WordPress){.external}|
+|WordPress|[Aan de slag met WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}|
 |PrestaShop|[Aan de slag met PrestaShop](http://doc.prestashop.com/display/PS17/Getting+Started){.external}|
 |Joomla!|[Aan de slag met Joomla!](https://www.joomla.org/about-joomla/getting-started.html){.external}|
 |Drupal|[Leer meer over Drupal](https://www.drupal.org/docs/7/understanding-drupal/overview){.external}|

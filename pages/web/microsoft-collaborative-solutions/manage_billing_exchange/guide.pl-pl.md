@@ -94,4 +94,4 @@ W karcie `Konta e-mail`{.action} kliknij `...`{.action} z prawej strony danego k
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

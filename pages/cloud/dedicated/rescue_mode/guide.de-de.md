@@ -9,11 +9,22 @@ section: 'Diagnose & Rescue Modus'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 14.01.2021**
+**Letzte Aktualisierung am 19.03.2021**
 
 ## Ziel
 
 Der Rescue-Modus ist ein Tool Ihres dedizierten Servers, mit dem Sie diesen auf einem temporären Betriebssystem starten können, um Probleme zu diagnostizieren und zu beheben.
+
+Der Rescue-Modus ist generell an folgende Aufgaben angepasst:
+
+- Zurücksetzen des Root-Passworts
+- Diagnose von Netzwerkproblemen
+- Reparatur eines fehlerhaften Betriebssystems
+- Korrektur einer fehlerhaften Konfiguration einer Software-Firewall
+- Performance-Test der Festplatten
+- Test des Prozessors und des RAM
+
+Der erste Schritt, auch im Rescue-Modus, sollte immer darin bestehen, ein Backup Ihrer Daten, falls Sie nicht schon über aktuelle Backups verfügen.
 
 **Diese Anleitung erklärt, wie Sie Ihren OVHcloud Dedicated Server im Rescue-Modus neu starten.**
 
@@ -72,6 +83,8 @@ root@your_server_password:
 > Um dieses Problem zu umgehen, können Sie den regulären Fingerprint des Systems auskommentieren, indem Sie in der Datei *known_hosts* ein `#` in der entsprechenden Zeile hinzufügen. Achten Sie darauf, dieses Zeichen zu entfernen, bevor Sie den Server im normalen Modus neu starten.
 >
 
+#### Mounten Ihrer Partitionen
+
 Für die meisten Änderungen Ihres Servers via SSH im Rescue-Modus muss eine Partition gemountet werden. Dieser Modus verfügt über ein eigenes temporäres Daateisystem. Folglich gehen alle im Rescue-Modus vorgenommenen Änderungen am Dateisystem beim Neustart des Servers im normalen Modus verloren.
 
 Die Partitionen werden über SSH per `mount` Befehl gemountet. Zunächst müssen jedoch Ihre Partitionen aufgelistet werden, um den Namen derjenigen Partition zu ermitteln, die Sie mounten möchten. Im Folgenden finden Sie Codebeispiele, an denen Sie sich orientieren können.
@@ -111,6 +124,46 @@ rescue:~# mount /dev/hda1 /mnt/
 
 Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den Bootmodus wieder auf `Von Festplatte Booten`{.action} und starten Sie den Server über die Kommandozeile neu.
 
+#### Mounten eines Datastores
+
+Sie können einen VMware Datastore auf ähnliche Weise mounten wie im vorherigen Segment beschrieben. Installieren Sie zuerst das erforderliche Paket:
+
+```
+rescue:~# apt-get update && apt-get install vmfs-tools
+```
+
+Listen Sie anschließend Ihre Partitionen auf, um den Namen der Partition des Datastores abzurufen:
+
+```
+rescue:~# fdisk -l
+```
+
+Mounten Sie nun die Partition mit folgendem Befehl, und ersetzen Sie dabei `sdbX` mit dem im vorherigen Schritt identifizierten Wert:
+
+```
+rescue:~# vmfs-fuse /dev/sdbX /mnt
+```
+
+Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den Bootmodus wieder auf `Von Festplatte Booten`{.action} und starten Sie den Server über die Kommandozeile neu.
+
+### Verwendung des Webinterfaces des Rescue-Modus (ausschließlich mit "rescue64-pro")
+
+Sobald der Server neu gestartet ist, können Sie auf das Web-Interface zugreifen, indem Sie in die Adresszeile Ihres Browsers `Ihre_Server_IP:81` eingeben. Verwenden Sie für https stattdessen den Port *444*, zum Beispiel:
+
+```sh
+https://169.254.10.20:444
+```
+
+Wenn Sie Ihre Daten bereits gesichert haben, können Sie die folgenden Komponenten über das Webinterface des Rescue-Modus testen:
+
+- **Disk test**: Überprüfen Sie die Integrität der Disks mit SMART.
+- **Processors**: Überprüft, ob der Prozessor normal funktioniert (diese Operation kann einige Zeit in Anspruch nehmen).
+- **Partitions**: Überprüfe dden Status der Reader.
+- **Memory**: Überprüft den auf dem Server installierten RAM (diese Operation kann einige Zeit in Anspruch nehmen).
+- **Network**: Überprüft sowohl die Verbindung zu einem internen OVHcloud Referenzsystem als auch die Verbindung zu Ihrem Browser.
+
+![Webinterface für den Rescue-Modus](images/rescue-mode-04.png){.thumbnail}
+
 ### Windows <a name="windowsrescue"></a>
 
 #### Verwendung der WinRescue-Tools
@@ -119,21 +172,19 @@ Nach dem Neustart Ihres Servers erhalten Sie eine E-Mail mit den Login-Daten des
 
 Um die GUI für den Windows-Rescue-Modus zu verwenden, müssen Sie eine VNC-Konsole herunterladen und installieren oder das `IPMI`-Modul in Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} verwenden.
 
-![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
+![WinRescue Windows](images/rescue-mode-07.png){.thumbnail}
 
-Folgende Werkzeuge sind bereits in diesem Modus installiert:
+Folgende Anwendungen sind bereits in diesem Modus installiert:
 
 |Tool|Beschreibung|
 |---|---|
-|Firefox|Ein Webbrowser.|
-|Freecommander|Ein Dateimanager mit Standardfunktionen.|
-|Avast Virus Cleaner|Eine Antivirus-Anwendung mit Datenscan- und Datenbereinigungsfunktionen.|
-|ActivNIC|Ein Werkzeug, mit dem Sie eine Netzwerkschnittstelle reaktivieren können.|
-|BootSect|Ein Werkzeug, mit dem Sie den Bootsektor reparieren können.|
-|Virtual Clone Drive|Ein Tool zum Mounten von BIN-, CCD- und ISO-Dateien in einem virtuellen CD-Laufwerk.|
-|smartctl|Ein Werkzeug, mit dem Sie auf die automatischen Monitoring-Logs der Festplatten zugreifen können.|
-|Diskpart|Ein Werkzeug, mit dem Sie die Partitionen des Servers verwalten können.|
-|SysInternal|Eine Software-Suite von Microsoft, mit der Sie die Wartung des Netzwerks durchführen und die Prozesse verwalten können.|
+|Mozilla ULight|Ein Webbrowser.|
+|Memory Diagnostics Tool|Ein Windows Tool zum Testen des RAM.|
+|Explorer_Q-Dir|Ein Dateiexplorer.|
+|GSmartControl|Ein Werkzeug zur Überprüfung von Festplatten/SSDs.|
+|PhotoRec|Ein Tool zum Abruf potenziell verlorener Dateien auf einer Festplatte.|
+|SilverSHielD|Ein SSH2 und SFTP Server.|
+|System Recovery|Ein Windows Tool zur Systemwiederherstellung und Fehlerbehebung.|
 |TestDisk|Eine leistungsstarke Anwendung zur Datenwiederherstellung. Mit diesem Tool können Sie beschädigte Partitionen wiederherstellen und bearbeiten, verlorene Partitionen wiederfinden, einen Bootsektor reparieren oder sogar einen fehlerhaften MBR rekonstruieren.|
 |FileZilla|Ein Open-Source-FTP-Client. Er unterstützt SSH- und SSL-Protokolle und verfügt über ein intuitives Drag-and-Drop-Interface. Es kann verwendet werden, um Ihre Daten auf einen FTP-Server zu übertragen, zum Beispiel das FTP-Backup, das mit den meisten OVHcloud-Servermodellen bereitgestellt wird.|
 |7-ZIP|Ein Datenkomprimierungs- und Datenarchivierungstool, das die folgenden Formate liest: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR und Z. Außerdem können Sie mit diesem Tool Ihre eigenen Archive in den folgenden Formaten anlegen: BZIP2, GZIP, TAR, WIM, XZ, Z und ZIP.|

@@ -1,96 +1,88 @@
 ---
 title: 'Risolvere l’errore «Sito non installato»'
 slug: errore-sito-non-installato
-excerpt: 'Scopri come risolvere il caso della pagina «Sito non installato»'
-section: 'Configurazione dell’hosting'
-order: 2
+excerpt: Come identificare e risolvere la pagina di errore «Sito non installato»
+section: Diagnostica
 ---
 
-**Ultimo aggiornamento: 08/08/2018**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 18/05/2021**
 
 ## Obiettivo
 
-La pagina di avviso "Sito non installato" indica che la configurazione DNS del tuo dominio non è corretta o che il dominio utilizzato dal tuo sito non è stato configurato correttamente sul tuo hosting Web OVH.
 
-**Questa guida ti mostra come risolvere il problema del «Sito non installato».**
+È possibile vedere apparire sul browser la pagina di errore `Sito non installato`, in particolare al momento della prima installazione del tuo sito Web.
 
+![site-not-installed](images/site-not-installed2021.png){.thumbnail}
+
+**Come identificare e risolvere la pagina di errore "Sito non installato"**
+
+> [!warning]
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+>
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
-- Essere in grado di gestire l'[hosting Web](https://www.ovh.it/hosting-web/){.external} su cui è ospitato il tuo sito Web
-- Essere in grado di gestire la configurazione del dominio pertinente, ovvero la sua zona DNS
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
-
+- Disporre di un'[offerta di hosting condiviso](https://www.ovh.it/hosting-web/)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre anche della gestione della [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/) alla quale è associato il tuo dominio
 
 ## Procedura
 
-La pagina "Sito non installato" si visualizza solo in due casi specifici:
+La pagina **Sito non installato** si presenta in due diverse situazioni:
 
-- quando il dominio del tuo sito Web non è aggiunto correttamente come **Multisito** alla configurazione del tuo hosting Web
-- quando il dominio del tuo sito Web non è collegato correttamente al tuo hosting Web perché non utilizza l'indirizzo IP corretto nella sua configurazione DNS
+1. Il tuo dominio non è presente nella sezione [Multisito](../configurare-un-multisito-su-un-hosting-web/#step-1-accedi-alla-gestione-del-multisito) del tuo hosting.
 
-Per evitare questo tipo di problema, grazie ai due seguenti passaggi puoi controllare entrambe le configurazioni.
+2. Il tuo dominio non è associato, attraverso la sua `Zona DNS`{.action}, al tuo hosting.
 
-![site not installed](images/site-not-installed-webpage.png){.thumbnail}
+Gli step successivi ti permettono di correggere l'errore `Sito non installato` in queste due situazioni.
 
-### Step 1: verifica della configurazione dell’hosting Web (Multisito)
+### Step 1: verifica la parte multisito del tuo hosting
 
-Per verificare che il dominio sia stato aggiunto correttamente come Multisito al tuo hosting Web, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, e clicca su `Hosting`{.action} nel menu di sinistra. Nell'elenco dei tuoi hosting, seleziona quello che ospita il sito Web per il quale viene visualizzata la pagina "Sito non installato". Infine, vai alla scheda `Multisito`{.action}.
+Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action} e poi `su Hosting`{.action}.
 
-La tabella che appare contiene tutti i domini che sono stati aggiunti al tuo hosting come Multisito. La barra di ricerca può aiutarti a trovare il dominio.
+Seleziona l'hosting interessato dalla lista e clicca sulla scheda `Multisito`{.action}.
 
-Successivamente, cerca il dominio pertinente nella tabella. Sono possibili diversi scenari:
-
-|Possibili scenari|Azione da eseguire|
+|Scenario|Azione da eseguire|
 |---|---|
-|Il nome del dominio appare nella tabella|Ciò indica che è stato aggiunto come Multisito al tuo hosting Web. Se lo hai aggiunto meno di 15 minuti fa, attendi qualche istante affinché la pagina "Sito non installato" scompaia. Se la visualizzazione della pagina persiste, passa allo Step 2.|
-|Il dominio non appare più nella tabella|Se hai aggiunto il nome di dominio e questo non compare più nella tabella, potresti non aver completato tutti i passaggi per aggiungerlo al tuo hosting Web, oppure potresti averlo rimosso involontariamente. Per aggiungere di nuovo il dominio, ti invitiamo pertanto a seguire i passaggi descritti nella nostra documentazione [“Condivisione dell’hosting tra più siti” - EN](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}.|
-|Il dominio non è presente nella tabella|Non hai ancora aggiunto questo dominio come Multisito al tuo hosting Web. Per effettuare questa operazione, ti invitiamo a seguire i passaggi descritti nella nostra documentazione [“Condivisione dell’hosting tra più siti” - EN](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}.|
+|Il nome del tuo sito appare nella tabella.|Se hai appena aggiunto il nome del tuo sito nella sezione `Multisito` del tuo hosting, attendi una ventina di minuti e poi aggiorna la cache del tuo browser. Se il messaggio "Sito non installato" compare ancora, passa allo [Step 2](#checkdomainlink).|
+|Il dominio o sottodominio associato al tuo sito non compare nella tabella.|Aggiungi il tuo dominio al `Multisito`{.action} seguendo la sezione dedicata della guida [Condividere il tuo hosting tra più siti - aggiungere un dominio o un sottodominio](../configurare-un-multisito-su-un-hosting-web/#step-2-aggiungi-un-dominio-o-un-sottodominio).|
+|Il dominio è stato eliminato dal multisito senza azione da parte tua.|Il dominio o la zona DNS possono essere gestiti da un altro account. Aggiungi il tuo dominio al multisito seguendo la sezione dedicata della guida [Condividere il tuo hosting tra più siti - aggiungere un dominio esterno](../configurare-un-multisito-su-un-hosting-web/#step-22-aggiungere-un-dominio-esterno).|
 
-Se nonostante le azioni eseguite visualizzi ancora la pagina "Sito non installato" al posto del tuo sito Web, passa allo step successivo "Verifica della configurazione DNS del dominio".
-
-### Step 2: verifica della configurazione DNS del dominio
-
-È necessario prima recuperare la configurazione OVH da utilizzare. Per fare ciò, sempre nell’hosting Web interessato, vai alla scheda `Informazioni generali`{.action}, quindi recupera gli indirizzi che appaiono accanto a **IPv4** e **IPv6**.
-
-![sitenotinstalled](images/site-not-installed-know-a-records.png){.thumbnail}
-
-Ora puoi verificare la configurazione del servizio DNS del tuo dominio. Tale verifica deve essere eseguita dall'interfaccia del fornitore che gestisce questo servizio.
+### Step 2: verifica la zona DNS del tuo dominio <a name="checkdomainlink"></a>
 
 > [!primary]
 >
-> Se il tuo dominio è registrato presso OVH, puoi verificare se utilizza la nostra configurazione. Per fare ciò, sempre nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, fai clicca su `Domini`{.action} nel menu di sinistra, dopodiché sul dominio interessato. Infine, vai alla scheda `Server DNS`{.action}.
->
+> Questo step ha lo scopo di verificare che il tuo dominio, attraverso la sua `Zona DNS`{.action}, sia collegato all'hosting del tuo sito.
+> Per maggiori informazioni sulla nozione di DNS, consulta la nostra guida [Modificare una zona DNS OVHcloud](../../domains/web_hosting_modifica_la_tua_zona_dns/#obiettivo).
 
-La verifica può essere effettuata in due punti diversi, a seconda della configurazione utilizzata dal tuo dominio:
+#### 2\.1 Identifica l'indirizzo IP del tuo hosting OVHcloud
 
-- **il tuo dominio non usa la configurazione di OVH**\: in tal caso, è necessario eseguire la verifica (descritta di seguito) dall'interfaccia del fornitore che gestisce il servizio DNS del tuo dominio;
+Per recuperare l'indirizzo IP, clicca su `Hosting` nella colonna di sinistra del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona l'hosting interessato.
 
-- **il tuo dominio utilizza la configurazione di OVH**\: la verifica viene eseguita dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Vai alla scheda `Zona DNS`{.action}, una volta che ti sei posizionato sul dominio interessato. La configurazione DNS viene visualizzata in una tabella, con ogni riga che rappresenta un record DNS specifico. Puoi filtrare il contenuto per tipo di record o per sottodominio.
+![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
-![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
+#### 2\.2 Verifica l'indirizzo IP indicato nella zona DNS del tuo dominio
 
-Dall'interfaccia che gestisce la configurazione del tuo dominio per il quale viene visualizzata la pagina "Sito non installato", assicurati che i record DNS riportati di seguito siano configurati correttamente.
+Verifica che l'indirizzo IP del tuo hosting compaia nella zona DNS attiva del tuo dominio.
 
-|Record|Destinazione|
-|---|---|
-|A|La destinazione deve corrispondere all'indirizzo **IPv4** recuperato in precedenza.|
-|AAAA|La destinazione deve corrispondere all'indirizzo **IPv6** recuperato in precedenza.|
-
-Pertanto, sono possibili due scenari:
+accedi alla sezione `Domini`{.action}, seleziona il tuo dominio e clicca sulla scheda `Zona DNS`{.action}.
 
 |Possibili scenari|Azione da eseguire|
 |---|---|
-|Le destinazioni sono corrette|Ciò indica che la configurazione del tuo dominio è corretta. Se hai modificato la configurazione DNS meno di 24 ore fa, attendi che questo lasso di tempo termini affinché la modifica sia effettiva.|
-|Le destinazioni sono errate|È necessario modificare la configurazione del tuo dominio. Se il dominio utilizza la configurazione di OVH, ti invitiamo a seguire i passaggi descritti nella nostra documentazione ["Modifica di una zona DNS OVH"](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}. Altrimenti, segui le istruzioni descritte nell'interfaccia del tuo fornitore di servizi. Una volta apportata la modifica, è necessario un tempo di propagazione massimo di fino a 24 ore affinché la modifica abbia effetto.|
+|Nella zona DNS, il tuo dominio è associato all'indirizzo IP del tuo hosting tramite un record di tipo A (per IPv4) o AAAA (per IPv6)<br><br>![zona DNS_IP2](images/zonedns_ip2.png){.thumbnail}|Ciò indica che la configurazione del tuo nome di dominio è corretta.<br><br>In seguito alle ultime modifiche dei tuoi DNS, il tuo sito verrà visualizzato entro 48 ore al massimo.<br><br>Riavvia anche i tuoi dispositivi (PC, smartphone, box, ecc...) e svuota la cache del tuo browser.|
+|La tua zona DNS non comporta un record di tipo A o AAAA che colleghi il tuo dominio all'indirizzo IP del tuo hosting. O il record esistente punta su un altro indirizzo IP.|Aggiungi un nuovo record di tipo A o AAAA o correggi il record esistente seguendo [questa guida](../../domains/web_hosting_modifica_la_tua_zona_dns/).|
+|Il tuo dominio non compare nella sezione `Domini`{.action} dello Spazio Cliente.<br><br>o visualizzi la scheda `Zona DNS`{.action} del tuo dominio nel modo seguente :<br><br>![zonedns_ndd_pas_su_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Ciò significa che il tuo dominio non è gestito dallo Spazio Cliente OVHcloud.<br><br>Determina il suo registrar tramite il nostro tool [WHOIS](https://www.ovh.it/supporto/strumenti/check_whois.pl) e i server DNS ai quali è collegato.<br><br>Per visualizzare e modificare la zona DNS in questione, consulta [questa guida](../configurare-un-multisito-su-un-hosting-web/#step-22-aggiungere-un-dominio-esterno).|
+|Nella scheda `Zona DNS`{.action} è possibile visualizzare questa avvertenza :<br><br>![avviso_zonedns_pas_su_srv_Dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Per modificare di conseguenza i server DNS del tuo dominio, consulta [questa guida](../../domains/web_hosting_gestisci_il_tuo_server_dns/).|
 
-A seconda delle azioni eseguite nei passaggi 1 e 2 e tenendo conto dei tempi indicati, la pagina di avviso "Sito non installato" non dovrebbe più essere visualizzata.
+## Per saperne di più <a name="gofurther"></a>
 
-## Per saperne di più 
+[Elenco degli indirizzi IP di cluster e hosting Web](../lista-indirizzi-ip-di-cluster-e-hosting-web/)
 
-[Ospitare più siti su uno stesso hosting - EN](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}.
+Per maggiori informazioni sull'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 
-[Modifica di una zona DNS OVH](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}.
-
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

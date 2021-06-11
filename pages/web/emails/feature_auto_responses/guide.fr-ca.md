@@ -2,78 +2,75 @@
 title: 'Créer un répondeur pour son adresse e-mail'
 legacy_guide_number: 2052
 slug: mise-en-place-repondeur-mail
-excerpt: 'Ce guide vous explique comment mettre en place un répondeur'
+excerpt: 'Découvrez comment mettre en place un répondeur e-mail'
 section: 'Fonctionnalités des adresses e-mail'
 order: 3
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 28/08/2020**
 
-## Généralités
+## Objectif
 
-### Prérequis
-- Avoir accès à votre espace client
-- Disposez d'une offre OVHcloud permettant de créer des e-mails
-- Utiliser les serveurs MX* OVHcloud
+En cas d'absence à votre bureau, vous pouvez mettre en place un répondeur e-mail qui laissera un message aux interlocuteurs souhaitant vous contacter par e-mail.
 
-- Pour plus d'informations sur les MX, voir [ce guide]({legacy}2003){.ref}.
+**Découvrez comment mettre en place un répondeur e-mail.**
 
+## Prérequis
 
-## Création du repondeur
+- Disposer d'une offre MX Plan. Celle-ci est disponible via une offre d’[hébergement web]((https://www.ovh.com/ca/fr/hebergement-web/){.external} ou l'offre MX Plan commandée séparément.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc{.external}.
 
-### Connexion a l'espace client
-- Connectez-vous dans [l'espace
-client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} à l'aide de votre couple identifiant (nic-handle) - mot de passe.
-- Cliquez sur `Connexion`{.action} pour valider l'opération.
+## En pratique
 
+> [!primary]
+>
+> Si votre adresse e-mail est sur une offre [**Exchange**](https://www.ovh.com/ca/fr/emails/hosted-exchange/) ou qu'il n'y a pas de section `Gestion des répondeurs`{.action} dans votre MXplan, vous devrez alors créer le répondeur depuis votre webmail en vous aidant de la documentation [« Mettre en place un répondeur automatique depuis l’interface OWA »](../../microsoft-collaborative-solutions/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/).
 
-![hosting](images/img_3592.jpg){.thumbnail}
+### Création du répondeur
 
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc{.external}. 
 
-### Selection du domaine relie a l'offre mail
-Une fois connecté, cliquez sur la section Emails comme indiqué ci-dessous, puis sélectionnez votre domaine.
+Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}, depuis la colonne à gauche.
 
+Cliquez sur l'onglet `Emails`{.action} en haut, puis sur `Gestion des répondeurs`{.action}.
 
-![hosting](images/img_3600.jpg){.thumbnail}
+Vous serez redirigé vers la fenêtre `Gestion des répondeurs` affichant l'ensemble des répondeurs e-mail en place sur votre offre e-mail.
 
+Cliquez sur `Ajouter un répondeur`{.action}
 
-### Onglet Email
-Pour accéder à la gestion des répondeurs, vous devez vous rendre sur l'onglet "E-mails" (1) puis cliquer sur "Gestion des répondeurs" (2).
+![hosting](images/email_responder01.gif){.thumbnail}
 
+La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations ci-dessous.
 
-![hosting](images/img_3597.jpg){.thumbnail}
+- `Type de répondeur`:
 
+« Associé à une boite e-mail » : à utiliser si cela concerne une adresse e-mail existante sur votre offre e-mail.
+« Libre » : à utiliser dans le cas d'un alias. Il n'est donc pas lié à une adresse existante.
 
-### Menu repondeur
-Vous pouvez ensuite cliquer sur `Ajouter un répondeur`{.action}.
+- `Boîte email` ou `Nom du répondeur`: l'adresse e-mail ou l'alias concerné par le répondeur.
 
+- `Durée du répondeur `:
 
-![hosting](images/img_3598.jpg){.thumbnail}
+« Temporaire » : définissez une date de début et de fin à prendre en compte pour le fonctionnement de votre répondeur (utile si vous partez en congés par exemple).
+« Permanent » : le répondeur fonctionnera tant que vous ne l'aurez pas désactivé.
 
+- `Envoyer une copie ` ou `Garder les messages sur le serveur `: permet de renvoyer les messages reçus pendant votre absence vers l'adresse de votre choix ou de les conserver sur l'adresse e-mail.
 
-### Configuration du repondeur
-Type de répondeur (1) :
+> [!warning]
+> Si vous décochez cette case, les messages reçus pendant votre absence seront automatiquement supprimés.
 
-- " Associé à une boite e-mail " (à utiliser si cela concerne une adresse e-mail existante et non pas un alias).
-- " Libre " (à utiliser dans le cas d'un alias).
-- l'adresse e-mail ou l'alias concerné par le répondeur.
-- " Temporaire " : vous permet de définir une date de début et de fin à prendre en compte pour le fonctionnement de votre répondeur (utile si vous partez en congés par exemple).
-- " Permanent " : le répondeur fonctionnera tant que vous ne l'aurez pas désactivé. Vous permet de conserver une copie du message reçu si l'option est cochée. Dans le cas où vous avez choisi un répondeur " libre ", vous pourrez alors choisir l'adresse e-mail cible de la copie du message reçu.
-- Votre message de répondeur : Il s'agit du message que vos correspondants recevront lorsqu'ils vous enverront un e-mail.
+- `Adresse en copie ` (Seulement en mode libre) : dans le cas d'un alias, sélectionnez l'adresse e-mail qui recevra les e-mails envoyés vers l'alias.
 
-Vous pouvez ensuite cliquer sur "Valider" pour que le répondeur soit mis en place.
+- `Message `: Il s'agit du message que vos correspondants recevront lorsqu'ils vous enverront un e-mail.
 
+Vous pouvez ensuite cliquer sur `Valider`{.action} pour que le répondeur soit mis en place.
 
-![hosting](images/img_3589.jpg){.thumbnail}
+### Modification ou supression du répondeur
 
-Le message suivant apparaîtra pour confirmer que l'ajout du répondeur est bien en cours.
+Lorsque votre répondeur e-mail a été créé, il apparaît dans la liste visible dans la section `Gestion des répondeurs`{.action} de votre offre e-mail. Vous pouvez le supprimer ou le modifier en cliquant sur `...`{.action} à droite de celui-ci.
 
+![hosting](images/email_responder02.png){.thumbnail}
 
-![hosting](images/img_3590.jpg){.thumbnail}
+## Aller plus loin
 
-
-### Visualisation du repondeur
-Vous pourrez ainsi voir votre répondeur mail apparaître dans la liste. Vous pourrez cliquer sur la roue dentée à droite de ce répondeur si vous souhaitez le supprimer ou le modifier.
-
-
-![hosting](images/img_3599.jpg){.thumbnail}
+Échangez avec notre communauté d'utilisateurs sur https://community.ovh.com

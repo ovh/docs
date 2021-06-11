@@ -4,6 +4,7 @@ excerpt: Configurar una dirección IP failover en Debian
 slug: configurar_una_direccion_ip_failover_en_debian
 legacy_guide_number: g2042
 section: Red e IP
+hidden: true
 ---
 
 

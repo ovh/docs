@@ -360,7 +360,7 @@ And apply it to your cluster:
 kubectl apply -f nginx-example.yaml
 ```
 
-> ![primary]
+> [!primary]
 >
 > If you look attentively to the `deployment` part of this manifest, you will see that we have defined a `.spec.strategy.type`. It specifies the strategy used to replace old Pods by new ones, and we have set it to `Recreate`, so all existing Pods are killed before new ones are created.
 >

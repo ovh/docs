@@ -149,4 +149,4 @@ W każdym przypadku warto skontaktować się z działem pomocy technicznej, poda
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

@@ -115,4 +115,4 @@ Każda procedura jest monitorowana za pomocą wiadomości e-mail i konieczna bę
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en)
+Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/)

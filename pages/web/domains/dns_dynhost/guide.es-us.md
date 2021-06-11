@@ -4,6 +4,7 @@ slug: web_hosting_dynhost
 excerpt: 'Cómo configurar un registro DNS dinámico (DynHost) en un dominio de OVHcloud'
 section: 'DNS (servidor y zona)'
 order: 6
+hidden: true
 ---
 
 **Última actualización: 05/05/2020**

@@ -2,8 +2,8 @@
 title: Les erreurs fréquentes de fax virtuels
 slug: les-erreurs-frequentes-de-fax-virtuels
 legacy_guide_number: '16254623'
-space_key: CRFAX
-space_name: Fax
+section: Diagnostic
+order: 1
 ---
 
 ### Préambule {#préambule}

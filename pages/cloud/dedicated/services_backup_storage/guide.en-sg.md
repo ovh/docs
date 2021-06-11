@@ -1,130 +1,138 @@
 ---
 title: Using backup storage on a dedicated server
 slug: using-backup-storage
-excerpt: This guide explains how to enable the Backup Storage functionality and how to use it.
+excerpt: 'Find out how to enable and access your additional storage space'
 section: Storage
 ---
 
-**Last updated 5th January, 2021**
+**Last updated 15th March 2021**
 
 ## Objective
 
-OVHcloud provides backup space for storing your data and configuration files. This space is designed for you to store data securely, and it can be increased up to 10TB. It is also independent of the primary server.
+OVHcloud dedicated servers include additional backup space to store important data and configuration files. This space is scalable, secure and independent of the main server.
 
-**This guide explains how to enable and use this Backup storage space.**
+**This guide explains how to enable and use your storage space.**
 
 > [!primary]
-> This guide is not applicable for US services.
+> We recommend to consult the [product page](https://www.ovhcloud.com/en-sg/bare-metal/backup-storage/) as well for further details about the service.
+>
+> Note that this guide is not applicable for OVHcloud US services.
 >
 
 ## Requirements
 
-* Access to a [dedicated server](https://www.ovh.com/sg/dedicated-servers/){.external}
-* Access to your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
+- a [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
-### Activate Backup storage
+### Activating the backup storage
 
-Log into your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab, and click the `Activate the Backup Storage`{.action} button.
+Log into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Switch to the `Bare Metal Cloud`{.action} section and select the server from **Dedicated Servers** in the left-hand sidebar. On the `Backup storage`{.action} tab, click the `Enable backup storage`{.action} button.
 
-![Activate Backup storage](images/backup-storage-01-edited_2020.png){.thumbnail}
+![Activate Backup storage](images/backup-storage01.png){.thumbnail}
 
+Click the `Confirm`{.action} button in the popup window.
 
-Then click the `Confirm`{.action} button.
+![Activate Backup storage](images/backup-storage02.png){.thumbnail}
 
-![Activate Backup storage](images/backup-storage-02_2020.png){.thumbnail}
+Your backup storage will be configured within a few minutes. A confirmation email will be sent as soon as it is ready.
 
-You will now receive an activation email, and your backup storage will be configured in a few minutes.
+### Managing access control
 
-### Set up access control
+Access to the backup storage is restricted by IP address according to an access control list (ACL). Only IPs linked to your OVHcloud customer account will be able to access the storage, once they are whitelisted in the ACL. The access protocols (FTP, NFS and CIFS) are not authorised by default but have to be selected when adding IP addresses.
 
-Access to your Backup storage is restricted by IP address using an access control list (ACL). By default, all IPs in your account have FTP/FTPS access to the backup storage. The other protocols (NFS and CIFS) are not authorised by default. To authorise them, you will need to create an ACL.
+#### Adding a backup access
 
-#### Add backup access
+Log into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Switch to the `Bare Metal Cloud`{.action} section and select the server from **Dedicated Servers** in the left-hand sidebar. On the `Backup storage`{.action} tab, click on the button `Add an access`{.action}.
 
-Log into your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab, and click the `Add an access button`{.action}.
+![Add backup access](images/backup-storage03.png){.thumbnail}
 
-![Add backup access](images/backup-storage-03-edited_2020.png){.thumbnail}
-
-You will then need to select the IP block that you want to authorise. After selecting the IP block, select the protocol you want to authorise, and then click the `Next`{.action} button.
+You will then need to select the IP block that you want to authorise. After selecting the IP block, select the protocol(s) for the access, and click the `Next`{.action} button.
 
 > [!primary]
 >
-> You can only authorise IP blocks in your OVHcloud account to access the backup storage.
+> Only IP blocks in your OVHcloud customer account can be added to the ACL from your Control Panel.
 >
 
-![Add backup access](images/backup-storage-07-edited_2020.png){.thumbnail}
+![Add backup access](images/backup-storage04.png){.thumbnail}
 
-Now confirm your options and click the `Finish`{.action} button.
+Confirm by clicking on `Finish`{.action}. You will now be able to access your server's backup storage from the IP block you have selected.
 
-![Add backup access](images/backup-storage-08-edited_2020.png){.thumbnail}
+#### Modifying or deleting a backup access
 
-You will now be able to access your server's backup storage from the IP block you selected.
+Once the service is enabled, your ACL table will be displayed in the `Backup storage`{.action} tab. Click on `...`{.action} in the row of an IP block to open the access menu.
 
-#### Modifying Access
+![Add backup access](images/backup-storage05.png){.thumbnail}
 
-To change the protocols for an authorised IP block, click the `···`{.action} button and click `Modify the access`{.action} for the IP block you want to modify, and then select/deselect the desired protocols. When you have finished, click the `Confirm`{.action} button to save your changes.
+To change the protocols for an authorised IP block, click on `Modify the access`{.action} and select/deselect protocols in the popup window. Save the changes by clicking on `Confirm`{.action}.
 
-![Modifying access](images/backup-storage-13-edited_2020.png){.thumbnail}
+To revoke authorisation for an IP block, click on `Delete the access`{.action} and then on `Confirm`{.action} in the popup window.
 
-#### Deleting Access
+#### Accessing the backup storage from an IP address outside of your account <a name="accessbackup"></a>
 
-To revoke authorisation for an IP block, click the `···`{.action} button and select `Delete the access`{.action} can icon that appears at the end of the line.
+Access to the storage space of your dedicated server is restricted to IP addresses linked to your OVHcloud customer acccount.
 
-![Modifying access](images/backup-storage-14-edited_2020.png){.thumbnail}
+In order to add other IP addresses from which to access, you can use the OVHcloud API. This will allow you to retrieve your backup data from a different service.
 
-And then click to confirm.
+> [!warning]
+> Only OVHcloud IP addresses can be authorised.
+>
 
-![Modifying access](images/backup-storage-15-edited_2020.png){.thumbnail}
+Log in to [api.ovh.com](https://ca.api.ovh.com/console/) and use the following call:
 
-Access to the backup storage will now be revoked for that IP block.
+> [!api]
+>
+> @api {POST} /dedicated/server/{serviceName}/features/backupFTP/access
+>
 
-### Reset your password
+Fill in the fields as follows:
 
-Log into your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Forgotten your password`{.action} button.
+- `serviceName`: The service name of your server
+- `cifs`: check if necessary
+- `ftp`: check if necessary
+- `ipBlock`: enter the IP address that will have access in the form `1.2.3.4/32`
+- `nfs`: check if necessary
 
-![Reset your password](images/backup-storage-04-edited_2020.png){.thumbnail}
+![apiacladdress](images/aclapi01.png){.thumbnail}
 
-Then click the `Confirm`{.action} button.
+To verify that your IP address is authorised, use the following call:
 
-![Reset your password](images/backup-storage-09_2020.png){.thumbnail}
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/features/backupFTP/access
+>
 
-A password recover email will now be sent to the email address registered to your admin account. Please follow the instructions in the email to reset your password.
+![apiacladdress](images/aclapi02.png){.thumbnail}
 
-### Delete the Backup Storage
+### Resetting your password
 
-Log into your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Delete the Backup Storage button`{.action}
+Log into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Switch to the `Bare Metal Cloud`{.action} section and select the server from **Dedicated Servers** in the left-hand sidebar. On the `Backup storage`{.action} tab, click on the button `Forgotten your password?`{.action}.
 
-![Delete the Backup storage](images/backup-storage-05-edited_2020.png){.thumbnail}
+If you click on `Confirm`{.action} in the popup window, a password recovery email will be sent to the email address of your admin contact. Follow the instructions in the email to reset your password.
 
-Click `Confirm`{.action} on the warning message to proceed with the deletion.
+### Deleting the backup storage
 
-![Delete the Backup storage](images/backup-storage-10_2020.png){.thumbnail}
+Log into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Switch to the `Bare Metal Cloud`{.action} section and select the server from **Dedicated Servers** in the left-hand sidebar. On the `Backup storage`{.action} tab, click on the button `Delete backup storage`{.action}.
 
-The Backup storage will now be deleted after a few minutes.
+If you click on `Confirm`{.action} in the popup window, the backup storage will be disabled within a few minutes. All data on the storage space will be deleted.
 
-### Order disk space
+### Ordering more disk space
 
-Log into your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Order disk space`{.action} button.
+Log into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Switch to the `Bare Metal Cloud`{.action} section and select the server from **Dedicated Servers** in the left-hand sidebar. On the `Backup storage`{.action} tab, click on the button `Order disk space`{.action}.
 
-![Order disk space](images/backup-storage-06-edited_2020.png){.thumbnail}
+![Add backup access](images/backup-storage06.png){.thumbnail}
 
-Select the storage capacity you would like and then click the `Next`{.action} button.
+Select the additional storage capacity you would like to order and then click on the `Next`{.action} button.
 
-![Order disk space](images/backup-storage-11-edited_2020.png){.thumbnail}
-
-Tick the box to confirm that you have read an understood the terms and conditions and then click the `Confirm`{.action} button.
-
-![Order disk space](images/backup-storage-12-edited_2020.png){.thumbnail}
-
-An order will now be created. Once your payment has been processed, you will receive your additional storage space.
+Take note of the pricing and contract information in the next window and click on `Confirm`{.action}.
+An order will be created and once your payment has been processed, you will be notified about the successful expansion of the space.
 
 ### Using the backup storage
 
 > [!primary]
 >
-> The Backup storage service does not automatically back up your data, it only provides the space and the access protocols. It is your responsibility to implement an adequate backup strategy using the tools of your choice.
+> The backup storage service does not automatically back up your data, it only provides the space and the access protocols. It is your responsibility to implement an adequate backup strategy using the tools of your choice.
 >
 
 #### FTP/FTPS

@@ -45,4 +45,4 @@ Sobald Sie Ihre Wahl bestätigt haben, enthält Ihre nächste Rechnung die stün
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en/).

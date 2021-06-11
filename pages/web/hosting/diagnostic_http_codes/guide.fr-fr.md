@@ -37,7 +37,7 @@ Pour une lecture plus facile, nous allons scinder ces catégories en deux sectio
 - 404 : Document introuvable
 - 414 : URL trop longue
 - 415 : Le format du média n'est pas supporté
-- 500 : Erreur interne du serveur ( []({legacy}1987){.ref} )
+- 500 : [Erreur interne du serveur](../erreur-500-internal-server-error/)
 - 501 : Action non gérée par le serveur
 - 503 : Indisponiblité temporaire du serveur
 - 505 : Version du protocole non supporté par le serveur

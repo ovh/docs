@@ -14,7 +14,7 @@ Ce guide vous explique les différentes étapes de la création, du lancement et
 
 
 ### Prérequis
-- [Créer un accès à Horizon]({legacy}1773){.ref}
+- [Créer un accès à Horizon](../creer-un-acces-a-horizon/)
 - Se rendre dans le menu Images de l'interface OpenStack Horizon
 
 

@@ -36,7 +36,7 @@ Then, download the `kubectl` configuration file:
 
 ![Configuring default settings for kubectl](images/kubernetes-quickstart-02.png){.thumbnail}
 
-If you want to use this configuration file by default in `kubectl`, you can save it with the filename `kube-config` in the `$HOME/.kube` directory. Alternatively, you can place it in your working directory, with either the `KUBECONFIG` environment variable or the `--kubeconfig` flag. 
+If you want to use this configuration file by default in `kubectl`, you can save it with the filename `config` in the `$HOME/.kube` directory. Alternatively, you can place it in your working directory, with either the `KUBECONFIG` environment variable or the `--kubeconfig` flag. 
 
 In this example, we are using the environment variable method.
 
@@ -96,4 +96,4 @@ kubectl cluster-info dump
 
 To deploy your first application on your Kubernetes cluster, we suggest you refer to our guide to [Deploying an application](../deploying-an-application/).
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Join our [community of users](https://community.ovh.com/en/).

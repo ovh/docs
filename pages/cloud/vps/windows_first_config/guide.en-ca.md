@@ -1,58 +1,60 @@
 ---
-title: 'Configuring your Windows server for the first time'
+title: 'Configuring a new Windows Server installation'
 slug: windows-first-config
-excerpt: 'This guide will show you which settings need to be changed to re-enable remote desktop connection and ICMP'
+excerpt: 'Find out how to enable Remote Desktop and ICMP'
 section: 'Getting started'
 ---
 
-**Last updated 2019/06/15**
+**Last updated 16th February 2021**
 
 ## Objective
 
-When you install Windows Server on a [VPS](https://www.ovhcloud.com/en-ca/vps/){.external}, the connection to your remote desktop can sometimes be disabled, as can the ICMP protocol response.
+After a fresh installation of a Windows Server operating system on a VPS, remote access and the ICMP (Internet Control Message Protocol) response can sometimes be disabled.
 
-**This guide will show you which settings need to be changed to re-enable remote desktop connection and ICMP.**
+**This guide explains how to set up Windows in order to re-enable ICMP and allow connections via Remote Desktop Protocol.**
 
 ## Requirements
 
-* a [VPS](https://www.ovhcloud.com/en-ca/vps/){.external} with Windows Server installed
-* access to the OVH [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
+- a Windows [VPS](https://www.ovhcloud.com/en-ca/vps/) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
-### Step 1: Log in to the KVM
+### Step 1: Log in with KVM
 
-To access the KVM of your VPS, please follow the [VPS KVM guide](https://docs.ovh.com/ca/en/vps/use-kvm-for-vps/){.external}
+To access the KVM console of your VPS, please follow the [VPS KVM guide](../use-kvm-for-vps/).
 
-### Step 2: Configure Windows settings
+### Step 2: Finish the Windows setup
 
-In the first setup screen, you will need to configure the settings for your **Country/region**, **Language**, and **Keyboard layout**. When you have done this, click `Next`{.action}.
+When the KVM session is established, the initial setup screens will be displayed. Here you need to configure your **country/region**, the **Windows language**, and your **keyboard layout**. Once you have done this, click `Next`{.action}.
 
 ![KVM](images/setup-03.png){.thumbnail}
 
-Next, choose a password for your administrator account. Enter it twice, then click `Finish`{.action}.
+In the second screen, enter a password for your Administrator account and confirm it, then click `Finish`{.action}.
 
 ![KVM](images/setup-04.png){.thumbnail}
 
-Windows will now apply your settings. When this is done, you will see the following screen. At this point you will need to click the `Send CtrlAltDel`{.action} button to sign in.
+Windows will apply your settings and then display the Login screen. Click the `Send CtrlAltDel`{.action} button in the top right corner to sign in.
 
 ![KVM](images/setup-05.png){.thumbnail}
 
-On the sign-in screen, enter the password you created for your Administrator account and hit the `Enter`{.action} key on your keyboard.
+Enter the password you have previously created for your Administrator account and click on the Arrow button.
 
 ![KVM](images/setup-06.png){.thumbnail}
 
+This completes the initial setup. Once logged in, you need to change the appropriate Windows Firewall settings.
+
 ### Step 3: Modify Windows Firewall
 
-Once the setup is complete and you have signed in, go to `Administrative Tools`{.action}, then `Windows Firewall with advanced security`{.action}.
+Open the `Administrative Tools`{.action} of the `System and Security`{.action} control panel and double-click on `Windows Firewall with Advanced Security`{.action}.
 
 ![Admin](images/windows4.png){.thumbnail}
 
-You will then need to enable the ICMP and the remote desktop connection rules *(right-click -> Enable rule)*.
+Here you can enable the respective `ICMP` and `Remote Desktop` rules (right-click on the rule and select `Enable rule`{.action} in the context menu).
 
 ![Enabled](images/windows5.png){.thumbnail}
 
-Your server will now be set up for remote desktop connections.
+Your server should now be responding to requests using these protocols.
 
 ## Go further
 

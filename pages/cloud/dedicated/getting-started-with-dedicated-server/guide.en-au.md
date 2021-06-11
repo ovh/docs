@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 16th February 2021**
+**Last updated 27th May 2021**
 
 ## Objective
 
@@ -113,7 +113,7 @@ ssh root@IPv4_of_your_server
 **Example with a pre-configured user:**
 
 ```sh
-ssh ubuntu@your_server's_reference_name
+ssh ubuntu@reference_name_of_your_server
 ```
 
 You can learn more about SSH in [this guide](../ssh-introduction/).
@@ -122,9 +122,37 @@ You can learn more about SSH in [this guide](../ssh-introduction/).
 
 Once the installation is completed, you will receive an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). After logging in, Windows will guide you through an intial setup.
 
+### Restarting your dedicated server <a name="reboot"></a>
+
+A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:
+
+```sh
+reboot
+```
+
+However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). From the `General information`{.action} tab, click on `...`{.action} next to "Status" in the **Service status** box, then click `Restart`{.action} and `Confirm`{.action} the action in the popup window.
+
+![Rebooting](images/rebooting-your-server.png){.thumbnail}
+
 ### Securing your dedicated server
 
 As explained in the “Objective” section of this guide, you are the administrator of your dedicated server. As such, you are responsible for your data and its security. You can learn more about securing your server in [this guide](../securing-a-dedicated-server/).
+
+### OVHcloud Monitoring 
+
+You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) (section **Service status**).
+
+![Monitoring](images/monitoring-your-server.png){.thumbnail}
+
+- If **Monitoring** is set to `Enabled`, you will notified via email every time the server is behaving in an unexpected way. You can disable these messages via the `...`{.action} button.
+
+- If you activate the option **On-site interventions**, you consent to supervision by data centre technicians who will check the hardware in case your server stops responding to pings.
+
+> [!warning]
+> If on-site interventions are `On`{.action}, make sure to **disable** the option before you perform relevant actions on your server (hardware tests, reboots, etc.). You will still receive automatic emails as long as "Monitoring" is active.
+>
+
+You can find more information about OVHcloud Monitoring in [this guide](../monitoring-ip-ovh/).
 
 ### Network configuration
 
@@ -157,6 +185,12 @@ Please refer to the [rescue mode guide](../ovh-rescue/).
 OVHcloud deploys all dedicated servers with an IPMI (Intelligent Platform Management Interface) console which runs in your browser or from a Java applet, and enables you to connect directly to your server even if it has no network connection. This makes it a useful tool for troubleshooting issues that may have taken your server offline.
 
 For more information, please refer to our guide: [Using the IPMI with dedicated servers](../use-ipmi-dedicated-servers).
+
+### Backup storage
+
+OVHcloud dedicated servers have an access-controlled storage space as a gratuitous service option. It is best used as a complementary backup option in case the server itself suffers data loss.
+
+To activate and use the backup storage, please refer to [this guide](../using-backup-storage/).
 
 ## Go further
 

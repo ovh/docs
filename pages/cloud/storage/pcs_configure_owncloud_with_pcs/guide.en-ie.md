@@ -17,7 +17,7 @@ This guide shows you how to configure your ownCloud with object storage
 ## Prerequisites
 
 - Download the OpenRC file from the OVH Control Panel or Horizon
-- [Add dedicated storage space]({legacy}1790) to ownCloud
+- [Add dedicated storage space](https://docs.ovh.com/ie/en/public-cloud/add_storage_space/) to ownCloud
 
 
 

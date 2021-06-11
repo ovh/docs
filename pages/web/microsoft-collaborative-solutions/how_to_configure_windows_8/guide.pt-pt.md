@@ -46,7 +46,7 @@ Nesta nova interface, preencha os diferentes campos necessários.
 
 "Endereço de email": o endereço de email Exchange completo.
 
-"Mot de passe": A palavra-passe definida no seu [Espaço Cliente]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)) para esta conta Exchange.
+"Mot de passe": A palavra-passe definida no seu [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)) para esta conta Exchange.
 
 Clique em "Ligação" para continuar.
 
@@ -66,7 +66,7 @@ Para as ofertas Private, deverá introduzir o nome que escolheu para o servidor 
 
 "Nome de utilizador": deve introduzir o seu endereço de email completo.
 
-"Palavra-passe": A palavra-passe definida no seu [Espaço Cliente]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)) par esta conta Exchange.
+"Palavra-passe": A palavra-passe definida no seu [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)) par esta conta Exchange.
 
 Clique em "Ligação" para continuar.
 
@@ -127,7 +127,7 @@ Nesta nova interface, preencha os diferentes campos necessários.
 
 "Endereço de email": o endereço de email Exchange completo.
 
-"Mot de passe": A palavra-passe definida no seu [Espaço Cliente]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)) para esta conta Exchange.
+"Mot de passe": A palavra-passe definida no seu [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)) para esta conta Exchange.
 
 Clique em "Ligação" para continuar.
 
@@ -142,7 +142,7 @@ Nesta nova interface, preencha os diferentes campos.
 
 "Nome de utilizador": O seu endereço de email Exchange completo.
 
-"palavra-passe" : A palavra-passe definida no seu [Espaço Cliente]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)) para esta conta Exchange.
+"palavra-passe" : A palavra-passe definida no seu [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)) para esta conta Exchange.
 
 "Servidor de entrada (IMAP)": No nosso exemplo a conta Exchange é uma conta do tipo Hosted e o endereço de email é, portanto, ex.mail.ovh.net
 Para uma oferta Private deverá introduzir o nome do servidor que escolheu durante a instalação do serviço Exchange 2013.

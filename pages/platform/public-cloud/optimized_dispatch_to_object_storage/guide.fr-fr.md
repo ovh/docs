@@ -12,8 +12,8 @@ Lors d'envoi de fichiers volumineux vers l'Object Storage (vidéos/images), il e
 Ce guide vous explique comment améliorer la vitesse de vos envois vers l'Object Storage grâce à cette fonctionnalité.
 
 ### Prérequis
-- [Préparer l'environnement pour utiliser l'API OpenStack]({legacy}1851){.ref} avec le client python-swiftclient
-- [Charger les variables d'environnement OpenStack]({legacy}1852){.ref}
+- [Préparer l'environnement pour utiliser l'API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/) avec le client python-swiftclient
+- [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
 
 
 ## Optimisation d'envoi

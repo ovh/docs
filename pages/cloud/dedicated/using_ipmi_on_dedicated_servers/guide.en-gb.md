@@ -5,7 +5,7 @@ excerpt: 'With the IPMI, you can log in to your server without having to use any
 section: 'Getting started'
 ---
 
-**Last updated 13th October 2020**
+**Last updated 18th March 2021**
 
 ## Objective
 
@@ -17,12 +17,13 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
-
 ## Instructions
 
-You can access the IPMI using two different methods: the Java applet (recommended) or the browser (Serial over LAN).
+You can access the IPMI using several different methods, the Java applet (recommended), the KVM tool from a web browser (recommended but only available for the latest servers) or the browser (Serial over LAN).
 
-### Access via the Java applet.
+To enable one of these methods, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Bare Metal Cloud`{.action} section, click on `Dedicated Servers`{.action} in the left-hand menu, select your server and click the `IPMI`{.action} tab.
+
+### Access via the Java applet <a name="applet-java"></a>
 
 You will need to ensure that Java is installed on your desktop for the Java applet to work. If you do not have Java installed, go to the [official page](https://www.java.com/en/download/){.external} to do so.
 
@@ -40,7 +41,21 @@ You will then land on the login page, where you will be prompted to enter your `
 
 You can now manage your server.
 
-### Access via your browser, using Serial over LAN (SoL).
+### Access via the KVM tool from a web browser (only for the latest servers)
+
+In the `IPMI`{.action} section of the OVHcloud Control Panel, click on `Via your web browser (KVM)`{.action}:
+
+![IPMI browser](images/KVM-web-browser01.png){.thumbnail}
+
+Activation takes a few seconds. You will receive a message confirming that the IPMI connection is available.
+
+![IPMI browser](images/KVM-web-browser02.png){.thumbnail}
+
+Then click on `Access the console (KVM)`{.action} to open the console in your web browser.
+
+![IPMI browser](images/KVM-web-browser03b.png){.thumbnail}
+
+### Access via your browser, using Serial over LAN (SoL)
 
 Although we would recommend that you log in via the Java applet, you can also access the IPMI using Serial over LAN. To do so, click on `From your browser`{.action} in the `IPMI`{.action} section of the OVHcloud Control Panel:
 
@@ -51,7 +66,7 @@ Although we would recommend that you log in via the Java applet, you can also ac
 > It may take several minutes to access the IPMI using SoL, which is why we would recommend using the applet instead.
 >
 
-### Test and reboot the IPMI.
+### Test and reboot the IPMI
 
 Your IPMI may stop responding. If you cannot access it, you can test it first by clicking on `Test the IPMI`{.action}, and checking the result of the diagnostic:
 
@@ -63,60 +78,64 @@ If everything appears to be normal, as per our example, you may be experiencing 
 
 It will take several minutes for the IPMI to reboot.
 
-### Installing an OS Utilizing IPMI v1.
+### Installing an OS using IPMI v1
 
-[!warning] OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
+> [!warning]
+> OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
 >
-To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then, click **Device** from the menu bar and select **Redirect ISO** from the drop-down menu.
->
+
+To begin, open [IPMI in a Java applet](./#applet-java) from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then, click `Device`{.action} from the menu bar and select `Redirect ISO`{.action} from the drop-down menu.
+
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
->
-Next, select the ISO you wish to use from your local computer's file system. Once you have selected your ISO, press the **Ctrl Alt Del** button in the top-right corner of the screen to reboot the server. Press the appropriate `F` key to access the boot options.
 
-[!warning] Note: You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the **Keyboard** option from the menu bar at the top of the window. Then, select **Soft Keyboard** from the dropdown menu and click **Show**.
+Next, select the ISO you wish to use from your local computer's file system. Once you have selected your ISO, press the `Ctrl Alt Del`{.action} button in the top-right corner of the screen to reboot the server. Press the appropriate `F` key to access the boot options.
 
+> [!primary]
+> You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the `Keyboard`{.action} option from the menu bar at the top of the window. Then, select `Soft Keyboard` from the dropdown menu and click `Show`{.action}.
 >
+
 Select the **UEFI Virtual CDROM 1.00** option from the boot menu to start the server from the ISO attached previously.
->
+
 ![UEFI_Virt](images/UEFIVirt.jpg){.thumbnail}
->
-Complete the steps required to install the operating system. Do not forget to remove the ISO from the **Redirect ISO** option.
->
+
+Complete the steps required to install the operating system. Do not forget to remove the ISO from the "Redirect ISO" option.
 
 ### Installing an OS Utilizing IPMI v2
 
-[!warning] OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
+> [!warning]
+> OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
 >
-To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then, click **Virtual Media** and select **Virtual Storage**.
->
+
+To begin, open [IPMI in a Java applet](./#applet-java) from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then, click `Virtual Media`{.action} and select `Virtual Storage`{.action}.
+
 ![Virtual_Storage](images/virtual_storage.png){.thumbnail}
->
-From the new screen, select **ISO File** from the **Logical Drive Type** drop-down. Next, click **Open Image** and navigate to your ISO file. Finally, click **Plug in** and **OK** to finish.
->
+
+From the new screen, select `ISO File` from the "Logical Drive Type" drop-down menu. Next, click `Open Image`{.action} and navigate to your ISO file. Finally, click `Plug-in`{.action} and `OK`{.action} to finish.
+
 ![ISO_file](images/iso_file.png){.thumbnail}
->
-In order to be able to boot from our ISO file, we need to access the BIOS and switch our boot options. To do so, select **Power Control** and click **Set Power Reset**.
->
+
+In order to be able to boot from our ISO file, we need to access the BIOS and switch our boot options. To do so, select `Power Control`{.action} and click `Set Power Reset`{.action}.
+
 ![Power_Reserver](images/power_reset.png){.thumbnail}
 
-> [!warning]
+> [!primary]
 >
-> Note: You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the **Virtual Media** option from the menu bar at the top of the window. Then, select **Virtual Keyboard** from the drop-down menu.
+> You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the `Virtual Media`{.action} option from the menu bar at the top of the window. Then, select `Virtual Keyboard`{.action} from the drop-down menu.
 >
-During the bootup process, press the `DEL` key when prompted to access the BIOS. You may also press the `F11` key and navigate to the BIOS by selecting the option **Enter Setup**.
->
+
+During the bootup process, press the `DEL` key when prompted to access the BIOS. You may also press the `F11` key and navigate to the BIOS by selecting the option `Enter Setup`{.action}.
+
 ![Boot_Menu](images/boot_menu.png){.thumbnail}
->
-In the BIOS navigate to the **Boot** tab and change the **UEFI Boot Order #1** to **UEFI USB CD/DVD:UEFI: ATEN Virtual CDROM YSOJ**.
->
+
+In the BIOS navigate to the `Boot`{.action} tab and change the `UEFI Boot Order #1` to `UEFI USB CD/DVD:UEFI: CDROM virtual ATEN YSOJ`.
+
 ![Bios](images/bios.png){.thumbnail}
->
+
 Lastly, press the `F4` key to save your changes and restart the server.
->
 
 ## Conclusion
 
-IPMI is an important tool for an experienced server administrator. Whether you need to access the BIOS, install a custom OS, or just access your server directly from the OVHcloud Control Panel, IPMI will allow you to accomplish your most important tasks.
+IPMI is an important tool for an experienced server administrator. If you need to access the BIOS, install a custom OS, or just access your server directly from the OVHcloud Control Panel, IPMI will allow you to accomplish your most important tasks.
 
 ## Go further
 

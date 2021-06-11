@@ -177,7 +177,7 @@ En este caso, ha alcanzado el número total de conexiones simultáneas autorizad
 ### Importar un dump (copia de seguridad)
 ¿Cómo importar el backup de mi base de datos MySQL? ¿Cuáles son las distintas formas de hacerlo?
 
-Si desea más información sobre cómo importar una base de datos MySQL, consulte nuestra [guía](..//web_hosting_importacion_de_una_base_de_datos_mysql/){.external}.
+Si desea más información sobre cómo importar una base de datos MySQL, consulte nuestra [guía](../web_hosting_importacion_de_una_base_de_datos_mysql/){.external}.
 
 
 ### Exportar una base de datos

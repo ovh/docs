@@ -45,7 +45,7 @@ Fill in the following fields in the new window:
 
 "Email address": your full Exchange 2013 email address.
 
-"Password": your Exchange 2013 account password as defined in the [Web Control Panel]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)).
+"Password": your Exchange 2013 account password as defined in the [Web Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)).
 
 Click on "Connect" to continue.
 
@@ -63,7 +63,7 @@ Fill in the following fields in the new window:
 
 "Email username": your full email address.
 
-"Password": the Exchange 2013 account password you set up in the [Web Control Panel]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)).
+"Password": the Exchange 2013 account password you set up in the [Web Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)).
 
 Click on "Connect" to continue.
 
@@ -123,7 +123,7 @@ Fill in the following fields in the new window:
 
 "Email address": your full Exchange 2013 email address.
 
-"Password": your Exchange 2013 account password as defined in the [Web Control Panel]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)).
+"Password": your Exchange 2013 account password as defined in the [Web Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)).
 
 Click on "Connect" to continue.
 
@@ -137,7 +137,7 @@ blue]"Email address": your full Exchange 2013 email address.
 
 "Username": your full email address.
 
-"Password": your Exchange 2013 account password as defined in the [Web Control Panel]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)).
+"Password": your Exchange 2013 account password as defined in the [Web Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)).
 
 "Incoming server (IMAP)": enter the address of your Exchange 2013 server. In our example, the address is ex.mail.ovh.net. For Private Exchange, enter the server name chosen at the time of installation.
 The "Port" number must be 993.

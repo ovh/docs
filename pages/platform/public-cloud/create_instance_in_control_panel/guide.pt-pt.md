@@ -5,7 +5,7 @@ slug: criar_uma_instancia_a_partir_do_espaco_cliente_ovh
 legacy_guide_number: g1775
 ---
 
-**Última atualização a 03 de Dezembro de 2019**
+**Última atualização a 30/03/2021**
 
 ## Sumário
 
@@ -31,22 +31,24 @@ Depois de selecionar o projeto correto, clique no botão `Instances`{.action} na
 
 Em seguida, clique em `Create an instance.`{.action} Irá passar ao menu seguinte, onde poderá selecionar a instância que pretende criar.
 
-![create_instance1](images/create_instance1.png){.thumbnail}
+![create_instance1](images/create_instance1-2021.png){.thumbnail}
 
 A seguinte tabela explica sucintamente as diferenças entre os tipos de instâncias:
 
-| Tipo de Servidor | Recursos Assegurados | Modo de utilização |
-| :---         |     :---:      |          ---: |
-| Utilização Geral   | ✓     | Servidores de desenvolvimento, aplicações web ou comerciais    |
+| Tipo de Servidor | Recursos Assegurados | Notas de Uso |
+| :---         |     :---:      |          :--- |
+| Propósito Genérico   | ✓     | Servidores de desenvolvimento, aplicações web ou comerciais    |
 | CPU     | ✓       | Codificação de vídeo ou outra computação de elevado desempenho      |
 | RAM   | ✓     | Bases de dados, análise e cálculos in-memory    |
-| Recursos Partilhados    | -       | Ambientes de teste e de desenvolvimento      |
+| GPU     | ✓       | Cálculo acelerado para aplicações especializadas (rendering, Big Data, deep learning, etc.)       |
+| Sandbox    | -       | Alojado em recursos partilhados para testes e ambientes de desenvolvimento      |
+| Discovery    | -       | Alojado em recursos partilhados para testes e ambientes de desenvolvimento      |
+| IOPS   | ✓     | Otimizado para transferências de dados de disco    |
 
 > [!primary]
 >
 Inicialmente, estará limitado a 20 instâncias, 20 vCores e 40GB de RAM em qualquer projeto. Poderá solicitar um aumento do limite de recursos [enviando um ticket](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} para nossa equipa de Apoio ao Cliente.
 >
-
 
 Siga o menu para selecionar a região em que pretende que a sua instância public cloud fique localizada. A terceira opção é onde irá selecionar o seu sistema operativo.
 
@@ -72,7 +74,6 @@ Por fim, escolha se prefere faturação mensal ou à hora.
 >
 >Se optar pela faturação à hora, continuará a ser cobrado enquanto a instância existir, independentemente de a instância estar a ser utilizada ou não.
 >
-
 
 Depois de confirmar que toda as informações introduzidas estão corretas, clique no botão `Create an instance`{.action} para concluir a criação da sua nova instância. A sua instância pode demorar alguns minutos a provisionar.
 

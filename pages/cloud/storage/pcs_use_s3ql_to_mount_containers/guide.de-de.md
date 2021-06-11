@@ -20,7 +20,7 @@ In dieser Hilfe erfahren Sie, wie Sie einen Object Container als dateisystem mou
 ## Voraussetzungen
 
 - [Erstellung eines Zugangs zu Horizon]({legacy}1773)
-- [Hinzufügen von Storage-Bereichen]({legacy}1790)
+- [Hinzufügen von Storage-Bereichen](https://docs.ovh.com/de/public-cloud/hinzufugen_von_storage-bereichen/)
 
 
 
@@ -64,7 +64,7 @@ admin@serveur1:~$ sudo chmod 600 s3qlcredentials.txt
 - Object Container formatieren:
 
 ```
-admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL
+admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME
 ```
 
 
@@ -86,7 +86,7 @@ admin@serveur1:~$ sudo mkdir /mnt/container
 - Mounten des Object Containers
 
 ```
-admin@serveur1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL /mnt/container/
+admin@serveur1:~$ sudo mount.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME /mnt/container/
 ```
 
 
@@ -102,7 +102,7 @@ tmpfs 393M 5.2M 388M 2% /run
 tmpfs 982M 0 982M 0% /dev/shm
 tmpfs 5.0M 0 5.0M 0% /run/lock
 tmpfs 982M 0 982M 0% /sys/fs/cgroup
-swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
+swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME 1.0T 0 1.0T 0% /mnt/container
 ```
 
 

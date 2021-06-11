@@ -17,10 +17,10 @@ Make sure that you have your nic-handle and password, so that you can log in to 
 
 
 - Retrieve your FTP ID and password so that you can connect to the server.
-There is a guide showing you how to get your FTP details:[]({legacy}1374)
+There is a guide showing you [how to get your FTP details](../modify-ftp-user-password/).
 
 - You also need to have your SQL database ID and password so you can log on to the database.
-There is a guide showing you how to get your SQL credentials: []({legacy}1374)
+There is a guide showing you [how to get your SQL credentials](../getting-started-with-private-sql/#create-a-database)
 
 
 ![](images/img_3158.jpg){.thumbnail}
@@ -57,7 +57,7 @@ The target folder will be called "PrestaShop"
 ## Log on to the web hosting package via FTP
 To get the WordPress files in to your hosting package, you first have to log on. 
 
-Follow this guide on connecting to a hosting package in FTP:[]({legacy}1374)
+Follow this guide on [connecting to a hosting package in FTP](../log-in-to-storage-ftp-web-hosting/).
 
 ![](images/img_3161.jpg){.thumbnail}
 
@@ -210,8 +210,6 @@ A look at the PrestaShop administration panel.
 
 ## Useful information
 OVH support is not authorised to answer questions about PrestaShop configuration.
-
-However, there is a user guide available: []({legacy}2053).
 
 Please consult the forum dedicated to PrestaShop
 

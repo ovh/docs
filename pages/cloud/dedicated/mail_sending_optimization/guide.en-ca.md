@@ -41,7 +41,7 @@ If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Publi
 
 For further information on the SPF record, refer to the following page: <http://www.open-spf.org/>.
 
-You can go even further by configuring the SPF record of a specific domain, or by specifying an IPV6 address. You can find out how to do this in our guide to [adding an SPF record](../../domains/web_hosting_the_spf_record/).
+You can go even further by configuring the SPF record of a specific domain, or by specifying an IPv6 address. You can find out how to do this in our guide to [adding an SPF record](../../domains/web_hosting_the_spf_record/).
 
 ### Configure the DKIM record.
 

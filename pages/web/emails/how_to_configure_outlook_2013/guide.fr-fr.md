@@ -7,7 +7,7 @@ section: Configuration sur ordinateur
 hidden: true
 ---
 
-[Cliquez ici]({legacy}1474){.ref} pour retrouver nos différents guides de configuration e-mail.
+[Cliquez ici](../) pour retrouver nos différents guides de configuration e-mail.
 
 
 > [!warning]

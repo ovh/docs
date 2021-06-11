@@ -222,4 +222,4 @@ def main():
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.conm/en/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.con/en/>.

@@ -174,7 +174,7 @@ Reportez-vous aux indications ci-dessous pour savoir où effectuer les manipulat
 
 |Configuration DNS utilisée|Où réaliser les manipulations ?|
 |---|---|
-|OVH|Dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, positionné dans la section `Domaines`{.action} sur le nom de domaine concerné. Depuis l'onglet `Zone DNS`{.action}, vérifiez et modifiez les informations nécessaires. Vous pouvez vous aider de notre documentation [« Éditer une zone DNS OVH »](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external} si nécessaire.|
+|OVH|Dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, positionné dans la section `Noms de domaine`{.action} sur le nom de domaine concerné. Depuis l'onglet `Zone DNS`{.action}, vérifiez et modifiez les informations nécessaires. Vous pouvez vous aider de notre documentation [« Éditer une zone DNS OVH »](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external} si nécessaire.|
 |Autre|Depuis l'interface du prestataire gérant la configuration DNS de votre nom de domaine. Nous vous invitons à prendre contact avec ce dernier si vous éprouvez des difficultés pour réaliser les manipulations.|
 
 Une fois la configuration DNS de votre nom de domaine modifiée, un temps de propagation de 24 heures maximum est nécessaire afin que les modifications soient effectives. Si vous avez ajouté plusieurs noms de domaine à votre hébergement Cloud Web en tant que Multisite, vous devrez réaliser ces deux manipulations pour chacun d'entre eux. 

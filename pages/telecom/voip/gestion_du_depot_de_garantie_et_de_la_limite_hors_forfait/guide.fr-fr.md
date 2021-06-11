@@ -1,15 +1,16 @@
 ---
-title: 'Gestion du dépôt de garantie et de la limite hors forfait'
+title: 'Gestion du dépôt de garantie et de la limite hors-forfait'
 slug: gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait
-excerpt: 'Découvrez comment gérer les consommations hors forfait de vos services VoIP OVHcloud'
+excerpt: 'Découvrez comment gérer les consommations hors-forfait de vos services VoIP OVHcloud'
 legacy_guide_number: '7536699'
 section: Administratif
 ---
 
-**Dernière mise à jour le 09/03/2020**
+**Dernière mise à jour le 14/12/2020**
 
 ## Objectif
-Vos lignes téléphoniques OVHcloud appartiennent à un ou plusieurs groupes de téléphonie. Chaque groupe possède un plafond de hors forfait autorisé que vous pouvez ajuster selon vos besoins.
+
+Vos lignes téléphoniques OVHcloud appartiennent à un ou plusieurs groupes de téléphonie. Chaque groupe possède un plafond de hors-forfait autorisé que vous pouvez ajuster selon vos besoins.
 
 **Découvrez comment gérer le plafond de hors-forfait de vos services VoIP.**
 
@@ -27,9 +28,10 @@ Cette autorisation de hors-forfait est en fait composée de 2 entités :
 - **Le dépôt de garantie**, un dépôt d'argent qui peut vous être restitué sur demande.
 
 Par défaut, la limite de base est à 150€ HT et le dépôt de garantie à 0 € HT. Vous avez donc, par défaut, une autorisation de hors-forfait à 150€ HT par groupe.
+<br>À des fins de sécurité, la limite de base est fixée à 10 € HT pour les clients venant de commander leur(s) première(s) ligne(s) VoIP. Cette limite évoluera ensuite jusqu'à 150 €. 
 
 > [!primary]
-> Cette limitation est obligatoire. Celle-ci va vous éviter d'avoir une facture hors-normes en cas de piratage de votre ligne SIP.
+> Cette limitation est obligatoire. Celle-ci peut vous éviter d'avoir une facture hors-normes en cas de piratage de votre ligne SIP.
 > Pour éviter ce dernier cas de figure, nous vous recommandons de [sécuriser votre ligne SIP](https://docs.ovh.com/fr/voip/securiser-ligne-sip/).  
 > 
 
@@ -67,7 +69,6 @@ Pour l'exemple cité plus haut :
 > En cas de dépassement du hors-forfait autorisé sur votre groupe de téléphonie, vous ne pourrez pas augmenter la limite de base du groupe. Vous devrez alors augmenter votre dépôt de garantie.
 > Pour en savoir plus, reportez-vous à la partie [Qu'arrive t-il en cas de dépassement ?](https://docs.ovh.com/fr/voip/gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait/#quarrive-t-il-en-cas-de-depassement) en bas de ce guide.
 >
-
 
 
 ## En pratique

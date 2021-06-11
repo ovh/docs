@@ -2,58 +2,64 @@
 title: 'Mettere in sicurezza un VPS'
 slug: consigli-sicurezza-vps
 section: 'Per iniziare'
+excerpt: Scopri gli elementi di base per rendere sicuro il tuo VPS
 ---
 
-**Ultimo aggiornamento: 26/02/2018**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 15/01/2021**
 
 ## Obiettivo
 
-Al momento dell’ordine, un VPS include una distribuzione preinstallata ma i protocolli di sicurezza non sono abilitati. OVHcloud non può intervenire sulla tua macchina: la protezione del VPS è quindi a tuo carico.
+Al momento dell'ordine del tuo VPS, puoi scegliere una distribuzione o un sistema operativo da preinstallare. Il server è quindi pronto per essere utilizzato dopo la consegna. Tuttavia, in qualità di amministratore, è compito dell'utente attuare misure che garantiscano la sicurezza e la stabilità del sistema.
 
-**Questa guida ti mostra le operazioni da effettuare per mettere in sicurezza il tuo server.**
-
+**Questa guida ti mostra come mettere in sicurezza il tuo server.**
  
 > [!warning]
 >
-> OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è responsabilità dell’utente. Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo VPS. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> OVHcloud mette a disposizione le macchine di cui è responsabile. Non abbiamo accesso a queste macchine e non ne siamo amministratori. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla sicurezza del tuo server, ti consigliamo di rivolgerti a un esperto del settore. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 > 
-
-
 
 ## Prerequisiti
 
-- Essere connesso al VPS in SSH (accesso root)
-
+- un'offerta [VPS](https://www.ovhcloud.com/it/vps/) sul tuo account OVHcloud
+- accesso amministrativo (root) via SSH al tuo server
 
 ## Procedura
 
-Questa guida è generica e le azioni descritte costituiscono esclusivamente una serie di consigli pratici. Alcuni comandi dovranno quindi essere adattati in base alla distribuzione utilizzata. Per alcune operazioni ti consiglieremo di utilizzare strumenti esterni: se hai bisogno di ulteriori informazioni, consulta la documentazione ufficiale di questi tool.
+> [!primary]
+>
+> Ricordate che questa è una guida generale. Alcuni ordini devono essere adattati alla distribuzione o al sistema operativo utilizzato. A volte ti consigliamo di utilizzare strumenti di terze parti. Se hai bisogno di assistenza, consulta la documentazione ufficiale di queste applicazioni.
+>
+> Per configurare il tuo primo VPS OVHcloud, consulta la nostra guida [sulla messa in servizio di un VPS](../iniziare-a-utilizzare-vps/).
+>
 
 ### Aggiorna il sistema
 
-Gli sviluppatori delle distribuzioni rilasciano continuamente aggiornamenti dei pacchetti, spesso per motivi di sicurezza. La loro installazione è fondamentale per proteggere il tuo VPS.
+Gli sviluppatori delle distribuzioni effettuano numerosi aggiornamenti dei pacchetti, spesso per ragioni di sicurezza. La loro installazione è fondamentale per proteggere il tuo VPS.
 
-Questa operazione prevede 2 fasi:
+L'aggiornamento avverrà in due fasi.
 
-- aggiornamento della lista dei pacchetti
+- Aggiorna la lista dei pacchetti:
 
 ```sh
 apt-get update
 ```
 
-- installazione dei pacchetti
+- L'aggiornamento dei pacchetti:
 
 ```sh
 apt-get upgrade
 ```
 
-Eseguendo regolarmente queste due azioni, il tuo sistema sarà sempre aggiornato. 
+Questa operazione deve essere effettuata regolarmente per mantenere un sistema aggiornato.
 
 
-### Modifica la porta predefinita del servizio SSH
+### Modifica la porta di default del servizio SSH
 
-
-Modificare la porta del servizio SSH è una delle prime operazioni da effettuare sul tuo server. La porta di ascolto impostata di default è infatti la **22**, spesso sfruttata dagli hacker per realizzare attacchi sui server. Agire sulle impostazioni predefinite di questa porta permette di rendere la tua macchina meno facilmente raggiungibile.
+Una delle prime operazioni da effettuare sul tuo server è configurare il servizio SSH modificando la porta di ascolto. È impostato sulla **porta 22** di default. Di conseguenza, i tentativi di pirateria informatica da parte dei robot puntano su questa porta. Modificare questo parametro con l'aiuto di un'altra porta è una misura semplice per rafforzare la protezione del tuo server contro gli attacchi automatici.
 
 Per modificare il file di configurazione del servizio, esegui questo comando:
 
@@ -63,101 +69,98 @@ nano /etc/ssh/sshd_config
 
 > [!primary]
 >
-> Il comando `nano` è solo un esempio e può essere sostituito da `vim` o altri che consentono di effettuare questa operazione sul file sshd\_config.
+> Il comando `nano` è indicato come esempio, puoi utilizzare il comando `vim` o qualsiasi altro comando che permetta di modificare i file di configurazione.
 >
 
-Nella riga:
+In seguito, è necessario trovare le seguenti righe:
 
 ```sh
-# What ports, IPs and protocols we listen for Port 22
+# What ports, IPs and protocols we listen for
+Port 22
 ```
 
-sostituisci il numero 22 con quello di tua scelta, **assicurandoti di non inserire un numero di porta già in uso nel tuo sistema**. Salva le modifiche e chiudi il file di configurazione.
+Sostituisci il numero **22** con il numero di porta che preferisci. **Non inserisci il numero di porta già utilizzato sul tuo sistema**. Per motivi di sicurezza, utilizza un numero compreso tra 49152 e 65535. <br>Salva e lascia il file di configurazione.
 
-Riavvia il tuo servizio:
+Riavvia il servizio:
 
 ```sh
-/etc/init.d/ssh restart
+systemctl restart sshd
 ```
 
-Da questo momento, per connetterti in SSH alla tua macchina è necessario specificare la nuova porta:
+Ciò dovrebbe bastare per applicare le modifiche. È possibile riavviare il VPS (`~$ reboot`).
+
+Ricordati di indicare la nuova porta ogni volta che chiedi una connessione SSH al tuo server, ad esempio:
 
 ```sh
-ssh root@tuovps.ovh.net -p NuovaPorta
+username@IPv4_of_your_VPS -p NewPortNumber
 ```
 
-### Modifica la password associata all’utente “root”
+### Modifica della password associata all'utente "root"
 
-Durante l’installazione di una distribuzione, la password associata all’utente principale (root) viene creata automaticamente. Ti consigliamo di personalizzarla effettuando l’accesso con questo utente e digitando il comando:
+Ti consigliamo vivamente di modificare la password dell'utente root in modo da non lasciarla al valore predefinito su un nuovo sistema. Per maggiori informazioni, consulta [questa guida](../root-password/).
+
+### Crea un utente con diritti limitati
+
+In genere, i compiti che non richiedono privilegi root devono essere eseguiti tramite un utente standard. Per creare un utente, esegui questo comando:
 
 ```sh
-passwd root
+adduser CustomUserName
 ```
 
-Il sistema ti chiederà di scegliere una nuova password e confermarla. Per motivi di sicurezza **la password inserita non sarà mostrata** e nessun carattere verrà visualizzato durante la digitazione.
+Inserisci le informazioni richieste (nome, password, ecc...).
 
-La nuova password diventa subito effettiva e, dalla connessione successiva, sarà necessario utilizzarla per accedere al sistema.
+Il nuovo utente sarà autorizzato a connettersi via SSH. Durante la connessione, utilizza le informazioni di identificazione specificate.
 
-### Crea un utente con diritti limitati e agisci sul sistema con i permessi di root
-
-Per creare un nuovo utente, utilizza il comando:
-
-```sh
-adduser NomeNuovoUtente
-```
-
-e inserisci le informazioni richieste (nome, password, ecc...).
-
-Questo utente sarà autorizzato a connettersi al tuo sistema in SSH con la password definita in fase di creazione.
-
-Una volta effettuato l’accesso, per eseguire operazioni che richiedono i privilegi di root, sarà sufficiente digitare il comando:
+Una volta effettuato l'accesso con queste credenziali, per eseguire operazioni che richiedono i diritti di amministratore, esegui questo comando:
 
 ```sh
 su root
 ```
 
-e inserire la password associata all’utente root per confermare l’operazione.
+Inserisci la password quando sei invitato e la connessione attiva sarà trasferita all'utente root.
 
-### Disattiva l’accesso dell’utente root al server 
+### Disattiva l'accesso al server tramite l'utente root
 
-L’utente root viene creato di default sui sistemi UNIX ed è quello che possiede il maggior numero di permessi sul tuo sistema. È pericoloso e sconsigliato che sia l’unico autorizzato ad accedere al VPS, in quanto in grado di effettuare operazioni irreversibili sul server.
+L'utente root viene creato di default sui sistemi GNU/Linux. Con l'accesso root si ottiene il maggior numero di autorizzazioni su un sistema operativo. Lasciare che il VPS sia accessibile esclusivamente tramite l'accesso root non è consigliato né pericoloso, in quanto può causare operazioni irreversibilmente dannose.
 
-Ti consigliamo quindi di disattivare l’accesso diretto di questo utente tramite il protocollo SSH.
+Ti consigliamo di disattivare l'accesso diretto all'utente root tramite il protocollo SSH. Ricordati di creare un altro utente prima di seguire gli step qui sotto.
 
-Per effettuare questa operazione, modifica il file di configurazione SSH come fatto precedentemente per la porta di accesso al VPS:
+È necessario modificare il file di configurazione SSH come descritto in precedenza:
 
 ```sh
 nano /etc/ssh/sshd_config
 ```
 
-Trova questa sezione all’interno del file:
+Localizza la sezione seguente:
 
 ```sh
-# Authentication: LoginGraceTime 120 PermitRootLogin yes StrictModes yes
+# Authentication: 
+LoginGraceTime 120
+PermitRootLogin yes 
+StrictModes yes
 ```
 
-Nella riga `PermitRootLogin`, sostituisci **yes** con **no**.
+Sostituisci **yes** con **no** sulla linea `PermitRootLogin`.
 
-Riavvia il servizio SSH per applicare la modifica:
+Per applicare la modifica, riavvia il servizio SSH:
 
 ```sh
-/etc/init.d/ssh restart
+systemctl restart sshd
 ```
 
-A questo punto, utilizza l’utente appena creato per accedere al tuo sistema.
+In seguito, le connessioni al tuo server tramite l'utente root (`ssh root@IPv4_of_your_VPS`) saranno rifiutate.
 
+### Installazione di Fail2ban
 
-### Installa e configura il pacchetto Fail2ban
+Fail2ban è un framework di prevenzione contro le intrusioni in grado di bloccare tentativi di accesso al tuo sistema da parte di indirizzi IP sconosciuti. Questo software è consigliato, anche essenziale, per proteggersi contro qualsiasi attacco brutale ai tuoi servizi.
 
-Fail2ban è un framework di prevenzione contro le intrusioni in grado di bloccare tentativi di accesso al tuo sistema da parte di indirizzi IP sconosciuti. Questo pacchetto è indispensabile per proteggere i tuoi servizi da attacchi di tipo brute force.
-
-Per installarlo, esegui questo comando:
+Per installare il pacchetto software, utilizza questo comando:
 
 ```sh
 apt-get install fail2ban
 ```
 
-Una volta completata l’operazione, è necessario adattare il file di configurazione in base alle tue esigenze. Prima di effettuare qualsiasi modifica sul file, ti consigliamo di eseguirne un backup con il comando:
+Una volta completata l'operazione, è necessario modificare il file di configurazione per adattarlo all'utilizzo. Prima di apportare qualsiasi modifica, ti consigliamo di eseguire un backup del file di configurazione digitando questo comando:
 
 ```sh
 cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.conf.backup
@@ -169,44 +172,45 @@ A questo punto, apporta le modifiche necessarie:
 nano /etc/fail2ban/jail.conf
 ```
 
-e riavvia il servizio:
+Una volta terminate le modifiche, riavvia il sistema digitando il seguente comando:
 
 ```sh
 /etc/init.d/fail2ban restart
 ```
 
-Per maggiori informazioni su Fail2Ban, consulta la [documentazione ufficiale](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} del tool.
+Per maggiori informazioni su Fail2Ban, consulta la documentazione ufficiale di questo tool cliccando su [questo link](https://www.fail2ban.org/wiki/index.php/Main_Page){.external}.
 
-### Configura il firewall interno: iptables
+### Configurazione del firewall interno (iptable)
 
-Le distribuzioni server includono un servizio di firewall, chiamato iptables, che di default non dispone di regole attive. Per verificarlo, esegui il comando:
+Le distribuzioni Linux e UNIX vengono fornite con un servizio di firewall chiamato iptables, che di default non dispone di regole attive. Per verificarlo, esegui il comando:
 
 ```sh
 iptables -L
 ```
 
-Ti consigliamo di creare e adattare le regole di questo firewall in base alle tue necessità. Per maggiori informazioni sulle diverse operazioni disponibili, consulta la documentazione ufficiale della distribuzione utilizzata.
+In questo caso, ti consigliamo di creare regole su questo firewall e adattarle al tuo utilizzo. Per maggiori informazioni sulle diverse operazioni, consulta la documentazione ufficiale della distribuzione utilizzata.
 
-### Configura il Firewall Network OVHcloud
+### Configurazione del Firewall Network OVHcloud 
 
-OVHcloud propone il servizio Firewall Network, un firewall all’ingresso dell’infrastruttura la cui attivazione e configurazione consente di bloccare i protocolli prima che arrivino al tuo server.
+Le soluzioni OVHcloud includono la possibilità di attivare un firewall al punto di ingresso dell'infrastruttura, il Firewall Network. La corretta configurazione di questo firewall permette di bloccare le connessioni prima che arrivino sul tuo server.
 
-Per consultare la nostra guida relativa a questa soluzione, [clicca qui](https://docs.ovh.com/it/dedicated/firewall-network/){.external}.
+Per attivare il Firewall Network, consulta la guida [Configurare il Firewall Network](../../dedicated/firewall-network/).
 
 ### Proteggi il tuo sistema e i tuoi dati
 
-Il concetto di sicurezza non si limita esclusivamente alla protezione di un sistema dagli attacchi.
+Il concetto di sicurezza non si limita alla protezione di un sistema dagli attacchi.
 
-Anche la sicurezza dei dati è un elemento fondamentale e per salvaguardarlo OVHcloud propone tre opzioni di backup:
+La protezione dei dati è un elemento chiave e per questo OVHcloud offre diverse opzioni di backup come servizi:
 
-- `Snapshot`, un’istantanea della tua macchina virtuale creata manualmente (disponibile su VPS SSD, Cloud e Cloud RAM)
-- `Backup automatizzato`, una copia giornaliera del tuo VPS (disco aggiuntivo escluso) esportata e replicata tre volte prima di essere disponibile nello Spazio Cliente OVHcloud (disponibile esclusivamente su VPS Cloud e Cloud RAM)
-- `Backup Storage`, una soluzione per archiviare e recuperare manualmente i file su uno spazio disco dedicato. I protocolli disponibili per eseguire queste operazioni sono FTP, NFS e CIFS, compatibili con tutti i sistemi operativi. Grazie a questa opzione i dati sono al sicuro in caso di interruzione di servizio (disponibile esclusivamente su VPS Cloud e Cloud RAM)
+- L'opzione `Snapshot` che ti permette di creare un'istantanea manuale.
+- L'opzione di `backup automatico` permette di conservare i backup regolari del VPS (ad eccezione dei dischi supplementari).
 
-Per maggiori informazioni sulle nostre soluzioni di storage per VPS: <https://www.ovhcloud.com/it/vps/>.
+Tutte le informazioni sulle soluzioni di backup disponibili per il tuo servizio sono disponibili sulla [pagina del prodotto](https://www.ovhcloud.com/it/vps/options/) e nelle [rispettive](../) guide.
 
 ## Per saperne di più
 
-[Configurare il Firewall Network](https://docs.ovh.com/it/dedicated/firewall-network/)
+[Iniziare a utilizzare un VPS](../iniziare-a-utilizzare-vps/) 
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+[Configurare il Firewall Network](../../dedicated/firewall-network/)
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

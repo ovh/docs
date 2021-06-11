@@ -5,7 +5,7 @@ excerpt: 'Find out how to add failover IP addresses to your server configuration
 section: 'Network Management'
 ---
 
-**Last updated 8th April 2020**
+**Last updated 19th April 2021**
 
 ## Objective
 
@@ -16,14 +16,15 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- a [dedicated server](https://www.ovh.ie/dedicated_servers) in your OVHcloud account
-- a [failover IP address](https://www.ovh.ie/dedicated_servers/ip_failover.xml) or a failover IP block (RIPE)
-- administrative access (root) via SSH or remote desktop (Windows) to your server
+- a [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) in your OVHcloud account
+- a [failover IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/) or a failover IP block (RIPE)
+- administrative access (root) via SSH or GUI to your server
+- basic networking and administration knowledge
 
 ## Instructions
 
@@ -31,7 +32,7 @@ The following sections contain the configurations for the most commonly used dis
 
 > [!primary]
 >
-Concerning current distributions, please note that the proper procedure to configure your network interface may be subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
+Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
 > 
 
 
@@ -505,6 +506,7 @@ Then add this line at the end of the file: `ifconfig_INTERFACE_alias0="inet FAIL
 
 Replace **INTERFACE** and **FAILOVER_IP** with the name of your interface (identified in the first step) and your failover IP, respectively. Here is an example:
 
+
 ```bash
 ifconfig_nfe0_alias0="inet 87.98.129.74 netmask 255.255.255.255 broadcast 87.98.129.74"
 ```
@@ -560,21 +562,20 @@ You now need to restart your interface:
 svcadm restart svc:/network/physical:default
 ```
 
-#### Troubleshooting
+### Troubleshooting
 
-If you are unable to establish a connection from the public network to your alias IP and suspect a network problem, please reboot the server in Rescue Mode and setup the alias directly on the server.
+First, restart your server from the command line or its GUI. If you are still unable to establish a connection from the public network to your alias IP and suspect a network problem, you need to reboot the server in [rescue mode](../rescue_mode/). Then you can set up the failover IP address directly on the server.
 
-In order to do that, once you’ve rebooted your server in Rescue Mode, please do the following command:
+Once you are connected to your server via SSH, enter the following command:
 
 ```bash
 ifconfig eth0:0 FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP up
 ```
 
-Where you will replace FAILOVER_IP by the actual IPFO.
-
-Next, simply ping your IPFO from the outside. If it works, it probably means that there is a configuration error that requires to be fixed. If, on the contrary, the IP is still not working, please inform our support team by creating a support request in your [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/support/tickets/new) for further investigations.
-
-
+To test the connection, simply ping your failover IP from the outside. If it responds in rescue mode, that probably means that there is a configuration error. If, however, the IP is still not working, please inform our support teams by creating a support request in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) for further investigations.
+ 
 ## Go further
+
+[Activating and using rescue mode](../rescue_mode/)
 
 Join our community of users on <https://community.ovh.com/en/>.

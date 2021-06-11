@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer vos factures et les paiements liés à celle
 section: Facturation
 ---
 
-**Dernière mise à jour le 18/01/2021**
+**Dernière mise à jour le 08/04/2021**
 
 ## Objectif
 
@@ -24,7 +24,6 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Être connecté en tant que contact facturation de votre service (plus de détails sur les différents contacts dans le guide « [Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/){.external} »).
-
 
 ## En pratique
 
@@ -59,7 +58,6 @@ Les taxes seront ajoutées en bas, dans le récapitulatif global du montant indi
 > Si la mention « Relevé de compte » apparaît au niveau du moyen de paiement utilisé, cela signifie qu'il s'agit d'un renouvellement automatique. Le moyen de paiement utilisé sera forcément celui qui a été validé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 >
 
-
 ### Découvrir l'espace facturation
 
 #### Consulter et gérer ses factures
@@ -78,9 +76,8 @@ Sur chaque ligne du tableau vous retrouverez les informations suivantes :
 - la date d'émission de la facture ;
 - le montant de la facture ;
 - le solde à régler ;
-- la date à laquelle la facture est dûe ; 
+- la date à laquelle la facture est due ;
 - `...`{.action} : différentes actions seront possibles.
-
 
 > [!primary]
 >
@@ -95,7 +92,6 @@ Si la mention « Informations non disponibles » apparaît, cela signifie que 
 - `Voir la version PDF`{.action} : un fichier au format PDF sera généré et vous pourrez le télécharger ;
 - `Voir les détails pour cette facture`{.action} : vous pourrez vérifier l'historique des opérations effectuées sur cette facture.
 
-
 Afin de vous simplifier la lecture, plusieurs filtres sont à votre disposition :
 
 ![Filtres de tri](images/sort_filters.png){.thumbnail}
@@ -104,7 +100,7 @@ Afin de retrouver une facture précise, il est possible d'indiquer une référen
 
 Le bouton `Exporter en CSV`{.action} vous permet de télécharger un fichier Excel au format .csv dans lequel seront récapitulées les factures sélectionnées. Ce fichier fera apparaître le montant, la référence et la date d'émission de ces factures.
 
-#### Régler mon solde
+#### Payer vos factures <a name="payer-ma-facture"></a>
 
 Afin de procéder au règlement de vos factures en attente de paiement, il vous suffit de cliquer sur le bouton `Régler mon solde immédiatement`{.action}.
 
@@ -112,8 +108,7 @@ Afin de procéder au règlement de vos factures en attente de paiement, il vous 
 
 Un [bon de commande](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/#le-bon-de-commande){.external} de régularisation sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
 
-
-### Suivre les paiements
+### Suivre vos paiements
 
 Vous pouvez suivre tous les paiements effectués depuis la partie `Facturation` dans `Suivi des paiements`{.action}. Ceci permet de faire le lien entre les factures et les paiements associés. La référence d'un justificatif de paiement commence toujours par les lettres « PA_FR ».
 
@@ -129,3 +124,4 @@ Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+

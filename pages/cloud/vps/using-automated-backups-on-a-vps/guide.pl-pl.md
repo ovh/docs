@@ -74,7 +74,7 @@ Najpierw połącz się z prywatnym serwerem wirtualnym przy użyciu protokołu S
 Aby zweryfikować nazwę nowo przyłączonego urządzenia, użyj następującego polecenia:
 
 ```
-# lsblk
+$ lsblk
 ```
 
 Przykład danych wyświetlonych po wykonaniu tego polecenia:
@@ -89,14 +89,13 @@ sdb       8:16   0   25G  0 disk
 ├─sdb1    8:17   0 24.9G  0 part 
 ├─sdb14   8:30   0    4M  0 part 
 └─sdb15   8:31   0  106M  0 part /boot/efi
-sdc       8:32   0   50G  0 disk 
 ```
 W tym przykładzie partycja zawierająca system plików kopii zapasowej ma nazwę „sdb1”.
 Następnie utwórz katalog dla tej partycji i zdefiniuj go jako punkt montowania:
 
 ```
-# mkdir -p /mnt/restore
-# mount /dev/sdb1 /mnt/restore
+$ mkdir -p /mnt/restore
+$ mount /dev/sdb1 /mnt/restore
 ```
 
 Teraz możesz się przełączyć do tego folderu i uzyskać dostęp do danych kopii zapasowej.

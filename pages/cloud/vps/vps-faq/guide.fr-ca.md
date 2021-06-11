@@ -56,7 +56,7 @@ Cela vous permettra de faire le bon choix parmi nos solutions VPS :
 
 Gérer un VPS nécessite des connaissances de base en administration de serveurs. Ces notions sont essentielles pour gérer le système d’exploitation (Linux ou Windows) installé sur la machine et paramétrer les applications. Vous pensez avoir besoin d’un VPS, mais estimez ne pas posséder les compétences requises ? Nous vous invitons à vous rapprocher de l’un de nos partenaires. 
 
-Si vous souhaitez bénéficier de ressources garanties sans connaissances en administration de serveurs, nous vous conseillons nos [hébergements web Performance](https://www.ovh.com/ca/en/web-hosting/web-hosting-performance.xml).
+Si vous souhaitez bénéficier de ressources garanties sans connaissances en administration de serveurs, nous vous conseillons nos [hébergements web Performance](https://www.ovh.com/ca/fr/hebergement-web).
 
 ### Comment me connecter à mon VPS ?
 
@@ -86,6 +86,43 @@ La bande passante affichée sur la page de nos offres est garantie. Il s'agit du
 ### Quel SLA est appliqué sur mon VPS ?
 
 Sur l’ensemble des gammes VPS, OVHcloud propose un SLA de 99,9%.
+
+### Comment accéder à mon backup storage depuis une adresse IP différente de mon service ? <a name="backupstorage"></a>
+
+L'accès à votre backupFTP peut être restreint au service auquel il est lié via votre espace client OVHcloud.
+
+Afin de pouvoir ajouter d'autres adresses IP de services différents, vous pouvez utiliser l'API OVHcloud.
+Cela vous permettra alors de récupérer vos backups depuis un service d'une autre localisation.
+
+> [!warning]
+> Seules les adresses IP OVHcloud peuvent être autorisées.
+>
+
+Connectez-vous sur [https://ca.api.ovh.com/](https://ca.api.ovh.com/) et utilisez l'appel suivant :
+
+> [!api]
+>
+> @api {POST} vps/{serviceName}/backupftp/access
+>
+
+Renseignez les champs ainsi :
+
+- `serviceName ` : le nom de votre VPS
+- `cifs ` : cochez si nécessaire
+- `ftp` : cochez si nécessaire
+- `ipBlock` : renseignez l'IP qui aura accès sous la forme `1.2.3.4/32`
+- `nfs` : cochez si nécessaire
+
+![post api](images/post-api.png){.thumbnail}
+
+Afin de vérifier que votre adresse IP est bien autorisée, utilisez l'appel suivant :
+
+> [!api]
+>
+> @api {GET} /vps/{serviceName}/backupftp/access
+>
+
+![get api](images/get-api.png){.thumbnail}
 
 ## Aller plus loin
 

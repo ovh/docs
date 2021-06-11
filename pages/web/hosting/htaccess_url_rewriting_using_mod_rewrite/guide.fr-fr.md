@@ -97,7 +97,7 @@ RewriteRule ^(.*)$ https://www.votredomaine.fr/$1 [R,L]
 
 
 ## Le fichier .htaccess
-Tout sur le fichier .htaccess sur le lien suivant : [Cliquer ici]({legacy}1967){.ref}
+Tout sur le fichier .htaccess sur le lien suivant : [Cliquer ici](../mutualise-tout-sur-le-fichier-htaccess/)
 
 
 ## Aller plus loin

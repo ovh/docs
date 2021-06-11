@@ -91,6 +91,6 @@ For Apache Spark, for example, you will also have to :
 
 ## Go further
 
-To learn more about using Data Processing and how to create cluster and process your data, we invite you to look at [Data Processing documentations page](../).
+To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or in our public [Gitter](https://gitter.im/ovh/data-processing){.external}

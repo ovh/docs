@@ -1,15 +1,15 @@
 ---
-title: 'Konfiguracja adresu IP w alias'
+title: 'Skonfiguruj adres IP jako alias'
 slug: ip-aliasing-vps
 excerpt: 'Dowiedz się, jak dodać adresy IP Failover do konfiguracji VPS'
 section: 'Sieć & IP'
 ---
 
-**Ostatnia aktualizacja z dnia 8 kwietnia 2020 r**
-
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
+
+**Ostatnia aktualizacja z dnia 27-04-2021**
 
 ## Wprowadzenie
 
@@ -27,259 +27,273 @@ Alias IP (*IP aliasing* w języku angielskim) to specjalna konfiguracja sieci dl
 ## Wymagania początkowe
 
 - jednego [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
-- adresu IP Failover lub bloku IP Failover (RIPE)
-- dostęp administratora (root) przez SSH lub remote desktop (Windows) na serwerze
-
+- adresu [IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/) lub bloku IP Failover
+- dostęp administratora (root) przez SSH lub GUI do serwera
+- podstawowa wiedza o sieciach i ich administrowaniu
 
 ## W praktyce
 
+Niniejszy przewodnik zawiera najpopularniejsze konfiguracje dystrybucji/systemów operacyjnych. Pierwszy etap polega zawsze na logowaniu się do serwera przez SSH lub przez sesję logowania do interfejsu graficznego użytkownika (RDP dla serwera VPS Windows). Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z dużymi uprawnieniami (Administrator/sudo).
+
 > [!primary]
 >
-Jeśli chcesz korzystać z najnowszej dystrybucji, odpowiednia procedura konfiguracji interfejsu sieciowego może wymagać dostosowań. W przypadku trudności zalecamy zapoznanie się z dokumentacją dotyczącą systemu operacyjnego. 
-> 
+Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmodyfikować odpowiednią procedurę konfiguracji Twojego interfejsu sieciowego oraz nazw plików. W przypadku trudności zalecamy zapoznanie się z dokumentacją dotyczącą systemu operacyjnego.
+>
 
-Oto konfiguracje głównych dystrybucji i systemów operacyjnych.
+**Należy wziąć pod uwagę następującą terminologię, która zostanie użyta w przykładach kodu i instrukcjach zawartych w tym przewodniku:**
 
-### Debian 9
+|Nazwa|Opis|Przykłady|
+|---|---|---|
+|IP_FAILOVER|Adres IP Failover przypisany do Twojej usługi|169.254.10.254|
+|NETWORK_INTERFACE|Nazwa interfejsu sieciowego|*eth0*, *ens3*|
+|ID|ID aliasu IP, zaczynające się od *0* (w zależności od liczby dodatkowych adresów IP do skonfigurowania)|*0*, *1*|
+
+### Debian 10
 
 #### Etap 1: wyłącz automatyczną konfigurację sieci
 
-Otwórz najpierw następujący plik, jak pokazano poniżej:
+Otwórz ścieżkę dostępu do następującego pliku z edytorem tekstu:
 
-```sh
-# nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+```bash
+sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 ```
 
-Następnie zmodyfikuj plik, używając następującej konfiguracji. Zapobiegnie to automatycznym modyfikacjom konfiguracji Twojej sieci.
+Wprowadź następującą linię, następnie zapisz i wyjdź z edytora.
 
-```sh
+```bash
 network: {config: disabled}
 ```
 
-### Etap 2: zmień plik konfiguracyjny sieci
+Utworzenie tego pliku konfiguracyjnego zapobiega automatycznemu wprowadzaniu zmian w konfiguracji Twojej sieci.
+
+#### Etap 2: zmień plik konfiguracyjny sieci
+
+Nazwy interfejsu sieciowego możesz sprawdzić za pomocą polecenia:
+
+```bash
+ip a
+```
 
 Otwórz plik konfiguracyjny sieci, aby go zmienić za pomocą następującego polecenia:
 
-```sh
-# nano /etc/network/interfaces.d/50-cloud-init.cfg
+```bash
+sudo nano /etc/network/interfaces.d/50-cloud-init
 ```
 
-Zmodyfikuj plik za pomocą następującej konfiguracji:
-
-> [!primary]
->
-Nazwy interfejsów sieciowych w naszych przykładach mogą różnić się od Twoich nazw. Prosimy o dostosowanie nazw interfejsów.
->
-
-```sh
-auto ens3
-iface ens3 inet dhcp
-
-auto ens3:0
-iface ens3:0 inet static
-address FailoverIP 0
-netmask 255.255.255.255
-
-auto ens3:1
-iface ens3:1 inet static
-address FailoverIP 1
-netmask 255.255.255.255
-```
-
-### Ubuntu 18.04
-
-Każdy adres IP Failover wymaga własnej linii w tym pliku. Plik konfiguracyjny Twoich adresów IP Failover musi być nazywany "50-cloud-init.yaml".
-
-#### Etap 1: utworzyć plik konfiguracyjny
-
-Zaloguj się do serwera przez SSH i wprowadź następującą komendę:
-
-```sh
-# nano /etc/netplan/50-cloud-init.yaml
-```
-
-Następnie zmodyfikuj plik, używając następującej treści:
-
-```sh
-network:
-    version: 2
-    ethernets:
-        twój_interfejs_sieciowy:
-            dhcp4: true
-            match:
-                macaddress: fa:xx:xx:xx:xx:63
-            set-name: twoja_interfejs_sieciowy
-            addresses:
-            - votre_ip_failover/32
-```
-
-Zapisz i zamknij plik.
-
-Następnie zastosuj konfigurację:
-
-```sh
-# netplan apply
-# netplan try
-```
-
-Powtórz tę procedurę dla każdego adresu IP Failover.
-
-### CentOS i Fedora (25 i wcześniejsze wersje)
-
-#### Etap 1: utworzyć plik źródłowy
-
-Najpierw wykonaj kopię pliku źródłowego, aby móc używać go jako szablonu:
-
-```sh
-cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0:0
-```
-
-#### Etap 2: zmień plik źródłowy
-
-Teraz możesz zmienić plik eth0:0, aby zastąpić adres IP:
-
-```sh
-editor /etc/sysconfig/network-scripts/ifcfg-eth0:0
-```
-
-Najpierw zastąp nazwę "device", następnie zastąp istniejący adres IP adresem IP Failover, który otrzymałeś:
+Następnie dodaj następujące wiersze:
 
 ```bash
-DEVICE="eth0:0"
-ONBOOT="yes"
-BOOTPROTO="none" # W przypadku CentOS kliknij "static"
-IPADDR="IP_FAILOVER"
-NETMASK="255.255.255.255"
-BROADCAST="IP_FAILOVER"
+auto NETWORK_INTERFACE:ID
+iface NETWORK_INTERFACE:ID inet static
+address IP_FAILOVER
+netmask 255.255.255.255
 ```
 
 #### Etap 3: uruchom ponownie interfejs
 
-Uruchom ponownie interfejs:
+Zastosuj zmiany za pomocą polecenia:
 
-```sh
-ifup eth0:0
+```bash
+sudo systemctl restart networking
 ```
 
-### Windows Server 2012/2016
+### Ubuntu 20.04
 
-#### Etap 1: sprawdź główną konfigurację IP
+Plik konfiguracyjny adresów IP Failover znajduje się w katalogu `/etc/netplan/`. W tym przykładzie nosi nazwę "50-cloud-init.yaml". Zanim wprowadzisz zmiany, sprawdź w tym folderze nazwę rzeczywistego pliku. Każdy adres IP Failover wymaga własnej linii w pliku.
 
-Po pierwsze, musimy pobrać informacje dotyczące głównego adresu IP:
+#### Etap 1: wyłącz automatyczną konfigurację sieci
+
+Otwórz ścieżkę dostępu do następującego pliku z edytorem tekstu:
+
+```bash
+sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+```
+
+Wprowadź następującą linię, następnie zapisz i wyjdź z edytora.
+
+```bash
+network: {config: disabled}
+```
+
+Utworzenie tego pliku konfiguracyjnego zapobiega automatycznemu wprowadzaniu zmian w konfiguracji Twojej sieci.
+
+#### Etap 2: zmień plik konfiguracyjny
+
+Nazwy interfejsu sieciowego możesz sprawdzić za pomocą polecenia:
+
+```bash
+ip a
+```
+
+Otwórz plik konfiguracyjny sieci, aby go zmienić za pomocą następującego polecenia:
+
+```bash
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
+
+Nie zmieniaj istniejących linii w pliku. Dodaj adres IP Failover, postępując zgodnie z poniższym przykładem:
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
+            set-name: NETWORK_INTERFACE
+            addresses:
+            - IP_FAILOVER/32
+```
+
+> [!warning]
+>
+> Ważne jest przestrzeganie wyrównania każdego elementu tego pliku, jak pokazano w powyższym przykładzie. Nie używaj przycisku tabulacji do tworzenia odstępów.
+>
+
+Zapisz i zamknij plik.
+
+#### Etap 3: zastosować nową konfigurację sieci
+
+Możesz przetestować konfigurację za pomocą polecenia:
+
+```bash
+sudo netplan try
+```
+
+Jeśli jest poprawna, zastosuj ją za pomocą następującego polecenia:
+
+```bash
+sudo netplan apply
+```
+
+Powtórz tę procedurę dla każdego adresu IP Failover.
+
+### Windows Server 2016
+
+#### Etap 1: sprawdź konfigurację sieci
+
+Kliknij prawym przyciskiem myszy przycisk `Menu Start`{.action} i otwórz `Uruchom`{.action}.
+
+Wpisz `cmd` i kliknij `OK`{.action}, aby otworzyć aplikację wiersza poleceń.
+
+![cmdprompt](images/vps_win07.png){.thumbnail}
+
+Aby pobrać aktualną konfigurację IP, wprowadź `ipconfig` w wierszu poleceń.
 
 ![sprawdź główną konfigurację IP](images/image1-1.png){.thumbnail}
 
 #### Etap 2: zmień właściwości IPv4
 
-Należy ręcznie zmienić ustawienia "automatyczne" IP w konfigurację "statyczną":
+Teraz zmodyfikuj właściwości IP w konfigurację statyczną.
+
+Otwórz parametry adaptera w Panelu konfiguracyjnym Windows, a następnie otwórz `Właściwości`{.action} protokołu `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![zmień konfigurację IP](images/image2.png){.thumbnail}
 
-Teraz możemy zdefiniować informacje IP, które uzyskaliśmy wcześniej:
+W oknie Właściwości IPv4 wybierz `Użyj następującego`{.action} adresu IP. Wpisz adres IP, który otrzymałeś w pierwszym etapie, po czym kliknij `Zaawansowane`{.action}.
 
-![zmień konfigurację IP](images/image3-3.png){.thumbnail}
+#### Etap 3: dodać adres IP Failover do zaawansowanych ustawień TCP/IP
 
-#### Etap 3: dodać adres IP Failover w sekcji "Konfiguracja zaawansowana"
+W nowym oknie kliknij `Dodaj...`{.action} pod "Adresy IP". Wpisz adres IP Failover i maskę podsieci (255.255.255.255).
 
 ![sekcja konfiguracji zaawansowanej](images/image4-4.png){.thumbnail}
 
-W tym miejscu należy zdefiniować informacje IP Failover i odpowiadającą im maskę podsieci (zwykle maska podsieci to 255.255.255.255).
+Potwierdź klikając `Dodaj`{.action}.
 
-![Konfiguracja IP Failover](images/image5-5.png){.thumbnail}
+![Konfiguracja migracji IP](images/image5-5.png){.thumbnail}
 
-#### Etap 4: restart interfejsu sieciowego
+#### Etap 4: uruchom ponownie interfejs sieciowy
 
-Najpierw przeprowadzamy proces wyłączania.
+Wróć do panelu konfiguracyjnego (`Połączenia sieciowe`{.action}), kliknij prawym przyciskiem myszy interfejs sieciowy, a następnie wybierz `Wyłącz`{.action}.
 
 ![dezaktywacja sieci](images/image6.png){.thumbnail}
 
-Następnie proces aktywacji.
+Aby go ponownie uruchomić, kliknij prawym przyciskiem myszy, a następnie wybierz `Aktywuj`{.action}.
 
 ![aktywacja sieci](images/image7.png){.thumbnail}
 
-#### Etap 5: sprawdzenie nowej konfiguracji sieci
+#### Etap 5: sprawdź nową konfigurację sieci
 
-Za pomocą konsoli i polecenia ___ipconfig___ możemy sprawdzić nową konfigurację sieci.
+Otwórz wiersz poleceń (cmd) i wprowadź `ipconfig`. Konfiguracja musi teraz zawierać nowy adres IP Failover.
 
 ![sprawdź aktualną konfigurację sieci](images/image8-8.png){.thumbnail}
 
+### cPanel (CentOS 7) / pochodne Red Hat
 
-### cPanel (na CentOS 6)
+#### Etap 1: zmień plik konfiguracyjny sieci
 
-#### Etap 1: utworzyć plik źródłowy
-
-Najpierw wykonaj kopię pliku źródłowego, aby w każdej chwili wrócić do poprzedniego stanu:
-
-```sh
-cp /etc/ips /etc/ips.bak
-```
-
-#### Etap 2: zmień plik źródłowy
-
-Musisz zmienić plik /etc/ips:
-
-```sh
-editor /etc/ips
-```
-
-Dodaj adres IP Failover do pliku:
+Nazwy interfejsu sieciowego możesz sprawdzić za pomocą polecenia:
 
 ```bash
-IP_FAILOVER:255.255.255.255:IP_FAILOVER
+ip a
 ```
 
-Następnie dodaj adres IP do /etc/ipaddrpool:
+Otwórz plik konfiguracyjny sieci, aby go zmienić:
 
 ```bash
-IP_FAILOVER
+sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
 ```
 
-#### Etap 3: uruchom ponownie interfejs
+Dodaj te linie:
 
-Uruchom ponownie interfejs:
-
-```sh
-/etc/init.d/ipaliases restart
+```bash
+DEVICE=NETWORK_INTERFACE:ID
+BOOTPROTO=static
+IPADDR=IP_FAILOVER
+NETMASK=255.255.255.255
+BROADCAST=IP_FAILOVER
+ONBOOT=yes
 ```
 
-### Plesk Onyx 17.x
+#### Etap 2: uruchom ponownie interfejs
 
-#### Etap 1: dostęp do zarządzania adresami IP w panelu konfiguracyjnym
+Zastosuj zmiany za pomocą polecenia:
 
-Przejdź do sekcji ```Tools & Settings``` >```IP Addresses```:
+```bash
+sudo systemctl restart networking
+```
+
+### Plesk
+
+#### Etap 1: dostęp do interfejsu zarządzania adresami IP Plesk
+
+W panelu konfiguracyjnym Plesk wybierz `Tools & Settings`{.action} na pasku bocznym po lewej stronie.
 
 ![dostęp do zarządzania adresami IP](images/pleskip1.png){.thumbnail}
 
+Kliknij `IP Addresses`{.action} w **Tools & Settings**.
+
 #### Etap 2: dodaj dodatkowe informacje IP
 
-Kliknij przycisk `Add IP Address`{.action}:
+W tej sekcji kliknij przycisk `Add IP Address`{.action}.
 
 ![dodaj informacje IP](images/pleskip2-2.png){.thumbnail}
 
-Następnie wprowadź dodatkowe informacje IP do formularza i kliknij `OK`{.action}.
+Wprowadź adres IP Failover w formie `xxx.xxx.xxx.xxx/32` w polu "IP address and subnet mask", a następnie kliknij `OK`{.action}.
 
 ![dodaj informacje IP](images/pleskip3-3.png){.thumbnail}
 
-#### Etap 3: sprawdź aktualną konfigurację IP w panelu konfiguracyjnym Plesk
+#### Etap 3: sprawdź aktualną konfigurację IP
+
+W sekcji "IP Addresses" sprawdź, czy adres IP Failover został poprawnie dodany.
 
 ![aktualna konfiguracja IP](images/pleskip4-4.png){.thumbnail}
 
-### Naprawa
+### Diagnostyka
 
-Jeśli nie udaje Ci się nawiązać połączenia między siecią publiczną a adresem IP aliasu i podejrzewasz problem z siecią, uruchom serwer w trybie Rescue i skonfiguruj alias bezpośrednio na serwerze.
+Po pierwsze, zrestartuj serwer za pomocą wiersza poleceń lub interfejsu użytkownika. Jeśli nadal nie udaje Ci się nawiązać połączenia między siecią publiczną a adresem IP aliasu i podejrzewasz problem z siecią, zrestartuj serwer w [trybie rescue]((../rescue/). Następnie możesz skonfigurować adres IP Failover bezpośrednio na serwerze.
 
-W tym celu, po zrestartowaniu serwera w trybie Rescue, wprowadź następującą komendę:
+Po zalogowaniu się do serwera przez SSH wprowadź następującą komendę:
 
-```sh
-ifconfig ens3:0 FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP up
+```bash
+ifconfig ens3:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER up
 ```
 
-Zastąp FAILOVER_IP rzeczywistym adresem IP Failover.
-
-Następnie wystarczy wysłać ping do IPFO z zewnątrz. Jeśli to działa, prawdopodobnie oznacza to, że należy usunąć błąd konfiguracji. Jeśli natomiast IP nadal nie działa, poinformuj o tym nasz zespół, wysyłając zgłoszenie z poziomu Panelu [klienta OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new), aby uzyskać więcej informacji.
+Aby przetestować połączenie, wystarczy wysłać ping na adres IP Failover z zewnątrz. Jeśli odpowiada w trybie Rescue, prawdopodobnie oznacza to, że wystąpił błąd w konfiguracji. Jeśli jednak adres IP nadal nie działa, poinformuj o tym zespół pomocy technicznej OVHcloud, wysyłając zgłoszenie serwisowe w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
  
-## Idź dalej
+## Sprawdź również
 
 [Włącz tryb Rescue na serwerze VPS](../rescue/)
 
-Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

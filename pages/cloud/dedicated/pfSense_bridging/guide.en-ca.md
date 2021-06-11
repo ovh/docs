@@ -211,7 +211,7 @@ Now we should be done! You should see that web browsing can be done just like a 
 
 For choosing the correct virtual interfaces, OS type, etc. for Proxmox, we were following Netgate’s recommendations. If you’re not going to be using Proxmox, we’d suggest to review the following links to their documentation on the subject.
 
-[https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox.html](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox.html){.external}
+[https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox.html](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox-ve.html){.external}
 
 [https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-esxi.html#installing-pfsense-software-on-vsphere-6-x-using-vsphere-web-client](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-esxi.html#installing-pfsense-software-on-vsphere-6-x-using-vsphere-web-client){.external}
 

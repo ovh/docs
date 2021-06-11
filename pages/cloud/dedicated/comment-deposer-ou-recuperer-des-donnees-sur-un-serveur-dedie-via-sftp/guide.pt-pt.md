@@ -5,7 +5,13 @@ excerpt: 'Transfira informações do servidor dedicado para o computador pessoal
 section: Tutoriais
 ---
 
-## Introdução
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 18/05/2021**
+
+## Objetivo
 
 Se precisar de migrar os seus dados, é possível que tenha de os descarregar do seu servidor dedicado para os guardar noutra máquina. Existem diferentes formas de realizar esta operação, nomeadamente o protocolo SFTP (Secure File Transfert Protocol) que permite transferir de forma fácil e rápida ficheiros através de uma ligação segura por SSH.
 
@@ -13,80 +19,58 @@ Se precisar de migrar os seus dados, é possível que tenha de os descarregar do
 
 > [!warning]
 >
-Este tutorial explica a utilização de uma ou várias soluções da OVH através de ferramentas externas e descreve as operações realizadas num contexto preciso. Deverá adaptá-las consoante a sua situação. Se necessitar de ajuda, recomendamos que entre em contacto com um fornecedor especializado ou que partilhe as suas dúvidas com o resto da nossa comunidade: <https://community.ovh.com/en/>. A OVH não lhe poderá fornecer assistência.
+Este tutorial explica a utilização de uma ou várias soluções da OVHcloud através de ferramentas externas e descreve as operações realizadas num contexto preciso. Deverá adaptá-las consoante a sua situação. Se necessitar de ajuda, recomendamos que entre em contacto com um fornecedor especializado ou que partilhe as suas dúvidas com o resto da nossa comunidade: <https://community.ovh.com/en/>. A OVHcloud não lhe poderá fornecer assistência.
 >
-
 
 ## Requisitos
 
-
-### O que precisa de saber
-
-*     Ter conhecimentos de gestão em Linux.
-*     Saber ligar-se através de SSH.
-*     Poder instalar uma distribuição (neste tutorial, utilizaremos uma distribuição Debian 9.4).
-
-
-### O que precisa de ter
-
-*     Dispor de, pelo menos, um servidor dedicado da OVH.
-*     Dispor de um software compatível com SFTP (neste tutorial, utilizaremos [FileZilla](https://filezilla-project.org/)).
-
+- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external} no qual é instalada uma distribuição GNU/Linux.
+- Um cliente FTP que gere as ligações SFTP (este guia documenta a utilização do [FileZilla](https://filezilla-project.org/){.external}).
+- Um acesso administrativo via SSH ao seu servidor.
 
 ## Instruções
 
+### Utilizar o FileZilla para recuperar e registar os seus dados
 
-### 1 - Descarregar os dados
+O protocolo SFTP pode ser utilizado para transferir ficheiros através de uma ligação segura (SSH). Existem duas possibilidades para este cenário: tem um acesso normal ao servidor ou liga-se em [modo rescue](../rescue_mode/).
 
-Por predefinição, um servidor instalado num sistema Linux dispõe de um acesso SSH através da porta 22.
+Por predefinição, um servidor que utilize um sistema operativo GNU/Linux terá acesso SSH através da porta 22. No entanto, poderá já ter alterado esta porta (por exemplo, seguindo o [nosso guia para proteger um servidor dedicado](../proteger-um-servidor-dedicado/)).
 
-O protocolo SFTP (Secure File Transfert Protocol) permite transferir ficheiros através de uma ligação segura SSH. Explicaremos como utilizar este protocolo em duas situações: quando o utilizador dispõe de um acesso ao servidor e quando o servidor está em modo Rescue.
+#### Se tem acesso ao seu servidor
 
+Na interface gráfica do FileZilla, introduza o endereço IP do seu servidor no campo `Host`, assim como o seu nome de utilizador e a sua palavra-passe nos respetivos campos. No que diz respeito ao campo `Port`, introduza "22" ou a porta que o seu serviço SSH escuta se a alterou.
 
-#### Quando o utilizador dispõe de um acesso ao servidor
+Uma vez estabelecida a ligação, aparecerá uma arborescência dos seus ficheiros na parte `Site remota`.
 
-Em FileZilla, indique o seu IP no campo “Host” e, a seguir, utilize o seu nome de utilizador e palavra-passe “root”. No campo “Port”, indique o número “22” ou a porta do seu serviço SSH caso a tenha modificado.
+![Remote site sftp](images/sftp_sd_01.png){.thumbnail}
 
-A ligação fica assim estabelecida e a estrutura em árvore é apresentada na rubrica “Remote site”.
+No nosso exemplo, os dados a recuperar encontram-se na pasta "/home/data". Pode arrastar e largar ficheiros para a esquerda (`Local` Site) a partir da parte direita (`Remote` Site) para os registar no seu dispositivo local.
 
- 
-![Remote site sftp](images/sftp_ds_01.png)
- 
+Para colocar ficheiros no servidor, deslize-largue dos seus ficheiros a partir da pasta local para a pasta de destino remota situada na parte direita.
 
-Poderá arrastar e largar os dados que pretende descarregar a partir da janela da direita (`remote site`) para a janela da esquerda (`Local site`), para os guardar no seu computador pessoal. No nosso exemplo, os dados estão no ficheiro “/home/data”, visível a partir da janela da direita (`remote site`).
+O progresso da transferência de dados aparece na parte inferior da interface do FileZilla.
 
-Poderá seguir o progresso da transferência na parte inferior da janela.
+![progresso da transferência sftp](images/sftp_sd_02.png){.thumbnail}
 
- 
-![Progresso da transferência sftp](images/sftp_ds_02.png)
+#### Se o servidor estiver em modo rescue
 
+Em modo rescue, primeiro deve montar a sua partição. Para isso, siga as instruções indicadas [neste manual](../rescue_mode/).
 
-#### Quando o servidor está em modo Rescue 
-
-Em modo Rescue, deverá começar por montar a sua partição. Para isso, deve seguir os passos descritos no manual [Ativar e utilizar o modo rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/).
-
-Depois de montar a partição, volte a aceder ao software (FileZilla, neste caso) na porta 22.
-
+Depois de montar a partição, utilize o cliente FileZilla da forma descrita acima, utilizando a porta 22 para a ligação ao seu servidor.
 
 > [!primary]
 >
-> As credenciais que deve utilizar são as que foram enviadas por e-mail no momento da passagem para o modo Rescue.
+> As informações de identificação que deve utilizar são enviadas por e-mail quando ativar o modo rescue no seu servidor.
 >
 
+Se criou corretamente o ponto de montagem, os dados encontram-se no diretório "/mnt" ("/mnt/home/data" neste exemplo).
 
-Se realizou o ponto de montagem corretamente, os dados estarão presentes no diretório “/mnt” (“/mnt/data/” no nosso exemplo).
+![modo rescue - sftp do site remoto](images/sftp_sd_03.png){.thumbnail}
 
- ![Remote site sftp modo Rescue](images/sftp_ds_03.png)
+## Saiba mais
 
- 
-### 2 - Carregar os dados para o servidor
+[Modo rescue](../rescue_mode/)
 
-Para importar os dados para o servidor, deverá seguir o mesmo procedimento: ligar-se à porta 22 por SFTP com o nome de utilizador root e seguir os passos abaixo.
+[Proteger um servidor dedicado](../proteger-um-servidor-dedicado/)
 
-Depois de se ligar ao servidor no qual pretende carregar os dados, poderá voltar a arrastar e largar os dados. No entanto, desta vez deverá fazê-lo a partir da janela da esquerda (`Local site`) para a janela da direita (`Remote site`), de forma a transferir as informações do seu computador pessoal para o servidor.
-
-## Conclusão
-
-Já sabe como carregar e descarregar dados num servidor dedicado através de SFTP.
-
-Para obter mais informações, não hesite em partilhar a sua experiência com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
+Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.

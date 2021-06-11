@@ -31,7 +31,7 @@ order: 6
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy [Strapi](https://strapi.io/) headless CMS on it.
+You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy [Strapi](https://strapi.io/){.external} headless CMS on it.
 
 This guide will explain how to do it.
 
@@ -73,6 +73,13 @@ Now let's go into the `www` folder and create the entrypoint `index.js`:
 const strapi = require('strapi');
  
 strapi(/* {...} */).start();
+```
+
+Build admin UI site : 
+
+```sh
+cd www
+yarn build
 ```
 
 Create also an `.htaccess` file to manage HTTPS redirection:

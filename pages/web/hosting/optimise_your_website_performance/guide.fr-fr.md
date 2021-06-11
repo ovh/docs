@@ -10,14 +10,13 @@ section: 'Optimiser son site'
 
 ## Objectif
 
-
 Ce guide est destiné aux clients qui souhaitent améliorer le rendement de leur site web.
 Il vous permettra d’acquérir des connaissances fondamentales au sujet des facteurs qui peuvent affecter le rendement des sites web.
 
 **Découvrez comment améliorer le rendement de votre site web.**
 
 > [!warning]
-> Ce cas d’application vous montrera comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes. Il décrit les mesures à appliquer dans un contexte précis. Veuillez noter que ces mesures doivent être adaptées à votre cas particulier. Si vous éprouvez des difficultés à appliquer ces mesures, veuillez contacter un prestataire de services spécialisés et/ou posez la question à notre communauté sur <https://community.ovh.com/en/>. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
+> Ce cas d’application vous montrera comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes. Il décrit les mesures à appliquer dans un contexte précis. Veuillez noter que ces mesures doivent être adaptées à votre cas particulier. Si vous éprouvez des difficultés à appliquer ces mesures, veuillez contacter un prestataire de services spécialisés et/ou posez la question à notre communauté sur <https://community.ovh.com/>. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
 
 ## Prérequis
 
@@ -244,4 +243,4 @@ Vous trouvez une comparaison de nos offres sur [sur le site du produit](https://
 
 [Premiers pas avec le service SQL privé](../premiers-pas-avec-sql-prive){.external}
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

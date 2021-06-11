@@ -30,25 +30,25 @@ order: 2
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y déployer [Camaleon](http://camaleon.tuzitio.com/), un CMS flexible vous permettant de créer une structure de contenu personnalisée sans avoir à coder.
+Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y déployer [Camaleon](http://camaleon.tuzitio.com/){.external}, un CMS flexible vous permettant de créer une structure de contenu personnalisée sans avoir à coder.
 
 **Découvrez comment installer Camaleon sur votre hébergement web POWER**
 
 ## Prérequis
 
-- Disposer d'une de l'offre d'hébergement web POWER [Ruby](https://labs.ovh.com/managed-ruby).
+- Disposer de l'offre d'hébergement web POWER [Ruby](https://labs.ovh.com/managed-ruby).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
+Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) » avant de poursuivre la lecture de ce guide.
 
 ## En pratique
 
 Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
-- Moteur : ruby 2.6 
-- Point d'entrée : config.ru 
-- Dossier racine : www 
-- Environment: development 
+- Moteur : ruby 2.6
+- Point d'entrée : config.ru
+- Dossier racine : www
+- Environment: development
 
 > [!alert]
 >
@@ -57,12 +57,12 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration).
 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER. 
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
 
-Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas d'exporter votre `gempath`ou l'installation du bundle va échouer :
+Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas d'exporter votre `gempath` ou l'installation du bundle va échouer :
 
 ```sh
 rm -rf www
@@ -103,7 +103,6 @@ rake db:migrate
 rake assets:precompile
 ```
 
-
 Déclarez votre nom de domaine sur liste blanche dans `www/config/environments/development.rb` :
 
 ```ruby
@@ -123,11 +122,9 @@ development:
   check_yarn_integrity: false
 ```
 
-[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre CMS Camaleon sera en ligne.
-
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre CMS Camaleon sera alors en ligne.
 
 ![Camaleon](images/ruby-install-camaleon-01.png){.thumbnail}
-
 
 Sortie de la console:
 
@@ -258,9 +255,8 @@ I, [2021-02-03T21:06:42.781108 #6031]  INFO -- : Creating symlink /home/powerlp/
 ~/www $ touch tmp/restart.txt
 </code></pre>
 
-
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
-**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting)**
+**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting).**

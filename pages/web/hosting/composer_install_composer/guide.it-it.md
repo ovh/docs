@@ -1,5 +1,5 @@
 ---
-title: Installare Comporre su un hosting Web
+title: Installare Composer su un hosting Web
 slug: installare-di-comporre-sugli-hosting-condivisi
 legacy_guide_number: 1894
 excerpt: Scopri come installare e fare i primi passi su Composer.
@@ -14,7 +14,7 @@ section: PHP
 
 ## Obiettivo
 
-[Comporre](https://getcomposer.org/){.external} è un gestore di dipendenze creato per il linguaggio PHP. Permette agli sviluppatori PHP di includere librerie esterne nei loro programmi. "Composer" ha permesso ai progetti PHP di semplificare la distribuzione delle librerie e la manutenzione del loro codice. Inoltre, dalla creazione di questo strumento, sono state proposte numerose buone pratiche di sviluppo all'interno della comunità PHP e hanno migliorato le librerie della comunità PHP. Tali buone pratiche sono documentate sotto forma di [PSR](http://www.php-fig.org/){.external}.
+[Composer](https://getcomposer.org/){.external} è un gestore di dipendenze creato per il linguaggio PHP. Permette agli sviluppatori PHP di includere librerie esterne nei loro programmi. "Composer" ha permesso ai progetti PHP di semplificare la distribuzione delle librerie e la manutenzione del loro codice. Inoltre, dalla creazione di questo strumento, sono state proposte numerose buone pratiche di sviluppo all'interno della comunità PHP e hanno migliorato le librerie della comunità PHP. Tali buone pratiche sono documentate sotto forma di [PSR](http://www.php-fig.org/){.external}.
 
 **Come installare e fare i primi passi su Composer**
 

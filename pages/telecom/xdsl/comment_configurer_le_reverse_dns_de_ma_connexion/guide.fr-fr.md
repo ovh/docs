@@ -24,7 +24,7 @@ Niveau : Débutant
 -   Un nom de domaine (ou sous-domaine) redirigeant vers l'adresse IP de votre accès xDSL.
 -   Un accès xDSL OVH.
 
-Pour le moment il n'est pas possible de configurer les Reverse DNS des blocs IP ([Commander et gérer un bloc IP /29]({legacy}7962652)) fournis en option sur nos accès.
+Pour le moment il n'est pas possible de configurer les Reverse DNS des blocs IP ([Commander et gérer un bloc IP /29](../comment-commander-et-gerer-un-bloc-ip-29/)) fournis en option sur nos accès.
 
 ### Vérifier que le nom de domaine soit bien configuré {#vérifier-que-le-nom-de-domaine-soit-bien-configuré}
 

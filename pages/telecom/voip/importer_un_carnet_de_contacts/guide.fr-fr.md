@@ -93,7 +93,7 @@ Pour supprimer un carnet de contacts, cliquez sur le bouton `Supprimer le carnet
 
 Afin que votre téléphone puisse utiliser le carnet de contacts ou récupérer les éventuelles modifications effectuées dans celui-ci, commencez par le redémarrer. Une fois votre téléphone redémarré, il devrait avoir téléchargé le nouveau carnet de contacts.
 
-À noter que si vous utilisez un téléphone Cisco, seul le numéro du contact sera affiché (et non son nom et son prénom) lors d'un appel entrant, même si ce dernier est présent dans le carnet de contacts dans votre espace client. Ce comportement est spécifique aux téléphones Cisco. Si vous souhaitez afficher le nom de vos correspondants, vous devrez enregistrer ces informations dans votre téléphone. 
+À noter que si vous utilisez un téléphone Cisco ou Gigaset, seul le numéro du contact sera affiché (et non son nom et son prénom) lors d'un appel entrant, même si ce dernier est présent dans le carnet de contacts dans votre espace client. Ce comportement est spécifique aux téléphones Cisco et Gigaset. Si vous souhaitez afficher le nom de vos correspondants, vous devrez enregistrer ces informations dans votre téléphone.
 
 ## Aller plus loin
 

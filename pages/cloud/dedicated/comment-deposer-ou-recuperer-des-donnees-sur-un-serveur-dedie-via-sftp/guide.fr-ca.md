@@ -1,92 +1,72 @@
 ---
-title: 'Comment déposer ou récupérer des données sur un serveur dédié via SFTP'
+title: 'Récupérer et déposer des données sur un serveur dédié via SFTP'
 slug: deposer-et-recuperer-donnees-via-sftp
-excerpt: 'Transférez simplement les informations de votre serveur dédié vers votre ordinateur personnel et inversement'
+excerpt: 'Découvrez comment transférer facilement des données depuis et vers votre serveur dédié'
 section: Tutoriel
 ---
 
-## Introduction
+**Dernière mise à jour le 18/05/2021**
 
-Dans le cadre d'une migration, vous pouvez être amené à devoir récupérer les données d'un serveur dédié pour les déposer ensuite sur une autre machine. S'il existe différentes manières de procéder, le protocole SFTP (Secure File Transfert Protocol) permet de transférer simplement et rapidement des fichiers par une connexion sécurisée SSH.
+## Objectif
 
-**Ce tutoriel va donc illustrer comment déposer ou récupérer des données sur un serveur dédié via SFTP.**
+Dans le cadre d'une migration, vous pouvez être amené à devoir récupérer les données d'un serveur dédié pour les déposer ensuite sur un autre serveur. S'il existe différentes manières de procéder, le protocole SFTP (Secure File Transfert Protocol) permet de transférer simplement et rapidement des fichiers via une connexion SSH sécurisée.
+
+**Découvrez comment déposer ou récupérer des données sur un serveur dédié via SFTP.**
 
 > [!warning]
 >
-Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVHcloud avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation ! Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVHcloud ne sera pas en mesure de vous fournir une assistance.
+Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVHcloud avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation. Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVHcloud ne sera pas en mesure de vous fournir une assistance.
 >
-
 
 ## Prérequis
 
-
-### Ce que vous devez savoir
-
-*     Avoir des notions d'administration Linux.
-*     Savoir se connecter en SSH.
-*     Pouvoir installer une distribution (ce tutoriel emploiera une distribution Debian 9.4).
-
-
-### Ce que vous devez avoir
-
-*     Posséder au moins un serveur dédié OVHcloud.
-*     Disposer d'un logiciel supportant le SFTP (ce tutoriel emploiera le logiciel [FileZilla](https://filezilla-project.org/))
-
+- Un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} sur lequel une distribution GNU/Linux est installée.
+- Un client FTP qui prend en charge les connexions SFTP (ce guide documente l'utilisation de [FileZilla](https://filezilla-project.org/){.external}).
+- Un accès administratif via SSH à votre serveur.
 
 ## En pratique
 
+### Utiliser FileZilla pour récupérer et déposer vos données
 
-### Étape 1 : récupérez vos données
+Le protocole SFTP peut être utilisé pour transférer des fichiers via une connexion sécurisée (SSH). Il existe deux possibilités pour ce scénario : soit vous disposez d'un accès normal à votre serveur, soit vous vous y connectez en [mode rescue](../ovh-rescue/).
 
-Par défaut, un serveur installé sur un système Linux disposera d'un accès SSH, via le port 22.
+Par défaut, un serveur utilisant un système d'exploitation GNU/Linux aura un accès SSH via le port 22. Cependant, vous avez peut-être déjà modifié ce port (par exemple en suivant [notre guide pour sécuriser un serveur dédié](../securiser-un-serveur-dedie/)).
 
-Le protocole SFTP (Secure File Transfert Protocol) permet de transférer des fichiers à travers une connexion sécurisée SSH. Nous allons donc voir comment utiliser ce protocole dans deux situations : lorsque vous disposez d'un accès à votre serveur et lorsque votre serveur est en mode « rescue ».
+#### Si vous avez accès à votre serveur
 
+Dans l'interface graphique de FileZilla, entrez l'adresse IP de votre serveur dans le champ `Hôte`, ainsi que votre nom d'utilisateur et votre mot de passe dans les champs respectifs. En ce qui concerne le champ `Port`, entrez « 22 » ou le port que votre service SSH écoute si vous l'avez modifié.
 
-#### Lorsque vous disposez d'un accès à votre serveur
+Dès que la connexion est établie, une arborescence de vos fichiers s'affiche dans la partie `Site distant`.
 
-Dans FileZilla, saisissez votre IP dans le champ « Hôte ». Puis utilisez votre identifiant « root » ainsi que votre mot de passe. Concernant le port, renseignez le « 22 » ou celui de votre service SSH si vous l'avez modifié.
+![site distant sftp](images/sftp_sd_01.png){.thumbnail}
 
-La connexion est maintenant établie et votre arborescence s'affiche dans la rubrique « site distant ».
+Dans notre exemple, les données à récupérer se trouvent dans le dossier « /home/data ». Vous pouvez faire un glisser-déposer des fichiers à télécharger depuis le volet de droite (`Site distant`) vers le volet de gauche (`Site local`) pour les enregistrer sur votre périphérique local.
 
- 
-![site distant sftp](images/sftp_ds_01.png)
- 
+Pour déposer des fichiers sur le serveur, faites un glisser-déposer de vos fichiers depuis votre dossier local vers le dossier de destination distant siuté dans le volet de droite.
 
-Vous pouvez faire un glisser-déposer des données à récupérer depuis la fenêtre de droite (`serveur distant`) vers la fenêtre de gauche (`site local`), afin de les sauvegarder sur votre ordinateur personnel. Dans notre situation, les informations sont présentes dans le dossier « /home/data », visible depuis la fenêtre de droite (`serveur distant`).
+La progression du transfert de données s'affiche alors en bas de l'interface de FileZilla.
 
-L'avancement du transfert est ensuite détaillé en bas de votre fenêtre FileZilla :
+![progression du transfert sftp](images/sftp_sd_02.png){.thumbnail}
 
- 
-![progression transfert sftp](images/sftp_ds_02.png)
+#### Si votre serveur est en mode rescue
 
+En mode rescue, vous devez d'abord monter votre partition. Pour ce faire, vous pouvez suivre les instructions indiquées dans [ce guide](../ovh-rescue/).
 
-#### Lorsque votre serveur est en mode rescue 
-
-En mode rescue, il est d'abord nécessaire de monter votre partition. Pour ce faire, nous vous invitons à effectuer les manipulations décrites dans [ce guide](../ovh-rescue/).
-
-Une fois votre partition montée, connectez-vous de nouveau avec votre logiciel (ici FileZilla) sur le port 22.
-
+Une fois la partition montée, utilisez le client FileZilla de la même manière que décrite ci-dessus, en utilisant le port 22 pour la connexion à votre serveur.
 
 > [!primary]
 >
-> Les identifiants à utiliser sont ceux envoyés par e-mail lors de la mise en rescue.
+> Les informations d'identification que vous devez utiliser vous sont envoyées par e-mail lorsque vous activez le mode rescue sur votre serveur.
 >
 
+Si vous avez correctement créé le point de montage, les données se trouvent dans le répertoire « /mnt » (« /mnt/home/data » dans cet exemple).
 
-Si vous avez correctement effectué le point de montage, les données seront présentes au sein du répertoire « /mnt » (soit « /mnt/data/ » dans notre exemple).
+![mode rescue - sftp du site distant](images/sftp_sd_03.png){.thumbnail}
 
- ![site distant sftp mode rescue](images/sftp_ds_03.png)
+## Aller plus loin
 
- 
-### Étape 2 : déposez vos données sur le serveur
+[Mode rescue](../ovh-rescue/)
 
-Le principe de connexion est ici identique : vous devez utiliser une connexion sur le port 22 en SFTP avec votre identifiant root, en suivant les instructions détaillées ci-dessus.
+[Sécuriser un serveur dédié](../securiser-un-serveur-dedie/)
 
-Une fois connecté au serveur sur lequel vous souhaitez déposer des données, vous pourrez de nouveau effectuer un glisser-déposer. Mais, cette fois, depuis la fenêtre de gauche (`site local`) vers la fenêtre de droite (`site distant`), afin de transférer les informations de votre ordinateur personnel sur votre serveur.
-
-## Conclusion
-
-Vous savez maintenant comment déposer ou récupérer des données sur un serveur dédié via SFTP.
-
-Pour aller plus loin, n'hésitez pas à échanger avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

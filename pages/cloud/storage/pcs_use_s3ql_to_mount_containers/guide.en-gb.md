@@ -47,7 +47,7 @@ fs-passphrase: PASSPHRASE
 OS_PROJECT_ID, OS_USERNAME and OS_PASSWORD parameters can be found in your OpenRC file.
 You can follow this guide below in order to retrieve it:
 
-- [Access and Security in Horizon]({legacy}1774)
+- [Access and Security in Horizon](https://docs.ovh.com/gb/en/public-cloud/access_and_security_in_horizon/)
 
 
 The REGION_NAME and CT_NAME arguments can be adapted according the name and location of your object container. 
@@ -100,7 +100,7 @@ tmpfs 393M 5.2M 388M 2% /run
 tmpfs 982M 0 982M 0% /dev/shm
 tmpfs 5.0M 0 5.0M 0% /run/lock
 tmpfs 982M 0 982M 0% /sys/fs/cgroup
-swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
+swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME 1.0T 0 1.0T 0% /mnt/container
 ```
 
 

@@ -16,13 +16,13 @@ section: CMS
 
 Prestashop. Pour vous aider, chacune des étapes est détaillée. Pour toute demande précise liée au CMS, nous vous invitons à vous rapprocher de l'éditeur du CMS, ou des communautés en rapport avec celui-ci.
 
-Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide]({legacy}1375){.ref}.
+Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide](../mutualise-installer-manuellement-mon-cms/).
 
 Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu){.external}, ils ont généralement besoin d'une plateforme d'hébergement comprenant un serveur FTP, une base de données, et un nom de domaine.
 
 Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/fr/hebergement-web/){.external}.
 
-*Si vous souhaitez installer Prestashop de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* []({legacy}1402){.ref}
+*Si vous souhaitez installer Prestashop de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [](../modules-en-1-clic/)
 
 
 ## PrestaShop
@@ -62,7 +62,7 @@ Le dossier cible sera intitulé " **prestashop** "
 
 Pour déposer les fichiers de  **PrestaShop**  sur votre hébergement, vous devez tout d'abord vous connecter à celui-ci.
 
-*Un guide est disponible concernant la connexion en FTP sur l'offre mutualisée :* []({legacy}1374){.ref}
+*Consultez notre guide pour [se connecter à l’espace de stockage de son hébergement web](../connexion-espace-stockage-ftp-hebergement-web/)*
 
 
 ![hosting](images/3161.png){.thumbnail}
@@ -197,7 +197,8 @@ Vous trouverez ici un aperçu du panel d'administration de PrestaShop.
 
 
 ### Informations utiles
-**Le support d'OVH ne sera pas habilité à vous répondre pour toute demande d'aide concernant la configuration de votre PrestaShop.** **Cependant, un guide d'utilisation est à votre disposition** : []({legacy}2053){.ref} **.**
+
+**Le support d'OVH ne sera pas habilité à vous répondre pour toute demande d'aide concernant la configuration de votre PrestaShop.**
 
 Nous vous invitons à consulter les forums dédiés à la solution PrestaShop.
 

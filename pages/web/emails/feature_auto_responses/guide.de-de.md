@@ -1,88 +1,79 @@
 ---
-title: 'Einrichten von Auto-Antworten'
-excerpt: 'Einrichten von Auto-Antworten'
+title: 'Einrichten von Auto-Antworten für E-Mails'
+excerpt: 'Erfahren Sie, wie Sie einen E-Mail-Responder einrichten'
 slug: einrichten_von_auto-antworten
 section: 'E-Mail Account Funktionen'
 order: 2
 legacy_guide_number: g2052
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 28.08.2020**
+
+## Ziel
+
+Mit diesem OVHcloud Feature können Sie einen automatischen E-Mail-Responder einrichten, der eine Nachricht für Personen hinterlässt, die in Ihrer Abwesenheit versuchen, Sie per E-Mail zu kontaktieren.
+
+**Diese Anleitung erklärt, wie Sie einen E-Mail-Responder einrichten.**
+
 ## Voraussetzungen
 
-- Zugang zum Kundencenter
-- Nutzung eines OVH Angebots, das die Erstellung von E-Mails erlaubt
-- Verwendung der MX* Server von OVH
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) oder MX Plan in Ihrem Kunden-Account.
 
+## Praktische Anwendung
 
-*Weitere Informationen zu MX finden Sie in folgender Anleitung: []({legacy}2003)
+> [!primary]
+>
+> Wenn Ihre E-Mail-Adresse Teil eines [**Exchange Dienstes**](https://www.ovh.de/emails/hosted-exchange/), [**Email Pro Dienstes**](https://www.ovh.de/emails/email-pro/) ist oder der Bereich für Auto-Antworten in Ihrem Kundencenter fehlt, können Sie automatische Antworten stattdessen über Ihr OWA-Webmail erstellen, indem Sie die Anleitung "[Einrichten einer automatischen Antwort in OWA](../../microsoft-collaborative-solutions/exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)" heranziehen.
 
+### Anlegen des Responders
 
-## Verbindung zum Kundencenter
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Wechseln Sie zum Bereich `Web Cloud`{.action} und wählen Sie dann Ihre Domain unter `E-Mails`{.action} aus. Klicken Sie dann im Tab `E-Mails`{.action} auf den Button `Verwaltung der Auto-Antworten`{.action}.
 
-- Loggen Sie sich mit Ihrer Kundenkennung (nic-handle) und dem zugehörigen Passwort in Ihr [Kundencenter](https://www.ovh.com/manager/web) ein.
+Sie gelangen zum Bereich `Verwaltung der Auto-Antworten`, das alle Responder für die gewählte Domain anzeigt.
 
+Klicken Sie auf `Eine Auto-Antwort hinzufügen`{.action}, um einen neuen Responder anzulegen.
 
+![Hosting](images/email_responder01.gif){.thumbnail}
 
-![](images/img_3592.jpg){.thumbnail}
+Füllen Sie nun im Popup-Fenster das Formular gemäß den folgenden Angaben aus:
 
+#### `Art der Auto-Antwort`
 
-## Auswahl der Domain des Mailing-Angebots
-Wenn Sie eingeloggt sind, klicken Sie im Menü links auf E-Mails und wählen Sie anschließend die gewünschte Domain aus.
+- **An eine Mailbox gebunden**: zu verwenden, wenn es sich um ein bestehendes E-Mail-Konto Ihres E-Mail-Dienstes handelt.
+- **Frei**: für eine Alias-Adresse zu verwenden. Ein Alias ist nicht mit einem bestehenden Konto verknüpft.
 
-![](images/img_3600.jpg){.thumbnail}
+#### `Mailbox` oder `Name der Auto-Antwort` 
 
+- Wählen Sie den vom Responder betroffenen E-Mail-Account aus. 
+- Für den "Frei"-Modus geben Sie hier die Alias-Adresse ein.
 
-## Menüpunkt E-Mails
-Um Ihre Auto-Antworten zu verwalten, wählen Sie den Menüpunkt "E-Mails" (1) und klicken Sie anschließend rechts auf "Verwaltung der Auto-Antworten" (2).
+#### `Verwendungszeitraum der Auto-Antwort:`
 
-![](images/img_3597.jpg){.thumbnail}
+- **Temporär**: Definieren Sie ein Start- und Enddatum für den Responder, z.B. wenn Sie eine Abwesenheit planen.
+- **Permanent**: Die automatischen Antworten bleiben aktiv, bis Sie den Responder löschen oder ändern.
 
+#### `Die Nachrichten auf dem Server belassen` oder `Eine Kopie versenden`
 
-## Verwaltung der Auto-Antworten
-Dann klicken Sie rechts auf "Eine Auto-Antwort hinzufügen".
+- Wählen Sie hier, ob während Ihrer Abwesenheit empfangene E-Mails gelöscht oder aufbewahrt werden sollen.
+    - **Nachricht**: Dies ist die Antwort auf eingehende Mails, solange der Responder aktiv ist.
+    - **Adresse in Kopie** (nur "Frei"-Modus): Wenn die Empfangsadresse ein Alias ist, müssen Sie das E-Mail-Konto auswählen, in dem eingehende Nachrichten gespeichert werden.
 
-![](images/img_3598.jpg){.thumbnail}
+> [!warning]
+> Wenn Sie diese Option deaktivieren, werden Nachrichten, die während Ihrer Abwesenheit eingegangen sind, automatisch gelöscht.
 
+Wenn alle Pflichtfelder ausgefüllt sind, klicken Sie auf `Bestätigen`{.action}, um den Responder zu erstellen.
 
-## Konfiguration der Auto-Antwort
-Typ der Auto-Antwort (1):
+### Änderung oder Löschung des Responders
 
-- "An eine Mailbox gebunden" (wenn Sie eine existierende Mailbox verwenden und kein Alias).
-- "Frei" (wenn Sie ein Alias verwenden).
+Ihre Responder werden in der Tabelle im Bereich `Verwaltung der Auto-Antworten` Ihres E-Mail-Dienstes angezeigt. Sie können einen Responder löschen oder ändern, indem Sie auf `...`{.action} rechts davon klicken.
 
-Mailbox:
-- die E-Mail-Adresse/das Alias, für die/das Sie die Auto-Antwort einrichten.
+![Hosting](images/email_responder02.png){.thumbnail}
 
-Verwendungszeitraum der Auto-Antwort (2):
-- "Temporär": Geben Sie Anfangs- und Enddatum für Ihre Auto-Antwort an (wenn Sie beispielsweise im Urlaub nicht erreichbar sind).
+## Weiterführende Informationen
 
-- "Permanent": Die Auto-Antwort wird so lange versendet, bis Sie sie deaktivieren.
-
-Die Nachrichten auf dem Server belassen bzw. Eine Kopie versenden (3):
-- Setzen Sie hier das Häkchen, wenn Sie eine Kopie der Nachricht
-
-speichern möchten. Wenn Sie eine "freie" Auto-Antwort einrichten, müssen Sie die E-Mail-Adresse angeben, an die eine Kopie der Nachricht verschickt werden soll.
-
-Nachricht (4):
-
-- Ihre Auto-Antwort. Diese Nachricht werden die Personen erhalten, die Ihnen im definierten Zeitraum eine E-Mail schicken.
-
-Bestätigung (5):
-- Klicken Sie anschließend auf "bestätigen", um die Auto-Antwort zu aktivieren.
-
-
-
-![](images/img_3589.jpg){.thumbnail}
-
-- Anschließend wird die Aktivierung der Auto-Antwort bestätigt.
-
-
-
-![](images/img_3590.jpg){.thumbnail}
-
-
-## Anzeige der Auto-Antwort
-Nun erscheint die soeben eingerichtete Auto-Antwort in der Liste der Auto-Antworten. Wenn Sie die Auto-Antwort löschen oder ändern wollen, klicken Sie auf das kleine Zahnrad rechts.
-
-![](images/img_3599.jpg){.thumbnail}
-
+Für den Austausch mit unserer User Community gehen Sie auf https://community.ovh.com/en/

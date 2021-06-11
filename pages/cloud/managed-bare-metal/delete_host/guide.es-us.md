@@ -7,7 +7,7 @@ excerpt: 'Cómo eliminar un servidor host de una infraestructura Managed Bare Me
 section: 'Funcionalidades de OVHcloud'
 ---
 
-**Última actualización: 18/11/2020**
+**Última actualización: 19/03/2021**
 
 ## Objetivo
 
@@ -20,8 +20,12 @@ Hay situaciones en las que puede ser necesario eliminar un servidor host del clu
 * Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
 * Estar conectado al panel de administración vSphere.
 
-
 ## Procedimiento
+
+> [!warning]
+>
+> No apague el servidor host que desea eliminar, ya que no tendría el efecto deseado. Esto implicaría la entrega de un servidor host de spare y el servidor host apagado no se eliminaría automáticamente.
+>
 
 La eliminación de un servidor host se realiza en dos etapas: en primer lugar se debe poner el recurso en modo de mantenimiento para, posteriormente, proceder a eliminarlo.
 
@@ -35,11 +39,9 @@ En el cuadro de diálogo, confirme la activación del modo de mantenimiento haci
 
 ![Confirmación del modo de mantenimiento](images/removehost02.png){.thumbnail}
 
-
 Puede seguir el progreso de la operación en la zona **Recent Tasks**.
 
 ![Progreso de la activación del modo de mantenimiento](images/removehost03.png){.thumbnail}
-
 
 ### 2. Eliminar el servidor host
 
@@ -59,13 +61,12 @@ Puede seguir el progreso de la operación en la zona **Recent Tasks**.
 
 ![Progreso de la eliminación del host](images/removehost07.png){.thumbnail}
 
-El servidor host se eliminará en unos minutos y dejará de aparecer en el inventario. 
+El servidor host se eliminará en unos minutos y dejará de aparecer en el inventario.
 
 > [!primary]
 >
 > Si se añade algún archivo o directorio que no estuviera inicialmente presente en el almacenamiento local del servidor host, generará un error que impedirá eliminar el servidor. Los directorios de base y los archivos de vSwap son los únicos que no bloquean la operación de eliminación.
-> 
-
+>
 
 ## Más información
 

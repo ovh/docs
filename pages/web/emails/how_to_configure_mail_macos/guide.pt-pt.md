@@ -91,7 +91,7 @@ Selecione a conta de e-mail e as informações dessa conta aparecerão.
 
 - Nome do utilizador: O seu endereço de e-mail completo.
 
-- Password: A password definida no seu [Espaço de Cliente]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)).
+- Password: A password definida no seu [Espaço de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)).
 
 - Servidor de envio (SMTP): O servidor de e-mail configurado para a conta.
 
@@ -140,7 +140,7 @@ Introduziu SSL0.OVH.NET e poderá selecionar, ou não, a opção "Utilizar SSL (
 
 - Nome de utilizador: O seu endereço de e-mail completo.
 
-- Password: A password definida no seu [espaço de cliente]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)).
+- Password: A password definida no seu [espaço de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)).
 
 
 

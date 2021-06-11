@@ -8,7 +8,7 @@ legacy_guide_number: '1442308'
 section: 'OVHcloud Funktionen'
 ---
 
-**Stand 18.11.2020**
+**Stand 19.03.2021**
 
 ## Einleitung
 
@@ -21,8 +21,12 @@ In einigen Fällen kann es nützlich sein, einen Host-Server aus Ihrem Cluster z
 * Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Angebot.
 * Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
 
-
 ## Beschreibung
+
+> [!warning]
+>
+> Achten Sie darauf, den Host-Server, den Sie entfernen möchten, nicht auszuschalten, da dies nicht die gewünschte Wirkung hätte. Es würde stattdessen die Lieferung eines Spare-Host-Servers zur Folge haben, und der ausgeschaltete Host-Server würde nicht automatisch entfernt.
+>
 
 Das Löschen eines Host-Servers erfolgt in zwei Schritten: Zuerst wird die Ressource in den Wartungsmodus versetzt und anschließend gelöscht.
 
@@ -36,11 +40,9 @@ Um die Aktivierung des Wartungsmodus zu bestätigen, klicken Sie im angezeigten 
 
 ![Bestätigung des Wartungsmodus](images/removehost02.png){.thumbnail}
 
-
 Sie können den Fortschritt der Aktivierung des Wartungsmodus im Bereich `Recent Tasks` verfolgen.
 
 ![Nachverfolgung des Wartungsmodus](images/removehost03.png){.thumbnail}
-
 
 ### Host-Server löschen
 
@@ -60,13 +62,12 @@ Sie können den Fortschritt des Löschvorgangs des Host-Servers im Bereich `Rece
 
 ![Nachverfolgung des Löschvorgangs](images/removehost07.png){.thumbnail}
 
-Der Host-Server wird innerhalb einiger Minuten gelöscht und erscheint nicht mehr in Ihrem Inventar. 
+Der Host-Server wird innerhalb einiger Minuten gelöscht und erscheint nicht mehr in Ihrem Inventar.
 
 > [!primary]
 >
 > Wird während des Vorgangs ein Verzeichnis oder eine Datei im lokalen Speicher des Host-Servers hinzugefügt, wird der Löschvorgang aufgrund eines Fehlers unterbrochen. Nur Basisverzeichnisse und vSwap-Dateien blockieren den Vorgang nicht.
-> 
-
+>
 
 ## Weiterführende Informationen
 

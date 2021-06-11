@@ -6,117 +6,98 @@ slug: hosting_statystyki_i_logi_strony
 section: Optymalizacja strony WWW
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
 
-## Logowanie do panelu klienta
-Zaloguj się do panelu [Manager](https://www.ovh.com/manager/web/) za pomocą identyfikatora klienta i hasła. 
+**Ostatnia aktualizacja z dnia 05-01-2021**
 
-Po zalogowaniu wybierz hosting, dla którego chcesz sprawdzić statystyki.
+## Wprowadzenie
 
-![](images/img_2827.jpg){.thumbnail}
-Kliknij na: "Statystyki i logi".
+Dostęp do logów i statystyk Twojej strony WWW jest zawarty w ofercie hostingu WWW dostępnej w Panelu klienta OVHcloud.
 
-![](images/img_2826.jpg){.thumbnail}
+**Dowiedz się, jak sprawdzić statystyki i logi Twojej strony WWW.**
 
+## Wymagania początkowe
 
-## Dostęp do strony ze statystykami i logami
-Aby sprawdzić statystyki, należy wejść na stronę:
+- Posiadanie kompatybilnego [hostingu](https://www.ovh.pl/hosting/){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## W praktyce
 
-- https://logs.ovh.net/nazwadomeny
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij kartę `Web Cloud`{.action}, a następnie `Hosting`{.action} w kolumnie po lewej stronie.
 
+Wybierz odpowiedni hosting i kliknij zakładkę `Statystyki i logi`{.action}
 
-Zaloguj się podając identyfikator klienta i przypisane do niego hasło.
+![hosting](images/statistics01.png){.thumbnail}
 
-Są one proste w użyciu. Za pomocą kilku kliknięć możesz przeanalizować swoją stronę bez odwoływania się do innych statystyk. 
+Okno, które się wyświetla składa się z 3 sekcji. Pierwsza zawiera **statystyki**, druga **logi** brutto Twojego hostingu. Ostatnia jest przeznaczona **do zarządzania użytkownikami** uprawnionymi do dostępu do statystyk.
 
-Kliknij na link w panelu Manager, aby uzyskać dostęp do statystyk i logów.
+![hosting](images/statistics02u.png){.thumbnail}
 
-Należy podać identyfikator klienta i hasło.
+### Zarządzanie użytkownikami
 
+Utworzenie użytkownika umożliwi osobie uzyskanie dostępu do statystyk hostingu bez dostępu do Panelu klienta OVHcloud. 
 
-## Statystyki
-Po zalogowaniu do statystyk pojawi się ta strona:
+Kliknij przycisk `Utwórz nowego użytkownika`{.action} w sekcji `Administracja użytkownikami` i postępuj zgodnie z instrukcjami podanymi poniżej.  
 
-Pojawią się dwie możliwości:
+![hosting](images/user-statistics01.png){.thumbnail}
 
+> [!warning] 
+>
+> Jeśli włączyłeś oddzielne logi w [pozycji MultiSite](../konfiguracja-multisite-na-hostingu/#etap-2-dodanie-domeny-lub-subdomeny), użytkownicy utworzeni tutaj nie mogą uzyskać dostępu do statystyk dla tego wpisu MultiSite.
+>
 
-- Dostęp do statystyk strony poprzez urchin v6
+### Statystyki odwiedzin
 
-- Sprawdzanie logów strony w czasie rzeczywistym lub z wcześniejszego okresu.
+Aby lepiej monitorować ruch na Twoich stronach WWW i zarządzać nim, masz do dyspozycji narzędzie do statystyki odwiedzin i pomiaru odwiedzin Twoich stron WWW hostowanych na hostingu **OVHcloud Web Statistics**.
 
+![hosting](images/OWStats01.gif){.thumbnail}
 
+Panel zarządzania OVHcloud Web Statistics dostępny jest w 6 sekcjach w panelu po lewej stronie.
 
-![](images/img_2832.jpg){.thumbnail}
+- Dashboard: wizualizacja ruchu na stronach hostingu.
+- Browsers: ranking najpopularniejszych przeglądarek internetowych do przeglądania stron internetowych.
+- Geolokalizacja:  odsetek odwiedzających w zależności od ich lokalizacji.
+- Zapytania: ranking najczęściej odwiedzanych stron na Twoich stronach.
+- Roboty: wizualizacja robotów przechodzących przez twoje strony.
+- Status: statystyki niepowodzeń i sukcesów napotkanych na podstawie zwracanych kodów HTTP.
+- FAQ: sekcja poświęcona najczęstszym pytaniom
 
+Ramka `Period selection` w prawym górnym rogu pozwala wybrać określony czas.
 
-## Urchin v6
-Statystyki te dotycząc następujących aspektów:
+### Logi
 
-Ruch na stronie
+Możesz wyświetlić logi brutto swojej strony z opóźnieniem wynoszącym około 5 minut.
 
+![hosting](images/logs01.png){.thumbnail}
 
-- Liczba odwiedzających,
-- Liczba wyświetlonych stron,
-- "Ciężar" wyświetlonych stron,
-- Liczba zapytań http.
+Dostępne są różne typy logów:
 
-Dane te mogą być wyświetlane za okres godziny, dnia, tygodnia, miesiąca lub roku.
+- Logi WWW: znajdziesz tutaj różne logi przeglądania Twojej strony WWW oraz operacje wykonywane na Twojej stronie. Dzięki temu możesz na przykład wykryć próby popełnienia złośliwego czynu.
+- Logi FTP: Połączenia FTP będą rejestrowane i przechowywane w tych logach.
+- Logi błąd: różne błędy generowane przez Twoją stronę.
+- Logi CGI: przeprowadzone wywołania skryptów cgi.bin.
+- Logi out: statystyki hostingu w zakresie wywołań zewnętrznych.
+- Logi SSH: te logi przedstawiają różne połączenia zrealizowane za pomocą protokołu SSH.
+- Logi CRON: wynik wykonywania zaplanowanych zadań ([Zadania zautomatyzowane (CRON) na Twoim hostingu](../hosting_www_automatyczne_zadania_cron/)).
 
-Strony
+### Działalność związana z zakwaterowaniem
 
-- Średni czas połączenia z całą strona lub z wybraną stroną
+W tej sekcji znajdziesz opis działalności związanej z infrastrukturą Twojego hostingu, aby sprawdzić zużycie dostępnych zasobów.
 
-Monitoruj pozycjonowanie
+Kliknij kartę `Informacje ogólne`{.action}, a następnie przejdź na dół strony.
 
-- Jak użytkownicy dowiedzieli się o Twojej stronie?
-- Z jakich wyszukiwarek korzystali?
-- Jakich słów kluczowych używali?
+![hosting](images/statistics03.png){.thumbnail}
 
+Możesz wyświetlić różne rodzaje wykresów z menu rozwijanego w lewym górnym rogu:
 
-Dzięki statystykom można się dowiedzieć, które strony najbardziej interesowały odwiedzających. 
+- Połączenia wychodzące: zapytania wysyłane z Twojej strony WWW na zewnątrz.
+- Wykorzystanie procesora: poziom zużycia procesora na instancji hostingowej.
+- Przekroczenie pułapu zasobów: wskazuje chwile lub hosting przekracza jego limit zasobów.
+- Zapytania SQL: ilość zapytań do baz danych Twojego hostingu.
+- Czas odpowiedzi SQL: czas odpowiedzi zapytań wysyłanych do baz danych Twojego hostingu.
 
+## Sprawdź również
 
-- Które strony były najczęściej odwiedzane?
-- Przez jaki czas?
-- Które strony zawierają błędy i jakie to błędy?
-
-Monitorowanie
-
-- Które strony są wyświetlane w pierwszej kolejności przez użytkowników?
-- Które strony były wyświetlane jako ostatnie?
-- Jaki był średni czas odwiedzania danej strony?
-- Jaka jest średnia liczba wyświetlanych stron?
-
-
-
-![](images/img_1490.jpg){.thumbnail}
-
-
-## Logi
-Logi strony są dostępne w ciągu około 15 minut. Pozwalają one na sprawdzanie prawidłowego działania strony i obliczania logów strony prawie w czasie rzeczywistym. 
-
-Dajemy do Twojej dyspozycji różne rodzaje logów:
-
-
-- Logi www: logi dotyczące strony i operacji realizowanych na stronie. Pozwalają one na monitorowanie prób włamania. 
-
-- Logi FTP: rejestrują połączenia z FTP.
-
-- Logi błędów: błędy generowane przez stronę.
-
-- Logi cgi: odwołania do skryptów cgi.bin
-
-- Logi out: statystyki hostingu na podstawie zewnętrznych zapytań.
-
-- Logi ssh: logi wskazujące połączenia realizowane za pomocą protokołu SSH.
-
-- Logi cron: wyniki zadań cron
-
-
-
-![](images/img_2828.jpg){.thumbnail}
-
-
-## Czy można korzystać ze statystyk Urchin w języku angielskim?
-Język można wybrać w interfejsie Urchin: kliknij na ustawienia w menu, wybierz język i zatwierdź (kliknij na 'submit').
-
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

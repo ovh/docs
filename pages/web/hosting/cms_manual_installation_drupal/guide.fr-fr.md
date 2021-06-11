@@ -23,13 +23,13 @@ La version de Drupal utilisée dans ce guide est la versions 7.41.
 
 Plus d'informations [dans ce guide](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client).
 
-Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide]({legacy}1375){.ref}.
+Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide](../mutualise-installer-manuellement-mon-cms/).
 
 Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/w/index.php?title=Systeme_de_gestion_de_contenu&redirect=no){.external}, ils ont généralement besoin d'une plateforme d'hébergement comprenant un serveur FTP, une base de données, et un nom de domaine.
 
 Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/fr/hebergement-web/){.external}.
 
-*Si vous souhaitez installer Drupal de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* []({legacy}1402){.ref}
+*Si vous souhaitez installer Drupal de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [](../modules-en-1-clic/)
 
 
 ## Mise en ligne de Drupal
@@ -80,7 +80,7 @@ Le dossier cible sera intitulé " **Drupal-xxx**" (xxx étant souvent remplacé 
 
 Pour déposer les fichiers de  **Drupal**  sur votre hébergement, vous devez tout d'abord vous connecter à celui-ci.
 
-*Un guide est disponible concernant la connexion en FTP sur l'offre mutualisée :* []({legacy}1374){.ref}
+*Consultez notre guide pour [se connecter à l’espace de stockage de son hébergement web](../connexion-espace-stockage-ftp-hebergement-web/)*
 
 - Transfert des fichiers via FTP
 
@@ -141,7 +141,7 @@ Sélectionnez la langue d'installation "Français" puis cliquez sur "Save and co
 
 
 ### Étape 3 - Connexion a la base de donnees
-Munissez-vous des identifiants de votre base de données (une aide à ce sujet est disponible ici :[]({legacy}1374){.ref} ).
+Munissez-vous des identifiants de votre base de données (une aide à ce sujet est disponible [ici](../modifier-mot-de-passe-utilisateur-ftp/).
 
 Renseignez les informations demandées concernant la base de données :
 
@@ -259,7 +259,7 @@ Il s'agit ici d'une erreur concernant la version PHP de votre serveur.
 
 La cause est simple : la dernière version du PHP n'a pas été activée.
 
-*Un guide est disponible concernant la modification de la version PHP sur l'offre mutualisée :* []({legacy}1207){.ref}
+*Un guide est disponible concernant la [modification de la version PHP sur l'offre mutualisée](../configurer-le-php-sur-son-hebergement-web-mutu-2014/).*
 
 
 ## Aller plus loin

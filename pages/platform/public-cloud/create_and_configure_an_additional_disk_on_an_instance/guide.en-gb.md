@@ -203,7 +203,7 @@ Next, select `MBR`{.action} and click `OK`{.action}.
 
 ![initialise disk](images/initialise-disk.png){.thumbnail}
 
-#### Initialsing the disk using DISKPART
+#### Initialising the disk using DISKPART
 
 First, right-click on the `Start Menu`{.action} button and then click `Run`{.action}
 
@@ -230,7 +230,7 @@ SAN Policy : Offline Shared
 ```
 DISKPART> san policy = OnlineAll
 
-DiskPart successfully changed the SAN policy for the current operating system . [/ Code]
+DiskPart successfully changed the SAN policy for the current operating system .
 
 - Implementation of the strategy on the extra disk:
 [Code] DISKPART> list disk

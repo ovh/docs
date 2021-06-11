@@ -5,7 +5,7 @@ excerpt: Sprawdź, jak zmienić hasło root
 section: Diagnostyka i tryb Rescue
 ---
 
-**Ostatnia aktualizacja z dnia 10 listopada 2020 r**
+**Ostatnia aktualizacja z dnia 27/04/2021 r**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -29,7 +29,7 @@ Może zaistnieć konieczność zmiany hasła root do systemu operacyjnego Linux.
 > [!warning]
 >
 > OVHcloud oddaje do Twojej dyspozycji serwery, za które w pełni odpowiadasz - nie mając dostępu do tych maszyn, nie możemy być ich administratorem. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Oddajemy w Twoje ręce przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji „Sprawdź również”.
-> 
+>
 
 ## W praktyce
 
@@ -73,37 +73,44 @@ Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 #### Etap 2: Sprawdzenie punktu montowania
 
-Montowanie jest tworzone automatycznie. Użyj poniższych poleceń, aby zidentyfikować lokalizację montażu partycji:
+W przypadku starszych gam VPS partycje zostaną automatycznie zamontowane w trybie rescue. Do identyfikacji punktu montowania partycji możesz użyć następujących poleceń:
 
 ##### **df -h**
 
 ```sh
 df -h
-Siedziba Used Avail Use% Mounted on
-udev 5.8G 0 5.8G 0% /dev
+Filesystem      Size  Used Avail Use% Mounted on
+udev            5.8G     0  5.8G   0% /dev
 tmpfs           1.2G   17M  1.2G   2% /run
-/dev/sda1 2.4G 1.5G 788M 66% /
+/dev/sda1       2.4G  1.5G  788M  66% /
 tmpfs           5.8G     0  5.8G   0% /dev/shm
 tmpfs           5.0M     0  5.0M   0% /run/lock
-tmpfs 5.8G 0 5.8G 0% /sys/fs/cgroup
+tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 /dev/sdb1        49G  1.2G   48G   3% /mnt/sdb1
-/dev/sdb15 105M 3.6M 101M 4% /mnt/sdb15
+/dev/sdb15      105M  3.6M  101M   4% /mnt/sdb15
 ```
 
 ##### **lsblk**
 
 ```sh
 lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-sda 8:0 0 2.5G 0 disk
-└─da1 8:1 0 2.5G 0 part /
-sdb 8:16 0 50G 0 disk
-├─sdb1 8:17 0 49.9G 0 part /mnt/sdb1
-├─sdb14 8:30 0 4M 0 part
-└─sdb15 8:31 0 106M 0 part /mnt/sdb15
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda       8:0    0  2.5G  0 disk
+└─sda1    8:1    0  2.5G  0 part /
+sdb       8:16   0   50G  0 disk
+├─sdb1    8:17   0 49.9G  0 part /mnt/sdb1
+├─sdb14   8:30   0    4M  0 part
+└─sdb15   8:31   0  106M  0 part /mnt/sdb15
 ```
 
-Powyższy przykład pokazuje, że partycja systemowa jest zamontowana na **/mnt/sdb**1\.
+Powyższy przykład pokazuje, że partycja systemowa jest zamontowana na **/mnt/sdb1**.
+
+Jeśli VPS jest nowy, kolumna `MOUNTPOINT` powinna być pusta. W tym przypadku najpierw zamontuj partycję:
+
+```sh
+mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
+```
 
 #### Etap 3: zezwolenia CHROOT
 

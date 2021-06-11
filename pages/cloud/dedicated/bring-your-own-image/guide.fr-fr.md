@@ -5,18 +5,24 @@ slug: bringyourownimage
 section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 21/07/2020**
+**Dernière mise à jour le 29/03/2021**
 
 ## Objectif
 
 Grâce à la technologie Bring Your Own Image, il vous est désormais possible de déployer des images *cloudready* directement sur vos serveurs dédiés. Vous pouvez donc utiliser le produit bare metal comme ressource pour vos déploiements.
+
+**Que signifie *cloudready* ?**
+<br>En une phrase, être agnostique de l'infrastructure sur laquelle l'image démarre.
+Outre les prérequis et limitations citées plus bas, il faut s'assurer que l'image (récupérée, générée) répond à la bonne définition des attentes techniques d'une image cloudready. L'image doit être capable de booter correctement quelle que soit la typologie de serveur sur laquelle elle démarre, elle doit également embarquer le service Cloud Init dans le cas de l'utilisation d'un Config Drive. Enfin, les configurations systèmes doivent permettre de pouvoir pleinement laisser l'OS s'initier, en particulier celles relatives au réseau.
 
 **Découvrez comment configurer BringYourOwnImage depuis l'APIv6 OVHcloud**
 
 ## Prérequis
 
 - Posséder un [serveur dédié OVHcloud](https://www.ovh.com/fr/serveurs_dedies/).
-- Avoir généré les [credentials pour utiliser l'APIv6](https://docs.ovh.com/fr/api/api-premiers-pas/).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) pour la partie [« Déploiement via espace client »](#viacontrolpanel) de ce guide.
+- Être connecté aux [API OVHcloud](https://api.ovh.com/){.external} pour la partie [« Déploiement via API »](#viaapi) de ce guide.
+- Avoir généré les [credentials pour utiliser l'APIv6](../../api/api-premiers-pas/) pour la partie [« Déploiement via API »](#viaapi) de ce guide.
 
 > [!warning]
 >
@@ -25,7 +31,7 @@ Grâce à la technologie Bring Your Own Image, il vous est désormais possible 
 
 ## En pratique
 
-### Limitations techniques
+**Limitations techniques**
 
 Il existe aujourd'hui encore quelques limitations techniques liées à l'usage de produits physiques comme les serveurs dédiés. 
 Veuillez prendre en compte les impératifs listés ci-dessous lors de votre préparation de déploiement. Cette liste n'est pas exhaustive.
@@ -36,9 +42,34 @@ Veuillez prendre en compte les impératifs listés ci-dessous lors de votre pré
 
 Si votre serveur dispose d'un boot **uefi**, il vous faudra impérativement prévoir dans votre image une partition **EFI** si vous souhaitez que votre serveur puisse booter.
 
-### Déployer votre image
+**Méthodes de déploiement**
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez vous dans la section `/dedicated/server`{.action}. Le champ `Filter` vous permettra de rechercher « BringYourOwnImage ».
+- [Déploiement via espace client](#viacontrolpanel) : vous permettra de deployer rapidement et facilement votre image directement depuis votre espace client OVHcloud.
+- [Déploiement via API](#viaapi) : vous pouvez utiliser les API OVHcloud pour les intégrer à vos propres scripts afin d'automatiser le déploiement.
+
+### Déployer votre image depuis l'espace client OVHcloud <a name="viacontrolpanel"></a>
+
+Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Bare Metal Cloud`{.action}, puis `Serveurs Dédiés`{.action}, sélectionnez votre serveur.
+
+Dans le cadre `Informations générales`, cliquez sur le bouton `...`{.action} devant `Informations générales`. Cliquez enfin sur `Installer`{.action}.
+
+![bring your ownimage](images/byoi-controlpanel01.png){.thumbnail}
+
+Dans la fenêtre qui apparaît, sélectionnez `Installer à partir d'une image personnalisée`{.action}, puis cliquez sur `Installer`{.action}.
+
+![bring your ownimage](images/byoi-controlpanel02.png){.thumbnail}
+
+Vous serez redirigé vers la page de configuration. Assurez-vous que l'URL de votre image est au format approprié. Complétez le reste des champs requis sur cette page. Lorsque vous avez confirmé que les informations sont correctes, cliquez sur `Installer le système`{.action}.
+
+Retrouvez le détail des options dans la partie [« Tableaux des options »](#options) de ce guide. 
+
+Concernant l'activation de `ConfigDrive`, retrouver la documentation sur [cette page](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+
+![bring your ownimage](images/byoi-controlpanel03.png){.thumbnail}
+
+### Déployer votre image depuis les API <a name="viaapi"></a>
+
+Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `dedicated/server`{.action}. Le champ `Filter` vous permettra de rechercher « BringYourOwnImage ».
 
 Vous disposez de trois appels API liés à la fonctionnalité BringYourOwnImage.
 
@@ -51,6 +82,7 @@ Pour créer et déployer votre image, utilisez l'appel suivant et complétez les
 > @api {POST} /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
+#### Tableaux des options <a name="options"></a>
 
 | Champ | Description |
 |-|-|

@@ -4,6 +4,7 @@ excerpt: Configure a failover IP with CentOS
 slug: configure_a_failover_ip_with_centos
 section: Networking
 order: 4
+hidden: true
 ---
 
 

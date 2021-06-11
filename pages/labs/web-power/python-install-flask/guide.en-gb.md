@@ -30,7 +30,7 @@ order: 2
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Python** applications, and you want to deploy [Flask](https://flask.palletsprojects.com/en/1.1.x/) on it.
+You've subscribed to a Web POWER web hosting plan to deploy **Python** applications, and you want to deploy [Flask](https://flask.palletsprojects.com/en/1.1.x/){.external} on it.
 
 This guide will explain how to do it.
 

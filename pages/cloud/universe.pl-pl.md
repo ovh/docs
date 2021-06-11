@@ -1,5 +1,5 @@
 ---
-title: Cloud
+title: All the cloud universes
 slug: cloud
 excerpt: 'Dokumentacja dotyczacą produktów Cloud i serwerów dedykowanych'
 color: gold

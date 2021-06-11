@@ -56,7 +56,7 @@ Please see [How to fill job submit form in Data Processing Manager](../job-submi
 In the **Data Processing** section of the OVHcloud Manager you can see the list of all the jobs that you have submitted so far. If you click on a job's name, you can see detailed information on it, including its status. Then you can click on the `Logs`{.action} to see the live logs while the job is running.
 
 > [!warning]
-> If your jobs are stuck in "Running", you probably forgot to stop the spark context in your code. To stop it, please refer to [pyspark package documentation](http://spark.apache.org/docs/latest/api/python/pyspark.html).
+> If your jobs are stuck in "Running", you probably forgot to stop the spark context in your code. To stop it, please refer to [pyspark package documentation](https://spark.apache.org/docs/latest/api/python/).
 
 Once the job will be finished, the complete logs will be saved to your Object Storage container. You will be able to download it from your account whenever you would like.
 
@@ -67,6 +67,6 @@ After your Spark job is finished, you will be able to check the results from you
 
 ## Go further
 
-To learn more about using Data Processing and how to create cluster and process your data, we invite you to look at [Data Processing documentations page](../).
+To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or in our public [Gitter](https://gitter.im/ovh/data-processing){.external}

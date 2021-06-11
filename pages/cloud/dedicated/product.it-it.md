@@ -1,5 +1,5 @@
 ---
 title: Dedicated servers
 slug: dedicated
-excerpt: Get started with your OVH.com dedicated servers
+excerpt: 'How to use your OVHcloud dedicated server'
 ---

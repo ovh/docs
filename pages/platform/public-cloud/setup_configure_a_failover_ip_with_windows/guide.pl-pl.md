@@ -3,7 +3,7 @@ title: Konfiguracja adresu IP Fail Over w systemie Windows
 excerpt: Konfiguracja adresu IP Fail Over w systemie Windows
 slug: konfiguracja_adresu_ip_fail_over_w_systemie_windows
 legacy_guide_number: g2046
-section: Tutoriale
+hidden: true
 ---
 
 

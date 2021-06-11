@@ -3,25 +3,32 @@ title: How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server
 slug: ola-w2k19
 excerpt: Enable OVHcloud Link Aggregation in your "Windows Server 2019" server
 section: 'Advanced use'
+order: 4
 ---
 
-**Last updated October 24th, 2019**
+**Last updated March 25th, 2021**
 
 ## Objective
 
-OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. In this article, we will discuss how to bond your NICs to use them for OLA in Windows Server 2019.
+OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link.
+
+**This guide explains how to bond your NICs to use them for OLA in Windows Server 2019.**  
 
 ## Requirements
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in the OVHcloud Manager](../ola-manager){.external}
+- [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](../ola-manager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
-Because we have a private-private configuration for our NICs in OLA, we will be unable to RDP into our server. Thus, we will need to leverage the IPMI tool to access it. To do so, first, log in to the [OVHcloud Manager](https://ca.ovh.com/manager/){.external}.  Then select the server you wish to configure on the left-hand sidebar and click the **IPMI** tab.
+Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
+<br>To do so, first log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). In the `Bare Metal Cloud`{.action} section, click on `Dedicated Servers`{.action} in the left-hand menu, select your server and click the `IPMI`{.action} tab (1).
 
-![remote kvm](images/remote_kvm_2020.png){.thumbnail}
+Next, click the `From a Java applet (KVM)`{.action} button (2).
 
-Next, click the **From a Java applet (KVM)** button. A JNLP program will download. Open the program once it is finished to enter the IPMI.  Log in using valid credentials for the server.
+![remote kvm](images/remote_kvm2021.png){.thumbnail}
+
+A JNLP program will download. Open the program once it is finished to enter the IPMI. Log in using valid credentials for the server.
 
 Once you are in the server, open Server Manager. If it is not already open by default, you will see it pinned to the Start menu.
 
@@ -31,7 +38,7 @@ Once you have opened Server Manager, click the **Local Server** tab on the left-
 
 ![local server](images/server_manager.png){.thumbnail}
 
-In the NIC Teaming pop-up, click the **New Team **button from the **TASKS** dropdown menu under the "TEAMS" section.
+In the NIC Teaming pop-up, click the **New Team** button from the **TASKS** dropdown menu under the "TEAMS" section.
 
 ![nic teaming](images/nic_teaming.png){.thumbnail}
 
@@ -39,11 +46,11 @@ Give your team a name and check the NICs you wish to use with OLA. Click the dro
 
 ![new team](images/new_team.png){.thumbnail}
 
-It could take up to a couple of minutes for the NIC team to come online. Once it is finished, click the network connection icon in the bottom-right corner.  Next, click the **Network &amp; Internet settings** button.  Then click the **Ethernet **button on the left-hand sidebar of the ensuing popup.
+It could take up to a couple of minutes for the NIC team to come online. Once it is finished, click the network connection icon in the bottom-right corner.  Next, click the **Network &amp; Internet settings** button.  Then click the **Ethernet** button on the left-hand sidebar of the ensuing popup.
 
 ![network button](images/network_button.png){.thumbnail}
 
-Click the **Change adapter options** button. 
+Click the **Change adapter options** button.
 
 ![ethernet](images/ethernet.png){.thumbnail}
 
@@ -55,13 +62,18 @@ On the ensuing pop-up window, double-click the **Internet Protocol Version 4 (TC
 
 ![ipv4](images/ipv4.png){.thumbnail}
 
-Click the button next to "Use the following IP address" and add your chosen private IP and subnet. Click the **OK** button once you have confirmed that your settings are correct. 
+Click the button next to "Use the following IP address" and add your chosen private IP and subnet. Click the **OK** button once you have confirmed that your settings are correct.
 
 ![ipv42](images/ipv42.png){.thumbnail}
 
-To test that our NIC team is working, ping another server on the same vRack.  If it works, you are all set. If it does not, double-check your configurations or try rebooting the server.
+To test that your NIC team is working, ping another server on the same vRack.  If it works, you are all set. If it does not, double-check your configurations or try rebooting the server.
 
-## Conclusion
-:
-OVHcloud gives our customers the freedom and flexibility to leverage their hardware in the way that best fits their needs. Now that you have read this article, you should be able to configure OVHcloud Link Aggregation (OLA) in Windows Server 2019 in order to use both of your NICs as bonded private interfaces. 
+## Go further
 
+[Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](../ola-manager/).
+
+[How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](../ola-debian9/).
+
+[How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](../ola-centos7/).
+
+Join our community of users on <https://community.ovh.com/en/>.

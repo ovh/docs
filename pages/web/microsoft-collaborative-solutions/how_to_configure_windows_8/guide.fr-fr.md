@@ -62,7 +62,7 @@ Dans cette nouvelle interface, renseignez les différents champs.
 
 "Adresse de messagerie" : L'adresse e-mail Exchange entière.
 
-"Mot de passe" : Le mot de passe défini dans [l'Espace Client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour ce compte Exchange.
+"Mot de passe" : Le mot de passe défini dans [l'Espace Client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour ce compte Exchange.
 
 Cliquez sur "Connecter" pour continuer.
 
@@ -91,7 +91,7 @@ Dans cette nouvelle interface, renseignez les différents champs.
 
 "Nom d'utilisateur" : Vous devez renseigner votre adresse e-mail entière.
 
-"Mot de passe" : Le mot de passe défini dans [l'Espace Client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour ce compte Exchange.
+"Mot de passe" : Le mot de passe défini dans [l'Espace Client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour ce compte Exchange.
 
 Cliquez sur "Connecter" pour continuer.
 
@@ -160,7 +160,7 @@ Dans cette nouvelle interface, renseignez les différents champs.
 
 "Adresse de messagerie" : L'adresse e-mail Exchange entière.
 
-"Mot de passe" : Le mot de passe défini dans [l'Espace Client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour ce compte Exchange.
+"Mot de passe" : Le mot de passe défini dans [l'Espace Client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour ce compte Exchange.
 
 Cliquez sur "Connecter" pour continuer.
 
@@ -185,7 +185,7 @@ Dans cette nouvelle interface, renseignez les différents champs.
 
 "Nom d'utilisateur" : Vous devez renseigner votre adresse e-mail entière.
 
-"Mot de passe" : Le mot de passe défini dans [l'Espace Client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour ce compte Exchange.
+"Mot de passe" : Le mot de passe défini dans [l'Espace Client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour ce compte Exchange.
 
 "Serveur de messagerie entrant (IMAP)" : Dans notre exemple le compte Exchange est un compte de type Hosted, l'adresse du serveur est donc  **ex.mail.ovh.net** Pour une offre Private vous devrez renseigner le nom du serveur que vous avez choisi à l'installation de l'offre Exchange. Le  **"Port"**  à indiquer sera  **993** .
 

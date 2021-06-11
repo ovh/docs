@@ -6,7 +6,7 @@ excerpt: 'Melhore o seu site acelerando o seu carregamento no alojamento Web gra
 section: 'Otimizar o meu site'
 ---
 
-**Última atualização: 19/11/2020**
+**Última atualização: 26/04/2021**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -86,7 +86,9 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 
 #### Configurar as opções do Shared CDN
 
-Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita da entrada multisite e depois `Alterar o CDN`{.action}.
+Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita da entrada multisite e depois em `Alterar o CDN`{.action}. 
+
+Também pode clicar no ícone de caneta à direita de uma entrada Multi-site, quando a opção CDN estiver ativa. A seguir, clique em `Editar o seu CDN`{.action}.
 
 > [!warning]
 > 
@@ -118,9 +120,9 @@ Sob a menção **Regras de cache**, clique no botão `Adicionar uma regra`{.acti
 
 - **Nome de regra**: Atribua um nome à sua regra.
 
-- **URI**: Indique o subconjunto de recursos do seu website através do seu caminho no diretório deste último. Para a oferta CDN-Basic, só é possível introduzir uma extensão de ficheiro.
+- **URI**: Indique o subconjunto de recursos do seu website através do seu caminho no diretório deste último. Para as ofertas CDN-Basic e CDN-Security, só é possível introduzir uma extensão de ficheiro.
 
-- **Duração**: indique a duração de vida da regra para o recurso selecionado.
+- **Duração**: indique a duração da colocação em cache do recurso selecionado.
 
 - **Classificação**:  Classifique as suas regras por ordem de execução (da mais baixa à mais elevada).
 
@@ -131,6 +133,60 @@ As regras aparecem numa lista.  Pode alterá-las clicando em `...`{.action} à d
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
 Depois de configurar as regras e selecionar as opções, clique em `Aplicar configuração`{.action} e, a seguir, em `Validar a configuração`{.action} na janela seguinte.
+
+#### Configurar as opções do CDN Security
+
+> [!primary]
+>  as opções apresentadas abaixo requerem a subscrição do [CDN security](https://www.ovh.pt/alojamento-partilhado/cdn.xml) ou do [CDN Advanced](https://www.ovh.pt/alojamento-partilhado/cdn.xml)
+
+Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita da entrada multisite e depois `Alterar o CDN`{.action}. 
+
+Também pode clicar no ícone de caneta à direita de uma entrada Multi-site, quando a opção CDN estiver ativa. A seguir, clique em `Editar o seu CDN`{.action}.
+
+- **Cross-Origin Resource Sharing (CORS)**: Indique na lista os domínios externos que serão autorizados a aceder aos recursos do seu website para os partilhar. 
+
+Depois de ativar a função, clique em `Editar a lista de recursos externos`{.action} para adicionar os nomes de domínio autorizados a partilhar os seus recursos.
+
+![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
+
+Depois de preencher a lista, clique em `Confirmar`{.action}.
+
+> [!primary]
+> Quando ativa a opção CORS sem especificar nomes de domínio na lista, isso significa que todos os nomes de domínio estão autorizados a utilizar os recursos do seu website.
+
+- **HTTPS-redirect**: Proteja a globalidade do tráfego do seu website reencaminhando-o para o protocolo HTTPS de forma temporária ou permanente.
+
+Depois de ativar a função, clique no menu pendente para escolher entre o `Reencaminhamento permanente (301)` ou o `Reencaminhamento temporário (302)`.
+
+![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
+
+- **HTTP Strict Transport Security (HSTS)**: Imponha o acesso ao seu website unicamente em HTTPS. Desta forma, a sua solução web fica protegida contra os ataques de degradação (ou ataques de replicação).
+
+Uma vez a função ativada, determine o período de vida útil durante o qual o browser irá aplicar a função HSTS no seu website. 
+
+![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
+
+> [!primary]
+> 
+> Quando ativar a função HSTS no seu website, ela irá forçar o protocolo HTTPS no seu browser, até ao fim do período dito "idade máxima", mesmo após a desativação da função no seu Espaço Cliente. No entanto, se a cache for esvaziada no browser que já efetuou uma visita ao seu website, este último aplicará o novo estado da função HSTS.
+
+- **Mixed content**: Implemente todo o conteúdo das suas páginas web. Serão carregadas de forma segura, participando assim numa experiência de utilizador ideal. Todos os recursos do seu site, internos e externos, devem estar disponíveis em HTTPS para evitar um erro do browser.
+
+- **Firewall da aplicação**: A **W**eb **A**plication **F**irewall (WAF) protege o seu site de ataques fraudulentos, tais como injeção de código, pedidos ilegítimos ou roubo de dados. Cobre falhas conhecidas na web ao filtrar os pedidos e pacotes transmitidos (a lista de falhas é administrada pela OVHcloud e é regularmente atualizada).  
+
+> [!warning]
+>
+> Para a instalação de um [módulo 1 clique da OVHcloud](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/), o WAF deve ser desativado para evitar que a instalação do módulo seja bloqueada.
+
+> [!primary]
+>  
+> O WAF é inteiramente administrado pela OVHcloud, a lista das falhas é regularmente atualizada.
+
+### Visualizar as estatísticas do CDN
+
+No separador `Multi-sites`{.action} do seu alojamento, abaixo da tabela, pode visualizar as estatísticas do seu CDN, indicando o número de pedidos por minuto medidos no mesmo.
+
+![CDN](images/manage_CDNstat_01.png){.thumbnail}
 
 ### Gerir o seu CDN (versão histórica)
 

@@ -17,10 +17,10 @@ Make sure that you have your customer ID (nic-handle) and password so you can lo
 
 
 - Get your FTP ID and password so you can log in to your hosting package. 
-There is an FTP credentials guide:[]({legacy}1374)
+There is an [FTP credentials guide](../modify-ftp-user-password/)
 
 - You also need to have your SQL database ID and password so you can log in to the database.
-There is a guide showing you how to get your SQL credentials: []({legacy}1374)
+There is a guide showing you [how to get your SQL credentials](../getting-started-with-private-sql/#create-a-database)
 
 
 ![](images/img_3141.jpg){.thumbnail}
@@ -59,7 +59,7 @@ The target folder will be called "Joomla!"
 ## Log on to the web hosting package via FTP
 To upload the Joomla! files to your hosting package, you first have to log on. 
 
-Follow this guide on connecting to a hosting package in FTP:[]({legacy}1374)
+Follow this guide on [connecting to a hosting package in FTP](../log-in-to-storage-ftp-web-hosting/).
 
 ![](images/img_3144.jpg){.thumbnail}
 
@@ -212,7 +212,6 @@ For an overview of the Joomla! admin panel, click on the image below.
 
 ## Useful information
 OVH support is not authorised to answer questions about Joomla! configuration.
-However, there is a user guide available:  []({legacy}2053).
 
 You can also view the forums dedicated to the Joomla! solution.
 

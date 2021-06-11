@@ -6,7 +6,7 @@ slug: przewodnik_dotyczacy_uslugi_geocache_na_hostingu_www
 section: 'Optymalizacja strony WWW'
 ---
 
-**Ostatnia aktualizacja z dnia 19-11-2020**
+**Ostatnia aktualizacja z dnia 26-04-2021**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -108,7 +108,7 @@ Po wybraniu opcji kliknij `Zastosuj konfigurację`{.action}, a następnie `Zatwi
 
 ![CDN](images/manage_sharedCDN_03.png){.thumbnail}
 
-##### Utwórz regułę cache
+##### **Utwórz regułę cache**
 
 Aby dodać regułę cache do jednego z elementów Twojej strony, przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawej stronie wpisu MultiSite, a następnie `Skonfiguruj CDN`{.action}.
 
@@ -118,9 +118,9 @@ W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 
 - **Nazwa reguły**: Nadaj nazwę swojej regule.
 
-- **URI**: Wpisz podzbiór zasobów Twojej strony WWW w jej katalogu. W przypadku oferty CDN-Basic możesz wprowadzić tylko rozszerzenie pliku.
+- **URI**: Wpisz podzbiór zasobów Twojej strony WWW w jej katalogu. W przypadku ofert CDN-Basic i CDN-Security można podać tylko rozszerzenie pliku.
 
-- **Czas**: wskaż okres ważności reguły dla wybranego zasobu.
+- **Czas**: wskaż czas przechowywania wybranego zasobu w pamięci cache.
 
 - **Klasyfikacja**:  Ustaw kolejność wykonywania reguł (od najniższej do najwyższej).
 
@@ -131,6 +131,60 @@ Reguły znajdują się na liście. Możesz je zmienić, klikając przycisk `...`
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
 Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.action}, a następnie `Zatwierdź konfigurację`{.action} w następnym oknie.
+
+#### Konfiguracja opcji CDN Security
+
+> [!primary]
+>  poniższe opcje wymagają zamówienia na [CDN security](https://www.ovh.pl/hosting/cdn.xml) lub [CDN Advanced](https://www.ovh.pl/hosting/cdn.xml)
+
+Przejdź do karty `MultiSite`{.action} Twojego hostingu, kliknij `...`{.action} po prawej stronie MultiSite, a następnie `Zmień CDN`{.action}. 
+
+Po aktywacji opcji GeoCache możesz również kliknąć na ikonę wstrzykiwacza po prawej stronie wpisu MultiSite. Następnie kliknij `Edytuj CDN`{.action}.
+
+- **Cross-Origin Resource Sharing (CORS)**: Wpisz na liście nazwy domen zewnętrznych, które będą mogły uzyskać dostęp do zasobów Twojej strony WWW, aby je udostępnić. 
+
+Po włączeniu funkcji kliknij `Edytuj listę zewnętrznych`{.action} zasobów, aby dodać domeny, które mogą współdzielić Twoje zasoby.
+
+![GeoCache](images/manage_CDNsecurity_01.png){.thumbnail}
+
+Po uzupełnieniu listy kliknij `Zatwierdź`{.action}.
+
+> [!primary]
+> Po włączeniu opcji CORS bez podawania nazw domen na liście oznacza to, że wszystkie domeny mogą korzystać z zasobów Twojej strony WWW.
+
+- **HTTPS-redirect**: Chroń cały ruch na Twojej stronie WWW poprzez przekierowanie go na protokół HTTPS tymczasowo lub na stałe.
+
+Po włączeniu funkcji kliknij rozwijane menu, aby wybrać między stałym `przekierowaniem (301)` lub tymczasowym `przekierowaniem (302)`.
+
+![GeoCache](images/manage_CDNsecurity_02.png){.thumbnail}
+
+- **HTTP Strict Transport Security (HSTS)**: Zarządzaj dostępem do Twojej strony WWW za pomocą protokołu HTTPS. Rozwiązanie WWW jest więc zabezpieczone przed atakami przez retrogradację (lub ataki typu repli).
+
+Po aktywacji funkcji określ okres, w którym przeglądarka zastosuje funkcję HSTS na Twojej stronie WWW. 
+
+![GeoCache](images/manage_CDNsecurity_03.png){.thumbnail}
+
+> [!primary]
+> 
+> Po włączeniu funkcji HSTS na Twojej stronie, zmusi ona protokół HTTPS do Twojej przeglądarki aż do końca tzw. "wieku maksymalnego", nawet po wyłączeniu funkcji w Panelu klienta. Jeśli pamięć podręczna jest usuwana z przeglądarki, która już przeprowadziła wizytę na Twojej stronie WWW, strona ta zastosuje nowy stan funkcji HSTS.
+
+- **Mixed content**: Wymuś zawartość wszystkich swoich stron www. Zostaną one załadowane w bezpieczny sposób, co przyczyni się do optymalnego doświadczenia użytkownika. Wszystkie zasoby Twojej strony WWW, zarówno wewnętrzne, jak i zewnętrzne, muszą być dostępne poprzez HTTPS, aby uniknąć błędu przeglądarki.
+
+- **Firewall aplikacyjny**: **W**eb **A**pplication **F**irewall (WAF) chroni Twoją stronę WWW przed oszukańczymi atakami, takimi jak wprowadzanie kodu, nieuprawnione zapytania lub kradzież danych. Zawiera on najważniejsze znane luki w sieci, filtrując wysyłane zapytania i pakiety (lista luk jest zarządzana przez OVHcloud i regularnie aktualizowana).  
+
+> [!warning]
+>
+> W celu zainstalowania [modułu za 1 kliknięciem OVHcloud](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/) należy wyłączyć WAF, aby instalacja modułu nie została zablokowana.
+
+> [!primary]
+>  
+> WAF jest w pełni administrowany przez OVHcloud. Lista luk jest regularnie aktualizowana.
+
+### Wyświetl statystyki usługi CDN
+
+W zakładce MultiSite` `{.action} Twojego hostingu, w tabeli możesz wyświetlić statystyki usługi CDN, wskazując liczbę zapytań na minutę zmierzonych w tym CDN.
+
+![GeoCache](images/manage_CDNstat_01.png){.thumbnail}
 
 ### Zarządzaj usługą CDN (wersja historyczna)
 

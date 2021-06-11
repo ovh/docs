@@ -121,7 +121,7 @@ And putting the URL in your browser will take you to the new Jenkins:
 
 ![Jenkins login](images/installing-jenkins-01.png){.thumbnail}
 
-Login with user `admin` and the password you got before. And ere you have your Jenkins:
+Login with user `admin` and the password you got before. And here you have your Jenkins:
 
 ![Leeeeeeeroy Jenkins!](images/installing-jenkins-02.png){.thumbnail}
 

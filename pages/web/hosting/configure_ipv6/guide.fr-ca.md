@@ -60,7 +60,7 @@ Dans la rubrique `Informations générales`, dans le cadre **IPv6**, copiez l'en
 
 Afin que votre navigateur trouve l'adresse IPv6 avec votre nom de domaine, vous devez modifier la zone DNS qui y est associée. Vous pouvez vous appuyer de notre guide [Éditer une zone DNS OVHcloud](../../domains/editer-ma-zone-dns/#etape-2-editer-la-zone-dns-ovh-de-votre-domaine) pour créer une entrée de type **AAAA**.
 
-Depuis `Domaines`{.action} dans la barre de services à gauche, positionnez-vous sur l'onglet `Zone DNS`{.action} de votre nom de domaine. Cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau. Vous devez y insérer l'adresse IPv6 en utilisant le type d'enregistrement **AAAA** et l'IPv6 récupérée précédemment au sein de votre espace client.
+Depuis `Noms de domaine`{.action} dans la barre de services à gauche, positionnez-vous sur l'onglet `Zone DNS`{.action} de votre nom de domaine. Cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau. Vous devez y insérer l'adresse IPv6 en utilisant le type d'enregistrement **AAAA** et l'IPv6 récupérée précédemment au sein de votre espace client.
 
 ![IPv6](images/ipv6_02.png){.thumbnail}
 

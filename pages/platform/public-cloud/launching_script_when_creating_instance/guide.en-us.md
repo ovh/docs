@@ -18,7 +18,7 @@ In some situations, you will need to launch a script when you create an instance
 
 ## Instructions
 
-### Create an instance with with a script.
+### Create an instance with a script.
 
 #### Create a script.
 There are several different scripts that are useful for you to launch when you create an instance. For example, you can use **shell scripts**:

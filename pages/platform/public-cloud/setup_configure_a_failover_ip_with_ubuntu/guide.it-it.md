@@ -3,6 +3,7 @@ title: Configura un IP Failover su Ubuntu
 excerpt: Configura un IP Failover su Ubuntu
 slug: configura_un_ip_failover_su_ubuntu
 legacy_guide_number: g2043
+hidden: true
 ---
 
 

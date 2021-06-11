@@ -5,7 +5,7 @@ excerpt: Explanations on how to build and use your own custom image
 section: Tutorials
 order: 1
 ---
-*Last updated 8th December, 2020.*
+*Last updated 10th June, 2021.*
 
 ## Objective
 
@@ -36,16 +36,16 @@ Here is the list of base images without notebooks that we use :
 -   [pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime](https://hub.docker.com/r/pytorch/pytorch)
 -   [tensorflow/tensorflow:2.3.0-gpu](https://hub.docker.com/r/tensorflow/tensorflow)
 -   [transformers/transformers-pytorch-gpu:3.1.0](https://hub.docker.com/r/transformers/transformers)
--   [mxnet/python:1.5.0\_gpu\_cu101\_py3](https://hub.docker.com/r/mxnet/python)
+-   [mxnet/python:1.5.0_gpu_cu101_py3](https://hub.docker.com/r/mxnet/python)
 -   [fastdotai/fastai-course:2.0.9](https://hub.docker.com/r/fastdotai/fastai-course)
 
 Here is the list of base images including notebooks (jupyterlab + Visual Studio Code) that we use :
 
--   [ovhcom/ai-training-pytorch:1.6.0](https://hub.docker.com/r/ovhcom/ai-training-pytorch)
--   [ovhcom/ai-training-tensorflow:2.3.0](https://hub.docker.com/r/ovhcom/ai-training-tensorflow)
--   [ovhcom/ai-training-transformers:3.1.0](https://hub.docker.com/r/ovhcom/ai-training-transformers)
--   [ovhcom/ai-training-mxnet:1.5.0](https://hub.docker.com/r/ovhcom/ai-training-mxnet)
--   [ovhcom/ai-training-fastai:2.0.9](https://hub.docker.com/r/ovhcom/aai-training-fastai)
+-   [ovhcom/ai-training-pytorch:1.8.1](https://hub.docker.com/r/ovhcom/ai-training-pytorch/tags)
+-   [ovhcom/ai-training-tensorflow:2.4.1](https://hub.docker.com/r/ovhcom/ai-training-tensorflow/tags)
+-   [ovhcom/ai-training-transformers:4.5.0](https://hub.docker.com/r/ovhcom/ai-training-transformers/tags)
+-   [ovhcom/ai-training-mxnet:1.5.0](https://hub.docker.com/r/ovhcom/ai-training-mxnet/tags)
+-   [ovhcom/ai-training-fastai:2.2.5](https://hub.docker.com/r/ovhcom/ai-training-fastai/tags)
 
 Header of your Dockerfile should look like this :
 
@@ -79,11 +79,23 @@ COPY example.txt /example.txt
 
 > [!warning]
 >
-> Images in AI Training are not run as root user. It means that if you want to be able to write in a specific directory at runtime you will have to give it specific rights.
+> Images in AI Training are not run as root user, but by an "ovh" user with UID 42420. It means that if you want to be able to write in a specific directory at runtime you will have to give it specific rights.
 > You can do it with the following instruction :
 >
 >     RUN chown -R 42420:42420 <your-target-directory>
+> 
 
+
+> [!warning]
+> 
+> The home directory for the "ovh" user (with UID 42420) will be /workspace.
+> If your base image (the one used by the FROM instruction) does not create the /workspace directory (and it probably doesn't if you didn't use an image provided by OVHcloud), then you should create it in your Dockerfile.
+>
+>     WORKDIR /workspace
+>     RUN chown -R 42420:42420 /workspace> 
+>
+
+    
 You can set environment variables with the `ENV` prefix.
 
 Example if you want to add an environment variable `KEY` with value `VALUE`
@@ -136,7 +148,7 @@ Pushing your image to a registry is needed in order for AI Training to pull it.
 
 AI Training provides a default registry called **Shared registry** where users are able to push their custom images. It is linked with every project by default.
 
-If you prefer using your own private docker registry instead of the shared one, feel free to use it. Just don't forget to [attach your registry in your AI Training project](../attach-private-registry) before using it.
+If you prefer using your own private docker registry instead of the shared one, feel free to use it. Just don't forget to [add your registry in your AI Training project](../add-private-registry) before using it.
 
 The basic commands to push a docker image to a registry is :
 

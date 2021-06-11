@@ -5,7 +5,7 @@ excerpt: Find out how to change the root or admin password of a VPS
 section: Diagnostics and rescue mode
 ---
 
-**Last updated 10th November 2020**
+**Last updated 20th April 2021**
 
 ## Objective
 
@@ -66,11 +66,11 @@ If you need to permit logging in as root, follow the steps in [this guide sectio
 
 #### Step 1: Restart the VPS into rescue mode
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and reboot the VPS in rescue mode. If you need further instructions about using rescue mode with a VPS, you may consult the [rescue mode guide](../rescue/).
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and reboot the VPS in rescue mode. If you need further instructions about using activating mode with a VPS, you may consult the [rescue mode guide](../rescue/).
 
 #### Step 2: Identify the mount point
 
-The mount is created automatically. Use the following commands to identify where your partition is mounted:
+On older VPS ranges, your partitions will be automatically mounted in rescue mode. You can use the following commands to identify where your partition is mounted:
 
 ##### **df -h**
 
@@ -101,6 +101,13 @@ sdb       8:16   0   50G  0 disk
 ```
 
 The example output above shows that the system partition is mounted on **/mnt/sdb1**.
+
+If your VPS is of the current ranges, the `MOUNTPOINT` column should be empty. In that case, mount the partition first:
+
+```sh
+mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
+```
 
 #### Step 3: CHROOT permissions
 
@@ -140,7 +147,7 @@ passwd: password updated successfully
 
 This will ensure that you can log in again with this username after rebooting, in case root login is disabled.
 
-Finally, reboot your VPS on its drive in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+Finally, reboot your VPS in 'normal' mode in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 
 ### Enabling root login

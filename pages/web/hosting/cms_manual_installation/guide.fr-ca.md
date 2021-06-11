@@ -61,7 +61,7 @@ Depuis 2005, le logiciel ne cesse d'évoluer, jusqu'en 2013 : la version 1.5.4.1
 
 - [solution Prestashop](https://www.prestashop.com/forums/){.external}.
 
-- Retrouvez le guide d'installation manuelle de Prestashop : []({legacy}1979){.ref}
+- Retrouvez le [guide d'installation manuelle de Prestashop](../installer-manuellement-prestashop/)
 - Si vous ne disposez pas encore d'un hébergement chez OVHcloud, vous pouvez dans ce cas commander un hébergement mutualisé Performance qui inclus l'installation de prestashop sur ce lien : [https://www.ovh.com/ca/fr/solutions/prestashop/](https://www.ovh.com/ca/fr/solutions/prestashop/){.external}
 
 
@@ -84,7 +84,7 @@ Nous vous invitons à consulter les forums dédiés à la [solution Drupal](http
 
 
 ## Installation automatique
-Il est possible d'installer l'un de ces CMS de manière automatique en quelques clics depuis votre espace client, vous pouvez pour cela vous aider du guide suivant : []({legacy}1402){.ref}
+Il est possible d'installer l'un de ces CMS de manière automatique en quelques clics depuis votre espace client, vous pouvez pour cela vous aider du guide suivant : [](../modules-en-1-clic/)
 
 ## Aller plus loin
 

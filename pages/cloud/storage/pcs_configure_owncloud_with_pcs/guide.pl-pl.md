@@ -18,7 +18,7 @@ Przewodnik ten wyjaśnia, jak skonfigurować aplikację OwnCloud dla Object Stor
 ## Wymagania
 
 - Pobranie pliku OpenRC z panelu klienta OVH lub z interfejsu Horizon
-- [Dodanie przestrzeni dyskowej]({legacy}1790) dla aplikacji Owncloud
+- [Dodanie przestrzeni dyskowej](https://docs.ovh.com/pl/public-cloud/dodanie_przestrzeni_dyskowej/) dla aplikacji Owncloud
 
 
 

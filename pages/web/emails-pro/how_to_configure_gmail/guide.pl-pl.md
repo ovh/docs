@@ -111,4 +111,4 @@ Pamiętaj, że w celu uzyskania dostępu do Twojego konta E-mail Pro OVHcloud, m
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

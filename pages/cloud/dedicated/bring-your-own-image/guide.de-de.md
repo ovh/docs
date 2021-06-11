@@ -1,22 +1,31 @@
 ---
 title: Bring Your Own Image verwenden
-excerpt: Erfahren Sie hier, wie Sie Ihre eigenen Images mit der OVHcloud APIv6 bereitstellen
+excerpt: Erfahren Sie hier, wie Sie Ihre eigenen Images bereitstellen
 slug: bringyourownimage
 section: Fortgeschrittene Nutzung
 ---
 
-**Letzte Aktualisierung am 21.07.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 29.03.2021**
 
 ## Ziel
 
 Mithilfe der Funktion *Bring Your Own Image* (BYOI) können Sie *cloudready* Images direkt auf Ihren Dedicated Servern einrichten. Somit können Sie Bare Metal Dienste als Ressource für Ihre Deployments verwenden.
 
-**Diese Anleitung erklärt, wie Sie *Bring Your Own Image* über die OVHcloud APIv6 verwenden.**
+**Was bedeutet *cloudready*?**
+<br>*cloudready* bedeutet vor allem, unabhängig von der zugrundeliegenden Infrastruktur zu sein.
+Zusätzlich zu den unten genannten Voraussetzungen und Einschränkungen muss sichergestellt werden, dass das (heruntergeladene oder erstellte) Image die technischen Anforderungen eines *cloudready* Image erfüllt. Das Image muss in der Lage sein, unabhängig von der Servertypologie korrekt zu booten. Im Falle der Verwendung eines Config Drive muss es auch den *cloud-init* Dienst beinhalten. Schließlich müssen die Systemkonfigurationen es ermöglichen, das Betriebssystem, insbesondere die Netzwerkkonfigurationen, vollständig einzurichten.
+
+**Diese Anleitung erklärt, wie Sie *Bring Your Own Image* mit einem OVHcloud Server verwenden.**
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal) in Ihrem Kunden-Account.
-- Sie haben die [Credentials generiert, um die APIv6 zu verwenden](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) (für die Methode über das [Kundencenter](#viacontrolpanel)).
+- Sie haben die [Credentials generiert, um die API zu verwenden](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (für den Abschnitt zum [Deployment über API](#viaapi)).
 
 > [!warning]
 >
@@ -25,20 +34,46 @@ Mithilfe der Funktion *Bring Your Own Image* (BYOI) können Sie *cloudready* Ima
 
 ## In der praktischen Anwendung
 
-### Technische Einschränkungen
+**Technische Einschränkungen**
 
 Es gibt noch einige technische Einschränkungen bei der Verwendung physischer Dienste wie Dedicated Server.
 Bitte beachten Sie die unten aufgeführten Anforderungen bei der Vorbereitung Ihres Deployments. Diese Liste ist nicht erschöpfend.
 
 - Boot-Modus: **uefi** oder **legacy**
 - Partitionstyp: **MBR** oder **GPT**
-- Das Bildformat: **qcow2** oder **raw**
+- Imageformat: **qcow2** oder **raw**
 
 Wenn Ihr Server über **uefi** Boot verfügt, müssen Sie in Ihrem Image unbedingt eine **EFI**-Partition hinzufügen.
 
-### Image deployen
+**Deployment-Methoden**
 
-Loggen Sie sich auf [https://api.ovh.com/](https://api.ovh.com/) ein und gehen Sie dann in den Bereich `/dedicated/server`{.action}. Mit dem `Filter`-Feld können Sie nach „BringYourOwnImage“ suchen.
+- [Über das Kundencenter](#viacontrolpanel): ermöglicht es Ihnen, Ihr Image schnell und einfach über Ihr OVHcloud Kundencenter bereitzustellen.
+- [Über die API](#viaapi): Sie können die OVHcloud APIs verwenden, um sie in Ihre eigenen Skripte zu integrieren, um die Inbetriebnahme zu automatisieren.
+
+### Ihr Image über das OVHcloud Kundencenter deployen <a name="viacontrolpanel"></a>
+
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) 
+ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus.
+
+Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben "System (OS)". Klicken Sie anschließend auf `Installieren`{.action}.
+
+![BYOI](images/byoi-controlpanel01.png){.thumbnail}
+
+Wählen Sie nun geöffneten Fenster `Installation auf Basis eines personalisierten Images`{.action} und klicken Sie dann auf `Weiter`{.action}.
+
+![BYOI](images/byoi-controlpanel02.png){.thumbnail}
+
+Sie werden auf die Konfigurationsseite weitergeleitet. Vergewissern Sie sich, dass die URL Ihres Images im geeigneten Format vorliegt. Vervollständigen Sie die übrigen erforderlichen Felder auf dieser Seite. Wenn Sie bestätigt haben, dass die Informationen korrekt sind, klicken Sie auf `System installieren`{.action}.
+
+Weitere Informationen zu den Optionen finden Sie im Abschnitt ["Deployment-Optionen"](#options) dieser Anleitung. 
+
+Weitere Informationen zur Aktivierung von "ConfigDrive" finden Sie auf [dieser Seite](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+
+![BYOI](images/byoi-controlpanel03.png){.thumbnail}
+
+### Image über die API deployen <a name="viaapi"></a>
+
+Loggen Sie sich auf [https://api.ovh.com/](https://api.ovh.com/) ein und gehen Sie dann in den Bereich `/dedicated/server`{.action}. Mit dem `Filter`-Feld können Sie nach "BringYourOwnImage" suchen.
 
 Die BYOI Funktion nutzt drei API-Aufrufe.
 
@@ -51,6 +86,7 @@ Um Ihr Image zu deployen, verwenden Sie folgenden Aufruf und vervollständigen S
 > @api {POST} /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
+#### Deployment-Optionen <a name="options"></a>
 
 | Feld | Beschreibung |
 |-|-|
@@ -68,7 +104,7 @@ Um Ihr Image zu deployen, verwenden Sie folgenden Aufruf und vervollständigen S
 | httpHeader | Nur anzugeben, wenn nötig, um das Image herunterzuladen. |
 | type | Typ/Format Ihres Images (qcow2, raw, ova). |
 
-„ConfigDrive“ ist eine von _cloud-init_ beim ersten Boot Ihres Servers verwendete Partition, um die gewünschte Konfiguration festzulegen. Sie können auswählen, ob Sie diese Option aktivieren möchten.
+"ConfigDrive" ist eine von *cloud-init* beim ersten Boot Ihres Servers verwendete Partition, um die gewünschte Konfiguration festzulegen. Sie können auswählen, ob Sie diese Option aktivieren möchten.
 
 ![POST API Call](images/postapicall.png){.thumbnail}
 
@@ -83,11 +119,11 @@ Sie können die Bereitstellung Ihres Images über den unten stehenden API Aufruf
 > @api {GET} /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
-In diesem Beispiel wird die Bereitstellung gestartet.
+In diesem Beispiel ist das Deployment im Status "starting".
 
 ![GET API Call](images/getapicall.png){.thumbnail}
 
-Die Bereitstellung kann etwa zehn Minuten dauern. Sobald die Operation abgeschlossen ist, wird der Status Ihrer Deployments auf „done“ umgestellt, und Ihr Server wird von der Festplatte neu gestartet.
+Die Bereitstellung kann etwa zehn Minuten dauern. Sobald die Operation abgeschlossen ist, wird der Status Ihrer Deployments auf "done" umgestellt, und Ihr Server wird von der Festplatte neu gestartet.
 
 #### Ausgabe-Beispiele
 

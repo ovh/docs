@@ -89,4 +89,4 @@ Edycja użytkownika pozwala na aktualizację jego adresu e-mail, uprawnień oraz
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en>.
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

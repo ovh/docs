@@ -127,4 +127,4 @@ Anschließend müssen Sie nur noch den erforderlichen Treiber installieren, der 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

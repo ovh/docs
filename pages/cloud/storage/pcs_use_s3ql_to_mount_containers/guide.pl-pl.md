@@ -19,7 +19,7 @@ Przewodnik ten wyjaśnia, jak zamontować kontener obiektów jako system plików
 ## Wstępne wymagania
 
 - [Dostęp do interfejsu Horizon]({legacy}1773)
-- [Dodawanie przestrzeni dyskowej]({legacy}1790)
+- [Dodawanie przestrzeni dyskowej](https://docs.ovh.com/pl/public-cloud/dodanie_przestrzeni_dyskowej/)
 
 
 
@@ -62,7 +62,7 @@ admin@serveur1:~$ sudo chmod 600 s3qlcredentials.txt
 - Formatowanie kontenera obiektów:
 
 ```
-admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL
+admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME
 ```
 
 
@@ -84,7 +84,7 @@ admin@serveur1:~$ sudo mkdir /mnt/container
 - Montowanie kontenera obiektów
 
 ```
-admin@serveur1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL /mnt/container/
+admin@serveur1:~$ sudo mount.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME /mnt/container/
 ```
 
 
@@ -100,7 +100,7 @@ tmpfs 393M 5.2M 388M 2% /run
 tmpfs 982M 0 982M 0% /dev/shm
 tmpfs 5.0M 0 5.0M 0% /run/lock
 tmpfs 982M 0 982M 0% /sys/fs/cgroup
-swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
+swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME 1.0T 0 1.0T 0% /mnt/container
 ```
 
 

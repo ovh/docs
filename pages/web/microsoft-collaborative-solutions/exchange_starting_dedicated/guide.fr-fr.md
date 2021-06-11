@@ -31,14 +31,14 @@ Voici les différentes fonctionnalités directement accessibles :
 - Informations Générales
 - Domaines associés
 - Comptes e-mail
-- Groupes : []({legacy}1258){.ref}
+- [Groupes](../exchange-utilisation-des-groupes-mailing-list/)
 - Contacts externes
 - Comptes partagés
 
 Depuis l'onglet "Plus+" :
 
-- Ressources : []({legacy}1325){.ref}
-- Pied de page : []({legacy}1330){.ref}
+- [Ressources](../exchange-utilisation-des-comptes-de-ressource/)
+- [Pied de page](../exchange-signature-automatique-disclaimer/)
 - Tâches récentes
 - Gestion de la politique de sécurité
 

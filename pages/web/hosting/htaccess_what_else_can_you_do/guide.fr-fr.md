@@ -79,16 +79,12 @@ DirectoryIndex accueil.html
 ```
 
 
-### Faire des redirections
-Vous pouvez pour cela vous rendre sur le lien suivant : [Cliquer ici]({legacy}1339){.ref}
-
-
 ### Faire de la reecriture d'URL
-Vous pouvez pour cela vous rendre sur le lien suivant : [Cliquer ici]({legacy}1971){.ref}
+Vous pouvez pour cela vous rendre sur le lien suivant : [Cliquer ici](../htaccess-reecriture-url-mod-rewrite/)
 
 
 ## Le fichier .htaccess
-Tout sur le fichier .htaccess sur le lien suivant : [Cliquer ici]({legacy}1967){.ref}
+Tout sur le fichier .htaccess sur le lien suivant : [Cliquer ici](../mutualise-tout-sur-le-fichier-htaccess/)
 
 ## Aller plus loin
 

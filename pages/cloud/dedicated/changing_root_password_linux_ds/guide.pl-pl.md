@@ -1,57 +1,74 @@
 ---
-title: 'Zmiana hasła root na serwerze dedykowanym z systemem Linux'
+title: 'Zmiana hasła root na serwerze dedykowanym'
 slug: zmiana-hasla-root-na-serwerze-dedykowanym-linux
-excerpt: 'Dowiedz się, jak zmienić hasło root na serwerze dedykowanym z systemem Linux'
+excerpt: 'Dowiedz się, jak zmienić hasło root do serwera dedykowanego'
 section: 'Diagnostyka i tryb Rescue'
 ---
 
-**Ostatnia aktualizacja z dnia 17-10-2018**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Ostatnia aktualizacja z dnia 16-02-2021**
 
 ## Wprowadzenie
 
-Podczas instalacji lub reinstalacji dystrybucji lub systemu operacyjnego otrzymasz hasło dla użytkownika root. Rekomendujemy jego zmianę zgodnie z instrukcją zawartą w przewodniku [Zabezpieczenie serwera dedykowanego](https://docs.ovh.com/pl/dedicated/porady-zabezpieczanie-serwera-dedykowanego/){.external}. Możesz również zmienić hasło w sytuacji, gdy utraciłeś wcześniejsze.
+Może zaistnieć konieczność zmiany hasła root (lub hasła użytkownika admin/sudo) do systemu operacyjnego GNU/Linux.
+<br>Możliwe są dwa scenariusze:
 
-**Niniejszy przewodnik prezentuje obydwa przypadki i wyjaśnia, jak zmienić hasło root na Twoim serwerze dedykowanym.**
+- Możesz nadal logować się przez SSH
+- Nie możesz logować się przez SSH, ponieważ straciłeś hasło
 
+**Dowiedz się, jak zmienić hasło administratora w zależności od początkowej sytuacji.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Wymagania początkowe
 
-* Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external} z zainstalowaną dystrybucją Linux
-* Połączenie przez SSH z identyfikatorem root
-* Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external}
+- Posiadanie danych do logowania otrzymanych w e-mailu po zainstalowaniu (jeśli są one nadal prawidłowe)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} (aby korzystać z trybu Rescue)
 
+> [!warning]
+>OVHcloud świadczy usługi, za które jesteś odpowiedzialny w związku z ich konfiguracją i zarządzaniem. Jesteś więc odpowiedzialny za ich prawidłowe funkcjonowanie.
+>
+>Niniejszy przewodnik ma na celu pomoc w wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy kontakt z wyspecjalizowanym dostawcą usług.
+>
 
 ## W praktyce
 
-### Zmiana hasła dla użytkownika root
+### Zmiana hasła, jeśli nadal masz dostęp (użytkownik sudo lub root)
 
-Jeśli zalogowałeś się przez dostęp root przy użyciu aktualnego hasła i chcesz to hasło zmienić, połącz się z serwerem przez SSH, używając wiersza poleceń i wpisz komendę:
+Zaloguj się do serwera przez SSH. Przejdź na użytkownika root, jeśli konieczne:
 
-```sh
-passwd
+```
+~$ sudo su -
+~#
 ```
 
-Następnie wpisz dwa razy nowe hasło, jak pokazano poniżej:
+Aby zmienić hasło dla aktualnego użytkownika, wprowadź `passwd`. Następnie wpisz dwa razy nowe hasło, jak pokazano poniżej:
 
-```sh
-Enter new UNIX password:
-Retype new UNIX password:
+```
+~# passwd
+
+New password:
+Retype new password:
 passwd: password updated successfully
 ```
 
 > [!primary]
 >
-> Pamiętaj, że w dystrybucji Linux znaki tworzące Twoje hasło nie będą się wyświetlały w trakcie ich wpisywania.
+> Pamiętaj, że w dystrybucji GNU/Linux znaki hasła **nie** wyświetlają się w trakcie ich wpisywania.
 >
 
-### Zmiana utraconego hasła
+### Zmień hasło, jeśli je utraciłeś
 
 #### Etap 1: identyfikacja partycji systemu
 
-Po włączeniu [trybu Rescue](https://docs.ovh.com/pl/dedicated/ovh-rescue/){.external} na Twoim serwerze, zidentyfikuj partycję systemu. Możesz to zrobić przy użyciu polecenia:
+Po ponownym uruchomieniu serwera w [trybie Rescue](../ovh-rescue/) zidentyfikuj partycję systemu. W tym celu wprowadź następującą komendę:
 
-```sh
-fdisk -l
+```
+# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -70,48 +87,52 @@ Device Boot Start End Blocks Id System
 /dev/sda1 1 31488 8060912 c W95 FAT32 (LBA)
 ```
 
-W powyższym przykładzie partycja systemu to `/dev/hda1`. 
+W powyższym przykładzie partycja systemowa to /dev/hda1.
 
 > [!primary]
 >
-> Jeśli na Twoim serwerze skonfigurowana jest programowa macierz RAID, zamontuj wolumin RAID (zwykle `/dev/mdX`). 
+> Jeśli Twój serwer posiada konfigurację RAID, zamontuj wolumin RAID:
+>
+> - z programową macierzą RAID Twoja partycja główna będzie `/dev/mdX`;
+> - ze sprzętową macierzą RAID, Twoja główna partycja będzie `/dev/sdX`.
 >
 
 #### Etap 2: montowanie partycji systemu
 
 Po zidentyfikowaniu partycji systemu możesz ją zamontować przy użyciu polecenia:
 
-```sh
-mount /dev/hda1 /mnt/
+```
+# mount /dev/hda1 /mnt/
 ```
 
 #### Etap 3: modyfikacja partycji root
 
-Edycja partycji systemu jest domyślnie zablokowana. Aby ją odblokować, możesz użyć następującego polecenia:
+Domyślnie partycja systemu jest zablokowana do edycji. Aby uzyskać dostęp do zapisu, otwórz go za pomocą polecenia:
 
-```sh
-chroot /mnt
+```
+# chroot /mnt
 ```
 
-#### Etap 4: zmiana hasła root
+#### Etap 4: zmień hasło root
 
-Ostatni etap polega na zmianie hasła przy użyciu następującego polecenia:
+Ostatni etap polega na zmianie hasła za pomocą polecenia:
 
-```sh
-passwd
+```
+# passwd
 
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
 ```
 
-Po wykonaniu tej czynności, zmień tryb uruchamiania Twojego serwera na `Uruchamianie z dysku twardego`{.action}, po czym zrestartuj serwer. Twoje hasło root zostało zmienione.
-
+Po wykonaniu tego etapu, zmień tryb uruchamiania Twojego serwera, aby `Uruchomić dysk twardy`{.action} i zrestartować go. Twoje hasło root zostało zmienione.
 
 ## Sprawdź również
 
-[Uruchamianie i korzystanie z trybu Rescue](https://docs.ovh.com/pl/dedicated/ovh-rescue/){.external}
+[Uruchamianie i korzystanie z trybu Rescue](../ovh-rescue/)
 
-[Zmiana hasła administratora na serwerze dedykowanym z systemem Windows](https://docs.ovh.com/pl/dedicated/zmiana-hasla-admin-windows//){.external}
+[Zabezpieczanie serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/)
+
+[Zmiana hasła administratora na serwerze dedykowanym z systemem Windows](../zmiana-hasla-admin-windows/)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

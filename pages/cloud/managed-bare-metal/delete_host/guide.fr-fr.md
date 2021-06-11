@@ -3,13 +3,13 @@ title: Supprimer un serveur hôte
 slug: suppression-serveur-hote
 routes:
     canonical: 'https://docs.ovh.com/fr/private-cloud/suppression-serveur-hote/'
-excerpt: Découvrez comment supprimer un serveur hôte d''une infrastructure Managed Bare Metal
+excerpt: "Découvrez comment supprimer un serveur hôte d'une infrastructure Managed Bare Metal"
 legacy_guide_number: '1442308'
 section: Fonctionnalités OVHcloud
 order: 08
 ---
 
-**Dernière mise à jour le 18/11/2020**
+**Dernière mise à jour le 19/03/2021**
 
 ## Objectif
 
@@ -22,8 +22,12 @@ Dans certains cas il peut être utile de supprimer un serveur hôte (_host_) de 
 * Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
 * Accéder à l’interface de gestion vSphere.
 
-
 ## En pratique
+
+> [!warning]
+>
+> Attention à ne pas éteindre le serveur hôte que vous souhaitez retirer car cela n'aurait pas l'effet escompté. En effet, cela entraînerait la livraison d'un serveur hôte de spare et le serveur hôte éteint ne serait pas automatiquement retiré.
+>
 
 La suppression d’un serveur hôte se déroule en deux étapes : la mise en mode maintenance de cette ressource, puis la suppression de celle-ci.
 
@@ -37,11 +41,9 @@ Vous avez accès à une fenêtre vous permettant de confirmer le passage en main
 
 ![Confirmation du mode maintenance](images/removehost02.png){.thumbnail}
 
-
 Vous pouvez suivre la progression du passage en mode maintenance dans la zone `Tâches récentes`.
 
 ![Suivi du mode Maintenance](images/removehost03.png){.thumbnail}
-
 
 ### Supprimer le serveur hôte
 
@@ -61,13 +63,12 @@ Vous pouvez suivre la progression de la suppression du serveur hôte dans la zon
 
 ![Suivi de la tâche de suppression](images/removehost07.png){.thumbnail}
 
-En quelques minutes, le serveur hôte est supprimé et n’est plus visible . 
+En quelques minutes, le serveur hôte est supprimé et n’est plus visible.
 
 > [!primary]
 >
 > La suppression passera en erreur si le moindre répertoire ou fichier qui n’était pas présent initialement sur le stockage local du serveur hôte a été ajouté. Seuls les répertoires de base et les fichiers de vSwap ne bloquent pas cette opération.
-> 
-
+>
 
 ## Aller plus loin
 

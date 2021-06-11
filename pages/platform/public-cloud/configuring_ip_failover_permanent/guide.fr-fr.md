@@ -3,7 +3,7 @@ title: Rendre la configuration IP Fail Over persistante
 slug: rendre-la-configuration-ip-fail-over-persistante
 legacy_guide_number: 1885
 section: Réseau
-order: 4
+hidden: true
 ---
 
 

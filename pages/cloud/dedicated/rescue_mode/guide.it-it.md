@@ -10,11 +10,22 @@ section: 'Diagnostica e modalità Rescue'
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 14/01/2021**
+**Ultimo aggiornamento: 19/03/2021**
 
 ## Obiettivo
 
 La modalità Rescue è una funzione che permette di avviare il tuo servizio su un sistema operativo temporaneo, per diagnosticare e risolvere problemi.
+
+El modo de rescate se adapta generalmente a las siguientes tareas:
+
+- Restauración de la contraseña root
+- Diagnóstico de problemas de red
+- Reparación de un sistema operativo defectuoso
+- Corrección de una configuración incorrecta de un cortafuegos de software
+- Prueba del rendimiento de los discos
+- Prueba del procesador y la memoria RAM
+
+Si todavía no dispone de backups recientes, la copia de seguridad de sus datos debe ser la primera etapa del modo de recuperación.
 
 **Questa guida ti mostra come attivare e utilizzare il Rescue mode sul tuo server.**
 
@@ -74,6 +85,8 @@ root@your_server_password:
 > Per aggirare il problema, puoi commentare l'impronta del tuo sistema abituale aggiungendo una `#` davanti alla sua linea nel file *known_hosts*. Elimina questo carattere prima del riavvio del server in modalità normale.
 >
 
+#### Montaje de sus particiones
+
 La maggior parte delle modifiche apportate al tuo server via SSH in modalità Rescue richiedono il mount di una partizione. Questa modalità possiede infatti il proprio file system temporaneo. e, di conseguenza, le modifiche apportate al file system vengono perse con il reboot della macchina sul disco principale.
 
 Il mount delle partizioni viene realizzato con il comando `mount` in SSH. Dovrai prima listare le tue partizioni al fine di poter recuperare il nome di quella che vorrai montare. Puoi fare riferimento ai seguenti esempi di codice: 
@@ -113,6 +126,46 @@ rescue:~# mount /dev/hda1 /mnt/
 
 Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e riavvia il server da riga di comando.
 
+#### Montaje de una tienda de datos
+
+Puede montar un almacén de datos VMware de la misma forma que se describe en el segmento anterior. En primer lugar, instale el paquete necesario:
+
+```
+rescue:~# apt-get update && apt-get install vmfs-tools
+```
+
+A continuación, seleccione las particiones para consultar el nombre de la partición del almacén de datos:
+
+```
+rescue:~# fdisk -l
+```
+
+Ahora monte la partición con el siguiente comando, sustituyendo `sdbX` por el valor indicado en el paso anterior:
+
+```
+rescue:~# vmfs-fuse /dev/sdbX /mnt
+```
+
+Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e riavvia il server da riga di comando.
+
+### Uso de la interfaz web del modo de rescate ("rescue64-pro" únicamente)
+
+Una vez reiniciado el servidor, puede acceder a la interfaz web introduciendo `your_server_IP:81` en la barra de direcciones de su navegador. Utilice el puerto *444* en su lugar. Por ejemplo:
+
+```
+https://169.254.10.20:444
+```
+
+Si ya ha protegido sus datos, puede utilizar la interfaz web del modo de recuperación para probar los siguientes componentes.
+
+- **Test del disco**: Comprueba su integridad con SMART.
+- **Procesadores**: Comprueba que la CPU funciona con normalidad. (Esta operación puede tardar un tiempo.)
+- **Particiones**: Comprueba el estado de los lectores.
+- **Memoria**: Comprueba la memoria RAM instalada en el servidor. (Esta operación puede tardar un tiempo.)
+- **Red**: Comprueba la conexión a un sistema de referencia interno de OVHcloud y la conexión al navegador.
+
+![Interfaz web para el modo de rescate](images/rescue-mode-04.png) {.thumbnail}
+
 ### Windows <a name="windowsrescue"></a>
 
 #### Utilizzo degli strumenti WinRescue
@@ -121,22 +174,19 @@ Dopo il riavvio del server, riceverai un'email con le credenziali di accesso in 
 
 Per utilizzare la modalità Rescue offerta da Windows, scarica e installa una console VNC o utilizza il modulo `IPMI` nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
-![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
+![WinRescue Windows](images/rescue-mode-07.png){.thumbnail}
 
 Questi strumenti sono già installati in questa modalità:
 
 |Strumento|Descrizione|
 |---|---|
-|Firefox|Browser Web.|
-|Freecommander|File manager con tutte le funzionalità standard di cui hai bisogno.|
-|NTPWEdit|Un password manager facile da utilizzare. Ti permette di riattivare o modificare le password degli account utente nel tuo server. Questo strumento è utile in caso di perdita delle informazioni di connessione o per la riattivazione di un account di sicurezza.|
-|Avast Virus Cleaner|Applicazione antivirus che permette di eseguire la scansione e pulizia dei file.|
-|ActivNIC|tool che ti permette di riattivare una scheda di rete.|
-|BootSect|Uno strumento che ti permette di riparare il settore di avviamento.|
-|Virtual Clone Drive|Lettore virtuale che consente di montare file BIN, CCD e ISO su un lettore CD virtuale.|
-|smartCTL|tool che ti permette di accedere ai log automatici di monitoring degli hard disk.|
-|Diskpart|Uno strumento che ti permette di gestire le partizioni del server.|
-|SysInternal|Una suite software Microsoft che ti permette di effettuare la manutenzione della rete e gestire i processi.|
+|Mozilla ULight|Un browser Web.|
+|Memory Diagnostics Tool|Utilizza Windows per testare la memoria RAM.|
+|Explorer_Q-Dir|Un provider di file.|
+|GSmartControl|Uno strumento di verifica degli hard disk e degli hard disk SSD.|
+|PhotoRec|Un tool di recupero di file potenzialmente persi su un disco.|
+|SilverSHielD|Un server SSH2 e SFTP.|
+|System Recovery|Un tool Windows di ripristino e riparazione del sistema.|
 |TestDisk|Software di recupero dati. Ti permette di recuperare e modificare partizioni corrotte, ritrovare partizioni scomparse, riparare un settore di boot e ricostruire un MBR difettoso.|
 |FileZilla|Un client FTP open source. Prende in carico i protocolli SSH e SSL e dispone di un’interfaccia <i>Drag and Drop</i> (trascina e rilascia) chiara e intuitiva.  Può essere utilizzato per trasferire i tuoi dati verso un server FTP, come il backup FTP fornito con la maggior parte dei modelli di server OVHcloud.|
 |7-ZIP|Software per la compressione e archiviazione di file e cartelle, che legge questi formati: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR e Z. Con 7-ZIP è inoltre possibile creare archivi nei formati: BZIP2, GZIP, TAR, WIM, XZ, Z e ZIP.|

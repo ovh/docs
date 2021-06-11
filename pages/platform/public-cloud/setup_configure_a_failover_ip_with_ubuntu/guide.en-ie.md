@@ -3,6 +3,7 @@ title: Configure a failover IP with Ubuntu
 excerpt: Configure a failover IP with Ubuntu
 slug: configure_a_failover_ip_with_ubuntu
 legacy_guide_number: g2043
+hidden: true
 ---
 
 
@@ -21,7 +22,7 @@ This guide explains how to configure your instance's network interface so that a
 
 ## Requirements
 
-- [Make sure you have launched an instance in your OVH customer account OVH]({legacy}1775)
+- [Make sure you have launched an instance in your OVH customer account](../public-cloud-first-steps/)
 - You must have a failover IP address
 
 
@@ -72,11 +73,11 @@ service networking restart
 
 ## 
 
-- [Migrate a failover IP]({legacy}1890)
+- [Migrate a failover IP](../migrating_a_failover_ip/)
 
 
 
 
 ## 
-[Go back to the index of Cloud guides]({legacy}1785)
+[Go back to the index of Cloud guides](../)
 

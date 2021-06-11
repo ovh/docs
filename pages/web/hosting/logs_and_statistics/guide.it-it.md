@@ -5,115 +5,98 @@ slug: hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito
 legacy_guide_number: g1344
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## Connessione allo Spazio Cliente OVH
-Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/) inserendo le tue credenziali.
+**Ultimo aggiornamento: 05/01/2021**
 
-Seleziona il dominio di cui vuoi consultare le statistiche: nel menu di sinistra seleziona"Hosting", poi "Statistiche".
+## Obiettivo
 
-![](images/img_2827.jpg){.thumbnail}
-Nella scheda ricapitolativa, clicca sul link di accesso "Statistiche e log".
+L'accesso ai log e alle statistiche del tuo sito è incluso nella tua offerta di hosting Web, accessibile dal tuo Spazio Cliente OVHcloud.
 
-![](images/img_2826.jpg){.thumbnail}
+**Questa guida ti mostra come consultare le statistiche e i log del tuo sito Web.**
 
+## Prerequisiti
 
-## Accedi alla pagina "Statistiche e Log"
-Visualizza le statistiche del tuo sito accedendo alla pagina:
+- Disporre di un piano [di hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 
+## Procedura
 
-- https://logs.ovh.net/tuodominio
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action} nella colonna di sinistra.
 
+Seleziona l'hosting interessato e clicca sulla scheda `Statistiche e log`{.action}
 
-Sono semplici da utilizzare e visualizzare. In pochi click analizzi il tuo sito senza dover fornire altri calcoli statistici.
+![hosting](images/statistics01.png){.thumbnail}
 
-Per accedere alle statistiche e ai log, clicca sul link generato automaticamente nello Spazio Cliente OVH.
+La finestra che appare è composta da 3 sezioni. Il primo presenta le **statistiche**, il secondo i **log** lordi del tuo hosting, l'ultimo è dedicato **all'amministrazione degli utenti** autorizzati ad accedere alle statistiche.
 
-È necessario accedere con i tuoi identificativi OVH
+![hosting](images/statistics02u.png){.thumbnail}
 
+### Gestione degli utenti
 
-## Spazio statistiche
-Dopo esserti connesso alla pagina delle statistiche, viene visualizzato quello che vedi in figura. 
+La creazione di un utente permetterà a una persona di accedere alle statistiche del tuo hosting senza avere accesso al tuo Spazio Cliente OVHcloud. 
 
-Hai due possibilità: 
+Clicca sul pulsante `Crea un nuovo utente`{.action} nella sezione `Amministrazione utenti` e segui le istruzioni come mostrato qui di seguito.  
 
+![hosting](images/user-statistics01.png){.thumbnail}
 
-- accedere alle statistiche del tuo sito utilizzando urchin v6 (riquadro verde)
+> [!warning] 
+>
+> Se hai attivato i log separati su un [record multisito](../configurare-un-multisito-su-un-hosting-web/#step-2-aggiungi-un-dominio-o-un-sottodominio), gli utenti creati qui non possono accedere alle statistiche di questo record multisito.
+>
 
-- consultare i log del tuo sito in tempo reale o precedenti (riquadro arancione)
+### Statistiche delle visite
 
+Per monitorare e gestire al meglio il traffico dei tuoi siti Web, hai a disposizione uno strumento di statistica di frequentazione e misurazione dell'audience dei tuoi siti Internet ospitati sul tuo hosting condiviso, **OVHcloud Web Statistics**.
 
+![hosting](images/OWStats01.gif){.thumbnail}
 
-![](images/img_2832.jpg){.thumbnail}
+La dashboard di OVHcloud Web Statistics si presenta in 6 sezioni nel pannello di sinistra.
 
+- Dashboard: visualizzazione del traffico sui siti del tuo hosting.
+- Browsers: classifica i browser più utilizzati per visualizzare i tuoi siti.
+- Geolocalization:  proporzione di visitatori in funzione della loro localizzazione.
+- Requests: classifica le pagine più consultate sui tuoi siti.
+- Robots : visualizzazione dei robot che passano sui tuoi siti.
+- Stato: statistiche sugli insuccessi e sui successi riscontrati in base ai codici HTTP restituiti.
+- FAQ: sezione dedicata alle questioni più frequenti
 
-## Urchin v6
-Queste statistiche ti forniscono informazioni su
+Il riquadro `Period selection` in alto a destra vi permette di selezionare un periodo preciso.
 
-Traffico del tuo sito
+### Logs
 
+I log grezzi del tuo sito possono essere visualizzati con un ritardo di circa 5 minuti.
 
-- numero di visitatori
-- numero di pagine visualizzate
-- "peso" delle pagine visualizzate
-- numero di richieste http
+![hosting](images/logs01.png){.thumbnail}
 
-Questi dati possono essere visualizzati per ora, settimana, mese o anno, per analizzare l'evoluzione del tuo sito.
+Sono a tua disposizione diversi tipi di log:
 
-Pagine
+- Logs Web: qui puoi trovare i log di consultazione del tuo sito e le diverse azioni realizzate a partire dal tuo sito. che permette di individuare, ad esempio, tentativi di azioni dolorose.
+- Logs FTP: le diverse connessioni FTP saranno registrate e conservate in questi log.
+- Logs errore: i diversi errori generati dal tuo sito.
+- Logs CGI: i diversi appelli agli scripts cgi.bin realizzati.
+- Logs out: le statistiche del tuo hosting sulle diverse chiamate esterne effettuate.
+- Logs SSH: questi log indicano le differenti connessioni realizzate con il protocollo SSH.
+- Logs CRON: il risultato dell'esecuzione delle operazioni pianificate ([Le operazioni automatizzate (CRON) sul tuo hosting](../hosting_web_task_automatizzaticron/)).
 
-- durata media di connessione al tuo sito o a una pagina in particolare
+### Attività dell'hosting
 
-Segui la tua referenziazione
+In questa sezione trovi l'attività dell'infrastruttura del tuo hosting, per visualizzare il consumo delle risorse messe a tua disposizione.
 
-- in che modo viene trovato il tuo sito?
-- da quali motori di ricerca viene estratto l'URL del tuo sito?
-- quali parole chiave hanno utilizzato per la ricerca?
+Clicca sulla scheda `Informazioni generali`{.action} e poi giù in fondo alla pagina.
 
+![hosting](images/statistics03.png){.thumbnail}
 
-Per gestire al meglio le pagine del tuo sito, conviene sapere quali sono più interessanti per i tuoi visitatori
+È possibile visualizzare diversi tipi di grafici dal menu a tendina in alto a sinistra:
 
+- Connessioni in uscita: richieste inviate dal vostro sito verso un sito esterno.
+- Utilizzo CPU: livello di consumo del processore sull'istanza di hosting.
+- Superamento del massimale delle risorse: indica i momenti in cui il tuo hosting supera la sua quota di risorse.
+- Richieste SQL: quantità di richieste verso i database del tuo hosting.
+- Tempi di risposta SQL: tempo di risposta delle richieste inviate ai database del tuo hosting.
 
-- quali pagine del tuo sito sono state le più visitate?
-- per quanto tempo?
-- quali pagine contengono errore e quali sono i tipi di errori riscontrati?
+## Per saperne di più
 
-Sintesi
-
-- quali pagine del tuo sito sono visualizzate per prime dai tuoi utenti?
-- quali pagine vengono visualizzate per ultime sul tuo sito?
-- quanto tempo in media viene passato su ogni pagina?
-- quante pagine vengono visualizzate in media per ogni visita?
-
-
-
-![](images/img_1490.jpg){.thumbnail}
-
-
-## Log
-Visualizza i log del tuo sito in tempo reale. I log del tuo sito sono disponibili in meno di 15 minuti, per permetterti di verificare il buon funzionamento del tuo sito o di calcolarne i log quasi in tempo reale.
-
-Puoi visualizzare diversi tipi di log
-
-
-- Log Web: trovi i log di consultazione del tuo sito e le diverse azioni realizzate a partire da esso. Recupera da qui i log sui tentativi di hack ad esempio. 
-
-- Log FTP: diverse connessioni FTP che vengono registrate e conservate nei log
-
-- Log di errore: diversi errori generati dal tuo sito
-
-- Log cgi: richieste realizzate agli script cgi.bin
-
-- Log out: statistiche del tuo hosting sulle richieste esterne realizzate
-
-- Log SSH: log delle connessioni realizzate con protocollo SSH
-
-- Log Cron: il risultato delle attività pianificate (http://guida.ovh.it/Crontab)
-
-
-
-![](images/img_2828.jpg){.thumbnail}
-
-
-## È possibile utilizzare il Urchin in un'altra lingua?
-Scegli la lingua di Urchin nella sua interfaccia, clicca su Preferenze, scegli la lingua e poi conferma cliccando su "submit".
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -3,7 +3,7 @@ title: Konfiguracja adresu IP Fail Over w Debianie
 excerpt: Konfiguracja adresu IP Fail Over w Debianie
 slug: konfiguracja_adresu_ip_fail_over_w_debianie
 legacy_guide_number: g2042
-section: Tutoriale
+hidden: true
 ---
 
 

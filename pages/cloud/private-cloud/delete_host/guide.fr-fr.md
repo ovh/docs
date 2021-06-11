@@ -1,13 +1,13 @@
 ---
 title: Supprimer un serveur hôte
 slug: suppression-serveur-hote
-excerpt: Découvrez comment supprimer un serveur hôte d'une infrastructure Private Cloud
+excerpt: "Découvrez comment supprimer un serveur hôte d'une infrastructure Private Cloud"
 legacy_guide_number: '1442308'
 section: Fonctionnalités OVHcloud
 order: 08
 ---
 
-**Dernière mise à jour le 01/07/2020**
+**Dernière mise à jour le 19/03/2021**
 
 ## Objectif
 
@@ -20,8 +20,12 @@ Dans certains cas il peut être utile de supprimer un serveur hôte (_host_) de 
 * Posséder une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 * Accéder à l’interface de gestion vSphere.
 
-
 ## En pratique
+
+> [!warning]
+>
+> Attention à ne pas éteindre le serveur hôte que vous souhaitez retirer car cela n'aurait pas l'effet escompté. En effet, cela entraînerait la livraison d'un serveur hôte de spare et le serveur hôte éteint ne serait pas automatiquement retiré.
+>
 
 La suppression d’un serveur hôte se déroule en deux étapes : la mise en mode maintenance de cette ressource, puis la suppression de celle-ci.
 
@@ -59,13 +63,12 @@ Vous pouvez suivre la progression de la suppression du serveur hôte dans la zon
 
 ![Suivi de la tâche de suppression](images/removehost07.png){.thumbnail}
 
-En quelques minutes, le serveur hôte est supprimé et n’est plus visible . 
+En quelques minutes, le serveur hôte est supprimé et n’est plus visible.
 
 > [!primary]
 >
 > La suppression passera en erreur si le moindre répertoire ou fichier qui n’était pas présent initialement sur le stockage local du serveur hôte a été ajouté. Seuls les répertoires de base et les fichiers de vSwap ne bloquent pas cette opération.
-> 
-
+>
 
 ## Aller plus loin
 

@@ -7,7 +7,7 @@ section: Getting started
 order : 3
 ---
 
-**Last updated 3rd December 2019**
+**Last updated 30th March 2021**
 
 ## Objective
 
@@ -21,7 +21,7 @@ You can use the OVHcloud [Public Cloud](https://www.ovhcloud.com/en-gb/public-cl
 * a [Public Cloud](https://www.ovhcloud.com/en-gb/public-cloud/){.external} project created in your OVHcloud account
 * an SSH key created in the OVHcloud Control Panel
 
-### Deploy a Public Cloud Instance.
+### Deploy a Public Cloud Instance
 
 In order to deploy a public cloud instance, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to create a new instance.
 
@@ -33,16 +33,19 @@ Once you have selected the correct project, click the `Instances`{.action} butto
 
 Next, click the `Create an instance`{.action} button. You will be taken to the following menu where you can select the instance you would like to create.
 
-![create_instance1](images/create_instance1.png){.thumbnail}
+![create_instance1](images/create_instance1-2021.png){.thumbnail}
 
 The table below gives a brief explanation of the differences between the types of instances:
 
-| Server Type | Guaranteed Resources | Usage |
-| :---         |     :---:      |          ---: |
-| General Use   | ✓     | Development servers, web or business applications    |
+| Server Type | Guaranteed Resources | Usage notes |
+| :---         |     :---:      |          :--- |
+| General Purpose   | ✓     | Development servers, web or business applications    |
 | CPU     | ✓       | Video encoding or other high-performance computing      |
 | RAM   | ✓     | Databases, analysis, and in-memory calculations    |
-| Shared Resources    | -       | Testing and development environments      |
+| GPU     | ✓       | Massively parallel processing power for specialised applications (rendering, big data, deep learning, etc.)       |
+| Sandbox    | -       | Hosted on shared resources for testing and development environments      |
+| Discovery    | -       | Hosted on shared resources for testing and development environments      |
+| IOPS   | ✓     | Optimised for disk data transfer    |
 
 > [!primary]
 >
@@ -61,7 +64,7 @@ If a Windows OS is selected, then a licence will automatically be provisioned an
 
 > [!primary]
 >
-Public cloud instances running a Unix-based OS require an SSH key to be added to the server. For more information on generating an SSH key, please check out our [Create SSH Keys](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/){.external} article.
+Public cloud instances running a Unix-based OS require an SSH key to be added to the server. For more information on generating an SSH key, please check out our [Create SSH Keys](../create-ssh-keys/){.external} article.
 >
 
 In the fourth part of the menu, you can choose the number of instances to create, name your instance, and add a private network or post-installation script, should you choose to do so.
@@ -80,10 +83,10 @@ Once you have confirmed that all of the information you have entered is correct,
 
 ### Conclusion
 
-Having read this article, you should be able to provision an instance on your public cloud project via the OVHcloud Control Panel. For further reading about what you can do with your instance, please check out our articles on the [Public Cloud Services](https://docs.ovh.com/gb/en/public-cloud/){.external} documentation page.
+Having read this article, you should be able to provision an instance on your public cloud project via the OVHcloud Control Panel. For further reading about what you can do with your instance, please check out our articles on the [Public Cloud Services](../){.external} documentation page.
 
 ## Go further
 
-[Getting started with Public Cloud](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project/){.external}
+[Creating and connecting to your first Public Cloud instance](../public-cloud-first-steps/)
 
 Join our community of users on <https://community.ovh.com/en/>.

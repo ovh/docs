@@ -6,44 +6,71 @@ slug: hosting_www_aktywacja_zapory_systemowej
 section: 'Optymalizacja strony WWW'
 ---
 
-## 
-Ten dodatkowy moduł Apache'a filtruje wszystkie zapytania wchodzące na serwery www. Ze względów bezpieczeństwa moduł ten sprawdza zapytania zanim zostaną one przetworzone przez skrypty. 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-Włączając Mod Security w panelu klienta, korzystasz ze zwiększonej ochrony.
+**Ostatnia aktualizacja z dnia 26-04-2021**
 
-Dzięki Core Rule Set (CRS) korzystasz z optymalnej konfiguracji Mod Security, która chroni przed najczęstszymi atakami:
+## Wprowadzenie
 
+*ModSecurity* to uzupełniający moduł Apache, który filtruje wszystkie zapytania kierowane do serwera WWW. Wzmacnia bezpieczeństwo przed znanymi podatnościami poprzez przechwytywanie i filtrowanie wniosków, zanim zostaną one przetworzone przez skrypty.
 
-- Trojan,
-- Iniekcje e-mail,
-- Luki w plikach PDF,
-- Iniekcja plików na hostingu,
-- Iniekcja typu SQL lub XSS,
-- itp.
+Wstępnie skonfigurowany zbiór podstawowych zasad, takich jak "Core Rule Set" (CRS), *ModSecurity* chroni Twoje strony WWW przed najczęstszymi atakami, na przykład:
 
+- Trojany,
+- Wstrzykiwanie e-maili,
+- Luka w plikach PDF,
+- Włamania do plików na hostingu,
+- wtrysk typu SQL lub XSS
+- itd.
 
+**Niniejszy przewodnik wyjaśnia, jak aktywować zaporę aplikacyjną w Panelu klienta OVHcloud, aby uzyskać lepszą ochronę.**
 
+## Wymagania początkowe
 
-## 
-Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web) za pomocą identyfikatora klienta i hasła.
+- Posiadanie [hostingu OVHcloud](https://www.ovh.pl/hosting/){.external}.
+- Posiadanie co najmniej jednej [domeny](https://www.ovh.pl/domeny/){.external} przypisanej do hostingu
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
-![](images/img_3005.jpg){.thumbnail}
-Wybierz hosting w sekcji "Hosting".
+## W praktyce
 
-![](images/img_3006.jpg){.thumbnail}
-Kliknij na zakładkę "Przypisane domeny".
+Zaloguj się do swojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Na pasku usług po lewej stronie kliknij sekcję `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu.
 
-![](images/img_3007.jpg){.thumbnail}
-Domyślnie systemowy firewall jest wyłączony. Kliknij na długopis, aby przejść do opcji.
+### Włącz firewall aplikacyjny w konfiguracji PHP
 
-![](images/img_3008.jpg){.thumbnail}
-Zaznacz pole "Włącz firewall i kliknij na Dalej.
+Następnie przejdź do zakładki `Informacje ogólne`{.action}. Aktualna `wersja globalna PHP` wyświetla się w strefie **Konfiguracja**. Kliknij przycisk `...`{.action} i wybierz `Zmień konfigurację`{.action}. W oknie, które się otworzy wybierz element `Zmień bieżącą`{.action} konfigurację i kliknij przycisk `Dalej`{.action}.
 
-![](images/img_3010.jpg){.thumbnail}
-Pojawi się podsumowanie zmian. Status dla firewalla zmieni się na włączony. Kliknij na zatwierdź, aby dokończyć operację.
+![managephpconfig](images/manage-php-config.png){.thumbnail}
 
-![](images/img_3011.jpg){.thumbnail}
-Firewall został włączony.
+W nowym oknie upewnij się, że **Aplikacja firewall** jest ustawiona na `Włącz`{.action}. Aby potwierdzić konfigurację, kliknij przycisk `Potwierdź`{.action}.
 
-![](images/img_3012.jpg){.thumbnail}
+### Włącz firewall aplikacyjny dla poszczególnych domen na stronie podpiętej w opcji MultiSite
 
+Kliknij zakładkę `MultiSite`{.action} w Twoim pakiecie hostingowym. Kliknij przycisk `...`{.action} po prawej stronie wybranej domeny i wybierz opcję `Zmień domenę`{.action}.
+
+![zapalenie skóry](images/firewall-modify-multisite.png){.thumbnail}
+
+W oknie konfiguracji zaznacz kratkę `Włącz firewall`{.action}. Możesz również włączyć subdomenę `www` do tej konfiguracji, zaznaczając kratkę na górze.
+
+Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}, aby zmienić ustawienia MultiSite.
+
+![modyfydomain](images/firewall-modify-domain.png){.thumbnail}
+
+### Sprawdź stan zadania aktywacji
+
+![zarządzanie w trakcie](images/firewal-ongoing-jobs.png){.thumbnail}
+
+Zadania związane z aktualizacją konfiguracji MultiSite zostaną wymienione w zakładce `Operacje w toku`{.action} (status początkowy to "Zaplanowany"). Firewall będzie aktywny, gdy jego zadanie aktualizacji nie pojawi się już na liście.
+
+### Weryfikacja domen, dla których zapora jest aktywna
+
+Zakładka `MultiSite`{.action} w Twoim pakiecie hostingowym zawiera informacje o domenach, dla których aktywowana jest opcja firewalla.
+
+![gerageenabled](images/firewall-enabled-multisite.png){.thumbnail}
+
+Wyświetlana tabela zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie "Firewall" wyświetla się status aktywacji każdej domeny.
+
+## Sprawdź również
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

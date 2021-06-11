@@ -75,7 +75,7 @@ Primero, conéctese a su servidor virtual privado (VPS) a través del protocolo/
 Puede utilizar el comando siguiente para verificar el nombre del nuevo dispositivo conectado:
 
 ```
-# lsblk
+$ lsblk
 ```
 
 A continuación, un resultado de muestra de este comando:
@@ -90,14 +90,13 @@ sdb       8:16   0   25G  0 disk
 ├─sdb1    8:17   0 24.9G  0 part 
 ├─sdb14   8:30   0    4M  0 part 
 └─sdb15   8:31   0  106M  0 part /boot/efi
-sdc       8:32   0   50G  0 disk 
 ```
 En este ejemplo, la partición que contiene el sistema de archivos de la copia de seguridad se denomina «sdb1».
 A continuación, cree un directorio para esta partición y defínalo como el punto de montaje:
 
 ```
-# mkdir -p /mnt/restore
-# mount /dev/sdb1 /mnt/restore
+$ mkdir -p /mnt/restore
+$ mount /dev/sdb1 /mnt/restore
 ```
 
 Ahora, puede cambiar a esta carpeta y acceder a los datos de su copia de seguridad.

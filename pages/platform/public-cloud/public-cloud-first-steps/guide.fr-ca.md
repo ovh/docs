@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 0
 ---
 
-**Dernière mise à jour le 06/07/2020**
+**Dernière mise à jour le 30/03/2021**
 
 ## Objectif
 
@@ -153,7 +153,7 @@ Cliquez sur le bouton `Ajouter une clé SSH`{.action}. Dans la nouvelle fenêtre
 
 Connectez-vous à l'espace client [OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Sur la page d'accueil, cliquez sur `Créer une instance`{.action}. (Vous pouvez trouver la même fonctionnalité en cliquant sur `Instances`{.action} dans la barre de navigation de gauche sous `Compute`.)
 
-![instance select](images/instance-creation-01.png){.thumbnail}
+![instance select](images/instance-creation-01-2021.png){.thumbnail}
 
 Commencez par choisir un modèle de serveur en fonction de vos besoins. L'assistant fournit une description des différents cas d'usage et de la disponibilité du modèle de serveur. Vous avez le choix entre les catégories personnalisées suivantes:
 
@@ -164,12 +164,13 @@ Commencez par choisir un modèle de serveur en fonction de vos besoins. L'assist
 | RAM   | ✓     | Base de données, analyse et calculs en mémoire   |
 | GPU     | ✓       | Calcul accéléré pour des applications spécifiques (rendering, transcodage vidéo, bio-informatique, Big Data, deep learning, etc.)      |
 | Sandbox    | -       | Tests, recettes et environnements de développement.     |
+| Discovery    | -       | Tests, recettes et environnements de développement.     |
 | IOPS   | ✓     | Optimisé pour les transactions disque les plus rapides    |
 
 
 > [!primary]
 >
-Le total de vos ressources du Cloud public sera initialement limité pour des raisons de sécurité. Vous pouvez vérifier les quotas et demander une augmentation dans votre espace client OVHcloud en cliquant sur `Quota and Localisation`{.action} dans la barre de navigation de gauche sous `Gestion de projets`.
+Le total de vos ressources du Cloud public sera initialement limité pour des raisons de sécurité. Vous pouvez vérifier les quotas et demander une augmentation dans votre espace client OVHcloud en cliquant sur `Quota and Regions`{.action} dans la barre de navigation de gauche sous `Gestion de projets`.
 >
 Notez que vous pouvez mettre à niveau votre instance ultérieurement, mais vous ne pourrez pas passer à un modèle plus petit, à moins que vous ne choisissiez l'option « Instance flexible » à l'étape 4 de la création. Pour plus d'informations à ce sujet, reportez-vous à la section ci-dessous.
 >

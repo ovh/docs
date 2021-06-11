@@ -44,7 +44,7 @@ Preencha os campos apresentados:
 
 - O seu nome e apelido *Introduza aqui o nome a ser apresentado.*
 - Endereço de e-mail: *O seu endereço de e-mail completo.*
-- Palavra-passe: *A palavra-passe definida na sua [Área de Cliente]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)){.external} para a conta Exchange.*
+- Palavra-passe: *A palavra-passe definida na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)){.external} para a conta Exchange.*
 - Memorizar a palavra-passe: *Deve selecionar esta opção.*
 
 Clique em `Configuração manual`{.action}para continuar as etapas de instalação.

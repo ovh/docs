@@ -19,7 +19,7 @@ Este guia explica-lhe como montar um container de objetos como um sistema de fic
 ## Pré-requisitos
 
 - [Criar um acesso ao Horizon]({legacy}1773)
-- [Adicionar espaço de armazenamento]({legacy}1790)
+- [Adicionar espaço de armazenamento](https://docs.ovh.com/pt/public-cloud/adicionar_um_espaco_de_armazenamento/)
 
 
 
@@ -63,7 +63,7 @@ admin@serveur1:~$ sudo chmod 600 s3qlcredentials.txt
 - Formate o container do objeto:
 
 ```
-admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL
+admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME
 ```
 
 
@@ -84,7 +84,7 @@ admin@serveur1:~$ sudo mkdir /mnt/container
 - Montagem do container do objeto
 
 ```
-admin@serveur1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL /mnt/container/
+admin@serveur1:~$ sudo mount.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME /mnt/container/
 ```
 
 
@@ -100,7 +100,7 @@ tmpfs 393M 5.2M 388M 2% /run
 tmpfs 982M 0 982M 0% /dev/shm
 tmpfs 5.0M 0 5.0M 0% /run/lock
 tmpfs 982M 0 982M 0% /sys/fs/cgroup
-swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
+swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME 1.0T 0 1.0T 0% /mnt/container
 ```
 
 

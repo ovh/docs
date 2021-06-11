@@ -49,4 +49,4 @@ Mit dem Klick auf `Projekt löschen`{.action} wird eine E-Mail an Sie gesendet, 
 [Auf das Horizon-Interface zugreifen](../erstellung_eines_zugangs_zu_horizon)
 
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en/).

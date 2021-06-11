@@ -102,4 +102,4 @@ Una vez que haya elegido, acepte los cambios haciendo clic en `Guardar los cambi
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

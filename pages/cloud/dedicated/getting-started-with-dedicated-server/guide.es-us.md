@@ -5,11 +5,11 @@ excerpt: 'Cómo empezar a utilizar un servidor dedicado'
 section: 'Primeros pasos'
 ---
 
-**Última actualización: 2 de abril de 2020**
-
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
+
+**Última actualización: 28/05/2021**
 
 ## Objetivo
 
@@ -19,50 +19,62 @@ Un servidor dedicado es un servidor físico situado en uno de nuestros datacente
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I2G6TkKg0gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!warning]
->
-> La responsabilidad sobre los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted.
->
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
->
-
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external}.
-- Estar conectado por SSH (acceso root) en Linux o como administrador en Windows.
+- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} en el área de cliente de OVHcloud.
+- Estar conectado al servidor por SSH (acceso root) en Linux o a través de un escritorio remoto en Windows.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
-Al configurar un servidor dedicado por primera vez, puede seleccionar el sistema operativo que desea instalar.
+Cuando su servidor dedicado esté configurado por primera vez durante el proceso de pedido, puede seleccionar el sistema operativo que desea instalar.
 
 ### Instalar o reinstalar el servidor dedicado
 
-Puede reinstalar fácilmente el servidor y elegir otro modelo de sistema operativo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Información general`{.action}, haga clic en `..`{.action} junto al `sistema (SO)` y seleccione `Instalar`{.action}.
+Puede reinstalar fácilmente el servidor y elegir otra imagen del sistema operativo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Información general`{.action}, haga clic en `...`{.action} delante del sistema operativo y seleccione `Instalar`{.action}.
 
 ![Reinstalar](images/reinstalling-your-server-00.png){.thumbnail}
 
-A continuación, seleccione `Instalar desde una plantilla de OVH`{.action} (para utilizar uno de nuestros modelos de instalación) o `Instalar una de sus plantillas`{.action} (para utilizar el suyo). Haga clic en `Siguiente`{.action}.
+A continuación, seleccione `Instalar desde una plantilla de OVH`{.action} o `Instalar una de sus plantillas`{.action} para utilizar una plantilla de instalación.
+
+Para instalar una imagen personalizada en el servidor, seleccione la tercera opción `Instalar desde una imagen personalizada`{.action}. Para más información sobre los parámetros de esta funcionalidad, consulte la guía "[Utilizar la funcionalidad Bring Your Own Image](../bringyourownimage/)".
+
+> [!primary]
+>
+> Algunos sistemas operativos o plataformas propietarias, como Plesk o Windows, necesitan licencias que generan costes adicionales. Puede adquirir licencias [con OVHcloud](https://www.ovhcloud.com/es/bare-metal/os/) o con un revendedor externo. A continuación, deberá aplicar la licencia en el propio sistema operativo o desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+>
+> Puede gestionar todas sus licencias en la sección `Bare Metal Cloud`{.action}, con `Licencias`{.action}. En esta sección también puede contratar licencias o añadir licencias existentes a través del botón `Acciones`{.action}.
+>
+
+Haga clic en `Siguiente`{.action} para continuar.
 
 ![Selección de plantilla](images/reinstalling-your-server-02.png){.thumbnail}
 
-Seleccione el sistema operativo que desea instalar y haga clic en `Siguiente`{.action}.
+Una vez elegido `Instalar desde una plantilla de OVHcloud`{.action}, puede seleccionar el sistema operativo en los menús desplegables.
 
 ![Selección operativa](images/reinstalling-your-server-03.png){.thumbnail}
 
-Si desea modificar el esquema de partición del sistema operativo, marque la casilla "Personalizar la configuración de las particiones" y haga clic en `Siguiente`{.action}.
+Si debe cambiar el esquema de partición del sistema operativo, marque la casilla "Personalizar la configuración de las particiones" antes de hacer clic en `Siguiente`{.action}.
 
-![Personalizar la configuración de la partición](images/SSH_02.png){.thumbnail}
+![Personalizar la configuración de las particiones](images/SSH_02.png){.thumbnail}
 
 Una vez realizados los ajustes, haga clic en `Siguiente`{.action} para acceder a la página de resumen.
 
-### Añadir una llave SSH (opcional)
+#### Instalación del Real Time Monitoring (opcional) <a name="installrtm"></a>
 
-Si instala un sistema operativo Linux, puede añadir su llave SSH en la última etapa del proceso de instalación.
+Si ha seleccionado un sistema operativo compatible con GNU/Linux, se muestra la opción de activación de la monitorización en tiempo real (RTM para Real Time Monitoring) del servidor.
+
+![RTM](images/reinstalling-your-server-04.png){.thumbnail}
+
+Establezca el cursor en `Activar`{.action} para instalarlo. Para más información sobre la funcionalidad RTM, consulte nuestra guía [Instalar Real Time Monitoring (RTM)](../instalar-rtm/).
+
+#### Añadir una llave SSH (opcional)
+
+Si instala un sistema operativo GNU/Linux, puede añadir su llave SSH en la última etapa del proceso de instalación.
 
 ![Personalizar la configuración de la partición](images/SSH_03.png){.thumbnail}
 
-Si una llave SSH ya está guardada, aparecerá en el menú desplegable bajo la `Llaves SSH` de la parte inferior. Si no, deberá añadir primero uno en la sección "Mis servicios".
+Si una llave SSH ya está registrada, aparecerá en el menú desplegable bajo "Llaves SSH" en la parte inferior. En caso contrario, deberá añadir primero una en la sección "Mis servicios".
 
 Para ello, abra la columna izquierda haciendo clic en su nombre en la esquina superior derecha y utilice el acceso rápido `Productos y servicios`{.action}.
 
@@ -72,119 +84,121 @@ En "Mis servicios", abra la pestaña `Llaves SSH`{.action} y haga clic en `Añad
 
 ![Personalizar la configuración de la partición](images/SSH_14.png){.thumbnail}
 
-Para instalar un servidor dedicado (o un VPS), seleccione "Dedicado" en el menú desplegable.
+Si quiere instalar un servidor dedicado, seleccione "Dedicado" en el menú desplegable (también compatible con un VPS).
 
 En la nueva ventana, introduzca un ID (nombre que elija) y la propia llave (de tipo RSA, ECDSA o Ed25519) en los campos correspondientes.
 
 ![Personalizar la configuración de la partición](images/SSH_12.png){.thumbnail}
 
-Para más información sobre la creación de llaves SSH, consulte [esta guía](https://docs.ovh.com/es/public-cloud/crear-llave-ssh/).
+Para más información sobre la generación de llaves SSH, consulte nuestra [guía](../crear-claves-ssh-dedicadas/).
 
-
-> [!primary]
+> [!warning]
+>OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
 >
-> Algunos sistemas operativos o plataformas, como Plesk y Windows, requieren la adquisición de una licencia antes de la instalación. Puede adquirir esta [licencia en OVHcloud](https://www.ovhcloud.com/es-es/bare-metal/os/) o a través de un revendedor. A continuación, deberá añadirla manualmente, ya sea a través del propio sistema operativo o desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Puede gestionar sus licencias en el Panel de configuración de la sección `Bare Metal Cloud`{.action}, con `licencias`{.action}. En esta sección también puede contratar licencias (utilizando el botón `Contratar`{.action} a la izquierda) o añadir su propia licencia de servidor SQL o Windows SPLA (utilizando el botón `Añadir una licencia SPLA`{.action} a la izquierda).
+>Esta guía le ayudará en la mayor medida posible a realizar las tareas habituales. No obstante, si tiene dificultades o dudas con respecto a la administración, el uso o la ejecución de los servicios en un servidor, le recomendamos que contacte con un proveedor de servicios especializado.
 >
 
 ### Conexión al servidor
 
 #### Linux
 
-Una vez finalizada la instalación, recibirá una notificación por correo electrónico con la contraseña del acceso root. necesaria para conectarse al servidor mediante el protocolo SSH de comunicaciones seguras. Puede acceder al servidor a través de un terminal (en Linux o MAC) o a través de un software de terceros en Windows (por ejemplo: PuTTy).
+Una vez finalizada la instalación, recibirá por correo electrónico las instrucciones de acceso administrativo. Puede conectarse a su servidor a través de un terminal de comandos o con un cliente tercero utilizando SSH, que es un protocolo de comunicación seguro.
 
-Una vez abierto el terminal, ejecute el siguiente comando para conectarse al servidor, sustituyendo el texto situado después del símbolo de arroba por la información solicitada (dirección IP o nombre de referencia del servidor). El nombre de referencia del servidor siempre empieza por «*ns*».
+Utilice los siguientes ejemplos para conectarse a su servidor y sustituya la información de identificación por sus propias claves (la dirección IP y el nombre de referencia del servidor son intercambiables).
 
-**Ejemplo con una dirección IP**
+**Ejemplo de root:**
 
 ```sh
 ssh root@IPv4_del_servidor
 ```
 
-**Ejemplo con referencia del servidor**
+**Ejemplo de usuario preconfigurado:**
 
 ```sh
 ssh root@nombre_de_referencia_del_servidor
 ```
 
+Para más información sobre SSH, consulte nuestra guía [Introducción al SSH](../introduccion-ssh/).
+
 #### Windows
 
 Una vez finalizada la instalación, recibirá un mensaje de correo electrónico con la contraseña del acceso de administrador (root). Utilice estas claves de acceso para conectarse al servidor a través de RDP (**R**emote **D**esktop **P**rotocol). Una vez conectado, Windows le guiará durante la instalación inicial.
 
+### Reinicio del servidor dedicado <a name="reboot"></a>
+
+Es posible que necesite reiniciar para aplicar configuraciones actualizadas o resolver un problema. En la medida de lo posible, ejecute el "soft reboot" del servidor en la siguiente línea de comandos:
+
+```sh
+reboot
+```
+
+No obstante, puede realizar "hard reboot" en cualquier momento desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Información general`{.action}, haga clic en `...`{.action} frente a "Estado" en la zona **Estado de los servicios** y seleccione `Reiniciar`{.action} y `Aceptar`{.action} en la ventana emergente.
+
+![Reinicio](images/rebooting-your-server.png){.thumbnail}
 
 ### Seguridad de su servidor dedicado
 
-Como se recuerda en el apartado Objetivo de esta guía, usted es el administrador de su servidor dedicado y, por lo tanto, el responsable de los datos almacenados, así como de su seguridad. No obstante, a continuación le ofrecemos unos consejos que le ayudarán a proteger su servidor dedicado:
+Como se recuerda en el apartado Objetivo de esta guía, usted es el administrador de su servidor dedicado Como tal, usted es responsable de sus datos y de su seguridad. Para más información sobre la seguridad de su servidor, consulte nuestra guía [Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/).
 
-* Mantenga actualizado el sistema operativo.
-* Mantenga actualizado el software.
-* Sustituya el puerto SSH por defecto (22) por otro diferente.
-* cambiar la contraseña root;
-* Cree un nuevo usuario de sistema con acceso restringido para su uso cotidiano.
+### Monitorización OVHcloud
 
-Para más información, consulte la guía [Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/){.external}.
+Puede activar o desactivar la monitorización de un servidor dedicado desde la pestaña `Información general`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). La opción se encuentra en la sección `Estado de los servicios`.
+
+![monitoring](images/monitoring-your-server.png){.thumbnail}
+
+- Si la **monitorización** está `activada`, recibirá un mensaje de correo electrónico cada vez que el servidor se comporte de forma inesperada. Puede desactivar estos mensajes con el botón `...`{.action}.
+
+- Si activa la opción **Intervenciones in situ**, autoriza a los técnicos del datacenter a controlar el hardware en caso de que su servidor no responda a ping.
+
+> [!warning]
+>
+> Si las intervenciones in situ están activadas (el cursor estará en `On`{.action}, asegúrese de **desactivar** la opción antes de realizar las acciones apropiadas en su servidor (pruebas de hardware, reinicio, etc.). Siempre recibirá mensajes de correo automáticos mientras esté activa la función "Monitorización".
+>
+
+Para más información sobre la monitorización de OVHcloud, consulte [esta guía](../monitoring-ip-ovh/).
 
 ### Configuración de red
 
 #### Modo bridge IP
 
-El modo bridge IP se utiliza para crear una red global a partir de dos o más redes de comunicación, o de dos o más segmentos de red. El modo bridge es diferente del enrutado, que permite a las redes comunicarse de forma independiente, pero al mismo tiempo permanecer separadas.
+El modo bridge es la acción emprendida por el dispositivo de red para crear una red agregada a partir de varias redes de comunicación o de varios segmentos de red. El modo bridge es distinto del enrutado, que permite que las redes se comuniquen de forma independiente, pero al mismo tiempo se mantienen separadas.
 
 Esta configuración se utiliza con frecuencia en virtualización, para que cada máquina virtual pueda tener su propia dirección IP pública.
 
-Para más información, consulte nuestra guía: [Modo bridge IP](../network-bridging/){.external}.
+Para más información sobre el modo bridge, consulte nuestra guía: [Modo bridge IP](../network-bridging/).
 
-#### Modo alias IP
+#### Alias IP
 
 El modo alias IP se utiliza para asociar dos direcciones IP a una única interfaz de red para que así el servidor pueda establecer varias conexiones con una red, cada una de ellas con un objetivo diferente.
 
-Para más información, consulte la guía [Configurar una dirección IP como alias](../network-ipaliasing).
+Para más información sobre la configuración del alias IP, consulte la guía [Configurar una dirección IP como alias](../network-ipaliasing).
 
 #### Configuración IPv6
 
-Todos los servidores dedicados de OVHcloud incluyen un bloque /64 IPv6. Para utilizar las direcciones de este bloque, debe realizar cambios en la configuración de la red. Consulte nuestra guía: [Configurar IPv6 en un servidor dedicado](../network-ipv6/).
-
-
-### Reparación
-
-OVHcloud despliega todos sus servidores dedicados con una consola IPMI (Intelligent Platform Management Interface), que se ejecuta en su navegador o desde un applet Java, y le permite conectarse directamente a su servidor, aunque no tenga conexión de red. para solucionar los problemas que hayan provocado la desconexión del servidor.
-
-Para más información, consulte nuestra guía: [Uso de IPMI para los servidores dedicados](../utilizar-ipmi-servidor-dedicado/).
+Todos los servidores dedicados de OVHcloud se entregan con un bloque /64 IPv6. Para utilizar las direcciones de este bloque, debe realizar cambios en la configuración de la red. Consulte nuestra guía [Configuración IPv6](../network-ipv6/).
 
 ### Modo de rescate
 
-Si tiene algún problema con el servidor, reinicie el servidor en modo de rescate. Para activar el modo de rescate, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la página del servidor. En el menú `Información general`, haga clic en `...`{.action} y luego en `Editar`{.action} para cambiar el modo de arranque.
+Para cualquier problema, el primer paso para solucionarlo es reiniciar el servidor en modo de rescate desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Es importante identificar los problemas del servidor en este modo para excluir los problemas relacionados con el software antes de contactar con nuestro equipo de soporte.
 
-![Editar la selección de inicio](images/rescue-mode-01.png){.thumbnail}
+Para más información, consulte la guía ["Activar y utilizar el modo de rescate"](../modo_de_rescate/)".
 
-En la siguiente pantalla, seleccione `Arrancar en modo`{.action} rescue y seleccione `rescue64-pro`{.action} en la lista desplegable. Introduzca su dirección de correo electrónico en el campo de texto y haga clic en `Siguiente`{.action}. Si deja el campo del mensaje vacío, se utilizará por defecto la dirección de correo asociada a su cuenta de OVHcloud.
+### Acceso a la ayuda del IPMI
 
-![Rescue Pro 64](images/rescue-mode-03.png){.thumbnail}
+OVHcloud despliega todos los servidores dedicados con una consola IPMI (Intelligent Platform Management Interface) que se ejecuta en su navegador o a partir de un applet Java y le permite conectarse directamente a su servidor aunque no tenga conexión de red. Esto la convierte en una herramienta útil para resolver los problemas que han podido desconectar el servidor.
 
-Después de comprobar que la información es correcta, confirme haciendo clic en Aceptar y, a continuación, reinicie el servidor para guardar los cambios.
+Para más información, consulte nuestra guía [Uso de IPMI con servidores dedicados](../utilizar-ipmi-servidor-dedicado/).
 
-![Confirmación y reinicio](images/rescue-mode-02.png){.thumbnail}
+### Backup Storage
 
-El servidor se reiniciará en modo de rescate y recibirá las claves de acceso para conectarse en la dirección de correo electrónico que haya introducido. Para salir del modo de rescate, solo tiene que volver a modificar el netboot para volver a ponerlo en `Arrancar en el disco duro`{.action} y reiniciar el servidor.
+Los servidores dedicados de OVHcloud incluyen un espacio de almacenamiento con control de acceso, que se proporciona como opción gratuita. Es preferible utilizarlo como opción de backup adicional si el propio servidor sufre una pérdida de datos.
 
-Para más información sobre el uso del modo de rescate para resolver problemas con el servidor, consulte nuestra guía sobre el [modo de rescate](../modo_de_rescate/).
-
-
-#### Diagnóstico de hardware
-
-Las pruebas de hardware disponibles en modo de rescate le ayudarán a diagnosticar fallos de hardware que puedan causar problemas en el servidor.
-
-Una vez que se haya conectado a la interfaz web del modo de rescate, podrá realizar pruebas en los siguientes componentes de hardware:
-
-* RAM
-* Discos duros
-* Rack RAID
-* Procesador
-* Conexión de red
-
-#### Interfaz web del modo de rescate
-
-![Interfaz web](images/rescue-mode-04.png){.thumbnail}
+Para activar y utilizar la opción Backup Storage, consulte [esta guía](../servicio-backup-storage/).
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+[Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/)
+
+[Activar y utilizar el modo de rescate](../modo_de_rescate/)
+
+Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

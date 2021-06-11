@@ -13,7 +13,7 @@ Ce guide vous explique donc comment configurer un nom de domaine sur vos contene
 
 
 ### Prérequis
-- [Ajouter des espaces de stockage]({legacy}1790){.ref}
+- [Ajouter des espaces de stockage](../ajouter-des-espaces-de-stockage/){.ref}
 - Un nom de domaine
 
 

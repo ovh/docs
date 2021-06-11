@@ -27,7 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated 20 May, 2020.**
+**Last updated 30 March, 2021.**
 
 ## Before you begin
 
@@ -82,95 +82,66 @@ rolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created
 serviceaccount/ingress-nginx-admission created
 </code></pre>
 
-### 2. Deploying an Ingress behind the LoadBalancer
-
-Now we are deploying the Ingress that will be the entry point for your services, and placing it behind the `LoadBalancer`.
-Our Ingress definition uses the [`externalTrafficPolicy`](https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/#preserving-the-client-source-ip) property with `Local` value, that preserves the client source IP.
-
-Here you have the manifest for this Ingress:
-
-```yaml
-kind: Service
-apiVersion: v1
-metadata:
-  name: ingress-lb
-  namespace: ingress-nginx
-  annotations:
-    service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol: "v1"
-spec:
-  selector:
-    app.kubernetes.io/name: ingress-nginx
-  externalTrafficPolicy: Local
-  ports:
-  - name: http
-    protocol: TCP
-    port: 80
-    targetPort: 80
-  - name: https
-    protocol: TCP
-    port: 443
-    targetPort: 443
-  type: LoadBalancer
-```
-
-Copy it in a `ingress-lb.yaml` file, and deploy it:
-
-```bash
-kubectl apply -f ingress-lb.yaml
-```
-
-You have now an Ingress behind the `LoadBalancer`:
-
-<pre class="console"><code>$ kubectl apply -f ingress-lb.yaml
-service/ingress-lb created</code></pre>
-
 You can use `kubectl` to get the state of the service and recover the Load Balancer's IP:
 
 ```bash
-kubectl get service -n ingress-nginx ingress-lb
+kubectl get service ingress-nginx-controller -n ingress-nginx
 ```
 
 You should see your newly created Ingress service:
 
-<pre class="console"><code>$ kubectl get service -n ingress-nginx ingress-lb
-NAME         TYPE           CLUSTER-IP    EXTERNAL-IP                          PORT(S)                      AGE
-ingress-lb   LoadBalancer   10.3.242.23   xxx.xxx.xxx.xxx    80:30113/TCP,443:30051/TCP   3m8s</code></pre>
+<pre class="console"><code>$ kubectl get service ingress-nginx-controller -n ingress-nginx
+NAME                                     TYPE                    CLUSTER-IP   EXTERNAL-IP       PORT(S)                                            AGE
+ingress-nginx-controller   LoadBalancer   10.3.81.157   xxx.xxx.xxx.xxx   80:xxxxx/TCP,443:xxxxx/TCP   4m32s</code></pre>
 
 > [!warning]
 > As the `LoadBalancer` creation is asynchronous, and the provisioning of the Load Balancer can take several minutes,  you can get a `<pending>` at `EXTERNAL-IP` while the Load Balancer is setting up. In this case, please wait some minutes and try again.
-
-### 3. Patching the Ingress Controller
+### 2. Patching the Ingress Controller
 
 Now you need to patch the Ingress controller to support the proxy protocol.
 
 Get the list of the egress load balancer IPs:
 
 ```bash
-kubectl get svc ingress-lb -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
+kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
 ```
 
 You should see something like this:
 
-<pre class="console"><code>$ kubectl get svc ingress-lb -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
+<pre class="console"><code>$ kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
 aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32,eee.eee.eee.eee/32,fff.fff.fff.fff/32
 </code></pre>
 
-Copy the next YAML snippet in a `patch-ingress-configmap.yml` file and modify the `set-real-ip-from` parameter accordingly:
+Copy the next YAML snippet in a `patch-ingress-controller-service.yml` file:
 
 ```yaml
-data:
-  use-proxy-protocol: "true"
-  real-ip-header: "proxy_protocol"
-  set-real-ip-from: "aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32,eee.eee.eee.eee/32,fff.fff.fff.fff/32"
+metadata:
+  annotations:
+    service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol: "v1"
 ```
 
 And apply it in  your cluster:
 
 ```bash
-kubectl -n ingress-nginx patch configmap ingress-nginx-controller -p "$(cat patch-ingress-configmap.yml)"
+kubectl -n ingress-nginx patch service ingress-nginx-controller -p "$(cat patch-ingress-controller-service.yml)"
 ```
 
-After applying the patch, you need to restart the Ingress Controller:
+Copy the next YAML snippet in a `patch-ingress-controller-configmap.yml` file and modify the `proxy-real-ip-cidr` parameter accordingly:
+
+```yaml
+data:
+  use-proxy-protocol: "true"
+  real-ip-header: "proxy_protocol"
+  proxy-real-ip-cidr: "aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32,eee.eee.eee.eee/32,fff.fff.fff.fff/32"
+```
+
+And apply it in  your cluster:
+
+```bash
+kubectl -n ingress-nginx patch configmap ingress-nginx-controller -p "$(cat patch-ingress-controller-configmap.yml)"
+```
+
+After applying the patches, you need to restart the Ingress Controller:
 
 ```bash
 kubectl rollout restart deploy/ingress-nginx-controller -n ingress-nginx
@@ -178,12 +149,18 @@ kubectl rollout restart deploy/ingress-nginx-controller -n ingress-nginx
 
 You should see the configuration being patched and the controller pod deleted (and recreated):
 
-<pre class="console"><code>$ kubectl -n ingress-nginx patch configmap nginx-configuration -p "$(cat patch-ingress-configmap.yml)"
-configmap/nginx-configuration patched
+<pre class="console"><code>$ kubectl -n ingress-nginx patch service  ingress-nginx-controller -p "$(cat patch-ingress-controller-configmap.yml)"
+configmap/ ingress-nginx-controller patched
+$ kubectl -n ingress-nginx patch configmap  ingress-nginx-controller -p "$(cat patch-ingress-controller-configmap.yml)"
+configmap/ ingress-nginx-controller patched
 $ kubectl rollout restart deploy/ingress-nginx-controller -n ingress-nginx
 deployment.apps/ingress-nginx-controller restarted</code></pre>
 
 ### 4. Testing
+
+> [!warning]
+> Due to DNS propagation the actual resolving of your Load Balancer FQDN can take an additional 2-5 minutes to be fully usable. In the meantime, you can use the included IP to access the load balancer.
+>
 
 We can now deploy a simple echo service to verify that everything is working. The service will use the [`mendhak/http-https-echo` image](https://code.mendhak.com/docker-http-https-echo/), a very useful HTTPS echo Docker container for web debugging.
 

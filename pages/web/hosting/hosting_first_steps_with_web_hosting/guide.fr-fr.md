@@ -135,7 +135,7 @@ Maintenant que vous connaissez les enregistrements DNS inhérents à votre hébe
 
 La configuration de votre domaine est déjà correcte. Poursuivez vers l'étape suivante. Cependant, si vous avez réalisé des manipulations dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} sur la zone DNS de votre domaine, il se peut que cette dernière ne le soit plus.
     
-Pour accéder à la zone DNS de votre domaine OVH, rendez-vous dans la section `Domaines`{.action} dans la barre de services à gauche, puis cliquez sur le nom de domaine concerné. Enfin, dans l'onglet `Zone DNS`{.action}, vérifiez et modifiez les informations nécessaires.
+Pour accéder à la zone DNS de votre domaine OVH, rendez-vous dans la section `Noms de domaine`{.action} dans la barre de services à gauche, puis cliquez sur le nom de domaine concerné. Enfin, dans l'onglet `Zone DNS`{.action}, vérifiez et modifiez les informations nécessaires.
 
 
 - **Nom de domaine n'utilisant pas la zone DNS d'OVH**

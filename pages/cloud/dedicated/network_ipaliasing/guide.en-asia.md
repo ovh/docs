@@ -1,43 +1,59 @@
 ---
 title: 'Configuring IP aliasing'
 slug: network-ipaliasing
-excerpt: 'Adding failover IPs to your configuration'
+excerpt: 'Find out how to add failover IP addresses to your server configuration'
 section: 'Network Management'
 ---
 
-**Last updated 31/01/2018** test
+**Last updated 19th April 2021**
 
 ## Objective
 
-IP aliasing is a special network configuration of your dedicated server, which allows you to associate multiple IP addresses with a single network interface.
+IP aliasing is a special network configuration for your OVHcloud dedicated servers, which allows you to associate multiple IP addresses with a single network interface.
 
-**This guide explains how to make this addition.**
+**This guide explains how to add failover IP addresses to your network configuration.**
+
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>
 
 ## Requirements
 
-- You must have a dedicated server ([Dedicated server](https://www.ovh.com/asia/dedicated-servers/){.external},[VPS](https://www.ovh.com/asia/vps/){.external} or [instance Cloud Public](https://www.ovh.com/asia/public-cloud/instances/){.external}).
-- You must have one or more [failover IPs](https://www.ovh.com/asia/dedicated-servers/ip_failover.xml){.external}.
-- You must be connected via SSH to the server (root access).
-
+- a [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
+- a [failover IP address](https://www.ovhcloud.com/asia/bare-metal/ip/) or a failover IP block (RIPE)
+- administrative access (root) via SSH or GUI to your server
+- basic networking and administration knowledge
 
 ## Instructions
 
-Here are the configurations for the main distributions/operating systems.
+The following sections contain the configurations for the most commonly used distributions/operating systems.
+
+> [!primary]
+>
+Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
+> 
 
 
 ### Debian 6/7/8 and derivatives
 
-#### Step 1: Create the source file
+#### Step 1: Create a backup
 
-First, make a copy of the source file, so that you can revert at any time:
+First, make a copy of the config file, so that you can revert at any time:
 
 ```sh
 cp /etc/network/interfaces /etc/network/interfaces.bak
 ```
 
-#### Step 2: Edit the source file
+#### Step 2: Edit the config file
 
-You can now modify the source file:
+> [!primary]
+>
+Note that the names of the network interfaces in our examples may differ from your own. Please adjust to your appropriate interface names.
+>
+
+You can now modify the config file:
 
 ```sh
 editor /etc/network/interfaces
@@ -48,14 +64,14 @@ You then need to add a secondary interface:
 ```bash
 auto eth0:0
 iface eth0:0 inet static
-address IP_FAILOVER
+address FAILOVER_IP
 netmask 255.255.255.255
 ```
 
-To ensure that the secondary interface is enabled when the `eth0` interface is also enabled, you need to add the following line to the eth0 configuration:
+To ensure that the secondary interface is enabled or disabled whenever the `eth0` interface is enabled or disabled, you need to add the following line to the eth0 configuration:
 
 ```bash
-post-up /sbin/ifconfig eth0:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER
+post-up /sbin/ifconfig eth0:0 FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
@@ -71,25 +87,31 @@ gateway xxx.xxx.xxx.254
 
 auto eth0:0
 iface eth0:0 inet static
-address IP_FAILOVER1
+address FAILOVER_IP1
 netmask 255.255.255.255
 
 auto eth0:1
 iface eth0:1 inet static
-address IP_FAILOVER2
+address FAILOVER_IP2
 netmask 255.255.255.255
 ```
+Or like this:
+```bash
+auto eth0
+iface eth0 inet static
+address SERVER_IP
+netmask 255.255.255.0
+broadcast xxx.xxx.xxx.255
+gateway xxx.xxx.xxx.254
 
-```
 # IPFO 1
-post-up /sbin/ifconfig eth0:0 IP_FAILOVER1 netmask 255.255.255.255 broadcast IP_FAILOVER1
+post-up /sbin/ifconfig eth0:0 FAILOVER_IP1 netmask 255.255.255.255 broadcast FAILOVER_IP1
 pre-down /sbin/ifconfig eth0:0 down
 
 # IPFO 2
-post-up /sbin/ifconfig eth0:1 IP_FAILOVER2 netmask 255.255.255.255 broadcast IP_FAILOVER2
+post-up /sbin/ifconfig eth0:1 FAILOVER_IP2 netmask 255.255.255.255 broadcast FAILOVER_IP2
 pre-down /sbin/ifconfig eth0:1 down
 ```
-
 
 #### Step 3: Restart the interface
 
@@ -99,28 +121,29 @@ You now need to restart your interface:
 /etc/init.d/networking restart
 ```
 
-### Debian 9+, Ubuntu 17+, Fedora 26+ and Arch Linux
 
-On these distributions, the naming of interfaces as eth0, eth1 (and so on) is abolished, and we will now use the `systemd-network` more generally.
+### Debian 9+, Ubuntu 17.04, Fedora 26+ and Arch Linux
 
-#### Step 1: Create the source file
+On these distributions, the naming of interfaces as eth0, eth1 (and so on) is abolished. We will therefore use `systemd-network` more generally.
 
-First, make a copy of the source file, so that you can revert at any time:
+#### Step 1: Create a backup
+
+First, make a copy of the config file, so that you can revert at any time:
 
 ```sh
 cp /etc/systemd/network/50-default.network /etc/systemd/network/50-default.network.bak
 ```
 
-#### Step 2: Edit the source file
+#### Step 2: Edit the config file
 
-You can now add your failover IP to the source file, as follows:
+You can now add your failover IP to the config file, as follows:
 
 ```sh
-nano /etc/systemd/network/50-default.network
+editor /etc/systemd/network/50-default.network
 ```
 ```sh
 [Address]
-Address=22.33.44.55/32
+Address=FAILOVER_IP/32
 Label=failover1 # optional
 ```
 
@@ -133,11 +156,60 @@ You now need to restart your interface:
 ```sh
 systemctl restart systemd-networkd
 ```
+### Ubuntu 17.10 and following
+
+Each failover IP address will need its own line in the configuration file. The configuration file is called "50-cloud-init.yaml" and is located in /etc/netplan.
+
+
+#### Step 1: Determine the interface
+
+```sh
+ifconfig
+```
+Note the interface name and its MAC address
+
+
+#### Step 2: Create the configuration file
+
+Connect to your server via SSH and run the following command:
+
+```sh
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Next, edit the file with the content below, replacing `INTERFACE_NAME` `MAC_ADDRESS` and `FAILOVER_IP`:
+
+```sh
+network:
+    version: 2
+    ethernets:
+        INTERFACE_NAME:
+            dhcp4: true
+            match:
+                macaddress: MAC_ADDRESS
+            set-name: INTERFACE_NAME
+            addresses:
+            - FAILOVER_IP/32
+```
+
+Save and close the file. You can test the configuration with the following command:
+
+```sh
+netplan try
+```
+
+#### Step 3: Apply the change
+
+Next, run the following commands to apply the configuration:
+
+```sh
+netplan apply
+```
 
 
 ### CentOS and Fedora (25 and earlier)
 
-#### Step 1: Create the source file
+#### Step 1: Create the config file
 
 First, make a copy of the source file so that you can use it as a template:
 
@@ -145,7 +217,7 @@ First, make a copy of the source file so that you can use it as a template:
 cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0:0
 ```
 
-#### Step 2: Edit the source file
+#### Step 2: Edit the config file
 
 You can now modify the eth0:0 file in order to replace the IP:
 
@@ -159,14 +231,14 @@ First, replace the name of the `device`, then replace the existing IP with the f
 DEVICE="eth0:0"
 ONBOOT="yes"
 BOOTPROTO="none" # For CentOS use "static"
-IPADDR="IP_FAILOVER"
+IPADDR="FAILOVER_IP"
 NETMASK="255.255.255.255"
-BROADCAST="IP_FAILOVER"
+BROADCAST="FAILOVER_IP"
 ```
 
-#### Step 3: Restart the interface
+#### Step 3: Start the alias interface
 
-You now need to restart your interface:
+You now need to start your alias interface:
 
 ```sh
 ifup eth0:0
@@ -175,37 +247,36 @@ ifup eth0:0
 
 ### Gentoo
 
-#### Step 1: Create the source file
+#### Step 1: Create a backup
 
-First, make a copy of the source file, so that you can revert at any time:
+First, make a copy of the config file, so that you can revert at any time:
 
 ```sh
 cp /etc/conf.d/net /etc/conf.d/net.bak
 ```
 
-#### Step 2: Edit the source file
+#### Step 2: Edit the config file
 
-Now you have to edit the file to add the failover IP. In Gentoo, an alias is added directly in the eth0 interface. We do not create an eth0:0 interface like in Red Hat or CentOS.
+Now you have to edit the file to add the failover IP. In Gentoo, an alias is added directly in the eth0 interface. You do not need to create an eth0:0 interface like in other distributions.
 
 > [!warning]
 >
 > The server’s default IP and config_eth0= should stay on the same line. This is to ensure that certain OVHcloud-specific operations work properly.
 > 
 
-All you need to do is add a line break after the netmask **255.255.255.0 **and add your failover IP (SERVER_IP must be replaced by your server’s primary IP).
+All you need to do is add a line break after the netmask **255.255.255.0** and add your failover IP (SERVER_IP must be replaced by your server’s primary IP).
 
 ```sh
 editor /etc/conf.d/net
 ```
 
-Therefore, you need to add the following:
-
+You therefore need to add the following:
 
 ```bash
-config_eth0=( "SERVER_IP netmask 255.255.255.0" "IP_FAILOVER netmask 255.255.255.255 brd IP_FAILOVER" )
+config_eth0=( "SERVER_IP netmask 255.255.255.0" "FAILOVER_IP netmask 255.255.255.255 brd FAILOVER_IP" )
 ```
 
-The /etc/conf.d/net file must contain the following:
+The `/etc/conf.d/net` file must contain the following:
 
 
 ```bash
@@ -214,12 +285,11 @@ The /etc/conf.d/net file must contain the following:
 # please review /etc/conf.d/net.example and save your configuration
 # in /etc/conf.d/net (this file :]!).
 config_eth0=( "SERVER_IP netmask 255.255.255.0"
-"IP_FAILOVER netmask 255.255.255.255 brd IP_FAILOVER" )
+"FAILOVER_IP netmask 255.255.255.255 brd FAILOVER_IP" )
 routes_eth0=( "default gw SERVER_IP.254" )
 ```
 
 In order to ping your failover IP, simply restart the network interface.
-
 
 #### Step 3: Restart the interface
 
@@ -232,36 +302,44 @@ You now need to restart your interface:
 
 ### openSUSE
 
-#### Step 1: Create the source file
+#### Step 1: Create a backup
 
-First, make a copy of the source file, so that you can revert at any time:
+First, make a copy of the config file, so that you can revert at any time:
 
 ```sh
 cp /etc/sysconfig/network/ifcfg-ens32 /etc/sysconfig/network/ifcfg-ens32.bak
 ```
 
-#### Step 2: Edit the source file
+#### Step 2: Edit the config file
 
-You then need to edit the /etc/sysconfig/network/ifcfg-ens32 file as follows:
+Open the file:
+
+```sh
+editor /etc/sysconfig/network/ifcfg-ens32
+```
+
+Then add the following:
 
 ```bash
-IPADDR_1=IP_FAILOVER
+IPADDR_1=FAILOVER_IP
 NETMASK_1=255.255.255.255
 LABEL_1=ens32:0
 ```
 
+Finally, reboot your server to apply the changes.
 
-### cPanel
 
-#### Step 1: Create the source file
+### cPanel (on CentOS 6)
 
-First, make a copy of the source file, so that you can revert at any time:
+#### Step 1: Create a backup
+
+First, make a copy of the config file, so that you can revert at any time:
 
 ```sh
 cp /etc/ips /etc/ips.bak
 ```
 
-#### Step 2: Edit the source file
+#### Step 2: Edit the config file
 
 You then need to edit the /etc/ips file:
 
@@ -271,16 +349,15 @@ editor /etc/ips
 Then add the failover IP to the file:
 
 ```bash
-IP_FAILOVER:255.255.255.255:IP_FAILOVER
+FAILOVER_IP:255.255.255.255:FAILOVER_IP
 ```
-Next, add the IP in `/etc/ipaddrpool`:
+Next, add the IP in `/etc/ipaddrpool``:
 
 ```bash
-IP_FAILOVER
+FAILOVER_IP
 ```
 
-#### Step 3: Restart the service
-
+#### Step 3: Restart the interface
 
 You now need to restart your interface:
 
@@ -288,7 +365,8 @@ You now need to restart your interface:
 /etc/init.d/ipaliases restart
 ```
 
-### Windows Server
+
+### Windows Servers
 
 Windows servers are often DHCP-enabled in the network configuration. If you have already set up a failover IP or switched your configuration to a fixed IP, go directly to the next step.
 
@@ -301,16 +379,15 @@ Open the command prompt `cmd`{.action} or `powershell`{.action}, then type the f
 ipconfig /all
 ```
 
-This will return the following, for example:
+This will return a result similar to the following example:
 
 ![Result of "ipconfig /all" command](images/guides-network-ipaliasing-windows-2008-1.png){.thumbnail}
 
 Identify and write down your IPv4, subnet mask, default gateway and the name of the network interface controller (network adapter).
 
-In our example, the server IP is: **94.23.229.151**
+In our example, the server IP is **94.23.229.151**.
 
-
-You can perform the next steps via either a command-line interface or the graphical user interface:
+You can perform the next steps via either a command-line interface or the graphical user interface.
 
 #### Via a command-line interface (recommended)
 
@@ -319,10 +396,9 @@ In the commands below, you need to replace:
 |Command|Value|
 |---|---|
 |NETWORK_ADAPTER| Name of the network adapter (in our example: Local Area Connection)|
-|IP_ADDRESS| server IP address (in our example: 94.23.229.151)|
+|IP_ADDRESS| Server IP address (in our example: 94.23.229.151)|
 |SUBNET_MASK| Subnet mask (in our example: 255.255.255.0)|
-|GATEWAY| Default gateway (in our example:
- 94.23.229.254)|
+|GATEWAY| Default gateway (in our example: 94.23.229.254)|
 |IP_ADDRESS_FAILOVER| Address of failover IP you want to add|
 
 > [!warning]
@@ -347,14 +423,13 @@ netsh interface ipv4 add address "NETWORK_ADAPTER" IP_ADDRESS_FAILOVER 255.255.2
 
 Your failover IP is now functional.
 
-
 #### Via the graphical user interface
 
 1. Go to `Start`{.action}> `Control Panel`{.action}>` Network and Internet`{.action}> `Network and Sharing Centre`{.action}> `Change Adapter Settings `{.action}(in the left-hand menu).
 2. Right-click on `Local Area Connection`{.action}.
 3. Click on `Properties`{.action}.
 4. Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, then click on `Properties`{.action}.
-5. Click on `"Use the following IP address"`{.action} and type in your server’s primary IP, subnet mask and default gateway information obtained by using the `ipconfig`{.action} command above. (In the "Preferred DNS Server" box, type 213.186.33.99.)
+5. Click on `Use the following IP address`{.action} and type in your server’s primary IP, subnet mask and default gateway information obtained by using the `ipconfig`{.action} command above. In the "Preferred DNS Server" box, type 213.186.33.99.
 
 ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
 
@@ -364,7 +439,7 @@ Your failover IP is now functional.
 > Be careful – the server will no longer be accessible if you enter incorrect information. You will then have to make the corrections in Winrescue mode or via the KVM.
 > 
 
-Then click on `Advanced`{.action} (still in the ` TCP/IP Settings`{.action}.
+Then click on `Advanced`{.action} (still in the `TCP/IP Settings`{.action}).
 
 ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
 
@@ -411,16 +486,15 @@ ifconfig
 
 In our example, the name of the interface is therefore **nfe0**.
 
+#### Step 2: Create a backup
 
-#### Step 2: Create the source file
-
-First, make a copy of the source file, so that you can revert at any time:
+Next, make a copy of the config file, so that you can revert at any time:
 
 ```sh
 cp /etc/rc.conf /etc/rc.conf.bak
 ```
 
-#### Step 3: Edit the source file
+#### Step 3: Edit the config file
 
 Edit the /etc/rc.conf file:
 
@@ -428,9 +502,9 @@ Edit the /etc/rc.conf file:
 editor /etc/rc.conf
 ```
 
-Then add this line at the end of the file: ifconfig \_INTERFACE_alias0=`inet IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER`.
+Then add this line at the end of the file: `ifconfig_INTERFACE_alias0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"`.
 
-Replace **INTERFACE** and **IP_FAILOVER** respectively with the name of your interface (identified in the first step) and your failover IP. Here is an example:
+Replace **INTERFACE** and **FAILOVER_IP** with the name of your interface (identified in the first step) and your failover IP, respectively. Here is an example:
 
 
 ```bash
@@ -444,6 +518,7 @@ You now need to restart your interface:
 ```sh
 /etc/rc.d/netif restart && /etc/rc.d/routing restart
 ```
+
 
 ### Solaris
 
@@ -459,29 +534,27 @@ This will return the following:
 
 ```sh
 ifconfig -a
->>> lo0: flags=2001000849 mtu 8232 index 1 inet 127.0.0.1 netmask ff000000 e1000g0: flags=1000843 mtu 1500 index 2 inet 94.23.41.167 netmask ffffff00 broadcast 94.23.41.255 ether 0:1c:c0:f2:be:42
+lo0:     flags=2001000849 mtu 8232 index 1 
+         inet 127.0.0.1 netmask ff000000 
+e1000g0: flags=1000843 mtu 1500 index 2 
+         inet 94.23.41.167 netmask ffffff00 broadcast 94.23.41.255 
+         ether 0:1c:c0:f2:be:42
 ```
 
-In our example, the name of the interface is therefore  **e1000g0**.
+In our example, the name of the interface is therefore **e1000g0**.
 
-
-#### Step 2: Create the source file
-
-First, make a copy of the source file, so that you can revert at any time:
+#### Step 2: Create the config file
 
 ```sh
 editor /etc/hostname.e1000g0:1
 ```
-
-#### Step 3: Edit the source file
-
-In this file, enter the following: **IP_FAILOVER/32 up**, where **IP_FAILOVER** is your failover IP. For example:
+In this file, enter the following: **FAILOVER_IP/32 up**, where **FAILOVER_IP** is your failover IP. For example:
 
 ```bash
 188.165.171.40/32 up
 ```
 
-#### Step 4: Restart the interface
+#### Step 3: Restart the interface
 
 You now need to restart your interface:
 
@@ -489,6 +562,20 @@ You now need to restart your interface:
 svcadm restart svc:/network/physical:default
 ```
 
+### Troubleshooting
+
+First, restart your server from the command line or its GUI. If you are still unable to establish a connection from the public network to your alias IP and suspect a network problem, you need to reboot the server in [rescue mode](../ovh-rescue/). Then you can set up the failover IP address directly on the server.
+
+Once you are connected to your server via SSH, enter the following command:
+
+```bash
+ifconfig eth0:0 FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP up
+```
+
+To test the connection, simply ping your failover IP from the outside. If it responds in rescue mode, that probably means that there is a configuration error. If, however, the IP is still not working, please inform our support teams by creating a support request in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) for further investigations.
+ 
 ## Go further
+
+[Activating and using rescue mode](../ovh-rescue/)
 
 Join our community of users on <https://community.ovh.com/en/>.

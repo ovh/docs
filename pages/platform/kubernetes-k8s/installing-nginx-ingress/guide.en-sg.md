@@ -54,7 +54,7 @@ helm repo update
 helm install ngingress ingress-nginx/ingress-nginx
 ```
 
-The installing processus will begin:
+The install process will begin:
 
 <pre class="console"><code>$ helm install ngingress ingress-nginx/ingress-nginx
 NAME: ngingress
@@ -64,9 +64,10 @@ STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 NOTES:
+</code></pre>
 
 At the end of the install, as usual with most helm charts, you get the configuration information and some tips to
-test your `nginx-ingress` but the YAML provided is based on old API version ()extensions/v1beta1), the newest version is :
+test your `nginx-ingress` but the YAML provided is based on old API version (extensions/v1beta1), the newest version is:
 
 <pre class="console"><code>NOTES:
 The nginx-ingress controller has been installed.
@@ -123,7 +124,7 @@ winning-lizard-nginx-ingress-controller   LoadBalancer   10.3.106.37   6d6xxxx8r
 
 You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_URL]` via HTTP or `https://[YOUR_LOAD_BALANCER_URL]` via HTTPS.
 
-In order to test your `nginx-ingress`, I suggest you to [install a Wordpress](../installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
+In order to test your `nginx-ingress`, you can for example [install a Wordpress](../installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
 
 
 ```
@@ -147,7 +148,7 @@ spec:
 ```
 
 > [!primary]
-> Don't forget to replace `[YOUR_LOAD_BALANCER_URL]`, `[YOUR_WORDPRESS_SERVICE_NAME]` 
+> Don't forget to replace `[YOUR_LOAD_BALANCER_URL]` and `[YOUR_WORDPRESS_SERVICE_NAME]`.
 
 Apply the file:
 
@@ -161,6 +162,6 @@ And the Ingress is created.
 ingress.extensions/ingress created
 </code></pre>
 
-So now if you point your browser to `http://[YOUR_LOAD_BALANCER_URL]`  you will see your Wordpress:
+So now if you point your browser to `http://[YOUR_LOAD_BALANCER_URL]`, you will see your Wordpress:
 
 ![Wordpress using Ingress](images/installing-ingress-01.png){.thumbnail}

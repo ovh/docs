@@ -8,7 +8,7 @@ legacy_guide_number: '1442308'
 section: 'Funzionalità OVHcloud'
 ---
 
-**Ultimo aggiornamento: 18/11/2020**
+**Ultimo aggiornamento: 19/03/2021**
 
 ## Obiettivo
 
@@ -21,8 +21,12 @@ In alcuni casi eliminare un server host può risultare utile, ad esempio per res
 * Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external}
 * Avere accesso all’interfaccia di gestione vSphere
 
-
 ## Procedura
+
+> [!warning]
+>
+> Attenzione a non spegnere il server host che desideri rimuovere perché ciò non avrebbe l'effetto desiderato. Ciò comporterebbe infatti la consegna di un server host di spare e il server host spento non verrebbe automaticamente rimosso.
+>
 
 La rimozione di un server host si svolge in due step: l’attivazione della modalità manutenzione di questa risorsa e successivamente la rimozione della stessa.
 
@@ -36,15 +40,13 @@ Nella finestra di dialogo, conferma il passaggio in modalità manutenzione clicc
 
 ![Conferma della modalità manutenzione](images/removehost02.png){.thumbnail}
 
-
 Puoi seguire lo stato di avanzamento dell’operazione nell’area **Recent Tasks**.
 
 ![Controllo della modalità Maintenance](images/removehost03.png){.thumbnail}
 
-
 ### Rimuovi il server host
 
-Una volta che il server è in modalità manutenzione, fai un click con il tasto destro del mouse e seleziona `OVHcloud`{.action}, poi clicca su `Remove this host`{.action}. 
+Una volta che il server è in modalità manutenzione, fai un click con il tasto destro del mouse e seleziona `OVHcloud`{.action}, poi clicca su `Remove this host`{.action}.
 
 ![Rimuovere l’host](images/removehost04.png){.thumbnail}
 
@@ -60,13 +62,12 @@ Puoi seguire lo stato di avanzamento della rimozione del server host nell’area
 
 ![Controllo dell’attività di rimozione](images/removehost07.png){.thumbnail}
 
-Il server host verrà rimosso entro pochi minuti e non sarà più visibile. 
+Il server host verrà rimosso entro pochi minuti e non sarà più visibile.
 
 > [!primary]
 >
 > Se si aggiungono directory o file che non erano inizialmente presenti nello storage locale del server, la rimozione non sarà possibile a causa di un errore. Soltanto le directory di base e i file vSwap consentono di eseguire questa operazione.
-> 
-
+>
 
 ## Per saperne di più
 

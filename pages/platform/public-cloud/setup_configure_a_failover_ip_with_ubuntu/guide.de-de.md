@@ -4,6 +4,7 @@ excerpt: Konfiguration einer Failover-IP in Ubuntu
 slug: konfiguration_einer_failover-ip_in_ubuntu
 section: 'Netzwerk und IP'
 legacy_guide_number: g2043
+hidden: true
 ---
 
 

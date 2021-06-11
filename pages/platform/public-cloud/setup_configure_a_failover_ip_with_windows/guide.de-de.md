@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie eine Failover-IP in Windows hinzufügen
 slug: konfiguration_einer_failover-ip_in_windows
 section: 'Netzwerk und IP'
 legacy_guide_number: g2046
+hidden: true
 ---
 
 **Letzte Aktualisierung am 15.10.2020**

@@ -70,7 +70,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 #### Étape 2 : Identifier le point de montage
 
-Le montage est créé automatiquement. Utilisez les commandes suivantes pour identifier l'emplacement de montage de votre partition :
+Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées en mode rescue. Vous pouvez utiliser les commandes suivantes pour identifier le point de montage de votre partition :
 
 ##### **df -h**
 
@@ -101,6 +101,13 @@ sdb       8:16   0   50G  0 disk
 ```
 
 L'exemple obtenu ci-dessus montre que la partition système est montée sur **/mnt/sdb1**.
+
+Si votre VPS est récent, la colonne `MOUNTPOINT` devrait être vide. Dans ce cas, montez d'abord la partition :
+
+```sh
+mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
+```
 
 #### Étape 3 : autorisations CHROOT
 

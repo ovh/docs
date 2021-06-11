@@ -5,7 +5,7 @@ excerpt: Learn how to install the CLI to interact with AI Training
 section: How to (with CLI)
 order: 1
 ---
-*Last updated 29th October, 2020.*
+*Last updated 20th April, 2021.*
 
 ## Objective
 
@@ -14,8 +14,8 @@ This guide covers the installation of the **ovhai** CLI. The CLI is the recommen
 ## Requirements
 
 -   a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
--   AI Training activated for your account, see [how to submit a job Step 2](../submit-job)
--   a user for AI Training [how to submit a job Step 3](../submit-job)
+-   **AI Training activated** for your account, see [how to submit a job Step 2](../submit-job)
+-   a user for AI Training, see [how to create a user](../create-user)
 
 ## Instructions
 
@@ -57,7 +57,7 @@ Use the credentials of your **AI Training** user to log in.
 
 You can use the command `ovhai --help` to list available actions and `ovhai <action> --help` for more information about a specific action.
 
-The documentation of the CLI is available at [CLI documentation](../usage-client).
+The documentation of the CLI is available at [CLI documentation](../overview-cli).
 
 In addition, when performing any action in the **AI Training** section of the OVHcloud Control Panel you are provided with the equivalent command to get you started with the **ovhai CLI**.
 

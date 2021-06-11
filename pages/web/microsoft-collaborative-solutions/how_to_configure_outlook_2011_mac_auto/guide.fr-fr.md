@@ -55,7 +55,7 @@ Méthode : nom d'utilisateur et mot de passe
 
 Nom d'utilisateur: votre adresse e-mail complète.
 
-Mot de passe : le mot de passe choisi lors de la création de votre compte Exchange via votre [espace client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}.
+Mot de passe : le mot de passe choisi lors de la création de votre compte Exchange via votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}.
 
 La case "Configurer automatiquement" doit être cochée.
 

@@ -1,49 +1,65 @@
 ---
-title: Configuracao inicial do Windows Server (Firewal)
+title: Configurar uma nova instalação do Windows Server
 slug: windows-first-config
-excerpt: Saiba como ativar a ligacao ao Ambiente de Trabalho Remoto atraves do KVM (Keyboard, Video Mouse Switch).
+excerpt: Saiba como ativar a ligação à Área de Trabalho remota e a resposta ICMP
+section: Introdução
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Pre-requisitos
-Durante a instalação dos sistemas operativos Windows Server 2012, 2012 R2 ou 2016 num servidor VPS é possível que a ligação ao ambiente de trabalho remoto esteja desativada, bem como a resposta ao protocolo ICMP (ping). Este guia irá ajudá-lo a efetuar as alterações necessárias.
+**Última atualização: 16/02/2021**
 
-Para tal, precisa de:
+## Objetivo
 
-- Um servidor VPS com o Windows Server 2012, 2012 R2 ou 2016.
-- Acesso à Àrea Cliente.
+Após uma nova instalação de um sistema operativo Windows Server num VPS, o acesso remoto e a resposta ICMP (Internet Control Message Protocol) podem por vezes ser desativados.
 
+**Este guia explica como configurar o Windows para reativar o ICMP e autorizar as ligações através do protocolo Remote Desktop Protocol.**
 
-## Procedimento
+## Requisitos
 
-### Etapa 1&#58; Aceder ao KVM
-Para aceder ao KVM, deve entrar na sua `Área de Cliente`{.action}, aceder à secção `Dedicado`{.action}, e clicar no servidor VPS.
+- Uma distribuição Windows instalada num [VPS](https://www.ovhcloud.com/pt/vps/).
+- Ter acesso à Área de [Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-De seguida, deverá clicar no botão `KVM`{.action} no canto superior da Área de Cliente.
+## Instruções
 
+### Etapa 1: acesso ao KVM
 
-![KVM](images/windowsvps.png){.thumbnail}
+Para aceder à consola KVM do seu VPS, consulte o [guia KVM VPS](../utilizar_o_kvm_para_um_servidor_vps/).
 
-Desta forma, o acesso ao teclado-rato virtual ficará ativado no servidor VPS.
+### Etapa 2: terminar a instalação do Windows
 
+Uma vez estabelecida a sessão KVM, aparecem os ecrãs de configuração inicial. Deve configurar aqui o seu **país/região**, a **língua do Windows** e a sua **disposição de teclado**. Depois de realizar esta operação, clique em `Next`{.action}.
 
-### Etapa 2&#58; Configuracao inicial do Windows
-No ecrã KVM irá verificar que o Windows se encontra na etapa de configuração. Por favor. configure o idioma do teclado Windows e defina a palavra-passe do utilizador **Administrator**.
+![KVM](images/setup-03.png){.thumbnail}
 
+No segundo ecrã, introduza uma palavra-passe para a sua conta Administrador e confirme-a e clique em `Finish`{.action}.
 
-![Langue](images/windows2.png){.thumbnail}
+![KVM](images/setup-04.png){.thumbnail}
 
+O Windows irá aplicar os seus parâmetros e visualizar o ecrã de ligação. Clique no botão `Send CtrlAltDel`{.action} no canto superior direito para se ligar.
 
-![Mdp](images/windows3.png){.thumbnail}
+![KVM](images/setup-05.png){.thumbnail}
 
+Introduza a password que criou para a sua conta Administrador e clique na seta.
 
-### Etapa 3&#58; Alteracoes na Firewall do Windows
-Um vez terminada a instalação, deve aceder às `Ferramentas de Administração`{.action}, e depois a `Firewall Windows com segurança avançada`{.action}.
+![KVM](images/setup-06.png){.thumbnail}
 
+A configuração inicial está terminada. Uma vez ligado, deve modificar os parâmetros necessários da firewall Windows.
+
+### Etapa 3: modificar a firewall Windows
+
+Abra as `ferramentas de administração`{.action} do painel de configuração `Sistema e Segurança`{.action} e clique duas vezes em `Firewall Windows com segurança avançada`{.action}.
 
 ![Admin](images/windows4.png){.thumbnail}
 
-De seguida, basta ativar o ICMP e a ligação ao Ambiente de Trabalho Remoto *(clique no botão direito e -> Autorizar a regra)*.
+Pode ativar aqui as regras "ICMP" e "Remote Desktop" (ambiente de trabalho remoto) respetivas. Clique com o botão direito da regra e selecione `Autorizar a regra`{.action} no menu contextual.
 
+![Ativado](images/windows5.png){.thumbnail}
 
-![Active](images/windows5.png){.thumbnail}
+O seu servidor deverá responder aos pedidos que utilizam estes protocolos.
+
+## Quer saber mais?
+
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

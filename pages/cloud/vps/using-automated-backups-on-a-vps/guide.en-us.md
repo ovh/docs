@@ -28,7 +28,7 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), navigate to the "Bare Metal Cloud" section, and select your server from the left-hand sidebar under `VPS`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), navigate to the "Bare Metal Cloud" section, and select your server from the left-hand sidebar under `Virtual Private Servers`{.action}.
 
 ### Step 1: Subscribing to the Automated backups option
 
@@ -75,7 +75,7 @@ First, connect to your VPS via SSH.
 You can use the following command to verify the name of the newly attached device:
 
 ```
-# lsblk
+$ lsblk
 ```
 
 Here is a sample output of this command:
@@ -90,14 +90,13 @@ sdb       8:16   0   25G  0 disk
 ├─sdb1    8:17   0 24.9G  0 part 
 ├─sdb14   8:30   0    4M  0 part 
 └─sdb15   8:31   0  106M  0 part /boot/efi
-sdc       8:32   0   50G  0 disk 
 ```
 In this example, the partition containing your backup filesystem is named "sdb1".
 Next, create a directory for this partition and define it as the mountpoint:
 
 ```
-# mkdir -p /mnt/restore
-# mount /dev/sdb1 /mnt/restore
+$ mkdir -p /mnt/restore
+$ mount /dev/sdb1 /mnt/restore
 ```
 
 You can now switch to this folder and access your backup data.

@@ -3,6 +3,7 @@ title: Configure a failover IP with Windows
 excerpt: Configure a failover IP with Windows
 slug: configure_a_failover_ip_with_windows
 legacy_guide_number: g2046
+hidden: true
 ---
 
 
@@ -21,7 +22,7 @@ This guide explains how to configure your instance's network interface so that a
 
 ## Requirements
 
-- [Make sure you have launched an instance in your OVH customer account OVH]({legacy}1775)
+- [Make sure you have launched an instance in your OVH customer account](../public-cloud-first-steps/)
 - You must have a failover IP address
 
 
@@ -76,11 +77,11 @@ Windows does not allow you to configure a failover IP address in addition to con
 
 ## 
 
-- [Migrate a failover IP Over]({legacy}1890)
+- [Migrate a failover IP Over](../migrating_a_failover_ip/)
 
 
 
 
 ## 
-[Go back to the index of Cloud guides]({legacy}1785)
+[Go back to the index of Cloud guides](../)
 

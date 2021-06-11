@@ -46,7 +46,7 @@ fs-passphrase: PASSPHRASE
 Information such as TENANT_NAME, USERNAME can be found in your OpenRC file. 
 You can follow this guide below in order to retrieve it:
 
-- [Access and Security in Horizon]({legacy}1774)
+- [Access and Security in Horizon](https://docs.ovh.com/ie/en/public-cloud/access_and_security_in_horizon/)
 
 
 The REGION_NAME and CT_NAME arguments can be adapted according the name and location of your object container. 
@@ -62,7 +62,7 @@ admin@serveur1:~$ sudo chmod 600 s3qlcredentials.txt
 - Object container formating:
 
 ```
-admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL
+admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME
 ```
 
 
@@ -83,7 +83,7 @@ admin@serveur1:~$ sudo mkdir /mnt/container
 - Mount the object container
 
 ```
-admin@serveur1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL /mnt/container/
+admin@serveur1:~$ sudo mount.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME /mnt/container/
 ```
 
 
@@ -99,7 +99,7 @@ tmpfs 393M 5.2M 388M 2% /run
 tmpfs 982M 0 982M 0% /dev/shm
 tmpfs 5.0M 0 5.0M 0% /run/lock
 tmpfs 982M 0 982M 0% /sys/fs/cgroup
-swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
+swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME 1.0T 0 1.0T 0% /mnt/container
 ```
 
 

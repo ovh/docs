@@ -22,7 +22,7 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (vendido solo 
 
 - Disponer de una cuenta MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovh.es/hosting/){.external}).
 - Tener un servicio [Exchange](https://www.ovh.es/emails/hosted-exchange/){.external} o [Email Pro](https://www.ovh.es/emails/email-pro/){.external} con al menos una cuenta no configurada (que aparecerá como "@configureme.me").
-- No haber configurado ninguna redirección en la dirección de correo MX Plan que quiera migrar.
+- **No haber configurado ninguna redirección en la dirección de correo MX Plan que quiera migrar.**
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 
@@ -71,6 +71,10 @@ La migración puede realizarse desde dos interfaces:<br>
 - **el asistente de configuración Hosted Exchange**, solo si acaba de contratar un servicio Hosted Exchange y todavía no ha configurado nada en este último.
 - **la del MX Plan**, desde el momento en que tiene un servicio Email Pro o Exchange (configurado o no) y una dirección MX Plan que desea migrar.
 
+> Le recordamos que antes de iniciar la migración, asegúrese de que no haya ninguna **redirección** o ningún **contestador** configurado en su MXplan.
+> ![email](images/mxplan-legacy-redirect.png) {.thumbnail}
+
+
 Continúe leyendo esta guía en la interfaz seleccionada. Le recordamos que el tiempo de migración dependerá de la cantidad de contenido que quiera migrar a su nueva cuenta. Éste puede variar desde unos minutos hasta varias horas.
 
 > [!warning]
@@ -103,6 +107,9 @@ Por último, confirme la contraseña de la dirección de correo de origen (la qu
 #### 3.2 Migrar la nueva versión del MXPlan <a name="NouvelleVersionMxplan"></a>
 
 Antes de realizar la migración, si acaba de contratar la nueva solución de correo, añada el dominio a su plataforma [Email Pro](../../emails-pro/primera-configuracion/#2-anadir-su-nombre-de-dominio) o [Exchange](../anadir-dominio-exchange/).
+
+
+
 
 La migración de su MXPlan se realizará en 3 grandes etapas: **Renombrar**, **Crear** y **Migrar**.
 

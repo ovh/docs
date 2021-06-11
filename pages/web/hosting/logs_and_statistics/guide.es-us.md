@@ -7,115 +7,98 @@ legacy_guide_number: g1344
 section: Optimización del sitio web
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
 
-## Conexión al área de cliente
-Conéctese al [área de cliente](https://www.ovh.com/manager/web/) con su ID de cliente y contraseña.
+**Última actualización: 05/01/2021**
 
-Seleccione el dominio para el que quiera consultar las estadísticas, en la sección «Alojamientos» del menú de la izquierda.
+## Objetivo
 
-![](images/img_2827.jpg){.thumbnail}
-A continuación, haga clic en la pestaña «Más +» y seleccione «Estadísticas y logs».
+El acceso a los logs y las estadísticas de su sitio web está incluido en su plan de hosting, al que podrá acceder desde el área de cliente de OVHcloud.
 
-![](images/img_2826.jpg){.thumbnail}
+**Esta guía explica cómo consultar las estadísticas y logs de un sitio web.**
 
+## Requisitos
 
-## Acceso a la página de Estadísticas y logs
-Puede acceder directamente a las estadísticas de su sitio web desde la página: 
+- Tener contratado un plan [de hosting](https://www.ovh.com/world/es/hosting/){.external} compatible.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
+## Procedimiento
 
-- https://logs.ovh.net/sudominio
+Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
 
+Seleccione el alojamiento correspondiente y abra la pestaña `Estadísticas y logs.`{.action}
 
-Deberá identificarse con su ID de cliente y contraseña.
+![hosting](images/statistics01.png){.thumbnail}
 
-Las estadísticas son fáciles de utilizar y consultar. En pocos clics podrá analizar su sitio web sin tener que proporcionar otros cálculos estadísticos.
+Se abrirá una ventana con 3 secciones. La primera presenta las **estadísticas**, la segunda los **logs** brutos de su alojamiento, la última está dedicada a **la administración de los usuarios** autorizados a acceder a las estadísticas.
 
-Haga clic en el enlace generado automáticamente en el área de cliente para acceder a las estadísticas y logs. 
+![hosting](images/statistics02u.png){.thumbnail}
 
-Deberá identificarse con su ID de cliente (NIC Handle) y contraseña.
+### Administración de usuarios
 
+La creación de un usuario permitirá a una persona acceder a las estadísticas de su alojamiento sin tener acceso al área de cliente de OVHcloud. 
 
-## Página de estadísticas
-Una vez en la página de estadísticas, puede elegir entre dos posibilidades:
+Haga clic en el botón `Crear un nuevo usuario`{.action} en la sección `Administración de usuarios` y siga las instrucciones que se indican a continuación.  
 
+![hosting](images/user-statistics01.png){.thumbnail}
 
-- Acceder a las estadísticas de la web mediante Urchin 6 (recuadro verde en la imagen).
+> [!warning] 
+>
+> Si ha activado los logs separados en una [entrada multisitio](../configurar-un-multisitio-en-un-alojamiento-web/#2-anadir-un-dominio-o-subdominio), los usuarios creados aquí no pueden acceder a las estadísticas de esta entrada multisitio.
+>
 
-- Consultar los logs de la web en tiempo real o para un período anterior (recuadro naranja en la imagen).
+### Estadísticas de visitas
 
+Para ayudarle a realizar un mejor seguimiento y control del tráfico de sus sitios web, dispone de una herramienta de estadísticas de afluencia y de medición de audiencia de sus sitios web alojados en su hosting, **OVHcloud Web Statistics**.
 
+![hosting](images/OWStats01.gif){.thumbnail}
 
-![](images/img_2832.jpg){.thumbnail}
+El panel de control de OVHcloud Web Statistics se presenta en 6 secciones, en el panel izquierdo.
 
+- Dashboard: visualización del tráfico en los sitios web del alojamiento.
+- Browsers: clasificación de los navegadores de internet más utilizados para visualizar sus sitios web.
+- Geolocalization :  proporción de visitantes en función de su localización.
+- Peticiones: clasificación de las páginas más consultadas en sus sitios web.
+- Robots: visualización de los robots que pasan por sus sitios web.
+- Status : estadísticas de fallos y éxitos encontrados en función de los códigos HTTP devueltos.
+- FAQ: sección dedicada a las preguntas más frecuentes
 
-## Urchin 6
-Estas estadísticas proporcionan información sobre:
+El marco `Period selection` en la parte superior derecha le permite seleccionar un período preciso.
 
-El tráfico del sitio web:
+### Logs
 
+Puede visualizar los logs brutos de su sitio web con un retraso de aproximadamente 5 minutos.
 
-- número de visitantes,
-- número de páginas visualizadas,
-- peso de las páginas visualizadas,
-- número de peticiones http.
+![hosting](images/logs01.png){.thumbnail}
 
+Hay diferentes tipos de logs a su disposición:
 
-Estos datos pueden mostrarse por horas, días, semanas, meses o años, para conocer mejor la evolución del sitio web.
+- Logs Web: aquí encontrará los distintos logs de consulta de su sitio web, así como las diferentes acciones realizadas a partir de su sitio web. Esto permite, por ejemplo, identificar intentos de acción maliciosa.
+- Logs FTP: las diferentes conexiones FTP se guardarán y conservarán en estos logs.
+- Logs error: los diferentes errores generados por su sitio web.
+- Logs CGI: las diferentes llamadas a los scripts cgi.bin realizadas.
+- Logs out : las estadísticas de su alojamiento sobre las diferentes llamadas externas realizadas.
+- Logs SSH: estos logs indican las distintas conexiones realizadas con el protocolo SSH.
+- Logs CRON: el resultado de la ejecución de las tareas planificadas ([tareas automatizadas (CRON) en el alojamiento](../web_hosting_tareas_automatizadas_cron/)).
 
-Las páginas:
+### Actividades del alojamiento
 
+Acceda a la sección Actividad de la infraestructura de su alojamiento para visualizar el consumo de los recursos puestos a su disposición.
 
-- duración media de conexión al sitio web o a una página concreta.
+En la pestaña `Información general`{.action}, haga clic en el icono con forma de tres puntos.
 
-El posicionamiento:
+![hosting](images/statistics03.png){.thumbnail}
 
-- cómo han conocido el sitio web los visitantes,
-- en qué motores de búsqueda han encontrado la URL del sitio,
-- qué palabras clave han utilizado en su búsqueda.
+Desde el menú desplegable situado en la parte superior izquierda podrá ver distintos tipos de gráficos:
 
-El interés del sitio web para los internautas:
+- Conexiones salientes: peticiones enviadas desde su sitio web hacia un sitio externo.
+- Uso de la CPU: nivel de consumo del procesador en la instancia de alojamiento.
+- Superación del límite de recursos: indica los momentos en que el alojamiento supera el límite de recursos.
+- Peticiones SQL: cantidad de peticiones a las bases de datos de su alojamiento.
+- Tiempo de respuesta SQL: tiempo de respuesta de las peticiones enviadas a las bases de datos de su alojamiento.
 
-- qué páginas han sido las más visitadas,
-- durante cuánto tiempo,
-- qué páginas contienen errores y cuáles son esos errores.
+## Más información
 
-El recorrido del sitio web:
-
-- por qué páginas entran los visitantes,
-- en qué página abandonan el sitio web,
-- cuánto tiempo permanecen en cada página,
-- cuál es la media de número de páginas visualizadas por visita.
-
-
-
-![](images/img_1490.jpg){.thumbnail}
-
-
-## Logs brutos
-Los logs están disponibles en menos de 15 minutos, lo que le permite comprobar el funcionamiento del sitio web prácticamente en tiempo real.
-
-Hay distintos tipos de logs:
-
-
-- Web: Aquí encontrará los logs de consulta del sitio web, así como las distintas acciones realizadas desde el sitio web. Esto permite, por ejemplo, identificar intentos de hacking.
-
-- FTP: En estos logs se registran las distintas conexiones FTP. 
-
-- Error: Errores generados por el sitio web.
-
-- CGI: Llamadas realizadas a los scripts cgi.bin.
-
-- Out: Llamadas externas.
-
-- SSH: Conexiones realizadas con el protocolo SSH.
-
-- Cron: Resultado de la ejecución de las distintas [tareas planificadas](http://guias.ovh.es/CompartidoCron).
-
-
-
-![](images/img_2828.jpg){.thumbnail}
-
-
-## ¿Es posible utilizar Urchin en español?
-Puede elegir el idioma de Urchin desde la propia interfaz. Haga clic en las preferencias del menú, seleccione el idioma y acepte haciendo clic en «Submit». Urchin recordará las preferencias de idioma.
-
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -205,7 +205,7 @@ Il y a des avantages et des inconvénients à utiliser le stockage sur disque lo
 
 En utilisant l’Object Storage OpenStack d’OVH, vous pouvez stocker vos fichiers en externe, sans limite sur le volume total des données ou la durée de stockage. De plus, OVH garantit une durabilité des données à 100 % et réplique vos données sur trois sites différents, pour un rapport qualité/prix exceptionnel.
 
-En savoir plus sur [l’Object Storage d’OVH](https://www.ovh.com/ca/fr/public-cloud/storage/object-storage/){.external}.
+En savoir plus sur [l’Object Storage d’OVH](https://www.ovhcloud.com/fr-ca/public-cloud/object-storage/){.external}.
 Lire le guide d'utilisation de l’Object Storage pour ownCloud : [Object Storage pour ownCloud](https://docs.ovh.com/ca/en/storage/configure_owncloud_with_object_storage/){.external}.
 
 ### Utilisation d'un disque supplémentaire comme stockage (facultatif)

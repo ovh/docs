@@ -1,38 +1,50 @@
 ---
-title: 'Aumentar a quota Public Cloud'
-excerpt: 'Aprenda a aumentar as suas quotas Public Cloud'
+title: 'Aumentar as quotas Public Cloud'
+excerpt: 'Saiba como solicitar o aumento das suas quotas Public Cloud'
 slug: aumentar_a_quota_public_cloud
 legacy_guide_number: g1904
+order: 6
 ---
 
-**Última atualização: 25/11/2019**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 26/03/2021**
 
 ## Objetivo
 
-Por defeito, o número de recursos (RAM, CPU, espaço em disco, número de instância...) e de projetos que pode criar é ilimitado.
+Por predefinição, o número de recursos (RAM, CPU, espaço em disco, número de instâncias..) e de projetos que pode criar é limitado.
 
-Se precisar de criar mais, terá de aumentar a quota. 
+Se deseja criar mais, é necessário um aumento de quota.
 
-**Descubra como proceder, consultando este guia.**
-
+**Saiba como solicitar um aumento de limite Public Cloud a partir da Área de Cliente OVHcloud.**
 
 ## Requisitos
 
-- [Adicionar um método de pagamento](https://docs.ovh.com/gb/en/billing/manage-payment-methods/){.ref}
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- [Ter um método de pagamento válido](../../billing/gerir-metodos-de-pagamento/) na Área de Cliente OVHcloud
 - Ter atingido o número máximo de projetos utilizados na sua conta OVHCloud.
 
 ## Instruções
 
 Para solicitar o aumento do número de projetos e/ou de quotas de um projeto, precisa de efetuar um pedido junto da assistência.
 
-Para isso, selecione o seu projeto e, em seguida, a rubrica `Quota and location`{.action}. Poderá, então, consultar as quotas atuais do seu projeto.
+Aceda ao seu >Na secção `Project Management`, clique em `Quota and Regions` {.action}.
 
-Clique, então, em `Aumentar as minhas quotas`{.action}.
+Esta página apresenta um resumo das quotas atuais do seu projeto, por região. Ao lado de um recurso surge uma advertência quando 80% da sua quota é atingida.
 
-![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
-Será então encaminhado(a) para a criação de um ticket de assistência. Basta preencher os campos necessários. O seu pedido será processado o mais depressa possível.
+Para solicitar um aumento de quota, clique em `Aumentar as minhas quotas`{.action}.
+
+Utilize o campo previsto na nova janela para especificar as seguintes informações:
+
+- que quotas devem ser aumentadas;
+- as razões específicas por trás de cada aumento de recursos, ou seja, o objetivo de utilização do projeto das instâncias (pode indicar casos de utilização existentes como exemplos).
+
+Depois de precisar as suas necessidades, clique em `Confirmar`{.action}. O seu pedido será tratado o mais rapidamente possível.
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

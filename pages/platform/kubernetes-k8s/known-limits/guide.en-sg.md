@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated May 20, 2020.**
+**Last updated May 11, 2021.**
 
 <style>
  pre {
@@ -38,15 +38,20 @@ Nodepools with anti-affinity are limited to 5 nodes (but you can create multiple
 
 In general, it's better to have several mid-size Kubernetes clusters than one monster-size one.
 
+To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable. Note that any operation requested to our services, like node deletions or updates, will be performed even if Kubernetes budget restrictions are present.
+
 Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH as root into your nodes.
 
 ## LoadBalancer
 
-Based on a new highly-available infrastructure since late May  2020, the external load-balancer included in Managed Kubernetes Service is currently offered free-of-charge until July 1st 2020.
-There is a default quota of 16 external `LoadBalancers` per cluster.  
-This limit can be exceptionally raised upon request though our support team.  
+Creating a Kubernetes service of type LoadBalancer in a Managed Kubernetes cluster triggers the creation of a Public Cloud Load Balancer.
+The lifespan of the external Load Balancer (and thus the associated IP address) is linked to the lifespan of this Kubernetes resource.
+
+There is a default quota of 16 external Load Balancers per Openstack project (also named Openstack tenant).
+This limit can be exceptionally raised upon request through our support team.
+
 There is also a limit of __10 open ports__ on every `LoadBalancer`, and these ports must be in a range between __6 and 65535__.
-(Additonally, node-ports are using default range of 30000 - 32767 , allowing you to expose 2767 services/ports).
+(Additionally, node-ports are using default range of 30000 - 32767 , allowing you to expose 2767 services/ports).
 
 ## OpenStack
 
@@ -76,6 +81,8 @@ In any case, there are some ports that you shouldn't block on your instances if 
 ### Ports to open from instances to public network (OUTPUT)
 
 - TCP Port 8090 (*internal service*): needed for nodes management by OVH
+- UDP Port 123: needed to allow NTP servers synchronization (*systemd-timesync*)
+- TCP/UDP Port 53: needed to allow domain name resolution (*systemd-resolve*)
 
 ### Ports to open from others worker nodes (INPUT/OUPUT)
 
@@ -84,14 +91,28 @@ In any case, there are some ports that you shouldn't block on your instances if 
 
 ## Private Networks
 
-Private networks (vRack) aren't yet supported in OVHcloud Managed Kubernetes.  
-Please refrain from adding private networks to your working nodes instances.
+The `vRack` feature is currently available and compliant with our Managed Kubernetes Service.  
+
+To prevent any conflict, we advise you to keep `DHCP` service running in your private network.
+
+> [!warning]
+> If you create your subnet via the [OVHcloud APIv6](https://api.ovh.com/console/#/cloud/project/{serviceName}/network/private/{networkId}/subnet#POST), please ensure that this option `noGateway` is checked if you do not have a gateway on this subnet. Not doing so will result in faulty services of type LoadBalancer.
+>
+
+### Known not compliant IP ranges
+
+The following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our used overlay networks:
+
+```text
+10.2.0.0/16 # Subnet used by pods
+172.17.0.0/16 # Subnet used by the Docker daemon
+```
 
 ## Cluster health
 
 The command `kubectl get componentstatus` is reporting the scheduler, the controller manager and the etcd service as unhealthy. This is a limitation due to our implementation of the Kubernetes control plane as the endpoints needed to report the health of these components are not accesible.
 
-## Persistent Volumes resizing
+## Persistent Volumes
 
 Kubernetes `Persistent Volume Claims` resizing only allows to __expand__ volumes, not to __decrease__ them.  
 If you try to decrease the storage size, you will get a message like:
@@ -100,4 +121,8 @@ If you try to decrease the storage size, you will get a message like:
 The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.storage: Forbidden: field can not be less than previous value
 ```
 
-For more details, please refer to the [Resizing Persistent Volumes documentation](../resizing-persistent-volumes/) documentation.
+For more details, please refer to the [Resizing Persistent Volumes documentation](../resizing-persistent-volumes/).
+
+The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.
+A worker node can get attached to a maximum of 25 persistent volumes, and a persistent volume can only be attached to a single worker node.
+You can manually [configure multi-attach persistent volumes with NAS-HA](../Configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/).
