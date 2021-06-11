@@ -37,11 +37,11 @@ Damit Ihre E-Mails funktionieren, benötigen Sie ein aktives E-Mail-Angebot. Wen
 
 Hier überprüfen Sie, ob Ihre Dienstleistungen korrekt funktionieren:
 
-- Gehen Sie **für** Ihre Domain in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie Ihre Domain aus. Wenn Ihre Domain abgelaufen ist, wird dies am oberen Ende der Seite angezeigt.
-- Für **Ihr Webhosting** gehen Sie in den Bereich `Cloud`{.action}, klicken Sie in der linken Spalte auf `Hosting`{.action} und wählen Sie Ihr Hosting aus. Das Ablaufdatum oder das Datum der automatischen Verlängerung Ihres Webhostings wird oben angegeben.
-- Für ein **MXplan** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `E-Mails`{.action} und wählen Sie die betreffende Domain aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}. Überprüfen Sie in der Spalte Status den Status des betreffenden `E-Mail-Accounts`.
+- Gehen Sie für Ihre **Domain** in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie Ihre Domain aus. Wenn Ihre Domain abgelaufen ist, wird dies am oberen Ende der Seite angezeigt.
+- Für **Ihr Webhosting** gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie Ihr Hosting aus. Das Ablaufdatum oder das Datum der automatischen Verlängerung Ihres Webhostings wird oben angegeben.
+- Für ein **MXplan** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `E-Mails`{.action} und wählen Sie die betreffende Domain aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}. Überprüfen Sie in der Spalte `Status` den Status des betreffenden E-Mail-Accounts.
 - Für ein **E-Mail Pro** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `E-Mail Pro`{.action} und wählen Sie Ihre Plattform aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}. Überprüfen Sie in der Spalte Status den Status des betreffenden `E-Mail-Accounts`.
-- Für ein **Exchange** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `Microsoft`{.action}, klicken Sie dann auf `Exchange`{.action} und wählen Sie Ihre Plattform aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}. Überprüfen Sie in der Spalte Status den Status des betreffenden `E-Mail-Accounts`.
+- Für ein **Exchange** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `Microsoft`{.action}, klicken Sie dann auf `Exchange`{.action} und wählen Sie Ihre Plattform aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}. Überprüfen Sie in der Spalte Status den `Status` des betreffenden E-Mail-Accounts.
 
 ### Ich kann keine E-Mails von meinem E-Mail-Programm aus versenden
 
@@ -63,7 +63,7 @@ Gehen Sie über den Browser Ihres Computers oder ein Smartphone auf die Adresse 
 
 ### Ich kann mich nicht mit dem Webmail verbinden
 
-Stellen Sie sicher, dass Sie das richtige Passwort haben. Wenn nötig können Sie es ändern. Überprüfen Sie auch, ob die Zwei-Faktor-Authentifizierung aktiviert ist ([nur](https://www.ovh.com/fr/emails/hosted-exchange/) Exchange).
+Stellen Sie sicher, dass Sie das richtige Passwort haben. Wenn nötig können Sie es ändern. Überprüfen Sie auch, ob die Zwei-Faktor-Authentifizierung aktiviert ist ([Exchange](https://www.ovh.com/fr/emails/hosted-exchange/)).
 
 So ändern Sie das Passwort einer E-Mail-Adresse:
 

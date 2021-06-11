@@ -45,11 +45,11 @@ Come verificare che i tuoi servizi siano operativi:
 
 Se utilizzi un client di posta sul tuo computer (Outlook, Mail di Mac, Thunderbird, ecc.) o sul tuo smartphone (iOS, Android, ecc.), e riscontri un malfunzionamento all'invio o alla ricezione, verifica i parametri di configurazione in base al tuo servizio di posta elettronica e al client di posta o applicazione utilizzato.
 
-- Per un'offerta **MX Plan**, nella sezione [Email condivise - MX Plan](https://docs.ovh.com/it/emails/) delle nostre guide **Web Cloud**, verifica la configurazione del tuo client di posta nel paragrafo `Configurazione su computer` o smartphone nella `Configurazione su smartphone`.
+- Per un'offerta **MX Plan**, nella sezione [Hosted email - MX Plan](https://docs.ovh.com/it/emails/) delle nostre guide **Web Cloud**.
 
-- Per un'offerta **Email Pro**, nella sezione [Email Pro](https://docs.ovh.com/it/emails-pro/) delle nostre guide **Web Cloud**, verifica la configurazione del tuo client di posta nel paragrafo `Configurazione su computer` o smartphone nella `Configurazione su smartphone`.
+- Per un'offerta **Email Pro**, nella sezione [Email Pro](https://docs.ovh.com/it/emails-pro/) delle nostre guide **Web Cloud**, verifica la configurazione del tuo client di posta nel paragrafo `Configurazione di un client di posta`.
 
-- Per un'offerta **Exchange**, nella sezione [Soluzioni collaborative Microsoft](https://docs.ovh.com/it/microsoft-collaborative-solutions/) delle nostre guide **Web Cloud**, verifica la configurazione del tuo client di posta nel paragrafo `Configurazione Exchange su computer` o del tuo smartphone nella `Configurazione Exchange su smartphone`
+- Per un'offerta **Exchange**, nella sezione [Soluzioni collaborative Microsoft](https://docs.ovh.com/it/microsoft-collaborative-solutions/) delle nostre guide **Web Cloud**, verifica la configurazione del tuo client di posta nel paragrafo `Configurazione di un client di posta elettronica Exchange` o del tuo smartphone nella `Varie`.
 
 ### Le email sono funzionali dalla Webmail?
 
@@ -65,11 +65,11 @@ Assicurati di avere la password giusta. Se necessario, è possibile modificarlo.
 
 Come modificare la password di un indirizzo email:
 
-- Per una soluzione **MX Plan**, consulta la guida [Modificare la password di un indirizzo email MX Plan](https://docs.ovh.com/it/emails/modificare-password-account-email-mxplan/)
+- Per una soluzione **MX Plan**, consulta la guida [Modificare la password di un indirizzo email MX Plan](https://docs.ovh.com/it/emails/modificare-password-account-email-mxplan/).
 
-- Per un'offerta **Email Pro**, seleziona la sezione `Web Cloud`{.action}, clicca su `Email Pro`{.action} nella colonna di sinistra e seleziona la tua piattaforma. Nella scheda `Account email`{.action}, clicca sui tre puntini in corrispondenza della password `e seleziona Modifica`{.action} ` `{.action}la password.
+- Per un'offerta **Email Pro**, seleziona la sezione `Web Cloud`{.action}, clicca su `Email Pro`{.action} nella colonna di sinistra e seleziona la tua piattaforma. Nella scheda `Account email`{.action}, clicca sul pulsante `...`{.action} e clicca su `Modifica`{.action} per modificare la password.
 
-- Per un'offerta **Exchange**, accedi alla sezione `Web Cloud`{.action}, clicca su `Microsoft`{.action} nella colonna di sinistra, clicca su `Exchange`{.action} e seleziona la tua piattaforma. Nella scheda `Account email`{.action}, clicca sui tre puntini in corrispondenza della password `e seleziona Modifica`{.action} ` `{.action}la password. <br> Per verificare che la doppia autenticazione sia attiva, consulta la guida [Configurare la doppia autenticazione su un account Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/attiva_2fa_exchange/).
+- Per un'offerta **Exchange**, accedi alla sezione `Web Cloud`{.action}, clicca su `Microsoft`{.action} nella colonna di sinistra, clicca su `Exchange`{.action} e seleziona la tua piattaforma. Nella scheda `Account email`{.action}, clicca sul pulsante `...`{.action} e clicca su `Modifica`{.action} per modificare la password. <br> Per verificare che la doppia autenticazione sia attiva, consulta la guida [Configurare la doppia autenticazione su un account Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/attiva_2fa_exchange/).
 
 ### Sul tuo servizio è in corso un incidente o una manutenzione?
 

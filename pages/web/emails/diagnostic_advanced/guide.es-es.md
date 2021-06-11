@@ -45,11 +45,11 @@ Compruebe que los servicios están correctamente operativos:
 
 Si utiliza un cliente de correo en su ordenador (Outlook, Mail de Mac, Thunderbird, etc.) o su smartphone (iOS, Android, etc.) y si experimenta un fallo de funcionamiento en el envío o en la recepción, compruebe los parámetros de configuración según su solución de correo electrónico y el programa de mensajería o aplicación utilizado.
 
-- Para un servicio **MXplan**, en la sección [Correo en alojamiento compartido - MX Plan](https://docs.ovh.com/es/emails/) de nuestras guías **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración en el ordenador` o su smartphone en `Configuración en smartphone`.
+- Para un servicio **MXplan**, en la sección [Correo electrónico](https://docs.ovh.com/es/emails/) de nuestras guías **Web Cloud**.
 
-- Para un servicio **Email Pro**, en la sección [Email Pro](https://docs.ovh.com/es/emails-pro/) de nuestras guías de **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración en el ordenador` o su smartphone en `Configuración en smartphone`.
+- Para un servicio **Email Pro**, en la sección [Email Pro](https://docs.ovh.com/es/emails-pro/) de nuestras guías de **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración del cliente de correo`.
 
-- Para un servicio **Exchange**, en la sección [Soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/) de nuestras guías **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración Exchange en el ordenador` o su smartphone en `Configuración Exchange en Smartphone.`
+- Para un servicio **Exchange**, en la sección [Soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/) de nuestras guías **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración del cliente de correo Exchange` o su smartphone en `Configuración en un smartphone o tablet compatible con Exchange`.
 
 ### ¿Los mensajes de correo funcionan desde el webmail?
 

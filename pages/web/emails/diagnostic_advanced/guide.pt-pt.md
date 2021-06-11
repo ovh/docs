@@ -46,11 +46,11 @@ Eis como verificar que os seus serviços estão corretamente operacionais:
 
 Se utiliza um software de mensagens no seu computador (Outlook, Mail do Mac, Thunderbird, etc.) ou no seu smartphone (iOS, Android, etc.) e encontra uma falha no envio ou na receção, verifique os parâmetros de configuração de acordo com a sua oferta de e-mail e o software de mensagens ou de aplicação utilizado.
 
-- Para uma oferta **MXplan**, na secção [E-mails partilhados - MX Plan](https://docs.ovh.com/pt/emails/) dos nossos guias **Web Cloud**, verifique a configuração do seu software de e-mail no parágrafo `Configuração num computador` ou do seu smartphone em `Configuração no smartphone`.
+- Para uma oferta **MXplan**, na secção [Hosted email - MX Plan](https://docs.ovh.com/pt/emails/) dos nossos guias **Web Cloud**.
 
-- Para uma oferta **E-mail Pro**, na secção [E-mail Pro](https://docs.ovh.com/pt/emails-pro/), dos nossos guias **Web Cloud**, verifique a configuração do seu software de e-mail no `Configuração num computador` ou do seu smartphone em `Configuração no smartphone`.
+- Para uma oferta **E-mail Pro**, na secção [E-mail Pro](https://docs.ovh.com/pt/emails-pro/), dos nossos guias **Web Cloud**.
 
-- Para uma oferta **Exchange**, na secção [Soluções colaborativas Microsoft](https://docs.ovh.com/pt/microsoft-collaborative-solutions/) dos nossos guias **Web Cloud**, verifique a configuração do seu software de mensagens no parágrafo `Configuração Exchange num computador` ou do seu smartphone em `Configuração Exchange no smartphone`
+- Para uma oferta **Exchange**, na secção [Soluções colaborativas Microsoft](https://docs.ovh.com/pt/microsoft-collaborative-solutions/) dos nossos guias **Web Cloud**.
 
 ### Os e-mails estão a funcionar a partir do webmail?
 

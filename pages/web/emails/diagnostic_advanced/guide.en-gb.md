@@ -17,7 +17,7 @@ Can you not receive or send your emails from your email software or from webmail
 
 > [!primary]
 >
-> If you have any other questions that are not covered by this guide, please refer to our Email [FAQ](https://docs.ovh.com/gb/en/emails/emails-faq/).
+> If you have any other questions that are not covered by this guide, please refer to our [Email FAQ](https://docs.ovh.com/gb/en/emails/emails-faq/).
 
 ## Requirements
 
@@ -32,11 +32,11 @@ For your emails to work, you need to have an active email solution. If your emai
 
 Here is how to ensure that your services are up and running:
 
-- For your domain **name**, go to the `Web Cloud`{.action} section, click `Domain`{.action} names in the left-hand column, then select your domain name. If your domain name has expired, this will be listed at the top of the page.
-- For your **Web** Hosting plan, go to the `Web Cloud`{.action} section, click `Web Hosting`{.action} in the left-hand column, then select your Web Hosting plan. The date of expiry or automatic renewal of your hosting will be indicated at the top of the page.
+- For your domain **name**, go to the `Web Cloud`{.action} section, click `Domain names`{.action} in the left-hand column, then select your domain name. If your domain name has expired, this will be listed at the top of the page.
+- For your **Web** Hosting plan, go to the `Web Cloud`{.action} section, click `Hosting plans`{.action} in the left-hand column, then select your Web Hosting plan. The date of expiry or automatic renewal of your hosting will be indicated at the top of the page.
 - For an **MXplan** solution, go to the `Web Cloud`{.action} section, click `Emails`{.action} in the left-hand column, then select the domain name concerned. Click the `Email`{.action} accounts tab. Check the status of the email account in the `Status` column.
 - For an **Email Pro** solution, go to the `Web Cloud`{.action} section, click `Email Pro`{.action} in the left-hand column, then select your platform. Click the `Email`{.action} accounts tab. Check the status of the email account in the `Status` column.
-- For an **Exchange** solution, go to the `Web Cloud`{.action} section, click `Microsoft`{.action} in the left-hand column, then click `Exchange`{.action} and select your platform. Click the `Email`{.action} accounts tab. Check the status of the email account in the `Status` column.
+- For an **Exchange** solution, go to the `Web Cloud`{.action} section, click `Microsoft`{.action} in the left-hand column, then click `Exchange`{.action} and select your platform. Click the `Email accounts`{.action} tab. Check the status of the email account in the `Status` column.
 
 ### I can't send emails from my email software
 
