@@ -27,8 +27,10 @@ Cette autorisation de hors-forfait est en fait composée de 2 entités :
 - **La limite de base**, une valeur non personnalisée.
 - **Le dépôt de garantie**, un dépôt d'argent qui peut vous être restitué sur demande.
 
-Par défaut, la limite de base est à 150€ HT et le dépôt de garantie à 0 € HT. Vous avez donc, par défaut, une autorisation de hors-forfait à 150€ HT par groupe.
-<br>À des fins de sécurité, la limite de base est fixée à 10 € HT pour les clients venant de commander leur(s) première(s) ligne(s) VoIP. Cette limite évoluera ensuite jusqu'à 150 €. 
+À des fins de sécurité, la limite de base est fixée à 10 € HT pour les clients venant de commander leur(s) première(s) ligne(s) VoIP.
+
+Cette limite évolue ensuite jusqu'à 150 € HT, le dépôt de garantie étant, par défaut, à 0 € HT.
+Vous aurez alors une autorisation de hors-forfait à 150€ HT par groupe.
 
 > [!primary]
 > Cette limitation est obligatoire. Celle-ci peut vous éviter d'avoir une facture hors-normes en cas de piratage de votre ligne SIP.
