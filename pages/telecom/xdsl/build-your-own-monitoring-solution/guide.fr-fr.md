@@ -10,7 +10,7 @@ order: 5
 > Une version en langue anglaise de ce guide est disponible [ici](https://docs.ovh.com/gb/en/xdsl/build-your-own-monitoring-solution/)
 >
 
-**Dernière mise à jour le 05/02/2021**
+**Dernière mise à jour le 11/06/2021**
 
 ## Objectif
 
@@ -70,7 +70,7 @@ Url  : https://warp10.insight.eu.metrics.ovh.net
 
 7\. Cliquez sur l'icône Grafana en haut à gauche et choisissez dans le menu : `Dashboard`{.action}, puis `Import`{.action}
 
-8\. Uploadez le template suivant : [internet-access-grafana-dashboard-v1.json](http://files.isp.ovh.net/grafana/internet-access-grafana-dashboard-v1.json)
+8\. Uploadez le template suivant : [internet-access-grafana-dashboard-v2.json](http://files.isp.ovh.net/grafana/internet-access-grafana-dashboard-v2.json)
 
 9\. Cliquez sur `Import`{.action} pour finaliser l'ajout du template.
 
@@ -95,6 +95,8 @@ Et si votre modem est compatible :
 - SNR *(Signal to Noise Ratio)*
 - atténuation
 - erreurs CRC *(Contrôle de Redondance Cyclique)*
+- erreurs FEC *(Correction d'erreur direct)*
+- erreurs HEC *(Correction d'erreur header)*
 - uptime de la synchronisation, de la connection et du modem
 
 ## Aller plus loin
