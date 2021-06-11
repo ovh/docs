@@ -14,17 +14,17 @@ Retrouvez ici les questions les plus fréquemment posées sur les services VoIP 
 
 ### Quelle est la différence entre une ligne SIP et un numéro « alias » ? <a name="ligne-ou-numero"></a>
 
-La ligne SIP et le numéro alias sont deux services de téléphonie distincts. Bien que complémentaires, ils n'ont pas la même fonction.
+Une ligne SIP et un numéro alias sont deux services de téléphonie distincts. Bien que complémentaires, ils n'ont pas la même fonction.
 
 Une ligne SIP est une ligne téléphonique utilisant le protocope SIP (*Session Initation Protocol*). Elle est généralement enregistrée sur un seul téléphone SIP, qui peut être [fourni par OVHcloud](../https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml), ou sur un logiciel de type « *softphone* ». La ligne SIP est liée à un [forfait VoIP](https://www.ovhtelecom.fr/telephonie/voip/) facturé mensuellement. Il convient généralement d'avoir **une ligne SIP par personne devant disposer d'une ligne téléphonique directe** dans votre entreprise.
 
 Un [numéro](https://www.ovhtelecom.fr/telephonie/numeros/), souvent appelé « numéro alias », ne peut pas être enregistré sur un téléphone. Il redirige les appels vers **une ou plusieurs** lignes SIP ou peut servir à héberger une [conférence téléphonique OVHcloud](../conference/).
-<br>Le numéro alias peut être acheté chez OVHcloud ou « récupéré », via la [portabilité de numéro](../demander-la-portabilite-de-mon-numero/), depuis un autre opérateur téléphonique.
+<br>Un numéro alias peut être [acheté chez OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/) ou « porté », via la [portabilité de numéro](../demander-la-portabilite-de-mon-numero/), depuis un autre opérateur téléphonique.
 
 Dans une entreprise, le schéma classique est d'avoir, au minimum, un numéro alias principal, facile à mémoriser pour la clientèle, qui redirige les appels vers les lignes SIP directes des employés.
 
-* Un numéro alias peut rediriger les appels vers une seule ligne, via une [redirection d'appels](../creer-redirection-avec-presentation/). Cela peut vous permettre, par exemple, de masquer le numéro direct d'une ligne SIP.
-* Un numéro alias peut aussi faire sonner **en même temps** plusieurs lignes via une configuration de type « [Files d'appels](../les-files-d-appels/) ».
+* Un numéro alias peut rediriger les appels vers une seule ligne, via une [redirection d'appels](../creer-redirection-avec-presentation/). Cela peut vous permettre, par exemple, de masquer le numéro direct de la ligne SIP.
+* Un numéro alias peut aussi faire sonner **en même temps** plusieurs lignes via une configuration de type « [File d'appels](../les-files-d-appels/) ».
 * Vous pouvez également, sur un numéro alias, appliquer une configuration de type « [SVI](../svi-serveur-vocal-interactif/) » afin de proposer à vos appelants des choix de touches pour joindre indépendamment chaque service de votre entreprise.
 * Vous pouvez même envisager de combiner ces fonctionnalités en utilisant la configuration « [Contact Center Solution](../contact-center-solution/) ».
 
