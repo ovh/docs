@@ -12,7 +12,7 @@ order: 1
 
 Retrouvez ici les questions les plus fréquemment posées sur les services VoIP OVHcloud
 
-### Quelle est la différence entre une ligne SIP et un numéro « alias » ?
+### Quelle est la différence entre une ligne SIP et un numéro « alias » ? <a name="ligne-ou-numero"></a>
 
 La ligne SIP et le numéro alias sont deux services de téléphonie distincts. Bien que complémentaires, ils n'ont pas la même fonction.
 
