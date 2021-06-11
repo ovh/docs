@@ -18,7 +18,8 @@ La ligne SIP et le numéro alias sont deux services de téléphonie distincts. B
 
 Une ligne SIP est une ligne téléphonique utilisant le protocope SIP (*Session Initation Protocol*). Elle est généralement enregistrée sur un seul téléphone SIP, qui peut être [fourni par OVHcloud](../https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml), ou sur un logiciel de type « *softphone* ». La ligne SIP est liée à un [forfait VoIP](https://www.ovhtelecom.fr/telephonie/voip/) facturé mensuellement. Il convient généralement d'avoir **une ligne SIP par personne devant disposer d'une ligne téléphonique directe** dans votre entreprise.
 
-Un [numéro](https://www.ovhtelecom.fr/telephonie/numeros/), souvent appelé numéro « numéro alias », ne peut pas être enregistré sur un téléphone. Il redirige les appels vers **une ou plusieurs** lignes SIP ou peut servir à héberger une [conférence téléphonique OVHcloud](../conference/). Le numéro alias peut être acheté chez OVHcloud ou « récupéré » (via la portabilité de numéro) depuis un autre opérateur téléphonique.
+Un [numéro](https://www.ovhtelecom.fr/telephonie/numeros/), souvent appelé « numéro alias », ne peut pas être enregistré sur un téléphone. Il redirige les appels vers **une ou plusieurs** lignes SIP ou peut servir à héberger une [conférence téléphonique OVHcloud](../conference/).
+<br>Le numéro alias peut être acheté chez OVHcloud ou « récupéré », via la [portabilité de numéro](../demander-la-portabilite-de-mon-numero/), depuis un autre opérateur téléphonique.
 
 Dans une entreprise, le schéma classique est d'avoir, au minimum, un numéro alias principal, facile à mémoriser pour la clientèle, qui redirige les appels vers les lignes SIP directes des employés.
 
