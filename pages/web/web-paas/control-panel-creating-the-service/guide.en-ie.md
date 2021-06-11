@@ -57,22 +57,22 @@ Choose the geographical region of the data centre in which your project will be 
 
 #### Step 5: Configure your project
 
-In this step you can choose additional resources for the project, according to the plan you have selected. Please refer to our [product page](https://www.ovhcloud.com/en-ie/web-paas/) for details about the available **Environments**, **Storage**, and **User licenses** for each plan.
+In this step you can choose additional resources for the project, according to the plan you have selected. Please refer to our [product page](https://www.ovhcloud.com/en-ie/web-paas/) for details about the available **Environments**, **Storage**, and **User licences** for each plan.
 
 ![configure details](images/creation_manager05.png){.thumbnail}
 
-Note that it will not be possible to downgrade **Storage** after it has been increased.
+The options chosen here can be modified in the Control Panel later. Note that it will not be possible to downgrade **Storage** after it has been increased.
 
 #### Step 6: Proceed to complete your order
 
-Finally, review the order summary and click on `Create project`{.action} to confirm. This will initiate the payment process.
+Finally, review the order summary and click on `Create a project`{.action} to confirm. This will initiate the payment process.
 
 > [!primary]
 > You can order the service from the [product page](https://www.ovhcloud.com/en-ie/web-paas/) as well.
 >
 > Each project requires a separate service subscription. In order to add a project, simply repeat the steps above.
 
-After the payment is completed, the project will be deployed and you will be able to log in to the Management Console from the OVHcloud Control Panel.
+After the payment process is completed, the project will be deployed and you will be able to log in to the Management Console from the OVHcloud Control Panel.
 
 ### Step 7: Check the deployment of your project in the Management Console
 
