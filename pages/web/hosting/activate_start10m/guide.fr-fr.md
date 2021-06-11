@@ -6,13 +6,13 @@ section: 'Premiers pas'
 order: 2
 ---
 
-**Dernière mise à jour le 16/02/2021**
+**Dernière mise à jour le 11/06/2021**
 
 ## Objectif
 
 Avec le [Start10M](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml){.external}, OVHcloud vous offre un hébergement web de 10 Mo et un compte e-mail disposant de 5 Go de stockage. Ce guide vous présente comment activer l'hébergement start 10M sur votre [nom de domaine](https://www.ovh.com/fr/domaines/){.external}.
 
-**Découvrez comment activer votre hébergement gratuit Start 10M **
+**Découvrez comment activer votre hébergement gratuit Start 10M**
 
 ## Prérequis
 
@@ -52,6 +52,3 @@ Consultez le guide de [création d'un compte E-mail MX Plan](https://docs.ovh.co
 [Créer une adresse e-mail avec son offre MX Plan](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
-
-
-
