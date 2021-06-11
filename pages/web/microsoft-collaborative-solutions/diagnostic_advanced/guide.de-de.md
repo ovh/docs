@@ -1,6 +1,6 @@
 ---
 title: Verwendung der Exchange Fehlerdiagnose
-excerpt: 'Erfahren Sie, wie Sie eine automatische Fehlerdiagnose für Exchange Accounts durchführen'
+excerpt: 'Erfahren Sie hier, wie Sie eine automatische Fehlerdiagnose für Exchange Accounts durchführen'
 slug: exchange_diagnose_was_tun_bei_fehlern
 legacy_guide_number: g2277
 section: Troubleshooting
@@ -11,13 +11,13 @@ order: 2
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Stand 28.05.2021**
+**Letzte Aktualisierung am 28.05.2021**
 
 ## Ziel
 
 Fehler auf den Exchange E-Mail-Accounts können zahlreiche Ursachen haben. Eine automatische Diagnose der Funktionen des Accounts reduziert diese Anzahl an Ursachen. Die Testergebnisse sind auch nützlich, wenn Sie Hilfe für Ihren Exchange Dienst anfordern.
 
-**In dieser Anleitung erfahren Sie, wie Sie eine Exchange Diagnose starten und deren Ergebnisse interpretieren.**
+**Diese Anleitung erklärt, wie Sie eine Exchange Diagnose starten und deren Ergebnisse interpretieren.**
 
 ## Voraussetzungen
 
@@ -96,11 +96,6 @@ Je nach Verwendung Ihres Exchange Dienstes sind die folgenden MX Server gültig:
 > Diese Informationen finden Sie im OVHcloud Kundencenter im Bereich `Web`{.action}.  Öffnen Sie `Microsoft`{.action} im Menü links, dann `Exchange`{.action} und wählen Sie Ihre Dienstleistung aus. Der Name des Servers wird im Bereich **Verbindung** im Tab `Allgemeine Informationen`{.action} angezeigt.
 >
 
-> [!primary]
->
-> Der technische Name eines OVHcloud Exchange-Dienstes besteht aus einem Präfix (**hosted-** oder **private-**), einem Teil Ihrer "Kundenkennung"und einer inkrementellen Nummer, die die Anzahl der gehosteten oder privaten Exchange-Dienste angibt, die in Ihrem Kundenkonto registriert sind.
->
-
 ### Der SRV-Eintrag der Domain ist ungültig
 
 Der SRV-Eintrag dient der automatischen Konfiguration Ihres Exchange Accounts mit einem kompatiblen E-Mail-Programm wie Microsoft Outlook.
@@ -114,7 +109,7 @@ Feld | Wert
 Priorität | 0
 Gewichtung | 0
 Port | 443
-Ziel | [ex<b>?</b>.mail.ovh.net](#hostname) (ersetzen Sie die "?" durch die dem Server Ihres Exchange Dienstes entsprechende Nummer)
+Ziel | [ex<b>?</b>.mail.ovh.net](#hostname) (ersetzen Sie die "?" durch die entsprechende Nummer Ihres Exchange Servers)
 
 ### Die Test-E-Mail konnte nicht über den Account versendet werden
 
