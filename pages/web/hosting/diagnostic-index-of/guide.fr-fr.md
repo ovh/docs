@@ -1,6 +1,6 @@
 ---
-title: Résoudre l’erreur « Site non installé »
-excerpt: Découvrez comment identifier et résoudre la page d’erreur « Site non installé »
+title: "Résoudre l’erreur « Index of »"
+excerpt: "Découvrez comment résoudre l'anomalie « Index of » sur votre hébergement OVHcloud"
 slug: diagnostic-index-of
 section: Diagnostic
 order: 5
@@ -10,9 +10,11 @@ order: 5
  
 ## Objectif
 
-Suite à un mauvaise manipulation ou une configuration erronée du `Multisite` de votre hébergement OVHcloud, votre site peut afficher une page « **Index of** ».
+Suite à une mauvaise manipulation ou une configuration erronée du `Multisite` de votre hébergement OVHcloud, votre site peut afficher une page « **Index of** ».
 
 ![index_of](images/index_of.png){.thumbnail}
+
+**Découvrez comment résoudre l'anomalie « **Index of** » sur votre hébergement OVHcloud.**
 
 ## Prérequis
 
