@@ -4,7 +4,7 @@ slug: api-tokens
 section: Cli
 ---
 
-**Last updated 25th May 2021**
+**Last updated 3rd June 2021**
 
 
 ## Obtaining a token
@@ -41,7 +41,6 @@ The machine user can be given a very restrictive set of permissions limited to j
 
 It will also show up in logs and activity streams as a separate entry from human users.
 
-Consult the [Users](../../administration-users) documentation for more information about the differences between access levels.
 
 ## Install the CLI on a Web PaaS environment
 

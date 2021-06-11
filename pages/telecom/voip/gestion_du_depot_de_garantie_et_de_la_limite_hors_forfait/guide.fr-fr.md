@@ -6,7 +6,7 @@ legacy_guide_number: '7536699'
 section: Administratif
 ---
 
-**Dernière mise à jour le 14/12/2020**
+**Dernière mise à jour le 01/06/2021**
 
 ## Objectif
 
@@ -27,8 +27,10 @@ Cette autorisation de hors-forfait est en fait composée de 2 entités :
 - **La limite de base**, une valeur non personnalisée.
 - **Le dépôt de garantie**, un dépôt d'argent qui peut vous être restitué sur demande.
 
-Par défaut, la limite de base est à 150€ HT et le dépôt de garantie à 0 € HT. Vous avez donc, par défaut, une autorisation de hors-forfait à 150€ HT par groupe.
-<br>À des fins de sécurité, la limite de base est fixée à 10 € HT pour les clients venant de commander leur(s) première(s) ligne(s) VoIP. Cette limite évoluera ensuite jusqu'à 150 €. 
+À des fins de sécurité, la limite de base est fixée à 10 € HT pour les clients venant de commander leur(s) première(s) ligne(s) VoIP.
+
+Cette limite évolue ensuite jusqu'à 150 € HT, le dépôt de garantie étant, par défaut, à 0 € HT.
+Vous aurez alors une autorisation de hors-forfait à 150€ HT par groupe.
 
 > [!primary]
 > Cette limitation est obligatoire. Celle-ci peut vous éviter d'avoir une facture hors-normes en cas de piratage de votre ligne SIP.
@@ -108,7 +110,20 @@ Un bon de commande sera alors généré. Cliquez sur le numéro de bon de comman
 
 ### Comment récupérer le dépôt de garantie ?
 
-Si votre dépôt de garantie est trop élevé pour vos besoins actuels, vous pouvez demander à nos services un remboursement total ou partiel. Dans votre espace client, cliquez sur `Besoin d'aide`{.action} en haut à droite puis sur `Demande d'assistance`{.action}.
+Si vous souhaitez récupérer le dépôt de garantie de l'un de vos groupes de téléphonie, il vous faut demander la fermeture du groupe en question.
+
+Le dépôt de garantie sera alors crédité sur votre compte prépayé OVHcloud, à la date de facturation suivant la suppression du groupe.
+
+Pour supprimer un groupe de téléphonie, sélectionnez-le dans le menu de gauche puis cliquez sur l’onglet `Administration`{.action} et sur `Supprimer le groupe`{.action}.
+
+![Suppression groupe de téléphonie](images/SupprGroup.png)
+
+> [!warning]
+>
+> Si des services sont encore présents dans ce groupe, ils seront également supprimés à la prochaine date de facturation.
+> Si vous souhaitez conserver ces services, vous devez les déplacer dans un autre groupe de téléphonie, **avant** de supprimer le groupe initial.
+> Pour cela, consultez le guide ["Gestion des groupes de téléphonie"](../gestion-des-groupes-de-telephonie/) afin de créer un nouveau groupe ou de déplacer les services dans un groupe existant.
+>
 
 ### Les transferts entre groupes
 
@@ -122,7 +137,6 @@ Dans l'onglet `Facturation`{.action}, cliquez sur `Transfert de vos dépôts de 
 Sélectionnez le groupe « Source » qui va transférer le dépôt de garantie, choisissez le montant à transférer puis choisissez le groupe « Destination ». Confirmez le transfert en cliquant sur `Valider`{.action}. 
 
 ![transfert depot de garantie](images/transferdeposit2.png){.thumbnail}
-
 
 > [!warning]
 > Le transfert entre groupes n'est pas possible si le groupe source ou destination est suspendu pour dépassement du hors forfait autorisé.

@@ -15,15 +15,15 @@ Since there is a multitude of reasons why errors might occur on Exchange email a
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](https://www.ovh.ie/emails/hosted-exchange/) already set up
+- an [OVHcloud Exchange solution](https://www.ovh.com/world/emails/hosted-exchange/) already set up
 - credentials for the Exchange account to be checked
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
 ### Running the diagnostic
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Web Cloud`{.action} in the top menu bar. Open `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action} and select your service.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and switch to `Web Cloud`{.action} in the top menu bar. Open `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action} and select your service.
 
 ![Exchange Diagnostic](images/img_4450.png){.thumbnail}
 
@@ -55,11 +55,11 @@ Please follow the instructions in [this guide](../blocked-for-spam/) to enable o
 
 ### Subscription to the account has expired <a name="expired"></a>
 
-Your subscription is no longer active, so sending and receiving have been disabled. You can [review the billing status of the service](../manage-exchange-billing/) in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and renew it to reactivate the account.
+Your subscription is no longer active, so sending and receiving have been disabled. You can review the status of the service in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and renew it to reactivate the account.
 
 ### Account locked due to the security policy
 
-If there is a security policy activated in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), the account could be temporarily locked. 
+If there is a security policy activated in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), the account could be temporarily locked. 
 
 You can for example decide that the account will be locked after multiple unsuccessful login attempts, for a period of time determined by you. 
 
@@ -71,7 +71,7 @@ You can find more information about this topic in the [security policy guide](..
 
 This can be caused by entering an incorrect account password. First verify via a [webmail login](../exchange_2016_outlook_web_app_user_guide/) that the password is correct, then restart the diagnostics.
 
-If necessary, you can change the password of the account concerned in the Exchange tab `Email accounts`{.action} of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). If the issue persists, create a support request.
+If necessary, you can change the password of the account concerned in the Exchange tab `Email accounts`{.action} of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). If the issue persists, create a support request.
 
 ### The domain MX record is not valid
 
@@ -113,7 +113,7 @@ This error indicates a general email sending failure wich may have several cause
 - [Your account has been suspended](#expired)
 - [The password that was entered is incorrect](#password)
 - [Your account has been blocked for sending spam](#blocked)
-- [An incident has occurred on the infrastructure](http://status.ovh.ie/?project=30&status=all&perpage=50)
+- [An incident has occurred on the infrastructure](http://status.ovh.com/?project=30&status=all&perpage=50)
 
 ## Go further
 

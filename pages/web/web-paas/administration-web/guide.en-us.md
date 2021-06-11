@@ -84,7 +84,6 @@ These options are provided in a separate dialog box that will appear when you cl
 
 ![sync confirmation cli](images/header-sync-box.png "0.4")
 
-Be aware that sync uses the [Backup](../administration-backup-and-restore#backups-and-downtime) mechanism and will have the same caveats.
 
 Note that `Sync` is only available if your branch has no unmerged commits, and can be fast-forwarded.
 
