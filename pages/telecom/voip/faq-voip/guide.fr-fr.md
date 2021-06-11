@@ -6,11 +6,28 @@ section: FAQ
 order: 1
 ---
 
-**Dernière mise à jour le 12/01/2021** 
+**Dernière mise à jour le 11/06/2021** 
 
 ## Objectif
 
 Retrouvez ici les questions les plus fréquemment posées sur les services VoIP OVHcloud
+
+### Quelle est la différence entre une ligne SIP et un numéro « alias » ?
+
+La ligne SIP et le numéro alias sont deux services de téléphonie distincts. Bien que complémentaires, ils n'ont pas la même fonction.
+
+Une ligne SIP est une ligne téléphonique utilisant le protocope SIP (*Session Initation Protocol*). Elle est généralement enregistrée sur un seul téléphone SIP, qui peut être [fourni par OVHcloud](../https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml), ou sur un logiciel de type « *softphone* ». La ligne SIP est liée à un [forfait VoIP](https://www.ovhtelecom.fr/telephonie/voip/) facturé mensuellement. Il convient généralement d'avoir **une ligne SIP par personne devant disposer d'une ligne téléphonique directe** dans votre entreprise.
+
+Un [numéro](https://www.ovhtelecom.fr/telephonie/numeros/), souvent appelé numéro « numéro alias », ne peut pas être enregistré sur un téléphone. Il redirige les appels vers **une ou plusieurs** lignes SIP ou peut servir à héberger une [conférence téléphonique OVHcloud](../conference/). Le numéro alias peut être acheté chez OVHcloud ou « récupéré » (via la portabilité de numéro) depuis un autre opérateur téléphonique.
+
+Dans une entreprise, le schéma classique est d'avoir, au minimum, un numéro alias principal, facile à mémoriser pour la clientèle, qui redirige les appels vers les lignes SIP directes des employés.
+<br>Un numéro alias peut rediriger les appels vers une seule ligne, via une [redirection d'appels](../creer-redirection-avec-presentation/). Cela peut vous permettre, par exemple, de masquer le numéro direct d'une ligne SIP.
+<br>Un numéro alias peut aussi faire sonner **en même temps** plusieurs lignes via une configuration de type « [Files d'appels](../les-files-d-appels/) ». 
+<br>Vous pouvez également, sur un numéro alias, appliquer une configuration de type « [SVI](../svi-serveur-vocal-interactif/) » afin de proposer à vos appelants des choix de touches pour joindre indépendamment chaque service de votre entreprise. 
+<br>Vous pouvez même envisager de combiner ces fonctionnalités en utilisant la configuration « [Contact Center Solution](../contact-center-solution/) ».
+
+Pour déterminer quel type de configuration de numéro alias est le plus adapté à votre entreprise, consultez notre guide « [Choisir et appliquer une configuration pour un numéro](../quelle-configuration-est-adaptee-a-mes-besoins/) ».
+<br> Un guide par configuration est également disponible dans la [rubrique « Numéros ou alias » de nos guides](../).
 
 ### Comment utiliser mon répondeur ?
 
