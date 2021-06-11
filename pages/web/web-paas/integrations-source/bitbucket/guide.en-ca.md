@@ -4,7 +4,7 @@ slug: bitbucket
 section: Source
 ---
 
-**Last updated 11th May 2021**
+**Last updated 3rd June 2021**
 
 
 ## Objective  
@@ -14,7 +14,7 @@ The Bitbucket integration allows you to manage your Web PaaS environments direct
 It is possible to integrate a Web PaaS project with either the freely available Bitbucket Cloud product, or with the self-hosted [Bitbucket Server](https://confluence.atlassian.com/bitbucketserver/). In both cases, you will need to [install the Web PaaS CLI](../../development-cli#installation) if you have not already done so to set up the integration.
 
 > [!primary]  
-> If the repository you are trying to integrate with a Web PaaS project has a default branch that is not `master` (e.g. `main`), there are a few additional steps you will need to perform to setup the integration. See the [Renaming the default branch guide](../../guides-general/default-branch) for more information.
+> If the repository you are trying to integrate with a Web PaaS project has a default branch that is not `master` (e.g. `main`), there are a few additional steps you will need to perform to setup the integration.
 > 
 
 ## Bitbucket Cloud
