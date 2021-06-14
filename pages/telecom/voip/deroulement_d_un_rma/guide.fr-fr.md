@@ -125,7 +125,7 @@ Vous recevez alors l'e-mail suivant :
 
 Si vous renvoyez à OVHcloud un téléphone autre que celui concerné par le RMA, il est malgré tout indispensable de nous retourner le matériel réclamé sur le bon RMA. En effet, le délai de renvoi court toujours et le matériel correspondant au RMA doit nous être restitué. 
 
-Nous vous conseillons de contacter le support, via un [ticket d'assistance depuis votre espace client OVHcloud]((https://www.ovh.com/manager/dedicated/index.html#/support/tickets), pour indiquer votre erreur d'envoi afin qu'une solution soit étudiée concernant le matériel renvoyé par erreur.  
+Nous vous conseillons de contacter le support, via un [ticket d'assistance depuis votre espace client OVHcloud](https://www.ovh.com/manager/dedicated/index.html#/support/tickets), pour indiquer votre erreur d'envoi afin qu'une solution soit étudiée concernant le matériel renvoyé par erreur.  
 
 ## Aller plus loin
 
