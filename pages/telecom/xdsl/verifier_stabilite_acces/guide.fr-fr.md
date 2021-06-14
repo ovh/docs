@@ -10,7 +10,7 @@ order: 9
 
 ## Objectif
 
-Les *logs radius* disponibles via les API OVHcloud, combinés avec la réponse au ping de votre accès, permettent de vérifiré la stabilité de celui-ci.
+Les *logs radius* disponibles via les API OVHcloud permettent de vérifier la stabilité d'un accès à Internet.
 
 **Découvez comment vérifier la stabilité d'un lien xDSL ou FTTH en utilisant les logs fournis par les API OVHcloud**
 
@@ -30,10 +30,10 @@ Lors de chaque connexion de votre routeur sur les équipements OVHcloud, une tra
 Lors de chaque reconnexion du lien, une nouvelle trace horodatée de la connexion est créée.<br>
 Une reconnexion peut avoir l'une des causes suivantes :
 
-* un redémarrage de votre modem;
-* une perte de sychronisation;
-* un incident générique;
-* la création de nouveaux identifiants de connexion. 
+* un redémarrage de votre modem,
+* une perte de sychronisation,
+* un incident générique,
+* l'envoi manuel de [nouveaux identifiants de connexion](../obtenir-identifiants-ppoe).
 
 > [!primary]
 >
@@ -66,12 +66,12 @@ Voici un exemple de retour :
 
 Vous retrouvez, dans l'encadré orange ci-dessus, les informations d'un log de reconnexion. La première partie détaille les informations suivantes :
 
-- date: la date au format AAAA-MM-JJTHH:mm:ss+GMT;
-- message : lié à l'opérateur de collecte;
-- state : l'état de connexion, ici fonctionnel car `OK`. À noter qu'un refus d'authenfication donnera `KO` ainsi que, le plus souvant, un message `wrong login or password`.
+- date: la date au format AAAA-MM-JJTHH:mm:ss+GMT,
+- message : lié à l'opérateur de collecte,
+- state : l'état de connexion, ici fonctionnel car `OK`. À noter qu'un refus d'authenfication donnera `KO` ainsi que, le plus souvent, un message `wrong login or password`.
 - login : l'identifiant PPPoE de votre accès.
 
-La seconde partie, telle qu'affichée dans l'encadré orange, est l'effet miroir sur les équipements OVHCloud qui finalisent l'authenfiication. 
+La seconde partie, telle qu'affichée dans l'encadré orange, est l'effet miroir sur les équipements OVHCloud qui finalisent l'authentification. 
 
 Une reconnexion génère donc deux logs. Sont stockés 50 logs au maximum, donc un total de 25 reconnexions.
 
