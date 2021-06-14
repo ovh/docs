@@ -10,13 +10,16 @@ order: 6
 
 ## Objectif
 
-Si vous souhaitez connecter votre propre routeur sur votre offre xDSL/FTTH OVHcloud, vous devez alors récupérer les identifiants PPPoE de votre accès.
+Si vous souhaitez utiliser votre équipement personnel pour gérer la connexion PPPoE sur votre offre xDSL/FTTH OVHcloud, vous devez récupérer les identifiants PPPoE associés cet accès.
+
+Les identifiants *Point to Point Protocol over Ethernet* (PPPoE) sont composés d'un nom d'utilisateur (ID) sous la forme xxxxxxxxxx@ovh.xxx et d'un mot de passe unique. Leur fonction est d'authentifier un équipement (équipement personnel ou modem fourni par OVHcloud) sur les infrastructures OVHcloud.
 
 **Découvrez comment utiliser les API OVHcloud pour récupérer les identifiants PPPoE d'un accès à Internet**.
 
 ## Prérequis
 
 - Disposer d'une [offre xDSL ou FTTH OVHcloud](https://www.ovhtelecom.fr/offre-internet/) active.
+- Disposer d'un équipement (routeur, firewall) compatible PPPoE.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr).
 - Être connecté aux [API OVHcloud](https://api.ovh.com/){.external}.
 - Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
@@ -24,14 +27,14 @@ Si vous souhaitez connecter votre propre routeur sur votre offre xDSL/FTTH OVHcl
 ## En pratique
 
 Les identifiants PPPoE vous sont envoyés par e-mail (à l'adresse e-mail de contact de votre compte OVHcloud) pendant la livraison de votre accès.<br>
-Ces identifiants vous permettent de configurer  le modem OVHcloud ou un équipement personnel pour l’usage de votre accès à Internet. 
+Ces identifiants vous permettent de configurer le modem OVHcloud, dans le cas d’une configuration manuelle en local, ou un équipement personnel pour l’usage de votre accès à Internet.
 
 Si votre offre a été fournie avec un modem OVHcloud, les identifiants PPPoE vous sont envoyés par e-mail systématiquement après chaque réinitialisation du modem.
 
 Le *login* reste identique après chaque réinitialisation.
 Pour des raisons de sécurité, le *mot de passe* est systématiquement modifié après chaque réinitialisation.
 
-Si vous ne disposez pas d’un modem OVHcloud ou si vous utilisez votre propre modem/routeur, vous pouvez utiliser les API OVHcloud afin de générer l'envoi de nouveaux identifiants PPPoE par e-mail. 
+Si vous souhaitez utiliser votre propre modem/routeur, vous pouvez utiliser les API OVHcloud afin de générer l'envoi de nouveaux identifiants PPPoE par e-mail. 
 
 Dans un premier temps, il vous faut retrouver le *serviceName* de votre accès à Internet.
 
