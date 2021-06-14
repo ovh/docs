@@ -27,7 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated 30 March, 2021.**
+**Last updated 14 June, 2021.**
 
 ## Before you begin
 
@@ -51,7 +51,8 @@ In this tutorial we are using the most basic Ingress Controller: [NGINX Ingress 
 
 ### 1. Installing the NGINX Ingress Controller
 
-The official way to install the **NGINX Ingress Controller** is using a mandatory manifest file:
+We can deploy the official **NGINX Ingress Controller** with the manifest file or with the Helm chart. Please choose one way or the other and follow the corresponding paragraph.
+#### 1. Installing with the manifest file
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud/deploy.yaml
@@ -81,6 +82,63 @@ role.rbac.authorization.k8s.io/ingress-nginx-admission created
 rolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created
 serviceaccount/ingress-nginx-admission created
 </code></pre>
+#### 2. Installing with the Helm chart
+```bash
+helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create-namespace
+```
+
+It creates the `namespace`, `serviceaccount`, `role` and all the other Kubernetes objects needed for the Ingress Controller, and then it deploys the controller:
+
+<pre class="console"><code>$ helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create-namespace
+NAME: ingress-nginx
+LAST DEPLOYED: Fri Jun 11 14:13:09 2021
+NAMESPACE: ingress-nginx
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+The ingress-nginx controller has been installed.
+It may take a few minutes for the LoadBalancer IP to be available.
+You can watch the status by running 'kubectl --namespace ingress-nginx get services -o wide -w ingress-nginx-controller'
+
+An example Ingress that makes use of the controller:
+
+  apiVersion: networking.k8s.io/v1beta1
+  kind: Ingress
+  metadata:
+    annotations:
+      kubernetes.io/ingress.class: nginx
+    name: example
+    namespace: foo
+  spec:
+    rules:
+      - host: www.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: exampleService
+                servicePort: 80
+              path: /
+    # This section is only required if TLS is to be enabled for the Ingress
+    tls:
+        - hosts:
+            - www.example.com
+          secretName: example-tls
+
+If TLS is enabled for the Ingress, a Secret containing the certificate and key must also be provided:
+
+  apiVersion: v1
+  kind: Secret
+  metadata:
+    name: example-tls
+    namespace: foo
+  data:
+    tls.crt: <base64 encoded cert>
+    tls.key: <base64 encoded key>
+  type: kubernetes.io/tls
+</code></pre>
+
+#### 3. Check your deployment
 
 You can use `kubectl` to get the state of the service and recover the Load Balancer's IP:
 
@@ -100,7 +158,7 @@ ingress-nginx-controller   LoadBalancer   10.3.81.157   xxx.xxx.xxx.xxx   80:xxx
 
 Now you need to patch the Ingress controller to support the proxy protocol.
 
-Get the list of the egress load balancer IPs:
+#### 1. Get the list of the egress load balancer IPs
 
 ```bash
 kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
@@ -109,15 +167,20 @@ kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadat
 You should see something like this:
 
 <pre class="console"><code>$ kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
-aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32,eee.eee.eee.eee/32,fff.fff.fff.fff/32
+aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32
 </code></pre>
+
+We can update the NGINX Ingress Controller configuration with manifest files or with Helm. Please choose one way or the other and follow the corresponding paragraph.
+#### 2. Patching with manifest files
 
 Copy the next YAML snippet in a `patch-ingress-controller-service.yml` file:
 
 ```yaml
 metadata:
   annotations:
-    service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol: "v1"
+    service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol: "v2"
+spec:
+  externalTrafficPolicy: Local
 ```
 
 And apply it in  your cluster:
@@ -132,7 +195,7 @@ Copy the next YAML snippet in a `patch-ingress-controller-configmap.yml` file an
 data:
   use-proxy-protocol: "true"
   real-ip-header: "proxy_protocol"
-  proxy-real-ip-cidr: "aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32,eee.eee.eee.eee/32,fff.fff.fff.fff/32"
+  proxy-real-ip-cidr: "aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32"
 ```
 
 And apply it in  your cluster:
@@ -141,21 +204,79 @@ And apply it in  your cluster:
 kubectl -n ingress-nginx patch configmap ingress-nginx-controller -p "$(cat patch-ingress-controller-configmap.yml)"
 ```
 
-After applying the patches, you need to restart the Ingress Controller:
-
-```bash
-kubectl rollout restart deploy/ingress-nginx-controller -n ingress-nginx
-```
-
 You should see the configuration being patched and the controller pod deleted (and recreated):
 
 <pre class="console"><code>$ kubectl -n ingress-nginx patch service  ingress-nginx-controller -p "$(cat patch-ingress-controller-configmap.yml)"
 configmap/ ingress-nginx-controller patched
 $ kubectl -n ingress-nginx patch configmap  ingress-nginx-controller -p "$(cat patch-ingress-controller-configmap.yml)"
-configmap/ ingress-nginx-controller patched
-$ kubectl rollout restart deploy/ingress-nginx-controller -n ingress-nginx
-deployment.apps/ingress-nginx-controller restarted</code></pre>
+configmap/ ingress-nginx-controller patched</code></pre>
+#### 3. Patching with Helm
 
+Copy the next YAML snippet in a `values.yaml` file and modify the `proxy-real-ip-cidr` parameter accordingly:
+
+```yaml
+controller:
+  service:
+    externalTrafficPolicy: "Local"
+    annotations:
+      service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol: "v2"
+  config:
+    use-proxy-protocol: "true"
+    real-ip-header: "proxy_protocol"
+    proxy-real-ip-cidr: "aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32"
+```
+
+And upgrade your Helm release:
+
+```bash
+helm upgrade ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx -f values.yaml
+```
+
+You should see your Helm release being upgraded:
+<pre class="console"><code>$ helm upgrade ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx -f values.yaml
+Release "ingress-nginx" has been upgraded. Happy Helming!
+NAME: ingress-nginx
+LAST DEPLOYED: Fri Jun 11 17:08:00 2021
+NAMESPACE: ingress-nginx
+STATUS: deployed
+REVISION: 3
+TEST SUITE: None
+NOTES:
+The ingress-nginx controller has been installed.
+It may take a few minutes for the LoadBalancer IP to be available.
+You can watch the status by running 'kubectl --namespace ingress-nginx get services -o wide -w ingress-nginx-controller'
+An example Ingress that makes use of the controller:
+  apiVersion: networking.k8s.io/v1beta1
+  kind: Ingress
+  metadata:
+    annotations:
+      kubernetes.io/ingress.class: nginx
+    name: example
+    namespace: foo
+  spec:
+    rules:
+      - host: www.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: exampleService
+                servicePort: 80
+              path: /
+    # This section is only required if TLS is to be enabled for the Ingress
+    tls:
+        - hosts:
+            - www.example.com
+          secretName: example-tls
+If TLS is enabled for the Ingress, a Secret containing the certificate and key must also be provided:
+  apiVersion: v1
+  kind: Secret
+  metadata:
+    name: example-tls
+    namespace: foo
+  data:
+    tls.crt: <base64 encoded cert>
+    tls.key: <base64 encoded key>
+  type: kubernetes.io/tls</code></pre>
 ### 4. Testing
 
 > [!warning]
