@@ -8,16 +8,25 @@ space_name: Téléphonie
 section: Administratif
 ---
 
-**Dernière mise à jour le 25/06/2021**
+**Dernière mise à jour le 14/06/2021**
 
 ## Objectif
 
-Lorsque vous changez de téléphone, vous restituez votre ancien matériel. Que notre support échange votre équipement ou que vous ayez résilié votre ligne, un RMA est généré. Il s'agit d'une autorisation de retour d'un équipement. Ce RMA permet de tracer également l'arrivée de l'équipement dans nos locaux et de restituer la caution ou valider la réception.
+Lorsque vous changez de téléphone, vous restituez votre ancien matériel. Que notre support échange votre équipement ou que vous ayez résilié votre ligne, un RMA (pour *return merchandise agreement* ou « autorisation de retour d'un équipement ») est généré. Ce RMA permet de tracer également l'arrivée de l'équipement dans nos locaux et de restituer la caution ou valider la réception.
 
 **Découvrez les étapes d'un RMA.**
 
+## Prérequis
 
-## Réception du premier e-mail et envoi du colis
+- Disposer d'un téléphone VoIP fourni sous caution par OVHcloud.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+
+## En pratique
+
+Ce guide décrit 2 exemples de RMA (échange de téléphone et résiliation) afin d'en comprendre le fonctionnement.
+D'autres typologies de RMA existent, leur déroulement étant similaire (envoi d'un e-mail puis rappel et enfin clôture du RMA).
+
+### Réception du premier e-mail et envoi du colis
 
 Lorsque votre RMA est créé, vous recevez un premier e-mail :
 
@@ -77,9 +86,9 @@ Au bout de 10 et de 15 jours, si nous n'avons pas reçu votre colis avec le bon 
         d'origine. Sans restitution de votre matériel dans les 3 jours, nous devrons procéder à la fermeture de ce dossier.
         Adresse de retour : OVH SAS 155 avenue Georges Hannart 59170 CROIX.
 
-## La clôture
+### La clôture
 
-### Le matériel est reçu
+#### Le matériel est reçu
 
 Lorsque nous avons reçu votre équipement, vous recevez cet e-mail :
 
@@ -99,9 +108,9 @@ Si une caution est restituée, elle sera disponible sur votre compte OVHcloud et
 
 Entrez le compte bancaire à créditer et validez. Le virement sera effectué sous 48 heures ouvrées.
 
-### Le matériel n'est pas reçu
+#### Le matériel n'est pas reçu
 
-Passé le délai de clôture du RMA, soit au bout de 45 jours, la caution n'est pas restituable. La caution étant HT, la TVA correspondant au matériel non restitué est facturée.
+Passé le délai de clôture du RMA, la caution n'est pas restituable. La caution étant HT, la TVA correspondant au matériel non restitué est facturée.
 
 Vous recevez alors l'e-mail suivant :
 
