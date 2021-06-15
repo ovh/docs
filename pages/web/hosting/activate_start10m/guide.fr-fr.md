@@ -12,6 +12,9 @@ order: 2
 
 Avec le [Start10M](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml){.external}, OVHcloud vous offre un hébergement web de 10 Mo et un compte e-mail disposant de 5 Go de stockage. Ce guide vous présente comment activer l'hébergement start 10M sur votre [nom de domaine](https://www.ovh.com/fr/domaines/){.external}.
 
+> [!warning]
+> Cette hébergement gratuit de 10 Mo convient pour une simple page web de présentation, il **n'inclus pas de base de données**. Si vos souhaitez mettre en place un site web comprenant plusieurs pages et nécessitant une base de données, tel qu'un CMS (exemple: Worpdress, Joomla, Prestashop, Drupal, etc.), nous vous invitons à commander l'une de [nos offres d'hébergement web](https://www.ovh.com/fr/hebergement-web/) depuis notre site ou votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+
 **Découvrez comment activer votre hébergement gratuit Start 10M**
 
 ## Prérequis
@@ -37,7 +40,7 @@ La fenêtre d'activation s'affiche. **L'étape 1** vous rappelle l'offre et son 
 | Entrée DNS MX 	| Les serveurs e-mail d'OVHcloud seront appliqués au nom de domaine. 	|
 
 > [!primary]
-> Il n'y a pas de base de données incluse avec l'hébergement gratuit Start 10M. Si votre projet nécessite une base de données, nous vous invitons à consulter nos [offres d'hébergement Web](https://www.ovh.com/fr/hebergement-web/) qui en contiennent.
+> Pourr rappel, il n'y a pas de base de données incluse avec l'hébergement gratuit Start 10M. Si votre projet nécessite une base de données, nous vous invitons à consulter nos [offres d'hébergement Web](https://www.ovh.com/fr/hebergement-web/) qui en contiennent.
 
 **L'étape 3** vous rappelle la tarification de l'offre. Lors de **l'étape 4**, vous devez prendre connaissance des contrats et valider votre commande.
 
