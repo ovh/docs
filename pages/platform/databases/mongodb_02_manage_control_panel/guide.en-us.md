@@ -16,7 +16,7 @@ The subscription and configuration details of your MongoDB databases can be mana
 
 ## Requirements
 
-- a MongoDB database service in your OVHcloud account (find the details in [this guide](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
+- a MongoDB database service in your OVHcloud account (find the details in [this guide](https://docs.ovh.com/us/en/publiccloud/databases/getting-started/))
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/us/&ovhSubsidiary=us)
 
 ## Instructions
@@ -29,7 +29,7 @@ On the **Databases** home page, a table will list your services and their attrib
 
 ![All databases](images/configure_mongo01.png){.thumbnail}
 
-The button `Create a database`{.action} starts the process of ordering a [new database service](https://docs.ovh.com/us/en/publiccloud/databases/mongodb/getting-started/).
+The button `Create a database`{.action} starts the process of ordering a [new database service](https://docs.ovh.com/us/en/publiccloud/databases/getting-started/).
 
 You can remove a service by clicking on the `...`{.action} button and then on `Delete`{.action}.
 
