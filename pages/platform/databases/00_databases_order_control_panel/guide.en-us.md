@@ -1,7 +1,7 @@
 ---
 title: Getting started with MongoDB
 excerpt: Find out how to set up your managed MongoDB service in the OVHcloud Control Panel
-slug: mongodb/getting-started
+slug: getting-started
 section: Getting started
 order: 1
 ---
@@ -23,7 +23,7 @@ OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deplo
 
 ### Subscribing to the service
 
-Log in to your [OVHcloud Control Panel]( https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage*.
+Log in to your [OVHcloud Control Panel]( https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
 Click on the button `Create a database instance`{.action}.
 
@@ -79,7 +79,7 @@ Please follow [this guide](https://docs.ovh.com/us/en/public-cloud/public-cloud-
 
 #### Step 6: Summary and confirmation
 
-The final section will display a summary of your order as well as the API equivalent for creating this database instance, for use with the [OVHcloud API](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/creation_mongo07.png){.thumbnail}
 
