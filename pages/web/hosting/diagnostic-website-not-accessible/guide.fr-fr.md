@@ -44,11 +44,19 @@ Sur Safari :
  
 ## En pratique
 
-### Étape 1
+### Étape 1 : Vérifiez la validité de votre nom de domaine
 
+Pour vérifier si votre nom de domaine fonctionne ou non, cliquez en haut à droite sur votre nom et prénom, afin de faire apparaître le menu de droite.
 
+Puis cliquez sur "Produits et services"
 
-### Étape 2
+Vérifiez la disponibilité de votre nom de domaine 
+
+Renouvelez-le si nécessaire, via le bouton "..." à droite de l'écran
+
+### Étape 2 : Vérifiez ses serveurs DNS
+
+### Étape 3 : Vérifiez sa zone DNS
  
 ## Aller plus loin
  
