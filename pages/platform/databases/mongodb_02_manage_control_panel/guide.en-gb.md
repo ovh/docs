@@ -16,12 +16,12 @@ The subscription and configuration details of your MongoDB databases can be mana
 
 ## Requirements
 
-- a MongoDB database service in your OVHcloud account (find the details in [this guide](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/getting-started/))
+- a MongoDB database service in your OVHcloud account (find the details in [this guide](https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/))
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage*.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
 ### Databases overview
 
@@ -29,7 +29,7 @@ On the **Databases** home page, a table will list your services and their attrib
 
 ![All databases](images/configure_mongo01.png){.thumbnail}
 
-The button `Create a database`{.action} starts the process of ordering a [new database service](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/getting-started/).
+The button `Create a database`{.action} starts the process of ordering a [new database service](https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/).
 
 You can remove a service by clicking on the `...`{.action} button and then on `Delete`{.action}.
 
@@ -39,7 +39,7 @@ After selecting your service, the `General information`{.action} tab displays th
 
 ![General information](images/configure_mongo02.png){.thumbnail}
 
-At the bottom of the page you can find **Login information** for your database: click on the respective links to copy/paste the strings for *mongo shell* or for use with an application.
+At the bottom of the page you can find **Login information** for your database; click on the respective links to copy/paste the strings for *mongo shell* or for use with an application.
 
 #### **Adding nodes**
 
@@ -47,7 +47,7 @@ Click on `Add nodes`{.action} in the **Information** box. The number of nodes yo
 
 ### Managing users and roles
 
-Switch to the tab `Users`{.action}. An admin user is pre-configured during service installation.
+Switch to the tab `Users`{.action}. An admin user is pre-configured during the service installation.
 
 ![Users](images/configure_mongo03.png){.thumbnail}
 
@@ -71,7 +71,7 @@ You can restore and delete backups via the `...`{.action} button.
 
 ### Configuring authorised IPs
 
-Switch to the tab `Authorised IPs`{.action}. IP addresses must be whitelisted here before they can access your database.
+Switch to the tab `Authorised IPs`{.action}. IP addresses must be whitelisted here before they can connect to your database.
 
 ![Authorised IP](images/configure_mongo07.png){.thumbnail}
 
