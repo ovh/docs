@@ -25,7 +25,7 @@ Non è possibile ricevere o inviare email dal tuo client di posta o dalla Webmai
 ## Prerequisiti
 
 - Disporre di una soluzione **MX Plan** o di una soluzione **Email Pro** o di una soluzione **Exchange**
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
