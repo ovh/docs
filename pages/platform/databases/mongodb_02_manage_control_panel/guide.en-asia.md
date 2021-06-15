@@ -21,7 +21,7 @@ The subscription and configuration details of your MongoDB databases can be mana
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage*.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
 ### Databases overview
 
@@ -39,7 +39,7 @@ After selecting your service, the `General information`{.action} tab displays th
 
 ![General information](images/configure_mongo02.png){.thumbnail}
 
-At the bottom of the page you can find **Login information** for your database: click on the respective links to copy/paste the strings for *mongo shell* or for use with an application.
+At the bottom of the page you can find **Login information** for your database; click on the respective links to copy/paste the strings for *mongo shell* or for use with an application.
 
 #### **Adding nodes**
 
@@ -47,7 +47,7 @@ Click on `Add nodes`{.action} in the **Information** box. The number of nodes yo
 
 ### Managing users and roles
 
-Switch to the tab `Users`{.action}. An admin user is pre-configured during service installation.
+Switch to the tab `Users`{.action}. An admin user is pre-configured during the service installation.
 
 ![Users](images/configure_mongo03.png){.thumbnail}
 
@@ -71,7 +71,7 @@ You can restore and delete backups via the `...`{.action} button.
 
 ### Configuring authorised IPs
 
-Switch to the tab `Authorised IPs`{.action}. IP addresses must be whitelisted here before they can access your database.
+Switch to the tab `Authorised IPs`{.action}. IP addresses must be whitelisted here before they can connect to your database.
 
 ![Authorised IP](images/configure_mongo07.png){.thumbnail}
 
