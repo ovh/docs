@@ -16,7 +16,7 @@ The subscription and configuration details of your MongoDB databases can be mana
 
 ## Requirements
 
-- a MongoDB database service in your OVHcloud account (find the details in [this guide](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/getting-started/))
+- a MongoDB database service in your OVHcloud account (find the details in [this guide](https://docs.ovh.com/sg/en/publiccloud/databases/getting-started/))
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
@@ -43,7 +43,7 @@ At the bottom of the page you can find **Login information** for your database; 
 
 #### **Adding nodes**
 
-Click on `Add nodes`{.action} in the **Information** box. The number of nodes you can add depends on the service plan. Please visit the [MongoDB capabilities page](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/capabilities/) for detailed information on each plan's properties.
+Click on `Add nodes`{.action} in the **Information** box. The number of nodes you can add depends on the service plan. Please visit the [MongoDB capabilities page](https://docs.ovh.com/sg/en/publiccloud/databases/capabilities/) for detailed information on each plan's properties.
 
 ### Managing users and roles
 
