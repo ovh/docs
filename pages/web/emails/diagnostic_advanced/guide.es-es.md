@@ -1,9 +1,9 @@
 ---
-title: Uso avanzado del correo de OVH
-excerpt: Uso avanzado del correo de OVH
+title: 'No se puede enviar o recibir mensajes'
+excerpt: Cómo reaccionar ante un fallo de funcionamiento en el envío o recepción de los mensajes de correo electrónico a OVHcloud
 slug: uso_avanzado_del_correo_de_ovh
 legacy_guide_number: g2117
-section: Uso avanzado
+section: Diagnóstico
 ---
 
 > [!primary]
