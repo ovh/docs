@@ -6,11 +6,11 @@ section: 'Premiers pas'
 order: 2
 ---
 
-**Dernière mise à jour le 11/06/2021**
+**Dernière mise à jour le 15/06/2021**
 
 ## Objectif
 
-Avec le [Start10M](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml){.external}, OVHcloud vous offre un hébergement web de 10 Mo et un compte e-mail disposant de 5 Go de stockage. Ce guide vous présente comment activer l'hébergement start 10M sur votre [nom de domaine](https://www.ovh.com/fr/domaines/){.external}.
+Avec le [Start10M](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml){.external}, OVHcloud vous offre un hébergement Web de 10 Mo et un compte e-mail disposant de 5 Go de stockage. Ce guide vous présente comment activer l'hébergement start 10M sur votre [nom de domaine](https://www.ovh.com/fr/domaines/){.external}.
 
 > [!warning]
 > Cet hébergement gratuit de 10 Mo convient pour une simple page Web de présentation, il **n'inclut pas de base de données**. Si vous souhaitez mettre en place un site Web comprenant plusieurs pages et nécessitant une base de données, tel qu'un CMS (Par exemple: Worpdress, Joomla, Prestashop, Drupal, etc.), nous vous invitons à commander l'une de [nos offres d'hébergement Web depuis notre site](https://www.ovh.com/fr/hebergement-web/) ou votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
@@ -19,7 +19,7 @@ Avec le [Start10M](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xm
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external}, détaché de tout hébergement web, dans votre espace client OVHcloud.
+- Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external}, détaché de tout hébergement Web, dans votre espace client OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
@@ -50,7 +50,7 @@ Consultez le guide de [création d'un compte E-mail MX Plan](https://docs.ovh.co
 
 ## Aller plus loin
 
-[Se connecter à l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external}
+[Se connecter à l’espace de stockage de son hébergement Web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external}
 
 [Créer une adresse e-mail avec son offre MX Plan](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/){.external}
 
