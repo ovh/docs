@@ -56,14 +56,23 @@ Renouvelez-le si nécessaire, via le bouton `...`{.action} à droite de l'écran
 
 > [!warning]
 >
-> OVHcloud n'est légalement pas autorisée à conserver vos services et données
+> Le renouvellement de vos services est sous votre entière responsabilité. OVHcloud, en tant qu'hébergeur, a l'obligation de supprimer définitivement les domaines et services qui n'ont pas été renouvelés à temps, ainsi que les données qu'ils contiennent.
 >
+> De ce fait, nous vous recommandons d'activer le [renouvellement automatique](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#en-pratique) sur l'ensemble de vos abonnements.
 
-### Étape 2 : Vérifiez ses serveurs DNS
+### Étape 2 : Vérifiez les serveurs DNS
 
-Pour vérifier la validité de vos serveurs DNS, cliquez en haut à droite de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}
+Pour vérifier la validité de vos [serveurs DNS](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/), cliquez en haut à droite de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
 
-### Étape 3 : Vérifiez sa zone DNS
+Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} : 
+
+|Scénario|Action à entreprendre|
+|---|---|
+|Les serveurs DNS indiqués sont identiques aux cibles des entrées de type `NS` dans la zone de votre domaine. |Passez à [l'étape 3](#etape3).|
+|Aucun serveurs DNS n'est renseigné dans l'onglet `Serveurs DNS`{.action}.|[Renseignez les cibles]((https://docs.ovh.com/fr/domains/generalites-serveurs-dns/#modifier-les-serveurs-dns)) des entrées de type `NS` indiquées dans votre `Zone DNS`{.action}, puis patientez 48 heures au maximum (délai technique maximum de propagation des changements de serveurs DNS)|
+|
+
+### Étape 3 : Vérifiez la zone DNS
  
 ## Aller plus loin <a name="aller-plus-loin"></a>
  
