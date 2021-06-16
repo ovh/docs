@@ -30,7 +30,7 @@ La création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou av
 
 > [!primary]
 >
-> Nous indiquons ici les erreurs les plus courantes. Si vous rencontrez une autre anomalie, consultez notre [FAQ sur les hébergements Web](https://www.ovh.com/fr/hebergement-web/faq/).
+> Nous indiquons ici les erreurs les plus courantes. Si vous rencontrez une autre anomalie, consultez notre [FAQ sur les hébergements Web](../faq-hebergement/).
 >
 
 ### « Une erreur s'est produite lors du chargement des informations. (You need at least one free database) »
@@ -59,7 +59,7 @@ Les offres [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml)
 > L'opération de suppression d'une base de données est définitive. Elle entraîne également la suppression des sauvegardes de la base concernée. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre webmaster ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
 >
 
-Pour supprimer une base de données, dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action} et enfin `Bases de données`{.action}. Supprimez la base de données souhaitée :
+Pour supprimer une base de données, dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action} et enfin sur l'onglet `Bases de données`{.action}. Supprimez la base de données souhaitée :
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
 
