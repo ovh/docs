@@ -19,11 +19,7 @@ This page provides the technical capabilities and limitations of the Cloud Datab
 The Cloud Databases (Beta) offer is available in the following regions:
 
 - `BHS` (Beauharnois, Canada)
-- `DE` (Frankfurt, Germany)
 - `GRA` (Gravelines, France)
-- `SBG` (Strasbourg, France)
-- `UK` (London, United Kingdom)
-- `WAW` (Warsaw, Poland)
 
 ### MongoDB version
 
@@ -44,7 +40,7 @@ Three plans are available:
 
 - *Essential*
 - *Business*
-- *Enterprise*
+- *Enterprise* (coming soon - stay tuned!)
 
 Here is an overview of the various plans capabilities:
 
@@ -112,8 +108,8 @@ In order to properly manage your MongoDB cluster, some MongoDB users are set up 
 
 Furthermore, user creation from the MongoDB Shell is unsupported: You need to use the OVHcloud API or the OVHcloud Control Panel in order to manage your clusters' users.
 
-## Feedback
+## We want your feedback!
 
-Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+We would love to help answer questions and appreciate any feedback you may have. Join our community of users on <https://community.ovh.com/en/>.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
