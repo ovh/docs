@@ -84,8 +84,8 @@ Ten błąd wskazuje, że e-maile nie mogą zostać odebrane i będzie również 
 
 Następujące serwery MX są ważne w zależności od korzystania z usługi Exchange:
 
-- Tylko Exchange: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net i mx4.mail.ovh.net
-- Exchange + E-mail POP/IMAP hostowany przez OVHcloud: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net i mx4.mail.ovh.net
+- Tylko Exchange: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange + E-mail POP/IMAP hostowany przez OVHcloud: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
 - Exchange + E-mail POP/IMAP nie obsługiwany przez OVHcloud: ex<b>?</b>.mail.ovh.net
 
 <a name="hostname"></a>
