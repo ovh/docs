@@ -79,7 +79,7 @@ This error indicates that emails cannot be received and it is also linked to the
 
 Depending on your Exchange service usage, the following MX servers are valid:
 
-- Exchange only: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange only: mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
 - Exchange & POP/IMAP email hosted by OVHcloud: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
 - Exchange & POP/IMAP email not hosted by OVHcloud: ex<b>?</b>.mail.ovh.net
 <a name="hostname"></a>
