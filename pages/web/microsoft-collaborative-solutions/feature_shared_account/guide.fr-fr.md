@@ -24,7 +24,7 @@ Les comptes partagés sont accessibles depuis OWA (webmail Exchange) ou via le l
 
 ### Ajouter un compte partagé
 
-Connectez-vous  à votre [espace client OVHcloud ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Accédez à la section « Web » et sélectionnez votre service Exchange dans la colonne figurant sous `Microsoft`{.action} puis `Exchange`{.action} située sur le coté gauche. 
+Connectez-vous  à votre [espace client OVHcloud ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Accédez à la section « Web » et sélectionnez votre service Exchange dans la colonne figurant sous `Microsoft`{.action} puis `Exchange`{.action} située sur le côté gauche. 
 
 Sélectionnez l’onglet `Comptes partagés`{.action} dans le menu horizontal et cliquez `Ajouter un compte partagé`{.action}.
 
@@ -57,7 +57,7 @@ Depuis l’onglet `Comptes partagés`{.action} de votre palteforme Exchange, cli
 
 ![emails](images/exchange-shared_accounts03.png){.thumbnail}
 
-Cliquez sur le bouton `...`{.action} à droite de votre compte puis **"Configurer les délégations"**. Vous pourrez ensuite choisir dans votre liste de compte, ceux qui auront la possibilité d'accèder au compte partagé.
+Cliquez sur le bouton `...`{.action} à droite de votre compte puis **"Configurer les délégations"**. Vous pourrez ensuite choisir dans votre liste de compte, ceux qui auront la possibilité d'accéder au compte partagé.
 
 Choisissez les actions possibles sur le compte sélectionné :
 
@@ -81,7 +81,7 @@ Une fois connecté, dans la colonne de gauche, faites un clic droit sur l'arbore
 
 ![emails](images/exchange-shared_accounts05.png){.thumbnail}
 
-Saisissez ensuite le nom de votre compte partagé.puis cliquez sur `ajouter`{.action} lorsque celui-ci a été trouver dans l'annuaire exchange.
+Saisissez ensuite le nom de votre compte partagé.puis cliquez sur `ajouter`{.action} lorsque celui-ci a été trouvé dans l'annuaire exchange.
 
 ![emails](images/exchange-shared_accounts06.png){.thumbnail}
 
