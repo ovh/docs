@@ -6,7 +6,7 @@ section: 'Diagnostics and troubleshooting'
 order: 5
 ---
 
-**Last updated 05/02/2021**
+**Last updated 11/06/2021**
 
 ## Objective
 
@@ -66,7 +66,7 @@ Url: https://warp10.insight.eu.metrics.ovh.net
 
 7\. Click on the Grafana icon in the top left and choose from the menu: `Dashboard`{.action}, then `Import`{.action}
 
-8\. Upload the following template: [internet-access-grafana-dashboard-v1.json](http://files.isp.ovh.net/grafana/internet-access-grafana-dashboard-v1.json)
+8\. Upload the following template: [internet-access-grafana-dashboard-v2.json](http://files.isp.ovh.net/grafana/internet-access-grafana-dashboard-v2.json)
 
 9\. Click `Import`{.action} to finish adding the template.
 
@@ -90,7 +90,9 @@ And if your modem is compatible:
 - synchronisation
 - SNR *(Signal to Noise Ratio)*
 - attenuation
-- CRC errors *(Cyclic Redundancy Control)*
+- CRC errors *(Cyclic Redundancy Check)*
+- FEC errors *(Far End Corrected)*
+- HEC errors *(Header Error Control)*
 - synchronisation, connection and modem uptime
 
 ## Go further
