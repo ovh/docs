@@ -5,28 +5,25 @@ excerpt: Diagnostiquez les causes de l'inaccessibilité de votre site
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 16/06/2021**
+**Dernière mise à jour le 17/06/2021**
  
 ## Objectif
 
-Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de votre site. Les suivants indiquent une configuration erronée de vos DNS ou un domaine suspendu (Si votre site n'affiche pas l'une des erreurs décrites ici, consultez la section [Aller plus loin](#aller-plus-loin)) : 
+Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent une configuration erronée de vos DNS ou un domaine suspendu (si votre site n'affiche pas l'une des anomalies décrites ici, consultez la section [Aller plus loin](#aller-plus-loin)) : 
 
-Sur Chrome :
+(mettre les screenshots de la même taille - mettre les descriptions en français)
 
-![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}
+Sur Chrome :  "mettre messages d'erreur en français - 1 colonne navigateur + message d'erreur en fr > sur colonne de droite : msg d'erreur
+> resize par gimp / talbeau doit réduire à la même largeur
+> peut réduire la taille de la colonne de gauche en mettant des - dans la seconde ligne du tableau pour déterminer les largeurs de chaque colonne
 
-Sur Firefox : 
+|Navigateur|Action à entreprendre|
+|--|---|
+|Sur Chrome : « Ce site est inaccessible »|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
+|Sur Firefox : « Hum, nous ne parvenons pas à trouver ce site. »|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
+|Sur Edge : « Désolé, impossible d’accéder à cette page. »|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
+|Sur Safari : « Safari ne parvient pas à trouver le serveur »|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
 
-![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}
-
-Sur Edge : 
-
-![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}
-
-Sur Safari : 
-
-![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}
- 
 **Découvez comment résoudre les erreurs du type "Ce site est inaccessible"**
 
 > [!warning]
@@ -48,9 +45,15 @@ Sur Safari :
 
 Pour vérifier la validité de l'abonnement concernant votre domaine, cliquez en haut à droite sur votre nom et prénom, afin de faire apparaître le menu de droite.
 
+![](images/.png){.thumbnail}
+
 Puis cliquez sur `Produits et services`{.action}.
 
+![control-panel](images/control-panel.png){.thumbnail}|
+
 Vérifiez la `Disponibilité`{.action} de votre nom de domaine.
+
+![my_services_domain_suspended](images/my_services_domain_suspended.png){.thumbnail}
 
 Renouvelez-le si nécessaire, via le bouton `...`{.action} à droite de l'écran, puis `Renouveler`{.action}.
 
@@ -66,6 +69,8 @@ Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serv
 
 Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} : 
 
+>> mettre les screenshots de l'EC
+
 |Scénario|Action à entreprendre|
 |---|---|
 |Les serveurs DNS indiqués sont identiques aux cibles des entrées de type `NS` dans la zone de votre domaine.|Passez à [l'étape 3](#etape3).|
@@ -75,7 +80,7 @@ Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} :
 
 ### Étape 3 : Vérifiez la zone DNS
 
-Dans cet étape, vous allez vérifier l'adresse IP de votre hébergement, puis l'ajouter à votre `Zone DNS`{.action}.
+Dans cette étape, vous allez vérifier l'adresse IP de votre hébergement, puis l'ajouter à votre `Zone DNS`{.action}.
 
 Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une tierce personne, contactez le support de l'hébergeur ou le prestataire concerné.
 
