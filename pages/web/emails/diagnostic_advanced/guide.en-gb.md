@@ -41,7 +41,7 @@ Follow these steps to ensure that your relevant services are up and running:
 
 If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc.) or smartphone (iOS, Android, etc.), and you experience a sending or receiving technical issue, check the configuration settings according to your email solution and the email client or application you are using.
 
-- For an **MXplan** solution, go to the [Shared emails - MX Plan](https://docs.ovh.com/gb/en/emails/) section in our **Web Cloud** guides, and check the configuration of your email software in the `Configure on computer` section, or in the `Configure on smartphone` section for your smartphone.
+- For an **MXplan** solution, go to the [Hosted emails - MX Plan](https://docs.ovh.com/gb/en/emails/) section in our **Web Cloud** guides, and check the configuration of your email software in the `Configure on computer` section, or in the `Configure on smartphone` section for your smartphone.
 
 - For an **Email Pro** offer, in the [Email Pro](https://docs.ovh.com/gb/en/emails-pro/) section in our **Web Cloud** guides, check the configuration of your email software in the `Email client configuration` section.
 
