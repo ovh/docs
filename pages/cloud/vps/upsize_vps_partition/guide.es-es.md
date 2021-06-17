@@ -15,6 +15,8 @@ Al realizar el upgrade de un VPS, es posible que tenga que reparticionar su espa
 > El reparticionamiento de un VPS puede dañar los datos que contiene de forma definitiva. OVH no podrá ser considerado responsable de su deterioro o pérdida. Antes de realizar cualquier acción, le recomendamos que haga una copia de seguridad de sus datos.
 >
 
+**Esta guía explica los pasos necesarios para aumentar el espacio de almacenamiento de su VPS**.
+
 ## Requisitos
 
 - Tener acceso al VPS por SSH (acceso *root*).
@@ -23,8 +25,6 @@ Al realizar el upgrade de un VPS, es posible que tenga que reparticionar su espa
 ## Procedimiento
 
 Tras el upgrade, la RAM y el procesador (CPU) se ajustarán de manera automática. Sin embargo, el espacio de almacenamiento no se actualiza sistemáticamente.
-
-**Esta guía explica los pasos necesarios para aumentar el espacio de almacenamiento de su VPS**.
 
 ### Realizar una copia de seguridad de los datos
 

@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 3
 ---
 
-**Dernière mise à jour le 10/05/2021**
+**Dernière mise à jour le 18/05/2021**
 
 ## Objectif
 
@@ -36,13 +36,15 @@ La tentative d’étendre une partition peut entraîner une perte de données. P
 
 #### Démonter la partition
 
-Une fois connecté à votre VPS en [mode rescue](../mode-rescue-vps/), votre partition sera automatiquement montée. Pour la redimensionner, vous devez la démonter. Si vous connaissez le nom de votre partition, vous pouvez ignorer l'étape suivante. Dans le cas contraire, utilisez cette commande :
+Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées en mode rescue. Utilisez la commande suivante pour identifier l'emplacement de montage de votre partition :
 
 ```sh
 lsblk
 ```
 
-La partition correspondant au mode rescue sera celle montée dans le répertoire « / », qui est en réalité la racine du système. Quant à la partition de votre VPS, elle sera probablement placée dans un répertoire associé à « /mnt », voire pas montée du tout.
+La partition correspondant au mode rescue sera celle montée dans le répertoire `/`, qui est en réalité la racine du système. En revanche, la partition de votre VPS sera probablement placée dans un répertoire associé à « /mnt ».
+
+Cependant, si votre VPS appartient à la gamme actuelle, la partition ne sera pas automatiquement montée. Si la colonne MOUNTPOINT du résultat le confirme, vous pouvez alors ignorer l'étape de démontage.
 
 ```sh
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -52,7 +54,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Pour démonter votre partition, utilisez la commande suivante :
+Pour redimensionner la partition, vous devez la démonter. Pour démonter votre partition, utilisez la commande suivante :
 
 ```sh
 umount /dev/sdb1

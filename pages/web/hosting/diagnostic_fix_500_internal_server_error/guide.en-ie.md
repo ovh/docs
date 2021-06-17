@@ -99,6 +99,6 @@ If your website uses a database, read our guide [Importing a backup into a Web H
 
 ## Go further <a name="gofurther"></a>
 
-[Contact OVHcloud Partners](https://partner.ovhcloud.com/en-ie/directory/)
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/)
 
 Join our community of users on <https://community.ovh.com/en/>

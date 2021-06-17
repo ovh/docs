@@ -24,7 +24,7 @@ section: 'Per iniziare'
 
 In seguito a un upgrade, RAM e processore (CPU) vengono ridimensionati automaticamente. Lo spazio di storage disponibile resta invece invariato.
 
-**Per aumentarlo, segui gli step descritti in questa guida**.
+**Questa guida ti mostra come aumentare il tuo spazio di storage dopo un upgrade del tuo VPS.**.
 
 ### Effettua il backup dei dati
 
