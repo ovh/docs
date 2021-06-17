@@ -1,7 +1,7 @@
 ---
 title: Créer et utiliser un compte partagé
 slug: exchange-utilisation-des-comptes-partages
-excerpt: Ajouter et utiliser les comptes partages avec votre offre Exchange.
+excerpt: Ajouter et utiliser un compte partagé sur votre offre E-mail Exchange.
 section: Fonctionnalités des comptes Exchange
 order: 5
 ---
