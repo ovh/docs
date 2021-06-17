@@ -17,6 +17,8 @@ When you upgrade your VPS, you might need to repartition your storage space. Her
 > Repartitioning could permanently damage your data. OVHcloud cannot be held responsible for any loss or damage to your data. Before doing anything, make sure you back up all of your data. 
 >
 
+**This guide explains the steps you need to follow to increase your storage space.**
+
 ## Requirements
 
 - administrative access to your VPS (Windows)
@@ -26,7 +28,6 @@ When you upgrade your VPS, you might need to repartition your storage space. Her
 
 Unlike RAM and processor (CPU) of your VPS, the storage space cannot automatically be adjusted after an upgrade.
 
-**This guide explains the steps you need to follow to increase your storage space.**
 
 ### Linux
 
@@ -113,6 +114,11 @@ Disk identifier: 0x000132ff
 Device Boot Start End Blocks Id System
 /dev/sdb1 * *2048* 41941745 20969849 83 Linux
 ```
+
+> [!warning]
+>
+> If you have not backed up your data, this is the point of no return.
+>
 
 Then delete the partition with the command `d`{.action}.
 

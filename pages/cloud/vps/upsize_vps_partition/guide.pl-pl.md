@@ -15,6 +15,8 @@ Podczas zmiany oferty serwera VPS może okazać się konieczna zmiana rozmiaru p
 > Zmiana rozmiaru partycji skutkuje nieodwracalną utratą danych. OVH nie ponosi odpowiedzialności za ich zniszczenie lub utratę. Przed przystąpieniem do jakichkolwiek czynności należy wykonać odpowiednią kopię zapasową swoich danych.
 >
 
+**W niniejszej instrukcji przedstawione są poszczególne kroki, które należy wykonać, aby zwiększyć przestrzeń dyskową.**
+
 ## Wymagania początkowe
 
 - Dostęp poprzez SSH do serwera VPS (dostęp root)
@@ -23,8 +25,6 @@ Podczas zmiany oferty serwera VPS może okazać się konieczna zmiana rozmiaru p
 ## W praktyce
 
 Po zmianie oferty serwera na wyższą ilość pamięci RAM i procesor (CPU) dostosowywane są automatycznie. Nie dotyczy to jednak przestrzeni dyskowej.
-
-**W niniejszej instrukcji przedstawione są poszczególne kroki, które należy wykonać, aby zwiększyć przestrzeń dyskową.**
 
 ### Tworzenie kopii zapasowej danych
 
