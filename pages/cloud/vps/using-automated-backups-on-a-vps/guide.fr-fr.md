@@ -6,7 +6,7 @@ section: Sauvegarde
 order: 2
 ---
 
-**Dernière mise à jour le 22/04/2020**
+**Dernière mise à jour le 16/06/2021**
 
 ## Objectif
 
@@ -32,12 +32,12 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Après avoir sélectionné votre VPS, cliquez sur l'onglet `Backup automatisé`{.action} dans la barre de menu horizontale.
 
-Veuillez prendre alors connaissance des informations de tarification de cette option, puis cliquez sur `Commander`{.action}. 
+Veuillez prendre alors connaissance des informations de tarification de cette option, puis cliquez sur `Commander`{.action}.
 Vous serez guidé dans le processus de commande et recevrez un e-mail de confirmation. Les sauvegardes seront désormais créées quotidiennement jusqu'à ce que l'option soit annulée par vos soins.
 
 ### Étape 2 : restaurer une sauvegarde à partir de l'espace client OVHcloud
 
-Sélectionnez votre VPS puis cliquez sur l'onglet `Backup automatisé`{.action} dans le menu horizontal. Un maximum de 15 sauvegardes quotidiennes seront disponibles. Cliquez sur `...`{.action} à droite de la sauvegarde à restaurer et sélectionnez `Restauration`{.action}.
+Sélectionnez votre VPS puis cliquez sur l'onglet `Backup automatisé`{.action} dans le menu horizontal. Un maximum de 7 sauvegardes quotidiennes seront disponibles (15 sauvegardes quotidiennes pour les VPS d'anciennes gammes). Cliquez sur `...`{.action} à droite de la sauvegarde à restaurer et sélectionnez `Restauration`{.action}.
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
@@ -55,9 +55,9 @@ Cette option permet d'accéder aux données de sauvegarde au cas où vous ne sou
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
+>
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
-> 
+>
 
 #### Étape 1 : depuis l'espace client
 
@@ -72,9 +72,11 @@ Une fois le processus terminé, vous recevrez un e-mail. Vous pourrez alors vous
 Connectez-vous à votre VPS en SSH.
 
 Vous pouvez utiliser la commande suivante pour vérifier le nom du nouveau périphérique connecté :
+
 ```
 $ lsblk
 ```
+
 Voici un exemple de résultat de cette commande :
 
 ```
@@ -96,7 +98,88 @@ Créez à présent un répertoire pour cette partition et définissez-le comme p
 $ mkdir -p /mnt/restore
 $ mount /dev/sdb1 /mnt/restore
 ```
+
 Vous pouvez maintenant basculer vers ce dossier et accéder à vos données de sauvegarde.
+
+### Bonnes pratiques pour l'utilisation de la sauvegarde automatique
+
+La fonctionnalité de sauvegarde automatique est basée sur les snapshots VPS. Nous vous recommandons de suivre les étapes ci-dessous pour éviter toute anomalie avant d'utiliser cette option.
+
+#### Configuration de l'agent QEMU sur un VPS
+
+Les snapshots sont des images instantanées de votre système en cours d'exécution (« live snapshots »). Pour garantir la disponibilité de votre système lors de la création du snapshot, l'agent QEMU est utilisé pour préparer le système de fichiers au processus.
+
+Le *qemu-guest-agent* requis n'est pas installé par défaut sur la plupart des distributions. En outre, les restrictions de licence peuvent empêcher OVHcloud de l'inclure dans les images d'OS disponibles. Par conséquent, il est recommandé de vérifier et d'installer l'agent au cas où il ne serait pas activé sur votre VPS. Connectez-vous à votre VPS en SSH et suivez les instructions ci-dessous, selon votre système d'exploitation.
+
+##### **Distributions Debian (Debian, Ubuntu)**
+
+Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+Si le résultat est différent (« No such file or directory »), installez le dernier package :
+
+```
+$ sudo apt-get update
+$ sudo apt-get install qemu-guest-agent
+```
+
+Redémarrez le VPS:
+
+```
+$ sudo reboot
+```
+
+Démarrez le service pour vous assurer qu'il est en cours d'exécution :
+
+```
+$ sudo service qemu-guest-agent start
+```
+
+##### **Distributions Redhat (CentOS, Fedora)**
+
+Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+Si le résultat est différent (« No such file or directory »), installez et activez l'agent :
+
+```
+$ sudo yum install qemu-guest-agent
+$ sudo chkconfig qemu-guest-agent on
+```
+
+Redémarrez le VPS:
+
+```
+$ sudo reboot
+```
+
+Démarrez l'agent et vérifiez qu'il est en cours d'exécution :
+
+```
+$ sudo service qemu-guest-agent start
+$ sudo service qemu-guest-agent status
+```
+
+##### **Windows**
+
+Vous pouvez installer l'agent via un fichier MSI, disponible sur le site du projet Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
+
+Vérifiez que le service est en cours d'exécution à l'aide de la commande powershell suivante :
+
+```
+PS C:\Users\Administrator> Get-Service QEMU-GA
+Status   Name               DisplayName
+------   ----               -----------
+Running  QEMU-GA            QEMU Guest Agent
+```
 
 ## Aller plus loin
 

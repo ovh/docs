@@ -6,8 +6,11 @@ section: 'Opzioni di backup'
 order: 2
 ---
 
-**Ultimo aggiornamento: 22/07/2020**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
+**Ultimo aggiornamento: 16/06/2021**
 
 ## Obiettivo
 
@@ -36,16 +39,15 @@ Dopo aver selezionato il tuo VPS, clicca sulla scheda `Backup automatizzato`{.ac
 
 Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura d’ordine e riceverai una email di conferma. A questo punto i backup verranno effettuati giornalmente finché l’opzione non verrà nuovamente disattivata.
 
-
 ### Step 2: Ripristinare un backup dallo Spazio Cliente OVH
 
-Dopo aver selezionato il tuo VPS, clicca sulla scheda `Backup automatizzato`{.action} nel menu orizzontale. Hai a disposizione un massimo di 15 backup giornalieri. Clicca su `...`{.action} accanto al backup che desideri ripristinare e seleziona `Ripristino`{.action}.
+Dopo aver selezionato il tuo VPS, clicca sulla scheda `Backup automatizzato`{.action} nel menu orizzontale. Hai a disposizione un massimo di 7 backup giornalieri (15 backup giornalieri per i VPS di gamme precedenti). Clicca su `...`{.action} accanto al backup che desideri ripristinare e seleziona `Ripristino`{.action}.
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
 Se hai modificato la tua password root di recente, spunta l’opzione "Modifica la password root quando ripristini" nella finestra di popup, per mantenere la tua attuale password root, e clicca su `Conferma`{.action}. Riceverai una email una volta terminata l’azione. Per il rispristino potrebbe essere necessario un po’ di tempo, a seconda dello spazio utilizzato su disco.
 
-> \[!alert]
+> [!alert]
 >
 Ricorda che i backup automatizzati non includono i tuoi dischi aggiuntivi.
 >
@@ -60,7 +62,7 @@ Non è necessario sovrascrivere completamente il tuo servizio esistente con un r
 >Questa guida ti mostra come effettuare le operazioni più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un esperto del settore e/o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni, consulta la sezione “Per saperne di più” di questa guida.
 >
 
-#### Step 1: Spazio Cliente 
+#### Step 1: Spazio Cliente
 
 Clicca su `...`{.action} accanto al backup a cui desideri accedere e seleziona `Montaggio`{.action}.
 
@@ -91,6 +93,7 @@ sdb       8:16   0   25G  0 disk
 ├─sdb14   8:30   0    4M  0 part 
 └─sdb15   8:31   0  106M  0 part /boot/efi
 ```
+
 In questi esempio, la partizione che contiene il tuo filesystem di backup è nominata “sdb1”.
 Quindi, crea una directory per questa partizione e stabilisci che è il punto di montaggio:
 
@@ -101,10 +104,88 @@ $ mount /dev/sdb1 /mnt/restore
 
 Ora puoi passare a questa cartella e accedere ai tuoi dati di backup.
 
+### Best practice per l'utilizzo del backup automatico
+
+La funzionalità di backup automatico è basata sugli Snapshot VPS. Prima di utilizzare questa opzione, ti consigliamo di seguire gli step qui sotto per evitare anomalie.
+
+#### Configurazione dell'agente QEMU su un VPS
+
+Gli Snapshot sono istantanee del proprio sistema in esecuzione (“live snapshot”). Per garantire la disponibilità del sistema durante la creazione dello Snapshot è necessario utilizzare il software QEMU, che  prepara il filesystem al processo.
+
+Il *qemu-guest-agente* richiesto non è installato di default sulla maggior parte delle distribuzioni. e le eventuali restrizioni delle licenze possono impedire a OVHcloud di includerlo nelle immagini degli OS disponibili. Consigliamo pertanto di verificare la presenza del software sul VPS e, in caso contrario, di installarlo. Per eseguire queste operazioni, accedi in SSH al VPS e segui le istruzioni indicate, in base al sistema operativo utilizzato.
+
+##### **Distribuzioni Debian (Debian, Ubuntu)**
+
+Utilizza il comando seguente per verificare che il sistema sia correttamente configurato per effettuare Snapshot:
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+Se il risultato è differente (“No such file or directory”), installa l’ultima versione del pacchetto:
+
+```
+$ sudo apt-get update
+$ sudo apt-get install qemu-guest-agent
+```
+
+Riavvia il VPS:
+
+```
+$ sudo reboot
+```
+
+Avvia il servizio per assicurarti che sia in esecuzione:
+
+```
+$ sudo service qemu-guest-agent start
+```
+
+##### **Distribuzioni Redhat (CentOS, Fedora)**
+
+Utilizza il comando seguente per verificare che il sistema sia correttamente configurato per effettuare Snapshot:
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+Se il risultato è differente (“No such file or directory”), installa e attiva il software:
+
+```
+$ sudo yum install qemu-guest-agent
+$ sudo chkconfig qemu-guest-agent on
+```
+
+Riavvia il VPS:
+
+```
+$ sudo reboot
+```
+
+Avvia il servizio per assicurarti che sia in esecuzione:
+
+```
+$ sudo service qemu-guest-agent start
+$ sudo service qemu-guest-agent status
+```
+
+##### **Windows**
+
+Puoi installare l'agente tramite un file MSI, disponibile sul sito del progetto Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
+
+Per verificare che il servizio sia in esecuzione, esegui questo comando powershell:
+
+```
+PS C:\Users\Administrator> Get-Service QEMU-GA
+Status   Name               DisplayName
+------   ----               -----------
+Running  QEMU-GA            QEMU Guest Agent
+```
 
 ## Per saperne di più
 
 [Usare snapshot su un VPS](../usare-snapshot-su-un-vps)
-
 
 Partecipa alla nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
