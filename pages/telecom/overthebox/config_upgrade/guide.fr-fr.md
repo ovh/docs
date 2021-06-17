@@ -33,9 +33,9 @@ Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sél
 
 Cliquez ensuite sur le bouton `Mettre à jour`{.action}, puis cliquez une seconde fois sur l'encart explicatif, la mise à jour commencera alors.
 
-![overthebox](images/upgrade-method1.png){.thumbnail}
+![overthebox](images/upgrade-step1.png){.thumbnail}
 
-Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle.
+Attendez quelques minutes afin que l'**OverTheBox** soit de nouveau opérationnelle.
 
 > [!success]
 >
