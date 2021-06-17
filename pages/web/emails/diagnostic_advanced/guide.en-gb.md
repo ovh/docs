@@ -86,7 +86,7 @@ Check that your domain name points correctly to the OVHcloud email servers. To d
 
 This is an SMTP error return. This indicates that the exchange between the outgoing server and the incoming email server could not be completed correctly. The code is used to determine the type of error the server encountered. It is usually accompanied by a message detailing this error.
 
-An SMTP response consists of a three-digit number. The three digits of the answer each have a particular meaning:
+An SMTP response consists of a 3-digit number. The three digits of the answer each have a particular meaning:
 
 - The first number indicates whether the answer is correct, wrong or incomplete. An SMTP client will be able to determine its next action by examining this first digit.
 - The second and third digits provide additional information.
