@@ -95,8 +95,8 @@ Et si votre modem est compatible :
 - SNR *(Signal to Noise Ratio)*
 - atténuation
 - erreurs CRC *(Contrôle de Redondance Cyclique)*
-- erreurs FEC *(Correction d'erreur direct)*
-- erreurs HEC *(Correction d'erreur header)*
+- erreurs FEC *(Correction d'erreurs directe)*
+- erreurs HEC *(Correction d'erreurs header)*
 - uptime de la synchronisation, de la connection et du modem
 
 ## Aller plus loin
