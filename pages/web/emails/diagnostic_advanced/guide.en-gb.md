@@ -1,13 +1,13 @@
 ---
-title: 'Unable to send or receive emails'
+title: Unable to send or receive emails
 slug: email-advanced-usage
 legacy_guide_number: 2117
-excerpt: `Find out what to do if your emails are not sent or received correctly by OVHcloud`
+excerpt: Find out what to do if your emails are not sent or received correctly by OVHcloud
 section: 'Troubleshooting'
 order: 9
 ---
 
-**Last updated 15th June 2021**
+**Last updated 16th June 2021**
 
 ## Objective
 
@@ -21,7 +21,7 @@ Is your email account unable to send or receive emails when using webmail or you
 
 ## Requirements
 
-- an OVHcloud email solution (**MX Plan/Web Hosting emails**, **Email Pro** or **Exchange**
+- an OVHcloud email solution (**MX Plan/Web Hosting emails**, **Email Pro** or **Exchange**)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
@@ -121,7 +121,7 @@ The majority of SMTP negative response codes used by servers are listed below:
 |551|User not local or invalid address – Relay denied|This is typically used as a spam prevention strategy. It says that the mail relay is not authorised for any reason to relay your message to another server than yours. Please contact your service provider.|
 |552|Requested mail actions aborted – Exceeded storage allocation|The user you tried to contact no longer has space to receive messages. Unfortunately, the only solution is to contact the recipient via another method.|
 |553|Requested action not taken – Mailbox name invalid|This is usually caused by an incorrect destination email address. Please check that the email address in question is correct.|
-|554|Transaction failed, `No SMTP service here`)|This is usually a blacklist problem. Check if your email server IP address is blacklisted ([SpamHaus](https://www.spamhaus.org/lookup/){.external}).|
+|554|Transaction failed, "No SMTP service here")|This is usually a blacklist problem. Check if your email server IP address is blacklisted ([SpamHaus](https://www.spamhaus.org/lookup/){.external}).|
 |555|MAIL FROM / RCPT TO, unrecognised or unimplemented arguments|The outgoing SMTP server cannot recognise the email address used in either your `From` or `To` settings. Please check that the email addresses entered are correct, and also check that you have not exceeded the limit set by OVHcloud: 200 mails/hour/account and 300 mails/hour/ip.|
 
 ## Go further
