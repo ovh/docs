@@ -18,7 +18,7 @@ Sur Chrome :  "mettre messages d'erreur en français - 1 colonne navigateur + me
 > peut réduire la taille de la colonne de gauche en mettant des - dans la seconde ligne du tableau pour déterminer les largeurs de chaque colonne
 
 |Navigateur|Action à entreprendre|
-|--|---|
+|-|---|
 |Sur Chrome : « Ce site est inaccessible »|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
 |Sur Firefox : « Hum, nous ne parvenons pas à trouver ce site. »|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
 |Sur Edge : « Désolé, impossible d’accéder à cette page. »|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
