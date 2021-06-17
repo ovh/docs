@@ -15,15 +15,16 @@ order: 2
 
 ## Ziel
 
-Fehler auf den Exchange E-Mail-Accounts können zahlreiche Ursachen haben. Eine automatische Diagnose der Funktionen des Accounts reduziert diese Anzahl an Ursachen. Die Testergebnisse sind auch nützlich, wenn Sie Hilfe für Ihren Exchange Dienst anfordern.
+Da es eine Vielzahl von Gründen für mögliche Fehler bei Exchange-Accounts gibt, kann eine automatische Überprüfung der Kontofunktionen helfen, die Ursachen einzugrenzen. Die Prüfergebnisse sind daher hilfreich für eine Supportanfrage bei Problemen mit Ihrem Exchange-Dienst.
 
 **Diese Anleitung erklärt, wie Sie eine Exchange Diagnose starten und deren Ergebnisse interpretieren.**
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [OVHcloud Exchange](https://www.ovh.de/emails/hosted-exchange/) Lösung
-- Sie verfügen über die Login-Daten für den zu überprüfenden Exchange Account
-- Sie sind im OVHcloud [Kundencenter eingeloggt](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Sie haben einen [OVHcloud Exchange](https://www.ovh.de/emails/hosted-exchange/) Dienst eingerichtet.
+- Sie verfügen über die Login-Daten für den zu überprüfenden Exchange Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+
 
 ## In der praktischen Anwendung
 
@@ -45,55 +46,58 @@ Auf der Ergebnisseite finden Sie zwei Aktionen, um fortzufahren:
 
 - `Neue Diagnose`{.action}: eine andere Diagnose starten.
 
-- `Support-Anfrage erstellen`{.action}: erlaubt es Ihnen, ein Ticket bei unserem technischen Support zu erstellen. Das Ticket enthält die Ergebnisse der Diagnose.
+- `Support-Anfrage erstellen`{.action}: ermöglicht es Ihnen, eine Anfrage an unseren technischen Support zu erstellen, die die Diagnoseergebnisse enthält. 
 
-### Erläuterungen zu Fehlern
+### Fehler-Erläuterungen
 
-Lesen Sie die folgende Zusammenfassung der möglichen Fehler, um die schnellste Lösung zu finden.
+Schauen Sie in der folgenden Übersicht möglicher Fehler nach, um die schnellste Lösung zu finden.
 
 ### Der Account wurde wegen Spam-Versand blockiert <a name="blocked"></a>
 
-Ein gesperrter Account empfängt immer E-Mails, der Versand wurde jedoch durch das automatische Spam-Schutzsystem deaktiviert.
+Ein blockiertes Konto empfängt weiterhin E-Mails, aber der Versand wurde vom automatischen Spamschutzsystem deaktiviert.
 
-Überprüfen Sie dies im Tab E-`Mail-Accounts`{.action} Ihres Exchange Dienstes. Der Account wird in der Spalte "Status"`der` Tabelle mit einem SPAM-Vermerk versehen.
+Sie können dies im Tab `E-Mail-Accounts`{.action} Ihres Exchange-Dienstes überprüfen. Für den Account wird dann der Status `SPAM` in der Tabelle angezeigt.
 
-Bitte lesen Sie unsere [Anleitung Was tun bei einem gesperrten Spam-Account?](../blocked-wegen-spam/) damit unsere Sicherheitsteams den Account wieder aktivieren können.
+Bitte folgen Sie den Anweisungen in [dieser Anleitung](../blocked-wegen-spam/), damit unsere Sicherheitsteams das Konto wieder freischalten können.
 
 ### Das Abonnement des Accounts ist abgelaufen <a name="expired"></a>
 
-Da Ihr Abonnement nicht mehr aktiv ist, wurden Versand und Empfang deaktiviert. Sie können [den Abrechnungsstatus der Dienstleistung](../exchange-abrechnung-verwalten/) im OVHcloud Kundencenter überprüfen und [ ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)verlängern, um den Account wieder zu aktivieren.
+Da Ihr Abonnement nicht mehr aktiv ist, wurden Versand und Empfang deaktiviert. Sie können den [Abrechnungsstatus der Dienstleistung](../exchange-abrechnung-verwalten/) im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen und den Dienst verlängern, um den Account wieder zu aktivieren.
 
-### Der Account wurde aus Sicherheitsgründen blockiert
+### Account aufgrund der Sicherheitsrichtlinien gesperrt
 
-Wenn im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eine Sicherheitseinstellungen aktiviert sind, kann der Account vorübergehend gesperrt werden.
+Wenn im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eine Sicherheitsrichtlinie aktiv ist, kann der Account vorübergehend gesperrt sein.
 
-Sie können zum Beispiel festlegen, dass der Account nach mehreren fehlgeschlagenen Verbindungsversuchen für einen von Ihnen bestimmten Zeitraum gesperrt wird.
+Sie können zum Beispiel festlegen, dass das Konto nach mehreren fehlgeschlagenen Anmeldeversuchen für eine von Ihnen festgelegte Zeitspanne gesperrt werden soll.
 
-In diesem Fall können Sie warten, bis der Account wieder verfügbar ist, oder unseren Exchange Teams kontaktieren, indem Sie eine Support-Anfrage erstellen.
+In diesem Fall können Sie entweder warten, bis das Konto wieder verfügbar ist, oder Sie können unsere Exchange-Teams kontaktieren, indem Sie eine Support-Anfrage erstellen.
 
-Weitere Informationen zu dieser Funktion finden Sie [in unserer Anleitung zur Sicherheitseinstellungen](../passwort-sicherheitseinstellungen-verwalten/).
+Weitere Informationen zu dieser Funktion finden Sie in unserer [Anleitung zu Sicherheitsrichtlinien](../passwort-sicherheitseinstellungen-verwalten/).
 
-### Die Authentifizierung ist fehlgeschlagen <a name="password"></a>
+### Webmail-Authentifizierung ist fehlgeschlagen <a name="password"></a>
 
-Dies kann durch die Eingabe eines falschen Account-Passworts verursacht werden. Überprüfen Sie zuerst, ob das Passwort korrekt ist, indem Sie sich mit dem Webmail [verbinden](../exchange_2016_verwendung_der_outlook_web_app/), und starten Sie die Diagnose neu.
+Vergewissern Sie sich zunächst über eine Webmail-Anmeldung, dass das Passwort korrekt ist, und starten Sie dann die Diagnose neu.
 
-Wenn nötig können Sie das Passwort des betreffenden Accounts im Tab `E-Mail-Accounts`{.action} in Ihrem [OVHcloud Kundencenter ändern](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Wenn das Problem weiterhin besteht, erstellen Sie eine Support-Anfrage.
+Dies kann durch die Eingabe eines falschen Account-Passworts verursacht werden. Überprüfen Sie zunächst, ob das Passwort korrekt ist, indem Sie sich [über Webmail einloggen](../exchange_2016_verwendung_der_outlook_web_app/), und starten Sie dann die Diagnose neu.
+
+Wenn nötig können Sie das Passwort des betroffenen Accounts im Tab `E-Mail-Accounts`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ändern. Wenn das Problem weiterhin besteht, erstellen Sie eine Support-Anfrage.
 
 ### Der MX-Eintrag der Domain ist ungültig
 
-Dieser Fehler zeigt an, dass die E-Mails nicht empfangen werden können, und steht in Zusammenhang mit dem Fehler "**ACHTUNG: Die Test-E-Mail wurde nicht empfangen.** "
+Dieser Fehler zeigt an, dass E-Mails nicht empfangen werden können, und steht in Zusammenhang mit dem Fehler "**ACHTUNG: Die Test-E-Mail wurde nicht empfangen.** "
 
 Je nach Verwendung Ihres Exchange Dienstes sind die folgenden MX Server gültig:
 
-- Exchange allein: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net und mx4.mail.ovh.net
-- Exchange + bei OVHcloud gehostete POP/IMAP-E-Mails: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net und mx4.mail.ovh.net
-- Exchange + nicht bei OVHcloud gehostete POP/IMAP-E-Mails: ex<b>?</b>.mail.ovh.net
-
+- Nur Exchange: mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange und bei OVHcloud gehostete POP/IMAP-E-Mails: mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange und nicht bei OVHcloud gehostete POP/IMAP-E-Mails: ex<b>?</b>.mail.ovh.net
 <a name="hostname"></a>
 
+
 > [!warning]
-> In unseren Anleitungen verwenden wir als Servernamen: ex<b>?</b>.mail.ovh.net. Ersetzen Sie das "? " durch die dem Server Ihres Exchange Dienstes entsprechende Nummer.<br>
-> Diese Informationen finden Sie im OVHcloud Kundencenter im Bereich `Web`{.action}.  Öffnen Sie `Microsoft`{.action} im Menü links, dann `Exchange`{.action} und wählen Sie Ihre Dienstleistung aus. Der Name des Servers wird im Bereich **Verbindung** im Tab `Allgemeine Informationen`{.action} angezeigt.
+> In unseren Anleitungen verwenden wir als Servernamen: ex<b>?</b>.mail.ovh.net. Ersetzen Sie das "?" durch die dem Server Ihres Exchange Dienstes entsprechende Nummer.
+>
+> Diese Informationen finden Sie im OVHcloud Kundencenter im Bereich `Web Cloud`{.action}: Öffnen Sie `Microsoft`{.action}, dann `Exchange`{.action} im Menü links, und wählen Sie Ihre Dienstleistung aus. Der Servername wird im Bereich **Verbindung** im Tab `Allgemeine Informationen`{.action} angezeigt.
 >
 
 ### Der SRV-Eintrag der Domain ist ungültig
@@ -102,22 +106,22 @@ Der SRV-Eintrag dient der automatischen Konfiguration Ihres Exchange Accounts mi
 
 Sie können diese Einstellungen in der [DNS Zone Ihrer Domain überprüfen](../../domains/webhosting_bearbeiten_der_dns_zone/).
 
-Hier die Werte für einen Exchange Dienst:
+Die folgende Tabelle enthält die Werte für einen Exchange Dienst:
 
 Feld | Wert
 ------------ | -------------
 Priorität | 0
 Gewichtung | 0
 Port | 443
-Ziel | [ex<b>?</b>.mail.ovh.net](#hostname) (ersetzen Sie die "?" durch die entsprechende Nummer Ihres Exchange Servers)
+Ziel | [ex<b>?</b>.mail.ovh.net](#hostname) (ersetzen Sie "?" durch die entsprechende Nummer Ihres Exchange Servers)
 
 ### Die Test-E-Mail konnte nicht über den Account versendet werden
 
-Dieser Fehler zeigt an, dass der Versand von E-Mails generell nicht möglich ist und mehrere Ursachen haben kann:
+Dieser Fehler zeigt an, dass der Versand von E-Mails generell nicht möglich, was mehrere Ursachen haben kann:
 
 - [Ihr Account wurde geschlossen](#expired)
 - [Das eingegebene Passwort ist nicht korrekt](#password)
-- [Ihr Account wurde wegen Spam-Mails blockiert](#blocked)
+- [Ihr Account wurde wegen Spam-Versand blockiert](#blocked)
 - [Auf der Infrastruktur ist eine Störung aufgetreten](http://travaux.ovh.net/?project=31&status=all&perpage=50)
 
 ## Weiterführende Informationen

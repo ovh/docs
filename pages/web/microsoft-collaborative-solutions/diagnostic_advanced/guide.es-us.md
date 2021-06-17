@@ -84,8 +84,8 @@ Este error indica que los mensajes de correo no pueden ser recibidos y que tambi
 
 En función del uso de su servicio Exchange, son válidos los siguientes servidores MX:
 
-- Solo Exchange: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net y mx4.mail.ovh.net
-- Exchange + Correo POP/IMAP alojado en OVHcloud: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net y mx4.mail.ovh.net
+- Solo Exchange: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange + Correo POP/IMAP alojado en OVHcloud: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
 - Exchange + Correo POP/IMAP no alojado en OVHcloud: ex<b>?</b>.mail.ovh.net
 
 <a name="hostname"></a>

@@ -6,8 +6,7 @@ section: 'Backup options'
 order: 2
 ---
 
-**Last updated 2020/09/23**
-
+**Last updated 16th June 2021**
 
 ## Objective
 
@@ -36,10 +35,9 @@ After selecting your VPS, click on the `Automated backup`{.action} tab in the ho
 
 In the next step, please take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email. Backups will now be created daily until the option is cancelled again.
 
-
 ### Step 2: Restoring a backup from the OVHcloud Control Panel
 
-After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu. There will be a maximum of 15 daily backups available. Click on `...`{.action} next to the backup you would like to restore and select `Restoration`{.action}.
+After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu. There will be a maximum of 7 daily backups available (15 with older VPS ranges). Click on `...`{.action} next to the backup you would like to restore and select `Restoration`{.action}.
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
@@ -60,7 +58,7 @@ It is not necessary to completely overwrite your existing service with a restora
 >This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
 >
 
-#### Step 1: Control Panel 
+#### Step 1: Control Panel
 
 Click on `...`{.action} next to the backup you need to access and select `Mounting`{.action}.
 
@@ -91,6 +89,7 @@ sdb       8:16   0   25G  0 disk
 ├─sdb14   8:30   0    4M  0 part 
 └─sdb15   8:31   0  106M  0 part /boot/efi
 ```
+
 In this example, the partition containing your backup filesystem is named "sdb1".
 Next, create a directory for this partition and define it as the mountpoint:
 
@@ -119,6 +118,7 @@ Use the following command to check whether the system is properly set up for sna
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
+
 If the output is different ("No such file or directory"), install the latest package:
 
 ```
@@ -129,13 +129,13 @@ $ sudo apt-get install qemu-guest-agent
 Reboot the VPS:
 
 ```
-$ sudo restart
+$ sudo reboot
 ```
 
-Check the service to ensure it is running:
+Start the service to ensure it is running:
 
 ```
-$ sudo service qemu-guest-agent status
+$ sudo service qemu-guest-agent start
 ```
 
 ##### **Redhat-based distributions (Centos, Fedora)**
@@ -160,9 +160,10 @@ Reboot the VPS:
 $ sudo reboot
 ```
 
-Check the agent and verify that it is running:
+Start the agent and verify that it is running:
 
 ```
+$ sudo service qemu-guest-agent start
 $ sudo service qemu-guest-agent status
 ```
 
@@ -182,6 +183,5 @@ Running  QEMU-GA            QEMU Guest Agent
 ## Go further
 
 [Using snapshots on a VPS](../using-snapshots-on-a-vps)
-
 
 Join our community of users on <https://community.ovh.com/en/>.

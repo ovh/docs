@@ -6,7 +6,11 @@ section: 'Opcje kopii zapasowych'
 order: 2
 ---
 
-**Ostatnia aktualizacja: 22-04-2020**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja: 16-06-2021**
 
 ## Wprowadzenie
 
@@ -35,10 +39,9 @@ Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Automatyczne kopie za
 
 W następnym kroku przeczytaj informację o cenie i kliknij pozycję `Zamów`{.action}. Po przejściu kolejnych kroków procesu zamówienia otrzymasz wiadomość e-mail z potwierdzeniem. Kopie zapasowe będą tworzone codziennie, aż do czasu anulowania tej opcji.
 
-
 ### Krok 2: przywracanie kopii zapasowej z Panelu klienta OVHcloud
 
-Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Automatyczne kopie zapasowe`{.action} w menu poziomym. Dostępnych będzie maksymalnie 15 codziennych kopii zapasowych. Kliknij ikonę `...`{.action} obok kopii zapasowej, którą chcesz przywrócić, i wybierz pozycję `Przywrócenie`{.action}.
+Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Automatyczne kopie zapasowe`{.action} w menu poziomym. Dostępnych będzie maksymalnie 7 codziennych kopii zapasowych (15 codzienne kopie zapasowe dla serwerów VPS z poprzednich gam). Kliknij ikonę `...`{.action} obok kopii zapasowej, którą chcesz przywrócić, i wybierz pozycję `Przywrócenie`{.action}.
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
@@ -59,7 +62,7 @@ Całkowite zastąpienie istniejącej usługi w wyniku przywrócenia nie jest kon
 >Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą danych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja „Sprawdź również” tego przewodnika.
 >
 
-#### Krok 1: Panel klienta 
+#### Krok 1: Panel klienta
 
 Kliknij ikonę `...`{.action} obok kopii zapasowej, do której chcesz uzyskać dostęp, i wybierz pozycję `Montowanie`{.action}.
 
@@ -90,6 +93,7 @@ sdb       8:16   0   25G  0 disk
 ├─sdb14   8:30   0    4M  0 part 
 └─sdb15   8:31   0  106M  0 part /boot/efi
 ```
+
 W tym przykładzie partycja zawierająca system plików kopii zapasowej ma nazwę „sdb1”.
 Następnie utwórz katalog dla tej partycji i zdefiniuj go jako punkt montowania:
 
@@ -99,6 +103,86 @@ $ mount /dev/sdb1 /mnt/restore
 ```
 
 Teraz możesz się przełączyć do tego folderu i uzyskać dostęp do danych kopii zapasowej.
+
+### Dobre praktyki w zakresie korzystania z automatycznych kopii zapasowych
+
+Funkcja automatycznych kopii zapasowych opiera się na snapshotach VPS. Zalecamy, aby przed rozpoczęciem korzystania z tej opcji postępować zgodnie z poniższymi instrukcjami.
+
+#### Konfiguracja agenta QEMU na serwerze VPS
+
+Migawki to kopie systemu tworzone w ściśle określonym momencie („live snapshots”). Aby zapewnić dostępność systemu podczas tworzenia migawki, wykorzystywany jest agent QEMU, który pozwala przygotować system plików do tego procesu.
+
+Wymagany *qemu-guest-agent* nie jest domyślnie zainstalowany na większości dystrybucji. Ponadto, wymogi licencyjne mogą uniemożliwić OVHcloud włączenie go do dostępnych obrazów systemu operacyjnego. Dlatego zalecamy zainstalowanie agenta, jeśli nie jest on aktywowany na Twoim prywatnym serwerze wirtualnym. W tym celu połącz się z VPS przez SSH i postępuj zgodnie z poleceniami dotyczącymi Twojego systemu operacyjnego.
+
+##### **Dystrybucje Debian (Debian, Ubuntu)**
+
+Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+Jeśli wynik jest inny („No such file or directory”), zainstaluj najnowszy pakiet:
+
+```
+$ sudo apt-get update
+$ sudo apt-get install qemu-guest-agent
+```
+
+Zrestartuj serwer VPS:
+
+```
+$ sudo reboot
+```
+
+Uruchom usługę, aby upewnić się, że działa:
+
+```
+$ sudo service qemu-guest-agent start
+```
+
+##### **Dystrybucje Redhat (CentOS, Fedora)**
+
+Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+Jeśli wynik jest inny („No such file or directory”), zainstaluj i aktywuj agenta:
+
+```
+$ sudo yum install qemu-guest-agent
+$ sudo chkconfig qemu-guest-agent on
+```
+
+Zrestartuj serwer VPS:
+
+```
+$ sudo reboot
+```
+
+Uruchom agenta i sprawdź, czy działa:
+
+```
+$ sudo service qemu-guest-agent start
+$ sudo service qemu-guest-agent status
+```
+
+##### **Windows**
+
+Możesz zainstalować agenta za pomocą pliku MSI dostępnego na stronie projektu Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
+
+Sprawdź, czy usługa działa za pomocą poniższej komendy powershell:
+
+```
+PS C:\Users\Administrator> Get-Service QEMU-GA
+Status   Name               DisplayName
+------   ----               -----------
+Running  QEMU-GA            QEMU Guest Agent
+```
 
 ## Sprawdź również
 
