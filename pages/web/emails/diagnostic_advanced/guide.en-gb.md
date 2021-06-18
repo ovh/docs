@@ -87,7 +87,7 @@ This is an SMTP error return. This indicates that the exchange between the outgo
 
 An SMTP response consists of a 3-digit number. The three digits of the answer each have a particular meaning:
 
-- The first number indicates whether the answer is correct, wrong or incomplete. An SMTP client will be able to determine its next action by examining this first digit.
+- The first number indicates whether the answer is positive, negative or incomplete. An SMTP client will be able to determine its next action by examining this first digit.
 - The second and third digits provide additional information.
 
 There are four possible values for the first digit of the response code:
