@@ -1,7 +1,7 @@
 ---
 title: Créer et utiliser un compte partagé
 slug: exchange-utilisation-des-comptes-partages
-excerpt: Ajouter et utiliser un compte partagé sur votre offre E-mail Exchange.
+excerpt: Ajouter et utiliser un compte partagé sur votre offre E-mail Exchange
 section: Fonctionnalités des comptes Exchange
 order: 5
 ---
@@ -11,7 +11,8 @@ order: 5
 
 ## Objectif
 
-Les comptes partagés sont accessibles depuis OWA (webmail Exchange) ou via le logiciel de messagerie Outlook grâce à une délégation. Ce type de compte vous permet par exemple de créer une boîte générale à laquelle chaque compte Exchange peut avoir accès. Un compte partagé ne possède pas de mot de passe, il est donc nécessaire de déléguer son accès à un ou plusieurs comptes de la plateforme Exchange.
+Un **compte partagé** est une boîte e-mail partagée entre plusieurs comptes Exchange et uniquement accessible via ces derniers. Un compte partagé ne possède pas de mot de passe, il est donc nécessaire de déléguer son accès à un ou plusieurs comptes de la plateforme Exchange.
+<br>Les comptes partagés sont accessibles, grâce à une délégation, depuis OWA (webmail Exchange) ou via le logiciel de messagerie Outlook.
 
 **Découvrez comment créer et gérer un compte partagé sur votre plateforme Exchange.**
 
@@ -24,7 +25,7 @@ Les comptes partagés sont accessibles depuis OWA (webmail Exchange) ou via le l
 
 ### Ajouter un compte partagé
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Accédez à la section « Web » et sélectionnez votre service Exchange dans le menu de gauche sous `Microsoft`{.action} puis `Exchange`{.action}. 
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Accédez à la section « Web » et sélectionnez votre service Exchange dans le menu de gauche sous `Microsoft`{.action} puis `Exchange`{.action}.
 
 Sélectionnez l’onglet `Comptes partagés`{.action} dans le menu horizontal et cliquez sur `Ajouter un compte partagé`{.action}.
 
@@ -35,10 +36,9 @@ Renseignez les champs demandés :
 |Fonction|Description|
 |---|---|
 |Compte e-mail|Choisissez le nom de votre compte partagé. **Il ne doit pas s'agir d'une adresse e-mail existante.**|
-|Quota|Indiquez le quota souhaité pour votre compte partagé. Le quota maximal est de **10 Go pour l'ensemble de vos comptes partagés**.|
+|Quota|Indiquez le quota de stockage souhaité pour votre compte partagé. Le quota maximal est de **10 Go pour l'ensemble de vos comptes partagés**.|
 |Nom à afficher|Le nom d'affichage que vous souhaitez faire apparaître lors d'un envoi depuis votre compte partagé.|
-|Cacher l'adresse dans l'annuaire|Cacher l’adresse dans l’annuaire permet de faire en sorte que l’adresse du compte partagé ne soit pas visible dans la liste des adresses du service Exchange.|
-
+|Cacher l'adresse dans l'annuaire|Cacher l’adresse dans l’annuaire permet de faire en sorte que l’adresse du compte partagé ne soit pas visible dans la liste des adresses de votre plateforme Exchange.|
 
 Cliquez ensuite sur `Suivant`{.action} pour accéder au récapitulatif. Finalisez l'opération en cliquant sur `Valider`{.action}.
 
@@ -64,20 +64,20 @@ Choisissez les actions possibles sur le compte sélectionné :
 |Droit d’envoyer de la part|Permet au compte e-mail sélectionné de réaliser un envoi « de la part de » l'adresse e-mail partagée.|
 |Droit d’accès|Autorise le compte e-mail sélectionné à afficher et gérer le compte partagé depuis OWA (webmail) ou Outlook.|
 
+Cliquez ensuite sur `Suivant`{.action} et `Valider`{.action} pour enregistrer les modifications.
+
 ![emails](images/exchange-shared_accounts04.png){.thumbnail}
 
 Dans notre exemple, nous permettons aux comptes **guide-exchange@** et **test@** d'avoir accès au compte partagé **shared_test@**.
 <br>Le compte e-mail **guide-exchange@** aura aussi le droit d'envoyer des e-mails « en tant que » **shared_test@**.
 <br>Le compte e-mail **test@** pourra aussi envoyer des e-mails « de la part de » **shared_test@**.
 
-Cliquez ensuite sur `Suivant`{.action} et `Valider`{.action} pour enregistrer les modifications. 
-
 ### Utilisation du compte partagé depuis OWA (webmail)
 
 Connectez-vous au webmail Exchange (OWA) à l'adresse <https://www.ovh.com/fr/mail/> avec un compte e-mail ayant le droit d'accès au compte partagé. 
 <br>Dans notre exemple, nous nous connectons avec le compte **guide-exchange@**.
 
-Une fois connecté, dans la colonne de gauche, faites un clic droit sur l'arborescence principale de votre adressee-mail puis sur `Ajouter un dossier partagé`{.action}. 
+Une fois connecté, dans la colonne de gauche, faites un clic droit sur l'arborescence principale de votre adresse e-mail puis sur `Ajouter un dossier partagé`{.action}. 
 
 ![emails](images/exchange-shared_accounts05.png){.thumbnail}
 
