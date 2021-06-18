@@ -11,12 +11,6 @@ section: Diagnostic
 
 Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent une configuration erronée de vos DNS ou un domaine suspendu (si votre site n'affiche pas l'une des anomalies décrites ici, consultez la section [Aller plus loin](#aller-plus-loin)) : 
 
-(mettre les screenshots de la même taille - mettre les descriptions en français)
-
-Sur Chrome :  "mettre messages d'erreur en français - 1 colonne navigateur + message d'erreur en fr > sur colonne de droite : msg d'erreur
-> resize par gimp / talbeau doit réduire à la même largeur
-> peut réduire la taille de la colonne de gauche en mettant des - dans la seconde ligne du tableau pour déterminer les largeurs de chaque colonne
-
 |Navigateur|Action à entreprendre|
 |-|---|
 |Sur Chrome : « Ce site est inaccessible »|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
@@ -45,7 +39,7 @@ Sur Chrome :  "mettre messages d'erreur en français - 1 colonne navigateur + me
 
 Pour vérifier la validité de l'abonnement concernant votre domaine, cliquez en haut à droite sur votre nom et prénom, afin de faire apparaître le menu de droite.
 
-![](images/.png){.thumbnail}
+![username-panel](images/username-panel.png){.thumbnail}
 
 Puis cliquez sur `Produits et services`{.action}.
 
@@ -68,8 +62,6 @@ Renouvelez-le si nécessaire, via le bouton `...`{.action} à droite de l'écran
 Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serveurs-dns/), cliquez en haut à droite de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
 
 Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} : 
-
->> mettre les screenshots de l'EC
 
 |Scénario|Action à entreprendre|
 |---|---|
