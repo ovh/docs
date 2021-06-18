@@ -9,6 +9,7 @@ order: 2
 **Dernière mise à jour le 02/03/2020**
 
 ## Objectif
+
 La portabilité permet à un abonné de conserver son numéro de téléphone lorsqu'il souhaite changer d'opérateur. Toute demande doit alors suivre un processus comportant plusieurs étapes.
 
 **Découvrez comment porter un ou plusieurs numéros belges chez OVHcloud et suivre l'avancement de votre demande de portabilité.**
@@ -45,7 +46,7 @@ Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliq
 
 ![numberport](images/portingBE1.gif){.thumbnail}
 
-Dans la page qui apparaît, les deux types de demandes de portabilité sont proposés. 
+Dans la page qui apparaît, les deux types de demandes de portabilité sont proposés.
 
 Choisissez la demande selon que votre demande concerne  **Un numéro isolé** ou **Un ou plusieurs numéros appartenant à une tranche de numéros (SDA)**.
 
