@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un serveur vocal interactif (SVI)'
 slug: svi-serveur-vocal-interactif
-excerpt: "Apprenez à configurer un serveur vocal interactif depuis l'espace client OVH"
+excerpt: "Découvrez comment configurer un serveur vocal interactif depuis l'espace client OVHcloud"
 section: 'Numéros ou alias'
 order: 6
 ---
@@ -10,10 +10,10 @@ order: 6
 
 ## Objectif
 
-Configurer un numéro en Serveur Vocal Interactif (SVI) permet de proposer à vos correspondants un menu avec lequel ils pourront interagir, grâce aux touches de leur téléphone.
+Configurer un numéro en Serveur Vocal Interactif (SVI) permet de proposer à vos correspondants un menu avec lequel ils pourront interagir, grâce aux touches de leurs téléphones.
 <br>L'exemple le plus courant consiste à orienter un appelant entre plusieurs services d'une société : « Appuyez sur la touche 1 pour une demande commerciale ou sur la touche 2 pour une demande technique. »
 
-**Apprenez à configurer un serveur vocal interactif depuis l'espace client OVHcloud.**
+**Découvrez comment configurer un serveur vocal interactif depuis l'espace client OVHcloud.**
 
 ## Prérequis
 
@@ -46,7 +46,7 @@ L'interface de configuration du SVI se présente sous la forme d'une arborescenc
 |Menu du numéro|Menu de la configuration|Menu d'étape|
 |---|---|---|
 |![menu numéro](images/menu-numero-svi.png){.thumbnail}|![menu configuration](images/menu-configuration-svi.png){.thumbnail}|![menu étape](images/menu-etape-svi.png){.thumbnail}|
-|Permet de gérer les options principales de la configuration.|Permet de gérer les étapes du plan ainsi que les options d'affichage des appels.|Permet d'ajouter des actions au sein d'une étape ainsi que des conditions d'exécution de l'étape.|
+|Permet de gérer les options principales de la configuration.|Permet de gérer les étapes de la configuration ainsi que les options d'affichage des appels.|Permet d'ajouter des actions au sein d'une étape ainsi que des conditions d'exécution de l'étape.|
 
 ### Étape 2 : configurer le serveur interactif
 
@@ -54,8 +54,9 @@ Les étapes suivantes peuvent être suivies sans ordre particulier. Néanmoins, 
 
 #### 2.1 gérer les sons
 
-L'ajout d'un son d'accueil est la première étape indispensable pour créer votre SVI. Ce son d'accueil sera joué dès le début de l'appel. Celui-ci précise à l'appelant les différents choix offerts par les touches.
-<br> Vous pouvez ajouter plusieurs sons si vous souhaitez proposer des choix de touches successifs. En effet, il vous faudra alors un son par menu interactif.
+**L'ajout d'un son d'accueil est la première étape indispensable pour créer votre SVI**. Ce son d'accueil sera joué dès le début de l'appel. Il précise à l'appelant les différents choix offerts par les touches.
+
+Vous pouvez ajouter plusieurs sons si vous souhaitez créer des choix de touches successifs. En effet, il vous faudra alors un son par menu interactif.
 <br> Nous vous conseillons également de créer un son dédié aux actions invalides. Ainsi, si un appelant compose une touche que vous n'avez pas configurée, un son peut lui rappeler les choix de touches possibles.
 
 > [!warning]
@@ -64,7 +65,7 @@ L'ajout d'un son d'accueil est la première étape indispensable pour créer vot
 > <br>Sachez qu'il est également possible de créer des fichiers-sons via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/){.external}.
 >
 
-Ouvrez le « Menu Numéro » puis cliquez sur `Gérer les sons`{.action}.
+Ouvrez le **menu du numéro** puis cliquez sur `Gérer les sons`{.action}.
 
 ![gérer les sons](images/gerer-sons-svi.png){.thumbnail}
 
@@ -72,7 +73,7 @@ Cliquez alors sur `Ajouter un son`{.action} pour téléverser un son depuis votr
 
 #### 2.2 Créer un menu interactif <a name="creer-menu-interactif"></a>
 
-Ouvrez le « Menu Numéro » puis cliquez sur `Gérer les menus interactifs`{.action}.
+Ouvrez le **menu du numéro** puis cliquez sur `Gérer les menus interactifs`{.action}.
 
 ![gérer les menus](images/gerer-menus-svi.png){.thumbnail}
 
@@ -84,7 +85,7 @@ Une fenêtre de création s'affiche. Complétez les informations demandées :
 
 |Information|Description|
 |---|---|
-|Nom du menu interactif|Définissez un nom pour ce menu interactif. Celui-ci ne peut contenir que des lettres (sans accents), des chiffres, des tirets bas, ainsi que des espaces.|
+|Nom du menu interactif|Définissez un nom pour ce menu interactif. Celui-ci ne peut contenir que des lettres (sans accents), des chiffres, des tirets bas ainsi que des espaces.|
 |Son d'accueil|Sélectionnez le son qui sera joué dès le début de l'appel. Celui-ci précise à l'appelant les différents choix offerts par les touches.|
 |Son en cas d'action invalide|Choisissez le son qui sera joué si l'appelant appuie sur une touche non reconnue par le serveur vocal interactif.|
 
@@ -155,7 +156,7 @@ Selon vos besoins, répétez ces manipulations si vous souhaitez créer plusieur
 
 #### 3.3 Ajouter une condition à une étape
 
-Lorsqu'une ou plusieurs conditions sont ajoutées à une étape, celles-ci doivent être atteintes pour que l'étape se déclenche. Si les conditions ne sont pas remplies, soit une action correspondant aux **conditions non-vérifiées** se déclenche, soit l'étape suivante se déclenche.
+Lorsqu'une ou plusieurs conditions sont ajoutées à une étape, celles-ci doivent être remplies pour que l'étape se déclenche. Si les conditions ne sont pas remplies, soit une action correspondant aux **conditions non-vérifiées** se déclenche, soit l'étape suivante de votre plan de configuration se déclenche.
 
 > [!success]
 >
@@ -215,7 +216,7 @@ Configurez maintenant les plages horaires qui correspondent à vos besoins. Pour
 
 Une fois toutes vos plages horaires définies, cliquez sur le bouton `Modifier`{.action} pour les valider.
 
-![SVI-plages](images/plageshoraires-svi2021.gif){.thumbnail}
+![SVI plages horaires](images/plages-svi2021.gif){.thumbnail}
 
 > [!primary]
 > Pour modifier une plage horaire déjà créée, il est nécessaire de la supprimer puis de créer une nouvelle plage horaire.
