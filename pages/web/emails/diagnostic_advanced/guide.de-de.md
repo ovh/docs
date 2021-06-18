@@ -1,6 +1,6 @@
 ---
-title: 'Die Statuscodes von SMTP-Servern'
-excerpt: 'Details zu den Statuscodes von SMTP-Servern'
+title: 'E-Mails können nicht gesendet oder empfangen werden'
+excerpt: 'Erfahren Sie hier die Vorgehensweise, wenn Sende- oder Empfangsprobleme über OVHcloud auftreten'
 slug: die_statuscodes_von_smtp-servern
 section: Diagnose
 order: 1
@@ -12,88 +12,88 @@ legacy_guide_number: g2272
 >
 
 
-**Stand 04.06.2021**
+**Letzte Aktualisierung am 16.06.21**
 
 ## Ziel
 
 Sie können Ihre E-Mails nicht über Ihr E-Mail-Programm oder über das Webmail-Interface empfangen oder versenden?
 
-**Hier erfahren Sie, wie Sie bei Ihrem OVHcloud E-Mail-Angebot einen Fehler beim Versand oder Empfang diagnostizieren.**
+**Diese Anleitung erklärt, wie Sie bei Ihrem OVHcloud E-Mail-Angebot Fehler beim Versand oder Empfang diagnostizieren.**
 
 > [!primary]
 >
-> Wenn Sie weitere Fragen haben, die nicht in dieser Anleitung behandelt werden, lesen Sie bitte unsere [E-Mail FAQ](https://docs.ovh.com/de/emails/e-mails-faq/).
+> Wenn Sie weitere Fragen haben, die nicht in dieser Anleitung behandelt werden, lesen Sie bitte unsere [E-Mail FAQ](../emails-faq/).
 
 ## Voraussetzungen
 
-- Sie besitzen ein **MX Plan** Angebot oder **E-Mail Pro** oder **Exchange** Angebot.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet.
+- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet (**MX Plan**, **E-Mail Pro** oder **Exchange**).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
-### Sind mein E-Mail Angebot und/oder meine Accounts aktiv?
+### Sind mein E-Mail Angebot und/oder meine Accounts aktiv? 
 
-Damit Ihre E-Mails funktionieren, benötigen Sie ein aktives E-Mail-Angebot. Wenn Ihr E-Mail-Angebot mit einem Webhosting-Angebot verbunden ist, überprüfen Sie, dass dieses nicht abgelaufen ist. Sie können diese Information direkt im Kundencenter überprüfen. Ebenso muss auch Ihre Domain aktiv sein.
+Damit Ihre E-Mails funktionieren, benötigen Sie ein aktives E-Mail-Angebot. Wenn Ihre E-Mail-Accounts Teil eines Webhosting-Angebots sind, überprüfen Sie, dass es nicht abgelaufen ist. Sie können das direkt im Kundencenter überprüfen. Die zugehörige Domain muss ebenfalls aktiv sein.
 
-Hier überprüfen Sie, ob Ihre Dienstleistungen korrekt funktionieren:
+Befolgen Sie diese Schritte, um sicherzustellen, dass Ihre relevanten Dienste in Betrieb sind:
 
 - Gehen Sie für Ihre **Domain** in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie Ihre Domain aus. Wenn Ihre Domain abgelaufen ist, wird dies am oberen Ende der Seite angezeigt.
-- Für **Ihr Webhosting** gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie Ihr Hosting aus. Das Ablaufdatum oder das Datum der automatischen Verlängerung Ihres Webhostings wird oben angegeben.
+- Für ein **Webhosting** gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie Ihr Hosting aus. Das Ablaufdatum oder das Datum der automatischen Verlängerung Ihres Webhostings wird oben angegeben.
 - Für ein **MXplan** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `E-Mails`{.action} und wählen Sie die betreffende Domain aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}. Überprüfen Sie in der Spalte `Status` den Status des betreffenden E-Mail-Accounts.
-- Für ein **E-Mail Pro** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `E-Mail Pro`{.action} und wählen Sie Ihre Plattform aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}. Überprüfen Sie in der Spalte Status den Status des betreffenden `E-Mail-Accounts`.
-- Für ein **Exchange** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `Microsoft`{.action}, klicken Sie dann auf `Exchange`{.action} und wählen Sie Ihre Plattform aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}. Überprüfen Sie in der Spalte Status den `Status` des betreffenden E-Mail-Accounts.
+- Für ein **E-Mail Pro** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `E-Mail Pro`{.action} und wählen Sie Ihre Plattform aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}. Überprüfen Sie in der Spalte `Status` den Status des betreffenden E-Mail-Accounts.
+- Für ein **Exchange** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `Microsoft`{.action}, klicken Sie dann auf `Exchange`{.action} und wählen Sie Ihren Dienst aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}. Überprüfen Sie in der Spalte `Status` den Status des betreffenden E-Mail-Accounts.
 
 ### Ich kann keine E-Mails von meinem E-Mail-Programm aus versenden
 
-Wenn Sie ein E-Mail-Programm auf Ihrem Computer (Outlook, Mail von Mac, Thunderbird etc.) oder Ihrem Smartphone (iOS, Android etc.) verwenden und bei Versand oder Empfang Probleme haben, überprüfen Sie die Konfigurationseinstellungen nach Ihrem E-Mail-Angebot und dem verwendeten E-Programm.
+Wenn Sie ein E-Mail-Programm auf Ihrem Computer (Outlook, Mac Mail, Thunderbird etc.) oder Ihrem Smartphone (iOS, Android etc.) verwenden und bei Versand oder Empfang Probleme haben, überprüfen Sie die Konfigurationseinstellungen je nach Ihrem E-Mail-Angebot und dem verwendeten E-Programm.
 
 - Überprüfen Sie bei einem **MXplan** Angebot im Bereich [Hosted E-Mail - MX Plan](https://docs.ovh.com/de/emails/) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Abschnitt `E-Mail-Clients` .
 
 - Überprüfen Sie bei einem **E-Mail Pro** Angebot im Bereich [E-Mail Pro](https://docs.ovh.com/de/emails-pro/) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Abschnitt `Konfiguration des E-Mail-Clients`.
 
-- Für ein **Exchange** Angebot überprüfen Sie im Bereich [Microsoft Collaborative Solutions](https://docs.ovh.com/de/microsoft-collaborative-solutions/)  unserer **Web Cloud** die Konfiguration Ihres E-Mail-Programms im Bereich `Konfiguration des Exchange E-Mail-Clients` oder Ihres Smartphones in `Konfiguration von Exchange auf kompatiblen Smartphones/Tablets`
+- Für ein **Exchange** Angebot überprüfen Sie im Bereich [Microsoft Collaborative Solutions](https://docs.ovh.com/de/microsoft-collaborative-solutions/) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Bereich `Konfiguration des Exchange E-Mail-Clients` oder Ihres Smartphones in `Konfiguration von Exchange auf kompatiblen Smartphones/Tablets`
 
 ### Sind die E-Mails über das Webmail-Interface funktionsfähig?
 
-Um sicherzustellen, dass die Fehlfunktion nicht auf einen Konfigurationsfehler zurückzuführen ist, führen Sie direkt über das Webmail von OVHcloud einen Test zum Senden und Empfangen durch. Wenn alles korrekt funktioniert, überprüfen Sie die Konfiguration Ihrer Software mithilfe der Anleitungen, die Ihnen zur Verfügung stehen.
+Um sicherzustellen, dass die Fehlfunktion nicht auf einen Konfigurationsfehler zurückzuführen ist, führen Sie über OVHcloud Webmail einen Test zum Senden und Empfangen durch. Wenn alles korrekt funktioniert, überprüfen Sie die Konfiguration Ihrer Software mithilfe unserer Anleitungen.
 
-Gehen Sie über den Browser Ihres Computers oder ein Smartphone auf die Adresse <https://www.ovh.com/de/mail/>.
+Gehen Sie dazu über einen Webbrowser auf die Adresse <https://www.ovh.com/de/mail/>.
 
 ![webmail](images/webmail.png){.thumbnail}
 
 ### Ich kann mich nicht mit dem Webmail verbinden
 
-Stellen Sie sicher, dass Sie das richtige Passwort haben. Wenn nötig können Sie es ändern. Überprüfen Sie auch, ob die Zwei-Faktor-Authentifizierung aktiviert ist ([Exchange](https://www.ovh.com/fr/emails/hosted-exchange/)).
+Stellen Sie sicher, dass Sie das richtige Passwort haben. Sie können es nötignfalls immer im Kundencenter ändern. Überprüfen Sie auch, ob die Zwei-Faktor-Authentifizierung aktiviert ist (nur[Exchange](https://www.ovh.de/emails/hosted-exchange/)).
 
 So ändern Sie das Passwort einer E-Mail-Adresse:
 
-- Für ein **MXplan** Angebot lesen Sie unsere [Anleitung Passwort einer MX Plan E-Mail-Adresse ändern](https://docs.ovh.com/de/emails/passwort-e-mail-adresse-aendern/)
+- Für ein **MXplan** Angebot lesen Sie unsere [Anleitung Passwort einer MX Plan E-Mail-Adresse ändern](../passwort-e-mail-adresse-aendern/)
 
-- Für ein **E-Mail Pro** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `E-Mail Pro`{.action} und wählen Sie Ihre Plattform aus. Klicken Sie im Tab `E-Mail`{.action}-Accounts auf `...`{.action} und dann auf `Passwort`{.action} ändern.
+- Für ein **E-Mail Pro** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `E-Mail Pro`{.action} und wählen Sie Ihren Dienst aus. Klicken Sie im Tab `E-Mail-Accounts`{.action} auf `...`{.action} und dann auf `Passwort ändern`{.action}.
 
-- Für ein **Exchange** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `Microsoft`{.action}, klicken Sie dann auf `Exchange`{.action} und wählen Sie Ihre Plattform aus. Klicken Sie im Tab `E-Mail`{.action}-Accounts auf `...`{.action} und dann auf `Passwort`{.action} ändern. <br> Überprüfen Sie, ob die Zwei-Faktor-Authentifizierung aktiviert ist, indem Sie unsere Anleitung [Die Zwei-Faktor-Authentifizierung auf einem Exchange Account konfigurieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/2fa-exchange-konfigurieren/).
+- Für ein **Exchange** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie in der linken Spalte auf `Microsoft`{.action}, klicken Sie dann auf `Exchange`{.action} und wählen Sie Ihren Dienst aus. Klicken Sie im Tab `E-Mail-Accounts`{.action} auf `...`{.action} und dann auf `Passwort ändern`{.action}. <br> Überprüfen Sie, ob die Zwei-Faktor-Authentifizierung aktiviert ist mithilfe unserer Anleitung zur [Zwei-Faktor-Authentifizierung für Exchange](../../microsoft-collaborative-solutions/2fa-exchange-konfigurieren/).
 
-### Ist eine Störung oder Wartung bei meinem Dienst im Gange?
+### Ist mein Dienst von einer Störung oder Wartung betroffen?
 
-Sie können die verschiedenen Tasks überprüfen, die derzeit auf <http://travaux.ovh.net/> dem
+Sie können alle aktuellen Tasks auf <http://travaux.ovh.net/> überprüfen:
 
 - Für **MXplan** überprüfen Sie im Bereich `E-Mails`
 - Für **E-Mail Pro** gehen Sie in den Bereich `Microsoft`
 - Für **Exchange**, gehen Sie in den Bereich `Microsoft`
 
-### Ist der Verweis der Domain auf meinen E-Mail-Dienst korrekt?
+### Ist die Domain korrekt mit meinem E-Mail-Dienst verbunden?
 
-Überprüfen Sie, ob Ihre Domain korrekt auf die OVHcloud E-Mail-Server verweist. Hierzu müssen MX-Einträge in Ihrer DNS-Zone konfiguriert werden. <br>Lesen Sie unsere Anleitung [Einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen](https://docs.ovh.com/de/domains/webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/).
+Überprüfen Sie, ob Ihre Domain korrekt auf die OVHcloud E-Mail-Server verweist. Hierzu müssen MX-Einträge in Ihrer DNS-Zone konfiguriert werden. <br>Lesen Sie dazu unsere Anleitung "[Einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen](../domains/webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/)".
 
 ![DNS Zone](images/DNS.png){.thumbnail}
 
-### Nach dem Versand einer E-Mail erhält ich eine Nachricht, aus der hervorgeht, dass meine E-Mail nicht versandt werden konnte, einschließlich eines 3-stelligen Codes
+### Nach dem Senden einer E-Mail erhalte ich eine Meldung, dass meine E-Mail nicht gesendet werden konnte, einschließlich eines 3-stelligen Codes
 
-Dies ist eine SMTP-Fehlerrückmeldung. Dies bedeutet, dass der Austausch zwischen dem Versand-Server und dem E-Mail-Server für den Empfang nicht korrekt durchgeführt werden konnte. Der Code dient zur Bestimmung der Art des Fehlers, auf den der Server gestoßen ist. In der Regel wird eine Nachricht übermittelt, in der dieser Fehler im Einzelnen dargestellt wird.
+Dies ist eine SMTP-Fehlerrückmeldung. Es bedeutet, dass der Austausch zwischen dem ausgehenden Server und dem eingehenden E-Mail-Server nicht korrekt abgeschlossen werden konnte. Der Code dient zur Bestimmung der Art des Fehlers, auf den der Server gestoßen ist. In der Regel wird eine Nachricht übermittelt, die diesen Fehler detaillierter beschreibt.
 
-Eine SMTP-Antwort besteht aus einer dreistelligen Zahl. Die drei Ziffern der Antwort haben jeweils eine besondere Bedeutung:
+Eine SMTP-Antwort besteht aus einer dreistelligen Zahl. Die drei Ziffern der Antwort haben jeweils eine spezielle Bedeutung:
 
-- Die erste Ziffer gibt an, ob die Antwort richtig, falsch oder unvollständig ist. Ein SMTP-Client wird in der Lage sein, seine nächste Aktion anhand dieser ersten Zahl zu bestimmen.
+- Die erste Ziffer gibt an, ob die Antwort positiv, negativ oder unvollständig ist. Ein SMTP-Client wird in der Lage sein, seine nächste Aktion anhand dieser ersten Zahl zu bestimmen.
 - Die zweite und die dritte Ziffer liefern zusätzliche Informationen.
 
 Für die erste Ziffer des Antwortcodes sind vier Werte möglich:
@@ -101,36 +101,36 @@ Für die erste Ziffer des Antwortcodes sind vier Werte möglich:
 |Code|Beschreibung|  
 |---|---|  
 |2 xx|Positive Antwort: die angeforderte Aktion wurde erfolgreich durchgeführt. Es kann eine neue Anfrage gestartet werden.|
-|3 xx|Temporäre positive Antwort: Die Bestellung wurde angenommen, die angeforderte Aktion wartet jedoch auf weitere Informationen. Der SMTP-Client sollte eine weitere Bestellung senden, in der diese Information angegeben ist.|
-|4 xx|Negative Antwort auf den vorübergehenden Abschluss: die Bestellung wurde nicht angenommen, und die beantragte Aktion konnte nicht durchgeführt werden. Die Fehlerbedingung ist jedoch vorübergehend und kann erneut beantragt werden.|
-|5 xx|Negative Antwort: die Bestellung wurde nicht angenommen, und die beantragte Aktion konnte nicht durchgeführt werden. Der SMTP-Client sollte diese Anfrage nicht wiederholen.|
+|3 xx|Temporäre positive Antwort: Der Befehl wurde angenommen, die angeforderte Aktion wartet jedoch auf weitere Informationen. Der SMTP-Client sollte einen weiteren Befehl senden, der diese Informationen angibt.|
+|4 xx|Dauerhafter transienter Fehler: Der Befehl wurde nicht akzeptiert und die angeforderte Aktion nicht erfüllt. Der Fehlerzustand ist jedoch vorübergehend und die Aktion kann erneut angefordert werden.|
+|5 xx|Negative Antwort: der Befehl wurde nicht akzeptiert und die angeforderte Aktion nicht erfüllt. Der SMTP-Client sollte die gleiche Anfrage nicht wiederholen.|
 
-Im Folgenden finden Sie die Mehrzahl der von den Servern verwendeten negativen SMTP-Antwortcodes:
+Im Folgenden finden Sie von Servern häufig verwendete negative SMTP-Antwortcodes:
 
-|Antwort-Codes|Beschreibung|Aktionen|
+|Antwort-Code|Beschreibung|Aktionen|
 |---|---|---|
-|420|Verspätung, Verbindungsproblem|Diese Fehlermeldung wird ausschließlich von den GroupWise Mailservern zurückgegeben. Kontaktieren Sie den Administrator des Ziel-E-Mail-Servers|
-|421|Dienst nicht verfügbar, Übertragungskanal wird geschlossen|Herkunft des unbestimmten Fehlers, vergewissern Sie sich, dass der Versand an eine andere Domain funktioniert. Wenn ja, versuchen Sie den ursprünglichen Versand später erneut|
-|432|Empfang der E-Mail auf dem Exchange Server angehalten|Diese Fehlermeldung wird ausschließlich für die Microsoft Exchange Mailserver versandt. Kontaktieren Sie den Administrator des Ziel-E-Mail-Servers|
-|449|Ein Routing-Fehler|Diese Fehlermeldung wird ausschließlich von den Microsoft Exchange Mailservern zurückgegeben. Microsoft empfiehlt, eine Diagnose mit ihrem WinRoute Tool durchzuführen|
-|450|Angeforderte E-Mail-Aktion nicht ausgeführt: Mailbox nicht verfügbar (z. B. Mailbox besetzt oder aus Sicherheitsgründen vorübergehend gesperrt)|Überprüfen Sie, ob Ihre IP-Adresse des Mailservers nicht geblockt ist ([SpamHaus](https://www.spamhaus.org/lookup/){.external}), und überprüfen Sie auch, ob Ihre E-Mail keine Wörter für SPAM enthält.|
-|451|Zurückgegebene Pflichtmaßnahme: Lokaler Verarbeitungsfehler|Dies kann durch eine vorübergehende Überlastung oder eine Überprüfung des SPF der Senderdomain verursacht werden. Lesen Sie die Zusatznachricht des Servers oder kontaktieren Sie dessen Administrator, falls dies weiterhin der Fall ist|
-|452|Angeforderte Aktion nicht ausgeführt: unzureichendes Speichersystem|Ihr E-Mail-Server ist "überladen". Das könnte auch durch zu viele Botschaften verursacht werden, die gleichzeitig zu senden versuchen. Bitte überprüfen Sie Ihren Posteingang und versuchen Sie es erneut|
-|455|Server nicht in der Lage, die Einstellungen zu erhalten|Warten Sie eine Weile und versuchen Sie es erneut. Im Falle eines Fehlschlags kontaktieren Sie den Administrator des E-Mail-Servers des Empfängers|
-|250|Syntafehler, nicht erkannte Bestellung (Dies kann Fehler wie eine zu lange Befehlszeile einschließen)|Dies wird häufig durch das Antivirus oder die Firewall des Absenders verursacht. Überprüfen Sie das und versuchen Sie es erneut|
-|501|Syntafehler in den Parametern oder Argumenten|Dies wird häufig durch eine fehlerhafte E-Mail-Adresse eines Empfängers oder durch ein Antivirus-Problem oder Firewall auf der Absenderseite verursacht. Bitte überprüfen Sie die Ziel-Adresse sowie Ihr Antivirus oder Firewall|
-|502|Bestellung nicht implementiert|Die beim Versand der E-Mail mit Ihrem SMTP-Server verwendeten Einstellungen oder Optionen werden erkannt, in der Konfiguration jedoch deaktiviert. Bitte kontaktieren Sie Ihren Dienstleister|
-|503|Der Server hat eine falsche Bestellreihenfolge|Dies ist gewöhnlich auf ein Problem mit der Authentifizierung zurückzuführen. Vergewissern Sie sich, dass Sie sich bei der Konfiguration Ihres E-Mail-Programms auf dem SMTP-Server korrekt authentifiziert haben|
-|504|Steuerparameter nicht implementiert|Die beim Versand der E-Mail mit Ihrem SMTP-Server verwendeten Einstellungen oder Optionen werden erkannt, in der Konfiguration jedoch deaktiviert. Bitte kontaktieren Sie Ihren Dienstleister|
-|550|Angeforderte Aktion nicht ausgeführt: Mailbox nicht verfügbar|Der Ziel-E-Mail-Server konnte die verwendete E-Mail-Adresse nicht überprüfen. Dies wird meist durch eine ungültige Ziel-E-Mail-Adresse verursacht, kann aber auch bedeuten, dass der Ziel-E-Mail-Server Probleme mit der Firewall oder der Konnektivität hat. Die E-Mail-Adresse des Empfängers überprüfen und/oder erneut versuchen|
-|551|Nicht lokaler Benutzer|Dies wird üblicherweise als Präventionsstrategie gegen Spam eingesetzt. Es wird angegeben, dass der Mail-Relay aus irgendeinem Grund nicht erlaubt ist, Ihre Nachricht auf einen anderen Server als Ihren zu übertragen. Bitte kontaktieren Sie Ihren Dienstleister|
-|552|Angeforderte E-Mail-Aktion unterbrochen: Speicherplatz überschritten|Der Benutzer, den Sie kontaktieren möchten, hat keinen Speicherplatz mehr für den Empfang von Nachrichten. Leider besteht die einzige Lösung darin, den Empfänger über eine andere Methode zu kontaktieren|
-|553|Angeforderte Aktion nicht ausgeführt: nicht autorisierte E-Mail-Adresse|Dies wird in der Regel durch eine falsche Ziel-E-Mail-Adresse verursacht. Bitte überprüfen Sie, dass die betreffende E-Mail-Adresse korrekt ist|
-|554|Transaktion fehlgeschlagen, "Keine SMTP-Dienste hier vorhanden")|Das ist im Allgemeinen ein Blacklist-Problem. Überprüfen Sie, ob Ihre IP-Adresse des Mailservers nicht geblockt ist ([SpamHaus](https://www.spamhaus.org/lookup/){.external})|
-|555|MAIL FROM / RCPT TO, Einstellungen nicht erkannt oder nicht umgesetzt|Der ausgehende SMTP-Server speichert die verwendete E-Mail-Adresse entweder in den Einstellungen "De"oder "A" nicht korrekt. Bitte überprüfen Sie, dass die angegebenen E-Mail-Adressen korrekt sind, und überprüfen Sie, dass Sie die von OVHcloud festgelegte Grenze nicht überschritten haben: 200 Mails / Stunde / Account / 300 Mails / Stunde / IP|
+|420|Timeout connection problem|Diese Fehlermeldung wird ausschließlich von den GroupWise Mailservern zurückgegeben. Kontaktieren Sie den Administrator des Empfänger-Mailservers.|
+|421|Service not available, transmission channel being closed|Unbestimmte Herkunft; vergewissern Sie sich, dass der Versand an eine andere Domain funktioniert. Wenn ja, versuchen Sie den Versand später erneut.|
+|432|The recipient’s Exchange Server incoming mail queue has been stopped|Diese Fehlermeldung wird nur von Microsoft Exchange Servern zurückgegeben. Wenden Sie sich an den Administrator des Empfänger-Mailservers.|
+|449|Routing error|Diese Fehlermeldung wird nur von Microsoft Exchange Servern zurückgegeben. Microsoft empfiehlt, eine Diagnose mit dem Tool WinRoute durchzuführen.|
+|450|Requested action not taken – The user’s mailbox is unavailable (z. B. Mailbox unerreichbar oder aus Sicherheitsgründen vorübergehend gesperrt)|Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers geblockt ist ([SpamHaus](https://www.spamhaus.org/lookup/){.external}), und überprüfen Sie auch, ob Ihre E-Mail SPAM-relevante Wörter enthält.|
+|451|Requested action aborted – Local error in processing|Dies kann durch eine vorübergehende Überlastung oder eine negative SPF-Prüfung der Senderdomain verursacht werden. Lesen Sie die Zusatznachricht des Servers oder kontaktieren Sie dessen Administrator, falls dies weiterhin der Fall ist.|
+|452|The command has been aborted because the server has insufficient system storage|Der E-Mail-Server ist 'überladen'. Dies könnte von zu vielen ausgehenden Nachrichten gleichzeitig verursacht werden. Bitte überprüfen Sie Ihren Postausgang und versuchen Sie es erneut.|
+|455|Server unable to deal with the command at this time.|Warten Sie eine Weile und versuchen Sie es erneut. Im Falle eines Fehlschlags kontaktieren Sie den Administrator des Empfänger-Mailservers.|
+|250|Syntax error: the server could not recognise the command (Dies kann Fehler wie eine zu lange Befehlszeile einschließen)|Dies wird häufig von Antivirus- oder Firewalleinstellungen des Absenders verursacht. Überprüfen Sie das und versuchen Sie es erneut.|
+|501|Syntax error in parameters or arguments|Dies wird oft durch eine falsche Empfänger-E-Mail-Adresse oder ein absenderseitiges Antiviren- oder Firewall-Problem verursacht. Bitte überprüfen Sie die Zieladresse und sowie Ihre Antivirus- oder Firewalleinstellungen.|
+|502|Command not implemented|Die beim Versand der E-Mail mit Ihrem SMTP-Server verwendeten Einstellungen oder Optionen werden erkannt, in der Konfiguration jedoch deaktiviert. Bitte kontaktieren Sie Ihren Dienstleister.|
+|503|Server encountered bad sequence of commands|Dies ist in der Regel auf ein Authentifizierungsproblem zurückzuführen. Vergewissern Sie sich, dass Sie in Bezug auf die Konfiguration Ihrer E-Mail-Software am SMTP-Server authentifiziert sind.|
+|504|Command parameter not implemented|Die beim Versand der E-Mail mit Ihrem SMTP-Server verwendeten Einstellungen oder Optionen werden erkannt, sind in der Konfiguration jedoch deaktiviert. Bitte kontaktieren Sie Ihren Dienstleister.|
+|550|Requested action not performed: mailbox unavailable|Der Empfänger-Server konnte die verwendete E-Mail-Adresse nicht überprüfen. Dies wird meist durch eine ungültige Ziel-E-Mail-Adresse verursacht, kann aber auch bedeuten, dass der Server Probleme mit der Firewall oder der Konnektivität hat. Überprüfen Sie die E-Mail-Adresse des Empfängers, und/oder versuchen Sie es erneut.|
+|551|User not local or invalid address – Relay denied|Dies wird typischerweise als Strategie zur Vermeidung von Spam verwendet. Es besagt, dass das Mail-Relay aus irgendeinem Grund nicht berechtigt ist, Ihre Nachricht an einen anderen Server als den Ihren weiterzuleiten. Bitte kontaktieren Sie Ihren Dienstleister.|
+|552|Requested mail actions aborted – Exceeded storage allocation|Der Empfängeraccount hat keinen Speicherplatz mehr für den Empfang von Nachrichten. Leider besteht die einzige Lösung darin, den Empfänger über eine andere Methode zu kontaktieren.|
+|553|Requested action not taken – Mailbox name invalid|Dies wird in der Regel durch eine falsche Empfänger-E-Mail-Adresse verursacht. Bitte überprüfen Sie, dass die betroffene E-Mail-Adresse korrekt ist.|
+|554|Transaction failed, "No SMTP service here")|Das ist üblicherweise ein Blacklist-Problem. Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers nicht geblockt ist ([SpamHaus](https://www.spamhaus.org/lookup/){.external}).|
+|555|MAIL FROM / RCPT TO, unrecognised or unimplemented arguments|Der ausgehende SMTP-Server kann die E-Mail-Adresse, die Sie in den Feldern "Von" oder "An" verwendet haben, nicht deuten. Bitte prüfen Sie, ob die eingegebenen E-Mail-Adressen korrekt sind, und überprüfen Sie, dass Sie die von OVHcloud festgelegte Grenze nicht überschritten haben: 200 Mails / Stunde / Account / 300 Mails / Stunde / IP.|
 
 ## Weiterführende Informationen
 
-[E-Mail FAQ](https://docs.ovh.com/de/emails/e-mails-faq/)
+[E-Mail FAQ](../emails-faq/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
