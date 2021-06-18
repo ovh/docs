@@ -5,7 +5,7 @@ excerpt: Diagnostiquez les causes de l'inaccessibilité de votre site
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 17/06/2021**
+**Dernière mise à jour le 18/06/2021**
  
 ## Objectif
 
@@ -51,6 +51,8 @@ Vérifiez la `Disponibilité`{.action} de votre nom de domaine.
 
 Renouvelez-le si nécessaire, via le bouton `...`{.action} à droite de l'écran, puis `Renouveler`{.action}.
 
+![renew-service-button](images/renew-service-button.png){.thumbnail}
+
 > [!warning]
 >
 > Le renouvellement de vos services est sous votre entière responsabilité. OVHcloud, en tant qu'hébergeur, a l'obligation de supprimer définitivement les domaines et services qui n'ont pas été renouvelés à temps, ainsi que l'ensemble des données qu'ils contiennent.
@@ -59,18 +61,49 @@ Renouvelez-le si nécessaire, via le bouton `...`{.action} à droite de l'écran
 
 ### Étape 2 : Vérifiez les serveurs DNS
 
-Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serveurs-dns/), cliquez en haut à droite de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
+Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serveurs-dns/), cliquez en haut à droite de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}, puis sur le domaine de votre site : 
+
+![click-on-domain-name](images/click-on-domain-name.png){.thumbnail}
 
 Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} : 
 
-|Scénario|Action à entreprendre|
-|---|---|
-|Les serveurs DNS indiqués sont identiques aux cibles des entrées de type `NS` dans la zone de votre domaine.|Passez à [l'étape 3](#etape3).|
+### Scénario 1
+
+Les serveurs DNS indiqués sont identiques aux cibles des entrées de type `NS` dans la zone de votre domaine : 
+
+![](images/.png){.thumbnail}	
+
+Passez à [l'étape 3](#etape3).
+
 |Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans la zone.|Modifiez les serveurs indiqués dans l'onglet `Serveurs DNS`{.action} en conséquence.|
 |Aucun serveur DNS n'est renseigné dans l'onglet `Serveurs DNS`{.action}.|Dans l'onglet `Serveurs DNS`{.action}, [ajoutez les cibles]((https://docs.ovh.com/fr/domains/generalites-serveurs-dns/#modifier-les-serveurs-dns)) des entrées de type `NS` dans votre `Zone DNS`{.action}, puis patientez 48 heures au maximum (délai technique maximum de propagation des changements de serveurs DNS).|
 |Les serveurs DNS qui apparaissent ne sont pas gérés par OVHcloud.|Contactez leur hébergeur.|
 
-### Étape 3 : Vérifiez la zone DNS
+### Scénario 2
+
+Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans la zone :
+
+![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}
+
+Modifiez les serveurs indiqués dans l'onglet `Serveurs DNS`{.action} [en conséquence](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns).
+
+### Scénario 3
+
+Aucun serveur DNS n'est renseigné dans l'onglet `Serveurs DNS`{.action} :
+
+![](images/.png){.thumbnail}	
+
+Dans l'onglet `Serveurs DNS`{.action}, [ajoutez les cibles]((https://docs.ovh.com/fr/domains/generalites-serveurs-dns/#modifier-les-serveurs-dns)) des entrées de type `NS` dans votre `Zone DNS`{.action}, puis patientez 48 heures au maximum (délai technique maximum de propagation des changements de serveurs DNS).
+
+### Scénario 4
+
+Les serveurs DNS qui apparaissent ne sont pas gérés par OVHcloud : 
+
+![](images/.png){.thumbnail}
+
+Contactez leur hébergeur.
+
+### Étape 3 : Vérifiez la zone DNS <a name="etape3"></a>
 
 Dans cette étape, vous allez vérifier l'adresse IP de votre hébergement, puis l'ajouter à votre `Zone DNS`{.action}.
 
