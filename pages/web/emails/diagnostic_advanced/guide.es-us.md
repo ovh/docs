@@ -24,8 +24,8 @@ section: Diagnóstico
 
 ## Requisitos
 
-- Tener una solución **MX Plan** o una solución **Email Pro** o una solución **Exchange**.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener una solución **MX Plan** o una solución **Exchange**.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
@@ -38,7 +38,6 @@ Compruebe que los servicios están correctamente operativos:
 - Para su **dominio**, acceda a la sección `Web Cloud`{.action}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione su dominio. Si su dominio ha caducado, se le indicará en la parte superior de la página.
 - Para su **alojamiento web**, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento. La fecha de expiración o de renovación automática del alojamiento se indica en la parte superior de la página.
 - Para un servicio **MXplan**, acceda a la sección `Web Cloud`{.action}, haga clic en `Correo electrónico`{.action} en la columna izquierda y seleccione el dominio correspondiente. Haga clic en la pestaña `Cuentas de correo`{.action}. Compruebe el estado de la cuenta de correo en la columna `Estado`.
-- Para un servicio **Email Pro**, acceda a la sección `Web Cloud`{.action}, haga clic en `Email Pro`{.action} en la columna izquierda y seleccione su plataforma. Haga clic en la pestaña `Cuentas de correo`{.action}. Compruebe el estado de la cuenta de correo en la columna `Estado`.
 - Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione `Exchange`{.action}. Haga clic en la pestaña `Cuentas de correo`{.action}. Compruebe el estado de la cuenta de correo en la columna `Estado`.
 
 ### No consigo enviar correos desde mi cliente de correo
@@ -47,27 +46,23 @@ Si utiliza un cliente de correo en su ordenador (Outlook, Mail de Mac, Thunderbi
 
 - Para un servicio **MXplan**, en la sección [Correo electrónico](https://docs.ovh.com/us/es/emails/) de nuestras guías **Web Cloud**.
 
-- Para un servicio **Email Pro**, en la sección [Email Pro](https://docs.ovh.com/us/es/emails-pro/) de nuestras guías de **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración del cliente de correo`.
-
 - Para un servicio **Exchange**, en la sección [Soluciones colaborativas Microsoft](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/) de nuestras guías **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración del cliente de correo Exchange` o su smartphone en `Configuración en un smartphone o tablet compatible con Exchange`.
 
 ### ¿Los mensajes de correo funcionan desde el webmail?
 
 Para asegurarse de que el fallo de funcionamiento no se deba a un error de configuración, realice una prueba de envío y de recepción directamente a través del webmail de OVHcloud. Si todo funciona correctamente, compruebe la configuración de su programa a través de las guías disponibles.
 
-Desde el navegador de su ordenador o desde un smartphone, vaya a la dirección <https://www.ovh.es/mail/>.
+Desde el navegador de su ordenador o desde un smartphone, vaya a la dirección <https://www.ovh.com/world/es/mail/>.
 
 ![webmail](images/webmail.png){.thumbnail}
 
 ### No consigo conectarme al webmail
 
-Asegúrese de tener la contraseña correcta. Si lo necesita, puede modificarlo. Compruebe también si la doble autenticación está activada (solo [Exchange](https://www.ovh.es/emails/hosted-exchange/)).
+Asegúrese de tener la contraseña correcta. Si lo necesita, puede modificarlo. Compruebe también si la doble autenticación está activada (solo [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/)).
 
 Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 
 - Para un servicio **MXplan**, consulte nuestra guía [Cambiar la contraseña de una dirección de correo MX Plan.](https://docs.ovh.com/us/es/emails/cambiar-contrasena-direccion-correo/)
-
-- Para un servicio **Email Pro**, acceda a la sección `Web Cloud`{.action}, haga clic en `Email Pro`{.action} en la columna izquierda y seleccione su plataforma. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña.
 
 - Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione `Exchange`{.action}. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña. <br> Compruebe si la doble autenticación está activada en nuestra guía [Configurar la doble autenticación en una cuenta Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/configurar-2fa-exchange/).
 
@@ -76,7 +71,6 @@ Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 Puede consultar las distintas tareas en curso en <http://travaux.ovh.net/> en este momento.
 
 - Para **MXplan**, consulte la sección `Correo electrónico.`
-- Para **Email Pro**, acceda a la sección `Microsoft.`
 - Para **Exchange**, acceda a la sección `Microsoft.`
 
 ### ¿Es correcto apuntar el dominio a mi servicio de correo?
