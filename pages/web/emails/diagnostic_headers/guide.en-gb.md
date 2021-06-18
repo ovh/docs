@@ -1,7 +1,7 @@
 ---
 title: 'Shared Mail: Guide to view email headers'
 slug: shared_mail_guide_to_view_email_headers
-section: 'Diagnostic'
+section: 'Troubleshooting'
 order: 2
 ---
 
