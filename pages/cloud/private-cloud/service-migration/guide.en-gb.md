@@ -201,7 +201,7 @@ Keeping track of these IDs is crucial to automating the migration of Edge firewa
 
 Example: Get a "Service Object": `GET /api/2.0/services/application/scope/{scopeId}`
 <br>
-Example: Get a "Service Object": `POST /api/2.0/services/application/{scopeId}` (body containing xml configuration of the service object)
+Example: Create a "Service Object": `POST /api/2.0/services/application/{scopeId}` (body containing xml configuration of the service object)
 
 ###### **1.9.2 NSX Edges**
 
@@ -254,15 +254,15 @@ The video below shows how to configure Hosted Private Cloud with the Veeam Backu
 
 <br>You can also refer to the [Veeam documentation](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf){.external} (PDF).
 
-#### Step 2: Post migration tasks
+#### Step 3: Post migration tasks
 
-##### **2.1 Affinity rules**
+##### **3.1 Affinity rules**
 
 Affinity rules are based on VM objects so rules can only be created after VMs have been migrated to the destination Hosted Private Cloud. Once the migration is completed, affinity rules can be re-applied on the destination Hosted Private Cloud.
 
 **Automation tips:** [This VMware community thread](https://communities.vmware.com/t5/VMware-PowerCLI-Discussions/Backup-Restore-DRS-VM-affinity-anti-affinity-rules-can-these-be/td-p/733981/page/2) details options to export and import affinity-rules via powercli.
 
-##### **2.2 Veeam Backup configuration**
+##### **3.2 Veeam Backup configuration**
 
 OVHcloud provided Veeam backups are configured per VM so can only be re-applied after the migration. Once the migration is completed, VMs can have their Veeam backups re-enabled using the UI or API
 
