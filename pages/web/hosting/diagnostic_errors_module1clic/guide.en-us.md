@@ -29,7 +29,7 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 
 > [!primary]
 >
-> The most common errors are listed here. If you experience any other anomaly, please refer to our [Web Hosting FAQ](../web-hosting-faq/).
+> We point out the most common errors here. If you have further difficulties, please consult our [Web Hosting FAQ](../web-hosting-faq/).
 >
 
 ### “An error has occurred loading the information. (You need at least one free database)“
@@ -134,8 +134,8 @@ This can have several causes:
 
 ## Go further <a name="#gofurther"></a>
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/)
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please check our [support offers](https://www.ovhcloud.com/en/support-levels/)
+If you would like assistance using and configuring your OVHcloud solutions, please check our [support offers](https://www.ovhcloud.com/en/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
