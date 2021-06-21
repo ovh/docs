@@ -49,7 +49,7 @@ Cliquez alors sur `Connecter`{.action}. Une fois connecté, vous aurez accès à
 > [!primary]
 >
 > En cas de difficulté de connexion, vous pouvez télécharger le profil de connexion Cyberduck pour OpenStack Swift (Keystone 3) et l'ouvrir avec Cyberduck.
-> <br><br>Faites un clic-droit <a href="https://trac.cyberduck.io/browser/shelves/02.2020/profiles/default/Openstack%20Swift%20(Keystone%203).cyberduckprofile?rev=48724&order=name" download>ici et cliquez sur « Enregistrer le lien sous »</a>
+> <br><br>Faites un clic-droit <a href="https://trac.cyberduck.io/browser/shelves/02.2020/profiles/default/Openstack%20Swift%20(Keystone%203).cyberduckprofile?rev=48724&order=name" download>ici et cliquez sur « Enregistrer la cible du lien sous »</a>
 > <br><br>Il sera nécessaire de renseigner vos identifiants (voir ci-dessus).
 >
 
