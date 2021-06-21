@@ -116,5 +116,5 @@ The web interface allows you to interactively execute queries on the different e
 
 ## Going Further
 
--   You can check the official documentation of the open source product **ML Serving** about [Models](https://serving-doc-mlg.ai.ovh.net/component/models.html)
+-   You can check the official documentation of the open source product **ML Serving** about [Models](../models)
 -   You can check the [supported compatibilities for custom models](../compatibility-matrix)

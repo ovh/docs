@@ -113,7 +113,7 @@ Une fois les informations complétées, cliquez sur `Créer`{.action}. Selon vos
 
 Une fois vos menus interactifs créés, cliquez sur `Retour à la configuration du numéro`{.action}.
 
-Vous devez à présent créer des étapes pour déclencher vos menus interactifs selon vos besoins. Vous pourrez par exemple définir des périodes de disponibilité (plages horaires) et les actions à délencher en dehors de ces périodes.
+Vous devez à présent créer des étapes pour déclencher vos menus interactifs selon vos besoins. Vous pourrez par exemple définir des périodes de disponibilité (plages horaires) et les actions à déclencher en dehors de ces périodes.
 
 #### 3.1 Créer une étape
 
