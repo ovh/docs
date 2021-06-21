@@ -21,11 +21,6 @@ Les adresses e-mail de l’offre MX Plan permettent d’envoyer et de recevoir v
 - Avoir encore la possibilité de créer des adresses e-mail dans le cadre de votre offre.
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}.
 
-> [!primary]
->
-> Concernant l’hébergement gratuit Start 10M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, en vous positionnant sur le nom de domaine concerné.
->
-
 ## En pratique
 
 Selon la date d'activation de votre service ou si celui-ci a été récemment migré, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci. 

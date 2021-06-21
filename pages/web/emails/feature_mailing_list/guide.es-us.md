@@ -4,6 +4,7 @@ slug: guia_de_utilizacion_de_listas_de_difusion
 excerpt: 'Cómo utilizar las listas de difusión'
 section: 'Funcionalidades de las direcciones de correo electrónico'
 order: 4
+hidden: true
 ---
 
 **Última actualización: 05/05/2020**
