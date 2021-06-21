@@ -5,7 +5,7 @@ section: Administration
 order: 11
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 21st June 2021**
 
 
 ## Objective  
@@ -91,7 +91,7 @@ It is good practice to take a backup of your environment before performing a syn
 
 #### Backup
 
-Creating a backup for an environment means saving a copy of the environment so that it can be restored. You will see the backup in the activity feed of your environment in the Web PaaS management console where you can trigger the restore by clicking on the `restore` link. For more information please refer [here](../administration-backup-and-restore).
+Creating a backup for an environment means saving a copy of the environment so that it can be restored. You will see the backup in the activity feed of your environment in the Web PaaS management console where you can trigger the restore by clicking on the `restore` link. 
 
 After clicking `Backup` a dialog box will appear that will provide commands to execute future merges from the command line using the Web PaaS CLI.
 
