@@ -4,6 +4,7 @@ slug: migration-adresse-e-mail-mutualisee-vers-exchange
 excerpt: 'Découvrez comment migrer une adresse e-mail MX Plan vers un compte Exchange'
 section: 'Migration d’un compte Exchange'
 order: 1
+hidden: true
 ---
 
 **Dernière mise à jour le 13/01/2021**

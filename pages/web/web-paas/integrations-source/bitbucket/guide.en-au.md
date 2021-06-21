@@ -4,7 +4,7 @@ slug: bitbucket
 section: Source
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 21st June 2021**
 
 
 ## Objective  
@@ -121,6 +121,6 @@ webpaas help integration:update
 
 ## Clones and commits
 
-When you run `webpaas get <projectID>` or use the clone command shown in the "Git" dropdown in the management console to clone the project, you will actually be cloning from your remote integrated repository, so long as you have the [appropriate access to do so](../../administration-users#user-access-and-integrations). 
+When you run `webpaas get <projectID>` or use the clone command shown in the "Git" dropdown in the management console to clone the project, you will actually be cloning from your remote integrated repository, so long as you have the appropriate access to do so. 
 
 Your Bitbucket repository is considered by Web PaaS to be the "source of truth" for the project. The project is only a mirror of that repository, and all commits should be pushed only to Bitbucket.

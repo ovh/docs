@@ -2,7 +2,7 @@
 title: Capacidade técnica
 slug: capacidades-técnicas
 routes:
-    canonical: https://docs.ovh.com/pt/private-cloud/capacidades-tecnicas/'
+    canonical: 'https://docs.ovh.com/pt/private-cloud/capacidades-tecnicas/'
 excerpt: 'Encontre as capacidades e limitações técnicas das soluções Managed Bare Metal fornecidas pela OVHcloud'
 section: FAQ
 order: 2

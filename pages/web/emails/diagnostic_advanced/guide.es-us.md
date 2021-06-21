@@ -64,7 +64,7 @@ Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 
 - Para un servicio **MXplan**, consulte nuestra guía [Cambiar la contraseña de una dirección de correo MX Plan.](https://docs.ovh.com/us/es/emails/cambiar-contrasena-direccion-correo/)
 
-- Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione `Exchange`{.action}. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña. <br> Compruebe si la doble autenticación está activada en nuestra guía [Configurar la doble autenticación en una cuenta Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/configurar-2fa-exchange/).
+- Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione `Exchange`{.action}. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña.
 
 ### ¿Hay algún incidente o mantenimiento en curso en mi servicio?
 
@@ -79,7 +79,7 @@ Compruebe que el dominio apunta correctamente a los servidores de correo de OVHc
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
-### Tras el envío de un email, recibo un mensaje indicando que no ha podido enviarse mi email, que incluye un código de 3 cifras.
+### Tras el envío de un email, recibo un mensaje indicando que no ha podido enviarse mi email, que incluye un código de 3 cifras
 
 Se trata de una devolución de error SMTP. Esto significa que el intercambio entre el servidor de envío y el servidor de correo de recepción no se ha podido realizar correctamente. El código se utiliza para determinar el tipo de error que el servidor ha encontrado. Por lo general, viene acompañado de un mensaje en el que se detalla el error.
 

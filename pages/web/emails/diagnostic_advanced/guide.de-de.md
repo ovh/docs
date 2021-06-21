@@ -22,7 +22,7 @@ Sie können Ihre E-Mails nicht über Ihr E-Mail-Programm oder über das Webmail-
 
 > [!primary]
 >
-> Wenn Sie weitere Fragen haben, die nicht in dieser Anleitung behandelt werden, lesen Sie bitte unsere [E-Mail FAQ](../emails-faq/).
+> Wenn Sie weitere Fragen haben, die nicht in dieser Anleitung behandelt werden, lesen Sie bitte unsere [E-Mail FAQ](../e-mails-faq/).
 
 ## Voraussetzungen
 
@@ -83,7 +83,7 @@ Sie können alle aktuellen Tasks auf <http://travaux.ovh.net/> überprüfen:
 
 ### Ist die Domain korrekt mit meinem E-Mail-Dienst verbunden?
 
-Überprüfen Sie, ob Ihre Domain korrekt auf die OVHcloud E-Mail-Server verweist. Hierzu müssen MX-Einträge in Ihrer DNS-Zone konfiguriert werden. <br>Lesen Sie dazu unsere Anleitung "[Einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen](../domains/webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/)".
+Überprüfen Sie, ob Ihre Domain korrekt auf die OVHcloud E-Mail-Server verweist. Hierzu müssen MX-Einträge in Ihrer DNS-Zone konfiguriert werden. <br>Lesen Sie dazu unsere Anleitung "[Einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen](../../domains/webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/)".
 
 ![DNS Zone](images/DNS.png){.thumbnail}
 
@@ -131,6 +131,6 @@ Im Folgenden finden Sie von Servern häufig verwendete negative SMTP-Antwortcode
 
 ## Weiterführende Informationen
 
-[E-Mail FAQ](../emails-faq/)
+[E-Mail FAQ](../e-mails-faq/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: 'Starting with Cinder API'
 excerpt: 'Find out how to you use the Cinder API client with Openstack'
-slug: starting-with-cinder
+slug: get-started-with-openstack-api-volumes
 section: OpenStack
 order: 6
 ---

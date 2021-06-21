@@ -1,6 +1,6 @@
 ---
 title: "Começar com a gestão dos volumes na API OpenStack"
-slug: debuter-avec-volumes-api-openstack
+slug: gestao-volumes-api-openstack
 legacy_guide_number: 2071
 section: OpenStack
 order: 7
