@@ -1,21 +1,21 @@
 ---
-title: Gerer ses archives depuis un client Swift
-slug: pca/cyberduck
-excerpt: Découvrez comment configurer Cyberduck afin de pouvoir gérer votre Public Cloud Archive
-section: Public Cloud Archive
+title: "Utiliser l'Object Storage avec CyberDuck"
+routes:
+    canonical: 'https://docs.ovh.com/ca/fr/storage/pca/cyberduck/'
+excerpt: 'Découvrez comment utiliser votre Object Storage avec Cyberduck'
+slug: utiliser_object_storage_avec_cyberduck
+section: 'Object Storage'
 ---
 
 **Dernière mise à jour le 18/06/2021**
 
 ## Objectif
 
-Public Cloud Archive est une solution de stockage qui peut s'utiliser à l'aide des APIs OpenStack. Cependant, il est possible que vous ne soyez pas familier avec cette façon de gérer un espace de stockage.
+L'Object Storage de OVHcloud est une solution de stockage gérée principalement par le biais de l'API OpenStack.
 
-Il existe donc des solutions graphiques, qui utilisent de manière invisible des APIs OpenStack pour vous. CyberDuck fait partie de ces solutions et est facilement configurable.
+Si vous n'êtes pas familiarisé avec la gestion du stockage en ligne de commande, certaines solutions graphiques utilisent l'API OpenStack. CyberDuck est l'une de ces solutions et est facilement configurable.
 
-D'autres interfaces sont elles aussi disponibles, leur configuration est similaire à celle que nous allons vous présenter.
-
-**Découvrez comment configurer Cyberduck afin de pouvoir gérer votre Public Cloud Archive a l'aide d'une interface graphique se basant sur les APIs Openstack.**
+**Découvrez comment utiliser Cyberduck pour gérer votre Object Storage à l'aide d'une interface graphique basée sur les API Openstack.**
 
 ## Prérequis
 
@@ -36,7 +36,7 @@ Si vous ne connaissez plus votre mot de passe d'utilisateur OpenStack, vous pouv
 
 Dans Cyberduck, ouvrez une connexion « OpenStack Swift (Keystone 3) ».
 
-![pca-cyberduck](images/login.png){.thumbnail}
+![objectstorage-cyberduck](images/login.png){.thumbnail}
 
 Renseignez les informations suivantes :
 
@@ -46,7 +46,7 @@ Renseignez les informations suivantes :
 
 Cliquez alors sur `Connecter`{.action}. Une fois connecté, vous aurez accès à l'arborescence de vos dossiers et fichiers.
 
-![pca-cyberduck](images/successful-login.png){.thumbnail}
+![objectstorage-cyberduck](images/successful-login.png){.thumbnail}
 
 > [!primary]
 >
