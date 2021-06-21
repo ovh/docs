@@ -4,7 +4,7 @@ slug: github
 section: Source
 ---
 
-**Last updated 11th May 2021**
+**Last updated 21st June 2021**
 
 
 ## Objective  
@@ -20,7 +20,7 @@ The [GitHub](https://github.com) integration allows you to manage your Web PaaS 
 ## Setup
 
 > [!primary]  
-> If the repository you are trying to integrate with a Web PaaS project has a default branch that is not `master` (e.g. `main`), there are a few additional steps you will need to perform to setup the integration. See the [Renaming the default branch guide](../../guides-general/default-branch) for more information.
+> If the repository you are trying to integrate with a Web PaaS project has a default branch that is not `master` (e.g. `main`), there are a few additional steps you will need to perform to setup the integration.
 > 
 
 ### 1. Generate a token
