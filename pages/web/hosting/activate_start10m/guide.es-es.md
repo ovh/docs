@@ -44,7 +44,7 @@ Se mostrará la ventana de activación. En el **paso 1** se muestra información
 | Entrada DNS MX 	| Los servidores de correo electrónico de OVHcloud se aplicarán al dominio. 	|
 
 > [!primary]
-> Le recordamos que no hay bases de datos incluidas con el alojamiento gratuito Start 10M. Si su proyecto necesita una base de datos, consulte nuestros  [planes dehosting](https://www.ovh.es/hosting/).
+> Le recordamos que no hay bases de datos incluidas con el alojamiento gratuito Start 10M. Si su proyecto necesita una base de datos, consulte nuestros  [planes de hosting](https://www.ovh.es/hosting/).
 
 **En el paso 3** se indica el precio del servicio. En **el paso 4**, debe leer los contratos y aceptar su pedido.
 
