@@ -4,7 +4,11 @@ slug: vps-partitionierung-nach-einem-upgrade
 section: 'Erste Schritte'
 ---
 
-**Stand 13.12.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Stand 18.05.2021**
 
 ## Einleitung
 
@@ -12,13 +16,13 @@ Nach einem Upgrade Ihres Virtual Private Server (VPS) kann eine erneute Partitio
 
 > [!warning]
 >
-> Die Partitionierung kann Ihre Daten dauerhaft beschädigen. OVH übernimmt keine Haftung für Verlust oder Beschädigung Ihrer Daten. Vergessen Sie nicht, Ihre Daten zu speichern, bevor Sie die nächsten Schritte einleiten.
+> Die Partitionierung kann Ihre Daten dauerhaft beschädigen. OVHcloud übernimmt keine Haftung für Verlust oder Beschädigung Ihrer Daten. Vergessen Sie nicht, Ihre Daten zu speichern, bevor Sie die nächsten Schritte einleiten.
 >
 
 ## Voraussetzungen
 
-- SSH-Zugang zum VPS (Root-Zugriff)
-- Serverstart im [Rescue-Modus](https://docs.ovh.com/de/vps/rescue/)
+- Sie haben einen Administrator-Zugang zum VPS (Windows).
+- Serverstart im [Rescue-Modus](https://docs.ovh.com/de/vps/rescue/)(Linux)
 
 ## Beschreibung
 
@@ -32,13 +36,16 @@ Da eine Partitionierung zum Verlust von Daten führen kann, wird **dringend empf
 
 ### Aushängen der Partition
 
-Wenn Sie mit Ihrem VPS im [Rescue-Modus](https://docs.ovh.com/de/vps/rescue/) verbunden sind, wird Ihre Partition automatisch erstellt. Um die Größe neu einzustellen, müssen Sie die Partition aushängen. Wenn Sie den Namen Ihrer Partition kennen, können Sie den folgenden Schritt überspringen. Wenn Sie den Namen nicht kennen, verwenden Sie den folgenden Befehl:
+
+Bei den alten VPS Reihen werden Ihre Partitionen automatisch im Rescue-Modus erstellt. Verwenden Sie folgenden Befehl, um den Mountort Ihrer Partition zu identifizieren:
 
 ```sh
 lsblk
 ```
 
-Die dem Rescue-Modus entsprechende Partition ist die im Verzeichnis / erstellte, die in Wirklichkeit das Wurzelverzeichnis darstellt. Die Partition Ihres VPS wurde wahrscheinlich in einem /mnt zugeordneten Verzeichnis erstellt bzw. gar nicht eingehängt.
+Die dem Rescue-Modus entsprechende Partition ist die Partition, die im Verzeichnis `/` Verzeichnis gespeichert ist, was in Wirklichkeit die Wurzel des Systems ist. Die Partition Ihres VPS wird wahrscheinlich in einem mit "/mnt" verbundenen Verzeichnis platziert.
+
+Wenn Ihr VPS jedoch zur aktuellen Reihe gehört, wird die Partition nicht automatisch gemountet. Wenn die Spalte MOUNTPOINT des Ergebnisses dies bestätigt, können Sie den Schritt des Zerlegens ignorieren.
 
 ```sh
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -48,7 +55,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Verwenden Sie den folgenden Befehl, um Ihre Partition auszuhängen:
+Um die Partition neu zu dimensionieren, müssen Sie sie auseinander nehmen. Verwenden Sie den folgenden Befehl, um Ihre Partition auszuhängen:
 
 ```sh
 umount /dev/sdb1
@@ -180,6 +187,7 @@ Um zu überprüfen, ob das Erweitern funktioniert hat, können Sie die neu erste
 ```sh
 mount /dev/sdb1 /mnt
 ```
+
 ```sh
 df -h
  
@@ -225,6 +233,24 @@ Verwenden Sie zum Überprüfen und Reparieren des Dateisystems den ersten Backup
 ```sh
 fsck -b 32768 /dev/sdb1
 ```
+
+### Windows
+
+#### Zugang zu File and Storage Services
+
+Sie finden diese im "Server Manager":
+
+![File and Storage Services](images/file-and-storage.png){.thumbnail}
+
+#### Volume anpassen
+
+Klicken Sie mit der rechten Maustaste auf C: und wählen Sie `Extense Volume...`{.action}.
+
+Wählen Sie dann Ihre neue Volume-Größe aus:
+
+![Set New Volume Size](images/extend.png){.thumbnail}
+
+Geben Sie die gewünschte Größe ein und klicken Sie auf `OK`{.action}. Ihr Volume wird dann erweitert.
 
 ## Weiterführende Informationen
 
