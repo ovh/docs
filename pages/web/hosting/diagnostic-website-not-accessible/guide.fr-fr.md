@@ -65,9 +65,9 @@ Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serv
 
 ![click-on-domain-name](images/click-on-domain-name.png){.thumbnail}
 
-Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} : 
+Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} :
 
-### Scénario 1 : Les serveurs DNS sont corrects
+#### Scénario 1 : Les serveurs DNS sont corrects
 
 Les serveurs DNS indiqués sont identiques aux cibles des entrées de type `NS` dans la zone de votre domaine : 
 
@@ -75,33 +75,35 @@ Les serveurs DNS indiqués sont identiques aux cibles des entrées de type `NS` 
 
 Passez à [l'étape 3](#etape3).
 
-|Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans la zone.|Modifiez les serveurs indiqués dans l'onglet `Serveurs DNS`{.action} en conséquence.|
-|Aucun serveur DNS n'est renseigné dans l'onglet `Serveurs DNS`{.action}.|Dans l'onglet `Serveurs DNS`{.action}, [ajoutez les cibles]((https://docs.ovh.com/fr/domains/generalites-serveurs-dns/#modifier-les-serveurs-dns)) des entrées de type `NS` dans votre `Zone DNS`{.action}, puis patientez 48 heures au maximum (délai technique maximum de propagation des changements de serveurs DNS).|
-|Les serveurs DNS qui apparaissent ne sont pas gérés par OVHcloud.|Contactez leur hébergeur.|
-
-### Scénario 2 : Un avertissement apparaît au-dessus de la Zone DNS
+#### Scénario 2 : Un avertissement apparaît au-dessus de la Zone DNS
 
 Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans la zone :
 
 ![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}
 
-Modifiez les serveurs indiqués dans l'onglet `Serveurs DNS`{.action} [en conséquence](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns).
+#### Scénario 3 : Aucune entrée de type NS n'apparaît dans la Zone DNS
 
-### Scénario 3
+La `Zone DNS`{.action} de votre domaine ne contient pas d'entrée de type `NS` :
 
-Aucun serveur DNS n'est renseigné dans l'onglet `Serveurs DNS`{.action} :
+![srv_dns_missing](images/srv_dns_missing.png){.thumbnail}
 
-![srv_dns_missing](images/srv_dns_missing.png){.thumbnail}	
+Effectuez une sauvegarde de la zone actuelle en cliquant sur le bouton `Modifier en mode textuel`{.action} : 
 
-Dans l'onglet `Serveurs DNS`{.action}, [ajoutez les cibles]((https://docs.ovh.com/fr/domains/generalites-serveurs-dns/#modifier-les-serveurs-dns)) des entrées de type `NS` dans votre `Zone DNS`{.action}, puis patientez 48 heures au maximum (délai technique maximum de propagation des changements de serveurs DNS).
+![change-DNS-in-text](images/change-DNS-in-text.png){.thumbnail}
 
-### Scénario 4
+Copiez/collez le contenu textuel de votre `Zone DNS`{.action} dans un document texte.
+
+Cliquez ensuite sur `Zone DNS`{.action}
+
+puis patientez 48 heures au maximum (délai technique maximum de propagation des changements de serveurs DNS).
+
+#### Scénario 4 : Votre domaine est relié à des serveurs DNS extérieurs
 
 Les serveurs DNS qui apparaissent ne sont pas gérés par OVHcloud : 
 
 ![](images/.png){.thumbnail}
 
-Contactez leur hébergeur.
+Contactez le prestataire qui gère ces serveurs.
 
 ### Étape 3 : Vérifiez la zone DNS <a name="etape3"></a>
 
