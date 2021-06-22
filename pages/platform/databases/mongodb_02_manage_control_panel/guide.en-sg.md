@@ -29,7 +29,7 @@ On the **Databases** home page, a table will list your services and their attrib
 
 ![All databases](images/configure_mongo01.png){.thumbnail}
 
-The button `Create a database`{.action} starts the process of ordering a [new database service](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/getting-started/).
+The button `Create a database`{.action} starts the process of ordering a [new database service](https://docs.ovh.com/sg/en/publiccloud/databases/getting-started/).
 
 You can remove a service by clicking on the `...`{.action} button and then on `Delete`{.action}.
 
@@ -43,7 +43,7 @@ At the bottom of the page you can find **Login information** for your database; 
 
 #### **Adding nodes**
 
-Click on `Add nodes`{.action} in the **Information** box. The number of nodes you can add depends on the service plan. Please visit the [MongoDB capabilities page](https://docs.ovh.com/sg/en/publiccloud/databases/capabilities/) for detailed information on each plan's properties.
+Click on `Add nodes`{.action} in the **Information** box. The number of nodes you can add depends on the service plan. Please visit the [MongoDB capabilities page](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/capabilities/) for detailed information on each plan's properties.
 
 ### Managing users and roles
 
@@ -80,7 +80,6 @@ Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new 
 ![Add IP](images/configure_mongo08.png){.thumbnail}
 
 You can edit and retract database access via the `...`{.action} button in the IP table.
-
 
 ## Go further
 

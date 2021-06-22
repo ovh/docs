@@ -1,10 +1,11 @@
 ---
 title: Gerer ses archives depuis un client Swift
 slug: pca/cyberduck
-excerpt: Retrouvez ici comment gerer et administrer vos archives Public Cloud.
+excerpt: Découvrez comment configurer Cyberduck afin de pouvoir gérer votre Public Cloud Archive
 section: Public Cloud Archive
 ---
 
+**Dernière mise à jour le 18/06/2021**
 
 ## Objectif
 
@@ -12,40 +13,51 @@ Public Cloud Archive est une solution de stockage qui peut s'utiliser à l'aide 
 
 Il existe donc des solutions graphiques, qui utilisent de manière invisible des APIs OpenStack pour vous. CyberDuck fait partie de ces solutions et est facilement configurable.
 
-D'autres interfaces sont elles aussi disponibles et trouvables directement sur Internet, leurs configurations se dérouleront de manière similaire à celle que nous allons vous présenter.
+D'autres interfaces sont elles aussi disponibles, leur configuration est similaire à celle que nous allons vous présenter.
 
-**Ce guide vous expliquera comment configurer Cyberduck afin de pouvoir gérer votre Public Cloud Archive a l'aide d'une interface graphique se basant sur les APIs Openstack.**
-
+**Découvrez comment configurer Cyberduck afin de pouvoir gérer votre Public Cloud Archive a l'aide d'une interface graphique se basant sur les APIs Openstack.**
 
 ## Prérequis
 
-- Un utilisateur Horizon configuré : voir le [guide](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/)
-- Le Tenant identifiant de votre project, l'identifiant utilisateur. Cette information est récupérable en naviguant dans un conteneur dans l’espace client
-- Le mot de passe de votre utilisateur
+- Télécharger et installer [Cyberduck](https://cyberduck.io/).
+- Disposer de vos identifiants utilisateur (*OS_USERNAME*) et de projet (*OS_PROJECT_NAME* ou *OS_TENANT_NAME*), que vous pouvez obtenir en téléchargeant le fichier « OpenRC » dans le menu [Users and Roles](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/#etape-1-recuperer-les-variables) de votre [espace client Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Disposer de votre mot de passe d'utilisateur OpenStack.
 
-
-![projet](images/project.png){.thumbnail}
+Si vous ne connaissez plus votre mot de passe d'utilisateur OpenStack, vous pouvez le modifier en suivant [ce guide](https://docs.ovh.com/fr/public-cloud/modification-du-mot-de-passe-dun-utilisateur-openstack/).
 
 ## En pratique
 
-### Configuration de Cyberduck
-- Télécharger [Cyberduck](https://cyberduck.io/){.external}
-- Se connecter sur un compte de type "Swift - OpenStack Object Storage"
+**Ce guide a été mis à jour sur la base de la version 7.9.2 de Cyberduck pour MacOS.**
 
+> [!primary]
+>
+> Suivant la source de téléchargement de votre fichier OpenRC (depuis Horizon ou depuis votre espace client OVHcloud), votre identifiant de projet peut être nommé *OS_PROJECT_NAME* ou *OS_TENANT_NAME*.
+>
 
-![configuration](images/Cyberduck.png){.thumbnail}
+Dans Cyberduck, ouvrez une connexion « OpenStack Swift (Keystone 3) ».
 
-Différentes informations sont à renseigner dans le formulaire :
+![pca-cyberduck](images/login.png){.thumbnail}
 
-- Server : auth.cloud.ovh.net (Serveur d'authentification)
-- Project:Domain:Username : OS_TENANT_NAME:default:OS_USERNAME
-- Password : le mot de passe de votre utilisateur Horizon
-- Se connecter
+Renseignez les informations suivantes :
 
+- Serveur : auth.cloud.ovh.net
+- Project:Domain:Username : OS_PROJECT_NAME:default:OS_USERNAME
+- Mot de passe : le mot de passe de votre utilisateur OpenStack
 
-![connexion](images/img_2756.jpg){.thumbnail}
+Cliquez alors sur `Connecter`{.action}. Une fois connecté, vous aurez accès à l'arborescence de vos dossiers et fichiers.
 
+![pca-cyberduck](images/successful-login.png){.thumbnail}
+
+> [!primary]
+>
+> En cas de difficulté de connexion, vous pouvez télécharger le profil de connexion Cyberduck pour OpenStack Swift (Keystone 3) et l'ouvrir avec Cyberduck.
+> <br><br>Faites un clic-droit <a href="https://trac.cyberduck.io/browser/shelves/02.2020/profiles/default/Openstack%20Swift%20(Keystone%203).cyberduckprofile?rev=48724&order=name" download>ici et cliquez sur « Enregistrer la cible du lien sous »</a> pour télécharger le profil.
+>
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+[Documentation de Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
+
+[Débuter avec l'API Swift](https://docs.ovh.com/fr/public-cloud/debuter-avec-lapi-swift/)
+
+Echangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
