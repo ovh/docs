@@ -18,7 +18,7 @@ Nach einem Upgrade Ihres Virtual Private Server (VPS) kann eine erneute Partitio
 
 ## Voraussetzungen
 
-- Sie haben administrativen Zugriff (Root) auf Ihren VPS über SSH oder RDP (Windows). 
+- Sie haben administrativen Zugriff auf Ihren VPS (nur für Windows-Systeme). 
 - Der Server wurde im [Rescue-Modus](../rescue/) neu gestartet (nur für GNU/Linux-Systeme).
 
 ## Beschreibung
