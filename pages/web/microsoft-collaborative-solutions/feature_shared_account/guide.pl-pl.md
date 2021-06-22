@@ -65,11 +65,11 @@ Wybierz operacje dostępne dla wybranego konta:
 
 |Stanowisko|Opis|
 |---|---|
-|Uprawnienia do wysyłki|Umożliwia wybranemu kontu e-mail wysłanie wiadomości "jako" współdzielonego konta e-mail.|
-|Uprawnienia do wysyłki|Umożliwia wybranemu kontu e-mail wysłanie wiadomości "ze strony" na wspólny adres e-mail.|
+|Prawo do wysyłki poczty|Umożliwia wybranemu kontu e-mail wysłanie wiadomości "jako" współdzielonego konta e-mail.|
+|Uprawnienia do wysyłki „w imieniu”|Umożliwia wybranemu kontu e-mail wysłanie wiadomości "ze strony" na wspólny adres e-mail.|
 |Prawo dostępu|Zezwalaj na wyświetlanie i zarządzanie kontem współdzielonym w OWA (webmail) lub Outlook.|
 
-Następnie kliknij Dalej` i `{.action}Zatwierdź` `{.action}, aby zapisać zmiany.
+Następnie kliknij `Dalej`{.action} i `Zatwierdź`{.action}, aby zapisać zmiany.
 
 ![emails](images/exchange-shared_accounts04.png){.thumbnail}
 

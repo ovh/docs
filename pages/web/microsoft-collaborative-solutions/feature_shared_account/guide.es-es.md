@@ -64,7 +64,7 @@ Elija las acciones posibles en la cuenta seleccionada:
 |Función|Descripción|
 |---|---|
 |Permiso de envío|Permite que la cuenta de correo electrónico seleccionada envíe "como" la dirección de correo electrónico compartida.|
-|Permiso de "enviar en nombre de"|Permite que la cuenta de correo seleccionada envíe "en nombre de" la dirección de correo electrónico compartida.|
+|Permiso de «envío como»|Permite que la cuenta de correo seleccionada envíe "en nombre de" la dirección de correo electrónico compartida.|
 |Derecho de acceso|Autoriza a la cuenta de correo seleccionada a mostrar y gestionar la cuenta compartida desde OWA (webmail) o Outlook.|
 
 Haga clic en `Siguiente`{.action} y `Acepte`{.action} para guardar los cambios.

@@ -64,7 +64,7 @@ Escolha as ações possíveis na conta selecionada:
 |Função|Descrição|
 |---|---|
 |Direito de envio|Permite que a conta de e-mail selecionada realize um envio "como" o endereço de e-mail partilhado.|
-|Direito de enviar|Permite que a conta de e-mail selecionada realize um envio "por" do endereço de e-mail partilhado.|
+|Permissão para "enviar como"|Permite que a conta de e-mail selecionada realize um envio "por" do endereço de e-mail partilhado.|
 |Direito de acesso|Autorizar a conta de e-mail selecionada a apresentar e gerir a conta partilhada a partir do OWA (webmail) ou do Outlook.|
 
 A seguir, clique em `Seguinte`{.action} e `Validar`{.action} para registar as alterações.
@@ -77,7 +77,7 @@ No nosso exemplo, permitimos que as contas **guia-exchange@** e **test@** acedam
 
 ### Utilização da conta partilhada a partir do OWA (webmail)
 
-Ligue-se ao webmail Exchange (OWA) no endereço com uma conta de e-mail com direito de acesso à conta partilhada. <https://www.ovh.pt/mail/>
+Ligue-se ao webmail Exchange (OWA) no endereço <https://www.ovh.com/fr/mail/> com uma conta de e-mail com direito de acesso à conta partilhada.. 
 <br>No nosso exemplo, ligamo-nos à conta **guia-exchange@**.
 
 Depois de aceder, na coluna da esquerda, clique com o botão direito na arborescência principal do seu endereço de e-mail e depois em `Adicionar uma pasta partilhada`{.action}. 
