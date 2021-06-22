@@ -1,16 +1,13 @@
 ---
 title: 'VPS-Partitionierung nach einem Upgrade'
 slug: vps-partitionierung-nach-einem-upgrade
+excerpt: Erfahren Sie hier, wie Sie Ihren Speicherplatz nach einem Upgrade vergrößern
 section: 'Erste Schritte'
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
->
+**Letzte Aktualisierung am 18.05.2021**
 
-**Stand 18.05.2021**
-
-## Einleitung
+## Ziel
 
 Nach einem Upgrade Ihres Virtual Private Server (VPS) kann eine erneute Partitionierung Ihres Speicherplatzes erforderlich sein. Im Folgenden wird die Vorgehensweise hierzu beschrieben.
 
@@ -21,8 +18,8 @@ Nach einem Upgrade Ihres Virtual Private Server (VPS) kann eine erneute Partitio
 
 ## Voraussetzungen
 
-- Sie haben einen Administrator-Zugang zum VPS (Windows).
-- Serverstart im [Rescue-Modus](https://docs.ovh.com/de/vps/rescue/)(Linux)
+- Sie haben administrativen Zugriff (Root) auf Ihren VPS über SSH oder RDP (Windows). 
+- Der Server wurde im [Rescue-Modus](../rescue/) neu gestartet (nur für GNU/Linux-Systeme).
 
 ## Beschreibung
 
@@ -37,15 +34,15 @@ Da eine Partitionierung zum Verlust von Daten führen kann, wird **dringend empf
 ### Aushängen der Partition
 
 
-Bei den alten VPS Reihen werden Ihre Partitionen automatisch im Rescue-Modus erstellt. Verwenden Sie folgenden Befehl, um den Mountort Ihrer Partition zu identifizieren:
+Bei den älteren VPS Reihen werden Ihre Partitionen im Rescue-Modus automatisch erstellt. Sie können den folgenden Befehl verwenden, um festzustellen, wo Ihre Partition eingehängt ist:
 
 ```sh
 lsblk
 ```
 
-Die dem Rescue-Modus entsprechende Partition ist die Partition, die im Verzeichnis `/` Verzeichnis gespeichert ist, was in Wirklichkeit die Wurzel des Systems ist. Die Partition Ihres VPS wird wahrscheinlich in einem mit "/mnt" verbundenen Verzeichnis platziert.
+Die dem Rescue-Modus entsprechende Partition ist die Partition, die im Verzeichnis `/` Verzeichnis gespeichert ist, was in Wirklichkeit das Rootverzeichnis des Systems ist. Die Partition Ihres VPS wird wahrscheinlich in einem mit "/mnt" verbundenen Verzeichnis platziert.
 
-Wenn Ihr VPS jedoch zur aktuellen Reihe gehört, wird die Partition nicht automatisch gemountet. Wenn die Spalte MOUNTPOINT des Ergebnisses dies bestätigt, können Sie den Schritt des Zerlegens ignorieren.
+Wenn Ihr VPS jedoch zur aktuellen Reihe gehört, wird die Partition nicht automatisch gemountet. Wenn die Spalte MOUNTPOINT des Ergebnisses dies bestätigt, können Sie das Aushängen der Partition ("unmount") überspringen.
 
 ```sh
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -55,7 +52,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Um die Partition neu zu dimensionieren, müssen Sie sie auseinander nehmen. Verwenden Sie den folgenden Befehl, um Ihre Partition auszuhängen:
+Um die Größe der Partition zu ändern, muss sie erst ausgehängt werden. Um Ihre Partition auszuhängen, verwenden Sie den folgenden Befehl:
 
 ```sh
 umount /dev/sdb1
@@ -63,7 +60,7 @@ umount /dev/sdb1
 
 ### Überprüfung des Dateisystems
 
-Nachdem die Partition ausgehängt ist, sollte das Dateisystem (`filesystem check`) auf mögliche Fehler in der Partition überprüft werden. Der Befehl lautet wie folgt:
+Nachdem die Partition ausgehängt ist, sollte das Dateisystem auf mögliche Fehler in der Partition überprüft werden (`filesystem check`). Der Befehl lautet wie folgt:
 
 ```sh
 e2fsck -yf /dev/sdb1
@@ -77,7 +74,7 @@ Pass 5: Checking group summary information
 /dev/sdb1: 37870/1310720 files (0.2% non-contiguous), 313949/5242462 blocks
 ```
 
-Wenn Sie Fehler feststellen, sollten Sie in jedem Fall entsprechende Maßnahmen ergreifen. Im Folgenden finden Sie einige der häufigsten Fehler:
+Wenn Fehler festgestellt werden, sollten Sie in jedem Fall entsprechende Maßnahmen ergreifen. Im Folgenden finden Sie einige der häufigsten Fehler:
 
 - `bad magic number in superblock`: Fahren Sie nicht fort. Um dieses Problem zu beheben, befolgen Sie in der vorliegenden Anleitung die Anweisungen im Abschnitt „[Wie wird der Fehler *bad magic number in superblock* behoben?](https://docs.ovh.com/de/vps/vps-partitionierung-nach-einem-upgrade/#wie-wird-der-fehler-bad-magic-number-in-superblock-behoben)“.
 
@@ -170,7 +167,7 @@ Syncing disks.
 
 ### Erweitern des Dateisystems auf der Partition
 
-Die Partition wurde erweitert, das Dateisystem (filesystem) belegt allerdings immer noch so viel Platz wie zuvor. Geben Sie zum Erweitern den folgenden Befehl ein:
+Die Partition wurde erweitert, das Dateisystem belegt allerdings immer noch so viel Platz wie zuvor. Geben Sie zum Erweitern den folgenden Befehl ein:
 
 ```sh
 resize2fs /dev/sdb1
@@ -244,13 +241,13 @@ Sie finden diese im "Server Manager":
 
 #### Volume anpassen
 
-Klicken Sie mit der rechten Maustaste auf C: und wählen Sie `Extense Volume...`{.action}.
+Klicken Sie mit der rechten Maustaste auf C: und wählen Sie `Extend Volume...`{.action}.
 
-Wählen Sie dann Ihre neue Volume-Größe aus:
+Sie können dann die neue Größe angeben.
 
 ![Set New Volume Size](images/extend.png){.thumbnail}
 
-Geben Sie die gewünschte Größe ein und klicken Sie auf `OK`{.action}. Ihr Volume wird dann erweitert.
+Geben Sie die gewünschte Größe des Volumes ein und klicken Sie auf `OK`{.action}. Ihr Volume wird nun erweitert.
 
 ## Weiterführende Informationen
 
