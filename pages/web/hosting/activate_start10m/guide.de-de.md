@@ -5,24 +5,31 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihr Start 10M Hosting aktivieren'
 section: 'Erste Schritte'
 ---
 
-**Letzte Aktualisierung am 05.05.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Stand 15.06.2021**
 
 ## Ziel
 
-Mit dem [Start 10M](https://www.ovh.de/domains/angebot_hosting_start10m.xml) Hosting bietet Ihnen OVHcloud ein Webhosting mit 10 MB sowie einen E-Mail-Account mit 5 GB Speicher. In dieser Anleitung erfahren Sie, wie Sie das Start 10M Hosting für Ihre [Domain](https://www.ovh.com/de/domains/) aktivieren.
+Mit dem [Start 10M](https://www.ovh.de/domains/angebot_hosting_start10m.xml){.external} bietet Ihnen OVHcloud ein Webhosting mit 10 MB und einen E-Mail-Account mit 5 GB Speicherplatz. In dieser Anleitung erfahren Sie, wie Sie das Start 10M Hosting für Ihre [Domainnamen](https://www.ovh.com/fr/domaines/){.external} aktivieren.
 
-**So aktivieren Sie Ihr kostenloses Start 10M Hosting.**
+> [!warning]
+> Dieses kostenlose Hosting mit 10 MB ist für eine einfache Präsentationsseite **ohne Datenbanken geeignet**. Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank wie ein CMS erfordert (zum Beispiel: Worpdress, Joomla, Prestashop, Drupal...). Bestellen Sie direkt eines unserer [Webhosting-Angebote über unsere Website](https://www.ovh.de/hosting/) oder  Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) {.external}.
+
+**So aktivieren Sie Ihr kostenloses Start 10M Hosting**
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Domainnamen](https://www.ovh.de/domains/), der mit keinem Webhosting verbunden ist.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über eine [Domainnamen](https://www.ovh.de/domains/){.external}, die von jedem Webhosting getrennt ist, in Ihrem OVHcloud Kundencenter.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angemeldet.
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie links im Menü auf `Domains`{.action} (**3**) und wählen Sie die betreffende Domain aus.
+Loggen Sie sich [in Ihr OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Kundencenter ein, klicken Sie links im Menü auf `Domainnamen`{.action} (**1**) und wählen Sie die betreffende Domain aus.
 
-Im Bereich **Allgemeine Informationen** (**2**) finden Sie den Abschnitt *Webhosting und Gratis-E-Mail*. Klicken Sie rechts auf den Button `...`{.action} und anschließend auf `Aktivieren`{.action} (**3**).
+Im Bereich **Allgemeine Informationen** (**2**) finden Sie den Abschnitt *Gratis Webhosting und E-Mail*. Klicken Sie rechts auf den Button `...`{.action} und anschließend auf `Aktivieren`{.action} (**3**).
 
 ![Start 10M](images/start10m-step1-01.png){.thumbnail}
 
@@ -32,27 +39,22 @@ Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen das An
 
 | Option                                       	| Beschreibung                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Keine Änderungen                           	| Es werden keine Änderungen in der DNS-Zone vorgenommen. Dies hat keine Auswirkungen auf die Webseiten und E-Mails.                                               								|
-| A- und MX-Einträge von *beispiel.com* 	| Die Domain wird auf die IP-Adresse des Start 10M Hostings verweisen. Auch die OVHcloud Mailserver werden für die Domain verwendet. 	|
-| A-Eintrag von *beispiel.com*          	| Die Domain wird auf das Start 10M Hosting verweisen, ohne die Mailserver zu ändern.                             								|
-| MX-Einträge von *beispiel.com*      	| Die Domain wird auf die OVHcloud Mailserver verweisen, ohne das Hosting zu ändern.  								|
+| DNS A Eintrag                         	| Die Domain wird auf die IP-Adresse des Start 10M Hostings verweisen.                                               								|
+| DNS MX Eintrag 	| Die E-Mail-Server von OVHcloud werden auf die Domain angewandt. 	|
 
 > [!primary]
-> Beim Start 10M Hosting ist keine Datenbank inklusive. Wenn Ihr Projekt eine Datenbank erfordert, können Sie sich unsere [Webhosting-Angebote](https://www.ovh.de/hosting/) ansehen, die Datenbanken enthalten.
+> Zur Erinnerung: Beim kostenlosen Start 10M Hosting sind keine Datenbanken inklusive. Wenn Ihr Projekt eine Datenbank benötigt, empfehlen wir Ihnen unsere [Webhosting](https://www.ovh.de/hosting/)-Angebote.
 
-Lesen und bestätigen Sie in **Schritt 3** nun noch die Nutzungsbedingungen des Angebots und klicken Sie in der Zusammenfassung in **Schritt 4** auf `Bestätigen`{.action}.
+**Schritt 3** erinnert Sie an die Preisgestaltung des Angebots. In **Schritt 4** müssen Sie die Verträge einsehen und Ihre Bestellung bestätigen.
 
-Sobald Ihre Bestellung bestätigt wurde, erhalten Sie eine E-Mail mit den [FTP-Login-Daten](../verbindung-ftp-speicher-webhosting/) für Ihr Start 10M Hosting.
+Sobald Ihre Bestellung bestätigt wurde, erhalten Sie eine E-Mail mit den FTP-[Login-Daten](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/){.external} zu Ihrem Start 10M Hosting.
 
-Um die im Start 10M Hosting enthaltene E-Mail-Adresse zu verwenden, lesen Sie die Anleitung [Eine E-Mail-Adresse mit MX Plan erstellen](../../emails/e-mail-adresse-erstellen/).
+Um die im Start 10M Hosting enthaltene E-Mail-Adresse zu verwenden, lesen Sie die Anleitung [Eine E-Mail-Adresse mit MX Plan erstellen](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}.
 
 ## Weiterführende Informationen
 
-[Mit dem Speicherplatz eines Webhostings verbinden](../verbindung-ftp-speicher-webhosting/)
+[Mit dem Speicherplatz Ihres Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/){.external}
 
-[Eine E-Mail-Adresse mit MX Plan erstellen](../../emails/e-mail-adresse-erstellen/)
+[Eine E-Mail-Adresse mit MX Plan erstellen](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
-
-
-

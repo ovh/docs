@@ -6,22 +6,29 @@ section: Introdução
 order: 2
 ---
 
-**Última atualização: 09/04/2020**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 15/06/2021**
 
 ## Objetivo
 
-Com o [Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external}, a OVHcloud oferece-lhe um alojamento web de 10 MB e uma conta de e-mail com 5 GB de capacidade de armazenamento. Este guia explica como pode ativar o alojamento Start 10M no seu [domínio](https://www.ovh.pt/dominios/){.external}.
+Com o [Start10M](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml){.external}, a OVHcloud oferece-lhe um alojamento Web de 10MB e uma conta de e-mail com 5 GB de armazenamento. Este guia explica como pode ativar o alojamento Start 10M no seu [domínio](https://www.ovh.com/fr/domaines/){.external}.
 
-<b>Saiba como ativar o alojamento gratuito Start 10M.</b>
+> [!warning]
+> Este alojamento gratuito de 10MB é adequado para uma simples página Web de apresentação, **não inclui uma base de dados**. Se pretender implementar um website com várias páginas e que requer uma base de dados, como um CMS (por exemplo: Worpdress, Joomla, Prestashop, Drupal, etc.), convidamo-lo a encomendar diretamente uma das [nossas ofertas de alojamento Web a partir do nosso site](https://www.ovh.com/fr/hebergement-web/) ou da sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) {.external}.
+
+**Saiba como ativar o alojamento gratuito Start 10M**
 
 ## Requisitos
 
-- Dispor, na Área de Cliente OVHcloud, de um [domínio](https://www.ovh.pt/dominios/){.external} não associado a um alojamento web.
+- Dispor de um [domínio](https://www.ovh.com/fr/domaines/){.external}, desassociado de qualquer alojamento Web, na Área de Cliente OVHcloud.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Domínios`{.action}(**1**) na barra à esquerda e escolha o domínio em causa.
+Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Nomes de domínio`{.action}(**1**) na barra à esquerda e escolha o domínio em questão.
 
 No menu **Informações gerais**(**2**), encontrará *Alojamento web e e-mail gratuito*. À direita, clique no botão `...`{.action} e, a seguir, em `Ativar`{.action}(**3**).
 
@@ -33,25 +40,22 @@ Aparecerá a janela de ativação. A **etapa 1** faz menção ao serviço e ao s
 
 | Escolha                                       	| Descrição                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nenhuma alteração                           	| Nenhuma alteração de zona DNS e nenhum impacto sobre o site e os e-mails.                                               								|
-| Os registos A e MX de *exemplo.com* 	| O domínio ficará associado ao endereço IP do alojamento Start 10M. Os servidores de e-mail OVHcloud também ficarão associados ao domínio. 	|
-| O registo A de *exemplo.com*          	| O domínio ficará associado ao alojamento Start 10M sem que haja alterações relativamente aos servidores de e-mail.                             								|
-| Os registos MX de *exemplo.com*      	| O domínio ficará associado aos servidores de e-mail OVHcloud sem que haja alterações ao nível do alojamento.  								|
+| Entrada DNS A                         	| O domínio ficará associado ao endereço IP do alojamento Start 10M.                                               								|
+| Entrada DNS MX 	| Os servidores de e-mail da OVHcloud serão aplicados no domínio. 	|
 
 > [!primary]
-> O alojamento gratuito Start 10M não vem acompanhado de uma base de dados. Se o seu projeto requer uma base de dados, consulte os nossos [serviços de alojamento web](https://www.ovh.pt/alojamento-partilhado/).
+> Relembramos que não existe uma base de dados incluída com o alojamento gratuito Start 10M. Se o seu projeto necessita de uma base de dados, consulte as nossas [ofertas de alojamento web](https://www.ovh.com/fr/hebergement-web/).
 
-Na **etapa 3**, leia e valide os termos e condições do serviço. Por fim, na **etapa 4**, clique em `Validar`{.action}.
+**A etapa 3** recorda-lhe o preço da oferta. Na etapa 4**, **deverá ler os contratos e validar a encomenda.
 
-Depois de validar o pedido, receberá um e-mail com as informações de [conexão FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external} ao seu alojamento Start 10M.
+Depois de validar a encomenda, receberá um e-mail com as informações de [ligação FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external} ao seu alojamento Start 10M.
 
-Consulte o guia de [criação de um endereço de e-mail com a oferta MX Plan](../../emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external} para beneficiar do endereço de e-mail incluído no seu alojamento Start 10M.
+Consulte o guia de [criação de um endereço de e-mail com a oferta MX Plan](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/){.external} para beneficiar do endereço de e-mail incluído no seu alojamento Start 10M.
 
-## Quer saber mais?
+## Saiba mais
 
-[Aceder ao espaço de armazenamento do alojamento web](../aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external}
+[Aceder ao espaço de armazenamento do alojamento Web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external}
 
-[Criar um endereço de e-mail com a oferta MX Plan](../../emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}
+[Criar um endereço de e-mail com a oferta MX Plan](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/){.external}
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
-

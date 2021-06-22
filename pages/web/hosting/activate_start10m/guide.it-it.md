@@ -6,22 +6,29 @@ section: 'Per iniziare'
 order: 2
 ---
 
-**Ultimo aggiornamento: 29/01/2020**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 15/06/2021**
 
 ## Obiettivo
 
-Con l’opzione [Start10M](https://www.ovh.it/domini/offerta_hosting_start10m.xml){.external},OVHcloud ti offre un hosting Web da 10 MB e un account email con 5 GB di storage.  Questa guida ti mostra come attivare l’hosting Start 10M sul tuo [dominio](https://www.ovh.it/domini/){.external}.   
+Con [Start10M](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml){.external}, OVHcloud ti offre un hosting Web da 10 MB e un account email con 5 GB di storage. Questa guida ti mostra come attivare l’hosting Start 10M sul tuo[dominio](https://www.ovh.com/fr/domaines/){.external}.
 
-**Questa guida ti mostra come attivare l’hosting gratuito Start 10M**
+> [!warning]
+> Questo hosting gratuito da 10 MB è utile per una semplice pagina Web di presentazione e **non include un database**. Per creare un sito Web composto da più pagine e che necessita di un database, come un CMS (ad esempio: Worpdress, Joomla, Prestashop, Drupal...), ti consigliamo di ordinare una delle [nostre soluzioni di hosting direttamente dal nostro sito](https://www.ovh.com/fr/hebergement-web/) o dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+
+**Come attivare il tuo hosting gratuito Start 10M**
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovh.it/domini/){.external}, separato da qualsiasi hosting Web, nel tuo Spazio Cliente.
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un [dominio](https://www.ovh.com/fr/domaines/){.external}, separato da qualsiasi hosting Web, nello Spazio Cliente OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Domini`{.action}(**1**) della colonna a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action}(**1**) nel menu a sinistra e seleziona il dominio interessato.
 
 Nel riquadro **Informazioni generali**(**2**) visualizzi la voce *Hosting Web e email gratis*. Clicca sui tre puntini `...`{.action} a destra e poi su `Attiva`{.action}(**3**).
 
@@ -33,27 +40,22 @@ Si apre la pagina di attivazione. **Lo step 1** mostra i dettagli del piano e la
 
 | Opzione                                       	| Descrizione                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nessuna modifica                           	| Nessuna modifica della zona DNS, nessun impatto sul sito, né sulle email.                                               								|
-| Record A e MX di *esempio.com* 	| Il dominio sarà associato all’indirizzo IP dell’hosting Start 10M. Anche i server di posta elettronica di OVHcloud saranno associati al dominio. 	|
-| Il record A di *esempio.com*          	| Il dominio sarà associato all’hosting Start 10M senza alcuna modifica dei server di posta elettronica.                              								|
-| I record MX di *exemple.com*      	| Il dominio sarà associato ai server di posta elettronica di OVHcloud senza alcuna modifica a livello di hosting.  								|
+| Record DNS A                         	| Il dominio sarà associato all’indirizzo IP dell’hosting Start 10M.                                               								|
+| Record DNS MX 	| I server di posta di OVHcloud verranno applicati al dominio. 	|
 
 > [!primary]
-> L’hosting gratuito Start 10M non include alcun database. Se il tuo progetto richiede un database, consulta le nostre [soluzioni di hosting Web](https://www.ovh.it/hosting-web/) con database inclusi.
+> Ti ricordiamo che l'hosting gratuito Start 10M non include alcun database. Se il tuo progetto richiede un database, ti invitiamo a consultare le nostre [offerte di hosting Web](https://www.ovh.com/fr/hebergement-web/) che lo contengono.
 
-Leggi e accetta le condizioni contrattuali dell’offerta allo **Step 3** e infine `Conferma`{.action} il riepilogo allo **Step 4**.
+**Lo Step 3** ti ricorda la tariffazione dell'offerta. Per completare **lo Step 4**, è necessario prendere visione dei contratti e confermare il tuo ordine.
 
-Dopo aver confermato l’ordine, riceverai un’email con le informazioni di [connessione FTP](../accedere-spazio-storage-ftp-hosting-web/){.external} al tuo hosting Start 10M.
+Una volta confermato l'ordine, riceverai un'email con le informazioni di [connessione FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external} al tuo hosting Start 10M.
 
-Consulta la guida sulla [creazione di un account E-mail MX Plan](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email//){.external} per poter usufruire dell’indirizzo email incluso nel tuo piano di hosting Start 10M.
+Consulta la guida sulla[creazione di un account E-mail MX Plan](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/){.external} per poter usufruire dell’indirizzo email incluso nel tuo piano di hosting Start 10M.
 
 ## Per saperne di più
 
-[Accedere allo spazio di storage di un hosting Web](../accedere-spazio-storage-ftp-hosting-web/){.external}
+[Connettersi allo spazio di storage di un hosting Web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external}
 
-[Creare un account email con MX Plan](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external}
+[Creare un account email con MX Plan](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>
-
-
-
