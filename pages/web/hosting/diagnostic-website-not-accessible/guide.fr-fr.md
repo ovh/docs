@@ -5,13 +5,13 @@ excerpt: Diagnostiquez les causes de l'inaccessibilité de votre site
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 18/06/2021**
+**Dernière mise à jour le 22/06/2021**
  
 ## Objectif
 
 Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent une configuration erronée de vos DNS ou un domaine suspendu (si votre site n'affiche pas l'une des anomalies décrites ici, consultez la section [Aller plus loin](#aller-plus-loin)) : 
 
-|Navigateur|Action à entreprendre|
+|Navigateur|Erreur concernée|
 |-|---|
 |Sur Chrome : « Ce site est inaccessible »|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
 |Sur Firefox : « Hum, nous ne parvenons pas à trouver ce site. »|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
@@ -61,7 +61,7 @@ Renouvelez-le, si nécessaire, via le bouton `...`{.action} à droite de l'écra
 
 ### Étape 2 : Vérifiez les serveurs DNS
 
-Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serveurs-dns/), cliquez en haut à droite de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}, puis sur le domaine de votre site : 
+Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serveurs-dns/), cliquez en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}, puis sur le domaine de votre site : 
 
 ![click-on-domain-name](images/click-on-domain-name.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} :
 
 #### Scénario 1 : Les serveurs DNS sont corrects
 
-Les serveurs DNS indiqués sont identiques aux cibles des entrées de type `NS` dans la zone de votre domaine : 
+Les serveurs DNS indiqués dans l'onglet `Serveurs DNS`{.action} sont identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action} : 
 
 ![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
 
@@ -85,19 +85,19 @@ Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS 
 
 ![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}
 
-[Modifiez les serveurs DNS](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), afin que ceux indiqués dans l'onglet `Serveurs DNS`{.action} correspondent aux cibles des entrées de type `NS` dans la `Zone DNS`{.action} de votre nom de domaine.
+[Modifiez les serveurs DNS](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), afin qu'ils soient identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}.
 
-#### Scénario 3 : Aucune entrée de type NS n'apparaît dans la Zone DNS
+#### Scénario 3 : Aucune entrée de type NS n'apparaît dans la Zone
 
 La `Zone DNS`{.action} de votre domaine ne contient pas d'entrée de type `NS` :
 
 ![srv_dns_missing](images/srv_dns_missing.png){.thumbnail}
 
-Effectuez une sauvegarde de la zone actuelle en cliquant sur le bouton `Modifier en mode textuel`{.action} : 
+Effectuez une sauvegarde de la zone actuelle en cliquant sur le bouton `Modifier en mode textuel`{.action} à droite de votre écran : 
 
 ![change-DNS-in-text](images/change-DNS-in-text.png){.thumbnail}
 
-Copiez/collez le contenu textuel de votre `Zone DNS`{.action} dans un document texte.
+Puis copiez/collez le contenu textuel de votre `Zone DNS`{.action} dans un document texte. Enregistrez localement ce document.
 
 Cliquez ensuite sur `Réintialiser ma zone DNS`{.action}, puis sélectionnez `Non, mais je veux réinitialiser ma zone DNS`{.action}, indiquez vos serveurs mail et d'hébergement et cliquez sur `Valider`{.action}.
 
@@ -111,11 +111,11 @@ Les serveurs DNS qui apparaissent ne sont pas gérés par OVHcloud :
 
 ![external-dns-servers](images/external-dns-servers.png){.thumbnail}
 
-Contactez le prestataire qui gère ces serveurs.
+Contactez le prestataire qui gère ces serveurs, afin de déterminer les raisons de l'inaccessibilité de votre site.
 
 ### Étape 3 : Vérifiez la zone DNS <a name="etape3"></a>
 
-Dans cette étape, vous allez vérifier l'adresse IP de votre hébergement, puis l'ajouter à votre `Zone DNS`{.action}.
+Dans cette étape, vous allez retrouver l'adresse IP de votre hébergement, puis l'ajouter à votre `Zone DNS`{.action}.
 
 Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une tierce personne, contactez le support de l'hébergeur ou le prestataire concerné, afin d'obtenir l'adresse IP du serveur hébergeant votre site.
 
@@ -127,7 +127,7 @@ Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou I
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
-Puis reportez-là dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`. Patientez enfin 24 heures au maximum (délai technique maximum de propagation des modifications dans la `Zone DNS`{.action}).
+Puis reportez-la dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`. Patientez enfin 24 heures au maximum (délai technique maximum de propagation des modifications dans la `Zone DNS`{.action}).
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
