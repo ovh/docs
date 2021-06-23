@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer vos commandes chez OVHcloud'
 section: 'Gérer ses commandes, factures et services'
 ---
 
-**Dernière mise à jour le 2018/11/02**
+**Dernière mise à jour le 02/11/2018**
 
 ## Objectif
 
@@ -23,8 +23,7 @@ Une commande chez OVHcloud passe par différents états, que vous pouvez suivre 
 - Être connecté à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - Avoir passé au moins une commande chez OVHcloud.
 
-
-##  En pratique
+## En pratique
 
 ### Le bon de commande
 
@@ -39,9 +38,7 @@ Le bon de commande est créé au moment du passage d'une commande. Il liste les 
 |3|Si vous avez enregistré un moyen de paiement en tant que moyen de paiement par défaut, il vous sera proposé à cet endroit. Dans le cadre d'un renouvellement automatique, un moyen de paiement par défaut est nécessaire.|
 |4|Vous trouverez ici les moyens de paiement disponibles. Ne vous seront proposés que les moyens de paiement autorisés dans le pays d'origine du compte ou ceux liés au type de compte enregistré.|
 
-
 Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} comme expliqué dans la partie suivante.
-
 
 ### Accéder aux bons de commandes dans l'espace client OVHcloud
 
@@ -52,7 +49,6 @@ Pour accéder au panneau de gestion des commandes, il vous suffit de cliquer en 
 Vous arriverez alors sur une page récapitulant les différentes commandes non expirées passées sur votre compte OVHcloud.
 
 ![Récpitulatif des commandes](images/order_recap.png){.thumbnail}
-
 
 Sur celui-ci, vous retrouverez les informations suivantes :
 
@@ -73,8 +69,6 @@ Voici les différents états de commande :
 Dans le cas d'un bon de commande dont la livraison est en cours ou en attente de paiement, il est possible de le visualiser. Pour cela il suffit de cliquer sur `...`{.action} puis `Voir la commande au format HTML`{.action}.
 
 ![Récapitulatif des commandes](images/html_order_ca.png){.thumbnail}
-
-
 
 ## Aller plus loin
 

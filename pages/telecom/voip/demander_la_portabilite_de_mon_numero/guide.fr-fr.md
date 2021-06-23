@@ -23,6 +23,11 @@ La portabilité permet à un abonné de conserver son numéro de téléphone lor
 
 ## En pratique
 
+> [!warning]
+>
+> Si vous souhaitez porter un ou plusieurs numéros belges, nous vous invitons à consulter notre guide dédié « [Demander et suivre une portabilité de numéro belge](../portabilite-numero-belge) ».
+>
+
 ### Étape 1 : préparer sa demande de portabilité
 
 Selon le type du ou des numéros que vous souhaitez porter chez OVHcloud, le processus à suivre sera différent. Cela affectera aussi le délai nécessaire à sa complétion. Afin que votre demande de portabilité arrive au plus vite à son terme, nous vous invitons à prendre en considération les recommandations suivantes :
@@ -40,7 +45,7 @@ Selon le type du ou des numéros que vous souhaitez porter chez OVHcloud, le pro
 
 ### Étape 2 : demander la portabilité
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez le groupe de facturation concerné dans lequel le ou les numéros portés seront intégrés. 
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez le groupe de facturation concerné dans lequel le ou les numéros portés seront intégrés.
 
 Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliquez sur `Demander une portabilité`{.action}.
 
@@ -139,7 +144,7 @@ Dans la page qui apparaît, vous trouverez l'état de vos demandes de portabilit
 
 Si, durant le processus, vous souhaitez annuler votre demande de portabilité, vous pouvez le faire, au plus tard jusqu'à 72 heures avant la date de portabilité, grâce au bouton `Annuler la portabilité ?`{.action}.
 
-Nous vous recommandons également de consulter régulièrement votre adresse e-mail. Des notifications peuvent en effet vous y être envoyées si une action de votre part est requise. 
+Nous vous recommandons également de consulter régulièrement votre adresse e-mail. Des notifications peuvent en effet vous y être envoyées si une action de votre part est requise.
 
 Vous trouverez ci-dessous un récapitulatif des différentes étapes du **processus de portabilité d'un numéro isolé** chez OVHcloud :
 
@@ -163,7 +168,6 @@ Vous trouverez ci-dessous un récapitulatif des différentes étapes du **proces
 |Rapport intermédiaire de l'opérateur reçu|L'opérateur cédant vérifie l'ensemble de la tranche de numéros SDA|5 jours ouvrés|
 |Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Afin de vous aider, reportez-vous aux informations décrites dans l'étape 4 « [Préparer la configuration des numéros portés](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-4-preparer-la-configuration-des-numeros-portes){.external} »| - |
 |Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVHcloud configure les numéros sur son réseau (déclaration *APNF* et routage). Il faut en moyenne 24h pour le déploiement APNF aprés la portabilité du numéro. Pendant ces 24h, les opérateurs doivent mettre à jour leur table de routage afin que les appels arrivent bien chez OVHcloud. La portabilité est terminée et les numéros opérationnels|3 jours ouvrés|
-
 
 ### Étape 4 : préparer la configuration des numéros portés
 

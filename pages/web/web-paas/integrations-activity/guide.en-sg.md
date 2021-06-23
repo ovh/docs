@@ -4,7 +4,7 @@ slug: integrations-activity
 section: Integrations
 ---
 
-**Last updated 11th May 2021**
+**Last updated 3rd June 2021**
 
 
 ## Objective  
@@ -245,16 +245,4 @@ h.digest("hex")
 * The available hashing functions are `'sha256'`, `'sha1'` and `'md5'` as hashing functions.
 * The available digest formats are `'base64'`, `'hex'` or `''` (empty).  An empty digest will yield a byte string.
 
-For example, if you wanted to call an AWS API, you would calculate the signature like so:
 
-```Javascript
-function HMAC(key, value) {
-  var h = crypto.createHmac("sha256", key);
-  h.update(value);
-  return h.digest();
-}
-var kSecret = "wJalrXUtnFEMI/K7MDENG+bPxRfiCYEXAMPLEKEY";
-HMAC(HMAC(HMAC(HMAC("AWS4" + kSecret,"20150830"),"us-east-1"),"iam"),"aws4_request");
-```
-
-> Example taken from the [AWS documentation for signing API requests](https://docs.aws.amazon.com/general/latest/gr/sigv4-calculate-signature.html).

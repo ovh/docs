@@ -17,7 +17,7 @@ Les erreurs sur les comptes e-mail Exchange peuvent avoir une multitude de cause
 
 ## Prérequis
 
-- Disposer d'une [solution Exchange OVHcloud](https://www.ovh.co.uk/emails/hosted-exchange)déjà installée
+- Disposer d'une [solution Exchange OVHcloud](https://www.ovh.com/fr/emails/hosted-exchange/) déjà installée
 - Disposer des informations d'identification pour le compte Exchange à vérifier
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
@@ -81,14 +81,16 @@ Cette erreur indique que les e-mails ne peuvent pas être reçus et sera égalem
 
 En fonction de l'utilisation de votre service Exchange, les serveurs MX suivants sont valides :
 
-- Exchange seul : mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net et mx4.mail.ovh.net
-- Exchange + E-mail POP/IMAP hébergé par OVHcloud: mx0.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net et mx4.mail.ovh.net
-- Exchange + E-mail POP/IMAP non hébergé par OVHcloud: ex**?**.mail.ovh.net 
+- Exchange seul : mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net et mx4.mail.ovh.net
+- Exchange + E-mail POP/IMAP hébergé par OVHcloud: mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net et mx4.mail.ovh.net
+- Exchange + E-mail POP/IMAP non hébergé par OVHcloud: ex**?**.mail.ovh.net
 
 <a name="hostname"></a>
+
 > [!warning] 
 > Dans nos guides, nous utilisons comme nom de serveur: ex<b>?</b>.mail.ovh.net. Vous devrez remplacer le « ? » par le numéro correspondant au serveur de votre service Exchange.<br>
->Vous trouverez ces informations dans l'espace client OVHcloud, dans la section `Web Cloud`{.action}.  Ouvrez `Microsoft`{.action} dans le menu à gauche, puis `Exchange`{.action} et sélectionnez votre service. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.
+> Vous trouverez ces informations dans l'espace client OVHcloud, dans la section `Web Cloud`{.action}.  Ouvrez `Microsoft`{.action} dans le menu à gauche, puis `Exchange`{.action} et sélectionnez votre service. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.
+>
 
 > [!primary]
 >

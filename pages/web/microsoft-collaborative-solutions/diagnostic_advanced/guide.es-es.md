@@ -1,103 +1,129 @@
 ---
-title: Qué hacer en caso de error del diagnóstico Exchange
-excerpt: Qué hacer en caso de error del diagnóstico Exchange
+title: Uso del diagnóstico de errores Exchange
+excerpt: 'Cómo realizar un diagnóstico automatizado de los errores en las cuentas Exchange'
 slug: que_hacer_en_caso_de_error_del_diagnostico_exchange
 legacy_guide_number: g2277
-section: Miscelánea
+section: Diagnóstico Exchange
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
 
-## Realizar un diagnóstico
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+**Última actualización: 28/05/2021**
 
-En la columna izquierda, haga clic en «Microsoft» > «Exchange» y seleccione su servicio Exchange.
+## Objetivo
 
-![](images/img_4450.jpg){.thumbnail}
-A continuación, abra la pestaña «Diagnóstico» e introduzca la cuenta de correo Exchange que quiera diagnosticar y su contraseña.
+Los errores en las cuentas de correo Exchange pueden tener múltiples causas. Un diagnóstico automático de las funcionalidades de la cuenta permite reducir el número de causas. Los resultados de estas pruebas también serán útiles en caso de solicitar asistencia para su servicio Exchange.
 
-El diagnóstico Exchange puede tardar entre 3 y 10 minutos.
+**Esta guía explica cómo ejecutar un diagnóstico Exchange e interpretar los resultados.**
 
-![](images/img_4451.jpg){.thumbnail}
-En la imagen puede ver un posible resultado de diagnóstico de una cuenta de correo Exchange.
+## Requisitos
 
-Desde ahí puede realizar las siguientes acciones:
+- Tener una [solución Exchange de OVHcloud](https://www.ovh.es/emails/hosted-exchange/) ya instalada.
+- Disponer de las claves de acceso para la cuenta Exchange que debe verificar.
+- Estar conectado al [área de cliente de OVHcloud.](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 
-- «Nuevo diagnóstico»: Realizar otro diagnóstico. 
-- «Crear una solicitud de asistencia»: Permite enviar un tíquet de soporte con el resultado del diagnóstico.
+## Procedimiento
 
+### Realizar un diagnóstico
 
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Web Cloud`{.action}. Seleccione `Microsoft`{.action} en el menú de la izquierda, haga clic en `Exchange`{.action} y seleccione su servicio.
 
-![](images/img_4471.jpg){.thumbnail}
+![Diagnóstico Exchange](images/img_4450.png){.thumbnail}
 
+Abra la pestaña `Diagnóstico`{.action} y seleccione la cuenta Exchange correspondiente en el menú desplegable. Introduzca la contraseña de la cuenta en el campo correspondiente y haga clic en `Iniciar el diagnóstico`{.action}.
 
-## Si el diagnóstico revela errores
-A continuación explicamos los detalles de cada error posible para ayudarle a resolverlos.
+![Diagnóstico Exchange](images/img_4451.png){.thumbnail}
 
+El diagnóstico tardará entre 3 y 10 minutos. Aquí hay un ejemplo de los resultados:
 
-ATENCIÓN: La cuenta ha sido bloqueada por envío de spam
+![Diagnóstico Exchange](images/img_4471.png){.thumbnail}
 
-Significa que los envíos desde la cuenta están desactivados temporalmente. La recepción no se ve afectada.
+La página de resultados propone dos acciones para continuar:
 
-Cuando la cuenta está bloqueada por spam, se indica en la pestaña «Cuentas de correo» del servicio Exchange correspondiente mediante un botón «SPAM». Haga clic sobre dicho botón para ver el email recibido tras el bloqueo.
+- `Nuevo diagnóstico`{.action}: ejecuta otro diagnóstico.
 
-Para desbloquear la cuenta es necesario responder a dicho email.
+- `Crear una solicitud de asistencia`{.action}: le permite crear un tíquet a nuestro soporte técnico. El tíquet contendrá los resultados del diagnóstico.
 
-![](images/img_4453.jpg){.thumbnail}
-ATENCIÓN: La suscripción a la cuenta ha expirado
+### Explicación de los errores
 
-Significa que la suscripción ya no está activa. La recepción y el envío están desactivados. Para reactivar el servicio, es necesario contactar con el soporte en el 902 106 113.
-ATENCIÓN: La cuenta ha sido bloqueada por la política de seguridad
+Consulte el siguiente resumen de posibles errores para encontrar la solución más rápida.
 
-Desde su servicio Exchange puede establecer una política de seguridad que permita bloquear la cuenta durante un intervalo de tiempo determinado.
+### La cuenta está bloqueada por envío de spam. <a name="blocked"></a>
 
-Puede configurarla para que la cuenta se bloquee al cabo de un número determinado de intentos de conexión infructuosos durante un tiempo determinado.
+Una cuenta bloqueada siempre recibe mensajes de correo, pero el envío ha sido desactivado por el sistema de protección automática contra el spam.
 
-Si encuentra un bloqueo de este tipo, puede esperar a que transcurra el tiempo indicado y se desbloquee la cuenta, o realizar una solicitud de asistencia para contactar con nuestro soporte.
-ATENCIÓN: La autenticación en el webmail no ha podido realizarse
+Puede comprobarlo en la pestaña `Cuentas de correo`{.action} de su servicio Exchange. La cuenta tendrá una mención `SPAM` en la columna "Estado" de la tabla.
 
-Puede deberse a que la contraseña introducida para la realización del diagnóstico no sea correcta. En ese caso, puede realizar un nuevo diagnóstico con la contraseña correcta.
+Consulte nuestra guía ¿[Qué hacer en caso de cuenta bloqueada por spam?](../bloqueo-por-correo-no-deseado/) para que nuestros equipos de seguridad puedan reactivar la cuenta.
 
-También puede actualizar la contraseña desde su servicio Exchange, en la pestaña «Cuentas de correo» y luego volver a realizar el diagnóstico. Si el problema sigue presente, puede crear una solicitud de asistencia.
-ATENCIÓN: El registro MX del dominio no es válido
+### La suscripción a la cuenta ha expirado. <a name="expired"></a>
 
-Este error, que aparecerá junto al error «ATENCIÓN: El mensaje de correo de prueba no se ha recibido», revela que no es posible recibir mensajes de correo.
+La suscripción ya no está activa, por lo que se ha desactivado el envío y la recepción. Puede [comprobar el estado de facturación del servicio](../gestion-de-la-facturacion-exchange/) en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y renovarlo para reactivar la cuenta.
 
-Los servidores MX válidos para el servicio Exchange son los siguientes:
+### La cuenta está bloqueada por la política de seguridad.
 
-|Exchange solo|mx1.mail.ovh.net|
-|---|
-|Exchange solo|mx1.mail.ovh.net|
-|Exchange + Correo POP/IMAP alojado en OVH|mx1.mail.ovh.net|
-|Exchange + Correo POP/IMAP no alojado en OVH|ex.mail.ovh.net o ex2.mail.ovh.net|
+Si una política de seguridad está activada en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), la cuenta puede bloquearse temporalmente.
 
+Por ejemplo, puede decidir que la cuenta se bloquee después de varios intentos de conexión fallidos, por un período determinado por usted mismo.
 
-ATENCIÓN: El registro SRV del dominio no es válido
+En ese caso, puede esperar a que la cuenta vuelva a estar disponible o contactar con nuestro equipo Exchange creando una solicitud de asistencia.
 
-El registro SRV es necesario para la configuración automática de la cuenta Exchange en un cliente de correo compatible como Outlook 2010, 2013 o 2016.
+Para más información sobre esta funcionalidad, consulte nuestra [guía sobre la política de seguridad](../configurar-politica-seguridad-exchange/).
 
-Puede comprobar el registro SRV en la zona DNS del dominio.
+### La autenticación en el webmail no ha podido realizarse. <a name="password"></a>
 
-Este es el registro SRV necesario para la solución Exchange:
+Esto puede deberse a la introducción de una contraseña de cuenta incorrecta. En primer lugar, compruebe que la contraseña es correcta conectándose al [webmail](../exchange_2016_guia_de_uso_de_outlook_web_app/) y reinicie el diagnóstico.
 
-|Prioridad|0|
-|Peso|0|
-|Puerto|443|
-|Destino (Hosted)|ex.mail.ovh.net o ex2.mail.ovh.net|
-|Destino (Private)|nombre-de-su-host|
+Si lo necesita, puede cambiar la contraseña de la cuenta en la pestaña `Cuentas de correo`{.action} del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Si el problema persiste, cree una solicitud de asistencia.
 
+### El registro MX del dominio no es válido
 
-ATENCIÓN: El mensaje de correo de prueba no ha podido enviarse desde la cuenta
+Este error indica que los mensajes de correo no pueden ser recibidos y que también estará relacionado con el error "**ATENCIÓN: El mensaje de correo de prueba no se ha recibido.** ".
 
-Este error indica que no es posible enviar mensajes de correo desde la cuenta.
+En función del uso de su servicio Exchange, son válidos los siguientes servidores MX:
 
-Puede deberse a varias causas:
+- Solo Exchange: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange + Correo POP/IMAP alojado en OVHcloud: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange + Correo POP/IMAP no alojado en OVHcloud: ex\*\*?**.mail.ovh.net
 
+<a name="hostname"></a>
 
-- La cuenta ha sido suspendida.
-- La contraseña indicada no es correcta.
-- La cuenta ha sido bloqueada por envío de spam.
-- Incidencia en la infraestructura Exchange.
+> [!warning]
+> En nuestras guías utilizamos como nombre de servidor: ex<b>?</b>.mail.ovh.net. Debe reemplazar el "?" por el número correspondiente al servidor de su servicio Exchange.<br>
+> Puede consultar esta información en el área de cliente de OVHcloud, en la sección `Web Cloud`{.action}.  En el menú de la izquierda, abra `Microsoft`{.action} y seleccione `Exchange`{.action}. El nombre del servidor aparece en la pestaña **Conexión** de la `Información general`{.action}.
+>
 
+> [!primary]
+>
+> El nombre técnico de un servicio Exchange de OVHcloud se compone de un prefijo (**hosted-** o **private-**), una parte de su "identificador de cliente" y un número incremental que indica el número de servicios Exchange alojados o privados registrados en su cuenta de cliente.
+>
 
-Si aparece este error, consulte las indicaciones anteriores para corregirlo o realice una solicitud de asistencia.
+### El registro SRV del dominio no es válido
 
+El registro SRV sirve para la configuración automática de su cuenta Exchange con un cliente de correo compatible, como Microsoft Outlook.
+
+Puede comprobar estos parámetros en la [zona DNS del dominio](../../domains/web_hosting_como_editar_mi_zona_dns/).
+
+Estos son los valores para un servicio Exchange:
+
+Campo | Valor
+------------ | -------------
+Prioridad | 0
+Peso | 0
+Puerto | 443
+Destino | [ex<b>?</b>.mail.ovh.net](#hostname) (sustituya "?" por el número correspondiente al servidor de su servicio Exchange)
+
+### El mensaje de correo de prueba no se ha podido enviar desde la cuenta
+
+Este error indica un error general al enviar mensajes de correo que pueden tener varias causas:
+
+- [Su cuenta ha sido suspendida](#expired)
+- [La contraseña introducida es incorrecta](#password)
+- [Su cuenta ha sido bloqueada por envío de correo no deseado](#blocked)
+- [Se produjo un incidente en la infraestructura](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

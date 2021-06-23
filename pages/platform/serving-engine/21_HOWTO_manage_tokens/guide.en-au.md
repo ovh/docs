@@ -58,4 +58,4 @@ In the case that a token has been lost or compromised, you can regenerate it dir
 
 ## Going Further
 
--   You can check the official documentation of the open source **ML Serving** product about [Tokens](https://serving-doc-mlg.ai.ovh.net/component/tokens.html)
+-   You can check the official documentation of the open source **ML Serving** product about [Tokens](../tokens)

@@ -1,116 +1,129 @@
 ---
-title: 'Diagnostyka Exchange: Co zrobić w przypadku błędu?'
-excerpt: 'Diagnostyka Exchange: Co zrobić w przypadku błędu?'
+title: Wykorzystanie diagnostyki błędów Exchange
+excerpt: 'Dowiedz się, jak przeprowadzić automatyczną diagnostykę błędów na kontach Exchange'
 slug: diagnostyka_exchange_co_zrobic_w_przypadku_bledu
-section: Inne
+section: Diagnostyka Exchange
 legacy_guide_number: g2277
 ---
 
-## Wykonanie diagnostyki
-Zaloguj się do [panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-Po zalogowaniu wybierz w menu z lewej strony sekcję Microsoft i usługę Exchange.
+**Ostatnia aktualizacja z dnia 28-05-2021**
 
-![](images/img_4450.jpg){.thumbnail}
-Kliknij na zakładkę "Diagnostyka", wpisz konto e-mail Exchange i hasło, aby rozpocząć diagnostykę. 
+## Wprowadzenie
 
-Diagnostyka Exchange może zająć od 3 do 10 minut.
+Błędy na kontach e-mail Exchange mogą mieć wiele przyczyn. Automatyczna diagnostyka funkcji konta pozwala zmniejszyć liczbę przyczyn. Testy te będą również przydatne w przypadku prośby o wsparcie w przypadku usługi Exchange.
 
-![](images/img_4451.jpg){.thumbnail}
-Przedstawiamy przykład wyniku diagnostyki konta e-mail Exchange:
+**Dowiedz się, jak rozpocząć diagnostykę Exchange i interpretować jej wyniki.**
 
-Możliwe operacje:
+## Wymagania początkowe
 
+- Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovh.pl/emaile/hosted-exchange/)
+- Posiadanie danych identyfikacyjnych konta Exchange do sprawdzenia
+- Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
-- Nowa diagnostyka: Wykonaj nową diagnostykę.
+## W praktyce
 
-- Otwórz zgłoszenie: Pozwala na otworzenie zgłoszenia do naszego zespołu pomocy z wynikiem diagnostyki.
+### Wykonaj diagnostykę
 
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action}. Wybierz `Microsoft`{.action} z menu po lewej stronie, następnie kliknij `Exchange`{.action} i wybierz Twoją usługę.
 
+![Diagnostyka Exchange](images/img_4450.png){.thumbnail}
 
-![](images/img_4471.jpg){.thumbnail}
+Kliknij kartę `Diagnostyka`{.action} i wybierz odpowiednie konto Exchange z rozwijanego menu. Wprowadź hasło do konta w odpowiednim polu, po czym kliknij `Rozpocznij diagnostykę`{.action}.
 
+![Diagnostyka Exchange](images/img_4451.png){.thumbnail}
 
-## Błędy w wynikach diagnostyki
-Poniżej opisujemy każdy z możliwych błędów:
+Procedura diagnostyczna zajmie około 3 do 10 minut. Oto przykład:
 
+![Diagnostyka Exchange](images/img_4471.png){.thumbnail}
 
-- UWAGA: Konto zostało zablokowane z powodu wysyłania spamu:
+Strona wyników proponuje dwa działania, aby kontynuować:
 
+- `Nowa diagnoza`{.action}: rozpoczyna kolejną diagnostykę.
 
-Oznacza to, że wysyłka z Twojego konta została tymczasowo wyłączona. Nie dotyczy to odbierania e-maili. 
+- `Utwórz zgłoszenie`{.action}: pozwala utworzyć zgłoszenie w naszym dziale pomocy technicznej. Zgłoszenie zawiera wyniki diagnostyki.
 
-Gdy Twoje konto jest zablokowane z powodu spamu, jest ono widoczne z poziomu usługi Exchange w sekcji Konto e-mail. Widoczny jest tag SPAM. Możesz kliknąć, aby sprawdzić e-mail wysłany po wprowadzeniu blokady. 
+### Wyjaśnienia błędów
 
-Należy odpowiedzieć na ten e-mail, aby możliwe było odblokowanie konta.
+Aby znaleźć najszybsze rozwiązanie, zapoznaj się z poniższym podsumowaniem możliwych błędów.
 
-![](images/img_4453.jpg){.thumbnail}
+### Konto zostało zablokowane z powodu wysyłania spamu <a name="blocked"></a>
 
-- UWAGA: Abonament konta wygasł:
+Zablokowane konto zawsze otrzymuje e-maile, ale wysyłka została wyłączona przez automatyczny system ochrony przed spamem.
 
+Możesz to sprawdzić w zakładce `Konta e-mail`{.action} w Twojej usłudze Exchange. Konto będzie zawierać oznaczenie `SPAM` w kolumnie "Status" tabeli.
 
-W tym przypadku abonament nie jest aktywny. Odbieranie i wysyłanie e-maili jest wyłączone. Należy skontaktować się z zespołem pomocy, aby dowiedzieć się, jak ponownie włączyć usługę.
+Zapoznaj się z naszym przewodnikiem [Co zrobić w przypadku blokady konta ze względu na spam?](../blokada-za-spam/) aby umożliwić naszym zespołom bezpieczeństwa ponowne uruchomienie konta.
 
-- UWAGA: Konto zostało zablokowane ze względu na politykę bezpieczeństwa:
+### Abonament dotyczący konta wygasł <a name="expired"></a>
 
+Ponieważ abonament nie jest już aktywny, wysyłka i odbiór zostały wyłączone. Możesz [sprawdzić status fakturowania usługi](../zarzadzanie-fakturowanie-exchange/) w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i odnowić ją, aby aktywować konto.
 
-W przypadku usługi Exchange można zdefiniować politykę bezpieczeństwa. Może to spowodować blokadę konta na określony czas. 
+### Konto zostało zablokowane z powodu polityki bezpieczeństwa
 
-Możesz zdefiniować, że konto jest blokowane na określony czas po określonej liczbie nieudanych prób logowania.
+Jeśli w Panelu [klienta aktywowana jest polityka bezpieczeństwa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), konto może zostać tymczasowo zablokowane.
 
-Jeśli konto zostanie zablokowane na tym poziomie, możesz poczekać, aż minie zdefiniowany wcześniej czas albo możesz skontaktować się z pomocą Exchange otwierając zgłoszenie w panelu klienta.
+Możesz na przykład zdecydować, że konto zostanie zablokowane po kilku nieudanych próbach logowania, na czas określony przez Twoją opiekę.
 
-- UWAGA: Logowanie do webmaila nie powiodło się:
+W takim przypadku możesz poczekać, aż konto będzie ponownie dostępne lub skontaktować się z zespołem Exchange dodając zgłoszenie z poziomu panelu klienta.
 
+Aby uzyskać więcej informacji na temat tej funkcji, zapoznaj się z naszym [przewodnikiem dotyczącym polityki bezpieczeństwa](../zarzadzanie-polityka-bezpieczenstwa-exchange/).
 
-Błąd ten może być związany z podaniem nieprawidłowego hasła podczas zlecania diagnostyki. W takim przypadku możesz wznowić diagnostykę. 
+### Logowanie do webmaila nie powiodło się. <a name="password"></a>
 
-Możesz również zmienić hasło w zakładce Konto e-mail i wznowić diagnostykę. Jeśli pomimo tego problem się powtórzy, możesz otworzyć zgłoszenie.
+Może to być spowodowane wpisaniem nieprawidłowego hasła do konta. Sprawdź najpierw, czy hasło jest poprawne. Zaloguj się do interfejsu [Webmail](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/), następnie zrestartuj diagnostykę.
 
-- UWAGA: Wpis MX domeny jest nieprawidłowy:
+W razie potrzeby możesz zmienić hasło do wybranego konta w zakładce `Konta e-mail`{.action} w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jeśli problem się powtórzy, utwórz zgłoszenie.
 
+### Wpis MX domeny jest nieprawidłowy
 
-Błąd ten wskazuje na brak możliwości odbierania e-maili i jest również związany z tym błędem: UWAGA: E-mail testowy nie dostał odebrany.
+Ten błąd wskazuje, że e-maile nie mogą zostać odebrane i będzie również związany z tym błędem "**UWAGA: E-mail testowy nie został odebrany.** ".
 
-Oto prawidłowe serwery MX dla oferty Exchange:
+Następujące serwery MX są ważne w zależności od korzystania z usługi Exchange:
 
+- Tylko Exchange: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange + E-mail POP/IMAP hostowany przez OVHcloud: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange + E-mail POP/IMAP nie obsługiwany przez OVHcloud: ex<b>?</b>.mail.ovh.net
 
-- Tylko Exchange: mx1.mail.ovh.net
-- Exchange + E-mail pop/imap zainstalowany w OVH: mx1.mail.ovh.net
-- Exchange + E-mail pop/imap nie zainstalowany w OVH: ex.mail.ovh.net lub ex2.mail.ovh.net
+<a name="hostname"></a>
 
+> [!warning]
+> W przewodnikach wykorzystujemy jako nazwę serwera: na przykład ex<b>?</b>.mail.ovh.net. Chcesz zastąpić "?" przez numer odpowiadający serwerowi usługi Exchange.<br>
+> Informacje te znajdziesz w Panelu klienta OVHcloud, w sekcji `Web Cloud`{.action}.  Otwórz `Microsoft`{.action} w menu po lewej stronie, następnie `Exchange`{.action} i wybierz Twoją usługę. Nazwa serwera wyświetla się w strefie **Logowanie** w zakładce `Informacje ogólne`{.action}.
+>
 
+> [!primary]
+>
+> Nazwa techniczna usługi Exchange OVHcloud składa się z prefiksu (**hosted-** lub **private-**), części "identyfikatora klienta" oraz z numeru przyrostowego wskazującego liczbę hostowanych lub prywatnych usług Exchange zarejestrowanych w Twoim koncie klienta.
+>
 
-- UWAGA: Wpis SRV domeny jest nieprawidłowy:
+### Wpis SRV domeny jest nieprawidłowy
 
+Wpis SRV służy do automatycznej konfiguracji konta Exchange przy użyciu kompatybilnego programu pocztowego, takiego jak Microsoft Outlook.
 
-Wpis SRV jest niezbędny do automatycznej konfiguracji konta Exchange w kompatybilnym programie pocztowym, takim jak na przykład Outlook 2010, 2013 i 2016.
+Możesz sprawdzić te parametry w [strefie DNS Twojej domeny](../../domains/hosting_www_jak_edytowac_strefe_dns/).
 
-Pole SRV możesz sprawdzić w strefie DNS Twojej domeny. 
+Oto wartości dla usługi Exchange:
 
-Oto pole SRV wymagane dla oferty Exchange:
+Pole | Wartość
+------------ | -------------
+Priorytet | 0
+Waga | 0
+Port | 443
+Adres docelowy | [ex<b>?</b>.mail.ovh.net](#hostname)(zastąp "?" za numer odpowiadający serwerowi usługi Exchange)
 
-|Priorytet|0|
-|Ciężar|0|
-|Port|443|
-|Adres docelowy oferta Hosted| ex.mail.ovh.net lub ex2.mail.ovh.net |
-|Adres docelowy oferta Private| Nazwa hosta|
+### E-mail testowy nie mógł zostać wysłany z konta
 
+Ten błąd wskazuje na ogólną niepowodzenie wysyłki e-maili, które może mieć kilka przyczyn:
 
+- [Twoje konto zostało zawieszone](#expired)
+- [Podane hasło jest nieprawidłowe.](#password)
+- [Twoje konto zostało zablokowane z powodu wysyłania niechcianej poczty](#blocked)
+- [Wystąpił problem z infrastrukturą](http://travaux.ovh.net/?project=31&status=all&perpage=50)
 
-- UWAGA: E-mail testowy nie mógł zostać wysłany z konta:
+## Sprawdź również
 
-
-Ten błąd wskazuje na brak możliwości wysłania wiadomości e-mail z Twojego konta. 
-
-Przyczyny mogą być różne:
-
-
-- Konto jest zawieszone. 
-- Wskazane hasło jest nieprawidłowe. 
-- Konto jest zablokowane z powodu spamu.
-- Problem w infrastrukturze Exchange
-
-
-W tym przypadku sprawdź wskazówki opisane powyżej, aby poprawić błąd lub otworzyć zgłoszenie.
-
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -8,7 +8,7 @@ order: 3
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
 
 **Última actualización: 24 de febrero de 2021**
 
@@ -20,7 +20,7 @@ Con los VPS de OVHcloud, puede añadir un espacio de almacenamiento seguro como 
 
 ## Requisitos
 
-- Tener un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud.
+- Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Tener acceso administrativo a su VPS por SSH o RDP.
 

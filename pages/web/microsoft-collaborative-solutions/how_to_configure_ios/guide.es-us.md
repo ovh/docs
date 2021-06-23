@@ -77,8 +77,6 @@ OVHcloud también ofrece una aplicación web que tiene las [funciones colaborati
 
 [Configurar una cuenta de correo electrónico incluida en un MX Plan o un plan de hosting en iPhone o iPad](https://docs.ovh.com/us/es/emails/correo_guia_de_configuracion_en_iphone_ios_91/)
 
-[Configurar una cuenta Email Pro en iPhone o iPad](https://docs.ovh.com/us/es/emails-pro/configuracion-ios-iphone-ipad/)
-
 [FAQ e-mails](https://docs.ovh.com/us/es/emails/correo-electronico-faq/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

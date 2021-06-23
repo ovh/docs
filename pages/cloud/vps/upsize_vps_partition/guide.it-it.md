@@ -4,7 +4,11 @@ slug: partizionare-vps-in-seguito-a-un-upgrade
 section: 'Per iniziare'
 ---
 
-**Ultimo aggiornamento: 12/12/2018**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 18/05/2021**
 
 ## Obiettivo
 
@@ -12,33 +16,35 @@ section: 'Per iniziare'
 
 > [!warning]
 >
-> Il partizionamento potrebbe danneggiare i tuoi dati in modo irreversibile. OVH non è responsabile del loro eventuale deterioramento o perdita, ti consigliamo pertanto di realizzarne una copia prima di qualsiasi operazione. 
+> Il partizionamento potrebbe danneggiare i tuoi dati in modo irreversibile. OVHcloud non è responsabile del loro eventuale deterioramento o perdita, ti consigliamo pertanto di realizzarne una copia prima di qualsiasi operazione.
 >
 
 ## Prerequisiti
 
-- Avere accesso in SSH al VPS (root)
-- Aver riavviato il server in [Rescue mode](https://docs.ovh.com/it/vps/rescue/)
+- Avere un accesso amministratore al VPS (Windows)
+- Aver riavviato il server in [Rescue mode](https://docs.ovh.com/it/vps/rescue/)(Linux)
 
 ## Procedura
 
 In seguito a un upgrade, RAM e processore (CPU) vengono ridimensionati automaticamente. Lo spazio di storage disponibile resta invece invariato.
 
-**Per aumentarlo, segui gli step descritti in questa guida**.
+**Questa guida ti mostra come aumentare il tuo spazio di storage dopo un upgrade del tuo VPS.**.
 
 ### Effettua il backup dei dati
 
 Estendere una partizione può comportare la perdita dei dati presenti sul tuo VPS, motivo per il quale è **fortemente consigliato** realizzarne una copia.
 
-### Smonta la partizione
+#### Smonta la partizione
 
-L’accesso al tuo VPS in [modalità Rescue](https://docs.ovh.com/it/vps/rescue/) implica il mount automatico della tua partizione. Per ridimensionarla, è necessario smontarla. Se conosci il nome della tua partizione, salta questo step. In caso contrario, esegui il comando:
+Sulle gamme precedenti di VPS, le tue partizioni saranno automaticamente installate in modalità Rescue. Utilizza questo comando per identificare la posizione di montaggio della tua partizione:
 
 ```sh
 lsblk
 ```
 
-La partizione corrispondente al Rescue mode sarà quella montata sulla directory /, utilizzata come root di sistema. La partizione del tuo VPS, invece, potrebbe non essere montata oppure essere localizzata in una cartella associata a /mnt.
+La partizione corrispondente al Rescue mode sarà quella montata nella directory `/`che è la radice del sistema. La partizione del tuo VPS, invece, potrebbe essere ospitata in una directory associata a "/mnt".
+
+Tuttavia, se il tuo VPS appartiene alla gamma attuale, la partizione non verrà automaticamente aumentata. Se la colonna MOUNTPOINT del risultato lo conferma, puoi ignorare lo step di rimozione.
 
 ```sh
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -48,7 +54,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Per smontare la partizione, esegui il comando:
+Per ridimensionare la partizione, è necessario smontarla. Per smontare la partizione, esegui il comando:
 
 ```sh
 umount /dev/sdb1
@@ -56,7 +62,7 @@ umount /dev/sdb1
 
 ### Verifica il filesystem
 
-Una volta effettuata questa operazione, è opportuno assicurarsi che non siano presenti errori sulla partizione verificando il filesystem (`filesystem check`) con il comando: 
+Una volta effettuata questa operazione, è opportuno assicurarsi che non siano presenti errori sulla partizione verificando il filesystem (`filesystem check`) con il comando:
 
 ```sh
 e2fsck -yf /dev/sdb1
@@ -138,7 +144,7 @@ First sector (2048-41943039, default 2048): 2048
 Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 41943039
 ```
 
-Assicurati che il valore predefinito indicato nella riga `First sector` corrisponda a quello annotato precedentemente (se differente, utilizza quest’ultimo). 
+Assicurati che il valore predefinito indicato nella riga `First sector` corrisponda a quello annotato precedentemente (se differente, utilizza quest’ultimo).
 
 ### Rendi la partizione avviabile (bootable)
 
@@ -180,6 +186,7 @@ Per verificare che l’operazione sia andata a buon fine, esegui il mount della 
 ```sh
 mount /dev/sdb1 /mnt
 ```
+
 ```sh
 df -h
  
@@ -226,6 +233,24 @@ Per controllare e riparare il filesystem, utilizza il primo superblock di backup
 fsck -b 32768 /dev/sdb1
 ```
 
+### Windows
+
+#### Accedi a File and Storage Services
+
+Puoi trovarlo nel Server Manager:
+
+![File and Storage Services](images/file-and-storage.png){.thumbnail}
+
+#### Ridimensionare il volume
+
+Clicca con il tasto destro su C: e seleziona `Extend Volume...`{.action}.
+
+Ti verrà chiesto di scegliere la nuova dimensione del volume:
+
+![Set New Volume Size](images/extend.png){.thumbnail}
+
+Inserisci la dimensione desiderata e clicca su `OK`{.action}. Il volume verrà poi esteso.
+
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

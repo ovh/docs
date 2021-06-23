@@ -2,7 +2,7 @@
 title: 'Webhosting E-Mail Anleitung zum Abruf der E-Mail-Header'
 excerpt: 'In dieser Hilfe wird beschrieben, wie Sie den Header einer E-Mail abrufen können'
 slug: webhosting_e-mail_anleitung_zum_abruf_der_e-mail-header
-section: Diagnose
+section: Troubleshooting
 order: 2
 legacy_guide_number: g1365
 ---

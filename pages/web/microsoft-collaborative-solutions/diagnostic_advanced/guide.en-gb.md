@@ -2,7 +2,7 @@
 title: 'Using Exchange error diagnostics'
 excerpt: 'Find out how to run automated error checks on Exchange accounts'
 slug: exchange_diagnostic_what_to_do_if_you_encounter_an_error
-section: Troubleshooting
+section: Exchange Diagnostics
 ---
 
 **Last updated 28th May 2021**
@@ -15,7 +15,7 @@ Since there is a multitude of reasons why errors might occur on Exchange email a
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](https://www.ovh.co.uk/emails/hosted-exchange) already set up
+- an [OVHcloud Exchange solution](https://www.ovh.co.uk/emails/hosted-exchange/) already set up
 - credentials for the Exchange account to be checked
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
@@ -79,18 +79,17 @@ This error indicates that emails cannot be received and it is also linked to the
 
 Depending on your Exchange service usage, the following MX servers are valid:
 
-- Exchange only: mx1.mail.ovh.net
-- Exchange & POP/IMAP email hosted by OVHcloud: mx1.mail.ovh.net
+- Exchange only: mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange & POP/IMAP email hosted by OVHcloud: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
 - Exchange & POP/IMAP email not hosted by OVHcloud: ex<b>?</b>.mail.ovh.net
+<a name="hostname"></a>
 
-In our guides, we use as the server name: ex<b>?</b>.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Exchange service.
-
-<a name="hostname"></a>You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} section: Open `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action} and select your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
-
-> [!primary]
+> [!warning]
+> In our guides, we use as the server name: ex<b>?</b>.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server  for your Exchange service.
 >
-> The technical name of an OVHcloud Exchange service consists of a prefix (**hosted-** or **private-**), a part of your customer ID, and an incremental number indicating how many Hosted or Private Exchange services have been registered in your customer account.
+> You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} section: Open `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action} and select your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
+
 
 ### The domain's SRV record is not valid
 
@@ -105,7 +104,7 @@ Field        | Value
 Priority     | 0
 Weight       | 0
 Port         | 443
-Target       | [Your hostname](#hostname)
+Target       | [Your hostname](#hostname) (ex<b>?</b>.mail.ovh.net)
 
 ### The test email could not be sent from this account 
 

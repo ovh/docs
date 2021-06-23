@@ -4,7 +4,11 @@ slug: criar-particao-apos-upgrade-vps
 section: Introdução
 ---
 
-**Última atualização: 11/12/2018**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 18/05/2021**
 
 ## Sumário
 
@@ -12,19 +16,19 @@ Por vezes, depois de efetuar o upgrade do seu VPS, é necessário redimensionar 
 
 > [!warning]
 >
-> O reparticionamento do VPS pode danificar os dados que contém de forma definitiva. A OVH não poderá ser responsabilizada pela sua deterioração ou perda. Como tal, antes de avançar, faça uma cópia de segurança dos dados.
+> O reparticionamento do VPS pode danificar os dados que contém de forma definitiva. A OVHcloud não poderá ser responsabilizada pela sua deterioração ou perda. Como tal, antes de avançar, faça uma cópia de segurança dos dados.
 >
+
+**Este manual explica os passos necessários para aumentar o espaço de armazenamento do seu VPS**.
 
 ## Requisitos
 
-- Ter acesso ao VPS por SSH (acesso root)
-- Ter reiniciado o servidor em [Modo Rescue](https://docs.ovh.com/pt/vps/rescue/).
+- Ter acesso de administrador ao VPS (Windows).
+- Ter reiniciado o servidor em [Modo Rescue](https://docs.ovh.com/pt/vps/rescue/)(Linux).
 
 ## Instruções
 
 Após um upgrade, a RAM e o processador (CPU) são automaticamente ajustados. No entanto, o espaço de armazenamento não é atualizado sistematicamente.
-
-**Este manual explica os passos necessários para aumentar o espaço de armazenamento do seu VPS**.
 
 ### Realizar uma cópia de segurança dos dados
 
@@ -32,13 +36,15 @@ Ampliar uma partição pode implicar a perda de dados, pelo que **recomendamos v
 
 ### Desmontar a partição
 
-Depois de aceder ao VPS em [Modo Rescue](https://docs.ovh.com/pt/vps/rescue/), a partição será montada automaticamente. Antes de ser redimensionada, a partição precisa de ser desmontada. Se conhece o nome da sua partição, pode ignorar este passo. Se não conhece, execute o seguinte comando:
+Nas antigas gamas de VPS, as suas partições serão automaticamente montadas em modo de rescue. Utilize o seguinte comando para identificar o local de montagem da sua partição:
 
 ```sh
 lsblk
 ```
 
-A partição correspondente ao Modo Rescue será montada no diretório “/”, que é, na realidade, a raiz do sistema. Já a partição do seu VPS estará provavelmente localizada num diretório associado a “/mnt”, ou não estará montada.
+A partição correspondente ao modo rescue será montada no diretório `/`, que é na realidade a raiz do sistema. Por outro lado, a partição do seu VPS será provavelmente colocada num diretório associado a "/mnt".
+
+No entanto, se o seu VPS pertencer à gama atual, a partição não será automaticamente montada. Se a coluna MOUNTPOINT do resultado o confirmar, pode ignorar a etapa de desmontagem.
 
 ```sh
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -48,7 +54,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Para desmontar a partição, execute o seguinte comando:
+Para redimensionar a partição, deve desmontá-la. Para desmontar a partição, execute o seguinte comando:
 
 ```sh
 umount /dev/sdb1
@@ -180,6 +186,7 @@ Para confirmar que a operação foi realizada corretamente, pode montar a parti�
 ```sh
 mount /dev/sdb1 /mnt
 ```
+
 ```sh
 df -h
  
@@ -225,6 +232,24 @@ De seguida, utilize o primeiro superbloco de backup para verificar e corrigir si
 ```sh
 fsck -b 32768 /dev/sdb1
 ```
+
+### Windows
+
+#### Aceder à File and Storage Services
+
+Pode encontrá-lo no "Server Manager":
+
+![Serviços de File and Storage](images/file-and-storage.png){.thumbnail}
+
+#### Redimensionar o volume
+
+Clique com o botão direito do rato em C: e selecione `Extend Volume...`{.action}.
+
+Neste caso, deverá escolher o novo tamanho do volume:
+
+![Set New Volume Size](images/extend.png){.thumbnail}
+
+Introduza o tamanho pretendido e clique em `OK`{.action}. O seu volume será então aumentado.
 
 ## Quer saber mais?
 

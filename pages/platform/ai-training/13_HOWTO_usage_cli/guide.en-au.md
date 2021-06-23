@@ -107,7 +107,7 @@ ovhai job get <job-id>
 You can execute commands (like `bash`) while a job is running.
 
 ``` {.console}
-ovhai job exec <id> -- bash
+ovhai job exec -it <id> -- bash
 ```
 
 This way you can interact with a running job.

@@ -170,7 +170,7 @@ Ensuite, éditez le fichier avec le contenu ci-dessous, en remplaçant « INTER
 network:
     version : 2
     ethernets:
-        NOM_DE_L'INTERFACE :
+        INTERFACE_NAME :
             dhcp4: true
             match:
                 macadresse : MAC_ADDRESS

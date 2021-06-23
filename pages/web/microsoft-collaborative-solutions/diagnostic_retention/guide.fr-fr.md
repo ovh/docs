@@ -34,6 +34,8 @@ La récupération des éléments supprimés peut être réalisée depuis le webm
 
 ## Depuis le webmail (OWA)
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Exchange 2010
 Le lien d'accès au webmail Exchange 2010 est différent selon le serveur sur le quel votre compte est installé.
 

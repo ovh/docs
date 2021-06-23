@@ -4,27 +4,31 @@ slug: reparticionar-vps-tras-upgrade
 section: 'Primeros pasos'
 ---
 
-**Última actualización: 30/11/2018**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 18/05/2021**
 
 ## Objetivo
 
-Al realizar el upgrade de un VPS, es posible que tenga que reparticionar su espacio de almacenamiento. A continuación le explicamos cómo hacerlo.
+Al realizar el upgrade de un VPS, es posible que tenga que reparticionar su espacio de almacenamiento.
 
 > [!warning]
 >
 > El reparticionamiento de un VPS puede dañar los datos que contiene de forma definitiva. OVHcloud no podrá ser considerado responsable de su deterioro o pérdida. Antes de realizar cualquier acción, le recomendamos que haga una copia de seguridad de sus datos.
 >
 
+**Esta guía explica los pasos necesarios para aumentar el espacio de almacenamiento de su VPS**.
+
 ## Requisitos
 
-- Tener acceso al VPS por SSH (acceso *root*).
-- Haber reiniciado el servidor en [modo de rescate](../rescue/){.external}.
+- Tener acceso de administrador al VPS (Windows).
+- Haber reiniciado el servidor en [modo de rescate](../rescue/)(Linux).
 
 ## Procedimiento
 
 Tras el upgrade, la RAM y el procesador (CPU) se ajustarán de manera automática. Sin embargo, el espacio de almacenamiento no se actualiza sistemáticamente.
-
-**Esta guía explica los pasos necesarios para aumentar el espacio de almacenamiento de su VPS**.
 
 ### Realizar una copia de seguridad de los datos
 
@@ -32,23 +36,25 @@ Ampliar una partición puede provocar la pérdida de datos, por lo que **le reco
 
 ### Desmontar la partición
 
-Una vez que se haya conectado al VPS en [modo de rescate](../rescue/), la partición se montará automáticamente. Para poder redimensionarla, primero deberá desmontarla. Si ya conoce el nombre de la partición, puede saltarse esta etapa. Si no lo conoce, utilice el siguiente comando:
+En las antiguas gamas de VPS, las particiones se montarán automáticamente en modo de rescate. Utilice el siguiente comando para identificar la ubicación de montaje de la partición:
 
 ```sh
 lsblk
 ```
 
-La partición correspondiente al modo de rescate será la que se monte en el directorio «/», que es en realidad la raíz del sistema. La partición de su VPS se ubicará probablemente en un directorio situado en «/mnt», o no estará montada.
+La partición correspondiente al modo de rescate será la montada en el directorio `/`, que es en realidad la raíz del sistema. En cambio, es probable que la partición del VPS se sitúe en un directorio asociado a "/mnt".
+
+No obstante, si su VPS pertenece a la gama actual, la partición no se montará automáticamente. Si la columna del resultado MOUNTPOINT lo confirma, puede ignorar el paso de desmontaje.
 
 ```sh
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
 sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Para desmontar dicha partición, utilice el siguiente comando:
+Para cambiar el tamaño de la partición, debe desmontarla. Para desmontar dicha partición, utilice el siguiente comando:
 
 ```sh
 umount /dev/sdb1
@@ -72,7 +78,7 @@ Pass 5: Checking group summary information
 
 Si encuentra un error, deberá adoptar las medidas adecuadas en cada caso. Estos son algunos de los errores más frecuentes:
 
-- **bad magic number in superblock**: No continúe. Para solucionar este problema, consulte el apartado [Cómo solucionar los errores «bad magic number in superblock»](../reparticionar-vps-tras-upgrade/#como-solucionar-los-errores-bad-magic-number-in-superblock){.external} de esta guía.
+- **bad magic number in superblock**: No continúe. Para solucionar este problema, consulte el apartado [Cómo solucionar los errores «bad magic number in superblock»](https://docs.ovh.com/es/vps/reparticionar-vps-tras-upgrade/#como-solucionar-los-errores-bad-magic-number-in-superblock){.external} de esta guía.
 
 - **/dev/vdb1 has unsupported feature(s): metadata_csum**, seguido de **e2fsck: Get a newer version of e2fsck!**: Actualice **e2fsck**. Si la última versión no está disponible a través de **apt** o cualquier otro gestor de paquetes, deberá compilarla a partir del código fuente.
 
@@ -111,7 +117,7 @@ Device Boot Start End Blocks Id System
 
 > [!warning]
 >
-> La siguiente operación es irreversible. Asegúrese de disponer de copia de seguridad de sus datos.
+> La siguiente operación es irreversible. Asegúrese de disponer de una copia de seguridad de sus datos.
 >
 
 A continuación, elimine la partición con el comando `d`.
@@ -180,6 +186,7 @@ Para asegurarse de que la operación se ha realizado correctamente, puede montar
 ```sh
 mount /dev/sdb1 /mnt
 ```
+
 ```sh
 df -h
  
@@ -226,6 +233,24 @@ A continuación, utilice el primer superbloque de backup para comprobar y repara
 fsck -b 32768 /dev/sdb1
 ```
 
+### Windows
+
+#### Acceder a File and Storage Services
+
+Puede encontrarlo en el servidor Manager :
+
+![File and Storage Services](images/file-and-storage.png){.thumbnail}
+
+#### Redimensionar el volumen
+
+Haga clic derecho en C: y seleccione `Extend Volume...`{.action}.
+
+A continuación, elija el nuevo tamaño de volumen:
+
+![Set New Volume Size](images/extend.png){.thumbnail}
+
+Escriba el tamaño deseado y haga clic en `Aceptar`{.action}. El volumen se ampliará.
+
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

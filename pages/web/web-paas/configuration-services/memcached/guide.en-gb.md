@@ -4,7 +4,7 @@ slug: memcached
 section: Services
 ---
 
-**Last updated 26th March 2021**
+**Last updated 3rd June 2021**
 
 
 ## Objective  
@@ -61,7 +61,24 @@ relationships:
     memcachedcache: "cachemc:memcached"
 ```  
 
-
+> You will need to use `memcached` type when defining the service
+>
+> ```yaml
+> # .platform/services.yaml
+> service_name:
+>       type: memcached:version
+> ```
+>
+> and the endpoint `memcached` when defining the relationship
+>
+> ```yaml
+> # .platform.app.yaml
+>  relationships:
+>       relationship_name: “service_name:memcached”
+> ```
+>
+> Your `service_name` and `relationship_name` are defined by you, but we recommend making them distinct from each other.
+>
 
 
 If you are using PHP, configure the relationship and enable the [PHP memcached extension](../../languages-php/extensions) in your `.platform.app.yaml`.  (Note that the `memcached` extension requires `igbinary` and `msgpack` as well, but those will be enabled automatically.)
