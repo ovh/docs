@@ -9,9 +9,9 @@ order: 2
 
 ## Objectif
 
-Ce document est la politique de réversibilité pour la gamme de produits **[Serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/)**).
+Ce document est la politique de réversibilité pour la gamme de produits [Serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/).
 
-Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}, conçu avec la Commission européenne.
+Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
 
 ## Détails des fonctionnalités
 
@@ -19,7 +19,7 @@ Les fonctionnalités des serveurs dédiés sont divisées en trois catégories :
 
 - Les [fonctionnalités principales](#fonctionnalites-principales) pour lesquelles nous garantissons la capacité de migrer.
 - L'[implémentation OVHcloud](#ovhcloud-implementation), dont la migration nécessitera des adaptations à un nouvel environnement.
-- Les [fonctionnalités spécifiques](#fonctions-specifiques), dont la migration en tant que telle est impossible à garantir car elle est liée à l'environnement OVHcloud ou à des développements spécifiques.
+- Les [fonctionnalités spécifiques](#fonctionnalites-specifiques), dont la migration en tant que telle est impossible à garantir car elle est liée à l'environnement OVHcloud ou à des développements spécifiques.
 
 ### Fonctionnalités principales <a name="fonctionnalites-principales"></a>
 
@@ -27,7 +27,7 @@ Les fonctionnalités des serveurs dédiés sont divisées en trois catégories :
 |---|-----|---|-----|-----|
 Fourniture de serveurs dédiés|Fourniture de différentes gammes de serveurs dédiés hautes performances|N/A|**Migration entrante**: Commandez un serveur dédié dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sauvegardez et migrez les données, réinstallez le logiciel (ou utilisez l'installation automatisée).<br><br>**Migration sortante**: Commandez des serveurs dédiés, sauvegardez et migrez les données, réinstallez le logiciel|[Premiers pas avec serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/)|
 |Stockage de sauvegarde (Backup Storage)|Stockage de sauvegarde fourni par défaut avec chaque serveur dédié|NFS/CIFS/FTP|**Migration entrante**: Migrez les données sur vos serveurs dédiés et activez le Backup Storage sur ces serveurs via l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br><br>**Migration sortante**: activez l'accès depuis l'extérieur de votre compte via l'API OVHcloud, puis migrez les données à l'aide de protocoles de transfert de fichiers standard, tels que FTP.|[Utiliser Backup Storage sur un serveur dédié](https://docs.ovh.com/fr/dedicated/services-backup-storage/)|
-|Systèmes d'exploitation et logiciels installés sur un serveur dédié|Installez automatiquement les systèmes d'exploitation, les bases de données, les interfaces d'administration et les logiciels de virtualisation sur un nouveau serveur dédié.<br>Consultez [ici](https://www.ovhcloud.com/fr/bare-metal/os/) la liste complète.|Pour obtenir des images personnalisées utilisées avec la fonction « Bring Your Own Image »: <br>- Type de Boot : **uefi** ou **legacy***<br>- Type de partition: **MBR** ou **GPT**<br>- Format de l'image: **qcow2** ou **raw***|**Migration entrante**: Commandez des serveurs dédiés et choisissez les systèmes d'exploitation/logiciels à installer sur l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Vous pouvez également utiliser la fonction « Bring Your Own Image » pour installer des images personnalisées.<br><br>**Migration sortante**: Exportez votre image et installez-la sur un autre serveur dédié.|[Installation ou réinstallation de votre serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#installation-ou-reinstallation-de-votre-serveur-dedie)<br><br>[Utiliser la fonctionnalité Bring Your Own Image](https://docs.ovh.com/fr/dedicated/bringyourownimage/)|
+|Systèmes d'exploitation et logiciels installés sur un serveur dédié|Installez automatiquement les systèmes d'exploitation, les bases de données, les interfaces d'administration et les logiciels de virtualisation sur un nouveau serveur dédié.<br>Consultez [ici](https://www.ovhcloud.com/fr/bare-metal/os/) la liste complète.|Pour obtenir des images personnalisées utilisées avec la fonction « Bring Your Own Image »: <br>- Type de Boot : **uefi** ou **legacy**<br>- Type de partition: **MBR** ou **GPT**<br>- Format de l'image: **qcow2** ou **raw***|**Migration entrante**: Commandez des serveurs dédiés et choisissez les systèmes d'exploitation/logiciels à installer sur l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Vous pouvez également utiliser la fonction « Bring Your Own Image » pour installer des images personnalisées.<br><br>**Migration sortante**: Exportez votre image et installez-la sur un autre serveur dédié.|[Installation ou réinstallation de votre serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#installation-ou-reinstallation-de-votre-serveur-dedie)<br><br>[Utiliser la fonctionnalité Bring Your Own Image](https://docs.ovh.com/fr/dedicated/bringyourownimage/)|
 
 ### Implémentation OVHcloud <a name="ovhcloud-implementation"></a>
 
