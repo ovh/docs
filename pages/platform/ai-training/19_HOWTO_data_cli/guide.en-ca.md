@@ -1,11 +1,12 @@
 ---
-title: Manage object store data via CLI
+title: Managing object storage data via CLI
 slug: data-cli
-excerpt: Learn how to manage your object store data with the ovhai CLI
+excerpt: Learn how to manage your object storage data with the ovhai CLI
 section: How to (with CLI)
 order: 5
 ---
-*Last updated 16th of June, 2021.*
+
+**Last updated 16th of June, 2021.**
 
 ## Objective
 
@@ -13,19 +14,19 @@ This guide covers the basic commands needed to manipulate your data on object st
 
 ## Requirements
 
--   a working `ovhai` CLI [how to install ovhai CLI](../install-client)
+- a working `ovhai` CLI. See our guide on [how to install ovhai CLI](../install-client).
 
 ## Instructions
 
-### List available regions of object storage
+### Listing available regions of object storage
 
-The following command display all region codes of available object storage regions
+The following command displays all region codes of available object storage regions:
 
 ``` {.console}
 ovhai data region
 ```
 
-### List containers or objects
+### Listing containers and objects
 
 If you need any help while listing container or objects, run `ovhai data list --help`:
 
@@ -53,15 +54,15 @@ OPTIONS:
     -p, --prefix <prefix>          Only list objects beginning with <prefix>
 ```
 
-#### Example 1 :
+#### Listing containers and objects - Example 1
 
-Command for listing all containers in region `GRA` :
+Use this command to list all containers in region `GRA`:
 
 ``` {.console}
 ovhai data list GRA
 ```
 
-##### Output :
+**Output:**
 
 ``` {.console}
 OBJECTS SIZE NAME
@@ -71,15 +72,15 @@ OBJECTS SIZE NAME
 1       15 B container-4
 ```
 
-#### Example 2 :
+#### Listing containers and objects - Example 2
 
-Command for listing all objects for container `container-1` in region `GRA` :
+Use this command to list all objects for container `container-1` in region `GRA`:
 
 ``` {.console}
 ovhai data list GRA container-1
 ```
 
-##### Output :
+**Output:**
 
 ``` {.console}
 TYPE   SIZE NAME
@@ -88,24 +89,24 @@ Object 32 B seg-00/000001
 Object 16 B seg-01/000000
 ```
 
-#### Example 3 :
+#### Listing containers and objects - Example 3
 
-Command for listing all objects for container `container-1` in region `GRA` with prefix `seg-01`
+Use this command to list all objects for container `container-1` in region `GRA` with prefix `seg-01`:
 
 ``` {.console}
 ovhai data list GRA container-1 --prefix seg-01
 ```
 
-##### Output :
+**Output:**
 
 ``` {.console}
 TYPE   SIZE NAME
 Object 16 B seg-01/000000
 ```
 
-### Upload data
+### Uploading data
 
-If you need any help while listing container or objects, run `ovhai data upload --help`:
+If you need any help while listing containers or objects, run `ovhai data upload --help`:
 
 ``` {.console}
 USAGE:
@@ -131,9 +132,9 @@ OPTIONS:
     -w, --workers <workers>                Number of workers to use for uploading objects
 ```
 
-#### Example 1 :
+#### Uploading data - Example 1
 
-Command for uploading the local file (or directory) `/tmp/directory/file1` into the container `my-container` in region `GRA` while keeping the full path as object name :
+Use this command to upload the local file (or directory) `/tmp/directory/file1` into the container `my-container` in region `GRA` while keeping the full path as object name:
 
 ``` {.console}
 ovhai data upload GRA my-container /tmp/directory/file1
@@ -141,9 +142,9 @@ ovhai data upload GRA my-container /tmp/directory/file1
 
 The uploaded file (or directory) will have `/tmp/directory/file1` as object name.
 
-#### Example 2 :
+#### Uploading data - Example 2
 
-Command for uploading the local file (or directory) `/tmp/directory/file1` into the container `my-container` in region `GRA` while keeping only the file name as object name.
+Use this command to upload the local file (or directory) `/tmp/directory/file1` into the container `my-container` in region `GRA` while keeping only the file name as object name.
 
 ``` {.console}
 ovhai data upload GRA my-container /tmp/directory/file1 --remove-prefix /tmp/directory/
@@ -151,9 +152,9 @@ ovhai data upload GRA my-container /tmp/directory/file1 --remove-prefix /tmp/dir
 
 The uploaded file (or directory) will have `file1` as object name.
 
-#### Example 3 :
+#### Uploading data - Example 3
 
-Command for uploading the local file (or directory) `/tmp/directory/file1` into the container `my-container` in region `GRA` while adding a prefix to the full path as object name :
+Use this command to upload the local file (or directory) `/tmp/directory/file1` into the container `my-container` in region `GRA` while adding a prefix to the full path as object name :
 
 ``` {.console}
 ovhai data upload GRA my-container /tmp/directory/file1 --add-prefix /root
@@ -191,24 +192,24 @@ OPTIONS:
     -w, --workers <workers>                Number of workers to use for downloading objects
 ```
 
-#### Example 1 :
+#### Downloading data - Example 1
 
-Command for downloading the whole container `my-container` in region `GRA` :
+Use this command to download the whole container `my-container` in region `GRA`:
 
 ``` {.console}
 ovhai data download GRA my-container
 ```
 
 > [!warning]
-> If the objects are prefixed with a directory path such as `/tmp/directory/` or even `/`, then it will be downloaded on your local storage inside that same directory. If you want to download everything inside your current directory you need to fill the parameter `--remove-prefix`
+> If the objects are prefixed with a directory path such as `/tmp/directory/` or even `/`, then it will be downloaded on your local storage inside that same directory. If you want to download everything inside your current directory you need to fill the `--remove-prefix` parameter.
 >
 > Example :
 >
 >     ovhai data download GRA my-container --remove-prefix /tmp/directory/
 
-#### Example 2 :
+#### Downloading data - Example 2
 
-Command for downloading all the objects from `my-container` in region `GRA` matching the prefix `/tmp/directory/` :
+Use this command to download all the objects from `my-container` in region `GRA` matching the prefix `/tmp/directory/` :
 
 ``` {.console}
 ovhai data download GRA my-container --prefix /tmp/directory
@@ -248,17 +249,17 @@ OPTIONS:
     -w, --workers <workers>        Number of workers to use for deleting items
 ```
 
-#### Example 1 :
+#### Deleting data - Example 1
 
-Command for deleting the whole container `my-container` in region `GRA` and all its contained objects :
+Use this command to delete the whole container `my-container` in region `GRA` and all its contained objects :
 
 ``` {.console}
 ovhai data delete GRA my-container --all
 ```
 
-#### Example 2 :
+#### Deleting data - Example 2
 
-Command for deleting a single object with name `file1` inside the container `my-container` of region `GRA` :
+Use this command to delete a single object with name `file1` inside the container `my-container` of region `GRA` :
 
 ``` {.console}
 ovhai data delete GRA my-container file1
@@ -268,4 +269,4 @@ ovhai data delete GRA my-container file1
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
