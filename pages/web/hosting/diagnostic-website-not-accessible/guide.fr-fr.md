@@ -49,7 +49,7 @@ Vérifiez la `Disponibilité`{.action} de votre nom de domaine.
 
 ![my_services_domain_suspended](images/my_services_domain_suspended.png){.thumbnail}
 
-Renouvelez-le si nécessaire, via le bouton `...`{.action} à droite de l'écran, puis `Renouveler`{.action}.
+Renouvelez-le, si nécessaire, via le bouton `...`{.action} à droite de l'écran, puis `Renouveler`{.action}.
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
@@ -67,11 +67,13 @@ Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serv
 
 Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} :
 
+![dns-tabs](images/dns-tabs.png){.thumbnail}
+
 #### Scénario 1 : Les serveurs DNS sont corrects
 
 Les serveurs DNS indiqués sont identiques aux cibles des entrées de type `NS` dans la zone de votre domaine : 
 
-![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}	
+![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
 Passez à [l'étape 3](#etape3).
 
