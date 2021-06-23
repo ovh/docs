@@ -18,14 +18,14 @@ Un **compte partagé** est une boîte e-mail partagée entre plusieurs comptes E
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Avoir souscrit une offre [Exchange OVHcloud](https://www.ovh.com/fr/emails/hosted-exchange).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Avoir souscrit une offre [Exchange OVHcloud](https://www.ovh.com/ca/fr/emails/hosted-exchange).
 
 ## En pratique
 
 ### Ajouter un compte partagé
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Accédez à la section « Web » et sélectionnez votre service Exchange dans le menu de gauche sous `Microsoft`{.action} puis `Exchange`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Accédez à la section « Web » et sélectionnez votre service Exchange dans le menu de gauche sous `Microsoft`{.action} puis `Exchange`{.action}.
 
 Sélectionnez l’onglet `Comptes partagés`{.action} dans le menu horizontal et cliquez sur `Ajouter un compte partagé`{.action}.
 
@@ -74,7 +74,7 @@ Dans notre exemple, nous permettons aux comptes **guide-exchange@** et **test@**
 
 ### Utilisation du compte partagé depuis OWA (webmail)
 
-Connectez-vous au webmail Exchange (OWA) à l'adresse <https://www.ovh.com/fr/mail/> avec un compte e-mail ayant le droit d'accès au compte partagé. 
+Connectez-vous au webmail Exchange (OWA) à l'adresse <https://www.ovh.com/ca/fr/mail/> avec un compte e-mail ayant le droit d'accès au compte partagé. 
 <br>Dans notre exemple, nous nous connectons avec le compte **guide-exchange@**.
 
 Une fois connecté, dans la colonne de gauche, faites un clic droit sur l'arborescence principale de votre adresse e-mail puis sur `Ajouter un dossier partagé`{.action}. 
