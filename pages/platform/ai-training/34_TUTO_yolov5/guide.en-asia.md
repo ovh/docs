@@ -20,13 +20,15 @@ It is based on the YOLOv5 open source repository by [Ultralytics](https://github
 -   a user for AI Training
 -   your own dataset
 
-## Upload your dataset on Public Cloud Storage
+## Instructions
+
+### Upload your dataset on Public Cloud Storage
 
 If you want to upload it from the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go on Object Storage and create a new object container by clicking `Object Storage` > `Create an object container`.
 
 ![image](images/new-object-container.png){.thumbnail}
 
-If you want to run it with the CLI, just follow this \[guide\] (put this link on the word guide: lien du doc object storage quand elle sera déployée). You have to choose the region, the name of your container and the path where your data is located and use the following command:
+If you want to run it with the CLI, just follow this [guide](../data-cli). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ``` {.bash}
 ovhai data upload <region> <container> <paths>
@@ -36,7 +38,7 @@ ovhai data upload <region> <container> <paths>
 >
 > This tutorial has been realized with the COCO dataset. If you don't have your own dataset, you can use it by downloading the COCO version "YOLO v5 Pytorch" available for free on [Roboflow](https://public.roboflow.com/object-detection/microsoft-coco-subset/).
 
-## Launch and access Jupyter notebook with Pytorch library
+### Launch and access Jupyter notebook with Pytorch library
 
 You need to attach a volume if your data is in your OVHCloud object storage and you want to use it during your experiment or if you need to save the results of your work in the object storage. For more information on data, volumes and permissions, see the \[data\] (put this link on the word data: lien du doc data) page.
 
@@ -58,7 +60,7 @@ ovhai job run ovhcom/ai-training-pytorch:1.8.1 --volume <container@region/prefix
 
 You can then reach your notebook's URL once the job is Running.
 
-## Clone the GitHub repository
+### Clone the GitHub repository
 
 The GitHub repository containing all examples for OVHcloud AI TRAINING is available [here](https://github.com/ovh/ai-training-examples).
 
@@ -76,7 +78,7 @@ Once the repository has been cloned, find your notebook by following this path: 
 
 ![image](images/notebook-yolov5-ai-training-clone.png){.thumbnail}
 
-## Experiment YOLOv5 notebook
+### Experiment YOLOv5 notebook
 
 Once your dataset is ready and uploaded, you are able to train the YOLOv5 model of your choice!
 
