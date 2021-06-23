@@ -9,7 +9,7 @@ section: Diagnóstico
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 22/06/21**
+**Última actualización: 23/06/21**
 
 ## Objetivo
 
@@ -26,8 +26,8 @@ La creación de un [Módulo en 1 clic](../modulos-en-un-clic/) en modo simple o 
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting](https://www.ovh.es/hosting/) compatible.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener contratado un plan de [hosting](https://www.ovh.com/world/es/hosting/) compatible.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Haber utilizado la funcionalidad [Módulo en 1 clic](../modulos-en-un-clic/) para crear un nuevo sitio web.
 
 ## Procedimiento
@@ -47,35 +47,35 @@ Si aparece este mensaje al iniciar la instalación del módulo, no es posible cr
 
 > [!primary]
 >
-> Consulte nuestra comparativa de los distintos [planes de hosting](https://www.ovh.es/hosting/).
+> Consulte nuestra comparativa de los distintos [planes de hosting](https://www.ovh.com/world/es/hosting/).
 >
 
-En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y haga clic en `Cambiar de plan` en la sección `Suscripción` - `Producto`.
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y haga clic en `Cambiar de plan` en la sección `Suscripción` - `Producto`.
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Los planes [Pro2014](https://www.ovh.es/hosting/hosting-profesional.xml) y [Performance](https://www.ovh.es/hosting/hosting-performance.xml) permiten crear hasta tres módulos en 1 clic adicional. Los planes Performance también le permitirán activar gratis un [servidor SQL privado](https://www.ovh.es/hosting/opciones-sql.xml).
+Los planes [Pro2014](https://www.ovh.com/world/es/hosting/hosting-profesional.xml) y [Performance](https://www.ovh.com/world/es/hosting/hosting-performance.xml) permiten crear hasta tres módulos en 1 clic adicional. Los planes Performance también le permitirán activar gratis un [servidor SQL privado](https://www.ovh.com/world/es/hosting/opciones-sql.xml).
 
 #### Solución 2: eliminar una base de datos no utilizada <a name="delete-the-database"></a>
 
 > [!warning]
 >
-> La operación de eliminación de una base de datos es definitiva. También implica la supresión de las copias de seguridad de la base de datos en cuestión. Si no está seguro de las operaciones a realizar, contacte con su webmaster o uno de nuestros [partners](https://partner.ovhcloud.com/es-es/directory/).
+> La operación de eliminación de una base de datos es definitiva. También implica la supresión de las copias de seguridad de la base de datos en cuestión. Si no está seguro de las operaciones a realizar, contacte con su webmaster o uno de nuestros [partners](https://partner.ovhcloud.com/es/directory/).
 >
 
-Para eliminar una base de datos, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y haga clic en `Web Cloud`{.action}, seleccione `Alojamientos`{.action} y `Bases de datos`{.action}. Elimine la base de datos:
+Para eliminar una base de datos, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y haga clic en `Web Cloud`{.action}, seleccione `Alojamientos`{.action} y `Bases de datos`{.action}. Elimine la base de datos:
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
 
 #### Solución nº 3: contratar nuevas bases de datos
 
-En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}. En la `Bases de datos`{.action}, haga clic en `Acciones`{.action}.
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}. En la `Bases de datos`{.action}, haga clic en `Acciones`{.action}.
 
 ![order_a_database](images/order_a_database.png){.thumbnail}
 
 > [!primary]
 >
-> Consulte nuestra comparativa de los distintos [productos de bases de datos](https://www.ovh.es/hosting/opciones-sql.xml).
+> Consulte nuestra comparativa de los distintos [productos de bases de datos](https://www.ovh.com/world/es/hosting/opciones-sql.xml).
 >
 
 #### Solución 4: instalar el módulo en una base de datos ya utilizada
