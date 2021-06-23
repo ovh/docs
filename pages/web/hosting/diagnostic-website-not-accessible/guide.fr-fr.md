@@ -95,15 +95,17 @@ Effectuez une sauvegarde de la zone actuelle en cliquant sur le bouton `Modifier
 
 Copiez/collez le contenu textuel de votre `Zone DNS`{.action} dans un document texte.
 
-Cliquez ensuite sur `Zone DNS`{.action}
+Cliquez ensuite sur `Réintialiser ma zone DNS`{.action}, puis sélectionnez `Non, mais je veux réinitialiser ma zone DNS`{.action}, indiquez vos serveurs mail et d'hébergement, et `Valider`{.action}.
 
-puis patientez 48 heures au maximum (délai technique maximum de propagation des changements de serveurs DNS).
+![reset-dns-zone-button](images/reset-dns-zone-button.png){.thumbnail}
+
+Patientez enfin 24 heures au maximum (délai technique maximum de propagation des modifications dans la `Zone DNS`{.action}).
 
 #### Scénario 4 : Votre domaine est relié à des serveurs DNS extérieurs
 
 Les serveurs DNS qui apparaissent ne sont pas gérés par OVHcloud : 
 
-![](images/.png){.thumbnail}
+![external-dns-servers](images/external-dns-servers.png){.thumbnail}
 
 Contactez le prestataire qui gère ces serveurs.
 
@@ -115,7 +117,13 @@ Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une ti
 
 Si votre site est hébergé sur l'une de vos offres mutualisées OVHcloud, cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'hébergement concerné.
 
-Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou IPV6 de votre domaine, puis reportez-là dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`. Patientez enfin 24 heures au maximum (délai technique maximum de propagation des modifications dans la `Zone DNS`{.action}).
+![hosting-menu](images/hosting-menu.png){.thumbnail}
+
+Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou IPV6 de votre domaine, 
+
+![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
+
+Puis reportez-là dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`. Patientez enfin 24 heures au maximum (délai technique maximum de propagation des modifications dans la `Zone DNS`{.action}).
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
