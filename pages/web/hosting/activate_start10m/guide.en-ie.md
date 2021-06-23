@@ -46,7 +46,7 @@ The activation window will appear. **Step 1** will detail the plan and its price
 
 Once your order has been confirmed, you will receive an email with the [FTP connection details](../log-in-to-storage-ftp-web-hosting/) for your Start 10M hosting plan.
 
-Please read our guide on [creating an MX Plan email account](../../emails/hosted_email_how_to_set_up_an_email_address/) to get the most out of the email address included with the Start 10M hosting solution.
+Please read our guide on [creating an MX Plan email account](../../emails/hosted_email_how_to_set_up_an_email_address/) to make use of the email address included with the Start 10M hosting solution.
 
 ## Go further
 
