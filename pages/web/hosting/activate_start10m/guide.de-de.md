@@ -13,7 +13,7 @@ section: 'Erste Schritte'
 
 ## Ziel
 
-Mit dem [Start 10M](https://www.ovh.de/domains/angebot_hosting_start10m.xml){.external} bietet Ihnen OVHcloud ein Webhosting mit 10 MB und einen E-Mail-Account mit 5 GB Speicherplatz. In dieser Anleitung erfahren Sie, wie Sie das Start 10M Hosting für Ihre [Domainnamen](https://www.ovh.com/fr/domaines/){.external} aktivieren.
+Mit dem [Start 10M](https://www.ovh.de/domains/angebot_hosting_start10m.xml){.external} bietet Ihnen OVHcloud ein Webhosting mit 10 MB und einen E-Mail-Account mit 5 GB Speicherplatz. In dieser Anleitung erfahren Sie, wie Sie das Start 10M Hosting für Ihre [Domainnamen](https://www.ovh.de/domains/){.external} aktivieren.
 
 > [!warning]
 > Dieses kostenlose Hosting mit 10 MB ist für eine einfache Präsentationsseite **ohne Datenbanken geeignet**. Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank wie ein CMS erfordert (zum Beispiel: Worpdress, Joomla, Prestashop, Drupal...). Bestellen Sie direkt eines unserer [Webhosting-Angebote über unsere Website](https://www.ovh.de/hosting/) oder  Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) {.external}.
