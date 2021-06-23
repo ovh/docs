@@ -18,7 +18,7 @@ With [Start10M](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.exter
 
 ## Requirements
 
-- a domain [name](https://www.ovh.co.uk/domains/){.external}, detached from any web hosting plans, in the OVHcloud Control Panel
+- a [domain name](https://www.ovh.co.uk/domains/){.external}, detached from any web hosting plans, in the OVHcloud Control Panel
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
