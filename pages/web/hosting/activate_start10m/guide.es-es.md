@@ -30,7 +30,7 @@ Con el [Start 10M](https://www.ovh.es/dominios/oferta_hosting_start10m.xml){.ext
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Dominios`{.action} (**1**) en la columna izquierda y seleccione el dominio correspondiente.
 
-En la sección **«Información general»**(**2**), acceda al apartado*«Alojamiento web y correo electrónico gratis»*. Haga clic en el botón `...`{.action} a la derecha y, seguidamente, en `«Activar»`{.action}(**3**).
+En la sección **«Información general»**(**2**), acceda al apartado *«Alojamiento web y correo electrónico gratis»*. Haga clic en el botón `...`{.action} a la derecha y, seguidamente, en `«Activar»`{.action}(**3**).
 
 ![start10m](images/start10m-step1-01.png){.thumbnail}
 
