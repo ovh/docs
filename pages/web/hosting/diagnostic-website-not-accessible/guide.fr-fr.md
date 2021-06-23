@@ -73,6 +73,8 @@ Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} :
 
 Les serveurs DNS indiqués sont identiques aux cibles des entrées de type `NS` dans la zone de votre domaine : 
 
+![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
+
 ![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
 Passez à [l'étape 3](#etape3).
@@ -82,6 +84,8 @@ Passez à [l'étape 3](#etape3).
 Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans la zone :
 
 ![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}
+
+[Modifiez les serveurs DNS](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), afin que ceux indiqués dans l'onglet `Serveurs DNS`{.action} correspondent aux cibles des entrées de type `NS` dans la `Zone DNS`{.action} de votre nom de domaine.
 
 #### Scénario 3 : Aucune entrée de type NS n'apparaît dans la Zone DNS
 
@@ -95,7 +99,7 @@ Effectuez une sauvegarde de la zone actuelle en cliquant sur le bouton `Modifier
 
 Copiez/collez le contenu textuel de votre `Zone DNS`{.action} dans un document texte.
 
-Cliquez ensuite sur `Réintialiser ma zone DNS`{.action}, puis sélectionnez `Non, mais je veux réinitialiser ma zone DNS`{.action}, indiquez vos serveurs mail et d'hébergement, et `Valider`{.action}.
+Cliquez ensuite sur `Réintialiser ma zone DNS`{.action}, puis sélectionnez `Non, mais je veux réinitialiser ma zone DNS`{.action}, indiquez vos serveurs mail et d'hébergement et cliquez sur `Valider`{.action}.
 
 ![reset-dns-zone-button](images/reset-dns-zone-button.png){.thumbnail}
 
@@ -113,7 +117,7 @@ Contactez le prestataire qui gère ces serveurs.
 
 Dans cette étape, vous allez vérifier l'adresse IP de votre hébergement, puis l'ajouter à votre `Zone DNS`{.action}.
 
-Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une tierce personne, contactez le support de l'hébergeur ou le prestataire concerné.
+Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une tierce personne, contactez le support de l'hébergeur ou le prestataire concerné, afin d'obtenir l'adresse IP du serveur hébergeant votre site.
 
 Si votre site est hébergé sur l'une de vos offres mutualisées OVHcloud, cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'hébergement concerné.
 
