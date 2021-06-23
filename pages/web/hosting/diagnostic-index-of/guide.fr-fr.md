@@ -10,11 +10,11 @@ order: 5
  
 ## Objectif
 
-Suite à une configuration erronée du `Multisite` de votre hébergement OVHcloud, votre site peut afficher une page **Index of**.
+Lorsqu’une configuration `Multisite` n’est pas correctement paramétrée, votre site est susceptible d’afficher une page **Index of**.
 
 ![index_of](images/index_of.png){.thumbnail}
 
-**Découvrez, en cas de page « Index of », comment remettre votre site en ligne.**
+**Découvrez comment corriger l’affichage d’une page Index of**
 
 > [!warning]
 >
@@ -25,18 +25,18 @@ Suite à une configuration erronée du `Multisite` de votre hébergement OVHclou
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/)
+- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
 
-### Comprendre l'origine de la page Index of
- 
-Votre nom de domaine est relié par le multisite de votre hébergement à un répertoire (un « Dossier racine ») dans votre serveur [FTP](../connexion-espace-stockage-ftp-hebergement-web/).
+### Comprendre l'origine de la page « Index of »
+
+Votre nom de domaine est connecté via la partie `Multisite` de votre hébergement à un répertoire (un « Dossier racine ») sur votre serveur [FTP](../connexion-espace-stockage-ftp-hebergement-web/).
 
 La page **Index of** indique que le répertoire concerné ne contient pas de fichier **index.php** ou **index.html**. Un fichier de ce type constitue le « point d'entrée » de votre site.
 
-Pour afficher votre site web, vous devrez donc, depuis le `Multisite` de votre hébergement, relier votre domaine au `Dossier racine` qui contient ce fichier **index.php** ou **index.html**.
+Pour afficher votre site web, vous devrez donc, depuis la partie `Multisite` de votre hébergement, relier votre domaine au `Dossier racine` qui contient ce fichier **index.php** ou **index.html**.
 
 > [!primary]
 >
@@ -44,9 +44,7 @@ Pour afficher votre site web, vous devrez donc, depuis le `Multisite` de votre h
 >
 > Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/), si vous éprouvez des difficultés à mettre en place cette configuration. En effet, nos équipes support ne seront pas en mesure de vous fournir une assistance sur toute modification de la programmation interne de votre site.
 
-### Résoudre un des cas les plus courants de page Index of
-
-Une des configurations les plus courantes à l'origine d'une page **Index of** est la suivante : 
+### Résoudre le cas le plus courant d’une page « Index of »
 
 Vous avez importé les fichiers de votre site **mydomain.ovh** dans le dossier `www` de votre hébergement par [FTP](../connexion-espace-stockage-ftp-hebergement-web/). Hors, votre nom de domaine n'est pas relié à ce dossier dans la colonne `Dossier racine` de votre `Multisite`.
 
@@ -70,7 +68,7 @@ Puis cliquez sur `Valider`{.action} :
 
 ![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
 
-Vous obtiendrez, sous quelques minutes, le résultat suivant :
+Vous obtiendrez le résultat suivant :
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
 
