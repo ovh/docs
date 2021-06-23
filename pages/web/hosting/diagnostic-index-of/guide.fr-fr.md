@@ -52,7 +52,7 @@ Vous avez importé les fichiers de votre site **mydomain.ovh** dans le dossier `
 
 ![index_of_multisite](images/index_of_multisite.png){.thumbnail}
 
-Modifiez le `Dossier racine` en cliquant sur le bouton `...` à droite du tableau, puis `Modifier le domaine` :
+Modifiez le `Dossier racine` en cliquant sur le bouton `...`{.action} à droite du tableau, puis sur `Modifier le domaine`{.action} :
 
 ![modify_domain](images/modify_domain.png){.thumbnail}
 
@@ -66,7 +66,7 @@ Ensuite, faites `Suivant` :
 
 ![change_root_folder](images/change_root_folder.png){.thumbnail}
 
-Puis `Valider` :
+Puis cliquez sur `Valider`{.action} :
 
 ![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
 
@@ -82,6 +82,6 @@ Vous obtiendrez, sous quelques minutes, le résultat suivant :
 
 [Partager son hébergement entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/)
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
