@@ -4,7 +4,11 @@ slug: zmiana-rozmiaru-partycji-vps-upgrade
 section: 'Pierwsze kroki'
 ---
 
-**Ostatnia aktualizacja z dnia 06-12-2018**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 18-05-2021**
 
 ## Wprowadzenie
 
@@ -12,15 +16,15 @@ Podczas zmiany oferty serwera VPS może okazać się konieczna zmiana rozmiaru p
 
 > [!warning]
 >
-> Zmiana rozmiaru partycji skutkuje nieodwracalną utratą danych. OVH nie ponosi odpowiedzialności za ich zniszczenie lub utratę. Przed przystąpieniem do jakichkolwiek czynności należy wykonać odpowiednią kopię zapasową swoich danych.
+> Zmiana rozmiaru partycji skutkuje nieodwracalną utratą danych. OVHcloud nie ponosi odpowiedzialności za ich zniszczenie lub utratę. Przed przystąpieniem do jakichkolwiek czynności należy wykonać odpowiednią kopię zapasową swoich danych.
 >
 
 **W niniejszej instrukcji przedstawione są poszczególne kroki, które należy wykonać, aby zwiększyć przestrzeń dyskową.**
 
 ## Wymagania początkowe
 
-- Dostęp poprzez SSH do serwera VPS (dostęp root)
-- Ponowne uruchomienie serwera w [Trybie Rescue](https://docs.ovh.com/pl/vps/rescue/)
+- Dostęp administratora do serwera VPS (Windows)
+- Ponowne uruchomienie serwera w [Trybie Rescue](https://docs.ovh.com/pl/vps/rescue/)(Linux)
 
 ## W praktyce
 
@@ -32,13 +36,15 @@ Ponieważ w wyniku próby rozszerzenia partycji może dojść do utraty danych, 
 
 ### Odmontowanie partycji
 
-Po zalogowaniu się do serwera VPS w [trybie Rescue](https://docs.ovh.com/pl/vps/rescue/) Twoja partycja zostaje zamontowana automatycznie. W celu dokonania zmiany jej rozmiaru, należy ją najpierw odmontować. Jeśli znasz nazwę swojej partycji, możesz pominąć ten krok. Jeśli jej nie znasz, użyj następującego polecenia:
+W przypadku starszych gam VPS partycje zostaną automatycznie zamontowane w trybie rescue. Użyj następującego polecenia, aby zidentyfikować lokalizację zamontowania partycji:
 
 ```sh
 lsblk
 ```
 
-Partycja odpowiadająca trybowi Rescue to ta zamontowana w katalogu / będącym faktycznie katalogiem głównym systemu. Natomiast partycja Twojego serwera VPS będzie znajdować się najprawdopodobniej w katalogu podrzędnym do /mnt, może również nie być w ogóle zamontowana.
+Partycja odpowiadająca trybowi Rescue to ta zamontowana w katalogu `/`, który jest w rzeczywistości katalogiem systemu. Natomiast partycja Twojego serwera VPS będzie prawdopodobnie umieszczona w katalogu powiązanym z "/mnt".
+
+Jeśli jednak Twój VPS należy do aktualnej gamy, partycja nie zostanie automatycznie zamontowana. Jeśli potwierdzi to kolumna MOUNTPOINT, możesz pominąć etap demontażu.
 
 ```sh
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -48,7 +54,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-W celu odmontowania partycji należy użyć następującego polecenia:
+Aby zmienić rozmiar partycji, należy ją odmontować. W celu odmontowania partycji należy użyć następującego polecenia:
 
 ```sh
 umount /dev/sdb1
@@ -180,6 +186,7 @@ W celu sprawdzenia czy wszystko przebiegło poprawnie, możesz zamontować nowo 
 ```sh
 mount /dev/sdb1 /mnt
 ```
+
 ```sh
 df -h
  
@@ -225,6 +232,24 @@ Następnie użyj pierwszego superbloku backupowego w celu sprawdzenia i naprawie
 ```sh
 fsck -b 32768 /dev/sdb1
 ```
+
+### Windows
+
+#### Dostęp do File and Storage Services
+
+Możesz znaleźć go w "Server Manager":
+
+![Usługi File and Storage](images/file-and-storage.png){.thumbnail}
+
+#### Zmień rozmiar wolumenu
+
+Kliknij prawym przyciskiem myszy na C: i wybierz `Rozszerzenie Tom...`{.action}.
+
+Następnie zostaniesz poproszony o wybór nowego rozmiaru wolumenu:
+
+![Set New Volume Size](images/extend.png){.thumbnail}
+
+Wprowadź żądany rozmiar i kliknij `OK`{.action}. Wolumen zostanie wówczas rozszerzony.
 
 ## Sprawdź również
 

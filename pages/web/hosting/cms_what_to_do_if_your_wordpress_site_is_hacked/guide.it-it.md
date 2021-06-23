@@ -46,16 +46,16 @@ Non è possibile descrivere dettagliatamente la procedura che permette di identi
 Tutte le richieste HTTP sono disponibili nei tuoi log (https://logs.ovh.net/tuo_dominio).
 Sostituisci "tuo_dominio" con il tuo dominio e la sua estensione, ad esempio "ovh.com".
 
-- 1. Individua la data e l'ora contenute nell'email che hai ricevuto*
-- 2. Consulta i tuoi log a partire da questo orario ed eventualmente allarga il campo di ricerca agli orari anteriori fino a trovare una richiesta non corretta, sospetta o diversa dalle altre. Questa operazione richiede un pò di pratica e di conoscenza del formato delle richieste. Presta particolare attenzione alle richieste di tipo POST, maggiormente sfruttate dagli hacker
-- 3. Individua lo script utilizzato da questa richiesta
-- 4. Analizza lo script per individuare la falla
-- 5. Correggi la falla
+- Individua la data e l'ora contenute nell'email che hai ricevuto*
+- Consulta i tuoi log a partire da questo orario ed eventualmente allarga il campo di ricerca agli orari anteriori fino a trovare una richiesta non corretta, sospetta o diversa dalle altre. Questa operazione richiede un pò di pratica e di conoscenza del formato delle richieste. Presta particolare attenzione alle richieste di tipo POST, maggiormente sfruttate dagli hacker
+- Individua lo script utilizzato da questa richiesta
+- Analizza lo script per individuare la falla
+- Correggi la falla
 
 
 *l'invio di email avviene solo se il tuo hosting è stato bloccato. In caso contrario è necessario verificare la data delle ultime modifiche effettuate dallo spazio FTP (data dei file).
 
-Eliminare semplicemenre il codice malevolo aggiunto dall'hacker non è sufficiente: è necessario correggere totalmente la falla di sicurezza.
+Eliminare semplicemente il codice malevolo aggiunto dall'hacker non è sufficiente: è necessario correggere totalmente la falla di sicurezza.
 
 Per questo tipo di operazione, ti consigliamo di richiedere l’assistenza di un [Webmaster](https://partners.ovh.com) o di chiedere aiuto sul forum ufficiale di Wordpress.
 In nessun caso il supporto OVH potrà assisterti direttamente per questo tipo di richiesta.
