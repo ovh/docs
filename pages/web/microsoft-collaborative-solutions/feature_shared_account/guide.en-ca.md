@@ -14,7 +14,7 @@ order: 5
 A **shared account** is a mailbox shared between several Exchange accounts and can only be accessed through them. A shared account does not have a password. It is therefore necessary to delegate its access to one or more Exchange accounts of the same service.
 <br>Shared accounts can be accessed via delegation from OWA (Exchange webmail) or via Outlook email software.
 
-**Find out how to create and manage a shared account on your Exchange platform.**
+**This guide explains how to create and manage a shared account on your Exchange platform.**
 
 ## Requirements
 
