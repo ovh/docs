@@ -14,7 +14,7 @@ Lorsqu’une configuration `Multisite` n’est pas correctement paramétrée, vo
 
 ![index_of](images/index_of.png){.thumbnail}
 
-**Découvrez comment corriger l’affichage d’une page Index of**
+**Découvrez comment corriger l’affichage d’une page « Index of »**
 
 > [!warning]
 >
@@ -60,11 +60,11 @@ Cochez la case `Modifier également le sous domaine www.mydomain.ovh` et indique
 >
 > Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre serveur FTP.
 
-Ensuite, faites `Suivant` :
+Cliquez ensuite sur `Suivant`
 
 ![change_root_folder](images/change_root_folder.png){.thumbnail}
 
-Puis cliquez sur `Valider`{.action} :
+Puis cliquez sur `Valider`{.action}.
 
 ![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
 
