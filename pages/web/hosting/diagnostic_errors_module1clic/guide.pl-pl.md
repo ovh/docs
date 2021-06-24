@@ -75,14 +75,14 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 > [!primary]
 >
-> Zapoznaj się z porównaniem naszych [ofert baz danych](https://www.ovh.com/fr/hebergement-web/options-sql.xml)
+> Zapoznaj się z porównaniem naszych [ofert baz danych](https://www.ovh.pl/hosting/opcje-sql.xml)
 >
 
 #### Roztwór 4: zainstalować moduł na bazie danych
 
-Aby zainstalować moduł na bazie danych, której już używasz, użyj zaawansowanego[ ](../modules-en-1-clic/#installation-avancee-dun-module)trybu instalacji nowego **modułu za pomocą 1 kliknięcia**.
+Aby zainstalować moduł na bazie danych, której już używasz, użyj zaawansowanego[ ](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#instalacja-w-trybie-zaawansowanym)trybu instalacji nowego **modułu za pomocą 1 kliknięcia**.
 
-Aby odnaleźć dane do logowania do bazy danych, sprawdź nasz [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
+Aby odnaleźć dane do logowania do bazy danych, sprawdź nasz [FAQ](https://www.ovh.pl/hosting/faq/).
 
 ### "Katalog instalacji nie jest pusty"
 
@@ -96,15 +96,15 @@ Aby powiązać domenę z innym katalogiem, kliknij `Zmień domenę`{.action} w z
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
-Możesz również połączyć się z hostingiem przez [FTP](../connexion-espace-stockage-ftp-hebergement-web/), a następnie usunąć lub przenieść zawartość folderu po jego zapisaniu.
+Możesz również połączyć się z hostingiem przez [FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/), a następnie usunąć lub przenieść zawartość folderu po jego zapisaniu.
 
-### "Nie można połączyć się z bazą danych" <a name="supprimer-le-module"></a>
+### "Nie można połączyć się z bazą danych" <a name="delete-module"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
 Po uruchomieniu instalacji modułu w trybie zaawansowanym otrzymałeś wiadomość e-mail z informacją, że moduł nie może się łączyć z wskazaną bazą danych. 
 
-Należy więc sprawdzić dane dostępowe do bazy danych. Aby je znaleźć, sprawdź nasz [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
+Należy więc sprawdzić dane dostępowe do bazy danych. Aby je znaleźć, sprawdź nasz [FAQ](https://www.ovh.pl/hosting/faq/).
 
 Następnie usuń moduł w zakładce `Moduły za 1 kliknięciem`{.action}:
 
@@ -120,31 +120,29 @@ Kliknij kartę MultiSite` `{.action}, po czym przeprowadź następujące kontrol
 
 |Scenariusz|Co należy zrobić?|
 |---|---|
-|Domena lub subdomena przypisana do strony, którą chcesz utworzyć nie wyświetla się w opcji `MultiSite`{.action}.|Dodaj swoją domenę zgodnie z [tymi wskazówkami](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
-|Domena została usunięta z strony podpiętej w opcji MultiSite bez konieczności wykonywania przez Ciebie żadnych czynności.|Jeśli Twoja domena lub [Strefa DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) nie są zarządzane z poziomu konta OVHcloud, dodaj domenę do `MultiSite`{.action} zgodnie z [tym przewodnikiem](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
+|Domena lub subdomena przypisana do strony, którą chcesz utworzyć nie wyświetla się w opcji `MultiSite`{.action}.|Dodaj swoją domenę zgodnie z [tymi wskazówkami](../konfiguracja-multisite-na-hostingu/#etap-2-dodanie-domeny-lub-subdomeny).|
+|Domena została usunięta z strony podpiętej w opcji MultiSite bez konieczności wykonywania przez Ciebie żadnych czynności.|Jeśli Twoja domena lub [Strefa DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns) nie są zarządzane z poziomu konta OVHcloud, dodaj domenę do `MultiSite`{.action} zgodnie z [tym przewodnikiem](../konfiguracja-multisite-na-hostingu/#etap-22-dodaj-domene-zewnetrzna).|
 
 ### Twój moduł wyświetla się na koncie www typu "xxxxx.cluster0xx.hosting.ovh.net"
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
-Po wykonaniu wszystkich niezbędnych kopii zapasowych [usuń moduł](#supprimer-le-module), następnie jego [bazę danych](#delete-database). Następnie uruchom ponownie instalację dla wybranej domeny.
+Po wykonaniu wszystkich niezbędnych kopii zapasowych [usuń moduł](#delete-module), następnie jego [bazę danych](#delete-database). Następnie uruchom ponownie instalację dla wybranej domeny.
 
 ### Twoja stara strona wciąż się wyświetla
 
 Ta nieprawidłowość może mieć kilka przyczyn: 
 
-- Dokonałeś ostatnio zmiany strefy lub serwerów [DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) lub [transferu domeny](../../domains/transferer-mon-domaine-generique/). Odczekaj, aż operacje te zostaną zakończone (48 godziny w przypadku zmiany serwerów DNS). Pamiętaj, aby zrestartować urządzenia (komputer, smartfon, box, etc.) i usunąć cache przeglądarki.
+- Dokonałeś ostatnio zmiany strefy lub serwerów [DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns) lub [transferu domeny](../../domains/przeniesienie-domeny-globalnej/). Odczekaj, aż operacje te zostaną zakończone (48 godziny w przypadku zmiany serwerów DNS). Pamiętaj, aby zrestartować urządzenia (komputer, smartfon, box, etc.) i usunąć cache przeglądarki.
 
-- Twoja domena jest zawsze powiązana z Twoim poprzednim hostingiem. W tym przypadku zmień [strefę DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) lub [serwery DNS](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns) lub skontaktuj się z aktualnym dostawcą usług hostingowych.
+- Twoja domena jest zawsze powiązana z Twoim poprzednim hostingiem. W tym przypadku zmień [strefę DNS](../../hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-domeny_1) lub [serwery DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zmien-serwery-dns) lub skontaktuj się z aktualnym dostawcą usług hostingowych.
 
 ## Sprawdź <a name="gofurther"></a>
 
-[Jak zdiagnozować białą stronę?](../comment-diagnostiquer-page-blanche/)
+[Jak zdiagnozować białą stronę?](../hosting_www_jak_sprawdzic_przyczyne_wyswietlania_sie_bialej_strony/)
 
-[Kody odpowiedzi serwera HTTP](../mutualise-les-codes-de-reponse-dun-serveur-http/)
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli chcesz wykonać specjalistyczne operacje (pozycjonowanie, rozwój, itp.)
 
-Skontaktuj się z [partnerami OVHcloud, jeśli chcesz wykonać specjalistyczne operacje (pozycjonowanie, rozwój, itp.)](https://partner.ovhcloud.com/fr/)
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/fr/support-levels/).
-
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com>.
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
