@@ -5,7 +5,7 @@ excerpt: Diagnostiquez les cas les plus courants d'erreurs liées aux créations
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 24/06/21**
+**Dernière mise à jour le 24/06/2021**
 
 ## Objectif
 

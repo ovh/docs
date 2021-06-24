@@ -5,7 +5,7 @@ excerpt: Diagnostica i casi più comuni di errore associati alla creazione di mo
 section: Diagnostica
 ---
 
-**Ultimo aggiornamento: 24/06/21**
+**Ultimo aggiornamento: 24/06/2021**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
