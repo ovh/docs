@@ -34,7 +34,7 @@ A criação de um [Módulo 1 clique](../partilhado_guias_dos_modulos_dos_alojame
 
 > [!primary]
 >
-> Indicamos aqui os erros mais comuns. Se encontrar outra anomalia, consulte a nossa [FAQ nos alojamentos Web](https://www.ovh.pt/alojamento-partilhado/faq/).
+> Indicamos aqui os erros mais comuns. Se encontrar outra anomalia, consulte a nossa [FAQ nos alojamentos Web](../faq-alojamento/).
 >
 
 ### "Ocorreu um erro aquando do carregamento das informações. (You need at least one free database)"
@@ -54,7 +54,7 @@ Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-As ofertas [Pro2014](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-pro.xml) e [Performance](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-performance.xml) permitem-lhe criar até três módulos em 1 clique suplementares. As ofertas Performance permitem-lhe também ativar gratuitamente um [servidor SQL privado](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml).
+As ofertas [Alojamento Pro](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-pro.xml) e [PerfAlojamento Performanceormance](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-performance.xml) permitem-lhe criar até três módulos em 1 clique suplementares. As ofertas **Alojamento Performance** permitem-lhe também ativar gratuitamente um [servidor SQL privado](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml).
 
 #### Solução n°2: eliminar uma base de dados não utilizada <a name="delete-database"></a>
 

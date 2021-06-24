@@ -34,7 +34,7 @@ Utworzenie [modułu za pomocą 1 kliknięcia](../hosting_www_przewodniki_dotycza
 
 > [!primary]
 >
-> Wyszczególniamy tutaj najczęstsze błędy. Jeśli zauważysz inną anomalię, zapoznaj się z naszym [FAQ dotyczący hostingu www](https://www.ovh.pl/hosting/faq/).
+> Wyszczególniamy tutaj najczęstsze błędy. Jeśli zauważysz inną anomalię, zapoznaj się z naszym [FAQ dotyczący hostingu www](../web-hosting-faq/).
 >
 
 ### "Wystąpił błąd podczas pobierania informacji. (You need at least one free database)"
@@ -54,7 +54,7 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Dzięki ofercie [Pro2014](https://www.ovh.pl/hosting/hosting-pro.xml) i [Performance](https://www.ovh.pl/hosting/hosting-performance.xml) możesz utworzyć do trzech modułów za pomocą 1 kliknięcia. Wraz z pakietem Performance będziesz mógł włączyć za darmo prywatny [serwer SQL](https://www.ovh.pl/hosting/opcje-sql.xml).
+Dzięki ofercie [Hosting Pro](https://www.ovh.pl/hosting/hosting-pro.xml) i [Hosting Performance](https://www.ovh.pl/hosting/hosting-performance.xml) możesz utworzyć do trzech modułów za pomocą 1 kliknięcia. Wraz z pakietem **Hosting Performance** będziesz mógł włączyć za darmo prywatny [serwer SQL](https://www.ovh.pl/hosting/opcje-sql.xml).
 
 #### Roztwór 2: usuń niewykorzystaną bazę danych <a name="delete-database"></a>
 

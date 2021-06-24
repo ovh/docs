@@ -5,7 +5,7 @@ excerpt: Diagnostica i casi più comuni di errore associati alla creazione di mo
 section: Diagnostica
 ---
 
-**Ultimo aggiornamento: 22/06/21**
+**Ultimo aggiornamento: 24/06/21**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -34,7 +34,7 @@ La creazione di un [modulo in 1 click](../hosting_condiviso_guida_ai_moduli_degl
 
 > [!primary]
 >
-> Inserisci qui gli errori più comuni. Se riscontri un'altra anomalia, consulta le nostre [FAQ sugli hosting Web](https://www.ovh.it/hosting-web/faq/).
+> Inserisci qui gli errori più comuni. Se riscontri un'altra anomalia, consulta le nostre [FAQ sugli hosting Web](../faq-hosting-web/).
 >
 
 ### "Si è verificato un errore durante il caricamento delle informazioni. (You need at least one free database)"
@@ -54,7 +54,7 @@ Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fro
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Le offerte [Pro2014](https://www.ovh.it/hosting-web/hosting-web-pro.xml) e [Performance](https://www.ovh.it/hosting-web/hosting-web-performance.xml) ti permetteranno di creare fino a tre moduli in 1 click supplementari. Le offerte Performance ti permettono di attivare gratuitamente un [server SQL privato](https://www.ovh.it/hosting-web/opzioni-sql.xml).
+Le offerte [Hosting Pro](https://www.ovh.it/hosting-web/hosting-web-pro.xml) e [Hosting Performance](https://www.ovh.it/hosting-web/hosting-web-performance.xml) ti permetteranno di creare fino a tre moduli in 1 click supplementari. Le offerte **Hosting Performance** ti permettono di attivare gratuitamente un [server SQL privato](https://www.ovh.it/hosting-web/opzioni-sql.xml).
 
 #### Soluzione n°2: eliminare un database non utilizzato <a name="delete-the-database"></a>
 

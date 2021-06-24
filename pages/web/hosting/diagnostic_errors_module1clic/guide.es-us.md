@@ -9,7 +9,7 @@ section: Diagnóstico
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 23/06/21**
+**Última actualización: 24/06/21**
 
 ## Objetivo
 
@@ -34,7 +34,7 @@ La creación de un [Módulo en 1 clic](../modulos-en-un-clic/) en modo simple o 
 
 > [!primary]
 >
-> Aquí indicamos los errores más comunes. Si encuentra otra anomalía, consulte nuestras [FAQ en los alojamientos web](https://www.ovh.es/hosting/faq/).
+> Aquí indicamos los errores más comunes. Si encuentra otra anomalía, consulte nuestras [FAQ en los alojamientos web](../faq-web-hosting/).
 >
 
 ### "Se ha producido un error al cargar la información. (You need at least one free database)"
@@ -54,7 +54,7 @@ En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Los planes [Pro2014](https://www.ovh.com/world/es/hosting/hosting-profesional.xml) y [Performance](https://www.ovh.com/world/es/hosting/hosting-performance.xml) permiten crear hasta tres módulos en 1 clic adicional. Los planes Performance también le permitirán activar gratis un [servidor SQL privado](https://www.ovh.com/world/es/hosting/opciones-sql.xml).
+Los planes [Hosting Profesional](https://www.ovh.com/world/es/hosting/hosting-profesional.xml) y [Hosting Performance](https://www.ovh.com/world/es/hosting/hosting-performance.xml) permiten crear hasta tres módulos en 1 clic adicional. Los planes **Hosting Performance** también le permitirán activar gratis un [servidor SQL privado](https://www.ovh.com/world/es/hosting/opciones-sql.xml).
 
 #### Solución 2: eliminar una base de datos no utilizada <a name="delete-the-database"></a>
 

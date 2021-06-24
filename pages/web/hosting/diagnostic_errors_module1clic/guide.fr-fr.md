@@ -5,7 +5,7 @@ excerpt: Diagnostiquez les cas les plus courants d'erreurs liées aux créations
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 21/05/21**
+**Dernière mise à jour le 24/06/21**
 
 ## Objectif
 
@@ -50,7 +50,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Les offres [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) et [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres Performance vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml).
+Les offres [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) et [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml).
 
 #### Solution n°2 : supprimer une base de données non utilisée <a name="supprimer-la-base"></a>
 
