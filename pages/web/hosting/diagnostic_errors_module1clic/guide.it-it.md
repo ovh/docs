@@ -60,10 +60,10 @@ Le offerte [Hosting Pro](https://www.ovh.it/hosting-web/hosting-web-pro.xml) e [
 
 > [!warning]
 >
-> L'operazione di eliminazione di un database è definitiva. e l'eliminazione dei backup del database. Se non sei sicuro delle operazioni da effettuare, contatta il tuo webmaster o uno dei nostri [partner](https://partner.ovhcloud.com/it/directory/).
+> L'operazione di eliminazione di un database è definitiva. e l'eliminazione dei backup del database. Se non sei sicuro delle operazioni da effettuare, contatta il tuo webmaster o uno dei [nostri partner](https://partner.ovhcloud.com/it/directory/).
 >
 
-Per eliminare un database, [accedi allo Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), clicca su `Web Cloud`{.action}, seleziona `Hosting`{.action} e infine `Database`{.action}. Elimina il database:
+Per eliminare un database, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), clicca su `Web Cloud`{.action}, seleziona `Hosting`{.action} e infine `Database`{.action}. Elimina il database:
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
 

@@ -56,7 +56,7 @@ En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager
 
 Los planes [Hosting Profesional](https://www.ovh.com/world/es/hosting/hosting-profesional.xml) y [Hosting Performance](https://www.ovh.com/world/es/hosting/hosting-performance.xml) permiten crear hasta tres módulos en 1 clic adicional. Los planes **Hosting Performance** también le permitirán activar gratis un [servidor SQL privado](https://www.ovh.com/world/es/hosting/opciones-sql.xml).
 
-#### Solución 2: eliminar una base de datos no utilizada <a name="delete-the-database"></a>
+#### Solución n°2: eliminar una base de datos no utilizada <a name="delete-the-database"></a>
 
 > [!warning]
 >
@@ -67,7 +67,7 @@ Para eliminar una base de datos, acceda al [área de cliente de OVHcloud](https:
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
 
-#### Solución nº 3: contratar nuevas bases de datos
+#### Solución nº3: contratar nuevas bases de datos
 
 En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}. En la `Bases de datos`{.action}, haga clic en `Acciones`{.action}.
 
@@ -78,7 +78,7 @@ En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager
 > Consulte nuestra comparativa de los distintos [productos de bases de datos](https://www.ovh.com/world/es/hosting/opciones-sql.xml).
 >
 
-#### Solución 4: instalar el módulo en una base de datos ya utilizada
+#### Solución nº4: instalar el módulo en una base de datos ya utilizada
 
 Para instalar su módulo en una base de datos ya utilizada, deberá utilizar el [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) de instalación de un nuevo **módulo en 1 clic**.
 
