@@ -11,9 +11,6 @@ order: 5
 ---
 
 **Dernière mise à jour le 23/06/2021**
-<<<<<<< HEAD
- 
-=======
 
 >>>>>>> 91cb830e1057cc693bbaaf4039dd931187f1ccc0
 ## Objectif
@@ -80,11 +77,7 @@ Vous obtiendrez le résultat suivant :
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
 
-<<<<<<< HEAD
- ## Aller plus loin <a name="aller-plus-loin"></a>
-=======
 ## Aller plus loin <a name="aller-plus-loin"></a>
->>>>>>> 91cb830e1057cc693bbaaf4039dd931187f1ccc0
 
 [Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](../erreurs-frequentes-modules-en-1-clic/)
 
