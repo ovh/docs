@@ -5,22 +5,30 @@ excerpt: 'Dowiedz się, jak włączyć hosting Start 10M'
 section: 'Pierwsze kroki'
 ---
 
-**Ostatnia aktualizacja z dnia 29-01-2020**
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
+
+**Ostatnia aktualizacja z dnia 15-06-2021**
 
 ## Wprowadzenie
 
-Usługa [Start 10M](https://www.ovh.pl/domeny/oferta_serwer_start10m.xml){.external} w OVHcloud oferuje hosting WWW 10 MB i konto e-mail o pojemności 5 GB. Z tego przewodnika dowiesz się, jak włączyć hosting Start 10M w swojej [domenie](https://www.ovh.pl/domeny/){.external}.
+Dzięki [Start10M](https://www.ovh.pl/domeny/oferta_serwer_start10m.xml){.external}, OVHcloud oferuje hosting WWW o rozmiarze 10 MB oraz konto e-mail o pojemności 5 GB. Z tego przewodnika dowiesz się, jak włączyć hosting Start 10M w swojej [domenie](https://www.ovh.pl/domeny/){.external}.
+
+> [!warning]
+> Ten darmowy hosting o rozmiarze 10 MB jest przeznaczony do prostej strony WWW **bez bazy danych**. Jeśli chcesz uruchomić stronę WWW zawierającą kilka stron i wymagającą bazy danych, taką jak CMS (na przykład: Worpdress, Joomla, Prestashop, Drupal, itp.). Prosimy o zamówienie jednej z [naszych ofert hostingu www na naszej stronie](https://www.ovh.pl/hosting/) internetowej lub w [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 **Dowiedz się, jak włączyć darmowy hosting Start 10M**
 
 ## Wymagania początkowe
 
-- Zarejestrowana [domena](https://www.ovh.pl/domeny/){.external} bez hostingu WWW w panelu klienta OVHcloud.
+- Posiadanie [domeny](https://www.ovh.pl/domeny/){.external} odłączonej od hostingu WWW w Panelu klienta OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij pozycję `Domeny`{.action}(**1**) na pasku usług po lewej stronie, a następnie wybierz odpowiednią domenę.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Domeny`{.action} (**1**) na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę.
 
 W ramce **Informacje ogólne**(**2**) znajduje się pozycja *Darmowy hosting WWW i e-mail*. Kliknij przycisk `…`{.action} po prawej stronie, a następnie przycisk `Włącz`{.action}(**3**).
 
@@ -32,27 +40,22 @@ Pojawi się okno aktywacyjne. W **etapie 1** wyświetla się przypomnienie ofert
 
 | Wybór                                       	| Opis                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Bez zmian                           	| Brak zmian w strefie DNS, bez wpływu na witrynę i e-maile.                                               								|
-| Wpisy A i MX dla *exemple.com* 	| Domena będzie wskazywać na adres IP hostingu Start 10M. Do domeny zostaną również zastosowane serwery e-mail OVHcloud. 	|
-| Wpis A dla *exemple.com*          	| Domena będzie wskazywać na hosting Start 10M bez zmiany serwerów e-mail.                             								|
-| Wpisy MX dla *exemple.com*      	| Domena będzie wskazywać na serwery e-mail OVHcloud bez zmiany wskazania na poziomie hostingu.  								|
+| Rekord DNS A                         	| Domena będzie wskazywać na adres IP hostingu Start 10M.                                               								|
+| Rekord DNS MX 	| Serwery e-mail OVHcloud zostaną zastosowane dla domeny. 	|
 
 > [!primary]
-> Darmowy hosting Start 10M nie zawiera bazy danych. Jeśli potrzebujesz bazy danych, zapoznaj się z naszą [ofertą hostingów WWW](https://www.ovh.pl/hosting/), które je zawierają.
+> Pamiętaj, że nie ma bazy danych zawartej w ofercie darmowego hostingu Start 10M. Jeśli Twój projekt wymaga utworzenia bazy danych, zapoznaj się z naszą [ofertą hostingu WWW](https://www.ovh.pl/hosting/), która je zawiera.
 
-W **etapie 3** wystarczy przeczytać i potwierdzić warunki oferty i `potwierdzić`{.action} podsumowanie w **etapie 4**.
+**W etapie 3** przypominamy sobie cennik ofert. W **etapie 4** zapoznaj się z regulaminami i zatwierdź zamówienie.
 
-Po zatwierdzeniu zamówienia otrzymasz wiadomość e-mail z informacjami na temat [logowania FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external} do Twojego hostingu Start 10M.
+Po zatwierdzeniu zamówienia otrzymasz e-mail z informacjami o [logowaniu FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external} do hostingu Start 10M.
 
 Zapoznaj się z przewodnikiem na temat [tworzenia konta e-mail MX Plan](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external}, aby korzystać z adresu e-mail zawartego w hostingu Start 10M.
 
 ## Sprawdź również
 
-[Logowanie do przestrzeni dyskowej hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external}
+[Logowanie do przestrzeni dyskowej hostingu WWW](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external}
 
 [Tworzenie konta e-mail w ramach usługi MX Plan](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external}
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>
-
-
-

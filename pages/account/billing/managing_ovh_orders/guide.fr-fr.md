@@ -23,8 +23,7 @@ Lorsque vous effectuez une commande, vous pouvez suivre et interagir avec celle-
 - Être connecté à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Avoir passé au moins une commande chez OVHcloud.
 
-
-##  En pratique
+## En pratique
 
 ### Le bon de commande
 
@@ -71,13 +70,13 @@ Vous pouvez également afficher le bon de commande au format HTML en cliquant su
 
 ![Récapitulatif des commandes](images/order04.png){.thumbnail}
 
-### Suivre votre commande.
+### Suivre votre commande
 
 Après génération de votre bon de commande, vous pouvez suivre votre commande depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur votre `Tableau de bord`, puis sur `Voir mes commandes`{.action} et enfin sur `...`{.action} devant votre commande. Sélectionnez `Suivi de commande`{.action}. Le suivi de commande peut également être affiché en cliquant sur l'état d'une commande dans la colonne « État ».
 
 ![Suivi de commande](images/order05b.png){.thumbnail}
 
-La fenêtre ci-dessous apparaît, vous permettant un suivi en 4 étapes. 
+La fenêtre ci-dessous apparaît, vous permettant un suivi en 4 étapes.
 
 ![Suivi de commande](images/order06.png){.thumbnail}
 
@@ -95,12 +94,10 @@ Il vous reste à confirmer l'annulation de la commande en cochant la case `Oui, 
 
 ![Validation de l'annulation](images/cancelorder2.png){.thumbnail}
 
-
 > [!primary]
 >
-> Vous serez remboursé des sommes initialement versées, déduction faite des jours de services consommés au prorata temporis, dans un délai un 30 jours à compter de la demande de rétractation.
+> Vous serez remboursé des sommes initialement versées, déduction faite des jours de services consommés au prorata temporis, dans un délai de 30 jours à compter de la demande de rétractation.
 >
-
 
 ## Aller plus loin
 
