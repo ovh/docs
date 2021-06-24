@@ -76,13 +76,13 @@ Si l'adresse e-mail n'est pas modifiée dans le cadre du changement de propriét
 
 > [!primary]
 >
-> La procédure doit-être validée par les deux parties dans les 60 jours qui suivent la demande.
+> La procédure doit-être validée par les deux parties dans les 14 jours qui suivent la demande.
 > 
 > Si la modification est refusée par l'une des deux parties, la demande est annulée.
 
 > [!warning]
 >
-> Si le propriétaire du nom de domaine a été modifié, le nom de domaine ne pourra pas être [transféré vers un autre bureau d'enregistrement](../transfert-sortant-dun-nom-de-domaine-generique-ou-geographique/) pendant une période de 60 jours. 
+> Si le propriétaire du nom de domaine a été modifié, le nom de domaine ne pourra pas être [transféré vers un autre bureau d'enregistrement](../transfert-sortant-dun-nom-de-domaine-generique-ou-geographique/) pendant une période de 14 jours. 
 
 ### Mise à jour des informations de propriétaire <a name="updateownerinformation"></a>
 

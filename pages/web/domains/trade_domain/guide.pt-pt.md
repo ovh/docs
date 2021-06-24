@@ -79,13 +79,13 @@ Se o endereço de e-mail não for alterado devido à mudança de proprietário, 
 
 > [!primary]
 >
-> O procedimento deve ser validado por ambas as partes no prazo de 60 dias a contar do pedido.
+> O procedimento deve ser validado por ambas as partes no prazo de 14 dias a contar do pedido.
 >
 > Se uma das partes recusar a alteração, o pedido será anulado.
 
 > [!warning]
 >
-> Se o proprietário do nome de domínio tiver sido modificado, o nome de domínio não poderá ser [transferido para outro agente de registo](../transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico/) durante um período de 60 dias.
+> Se o proprietário do nome de domínio tiver sido modificado, o nome de domínio não poderá ser [transferido para outro agente de registo](../transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico/) durante um período de 14 dias.
 
 ### Atualização das informações do proprietário <a name="updateownerinformation"></a>
 

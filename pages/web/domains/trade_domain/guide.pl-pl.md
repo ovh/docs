@@ -80,13 +80,13 @@ Jeśli adres e-mail nie został zmieniony w związku ze zmianą właściciela, r
 
 > [!primary]
 >
-> Procedura musi zostać zatwierdzona przez obie strony w ciągu 60 dni od złożenia wniosku.
+> Procedura musi zostać zatwierdzona przez obie strony w ciągu 14 dni od złożenia wniosku.
 > 
 > Jeżeli jedna ze stron odrzuci zmianę, wniosek zostaje anulowany.
 
 > [!warning]
 >
-> Jeśli właściciel domeny został zmieniony, domena nie będzie mogła zostać [przeniesiona do innego operatora](../transfer_wychodzacy_domeny_globalnej_lub_geograficznej/) przez 60 dni.
+> Jeśli właściciel domeny został zmieniony, domena nie będzie mogła zostać [przeniesiona do innego operatora](../transfer_wychodzacy_domeny_globalnej_lub_geograficznej/) przez 14 dni.
 
 ### Aktualizacja danych właściciela <a name="updateownerinformation"></a>
 

@@ -79,13 +79,13 @@ Si la dirección de correo electrónico no se modifica como parte del cambio de 
 
 > [!primary]
 >
-> El procedimiento deberá ser validado por ambas partes en un plazo de 60 días a partir de la solicitud.
+> El procedimiento deberá ser validado por ambas partes en un plazo de 14 días a partir de la solicitud.
 >
 > Si una de las partes rechaza la modificación, la solicitud se anulará.
 
 > [!warning]
 >
-> Si el propietario del dominio ha sido modificado, el dominio no podrá ser [transferido a otro agente registrador](../transferencia_saliente_de_un_dominio_generico_o_geografico/) durante un período de 60 días.
+> Si el propietario del dominio ha sido modificado, el dominio no podrá ser [transferido a otro agente registrador](../transferencia_saliente_de_un_dominio_generico_o_geografico/) durante un período de 14 días.
 
 ### Actualización de la información del propietario <a name="updateownerinformation"></a>
 
