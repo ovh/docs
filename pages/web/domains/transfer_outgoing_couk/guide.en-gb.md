@@ -57,6 +57,7 @@ You must log in as the administrative contact.
 
 
 ![](images/img_4268.jpg){.thumbnail}
+
 If for whatever reason you cannot modify your domain's TAG in your control panel, you can ask Nominet to modify it for you. 
 
 Go to this page on the Registry's website: [Manage your domain - Change registrar](https://www.nominet.uk/transferring-your-domain-name/).
