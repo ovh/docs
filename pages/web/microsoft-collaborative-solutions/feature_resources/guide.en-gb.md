@@ -90,7 +90,7 @@ If you attempt to add a resource that is already booked ("busy"), a message will
 
 #### **People**
 
-Since a resource account is also a contact, you can add rooms and equipment in this pane, exactly as with other participants (10). Start typing to display suggestions from your contacts, enter a full email address or use the search option via `Search Directory`{.action}. (A click on `...`{.action} will open your contacts.)
+Since a resource account is also a contact, you can add rooms and equipment in this pane, exactly as with other participants (10). Start typing to display suggestions from your contacts, enter a full email address or use the search option via `Search Directory`{.action}. (A click on `+`{.action} will open your contacts.)
 
 Once you have finalised the scheduling by clicking `Send`{.action} in the top menu bar, the resource account will send you a message to confirm that it is booked for your event. Tick the box "Request responses" if you require active confirmation from the invitees to auto-update your calendar.
 

@@ -15,18 +15,18 @@ OpenVPN is a software giving you the possibility to create a Virtual Private Net
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- an OVHcloud [VPS service](https://www.ovhcloud.com/en-sg/vps/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- an OVHcloud [VPS service](https://www.ovhcloud.com/en-gb/vps/)
 
 
 ### Installing the OpenVPN server
 
 > [!primary]
 >
-If you want to use an existing VPS service, you can do so from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) by [reinstalling it with the OpenVPN template](../getting-started-vps/#reinstallvps).
+If you want to use an existing VPS service, you can do so from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) by [reinstalling it with the OpenVPN template](../getting-started-vps/#reinstallvps).
 > 
 
-Order your VPS on the [product page](https://www.ovhcloud.com/en-sg/vps/). At the image selection, choose `Distribution with application`{.action} and then `OpenVPN`{.action} as the OS.
+Order your VPS on the [product page](https://www.ovhcloud.com/en-gb/vps/). At the image selection, choose `Distribution with application`{.action} and then `OpenVPN`{.action} as the OS.
 
 ![Order VPS](images/order_vps.png){.thumbnail}
 
