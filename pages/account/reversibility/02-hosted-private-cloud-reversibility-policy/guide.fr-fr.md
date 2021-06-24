@@ -13,7 +13,7 @@ Ce document est la politique de réversibilité du produit [Hosted Private Cloud
 
 Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
 
-## Détails des fonctionnalités
+## Liste des fonctionnalités
 
 Les fonctionnalités Hosted Private Cloud sont divisées en trois catégories :
 

@@ -15,7 +15,7 @@ This policy aims at implementing the global reversibility principles and require
 
 ## Features map
 
-Public cloud features are divided into three categories:
+**Web Hosting** features are divided into three categories:
 
 - The [core features](#core-features) for which we guarantee the ability to migrate
 - The [OVHcloud implementation](#ovhcloud-implementation), whose migration will require adaptations to a new environment.
