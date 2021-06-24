@@ -15,7 +15,9 @@ To transfer a .co.uk domain name or equivalent to another registrar, make sure t
 - Your domain name must not be the subject of an ongoing dispute with Nominet
 - Your domain must not be blocked by OVH
 
-\* *If the domain is expired for less than 90 days you can contacto with our support team to unlock this process*
+
+
+\* *If the domain is expired for less than 90 days you can contact with our support team to unlock this process*
 
 
 
