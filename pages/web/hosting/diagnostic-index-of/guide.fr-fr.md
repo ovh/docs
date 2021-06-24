@@ -1,10 +1,6 @@
 ---
 title: "Que faire en cas de page « Index of » ?"
-<<<<<<< HEAD
-excerpt: "Découvrez comment remettre votre site en ligne, quand il affiche une page « Index of »"
-=======
 excerpt: "Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »"
->>>>>>> 91cb830e1057cc693bbaaf4039dd931187f1ccc0
 slug: diagnostic-index-of
 section: Diagnostic
 order: 5
