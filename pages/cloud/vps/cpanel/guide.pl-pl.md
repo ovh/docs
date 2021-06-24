@@ -1,24 +1,32 @@
 ---
-title: 'Wdrażanie aplikacji cPanel w centOS 7'
+title: Instalacja cPanel na serwerze VPS
 slug: cpanel
 excerpt: 'Dowiedz się, jak utworzyć instancję VPS przy użyciu wstępnie zainstalowanej aplikacji cPanel'
 section: 'Poziom zaawansowany'
 ---
 
-**Ostatnia aktualizacja z dnia 15-05-2020**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
+
+**Ostatnia aktualizacja z dnia 02-06-2020**
 
 ## Wprowadzenie
 
 cPanel to panel konfiguracyjny zaprojektowany dla dostawców hostingu WWW. Składa się z interfejsu graficznego umożliwiającego automatyzację parametrów, co ułatwia hostowanie witryny internetowej.
 
-**Dowiedz się, jak za pomocą jednego kliknięcia wdrożyć cPanel przy użyciu wstępnie zainstalowanych aplikacji na serwerze VPS.**
-
+**Dowiedz się, jak wdrożyć cPanel przy użyciu wstępnie zainstalowanych aplikacji na serwerze VPS.**
 
 ## Wymagania początkowe
 
-Abu utworzyć serwer cPanel, najpierw należy zamówić VPS z dystrybucją cPanel.
+- [aktualne rozwiązanie VPS](https://www.ovhcloud.com/pl/vps/) (Value, Essential, Comfort lub Elite).
+- Zalogowanie do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
-![horizon](images/cpanel_order.png)
+## W praktyce
+
+Aby zainstalować serwer cPanel, należy najpierw zamówić VPS z dystrybucją cPanel.
+
+![cPanel](images/cpanel_order.png){.thumbnail}
 
 Gdy VPS jest gotowy, otrzymasz wiadomość e-mail dającą dostęp do logowania do serwera cPanel:
 
@@ -27,35 +35,48 @@ Gdy VPS jest gotowy, otrzymasz wiadomość e-mail dającą dostęp do logowania 
  |    Możesz zalogować się do cpanel ze strony https://<ip>:2087/<session_parameters>
 ```
 
-Twój serwer cPanel jest gotowy do użytku.
+Jeśli posiadasz już VPS i chcesz zainstalować cPanel, możesz wykonać reinstalację serwera VPS z [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), używając szablonu "CentOS 7 - cPanel" (dostępny tylko z kompatybilną ofertą VPS).
 
-## W praktyce
+> [!warning]
+>
+> Jeśli ponownie zainstalujesz serwer VPS, wszystkie dane przechowywane na serwerze VPS zostaną utracone.
+> 
 
 ### Pierwsze logowanie
 
-Poniższy adres URL umożliwia zalogowanie się do menedżera cPanel bez loginu i hasła.
-W pierwszej kolejności należy zatwierdzić licencję i skonfigurować hasło użytkownika root, aby następnie zalogować się do tego interfejsu.
+Po otrzymaniu wiadomości e-mail z unikalnym linkiem kliknij ten link, aby przeprowadzić wstępną konfigurację.
 
-![horizon](images/license_validation.png)
+> [!primary]
+>
+> Jeśli link wygasł, zainstaluj ponownie serwer VPS za pomocą cPanel.
+>
 
-Wygenerowany adres URL jest tymczasowy, co ma na celu zabezpieczenie dostępu. Jeśli po kliknięciu tego linku widzisz prośbę o zalogowanie się, oznacza to, że wygasł token dla tego adresu URL.
+Podany wyżej URL umożliwia zalogowanie się do interfejsu WHM bez danych identyfikacyjnych (użytkownika i hasła).
 
-Możesz wygenerować ten adres URL za pomocą narzędzia dostępnego w wierszu poleceń Twojego serwera VPS. Procedura została wyjaśniona [poniżej](./#regenerer-votre-url-de-connexion).
+#### Etap 1: przeczytać warunki korzystania z cPanel
 
-Na następnej stronie zostanie wyświetlona prośba o podanie Twojego adresu e-mail i serwerów nazw, których chcesz użyć.
+Przeczytaj i zaakceptuj warunki korzystania z cPanel
 
-![horizon](images/setup_config_cpanel.png)
+![cPanel](images/license_validation.png){.thumbnail}
 
-### Ponowne wygenerowanie adresu URL do logowania
+#### Etap 2: uzupełnij wymagane pola
 
-Zaloguj się przez SSH za pomocą danych dostarczonych w e-mailu z danymi dostępowymi i wykonaj następujące polecenie:
+Wskaż serwery poczty elektronicznej i nazwy (nameservers), które chcesz skonfigurować na serwerze VPS.
 
-```sh
-sudo whmlogin
-```
+![cPanel](images/setup_config_cpanel.png){.thumbnail}
 
-Teraz możesz kliknąć wygenerowany link, aby uzyskać dostęp do Twojego interfejsu administracyjnego i skonfigurować hasło root.
+#### Etap 3: zdefiniuj hasło root
+
+![cPanel](images/change_root.png){.thumbnail}
+
+Należy teraz mieć możliwość logowania się do WHM i SSH, używając użytkownika root z hasłem, które zostało właśnie zdefiniowane.
+
+### Bezpieczeństwo
+
+Zalecamy podjęcie wszelkich niezbędnych kroków w celu zabezpieczenia WHM i VPS. W tym celu zalecamy zapoznanie się z zaleceniami [cPanel tutaj](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+
+Zapoznaj się również z naszym przewodnikiem dotyczącym [zabezpieczenia serwera VPS](../porady-zabezpieczenie-vps/#tworzenie-kopii-zapasowej-systemu-i-danych), korzystania z [naszych rozwiązań do tworzenia kopii zapasowych](../) oraz konfiguracji [Firewall Network](../../dedicated/network-firewall/).
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
