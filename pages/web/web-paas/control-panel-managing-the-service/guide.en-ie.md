@@ -93,7 +93,7 @@ Take note of the pricing information and click on `Confirm`{.action} to proceed.
 
 - **Users**
 
-Switch to the tab `Users`{.action}. The table displays the users attached to this project. If licences are available, you can invite a new user by clicking on `Add a user`{.action}. 
+Switch to the tab `Users`{.action}. The table displays the users attached to this project. If licences are available, you can invite a new user by clicking on `Invite a user`{.action}. 
 
 ![Change users](images/configure_manager07.png){.thumbnail}
 

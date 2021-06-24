@@ -10,7 +10,7 @@ section: Diagnose
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 16.06.21**
+**Letzte Aktualisierung am 24.06.2021**
 
 ## Ziel
 
@@ -123,7 +123,7 @@ Klicken Sie auf den Tab `Multisite`{.action} und führen Sie folgende Schritte d
 |Die Domain oder Subdomain der zu erstellenden Website erscheint nicht unter `Multisite`{.action}.|Fügen Sie Ihre Domain mithilde [dieser Anleitung](../multisites-mehrere-websites-konfigurieren/#schritt-21-eine-bei-ovhcloud-registrierte-domain-hinzufugen) hinzu.|
 |Die Domain wurde ohne Aktion Ihrerseits aus dem `Multisite`{.action} Bereich gelöscht.|Wenn Ihre Domain oder deren [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen) nicht über Ihren OVHcloud Kunden-Account verwaltet wird, fügen Sie Ihre Domain zur `Multisite`{.action} gemäß [dieser Anleitung](../multisites-mehrere-websites-konfigurieren/#schritt-22-eine-externe-domain-hinzufugen) hinzu.|
 
-### Ihr Modul wird nur unter einer Webadresse der Art "xxxxx.cluster0xx.hosting.ovh.net" angezeigt
+### Ihr Modul wird unter einer Webadresse der Art "xxxxx.cluster0xx.hosting.ovh.net" angezeigt
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
