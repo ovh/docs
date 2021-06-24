@@ -41,7 +41,7 @@ You must log in as the administrative contact.
 
 
 
-![](images/img_4266.jpg){.thumbnail}
+![](images/4266.png){.thumbnail}
 
 
 ## Step 2: Change your domain TAG
