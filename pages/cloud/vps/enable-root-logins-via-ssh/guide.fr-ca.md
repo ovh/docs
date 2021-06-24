@@ -3,6 +3,7 @@ title: "Comment activer les connexions avec l'utilisateur root avec SSH"
 excerpt: "Découvrez comment configurer SSH pour autoriser les connexions avec l'utilisateur root"
 slug: activer-connexion-root
 section: Tutoriel
+hidden: true
 ---
 
 **Dernière mise à jour le 19/09/2020**
