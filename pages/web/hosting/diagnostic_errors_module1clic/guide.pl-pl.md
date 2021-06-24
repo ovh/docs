@@ -21,7 +21,7 @@ Utworzenie [modułu za pomocą 1 kliknięcia](../hosting_www_przewodniki_dotycza
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -137,7 +137,7 @@ Ta nieprawidłowość może mieć kilka przyczyn:
 
 - Twoja domena jest zawsze powiązana z Twoim poprzednim hostingiem. W tym przypadku zmień [strefę DNS](../../hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-domeny_1) lub [serwery DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zmien-serwery-dns) lub skontaktuj się z aktualnym dostawcą usług hostingowych.
 
-## Sprawdź <a name="gofurther"></a>
+## ## Sprawdź również <a name="gofurther"></a>
 
 [Jak zdiagnozować białą stronę?](../hosting_www_jak_sprawdzic_przyczyne_wyswietlania_sie_bialej_strony/)
 
@@ -145,4 +145,4 @@ Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśl
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
