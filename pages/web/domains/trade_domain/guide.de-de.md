@@ -86,7 +86,7 @@ Wenn die E-Mail-Adresse im Rahmen des Inhaberwechsels nicht geändert wird, werd
 
 > [!warning]
 >
-> Sobald der Inhaber geändert wurde, kann der Domainname für 14 Tage nicht [an einen anderen Registrar übertragen werden](../ausgehender-transfer-einer-generischen-oder-geografischen-domain/). 
+> Sobald der Inhaber geändert wurde, kann der Domainname für 60 Tage nicht [an einen anderen Registrar übertragen werden](../ausgehender-transfer-einer-generischen-oder-geografischen-domain/). 
 
 ### Aktualisierung der Inhaberinformationen <a name="updateownerinformation"></a>
 

@@ -85,7 +85,7 @@ Se l'indirizzo email non viene modificato in seguito alla modifica del proprieta
 
 > [!warning]
 >
-> Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](../trasferisci_in_uscita_un_dominio_generico_o_geografico) per un periodo di 14 giorni.
+> Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](../trasferisci_in_uscita_un_dominio_generico_o_geografico) per un periodo di 60 giorni.
 
 ### Aggiornamento delle informazioni del proprietario <a name="updateownerinformation"></a>
 

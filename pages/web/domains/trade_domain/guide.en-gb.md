@@ -81,7 +81,7 @@ If the email address is not changed as part of the domain trade, one recipient w
 
 > [!warning]
 >
-> If the domain name owner has been successfully changed, the domain name will be blocked from being [transferred to another registrar](../outgoing-transfer-of-generic-or-geographical-domain-name/) for a period of 14 days. 
+> If the domain name owner has been successfully changed, the domain name will be blocked from being [transferred to another registrar](../outgoing-transfer-of-generic-or-geographical-domain-name/) for a period of 60 days. 
 
 ### Updating the owner information <a name="updateownerinformation"></a>
 

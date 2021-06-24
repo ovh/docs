@@ -86,7 +86,7 @@ Jeśli adres e-mail nie został zmieniony w związku ze zmianą właściciela, r
 
 > [!warning]
 >
-> Jeśli właściciel domeny został zmieniony, domena nie będzie mogła zostać [przeniesiona do innego operatora](../transfer_wychodzacy_domeny_globalnej_lub_geograficznej/) przez 14 dni.
+> Jeśli właściciel domeny został zmieniony, domena nie będzie mogła zostać [przeniesiona do innego operatora](../transfer_wychodzacy_domeny_globalnej_lub_geograficznej/) przez 60 dni.
 
 ### Aktualizacja danych właściciela <a name="updateownerinformation"></a>
 
