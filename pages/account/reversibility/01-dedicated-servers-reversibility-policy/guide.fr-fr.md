@@ -49,7 +49,7 @@ Tous les composants du produit Serveurs Dédiés OVHcloud sont accessibles via l
 
 ### Services Partenaires
 
-Les partenaires OVHcloud sont répertoriés avec les mots clés « Cloud Migration » dans le [répertoire dédié](https://partner.ovhcloud.com/fr/directory/).
+Les partenaires OVHcloud sont répertoriés avec le mot clé « Cloud Migration » dans le [répertoire dédié](https://partner.ovhcloud.com/fr/directory/).
 
 ### Coût et frais
 

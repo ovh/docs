@@ -64,13 +64,13 @@ Les informations relatives à l'architecture (serveurs, stockage, etc.) sont cen
 
 ### Services Partenaires
 
-Les partenaires OVHcloud sont répertoriés avec les mots clés « Cloud Migration » dans le [répertoire dédié](https://partner.ovhcloud.com/fr/directory/).
+Les partenaires OVHcloud sont répertoriés avec le mot clé « Cloud Migration » dans le [répertoire dédié](https://partner.ovhcloud.com/fr/directory/).
 
 ### Coût et frais
 
 Aucune facturation supplémentaire n'est prévue de la part de OVHcloud pour les fonctionnalités de migration répertoriées ici.
 
-### Retention of data after contract termination
+### Conservation des données après la résiliation du contrat
 
 Les données sont conservées jusqu'à la fin du mois suivant la résiliation du service, puis supprimées définitivement.
 
