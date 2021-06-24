@@ -80,7 +80,7 @@ En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 #### Solución 4: instalar el módulo en una base de datos ya utilizada
 
-Para instalar su módulo en una base de datos ya utilizada, deberá utilizar el [modo avanzado](../modulos-en-un-clic/#instalacion-simple-de-un-modulo) de instalación de un nuevo **módulo en 1 clic**.
+Para instalar su módulo en una base de datos ya utilizada, deberá utilizar el [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) de instalación de un nuevo **módulo en 1 clic**.
 
 Para consultar las claves de la base de datos, consulte nuestras [FAQ](https://www.ovh.es/hosting/faq/).
 
@@ -121,7 +121,7 @@ Abra la pestaña `Multisitio`{.action} y realice las siguientes comprobaciones:
 |Escenario|Medidas que deberá adoptar|
 |---|---|
 |El dominio o subdominio asociado al sitio que quiere crear no aparece en el `multisitio`{.action}.|Añada su dominio siguiendo [estas indicaciones](../configurar-un-multisitio-en-un-alojamiento-web/#2-anadir-un-dominio-o-subdominio).|
-|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Si su dominio o su [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/) no están gestionados desde su cuenta de OVHcloud, añada su dominio al `multisitio`{.action} siguiendo [esta guía](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
+|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Si su dominio o su [zona DNS](../../web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns) no están gestionados desde su cuenta de OVHcloud, añada su dominio al `multisitio`{.action} siguiendo [esta guía](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
 
 ### Su módulo se muestra en una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net".
 
