@@ -43,7 +43,7 @@ You must log in as the administrative contact.
 
 
 
-![](images/4266.png){.thumbnail}
+![](images/img_4266.jpg){.thumbnail}
 
 
 ## Step 2: Change your domain TAG
