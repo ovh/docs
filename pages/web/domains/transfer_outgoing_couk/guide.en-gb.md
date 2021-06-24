@@ -15,23 +15,25 @@ To transfer a .co.uk domain name or equivalent to another registrar, make sure t
 - Your domain name must not be the subject of an ongoing dispute with Nominet
 - Your domain must not be blocked by OVH
 
+\* *If the domain is expired for less than 90 days you can contacto with our support team to unlock this process*
+
 
 
 
 ## Extensions in question
 
+- .uk.
 - .co.uk
 - .me.uk
 - .org.uk
 - .ltd.uk
 - .plc.uk
-- .uk.
 
 
 
 
 ## Step 1: Verify domain name information
-You can find the information in your control panel [here](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). 
+You can find the information in your control panel [here](https://www.ovh.com/manager/web/#/domain). 
 You must log in as the administrative contact.
 
 
@@ -57,7 +59,7 @@ You must log in as the administrative contact.
 ![](images/img_4268.jpg){.thumbnail}
 If for whatever reason you cannot modify your domain's TAG in your control panel, you can ask Nominet to modify it for you. 
 
-Go to this page on the Registry's website: [Manage your domain - Change registrar](http://www.nominet.org.uk/uk-domain-names/manage-your-domain/change-registrar).
+Go to this page on the Registry's website: [Manage your domain - Change registrar](https://www.nominet.uk/transferring-your-domain-name/).
 Please note, you will be charged for this service.
 
 
