@@ -18,6 +18,7 @@ OpenVPN is a software giving you the possibility to create a Virtual Private Net
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - an OVHcloud [VPS service](https://www.ovhcloud.com/en-au/vps/)
 
+## Instructions
 
 ### Installing the OpenVPN server
 
@@ -38,7 +39,7 @@ Your VPN server is now ready. To log in, click on the link inside the installati
 
 ![Login page](images/login_user.png){.thumbnail}
 
-### Installing and using the OpenVPN client for various systems**
+### Installing and using the OpenVPN client for various systems
 
 #### On Windows
 
