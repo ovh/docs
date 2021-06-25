@@ -3,6 +3,7 @@ title: Co zrobić w przypadku strony « Index of »?
 excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetla ona stronę « Index of »
 slug: diagnostyka-indeks
 section: Diagnostyka
+order: 5
 ---
 
 > [!primary]
@@ -35,7 +36,7 @@ Jeśli konfiguracja `MultiSite` nie jest poprawnie skonfigurowana, Twoja strona 
 
 ### Zrozumieć pochodzenie strony « Index of »
 
-Twoja domena jest podłączona do katalogu ("Katalog główny") na Twoim serwerze `FTP` za pomocą MultiSite[ ](../logowanie-przestrzen-dyskowa-ftp-hosting-web/).
+Twoja domena jest podłączona do katalogu (« `Katalog główny` ») na Twoim serwerze `FTP` za pomocą MultiSite[ ](../logowanie-przestrzen-dyskowa-ftp-hosting-web/).
 
 Strona **Index of** wskazuje, że dany katalog nie zawiera pliku **index.php** lub **index.html**. Plik ten to "punkt wejścia" Twojej strony.
 
