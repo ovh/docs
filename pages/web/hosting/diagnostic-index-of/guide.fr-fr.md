@@ -1,12 +1,12 @@
 ---
-title: "Que faire en cas de page « Index of » ?"
-excerpt: "Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »"
+title: Que faire en cas de page « Index of » ?
+excerpt: Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »
 slug: diagnostic-index-of
 section: Diagnostic
 order: 5
 ---
 
-**Dernière mise à jour le 24/06/2021**
+**Dernière mise à jour le 25/06/2021**
 
 ## Objectif
 
@@ -32,7 +32,7 @@ Lorsqu’une configuration `Multisite` n’est pas correctement paramétrée, vo
 
 ### Comprendre l'origine de la page « Index of »
 
-Votre nom de domaine est connecté via la partie `Multisite` de votre hébergement à un répertoire (un « Dossier racine ») sur votre serveur [FTP](../connexion-espace-stockage-ftp-hebergement-web/).
+Votre nom de domaine est connecté via la partie `Multisite` de votre hébergement à un répertoire (un « `Dossier racine` ») sur votre serveur [FTP](../connexion-espace-stockage-ftp-hebergement-web/).
 
 La page **Index of** indique que le répertoire concerné ne contient pas de fichier **index.php** ou **index.html**. Un fichier de ce type constitue le « point d'entrée » de votre site.
 

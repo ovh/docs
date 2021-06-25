@@ -6,7 +6,7 @@ section: Diagnostic
 order: 5
 ---
 
-**Last updated 24/06/2021**
+**Last updated 25/06/2021**
 
 ## Objective
 
@@ -32,7 +32,7 @@ If a `Multisite` configuration is not correctly configured, your website may dis
 
 ### Understanding the origin of the « Index of » page
 
-Your domain name is connected, through the `Multisite` section of your hosting, to a directory (a « Root folder ») on your [FTP](../log-in-to-storage-ftp-web-hosting/) server.
+Your domain name is connected, through the `Multisite` section of your hosting, to a directory (a « `Root folder` ») on your [FTP](../log-in-to-storage-ftp-web-hosting/) server.
 
 The **« Index of »** page indicates that the directory does not contain any **index.php** or **index.html** file. Such a file is meant to be the « entry point » of your website.
 
