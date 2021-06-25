@@ -18,6 +18,7 @@ OpenVPN is a software giving you the possibility to create a Virtual Private Net
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - an OVHcloud [VPS service](https://www.ovhcloud.com/en-ie/vps/)
 
+## Instructions
 
 ### Installing the OpenVPN server
 
