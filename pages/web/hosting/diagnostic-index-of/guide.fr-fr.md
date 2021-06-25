@@ -58,7 +58,7 @@ Cochez la case `Modifier également le sous domaine www.mydomain.ovh` et indique
 
 > [!primary]
 >
-> Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre serveur FTP.
+> Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre [serveur FTP](../connexion-espace-stockage-ftp-hebergement-web/).
 
 Cliquez ensuite sur `Suivant`.
 
