@@ -38,7 +38,7 @@ Your VPN server is now ready. To log in, click on the link inside the installati
 
 ![Login page](images/login_user.png){.thumbnail}
 
-### Installing and using the OpenVPN client for various systems**
+### Installing and using the OpenVPN client for various systems
 
 #### On Windows
 
