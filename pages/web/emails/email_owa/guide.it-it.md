@@ -205,6 +205,12 @@ Le opzioni disponibili per il tuo account sono elencate nella colonna a sinistra
 
 ![Outlook on the web](images/use-owa-step23.png){.thumbnail}
 
+### Gestione dei cookies
+
+La Webmail utilizzata per le nostre soluzioni email è basata sul software Microsoft Outlook Web Application. È quindi in grado di scambiare metadati con i server di Microsoft, sotto forma di cookies denominati `appsforoffice.microsoft.com`.
+
+Per disattivare questi scambi, è possibile utilizzare sul browser un'estensione di tipo "block" di contenuti (ad esempio, uBlock Origin o Ghostery).
+La disattivazione di questi cookies può compromettere la stabilità della webmail.
 
 ## Per saperne di più
 

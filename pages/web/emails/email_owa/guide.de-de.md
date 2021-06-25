@@ -6,7 +6,7 @@ section: 'E-Mail Clients'
 order: 1
 ---
 
-**Stand 28.06.2019**
+**Stand 25.06.2021**
 
 ## Einleitung
 
@@ -204,6 +204,13 @@ Um auf die Optionen zuzugreifen, klicken Sie im oberen Bereich auf das Zahnrad-S
 Gehen Sie dann im linken Bereich in die Ordnerstruktur der Optionen.
 
 ![owa verwenden](images/use-owa-step23.png){.thumbnail}
+
+### Cookie-Verwaltung
+
+Das Webmail, das für unsere E-Mail Angebote verwendet wird, basiert auf der Software Microsoft Outlook Web Application. Es kann demnach Metadaten mit Microsoft Servern in Form von Cookies (etwa `appsforoffice.microsoft.com`) austauschen.
+
+Wenn Sie diese Datenübertragung deaktivieren möchten, können Sie in Ihrem Browser eine Erweiterung hinzufügen, die Inhalte blockiert, z.B. uBlock Origin oder Ghostery.
+Die Deaktivierung dieser Cookies kann möglicherweise die stabile Funktionalität Ihres Webmail-Accounts beeinträchtigen.
 
 ## Weiterführende Informationen
 
