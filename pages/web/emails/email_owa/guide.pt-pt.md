@@ -205,6 +205,13 @@ Pode consultar todas as opções disponíveis no menu que aparece na parte later
 
 ![useowa](images/use-owa-step23.png){.thumbnail}
 
+### Gestão dos cookies
+
+O webmail que é utilizado para as nossas ofertas de e-mail está baseado no software Microsoft Outlook Web Application. Portanto, é suscetível de trocar metadados com os servidores da Microsoft, sob a forma de cookies designados `appsforoffice.microsoft.com`.
+
+Se pretender desativar esta troca de informações, pode utilizar no seu browser uma extensão do tipo de bloqueador de conteúdos (como o uBlock Origin ou Ghostery).
+A desativação destes cookies pode afetar a estabilidade do webmail.
+
 ## Quer saber mais?
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

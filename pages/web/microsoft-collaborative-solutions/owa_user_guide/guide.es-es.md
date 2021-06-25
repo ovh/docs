@@ -7,7 +7,7 @@ section: 'Outlook Web Application (OWA)'
 order: 1
 ---
 
-**Última actualización: 3/8/2020**
+**Última actualización: 25/06/2021**
 
 ## Objetivo
 
@@ -190,13 +190,20 @@ Para obtener instrucciones sobre la creación de firmas automáticas mediante el
 
 ### Acceder a la sección de opciones
 
-Para acceder a todos los ajustes, haga clic en el símbolo de engranaje en la parte superior, y después en`Opciones`{.action}.
+Para acceder a todos los ajustes, haga clic en el símbolo de engranaje en la parte superior, y después en `Opciones`{.action}.
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
 
 Puede navegar por el árbol de «Opciones» de la parte izquierda de la página. Desde esta sección podrá realizar más ajustes en cuanto a la disposición y comportamiento de su cuenta de correo electrónico. Tenga en cuenta que algunas de las opciones de la cuenta pueden estar desactivadas por nuestra parte por razones de seguridad.
 
 ![useowa](images/owa_exchange_step23.png){.thumbnail}
+
+### Gestión de cookies
+
+El webmail utilizado para nuestros productos de correo está basado en el programa Microsoft Outlook Web Application. por lo que es susceptible de intercambiar metadatos con los servidores de Microsoft, en forma de cookies llamadas `appsforoffice.microsoft.com`.
+
+Si desea desactivar estos intercambios, puede utilizar en su navegador una extensión de tipo bloqueador de contenidos (como uBlock Origin o Ghostery).
+No obstante, la desactivación de estas cookies puede afectar a la estabilidad de su webmail.
 
 ## Más información
 
