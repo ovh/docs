@@ -1,7 +1,7 @@
 ---
 title: Weights & Biases integration in notebooks
 slug: weights-and-biases
-excerpt: How to use wandb in notebooks  
+excerpt: How to use wandb in notebooks
 section: Tutorials
 order: 6
 ---
@@ -71,7 +71,7 @@ Once the repository has been cloned, find the notebook of your choice.
 
 #### Notebook using Tensorflow and Weights & Biases and based on the MNIST dataset
 
-The aim of this tutorial is to show how it is possible, thanks to Weights & Biases, to compare the results of trainings according to the chosen hyperparameters. Accuracy and loss will be displayed for both train and valid data during each training. The error rate will also be calculated using Weights & Biases.
+The aim of this tutorial is to show how it is possible, thanks to Weights & Biases, to compare the results of trainings according to the chosen hyperparameters. Accuracy and loss will be displayed for both training and validation data during each training. The error rate will also be calculated using Weights & Biases.
 
 A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook_Weights_and_Biases_MNIST.ipynb).
 
