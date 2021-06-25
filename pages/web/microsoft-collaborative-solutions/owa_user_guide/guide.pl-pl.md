@@ -7,7 +7,7 @@ order: 1
 legacy_guide_number: g1918
 ---
 
-**Ostatnia aktualizacja: 03-08-2020**
+**Ostatnia aktualizacja: 25-06-2021**
 
 ## Wprowadzenie
 
@@ -197,6 +197,13 @@ Aby uzyskać dostęp do wszystkich ustawień, kliknij ikonę koła zębatego u g
 Po lewej stronie pojawi się drzewo menu „Opcje”. W tym widoku można dostosować układ i zachowanie konta e-mail. Niektóre opcje konta mogą być wyłączone po stronie OVH ze względów bezpieczeństwa.
 
 ![useowa](images/owa_exchange_step23.png){.thumbnail}
+
+### Zarządzanie plikami cookie
+
+Aplikacja webmail, która jest używana w naszych ofertach e-mail, jest oparta na oprogramowaniu Microsoft Outlook Web Application. Może więc wymieniać metadane z serwerami Microsoft w postaci plików cookie nazywanych `appsforoffice.microsoft.com`.
+
+Jeśli chcesz wyłączyć tę wymianę, możesz w przeglądarce używać rozszerzenia typu bloker treści (takiego jak uBlock Origin lub Ghostery).
+Wyłączenie tych plików cookie może mieć wpływ na stabilność usługi webmail.
 
 ## Sprawdź również
 
