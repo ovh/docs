@@ -16,6 +16,7 @@ Différentes méthodes existent pour envoyer des SMS. L'une d'entre elles consis
 ## Prérequis
 - Avoir créé un utilisateur SMS via l'espace client OVHcloud ou directement via les API. À cet effet, vous pouvez consulter le guide suivant : [Tout savoir sur les utilisateurs SMS](../tout_savoir_sur_les_utilisateurs_sms/)
 - Disposer d'un compte SMS OVHcloud avec des crédits SMS
+- Disposer d'un expéditeur SMS actif. Pour en savoir plus à ce sujet, vous pouvez consulter ce [guide](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_mon_espace_client/#etape-3-choisir-votre-expediteur-sms_1)
 
 
 ## En pratique
