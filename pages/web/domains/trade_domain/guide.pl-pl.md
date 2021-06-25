@@ -80,7 +80,7 @@ Jeśli adres e-mail nie został zmieniony w związku ze zmianą właściciela, r
 
 > [!primary]
 >
-> Procedura musi zostać zatwierdzona przez obie strony w ciągu 60 dni od złożenia wniosku.
+> Procedura musi zostać zatwierdzona przez obie strony w ciągu 14 dni od złożenia wniosku.
 > 
 > Jeżeli jedna ze stron odrzuci zmianę, wniosek zostaje anulowany.
 

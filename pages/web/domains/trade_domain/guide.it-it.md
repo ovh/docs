@@ -79,7 +79,7 @@ Se l'indirizzo email non viene modificato in seguito alla modifica del proprieta
 
 > [!primary]
 >
-> La procedura deve essere convalidata da entrambe le parti entro 60 giorni dalla richiesta.
+> La procedura deve essere convalidata da entrambe le parti entro 14 giorni dalla richiesta.
 >
 > Se la modifica è rifiutata da una delle parti, la domanda è annullata.
 
