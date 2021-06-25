@@ -7,7 +7,7 @@ section: "Utilisation d'Outlook Web Application (OWA)"
 order: 1
 ---
 
-**Dernière mise à jour le 03/08/2020**
+**Dernière mise à jour le 25/06/2021**
 
 ## Objectif
 
@@ -199,6 +199,13 @@ Pour accéder à tous vos paramètres, cliquez sur l'icône d’engrenage en hau
 Vous pouvez ensuite naviguer dans l'arborescence « Options » sur le côté gauche de la page. D'autres ajustements sur la présentation et le comportement de votre compte de messagerie peuvent être effectués à partir de cette page. Veuillez noter que pour des raisons de sécurité, certaines options du compte peuvent être désactivées par OVHcloud.
 
 ![useowa](images/owa_exchange_step23.png){.thumbnail}
+
+### Gestion des cookies
+
+Le webmail qui est utilisé pour nos offres e-mail est basé sur le logiciel Microsoft Outlook Web Application. Il est donc susceptible d'échanger des métadonnées avec les serveurs de Microsoft, sous forme de cookies nommés `appsforoffice.microsoft.com`.
+
+Si vous souhaitez désactiver ces échanges, vous pouvez utiliser sur votre navigateur une extension de type bloqueur de contenus (tel que uBlock Origin ou Ghostery).
+La désactivation de ces cookies peut néanmoins affecter la stabilité de votre webmail.
 
 ## Aller plus loin
 

@@ -79,7 +79,7 @@ Se o endereço de e-mail não for alterado devido à mudança de proprietário, 
 
 > [!primary]
 >
-> O procedimento deve ser validado por ambas as partes no prazo de 60 dias a contar do pedido.
+> O procedimento deve ser validado por ambas as partes no prazo de 14 dias a contar do pedido.
 >
 > Se uma das partes recusar a alteração, o pedido será anulado.
 

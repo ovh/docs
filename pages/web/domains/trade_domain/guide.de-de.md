@@ -80,7 +80,7 @@ Wenn die E-Mail-Adresse im Rahmen des Inhaberwechsels nicht geändert wird, werd
 
 > [!primary]
 >
-> Das Verfahren kann von beiden Parteien innerhalb einer Frist von 60 Tagen validiert werden.
+> Das Verfahren kann von beiden Parteien innerhalb einer Frist von 14 Tagen validiert werden.
 > 
 > Wird die Änderung von einer der beiden Parteien abgelehnt, wird der Vorgang abgrbrochen.
 

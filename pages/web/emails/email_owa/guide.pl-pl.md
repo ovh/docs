@@ -205,6 +205,13 @@ Następnie przejdź do drzewa opcji w bocznej części po lewej stronie.
 
 ![useowa](images/use-owa-step23.png){.thumbnail}
 
+### Zarządzanie plikami cookie
+
+Aplikacja webmail, która jest używana w naszych ofertach e-mail, jest oparta na oprogramowaniu Microsoft Outlook Web Application. Może więc wymieniać metadane z serwerami Microsoft w postaci plików cookie nazywanych `appsforoffice.microsoft.com`.
+
+Jeśli chcesz wyłączyć tę wymianę, możesz w przeglądarce używać rozszerzenia typu bloker treści (takiego jak uBlock Origin lub Ghostery).
+Wyłączenie tych plików cookie może mieć wpływ na stabilność usługi webmail.
+
 ## Sprawdź również
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

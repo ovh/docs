@@ -206,6 +206,13 @@ Puede consultar todas las opciones disponibles en el menú situado en la columna
 
 ![Outlook en la Web](images/use-owa-step23.png){.thumbnail}
 
+### Gestión de cookies
+
+El webmail utilizado para nuestros productos de correo está basado en el programa Microsoft Outlook Web Application. por lo que es susceptible de intercambiar metadatos con los servidores de Microsoft, en forma de cookies llamadas `appsforoffice.microsoft.com`.
+
+Si desea desactivar estos intercambios, puede utilizar en su navegador una extensión de tipo bloqueador de contenidos (como uBlock Origin o Ghostery).
+No obstante, la desactivación de estas cookies puede afectar a la estabilidad de su webmail.
+
 ## Más información
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

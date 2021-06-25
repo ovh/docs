@@ -6,12 +6,13 @@ section: POPC
 order: 2
 ---
 
-**Dernière mise à jour le 14/04/2021**
+**Dernière mise à jour le 25/06/2021**
 
 ## Objectif
 
-Le logiciel POPC ou « Poste Opérateur PC » est un logiciel qui virtualise un standard téléphonique, idéalement pour le traitement des appels entrants et des transferts internes/externes.
-Il se présente sous la forme d'un logiciel, installé sur votre ordinateur, qui prend la place d'un téléphone physique. Ainsi vous appelez, décrochez et gérez vos appels non pas en pianotant sur un combiné physique, mais depuis l'application sur votre PC.
+Le POPC ou « Poste Opérateur PC » est un logiciel qui virtualise un standard téléphonique, idéalement pour le traitement des appels entrants et des transferts internes/externes.
+
+Il se présente sous la forme d'une application, installée sur votre PC sous Windows, qui prend la place d'un téléphone physique. Ainsi vous appelez, décrochez et gérez vos appels non pas en pianotant sur un combiné physique, mais depuis l'application sur votre PC.
 
 **Découvrez comment utiliser les fonctionnalités de base du logiciel POPC**
 
@@ -165,6 +166,16 @@ Vous pouvez intercepter un appel en vous rendant dans l'annuaire **local**. Fait
 De nombreux paramètres peuvent être modifiés. Si vous rencontrez des difficultés à utiliser le logiciel suite à une personnalisation des paramètres, nous vous conseillons de réinitialiser ces derniers en cliquant sur le bouton `Réinitialiser`{.action} situé en bas à droite du volet `Paramètres`.
 
 Vous pourrez alors rétablir les paramètres nécessaires à la configuration de votre ligne SIP OVHcloud en vous aidant de notre guide pour [installer le logiciel POPC](../popc-installation/#configuration-dans-le-logiciel).
+
+### Optimisation des codecs
+
+Pour améliorer la qualité de vos communications ou résoudre d'éventuelles anomalies lors de reprises d'appels mis en attente, nous vous conseillons d'optimiser les codecs dans les paramètres du logiciel.
+
+Pour cela, cliquez sur `Paramètres`{.action} puis sur `Réseau`{.action}. Sélectionnez `G.711A` comme codec préféré.
+
+![codecs POPC](images/optimisation-codecs.png){.thumbnail}
+
+Validez les modifications en cliquant sur `Sauvegarder`{.action}. Le logiciel va alors redémarrer pour appliquer cette nouvelle configuration.
 
 ## Aller plus loin
 
