@@ -5,7 +5,7 @@ excerpt: Find out how to diagnose the most common cases of 1-click module creati
 section: Diagnostics
 ---
 
-**Last updated 14th June 2021**
+**Last updated 24th June 2021**
 
 ## Objective
 
@@ -16,7 +16,7 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
@@ -49,7 +49,7 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-With the [Professional](https://www.ovh.com/ca/en/web-hosting/web-hosting-pro.xml) and [Performance](https://www.ovh.com/ca/en/web-hosting/web-hosting-performance.xml) offers, you can create up to three additional 1-click modules. **Performance** hosting plans also allow you to enable a [private SQL server](https://www.ovh.com/ca/en/web-hosting/sql-options.xml) for free.
+With the [Professional hosting](https://www.ovh.com/ca/en/web-hosting/web-hosting-pro.xml) and [Performance hosting](https://www.ovh.com/ca/en/web-hosting/web-hosting-performance.xml) offers, you can create up to three additional 1-click modules. **Performance hosting**  plans also allow you to enable a [private SQL server](https://www.ovh.com/ca/en/web-hosting/sql-options.xml) for free.
 
 #### Solution 2: delete an unused database <a name="deleteDB"></a>
 
@@ -64,7 +64,7 @@ To delete a database in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?ac
 
 #### Solution 3: order new databases
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), click `Web Cloud`{.action}, then `Hosting plans`{.action}. Switch to the `Databases`{.action} tab and click `Actions`{.action}.
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), click on `Web Cloud`{.action}, then `Hosting plans`{.action}. Switch to the `Databases`{.action} tab and click `Actions`{.action}.
 
 ![order_a_database](images/order_a_database.png){.thumbnail}
 
@@ -77,7 +77,7 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 
 To install your module on an existing database, you will need to use the [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
-To find your database login details, please read our [FAQ](../web-hosting-faq/).
+To find your database login details, please read our [FAQ](https://www.ovh.co.uk/web-hosting/faq/).
 
 ### “The installation directory is not empty“
 
@@ -99,7 +99,7 @@ You can also log in to your hosting plan via [FTP](../log-in-to-storage-ftp-web-
 
 After launching your module installation in advanced mode, you receive an e-mail stating that your module cannot connect to the specified database.
 
-First check your database credentials. To find them, please read our [FAQ](../web-hosting-faq/).
+First check your database credentials. To find them, please read our [FAQ](https://www.ovh.co.uk/web-hosting/faq/).
 
 Then delete your module via the `1-click modules`{.action} tab.
 
@@ -118,7 +118,7 @@ Click on the `Multisite`{.action} tab and perform the following checks:
 |The domain or subdomain linked to the website you want to create does not appear in the `Multisite`{.action} section.|Add your domain by following [this guide](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).|
 |The domain name has been deleted from the `Multisite`{.action} without any action on your side.|If your domain or its [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) is not managed from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), follow this [guide](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain) to add your domain name to the `Multisite`{.action}.|
 
-### Your module only appears under a web address such as “xxxxx.cluster0xx.hosting.ovh.net”
+### Your module appears under a web address such as “xxxxx.cluster0xx.hosting.ovh.net”
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
