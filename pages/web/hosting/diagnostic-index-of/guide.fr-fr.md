@@ -6,9 +6,8 @@ section: Diagnostic
 order: 5
 ---
 
-**Dernière mise à jour le 23/06/2021**
+**Dernière mise à jour le 24/06/2021**
 
->>>>>>> 91cb830e1057cc693bbaaf4039dd931187f1ccc0
 ## Objectif
 
 Lorsqu’une configuration `Multisite` n’est pas correctement paramétrée, votre site est susceptible d’afficher une page **« Index of »**.

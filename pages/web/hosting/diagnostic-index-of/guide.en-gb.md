@@ -1,31 +1,31 @@
 ---
-title: \`What do I do if I have an Index of page?\`
-excerpt: \`Find out how to get your website back online, when it displays an Index of page\`
+title: What do I do if I have an « Index of » page ?
+excerpt: Find out how to get your website back online, when it displays an « Index of » page
 slug: diagnostic-index-of
 section: Diagnostic
 order: 5
 ---
 
-**Last updated 23/06/2021**
+**Last updated 24/06/2021**
  
 ## Objective
 
-If a `Multisite` configuration is not correctly configured, your website may display an **Index of page**.
+If a `Multisite` configuration is not correctly configured, your website may display an **« Index of »** page.
 
 ![index_of](images/index_of.png){.thumbnail}
 
-**Find out how to change the display of an Index of page.**
+**Find out how to change the display of an « Index of » page.**
 
 > [!warning]
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#aller-plus-loin) section of this guide.
+> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
 
-- a web hosting [plan](https://www.ovh.com/fr/hebergement-web/)
+- a [web hosting plan](https://www.ovh.com/fr/hebergement-web/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## Instructions
@@ -72,7 +72,7 @@ You will get the following result:
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
 
- \## Go further <a name="aller-plus-loin"></a>
+## Go further <a name="gofurther"></a>
 
 [Resolve the most common 1-click module errors](../erreurs-frequentes-modules-en-1-clic/)
 
