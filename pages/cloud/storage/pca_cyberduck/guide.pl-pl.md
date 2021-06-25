@@ -5,8 +5,13 @@ excerpt: Przewodnik ten pokazuje, jak zarzadzac usuga Public Cloud Archive.
 section: Public Cloud Archive
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-## Wstep
+**Ostatnia aktualizacja z dnia 18-06-2021**
+
+## Wprowadzenie
 
 Object Storage to rozwiązanie do przechowywania danych zarządzane głównie przez API OpenStack.
 
@@ -16,36 +21,47 @@ W Internecie można odnaleźć inne interfejsy. Konfiguracja jest podobna do tej
 
 **Przewodnik ten wyjaśnia, jak skonfigurować program Cyberduck, aby zarządzać usługą Object Storage za pomocą graficznego interfejsu opartego na API Openstack.**
 
+## Wymagania początkowe
 
-## Wymagania
+- Pobierz i zainstaluj [Cyberduck](https://cyberduck.io/).
+- Posiadanie identyfikatorów użytkowników (*OS_USERNAME*) i projektów (*OS_PROJECT_NAME* lub *OS_ANT_NAME*), które można uzyskać, pobierając plik "OpenRC" z menu [Users and Roles](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/#etap-1-zgromadzenie-zmiennych) w Twoim [Panelu klienta Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Posiadanie hasła użytkownika OpenStack
 
-- Skonfigurowany użytkownik Horizon:  sprawdź [przewodnik](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/){.external}
-- ID Twojego projektu i Twojego użytkownika widoczny w menu Access & Security w interfejsie Horizon.
-
-
-![projet](images/project.png){.thumbnail}
+Jeśli nie znasz hasła użytkownika OpenStack, możesz je zmienić zgodnie z [tym przewodnikiem](https://docs.ovh.com/pl/public-cloud/zmiana-hasla-horizon/).
 
 ## W praktyce
 
-### Konfiguracja oprogramowania Cyberduck
+**Niniejszy przewodnik został zaktualizowany na podstawie wersji 7.9.2 Cyberduck dla MacOS.**
 
-- Pobierz oprogramowanie [Cyberduck](https://cyberduck.io/){.external}
-- Zaloguj się do konta typu  "Swift - OpenStack Object Storage"
+> [!primary]
+>
+> W zależności od źródła pobrania pliku OpenRC (w interfejsie Horizon lub w Panelu klienta OVHcloud) Twój identyfikator projektu może zostać nazwany *OS_PROJECT_NAME* lub *OS_ANT_NAME*.
+>
 
+W Cyberduck połącz się z OpenStack Swift (Keystone 3).
 
-![configuration](images/Cyberduck.png){.thumbnail}
+![pca-cyberduck](images/login.png){.thumbnail}
 
-Wypełnij formularz podając kilka informacji:
+Wpisz następujące informacje:
 
-- Server: auth.cloud.ovh.net (Serwer uwierzytelniania)
-- Tenant ID:Access Key: jest to ID Projektu: ID Użytkownika Horizon
-- Secret Key: Hasło użytkownika Horizon
-- More Options / Path: v2.0
-- Connect
+- Serwer: auth.cloud.ovh.net
+- Project:Domain:Username: OS_PROJECT_NAME:default:OS_USERNAME
+- Hasło: hasło użytkownika OpenStack
 
+Kliknij `Połącz`{.action}. Po zalogowaniu będziesz miał dostęp do drzewa swoich folderów i plików.
 
-![connexion](images/img_2756.jpg){.thumbnail}
+![pca-cyberduck](images/successful-login.png){.thumbnail}
+
+> [!primary]
+>
+> W przypadku problemów z logowaniem możesz pobrać profil połączenia Cyberduck dla OpenStack Swift (Keystone 3) i otworzyć go za pomocą Cyberduck.
+> <br><br>Kliknij prawym przyciskiem myszy <a href="https://trac.cyberduck.io/browser/shelves/02.2020/profiles/default/Openstack%20Swift%20(Keystone%203).cyberduckprofile?rev=48724&order=name" download>tutaj i kliknij "Zapisz cel łącza jako"</a>, aby pobrać profil.
+>
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+[Dokumentacja Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
+
+[Pierwsze kroki z API Swift](https://docs.ovh.com/pl/public-cloud/pierwsze_kroki_z_api_swift/)
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

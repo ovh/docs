@@ -1,11 +1,8 @@
 ---
-title: 'Gestionar el Object Storage con Cyberduck'
-routes:
-    canonical: 'https://docs.ovh.com/us/es/storage/pca/cyberduck/'
-excerpt: 'Gestionar el Object Storage con Cyberduck'
-slug: gestionar_el_object_storage_con_cyberduck
-section: 'Object Storage'
-legacy_guide_number: g1868
+title: Gestionar los archivos desde un cliente Swift
+slug: pca/cyberduck
+excerpt: Cómo configurar Cyberduck para gestionar su Public Cloud Archive
+section: Public Cloud Archive
 ---
 
 > [!primary]
@@ -16,13 +13,13 @@ legacy_guide_number: g1868
 
 ## Objetivo
 
-El Object Storage es una solución de almacenamiento qui se gestiona principalmente mediante la API de OpenStack.
+Public Cloud Archive es una solución de almacenamiento que puede utilizarse con las API de OpenStack. Sin embargo, es posible que no esté familiarizado con esta forma de gestionar un espacio de almacenamiento.
 
-Es posible que usted no esté familiarizado con esta forma de gestionar un espacio de almacenamiento a través de líneas de comandos. Por ese motivo, existen soluciones gráficas que utilizan de manera invisible las API de OpenStack por usted.
+Existen soluciones gráficas que utilizan de forma invisible API de OpenStack para usted. CyberDuck forma parte de estas soluciones y es fácilmente configurable.
 
-Cyberduck es una de esas soluciones, y es fácil de configurar. En internet podrá encontrar otras interfaces disponibles cuya configuración se realiza de manera similar a la que vamos a mostrar.
+También hay disponibles otras interfaces, cuya configuración es similar a la que vamos a presentarles.
 
-Esta guía explica cómo configurar Cyberduck para gestionar el Object Storage desde una interfaz gráfica basada en las API de OpenStack.
+**Esta guía explica cómo configurar Cyberduck para gestionar su Public Cloud Archive utilizando una interfaz gráfica basada en las API OpenStack.**
 
 ## Requisitos
 
