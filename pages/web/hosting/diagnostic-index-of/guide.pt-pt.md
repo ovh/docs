@@ -36,7 +36,7 @@ Se uma configuração `Multisite` não estiver corretamente configurada, é poss
 
 ### Compreender a origem da página « Index of »
 
-O seu nome de domínio está ligado através da parte `Multisite` do seu alojamento a um diretório (um « `Pasta raiz` ») no seu servidor [FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/).
+O seu nome de domínio está ligado através da parte `Multisite` do seu alojamento a um diretório (um « `Pasta raiz`") no seu servidor [FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/).
 
 A página **Index of** indica que o diretório em causa não contém nenhum ficheiro **index.php** ou **index.html**. Um ficheiro deste tipo constitui o « ponto de entrada » do seu site.
 

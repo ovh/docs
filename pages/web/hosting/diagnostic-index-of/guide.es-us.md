@@ -29,8 +29,8 @@ Si una configuración `Multisitio` no está bien configurada, es posible que el 
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovh.es/hosting/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener un [plan de hosting](https://www.ovh.com/world/es/hosting/).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
@@ -46,7 +46,7 @@ Para mostrar su sitio web, deberá asociar su dominio a la `Carpeta raíz` que c
 >
 > Si desea asociar temporalmente su dominio a un `Carpeta raíz` que no contenga un archivo **index.php** o **index.html**, puede prohibir la visualización de la lista de carpetas de su sitio web siguiendo esta [guía](../what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). También puede proteger el acceso a sus carpetas con una [contraseña](../how_to_password_protect_a_directory_on_your_website/).
 >
-> Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nuestro equipo de soporte no podrá ofrecerle soporte para modificar la programación interna de su sitio web.
+> Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nuestro equipo de soporte no podrá ofrecerle soporte para modificar la programación interna de su sitio web.
 
 ### Solucionar el caso más común de una página « Index of »
 
@@ -84,6 +84,6 @@ Obtendrá el siguiente resultado:
 
 [Alojar varios sitios web en un mismo hosting](../configurar-un-multisitio-en-un-alojamiento-web/)
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
