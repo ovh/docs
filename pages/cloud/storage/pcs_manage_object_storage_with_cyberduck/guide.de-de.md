@@ -1,12 +1,14 @@
 ---
 title: 'Verwaltung Ihres Object Storage mit CyberDuck'
+routes:
+    canonical: 'https://docs.ovh.com/de/storage/pca/cyberduck/'
 excerpt: 'Verwaltung Ihres Object Storage mit CyberDuck'
 slug: verwaltung_ihres_object_storage_mit_cyberduck
 section: 'Object Storage'
 legacy_guide_number: g1868
 ---
 
-**Stand 31.03.2021**
+**Stand 18.06.2021**
 
 ## Ziel
 
@@ -23,29 +25,45 @@ In dieser Hilfe erfahren Sie alles über die Konfiguration von CyberDuck für di
 
 ## Voraussetzungen
 
-- Ein konfigurierter Horizon Nutzer: [Auf das Horizon-Interface zugreifen](../../public-cloud/erstellung_eines_zugangs_zu_horizon/)
-- IDs von Projekt und Nutzer (abrufbar im Menü [Zugriff und Sicherheit in Horizon](../../public-cloud/zugriff_und_sicherheit_in_horizon/) durch Download der OpenRC-Datei)
+- Sie haben [Cyberduck](https://cyberduck.io/) installiert.
+- Sie verfügen über Ihre Benutzer- (*OS_USERNAME*) und Projekt-Kennungen (*OS_PROJECT_NAME* oder *OS_TENANT_NAME*), die Sie [erhalten können](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/#schritt-nr-1-die-variablen-wieder-erhalten), indem Sie die Datei "OpenRC" im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) herunterladen.
+- Sie haben Ihr OpenStack-Benutzerpasswort.
+
+Wenn Sie Ihr OpenStack-Benutzerpasswort nicht mehr kennen, können Sie es mithilfe [dieser Anleitung](https://docs.ovh.com/de/public-cloud/openstack-benutzerpasswort-aendern/) ändern.
 
 ## In der praktischen Anwendung
 
-- Download von [Cyberduck](https://cyberduck.io/)
-- Verbindung mit einem Konto des Typs "Swift - OpenStack Object Storage"
+**Diese Anleitung basiert auf der Cyberduck Version 7.9.2 für MacOS.**
 
-![objectstorage-cyberduck](images/Cyberduck.png){.thumbnail}
+> [!primary]
+>
+> Je nachdem, wo Sie die OpenRC-Datei beziehen (über Horizon oder über Ihr OVHcloud Kundencenter), kann Ihre Projektkennung als *OS_PROJECT_NAME* oder *OS_TENANT_NAME* bezeichnet sein.
+>
 
-In dem Formular müssen verschiedene Angaben gemacht werden:
+Öffnen Sie in Cyberduck eine Verbindung des Typs "OpenStack Swift (Keystone 3)".
 
-- Server: auth.cloud.ovh.net (Authentifizierungs-Server)
-- Project:Domain:Username : OS_TENANT_NAME:default:OS_USERNAME
-- Secret Key: Passwort des Horizon Nutzers
-- More Options/Path: v3.0
+![pca-cyberduck](images/login.png){.thumbnail}
 
-- Einloggen
+Geben Sie die folgenden Informationen an:
 
-![objectstorage-cyberduck](images/img_2756.jpg){.thumbnail}
+- Server: auth.cloud.ovh.net
+- Project:Domain:Username: OS_PROJECT_NAME:default:OS_USERNAME
+- Password: das Passwort Ihres OpenStack-Benutzers
+
+Klicken Sie dann auf `Connect`{.action}. Sobald Sie eingeloggt sind, haben Sie Zugriff auf die Ordnerstruktur Ihrer Dateien.
+
+![pca-cyberduck](images/successful-login.png){.thumbnail}
+
+> [!primary]
+>
+> Bei Verbindungsschwierigkeiten können Sie das Cyberduck Verbindungsprofil für "OpenStack Swift (Keystone 3)" herunterladen und es mit Cyberduck öffnen.
+> <br><br>Klicken Sie <a href="https://trac.cyberduck.io/browser/shelves/02.2020/profiles/default/Openstack%20Swift%20(Keystone%203).cyberduckprofile?rev=48724&order=name" download>hier rechts und dann "Ziel speichern unter"</a>, um das Profil herunterzuladen.
+>
 
 ## Weiterführende Informationen
 
-- [Die ersten Schritte mit der API Swift](../../public-cloud/die_ersten_schritte_mit_der_swift_api/)
+[Cyberduck Dokumentation](https://trac.cyberduck.io/wiki/help/en){.external}
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+[Erste Schritte mit der Swift API](https://docs.ovh.com/de/public-cloud/die_ersten_schritte_mit_der_swift_api/)
+
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
