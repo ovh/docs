@@ -7,7 +7,7 @@ section: 'Outlook Web App (OWA)'
 order: 1
 ---
 
-**Letzte Aktualisierung am 20.07.2020**
+**Letzte Aktualisierung am 25.06.2021**
 
 ## Ziel
 
@@ -197,6 +197,13 @@ Um auf alle Ihre Einstellungen zuzugreifen, klicken Sie oben auf das Zahnradsymb
 Sie können dann die Baumstruktur „Optionen“ links auf der Seite durchsuchen. Hier können Sie auch weitere Anpassungen an Layout und Verhalten Ihres E-Mail-Kontos vornehmen. Bitte beachten Sie, dass einige der Accountoptionen aus Sicherheitsgründen von unserer Seite aus deaktiviert sein können.
 
 ![useowa](images/owa_exchange_step23.png){.thumbnail}
+
+### Cookie-Verwaltung
+
+Das Webmail, das für unsere E-Mail Angebote verwendet wird, basiert auf der Software Microsoft Outlook Web Application. Es kann demnach Metadaten mit Microsoft Servern in Form von Cookies (etwa `appsforoffice.microsoft.com`) austauschen.
+
+Wenn Sie diese Datenübertragung deaktivieren möchten, können Sie in Ihrem Browser eine Erweiterung hinzufügen, die Inhalte blockiert, z.B. uBlock Origin oder Ghostery.
+Die Deaktivierung dieser Cookies kann möglicherweise die stabile Funktionalität Ihres Webmail-Accounts beeinträchtigen.
 
 ## Weiterführende Informationen
 

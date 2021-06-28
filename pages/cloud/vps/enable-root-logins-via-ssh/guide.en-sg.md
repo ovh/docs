@@ -3,6 +3,7 @@ title: 'How to enable logins with the root user via SSH'
 excerpt: 'Find out to configure SSH to allow root logins'
 slug: enable-root-login
 section: Tutorials
+hidden: true
 ---
 
 **Last updated 19th September 2020**
