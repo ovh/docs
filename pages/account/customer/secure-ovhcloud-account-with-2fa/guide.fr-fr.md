@@ -126,7 +126,7 @@ Avant de nous contacter, vous devez réunir les éléments justificatifs suivant
 |Association|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du président de l'association<br><br>- Statuts de l'association<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services|
 |Profession libérale|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Avis de situation Sirene INSEE<br><br>|
 
-Une fois vos justificatifs réunis, contactez le support OVHcloud au 1007 (composez le 0033 9 27 10 10 07 depuis une ligne en dehors de la France).
+Une fois vos justificatifs réunis, contactez le support OVHcloud au 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France).
 
 Après vérification de vos documents, un conseiller pourra désactiver manuellement la double authentification sur votre compte OVHcloud.
 
