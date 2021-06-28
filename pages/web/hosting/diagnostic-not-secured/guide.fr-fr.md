@@ -1,7 +1,7 @@
 ---
-title: Que faire si mon site est considéré comme non-sécurisé ?
+title: "Que faire si mon site est considéré comme non-sécurisé ?"
 slug: erreur-site-non-securise
-excerpt: Réagir en cas de messages d'erreur liés à la sécurité de votre site
+excerpt: "Réagir en cas de messages d'erreur liés à la sécurité de votre site"
 section: Diagnostic
 ---
 
@@ -9,13 +9,13 @@ section: Diagnostic
  
 ## Objectif
 
-Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent que votre hébergement web ne contient pas de certificat SSL (si votre site n'affiche pas l'une des anomalies décrites ici, consultez la section [Aller plus loin](#aller-plus-loin)) : 
+Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent que votre hébergement web ne contient pas de certificat SSL (si votre site n'affiche pas l'une des anomalies décrites dans ce guide, consultez la section [Aller plus loin](#aller-plus-loin)) : 
 
 |Navigateur|Erreur concernée|
 |-|---|
 |Sur Chrome : « Votre connexion n’est pas privée »|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
 |Sur Firefox : « Votre connexion n’est pas sécurisée »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
-|Sur Edge : «  »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
+|Sur Edge : « Un problème s’est produit au niveau du certificat de sécurité de ce site web »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
 |Sur Safari : «  »|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
 
 **Découvez comment résoudre les erreurs du type "Site non sécurisée"**
