@@ -98,19 +98,20 @@ Cliquez ensuite sur `Sécurité`{.action} (première étape sur l'image ci-desso
 
 #### Demander la désactivation de la double authentification
 
-Si votre pérphérique lié à la 2FA est perdu ou ne fonctionne plus, et si vous ne disposez plus de codes de sécurité valides, vous pouvez demander la désactivation de la double authentification en créant un ticket d'assistance auprès de nos équipes support.
+Si votre pérphérique lié à la 2FA est perdu ou ne fonctionne plus, et si vous ne disposez plus de codes de sécurité valides, vous pouvez demander la désactivation de la double authentification en contactant nos équipes support.
 
-Avant de créer ce ticket, vous devez réunir les éléments justificatifs suivants :
+Avant de nous contacter, vous devez réunir les éléments justificatifs suivants :
 
 |Type de compte OVHcloud|Justificatifs à fournir|
 |---|---|
-|Particulier|Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud|
+|Particulier|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud|
 |Société|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du gérant de la société <br><br>- Extrait KBIS de moins de 3 mois.|
 |Administration|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du maire/adjoint<br><br>- Avis de situation Sirene INSEE<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services |
 |Association|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du président de l'association<br><br>- Statuts de l'association<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services|
-|Profession libérale|Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Avis de situation Sirene INSEE<br><br>|
+|Profession libérale|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Avis de situation Sirene INSEE<br><br>|
 
-Une fois vos justificatifs réunis, créez en ticket d'assistance
+Une fois vos justificatifs réunis, contactez le support OVHcloud au 1007. Après vérification des justificatifs, un conseiller pourra désactiver manuellement la double authentification.
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
