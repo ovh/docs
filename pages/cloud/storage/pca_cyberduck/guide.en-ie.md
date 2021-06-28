@@ -20,10 +20,10 @@ Other interfaces can be found on the Internet and configuration is similar to th
 ## Requirements
 
 - [Cyberduck](https://cyberduck.io/) installed on your computer.
-- your username (*OS_USERNAME*) and project credentials (*OS_PROJECT_NAME* or *OS_TENANT_NAME*). Retrieve them by downloading the OpenRC file from the [Users and Roles](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/#step-1-retrieve-the-variables) menu in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- your username (*OS_USERNAME*) and project credentials (*OS_PROJECT_NAME* or *OS_TENANT_NAME*). Retrieve them by downloading the OpenRC file from the [Users and Roles](https://docs.ovh.com/ie/en/public-cloud/set-openstack-environment-variables/#step-1-retrieve-the-variables) menu in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 - your OpenStack user password.
 
-In case you have forgotten your OpenStack user password, you can change it by following [this guide](https://docs.ovh.com/gb/en/public-cloud/change-openstack-user-password/).
+In case you have forgotten your OpenStack user password, you can change it by following [this guide](https://docs.ovh.com/ie/en/public-cloud/change-openstack-user-password/).
 
 ## Instructions
 
@@ -58,6 +58,6 @@ Then click `Connect`{.action}. Once you're logged in, you will have access to th
 
 [Cyberduck documentation](https://trac.cyberduck.io/wiki/help/en){.external}
 
-[Getting started with the Swift API](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_the_swift_api/)
+[Getting started with the Swift API](https://docs.ovh.com/ie/en/public-cloud/getting_started_with_the_swift_api/)
 
 Join our community of users on <https://community.ovh.com/en/>.
