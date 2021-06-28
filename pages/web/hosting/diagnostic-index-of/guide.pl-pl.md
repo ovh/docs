@@ -1,7 +1,7 @@
 ---
 title: Co zrobić w przypadku strony « Index of »?
 excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetla ona stronę « Index of »
-slug: diagnostyka-indeks
+slug: diagnostyka-index-of
 section: Diagnostyka
 order: 5
 ---
