@@ -19,8 +19,8 @@ OpenVPN es un programa que le permite crear una red privada virtual (VPN). Utili
 
 ## Requisitos
 
-- Tener un [VPS](https://www.ovhcloud.com/es/vps/) en el área de cliente de OVHcloud.
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) en el área de cliente de OVHcloud.
+- Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
@@ -28,10 +28,10 @@ OpenVPN es un programa que le permite crear una red privada virtual (VPN). Utili
 
 > [!primary]
 >
-Si quiere utilizar un servicio VPS existente, puede hacerlo desde el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), [reinstalando este servicio con la plantilla OpenVPN](../primeros-pasos-con-vps/#instalacion-o-reinstalacion-de-su-vps-gama-actual-de-vps).
+Si quiere utilizar un servicio VPS existente, puede hacerlo desde el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), [reinstalando este servicio con la plantilla OpenVPN](../primeros-pasos-con-vps/#instalacion-o-reinstalacion-de-su-vps-gama-actual-de-vps).
 >
 
-Contrate su VPS en la [página de producto](https://www.ovhcloud.com/es/vps/). Al seleccionar la imagen, seleccione `Distribución con aplicación`{.action} y `OpenVPN`{.action} como sistema operativo.
+Contrate su VPS en la [página de producto](https://www.ovhcloud.com/es-es/vps/). Al seleccionar la imagen, seleccione `Distribución con aplicación`{.action} y `OpenVPN`{.action} como sistema operativo.
 
 ![Pedido VPS](images/order_vps.png){.thumbnail}
 
