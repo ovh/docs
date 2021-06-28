@@ -76,10 +76,10 @@ Sie erhalten das Ergebnis wie in der folgenden Abbildung dargestellt:
 
 [Die häufigsten Fehler bei 1-Klick-Modulen beheben](../fehler-bei-1-klick-modulen/)
 
-[Fehler “Seite nicht installiert“ beheben](../webhosting_fehler_-_webseite_ist_nicht_installiert/)
+[Fehler "Seite nicht installiert" beheben](../webhosting_fehler_-_webseite_ist_nicht_installiert/)
 
 [Mehrere Websites auf einem Webhosting einrichten](../multisites-mehrere-websites-konfigurieren/)
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, lesen Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
