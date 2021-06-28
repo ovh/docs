@@ -1,7 +1,7 @@
 ---
 title: ¿Qué hacer en caso de página del « Index of » ?
 excerpt: Descubra cómo poner su sitio web de nuevo en línea cuando muestre una página « Index of »
-slug: diagnostico-indice-of
+slug: diagnostico-index-of
 section: Diagnóstico
 order: 5
 ---
