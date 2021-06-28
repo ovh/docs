@@ -24,7 +24,7 @@ Vous pouvez activer une authentification à deux facteurs (2FA). Celle-ci vient 
 
 ## En pratique
 
-Vous pouvez activer une ou plusieurs méthodes de double authentification afin de sécuriser et de contrôler l'accès à votre espace client. 
+Vous pouvez activer une ou plusieurs méthodes de double authentification afin de sécuriser et de contrôler l'accès à votre espace client.
 Nous vous proposons trois méthodes différentes :
 
 - **via SMS**. Renseignez votre numéro de téléphone mobile. Un code à usage unique vous sera envoyé par SMS à chaque tentative de connexion à votre compte OVHcloud. Le principal avantage de cette méthode est d'utiliser un code envoyé sur un autre périphérique que votre ordinateur. En cas d'intrusion sur celui-ci, via un malware par exemple, votre compte restera sécurisé. Vous devez cependant bénéficier d'une couverture réseau suffisante pour recevoir les SMS ;
@@ -44,7 +44,7 @@ Une fois la première méthode ajoutée, vous pouvez également en ajouter une o
 
 ### Étape 2 : sauvegarder les codes de sécurité
 
-Lorsque vous ajoutez une double authentification pour la première fois, des codes de secours vous seront communiqués. Conservez-les précieusement. Nous vous conseillons de les sauvegarder dans un gestionnaire de mots de passe.
+Lorsque vous ajoutez une double authentification pour la première fois, des codes de secours vous seront communiqués. **Conservez-les précieusement**. Nous vous conseillons de les sauvegarder dans un gestionnaire de mots de passe, tel que [Keepass](https://keepass.info/){.external}.
 
 ![2FA](images/2facodes.png){.thumbnail}
 
@@ -54,7 +54,7 @@ Vous pourrez les supprimer ou les regénérer depuis votre espace client :
 
 > [!warning]
 >
-> Nous vous rappelons qu’il est indispensable de sauvegarder ces codes de secours et de vous assurer qu’ils sont valides. En cas d’indisponibilité de votre ou vos méthodes de sécurité sélectionnées (vol ou perte de votre téléphone ou de votre clé de sécurité), l’accès à votre espace client pourrait être bloqué.
+> Nous vous rappelons qu’il est indispensable de **sauvegarder ces codes de secours** et de vous assurer qu’ils sont valides. En cas d’indisponibilité de votre ou vos méthodes de sécurité sélectionnées (vol ou perte de votre téléphone ou de votre clé de sécurité), l’accès à votre espace client pourrait être bloqué.
 >
 
 ### Étape 3 : se connecter à l'espace client avec la double authentification
@@ -96,9 +96,9 @@ Cliquez ensuite sur `Sécurité`{.action} (première étape sur l'image ci-desso
 
 ![2FA](images/hub2FAc.png){.thumbnail}
 
-#### Demander la désactivation de la double authentification
+#### Demander la désactivation de la double authentification <a name="desactivation"></a>
 
-Si votre pérphérique lié à la 2FA est perdu ou ne fonctionne plus, et si vous ne disposez plus de codes de sécurité valides, vous pouvez demander la désactivation de la double authentification en contactant nos équipes support.
+Si votre périphérique lié à la double authentification est perdu ou ne fonctionne plus, **et si vous ne disposez plus de codes de sécurité valides**, vous pouvez demander la désactivation de la double authentification en contactant nos équipes support.
 
 Avant de nous contacter, vous devez réunir les éléments justificatifs suivants :
 
@@ -110,7 +110,7 @@ Avant de nous contacter, vous devez réunir les éléments justificatifs suivant
 |Association|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du président de l'association<br><br>- Statuts de l'association<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services|
 |Profession libérale|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Avis de situation Sirene INSEE<br><br>|
 
-Une fois vos justificatifs réunis, contactez le support OVHcloud au 1007. Après vérification des justificatifs, un conseiller pourra désactiver manuellement la double authentification.
+Une fois vos justificatifs réunis, contactez le support OVHcloud au 1007. Après vérification de vos documents, un conseiller pourra désactiver manuellement la double authentification sur votre compte OVHcloud.
 
 ## Aller plus loin
 
