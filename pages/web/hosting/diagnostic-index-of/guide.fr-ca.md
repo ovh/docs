@@ -1,12 +1,12 @@
 ---
-title: Que faire en cas de page « Index of » ?
-excerpt: Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »
+title: "Que faire en cas de page « Index of » ?"
+excerpt: "Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »"
 slug: diagnostic-index-of
 section: Diagnostic
 order: 5
 ---
 
-**Dernière mise à jour le 25/06/2021**
+**Dernière mise à jour le 28/06/2021**
 
 ## Objectif
 
@@ -25,14 +25,14 @@ Lorsqu’une configuration `Multisite` n’est pas correctement paramétrée, vo
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disposer d'une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
 
 ### Comprendre l'origine de la page « Index of »
 
-Votre nom de domaine est connecté via la partie `Multisite` de votre hébergement à un répertoire (un « `Dossier racine` ») sur votre serveur [FTP](../connexion-espace-stockage-ftp-hebergement-web/).
+Votre nom de domaine est connecté via la partie `Multisite` de votre hébergement à un répertoire (un « Dossier racine ») sur votre serveur [FTP](../connexion-espace-stockage-ftp-hebergement-web/).
 
 La page **Index of** indique que le répertoire concerné ne contient pas de fichier **index.php** ou **index.html**. Un fichier de ce type constitue le « point d'entrée » de votre site.
 
@@ -58,7 +58,7 @@ Cochez la case `Modifier également le sous domaine www.mydomain.ovh` et indique
 
 > [!primary]
 >
-> Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre [serveur FTP](../connexion-espace-stockage-ftp-hebergement-web/).
+> Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre serveur FTP.
 
 Cliquez ensuite sur `Suivant`.
 
@@ -80,6 +80,6 @@ Vous obtiendrez le résultat suivant :
 
 [Partager son hébergement entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/)
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
