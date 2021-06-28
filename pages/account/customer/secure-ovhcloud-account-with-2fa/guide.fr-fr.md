@@ -5,12 +5,12 @@ excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud e
 section: Sécurité
 ---
 
-**Dernière mise à jour le 30/09/2020**
+**Dernière mise à jour le 28/06/2021**
 
 ## Objectif
 
-OVHcloud met à votre disposition des outils pour renforcer la sécurité de votre compte et de vos services. 
-Vous pouvez activer une authentification à deux facteurs (2FA). Celle-ci vient s'ajouter à votre couple identifiant-mot de passe et est gérée depuis un appareil que vous possédez : un téléphone, une tablette ou une clé de sécurité. 
+OVHcloud met à votre disposition des outils pour renforcer la sécurité de votre compte et de vos services.
+Vous pouvez activer une authentification à deux facteurs (2FA). Celle-ci vient s'ajouter à votre couple identifiant-mot de passe et est gérée depuis un appareil que vous possédez : un téléphone, une tablette ou une clé de sécurité.
 
 **Découvrez les différentes méthodes proposées et comment les activer.**
 
@@ -30,8 +30,7 @@ Nous vous proposons trois méthodes différentes :
 - **via SMS**. Renseignez votre numéro de téléphone mobile. Un code à usage unique vous sera envoyé par SMS à chaque tentative de connexion à votre compte OVHcloud. Le principal avantage de cette méthode est d'utiliser un code envoyé sur un autre périphérique que votre ordinateur. En cas d'intrusion sur celui-ci, via un malware par exemple, votre compte restera sécurisé. Vous devez cependant bénéficier d'une couverture réseau suffisante pour recevoir les SMS ;
 
 - **via une application mobile OTP**. Installez une application mobile OTP sur votre smartphone ou tablette Android ou iOS. Associez ensuite l'application à votre compte OVHcloud. À chaque tentative de connexion, l'application générera un code à usage unique valable pendant un court laps de temps.
-Une fois la première association de l'application à votre compte effectuée, il n'est plus nécessaire d'être connecté à Internet sur votre périphérique pour que les codes soient générés ;
-
+Une fois la première association de l'application à votre compte effectuée, il n'est plus nécessaire d'être connecté à Internet sur votre périphérique pour que les codes soient générés.
 
 - **via une clé de sécurité U2F**. Cette méthode nécessite de brancher une clé USB de sécurité U2F sur votre ordinateur à chaque connexion à votre compte OVHcloud. L'authentification s'effectue alors automatiquement. Cette méthode offre un niveau de sécurité plus élevé, car elle repose sur un équipement de sécurité indépendant, totalement séparé de votre ordinateur, smartphone ou tablette, et qui est moins exposé aux risques de piratage.
 
@@ -56,10 +55,7 @@ Vous pourrez les supprimer ou les regénérer depuis votre espace client :
 > [!warning]
 >
 > Nous vous rappelons qu’il est indispensable de sauvegarder ces codes de secours et de vous assurer qu’ils sont valides. En cas d’indisponibilité de votre ou vos méthodes de sécurité sélectionnées (vol ou perte de votre téléphone ou de votre clé de sécurité), l’accès à votre espace client pourrait être bloqué.
-> 
-> 
-> 
-
+>
 
 ### Étape 3 : se connecter à l'espace client avec la double authentification
 
@@ -75,23 +71,22 @@ Toutes les méthodes que vous avez activées apparaîtront alors :
 
 Si votre périphérique (téléphone mobile/smartphone/clé de sécurité) est perdu ou ne fonctionne plus, nous vous conseillons d'utiliser les autres méthodes de double authentification actives sur votre compte.
 
-Vous pouvez également utiliser l'un des codes de sécurité mis à votre disposition. 
+Vous pouvez également utiliser l'un des codes de sécurité mis à votre disposition.
 
-
-### Supprimer un périphérique lié à la double authentification
+#### Supprimer un périphérique lié à la double authentification
 
 > [!warning]
 >
-> La suppression d'un périphérique ne désactive pas la double authentification. 
-> 
+> La suppression d'un périphérique ne désactive pas la double authentification.
+>
 > Avant de supprimer un périphérique et afin de ne pas bloquer l'accès à votre compte, vérifiez donc que vous disposez au choix :
-> 
-> - d'un périphérique fonctionnel ;
-> 
-> - d'une autre méthode de double authentification fonctionnelle ; 
-> 
+>
+> - d'un périphérique fonctionnel;
+>
+> - d'une autre méthode de double authentification fonctionnelle;
+>
 > - de codes de sécurité valides.
-> 
+>
 
 Pour supprimer un périphérique, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur votre nom en haut à droite (première étape sur l'image ci-dessous), puis sur vos initiales (seconde étape). 
 
@@ -101,7 +96,21 @@ Cliquez ensuite sur `Sécurité`{.action} (première étape sur l'image ci-desso
 
 ![2FA](images/hub2FAc.png){.thumbnail}
 
+#### Demander la désactivation de la double authentification
 
+Si votre pérphérique lié à la 2FA est perdu ou ne fonctionne plus, et si vous ne disposez plus de codes de sécurité valides, vous pouvez demander la désactivation de la double authentification en créant un ticket d'assistance auprès de nos équipes support.
+
+Avant de créer ce ticket, vous devez réunir les éléments justificatifs suivants :
+
+|Type de compte OVHcloud|Justificatifs à fournir|
+|---|---|
+|Particulier|Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud|
+|Société|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du gérant de la société <br><br>- Extrait KBIS de moins de 3 mois.|
+|Administration|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du maire/adjoint<br><br>- Avis de situation Sirene INSEE<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services |
+|Association|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du président de l'association<br><br>- Statuts de l'association<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services|
+|Profession libérale|Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Avis de situation Sirene INSEE<br><br>|
+
+Une fois vos justificatifs réunis, créez en ticket d'assistance
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
