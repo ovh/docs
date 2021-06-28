@@ -1,7 +1,7 @@
 ---
 title: Managing your archives with a Swift client
 slug: pca/cyberduck
-excerpt: This guide shows you how to configure Cyberduck manage your Public Cloud Archives.
+excerpt: This guide shows you how to configure Cyberduck to manage your Public Cloud Archives.
 section: Public Cloud Archive
 ---
 
@@ -11,8 +11,8 @@ section: Public Cloud Archive
 
 Object Storage is a storage solution that is managed primarily through the OpenStack API. However, you might not be familiar with managing storage space via command line.
 
-There are graphical interface solutions that seamlessly make use the OpenStack APIs. Cyberduck is a Swift client.
-
+There are graphical interface solutions that seamlessly make use of the OpenStack APIs. Cyberduck is a Swift client.
+ 
 Other interfaces can be found on the Internet and configuration is similar to the configuration explained in this guide.
 
 **This guide will explain how to configure Cyberduck to manage your Object Storage using a GUI based on Openstack APIs.**
