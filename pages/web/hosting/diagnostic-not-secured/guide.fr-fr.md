@@ -13,9 +13,9 @@ Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de vo
 
 |Navigateur|Erreur concernée|
 |-|---|
-|Sur Chrome : « Votre connexion n’est pas privée »|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
-|Sur Firefox : « Votre connexion n’est pas sécurisée »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
-|Sur Edge : « Un problème s’est produit au niveau du certificat de sécurité de ce site web »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
+|Sur Chrome : « Votre connexion n'est pas privée »|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
+|Sur Firefox : « Attention : risque probable de sécurité »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
+|Sur Edge : « Votre connexion n’est pas privée »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
 |Sur Safari : «  »|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
 
 **Découvez comment résoudre les erreurs du type "Site non sécurisée"**
