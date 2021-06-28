@@ -120,7 +120,7 @@ Avant de nous contacter, vous devez réunir les éléments justificatifs suivant
 
 |Type de compte OVHcloud|Justificatifs à fournir|
 |---|---|
-|Particulier|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Justificatif de domicile (facture de fournisseur d'électricité, d'eau, de téléphone, etc... ) de moins de 3 mois.|
+|Particulier|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Justificatif de domicile (facture de fournisseur d'électricité, d'eau, de téléphone, etc... ) de moins de 3 mois|
 |Société|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du gérant de la société <br><br>- Extrait KBIS de moins de 3 mois|
 |Administration|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du maire/adjoint<br><br>- Avis de situation Sirene INSEE<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services |
 |Association|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du président de l'association<br><br>- Copie du dernier PV d'assemblée générale de l'association<br><br>- Copie du récépissé de déclaration de l'association<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services|
