@@ -42,7 +42,7 @@ Une fois la première association de l'application à votre compte effectuée, i
 
 Une fois la première méthode ajoutée, vous pouvez également en ajouter une ou deux autres afin de disposer de multiples moyens de vous connecter à votre compte.
 
-### Étape 2 : sauvegarder les codes de sécurité
+### Étape 2 : sauvegarder les codes de secours <a name="codes"></a>
 
 Lorsque vous ajoutez une double authentification pour la première fois, des codes de secours vous seront communiqués. **Conservez-les précieusement**. Nous vous conseillons de les sauvegarder dans un gestionnaire de mots de passe, tel que [Keepass](https://keepass.info/){.external}.
 
@@ -50,7 +50,7 @@ Lorsque vous ajoutez une double authentification pour la première fois, des cod
 
 Vous pourrez les supprimer ou les regénérer depuis votre espace client :
 
-![2FA](images/2facodesaction.png){.thumbnail}
+![2FA](images/emergency-codes.png){.thumbnail}
 
 > [!warning]
 >
@@ -69,15 +69,19 @@ Toutes les méthodes que vous avez activées apparaîtront alors :
 
 ### Que faire si l'un de mes périphériques est perdu ou cesse de fonctionner ?
 
-Si votre périphérique (téléphone mobile/smartphone/clé de sécurité) est perdu ou ne fonctionne plus, nous vous conseillons d'utiliser les autres méthodes de double authentification actives sur votre compte.
+Si votre périphérique (téléphone mobile/smartphone/clé de sécurité) est perdu, volé ou ne fonctionne plus, nous vous conseillons de choisir l'une des options suivantes :
 
-Vous pouvez également utiliser l'un des codes de sécurité mis à votre disposition.
+- utiliser [les code de secours](#codes) actifs que vous avez sauvegardés;
+- utiliser un autre périphérique de double authentification à votre disposition, si vous en avez activé plusieurs;
+- [désactiver la double authentification](#desactivation).
 
-#### Supprimer un périphérique lié à la double authentification
+Si vous avez encore accès à votre espace client OVHcloud malgré la perte de votre périphérique, il est essentiel, à des fins de sécurité, de supprimer ce périphérique de la liste de ceux utilisés pour la double authentification.
+
+#### Supprimer un périphérique <a name="supprimer-peripherique"></a>
 
 > [!warning]
 >
-> La suppression d'un périphérique ne désactive pas la double authentification.
+> La suppression d'un seul périphérique ne désactive pas la double authentification.
 >
 > Avant de supprimer un périphérique et afin de ne pas bloquer l'accès à votre compte, vérifiez donc que vous disposez au choix :
 >
@@ -85,20 +89,32 @@ Vous pouvez également utiliser l'un des codes de sécurité mis à votre dispos
 >
 > - d'une autre méthode de double authentification fonctionnelle;
 >
-> - de codes de sécurité valides.
+> - de codes de secours valides.
 >
 
-Pour supprimer un périphérique, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur votre nom en haut à droite (première étape sur l'image ci-dessous), puis sur vos initiales (seconde étape). 
+Pour supprimer un périphérique, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur votre nom en haut à droite (première étape sur l'image ci-dessous), puis sur vos initiales (seconde étape).
 
 ![2FA](images/hub2FAb.png){.thumbnail}
 
 Cliquez ensuite sur `Sécurité`{.action} (première étape sur l'image ci-dessous), puis sur les `...`{.action} (deuxième étape) à droite de votre périphérique à supprimer et enfin sur `Supprimer`{.action} (troisième étape).
 
-![2FA](images/hub2FAc.png){.thumbnail}
+![2FA](images/delete-device.png){.thumbnail}
 
-#### Demander la désactivation de la double authentification <a name="desactivation"></a>
+### Désactiver complètement la double authentification <a name="desactivation"></a>
 
-Si votre périphérique lié à la double authentification est perdu ou ne fonctionne plus, **et si vous ne disposez plus de codes de sécurité valides**, vous pouvez demander la désactivation de la double authentification en contactant nos équipes support.
+#### Si vous avez accès à votre espace client OVHcloud
+
+Pour désactiver complètement la double authentification sur votre compte OVHcloud, il vous faut supprimer **tous** les périphériques renseignés **et aussi désactiver les codes de secours**.
+
+Pour supprimer chaque périphérique, consultez la [partie dédiée de ce guide](#supprimer-peripherique).
+
+Une fois tous vos périphériques supprimés, désactivez les codes de secours en cliquant sur le bouton `Désactiver les codes 2FA`{.action}.
+
+![2FA codes](images/disabling-codes.png){.thumbnail}
+
+#### Si vous n'avez plus accès à votre espace client OVHcloud
+
+Si vous ne disposez plus de périphériques valides et si vous ne disposez plus de codes de secours valides, vous pouvez demander la désactivation de la double authentification en contactant nos équipes support.
 
 Avant de nous contacter, vous devez réunir les éléments justificatifs suivants :
 
@@ -110,7 +126,9 @@ Avant de nous contacter, vous devez réunir les éléments justificatifs suivant
 |Association|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du président de l'association<br><br>- Statuts de l'association<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services|
 |Profession libérale|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Avis de situation Sirene INSEE<br><br>|
 
-Une fois vos justificatifs réunis, contactez le support OVHcloud au 1007. Après vérification de vos documents, un conseiller pourra désactiver manuellement la double authentification sur votre compte OVHcloud.
+Une fois vos justificatifs réunis, contactez le support OVHcloud au 1007 (composez le 0033 9 27 10 10 07 depuis une ligne en dehors de la France).
+
+Après vérification de vos documents, un conseiller pourra désactiver manuellement la double authentification sur votre compte OVHcloud.
 
 ## Aller plus loin
 
