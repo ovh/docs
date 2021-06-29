@@ -39,7 +39,7 @@ To correctly display your website, this connection must be established in the `M
 
 > [!primary]
 >
-> If you want to temporarily link your domain name fto a `Root folder` that does not contain an **index.php** or **index.html** file, you can prevent the listing of folders from being displayed on your website by following this [guide](../what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). You can also protect the access to your folders with a [password](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> If you want to temporarily link your domain name fto a `Root folder` that does not contain an **index.php** or **index.html** file, you can prevent the listing of folders from being displayed on your website by following this [guide](../what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). You can also protect the access to your folders with a [password](../how_to_password_protect_a_directory_on_your_website/).
 >
 > We recommend contacting a [specialised provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties setting up this configuration. Our support teams will not be able to assist you with any changes to your website’s internal programming.
 
