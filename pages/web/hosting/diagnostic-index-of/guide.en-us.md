@@ -24,8 +24,8 @@ If a `Multisite` configuration is not correctly configured, your website may dis
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
@@ -41,7 +41,7 @@ To correctly display your website, this connection must be established in the `M
 >
 > If you want to temporarily link your domain name fto a `Root folder` that does not contain an **index.php** or **index.html** file, you can prevent the listing of folders from being displayed on your website by following this [guide](../what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). You can also protect the access to your folders with a [password](../how_to_password_protect_a_directory_on_your_website/).
 >
-> We recommend contacting a [specialised provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties setting up this configuration. Our support teams will not be able to assist you with any changes to your website’s internal programming.
+> We recommend contacting a [specialised provider](https://partner.ovhcloud.com/en/directory/) if you experience any difficulties setting up this configuration. Our support teams will not be able to assist you with any changes to your website’s internal programming.
 
 ### Resolving the most common cause of an "Index of" page
 
@@ -79,6 +79,6 @@ You will get the result as shown in the following image:
 
 [Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/)
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
