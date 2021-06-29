@@ -65,6 +65,8 @@ Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou I
 
 Puis reportez-la dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`. Patientez enfin 24 heures au maximum (délai technique maximum de propagation des modifications dans la `Zone DNS`{.action}).
 
+Ajoutez infos troubleshoot sur Sectigo
+
 ### Étape 2 : Vérifiez le certificat SSL de votre hébergement
 
 #### Scénario 1 : 
