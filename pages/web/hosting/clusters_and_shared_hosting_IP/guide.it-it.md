@@ -943,6 +943,40 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 51.178.146.199
 ```
 
+### Cluster 031
+
+Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
+
+|Paese|Codice Paese|IPv4|IPv6|
+|---|---|----|---|
+|Francia|FR|146.59.209.152|2001:41d0:301::31|
+|Irlanda|IE|188.165.5.107|2001:41d0:301:3::31|
+|Portogallo|PT|51.178.229.47|2001:41d0:301:2::31|
+|Regno Unito|UK|178.32.52.177|2001:41d0:301:12::31|
+|Italia|IT|94.23.66.84|2001:41d0:301:11::31|
+|Spagna|ES|51.255.26.63|2001:41d0:301:4::31|
+|Polonia|PL|87.98.236.253|2001:41d0:301:5::31|
+|Repubblica Ceca|CZ|217.182.52.81|2001:41d0:301:6::31|
+|Paesi Bassi|NL|213.32.108.83|2001:41d0:301:7::31|
+|Finlandia|FI|178.32.10.72|2001:41d0:301:8::31|
+|Lituania|LT|188.165.30.182|2001:41d0:301:9::31|
+|Germania|DE|151.80.4.219|2001:41d0:301:1::31|
+|Belgio|BE|217.182.187.17|2001:41d0:301:10::31|
+
+Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
+
+```bash
+46.105.204.31
+```
+
+Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
+
+
+
+```bash
+141.94.87.67
+```
+
 ### Cluster 051
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):

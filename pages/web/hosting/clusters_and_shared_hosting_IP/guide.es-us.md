@@ -38,7 +38,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|213.186.33.2|2001:41d0:1:1b00:213:186:33:2|
+|Francia|FR|213.186.33.2|2001:41d0:1:1b00:213:186:33:2|
 |Irlanda|IE|188.165.7.2|2001:41d0:1:1b00:188:165:7:2|
 |Portugal|PT|94.23.79.2|2001:41d0:1:1b00:94:23:79:2|
 |Reino Unido|UK|87.98.255.2|2001:41d0:1:1b00:87:98:255:2|
@@ -86,7 +86,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|213.186.33.4|2001:41d0:1:1b00:213:186:33:4|
+|Francia|FR|213.186.33.4|2001:41d0:1:1b00:213:186:33:4|
 |Irlanda|IE|188.165.7.4|2001:41d0:1:1b00:188:165:7:4|
 |Portugal|PT|94.23.79.4|2001:41d0:1:1b00:94:23:79:4|
 |Reino Unido|UK|87.98.255.4|2001:41d0:1:1b00:87:98:255:4|
@@ -134,7 +134,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|213.186.33.16|2001:41d0:1:1b00:213:186:33:16|
+|Francia|FR|213.186.33.16|2001:41d0:1:1b00:213:186:33:16|
 |Irlanda|IE|188.165.7.16|2001:41d0:1:1b00:188:165:7:16|
 |Portugal|PT|94.23.79.16|2001:41d0:1:1b00:94:23:79:16|
 |Reino Unido|UK|87.98.255.16|2001:41d0:1:1b00:87:98:255:16|
@@ -182,7 +182,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|213.186.33.17|2001:41d0:1:1b00:213:186:33:17|
+|Francia|FR|213.186.33.17|2001:41d0:1:1b00:213:186:33:17|
 |Irlanda|IE|188.165.7.17|2001:41d0:1:1b00:188:165:7:17|
 |Portugal|PT|94.23.79.17|2001:41d0:1:1b00:94:23:79:17|
 |Reino Unido|UK|87.98.255.17|2001:41d0:1:1b00:87:98:255:17|
@@ -229,7 +229,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|213.186.33.18|2001:41d0:1:1b00:213:186:33:18|
+|Francia|FR|213.186.33.18|2001:41d0:1:1b00:213:186:33:18|
 |Irlanda|IE|188.165.7.18|2001:41d0:1:1b00:188:165:7:18|
 |Portugal|PT|94.23.79.18|2001:41d0:1:1b00:94:23:79:18|
 |Reino Unido|UK|87.98.255.18|2001:41d0:1:1b00:87:98:255:18|
@@ -277,7 +277,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|213.186.33.19|2001:41d0:1:1b00:213:186:33:19|
+|Francia|FR|213.186.33.19|2001:41d0:1:1b00:213:186:33:19|
 |Irlanda|IE|188.165.7.19|2001:41d0:1:1b00:188:165:7:19|
 |Portugal|PT|94.23.79.19|2001:41d0:1:1b00:94:23:79:19|
 |Reino Unido|UK|87.98.255.19|2001:41d0:1:1b00:87:98:255:19|
@@ -325,7 +325,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|213.186.33.40|2001:41d0:1:1b00:213:186:33:40|
+|Francia|FR|213.186.33.40|2001:41d0:1:1b00:213:186:33:40|
 |Irlanda|IE|188.165.7.40|2001:41d0:1:1b00:188:165:7:40|
 |Portugal|PT|94.23.79.40|2001:41d0:1:1b00:94:23:79:40|
 |Reino Unido|UK|87.98.255.40|2001:41d0:1:1b00:87:98:255:40|
@@ -373,7 +373,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|213.186.33.48|2001:41d0:1:1b00:213:186:33:48|
+|Francia|FR|213.186.33.48|2001:41d0:1:1b00:213:186:33:48|
 |Irlanda|IE|188.165.7.48|2001:41d0:1:1b00:188:165:7:48|
 |Portugal|PT|94.23.79.48|2001:41d0:1:1b00:94:23:79:48|
 |Reino Unido|UK|87.98.255.48|2001:41d0:1:1b00:87:98:255:48|
@@ -420,7 +420,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|213.186.33.24|2001:41d0:1:1b00:213:186:33:24|
+|Francia|FR|213.186.33.24|2001:41d0:1:1b00:213:186:33:24|
 |Irlanda|IE|188.165.7.24|2001:41d0:1:1b00:188:165:7:24|
 |Portugal|PT|94.23.79.24|2001:41d0:1:1b00:94:23:79:24|
 |Reino Unido|UK|87.98.255.24|2001:41d0:1:1b00:87:98:255:24|
@@ -468,7 +468,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|213.186.33.87|2001:41d0:1:1b00:213:186:33:87|
+|Francia|FR|213.186.33.87|2001:41d0:1:1b00:213:186:33:87|
 |Irlanda|IE|188.165.7.87|2001:41d0:1:1b00:188:165:7:87|
 |Portugal|PT|94.23.79.87|2001:41d0:1:1b00:94:23:79:87|
 |Reino Unido|UK|87.98.255.87|2001:41d0:1:1b00:87:98:255:87|
@@ -516,7 +516,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|213.186.33.3|2001:41d0:1:1b00:213:186:33:3|
+|Francia|FR|213.186.33.3|2001:41d0:1:1b00:213:186:33:3|
 |Irlanda|IE|188.165.7.3|2001:41d0:1:1b00:188:165:7:3|
 |Portugal|PT|94.23.79.3|2001:41d0:1:1b00:94:23:79:3|
 |Reino Unido|UK|87.98.255.3|2001:41d0:1:1b00:87:98:255:3|
@@ -564,7 +564,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|213.186.33.50|2001:41d0:1:1b00:213:186:33:50|
+|Francia|FR|213.186.33.50|2001:41d0:1:1b00:213:186:33:50|
 |Irlanda|IE|188.165.7.50|2001:41d0:1:1b00:188:165:7:50|
 |Portugal|PT|94.23.79.50|2001:41d0:1:1b00:94:23:79:50|
 |Reino Unido|UK|87.98.255.50|2001:41d0:1:1b00:87:98:255:50|
@@ -612,7 +612,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|46.105.57.169|2001:41d0:301::20|
+|Francia|FR|46.105.57.169|2001:41d0:301::20|
 |Irlanda|IE|51.254.78.227|2001:41d0:301:3::20|
 |Portugal|PT|5.135.59.60|2001:41d0:301:2::20|
 |Reino Unido|UK|51.254.94.183|2001:41d0:301:12::20|
@@ -654,7 +654,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|188.165.53.185|2001:41d0:301::21|
+|Francia|FR|188.165.53.185|2001:41d0:301::21|
 |Irlanda|IE|188.165.6.20|2001:41d0:301:6::21|
 |Portugal|PT|94.23.75.235|2001:41d0:301:2::21|
 |Reino Unido|UK|94.23.152.220|2001:41d0:301:12::21|
@@ -693,7 +693,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|164.132.235.17|2001:41d0:301::23|
+|Francia|FR|164.132.235.17|2001:41d0:301::23|
 |Irlanda|IE|79.137.112.24|2001:41d0:301:3::23|
 |Portugal|PT|5.135.68.66|2001:41d0:301:2::23|
 |Reino Unido|UK|178.32.59.150|2001:41d0:301:12::23|
@@ -731,7 +731,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|188.165.61.82|2001:41d0:301::24|
+|Francia|FR|188.165.61.82|2001:41d0:301::24|
 |Irlanda|IE|188.165.6.81|2001:41d0:301:3::24|
 |Portugal|PT|5.135.68.67|2001:41d0:301:2::24|
 |Reino Unido|UK|178.32.59.194|2001:41d0:301:12::24|
@@ -770,7 +770,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|188.165.59.25|2001:41d0:301::25|
+|Francia|FR|188.165.59.25|2001:41d0:301::25|
 |Irlanda|IE|188.165.6.82|2001:41d0:301:3::25|
 |Portugal|PT|213.251.139.148|2001:41d0:301:2::25|
 |Reino Unido|UK|178.32.52.5|2001:41d0:301:12::2|
@@ -809,7 +809,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|87.98.154.146|2001:41d0:301::26|
+|Francia|FR|87.98.154.146|2001:41d0:301::26|
 |Irlanda|IE|188.165.4.35|2001:41d0:301:3::26|
 |Portugal|PT|51.254.64.107|2001:41d0:301:2::26|
 |Reino Unido|UK|91.134.201.112|2001:41d0:301:12::26|
@@ -848,7 +848,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|54.36.91.62|2001:41d0:301::27|
+|Francia|FR|54.36.91.62|2001:41d0:301::27|
 |Irlanda|IE|54.36.31.145|2001:41d0:301:3::27|
 |Portugal|PT|193.70.24.82|2001:41d0:301:2::27|
 |Reino Unido|UK|54.36.203.165|2001:41d0:301:12::27|
@@ -887,7 +887,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|51.91.236.193|2001:41d0:301::28|
+|Francia|FR|51.91.236.193|2001:41d0:301::28|
 |Irlanda|IE|92.222.139.190|2001:41d0:301:3::28|
 |Portugal|PT|217.182.39.251|2001:41d0:301:2::28|
 |Reino Unido|UK|193.70.71.149|2001:41d0:301:12::28|
@@ -926,7 +926,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|51.91.236.255|2001:41d0:301::29|
+|Francia|FR|51.91.236.255|2001:41d0:301::29|
 |Irlanda|IE|92.222.139.156|2001:41d0:301:3::29|
 |Portugal|PT|46.105.159.220|2001:41d0:301:2::29|
 |Reino Unido|UK|178.32.48.109|2001:41d0:301:12::29|
@@ -964,7 +964,7 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
-|Francia|ES|145.239.37.162|2001:41d0:301::30|
+|Francia|FR|145.239.37.162|2001:41d0:301::30|
 |Irlanda|IE|178.32.77.113|2001:41d0:301:3::30|
 |Portugal|PT|5.135.68.91|2001:41d0:301:2::30|
 |Reino Unido|UK|91.134.177.228|2001:41d0:301:12::30|
@@ -994,6 +994,40 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 ```bash
 51.178.146.199
+```
+
+### Cluster 031
+
+A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
+
+|País|Código del país|IPv4|IPv6|
+|---|---|----|---|
+|Francia|FR|146.59.209.152|2001:41d0:301::31|
+|Irlanda|IE|188.165.5.107|2001:41d0:301:3::31|
+|Portugal|PT|51.178.229.47|2001:41d0:301:2::31|
+|Reino Unido|UK|178.32.52.177|2001:41d0:301:12::31|
+|Italia|IT|94.23.66.84|2001:41d0:301:11::31|
+|España|ES|51.255.26.63|2001:41d0:301:4::31|
+|Polonia|PL|87.98.236.253|2001:41d0:301:5::31|
+|República Checa|CZ|217.182.52.81|2001:41d0:301:6::31|
+|Países Bajos|NL|213.32.108.83|2001:41d0:301:7::31|
+|Finlandia|FI|178.32.10.72|2001:41d0:301:8::31|
+|Lituania|LT|188.165.30.182|2001:41d0:301:9::31|
+|Alemania|DE|151.80.4.219|2001:41d0:301:1::31|
+|Bélgica|BE|217.182.187.17|2001:41d0:301:10::31|
+
+Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+46.105.204.31
+```
+
+Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
+
+
+
+```bash
+141.94.87.67
 ```
 
 ### Cluster 051
