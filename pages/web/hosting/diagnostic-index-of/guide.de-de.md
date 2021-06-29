@@ -58,7 +58,7 @@ Setzen Sie einen Haken bei `Auch die Subdomain www.mydomain.ovh ändern` und geb
 
 > [!primary]
 >
-> Den `www`-Ordner als `Wurzelverzeichnis` zu verwenden ist nicht zwingend. Sie können Ihre Website auch in einem anderen Ordner innerhalb Ihres [FTP-Speicherplatzes](verbindung-ftp-speicher-webhosting/) installieren.
+> Den `www`-Ordner als `Wurzelverzeichnis` zu verwenden ist nicht zwingend. Sie können Ihre Website auch in einem anderen Ordner innerhalb Ihres [FTP-Speicherplatzes](../verbindung-ftp-speicher-webhosting/) installieren.
 
 Klicken Sie anschließend auf `Weiter`.
 
