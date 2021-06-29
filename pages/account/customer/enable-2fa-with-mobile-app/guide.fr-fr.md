@@ -6,11 +6,11 @@ section: Sécurité
 hidden: true
 ---
 
-**Dernière mise à jour le 16/04/2020**
+**Dernière mise à jour le 28/06/2021**
 
 ## Objectif
 
-La double authentification avec le système *one-time password* (OTP) disponible via une application mobile est l'une des méthodes proposées par OVHcloud pour vous permettre de sécuriser l'accès à votre espace client. 
+La double authentification avec le système *one-time password* (OTP) disponible via une application mobile est l'une des méthodes proposées par OVHcloud pour vous permettre de sécuriser l'accès à votre espace client.
 
 **Ce guide vous permettra d'activer la double authentification par application OTP et de comprendre comment l'utiliser pour vos prochaines connexions à votre espace client.**
 
@@ -24,10 +24,10 @@ La double authentification avec le système *one-time password* (OTP) disponible
 >**Les applications mobiles OTP**
 >
 > De nombreuses applications OTP existent. En voici deux, gratuites :
-> 
+>
 > - sur Android : Free OTP ;
 > - sur iOS : OTP Auth.
-> 
+>
 
 ## En pratique
 
@@ -36,7 +36,6 @@ La double authentification avec le système *one-time password* (OTP) disponible
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur votre nom en haut à droite (1), puis sur vos initiales (2). Cliquez ensuite sur `Sécurité`{.action} (3) et enfin sur `Activer la double authentification`{.action} (4).
 
 ![2FA mobileapp](images/hub2FA.png){.thumbnail}
-
 
 ### Étape 2 : choisir la méthode par application mobile
 
@@ -52,19 +51,18 @@ Scannez le QR code via votre application OTP. Dans le champ dédié à droite de
 
 ### Étape 4 : sauvegarder les codes de sécurité
 
-Au premier ajout d'une méthode de sécurité par double authentification, des codes de secours vous seront communiqués et sont à conserver précieusement. Nous vous conseillons de les sauvegarder dans un gestionnaire de mots de passe.
+Au premier ajout d'une méthode de sécurité par double authentification, des codes de secours vous sont communiqués. **Ils sont à conserver précieusement**. Nous vous conseillons donc de les sauvegarder dans un gestionnaire de mots de passe, tel que [Keepass](https://keepass.info/){.external}.
 
-![2FA mobileapp](images/2facodes.png){.thumbnail}
+![2FA sms](images/2facodes.png){.thumbnail}
 
-Vous pourrez les supprimer ou les regénérer dans votre espace client :
+Vous pourrez les supprimer ou les regénérer depuis votre espace client.
 
-![2FA mobileapp](images/2facodesaction.png){.thumbnail}
+![2FA sms](images/2facodesaction.png){.thumbnail}
 
 > [!warning]
 >
-> Nous vous rappelons qu’il est indispensable de sauvegarder ces codes de secours et de vous assurer qu’ils sont valides. En cas d’indisponibilité de votre ou vos méthodes de sécurité sélectionnées (vol ou perte de votre téléphone ou de votre clé de sécurité), l’accès à votre espace client pourrait être bloqué.
-> 
-> 
+> Nous vous rappelons qu’il est indispensable de **sauvegarder ces codes de secours** et de vous assurer qu’ils sont valides. En cas d’indisponibilité de votre ou vos méthodes de sécurité sélectionnées (vol ou perte de votre téléphone ou de votre clé de sécurité), l’accès à votre espace client pourrait être bloqué.
+>
 
 ### Étape 5 : se connecter à l'espace client avec la double authentification
 
@@ -77,5 +75,9 @@ Tous les choix que vous avez activés apparaîtront alors :
 ![2FA mobileapp](images/2faloginchoice.png){.thumbnail}
 
 ## Aller plus loin
+
+[Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+
+[Désactiver la double authentification sur son compte OVHcloud](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/#desactivation)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
