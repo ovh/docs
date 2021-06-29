@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud e
 section: Sécurité
 ---
 
-**Dernière mise à jour le 28/06/2021**
+**Dernière mise à jour le 29/06/2021**
 
 ## Objectif
 
@@ -75,7 +75,12 @@ Si votre périphérique (téléphone mobile/smartphone/clé de sécurité) est p
 - utiliser un autre périphérique de double authentification à votre disposition, si vous en avez activé plusieurs;
 - [désactiver la double authentification](#desactivation).
 
-Si vous avez encore accès à votre espace client OVHcloud malgré la perte de votre périphérique, il est essentiel, à des fins de sécurité, de supprimer ce périphérique de la liste de ceux utilisés pour la double authentification.
+> [!alert]
+>
+>Si vous avez encore accès à votre espace client OVHcloud malgré la perte de votre périphérique, il est essentiel, à des fins de sécurité, de **supprimer ce périphérique de la liste de ceux utilisés pour la double authentification**.
+>
+>Consultez le chapitre suivant de ce guide pour plus de détails sur la suppression d'un périphérique.
+>
 
 #### Supprimer un périphérique <a name="supprimer-peripherique"></a>
 
@@ -121,10 +126,10 @@ Avant de nous contacter, vous devez réunir les éléments justificatifs suivant
 |Type de compte OVHcloud|Justificatifs à fournir|
 |---|---|
 |Particulier|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Justificatif de domicile (facture de fournisseur d'électricité, d'eau, de téléphone, etc... ) de moins de 3 mois|
-|Société|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du gérant de la société <br><br>- Extrait KBIS de moins de 3 mois (pour la Belgique : Extrait du Moniteur)|
+|Société|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du gérant de la société<br><br>- France: extrait KBIS de moins de 3 mois<br>- Belgique : extrait du Moniteur|
 |Administration|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du maire/adjoint<br><br>- Avis de situation Sirene INSEE<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services |
 |Association|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du président de l'association<br><br>- Copie du dernier PV d'assemblée générale de l'association<br><br>- Copie du récépissé de déclaration de l'association<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services|
-|Profession libérale|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Avis de situation Sirene INSEE<br><br>|
+|Profession libérale|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Avis de situation Sirene INSEE|
 
 Une fois vos justificatifs réunis, contactez le support OVHcloud au 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France).
 
