@@ -26,8 +26,9 @@ It is not possible to interact with Apache Spark cluster via command line.
 
 ### The Apache Spark job in Data Processing is limited to: 
 
-- Minimum 1 and maximum 60 GB of RAM per Executor
-- Minimum 1 and maximum 16 Cores of CPU per Executor 
+- Minimum 1 and maximum 60 GB of RAM per Executor/Driver (including the memory overhead)
+- Minimum 1 and maximum 16 Cores of CPU per Executor/Driver
+- Minimum 8 GiB and maximum 143 GiB of local storage per Executor/Driver. This resource can't be directly configured though, for each node, you will have 9 GiB of local storage per core, minus 1 GiB used by system. (eg. If your executors have 4 cores each, they will have 26 GiB of local storage each)
 - Minimum 1 and maximum 10 Executor nodes
 
 ### Supported languages for Apache Spark code
