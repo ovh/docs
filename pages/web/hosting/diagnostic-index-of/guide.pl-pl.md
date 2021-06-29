@@ -44,7 +44,7 @@ Aby wyświetlić Twoją stronę WWW, w sekcji `MultiSite` powiąż domenę z `Ka
 
 > [!primary]
 >
-> Jeśli chcesz tymczasowo powiązać domenę z `Katalog główny` niezawierającym pliku **index.php** lub **index.html**, możesz zabronić wyświetlania listy katalogów na Twojej stronie, postępując zgodnie z tym [przewodnikiem](../hosting_www_htaccess_-_inne_operacje/#blokada-listowania-zawartosci-katalogu). Możesz również chronić dostęp do Twoich katalogów za pomocą [hasła](../how_to_password_protect_a_directory_on_your_website/).
+> Jeśli chcesz tymczasowo powiązać domenę z `Katalog główny` niezawierającym pliku **index.php** lub **index.html**, możesz zabronić wyświetlania listy katalogów na Twojej stronie, postępując zgodnie z tym [przewodnikiem](../hosting_www_htaccess_-_inne_operacje/#blokada-listowania-zawartosci-katalogu). Możesz również chronić dostęp do Twoich katalogów za pomocą [hasła](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 >
 > W przypadku trudności z wdrożeniem tej konfiguracji zalecamy skorzystanie z [pomocy specjalisty](https://partner.ovhcloud.com/pl/directory/). Zespół pomocy technicznej OVH nie będzie w stanie udzielić wsparcia w przypadku jakichkolwiek zmian w wewnętrznym programowaniu Twojej strony WWW.
 

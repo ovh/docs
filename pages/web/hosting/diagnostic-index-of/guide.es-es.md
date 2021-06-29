@@ -44,7 +44,7 @@ Para mostrar su sitio web, deberá asociar su dominio a la `Carpeta raíz` que c
 
 > [!primary]
 >
-> Si desea asociar temporalmente su dominio a un `Carpeta raíz` que no contenga un archivo **index.php** o **index.html**, puede prohibir la visualización de la lista de carpetas de su sitio web siguiendo esta [guía](../what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). También puede proteger el acceso a sus carpetas con una [contraseña](../how_to_password_protect_a_directory_on_your_website/).
+> Si desea asociar temporalmente su dominio a un `Carpeta raíz` que no contenga un archivo **index.php** o **index.html**, puede prohibir la visualización de la lista de carpetas de su sitio web siguiendo esta [guía](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). También puede proteger el acceso a sus carpetas con una [contraseña](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 >
 > Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nuestro equipo de soporte no podrá ofrecerle soporte para modificar la programación interna de su sitio web.
 

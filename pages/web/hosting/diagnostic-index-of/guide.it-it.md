@@ -40,7 +40,7 @@ Per visualizzare il tuo sito Web, dalla sezione `Multisito` del tuo hosting dovr
 
 > [!primary]
 >
-> Per collegare temporaneamente il tuo dominio a una `Cartella di root` che non contiene file **index.php** o **index.html**, è possibile vietare la visualizzazione della lista delle cartelle del tuo sito seguendo questa [guida](../hosting_condiviso_altre_operazioni_possibili_con_il_file_htaccess/#impedire-il-listing-del-contenuto-di-una-directory). È inoltre possibile proteggere l'accesso alle cartelle tramite una [password](../how_to_password_protect_a_directory_on_your_website/).
+> Per collegare temporaneamente il tuo dominio a una `Cartella di root` che non contiene file **index.php** o **index.html**, è possibile vietare la visualizzazione della lista delle cartelle del tuo sito seguendo questa [guida](../hosting_condiviso_altre_operazioni_possibili_con_il_file_htaccess/#impedire-il-listing-del-contenuto-di-una-directory). È inoltre possibile proteggere l'accesso alle cartelle tramite una [password](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 >
 > In caso di difficoltà nell'implementare questa configurazione, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/). Il nostro team di supporto non sarà infatti in grado di fornirti assistenza su eventuali modifiche della programmazione interna del tuo sito.
 

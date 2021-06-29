@@ -44,7 +44,7 @@ Para apresentar o seu website, deverá, a partir da parte `Multisite` do seu alo
 
 > [!primary]
 >
-> Se pretender associar temporariamente o seu domínio a uma `Pasta raiz` que não contém um ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista de pastas do seu site seguindo este [guia](../what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). Pode também proteger o acesso às suas pastas com uma [palavra-passe](../how_to_password_protect_a_directory_on_your_website/).
+> Se pretender associar temporariamente o seu domínio a uma `Pasta raiz` que não contém um ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista de pastas do seu site seguindo este [guia](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). Pode também proteger o acesso às suas pastas com uma [palavra-passe](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 >
 > Se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). As nossas equipas de suporte não poderão fornecer-lhe assistência relativamente a qualquer alteração da programação interna do seu site.
 
