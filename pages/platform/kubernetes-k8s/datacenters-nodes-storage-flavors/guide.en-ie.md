@@ -14,7 +14,7 @@ section: Technical resources
 A Managed Kubernetes Service deploys a Kubernetes Master within a given OVHcloud datacenter.  
 All its worker nodes and persistent volumes are then deployed by the cloud controller in the same region.
 
-Currently the service is available in GRA (Western Europe), SBG (Central Europe), WAW (Eastern Europe), BHS (North America), SGP (Southeast Asia) and SYD (Oceania) regions. OVHcloud US customers can also deploy the service in both our East and West Amaerican datacenters. All your compute and storage resources will then be spawned in the dedicated region of the associated public cloud project.
+Currently the service is available in GRA (Western Europe), SBG (Central Europe), WAW (Eastern Europe), BHS (North America), SGP (Southeast Asia) and SYD (Oceania) regions. OVHcloud US customers can also deploy the service in both our East and West American datacenters. All your compute and storage resources will then be spawned in the dedicated region of the associated public cloud project.
 
 ### Available worker nodes flavors
 
