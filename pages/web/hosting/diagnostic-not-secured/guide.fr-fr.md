@@ -1,5 +1,5 @@
 ---
-title: "Que faire si mon site est considéré comme non-sécurisé ?"
+title: "Que faire en cas d'erreur « Votre connexion n'est pas privée » ?"
 slug: erreur-site-non-securise
 excerpt: "Réagir en cas de messages d'erreur liés à la sécurité de votre site"
 section: Diagnostic
@@ -18,7 +18,7 @@ Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de vo
 |Sur Edge : « Votre connexion n’est pas privée »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
 |Sur Safari : « Cette connexion n'est pas privée »|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
 
-**Découvez comment résoudre les erreurs du type "Site non sécurisée"**
+**Découvez comment résoudre les erreurs du type « Votre connexion n'est pas privée »**
 
 > [!warning]
 >
