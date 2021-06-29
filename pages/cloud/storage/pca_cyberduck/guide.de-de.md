@@ -1,31 +1,23 @@
 ---
-title: 'Verwaltung Ihres Object Storage mit CyberDuck'
-routes:
-    canonical: 'https://docs.ovh.com/de/storage/pca/cyberduck/'
-excerpt: 'Verwaltung Ihres Object Storage mit CyberDuck'
-slug: verwaltung_ihres_object_storage_mit_cyberduck
-section: 'Object Storage'
-legacy_guide_number: g1868
+title: Verwaltung von Archiven über einen Swift-Client
+slug: pca/cyberduck
+excerpt: Erfahren Sie hier, wie Sie Cyberduck konfigurieren, um Ihre Public Cloud Archive verwalten zu können
+section: Public Cloud Archive
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Stand 18.06.2021**
+**Letzte Aktualisierung am 18.06.2021**
 
 ## Ziel
 
-Bei Object Storage handelt es sich um eine Speicher-Lösung, die in erster Linie mit der OpenStack API verwaltet wird.
+Public Cloud Archive ist eine Speicherlösung, die mit OpenStack-APIs verwendet werden kann. Wenn Sie mit der Verwaltung eines Speicherplatzes über die Kommandozeile nicht vertraut sind, können Sie auch eine GUI-basierte Lösung nutzen, die auf der OpenStack-API aufsetzt.
 
-Möglicherweise sind Sie aber mit dieser Art der Speicherplatz-Verwaltung nicht vertraut, bei der Kommandozeilen verwendet werden.
+CyberDuck ist eine solche Lösung und ist einfach konfigurierbar. Es sind noch weitere grafische Interfaces verfügbar, deren Konfiguration der entsprechen sollte, die hier erklärt wird.
 
-Daher gibt es auch grafische Lösungen, bei denen die OpenStack APIs im Hintergrund und damit für Sie unsichtbar verwendet werden.
-CyberDuck ist eine dieser Lösungen und zeichnet sich durch eine hohe Benutzerfreundlichkeit aus.
-
-Es sind aber auch weitere Interfaces verfügbar und im Internet leicht auffindbar; die Konfiguration dieser Lösungen ist mit der hier beschriebenen durchaus vergleichbar.
-
-In dieser Hilfe erfahren Sie alles über die Konfiguration von CyberDuck für die Verwaltung Ihres Object Storage mithilfe eines grafischen Interfaces auf Grundlage der OpenStack APIs.
+**Diese Anleitung erklärt, wie Sie Cyberduck konfigurieren, um Public Cloud Archive über ein grafisches Interface auf OpenStack-Basis zu verwalten.**
 
 ## Voraussetzungen
 
