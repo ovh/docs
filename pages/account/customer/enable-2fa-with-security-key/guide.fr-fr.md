@@ -6,7 +6,7 @@ section: Sécurité
 hidden: true
 ---
 
-**Dernière mise à jour le 16/04/2020**
+**Dernière mise à jour le 28/06/2021**
 
 ## Objectif
 
@@ -29,7 +29,6 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 ![2FA securitykey](images/hub2FA.png){.thumbnail}
 
-
 ### Étape 2 : Choisir la méthode par clé de sécurité
 
 Choisissez la méthode par clé de sécurité et validez.
@@ -48,19 +47,18 @@ Une fois la clé reconnue, vous pouvez également ajouter une description. Celle
 
 ### Étape 4 : sauvegarder les codes de sécurité
 
-Au premier ajout d'une méthode de sécurité par double authentification, des codes de secours vous sont communiqués. Ils sont à conserver précieusement. Nous vous conseillons donc de les sauvegarder dans un gestionnaire de mots de passe.
+Au premier ajout d'une méthode de sécurité par double authentification, des codes de secours vous sont communiqués. **Ils sont à conserver précieusement**. Nous vous conseillons donc de les sauvegarder dans un gestionnaire de mots de passe, tel que [Keepass](https://keepass.info/){.external}.
 
-![2FA securitykey](images/2facodes.png){.thumbnail}
+![2FA sms](images/2facodes.png){.thumbnail}
 
-Vous pourrez les supprimer ou les regénérer dans votre espace client.
+Vous pourrez les supprimer ou les regénérer depuis votre espace client.
 
-![2FA securitykey](images/2facodesaction.png){.thumbnail}
+![2FA sms](images/2facodesaction.png){.thumbnail}
 
 > [!warning]
 >
-> Nous vous rappelons qu’il est indispensable de sauvegarder ces codes de secours et de vous assurer qu’ils sont valides. En cas d’indisponibilité de votre ou vos méthodes de sécurité sélectionnées (vol ou perte de votre téléphone ou de votre clé de sécurité), l’accès à votre espace client pourrait être bloqué.
-> 
-> 
+> Nous vous rappelons qu’il est indispensable de **sauvegarder ces codes de secours** et de vous assurer qu’ils sont valides. En cas d’indisponibilité de votre ou vos méthodes de sécurité sélectionnées (vol ou perte de votre téléphone ou de votre clé de sécurité), l’accès à votre espace client pourrait être bloqué.
+>
 
 ### Étape 5 : se connecter à l'espace client avec la double authentification
 
@@ -73,6 +71,10 @@ Tous les choix que vous avez activés apparaîtront alors.
 ![2FA securitykey](images/2faloginchoice.png){.thumbnail}
 
 ## Aller plus loin
+
+[Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+
+[Désactiver la double authentification sur son compte OVHcloud](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/#desactivation)
 
 Le site officiel de la [FIDO Alliance](https://fidoalliance.org/){.external}.
 
