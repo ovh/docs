@@ -96,23 +96,37 @@ Plusieurs cas sont possibles :
 |Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
 |La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} n'apparaît pas dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/)|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
 |La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} apparaît dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/), mais aucun de vos hébergements ne possèdent cette adresse IP|Vérifiez que vous ne possédez un hébergement sous cette adresse dans l'un de vos autres [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
-|L'adresse IP indiquée dans la zone DNS active de votre domaine correspond à celle de votre hébergement mutualisé|Passez à [l'étape 2](#etape2)|
+|L'adresse IP indiquée dans la zone DNS active de votre domaine correspond à celle de votre hébergement mutualisé.|Passez à [l'étape 2](#etape2).|
 
 ### Étape 2 : Vérifiez le certificat SSL de votre hébergement <a name="etape2"></a>
 
+Dans l'onglet `Informations générales`{.action} de votre hébergement, vérifiez la partie `Certificat SSL` :
 
+![ssl-certificate-in-general-tab](images/ssl-certificate-in-general-tab.png){.thumbnail}
 
 #### Scénario 1 : Votre hébergement ne contient pas de certificat SSL
 
-LIen vers page commercial et guides d'activation
+Suivez ce [guide](../les-certificats-ssl-sur-les-hebergements-web/), afin d'activer un certificat SSL sur votre hébergement OVHcloud.
 
 #### Scénario 2 : Le certificat SSL de votre hébergement ne fonctionne pas
 
-Vérifier activation ds le multisite
+Activez l'option SSL dans le `Multisite`{.action} de votre hébergement selon ce [document](../les-certificats-ssl-sur-les-hebergements-web/#activer-un-certificat-ssl-sur-un-multisite.) 
 
-Retrouver mail de renouvellement du ssl sectigo > rappeler Sectigo si besoin
+> [!primary]
+>
+> Si vous disposez d'un certificat SSL importé et que celui-ci ne fonctionne pas, contactez son fournisseur, afin d'en vérifier la validité.
+>
+> Si vous avez commandé l'un des [certificats SSL payants de notre partenaire SECTIGO](https://www.ovh.com/fr/ssl/), vérifiez que vous n'avez pas reçu un e-mail sur votre adresse de contact avec OVHcloud indiquant que votre abonnement est arrivé à expiration et contactez, si besoin, le [support de SECTIGO](https://sectigo.com/support){.external}.
+>
+> (Pour retrouver l'ensemble des e-mails envoyés par nos services, cliquez en haut à droite de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis sur `E-mails de service`{.action}) :
+>
+>![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
+
+[Gérer un certificat SSL sur son hébergement web](../les-certificats-ssl-sur-les-hebergements-web/)
+
+[Passer son site internet en HTTPS grâce au SSL](../passer-site-internet-https-ssl/)
 
 [Résoudre l’erreur « Site non installé »](../erreur-site-non-installe/)
 
