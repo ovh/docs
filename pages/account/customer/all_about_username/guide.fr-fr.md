@@ -56,7 +56,7 @@ Une fois le code saisi et validé, complétez la suite du formulaire. Veillez no
 
 Votre compte créé, vous serez automatiquement connecté sur la page d'accueil, appelé « Tableau de bord », de votre compte.
 
-Votre identifiant client est noté en haut à droite sous votre nom et votre adresse e-mail.
+Votre identifiant client est affiché en haut à droite sous votre nom et votre adresse e-mail.
 <br>Prenez-en bien note car vous en aurez besoin pour chaque connexion à votre compte.
 
 ![identifiant client](images/nic-handle.png){.thumbnail}
@@ -116,7 +116,7 @@ Votre identifiant client est renseigné en haut à droite sur toutes vos facture
 #### Sur mon espace client
 
 Vous pouvez retrouver votre identifiant dans votre espace client, en cliquant sur votre nom en haut à droite.
-<br>Il se trouve sous votre adresse e-mail.
+<br>Il est affiché sous votre adresse e-mail.
 
 ![identifiant client](images/nic-handle.png){.thumbnail}
 
