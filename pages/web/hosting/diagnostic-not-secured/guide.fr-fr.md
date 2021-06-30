@@ -9,7 +9,7 @@ section: Diagnostic
  
 ## Objectif <a name="objectif"></a>
 
-Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent que votre hébergement web ne contient pas de certificat SSL (si votre site n'affiche pas l'une des anomalies décrites dans ce guide, consultez la section [Aller plus loin](#aller-plus-loin)) : 
+Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent que votre hébergement web ne contient pas de [certificat SSL](../les-certificats-ssl-sur-les-hebergements-web/) (si votre site n'affiche pas l'une des anomalies décrites dans ce guide, consultez la section [Aller plus loin](#aller-plus-loin)) : 
 
 |Navigateur|Erreur concernée|
 |-|---|
@@ -29,22 +29,22 @@ Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de vo
 
 ## Prérequis
 
-- Avoir la gestion de ses serveurs et de sa zone [DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns)
-- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/)
+- Avoir la gestion des serveurs et de la zone [DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) de votre domaine
+- Héberger votre site [offre d'hébergement web mutualisée OVHcloud](https://www.ovh.com/fr/hebergement-web/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
  
 ## En pratique
 
 Afin de résoudre cette anomalie, vous devrez : 
 
-1. Déterminer l'hébergement auquel est relié votre domaine, afin d'être certain d'intervenir sur le bon serveur.
-2. Créer, activer ou renouveler un certificat SSL sur ce serveur.
+1. Déterminer l'hébergement auquel est relié votre nom de domaine, afin d'être certain d'intervenir sur le bon serveur.
+2. Créer, activer ou renouveler un [certificat SSL](../les-certificats-ssl-sur-les-hebergements-web/) pour votre domaine sur l'hébergement concerné.
 
 ### Étape 1 : Vérifiez l'hébergement auquel est relié votre nom de domaine
 
-#### Vérifiez l'adresse IP de la zone DNS
+#### Vérifiez l'adresse IP dans la zone DNS
 
-Les messages d'erreur indiqués dans la partie [Objectif](#objectif) ne sont pas caractéristiques d'un serveur d'hébergement OVHcloud. Vous devez donc vérifier, dans un premier temps, le serveur auquel est relié votre domaine.
+Les messages d'erreur indiqués dans la partie [Objectif](#objectif) ne sont pas caractéristiques d'un [hébergement mutualisé OVHcloud](https://www.ovh.com/fr/hebergement-web/). Vous devez donc vérifier, dans un premier temps, le serveur auquel est relié votre [nom de domaine](https://www.ovh.com/world/domains/).
 
 Pour retrouver l'adresse IP de l'hébergement auquel votre nom de domaine est lié, cliquez en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}, puis sur le domaine de votre site : 
 
@@ -64,19 +64,21 @@ Puis sur l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de type `A`
 >
 > ![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}
 >
-> Cela signifie que votre domaine n'est pas géré depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans ce cas de figure, contactez vos prestataires ou les anciens responsables de votre site, afin de retrouver l'adresse IP contenue dans la `Zone DNS`{.action} active de votre domaine.
+> Cela signifie que votre domaine n'est pas géré depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans ce cas de figure, contactez votre webmaster ou ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/), afin de retrouver l'adresse IP contenue dans la `Zone DNS`{.action} active de votre domaine.
 
 #### Vérifiez l'adresse IP de l'hébergement
 
-Dans cette étape, vous vérifierez que l'adresse IP indiquée dans la zone DNS de votre domaine est bien identique à celle de votre hébergement.
+Dans cette étape, vous vérifierez que l'adresse IP indiquée dans la [Zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) est bien identique à celle de l'hébergement de votre site.
 
-Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une tierce personne, contactez le support de l'hébergeur ou le prestataire concerné, afin d'obtenir l'adresse IP du serveur hébergeant votre site.
+Deux situations sont possibles : 
 
-Si votre site est hébergé sur l'une de vos offres mutualisées OVHcloud, cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'hébergement concerné.
+1. Votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une tierce personne. Dans ce cas, contactez le support de l'hébergeur ou le prestataire concernés, afin d'obtenir l'adresse IP du serveur hébergeant votre site.
+
+2. Votre site est hébergé sur l'une de vos offres mutualisées OVHcloud : cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'hébergement concerné.
 
 ![hosting-menu](images/hosting-menu.png){.thumbnail}
 
-Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou IPV6 de votre domaine, 
+Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IPV6 de votre domaine, 
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
@@ -87,13 +89,13 @@ Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou I
 
 #### Effectuez les actions nécessaires
 
-Plusieurs cas sont possibles : 
+Plusieurs cas sont possibles :
 
 |Scénario|Action à entreprendre|
 |---|---|
 |Les `Serveurs DNS`{.action} n'apparaissent pas sous la forme **« nsX.ovh.net »** ou **« dnsX.ovh.net »**. Cela signifie que la `Zone DNS`{.action} active de votre domaine ne se trouve pas sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :![external-dns-servers](images/external-dns-servers.png){.thumbnail}|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
 |La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} n'apparaît pas dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/)|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
-|La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} apparaît dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/), mais aucun de vos hébergements ne possèdent cette adresse IP|Vérifiez que vous ne possédez un hébergement sous cette adresse dans l'un de vos autres [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
+|La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} apparaît dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/), mais aucun de vos hébergements ne possèdent cette adresse IP|Vérifiez que vous ne possédez pas un hébergement sous cette adresse dans l'un de vos autres [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
 |L'adresse IP indiquée dans la zone DNS active de votre domaine correspond à celle de votre hébergement mutualisé.|Passez à [l'étape 2](#etape2).|
 
 ### Étape 2 : Vérifiez le certificat SSL de votre hébergement <a name="etape2"></a>
@@ -104,7 +106,7 @@ Dans l'onglet `Informations générales`{.action} de votre hébergement, vérifi
 
 #### Scénario 1 : Votre hébergement ne contient pas de certificat SSL
 
-Suivez ce [guide](../les-certificats-ssl-sur-les-hebergements-web/), afin d'activer un certificat SSL sur votre hébergement OVHcloud.
+Suivez ce [guide](../les-certificats-ssl-sur-les-hebergements-web/), afin d'activer un certificat SSL sur votre hébergement.
 
 #### Scénario 2 : Le certificat SSL de votre hébergement ne fonctionne pas
 
@@ -112,13 +114,17 @@ Activez l'option SSL dans le `Multisite`{.action} de votre hébergement selon ce
 
 > [!primary]
 >
-> Si vous disposez d'un certificat SSL importé et que celui-ci ne fonctionne pas, contactez son fournisseur, afin d'en vérifier la validité.
+> Si vous disposez d'un certificat SSL importé et que celui-ci ne fonctionne pas, contactez son fournisseur.
 >
-> Si vous avez commandé l'un des [certificats SSL payants de notre partenaire SECTIGO](https://www.ovh.com/fr/ssl/), vérifiez que vous n'avez pas reçu un e-mail sur votre adresse de contact avec OVHcloud indiquant que votre abonnement est arrivé à expiration et contactez, si besoin, le [support de SECTIGO](https://sectigo.com/support){.external}.
+> Si vous avez commandé l'un des [certificats SSL payants](https://www.ovh.com/fr/ssl/) de notre partenaire [SECTIGO](https://sectigo.com/){.external}, vérifiez que vous n'avez pas reçu un e-mail sur votre adresse de contact avec OVHcloud indiquant que votre certificat est arrivé à expiration. Si besoin, Contactez le [support de SECTIGO](https://sectigo.com/support){.external} à ce sujet.
 >
-> (Pour retrouver l'ensemble des e-mails envoyés par nos services, cliquez en haut à droite de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis sur `E-mails de service`{.action}) :
+
+> [!primary]
+>
+> Pour retrouver l'ensemble des e-mails envoyés par nos services, cliquez en haut à droite de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis sur `E-mails de service`{.action}) :
 >
 >![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
+>
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
