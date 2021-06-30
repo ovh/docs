@@ -9,10 +9,11 @@ section: Diagnostics
 
 ## Objective
 
-At some point during the life of your Managed Kubernetes cluster, you may encounter the following error which prevents you from altering resources:
+At some point during the life of your Managed Kubernetes cluster, you may encounter one of the following errors which prevent you from altering resources:
 
 ```log
-"Error from server: rpc error: code = Unknown desc = ETCD storage quota exceeded"
+rpc error: code = Unknown desc = ETCD storage quota exceeded
+rpc error: code = Unknown desc = quota computation: etcdserver: not capable
 ```
 
 **This guide will show you how to debug and resolve this situation.**
@@ -45,26 +46,28 @@ The most common cases of ETCD quota issues come from a bad configuration of [cer
 
 This behaviour will fill the ETCD with resources until the quota is reached.
 
-To verify if you are in this situation, you can get the number of `certificaterequest` resources:
+To verify if you are in this situation, you can get the number of `certificaterequest` and `order.acme` resources:
 
 ```bash
-kubectl get certificaterequests -A | wc -l
+kubectl get certificaterequest.cert-manager.io -A | wc -l
+kubectl get order.acme.cert-manager.io -A | wc -l
 ```
 
-If you have a huge number of certificate requests (+1000 for example), you have found the root cause.
+If you have a huge number (hundreds or more) of those resources requests, you have found the root cause.
 
 To resolve the situation, we propose the following method:
 
 - Stopping cert-manager
 
 ```bash
-kubectl scale deployment --replicas 0 cert-manager
+kubectl -n <your_cert_manager_namespace> scale deployment --replicas 0 cert-manager
 ```
 
-- Flushing all certificaterequests resources
+- Flushing all `certificaterequest` and `order.acme` resources
 
 ```bash
-kubectl delete certificaterequests --all
+kubectl delete certificaterequest.cert-manager.io -A --all
+kubectl delete order.acme.cert-manager.io -A --all
 ```
 
 - Updating cert-manager
