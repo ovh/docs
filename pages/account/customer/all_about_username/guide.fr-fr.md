@@ -219,7 +219,7 @@ Ainsi, non seulement votre propre accès au compte restera sécurisé par la dou
 
 En tant qu'utilisateur principal du compte, vous restez gestionnaire des utilisateurs et de leurs droits.
 
-Pour en savoir davantage, consultez le [le guide sur la gestion des utilisateurs](https://docs.ovh.com/fr/customer/gestion-utilisateurs/).
+Pour en savoir davantage, consultez le [guide sur la gestion des utilisateurs](https://docs.ovh.com/fr/customer/gestion-utilisateurs/).
 
 #### Gérer les contacts
 
