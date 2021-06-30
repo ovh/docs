@@ -5,9 +5,9 @@ excerpt: "Réagir en cas de messages d'erreur liés à la sécurité de votre si
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 28/06/2021**
+**Dernière mise à jour le 30/06/2021**
  
-## Objectif
+## Objectif <a name="objectif"></a>
 
 Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent que votre hébergement web ne contient pas de certificat SSL (si votre site n'affiche pas l'une des anomalies décrites dans ce guide, consultez la section [Aller plus loin](#aller-plus-loin)) : 
 
@@ -30,28 +30,53 @@ Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de vo
 ## Prérequis
 
 - Avoir la gestion de ses serveurs et de sa zone [DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns)
-- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/)
+- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
  
 ## En pratique
 
+Afin de résoudre cette anomalie, vous devrez : 
+
+1. Déterminer l'hébergement auquel est relié votre domaine, afin d'être certain d'intervenir sur le bon serveur.
+2. Créer, activer ou renouveler un certificat SSL sur ce serveur.
+
 ### Étape 1 : Vérifiez l'hébergement auquel est relié votre nom de domaine
+
+#### Vérifiez l'adresse IP de la zone DNS
+
+Les messages d'erreur indiqués dans la partie [Objectif](#objectif) ne sont pas caractéristiques d'un serveur d'hébergement OVHcloud. Vous devez donc vérifier, dans un premier temps, le serveur auquel est relié votre domaine.
 
 Pour retrouver l'adresse IP de l'hébergement auquel votre nom de domaine est lié, cliquez en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}, puis sur le domaine de votre site : 
 
 ![click-on-domain-name](images/click-on-domain-name.png){.thumbnail}
 
-Cliquez ensuite sur l'onglet `Serveurs DNS`{.action}, puis `Zone DNS`{.action} :
+Cliquez ensuite sur l'onglet `Serveurs DNS`{.action} et notez les serveurs indiqués :
+
+![dns-tabs](images/dns-tabs.png){.thumbnail}
+
+Puis sur l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de type `A` pour votre domaine :
 
 ![dns-tabs](images/dns-tabs.png){.thumbnail}
 
 > [!warning]
 >
-> 
+> Si l'onglet `Serveurs DNS`{.action} n'apparaît pas dans cette partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et que votre `Domaine`{.action} s'y affiche de la façon suivante : 
 >
-> 
+> ![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}
+>
+> Cela signifie que votre domaine n'est pas géré depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans ce cas de figure, contactez vos prestataires ou les anciens responsables de votre site, afin de retrouver l'adresse IP contenue dans la `Zone DNS`{.action} active de votre domaine.
 
-Dans cette étape, vous allez retrouver l'adresse IP de votre hébergement, puis l'ajouter à votre `Zone DNS`{.action}.
+Plusieurs cas sont possibles : 
+
+|Scénario|Action à entreprendre|
+|---|---|
+|Les `Serveurs DNS`{.action} n'apparaissent pas sous la forme **« nsX.ovh.net »** ou **« dnsX.ovh.net »**. Cela signifie que la `Zone DNS`{.action} active de votre domaine ne se trouve pas sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
+|La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} n'apparaît pas dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/)|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
+|La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} apparaît dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/), mais aucun de vos hébergements ne possèdent cette adresse IP|Vérifiez dans vos autres [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.||
+
+#### Vérifiez l'adresse IP de l'hébergement
+
+Dans cette étape, vous vérifierez que l'adresse IP indiquée dans la zone DNS de votre domaine est bien identique à celle de votre hébergement.
 
 Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une tierce personne, contactez le support de l'hébergeur ou le prestataire concerné, afin d'obtenir l'adresse IP du serveur hébergeant votre site.
 
@@ -63,21 +88,21 @@ Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou I
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
-Puis reportez-la dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`. Patientez enfin 24 heures au maximum (délai technique maximum de propagation des modifications dans la `Zone DNS`{.action}).
-
-Ajoutez infos troubleshoot sur Sectigo
+Puis reportez-la, si besoin, dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`. Patientez enfin 24 heures au maximum (délai technique maximum de propagation des modifications dans la `Zone DNS`{.action}).
 
 ### Étape 2 : Vérifiez le certificat SSL de votre hébergement
 
-#### Scénario 1 : 
 
-#### Scénario 2 : 
 
-#### Scénario 3 : 
+#### Scénario 1 : Votre hébergement ne contient pas de certificat SSL
 
-#### Scénario 4 : 
+LIen vers page commercial et guides d'activation
 
-### Étape 3 : Vérifiez la zone DNS <a name="etape3"></a>
+#### Scénario 2 : Le certificat SSL de votre hébergement ne fonctionne pas
+
+Vérifier activation ds le multisite
+
+Retrouver mail de renouvellement du ssl sectigo > rappeler Sectigo si besoin
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
