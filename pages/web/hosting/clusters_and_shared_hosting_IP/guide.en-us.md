@@ -951,6 +951,38 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 51.178.146.199
 ```
 
+## Cluster 031
+
+#### Cluster IP addresses per country
+
+|Country|Country Code|IPv4|IPv6|
+|---|---|----|---|
+|France|FR|146.59.209.152|2001:41d0:301::31|
+|Ireland|IE|188.165.5.107|2001:41d0:301:3::31|
+|Portugal|PT|51.178.229.47|2001:41d0:301:2::31|
+|United Kingdom|UK|178.32.52.177|2001:41d0:301:12::31|
+|Italy|IT|94.23.66.84|2001:41d0:301:11::31|
+|Spain|ES|51.255.26.63|2001:41d0:301:4::31|
+|Poland|PL|87.98.236.253|2001:41d0:301:5::31|
+|Czech Republic|CZ|217.182.52.81|2001:41d0:301:6::31|
+|Netherlands|NL|213.32.108.83|2001:41d0:301:7::31|
+|Finland|FI|178.32.10.72|2001:41d0:301:8::31|
+|Lithuania|LT|88.165.30.182|2001:41d0:301:9::31|
+|Germany|DE|151.80.4.219|2001:41d0:301:1::31|
+|Belgium|BE|217.182.187.17|2001:41d0:301:10::31|
+
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.31
+```
+
+If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
+
+```bash
+141.94.87.67
+```
+
 ## Cluster 051
 
 #### Cluster IP addresses per country

@@ -6,7 +6,7 @@ section: Sécurité
 hidden: true
 ---
 
-**Dernière mise à jour le 15/04/2020**
+**Dernière mise à jour le 28/06/2021**
 
 ## Objectif
 
@@ -28,7 +28,6 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 ![2FA sms](images/hub2FA.png){.thumbnail}
 
-
 ### Étape 2 : choisir la méthode par SMS
 
 Choisissez la méthode par SMS et validez.
@@ -38,7 +37,6 @@ Choisissez la méthode par SMS et validez.
 Renseignez votre numéro de téléphone mobile au format international (par exemple, +33612345678) et validez.
 
 ![2FA sms](images/2fasms2.png){.thumbnail}
-
 
 ### Étape 3 : valider la double authentification
 
@@ -56,7 +54,7 @@ La double authentification est maintenant activée. L'ajout d'autres numéros es
 
 ### Étape 4 : sauvegarder les codes de sécurité
 
-Au premier ajout d'une méthode de sécurité par double authentification, des codes de secours vous sont communiqués. Ils sont à conserver précieusement. Nous vous conseillons donc de les sauvegarder dans un gestionnaire de mots de passe.
+Au premier ajout d'une méthode de sécurité par double authentification, des codes de secours vous sont communiqués. **Ils sont à conserver précieusement**. Nous vous conseillons donc de les sauvegarder dans un gestionnaire de mots de passe, tel que [Keepass](https://keepass.info/){.external}.
 
 ![2FA sms](images/2facodes.png){.thumbnail}
 
@@ -66,10 +64,8 @@ Vous pourrez les supprimer ou les regénérer depuis votre espace client.
 
 > [!warning]
 >
-> Nous vous rappelons qu’il est indispensable de sauvegarder ces codes de secours et de vous assurer qu’ils sont valides. En cas d’indisponibilité de votre ou vos méthodes de sécurité sélectionnées (vol ou perte de votre téléphone ou de votre clé de sécurité), l’accès à votre espace client pourrait être bloqué.
-> 
-> 
-
+> Nous vous rappelons qu’il est indispensable de **sauvegarder ces codes de secours** et de vous assurer qu’ils sont valides. En cas d’indisponibilité de votre ou vos méthodes de sécurité sélectionnées (vol ou perte de votre téléphone ou de votre clé de sécurité), l’accès à votre espace client pourrait être bloqué.
+>
 
 ### Étape 5 : se connecter à l'espace client avec la double authentification
 
@@ -81,7 +77,10 @@ Tous les choix que vous avez activés apparaîtront alors.
 
 ![2FA sms](images/2faloginchoice.png){.thumbnail}
 
-
 ## Aller plus loin
+
+[Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+
+[Désactiver la double authentification sur son compte OVHcloud](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/#desactivation)
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
