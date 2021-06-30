@@ -56,19 +56,19 @@ Cliquez ensuite sur l'onglet `Serveurs DNS`{.action} et notez les serveurs indiq
 
 Puis ciquez sur l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de type `A` pour votre domaine :
 
-![zonedns_ip2](images/zonedns_ip2.png){.thumbnail}
+![zone-dns-ip](images/zone-dns-ip.png){.thumbnail}
 
 > [!warning]
 >
 > Si l'onglet `Serveurs DNS`{.action} n'apparaît pas dans cette partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et que votre domaine s'y affiche de la façon suivante : 
 >
-> ![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}
+> ![domain-not-on-control-panel](images/domain-not-on-control-panel.png){.thumbnail}
 >
 > Cela signifie que votre domaine n'est pas géré depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans ce cas de figure, contactez votre webmaster ou ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/), afin de retrouver l'adresse IP contenue dans la `Zone DNS`{.action} active de votre domaine.
 
 #### vérifier l'adresse IP de l'hébergement
 
-IL vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) est bien identique à celle de l'hébergement de votre site.
+Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) est bien identique à celle de l'hébergement de votre site.
 
 Deux situations sont possibles : 
 
@@ -87,7 +87,7 @@ Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IP
 > Si vous souhaitez relier votre domaine à cet hébergement, reportez-la dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une entrée de type `A`.
 >
 
-#### Effectuez les actions nécessaires
+#### effectuer les actions nécessaires
 
 Plusieurs cas sont possibles :
 
@@ -106,7 +106,7 @@ Dans l'onglet `Informations générales`{.action} de votre hébergement, vérifi
 
 #### Scénario 1 : Votre hébergement ne contient pas de certificat SSL
 
-Activez un certificat SSL sur votre hébergement en suivant les instructions de ce [guide](../les-certificats-ssl-sur-les-hebergements-web/).
+Activez un [certificat SSL](https://www.ovh.com/fr/ssl/) sur votre hébergement en suivant les instructions de ce [guide](../les-certificats-ssl-sur-les-hebergements-web/).
 
 #### Scénario 2 : Le certificat SSL de votre hébergement ne fonctionne pas
 
@@ -114,7 +114,7 @@ Si vous avez généré un **certificat SSL « Let's Encrypt »**, activez l'opti
 
 Si vous disposez d'un **certificat SSL importé** et que celui-ci ne fonctionne pas, contactez son fournisseur.
 
-Si vous avez commandé l'un des **[certificats SSL payants](https://www.ovh.com/fr/ssl/)** de notre partenaire [SECTIGO](https://sectigo.com/){.external}, vérifiez que vous n'avez pas reçu un e-mail vous proposant de le renouveler. Si besoin, contactez le [support de SECTIGO](https://sectigo.com/support){.external} à ce sujet.
+Si vous avez commandé l'un des **certificats SSL payants** de notre partenaire [SECTIGO](https://sectigo.com/){.external}, vérifiez que vous n'avez pas reçu un e-mail vous proposant de le renouveler. Si besoin, contactez le [support de SECTIGO](https://sectigo.com/support){.external} à ce sujet.
 
 > [!primary]
 >
