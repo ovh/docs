@@ -87,9 +87,9 @@ We recommend you to take the following steps to troubleshoot your cert-manager, 
 If cert-manager is not the root cause, you should turn to the other running operators which create kubernetes resources.
 
 We have found that the following resources can sometimes be generated continuously by existing operators:
-<br>backups.velero.io
-<br>ingress.networking.k8s.io
-<br>ingress.extensions
+- `backups.velero.io`
+- `ingress.networking.k8s.io`
+- `ingress.extensions`
 
 If that still does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.
 
