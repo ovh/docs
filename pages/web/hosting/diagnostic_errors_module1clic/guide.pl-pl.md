@@ -43,7 +43,7 @@ Utworzenie [modułu za pomocą 1 kliknięcia](../hosting_www_przewodniki_dotycza
 
 Jeśli pojawi się ta wiadomość po uruchomieniu instalacji modułu, nie można utworzyć nowej bazy danych na Twoim hostingu.
 
-#### Roztwór 1: zmień ofertę hostingu
+#### Rozdział 1: zmień ofertę hostingu
 
 > [!primary]
 >
@@ -56,7 +56,7 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 Dzięki ofercie [Hosting Pro](https://www.ovh.pl/hosting/hosting-pro.xml) i [Hosting Performance](https://www.ovh.pl/hosting/hosting-performance.xml) możesz utworzyć do trzech modułów za pomocą 1 kliknięcia. Wraz z pakietem **Hosting Performance** będziesz mógł włączyć za darmo prywatny [serwer SQL](https://www.ovh.pl/hosting/opcje-sql.xml).
 
-#### Roztwór 2: usuń niewykorzystaną bazę danych <a name="delete-database"></a>
+#### Rozdział 2: usuń niewykorzystaną bazę danych <a name="delete-database"></a>
 
 > [!warning]
 >
@@ -67,7 +67,7 @@ Aby usunąć bazę danych, w [Panelu klienta OVHcloud](https://www.ovh.com/auth/
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
 
-#### Roztwór 3: zamów nowe bazy danych
+#### Rozdział 3: zamów nowe bazy danych
 
 W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij `Web Cloud`{.action}, a następnie `Hosting`{.action}. W `Bazach danych`{.action} kliknij `Operacje`{.action}:
 
@@ -78,7 +78,7 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 > Zapoznaj się z porównaniem naszych [ofert baz danych](https://www.ovh.pl/hosting/opcje-sql.xml)
 >
 
-#### Roztwór 4: zainstalować moduł na bazie danych
+#### Rozdział 4: zainstalować moduł na bazie danych
 
 Aby zainstalować moduł na bazie danych, której już używasz, użyj zaawansowanego[ ](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#instalacja-w-trybie-zaawansowanym)trybu instalacji nowego **modułu za pomocą 1 kliknięcia**.
 
