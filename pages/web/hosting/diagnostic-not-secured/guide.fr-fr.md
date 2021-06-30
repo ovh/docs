@@ -52,11 +52,11 @@ Pour retrouver l'adresse IP de l'hébergement auquel votre nom de domaine est li
 
 Cliquez ensuite sur l'onglet `Serveurs DNS`{.action} et notez les serveurs indiqués :
 
-![dns-tabs](images/dns-tabs.png){.thumbnail}
+![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
 Puis sur l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de type `A` pour votre domaine :
 
-![dns-tabs](images/dns-tabs.png){.thumbnail}
+![zonedns_ip2](images/zonedns_ip2.png){.thumbnail}
 
 > [!warning]
 >
@@ -65,14 +65,6 @@ Puis sur l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de type `A`
 > ![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}
 >
 > Cela signifie que votre domaine n'est pas géré depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans ce cas de figure, contactez vos prestataires ou les anciens responsables de votre site, afin de retrouver l'adresse IP contenue dans la `Zone DNS`{.action} active de votre domaine.
-
-Plusieurs cas sont possibles : 
-
-|Scénario|Action à entreprendre|
-|---|---|
-|Les `Serveurs DNS`{.action} n'apparaissent pas sous la forme **« nsX.ovh.net »** ou **« dnsX.ovh.net »**. Cela signifie que la `Zone DNS`{.action} active de votre domaine ne se trouve pas sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
-|La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} n'apparaît pas dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/)|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
-|La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} apparaît dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/), mais aucun de vos hébergements ne possèdent cette adresse IP|Vérifiez dans vos autres [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.||
 
 #### Vérifiez l'adresse IP de l'hébergement
 
@@ -88,9 +80,25 @@ Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou I
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
-Puis reportez-la, si besoin, dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`. Patientez enfin 24 heures au maximum (délai technique maximum de propagation des modifications dans la `Zone DNS`{.action}).
+> [!primary]
+>
+> Si vous souhaitez relier votre domaine à cet hébergement, reportez-la dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une entrée de type `A`.
+>
 
-### Étape 2 : Vérifiez le certificat SSL de votre hébergement
+#### Effectuez les actions nécessaires
+
+Plusieurs cas sont possibles : 
+
+|Scénario|Action à entreprendre|
+|---|---|
+|Les `Serveurs DNS`{.action} n'apparaissent pas sous la forme **« nsX.ovh.net »** ou **« dnsX.ovh.net »**. Cela signifie que la `Zone DNS`{.action} active de votre domaine ne se trouve pas sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+![external-dns-servers](images/external-dns-servers.png){.thumbnail}
+|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
+|La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} n'apparaît pas dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/)|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
+|La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} apparaît dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/), mais aucun de vos hébergements ne possèdent cette adresse IP|Vérifiez que vous ne possédez un hébergement sous cette adresse dans l'un de vos autres [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
+|L'adresse IP indiquée dans la zone DNS active de votre domaine correspond à celle de votre hébergement mutualisé|Passez à [l'étape 2](#etape2)|
+
+### Étape 2 : Vérifiez le certificat SSL de votre hébergement <a name="etape2"></a>
 
 
 
