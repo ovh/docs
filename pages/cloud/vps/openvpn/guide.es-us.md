@@ -1,128 +1,147 @@
 ---
-title: 'Implementación un servidor OpenVPN con un solo click'
-excerpt: 'Cómo implementar un servidor OpenVPN en un solo clic'
+title: 'Desplegar un servidor OpenVPN'
 slug: openvpn
+excerpt: 'Cómo instalar un servidor OpenVPN en un VPS'
 section: 'Uso avanzado'
 ---
 
-## Objectivo
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
 
-OpenVPN es un software que le brinda la posibilidad de crear una Red Virtual Privada (VPN).
+**Última actualización: 24/6/2021**
+
+## Objetivo
+
+OpenVPN es un programa que le permite crear una red privada virtual (VPN). Utilizando la plantilla VPS de OVHcloud para un servidor OpenVPN, podrá instalar y utilizar su servicio VPN personal en pocos pasos.
+
+**Esta guía explica cómo crear su propio servicio VPN con un VPS y OpenVPN.**
 
 ## Requisitos
 
-- Acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
-- un [servicio OVHcloud VPS](https://www.ovh.com/world/es/vps/){.external}
+- Tener un [VPS](https://www.ovhcloud.com/es/vps/) en el área de cliente de OVHcloud.
+- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
-## Orden
+## Procedimiento
 
-Para crear su servidor OpenVPN, deberá solicitar un VPS. (Si ya tiene un VPS, puede instalar la plantilla OpenVPN a través de su panel de control OVHcloud)
+### Instalar el servidor OpenVPN
 
-![horizon](images/OpenVPN.png){.thumbnail}
+> [!primary]
+>
+Si quiere utilizar un servicio VPS existente, puede hacerlo desde el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), [reinstalando este servicio con la plantilla OpenVPN](../primeros-pasos-con-vps/#instalacion-o-reinstalacion-de-su-vps-gama-actual-de-vps).
+>
 
-Una vez que su VPS esté instalado, recibirá un correo electrónico con sus credenciales:
+Contrate su VPS en la [página de producto](https://www.ovhcloud.com/es/vps/). Al seleccionar la imagen, seleccione `Distribución con aplicación`{.action} y `OpenVPN`{.action} como sistema operativo.
 
-![horizon](images/opencredent2.png){.thumbnail}
+![Pedido VPS](images/order_vps.png){.thumbnail}
 
-Su servidor VPN ya está listo.
+Una vez instalado el VPS, recibirá por correo electrónico las claves de acceso.
 
-Haga clic en el enlace dentro del correo electrónico de credenciales.
+![E-mail de instalación](images/opencredent2.png){.thumbnail}
 
-Inicie sesión con las credenciales en el correo electrónico.
+El servidor VPN estará listo. Para conectarse, haga clic en el enlace del e-mail de instalación que abrirá la interfaz web OpenVPN Client. Introduzca las claves de acceso OpenVPN que haya introducido en el mismo mensaje de correo electrónico.
 
-![horizon](images/login_web.png){.thumbnail}
+![Página de conexión](images/login_user.png){.thumbnail}
 
-## Cliente
+### Instalación y uso del cliente OpenVPN
 
-### Para Windows
+#### En Windows
 
-Seleccione el `cliente OpenVPN para Windows`{.action}
+En la interfaz web del cliente, seleccione el `símbolo Windows`{.action}.
 
-![horizon](images/admin_or_client.png){.thumbnail}
+![Interfaz de usuario](images/windows_client.png){.thumbnail}
 
-Guarde el archivo y ejecútelo.
+Guarde el archivo `.msi` y sustitúyalo.
 
-![horizon](images/connection_openvpn1.png){.thumbnail}
+Una vez instalada la aplicación cliente, puede ejecutarla desde el menú Windows o desde la barra de tareas.
 
-Conéctese a la VPN:
+![Win app](images/win_launch.png){.thumbnail}
 
-![horizon](images/login_screen.png){.thumbnail}
+Conéctese con las claves OpenVPN que le indicaremos en el mensaje de instalación.
 
-Ahora se comunicará a través de Internet con la IP de su VPN.
+![Conexión Windows](images/win_login.png){.thumbnail}
 
-Puede verificar su IP con esta página web <https://ifconfig.ovh/>
+Ya podrá navegar por internet con la dirección IP de su VPN.
 
-###En linux
+Puede comprobar su dirección IP en la página [https://ifconfig.ovh/](https://ifconfig.ovh/){.external}.
 
-Para distribuciones como Fedora / CentOS / RedHat:
+#### En Linux
+
+##### **Instalar el cliente OpenVPN**
+
+Para instalar al cliente para distribuciones del tipo Fedora/CentOS/RedHat:
 
 ```sh
 sudo yum install openvpn
 ```
 
-Para distribuciones como Ubuntu / Debian:
+Para instalar al cliente en las distribuciones del tipo Ubuntu/Debian:
 
 ```sh
 sudo apt-get install openvpn
 ```
 
-Deberá descargar el archivo de configuración client.ovpn aquí:
+También es necesario descargar el archivo de configuración `client.ovpn` desde la interfaz web del cliente OpenVPN.
 
-![horizon](images/client_ovpn.png){.thumbnail}
+![Interfaz de usuario](images/ovpn.png){.thumbnail}
 
-**Lanze el cliente OpenVPN con un archivo de configuración**
+##### **Lancer le client OpenVPN con su fichero de configuración**
 
 ```sh
 sudo openvpn --config client.ovpn
 ```
 
-Se le pedirá que ingrese sus credenciales:
+Introduzca sus claves de acceso:
 
 ```sh
  Enter Auth Username: openvpn
  Enter Auth Password: ******************************************
 ```
 
-Ahora se comunicará a través de Internet con la IP de su VPN.
+Ya podrá navegar por internet con la dirección IP de su VPN.
 
-Puede verificar su IP con esta página web <https://ifconfig.ovh/>.
+Puede comprobar su dirección IP en la página [https://ifconfig.ovh/](https://ifconfig.ovh/){.external}.
 
-### En MacOS
+#### En MacOS
 
-Seleccione el cliente OpenVPN para Mac OS X {.action}:
+Después de conectarse, seleccione el `símbolo Apple`{.action}.
 
-![horizon](images/admin_or_client.png){.thumbnail}
+![Interfaz de usuario](images/mac_client.png){.thumbnail}
 
-Guarde el archivo y ejecútelo.
+Guarde el archivo y hazlo.
 
-![horizon](images/mac_installation.png){.thumbnail}
+![Login Mac](images/login_screen_mac.png){.thumbnail}
 
-Una vez que se complete la instalación, conéctese a la VPN.
+Conéctese con las claves OpenVPN que le indicaremos en el mensaje de instalación.
 
-![horizon](images/login_screen_mac.png){.thumbnail}
+![Login Mac](images/connection_openvpn_mac.png){.thumbnail}
 
-![horizon](images/connection_openvpn_mac.png){.thumbnail}
+Ya podrá navegar por internet con la dirección IP de su VPN.
 
-Ahora se comunicará a través de Internet con la IP de su VPN.
+Puede comprobar su dirección IP en la página [https://ifconfig.ovh/](https://ifconfig.ovh/){.external}.
 
-Puede verificar su IP con esta página web <https://ifconfig.ovh/>.
+### Acceso al servidor OpenVPN
 
+En la interfaz web OpenVPN Client (accesible a través de la URL indicada en el email de instalación), haga clic en el botón `Admin`{.action}.
 
-## Servidor
+![Interfaz de usuario](images/admin_button.png){.thumbnail}
 
-Dirijase al URL dentro del correo electrónico y seleccione `Admin`:
+También puede añadir `admin` a la URL OpenVPN para acceder directamente a la página de conexión:
 
-![horizon](images/admin_or_client.png){.thumbnail}
+```sh
+https://IP_of_your_VPS:943/admin
+```
 
-Inicie sesión con las credenciales recibidas en el correo electrónico y acepte los términos y condiciones.
+Conéctese con las mismas claves OpenVPN que se indican en el mensaje de correo electrónico y acepte los términos y condiciones.
 
-![horizon](images/openvpncredent.png){.thumbnail}
+Ya puede acceder al panel de configuración del servidor OpenVPN.
 
-Ahora tiene acceso al panel de control:
-
-![horizon](images/admin_panel.png){.thumbnail}
-
+![Servidor de acceso OpenVPN](images/admin_access.png){.thumbnail}
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+[Primeros pasos con un VPS](../primeros-pasos-con-vps/)
+
+[OpenVPN](https://openvpn.net/)
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

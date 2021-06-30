@@ -929,6 +929,38 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 51.178.146.199
 ```
 
+### Cluster 031
+
+De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
+
+|País|Código de país|IPv4|IPv6|
+|---|---|----|---|
+|França|PT|146.59.209.152|2001:41d0:301::31|
+|Irlanda|IE|188.165.5.107|2001:41d0:301:3::31|
+|Portugal|PT|51.178.229.47|2001:41d0:301:2::31|
+|Reino Unido|UK|178.32.52.177|2001:41d0:301:12::31|
+|Itália|IT|94.23.66.84|2001:41d0:301:11::31|
+|Espanha|ES|51.255.26.63|2001:41d0:301:4::31|
+|Polónia|PL|87.98.236.253|2001:41d0:301:5::31|
+|República Checa|CZ|217.182.52.81|2001:41d0:301:6::31|
+|Países Baixos|NL|213.32.108.83|2001:41d0:301:7::31|
+|Finlândia|FI|178.32.10.72|2001:41d0:301:8::31|
+|Lituânia|LT|188.165.30.182|2001:41d0:301:9::31|
+|Alemanha|DE|151.80.4.219|2001:41d0:301:1::31|
+|Bélgica|BE|217.182.187.17|2001:41d0:301:10::31|
+
+Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
+
+```bash
+46.105.204.31
+```
+
+Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
+
+```bash
+141.94.87.67
+```
+
 ### Cluster 051
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
