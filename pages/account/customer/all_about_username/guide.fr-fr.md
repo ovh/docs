@@ -1,8 +1,8 @@
 ---
 title: 'Sécuriser mon compte OVHcloud et gérer mes informations personnelles'
 slug: tout-savoir-sur-identifiant-client
-excerpt: 'Découvrez comment optimiser la sécurité de votre compte OVHcloud, gérer vos informations personnelles et déléguer l'accès à votre compte.'
-Section: 'Premiers pas'
+excerpt: "Découvrez comment optimiser la sécurité de votre compte OVHcloud, gérer vos informations personnelles et déléguer l'accès à votre compte."
+section: 'Premiers pas'
 ---
 
 **Dernière mise à jour le 01/07/2021**
