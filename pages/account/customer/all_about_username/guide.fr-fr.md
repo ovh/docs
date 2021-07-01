@@ -144,6 +144,7 @@ Dans ces cas de figure, OVHcloud vous permet de donner des accès à votre compt
 Un utilisateur pourra détenir des droits en lecture ou en écriture sur votre compte et l'ensemble de vos services. Vous pourrez créer, administrer et supprimer ces utilisateurs depuis votre espace client.
 
 Ainsi, non seulement votre propre accès au compte restera sécurisé par la double authentification, mais chaque utilisateur bénéficiera de :
+
 - son propre identifiant;
 - son propre mot de passe;
 - sa propre double-authentification.
