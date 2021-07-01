@@ -78,7 +78,7 @@ Deux situations sont possibles :
 
 ![hosting-menu](images/hosting-menu.png){.thumbnail}
 
-Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IPV6 de votre domaine, 
+Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IPV6 de votre domaine.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
@@ -87,15 +87,15 @@ Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IP
 > Si vous souhaitez relier votre domaine à cet hébergement, reportez-la dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une entrée de type `A`.
 >
 
-#### effectuer les actions nécessaires
+#### Effectuer les actions nécessaires
 
 Plusieurs cas sont possibles :
 
 |Scénario|Action à entreprendre|
 |---|---|
 |Les `Serveurs DNS`{.action} n'apparaissent pas sous la forme **« nsX.ovh.net »** ou **« dnsX.ovh.net »**. Cela signifie que la `Zone DNS`{.action} active de votre domaine ne se trouve pas sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :![external-dns-servers](images/external-dns-servers.png){.thumbnail}|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
-|La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} n'apparaît pas dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/)|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
-|La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} apparaît dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/), mais aucun de vos hébergements ne possède cette adresse IP|Vérifiez que vous ne possédez pas un hébergement possédant cette adresse IP dans l'un de vos autres [comptes OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) si vous en avez créé plusieurs. Si besoin, contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
+|La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} n'apparaît pas dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/).|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
+|La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} apparaît dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/), mais aucun de vos hébergements ne possède cette adresse IP.|Vérifiez que vous ne possédez pas un hébergement possédant cette adresse IP dans l'un de vos autres [comptes OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) si vous en avez créé plusieurs. Si besoin, contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
 |L'adresse IP indiquée dans la zone DNS active de votre domaine correspond à celle de votre hébergement mutualisé.|Passez à [l'étape 2](#etape2).|
 
 ### Étape 2 : Vérifiez le certificat SSL de votre hébergement <a name="etape2"></a>
@@ -110,11 +110,12 @@ Activez un [certificat SSL](https://www.ovh.com/fr/ssl/) sur votre hébergement 
 
 #### Scénario 2 : Le certificat SSL de votre hébergement ne fonctionne pas
 
-Si vous avez généré un **certificat SSL « Let's Encrypt »**, activez l'option SSL dans le `Multisite`{.action} de votre hébergement selon ce [document](../les-certificats-ssl-sur-les-hebergements-web/#activer-un-certificat-ssl-sur-un-multisite).
+Si vous avez généré un **certificat SSL « Let's Encrypt »**, activez l'option SSL dans le `Multisite`{.action} de votre hébergement selon les instructions de ce [guide](../les-certificats-ssl-sur-les-hebergements-web/#activer-un-certificat-ssl-sur-un-multisite).
 
 Si vous disposez d'un **certificat SSL importé** et que celui-ci ne fonctionne pas, contactez son fournisseur.
 
-Si vous avez commandé l'un des **certificats SSL payants** de notre partenaire [SECTIGO](https://sectigo.com/){.external}, vérifiez que vous n'avez pas reçu un e-mail vous proposant de le renouveler. Si besoin, contactez le [support de SECTIGO](https://sectigo.com/support){.external} à ce sujet.
+Si vous avez commandé l'un des **certificats SSL payants** de notre partenaire [SECTIGO](https://sectigo.com/){.external}, vérifiez si vous avez reçu un e-mail vous proposant de le renouveler.
+<br>Si besoin, contactez le [support de SECTIGO](https://sectigo.com/support){.external} à ce sujet.
 
 > [!primary]
 >
