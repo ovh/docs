@@ -75,6 +75,9 @@ La double authentification permet de renforcer la sécurité de votre compte OVH
 
 Vous trouverez tous les détails pour l'activer sur notre guide « [Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/) ».
 
+> [!primary]
+> L'activation de la double authentification sur votre compte OVHcloud est un prérequis obligatoire pour être en conformité avec [l'hébergement des données de santé en France (HDS)](https://www.ovhcloud.com/fr/enterprise/certification-conformity/hds/).
+
 ### Comment gérer mes informations personnelles ? <a name="personal-information"></a>
 
 #### Modifier mes informations personnelles

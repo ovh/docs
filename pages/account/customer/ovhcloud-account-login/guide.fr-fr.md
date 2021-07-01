@@ -28,7 +28,7 @@ Rendez-vous sur [la page d'authentification OVHcloud](https://www.ovh.com/auth/?
 
 ![identifiant client](images/log-in.png){.thumbnail}
 
-Si vous activé la [double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/), vous devrez ensuite renseigner le code unique de connexion généré par votre périphérique (téléphone, tablette ou clé U2F).
+Si vous avez activé la [double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/), vous devrez alors renseigner le code unique de connexion généré par votre périphérique (téléphone, tablette ou clé U2F).
 
 ### Je ne parviens pas à me connecter (#login-failure)
 
@@ -73,8 +73,11 @@ Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle
 
 #### Si vous n'avez pas renseigné d'adresse e-mail de secours ou que celle-ci est également invalide
 
-Vvous pouvez suivre cette [procédure](http://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi){.external} à nous adresser par courrier postal.
+Dans ce cas de figure, le support téléphonique OVHcloud ne pourra pas vous venir en aide.
+
+Vous devez suivre cette [procédure](http://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi){.external} à nous adresser par courrier postal.
 <br>Une fois le courrier reçu par nos services, nous procéderons alors au remplacement de votre adresse e-mail de contact si tous les justificatifs réclamés sont conformes.
+<br>Cette procédure peut nécessiter plusieurs jours de délai, compte tenu des délais d'acheminement de votre courrier et de son traitement par nos services.
 
 ### La double authentification est active sur mon compte mais mon téléphone a été volé
 
@@ -89,6 +92,10 @@ Consultez les démarches appropriées sur notre guide « [Sécuriser son compte 
 Celui-ci vous est envoyé par e-mail **sur l'adresse principale** que vous avez renseignée sur le compte.
 
 Si vous ne retrouvez pas ce code, pensez à vérifier les dossiers « spam » / « courrier indésirable » de votre adresse e-mail.
+
+> [!primary]
+> Activer la double authentification sur votre compte vous permet de choisir le périphérique à utiliser (téléphone, tablette, smartphone, clé U2F) pour recevoir un code d'authentification.
+>
 
 ## Aller plus loin
 
