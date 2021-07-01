@@ -46,7 +46,7 @@ Afin de résoudre cette anomalie, vous devrez :
 
 Les messages d'erreur indiqués dans la partie [Objectif](#objectif) de ce guide ne sont pas caractéristiques d'un [hébergement mutualisé OVHcloud](https://www.ovh.com/fr/hebergement-web/). Vous devez donc vérifier, dans un premier temps, le serveur auquel est relié votre [nom de domaine](https://www.ovh.com/world/domains/).
 
-Pour retrouver l'adresse IP de l'hébergement auquel votre nom de domaine est lié, cliquez en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur **« Web Cloud »** puis sur `Noms de domaines`{.action} dans la barre de services à gauche. Sélectionnez le domaine de votre site. : 
+Pour retrouver l'adresse IP de l'hébergement auquel votre nom de domaine est lié, cliquez en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Web Cloud`{.action} puis sur `Noms de domaines`{.action} dans la barre de services à gauche. Sélectionnez le domaine de votre site. : 
 
 ![click-on-domain-name](images/click-on-domain-name.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Puis ciquez sur l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de t
 
 > [!warning]
 >
-> Si l'onglet `Serveurs DNS`{.action} n'apparaît pas dans cette partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et que votre domaine s'y affiche de la façon suivante : 
+> Si l'onglet `Serveurs DNS`{.action} n'apparaît pas dans cette partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et que son titre s'y affiche sous la forme **« Zone DNS de mydomain.ovh »** :
 >
 > ![domain-not-on-control-panel](images/domain-not-on-control-panel.png){.thumbnail}
 >
