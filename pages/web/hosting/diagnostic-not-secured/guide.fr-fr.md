@@ -13,10 +13,10 @@ Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de vo
 
 |Navigateur|Erreur concernée|
 |-|---|
-|Sur Chrome : « Votre connexion n'est pas privée »|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
-|Sur Firefox : « Attention : risque probable de sécurité »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
-|Sur Edge : « Votre connexion n’est pas privée »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
-|Sur Safari : « Cette connexion n'est pas privée »|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
+|Sur Chrome :<br>« Votre connexion n'est pas privée »|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
+|Sur Firefox :<br>« Attention : risque probable de sécurité »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
+|Sur Edge :<br>« Votre connexion n’est pas privée »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
+|Sur Safari :<br>« Cette connexion n'est pas privée »|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
 
 **Découvez comment résoudre les erreurs du type « Votre connexion n'est pas privée »**
 
@@ -42,9 +42,9 @@ Afin de résoudre cette anomalie, vous devrez :
 
 ### Étape 1 : vérifier l'hébergement auquel est relié votre nom de domaine
 
-#### Vérifiez l'adresse IP dans la zone DNS
+#### Vérifier l'adresse IP dans la zone DNS
 
-Les messages d'erreur indiqués dans la partie [Objectif](#objectif) ne sont pas caractéristiques d'un [hébergement mutualisé OVHcloud](https://www.ovh.com/fr/hebergement-web/). Vous devez donc vérifier, dans un premier temps, le serveur auquel est relié votre [nom de domaine](https://www.ovh.com/world/domains/).
+Les messages d'erreur indiqués dans la partie [Objectif](#objectif) de ce guide ne sont pas caractéristiques d'un [hébergement mutualisé OVHcloud](https://www.ovh.com/fr/hebergement-web/). Vous devez donc vérifier, dans un premier temps, le serveur auquel est relié votre [nom de domaine](https://www.ovh.com/world/domains/).
 
 Pour retrouver l'adresse IP de l'hébergement auquel votre nom de domaine est lié, cliquez en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur **« Web Cloud »** puis sur `Noms de domaines`{.action} dans la barre de services à gauche. Sélectionnez le domaine de votre site. : 
 
@@ -66,7 +66,7 @@ Puis ciquez sur l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de t
 >
 > Cela signifie que votre domaine n'est pas géré depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans ce cas de figure, contactez votre webmaster ou ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/), afin de retrouver l'adresse IP contenue dans la `Zone DNS`{.action} active de votre domaine.
 
-#### vérifier l'adresse IP de l'hébergement
+#### Vérifier l'adresse IP de l'hébergement
 
 Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) est bien identique à celle de l'hébergement de votre site.
 
