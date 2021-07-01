@@ -6,8 +6,11 @@ section: Transfer
 order: 5
 ---
 
+## Objective
 
-## Prerequisites
+You can launch a domain transfer to other registrar by changing the TAG of your domain
+
+## Requirements
 To transfer a .co.uk domain name or equivalent to another registrar, make sure that it meets the following conditions:
 
 
@@ -22,7 +25,7 @@ To transfer a .co.uk domain name or equivalent to another registrar, make sure t
 
 
 
-## Extensions in question
+#### Extensions in question
 
 - .uk.
 - .co.uk
@@ -31,10 +34,10 @@ To transfer a .co.uk domain name or equivalent to another registrar, make sure t
 - .ltd.uk
 - .plc.uk
 
+## Instructions
 
 
-
-## Step 1: Verify domain name information
+### Step 1: Verify domain name information
 You can find the information in your control panel [here](https://www.ovh.com/manager/web/#/domain). 
 You must log in as the administrative contact.
 
@@ -46,7 +49,7 @@ You must log in as the administrative contact.
 ![](images/img_4266.jpg){.thumbnail}
 
 
-## Step 2: Change your domain TAG
+### Step 2: Change your domain TAG
 
 - Then click on "Outgoing transfer Tag".
 
@@ -66,6 +69,6 @@ Go to this page on the Registry's website: [Manage your domain - Change registra
 Please note, you will be charged for this service.
 
 
-## Step 3: Pass the information on to your new domain name provider
+### Step 3: Pass the information on to your new domain name provider
 This is all you need to do. You now have all the information you need to transfer your domain name.
 
