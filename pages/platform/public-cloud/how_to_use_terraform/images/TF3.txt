@@ -1,0 +1,25 @@
+variable "region" {
+   type = list
+   default = ["GRA11", "SBG5", "BHS5"]
+ }
+  
+ resource "openstack_compute_keypair_v2" "test_keypair_all" {
+   count = length(var.region)
+   provider = openstack.ovh
+   name = "test_keypair_all"
+   public_key = file("~/.ssh/id_rsa.pub")
+   region = element(var.region, count.index)
+ }
+  
+ resource "openstack_compute_instance_v2" "instances_on_all_regions" {
+   count = length(var.region)
+   provider = openstack.ovh
+   name = "terraform_instances"
+   flavor_name = "s1-2"
+   image_name = "Debian 10"
+   region = element(var.region, count.index)
+   key_pair = element(openstack_compute_keypair_v2.test_keypair_all.*.name, count.index)
+   network {
+     name = "Ext-Net"
+   }
+ }
