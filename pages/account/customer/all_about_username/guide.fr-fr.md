@@ -3,6 +3,7 @@ title: 'Sécuriser mon compte OVHcloud et gérer mes informations personnelles'
 slug: tout-savoir-sur-identifiant-client
 excerpt: "Découvrez comment optimiser la sécurité de votre compte OVHcloud, gérer vos informations personnelles et déléguer l'accès à votre compte."
 section: 'Premiers pas'
+order: 3
 ---
 
 **Dernière mise à jour le 01/07/2021**
@@ -144,6 +145,7 @@ Dans ces cas de figure, OVHcloud vous permet de donner des accès à votre compt
 Un utilisateur pourra détenir des droits en lecture ou en écriture sur votre compte et l'ensemble de vos services. Vous pourrez créer, administrer et supprimer ces utilisateurs depuis votre espace client.
 
 Ainsi, non seulement votre propre accès au compte restera sécurisé par la double authentification, mais chaque utilisateur bénéficiera de :
+
 - son propre identifiant;
 - son propre mot de passe;
 - sa propre double-authentification.

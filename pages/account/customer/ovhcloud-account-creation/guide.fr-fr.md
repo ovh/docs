@@ -3,6 +3,7 @@ title: 'Créer un compte OVHcloud'
 slug: creer-compte-ovhcloud
 excerpt: 'Découvrez comment créer votre compte OVHcloud'
 Section: 'Premiers pas'
+order: 1
 ---
 
 **Dernière mise à jour le 01/07/2021**

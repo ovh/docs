@@ -3,6 +3,7 @@ title: "Se connecter à l'espace client OVHcloud"
 slug: se-connecter-espace-client-ovhcloud
 excerpt: 'Découvrez comment vous authentifier sur votre compte OVHcloud'
 Section: 'Premiers pas'
+order: 2
 ---
 
 **Dernière mise à jour le 01/07/2021**
@@ -30,7 +31,7 @@ Rendez-vous sur [la page d'authentification OVHcloud](https://www.ovh.com/auth/?
 
 Si vous avez activé la [double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/), vous devrez alors renseigner le code unique de connexion généré par votre périphérique (téléphone, tablette ou clé U2F).
 
-### Je ne parviens pas à me connecter (#login-failure)
+### Que faire si je ne parviens pas à me connecter ? <a name="login-failure"></a>
 
 La suite de ce guide vous donne des méthodes pour résoudre les cas fréquents d'échecs de connexion à l'espace client OVHcloud.
 
@@ -46,7 +47,7 @@ Votre identifiant client est renseigné sur l'e-mail de confirmation de créatio
 
 Votre identifiant client est renseigné en haut à droite sur toutes vos factures.
 
-![identifiant client](images/nichandle01b.png){.thumbnail}}
+![identifiant client](images/nichandle01b.png){.thumbnail}
 
 ##### **Se connecter sans identifiant**
 
