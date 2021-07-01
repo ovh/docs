@@ -1,69 +1,51 @@
 ---
-title: 'Créer, utiliser et gérer son compte OVHcloud'
+title: 'Sécuriser mon compte OVHcloud et gérer mes informations personnelles'
 slug: tout-savoir-sur-identifiant-client
-excerpt: 'Découvrez comment créer votre compte OVHcloud et gérer vos informations personnelles'
+excerpt: 'Découvrez comment optimiser la sécurité de votre compte OVHcloud, gérer vos informations personnelles et déléguer l'accès à votre compte.'
 Section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 30/06/2021**
+**Dernière mise à jour le 01/07/2021**
 
 ## Objectif
 
-Pour utiliser les services OVHcloud, vous devez d'abord créer votre compte.
-Chaque compte client OVHcloud est associé à un identifiant unique, aussi appelé NIC-handle.
+La gestion de vos services et données s'effectue principalement via l'espace client OVHcloud.
+Il est donc essentiel d'adopter des bonnes pratiques sur la gestion de votre compte afin d'en sécuriser et conserver l'accès.
 
-Il est le plus souvent composé de deux lettres suivies de chiffres. Par exemple : **xx11111-ovh**.
+L'espace client OVHcloud vous permet aussi de gérer vos données personnelles et de déléguer l'accès à vos services à d'autres utilisateurs.
 
-Cet identifiant client vous permet :
-
-- de réaliser des commandes en ligne ;
-- de vous connecter à votre espace client pour gérer l'ensemble de vos services ;
-- de vous identifier lors de votre prise de contact avec le support d'OVHcloud et ainsi faciliter le traitement de vos questions.
-
-**Apprenez à créer votre compte OVHcloud, à vous authentifier sur celui-ci, mais aussi à gérer vos informations personnelles et les accès à votre compte.**
+**Découvez les bonnes pratiques de gestion de votre compte et de vos données personnelles.**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## En pratique
+## Prérequis
 
-### Comment créer un compte OVHcloud ?
-
-Pour créer un compte OVHcloud, il suffit de vous rendre sur [cette page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et de compléter le formulaire en ligne.
-
-![formulaire création compte](images/account-creation.png){.thumbnail}
-
-|Informations|Description|
-|---|---|
-|Prénom - Nom|Renseignez **impérativement** ici un prénom et un nom usuels.|
-|Adresse e-mail|Renseignez une adresse e-mail **valide et à laquelle vous avez actuellement accès**.<br><br>Elle doit être extérieure à votre nom de domaine si vous en avez un.|
-|Mot de passe|Votre mot de passe doit être unique (créé et utilisé uniquement pour votre compte OVHcloud) et suffisamment complexe.<br><br>Consultez les conseils de [notre guide sur la gestion du mot de passe](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#en-pratique) pour créer un mot de passe efficace.|
-
-Une fois ce premier formulaire complété, un code à usage unique vous sera envoyé à l'adresse e-mail que vous avez renseignée. Ce code permettra de valider votre adresse e-mail. Renseignez-le dans les cases prévues à cet effet.
-
-![code à usage unique](images/code.png){.thumbnail}
+- Avoir créé [votre compte OVHcloud](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 > [!primary]
-> Si vous n'avez pas reçu l'e-mail contenant le code, vérifiez les dossiers « spam » / « courrier indésirable » de votre adresse e-mail.
->
-> Vous pouvez déclencher l'envoi d'un nouveau code en cliquant sur le lien prévu à cet effet en bas de cette page.
->
-> Si l'adresse e-mail que vous avez renseignée n'est pas valide ou disponible, cliquez sur le bouton `Modifier l'adresse e-mail`{.action}.
+> En cas de difficultés de connexion à votre compte, consultez la partie « [Je ne parviens pas à me connecter](https://docs.ovh.com/fr/customer/se-connecter-espace-client-ovhcloud/#login-failure) » de notre guide « [Se connecter à l'espace client OVHcloud](https://docs.ovh.com/fr/customer/se-connecter-espace-client-ovhcloud/)».
 >
 
-Une fois le code saisi et validé, complétez la suite du formulaire. Veillez notamment à bien définir le **type de compte** parmi les choix proposés.
+## En pratique
 
-![formulaire création compte](images/account-type.png){.thumbnail}
+Ce guide vous détaille :
 
-Votre compte créé, vous serez automatiquement connecté sur la page d'accueil, appelé « Tableau de bord », de votre compte.
+- [les bonnes pratiques de gestion et de sécurisation du compte OVHcloud](#best-practices);
+- [comment gérer et modifier vos informations personnelles](#personal-information);
+- [comment déléguer de manière sécurisée les accès à votre compte OVHcloud](#delegation).
 
-Votre identifiant client est affiché en haut à droite sous votre nom et votre adresse e-mail.
-<br>Prenez-en bien note car vous en aurez besoin pour chaque connexion à votre compte.
+### Bonnes pratiques de gestion du compte OVHcloud <a name="best-practices"></a>
 
-![identifiant client](images/nic-handle.png){.thumbnail}
+Les bonnes pratiques listées ci-dessous sont à mettre en application dès la création de votre compte OVHcloud, afin d'optimiser la sécurité de vos services et données.
 
-### Une fois mon compte OVHcloud créé, que dois-je faire ?
+### Créer un mot de passe solide et unique
 
-#### Sauvegarder mon mot de passe
+La sécurité de vos services et données dépend de l'efficacité de votre mot de passe. Celui-ci doit être **complexe, unique et renouvelé régulièrement**.
+
+Retrouvez toutes nos recommandations sur les mots de passe sur notre guide « [Modifier le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/) ».
+
+#### Sauvegarder votre mot de passe
 
 Si vous ne l'avez pas encore fait, sauvegardez votre mot de passe dans un [gestionnaire de mots de passe](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe).
 
@@ -84,8 +66,8 @@ Cliquez alors, dans le cadre `Mon profil` sur le bouton `...`{.action} puis sur 
 > [!warning]
 > Il est impératif que l'adresse e-mail de secours soit **différente** de l'adresse e-mail principale du compte.
 >
-> Il est préférable que les adresses e-mail (principale et de secours) de contact de votre compte ne soient pas liées à vos noms de domaines.
-><br> En effet, si pour la moindre raison (par exemple un oubli de renouvellement) votre nom de domaine est suspendu, les adresses e-mails liées à celui-ci seront également suspendues.
+> Évitez d'utiliser des adresses e-mail liées à un nom de domaine que vous gérez depuis votre espace client. En cas de coupure sur ce domaine, vous ne recevriez plus nos notifications.
+>
 
 #### Activer la double authentification
 
@@ -93,66 +75,11 @@ La double authentification permet de renforcer la sécurité de votre compte OVH
 
 Vous trouverez tous les détails pour l'activer sur notre guide « [Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/) ».
 
-#### Renseigner un moyen de paiement
-
-Enregistrer un moyen de paiement valide dans votre compte OVHcloud permet de garantir le bon renouvellement de vos services.
-
-Pour plus de détails sur les moyens de paiement, consultez notre guide « [Gérer mes moyens de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/) ».
-
-### Comment retrouver mon identifiant client ?
-
-L'identifiant client vous sera invariablement demandé lorsque vous vous connecterez à votre compte ou que vous contacterez l'assistance technique d'OVHcloud. Vous pouvez le retrouver de différentes manières.
-
-#### Dans les e-mails envoyés par OVHcloud
-
-Votre identifiant client est renseigné sur l'e-mail de confirmation de création du compte, les messages de confirmation de commande ou de renouvellement, ainsi que dans les notifications de connexion à votre compte.
-
-#### Sur mes factures
-
-Votre identifiant client est renseigné en haut à droite sur toutes vos factures.
-
-![identifiant client](images/nichandle01b.png){.thumbnail}
-
-#### Sur mon espace client
-
-Vous pouvez retrouver votre identifiant dans votre espace client, en cliquant sur votre nom en haut à droite.
-<br>Il est affiché sous votre adresse e-mail.
-
-![identifiant client](images/nic-handle.png){.thumbnail}
-
-### Comment me connecter à mon espace client ?
-
-Rendez-vous sur [la page d'authentification OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, renseignez votre identifiant et votre mot de passe.
-
-![identifiant client](images/log-in.png){.thumbnail}
-
-Si vous activé la [double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/), vous devrez ensuite renseigner le code unique de connexion généré par votre périphérique (téléphone, tablette ou clé U2F).
-
-> [!primary]
-> Si vous n'avez pas activé la double authentification sur votre compte, un code de vérification peut vous être demandé afin de valider votre identification. Celui-ci vous est envoyé par e-mail **sur l'adresse principale** du compte.
->
-> Si vous ne retrouvez pas ce code, pensez à vérifier les dossiers « spam » / « courrier indésirable » de votre adresse e-mail.
->
-
-#### J'ai perdu mon mot de passe
-
-En cas de perte ou d'oubli de votre mot de passe, consultez [ce guide détaillant la marche à suivre pour le modifier](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#si-vous-ne-connaissez-plus-votre-mot-de-passe-actuel).
-
-#### J'ai perdu mon mot de passe et mon adresse e-mail principale n'est plus valide
-
-Dans ce cas de figure, la procédure de réinitialisation du mot de passe ne peut être effectuée.
-
-**Si vous avez renseigné une adresse e-mail de secours**, vous pouvez contacter le support OVHcloud au 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France) afin que cette adresse de secours devienne l'adresse e-mail principale.
-<br>Une fois cette action effectuée, il est essentiel de [renseigner une nouvelle adresse e-mail de secours](#backup-email).
-
-**Si vous n'avez pas renseigné d'adresse e-mail de secours ou que celle-ci est également invalide**, vous pouvez suivre cette [procédure](http://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi){.external} à nous adresser par courrier postal.
-<br>Une fois le courrier reçu par nos services, nous procéderons alors au remplacement de votre adresse e-mail de contact si tous les justificatifs réclamés sont conformes.
-
-### Comment gérer mes informations personnelles ?
+### Comment gérer mes informations personnelles ? <a name="personal-information"></a>
 
 #### Modifier mes informations personnelles
 
-Vous pouvez modifier les informations de votre compte depuis votre espace client. Pour cela, cliquez sur votre nom en haut à droite dans votre espace client, puis sur vos initiales.
+Vous pouvez modifier les informations de votre compte depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, cliquez sur votre nom en haut à droite dans votre espace client, puis sur vos initiales.
 
 Cliquez alors sur le bouton `...`{.action} dans le cadre `Mon profil`, puis sur `Éditer mon profil`{.action}.
 
@@ -162,16 +89,16 @@ Modifiez vos informations, puis cliquez sur le bouton `Valider`{.action} .
 
 > [!warning]
 >
-> Il est important que vos informations personnelles soient **à jour** et **exactes**. Elles vous seront demandées lors de vos contacts avec le support d'OVHcloud et vous devez être en capacité d'en justifier l'exactitude le cas échéant (exemple : un justificatif de domicile identique à l'adresse renseignée sur votre compte, peut vous être demandé lors d'une procédure de changement d'adresse e-mail).
+> Il est important que vos informations personnelles soient **à jour** et **exactes**. Elles vous seront demandées lors de vos contacts avec le support OVHcloud et vous devez être en capacité d'en justifier l'exactitude le cas échéant (exemple : lors d'une procédure de changement d'adresse e-mail, un justificatif de domicile identique à l'adresse renseignée sur votre compte peut vous être demandé).
 >
 
 #### Modifier l'adresse e-mail principale
 
-Si vous désirez renseigner une nouvelle adresse e-mail principale de contact, vous devrez valider celle-ci à l'aide d'un code envoyé à votre adresse de contact principale actuelle. Une fois ce code reçu, cliquez sur le bouton « J'ai reçu mon code de validation ».
+Si vous désirez renseigner une nouvelle adresse e-mail principale de contact, vous devrez valider celle-ci à l'aide d'un code envoyé à votre adresse de contact principale actuelle. Une fois ce code reçu, cliquez sur le bouton `J'ai reçu mon code de validation`{.action}.
 
 ![identifiant client](images/nichandle07.png){.thumbnail}
 
-Renseignez alors le code dans le champ intitulé « Code de validation », puis validez.
+Renseignez alors le code dans le champ intitulé `Code de validation`, puis validez.
 
 ![identifiant client](images/nichandle08.png){.thumbnail}
 
@@ -193,14 +120,14 @@ Vous pouvez demander à supprimer votre compte OVHcloud et les données liées e
 
 > [!warning]
 >
-La suppression de votre compte OVHcloud nécessite que les conditions suivantes soient remplies  :
+> La suppression de votre compte OVHcloud nécessite que les conditions suivantes soient remplies :
 >
 > - votre compte ne doit plus contenir aucun service ;
 >
 > - votre compte doit être exempt de toute facture ou commande impayée.
 >
 
-### Gérer les accès à mon compte
+### Gérer les accès à mon compte <a name="delegation"></a>
 
 Les informations d'identification de votre compte n'ont pas vocation à être partagées et/ou divulguées.
 
@@ -227,14 +154,18 @@ Vous pouvez déléguer la gestion administrative **ou** technique **ou** de fact
 
 ### Que faire en cas de suspicion d'usurpation d'identité ?
 
-Si vous recevez un e-mail vous indiquant une connexion inconnue à votre espace client, nous vous conseillons de [modifier immédiatement le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#modifier-votre-mot-de-passe) et de [sécuriser celui-ci via une double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/).
+Si vous recevez un e-mail vous indiquant une connexion inconnue à votre espace client, nous vous conseillons de [modifier immédiatement le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#modifier-votre-mot-de-passe) et de [sécuriser votre compte avec une double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/).
 
-Si vous constatez une activité suspecte sur votre compte, [contactez le support OVHcloud](https://www.ovh.com/fr/support/nous-contacter/) afin que nos équipes vous assistent dans les démarches à entreprendre.
+Si vous constatez une activité suspecte sur votre compte, [contactez le support OVHcloud](https://www.ovh.com/fr/support/nous-contacter/) au 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France) afin que nos équipes vous assistent dans les démarches à entreprendre.
 
 ## Aller plus loin
 
-[Définir et gérer le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
+[Modifier le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
 
 [Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+
+[Se connecter à l'espace client OVHcloud](https://docs.ovh.com/fr/customer/se-connecter-espace-client-ovhcloud/)
+
+[En cas d'échec de connexion à l'espace client](https://docs.ovh.com/fr/customer/se-connecter-espace-client-ovhcloud/#login-failure)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
