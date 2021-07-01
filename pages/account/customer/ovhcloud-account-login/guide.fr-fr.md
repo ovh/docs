@@ -11,7 +11,7 @@ Section: 'Premiers pas'
 
 La gestion de vos services s'effectue principalement via l'espace client OVHcloud.
 
-**Découvez comment vous connecter à votre compte OVHcloud et aussi comment résoudre les échecs de connexion.**
+**Découvrez comment vous connecter à votre compte OVHcloud et aussi comment résoudre les échecs de connexion.**
 
 ## Prérequis
 

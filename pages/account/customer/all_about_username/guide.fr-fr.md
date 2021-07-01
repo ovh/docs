@@ -56,15 +56,16 @@ Si vous ne l'avez pas encore fait, sauvegardez votre mot de passe dans un [gesti
 #### Ajouter une adresse e-mail de secours <a name="backup-email"></a>
 
 En cas de difficulté d'accès à votre adresse e-mail principale, une adresse e-mail de secours permet de conserver l'accès à votre compte et donc à la gestion de vos services.
+Cette seconde adresse **doit être différente** de la première, notamment pour faciliter vos démarches en cas de récupération de mot de passe.
 
-Pour renseigner une adresse e-mail de secours, cliquez sur votre nom en haut à droite de votre compte puis cliquez sur vos initiales.
+Pour renseigner cette adresse e-mail de secours, cliquez sur votre nom en haut à droite de votre compte puis cliquez sur vos initiales.
 
 Cliquez alors, dans le cadre `Mon profil` sur le bouton `...`{.action} puis sur `Éditer mon profil`{.action}.
 
 ![adresse e-mail de secours](images/edit-profile.png){.thumbnail}
 
 > [!warning]
-> Il est impératif que l'adresse e-mail de secours soit **différente** de l'adresse e-mail principale du compte.
+> Pour rappel, il est **primordial** que l'adresse e-mail de secours soit **différente** de l'adresse e-mail principale du compte.
 >
 > Évitez d'utiliser des adresses e-mail liées à un nom de domaine que vous gérez depuis votre espace client. En cas de coupure sur ce domaine, vous ne recevriez plus nos notifications.
 >
