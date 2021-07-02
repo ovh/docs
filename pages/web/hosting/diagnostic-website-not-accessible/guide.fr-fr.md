@@ -95,13 +95,13 @@ La `Zone DNS`{.action} de votre domaine ne contient pas d'entrée de type `NS` :
 
 Effectuez une sauvegarde de la zone actuelle en cliquant sur le bouton `Modifier en mode textuel`{.action} à droite de votre écran : 
 
-![change-DNS-in-text](images/change-DNS-in-text.png){.thumbnail}
+![change_DNS_zone_change_text_format](images/change_DNS_zone_change_text_format.png){.thumbnail}
 
 Puis copiez/collez le contenu de votre `Zone DNS`{.action} dans un document texte. Enregistrez localement ce document.
 
 Cliquez ensuite sur `Réintialiser ma zone DNS`{.action}, puis sélectionnez `Non, mais je veux réinitialiser ma zone DNS`{.action}, indiquez vos serveurs mail et d'hébergement et cliquez sur `Valider`{.action}.
 
-![reset-dns-zone-button](images/reset-dns-zone-button.png){.thumbnail}
+![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
 Patientez enfin 24 heures au maximum (délai de propagation des modifications dans la `Zone DNS`{.action}).
 
