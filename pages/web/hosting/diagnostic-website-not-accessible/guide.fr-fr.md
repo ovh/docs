@@ -73,9 +73,7 @@ Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} :
 
 Les serveurs DNS indiqués dans l'onglet `Serveurs DNS`{.action} sont identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action} : 
 
-![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
-
-![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
+![montage_check-srv-dns](images/montage_check-srv-dns.png){.thumbnail}
 
 Passez à [l'étape 3](#etape3).
 
