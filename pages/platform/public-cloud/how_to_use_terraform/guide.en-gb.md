@@ -418,7 +418,7 @@ resource "openstack_compute_instance_v2" "front" {
   name            = "front"                                     # Instance name
   key_pair        = openstack_compute_keypair_v2.test_keypair.name
   flavor_name     = "s1-2"                                      # Instance type name
-  image_id        = data.openstack_images_image_v2.archlinux.id # Identifiant de l'image de l'instance
+  image_id        = data.openstack_images_image_v2.archlinux.id # Instance image ID
   security_groups = ["default"]                                 # Adds the instance to the security group
   network {
     name = "Ext-Net" # Public network interface name
