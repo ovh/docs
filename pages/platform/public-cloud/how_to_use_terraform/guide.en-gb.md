@@ -24,8 +24,8 @@ The open source tool Terraform was developed to make the creation of complex clo
 - [Setting OpenStack environment variables](../set-openstack-environment-variables/)
 - [Your OVHcloud API identifiers and authorisation key](../../api/first-steps-with-ovh-api/)
 - [An SSH key](../create-ssh-keys)
-* [Terraform OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
-* [The OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external}
+- [Terraform OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
+- [The OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external}
 
 > [!primary]
 >
@@ -326,7 +326,7 @@ Create a file "create_private_network_instance.tf" and enter the following:
     no_gateway   = true # No default gateway
  }
   
- # Création d'une instance avec 2 interfaces réseau
+ # Creating an instance with 2 network interfaces
  resource "openstack_compute_instance_v2" "proxy_instance" {
    provider     = openstack.ovh # Provider name
    name         = "proxy_instance" # Instance name

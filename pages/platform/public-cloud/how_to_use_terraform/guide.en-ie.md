@@ -24,8 +24,8 @@ The open source tool Terraform was developed to make the creation of complex clo
 - [Setting OpenStack environment variables](../set-openstack-environment-variables/)
 - [Your OVHcloud API identifiers and authorisation key](../../api/first-steps-with-ovh-api/)
 - [An SSH key](../create-ssh-keys)
-* [Terraform OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
-* [The OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external}
+- [Terraform OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
+- [The OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external}
 
 > [!primary]
 >
@@ -59,7 +59,7 @@ In a file named *provider.tf*, put the following lines:
 ```python
 # Define providers and set versions
 terraform {
-required_version    = ">= 0.14.0"                    # Takes into account Terraform versions from 0.14.0
+required_version    = ">= 0.14.0" # Takes into account Terraform versions from 0.14.0
   required_providers {
     openstack = {
       source  = "terraform-provider-openstack/openstack"
@@ -75,9 +75,9 @@ required_version    = ">= 0.14.0"                    # Takes into account Terraf
  
 # Configure the OpenStack provider hosted by OVHcloud
 provider "openstack" {
-  auth_url    = "https://auth.cloud.ovh.net/v3/"    # Authentication URL
-  domain_name = "default"                           # Domain name - Always at `default` for OVHcloud
-  alias       = "ovh"                               # An alias
+  auth_url    = "https://auth.cloud.ovh.net/v3/" # Authentication URL
+  domain_name = "default" # Domain name - Always at 'default' for OVHcloud
+  alias       = "ovh" # An alias
 }
 ```
 
@@ -101,17 +101,17 @@ For example purposes, we will create a simple instance on **Debian 10** with the
 ```python
 # Creating an SSH key pair resource
 resource "openstack_compute_keypair_v2" "test_keypair" {
-  provider   = openstack.ovh             # Provider name declared in provider.tf
-  name       = "test_keypair"            # Name of the SSH key to use for creation
+  provider   = openstack.ovh # Provider name declared in provider.tf
+  name       = "test_keypair" # Name of the SSH key to use for creation
   public_key = file("~/.ssh/id_rsa.pub") # Path to your previously generated SSH key
 }
  
-# Création d'une instance
+# Creating the instance
 resource "openstack_compute_instance_v2" "test_terraform_instance" {
-  name        = "terraform_instance"    # Instance name
-  provider    = openstack.ovh           # Provider name
-  image_name  = "Debian 10"             # Image name
-  flavor_name = "s1-2"                  # Instance type name
+  name        = "terraform_instance" # Instance name
+  provider    = openstack.ovh  # Provider name
+  image_name  = "Debian 10" # Image name
+  flavor_name = "s1-2" # Instance type name
   # Name of openstack_compute_keypair_v2 resource named keypair_test
   key_pair    = openstack_compute_keypair_v2.test_keypair.name
   network {
@@ -191,9 +191,9 @@ To do this, we will create a file named "multiple_instance.tf". In it, we first 
 # Creating an SSH key pair
  resource "openstack_compute_keypair_v2" "test_keypair_all" {
    count = length(var.region)
-   provider = openstack.ovh                         # Specify provider name
-   name = "test_keypair_all"                        # Name of the SSH key
-   public_key = file("~/.ssh/id_rsa.pub")           # Your SSH key path
+   provider = openstack.ovh # Specify provider name
+   name = "test_keypair_all" # Name of the SSH key
+   public_key = file("~/.ssh/id_rsa.pub") # Your SSH key path
    region = element(var.region, count.index)
  }
   
@@ -202,17 +202,17 @@ To do this, we will create a file named "multiple_instance.tf". In it, we first 
    # Number of times the resource will be created
    # defined by the length of the list named region
    count = length(var.region)
-   provider = openstack.ovh                         # Provider name
-   name = "terraform_instances"                     # Instance name
-   flavor_name = "s1-2"                             # Instance flavor
-   image_name = "Debian 10"                         # Image name
+   provider = openstack.ovh # Provider name
+   name = "terraform_instances" # Instance name
+   flavor_name = "s1-2" # Instance flavor
+   image_name = "Debian 10" # Image name
    # element is a function that accesses the element at the position
    # count.index of the list var.region. It allows to iterate between regions
    region = element(var.region, count.index)
    # Accesses the name of the openstack_compute_keypair_v2 resource variable named test_keypair
    key_pair = element(openstack_compute_keypair_v2.test_keypair_all.*.name, count.index)
    network {
-     name = "Ext-Net"                               # Adds the public network to your instance
+     name = "Ext-Net" # Adds the public network to your instance
    }
  }
 ```
@@ -240,9 +240,9 @@ In this example we will attach a new storage volume to our first instance. Open 
 ```python
 # Create a resource for storage
 resource "openstack_blockstorage_volume_v2" "volume_to_add" {
-  name = "simple_volume"                           # Volume name
-  size = 10                                        # Volume size in GB
-  provider = openstack.ovh                         # Provider name
+  name = "simple_volume" # Volume name
+  size = 10 # Volume size in GB
+  provider = openstack.ovh # Provider name
 }
  
 # Attach the volume created previously to the instance
@@ -287,8 +287,8 @@ Now add the following lines to the file "provider.tf":
 ```python
 # Provider configuration
 provider "ovh" {
-  endpoint = "ovh-eu"                                      # Provider entry point
-  alias    = "ovh"                                         # Provider alias
+  endpoint = "ovh-eu" # Provider entry point
+  alias    = "ovh" # Provider alias
 }
 ```
 
@@ -299,39 +299,39 @@ Create a file "create_private_network_instance.tf" and enter the following:
 ```python
 # Associating cloud project to vRack
  resource "ovh_vrack_cloudproject" "vcp" {
-  service_name = "VRACK_NAME"                               # Replace with the name of your vRack
-  project_id   = "OS_TENANT_ID"                             # Replace OS_TENANT_ID with your Project Tenant ID
+  service_name = "VRACK_NAME" # Replace with the name of your vRack
+  project_id   = "OS_TENANT_ID" # Replace OS_TENANT_ID with your Project Tenant ID
 } 
  # Creating a private network
  resource "ovh_cloud_project_network_private" "network" {
-    service_name = "OS_TENANT_ID"                           # Replace OS_TENANT_ID with your Project Tenant ID
-    name         = "private_network"                        # Network name
-    regions      = ["OS_REGION_NAME"]                       # Replace OS_REGION_NAME with the environment variable OS_REGION_NAME 
-    provider     = ovh.ovh                                  # Provider name
-    vlan_id      = 168                                      # vlan ID for vRack
-    depends_on   = [ovh_vrack_cloudproject.vcp]             # Depends on the vRack's association with the cloud project
+    service_name = "OS_TENANT_ID" # Replace OS_TENANT_ID with your Project Tenant ID
+    name         = "private_network" # Network name
+    regions      = ["OS_REGION_NAME"] # Replace OS_REGION_NAME with the environment variable OS_REGION_NAME 
+    provider     = ovh.ovh # Provider name
+    vlan_id      = 168 # VLAN ID for vRack
+    depends_on   = [ovh_vrack_cloudproject.vcp] # Depends on the vRack's association with the cloud project
  }
   
  # Creating a subnet using the previously created private network
  resource "ovh_cloud_project_network_private_subnet" "subnet" {
-    service_name = "OS_TENANT_ID"                               # Replace OS_TENANT_ID with your Project Tenant ID
+    service_name = "OS_TENANT_ID" # Replace OS_TENANT_ID with your Project Tenant ID
     # ID of the ovh_cloud_network_private resource named network
     network_id   = ovh_cloud_project_network_private.network.id
-    start        = "192.168.168.100"                            # First IP of the subnet
-    end          = "192.168.168.200"                            # Last IP of the subnet
-    network      = "192.168.168.0/24"                           # Subnet IP address location
-    dhcp         = true                                         # Enables DHCP
-    region       = "OS_REGION_NAME"                             # Replace OS_REGION_NAME with the environment variable OS_REGION_NAME
-    provider     = ovh.ovh                                      # Provider name
-    no_gateway   = true                                         # No default gateway
+    start        = "192.168.168.100" # First IP of the subnet
+    end          = "192.168.168.200" # Last IP of the subnet
+    network      = "192.168.168.0/24" # Subnet IP address location
+    dhcp         = true # Enables DHCP
+    region       = "OS_REGION_NAME" # Replace OS_REGION_NAME with the environment variable OS_REGION_NAME
+    provider     = ovh.ovh # Provider name
+    no_gateway   = true # No default gateway
  }
   
- # Création d'une instance avec 2 interfaces réseau
+# Creating an instance with 2 network interfaces
  resource "openstack_compute_instance_v2" "proxy_instance" {
-   provider     = openstack.ovh                             # Provider name
-   name         = "proxy_instance"                          # Instance name
-   image_name   = "Debian 10"                               # Image name
-   flavor_name  = "s1-2"                                    # Flavor name
+   provider     = openstack.ovh # Provider name
+   name         = "proxy_instance" # Instance name
+   image_name   = "Debian 10" # Image name
+   flavor_name  = "s1-2" # Flavor name
    # Name of openstack_compute_keypair_v2 resource named keypair_test
    key_pair     = openstack_compute_keypair_v2.test_keypair.name
    # Add public and private network
@@ -377,11 +377,11 @@ Create a file "named simple_web_site.tf" and enter the following lines:
 # Creating a private network
 resource "ovh_cloud_project_network_private" "private_network" {
   service_name  = "c076ca2979904ef6bf93faff181dab18" # Replace OS_TENANT_ID with your Tenant Project ID
-  name          = "backend"                          # Network name
-  regions       = ["SBG5"]                           # Replace OS_REGION_NAME with the OS_REGION_NAME environment variable
-  provider      = ovh.ovh                            # Provider name
-  vlan_id       = 42                                 # vRack vlan ID
-  depends_on    = [ovh_vrack_cloudproject.vcp]       # Depends on vRack being associated with the cloud project
+  name          = "backend" # Network name
+  regions       = ["SBG5"] # Replace OS_REGION_NAME with the OS_REGION_NAME environment variable
+  provider      = ovh.ovh # Provider name
+  vlan_id       = 42 # vRack vlan ID
+  depends_on    = [ovh_vrack_cloudproject.vcp] # Depends on vRack being associated with the cloud project
 }
  
 # Creating a private subnet
@@ -389,19 +389,19 @@ resource "ovh_cloud_project_network_private_subnet" "private_subnet" {
   # ID for the ovh_cloud_network_private resource named private_network
   network_id    = ovh_cloud_project_network_private.private_network.id
   service_name  = "c076ca2979904ef6bf93faff181dab18" # Replace OS_TENANT_ID with your Tenant Project ID
-  region        = "SBG5"                             # Replace OS_REGION_NAME with the environment variable OS_REGION_NAME
-  network       = "192.168.42.0/24"                  # Subnet IP
-  start         = "192.168.42.2"                     # First IP of the subnet
-  end           = "192.168.42.200"                   # Last IP of the subnet
-  dhcp          = false                              # Disabling DHCP
-  provider      = ovh.ovh                            # Provider name
-  no_gateway    = true                               # No default gateway
+  region        = "SBG5" # Replace OS_REGION_NAME with the environment variable OS_REGION_NAME
+  network       = "192.168.42.0/24" # Subnet IP
+  start         = "192.168.42.2" # First IP of the subnet
+  end           = "192.168.42.200" # Last IP of the subnet
+  dhcp          = false # Disabling DHCP
+  provider      = ovh.ovh # Provider name
+  no_gateway    = true # No default gateway
 }
  
 # Search for the latest Archlinux image
 data "openstack_images_image_v2" "archlinux" {
-  name          = "Archlinux"   # Image name
-  most_recent   = true          # Limits search to the most recent
+  name          = "Archlinux" # Image name
+  most_recent   = true # Limits search to the most recent
   provider      = openstack.ovh # Provider name
 }
  
@@ -413,13 +413,13 @@ variable "front_private_ip" {
  
 # Create 2 instances with 2 network interfaces
 resource "openstack_compute_instance_v2" "front" {
-  count           = length(var.front_private_ip)                # Number of instances to create
-  provider        = openstack.ovh                               # Provider name
-  name            = "front"                                     # Instance name
+  count           = length(var.front_private_ip) # Number of instances to create
+  provider        = openstack.ovh # Provider name
+  name            = "front" # Instance name
   key_pair        = openstack_compute_keypair_v2.test_keypair.name
-  flavor_name     = "s1-2"                                      # Instance type name
+  flavor_name     = "s1-2" # Instance type name
   image_id        = data.openstack_images_image_v2.archlinux.id # Instance image ID
-  security_groups = ["default"]                                 # Adds the instance to the security group
+  security_groups = ["default"] # Adds the instance to the security group
   network {
     name = "Ext-Net" # Public network interface name
   }
@@ -435,46 +435,46 @@ resource "openstack_compute_instance_v2" "front" {
 # Create an attachable storage device for the backup (volume)
 resource "openstack_blockstorage_volume_v2" "backup" {
   name     = "backup_disk" # Name of storage device
-  size     = 10            # Size
+  size     = 10 # Size
   provider = openstack.ovh # Provider name
 }
  
 # Create an instance with a network interface and storage device
 resource "openstack_compute_instance_v2" "back" {
-  provider        = openstack.ovh                                        # Provider name
-  name            = "back"                                               # Instance name
+  provider        = openstack.ovh # Provider name
+  name            = "back" # Instance name
   key_pair        = openstack_compute_keypair_v2.test_keypair.name
-  flavor_name     = "s1-2"                                               # Instance type name
-  image_id        = data.openstack_images_image_v2.archlinux.id          # Instance image ID
-  security_groups = ["default"]                                          # Adds the instance to the security group
+  flavor_name     = "s1-2" # Instance type name
+  image_id        = data.openstack_images_image_v2.archlinux.id # Instance image ID
+  security_groups = ["default"] # Adds the instance to the security group
   network {
     name        = ovh_cloud_project_network_private.private_network.name # Private network name
-    fixed_ip_v4 = "192.168.42.150"                                       # Private IP address chosen arbitrarily
+    fixed_ip_v4 = "192.168.42.150" # Private IP address chosen arbitrarily
   }
   # Bootable storage device containing the OS
   block_device {
     uuid                  = data.openstack_images_image_v2.archlinux.id # Instance image ID
-    source_type           = "image"                                     # Source type
-    destination_type      = "local"                                     # Destination
-    volume_size           = 10                                          # Size
-    boot_index            = 0                                           # Boot order
-    delete_on_termination = true                                        # The device will be deleted when the instance is deleted
+    source_type           = "image" # Source type
+    destination_type      = "local" # Destination
+    volume_size           = 10 # Size
+    boot_index            = 0  # Boot order
+    delete_on_termination = true  # The device will be deleted when the instance is deleted
   }
   # Storage device
   block_device {
-    source_type           = "blank"                                     # Source type
-    destination_type      = "volume"                                    # Destination
-    volume_size           = 20                                          # Size
-    boot_index            = 1                                           # Boot order
-    delete_on_termination = true                                        # The device will be deleted when the instance is deleted
+    source_type           = "blank" # Source type
+    destination_type      = "volume" # Destination
+    volume_size           = 20 # Size
+    boot_index            = 1 # Boot order
+    delete_on_termination = true # The device will be deleted when the instance is deleted
   }
   # Previously created storage device
   block_device {
     uuid                  = openstack_blockstorage_volume_v2.backup.id # Storage Device ID
-    source_type           = "volume"                                   # Source type
-    destination_type      = "volume"                                   # Destination
-    boot_index            = 2                                          # Boot order
-    delete_on_termination = true                                       # The device will be deleted when the instance is deleted
+    source_type           = "volume" # Source type
+    destination_type      = "volume" # Destination
+    boot_index            = 2 # Boot order
+    delete_on_termination = true # The device will be deleted when the instance is deleted
   }
   depends_on = [ovh_cloud_project_network_private_subnet.private_subnet] # Depends on private network
 }

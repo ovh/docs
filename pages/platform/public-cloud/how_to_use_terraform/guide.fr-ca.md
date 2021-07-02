@@ -59,7 +59,7 @@ Dans un fichier nommé *provider.tf*, insérez les lignes suivantes :
 ```python
 # Définir les providers et fixer les versions
 terraform {
-required_version    = ">= 0.14.0"                    # Prend en compte les versions de terraform à partir de la 0.14.0
+required_version    = ">= 0.14.0"  # Prend en compte les versions de terraform à partir de la 0.14.0
   required_providers {
     openstack = {
       source  = "terraform-provider-openstack/openstack"
@@ -75,9 +75,9 @@ required_version    = ">= 0.14.0"                    # Prend en compte les versi
  
 # Configure le fournisseur OpenStack hébergé par OVHcloud
 provider "openstack" {
-  auth_url    = "https://auth.cloud.ovh.net/v3/"    # URL d'authentification
-  domain_name = "default"                           # Nom de domaine - Toujours à "default" pour OVHcloud
-  alias       = "ovh"                               # Un alias
+  auth_url    = "https://auth.cloud.ovh.net/v3/" # URL d'authentification
+  domain_name = "default"                        # Nom de domaine - Toujours à "default" pour OVHcloud
+  alias       = "ovh"                            # Un alias
 }
 ```
 
@@ -191,9 +191,9 @@ Pour ce faire, vous pouvez créer un fichier nommé *multiple_instance.tf*. Vous
 # Création d'une paire de clé SSH
  resource "openstack_compute_keypair_v2" "test_keypair_all" {
    count = length(var.region)
-   provider = openstack.ovh                         # Préciser le nom du fournisseur
-   name = "test_keypair_all"                        # Nom de la clé SSH
-   public_key = file("~/.ssh/id_rsa.pub")           # Chemin de votre clé SSH
+   provider = openstack.ovh               # Préciser le nom du fournisseur
+   name = "test_keypair_all"              # Nom de la clé SSH
+   public_key = file("~/.ssh/id_rsa.pub") # Chemin de votre clé SSH
    region = element(var.region, count.index)
  }
   
@@ -202,17 +202,17 @@ Pour ce faire, vous pouvez créer un fichier nommé *multiple_instance.tf*. Vous
    # Nombre de fois où la ressource sera créée
    # défini par la longueur de la liste nommée région
    count = length(var.region)
-   provider = openstack.ovh                         # Nom du fournisseur
-   name = "terraform_instances"                     # Nom de l'instance
-   flavor_name = "s1-2"                             # Nom du type d'instance
-   image_name = "Debian 10"                         # Nom de l'image
+   provider = openstack.ovh     # Nom du fournisseur
+   name = "terraform_instances" # Nom de l'instance
+   flavor_name = "s1-2"         # Nom du type d'instance
+   image_name = "Debian 10"     # Nom de l'image
    # element est une fonction qui accède à l'élément à la position
    # count.index de la liste var.region. Il permet d'itérer entre les régions
    region = element(var.region, count.index)
    # Accède au nom de la variable de la ressource openstack_compute_keypair_v2 nommée test_keypair
    key_pair = element(openstack_compute_keypair_v2.test_keypair_all.*.name, count.index)
    network {
-     name = "Ext-Net"                               # Ajoute le réseau public à votre instance
+     name = "Ext-Net"  # Ajoute le réseau public à votre instance
    }
  }
 ```
@@ -287,8 +287,8 @@ Ajoutez ensuite au fichier *provider.tf* les lignes suivantes :
 ```python
 # Configuration du fournisseur
 provider "ovh" {
-  endpoint = "ovh-eu"                                      # Point d'entrée du fournisseur
-  alias    = "ovh"                                         # Alias du fournisseur
+  endpoint = "ovh-eu" # Point d'entrée du fournisseur
+  alias    = "ovh"    # Alias du fournisseur
 }
 ```
 
@@ -299,17 +299,17 @@ Créez à présent un fichier *create_private_network_instance.tf* et insérez-y
 ```python
 # Association du projet cloud au vRack
  resource "ovh_vrack_cloudproject" "vcp" {
-  service_name = "VRACK_NAME"                               # Remplacez par le nom de votre vRack
-  project_id   = "OS_TENANT_ID"                             # Remplacez OS_TENANT_ID par votre Tenant ID de projet
+  service_name = "VRACK_NAME"                   # Remplacez par le nom de votre vRack
+  project_id   = "OS_TENANT_ID"                 # Remplacez OS_TENANT_ID par votre Tenant ID de projet
 } 
  # Création d'un réseau privé
  resource "ovh_cloud_project_network_private" "network" {
-    service_name = "OS_TENANT_ID"                           # Remplacez OS_TENANT_ID par votre Tenant ID de projet
-    name         = "private_network"                        # Nom du réseau
-    regions      = ["OS_REGION_NAME"]                       # Remplacez OS_REGION_NAME par la variable d'environnement OS_REGION_NAME
-    provider     = ovh.ovh                                  # Nom du fournisseur
-    vlan_id      = 168                                      # Identifiant du vlan pour le vRrack
-    depends_on   = [ovh_vrack_cloudproject.vcp]             # Dépend de l'association du vrack au projet cloud
+    service_name = "OS_TENANT_ID"               # Remplacez OS_TENANT_ID par votre Tenant ID de projet
+    name         = "private_network"            # Nom du réseau
+    regions      = ["OS_REGION_NAME"]           # Remplacez OS_REGION_NAME par la variable d'environnement OS_REGION_NAME
+    provider     = ovh.ovh                      # Nom du fournisseur
+    vlan_id      = 168                          # Identifiant du vlan pour le vRrack
+    depends_on   = [ovh_vrack_cloudproject.vcp] # Dépend de l'association du vrack au projet cloud
  }
   
  # Création d'un sous-réseau grâce au réseau privé créé précédemment
@@ -317,21 +317,21 @@ Créez à présent un fichier *create_private_network_instance.tf* et insérez-y
     service_name = "OS_TENANT_ID"                               # Remplacez OS_TENANT_ID par votre Tenant ID de projet
     # Identifiant de la ressource ovh_cloud_network_private nommée network
     network_id   = ovh_cloud_project_network_private.network.id
-    start        = "192.168.168.100"                            # Première IP du sous réseau
-    end          = "192.168.168.200"                            # Dernière IP du sous réseau
-    network      = "192.168.168.0/24"                           # Place d'adressage IP du sous réseau
-    dhcp         = true                                         # Activation du DHCP
-    region       = "OS_REGION_NAME"                             # Remplacez OS_REGION_NAME par la variable d'environnement OS_REGION_NAME
-    provider     = ovh.ovh                                      # Nom du fournisseur
-    no_gateway   = true                                         # Pas de gateway par defaut
+    start        = "192.168.168.100"  # Première IP du sous réseau
+    end          = "192.168.168.200"  # Dernière IP du sous réseau
+    network      = "192.168.168.0/24" # Place d'adressage IP du sous réseau
+    dhcp         = true               # Activation du DHCP
+    region       = "OS_REGION_NAME"   # Remplacez OS_REGION_NAME par la variable d'environnement OS_REGION_NAME
+    provider     = ovh.ovh            # Nom du fournisseur
+    no_gateway   = true               # Pas de gateway par defaut
  }
   
  # Création d'une instance avec 2 interfaces réseau
  resource "openstack_compute_instance_v2" "proxy_instance" {
-   provider     = openstack.ovh                             # Nom du fournisseur
-   name         = "proxy_instance"                              # Nom de l'instance
-   image_name   = "Debian 10"                           # Nom de l'image
-   flavor_name  = "s1-2"                                # Nom du type d'instance
+   provider     = openstack.ovh       # Nom du fournisseur
+   name         = "proxy_instance"    # Nom de l'instance
+   image_name   = "Debian 10"         # Nom de l'image
+   flavor_name  = "s1-2"              # Nom du type d'instance
    # Nom de la ressource openstack_compute_keypair_v2 nommée test_keypair
    key_pair     = openstack_compute_keypair_v2.test_keypair.name
    # Ajout du réseau public et privé
