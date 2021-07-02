@@ -91,7 +91,7 @@ In contrast to RBD keyring, here one need to provide only secret.
 
 
 ```bash
-root@proxmox:~# cat /etc/pve/priv/ceph/ovhcloud-cda-cephfs.secret
+root@proxmox:~$ cat /etc/pve/priv/ceph/ovhcloud-cda-cephfs.secret
 KLChQNJYQJCuXMBBrbsz2XllPn+5+cuXdIfJLg==
 ```
 
@@ -99,9 +99,9 @@ KLChQNJYQJCuXMBBrbsz2XllPn+5+cuXdIfJLg==
 One can now download container templates and store them on CephFS:
 
 ```bash
-root@pve:~# pveam update
-root@pve:~# pveam available --section system
-root@pve:~# pveam download ovhcloud-cda-cephfs ubuntu-20.04-standard_20.04-1_amd64.tar.gz
+root@pve:~$ pveam update
+root@pve:~$ pveam available --section system
+root@pve:~$ pveam download ovhcloud-cda-cephfs ubuntu-20.04-standard_20.04-1_amd64.tar.gz
 ```
 
 Once template has been downloaded one can start using it to create containers.
