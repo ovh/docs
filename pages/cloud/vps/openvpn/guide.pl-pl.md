@@ -28,7 +28,7 @@ OpenVPN to oprogramowanie pozwalające na tworzenie wirtualnej sieci prywatnej (
 
 > [!primary]
 >
-Jeśli chcesz korzystać z istniejącej usługi VPS, możesz to zrobić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), [reinstalując tę usługę za pomocą szablonu OpenVPN](../pierwsze-kroki-vps/#instalacja-lub-reinstalacja-twojego-serwera-vps-gama-aktualna).
+Jeśli chcesz korzystać z istniejącej usługi VPS, możesz to zrobić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), [reinstalując tę usługę za pomocą szablonu OpenVPN](../pierwsze-kroki-vps/#reinstallvps).
 >
 
 Zamów serwer VPS na [stronie produktu](https://www.ovhcloud.com/pl/vps/). Podczas wyboru obrazu wybierz `Dystrybucja z aplikacją`{.action}, a następnie `OpenVPN`{.action} jako system operacyjny.

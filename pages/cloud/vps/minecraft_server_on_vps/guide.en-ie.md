@@ -11,7 +11,7 @@ section: Tutorial
 
 Minecraft is a popular sandbox video game. It needs to be hosted on a server if you wish to play in multiplayer.
 
-You can rent a pre-built Minecraft server or you can set it up yourself on a [VPS](https://www.ovhcloud.com/en-sg/vps/) or on a [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/){.external}. This will reduce the cost and give you full control over your game instance.
+You can rent a pre-built Minecraft server or you can set it up yourself on a [VPS](https://www.ovhcloud.com/en-ie/vps/) or on a [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/){.external}. This will reduce the cost and give you full control over your game instance.
 
 **This tutorial explains how to launch a Minecraft Java Edition server on an OVHcloud VPS and test its connectivity.**
 
@@ -23,7 +23,7 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 
 ## Requirements
 
-- a [Virtual Private Server](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account, with 2 GB of RAM minimum
+- a [Virtual Private Server](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account, with 2 GB of RAM minimum
 - installing a GNU/Linux distribution on the server
 - administrative access (root) via SSH or remote desktop (Windows) to your server
 - a basic understanding of GNU/Linux administration
@@ -37,7 +37,7 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 
 ### Step 1: Prepare the server
 
-The first step is to set up your VPS for a Minecraft installation. It is recommended to order a new VPS or reinstall an existing one from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), using the latest available release of Ubuntu or Debian. Please refer to our [Getting started guide](../getting-started-vps/#reinstallvps) if necessary.
+The first step is to set up your VPS for a Minecraft installation. It is recommended to order a new VPS or reinstall an existing one from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), using the latest available release of Ubuntu or Debian. Please refer to our [Getting started guide](../getting-started-vps/#reinstallvps) if necessary.
 
 Once the OS is installed, connect to your VPS with SSH as described in the [Getting started guide](../getting-started-vps/). 
 
@@ -167,7 +167,7 @@ By default, no port needs to be specified.
 
 Your Vanilla Minecraft server is now installed on your VPS.
 
-Please note that this installation guide should also work on an OVHcloud [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) or a [Public Cloud](https://www.ovhcloud.com/en-sg/public-cloud/). instance. With those services, you will have the advantage of better stability since the hardware is dedicated.
+Please note that this installation guide should also work on an OVHcloud [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) or a [Public Cloud](https://www.ovhcloud.com/en-ie/public-cloud/). instance. With those services, you will have the advantage of better stability since the hardware is dedicated.
 
 ## Go further <a name="gofurther"></a>
 
