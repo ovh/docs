@@ -435,7 +435,7 @@ resource "openstack_compute_instance_v2" "front" {
 # Create an attachable storage device for the backup (volume)
 resource "openstack_blockstorage_volume_v2" "backup" {
   name     = "backup_disk" # Name of storage device
-  size     = 10            # Size
+  size     = 10 # Size
   provider = openstack.ovh # Provider name
 }
  
