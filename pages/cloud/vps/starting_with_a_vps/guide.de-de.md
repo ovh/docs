@@ -81,9 +81,9 @@ Retype new password:
 passwd: password updated successfully
 ```
 
-#### Aktivierung der Root-Verbindungen
+#### Aktivierung von Root-Logins
 
-Aus Sicherheitsgründen ist die Verbindung mit dem Root-Benutzer standardmäßig deaktiviert. Wenn Sie diese Verbindungen erlauben möchten, folgen Sie den Instruktionen in [dieser Anleitung](../root-password/#rooterlauben).
+Aus Sicherheitsgründen ist das Verbinden mit dem Root-Benutzer standardmäßig deaktiviert. Wenn Sie diese Verbindungen erlauben möchten, folgen Sie den Instruktionen in [dieser Anleitung](../root-password/#rooterlauben).
 
 #### Neustart Ihres VPS (aktuelle Reihe) <a name="reboot-current-range"></a>
 
@@ -97,7 +97,7 @@ Sie können jedoch jederzeit einen "Hard Reboot" in Ihrem [OVHcloud Kundencenter
 
 ![Neustart](images/reboot-vps-current.png){.thumbnail}
 
-#### VPS installieren oder neu installieren (aktuelle Reihe)
+#### VPS installieren oder neu installieren (aktuelle Reihe) <a name="reinstallvps"></a>
 
 Sie können jede Neuinstallation über das OVHcloud Kundencenter durchführen. Gehen Sie im Tab „Start“ im Bereich **Ihr VPS** zu „Betriebssystem / Distribution“. Klicken Sie auf `...`{.action} und dann auf `VPS reinstallieren`{.action}.
 

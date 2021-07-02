@@ -28,7 +28,7 @@ OpenVPN ist eine Anwendung, die Ihnen ermöglicht, ein virtuelles privates Netzw
 
 > [!primary]
 >
-Wenn Sie einen bestehenden VPS verwenden möchten, können Sie dies über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erreichen, indem Sie den Dienst [mit dem OpenVPN Template reinstallieren](../erste-schritte-mit-einem-vps/#vps-installieren-oder-neu-installieren-aktuelle-reihe).
+Wenn Sie einen bestehenden VPS verwenden möchten, können Sie dies über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erreichen, indem Sie den Dienst [mit dem OpenVPN Template reinstallieren](../erste-schritte-mit-einem-vps/#reinstallvps).
 >
 
 Bestellen Sie Ihren VPS auf der [Produktseite](https://www.ovhcloud.com/de/vps/). Klicken Sie bei der Image-Auswahl auf `Distribution mit Anwendung`{.action} und dann auf `OpenVPN`{.action} als Betriebssystem.
