@@ -6,13 +6,13 @@ section: Configuration sur ordinateur
 order: 1
 ---
 
-**Dernière mise à jour le 17/05/2018**
+**Dernière mise à jour le 30/06/2021**
 
 ## Objectif
 
-Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix.
+Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix. 
 
-**Apprenez à configurer votre adresse e-mail MX Plan sur Outlook 2016 pour Windows.**
+**Apprenez à configurer votre adresse e-mail MX Plan sur Outlook 2016 etultérieur pour Windows.**
 
 
 > [!warning]
@@ -26,7 +26,7 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logicie
 ## Prérequis
 
 - Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}).
-- Disposer du logiciel Microsoft Outlook 2016 installé sur votre appareil.
+- Disposer du logiciel Microsoft Outlook 2016 ou ultérieur installé sur votre appareil.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
 > [!primary]
@@ -38,7 +38,7 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logicie
 
 ## En pratique
 
-### Étape 1 : ajouter le compte
+### Ajouter le compte
 
 Une fois l'application Outlook lancée sur votre appareil, l'ajout d'un compte peut être effectué de deux manières différentes.
 
@@ -46,57 +46,43 @@ Une fois l'application Outlook lancée sur votre appareil, l'ajout d'un compte p
 
 - **Si un compte a déjà été paramétré** : cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran, puis sur `Ajouter un compte`{.action}.
 
-![mxplan](images/configuration-outlook-2016-windows-step1.png){.thumbnail}
+- Renseignez à présent votre adresse e-mail, puis appuyez sur `Options avancées`{.action}. Cochez la case à côté de `Configurer mon compte manuellement`{.action} qui vient d'apparaître, puis cliquez sur `Connexion`{.action}. 
 
-Renseignez à présent votre adresse e-mail, puis appuyez sur `Options avancées`{.action}. Cochez la case à côté de `Configurer mon compte manuellement`{.action} qui vient d'apparaître, puis cliquez sur `Connexion`{.action}.
+![Outlook](images/config-outlook-mxplan01.png){.thumbnail}
 
 Parmi les différents types de comptes, choisissez entre **IMAP** et **POP**. Nous vous conseillons une utilisation en **IMAP**. Vous pouvez cependant sélectionner **POP** pour le stockage local des e-mails sur votre logiciel Outlook.
 
-![mxplan](images/configuration-outlook-2016-windows-step2.png){.thumbnail}
-
-Complétez ensuite les informations demandées.
-
-- **pour le courrier entrant :**
-
-|Information|Description|
+| | |
 |---|---|
-|Serveur|Renseignez le serveur « ssl0.ovh.net ».|
-|Port|Indiquez le port « 993 ».|
-|Méthode de chiffrement|Sélectionnez « SSL/TLS ».|
-|Exiger l'authentification|Ne cochez pas la case « Exiger l'authentification par mot de passe sécurisé (SPA) lors de la connexion ».|
+|![Outlook](images/config-outlook-mxplan02.png){.thumbnail}|Parmi les différents types de comptes, choisissez entre IMAP et POP. <br>Nous vous conseillons une utilisation en IMAP. <br>Vous pouvez cependant sélectionner POP pour le stockage local des e-mails sur votre logiciel Outlook.|
+|Saisissez le mot de passe de votre adresse e-mail, puis cliquez sur `Suivant`{.action}. |![Outlook](images/config-outlook-mxplan03.png){.thumbnail}|
+|![Outlook](images/config-outlook-mxplan04.png){.thumbnail}|Si Outlook n'est pas parvenu à configurer automatiquement votre adresse, cette fenêtre s'affiche. <br>Cliquez sur `Modifier les paramètres du compte compte`{.action} |
+|Saisissez dans **Courrier entrant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider. |![Outlook](images/config-outlook-mxplan05.png){.thumbnail}|
 
-- **pour le courrier sortant :**
 
-|Information|Description|
-|---|---|
-|Serveur|Renseignez le serveur « ssl0.ovh.net ».|
-|Port|Indiquez le port « 465 ».|
-|Méthode de chiffrement|Sélectionnez « SSL/TLS ».|
-|Exiger l'authentification|Ne cochez pas la case « Exiger l'authentification par mot de passe sécurisé (SPA) lors de la connexion ».|
 
-Une fois les informations complétées, cliquez sur `Suivant`{.action} puis renseignez le **mot de passe** de l'adresse e-mail. Si les informations renseignées sont correctes, la connexion au compte réussira.
-
-Vous pouvez effectuer un test d'envoi pour vérifier que le compte est correctement paramétré.
-
-![mxplan](images/configuration-outlook-2016-windows-step3.png){.thumbnail}
-
-Si vous êtes amené à renseigner manuellement des champs techniques dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser avec notre offre MX Plan :
-
-- **Pour une configuration en IMAP**
-
-|Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
-|---|---|---|---|
-|Entrant|ssl0.ovh.net|SSL/TLS|993|
-|Sortant|ssl0.ovh.net|SSL/TLS|465|
-
-- **Pour une configuration en POP**
+Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 
 |Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
 |---|---|---|---|
 |Entrant|ssl0.ovh.net|SSL/TLS|995|
 |Sortant|ssl0.ovh.net|SSL/TLS|465|
 
-### Étape 2 : utiliser l'adresse e-mail
+### Modifier les paramètres existant:
+
+Si votre compte e-mail est déjà paramètré et que vous devez accèder aux paramètres du compte pour les modifier:
+
+- Allez dans `Fichier`{.action} depuis la barre de menu en haut de votre écran, puis sélectionnez le compte à modifier dans le menu déroulant **(1)**.
+- Cliquez sur `Paramètres du compte`{.action}**(2)** en dessous.
+- Cliquez sur `Paramètres du serveur`{.action} pour accèder à la fenêtre de paramètres.
+
+![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
+
+La fenêtre est divisez en deux parties, **Courrier entrant** et **Courrier sortant**. Cliquez sur l'un ou l'autre pour pouvoir les modifier.
+
+![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+
+### utiliser l'adresse e-mail
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
@@ -106,6 +92,6 @@ OVH propose aussi une application web permettant d'accéder à votre adresse e-m
 
 [Configurer son compte E-mail Pro sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/emails-pro/configuration-outlook-2016/){.external}
 
-[Configurer son compte Exchange sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook-2016/){.external}
+[Configurer son compte Exchange sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/microsoft-collaborative-solutions/Outlook-configuration-automatique-sous-outlook-2016/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
