@@ -1,6 +1,6 @@
 ---
-title: Ceph mit Proxmox (EN) verwenden
-slug: ceph/utiliser-ceph-avec-proxmox
+title: Utilizza Ceph con Proxmox (EN)
+slug: ceph/use-ceph-with-proxmox
 excerpt: Find out how to set up the Cloud Disk Array on Proxmox
 section: Cloud Disk Array
 ---
