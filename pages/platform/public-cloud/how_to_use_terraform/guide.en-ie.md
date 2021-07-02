@@ -122,7 +122,7 @@ resource "openstack_compute_instance_v2" "test_terraform_instance" {
 
 Right-click <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/public-cloud/how_to_use_terraform/images/TF2.txt" download>here and "Save Link As"</a> to download the code-only text file.
 
-You now need to [create a new OpenStack user](https://docs.ovh.com/us/en/public-cloud/creation-and-deletion-of-openstack-user/), then [generate the OpenRC file](https://docs.ovh.com/us/en/public-cloud/set-openstack-environment-variables/#step-1-retrieve-the-variables) containing all of the credentials you want to export as environment variables.
+You now need to [create a new OpenStack user](https://docs.ovh.com/ie/en/public-cloud/creation-and-deletion-of-openstack-user/) , then [generate the OpenRC file](https://docs.ovh.com/ie/en/public-cloud/set-openstack-environment-variables/#step-1-retrieve-the-variables) containing all of the credentials you want to export as environment variables.
 
 Load this file, then enter the password for the user you created earlier:
 
@@ -149,7 +149,7 @@ You can enter the following command to import your SSH key and create your first
 terraform apply
 ```
 
-If you log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or [the Horizon interface](https://horizon.cloud.ovh.net/auth/login/), you will find an instance named "terraform_instance".
+If you log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) or [the Horizon interface](https://horizon.cloud.ovh.net/auth/login/), you will find an instance named "terraform_instance".
 
 > [!primary]
 > Note that creating a second, identical instance with `terraform apply` will not work.
@@ -326,7 +326,7 @@ Create a file "create_private_network_instance.tf" and enter the following:
     no_gateway   = true # No default gateway
  }
   
- # Creating an instance with 2 network interfaces
+# Creating an instance with 2 network interfaces
  resource "openstack_compute_instance_v2" "proxy_instance" {
    provider     = openstack.ovh # Provider name
    name         = "proxy_instance" # Instance name
