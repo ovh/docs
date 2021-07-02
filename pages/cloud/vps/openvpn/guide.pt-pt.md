@@ -28,7 +28,7 @@ OpenVPN é um software que lhe permite criar uma rede privada virtual (VPN). Ao 
 
 > [!primary]
 >
-Se pretender utilizar um serviço VPS existente, pode fazê-lo a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), [reinstalando este serviço com o template OpenVPN](../instalar-gerir-vps/#instalacao-ou-reinstalacao-do-vps-gama-atual).
+Se pretender utilizar um serviço VPS existente, pode fazê-lo a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), [reinstalando este serviço com o template OpenVPN](../instalar-gerir-vps/#reinstallvps).
 >
 
 Encomende o seu VPS na [página do produto](https://www.ovhcloud.com/pt/vps/). Ao selecionar a imagem, selecione a `Distribuição com aplicação`{.action} e, a seguir, `OpenVPN`{.action} como sistema operativo.
