@@ -23,7 +23,7 @@ If you do not already have one you can create one [here](https://ca.ovh.com/auth
 
 In order to upload files you must be authenticated. Click `Login with OVH`{.action} to begin.
 
-![login](images/plik-login.png]
+![login](images/plik-login.png)
 
 Sign in with your OVHcloud account, giving the API access to the tool. Type in your credentials and click the `Log in`{.action} button to proceed.
 
