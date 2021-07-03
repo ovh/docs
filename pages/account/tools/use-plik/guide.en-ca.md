@@ -75,7 +75,7 @@ On the download page, we have new options:
 
 You may also delete files one at a time by clicking the `X`{.action} button next to the file.
 
-~[download file}(images/plik-download.png)
+![download file}(images/plik-download.png)
 
 To allow your end-user(s) to download your files, give them the link to the individual file located below the file name. You may also give them the link to all the files in the session by giving them the URL located in your web address bar.
 
