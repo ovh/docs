@@ -39,7 +39,7 @@ Once logged in, you will have the ability to upload files, log out, create acces
 
 To upload a file, select the `Upload files`{.action} button. This will bring up a new page. On this page, you have many options for how to make your uploads available.
 
-![upload options](images/plik-upload-options.png]
+![upload options](images/plik-upload-options.png)
 
 
 - Destruct after the first download - This option will delete your upload after the first time it is downloaded
