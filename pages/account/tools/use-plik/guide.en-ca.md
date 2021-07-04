@@ -1,6 +1,6 @@
 ---
 title: Using Plik
-excerpt: Find out how to use Plik to send files to others.
+excerpt: Find out how to use Plik to send files to others
 slug: plik
 section: Plik
 ---
@@ -41,7 +41,6 @@ To upload a file, select the `Upload files`{.action} button. This will bring up 
 
 ![upload options](images/plik-upload-options.png)
 
-
 - Destruct after the first download - This option will delete your upload after the first time it is downloaded
 - Streaming - The file will not be stored on the server. Instead, the file upload will begin when the remote user begins the download.
 - Removable - Allows the end-user(s) to delete the file
@@ -54,13 +53,13 @@ To upload a file, select the `Upload files`{.action} button. This will bring up 
 > Note: When protecting your upload with a password, the default username is plik.
 >
 
-Select the options that you wish to use and click the Add files button.
+Select the options that you wish to use and click the `Add files`{.action} button.
 
 ![add files](images/plik-add-files.png)
 
 > [!primary]
 > 
-> Note: Note: Files are limited to 10 GB in size.
+> Note: Files are limited to 10 GB in size.
 >
 
 After selecting the files you wish to upload, select the green `Upload`{.action} button on the left-hand side. This will open a new page with your files attached; from here, we will go over our downloading options.
