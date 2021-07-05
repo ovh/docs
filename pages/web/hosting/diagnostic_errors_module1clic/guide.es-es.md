@@ -131,9 +131,9 @@ Una vez que haya realizado todas las copias de seguridad necesarias, [elimine el
 
 ### Su antiguo sitio web sigue apareciendo
 
-Esta anomalía puede tener varias causas: 
+Esta anomalía puede tener varias causas:
 
-- Recientemente ha realizado un cambio en la zona o servidores [DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns) o una [transferencia de dominio](../../domains/transferir-un-dominio-generico/). Espere a que estas operaciones se completen (48 horas para realizar cambios en sus DNS). También puede reiniciar los dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador.
+- Recientemente ha realizado un cambio en la zona o servidores [DNS](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/) o una [transferencia de dominio](../../domains/transferir-un-dominio-generico/). Espere a que estas operaciones se completen (48 horas para realizar cambios en sus DNS). También puede reiniciar los dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador.
 
 - Su dominio siempre está asociado a su antiguo alojamiento. Cambie en este caso su [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-su-dominio_1) o sus [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#cambiar-los-servidores-dns) o contacte con su antiguo proveedor de hosting.
 

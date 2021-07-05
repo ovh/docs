@@ -121,9 +121,9 @@ Abra la pestaña `Multisitio`{.action} y realice las siguientes comprobaciones:
 |Escenario|Medidas que deberá adoptar|
 |---|---|
 |El dominio o subdominio asociado al sitio que quiere crear no aparece en el `multisitio`{.action}.|Añada su dominio siguiendo [estas indicaciones](../configurar-un-multisitio-en-un-alojamiento-web/#2-anadir-un-dominio-o-subdominio).|
-|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Si su dominio o su [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/) no están gestionados desde su cuenta de OVHcloud, añada su dominio al `multisitio`{.action} siguiendo [esta guía](../cconfigurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
+|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Si su dominio o su [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/) no están gestionados desde su cuenta de OVHcloud, añada su dominio al `multisitio`{.action} siguiendo [esta guía](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
 
-### Su módulo se muestra en una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net".
+### Su módulo se muestra en una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net"
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
@@ -131,9 +131,9 @@ Una vez que haya realizado todas las copias de seguridad necesarias, [elimine el
 
 ### Su antiguo sitio web sigue apareciendo
 
-Esta anomalía puede tener varias causas: 
+Esta anomalía puede tener varias causas:
 
-- Recientemente ha realizado un cambio en la zona o servidores [DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns) o una [transferencia de dominio](../../domains/transferir-un-dominio-generico/). Espere a que estas operaciones se completen (48 horas para realizar cambios en sus DNS). También puede reiniciar los dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador.
+- Recientemente ha realizado un cambio en la zona o servidores [DNS](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/) o una [transferencia de dominio](../../domains/transferir-un-dominio-generico/). Espere a que estas operaciones se completen (48 horas para realizar cambios en sus DNS). También puede reiniciar los dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador.
 
 - Su dominio siempre está asociado a su antiguo alojamiento. Cambie en este caso su [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-su-dominio_1) o sus [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#2-editar-los-servidores-dns-de-un-dominio) o contacte con su antiguo proveedor de hosting.
 
