@@ -60,8 +60,8 @@ Une fois l'application Outlook lancée sur votre appareil, l'ajout d'un compte p
 > Nous vous conseillons de vérifier la configuration du nom de domaine paramétré sur votre service Exchange dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, onglet `Domaines associés`{.action}, puis colonne `Diagnostic`{.action} du tableau.
 >
 
-- Si la configuration de votre nom de domaine est valide, un message d'autorisation de connexion aux serveur d'OVHcloud peu apparaître. Acceptez celui-ci pour permettre la configuration automatique de votre compte Exchange.
-- déterminez ensuite la périodicité de concervation des éléments de vote compte Exchange, **en local sur votre ordianteur**. Cliquez sur `suivant`{.action}, puis sur `Terminé`{.action}
+- Si la configuration de votre nom de domaine est valide, un message d'autorisation de connexion aux serveurs d'OVHcloud peu apparaître. Acceptez celui-ci pour permettre la configuration automatique de votre compte Exchange.
+- Déterminez ensuite la périodicité de conservation des éléments de vote compte Exchange, **en local sur votre ordianteur**. Cliquez sur `suivant`{.action}, puis sur `Terminé`{.action}
 
 ![exchange](images/config-outlook-exchange04.png){.thumbnail}
 
