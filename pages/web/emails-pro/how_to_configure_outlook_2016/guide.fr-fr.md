@@ -60,8 +60,8 @@ Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 
 |Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
 |---|---|---|---|
-|Entrant|pro**?**.mail.ovh.net (la mention «**?**» est à remplacer par le numéro de votre serveur)|SSL/TLS|995|
-|Sortant|pro**?**.mail.ovh.net (la mention «**?**» est à remplacer par le numéro de votre serveur)|STARTTLS|587|
+|Entrant|pro**?**.mail.ovh.net (la mention **«?»** est à remplacer par le numéro de votre serveur)|SSL/TLS|995|
+|Sortant|pro**?**.mail.ovh.net (la mention **«?»** est à remplacer par le numéro de votre serveur)|STARTTLS|587|
 
 ### Modifier les paramètres existants:
 
@@ -74,6 +74,14 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 ![Outlook](images/config-outlook-emailpro06.png){.thumbnail}
 
 La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sortant**. Cliquez sur l'un ou l'autre pour pouvoir les modifier.
+
+> [!primary]
+>
+> Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> 
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}
+>  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> 
 
 ![Outlook](images/config-outlook-emailpro07.png){.thumbnail}
 
