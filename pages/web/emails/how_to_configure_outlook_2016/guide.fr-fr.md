@@ -1,7 +1,7 @@
 ---
-title: Configurer son adresse e-mail sur Outlook 2016 pour Windows
+title: Configurer son adresse e-mail sur Outlook pour Windows
 slug: configuration-outlook-2016
-excerpt: Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook 2016 pour Windows
+excerpt: Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook pour Windows
 section: Configuration sur ordinateur
 order: 1
 ---
@@ -12,12 +12,12 @@ order: 1
 
 Les comptes MX Plan  peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
 
-** Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook 2016 etultérieur pour Windows.**
+** Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook 2016 ou ultérieur pour Windows.**
 
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -25,8 +25,8 @@ Les comptes MX Plan  peuvent être configurés sur différents logiciels de mess
 
 ## Prérequis
 
-- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}).
-- Disposer du logiciel Microsoft Outlook 2016 ou ultérieur installé sur votre appareil.
+- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}).
+- Disposer du logiciel Microsoft Outlook 2016 ou ultérieur.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
 > [!primary]
@@ -40,8 +40,6 @@ Les comptes MX Plan  peuvent être configurés sur différents logiciels de mess
 
 ### Ajouter le compte
 
-L'ajout d'un compte depuis Outlook peut être effectué de manières différentes.
-
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche et vous invite à renseigner votre adresse e-mail.
 
 - **Si un compte a déjà été paramétré** : cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran, puis sur `Ajouter un compte`{.action}.
@@ -50,13 +48,11 @@ L'ajout d'un compte depuis Outlook peut être effectué de manières différente
 
 ![Outlook](images/config-outlook-mxplan01.png){.thumbnail}
 
-Parmi les différents types de comptes, choisissez entre **IMAP** et **POP**. Nous vous conseillons une utilisation en **IMAP**. Vous pouvez cependant sélectionner **POP** pour le stockage local des e-mails sur votre logiciel Outlook.
-
 | | |
 |---|---|
 |![Outlook](images/config-outlook-mxplan02.png){.thumbnail}|Parmi les différents types de comptes, choisissez entre IMAP et POP. <br>Nous vous conseillons une utilisation en IMAP.|
 |Saisissez le mot de passe de votre adresse e-mail, puis cliquez sur `Suivant`{.action}. |![Outlook](images/config-outlook-mxplan03.png){.thumbnail}|
-|![Outlook](images/config-outlook-mxplan04.png){.thumbnail}|Si Outlook n'est pas parvenu à configurer automatiquement votre adresse, cette fenêtre s'affiche. <br>Cliquez sur `Modifier les paramètres du compte compte`{.action} |
+|![Outlook](images/config-outlook-mxplan04.png){.thumbnail}|Si Outlook n'est pas parvenu à configurer automatiquement votre adresse, cette fenêtre s'affiche. <br>Cliquez sur `Modifier les paramètres du compte`{.action} |
 |Saisissez dans **Courrier entrant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider. |![Outlook](images/config-outlook-mxplan05.png){.thumbnail}|
 
 
@@ -67,7 +63,7 @@ Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 |Entrant|ssl0.ovh.net|SSL/TLS|995|
 |Sortant|ssl0.ovh.net|SSL/TLS|465|
 
-### Modifier les paramètres existant:
+### Modifier les paramètres existants:
 
 Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier:
 
@@ -85,7 +81,7 @@ La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sor
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ## Aller plus loin
 

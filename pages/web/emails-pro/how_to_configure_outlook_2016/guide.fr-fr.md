@@ -17,7 +17,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -32,8 +32,6 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ### Ajouter le compte
 
-L'ajout d'un compte depuis Outlook peut être effectué de manières différentes.
-
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche et vous invite à renseigner votre adresse e-mail.
 
 - **Si un compte a déjà été paramétré** : cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran, puis sur `Ajouter un compte`{.action}.
@@ -41,8 +39,6 @@ L'ajout d'un compte depuis Outlook peut être effectué de manières différente
 - Renseignez à présent votre adresse e-mail, puis appuyez sur `Options avancées`{.action}. Cochez la case à côté de `Configurer mon compte manuellement`{.action} qui vient d'apparaître, puis cliquez sur `Connexion`{.action}. 
 
 ![Outlook](images/config-outlook-emailpro01.png){.thumbnail}
-
-Parmi les différents types de comptes, choisissez entre **IMAP** et **POP**. Nous vous conseillons une utilisation en **IMAP**. Vous pouvez cependant sélectionner **POP** pour le stockage local des e-mails sur votre logiciel Outlook.
 
 > [!primary]
 >
@@ -56,7 +52,7 @@ Parmi les différents types de comptes, choisissez entre **IMAP** et **POP**. No
 |---|---|
 |![Outlook](images/config-outlook-emailpro02.png){.thumbnail}|Parmi les différents types de comptes, choisissez entre IMAP et POP. <br>Nous vous conseillons une utilisation en IMAP.|
 |Saisissez le mot de passe de votre adresse e-mail, puis cliquez sur `Suivant`{.action}. |![Outlook](images/config-outlook-emailpro03.png){.thumbnail}|
-|![Outlook](images/config-outlook-emailpro04.png){.thumbnail}|Si Outlook n'est pas parvenu à configurer automatiquement votre adresse, cette fenêtre s'affiche. <br>Cliquez sur `Modifier les paramètres du compte compte`{.action} |
+|![Outlook](images/config-outlook-emailpro04.png){.thumbnail}|Si Outlook n'est pas parvenu à configurer automatiquement votre adresse, cette fenêtre s'affiche. <br>Cliquez sur `Modifier les paramètres du compte`{.action} |
 |Saisissez dans **Courrier entrant**: <br>- le serveur **pro**?**.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur) <br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **pro**?**.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur)<br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider. |![Outlook](images/config-outlook-emailpro05.png){.thumbnail}|
 
 
@@ -67,7 +63,7 @@ Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 |Entrant|pro**?**.mail.ovh.net (la mention «**?**» est à remplacer par le numéro de votre serveur)|SSL/TLS|995|
 |Sortant|pro**?**.mail.ovh.net (la mention «**?**» est à remplacer par le numéro de votre serveur)|STARTTLS|587|
 
-### Modifier les paramètres existant:
+### Modifier les paramètres existants:
 
 Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier:
 
@@ -85,7 +81,7 @@ La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sor
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ## Aller plus loin
 
