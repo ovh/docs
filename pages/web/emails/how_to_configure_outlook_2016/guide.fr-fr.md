@@ -1,18 +1,18 @@
 ---
 title: Configurer son adresse e-mail sur Outlook 2016 pour Windows
 slug: configuration-outlook-2016
-excerpt: Apprenez à configurer votre adresse e-mail MX Plan sur Outlook 2016 pour Windows
+excerpt: Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook 2016 pour Windows
 section: Configuration sur ordinateur
 order: 1
 ---
 
-**Dernière mise à jour le 30/06/2021**
+**Dernière mise à jour le 05/06/2021**
 
 ## Objectif
 
-Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix. 
+Les comptes MX Plan  peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
 
-**Apprenez à configurer votre adresse e-mail MX Plan sur Outlook 2016 etultérieur pour Windows.**
+** Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook 2016 etultérieur pour Windows.**
 
 
 > [!warning]
@@ -40,7 +40,7 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logicie
 
 ### Ajouter le compte
 
-Une fois l'application Outlook lancée sur votre appareil, l'ajout d'un compte peut être effectué de deux manières différentes.
+L'ajout d'un compte depuis Outlook peut être effectué de manières différentes.
 
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche et vous invite à renseigner votre adresse e-mail.
 
@@ -54,11 +54,10 @@ Parmi les différents types de comptes, choisissez entre **IMAP** et **POP**. No
 
 | | |
 |---|---|
-|![Outlook](images/config-outlook-mxplan02.png){.thumbnail}|Parmi les différents types de comptes, choisissez entre IMAP et POP. <br>Nous vous conseillons une utilisation en IMAP. <br>Vous pouvez cependant sélectionner POP pour le stockage local des e-mails sur votre logiciel Outlook.|
+|![Outlook](images/config-outlook-mxplan02.png){.thumbnail}|Parmi les différents types de comptes, choisissez entre IMAP et POP. <br>Nous vous conseillons une utilisation en IMAP.|
 |Saisissez le mot de passe de votre adresse e-mail, puis cliquez sur `Suivant`{.action}. |![Outlook](images/config-outlook-mxplan03.png){.thumbnail}|
 |![Outlook](images/config-outlook-mxplan04.png){.thumbnail}|Si Outlook n'est pas parvenu à configurer automatiquement votre adresse, cette fenêtre s'affiche. <br>Cliquez sur `Modifier les paramètres du compte compte`{.action} |
 |Saisissez dans **Courrier entrant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider. |![Outlook](images/config-outlook-mxplan05.png){.thumbnail}|
-
 
 
 Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
