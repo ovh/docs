@@ -80,7 +80,7 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 #### Rozdział 4: zainstalować moduł na bazie danych
 
-Aby zainstalować moduł na bazie danych, której już używasz, użyj zaawansowanego[ ](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#instalacja-w-trybie-zaawansowanym)trybu instalacji nowego **modułu za pomocą 1 kliknięcia**.
+Aby zainstalować moduł na bazie danych, której już używasz, [użyj zaawansowanego](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#instalacja-w-trybie-zaawansowanym)trybu instalacji nowego **modułu za pomocą 1 kliknięcia**.
 
 Aby odnaleźć dane do logowania do bazy danych, sprawdź nasz [FAQ](https://www.ovh.pl/hosting/faq/).
 
@@ -116,7 +116,7 @@ Następnie uruchom ponownie instalację nowego modułu.
 
 ![domainenotproposed](images/domainenotproposed.png){.thumbnail}
 
-Kliknij kartę MultiSite` `{.action}, po czym przeprowadź następujące kontrole:
+Kliknij kartę `MultiSite`{.action}, po czym przeprowadź następujące kontrole:
 
 |Scenariusz|Co należy zrobić?|
 |---|---|
@@ -131,11 +131,11 @@ Po wykonaniu wszystkich niezbędnych kopii zapasowych [usuń moduł](#delete-mod
 
 ### Twoja stara strona wciąż się wyświetla
 
-Ta nieprawidłowość może mieć kilka przyczyn: 
+Ta nieprawidłowość może mieć kilka przyczyn:
 
 - Dokonałeś ostatnio zmiany strefy lub serwerów [DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns) lub [transferu domeny](../../domains/przeniesienie-domeny-globalnej/). Odczekaj, aż operacje te zostaną zakończone (48 godziny w przypadku zmiany serwerów DNS). Pamiętaj, aby zrestartować urządzenia (komputer, smartfon, box, etc.) i usunąć cache przeglądarki.
 
-- Twoja domena jest zawsze powiązana z Twoim poprzednim hostingiem. W tym przypadku zmień [strefę DNS](../../hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-domeny_1) lub [serwery DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zmien-serwery-dns) lub skontaktuj się z aktualnym dostawcą usług hostingowych.
+- Twoja domena jest zawsze powiązana z Twoim poprzednim hostingiem. W tym przypadku zmień [strefę DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-domeny_1) lub [serwery DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zmien-serwery-dns) lub skontaktuj się z aktualnym dostawcą usług hostingowych.
 
 ## ## Sprawdź również <a name="gofurther"></a>
 
