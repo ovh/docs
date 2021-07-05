@@ -73,7 +73,7 @@ Si votre compte e-mail est déjà paramètré et que vous devez accèder aux par
 
 - Allez dans `Fichier`{.action} depuis la barre de menu en haut de votre écran, puis sélectionnez le compte à modifier dans le menu déroulant **(1)**.
 - Cliquez sur `Paramètres du compte`{.action}**(2)** en dessous.
-- Cliquez sur `Paramètres du serveur`{.action} pour accèder à la fenêtre de paramètres.
+- Cliquez sur `Paramètres du serveur`{.action}**(3)** pour accèder à la fenêtre de paramètres.
 
 ![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
 
