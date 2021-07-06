@@ -81,3 +81,103 @@ To allow your end-user(s) to download your files, give them the link to the indi
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
+
+---
+
+
+
+
+---
+
+
+
+Titulo: Usando Plik
+extracto: Descubra cómo utilizar Plik para enviar archivos a otras personas
+fuente: plik
+sección: Herramientas
+---
+
+**Last updated July 5rd, 2021**
+
+## Objetivo
+
+**Esta guía proporciona información básica sobre cómo utilizar [Plik](https://ca.plik.ovh/#/), algunos casos de uso y las diferentes opciones para compartir archivos.**
+
+## Requerimientos
+
+- Una cuenta OVHcloud 
+
+Si aún no tiene una, puede crear una [aca](https://ca.ovh.com/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=CA).
+
+## Instrucciones
+
+### Inicio de sesión de API: 
+
+Para cargar archivos, debe estar autenticado. Hacer clic `Iniciar sesión con OVH`{.action} para empezar.
+
+![Inicio](images/plik-login.png)
+Inicie sesión con su cuenta de OVHcloud, dando acceso a la API a la herramienta. Escriba sus credenciales y haga clic en el botón `Iniciar sesión`{.action} para continuar
+
+![API](images/api-login.png)
+
+Esto lo llevará a la página de carga.
+
+### Carga de archivos:
+
+Una vez que haya iniciado sesión, podrá cargar archivos, cerrar sesión, crear tokens de acceso o eliminar todas las cargas.
+
+![Carga](images/plik-upload.png)
+
+Para cargar un archivo, seleccione el botón `Cargar archivos` {.acción}. Esto abrirá una nueva página. En esta página, tiene muchas opciones sobre cómo hacer que sus cargas estén disponibles.
+
+![Opciones de carga](images/plik-upload-options.png)
+
+- Destruir después de la primera descarga: esta opción eliminará su carga después de la primera vez que se descargue
+- Streaming: el archivo no se almacenará en el servidor. En cambio, la carga del archivo comenzará cuando el usuario remoto comience la descarga.
+- Extraíble: permite a los usuarios finales eliminar el archivo
+- Contraseña: proteja su carga con credenciales
+- Comentarios: agregue comentarios a su carga, se admite el lenguaje Markdown
+- Los archivos se eliminarán automáticamente en - Elija la cantidad de días (30 como máximo), horas o minutos en los que desea que sus archivos se eliminen automáticamente.
+- 
+> [!primary]
+> 
+> Note: When protecting your upload with a password, the default username is plik.
+>
+
+Select the options that you wish to use and click the `Add files`{.action} button.
+
+![add files](images/plik-add-files.png)
+
+> [!primary]
+> 
+> Nota: los archivos están limitados a 10 GB de tamaño.
+> 
+
+After selecting the files you wish to upload, select the green `Upload`{.action} button on the left-hand side. This will open a new page with your files attached; from here, we will go over our downloading options.
+
+### Descargando archivos
+
+En la página de descarga, tenemos nuevas opciones:
+
+- Archivo zip: coloca todos los archivos que cargó en una carpeta zip
+- Agregar archivos: agregue más archivos a este enlace
+- Eliminar: elimina todos los archivos adjuntos a este enlace
+
+También puede eliminar archivos de uno en uno haciendo clic en el botón `X` {.action} junto al archivo.
+
+![Descargar archivo](images/plik-download.png)
+
+Para permitir que sus usuarios finales descarguen sus archivos, proporcióneles el enlace al archivo individual ubicado debajo del nombre del archivo. También puede darles el enlace a todos los archivos de la sesión dándoles la URL que se encuentra en la barra de direcciones web.
+
+## Ir más lejos
+
+Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+
+
+
+
+
+
+
+
+
