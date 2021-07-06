@@ -125,15 +125,15 @@ rescue:~# mount /dev/hda1 /mnt/
 
 Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco rígido`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o servidor em linha de comandos.
 
-##### Montagem de uma loja de dados
+##### Montagem de um datastore
 
-Pode montar uma loja de dados VMware da forma descrita no segmento anterior. Em primeiro lugar, instale o package necessário:
+Pode montar um datastore VMware da forma descrita no segmento anterior. Em primeiro lugar, instale o package necessário:
 
 ```
 rescue:~# apt-get update && apt-get install vmfs-tools
 ```
 
-De seguida, retorize as suas partições para recuperar o nome da partição do datacenter:
+De seguida, retorize as suas partições para recuperar o nome da partição do datastore:
 
 ```
 rescue:~# fdisk -l
