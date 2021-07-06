@@ -1,143 +1,143 @@
 ---
-title: Displaying boot log in the KVM
+title: Displaying boot logs in the KVM
 slug: displaying-boot-log-in-the-kvm
-section: Diagnostics and rescue mode
+excerpt: Find out how to diagnose a VPS by checking the boot log
+section: 'Diagnostics and rescue mode'
 ---
 
-**Last updated 15th June, 2019**
+**Last updated 5th July 2021**
 
-## Overview
+## Objective
 
-If your VPS isn’t responding as you would like, the quickest way to diagnose the problem is to check what appears in the KVM. This guide explains how to modify the display so that everything is displayed in the console and the KVM.
+If your VPS has become unresponsive, you should still be able to access it from your Control Panel via [KVM](../use-kvm-for-vps/). The quickest way to diagnose the problem is to check the boot log of the server. However, the GRUB configuration needs to be modified in order for these logs to appear. 
 
-Please note that for some environments, the KVM won’t provide any useful information because the boot sequence occurs in the serial console, or the GRUB is configured in silent mode.
+> [!primary]
+>
+> Please note that for some environments, the KVM is unable to provide any useful information because the boot sequence occurs in the serial console, or GRUB is configured in silent mode.
+>
 
+**This guide explains how to activate boot logs that can help with troubleshooting a VPS.**
+
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+>
 
 ## Requirements
 
-- You must have access to a VPS in [rescue mode](https://docs.ovh.com/gb/en/vps/rescue/){.external}
+- a [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 
 ## Instructions
 
-If your VPS is working normally, go directly to step 4.
-
 > [!warning]
 >
-> These modifications will change the GRUB configuration. Be sure to perform backups before making any modifications. OVH cannot be held responsible for damage or loss of data following these operations.
+> These modifications will change the GRUB configuration. OVHcloud cannot be held responsible for any loss or damage to your data caused by these operations. Be sure to perform backups of all your important data before any modifications.
 >
 
-### Step 1: ensure VPS is in rescue mode
+If you still have access to your VPS via SSH, you can skip to [step 6](#step6).
 
-If you have not rebooted the VPS into rescue mode yet, you may use the [rescue mode](https://docs.ovh.com/gb/en/vps/rescue/){.external} guide to help you to reboot it into rescue mode.
+### Step 1: Restart the VPS into rescue mode
 
-### Step 2: perform initial verification
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and initiate a server reboot in rescue mode. Refer to our [rescue mode guide](../rescue/) if necessary.
 
-After connecting, you should check the name of the disk with the command `lsblk`:
+### Step 2: Perform initial verification
 
-```sh
+On older VPS ranges, your partitions will be automatically mounted in rescue mode. You can use the following commands to verify this and identify where your partition is mounted:
 
-lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-sda 8:0 0 3G 0 disk
-└─sda1 8:1 0 3G 0 part /
-sdb 8:16 0 10G 0 disk
-└─sdb1 8:17 0 10G 0 part
-```
-
-Here, the primary disk is `sdb` and the primary partition is `sdb1` (`sda`is the rescue disk and `sda1` is the primary rescue partition mounted on `/`).
-
-
-If the result is the following, your primary disk is `vdb` and your primary partition is `vdb1` (`vda` is the rescue disk and `vda1` is the primary rescue partition mounted on `/`):
+#### **df -h**
 
 ```sh
-lsblk
-NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-sda      8:0    0  2.5G  0 disk
-└─sda1   8:1    0  2.5G  0 part /
-sdb      8:16   0   40G  0 disk
-└─sdb1   8:17   0   40G  0 part /mnt/sdb1
+~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            5.8G     0  5.8G   0% /dev
+tmpfs           1.2G   17M  1.2G   2% /run
+/dev/sda1       2.4G  1.5G  788M  66% /
+tmpfs           5.8G     0  5.8G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
+/dev/sdb1        49G  1.2G   48G   3% /mnt/sdb1
+/dev/sdb15      105M  3.6M  101M   4% /mnt/sdb15
 ```
 
-> [!primary]
->
-> For this guide, we will use `sdb`. If your disk is `vdb`, simply replace sdb with vdb for each command.
->
-
-### Step 3: Unmount and remount the partition correctly
-
-On a VPS in rescue mode, the primary disk is already mounted. Therefore, it first needs to be unmounted and then remounted with the correct settings:
+#### **lsblk**
 
 ```sh
-umount /dev/sdb1
+~$ lsblk
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda       8:0    0  2.5G  0 disk
+└─sda1    8:1    0  2.5G  0 part /
+sdb       8:16   0   50G  0 disk
+├─sdb1    8:17   0 49.9G  0 part /mnt/sdb1
+├─sdb14   8:30   0    4M  0 part
+└─sdb15   8:31   0  106M  0 part /mnt/sdb15
 ```
 
-### Step 4: mount the disk
+The example output above shows that the system partition is mounted on **/mnt/sdb1**. (The primary disk is **sdb**, whereas **sda** is the rescue disk and **sda1** is the primary rescue partition mounted on **/**).
 
-Now that the name of the disk has been identified, you can mount it with the correct settings. Since in step 1 we found the disk was mounted under "/mnt/sdb1", we will mount it again in the same folder with these commands:
+If your VPS is of the [**current ranges**](https://www.ovhcloud.com/en-gb/vps/), no automatic mounting will occur and the `MOUNTPOINT` column should be empty. In that case, proceed with [step 4](#step4).
+
+
+### Step 3: Unmount the partition (older ranges only)
+
+On a legacy VPS in rescue mode, the primary disk is already mounted. Therefore, it first needs to be unmounted before remounting it in step 4:
 
 ```sh
-mount /dev/sdb1 /mnt/sdb1
-mount -t proc none /mnt/sdb1/proc
-mount -o bind /dev /mnt/sdb1/dev
-mount -t sysfs none /mnt/sdb1/sys/
+~$ umount /dev/sdb1
 ```
 
-These commands will then allow you to use the `chroot` command and initiate the commands that require access to the `sys`, `dev` and `proc` directories.
+### Step 4: Mount the partition with the correct settings <a name="step4"></a>
 
-### Step 5: launch the CHROOT command
-
-To apply it directly to the system, type the following command:
+If your VPS is of the [**current ranges**](https://www.ovhcloud.com/en-gb/vps/), first make sure the mount folder is created:
 
 ```sh
-chroot /mnt/sdb1
+~$ mkdir -p /mnt/sdb1
 ```
 
-From now on, all commands will be applied to your VPS and not to your rescue mode.
+Enter the following commands to mount the partition with the appropriate settings:
 
-### Step 4: make the modifications in GRUB
-
-#### For CentOS 6 (grub):
-
-Edit the file /boot/grub/grub.conf and remove the rhgb and quiet arguments from the kernel lines and and the "console=ttyS0" "loglevel=7" parameter instead if missing:
-
-Before:
 ```sh
-title CentOS (2.6.32-754.12.1.el6.x86_64)
-        root (hd0,0)
-        kernel /boot/vmlinuz-2.6.32-754.12.1.el6.x86_64 ro root=UUID=7e192559-d669-4919-840b-4c9a846fafa7 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet
-        initrd /boot/initramfs-2.6.32-754.12.1.el6.x86_64.img
-title CentOS (2.6.32-642.15.1.el6.x86_64)
-        root (hd0,0)
-        kernel /boot/vmlinuz-2.6.32-642.15.1.el6.x86_64 ro root=UUID=7e192559-d669-4919-840b-4c9a846fafa7 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet
-        initrd /boot/initramfs-2.6.32-642.15.1.el6.x86_64.img
-title CentOS 6 (2.6.32-642.el6.x86_64)
-        root (hd0,0)
-        kernel /boot/vmlinuz-2.6.32-642.el6.x86_64 ro root=UUID=7e192559-d669-4919-840b-4c9a846fafa7 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet
-        initrd /boot/initramfs-2.6.32-642.el6.x86_64.img
+~$ mount /dev/sdb1 /mnt/sdb1
+~$ mount -t proc none /mnt/sdb1/proc
+~$ mount -o bind /dev /mnt/sdb1/dev
+~$ mount -t sysfs none /mnt/sdb1/sys/
 ```
 
-After:
+The system partition is now mounted for use with the `chroot` command, in order to carry out actions that require access to the `sys`, `dev` and `proc` directories.
+
+### Step 5: Use the CHROOT command to configure your system files
+
+You now need to access and edit the GRUB files of your system. You can do this by using the `chroot` command:
+
 ```sh
-title CentOS (2.6.32-754.12.1.el6.x86_64)
-        root (hd0,0)
-        kernel /boot/vmlinuz-2.6.32-754.12.1.el6.x86_64 ro root=UUID=7e192559-d669-4919-840b-4c9a846fafa7 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM console=ttyS0 loglevel=7
-        initrd /boot/initramfs-2.6.32-754.12.1.el6.x86_64.img
-title CentOS (2.6.32-642.15.1.el6.x86_64)
-        root (hd0,0)
-        kernel /boot/vmlinuz-2.6.32-642.15.1.el6.x86_64 ro root=UUID=7e192559-d669-4919-840b-4c9a846fafa7 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM console=ttyS0 loglevel=7
-        initrd /boot/initramfs-2.6.32-642.15.1.el6.x86_64.img
-title CentOS 6 (2.6.32-642.el6.x86_64)
-        root (hd0,0)
-        kernel /boot/vmlinuz-2.6.32-642.el6.x86_64 ro root=UUID=7e192559-d669-4919-840b-4c9a846fafa7 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM console=ttyS0 loglevel=7
-        initrd /boot/initramfs-2.6.32-642.el6.x86_64.img
+~$ chroot /mnt/sdb1
 ```
 
-Save the file and exit. The change will reflect on the next reboot.
+From now on, all commands that you enter will be applied to your VPS instead of the temporary rescue mode environment.
 
-#### For CentOS 7 (grub2):
+### Step 6: Modify the GRUB configuration <a name="step6"></a>
 
-In order to access the boot log in the KVM, make sure you have the following values in the /etc/default/grub file:
+#### **For Debian 7 or higher and Ubuntu 16.04 or higher**
+
+In order to access the boot log with the KVM console, make sure you have the following value inside the file `/etc/default/grub`:
+
+```sh
+GRUB_CMDLINE_LINUX_DEFAULT="console=ttyS0 console=tty0"
+```
+
+If this line is missing or different, modify the file with an editor and save it.
+
+Then use the following command to regenerate the GRUB configuration file (the changes will be saved for the next reboot):
+
+```sh
+~$ update-grub
+```
+
+#### **For CentOS 7 or higher (grub2)**
+
+In order to access the boot log with the KVM console, make sure you have the following values inside the file `/etc/default/grub`:
 
 ```sh
 GRUB_TERMINAL_OUTPUT="console"
@@ -145,33 +145,21 @@ GRUB_CMDLINE_LINUX="crashkernel=auto rhgb"
 GRUB_CMDLINE_LINUX_DEFAULT="console=tty0 console=ttyS0"
 ```
 
-If you don’t have these values, edit and modify your file, then save it.
+If these lines are missing or different, modify the file with an editor and save it.
 
 Then use the following command to regenerate the GRUB configuration file (the values will be saved for the next reboot):
 
 ```sh
-grub2-mkconfig -o "$(readlink /etc/grub2.cfg)"
+~$ grub2-mkconfig -o "$(readlink /etc/grub.cfg)"
 ```
 
-#### For Debian (7/8/9) and Ubuntu (16.04/18.04):
-
-In order to access the boot log in the KVM, make sure you have the following values in the /etc/default/grub file:
-
-```sh
-GRUB_CMDLINE_LINUX_DEFAULT="console=ttyS0 console=tty0"
-```
-
-If you don’t have these values, edit and modify your file, then save it.
-
-Then use the following command to regenerate the GRUB configuration file (the values will be saved for the next reboot):
-
-```sh
-update-grub
-```
-
-Once you have made the modifications, reboot the VPS or the instance in normal mode and check the KVM: the boot log information should appear.
+Once you have done the modifications, reboot your VPS in 'normal' mode in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Boot log information should now appear when using the [KVM console](../use-kvm-for-vps/).
 
 
 ## Go further
+
+[Using the KVM for a VPS](../use-kvm-for-vps/)
+
+[Activating rescue mode on a VPS](../rescue/)
 
 Join our community of users at <https://community.ovh.com/en/>.

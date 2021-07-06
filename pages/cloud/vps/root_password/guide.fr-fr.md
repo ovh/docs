@@ -74,7 +74,7 @@ Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées 
 ##### **df -h**
 
 ```sh
-df -h
+~$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            5.8G     0  5.8G   0% /dev
 tmpfs           1.2G   17M  1.2G   2% /run
@@ -89,7 +89,7 @@ tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 ##### **lsblk**
 
 ```sh
-lsblk
+~$ lsblk
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0  2.5G  0 disk
 └─sda1    8:1    0  2.5G  0 part /
@@ -104,8 +104,8 @@ L'exemple obtenu ci-dessus montre que la partition système est montée sur **/m
 Si votre VPS est récent, la colonne `MOUNTPOINT` devrait être vide. Dans ce cas, montez d'abord la partition :
 
 ```sh
-mkdir -p /mnt/sdb1
-mount /dev/sdb1 /mnt/sdb1
+~$ mkdir -p /mnt/sdb1
+~$ mount /dev/sdb1 /mnt/sdb1
 ```
 
 #### Étape 3 : autorisations CHROOT
@@ -113,13 +113,13 @@ mount /dev/sdb1 /mnt/sdb1
 Vous devez maintenant modifier le répertoire racine pour appliquer les modifications à votre système. Pour ce faire, utilisez la commande `chroot` :
 
 ```sh
-chroot /mnt/sdb1/
+~$ chroot /mnt/sdb1/
 ```
 
 Vous pouvez procéder à une vérification en tapant la commande `ls -l`, qui répertorie le contenu stocké dans le répertoire courant de votre système :
 
 ```sh
-ls -l
+~$ ls -l
 ```
 
 #### Étape 4 : Modifier le mot de passe (root)
@@ -165,7 +165,7 @@ Si votre VPS est de dernière génération (son nom est alors : *vps-XXXXXXX.vps
 Utilisez un éditeur de texte tel que vim ou nano pour modifier ce fichier de configuration :
 
 ```sh
-nano /etc/ssh/sshd_config
+~$ nano /etc/ssh/sshd_config
 ```
 
 Ajoutez la ligne suivante.
@@ -185,7 +185,7 @@ Enregistrez le fichier et quittez l'éditeur.
 #### Étape 2 : Redémarrer le service SSH
 
 ```sh
-systemctl restart sshd
+~$ systemctl restart sshd
 ```
 
 Cela devrait suffire pour appliquer les modifications. Vous pouvez également redémarrer le VPS (```~$ reboot```).
@@ -195,7 +195,7 @@ Cela devrait suffire pour appliquer les modifications. Vous pouvez également re
 Si vous rencontrez des problèmes de démarrage après avoir modifié votre mot de passe et lancé le redémarrage :
 
 - Consultez le KVM pour savoir pourquoi le VPS ne peut pas démarrer. Consultez le [guide KVM](../utilisation-kvm-sur-vps/) pour obtenir de l'aide sur l'utilisation de cette fonctionnalité dans l'espace client OVHcloud.
-- Si le KVM affiche le démarrage du VPS ou s'il ne parvient pas à trouver le disque, assurez-vous que le [bootlog est activé](../affichage-bootlog-dans-kvm/). Transmettez les logs pertinents à nos équipes de support en créant une demande de support dans votre [espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new) pour plus d'informations.
+- Si le KVM affiche le démarrage du VPS ou s'il ne parvient pas à trouver le disque, assurez-vous que le [bootlog est activé](../affichage-bootlog-dans-kvm/). Transmettez les logs pertinents à nos équipes de support en créant une demande de support dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) pour plus d'informations.
 
 ## Allez plus loin
 
