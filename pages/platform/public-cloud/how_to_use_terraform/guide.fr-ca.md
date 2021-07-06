@@ -34,7 +34,7 @@ L'outil Open Source Terraform a été développé pour faciliter la création d'
 
 ## En pratique
 
-### Créer un environement Terraform
+### Créer un environnement Terraform
 
 Après l'installation de Terraform, pour tous les fichiers texte décrivant votre infrastructure :
 

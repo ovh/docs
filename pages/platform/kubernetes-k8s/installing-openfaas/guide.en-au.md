@@ -269,7 +269,7 @@ nodeinfo                      	0              	1
 wordcount                     	0              	1    
 </code></pre>
 
-Let's invoke one of those functions, for example `wordcount` (a function that takes the syntax of the unix [`wc`](https://en.wikipedia.org/wiki/Wc_(Unix){.external} command, giving us the number of lines, words and characters on the input data):
+Let's invoke one of those functions, for example `wordcount` (a function that takes the syntax of the unix [`wc`](https://en.wikipedia.org/wiki/Wc_(Unix)){.external} command, giving us the number of lines, words and characters on the input data):
 
 ```
 echo 'I love when a plan comes together' | ./faas-cli invoke wordcount

@@ -5,7 +5,7 @@ excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 19/03/2021**
+**Dernière mise à jour le 06/07/2021**
 
 ## Objectif
 
@@ -81,6 +81,8 @@ root@your_server_password:
 
 La plupart des modifications apportées à votre serveur via SSH en mode rescue nécessitent le montage d’une partition. En effet, ce mode possède son propre système de fichiers temporaires. Par conséquent, les modifications apportées au système de fichiers en mode rescue seront perdues lors du redémarrage du serveur en mode normal.
 
+#### Montage des partitions
+
 Le montage des partitions est réalisé à l’aide de la commande `mount` en SSH. Vous devez préalablement lister vos partitions, afin de pouvoir récupérer le nom de celle que vous souhaitez monter. Vous pouvez vous référer aux exemples de code suivants :
 
 ```sh
@@ -115,6 +117,28 @@ rescue:~# mount /dev/hda1 /mnt/
 > 
 > Si votre serveur dispose d’une configuration RAID logicielle, vous devez monter votre volume RAID (en général `/dev/mdX`).
 >
+
+Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et redémarrez le serveur en ligne de commande.
+
+#### Montage d'un datastore
+
+Vous pouvez monter un datastore VMware de la même manière que décrite précédemment. Tout d'abord, installez le paquet nécessaire :
+
+```
+rescue:~# apt-get update && apt-get install vmfs-tools
+```
+
+Listez ensuite vos partitions afin de récupérer le nom de la partition du datastore :
+
+```
+rescue:~# fdisk -l
+```
+
+À présent, montez la partition avec la commande suivante, en remplaçant `sdbX` par la valeur identifiée à l'étape précédente :
+
+```
+rescue:~# vmfs-fuse /dev/sdbX /mnt
+```
 
 Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et redémarrez le serveur en ligne de commande.
 

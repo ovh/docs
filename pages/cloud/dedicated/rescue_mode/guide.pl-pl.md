@@ -118,21 +118,21 @@ rescue:~# mount /dev/hda1 /mnt/
 > [!primary]
 >
 > Twoja partycja zostanie wówczas zamontowana. Możesz wówczas wykonywać operacje na systemie plików.
-> 
+>
 > Jeśli na Twoim serwerze skonfigurowana jest programowa macierz RAID, zamontuj wolumin RAID (zwykle `/dev/mdX`).
 >
 
 Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer z linii poleceń.
 
-### Montowanie sklepu danych
+### Montaż datastore
 
-Możesz zamontować sklep danych VMware w sposób opisany w poprzednim segmencie. Po pierwsze, zainstaluj niezbędny pakiet:
+Możesz zamontować datastore VMware w sposób opisany powyżej. Po pierwsze, zainstaluj niezbędny pakiet:
 
 ```
 rescue:~# apt-get update && apt-get install vmfs-tools
 ```
 
-Następnie przełącz partycje, aby pobrać nazwę partycji sklepu danych:
+Następnie przełącz partycje, aby pobrać nazwę partycji datastore:
 
 ```
 rescue:~# fdisk -l
