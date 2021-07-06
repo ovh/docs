@@ -30,23 +30,22 @@ Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de vo
 ## Prérequis
 
 - Avoir la gestion des serveurs et de la zone [DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) de votre nom de domaine
-- Héberger votre site sur une offre d'[hébergement mutualisé OVHcloud](https://www.ovh.com/fr/hebergement-web/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
  
 ## En pratique
 
 Afin de résoudre cette anomalie, vous devrez : 
 
-1. Déterminer l'hébergement auquel est relié votre nom de domaine, afin d'être certain d'intervenir sur le bon serveur.
+1. Déterminer l'hébergement auquel est relié votre nom de domaine, afin d'intervenir sur le bon serveur.
 2. Créer, activer ou renouveler un [certificat SSL](../les-certificats-ssl-sur-les-hebergements-web/) pour votre nom de domaine sur l'hébergement concerné.
 
 ### Étape 1 : vérifier l'hébergement attaché à votre nom de domaine
 
 #### Vérifier l'adresse IP de l'hébergement
 
-Avoir l'un des messages d'erreur indiqués dans la partie [Objectif](#objectif) de ce guide ne signifie pas forcément que votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovh.com/fr/hebergement-web/). Vous devez donc vérifier, dans un premier temps, l'adresse IP du serveur auquel est relié votre [nom de domaine](https://www.ovh.com/world/domains/).
+Avoir l'un des messages d'erreur indiqués dans la partie [Objectif](#objectif) de ce guide ne signifie pas forcément que votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovh.com/fr/hebergement-web/). Vous devez donc vérifier l'adresse IP du serveur auquel est relié votre [nom de domaine](https://www.ovh.com/world/domains/).
 
-Pour retrouver l'adresse IP de  votre hébergement OVHcloud, cliquez en haut de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Web Cloud`{.action} puis, dans le menu de gauche, sur `Hébergements`{.action} et choisissez l'hébergement concerné.
+Pour retrouver l'adresse IP de votre [hébergement OVHcloud](https://www.ovh.com/fr/hebergement-web/), cliquez en haut de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Web Cloud`{.action} puis, dans le menu de gauche, sur `Hébergements`{.action} et choisissez l'hébergement concerné.
 
 Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IPV6 de votre hébergement.
 
@@ -58,7 +57,7 @@ Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](
 
 Cliquez sur `Noms de domaine`{.action} en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez le nom de domaine de votre site.
 
-Sélectionnez l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de type `A` pour votre nom de domaine :
+Sélectionnez l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de type `A` pour votre domaine :
 
 ![zone-dns-ip](images/zone-dns-ip.png){.thumbnail}
 
@@ -69,13 +68,13 @@ Sélectionnez l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de typ
 |L'adresse IP indiquée dans la zone DNS correspond à celle de votre hébergement mutualisé.|Passez à [l'étape 2](#etape2).|
 |L'adresse IP indiquée dans la zone n'est pas celle de votre hébergement et elle n'apparaît pas non plus dans la [liste des serveurs Web Cloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/).|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
 |L'adresse IP indiquée dans la zone n'est pas celle de votre hébergement, elle apparaît dans la [liste des serveurs Web Cloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/), mais aucun de vos hébergements ne possède cette adresse IP.|Vérifiez que vous ne possédez pas un hébergement possédant cette adresse IP dans l'un de vos autres [comptes OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) si vous en avez créé plusieurs. Si besoin, contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
-|Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Vous devrez donc modifier les serveurs DNS de votre domaine, afin qu'ils correspondent à ceux inscrits dans les entrées de type `NS` de la Zone. Pour effectuer cette opération, suivez les instructions de [ce guide](../../domains/generalites-serveurs-dns/).|
+|Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Vous devrez donc modifier les serveurs DNS de votre domaine, afin qu'ils correspondent à ceux inscrits dans les entrées de type `NS` de la zone. Pour effectuer cette opération, suivez les instructions de [ce guide](../../domains/generalites-serveurs-dns/).|
 |Votre nom de domaine n'apparaît pas dans la partie `Domaines`{.action} de votre espace client.<br><br>Ou l'onglet `Zone DNS`{.action} de votre domaine s'affiche de la façon suivante :<br><br>![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Cela signifie que votre domaine n'est pas géré depuis votre espace client OVHcloud.<br><br>Déterminez son registrar via notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl) et les serveurs DNS auxquels il est lié. <br><br>Retrouvez et modifiez la zone DNS concernée en conséquence en suivant [ce guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
 |Les `Serveurs DNS`{.action} n'apparaissent pas sous la forme « ns **?** .ovh.net » ou « dns **?** .ovh.net » (remplacez le « **?** » par le numéro de serveur DNS concerné).<br><br>Cela signifie que la `Zone DNS`{.action} active de votre domaine ne se trouve pas sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :<br><br>![external-dns-servers](images/external-dns-servers.png){.thumbnail}|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
 
 ### Étape 2 : Vérifiez le certificat SSL de votre hébergement <a name="etape2"></a>
 
-Dans l'onglet `Informations générales`{.action} de votre hébergement, vérifiez la partie `Certificat SSL` :
+Dans l'onglet `Informations générales`{.action} de votre hébergement OVHcloud, vérifiez la partie `Certificat SSL` :
 
 ![ssl-certificate-in-general-tab](images/ssl-certificate-in-general-tab.png){.thumbnail}
 
