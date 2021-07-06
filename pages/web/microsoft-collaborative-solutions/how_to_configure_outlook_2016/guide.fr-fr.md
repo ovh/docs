@@ -47,7 +47,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 - Parmi les types de comptes, choisissez **Exchange**.
 
-- Une fenêtre de sécurité vous demandant de renseigner le **mot de passe** de l'adresse e-mail apparaît. Renseignez ce dernier, cochez la case pour le mémoriser puis cliquez sur `OK`{.action}.
+- Renseignez le mot de passe de votre adresse e-mail dans la fenêtre suivante, cochez la case pour le mémoriser puis cliquez sur `OK`{.action}.
 
 ![exchange](images/config-outlook-exchange02.png){.thumbnail}
 
