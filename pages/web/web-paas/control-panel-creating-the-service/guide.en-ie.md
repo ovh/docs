@@ -6,7 +6,7 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 28th May 2021**
+**Last updated 6th July 2021**
 
 ## Objective
 
@@ -46,7 +46,7 @@ You can upgrade or downgrade the project later in the Control Panel. Note that a
 Choose the geographical region of the data centre in which your project will be hosted.
 
 ![project details](images/creation_manager03.png){.thumbnail}
- 
+
 #### Step 4: Select the project type
 
 - If the project relies on your own pre-existing code, you will be able to import it: click on `Create your template`{.action} and continue with `Next`{.action}.
@@ -74,18 +74,23 @@ Finally, review the order summary and click on `Create a project`{.action} to co
 
 After the payment process is completed, the project will be deployed and you will be able to log in to the Management Console from the OVHcloud Control Panel.
 
-### Step 7: Check the deployment of your project in the Management Console
+#### Step 7: Check the availability of your project for build and deploy
 
-On your project's `General information` page, click on `Access project`{.action} in the **Management interface** section. 
+On your project's `General information` page, click on `Access my Web PaaS project`{.action}.
+
+![OVHcloud control panel](images/control_panel01.png){.thumbnail}
+
+You will be redirected to the `OVERVIEW` tab of the Web PaaS Management Console.
+
+Here you can follow the configuration wizard to guide you through the first steps with your project. Click  `Start`{.action} to follow all the steps. Alternatively, you can directly select one of the wizard steps on the right.
 
 ![console project](images/manage_console01.png){.thumbnail}
 
-You will be redirected to the `OVERVIEW` tab of the Web PaaS Management Console. Here you can follow the configuration wizard to guide you through the first steps with your project. The project is ready when the status is set to `Active` on the Master environment.
+The project is ready when the status is set to `Active` on the Master environment.
 
 ![console project](images/manage_console02.png){.thumbnail}
 
 The "Go further" section below contains links to some useful guides for the next steps.
-
 
 ## Go further
 

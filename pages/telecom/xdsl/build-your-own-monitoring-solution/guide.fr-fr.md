@@ -70,7 +70,7 @@ Url  : https://warp10.insight.eu.metrics.ovh.net
 
 7\. Cliquez sur l'icône Grafana en haut à gauche et choisissez dans le menu : `Dashboard`{.action}, puis `Import`{.action}
 
-8\. Uploadez le template suivant : [internet-access-grafana-dashboard-v2.json](http://files.isp.ovh.net/grafana/internet-access-grafana-dashboard-v2.json)
+8\. Uploadez le template suivant : [internet-access-grafana-dashboard-v3.json](http://files.isp.ovh.net/grafana/internet-access-grafana-dashboard-v3.json)
 
 9\. Cliquez sur `Import`{.action} pour finaliser l'ajout du template.
 
