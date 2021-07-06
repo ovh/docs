@@ -46,9 +46,7 @@ Afin de résoudre cette anomalie, vous devrez :
 
 Avoir l'un des messages d'erreur indiqués dans la partie [Objectif](#objectif) de ce guide ne signifie pas forcément que votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovh.com/fr/hebergement-web/). Vous devez donc vérifier, dans un premier temps, l'adresse IP du serveur auquel est relié votre [nom de domaine](https://www.ovh.com/world/domains/).
 
-Pour retrouver l'adresse IP de  votre hébergement OVHcloud, cliquez en haut de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Web Cloud`{.action} puis, dans le menu de gauche, sur `Hébergements`{.action} et choisissez l'hébergement concerné :
-
-![hosting-menu](images/hosting-menu.png){.thumbnail}
+Pour retrouver l'adresse IP de  votre hébergement OVHcloud, cliquez en haut de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Web Cloud`{.action} puis, dans le menu de gauche, sur `Hébergements`{.action} et choisissez l'hébergement concerné.
 
 Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IPV6 de votre hébergement.
 
@@ -58,11 +56,9 @@ Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IP
 
 Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) correspond bien à celle de votre [hébergement Web Cloud](https://www.ovh.com/fr/hebergement-web/).
 
-Cliquez sur `Noms de domaine`{.action} en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sélectionnez le domaine de votre site :
+Cliquez sur `Noms de domaine`{.action} en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez le domaine de votre site.
 
-![click-on-domain-name](images/click-on-domain-name.png){.thumbnail}
-
-Puis ciquez sur l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de type `A` pour votre domaine :
+Sélectionnez l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de type `A` pour votre domaine :
 
 ![zone-dns-ip](images/zone-dns-ip.png){.thumbnail}
 
@@ -70,7 +66,6 @@ Puis ciquez sur l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de t
 
 |Scénario|Action à entreprendre|
 |---|---|
-
 |L'adresse IP indiquée dans la zone DNS active de votre domaine correspond à celle de votre hébergement mutualisé.|Passez à [l'étape 2](#etape2).|
 |Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Vous devrez donc modifier les serveurs DNS de votre domaine, afin qu'ils correspondent à ceux inscrits dans les entrées de type `NS` de la Zone. Pour effectuer cette opération, suivez les instructions de [ce guide](../../domains/generalites-serveurs-dns/).|
 |Votre domaine n'apparaît pas dans la partie `Domaines`{.action} de votre espace client.<br><br>Ou l'onglet `Zone DNS`{.action} de votre domaine s'affiche de la façon suivante :<br><br>![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Cela signifie que votre domaine n'est pas géré depuis votre espace client OVHcloud.<br><br>Déterminez son registrar via notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl) et les serveurs DNS auxquels il est lié. <br><br>Retrouvez et modifiez la zone DNS concernée en conséquence en suivant [ce guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
