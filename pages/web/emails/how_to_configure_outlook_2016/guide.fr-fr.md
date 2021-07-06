@@ -28,7 +28,7 @@ Les comptes MX Plan  peuvent être configurés sur différents logiciels de mess
 - Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}).
 - Disposer du logiciel Microsoft Outlook 2016 ou ultérieur.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
-
+ 
 > [!primary]
 >
 > Vous utilisez une version antérieure d'Outlook pour Windows ? Consultez notre documentation pour [Outlook 2013](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-outlook-2013/){.external} ou pour [Outlook 2010](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-outlook-2010/){.external}.
@@ -63,6 +63,17 @@ Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 |Entrant|ssl0.ovh.net|SSL/TLS|995|
 |Sortant|ssl0.ovh.net|SSL/TLS|465|
 
+### utiliser l'adresse e-mail
+
+Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
+
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+
+### Récupérer une sauvegarde de votre adresse e-mail
+
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consulter le paragraphe « **Exporter depuis Windows** » sur notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter-depuis-windows).
+
+
 ### Modifier les paramètres existants:
 
 Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier:
@@ -77,11 +88,6 @@ La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sor
 
 ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
 
-### utiliser l'adresse e-mail
-
-Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
-
-OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ## Aller plus loin
 
