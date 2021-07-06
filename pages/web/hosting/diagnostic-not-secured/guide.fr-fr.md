@@ -42,61 +42,41 @@ Afin de résoudre cette anomalie, vous devrez :
 
 ### Étape 1 : vérifier l'hébergement auquel est relié votre nom de domaine
 
+#### Vérifier l'adresse IP de l'hébergement
+
+Avoir l'un des messages d'erreur indiqués dans la partie [Objectif](#objectif) de ce guide ne signifie pas forcément que votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovh.com/fr/hebergement-web/). Vous devez donc vérifier, dans un premier temps, l'adresse IP du serveur auquel est relié votre [nom de domaine](https://www.ovh.com/world/domains/).
+
+Pour retrouver l'adresse IP de  votre hébergement OVHcloud, cliquez en haut de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Web Cloud`{.action} puis, dans le menu de gauche, sur `Hébergements`{.action} et choisissez l'hébergement concerné :
+
+![hosting-menu](images/hosting-menu.png){.thumbnail}
+
+Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IPV6 de votre hébergement.
+
+![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
+
 #### Vérifier l'adresse IP dans la zone DNS
 
-Les messages d'erreur indiqués dans la partie [Objectif](#objectif) de ce guide ne sont pas caractéristiques d'un [hébergement mutualisé OVHcloud](https://www.ovh.com/fr/hebergement-web/). Vous devez donc vérifier, dans un premier temps, le serveur auquel est relié votre [nom de domaine](https://www.ovh.com/world/domains/).
+Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) correspond bien à celle de votre [hébergement Web Cloud](https://www.ovh.com/fr/hebergement-web/).
 
-Pour retrouver l'adresse IP de l'hébergement auquel votre nom de domaine est lié, cliquez en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Web Cloud`{.action} puis sur `Noms de domaines`{.action} dans la barre de services à gauche. Sélectionnez le domaine de votre site. : 
+Cliquez sur `Noms de domaine`{.action} en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sélectionnez le domaine de votre site :
 
 ![click-on-domain-name](images/click-on-domain-name.png){.thumbnail}
-
-Cliquez ensuite sur l'onglet `Serveurs DNS`{.action} et notez les serveurs indiqués :
-
-![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
 Puis ciquez sur l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de type `A` pour votre domaine :
 
 ![zone-dns-ip](images/zone-dns-ip.png){.thumbnail}
 
-> [!warning]
->
-> Si l'onglet `Serveurs DNS`{.action} n'apparaît pas dans cette partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et que son titre s'y affiche sous la forme **« Zone DNS de mydomain.ovh »** :
->
-> ![domain-not-on-control-panel](images/domain-not-on-control-panel.png){.thumbnail}
->
-> Cela signifie que votre domaine n'est pas géré depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans ce cas de figure, contactez votre webmaster ou ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/), afin de retrouver l'adresse IP contenue dans la `Zone DNS`{.action} active de votre domaine.
-
-#### Vérifier l'adresse IP de l'hébergement
-
-Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) est bien identique à celle de l'hébergement de votre site.
-
-Deux situations sont possibles : 
-
-1. Votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une tierce personne. Dans ce cas, contactez le support de l'hébergeur ou le prestataire concernés, afin d'obtenir l'adresse IP du serveur hébergeant votre site.
-
-2. Votre site est hébergé sur l'une de vos offres mutualisées OVHcloud : cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'hébergement concerné.
-
-![hosting-menu](images/hosting-menu.png){.thumbnail}
-
-Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IPV6 de votre domaine.
-
-![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
-
-> [!primary]
->
-> Si vous souhaitez relier votre domaine à cet hébergement, reportez-la dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une entrée de type `A`.
->
-
 #### Effectuer les actions nécessaires
-
-Plusieurs cas sont possibles :
 
 |Scénario|Action à entreprendre|
 |---|---|
-|Les `Serveurs DNS`{.action} n'apparaissent pas sous la forme **« nsX.ovh.net »** ou **« dnsX.ovh.net »**. Cela signifie que la `Zone DNS`{.action} active de votre domaine ne se trouve pas sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :![external-dns-servers](images/external-dns-servers.png){.thumbnail}|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
+
+|L'adresse IP indiquée dans la zone DNS active de votre domaine correspond à celle de votre hébergement mutualisé.|Passez à [l'étape 2](#etape2).|
+|Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Vous devrez donc modifier les serveurs DNS de votre domaine, afin qu'ils correspondent à ceux inscrits dans les entrées de type `NS` de la Zone. Pour effectuer cette opération, suivez les instructions de [ce guide](../../domains/generalites-serveurs-dns/).|
+|Votre domaine n'apparaît pas dans la partie `Domaines`{.action} de votre espace client.<br><br>Ou l'onglet `Zone DNS`{.action} de votre domaine s'affiche de la façon suivante :<br><br>![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Cela signifie que votre domaine n'est pas géré depuis votre espace client OVHcloud.<br><br>Déterminez son registrar via notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl) et les serveurs DNS auxquels il est lié. <br><br>Retrouvez et modifiez la zone DNS concernée en conséquence en suivant [ce guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
+|Les `Serveurs DNS`{.action} n'apparaissent pas sous la forme **« nsX.ovh.net »** ou **« dnsX.ovh.net »**.<br><br>Cela signifie que la `Zone DNS`{.action} active de votre domaine ne se trouve pas sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :<br><br>![external-dns-servers](images/external-dns-servers.png){.thumbnail}|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
 |La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} n'apparaît pas dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/).|Contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
 |La cible de l'entrée de type `A` pour votre domaine dans sa `Zone DNS`{.action} apparaît dans la [liste des hébergements mutualisés OVHcloud](../liste-des-adresses-ip-des-clusters-et-hebergements-web/), mais aucun de vos hébergements ne possède cette adresse IP.|Vérifiez que vous ne possédez pas un hébergement possédant cette adresse IP dans l'un de vos autres [comptes OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) si vous en avez créé plusieurs. Si besoin, contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) à ce sujet.|
-|L'adresse IP indiquée dans la zone DNS active de votre domaine correspond à celle de votre hébergement mutualisé.|Passez à [l'étape 2](#etape2).|
 
 ### Étape 2 : Vérifiez le certificat SSL de votre hébergement <a name="etape2"></a>
 
