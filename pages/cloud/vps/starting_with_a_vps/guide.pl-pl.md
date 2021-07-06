@@ -96,7 +96,7 @@ W każdej chwili możesz jednak wykonać "reboot hard" w Panelu [klienta OVHclou
 
 ![Restart](images/reboot-vps-current.png){.thumbnail}
 
-#### Instalacja lub reinstalacja Twojego serwera VPS (gama aktualna)
+#### Instalacja lub reinstalacja Twojego serwera VPS (gama aktualna) <a name="reinstallvps"></a>
 
 Każdą reinstalację możesz przeprowadzić bezpośrednio z poziomu panelu klienta OVHcloud. Z zakładce „Strona główna” odszukaj  „OS / Dystrybucja” w części **Twój VPS**. Kliknij `...`{.action}, a następnie `Reinstalacja serwera VPS`{.action}.
 
