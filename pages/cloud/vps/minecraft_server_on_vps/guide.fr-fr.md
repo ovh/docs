@@ -1,167 +1,180 @@
 ---
 title: 'Comment créer un serveur Minecraft sur un VPS ou un serveur dédié'
 slug: creer-serveur-minecraft-sur-vps
-excerpt: 'Craftez votre propre serveur et buildez votre monde !'
+excerpt: 'Découvrez comment installer votre propre serveur Minecraft'
 section: Tutoriel
 ---
 
-## Introduction
+**Dernière mise à jour le 29/06/2021**
 
-Minecraft est un jeu vidéo de construction au succès mondial. Il nécessite un serveur pour héberger votre partie, sur lequel vous vous connectez à distance avec vos amis.
+## Objectif
 
-L'administration de ce serveur peut être déléguée à une entreprise externe, mais vous pouvez tout à fait l'héberger vous-même sur un [VPS](https://www.ovhcloud.com/fr/vps/){.external} ou un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}. Cela vous permet de réaliser des économies, ainsi que de personnaliser vos parties sans limite.
+Minecraft est un jeu vidéo de construction au succès mondial. Il doit être hébergé sur un serveur si vous souhaitez jouer en mode multijoueur.
 
-Dans ce tutoriel, nous allons créer de A à Z un serveur Minecraft Java Edition sur un VPS OVHcloud et tester sa connectivité.
+Vous pouvez louer un serveur Minecraft préconstruit ou le configurer vous-même sur un [VPS](https://www.ovhcloud.com/fr/vps/) ou sur un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/). Cela vous permettra de réaliser des économies et vous donnera le contrôle total sur votre instance de jeu.
+
+**Ce tutoriel décrit comment lancer un serveur Minecraft Java Edition sur un VPS OVHcloud et tester sa connectivité.**
 
 > [!warning]
-> 
-> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+>Ce guide vous explique comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes et décrit les actions à effectuer dans un contexte spécifique. Vous devrez peut-être adapter les instructions en fonction de votre situation.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. N'hésitez pas à vous rendre sur notre [forum communautaire](https://community.ovh.com/){.external} pour échanger avec d'autres utilisateurs.
+>Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un prestataire spécialisé. Pour plus d'informations, consultez la section [Aller plus loin](#gofurther) de ce guide.
 >
 
 ## Prérequis
 
-### Ce que vous devez savoir
-
-- Avoir des notions d'administration Linux.
-- Se connecter en SSH.
-- Installer une distribution (ici nous utiliserons Debian 9 ou Ubuntu 18.04).
-
-### Ce que vous devez avoir
-
-- Disposer d'un [VPS SSD](https://www.ovhcloud.com/fr/vps/){.external}. Un minimum de 2 Go de RAM est conseillé.
-- Télécharger le paquet *minecraft_server.1.12.2.jar* sur <https://minecraft.net/fr-fr/download/server>.
-
+- Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud, avec 2 Go de RAM minimum
+- Avoir installé une distribution GNU/Linux sur le serveur
+- Disposer d'un accès administrateur (root) via SSH ou remote desktop (Windows) à votre serveur
+- Avoir une compréhension basique de l'administration GNU/Linux
 
 ## En pratique
 
-### Étape 1 : préparez l'environnement
+> [!primary]
+> Ce tutoriel est basé sur la version « 1.17 » de Minecraft Java Edition et la version « 16.0.1 » de OpenJDK.
+>
 
-Nous allons préparer notre serveur VPS pour accueillir Minecraft. Si cela est possible, nous vous conseillons de réinstaller votre VPS via votre espace client (Ubuntu ou Debian sont conseillés).
+### Étape 1 : préparer le serveur
 
-Une fois le VPS installé, connectez-vous à votre VPS en SSH avec l’utilisateur principal root (administrateur), en utilisant un terminal. Mettez à jour la liste des paquets :
+La première étape consiste à configurer votre VPS pour une installation de Minecraft.
+<br>Il est recommandé de commander un nouveau VPS ou de réinstaller un VPS existant depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), en utilisant la dernière version disponible d'Ubuntu ou de Debian.
+<br>Consultrez notre guide « [Débuter avec un VPS](../debuter-avec-vps/#installation-ou-reinstallation-de-votre-vps-gamme-vps-actuelle) » si nécessaire.
+
+Une fois le système d'exploitation installé, connectez-vous à votre VPS en SSH comme décrit dans le guide « [Débuter avec un VPS](../debuter-avec-vps/) ».
+
+En premier lieu, mettez à jour les paquets avec leurs dernières versions :
 
 ```sh
-apt update
+~$ sudo apt update
 ```
 
-Il convient maintenant de mettre à jour le système :
-
 ```sh
-apt full-upgrade
+~$ sudo apt full-upgrade
 ```
 
-Pour la suite de l'installation, certains paquets non présents par défaut sont nécessaires. Voici la commande :
+Utilisez la commande suivante pour vous assurer que tous les paquets nécessaires sont installés :
 
 ```sh
-apt install default-jre screen nano wget git
+~$ sudo apt install screen nano wget git
 ```
 
-Pour éviter de créer des vulnérabilités dans votre système, nous allons maintenant créer un utilisateur que nous appellerons « minecraft ». Celui-ci sera chargé d'exécuter le processus minecraft :
+Installez le paquet Java :
 
 ```sh
-adduser minecraft --disabled-login --disabled-password
+~$ sudo apt install openjdk-16-jdk
+```
+
+Pour éviter de créer des vulnérabilités dans votre système, créez un utilisateur nommé « minecraft » qui exécutera les actions du serveur :
+
+```sh
+~$ sudo adduser minecraft --disabled-login --disabled-password
 ```
 
 Plusieurs informations vous sont demandées ; il suffit d'appuyer sur la touche `Entrée`{.action} pour les valider.
 
-L'utilisateur est désormais créé. Vous pourrez noter qu'aucun mot de passe n'est spécifié, ce qui est normal. Ce compte n'est accessible que par SSH et ne le sera qu'à travers le compte root.
+L'utilisateur est maintenant créé. Notez qu'aucun mot de passe n'a été spécifié pour cet utilisateur. C'est normal car le compte n'est accessible que lorsqu'il est déjà connecté par SSH avec votre propre compte d'utilisateur.
 
-Il est temps de vous connecter à l'utilisateur « minecraft » :
-
-```sh
-su - minecraft
-```
-
-Enfin, pour terminer la mise en place de l'environnement, nous allons créer un dossier nommé `server` dans le dossier personnel actuel :
+Basculez vers le nouvel utilisateur :
 
 ```sh
-mkdir ~/server && cd ~/server
+~$ sudo su - minecraft
 ```
 
 > [!primary]
 >
-> Rappel important : cette dernière commande doit être effectuée avec l'utilisateur « minecraft » dans notre cas.
-> 
-  
+> Les commandes suivantes doivent être exécutées par l'utilisateur « minecraft ».
+>
 
-### Étape 2 : installez un serveur Minecraft Vanilla
+Pour terminer la préparation de l'installation, créez un dossier nommé `server`.
+
+```sh
+~$ mkdir ~/server && cd ~/server
+```
+
+### Étape 2 : installer votre serveur Vanilla Minecraft
 
 > [!primary]
-> 
-> On entend souvent parler de serveurs Vanilla, sur Minecraft ou d'autres jeux comme World of Warcraft. Il s'agit de serveurs sans add-on ou plugin : vous parcourez le jeu dans sa version la plus standard.
 >
-> 
+> Les serveurs « Vanilla », sur Minecraft ou d'autres jeux comme World of Warcraft, sont des serveurs sans add-on ou plugin. Vous découvrez alors le jeu tel qu'il a été créé par les développeurs.
+>
 
-Rendez-vous sur le [site officiel de Minecraft](https://minecraft.net/fr-fr/download/server) pour télécharger le paquet. Dans notre cas, il suffit d'effectuer un clic droit sur `minecraft_server.1.12.2.jar` pour copier l'adresse du lien.
+Vous devez d'abord copier/coller le lien de téléchargement pour le logiciel serveur.
+<br>Sur le [site Web officiel de Minecraft](https://minecraft.net/download/server){.external}, faites un clic droit sur le lien de téléchargement et sélectionnez `Copier l'adresse du lien`{.action}.
 
-Maintenant que l'adresse du paquet est récupérée, téléchargez-le sur le VPS. Vérifiez que vous vous trouvez bien dans le dossier `server` créé précédemment, puis tapez :
+![Téléchargement du serveur](images/download_jar.png){.thumbnail}
 
-```sh
-wget <collez le lien du paquet>
-```
-
-Avant de lancer le serveur, vous devez accepter la licence du logiciel (EULA ou _End User License Agreement_) pour éviter sa coupure instantanée.
-
-Dans le même dossier, utilisez la commande suivante :
+Dans votre terminal de ligne de commande, vérifiez que vous êtes toujours dans le dossier `server` et utilisez `wget` pour télécharger le fichier. 
+<br>Remplacez `lien_de_telechargement` par l'URL réelle que vous avez copiée précédemment.
 
 ```sh
-echo "eula=true" > eula.txt
+~/server$ wget lien_de_telechargement
 ```
 
-Cette action a pour effet de créer le fichier `eula.txt` à la racine de votre serveur. Il contient `eula=true`, ce qui signifie que vous acceptez les conditions d’utilisation de Minecraft. Nous vous conseillons toutefois d'en prendre connaissance sur le site officiel du jeu.
+Avant de lancer le serveur, vous devez accepter la licence du logiciel (EULA ou _End User License Agreement_) pour éviter sa coupure instantanée. Pour ce faire, entrez la commande suivante :
+
+```sh
+~/server$ echo "eula=true" > eula.txt
+```
+
+Un fichier nommé `eula.txt` est alors créé à la racine de votre serveur, contenant la ligne `eula=true`. Cela indique au logiciel que vous acceptez les conditions d’utilisation de Minecraft.
+<br>Nous vous invitons à consulter les conditions générales sur le [site officiel de Minecraft](https://www.minecraft.net/){.external}.
 
 Votre serveur est ensuite prêt à être lancé.
 
-Lors de l'étape 1, nous avons installé le paquet `screen` qui permet d'ouvrir plusieurs sessions de terminal (*shell* en anglais). Nous allons démarrer Minecraft dans une nouvelle session et ainsi le lancer en tâche de fond. `screen` dispose de nombreux avantages pour notre cas d'usage, comme l'exécution de plusieurs serveurs Minecraft en simultané.
+Au cours de l'étape 1, nous avons installé le paquet `screen` qui permet d'ouvrir plusieurs sessions du terminal (*shell*). Nous allons démarrer Minecraft dans une nouvelle session qui peut s'exécuter en arrière-plan. L'utilisation de `screen` peut être très pratique car elle vous permet de lancer plusieurs serveurs Minecraft simultanément.
 
-Au préalable, nous allons créer un nouveau `shell` nommé `minecraft1` :
+Tout d'abord, nous allons créer un nouveau `shell` nommé `minecraft1` :
 
 ```sh
-screen -S minecraft1
+~/server$ screen -S minecraft1
 ```
 
-La fenêtre active de votre terminal change, vous basculez automatiquement sur une nouvelle session `shell`. Vous pouvez créer d'autres `shells` si nécessaire et les lister via la fonction suivante :
+La fenêtre active de votre terminal change, vous basculez automatiquement sur une nouvelle session `shell`. Vous pouvez créer d'autres `shells` si nécessaire et les lister via la commande suivante :
 
 ```sh
 screen -ls
 ```
 
-Pour passer d'un `shell`à un autre, il existe des raccourcis claviers comme `CTRL+a n`{.action} pour aller au suivant. Cette action est aussi possible en ligne de commande, en tapant le nom du `shell` :
+Pour vous détacher du `shell` (et le maintenir en cours d'exécution), appuyez sur `Ctrl`{.action}, puis sur `a`{.action}, puis sur `d`{.action} sur votre clavier.
+
+Pour passer d'un `shell`à un autre, utilisez la commande suivante:
 
 ```sh
-screen -x another_shell
+~/server$ screen -x nom_du_shell
 ```
 
-Placez-vous dans le shell `minecraft1` que vous venez de créer, puis démarrez un serveur Minecraft avec la commande suivante :
+Vous pouvez également appuyer sur `Ctrl`{.action}, puis sur `a`{.action}, puis sur `n`{.action} sur votre clavier.
+
+Dans le shell `minecraft1` précédemment créé, lancez le serveur Minecraft avec la commande suivante. (Utilisez `ls` pour vérifier le nom du fichier au cas où il serait différent.)
 
 ```sh
-java -jar fichierduserveurtelecharge.jar
+~/server$ java -jar server.jar
 ```
 
-Si vous désirez éteindre votre serveur, utilisez la commande `stop`.
+Pour arrêter votre serveur, entrez la commande `stop`.
 
+### Étape 3 : se connecter au serveur
 
-### Étape 3 : connectez-vous à votre serveur
+Votre instance de serveur est maintenant fonctionnelle. Pour jouer au jeu, téléchargez le client Minecraft depuis [le site Web officiel](https://www.minecraft.net/){.external}.
 
-L'environnement et le serveur étant maintenant fonctionnels, nous allons tester la connexion. Auparavant, téléchargez le client Minecraft de votre plateforme de jeu préférée sur <https://minecraft.net/>.
-
-Installez et lancez votre client Minecraft, puis connectez-vous avec votre compte :
+Installez et lancez le client pour votre système d'exploitation et connectez-vous.
 
 ![Connexion au serveur](images/login_minecraft.png){.thumbnail}
 
-Sur l'écran suivant, dans le champ `Server name`, renseignez le nom du serveur choisi. Dans le champ `Server Address`, indiquez l'adresse IP de votre VPS.
+Sur l'écran suivant, renseignez le nom du serveur dans le champ `Server name` et l'adresse IP du serveur dans le champ `Server Address`.
 
 ![Informations sur le serveur](images/minecraft_server_login.png){.thumbnail}
 
 Par défaut, aucun port n'est à renseigner.
 
+### Conclusion
 
-## Conclusion
+Votre serveur Vanilla Minecraft est maintenant installé sur votre VPS.
 
-Votre serveur Vanilla Minecraft est désormais installé sur votre VPS. Avant de jouer, il ne vous reste plus qu'à le configurer selon vos envies.
+Notez que ce guide d'installation est également valable pour un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/) ou une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/). Avec ces solutions, vous profitez également de ressources physiques garanties et stables à tout moment de la journée, puisque le matériel est dédié.
 
-À noter que cette installation fonctionne tout aussi bien sur un serveur dédié ou du Public Cloud OVHcloud. Avec ces solutions, vous profitez également de ressources physiques garanties et stables à tout moment de la journée.
+## Aller plus loin <a name="gofurther"></a>
 
-Enfin, pour ajouter des add-ons et configurer plus finement votre serveur Minecraft, consultez la documentation officielle sur <https://help.mojang.com/>. D'autres versions personnalisées existent, comme la prometteuse Minecraft Bukkit, et sont également compatibles avec les produits OVHcloud.
+Pour ajouter des add-ons, des mods et configurer plus finement votre serveur Minecraft, veuillez consulter la documentation officielle suivante: <https://help.mojang.com/>.
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
