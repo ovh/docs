@@ -83,7 +83,6 @@ root@your_server_password:
 > Para evitar este problema, puede comentar la huella de su sistema habitual añadiendo una `#` delante de su línea en el archivo *known_hosts*. Elimine este carácter antes de reiniciar el servidor en modo normal.
 >
 
-
 #### Montaje de sus particiones
 
 Para realizar la mayoría de los cambios en el servidor por SSH en modo de rescate, es necesario montar una partición. para realizar la mayoría de los cambios en este modo es necesario montar previamente una partición en el servidor. De lo contrario, los cambios que realizase en el sistema de archivos en modo de rescate se perderían al reiniciar el servidor en modo normal.
@@ -125,15 +124,15 @@ rescue:~# mount /dev/hda1 /mnt/
 
 Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el disco duro`{.action} en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y reinicie el servidor en línea de comandos.
 
-#### Montaje de una tienda de datos
+#### Montaje de un datastore
 
-Puede montar un almacén de datos VMware de la misma forma que se describe en el segmento anterior. En primer lugar, instale el paquete necesario:
+Puede montar un datastore VMware de la misma forma que se describe en el segmento anterior. En primer lugar, instale el paquete necesario:
 
 ```
 rescue:~# apt-get update && apt-get install vmfs-tools
 ```
 
-A continuación, seleccione las particiones para consultar el nombre de la partición del almacén de datos:
+A continuación, seleccione las particiones para consultar el nombre de la partición del datastore:
 
 ```
 rescue:~# fdisk -l
