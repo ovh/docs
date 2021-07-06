@@ -1,11 +1,11 @@
 ---
-Titulo: Usando Plik
-extracto: Descubra cómo utilizar Plik para enviar archivos a otras personas
-fuente: plik
-sección: Herramientas
+title: Usando Plik
+excerpt: Descubra cómo utilizar Plik para enviar archivos a otras personas
+slug: plik
+section: Herramientas
 ---
 
-**Last updated July 5rd, 2021**
+**Última actualización 5 de julio de 2021**
 
 ## Objetivo
 
@@ -15,16 +15,16 @@ sección: Herramientas
 
 - Una cuenta OVHcloud 
 
-Si aún no tiene una, puede crear una [aca](https://ca.ovh.com/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=CA).
+Si aún no tiene una, puede crear una [aca](https://ca.ovh.com/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=WS).
 
 ## Instrucciones
 
 ### Inicio de sesión de API: 
 
-Para cargar archivos, debe estar autenticado. Hacer clic `Iniciar sesión con OVH`{.action} para empezar.
+Para cargar archivos, debe estar autenticado. Hacer clic `Login with OVH`{.action} para empezar.
 
 ![Inicio](images/plik-login.png)
-Inicie sesión con su cuenta de OVHcloud, dando acceso a la API a la herramienta. Escriba sus credenciales y haga clic en el botón `Iniciar sesión`{.action} para continuar
+Inicie sesión con su cuenta de OVHcloud, dando acceso a la API a la herramienta. Escriba sus credenciales y haga clic en el botón `Log In`{.action} para continuar
 
 ![API](images/api-login.png)
 
@@ -36,23 +36,24 @@ Una vez que haya iniciado sesión, podrá cargar archivos, cerrar sesión, crear
 
 ![Carga](images/plik-upload.png)
 
-Para cargar un archivo, seleccione el botón `Cargar archivos` {.acción}. Esto abrirá una nueva página. En esta página, tiene muchas opciones sobre cómo hacer que sus cargas estén disponibles.
+Para cargar un archivo, seleccione el botón `Upload Files` {.acción}. Esto abrirá una nueva página. En esta página, tiene muchas opciones sobre cómo hacer que sus cargas estén disponibles.
 
 ![Opciones de carga](images/plik-upload-options.png)
 
-- Destruir después de la primera descarga: esta opción eliminará su carga después de la primera vez que se descargue
+- Destruct after the first download: esta opción eliminará su carga después de la primera vez que se descargue
 - Streaming: el archivo no se almacenará en el servidor. En cambio, la carga del archivo comenzará cuando el usuario remoto comience la descarga.
-- Extraíble: permite a los usuarios finales eliminar el archivo
-- Contraseña: proteja su carga con credenciales
-- Comentarios: agregue comentarios a su carga, se admite el lenguaje Markdown
-- Los archivos se eliminarán automáticamente en - Elija la cantidad de días (30 como máximo), horas o minutos en los que desea que sus archivos se eliminen automáticamente.
+- Removable: permite a los usuarios finales eliminar el archivo
+- Password: proteja su carga con credenciales
+- Comments: agregue comentarios a su carga, se admite el lenguaje Markdown
+- Files will be automatically removed in - Elija la cantidad de días (30 como máximo), horas o minutos en los que desea que sus archivos se eliminen automáticamente.
 - 
 > [!primary]
 > 
 > Nota: al proteger su carga con una contraseña, el nombre de usuario predeterminado es plik.
 >
 
-Seleccione las opciones que desea utilizar y haga clic en el botón 'Agregar archivos' {.action}.
+Seleccione las opciones que desea utilizar y haga clic en el botón 'Add files' {.action}.
+
 ![agregar archivos](images/plik-add-files.png)
 
 > [!primary]
@@ -60,7 +61,7 @@ Seleccione las opciones que desea utilizar y haga clic en el botón 'Agregar arc
 > Nota: los archivos están limitados a 10 GB de tamaño.
 > 
 
-Después de seleccionar los archivos que desea cargar, seleccione el botón verde "Cargar" {.acción} en el lado izquierdo. Esto abrirá una nueva página con sus archivos adjuntos; desde aquí, repasaremos nuestras opciones de descarga.
+Después de seleccionar los archivos que desea cargar, seleccione el botón verde "Upload" {.acción} en el lado izquierdo. Esto abrirá una nueva página con sus archivos adjuntos; desde aquí, repasaremos nuestras opciones de descarga.
 
 ### Descargando archivos
 
