@@ -10,8 +10,9 @@ order: 1
 
 ## Objectif
 
-Le logiciel POPC ou « Poste Opérateur PC » est un logiciel qui virtualise un standard téléphonique, idéalement pour le traitement des appels entrants et des transferts internes/externes.
-Il se présente sous la forme d'un logiciel, installé sur votre ordinateur, qui prend la place d'un téléphone physique. Ainsi vous appelez, décrochez et gérez vos appels non pas en pianotant sur un combiné physique, mais depuis l'application sur votre PC.
+Le POPC ou « Poste Opérateur PC » est un logiciel qui virtualise un standard téléphonique, idéalement pour le traitement des appels entrants et des transferts internes/externes.
+
+Il se présente sous la forme d'une application, installée sur votre PC sous Windows, qui prend la place d'un téléphone physique. Ainsi vous appelez, décrochez et gérez vos appels non pas en pianotant sur un combiné physique, mais depuis l'application sur votre PC.
 
 **Découvrez comment installer et configurer le logiciel POPC pour l'utiliser avec une ligne SIP OVHcloud**
 

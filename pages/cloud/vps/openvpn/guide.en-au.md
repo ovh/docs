@@ -1,77 +1,87 @@
 ---
-title: 'Deploying an OpenVPN server in a single click'
-description: 'How to deploy an OpenVPN server in a single click'
+title: 'Deploying an OpenVPN server'
 slug: openvpn
-excerpt: 'How to deploy an OpenVPN server in a single click'
+excerpt: 'Find out how to install an OpenVPN server on a VPS'
 section: 'Advanced usage'
 ---
 
+**Last updated 24th June 2021**
+
 ## Objective
 
-OpenVPN is a software giving you the possibility to create a Private Virtual Network (VPN).
+OpenVPN is a software giving you the possibility to create a Virtual Private Network (VPN). Using the OVHcloud VPS template for an OpenVPN server, you will be able to install and use your personal VPN service within a few steps.
+
+**This guide explains how to create your own VPN service with a VPS and OpenVPN.**
 
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- an OVHcloud [VPS service]({ovh_www}/vps/){.external}
+- an OVHcloud [VPS service](https://www.ovhcloud.com/en-au/vps/)
 
+## Instructions
 
-## Order
+### Installing the OpenVPN server
 
-To create your OpenVPN server, you will have to order a VPS. (If you already have a VPS, you can install the OpenVPN template via your OVHcloud control panel)
+> [!primary]
+>
+If you want to use an existing VPS service, you can do so from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) by [reinstalling it with the OpenVPN template](../getting-started-vps/#reinstallvps).
+> 
 
-![horizon](images/OpenVPN.png){.thumbnail}
+Order your VPS on the [product page](https://www.ovhcloud.com/en-au/vps/). At the image selection, choose `Distribution with application`{.action} and then `OpenVPN`{.action} as the OS.
 
-Once your VPS is installed, you will receive an email with your credentials:
+![Order VPS](images/order_vps.png){.thumbnail}
 
-![horizon](images/opencredent2.png){.thumbnail}
+Once your VPS is installed, you will receive an email with your credentials.
 
-Your VPN server is now ready.
+![Installation email](images/opencredent2.png){.thumbnail}
 
-Click on the link inside the credentials email.
+Your VPN server is now ready. To log in, click on the link inside the installation email which will open the OpenVPN Client web interface. Enter your OpenVPN credentials provided in the same email.
 
-Sign-in with the credentials in the email.
+![Login page](images/login_user.png){.thumbnail}
 
-![horizon](images/login_web.png){.thumbnail}
+### Installing and using the OpenVPN client for various systems
 
-## Client
+#### On Windows
 
-### For Windows
+On the Client web interface, select the `Windows symbol`{.action}.
 
-Select `OpenVPN client for Windows`{.action}
+![User interface](images/windows_client.png){.thumbnail}
 
-![horizon](images/admin_or_client.png){.thumbnail}
+Save the `.msi` file and execute it.
 
-Save the file and execute it.
+Once installed, you can launch the client application via the Windows menu or from the taskbar.
 
-![horizon](images/connection_openvpn1.png){.thumbnail}
+![Win app](images/win_launch.png){.thumbnail}
 
-Connect to the VPN:
+Log in with your OpenVPN credentials provided in the installation email.
 
-![horizon](images/login_screen.png){.thumbnail}
+![Win login](images/win_login.png){.thumbnail}
 
-You will now be communicating over the internet with the IP of your VPN.
+You will now be communicating over the internet with the IP address of your VPN.
 
-You can check your IP with this web page [https://ifconfig.ovh/](https://ifconfig.ovh/){.external}
+You can check your IP address on this web page: [https://ifconfig.ovh/](https://ifconfig.ovh/){.external}
 
-### On linux
+#### On Linux
 
-For distributions such as Fedora/CentOS/RedHat:
+##### **Installing the OpenVPN client**
+
+To install the client for distributions such as Fedora/CentOS/RedHat:
 
 ```sh
 sudo yum install openvpn
 ```
 
-For distributions such as Ubuntu/Debian:
+To install the client for distributions such as Ubuntu/Debian:
 
 ```sh
 sudo apt-get install openvpn
 ```
 
-You will have to download the configuration file `client.ovpn` here:
-![horizon](images/client_ovpn.png){.thumbnail}
+You also have to download the configuration file `client.ovpn` from the OpenVPN Client web interface.
 
-**Launch of the OpenVPN client with a configuration file**
+![User interface](images/ovpn.png){.thumbnail}
+
+##### **Launching the OpenVPN client with your configuration file**
 
 ```sh
 sudo openvpn --config client.ovpn
@@ -84,50 +94,52 @@ You will be prompted to enter your credentials:
  Enter Auth Password: ******************************************
 ```
 
-You will now be communicating over the internet with the IP of your VPN.
+You will now be communicating over the internet with the IP address of your VPN.
 
-You can check your IP with this web page [https://ifconfig.ovh/](https://ifconfig.ovh/){.external}.
+You can check your IP address on this web page: [https://ifconfig.ovh/](https://ifconfig.ovh/){.external}.
 
-### On MacOS
+#### On MacOS
 
-Select `OpenVPN client for Mac OS X`{.action}:
+After logging in, select the `Apple symbol`{.action}.
 
-![horizon](images/admin_or_client.png){.thumbnail}
+![User interface](images/mac_client.png){.thumbnail}
 
 Save the file and execute it.
 
-![horizon](images/mac_installation.png){.thumbnail}
+![Login Mac](images/login_screen_mac.png){.thumbnail}
 
-Once the installation is completed, connect to the VPN.
+Log in with your OpenVPN credentials provided in the installation email.
 
-![horizon](images/login_screen_mac.png){.thumbnail}
+![Login Mac](images/connection_openvpn_mac.png){.thumbnail}
 
-![horizon](images/connection_openvpn_mac.png){.thumbnail}
+You will now be communicating over the internet with the IP address of your VPN.
 
-You will now be communicating over the internet with the IP of your VPN.
-
-You can check your IP with this web page [https://ifconfig.ovh/](https://ifconfig.ovh/){.external}.
+You can check your IP address on this web page: [https://ifconfig.ovh/](https://ifconfig.ovh/){.external}.
 
 
-## Server 
+### Accessing your OpenVPN server
 
-Go the URL inside the email and select `Admin`:
+In the OpenVPN Client web interface which you can access via the URL in your installation email, click on the `Admin`{.action} button.
 
-![horizon](images/admin_or_client.png){.thumbnail}
+![User interface](images/admin_button.png){.thumbnail}
 
+You can also add `admin` to the OpenVPN URL to reach the login page directly:
 
-Sign-in with the credentials received in the email and accept the terms and conditions.
+```sh
+https://IP_of_your_VPS:943/admin
+```
 
-![horizon](images/openvpncredent.png){.thumbnail}
+Log in with the same OpenVPN credentials provided in the email and accept the terms and conditions.
 
-You now have access to the control panel:
+You now have access to the OpenVPN Server control panel.
 
-![horizon](images/admin_panel.png){.thumbnail}
+![OpenVPN access server](images/admin_access.png){.thumbnail}
 
 
 ## Go further
 
 [Getting started with a VPS](../getting-started-vps/)
 
-Join our user community on <https://community.ovh.com/en/>.
+[OpenVPN](https://openvpn.net/)
 
+Join our user community on <https://community.ovh.com/en/>.

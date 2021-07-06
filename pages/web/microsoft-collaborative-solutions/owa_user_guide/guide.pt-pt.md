@@ -7,7 +7,7 @@ section: 'Outlook Web Application (OWA)'
 order: 1
 ---
 
-**Última atualização: 03/08/2020**
+**Última atualização: 25/06/2021**
 
 ## Sumário
 
@@ -197,6 +197,13 @@ Para aceder a todas as suas configurações, clique no ícone de engrenagem situ
 Depois aceda à vista de árvore do menu “Opções” situado do lado esquerdo da página. Aqui poderá fazer mais ajustes à estrutura e ao comportamento da sua conta de e-mail. Tenha em atenção que algumas opções da conta podem ser desativadas por nós por razões de segurança.
 
 ![useowa](images/owa_exchange_step23.png){.thumbnail}
+
+### Gestão dos cookies
+
+O webmail que é utilizado para as nossas ofertas de e-mail está baseado no software Microsoft Outlook Web Application. Portanto, é suscetível de trocar metadados com os servidores da Microsoft, sob a forma de cookies designados `appsforoffice.microsoft.com`.
+
+Se pretender desativar esta troca de informações, pode utilizar no seu browser uma extensão do tipo de bloqueador de conteúdos (como o uBlock Origin ou Ghostery).
+A desativação destes cookies pode afetar a estabilidade do webmail.
 
 ## Saiba mais
 

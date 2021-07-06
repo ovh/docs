@@ -926,6 +926,40 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 51.178.146.199
 ```
 
+### Cluster 031
+
+Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
+
+|Pays|Code Pays|IPv4|IPv6|
+|---|---|----|---|
+|France|FR|146.59.209.152|2001:41d0:301::31|
+|Irlande|IE|188.165.5.107|2001:41d0:301:3::31|
+|Portugal|PT|51.178.229.47|2001:41d0:301:2::31|
+|Royaume-Uni|178.32.52.177|2001:41d0:301:12::31|
+|Italie|IT|94.23.66.84|2001:41d0:301:11::31|
+|Espagne|ES|51.255.26.63|2001:41d0:301:4::31|
+|Pologne|PL|87.98.236.253|2001:41d0:301:5::31|
+|République tchèque|CZ|217.182.52.81|2001:41d0:301:6::31|
+|Pays-Bas|NL|213.32.108.83|2001:41d0:301:7::31|
+|Finlande|FI|178.32.10.72|2001:41d0:301:8::31|
+|Lituanie|LT|188.165.30.182|2001:41d0:301:9::31|
+|Allemagne|DE|151.80.4.219|2001:41d0:301:1::31|
+|Belgique|BE|217.182.187.17|2001:41d0:301:10::31|
+
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.31
+```
+
+Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
+
+
+```bash
+141.94.87.67
+```
+
 ### Cluster 051
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :

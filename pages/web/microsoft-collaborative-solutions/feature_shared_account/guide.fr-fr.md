@@ -90,8 +90,6 @@ Dans notre exemple, le compte partagé est maintenant accessible depuis le compt
 ![emails](images/exchange-shared_accounts07.png){.thumbnail}
 
 
-![emails](images/1351.png){.thumbnail}
-
 ### Utilisation du compte partagé depuis Outlook
 
 Depuis votre logiciel Outlook, vous retrouverez votre compte partagé dans la colonne de gauche, de la même façon que sur le webmail.

@@ -79,7 +79,7 @@ Si la dirección de correo electrónico no se modifica como parte del cambio de 
 
 > [!primary]
 >
-> El procedimiento deberá ser validado por ambas partes en un plazo de 60 días a partir de la solicitud.
+> El procedimiento deberá ser validado por ambas partes en un plazo de 14 días a partir de la solicitud.
 >
 > Si una de las partes rechaza la modificación, la solicitud se anulará.
 

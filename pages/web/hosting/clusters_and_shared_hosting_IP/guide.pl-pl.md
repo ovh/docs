@@ -928,6 +928,38 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 51.178.146.199
 ```
 
+### Klaster 031
+
+Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
+
+|Kraj|Kod kraju|IPv4|IPv6|
+|---|---|----|---|
+|Francja|FR|146.59.209.152|2001:41d0:301::31|
+|Irlandia|IE|188.165.5.107|2001:41d0:301:3::31|
+|Portugalia|PT|51.178.229.47|2001:41d0:301:2::31|
+|Wielka Brytania|UK|178.32.52.177|2001:41d0:301:12::31|
+|Włochy|IT|94.23.66.84|2001:41d0:301:11::31|
+|Hiszpania|ES|51.255.26.63|2001:41d0:301:4::31|
+|Polska|PL|87.98.236.253|2001:41d0:301:5::31|
+|Czechy|CZ|217.182.52.81|2001:41d0:301:6::31|
+|Niderlandy|NL|213.32.108.83|2001:41d0:301:7::31|
+|Finlandia|FI|178.32.10.72|2001:41d0:301:8::31|
+|Litwa|LT|188.165.30.182|2001:41d0:301:9::31|
+|Niemcy|DE|151.80.4.219|2001:41d0:301:1::31|
+|Belgia|BE|217.182.187.17|2001:41d0:301:10::31|
+
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+
+```bash
+46.105.204.31
+```
+
+Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
+
+```bash
+141.94.87.67
+```
+
 ### Klaster 051
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):

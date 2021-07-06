@@ -1,12 +1,18 @@
 ---
 title: 'Gestionar el Object Storage con Cyberduck'
+routes:
+    canonical: 'https://docs.ovh.com/us/es/storage/pca/cyberduck/'
 excerpt: 'Gestionar el Object Storage con Cyberduck'
 slug: gestionar_el_object_storage_con_cyberduck
 section: 'Object Storage'
 legacy_guide_number: g1868
 ---
 
-**Última actualización: 31/03/2021**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 18/06/2021**
 
 ## Objetivo
 
@@ -20,33 +26,45 @@ Esta guía explica cómo configurar Cyberduck para gestionar el Object Storage d
 
 ## Requisitos
 
-Para seguir todos los pasos de esta guía es necesario disponer de:
+- Descargar e instalar [Cyberduck](https://cyberduck.io/).
+- Disponer de las claves de usuario (*OS_USERNAME*) y del proyecto (*OS_PROJECT_NAME* o *OS_TENANT_NAME*), que puede obtener descargando el archivo OpenRC en el menú [Users and Roles](https://docs.ovh.com/us/es/public-cloud/cargar-las-variables-de-entorno-openstack/#paso-1-obtener-las-variables) de su [área de cliente Public Cloud de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Disponer de su contraseña de usuario de OpenStack.
 
-- un usuario de Horizon configurado ([cómo crear un acceso a Horizon](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/){.ref};
-- el identificador de su proyecto y su usuario, que puede obtener en el menú [«Acceso y seguridad»](https://docs.ovh.com/us/en/public-cloud/access_and_security_in_horizon/){.ref} de Horizon, descargando el archivo OpenRC.
+Si ya no conoce la contraseña de usuario de OpenStack, puede cambiarla siguiendo [esta guía](https://docs.ovh.com/us/es/public-cloud/cambiar-la-contrasena-de-usuario-openstack/).
 
 ## Procedimiento
 
-Descargue [Cyberduck](https://cyberduck.io/) en su equipo.
+**Esta guía se ha actualizado sobre la base de la versión 7.9.2 de Cyberduck para MacOS.**
 
-Conéctese a una cuenta de tipo «Swift (OpenStack Object Storage)».
+> [!primary]
+>
+> Según la fuente de descarga de su archivo OpenRC (desde Horizon o desde el área de cliente de OVHcloud), el identificador del proyecto puede llamarse *OS_PROJECT_NAME* o *OS_TENANT_NAME*.
+>
 
-![objectstorage-cyberduck](images/Cyberduck.png){.thumbnail}
+En Cyberduck, abra una conexión "OpenStack Swift (Keystone 3)".
 
-Cumplimente el formulario:
+![pca-cyberduck](images/login.png){.thumbnail}
 
-- Servidor: El servidor de autenticación auth.cloud.ovh.net
-- Project:Domain:Username : OS_TENANT_NAME:default:OS_USERNAME
-- Secret Key: La contraseña de su usuario de Horizon
+Introduzca la siguiente información:
 
-Despligue las opciones haciendo clic en «More Options»:
+- Servidor: auth.cloud.ovh.net
+- Project:Dominio:Username: OS_PROJECT_NAME:default:OS_USERNAME
+- Contraseña: la contraseña de su usuario OpenStack.
 
-- Carpeta: v3.0
+Haga clic en `Conectar`{.action}. Una vez que se haya conectado, podrá acceder al árbol de carpetas y archivos.
 
-Haga clic en el botón «Conectar».
+![pca-cyberduck](images/successful-login.png){.thumbnail}
 
-![objectstorage-cyberduck](images/img_2756.jpg){.thumbnail}
+> [!primary]
+>
+> Si tiene problemas de conexión, puede descargar el perfil de conexión Cyberduck para OpenStack Swift (Keystone 3) y abrirlo con Cyberduck.
+> <br><br>Haga clic derecho <a href="https://trac.cyberduck.io/browser/shelves/02.2020/profiles/default/Openstack%20Swift%20(Keystone%203).cyberduckprofile?rev=48724&order=name" download>aquí y haga clic en "Guardar el destino del enlace como"</a> para descargar el perfil.
+>
 
 ## Más información
 
-Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+[Documentación de Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
+
+[Empezar con la API Swift](https://docs.ovh.com/us/es/public-cloud/empezar_con_la_api_swift/)
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

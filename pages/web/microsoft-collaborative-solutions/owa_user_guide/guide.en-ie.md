@@ -6,7 +6,7 @@ section: 'Outlook Web Application (OWA)'
 order: 1
 ---
 
-**Last updated 26th February 2020**
+**Last updated 25th June 2021**
 
 ## Objective
 
@@ -196,6 +196,13 @@ To access all your settings, click the gear icon at the top, then click `Options
 You can then browse the "Options" tree-view on the left-hand side of the page. Further adjustments to the layout and behaviour of your email account can be set from here. Please note that some of the account options may be disabled from our side for security reasons.
 
 ![useowa](images/owa_exchange_step23.png){.thumbnail}
+
+### Cookie management
+
+The webmail that is used for our email offers is based on Microsoft Outlook Web Application software. It is therefore likely to exchange metadata with Microsoft servers, in the form of cookies called `appsforoffice.microsoft.com`.
+
+If you want to disable these exchanges, you can use a content blocking extension (such as uBlock Origin or Ghostery) on your browser.
+However, disabling these cookies may affect the stability of your webmail.
 
 ## Go further
 

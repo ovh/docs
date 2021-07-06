@@ -11,7 +11,7 @@ order: 6
 ## Objectif
 
 Configurer un numéro en Serveur Vocal Interactif (SVI) permet de proposer à vos correspondants un menu avec lequel ils pourront interagir, grâce aux touches de leurs téléphones.
-<br>L'exemple le plus courant consiste à orienter un appelant entre plusieurs services d'une société : « Appuyez sur la touche 1 pour une demande commerciale ou sur la touche 2 pour une demande technique. »
+<br>L'exemple le plus courant consiste à orienter un appelant entre plusieurs services d'une société : « Appuyez sur la touche 1 pour une demande commerciale ou sur la touche 2 pour une demande technique ».
 
 **Découvrez comment configurer un serveur vocal interactif depuis l'espace client OVHcloud.**
 
@@ -160,7 +160,7 @@ Lorsqu'une ou plusieurs conditions sont ajoutées à une étape, celles-ci doive
 
 > [!success]
 >
-> Vous pouvez ainsi faire en sorte que votre SVI se déclenche uniquement lors de vos horaires d'ouverture. En dehors de ces horaires, vous pouvez, par exemple, diffuser un son rappelant les horaires d'ouverture de votre entreprise ou délencher le [répondeur d'une ligne SIP OVHcloud](../configurer-consulter-repondeur-ligne-ovh/).
+> Vous pouvez ainsi faire en sorte que votre SVI se déclenche uniquement lors de vos horaires d'ouverture. En dehors de ces horaires, vous pouvez, par exemple, diffuser un son rappelant les horaires d'ouverture de votre entreprise ou déclencher le [répondeur d'une ligne SIP OVHcloud](../configurer-consulter-repondeur-ligne-ovh/).
 >
 
 Pour ajouter une condition à une étape, ouvrez le menu de l'étape via le bouton `...`{.action}, puis choisissez `Configuration avancée`{.action}.

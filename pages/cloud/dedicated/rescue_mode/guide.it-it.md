@@ -10,22 +10,22 @@ section: 'Diagnostica e modalità Rescue'
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 19/03/2021**
+**Ultimo aggiornamento: 06/07/2021**
 
 ## Obiettivo
 
 La modalità Rescue è una funzione che permette di avviare il tuo servizio su un sistema operativo temporaneo, per diagnosticare e risolvere problemi.
 
-El modo de rescate se adapta generalmente a las siguientes tareas:
+La modalità Rescue è generalmente adatta alle seguenti operazioni:
 
-- Restauración de la contraseña root
-- Diagnóstico de problemas de red
-- Reparación de un sistema operativo defectuoso
-- Corrección de una configuración incorrecta de un cortafuegos de software
-- Prueba del rendimiento de los discos
-- Prueba del procesador y la memoria RAM
+- Reimposta la password di root
+- Diagnostica dei problemi di rete
+- Riparazione di un sistema operativo difettoso
+- Correzione di una configurazione errata di un firewall software
+- Test delle prestazioni dei dischi
+- Test del processore e della memoria RAM
 
-Si todavía no dispone de backups recientes, la copia de seguridad de sus datos debe ser la primera etapa del modo de recuperación.
+Se non disponi ancora di backup recenti, effettua un backup dei tuoi dati.
 
 **Questa guida ti mostra come attivare e utilizzare il Rescue mode sul tuo server.**
 
@@ -38,13 +38,13 @@ Si todavía no dispone de backups recientes, la copia de seguridad de sus datos 
 
 ## Procedura
 
-La modalità Rescue può essere attivata solo dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. 
+La modalità Rescue può essere attivata solo dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}.
 
 Cerca "Boot" nel riquadro **Informazioni generali** e clicca su `...`{.action} poi su `Modifica`{.action}.
 
 ![Modifica la modalità di avvio](images/rescue-mode-01.png){.thumbnail}
 
-Nella finestra successiva seleziona **Avviare in Rescue mode**. Se il tuo server utilizza un sistema operativo Linux, seleziona `rescue64-pro`{.action} nel menu a tendina. Se il tuo server è Windows, scegli `WinRescue`{.action} (consulta la [sezione della guida qui sotto](#windowsrescue)). 
+Nella finestra successiva seleziona **Avviare in Rescue mode**. Se il tuo server utilizza un sistema operativo Linux, seleziona `rescue64-pro`{.action} nel menu a tendina. Se il tuo server è Windows, scegli `WinRescue`{.action} (consulta la [sezione della guida qui sotto](#windowsrescue)).
 Se **non** vuoi che le credenziali di accesso siano inviate all'indirizzo principale del tuo account, inserisci un altro indirizzo email.
 <br>Clicca su `Continua`{.action} e `Conferma`{.action}.
 
@@ -63,7 +63,7 @@ Una volta terminate le operazioni in modalità Rescue, ricordate di ridefinire i
 #### Utilizzo della modalità Rescue (SSH)
 
 > [!primary]
-> 
+>
 > Se utilizzi una chiave SSH (attiva anche nello Spazio Cliente OVHcloud), non riceverai alcuna password. Una volta che il server è in modalità Rescue, potrai accedere direttamente alla tua chiave SSH.
 >
 
@@ -79,17 +79,17 @@ root@your_server_password:
 ```
 
 > [!warning]
-> 
+>
 > Il tuo client SSH probabilmente bloccherà la connessione per prima, a causa di un'incompatibilità dell'impronta ECDSA. Questa operazione è normale perché la modalità Rescue utilizza un server SSH dedicato temporaneamente.
 >
 > Per aggirare il problema, puoi commentare l'impronta del tuo sistema abituale aggiungendo una `#` davanti alla sua linea nel file *known_hosts*. Elimina questo carattere prima del riavvio del server in modalità normale.
 >
 
-#### Montaje de sus particiones
-
 La maggior parte delle modifiche apportate al tuo server via SSH in modalità Rescue richiedono il mount di una partizione. Questa modalità possiede infatti il proprio file system temporaneo. e, di conseguenza, le modifiche apportate al file system vengono perse con il reboot della macchina sul disco principale.
 
-Il mount delle partizioni viene realizzato con il comando `mount` in SSH. Dovrai prima listare le tue partizioni al fine di poter recuperare il nome di quella che vorrai montare. Puoi fare riferimento ai seguenti esempi di codice: 
+#### Montaggio delle partizioni
+
+Il mount delle partizioni viene realizzato con il comando `mount` in SSH. Dovrai prima listare le tue partizioni al fine di poter recuperare il nome di quella che vorrai montare. Puoi fare riferimento ai seguenti esempi di codice:
 
 ```sh
 rescue:# fdisk -l
@@ -120,51 +120,51 @@ rescue:~# mount /dev/hda1 /mnt/
 > [!primary]
 >
 > La tua partizione verrà ora montata. A questo punto puoi effettuare operazioni sul file system.
-> 
+>
 > Se il tuo server dispone di una configurazione RAID software, devi montare il tuo volume RAID (in generale `/dev/mdX`).
 >
 
 Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e riavvia il server da riga di comando.
 
-#### Montaje de una tienda de datos
+#### Installazione di un datastore
 
-Puede montar un almacén de datos VMware de la misma forma que se describe en el segmento anterior. En primer lugar, instale el paquete necesario:
+È possibile montare un datastore VMware come descritto in precedenza. Per prima cosa, installa il pacchetto necessario:
 
 ```
 rescue:~# apt-get update && apt-get install vmfs-tools
 ```
 
-A continuación, seleccione las particiones para consultar el nombre de la partición del almacén de datos:
+Leggi le tue partizioni per recuperare il nome della partizione del datastore:
 
 ```
-rescue:~# fdisk -l
+rescue:# fdisk -l
 ```
 
-Ahora monte la partición con el siguiente comando, sustituyendo `sdbX` por el valor indicado en el paso anterior:
+Salva la partizione eseguendo il comando seguente, sostituendo `sdbX` con il valore identificato nello step precedente:
 
 ```
-rescue:~# vmfs-fuse /dev/sdbX /mnt
+rescue:# vmfs-fuse /dev/sdbX /mnt
 ```
 
 Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e riavvia il server da riga di comando.
 
-### Uso de la interfaz web del modo de rescate ("rescue64-pro" únicamente)
+### Utilizzo dell'interfaccia Web della modalità Rescue ("rescue64-pro" solo)
 
-Una vez reiniciado el servidor, puede acceder a la interfaz web introduciendo `your_server_IP:81` en la barra de direcciones de su navegador. Utilice el puerto *444* en su lugar. Por ejemplo:
+Una volta riavviato il server, puoi accedere all'interfaccia Web entrando `your_server_IP:81` nella barra degli indirizzi del tuo browser. Con https, utilizza la porta *444* al posto tuo. (ad esempio,
 
-```
+```sh
 https://169.254.10.20:444
 ```
 
-Si ya ha protegido sus datos, puede utilizar la interfaz web del modo de recuperación para probar los siguientes componentes.
+Se hai già protetto i tuoi dati, puoi utilizzare l'interfaccia Web della modalità di recupero per testare questi componenti:
 
-- **Test del disco**: Comprueba su integridad con SMART.
-- **Procesadores**: Comprueba que la CPU funciona con normalidad. (Esta operación puede tardar un tiempo.)
-- **Particiones**: Comprueba el estado de los lectores.
-- **Memoria**: Comprueba la memoria RAM instalada en el servidor. (Esta operación puede tardar un tiempo.)
-- **Red**: Comprueba la conexión a un sistema de referencia interno de OVHcloud y la conexión al navegador.
+- **Test del disco**: Verifica la loro integrità via SMART.
+- **Processori**: Verifica che il processore funzioni normalmente (questa operazione potrebbe richiedere del tempo).
+- **Partizioni**: Controlla gli stati dei lettori.
+- **Memoria**: Verifica la memoria RAM installata sul server (questa operazione potrebbe richiedere del tempo).
+- **Rete**: Verifica la connessione a un sistema di riferimento interno OVHcloud e la connessione al tuo browser.
 
-![Interfaz web para el modo de rescate](images/rescue-mode-04.png) {.thumbnail}
+![Interfaccia Web per la modalità Rescue](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 
