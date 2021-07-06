@@ -141,19 +141,18 @@ Para cargar un archivo, seleccione el botón `Cargar archivos` {.acción}. Esto 
 - 
 > [!primary]
 > 
-> Note: When protecting your upload with a password, the default username is plik.
+> Nota: al proteger su carga con una contraseña, el nombre de usuario predeterminado es plik.
 >
 
-Select the options that you wish to use and click the `Add files`{.action} button.
-
-![add files](images/plik-add-files.png)
+Seleccione las opciones que desea utilizar y haga clic en el botón 'Agregar archivos' {.action}.
+![agregar archivos](images/plik-add-files.png)
 
 > [!primary]
 > 
 > Nota: los archivos están limitados a 10 GB de tamaño.
 > 
 
-After selecting the files you wish to upload, select the green `Upload`{.action} button on the left-hand side. This will open a new page with your files attached; from here, we will go over our downloading options.
+Después de seleccionar los archivos que desea cargar, seleccione el botón verde "Cargar" {.acción} en el lado izquierdo. Esto abrirá una nueva página con sus archivos adjuntos; desde aquí, repasaremos nuestras opciones de descarga.
 
 ### Descargando archivos
 
