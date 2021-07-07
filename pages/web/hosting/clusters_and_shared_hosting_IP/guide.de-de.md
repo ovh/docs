@@ -1013,6 +1013,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 
 [Website mit SSL-Zertifikat auf HTTPS umstellen](../website-umstellen-https-ssl)
 
-[Optimierung der Performance Ihrer Webseite](../webhosting_optimierung_der_performance_ihrer_webseite)
+[Optimierung der Performance Ihrer Website](../webhosting_optimierung_der_performance_ihrer_webseite)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
