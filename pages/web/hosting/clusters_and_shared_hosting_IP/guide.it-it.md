@@ -983,7 +983,7 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 
 |Paese|Codice Paese|IPv4|IPv6|
 |---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
 
 Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
 

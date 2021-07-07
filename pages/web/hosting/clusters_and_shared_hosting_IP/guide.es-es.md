@@ -1038,7 +1038,7 @@ A continuación indicamos las direcciones IP del **cluster** para cada país (pa
 
 |País|Código de país|IPv4|IPv6|
 |---|---|----|---|
-|Canadá|CA|51.161.122.78|2607:5300:205:2::51|
+|Canadá|CA|51.161.122.78|2607:5300:202:0:0::51|
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
