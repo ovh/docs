@@ -18,7 +18,7 @@ Several error messages may appear if your website is inaccessible. The examples 
 |On Edge:<br>"Your connection isn't private"|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
 |On Safari:<br>"This Connection is Not Private"|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
 
-**Find out how to resolve SSL-related error messages on your website.**
+**Find out how to solve SSL-related error messages on your website.**
 
 > [!warning]
 >
