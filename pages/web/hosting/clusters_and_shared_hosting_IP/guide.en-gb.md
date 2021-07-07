@@ -988,7 +988,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
 
 If you have activated the **CDN** option on your Web Hosting, use this IP address:
 

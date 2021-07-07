@@ -987,7 +987,7 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
 
 Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
