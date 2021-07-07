@@ -12,11 +12,11 @@ section: Diagnostic
 Several error messages may appear if your website is inaccessible. The examples below indicate that your web hosting plan does not contain any [SSL certificate](../ssl-certificates-on-web-hosting-plans/) (if your website does not display one of the anomalies described in this guide, please refer to the "[Go further](#aller-plus-loin)" section of this guide): 
 
 |Browser|Error message concerned|
-\|-|---|
-|On Chrome:<br>"Your connection is not private"|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}\|
-|On Firefox:<br>"Warning: Potential Security Risk Ahead"|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}\|
-|On Edge:<br>"Your connection isn't private"|![notsecured_edge](images/notsecured_edge.png){.thumbnail}\|
-|On Safari:<br>"This Connection is Not Private"|![notsecured_safari](images/notsecured_safari.png){.thumbnail}\|
+|-|---|
+|On Chrome:<br>"Your connection is not private"|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
+|On Firefox:<br>"Warning: Potential Security Risk Ahead"|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
+|On Edge:<br>"Your connection isn't private"|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
+|On Safari:<br>"This Connection is Not Private"|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
 
 **Find out how to resolve SSL-related error messages on your website.**
 
