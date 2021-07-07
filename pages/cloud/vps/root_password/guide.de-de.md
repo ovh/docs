@@ -79,7 +79,7 @@ Bei den alten VPS Reihen werden Ihre Partitionen automatisch im Rescue-Modus ers
 ##### **df -h**
 
 ```sh
-df -h
+~$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            5.8G     0  5.8G   0% /dev
 tmpfs           1.2G   17M  1.2G   2% /run
@@ -94,7 +94,7 @@ tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 ##### **lsblk**
 
 ```sh
-lsblk
+~$ lsblk
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0  2.5G  0 disk
 └─sda1    8:1    0  2.5G  0 part /
@@ -109,8 +109,8 @@ Das vorstehende Beispiel zeigt, dass die Systempartition auf **/mnt/sdb1** gemou
 Wenn es sich um einen VPS aus einer aktuellen Produktreihe handelt, sollte die Spalte `MOUNTPOINT` leer sein. Erstellen Sie in diesem Fall zuerst die Partition:
 
 ```sh
-mkdir -p /mnt/sdb1
-mount /dev/sdb1 /mnt/sdb1
+~$ mkdir -p /mnt/sdb1
+~$ mount /dev/sdb1 /mnt/sdb1
 ```
 
 #### Schritt 3: CHROOT-Genehmigungen
@@ -118,13 +118,13 @@ mount /dev/sdb1 /mnt/sdb1
 Ändern Sie nun das Wurzelverzeichnis, um die Änderungen auf Ihr System anzuwenden. Verwenden Sie hierzu den `chroot` Befehl:
 
 ```sh
-chroot /mnt/sdb1/
+~$ chroot /mnt/sdb1/
 ```
 
 Sie können eine Überprüfung durchführen, indem Sie den Befehl `ls -l` eingeben, der den im aktuellen Verzeichnis Ihres Systems vorhandenen Inhalt auflistet:
 
 ```sh
-ls -l
+~$ ls -l
 ```
 
 #### Schritt 4: Das (Root-)Passwort ändern
@@ -170,7 +170,7 @@ Wenn Ihr VPS aus der neueren Generation ist (Namensschema: *vps-xxxxx.vps.ovh.ne
 Verwenden Sie einen Texteditor wie vim oder nano, um die Konfigurationsdatei zu bearbeiten:
 
 ```sh
-nano /etc/ssh/sshd_config
+~$ nano /etc/ssh/sshd_config
 ```
 
 Fügen Sie die folgende Zeile hinzu.
@@ -190,7 +190,7 @@ Speichern Sie die Datei und verlassen Sie den Editor.
 #### Schritt 2: SSH-Dienst neu starten
 
 ```sh
-systemctl restart sshd
+~$ systemctl restart sshd
 ```
 
 Dies sollte ausreichen, um die Änderungen anzuwenden. Sie können alternativ den VPS neu starten (```~$ reboot```).
@@ -200,7 +200,7 @@ Dies sollte ausreichen, um die Änderungen anzuwenden. Sie können alternativ de
 Falls Sie nach der Änderung Ihres Passworts und dem Neustart auf Probleme beim Booten stoßen:
 
 - Verwenden Sie KVM, um herauszufinden, warum der VPS nicht starten kann. Ziehen Sie die [KVM-Anleitung](../verwendung_von_kvm_fur_vps) heran, um Hilfe bei der Verwendung dieser Funktion im OVHcloud Kundencenter zu erhalten.
-- Wenn KVM den VPS im Bootvorgang anzeigt oder das Laufwerk nicht gefunden werden kann, überprüfen Sie, ob [Bootlogs aktiviert](https://docs.ovh.com/gb/en/vps/displaying-boot-log-in-the-kvm/) sind. Übermitteln Sie unseren Support-Teams die relevanten Logs, indem Sie eine Support-Anfrage in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/manager/dedicated/#/support/tickets/new) erstellen, um die Ursache des Problems ermitteln zu können.
+- Wenn KVM den VPS im Bootvorgang anzeigt oder das Laufwerk nicht gefunden werden kann, überprüfen Sie, ob [Bootlogs aktiviert](https://docs.ovh.com/gb/en/vps/displaying-boot-log-in-the-kvm/) sind. Übermitteln Sie unseren Support-Teams die relevanten Logs, indem Sie eine Support-Anfrage in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erstellen, um die Ursache des Problems ermitteln zu können.
 
 ## Weiterführende Informationen
 

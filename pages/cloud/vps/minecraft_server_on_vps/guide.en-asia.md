@@ -113,7 +113,7 @@ Before launching the server, you need to agree to the End User License Agreement
 ~/server$ echo "eula=true" > eula.txt
 ```
 
-A file named `eula.txt` is now located at the root level of your server, containing the line `eula=true`. This will tell the software that you accept the Minecraft End User License Agreement. We invite you to review the terms and conditions on the [Minecraft website](https://www.minecraft.net/).
+A file named `eula.txt` is now located at the root level of your server, containing the line `eula=true`. This will tell the software that you accept the Minecraft EULA. We invite you to review the terms and conditions on the [Minecraft website](https://www.minecraft.net/).
 
 Your server can now be started.
 

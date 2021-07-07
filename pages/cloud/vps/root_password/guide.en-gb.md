@@ -18,7 +18,7 @@ It may become necessary to change the root password on your GNU/Linux operating 
 
 ## Requirements
 
-- an OVHcloud [VPS service](https://www.ovhcloud.com/en-gb/vps/) already set up
+- an OVHcloud [VPS](https://www.ovhcloud.com/en-gb/vps/) already set up
 - login credentials received via email after the installation (if still valid)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (for using rescue mode)
 
@@ -70,12 +70,12 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 #### Step 2: Identify the mount point
 
-On older VPS ranges, your partitions will be automatically mounted in rescue mode. You can use the following commands to identify where your partition is mounted:
+On older VPS ranges, your partitions will be automatically mounted in rescue mode. You can use the following commands to verify this and identify where your partition is mounted:
 
 ##### **df -h**
 
 ```sh
-df -h
+~$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            5.8G     0  5.8G   0% /dev
 tmpfs           1.2G   17M  1.2G   2% /run
@@ -90,7 +90,7 @@ tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 ##### **lsblk**
 
 ```sh
-lsblk
+~$ lsblk
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0  2.5G  0 disk
 └─sda1    8:1    0  2.5G  0 part /
@@ -105,8 +105,8 @@ The example output above shows that the system partition is mounted on **/mnt/sd
 If your VPS is of the current ranges, the `MOUNTPOINT` column should be empty. In that case, mount the partition first:
 
 ```sh
-mkdir -p /mnt/sdb1
-mount /dev/sdb1 /mnt/sdb1
+~$ mkdir -p /mnt/sdb1
+~$ mount /dev/sdb1 /mnt/sdb1
 ```
 
 #### Step 3: CHROOT permissions
@@ -114,13 +114,13 @@ mount /dev/sdb1 /mnt/sdb1
 You now need to edit the root directory to apply the changes to your system. You can do this by using the `chroot` command:
 
 ```sh
-chroot /mnt/sdb1/
+~$ chroot /mnt/sdb1/
 ```
 
 You can check by typing the `ls -l` command, which will list the content stored in the current directory of your system:
 
 ```sh
-ls -l
+~$ ls -l
 ```
 
 #### Step 4: Change the (root) password
@@ -166,7 +166,7 @@ If your VPS is of the current ranges (naming scheme: *vps-XXXXXXX.vps.ovh.net*),
 Use a text editor such as vim or nano to edit this configuration file:
 
 ```sh
-nano /etc/ssh/sshd_config
+~$ nano /etc/ssh/sshd_config
 ```
 
 Add the following line.
@@ -186,7 +186,7 @@ Save the file and exit the editor.
 #### Step 2: Restart the SSH service
 
 ```sh
-systemctl restart sshd
+~$ systemctl restart sshd
 ```
 
 This should be sufficient to apply the changes. Alternatively, reboot the VPS (```~$ reboot```).
@@ -196,7 +196,7 @@ This should be sufficient to apply the changes. Alternatively, reboot the VPS (`
 If you encounter boot issues after you have changed your password and initiated the reboot:
 
 - Check the KVM for important information as to why the VPS is unable to start. Consult the [KVM guide](../use-kvm-for-vps/) for help using this feature in the OVHcloud Control Panel.
-- If the KVM is showing the VPS booting or unable to find the disk, ensure you have [boot logs enabled](../use-kvm-for-vps/). Relay the pertinent logs to our support teams by creating a support request in your [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/support/tickets/new) for further investigations.
+- If the KVM is showing the VPS booting or unable to find the disk, ensure you have [boot logs enabled](../displaying-boot-log-in-the-kvm/). Relay the pertinent logs to our support teams by creating a support request in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) for further investigations.
 
 ## Go further
 
