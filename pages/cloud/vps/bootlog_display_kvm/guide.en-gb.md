@@ -119,7 +119,13 @@ From now on, all commands that you enter will be applied to your VPS instead of 
 
 ### Step 6: Modify the GRUB configuration <a name="step6"></a>
 
-#### **For Debian 7 or higher and Ubuntu 16.04 or higher**
+#### **For Debian 8 or higher and Ubuntu 18 or higher**
+
+Create a backup copy of the config file:
+
+```sh
+~$ cp /etc/default/grub /root/grub.backup
+```
 
 In order to access the boot log with the KVM console, make sure you have the following value inside the file `/etc/default/grub`:
 
@@ -137,11 +143,17 @@ Then use the following command to regenerate the GRUB configuration file (the ch
 
 #### **For CentOS 7 or higher (grub2)**
 
+Create a backup copy of the config file:
+
+```sh
+~$ cp /etc/default/grub /root/grub.backup
+```
+
 In order to access the boot log with the KVM console, make sure you have the following values inside the file `/etc/default/grub`:
 
 ```sh
 GRUB_TERMINAL_OUTPUT="console"
-GRUB_CMDLINE_LINUX="crashkernel=auto rhgb"
+GRUB_CMDLINE_LINUX="console=ttyS0,115200n8 no_timer_check net.ifnames=0 crashkernel=auto rhgb"
 GRUB_CMDLINE_LINUX_DEFAULT="console=tty0 console=ttyS0"
 ```
 
