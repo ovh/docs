@@ -92,7 +92,7 @@ Wenn Sie ein **"Let's Encrypt" SSL-Zertifikat** erstellt haben, aktivieren Sie d
 
 Wenn Sie über ein **importiertes SSL-Zertifikat** verfügen und dieses nicht funktioniert, kontaktieren Sie bitte den Anbieter.
 
-Wenn Sie eines der **kostenpflichtigen SSL-Zertifikat** unseres Partners [SECTIGO](https://sectigo.com/){.external} bestellt haben.<br><br>Kontaktieren Sie bitte den [SECTIGO Support-Team](https://sectigo.com/support){.external}.
+Wenn Sie eines der **kostenpflichtigen SSL-Zertifikat** unseres Partners [SECTIGO](https://sectigo.com/){.external} bestellt haben.<br>Kontaktieren Sie bitte den [SECTIGO Support-Team](https://sectigo.com/support){.external}.
 
 >[!primary]
 >
