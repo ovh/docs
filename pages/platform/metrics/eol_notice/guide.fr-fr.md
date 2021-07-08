@@ -12,7 +12,7 @@ order: 1
 
 OVHcloud annonce la fin de vie des offres Metrics Data Platform.
 Il n'est plus possible de commander des nouveaux services à partir du 8 Juillet 2021.
-Les ervices actifs seront supportés jusqu'au 26 Octobre 2021, date de fin de support.
+Les services actifs seront supportés jusqu'au 26 Octobre 2021, date de fin de support.
 L'ensemble des opérations peut être suivi via [la tâche travaux #51756](http://travaux.ovh.net/?do=details&id=51756).
 
 ## Planification de la fin de vie
