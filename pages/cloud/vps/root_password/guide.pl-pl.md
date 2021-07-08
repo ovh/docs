@@ -78,7 +78,7 @@ W przypadku starszych gam VPS partycje zostaną automatycznie zamontowane w tryb
 ##### **df -h**
 
 ```sh
-df -h
+~$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            5.8G     0  5.8G   0% /dev
 tmpfs           1.2G   17M  1.2G   2% /run
@@ -93,7 +93,7 @@ tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 ##### **lsblk**
 
 ```sh
-lsblk
+~$ lsblk
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0  2.5G  0 disk
 └─sda1    8:1    0  2.5G  0 part /
@@ -108,8 +108,8 @@ Powyższy przykład pokazuje, że partycja systemowa jest zamontowana na **/mnt/
 Jeśli VPS jest nowy, kolumna `MOUNTPOINT` powinna być pusta. W tym przypadku najpierw zamontuj partycję:
 
 ```sh
-mkdir -p /mnt/sdb1
-mount /dev/sdb1 /mnt/sdb1
+~$ mkdir -p /mnt/sdb1
+~$ mount /dev/sdb1 /mnt/sdb1
 ```
 
 #### Etap 3: zezwolenia CHROOT
@@ -117,13 +117,13 @@ mount /dev/sdb1 /mnt/sdb1
 Teraz zmodyfikuj katalog główny, aby wprowadzić zmiany do systemu. W tym celu użyj polecenia `chroot`:
 
 ```sh
-chroot /mnt/sdb1/
+~$ chroot /mnt/sdb1/
 ```
 
 Możesz przeprowadzić weryfikację, wpisując komendę `ls -l`, która zawiera listę treści przechowywanych w bieżącym katalogu systemu:
 
 ```sh
-ls -l
+~$ ls -l
 ```
 
 #### Etap 4: Zmiana hasła (root)
@@ -169,7 +169,7 @@ Jeśli VPS to najnowsza generacja (masz na imię: *vps-XXXXXXX.vps.ovh.net*), ot
 Użyj edytora tekstu, takiego jak vim lub nano, aby zmienić ten plik konfiguracyjny:
 
 ```sh
-nano /etc/ssh/sshd_config
+~$ nano /etc/ssh/sshd_config
 ```
 
 Dodaj następujący wiersz.
@@ -189,7 +189,7 @@ Zapisz plik i wyjdź z edytora.
 #### Etap 2: Zrestartuj usługę SSH
 
 ```sh
-systemctl restart sshd
+~$ systemctl restart sshd
 ```
 
 Powinno to wystarczyć do wdrożenia zmian. Możesz również zrestartować serwer VPS (```~$ reboot```).
@@ -199,7 +199,7 @@ Powinno to wystarczyć do wdrożenia zmian. Możesz również zrestartować serw
 Jeśli po zmianie hasła i uruchomieniu pojawią się problemy z jego rozpoczęciem:
 
 - Sprawdź KVM, dlaczego VPS nie może uruchomić. Zapoznaj się z [przewodnikiem KVM](../kvm_na_serwerach_vps/), aby uzyskać pomoc w korzystaniu z tej funkcji w Panelu klienta OVHcloud.
-- Jeśli KVM wyświetla uruchomienie serwera VPS lub nie jest w stanie odnaleźć dysku, upewnij się, że [bootlog jest włączony](https://docs.ovh.com/gb/en/vps/displaying-boot-log-in-the-kvm/). Prześlij stosowne logi do naszych zespołów wsparcia, tworząc zgłoszenie w Panelu [klienta OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new), aby uzyskać więcej informacji.
+- Jeśli KVM wyświetla uruchomienie serwera VPS lub nie jest w stanie odnaleźć dysku, upewnij się, że [bootlog jest włączony](https://docs.ovh.com/gb/en/vps/displaying-boot-log-in-the-kvm/). Prześlij stosowne logi do naszych zespołów wsparcia, tworząc zgłoszenie w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby uzyskać więcej informacji.
 
 ## Sprawdź również
 

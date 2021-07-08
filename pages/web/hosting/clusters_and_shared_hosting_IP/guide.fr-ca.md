@@ -1067,7 +1067,7 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
 |Pays|Code Pays|IPv4|IPv6|
 |---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
 
 Si le *CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 

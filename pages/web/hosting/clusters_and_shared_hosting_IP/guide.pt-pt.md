@@ -967,7 +967,7 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 
 |País|Código de país|IPv4|IPv6|
 |---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
 
 Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
 

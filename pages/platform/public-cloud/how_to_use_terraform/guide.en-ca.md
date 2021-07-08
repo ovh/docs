@@ -371,7 +371,7 @@ In this example, we will create a basic web site infrastructure using Terraform 
 
 ![public-cloud](images/basic_infrastructure_for_a_web_site.png){.thumbnail}
 
-Create a file "named simple_web_site.tf" and enter the following lines:
+Create a file named "simple_web_site.tf" and enter the following lines:
 
 ```python
 # Creating a private network
