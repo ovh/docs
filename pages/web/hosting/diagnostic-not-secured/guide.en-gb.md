@@ -5,7 +5,7 @@ excerpt: How to react to a security error message on your website
 section: Diagnostic
 ---
 
-**Last updated 06/07/2021**
+**Last updated 08/07/2021**
  
 ## Objective <a name="objective"></a>
 
@@ -65,54 +65,53 @@ Select the `DNS zone`{.action} tab and note the target of the `A` record for you
 
 |Scenario|What to do|
 |---|---|
-|The IP address listed in the DNS zone corresponds to your web hosting plan’s IP address.|Proceed to [Step 2](#step2).|
+|The IP address listed in the [DNS Zone](domains/web_hosting_how_to_edit_my_dns_zone/) corresponds to your web hosting plan’s IP address.|Proceed to [Step 2](#step2).|
 |The IP address listed in the zone does not concern any of the Web hosting plans within your [OVHcloud account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), but appears in the [list of our Web Cloud servers](../list-of-ip-addresses-of-web-hosting-clusters/).|Check that you do not have a hosting plan with this IP address within one of your other [OVHcloud customer accounts](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), if you have several of them. Contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/) for further information.|
-|The IP address entered in the zone is not your hosting plan’s one, nor does it appear on the [list of our Web Cloud servers](../list-of-ip-addresses-of-web-hosting-clusters/).|Contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/) for more informations.|
-|In the `DNS zone`{.action} tab, a warning indicates that your domain name uses other [DNS](../../domains/edit-my-dns-zone/#understand-the-concept-of-dns) servers. These appear as ns **?** .ovh.net or dns **?** .ovh.net (replace the **?**` with the relevant DNS server number):<br><br>![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}|You must therefore modify your domain's DNS servers to match the DNS records in the zone. To perform this operation, follow the instructions in [this guide](../../domains/generalites-serveurs-dns/#access-a-la-gestion-des-serveurs-dns-ovhcloud).|
-|In the `DNS zone`{.action} tab, a message indicates that your domain uses other servers [DNS](../../domains/edit-my-dns-zone/#understand-the-concept-of-dns) and these do not appear as ns **?** .ovh.net or dns **?* .ovh.net:<br> <br>![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}|Contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/fr/) for more information.|
-|Your domain name does not appear in the `Domains`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br><br>Or your domain's `DNS Zone`{.action} tab will appear as follows:<br><br>![dns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|This means that this domain name does not is not managed from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br><br>Check availability from our [order page](https://www.ovh.com/fr/domaines/)<br><br>If your domain appears as `**Available**`, order it.<br><br>If your domain does not appear as `**Available**`, contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/fr/).|
+|The IP address entered in the zone is not your hosting plan’s one, nor does it appear on the [list of our Web Cloud servers](../list-of-ip-addresses-of-web-hosting-clusters/).|Contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/) for further informations.|
+|In the `DNS zone`{.action} tab, a warning indicates that your domain name uses other [DNS](../../domains/edit-my-dns-zone/#understand-the-concept-of-dns) servers. These appear as "ns **?**.ovh.net" or "dns **?**.ovh.net" (replace the "**?**" with the relevant DNS server number):<br><br>![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}|You must therefore modify your domain's DNS servers to match the DNS records in the zone. To perform this operation, follow the instructions in [this guide](../../domains/web_hosting_general_information_about_dns_servers/#accessing-the-ovhcloud-dns-server-management).|
+|In the `DNS zone`{.action} tab, a message indicates that your domain uses other [DNS](../../domains/edit-my-dns-zone/#understand-the-concept-of-dns) servers and these do not appear as "ns **?**.ovh.net" or "dns **?**.ovh.net" :<br><br>![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}|Contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/) for further informations.|
+|Your domain name does not appear in the `Domains`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).<br><br>Or your domain's `DNS Zone`{.action} tab will appear as follows:<br><br>![dns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|It means that your domain name is not managed from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).<br><br>Check if it is not managed from one of your other [OVHcloud customer accounts](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), if you have created more than one of them.<br><br> You can also check the registrar of your domain name and its actual DNS servers with our [WHOIS tool](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>If necessary, contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/) about this.|
 
 ### Step 2: check your hosting plan’s SSL certificate <a name="step2"></a>
 
-In the General `information`{.action} tab of your OVHcloud hosting plan, check the `SSL` certificate section:
+In the `General information`{.action} tab of the concerned hosting plan within your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), check the `SSL` certificate section:
 
 ![ssl-certificate-in-general-tab](images/ssl-certificate-in-general-tab.png){.thumbnail}
 
-#### Scenario 1: your web hosting plan does not contain an SSL certificate
+#### Scenario 1: your web hosting plan does not contain any SSL certificate
 
-Activate an SSL [certificate](https://www.ovh.com/fr/ssl/) on your Web Hosting plan by following the instructions in this [guide](../les-certificats-ssl-sur-les-hebergements-web/).
+Activate an [SSL certificate](https://www.ovh.co.uk/ssl/) on your Web Hosting plan by following the instructions in this [guide](../ssl-certificates-on-web-hosting-plans/ ).
 
-#### Scenario 2: the SSL certificate on your Web Hosting plan does not work
+#### Scenario 2: the SSL certificate on your Web hosting plan does not work
 
-If you have generated a Let's Encrypt SSL **certificate**, activate the SSL option in your Web Hosting plan's `Multisite`{.action}, following the instructions in this [guide](../les-certificats-ssl-sur-les-hebergements-web/#activer-un-certificat-ssl-sur-un-multisite).
+If you generated a **Let's Encrypt SSL certificate**, click on the `Multisite`{.action} tab and follow the instructions of this [guide](../ssl-certificates-on-web-hosting-plans/#enabling-ssl-on-a-multisite) to activate and/or generate the SSL option.
 
-If you have an imported** SSL **certificate and it does not work, contact its provider.
+If you ordered a **SSL certificate** of our partner [SECTIGO](https://sectigo.com/){.external}, check if you have received an e-mail offering to renew it.
+<br>If necessary, contact the [SECTIGO support team](https://sectigo.com/support){.external} for more informations.
 
-If you have ordered one of our partner's paid** SSL **certificates >If needed, contact SECTIGO [support](https://sectigo.com/support){.external} for this.
+If you imported a **SSL certificate** from another provider, contact its support team.
 
 > [!primary]
 >
-> To find all emails sent by our services, click on the top right-hand corner of your OVHcloud Control [Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then on Service `emails`{.action}:
+> To check all the e-mails sent by OVHcloud teams, click on the top right-hand corner of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then on `Service emails`{.action}:
 >
 >![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
 >
 
 ## Go further <a name="gofurther"></a>
 
-[Managing an SSL certificate on a Web Hosting plan](../les-certificats-ssl-sur-les-hebergements-web/)
+[Managing SSL certificates on a Web Hosting plan](../ssl-certificates-on-web-hosting-plans/)
 
-[Activating HTTPS on your website with an SSL certificate](../passer-site-internet-https-ssl/)
+[Activating HTTPS on your website with an SSL certificate](../activate-https-website-ssl/)
 
-[Resolve the “Website not installed” error](../erreur-site-non-installe/)
+[Resolving a “Site not installed” error](../web_hosting_error_-_website_not_installed/)
 
-[How to diagnose a blank page?](../comment-diagnostiquer-page-blanche/)
+[Fixing the 500 Internal Server Error](../web_hosting_how_to_fix_the_500_internal_server_error/)
 
-[What do I do if I get a 500 Internal Server Error?](../erreur-500-internal-server-error/)
-
-[Resolve the most common 1-click module errors](../erreurs-frequentes-modules-en-1-clic/)
+[Resolving the most common 1-click module errors](../error-frequently-1-click-modules/)
  
-For specialised services (SEO, development, etc.), contact [OVHcloud](https://partner.ovhcloud.com/en-gb/) partners.
+For specialized service providers (SEO, IT development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/fr/support-levels/).
+If you need assistance using and configuring your OVHcloud solutions, please refer to our [support offers page](https://www.ovhcloud.com/en-gb/support-levels/).
 
-Join our community of users on <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.

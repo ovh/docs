@@ -5,7 +5,7 @@ excerpt: "Réagir en cas de message d'erreur lié à la sécurité de votre site
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 06/07/2021**
+**Dernière mise à jour le 08/07/2021**
  
 ## Objectif <a name="objectif"></a>
 
