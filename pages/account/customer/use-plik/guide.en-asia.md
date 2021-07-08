@@ -15,11 +15,11 @@ section: Tools
 
 - An OVHcloud account
 
-If you do not already have one you can create one [here](https://ca.ovh.com/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=ASIA).
+If you do not already have one you can create one [here](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
 ## Instructions
 
-### API Login: 
+### API Login
 
 In order to upload files you must be authenticated. Click `Login with OVH`{.action} to begin.
 
@@ -31,7 +31,7 @@ Sign in with your OVHcloud account, giving the API access to the tool. Type in y
 
 This will bring you to the upload page.
 
-### Uploading Files:
+### Uploading Files
 
 Once logged in, you will have the ability to upload files, log out, create access tokens, or delete all uploads.
 
@@ -44,12 +44,12 @@ To upload a file, select the `Upload files`{.action} button. This will bring up 
 - Destruct after the first download - This option will delete your upload after the first time it is downloaded
 - Streaming - The file will not be stored on the server. Instead, the file upload will begin when the remote user begins the download.
 - Removable - Allows the end-user(s) to delete the file
-- Password - Protect your upload with credentials 
+- Password - Protect your upload with credentials
 - Comments - Add comments to your upload, Markdown language is supported
 - Files will be automatically removed in - Choose the number of days (30 maximum), hours or minutes that you would like your files to be automatically removed by.
 
 > [!primary]
-> 
+>
 > Note: When protecting your upload with a password, the default username is plik.
 >
 
@@ -58,7 +58,7 @@ Select the options that you wish to use and click the `Add files`{.action} butto
 ![add files](images/plik-add-files.png)
 
 > [!primary]
-> 
+>
 > Note: Files are limited to 10 GB in size.
 >
 
