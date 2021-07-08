@@ -68,7 +68,7 @@ Wählen Sie den Tab `DNS-Zone`{.action} aus und notieren Sie das Ziel des Eintra
 #### Die notwendigen Aktionen durchführen
 
 |Szenario|Was zu tun|
-|—|—
+|---|---|
 |Die in der [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/) gelistete IP-Adresse entspricht der IP-Adresse Ihres Webhosting Plans.|Geht zu der [Schritt 2](#step2)|
 |Die in der Zone angegebene IP-Adresse betrifft keines der Webhosting-Pläne Ihres [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), sondern erscheint in der [Liste unserer Web Server](../verzeichnis-der-ip-adressen-web-hosting-cluster/).|Überprüfen Sie, dass Sie mit dieser IP Adresse keine Hosting-Adresse in einem Ihrer anderen [OVHcloud Kundenaccounts](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), wenn Sie mehrere haben. Für mehr Informationen kontaktieren Sie Ihren Webmaster oder [OVHcloud Partner](https://partner.ovhcloud.com/de/).|
 |Die in die Zone eingegebene IP-Adresse ist nicht die Ihrer Hosting-Plattform und erscheint auch nicht in der [Liste unserer Cloud Web Server](../verzeichnis-der-ip-adressen-web-hosting-cluster/).|Kontaktieren Sie Ihren Webmaster oder [OVHcloud Partner](https://partner.ovhcloud.com/de/) für mehr Informationen.|
