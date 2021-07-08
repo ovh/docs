@@ -2,7 +2,7 @@
 title: Notification de fin de vie des offres Metrics Data Platform
 slug: eol_notice
 excerpt: Details sur la fin de vie des offres Metrics
-section: Annonces
+section: Announcements
 order: 1
 ---
 
