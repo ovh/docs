@@ -14,7 +14,7 @@ This tutorial will provide you with the steps to upgrade an end of life operatin
 
 > [!alert]
 > Warning: As with any major release upgrade of an operating system there is risk of failure, data loss or broken software configuration. 
-> Therefore, OVHcloud strongly recommends to [backup your server](../save_an_instance) and conduct extensive testing on your applications to make sure they work on the new operating system version prior to following this tutorial.
+> Therefore, OVHcloud strongly recommends to [backup your instance](../back-up-instance) and conduct extensive testing on your applications to make sure they work on the new operating system version prior to following this tutorial.
 >
 
 > [!primary]

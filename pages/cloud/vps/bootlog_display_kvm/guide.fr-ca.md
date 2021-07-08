@@ -48,8 +48,6 @@ Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées 
 
 #### **df -h**
 
-#### **df -h**
-
 ```sh
 ~$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
