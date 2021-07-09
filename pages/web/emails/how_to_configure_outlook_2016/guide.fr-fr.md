@@ -12,7 +12,7 @@ order: 1
 
 Les comptes MX Plan  peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
 
-** Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook 2016 ou ultérieur pour Windows.**
+**Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook 2016 ou ultérieur pour Windows.**
 
 
 > [!warning]
@@ -63,7 +63,7 @@ Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 |Entrant|ssl0.ovh.net|SSL/TLS|995|
 |Sortant|ssl0.ovh.net|SSL/TLS|465|
 
-### utiliser l'adresse e-mail
+### Utiliser l'adresse e-mail
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
@@ -74,9 +74,9 @@ OVHcloud propose aussi une application web permettant d'accéder à votre adress
 Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consulter le paragraphe « **Exporter depuis Windows** » sur notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter-depuis-windows).
 
 
-### Modifier les paramètres existants:
+### Modifier les paramètres existants
 
-Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier:
+Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
 
 - Allez dans `Fichier`{.action} depuis la barre de menu en haut de votre écran, puis sélectionnez le compte à modifier dans le menu déroulant **(1)**.
 - Cliquez sur `Paramètres du compte`{.action}**(2)** en dessous.
