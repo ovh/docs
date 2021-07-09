@@ -51,8 +51,9 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 ![exchange](images/config-outlook-exchange02.png){.thumbnail}
 
-
-> - Si un message vous indique qu'Outlook n'a pas pu paramétrer votre compte, cela peut indiquer que le champ SRV d'OVHcloud n'est pas correctement configuré dans la zone DNS de votre nom de domaine.
+> [!primary]
+> 
+> Si un message vous indique qu'Outlook n'a pas pu paramétrer votre compte, cela peut indiquer que le champ SRV d'OVHcloud n'est pas correctement configuré dans la zone DNS de votre nom de domaine.
 > 
 > ![exchange](images/config-outlook-exchange03.png){.thumbnail}
 >
