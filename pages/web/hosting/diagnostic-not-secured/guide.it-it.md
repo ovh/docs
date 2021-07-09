@@ -5,6 +5,10 @@ slug: errore-sito-non-sicuro
 section: Diagnostica
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
 **Ultimo aggiornamento: 08/07/2021**
  
 ## Obiettivo <a name="objective"></a>
@@ -14,7 +18,7 @@ In caso di inaccessibilità del sito, potrebbero comparire diversi messaggi di e
 |Browser|Messaggio di errore interessato|
 |-|---|
 |Su Chrome :<br>« La connessione non è privata »|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
-|Su Firefox :<br>« Attenzione: rischio probabile di sicurezza »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
+|Su Firefox :<br>« Attenzione: potenziale rischio per la sicurezza »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
 |Su Edge :<br>« La tua connessione non è privata »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
 |Su Safari :<br>« Questa connessione non è privata »|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
 

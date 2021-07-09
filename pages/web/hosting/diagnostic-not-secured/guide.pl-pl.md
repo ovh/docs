@@ -1,11 +1,15 @@
 ---
-title: "Co zrobić w przypadku błędu "Twoje połączenie nie jest prywatne"?"
+title: "Co zrobić w przypadku błędu « Twoje połączenie nie jest prywatne »?"
 slug: blad-strona-nie-bezpieczna
 excerpt: "Reagowanie w przypadku wiadomości z błędem związanej z bezpieczeństwem strony"
 section: Diagnostyka
 ---
 
-**Ostatnia aktualizacja z dnia 08-07-2021
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 08-07-2021**
  
 ## Cel <a name="cel"></a>
 
@@ -29,7 +33,7 @@ W przypadku niedostępności Twojej strony może wystąpić kilka komunikatów o
 
 ## Wymagania
 
-- Zarządzanie serwerami i [strefą DNS](../.../domains/editer-ma-zone-dns/#rozumie-pojęcie-dns) Twojej domeny
+- Zarządzanie serwerami i [strefą DNS](../../domains/editer-ma-zone-dns/#rozumie-pojęcie-dns) Twojej domeny
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## W praktyce
