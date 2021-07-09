@@ -2,140 +2,177 @@
 title: 'Visualización del registro de inicio en el KVM'
 slug: boot-log
 section: Diagnóstico y modo de rescate
+excerpt: 'Cómo diagnosticar un VPS utilizando los logs de arranque (boot logs)'
 ---
 
-**Última actualización: 26/01/2018**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
 
+**Última actualización: 05/07/2021**
 
-## Resumen
+## Objetivo
 
-Si su VPS no está respondiendo correctamente como usted espera, la manera rápida de diagnosticar el problema es revisar que ocurre en el KVM. En esta, guia le explicaremos como modificar la pantalla para que todo se muestra en la consola y en el KVM.
+Si su VPS no responde, siempre debería poder acceder a él desde el área de cliente a través del [KVM](../utilizar_el_kvm_para_los_vps/). La forma más rápida de diagnosticar el problema es comprobar los logs de arranque (boot logs) del servidor. No obstante, la configuración GRUB debe modificarse para que aparezcan estos logs. 
 
-Tenga en cuenta que para algunos entornos, el KVM no proporciona ninguna información útil porque la secuencia de arranque se produce en la consola o GRUB está configurado en modo silencioso.
+> [!primary]
+>
+> Tenga en cuenta que en algunos entornos el KVM no le proporcionará información útil, ya que la secuencia de arranque aparece en el puerto serie en el que GRUB está configurado en modo silencioso.
+>
+
+**Esta guía explica cómo activar los logs de "boot" que le pueden ayudar a reparar un VPS.**
+
+> [!warning]
+> OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
+>
+>Si necesita ayuda para realizar estas acciones, póngase en contacto con un proveedor de servicios especializado o intercambie información con nuestra comunidad de usuarios en <https://community.ovh.com/>. OVHcloud no podrá ofrecerle soporte técnico.
+>
 
 ## Requisitos
 
-- Usted debe de tener acceso a su VPS o su instancia Public Clod en [modo rescate](../rescue){.external}
+- disponer de un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
+- tener acceso al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
 ## Procedimiento
 
-Si su VPS esta funcionado con normalidad, vaya directamente al paso 4.
-
 > [!warning]
 >
-> Estas modificaciones podría cambiar la configuración del GRUB. Asegúrese de realizar una copia de seguridad antes de realizar cualquier modificación. OVHclod no se responsabiliza del daño o de la perdida de datos después de estas operaciones.
+> Estos cambios modificarán la configuración del Grub. Antes de realizar cualquier modificación, OVHcloud no puede ser considerado responsable del daño o la pérdida de los datos resultantes de esta operación.
 >
 
-### Paso 1: Verificación inicial
+Si todavía tiene acceso a su VPS por SSH, puede pasar a [la etapa 6](#step6).
 
-Después de conectarse,  debe de revisar el nombre del disco con el comando `lsblk`:
+### Paso 1: reiniciar el VPS en modo de rescate
+
+Inicie sesión en el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y reinicie el servidor en modo de rescate. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](../rescue/).
+
+### Paso 2: efectuar la verificación inicial
+
+En las antiguas gamas de VPS, las particiones se montarán automáticamente en modo de rescate. Puede utilizar los siguientes comandos para verificar e identificar la ubicación de montaje de la partición:
+
+#### **df -h**
 
 ```sh
-lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-sda 8:0 0 3G 0 disk
-└─sda1 8:1 0 3G 0 part /
-sdb 8:16 0 10G 0 disk
-└─sdb1 8:17 0 10G 0 part
+~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            5.8G     0  5.8G   0% /dev
+tmpfs           1.2G   17M  1.2G   2% /run
+/dev/sda1       2.4G  1.5G  788M  66% /
+tmpfs           5.8G     0  5.8G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
+/dev/sdb1        49G  1.2G   48G   3% /mnt/sdb1
+/dev/sdb15      105M  3.6M  101M   4% /mnt/sdb15
 ```
 
-Aquí, el disco principal es `sdb` y la partición es `sdb1` (`sda` es el disco de rescate y `sda1` es la partición de rescate montada en `/`)
-
-Si el resultado es lo siguiente, su disco principal es `vdb` y su partición es `vdb1` (`vda` es el disco de rescate y `vda1` es la partición de rescate montada en `/`
+#### **lsblk**
 
 ```sh
-lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 8:0 0 3G 0 disk
-└─vda1 8:1 0 3G 0 part /
-vdb 8:16 0 10G 0 disk
-└─vdb1 8:17 0 10G 0 part
+~$ lsblk
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda       8:0    0  2.5G  0 disk
+└─sda1    8:1    0  2.5G  0 part /
+sdb       8:16   0   50G  0 disk
+├─sdb1    8:17   0 49.9G  0 part /mnt/sdb1
+├─sdb14   8:30   0    4M  0 part
+└─sdb15   8:31   0  106M  0 part /mnt/sdb15
 ```
-> [!primary]
->
-> Para esta, guia, necesitará usar `sdb`. Si su disco es `vdb`, simplemente remplace sdb con vdb para cada comando.
 
-### Paso 1b: Solo para VPS
+El ejemplo anterior muestra que la partición del sistema está montada en **/mnt/sdb1**. (El disco principal es **sdb**. El disco rescue es **sda** y **sda1** es la partición principal en rescue montada en **/**).
 
-En modo rescate de su VPS, el disco principal ya está montado. Por lo tanto, primero debe desmontarse y volver a montarlo con la configuración correcta:
+Si su VPS pertenece a las [**gamas VPS actuales**](https://www.ovhcloud.com/es/vps/), no se realizará ningún montaje automático y la columna "MOUNTPOINT" debería estar vacía. En ese caso, vaya al [paso 4](#step4).
+
+### Paso 3: desmontar la partición (solo para las antiguas gamas VPS)
+
+En un VPS perteneciente a las antiguas gamas en modo de rescate, el disco principal ya está montado. Por lo tanto, debe desmontarse primero antes de volver al paso 4:
 
 ```sh
-umount /dev/sdb1
+~$ umount /dev/sdb1
 ```
 
-### Paso 2: Montar el disco
+### Paso 4: montar la partición con los parámetros adecuados <a name="step4"></a>
 
-Ahora que el nombre del disco está bien identificado, usted puede montarlo con la configuración correcta:
+Si su VPS pertenece a las [**gamas VPS actuales**](https://www.ovhcloud.com/es/vps/), compruebe que la carpeta de montaje esté creada:
 
 ```sh
-mount /dev/sdb1 /mnt
-mount -t proc none /mnt/proc
-mount -o bind /dev /mnt/dev
-mount -t sysfs none /mnt/sys/
+~$ mkdir -p /mnt/sdb1
 ```
-Estos comandos le permitirá usar el comando `chroot` e iniciar los comando que requieren el acceso a los directorios `sys`, `dev` y `proc`.
 
-### Paso 3: Iniciar el comando CHROOT
-
-
-Para aplicarlo directamente al sistema, utilice el siguiente comando:
+Introduzca los siguientes comandos para montar la partición con los parámetros adecuados:
 
 ```sh
-chroot /mnt
+~$ mount /dev/sdb1 /mnt/sdb1
+~$ mount -t proc none /mnt/sdb1/proc
+~$ mount -o bind /dev /mnt/sdb1/dev
+~$ mount -t sysfs none /mnt/sdb1/sys/
 ```
 
-A partir de ahora, todos los comandos serán aplicados a su VPS y no a su modo rescate.
+La partición del sistema está montada para utilizarse con el comando `chroot`, para ejecutar acciones que necesitan acceso a los repertorios `sys`, `dev` y `proc`.
 
-> [!primary]
->
-> Cuando usted tenga el modo rescate, verá la siguiente información:
->
-> ```sh
->  root@serveur-3:~#
-> ```
->  Después de ejecutar `chroot`, lo verá:
-> 
-> ```
-> [root@serveur-3 ~]#
-> ```
->
-> Tenga en cuanta que los corchetes [ ], confirman qu usted está en el entorno CHROOT
->
+### Paso 5: utilizar el comando CHROOT para configurar sus archivos de sistema
 
-### Paso 4: Realice las modificaciones
+A continuación, acceda a los archivos GRUB de su sistema y los cambie. Para ello, utilice el comando `chroot`:
 
-Para acceder al log de arranque de su KVM, asegúrese que tiene los siguientes valores en el fichero /etc/default/grub:
+```sh
+~$ chroot /mnt/sdb1
+```
 
--  Para CentOS 6 y 7
+A partir de ahora, todos los comandos que introduzca se aplicarán a su VPS en lugar del entorno temporal del modo de rescate.
+
+### Paso 6: modificar la configuración GRUB <a name="step6"></a>
+
+#### **Para Debian 8 o superior y Ubuntu 18 o superior**
+
+Cree una copia de seguridad del archivo de configuración:
+
+```sh
+~$ cp /etc/default/grub /root/grub.backup
+```
+
+Para acceder a los logs de arranque con la consola KVM, asegúrese de que dispone del siguiente valor en el archivo `/etc/default/grub`:
+
+```sh
+GRUB_CMDLINE_LINUX_DEFAULT="console=ttyS0 console=tty0"
+```
+
+Si esta línea no existe o es diferente, edite el archivo con un editor y guárdelo.
+
+A continuación, utilice el siguiente comando para regenerar el archivo de configuración GRUB (los cambios se guardarán la próxima vez que se reinicie):
+
+```sh
+~$ update-grub
+```
+
+#### **Para CentOS 7 o superior (grub2)**
+
+Cree una copia de seguridad del archivo de configuración:
+
+```sh
+~$ cp /etc/default/grub /root/grub.backup
+```
+
+Para acceder a los logs de arranque con la consola KVM, asegúrese de que dispone de los siguientes valores en el archivo `/etc/default/grub` :
 
 ```sh
 GRUB_TERMINAL_OUTPUT="console"
-GRUB_CMDLINE_LINUX="crashkernel=auto rhgb"
+GRUB_CMDLINE_LINUX="console=ttyS0,115200n8 no_timer_check net.ifnames=0 crashkernel=auto rhgb"
 GRUB_CMDLINE_LINUX_DEFAULT="console=tty0 console=ttyS0"
 ```
 
-Si no tiene los siguientes valores, debe de modificar el fichero y guardarlo.
+Si estas líneas no aparecen o son diferentes, edite el archivo con un editor y guárdelo.
 
-Con el siguiente comando puede regenerar el fichero de configuración GRUB (los valores serán guardas en el siguiente reinicio)
-
-```sh
-grub2-mkconfig -o "$(readlink /etc/grub2.cfg)"
-```
-
-- Para Debian y Ubuntu
-
-GRUB_CMDLINE_LINUX_DEFAULT="console=ttyS0 console=tty0"
-
-Si no tiene los siguientes valores, debe de modificar el fichero y guardarlo.
-C
-on el siguiente comando puede regenerar el fichero de configuración GRUB (los valores serán guardas en el siguiente reinicio)
+A continuación, utilice el siguiente comando para regenerar el archivo de configuración GRUB (los valores se guardarán para el siguiente reinicio):
 
 ```sh
-update-grub
+~$ grub2-mkconfig -o "$(readlink /etc/grub.cfg)"
 ```
 
-Una vez que haya realizado las modificaciones, reinicie el VPS ola instancia en modo normal y revise el KVM: debería aparecer la información del log de inicio.
+Una vez realizados los cambios, reinicie su VPS en modo "normal" desde el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Los logs de arranque deben aparecer al utilizar la [consola KVM](../utilizar_el_kvm_para_los_vps/).
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+[Utilizar el KVM en un VPS](../utilizar_el_kvm_para_los_vps/)
+
+[Activar el modo de rescate en un VPS](../rescue/)
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

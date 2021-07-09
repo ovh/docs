@@ -25,7 +25,7 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 
 - a [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account, with 2 GB of RAM minimum
 - installing a GNU/Linux distribution on the server
-- administrative access (root) via SSH or remote desktop (Windows) to your server
+- administrative access (root) via SSH to your server
 - a basic understanding of GNU/Linux administration
 
 ## Instructions
@@ -37,7 +37,8 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 
 ### Step 1: Prepare the server
 
-The first step is to set up your VPS for a Minecraft installation. It is recommended to order a new VPS or reinstall an existing one from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), using the latest available release of Ubuntu or Debian. Please refer to our [Getting started guide](../getting-started-vps/#reinstallvps) if necessary.
+The first step is to set up your VPS for a Minecraft installation.
+<br>It is recommended to order a new VPS or reinstall an existing one from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), using the latest available release of Ubuntu or Debian. Please refer to our [Getting started guide](../getting-started-vps/#reinstallvps) if necessary.
 
 Once the OS is installed, connect to your VPS with SSH as described in the [Getting started guide](../getting-started-vps/). 
 
