@@ -1,9 +1,9 @@
-—
+---
 título: "O que fazer em caso de erro "A sua ligação não é privada"?"
 slug: erro-site-não-seguro
 excerpt: "Reagir em caso de mensagem de erro relacionado com a segurança do seu site"
 Secção: Diagnóstico
-—
+---
 
 **Última atualização: 08/07/2021**
  
