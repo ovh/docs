@@ -25,7 +25,7 @@ Vous pouvez louer un serveur Minecraft préconstruit ou le configurer vous-même
 
 - Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud, avec 2 Go de RAM minimum
 - Avoir installé une distribution GNU/Linux sur le serveur
-- Disposer d'un accès administrateur (root) via SSH ou remote desktop (Windows) à votre serveur
+- Disposer d'un accès administrateur (root) via SSH à votre serveur
 - Avoir une compréhension basique de l'administration GNU/Linux
 
 ## En pratique
