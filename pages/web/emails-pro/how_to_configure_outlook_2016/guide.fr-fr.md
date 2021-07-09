@@ -75,7 +75,7 @@ Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des
 
 ### Modifier les paramètres existants
 
-Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier:
+Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
 
 - Allez dans `Fichier`{.action} depuis la barre de menu en haut de votre écran, puis sélectionnez le compte à modifier dans le menu déroulant **(1)**.
 - Cliquez sur `Paramètres du compte`{.action}**(2)** en dessous.
