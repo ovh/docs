@@ -1,7 +1,7 @@
 ---
 title: 'Cómo crear un servidor Minecraft en un VPS o un servidor dedicado'
+slug: crear-servidor-minecraft-en-vps
 excerpt: 'Cómo instalar un servidor Minecraft'
-slug: minecraft
 section: Tutoriales
 ---
 
@@ -15,7 +15,7 @@ section: Tutoriales
 
 Minecraft es un videojuego de construcción de éxito mundial. Si desea jugar en modo multijugador, debe alojarse en un servidor.
 
-Puede contratar un servidor Minecraft preconstruido o configurarlo usted mismo en un [VPS](https://www.ovhcloud.com/es/vps/) o en un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/). Esto le permitirá ahorrar recursos y le permitirá controlar completamente su instancia de juego.
+Puede contratar un servidor Minecraft preconstruido o configurarlo usted mismo en un [VPS](https://www.ovhcloud.com/es-es/vps/) o en un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/). Esto le permitirá ahorrar recursos y le permitirá controlar completamente su instancia de juego.
 
 **Este tutorial explica cómo lanzar un servidor Minecraft Java Edition en un VPS de OVHcloud y probar su conectividad.**
 
@@ -27,7 +27,7 @@ Puede contratar un servidor Minecraft preconstruido o configurarlo usted mismo e
 
 ## Requisitos
 
-- Tener un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud, con un mínimo de 2 GB de RAM.
+- Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud, con un mínimo de 2 GB de RAM.
 - Haber instalado una distribución GNU/Linux en el servidor.
 - Tener acceso de administrador (root) por SSH a su servidor.
 - Tener una comprensión básica de la administración GNU/Linux.
@@ -110,7 +110,7 @@ En su terminal de línea de comandos, compruebe que siga en la carpeta `servidor
 <br>Sustituya `el_enlace_de_descarga` por la URL real que haya copiado anteriormente.
 
 ```sh
-~/server$ wget lien_de_telecharged
+~/server$ wget el_enlace_de_descarga
 ```
 
 Antes de ejecutar el servidor, debe aceptar la licencia del programa (EULA o _End User License Agreement_) para evitar un corte instantáneo. Para ello, introduzca el siguiente comando:
@@ -174,7 +174,7 @@ Por defecto, no es necesario introducir ningún puerto.
 
 El servidor Vanilla Minecraft ya está instalado en su VPS.
 
-Esta guía de instalación también es válida para un [servidor dedicado de OVHcloud](https://www.ovhcloud.com/es/bare-metal/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/). Con estas soluciones, también disfrutará de recursos físicos garantizados y estables en cualquier momento del día, ya que el hardware es dedicado.
+Esta guía de instalación también es válida para un [servidor dedicado de OVHcloud](https://www.ovhcloud.com/es-es/bare-metal/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/). Con estas soluciones, también disfrutará de recursos físicos garantizados y estables en cualquier momento del día, ya que el hardware es dedicado.
 
 ## Más información <a name="gofurther"></a>
 

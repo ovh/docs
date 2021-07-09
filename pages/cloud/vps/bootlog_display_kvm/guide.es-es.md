@@ -1,8 +1,8 @@
 ---
-title: 'Visualización del registro de inicio en el KVM'
+title: Mostrar los logs de arranque en el KVM
 slug: boot-log
-section: Diagnóstico y modo de rescate
 excerpt: 'Cómo diagnosticar un VPS utilizando los logs de arranque (boot logs)'
+section: Diagnóstico y modo de rescate
 ---
 
 > [!primary]
@@ -30,8 +30,8 @@ Si su VPS no responde, siempre debería poder acceder a él desde el área de cl
 
 ## Requisitos
 
-- disponer de un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
-- tener acceso al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- disponer de un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud
+- tener acceso al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 
 ## Procedimiento
 
@@ -44,7 +44,7 @@ Si todavía tiene acceso a su VPS por SSH, puede pasar a [la etapa 6](#step6).
 
 ### Paso 1: reiniciar el VPS en modo de rescate
 
-Inicie sesión en el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y reinicie el servidor en modo de rescate. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](../rescue/).
+Inicie sesión en el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el servidor en modo de rescate. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](../rescue/).
 
 ### Paso 2: efectuar la verificación inicial
 
@@ -80,7 +80,7 @@ sdb       8:16   0   50G  0 disk
 
 El ejemplo anterior muestra que la partición del sistema está montada en **/mnt/sdb1**. (El disco principal es **sdb**. El disco rescue es **sda** y **sda1** es la partición principal en rescue montada en **/**).
 
-Si su VPS pertenece a las [**gamas VPS actuales**](https://www.ovhcloud.com/es/vps/), no se realizará ningún montaje automático y la columna "MOUNTPOINT" debería estar vacía. En ese caso, vaya al [paso 4](#step4).
+Si su VPS pertenece a las [**gamas VPS actuales**](https://www.ovhcloud.com/es-es/vps/), no se realizará ningún montaje automático y la columna "MOUNTPOINT" debería estar vacía. En ese caso, vaya al [paso 4](#step4).
 
 ### Paso 3: desmontar la partición (solo para las antiguas gamas VPS)
 
@@ -92,7 +92,7 @@ En un VPS perteneciente a las antiguas gamas en modo de rescate, el disco princi
 
 ### Paso 4: montar la partición con los parámetros adecuados <a name="step4"></a>
 
-Si su VPS pertenece a las [**gamas VPS actuales**](https://www.ovhcloud.com/es/vps/), compruebe que la carpeta de montaje esté creada:
+Si su VPS pertenece a las [**gamas VPS actuales**](https://www.ovhcloud.com/es-es/vps/), compruebe que la carpeta de montaje esté creada:
 
 ```sh
 ~$ mkdir -p /mnt/sdb1
@@ -167,7 +167,7 @@ A continuación, utilice el siguiente comando para regenerar el archivo de confi
 ~$ grub2-mkconfig -o "$(readlink /etc/grub.cfg)"
 ```
 
-Una vez realizados los cambios, reinicie su VPS en modo "normal" desde el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Los logs de arranque deben aparecer al utilizar la [consola KVM](../utilizar_el_kvm_para_los_vps/).
+Una vez realizados los cambios, reinicie su VPS en modo "normal" desde el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Los logs de arranque deben aparecer al utilizar la [consola KVM](../utilizar_el_kvm_para_los_vps/).
 
 ## Más información
 
