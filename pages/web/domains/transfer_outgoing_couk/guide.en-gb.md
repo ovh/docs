@@ -1,74 +1,78 @@
 ---
-title: Outgoing .co.uk domain name transfer
-excerpt: Outgoing .co.uk domain name transfer
+title: Transferring a .uk domain name to another registrar
+excerpt: Find out how to move UK domain names from OVHcloud to a provider of your choice
 slug: outgoing_couk_domain_name_transfer
 section: Transfer
 order: 5
 ---
 
+**Last updated 12th July 2021**
+
 ## Objective
 
-You can launch a domain transfer to other registrar by changing the TAG of your domain
+The process of changing the registrar for Top Level Domains (TLD) of the **UK** country code (**.uk**) differs from the one explained in our [guide regarding generic TLDs](../outgoing-transfer-of-generic-or-geographical-domain-name/). The instructions below concern the following extensions:
+
+- .uk
+- .co.uk
+- .ac.uk
+- .gov.uk
+- .me.uk
+- .net.uk
+- .org.uk
+- .plc.uk
+- .sch.uk
+
+**This guide explains how to initiate an outgoing transfer for these TLDs in the OVHcloud Control Panel.**
 
 ## Requirements
-To transfer a .co.uk domain name or equivalent to another registrar, make sure that it meets the following conditions:
 
+- a [.uk domain name](https://www.ovh.co.uk/domains/) registered with OVHcloud
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with the necessary permissions to manage the domain name (domain administrator)
+- the domain name is still active i.e. not expired or otherwise locked on the part of OVHcloud
+- the domain name is not the subject of an ongoing dispute with the responsible registry [Nominet](https://www.nominet.uk/)
 
-- Your domain must not have expired. 
-- Your domain name must not be the subject of an ongoing dispute with Nominet
-- Your domain must not be blocked by OVH
-
-
-
-\* *If the domain is expired for less than 90 days you can contact with our support team to unlock this process*
-
-
-
-
-#### Extensions in question
-
-- .uk.
-- .co.uk
-- .me.uk
-- .org.uk
-- .ltd.uk
-- .plc.uk
+> [!primary]
+>
+> If the domain has been expired for **less than 90 days**, it can still be transferred. Please contact our support teams by creating a support request in your OVHcloud Control Panel to unlock the domain name for transfer.
+>
+> If you are the domain's **owner** but you are currently not able to manage it in the OVHcloud Control Panel, neither by using your own access nor via your domain's administrative contact, please consult [this guide](../../customer/managing-contacts/#special-case-of-a-domain-owner/) first before proceeding.
+>
 
 ## Instructions
 
+The TLDs in question have a registrar **TAG** which corresponds to a domain name registrar such as OVHcloud. The transfer process is initiated by changing the TAG to the one identifying your new registrar.
 
-### Step 1: Verify domain name information
-You can find the information in your control panel [here](https://www.ovh.com/manager/web/#/domain). 
-You must log in as the administrative contact.
+In case you do not know the required TAG yet, you can request it at your new provider or look it up on this [Nominet registrar list](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/).
 
+### Step 1: Verify the necessary information
 
-- Once you are logged in, you just have to click on your domain name at the top-left of the Domains section, then on General information.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Domain names`{.action} in the services bar on the left-hand side, then choose the domain name concerned.
 
+Keep in mind that you have to be logged in as the administrative contact.
 
+In the `General information`{.action} tab, you can verify that the requirements for the transfer process are met.
 
-![](images/img_4266.jpg){.thumbnail}
-
-
-### Step 2: Change your domain TAG
-
-- Then click on "Outgoing transfer Tag".
+![outgoingtransfer](images/img_4266.jpg){.thumbnail}
 
 
+### Step 2: Edit your domain name's TAG
 
-![](images/img_4267.jpg){.thumbnail}
+Click on the `Outgoing transfer tag`{.action} link in the section labelled **Security**.
 
-- Specify the TAG provided by your future registrar, then click "confirm".
+![outgoingtransfer](images/img_4267.jpg){.thumbnail}
 
+In the popup window, enter the TAG of your future registrar, then click on `Confirm`{.action}.
 
+![outgoingtransfer](images/img_4268.jpg){.thumbnail}
 
-![](images/img_4268.jpg){.thumbnail}
+If you are unable to modify your domain name's TAG in the OVHcloud Control Panel, you can request at the registry to modify it on your behalf. You can find more information on the official [Nominet website](https://www.nominet.uk/domain-support/).  
 
-If for whatever reason you cannot modify your domain's TAG in your control panel, you can ask Nominet to modify it for you. 
+### Step 3: Follow up the transfer process with your new registrar
 
-Go to this page on the Registry's website: [Manage your domain - Change registrar](https://www.nominet.uk/transferring-your-domain-name/).
-Please note, you will be charged for this service.
+Successfully changing the TAG initiates the transfer process. Contact your new provider for details as well as any follow-up questions.
 
+## Go further
 
-### Step 3: Pass the information on to your new domain name provider
-This is all you need to do. You now have all the information you need to transfer your domain name.
+[Transferring a domain name to another registrar](../outgoing-transfer-of-generic-or-geographical-domain-name/)
 
+Join our community of users on <https://community.ovh.com/en/>. 
