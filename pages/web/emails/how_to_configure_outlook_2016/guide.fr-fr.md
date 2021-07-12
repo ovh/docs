@@ -93,6 +93,6 @@ La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sor
 
 [Configurer son compte E-mail Pro sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/emails-pro/configuration-outlook-2016/){.external}
 
-[Configurer son compte Exchange sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/microsoft-collaborative-solutions/Outlook-configuration-automatique-sous-outlook-2016/){.external}
+[Configurer son compte Exchange sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook-2016/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
