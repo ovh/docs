@@ -61,13 +61,13 @@ Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez l
 
 #### Redirection
 
-vous souhaitez redirigez une vos e-mails vers un autre destinataire, créer un alias ou encore mettre systématiquement en copié une autre adresse e-mail. Pour cela il vous faudre créer une redirection.
+vous souhaitez rediriger une vos e-mails vers un autre destinataire, créez un alias ou encore mettre systématiquement en copié une autre adresse e-mail. Pour cela il vous faudra créer une redirection.
 
-Il est possible de réaliser 2 types de rediretion:
+Il est possible de réaliser 2 types de redirection:
 
-- créer votre redirection depuis le webmail, via les règles de boite de réception. Pour cela, nous vous invitons à suivre notre guide [Règles de boîte de réception depuis l’interface OWA.](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/#exemple-1-rediriger-des-e-mails-vers-une-autre-adresse)
+- créez votre redirection depuis le webmail, via les règles de boite de réception. Pour cela, nous vous invitons à suivre notre guide [Règles de boîte de réception depuis l’interface OWA.](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/#exemple-1-rediriger-des-e-mails-vers-une-autre-adresse)
 
-- créer votre redirection depuis votre votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cette méthode vous permet par exemple de créer un alias, c'est à dire rediriger une adresse e-mail qui n'existe pas vers une adresse e-mail existante. Pour cela, nous vous invitons à suivre notre guide [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#nouvelle-version-de-loffre-mx-plan_1)
+- créez votre redirection depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cette méthode vous permet par exemple de créer un alias, c'est à dire rediriger une adresse e-mail qui n'existe pas vers une adresse e-mail existante. Pour cela, nous vous invitons à suivre notre guide [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#nouvelle-version-de-loffre-mx-plan_1)
 
 #### Répondeur
 
@@ -93,7 +93,7 @@ Nous vous invitons à suivre notre guide [Ajouter un pied de page sur vos e-mail
 
 #### Politique de sécurité
 
-Vous souhaitez renforcer la sécurité d'accès à votres adresses e-mail. Il vous est possible de le faire en paramétrant la politique de sécurité de votre MXplan.
+Vous souhaitez renforcer la sécurité d'accès à  adresses e-mail. Il vous est possible de le faire en paramétrant la politique de sécurité de votre MXplan.
 
 Nous vous invitons à suivre notre guide [Gérer la politique de sécurité d’un service e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gerer-politique-de-securite-mot-de-passe/)
 
@@ -170,7 +170,7 @@ Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez l
 
 #### Redirection
 
-Vous souhaitez redirigez vos e-mails vers un autre destinataire, créer un alias ou encore mettre systématiquement en copie une autre adresse e-mail. Pour cela il vous faudra créer une redirection. 
+Vous souhaitez rediriger vos e-mails vers un autre destinataire, créer un alias ou encore mettre systématiquement en copie une autre adresse e-mail. Pour cela il vous faudra créer une redirection. 
 
 Nous vous invitons à suivre notre guide [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#nouvelle-version-de-loffre-mx-plan_1)
 
@@ -178,14 +178,13 @@ Nous vous invitons à suivre notre guide [Utiliser les redirections e-mail](http
 
 Vous devez partir en congé ou vous n'aurez pas accès à votre adresse e-mail durant une certaine période. Il vous est possible d'utiliser le répondeur sur votre adresse e-mail.
 
-
 Nous vous invitons à suivre notre guide [Créer un répondeur pour son adresse e-mail](https://docs.ovh.com/fr/emails/mise-en-place-repondeur-mail/)
 
 #### Délégations
 
-Vous souhaitez **déléguer tout le service email d’un nom de domaine à un identifiant** ou **déléguer un ou plusieurs comptes emails à un identifiant**, pour par exemple permettre de changer indépendament le mot de passe d'une adresse e-mail.
+Vous souhaitez **déléguer tout le service email d’un nom de domaine à un identifiant** ou **déléguer un ou plusieurs comptes emails à un identifiant**, pour par exemple permettre de changer indépendamment le mot de passe d'une adresse e-mail.
 
-Nous vous invitons à suivre notre guide [déléguer la gestion de vos e-mails à une autre personne](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/)
+Nous vous invitons à suivre notre guide [Déléguer la gestion de vos e-mails à une autre personne](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/)
 
 #### Mailing-lists
 
