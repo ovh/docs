@@ -70,7 +70,7 @@ In order to use CephFS, you need to enable it through the Cloud Disk Array API. 
 The user has to be granted access to the `cephfs.fs-default.data` and `cephfs.fs-default.meta` pools. After that, add the following lines to your `/etc/pve/storage.cfg` config file.
 
 ```bash
-rbd: ovhcloud-cda-cephfs
+cephfs: ovhcloud-cda-cephfs
         monhost 10.0.0.1 10.0.0.2 10.0.0.3
         path /mnt/pve/cephfs
         content backup,vztmpl
