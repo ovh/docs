@@ -17,10 +17,10 @@ In caso di inaccessibilità del sito, potrebbero comparire diversi messaggi di e
 
 |Browser|Messaggio di errore interessato|
 |-|---|
-|Su Chrome :<br>« La connessione non è privata »|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
-|Su Firefox :<br>« Attenzione: potenziale rischio per la sicurezza »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
-|Su Edge :<br>« La tua connessione non è privata »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
-|Su Safari :<br>« Questa connessione non è privata »|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
+|Chrome :<br>« La connessione non è privata »|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
+|Firefox :<br>« Attenzione: potenziale rischio per la sicurezza »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
+|Edge :<br>« La tua connessione non è privata »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
+|Safari :<br>« Questa connessione non è privata »|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
 
 **Scopri come risolvere errori di tipo « La tua connessione non è privata ».**
 

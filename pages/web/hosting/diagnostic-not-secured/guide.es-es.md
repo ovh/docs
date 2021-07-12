@@ -1,7 +1,7 @@
 ---
 title: "¿Qué hacer en caso de error « La conexión no es privada »?"
-slug: error-sitio-no-seguridad
 excerpt: "Responder en caso de que aparezca un mensaje de error relacionado con la seguridad de su sitio web"
+slug: error-sitio-no-seguridad
 section: Diagnóstico
 ---
 
@@ -17,10 +17,10 @@ En caso de que su sitio web no sea accesible, puede aparecer varios mensajes de 
 
 |Navegador|Mensaje de error correspondiente|
 |-|---|
-|Sur Chrome :<br>« La conexión no es privada »|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
-|Sur Firefox :<br>« Advertencia: riesgo potencial de seguridad a continuación »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
-|Sur Edge :<br>« Su conexión no es privada »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
-|Sur Safari :<br>« Esta conexión no es privada »|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
+|Chrome :<br>« La conexión no es privada »|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
+|Firefox :<br>« Advertencia: riesgo potencial de seguridad a continuación »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
+|Edge :<br>« Su conexión no es privada »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
+|Safari :<br>« Esta conexión no es privada »|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
 
 **Descubra cómo resolver los errores del tipo « Su conexión no es privada ».**
 

@@ -1,7 +1,7 @@
 ---
 title: "Co zrobić w przypadku błędu « Połączenie nie jest prywatne »?"
-slug: blad-strona-nie-bezpieczna
 excerpt: "Reagowanie w przypadku wiadomości z błędem związanej z bezpieczeństwem strony"
+slug: blad-strona-nie-bezpieczna
 section: Diagnostyka
 ---
 

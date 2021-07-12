@@ -1,7 +1,7 @@
 ---
 title: "Que faire en cas d'erreur « Votre connexion n'est pas privée » ?"
-slug: erreur-site-non-securise
 excerpt: "Réagir en cas de message d'erreur lié à la sécurité de votre site"
+slug: erreur-site-non-securise
 section: Diagnostic
 ---
 
@@ -13,10 +13,10 @@ Plusieurs messages d'erreur peuvent apparaître en cas d'inaccessibilité de vot
 
 |Navigateur|Message d'erreur concerné|
 |-|---|
-|Sur Chrome :<br>« Votre connexion n'est pas privée »|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
-|Sur Firefox :<br>« Attention : risque probable de sécurité »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
-|Sur Edge :<br>« Votre connexion n’est pas privée »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
-|Sur Safari :<br>« Cette connexion n'est pas privée »|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
+|Chrome :<br>« Votre connexion n'est pas privée »|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
+|Firefox :<br>« Attention : risque probable de sécurité »|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
+|Edge :<br>« Votre connexion n’est pas privée »|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
+|Safari :<br>« Cette connexion n'est pas privée »|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
 
 **Découvrez comment résoudre les erreurs du type « Votre connexion n'est pas privée ».**
 
