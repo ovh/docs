@@ -54,7 +54,7 @@ The logs will appear in the standard output while your job is running.
 
 >[!primary]
 >
-> Once the job has ended, the url to the object storage container containing the job's logs will be displayed. This could be used to list your job's logs files through the Openstack API. Thus, you will be able to upload them.
+> Once the job has ended, the url to the object storage container containing the job's logs will be displayed. This could be used to list your job's logs files through the OpenStack API. Thus, you will be able to upload them.
 > Please refer to the section below to know how.
 >
 
@@ -74,7 +74,7 @@ Whether you chose to set this start date or not, you will retrieve all the logs 
 
 >[!primary]
 >
-> Once the job has ended, the url to the object storage container containing the job's logs will be returned. This could be used to list your job's logs files through the Openstack API. Thus, you will be able to upload them.
+> Once the job has ended, the url to the object storage container containing the job's logs will be returned. This could be used to list your job's logs files through the OpenStack API. Thus, you will be able to upload them.
 > Please refer to the section below to know how.
 >
 
@@ -101,8 +101,8 @@ This is due to the logs rotation that is configured to upload the files that rea
 There is three ways to download your logs from your object storage:
 
 - with the OVHcloud Manager
-- with the Openstack CLI
-- with the Openstack API
+- with the OpenStack CLI
+- with the OpenStack API
 
 ### With the OVHcloud Manager
 To see your logs in the manager, you need to follow these steps:
@@ -124,24 +124,24 @@ Or you can go through your job dashboard instead, to do so:
 
 This button will lead you to the object storage container pre-filtered with the wanted job ID.
 
-### With the Openstack CLI
+### With the OpenStack CLI
 
-You can access to your object storage by using the Openstack CLI or the [Swift CLI](https://docs.openstack.org/mitaka/cli-reference/swift.html){.external} (Swift being the name of the Openstack object storage).
-Please follow the Openstack documentation to [install the CLI](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} and to [use them](https://docs.openstack.org/newton/user-guide/cli.html){.external}.
+You can access to your object storage by using the OpenStack CLI or the [Swift CLI](https://docs.openstack.org/mitaka/cli-reference/swift.html){.external} (Swift being the name of the OpenStack object storage).
+Please follow the OpenStack documentation to [install the CLI](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} and to [use them](https://docs.openstack.org/newton/user-guide/cli.html){.external}.
 
-In order to authenticate with the CLI you will have to [set environment variables using an Openstack's RC file](https://docs.openstack.org/newton/user-guide/common/cli-set-environment-variables-using-openstack-rc.html){.external}.
+In order to authenticate with the CLI you will have to [set environment variables using an OpenStack's RC file](https://docs.openstack.org/newton/user-guide/common/cli-set-environment-variables-using-openstack-rc.html){.external}.
 You can find your RC file by follow these steps:
 
 - Login to the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} and select `Public Cloud`{.action}.
 - Select the project in which you submitted your job. 
 - Select `Users & Roles`{.action} from the left panel.
-- Click on the `...`{.action} option button of your user and select `Download Openstack's RC file`
-![get Openstack's RC file](images/users-roles.png){.thumbnail}
+- Click on the `...`{.action} option button of your user and select `Download OpenStack's RC file`
+![get OpenStack's RC file](images/users-roles.png){.thumbnail}
 
 
-### With the Openstack API
+### With the OpenStack API
 
-In order to use the Openstack API, you will need an Openstack token. You can generate one in the OVHcloud manager by following these steps:
+In order to use the OpenStack API, you will need an OpenStack token. You can generate one in the OVHcloud manager by following these steps:
 
 - Login to the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} and select `Public Cloud`{.action}.
 - Select the project in which you submitted your job in the sidebar. 
@@ -149,7 +149,7 @@ In order to use the Openstack API, you will need an Openstack token. You can gen
 - Click on the `...`{.action} option button of your user and select `Generate an OpenStack token`
 - Enter your user password and retrieve your token
 
-With this token you should be able to list and to download the logs files of your jobs using the [Openstack API](https://docs.openstack.org/api-ref/object-store/?expanded=show-container-details-and-list-objects-detail){.external}.
+With this token you should be able to list and to download the logs files of your jobs using the [OpenStack API](https://docs.openstack.org/api-ref/object-store/?expanded=show-container-details-and-list-objects-detail){.external}.
 
 
 ## Go further
