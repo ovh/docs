@@ -68,8 +68,8 @@ The logs will appear in the standard output while your job is running.
 
 An other way to read your job's logs is to use the OVH cloud API by call the endpoint to GET a job's logs (see [how to use the OVHcloud API](../use-api){.external})
 
-To get the logs you have to use th `GET` on the `/cloud/project/{serviceName}/dataProcessing/jobs/{jobId}/logs` endpoint (where the service name is your Public Cloud project ID)
-This endpoint can take a querry parameter which is `from`. This parameter allows you to specify the date from which you want to retrieve the logs. Its default value is epoch. 
+To get the logs you have to use the `GET` on the `/cloud/project/{serviceName}/dataProcessing/jobs/{jobId}/logs` endpoint (where the service name is your Public Cloud project ID)
+This endpoint can take a query parameter which is `from`. This parameter allows you to specify the date from which you want to retrieve the logs. Its default value is 1970-01-01T00:00:00 UTC. 
 Whether you chose to set this start date or not, you will retrieve all the logs that came after in the limit of 10 000 characters.
 
 >[!primary]
