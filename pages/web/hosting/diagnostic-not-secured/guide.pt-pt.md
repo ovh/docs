@@ -76,9 +76,9 @@ Selecione o separador `Zone DNS`{.action} e tome nota do destino do tipo `A` par
 |No separador `Zona DNS`{.action}, uma mensagem indica que o seu domínio utiliza outros servidores [DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns) e estes não aparecem na forma « ns **?** .ovh.net » ou « dns **?** .ovh.net »:<br><br>![warning_external_dn_srv](images/warning_external_dns_srv.png){.thumbnail}|Contacte o seu webmaster ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/) a este respeito.|
 |`Domínios`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).<br>Ou o separador `Zona DNS`{.action} do seu domínio aparece da seguinte forma:<br><br>![zonedns_ndd_non_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Isto significa que o seu domínio não é gerido a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).<br><br>Verifique que o domínio não é gerido a partir de uma das suas outras [contas OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), se tiver criado vários.<br><br>Pode igualmente determinar o seu escritório de's registo e os servidores DNS aos quais está ligado através da nossa ferramenta [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Se necessário, contacte o seu webmaster ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).|
 
-### Fase 2: verificar o certificado SSL do alojamento <a name="step2"></a>
+### Etapa 2: verificar o certificado SSL do alojamento <a name="step2"></a>
 
-No separador `Informações gerais`{.action} do seu alojamento OVHcloud, verifique a parte `Certificat SSL`:
+No separador `Informações gerais`{.action} do seu alojamento OVHcloud, verifique a parte `Certificado SSL`:
 
 ![ssl-certificate-in-general-tab](images/ssl-certificate-in-general-tab.png){.thumbnail}
 
