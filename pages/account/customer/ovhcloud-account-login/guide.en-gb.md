@@ -6,13 +6,13 @@ Section: 'Getting started'
 order: 2
 ---
 
-**Last updated 1st July, 2021**
+**Last updated 1st July 2021**
 
 ## Objective
 
 Your services are managed mainly via the OVHcloud Control Panel.
 
-**Find out how to log in to your OVHcloud account, and how to resolve login failures.**
+**Find out how to log in to your OVHcloud account and how to resolve login failures.**
 
 ## Requirements
 
@@ -23,7 +23,7 @@ Your services are managed mainly via the OVHcloud Control Panel.
 
 ### Logging in to the OVHcloud Control Panel
 
-Go to [the OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and enter your customer ID (NIC handle)or primary email address, and password.
+Go to the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, enter your customer ID (NIC handle) or primary email address, and password.
 
 ![NIC handle](images/log-in.png){.thumbnail}
 
@@ -41,7 +41,7 @@ The OVHcloud NIC handle, in the form **xx111111-ovh**, will always be requested 
 
 Your NIC handle is included in the account creation confirmation email, order confirmation emails and renewal emails, as well as account login notifications.
 
-##### **On my bills**
+##### **On your bills**
 
 Your NIC handle is in the top right-hand corner of all your bills.
 
@@ -68,7 +68,7 @@ In this case, the password reset procedure cannot be performed from the login pa
 
 You can contact the OVHcloud Customer Service (dial 00333 370 0425) so that this backup address becomes the primary email address.
 
-Once this action has been completed, please [enter a **new** backup email address](https://docs.ovh.com/gb/en/customer/all-about-your-username/#backup-email) in your account.
+Once this action has been completed, please [enter a **new** backup email address](https://docs.ovh.com/gb/en/customer/all-about-your-username/#backup-email) in your account settings.
 
 #### If you have not entered a backup email address, or it is also invalid
 
@@ -76,7 +76,7 @@ In this case, the OVHcloud telephone support will not be able to help you.
 
 Please follow this [procedure](https://www.ovh.co.uk/cgi-bin/en/procedure/procedureChangeEmail.cgi){.external} so that we can verify your identity.
 
-Once the procedure has been received by our services, we will then replace your contact email address if all of the documents requested are valid.
+Once the procedure has been received by our services, we will replace your contact email address if all of the documents requested are valid.
 
 ### Two-factor authentication is active on my account but my phone has been stolen
 
