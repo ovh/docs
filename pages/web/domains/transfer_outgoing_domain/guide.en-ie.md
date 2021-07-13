@@ -24,7 +24,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 
 > [!primary]
 >
-> If you are the domain's **owner** but you are currently not able to manage it in the OVHcloud Control Panel, neither by using your own access nor via your domain's administrative contact, please consult [this guide](../../customer/managing-contacts/#special-case-of-a-domain-owner) first before proceeding.
+> If you are the domain's **owner** but you are currently not able to manage it in the OVHcloud Control Panel, neither by using your own access nor via your domain's administrative contact, please consult [this guide](../../customer/managing-contacts/#special-case-of-a-domain-owner/) first before proceeding.
 >
 
 ## Instructions
@@ -45,7 +45,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 
 ### Step 1: Remove the transfer protection for the domain name
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Domain names`{.action} in the services bar on the left-hand side, then choose the domain name concerned.
 
 On the `General information`{.action} tab you can find the "Protection against domain name transfer" slider button under **Security**, set to `Enabled`{.action} by default.
 
@@ -80,6 +80,6 @@ You can contact your provider for more information about this process.
 
 ## Go further
 
-[Outgoing .co.uk domain name transfer](../outgoing_couk_domain_name_transfer/)
+[Transferring a .uk domain name to another registrar](../outgoing_couk_domain_name_transfer/)
 
 Join our community of users on <https://community.ovh.com/en/>.

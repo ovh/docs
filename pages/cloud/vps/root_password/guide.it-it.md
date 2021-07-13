@@ -199,7 +199,7 @@ Ciò dovrebbe bastare per applicare le modifiche. È possibile riavviare il VPS 
 Se dopo aver modificato la password e avviato il riavvio riscontri problemi di avvio:
 
 - Consulta il KVM per sapere perché il VPS non può iniziare. Consulta la [guida KVM](../utilizza_il_kvm_sul_tuo_vps/) per ottenere assistenza sull'utilizzo di questa funzionalità nello Spazio Cliente OVHcloud.
-- Se il KVM visualizza l'avvio del VPS o se non riesce a trovare il disco, assicurati che il [bootlog sia attivo](https://docs.ovh.com/gb/en/vps/displaying-boot-log-in-the-kvm/). Per maggiori informazioni, invia i log pertinenti ai nostri team di supporto creando una richiesta di supporto nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Se il KVM visualizza l'avvio del VPS o se non riesce a trovare il disco, assicurati che il [bootlog sia attivo](../bootlog-kvm/). Per maggiori informazioni, invia i log pertinenti ai nostri team di supporto creando una richiesta di supporto nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ## Per saperne di più
 
