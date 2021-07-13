@@ -9,7 +9,7 @@ section: Diagnostic
  
 ## Objectif <a name="objectif"></a>
 
-Plusieurs messages d'erreur peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent que votre hébergement Web ne contient pas de [certificat SSL](../les-certificats-ssl-sur-les-hebergements-web/) (si votre site n'affiche pas l'une des anomalies décrites dans ce guide, consultez la section « [Aller plus loin](#aller-plus-loin) » de ce guide) : 
+Plusieurs messages d'erreur peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent que votre hébergement Web ne contient pas de [certificat SSL](../les-certificats-ssl-sur-les-hebergements-web/) (si votre site n'affiche pas l'une des anomalies décrites dans ce guide, consultez la section « [Aller plus loin](#aller-plus-loin) » de ce guide) :
 
 |Navigateur|Message d'erreur concerné|
 |-|---|

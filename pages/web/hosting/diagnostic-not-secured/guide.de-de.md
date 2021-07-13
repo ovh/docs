@@ -13,7 +13,7 @@ section: Diagnose
  
 ## Ziel <a name="objective"></a>
 
-Es können mehrere Fehlermeldungen auftreten, wenn Ihre Website nicht erreichbar ist. Die folgenden Beispiele zeigen an, dass Ihr Webhosting kein [SSL-Zertifikat](../ssl-zertifikate-auf-webhostings-verwalten/) enthält (wenn Ihre Website keine der in dieser Anleitung beschriebenen Anomalien zeigt, lesen Sie den Abschnitt [“Weiterführende Informationen“](#gofurther) in dieser Anleitung): 
+Es können mehrere Fehlermeldungen auftreten, wenn Ihre Website nicht erreichbar ist. Die folgenden Beispiele zeigen an, dass Ihr Webhosting kein [SSL-Zertifikat](../ssl-zertifikate-auf-webhostings-verwalten/) enthält (wenn Ihre Website keine der in dieser Anleitung beschriebenen Anomalien zeigt, lesen Sie den Abschnitt [“Weiterführende Informationen“](#gofurther) in dieser Anleitung):
 
 |Browser|Betreffende Fehlermeldung|
 |-|---|
