@@ -29,7 +29,7 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 
 > [!primary]
 >
-> Se é o **proprietário** do domínio mas a sua gestão na Área de Cliente OVHcloud está indisponível, seja através do seu próprio acesso ou através do contacto administrativo do domínio, consulte [este guia](../../customer/gestao_dos_contactos/#caso-especifico-de-um-proprietario-de-dominio) antes de continuar.
+> Se é o **proprietário** do domínio mas a sua gestão na Área de Cliente OVHcloud está indisponível, seja através do seu próprio acesso ou através do contacto administrativo do domínio, consulte [este guia](../../customer/gestao_dos_contactos/#caso-especifico-de-um-proprietario-de-dominio/) antes de continuar.
 >
 
 ## Instruções

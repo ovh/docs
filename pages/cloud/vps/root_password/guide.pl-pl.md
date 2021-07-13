@@ -199,7 +199,7 @@ Powinno to wystarczyć do wdrożenia zmian. Możesz również zrestartować serw
 Jeśli po zmianie hasła i uruchomieniu pojawią się problemy z jego rozpoczęciem:
 
 - Sprawdź KVM, dlaczego VPS nie może uruchomić. Zapoznaj się z [przewodnikiem KVM](../kvm_na_serwerach_vps/), aby uzyskać pomoc w korzystaniu z tej funkcji w Panelu klienta OVHcloud.
-- Jeśli KVM wyświetla uruchomienie serwera VPS lub nie jest w stanie odnaleźć dysku, upewnij się, że [bootlog jest włączony](https://docs.ovh.com/gb/en/vps/displaying-boot-log-in-the-kvm/). Prześlij stosowne logi do naszych zespołów wsparcia, tworząc zgłoszenie w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby uzyskać więcej informacji.
+- Jeśli KVM wyświetla uruchomienie serwera VPS lub nie jest w stanie odnaleźć dysku, upewnij się, że [bootlog jest włączony](../wyswietlanie-bootlog-w-kvm/). Prześlij stosowne logi do naszych zespołów wsparcia, tworząc zgłoszenie w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby uzyskać więcej informacji.
 
 ## Sprawdź również
 

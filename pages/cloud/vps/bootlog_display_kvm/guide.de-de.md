@@ -2,7 +2,7 @@
 title: Boot-Logs mit KVM anzeigen
 slug: bootlog-in-kvm
 excerpt: 'Erfahren Sie hier, wie Sie die Boot-Logs eines VPS zum Troubleshooting aktivieren'
-section: Diagnose und Rescue-Modus
+section: Diagnose & Rescue Modus
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ Wenn Ihr VPS nicht mehr antwortet, können Sie diesen in der Regel immer noch ü
 > Bitte beachten Sie, dass KVM Ihnen in bestimmten Umgebungen keine relevanten Informationen liefert, da die Startsequenz in der seriellen Konsole angezeigt wird oder  GRUB im *silent mode* konfiguriert ist.
 >
 
-**Diese Anleitung erklärt, wie Sie Boot-Logs aktivieren, die dabei helfen können, einen VPS zu diagnostizieren.**
+**Diese Anleitung erklärt, wie Sie Boot-Logs aktivieren, die bei der Diagnose eines VPS hilfreich sein können.**
 
 > [!warning]
 >
@@ -120,7 +120,7 @@ Sie müssen nun auf die GRUB-Dateien Ihres Systems zugreifen und diese bearbeite
 
 Von hier an werden alle Befehle, die Sie eingeben, auf Ihren VPS statt auf die temporäre Rescue-Umgebung angewendet.
 
-### Schritt 6: die GRUB Konfiguration ändern <a name="step6"></a>
+### Schritt 6: Die GRUB-Konfiguration ändern <a name="step6"></a>
 
 #### **Debian 8 oder höher und Ubuntu 18 oder höher**
 
