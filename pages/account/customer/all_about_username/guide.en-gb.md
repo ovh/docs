@@ -39,7 +39,7 @@ The best practices listed below should be applied as soon as you create your OVH
 
 ### Creating a strong, unique password
 
-The security of your services and data depends on the efficiency of your password. It must be **complex, unique and regularly** renewed.
+The security of your services and data depends on the efficiency of your password. It must be **complex, unique and regularly renewed**.
 
 You can find all of our password recommendations in our guide on [Setting and managing an account password](https://docs.ovh.com/gb/en/customer/manage-password/).
 
