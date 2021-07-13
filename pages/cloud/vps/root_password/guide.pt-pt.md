@@ -199,7 +199,7 @@ Tal deverá ser suficiente para aplicar as alterações. Também pode reiniciar 
 Se tiver problemas de arranque depois de alterar a sua palavra-passe e iniciar a reinicialização:
 
 - Consulte o KVM para saber por que o VPS não pode iniciar. Consulte o [guia KVM](../utilizar_o_kvm_para_um_servidor_vps/) para obter ajuda na utilização desta funcionalidade na Área de Cliente OVHcloud.
-- Se o KVM mostrar o arranque do VPS ou se este não conseguir encontrar o disco, certifique-se de que o [bootlog está ativado](https://docs.ovh.com/gb/en/vps/displaying-boot-log-in-the-kvm/). Transmita os logs pertinentes às nossas equipas de suporte criando um pedido de suporte na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para mais informações.
+- Se o KVM mostrar o arranque do VPS ou se este não conseguir encontrar o disco, certifique-se de que o [bootlog está ativado](../visualizacao-bootlog-em-kvm/). Transmita os logs pertinentes às nossas equipas de suporte criando um pedido de suporte na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para mais informações.
 
 ## Vá mais longe
 

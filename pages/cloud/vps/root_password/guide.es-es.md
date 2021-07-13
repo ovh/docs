@@ -199,7 +199,7 @@ Esto debería ser suficiente para aplicar los cambios. También puede reiniciar 
 Si tiene problemas de inicio después de cambiar la contraseña e iniciar el reinicio:
 
 - Consulte el KVM para saber por qué el VPS no puede empezar. Para más información sobre el uso de esta funcionalidad, consulte la [guía KVM](../utilizar_el_kvm_para_los_vps/) del área de cliente de OVHcloud.
-- Si el KVM muestra el inicio del VPS o no consigue encontrar el disco, asegúrese de que el [bootlog esté activado](https://docs.ovh.com/us/es/vps/boot-log/). Transmita los logs pertinentes a nuestro equipo de soporte creando una solicitud de soporte en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para más información.
+- Si el KVM muestra el inicio del VPS o no consigue encontrar el disco, asegúrese de que el [bootlog esté activado](../boot-log/). Transmita los logs pertinentes a nuestro equipo de soporte creando una solicitud de soporte en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para más información.
 
 ## Más información
 
