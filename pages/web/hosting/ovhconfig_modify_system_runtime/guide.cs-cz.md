@@ -11,7 +11,7 @@ order: 3
 
 ## Cíl
 
-Na Internetu existuje nepřeberné množství stránek. Ať již chcete zveřejnit blog nebo online obchod, sdílet své koníčky či propagovat své podnikání, [webhostingové balíčky OVH](https://www.ovh.cz/webhosting/){.external} zajistí dostupnost Vašich stránek pro miliony uživatelů po celém světě (za předpokladu kompatibility stránek s [konfigurací našich infrastruktur](http://pro.ovh.net/infos/){.external}).
+Na Internetu existuje nepřeberné množství stránek. Ať již chcete zveřejnit blog nebo online obchod, sdílet své koníčky či propagovat své podnikání, [webhostingové balíčky OVH](https://www.ovh.cz/webhosting/){.external} zajistí dostupnost Vašich stránek pro miliony uživatelů po celém světě (za předpokladu kompatibility stránek s [konfigurací našich infrastruktur](https://webhosting-infos.hosting.ovh.net){.external}).
 
 **Zjistěte, jak změnit konfiguraci svého webhostingového řešení pomocí Zákaznického prostoru OVH.**
 

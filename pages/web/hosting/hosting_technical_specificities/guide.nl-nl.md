@@ -176,7 +176,7 @@ Informatie over de beschikbare libraries:
 |Zip - Gzip|geactiveerd|
 
 
-Het is mogelijk om verschillende informatie over uw cluster te vinden via deze link: [http://cluster015.ovh.net/infos/](http://cluster015.ovh.net/infos/)
+Het is mogelijk om verschillende informatie over uw cluster te vinden via deze link: [https://webhosting-infos.hosting.ovh.net](https://webhosting-infos.hosting.ovh.net)
 
 Vervang het cluster dat is aangegeven in de URL door de uwe, u kunt deze informatie vinden in de manager: "Mutualisé" - "Hosting" - "Synthèse".
 Let op: via het gebruik van PHP-FPM, en om veiligheidsredenen, zijn de volgende opties gedeactiveerd  (afgeschreven door PHP):

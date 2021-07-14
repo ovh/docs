@@ -11,7 +11,7 @@ order: 3
 
 ## Introductie
 
-Er zijn enorm veel verschillende websites op het internet. Of u nu een blog of een webshop opzet, een passie deelt of een professionele activiteit promoot; met uw [OVH webhosting](https://www.ovh.nl/shared-hosting/){.external} kunt u de website hosten die u wilt, zolang het maar compatibel is met de [configuratie van onze infrastructuren](http://pro.ovh.net/infos/){.external}.
+Er zijn enorm veel verschillende websites op het internet. Of u nu een blog of een webshop opzet, een passie deelt of een professionele activiteit promoot; met uw [OVH webhosting](https://www.ovh.nl/shared-hosting/){.external} kunt u de website hosten die u wilt, zolang het maar compatibel is met de [configuratie van onze infrastructuren](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Deze handleiding beschrijft hoe u uw webhosting aanpast vanaf uw OVH Control Panel.**
 

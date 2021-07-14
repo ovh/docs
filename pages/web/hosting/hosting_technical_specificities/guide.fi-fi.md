@@ -183,7 +183,7 @@ Saatavilla olevat kirjastot:
 
 
 Omasta klusterista löytyy tietoja seuraavaa linkkiä käyttämällä:
-[http://cluster015.ovh.net/infos/](http://cluster015.ovh.net/infos/)
+[https://webhosting-infos.hosting.ovh.net](https://webhosting-infos.hosting.ovh.net)
 
 Korvaa ilmoitettu klusteri URL-osoitteessa omalla klusterilla, joka löytyy hallintapaneelista:"Webhotellit" - "Webhotellit" - "Synteesi".
 Huomio: PHP-FPM:ää käyttäessä tietoturvasyistä seuraavat lisäoptiot ovat poistettu käytöstä:

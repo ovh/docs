@@ -115,7 +115,7 @@ Par exemple, vous pouvez utiliser la fonction *gethostbyaddr()* pour récupérer
 
 Veuillez consulter les pages d'informations respectives pour vérifier les librairies disponibles pour votre offre d'hébergement web.
 
-Il vous est possible de retrouver différentes informations sur votre cluster via ce lien : [https://cluster015.hosting.ovh.net/infos/](https://cluster015.hosting.ovh.net/infos/){.external}
+Il vous est possible de retrouver différentes informations sur votre cluster via ce lien : [https://webhosting-infos.hosting.ovh.net](https://webhosting-infos.hosting.ovh.net){.external}
 
 Remplacez le cluster indiqué dans l'URL par le vôtre. Pour savoir sur quel cluster d'hébergement web se trouve votre service, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action} dans la barre de navigation supérieure. Cliquez sur `Hébergement`{.action} dans la barre de services située à gauche, puis choisissez l'hébergement web concerné. Ensuite, cliquez sur l'onglet `FTP - SSH`{.action}. L'URL d'accès FTP à votre hébergement vous indiquera le numéro du cluster.
 

@@ -185,7 +185,7 @@ Prieinamos bibliotekos:
 
 
 Papildomi duomenys apie klasterį yra pateikti čia:
-[http://cluster015.ovh.net/infos/](http://cluster015.ovh.net/infos/)
+[https://webhosting-infos.hosting.ovh.net](https://webhosting-infos.hosting.ovh.net)
 
 Pakeiskite klasterį nurodyta šiame URL į jūsų, kurį galite sužinoti tvarkytuve, prieglobos paslaugos santraukoje.
 Dėmesio: naudojant PHP-FPM ir saugumo sumetimais šios funkcijos yra išjungtos:

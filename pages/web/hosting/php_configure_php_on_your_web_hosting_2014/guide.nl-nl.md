@@ -11,7 +11,7 @@ order: 1
 
 ## Introductie
 
-Er zijn enorm veel verschillende websites op het internet. Met uw [OVH webhosting](https://www.ovh.nl/shared-hosting/){.external} kunt u uw eigen website online zetten, mits deze compatibel is met de [configuratie van onze infrastructuren](https://cluster028.hosting.ovh.net/infos/){.external}. Mogelijk wilt u de door uw hosting gebruikte PHP-versie wijzigen.
+Er zijn enorm veel verschillende websites op het internet. Met uw [OVH webhosting](https://www.ovh.nl/shared-hosting/){.external} kunt u uw eigen website online zetten, mits deze compatibel is met de [configuratie van onze infrastructuren](https://webhosting-infos.hosting.ovh.net){.external}. Mogelijk wilt u de door uw hosting gebruikte PHP-versie wijzigen.
 
 **Deze handleiding beschrijft hoe u de PHP-versie op uw webhosting kunt bewerken.**
 

@@ -10,7 +10,7 @@ order: 2
 
 ## Objective
 
-There are many different types of website you can put online. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVHcloud web hosting space](https://www.ovh.com/ca/en/web-hosting/) lets you host the site you want, provided that it is compatible with the [configuration of our infrastructures](http://pro.ovh.net/infos/).
+There are many different types of website you can put online. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVHcloud web hosting space](https://www.ovh.com/ca/en/web-hosting/) lets you host the site you want, provided that it is compatible with the [configuration of our infrastructures](https://webhosting-infos.hosting.ovh.net).
 
 **Find out how to publish a website on your OVHcloud web hosting plan.**
 

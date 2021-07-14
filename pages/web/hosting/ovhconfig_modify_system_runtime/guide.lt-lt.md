@@ -10,7 +10,7 @@ legacy_guide_number: g2149
 
 ## Objective
 
-You can use a range of different configurations on an OVH Web Hosting plan. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, you can host whatever website you want on your [OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external}, provided that it is compatible with [our infrastructures’ configurations](http://pro.ovh.net/infos/){.external}.
+You can use a range of different configurations on an OVH Web Hosting plan. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, you can host whatever website you want on your [OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external}, provided that it is compatible with [our infrastructures’ configurations](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Find out how to modify the configuration of an OVH Web Hosting plan from the OVH Control Panel.**
 

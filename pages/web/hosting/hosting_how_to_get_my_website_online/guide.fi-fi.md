@@ -11,7 +11,7 @@ order: 2
 
 ## Tavoite
 
-Verkossa on olemassa valtava määrä verkkosivuja. Olipa kyse blogin tai verkkokaupan perustamisesta, kiinnostuksen kohteen jakamisesta tai liiketoiminnan edistämisestä, [OVH:n webhotellilla](https://www.ovh-hosting.fi/webhotelli/){.external} voit ylläpitää haluamiasi verkkosivuja kunhan se on yhteensopiva [infrastruktuuriemme konfiguraation](http://pro.ovh.net/infos/){.external} kanssa.
+Verkossa on olemassa valtava määrä verkkosivuja. Olipa kyse blogin tai verkkokaupan perustamisesta, kiinnostuksen kohteen jakamisesta tai liiketoiminnan edistämisestä, [OVH:n webhotellilla](https://www.ovh-hosting.fi/webhotelli/){.external} voit ylläpitää haluamiasi verkkosivuja kunhan se on yhteensopiva [infrastruktuuriemme konfiguraation](https://webhosting-infos.hosting.ovh.net){.external} kanssa.
 
 **Opi siirtämään verkkosivu verkkoon OVH:n webhotellissa.**
 

@@ -11,7 +11,7 @@ order: 2
 
 ## Introductie
 
-Er zijn enorm veel verschillende websites op het internet. Of u nu een blog of een webshop opzet, uw passie deelt of uw werk wilt promoten; met uw [OVH webhosting](https://www.ovh.com/nl/shared-hosting/) kunt u de site die u wenst hosten, zolang deze compatibel is met de [configuratie van onze infrastructuur](http://pro.ovh.net/infos/){.external}.
+Er zijn enorm veel verschillende websites op het internet. Of u nu een blog of een webshop opzet, uw passie deelt of uw werk wilt promoten; met uw [OVH webhosting](https://www.ovh.com/nl/shared-hosting/) kunt u de site die u wenst hosten, zolang deze compatibel is met de [configuratie van onze infrastructuur](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **In deze handleiding wordt uitgelegd hoe u een website op uw webhosting kunt publiceren.**
 
