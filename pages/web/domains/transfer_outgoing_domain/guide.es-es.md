@@ -29,7 +29,7 @@ Para evitar las transferencias de dominio no autorizadas, los dominios suelen es
 
 > [!primary]
 >
-> Si usted es el **propietario** del dominio pero su gestión en el área de cliente de OVHcloud no está disponible, ya sea a través de su propio acceso o a través del contacto administrativo del dominio, consulte [esta guía](../../customer/gestion-de-los-contactos/#caso-particular-de-un-propietario-de-dominio/) antes de continuar.
+> Si usted es el **propietario** del dominio pero su gestión en el área de cliente de OVHcloud no está disponible, ya sea a través de su propio acceso o a través del contacto administrativo del dominio, consulte [esta guía](../../customer/gestion-de-los-contactos/#caso-particular-de-un-propietario-de-dominio) antes de continuar.
 >
 
 ## Procedimiento
