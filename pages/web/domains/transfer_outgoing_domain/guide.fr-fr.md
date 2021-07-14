@@ -25,7 +25,7 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 
 > [!primary]
 >
-> Si vous êtes le **propriétaire** du domaine mais que sa gestion dans l'espace client OVHcloud est indisponible, que ce soit via votre propre accès ou via le contact administratif du domaine, veuillez consulter [ce guide](../../customer/gestion-des-contacts/#cas-particulier-dun-proprietaire-de-domaine/) avant de continuer.
+> Si vous êtes le **propriétaire** du domaine mais que sa gestion dans l'espace client OVHcloud est indisponible, que ce soit via votre propre accès ou via le contact administratif du domaine, veuillez consulter [ce guide](../../customer/gestion-des-contacts/#cas-particulier-dun-proprietaire-de-domaine) avant de continuer.
 >
 
 ## En pratique
