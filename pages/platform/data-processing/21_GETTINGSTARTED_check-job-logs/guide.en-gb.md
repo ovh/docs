@@ -1,7 +1,7 @@
 ---
-title: Checking a job's logs in the Data Processing manager's page
+title: Checking a job's logs 
 slug: check-logs
-excerpt: Find out how to get your job's logs while the job is running or after it is finished in the Data Processing page in the manager
+excerpt: Find out how to get your job's logs while the job is running or after it is finished 
 section: Getting started
 order: 1
 ---
@@ -12,8 +12,6 @@ order: 1
 
 This guide will help you to check your job's logs while your job is running or after your job is finished. 
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} to use the Data Processing platform.
-
 To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
 
 ## Requirements 
@@ -21,49 +19,138 @@ To read an introduction about Data Processing service you can visit [Data Proces
 - Access to [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 - A job that has been already submitted to Data Processing
 
-## Instructions
+## Get your running job's logs
 
-You can see your live job's logs while it is running in the job dashboard. After your job is finished, you can download the logs either from your job dashboard or from your Object Storage directly. 
+When you launch a job with Data Processing, you may want to read your job's logs as it is running. 
+There is three ways to get live logs:
 
-![Data Processing Engine](images/dataprocessingmanager.png){.thumbnail}
+- Using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- Using the OVHcloud API
+- Using the Data Processing CLI
 
-### Download the logs from your job dashboard
 
-Follow these steps to download your job's logs from your job dashboard: 
+### With the OVHcloud Manager
+
+To see your logs in the manager, you need to follow these steps:
 
 - Login to the OVHcloud Manager and select `Public Cloud`{.action}.
 - Select the project in which you submitted your job. 
 - Select `Data Processing`{.action} from the left panel. 
-- Click on the name of the job that you want to check the logs for, to open the job dashboard.
+- Click on the name of the job that you want to check the logs for, to open the job dashboard. (the job should be in **RUNNING** status)
+![Data Processing Engine](images/dataprocessingmanager.png){.thumbnail}
 - Click on the `Logs`{.action} tab in your job dashboard page. 
 - If your job is still running, you will see its live logs in this tab.
-
 ![logs real time](images/realtimelogs.png){.thumbnail}
+
+>[!primary]
+>
+>Those logs will appear only if your job is running. Once your job has ended you will get a link to your object storage where your logs files are stored.
+>
+
+### With the Data Processing CLI
+
+If you are using the [ovh-spark-submit CLI](https://github.com/ovh/data-processing-spark-submit){.external} (see [how to launch jobs through the CLI](../submit-cli){.external}), then you have nothing to do.
+The logs will appear in the standard output while your job is running.
+
+>[!primary]
+>
+> Once the job has ended, the url to the object storage container containing the job's logs will be displayed. This could be used to list your job's logs files through the OpenStack API. Thus, you will be able to upload them.
+> Please refer to the section below to know how.
+>
 
 >[!warning]
 >
-> When streaming logs you are limited to 10 000 character at a time. Meaning you could experience missing logs in streaming mode. All logs will be uploaded to your Object Storage at job end.
+> If you use the OVHcloud Manager or the CLI, you may never see the last entries of your logs before the job stops. It is because the job has finished before the UI was updated.
+> But don't worry, all the logs are uploaded to your object storage at the job's end.
+
+
+### With the OVHcloud API
+
+An other way to read your job's logs is to use the OVH cloud API by call the endpoint to GET a job's logs (see [how to use the OVHcloud API](../use-api){.external})
+
+To get the logs you have to use the `GET` on the `/cloud/project/{serviceName}/dataProcessing/jobs/{jobId}/logs` endpoint (where the service name is your Public Cloud project ID)
+This endpoint can take a query parameter which is `from`. This parameter allows you to specify the date from which you want to retrieve the logs. Its default value is 1970-01-01T00:00:00 UTC. 
+Whether you chose to set this start date or not, you will retrieve all the logs that came after in the limit of 10 000 characters.
+
+>[!primary]
+>
+> Once the job has ended, the url to the object storage container containing the job's logs will be returned. This could be used to list your job's logs files through the OpenStack API. Thus, you will be able to upload them.
+> Please refer to the section below to know how.
 >
 
+>[!warning]
+>
+> When streaming logs you are limited to 10 000 character at a time. Meaning you could experience missing logs in streaming mode (in the manager, in the CLI). All logs will be uploaded to your Object Storage at job end.
+>
+
+
+## Download your logs files from object storage
+
+Once your job is finished, its logs are uploaded to your object storage. While you can only retrieve the spark driver node's logs when the job is running, you will have the logs from all the node (driver and executors) stored.
+For each node, you will have at least 2 logs files: 
+
+- one **{jobId}/{nodeName}/odp.logs** file which contains the logs generated by your job environment creation.
+- and one or more **{jobId}/{nodeName}/spark.log.yyyy-MM-ddThhhmmmss.sssssssss** gathering all the logs generated by your Data Processing Job.
+
+>[!primary]
+>
+> Some **{jobId}/{nodeName}/spark.log.yyyy-MM-ddThhhmmmss.sssssssss** files can be uploaded in object storage while your job is still running. 
+This is due to the logs rotation that is configured to upload the files that reach the maximum logs files size of 100 MiB.
+
+
+There is three ways to download your logs from your object storage:
+
+- with the OVHcloud Manager
+- with the OpenStack CLI
+- with the OpenStack API
+
+### With the OVHcloud Manager
+To see your logs in the manager, you need to follow these steps:
+
+- Login to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and select `Public Cloud`{.action}.
+- Select the project in which you submitted your job. 
+
+From here, you can either go to your object storage section of your Public Cloud project and select the `odp-logs`{.action} container. Then filter the list of object with your job ID to get its logs.
+![logs in object storage](images/object-storage.png){.thumbnail}
+
+Or you can go through your job dashboard instead, to do so:
+
+- Select `Data Processing`{.action} from the left panel.
+- Click on the name of the job that you want to download the logs for, to open the job dashboard. (the job should finished)
+- Click on the `Logs`{.action} tab in your job dashboard page. 
 - If your job is already finished, click on `Download logs`{.action} to download the output logs of your job from your Object Storage account. 
 
 ![logs finished](images/logs-finished.png){.thumbnail}
 
->[!primary]
->
-> When your job is finished, the output log is automatically saved in your **Object Storage** and you can download it whenever you would like. 
+This button will lead you to the object storage container pre-filtered with the wanted job ID.
 
-### Download your job logs from Object Storage
+### With the OpenStack CLI
 
-When the job is finished, the output logs will be saved automatically in your **Object Storage** account and in the **odp-logs** container. Beside using the job dashboard from the Data Processing page of the OVHcloud Manager, you can also use the **Object Storage** directly to download the logs. To download your logs from the **Object Storage**, follow these steps: 
+You can access to your object storage by using the OpenStack CLI or the [Swift CLI](https://docs.openstack.org/mitaka/cli-reference/swift.html){.external} (Swift being the name of the OpenStack object storage).
+Please follow the OpenStack documentation to [install the CLI](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} and to [use them](https://docs.openstack.org/newton/user-guide/cli.html){.external}.
 
-- Login to the OVHcloud Manager and select `Public Cloud`{.action}
+In order to authenticate with the CLI you will have to [set environment variables using an OpenStack's RC file](https://docs.openstack.org/newton/user-guide/common/cli-set-environment-variables-using-openstack-rc.html){.external}.
+You can find your RC file by follow these steps:
+
+- Login to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and select `Public Cloud`{.action}.
 - Select the project in which you submitted your job. 
-- Select `Object Storage`{.action} from the left panel and then you will see the list of all containers in your project. 
-- Click on the container named `odp-logs`{.action}
-- Find the log file of your job. The file name is `odp-<Engine>-logs-<JobID>.log`
-- Click on `...`{.action} at the end of the line to open the context menu. 
-- Click on `Download`{.action}
+- Select `Users & Roles`{.action} from the left panel.
+- Click on the `...`{.action} option button of your user and select `Download OpenStack's RC file`
+![get OpenStack's RC file](images/users-roles.png){.thumbnail}
+
+
+### With the OpenStack API
+
+In order to use the OpenStack API, you will need an OpenStack token. You can generate one in the OVHcloud manager by following these steps:
+
+- Login to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and select `Public Cloud`{.action}.
+- Select the project in which you submitted your job in the sidebar. 
+- Select `Users & Roles`{.action} from the left panel.
+- Click on the `...`{.action} option button of your user and select `Generate an OpenStack token`
+- Enter your user password and retrieve your token
+
+With this token you should be able to list and to download the logs files of your jobs using the [OpenStack API](https://docs.openstack.org/api-ref/object-store/?expanded=show-container-details-and-list-objects-detail){.external}.
+
 
 ## Go further
 

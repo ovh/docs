@@ -29,7 +29,7 @@ Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane 
 
 > [!primary]
 >
-> Jeśli jesteś **właścicielem** domeny, ale zarządzanie nią w Panelu klienta OVHcloud jest niedostępne, zarówno poprzez własny dostęp, jak i poprzez kontakt administracyjny domeny, zapoznaj się z [tym przewodnikiem](../../customer/zarzadzanie_kontaktami/#przypadek-wlasciciela-domeny/).
+> Jeśli jesteś **właścicielem** domeny, ale zarządzanie nią w Panelu klienta OVHcloud jest niedostępne, zarówno poprzez własny dostęp, jak i poprzez kontakt administracyjny domeny, zapoznaj się z [tym przewodnikiem](../../customer/zarzadzanie_kontaktami/#przypadek-wlasciciela-domeny).
 >
 
 ## W praktyce
