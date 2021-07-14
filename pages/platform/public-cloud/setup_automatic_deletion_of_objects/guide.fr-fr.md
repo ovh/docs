@@ -11,8 +11,8 @@ Pour faciliter la gestion de votre Object Storage, il est possible que vous ayez
 
 
 ### Prérequis
-- Préparer l'environnement pour utiliser l'API OpenStack
-- Charger les variables d'environnement OpenStack
+- [Préparer l'environnement pour utiliser l'API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
+- [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
 
 
 ## Configuration de la suppression des objets
