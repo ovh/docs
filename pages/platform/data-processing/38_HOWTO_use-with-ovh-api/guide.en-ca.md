@@ -58,7 +58,7 @@ Once you have your credentials, you will be able to query the OVHcloud API. To d
 
 ### Step 3: Take a look at the OVHcloud API endpoints
 
-In order to know which endpoints are available through the OVHcloud API, you can have a look at the [API web page](https://ca.api.ovh.com/){.external} and click on the `Explore`{.action}` button.
+In order to know which endpoints are available through the OVHcloud API, you can have a look at the [API web page](https://ca.api.ovh.com/){.external} and click on the `Explore`{.action} button.
 
 To use this UI, you have to be logged in with your OVHcloud account credentials.
 
