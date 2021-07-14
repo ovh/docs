@@ -14,8 +14,8 @@ Ce guide explique comment vous pouvez utiliser cette fonction pour télécharger
 
 ## Prérequis
 
-- [Préparer l'environnement à utiliser l'OpenStack API](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/){.ref} avec le client python-swiftclient.
-- Définir les variables d'environnement OpenStack
+- [Préparer l'environnement à utiliser l'OpenStack API](../../public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/){.ref} avec le client python-swiftclient.
+- [Chargez les variables d'environnement OpenStack](../../public-cloud/charger-les-variables-denvironnement-openstack/){.ref}
 
 
 
