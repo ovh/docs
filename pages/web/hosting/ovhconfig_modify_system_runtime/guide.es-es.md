@@ -10,7 +10,7 @@ order: 3
 
 ## Objetivo
 
-Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere crear un blog o una tienda online como compartir una afición o promover una actividad profesional, los [planes de hosting de OVH](https://www.ovh.es/hosting/){.external} le permiten alojar cualquier sitio web, en la medida en que sea compatible con la [configuración de nuestras infraestructuras](http://pro.ovh.net/infos/){.external}.
+Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere crear un blog o una tienda online como compartir una afición o promover una actividad profesional, los [planes de hosting de OVH](https://www.ovh.es/hosting/){.external} le permiten alojar cualquier sitio web, en la medida en que sea compatible con la [configuración de nuestras infraestructuras](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Esta guía explica cómo modificar la configuración de un alojamiento web de OVH desde el área de cliente.**
 

@@ -113,7 +113,7 @@ Sie können zum Beispiel die Funktion *gethostbyaddr()* verwenden, um den Hostna
 
 Bitte lesen Sie die entsprechenden Informationsseiten, um die für Ihr Webhosting Angebot verfügbaren Bibliotheken zu überprüfen.
 
-Verschiedene Informationen zu Ihrem Cluster finden Sie jeweils über den Cluster-Link: <http://cluster015.hosting.ovh.net/infos/>
+Verschiedene Informationen zu Ihrem Cluster finden Sie jeweils über den Cluster-Link: <https://webhosting-infos.hosting.ovh.net>
 
 Ersetzen Sie die Zahlen in der URL mit Ihrer Clusternummer. Um herauszufinden, in welchem Webhosting Cluster sich Ihr Dienst befindet, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im oberen Menü `Web Cloud`{.action} aus. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie dann auf den Tab `FTP - SSH`{.action}. Die Nummer des Clusters ist hier unter "FTP-Server" abzulesen.
 
