@@ -1,12 +1,12 @@
 ---
-title: Data Processing Capabilities and Limitations 
+title: Data Processing Capabilities and Limitations
 slug: capabilities
 excerpt: Find out what are the current capabilities and limitations of the OVHcloud Data Processing Platform 
 section: Concepts
 order: 1
 ---
 
-**Last updated 4<sup>th</sup> December, 2020**
+**Last updated 14<sup>th</sup> July, 2021**
 
 
 ## Objective 
@@ -70,8 +70,9 @@ It is not possible to interact with Apache Spark cluster via command line.
 
 >[!warning]
 >
-> The OVHcloud object storage isn't consistent. 
-> So beware when you are using it as your data storage, mainly for temporary storage or to store checkpoints for spark streaming, those may not be usable as the OVHcloud object storage is only eventually consistent.
+> The OVHcloud Object Storage isn't consistent.
+> 
+> So beware when you are using it as your data storage, mainly for temporary storage or to store checkpoints for Spark Streaming. Those may not be usable as the OVHcloud Object Storage is only eventually consistent.
 >
 
 ### Resources quotas 

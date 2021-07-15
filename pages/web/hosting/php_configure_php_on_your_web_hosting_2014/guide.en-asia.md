@@ -9,7 +9,7 @@ legacy_guide_number: g1207
 
 ## Objective
 
-There are many different types of website published online. With an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external}, you can host whatever kind of website you want, provided it is compatible with [our infrastructures’ configuration](https://cluster028.hosting.ovh.net/infos/){.external}. As a result, you may find that you want to modify the PHP version used by your Web Hosting plan.
+There are many different types of website published online. With an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external}, you can host whatever kind of website you want, provided it is compatible with [our infrastructures’ configuration](https://webhosting-infos.hosting.ovh.net){.external}. As a result, you may find that you want to modify the PHP version used by your Web Hosting plan.
 
 **Find out how to change the PHP version on an OVHcloud Web Hosting plan.**
 

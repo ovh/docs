@@ -10,7 +10,7 @@ order: 3
 
 ## Sumário
 
-Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja online, quer seja para partilhar uma paixão ou promover a sua atividade profissional, o seu [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} permite-lhe alojar o site que quiser, na medida em que seja compatível com a [configuração das nossas infraestruturas](http://pro.ovh.net/infos/){.external}.
+Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja online, quer seja para partilhar uma paixão ou promover a sua atividade profissional, o seu [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} permite-lhe alojar o site que quiser, na medida em que seja compatível com a [configuração das nossas infraestruturas](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Saiba como alterar a configuração do seu alojamento web da OVH a partir da Área de Cliente.**
 
