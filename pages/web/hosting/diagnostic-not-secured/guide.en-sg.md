@@ -2,7 +2,7 @@
 title: What to do if you get a "Your connection is not private" error?
 slug: site-unsafe-connection
 excerpt: How to react to a security error message on your website
-section: Diagnostic
+section: Diagnostics
 ---
 
 **Last updated 08/07/2021**
@@ -80,7 +80,7 @@ In the `General information`{.action} tab of the concerned hosting plan within y
 
 #### Scenario 1: your web hosting plan does not contain any SSL certificate
 
-Activate an [SSL certificate](https://www.ovh.com/sg/web-hosting/shared-ssl.xml) on your Web Hosting plan by following the instructions in this [guide](../ssl-certificates-on-web-hosting-plans/ ).
+Activate an [SSL certificate](https://www.ovh.com/sg/web-hosting/shared-ssl.xml) on your Web Hosting plan by following the instructions in this [guide](../ssl-certificates-on-web-hosting-plans/).
 
 #### Scenario 2: the SSL certificate on your Web hosting plan does not work
 
