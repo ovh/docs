@@ -68,6 +68,12 @@ It is not possible to interact with Apache Spark cluster via command line.
 - Before submitting a job, you will need to upload your job into your OVHcloud Object Storage account. 
 - To process data, your data can be stored in OVHcloud Object Storage or any other cloud storage or connected storage that is accessible through public internet.
 
+>[!warning]
+>
+> The OVHcloud object storage isn't consistent. 
+> So beware when you are using it as your data storage, mainly for temporary storage or to store checkpoints for spark streaming, those may not be usable as the OVHcloud object storage is only eventually consistent.
+>
+
 ### Resources quotas 
 
 We distinguish three types of resources: CPU cores, RAM and Instances. 
