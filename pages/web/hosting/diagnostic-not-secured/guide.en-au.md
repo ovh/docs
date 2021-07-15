@@ -74,7 +74,7 @@ Select the `DNS Zone`{.action} tab and note the target of the `A` record for you
 
 ### Step 2: check your hosting plan’s SSL certificate <a name="step2"></a>
 
-In the `General information`{.action} tab of the concerned hosting plan within your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), check the `SSL` certificate section:
+In the `General information`{.action} tab of the concerned hosting plan within your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), check the `SSL certificate` section:
 
 ![ssl-certificate-in-general-tab](images/ssl-certificate-in-general-tab.png){.thumbnail}
 
