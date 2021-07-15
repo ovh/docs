@@ -1,5 +1,5 @@
 ---
-title: What to do if you get a "Your connection is not private" error
+title: What to do if you get a "Your connection is not private" error?
 slug: site-unsafe-connection
 excerpt: How to react to a security error message on your website
 section: Diagnostic
@@ -23,7 +23,7 @@ Several error messages may appear if your website is inaccessible. The examples 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
@@ -64,11 +64,11 @@ Select the `DNS zone`{.action} tab and note the target of the `A` record for you
 
 |Scenario|What to do|
 |---|---|
-|The IP address listed in the [DNS Zone](domains/web_hosting_how_to_edit_my_dns_zone/) corresponds to your Web Hosting plan’s IP address.|Proceed to [Step 2](#step2).|
+|The IP address listed in the [DNS Zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) corresponds to your Web Hosting plan’s IP address.|Proceed to [Step 2](#step2).|
 |The IP address listed in the zone does not concern any of the Web Hosting plans within your [OVHcloud account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), but appears in the [list of our Web Cloud servers](../list-of-ip-addresses-of-web-hosting-clusters/).|Check that you do not have a hosting plan with this IP address within one of your other [OVHcloud customer accounts](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), if you have several of them. Contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) for further information.|
 |The IP address entered in the zone is not your hosting plan’s one, nor does it appear on the [list of our Web Cloud servers](../list-of-ip-addresses-of-web-hosting-clusters/).|Contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) for further information.|
-|In the `DNS zone`{.action} tab, a warning indicates that your domain name uses other [DNS](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) servers. These appear as "ns **?** .ovh.net" or "dns **?** .ovh.net" (replace the "**?**" with the relevant DNS server number):<br><br>![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}|You must modify your domain's DNS servers to match the `NS` records of the DNS zone. To perform this operation, follow the instructions of [this guide](../../domains/web_hosting_general_information_about_dns_servers/#modifying-dns-servers).|
-|In the `DNS zone`{.action} tab, a message indicates that your domain uses other [DNS](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) servers and these do not appear as "ns **?** .ovh.net" or "dns **?**.ovh.net" :<br><br>![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}|Contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) for further information.|
+|In the `DNS Zone`{.action} tab, a warning indicates that your domain name uses other [DNS](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) servers. These appear as "ns **?** .ovh.net" or "dns **?** .ovh.net" (replace the "**?**" with the relevant DNS server number):<br><br>![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}|You must modify your domain's DNS servers to match the `NS` records of the DNS zone. To perform this operation, follow the instructions of [this guide](../../domains/web_hosting_general_information_about_dns_servers/#modifying-dns-servers).|
+|In the `DNS Zone`{.action} tab, a message indicates that your domain uses other [DNS](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) servers and these do not appear as "ns **?** .ovh.net" or "dns **?**.ovh.net" :<br><br>![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}|Contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) for further information.|
 |Your domain name does not appear in the `Domain names`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).<br><br>Or your domain's `DNS zone`{.action} tab appears as follows:<br><br>![dns](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|It means that your domain name is not managed from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).<br><br>Check if it is managed from one of your other [OVHcloud customer accounts](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), if you have created more than one of them.<br><br> You can also check the registrar of your domain name and its actual DNS servers with our [WHOIS tool](https://www.ovh.co.uk/support/tools/check_whois.pl).<br><br>If necessary, contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) about this.|
 
 ### Step 2: check your Web Hosting plan’s SSL certificate <a name="step2"></a>
@@ -83,9 +83,9 @@ Activate an [SSL certificate](https://www.ovh.co.uk/ssl/) on your Web Hosting pl
 
 #### Scenario 2: the SSL certificate on your Web Hosting plan does not work
 
-If you have generated a **Let's Encrypt SSL certificate**, click on the `Multisite`{.action} tab and follow the instructions of this [guide](../ssl-certificates-on-web-hosting-plans/#enabling-ssl-on-a-multisite) to activate and/or regenerate the SSL option.
+If you have **generated a Let's Encrypt SSL certificate**, click on the `Multisite`{.action} tab and follow the instructions of this [guide](../ssl-certificates-on-web-hosting-plans/#enabling-ssl-on-a-multisite) to activate and/or regenerate the SSL option.
 
-If you had ordered a **SSL certificate of our partner [SECTIGO](https://sectigo.com/){.external}**, check if you have received an email offering to renew it.
+If you **ordered a SSL certificate** of our partner [SECTIGO](https://sectigo.com/){.external}, check if you have received an email offering to renew it.
 <br>If necessary, contact the [SECTIGO support team](https://sectigo.com/support){.external} for more information.
 
 If you have **imported a SSL certificate** from another provider, contact the appropriate support team.
