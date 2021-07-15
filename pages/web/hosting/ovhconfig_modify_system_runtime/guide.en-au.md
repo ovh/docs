@@ -9,7 +9,7 @@ legacy_guide_number: g2149
 
 ## Objective
 
-You can use a range of different configurations on an OVHcloud Web Hosting plan. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, you can host whatever website you want on your [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/), provided that it is compatible with [our infrastructure’s configurations](http://pro.ovh.net/infos/).
+You can use a range of different configurations on an OVHcloud Web Hosting plan. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, you can host whatever website you want on your [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/), provided that it is compatible with [our infrastructure’s configurations](https://webhosting-infos.hosting.ovh.net).
 
 **Find out how to modify the configuration of an OVHcloud Web Hosting plan from the OVHcloud Control Panel.**
 

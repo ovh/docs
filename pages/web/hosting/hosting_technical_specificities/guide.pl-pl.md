@@ -115,7 +115,7 @@ Możesz na przykład użyć funkcji *gethostbyaddr()*, aby pobrać nazwę hosta:
 
 Zapoznaj się z odpowiednimi stronami informacyjnymi, aby sprawdzić, które biblioteki są dostępne dla Twojego hostingu.
 
-Różne informacje na temat Twojego klastra znajdziesz pod tym linkiem: [https://cluster015.hosting.ovh.net/infos/](https://cluster015.hosting.ovh.net/infos/){.external}
+Różne informacje na temat Twojego klastra znajdziesz pod tym linkiem: <https://webhosting-infos.hosting.ovh.net>
 
 Zamień klaster wskazany w adresie URL na Twój klaster. Aby dowiedzieć się, na jakim klastrze hostingu znajduje się Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i na górnym pasku nawigacji wybierz pozycję `Web Cloud`{.action}. Na pasku usług po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie kliknij kartę `FTP - SSH`{.action}. Adres URL dostępu FTP do Twojego hostingu wskazuje numer klastra.
 
