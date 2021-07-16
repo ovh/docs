@@ -10,7 +10,7 @@ section: 'Webhosting-Konfiguration'
 
 ## Einleitung
 
-Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einrichten oder einen Onlineshop eröffnen, mit anderen Ihr Hobby teilen oder Ihr Unternehmen darstellen und am Markt platzieren möchten: Sie können die gewünschte Website auf Ihrem [OVH Webhosting](https://www.ovh.de/hosting/){.external} hosten, solange diese mit der [Konfiguration unserer Infrastrukturen](http://pro.ovh.net/infos/){.external} kompatibel ist.
+Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einrichten oder einen Onlineshop eröffnen, mit anderen Ihr Hobby teilen oder Ihr Unternehmen darstellen und am Markt platzieren möchten: Sie können die gewünschte Website auf Ihrem [OVH Webhosting](https://www.ovh.de/hosting/){.external} hosten, solange diese mit der [Konfiguration unserer Infrastrukturen](https://webhosting-infos.hosting.ovh.net){.external} kompatibel ist.
 
 **In dieser Anleitung erfahren Sie, wie Sie die Konfiguration Ihres OVH Webhostings über Ihr Kundencenter bearbeiten.**
 

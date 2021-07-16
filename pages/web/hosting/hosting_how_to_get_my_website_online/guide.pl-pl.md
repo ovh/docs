@@ -12,7 +12,7 @@ order: 2
 
 W sieci istnieje bardzo wiele rodzajów stron WWW. 
 
-Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prezentującą Twoją działalność) na **hostingu OVH**, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVH](http://pro.ovh.net/infos/){.external}.
+Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prezentującą Twoją działalność) na **hostingu OVH**, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVH](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Dowiedz się, jak zainstalować stronę WWW na Twoim hostingu OVH.**
 

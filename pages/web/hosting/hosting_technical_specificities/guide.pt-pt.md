@@ -115,7 +115,7 @@ Por exemplo, pode utilizar a função *gethostbyaddr()* para obter o nome do hos
 
 Consulte as respetivas páginas de informação para verificar as bibliotecas disponíveis para o seu alojamento web.
 
-Pode encontrar várias informações sobre o seu cluster através da seguinte ligação: [https://cluster015.hosting.ovh.net/infos/](https://cluster015.hosting.ovh.net/infos/){.external}
+Pode encontrar várias informações sobre o seu cluster através da seguinte ligação: <https://webhosting-infos.hosting.ovh.net>
 
 Substitua o cluster indicado no URL pelo seu. Para saber em que cluster de alojamento web está o seu serviço, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Alojamento`{.action} na barra à esquerda e escolha o alojamento em causa. De seguida, clique no separador `FTP - SSH`{.action}. O URL de acesso FTP ao seu alojamento indicará o número do cluster.
 
