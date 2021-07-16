@@ -1,7 +1,7 @@
 ---
-title: Que faire si mon site est inaccessible ?
+title: "Que faire si mon site est inaccessible ?"
 slug: erreur-serveurs-inaccessibles
-excerpt: Diagnostiquez les causes de l'inaccessibilité de votre site
+excerpt: "Diagnostiquez les causes de l'inaccessibilité de votre site"
 section: Diagnostic
 ---
 
@@ -9,14 +9,14 @@ section: Diagnostic
  
 ## Objectif
 
-Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent une configuration erronée de vos [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) ou un domaine suspendu (si votre site n'affiche pas l'un des messages d'erreur décrits ici, consultez la section [Aller plus loin](#aller-plus-loin) de ce guide) : 
+Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent une configuration erronée de vos [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) ou un domaine suspendu (si votre site n'affiche pas l'un des messages d'erreur décrits ici, consultez la section [Aller plus loin](#aller-plus-loin)) : 
 
 |Navigateur|Erreur concernée|
 |-|---|
-|Sur Chrome :<br>« Ce site est inaccessible »|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
-|Sur Firefox :<br>« Hum, nous ne parvenons pas à trouver ce site. »|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
-|Sur Edge :<br>« Désolé, impossible d’accéder à cette page »|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
-|Sur Safari :<br>« Safari ne parvient pas à trouver le serveur »|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
+|Chrome :<br>« Ce site est inaccessible »|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
+|Firefox :<br>« Hum, nous ne parvenons pas à trouver ce site. »|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
+|Edge :<br>« Désolé, impossible d’accéder à cette page »|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
+|Safari :<br>« Safari ne parvient pas à trouver le serveur »|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
 
 **Découvez comment résoudre les erreurs du type "Ce site est inaccessible"**
 
@@ -37,31 +37,25 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 
 ### Étape 1 : vérifier la validité de votre nom de domaine
 
-Pour vérifier la validité de l'abonnement concernant votre domaine, cliquez en haut à droite sur votre nom et prénom, afin de faire apparaître le menu contextuel, puis cliquez sur `Produits et services`{.action}.
-
-![control-panel](images/control-panel.png){.thumbnail}|
-
-Vérifiez la `Disponibilité` de votre nom de domaine.
-
-![my_services_domain_suspended](images/my_services_domain_suspended.png){.thumbnail}
-
-Renouvelez-le, si nécessaire, via le bouton `...`{.action} à droite de l'écran, puis `Renouveler le service`{.action}.
-
-![renew-service-button](images/renew-service-button.png){.thumbnail}
-
 > [!warning]
 >
 > Le renouvellement de vos offres est sous votre entière responsabilité. OVHcloud, en tant qu'hébergeur, a l'obligation de supprimer définitivement les services (domaines, hébergements, E-mails, etc.) qui n'ont pas été renouvelés à temps, ainsi que l'ensemble des données qu'ils contiennent.
 >
 > De ce fait, nous vous recommandons fortement d'activer le [renouvellement automatique](../../billing/renouvellement-automatique-ovh/#en-pratique) sur l'ensemble de vos abonnements OVHcloud.
 
+Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez en haut à droite sur votre nom et prénom, afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
+
+![control-panel](images/control-panel.png){.thumbnail}|
+
+Renouvelez votre domaine si nécessaire via le bouton `...`{.action} à droite de l'écran, puis `Renouveler le service`{.action}.
+
+![renew-service-button](images/renew-service-button.png){.thumbnail}
+
+Patientez ensuite 48 heures au maximum (délai de propagation suite aux changements liés aux [Serveurs DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns)).
+
 ### Étape 2 : vérifier les serveurs DNS
 
 Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serveurs-dns/), cliquez en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
-
-Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} :
-
-![dns-tabs](images/dns-tabs.png){.thumbnail}
 
 #### Scénario 1 : aucune anomalie sur les serveurs DNS
 
@@ -73,7 +67,7 @@ S'ils sont identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.a
 
 ![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
-#### Scénario 2 : un avertissement apparaît au-dessus de la Zone DNS
+#### Scénario 2 : un avertissement apparaît au-dessus de la zone DNS
 
 Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans votre zone. Deux scénarios sont ici possibles : 
 
@@ -111,7 +105,7 @@ Cliquez ensuite sur `Réintialiser ma zone DNS`{.action}, puis sélectionnez `No
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
-Patientez enfin 24 heures au maximum (délai de propagation des modifications dans la `Zone DNS`{.action}).
+Patientez 24 heures maximum (délai de propagation des modifications dans la `Zone DNS`{.action}).
 
 ### Étape 3 : vérifier la zone DNS <a name="etape3"></a>
 
@@ -119,7 +113,7 @@ Dans cette étape, vous allez retrouver l'adresse IP de votre hébergement, puis
 
 Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une tierce personne, contactez l'hébergeur ou le prestataire concerné.
 
-Si votre site est hébergé sur l'une de vos [offres d'hébergement mutualisé OVHcloud](https://www.ovh.com/fr/hebergement-web/), cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'offre concernée.
+Si votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovh.com/fr/hebergement-web/), cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'offre concernée.
 
 Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou IPV6 de votre domaine. 
 
