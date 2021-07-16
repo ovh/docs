@@ -5,11 +5,11 @@ excerpt: Diagnostiquez les causes de l'inaccessibilité de votre site
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 02/07/2021**
+**Dernière mise à jour le 16/07/2021**
  
 ## Objectif
 
-Plusieurs messages d'erreurs peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent une configuration erronée de vos [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) ou un domaine suspendu (si votre site n'affiche pas l'une des anomalies décrites ici, consultez la section [Aller plus loin](#aller-plus-loin) de ce guide) : 
+Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent une configuration erronée de vos [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) ou un domaine suspendu (si votre site n'affiche pas l'un des messages d'erreur décrits ici, consultez la section [Aller plus loin](#aller-plus-loin) de ce guide) : 
 
 |Navigateur|Erreur concernée|
 |-|---|
@@ -79,13 +79,25 @@ Passez à [l'étape 3](#etape3).
 
 #### Scénario 2 : un avertissement apparaît au-dessus de la Zone DNS
 
-Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans la zone :
+Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans la zone. Deux cas sont ici possibles : 
+
+- 
 
 ![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}
 
 [Modifiez les serveurs DNS](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), afin qu'ils soient identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}.
 
 Patientez ensuite 48 heures au maximum (délai de propagation des changements de `Serveurs DNS`{.action}).
+
+- Votre domaine est relié à des serveurs DNS extérieurs. Les serveurs qui apparaissent dans l'onglet `Serveurs DNS`{.action} ne sont pas gérés par OVHcloud : 
+
+![external-dns-servers](images/external-dns-servers.png){.thumbnail}
+
+Contactez l'hébergeur concerné, afin de déterminer les raisons de l'inaccessibilité de votre site.
+
+> [!warning]
+>
+> Si vos serveurs serveurs DNS ne sont pas ceux d'OVHCloud, il est possible qu'ils soient fonctionnels et que le problème d'accès à votre application soit lié au champ en question dans la zone DNS (par exemple un champ A manquant). Toute modification des serveurs DNS peut entraîner une coupure d'accès aux autres applications (e.g mails).
 
 #### Scénario 3 : aucune entrée de type NS n'apparaît dans la Zone
 
@@ -105,13 +117,9 @@ Cliquez ensuite sur `Réintialiser ma zone DNS`{.action}, puis sélectionnez `No
 
 Patientez enfin 24 heures au maximum (délai de propagation des modifications dans la `Zone DNS`{.action}).
 
-#### Scénario 4 : votre domaine est relié à des serveurs DNS extérieurs
+#### Scénario 4 : 
 
-Les serveurs qui apparaissent dans l'onglet `Serveurs DNS`{.action} ne sont pas gérés par OVHcloud : 
 
-![external-dns-servers](images/external-dns-servers.png){.thumbnail}
-
-Contactez l'hébergeur concerné, afin de déterminer les raisons de l'inaccessibilité de votre site.
 
 ### Étape 3 : vérifier la zone DNS <a name="etape3"></a>
 
