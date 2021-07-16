@@ -37,11 +37,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 
 ### Étape 1 : vérifier la validité de votre nom de domaine
 
-Pour vérifier la validité de l'abonnement concernant votre domaine, cliquez en haut à droite sur votre nom et prénom, afin de faire apparaître le menu contextuel.
-
-![username-panel](images/username-panel.png){.thumbnail}
-
-Puis cliquez sur `Produits et services`{.action}.
+Pour vérifier la validité de l'abonnement concernant votre domaine, cliquez en haut à droite sur votre nom et prénom, afin de faire apparaître le menu contextuel, puis cliquez sur `Produits et services`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
@@ -61,9 +57,7 @@ Renouvelez-le, si nécessaire, via le bouton `...`{.action} à droite de l'écra
 
 ### Étape 2 : vérifier les serveurs DNS
 
-Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serveurs-dns/), cliquez en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}, puis sur le domaine de votre site : 
-
-![click-on-domain-name](images/click-on-domain-name.png){.thumbnail}
+Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serveurs-dns/), cliquez en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
 
 Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} :
 
@@ -71,33 +65,35 @@ Cliquez ensuite sur l'onglet `Zone DNS`{.action}, puis `Serveurs DNS`{.action} :
 
 #### Scénario 1 : aucune anomalie sur les serveurs DNS
 
-Les serveurs DNS indiqués dans l'onglet `Serveurs DNS`{.action} sont identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action} : 
+Vérifiez les serveurs indiqués dans l'onglet `Serveurs DNS`{.action} :
 
-![montage_check-srv-dns](images/montage_check-srv-dns.png){.thumbnail}
+![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
 
-Passez à [l'étape 3](#etape3).
+S'ils sont identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}, passez à [l'étape 3](#etape3) : 
+
+![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
 #### Scénario 2 : un avertissement apparaît au-dessus de la Zone DNS
 
-Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans la zone. Deux cas sont ici possibles : 
+Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans votre zone. Deux scénarios sont ici possibles : 
 
-- 
+- Sous la phrase « Vous utilisez actuellement les serveurs DNS suivants : », les serveurs indiqués sont du type « ns **?** .ovh.net » et « dns **?** .ovh.net » (remplacez le « **?** » par n'importe quel numéro) :
 
-![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}
+![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-[Modifiez les serveurs DNS](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), afin qu'ils soient identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}.
+Modifiez les serveurs DNS en suivant les instructions de ce [guide](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), afin qu'ils soient identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}.
 
 Patientez ensuite 48 heures au maximum (délai de propagation des changements de `Serveurs DNS`{.action}).
 
-- Votre domaine est relié à des serveurs DNS extérieurs. Les serveurs qui apparaissent dans l'onglet `Serveurs DNS`{.action} ne sont pas gérés par OVHcloud : 
+- Sous la phrase « Vous utilisez actuellement les serveurs DNS suivants : », les serveurs indiqués ne sont pas du type « ns **?** .ovh.net » et « dns **?** .ovh.net ».
 
-![external-dns-servers](images/external-dns-servers.png){.thumbnail}
-
-Contactez l'hébergeur concerné, afin de déterminer les raisons de l'inaccessibilité de votre site.
+![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}
 
 > [!warning]
 >
-> Si vos serveurs serveurs DNS ne sont pas ceux d'OVHCloud, il est possible qu'ils soient fonctionnels et que le problème d'accès à votre application soit lié au champ en question dans la zone DNS (par exemple un champ A manquant). Toute modification des serveurs DNS peut entraîner une coupure d'accès aux autres applications (e.g mails).
+> Dans cette situation, contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) avant toute manipulation.
+>
+> Il est en effet possible que les serveurs DNS utilisés par votre nom de domaine soient fonctionnels et que le problème d'accès à votre site soit lié à une entrée manquante ou erronée dans la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns). Toute modification des serveurs DNS dans cette situation peut rendre vos adresses e-mails ou d'autres applications en ligne indisponibles.
 
 #### Scénario 3 : aucune entrée de type NS n'apparaît dans la Zone
 
@@ -117,10 +113,6 @@ Cliquez ensuite sur `Réintialiser ma zone DNS`{.action}, puis sélectionnez `No
 
 Patientez enfin 24 heures au maximum (délai de propagation des modifications dans la `Zone DNS`{.action}).
 
-#### Scénario 4 : 
-
-
-
 ### Étape 3 : vérifier la zone DNS <a name="etape3"></a>
 
 Dans cette étape, vous allez retrouver l'adresse IP de votre hébergement, puis l'ajouter à votre `Zone DNS`{.action}.
@@ -129,11 +121,13 @@ Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une ti
 
 Si votre site est hébergé sur l'une de vos [offres d'hébergement mutualisé OVHcloud](https://www.ovh.com/fr/hebergement-web/), cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'offre concernée.
 
-![hosting-menu](images/hosting-menu.png){.thumbnail}
+Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou IPV6 de votre domaine. 
 
-Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou IPV6 de votre domaine puis reportez-la dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`.
+![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-![montage_ipv4](images/montage_ipv4.png){.thumbnail}
+Puis reportez-la dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`.
+
+![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
 Patientez enfin 24 heures au maximum (délai de propagation des modifications dans la `Zone DNS`{.action}).
 
