@@ -21,7 +21,7 @@ Vous venez d'acquérir une solution MX Plan. Celle-ci vous permet de bénéficie
 
 ## En pratique
 
-Une fois l'offre MX Plan créée et disponible, vous avez la possibilité de la gérer depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Selon sa date d'activation ou si [celle-ci a été récemment migrée](https://www.ovh.com/fr/mxplan-migration/), il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre. Avant de poursuivre, vous devez identifier celle-ci. 
+Une fois l'offre MX Plan créée et disponible, vous avez la possibilité de la gérer depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Selon sa date d'activation ou si [celle-ci a été récemment migrée](https://www.ovh.com/fr/mxplan-migration/), il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre. Avant de poursuivre, vous devez identifier celle-ci.
 
 Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie « Web Cloud ». Cliquez sur `Emails`{.action} dans la barre de services à gauche, puis choisissez le nom de l'offre concernée. Poursuivez selon la version que vous possédez.
 
@@ -38,7 +38,7 @@ Vous possédez la nouvelle version de l'offre MX Plan. Si vous n'obtenez pas l'a
 
 ![email](images/mxplan-starter-new-step1.png){.thumbnail}
 
-#### Comptes e-mail
+#### Ajouter un compte e-mail
 
 Pour créer une adresse e-mail, positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît liste les comptes déjà disponibles, ainsi que ceux que vous pouvez encore créer. Pour ajouter un nouveau compte e-mail, cliquez sur le bouton `Ajouter un compte`{.action}.
 
@@ -57,46 +57,6 @@ Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez les informations qui s'affichent dans le récapitulatif. Si celles-ci sont correctes, cliquez sur `Valider`{.action}. Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition.
 
 ![email](images/mxplan-starter-new-step3.png){.thumbnail}
-
-#### Redirection
-
-Vous souhaitez rediriger vos e-mails vers un autre destinataire, créer un alias ou encore mettre systématiquement en copie une autre adresse e-mail. Pour cela, il vous faut créer une redirection.
-
-Vous pouvez procéder de deux manières :
-
-- créer votre redirection depuis le webmail, via les règles de boite de réception. Pour cela, nous vous invitons à suivre notre guide « [Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/#exemple-1-rediriger-des-e-mails-vers-une-autre-adresse) ».
-
-- créer votre redirection depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cette méthode vous permet par exemple de créer un alias, c'est à dire rediriger une adresse e-mail qui n'existe pas vers une adresse e-mail existante. Pour cela, nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#nouvelle-version-de-loffre-mx-plan_1) ».
-
-#### Répondeur
-
-Vous devez partir en congé ou vous n'aurez pas accès à votre adresse e-mail durant une certaine période.
-
-Vous pouvez alors créer un répondeur automatique. Nous vous invitons à suivre notre guide « [Mettre en place un répondeur automatique depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/) ».
-
-#### Délégations
-
-Vous souhaitez envoyer un e-mail depuis votre adresse e-mail personnelle, **à la place** ou **de la part** d'une autre adresse e-mail de votre nom de domaine.
-
-Pour cela, vous devez configurer la délégation de l'adresse e-mail concernée. Nous vous invitons à suivre notre guide « [Déléguer des droits sur un compte](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/) ».
-
-#### Mailing-lists
-
-Vous souhaitez envoyer régulièrement une newsletter à vos contacts.
-
-Pour cela, vous pouvez créer une mailing list. Nous vous invitons à suivre notre guide « [Gérer et utiliser les mailing lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) ».
-
-#### Pied de page
-
-Vous souhaitez appliquer une signature globale à l'ensemble des adresses e-mail de votre nom de domaine.
-
-Le « pied de page » vous le permet, il est configurable depuis votre espace client. Nous vous invitons à suivre notre guide « [Ajouter un pied de page sur vos e-mails](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-signature-automatique-disclaimer/) ».
-
-#### Politique de sécurité
-
-Vous souhaitez renforcer la sécurité d'accès à vos adresses e-mail. Il vous est possible de le faire en paramétrant la politique de sécurité de votre solution MX Plan.
-
-Nous vous invitons à suivre notre guide « [Gérer la politique de sécurité d’un service e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gerer-politique-de-securite-mot-de-passe/) ».
 
 #### Utiliser vos adresses e-mail
 
@@ -141,6 +101,52 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 > Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](../) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
 >
 
+#### Fonctionnalités avancées
+
+##### **Politique de sécurité**
+
+Vous souhaitez renforcer la sécurité d'accès à vos adresses e-mail.
+
+Vous pouvez le faire en paramétrant la politique de sécurité de votre solution MX Plan.
+
+Nous vous invitons à suivre notre guide « [Gérer la politique de sécurité d’un service e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gerer-politique-de-securite-mot-de-passe/) ».
+
+##### **Redirections**
+
+Vous souhaitez rediriger vos e-mails vers un autre destinataire, créer un alias ou encore mettre systématiquement en copie une autre adresse e-mail.
+
+Pour cela, il vous faut créer une redirection.
+
+Vous pouvez procéder de deux manières :
+
+- créer votre redirection depuis le webmail, via les règles de boite de réception. Pour cela, nous vous invitons à suivre notre guide « [Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/#exemple-1-rediriger-des-e-mails-vers-une-autre-adresse) ».
+
+- créer votre redirection depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cette méthode vous permet par exemple de créer un alias, c'est à dire rediriger une adresse e-mail qui n'existe pas vers une adresse e-mail existante. Pour cela, nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#nouvelle-version-de-loffre-mx-plan_1) ».
+
+##### **Répondeur**
+
+Vous devez partir en congé ou vous n'aurez pas accès à votre adresse e-mail durant une certaine période.
+
+Vous pouvez alors créer un répondeur automatique. Nous vous invitons à suivre notre guide « [Mettre en place un répondeur automatique depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/) ».
+
+##### **Délégations**
+
+Vous souhaitez envoyer un e-mail depuis votre adresse e-mail personnelle, **à la place** ou **de la part** d'une autre adresse e-mail de votre nom de domaine.
+
+Pour cela, vous devez configurer la délégation de l'adresse e-mail concernée. Nous vous invitons à suivre notre guide « [Déléguer des droits sur un compte](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/) ».
+
+##### **Mailing-lists**
+
+Vous souhaitez envoyer régulièrement une newsletter à vos contacts.
+
+Pour cela, vous pouvez créer une mailing list. Nous vous invitons à suivre notre guide « [Gérer et utiliser les mailing lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) ».
+
+##### **Pied de page**
+
+Vous souhaitez appliquer une signature globale à l'ensemble des adresses e-mail de votre nom de domaine.
+
+Le « pied de page » vous le permet, il est configurable depuis votre espace client. Nous vous invitons à suivre notre guide « [Ajouter un pied de page sur vos e-mails](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-signature-automatique-disclaimer/) ».
+
 ### Version historique de l'offre MX Plan <a name="oldmxplan"></a>
 
 #### Accéder à la gestion de votre offre
@@ -149,7 +155,7 @@ Vous possédez la version historique de l'offre MX Plan. Si vous n'obtenez pas l
 
 ![email](images/mxplan-starter-legacy-step1.png){.thumbnail}
 
-#### Comptes e-mail
+#### Ajouter un compte e-mail
 
 Pour créer une adresse e-mail, positionnez-vous sur l'onglet `Comptes emails`{.action}. Le tableau qui s'affiche contient toutes les adresses e-mail créées dans le cadre de votre offre. Cliquez alors sur le bouton `Créer une adresse E-mail`{.action}.
 
@@ -167,30 +173,6 @@ Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez les informations qui s'affichent dans le récapitulatif. Si celles-ci sont correctes, cliquez sur `Valider`{.action}. Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition.
 
 ![email](images/mxplan-starter-legacy-step3.png){.thumbnail}
-
-#### Redirection
-
-Vous souhaitez rediriger vos e-mails vers un autre destinataire, créer un alias ou encore mettre systématiquement en copie une autre adresse e-mail.
-
-Pour cela il vous faut créer une redirection. Nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#version-historique-de-loffre-mx-plan) ».
-
-#### Répondeur
-
-Vous devez partir en congé ou vous n'aurez pas accès à votre adresse e-mail durant une certaine période.
-
-Vous pouvez alors utiliser le répondeur automatique sur votre adresse e-mail. Nous vous invitons à suivre notre guide « [Créer un répondeur pour son adresse e-mail](https://docs.ovh.com/fr/emails/mise-en-place-repondeur-mail/) ».
-
-#### Délégations
-
-Vous souhaitez **déléguer tout le service email d’un nom de domaine à un autre compte OVHcloud** ou **déléguer un ou plusieurs comptes emails à un autre compte OVHcloud**, pour, par exemple, permettre au titulaire de cet autre compte OVHcloud de modifier le mot de passe d'une adresse e-mail.
-
-Nous vous invitons à suivre notre guide « [Déléguer la gestion de vos e-mails à une autre personne](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/) ».
-
-#### Mailing-lists
-
-Vous souhaitez envoyer régulièrement une newsletter à vos contacts.
-
-Pour cela, vous pouvez créer une mailing list. Nous vous invitons à suivre notre guide « [Gérer et utiliser les mailing lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) ».
 
 #### Utiliser vos adresses e-mail
 
@@ -233,8 +215,35 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 > [!warning]
 >
 > Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](../) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
->
+
+#### Fonctionnalités avancées
+
+##### **Redirection**
+
+Vous souhaitez rediriger vos e-mails vers un autre destinataire, créer un alias ou encore mettre systématiquement en copie une autre adresse e-mail.
+
+Pour cela il vous faut créer une redirection. Nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#version-historique-de-loffre-mx-plan) ».
+
+##### **Répondeur**
+
+Vous devez partir en congé ou vous n'aurez pas accès à votre adresse e-mail durant une certaine période.
+
+Vous pouvez alors utiliser le répondeur automatique sur votre adresse e-mail. Nous vous invitons à suivre notre guide « [Créer un répondeur pour son adresse e-mail](https://docs.ovh.com/fr/emails/mise-en-place-repondeur-mail/) ».
+
+##### **Délégations**
+
+Vous souhaitez **déléguer tout le service email d’un nom de domaine à un autre compte OVHcloud** ou **déléguer un ou plusieurs comptes emails à un autre compte OVHcloud**, pour, par exemple, permettre au titulaire de cet autre compte OVHcloud de modifier le mot de passe d'une adresse e-mail.
+
+Nous vous invitons à suivre notre guide « [Déléguer la gestion de vos e-mails à une autre personne](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/) ».
+
+##### **Mailing-lists**
+
+Vous souhaitez envoyer régulièrement une newsletter à vos contacts.
+
+Pour cela, vous pouvez créer une mailing list. Nous vous invitons à suivre notre guide « [Gérer et utiliser les mailing lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) ».
 
 ## Aller plus loin
+
+La migration des offres historiques MX Plan vers les nouvelles offres MX Plan est en cours. Si vous souhaitez demander la migration de votre offre en priorité, vous pouvez suivre les indications de [cette page](https://www.ovh.com/fr/mxplan-migration/#accordion_6001-4).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
