@@ -503,7 +503,7 @@ Only Failover IP addresses can be routed to Plesk web hosting, not RIPE blocks.
 
 ### Advanced Use
 - [Knowledge](https://kb.plesk.com/){.external}
-- [FAQ Plesk](https://kb.plesk.com/11#plesk12){.external}
+- [FAQ Plesk](https://docs.plesk.com/en-US/onyx/faq/){.external}
 
 
 ## FAQ
