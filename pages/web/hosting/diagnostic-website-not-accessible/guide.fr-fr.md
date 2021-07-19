@@ -1,17 +1,17 @@
 ---
 title: "Que faire si mon site est inaccessible ?"
-slug: erreur-serveurs-inaccessibles
+slug: erreur-serveur-inaccessible
 excerpt: "Diagnostiquez les causes de l'inaccessibilité de votre site"
 section: Diagnostic
 ---
 
 **Dernière mise à jour le 16/07/2021**
- 
+
 ## Objectif
 
-Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent une configuration erronée de vos [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) ou un domaine suspendu (si votre site n'affiche pas l'un des messages d'erreur décrits ici, consultez la section [Aller plus loin](#aller-plus-loin)) : 
+Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent une configuration erronée de vos [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) ou un domaine suspendu (si votre site n'affiche pas l'un des messages d'erreur décrits ici, consultez la section [Aller plus loin](#aller-plus-loin)) :
 
-|Navigateur|Erreur concernée|
+|Navigateur|Message d'erreur|
 |-|---|
 |Chrome :<br>« Ce site est inaccessible »|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
 |Firefox :<br>« Hum, nous ne parvenons pas à trouver ce site. »|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
@@ -30,20 +30,22 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 ## Prérequis
 
 - Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/)
-- Avoir la gestion des serveurs et de la zone [DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) de votre domaine
+- Avoir la gestion des serveurs et de la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) de votre domaine
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
- 
+
 ## En pratique
 
 ### Étape 1 : vérifier la validité de votre nom de domaine
 
 > [!warning]
 >
-> Le renouvellement de vos offres est sous votre entière responsabilité. OVHcloud, en tant qu'hébergeur, a l'obligation de supprimer définitivement les services (domaines, hébergements, E-mails, etc.) qui n'ont pas été renouvelés à temps, ainsi que l'ensemble des données qu'ils contiennent.
+> Le renouvellement de vos offres est sous votre entière responsabilité.<br>
+> OVHcloud, en tant qu'hébergeur, a l'obligation de supprimer définitivement les services (domaines, hébergements, e-mails, etc.) qui n'ont pas été renouvelés à temps, ainsi que l'ensemble des données qu'ils contiennent.
 >
 > De ce fait, nous vous recommandons fortement d'activer le [renouvellement automatique](../../billing/renouvellement-automatique-ovh/#en-pratique) sur l'ensemble de vos abonnements OVHcloud.
+>
 
-Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez en haut à droite sur votre nom et prénom, afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
+Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur votre nom en haut à droite de votre espace client, afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
@@ -63,19 +65,19 @@ Vérifiez les serveurs indiqués dans l'onglet `Serveurs DNS`{.action} :
 
 ![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
 
-S'ils sont identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}, passez à [l'étape 3](#etape3) : 
+S'ils sont identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}, passez à [l'étape 3](#etape3) :
 
 ![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
 #### Scénario 2 : un avertissement apparaît au-dessus de la zone DNS
 
-Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans votre zone. Deux scénarios sont ici possibles : 
+Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans votre zone. Deux scénarios sont ici possibles :
 
 - Sous la phrase « Vous utilisez actuellement les serveurs DNS suivants : », les serveurs indiqués sont du type « ns **?** .ovh.net » et « dns **?** .ovh.net » (remplacez le « **?** » par n'importe quel numéro) :
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Modifiez les serveurs DNS en suivant les instructions de ce [guide](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), afin qu'ils soient identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}.
+Modifiez les serveurs DNS en suivant les instructions de [ce guide](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), afin qu'ils soient identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}.
 
 Patientez ensuite 48 heures au maximum (délai de propagation des changements de `Serveurs DNS`{.action}).
 
@@ -88,20 +90,21 @@ Patientez ensuite 48 heures au maximum (délai de propagation des changements de
 > Dans cette situation, contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) avant toute manipulation.
 >
 > Il est en effet possible que les serveurs DNS utilisés par votre nom de domaine soient fonctionnels et que le problème d'accès à votre site soit lié à une entrée manquante ou erronée dans la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns). Toute modification des serveurs DNS dans cette situation peut rendre vos adresses e-mails ou d'autres applications en ligne indisponibles.
+>
 
-#### Scénario 3 : aucune entrée de type NS n'apparaît dans la Zone
+#### Scénario 3 : aucune entrée de type NS n'apparaît dans la zone DNS
 
 La `Zone DNS`{.action} de votre domaine ne contient pas d'entrée de type `NS` :
 
 ![srv_dns_missing](images/srv_dns_missing.png){.thumbnail}
 
-Effectuez une sauvegarde de la zone actuelle en cliquant sur le bouton `Modifier en mode textuel`{.action} à droite de votre écran : 
+Effectuez une sauvegarde de la zone actuelle en cliquant sur le bouton `Modifier en mode textuel`{.action} à droite de votre écran :
 
 ![change_DNS_zone_change_text_format](images/change_DNS_zone_change_text_format.png){.thumbnail}
 
 Puis copiez/collez le contenu de votre `Zone DNS`{.action} dans un document texte. Enregistrez localement ce document.
 
-Cliquez ensuite sur `Réintialiser ma zone DNS`{.action}, puis sélectionnez `Non, mais je veux réinitialiser ma zone DNS`{.action}, indiquez vos serveurs mail et d'hébergement et cliquez sur `Valider`{.action}.
+Cliquez ensuite sur `Réinitialiser ma zone DNS`{.action}, puis sélectionnez `Non, mais je veux réinitialiser ma zone DNS`{.action}, indiquez vos serveurs e-mail et d'hébergement et cliquez sur `Valider`{.action}.
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
@@ -115,7 +118,7 @@ Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une ti
 
 Si votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovh.com/fr/hebergement-web/), cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'offre concernée.
 
-Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou IPV6 de votre domaine. 
+Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou IPV6 de votre domaine.
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
