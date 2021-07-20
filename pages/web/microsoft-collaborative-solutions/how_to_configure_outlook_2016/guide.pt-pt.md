@@ -83,7 +83,7 @@ Se tiver de efetuar uma operação suscetível de causar a perda dos dados da su
 
 ## Quer saber mais?
 
-[Configurar um endereço de e-mail no Outlook 2016 para Windows](https://docs.ovh.com/pt/emails/configuracao-outlook-2016/){.external} (versão em inglês).
+[Configurar um endereço de e-mail no Outlook 2016 para Windows](https://docs.ovh.com/pt/emails/configuracao-outlook-2016/){.external}
 
 [Configurar uma conta Email Pro no Outlook 2016 para Windows](https://docs.ovh.com/pt/emails-pro/configuracao-outlook-2016/){.external}
 
