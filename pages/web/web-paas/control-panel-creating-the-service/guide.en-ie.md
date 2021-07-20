@@ -6,13 +6,15 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 6th July 2021**
+**Last updated 20th July 2021**
 
 ## Objective
 
 OVHcloud Web PaaS powered by Platform.sh enables web developers to manage, develop and deploy applications by offering a centralised collaborative solution with numerous integrated features.
 
 **This guide explains how to order and preconfigure your Web PaaS solution in the OVHcloud Control Panel.**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EcEBhxuDCDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requirements
 
