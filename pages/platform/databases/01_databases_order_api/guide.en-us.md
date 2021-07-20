@@ -38,8 +38,8 @@ The _capabilities_ endpoint lists the allowed values for the engine, plan, and f
 
 The call returns an object listing allowed values for:
 
-- the various engines, with the various versions for each engine,
-- the plans,
+- the various engines, with the various versions for each engine
+- the plans
 - and the flavors
 
 #### Get the Availability
@@ -64,13 +64,13 @@ Use this endpoint to create a new database cluster:
 - **description**: A human-readable description for the service you wish to create
 - **plan**: the desired plan for the service
 - **version**: the MongoDB version you want to use
-- **nodesPattern**: specify the nodes _flavor_ and _region_, and the number of nodes you want to use .
+- **nodesPattern**: specify the nodes _flavor_ and _region_, and the number of nodes you want to use
 - **nodeslist**: Leave this parameter undefined. It is another way to specify the list of nodes your cluster uses. As of today, multi-region and non flavor-homogenous clusters are not supported. Hence it's easier to use **nodePattern** to specify a number of same-region, same-flavor nodes.
 
 If you want to use public networking, you're all set. If you want to use private networking, you'll also want to specify:
 
-- **networkId**: The ID of the vRack you want to use, and
-- **subnetId**: The ID of the vRack subnet you want your cluster to be attached to.
+- **networkId**: The ID of the vRack you want to use
+- **subnetId**: The ID of the vRack subnet you want your cluster to be attached to
 
 The call returns an object describing the cluster you asked for. Initially, its **status** property will be `CREATING`. The **primaryUser** property lists the first provisioned user, with its initial password. That initial password won't be available again after this point. Take note of the **id** property of the newly-created cluster for the next step.
 
@@ -94,7 +94,7 @@ Declare the IP address blocks allowed to connect to your cluster with:
 > @api {POST} /cloud/project/{serviceName}/database/mongodb/{clusterId}/ipRestriction
 
 - **description** is a human-readable description or label for the IP block
-- **ip** is a string representing an IP block or network, using the syntax `aaa.bbb.ccc.ddd/xy` -- If you want to specify a single IP address, use `aaa.bbb.ccc.ddd/32`.
+- **ip** is a string representing an IP block or network, using the syntax `aaa.bbb.ccc.ddd/xy` -- If you want to specify a single IP address, use `aaa.bbb.ccc.ddd/32`
 
 You can add multiple allowed IP blocks.
 
