@@ -1,5 +1,5 @@
 ---
-title: 'E-mail Pro'
+title: 'Email Pro'
 slug: emails-pro
 sections: 'General, Email client configuration, Troubleshooting'
 ---
