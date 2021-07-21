@@ -92,7 +92,7 @@ Das Fenster ist in zwei Bereiche unterteilt, für **eingehende** und **ausgehend
 ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
 
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="gofurther"></a>
 
 [Konfiguration von E-Mail Pro auf Outlook 2016 für Windows](../../emails-pro/konfiguration-outlook-2016/)
 
