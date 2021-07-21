@@ -3,6 +3,7 @@ title: 'Définir et gérer le mot de passe de votre compte'
 slug: gerer-son-mot-de-passe
 excerpt: 'Apprenez à définir, modifier et gérer le mot de passe de votre espace client OVHcloud'
 section: 'Premiers pas'
+order: 4
 ---
 
 **Dernière mise à jour le 30/09/2020**
