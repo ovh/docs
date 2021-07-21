@@ -3,6 +3,7 @@ title: 'Gérer des utilisateurs'
 slug: gestion-utilisateurs
 excerpt: 'Découvrez comment ajouter des utilisateurs depuis votre compte OVHcloud'
 section: 'Premiers pas'
+order: 5
 ---
 
 **Dernière mise à jour le 30/01/2020**
