@@ -87,6 +87,9 @@ Within a few minutes your new database service will be deployed. Messages in the
 
 Please continue with the [Database Management guide](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/managing-service/) to configure your service after installation.
 
+> [!warning]
+> For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you [whitelist the suitable IP addresses](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/managing-service/#configuring-authorised-ips) in order to successfully access your database.
+
 ## Go further
 
 [MongoDB capabilities](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/capabilities/)

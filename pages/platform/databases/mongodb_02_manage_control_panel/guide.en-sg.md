@@ -71,6 +71,9 @@ You can restore and delete backups via the `...`{.action} button.
 
 ### Configuring authorised IPs
 
+> [!warning]
+> For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you whitelist the suitable IP addresses in order to successfully access your database.
+
 Switch to the tab `Authorised IPs`{.action}. IP addresses must be whitelisted here before they can connect to your database.
 
 ![Authorised IP](images/configure_mongo07.png){.thumbnail}
@@ -80,6 +83,7 @@ Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new 
 ![Add IP](images/configure_mongo08.png){.thumbnail}
 
 You can edit and retract database access via the `...`{.action} button in the IP table.
+
 
 ## Go further
 

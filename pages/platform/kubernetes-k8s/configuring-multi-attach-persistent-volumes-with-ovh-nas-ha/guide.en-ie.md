@@ -27,7 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated July 20<sup>th</sup>, 2020.**
+**Last updated July 20<sup>th</sup>, 2021.**
 
 ## Objective
 
@@ -79,7 +79,7 @@ In this example our `ZPOOL_IP` is `10.201.18.33`, our `ZPOOL_NAME` is `zpool-127
 
 Your Kubernetes cluster need some additionnal piece of software to make use of the NFS partition. We will install those and then create a first volume, shared accross multiple pods.
 
-First, let's create a `values.yaml` configuration file for the NFS client provisioner Helm installation:
+First, let's create a `values.yaml` configuration file for the NFS subdir external provisioner Helm installation:
 
 ```yaml
 nfs:
@@ -92,14 +92,15 @@ storageClass:
   name: nfs
 ```
 
-And then install the `nfs-client-provisioner`:
+And then install the [nfs-subdir-external-provisioner](https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner):
 
 ```bash
-helm install nfs-client-provisioner -n kube-system stable/nfs-client-provisioner -f values.yaml
+helm repo add nfs-subdir-external-provisioner https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner/
+helm install nfs-subdir-external-provisioner -n kube-system nfs-subdir-external-provisioner/nfs-subdir-external-provisioner -f values.yaml
 ```
 
-<pre class="console"><code>$ helm install nfs-client-provisioner -n kube-system stable/nfs-client-provisioner -f values.yaml
-NAME: nfs-client-provisioner
+<pre class="console"><code>$ helm install nfs-subdir-external-provisioner -n kube-system nfs-subdir-external-provisioner/nfs-subdir-external-provisioner -f values.yaml
+NAME: nfs-subdir-external-provisioner
 LAST DEPLOYED: Mon Jun  8 14:39:57 2020
 NAMESPACE: kube-system
 STATUS: deployed
@@ -110,12 +111,12 @@ TEST SUITE: None
 Let's verify our installation:
 
 ```bash
-kubectl get deploy nfs-client-provisioner -n kube-system
+kubectl get deploy nfs-subdir-external-provisioner -n kube-system
 ```
 
-<pre class="console"><code>$ kubectl get deploy nfs-client-provisioner -n kube-system
-NAME                     READY   UP-TO-DATE   AVAILABLE   AGE
-nfs-client-provisioner   1/1     1            1           36s
+<pre class="console"><code>$ kubectl get deploy nfs-subdir-external-provisioner -n kube-system
+NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
+nfs-subdir-external-provisioner   1/1     1            1           36s
 </code></pre>
 
 ### Step 3 - Create and use an NFS persistent volume
