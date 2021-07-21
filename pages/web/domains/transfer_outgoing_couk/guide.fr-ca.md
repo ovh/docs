@@ -1,67 +1,73 @@
 ---
-title: Transfert sortant d’un nom de domaine .co.uk
+title: "Transférer un nom de domaine .uk vers un autre bureau d'enregistrement"
 legacy_guide_number: 2225
 slug: transfert-sortant-dun-nom-de-domaine-couk
-excerpt: Vous trouverez dans ce guide differentes informations concernant le transfert sortant d’un nom de domaine ayant l’extension .co.uk ou assimilees vers un autre registrar.
+excerpt: "Découvrez comment effectuer le transfert sortant d’un nom de domaine UK vers un autre registrar"
 section: Transfert
 order: 5
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 12/07/2021**
 
-## Généralités
+## Objectif
 
-### Prérequis
-*Pour pouvoir réaliser un transfert de domaine .co.uk ou assimilés vers un autre registrar, assurez-vous qu'il respecte les prérequis suivants :*
+Le processus de changement de bureau d'enregistrement (*registrar*) pour les domaines de premier niveau (*top-level domain*, ou **TLD**) de l'indicatif de pays **UK** (**.uk**) diffère de celui détaillé dans notre [guide de transfert des TLD génériques](../transfert-sortant-dun-nom-de-domaine-generique-ou-geographique/). Les instructions ci-dessous concernent les extensions suivantes :
 
-- Votre domaine ne doit pas être suspendu
-- Votre domaine ne doit pas être avoir de litige en cours auprès de Nominet
-- Votre domaine ne doit pas être bloqué par OVHcloud
-
-
-### Extensions concernees
+- .uk
 - .co.uk
+- .ac.uk
+- .gov.uk
 - .me.uk
+- .net.uk
 - .org.uk
-- .ltd.uk
 - .plc.uk
-- .uk.
+- .sch.uk
 
+**Ce guide vous explique comment initier un transfert sortant pour ces TLD depuis votre espace client OVHcloud.**
 
-## Procedure
+## Prérequis
 
-### Étape 1 &#58; Verifications des informations du domaine
-Vous pouvez retrouver les informations à partir de votre Espace client accessible [ici](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Il faut vous connecter avec le contact administrateur.
+- Disposer d'un [nom de domaine .uk](https://www.ovh.com/ca/fr/domaines/) enregistré chez OVHcloud
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et disposer des droits nécessaires pour gérer le nom de domaine (être administrateur du domaine)
+- Le nom de domaine doit être toujours actif, c'est-à-dire qu'il ne doit pas avoir expiré ou être bloqué par OVHcloud
+- Le nom de domaine ne doit pas faire l’objet d’un litige en cours auprès du [Registre Nominet](https://www.nominet.uk/)
 
-- Une fois connecté, il vous suffit de cliquer sur votre nom de domaine en haut à gauche dans la partie Domaines , puis sur Informations générales .
+## En pratique
 
+Les TLD concernés disposent chacun d'une balise (*TAG*) correspondand à leur bureau d'enregistrement de noms de domaines actuel, tel qu’OVHcloud. Le transfert s'initie par la substitution du TAG par celui identifiant votre nouveau bureau d'enregistrement.
 
-![domains](images/4266.png){.thumbnail}
+Si vous ne connaissez pas encore le TAG requis, vous pouvez en faire la demande chez votre nouveau prestataire ou consulter la [liste des bureaux d'enregistrement Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/).
 
+### Étape 1 : vérifier les informations nécessaires
 
-### Étape 2 &#58; Modification du TAG de votre domaine
-- Cliquez ensuite sur "Tag de transfert sortant" .
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut à gauche. Cliquez sur `Noms de domaine`{.action} dans la colonne à gauche, puis choisissez le nom de domaine concerné.
 
+N'oubliez pas que vous devez être connecté en tant que contact administrateur.
 
-![domains](images/4267.png){.thumbnail}
+Dans l'onglet `Informations générales`{.action}, vous pouvez vérifier que les conditions requises pour le processus de transfert sont remplies.
 
-- Indiquer le TAG fourni par votre futur registrar, puis cliquez sur "valider" .
+![transfert sortant](images/img_4266.jpg){.thumbnail}
 
+### Étape 2 : modifier le TAG de votre nom de domaine
 
-![domains](images/4268.png){.thumbnail}
+Cliquez sur le lien `Tag de transfert sortant`{.action} dans la section intitulée **Sécurité**.
 
+![transfert sortant](images/img_4267.jpg){.thumbnail}
 
+Dans la fenêtre qui s'affiche, renseignez le TAG de votre nouveau bureau d'enregistrement puis cliquez sur `Confirmer`{.action}.
 
-> [!success]
->
-> Si pour une raison particulière vous ne pouvez pas effectuer la modification du
-> Tag de votre domaine dans votre espace client, vous pouvez effectuer une demande
-> auprès du Registre Nominet afin que ce dernier effectue la modification pour
-> vous.
-> Veuillez vous rediriger vers cette page du site du Registre : Manage your domain - Change registrar.
-> Attention, cette opération est facturée par Nominet.
-> 
+![transfert sortant](images/img_4268.jpg){.thumbnail}
 
+Si vous n'arrivez pas à modifier le TAG de votre nom de domaine depuis votre espace client, vous pouvez en demander la modification auprès du Registre Nominet. Retrouvez plus d’informations sur le [site officiel de Nominet](https://www.nominet.uk/domain-support/).
 
-### Étape 3 &#58; Transmettre les informations a votre nouveau prestataire de domaine
-Les étapes sont maintenant finies chez OVHcloud. Vous avez maintenant toutes les informations nécessaires pour transférer votre domaine.
+### Étape 3 : suivre le processus de transfert chez votre nouveau bureau d'enregistrement
+
+La modification de la balise TAG active le processus de transfert.
+
+Contactez dès lors votre nouveau fournisseur pour obtenir davantage de détails ainsi que pour toute question relative au suivi du transfert.
+
+## Aller plus loin
+
+[Transférer un nom de domaine vers un autre bureau d’enregistrement](../transfert-sortant-dun-nom-de-domaine-generique-ou-geographique/)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
