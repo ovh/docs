@@ -1,103 +1,109 @@
 ---
-title: 'Konfiguracja konta E-mail Pro w programie Outlook 2016 na systemie Windows'
+title: 'Konfiguracja konta E-mail Pro w programie Outlook na systemie Windows'
 slug: konfiguracja-outlook-2016
-excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook 2016 na urządzeniu z systemem Windows'
+excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook na urządzeniu z systemem Windows'
 section: 'Konfiguracja programu pocztowego'
 order: 1
 ---
 
-**Ostatnia aktualizacja dnia 2020-04-08**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 05-07-2021**
 
 ## Wprowadzenie
 
 Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji.
 
-**Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook 2016 na urządzeniu z systemem Windows.**
+**Dowiedz się, jak skonfigurować Twoje konto e-mail E-mail Pro w programie Outlook lub później na urządzeniu z systemem Windows.**
+ 
 
 > [!warning]
 >
-> OVHcloud udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
+> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
 > 
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external}
-- Zainstalowanie programu Microsoft Outlook 2016 na Twoim urządzeniu
+- Posiadanie konta e-mail [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external}
+- Posiadanie programu Microsoft Outlook lub późniejszego.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
-
-> [!primary]
->
-> Używasz programu Outlook 2016 na urządzeniu Mac? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta E-mail Pro w programie Outlook 2016 na urządzeniu Mac](https://docs.ovh.com/pl/emails-pro/konfiguracja-outlook-2016-mac/){.external}.
->
 
 ## W praktyce
 
-### Etap 1: dodanie konta
-
-> [!primary]
->
-> W przewodniku używamy oznaczenia serwera: pro**?**.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
-> 
-> Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Web Cloud`{.action} =>  `E-mail Pro`{.action} => w kolumnie po lewej stronie. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
->
-
-Po uruchomieniu aplikacji Outlook na Twoim urządzeniu możesz dodać konto, korzystając z jednej z dwóch dostępnych metod.
+### Dodaj konto
 
 - **Podczas pierwszego uruchomienia aplikacji**: wyświetli się asystent konfiguracji i poprosi o wpisanie adresu e-mail.
 
 - **Jeżeli inne konto zostało wcześniej skonfigurowane**: kliknij `Plik`{.action} na pasku menu na górze Twojego ekranu, a następnie kliknij `Dodaj konto`{.action}.
 
-![emailpro](images/configuration-outlook-2016-windows-step1.png){.thumbnail}
+- Wpisz hasło dla Twojego konta e-mail, po czym kliknij `Dalej`{.action}. Zaznacz kratkę obok komunikatu `Pozwól mi ręcznie skonfigurować moje konto `{.action}, a następnie kliknij `Połącz`{.action}. 
 
-Wpisz hasło dla Twojego konta e-mail, po czym kliknij `Dalej`{.action}. Zaznacz kratkę obok komunikatu `Pozwól mi ręcznie skonfigurować moje konto `{.action}, a następnie kliknij `Połącz`{.action}. Spośród różnych rodzajów kont wybierz **IMAP**.
+![Outlook](images/config-outlook-emailpro01.png){.thumbnail}
 
-![emailpro](images/configuration-outlook-2016-windows-step2.png){.thumbnail}
+> [!primary]
+>
+> Poniżej stosujemy przykładową nazwę serwera: pro**?**.mail.ovh.net. Chcesz zastąpić "? "cyfrą wskazującą serwer Twojej usługi E-mail Pro.
+> 
+> Zapoznaj się z tą cyfrą w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w sekcji `Web Cloud`{.action}, a następnie w sekcji `E-mail Pro`{.action}
+>  w lewej kolumnie. Nazwa serwera jest widoczna w ramce **Połączenie** w karcie `Informacje ogólne`{.action}.
+> 
 
-Podaj następnie wymagane informacje.
-
-- **dla poczty przychodzącej:**
-
-|Informacja|Opis |
+| | |
 |---|---|
-|Serwer|Wpisz serwer « pro**?**.mail.ovh.net ».|
-|Port|Wskaż port « 993 ».|
-|Metoda szyfrowania|Wybierz « SSL/TLS ».|
-|Wymaganie uwierzytelnienia|Nie zaznaczaj kratki « Wymagaj logowania przy użyciu bezpiecznego uwierzytelniania hasła » .|
+|![Outlook](images/config-outlook-emailpro02.png){.thumbnail}|Spośród różnych rodzajów kont wybierz IMAP i POP. <br>Rekomendujemy użycie protokołu IMAP.|
+|Wpisz hasło przypisane do Twojego konta e-mail, po czym kliknij `Dalej`{.action}. |![Outlook](images/config-outlook-emailpro03.png){.thumbnail}|
+|![Outlook](images/config-outlook-emailpro04.png){.thumbnail}|Jeśli program Outlook nie jest w stanie automatycznie skonfigurować Twojego konta, wyświetli się to okno. <br>Kliknij `Zmień parametry konta`{.action} |
+|Wpisz w **wiadomości przychodzącej**: <br>- serwer **pro**?**.mail.ovh.net** (zastąp "**?**" numerem serwera) <br>- Port **993**<br>- Metoda szyfrowania **SSL/TLS**<br><br>Wpisz w **poczty wychodzącej**: <br>- serwer **pro**?**.mail.ovh.net** (zastąp "**?**" numerem serwera)<br>- Port **465**<br>- Metoda szyfrowania **SSL/TLS**<br><br>Kliknij `Dalej`{.action}, aby zatwierdzić. |![Outlook](images/config-outlook-emailpro05.png){.thumbnail}|
 
-- **dla poczty wychodzącej:**
 
-|Informacja|Opis |
-|---|---|
-|Serwer|Wpisz serwer « pro**?**.mail.ovh.net ».|
-|Port|Wskaż port « 587 ».|
-|Metoda szyfrowania|Wybierz « STARTTLS ».|
-|Wymaganie uwierzytelnienia|Nie zaznaczaj kratki « Wymagaj logowania przy użyciu bezpiecznego uwierzytelniania hasła » .|
-
-Po uzupełnieniu informacji kliknij przycisk `Dalej`{.action}, następnie wprowadź **hasło** przypisane do konta e-mail. Jeśli wpisane informacje są poprawne, logowanie zakończy się sukcesem.
-
-Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skonfigurowane.
-
-![emailpro](images/configuration-outlook-2016-windows-step3.png){.thumbnail}
-
-Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajdziesz parametry, których należy użyć w przypadku oferty E-mail Pro:
+W przypadku konfiguracji **POP** wartości są następujące:
 
 |Typ serwera|Nazwa serwera|Metoda szyfrowania|Port|
 |---|---|---|---|
-|Serwer poczty przychodzącej|pro**?**.mail.ovh.net|SSL/TLS|993|
-|Serwer poczty wychodzącej|pro**?**.mail.ovh.net|STARTTLS|587|
+|Serwer poczty przychodzącej|pro**?**.mail.ovh.net (nazwa **"?"** należy zastąpić numerem serwera)|SSL/TLS|995|
+|Serwer poczty wychodzącej|pro**?**.mail.ovh.net (nazwa **"?"** należy zastąpić numerem serwera)|STARTTLS|587|
 
-### Etap 2: korzystanie z konta e-mail
+### Użyj konta e-mail
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową [funkcje do pracy zespołowej](https://www.ovh.pl/emaile/){.external}. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, zapoznaj się z naszym przewodnikiem [Sprawdź konto Exchange w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/).
+
+### Pobierz kopię zapasową Twojego konta e-mail
+
+Jeśli musisz wykonać operację, która może spowodować utratę danych przypisanych do Twojego konta e-mail, zalecamy wykonanie kopii zapasowej odpowiedniego konta e-mail. W tym celu zapoznaj się z sekcją "**Eksport z systemu Windows**" w przewodniku [Ręczna migracja Twojego konta e-mail](https://docs.ovh.com/pl/emails/przenoszenie-kont-e-mail/#eksport-z-systemu-windows).
+
+### Zmień istniejące parametry
+
+Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do parametrów konta, aby je zmienić:
+
+- Przejdź do `Pliku`{.action} z paska menu na górze ekranu, a następnie wybierz konto, które chcesz zmienić w rozwijanym menu **(1)**.
+- Kliknij `Parametry konta`{.action}**(2)** poniżej.
+- Kliknij `Ustawienia serwera`{.action}**(3)**, aby uzyskać dostęp do okna parametrów.
+
+![Outlook](images/config-outlook-emailpro06.png){.thumbnail}
+
+Okno jest podzielone na dwie części, **Poczta przychodząca** i **Wychodząca**. Kliknij na którąś z nich, aby je zmienić.
+
+> [!primary]
+>
+> Poniżej stosujemy przykładową nazwę serwera: pro**?**.mail.ovh.net. Chcesz zastąpić "? "cyfrą wskazującą serwer Twojej usługi E-mail Pro.
+> 
+> Zapoznaj się z tą cyfrą w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w sekcji `Web Cloud`{.action}, a następnie w sekcji `E-mail Pro`{.action}
+>  w lewej kolumnie. Nazwa serwera jest widoczna w ramce **Połączenie** w karcie `Informacje ogólne`{.action}.
+> 
+
+![Outlook](images/config-outlook-emailpro07.png){.thumbnail}
+
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail, zawartego w usłudze usłudze MX Plan lub usłudze hostingu, w programie Outlook na urządzeniu z systemem Windows](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016/){.external}
+[Konfiguracja konta e-mail w Outlook 2016 na urządzeniu z systemem Windows](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016/){.external}.
 
-[Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniu z systemem Windows](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-outlook-2016/){.external}
+[Konfiguracja konta Exchange w Outlook 2016 na systemie Windows](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-outlook-2016/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

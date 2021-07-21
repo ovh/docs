@@ -1,96 +1,94 @@
 ---
-title: 'Configurare un account email su Outlook 2016 per Windows'
+title: 'Configurare un account email su Outlook per Windows'
 slug: configurazione-outlook-2016
-excerpt: 'Scopri come configurare un indirizzo email MX Plan su Outlook 2016 per Windows'
+excerpt: 'Scopri come configurare un indirizzo email MX Plan su Outlook per Windows'
 section: Outlook
 ---
 
-**Ultimo aggiornamento: 24/08/2018**
+ 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+ 
+**Ultimo aggiornamento: 05/06/2021**
 
 ## Obiettivo
 
-Gli indirizzi email MX Plan possono essere configurati su un programma di posta elettronica compatibile. Ciò ti consente di inviare e ricevere messaggi dall’applicazione che preferisci.
+Gli account MX Plan possono essere configurati su client di posta compatibili, per permetterti di utilizzare il tuo account email dal dispositivo che preferisci.
 
-**Questa guida ti mostra come configurare il tuo indirizzo email MX Plan su Outlook 2016 per Windows.**
+**Questa guida ti mostra come configurare il tuo indirizzo email MX Plan su Outlook 2016 o successivo per Windows.**
+
+
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> 
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVH non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> 
+
 
 ## Prerequisiti
 
-- Disporre di un indirizzo email MX Plan (incluso in una soluzione MX Plan o in un [piano di hosting Web OVH](https://www.ovh.it/hosting-web/){.external})
-- Aver installato il programma Microsoft Outlook 2016 sul tuo dispositivo
-- Disporre delle credenziali associate all’account email da configurare
-
+- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovh.it/hosting-web/){.external}
+- Disporre di un software Microsoft Outlook 2016 o successivo
+- Disporre delle credenziali associate all’indirizzo email da configurare
+ 
 > [!primary]
 >
-> Se utilizzi una versione precedente di Outlook per Windows, consulta la nostra guida per [Outlook 2007](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_outlook_2007/){.external} o per [Outlook 2010](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_outlook_2010/){.external}
->
-> Se utilizzi Outlook 2016 per Mac, Consulta la nostra guida per [Configurare un indirizzo email su Outlook 2006 per Mac](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/){.external}. 
+> Utilizzi Outlook 2016 per Mac? Consulta la nostra guida:  [Configurare un indirizzo e-mail su Outlook 2006 per Mac](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/). 
 >
 
 ## Procedura
 
-### Step 1: aggiungi il tuo account
+### Aggiungi l'account
 
-Una volta avviata l’applicazione Outlook sul tuo dispositivo, puoi aggiungere un nuovo account in due modi diversi.
+- Durante il primo avvio dell’applicazione un assistente di configurazione apparirà sullo schermo e ti inviterà a inserire il tuo indirizzo e-mail.
 
-- **Al primo avvio dell’applicazione** compare un wizard che ti invita ad inserire il tuo indirizzo email
+- **Se hai già configurato un account**, clicca su `File`{.action} nella barra dei menù in alto nello schermo e poi su `Aggiungi account`{.action}.
 
-- **Se hai già configurato un account** clicca su `File`{.action} nella barra del menu in alto e poi su `Aggiungi account`{.action}
+- Ora inserisci il tuo indirizzo e-mail e clicca su Opzioni avanzate.  Selezione la voce accanto a Configurare il mio account manualmente appena comparsa e clicca su Connetti 
 
-![mxplan](images/configuration-outlook-2016-windows-step1.png){.thumbnail}
+![Outlook](images/config-outlook-mxplan01.png){.thumbnail}
 
-Ora inserisci il tuo indirizzo email e clicca su `Opzioni avanzate`{.action}. Seleziona la voce accanto a `Configurare il mio account manualmente`{.action} e clicca su `Connetti`{.action}.
-
-Tra i diversi tipi di account scegli tra IMAP e POP, anche se ti suggeriamo di utilizzare IMAP. Puoi anche selezionare POP per l’archiviazione totale delle email sul tuo programma Outlook.
-
-![mxplan](images/configuration-outlook-2016-windows-step2.png){.thumbnail}
-
-Compila i campi richiesti:
-
-- per la posta in entrata
-
-|Informazione|Descrizione|
+| | |
 |---|---|
-|Server|Inserisci il server 'ssl0.ovh.net'|
-|Porta|Indica la porta '993'|
-|Metodo di cifratura|Seleziona 'SSL/TLS'|
-|Richiedere l’autorizzazione |Non selezionare la voce 'Richiedere l’autenticazione tramite password sicura (SPA) durante la connessione'|
+|![Outlook](images/config-outlook-mxplan02.png){.thumbnail}|Tra i diversi tipi di account, scegli tra IMAP e POP. <br>Ti consigliamo di utilizzare IMAP|
+|Inserisci la password del tuo indirizzo email e clicca su `Avanti`{.action}. |![Outlook](images/config-outlook-mxplan03.png){.thumbnail}|
+|![Outlook](images/config-outlook-mxplan04.png){.thumbnail}|Se Outlook non è riuscito a configurare automaticamente il tuo indirizzo, visualizzi questa finestra. <br>Clicca su `Modifica le impostazioni dell'account`{.action} |
+|Inserisci nella **Posta in entrata**: <br>- il server **ssl0.ovh.net** <br>- Port **993**<br>- Crittografia **SSL/TLS**<br><br>Inserisci nella **Posta in uscita**: <br>- il server **ssl0.ovh.net** <br>- Port **465**<br>- Crittografia **SSL/TLS**<br><br>Clicca su `Seguente`{.action} per confermare l'operazione. |![Outlook](images/config-outlook-mxplan05.png){.thumbnail}|
 
-- per la posta in uscita:
 
-|Informazione|Descrizione|
-|---|---|
-|Server|Inserisci il server 'ssl0.ovh.net'|
-|Porta|Indica la porta '465'|
-|Metodo di cifratura|Seleziona 'SSL/TLS'|
-|Richiedere l’autorizzazione|Non selezionare la voce 'Richiedere l’autenticazione tramite password sicura (SPA) durante la connessione'|
+Nell'ambito di una configurazione in **POP**, i valori sono i seguenti:
 
-Una volta inserite le informazioni, clicca su `Avanti`{.action} e inserisci la password dell’indirizzo email. Se le informazioni inserite sono corrette, l’accesso all’account andrà a buon fine.
-
-Per verificare la corretta configurazione dell’account esegui un test di invio.
-
-![mxplan](images/configuration-outlook-2016-windows-step3.png){.thumbnail}
-
-Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco i parametri da utilizzare con il nostro servizio MX Plan: 
-
-- **per una configurazione IMAP**
-
-|Tipo di server |Nome del server|Metodo di cifratura|Porta|
-|---|---|---|---|
-|In entrata|ssl0.ovh.net|SSL/TLS|993|
-|In uscita|ssl0.ovh.net|SSL/TLS|465|
-
-- **per una configurazione POP**
-
-|Tipo di server |Nome del server|Metodo di cifratura|Porta|
+|Tipo di server|Nome del server|Metodo di cifratura|Porta|
 |---|---|---|---|
 |In entrata|ssl0.ovh.net|SSL/TLS|995|
 |In uscita|ssl0.ovh.net|SSL/TLS|465|
 
-### Step 2: utilizza il tuo account
+### Utilizza l'indirizzo email
 
-Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
+Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-OVH propone anche un’applicazione Web disponibile alla pagina [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} e accessibile con le credenziali del tuo indirizzo email.
+OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. disponibile alla pagina <https://www.ovh.it/mail/> accessibile utilizzando le credenziali del tuo account. Per maggiori informazioni sul suo utilizzo, consulta la guida [Consultare il suo account Exchange dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/).
+
+### Recuperare un backup del tuo indirizzo email
+
+Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione, consulta il paragrafo "**Esporta da Windows**" nella nostra guida [Migrare manualmente il tuo indirizzo email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/#esporta-da-windows).
+
+### Modifica i parametri esistenti
+
+Se il tuo account email è già configurato e devi accedere alle impostazioni dell'account per modificarle:
+
+- Accedi al `File`{.action} dalla barra dei menu in alto nello schermo e seleziona l'account da modificare nel menu a tendina **(1)**.
+- Clicca su `Impostazioni dell'account`{.action}**(2)** sotto.
+- Clicca su `Impostazioni del server`{.action}**(3)** per accedere alla finestra delle impostazioni.
+
+![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
+
+La finestra è divisa in due parti: **Posta in entrata** e **Posta in uscita**. Clicca sull'uno o sull'altro per poterli modificare.
+
+![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+
 
 ## Per saperne di più
 
@@ -98,4 +96,4 @@ OVH propone anche un’applicazione Web disponibile alla pagina [https://www.ovh
 
 [Configurare un account Exchange su Outlook 2016 per Windows](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-exchange-outlook-2016-windows/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
