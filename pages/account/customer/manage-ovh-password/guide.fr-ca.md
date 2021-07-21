@@ -17,6 +17,7 @@ Le mot de passe de votre espace client OVHcloud est la clé d'accès à tous vos
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
+
 - Disposer d'un compte OVHcloud actif.
 - Connaître votre identifiant client et/ou votre adresse e-mail.
 
@@ -49,7 +50,7 @@ La Commission nationale de l'informatique et des libertés (CNIL) propose égale
 
 Pour en savoir plus, reportez-vous à la section [Aller plus loin](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#aller-plus-loin_2){.external} en bas de ce guide.
 
-### Utiliser un gestionnaire de mots de passe 
+### Utiliser un gestionnaire de mots de passe
 
 Des logiciels spécifiques permettent de sauvegarder et sécuriser votre mot de passe d'accès au compte OVHcloud.
 
@@ -74,7 +75,6 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 ### Modifier votre mot de passe
 
-
 #### Depuis votre espace client OVHcloud
 
 - Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur votre nom en haut à droite dans votre espace client, puis sur vos initiales.
@@ -94,7 +94,6 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 ![manage-ovh-password](images/account-password-modif-manager-step4.png){.thumbnail}
 
 - Un message vous indiquant le succès de l’opération s’affiche alors. Cliquez sur le bouton `Continuer`{.action} en bas ce ce message pour être redirigé vers la page d’identification. Renseignez alors votre identifiant et votre nouveau mot de passe.
-
 
 #### Si vous ne connaissez plus votre mot de passe actuel
 
@@ -117,9 +116,9 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 - Un message vous indiquant le succès de l’opération s’affiche alors. Cliquez sur le bouton `Continuer`{.action} en bas ce ce message pour être redirigé vers la page d’identification. Renseignez alors votre identifiant et votre nouveau mot de passe.
 
 > [!primary]
-> 
+>
 > La prise en compte du changement du mot de passe entraîne automatiquement la fermeture de toutes les sessions actives sur votre compte OVHcloud.
-> 
+>
 
 ## Aller plus loin
 
@@ -133,6 +132,4 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 [Le gestionnaire de mots de passe Keepass](https://keepass.info/){.external}
 
-
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>`
-
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

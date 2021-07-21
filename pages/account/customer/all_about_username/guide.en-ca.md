@@ -1,98 +1,87 @@
 ---
-title: 'Creating, using and managing your customer ID (NIC handle)'
+title: 'Securing my OVHcloud account and managing my personal information'
 slug: all-about-your-username
-excerpt: 'Find out how to create a NIC handle and manage your personal details'
-Section: 'Getting started'
+excerpt: 'Find out how to optimise your OVHcloud account security, manage your personal information, and delegate access to your account'
+section: 'Getting started'
+order: 3
 ---
 
-**Last updated 10th April 2020**
+**Last updated 1st July 2021**
 
 ## Objective
 
-Your customer ID is what you will need to use in order to:
+Your data and services are mainly managed via the OVHcloud Control Panel.
+It is therefore essential to adopt best practices for managing your account in order to secure and maintain access to it.
 
-- place orders online
-- manage all of your services easily via the OVHcloud Control Panel
-- specify your customer account when you contact OVHcloud support, so that they can answer your queries
+You can also use the OVHcloud Control Panel to manage your personal data, and delegate access to your services to other users.
 
-It is usually made up of two letters, followed by numbers. E.g.: **xx11111-ovh**.
+**Find out about best practices for managing your account and personal data.**
 
-At OVHcloud, it is known as a NIC handle. 
+## Requirements
 
-**Find out how to create your NIC handle, log in to your account, manage your personal details and access to your account.**
-
-
-## How to create a NIC handle
-
-If you do not have a NIC handle yet, go to the page for [creating an OVHcloud account](https://ca.ovh.com/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=CA){.external}. 
-
-Fill in the online form, and please ensure you use a **valid email address**.
+- an [OVHcloud account](https://docs.ovh.com/ca/en/customer/create-ovhcloud-account/)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 > [!primary]
->
-> Please enter an email address that is not linked to your domain name, as well as a backup email address. The backup email address **must be different from** the primary email address. 
-> 
+> If you experience any difficulties logging in to your account, please read the “[What do I do if I can't log in?](https://docs.ovh.com/ca/en/customer/log-in-to-ovhcloud-control-panel#login-failure)” section of our guide on [Logging in to the OVHcloud Control Panel](https://docs.ovh.com/ca/en/customer/log-in-to-ovhcloud-control-panel).
 
-Once you have completed the form, you will receive an email confirming that your account has been created. Please make sure that you note down your NIC handle, and above all, store your password in a safe place (e.g. a password manager). 
+## Instructions
 
-To improve security for your account, we recommend:
+This guide details:
 
-- Reading our guide on [setting and managing an account password](../manage-password/).
-- Securing access to your account by setting up two-factor authentication. This guide will explain how to enable it: [Securing your OVHcloud account with two-factor authentication](../secure-account-with-2FA/).
+- [OVHcloud account security and management best practices](#best-practices)
+- [How to manage and update your personal data](#personal-information)
+- [How to securely delegate access to your OVHcloud account](#delegation)
 
-## How to find your NIC handle
+### OVHcloud account management best practices <a name="best-practices"></a>
 
-You will always be asked to provide your NIC handle when you log in to your account, and when you contact the OVHcloud support team. There are different ways of finding it.
+The best practices listed below should be applied as soon as you create your OVHcloud account, to optimise security for your services and data.
 
-### In OVHcloud emails
+### Creating a strong, unique password
 
-Your NIC handle is included in the account creation confirmation email, order confirmation emails and renewal emails, as well as account login notifications.
+The security of your services and data depends on the efficiency of your password. It must be **complex, unique and regularly renewed**.
 
+You can find all of our password recommendations in our guide on [Setting and managing an account password](https://docs.ovh.com/ca/en/customer/manage-password/).
 
-### On your bills
+#### Saving your password
 
-Your NIC handle is in the top right-hand corner of all your bills.
-
-![NIC handle](images/nichandle01b.png){.thumbnail}
-
-
-### In the Control Panel
-
-You can view your NIC handle in the OVHcloud Control Panel by clicking your name in the top right-hand corner.
-
-![NIC handle](images/newhub1.png){.thumbnail}
-
-By clicking on your initials, you will also be able to find the `client code` that can be requested by our support teams.
-
-![NIC handle](images/customercode1.png){.thumbnail}
-
-## How to log in to the OVHcloud Control Panel
-
-Go to the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and enter your NIC handle and password.
-
-![NIC handle](images/nichandle03.png){.thumbnail}
-
-If your login attempts are unsuccessful, you will need to follow the [two-factor authentication](../secure-account-with-2FA/) procedure. This additional layer of security on your account complements your username-password couple, and is managed via a device you own: e.g. a smartphone, tablet, or security key.
+If you have not already done so, save your password in a [password manager](https://docs.ovh.com/ca/en/customer/manage-password/#use-a-password-manager) .
 
 > [!primary]
-> If you have not set up two-factor authentication on your account, you may be asked to enter a verification code in order to confirm your identity. The verification code is sent to the **primary email address** listed on your account.  
->
-> If you cannot find the email containing this code, please check your spam/junk email folders.
+> The **Keepass** and **Bitwarden** software are free and open-source password managers.
 >
 
-### What to do if you have forgotten your password
+#### Adding a backup email address <a name="backup-email"></a>
 
-If you have lost or forgotten your password, please follow [this guide detailing the steps to take in order to change it](../manage-password/#if-you-have-forgotten-your-current-password).
+If you experience any issues accessing your primary email address, a backup email address will help you retain access to your account, and manage your services as a result.
+<br>This second address **must be different** from the first, in particular to facilitate your procedures in case of password recovery.
 
-### What to do if you cannot access your email address
+To enter this backup email address, click on your name in the top right-hand corner of your account, then click on your initials.
 
-If you have entered a backup email address, you can [contact the OVHcloud support team](https://www.ovhcloud.com/en/contact/)  and request for them to set your backup email as your primary email address. Once this action has been completed, please ensure that you enter a new backup email address.
+Then, in the `My profile` box, click the `...`{.action} button, then `Edit my profile`{.action}.
 
-## How to manage your personal details
+![backup email address](images/edit-profile.png){.thumbnail}
 
-### Change your personal details
+> [!warning]
+> As a reminder, it is **essential** that the backup email address is **different** from the account’s main email address.
+>
+> Avoid using email addresses linked to a domain name that you manage from your Control Panel. If your domain is blocked, you will no longer receive our notifications.
+>
 
-You can change your account information via the Control Panel. To do this, click on your name in the top right-hand corner of the OVHcloud Control Panel, then click your initials.
+#### Enabling two-factor authentication
+
+Two-factor authentication increases security for your OVHcloud account.
+
+You can find all the details to enable it in our guide on [Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/ca/en/customer/secure-account-with-2FA/).
+
+> [!primary]
+> Enabling two-factor authentication on your OVHcloud account is a mandatory requirement for compliance with the [HDS certification](https://www.ovhcloud.com/en-ca/enterprise/certification-conformity/hds/).
+
+### How to manage your personal details <a name="personal-information"></a>
+
+### Changing your personal details
+
+You can change your account information via the Control Panel. To do this, click on your name in the top right-hand corner of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), then click on your initials.
 
 ![NIC handle](images/newhub2.png){.thumbnail}
 
@@ -104,20 +93,20 @@ Edit your details, then click `Confirm`{.action} .
 
 > [!warning]
 >
-> It is highly important to keep your details **up-to-date** and **accurate**. You will be asked to provide your details when you get in touch with the OVHcloud support team, and there may be instances where you are required to provide proof that your details are accurate (e.g. proof that your address is identical to the address detailed on the account. This may be requested when you follow the email address change procedure).
+> It is highly important to keep your details **up-to-date** and **accurate**. You will be asked to provide your details when you get in touch with the OVHcloud support team, and there may be instances where you are required to provide proof that your details are accurate (such as proof that your address is identical to the address detailed on the account. This may be requested when you follow the email address change procedure).
 >
 
-### Change your primary email address
+### Changing your primary email address
 
-If you would like to change your primary contact email address, you will need to validate it using a code sent to your current primary contact email address. Once you have received the code, click the “I have received my validation code” button.
+If you would like to change your primary contact email address, you will need to validate it using a code sent to your current primary contact email address. Once you have received the code, click the `I have received my validation code`{.action} button.
 
 ![NIC handle](images/nichandle07.png){.thumbnail}
 
-Next, enter the code into the “Validation code” section, and click “Confirm”.
+Next, enter the code into the `Validation code` section, and click `Confirm`{.action}.
 
 ![NIC handle](images/nichandle08.png){.thumbnail}
 
-### Account type change
+#### Changing the account type
 
 Click on the `Type of account` button when you edit your profile. A drop-down menu allows you to define the type of account corresponding to your situation.
 
@@ -125,13 +114,13 @@ Click on the `Type of account` button when you edit your profile. A drop-down me
 
 Once you have entered this information, click the `Confirm`{.action} button.
 
-### Exercise your personal data rights
+#### Exercising your personal data rights
 
-In compliance with the General Data Protection Regulation (GDPR), you can request to exercise the rights associated with personal data concerning you by completing [this form](https://www.ovh.co.uk/personal-data-protection/exercising-your-rights){.external}.
+In compliance with the General Data Protection Regulation (GDPR), you can request to exercise the rights associated with personal data concerning you by using [this form](https://www.ovh.co.uk/personal-data-protection/exercising-your-rights).
 
-### Delete your NIC handle
+#### Deleting your NIC handle
 
-You can request for your NIC handle and all of the data associated with it to be deleted by filling in the [form for exercising GDPR rights](https://www.ovh.co.uk/personal-data-protection/exercising-your-rights){.external} and selecting “Right of deletion”.
+You can request for your NIC handle and all of the data associated with it to be deleted by filling in the [form for exercising GDPR rights](https://www.ovh.co.uk/personal-data-protection/exercising-your-rights) and selecting “Right of deletion”.
 
 > [!warning]
 >
@@ -141,27 +130,33 @@ To delete your NIC handle, you will need to meet the following conditions:
 >
 > - Your account must not have any outstanding bills or unpaid orders.
 >
->
 
-## Manage access to your account
+### Managing access to your account <a name="delegation"></a>
 
-Please do not share and/or divulge your account details to anyone else.
+We advise to never share your account details.
 
-However, you may find that you want to delegate third-party access to your OVHcloud services. The third parties could be members of your company (e.g. your company’s webmaster), or independent entities (e.g. an accounting firm).
+However, you may find that you need to delegate third-party access to your OVHcloud services. The third parties could be members of your company (for example a webmaster or a proxy), or independent entities (for example an accounting firm or IT developers).
 
-In this scenario, OVHcloud can enable you to give access to your account while protecting your credentials (password, two-factor authentication).
+In this scenario, OVHcloud enables you to grant access to your account while protecting your credentials (password and two-factor authentication).
 
-### Create users.
+#### Creating users
 
 A user can have read or write access to your account, or all of your services. You can create, manage and delete these users via the OVHcloud Control Panel. To find out more, please refer to our [guide on user management](../managing-users/).
-
 
 ## What to do in the event of identity theft
 
 If you receive an email notifying you of an unknown connection to your OVHcloud account, we advise [changing your account password immediately](../manage-password/#change-your-password) and [securing it with two-factor authentication](../secure-account-with-2FA/).
 
-If you observe any suspicious activity on your account, [contact OVHcloud support](https://www.ovhcloud.com/en/contact/), and our team can help guide you on the steps you need to take.
+If you observe any suspicious activity on your account, please inform our support team by creating a support request in your [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
 
 ## Go further
+
+[Setting and managing an account password](https://docs.ovh.com/ca/en/customer/manage-password/)
+
+[Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/ca/en/customer/secure-account-with-2FA/)
+
+[Logging in to the OVHcloud Control Panel](https://docs.ovh.com/ca/en/customer/log-in-to-ovhcloud-control-panel)
+
+[What do I do if I can't log in?](https://docs.ovh.com/ca/en/customer/log-in-to-ovhcloud-control-panel/#login-failure)
 
 Join our community of users on <https://community.ovh.com/en/>.

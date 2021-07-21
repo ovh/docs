@@ -155,4 +155,12 @@ If you observe any suspicious activity on your account, please inform our suppor
 
 ## Go further
 
+[Setting and managing an account password](https://docs.ovh.com/ie/en/customer/manage-password/)
+
+[Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/ie/en/customer/secure-account-with-2FA/)
+
+[Logging in to the OVHcloud Control Panel](https://docs.ovh.com/ie/en/customer/log-in-to-ovhcloud-control-panel)
+
+[What do I do if I can't log in?](https://docs.ovh.com/ie/en/customer/log-in-to-ovhcloud-control-panel/#login-failure)
+
 Join our community of users on <https://community.ovh.com/en/>.
