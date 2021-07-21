@@ -1,7 +1,7 @@
 ---
-title: 'E-mail Pro'
+title: 'Email Pro'
 slug: emails-pro
-excertp: 'All you need to know about E-mail Pro'
+excertp: 'All you need to know about Email Pro'
 sections: 'General, Email client configuration, Troubleshooting'
 ---
 

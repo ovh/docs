@@ -22,7 +22,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 ## Requirements
 
 
-- an [OVHcloud Exchange account](https://www.ovh.ie/emails/hosted-exchange/){.external}
+- an [OVHcloud Exchange account](https://www.ovh.com/world/emails/hosted-exchange/){.external}
 - Microsoft Outlook 2016 or later installed on your device
 - login credentials for the email account to be configured
 - The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](../microsoft-collaborative-solutions/adding-domain-exchange/).
@@ -56,7 +56,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 > 
 > ![Exchange](images/config-outlook-exchange03.png){.thumbnail}
 >
-> We recommend that you check the configuration of the domain name associated with your Exchange service. In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Associated domains`{.action} tab and check the `Diagnostic`{.action} column of the table.
+> We recommend that you check the configuration of the domain name associated with your Exchange service. In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Associated domains`{.action} tab and check the `Diagnostic`{.action} column of the table.
 >
 
 - If your domain name’s configuration is valid, you may receive a login authorisation message for your OVHcloud servers. Accept this to allow your Exchange account to be configured automatically.
@@ -69,7 +69,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-Your Exchange email address and all of its collaborative features are also available via the [OWA interface](https://www.ovh.ie/mail/). If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](../exchange_2016_outlook_web_app_user_guide/).
+Your Exchange email address and all of its collaborative features are also available via the [OWA interface](https://www.ovh.com/world/mail/). If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](../exchange_2016_outlook_web_app_user_guide/).
 
 ### Retrieving a backup of your email address
 
@@ -79,7 +79,5 @@ If you need to make a change that could lead to the loss of your email account d
 ## Go further <a name="gofurther"></a>
 
 [Configuring your MX Plan address in Outlook for Windows](../../emails/configuration-outlook-2016/)
-
-[Configuring your Email Pro account in Outlook 2016 for Windows](../../emails-pro/configuration-outlook-2016/)
 
 Join our community of users on <https://community.ovh.com/en/>.
