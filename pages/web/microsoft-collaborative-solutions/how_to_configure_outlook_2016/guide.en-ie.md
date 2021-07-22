@@ -25,7 +25,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 - an [OVHcloud Exchange account](https://www.ovh.ie/emails/hosted-exchange/){.external}
 - Microsoft Outlook 2016 or later installed on your device
 - login credentials for the email account to be configured
-- The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](../microsoft-collaborative-solutions/adding-domain-exchange/).
+- The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](../adding-domain-exchange/).
 
 > [!primary]
 >
@@ -73,7 +73,7 @@ Your Exchange email address and all of its collaborative features are also avail
 
 ### Retrieving a backup of your email address
 
-If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](../migrate-email-addresses-manually/#exporting-from-windows).
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](../../emails/migrate-email-addresses-manually/#exporting-from-windows).
 
 
 ## Go further <a name="gofurther"></a>

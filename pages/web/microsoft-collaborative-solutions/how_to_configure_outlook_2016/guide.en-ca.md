@@ -26,11 +26,11 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 - an [OVHcloud Exchange account](https://www.ovh.com/ca/en/emails/hosted-exchange/){.external}
 - Microsoft Outlook 2016 or later installed on your device
 - login credentials for the email account to be configured
-- The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](../microsoft-collaborative-solutions/adding-domain-exchange/).
+- The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](../adding-domain-exchange/).
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Mac? Refer to our documentation: [Configuring your Exchange account in Outlook 2016 for Mac.](../configuration-outlook-2016-mac/)
+> Are you using Outlook 2016 for Mac? Refer to our documentation: [Configuring your Exchange account in Outlook 2016 for Mac.](../exchange-configuration-outlook-2016-mac/)
 >
 
 ## Instructions
@@ -41,7 +41,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 - **If you have already added an account**: Click `File`{.action} in the menu bar at the top of your screen, then `Add account`{.action}.
 
-- Enter your email address, then click `Advanced options`{.action}. Tick the box next to `Let me set up my account manually`{.action}, then click `Connect`{.action}. 
+- Enter your email address, then click `Advanced options`{.action}. Tick the box next to `Let me set up my account manually`{.action}, then click `Connect`{.action}.
 
 ![Exchange](images/config-outlook-exchange01.png){.thumbnail}
 
@@ -74,7 +74,7 @@ Your Exchange email address and all of its collaborative features are also avail
 
 ### Retrieving a backup of your email address
 
-If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](../migrate-email-addresses-manually/#exporting-from-windows).
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](../../emails/migrate-email-addresses-manually/#exporting-from-windows).
 
 
 ## Go further <a name="gofurther"></a>
