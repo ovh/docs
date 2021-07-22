@@ -1,63 +1,83 @@
 ---
-title: Transferência de saída de um domínio .co.uk
-excerpt: Transferência de saída de um domínio .co.uk
+title: "Transferir um domínio .uk para outro agente de registo"
 slug: transferencia_de_saida_de_um_dominio_couk
-legacy_guide_number: g2225
+excerpt: "Saiba como transferir um domínio UK para outro registar"
+section: Transferência
+order: 5
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Pré-requisitos
-Para poder efetuar a transferência de um domínio .co.uk, ou simular, para outra entidade registar, assegure-se que respeita os seguintes pré-requisitos:
+**Última atualização: 12/07/2021**
 
+## Objetivo
 
-- O seu domínio não deve estar expirado.
+O processo de mudança de agente de registo (*registar*) para os domínios de primeiro nível (*top-level domain*, ou **TLD**) do indicativo de país **UK** (**.uk**) difere do que é detalhado no nosso [guia de transferência dos TLD genéricos](../transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico/). As seguintes instruções dizem respeito às seguintes extensões:
 
-
-
-
-## Extensões afetadas:
-
+- .uk
 - .co.uk
+- .ac.uk
+- .gov.uk
 - .me.uk
+- .net.uk
 - .org.uk
-- .ltd.uk
 - .plc.uk
-- .uk.
+- .sch.uk
 
+**Este manual explica-lhe como iniciar uma transferência de saída para estes TLD a partir da Área de Cliente OVHcloud.**
 
+## Requisitos
 
+- Ter um [domínio .uk](https://www.ovh.pt/dominios/) registado na OVHcloud
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e ter os direitos necessários para gerir o domínio (ser administrador do domínio)
+- O domínio deve estar sempre ativo, isto é, não deve ter expirado ou ser bloqueado pela OVHcloud
+- O nome de domínio não deve ser objeto de um litígio em curso no [Registo Nominet](https://www.nominet.uk/)
 
-## Etapa 1: Verificação das informações do domínio
-Poderá encontrar as informações a partir do seu Espaço Cliente disponível [aqui](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-É necessário ligar-se com o contacto administrador.
+> [!primary]
+>
+> Se é o **proprietário** do domínio mas a sua gestão na Área de Cliente OVHcloud está indisponível, seja através do seu próprio acesso ou através do contacto administrativo do domínio, consulte [este guia](../../customer/gestao_dos_contactos/#caso-especifico-de-um-proprietario-de-dominio) antes de continuar.
+>
+> Se o domínio expirou há **menos de 90 dias**, pode ainda ser transferido. Contacte as nossas equipas de suporte técnico criando um pedido de suporte no seu Área de Cliente OVHcloud para desbloquear o domínio para a transferência.
+>
 
+## Instruções
 
-- Após estar ligado deve clicar no domínio na secção Domínios, e depois consulte as Informações gerais.
+Os TLD em causa dispõem cada um de uma *TAG* correspondente ao seu agente de registo de nomes de domínio atual, como a OVHcloud. A transferência inicia-se com a substituição da TAG pela que identifica o seu novo agente de registo.
 
+Se ainda não conhece a TAG necessária, pode solicitá-la ao novo prestador de serviços ou consultar a [lista dos agentes de registo Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/).
 
+### Etapa 1: verificar as informações necessárias
 
-![](images/img_4266.jpg){.thumbnail}
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a `Web Cloud`{.action} na barra de navegação em cima à esquerda. Clique em `Nomes de domínio`{.action} na coluna à esquerda e selecione o domínio correspondente.
 
+Lembre-se de que deve estar ligado como contacto administrador.
 
-## Etapa 2: Modificação da TAG do seu domínio
+No separador `Informações gerais`{.action}, pode verificar se as condições exigidas para o processo de transferência estão preenchidas.
 
-- Clique de seguinte em "Tag de transferência de saída".
+![transferência de saída](images/img_4266.jpg){.thumbnail}
 
+### Etapa 2: modificar a TAG do seu domínio
 
+Clique no link `Tag de transferência que sai`{.action} na secção intitulada **Segurança**.
 
-![](images/img_4267.jpg){.thumbnail}
+![transferência de saída](images/img_4267.jpg){.thumbnail}
 
-- Indicar a TAG fornecida pelo futuro registrar, e depois clique em "validar".
+Na nova janela, introduza a TAG do novo agente de registo e clique em `Confirmar`{.action}.
 
+![transferência de saída](images/img_4268.jpg){.thumbnail}
 
+Se não conseguir alterar a TAG do domínio a partir da Área de Cliente, pode solicitá-la ao registry Nominet. Encontre mais informações no [site oficial da Nominet](https://www.nominet.uk/domain-support/).
 
-![](images/img_4268.jpg){.thumbnail}
-Se porventura não conseguir efetuar a modificação da Tag do seu domínio no seu Espaço Cliente, pode efetuá-la junto da Nominet (Registry) de forma a que esta faça a modificação por si.
+### Etapa 3: seguir o processo de transferência para o novo agente de registo
 
-Queria, neste caso, aceder ao website deles: [Manage your domain - Change registrar](http://www.nominet.org.uk/uk-domain-names/manage-your-domain/change-registrar).
-Atenção, esta operação é faturada pela Nominet.
+A alteração da TAG ativa o processo de transferência.
 
+Contacte o seu novo fornecedor para obter mais informações sobre a transferência.
 
-## Etapa 3: Transmitir as informações à nova entidade registrar
-Do lado da OVH não há mais nada a fazer, tem agora todas as informações necessárias para transferir o seu domínio.
+## Quer saber mais?
 
+[Transferir um domínio para outro agente de registo](../transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico/)
+
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

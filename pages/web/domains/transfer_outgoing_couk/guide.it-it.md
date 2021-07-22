@@ -1,64 +1,83 @@
 ---
-title: Guida al trasferimento in uscita di un dominio .co.uk
-excerpt: Guida al trasferimento in uscita di un dominio .co.uk
+title: "Trasferire un dominio.uk verso un altro Registrar"
 slug: guida_al_trasferimento_in_uscita_di_un_dominio_couk
-legacy_guide_number: g2225
+excerpt: Come effettuare il trasferimento in uscita di un dominio UK verso un altro registrar
+section: Trasferimento
+order: 5
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## Requisiti
-Prima di trasferire il tuo dominio .co.uk verso un altro Registrar, assicurati che:
+**Ultimo aggiornamento: 12/07/2021**
 
+## Obiettivo
 
-- il dominio non sia sospeso
-- per il dominio non esistano dispute in corso presso Nominet
-- il dominio non sia stato bloccato da OVH
+Il processo di modifica del Registrar (*registrar*) per i domini di primo livello (*top-level domain*, o **TLD**) del prefisso nazionale **UK** (**.uk**) differisce da quello dettagliato nella nostra [guida al trasferimento delle TLD generiche](../trasferisci_in_uscita_un_dominio_generico_o_geografico/). Le istruzioni riportate qui sotto riguardano queste estensioni:
 
-
-
-
-## Estensioni
-
+- .uk
 - .co.uk
+- .ac.uk
+- .gov.uk
 - .me.uk
+- .net.uk
 - .org.uk
-- .ltd.uk
 - .plc.uk
-- .uk.
+- .sch.uk
 
+**Questa guida ti mostra come avviare un trasferimento in uscita per questi TLD dal tuo Spazio Cliente OVHcloud.**
 
+## Prerequisiti
 
+- Disporre di un [dominio.uk](https://www.ovh.it/domini/) registrato in OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e disporre dei diritti necessari per gestire il dominio (essere amministratore del dominio)
+- Il dominio deve essere sempre attivo, significa che non deve essere scaduto o essere bloccato da OVHcloud
+- Il dominio non deve essere oggetto di controversia presso il [Registry Nominet](https://www.nominet.uk/)
 
-## Step 1: verifica delle informazioni del tuo dominio
-Le informazioni sono disponibili nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
-Per visualizzarle, accedi all'interfaccia utilizzando il contatto amministratore.
+> [!primary]
+>
+> Se sei il **proprietario** del dominio ma la sua gestione nello Spazio Cliente OVHcloud non è disponibile, tramite il tuo accesso o tramite il contatto amministrativo del dominio, consulta [questa guida](../../customer/gestisci_i_tuoi_contatti/#caso-specifico-di-un-proprietario-di-dominio) prima di continuare.
+>
+> Se il dominio è scaduto da **meno di 90 giorni**, può sempre essere trasferito. Per sbloccare il dominio per il trasferimento, contatta i nostri team di supporto tecnico creando una richiesta di supporto nel tuo Spazio Cliente OVHcloud.
+>
 
+## Procedura
 
-- Una volta effettuato l'accesso, seleziona il tuo dominio nella sezione Domini della colonna a sinistra e clicca su Informazioni generali.
+I TLD interessati dispongono di un tag (*TAG*) che corrisponde al loro attuale Registrar, come OVHcloud. Il trasferimento si avvia sostituendo il TAG con quello che identifica il tuo nuovo Registrar.
 
+Se non conosci ancora il TAG richiesto, puoi farne richiesta presso il tuo nuovo provider o consultare la [lista degli Uffici di Registrazione Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/).
 
+### Step 1: verificare le informazioni necessarie
 
-![](images/img_4266.jpg){.thumbnail}
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action} nella barra di navigazione in alto a sinistra. Clicca sui `Domini`{.action} nella colonna a sinistra e seleziona il dominio interessato.
 
+Ricordati di essere connesso come contatto amministratore.
 
-## Step 2: modifica del TAG del tuo dominio
+Nella scheda `Informazioni generali`{.action} è possibile verificare il rispetto delle condizioni richieste per la procedura di trasferimento.
 
-- Clicca su Tag per il trasferimento in uscita.
+![trasferimento in uscita](images/img_4266.jpg){.thumbnail}
 
+### Step 2: modifica il TAG del tuo dominio
 
+Clicca sul link `Tag per il trasferimento in uscita`{.action} nella sezione intitolata **Sicurezza**.
 
-![](images/img_4267.jpg){.thumbnail}
+![trasferimento in uscita](images/img_4267.jpg){.thumbnail}
 
-- Indica il TAG fornito dal tuo nuovo Registrar e clicca su Conferma.
+Nella nuova finestra, inserisci il TAG del tuo nuovo Registrar e poi clicca su `Conferma`{.action}.
 
+![trasferimento in uscita](images/img_4268.jpg){.thumbnail}
 
+Se non riesci a modificare il TAG del tuo dominio dallo Spazio Cliente OVHcloud, puoi richiederne la modifica al Registry Nominet. Per maggiori informazioni, consulta il [sito ufficiale Nominet](https://www.nominet.uk/domain-support/).
 
-![](images/img_4268.jpg){.thumbnail}
-Se non puoi modificare il Tag del tuo dominio nel tuo Spazio Cliente OVH, puoi inviare una richiesta a Nominet affinché effettui la modifica per te (l'operazione è a pagamento e verrà fatturata).
+### Step 3: seguire il processo di trasferimento presso il tuo nuovo Registrar
 
-Per farlo, accedi alla pagina [Manage your domain - Change registrar](http://www.nominet.org.uk/uk-domain-names/manage-your-domain/change-registrar).
+La modifica del tag TAG attiva il processo di trasferimento.
 
+Contatta il tuo nuovo provider per maggiori informazioni e per qualsiasi domanda relativa al seguito da dare al trasferimento.
 
-## Step 3: trasmetti le informazioni al tuo nuovo Registrar
-A questo punto, è sufficiente inoltrare la tua richiesta di trasferimento al tuo nuovo Registrar.
+## Per saperne di più
 
+[Trasferire un dominio verso un altro Registrar](../trasferisci_in_uscita_un_dominio_generico_o_geografico/)
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

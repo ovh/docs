@@ -84,7 +84,7 @@ On your project's `General information` page, click on `Access my Web PaaS proje
 
 You will be redirected to the `OVERVIEW` tab of the Web PaaS Management Console.
 
-Here you can follow the configuration wizard to guide you through the first steps with your project. Click  `Start`{.action} to follow all the steps. Alternatively, you can directly select one of the wizard steps on the right.
+Here you can follow the configuration wizard to guide you through the first steps with your project. Click `Start`{.action} to follow all the steps. Alternatively, you can directly select one of the wizard steps on the right.
 
 ![console project](images/manage_console01.png){.thumbnail}
 
@@ -92,13 +92,31 @@ The project is ready when the status is set to `Active` on the Master environmen
 
 ![console project](images/manage_console02.png){.thumbnail}
 
-The "Go further" section below contains links to some useful guides for the next steps.
+### Getting started with a Web PaaS project
+
+#### Configuring the CLI
+
+The first step with an active project is usually to install the Web PaaS CLI in your local working environment. Download the Web PaaS CLI by copying the **_curl_ command provided in the Wizard** into your local Terminal application.
+
+The Web PaaS CLI installer will provide further instructions and provide a **URL to be opened in your web browser**. This is necessary to grant access to your user account. (You might be prompted to log in with your OVHcloud credentials at this point). Click on the button `Yes, authorize`{.action} to finish the CLI configuration.
+
+#### Configuring SSH keys
+
+The next step is to add SSH keys to your user account.
+
+- If you would like to use an existing local key, enter the command `webpaas ssh-key:add` in the Web PaaS CLI. Your public key can be added in the Wizard or in the `Account`{.action} settings of your Web PaaS Management Console.
+- If you need to create a new key pair, we recommend to follow the steps in the [SSH guide](../development-ssh/).
+
+#### Downloading the project
+
+The final step to get started with a project is to downlad it in order to work on it locally. Simply enter `webpaas get` in your Web PaaS CLI and you will be able to select it from the list of your projects.
+
 
 ## Go further
 
-[Using SSH](../development-ssh/)
-
 [Configuring the CLI](../development-cli/)
+
+[Using SSH](../development-ssh/)
 
 [Using YAML](../configuration-yaml/)
 
