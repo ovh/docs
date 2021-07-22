@@ -3,6 +3,7 @@ title: 'Gestire i contatti dei servizi OVHcloud'
 slug: gestisci_i_tuoi_contatti
 excerpt: 'Come gestire i contatti dei tuoi servizi dallo Spazio Cliente OVHcloud'
 section: 'Per iniziare'
+order: 6
 ---
 
 **Ultimo aggiornamento: 20/05/2020**
