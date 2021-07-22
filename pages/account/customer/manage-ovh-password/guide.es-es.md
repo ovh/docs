@@ -3,6 +3,7 @@ title: 'Establecer y gestionar la contraseña de su cuenta'
 slug: gestionar-su-contraseña
 excerpt: 'Cómo establecer, cambiar y gestionar la contraseña de acceso al área de cliente de OVHcloud'
 section: 'Primeros pasos'
+order: 4
 ---
 
 ## Objetivo
@@ -12,6 +13,7 @@ La contraseña de acceso al área de cliente de OVHcloud es la llave de acceso a
 **Cómo establecer, cambiar y gestionar su contraseña.**
 
 ## Requisitos
+
 - Disponer de una cuenta de OVHcloud activa.
 - Conocer su id. de cliente y/o su dirección de correo electrónico.
 
@@ -36,7 +38,6 @@ La seguridad de sus soluciones depende de la eficacia de la contraseña de acces
 - se debe cambiar cada tres meses;
 
 - debe ser diferente que las utilizadas anteriormente.
-
 
 Existen varios métodos eficaces para crear contraseñas. Entre ellos, le recomendamos el **método de las primeras letras** y el **método fonético** que se explican en [esta guía del sitio web de la Oficina de Seguridad del Intaernauta (OSI)](https://www.osi.es/es/contrasenas#robustas){.external}.
 
@@ -67,7 +68,6 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 
 ### Modificar la contraseña
 
-
 #### Desde el área de cliente de OVHcloud
 
 - Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en su nombre en la esquina superior derecha y haga clic en sus iniciales.
@@ -87,7 +87,6 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 ![manage-ovh-password](images/account-password-modif-manager-step4.png){.thumbnail}
 
 - A continuación, aparece un mensaje indicando que la operación se ha realizado satisfactoriamente. Haga clic en el botón `«Continuar»`{.action} debajo de este mensaje para ser redirigido a la página de identificación. A continuación, introduzca su usuario y su nueva contraseña.
-
 
 #### En caso de haber olvidado la contraseña actual
 
@@ -110,9 +109,9 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 - A continuación, aparece un mensaje indicando que la operación se ha realizado satisfactoriamente. Haga clic en el botón `«Continuar»`{.action} debajo de este mensaje para ser redirigido a la página de identificación. A continuación, introduzca su identificador y su nueva contraseña.
 
 > [!primary]
-> 
+>
 > Al guardar la nueva contraseña, todas las sesiones activas en su cuenta de OVHcloud se cerrarán automáticamente.
-> 
+>
 
 ## Más información
 
@@ -127,7 +126,5 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 [Herramientas gratuitas](https://www.osi.es/es/herramientas-gratuitas?herramienta_selec%5B0%5D=118){.external}
 
 [El gestor de contraseñas Keepass](https://keepass.info/){.external}
-
-
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

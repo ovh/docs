@@ -1,162 +1,176 @@
 ---
-title: 'Crear, usar y administrar su ID de cliente (identificador NIC)'
-slug: todo-soble-el-nombre-de-usuario
-excerpt: 'Descubra cómo crear un identificador de NIC y administrar sus datos personales'
-Section: 'Primeros pasos'
+title: 'Proteger mi cuenta de OVHcloud y gestionar mis datos personales'
+slug: todo-sobre-el-id-de-cliente
+legacy_guide_number: 2123
+excerpt: 'Esta guía explica cómo optimizar la seguridad de su cuenta de OVHcloud, gestionar sus datos personales y delegar el acceso a su cuenta'
+section: 'Primeros pasos'
+order: 3
 ---
+
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 01/07/2021**
 
 ## Objetivo
 
-Su identificación de cliente es lo que necesitará usar para:
+La gestión de sus servicios y datos se realiza principalmente desde el área de cliente de OVHcloud.
+Por lo tanto, es fundamental adoptar buenas prácticas en la gestión de su cuenta para proteger y conservar el acceso.
 
-- hacer pedidos en línea
-- gestione todos sus servicios fácilmente a través del Panel de control de OVHcloud
-- especifique su cuenta de cliente cuando se contacte con el soporte de OVHcloud, para que puedan responder sus consultas
+Desde el área de cliente de OVHcloud podrá gestionar sus datos personales y delegar el acceso a sus servicios a otros usuarios.
 
-Generalmente se compone de dos letras, seguidas de números. Por ejemplo:: **xx11111-ovh**.
+**Descubra las buenas prácticas de gestión de su cuenta y de sus datos personales.**
 
-En OVHcloud, se conoce como un identificador de NIC. 
+## Requisitos
 
-**Descubra cómo crear su identificador de NIC, iniciar sesión en su cuenta, administrar sus datos personales y acceder a su cuenta.**
-
-
-## Cómo crear un identificador de NIC
-
-Si aún no tiene un identificador de NIC, vaya a la página para [crear una cuenta OVHcloud](https://ca.ovh.com/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=WS){.external}. 
-
-Complete el formulario en línea y asegúrese de utilizar una dirección de **correo electrónico válida**.
+- Haber creado [su cuenta de OVHcloud](https://docs.ovh.com/us/es/customer/crear-cuenta-ovhcloud).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 > [!primary]
+> Si necesita ayuda para conectarse a su cuenta, consulte la sección "[No consigo conectarme](https://docs.ovh.com/us/es/customer/conectarse-area-de-cliente-ovhcloud/#login-failure)" de nuestra guía "[Conectarse al área de cliente de OVHcloud](https://docs.ovh.com/us/es/customer/conectarse-area-de-cliente-ovhcloud/)".
 >
-> Ingrese una dirección de correo electrónico que no esté vinculada a su nombre de dominio, así como una dirección de correo electrónico de respaldo. La dirección de correo electrónico de respaldo **debe ser diferente** de la dirección de correo electrónico principal.
-> 
 
-Una vez que haya completado el formulario, recibirá un correo electrónico confirmando que su cuenta ha sido creada. Asegúrese de anotar su identificador de NIC y, sobre todo, guarde su contraseña en un lugar seguro (por ejemplo, un administrador de contraseñas).
+## Procedimiento
 
-Para mejorar la seguridad de su cuenta, recomendamos:
+Esta guía explica cómo hacerlo:
 
-- Leyendo nuestra guía sobre [cómo configurar y administrar la contraseña de una cuenta].(../gestionar-su-contraseña/).
-- Asegurar el acceso a su cuenta configurando la autenticación de dos factores. Esta guía explicará cómo habilitarla: [Proteger su cuenta de OVHcloud con la doble autenticación](../proteger-su-cuenta-con-una-2FA//).
+- [buenas prácticas de gestión y seguridad de la cuenta de OVHcloud](#best-practices);
+- [cómo gestionar y modificar sus datos personales](#personal-information);
+- [cómo delegar de forma segura los accesos a su cuenta de OVHcloud](#delegation).
 
-## Cómo encontrar su identificador de NIC
+### Buenas prácticas de gestión de la cuenta OVHcloud <a name="best-practices"></a>
 
-Siempre se le pedirá que proporcione su identificador de NIC cuando inicie sesión en su cuenta y cuando se comunique con el equipo de soporte de OVHcloud. Hay diferentes formas de encontrarlo.
+Las buenas prácticas que figuran a continuación deben aplicarse desde la creación de su cuenta de OVHcloud para optimizar la seguridad de sus servicios y datos.
 
-### En correos electrónicos de OVHcloud
+### Crear una contraseña sólida y única
 
-Su identificador de NIC se incluye en el correo electrónico de confirmación de creación de cuenta, los correos electrónicos de confirmación de pedido y los correos electrónicos de renovación, así como las notificaciones de inicio de sesión de la cuenta.
+La seguridad de sus servicios y datos depende de la eficacia de su contraseña. Este debe ser **complejo, único y renovado regularmente**.
 
-### En tus facturas
+Consulte todas nuestras recomendaciones sobre las contraseñas en nuestra guía [Cambiar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/).
 
-Su identificador de NIC está en la esquina superior derecha de todas sus facturas.
+#### Guardar la contraseña
 
-![NIC handle](images/nichandle01b.png){.thumbnail}
-
-### En el panel de control
-
-Puede ver su identificador de NIC en el Panel de control de OVHcloud haciendo clic en su nombre en la esquina superior derecha.
-
-![NIC handle](images/newhub1.png){.thumbnail}
-
-Al hacer clic en sus iniciales, también podrá encontrar el `código de cliente` que pueden solicitar nuestros equipos de soporte.
-
-![NIC handle](images/customercode1.png){.thumbnail}
-
-## Cómo iniciar sesión en el Panel de control de OVHcloud
-
-Vaya a la [página de inicio de sesión de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, e ingrese su nombre de usuario y contraseña de NIC.
-
-![NIC handle](images/nichandle03.png){.thumbnail}
-
-Si sus intentos de inicio de sesión no tienen éxito, deberá seguir el procedimiento de autenticación de dos factores. Esta capa adicional de seguridad en su cuenta complementa su pareja de nombre de usuario y contraseña, y se administra a través de un dispositivo que posee: un teléfono inteligente, tableta o clave de seguridad.
+Si todavía no lo ha hecho, guarde su contraseña en un [gestor de contraseñas](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/#utilizar-un-gestor-de-contrasenas).
 
 > [!primary]
->  Si no ha configurado la autenticación de dos factores en su cuenta, es posible que se le solicite que ingrese un código de verificación para confirmar su identidad. El código de verificación se envía a la dirección de correo electrónico principal que figura en su cuenta.
->
-> Si no puede encontrar el correo electrónico que contiene este código, revise sus carpetas de correo no deseado / basura.
+> Los programas **Keepass** y **Bitwarden** son gestores de contraseñas libres y de impuestos.
 >
 
-### Qué hacer si ha olvidado su contraseña
+#### Añadir una dirección de correo electrónico alternativa <a name="backup-email"></a>
 
-Si ha perdido u olvidado su contraseña, siga esta [guía que detalla los pasos a seguir para cambiarla].(../gestionar-su-contraseña/#en-caso-de-haber-olvidado-la-contrasena-actual).
+En caso de dificultad de acceso a su dirección de correo electrónico principal, una dirección de correo electrónico alternativa permite conservar el acceso a su cuenta y, por tanto, a la gestión de sus servicios.
+<br>Esta segunda dirección **debe ser diferente** de la primera, especialmente para facilitar sus trámites en caso de recuperación de contraseña.
 
-### Qué hacer si no puede acceder a su dirección de correo electrónico
+Para introducir esta dirección de correo electrónico alternativa, haga clic en su nombre en la parte superior derecha de su cuenta y, seguidamente, en sus iniciales.
 
-Si ha ingresado una dirección de correo electrónico de respaldo, puede contactar al [equipo de soporte de OVHcloud](https://www.ovhcloud.com/es/contact/) y solicitarles que establezcan su correo electrónico de respaldo como su dirección de correo electrónico principal. Una vez que se haya completado esta acción, asegúrese de ingresar una nueva dirección de correo electrónico de respaldo.
+Haga clic en el cuadro `Mi perfil` en el botón `...`{.action} y luego en `Editar mi perfil`{.action}.
 
-## Cómo administrar tus datos personales
+![dirección de correo electrónico alternativa](images/edit-profile.png){.thumbnail}
 
-### Cambia tus datos personales
+> [!warning]
+> Le recordamos que es **fundamental** que la dirección de correo electrónico alternativa sea **diferente** de la dirección de correo electrónico principal de la cuenta.
+>
+> Evite utilizar direcciones de correo asociadas a un dominio que gestione desde el área de cliente. En caso de corte en este dominio, no recibiría nuestras notificaciones.
+>
 
-Puede cambiar la información de su cuenta a través del Panel de control. Para hacer esto, haga clic en su nombre en la esquina superior derecha del Panel de control de OVHcloud, luego haga clic en sus iniciales.
+#### Activar la doble autenticación
 
-![NIC handle](images/newhub2.png){.thumbnail}
+La doble autenticación permite reforzar la seguridad de su cuenta de OVHcloud.
 
-Luego, haga clic en `...` {.action} en la sección "Mi perfil", luego `edite mi perfil` {.action}.
+Para más información, consulte nuestra guía [Proteger su cuenta de OVHcloud con la doble autenticación](https://docs.ovh.com/us/es/customer/proteger-su-cuenta-con-una-2FA/).
 
-![NIC handle](images/nichandle06.png){.thumbnail}
+> [!primary]
+> La activación de la doble autenticación en su cuenta de OVHcloud es un requisito obligatorio para cumplir con [el alojamiento de datos de salud en Francia (HDS)](https://www.ovhcloud.com/es/enterprise/certification-conformity/hds/).
 
-Edite sus datos, luego haga clic en `Confirmar` {.acción}.
+### ¿Cómo gestionar mis datos personales? <a name="personal-information"></a>
+
+#### Editar mis datos personales
+
+Puede modificar la información de su cuenta desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Para ello, haga clic en su nombre en la esquina superior derecha del área de cliente y seleccione sus iniciales.
+
+Haga clic en el botón `...`{.action} en el recuadro `Mi perfil` y seleccione `Editar mi perfil`{.action}.
+
+![ID cliente](images/edit-profile.png){.thumbnail}
+
+Modifique sus datos y haga clic en el botón `«Aceptar»`{.action}.
 
 > [!warning]
 >
-> Es muy importante mantener sus datos actualizados y precisos. Se le pedirá que proporcione sus datos cuando se ponga en contacto con el equipo de soporte de OVHcloud, y puede haber casos en los que deba proporcionar pruebas de que sus datos son precisos (por ejemplo, prueba de que su dirección es idéntica a la dirección detallada en el cuenta. Esto se puede solicitar cuando sigue el procedimiento de cambio de dirección de correo electrónico).
+> Es importante que los datos personales proporcionados sean **exactos** y estén **actualizados**. Se le pedirá que proporcione los datos necesarios cuando se ponga en contacto con el equipo de asistencia de OVHcloud. Asimismo, deberá ser capaz de justificar su exactitud si procede (por ejemplo, durante el procedimiento de cambio de dirección de correo electrónico, se le puede solicitar un justificante de domicilio idéntico a la dirección indicada en su cuenta.
 >
 
-### Cambia tu dirección de correo electrónico principal
+#### Editar la dirección de correo electrónico principal
 
-Si desea cambiar su dirección de correo electrónico de contacto principal, deberá validarla utilizando un código enviado a su dirección de correo electrónico de contacto principal actual. Una vez que haya recibido el código, haga clic en el botón "He recibido mi código de validación".
+Si desea cambiar su dirección de correo electrónico principal, deberá validarla mediante un código enviado a su dirección de correo electrónico principal actual. Una vez recibido el código, haga clic en el botón `He recibido el código de verificación`{.action}.
 
-![NIC handle](images/nichandle07.png){.thumbnail}
+![ID cliente](images/nichandle07.png){.thumbnail}
 
-A continuación, ingrese el código en la sección "Código de validación" y haga clic en `Confirmar`{.action}.
+Introduzca el código en el campo `Código de validación` y acepte.
 
-![NIC handle](images/nichandle08.png){.thumbnail}
+![ID cliente](images/nichandle08.png){.thumbnail}
 
-### Modificación del tipo de cuenta
+#### Cambiar el tipo de cuenta
 
-Al editar su perfil, haga clic en el símbolo `Tipo de cuenta`. Un menú desplegable le permite definir el tipo de cuenta correspondiente a su situación.
+Al editar su perfil, haga clic en el `tipo de cuenta`. Un menú desplegable le permite definir el tipo de cuenta correspondiente a su situación.
 
-![identifiant client](images/nichandle09.png){.thumbnail}
+![ID cliente](images/nichandle09.png){.thumbnail}
 
-Una vez introducidos los datos, haga clic en el botón `Aceptar` {.action} .
+Una vez introducidos los datos, haga clic en el botón `Aceptar`{.action}.
 
-### Ejercer sus derechos de datos personales
+#### Ejercer mis derechos sobre mis datos personales
 
-En cumplimiento del Reglamento General de Protección de Datos (RGPD), puede solicitar ejercer los derechos asociados con los datos personales que le conciernen completando [este formulario](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos) {.external}.
+De acuerdo con el Reglamento General de Protección de Datos (RGPD), puede solicitar ejercer los derechos relacionados con la protección de sus datos personales rellenando [este formulario](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos){.external}.
 
-### Delete your NIC handle
+#### Eliminar mi cuenta de OVHcloud
 
-Puede solicitar que se elimine su identificador de NIC y todos los datos asociados con él completando el [formulario para ejercer los derechos de RGPD](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos) {.external} y seleccionando "Derecho de eliminación".
+Puede solicitar la eliminación de su cuenta de OVHcloud y los datos asociados rellenando [el formulario para el ejercicio de los derechos RGPD](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos){.external} y eligiendo el "Derecho de supresión".
 
 > [!warning]
 >
-Para eliminar su identificador de NIC, deberá cumplir con las siguientes condiciones:
+> Para eliminar su cuenta de OVHcloud, debe cumplir las siguientes condiciones:
 >
-> - Su cuenta ya no debe contener ningún servicio..
+> - su cuenta ya no debe contener ningún servicio.
 >
-> - Su cuenta no debe tener facturas pendientes u órdenes impagas.
+> - Su cuenta no podrá tener facturas ni pedidos pendientes de pago.
 >
->
 
-## Administra el acceso a tu cuenta
+### Gestionar los accesos a mi cuenta <a name="delegation"></a>
 
-No comparta ni divulgue los detalles de su cuenta a nadie más.
+Los datos de identificación de su cuenta no deben compartirse ni divulgarse.
 
-Sin embargo, es posible que desee delegar el acceso de terceros a sus servicios de OVHcloud. Los terceros pueden ser miembros de su empresa (por ejemplo, el webmaster de su empresa) o entidades independientes (por ejemplo, una empresa de contabilidad).
+Sin embargo, es posible que desee delegar el acceso a sus servicios de OVHcloud a terceros, ya sea que se trate de miembros de su empresa (por ejemplo, el administrador web de su empresa) o entidades independientes (por ejemplo, una gestoría).
 
-En este escenario, OVHcloud puede permitirle dar acceso a su cuenta mientras protege sus credenciales (contraseña, autenticación de dos factores).
+En estos casos específicos, OVHcloud le permite proporcionar acceso a su cuenta al tiempo que protege sus datos de identificación (contraseña, doble autenticación).
 
-### Crea usuarios
+#### Crear usuarios
 
-Un usuario puede tener acceso de lectura o escritura a su cuenta o a todos sus servicios. Puede crear, administrar y eliminar estos usuarios a través del Panel de control de OVHcloud. Para obtener más información, consulte nuestra [guía sobre gestión de usuarios](../gestion-de-usuarios/).
+Un usuario puede tener permisos de lectura o escritura en relación con su cuenta y todos sus servicios. Puede crear, gestionar y eliminar estos usuarios desde el área de cliente.
 
-## Qué hacer en caso de robo de identidad
+Así, no solo su propio acceso a la cuenta permanecerá protegido por la doble autenticación, sino que cada usuario disfrutará de :
 
-Si recibe un correo electrónico que le notifica una conexión desconocida a su cuenta de OVHcloud, le recomendamos que [cambie la contraseña de su cuenta de inmediato](../gestionar-su-contraseña/#modificar-la-contrasena)  y la [asegure con autenticación de dos factores](../proteger-su-cuenta-con-una-2FA/).
+- su propio identificador;
+- su propia contraseña;
+- su propia doble autenticación.
 
-Si observa alguna actividad sospechosa en su cuenta, comuníquese con el [soporte de OVHcloud](https://www.ovhcloud.com/es/contact/), and our team can help guide you on the steps you need to take.
+Como usuario principal de la cuenta, puede gestionar los usuarios y sus permisos.
+
+Para más información, consulte la [guía sobre la gestión de usuarios](https://docs.ovh.com/us/es/customer/gestion-de-usuarios/).
+
+### ¿Qué hacer si sospecha de una usurpación de identidad?
+
+Si recibe un mensaje de correo electrónico en el que se le informa de un inicio de sesión desconocido en su área de cliente, le recomendamos [cambiar inmediatamente la contraseña de su cuenta](../gestionar-su-contraseña/#modificar-la-contrasena) y [protegerla con la doble autenticación](../proteger-su-cuenta-con-una-2FA/).
+
+Si advierte una actividad sospechosa en su cuenta, [póngase en contacto con el equipo de asistencia de OVHcloud](https://www.ovhcloud.com/es/contact/) para que le informe del procedimiento que deberá seguir.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+[Cambiar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/)
+
+[Proteger su cuenta de OVHcloud con la doble autenticación](https://docs.ovh.com/us/es/customer/proteger-su-cuenta-con-una-2FA/)
+
+[Conectarse al área de cliente de OVHcloud](https://docs.ovh.com/us/es/customer/conectarse-area-de-cliente-ovhcloud/)
+
+[En caso de fallo de la conexión al área de cliente](https://docs.ovh.com/us/es/customer/conectarse-area-de-cliente-ovhcloud/#login-failure)
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

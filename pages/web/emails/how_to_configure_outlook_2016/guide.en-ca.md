@@ -14,20 +14,18 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 
 **This guide explains how to configure your MX Plan email address in Outlook 2016 or later for Windows.**
 
-
 > [!warning]
 > This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
 > If you experience any difficulties carrying out these operations, we recommend that you contact a specialist service provider and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
-
 ## Requirements
 
 - an MX Plan email address, available as part of our [Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/)
 - Microsoft Outlook 2016 or later installed on your device
 - login credentials for the email account to be configured
- 
+
 > [!primary]
 >
 > Are you using Outlook 2016 for Mac? Refer to our documentation: [Configuring an email address in Outlook 2016](../configuration-outlook-2016-mac/).
@@ -51,7 +49,6 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 |Enter your email password, then click `Next`{.action}. |![Outlook](images/config-outlook-mxplan03.png){.thumbnail}|
 |![Outlook](images/config-outlook-mxplan04.png){.thumbnail}|If Outlook was unable to automatically configure your address, this window will appear. <br>Click `Change Account Settings`{.action} |
 |Enter in **Incoming mail**: <br>- Server **ssl0.ovh.net** <br>- Port **993**<br>- Encryption method **SSL/TLS**<br><br>Enter in **Outgoing mail**: <br>- Server **ssl0.ovh.net** <br>- Port **465**<br>- Encryption method **SSL/TLS**<br><br>Click `Next`{.action} to confirm. |![Outlook](images/config-outlook-mxplan05.png){.thumbnail}|
-
 
 For **POP** configuration, the values are:
 
@@ -85,9 +82,8 @@ The window is divided into two parts, **Incoming Mail** and **Outgoing Mail**. C
 
 ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
 
-
 ## Go further <a name="gofurther"></a>
 
-[Configuring your Exchange account in Outlook 2016 for Windows](../../microsoft-collaborative-solutions/configuration-outlook-2016/)
+[Configuring your Exchange account in Outlook 2016 for Windows](../../microsoft-collaborative-solutions/exchange-configuration-outlook-2016-windows/)
 
 Join our community of users on <https://community.ovh.com/en/>.

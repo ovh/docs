@@ -76,7 +76,7 @@ Ihre Exchange E-Mail-Adresse sowie alle kollaborativen Funktionen sind ebenfalls
 
 ### Backup Ihrer E-Mail-Adresse
 
-Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt zu **Windows** in unserer Anleitung "[E-Mail-Adresse manuell migrieren](../emails/email-adressen-manuell-migrieren/#uber-windows-exportieren)".
+Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt zu **Windows** in unserer Anleitung "[E-Mail-Adresse manuell migrieren](../../emails/email-adressen-manuell-migrieren/#uber-windows-exportieren)".
 
 
 ## Weiterführende Informationen <a name="gofurther"></a>
