@@ -72,16 +72,14 @@ En este caso, no es posible restaurar la contraseña desde la página de conexi�
 
 Puede contactar con el soporte de OVHcloud en el 91 758 34 77 para que esta dirección de correo electrónico alternativa se convierta en la dirección de correo electrónico principal.
 
-Debe seguir este [procedimiento](https://www.ovh.es/cgi-bin/es/procedure/procedureChangeEmail.cgi){.external} a enviarnos por correo postal para que se verifique su identidad.
-<br>Una vez recibido el correo por nuestros servicios, procederemos a la sustitución de su dirección e-mail de contacto si todos los justificantes son conformes.
-
 Una vez realizada esta operación, deberá [introducir una **nueva** dirección de correo electrónico alternativa](https://docs.ovh.com/es/customer/todo-sobre-el-id-de-cliente/#backup-email) en su cuenta.
 
 #### Si no ha especificado una dirección de correo electrónico alternativa o esta tampoco es válida
 
 En ese caso, el soporte telefónico de OVHcloud no podrá ayudarle.
 
-Siga este procedimiento si todos los justificantes son válidos y, una vez recibido el correo por nuestros servicios, procederemos a la sustitución de su dirección e-mail de contacto.
+Debe seguir este [procedimiento](https://www.ovh.es/cgi-bin/es/procedure/procedureChangeEmail.cgi){.external} a enviarnos por correo para que se verifique su identidad.
+<br>Una vez recibido el correo por nuestros servicios, procederemos a la sustitución de su dirección e-mail de contacto si todos los justificantes son conformes.
 
 <br>Este procedimiento puede tardar varios días en completarse, teniendo en cuenta los plazos de envío del correo y el tratamiento que nos prestan nuestros servicios.
 
