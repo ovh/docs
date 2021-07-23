@@ -6,7 +6,7 @@ section: 'Migracja konta Exchange'
 order: 1
 ---
 
-**Ostatnia aktualizacja z dnia 09-12-2020**
+**Ostatnia aktualizacja z dnia 23-07-2021**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -25,7 +25,6 @@ OVHcloud oferuje kilka rozwiązań poczty elektronicznej: MX Plan (sprzedawany s
 - **Nie skonfigurowałeś przekierowania na adres e-mail MX Plan, który chcesz przenieść.**
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
-
 ## W praktyce
 
 ### Etap 1: określenie ram projektu
@@ -33,7 +32,6 @@ OVHcloud oferuje kilka rozwiązań poczty elektronicznej: MX Plan (sprzedawany s
 Rozwiązania E-mail Pro i Exchange mają wspólną bazę funkcjonalności. Niemniej jednak nadal występują różnice w zależności od zastosowania. Wybierając adres Exchange, dysponujesz wszystkimi funkcjami do pracy zespołowej, takimi jak synchronizacja kalendarza i kontaktów. Niektóre z nich są dostępne w ofercie E-mail Pro, ale są one ograniczone do korzystania wyłącznie z poczty webmail.
 
 Zanim przejdziesz dalej, ważne jest, aby wiedzieć, na jaką ofertę chcesz przenieść Twoje konta e-mail MX Plan. Aby pomóc w wyborze tej opcji, zapoznaj się ze stroną firmowych [rozwiązań poczty elektronicznej OVHcloud](https://www.ovh.pl/emaile/){.external}, na której znajdziesz szczegółowe porównanie ofert. Możesz łączyć rozwiązania i używać dla tej samej domeny jednego lub kilku kont E-mail Pro i Exchange. Jeśli chcesz migrować kilka kont, zalecamy wdrożenie planu migracji.
-
 
 ### Etap 2: zamów konta E-mail Pro lub Exchange
 
@@ -107,14 +105,13 @@ Następnie potwierdź hasło do źródłowego konta e-mail (które chcesz przeni
 
 Przed rozpoczęciem migracji, jeśli właśnie zamówiłeś nową ofertę e-mail, dodaj najpierw nazwę domeny do platformy [E-mail Pro](../../emails-pro/pierwsza-konfiguracja-email-pro/#etap-2-dodanie-domeny) lub [Exchange](../dodanie-domeny-exchange/).
 
-
 Migracja MXPlan przebiega 3 etapach. **Zmień nazwę**, **Utwórz** i **Migracja**.
 
 ![Exchange](images/mxplan-migration-configure-account.gif){.thumbnail}
 
 1\. **Zmień nazwę** konta MXPlan, które chcesz przenieść, używając tymczasowej nazwy (na przykład: aby przenieść konto MX plan *john.smith@mydomain.ovh*, zmień nazwę konta na *john.smith01@mydomain.ovh*).
 
-W zakładce `Konta e-mail`{.action} na Twojej platformie E-mail Pro lub Exchange kliknij przycisk `...`{.action}, a następnie `Zmień`{.action}.
+W zakładce `Konta e-mail`{.action} na Twojej platformie MX Plan kliknij przycisk `...`{.action}, a następnie `Zmień`{.action}.
 
 ![Exchange](images/mxplan-migration-configure-account01.png){.thumbnail}
 
@@ -140,7 +137,7 @@ Po przeprowadzeniu migracji sprawdź, czy Twoje dane znajdują się na stronie W
 
 Po przeprowadzeniu migracji możesz zachować lub usunąć konto źródłowe, używając tymczasowej nazwy.
 
-Jeśli chcesz go usunąć, przejdź do zakładki `Konta e-mail`{.action} MXPlan, kliknij przycisk...`, a następnie `{.action}Zresetuj to konto` `{.action}.
+Jeśli chcesz go usunąć, przejdź do zakładki `Konta e-mail`{.action} MXPlan, kliknij przycisk `...`{.action}, a następnie  `Zresetuj to konto`{.action}.
 
 ### Etap 4: sprawdź lub zmodyfikuj konfigurację domeny
 
@@ -166,7 +163,6 @@ Jeśli skonfigurowałeś jedno z kont przeniesionych na klienta poczty elektroni
 ### Migracja Ręczna
 
 Możesz również ręcznie przenieść Twoje konta e-mail do nowej usługi e-mail OVHcloud używając tylko programu pocztowego. Skorzystaj z naszego przewodnika [Ręczna migracja Twojego konta e-mail](../../emails/przenoszenie-kont-e-mail/). Zalecamy jednak, abyś stosował tę metodę tylko wtedy, gdy podstawowe metody nie są możliwe.
-
 
 ## Sprawdź również
 

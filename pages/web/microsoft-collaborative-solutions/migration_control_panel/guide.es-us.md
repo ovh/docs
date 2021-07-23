@@ -7,7 +7,7 @@ order: 1
 hidden: true
 ---
 
-**Última actualización: 09/12/2020**
+**Última actualización: 23/07/2021**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -25,7 +25,6 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (incluido en u
 - Tener un servicio [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external} con al menos una cuenta no configurada (que aparecerá como "@configureme.me").
 - **No haber configurado ninguna redirección en la dirección de correo MX Plan que quiera migrar.**
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
-
 
 ## Procedimiento
 
@@ -94,15 +93,13 @@ Por último, confirme la contraseña de la dirección de correo de origen (la qu
 
 Antes de realizar la migración, si acaba de contratar la nueva solución de correo, añada el dominio a su plataforma [Exchange](../anadir-dominio-exchange/).
 
-
-
 La migración de su MXPlan se realizará en 3 grandes etapas: **Renombrar**, **Crear** y **Migrar**.
 
 ![exchange](images/mxplan-migration-configure-account.gif){.thumbnail}
 
 1\. **Cambie el nombre** de la cuenta MXPlan que quiera migrar con un nombre provisional (por ejemplo: para migrar la cuenta MX Plan *john.smith@mydomain.ovh*, cambie su nombre a *john.smith01@mydomain.ovh*).
 
-En la pestaña `Cuentas de correo`{.action} de su plataforma Exchange, haga clic en el botón `...`{.action} y luego en `Editar`{.action}.
+En la pestaña `Cuentas de correo`{.action} de su plataforma MX Plan, haga clic en el botón `...`{.action} y luego en `Editar`{.action}.
 
 ![exchange](images/mxplan-migration-configure-account01.png){.thumbnail}
 
@@ -155,9 +152,8 @@ Si ha configurado alguna de las cuentas migradas en un cliente de correo (p. ej.
 
 También puede migrar manualmente sus direcciones de correo a su nueva solución de correo de OVHcloud utilizando únicamente su cliente de correo. Pulse nuestra guía [Migrar manualmente su dirección de correo electrónico](../../emails/migrar-sus-direcciones-de-correo-manualmente/). No obstante, le recomendamos que utilice este método únicamente cuando no sea posible utilizar los métodos principales.
 
-
 ## Más información
 
-[Guías Exchange](../../microsoft-collaborative-solutions/){.external}.
+[Guías Exchange](../){.external}.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
