@@ -7,7 +7,7 @@ order: 1
 hidden: true
 ---
 
-**Dernière mise à jour le 13/01/2021**
+**Dernière mise à jour le 23/07/2021**
 
 ## Objectif
 
@@ -21,7 +21,6 @@ OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dan
 - Disposer d'un service [Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external} avec au minimum un compte non configuré (qui apparaîtra sous la forme « @configureme.me »).
 - **Ne pas avoir paramétré de redirection sur l'adresse e-mail MX Plan que vous souhaitez migrer**.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
-
 
 ## En pratique
 
@@ -96,14 +95,13 @@ Confirmez enfin le mot de passe de l'adresse e-mail source (celle que vous voule
 
 Avant de commencer votre migration, si vous venez de commander votre nouvelle offre e-mail, ajoutez d'abord le nom de domaine à votre plateforme [Exchange](../ajouter-domaine-exchange/).
 
-
 La migration de votre MXPlan se fera en 3 grandes étapes, **Renommer**,**Créer** et **Migrer**.
 
 ![exchange](images/mxplan-migration-configure-account.gif){.thumbnail}
 
 1\. **Renommez** le compte MXPlan à migrer avec un nom provisoire ( exemple: pour migrer le compte MX plan *john.smith@mydomain.ovh*, renommez celui-ci en *john.smith01@mydomain.ovh*).
 
-Dans l'onglet `Comptes e-mail`{.action} de votre plateforme Exchange, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action}.
+Dans l'onglet `Comptes e-mail`{.action} de votre plateforme MX Plan, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action}.
 
 ![exchange](images/mxplan-migration-configure-account01.png){.thumbnail}
 
@@ -155,7 +153,6 @@ Si vous avez configuré l'un des comptes migrés sur un client de messagerie (co
 ### Migrer Manuellement
 
 Vous pouvez également migrer manuellement vos adresses e-mail vers votre nouvelle offre e-mail OVHcloud en utilisant uniquement votre logiciel de messagerie. Appuyez-vous de notre guide [Migrer manuellement votre adresse e-mail](../../emails/migrer-ses-adresses-email-manuellement/). Nous vous préconisons toutefois de n'utiliser cette méthode que lorsque les méthodes principales ne sont pas possibles.
-
 
 ## Aller plus loin
 
