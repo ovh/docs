@@ -3,6 +3,7 @@ title: 'Das Passwort Ihres Kunden-Accounts anlegen und verwalten'
 slug: Passwort-verwalten
 excerpt: 'Sehen Sie hier, wie Sie das Passwort Ihres OVHcloud Kundencenters anlegen, ändern und verwalten können'
 section: 'Erste Schritte'
+order: 4
 ---
 
 **Letzte Aktualisierung am 12.02.2020**
