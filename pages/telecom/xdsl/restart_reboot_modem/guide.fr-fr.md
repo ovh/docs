@@ -1,26 +1,26 @@
 ---
-title: 'Redémarrer ou réinitialiser une box OVH'
+title: 'Redémarrer ou réinitialiser une box OVHcloud'
 slug: redemarrer-reinitialiser-modem-adsl-ovh
 excerpt: 'Découvrez comment effectuer le redémarrage et la réinitialisation de votre box'
 section: 'Diagnostic et dépannage'
 ---
 
-**Dernière mise à jour le 18/03/2019**
+**Dernière mise à jour le 23/07/2021**
 
 ## Objectif
 
 En cas de difficultés avec votre accès à Internet, il est parfois nécessaire de redémarrer – voire de réinitialiser – votre box.
 
-**Découvrez comment effectuer le redémarrage et la réinitialisation de votre box OVH.**
+**Découvrez comment effectuer le redémarrage et la réinitialisation de votre box OVHcloud.**
 
 ## Prérequis
 
 - Se trouver physiquement près de votre box pour effectuer les actions.
-- Être connecté à l’[espace client OVH](https://www.ovhtelecom.fr/manager/index.html#/){.external}, partie `Accès Internet`{.action}.
+- Être connecté à l’[espace client OVHcloud](https://www.ovhtelecom.fr/manager/index.html#/){.external}, partie `Accès Internet`{.action}.
 
 ## En pratique
 
-### Redémarrer votre box OVH
+### Redémarrer votre box OVHcloud
 
 La manipulation est différente selon le modèle de votre box. Rapprochez-vous de celle-ci afin de pouvoir l'identifier, en vous aidant du tableau ci-dessous. Puis poursuivez vers le modèle concerné.
 
@@ -97,16 +97,16 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 ![Redémarrage Zyxel VMG8623-T50B](images/zyxelVMG8623T50B_power.jpg){.thumbnail}
 
-### Réinitialiser votre box OVH
+### Réinitialiser votre box OVHcloud
 
 > [!warning]
 >
 > Avant de réinitialiser votre équipement, assurez-vous que celui-ci est et restera allumé (alimenté électriquement) durant la manipulation. Si vous avez déjà paramétré votre box via l'interface, sauvegardez ou récupérez les informations de configuration existantes si vous souhaitez les conserver.
 >
 
-Il existe deux possibilités pour réinitialiser votre box OVH :
+Il existe deux possibilités pour réinitialiser votre box OVHcloud :
 
-- **depuis l'[espace client](https://www.ovhtelecom.fr/manager/index.html#/){.external}** : positionnez-vous sur l'onglet `Mon modem`{.action} de l'accès à Internet concerné, puis utilisez le bouton `Réinitialiser le modem`{.action}. Cette solution est commune à tous les modèles de box. Si nécessaire, reportez-vous à notre guide « [Configurer sa box à partir de l'espace client OVH](../configuration_du_modem_a_partir_de_votre_espace_client/#22-configuration-generale) » ;
+- **depuis l'[espace client](https://www.ovhtelecom.fr/manager/index.html#/){.external}** : positionnez-vous sur l'onglet `Mon modem`{.action} de l'accès à Internet concerné, puis utilisez le bouton `Réinitialiser le modem`{.action}. Cette solution est commune à tous les modèles de box. Si nécessaire, reportez-vous à notre guide « [Configurer sa box à partir de l'espace client OVHcloud](../configuration_du_modem_a_partir_de_votre_espace_client/#22-configuration-generale) » ;
 
 - **par le biais d'une manipulation manuelle sur votre box** : la marche à suivre est différente selon le modèle de votre box. Rapprochez-vous de celle-ci afin de pouvoir l'identifier, en vous aidant du tableau ci-dessous. Puis poursuivez vers le modèle concerné.
 
