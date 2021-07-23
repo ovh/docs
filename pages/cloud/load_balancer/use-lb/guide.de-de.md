@@ -29,7 +29,7 @@ Auf der Hauptseite finden Sie folgende Informationen:
 |Status|Zusammenfassung Ihres Loadbalancers mit dem Namen des Dienstes, den Frontends, den funktionsfähigen Farmen und den hinzugefügten Servern|
 |Verwendung|Zusammenfassung der Verwendung Ihres Loadbalancers|
 |Graphen|Hier finden Sie die mit Ihrer Dienstleistung verbundenen Graphen zur Anzahl der Simultanverbindungen oder der Anfragen pro Minute|
-|Informationen|Ihre IPv4, IPv6 und die verbundenen Failover-IPs sowie die Anzahl der ausgehenden IPv4 (Details durch Klicken auf die Auslassungspunkte)|
+|Informationen|Ihre IPv4 und die verbundenen Failover-IPs sowie die Anzahl der ausgehenden IPv4 (Details durch Klicken auf die Auslassungspunkte)|
 |Konfiguration|Hier können Sie den Namen Ihres Angebots (er erscheint oben und in der Spalte links) sowie die Ciphers anpassen. Außerdem wird hier das Rechenzentrum Ihres Loadbalancers angezeigt.|
 |Abo|Hier finden Sie die administrativen Details zu Ihrem Angebot|
 

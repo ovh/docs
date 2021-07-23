@@ -26,7 +26,7 @@ Sur cette page principale, vous trouverez les informations suivantes :
 |Statut|Résumé de votre Load Balancer avec le nom du service, les frontends, les fermes fonctionnelles et les serveurs ajoutés|
 |Utilisation|Un récapitulatif de l'utilisation de votre LoadBalancer|
 |Graphiques|Ici vous trouverez les graphiques liés à votre service en connexions simultanées ou en nombre de requêtes par minute|
-|Informations|Votre IPv4, IPv6 et les IP fail-over liées ainsi que le nombre d'IPv4 de sortie (détail en cliquant sur les points de suspension)|
+|Informations|Votre IPv4 et les IP fail-over liées ainsi que le nombre d'IPv4 de sortie (détail en cliquant sur les points de suspension)|
 |Configuration|Ici vous pourrez personnaliser le nom de votre offre (qui apparaîtra en haut et dans la colonne de gauche). Le(s) cipher(s), qui sont personnalisables, ainsi que le datacenter où se situe votre Load Balancer|
 |Abonnement|Vous trouverez ici les détails administratifs de votre offre|
 

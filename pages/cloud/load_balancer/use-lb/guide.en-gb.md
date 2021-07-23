@@ -29,7 +29,7 @@ On this page, you will see the following information:
 |Status|An overview of your Load Balancer with the IP, front-ends, functional farms and servers added|
 |Use|A summary of how to use your Load Balancer|
 |Graphs|In this section, you will see the graphs linked to service, by concurrent connections or requests per minute|
-|Information|Your IPv4 address, IPv6 address and the failover IPs linked to them, as well as the number of outgoing IPv4s (see more details by clicking on the ellipses)|
+|Information|Your IPv4 address and the failover IPs linked to them, as well as the number of outgoing IPv4s (see more details by clicking on the ellipses)|
 |Configuration|Here, you can customise the name of your solution (which will appear at the top of the left-hand column) The cipher(s) are customisable, as well as the datacentre where your Load Balancer is based|
 |Subscription|Here, you will see the admin details for your solution|
 

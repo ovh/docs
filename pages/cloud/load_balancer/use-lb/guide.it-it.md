@@ -29,7 +29,7 @@ In questa interfaccia sono disponibili le seguenti informazioni:
 |Stato|Riepilogo delle informazioni relative al tuo Load Balancer: nome del servizio, frontend, server farm attive e server aggiunti|
 |Utilizzo|Riepilogo dei dati relativi ai consumi del tuo Load Balancer|
 |Grafici|Grafici associati al tuo servizio, elaborati in base alle connessioni simultanee o al numero di richieste al minuto|
-|Informazioni|IPv4, IPv6 e IP Failover associati e numero di IPv4 di uscita (per visualizzare i dettagli, clicca sui tre puntini di sospensione)|
+|Informazioni|IPv4 e IP Failover associati e numero di IPv4 di uscita (per visualizzare i dettagli, clicca sui tre puntini di sospensione)|
 |Configurazione|Sezione in cui è possibile personalizzare il nome del tuo servizio (che verrà visualizzato in alto e nella colonna di sinistra), i Cipher e il datacenter in cui è localizzato il Load Balancer |
 |Abbonamento|Sezione in cui vengono mostrati i dettagli amministrativi del servizio|
 
