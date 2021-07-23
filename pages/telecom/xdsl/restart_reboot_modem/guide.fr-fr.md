@@ -24,13 +24,15 @@ En cas de difficultés avec votre accès à Internet, il est parfois nécessaire
 
 La manipulation est différente selon le modèle de votre box. Rapprochez-vous de celle-ci afin de pouvoir l'identifier, en vous aidant du tableau ci-dessous. Puis poursuivez vers le modèle concerné.
 
-|[TG788vn/TG788vn V2](./#redemarrer-un-modele-tg788vn-ou-tg788vn-v2)|[TG789vn](./#redemarrer-un-modele-tg789vn)|[TG799vac](./#redemarrer-un-modele-tg799vac)|
-|---|---|---|
-|![TG788vn / TG788vn V2](images/tg788.png){.thumbnail}|![TG789vn](images/tg789vn.png){.thumbnail}|![TG799vac](images/t799vac.png){.thumbnail}|
-|[Zyxel VMG8924-B10D](./#redemarrer-un-modele-zyxel-vmg8924-b10d)|[Zyxel VMG8823-B50B](./#redemarrer-un-modele-zyxel-vmg8823-b50b)|[Zyxel VMG8825-T50B](./#redemarrer-un-modele-zyxel-vmg8825-t50)|
-|![Zyxel VMG8924-B10D](images/zyxelb10d.png){.thumbnail}|![Zyxel VMG8823-B50B](images/zyxelb50b.png){.thumbnail}|![Zyxel VMG8825-T50](images/zyxelvmg8825t50.jpg){.thumbnail}|
-|[Zyxel VMG8623-T50B](./#redemarrer-un-modele-zyxel-vmg8623-t50b)| | |
-|![Zyxel VMG8623-T50B](images/zyxelvmg8623t50b.jpg){.thumbnail}| | |
+|[TG788vn/TG788vn V2](./#redemarrer-un-modele-tg788vn-ou-tg788vn-v2)|[TG789vn](./#redemarrer-un-modele-tg789vn)|
+|---|---|
+|![TG788vn / TG788vn V2](images/tg788.png){.thumbnail}|![TG789vn](images/tg789vn.png){.thumbnail}|
+|[TG799vac](./#redemarrer-un-modele-tg799vac)| |
+|![TG799vac](images/t799vac.png){.thumbnail}| |
+|[Zyxel VMG8924-B10D](./#redemarrer-un-modele-zyxel-vmg8924-b10d)|[Zyxel VMG8823-B50B](./#redemarrer-un-modele-zyxel-vmg8823-b50b)|
+|![Zyxel VMG8924-B10D](images/zyxelb10d.png){.thumbnail}|![Zyxel VMG8823-B50B](images/zyxelb50b.png){.thumbnail}|
+|[Zyxel VMG8825-T50](./#redemarrer-un-modele-zyxel-vmg8825-t50)|[Zyxel VMG8623-T50B](./#redemarrer-un-modele-zyxel-vmg8623-t50b)|
+|![Zyxel VMG8825-T50](images/zyxelvmg8825t50.jpg){.thumbnail}|![Zyxel VMG8623-T50B](images/zyxelvmg8623t50b.jpg){.thumbnail}|
 
 #### Redémarrer un modèle TG788vn ou TG788vn V2
 
@@ -108,13 +110,15 @@ Il existe deux possibilités pour réinitialiser votre box OVH :
 
 - **par le biais d'une manipulation manuelle sur votre box** : la marche à suivre est différente selon le modèle de votre box. Rapprochez-vous de celle-ci afin de pouvoir l'identifier, en vous aidant du tableau ci-dessous. Puis poursuivez vers le modèle concerné.
 
-|[TG788vn/TG788vn V2](./#reinitialiser-un-modele-tg788vn-ou-tg788vn-v2)|[TG789vn](./#reinitialiser-un-modele-tg789vn)|[TG799vac](./#reinitialiser-un-modele-tg799vac)|
-|---|---|---|
-|![TG788vn / TG788vn V2](images/tg788.png){.thumbnail}|![TG789vn](images/tg789vn.png){.thumbnail}|![TG799vac](images/t799vac.png){.thumbnail}|
-|[Zyxel VMG8924-B10D](./#reinitialiser-un-modele-zyxel-vmg8924-b10d)|[Zyxel VMG8823-B50B](./#reinitialiser-un-modele-zyxel-vmg8823-b50b)|[Zyxel VMG8825-T50](./#reinitialiser-un-modele-zyxel-vmg8825-t50)|
-|![Zyxel VMG8924-B10D](images/zyxelb10d.png){.thumbnail}|![Zyxel VMG8823-B50B](images/zyxelb50b.png){.thumbnail}|![Zyxel VMG8825-T50](images/zyxelvmg8825t50.jpg){.thumbnail}|
-|[Zyxel VMG8623-T50B](./#reinitialiser-un-modele-zyxel-vmg8623-t50b)| | |
-|![Zyxel VMG8623-T50B](images/zyxelvmg8623t50b.jpg){.thumbnail}| | |
+|[TG788vn/TG788vn V2](./#reinitialiser-un-modele-tg788vn-ou-tg788vn-v2)|[TG789vn](./#reinitialiser-un-modele-tg789vn)|
+|---|---|
+|![TG788vn / TG788vn V2](images/tg788.png){.thumbnail}|![TG789vn](images/tg789vn.png){.thumbnail}|
+|[TG799vac](./#reinitialiser-un-modele-tg799vac)| |
+|![TG799vac](images/t799vac.png){.thumbnail}| |
+|[Zyxel VMG8924-B10D](./#reinitialiser-un-modele-zyxel-vmg8924-b10d)|[Zyxel VMG8823-B50B](./#reinitialiser-un-modele-zyxel-vmg8823-b50b)|
+|![Zyxel VMG8924-B10D](images/zyxelb10d.png){.thumbnail}|![Zyxel VMG8823-B50B](images/zyxelb50b.png){.thumbnail}|
+|[Zyxel VMG8825-T50](./#reinitialiser-un-modele-zyxel-vmg8825-t50)|[Zyxel VMG8623-T50B](./#reinitialiser-un-modele-zyxel-vmg8623-t50b)|
+|![Zyxel VMG8825-T50](images/zyxelvmg8825t50.jpg){.thumbnail}|![Zyxel VMG8623-T50B](images/zyxelvmg8623t50b.jpg){.thumbnail}|
 
 #### Réinitialiser un modèle TG788vn ou TG788vn V2
 
