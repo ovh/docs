@@ -1,7 +1,7 @@
 ---
-title: 'Meinen OVHcloud Account absichern und meine persönlichen Informationen verwalten'
+title: 'OVHcloud Kunden-Account absichern und persönliche Informationen verwalten'
 slug: alles_uber_ihre_ovh_kundenkennung
-excerpt: 'Erfahren Sie, wie Sie die Sicherheit Ihres OVHcloud Accounts optimieren, Ihre persönlichen Informationen verwalten und den Zugriff auf Ihren Account delegieren.'
+excerpt: 'Erfahren Sie hier, wie Sie die Account-Sicherheit optimieren, Ihre persönlichen Informationen verwalten und den Zugriff auf Ihren Account delegieren'
 section: 'Erste Schritte'
 order: 3
 ---
@@ -10,12 +10,12 @@ order: 3
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Stand 01.07.2021**
+**Letzte Aktualisierung am 01.07.2021**
 
 ## Ziel
 
 Ihre Dienste und Daten werden hauptsächlich über das OVHcloud Kundencenter verwaltet.
-Daher ist es von entscheidender Bedeutung, bewährte Verfahren für die Verwaltung Ihres Accounts anzuwenden, um den Zugang zu sichern und zu erhalten.
+Daher ist es von entscheidender Bedeutung, bewährte Verfahren für die Verwaltung Ihres Accounts anzuwenden, um den Zugang abzusichern.
 
 Das OVHcloud Kundencenter erlaubt es Ihnen auch, Ihre persönlichen Daten zu verwalten und den Zugriff auf Ihre Dienstleistungen anderen Nutzern zu übertragen.
 
@@ -23,122 +23,122 @@ Das OVHcloud Kundencenter erlaubt es Ihnen auch, Ihre persönlichen Daten zu ver
 
 ## Voraussetzungen
 
-- Sie haben [Ihren OVHcloud Account erstellt](https://docs.ovh.com/de/customer/ovhcloud-account-erstellen/)
+- Sie haben [Ihren OVHcloud Kunden-Account erstellt](https://docs.ovh.com/de/customer/ovhcloud-account-erstellen/)
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet.
 
 > [!primary]
-> Bei Verbindungsschwierigkeiten zu Ihrem Account lesen Sie den Abschnitt "[Ich kann mich nicht](https://docs.ovh.com/de/customer/sich-mit-ovhcloud-kundencenter-verbinden/#login-failure) einloggen"in unserer Anleitung "[In das OVHcloud Kundencenter einloggen](https://docs.ovh.com/de/customer/sich-mit-ovhcloud-kundencenter-verbinden/)".
+> Bei Verbindungsschwierigkeiten zu Ihrem Account lesen Sie den [entsprechenden Abschnitt in unserer Anleitung "In das OVHcloud Kundencenter einloggen"](https://docs.ovh.com/de/customer/sich-mit-ovhcloud-kundencenter-verbinden/#login-failure).
 >
 
 ## In der praktischen Anwendung
 
-In dieser Anleitung erfahren Sie:
+Die folgenden Anweisungen enthalten zu:
 
-- [bewährte Verfahren zur Verwaltung und Absicherung des OVHcloud-Accounts](#best-practices);
-- [wie Sie Ihre persönlichen Angaben verwalten und ändern](#personal-information);
-- [wie können Sie die Zugriffe auf Ihren OVHcloud Account absichern](#delegation)?
+- [bewährten Verfahren zur Verwaltung und Absicherung des OVHcloud Kunden-Accounts](#best-practices).
+- [Verwaltung und Anpassung Ihrer persönlichen Angaben](#personal-information).
+- [Absicherung der Zugriffe auf Ihren Account](#delegation).
 
-### Gute Verwaltungspraxis für den OVHcloud Account <a name="best-practices"></a>
+### Best Practices zur Verwaltung des OVHcloud Kunden-Accounts <a name="best-practices"></a>
 
-Die unten aufgeführten bewährten Verfahren müssen bei der Erstellung Ihres OVHcloud Accounts angewendet werden, um die Sicherheit Ihrer Dienste und Daten zu optimieren.
+Die unten aufgeführten bewährten Verfahren sollten bei der Erstellung Ihres Accounts angewendet werden, um die Sicherheit Ihrer Dienste und Daten zu optimieren.
 
-### Ein solides und einzigartiges Passwort erstellen
+### Ein starkes und einzigartiges Passwort erstellen
 
-Die Sicherheit Ihrer Dienste und Daten hängt von der Effektivität Ihres Passworts ab. Es muss komplex, einzigartig **und regelmäßig erneuert werden**.
+Die Sicherheit Ihrer Dienste und Daten hängt von der Effektivität Ihres Passworts ab. Es muss komplex und einzigartig sein und sollte **regelmäßig erneuert werden**.
 
-Alle Empfehlungen zu den Passwörtern finden Sie in unserer Anleitung "[Passwort Ihres Accounts ändern](https://docs.ovh.com/de/customer/Passwort-verwalten/)".
+Alle Empfehlungen zu Passwörtern finden Sie in unserer [Anleitung zur Passwortänderung](https://docs.ovh.com/de/customer/Passwort-verwalten/).
 
 #### Passwort speichern
 
 Wenn Sie das noch nicht getan haben, speichern Sie Ihr Passwort in einem [Passwort-Manager](https://docs.ovh.com/de/customer/Passwort-verwalten/#einen-passwort-manager-verwenden).
 
 > [!primary]
-> Die **Keepass** und **Bitwarden** Programme sind kostenlose und rechtefreie Passwortmanager.
+> **Keepass** und **Bitwarden** sind kostenlose Open-Source-Passwortmanager.
 >
 
-#### Eine Ersatz-E-Mail-Adresse hinzufügen <a name="backup-email"></a>
+#### Eine sekundäre E-Mail-Adresse hinzufügen <a name="backup-email"></a>
 
 Bei Schwierigkeiten beim Zugriff auf Ihre Haupt-E-Mail-Adresse können Sie über eine Backup-E-Mail-Adresse den Zugang zu Ihrem Account und damit zur Verwaltung Ihrer Dienstleistungen behalten.
-<br>Diese zweite **Adresse muss** sich von der ersten unterscheiden, um Ihnen insbesondere den Vorgang beim Abruf des Passworts zu erleichtern.
+<br>Diese zweite Adresse **muss sich von der ersten unterscheiden**, insbesondere zur Erleichterung der Prozedur im Falle einer Passwortwiederherstellung.
 
-Um diese Backup-E-Mail-Adresse einzugeben, klicken Sie oben rechts neben Ihrem Account auf Ihren Namen und anschließend auf Ihre Initialen.
+Um diese Backup-E-Mail-Adresse zu hinterlegen, klicken Sie oben rechts neben Ihrem Account auf Ihren Namen und anschließend auf Ihre Initialen.
 
 Klicken Sie dann im Rahmen `Mein Profil` auf den Button `...`{.action} und dann auf `Profil bearbeiten`{.action}.
 
 ![Alternative E-Mail-Adresse](images/edit-profile.png){.thumbnail}
 
 > [!warning]
-> Zur Erinnerung: **Es ist** unerlässlich, dass sich die **Backup-E-Mail-Adresse** von der Haupt-E-Mail-Adresse des Accounts unterscheidet.
+> Zur Erinnerung: Es ist sehr wichtig, dass sich die **Backup-E-Mail-Adresse** von der **Haupt-E-Mail-Adresse** des Accounts **unterscheidet**.
 >
-> Vermeiden Sie die Verwendung von E-Mail-Adressen, die zu einer Domain gehören, die Sie über Ihr Kundencenter verwalten. Bei einer Unterbrechung der Nutzung dieser Domain erhalten Sie unsere Benachrichtigungen nicht mehr.
+> Vermeiden Sie hierbei generell E-Mail-Adressen mit Domainnamen, die über denselben Kunden-Account verwaltet werden. Sollte der Domainname eine Dienstunterbrechung erleiden, erhalten Sie unsere Benachrichtigungen nicht mehr.
 >
 
 #### Die Zwei-Faktor-Authentifizierung aktivieren
 
-Die Zwei-Faktor-Authentifizierung erhöht die Sicherheit Ihres OVHcloud Accounts.
+Die Zwei-Faktor-Authentifizierung erhöht die Sicherheit Ihres OVHcloud Kunden-Accounts.
 
-Weitere Informationen zur Aktivierung finden Sie in unserer Anleitung "[Den OVHcloud Account mit Zwei-Faktor-Authentifizierung](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)" sichern.
+Weitere Informationen zur Aktivierung finden Sie in unserer Anleitung "[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)" sichern.
 
 > [!primary]
-> Die Aktivierung der Zwei-Faktor-Authentifizierung für Ihren OVHcloud-Account ist eine obligatorische Voraussetzung, um die Anforderungen [für das Hosting von Gesundheitsdaten in Frankreich (HDS) zu erfüllen](https://www.ovhcloud.com/de/enterprise/certification-conformity/hds/).
+> Die Aktivierung der Zwei-Faktor-Authentifizierung für Ihren OVHcloud Kunden-Account ist eine obligatorische Voraussetzung für das [Hosting von Gesundheitsdaten (HDS Zertifizierung)](https://www.ovhcloud.com/de/enterprise/certification-conformity/hds/).
 
-### Wie verwaltet man meine persönlichen Angaben? <a name="personal-information"></a>
+### Persönliche Daten im Account verwalten <a name="personal-information"></a>
 
 #### Meine persönlichen Angaben ändern
 
-Sie können die Angaben Ihres Accounts über Ihr OVHcloud [Kundencenter ändern](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie hierzu in Ihrem Kundencenter oben rechts auf Ihren Namen und anschließend auf Ihre Initialen.
+Sie können die Daten Ihres Kunden-Accounts über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ändern. Klicken Sie hierzu in Ihrem Kundencenter oben rechts auf Ihren Namen und anschließend auf Ihre Initialen.
 
 Klicken Sie dann auf den Button `...`{.action} im Rahmen `Mein Profil` und dann auf `Profil bearbeiten`{.action}.
 
 ![Kundenkennung](images/edit-profile.png){.thumbnail}
 
-Ändern Sie Ihre Angaben und klicken sie danach auf den Button `Bestätigen`{.action}.
+Bearbeiten Sie Ihre Angaben und klicken sie danach auf den Button `Bestätigen`{.action}.
 
 > [!warning]
 >
-> Es ist wichtig, dass Ihre persönlichen Daten **aktuell** und **korrekt** sind. Sie werden bei Ihren Kontakten mit dem OVHcloud Kundendienst angefragt und Sie müssen in der Lage sein, die Richtigkeit der Angaben gegebenenfalls zu begründen (Beispiel: Bei einem Vorgang zum Ändern der E-Mail-Adresse können Sie einen Adressnachweis verlangen, der mit der Adresse identisch ist, die in Ihrem Account angegeben ist.)
+> Es ist wichtig, dass Ihre persönlichen Daten **aktuell** und **korrekt** sind. Sie werden beim Kontaktieren des OVHcloud Kundendienstes angefragt und Sie müssen in der Lage sein, die Richtigkeit der Angaben gegebenenfalls nachzuweisen (Beispiel: Bei einem Vorgang zum Ändern der E-Mail-Adresse kann ein Adressnachweis verlangt werden, der die Adresse bestätigt die in Ihrem Account hinterlegt ist.)
 >
 
 #### Die Haupt-E-Mail-Adresse ändern
 
-Wenn Sie eine neue Haupt-Kontaktadresse eingeben möchten, wird Ihnen ein Code an Ihre aktuelle Haupt-E-Mail-Adresse gesendet, um die neue Adresse zu bestätigen. Wenn Sie diesen Code erhalten haben, klicken Sie auf den Button `Ich habe meinen Validierungscode erhalten`{.action}.
+Wenn Sie eine neue Haupt-Kontaktadresse eingeben möchten, wird Ihnen ein Code an Ihre aktuelle Haupt-E-Mail-Adresse gesendet, um die Änderung zu bestätigen. Wenn Sie diesen Code erhalten haben, klicken Sie auf den Button `Ich habe meinen Validierungscode erhalten`{.action}.
 
 ![Kundenkennung](images/nichandle07.png){.thumbnail}
 
-Geben Sie den Code im Feld `Validierungscode ein` und bestätigen Sie.
+Geben Sie den Code im Feld `Validierungscode` ein und bestätigen Sie.
 
 ![Kundenkennung](images/nichandle08.png){.thumbnail}
 
 #### Account-Typ ändern
 
-Klicken Sie auf den `Account-Typ`, wenn Sie Ihr Profil bearbeiten. Mit einem Drop-down-Menü können Sie den Account-Typ Ihrer Situation festlegen.
+Klicken Sie auf den `Account-Typ`, wenn Sie Ihr Profil bearbeiten. Mit einem Drop-down-Menü können Sie den Account-Typ Ihrem Status gemäß anpassen.
 
 ![Kundenkennung](images/nichandle09.png){.thumbnail}
 
-Wenn Sie Ihre Angaben eingegeben haben, klicken Sie auf den Button `Bestätigen`{.action}.
+Wenn Sie Ihre Angaben fertiggestellt haben, klicken Sie auf den Button `Bestätigen`{.action}.
 
 #### Ausübung meiner Rechte an meinen persönlichen Daten
 
-In Übereinstimmung mit der Datenschutz-Grundverordnung (DSGVO) können Sie über [dieses Formular](https://www.ovh.de/schutz-personenbezogener-daten/rechte-ausueben){.external} beantragen, Ihre Rechte in Bezug auf den Schutz Ihrer personenbezogenen Daten auszuüben.
+In Übereinstimmung mit der Datenschutz-Grundverordnung (DSGVO) können Sie [dieses Formular](https://www.ovh.de/schutz-personenbezogener-daten/rechte-ausueben){.external} verwenden, um Ihre Rechte in Bezug auf den Schutz Ihrer personenbezogenen Daten auszuüben.
 
-#### Meinen OVHcloud Account löschen
+#### Meinen OVHcloud Kunden-Account löschen
 
-Sie können beantragen, Ihren OVHcloud Account und die zugehörigen Daten zu löschen, indem Sie das Formular zur Ausübung [der DSGVO](https://www.ovh.de/schutz-personenbezogener-daten/rechte-ausueben){.external}-Rechte ausfüllen und dort das "Recht auf Löschung"auswählen.
+Sie können beantragen, Ihren OVHcloud Kunden-Account und die zugehörigen Daten zu löschen, indem Sie das Formular zur [Ausübung der DSGVO-Rechte](https://www.ovh.de/schutz-personenbezogener-daten/rechte-ausueben){.external} ausfüllen und dort das "Recht auf Löschung" auswählen.
 
 > [!warning]
 >
-> Die Löschung Ihres OVHcloud Accounts setzt voraus, dass folgende Bedingungen erfüllt sind:
+> Die Löschung Ihres OVHcloud Kunden-Accounts setzt voraus, dass folgende Bedingungen erfüllt sind:
 >
 > - Ihr Account darf keine Dienstleistungen mehr enthalten.
 >
-> - Ihr Account enthält keine offenen Rechnungen oder unbezahlten Bestellungen
+> - Ihr Account enthält keine offenen Rechnungen oder unbezahlten Bestellungen.
 >
 
 ### Zugriff auf meinen Account verwalten <a name="delegation"></a>
 
 Die Login-Daten Ihres Accounts sollten nie mit anderen Personen geteilt oder in irgendeiner Weise weitergegeben werden.
 
-Es kann jedoch vorkommen, dass Sie den Zugriff auf Ihre OVHcloud Dienste mit Dritten teilen möchten, egal ob es sich dabei um Mitglieder Ihres Unternehmens (zum Beispiel den Webmaster) oder um unabhängige Einheiten (zum Beispiel eine Buchhaltungsfirma) handelt.
+Es kann jedoch vorkommen, dass Sie den Zugriff auf Ihre OVHcloud Dienste mit Dritten teilen möchten, egal ob es sich dabei um Mitglieder Ihres Unternehmens (zum Beispiel eine technisch zuständige Person) oder um externe Dienstleister (zum Beispiel eine Buchhaltungsfirma) handelt.
 
 In diesem Fall ermöglicht es Ihnen OVHcloud, anderen Parteien Zugriff auf Ihren Account zu gewähren und gleichzeitig Ihre Login-Daten (Passwort, Zwei-Faktor-Authentifizierung) zu schützen.
 
@@ -148,13 +148,13 @@ Ein Benutzer kann Lese- und Schreibrechte für Ihren Account und alle Ihre Diens
 
 So bleibt nicht nur Ihr eigener Zugang zum Account durch die Zwei-Faktor-Authentifizierung gesichert, sondern jeder Benutzer verfügt über:
 
-- eigene Kennung;
-- sein eigenes Passwort;
-- ihre eigene Zwei-Faktor-Authentifizierung.
+- eigene Kennung
+- ein eigenes Passwort
+- eine eigene Zwei-Faktor-Authentifizierung.
 
-Als Hauptbenutzer des Accounts verwalten Sie weiterhin die Benutzer und deren Rechte.
+Als Inhaber des OVHcloud Kunden-Accounts verwalten Sie weiterhin die Benutzer und deren Rechte.
 
-Weitere Informationen finden Sie in [der Anleitung zur Benutzerverwaltung](https://docs.ovh.com/de/customer/benutzer-verwalten/).
+Weitere Informationen finden Sie in der [Anleitung zur Benutzerverwaltung](https://docs.ovh.com/de/customer/benutzer-verwalten/).
 
 #### Kontakte verwalten
 
@@ -168,12 +168,12 @@ Wenn Sie eine verdächtige Aktivität auf Ihrem Account feststellen, [kontaktier
 
 ## Weiterführende Informationen
 
-[Passwort Ihres Accounts ändern](https://docs.ovh.com/de/customer/Passwort-verwalten/)
+[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](https://docs.ovh.com/de/customer/Passwort-verwalten/)
 
-[Den Account bei OVHcloud mit der Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)
+[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)
 
 [In das OVHcloud Kundencenter einloggen](https://docs.ovh.com/de/customer/sich-mit-ovhcloud-kundencenter-verbinden/)
 
-[Bei fehlender Verbindung zum Kundencenter](https://docs.ovh.com/de/customer/sich-mit-ovhcloud-kundencenter-verbinden/#login-failure)
+[Bei fehlschlagendem Login ins Kundencenter](https://docs.ovh.com/de/customer/sich-mit-ovhcloud-kundencenter-verbinden/#login-failure)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
