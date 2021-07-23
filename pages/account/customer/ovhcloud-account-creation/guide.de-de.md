@@ -17,7 +17,7 @@ order: 1
 Um die Dienste von OVHcloud zu nutzen muss zuerst ein Kunden-Account erstellt werden.
 Die Erstellung eines Accounts kann vor oder während der Bestellung Ihres ersten OVHcloud Dienstes erfolgen.
 
-**In dieser Anleitung erfahren Sie, wie Sie einen OVHcloud Kunden-Account erstellen.**
+**Diese Anleitung erklärt, wie Sie einen OVHcloud Kunden-Account erstellen.**
 
 ## Voraussetzungen
 
