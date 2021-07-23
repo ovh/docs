@@ -22,7 +22,7 @@ Um unbefugte Transferanfragen zu verhindern, sind Domains in der Regel vom Regis
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bei OVHcloud registrierte [Domain](https://www.ovh.de/domains/).
+- Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](https://www.ovh.de/domains/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zum Verwalten der Domain (Domainadministrator).
 - Die Registrierung der betreffenden Domain erfolgte vor mindestens 60 Tagen und sie wurde in den letzten 60 Tagen weder transferiert noch übertragen (Inhaberwechsel).
 
