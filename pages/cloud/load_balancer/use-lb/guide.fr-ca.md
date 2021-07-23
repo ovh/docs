@@ -31,7 +31,7 @@ Sur cette page principale, vous trouverez les informations suivantes:
 |Statut|Résumé de votre Répartiteur de charge avec le nom du service, les serveurs frontaux (frontends), les fermes fonctionnelles et les serveurs ajoutés|
 |Utilisation|Un récapitulatif de l'utilisation de votre Répartiteur de charge|
 |Graphiques|Ici vous trouverez les graphiques liés à votre service en connexions simultanées ou en nombre de requêtes par minute|
-|Informations|Votre IPv4, IPv6 et les IP failover liées ainsi que le nombre d'IPv4 de sortie (détail en cliquant sur les points de suspension)|
+|Informations|Votre IPv4 et les IP failover liées ainsi que le nombre d'IPv4 de sortie (détail en cliquant sur les points de suspension)|
 |Configuration|Ici vous pourrez personnaliser le nom de votre solution (qui apparaîtra en haut et dans la colonne de gauche). Le(s) texte(s) chiffré(s), qui sont personnalisables, ainsi que le centre de données où se situe votre Répartiteur de charge|
 |Abonnement|Vous trouverez ici les détails administratifs de votre solution|
 
