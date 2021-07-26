@@ -3,7 +3,7 @@ title: 'Criar um acesso à interface Horizon'
 slug: criar_um_acesso_a_interface_horizon
 legacy_guide_number: 1773
 excerpt: 'Saiba como aceder à interface Horizon'
-section: 'A partir da interface Horizon'
+section: Gestão a partir do Horizon
 order: 1
 ---
 

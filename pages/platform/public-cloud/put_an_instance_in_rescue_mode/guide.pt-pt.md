@@ -3,6 +3,7 @@ title: 'Passar uma instância em modo de rescue'
 excerpt: 'Passar uma instância em modo de rescue'
 slug: passar_uma_instancia_em_modo_de_rescue
 legacy_guide_number: g2029
+section: Gestão a partir da Área de Cliente OVHcloud
 ---
 
 **Última atualização: 4 de dezembro de 2019**

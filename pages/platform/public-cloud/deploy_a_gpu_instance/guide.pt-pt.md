@@ -2,7 +2,7 @@
 title: 'Criar uma instância GPU'
 slug: criar-uma-instancia-gpu
 excerpt: 'Saiba como criar uma instância GPU em Linux ou Windows'
-section: 'A partir da Área de Cliente OVH'
+section: Gestão a partir da Área de Cliente OVHcloud
 ---
 
 **Última atualização a 6 de dezembro de 2019**

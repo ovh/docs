@@ -3,6 +3,7 @@ title: 'Aumentar o tamanho de um disco suplementar'
 excerpt: 'Este guia explica como aumentar o tamanho de um disco suplementar, bem como expandir a sua partição principal.'
 slug: aumentar_o_tamanho_de_um_disco_suplementar
 legacy_guide_number: g1865
+section: Armazenamento
 ---
 
 **Última atualização a 14 de Novembro de 2019**

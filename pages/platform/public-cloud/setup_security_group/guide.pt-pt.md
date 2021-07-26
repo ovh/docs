@@ -3,6 +3,7 @@ title: Configurar um grupo de segurança
 excerpt: Configurar um grupo de segurança
 slug: configurar_um_grupo_de_seguranca
 legacy_guide_number: g1925
+section: Gestão a partir do Horizon
 ---
 
 

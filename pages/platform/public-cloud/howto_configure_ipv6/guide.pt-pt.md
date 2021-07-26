@@ -2,6 +2,7 @@
 title: 'Configurar o IPv6 numa instância Public Cloud'
 slug: configurar-ipv6
 excerpt: 'Tutorial de configuração do protocolo IPv6 numa instância Public Cloud'
+section: Rede
 ---
 
 **Última atualização: 05/02/2020**

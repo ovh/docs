@@ -3,6 +3,7 @@ title: 'Modificar os servidores DNS de uma instância'
 excerpt: 'Modificar os servidores DNS padrão de uma instância Public Cloud'
 slug: modificar_os_servidores_dns_de_uma_instancia
 legacy_guide_number: g1985
+section: Rede
 ---
 
 **Última atualização: 18/11/2019**

@@ -3,6 +3,7 @@ title: Configurar um IP LoadBalancing
 excerpt: Configurar um IP LoadBalancing
 slug: configurar_um_ip_loadbalancing
 legacy_guide_number: g1927
+hidden: true
 ---
 
 

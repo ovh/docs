@@ -3,7 +3,7 @@ title: 'Carregar as variáveis de ambiente OpenStack'
 excerpt: 'Aprenda a carregar as suas variáveis de ambiente para utilizar a API do OpenStack'
 slug: carregar-as-variaveis-de-ambiente-openstack
 legacy_guide_number: 1852
-section: 'A partir da API e linhas de comandos'
+section: Gestão via OpenStack
 ---
 
 **Última atualização: 20/11/2019**

@@ -3,6 +3,7 @@ title: Reiniciar uma instância
 excerpt: Como reiniciar uma instância na interface Horizon
 slug: reiniciar_uma_instancia
 legacy_guide_number: g1771
+section: Gestão a partir do Horizon
 ---
 
 

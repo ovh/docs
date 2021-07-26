@@ -3,6 +3,7 @@ title: Configurar um IP Failover a quente
 excerpt: Configurar um IP Failover a quente
 slug: configurar_um_ip_failover_a_quente
 legacy_guide_number: g1884
+section: Rede
 ---
 
 

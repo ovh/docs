@@ -2,7 +2,7 @@
 title: Importe a sua própria imagem
 slug: importar-a-sua-propria-imagem
 excerpt: Saiba como importar a sua própria imagem para o Public Cloud
-section: OpenStack
+section: Gestão via OpenStack
 order: 10
 ---
 

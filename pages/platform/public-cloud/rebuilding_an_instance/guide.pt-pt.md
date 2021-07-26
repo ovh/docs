@@ -3,6 +3,7 @@ title: '"Reconstruir" (reinstalar) uma instância'
 excerpt: Como reconstruir uma instância na interface Horizon.
 slug: reconstruir_reinstalar_uma_instancia
 legacy_guide_number: g1779
+section: Gestão a partir do Horizon
 ---
 
 

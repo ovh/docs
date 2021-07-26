@@ -3,6 +3,7 @@ title: 'Criar / Restaurar um servidor virtual a partir de um backup'
 excerpt: 'Criar / Restaurar um servidor virtual a partir de um backup'
 slug: criar_restaurar_um_servidor_virtual_a_partir_de_um_backup
 legacy_guide_number: g1882
+section: Gestão a partir da Área de Cliente OVHcloud
 ---
 
 > [!primary]

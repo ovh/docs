@@ -2,7 +2,7 @@
 title: 'Usar uma chave SSH na interface Public Cloud'
 slug: usar-uma-chave-ssh-na-interface-public-cloud
 excerpt: 'Documentação passo a passo sobre como usar uma chave SSH para simplificar o acesso aos servidores cloud'
-section: Segurança
+section: Gestão a partir da Área de Cliente OVHcloud
 order: 2
 ---
 
