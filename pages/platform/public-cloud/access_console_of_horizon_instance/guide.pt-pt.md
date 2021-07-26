@@ -3,6 +3,7 @@ title: Aceder à consola de uma instância na interface Horizon
 excerpt: Como aceder à consola de uma instância na interface Horizon.
 slug: aceder_a_consola_de_uma_instancia_na_interface_horizon
 legacy_guide_number: g1782
+section: Gestão a partir do Horizon
 ---
 
 

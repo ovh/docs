@@ -3,6 +3,8 @@ title: Avvia la tua istanza da un volume aggiuntivo
 excerpt: Avvia la tua istanza da un volume aggiuntivo
 slug: avvia_la_tua_istanza_da_un_volume_aggiuntivo
 legacy_guide_number: g2064
+section: Per iniziare
+order: 9
 ---
 
 

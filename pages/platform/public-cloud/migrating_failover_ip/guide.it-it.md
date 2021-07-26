@@ -3,6 +3,7 @@ title: 'Trasferisci il tuo IP Failover'
 excerpt: 'Trasferisci il tuo IP Failover'
 slug: trasferisci_il_tuo_ip_failover
 legacy_guide_number: g1890
+section: Rete
 ---
 
 **Ultimo aggiornamento 04/12/2019**

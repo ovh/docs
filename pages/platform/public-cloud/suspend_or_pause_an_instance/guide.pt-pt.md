@@ -3,6 +3,7 @@ title: Suspender ou colocar em pausa uma instância
 excerpt: Com suspender ou colocar em pausa uma instância a partir da interface Horizon.
 slug: suspender_ou_colocar_em_pausa_uma_instancia
 legacy_guide_number: g1781
+section: Gestão a partir do Horizon
 ---
 
 

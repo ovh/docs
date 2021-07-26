@@ -3,6 +3,7 @@ title: Instalar o Wordpress numa instância
 excerpt: Instalar o Wordpress numa instância
 slug: instalar_o_wordpress_numa_instancia
 legacy_guide_number: g2060
+section: Tutoriais
 ---
 
 

@@ -3,6 +3,7 @@ title: Editar uma instância
 excerpt: Como editar uma instância na interface Horizon
 slug: editar_uma_instancia
 legacy_guide_number: g1777
+section: Gestão a partir do Horizon
 ---
 
 

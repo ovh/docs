@@ -3,6 +3,7 @@ title: Dar os primeiros passos com a API Nova
 excerpt: Dar os primeiros passos com a API Nova
 slug: dar_os_primeiros_passos_com_a_api_nova
 legacy_guide_number: g1935
+section: Gestão via OpenStack
 ---
 
 

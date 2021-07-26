@@ -3,6 +3,7 @@ title: 'Importa un IP Failover'
 excerpt: 'Come importare un IP Failover nel tuo progetto Public Cloud.'
 slug: importa_un_ip_failover
 legacy_guide_number: g1883
+section: Rete
 ---
 
 **Ultimo aggiornamento 06/12/2019**

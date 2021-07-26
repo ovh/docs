@@ -3,6 +3,7 @@ title: 'Criar uma instância a partir do espaço Cliente OVH'
 excerpt: 'Saiba como criar uma instância na Área de Cliente Public Cloud OVHcloud'
 slug: criar_uma_instancia_a_partir_do_espaco_cliente_ovh
 legacy_guide_number: g1775
+section: Introdução
 ---
 
 **Última atualização a 30/03/2021**

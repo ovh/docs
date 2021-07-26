@@ -2,7 +2,7 @@
 title: 'Criação e conexão a uma primeira instância Public Cloud'
 slug: public-cloud-primeiros-passos
 excerpt: 'Saiba como dar os primeiros passos com o serviço Public Cloud depois da criação de um projeto'
-section: 'Primeiros passos'
+section: Introdução
 order: 1
 ---
 

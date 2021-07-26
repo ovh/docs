@@ -3,6 +3,8 @@ title: 'Iniziare a utilizzare un’istanza Windows'
 excerpt: 'Come eseguire le prime operazioni su un’istanza Windows'
 slug: come_utilizzare_unistanza_windows
 legacy_guide_number: g1995
+section: Per iniziare
+order: 6
 ---
 
 **Ultimo aggiornamento: 11/07/2019**

@@ -3,6 +3,7 @@ title: Installa Wordpress sulla tua istanza
 excerpt: Installa Wordpress sulla tua istanza
 slug: installa_wordpress_sulla_tua_istanza
 legacy_guide_number: g2060
+section: Tutorial
 ---
 
 

@@ -2,7 +2,7 @@
 title: 'Modificare la password di un utente OpenStack in Horizon'
 excerpt: 'Scopri come modificare una password utente nell’interfaccia Horizon'
 slug: modifica-della-password-di-un-utente-openstack
-section: 'Dall’interfaccia Horizon'
+section: Gestione da Horizon
 ---
 
 **Ultimo aggiornamento: 24/08/2018**

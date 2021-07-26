@@ -28,7 +28,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Mac? Refer to our documentation: [Configuring your Exchange account in Outlook 2016 for Mac.](../configuration-outlook-2016-mac/)
+> Are you using Outlook 2016 for Mac? Refer to our documentation: [Configuring your Exchange account in Outlook 2016 for Mac](../exchange-configuration-outlook-2016-mac/).
 >
 
 ## Instructions

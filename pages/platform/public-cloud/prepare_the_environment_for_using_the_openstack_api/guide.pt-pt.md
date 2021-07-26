@@ -3,6 +3,7 @@ title: 'Preparar o ambiente para utilizar a API OpenStack'
 slug: preparar_o_ambiente_para_utilizar_a_api_openstack
 excerpt: 'Instale o ambiente OpenStack para controlar as suas instâncias através da API'
 legacy_guide_number: g1851
+section: Gestão via OpenStack
 ---
 
 **Última atualização: 23/04/2019**

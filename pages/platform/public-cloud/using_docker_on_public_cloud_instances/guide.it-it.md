@@ -3,6 +3,7 @@ title: Utilizza Docker Machine sulle tue istanze Public Cloud
 excerpt: Utilizza Docker Machine sulle tue istanze Public Cloud
 slug: utilizza_docker_machine_sulle_tue_istanze_public_cloud
 legacy_guide_number: g2014
+section: Tutorial
 ---
 
 
