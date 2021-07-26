@@ -1,7 +1,7 @@
 ---
 title: 'Criar e eliminar um utilizador OpenStack'
 slug: criar-e-eliminar-um-utilizador-openstack
-section: OpenStack
+section: Gestão do projeto
 ---
 
 **Última atualização: 6 de dezembro de 2019**

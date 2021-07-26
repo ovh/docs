@@ -3,6 +3,7 @@ title: Configurar a reverse DNS de uma instância
 excerpt: Configurar a reverse DNS de uma instância
 slug: configurar_a_reverse_dns_de_uma_instancia
 legacy_guide_number: g1940
+section: Gestão a partir da Área de Cliente OVHcloud
 ---
 
 

@@ -3,6 +3,7 @@ title: 'Criar uma cópia de segurança de uma instância'
 excerpt: 'Saiba como criar uma cópia de segurança de uma instância Public Cloud em apenas alguns cliques'
 slug: efetuar_backup_de_uma_instancia
 legacy_guide_number: g1881
+section: Gestão a partir da Área de Cliente OVHcloud
 ---
 
 **Última atualização: 22/11/2019**

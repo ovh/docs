@@ -2,6 +2,7 @@
 title: 'Configurar um IP Failover'
 slug: configurer-une-ip-failover
 excerpt: 'Saiba como adicionar endereços IP Failover à configuração da sua instância'
+section: Rede
 ---
 
 > [!primary]

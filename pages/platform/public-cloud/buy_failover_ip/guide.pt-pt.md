@@ -3,7 +3,7 @@ title: 'Adicionar um IP failover'
 slug: adicionar-um-ip-failover
 excerpt: 'Descubra como encomendar endereços IP Failover para as suas instâncias'
 legacy_guide_number: 2030
-section: 'Gestão do projeto'
+section: Rede
 ---
 
 **Última atualização: 21/11/2019**

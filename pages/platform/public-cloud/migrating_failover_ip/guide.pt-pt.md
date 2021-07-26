@@ -3,6 +3,7 @@ title: 'Migrar um IP Failover'
 excerpt: 'Migrar um IP Failover'
 slug: migrar_um_ip_failover
 legacy_guide_number: g1890
+section: Rede
 ---
 
 **Última atualização: 4 de dezembro de 2019**
