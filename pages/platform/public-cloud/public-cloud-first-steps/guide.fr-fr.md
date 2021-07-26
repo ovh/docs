@@ -1,9 +1,9 @@
 ---
-title: 'Création et connexion à une première instance Public Cloud'
+title: "Créer une première instance Public Cloud et s'y connecter"
 excerpt: 'Découvrez les bonnes pratiques pour bien débuter avec votre première instance Public Cloud'
 slug: premiers-pas-instance-public-cloud
 section: 'Premiers pas'
-order: 0
+order: 1
 ---
 
 **Dernière mise à jour le 30/03/2021**

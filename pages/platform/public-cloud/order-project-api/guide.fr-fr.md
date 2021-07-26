@@ -3,7 +3,7 @@ title: "Commander un projet Public Cloud via l'API OVHcloud"
 excerpt: "Découvrez comment commander votre projet Public Cloud avec l'API OVHcloud"
 slug: commander-projet-public-cloud-api
 section: Premiers pas
-order: 13
+order: 9
 ---
 
 **Dernière mise à jour le 22 décembre 2020**
