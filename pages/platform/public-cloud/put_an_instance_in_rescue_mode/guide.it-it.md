@@ -3,6 +3,7 @@ title: 'Riavvia la tua istanza in modalità di ripristino (Rescue mode)'
 excerpt: 'Come riavviare un’istanza in modalità di ripristino (Rescue mode)'
 slug: riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode
 legacy_guide_number: g2029
+section: Gestione dallo Spazio Cliente OVHcloud
 ---
 
 **Ultimo aggiornamento 04/12/2019**

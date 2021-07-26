@@ -3,6 +3,7 @@ title: Aggiungi una modalità di pagamento
 excerpt: Aggiungi una modalità di pagamento
 slug: aggiungi_una_modalita_di_pagamento
 legacy_guide_number: g1984
+hidden: true
 ---
 
 

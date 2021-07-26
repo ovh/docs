@@ -3,6 +3,7 @@ title: 'Modificare i contatti di un progetto'
 excerpt: 'Come modificare i contatti di un progetto'
 slug: change_project_contacts
 legacy_guide_number: g2106
+section: Gestione del progetto
 ---
 
 **Ultimo aggiornamento 06/12/2019**

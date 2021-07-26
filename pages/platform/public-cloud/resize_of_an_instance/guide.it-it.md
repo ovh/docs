@@ -3,6 +3,7 @@ title: Ridimensiona un’istanza
 excerpt: Ridimensiona un'istanza con Horizon
 slug: ridimensiona_unistanza
 legacy_guide_number: g1778
+section: Gestione da Horizon
 ---
 
 

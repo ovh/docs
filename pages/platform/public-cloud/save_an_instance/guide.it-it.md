@@ -3,7 +3,7 @@ title: "Effettuare lo Snapshot di un'istanza"
 slug: effettuare-snapshot-di-un-istanza
 excerpt: 'Come eseguire l’istantanea di un’istanza Public Cloud OVHcloud'
 legacy_guide_number: g1881
-section: 'Spazio Cliente OVH'
+section: Gestione dallo Spazio Cliente OVHcloud
 ---
 
 **Ultimo aggiornamento: 22/11/2019**

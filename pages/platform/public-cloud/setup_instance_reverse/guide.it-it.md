@@ -3,6 +3,7 @@ title: Configura il reverse DNS della tua istanza
 excerpt: Configura il reverse DNS della tua istanza
 slug: configura_il_reverse_dns_della_tua_istanza
 legacy_guide_number: g1940
+section: Gestione dallo Spazio Cliente OVHcloud
 ---
 
 

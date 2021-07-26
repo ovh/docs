@@ -3,6 +3,7 @@ title: Come utilizzare l’API Glance
 excerpt: Come utilizzare l'API Glance
 slug: come_utilizzare_lapi_glance
 legacy_guide_number: g2072
+section: Gestione via OpenStack
 ---
 
 

@@ -3,6 +3,7 @@ title: Accedi al pannello di gestione di un’istanza con Horizon
 excerpt: Accedi al pannello di gestione di un'istanza con Horizon
 slug: accedi_al_pannello_di_gestione_di_unistanza_con_horizon
 legacy_guide_number: g1782
+section: Gestione da Horizon
 ---
 
 

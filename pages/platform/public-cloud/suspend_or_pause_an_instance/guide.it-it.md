@@ -3,6 +3,7 @@ title: Sospendi o metti in pausa un’istanza
 excerpt: Sospendi o metti in pausa un'istanza con Horizon
 slug: sospendi_o_metti_in_pausa_unistanza
 legacy_guide_number: g1781
+section: Gestione da Horizon
 ---
 
 

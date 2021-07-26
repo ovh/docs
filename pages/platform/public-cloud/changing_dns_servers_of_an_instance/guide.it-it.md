@@ -3,6 +3,7 @@ title: 'Modifica i server DNS della tua istanza'
 excerpt: 'Come modificare i server DNS di default di un’istanza Public Cloud'
 slug: modifica_i_server_dns_della_tua_istanza
 legacy_guide_number: g1985
+section: Rete
 ---
 
 **Ultimo aggiornamento: 18/11/2019**

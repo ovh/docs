@@ -1,6 +1,7 @@
 ---
 title: 'Creare e rimuovere un utente OpenStack'
 slug: creation-and-deletion-of-openstack-user
+section: Gestione del progetto
 ---
 
 **Ultimo aggiornamento 06/12/2019**

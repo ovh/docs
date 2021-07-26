@@ -3,6 +3,7 @@ title: Sostituisci la tua chiave SSH in caso di perdita
 excerpt: Sostituisci la tua chiave SSH in caso di perdita
 slug: sostituisci_la_tua_chiave_ssh_in_caso_di_perdita
 legacy_guide_number: g2069
+section: Gestione dallo Spazio Cliente OVHcloud
 ---
 
 
