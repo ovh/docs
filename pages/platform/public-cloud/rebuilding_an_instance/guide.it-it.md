@@ -3,6 +3,7 @@ title: Reinstalla un’istanza
 excerpt: Reinstalla un'istanza con Horizon
 slug: reinstalla_unistanza
 legacy_guide_number: g1779
+section: Gestione da Horizon
 ---
 
 

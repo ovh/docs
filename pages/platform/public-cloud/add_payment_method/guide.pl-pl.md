@@ -4,6 +4,7 @@ excerpt: Dodanie sposobu płatności
 slug: dodanie_sposobu_platnosci
 legacy_guide_number: g1984
 section: Informacje wprowadzające
+hidden: true
 ---
 
 

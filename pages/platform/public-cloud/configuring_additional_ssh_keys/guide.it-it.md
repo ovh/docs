@@ -3,6 +3,7 @@ title: Configura chiavi SSH aggiuntive
 excerpt: Configura chiavi SSH aggiuntive
 slug: configura_chiavi_ssh_aggiuntive
 legacy_guide_number: g1924
+section: Tutorial
 ---
 
 

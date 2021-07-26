@@ -3,6 +3,7 @@ title: Elimina un’istanza con Horizon
 excerpt: Elimina un'istanza con Horizon
 slug: elimina_unistanza_con_horizon
 legacy_guide_number: g1783
+section: Gestione da Horizon
 ---
 
 

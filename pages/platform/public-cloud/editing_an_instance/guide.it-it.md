@@ -3,6 +3,7 @@ title: Modifica un’istanza
 excerpt: Modifica un'istanza con Horizon
 slug: modifica_unistanza
 legacy_guide_number: g1777
+section: Gestione da Horizon
 ---
 
 

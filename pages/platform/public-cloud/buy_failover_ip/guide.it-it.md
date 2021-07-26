@@ -3,6 +3,7 @@ title: 'Acquista un IP Failover'
 excerpt: 'Acquista un IP Failover'
 slug: acquista_un_ip_failover
 legacy_guide_number: g2030
+section: Rete
 ---
 
 **Ultimo aggiornamento: 21/11/2019**

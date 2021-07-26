@@ -3,6 +3,7 @@ title: 'Crea e configura un disco aggiuntivo sulla tua istanza'
 excerpt: 'Come creare un disco aggiuntivo e configurarlo su una delle tue istanze.'
 slug: crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza
 legacy_guide_number: g1863
+section: Storage
 ---
 
 **Ultimo aggiornamento: 14/11/2019**

@@ -2,7 +2,7 @@
 title: 'Condividere un oggetto con un indirizzo temporaneo'
 slug: condividi_un_oggetto_con_un_indirizzo_temporaneo
 excerpt: 'Come condividere un oggetto senza fornire informazioni personali'
-section: 'Object Storage'
+section: Gestione via OpenStack
 legacy_guide_number: g2007
 ---
 

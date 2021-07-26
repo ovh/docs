@@ -3,6 +3,7 @@ title: Riavvia un’istanza
 excerpt: Riavvia un'istanza con Horizon
 slug: riavvia_unistanza
 legacy_guide_number: g1771
+section: Gestione da Horizon
 ---
 
 

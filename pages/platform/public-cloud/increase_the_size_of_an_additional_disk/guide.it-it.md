@@ -3,6 +3,7 @@ title: 'Aumenta la spazio del tuo disco aggiuntivo'
 excerpt: 'Come aumentare la spazio del tuo disco aggiuntivo e la sua partizione'
 slug: aumenta_la_spazio_del_tuo_disco_aggiuntivo
 legacy_guide_number: g1865
+section: Storage
 ---
 
 **Ultimo aggiornamento: 14/11/2019**
