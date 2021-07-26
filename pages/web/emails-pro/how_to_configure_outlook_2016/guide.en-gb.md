@@ -69,7 +69,7 @@ OVHcloud also has a web application you can use to access your email address fro
 
 ### Retrieving a backup of your email address
 
-If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](../migrate-email-addresses-manually/#exporting-from-windows).
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](../../emails/migrate-email-addresses-manually/#exporting-from-windows).
 
 ### Modifying existing settings
 
