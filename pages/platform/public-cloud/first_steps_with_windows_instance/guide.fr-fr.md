@@ -4,7 +4,7 @@ excerpt: 'Découvrez comment finaliser l’installation d’une instance Windows
 slug: debuter-avec-une-instance-windows
 legacy_guide_number: 1995
 section: 'Premiers pas'
-order: 8
+order: 6
 ---
 
 **Dernière mise à jour le 25/11/2019**
