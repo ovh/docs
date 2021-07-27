@@ -1,9 +1,9 @@
 ---
-title: 'Création et connexion à une première instance Public Cloud'
+title: "Créer une première instance Public Cloud et s'y connecter"
 excerpt: 'Découvrez les bonnes pratiques pour bien débuter avec votre première instance Public Cloud'
 slug: premiers-pas-instance-public-cloud
 section: 'Premiers pas'
-order: 0
+order: 1
 ---
 
 **Dernière mise à jour le 30/03/2021**
@@ -330,7 +330,6 @@ Ouvrez Remmina et assurez-vous que le protocole de connexion est défini sur "RD
 Si un message de certificat apparaît, cliquez sur `Oui`{.action}. Entrez ensuite le nom d'utilisateur et le mot de passe de l'instance puis cliquez sur `OK`{.action} pour établir la connexion.
 
 ![linux remote](images/linux-connect-03.png){.thumbnail}
-
 
 ## Allez plus loin
 
