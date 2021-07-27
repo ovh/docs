@@ -3,7 +3,7 @@ title: FAQ
 excerpt: 'FAQ pour les instances Public Cloud OVHcloud'
 slug: public-cloud-faq
 section: 'Premiers pas'
-order: 11
+order: 3
 ---
 
 ## FAQ Public Cloud
