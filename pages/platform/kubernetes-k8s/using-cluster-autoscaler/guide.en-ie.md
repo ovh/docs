@@ -28,7 +28,7 @@ order: 6
  }
 </style>
 
-**Last updated March 23<sup>rd</sup>, 2021.**
+**Last updated July 27<sup>th</sup>, 2021.**
 
 ## Objective
 
@@ -37,10 +37,6 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 During the day-to-day life of your cluster, you may want to dynamically adjust the size of your cluster to accommodate to your workloads. The cluster autoscaler simplifies the task by scaling up or down your OVHcloud Managed Kubernetes cluster to meet the demand of your workloads. 
 
 This guide will cover how to enable and manage the cluster autoscaler on your OVHcloud Managed Kubernetes cluster.
-
-> [!primary]
->
-> The cluster auto-scaler feature is currently a beta. We expect it to reach General Availability by Summer 2021. 
 
 ## Requirements
 
