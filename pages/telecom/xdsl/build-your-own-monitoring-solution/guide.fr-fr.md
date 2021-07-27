@@ -8,8 +8,8 @@ order: 5
 
 > [!warning]
 >
-> Ce guide est déprécié et concerne l'utilisation de l'offre OVHcloud Insight dont la fermeture est prévue pour le 26/10/2021
-> https://travaux.ovh.net/?do=details&id=51756
+> Ce guide est déprécié et concerne l'utilisation de l'offre OVHcloud Insight dont la fermeture est prévue pour le 26/10/2021.
+> Plus d'informations sur <http://travaux.ovh.net/?do=details&id=51756&>.
 >
 
 > [!primary]

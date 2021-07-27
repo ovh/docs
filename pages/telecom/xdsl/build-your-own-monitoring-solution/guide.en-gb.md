@@ -10,8 +10,8 @@ order: 5
 
 > [!warning]
 >
-> This guide is deprecated, the offer OVHcloud Insight used in this guide is plan to closed on 2021/10/26
-> https://travaux.ovh.net/?do=details&id=51756
+> This guide is deprecated, the OVHcloud Insight offer used in this guide is plannned to close on 2021/10/26.
+> More information on <http://travaux.ovh.net/?do=details&id=51756&>.
 >
 
 ## Objective
