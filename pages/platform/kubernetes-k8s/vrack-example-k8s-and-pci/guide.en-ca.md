@@ -313,7 +313,6 @@ NOTES:
 Your WordPress site can be accessed through the following DNS name from within your cluster:
 
     my-first-k8s-wordpress.default.svc.cluster.local (port 80)
-</code></pre>
 
 To access your WordPress site from outside the cluster follow the steps below:
 
@@ -332,6 +331,7 @@ To access your WordPress site from outside the cluster follow the steps below:
 
   echo Username: user
   echo Password: $(kubectl get secret --namespace default my-first-k8s-wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
+</code></pre>
 
 Then we can follow the instructions to get the Admin URL:
 
