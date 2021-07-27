@@ -3,6 +3,7 @@ title: 'Créer une instance dans votre espace client OVHcloud'
 excerpt: 'Ce guide vous montrera comment créer une instance dans votre projet Public Cloud'
 slug: create_an_instance_in_your_ovh_customer_account
 section: 'Premiers pas'
+hidden: true
 ---
 
 **Dernière mise à jour le 30/03/2021**
