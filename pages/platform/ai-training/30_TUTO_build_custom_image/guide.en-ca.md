@@ -35,9 +35,9 @@ FROM <base-image>
 
 > [!warning]
 >
-> If you want to be able to use **GPU** hardware on your **AI TRAINING jobs** the base image should have **cuda drivers installed on**.
+> If you want to be able to use **GPU** hardware on your **AI TRAINING jobs**, the base image should have **cuda drivers installed on**.
 
-Here is a list of base images (including **cuda drivers**) that OVHcloud use within notebooks :
+Here is a list of base images (including **cuda drivers**) that OVHcloud uses within notebooks :
 
 -   [pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime](https://hub.docker.com/r/pytorch/pytorch)
 -   [tensorflow/tensorflow:2.3.0-gpu](https://hub.docker.com/r/tensorflow/tensorflow)
@@ -107,7 +107,7 @@ docker build . -t <image-identifier>
 
 > [!primary]
 >
-> The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory
+> The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 
 > [!primary]
 >
@@ -123,7 +123,7 @@ docker run --rm -it --user=42420:42420 <image-identifier>
 
 > [!warning]
 >
-> Don't forget the `--user=42420:42420` argument if you want to simulate the exact same behavior that will occur on **AI TRAINING jobs**. It executes the docker container as the specific OVHcloud user (user **42420:42420**)
+> Don't forget the `--user=42420:42420` argument if you want to simulate the exact same behavior that will occur on **AI TRAINING jobs**. It executes the docker container as the specific OVHcloud user (user **42420:42420**).
 
 ## Push image in the registry of your choice
 
