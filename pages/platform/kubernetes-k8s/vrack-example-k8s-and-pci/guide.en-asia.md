@@ -158,20 +158,20 @@ By default, the root account has no password when connected from the localhost, 
 
 Let's create a `wordpress_db` database and a `wordpress_user` user:
 
-- Create the database:
+1\. Create the database:
 
     ```sql
     create database wordpress_db;
     ```
 
-- Create the user (with remote access) and grant privileges to this user on the new database:
+2\. Create the user (with remote access) and grant privileges to this user on the new database:
 
 
     ```sql
     grant all privileges on wordpress_db.* TO 'wordpress_user'@'%' identified by 'a_strong_password';
     ```
 
-- Apply the changes to be sure that the modifications on the MariaDB grant tables take effect immediately:
+3\. Apply the changes to be sure that the modifications on the MariaDB grant tables take effect immediately:
 
     ```sql
     flush privileges;
