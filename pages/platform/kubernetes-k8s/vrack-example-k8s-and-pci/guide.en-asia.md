@@ -5,7 +5,7 @@ section: Tutorials
 order: 10
 ---
 
-**Last updated June 17th<sup>th</sup>, 2021.**
+**Last updated July 27th<sup>th</sup>, 2021.**
 
 <style>
  pre {
