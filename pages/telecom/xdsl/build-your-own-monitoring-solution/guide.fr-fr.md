@@ -6,11 +6,17 @@ section: 'Diagnostic et dépannage'
 order: 5
 ---
 
+> [!warning]
+>
+> Ce guide est déprécié et concerne l'utilisation de l'offre OVHcloud Insight dont la fermeture est prévue pour le 26/10/2021
+> https://travaux.ovh.net/?do=details&id=51756
+>
+
 > [!primary]
 > Une version en langue anglaise de ce guide est disponible [ici](https://docs.ovh.com/gb/en/xdsl/build-your-own-monitoring-solution/)
 >
 
-**Dernière mise à jour le 11/06/2021**
+**Dernière mise à jour le 27/07/2021**
 
 ## Objectif
 
