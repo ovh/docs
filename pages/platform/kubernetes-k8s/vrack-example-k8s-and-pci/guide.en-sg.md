@@ -343,7 +343,7 @@ WordPress URL: http://152.228.251.63/
 ~$ echo "WordPress Admin URL: http://$SERVICE_IP/admin"
 WordPress Admin URL: http://152.228.251.63/admin  
 </code></pre>
-
+  
 And putting the URL in the browser will take us to the new blog, accessing the MariaDB database from the PCI instance via the vRack.
 
 ![Setting-up Wordpress](images/vrack-example-06.png){.thumbnail}
