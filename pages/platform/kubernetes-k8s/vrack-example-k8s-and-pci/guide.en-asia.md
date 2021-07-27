@@ -1,6 +1,6 @@
-title: Working with vRack example: Managed Kubernetes and Public Cloud instances
+---
+title: Working with vRack example - Managed Kubernetes and Public Cloud instances
 slug: vrack-example-k8s-and-pci
-excerpt: ''
 section: Tutorials
 order: 10
 ---
@@ -29,38 +29,38 @@ order: 10
  }
 </style>
 
-
-In this tutorial we are going to give you an example of how to use the OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/ to connect a Managed Kubernetes cluster with a Public Cloud instances inside the same private network in a vRack. 
-
-> [!warning]
-> The method described in this tutorial currently works when the Managed Kubernetes cluster and the external instance are in the same private network in the vRack. The process to connect then when they are in  *different* private networks will be described in a next tutorial. 
-
-## Before you begin
-
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
-
-You also need to have [Helm](https://docs.helm.sh/) installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
-
-It also supposes that you already have followed the [Using vRack](../using-vrack/) guide to activate vRack on your Public Cloud project and put your OVHcloud Managed Kubernetes cluster inside the vRack.
-
-## Objectives
+## Objective
 
 OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private network solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. At the same time, it allows you to add Public Cloud instances and Managed Kubernetes clusters to your private network to create an infrastructure of physical and virtual resources.
 
-In this tutorial we are going to activate the vRack on a Public Cloud project. Then we will create and put inside the vRack a Managed Kubernetes cluster and a Public Cloud instance (PCI). 
+In this tutorial, we are going to activate the vRack on a Public Cloud project. Then we will create a Managed Kubernetes cluster and a Public Cloud instance (PCI). Eventually, both of them will be added inside the vRack. 
 
 Concretely, we are going to install an OVHcloud Managed Kubernetes cluster and a Public Cloud instance, both of them in the same private network. We are going to deploy a  [Wordpress](https://wordpress.org/){.external} on the Kubernetes cluster that will connect using the private network to a [MariaDB database](https://mariadb.org/) installed in the Public Cloud instance.
 
+**In this tutorial we are going to give you an example of how to use the OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) to connect a Managed Kubernetes cluster with a Public Cloud instance inside the same private network.**
 
-## Setting-up the vRack
+> [!warning]
+> The method described in this tutorial currently works when the Managed Kubernetes cluster and the external instance are in the same private network in the vRack. The process to connect then when they are in  *different* private networks will be described in a next tutorial.
+>
 
-First of all, we will need to set up vRack Private Network for our Public Cloud. To do it, we follow the [Configuring vRack for Public Cloud](../../public-cloud/public-cloud-vrack/) guide. Once we have created a vRack and added it into a Private Network, you can continue. 
+## Requirements
 
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+
+You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+
+It also supposes that you already have followed the [Using vRack](../using-vrack/) guide to activate the vRack on your Public Cloud project and put your OVHcloud Managed Kubernetes cluster inside the vRack.
+
+
+## Instructions
+
+### Setting-up the vRack
+
+First of all, we will need to set up vRack Private Network for our Public Cloud. To do it, we follow the [Configuring vRack for Public Cloud](../../public-cloud/public-cloud-vrack/) guide. Once you have created a vRack and added it into a Private Network, you can continue. 
 
 ![Setting-up the vRack](images/vrack-example-01.png){.thumbnail}
 
-
-## Setting-up the Managed Kubernetes
+### Setting-up the Managed Kubernetes
 
 Then we create a Kubernetes cluster, as explained in the [Create a cluster](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) guide. Integrating a cluster into a vRack Private Network must be done at the third step on cluster creation, when we can choose an existing private network for the cluster:
 
@@ -68,13 +68,11 @@ Then we create a Kubernetes cluster, as explained in the [Create a cluster](http
 
 Our new cluster will be created inside the vRack Private Network we have chosen.
 
-
 In the Managed Kubernetes Service Dashboard, we can see the cluster, with the chosen private network in the *Attached network* column:
 
 ![Private network information in Attached network column](images/vrack-example-03.png){.thumbnail}
 
-
-## Setting-up the PCI
+### Setting-up the PCI
 
 Now we can create a new Public Cloud instance inside the vRack, by following the [Integrating an instance into vRack](../../public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1) guide.
 
@@ -86,7 +84,7 @@ In the fourth step of creation, we attach it to the private network we created b
 
 ![Setting-up PCI - Attaching to a private network](images/vrack-example-05.png){.thumbnail}
 
-After instance creation, we can see the connection details in the OVHcloud Control Panel.If we log in to the instance using SSH, we can see that it has two network interfaces, one attached to the public IP address we use to log is, the other attached to the private network:
+After instance creation, we can see the connection details in the OVHcloud Control Panel. If we log in to the instance using SSH, we can see that it has two network interfaces, one attached to the public IP address we use to log in, the other attached to the private network:
 
 <pre class="console"><code>horacio@my-laptop:~$ ssh ubuntu@51.68.xxx.xxx
 Enter passphrase for key '/home/horacio/.ssh/id_rsa':
@@ -103,9 +101,9 @@ ubuntu@example-vrack-k8s-pci:~$</code></pre>
 
 Please take note of the private network IP address (in my case `10.0.128.251`), as we will need to use it to configure Wordpress.
 
-## Setting-up MariaDB on the PCI
+### Setting-up MariaDB on the PCI
 
-### Intalling MariaDB
+#### Installing MariaDB
 
 The easiest way to install MariaDB in the PCI is to use the `apt` package manager:
 
@@ -148,8 +146,7 @@ No containers need to be restarted.
 
 No user sessions are running outdated binaries.</code></pre>
 
-
-### Creating a user and a database
+#### Creating a user and a database
 
 Now we can connect to the database using the `mysql` client:
 
@@ -159,23 +156,22 @@ sudo mysql
 
 By default, the root account has no password when connected from the localhost, so we directly arrive to the MariaDB CLI.
 
-
 Let's create a `wordpress_db` database and a `wordpress_user` user:
 
-1. Create the database:
+- Create the database:
 
     ```sql
     create database wordpress_db;
     ```
 
-1. Create the user (with remote access) and grant privileges to this user on the new database:
+- Create the user (with remote access) and grant privileges to this user on the new database:
 
 
     ```sql
     grant all privileges on wordpress_db.* TO 'wordpress_user'@'%' identified by 'a_strong_password';
     ```
 
-1. Apply the changes to be sure that the modifications on the MariaDB grant tables take effect immediately:
+- Apply the changes to be sure that the modifications on the MariaDB grant tables take effect immediately:
 
     ```sql
     flush privileges;
@@ -205,12 +201,11 @@ MariaDB [(none)]> exit
 Bye
 ubuntu@example-vrack-k8s-pci:~$</code></pre>
 
+#### Making MariaDB listen on the private network interface
 
-### Making MariaDB listen on the private network interface
+By default, MariaDB only listens on localhost. In order to accept requests coming from the private network, we need to make it also listen on that network interface.
 
-By default, MariaDB only listen on localhost. In order to accept requests comng from the private network, we need to make it also listen on that network interface.
-
-The easiest way to do it is adding a `bind_address` line at the end of the global `/etc/my.cnf` configuration file:
+The easiest way to do it is by adding a `bind_address` line at the end of the global `/etc/my.cnf` configuration file:
 
 ```yaml
 bind-address = <MARIADB_ADDRESS>
@@ -253,10 +248,9 @@ MariaDB [(none)]> show databases;
 MariaDB [(none)]> 
 </code></pre>
 
-### Accessing the MariaDB instance from the Managed Kubernetes cluster
+#### Accessing the MariaDB instance from the Managed Kubernetes cluster
 
-
-To verify that the vRack is working as intended, let's test is we can access from the Managed Kubernetes cluster via the vRack.
+To verify that the vRack is working as intended, let's test if we can access the MariaDB instance from the Managed Kubernetes cluster via the vRack.
 
 We are deploying a MySQL client in the Kubernetes cluster, that will connect to the MariaDB instance using the vRack. Don't forget to replace `<MARIADB_ADDRESS>` with the private network IP address of the MariaDB instance (in my case `10.0.128.251`).
 
@@ -281,14 +275,14 @@ Bye
 pod "mysql-client" deleted
 </code></pre>
 
+### Setting-up Wordpress
 
-## Setting-up Wordpress
+Now we have set up the database, we can deploy Wordpress on the Kubernetes cluster. We are following a similar process as in our [Installing Wordpress](../installing-wordpress) tutorial, but adapting it to use an external database.
 
-Now we have set up the database, we can deploy Wordpress on the Kubernetes cluster. We are following a similar process than in our [Installing Wordpress](../installing-wordpress) tutorial, but adapting it to use an external database.
-
-### PUsing the Wordpress Helm chart
+#### Using the Wordpress Helm chart
 
 For this tutorial we are using the [Wordpress Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress){.external} found on [Bitnami repository](https://github.com/bitnami/charts/). The chart is fully configurable, but we will only need to tweak the external database parameters:
+
 ```
 mariadb.enabled
 externalDatabase.host
@@ -298,14 +292,13 @@ externalDatabase.database
 externalDatabase.port
 ```
 
-As `externalDatabase.host` we will need to use the MariaDB instance's private network IP address, that be wrote down after creating the PCI.
+As `externalDatabase.host` we will need to use the MariaDB instance's private network IP address, that be written down after creating the PCI.
 
 ```
 helm install my-first-k8s-wordpress bitnami/wordpress --set mariadb.enabled=false,externalDatabase.host=<MARIADB_ADDRESS>,externalDatabase.user=wordpress_user,externalDatabase.password=a_strong_password,externalDatabase.database=wordpress_db,externalDatabase.port=3306 
 ```
 
 Don't forget to replace `<MARIADB_ADDRESS>` with the private network IP address of the MariaDB instance (in my case `10.0.128.251`).
-
 
 <pre class="console"><code>~$ helm install my-first-k8s-wordpress bitnami/wordpress --set mariadb.enabled=false,externalDatabase.host=10.0.128.251,externalDatabase.user=wordpress_user,externalDatabase.password=a_strong_password,externalDatabase.database=wordpress_db,externalDatabase.port=3306
 NAME: my-first-k8s-wordpress
@@ -320,10 +313,11 @@ NOTES:
 Your WordPress site can be accessed through the following DNS name from within your cluster:
 
     my-first-k8s-wordpress.default.svc.cluster.local (port 80)
+</code></pre>
 
 To access your WordPress site from outside the cluster follow the steps below:
 
-1. Get the WordPress URL by running these commands:
+1\. Get the WordPress URL by running these commands:
 
   NOTE: It may take a few minutes for the LoadBalancer IP to be available.
         Watch the status with: 'kubectl get svc --namespace default -w my-first-k8s-wordpress'
@@ -332,13 +326,12 @@ To access your WordPress site from outside the cluster follow the steps below:
    echo "WordPress URL: http://$SERVICE_IP/"
    echo "WordPress Admin URL: http://$SERVICE_IP/admin"
 
-2. Open a browser and access WordPress using the obtained URL.
+2\. Open a browser and access WordPress using the obtained URL.
 
-3. Login with the following credentials below to see your blog:
+3\. Login with the following credentials below to see your blog:
 
   echo Username: user
   echo Password: $(kubectl get secret --namespace default my-first-k8s-wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
-</code></pre>
 
 Then we can follow the instructions to get the Admin URL:
 
@@ -355,3 +348,6 @@ And putting the URL in the browser will take us to the new blog, accessing the M
 
 ![Setting-up Wordpress](images/vrack-example-06.png){.thumbnail}
 
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
