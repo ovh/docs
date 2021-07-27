@@ -15,7 +15,7 @@ This tutorial covers the process of building your own job image for specific nee
 
 -   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 -   an **AI Training project** created inside a **Public Cloud** project
--   a [user for AI Training](https://docs.ovh.com/gb/en/ai-training/create-user/)
+-   a [user for AI Training](../create-user)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building an image and a [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
@@ -25,27 +25,7 @@ Create a new file and name it `Dockerfile`
 
 ### Choosing a base image
 
-First you need to choose a base image to start from, that base image should have **cuda driver installed on** to be able to use GPUs when running.
-
-> [!primary]
->
-> We recommand to choose one from the following lists if you dont want to install cuda drivers yourself.
-
-Here is the list of base images without notebooks that we use :
-
--   [pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime](https://hub.docker.com/r/pytorch/pytorch)
--   [tensorflow/tensorflow:2.3.0-gpu](https://hub.docker.com/r/tensorflow/tensorflow)
--   [transformers/transformers-pytorch-gpu:3.1.0](https://hub.docker.com/r/transformers/transformers)
--   [mxnet/python:1.5.0_gpu_cu101_py3](https://hub.docker.com/r/mxnet/python)
--   [fastdotai/fastai-course:2.0.9](https://hub.docker.com/r/fastdotai/fastai-course)
-
-Here is the list of base images including notebooks (jupyterlab + Visual Studio Code) that we use :
-
--   [ovhcom/ai-training-pytorch:1.8.1](https://hub.docker.com/r/ovhcom/ai-training-pytorch/tags)
--   [ovhcom/ai-training-tensorflow:2.4.1](https://hub.docker.com/r/ovhcom/ai-training-tensorflow/tags)
--   [ovhcom/ai-training-transformers:4.5.0](https://hub.docker.com/r/ovhcom/ai-training-transformers/tags)
--   [ovhcom/ai-training-mxnet:1.5.0](https://hub.docker.com/r/ovhcom/ai-training-mxnet/tags)
--   [ovhcom/ai-training-fastai:2.2.5](https://hub.docker.com/r/ovhcom/ai-training-fastai/tags)
+First you need to choose a base image to start from.
 
 Header of your Dockerfile should look like this :
 
@@ -53,10 +33,22 @@ Header of your Dockerfile should look like this :
 FROM <base-image>
 ```
 
-For example if you want to start from the base image `python:1.5.0_gpu_cu101_py3` :
+> [!warning]
+>
+> If you want to be able to use **GPU** hardware on your **AI TRAINING jobs**, the base image should have **cuda drivers installed on**.
+
+Here is a list of base images (including **cuda drivers**) that OVHcloud uses within notebooks :
+
+-   [pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime](https://hub.docker.com/r/pytorch/pytorch)
+-   [tensorflow/tensorflow:2.3.0-gpu](https://hub.docker.com/r/tensorflow/tensorflow)
+-   [transformers/transformers-pytorch-gpu:3.1.0](https://hub.docker.com/r/transformers/transformers)
+-   [mxnet/python:1.5.0_gpu_cu101_py3](https://hub.docker.com/r/mxnet/python)
+-   [fastdotai/fastai-course:2.0.9](https://hub.docker.com/r/fastdotai/fastai-course)
+
+For example if you want to start from the base image `tensorflow/tensorflow:2.3.0-gpu` :
 
 ``` {.console}
-FROM python:1.5.0_gpu_cu101_py3
+FROM tensorflow/tensorflow:2.3.0-gpu
 ```
 
 ### Install what you need
@@ -83,19 +75,16 @@ COPY example.txt /example.txt
 > You can do it with the following instruction :
 >
 >     RUN chown -R 42420:42420 <your-target-directory>
-> 
-
 
 > [!warning]
-> 
+>
 > The home directory for the "ovh" user (with UID 42420) will be /workspace.
 > If your base image (the one used by the FROM instruction) does not create the /workspace directory (and it probably doesn't if you didn't use an image provided by OVHcloud), then you should create it in your Dockerfile.
 >
+>     RUN mkdir -p /workspace && chown -R 42420:42420 /workspace
+>     ENV HOME /workspace
 >     WORKDIR /workspace
->     RUN chown -R 42420:42420 /workspace> 
->
 
-    
 You can set environment variables with the `ENV` prefix.
 
 Example if you want to add an environment variable `KEY` with value `VALUE`
@@ -113,34 +102,28 @@ ENV KEY VALUE
 Once your **Dockerfile** is complete and match your needs you have to choose a name and build the image using the following command in the same directory :
 
 ``` {.console}
-docker build -t <image-name> .
+docker build . -t <image-identifier>
 ```
+
+> [!primary]
+>
+> The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
+
+> [!primary]
+>
+> The `-t` argument allow you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`.
 
 ## Test it locally (Optional)
 
-If you want to verify that your built image is working properly, create 2 files :
-
--   One file named `group` with following content :
+If you want to verify that your built image is working properly, run the following command :
 
 ``` {.console}
-root:x:0:
-ovh:x:42420:
-nogroup:x:65534:
+docker run --rm -it --user=42420:42420 <image-identifier>
 ```
 
--   One file named `passwd` with following content :
-
-``` {.console}
-root:x:0:0:root:/root:/bin/bash
-ovh:x:42420:42420:OVH:/workspace:/bin/bash
-nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
-```
-
-And run the following command :
-
-``` {.console}
-docker run --rm -it -v $(pwd)/group:/etc/group -v $(pwd)/passwd:/etc/passwd --user=ovh:ovh <image-name>
-```
+> [!warning]
+>
+> Don't forget the `--user=42420:42420` argument if you want to simulate the exact same behavior that will occur on **AI TRAINING jobs**. It executes the docker container as the specific OVHcloud user (user **42420:42420**).
 
 ## Push image in the registry of your choice
 
@@ -153,18 +136,22 @@ If you prefer using your own private docker registry instead of the shared one, 
 The basic commands to push a docker image to a registry is :
 
     docker login -u <registry-user> -p <registry-password> <registry>
-    docker tag <image-name> <registry>/<image-name>
-    docker push <registry>/<image-name>
+    docker tag <image-identifier> <registry>/<image-identifier>
+    docker push <registry>/<image-identifier>
 
 Example if you want to push an image named `custom-image` inside a registry `registry.gra.training.ai.cloud.ovh.net` :
 
     docker login -u <registry-user> -p <registry-password> my-registry.ai.cloud.ovh.net
-    docker tag custom-image my-registry.ai.cloud.ovh.net/custom-image
-    docker push my-registry.ai.cloud.ovh.net/custom-image
+    docker tag custom-image:latest my-registry.ai.cloud.ovh.net/custom-image:latest
+    docker push my-registry.ai.cloud.ovh.net/custom-image:latest
 
 If you want to know the exact commands to push on the shared registry, please consult the `Details`{.action} button of the **Shared Docker Registry** section in the **Home** panel of AI Training.
 
 ![image](images/shared_registry_details.png){.thumbnail}
+
+## Going further
+
+A full **Dockerfile** example about building a **Jupyter** notebook image with **Tensorflow** is available on our example repository [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/jupyterlab/tensorflow).
 
 ## Feedback
 
