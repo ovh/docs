@@ -78,7 +78,7 @@ Vous ne constatez alors pas de saturation de votre connexion. Si tel est le cas,
 
 ### Effectuer un test ponctuel de débit
 
-OVH met à votre disposition sur le site <http://ovh.net/> un outil permettant de vérifier votre débit à un instant T. Gardez en tête que le résultat obtenu peut énormément varier selon l'utilisation faite de votre connexion au moment où vous réalisez ce test.
+OVH met à votre disposition sur le site <http://proof.ovh.net/> un outil permettant de vérifier votre débit à un instant T. Gardez en tête que le résultat obtenu peut énormément varier selon l'utilisation faite de votre connexion au moment où vous réalisez ce test.
 
 Afin que celui-ci puisse s'effectuer dans les meilleures conditions, nous vous recommandons au préalable de :
 
