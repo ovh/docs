@@ -123,7 +123,7 @@ admin@instance:~$ sudo chown -R www-data:www-data /var/www/html/
 [admin@serveur-7 ~]$ sudo chown -R apache:apache /var/www/html/
 ```
 
-### Configuration de MySQL
+### Configuration de MySQL <a name="sqlconf"></a>
 
 Contrairement à MySQL-Server que vous pouvez installer sur Debian/Ubuntu, MariaDB ne configure pas votre mot de passe root lors de l'installation. Il faut donc lancer le serveur MariaDB puis configurer votre mot de passe à l'aide des commandes suivantes :
 
