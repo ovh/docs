@@ -70,7 +70,7 @@ Dans les caractéristiques sur la droite, vous verrez apparaître votre IP publi
 
 ![](images/XDSL-ReverseDNS.png){.thumbnail}
 
-- Saisissez votre IP publique et le sous domaine souhaité et validez.
+- Saisissez votre IP publique et le sous domaine souhaité puis validez.
 - Saisissez le nom de domaine ou sous-domaine et cliquez sur `Suivant`{.action}. Validez à la page suivante.
 
 Quelques minutes seront nécessaires pour que la nouvelle valeur de votre DNS soit visible sur votre espace client.
