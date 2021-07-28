@@ -26,7 +26,7 @@ Ce tutoriel comprend les étapes de base d'une installation entièrement manuell
 
 Pour une installation entièrement manuelle, suivez les instructions détaillées ci-dessous. Créez d'abord une instance si nécessaire. Nous vous recommandons de consulter le [guide pour créer une première instance Public Cloud et s'y connecter](../premiers-pas-instance-public-cloud/).
 
-Pour une installation en utilisant le template OVHcloud pour WordPress, suivez le [guide de création d'instance](../premiers-pas-instance-public-cloud/) et choisissez `WordPress`{.action} à l'étape 3 du processus « Sélectionner une image ». <br><br> ! [wordpress](images/wp_instance.png){.thumbnail} <br><br>Avec une instance WordPress créée avec succès, le logiciel est déjà installé mais vous devez néanmoins configurer la base de données. Poursuivez alors la lecture de ce guide avec les instructions pour la configuration de [MariaDB](#sqlconf).
+Pour une installation en utilisant le template OVHcloud pour WordPress, suivez le [guide de création d'instance](../premiers-pas-instance-public-cloud/) et choisissez `WordPress`{.action} à l'étape 3 du processus « Sélectionner une image ». <br><br> ![wordpress](images/wp_instance.png){.thumbnail} <br><br>Avec une instance WordPress créée avec succès, le logiciel est déjà installé mais vous devez néanmoins configurer la base de données. Poursuivez alors la lecture de ce guide avec les instructions pour la configuration de [MariaDB](#sqlconf).
 
 ### Installer le serveur Web
 
