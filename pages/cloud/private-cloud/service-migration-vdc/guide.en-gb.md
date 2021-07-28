@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Last updated 25th January 2021**
+**Last updated 28th July 2021**
 
 > [!warning]
 >
@@ -50,7 +50,7 @@ In the lifecycle of the source vDC, a list of users may have been created for bu
 
 To do this, please refer to our guides on [Changing user rights](../change-users-rights/), [Changing the User Password](../changing-user-password/) and [Associating an email with a vSphere user](../associate-email-with-vsphere-user/).
 
-##### **Backup & DRP Options **
+##### **Backup & DRP Options**
 
 This option is to enable and configure per vDC.
 You need to enable the relevant option on the new vDC.
@@ -288,23 +288,25 @@ Objects that will need to be addressed:
 
 ##### **1.10 Zerto Replication**
 
-The Zerto Replication is configured at the vDC level, to protect workload on the new vDC you need to do some actions.
+The Zerto Replication is configured at the vDC level. To protect workload on the new vDC, you need to do some actions.
 
 > **Prerequisites:**
 >
-> - Have a new vDC
-> - Have under the new vDC a host cluster with at least two (2) hosts
-> - Have under the new vDC a datastore that can be accessible from the two (2) hosts
-> - Have Enable Zerto Replication on the new vDC
+> - Having a new vDC
+> - Having under the new vDC a host cluster with at least two (2) hosts
+> - Having under the new vDC a datastore that can be accessible from the two (2) hosts
+> - Having enabled Zerto Replication on the new vDC
 >
 
 Run the OVHcloud API to prepare the migration:
+
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/startMigration
 >
 
 `{datacenterId}` is the **new** vDC id, you can get it with the following API call:
+
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter
@@ -312,21 +314,23 @@ Run the OVHcloud API to prepare the migration:
 
 A task is launched on the infrastructure to deploy vRA on each hosts under the new vDC.
 
-after this Zerto Replication work on both datacenter:
-- old still running and protect your workload
-- new is ready to host workload
+After this, the Zerto Replication will work on both datacenters:
 
-Next step depends on the current configuration per [Virtual Protection Group](../zerto-virtual-replication-vmware-vsphere-drp):
+- the old one is still running and protects your workload
+- the new one is ready to host your workload
+
+The next step depends on the current configuration per [Virtual Protection Group](../zerto-virtual-replication-vmware-vsphere-drp):
+
 - source of replication
 - destination of replication
 
 ##### **1.10.1 VPG as Source**
 
-With the migration on the new vDC Zerto will continue to protect workload with vRA deployed on the target cluster and hosts.
+With the migration on the new vDC, Zerto will continue to protect workload with vRA deployed on the target cluster and hosts.
 
 ##### **1.10.1 VPG as destination**
 
-Unfortunatly, there is no way to update VPG configuration, the only option is to delete the VPG and create a new one.
+Unfortunately, there is no way to update VPG configuration, the only option is to delete the VPG and create a new one.
 
 #### Step 2: VM Migration
 
@@ -355,15 +359,15 @@ Affinity rules are based on VM objects so rules can only be created after VMs ha
 
 ##### **Veeam backup configuration**
 
-Disable Veeam Backup on the old vDC.
+Disable Veeam Backup on the old vDC. It can be made with the following API call:
 
-it can be made with the following API call:
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/disable
 >
 
 `{datacenterId}` is the **old** vDC id, you can get it with the following API call:
+
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter
@@ -372,27 +376,31 @@ it can be made with the following API call:
 ##### **Zerto Replication**
 
 Run the OVHcloud API to finalize the migration:
+
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/endMigration
 >
 
 `{datacenterId}` is the **new** vDC id, you can get it with the following API call:
+
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter
 >
 
-A task is launched to do :
-- Check if no destination VPG still exists on the datacenter : they MUST be removed
-- Switch from old to new vDC the Zerto Replication option (subscription)
-- Remove all vRA from hosts on the old vDC
+A task is launched to :
+
+- Check if no destination VPG still exists on the datacenter: they MUST be removed.
+- Switch the Zerto Replication option (subscription) from the old to the new vDC.
+- Remove all vRA from hosts on the old vDC.
 
 ##### **Remove previous vDC**
 
-At this step, we can consider they are no longer data and/or VM on the old vDC, so we can now remove ressources.
+At this step, we can consider there is no longer any data and/or VM on the old vDC, so we can now remove resources.
 
-In the following instructions `{datacenterId}` is the **old** vDC id, you can get it with the following API call:
+In the following instructions, `{datacenterId}` is the **old** vDC id, you can get it with the following API call:
+
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter
@@ -401,29 +409,33 @@ In the following instructions `{datacenterId}` is the **old** vDC id, you can ge
 #### **Put hosts in maintenance mode**
 
 You must put hosts in maintenance mode by following these steps:
+
 1. In the vSphere Client navigate to `Hosts and Clusters`{.action}.
 2. Navigate to a `Host`{.action}.
-3. Right click on the `Host`{.action}.
+3. Right click the `Host`{.action}.
 4. Navigate to `Maintenance Mode`{.action}.
-5. Click on the `Enter Maintenance Mode`{.action}.
+5. Click `Enter Maintenance Mode`{.action}.
 
 Repeat action for each host.
 
 #### **Remove Datastores**
 
 With the API, get the filer (datastore) id list:
+
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
 >
 
 Then for each id :
+
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/remove
 >
 
 A task is created for each call, you can follow the progress with:
+
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/task/{taskId}
@@ -431,24 +443,27 @@ A task is created for each call, you can follow the progress with:
 
 > [!warning]
 >
-> Wait for the full completion of tasks before continues
+> Wait for the full completion of tasks before continuing.
 >
 
 #### **Remove Hosts**
 
 With the API, get the host id list:
+
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
 >
 
 Then for each id :
+
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/remove
 >
 
 A task is created for each call, you can follow the progress with:
+
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{hostId}/task/{taskId}
@@ -456,12 +471,13 @@ A task is created for each call, you can follow the progress with:
 
 > [!warning]
 >
-> Wait for the full completion of tasks before continues
+> Wait for the full completion of tasks before continuing.
 >
 
 #### **Remove vDC**
 
 With the API, ask for the vDC deletion:
+
 > [!api]
 >
 > @api {DELETE} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
