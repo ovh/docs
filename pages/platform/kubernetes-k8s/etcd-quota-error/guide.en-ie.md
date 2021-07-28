@@ -14,9 +14,10 @@ At some point during the life of your Managed Kubernetes cluster, you may encoun
 ```log
 rpc error: code = Unknown desc = ETCD storage quota exceeded
 rpc error: code = Unknown desc = quota computation: etcdserver: not capable
+rpc error: code = Unknown desc = The OVHcloud storage quota has been reached
 ```
 
-**This guide will show you how to debug and resolve this situation.**
+**This guide will show you how to troubleshoot and resolve this situation.**
 
 ## Requirements
 
