@@ -38,7 +38,6 @@ During the day-to-day life of your cluster, you may want to dynamically adjust t
 
 This guide follows up the [Using the cluster autoscaler](../using-cluster-autoscaler) guide, and it will cover a description of the cluster autoscaler configuration.
 
-
 ## Requirements
 
 - An OVHcloud Managed Kubernetes cluster
