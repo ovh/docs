@@ -7,7 +7,7 @@ space_name: XDSL
 section: Configuration de mon offre
 ---
 
-**Dernière mise à jour le 07/05/2021**
+**Dernière mise à jour le 28/07/2021**
 
 ## Objectif
 
