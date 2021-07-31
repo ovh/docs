@@ -50,4 +50,22 @@ In this document we suppose that you have some understanding of how to use OVHcl
 
 ## Networking in Managed Kubernetes inside the vRack
 
+In order to better see why some extra configuration is needed, let's begin by explaining how the OVHcloud Managed Kubernetes integration with vRack private networks is done. 
+
+### OVHcloud Managed Kubernetes without vRack
+
+Let's have a look at our Managed Kubernetes without vRack. Both the master and the nodes have IP addresses in a network exposed on the internet:
+
+![OVHcloud Managed Kubernetes without vRack](images/using-vrack-01.jpg){.thumbnail}
+
+All the traffic between the master and the nodes is done using this IP addresses, as are administration traffic and traffic to/from resources external to the cluster.
+
+![OVHcloud Managed Kubernetes without vRack](images/using-vrack-02.jpg){.thumbnail}
+
+### OVHcloud Managed Kubernetes inside the vRack
+
+When you put an OVHcloud Managed Kubernetes cluster in a private network in the vRack, a new network interface (let's call it `eth1` in this doc) connected to this private network is added to every node. 
+
+
+Communication between nodes and master, and admin traffic still passes by the original network interface (let's call it `eth0`), exposed to the internet. Pod to pod traffic, and traffic to the private network is routed through `eth1`. 
 
