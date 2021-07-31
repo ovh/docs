@@ -6,17 +6,43 @@ section: User guides
 order: 8
 ---
 
-**Last updated 29th April 2021**
+**Last updated July 31th<sup>th</sup>, 2021.**
+
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
 
 ## Objective
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
 
-By default, your Kubernetes clusters will have public IPs. For some uses cases, or for security reasons, you could prefer having your Kubernetes cluster inside a private network. This guide will cover the integration of OVHcloud Managed Kubernetes clusters into vRack Private Networks.
+By default, your Kubernetes clusters will have public IPs. For some uses cases, or for security reasons, you could prefer having your Kubernetes cluster inside a private network. 
+
+OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networking solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. 
+
+This guide will cover the integration of OVHcloud Managed Kubernetes clusters into vRack Private Networks.
 
 ## Requirements
 
-A Public Cloud project in your OVHcloud account
+- A Public Cloud project in your OVHcloud account
 
 ## Instructions
 
