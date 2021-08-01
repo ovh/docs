@@ -38,8 +38,6 @@ Connecting a Managed Kubernetes cluster to another service in the same private n
 
 In this tutorial, we are going to activate the vRack on a Public Cloud project. Then we will create a Managed Kubernetes cluster and a Public Cloud instance (PCI). Eventually, both of them will be added inside the vRack but in **different private networks**. 
 
-Then we are going to deploy a  [Wordpress](https://wordpress.org/){.external} on the Kubernetes cluster that will connect across the private networks using vRack, to the [MariaDB database](https://mariadb.org/) installed in the Public Cloud instance.
-
 **In this tutorial we are going to give you an example of how to use the OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) to connect a Managed Kubernetes cluster with a Public Cloud instance inside different private network.**
 
 > [!warning]
@@ -363,8 +361,7 @@ After instance creation, we can see the connection details in the OVHcloud Contr
 
 If we log in to the instance using SSH, we can see that it has two network interfaces, one attached to the public IP address we use to log in, the other attached to the private network:
 
-<pre class="console"><code>horacio@my-laptop:~$ ssh ubuntu@51.83.109.184
-Enter passphrase for key '/home/horacio/.ssh/id_rsa':
+<pre class="console"><code>~$ ssh ubuntu@51.83.109.184
 Welcome to Ubuntu 21.04 (GNU/Linux 5.11.0-18-generic x86_64)
 
   System information as of Fri Jun 18 04:37:54 UTC 2021
@@ -374,7 +371,8 @@ Welcome to Ubuntu 21.04 (GNU/Linux 5.11.0-18-generic x86_64)
   Memory usage: 2%                <b>IPv4 address for ens3: 51.83.109.184</b>
   Swap usage:   0%                <b>IPv4 address for ens4: 10.2.76.176</b>
 
-ubuntu@example-vrack-k8s-pci:~$</code></pre>
+ubuntu@example-vrack-k8s-pci:~$ exit
+</code></pre>
 
 Please take note of the private network IP address (in my case `10.2.76.176`), as we will need to use it later.
 
@@ -452,3 +450,88 @@ traceroute to 10.2.76.176 (10.2.76.176), 30 hops max, 60 byte packets
  2  * * 10.2.76.176 (10.2.76.176)  1.789 ms
 </code></pre>
 
+
+### Verifying that we can access the Kubernetes cluster from the PCI
+
+Let's create another nginx pod and expose it with a `NodePort` service:
+
+```bash
+kubectl run nginx --image=nginx
+kubectl expose pod nginx --port 80 --type NodePort
+```
+
+We get the `NodePort` port and we sotre it in a variable:
+
+```bash
+kubectl get svc nginx -o=jsonpath='{.spec.ports[?(@.port==80)].nodePort}'
+```
+
+And the *My private network* IP address of one of our Kubernetes nodes:
+
+```bash
+kubectl get nodes -o jsonpath='{.items[0].status.addresses[?(@.type=="InternalIP")].address}'
+```
+
+We can SSH again into the PCI instance, and do a `traceroute` to see if we can reach the node, and then a curl to the NodePort:
+
+<pre class="console"><code>~$ kubectl run nginx --image=nginx
+pod/nginx created
+~$ kubectl expose pod nginx --port 80 --type NodePort
+service/nginx exposed
+~$ kubectl get svc nginx -o=jsonpath='{.spec.ports[?(@.port==80)].nodePort}'
+32271
+~$ kubectl get pod nginx -o jsonpath='{.status.hostIP}'
+10.0.88.117
+~$ ssh ubuntu@51.83.109.184
+Welcome to Ubuntu 21.04 (GNU/Linux 5.11.0-18-generic x86_64)
+
+  System information as of Fri Jun 18 04:37:54 UTC 2021
+
+  System load:  0.0               Processes:             111
+  Usage of /:   3.9% of 48.29GB   Users logged in:       0
+  Memory usage: 2%                <b>IPv4 address for ens3: 51.83.109.184</b>
+  Swap usage:   0%                <b>IPv4 address for ens4: 10.2.76.176</b>
+
+ubuntu@example-vrack-k8s-pci:~$ traceroute 10.0.88.117
+traceroute to 10.0.88.117 (10.0.88.117), 30 hops max, 60 byte packets
+ 1  10.2.0.1 (10.2.0.1)  1.340 ms  1.268 ms  1.233 ms
+ 2  10.0.88.117 (10.0.88.117)  2.094 ms *  2.012 ms
+
+ubuntu@vrack-example-between-private-networks:~$ curl 10.0.88.117:32271
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;title>Welcome to nginx!</title>
+&lt;style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+&lt;/style>
+&lt;/head>
+&lt;body>
+&lt;h1>Welcome to nginx!&lt;/h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.&lt;/p>
+
+&lt;p>For online documentation and support please refer to
+&lt;a href="http://nginx.org/">nginx.org&lt;/a>.&lt;br/>
+Commercial support is available at
+&lt;a href="http://nginx.com/">nginx.com&lt;/a>.&lt;/p>
+
+&lt;p>&lt;em>Thank you for using nginx.&lt;/em>&lt;/p>
+&lt;/body>
+&lt;/html>
+</code></pre>
+
+
+> [!warning]
+> There is currently a bug in OVHcloud Managed Kubernetes in vRack that makes NodePort services available only in the nodes where a pod associated to that service is running. 
+> 
+> This is a temporary problem, that will be fixed shorty. 
+
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
