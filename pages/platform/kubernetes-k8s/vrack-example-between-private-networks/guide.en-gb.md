@@ -342,6 +342,7 @@ In the Managed Kubernetes Service Dashboard, we can see the cluster, with the ch
 
 Don't forget to grab your `kubeconfig` and configure `kubectl` to use it, as explained in the [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl/) guide.
 
+
 ### Setting-up a PCI attached to *My second private network*
 
 Now we can create a new Public Cloud instance, also in GRA5 region, and attach it to  *My second private network* by following the [Integrating an instance into vRack](../../public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1) guide.
@@ -376,4 +377,78 @@ Welcome to Ubuntu 21.04 (GNU/Linux 5.11.0-18-generic x86_64)
 ubuntu@example-vrack-k8s-pci:~$</code></pre>
 
 Please take note of the private network IP address (in my case `10.2.76.176`), as we will need to use it later.
+
+### Verifying that we can access the PCI from the Kubernetes cluster
+
+Let's create modified nginx pod to test our setup. Create a `shell-demo.yaml` manifest:
+
+`shell-demo.yaml`
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: shell-demo
+spec:
+  volumes:
+  - name: shared-data
+    emptyDir: {}
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - name: shared-data
+      mountPath: /usr/share/nginx/html
+  hostNetwork: true
+  dnsPolicy: Default
+```
+
+And deploy it in the cluster:
+
+```bash
+kubectl apply -f shell-demo.yaml
+```
+
+
+Now we can log in to the `shell-demo` pod and add some packages to allows us to verify if we can reach the instance on *My second private network* (in my example with the `10.2.76.176` IP address):
+
+```bash
+kubectl exec --stdin --tty shell-demo -- /bin/bash
+apt update
+apt install iproute2 iputils-ping
+ping 10.2.76.176
+traceroute 10.2.76.176
+```
+
+If everything happens as intended, we can reach the PCI instance in *My second private network* via the gateway:
+
+<pre class="console"><code>~$ kubectl apply -f shell-demo.yaml
+pod/shell-demo created
+~$ kubectl get pod shell-demo
+NAME         READY   STATUS    RESTARTS   AGE
+shell-demo   1/1     Running   0          31s
+
+~$ kubectl exec --stdin --tty shell-demo -- /bin/bash
+root@nodepool-db0e5587-9718-4faf-b4-node-d69703:/# apt update
+Get:1 http://security.debian.org/debian-security buster/updates InRelease [65.4 kB]
+[...]
+
+root@nodepool-db0e5587-9718-4faf-b4-node-d69703:/# apt install iproute2 iputils-ping
+Reading package lists... Done
+Building dependency tree
+root@nodepool-db0e5587-9718-4faf-b4-node-d69703:/# ping 10.2.76.176
+PING 10.2.76.176 (10.2.76.176) 56(84) bytes of data.
+64 bytes from 10.2.76.176: icmp_seq=1 ttl=63 time=2.52 ms
+64 bytes from 10.2.76.176: icmp_seq=2 ttl=63 time=1.01 ms
+64 bytes from 10.2.76.176: icmp_seq=3 ttl=63 time=0.903 ms
+64 bytes from 10.2.76.176: icmp_seq=4 ttl=63 time=1.02 ms
+^C
+--- 10.2.76.176 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 6ms
+rtt min/avg/max/mdev = 0.903/1.361/2.519/0.671 ms
+
+root@nodepool-db0e5587-9718-4faf-b4-node-d69703:/# traceroute 10.2.76.176
+traceroute to 10.2.76.176 (10.2.76.176), 30 hops max, 60 byte packets
+ 1  10.0.0.1 (10.0.0.1)  1.292 ms  1.103 ms  1.017 ms
+ 2  * * 10.2.76.176 (10.2.76.176)  1.789 ms
+</code></pre>
 
