@@ -322,3 +322,58 @@ The following NEW packages will be installed:
 [...]
 No user sessions are running outdated binaries.
 </code></pre>
+
+### Setting-up the Managed Kubernetes attached to *My private network*
+
+Then we create a Kubernetes cluster in GRA5 region, attached to *My private network*, as explained in the [Create a cluster](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) guide. 
+
+
+![Choose a private network for this cluster](images/vrack-example-10.png){.thumbnail}
+
+Integrating a cluster into a vRack Private Network must be done at the third step on cluster creation, when we can choose an existing private network for the cluster:
+
+![Choose a private network for this cluster](images/vrack-example-11.png){.thumbnail}
+
+Our new cluster will be created inside *My private network*.
+
+In the Managed Kubernetes Service Dashboard, we can see the cluster, with the chosen private network in the *Attached network* column:
+
+![Private network information in Attached network column](images/vrack-example-12.png){.thumbnail}
+
+Don't forget to grab your `kubeconfig` and configure `kubectl` to use it, as explained in the [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl/) guide.
+
+### Setting-up a PCI attached to *My second private network*
+
+Now we can create a new Public Cloud instance, also in GRA5 region, and attach it to  *My second private network* by following the [Integrating an instance into vRack](../../public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1) guide.
+
+We are going to create an Ubuntu instance:
+
+![Setting-up a PCI attached to *My second private network*](images/vrack-example-04.png){.thumbnail}
+
+In the fourth step of creation, we call it `vrack-example-between-private-networks` and we attach it to *My second private network*:
+
+![Setting-up a PCI attached to *My second private network*](images/vrack-example-13.png){.thumbnail}
+
+After instance creation, we can see the connection details in the OVHcloud Control Panel. 
+
+
+![Setting-up a PCI attached to *My second private network*](images/vrack-example-14.png){.thumbnail}
+
+
+If we log in to the instance using SSH, we can see that it has two network interfaces, one attached to the public IP address we use to log in, the other attached to the private network:
+
+<pre class="console"><code>horacio@my-laptop:~$ ssh ubuntu@51.83.109.184
+Enter passphrase for key '/home/horacio/.ssh/id_rsa':
+Welcome to Ubuntu 21.04 (GNU/Linux 5.11.0-18-generic x86_64)
+
+  System information as of Fri Jun 18 04:37:54 UTC 2021
+
+  System load:  0.0               Processes:             111
+  Usage of /:   3.9% of 48.29GB   Users logged in:       0
+  Memory usage: 2%                <b>IPv4 address for ens3: 51.83.109.184</b>
+  Swap usage:   0%                <b>IPv4 address for ens4: 10.2.76.176</b>
+
+ubuntu@example-vrack-k8s-pci:~$</code></pre>
+
+Please take note of the private network IP address (in my case `10.2.76.176`), as we will need to use it later.
+
