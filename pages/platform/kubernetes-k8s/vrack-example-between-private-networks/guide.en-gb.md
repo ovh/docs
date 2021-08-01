@@ -43,7 +43,7 @@ Then we are going to deploy a  [Wordpress](https://wordpress.org/){.external} on
 **In this tutorial we are going to give you an example of how to use the OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) to connect a Managed Kubernetes cluster with a Public Cloud instance inside different private network.**
 
 > [!warning]
-> The method described in this tutorial is a **temporary one**, only required if you want to route traffic between different private networks in a single vRack. Our Managed Kubernetes team is working on a more streamlined solutionfor this adavanced use case, as explained in [this issue](https://github.com/ovh/public-cloud-roadmap/issues/116) in our [Public Cloud roadmap](https://github.com/ovh/public-cloud-roadmap/).
+> The method described in this tutorial is a **temporary one**, only required if you want to route traffic between different private networks in a single vRack. Our Managed Kubernetes team is working on a more streamlined solution for this advanced use case, as explained in [this issue](https://github.com/ovh/public-cloud-roadmap/issues/116) in our [Public Cloud roadmap](https://github.com/ovh/public-cloud-roadmap/).
 >
 
 
@@ -62,34 +62,96 @@ And to understand why this configuration is needed, please have a look at the [U
 
 ### Setting-up the vRack
 
-First of all, we will need to set up vRack Private Network for our Public Cloud. To do it, we follow the [Configuring vRack for Public Cloud](../../public-cloud/public-cloud-vrack/) guide. Once you have created a vRack, we need to create two different Private Networks.
+First of all, we will need to set up vRack Private Network for our Public Cloud. To do it, we follow the [Configuring vRack for Public Cloud](../../public-cloud/public-cloud-vrack/) guide. 
+
+
+Once we have created a vRack, we need to create two different Private Networks enabled at least on GRA5 region. Don't activate the default gateway option during creation.
 
 ![Setting-up the vRack](images/vrack-example-01.png){.thumbnail}
 
-### Setting-up the Managed Kubernetes
 
-Then we create a Kubernetes cluster, as explained in the [Create a cluster](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) guide, and in the third step (*Choose a Private Network for this cluster*) we choose the first of the private networks:
+### Retrieving the Openstack configuration file
 
-![Choose a private network for this cluster](images/vrack-example-02.png){.thumbnail}
+Now we need to download the `openrc.sh` configuration file, as explained in the [Setting OpenStack environment variables](../../public-cloud/set-openstack-environment-variables/) guide. 
 
-Our new cluster will be created inside the vRack Private Network we have chosen.
+![Retrieving the Openstack configuration file](images/vrack-example-06.png){.thumbnail}
 
-In the Managed Kubernetes Service Dashboard, we can see the cluster, with the chosen private network in the *Attached network* column:
+We will be working on GRA5 region, so we download the *Gravelines (GRA5)* file.
 
-![Private network information in Attached network column](images/vrack-example-03.png){.thumbnail}
+![Retrieving the Openstack configuration file](images/vrack-example-07.png){.thumbnail}
+
+Following the steps on the [Setting OpenStack environment variables](../../public-cloud/set-openstack-environment-variables/) guide to be sure that the Openstack CLI is working on our workstation.
 
 
-### Setting-up the PCI
 
-Now we can create a new Public Cloud instance inside the vRack, by following the [Integrating an instance into vRack](../../public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1) guide.
+<pre class="console"><code>$ source openrc.sh
+Please enter your OpenStack Password:
+
+$ nova list
++--------------------------------------+---------------------+--------+------------+-------------+------------------------+
+| ID                                   | Name                | Status | Task State | Power State | Networks               |
++--------------------------------------+---------------------+--------+------------+-------------+------------------------+
+| 0bee959e-48fb-4a7d-94d0-35470837320d | horacio-workstation | ACTIVE | -          | Running     | Ext-Net=51.210.xxx.xxx |
+  [...]                         
++--------------------------------------+---------------------+--------+------------+-------------+------------------------+
+</code></pre>
+
+
+### Configuring the private networks
+
+Let's begin by getting the private networks openstack IDs using the openstack CLI:
+
+> [!warning]
+> In my case, *My private network* has a subnet range of `10.0.0.0/16`, and *My second private network* has a subnet range of `10.2.0/16`, don't forget to adapt the commands to your specific subnet ranges.
+
+```bash
+MY_PRIVATE_NETWORK=$(openstack subnet list --subnet-range 10.0.0.0/16 --column ID -f value)
+MY_SECOND_PRIVATE_NETWORK=$(openstack subnet list --subnet-range 10.2.0.0/16 --column ID -f value)
+```
+
+Now we can configure *My private network* with a static route to *My second private network*, and *My second private network* with a static route to *My private network*:
+
+```bash
+openstack subnet set --host-route destination=10.2.0.0/16,gateway=10.0.0.1 ${MY_PRIVATE_NETWORK}
+openstack subnet set --host-route destination=10.0.0.0/16,gateway=10.2.0.1 ${MY_SECOND_PRIVATE_NETWORK}
+```
+
+
+
+
+<pre class="console"><code>$ MY_PRIVATE_NETWORK=$(openstack subnet list --subnet-range 10.0.0.0/16 --column ID -f value)
+
+$ MY_SECOND_PRIVATE_NETWORK=$(openstack subnet list --subnet-range 10.2.0.0/16 --column ID -f value)
+
+$ echo $MY_PRIVATE_NETWORK
+5eda1998-abf0-4787-87a2-acd7431c9c3f
+
+$ echo $MY_SECOND_PRIVATE_NETWORK
+a019c436-6da3-4a10-a00d-49f8a3462bcd
+
+$ openstack subnet set --host-route destination=10.2.0.0/16,gateway=10.0.0.1 ${MY_PRIVATE_NETWORK}
+
+$ openstack subnet set --host-route destination=10.0.0.0/16,gateway=10.2.0.1 ${MY_SECOND_PRIVATE_NETWORK}
+</code></pre>
+
+
+
+### Setting-up a PCI gateway
+
+
+Now we are going to create a Public Cloud instance in GRA5, to acr as a gateway for our vRack. 
+
+![Setting-up a PCI gateway](images/vrack-example-08.png){.thumbnail}
 
 We are going to create an Ubuntu instance:
 
-![Setting-up PCI - Ubuntu instance](images/vrack-example-04.png){.thumbnail}
+![Setting-up a PCI gateway](images/vrack-example-04.png){.thumbnail}
 
-In the fourth step of creation, we attach it to the second of the private network we created before:
+We do NOT attach the instance to a private network yet, as you can unfortunately configure only one private network at the creation stage in the OVHcloud Manager. 
 
-![Setting-up PCI - Attaching to a private network](images/vrack-example-05.png){.thumbnail}
+![Setting-up a PCI gateway](images/vrack-example-09.png){.thumbnail}
 
-After instance creation, we can see the connection details in the OVHcloud Control Panel. If we log in to the instance using SSH, we can see that it has two network interfaces, one attached to the public IP address we use to log in, the other attached to the private network:
+Once the gateway instance is created, we need to add the two private networks to its configuration.
+
+
 
