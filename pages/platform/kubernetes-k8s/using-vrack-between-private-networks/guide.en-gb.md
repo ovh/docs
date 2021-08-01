@@ -70,11 +70,9 @@ When you put an OVHcloud Managed Kubernetes cluster in a private network in the 
 
 ![OVHcloud Managed Kubernetes inside vRack](images/using-vrack-03.jpg){.thumbnail}
 
-Using the addresses and names in the schema, each node have a `eth0` network interface to the external network, and a `eth1` to the private network. 
+Using the addresses and names in the schema, each node have a `eth0` network interface to the external network, and a `eth1` to the private network. `eth0` is dedicated to the communication between nodes and master, to your managed service administration traffic and to communication with external services. Pod to pod traffic, and traffic to the private network is routed through `eth1`.
 
-Communication between nodes and master, and admin traffic still passes by the `eth0`, by the external network. Pod to pod traffic, and traffic to the private network is routed through `eth1`. 
-
-In order to do it, the default gateway for each node is in the external network, via their `eth0` interface, and only the traffic towards the private network is routed through `eth1`.
+In order allow this routing, the default gateway for each node is in the external network, via their `eth0` interface, and only the traffic towards the private network is routed through `eth1`.
 
 ![OVHcloud Managed Kubernetes inside vRack](images/using-vrack-04.jpg){.thumbnail}
 
@@ -99,3 +97,4 @@ As explained before, in order to allow pod to master communication, the default 
 That means that if in our schema *Pod 3* wants to communicate with the PCI *vm1*, that is in a different private network, the traffic won't get routed to `eth1` but to `eth0` towards the default gateway, that has no access to *vm1*, thus the connection fails.
 
 ![Communication between different private networks](images/using-vrack-06.jpg){.thumbnail}
+
