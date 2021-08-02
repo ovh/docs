@@ -55,6 +55,9 @@ It also supposes that you already have followed the [Using vRack](../using-vrack
 
 And to understand why this configuration is needed, please have a look at the [Using vRack - Communicating between different private networks](../using-vrack-between-private-networks/) technical document.
 
+> [!warning]
+> This guide assumes you are familiar with the [OVHcloud API](https://api.ovh.com/). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+>
 
 ## Instructions
 
@@ -62,10 +65,27 @@ And to understand why this configuration is needed, please have a look at the [U
 
 First of all, we will need to set up vRack Private Network for our Public Cloud. To do it, we follow the [Configuring vRack for Public Cloud](../../public-cloud/public-cloud-vrack/) guide. 
 
+As explained in the [known-limits](Known limits) guide, the default subnet ranges for our private networks won't work with OVHcloud Managed Kubernetes, as the ranges `10.2.0.0/16` and `10.3.0.0/16` are reserved to internal Managed Kubernetes use.
 
-Once we have created a vRack, we need to create two different Private Networks enabled at least on GRA5 region. Don't activate the default gateway option during creation.
+Once we have created a vRack, we need to create two different Private Networks enabled at least on GRA5 region. The private networks created via OVHcloud Manager have by-default ranges, that can't be easily modified. We are thus creating the private networks using the [OVHcloud API](https://api.ovh.com/). 
+
+For this example we are creating two private networks, `priv-net-01` & `priv-net-02`, with DHCP subnets with ranges of `10.0.1.0/24` et `10.0.2.0/24`.
+
+We will use the `POST /cloud/project/{serviceName}/network/private` endpoint to create the private networks:
 
 ![Setting-up the vRack](images/vrack-example-01.png){.thumbnail}
+
+And then we assign them the subnets using the `POST /cloud/project/{serviceName}/network/private/{networkId}/subnet` endpoint:
+
+![Setting-up the vRack](images/vrack-example-02.png){.thumbnail}
+
+
+
+
+
+
+
+
 
 
 ### Retrieving the Openstack configuration file
