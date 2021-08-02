@@ -25,21 +25,21 @@ This tutorial includes the basic steps for a fully manual installation which inv
 ## Instructions
 
 - For a fully manual installation, proceed with the instructions below. (Create an instance first if necessary; we recommend to consult the [Public Cloud first steps guide](../public-cloud-first-steps/).)
-- For an installation using the OVHcloud template for WordPress, follow the [instance creation guide](../public-cloud-first-steps/) and choose `WordPress`{.action} in step 3 of the process, "Select an image". <br><br> ![wordpress](images/wp_instance.png){.thumbnail} <br><br> With a successfully created WordPress instance, the software is already installed but you still need to configure the database. Proceed with the instructions for the [MariaDB configuration below](#sqlconf).
+- For an installation using the OVHcloud template for WordPress, follow the [instance creation guide](../public-cloud-first-steps/) and choose `WordPress`{.action} in step 3 of the process, "Select an image". <br><br> ![wordpress](images/wp_instance.png){.thumbnail} <br> With a successfully created WordPress instance, the software is already installed but you still need to configure the database. Proceed with the instructions for the [MariaDB configuration below](#sqlconf).
 
 ### Installing a web server
 
-First of all, you have to install a web server on your Public Cloud instance. 
+First of all, you have to install a web server on your Public Cloud instance.
 
-To do this, you have ensure that your instance is up-to-date.
+To do this, you have ensure that your instance is up-to-date:
 
-#### For Debian/Ubuntu
+- **For Debian/Ubuntu**
 
 ```bash
 admin@instance:~$ sudo apt-get update && sudo apt-get upgrade -y
 ```
 
-#### For Fedora/CentOS
+- **For Fedora/CentOS**
 
 ```bash
 [admin@instance ~]$ sudo yum update && sudo yum upgrade
@@ -56,31 +56,32 @@ You can then install a web server of your choice. This example uses the Apache w
 > Since software packages are regularly updated, you might need to adjust the following instructions according to the latest versions.
 
 
-#### For Debian/Ubuntu
+- **For Debian/Ubuntu**
 
 ```bash
-admin@instance:~$ sudo apt-get install apache2 php5 php5-mysql mysql-server -y
+admin@instance:~$ sudo apt-get install apache2 php php-mysql mysql-server -y
 ```
 
-#### For Fedora/CentOS
+- **For Fedora/CentOS**
 
 ```bash
-[admin@instance ~]$ sudo yum install httpd php php-mysql mariadb-server -y
+[admin@instance ~]$ sudo yum install httpd php php-mysqlnd mariadb-server -y
 ```
 
-You will be asked to enter a password to configure the "root" account for the MySQL database. Restart the web server to make sure that this has been registered.
+You will be asked to enter a password to configure the "root" account for the MySQL database.
 
+Restart the web server to make sure that this has been registered:
 
-#### For Debian/Ubuntu
+- **For Debian/Ubuntu**
 
 ```bash
-admin@instance:~$ sudo service apache2 restart
+admin@instance:~$ sudo systemctl restart apache2
 ```
 
-#### For Fedora/CentOS
+- **For Fedora/CentOS**
 
 ```bash
-admin@instance:~$ sudo service httpd restart
+[admin@instance ~]$ sudo systemctl restart httpd.service
 ```
 
 ### Download WordPress
@@ -111,22 +112,22 @@ admin@instance:~$ sudo mv wordpress /var/www/html
 
 Now you can give the web server write permissions for the folder.
 
-#### For Debian/Ubuntu
+- **For Debian/Ubuntu**
 
 ```bash
 admin@instance:~$ sudo chown -R www-data:www-data /var/www/html/
 ```
 
-#### For Fedora/CentOS
+- **For Fedora/CentOS**
 
 ```bash
-[admin@serveur-7 ~]$ sudo chown -R apache:apache /var/www/html/
+[admin@instance ~]$ sudo chown -R apache:apache /var/www/html/
 ```
 
 ### MySQL configuration <a name="sqlconf"></a>
 
 Unlike a MySQL server which you can install on Debian/Ubuntu, MariaDB does not configure your root password during installation.
-You therefore have to launch the MariaDB server and set your password using the following commands:
+You therefore have to launch the MariaDB server and set your password using the following commands.
 
 Start the database server:
 
@@ -155,7 +156,7 @@ Once you have your "root" password you can log on to your database server:
 admin@instance:~$ sudo mysql -u root -p
 ```
 
-You can now create a new user, set a password and create a database dedicated to Wordpress:
+You can now create a new user, set a password and create a database dedicated to WordPress:
 
 Create a user:
 

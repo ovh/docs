@@ -45,8 +45,7 @@ When your Managed Kubernetes and your other services are both in vRack, but in d
 > The need of extra manual configuration described in this guide is **temporary**. Our Managed Kubernetes team is working on a more streamlined solution, as explained in [this issue](https://github.com/ovh/public-cloud-roadmap/issues/116) in our [Public Cloud roadmap](https://github.com/ovh/public-cloud-roadmap/).
 >
 
-In this document we suppose that you have some understanding of how to use OVHcloud Managed Kubernetes in the vRack. To get more information on this topic you can look at the [Using vRack Private Network](../using_vrack/) guide and [../vrack-example-k8s-and-pci/](Working with vRack example - Managed Kubernetes and Public Cloud instances) tutorials.
-
+In this document we suppose that you have some understanding of how to use OVHcloud Managed Kubernetes in the vRack. To get more information on this topic you can look at the [Using vRack Private Network](../using_vrack/) guide and [Working with vRack example - Managed Kubernetes and Public Cloud instances](../vrack-example-k8s-and-pci/) tutorial.
 
 ## Networking in Managed Kubernetes inside the vRack
 
@@ -76,7 +75,7 @@ In order allow this routing, the default gateway for each node is in the externa
 
 ![OVHcloud Managed Kubernetes inside vRack](images/using-vrack-04.jpg){.thumbnail}
 
-For this use case, no additional configuration is needed, you simply has to choose the private network at the creation of your Managed Kubernetes cluster, as explained in the [Using vRack Private Network](../using_vrack/) guide and [../vrack-example-k8s-and-pci/](Working with vRack example - Managed Kubernetes and Public Cloud instances) tutorial.
+For this use case, no additional configuration is needed, you simply has to choose the private network at the creation of your Managed Kubernetes cluster, as explained in the [Using vRack Private Network](../using_vrack/) guide and [Working with vRack example - Managed Kubernetes and Public Cloud instances](../vrack-example-k8s-and-pci/) tutorial.
 
 
 ### Communication between different private networks
