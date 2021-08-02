@@ -81,13 +81,6 @@ And then we assign them the subnets using the `POST /cloud/project/{serviceName}
 
 
 
-
-
-
-
-
-
-
 ### Retrieving the Openstack configuration file
 
 Now we need to download the `openrc.sh` configuration file, as explained in the [Setting OpenStack environment variables](../../public-cloud/set-openstack-environment-variables/) guide. 
@@ -99,7 +92,6 @@ We will be working on GRA5 region, so we download the *Gravelines (GRA5)* file.
 ![Retrieving the Openstack configuration file](images/vrack-example-07.png){.thumbnail}
 
 Following the steps on the [Setting OpenStack environment variables](../../public-cloud/set-openstack-environment-variables/) guide to be sure that the Openstack CLI is working on our workstation.
-
 
 
 <pre class="console"><code>~$ source openrc.sh
@@ -120,39 +112,37 @@ Please enter your OpenStack Password:
 Let's begin by getting the private networks openstack IDs using the openstack CLI:
 
 > [!warning]
-> In my case, *My private network* has a subnet range of `10.0.0.0/16`, and *My second private network* has a subnet range of `10.2.0/16`, don't forget to adapt the commands to your specific subnet ranges.
+> In my case, `priv-net-01` has a subnet range of `10.0.1.0/24`, and `priv-net-02` has a subnet range of `10.0.2.0/24`, don't forget to adapt the commands to your specific subnet ranges.
 
 ```bash
-MY_PRIVATE_NETWORK=$(openstack subnet list --subnet-range 10.0.0.0/16 --column ID -f value)
-MY_SECOND_PRIVATE_NETWORK=$(openstack subnet list --subnet-range 10.2.0.0/16 --column ID -f value)
+PRIV_NET_01=$(openstack subnet list --subnet-range 10.0.1.0/24 --column ID -f value)
+PRIV_NET_02=$(openstack subnet list --subnet-range 10.0.2.0/24 --column ID -f value)
 ```
 
 Now we can configure *My private network* with a static route to *My second private network*, and *My second private network* with a static route to *My private network*:
 
 ```bash
-openstack subnet set --host-route destination=10.2.0.0/16,gateway=10.0.0.1 ${MY_PRIVATE_NETWORK}
-openstack subnet set --host-route destination=10.0.0.0/16,gateway=10.2.0.1 ${MY_SECOND_PRIVATE_NETWORK}
+openstack subnet set --host-route destination=10.0.2.0/24,gateway=10.0.1.1 $PRIV_NET_01
+openstack subnet set --host-route destination=10.0.1.0/24,gateway=10.0.2.1 $PRIV_NET_02
 ```
 
 In my case:
 
-
-<pre class="console"><code>~$ MY_PRIVATE_NETWORK=$(openstack subnet list --subnet-range 10.0.0.0/16 --column ID -f value)
-~$ MY_SECOND_PRIVATE_NETWORK=$(openstack subnet list --subnet-range 10.2.0.0/16 --column ID -f value)
-~$ echo $MY_PRIVATE_NETWORK
-5eda1998-abf0-4787-87a2-acd7431c9c3f
-~$ echo $MY_SECOND_PRIVATE_NETWORK
-a019c436-6da3-4a10-a00d-49f8a3462bcd
-~$ openstack subnet set --host-route destination=10.2.0.0/16,gateway=10.0.0.1 ${MY_PRIVATE_NETWORK}
-~$ openstack subnet set --host-route destination=10.0.0.0/16,gateway=10.2.0.1 ${MY_SECOND_PRIVATE_NETWORK}
+<pre class="console"><code>~$ PRIV_NET_01=$(openstack subnet list --subnet-range 10.0.1.0/24 --column ID -f value)
+~$ PRIV_NET_02=$(openstack subnet list --subnet-range 10.0.2.0/24 --column ID -f value)
+~$ $ echo $PRIV_NET_01
+c03017c1-401e-49a0-bad0-852ec0efe7f5
+~$ $ echo $PRIV_NET_02
+f258dbbd-ae0b-40a6-8ce2-76e67837ce95
+~$ openstack subnet set --host-route destination=10.0.2.0/24,gateway=10.0.1.1 $PRIV_NET_01
+~$ openstack subnet set --host-route destination=10.0.1.0/24,gateway=10.0.2.1 $PRIV_NET_02
 </code></pre>
-
 
 
 ### Setting-up a PCI gateway
 
 
-Now we are going to create a Public Cloud instance in GRA5, to acr as a gateway for our vRack. 
+Now we are going to create a Public Cloud instance in GRA5, to act as a gateway for our vRack. 
 
 ![Setting-up a PCI gateway](images/vrack-example-08.png){.thumbnail}
 
@@ -172,16 +162,16 @@ Once the gateway instance is created, we need to add the two private networks to
 Let's get the private networks and the PCI gateway Openstack IDs:
 
 ```bash
-NETWORK_ID_1=$(openstack network list --name 'My private network' --column ID -f value)
-NETWORK_ID_2=$(openstack network list --name 'My second private network' --column ID -f value)  
+PRIV_NET_01_ID=$(openstack network list --name priv-net-01 --column ID -f value)
+PRIV_NET_02_ID=$(openstack network list --name priv-net-02 --column ID -f value) 
 INSTANCE_ID=$(openstack server list --name my-vrack-gateway --column ID -f value)
 ```
 
-And add two private network interfaces, for the two private networks, with the addresses `10.0.0.1` and `10.2.0.1`:
+And add two private network interfaces, for the two private networks, with the addresses `10.0.1.1` and `10.0.1.1`:
 
 ```bash
-openstack server add fixed ip --fixed-ip-address 10.0.0.1 ${INSTANCE_ID} ${NETWORK_ID_1}
-openstack server add fixed ip --fixed-ip-address 10.2.0.1 ${INSTANCE_ID} ${NETWORK_ID_2}
+openstack server add fixed ip --fixed-ip-address 10.0.1.1 ${INSTANCE_ID} ${PRIV_NET_01_ID}
+openstack server add fixed ip --fixed-ip-address 10.0.2.1 ${INSTANCE_ID} ${PRIV_NET_02_ID}
 ```
 
 Now we can verify that the gateway instance have two new private IP:
@@ -190,23 +180,23 @@ Now we can verify that the gateway instance have two new private IP:
 openstack server show ${INSTANCE_ID} --column addresses -f value
 ```
 
-As the last command also gave us the gateway instance public IP (in my example `54.38.255.54`), let's add it as shell variable:
+As the last command also gave us the gateway instance public IP (in my example `54.38.255.196`), let's add it as shell variable:
 
 ```bash
-INSTANCE_IP=54.38.255.54    # Don't forget to replace it with your instance public IP
+INSTANCE_IP=54.38.255.196    # Don't forget to replace it with your instance public IP
 ```
 
 In my case:
 
-<pre class="console"><code>~$ NETWORK_ID_1=$(openstack network list --name 'My private network' --column ID -f value)
-~$ NETWORK_ID_2=$(openstack network list --name 'My second private network' --column ID -f value)
+<pre class="console"><code>~$ PRIV_NET_01_ID=$(openstack network list --name priv-net-01 --column ID -f value)
+~$ PRIV_NET_02_ID=$(openstack network list --name priv-net-02 --column ID -f value)
 ~$ INSTANCE_ID=$(openstack server list --name my-vrack-gateway --column ID -f value)
-~$ echo "$NETWORK_ID_1 | $NETWORK_ID_2 | $INSTANCE_ID"
-de6a0bb2-84a3-448b-9675-2d18c90e0b36 | ea508aea-ed11-451c-9d56-f0a542428d06 | ce05e08e-36d5-4bfd-aaa7-ac501caccd9f
-~$ openstack server add fixed ip --fixed-ip-address 10.0.0.1 ${INSTANCE_ID} ${NETWORK_ID_1}
-~$ openstack server add fixed ip --fixed-ip-address 10.2.0.1 ${INSTANCE_ID} ${NETWORK_ID_2}
+~$ $ echo "$PRIV_NET_01_ID | $PRIV_NET_02_ID | $INSTANCE_ID"
+d2080f3f-285d-464a-aad8-74b935cf75e3 | b3cfb808-b4b7-406a-9e36-223c73747278 | 372b424a-ce4d-4e86-be67-4a8293f44f48
+~$ openstack server add fixed ip --fixed-ip-address 10.0.1.1 ${INSTANCE_ID} ${PRIV_NET_01_ID}
+~$ openstack server add fixed ip --fixed-ip-address 10.0.2.1 ${INSTANCE_ID} ${PRIV_NET_02_ID}
 ~$ openstack server show ${INSTANCE_ID} --column addresses -f value
-Ext-Net=2001:41d0:305:1000::2b85, 54.38.255.54; My private network=10.0.0.1; My second private network=10.2.0.1
+Ext-Net=2001:41d0:305:1000::3e88, 54.38.255.196; priv-net-01=10.0.1.1; priv-net-02=10.0.2.1
 ~$ INSTANCE_IP=54.38.255.54 
 </code></pre>
 
@@ -246,15 +236,15 @@ network:
             set-name: ens3
         ens7:
             dhcp4: false
-            addresses: [10.0.0.1/16]
+            addresses: [10.0.1.1/24]
             match:
-                macaddress: fa:16:3e:45:e6:74
+                macaddress: fa:16:3e:14:80:68
             set-name: ens7
         ens8:
             dhcp4: false
-            addresses: [10.2.0.1/16]
+            addresses: [10.0.2.1/24]
             match:
-                macaddress: fa:16:3e:63:11:ba
+                macaddress: fa:16:3e:17:b6:33
             set-name: ens8
 ```                    
 
@@ -272,28 +262,28 @@ Welcome to Ubuntu 21.04 (GNU/Linux 5.11.0-17-generic x86_64)
 ubuntu@my-vrack-gateway:~$ ip addr show
 [...]
 3: ens7: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
-    link/ether fa:16:3e:45:e6:74 brd ff:ff:ff:ff:ff:ff
+    link/ether fa:16:3e:14:80:68 brd ff:ff:ff:ff:ff:ff
     altname enp0s7
 4: ens8: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
-    link/ether fa:16:3e:63:11:ba brd ff:ff:ff:ff:ff:ff
+    link/ether fa:16:3e:17:b6:33 brd ff:ff:ff:ff:ff:ff
     altname enp0s8
 ubuntu@my-vrack-gateway:~$ sudo vim /etc/netplan/50-cloud-init.yaml
 ubuntu@my-vrack-gateway:~$ sudo netplan apply
 ubuntu@my-vrack-gateway:~$ ip addr show
 [...]
 3: ens7: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
-    link/ether fa:16:3e:45:e6:74 brd ff:ff:ff:ff:ff:ff
+    link/ether fa:16:3e:14:80:68 brd ff:ff:ff:ff:ff:ff
     altname enp0s7
-    inet 10.0.0.1/16 brd 10.0.255.255 scope global ens7
+    inet 10.0.1.1/24 brd 10.0.1.255 scope global ens7
        valid_lft forever preferred_lft forever
-    inet6 fe80::f816:3eff:fe45:e674/64 scope link
+    inet6 fe80::f816:3eff:fe14:8068/64 scope link
        valid_lft forever preferred_lft forever
 4: ens8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
-    link/ether fa:16:3e:63:11:ba brd ff:ff:ff:ff:ff:ff
+    link/ether fa:16:3e:17:b6:33 brd ff:ff:ff:ff:ff:ff
     altname enp0s8
-    inet 10.2.0.1/16 brd 10.2.255.255 scope global ens8
+    inet 10.0.2.1/24 brd 10.0.2.255 scope global ens8
        valid_lft forever preferred_lft forever
-    inet6 fe80::f816:3eff:fe63:11ba/64 scope link
+    inet6 fe80::f816:3eff:fe17:b633/64 scope link
        valid_lft forever preferred_lft forever
 </code></pre>
 
@@ -305,8 +295,8 @@ Now we can configure the gateway instance to route the traffic between the two p
 ```bash
 sudo sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/' /etc/sysctl.conf
 sudo sysctl -p
-sudo iptables -t nat -A POSTROUTING ! -d 10.0.0.0/16 -o ens8 -j SNAT --to-source 10.2.0.1
-sudo iptables -t nat -A POSTROUTING ! -d 10.2.0.0/16 -o ens7 -j SNAT --to-source 10.0.0.1
+sudo iptables -t nat -A POSTROUTING ! -d 10.0.1.0/24 -o ens8 -j SNAT --to-source 10.0.2.1
+sudo iptables -t nat -A POSTROUTING ! -d 10.0.2.0/24 -o ens7 -j SNAT --to-source 10.0.1.1
 sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install iptables-persistent
 ```
@@ -317,8 +307,8 @@ In my case:
 <pre class="console"><code>ubuntu@my-vrack-gateway:~$ sudo sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/' /etc/sysctl.conf
 ubuntu@my-vrack-gateway:~$ sudo sysctl -p
 net.ipv4.ip_forward = 1
-ubuntu@my-vrack-gateway:~$ sudo iptables -t nat -A POSTROUTING ! -d 10.0.0.0/16 -o ens8 -j SNAT --to-source 10.2.0.1
-ubuntu@my-vrack-gateway:~$ sudo iptables -t nat -A POSTROUTING ! -d 10.2.0.0/16 -o ens7 -j SNAT --to-source 10.0.0.1
+ubuntu@my-vrack-gateway:~$ sudo iptables -t nat -A POSTROUTING ! -d 10.0.1.0/24 -o ens8 -j SNAT --to-source 10.0.2.1
+ubuntu@my-vrack-gateway:~$ sudo iptables -t nat -A POSTROUTING ! -d 10.0.2.0/24 -o ens7 -j SNAT --to-source 10.0.1.1
 ubuntu@my-vrack-gateway:~$ sudo apt update
 Get:1 http://security.ubuntu.com/ubuntu hirsute-security InRelease [101 kB]
 [...]
@@ -341,9 +331,9 @@ The following NEW packages will be installed:
 No user sessions are running outdated binaries.
 </code></pre>
 
-### Setting-up the Managed Kubernetes attached to *My private network*
+### Setting-up the Managed Kubernetes attached to `priv_net_01`
 
-Then we create a Kubernetes cluster in GRA5 region, attached to *My private network*, as explained in the [Create a cluster](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) guide. 
+Then we create a Kubernetes cluster in GRA5 region, attached to`priv_net_01`, as explained in the [Create a cluster](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) guide. 
 
 
 ![Choose a private network for this cluster](images/vrack-example-10.png){.thumbnail}
