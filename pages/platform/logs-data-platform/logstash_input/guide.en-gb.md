@@ -5,7 +5,7 @@ order: 1
 section: Features
 ---
 
-**Last updated 21st July, 2020**
+**Last updated 30th July, 2021**
 
 ## Objective
 
@@ -246,7 +246,6 @@ For your information, here is the list of Logstash plugins we support. Of course
  logstash-input-syslog
  logstash-input-tcp
  logstash-input-twitter
- logstash-input-udp
 ```
 
 ##### Input gelf plugin
