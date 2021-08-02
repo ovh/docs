@@ -119,7 +119,7 @@ PRIV_NET_01=$(openstack subnet list --subnet-range 10.0.1.0/24 --column ID -f va
 PRIV_NET_02=$(openstack subnet list --subnet-range 10.0.2.0/24 --column ID -f value)
 ```
 
-Now we can configure *My private network* with a static route to *My second private network*, and *My second private network* with a static route to *My private network*:
+Now we can configure `priv_net_01` with a static route to `priv_net_02`, and `priv_net_02` with a static route to `priv_net_01`:
 
 ```bash
 openstack subnet set --host-route destination=10.0.2.0/24,gateway=10.0.1.1 $PRIV_NET_01
@@ -342,7 +342,7 @@ Integrating a cluster into a vRack Private Network must be done at the third ste
 
 ![Choose a private network for this cluster](images/vrack-example-11.png){.thumbnail}
 
-Our new cluster will be created inside *My private network*.
+Our new cluster will be created inside `priv_net_01`.
 
 In the Managed Kubernetes Service Dashboard, we can see the cluster, with the chosen private network in the *Attached network* column:
 
@@ -351,40 +351,40 @@ In the Managed Kubernetes Service Dashboard, we can see the cluster, with the ch
 Don't forget to grab your `kubeconfig` and configure `kubectl` to use it, as explained in the [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl/) guide.
 
 
-### Setting-up a PCI attached to *My second private network*
+### Setting-up a PCI attached to `priv_net_02`
 
-Now we can create a new Public Cloud instance, also in GRA5 region, and attach it to  *My second private network* by following the [Integrating an instance into vRack](../../public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1) guide.
+Now we can create a new Public Cloud instance, also in GRA5 region, and attach it to  `priv_net_02` by following the [Integrating an instance into vRack](../../public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1) guide.
 
 We are going to create an Ubuntu instance:
 
-![Setting-up a PCI attached to *My second private network*](images/vrack-example-04.png){.thumbnail}
+![Setting-up a PCI attached to `priv_net_02`](images/vrack-example-04.png){.thumbnail}
 
-In the fourth step of creation, we call it `vrack-example-between-private-networks` and we attach it to *My second private network*:
+In the fourth step of creation, we call it `vrack-example-between-private-networks` and we attach it to `priv_net_02`:
 
-![Setting-up a PCI attached to *My second private network*](images/vrack-example-13.png){.thumbnail}
+![Setting-up a PCI attached to `priv_net_02`](images/vrack-example-13.png){.thumbnail}
 
 After instance creation, we can see the connection details in the OVHcloud Control Panel. 
 
 
-![Setting-up a PCI attached to *My second private network*](images/vrack-example-14.png){.thumbnail}
+![Setting-up a PCI attached to `priv_net_02`](images/vrack-example-14.png){.thumbnail}
 
 
 If we log in to the instance using SSH, we can see that it has two network interfaces, one attached to the public IP address we use to log in, the other attached to the private network:
 
-<pre class="console"><code>~$ ssh ubuntu@51.83.109.184
+<pre class="console"><code>~$ ssh ubuntu@54.38.254.242
 Welcome to Ubuntu 21.04 (GNU/Linux 5.11.0-18-generic x86_64)
 
   System information as of Fri Jun 18 04:37:54 UTC 2021
 
-  System load:  0.0               Processes:             111
-  Usage of /:   3.9% of 48.29GB   Users logged in:       0
-  Memory usage: 2%                <b>IPv4 address for ens3: 51.83.109.184</b>
-  Swap usage:   0%                <b>IPv4 address for ens4: 10.2.76.176</b>
+  System load:  0.35              Processes:             113
+  Usage of /:   3.6% of 48.29GB   Users logged in:       0
+  Memory usage: 3%                IPv4 address for ens3: 54.38.254.242
+  Swap usage:   0%                IPv4 address for ens4: 10.0.2.142
 
 ubuntu@example-vrack-k8s-pci:~$ exit
 </code></pre>
 
-Please take note of the private network IP address (in my case `10.2.76.176`), as we will need to use it later.
+Please take note of the private network IP address (in my case `10.0.2.142`), as we will need to use it later.
 
 ### Verifying that we can access the PCI from the Kubernetes cluster
 
@@ -417,17 +417,17 @@ kubectl apply -f shell-demo.yaml
 ```
 
 
-Now we can log in to the `shell-demo` pod and add some packages to allows us to verify if we can reach the instance on *My second private network* (in my example with the `10.2.76.176` IP address):
+Now we can log in to the `shell-demo` pod and add some packages to allows us to verify if we can reach the instance on `priv_net_02` (in my example with the `10.0.2.142` IP address):
 
 ```bash
 kubectl exec --stdin --tty shell-demo -- /bin/bash
 apt update
 apt install iproute2 iputils-ping
-ping 10.2.76.176
-traceroute 10.2.76.176
+ping 10.0.2.142
+traceroute 10.0.2.142
 ```
 
-If everything happens as intended, we can reach the PCI instance in *My second private network* via the gateway:
+If everything happens as intended, we can reach the PCI instance in `priv_net_02` via the gateway:
 
 <pre class="console"><code>~$ kubectl apply -f shell-demo.yaml
 pod/shell-demo created
@@ -443,21 +443,21 @@ Get:1 http://security.debian.org/debian-security buster/updates InRelease [65.4 
 root@nodepool-db0e5587-9718-4faf-b4-node-d69703:/# apt install iproute2 iputils-ping
 Reading package lists... Done
 Building dependency tree
-root@nodepool-db0e5587-9718-4faf-b4-node-d69703:/# ping 10.2.76.176
-PING 10.2.76.176 (10.2.76.176) 56(84) bytes of data.
-64 bytes from 10.2.76.176: icmp_seq=1 ttl=63 time=2.52 ms
-64 bytes from 10.2.76.176: icmp_seq=2 ttl=63 time=1.01 ms
-64 bytes from 10.2.76.176: icmp_seq=3 ttl=63 time=0.903 ms
-64 bytes from 10.2.76.176: icmp_seq=4 ttl=63 time=1.02 ms
+root@nodepool-db0e5587-9718-4faf-b4-node-d69703:/# ping 10.0.2.142
+PING 10.0.2.142 (10.0.2.142) 56(84) bytes of data.
+64 bytes from 10.0.2.142: icmp_seq=1 ttl=63 time=2.52 ms
+64 bytes from 10.0.2.142: icmp_seq=2 ttl=63 time=1.01 ms
+64 bytes from 10.0.2.142: icmp_seq=3 ttl=63 time=0.903 ms
+64 bytes from 10.0.2.142: icmp_seq=4 ttl=63 time=1.02 ms
 ^C
---- 10.2.76.176 ping statistics ---
+--- 10.0.2.142 ping statistics ---
 4 packets transmitted, 4 received, 0% packet loss, time 6ms
 rtt min/avg/max/mdev = 0.903/1.361/2.519/0.671 ms
 
-root@nodepool-db0e5587-9718-4faf-b4-node-d69703:/# traceroute 10.2.76.176
-traceroute to 10.2.76.176 (10.2.76.176), 30 hops max, 60 byte packets
- 1  10.0.0.1 (10.0.0.1)  1.292 ms  1.103 ms  1.017 ms
- 2  * * 10.2.76.176 (10.2.76.176)  1.789 ms
+root@nodepool-db0e5587-9718-4faf-b4-node-d69703:/# traceroute 10.0.2.142
+traceroute to 10.0.2.142 (10.0.2.142), 30 hops max, 60 byte packets
+ 1  10.0.1.1 (10.0.1.1)  1.259 ms  0.683 ms  0.471 ms
+ 2  10.0.2.142 (10.0.2.142)  1.694 ms * *
 </code></pre>
 
 
@@ -476,7 +476,7 @@ We get the `NodePort` port and we sotre it in a variable:
 kubectl get svc nginx -o=jsonpath='{.spec.ports[?(@.port==80)].nodePort}'
 ```
 
-And the *My private network* IP address of one of our Kubernetes nodes:
+And the `priv_net_01` IP address of one of our Kubernetes nodes:
 
 ```bash
 kubectl get nodes -o jsonpath='{.items[0].status.addresses[?(@.type=="InternalIP")].address}'
@@ -489,25 +489,33 @@ pod/nginx created
 ~$ kubectl expose pod nginx --port 80 --type NodePort
 service/nginx exposed
 ~$ kubectl get svc nginx -o=jsonpath='{.spec.ports[?(@.port==80)].nodePort}'
-32271
+30902
 ~$ kubectl get pod nginx -o jsonpath='{.status.hostIP}'
-10.0.88.117
-~$ ssh ubuntu@51.83.109.184
+10.0.1.146
+~$ ssh ubuntu@54.38.254.242
 Welcome to Ubuntu 21.04 (GNU/Linux 5.11.0-18-generic x86_64)
 
   System information as of Fri Jun 18 04:37:54 UTC 2021
 
   System load:  0.0               Processes:             111
   Usage of /:   3.9% of 48.29GB   Users logged in:       0
-  Memory usage: 2%                <b>IPv4 address for ens3: 51.83.109.184</b>
-  Swap usage:   0%                <b>IPv4 address for ens4: 10.2.76.176</b>
+  Memory usage: 2%                <b>IPv4 address for ens3: 54.38.254.242</b>
+  Swap usage:   0%                <b>IPv4 address for ens4: 10.0.2.142</b>
 
-ubuntu@example-vrack-k8s-pci:~$ traceroute 10.0.88.117
-traceroute to 10.0.88.117 (10.0.88.117), 30 hops max, 60 byte packets
- 1  10.2.0.1 (10.2.0.1)  1.340 ms  1.268 ms  1.233 ms
- 2  10.0.88.117 (10.0.88.117)  2.094 ms *  2.012 ms
+ubuntu@vrack-example-between-private-networks:~$ sudo apt install traceroute
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  traceroute
+[...]  
 
-ubuntu@vrack-example-between-private-networks:~$ curl 10.0.88.117:32271
+ubuntu@example-vrack-k8s-pci:~$  traceroute 10.0.1.146
+traceroute to 10.0.1.146 (10.0.1.146), 30 hops max, 60 byte packets
+ 1  _gateway (10.0.2.1)  1.653 ms  1.584 ms  1.549 ms
+ 2  10.0.1.146 (10.0.1.146)  2.471 ms * *
+
+ubuntu@vrack-example-between-private-networks:~$ curl 10.0.1.146:30902
 &lt;!DOCTYPE html>
 &lt;html>
 &lt;head>
@@ -534,13 +542,6 @@ Commercial support is available at
 &lt;/body>
 &lt;/html>
 </code></pre>
-
-
-> [!warning]
-> There is currently a bug in OVHcloud Managed Kubernetes in vRack that makes NodePort services available only in the nodes where a pod associated to that service is running. 
-> 
-> This is a temporary problem, that will be fixed shorty. 
-
 
 ## Go further
 
