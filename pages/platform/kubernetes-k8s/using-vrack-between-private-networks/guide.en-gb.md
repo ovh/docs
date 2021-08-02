@@ -88,6 +88,8 @@ This use case currently asks for additional configuration on the OVHcloud Manage
 > [!warning]
 > The need of extra manual configuration described in this guide is **temporary**. Our Managed Kubernetes team is working on a more streamlined solution, as explained in [this issue](https://github.com/ovh/public-cloud-roadmap/issues/116) in our [Public Cloud roadmap](https://github.com/ovh/public-cloud-roadmap/).
 
+### The problem
+
  The reason is the networking model we have detailed in the precedent point. Let's adapt the precedent schema to make the PCI virtual machine to be in a different private network than the Managed Kubernetes cluster:
  
 ![Communication between different private networks](images/using-vrack-05.jpg){.thumbnail}
@@ -98,3 +100,9 @@ That means that if in our schema *Pod 3* wants to communicate with the PCI *vm1*
 
 ![Communication between different private networks](images/using-vrack-06.jpg){.thumbnail}
 
+
+### The solution
+
+The solution to this problem is to push the routes to the additional private networks via the DHCP of the private networks. That inform the nodes that traffic to the private networks is to be sent via `eth1` et non `eth0`:
+
+![Communication between different private networks](images/using-vrack-07.jpg){.thumbnail}
