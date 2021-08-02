@@ -26,7 +26,7 @@ Ce tutoriel comprend les étapes de base d'une installation entièrement manuell
 
 Pour une installation entièrement manuelle, suivez les instructions détaillées ci-dessous. Créez d'abord une instance si nécessaire. Nous vous recommandons de consulter le [guide pour créer une première instance Public Cloud et s'y connecter](../premiers-pas-instance-public-cloud/).
 
-Pour une installation en utilisant le template OVHcloud pour WordPress, suivez le [guide de création d'instance](../premiers-pas-instance-public-cloud/) et choisissez `WordPress`{.action} à l'étape 3 du processus « Sélectionner une image ». <br><br> ! [wordpress](images/wp_instance.png){.thumbnail} <br><br>Avec une instance WordPress créée avec succès, le logiciel est déjà installé mais vous devez néanmoins configurer la base de données. Poursuivez alors la lecture de ce guide avec les instructions pour la configuration de [MariaDB](#sqlconf).
+Pour une installation en utilisant le template OVHcloud pour WordPress, suivez le [guide de création d'instance](../premiers-pas-instance-public-cloud/) et choisissez `WordPress`{.action} à l'étape 3 du processus « Sélectionner une image ». <br><br> ![wordpress](images/wp_instance.png){.thumbnail} <br>Avec une instance WordPress créée avec succès, le logiciel est déjà installé mais vous devez néanmoins configurer la base de données. Poursuivez alors la lecture de ce guide avec les instructions pour la configuration de [MariaDB](#sqlconf).
 
 ### Installer le serveur Web
 
@@ -60,13 +60,13 @@ Vous pouvez ensuite installer le serveur Web de votre choix. Cet exemple utilise
 - **Pour Debian/Ubuntu**
 
 ```bash
-admin@instance:~$ sudo apt-get install apache2 php5 php5-mysql mysql-server -y
+admin@instance:~$ sudo apt-get install apache2 php php-mysql mysql-server -y
 ```
 
 - **Pour Fedora/CentOS**
 
 ```bash
-[admin@instance ~]$ sudo yum install httpd php php-mysql mariadb-server -y
+[admin@instance ~]$ sudo yum install httpd php php-mysqlnd mariadb-server -y
 ```
 
 Un mot de passe vous sera alors demandé pour configurer le compte « root » de la base de données MySQL. Redémarrez le serveur Web pour vous assurer que celui-ci a bien été enregistré.
@@ -74,13 +74,13 @@ Un mot de passe vous sera alors demandé pour configurer le compte « root » de
 - **Pour Debian/Ubuntu**
 
 ```bash
-admin@instance:~$ sudo service apache2 restart
+admin@instance:~$ sudo systemctl restart apache2
 ```
 
 - **Pour Fedora/CentOS**
 
 ```bash
-admin@instance:~$ sudo service httpd restart
+[admin@instance ~]$ sudo systemctl restart httpd.service
 ```
 
 ### Telecharger  Wordpress
@@ -120,7 +120,7 @@ admin@instance:~$ sudo chown -R www-data:www-data /var/www/html/
 - **Pour Fedora/CentOS**
 
 ```bash
-[admin@serveur-7 ~]$ sudo chown -R apache:apache /var/www/html/
+[admin@instance ~]$ sudo chown -R apache:apache /var/www/html/
 ```
 
 ### Configuration de MySQL <a name="sqlconf"></a>

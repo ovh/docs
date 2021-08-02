@@ -1,235 +1,202 @@
 ---
 title: Installation von WordPress auf einer Instanz
-excerpt: Installation von WordPress auf einer Instanz
+excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz für WordPress nutzen
 slug: installation_von_wordpress_auf_einer_instanz
 section: 'Tutorials'
-legacy_guide_number: g2060
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## 
-WordPress ist ein CMS (Content Management System, System zur Verwaltung von Inhalten), mit dem Sie schnell und einfach Ihre Webseite erstellen können. Die Lösung erfordert keine speziellen Programmierkenntnisse für deren Administration.
+**Letzte Aktualisierung am 26.07.2021**
 
-Anders als bei den OVH VPS Angeboten gibt es keine WordPress Templates für die Installation in Ihrer Public Cloud. Sie können jedoch WordPress von Hand auf einer Instanz installieren.
+## Ziel
 
-In dieser Hilfe wird die Vorgehensweise zur Installation von WordPress auf einer Public Cloud Instanz beschrieben.
+WordPress ist ein Content Management System (CMS), mit dem Sie Ihre Website schnell und einfach erstellen können. Für die Verwaltung des Programms sind keine besonderen Programmierkenntnisse erforderlich.
 
+Dieses Tutorial enthält die Grundschritte einer vollständig manuellen Installation, die die Konfiguration eines Webservers beinhaltet. Sie können Ihre Instanz auch für WordPress vorkonfigurieren, indem Sie bei der Erstellung der Instanz unser Template für WordPress (auf CentOS) auswählen.
+
+**Diese Anleitung erklärt, wie Sie WordPress auf einer Public Cloud Instanz installieren.**
 
 ## Voraussetzungen
 
-- [Eine erstellte Instanz im OVH Kundencenter]({legacy}1775)
+- Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH.
 
+## In der praktischen Anwendung
 
+- Folgen Sie für eine komplett manuelle Installation den nachfolgenden Schritten. (Erstellen Sie zunächst eine Instanz, falls notwendig; Sie können [unsere entsprechende Anleitung verwenden](../public-cloud-erste-schritte/)).
+- Für eine Installation auf Basis des OVHcloud WordPress-Templates folgen Sie der [Anleitung zum Erstellen einer Instanz](../public-cloud-erste-schritte/) und wählen Sie `WordPress`{.action} bei der Image-Auswahl in Schritt 3. <br><br> ![wordpress](images/wp_instance.png){.thumbnail} <br> Bei einer erfolgreich erstellten WordPress-Instanz ist die Software bereits fertig installiert aber Sie müssen die Datenbank noch konfigurieren. Fahren Sie dazu mit den Anweisungen zur Konfiguration von [MariaDB](#sqlconf) fort.
 
+### Webserver installieren
 
-## Installation des Web-Servers
-Zuerst müssen Sie einen Web-Server auf Ihrer Public Cloud Instanz installieren.
+Installieren Sie zunächst den Webserver auf Ihrer Public Cloud Instanz.
 
-Stellen Sie dazu erst einmal sicher, dass Ihre Instanz softwareseitig auf dem neuesten Stand ist:
+Stellen Sie hierzu sicher, dass die Instanz auf dem aktuellen Stand ist:
 
+- **Debian/Ubuntu**
 
-- Debian / Ubuntu
-
-
-```
+```bash
 admin@instance:~$ sudo apt-get update && sudo apt-get upgrade -y
 ```
 
+- **Fedora/CentOS**
 
-- Fedora / CentOS
-
-
-```
-[admin@instance ~]$ sudo yum update && sudo yum upgrade
+```bash
+[admin@instance ~ ~$ sudo yum update && sudo yum upgrade
 ```
 
+Anschließend können Sie den Webserver Ihrer Wahl installieren. Dieses Beispiel verwendet den Apache Webserver mit folgenden Elementen:
 
+- PHP
+- PHP-MySQL
+- MySQL oder MariaDB Server
 
-Anschließend kann dann der Web-Server installiert werden.
-In unserem Beispiel verwenden wir Apache mit folgenden Elementen:
+> [!primary]
+>
+> Da Softwarepakete regelmäßig aktualisiert werden, müssen Sie möglicherweise die folgenden Anweisungen entsprechend den neuesten Versionen anpassen.
+>
 
-- Php5
-- Php5-mysql
-- Serveur Mysql
+- **Debian/Ubuntu**
 
-- Debian / Ubuntu
-
-
-```
-admin@instance:~$ sudo apt-get install apache2 php5 php5-mysql mysql-server -y
-```
-
-
-- Fedora / CentOS
-
-
-```
-[admin@instance ~]$ sudo yum install httpd php php-mysql mariadb-server -y
+```bash
+admin@instance~$ sudo apt get install apache2 php php-mysql mysql-server -y
 ```
 
+- **Fedora/CentOS**
 
-
-Sie werden dann gebeten, ein Passwort für die Konfiguration des "root" Accounts der MySQL Datenbank anzugeben.
-
-Starten Sie anschließend den Web-Server neu, damit die Änderungen angewandt werden.
-
-
-- Debian / Ubuntu
-
-
-```
-admin@instance:~$ sudo service apache2 restart
+```bash
+[admin@instance~]$ sudo yum install httpd php php php mysqlnd mariadb-server -y
 ```
 
+Wenn Sie dazu aufgefordert werden, geben Sie ein Passwort ein, um den Root-Account für die MySQL-Datenbank zu konfigurieren.
 
-- Fedora / CentOS
+Starten Sie den Webserver neu, um die Änderung zu übernehmen:
 
+- **Debian/Ubuntu**
 
-```
-admin@instance:~$ sudo service httpd restart
-```
-
-
-
-
-
-## Download von WordPress
-Begeben Sie sich auf die [WordPress Webseite](https://de.wordpress.org/) und laden Sie die aktuellste Version herunter:
-
-
-```
-admin@instance:~$ wget https://de.wordpress.org/wordpress-4.4.2-de_DE.tar.gz
+```bash
+admin@instance:~$ sudo systemctl restart apache2
 ```
 
+- **Fedora/CentOS**
 
-Entpacken Sie anschließend das heruntergeladene Archiv:
-
-
-```
-admin@instance:~$ tar zxvf wordpress-4.4.2-de_DE.tar.gz
+```bash
+[admin@instance ~]$ sudo systemctl restart httpd.service
 ```
 
+### Telecharger  WordPress
 
+Gehen Sie auf die Website von [WordPress](https://wordpress.org/download/){.external}, um den Link zum Download der neuesten Version zu kopieren. Laden Sie anschließend die Datei herunter:
 
-- Löschen Sie den Standard-Ordner des Web-Servers
-
-
+```bash
+admin@instance:~$ wget https://wordpress.org/latest.tar.gz
 ```
+
+Dekomprimieren Sie das heruntergeladene Archiv:
+
+```bash
+admin@instance:~$ tar zxvf latest.tar.gz
+```
+
+Löschen Sie den Standard-Ordner des Webservers:
+
+```bash
 admin@instance:~$ sudo rm -R /var/www/html/
 ```
+Ersetzen Sie den Standard-Ordner des Webservers mit dem WordPress Ordner:
 
-
-- Verschieben Sie den WordPress Ordner in den Standard-Ordner des Web-Servers
-
-
-```
-admin@instance:~$ sudo mv wordpress /var/www/html
+```bash
+admin@instance~$ sudo mv wordpress /var/www/html
 ```
 
+Sie können dann dem Webserver Schreibrechte für den Ordner erteilen:
 
+- **Debian/Ubuntu**
 
-Nachdem dies erfolgt ist, können Sie dem Web-Server Schreibrechte für diesen Ordner geben.
-
-
-- Debian / Ubuntu
-
-
-```
+```bash
 admin@instance:~$ sudo chown -R www-data:www-data /var/www/html/
 ```
 
+- **Fedora/CentOS**
 
-- Fedora / CentOS
-
-
-```
-[admin@serveur-7 ~]$ sudo chown -R apache:apache /var/www/html/
+```bash
+[admin@instance ~]$ sudo chown -R apache:apache /var/www/html/
 ```
 
+### Konfiguration von MySQL <a name="sqlconf"></a>
 
+Im Gegensatz zu MySQL-Server, den Sie auf Debian/Ubuntu installieren können, konfiguriert MariaDB Ihr Root-Passwort bei der Installation nicht. Sie müssen daher den MariaDB-Server starten und Ihr Passwort mit den folgenden Befehlen festlegen.
 
+Datenbankserver starten:
 
-
-## MySQL Konfiguration
-Im Gegensatz zu MySQL Server, das Sie auf Debian / Ubuntu installieren können, konfiguriert MariaDB bei der Installation nicht Ihr root-Passwort.
-Sie müssen also den MariaDB Server starten und Ihr Passwort mit folgenden Befehlen konfigurieren:
-
-
-- Starten des Datenbank-Servers:
-
-
-```
-[admin@instance ~]$ sudo /sbin/service mariadb start
+```bash
+[admin@instance ~]$ sudo systemctl start mariadb.service
 ```
 
+Root-Passwort neu konfigurieren:
 
-- Konfiguration des root-Passworts:
-
-
-```
-[admin@instance ~]$ sudo /usr/bin/mysql_secure_installation
+```bash
+[admin@instance ~$ sudo /usr/bin/mysql_secure_installation
 ```
 
-
-
-Sobald Sie über Ihr root-Passwort verfügen, können Sie sich mit Ihrem Datenbank-Server verbinden:
-
-
-```
-admin@instance:~$ sudo mysql -u root -p
+```bash
+Set root password? [Y/n] Y
+New password:
 ```
 
+Darüber hinaus werden Sie aufgefordert, einige sicherheitsrelevante Aktionen zu bestätigen, wie die Entfernung des Standard-Benutzers ("anonymous user") und die Deaktivierung von Root-Logins.
 
-Anschließend erstellen Sie einen neuen Benutzer und eine Datenbank für WordPress:
+Die folgenden Anweisungen gelten für MySQL und MariaDB.
 
+Sobald Sie Ihr Root-Passwort haben, können Sie sich mit Ihrem Datenbankserver verbinden:
 
-- Benutzer erstellen:
-
-
-```
-mysql> CREATE USER 'wordpress'@'localhost' IDENTIFIED BY 'P@ssw0rd';
-```
-
-
-- Datenbank erstellen:
-
-
-```
-mysql> CREATE DATABASE `wordpress` ;
+```bash
+admin@instance~$ sudo mysql -u root -p
 ```
 
+Sie können nun einen neuen Benutzer erstellen, ein Passwort festlegen und eine Datenbank für WordPress erstellen.
 
-- Anschließend geben Sie dem Benutzer "wordpress" die notwendigen Rechte für die Datenbank "wordpress":
+Benutzer erstellen:
 
-
+```sql
+mysql> CREATE USER 'wordpress'@'localhost' IDENTIFIED BY 'Benutzerpasswort';
 ```
+
+Datenbank erstellen:
+
+```sql
+mysql> CREATE DATABASE `wordpress`;
+```
+
+Dem Benutzer "wordpress" alle Rechte an der Datenbank "wordpress" erteilen:
+
+```sql
 mysql> GRANT ALL PRIVILEGES ON `wordpress` . * TO 'wordpress'@'localhost';
 ```
 
+Die Datenbank-CLI schließen:
 
+```sql
+mysql> exit
+```
 
+### WordPress konfigurieren
 
+Sobald die Datenbank konfiguriert ist, können Sie WordPress im Browser aufrufen, um die Installation abzuschließen. Geben Sie hierzu die IP-Adresse Ihrer Instanz (oder den Domainnamen, falls Sie bereits einen [mit der Instanz verbunden haben](../../domains/webhosting_bearbeiten_der_dns_zone/)) ins Adressfeld ein.
 
-## WordPress Konfiguration
-Sobald die Datenbank konfiguriert wurde, können Sie einen Browser starten und Ihre WordPress Seite aufrufen, indem Sie die IP-Adresse Ihrer Instanz in Ihrem Browser angeben.
+Mit dem WordPress-Konfigurationsassistenten können Sie den Zugriff auf Ihre Datenbank zu konfigurieren. Geben Sie die Werte ein, die Sie in den vorherigen Schritten festgelegt haben.
 
-Es wird dann eine WordPress Seite angezeigt, und Sie können zuerst die Zugänge zu Ihrer Datenbank konfigurieren.
+![wordpress](images/wp_install1.png){.thumbnail}
 
-![](images/img_3674.jpg){.thumbnail}
-Danach können Sie die allgemeinen Einstellungen Ihrer Seite sowie die Zugänge Ihres Administrator-Benutzers konfigurieren.
+Im zweiten Schritt konfigurieren Sie die allgemeinen Informationen Ihrer Website sowie den Administrator-Account für WordPress.
 
-![](images/img_3675.jpg){.thumbnail}
-Nachdem dies erfolgt ist, können Sie sich mit dem soeben erstellten Benutzer mit dem Administrations-Panel Ihrer WordPress Seite verbinden.
+![wordpress](images/wp_install2.png){.thumbnail}
 
+Sobald die Konfiguration abgeschlossen ist, können Sie sich mit dem gerade angelegten Benutzer in den Administrationsbereich Ihrer Website einloggen.
 
-## 
+## Weiterführende Informationen
 
-- [Sicherung einer Instanz]({legacy}1881)
-- [Konfiguration von Owncloud mit Object Storage]({legacy}2000)
-
-
-
-
-## 
-[Zurück zum Index der Cloud Hilfen]({legacy}1785)
-
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
-**Ostatnia aktualizacja: 04-12-2019**
+**Ostatnia aktualizacja z dnia 26-07-2021**
 
 ## Wprowadzenie
 
@@ -40,7 +40,7 @@ Zostanie wyświetlone okno dialogowe „Restart w trybie ratunkowym”. Kliknij 
 
 ![control panel](images/rescue2.png){.thumbnail}
 
-Po restarcie instancji w trybie ratunkowym u góry ekranu zostanie wyświetlony komunikat z hasłem tymczasowym.
+Po ponownym uruchomieniu instancji w trybie Rescue wyświetli się okno informacyjne zawierające dostępne metody dostępu. Twoje **hasło do trybu Rescue** tymczasowego będzie wyświetlane tylko w konsoli VNC. Kliknij Twoją instancję w tabeli, następnie przejdź do zakładki `Konsola VNC`{.action}, aby pobrać instancję.
 
 ![control panel](images/rescuedata.png){.thumbnail}
 
