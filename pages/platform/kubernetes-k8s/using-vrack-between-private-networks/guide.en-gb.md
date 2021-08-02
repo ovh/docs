@@ -45,7 +45,7 @@ When your Managed Kubernetes and your other services are both in vRack, but in d
 > The need of extra manual configuration described in this guide is **temporary**. Our Managed Kubernetes team is working on a more streamlined solution, as explained in [this issue](https://github.com/ovh/public-cloud-roadmap/issues/116) in our [Public Cloud roadmap](https://github.com/ovh/public-cloud-roadmap/).
 >
 
-In this document we suppose that you have some understanding of how to use OVHcloud Managed Kubernetes in the vRack. To get  ore information nn this topic you can look at the [Using vRack Private Network](../using_vrack/) guide and [../vrack-example-k8s-and-pci/](Working with vRack example - Managed Kubernetes and Public Cloud instances) tutorial.
+In this document we suppose that you have some understanding of how to use OVHcloud Managed Kubernetes in the vRack. To get more information on this topic you can look at the [Using vRack Private Network](../using_vrack/) guide and [../vrack-example-k8s-and-pci/](Working with vRack example - Managed Kubernetes and Public Cloud instances) tutorials.
 
 
 ## Networking in Managed Kubernetes inside the vRack
