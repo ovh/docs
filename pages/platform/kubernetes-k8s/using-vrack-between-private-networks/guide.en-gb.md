@@ -106,3 +106,7 @@ That means that if in our schema *Pod 3* wants to communicate with the PCI *vm1*
 The solution to this problem is to push the routes to the additional private networks via the DHCP of the private networks. That inform the nodes that traffic to the private networks is to be sent via `eth1` et non `eth0`:
 
 ![Communication between different private networks](images/using-vrack-07.jpg){.thumbnail}
+
+With this setupm if in our schema *Pod 3* wants to communicate with the PCI *vm1*, that is in a different private network, the traffic is routed to `eth1`, and thus to *vm1*:
+
+![Communication between different private networks](images/using-vrack-08.jpg){.thumbnail}
