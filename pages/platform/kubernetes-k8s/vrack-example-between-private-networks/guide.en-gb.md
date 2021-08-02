@@ -32,7 +32,7 @@ order: 11
 
 ## Objective
 
-OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networking solution that enables our customers to route traffic between most OVHcloud services (dedicated servers, public cloud instances...). You can for example add Public Cloud instances and Managed Kubernetes clusters to a your private network containing a baremetal dedicated server to create an infrastructure of physical, virtual ans donctainerized workloads.
+OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networking solution that enables our customers to route traffic between most OVHcloud services (dedicated servers, public cloud instances...). You can for example add Public Cloud instances, a baremetal servers and Managed Kubernetes clusters to your private network to create an private infrastructure of physical, virtual and containerized workloads.
 
 Connecting a Managed Kubernetes cluster to another service in the same private network in the vRack is an easier process, as no network configuration is needed. Please have a look to our [../vrack-example-k8s-and-pci/](Working with vRack example - Managed Kubernetes and Public Cloud instances) tutorial to see an example in action.  
 
@@ -67,7 +67,7 @@ First of all, we will need to set up vRack Private Network for our Public Cloud.
 
 As explained in the [known-limits](Known limits) guide, the default subnet ranges for our private networks won't work with OVHcloud Managed Kubernetes, as the ranges `10.2.0.0/16` and `10.3.0.0/16` are reserved to internal Managed Kubernetes use.
 
-Once we have created a vRack, we need to create two different Private Networks enabled at least on GRA5 region. The private networks created via OVHcloud Manager have by-default ranges, that can't be easily modified. We are thus creating the private networks using the [OVHcloud API](https://api.ovh.com/). 
+Once we have created a vRack, we need to create two different Private Networks enabled at least on the region of our cluster (GRA5 in our example). The private networks created via OVHcloud Manager have by-default ranges, that can't be easily modified. We are thus creating the private networks using the [OVHcloud API](https://api.ovh.com/). 
 
 For this example we are creating two private networks, `priv-net-01` & `priv-net-02`, with DHCP subnets with ranges of `10.0.1.0/24` et `10.0.2.0/24`.
 
@@ -174,7 +174,7 @@ openstack server add fixed ip --fixed-ip-address 10.0.1.1 ${INSTANCE_ID} ${PRIV_
 openstack server add fixed ip --fixed-ip-address 10.0.2.1 ${INSTANCE_ID} ${PRIV_NET_02_ID}
 ```
 
-Now we can verify that the gateway instance have two new private IP:
+Now we can verify that the gateway instance have two new private IPs:
 
 ```bash
 openstack server show ${INSTANCE_ID} --column addresses -f value
@@ -209,7 +209,7 @@ Let's SSH into the gateway instance using its public IP:
 ssh ubuntu@$INSTANCE_IP
 ```
 
-And get the MAX addresses of the two private network interfaces (NICs):
+And get the MAC addresses of the two private network interfaces (NICs):
 
 ```bash
 ip addr show
