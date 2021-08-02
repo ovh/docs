@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: Gestão a partir da Área de Cliente OVHcloud
 ---
 
-**Última atualização: 4 de dezembro de 2019**
+**Última atualização: 26/07/2021**
 
 ## Sumário
 
@@ -40,7 +40,7 @@ Surgirá então a janela que lhe permite executar esta ação. Clique na lista p
 
 ![área de cliente](images/rescue2.png){.thumbnail}
 
-Uma vez reiniciada a instância em modo rescue, aparecerá uma mensagem no topo do ecrã, com a sua palavra-passe temporária.
+Depois de reiniciar a instância em modo rescue, uma caixa de informação apresenta os métodos de acesso disponíveis. A sua **palavra-passe do modo rescue** temporário só será apresentada na consola VNC. Clique na sua instância na tabela e aceda ao separador `Console VNC`{.action} para a recuperar.
 
 ![área de cliente](images/rescuedata.png){.thumbnail}
 

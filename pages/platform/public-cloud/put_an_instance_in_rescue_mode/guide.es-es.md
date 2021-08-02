@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: 'Gestión de las instancias desde el área de cliente'
 ---
 
-**Última actualización: 4/12/2019**
+**Última actualización: 26/07/2021**
 
 ## Objetivo
 
@@ -40,7 +40,7 @@ Entonces verá el cuadro de diálogo «Reiniciar en modo de rescate». Haga clic
 
 ![control panel](images/rescue2.png){.thumbnail}
 
-Una vez que su instancia se haya reiniciado en el modo de rescate, aparecerá un mensaje en la parte superior de la pantalla con su contraseña temporal.
+Una vez que la instancia se haya reiniciado en modo de rescate, se mostrará un panel informativo con los métodos de acceso disponibles. La **contraseña del modo de rescate** temporal solo se mostrará en la consola VNC. Haga clic en su instancia en la tabla y acceda a la pestaña `Consola VNC`{.action} para consultarla.
 
 ![control panel](images/rescuedata.png){.thumbnail}
 
