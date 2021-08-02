@@ -51,7 +51,7 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
-It also supposes that you already have followed the [Using vRack](../using-vrack/) guide to activate the vRack on your Public Cloud project and put your OVHcloud Managed Kubernetes cluster inside the vRack.  It will also be useful to have followed our [../vrack-example-k8s-and-pci/](Working with vRack example - Managed Kubernetes and Public Cloud instances) tutorial to understand the easier use case when both services are in the same private network.
+It also supposes that you already have followed the [Using vRack](../using-vrack/) guide to activate the vRack on your Public Cloud project and put your OVHcloud Managed Kubernetes cluster inside the vRack.  It will also be useful to have followed our [Working with vRack example - Managed Kubernetes and Public Cloud instances](../vrack-example-k8s-and-pci/) tutorial to understand the easier use case when both services are in the same private network.
 
 And to understand why this configuration is needed, please have a look at the [Using vRack - Communicating between different private networks](../using-vrack-between-private-networks/) technical document.
 
@@ -132,7 +132,7 @@ a019c436-6da3-4a10-a00d-49f8a3462bcd
 ### Setting-up a PCI gateway
 
 
-Now we are going to create a Public Cloud instance in GRA5, to acr as a gateway for our vRack. 
+Now we are going to create a Public Cloud instance in GRA5, to act as a gateway for our vRack. 
 
 ![Setting-up a PCI gateway](images/vrack-example-08.png){.thumbnail}
 
@@ -199,7 +199,7 @@ Let's SSH into the gateway instance using its public IP:
 ssh ubuntu@$INSTANCE_IP
 ```
 
-And get the MAX addresses of the two private network interfaces (NICs):
+And get the MAC addresses of the two private network interfaces (NICs):
 
 ```bash
 ip addr show
