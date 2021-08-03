@@ -60,6 +60,16 @@ First of all, we will need to set up vRack Private Network for our Public Cloud.
 
 ![Setting-up the vRack](images/vrack-example-01.png){.thumbnail}
 
+> [!warning]
+> As explained in the [known-limits](Known limits) guide, the following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our used overlay networks:
+>
+>  ```bash
+>  10.2.0.0/16 # Subnet used by pods
+>  10.3.0.0/16 # Subnet used by services
+>  172.17.0.0/16 # Subnet used by the Docker daemon
+>  ```
+
+
 ### Setting-up the Managed Kubernetes
 
 Then we create a Kubernetes cluster, as explained in the [Create a cluster](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) guide. Integrating a cluster into a vRack Private Network must be done at the third step on cluster creation, when we can choose an existing private network for the cluster:
