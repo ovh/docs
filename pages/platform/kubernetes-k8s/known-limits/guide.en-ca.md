@@ -105,6 +105,7 @@ The following subnets are not compliant with the `vRack` feature and can generat
 
 ```text
 10.2.0.0/16 # Subnet used by pods
+10.3.0.0/16 # Subnet used by services
 172.17.0.0/16 # Subnet used by the Docker daemon
 ```
 
