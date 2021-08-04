@@ -18,7 +18,7 @@ Several error messages may appear on your browser in the event of your site bein
 |Edge:<br>"Hmmm... can't reach this page"|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
 |Safari:<br>"Safari Can't Find the Server"|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
 
-**Find out how to resolve "This site can't be reached" errors type**
+**Find out how to resolve the "This site can't be reached" type errors**
 
 > [!warning]
 >
@@ -52,7 +52,7 @@ Renew your domain if necessary with the `...`{.action} button, then click on `Re
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-After the renewal of your offer is completed, your website will be available within 48 hours.
+After the renewal of your offer is completed, your website will be available within a maximum of 48 hours.
 
 ### Step 2: check the DNS servers
 
@@ -78,7 +78,7 @@ A warning in the `DNS zone`{.action} tab indicates that the DNS servers used by 
 
 Modify the DNS servers as described in [this guide](../../domains/web_hosting_general_information_about_dns_servers/#modifying-dns-servers), so that they are identical to the targets of the `NS` type records in your `DNS zone`{.action}.
 
-Your website will then be available again within 48 hours.
+Your website will then be available within a maximum of 48 hours.
 
 - Under the sentence `You are currently using the following DNS servers`, the servers listed are not "ns **?** .ovh.net" and "dns **?** .ovh.net".
 
@@ -107,7 +107,7 @@ Then click on `Reset my DNS zone`{.action} and select `No, but I want to reset m
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
-Your website will then be available again within 24 hours.
+Your website will then be available again within a maximum of 24 hours.
 
 ### Step 3: check the DNS zone <a name="step3"></a>
 
@@ -125,7 +125,7 @@ Then refer to it in your domain’s [DNS zone](../../domains/web_hosting_how_to_
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
-Your website will then be available again within 24 hours.
+Your website will then be available within a maximum of 24 hours.
 
 ## Go further <a name="gofurther"></a>
 

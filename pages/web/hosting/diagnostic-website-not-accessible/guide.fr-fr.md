@@ -52,7 +52,7 @@ Renouvelez votre domaine si nécessaire via le bouton `...`{.action} à droite d
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-Patientez ensuite 48 heures au maximum (délai de propagation suite aux changements liés aux [Serveurs DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns)).
+Suite à ce renouvellement, votre site sera accessible sous 48 heures maximum.
 
 ### Étape 2 : vérifier les serveurs DNS
 
@@ -125,7 +125,7 @@ Puis reportez-la dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
-Patientez enfin 24 heures au maximum (délai de propagation des modifications dans la `Zone DNS`{.action}).
+Votre site sera de nouveau accessible sous 24 heures maximum.
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 

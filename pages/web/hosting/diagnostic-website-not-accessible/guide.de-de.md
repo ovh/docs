@@ -22,7 +22,7 @@ Im Browser können mehrere Fehlerrückmeldungen auftreten, wenn Ihre Website nic
 |Edge:<br>"Hmmm...diese Seite ist leider nicht erreichbar"|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
 |Safari:<br>"Safari kann keine Verbindung zum Server aufbauen"|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
 
-**Hier erfahren Sie, wie Sie Fehler vom Typ "Die Website ist nicht erreichbar" beheben.**
+**Hier erfahren Sie, wie Sie Fehler vom Typ “Die Website ist nicht erreichbar“ beheben.**
 
 > [!warning]
 >
@@ -56,7 +56,7 @@ Wenn nötig verlängern Sie Ihre Domain über den Button `...`{.action} am recht
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-Sobald die Verlängerung Ihres Angebots abgeschlossen ist, ist Ihre Website innerhalb von 48 Stunden verfügbar.
+Nach dieser Verlängerung ist Ihre Website innerhalb von maximal 48 Stunden verfügbar.
 
 ### Schritt 2: DNS Server überprüfen
 
@@ -82,7 +82,7 @@ Eine Warnung im Tab `DNS-Zone`{.action} zeigt an, dass die von Ihrer Domain verw
 
 Ändern Sie die DNS Server entsprechend den Anweisungen in dieser [Anleitung](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-server-andern), damit diese mit den Zielen der Einträge vom Typ `NS` in der `DNS-Zone`{.action} identisch sind.
 
-Ihre Website wird dann innerhalb von 48 Stunden wieder verfügbar sein.
+Ihre Website wird dann innerhalb von maximal 48 Stunden verfügbar sein.
 
 - unter “Sie verwenden derzeit folgende DNS-Server:“, sind die angegebenen Server nicht vom Typ “ns **?** .ovh.net“ und “dns **?** .ovh.net“
 
@@ -111,7 +111,7 @@ Klicken Sie anschließend auf `Meine DNS-Zone zurücksetzen`{.action} und wähle
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
-Ihre Website wird dann innerhalb von 24 Stunden wieder verfügbar sein.
+Ihre Website wird dann innerhalb von maximal 24 Stunden verfügbar sein.
 
 ### Schritt 3: Die DNS Zone überprüfen <a name="step3"></a>
 
@@ -129,7 +129,7 @@ Geben Sie diese dann in die [DNS-Zone](../../domains/webhosting_bearbeiten_der_d
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
-Ihre Website wird dann innerhalb von 24 Stunden wieder verfügbar sein.
+Ihre Website wird dann innerhalb von maximal 24 Stunden verfügbar sein.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
