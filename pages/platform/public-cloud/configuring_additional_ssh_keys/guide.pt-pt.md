@@ -3,6 +3,7 @@ title: Configurar as chaves SSH suplementares
 excerpt: Configurar as chaves SSH suplementares
 slug: configurar_as_chaves_ssh_suplementares
 legacy_guide_number: g1924
+section: Tutoriais
 ---
 
 

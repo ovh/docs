@@ -10,7 +10,7 @@ order: 2
 
 ## Objective
 
-There are a multitude of different websites on the internet. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVH Web Hosting space](https://www.ovh.ie/web-hosting/){.external} lets you host the site you want, provided it is compatible with the [configuration of our infrastructures](http://pro.ovh.net/infos/){.external}.
+There are a multitude of different websites on the internet. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVH Web Hosting space](https://www.ovh.ie/web-hosting/){.external} lets you host the site you want, provided it is compatible with the [configuration of our infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Learn how to publish a website on your OVH Web Hosting space.**
 

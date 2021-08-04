@@ -3,6 +3,7 @@ title: Come utilizzare l’API Nova
 excerpt: Come utilizzare l'API Nova
 slug: come_utilizzare_lapi_nova
 legacy_guide_number: g1935
+section: Gestione via OpenStack
 ---
 
 

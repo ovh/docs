@@ -6,7 +6,7 @@ section: 'Migração de uma conta Exchange'
 order: 1
 ---
 
-**Última atualização: 09/12/2020**
+**Última atualização: 23/07/2021**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -25,7 +25,6 @@ A OVHcloud oferece várias soluções de e-mail: MX Plan (vendido isoladamente o
 - **Não ter configurado um reencaminhamento para o endereço de e-mail MX Plan que pretende migrar.**
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
-
 ## Instruções
 
 ### 1 - Definir o projeto
@@ -33,7 +32,6 @@ A OVHcloud oferece várias soluções de e-mail: MX Plan (vendido isoladamente o
 As soluções E-mail Pro e Exchange dispõem de uma base de funcionalidades comum. No entanto, subsistem diferenças consoante os casos de utilização. Ao escolher um endereço Exchange, dispõe da totalidade das funções colaborativas, como a sincronização do calendário e dos contactos. A solução E-mail Pro, por sua vez, propõe algumas, mas estas estão limitadas a uma utilização apenas através de um webmail.
 
 Antes de continuar, é importante saber para que oferta deseja migrar os seus endereços de e-mail MX Plan. Para o ajudar nesta escolha, consulte a página das [soluções de e-mails profissionais da OVHcloud](https://www.ovh.pt/emails/){.external} que propõe uma comparação pormenorizada das ofertas. Tem a possibilidade de acumular as soluções e de utilizar para um mesmo nome de domínio uma ou várias contas E-mail Pro e Exchange. Além disso, se tiver de migrar várias contas, recomendamos que execute um plano de migração.
-
 
 ### Etapa 2: encomendar as suas contas E-mail Pro ou Exchange
 
@@ -107,14 +105,13 @@ Por fim, confirme a palavra-passe do endereço de e-mail original (aquela que pr
 
 Antes de iniciar a migração, caso tenha encomendado a nova oferta de e-mail, adicione o domínio à plataforma [E-mail Pro](../../emails-pro/configuracao-inicial/#2-adicionar-o-dominio) ou [Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/).
 
-
 A migração do seu MXPlan far-se-á em 3 grandes etapas, **Renomear**, **Criar** e **Migrar**.
 
 ![Exchange](images/mxplan-migration-configure-account.gif){.thumbnail}
 
 1\. **Altere** o nome da conta MXPlan para migrar com um nome provisório (exemplo: para migrar a conta MX plan *john.smith@mydomain.ovh*, renome-a em *john.smith01@mydomain.ovh*).
 
-No separador `Contas de e-mail`{.action} da plataforma E-mail Pro ou Exchange, clique no botão `...`{.action} e depois em `Alterar`{.action}.
+No separador `Contas de e-mail`{.action} da plataforma MX Plan, clique no botão `...`{.action} e depois em `Alterar`{.action}.
 
 ![Exchange](images/mxplan-migration-configure-account01.png){.thumbnail}
 
@@ -166,7 +163,6 @@ Se configurou uma das contas migradas num cliente de e-mail (como o Outlook), de
 ### Migrar Manual
 
 Também pode migrar manualmente os seus endereços de e-mail para a nova oferta de e-mail OVHcloud utilizando apenas o seu software de correio. Apoie-se no nosso guia [Migrar manualmente o seu endereço de e-mail](../../emails/migrar-os-enderecos-email-manualmente/). No entanto, recomendamos que só utilize este método quando os métodos principais não forem possíveis.
-
 
 ## Quer saber mais?
 

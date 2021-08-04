@@ -3,6 +3,7 @@ title: 'Delegar os seus projetos'
 excerpt: 'Saiba como delegar permissões técnicas a outras contas OVHcloud para um projeto Public Cloud'
 slug: delegar_os_seus_projetos
 legacy_guide_number: g1914
+section: Gestão do projeto
 ---
 
 **Última atualização: 25/11/2019**

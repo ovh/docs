@@ -3,6 +3,7 @@ title: 'Definir e gerir a palavra-passe da sua conta'
 slug: gerir-a-palavra-passe
 excerpt: 'Aprenda a definir, alterar e gerir a palavra-passe da sua Área de Cliente OVHcloud'
 section: Introdução
+order: 4
 ---
 
 ## Sumário
@@ -12,12 +13,13 @@ A palavra-passe da sua Área de Cliente OVHcloud é a chave de acesso a todos os
 **Saiba como definir, alterar e gerir a sua palavra-passe.**
 
 ## Requisitos
+
 - Ter uma conta OVHcloud ativa.
 - Conhecer a sua ID de cliente e/ou o seu endereço de e-mail.
 
 ## Instruções
 
-### Gerar uma boa palavra-passe.
+### Gerar uma boa palavra-passe
 
 A segurança das suas soluções depende da eficácia da palavra-passe de acesso à sua Área de Cliente OVHcloud. Para proteger ao máximo os seus dados, deve respeitar algumas recomendações:
 
@@ -37,12 +39,11 @@ A segurança das suas soluções depende da eficácia da palavra-passe de acesso
 
 - ser diferente das palavras-passe usadas anteriormente.
 
-
 Há vários métodos eficazes para criar palavras-passe. Recomendamos-lhe, nomeadamente, o **método das primeiras letras** e o **método fonético**.
 
 Para ficar a saber mais, consulte a secção [Quer saber mais?](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/#quer-saber-mais_2){.external} na parte de baixo deste guia.
 
-### Utilizar um gestor de palavras-passe 
+### Utilizar um gestor de palavras-passe
 
 Programas específicos permitem guardar e proteger a sua palavra-passe de acesso à conta OVHcloud.
 
@@ -88,7 +89,6 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 
 - Surge então uma mensagem que lhe indica o êxito da operação. Clique no botão `Continuar`{.action} na zona inferior desta mensagem para ser encaminhado para a página de identificação. Introduza então a sua ID de utilizador e a sua nova palavra-passe.
 
-
 #### Se não se lembrar da sua palavra-passe atual
 
 - Clique em `ID de utilizador ou palavra-passe esquecida?`{.action} ao aceder à janela de identificação da sua Área de Cliente OVHcloud.
@@ -110,13 +110,11 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 - Surge então uma mensagem que lhe indica o êxito da operação. Clique no botão `Continuar`{.action} na zona inferior desta mensagem para ser encaminhado para a página de identificação. Introduza então a sua ID de utilizador e a sua nova palavra-passe.
 
 > [!primary]
-> 
+>
 > O reconhecimento da alteração da palavra-passe leva automaticamente ao encerramento de todas as sessões ativas na sua conta OVHcloud.
-> 
+>
 
 ## Quer saber mais?
-
-[Normas CNCS para criar e gerir palavras-passe](https://www.cncs.gov.pt/content/files/bp_pp_nov19.pdf){.external}
 
 [O gestor de palavras-passe Keepass](https://keepass.info/){.external}
 

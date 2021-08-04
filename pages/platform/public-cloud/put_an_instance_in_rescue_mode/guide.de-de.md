@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: 'Verwaltung im OVHcloud Kundencenter'
 ---
 
-**Letzte Aktualisierung am 08.04.2020**
+**Letzte Aktualisierung am 26.07.2021**
 
 ## Ziel
 
@@ -33,18 +33,18 @@ Klicken Sie im Interface für die Instanzen auf `...`{.action} rechts neben der 
 
 ![control panel](images/rescue1.png){.thumbnail}
 
-Sie sehen nun den Dialog „Neustart im Rescue-Modus“. Klicken Sie auf die Dropdown-Liste, um die Distribution auszuwählen, die Sie im Rescue-Modus verwenden möchten, und klicken Sie dann auf `Neu starten`{.action}.
+Sie sehen nun den Dialog "Neustart im Rescue-Modus". Klicken Sie auf die Dropdown-Liste, um die Distribution auszuwählen, die Sie im Rescue-Modus verwenden möchten, und klicken Sie dann auf `Neu starten`{.action}.
 
 ![control panel](images/rescue2.png){.thumbnail}
 
-Nach dem Neustart Ihrer Instanz im Rescue-Modus wird oben auf dem Bildschirm eine Meldung mit Ihrem temporären Passwort angezeigt.
+Nach dem Neustart Ihrer Instanz im Rescue-Modus zeigt ein Hinweisfeld die verfügbaren Zugriffsmöglichkeiten an. Ihr temporäres **Passwort für den Rescue-Modus** wird nur in der VNC-Konsole angezeigt. Klicken Sie auf Ihre Instanz in der Tabelle und anschließend auf `VNC-Konsole`{.action}, um es abzurufen.
 
 ![control panel](images/rescuedata.png){.thumbnail}
 
 
 ### Schritt 2: Auf Ihre Daten zugreifen
 
-Sobald der Rescue-Modus aktiviert wurde, werden die Daten Ihrer Instanz als zusätzliche Festplatte angehängt. Sie muss noch eingebunden werden, indem Sie die folgenden Schritte ausführen.
+Sobald der Rescue-Modus aktiviert wurde, werden die Daten Ihrer Instanz als zusätzliche Festplatte angehängt. Sie muss noch gemountet werden, indem Sie die folgenden Schritte ausführen.
 
 Stellen Sie zuerst eine SSH-Verbindung zu Ihrer Instanz her. Wenn Sie verbunden sind, überprüfen Sie die verfügbaren Festplatten mit diesem Befehl:
 

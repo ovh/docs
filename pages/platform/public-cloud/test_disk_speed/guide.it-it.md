@@ -3,6 +3,7 @@ title: Esegui un test della velocità dei tuoi dischi
 excerpt: Esegui un test della velocità dei tuoi dischi
 slug: esegui_un_test_della_velocita_dei_tuoi_dischi
 legacy_guide_number: g1956
+section: Storage
 ---
 
 

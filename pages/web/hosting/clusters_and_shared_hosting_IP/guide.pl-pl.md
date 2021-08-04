@@ -966,7 +966,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 

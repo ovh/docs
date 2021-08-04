@@ -987,7 +987,7 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
 
 Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -1013,6 +1013,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 
 [Website mit SSL-Zertifikat auf HTTPS umstellen](../website-umstellen-https-ssl)
 
-[Optimierung der Performance Ihrer Webseite](../webhosting_optimierung_der_performance_ihrer_webseite)
+[Optimierung der Performance Ihrer Website](../webhosting_optimierung_der_performance_ihrer_webseite)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

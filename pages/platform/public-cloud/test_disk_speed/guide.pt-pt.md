@@ -3,6 +3,7 @@ title: Testar a velocidade dos discos
 excerpt: Testar a velocidade dos discos
 slug: testar_a_velocidade_dos_discos
 legacy_guide_number: g1956
+section: Armazenamento
 ---
 
 

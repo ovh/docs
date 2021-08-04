@@ -3,6 +3,7 @@ title: 'Setting and managing an account password'
 slug: manage-password
 excerpt: 'Find out how to set, change and manage your password for the OVHcloud Control Panel'
 section: 'Getting started'
+order: 4
 ---
 
 **Last updated 24th June 2020**
@@ -14,12 +15,13 @@ Your OVHcloud Control Panel password is required to access all of your services 
 **Find out how to set, change and manage your password.**
 
 ## Requirements
+
 - an active OVHcloud account
 - your NIC handle and/or email address
 
 ## Instructions
 
-### Generate a strong password.
+### Generate a strong password
 
 To ensure that your solutions stay secure, you will need to set a strong password for accessing the OVHcloud Control Panel. To ensure that your data is secure, it must meet the following criteria:
 
@@ -39,12 +41,11 @@ To ensure that your solutions stay secure, you will need to set a strong passwor
 
 - It must be different to any passwords that have been used before.
 
-
 There are several effective ways of creating strong passwords. We recommend following the tips provided by the National Cyber Security Centre: https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/use-a-strong-and-separate-password-for-email
 
 The freemium password manager LastPass also offers a tool for creating solid, randomly-generated passwords, available [here](https://www.lastpass.com/password-generator){.external}.
 
-### Use a password manager. 
+### Use a password manager
 
 You can use specific software programs to save and secure your OVHcloud account password.
 
@@ -54,7 +55,7 @@ It is simple to use, and involves setting a master password — which must meet 
 
 The software can also generate random complex passwords, which it will save for all of the websites and applications you use.
 
-### Best practices for password management.
+### Best practices for password management
 
 - **Check that it has not been compromised.** Ensure that your current password has not been accessed by malicious parties. You can check this on the **Have I Been Pwned website**.
 If your password has been compromised, we strongly recommend [changing it as soon as possible](./#change-your-password).
@@ -67,10 +68,9 @@ If your password has been compromised, we strongly recommend [changing it as soo
 
 - **Keep it secret.** Passwords should stay secret. They should not be written down, shared with other users, or sent to third-parties. OVHcloud teams will never ask for your password, especially not via email.
 
-### Change your password.
+### Change your password
 
-
-#### Via the OVHcloud Control Panel.
+#### Via the OVHcloud Control Panel
 
 - Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, click your name in the top right-hand corner, then click on your initials.
 
@@ -90,8 +90,7 @@ If your password has been compromised, we strongly recommend [changing it as soo
 
 - A message will then pop up, confirming that the password has been changed successfully. Click `Continue`{.action} at the bottom of the pop-up to be redirected to the login page, then enter your NIC handle and new password.
 
-
-#### If you have forgotten your current password.
+#### If you have forgotten your current password
 
 - Click `Forgotten your username or password?`{.action} when you load the login page for the OVHcloud Control Panel.
 
@@ -112,9 +111,9 @@ If your password has been compromised, we strongly recommend [changing it as soo
 - A message will then pop up, confirming that the password has been changed successfully. Click `Continue`{.action} at the bottom of the pop-up to be redirected to the login page, then enter your NIC handle and new password.
 
 > [!primary]
-> 
+>
 > When you reset your password, all active sessions for your OVHcloud account will be automatically closed.
-> 
+>
 
 ## Go further
 
@@ -127,7 +126,5 @@ If your password has been compromised, we strongly recommend [changing it as soo
 [Detailed advice on passwords from Get Safe Online](https://www.getsafeonline.org/protecting-your-computer/passwords/){.external}
 
 [KeePass password manager](https://keepass.info/){.external}
-
-
 
 Join our community of users on <https://community.ovh.com/en/>.

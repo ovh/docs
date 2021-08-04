@@ -4,6 +4,7 @@ excerpt: 'Saiba como solicitar o aumento das suas quotas Public Cloud'
 slug: aumentar_a_quota_public_cloud
 legacy_guide_number: g1904
 order: 6
+section: Gestão do projeto
 ---
 
 > [!primary]

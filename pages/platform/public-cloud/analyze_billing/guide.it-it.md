@@ -2,7 +2,7 @@
 title: 'Sistema di fatturazione dei servizi Cloud'
 excerpt: 'Come funziona il sistema di fatturazione dei servizi Public Cloud'
 slug: analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione
-section: 'Informazioni generali'
+section: Gestione del progetto
 legacy_guide_number: g2031
 ---
 

@@ -2,7 +2,7 @@
 title: 'Déployer une instance GPU'
 slug: deployer-une-instance-gpu
 excerpt: 'Découvrez comment déployer une instance GPU sous Linux ou Windows'
-section: 'Depuis espace client OVHcloud'
+section: "Gestion depuis l'espace client"
 ---
 
 **Dernière mise à jour le 2018/10/30**

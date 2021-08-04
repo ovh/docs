@@ -1,5 +1,6 @@
 ---
-title: Account informations
+title: Informações sobre a conta
 slug: customer
-excerpt: Manage your personal info and security settings
+excerpt: Gerir os seus dados pessoais e os seus parâmetros de segurança
+sections: Introdução, Segurança
 ---

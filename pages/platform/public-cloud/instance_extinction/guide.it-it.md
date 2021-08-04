@@ -3,6 +3,7 @@ title: Spegni un’istanza
 excerpt: Spegni un'istanza con Horizon
 slug: spegni_unistanza
 legacy_guide_number: g1780
+section: Gestione da Horizon
 ---
 
 

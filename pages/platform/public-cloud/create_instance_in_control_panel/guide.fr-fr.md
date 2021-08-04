@@ -3,7 +3,7 @@ title: 'Créer une instance depuis l’espace client'
 slug: creer-instance-espace-client
 excerpt: 'Découvrez comment créer une instance depuis l’espace client Public Cloud OVHcloud'
 section: 'Premiers pas'
-order: 3
+hidden: true
 ---
 
 **Dernière mise à jour le 30/03/2021**

@@ -3,6 +3,7 @@ title: 'Primeiros passos com uma instância Windows'
 excerpt: 'Fique a saber como terminar a instalação de uma instância Windows e iniciar a primeira ligação'
 slug: primeiros-passos-com-uma-instancia-windows
 legacy_guide_number: 1995
+section: Introdução
 ---
 
 **Última atualização: 25/11/2019**

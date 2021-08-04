@@ -3,6 +3,7 @@ title: 'Criar e configurar um disco suplementar numa instância'
 excerpt: 'Este manual explica como criar um disco adicional e como o configurar numa das suas instâncias.'
 slug: criar_e_configurar_um_disco_suplementar_numa_instancia
 legacy_guide_number: g1863
+section: Armazenamento
 ---
 
 **Última atualização: 14 de novembro de 2019**

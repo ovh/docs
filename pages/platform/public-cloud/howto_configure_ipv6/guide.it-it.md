@@ -2,6 +2,7 @@
 title: 'Configurare IPv6 su un’istanza Public Cloud'
 slug: configurare-ipv6
 excerpt: 'Configurare un indirizzo IPv6 su un’istanza Public Cloud'
+section: Rete
 ---
 
 **Ultimo aggiornamento: 11/07/2019**

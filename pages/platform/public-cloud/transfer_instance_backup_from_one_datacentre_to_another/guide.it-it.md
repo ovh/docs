@@ -2,7 +2,7 @@
 title: 'Trasferire il backup di un’istanza tra datacenter'
 excerpt: 'Come migrare un backup da un datacenter a un altro conservando la configurazione e lo stato dell’istanza'
 slug: trasferisci_il_backup_di_unistanza_da_un_datacenter_a_un_altro
-section: 'Da client tramite riga di comando'
+section: Gestione via OpenStack
 legacy_guide_number: g1853
 ---
 

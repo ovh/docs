@@ -3,6 +3,7 @@ title: Extinção de uma instância
 excerpt: Como extinguir uma instância na interface Horizon.
 slug: extincao_de_uma_instancia
 legacy_guide_number: g1780
+section: Gestão a partir do Horizon
 ---
 
 

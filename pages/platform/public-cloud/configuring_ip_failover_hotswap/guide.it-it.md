@@ -3,6 +3,7 @@ title: Configura un IP Failover a caldo
 excerpt: Configura un IP Failover a caldo
 slug: configura_un_ip_failover_a_caldo
 legacy_guide_number: g1884
+section: Rete
 ---
 
 

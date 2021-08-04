@@ -3,7 +3,7 @@ title: 'Créer des clés SSH'
 slug: creation-des-cles-ssh
 excerpt: 'Générez une clé SSH afin de vous connecter à votre instance'
 section: 'Premiers pas'
-order: 2
+hidden: true
 ---
 
 **Dernière mise à jour le 21 décembre 2020**

@@ -3,6 +3,7 @@ title: Come utilizzare l’API Swift
 excerpt: Come utilizzare l'API Swift
 slug: come_utilizzare_lapi_swift
 legacy_guide_number: g1916
+section: Gestione via OpenStack
 ---
 
 > [!primary]

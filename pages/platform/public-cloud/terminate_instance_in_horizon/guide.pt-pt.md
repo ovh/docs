@@ -3,6 +3,7 @@ title: Suprimir uma instância na interface Horizon
 excerpt: Como suspender uma instância na interface Horizon
 slug: suprimir_uma_instancia_na_interface_horizon
 legacy_guide_number: g1783
+section: Gestão a partir do Horizon
 ---
 
 

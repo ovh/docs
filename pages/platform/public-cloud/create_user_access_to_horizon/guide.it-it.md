@@ -3,7 +3,7 @@ title: 'Creare un utente per accedere a Horizon'
 excerpt: 'Scopri come accedere all’interfaccia Horizon'
 slug: crea_un_utente_per_accedere_a_horizon
 legacy_guide_number: g1773
-section: 'Dall’interfaccia Horizon'
+section: Gestione da Horizon
 order: 1
 ---
 

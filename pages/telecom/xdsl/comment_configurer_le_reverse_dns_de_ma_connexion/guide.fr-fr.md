@@ -7,93 +7,102 @@ space_name: XDSL
 section: Configuration de mon offre
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 28/07/2021**
+
+## Objectif
 
 Le Reverse DNS, aussi appelé PTR Record (ou pointer record) sert à associer une adresse IP à un enregistrement de nom de domaine.
 
-Il est important de l'utiliser car l'absence de Reverse DNS peut être considéré comme une erreur et peut entrainer le refus d'accès à certains services (exemple : dans le cadre d'utilisation d'un serveur mail, si l'e-mail est envoyé depuis un serveur ayant une adresse IP sans résolution DNS appropriée, il a de grandes chances d'être refusé par le serveur de réception).
+Il est important de l'utiliser car l'absence de Reverse DNS peut être considérée comme une erreur et peut entrainer le refus d'accès à certains services.
+Par exemple, dans le cadre d'utilisation d'un serveur mail, si l'e-mail est envoyé depuis un serveur ayant une adresse IP sans résolution DNS appropriée, il a de grandes chances d'être refusé par le serveur de réception.
 
-**Sommaire :**
+## Prérequis
 
-Niveau : Débutant
+- Un nom de domaine (ou sous-domaine) redirigeant vers l'adresse IP de votre accès xDSL ou fibre.
+- Un accès xDSL ou fibre OVHcloud.
 
-------------------------------------------------------------------------
+Il est également possible de configurer les Reverse DNS des blocs IP fournis en option sur nos accès.
+<br>Retrouvez plus d'informations sur notre guide « [Commander et gérer un bloc IP /29](../comment-commander-et-gerer-un-bloc-ip-29/) ».
 
-### Prérequis {#prérequis}
+## En pratique
 
--   Un nom de domaine (ou sous-domaine) redirigeant vers l'adresse IP de votre accès xDSL.
--   Un accès xDSL OVH.
-
-Pour le moment il n'est pas possible de configurer les Reverse DNS des blocs IP ([Commander et gérer un bloc IP /29](../comment-commander-et-gerer-un-bloc-ip-29/)) fournis en option sur nos accès.
-
-### Vérifier que le nom de domaine soit bien configuré {#vérifier-que-le-nom-de-domaine-soit-bien-configuré}
+### Vérifier que le nom de domaine est bien configuré
 
 Nous allons faire le test avec ovhtelecom.fr.
 
-#### Sous windows : {#sous-windows}
+#### Sous Windows
 
-Ouvrez l'invite de commande et mettez :
+Ouvrez l'invite de commande et saisissez :
 
     nslookup ovhtelecom.fr
 
 Vous obtiendrez une réponse du type :
 
-    Name : www.ovhtelecom.fr Address : 213.186.33.38
+    Name : www.ovhtelecom.fr Address : 198.27.92.21
 
-#### Sous MAC et linux : {#sous-mac-et-linux}
+#### Sous MAC et Linux
 
-Ouvrez le terminal et mettez :
+Ouvrez le terminal et saisissez :
 
     host ovhtelecom.fr
 
 Vous obtiendrez une réponse du type :
 
-    ovhtelecom.fr has address 213.186.33.38
+    ovhtelecom.fr has address 198.27.92.21
 
-Dans les deux cas, nous voyons que le nom de domaine redirige bien vers notre adresse IP 213.186.33.38 (si ce n'est pas le cas, nous vous invitons à vous rapprocher de votre registreur afin de configurer votre nom de domaine).
+Dans les deux cas, nous voyons que le nom de domaine redirige bien vers notre adresse IP 198.27.92.21 (si ce n'est pas le cas, nous vous invitons à vous rapprocher de votre bureau d'enregistrement afin de configurer votre nom de domaine).
 
-Nous pouvons maintenant passer à l'étape suivante qui est la configuration de notre Reverse DNS de l'adresse 213.186.33.38.
+Nous pouvons maintenant passer à l'étape suivante qui est la configuration de notre Reverse DNS de l'adresse 198.27.92.21.
 
-------------------------------------------------------------------------
-
-### Configuration du Reverse DNS de votre connexion {#configuration-du-reverse-dns-de-votre-connexion}
+### Configurer le Reverse DNS de votre connexion
 
 La configuration du Reverse DNS s'effectue dans l'Espace Client Telecom :
 
--   Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Telecom`
--   Cliquez sur "**Configuration**".
--   Cliquez sur "**xDSL**".
--   Cliquez sur "**Reverse DNS**".![](images/2015-06-01-120853_518x471_scrot.png){.thumbnail}
--   Mettez le nom de domaine ou sous-domaine et cliquez sur suivant. Validez à la page suivante. La nouvelle valeur de votre DNS prendra quelques minutes avant d’être visible sur votre espace Client.
+- Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Telecom`{.action}
+- Cliquez sur `Accès Internet`{.action}.
+- Cliquez sur votre packadsl `Packadsl-xxxxxxx`{.action}.
+- Cliquez sur votre accès `xdsl-xxxxxxx-1`{.action}.
 
-------------------------------------------------------------------------
+Dans les caractéristiques sur la droite, vous verrez apparaître votre IP publique sous cette forme : 109.190.xxx.xxx ou 151.127.xxx.xxx.
 
-### Vérifier la configuration du Reverse DNS {#vérifier-la-configuration-du-reverse-dns}
+- Cliquez sur l'icône engrenage à côté de votre IP.
+- Cliquez sur le `+`{.action} afin d'ajouter le reverse DNS.
+
+![](images/XDSL-ReverseDNS.png){.thumbnail}
+
+- Saisissez votre IP publique et le sous domaine souhaité puis validez.
+- Saisissez le nom de domaine ou sous-domaine et cliquez sur `Suivant`{.action}. Validez à la page suivante.
+
+Quelques minutes seront nécessaires pour que la nouvelle valeur de votre DNS soit visible sur votre espace client.
+
+### Vérifier la configuration du Reverse DNS
 
 Nous allons utiliser les mêmes commandes que pour la vérification de la configuration du nom de domaine mais cette fois-ci avec l'adresse IP.
 
-#### Sous windows : {#sous-windows-1}
+#### Sous Windows
 
-Ouvrez l'invite de commande et mettez :
+Ouvrez l'invite de commande et saisissez :
 
-    nslookup 213.186.33.38
-
-Vous obtiendrez une réponse du type :
-
-    Name : www.ovhtelecom.fr Address : 213.186.33.38
-
-#### Sous MAC et linux : {#sous-mac-et-linux-1}
-
-Ouvrez le terminal et mettez :
-
-    host 213.186.33.38
+    nslookup 198.27.92.21
 
 Vous obtiendrez une réponse du type :
 
-    38.33.186.213.in-addr.arpa domain name pointer www.ovhtelecom.fr.
+    Name : www.ovhtelecom.fr Address : 198.27.92.21
+
+#### Sous MAC et Linux
+
+Ouvrez le terminal et saisissez :
+
+    host 198.27.92.21
+
+Vous obtiendrez une réponse du type :
+
+    21.92.27.198.in-addr.arpa domain name pointer www.ovhtelecom.fr.
 
 Dans les deux cas, nous voyons que l'adresse IP redirige bien vers le nom de domaine [ovhtelecom.fr](http://ovhtelecom.fr){.external-link}.
 
 Votre Reverse DNS est maintenant configuré.
 
+## Aller plus loin
 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

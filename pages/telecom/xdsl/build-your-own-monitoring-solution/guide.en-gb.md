@@ -6,7 +6,13 @@ section: 'Diagnostics and troubleshooting'
 order: 5
 ---
 
-**Last updated 11/06/2021**
+**Last updated 27/07/2021**
+
+> [!warning]
+>
+> This guide is deprecated, the OVHcloud Insight offer used in this guide is plannned to close on 2021/10/26.
+> More information on <http://travaux.ovh.net/?do=details&id=51756&>.
+>
 
 ## Objective
 

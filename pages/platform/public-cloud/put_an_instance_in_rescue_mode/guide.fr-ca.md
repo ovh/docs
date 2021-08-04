@@ -1,13 +1,13 @@
 ---
 title: 'Passer une instance en mode rescue'
 slug: passer-une-instance-en-mode-rescue
-excerpt: 'Ce guide vous explique comment mettre votre instance en mode rescue'
+excerpt: 'Ce guide vous explique comment activer le mode rescue pour votre instance Public Cloud'
 legacy_guide_number: 2029
 section: "Gestion depuis l'espace client"
 order: 3
 ---
 
-**Dernière mise à jour le 13 février 2020**
+**Dernière mise à jour le 26/07/2021**
 
 ## Objectif
 
@@ -15,33 +15,33 @@ En cas de mauvaises configurations, ou de perte de clé SSH, votre instance peut
 
 Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigurer votre instance ou récupérer vos données. 
 
-**Ce guide vous explique comment mettre votre instance en mode rescue**
+**Ce guide vous explique comment mettre votre instance en mode rescue et accéder à vos données.**
 
 ## Prérequis
 
-* Une [Instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/){.external} dans votre compte OVHcloud
+* Une [instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/){.external} dans votre compte OVHcloud
 * Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
 * Avoir accès à votre instance via SSH en tant qu'administrateur (root)
 
-## Instructions
+## En pratique
 
 ### Activer le mode rescue
 
-Tout d’abord, connectez-vous à [l’espace client d’OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et cliquez sur le menu `Cloud`{.action}.
+Tout d’abord, connectez-vous à [l’espace client d’OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
-Sélectionnez votre projet Public Cloud dans le menu latéral gauche et allez dans Instances.
+Cliquez ensuite sur l'onglet `Instances`{.action} dans la barre de navigation à gauche.
 
 ![tableau de bord](images/compute.png){.thumbnail}
 
-Cliquez alors sur la flèche déroulante de votre instance et sélectionnez `Démarrer en mode rescue`{.action}
+Cliquez ensuite sur `...`{.action} à droite de l'instance et sélectionnez `Redémarrer en mode rescue`{.action}.
 
 ![tableau de bord](images/rescue1.png){.thumbnail}
 
-Vous allez maintenant voir la boîte de dialogue 'Démarrer en mode rescue'. Cliquez sur la liste déroulante pour sélectionner la distribution Linux que vous souhaitez utiliser en mode rescue, puis cliquez sur le bouton `Démarrer`{.action}.
+Vous allez maintenant voir la boîte de dialogue « Démarrer en mode rescue ». Cliquez sur la liste déroulante pour sélectionner la distribution Linux que vous souhaitez utiliser en mode rescue, puis cliquez sur le bouton `Redémarrer`{.action}.
 
 ![tableau de bord](images/rescue2.png){.thumbnail}
 
-Une fois l’instance redémarrée en mode rescue, un message apparaît en haut de l'écran, contenant votre mot de passe temporaire.
+Une fois l’instance redémarrée en mode rescue, une boîte d’information affiche les méthodes d’accès disponibles. Votre **mot de passe du mode rescue** temporaire sera uniquement affiché dans la console VNC. Cliquez sur votre instance dans le tableau, puis accédez à l'onglet `Console VNC`{.action} pour le récupérer.
 
 ![tableau de bord](images/rescuedata.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Vos données seront maintenant accessibles depuis le dossier /mnt.
 
 ### Désactiver le mode rescue
 
-Une fois vos tâches terminées, vous pouvez désactiver le mode rescue en redémarrant votre instance normalement. Pour cela, cliquez sur la flèche déroulante de votre instance et sélectionnez `Sortir du mode rescue`{.action}
+Une fois vos tâches terminées, vous pouvez désactiver le mode rescue en redémarrant votre instance depuis l'espace client. Pour cela, cliquez sur `...`{.action} et sélectionnez `Sortir du mode rescue`{.action}.
 
 ![tableau de bord](images/rescueexit.png){.thumbnail}
 

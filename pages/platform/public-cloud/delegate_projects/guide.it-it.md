@@ -3,6 +3,7 @@ title: 'Delega i diritti per gestire i tuoi progetti'
 excerpt: 'Come autorizzare altri utenti OVHcloud a gestire il tuo progetto Public Cloud'
 slug: delega_i_diritti_per_gestire_i_tuoi_progetti
 legacy_guide_number: g1914
+section: Gestione del progetto
 ---
 
 **Ultimo aggiornamento: 11/07/2019**

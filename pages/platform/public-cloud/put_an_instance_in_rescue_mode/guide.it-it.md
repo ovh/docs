@@ -3,9 +3,10 @@ title: 'Riavvia la tua istanza in modalità di ripristino (Rescue mode)'
 excerpt: 'Come riavviare un’istanza in modalità di ripristino (Rescue mode)'
 slug: riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode
 legacy_guide_number: g2029
+section: Gestione dallo Spazio Cliente OVHcloud
 ---
 
-**Ultimo aggiornamento 04/12/2019**
+**Ultimo aggiornamento 26/07/2021**
 
 ## Obiettivo
 
@@ -37,7 +38,7 @@ A questo punto visualizzi la finestra di dialogo “Riavvia in modalità Rescue�
 
 ![Spazio Cliente](images/rescue2.png){.thumbnail}
 
-Una volta avviata la modalità di ripristino, visualizzi la password temporanea nella finestra che compare in alto:
+Una volta riavviato il Rescue mode, una casella di informazioni mostrerà i metodi di accesso disponibili. La tua **password della modalità Rescue** temporanea verrà visualizzata solo nella console VNC. Clicca sull'istanza nella tabella e poi accedi alla scheda `Console VNC`{.action} per recuperarla.
 
 ![Spazio Cliente](images/rescuedata.png){.thumbnail}
 

@@ -6,7 +6,7 @@ section: 'Tutorials'
 order: 14
 ---
 
-**Last updated 2nd July 2021**
+**Last updated 9th July 2021**
 
 ## Objective
 
@@ -14,7 +14,7 @@ This tutorial will provide you with the steps to upgrade an end of life operatin
 
 > [!alert]
 > Warning: As with any major release upgrade of an operating system there is risk of failure, data loss or broken software configuration. 
-> Therefore, OVHcloud strongly recommends to [backup your server](../save_an_instance) and conduct extensive testing on your applications to make sure they work on the new operating system version prior to following this tutorial.
+> Therefore, OVHcloud strongly recommends to [backup your instance](../back-up-instance) and conduct extensive testing on your applications to make sure they work on the new operating system version prior to following this tutorial.
 >
 
 > [!primary]
@@ -24,8 +24,8 @@ This tutorial will provide you with the steps to upgrade an end of life operatin
 
 ## Requirements
 
-- Root access to the server
-- Backup must be taken before starting
+- [Root access](../become_the_root_user_and_select_a_password/) to the server
+- [Backup](../back-up-instance) must be taken before starting
 
 ## Instructions
 
@@ -63,7 +63,7 @@ Please note:
 2. You will be advised that doing this over an SSH connection is not recommended. Since there is no physical access to the server, SSH is the primary way to access your server. Ubuntu will start a new SSH service on another port so that in case of failure you still have another access. Furthermore, you will still be able to access the server through the console if you are completely locked out by SSH.
 3. During the upgrade, you may be asked to confirm the removal of packages that are no longer being supported. You need to double check this has no impact on your applications before continuing.
 
-Once the upgrade has completed, the server will reboot itself and you will lose connection until it boots up again. 
+Once the upgrade has completed, the server will reboot itself and you will lose connection until it boots up again.
 Few minutes later you should be able to log in and see a message similar as the following (the version will be the next available version compared to your previous version):
 
 ```sh
@@ -74,7 +74,7 @@ $ Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-147-generic x86_64)
 > The new version will not be reflected on the OVHcloud Control Panel / API and on the Horizon / OpenStack API when you upgrade the operating system instead of reinstalling it.
 >
 
-Now verify if your applications are working as expected. In case there are issues, we recommend restoring your backup that was taken prior to the upgrade.
+Now verify if your applications are working as expected. In case there are issues, we recommend [restoring your backup](../create-restore-virtual-server-from-backup/) that was taken prior to the upgrade.
 
 ### Fedora
 
@@ -104,10 +104,10 @@ $ sudo dnf system-upgrade download --releasever=33
 $ sudo dnf system-upgrade reboot
 ```
 
-Once the version is downloaded and the upgrade process has been initiated, the server will reboot to complete the upgrade. 
+Once the version is downloaded and the upgrade process has been initiated, the server will reboot to complete the upgrade.
 <br>It may take a while before you an connect again to the server as the upgrade takes a while to be completed.
 
-Verify if your applications are working as expected. In case there are issues, we recommend restoring your backup that was taken prior to the upgrade.
+Verify if your applications are working as expected. In case there are issues, we recommend [restoring your backup](../create-restore-virtual-server-from-backup/) that was taken prior to the upgrade.
 
 > [!primary]
 > If you encounter any issues, you may find answers to your questions on the [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/){.external}.

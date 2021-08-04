@@ -37,7 +37,8 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 
 ### Step 1: Prepare the server
 
-The first step is to set up your VPS for a Minecraft installation. It is recommended to order a new VPS or reinstall an existing one from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), using the latest available release of Ubuntu or Debian. Please refer to our [Getting started guide](../getting-started-vps/#reinstallvps) if necessary.
+The first step is to set up your VPS for a Minecraft installation.
+<br>It is recommended to order a new VPS or reinstall an existing one from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), using the latest available release of Ubuntu or Debian. Please refer to our [Getting started guide](../getting-started-vps/#reinstallvps) if necessary.
 
 Once the OS is installed, connect to your VPS with SSH as described in the [Getting started guide](../getting-started-vps/). 
 
@@ -113,7 +114,7 @@ Before launching the server, you need to agree to the End User License Agreement
 ~/server$ echo "eula=true" > eula.txt
 ```
 
-A file named `eula.txt` is now located at the root level of your server, containing the line `eula=true`. This will tell the software that you accept the Minecraft End User License Agreement. We invite you to review the terms and conditions on the [Minecraft website](https://www.minecraft.net/).
+A file named `eula.txt` is now located at the root level of your server, containing the line `eula=true`. This will tell the software that you accept the Minecraft EULA. We invite you to review the terms and conditions on the [Minecraft website](https://www.minecraft.net/).
 
 Your server can now be started.
 

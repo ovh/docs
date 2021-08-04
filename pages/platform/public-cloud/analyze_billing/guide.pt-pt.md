@@ -1,7 +1,7 @@
 ---
 title: 'Informações sobre o método de faturação cloud'
 slug: informacoes-sobre-o-metodo-de-faturacao-cloud
-section: 'Informações gerais'
+section: Gestão do projeto
 excerpt: 'Saiba mais sobre o método de faturação dos produtos Public Cloud'
 ---
 

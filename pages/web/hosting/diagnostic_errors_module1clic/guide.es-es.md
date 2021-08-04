@@ -122,9 +122,9 @@ Abra la pestaña `Multisitio`{.action} y realice las siguientes comprobaciones:
 |Escenario|Medidas que deberá adoptar|
 |---|---|
 |El dominio o subdominio asociado al sitio que quiere crear no aparece en el `multisitio`{.action}.|Añada su dominio siguiendo [estas indicaciones](../configurar-un-multisitio-en-un-alojamiento-web/#2-anadir-un-dominio-o-subdominio).|
-|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Si su dominio o su [zona DNS](../../web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns) no están gestionados desde su cuenta de OVHcloud, añada su dominio al `multisitio`{.action} siguiendo [esta guía](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
+|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Si su dominio o su [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns) no están gestionados desde su cuenta de OVHcloud, añada su dominio al `multisitio`{.action} siguiendo [esta guía](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
 
-### Su módulo se muestra en una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net".
+### Su módulo se muestra en una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net"
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 

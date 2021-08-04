@@ -7,7 +7,7 @@ section: Management via Control Panel
 order: 3
 ---
 
-**Last updated 8th April 2020**
+**Last updated 26th July 2021**
 
 ## Objective
 
@@ -15,7 +15,7 @@ Your Public Cloud instance may become inaccessible due to a lost SSH key or conf
 
 In such circumstances, you can use the rescue mode to reconfigure your instance or to recover your data. 
 
-**This guide will explain how to put your OVHcloud Public Cloud instance in rescue mode and access your data.**
+**This guide explains how to put your OVHcloud Public Cloud instance in rescue mode and access your data.**
 
 ## Requirements
 
@@ -35,11 +35,11 @@ Next, click on `...`{.action} to the right of the instance and select `Reboot in
 
 ![control panel](images/rescue1.png){.thumbnail}
 
-You will now see the 'Reboot in rescue mode' dialog box. Click the dropdown list to select the distribution you would like to use in rescue mode and then click the `Restart`{.action} button.
+You will now see the 'Reboot in rescue mode' dialog box. Click the drop-down list to select the distribution you would like to use in rescue mode and then click the `Restart`{.action} button.
 
 ![control panel](images/rescue2.png){.thumbnail}
 
-Once your instance has been rebooted in rescue mode, a message will appear at the top of the screen, containing your temporary password.
+Once your instance has been rebooted in rescue mode, an information box will display the available ways of access. Your temporary **rescue mode password** will only be shown in the VNC console. Click on your instance in the table, then switch to the tab `VNC console`{.action} to retrieve it.
 
 ![control panel](images/rescuedata.png){.thumbnail}
 
@@ -68,7 +68,7 @@ root@instance:/home/admin# mount /dev/vdb1 /mnt
 
 Your data will now be accessible from the /mnt folder.
 
-### Deactivating rescue mode
+### Step 3: Deactivating rescue mode
 
 Once you have completed your tasks, you can deactivate rescue mode by rebooting your instance from the Control Panel interface. To execute this, click on on `...`{.action} and select `Exit rescue mode`{.action}.
 

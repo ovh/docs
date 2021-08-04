@@ -78,7 +78,7 @@ En las antiguas gamas de VPS, las particiones se montarán automáticamente en m
 ##### **df -h**
 
 ```sh
-df -h
+~$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            5.8G     0  5.8G   0% /dev
 tmpfs           1.2G   17M  1.2G   2% /run
@@ -93,7 +93,7 @@ tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 ##### **lsblk**
 
 ```sh
-lsblk
+~$ lsblk
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0  2.5G  0 disk
 └─sda1    8:1    0  2.5G  0 part /
@@ -108,8 +108,8 @@ El ejemplo anterior muestra que la partición del sistema está montada en **/mn
 Si su VPS es reciente, la columna `MOUNTPOINT` debería estar vacía. En ese caso, monte primero la partición:
 
 ```sh
-mkdir -p /mnt/sdb1
-mount /dev/sdb1 /mnt/sdb1
+~$ mkdir -p /mnt/sdb1
+~$ mount /dev/sdb1 /mnt/sdb1
 ```
 
 #### Etapa 3: autorizaciones CHROOT
@@ -117,13 +117,13 @@ mount /dev/sdb1 /mnt/sdb1
 Ahora debe modificar el directorio raíz para aplicar los cambios al sistema. Para ello, utilice el comando `chroot`:
 
 ```sh
-chroot /mnt/sdb1/
+~$ chroot /mnt/sdb1/
 ```
 
 Puede realizar una comprobación introduciendo el comando `ls -l`, que muestra el contenido almacenado en el directorio actual del sistema:
 
 ```sh
-ls -l
+~$ ls -l
 ```
 
 #### Etapa 4: Cambiar la contraseña (root)
@@ -169,13 +169,13 @@ Si su VPS es de última generación (su nombre es: *vps-XXXXXXX.vps.ovh.net*), h
 Utilice un editor de texto como vim o nano para modificar este archivo de configuración:
 
 ```sh
-nano /etc/ssh/sshd_config
+~$ nano /etc/ssh/sshd_config
 ```
 
 Añada la siguiente línea.
 
 ```sh
-PermitRootLogin yes
+~$ PermitRootLogin yes
 ```
 
 Busque esta línea y asegúrese de que se comenta:
@@ -189,7 +189,7 @@ Guarde el archivo y salga del editor.
 #### Etapa 2: Reiniciar el servicio SSH
 
 ```sh
-systemctl restart sshd
+~$ systemctl restart sshd
 ```
 
 Esto debería ser suficiente para aplicar los cambios. También puede reiniciar el VPS (```~$ reboot```).
@@ -199,7 +199,7 @@ Esto debería ser suficiente para aplicar los cambios. También puede reiniciar 
 Si tiene problemas de inicio después de cambiar la contraseña e iniciar el reinicio:
 
 - Consulte el KVM para saber por qué el VPS no puede empezar. Para más información sobre el uso de esta funcionalidad, consulte la [guía KVM](../utilizar_el_kvm_para_los_vps/) del área de cliente de OVHcloud.
-- Si el KVM muestra el inicio del VPS o no consigue encontrar el disco, asegúrese de que el [bootlog esté activado](https://docs.ovh.com/us/es/vps/boot-log/). Transmita los logs pertinentes a nuestro equipo de soporte creando una solicitud de soporte en su [área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new) para más información.
+- Si el KVM muestra el inicio del VPS o no consigue encontrar el disco, asegúrese de que el [bootlog esté activado](../boot-log/). Transmita los logs pertinentes a nuestro equipo de soporte creando una solicitud de soporte en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para más información.
 
 ## Más información
 

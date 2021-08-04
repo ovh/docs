@@ -78,7 +78,7 @@ Sulle gamme precedenti di VPS, le tue partizioni saranno automaticamente install
 ##### **df -h**
 
 ```sh
-df -h
+~$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            5.8G     0  5.8G   0% /dev
 tmpfs           1.2G   17M  1.2G   2% /run
@@ -93,7 +93,7 @@ tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 ##### **lsblk**
 
 ```sh
-lsblk
+~$ lsblk
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0  2.5G  0 disk
 └─sda1    8:1    0  2.5G  0 part /
@@ -108,8 +108,8 @@ L'esempio che hai mostrato qui sopra mostra che la partizione di sistema è mont
 Se il tuo VPS è recente, la colonna `MOUNTPOINT` dovrebbe essere vuota. In questo caso, esegui il mount della partizione:
 
 ```sh
-mkdir -p /mnt/sdb1
-mount /dev/sdb1 /mnt/sdb1
+~$ mkdir -p /mnt/sdb1
+~$ mount /dev/sdb1 /mnt/sdb1
 ```
 
 #### Step 3: autorizzazioni CHROOT
@@ -117,13 +117,13 @@ mount /dev/sdb1 /mnt/sdb1
 È necessario modificare la directory di root per applicare le modifiche al tuo sistema. Per farlo, utilizza il comando `chroot`:
 
 ```sh
-chroot /mnt/sdb1/
+~$ chroot /mnt/sdb1/
 ```
 
 È possibile effettuare una verifica digitando il comando `ls -l`, che registra il contenuto archiviato nella directory corrente del tuo sistema:
 
 ```sh
-ls -l
+~$ ls -l
 ```
 
 #### Step 4: Modifica la password (root)
@@ -169,7 +169,7 @@ Se il tuo VPS è di ultima generazione: *vps-XXXXX.vps.ovh.net*), hai ricevuto l
 Utilizza un editor di testo come vim o nano per modificare questo file di configurazione:
 
 ```sh
-nano /etc/ssh/sshd_config
+~$ nano /etc/ssh/sshd_config
 ```
 
 Aggiungi questa riga.
@@ -189,7 +189,7 @@ Salva il file e lascia l'editor.
 #### Step 2: Riavvia il servizio SSH
 
 ```sh
-systemctl restart sshd
+~$ systemctl restart sshd
 ```
 
 Ciò dovrebbe bastare per applicare le modifiche. È possibile riavviare il VPS (```~$ reboot```).
@@ -199,7 +199,7 @@ Ciò dovrebbe bastare per applicare le modifiche. È possibile riavviare il VPS 
 Se dopo aver modificato la password e avviato il riavvio riscontri problemi di avvio:
 
 - Consulta il KVM per sapere perché il VPS non può iniziare. Consulta la [guida KVM](../utilizza_il_kvm_sul_tuo_vps/) per ottenere assistenza sull'utilizzo di questa funzionalità nello Spazio Cliente OVHcloud.
-- Se il KVM visualizza l'avvio del VPS o se non riesce a trovare il disco, assicurati che il [bootlog sia attivo](https://docs.ovh.com/gb/en/vps/displaying-boot-log-in-the-kvm/). Per maggiori informazioni, invia i log pertinenti ai nostri team di supporto creando una richiesta di supporto nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
+- Se il KVM visualizza l'avvio del VPS o se non riesce a trovare il disco, assicurati che il [bootlog sia attivo](../bootlog-kvm/). Per maggiori informazioni, invia i log pertinenti ai nostri team di supporto creando una richiesta di supporto nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ## Per saperne di più
 

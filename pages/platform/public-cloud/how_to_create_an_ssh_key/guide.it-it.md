@@ -2,7 +2,7 @@
 title: 'Creare una chiave SSH'
 slug: creare-chiave-ssh
 excerpt: 'Come generare una chiave SSH per accedere alla tua istanza'
-section: Sicurezza
+section: Per iniziare
 ---
 
 **Ultimo aggiornamento: 21/12/2020**
