@@ -72,7 +72,7 @@ If they are identical to the targets of the `NS` type entries in the `DNS zone`{
 
 A warning in the `DNS zone`{.action} tab indicates that the DNS servers used by your domain name are not the ones indicated in your [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns). Two scenarios are possible:
 
-- Under the sentence `You are currently using the following DNS servers`, the servers listed are "ns **?** .ovh.net" and "dns **?** .ovh.net" (replace the **`?`** by any number):
+- Under the sentence `You are currently using the following DNS servers`, the servers listed are "ns **?** .ovh.net" and "dns **?** .ovh.net" (replace the "**?**" by any number):
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 

@@ -113,7 +113,7 @@ Votre site sera de nouveau accessible sous 24 heures maximum.
 
 Dans cette étape, vous allez retrouver l'adresse IP de votre hébergement, puis l'ajouter à votre `Zone DNS`{.action}.
 
-Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une tierce personne, contactez l'hébergeur ou le prestataire concerné.
+Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou géré par une tierce personne, contactez l'hébergeur ou le prestataire concerné.
 
 Si votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovh.com/fr/hebergement-web/), cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'offre concernée.
 
