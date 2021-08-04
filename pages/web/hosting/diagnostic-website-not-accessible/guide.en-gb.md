@@ -1,11 +1,11 @@
 ---
 title: What do I do if my website is down?
 slug: server-error-inaccessible
-excerpt: Diagnose the causes of inaccessibility of your site
-section: Diagnostic
+excerpt: Diagnose the causes of the inaccessibility of your web site
+section: Diagnostics
 ---
 
-**Last updated 16/07/2021**
+**Last updated 16th July 2021**
 
 ## Objective
 
@@ -13,12 +13,12 @@ Several error messages may appear on your browser in the event of your site bein
 
 |Browser|Error Message|
 |-|---|
-|Chrome:<br>"This site is inaccessible"|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}\|
-|Firefox:<br>"Um, we can't find this site."|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}\|
-|Edge:<br>"Sorry, we can't access this page"|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}\|
-|Safari:<br>"Safari can't find server"|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}\|
+|Chrome:<br>"This site can't be reached"|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
+|Firefox:<br>"Hmm. We're having trouble finding that site."|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
+|Edge:<br>"Hmmm... can't reach this page"|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
+|Safari:<br>"Safari Can't Find the Server"|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
 
-**Find out how to resolve "This site is inaccessible" errors type**
+**Find out how to resolve "This site can't be reached" errors type**
 
 > [!warning]
 >
@@ -29,37 +29,36 @@ Several error messages may appear on your browser in the event of your site bein
 
 ## Requirements
 
-- a [domain name](https://www.ovh.co.uk/domains/)
-- You must have control over your domain’s servers and [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns)
+- control over your domain’s servers and [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
-### Step 1: check the validity of your domain name
+### Step 1: check the validity of your domain name subscription
 
 > [!warning]
 >
-> You are solely responsible for renewing your services.<br>
-> As a hosting provider, OVHcloud is required to permanently delete any web services (domains, hosting plans, e-mails, etc.) that have not been renewed in time, as well as all of the data they stored.
+> You are solely responsible for renewing your web services.<br>
+> As a hosting provider, OVHcloud is required to permanently delete any web services (domains, hosting plans, e-mails, etc.) that have not been renewed in time, as well as all of the data they store.
 >
 > As a result, we strongly recommend that you enable [automatic renewal](../../billing/how-to-use-automatic-renewal-at-ovh/#instructions) for all of your OVHcloud subscriptions.
 >
 
-To check that your domain name subscription is valid, click on your domain name at the top right-hand corner of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). The shortcut menu will appear, then click on `Products and services`{.action}.
+To check that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then click on `Products and services`{.action} within the right-hand menu.
 
-![control-panel](images/control-panel.png){.thumbnail}\|
+![control-panel](images/control-panel.png){.thumbnail}|
 
-Renew your domain if necessary with the `...`{.action} button on the right side of your screen, then click on `Renew service`{.action}.
+Renew your domain if necessary with the `...`{.action} button, then click on `Renew service`{.action}.
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-Then wait 48 hours maximum (propagation time following changes related to [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/#understanding-dns)).
+After the renewal of your offer is completed, your website will be available within 48 hours.
 
-### Step 2: check DNS servers
+### Step 2: check the DNS servers
 
-To check that your [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/) are valid, click on `Domain names`{.action} in the top left-hand corner of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then on the domain name of your website.
+To check that your [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/) are valid, click on `Domain names`{.action} in the top left-hand corner of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then on your domain name.
 
-#### Scenario 1: no anomalies on the DNS servers
+#### Scenario 1: no anomalies appear on the DNS servers
 
 Check the servers listed in the `DNS servers`{.action} tab:
 
@@ -71,15 +70,15 @@ If they are identical to the targets of the `NS` type entries in the `DNS zone`{
 
 #### Scenario 2: a warning appears above the DNS zone
 
-A warning in the `DNS zone`{.action} tab indicates that the DNS servers used by your domain are not the ones indicated in your DNS zone. Two scenarios are possible:
+A warning in the `DNS zone`{.action} tab indicates that the DNS servers used by your domain name are not the ones indicated in your [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns). Two scenarios are possible:
 
 - Under the sentence `You are currently using the following DNS servers`, the servers listed are "ns **?** .ovh.net" and "dns **?** .ovh.net" (replace the **`?`** by any number):
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Modify the DNS servers as described in [this guide](../../domains/web_hosting_general_information_about_dns_servers/#modifying-dns-servers), so that they are identical to the targets of the `NS` type records in the `DNS zone`{.action}.
+Modify the DNS servers as described in [this guide](../../domains/web_hosting_general_information_about_dns_servers/#modifying-dns-servers), so that they are identical to the targets of the `NS` type records in your `DNS zone`{.action}.
 
-Then wait a maximum of 48 hours (for the changes to your `DNS servers`{.action} to propagate).
+Your website will then be available again within 48 hours.
 
 - Under the sentence `You are currently using the following DNS servers`, the servers listed are not "ns **?** .ovh.net" and "dns **?** .ovh.net".
 
@@ -87,59 +86,57 @@ Then wait a maximum of 48 hours (for the changes to your `DNS servers`{.action} 
 
 > [!warning]
 >
-> In this situation, please contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/fr/) before making any changes.
+> In this situation, please contact your webmaster or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/) before making any changes.
 >
-> The DNS servers used by your domain name may be functional, and the problem accessing your website may be linked to a missing or incorrect entry in the [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns). Changing the DNS servers in this situation may make your email addresses or other online applications unavailable.
+> The DNS servers used by your domain name may be functional and the problem accessing your website be linked to a missing or incorrect entry in the active [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns). Changing the DNS servers in this situation might make your e-mail addresses or other online applications related to your domain name unavailable.
 >
 
 #### Scenario 3: no NS-type entries appear in the DNS zone
 
-Your domain’s DNS` `{.action}zone does not contain an `NS` record:
+Your domain’s `DNS zone`{.action} does not contain any `NS` record:
 
 ![srv_dns_missing](images/srv_dns_missing.png){.thumbnail}
 
-Back up the current zone by clicking the `Modify button in text`{.action} mode on the right-hand side of your screen:
+Back up the current zone by clicking on the `Change in text format`{.action} button:
 
 ![change_DNS_zone_change_text_format](images/change_DNS_zone_change_text_format.png){.thumbnail}
 
-Then copy and paste the contents of your `DNS`{.action} zone into a text document. Save this document locally.
+Then copy and paste the content of your `DNS zone`{.action} into a text document on your computer.
 
-Then click `Reset my DNS`{.action} zone, then select `No, but I want to reset my DNS`{.action} zone, enter your email and hosting servers, and click `Confirm`{.action}.
+Then click on `Reset my DNS zone`{.action} and select `No, but I want to reset my DNS zone`{.action}. Select your e-mail and hosting servers and click on `Confirm`{.action}.
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
-Wait a maximum of 24 hours (for the modifications to propagate in the `DNS`{.action} zone).
+Your website will then be available again within 24 hours.
 
 ### Step 3: check the DNS zone <a name="step3"></a>
 
-In this step, you will find your hosting plan’s IP address, then add it to your DNS `zone`{.action}.
+In this step, you will find your hosting plan’s IP address, then add it to your `DNS zone`{.action}.
 
-If your website is hosted outside of OVHcloud infrastructure, or by a third party, please contact the hosting provider concerned.
+If your site is not hosted on the OVHcloud infrastructure or is managed by another provider, please contact the concerned support service.
 
-If your website is hosted on one of our Cloud[ web ](https://www.ovh.com/fr/hebergement-web/)offers, click on the `Hosting`{.action} tab on the left-hand side of your screen, then on the relevant offer.
+If your site is hosted on one of our [Cloud web offers](https://www.ovh.co.uk/web-hosting/), click on the `Hosting plans`{.action} tab on the left-hand side of your screen and choose the web hosting offer which contains your website.
 
-In the General `information`{.action} tab, copy the IPV4 and/or IPV6 address of your domain.
+In the `General information`{.action} tab, copy the IPV4 and/or IPV6 address of your domain name.
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-Then refer to it in your domain’s DNS[ ](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1)zone, by modifying or creating one or more `A` records.
+Then refer to it in your domain’s [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone_1), by modifying or creating one or more `A` entries.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
-You will then need to wait a maximum of 24 hours (for the changes to propagate in the `DNS`{.action} zone).
+Your website will then be available again within 24 hours.
 
 ## Go further <a name="gofurther"></a>
 
-[Resolve the “Website not installed” error](../erreur-site-non-installe/)
+[Resolving a “Site not installed” error](../web_hosting_error_-_website_not_installed/)
 
-[How to diagnose a blank page?](../comment-diagnostiquer-page-blanche/)
+[Fixing the 500 Internal Server Error](../web_hosting_how_to_fix_the_500_internal_server_error/)
 
-[What do I do if I get a 500 Internal Server Error?](../erreur-500-internal-server-error/)
+[Resolving the most common 1-click module errors](../error-frequently-1-click-modules/)
 
-[Resolve the most common 1-click module errors](../erreurs-frequentes-modules-en-1-clic/)
+For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud](https://partner.ovhcloud.com/fr/) partners.
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/fr/support-levels/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/fr/support-levels/).
-
-Join our community of users on <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.

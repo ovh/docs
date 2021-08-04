@@ -29,7 +29,6 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/)
 - Avoir la gestion des serveurs et de la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) de votre domaine
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
@@ -79,7 +78,7 @@ Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS 
 
 Modifiez les serveurs DNS en suivant les instructions de [ce guide](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), afin qu'ils soient identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}.
 
-Patientez ensuite 48 heures au maximum (délai de propagation des changements de `Serveurs DNS`{.action}).
+Votre site sera de nouveau accessible sous 48 heures maximum.
 
 - Sous la phrase « Vous utilisez actuellement les serveurs DNS suivants : », les serveurs indiqués ne sont pas du type « ns **?** .ovh.net » et « dns **?** .ovh.net ».
 
@@ -108,7 +107,7 @@ Cliquez ensuite sur `Réinitialiser ma zone DNS`{.action}, puis sélectionnez `N
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
-Patientez 24 heures maximum (délai de propagation des modifications dans la `Zone DNS`{.action}).
+Votre site sera de nouveau accessible sous 24 heures maximum.
 
 ### Étape 3 : vérifier la zone DNS <a name="etape3"></a>
 
