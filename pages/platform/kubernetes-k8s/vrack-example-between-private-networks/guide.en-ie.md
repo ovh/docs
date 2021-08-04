@@ -32,13 +32,13 @@ order: 11
 
 ## Objective
 
-OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networking solution that enables our customers to route traffic between most OVHcloud services (dedicated servers, public cloud instances...). You can for example add Public Cloud instances, a baremetal servers and Managed Kubernetes clusters to your private network to create an private infrastructure of physical, virtual and containerized workloads.
+OVHcloud [vRack](https://www.ovh.ie/solutions/vrack/) is a private networking solution that enables our customers to route traffic between most OVHcloud services (dedicated servers, Public Cloud instances...). You can for example add Public Cloud instances, a baremetal servers and Managed Kubernetes clusters to your private network to create an private infrastructure of physical, virtual and containerized workloads.
 
-Connecting a Managed Kubernetes cluster to another service in the same private network in the vRack is an easier process, as no network configuration is needed. Please have a look to our [../vrack-example-k8s-and-pci/](Working with vRack example - Managed Kubernetes and Public Cloud instances) tutorial to see an example in action.  
+Connecting a Managed Kubernetes cluster to another service in the same private network in the vRack is an easier process, as no network configuration is needed. Please have a look at our [Working with vRack example - Managed Kubernetes and Public Cloud instances](../vrack-example-k8s-and-pci/) tutorial to see an example in action.  
 
 In this tutorial, we are going to activate the vRack on a Public Cloud project. Then we will create a Managed Kubernetes cluster and a Public Cloud instance (PCI). Eventually, both of them will be added inside the vRack but in **different private networks**. 
 
-**In this tutorial we are going to give you an example of how to use the OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) to connect a Managed Kubernetes cluster with a Public Cloud instance inside different private network.**
+**In this tutorial we are going to give you an example of how to use the OVHcloud [vRack](https://www.ovh.ie/solutions/vrack/) to connect a Managed Kubernetes cluster with a Public Cloud instance inside different private network.**
 
 > [!warning]
 > The method described in this tutorial is a **temporary one**, only required if you want to route traffic between different private networks in a single vRack. Our Managed Kubernetes team is working on a more streamlined solution for this advanced use case, as explained in [this issue](https://github.com/ovh/public-cloud-roadmap/issues/116) in our [Public Cloud roadmap](https://github.com/ovh/public-cloud-roadmap/).
@@ -51,12 +51,12 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
-It also supposes that you already have followed the [Using vRack](../using-vrack/) guide to activate the vRack on your Public Cloud project and put your OVHcloud Managed Kubernetes cluster inside the vRack.  It will also be useful to have followed our [../vrack-example-k8s-and-pci/](Working with vRack example - Managed Kubernetes and Public Cloud instances) tutorial to understand the easier use case when both services are in the same private network.
+It also supposes that you already have followed the [Using vRack](../using-vrack/) guide to activate the vRack on your Public Cloud project and put your OVHcloud Managed Kubernetes cluster inside the vRack.  It will also be useful to have followed our [Working with vRack example - Managed Kubernetes and Public Cloud instances](../vrack-example-k8s-and-pci/) tutorial to understand the easier use case when both services are in the same private network.
 
 And to understand why this configuration is needed, please have a look at the [Using vRack - Communicating between different private networks](../using-vrack-between-private-networks/) technical document.
 
 > [!warning]
-> This guide assumes you are familiar with the [OVHcloud API](https://api.ovh.com/). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+> This guide assumes you are familiar with the [OVHcloud API](https://api.ovh.com/). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/).
 >
 
 ## Instructions
@@ -112,7 +112,7 @@ Please enter your OpenStack Password:
 Let's begin by getting the private networks openstack IDs using the openstack CLI:
 
 > [!warning]
-> In my case, `priv-net-01` has a subnet range of `10.0.1.0/24`, and `priv-net-02` has a subnet range of `10.0.2.0/24`, don't forget to adapt the commands to your specific subnet ranges.
+> In this case, `priv-net-01` has a subnet range of `10.0.1.0/24`, and `priv-net-02` has a subnet range of `10.0.2.0/24`, don't forget to adapt the commands to your specific subnet ranges.
 
 ```bash
 PRIV_NET_01=$(openstack subnet list --subnet-range 10.0.1.0/24 --column ID -f value)
@@ -139,7 +139,7 @@ f258dbbd-ae0b-40a6-8ce2-76e67837ce95
 </code></pre>
 
 
-### Setting-up a PCI gateway
+### Setting up a PCI gateway
 
 
 Now we are going to create a Public Cloud instance in GRA5, to act as a gateway for our vRack. 
@@ -254,7 +254,7 @@ And restart the network:
 sudo netplan apply
 ```
 
-In my case:
+In this case:
 
 <pre class="console"><code>~$ ssh ubuntu@$INSTANCE_IP
 Welcome to Ubuntu 21.04 (GNU/Linux 5.11.0-17-generic x86_64)
@@ -302,7 +302,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install iptables-persistent
 ```
 
 
-In my case:
+In this case:
 
 <pre class="console"><code>ubuntu@my-vrack-gateway:~$ sudo sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/' /etc/sysctl.conf
 ubuntu@my-vrack-gateway:~$ sudo sysctl -p
@@ -331,9 +331,9 @@ The following NEW packages will be installed:
 No user sessions are running outdated binaries.
 </code></pre>
 
-### Setting-up the Managed Kubernetes attached to `priv_net_01`
+### Setting up the Managed Kubernetes attached to `priv_net_01`
 
-Then we create a Kubernetes cluster in GRA5 region, attached to`priv_net_01`, as explained in the [Create a cluster](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) guide. 
+Then we create a Kubernetes cluster in GRA5 region, attached to`priv_net_01`, as explained in the [Create a cluster](../creating-a-cluster/) guide. 
 
 
 ![Choose a private network for this cluster](images/vrack-example-10.png){.thumbnail}
@@ -351,19 +351,19 @@ In the Managed Kubernetes Service Dashboard, we can see the cluster, with the ch
 Don't forget to grab your `kubeconfig` and configure `kubectl` to use it, as explained in the [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl/) guide.
 
 
-### Setting-up a PCI attached to `priv_net_02`
+### Setting up a PCI attached to `priv_net_02`
 
-Now we can create a new Public Cloud instance, also in GRA5 region, and attach it to  `priv_net_02` by following the [Integrating an instance into vRack](../../public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1) guide.
+Now we can create a new Public Cloud instance, also in GRA5 region, and attach it to `priv_net_02` by following the [Integrating an instance into vRack](../../public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1) guide.
 
 We are going to create an Ubuntu instance:
 
 ![Setting-up a PCI attached to `priv_net_02`](images/vrack-example-04.png){.thumbnail}
 
-In the fourth step of creation, we call it `vrack-example-between-private-networks` and we attach it to `priv_net_02`:
+In the fourth step of the creation, we call it `vrack-example-between-private-networks` and we attach it to `priv_net_02`:
 
 ![Setting-up a PCI attached to `priv_net_02`](images/vrack-example-13.png){.thumbnail}
 
-After instance creation, we can see the connection details in the OVHcloud Control Panel. 
+After the instance creation, we can see the connection details in the OVHcloud Control Panel. 
 
 
 ![Setting-up a PCI attached to `priv_net_02`](images/vrack-example-14.png){.thumbnail}
@@ -388,7 +388,7 @@ Please take note of the private network IP address (in my case `10.0.2.142`), as
 
 ### Verifying that we can access the PCI from the Kubernetes cluster
 
-Let's create modified nginx pod to test our setup. Create a `shell-demo.yaml` manifest:
+Let's create a modified nginx pod to test our setup. Create a `shell-demo.yaml` manifest:
 
 `shell-demo.yaml`
 ```yaml
@@ -470,7 +470,7 @@ kubectl run nginx --image=nginx
 kubectl expose pod nginx --port 80 --type NodePort
 ```
 
-We get the `NodePort` port and we sotre it in a variable:
+We get the `NodePort` port and we store it in a variable:
 
 ```bash
 kubectl get svc nginx -o=jsonpath='{.spec.ports[?(@.port==80)].nodePort}'

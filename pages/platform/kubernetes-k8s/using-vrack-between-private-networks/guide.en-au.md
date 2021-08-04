@@ -36,7 +36,7 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 By default, your Kubernetes clusters will have public IPs. For some uses cases, or for security reasons, you could prefer having your Kubernetes cluster inside a private network. 
 
-OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networking solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. 
+OVHcloud [vRack](https://www.ovh.com.au/solutions/vrack/) is a private networking solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. 
 
 When your Managed Kubernetes and your other services are both in vRack, but in different private networks, some extra configuration is needed. In this document, you will find an explanation of why this extra configuration is needed and how to do it.
 
@@ -102,10 +102,14 @@ That means that if in our schema *Pod 3* wants to communicate with the PCI *vm1*
 
 ### The solution
 
-The solution to this problem is to push the routes to the additional private networks via the DHCP of the private networks. That inform the nodes that traffic to the private networks is to be sent via `eth1` et non `eth0`:
+The solution to this problem is to push the routes to the additional private networks via the DHCP of the private networks. That inform the nodes that traffic to the private networks is to be sent via `eth1` instead of `eth0`:
 
 ![Communication between different private networks](images/using-vrack-07.jpg){.thumbnail}
 
 With this setupm if in our schema *Pod 3* wants to communicate with the PCI *vm1*, that is in a different private network, the traffic is routed to `eth1`, and thus to *vm1*:
 
 ![Communication between different private networks](images/using-vrack-08.jpg){.thumbnail}
+
+## Go further
+
+Join our [community of users](https://community.ovh.com/en/).
