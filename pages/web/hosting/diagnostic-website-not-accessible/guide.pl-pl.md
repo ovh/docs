@@ -17,9 +17,9 @@ Order: 1
 W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce kilka zwrotów błędów. Poniższe przykłady wskazują na nieprawidłową konfigurację Twoich [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) lub domeny zawieszonej (jeśli Twoja strona nie wyświetla żadnego z komunikatów o błędzie opisanych tutaj, sprawdź sekcję [Sprawdź również](#gofurther)):
 
 |Przeglądarka|Komunikat błędu|
-\|-|---|
+|-|---|
 |Chrome:<br>"Ta strona jest niedostępna"|![cantbereachd_chrome](images/cantbereached_chrome.png){.thumbnail}\|
-|Firefox:<br>"Nie możemy znaleźć tej strony. "|![cantbereCHAD_firefox](images/cantbereached_firefox.png){.thumbnail}\|
+|Firefox:<br>"Nie możemy znaleźć tej strony. "|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}\|
 |Edge:<br>"Przepraszam, nie można wejść na tę stronę"|![cantbereachd_edge](images/cantbereached_edge.png){.thumbnail}\|
 |Safari:<br>"Safari nie może znaleźć serwera"|![cantbereachd_safari](images/cantbereached_safari.png){.thumbnail}\|
 
@@ -133,7 +133,7 @@ Następnie przenieś domenę do [strefy DNS](../../domains/editer-ma-zone-dns/#e
 
 Odczekaj maksymalnie 24 godziny (czas propagacji zmian w `strefie DNS`{.action}).
 
-## Sprawdź <a name="gofurther"></a>
+## Sprawdź również <a name="gofurther"></a>
 
 [Usunięcie błędu "Strona nie została zainstalowana"](../erreur-site-non-installe/)
 
@@ -147,4 +147,4 @@ Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/fr/), jeśl
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/fr/support-levels/).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -16,8 +16,8 @@ Order: 1
 
 Em caso de inacessibilidade do seu website, podem ocorrer várias reações de erro. Os exemplos abaixo indicam uma configuração errada dos seus [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais](#gofurther)?):
 
-Browser | Mensagem de Erro|
-\|-|---|
+Browser|Mensagem de Erro|
+|-|---|
 |Chrome:<br>"Este site está inacessível" | ![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}\|
 |Firefox:<br>"Hmm, não conseguimos encontrar este site. " | ![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}\|
 |Edge:<br>"Pedimos desculpa, não é possível aceder a esta página" | ![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}\|
@@ -40,7 +40,7 @@ Browser | Mensagem de Erro|
 
 ## Instruções
 
-### 1 - verificar a validade do seu domínio
+### Etapa 1: verificar a validade do seu domínio
 
 > [!warning]
 >
@@ -147,4 +147,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/fr/support-levels/).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
