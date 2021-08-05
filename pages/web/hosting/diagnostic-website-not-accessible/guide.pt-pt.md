@@ -77,13 +77,13 @@ Se forem idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}, 
 
 Um aviso no separador `Zona DNS`{.action} indica que os servidores DNS utilizados pelo seu domínio não estão indicados na sua zona. Aqui, podem ocorrer dois cenários:
 
-- Na frase "Está a utilizar os seguintes servidores DNS: ", os servidores indicados são do tipo "ns **?** .ovh.net" e "dns **?** .ovh.net" (substituir "**?**" por qualquer número):
+- Na frase "Está a utilizar os seguintes servidores DNS:", os servidores indicados são do tipo "ns **?** .ovh.net" e "dns **?** .ovh.net" (substituir "**?**" por qualquer número):
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
 Altere os servidores DNS de acordo com as instruções [deste manual](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#modifier-les-serveurs-dns), para que sejam idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}.
 
-Aguarde no máximo 48 horas (prazo de propagação das alterações dos `Servidores DNS`{.action}).
+O seu website estará disponível num prazo máximo de 48 horas.
 
 - Na frase "Está a utilizar os seguintes servidores DNS: ", os servidores indicados não são do tipo "ns **?** .ovh.net" e "DNS **?** .ovh.net".
 
@@ -112,7 +112,7 @@ De seguida, clique em `Reiniciar a minha zona DNS`{.action} e selecione `Não, m
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
-Aguarde até 24 horas (tempo máximo de propagação das alterações na `Zona DNS`{.action}).
+O seu website estará disponível num prazo máximo de 24 horas.
 
 ### Etapa 3: verificar a zona DNS <a name="step3"></a>
 
@@ -130,7 +130,7 @@ De seguida, aceda à [Zona DNS](../../domains/alojamento_partilhado_como_editar_
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
-Aguarde no máximo 24 horas (atraso na propagação das alterações na `Zona DNS`{.action}).
+O seu website estará disponível num prazo máximo de 24 horas.
 
 ## Quer saber mais? <a name="gofurther"></a>
 

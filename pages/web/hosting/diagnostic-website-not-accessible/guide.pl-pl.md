@@ -83,7 +83,7 @@ Ostrzeżenie w zakładce `Strefa DNS`{.action} wskazuje, że serwery DNS używan
 
 Zmień serwery DNS zgodnie z instrukcjami zawartymi w [tym przewodniku](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#modifier-les-serveurs-dns), aby były one identyczne z celami wpisów typu `NS` w `Strefa DNS`{.action}.
 
-Odczekaj maksymalnie 48 godziny (czas propagacji zmian `serwerów DNS`{.action}).
+Twoja strona będzie dostępna w ciągu maksymalnie 48 godzin.
 
 - Pod frazą "Aktualnie korzystasz z następujących serwerów DNS: ", wskazane serwery nie są typu "ns **?** ovh.net" i "dns **?** ovh.net".
 
@@ -112,7 +112,7 @@ Następnie kliknij `Zresetuj strefę DNS`{.action} i wybierz `Nie, ale chcę zre
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
-Odczekaj maksymalnie 24 godziny (czas propagacji zmian w `Strefa DNS`{.action}).
+Twoja strona będzie dostępna w ciągu maksymalnie 24 godzin.
 
 ### Etap 3: sprawdź strefę DNS <a name="step3"></a>
 
@@ -130,7 +130,7 @@ Następnie przenieś domenę do [strefy DNS](../../domains/hosting_www_jak_edyto
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
-Odczekaj maksymalnie 24 godziny (czas propagacji zmian w `Strefa DNS`{.action}).
+Twoja strona będzie dostępna w ciągu maksymalnie 24 godzin.
 
 ## Sprawdź również <a name="gofurther"></a>
 
