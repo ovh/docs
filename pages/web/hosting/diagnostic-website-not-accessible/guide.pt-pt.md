@@ -14,14 +14,14 @@ Order: 1
 
 ## Objetivo
 
-Em caso de inacessibilidade do seu website, podem ocorrer várias reações de erro. Os exemplos abaixo indicam uma configuração errada dos seus [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais](#gofurther)?):
+Em caso de inacessibilidade do seu website, podem ocorrer várias reações de erro. Os exemplos abaixo indicam uma configuração errada dos seus [DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#compreender-a-nocao-de-dns) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais](#gofurther)?):
 
 Browser|Mensagem de Erro|
 |-|---|
-|Chrome:<br>"Este site está inacessível" | ![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}\|
-|Firefox:<br>"Hmm, não conseguimos encontrar este site. " | ![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}\|
-|Edge:<br>"Pedimos desculpa, não é possível aceder a esta página" | ![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}\|
-|Safari:<br>"Safari não consegue encontrar o servidor" | ![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}\|
+|Chrome:<br>"Este site está inacessível" | ![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
+|Firefox:<br>"Hmm, não conseguimos encontrar este site. " | ![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
+|Edge:<br>"Pedimos desculpa, não é possível aceder a esta página" | ![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
+|Safari:<br>"Safari não consegue encontrar o servidor" | ![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
 
 **Saiba como corrigir erros do tipo "Este site está inacessível"**
 
@@ -35,7 +35,7 @@ Browser|Mensagem de Erro|
 ## Requisitos
 
 - Ter um [domínio](https://www.ovh.com/fr/domaines/)
-- Ter a gestão dos servidores e da [zona DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) do seu domínio
+- Ter a gestão dos servidores e da [zona DNS](../../domains/editer-ma-zone-dns/#compreender-a-nocao-de-dns) do seu domínio
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## Instruções
@@ -52,17 +52,17 @@ Browser|Mensagem de Erro|
 
 Para verificar a validade da assinatura relativa ao seu domínio, clique no seu nome (canto superior direito) no menu contextual e, a seguir, em `Produtos e serviços`{.action}.
 
-![control-panel](images/control-panel.png){.thumbnail}\|
+![control-panel](images/control-panel.png){.thumbnail}|
 
 Renove o domínio se necessário através do botão `...`{.action} à direita do ecrã e `Renove o serviço`{.action}.
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-Aguarde no máximo 48 horas (tempo de propagação após as alterações associadas aos [servidores DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns)).
+Aguarde no máximo 48 horas (tempo de propagação após as alterações associadas aos [servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#compreender-a-nocao-de-dns)).
 
 ### Etapa 2: verificar os servidores DNS
 
-Para verificar a validade dos seus [servidores DNS](../../domains/generalites-serveurs-dns/), clique no canto superior esquerdo da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
+Para verificar a validade dos seus [servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/), clique no canto superior esquerdo da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
 
 #### Cenário 1: nenhuma anomalia nos servidores DNS
 
@@ -82,7 +82,7 @@ Um aviso no separador `Zona DNS`{.action} indica que os servidores DNS utilizado
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Altere os servidores DNS de acordo com as instruções [deste manual](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), para que sejam idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}.
+Altere os servidores DNS de acordo com as instruções [deste manual](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#modifier-les-serveurs-dns), para que sejam idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}.
 
 Aguarde no máximo 48 horas (prazo de propagação das alterações dos `Servidores DNS`{.action}).
 
@@ -94,7 +94,7 @@ Aguarde no máximo 48 horas (prazo de propagação das alterações dos `Servido
 >
 > Nesta situação, contacte o seu webmaster ou os [parceiros OVHcloud](https://partner.ovhcloud.com/fr/) antes de qualquer manipulação.
 >
-> É possível que os servidores DNS utilizados pelo seu domínio estejam funcionais e que o problema de acesso ao seu site esteja associado a uma entrada inexistente ou errada na [zona DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns). Se alterar os servidores DNS nesta situação, os seus endereços de e-mail ou outras aplicações online poderão ficar indisponíveis.
+> É possível que os servidores DNS utilizados pelo seu domínio estejam funcionais e que o problema de acesso ao seu site esteja associado a uma entrada inexistente ou errada na [zona DNS](../../domains/editer-ma-zone-dns/#compreender-a-nocao-de-dns). Se alterar os servidores DNS nesta situação, os seus endereços de e-mail ou outras aplicações online poderão ficar indisponíveis.
 >
 
 #### Cenário 3: nenhuma entrada do tipo NS aparece na zona DNS

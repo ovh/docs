@@ -14,16 +14,16 @@ Order: 1
 
 ## Objetivo
 
-En caso de que su sitio web no sea accesible, puede haber varios errores en su navegador. Los siguientes ejemplos indican una configuración errónea de sus [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) o un dominio suspendido (si su sitio no muestra uno de los mensajes de error descritos aquí, consulte la sección [Más](#gofurther)):
+En caso de que su sitio web no sea accesible, puede haber varios errores en su navegador. Los siguientes ejemplos indican una configuración errónea de sus [DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#entender-el-concepto-de-dns) o un dominio suspendido (si su sitio no muestra uno de los mensajes de error descritos aquí, consulte la sección [Más información](#gofurther)):
 
 |Navegador|Mensaje de error|
 |-|---|
-|Chrome:<br>"Este sitio no está accesible"|![cantbereached_crome](images/cantbereached_chrome.png){.thumbnail}\|
-|Firefox :<br>"Eh, no podemos encontrar este sitio. "|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}\|
-|Edge :<br>"Lo sentimos, no se ha podido acceder a esta página"|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}\|
-|Safari :<br>"Safari no consigue encontrar el servidor"|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}\|
+|Chrome:<br>"No se puede acceder a este sitio web"|![cantbereached_crome](images/cantbereached_chrome.png){.thumbnail}|
+|Firefox :<br>"Uf. Tenemos problemas para encontrar ese sitio."|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
+|Edge :<br>"Vaya… no se puede obtener acceso a esta página"|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
+|Safari :<br>"Safari no puede conectarse al servidor"|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
 
-**Cómo solucionar los errores del tipo "Este sitio no es accesible"**
+**Cómo solucionar los errores del tipo "No se puede acceder a este sitio web"**
 
 > [!warning]
 >
@@ -34,8 +34,8 @@ En caso de que su sitio web no sea accesible, puede haber varios errores en su n
 
 ## Requisitos
 
-- Tener un [dominio.](https://www.ovh.com/fr/domaines/)
-- Tener la gestión de los servidores y de la [zona DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) del dominio.
+- Tener un [dominio](https://www.ovh.com/fr/domaines/).
+- Tener la gestión de los servidores y de la [zona DNS](../../domains/editer-ma-zone-dns/#entender-el-concepto-de-dns) del dominio.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## Procedimiento
@@ -52,17 +52,17 @@ En caso de que su sitio web no sea accesible, puede haber varios errores en su n
 
 Para comprobar la validez de la suscripción relativa a su nombre de dominio, haga clic en su nombre en la esquina superior derecha del área de cliente y seleccione `Productos y servicios`{.action}.
 
-![control-panel](images/control-panel.png){.thumbnail}\|
+![control-panel](images/control-panel.png){.thumbnail}|
 
 Renueve su dominio si es necesario a través del botón `..`{.action} a la derecha de la pantalla y luego `Renovar el servicio`{.action}.
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-Espere hasta un máximo de 48 horas (plazo de propagación tras los cambios asociados a los [servidores DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns)).
+Espere hasta un máximo de 48 horas (plazo de propagación tras los cambios asociados a los [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#entender-el-concepto-de-dns)).
 
 ### Etapa 2: comprobar los servidores DNS
 
-Para comprobar la validez de sus [servidores DNS](../../domains/generalites-serveurs-dns/), haga clic en [Dominios](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) y seleccione el dominio en la parte superior izquierda del `área de cliente de OVHcloud`{.action}.
+Para comprobar la validez de sus [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/), haga clic en [Dominios](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) y seleccione el dominio en la parte superior izquierda del `área de cliente de OVHcloud`{.action}.
 
 #### Situación 1: no hay anomalías en los servidores DNS
 
@@ -82,7 +82,7 @@ Una advertencia en la pestaña `Zona DNS`{.action} indica que los servidores DNS
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Modifique los servidores DNS siguiendo las instrucciones de [esta guía](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns) para que sean idénticos a los objetivos de los registros de tipo `NS` en la `zona DNS`{.action}.
+Modifique los servidores DNS siguiendo las instrucciones de [esta guía](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#modifier-les-serveurs-dns) para que sean idénticos a los objetivos de los registros de tipo `NS` en la `zona DNS`{.action}.
 
 Espere hasta un máximo de 48 horas (plazo de propagación de los cambios de `servidores DNS`{.action}).
 
@@ -94,7 +94,7 @@ Espere hasta un máximo de 48 horas (plazo de propagación de los cambios de `se
 >
 > En ese caso, contacte con el webmaster o los [partners de OVHcloud](https://partner.ovhcloud.com/fr/) antes de realizar cualquier operación.
 >
-> Es posible que los servidores DNS utilizados por el dominio sean funcionales y que el problema de acceso al sitio web esté relacionado con un registro que no se encuentra o que no está en la [zona DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns). Cualquier modificación de los servidores DNS en esta situación puede hacer que sus direcciones de correo u otras aplicaciones en línea no estén disponibles.
+> Es posible que los servidores DNS utilizados por el dominio sean funcionales y que el problema de acceso al sitio web esté relacionado con un registro que no se encuentra o que no está en la [zona DNS](../../domains/editer-ma-zone-dns/#entender-el-concepto-de-dns). Cualquier modificación de los servidores DNS en esta situación puede hacer que sus direcciones de correo u otras aplicaciones en línea no estén disponibles.
 >
 
 #### Situación 3: no aparece ningún registro de tipo NS en la zona DNS.

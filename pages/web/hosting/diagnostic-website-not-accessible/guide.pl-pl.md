@@ -14,14 +14,14 @@ Order: 1
 
 ## Wprowadzenie
 
-W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce kilka zwrotów błędów. Poniższe przykłady wskazują na nieprawidłową konfigurację Twoich [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) lub domeny zawieszonej (jeśli Twoja strona nie wyświetla żadnego z komunikatów o błędzie opisanych tutaj, sprawdź sekcję [Sprawdź również](#gofurther)):
+W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce kilka zwrotów błędów. Poniższe przykłady wskazują na nieprawidłową konfigurację Twoich [DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zrozumienie-pojecia-dns) lub domeny zawieszonej (jeśli Twoja strona nie wyświetla żadnego z komunikatów o błędzie opisanych tutaj, sprawdź sekcję [Sprawdź również](#gofurther)):
 
 |Przeglądarka|Komunikat błędu|
 |-|---|
-|Chrome:<br>"Ta strona jest niedostępna"|![cantbereachd_chrome](images/cantbereached_chrome.png){.thumbnail}\|
-|Firefox:<br>"Nie możemy znaleźć tej strony. "|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}\|
-|Edge:<br>"Przepraszam, nie można wejść na tę stronę"|![cantbereachd_edge](images/cantbereached_edge.png){.thumbnail}\|
-|Safari:<br>"Safari nie może znaleźć serwera"|![cantbereachd_safari](images/cantbereached_safari.png){.thumbnail}\|
+|Chrome:<br>"Ta strona jest niedostępna"|![cantbereachd_chrome](images/cantbereached_chrome.png){.thumbnail}|
+|Firefox:<br>"Nie możemy znaleźć tej strony. "|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
+|Edge:<br>"Przepraszam, nie można wejść na tę stronę"|![cantbereachd_edge](images/cantbereached_edge.png){.thumbnail}|
+|Safari:<br>"Safari nie może znaleźć serwera"|![cantbereachd_safari](images/cantbereached_safari.png){.thumbnail}|
 
 **Dowiedz się, jak usunąć błędy związane z plikiem "Ta strona jest niedostępna"**
 
@@ -35,7 +35,7 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 ## Wymagania początkowe
 
 - Posiadanie [domeny](https://www.ovh.com/fr/domaines/)
-- Zarządzanie serwerami i [strefą DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) domeny
+- Zarządzanie serwerami i [strefą DNS](../../domains/editer-ma-zone-dns/#zrozumienie-pojecia-dns) domeny
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## W praktyce
@@ -52,17 +52,17 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 
 Aby sprawdzić poprawność subskrypcji Twojej domeny, w prawym górnym rogu Panelu klienta kliknij Twoją nazwę, aby wyświetlić menu PPM, następnie `Produkty i usługi`{.action}.
 
-![control-panel](images/control-panel.png){.thumbnail}\|
+![control-panel](images/control-panel.png){.thumbnail}|
 
 Odnów Twoją domenę, jeśli to konieczne, za pomocą przycisku `..`{.action}. po prawej stronie ekranu, a następnie `Odnów usługę`{.action}.
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-Odczekaj maksymalnie 48 godziny (czas propagacji po zmianach związanych z [serwerami DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns)).
+Odczekaj maksymalnie 48 godziny (czas propagacji po zmianach związanych z [serwerami DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zrozumienie-pojecia-dns)).
 
 ### Etap 2: sprawdź serwery DNS
 
-Aby sprawdzić poprawność Twoich [serwerów DNS](../../domains/generalites-serveurs-dns/), w lewym górnym rogu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) kliknij `Domeny`{.action}, a następnie domenę na Twojej stronie.
+Aby sprawdzić poprawność Twoich [serwerów DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/), w lewym górnym rogu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) kliknij `Domeny`{.action}, a następnie domenę na Twojej stronie.
 
 #### Scenariusz 1: brak anomalii na serwerach DNS
 
@@ -82,7 +82,7 @@ Ostrzeżenie w zakładce `Strefa DNS`{.action} wskazuje, że serwery DNS używan
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Zmień serwery DNS zgodnie z instrukcjami zawartymi w [tym przewodniku](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), aby były one identyczne z celami wpisów typu `NS` w `strefie DNS`{.action}.
+Zmień serwery DNS zgodnie z instrukcjami zawartymi w [tym przewodniku](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#modifier-les-serveurs-dns), aby były one identyczne z celami wpisów typu `NS` w `strefie DNS`{.action}.
 
 Odczekaj maksymalnie 48 godziny (czas propagacji zmian `serwerów DNS`{.action}).
 
@@ -94,7 +94,7 @@ Odczekaj maksymalnie 48 godziny (czas propagacji zmian `serwerów DNS`{.action})
 >
 > W takiej sytuacji przed podjęciem jakichkolwiek działań skontaktuj się z webmasterem lub [partnerami OVHcloud](https://partner.ovhcloud.com/fr/).
 >
-> Możliwe, że serwery DNS używane przez Twoją domenę działają i że problem z dostępem do Twojej strony jest związany z brakującym lub nieprawidłowym wpisem w [strefie DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns). Każda zmiana serwerów DNS może spowodować niedostępność Twoich kont e-mail lub innych aplikacji online.
+> Możliwe, że serwery DNS używane przez Twoją domenę działają i że problem z dostępem do Twojej strony jest związany z brakującym lub nieprawidłowym wpisem w [strefie DNS](../../domains/editer-ma-zone-dns/#zrozumienie-pojecia-dns). Każda zmiana serwerów DNS może spowodować niedostępność Twoich kont e-mail lub innych aplikacji online.
 >
 
 #### Scenariusz 3: w strefie DNS nie pojawia się żaden wpis typu NS

@@ -14,16 +14,16 @@ Order: 1
 
 ## Obiettivo
 
-In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi errori. Gli esempi che seguono indicano una configurazione errata dei tuoi [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) o un dominio sospeso (se il tuo sito non mostra uno dei messaggi di errore descritti qui, consulta la sezione [Spingiti oltre](#gofurther)):
+In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi errori. Gli esempi che seguono indicano una configurazione errata dei tuoi [DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#capire-il-concetto-di-dns) o un dominio sospeso (se il tuo sito non mostra uno dei messaggi di errore descritti qui, consulta la sezione [Spingiti oltre](#gofurther)):
 
-|Browser€ Messaggio di errore|
-\|-|---|
-|Chrome:<br>"Questo sito è inaccessibile"€ ![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}\|
-|Firefox :<br>"Non riusciamo a trovare questo sito. "€ ![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}\|
-|Edge:<br>"Spiacente, non è possibile accedere a questa pagina" ![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}\|
-|Safari :<br>"Safari non riesce a trovare il server"€ ![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}\|
+|Browser|Messaggio di errore|
+|-|---|
+|Chrome:<br>"Impossibile raggiungere il sito"![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
+|Firefox :<br>"Uhm… non riusciamo a trovare questo sito."![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
+|Edge:<br>"Impossibile raggiungere questa pagina"![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
+|Safari :<br>"Safari non riesce a trovare il server"![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
 
-**Scopri come risolvere gli errori del tipo "Questo sito è inaccessibile"**
+**Scopri come risolvere gli errori del tipo "Impossibile raggiungere il sito"**
 
 > [!warning]
 >
@@ -35,7 +35,7 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 ## Prerequisiti
 
 - Disporre di un [dominio](https://www.ovh.com/fr/domaines/)
-- Avere la gestione dei server e della [zona DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) del dominio
+- Avere la gestione dei server e della [zona DNS](../../domains/editer-ma-zone-dns/#capire-il-concetto-di-dns) del dominio
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## Procedura
@@ -52,17 +52,17 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 
 Per verificare la validità dell'abbonamento relativo al tuo dominio, clicca sul tuo nome in alto a destra del tuo Spazio Cliente e poi su `Prodotti e servizi`{.action}.
 
-![control-panel](images/control-panel.png){.thumbnail}\|
+![control-panel](images/control-panel.png){.thumbnail}|
 
 Rinnova il tuo dominio se necessario cliccando `...`{.action} a destra dello schermo e poi `Rinnova il servizio`{.action}.
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-e attendi fino a 48 ore (tempo di propagazione dovuto alle modifiche apportate ai [server DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns)).
+e attendi fino a 48 ore (tempo di propagazione dovuto alle modifiche apportate ai [server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#capire-il-concetto-di-dns)).
 
 ### Step 2: verifica i server DNS
 
-Per verificare la validità dei tuoi [server DNS](../../domains/generalites-serveurs-dns/), clicca in alto a sinistra sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sui `domini`{.action} e poi sul dominio del tuo sito.
+Per verificare la validità dei tuoi [server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/), clicca in alto a sinistra sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sui `domini`{.action} e poi sul dominio del tuo sito.
 
 #### Scenario 1: nessuna anomalia sui server DNS
 
@@ -82,7 +82,7 @@ Un avviso nella scheda `Zona DNS`{.action} indica che i server DNS utilizzati da
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Modificare i server DNS seguendo le istruzioni di [questa guida](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns) in modo che siano identici agli obiettivi di record di tipo `NS` nella `Zona DNS`{.action}.
+Modificare i server DNS seguendo le istruzioni di [questa guida](../../domains/web_hosting_gestisci_il_tuo_server_dns/#modifier-les-serveurs-dns) in modo che siano identici agli obiettivi di record di tipo `NS` nella `Zona DNS`{.action}.
 
 Attendi fino a 48 ore (tempo di propagazione delle modifiche dei `server DNS`{.action}).
 
@@ -94,7 +94,7 @@ Attendi fino a 48 ore (tempo di propagazione delle modifiche dei `server DNS`{.a
 >
 > prima di effettuare qualsiasi operazione, contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/fr/).
 >
-> È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
+> È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](../../domains/editer-ma-zone-dns/#capire-il-concetto-di-dns). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
 >
 
 #### Scenario 3: nella zona DNS non sono presenti record di tipo NS
