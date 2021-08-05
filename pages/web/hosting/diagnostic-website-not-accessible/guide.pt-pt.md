@@ -6,11 +6,15 @@ section: Diagnóstico
 Order: 1
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 16/07/2021**
 
 ## Objetivo
 
-Em caso de inacessibilidade do seu website, podem ocorrer várias reações de erro. Os exemplos abaixo indicam uma configuração errada dos seus [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais](#aller-plus-loin)?):
+Em caso de inacessibilidade do seu website, podem ocorrer várias reações de erro. Os exemplos abaixo indicam uma configuração errada dos seus [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais](#gofurther)?):
 
 Browser | Mensagem de Erro|
 \|-|---|
@@ -25,7 +29,7 @@ Browser | Mensagem de Erro|
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#aller-plus-loin)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
 >
 
 ## Requisitos
@@ -66,7 +70,7 @@ Verifique os servidores indicados no separador `Servidores DNS`{.action}:
 
 ![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
 
-Se forem idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}, consulte [o passo 3](#etape3):
+Se forem idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}, consulte [o passo 3](#step3):
 
 ![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
@@ -111,7 +115,7 @@ De seguida, clique em `Reiniciar a minha zona DNS`{.action} e selecione `Não, m
 
 Aguarde até 24 horas (tempo máximo de propagação das alterações na `Zona DNS`{.action}).
 
-### Etapa 3: verificar a zona DNS <a name="etape3"></a>
+### Etapa 3: verificar a zona DNS <a name="step3"></a>
 
 Nesta etapa, vai encontrar o endereço IP do seu alojamento e adicioná-lo à sua `Zona DNS`{.action}.
 
@@ -129,7 +133,7 @@ De seguida, aceda à [Zona DNS](../../domains/editer-ma-zone-dns/#editer-la-zone
 
 Aguarde no máximo 24 horas (atraso na propagação das alterações na `Zona DNS`{.action}).
 
-## Quer saber mais? <a name="aller-plus-loin"></a>
+## Quer saber mais? <a name="gofurther"></a>
 
 [Resolver o erro "Site não instalado"](../erreur-site-non-installe/)
 

@@ -6,11 +6,15 @@ section: "Diagnóstico"
 Order: 1
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 **Última actualización: 16/07/2021**
 
 ## Objetivo
 
-En caso de que su sitio web no sea accesible, puede haber varios errores en su navegador. Los siguientes ejemplos indican una configuración errónea de sus [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) o un dominio suspendido (si su sitio no muestra uno de los mensajes de error descritos aquí, consulte la sección [Más](#aller-plus-loin)):
+En caso de que su sitio web no sea accesible, puede haber varios errores en su navegador. Los siguientes ejemplos indican una configuración errónea de sus [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) o un dominio suspendido (si su sitio no muestra uno de los mensajes de error descritos aquí, consulte la sección [Más](#gofurther)):
 
 |Navegador|Mensaje de error|
 |-|---|
@@ -25,7 +29,7 @@ En caso de que su sitio web no sea accesible, puede haber varios errores en su n
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#aller-plus-loin) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
 >
 
 ## Requisitos
@@ -36,7 +40,7 @@ En caso de que su sitio web no sea accesible, puede haber varios errores en su n
 
 ## Procedimiento
 
-### 1\. comprobar la validez de su dominio
+### Etapa 1: comprobar la validez de su dominio
 
 > [!warning]
 >
@@ -56,7 +60,7 @@ Renueve su dominio si es necesario a través del botón `..`{.action} a la derec
 
 Espere hasta un máximo de 48 horas (plazo de propagación tras los cambios asociados a los [servidores DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns)).
 
-### 2\. comprobar los servidores DNS
+### Etapa 2: comprobar los servidores DNS
 
 Para comprobar la validez de sus [servidores DNS](../../domains/generalites-serveurs-dns/), haga clic en [Dominios](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) y seleccione el dominio en la parte superior izquierda del `área de cliente de OVHcloud`{.action}.
 
@@ -66,7 +70,7 @@ Compruebe los servidores indicados en la pestaña `Servidores DNS`{.action}:
 
 ![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
 
-Si son idénticos a los objetivos de las entradas de tipo `NS` en la `zona DNS`{.action}, vaya [al paso 3](#etape3):
+Si son idénticos a los objetivos de las entradas de tipo `NS` en la `zona DNS`{.action}, vaya [al paso 3](#step3):
 
 ![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
@@ -111,7 +115,7 @@ A continuación, haga clic en `Restaurar mi zona DNS`{.action} y seleccione `No.
 
 Espere hasta 24 horas (plazo de propagación de los cambios en la `zona DNS`{.action}).
 
-### 3\. comprobar la zona DNS <a name="etape3"></a>
+### Etapa 3: comprobar la zona DNS <a name="step3"></a>
 
 En esta etapa, accederá a la dirección IP de su alojamiento y la añadirá a su `zona DNS`{.action}.
 
@@ -129,7 +133,7 @@ A continuación, cópiela en la [zona DNS](../../domains/editer-ma-zone-dns/#edi
 
 Espere hasta un máximo de 24 horas (plazo de propagación de los cambios en la `zona DNS`{.action}).
 
-## Más información <a name="aller-plus-loin"></a>
+## Más información <a name="gofurther"></a>
 
 [Resolver el error "Sitio no instalado"](../erreur-site-non-installe/)
 
@@ -143,4 +147,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/fr/support-levels/).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

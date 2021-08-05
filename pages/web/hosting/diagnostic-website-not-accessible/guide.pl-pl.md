@@ -1,16 +1,20 @@
 ---
 title: "Co zrobić, jeśli moja strona jest niedostępna?"
-slug: błąd-serwer-niedostępny
+slug: blad-serwer-niedostepny
 excerpt: "Zdiagnozuj przyczyny niedostępności Twojej strony WWW"
 section: Diagnostyka
 Order: 1
 ---
 
-**Ostatnia aktualizacja z dnia 16-07-2021**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 16/07/2021**
 
 ## Wprowadzenie
 
-W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce kilka zwrotów błędów. Poniższe przykłady wskazują na nieprawidłową konfigurację Twoich [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) lub domeny zawieszonej (jeśli Twoja strona nie wyświetla żadnego z komunikatów o błędzie opisanych tutaj, sprawdź sekcję [Sprawdź również](#aller-plus-loin)):
+W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce kilka zwrotów błędów. Poniższe przykłady wskazują na nieprawidłową konfigurację Twoich [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) lub domeny zawieszonej (jeśli Twoja strona nie wyświetla żadnego z komunikatów o błędzie opisanych tutaj, sprawdź sekcję [Sprawdź również](#gofurther)):
 
 |Przeglądarka|Komunikat błędu|
 \|-|---|
@@ -25,7 +29,7 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#aller-plus-loin) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -66,7 +70,7 @@ Sprawdź serwery podane w zakładce `Serwery DNS`{.action}:
 
 ![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
 
-Jeśli są identyczne z celami wpisów typu `NS` w `strefie DNS`{.action}, przejdź do [etapu trzeciego](#etape3):
+Jeśli są identyczne z celami wpisów typu `NS` w `strefie DNS`{.action}, przejdź do [etapu trzeciego](#step3):
 
 ![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
@@ -111,7 +115,7 @@ Następnie kliknij `Zresetuj strefę DNS`{.action} i wybierz `Nie, ale chcę zre
 
 Odczekaj maksymalnie 24 godziny (czas propagacji zmian w `strefie DNS`{.action}).
 
-### Etap 3: sprawdź strefę DNS <a name="etape3"></a>
+### Etap 3: sprawdź strefę DNS <a name="step3"></a>
 
 Na tym etapie odnajdziesz adres IP Twojego hostingu, po czym dodaj go do Twojej `strefy DNS`{.action}.
 
@@ -129,7 +133,7 @@ Następnie przenieś domenę do [strefy DNS](../../domains/editer-ma-zone-dns/#e
 
 Odczekaj maksymalnie 24 godziny (czas propagacji zmian w `strefie DNS`{.action}).
 
-## Sprawdź <a name="aller-plus-loin"></a>
+## Sprawdź <a name="gofurther"></a>
 
 [Usunięcie błędu "Strona nie została zainstalowana"](../erreur-site-non-installe/)
 

@@ -1,16 +1,20 @@
 ---
 title: "Cosa fare se il tuo sito è inaccessibile?"
 slug: errore-server-inaccessibile
-excerpt: Diagnostica le cause dell'inaccessibilità del tuo sito
+excerpt: "Diagnostica le cause dell'inaccessibilità del tuo sito"
 section: Diagnostica
 Order: 1
 ---
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
 **Ultimo aggiornamento: 16/07/2021**
 
 ## Obiettivo
 
-In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi errori. Gli esempi che seguono indicano una configurazione errata dei tuoi [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) o un dominio sospeso (se il tuo sito non mostra uno dei messaggi di errore descritti qui, consulta la sezione [Spingiti oltre](#aller-plus-loin)):
+In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi errori. Gli esempi che seguono indicano una configurazione errata dei tuoi [DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) o un dominio sospeso (se il tuo sito non mostra uno dei messaggi di errore descritti qui, consulta la sezione [Spingiti oltre](#gofurther)):
 
 |Browser€ Messaggio di errore|
 \|-|---|
@@ -25,7 +29,7 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#aller-plus-loin) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
 >
 
 ## Prerequisiti
@@ -66,7 +70,7 @@ Verifica i server indicati nella scheda `Server DNS`{.action}:
 
 ![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
 
-Se sono identici agli obiettivi degli record di tipo `NS` nella `Zona DNS`{.action}, passa allo Step [3](#etape3):
+Se sono identici agli obiettivi degli record di tipo `NS` nella `Zona DNS`{.action}, passa allo Step [3](#step3):
 
 ![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
@@ -111,7 +115,7 @@ Clicca su `Reimposta la mia zona DNS`{.action} e seleziona `No, ma voglio reiniz
 
 Attendi fino a 24 ore (tempo necessario alla propagazione delle modifiche nella `Zona DNS`{.action}).
 
-### Step 3: verifica la zona DNS <a name="etape3"></a>
+### Step 3: verifica la zona DNS <a name="step3"></a>
 
 In questo step, visualizzerai l'indirizzo IP del tuo hosting e lo aggiungerai alla tua `Zona DNS`{.action}.
 
@@ -129,7 +133,7 @@ e riportala nella [Zona DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dn
 
 e attendi fino a 24 ore (tempo necessario alla propagazione delle modifiche nella `Zona DNS`{.action}).
 
-## Spingiti oltre <a name="aller-plus-loin"></a>
+## Per saperne di più <a name="gofurther"></a>
 
 [Risolvere l'errore "Sito non installato"](../erreur-site-non-installe/)
 
@@ -143,4 +147,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](https://www.ovhcloud.com/fr/support-levels/).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
