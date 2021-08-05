@@ -3,7 +3,7 @@ title: 'Qué hacer si un alojamiento ha sido desactivado por seguridad'
 slug: sitio-web-cerrado-por-hack
 excerpt: 'Cómo actuar si su alojamiento web ha sido desactivado por motivos de seguridad'
 section: Diagnóstico
-order: 1
+order: 7
 ---
 
 **Última actualización: 05/05/2020**

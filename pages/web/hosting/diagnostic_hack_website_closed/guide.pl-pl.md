@@ -3,7 +3,7 @@ title: 'Działania do wykonania w przypadku blokady hostingu z powodu włamania'
 slug: blokada-hostingu-z-powodu-wlamania
 excerpt: 'Poznaj dobre praktyki dotyczące bezpieczeństwa na hostingu'
 section: Diagnostyka
-order: 1
+order: 7
 ---
 
 **Ostatnia aktualizacja z dnia 28-01-2019**
