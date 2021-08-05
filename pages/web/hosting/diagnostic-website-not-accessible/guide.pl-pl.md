@@ -3,6 +3,7 @@ title: "Co zrobić, jeśli moja strona jest niedostępna?"
 slug: błąd-serwer-niedostępny
 excerpt: "Zdiagnozuj przyczyny niedostępności Twojej strony WWW"
 section: Diagnostyka
+Order: 1
 ---
 
 **Ostatnia aktualizacja z dnia 16-07-2021**

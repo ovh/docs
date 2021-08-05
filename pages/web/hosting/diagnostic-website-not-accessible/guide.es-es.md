@@ -2,7 +2,8 @@
 title: "¿Qué hacer si mi sitio web no está accesible?"
 slug: error-servidor-inaccesible
 excerpt: "Diagnóstico de las causas de la inaccesibilidad de su sitio web"
-section: Diagnóstico
+section: "Diagnóstico"
+Order: 1
 ---
 
 **Última actualización: 16/07/2021**
