@@ -18,12 +18,12 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 
 |Przeglądarka|Komunikat błędu|
 |-|---|
-|Chrome:<br>"Ta strona jest niedostępna"|![cantbereachd_chrome](images/cantbereached_chrome.png){.thumbnail}|
-|Firefox:<br>"Nie możemy znaleźć tej strony. "|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
-|Edge:<br>"Przepraszam, nie można wejść na tę stronę"|![cantbereachd_edge](images/cantbereached_edge.png){.thumbnail}|
+|Chrome:<br>"Ta witryna jest nieosiągalna"|![cantbereachd_chrome](images/cantbereached_chrome.png){.thumbnail}|
+|Firefox:<br>"Niestety, nie udało się odnaleźć tej strony"|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
+|Edge:<br>"Niestety… nie można przejść do tej strony"|![cantbereachd_edge](images/cantbereached_edge.png){.thumbnail}|
 |Safari:<br>"Safari nie może znaleźć serwera"|![cantbereachd_safari](images/cantbereached_safari.png){.thumbnail}|
 
-**Dowiedz się, jak usunąć błędy związane z plikiem "Ta strona jest niedostępna"**
+**Dowiedz się, jak usunąć błędy związane z plikiem "Ta witryna jest nieosiągalna"**
 
 > [!warning]
 >

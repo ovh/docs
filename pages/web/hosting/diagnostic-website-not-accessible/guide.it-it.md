@@ -21,7 +21,7 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 |Chrome:<br>"Impossibile raggiungere il sito"![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
 |Firefox :<br>"Uhm… non riusciamo a trovare questo sito."![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
 |Edge:<br>"Impossibile raggiungere questa pagina"![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
-|Safari :<br>"Safari non riesce a trovare il server"![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
+|Safari :<br>"Safari non trova il server"![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
 
 **Scopri come risolvere gli errori del tipo "Impossibile raggiungere il sito"**
 

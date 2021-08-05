@@ -16,14 +16,14 @@ Order: 1
 
 Em caso de inacessibilidade do seu website, podem ocorrer várias reações de erro. Os exemplos abaixo indicam uma configuração errada dos seus [DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#compreender-a-nocao-de-dns) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais](#gofurther)?):
 
-Browser|Mensagem de Erro|
+|Browser|Mensagem de Erro|
 |-|---|
-|Chrome:<br>"Este site está inacessível" | ![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
-|Firefox:<br>"Hmm, não conseguimos encontrar este site. " | ![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
-|Edge:<br>"Pedimos desculpa, não é possível aceder a esta página" | ![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
-|Safari:<br>"Safari não consegue encontrar o servidor" | ![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
+|Chrome:<br>"Não é possível acessar esse site"|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
+|Firefox:<br>"Hum. Estamos a ter problemas em encontrar esse site."|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
+|Edge:<br>"Hum… Não consigo chegar a esta página"|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
+|Safari:<br>"O Safari não pode encontrar o servidor"|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
 
-**Saiba como corrigir erros do tipo "Este site está inacessível"**
+**Saiba como corrigir erros do tipo "Não é possível acessar esse site"**
 
 > [!warning]
 >
