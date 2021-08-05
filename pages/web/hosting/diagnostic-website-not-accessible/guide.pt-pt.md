@@ -57,7 +57,7 @@ Renove o domínio se necessário através do botão `...`{.action} à direita do
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-Aguarde no máximo 48 horas (tempo de propagação após as alterações associadas aos [servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#compreender-a-nocao-de-dns)).
+Uma vez terminada a renovação da sua oferta, o seu website estará disponível num prazo máximo de 48 horas.
 
 ### Etapa 2: verificar os servidores DNS
 
@@ -77,7 +77,7 @@ Se forem idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}, 
 
 Um aviso no separador `Zona DNS`{.action} indica que os servidores DNS utilizados pelo seu domínio não estão indicados na sua zona. Aqui, podem ocorrer dois cenários:
 
-- Na frase "Está a utilizar os seguintes servidores DNS: ", os servidores indicados são do tipo "ns **?** .ovh.net" e "DNS **?** .ovh.net" (substituir "**?** " por qualquer número):
+- Na frase "Está a utilizar os seguintes servidores DNS: ", os servidores indicados são do tipo "ns **?** .ovh.net" e "dns **?** .ovh.net" (substituir "**?**" por qualquer número):
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
@@ -126,7 +126,7 @@ No separador `Informações gerais`{.action}, copie o endereço IPV4 e/ou IPV6 d
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-De seguida, aceda à [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) do seu domínio alterando ou criando uma ou mais entradas de tipo `A`.
+De seguida, aceda à [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio_1) do seu domínio alterando ou criando uma ou mais entradas de tipo `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
@@ -134,16 +134,14 @@ Aguarde no máximo 24 horas (atraso na propagação das alterações na `Zona DN
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Resolver o erro "Site não instalado"](../erreur-site-non-installe/)
-
-[Como diagnosticar uma página branca?](../comment-diagnostiquer-page-blanche/)
+[Resolver o erro “Site não instalado”](../alojamento_web_erro_de_site_nao_instalado/)
 
 [O que fazer em caso de erro 500 Internal Server Error?](../erreur-500-internal-server-error/)
 
-[Resolver os erros mais frequentes associados aos módulos 1 clique](../erreurs-frequentes-modules-en-1-clic/)
+[Resolver os erros mais frequentes associados aos módulos 1 clique](../erros-frequentes-modulos-em-1-clique/)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/fr/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

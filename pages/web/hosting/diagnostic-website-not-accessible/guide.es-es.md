@@ -126,7 +126,7 @@ En la pestaña `Información general`{.action}, copie la dirección IPV4 y/o IPV
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-A continuación, cópiela en la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de su dominio modificando o creando uno o más registros de tipo `A`.
+A continuación, cópiela en la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-su-dominio_1) de su dominio modificando o creando uno o más registros de tipo `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
@@ -134,13 +134,11 @@ Su sitio web estará disponible en un plazo máximo de 24 horas.
 
 ## Más información <a name="gofurther"></a>
 
-[Resolver el error "Sitio no instalado"](../erreur-site-non-installe/)
+[Resolver el error "Sitio no instalado"](../web_hosting_error_sitio_no_instalado/)
 
-[¿Cómo diagnosticar una página en blanco?](../comment-diagnostiquer-page-blanche/)
+[¿Qué hacer en caso de error 500 Internal Server Error?](../error-500-internal-server-error/)
 
-[¿Qué hacer en caso de error 500 Internal Server Error?](../erreur-500-internal-server-error/)
-
-[Resolver los errores más frecuentes asociados a los módulos en 1 clic](../erreurs-frequentes-modules-en-1-clic/)
+[Resolver los errores más frecuentes asociados a los módulos en 1 clic](../errores-frecuentes-modulos-en-1-clic/)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 

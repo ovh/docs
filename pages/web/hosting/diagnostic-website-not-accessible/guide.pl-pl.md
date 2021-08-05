@@ -53,11 +53,11 @@ Aby sprawdzić poprawność subskrypcji Twojej domeny, w prawym górnym rogu Pan
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
-Odnów Twoją domenę, jeśli to konieczne, za pomocą przycisku `..`{.action}. po prawej stronie ekranu, a następnie `Odnów usługę`{.action}.
+Odnów Twoją domenę, jeśli to konieczne, za pomocą przycisku `...`{.action}. po prawej stronie ekranu, a następnie `Odnów usługę`{.action}.
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-Odczekaj maksymalnie 48 godziny (czas propagacji po zmianach związanych z [serwerami DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zrozumienie-pojecia-dns)).
+Po odnowieniu oferty Twoja strona będzie dostępna w ciągu maksymalnie 48 godzin.
 
 ### Etap 2: sprawdź serwery DNS
 
@@ -126,7 +126,7 @@ W zakładce `Informacje ogólne`{.action} skopiuj adres IPV4 i/lub IPV6 Twojej d
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-Następnie przenieś domenę do [strefy DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
+Następnie przenieś domenę do [strefy DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-domeny_1), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
@@ -134,16 +134,16 @@ Odczekaj maksymalnie 24 godziny (czas propagacji zmian w `Strefa DNS`{.action}).
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Usunięcie błędu "Strona nie została zainstalowana"](../erreur-site-non-installe/)
+[Usunięcie błędu “Strona nie została zainstalowana”](../hosting_www_blad_dotyczacy_nie_zainstalowanej_strony/)
 
-[Jak zdiagnozować białą stronę?](../comment-diagnostiquer-page-blanche/)
+[Przyczyny wyświetlania się “białej strony”](../hosting_www_jak_sprawdzic_przyczyne_wyswietlania_sie_bialej_strony/)
 
-[Co zrobić w przypadku błędu 500 Internal Server Error?](../erreur-500-internal-server-error/)
+[Co zrobić w przypadku błędu 500 Internal Server Error?](../błąd-500-internal-server-error/)
 
-[Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](../erreurs-frequentes-modules-en-1-clic/)
+[Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](../bledy-frameworki-moduly-za-1-kliknieciem/)
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/fr/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

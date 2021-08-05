@@ -126,7 +126,7 @@ Nella scheda `Informazioni generali`{.action}, copia l'indirizzo IPV4 e/o IPV6 d
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-e riportala nella [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) del tuo dominio, modificandola o creando uno o più record di tipo `A`.
+e riportala nella [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1) del tuo dominio, modificandola o creando uno o più record di tipo `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
@@ -134,16 +134,16 @@ e attendi fino a 24 ore (tempo necessario alla propagazione delle modifiche nell
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Risolvere l'errore "Sito non installato"](../erreur-site-non-installe/)
+[Risolvere l'errore "Sito non installato"](../errore-sito-non-installato/)
 
-[Come diagnosticare una pagina bianca?](../comment-diagnostiquer-page-blanche/)
+[Web hosting come fai a diagnosticare una pagina bianca?](../web_hosting_come_fai_a_diagnosticare_una_pagina_bianca/)
 
-[Cosa fare in caso di errore 500 Internal Server Error?](../erreur-500-internal-server-error/)
+[Cosa fare in caso di errore 500 Internal Server Error?](../errore-500-internal-server-error/)
 
-[Risolvere gli errori più frequenti associati ai moduli in 1 click](../erreurs-frequentes-modules-en-1-clic/)
+[Risolvere gli errori più frequenti associati ai moduli in 1 click](../errori-frequenti-moduli-in-1-click/)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, etc ...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](https://www.ovhcloud.com/fr/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

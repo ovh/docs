@@ -31,7 +31,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 ## Prérequis
 
 - Avoir la gestion des serveurs et de la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) de votre domaine
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
 
@@ -45,7 +45,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 > De ce fait, nous vous recommandons fortement d'activer le [renouvellement automatique](../../billing/renouvellement-automatique-ovh/#en-pratique) sur l'ensemble de vos abonnements OVHcloud.
 >
 
-Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur votre nom en haut à droite de votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
+Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur votre nom en haut à droite de votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
@@ -57,7 +57,7 @@ Suite à ce renouvellement, votre site sera accessible sous 48 heures maximum.
 
 ### Étape 2 : vérifier les serveurs DNS
 
-Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serveurs-dns/), cliquez en haut à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
+Pour vérifier la validité de vos [serveurs DNS](../../domains/generalites-serveurs-dns/), cliquez en haut à gauche de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
 
 #### Scénario 1 : aucune anomalie sur les serveurs DNS
 
@@ -81,13 +81,13 @@ Modifiez les serveurs DNS en suivant les instructions de [ce guide](../../domain
 
 Votre site sera de nouveau accessible sous 48 heures maximum.
 
-- Sous la phrase « Vous utilisez actuellement les serveurs DNS suivants : », les serveurs indiqués ne sont pas du type « ns **?** .ovh.net » et « dns **?** .ovh.net ».
+- Sous la phrase « Vous utilisez actuellement les serveurs DNS suivants :», les serveurs indiqués ne sont pas du type « ns **?** .ovh.net » et « dns **?** .ovh.net ».
 
 ![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}
 
 > [!warning]
 >
-> Dans cette situation, contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) avant toute manipulation.
+> Dans cette situation, contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/) avant toute manipulation.
 >
 > Il est en effet possible que les serveurs DNS utilisés par votre nom de domaine soient fonctionnels et que le problème d'accès à votre site soit lié à une entrée manquante ou erronée dans la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns). Toute modification des serveurs DNS dans cette situation peut rendre vos adresses e-mails ou d'autres applications en ligne indisponibles.
 >
@@ -116,7 +116,7 @@ Dans cette étape, vous allez retrouver l'adresse IP de votre hébergement, puis
 
 Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou géré par une tierce personne, contactez l'hébergeur ou le prestataire concerné.
 
-Si votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovh.com/fr/hebergement-web/), cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'offre concernée.
+Si votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovh.com/ca/fr/hebergement-web/), cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'offre concernée.
 
 Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou IPV6 de votre domaine.
 
@@ -138,8 +138,8 @@ Votre site sera de nouveau accessible sous 24 heures maximum.
 
 [Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](../erreurs-frequentes-modules-en-1-clic/)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
