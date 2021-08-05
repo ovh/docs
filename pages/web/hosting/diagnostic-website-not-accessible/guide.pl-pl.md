@@ -34,9 +34,8 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovh.com/fr/domaines/)
-- Zarządzanie serwerami i [strefą DNS](../../domains/editer-ma-zone-dns/#zrozumienie-pojecia-dns) domeny
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Zarządzanie serwerami i [strefą DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns) domeny
+- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -47,7 +46,7 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 > Odnowienie usług należy do Ciebie.<br>
 > OVHcloud, jako dostawca hostingu, ma obowiązek definitywnie usunąć usługi (domeny, hosting, e-maile, itp.), które nie zostały odnowione na czas, jak również wszystkie zawarte w nich dane.
 >
-> W związku z tym zalecamy włączenie automatycznego[ ](../../billing/renouvellement-automatique-ovh/#en-pratique) odnowienia wszystkich Twoich subskrypcji OVHcloud.
+> W związku z tym zalecamy włączenie automatycznego[ ](../../billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#w-praktyce) odnowienia wszystkich Twoich subskrypcji OVHcloud.
 >
 
 Aby sprawdzić poprawność subskrypcji Twojej domeny, w prawym górnym rogu Panelu klienta kliknij Twoją nazwę, aby wyświetlić menu PPM, następnie `Produkty i usługi`{.action}.
@@ -62,7 +61,7 @@ Odczekaj maksymalnie 48 godziny (czas propagacji po zmianach związanych z [serw
 
 ### Etap 2: sprawdź serwery DNS
 
-Aby sprawdzić poprawność Twoich [serwerów DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/), w lewym górnym rogu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) kliknij `Domeny`{.action}, a następnie domenę na Twojej stronie.
+Aby sprawdzić poprawność Twoich [serwerów DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/), w lewym górnym rogu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij `Domeny`{.action}, a następnie domenę na Twojej stronie.
 
 #### Scenariusz 1: brak anomalii na serwerach DNS
 
@@ -70,7 +69,7 @@ Sprawdź serwery podane w zakładce `Serwery DNS`{.action}:
 
 ![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
 
-Jeśli są identyczne z celami wpisów typu `NS` w `strefie DNS`{.action}, przejdź do [etapu trzeciego](#step3):
+Jeśli są identyczne z celami wpisów typu `NS` w `Strefa DNS`{.action}, przejdź do [etapu trzeciego](#step3):
 
 ![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
@@ -82,7 +81,7 @@ Ostrzeżenie w zakładce `Strefa DNS`{.action} wskazuje, że serwery DNS używan
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Zmień serwery DNS zgodnie z instrukcjami zawartymi w [tym przewodniku](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#modifier-les-serveurs-dns), aby były one identyczne z celami wpisów typu `NS` w `strefie DNS`{.action}.
+Zmień serwery DNS zgodnie z instrukcjami zawartymi w [tym przewodniku](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#modifier-les-serveurs-dns), aby były one identyczne z celami wpisów typu `NS` w `Strefa DNS`{.action}.
 
 Odczekaj maksymalnie 48 godziny (czas propagacji zmian `serwerów DNS`{.action}).
 
@@ -92,14 +91,14 @@ Odczekaj maksymalnie 48 godziny (czas propagacji zmian `serwerów DNS`{.action})
 
 > [!warning]
 >
-> W takiej sytuacji przed podjęciem jakichkolwiek działań skontaktuj się z webmasterem lub [partnerami OVHcloud](https://partner.ovhcloud.com/fr/).
+> W takiej sytuacji przed podjęciem jakichkolwiek działań skontaktuj się z webmasterem lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 >
-> Możliwe, że serwery DNS używane przez Twoją domenę działają i że problem z dostępem do Twojej strony jest związany z brakującym lub nieprawidłowym wpisem w [strefie DNS](../../domains/editer-ma-zone-dns/#zrozumienie-pojecia-dns). Każda zmiana serwerów DNS może spowodować niedostępność Twoich kont e-mail lub innych aplikacji online.
+> Możliwe, że serwery DNS używane przez Twoją domenę działają i że problem z dostępem do Twojej strony jest związany z brakującym lub nieprawidłowym wpisem w [strefie DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns). Każda zmiana serwerów DNS może spowodować niedostępność Twoich kont e-mail lub innych aplikacji online.
 >
 
 #### Scenariusz 3: w strefie DNS nie pojawia się żaden wpis typu NS
 
-W `strefie DNS`{.action} Twojej domeny nie ma wpisu typu `NS`:
+W `Strefa DNS`{.action} Twojej domeny nie ma wpisu typu `NS`:
 
 ![srv_dns_missing](images/srv_dns_missing.png){.thumbnail}
 
@@ -113,7 +112,7 @@ Następnie kliknij `Zresetuj strefę DNS`{.action} i wybierz `Nie, ale chcę zre
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
-Odczekaj maksymalnie 24 godziny (czas propagacji zmian w `strefie DNS`{.action}).
+Odczekaj maksymalnie 24 godziny (czas propagacji zmian w `Strefa DNS`{.action}).
 
 ### Etap 3: sprawdź strefę DNS <a name="step3"></a>
 
@@ -121,17 +120,17 @@ Na tym etapie odnajdziesz adres IP Twojego hostingu, po czym dodaj go do Twojej 
 
 Jeśli Twoja strona jest zainstalowana poza infrastrukturą OVHcloud lub przez osobę trzecią, skontaktuj się z dostawcą lub dostawcą usług hostingowych.
 
-Jeśli Twoja strona jest zainstalowana w jednej z naszych [ofert Web Cloud](https://www.ovh.com/fr/hebergement-web/), kliknij zakładkę `Hosting`{.action} po lewej stronie ekranu, a następnie wybierz odpowiednią ofertę.
+Jeśli Twoja strona jest zainstalowana w jednej z naszych [ofert Web Cloud](https://www.ovh.pl/hosting/), kliknij zakładkę `Hosting`{.action} po lewej stronie ekranu, a następnie wybierz odpowiednią ofertę.
 
 W zakładce `Informacje ogólne`{.action} skopiuj adres IPV4 i/lub IPV6 Twojej domeny.
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-Następnie przenieś domenę do [strefy DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
+Następnie przenieś domenę do [strefy DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
-Odczekaj maksymalnie 24 godziny (czas propagacji zmian w `strefie DNS`{.action}).
+Odczekaj maksymalnie 24 godziny (czas propagacji zmian w `Strefa DNS`{.action}).
 
 ## Sprawdź również <a name="gofurther"></a>
 
@@ -143,7 +142,7 @@ Odczekaj maksymalnie 24 godziny (czas propagacji zmian w `strefie DNS`{.action})
 
 [Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](../erreurs-frequentes-modules-en-1-clic/)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/fr/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/fr/support-levels/).
 

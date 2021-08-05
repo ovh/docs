@@ -34,9 +34,8 @@ Em caso de inacessibilidade do seu website, podem ocorrer várias reações de e
 
 ## Requisitos
 
-- Ter um [domínio](https://www.ovh.com/fr/domaines/)
-- Ter a gestão dos servidores e da [zona DNS](../../domains/editer-ma-zone-dns/#compreender-a-nocao-de-dns) do seu domínio
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Ter a gestão dos servidores e da [zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns) do seu domínio
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
@@ -47,7 +46,7 @@ Em caso de inacessibilidade do seu website, podem ocorrer várias reações de e
 > A renovação das suas ofertas é da sua inteira responsabilidade.<br>
 > A OVHcloud, enquanto alojador, tem a obrigação de eliminar definitivamente os serviços (domínios, alojamentos, e-mails, etc.) que não foram renovados a tempo, bem como o conjunto dos dados que contêm.
 >
-> Assim, recomendamos vivamente que ative a [renovação automática](../../billing/renouvellement-automatique-ovh/#en-pratique) em todas as subscrições da OVHcloud.
+> Assim, recomendamos vivamente que ative a [renovação automática](../../billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#instrucoes) em todas as subscrições da OVHcloud.
 >
 
 Para verificar a validade da assinatura relativa ao seu domínio, clique no seu nome (canto superior direito) no menu contextual e, a seguir, em `Produtos e serviços`{.action}.
@@ -62,7 +61,7 @@ Aguarde no máximo 48 horas (tempo de propagação após as alterações associa
 
 ### Etapa 2: verificar os servidores DNS
 
-Para verificar a validade dos seus [servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/), clique no canto superior esquerdo da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
+Para verificar a validade dos seus [servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/), clique no canto superior esquerdo da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
 
 #### Cenário 1: nenhuma anomalia nos servidores DNS
 
@@ -70,7 +69,7 @@ Verifique os servidores indicados no separador `Servidores DNS`{.action}:
 
 ![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
 
-Se forem idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}, consulte [o passo 3](#step3):
+Se forem idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}, consulte o [Etapa 3](#step3):
 
 ![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
@@ -92,9 +91,9 @@ Aguarde no máximo 48 horas (prazo de propagação das alterações dos `Servido
 
 > [!warning]
 >
-> Nesta situação, contacte o seu webmaster ou os [parceiros OVHcloud](https://partner.ovhcloud.com/fr/) antes de qualquer manipulação.
+> Nesta situação, contacte o seu webmaster ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/) antes de qualquer manipulação.
 >
-> É possível que os servidores DNS utilizados pelo seu domínio estejam funcionais e que o problema de acesso ao seu site esteja associado a uma entrada inexistente ou errada na [zona DNS](../../domains/editer-ma-zone-dns/#compreender-a-nocao-de-dns). Se alterar os servidores DNS nesta situação, os seus endereços de e-mail ou outras aplicações online poderão ficar indisponíveis.
+> É possível que os servidores DNS utilizados pelo seu domínio estejam funcionais e que o problema de acesso ao seu site esteja associado a uma entrada inexistente ou errada na [zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns). Se alterar os servidores DNS nesta situação, os seus endereços de e-mail ou outras aplicações online poderão ficar indisponíveis.
 >
 
 #### Cenário 3: nenhuma entrada do tipo NS aparece na zona DNS
@@ -121,13 +120,13 @@ Nesta etapa, vai encontrar o endereço IP do seu alojamento e adicioná-lo à su
 
 Se o seu site está alojado fora da infraestrutura da OVHcloud ou por um terceiro, contacte o fornecedor de alojamento ou o fornecedor em causa.
 
-Se o seu site está alojado numa das nossas [ofertas Web Cloud](https://www.ovh.com/fr/hebergement-web/), clique no separador `Alojamentos`{.action} à esquerda do seu ecrã e, a seguir, na oferta em causa.
+Se o seu site está alojado numa das nossas [ofertas Web Cloud](https://www.ovh.pt/alojamento-partilhado/), clique no separador `Alojamentos`{.action} à esquerda do seu ecrã e, a seguir, na oferta em causa.
 
 No separador `Informações gerais`{.action}, copie o endereço IPV4 e/ou IPV6 do seu domínio.
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-De seguida, aceda à [Zona DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) do seu domínio alterando ou criando uma ou mais entradas de tipo `A`.
+De seguida, aceda à [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) do seu domínio alterando ou criando uma ou mais entradas de tipo `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
@@ -143,7 +142,7 @@ Aguarde no máximo 24 horas (atraso na propagação das alterações na `Zona DN
 
 [Resolver os erros mais frequentes associados aos módulos 1 clique](../erreurs-frequentes-modules-en-1-clic/)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/fr/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/fr/support-levels/).
 

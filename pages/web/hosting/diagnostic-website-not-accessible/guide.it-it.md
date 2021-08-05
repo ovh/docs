@@ -34,9 +34,8 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovh.com/fr/domaines/)
-- Avere la gestione dei server e della [zona DNS](../../domains/editer-ma-zone-dns/#capire-il-concetto-di-dns) del dominio
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avere la gestione dei server e della [zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) del dominio
+- Avere accesso allo [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -47,7 +46,7 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 > Il rinnovo delle tue offerte è sotto la tua completa responsabilità.<br>
 > OVHcloud, in qualità di hosting provider, ha l'obbligo di eliminare definitivamente i servizi (domini, hosting, email, ecc.) che non sono stati rinnovati in tempo utile e tutti i dati che contengono.
 >
-> Per questo motivo, ti consigliamo di attivare il [rinnovo automatico](../../billing/renouvellement-automatique-ovh/#en-pratique) su tutti gli abbonamenti OVHcloud.
+> Per questo motivo, ti consigliamo di attivare il [rinnovo automatico](../../billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#procedura) su tutti gli abbonamenti OVHcloud.
 >
 
 Per verificare la validità dell'abbonamento relativo al tuo dominio, clicca sul tuo nome in alto a destra del tuo Spazio Cliente e poi su `Prodotti e servizi`{.action}.
@@ -62,7 +61,7 @@ e attendi fino a 48 ore (tempo di propagazione dovuto alle modifiche apportate a
 
 ### Step 2: verifica i server DNS
 
-Per verificare la validità dei tuoi [server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/), clicca in alto a sinistra sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) sui `domini`{.action} e poi sul dominio del tuo sito.
+Per verificare la validità dei tuoi [server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/), clicca in alto a sinistra sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) sui `domini`{.action} e poi sul dominio del tuo sito.
 
 #### Scenario 1: nessuna anomalia sui server DNS
 
@@ -70,7 +69,7 @@ Verifica i server indicati nella scheda `Server DNS`{.action}:
 
 ![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
 
-Se sono identici agli obiettivi degli record di tipo `NS` nella `Zona DNS`{.action}, passa allo Step [3](#step3):
+Se sono identici agli obiettivi degli record di tipo `NS` nella `Zona DNS`{.action}, passa allo [Step 3](#step3):
 
 ![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
@@ -92,9 +91,9 @@ Attendi fino a 48 ore (tempo di propagazione delle modifiche dei `server DNS`{.a
 
 > [!warning]
 >
-> prima di effettuare qualsiasi operazione, contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/fr/).
+> prima di effettuare qualsiasi operazione, contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 >
-> È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](../../domains/editer-ma-zone-dns/#capire-il-concetto-di-dns). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
+> È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
 >
 
 #### Scenario 3: nella zona DNS non sono presenti record di tipo NS
@@ -121,13 +120,13 @@ In questo step, visualizzerai l'indirizzo IP del tuo hosting e lo aggiungerai al
 
 Se il tuo sito è ospitato al di fuori dell'infrastruttura OVHcloud o da una terza persona, contatta il provider o il provider interessati.
 
-Se il tuo sito è ospitato su una delle nostre [offerte Web Cloud](https://www.ovh.com/fr/hebergement-web/), clicca sulla scheda `Hosting`{.action} a sinistra e poi sull'offerta corrispondente.
+Se il tuo sito è ospitato su una delle nostre [offerte Web Cloud](https://www.ovh.it/hosting-web/), clicca sulla scheda `Hosting`{.action} a sinistra e poi sull'offerta corrispondente.
 
 Nella scheda `Informazioni generali`{.action}, copia l'indirizzo IPV4 e/o IPV6 del tuo dominio.
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-e riportala nella [Zona DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) del tuo dominio, modificandola o creando uno o più record di tipo `A`.
+e riportala nella [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) del tuo dominio, modificandola o creando uno o più record di tipo `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
@@ -143,7 +142,7 @@ e attendi fino a 24 ore (tempo necessario alla propagazione delle modifiche nell
 
 [Risolvere gli errori più frequenti associati ai moduli in 1 click](../erreurs-frequentes-modules-en-1-clic/)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/fr/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](https://www.ovhcloud.com/fr/support-levels/).
 

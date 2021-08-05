@@ -34,9 +34,8 @@ En caso de que su sitio web no sea accesible, puede haber varios errores en su n
 
 ## Requisitos
 
-- Tener un [dominio](https://www.ovh.com/fr/domaines/).
-- Tener la gestión de los servidores y de la [zona DNS](../../domains/editer-ma-zone-dns/#entender-el-concepto-de-dns) del dominio.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Tener la gestión de los servidores y de la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns) del dominio.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
@@ -47,22 +46,22 @@ En caso de que su sitio web no sea accesible, puede haber varios errores en su n
 > La renovación de sus productos es responsabilidad suya.<br>
 > OVHcloud, como proveedor de hosting, tiene la obligación de eliminar definitivamente los servicios (dominios, alojamientos, correo, etc.) que no se hayan renovado a tiempo, así como todos los datos que contienen.
 >
-> Por lo tanto, le recomendamos que active la [renovación automática](../../billing/renouvellement-automatique-ovh/#en-pratique) en todas sus suscripciones de OVHcloud.
+> Por lo tanto, le recomendamos que active la [renovación automática](../../billing/renovacion-automatica-ovh/#procedimiento) en todas sus suscripciones de OVHcloud.
 >
 
 Para comprobar la validez de la suscripción relativa a su nombre de dominio, haga clic en su nombre en la esquina superior derecha del área de cliente y seleccione `Productos y servicios`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
-Renueve su dominio si es necesario a través del botón `..`{.action} a la derecha de la pantalla y luego `Renovar el servicio`{.action}.
+Renueve su dominio si es necesario a través del botón `...`{.action} a la derecha de la pantalla y luego `Renovar el servicio`{.action}.
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-Espere hasta un máximo de 48 horas (plazo de propagación tras los cambios asociados a los [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#entender-el-concepto-de-dns)).
+Una vez completada la renovación del plan, su sitio web estará disponible en un plazo máximo de 48 horas.
 
 ### Etapa 2: comprobar los servidores DNS
 
-Para comprobar la validez de sus [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/), haga clic en [Dominios](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) y seleccione el dominio en la parte superior izquierda del `área de cliente de OVHcloud`{.action}.
+Para comprobar la validez de sus [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/), haga clic en [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el dominio en la parte superior izquierda del `Dominios`{.action}.
 
 #### Situación 1: no hay anomalías en los servidores DNS
 
@@ -70,7 +69,7 @@ Compruebe los servidores indicados en la pestaña `Servidores DNS`{.action}:
 
 ![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
 
-Si son idénticos a los objetivos de las entradas de tipo `NS` en la `zona DNS`{.action}, vaya [al paso 3](#step3):
+Si son idénticos a los objetivos de las entradas de tipo `NS` en la `Zona DNS`{.action}, vaya al [Etapa 3](#step3):
 
 ![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
@@ -78,60 +77,60 @@ Si son idénticos a los objetivos de las entradas de tipo `NS` en la `zona DNS`{
 
 Una advertencia en la pestaña `Zona DNS`{.action} indica que los servidores DNS utilizados por su dominio no son los indicados en su zona. Existen dos posibles situaciones:
 
-- Bajo la frase "Actualmente utiliza los siguientes servidores DNS: ", los servidores indicados son del tipo "ns **?** .ovh.net" y "dns **?** .ovh.net" (sustituya "**?** " por cualquier número):
+- Bajo la frase "Actualmente utiliza los siguientes servidores DNS:", los servidores indicados son del tipo "ns **?** .ovh.net" y "dns **?** .ovh.net" (sustituya "**?**" por cualquier número):
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Modifique los servidores DNS siguiendo las instrucciones de [esta guía](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#modifier-les-serveurs-dns) para que sean idénticos a los objetivos de los registros de tipo `NS` en la `zona DNS`{.action}.
+Modifique los servidores DNS siguiendo las instrucciones de [esta guía](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns//#cambiar-los-servidores-dns) para que sean idénticos a los objetivos de los registros de tipo `NS` en la `Zona DNS`{.action}.
 
-Espere hasta un máximo de 48 horas (plazo de propagación de los cambios de `servidores DNS`{.action}).
+Su sitio web estará disponible en un plazo máximo de 48 horas.
 
-- Bajo la frase "Actualmente utiliza los siguientes servidores DNS: ", los servidores indicados no son del tipo "ns **?** .ovh.net" y "dns **?** .ovh.net".
+- Bajo la frase "Actualmente utiliza los siguientes servidores DNS:", los servidores indicados no son del tipo "ns **?** .ovh.net" y "dns **?** .ovh.net".
 
 ![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}
 
 > [!warning]
 >
-> En ese caso, contacte con el webmaster o los [partners de OVHcloud](https://partner.ovhcloud.com/fr/) antes de realizar cualquier operación.
+> En ese caso, contacte con el webmaster o los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/) antes de realizar cualquier operación.
 >
-> Es posible que los servidores DNS utilizados por el dominio sean funcionales y que el problema de acceso al sitio web esté relacionado con un registro que no se encuentra o que no está en la [zona DNS](../../domains/editer-ma-zone-dns/#entender-el-concepto-de-dns). Cualquier modificación de los servidores DNS en esta situación puede hacer que sus direcciones de correo u otras aplicaciones en línea no estén disponibles.
+> Es posible que los servidores DNS utilizados por el dominio sean funcionales y que el problema de acceso al sitio web esté relacionado con un registro que no se encuentra o que no está en la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns). Cualquier modificación de los servidores DNS en esta situación puede hacer que sus direcciones de correo u otras aplicaciones en línea no estén disponibles.
 >
 
-#### Situación 3: no aparece ningún registro de tipo NS en la zona DNS.
+#### Situación 3: no aparece ningún registro de tipo NS en la zona DNS
 
-La `zona DNS`{.action} de su dominio no contiene ningún registro de tipo `NS` :
+La `Zona DNS`{.action} de su dominio no contiene ningún registro de tipo `NS`:
 
 ![srv_dns_missing](images/srv_dns_missing.png){.thumbnail}
 
-Haga una copia de seguridad del área actual haciendo clic en el botón `Cambiar al modo de texto`{.action} situado a la derecha de su pantalla:
+Haga una copia de seguridad del área actual haciendo clic en el botón `Editar en modo de texto`{.action} situado a la derecha de su pantalla:
 
 ![change_DNS_zone_change_text_format](images/change_DNS_zone_change_text_format.png){.thumbnail}
 
-Copie y pegue el contenido de su `zona DNS`{.action} en un documento de texto. Guarde el documento de forma local.
+Copie y pegue el contenido de su `Zona DNS`{.action} en un documento de texto. Guarde el documento de forma local.
 
-A continuación, haga clic en `Restaurar mi zona DNS`{.action} y seleccione `No. Sin embargo, quiero restaurar la zona DNS`{.action}. Indique los servidores de correo y de alojamiento y haga clic en `Aceptar`{.action}.
+A continuación, haga clic en `Restaurar mi zona DNS`{.action} y seleccione `No, pero quiero restaurar la zona DNS.`{.action}. Indique los servidores de correo y de alojamiento y haga clic en `Aceptar`{.action}.
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
-Espere hasta 24 horas (plazo de propagación de los cambios en la `zona DNS`{.action}).
+Su sitio web estará disponible en un plazo máximo de 24 horas.
 
 ### Etapa 3: comprobar la zona DNS <a name="step3"></a>
 
-En esta etapa, accederá a la dirección IP de su alojamiento y la añadirá a su `zona DNS`{.action}.
+En esta etapa, accederá a la dirección IP de su alojamiento y la añadirá a su `Zona DNS`{.action}.
 
 Si su sitio web está alojado fuera de la infraestructura de OVHcloud o por un tercero, póngase en contacto con el proveedor o proveedor de alojamiento correspondiente.
 
-Si su sitio web está alojado en uno de nuestros [planes de hosting Cloud](https://www.ovh.com/fr/hebergement-web/), abra la pestaña `Alojamientos`{.action} a la izquierda de su pantalla y seleccione el alojamiento correspondiente.
+Si su sitio web está alojado en uno de nuestros [planes de hosting Cloud](https://www.ovh.es/hosting/), abra la pestaña `Alojamientos`{.action} a la izquierda de su pantalla y seleccione el alojamiento correspondiente.
 
 En la pestaña `Información general`{.action}, copie la dirección IPV4 y/o IPV6 de su dominio.
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-A continuación, cópiela en la [zona DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de su dominio modificando o creando uno o más registros de tipo `A`.
+A continuación, cópiela en la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de su dominio modificando o creando uno o más registros de tipo `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
-Espere hasta un máximo de 24 horas (plazo de propagación de los cambios en la `zona DNS`{.action}).
+Su sitio web estará disponible en un plazo máximo de 24 horas.
 
 ## Más información <a name="gofurther"></a>
 
@@ -143,8 +142,8 @@ Espere hasta un máximo de 24 horas (plazo de propagación de los cambios en la 
 
 [Resolver los errores más frecuentes asociados a los módulos en 1 clic](../erreurs-frequentes-modules-en-1-clic/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/fr/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/fr/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
