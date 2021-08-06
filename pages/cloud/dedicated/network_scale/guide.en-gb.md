@@ -150,22 +150,9 @@ source /etc/network/interfaces.d/*
 
 Save and close the file.
 
-Add the following lines in `/etc/network/interfaces`:
-
-```bash
-auto vmbr0
-iface vmbr0 inet static 
-  address 141.94.111.60/32
-  gateway 141.94.111.254
-  bridge-ports ens33f0
-  bridge-stp off
-  bridge-fd 0
-```
+Add the following lines in `/etc/network/interfaces.d/50-cloud-init`.
 
 In this example, the network bridge (virtual NIC) used is `vmbr0`. Change this value if necessary.
-
-Add the following lines in `/etc/network/interfaces.d/50-cloud-init`:
-
 
 ```bash
 auto lo
