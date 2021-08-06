@@ -14,7 +14,7 @@ Order: 1
 
 ## Obiettivo
 
-In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi errori. Gli esempi che seguono indicano una configurazione errata dei tuoi [DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#capire-il-concetto-di-dns) o un dominio sospeso (se il tuo sito non mostra uno dei messaggi di errore descritti qui, consulta la sezione [Spingiti oltre](#gofurther)):
+In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi errori. Gli esempi che seguono indicano una configurazione errata dei tuoi [DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#capire-il-concetto-di-dns) o un dominio sospeso (se il tuo sito non mostra uno dei messaggi di errore descritti qui, consulta la sezione [Per saperne di più](#gofurther)):
 
 |Browser|Messaggio di errore|
 |-|---|
@@ -35,7 +35,7 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 ## Prerequisiti
 
 - Avere la gestione dei server e della [zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) del dominio
-- Avere accesso allo [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 

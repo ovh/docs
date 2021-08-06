@@ -134,7 +134,7 @@ Su sitio web estará disponible en un plazo máximo de 24 horas.
 
 ## Más información <a name="gofurther"></a>
 
-[Resolver el error "Sitio no instalado"](../web_hosting_error_sitio_no_instalado/)
+[Solucionar el error «Sitio no instalado»](../web_hosting_error_sitio_no_instalado/)
 
 [¿Qué hacer en caso de error 500 Internal Server Error?](../error-500-internal-server-error/)
 
