@@ -57,11 +57,11 @@ Rinnova il tuo dominio se necessario cliccando `...`{.action} a destra dello sch
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-e attendi fino a 48 ore (tempo di propagazione dovuto alle modifiche apportate ai [server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#capire-il-concetto-di-dns)).
+Una volta terminato il rinnovo dell'offerta, il tuo sito Web sarà disponibile entro 48 ore.
 
 ### Step 2: verifica i server DNS
 
-Per verificare la validità dei tuoi [server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/), clicca in alto a sinistra sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) sui `domini`{.action} e poi sul dominio del tuo sito.
+Per verificare la validità dei tuoi [server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/), clicca in alto a sinistra sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) sui `Domini`{.action} e poi sul dominio del tuo sito.
 
 #### Scenario 1: nessuna anomalia sui server DNS
 
@@ -77,7 +77,7 @@ Se sono identici agli obiettivi degli record di tipo `NS` nella `Zona DNS`{.acti
 
 Un avviso nella scheda `Zona DNS`{.action} indica che i server DNS utilizzati dal tuo dominio non sono quelli indicati nella tua zona. Sono possibili due scenari:
 
-- Sotto la frase "Stai utilizzando questi server DNS: ", i server indicati sono del tipo "ns **?** .ovh.net e "DNS **?** .ovh.net" (sostituisci "**no?** " da qualsiasi numero):
+- Sotto la frase "Al momento utilizzi questi server DNS:", i server indicati sono del tipo "ns **?** .ovh.net e "DNS **?** .ovh.net" (sostituisci "**?**" da qualsiasi numero):
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Modificare i server DNS seguendo le istruzioni di [questa guida](../../domains/w
 
 Attendi fino a 48 ore (tempo di propagazione delle modifiche dei `server DNS`{.action}).
 
-- Sotto la frase "Stai utilizzando questi server DNS: ", i server indicati non sono del tipo "ns **?** .ovh.net e "DNS **?** .ovh.net".
+- Sotto la frase "Al momento utilizzi questi server DNS:", i server indicati non sono del tipo "ns **?** .ovh.net e "DNS **?** .ovh.net".
 
 ![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}
 

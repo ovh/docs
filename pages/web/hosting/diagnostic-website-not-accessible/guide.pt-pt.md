@@ -85,7 +85,7 @@ Altere os servidores DNS de acordo com as instruções [deste manual](../../doma
 
 O seu website estará disponível num prazo máximo de 48 horas.
 
-- Na frase "Está a utilizar os seguintes servidores DNS: ", os servidores indicados não são do tipo "ns **?** .ovh.net" e "DNS **?** .ovh.net".
+- Na frase "Está a utilizar os seguintes servidores DNS:", os servidores indicados não são do tipo "ns **?** .ovh.net" e "DNS **?** .ovh.net".
 
 ![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}
 

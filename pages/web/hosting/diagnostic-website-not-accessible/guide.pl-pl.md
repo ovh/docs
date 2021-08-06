@@ -77,7 +77,7 @@ Jeśli są identyczne z celami wpisów typu `NS` w `Strefa DNS`{.action}, przejd
 
 Ostrzeżenie w zakładce `Strefa DNS`{.action} wskazuje, że serwery DNS używane przez Twoją domenę nie są serwerami pokazywanymi w Twojej strefie. Możliwe są dwa scenariusze:
 
-- Pod frazą "Aktualnie korzystasz z następujących serwerów DNS: ", wskazane serwery są typu "ns **?** ovh.net" i "dns **?** ovh.net" (zastąp "**?** " na dowolny numer):
+- Pod frazą "Aktualnie korzystasz z następujących serwerów DNS:", wskazane serwery są typu "ns **?** ovh.net" i "dns **?** ovh.net" (zastąp "**?**" na dowolny numer):
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Zmień serwery DNS zgodnie z instrukcjami zawartymi w [tym przewodniku](../../do
 
 Twoja strona będzie dostępna w ciągu maksymalnie 48 godzin.
 
-- Pod frazą "Aktualnie korzystasz z następujących serwerów DNS: ", wskazane serwery nie są typu "ns **?** ovh.net" i "dns **?** ovh.net".
+- Pod frazą "Aktualnie korzystasz z następujących serwerów DNS:", wskazane serwery nie są typu "ns **?** ovh.net" i "dns **?** ovh.net".
 
 ![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}
 
