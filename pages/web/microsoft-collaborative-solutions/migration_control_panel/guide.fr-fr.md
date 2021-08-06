@@ -6,13 +6,15 @@ section: 'Migration d’un compte Exchange'
 order: 1
 ---
 
-**Dernière mise à jour le 23/07/2021**
+**Dernière mise à jour le 06/08/2021**
 
 ## Objectif
 
 OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dans une offre d'hébergement web), E-mail Pro et Exchange. Celles-ci bénéficient de fonctionnalités propres et peuvent s'adapter à plusieurs usages. Vos besoins évoluent ? OVHcloud met à votre disposition un outil de migration vous permettant de passer d'une solution à une autre.
 
 **Découvrez comment migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange.**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0JLLoBBvsCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 

@@ -69,11 +69,12 @@ In the Managed Kubernetes Service Dashboard, you will see the cluster, with the 
 - You will still see a public IPv4 address on your worker nodes. This IP won't be reachable from the Internet, and used exclusively for the administration of your nodes and its link to the Kubernetes control panel.
 
 - As explained in the [Known limits](../known-limits/) guide, the following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our used overlay networks:
-  ```
-  10.2.0.0/16 # Subnet used by pods
-  10.3.0.0/16 # Subnet used by services
-  172.17.0.0/16 # Subnet used by the Docker daemon
-  ```
+
+```
+10.2.0.0/16 # Subnet used by pods
+10.3.0.0/16 # Subnet used by services
+172.17.0.0/16 # Subnet used by the Docker daemon
+```
 
 
 ## Go further

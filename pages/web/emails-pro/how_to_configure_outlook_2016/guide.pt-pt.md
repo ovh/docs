@@ -57,7 +57,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 |![Outlook](images/config-outlook-emailpro02.png){.thumbnail}|Entre os diferentes tipos de conta, selecione IMAP e POP. <br>Recomendamos uma utilização em IMAP.|
 |Introduza a password do seu endereço de e-mail e clique em `Seguinte`{.action}. |![Outlook](images/config-outlook-emailpro03.png){.thumbnail}|
 |![Outlook](images/config-outlook-emailpro04.png){.thumbnail}|Se o Outlook não conseguir configurar automaticamente o seu endereço, esta janela será apresentada. <br>Clique em `Modificar os parâmetros da conta`{.action} |
-|Introduza no **Correio de entrada**: <br>- o servidor **pro**?**.mail.ovh.net** (substitua "**?**" pelo número do seu servidor) <br>- Porta **993**<br>- Método de encriptação **SSL/TLS**<br><br>Introduza no **Correio de saída**: <br>- o servidor **pro**?**.mail.ovh.net** (substitua "**?**" pelo número do seu servidor)<br>- Porta **465**<br>- Método de encriptação **SSL/TLS**<br><br>Clique em `Seguinte`{.action} para validar. |![Outlook](images/config-outlook-emailpro05.png){.thumbnail}|
+|Introduza no **Correio de entrada**: <br>- o servidor **pro**?**.mail.ovh.net** (substitua "**?**" pelo número do seu servidor) <br>- Porta **993**<br>- Método de encriptação **SSL/TLS**<br><br>Introduza no **Correio de saída**: <br>- o servidor **pro**?**.mail.ovh.net** (substitua "**?**" pelo número do seu servidor)<br>- Porta **587**<br>- Método de encriptação **SSL/TLS**<br><br>Clique em `Seguinte`{.action} para validar. |![Outlook](images/config-outlook-emailpro05.png){.thumbnail}|
 
 
 No âmbito de uma configuração em **POP**, os valores são os seguintes:
