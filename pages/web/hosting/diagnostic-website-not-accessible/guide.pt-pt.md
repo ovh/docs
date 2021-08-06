@@ -1,6 +1,6 @@
 ---
 title: "O que fazer se o meu site está inacessível?"
-slug: erro-servidor-inacessível
+slug: erro-servidor-inacessivel
 excerpt: "Diagnóstico das causas da inacessibilidade do seu site"
 section: Diagnóstico
 Order: 1
@@ -14,7 +14,7 @@ Order: 1
 
 ## Objetivo
 
-Em caso de inacessibilidade do seu website, podem ocorrer várias reações de erro. Os exemplos abaixo indicam uma configuração errada dos seus [DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#compreender-a-nocao-de-dns) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais](#gofurther)?):
+Em caso de inacessibilidade do seu website, podem ocorrer várias reações de erro. Os exemplos abaixo indicam uma configuração errada dos seus [DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#compreender-a-nocao-de-dns) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais?](#gofurther)?):
 
 |Browser|Mensagem de Erro|
 |-|---|
@@ -29,12 +29,12 @@ Em caso de inacessibilidade do seu website, podem ocorrer várias reações de e
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#gofurther)?
 >
 
 ## Requisitos
 
-- Ter a gestão dos servidores e da [zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns) do seu domínio
+- Ter a gestão dos servidores e da [zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns) do seu domínio.
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
@@ -53,7 +53,7 @@ Para verificar a validade da assinatura relativa ao seu domínio, clique no seu 
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
-Renove o domínio se necessário através do botão `...`{.action} à direita do ecrã e `Renove o serviço`{.action}.
+Renove o domínio se necessário através do botão `...`{.action} à direita do ecrã e `Renovar o serviço`{.action}.
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
@@ -77,15 +77,15 @@ Se forem idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}, 
 
 Um aviso no separador `Zona DNS`{.action} indica que os servidores DNS utilizados pelo seu domínio não estão indicados na sua zona. Aqui, podem ocorrer dois cenários:
 
-- Na frase "Está a utilizar os seguintes servidores DNS:", os servidores indicados são do tipo "ns **?** .ovh.net" e "dns **?** .ovh.net" (substituir "**?**" por qualquer número):
+- Na frase "Utiliza atualmente os seguintes servidores DNS:", os servidores indicados são do tipo "ns **?** .ovh.net" e "dns **?** .ovh.net" (substituir "**?**" por qualquer número):
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Altere os servidores DNS de acordo com as instruções [deste manual](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#modifier-les-serveurs-dns), para que sejam idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}.
+Altere os servidores DNS de acordo com as instruções [deste manual](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#modificar-os-servidores-dns), para que sejam idênticos aos alvos das entradas do tipo `NS` na `Zona DNS`{.action}.
 
 O seu website estará disponível num prazo máximo de 48 horas.
 
-- Na frase "Está a utilizar os seguintes servidores DNS:", os servidores indicados não são do tipo "ns **?** .ovh.net" e "DNS **?** .ovh.net".
+- Na frase "Utiliza atualmente os seguintes servidores DNS:", os servidores indicados não são do tipo "ns **?** .ovh.net" e "dns **?** .ovh.net".
 
 ![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}
 
@@ -102,13 +102,13 @@ A `Zona DNS`{.action} do seu domínio não contém nenhuma entrada do tipo `NS`:
 
 ![srv_dns_missing](images/srv_dns_missing.png){.thumbnail}
 
-Efetue um backup da zona atual ao clicar no botão `Alterar em modo de texto`{.action} à direita do seu ecrã:
+Efetue um backup da zona atual ao clicar no botão `Editar em modo de texto`{.action} à direita do seu ecrã:
 
 ![change_DNS_zone_change_text_format](images/change_DNS_zone_change_text_format.png){.thumbnail}
 
 De seguida, copie/cole o conteúdo da sua `Zona DNS`{.action} num documento em texto. Registe este documento localmente.
 
-De seguida, clique em `Reiniciar a minha zona DNS`{.action} e selecione `Não, mas eu desejo reinicializar a minha zona DNS`{.action}, indique os seus servidores de e-mail e de alojamento e clique em `Validar`{.action}.
+De seguida, clique em `Reiniciar zona DNS`{.action} e selecione `Não, mas desejo reiniciar a minha zona DNS.`{.action}, indique os seus servidores de e-mail e de alojamento e clique em `Validar`{.action}.
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
@@ -118,7 +118,7 @@ O seu website estará disponível num prazo máximo de 24 horas.
 
 Nesta etapa, vai encontrar o endereço IP do seu alojamento e adicioná-lo à sua `Zona DNS`{.action}.
 
-Se o seu site está alojado fora da infraestrutura da OVHcloud ou por um terceiro, contacte o fornecedor de alojamento ou o fornecedor em causa.
+Se o seu site não está alojado na infraestrutura da OVHcloud ou é gerido por outro fornecedor, contacte o serviço de suporte em causa.
 
 Se o seu site está alojado numa das nossas [ofertas Web Cloud](https://www.ovh.pt/alojamento-partilhado/), clique no separador `Alojamentos`{.action} à esquerda do seu ecrã e, a seguir, na oferta em causa.
 
