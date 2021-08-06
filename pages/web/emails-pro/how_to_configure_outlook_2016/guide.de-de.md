@@ -55,7 +55,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 |![Outlook](images/config-outlook-emailpro02.png){.thumbnail}|Wählen Sie zwischen IMAP und POP aus der Liste der Kontotypen. <br>Wir empfehlen die Verwendung von IMAP.|
 |Geben Sie das Passwort Ihrer E-Mail-Adresse ein und klicken Sie auf `Weiter`{.action}. |![Outlook](images/config-outlook-emailpro03.png){.thumbnail}|
 |![Outlook](images/config-outlook-emailpro04.png){.thumbnail}|Wenn Outlook Ihre Adresse nicht automatisch konfigurieren konnte, öffnet sich dieses Fenster. <br>Klicken Sie auf `Einstellungen des Accounts ändern`{.action} |
-|Geben Sie als **Eingangserver** ein: <br>- **pro**?**.mail.ovh.net** (ersetzen Sie "?" mit der Nummer Ihres Servers) <br>- Port **993**<br>- Verschlüsselungsmethode **SSL/TLS**<br><br>Geben Sie als **Ausgangserver** ein: <br>- **pro**?**.mail.ovh.net** (ersetzen Sie "?" mit der Nummer Ihres Servers)<br>- Port **465**<br>- Verschlüsselungsmethode **SSL/TLS**<br><br>Klicken Sie auf `Weiter`{.action}, um zu bestätigen. |![Outlook](images/config-outlook-emailpro05.png){.thumbnail}|
+|Geben Sie als **Eingangserver** ein: <br>- **pro**?**.mail.ovh.net** (ersetzen Sie "?" mit der Nummer Ihres Servers) <br>- Port **993**<br>- Verschlüsselungsmethode **SSL/TLS**<br><br>Geben Sie als **Ausgangserver** ein: <br>- **pro**?**.mail.ovh.net** (ersetzen Sie "?" mit der Nummer Ihres Servers)<br>- Port **587**<br>- Verschlüsselungsmethode **SSL/TLS**<br><br>Klicken Sie auf `Weiter`{.action}, um zu bestätigen. |![Outlook](images/config-outlook-emailpro05.png){.thumbnail}|
 
 
 Für eine **POP** Konfiguration verwenden Sie die folgenden Werte:
