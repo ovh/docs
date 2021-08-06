@@ -81,9 +81,9 @@ Un avviso nella scheda `Zona DNS`{.action} indica che i server DNS utilizzati da
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Modificare i server DNS seguendo le istruzioni di [questa guida](../../domains/web_hosting_gestisci_il_tuo_server_dns/#modifier-les-serveurs-dns) in modo che siano identici agli obiettivi di record di tipo `NS` nella `Zona DNS`{.action}.
+Modificare i server DNS seguendo le istruzioni di [questa guida](../../domains/web_hosting_gestisci_il_tuo_server_dns/#modifica-i-server-dns) in modo che siano identici agli obiettivi di record di tipo `NS` nella `Zona DNS`{.action}.
 
-Attendi fino a 48 ore (tempo di propagazione delle modifiche dei `server DNS`{.action}).
+Il tuo sito Web sarà disponibile entro 48 ore.
 
 - Sotto la frase "Al momento utilizzi questi server DNS:", i server indicati non sono del tipo "ns **?** .ovh.net e "DNS **?** .ovh.net".
 
@@ -91,7 +91,7 @@ Attendi fino a 48 ore (tempo di propagazione delle modifiche dei `server DNS`{.a
 
 > [!warning]
 >
-> prima di effettuare qualsiasi operazione, contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+> Prima di effettuare qualsiasi operazione, contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 >
 > È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
 >
@@ -102,23 +102,23 @@ La `Zona DNS`{.action} del tuo dominio non contiene alcun accesso di tipo `NS`:
 
 ![srv_dns_missing](images/srv_dns_missing.png){.thumbnail}
 
-Per eseguire un backup dell'area corrente, clicca sul pulsante `Modifica in modalità testuale`{.action} a destra dello schermo:
+Per eseguire un backup dell'area corrente, clicca sul pulsante `Utilizza l'editor di testo`{.action} a destra dello schermo:
 
 ![change_DNS_zone_change_text_format](images/change_DNS_zone_change_text_format.png){.thumbnail}
 
 Copia/incolla il contenuto della tua `Zona DNS`{.action} in un documento di testo. Salva questo documento localmente.
 
-Clicca su `Reimposta la mia zona DNS`{.action} e seleziona `No, ma voglio reinizializzare la mia zona DNS`{.action}, indica i tuoi server di posta e di hosting e clicca su `Conferma`{.action}.
+Clicca su `Reinizializza la zona DNS`{.action} e seleziona `No, ma voglio reinizializzare la mia zona DNS`{.action}, indica i tuoi server di posta e di hosting e clicca su `Conferma`{.action}.
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
-Attendi fino a 24 ore (tempo necessario alla propagazione delle modifiche nella `Zona DNS`{.action}).
+Il tuo sito Web sarà disponibile entro 24 ore.
 
 ### Step 3: verifica la zona DNS <a name="step3"></a>
 
 In questo step, visualizzerai l'indirizzo IP del tuo hosting e lo aggiungerai alla tua `Zona DNS`{.action}.
 
-Se il tuo sito è ospitato al di fuori dell'infrastruttura OVHcloud o da una terza persona, contatta il provider o il provider interessati.
+Se il tuo sito non è ospitato sull'infrastruttura OVHcloud o se è gestito da un altro provider, contatta il supporto interessati.
 
 Se il tuo sito è ospitato su una delle nostre [offerte Web Cloud](https://www.ovh.it/hosting-web/), clicca sulla scheda `Hosting`{.action} a sinistra e poi sull'offerta corrispondente.
 
@@ -126,11 +126,11 @@ Nella scheda `Informazioni generali`{.action}, copia l'indirizzo IPV4 e/o IPV6 d
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-e riportala nella [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1) del tuo dominio, modificandola o creando uno o più record di tipo `A`.
+E riportala nella [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1) del tuo dominio, modificandola o creando uno o più record di tipo `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
-e attendi fino a 24 ore (tempo necessario alla propagazione delle modifiche nella `Zona DNS`{.action}).
+Il tuo sito Web sarà disponibile entro 24 ore.
 
 ## Per saperne di più <a name="gofurther"></a>
 

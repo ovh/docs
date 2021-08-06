@@ -118,7 +118,7 @@ Su sitio web estará disponible en un plazo máximo de 24 horas.
 
 En esta etapa, accederá a la dirección IP de su alojamiento y la añadirá a su `Zona DNS`{.action}.
 
-Si su sitio web está alojado fuera de la infraestructura de OVHcloud o por un tercero, póngase en contacto con el proveedor o proveedor de alojamiento correspondiente.
+Si su sitio web no está alojado en la infraestructura de OVHcloud o si está gestionado por otro proveedor, contacte con el servicio de soporte correspondiente.
 
 Si su sitio web está alojado en uno de nuestros [planes de hosting Cloud](https://www.ovh.es/hosting/), abra la pestaña `Alojamientos`{.action} a la izquierda de su pantalla y seleccione el alojamiento correspondiente.
 
