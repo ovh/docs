@@ -77,15 +77,15 @@ Si son idénticos a los objetivos de las entradas de tipo `NS` en la `Zona DNS`{
 
 Una advertencia en la pestaña `Zona DNS`{.action} indica que los servidores DNS utilizados por su dominio no son los indicados en su zona. Existen dos posibles situaciones:
 
-- Bajo la frase "Actualmente utiliza los siguientes servidores DNS:", los servidores indicados son del tipo "ns **?** .ovh.net" y "dns **?** .ovh.net" (sustituya "**?**" por cualquier número):
+- Bajo la frase "**Actualmente utiliza los siguientes servidores DNS:**", los servidores indicados son del tipo "ns **?** .ovh.net" y "dns **?** .ovh.net" (sustituya "**?**" por cualquier número):
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Modifique los servidores DNS siguiendo las instrucciones de [esta guía](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns//#cambiar-los-servidores-dns) para que sean idénticos a los objetivos de los registros de tipo `NS` en la `Zona DNS`{.action}.
+Modifique los servidores DNS siguiendo las instrucciones de [esta guía](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#cambiar-los-servidores-dns) para que sean idénticos a los objetivos de los registros de tipo `NS` en la `Zona DNS`{.action}.
 
 Su sitio web estará disponible en un plazo máximo de 48 horas.
 
-- Bajo la frase "Actualmente utiliza los siguientes servidores DNS:", los servidores indicados no son del tipo "ns **?** .ovh.net" y "dns **?** .ovh.net".
+- Bajo la frase "**Actualmente utiliza los siguientes servidores DNS:**", los servidores indicados no son del tipo "ns **?** .ovh.net" y "dns **?** .ovh.net".
 
 ![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}
 
