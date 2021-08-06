@@ -29,7 +29,7 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -57,7 +57,7 @@ Odnów Twoją domenę, jeśli to konieczne, za pomocą przycisku `...`{.action}.
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-Po odnowieniu oferty Twoja strona będzie dostępna w ciągu maksymalnie 48 godzin.
+Po odnowieniu domeny Twoja strona będzie dostępna w ciągu 48 godzin.
 
 ### Etap 2: sprawdź serwery DNS
 
@@ -69,7 +69,7 @@ Sprawdź serwery podane w zakładce `Serwery DNS`{.action}:
 
 ![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
 
-Jeśli są identyczne z celami wpisów typu `NS` w `Strefa DNS`{.action}, przejdź do [etapu trzeciego](#step3):
+Jeśli są identyczne z celami wpisów typu `NS` w `Strefa DNS`{.action}, przejdź do [Etap 3](#step3):
 
 ![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
 
@@ -81,7 +81,7 @@ Ostrzeżenie w zakładce `Strefa DNS`{.action} wskazuje, że serwery DNS używan
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Zmień serwery DNS zgodnie z instrukcjami zawartymi w [tym przewodniku](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#modifier-les-serveurs-dns), aby były one identyczne z celami wpisów typu `NS` w `Strefa DNS`{.action}.
+Zmień serwery DNS zgodnie z instrukcjami zawartymi w [tym przewodniku](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zmien-serwery-dns), aby były one identyczne z celami wpisów typu `NS` w `Strefa DNS`{.action}.
 
 Twoja strona będzie dostępna w ciągu maksymalnie 48 godzin.
 
@@ -102,13 +102,13 @@ W `Strefa DNS`{.action} Twojej domeny nie ma wpisu typu `NS`:
 
 ![srv_dns_missing](images/srv_dns_missing.png){.thumbnail}
 
-Wykonaj kopię zapasową aktualnej strefy, klikając przycisk `Zmień w trybie tekstowym`{.action} po prawej stronie ekranu:
+Wykonaj kopię zapasową aktualnej strefy, klikając przycisk `Modyfikacja w trybie tekstowym`{.action} po prawej stronie ekranu:
 
 ![change_DNS_zone_change_text_format](images/change_DNS_zone_change_text_format.png){.thumbnail}
 
-Następnie skopiuj/wklej zawartość `strefy DNS`{.action} do dokumentu tekstowego. Zapisz lokalnie ten dokument.
+Następnie skopiuj/wklej zawartość `Strefa DNS`{.action} do dokumentu tekstowego. Zapisz lokalnie ten dokument.
 
-Następnie kliknij `Zresetuj strefę DNS`{.action} i wybierz `Nie, ale chcę zresetować strefę DNS`{.action}, wskaż serwery e-mail i hosting, a następnie kliknij `Zatwierdź`{.action}.
+Następnie kliknij `Zresetuj strefę DNS`{.action} i wybierz `Nie, ale chcę zresetować strefę DNS.`{.action}, wskaż serwery e-mail i hosting, a następnie kliknij `Zatwierdź`{.action}.
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
@@ -116,9 +116,9 @@ Twoja strona będzie dostępna w ciągu maksymalnie 24 godzin.
 
 ### Etap 3: sprawdź strefę DNS <a name="step3"></a>
 
-Na tym etapie odnajdziesz adres IP Twojego hostingu, po czym dodaj go do Twojej `strefy DNS`{.action}.
+Na tym etapie odnajdziesz adres IP Twojego hostingu, po czym dodaj go do Twojej `Strefa DNS`{.action}.
 
-Jeśli Twoja strona jest zainstalowana poza infrastrukturą OVHcloud lub przez osobę trzecią, skontaktuj się z dostawcą lub dostawcą usług hostingowych.
+Jeśli Twoja strona nie jest hostowana w infrastrukturze OVHcloud lub jest zarządzana przez innego dostawcę, skontaktuj się z odpowiednią pomocą techniczną.
 
 Jeśli Twoja strona jest zainstalowana w jednej z naszych [ofert Web Cloud](https://www.ovh.pl/hosting/), kliknij zakładkę `Hosting`{.action} po lewej stronie ekranu, a następnie wybierz odpowiednią ofertę.
 
