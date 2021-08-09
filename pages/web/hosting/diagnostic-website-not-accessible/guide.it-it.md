@@ -18,10 +18,10 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 
 |Browser|Messaggio di errore|
 |-|---|
-|Chrome:<br>"Impossibile raggiungere il sito"![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
-|Firefox :<br>"Uhm… non riusciamo a trovare questo sito."![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
-|Edge:<br>"Impossibile raggiungere questa pagina"![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
-|Safari :<br>"Safari non trova il server"![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
+|Chrome:<br>"Impossibile raggiungere il sito"|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
+|Firefox :<br>"Uhm… non riusciamo a trovare questo sito."|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
+|Edge:<br>"Impossibile raggiungere questa pagina"|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
+|Safari :<br>"Safari non trova il server"|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
 
 **Scopri come risolvere gli errori del tipo "Impossibile raggiungere il sito"**
 
@@ -77,7 +77,7 @@ Se sono identici agli obiettivi degli record di tipo `NS` nella `Zona DNS`{.acti
 
 Un avviso nella scheda `Zona DNS`{.action} indica che i server DNS utilizzati dal tuo dominio non sono quelli indicati nella tua zona. Sono possibili due scenari:
 
-- Sotto la frase "Al momento utilizzi questi server DNS:", i server indicati sono del tipo "ns **?** .ovh.net e "DNS **?** .ovh.net" (sostituisci "**?**" da qualsiasi numero):
+- Sotto la frase "Al momento utilizzi questi server DNS:", i server indicati sono del tipo "ns **?** .ovh.net" e "DNS **?** .ovh.net" (sostituisci "**?**" da qualsiasi numero):
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Modificare i server DNS seguendo le istruzioni di [questa guida](../../domains/w
 
 Il tuo sito Web sarà disponibile entro 48 ore.
 
-- Sotto la frase "Al momento utilizzi questi server DNS:", i server indicati non sono del tipo "ns **?** .ovh.net e "DNS **?** .ovh.net".
+- Sotto la frase "Al momento utilizzi questi server DNS:", i server indicati non sono del tipo "ns **?** .ovh.net" e "DNS **?** .ovh.net".
 
 ![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}
 
