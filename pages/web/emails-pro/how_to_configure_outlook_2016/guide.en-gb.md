@@ -51,7 +51,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 |![Outlook](images/config-outlook-emailpro02.png){.thumbnail}|Choose between IMAP and POP from the list of account types. <br>We recommend using IMAP.|
 |Enter your email password, then click `Next`{.action}. |![Outlook](images/config-outlook-emailpro03.png){.thumbnail}|
 |![Outlook](images/config-outlook-emailpro04.png){.thumbnail}|If Outlook was unable to automatically configure your address, this window will appear. <br>Click `Change Account Settings`{.action} |
-|Enter in **Incoming mail**: <br>- Server **pro**?**.mail.ovh.net** (replace "?" with your server number) <br>- Port **993**<br>- Encryption method **SSL/TLS**<br><br>Enter in **Outgoing mail**: <br>- Server **pro**?**.mail.ovh.net** (replace "?" with your server number)<br>- Port **465**<br>- Encryption method **SSL/TLS**<br><br>Click `Next`{.action} to confirm. |![Outlook](images/config-outlook-emailpro05.png){.thumbnail}|
+|Enter in **Incoming mail**: <br>- Server **pro**?**.mail.ovh.net** (replace "?" with your server number) <br>- Port **993**<br>- Encryption method **SSL/TLS**<br><br>Enter in **Outgoing mail**: <br>- Server **pro**?**.mail.ovh.net** (replace "?" with your server number)<br>- Port **587**<br>- Encryption method **SSL/TLS**<br><br>Click `Next`{.action} to confirm. |![Outlook](images/config-outlook-emailpro05.png){.thumbnail}|
 
 
 For **POP** configuration, the values are:

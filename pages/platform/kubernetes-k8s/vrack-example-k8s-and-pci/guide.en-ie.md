@@ -63,12 +63,12 @@ First of all, we will need to set up vRack Private Network for our Public Cloud.
 > [!warning]
 > As explained in the [Known limits](../known-limits/) guide, the following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our used overlay networks:
 >
+
 ```bash
 10.2.0.0/16 # Subnet used by pods
 10.3.0.0/16 # Subnet used by services
 172.17.0.0/16 # Subnet used by the Docker daemon
 ```
->
 
 
 ### Setting up the Managed Kubernetes
