@@ -6,7 +6,7 @@ section: User guides
 order: 0
 ---
 
-**Last updated Nov 2<sup>nd</sup>, 2020.**
+**Last updated 10th August 2021**
 
 ## Objective
 
@@ -18,108 +18,77 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 ## Nodes and node pools
 
-In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration).  
+In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration).
 
-When you create your cluster, it's created with a default node pool. Then, you can modify the size of this node pool, or add additional node pools of different sizes and types.
+When you order a new a cluster, it is created with a default node pool. Refer to our guide on [creating a cluster](../creating-a-cluster/) for more information.
 
-In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au): adding nodes to an existing node pool, creating a new node pool...
+In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
-## Editing nodes to an existing node pool
-
-### Step 1 - Editing nodes to an existing node pool using the OVH Cloud Manager
+## Instructions
 
 Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ![Access to the administration UI](images/managing_nodes-01.png){.thumbnail}
 
-In this administration UI you have three tabs:
+In this administration UI you have five tabs:
 
-- *Service*: here you will have a global view of your cluster, with important information like the status, the API URL or the `kubectl` configuration file.
+- **Service**: Here you will have a global view of your cluster, with important information like the status, the API URL or the `kubectl` configuration file.
 
-- *Node pools*: you will find here the active node pools of your cluster. You will be able to add, resize or remove node pools.
+- **Node pools**: You will find here the active node pools of your cluster. You will be able to add, resize or remove node pools.
 
-- *Containers and Services*: Coming soon...
+- **Containers and services** (in development): Soon, you will be able to see all of the containers and services running in your Kubernetes cluster here.
 
+- **APIServer access**: You can add IPv4 ranges in order to restrict access to your cluster’s APIServer.
 
-To add nodes to a node pool, choose your node pool in the *Node pools* tab, and click on the *...* button at the right, then select *Edit pool*.
+- **Audit Logs**: Here, you will find the logs for your Kubernetes cluster’s control-plane.
 
+### Configuring a node pool
 
-![Edit node pool](images/managing_nodes-03.png){.thumbnail}
+To access the nodes configuration, switch to the *Node pools* tab. Click on the `...`{.action} button in the row of the node pool concerned, then select `See nodes`{.action}.
 
+![Edit node pool](images/managing_nodes-02.png){.thumbnail}
 
-#### Adding a node to an existing node pool
+Here you can change the billing method for a node or delete a node by clicking on the respective `...`{.action} button of the node.
 
-In the node pool edition section, click on *Actions*, then on *Add Node*. 
+![node pool](images/managing_nodes-03.png){.thumbnail}
 
-![Adding node to a node pool](images/managing_nodes-04.png){.thumbnail}
+### Adding nodes to an existing node pool
 
+In the *Node pools* tab, click on the `...`{.action} button in the row of the node pool concerned, then select `Configure node pool size`{.action}.
 
-Select the number of node to add. The type of node is automatically decided, as a node pool can have only on type of instance.
+![node size](images/managing_nodes-04.png){.thumbnail}
 
-![Select the number of node to add](images/managing_nodes-06.png){.thumbnail}
+In the popup window, you can re-size your node pool by adding nodes. You can also enable the autoscaling feature which allows you to set the minimum and maximum pool size instead.
 
-Then you can choose the billing mode and anti-affinity properties. Anti affinity ensures that nodes will be created on different hypervisors (baremetal machines) and therefore ensure the best availability for your workloads. Note that anti-affinity limits the number of nodes in the pool to 5 maximum (but you can of course create multiple pools). Activating Monthly billing will apply to all current and upcoming nodes in the pool.
+![autoscaling](images/managing_nodes-05.png){.thumbnail}
 
-After you validate, your nodes will be installed.
+### Creating additional node pools
 
-![Installing nodes](images/managing_nodes-07.png){.thumbnail}
+In the *Node pools* tab, click on the button `Add nodes`{.action}.
 
+![Creating a node pool](images/managing_nodes-06.png){.thumbnail}
 
-#### Deleting a node from an existing node pool
-
-
-In the node pool edition section, click on *Actions*, then on *Add Node*. 
-
-![Deleting a node from an existing node pool](images/managing_nodes-05.png){.thumbnail}
-
-
-Choose the number of nodes to delete, confirm the choice by typing `DELETE` in the confirmation field, and click on the *Delete* button.
-
-![Deleting nodes](images/managing_nodes-08.png){.thumbnail}
-
-
-After you click on *Delete*, the nodes will be deleted.
-
-![Deleting nodes](images/managing_nodes-09.png){.thumbnail}
-
-
-### Step 2 - Creating a node pool
-
-In the *Node pools* tab, click on the *Add a node pool* button.
-
-![Creating a node pool](images/managing_nodes-10.png){.thumbnail}
-
-
-In the *Create a node pool* dialog, choose a name for your node.
-
-![Creating a node pool](images/managing_nodes-11.png){.thumbnail}
-
-Then choose the type of instance for your node pool. For this tutorial choose a general purpose node, like the B2-7 flavor: 
-
-![Creating a node pool](images/managing_nodes-12.png){.thumbnail}
+The subsequent node pool configuration steps are described in [Creating a cluster](../creating-a-cluster/).
 
 > [!primary]
-> If you want to know more about the flavors on the current OVH range, [here you have a complete guide](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/).
+> To learn more about the flavors of the current OVHcloud range, [refer to this guide](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/).
 
 
-Finally, choose the billing mode (monthly or hourly) and validate to init the creation of the node pool.
+### Deleting a node pool
 
+In the *Node pools* tab, click on the `...`{.action} button in the row of the node pool concerned, then select `Delete pool`{.action}.
 
-### Step 3 - Deleting a node pool
+![Delete node pool](images/managing_nodes-07.png){.thumbnail}
 
-In the *Node pools* tab, choose the node pool to delete and click on the *...* button at the right, then select *Delete pool*.
+Confirm the decision by typing `DELETE` into the field, then click on the `Delete`{.action} button.
 
-![Deleting a node pool](images/managing_nodes-13.png){.thumbnail}
-
-Confirm the choice by typing `DELETE` in the confirmation field, and click on the *Delete* button.
-
-![Deleting a node pool](images/managing_nodes-14.png){.thumbnail}
+![Delete node pool](images/managing_nodes-08.png){.thumbnail}
 
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-au/public-cloud/kubernetes/).
 
-Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying an application](../deploying-an-application/) .
+To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying a Hello World application](../deploying-hello-world/) .
 
-Join our [community of users](https://community.ovh.com/en/).
+Join our community of users on <https://community.ovh.com/en/>.
