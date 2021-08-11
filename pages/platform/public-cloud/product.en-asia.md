@@ -1,5 +1,6 @@
 ---
-title: Public Cloud
+title: Project management, instances, storage and network
 slug: public-cloud
-excerpt: Use Public Cloud with OVH
+excerpt: Using the Public Cloud with OVHcloud
+order: 01
 ---
