@@ -6,29 +6,7 @@ section: Getting started
 order: 0
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
-**Last updated 29th April 2021**
+**Last updated 9th Agust 2021**
 
 ## Objective
 
@@ -36,11 +14,14 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 ## Requirements
 
-A Public Cloud project in your OVHcloud account
+- a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
+- access to the [OVHcloud Control Panel]( 	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
-Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Containers and Orchestration* menu in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=ie), then go to the `Managed Kubernetes Service`{.action} category and click on `Create a cluster`{.action}.
+Log in to the [OVHcloud Control Panel]( 	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned.
+
+Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu and click on `Create a cluster`{.action}.
 
 ![Create a cluster](images/creating-a-cluster-01.png){.thumbnail}
 
@@ -65,29 +46,32 @@ Now you can configure the default node pool. A node pool is a group of nodes sha
 > [!primary]
 > You can read the [Managing node pools](../managing-nodes/) guide to get more information on node pools.
 
-Then choose the size of the default node pool, and the type of instance.
+![Node pool](images/creating-a-cluster-05.png){.thumbnail}
 
-![Choose the size of the default node pool, and the type of instance](images/creating-a-cluster-05.png){.thumbnail}
+In the next step, define the size of the default node pool.
 
-In the next step you can activate anti-affinity, and choose the billing mode (monthly or hourly).
+![Default node pool](images/creating-a-cluster-06.png){.thumbnail}
+
+Alternatively, you can enable the `Autoscaling`{.action} feature for the cluster. Define the minimum and maximum pool size in that case.
+
+![Autoscaling](images/creating-a-cluster-07.png){.thumbnail}
+
+In the next step, choose the appropriate billing mode (monthly or hourly). You can also enable the anti-affinity mode here. 
+
+![Choose the billing mode](images/creating-a-cluster-08.png){.thumbnail}
 
 > [!primary]
 > By enabling anti-affinity, current and future nodes will be launched on different hypervisors (physical servers), guaranteeing higher fault tolerance. Anti-affinity node pools can only include up to 5 nodes.
 
-![Choose the billing mode](images/creating-a-cluster-06.png){.thumbnail}
+Finally, enter a for name your cluster and click the `Send`{.action} button.
 
-Finally, name your cluster and click the `Send`{.action} button.
+The cluster creation is now in progress. It should be available within a few minutes in your OVHcloud Control Panel.
 
-![Name your cluster](images/creating-a-cluster-07.png){.thumbnail}
-
-Your cluster creation is now in progress, it should be available within a few minutes.
-
-![Name your cluster](images/creating-a-cluster-08.png){.thumbnail}
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-ie/public-cloud/kubernetes/).
 
-Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying a Hello World application](../deploying-hello-world/) .
+To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying a Hello World application](../deploying-hello-world/) .
 
-Join our [community of users](https://community.ovh.com/en/).
+Join our community of users on <https://community.ovh.com/en/>.
