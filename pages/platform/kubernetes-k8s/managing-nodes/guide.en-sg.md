@@ -26,7 +26,7 @@ In this guide we explain how to do some basic operations with nodes and node poo
 
 ## Instructions
 
-Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand men in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). In the table, select a cluster by clicking on the cluster name.
 
 ![Access to the administration UI](images/managing_nodes-01.png){.thumbnail}
 
@@ -48,7 +48,7 @@ To access the nodes configuration, switch to the *Node pools* tab. Click on the 
 
 ![Edit node pool](images/managing_nodes-02.png){.thumbnail}
 
-Here you can change the billing method for a node or delete a node by clicking on the respective `...`{.action} button of the node.
+Here you can change the billing method for a node or delete a node by clicking on the respective `...`{.action} button of a node.
 
 ![node pool](images/managing_nodes-03.png){.thumbnail}
 
@@ -58,13 +58,13 @@ In the *Node pools* tab, click on the `...`{.action} button in the row of the no
 
 ![node size](images/managing_nodes-04.png){.thumbnail}
 
-In the popup window, you can re-size your node pool by adding nodes. You can also enable the autoscaling feature which allows you to set the minimum and maximum pool size instead.
+In the popup window, you can re-size your node pool by adding nodes. You can alternatively enable the autoscaling feature which allows you to set the minimum and maximum pool size instead.
 
 ![autoscaling](images/managing_nodes-05.png){.thumbnail}
 
 ### Creating additional node pools
 
-In the *Node pools* tab, click on the button `Add nodes`{.action}.
+In the *Node pools* tab, click on the button `Add a node pool`{.action}.
 
 ![Creating a node pool](images/managing_nodes-06.png){.thumbnail}
 
