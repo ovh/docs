@@ -9,5 +9,4 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 
 |Version|EOL announcement|End-of-Sale|End-of-Support|
 |---|---|---|---|
-|MySQL 4|2019-10-23|-|2020-04-23|
 |MySQL 5.6|2019-07-29|2020-08-02|2021-02-01|
