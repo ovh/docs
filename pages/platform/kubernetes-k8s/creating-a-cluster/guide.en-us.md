@@ -23,11 +23,11 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu and click on `Create a cluster`{.action}.
 
-![Create a cluster](images/creating-a-cluster-01.png){.thumbnail}
+![Create a cluster](images/creating-a-cluster1.png){.thumbnail}
 
 Select a location for your new cluster.
 
-![Select a location](images/creating-a-cluster-02.png){.thumbnail}
+![Select a location](images/creating-a-cluster2.png){.thumbnail}
 
 Choose the minor version of Kubernetes. 
 
@@ -35,30 +35,30 @@ Choose the minor version of Kubernetes.
 > We recommend you to always use the last stable version. 
 > Please read our [End of life / end of support](../eos-eol-policies/) page to understand our version policy.
 
-![Choose the minor version of Kubernetes](images/creating-a-cluster-03.png){.thumbnail}
+![Choose the minor version of Kubernetes](images/creating-a-cluster3.png){.thumbnail}
 
 You can now choose to integrate your Kubernetes cluster into a private network using OVHcloud vRack. For more information about this option, please read our [Using the vRack](../using_vrack/) guide.
 
-![Choose a private network for this cluster](images/creating-a-cluster-04.png){.thumbnail}
+![Choose a private network for this cluster](images/creating-a-cluster4.png){.thumbnail}
 
 Now you can configure the default node pool. A node pool is a group of nodes sharing the same configuration, allowing you a lot of flexibility in your cluster management. 
 
 > [!primary]
 > You can read the [Managing node pools](../managing-nodes/) guide to get more information on node pools.
 
-![Node pool](images/creating-a-cluster-05.png){.thumbnail}
+![Node pool](images/creating-a-cluster5.png){.thumbnail}
 
 In the next step, define the size of the default node pool.
 
-![Default node pool](images/creating-a-cluster-06.png){.thumbnail}
+![Default node pool](images/creating-a-cluster6.png){.thumbnail}
 
 Alternatively, you can enable the `Autoscaling`{.action} feature for the cluster. Define the minimum and maximum pool size in that case.
 
-![Autoscaling](images/creating-a-cluster-07.png){.thumbnail}
+![Autoscaling](images/creating-a-cluster7.png){.thumbnail}
 
 In the next step, choose the appropriate billing mode (monthly or hourly). You can also enable the anti-affinity mode here. 
 
-![Choose the billing mode](images/creating-a-cluster-08.png){.thumbnail}
+![Choose the billing mode](images/creating-a-cluster8.png){.thumbnail}
 
 > [!primary]
 > By enabling anti-affinity, current and future nodes will be launched on different hypervisors (physical servers), guaranteeing higher fault tolerance. Anti-affinity node pools can only include up to 5 nodes.
