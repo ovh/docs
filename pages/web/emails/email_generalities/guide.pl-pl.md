@@ -32,7 +32,7 @@ W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?a
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Znajdź `Oznaczenie serwera` w polu „Informacje ogólne”|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Znajdź „Oznaczenie serwera” w polu „Informacje ogólne”|
 |Przejdź do [Starsza wersja usługi MX Plan](#oldmxplan)|Przejdź do [Nowej wersji usługi MX Plan](#newmxplan)|
 
 ### Nowa wersja usługi MX Plan <a name="newmxplan"></a>

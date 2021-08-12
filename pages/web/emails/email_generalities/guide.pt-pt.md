@@ -31,7 +31,7 @@ Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção “Subscrição”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Consulte a `Referência do servidor` na secção “Resumo”.|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção “Subscrição”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Consulte a “Referência do servidor” na secção “Resumo”.|
 |Continuar a ler na secção “[Versão antiga da oferta MX Plan](#oldmxplan)”.|Continuar a ler na secção «[Nova versão da oferta MX Plan](#newmxplan)».|
 
 ### Nova versão da oferta MX Plan <a name="newmxplan"></a>
@@ -113,7 +113,7 @@ Deseja reforçar a segurança de acesso aos seus endereços de e-mail.
 
 Para isso, basta configurar a política de segurança da sua solução MX Plan.
 
-Sugerimos que siga o nosso manual "[Gerir a política de segurança de um serviço de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gerir-politica-de-seguranca-palavra-passe/)".
+Sugerimos que siga o nosso manual [Gerir a política de segurança de um serviço de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gerir-politica-de-seguranca-palavra-passe/).
 
 ##### **Reencaminhamentos**
 
@@ -123,33 +123,33 @@ Para isso, é preciso criar um reencaminhamento.
 
 Pode realizar de duas formas:
 
-- criar o seu reencaminhamento a partir do webmail, através das regras de caixa de entrada. Para isso, siga o manual "[Regras da caixa de entrada na interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/criar-regras-inbox-no-owa/#exemplo-1-redirecionar-e-mails-para-outro-endereco)".
+- criar o seu reencaminhamento a partir do webmail, através das regras de caixa de entrada. Para isso, siga o manual [Regras da caixa de entrada na interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/criar-regras-inbox-no-owa/#exemplo-1-redirecionar-e-mails-para-outro-endereco).
 
-- criar o seu reencaminhamento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Este método permite-lhe, por exemplo, criar um alias, ou seja, reencaminhar um endereço de e-mail que não existe para um endereço de e-mail existente. Para isso, siga o nosso manual "[Utilizar os reencaminhamentos de e-mail](https://docs.ovh.com/pt/emails/mail_partilhado_guia_dos_reencaminhamentos_email/#nova-versao-da-oferta-mx-plan_1)".
+- criar o seu reencaminhamento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Este método permite-lhe, por exemplo, criar um alias, ou seja, reencaminhar um endereço de e-mail que não existe para um endereço de e-mail existente. Para isso, siga o nosso manual [Utilizar os reencaminhamentos de e-mail](https://docs.ovh.com/pt/emails/mail_partilhado_guia_dos_reencaminhamentos_email/#nova-versao-da-oferta-mx-plan_1).
 
 ##### **Voicemail**
 
 Deve tirar as férias ou não terá acesso ao seu endereço de e-mail durante um certo período.
 
-Pode criar uma resposta automática. Sugerimos que siga o nosso manual "[Criar uma resposta automática a partir da interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/)".
+Pode criar uma resposta automática. Sugerimos que siga o nosso manual [Criar uma resposta automática a partir da interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/).
 
 ##### **Delegações**
 
 Deseja enviar um e-mail a partir do seu endereço de e-mail pessoal, **em vez** de outro endereço **de e-mail associado** ao seu domínio.
 
-Para isso, deverá configurar a delegação do endereço de e-mail em questão. Sugerimos que siga o nosso manual "[Delegar permissões numa conta](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_3013_atribuir_permissoes_full_access_a_uma_conta/)".
+Para isso, deverá configurar a delegação do endereço de e-mail em questão. Sugerimos que siga o nosso manual [Delegar permissões numa conta](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_3013_atribuir_permissoes_full_access_a_uma_conta/).
 
 ##### **Mailing-lists**
 
 Deseja enviar regularmente uma newsletter aos seus contactos.
 
-Para isso, pode criar uma mailing list. Sugerimos que siga o nosso manual "[Gerir e utilizar as mailing lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/)".
+Para isso, pode criar uma mailing list. Sugerimos que siga o nosso manual [Gerir e utilizar as mailing lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/).
 
 ##### **Pé de página**
 
 Deseja aplicar uma assinatura global ao conjunto dos endereços de e-mail do seu nome de domínio.
 
-O "rodapé" permite-lhe configurá-lo a partir da Área de Cliente. Sugerimos que siga o nosso manual "[Adicionar um rodapé aos seus e-mails](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_assinatura_automatica_-_disclaimer/)".
+O "rodapé" permite-lhe configurá-lo a partir da Área de Cliente. Sugerimos que siga o nosso manual [Adicionar um rodapé aos seus e-mails](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_assinatura_automatica_-_disclaimer/).
 
 ### Versão histórica da oferta MX Plan <a name="oldmxplan"></a>
 
@@ -226,25 +226,25 @@ Se pretender obter mais informações sobre os elementos necessários para confi
 
 Deseja reencaminhar os seus e-mails para outro destinatário, criar um alias ou ainda fazer sistematicamente uma cópia de outro endereço de e-mail.
 
-Para isso, é preciso criar um reencaminhamento. Sugerimos que siga o nosso manual "[Utilizar os reencaminhamentos de e-mail](https://docs.ovh.com/pt/emails/mail_partilhado_guia_dos_reencaminhamentos_email/#versao-antiga-da-oferta-mx-plan)".
+Para isso, é preciso criar um reencaminhamento. Sugerimos que siga o nosso manual [Utilizar os reencaminhamentos de e-mail](https://docs.ovh.com/pt/emails/mail_partilhado_guia_dos_reencaminhamentos_email/#versao-antiga-da-oferta-mx-plan).
 
 ##### **Voicemail**
 
 Deve tirar as férias ou não terá acesso ao seu endereço de e-mail durante um certo período.
 
-Pode então utilizar a resposta automática no seu endereço de e-mail. Sugerimos que siga o nosso manual "[Criar uma resposta automática para o seu endereço de e-mail](https://docs.ovh.com/pt/emails/guia_de_ajuda_a_implementacao_de_respostas_automaticas/)".
+Pode então utilizar a resposta automática no seu endereço de e-mail. Sugerimos que siga o nosso manual [Criar uma resposta automática para o seu endereço de e-mail](https://docs.ovh.com/pt/emails/guia_de_ajuda_a_implementacao_de_respostas_automaticas/).
 
 ##### **Delegações**
 
 Deseja **delegar todo o serviço de e-mail de um domínio a outra conta OVHcloud** ou **delegar uma ou várias contas de e-mail a outra conta OVHcloud**, para, por exemplo, permitir ao titular desta outra conta OVHcloud alterar a palavra-passe de um endereço de e-mail.
 
-Sugerimos que siga o nosso manual "[Delegue a gestão dos seus e-mails a outra pessoa](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/)".
+Sugerimos que siga o nosso manual [Delegue a gestão dos seus e-mails a outra pessoa](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/).
 
 ##### **Mailing-lists**
 
 Deseja enviar regularmente uma newsletter aos seus contactos.
 
-Para isso, pode criar uma mailing list. Sugerimos que siga o nosso manual "[Gerir e utilizar as mailing lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/)".
+Para isso, pode criar uma mailing list. Sugerimos que siga o nosso manual [Gerir e utilizar as mailing lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/).
 
 ## Saiba mais
 

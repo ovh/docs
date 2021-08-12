@@ -27,7 +27,7 @@ To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?act
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the "Summary" box|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the "Server model" in the "Summary" box|
 |Continue to [Legacy version of the MX Plan solution](#oldmxplan)|Continue to [New version of the MX Plan solution](#newmxplan)|
 
 ### New version of the MX Plan solution <a name="newmxplan"></a>

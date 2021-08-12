@@ -31,7 +31,7 @@ Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/au
 
 |Historische MX Plan Version|Neue MX Plan Version|
 |---|---|
-|![E-Mail](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Ihr Angebot steht in der Box „Abo“|![E-Mail](images/mxplan-starter-new-step1.png){.thumbnail}<br>Die `Server-Referenz` steht in der Box „Zusammenfassung“.|
+|![E-Mail](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Ihr Angebot steht in der Box „Abo“|![E-Mail](images/mxplan-starter-new-step1.png){.thumbnail}<br>Die „Server-Referenz“ steht in der Box „Zusammenfassung“.|
 |Weiter zur [historischen MX Plan Version](#oldmxplan)|Weiter zur [neuen MX Plan Version](#newmxplan)|
 
 ### Neue Version des MX Plan Angebots <a name="newmxplan"></a>

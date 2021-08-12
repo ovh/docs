@@ -28,11 +28,11 @@ La soluzione MX Plan di OVH con cui potrai inviare e ricevere messaggi dal dispo
 
 Una volta creata e disponibile la soluzione MX Plan, è possibile gestirla dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovh.it/mxplan-migration/), la versione disponibile sarà differente. Per verificare quella attiva
 
-accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione Web Cloud. e seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
+Accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione Web Cloud. E seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
 
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Il servizio è indicato nel riquadro “Abbonamento”|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Il servizio è indicato nel riquadro “Riepilogo”, sotto la voce `Referenza server`|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Il servizio è indicato nel riquadro “Abbonamento”|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Il servizio è indicato nel riquadro “Riepilogo”, sotto la voce "Referenza server"|
 |Consulta il paragrafo [ Vecchia versione della soluzione MX Plan](#oldmxplan)|Consulta il paragrafo: [Nuova versione della soluzione MX Plan](#newmxplan)|
 
 ### Nuova versione della soluzione MX Plan <a name="newmxplan"></a>
@@ -78,7 +78,7 @@ Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà
 
 ##### **2. Utilizza il software che preferisci**
 
-Per utilizzare il tuo indirizzo email su un software di terze parti, devi configurare questo indirizzo email sul dispositivo (PC, Mac, smartphone o tablet). consultando, se necessario, le nostre guide disponibili online:
+Per utilizzare il tuo indirizzo email su un software di terze parti, devi configurare questo indirizzo email sul dispositivo (PC, Mac, smartphone o tablet).Consultando, se necessario, le nostre guide disponibili online:
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
@@ -145,13 +145,13 @@ Per farlo, è necessario configurare la delega dell'indirizzo email in questione
 
 Invia regolarmente una newsletter ai tuoi contatti
 
-per creare una mailing list. Per maggiori informazioni, consulta la guida [Gestire e utilizzare le mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/).
+Per creare una mailing list. Per maggiori informazioni, consulta la guida [Gestire e utilizzare le mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/).
 
 ##### **Firma**
 
 Vuoi applicare una firma globale a tutti gli indirizzi email del tuo dominio.
 
-Il "piede pagina" ti permette di configurarlo dal tuo Spazio Cliente. Segui la nostra guida ["Aggiungere un piede di pagina sulle tue email](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_firma_automatica_-_disclaimer/)".
+Il "piede pagina" ti permette di configurarlo dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Segui la nostra guida ["Aggiungere un piede di pagina sulle tue email](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_firma_automatica_-_disclaimer/)".
 
 ### Vecchia versione della soluzione MX Plan <a name="oldmxplan"></a>
 
@@ -172,10 +172,9 @@ Nella nuova finestra inserisci le informazioni richieste:
 |Campo|Descrizione|  
 |---|---|  
 |Nome dell’account|Inserisci il nome che vuoi assegnare al tuo account email (ad esempio nome.cognome). Il dominio interessato è inserito di default.|  
-|Descrizione dell’account|Inserisci una breve descrizione che ti permetterà di riconoscere questo account tra quelli presenti nel tuo Spazio Cliente OVHcloud.|  
+|Descrizione dell’account|Inserisci una breve descrizione che ti permetterà di riconoscere questo account tra quelli presenti nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).|  
 |Dimensione dell’account|Seleziona la dimensione del tuo account, cioè lo spazio a disposizione per conservare i messaggi.|  
-|Password|Crea una password e confermala. Per motivi di sicurezza ti consigliamo di non utilizzare due volte la stessa password, scegliere una password che non contenga informazioni personali (ad esempio nome, cognome o data di nascita) e di modificarla regolarmente.
-|
+|Password|Crea una password e confermala. Per motivi di sicurezza ti consigliamo di non utilizzare due volte la stessa password, scegliere una password che non contenga informazioni personali (ad esempio nome, cognome o data di nascita) e di modificarla regolarmente.|
 
 Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la correttezza delle informazioni inserite e poi clicca su `Conferma`{.action}. Ripeti questa operazione per tutti gli account che vuoi creare, in base al numero a tua disposizione.
 
@@ -195,7 +194,7 @@ Si apre di default la casella della posta in arrivo. Per maggiori informazioni s
 
 ##### **2. Utilizza il software che preferisci**
 
-Per utilizzare il tuo indirizzo email su un software di terze parti, devi configurare questo indirizzo email sul dispositivo (PC, Mac, smartphone o tablet). consultando, se necessario, le nostre guide disponibili online:
+Per utilizzare il tuo indirizzo email su un software di terze parti, devi configurare questo indirizzo email sul dispositivo (PC, Mac, smartphone o tablet).Consultando, se necessario, le nostre guide disponibili online:
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
@@ -235,7 +234,7 @@ Per effettuare questa operazione è necessario creare un reindirizzamento. Segui
 
 Dovete partire in congedo o non avrete accesso al vostro indirizzo email per un certo periodo di tempo.
 
-e utilizzare la risposta automatica sul proprio indirizzo email. Per effettuare questa operazione, consulta la guida Creare [una risposta automatica per il proprio indirizzo email](https://docs.ovh.com/it/emails/servizio_email_configura_una_risposta_automatica/).
+E utilizzare la risposta automatica sul proprio indirizzo email. Per effettuare questa operazione, consulta la guida Creare [una risposta automatica per il proprio indirizzo email](https://docs.ovh.com/it/emails/servizio_email_configura_una_risposta_automatica/).
 
 ##### **Delegazioni**
 
@@ -247,7 +246,7 @@ Segui la nostra guida [Delegare la gestione delle tue email a un'altra persona](
 
 Invia regolarmente una newsletter ai tuoi contatti
 
-per creare una mailing list. Per maggiori informazioni, consulta la guida [Gestire e utilizzare le mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/).
+Per creare una mailing list. Per maggiori informazioni, consulta la guida [Gestire e utilizzare le mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/).
 
 ## Per saperne di più
 

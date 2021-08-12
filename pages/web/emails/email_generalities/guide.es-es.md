@@ -27,18 +27,18 @@ Usted acaba de adquirir una solución MX Plan. que permite disfrutar de direccio
 
 Una vez que la solución MX Plan haya sido creada y esté disponible, podrá administrarla desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](https://www.ovh.es/mxplan-migration/), tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone.
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección Web Cloud. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Siga leyendo esta guía en función de su versión:
+Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección "Web Cloud". En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
-|![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro Suscripción, en el epígrafe Producto.|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro Resumen, en el epígrafe Referencia del servidor.|
+|![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro "Suscripción", en el epígrafe Producto.|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro "Resumen", en el epígrafe "Referencia del servidor".|
 |Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](#oldmxplan).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](#newmxplan).|
 
 ### Nueva versión de la solución MX Plan <a name="newmxplan"></a>
 
 #### Acceder a la gestión del servicio
 
-Si dispone de la nueva versión de la solución MX Plan, Si no obtiene la siguiente vista, consulte la [información anterior](./#instructions).  
+Si dispone de la nueva versión de la solución MX Plan, Si no obtiene la siguiente vista, consulte la [información anterior](#instructions).  
 
 ![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}
 
@@ -66,15 +66,15 @@ Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action} 
 
 Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. Para ello, puede utilizar el webmail Outlook Web Access (OWA) o el programa que desee.
 
-##### **2.1. Utilizar el webmail Outlook Web Access (OWA)**
+##### **1. Utilizar el webmail Outlook Web Access (OWA)**
 
 Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde el webmail Outlook Web Access (OWA)](../utilisation-owa/).
+La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde el webmail Outlook Web Access (OWA)](https://docs.ovh.com/es/emails/uso-outlook-en-la-web/).
 
 ![Correo electrónico](images/mxplan-starter-new-step4.png){.thumbnail}
 
-##### **2.2. Utilizar el programa que elija**
+##### **2. Utilizar el programa que elija**
 
 Para utilizar su cuenta de correo electrónico en un software de terceros, debe configurar esta dirección de correo electrónico en el dispositivo que desee (PC, Mac, smartphone o tablet). Si lo necesita, consulte la guía correspondiente:
 
@@ -131,7 +131,7 @@ Puede hacerlo de dos formas:
 
 Tiene que salir de vacaciones o no tendrá acceso a su dirección de correo durante un cierto período.
 
-A continuación, puede crear un contestador automático. Para más información, consulte nuestra guía "[Implementar un contestador automático desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_crear_un_contestador_con_el_webmail_owa/)".
+A continuación, puede crear un contestador automático. Para más información, consulte nuestra guía [Implementar un contestador automático desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_crear_un_contestador_con_el_webmail_owa/).
 
 ##### **Delegaciones**
 
@@ -182,7 +182,7 @@ Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action} 
 
 Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. Para ello, puede utilizar el webmail Roundcube o el programa que desee.
 
-##### **2.1. Utilizar el webmail Roundcube**
+##### **1. Utilizar el webmail Roundcube**
 
 Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
@@ -190,7 +190,7 @@ Se abrirá la bandeja de entrada. Para más información, consulte nuestra guía
 
 ![Correo electrónico](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
-##### **2.2. Utilizar el programa que elija**
+##### **2. Utilizar el programa que elija**
 
 Para utilizar su cuenta de correo electrónico en un software de terceros, debe configurar esta dirección de correo electrónico en el dispositivo que desee (PC, Mac, smartphone o tablet). Si lo necesita, consulte la guía correspondiente:
 
@@ -232,13 +232,13 @@ Para ello, deberá crear una redirección. Para más información, consulte nues
 
 Tiene que salir de vacaciones o no tendrá acceso a su dirección de correo durante un cierto período.
 
-A continuación, podrá utilizar el contestador automático en su dirección de correo. Siga nuestra guía "[Crear un contestador para una dirección de correo electrónico](https://docs.ovh.com/es/emails/guia_de_creacion_de_un_contestador/)".
+A continuación, podrá utilizar el contestador automático en su dirección de correo. Siga nuestra guía [Crear un contestador para una dirección de correo electrónico](https://docs.ovh.com/es/emails/guia_de_creacion_de_un_contestador/).
 
 ##### **Delegaciones**
 
 Desea **delegar todo el servicio de correo de un dominio a otra cuenta de OVHcloud** o **delegar una o varias cuentas de correo en otra cuenta de OVHcloud**, por ejemplo, para permitir al titular de esta otra cuenta de OVHcloud cambiar la contraseña de una dirección de correo.
 
-Le invitamos a seguir nuestra guía "[Celebrar la gestión de su correo a otra persona](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/)".
+Le invitamos a seguir nuestra guía [Celebrar la gestión de su correo a otra persona](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/).
 
 ##### **Listas de correo**
 
