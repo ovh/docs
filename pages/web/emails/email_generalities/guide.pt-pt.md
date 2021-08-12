@@ -6,82 +6,83 @@ section: Introdução
 legacy_guide_number: g1474
 ---
 
-**Última atualização: 10/05/2019**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+**Última atualização: 19/07/2021**
 
-Adquiriu um serviço MX Plan, que lhe permite usufruir de endereços de e-mail, com os quais pode enviar e receber mensagens a partir de um dispositivo à sua escolha. 
+## Objetivo
+
+Adquiriu um serviço MX Plan, que lhe permite beneficiar de endereços de e-mail, com os quais poderá enviar e receber mensagens no dispositivo que preferir.
 
 **Saiba como começar a usar a oferta MX Plan.**
 
 ## Requisitos
 
-- Dispor de uma oferta MX Plan (incluída num plano de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, num [alojamento gratuito Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external} ou disponível em separado).
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
+- Dispor de uma oferta MX Plan Está disponível através de: uma oferta de [alojamento web](https://www.ovh.pt/alojamento-partilhado/), o [alojamento gratuito Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml) ou a oferta MX Plan sozinha.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}.
 
-## Instruções
+## Instruções <a name="instructions"></a>
 
-Depois de a oferta MX Plan estar criada e disponível, pode geri-la a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de se [o serviço foi migrado recentemente]({ovh_www}/mxplan-migration/){.external}. Antes de continuar, deve verificar a versão de que dispõe. 
+Depois de criada e disponível a oferta MX Plan, poderá geri-la a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de se [o serviço foi migrado recentemente](https://www.ovh.pt/mxplan-migration/). Antes de continuar, deve verificar a versão de que dispõe.
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}. Clique em E-mails na barra à esquerda e selecione o serviço correspondente. Continue a ler em função da sua versão:
+Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção "Web Cloud". Clique em `E-mails`{.action} na barra à esquerda e selecione o serviço correspondente. Continue a ler em função da sua versão:
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção “Subscrição”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Consulte a `Referência do servidor` na secção “Resumo”.|
-|Continuar a ler na secção “[Versão antiga da oferta MX Plan](./#versao-antiga-da-oferta-mx-plan_2)”.|Continuar a ler na secção “[Nova versão da oferta MX Plan](./#nova-versao-da-oferta-mx-plan)”.|
+|Continuar a ler na secção “[Versão antiga da oferta MX Plan](#oldmxplan)”.|Continuar a ler na secção «[Nova versão da oferta MX Plan](#newmxplan)».|
 
-### Nova versão da oferta MX Plan
+### Nova versão da oferta MX Plan <a name="newmxplan"></a>
 
-#### 1 - Aceder à interface de gestão da oferta
+#### Aceder à gestão da sua oferta
 
-Se possuir a nova versão da oferta MX Plan, a secção “Informações gerais” deverá apresentar as mesmas informações que a imagem abaixo. Caso contrário, [volte para a secção anterior](./#instrucoes) e certifique-se de que está a consultar a versão correta.  
+Se possuir a nova versão da oferta MX Plan, Se não obter a seguinte informação, consulte as [informações anteriores](./#instructions).  
 
 ![email](images/mxplan-starter-new-step1.png){.thumbnail}
 
-#### 2 - Criar endereços de e-mail
+#### Adicionar uma conta de e-mail
 
-Para criar um endereço de e-mail, aceda a `Contas de e-mail`{.action}. Poderá consultar as contas de e-mail disponíveis e adicionar novas contas. Para isso, clique no botão `Adicionar uma conta`{.action}.
+Para criar um endereço de e-mail, aceda a `Contas de e-mail`{.action}. A janela que aparece lista as contas já disponíveis, assim como as que ainda pode criar. Para adicionar uma nova conta de e-mail, clique no botão `Adicionar uma conta`{.action}.
 
 ![email](images/mxplan-starter-new-step2.png){.thumbnail}
 
 Na nova janela que aparecerá, preencha as informações necessárias:
 
-|Informação|Descrição|  
-|---|---|  
-|Conta de e-mail|Este campo será automaticamente preenchido com um nome temporário. Elimine-o e indique o nome do seu endereço de e-mail (“nome.sobrenome”, por exemplo). O domínio que fará parte do endereço de e-mail aparecerá pré-selecionado na lista.|  
-|Nome|Introduza um nome.|  
-|Sobrenome|Introduza um sobrenome.|  
+|Informação|Descrição|
+|---|---|
+|Conta de e-mail|Um nome temporário já se encontra pré - preenchido na zona de texto: elimine-o e indique o seu novo endereço de e-mail (seu nome.apelido, por exemplo). O domínio que fará parte do endereço de e-mail aparecerá pré-selecionado na lista.|
+|Nome|Introduza um nome.|
+|Sobrenome|Introduza um sobrenome.|
 |Nome a mostrar|Insira o nome que pretende que figure como remetente quando envia e-mails a partir deste endereço.|
-|Palavra-passe|Indique uma palavra-passe e introduza-a novamente para confirmar. Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento, por exemplo) e renove-a regularmente.|
+|Palavra-passe|[Indique uma palavra-passe](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/) e confirme-a. Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento, por exemplo) e renove-a regularmente.|
 
 Depois de preencher todos os campos, clique em `Seguinte`{.action} e verifique as informações apresentadas no resumo. Se as informações estiverem corretas, clique em `Validar`{.action}. Repita este passo sempre que necessário, de acordo com o número de contas disponíveis.
 
 ![email](images/mxplan-starter-new-step3.png){.thumbnail}
 
-#### 3 - Utilizar os endereços de e-mail
+#### Utilizar os seus endereços de e-mail
 
-Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, existem duas opções:
+Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, tem duas possibilidades: utilizar o webmail Outlook Web Access (OWA) ou utilizar o software à sua escolha.
 
-##### 3.1. Utilizar o webmail Outlook Web Access (OWA)
+##### **1. Utilizar o webmail Outlook Web Access (OWA)**
 
-Aceda à página “[Ligação ao webmail]({ovh_www}/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
+Aceda à página “[Ligação ao webmail](https://www.ovh.pt/mail/)” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
-Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual [Utilizar um endereço de e-mail a partir do Outlook Web Access (OWA)](https://docs.ovh.com/gb/en/emails/using-owa/){.external} (versão em inglês).
+Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual [Utilizar o endereço de e-mail a partir do webmail Outlook Web Access (OWA)](https://docs.ovh.com/pt/emails/utilizacao-owa/).
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 
-##### 3.2. Configurar o endereço de e-mail num dispositivo
+##### **2. Utilizar o software à sua escolha**
 
-Pode configurar o seu endereço de e-mail no dispositivo que desejar (smartphone ou tablet, por exemplo). Para isso, pode consultar os nossos manuais:
+Para utilizar o seu endereço de e-mail num software de terceiros, deve configurar este endereço de e-mail no dispositivo pretendido (PC, Mac, smartphone ou tablet). Para isso, pode consultar os nossos manuais:
 
-|Windows|Outlook|Apple|Android|Outro|
-|---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/){.external} (versão em inglês)|[Outlook 2016](https://docs.ovh.com/pt/emails/configuracao-outlook-2016/){.external}|[Mail de macOS (última versão)](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_de_mail_para_mac_-_el_capitan/){.external}|[Android (última versão)](https://docs.ovh.com/gb/en/emails/configuration-android/){.external} (versão em inglês)|[BlackBerry](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_configuracao_blacklberry/){.external}|
-|[Windows 8](https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_em_windows_8/){.external}|[Outlook 2013](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-outlook-2013/){.external} (versão em francês)|[Mail de Mac (Mavericks & Yosemite)](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-mavericks-et-yosemite/){.external} (versão em francês)|[Android 5.1](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_configuracao_de_um_smarpthone_com_android_51/){.external}|[Gmail](https://docs.ovh.com/gb/en/emails/gmail-configuration/){.external} (versão em inglês)|
-|[Windows Phone](https://docs.ovh.com/pt/emails/mail_partilhado_guia_de_configuracao_windows_phone/){.external}|[Outlook 2011 Mac](https://docs.ovh.com/pt/emails/mail_partilhado_guia_de_configuracao_do_outlook_2011_no_mac/){.external}|[Mail para iPhone ou iPad (iOS 7 e versões posteriores)](https://docs.ovh.com/pt/emails/mail_partilhado_guia_configuracao_iphone_ios_91/){.external}|[Android 4.4](https://docs.ovh.com/pt/emails/mail_partilhado_guia_de_configuracao_de_um_smarpthone_com_android_44/){.external}| |
-|[Windows Mail](https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_windows_mail/){.external}|[Outlook 2010](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-outlook-2010/){.external} (versão em francês)|[Thunderbird em Mac](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_para_thunderbird/){.external}|[Android 4.1.2](https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_num_tablet_android_412/){.external}| |
-|[Thunderbird em Windows](https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_thunderbird/){.external}|[Outlook 2007](https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_outlook_2007/){.external}| | | |
-| |[Outlook.com](https://docs.ovh.com/fr/emails/configuration-outlook-com/){.external} (versão em francês)| | | |
+|Windows|Outlook|Apple|Android|
+|---|---|---|---|
+|[Windows 10 (versão em inglês)](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)|[Outlook Windows](https://docs.ovh.com/pt/emails/configuracao-outlook-2016/)|[Mail de macOS (última versão)](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_de_mail_para_mac_-_el_capitan/)|[Android (última versão) (versão em inglês)](https://docs.ovh.com/gb/en/emails/configuration-android/)|
+|[Thunderbird em Windows](https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/pt/emails/configuracao-outlook-2016-mac/)|[Mail para iPhone ou iPad](https://docs.ovh.com/pt/emails/mail_partilhado_guia_configuracao_iphone_ios_91/)||
+||[Outlook.com (versão em francês)](https://docs.ovh.com/fr/emails/configuration-outlook-com/)|[Thunderbird em Mac](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_para_thunderbird/)|| |
 
 Se pretender obter mais informações sobre os elementos necessários para configurar o seu endereço de e-mail, consulte as configurações que deverá utilizar:
 
@@ -89,32 +90,78 @@ Se pretender obter mais informações sobre os elementos necessários para confi
 
 |Tipo de servidor|Nome do servidor|Porta (com SSL)|Porta (sem SSL)|
 |---|---|---|---|
-|Entrada|SSL0.OVH.NET|993|143|
-|Saída|SSL0.OVH.NET|465|587|
+|De entrada|ssl0.ovh.net|993|143|
+|De saída|ssl0.ovh.net|465|587|
 
 - **Configuração em POP**
 
 |Tipo de servidor|Nome do servidor|Porta (com SSL)|Porta (sem SSL)|
 |---|---|---|---|
-|Entrada|SSL0.OVH.NET|995|110|
-|Saída|SSL0.OVH.NET|465|587|
+|De entrada|ssl0.ovh.net|995|110|
+|De saída|ssl0.ovh.net|465|587|
 
 > [!warning]
 >
-> Se tiver problemas em configurar o endereço de e-mail no seu dispositivo, [consulte os nossos manuais de configuração](https://docs.ovh.com/pt/emails/) ou entre em contacto com o editor da aplicação que estiver a utilizar.
+> Se tiver problemas em configurar o endereço de e-mail no seu dispositivo, [consulte os nossos manuais de configuração](../) ou entre em contacto com o editor da aplicação que estiver a utilizar.
 >
 
-### Versão antiga da oferta MX Plan
+#### Funcionalidades avançadas
 
-#### 1 - Aceder à interface de gestão da oferta
+##### **Política de segurança**
 
-Se possuir a versão antiga da oferta MX Plan, a secção “Informações gerais” deverá apresentar as mesmas informações que a imagem abaixo. Caso contrário, [volte para a secção anterior](./#instrucoes) e certifique-se de que está a consultar a versão correta. 
+Deseja reforçar a segurança de acesso aos seus endereços de e-mail.
+
+Para isso, basta configurar a política de segurança da sua solução MX Plan.
+
+Sugerimos que siga o nosso manual "[Gerir a política de segurança de um serviço de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gerir-politica-de-seguranca-palavra-passe/)".
+
+##### **Reencaminhamentos**
+
+Deseja reencaminhar os seus e-mails para outro destinatário, criar um alias ou ainda fazer sistematicamente uma cópia de outro endereço de e-mail.
+
+Para isso, é preciso criar um reencaminhamento.
+
+Pode realizar de duas formas:
+
+- criar o seu reencaminhamento a partir do webmail, através das regras de caixa de entrada. Para isso, siga o manual "[Regras da caixa de entrada na interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/criar-regras-inbox-no-owa/#exemplo-1-redirecionar-e-mails-para-outro-endereco)".
+
+- criar o seu reencaminhamento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Este método permite-lhe, por exemplo, criar um alias, ou seja, reencaminhar um endereço de e-mail que não existe para um endereço de e-mail existente. Para isso, siga o nosso manual "[Utilizar os reencaminhamentos de e-mail](https://docs.ovh.com/pt/emails/mail_partilhado_guia_dos_reencaminhamentos_email/#nova-versao-da-oferta-mx-plan_1)".
+
+##### **Voicemail**
+
+Deve tirar as férias ou não terá acesso ao seu endereço de e-mail durante um certo período.
+
+Pode criar uma resposta automática. Sugerimos que siga o nosso manual "[Criar uma resposta automática a partir da interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/)".
+
+##### **Delegações**
+
+Deseja enviar um e-mail a partir do seu endereço de e-mail pessoal, **em vez** de outro endereço **de e-mail associado** ao seu domínio.
+
+Para isso, deverá configurar a delegação do endereço de e-mail em questão. Sugerimos que siga o nosso manual "[Delegar permissões numa conta](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_3013_atribuir_permissoes_full_access_a_uma_conta/)".
+
+##### **Mailing-lists**
+
+Deseja enviar regularmente uma newsletter aos seus contactos.
+
+Para isso, pode criar uma mailing list. Sugerimos que siga o nosso manual "[Gerir e utilizar as mailing lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/)".
+
+##### **Pé de página**
+
+Deseja aplicar uma assinatura global ao conjunto dos endereços de e-mail do seu nome de domínio.
+
+O "rodapé" permite-lhe configurá-lo a partir da Área de Cliente. Sugerimos que siga o nosso manual "[Adicionar um rodapé aos seus e-mails](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_assinatura_automatica_-_disclaimer/)".
+
+### Versão histórica da oferta MX Plan <a name="oldmxplan"></a>
+
+#### Aceder à gestão da sua oferta
+
+Se possuir a versão antiga da oferta MX Plan, Se não obter a seguinte informação, consulte as [informações anteriores](./#instructions).
 
 ![email](images/mxplan-starter-legacy-step1.png){.thumbnail}
 
-#### 2 - Criar endereços de e-mail
+#### Adicionar uma conta de e-mail
 
-Para criar um endereço de e-mail, aceda ao separador `E-mails`{.action}. Aparecerá uma tabela com todas os endereços de e-mail criados na sua oferta. De seguida, clique no botão `Criar um endereço de e-mail`{.action}.
+Para criar um endereço de e-mail, aceda ao separador `Contas de e-mail`{.action}. Aparecerá uma tabela com todos os endereços de e-mail criados na sua oferta. De seguida, clique no botão `Criar um endereço de e-mail`{.action}.
 
 ![email](images/mxplan-starter-legacy-step2.png){.thumbnail}
 
@@ -122,8 +169,8 @@ Na nova janela que aparecerá, preencha as informações necessárias:
 
 |Informação|Descrição|  
 |---|---|  
-|Nome da conta|Introduza um nome para o seu endereço de e-mail (por exemplo, nome.sobrenome). O domínio em questão já está preenchido por predefinição.|  
-|Descrição da conta|Insira uma breve descrição que lhe permita diferenciar esta conta do resto das contas na sua Área de Cliente OVH.|  
+|Nome da conta|Introduza um nome para o seu endereço de e-mail (por exemplo, nome.apelido). O domínio em questão já está preenchido por predefinição.|  
+|Descrição da conta|Indique uma breve descrição que lhe permita reconhecer esta conta entre as outras presentes na sua Área de Cliente OVHcloud.|  
 |Tamanho da conta|Selecione o tamanho da conta que pretende. Trata-se do espaço que o seu endereço terá para armazenar mensagens.|  
 |Palavra-passe|Indique uma palavra-passe e introduza-a novamente para confirmar. Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento, por exemplo) e renove-a regularmente.|
 
@@ -131,30 +178,27 @@ Depois de preencher todos os campos, clique em `Seguinte`{.action} e verifique a
 
 ![email](images/mxplan-starter-legacy-step3.png){.thumbnail}
 
-#### 3 - Utilizar os endereços de e-mail
+#### Utilizar os seus endereços de e-mail
 
-Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, existem duas opções:
+Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, pode utilizar o webmail RoundCube ou o programa à sua escolha.
 
-##### 3.1. Utilizar o webmail RoundCube
+##### **1. Utilizar o webmail RoundCube**
 
-Aceda à página “[Ligação ao webmail](https://www.ovh.pt/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
+Aceda à página “[Ligação ao webmail](https://www.ovh.pt/mail/)” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
-A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual “[Guia de utilização do Roundcube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/){.external}”.
+A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual “[Utilizar um endereço de e-mail a partir do Outlook Web Access (OWA)](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/)” (versão em inglês).
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
-##### 3.2. Configurar o endereço de e-mail num dispositivo
+##### **2. Utilizar o software à sua escolha**
 
-Pode configurar o seu endereço de e-mail no dispositivo que desejar (smartphone ou tablet, por exemplo). Para isso, pode consultar os nossos manuais:
+Para utilizar o seu endereço de e-mail num software de terceiros, deve configurar este endereço de e-mail no dispositivo pretendido (PC, Mac, smartphone ou tablet). Para isso, pode consultar os nossos manuais:
 
-|Windows|Outlook|Apple|Android|Outro|
-|---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/){.external} (versão em inglês)|[Outlook 2016](https://docs.ovh.com/fr/emails/configuration-outlook-2016/){.external}|[Mail de macOS (última versão)](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-el-capitan/){.external}|[Android (última versão)](https://docs.ovh.com/gb/en/emails/configuration-android/){.external} (versão em inglês)|[BlackBerry](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-blackberry/){.external}|
-|[Windows 8](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-sous-windows-8/){.external}|[Outlook 2013](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-outlook-2013/){.external} (versão em francês)|[Mail de Mac (Mavericks & Yosemite)](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-mavericks-et-yosemite/){.external} (versão em francês)|[Android 5.1](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-dun-telephone-mobile-sous-android-version-51/){.external}|[Gmail](https://docs.ovh.com/gb/en/emails/gmail-configuration/){.external} (versão em inglês)|
-|[Windows Phone](https://docs.ovh.com/fr/emails/configuration-windows-phone-mail-mutu/){.external}|[Outlook 2011 Mac](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-outlook-2011-sur-mac/){.external}|[Mail para iPhone ou iPad (iOS 7 e versões posteriores)](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/){.external}|[Android 4.4](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-dun-telephone-mobile-sous-android-version-44/){.external}| |
-|[Windows Mail](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-windows-mail/){.external}|[Outlook 2010](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-outlook-2010/){.external} (versão em francês)|[Thunderbird em Mac](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/){.external}|[Android 4.1.2](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-sous-tablette-android-412/){.external}| |
-|[Thunderbird em Windows](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/){.external}|[Outlook 2007](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-outlook-2007/){.external}| | | |
-| |[Outlook.com](https://docs.ovh.com/fr/emails/configuration-outlook-com/){.external} (versão em francês)| | | |
+|Windows|Outlook|Apple|Android|
+|---|---|---|---|
+|[Windows 10 (versão em inglês)](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)|[Outlook Windows](https://docs.ovh.com/pt/emails/configuracao-outlook-2016/)|[Mail de macOS (última versão)](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_de_mail_para_mac_-_el_capitan/)|[Android (última versão) (versão em inglês)](https://docs.ovh.com/gb/en/emails/configuration-android/)|
+|[Thunderbird em Windows](https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/pt/emails/configuracao-outlook-2016-mac/)|[Mail para iPhone ou iPad](https://docs.ovh.com/pt/emails/mail_partilhado_guia_configuracao_iphone_ios_91/)|
+||[Outlook.com (versão em francês)](https://docs.ovh.com/fr/emails/configuration-outlook-com/)|[Thunderbird em Mac](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_para_thunderbird/)|
 
 Se pretender obter mais informações sobre os elementos necessários para configurar o seu endereço de e-mail, consulte as configurações que deverá utilizar:
 
@@ -162,21 +206,50 @@ Se pretender obter mais informações sobre os elementos necessários para confi
 
 |Tipo de servidor|Nome do servidor|Porta (com SSL)|Porta (sem SSL)|
 |---|---|---|---|
-|Entrada|SSL0.OVH.NET|993|143|
-|Saída|SSL0.OVH.NET|465|587|
+|De entrada|ssl0.ovh.net|993|143|
+|De saída|ssl0.ovh.net|465|587|
 
 - **Configuração em POP**
 
 |Tipo de servidor|Nome do servidor|Porta (com SSL)|Porta (sem SSL)|
 |---|---|---|---|
-|Entrada|SSL0.OVH.NET|995|110|
-|Saída|SSL0.OVH.NET|465|587|
+|De entrada|ssl0.ovh.net|995|110|
+|De saída|ssl0.ovh.net|465|587|
 
 > [!warning]
 >
-> Se tiver problemas em configurar o endereço de e-mail no seu dispositivo, [consulte os nossos manuais de configuração](https://docs.ovh.com/pt/emails/) ou entre em contacto com o editor da aplicação que estiver a utilizar.
->
+> Se tiver problemas em configurar o endereço de e-mail no seu dispositivo, [consulte os nossos manuais de configuração](../) ou entre em contacto com o editor da aplicação que estiver a utilizar.
 
-## Quer saber mais?
+#### Funcionalidades avançadas
+
+##### **Reencaminhamento**
+
+Deseja reencaminhar os seus e-mails para outro destinatário, criar um alias ou ainda fazer sistematicamente uma cópia de outro endereço de e-mail.
+
+Para isso, é preciso criar um reencaminhamento. Sugerimos que siga o nosso manual "[Utilizar os reencaminhamentos de e-mail](https://docs.ovh.com/pt/emails/mail_partilhado_guia_dos_reencaminhamentos_email/#versao-antiga-da-oferta-mx-plan)".
+
+##### **Voicemail**
+
+Deve tirar as férias ou não terá acesso ao seu endereço de e-mail durante um certo período.
+
+Pode então utilizar a resposta automática no seu endereço de e-mail. Sugerimos que siga o nosso manual "[Criar uma resposta automática para o seu endereço de e-mail](https://docs.ovh.com/pt/emails/guia_de_ajuda_a_implementacao_de_respostas_automaticas/)".
+
+##### **Delegações**
+
+Deseja **delegar todo o serviço de e-mail de um domínio a outra conta OVHcloud** ou **delegar uma ou várias contas de e-mail a outra conta OVHcloud**, para, por exemplo, permitir ao titular desta outra conta OVHcloud alterar a palavra-passe de um endereço de e-mail.
+
+Sugerimos que siga o nosso manual "[Delegue a gestão dos seus e-mails a outra pessoa](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/)".
+
+##### **Mailing-lists**
+
+Deseja enviar regularmente uma newsletter aos seus contactos.
+
+Para isso, pode criar uma mailing list. Sugerimos que siga o nosso manual "[Gerir e utilizar as mailing lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/)".
+
+## Saiba mais
+
+A migração das ofertas históricas MX Plan para as novas ofertas MX Plan está em curso. Se deseja solicitar a migração da sua oferta prioritariamente, pode seguir as indicações [desta página](https://www.ovh.pt/mxplan-migration/#accordion_6001-4).
+
+Se as suas necessidades evoluírem e pretender usufruir de funcionalidades suplementares, pode igualmente [migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/migracao-endereco-email-partilhado-vers-exchange/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
