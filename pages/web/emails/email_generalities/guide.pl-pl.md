@@ -114,7 +114,7 @@ Chcesz zwiększyć bezpieczeństwo dostępu do Twoich kont e-mail.
 
 Możesz to zrobić, ustawiając politykę bezpieczeństwa Twojego rozwiązania MX Plan.
 
-Zapraszamy do zapoznania się z naszym przewodnikiem "[Zarządzanie polityką bezpieczeństwa usługi e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-polityka-bezpieczenstwa-exchange/)".
+Zapraszamy do zapoznania się z naszym przewodnikiem [Zarządzanie polityką bezpieczeństwa usługi e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-polityka-bezpieczenstwa-exchange/).
 
 ##### **Przekierowania**
 
@@ -124,33 +124,33 @@ W tym celu należy utworzyć przekierowanie.
 
 Możesz to zrobić na dwa sposoby:
 
-- utworzyć przekierowanie w interfejsie webmail zgodnie z regułami skrzynki odbiorczej. W tym celu zapoznaj się z naszym przewodnikiem "[Reguły skrzynki odbiorczej w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/tworzenie-regul-skrzynki-odbiorczej-w-owa/#przyklad-1-przekierowanie-e-maili-na-inny-adres)".
+- utworzyć przekierowanie w interfejsie webmail zgodnie z regułami skrzynki odbiorczej. W tym celu zapoznaj się z naszym przewodnikiem [Reguły skrzynki odbiorczej w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/tworzenie-regul-skrzynki-odbiorczej-w-owa/#przyklad-1-przekierowanie-e-maili-na-inny-adres).
 
-- utworzyć przekierowanie w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Metoda ta pozwala na przykład na utworzenie aliasu, czyli przekierowanie nieistniejącego konta e-mail na istniejący adres e-mail. W tym celu zapoznaj się z naszym przewodnikiem "[Korzystanie z przekierowań e-mail](https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/#nowa-wersja-uslugi-mx-plan_1)".
+- utworzyć przekierowanie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Metoda ta pozwala na przykład na utworzenie aliasu, czyli przekierowanie nieistniejącego konta e-mail na istniejący adres e-mail. W tym celu zapoznaj się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/#nowa-wersja-uslugi-mx-plan_1).
 
 ##### **Autoresponder**
 
 Musisz wyjechać na urlop lub nie będziesz mieć dostępu do swojego konta e-mail przez pewien czas.
 
-Następnie możesz utworzyć automatyczną skrzynkę głosową. Zapoznaj się z naszym przewodnikiem "[Automatyczna sekretarka w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/)".
+Następnie możesz utworzyć automatyczną skrzynkę głosową. Zapoznaj się z naszym przewodnikiem [Automatyczna sekretarka w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/).
 
 ##### **Delegacje**
 
 Chcesz wysłać wiadomość e-mail z Twojego osobistego adresu e-mail **zamiast** lub **z innego adresu** e-mail Twojej domeny.
 
-W tym celu skonfiguruj delegowanie odpowiedniego adresu e-mail. Zapraszamy do zapoznania się z naszym przewodnikiem "Delegowanie [uprawnień do konta](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/)".
+W tym celu skonfiguruj delegowanie odpowiedniego adresu e-mail. Zapraszamy do zapoznania się z naszym przewodnikiem Delegowanie [uprawnień do konta](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/).
 
 ##### **Mailing-lists**
 
 Chcesz regularnie wysyłać newsletter do swoich kontaktów.
 
-W tym celu możesz utworzyć listę mailingową. Zapraszamy do zapoznania się z naszym przewodnikiem "[Zarządzanie listami mailingowymi](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) i korzystanie z nich".
+W tym celu możesz utworzyć listę mailingową. Zapraszamy do zapoznania się z naszym przewodnikiem [Zarządzanie listami mailingowymi](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) i korzystanie z nich".
 
 ##### **Stopka strony**
 
 Chcesz zastosować globalny podpis do wszystkich adresów e-mail Twojej domeny.
 
-Opcja "Stopka" pozwala na konfigurację, która jest dostępna w panelu klienta. Zapraszamy do zapoznania się z naszym przewodnikiem "[Dodaj stopkę strony do Twoich e-maili](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_automatyczny_podpis_-_disclaimer/)".
+Opcja "Stopka strony" pozwala na konfigurację, która jest dostępna w panelu klienta. Zapraszamy do zapoznania się z naszym przewodnikiem [Tworzenie automatycznych podpisów](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_automatyczny_podpis_-_disclaimer/).
 
 ### Poprzednia wersja usługi MX Plan <a name="oldmxplan"></a>
 
@@ -170,9 +170,9 @@ W oknie, które się wyświetla, wprowadź wymagane informacje:
 
 |Informacja|Opis|  
 |---|---|  
-|Nazwa konta|Wprowadź nazwę, którą wybrałeś dla Twojego konta e-mail (np. Twoje imie.nazwisko). Nazwa wybranej domeny jest już wprowadzona domyślnie. |  
+|Nazwa konta|Wprowadź nazwę, którą wybrałeś dla Twojego konta e-mail (np. Twoje imie.nazwisko). Nazwa wybranej domeny jest już wprowadzona domyślnie.|  
 |Opis konta|Wpisz krótki opis umożliwiający rozpoznanie tego konta wśród innych kont wyświetlonych w Twoim Panelu klienta OVHcloud.|  
-|Rozmiar konta|Wybierz wielkość skrzynki pocztowej. Wielkość skrzynki pocztowej jest rozumiana jako przestrzeń przeznaczona do przechowywania wiadomości e-mail. |  
+|Rozmiar konta|Wybierz wielkość skrzynki pocztowej. Wielkość skrzynki pocztowej jest rozumiana jako przestrzeń przeznaczona do przechowywania wiadomości e-mail.|  
 |Hasło|Wpisz hasło i je potwierdź. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia, etc.) i regularnie je zmieniać.|
 
 Po uzupełnieniu pól kliknij `Dalej`{.action}, a następnie sprawdź informacje, które wyświetlą się w podsumowaniu. Jeśli są prawidłowe, kliknij `Zatwierdź`{.action}. Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od liczby kont, które posiadasz.
@@ -227,25 +227,25 @@ Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 
 Chcesz przekierować Twoje e-maile na innego adresata, utworzyć alias lub systematycznie utworzyć kopię innego konta e-mail.
 
-W tym celu należy utworzyć przekierowanie. Zapraszamy do zapoznania się z naszym przewodnikiem "[Korzystanie z przekierowań e-mail](https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/#poprzednia-wersja-uslugi-mx-plan)".
+W tym celu należy utworzyć przekierowanie. Zapraszamy do zapoznania się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/#poprzednia-wersja-uslugi-mx-plan).
 
 ##### **Autoresponder**
 
 Musisz wyjechać na urlop lub nie będziesz mieć dostępu do swojego konta e-mail przez pewien czas.
 
-Następnie możesz użyć automatycznej autorespondera na Twoim koncie e-mail. Zapraszamy do zapoznania się z naszym przewodnikiem "[Utwórz autoresponder dla konta e-mail](https://docs.ovh.com/pl/emails/przewodnik_dotyczacy_aktywacji_autorespondera/)".
+Następnie możesz użyć automatycznej autorespondera na Twoim koncie e-mail. Zapraszamy do zapoznania się z naszym przewodnikiem [Utwórz autoresponder dla konta e-mail](https://docs.ovh.com/pl/emails/przewodnik_dotyczacy_aktywacji_autorespondera/).
 
 ##### **Delegacje**
 
 Chcesz **przekazać całą usługę e-mail jednej domeny innemu kontu OVHcloud** lub **przekazać jedno lub kilka kont e-mail innemu kontu OVHcloud**, aby na przykład umożliwić posiadaczowi tego innego konta OVHcloud zmianę hasła do konta e-mail.
 
-Zapraszamy do zapoznania się z naszym przewodnikiem "[Delegowanie zarządzania e-mailami innej osobie](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/)".
+Zapraszamy do zapoznania się z naszym przewodnikiem [Delegowanie zarządzania e-mailami innej osobie](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/).
 
 ##### **Mailing-lists**
 
 Chcesz regularnie wysyłać newsletter do swoich kontaktów.
 
-W tym celu możesz utworzyć listę mailingową. Zapraszamy do zapoznania się z naszym przewodnikiem "[Zarządzanie listami mailingowymi](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) i korzystanie z nich".
+W tym celu możesz utworzyć listę mailingową. Zapraszamy do zapoznania się z naszym przewodnikiem [Zarządzanie listami mailingowymi](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) i korzystanie z nich.
 
 ## Sprawdź również
 

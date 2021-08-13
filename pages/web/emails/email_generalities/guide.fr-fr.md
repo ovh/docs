@@ -60,7 +60,7 @@ Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez l
 
 #### Utiliser vos adresses e-mail
 
-Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utiliser. Pour cela, vous disposez de deux possibilités, utiliser le webmail Outlook Web Access (OWA) ou uiliser le logiciel de votre choix.
+Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utiliser. Pour cela, vous disposez de deux possibilités, utiliser le webmail Outlook Web Access (OWA) ou utiliser le logiciel de votre choix.
 
 ##### **1. Utiliser le webmail Outlook Web Access (OWA)**
 
@@ -176,7 +176,7 @@ Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez l
 
 #### Utiliser vos adresses e-mail
 
-Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utiliser. Pour cela, vous disposez de deux possibilités, utiliser le webmail RoundCube ou uiliser le logiciel de votre choix.
+Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utiliser. Pour cela, vous disposez de deux possibilités, utiliser le webmail RoundCube ou utiliser le logiciel de votre choix.
 
 ##### **1. Utiliser le webmail RoundCube**
 
