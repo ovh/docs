@@ -19,7 +19,7 @@ OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dan
 > [!warning]
 >
 > [OVH Mail Migrator](../exchange-migration-de-comptes-e-mail-ovh-mail-migrator/) permet de migrer vos messages d'un serveur e-mail à un autre.</br>
-> Si vos e-mails sont uniquement enregistrés en local (configuration en POP ou archivage en local), vous pouvez effectuer un [export depuis votre logiciel de messagerie](../../emails/migrer-ses-adresses-email-manuellement/), puis [importez votre fichier PST via OMM](../exchange-migration-de-comptes-e-mail-ovh-mail-migrator/#realiser-une-migration-par-fichier) ou [importez directement depuis votre logiciel de messagerie](../../emails/migrer-ses-adresses-email-manuellement/).
+> Si vos e-mails sont uniquement enregistrés en local (configuration en POP ou archivage en local), vous pouvez effectuer un [export depuis votre logiciel de messagerie](../../emails/migrer-ses-adresses-email-manuellement/), puis [importer votre fichier PST via OMM](../exchange-migration-de-comptes-e-mail-ovh-mail-migrator/#realiser-une-migration-par-fichier) ou [importer directement depuis votre logiciel de messagerie](../../emails/migrer-ses-adresses-email-manuellement/).
 
 ## Prérequis
 
