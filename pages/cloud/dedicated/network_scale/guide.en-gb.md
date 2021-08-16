@@ -1,5 +1,5 @@
 ---
-title: 'Configuring network bridging on Scale and HG servers'
+title: 'Configuring network bridging on Scale and High Grade servers'
 slug: network-bridging-scale
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
 section: 'Network management'
@@ -22,7 +22,7 @@ Bridged networking can be used to configure virtual machines on OVHcloud dedicat
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
+- a [Scale dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/scale/) or a [High Grade dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/high-grade/) in your OVHcloud account
 - a [failover IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/) or a failover IP block (RIPE)
 - administrative access (root) via SSH or GUI to your server
 - basic networking and administration knowledge
@@ -33,7 +33,7 @@ The following sections contain the configurations for the most commonly used dis
 
 > [!primary]
 > Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
-> 
+>
 
 Code samples in the following instructions have to be replaced with your own values:
 
@@ -51,7 +51,6 @@ To configure your virtual machines for internet access, you will need the gatewa
 Your gateway address would be:
 
 - 169.254.10.**254**
-
 
 #### Debian
 
@@ -225,7 +224,6 @@ Apply the changes with the following command:
 systemctl restart network
 ```
 
-
 ### Troubleshooting
 
 First, restart your server from the command line or its GUI. If you are still unable to establish a connection from the public network to your VM and suspect a network problem, you need to reboot the server in [rescue mode](../ovh-rescue/). Then you can set up the bridging network interface directly on the host.
@@ -238,7 +236,7 @@ ip route add default via GATEWAY_IP dev eth0
 ```
 
 To test the connection, ping your failover IP from the outside. If it responds in rescue mode, that probably means that there is a configuration error on the VM or the host. If, however, the IP is still not working, please create a ticket in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) to relay your test results to our support teams.
- 
+
 ## Go further
 
 [Activating and using rescue mode](../ovh-rescue/)
