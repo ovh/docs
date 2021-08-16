@@ -1,17 +1,18 @@
 ---
 title: Deploy a web service for YOLOv5 using Flask
 slug: web-service-yolov5
-excerpt: How to deploy a web service for YOLOv5 using your own weights with Flask ?
+excerpt: How to deploy a web service for YOLOv5 using your own weights with Flask
 section: Tutorials
 order: 8
 ---
-*Last updated 27th of July, 2021.*
+
+**Last updated 27th of July, 2021.**
 
 ## Objective
 
 The purpose of this tutorial is to show how to deploy a web service for YOLOv5 using your own weights generated after training a YOLOv5 model on your dataset.
 
-In other to do this, you will use [Flask](https://flask.palletsprojects.com/en/2.0.x/), an open-source micro framework for web development in Python. You will also learn how to build and use a custom docker image for a Flask application.
+In order to do this, you will use [Flask](https://flask.palletsprojects.com/en/2.0.x/), an open-source micro framework for web development in Python. You will also learn how to build and use a custom docker image for a Flask application.
 
 For more information on how to train YOLOv5 on a custom dataset, refer to the following [documentation](https://docs.ovh.com/ie/en/ai-training/yolov5-example/).
 
@@ -200,7 +201,7 @@ docker build . -t yolov5_web:latest
 
 > [!primary]
 >
-> The `-t` argument allow you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **yolov5\_web:latest**.
+> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **yolov5\_web:latest**.
 
 ### Test it locally (Optional)
 
@@ -224,7 +225,7 @@ Once started, your application should be available on http://localhost:5000.
 
 > [!warning]
 >
-> The shared registry of AI Training should only be use for testing purpose. Please consider attaching your own docker registry. More information about this can be found [here](../add-private-registry).
+> The shared registry of AI Training should only be used for testing purpose. Please consider attaching your own docker registry. More information about this can be found [here](../add-private-registry).
 
 Find the adress of your shared registry by launching this command:
 
@@ -232,7 +233,7 @@ Find the adress of your shared registry by launching this command:
 ovhai registry list
 ```
 
-Login on the shared registry with your usual openstack credencials:
+Login on the shared registry with your usual openstack credentials:
 
 ``` {.console}
 docker login -u <user> -p <password> <shared-registry-address>
