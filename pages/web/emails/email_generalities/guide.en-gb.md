@@ -1,5 +1,5 @@
 ---
-title: `Getting started with the MX Plan solution`
+title: 'Getting started with the MX Plan solution'
 slug: overview-of-shared-emails
 excerpt: 'Find out how to get started with an MX Plan solution'
 section: 'Getting started'
