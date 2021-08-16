@@ -82,7 +82,7 @@ Para utilizar o seu endereço de e-mail num software de terceiros, deve configur
 |---|---|---|---|
 |[Windows 10 (versão em inglês)](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)|[Outlook Windows](https://docs.ovh.com/pt/emails/configuracao-outlook-2016/)|[Mail de macOS (última versão)](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_de_mail_para_mac_-_el_capitan/)|[Android (última versão) (versão em inglês)](https://docs.ovh.com/gb/en/emails/configuration-android/)|
 |[Thunderbird em Windows](https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/pt/emails/configuracao-outlook-2016-mac/)|[Mail para iPhone ou iPad](https://docs.ovh.com/pt/emails/mail_partilhado_guia_configuracao_iphone_ios_91/)||
-||[Outlook.com (versão em francês)](https://docs.ovh.com/fr/emails/configuration-outlook-com/)|[Thunderbird em Mac](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_para_thunderbird/)|| |
+|||[Thunderbird em Mac](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_para_thunderbird/)|| |
 
 Se pretender obter mais informações sobre os elementos necessários para configurar o seu endereço de e-mail, consulte as configurações que deverá utilizar:
 
@@ -198,7 +198,7 @@ Para utilizar o seu endereço de e-mail num software de terceiros, deve configur
 |---|---|---|---|
 |[Windows 10 (versão em inglês)](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)|[Outlook Windows](https://docs.ovh.com/pt/emails/configuracao-outlook-2016/)|[Mail de macOS (última versão)](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_de_mail_para_mac_-_el_capitan/)|[Android (última versão) (versão em inglês)](https://docs.ovh.com/gb/en/emails/configuration-android/)|
 |[Thunderbird em Windows](https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/pt/emails/configuracao-outlook-2016-mac/)|[Mail para iPhone ou iPad](https://docs.ovh.com/pt/emails/mail_partilhado_guia_configuracao_iphone_ios_91/)|
-||[Outlook.com (versão em francês)](https://docs.ovh.com/fr/emails/configuration-outlook-com/)|[Thunderbird em Mac](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_para_thunderbird/)|
+|||[Thunderbird em Mac](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_para_thunderbird/)|
 
 Se pretender obter mais informações sobre os elementos necessários para configurar o seu endereço de e-mail, consulte as configurações que deverá utilizar:
 

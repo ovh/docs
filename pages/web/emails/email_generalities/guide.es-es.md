@@ -82,7 +82,7 @@ Para utilizar su cuenta de correo electrónico en un software de terceros, debe 
 |---|---|---|---|
 |[Windows 10](https://docs.ovh.com/es/emails/configuracion-correo-windows-10/)|[Outlook Windows](https://docs.ovh.com/es/emails/configuracion-outlook-2016/)|[Mail de macOS (última versión)](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/)|[Android (última versión)](https://docs.ovh.com/es/emails/configuracion-android/)|
 |[Thunderbird en Windows](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/es/emails/configuracion-outlook-2016-mac/)|[Correo electrónico para iPhone o iPad](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_iphone_ios_91/)|
-||[Outlook.com](https://docs.ovh.com/fr/emails/configuration-outlook-com/)|[Thunderbird en Mac](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/)|
+|||[Thunderbird en Mac](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/)|
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 
@@ -198,7 +198,7 @@ Para utilizar su cuenta de correo electrónico en un software de terceros, debe 
 |---|---|---|---|
 |[Windows 10](https://docs.ovh.com/es/emails/configuracion-correo-windows-10/)|[Outlook Windows](https://docs.ovh.com/es/emails/configuracion-outlook-2016/)|[Mail de macOS (última versión)](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/)|[Android (última versión)](https://docs.ovh.com/es/emails/configuracion-android/)|
 |[Thunderbird en Windows](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/es/emails/configuracion-outlook-2016-mac/)|[Correo electrónico para iPhone o iPad](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_iphone_ios_91/)|
-||[Outlook.com](https://docs.ovh.com/fr/emails/configuration-outlook-com/)|[Thunderbird en Mac](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/)|
+|||[Thunderbird en Mac](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/)|
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 

@@ -83,7 +83,7 @@ Aby używać Twojego konta e-mail w programie zewnętrznym, skonfiguruj to konto
 |---|---|---|---|
 |[Windows 10](https://docs.ovh.com/pl/emails/konfiguracja-poczta-windows-10/)|[Outlook Windows](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016/)|[Mail macOS (najnowsza wersja)](https://docs.ovh.com/pl/emails/konfiguracja-mail-macos/)|[Android (najnowsza wersja)](https://docs.ovh.com/pl/emails/konfiguracja-android/)|
 |[Thunderbird na Windows](https://docs.ovh.com/pl/emails/konfiguracja_konta_e-mail_w_programie_thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016-mac/)|[E-mail na iPhone lub iPad](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_na_iphone_ios_91/)|
-||[Outlook.com](https://docs.ovh.com/fr/emails/configuration-outlook-com/)|[Thunderbird na Mac](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_konta_e-mail_w_programie_thunderbird_mac/)|
+|||[Thunderbird na Mac](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_konta_e-mail_w_programie_thunderbird_mac/)|
 
 Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 
@@ -199,7 +199,7 @@ Aby używać Twojego konta e-mail w programie zewnętrznym, skonfiguruj to konto
 |---|---|---|---|
 |[Windows 10](https://docs.ovh.com/pl/emails/konfiguracja-poczta-windows-10/)|[Outlook Windows](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016/)|[Mail macOS (najnowsza wersja)](https://docs.ovh.com/pl/emails/konfiguracja-mail-macos/)|[Android (najnowsza wersja)](https://docs.ovh.com/pl/emails/konfiguracja-android/)|
 |[Thunderbird na Windows](https://docs.ovh.com/pl/emails/konfiguracja_konta_e-mail_w_programie_thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016-mac/)|[E-mail na iPhone lub iPad](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_na_iphone_ios_91/)|
-||[Outlook.com](https://docs.ovh.com/fr/emails/configuration-outlook-com/)|[Thunderbird na Mac](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_konta_e-mail_w_programie_thunderbird_mac/)|
+|||[Thunderbird na Mac](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_konta_e-mail_w_programie_thunderbird_mac/)|
 
 Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 

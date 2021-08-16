@@ -78,7 +78,7 @@ To use your email address with third-party software, you will need to configure 
 |---|---|---|---|
 |[Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)|[Outlook Windows](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016/)|[MacOS Mail (latest version)](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/)|[Android (latest version)](https://docs.ovh.com/gb/en/emails/configuration-android/)|
 |[Thunderbird](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016-mac/)|[Mail for iPhone or iPad](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/)|
-||[Outlook.com](https://docs.ovh.com/fr/emails/configuration-outlook-com/)|[Thunderbird Mac OS](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|
+|||[Thunderbird Mac OS](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|
 
 If you just need the information required to configure your email address, the settings to use are listed below:
 
@@ -194,7 +194,7 @@ To use your email address with third-party software, you will need to configure 
 |---|---|---|---|
 |[Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)|[Outlook Windows](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016/)|[MacOS Mail (latest version)](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/)|[Android (latest version)](https://docs.ovh.com/gb/en/emails/configuration-android/)|
 |[Thunderbird](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016-mac/)|[Mail for iPhone or iPad](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/)|
-||[Outlook.com](https://docs.ovh.com/fr/emails/configuration-outlook-com/)|[Thunderbird Mac OS](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|
+|||[Thunderbird Mac OS](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|
 
 If you just need the information required to configure your email address, the settings to use are listed below:
 
