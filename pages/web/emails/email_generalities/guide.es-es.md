@@ -14,7 +14,7 @@ order: 1
 
 ## Objetivo
 
-Usted acaba de adquirir una solución MX Plan. que permite disfrutar de direcciones de correo electrónico para enviar y recibir mensajes desde cualquier dispositivo.
+Usted acaba de adquirir una solución MX Plan que permite disfrutar de direcciones de correo electrónico para enviar y recibir mensajes desde cualquier dispositivo.
 
 **Esta guía explica cómo empezar a utilizar la solución MX Plan.**
 
@@ -248,7 +248,7 @@ Para ello, puede crear una lista de difusión. Siga nuestra guía [Gestionar y u
 
 ## Más información
 
-Migrando los productos MX Plan a los nuevos productos MX Plan... Si desea solicitar la migración de su servicio con prioridad, puede seguir los pasos que se indican en [esta página](https://www.ovh.es/mxplan-migration/#accordion_6001-4).
+Migrando los productos MX Plan a los nuevos productos MX Plan en curso. Si desea solicitar la migración de su plan con prioridad, siga las indicaciones de [esta página](https://www.ovh.es/mxplan-migration/#accordion_6001-4).
 
 Si sus necesidades evolucionan y quiere disfrutar de funcionalidades adicionales, también puede [migrar una dirección de correo MX Plan a una cuenta Email Pro o Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/migrar-direccion-correo-en-alojamiento-correo-a-exchange/).
 

@@ -82,7 +82,7 @@ Per utilizzare il tuo indirizzo email su un software di terze parti, devi config
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10/)|[Outlook Windows]()|[ Mail di macOS (ultima versione) ](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan/)|[Android (ultima versione)](https://docs.ovh.com/es/emails/configuracion-android/)|
+|[Windows 10](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10/)|[Outlook Windows](https://docs.ovh.com/it/emails/configurazione-outlook-2016/)|[ Mail di macOS (ultima versione) ](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan/)|[Android (ultima versione)](https://docs.ovh.com/es/emails/configuracion-android/)|
 |[Thunderbird su Windows](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/)|[Outlook Mac OS](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/)|[Mail per iPhone o iPad](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_iphone_ios_91/)|
 |||[Thunderbird su Mac](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_thunderbird_su_mac/)|
 
@@ -198,7 +198,7 @@ Per utilizzare il tuo indirizzo email su un software di terze parti, devi config
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10/)|[Outlook Windows]()|[ Mail di macOS (ultima versione) ](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan/)|[Android (ultima versione)](https://docs.ovh.com/es/emails/configuracion-android/)|
+|[Windows 10](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10/)|[Outlook Windows](https://docs.ovh.com/it/emails/configurazione-outlook-2016/)|[ Mail di macOS (ultima versione) ](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan/)|[Android (ultima versione)](https://docs.ovh.com/es/emails/configuracion-android/)|
 |[Thunderbird su Windows](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/)|[Outlook Mac OS](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/)|[Mail per iPhone o iPad](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_iphone_ios_91/)|
 |||[Thunderbird su Mac](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_thunderbird_su_mac/)|
 

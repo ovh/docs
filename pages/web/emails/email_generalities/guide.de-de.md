@@ -80,7 +80,7 @@ Um Ihre E-Mail-Adresse in einem Drittpartei-Programm zu verwenden, müssen Sie d
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/de/emails/mail-konfiguration-windows-10/)|[Windows Outlook](https://docs.ovh.com/fr/emails/configuration-outlook-2016/)|[macOS Mail (neueste Version)](https://docs.ovh.com/de/emails/anleitung-mail-konfiguration-auf-macos/)|[Android (neueste Version)](https://docs.ovh.com/de/emails/konfiguration-android/)|
+|[Windows 10](https://docs.ovh.com/de/emails/mail-konfiguration-windows-10/)|[Windows Outlook](https://docs.ovh.com/de/emails/konfiguration-outlook-2016/)|[macOS Mail (neueste Version)](https://docs.ovh.com/de/emails/anleitung-mail-konfiguration-auf-macos/)|[Android (neueste Version)](https://docs.ovh.com/de/emails/konfiguration-android/)|
 |[Thunderbird Windows](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/de/emails/konfiguration-outlook-2016-mac/)|[Mail für iPhone oder iPad](https://docs.ovh.com/de/emails/mail-konfiguration-iphone-ios-91/)|
 |||[Thunderbird Mac OS](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|
 
@@ -113,7 +113,7 @@ Sie möchten die Zugriffssicherheit auf Ihre E-Mail-Adressen erhöhen.
 
 Dazu können Sie die Sicherheitseinstellungen Ihrer MX Plan Lösung vornehmen.
 
-Folgen Sie bitte unserer Anleitung ["Sicherheitseinstellungen für E-Mail-Dienste verwalten](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gerer-politique-de-securite-mot-de-passe/)".
+Folgen Sie bitte unserer Anleitung ["Sicherheitseinstellungen für E-Mail-Dienste verwalten](https://docs.ovh.com/de/microsoft-collaborative-solutions/passwort-sicherheitseinstellungen-verwalten/)".
 
 ##### **Weiterleitungen**
 
@@ -196,7 +196,7 @@ Um Ihre E-Mail-Adresse in einem Drittpartei-Programm zu verwenden, müssen Sie d
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/de/emails/mail-konfiguration-windows-10/)|[Windows Outlook](https://docs.ovh.com/fr/emails/configuration-outlook-2016/)|[macOS Mail (neueste Version)](https://docs.ovh.com/de/emails/anleitung-mail-konfiguration-auf-macos/)|[Android (neueste Version)](https://docs.ovh.com/de/emails/konfiguration-android/)|[Blackberry](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-blackberry/)|
+|[Windows 10](https://docs.ovh.com/de/emails/mail-konfiguration-windows-10/)|[Windows Outlook](https://docs.ovh.com/de/emails/konfiguration-outlook-2016/)|[macOS Mail (neueste Version)](https://docs.ovh.com/de/emails/anleitung-mail-konfiguration-auf-macos/)|[Android (neueste Version)](https://docs.ovh.com/de/emails/konfiguration-android/)|
 |[Thunderbird Windows](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/de/emails/konfiguration-outlook-2016-mac/)|[Mail für iPhone oder iPad](https://docs.ovh.com/de/emails/mail-konfiguration-iphone-ios-91/)||
 |||[Thunderird Mac OS](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|||
 
@@ -236,7 +236,7 @@ Sie können dann den automatischen Anrufbeantworter für Ihre E-Mail-Adresse ver
 
 ##### **Delegationen**
 
-Sie möchten **den gesamten E-Mail-Dienst einer Domain auf einen anderen OVHcloud**-Account übertragen oder **einen oder mehrere E-Mail-Accounts auf einen anderen OVHcloud-Account** übertragen, um beispielsweise dem Inhaber dieses anderen OVHcloud-Accounts zu ermöglichen, das Passwort einer E-E-E-E-Adresse zu ändern.
+Sie möchten **den gesamten E-Mail-Dienst einer Domain auf einen anderen OVHcloud**-Account übertragen oder **einen oder mehrere E-Mail-Accounts auf einen anderen OVHcloud-Account** übertragen, um beispielsweise dem Inhaber dieses anderen OVHcloud-Accounts zu ermöglichen, das Passwort einer E-Mail-Adresse zu ändern.
 
 Folgen Sie bitte unserer Anleitung "[Die Verwaltung Ihrer E-Mails an eine andere Person delegieren](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/)".
 
