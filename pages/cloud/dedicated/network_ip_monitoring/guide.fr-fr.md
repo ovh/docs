@@ -56,7 +56,6 @@ Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer 
 
 **La communication entre le service RTM et votre serveur nécessite également que vous autorisiez les connexions entrantes et sortantes sur les ports UDP 6100 à 6200.**
 
-
 > [!primary]
 >
 > Si votre serveur est situé à Roubaix 3, il faut récupérer la dernière IP via tcpdump.
@@ -65,6 +64,26 @@ Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer 
 > tcpdump host ip.fixe.du.serveur | grep ICMP
 > ```
 >
+
+### Activer ou désactiver le monitoring
+
+Tout d’abord, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Dans le menu de gauche, sélectionnez le serveur concerné dans le menu déroulant `Serveurs dédiés`{.action} .
+
+Dans l'onglet `Informations générales`{.action} puis le cadre **État des services**, cliquez sur le bouton `...`{.action} à côté de « Monitoring ». Cliquez alors sur `Activer`{.action} ou `Désactiver`{.action} . Cliquez sur `Valider`{.action} dans la fenêtre qui apparaît pour confirmer les modifications.
+
+![monitoring](images/monitoring1.png){.thumbnail}
+
+### Activer le monitoring de services spécifiques
+
+En plus du monitoring standard, vous pouvez autoriser à OVHcloud de surveiller des services spécifiques comme le HTTP, le SSH et d’autres protocoles.
+
+ Pour ce faire, dans l'onglet `Informations générales`{.action} puis le cadre **État des services**, cliquez sur le bouton `...`{.action} à côté de « Services Monitorés ». Cliquez sur `Monitorer mes services`{.action}.
+
+![monitoring](images/monitoring2.png){.thumbnail}
+
+ Vous serez redirigé vers l'écran ci-dessous. Cliquez sur `Monitorer un service`{.action} puis renseignez l'adresse IP, le protocole, le numéro de port, la réponse du serveur et l'intervalle de temps entre les vérifications de votre service. Cliquez sur le symbole de validation (**V**) pour confirmer les modifications.
+
+![monitoring](images/monitoring3.png){.thumbnail}
 
 ## Aller plus loin
 
