@@ -32,11 +32,13 @@ section: Technical resources
 
 ## Nodes and pods
 
-We have tested our OVHcloud Managed Kubernetes service with up to 100 nodes and 100 pods per node. 
+We have tested our OVHcloud Managed Kubernetes service with up to 100 nodes and 100 pods per node.
 While we are fairly sure it can go further, we advise you to keep under those limits.
-Nodepools with anti-affinity are limited to 5 nodes (but you can create multiple node pools with the same instance flavor if needed of course).
 
-In general, it's better to have several mid-size Kubernetes clusters than one monster-size one.
+Nodepools with anti-affinity are limited to 5 nodes (but you can create multiple node pools with the same instance flavor if needed of course).
+A node can run up to 110 pods. This limit does not depend on node flavor.
+
+In general, it is better to have several mid-size Kubernetes clusters than a monster-size one.
 
 To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable. Note that any operation requested to our services, like node deletions or updates, will be performed even if Kubernetes budget restrictions are present.
 
