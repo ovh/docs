@@ -70,6 +70,11 @@ Exemple : en encodage 7bits, si votre message fait plus de 149 caractères, il s
 | 7bits (norme GSM 03.38) | 149 caractères | 153 caractères |
 | Unicode | 59 caractères | 70 caractères  |
 
+> [!primary]
+>
+> Vérifiez toujours que votre message ne contient pas de caractères spéciaux ou d'accent pouvant faire passer du simple au double le nombre de caractères comptés.
+>
+
 #### Options avancées
 
 ![envoi sms manager](images/sms-send-control-panel-advanced.png){.thumbnail}
@@ -110,6 +115,10 @@ Si vous souhaitez ajouter un expéditeur SMS supplémentaire, cliquez sur le bou
 Une fois sur la page d'ajout, vous disposez de plusieurs options pour configurer un nouvel expéditeur SMS (3) :
 
 - **Ajouter manuellement des expéditeurs** : Vous devez saisir l'expéditeur souhaité, la description et une justification pour l'utilisation de cet expéditeur (4). Une pièce justificative est également nécessaire.
+
+**Exemple:** si vous souhaitez envoyer votre sms avec le nom de votre societé comme expéditeur, un justificatif de la societé vous sera demandé.
+
+La validation d'un expéditeur alphanumérique est effectuée en moyenne dans les 24 heures après sa création.
 
 > [!primary]
 >

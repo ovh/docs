@@ -59,7 +59,7 @@ Dans le cas d'une OverTheBox Plus :
 
 Dans le cas d'une OverTheBox IT v2 :
 
-![overthebox](images/installationV2-step2_OTBITv2.png){.thumbnail}
+![overthebox](images/installationV2-step2_OTBITv2_edit.jpg){.thumbnail}
 
 **Exemple** : Le premier modem possède l'IP 192.168.**0**.1 et le deuxième 192.168.**1**.1
 

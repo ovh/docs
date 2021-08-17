@@ -77,7 +77,7 @@ Puede instalar un cliente en el servidor o en su ordenador. También existe la p
 
 Según el cliente elegido, es posible que, además de los elementos del usuario DynHost y del subdominio correspondiente, sea necesaria una URL de actualización. En tal caso, utilice la siguiente URL sustituyendo la información genérica:
 
-http://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
+https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
 
 |Valor|Sustituir por...|
 |---|---|

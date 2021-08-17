@@ -27,7 +27,7 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/
 
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la `Référence serveur` dans le cadre « Résumé »|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
 |Poursuivre vers « [Version historique de l'offre MX Plan](#oldmxplan) »|Poursuivre vers « [Nouvelle version de l'offre MX Plan](#newmxplan) »|
 
 ### Nouvelle version de l'offre MX Plan <a name="newmxplan"></a>
@@ -60,7 +60,7 @@ Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez l
 
 #### Utiliser vos adresses e-mail
 
-Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utiliser. Pour cela, vous disposez de deux possibilités, utiliser le webmail Outlook Web Access (OWA) ou uiliser le logiciel de votre choix.
+Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utiliser. Pour cela, vous disposez de deux possibilités, utiliser le webmail Outlook Web Access (OWA) ou utiliser le logiciel de votre choix.
 
 ##### **1. Utiliser le webmail Outlook Web Access (OWA)**
 
@@ -74,11 +74,11 @@ Lors d'une première connexion au webmail, vous êtes invité à définir la lan
 
 Pour utiliser votre adresse e-mail sur un logiciel tiers, vous devez configurer cette adresse e-mail sur l'appareil souhaité (PC, Mac, smartphone ou tablette). Pour cela, vous pouvez vous aider de nos guides de configuration :
 
-|Windows|Outlook|Apple|Android|Autres|
-|---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/fr/emails/configuration-courrier-sur-windows-10/)|[Outlook Windows](https://docs.ovh.com/fr/emails/configuration-outlook-2016/)|[Mail de macOS (dernière version)](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-el-capitan/)|[Android (dernière version)](https://docs.ovh.com/fr/emails/configuration-android-6/)|[Téléphone BlackBerry](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-blackberry/)|
-|[Thunderbird sur Windows](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)|[Outlook 2011 Mac](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-outlook-2011-sur-mac/)|[Mail pour iPhone ou iPad](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/)||
-||[Outlook.com](https://docs.ovh.com/fr/emails/configuration-outlook-com/)|[Thunderbird sur Mac](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|| |
+|Windows|Outlook|Apple|Android|
+|---|---|---|---|
+|[Windows 10](https://docs.ovh.com/fr/emails/configuration-courrier-sur-windows-10/)|[Outlook Windows](https://docs.ovh.com/fr/emails/configuration-outlook-2016/)|[Mail de macOS (dernière version)](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-el-capitan/)|[Android (dernière version)](https://docs.ovh.com/fr/emails/configuration-android-6/)|
+|[Thunderbird sur Windows](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/fr/emails/configuration-outlook-2016-mac/)|[Mail pour iPhone ou iPad](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/)|
+|||[Thunderbird sur Mac](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
 
@@ -176,7 +176,7 @@ Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez l
 
 #### Utiliser vos adresses e-mail
 
-Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utiliser. Pour cela, vous disposez de deux possibilités, utiliser le webmail RoundCube ou uiliser le logiciel de votre choix.
+Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utiliser. Pour cela, vous disposez de deux possibilités, utiliser le webmail RoundCube ou utiliser le logiciel de votre choix.
 
 ##### **1. Utiliser le webmail RoundCube**
 
@@ -190,11 +190,11 @@ Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser vot
 
 Pour utiliser votre adresse e-mail sur un logiciel tiers, vous devez configurer cette adresse e-mail sur l'appareil souhaité (PC, Mac, smartphone ou tablette). Pour cela, vous pouvez vous aider de nos guides de configuration :
 
-|Windows|Outlook|Apple|Android|Autre|
-|---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/fr/emails/configuration-courrier-sur-windows-10/)|[Outlook Windows](https://docs.ovh.com/fr/emails/configuration-outlook-2016/)|[Mail de macOS (dernière version)](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-el-capitan/)|[Android (dernière version)](https://docs.ovh.com/fr/emails/configuration-android-6/)|[Téléphone BlackBerry](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-blackberry/)|
-|[Thunderbird sur Windows](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)|[Outlook 2011 Mac](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-outlook-2011-sur-mac/)|[Mail pour iPhone ou iPad](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/)||
-||[Outlook.com](https://docs.ovh.com/fr/emails/configuration-outlook-com/)|[Thunderbird sur Mac](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|| |
+|Windows|Outlook|Apple|Android|
+|---|---|---|---|
+|[Windows 10](https://docs.ovh.com/fr/emails/configuration-courrier-sur-windows-10/)|[Outlook Windows](https://docs.ovh.com/fr/emails/configuration-outlook-2016/)|[Mail de macOS (dernière version)](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-el-capitan/)|[Android (dernière version)](https://docs.ovh.com/fr/emails/configuration-android-6/)|
+|[Thunderbird sur Windows](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/fr/emails/configuration-outlook-2016-mac/)|[Mail pour iPhone ou iPad](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/)||
+|||[Thunderbird sur Mac](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|| |
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
 

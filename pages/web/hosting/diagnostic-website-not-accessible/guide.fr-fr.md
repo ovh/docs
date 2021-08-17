@@ -3,6 +3,7 @@ title: "Que faire si mon site est inaccessible ?"
 slug: erreur-serveur-inaccessible
 excerpt: "Diagnostiquez les causes de l'inaccessibilité de votre site"
 section: Diagnostic
+order: 1
 ---
 
 **Dernière mise à jour le 16/07/2021**
@@ -29,7 +30,6 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/)
 - Avoir la gestion des serveurs et de la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) de votre domaine
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
@@ -45,7 +45,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 > De ce fait, nous vous recommandons fortement d'activer le [renouvellement automatique](../../billing/renouvellement-automatique-ovh/#en-pratique) sur l'ensemble de vos abonnements OVHcloud.
 >
 
-Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur votre nom en haut à droite de votre espace client, afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
+Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur votre nom en haut à droite de votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
@@ -53,7 +53,7 @@ Renouvelez votre domaine si nécessaire via le bouton `...`{.action} à droite d
 
 ![renew-service-button](images/renew-service-button.png){.thumbnail}
 
-Patientez ensuite 48 heures au maximum (délai de propagation suite aux changements liés aux [Serveurs DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns)).
+Suite à ce renouvellement, votre site sera accessible sous 48 heures maximum.
 
 ### Étape 2 : vérifier les serveurs DNS
 
@@ -79,7 +79,7 @@ Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS 
 
 Modifiez les serveurs DNS en suivant les instructions de [ce guide](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), afin qu'ils soient identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}.
 
-Patientez ensuite 48 heures au maximum (délai de propagation des changements de `Serveurs DNS`{.action}).
+Votre site sera de nouveau accessible sous 48 heures maximum.
 
 - Sous la phrase « Vous utilisez actuellement les serveurs DNS suivants : », les serveurs indiqués ne sont pas du type « ns **?** .ovh.net » et « dns **?** .ovh.net ».
 
@@ -108,13 +108,13 @@ Cliquez ensuite sur `Réinitialiser ma zone DNS`{.action}, puis sélectionnez `N
 
 ![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
 
-Patientez 24 heures maximum (délai de propagation des modifications dans la `Zone DNS`{.action}).
+Votre site sera de nouveau accessible sous 24 heures maximum.
 
 ### Étape 3 : vérifier la zone DNS <a name="etape3"></a>
 
 Dans cette étape, vous allez retrouver l'adresse IP de votre hébergement, puis l'ajouter à votre `Zone DNS`{.action}.
 
-Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou par une tierce personne, contactez l'hébergeur ou le prestataire concerné.
+Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou géré par une tierce personne, contactez l'hébergeur ou le prestataire concerné.
 
 Si votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovh.com/fr/hebergement-web/), cliquez sur l'onglet `Hébergements`{.action} à gauche de votre écran, puis sur l'offre concernée.
 
@@ -122,11 +122,11 @@ Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou I
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-Puis reportez-la dans la [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`.
+Puis reportez-la dans la [zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
-Patientez enfin 24 heures au maximum (délai de propagation des modifications dans la `Zone DNS`{.action}).
+Votre site sera de nouveau accessible sous 24 heures maximum.
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
