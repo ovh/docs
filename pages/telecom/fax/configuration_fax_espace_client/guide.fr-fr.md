@@ -33,11 +33,15 @@ Pour le définir, sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.act
 
 Le mot de passe doit contenir au moins 6 caractères.
 
+Pour l'ancienne offre fax perso la modification du mot de passe se fait dans l'onglet configuration du fax puis "générer" 
+
 ### Options de configuration
 
 Sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.action} puis sur `Configuration du Fax`{.action}.
 
 ![menu fax](images/configuration-fax.png){.thumbnail}
+
+Pour l'ancienne offre fax perso l'envoi des fax est possible si le nombre de fax restant est positif, sinon vous pouvez commander des fax dans l'onglet juste en dessous. 
 
 #### Options générales
 
