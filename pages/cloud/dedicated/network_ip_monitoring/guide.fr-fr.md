@@ -1,27 +1,31 @@
 ---
-title: Quelles sont les adresses IP du monitoring OVH ?
+title: Quelles sont les adresses IP du monitoring OVHcloud ?
 slug: monitoring-ip-ovh
-excerpt: Retrouvez ici les adresses IP a renseigner lors de la mise en place d’un firewall pour que le monitoring OVH continue de fonctionner sur votre serveur.
+excerpt: Retrouvez ici les adresses IP a renseigner lors de la mise en place d’un firewall, afin que le monitoring OVHcloud continue de fonctionner sur votre serveur.
 section: Réseau & IP
 ---
 
+**Dernière mise à jour le 17/08/2021**
 
-## Prérequis
+## Objectif
+
 Le service de monitoring permet de suivre l’état de votre machine et de déclencher automatiquement l’intervention d’un technicien dans le datacentre.
 
-Tous les serveurs de nos clients ainsi que l'ensemble du réseau sont surveillés 24h/24 et 7j/7 par les équipes techniques d'OVH.
+Tous les serveurs de nos clients ainsi que l'ensemble du réseau sont surveillés 24h/24 et 7j/7 par les équipes techniques d'OVHcloud.
 
-OVH intervient dès le déclenchement d'une alerte (non réponse aux pings) afin de limiter au maximum le temps d'indisponibilité des serveurs et du réseau.
+OVHcloud intervient dès le déclenchement d'une alerte (non réponse aux pings) afin de limiter au maximum le temps d'indisponibilité des serveurs et du réseau.
 
-Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer de bénéficier du monitoring OVH, il est nécessaire d'autoriser les IPs que vous trouverez ci-après.
+Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer de bénéficier du monitoring OVHcloud, il est nécessaire d'autoriser les adresses IP que vous trouverez ci-après.
 
-Pour ce faire, vous devez disposer de :
+## Prérequis
 
-- Un produit OVH sur lequel vous avez installé un Firewall.
+- Un produit OVHcloud sur lequel vous avez installé un Firewall.
 - Avoir accès aux règles du Firewall.
 
+## En pratique
 
-## IP a autoriser
+### Adresses IP à autoriser
+
 |Reverse|IP|Protocole|
 |---|---|---|
 |mrtg-rbx-100|37.187.231.251|icmp|
@@ -34,10 +38,11 @@ Pour ce faire, vous devez disposer de :
 |mrtg-gra-101|151.80.231.247|icmp|
 |a2.ovh.net|213.186.33.62|icmp|
 |---|---|---|
-||92.222.184.0/24|icmp|
-||92.222.185.0/24|icmp|
-||92.222.186.0/24|icmp|
-||167.114.37.0/24|icmp|
+|netmon-rbx-probe|92.222.184.0/24|icmp|
+|netmon-sbg-probe|92.222.185.0/24|icmp|
+|netmon-gra-probe|92.222.186.0/24|icmp|
+|netmon-bhs-probe|167.114.37.0/24|icmp|
+|netmon-sgp-probe|139.99.1.144/28|icmp|
 |---|---|---|
 |proxy.p19.ovh.net|213.186.45.4|icmp|
 |proxy.rbx.ovh.net|213.251.184.9|icmp|
@@ -46,11 +51,10 @@ Pour ce faire, vous devez disposer de :
 |ping.ovh.net|213.186.33.13|icmp|
 |proxy.ovh.net|213.186.50.98|icmp|
 |---|---|---|
-||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa étant l'ip du serveur)|icmp|
+||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa étant l'IP du serveur)|icmp|
 ||xxx.xxx.xxx.251 (xxx.xxx.xxx.aaa étant l'IP du serveur)|icmp + port surveillé par le service monitoring|
 
 **La communication entre le service RTM et votre serveur nécessite également que vous autorisiez les connexions entrantes et sortantes sur les ports UDP 6100 à 6200.**
-
 
 
 > [!primary]
@@ -61,3 +65,9 @@ Pour ce faire, vous devez disposer de :
 > tcpdump host ip.fixe.du.serveur | grep ICMP
 > ```
 >
+
+## Aller plus loin
+
+[Configurer le Firewall Network](../firewall-network/)
+
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
