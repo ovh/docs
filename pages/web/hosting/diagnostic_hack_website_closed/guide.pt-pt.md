@@ -3,7 +3,7 @@ title: 'O que fazer se um alojamento for desativado por segurança'
 slug: site-desativado-por-hack
 excerpt: 'Saiba o que fazer se o seu alojamento web for desativado por razões de segurança'
 section: Diagnóstico
-order: 1
+order: 7
 ---
 
 **Última atualização: 02/07/2019**

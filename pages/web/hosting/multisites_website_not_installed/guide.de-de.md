@@ -5,6 +5,7 @@ id: '1585'
 slug: webhosting_fehler_-_webseite_ist_nicht_installiert
 legacy_guide_number: g1585
 section: Diagnose
+order: 4
 ---
 
 > [!primary]

@@ -3,7 +3,7 @@ title: 'Responding when your hosting is deactivated for security purposes'
 slug: security-practices-hosting-disabled
 excerpt: 'Understand common security practices and learn how to react if your hosting is disabled'
 section: Diagnostic
-order: 1
+order: 7
 ---
 
 **Last updated 5th May 2020**

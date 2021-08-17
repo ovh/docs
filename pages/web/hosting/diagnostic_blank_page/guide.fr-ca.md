@@ -4,6 +4,7 @@ slug: comment-diagnostiquer-page-blanche
 legacy_guide_number: 1562
 excerpt: Dans ce guide vous trouverez des informations sur les pages blanches que votre site peut generer.
 section: Diagnostic
+order : 8
 ---
 
 **Dernière mise à jour le 05/05/2020**

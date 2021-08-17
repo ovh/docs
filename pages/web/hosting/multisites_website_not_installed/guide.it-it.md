@@ -3,6 +3,7 @@ title: 'Risolvere l’errore «Sito non installato»'
 slug: errore-sito-non-installato
 excerpt: Come identificare e risolvere la pagina di errore «Sito non installato»
 section: Diagnostica
+order: 4
 ---
 
 > [!primary]

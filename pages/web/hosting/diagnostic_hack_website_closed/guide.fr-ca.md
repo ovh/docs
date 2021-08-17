@@ -3,7 +3,7 @@ title: "Réagir en cas de désactivation pour sécurité d'un hébergement"
 slug: site-ferme-pour-hack
 excerpt: 'Appréhendez certaines pratiques liées à la sécurité et découvrez comment réagir en cas de désactivation de votre hébergement'
 section: Diagnostic
-order: 1
+order: 7
 ---
 
 **Dernière mise à jour le 05/05/2020**

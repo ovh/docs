@@ -4,6 +4,7 @@ legacy_guide_number: 1987
 slug: errore-500-internal-server-error
 excerpt: Diagnostica i casi più comuni di errore 500
 section: Diagnostica
+order: 5
 ---
 
 > [!primary]
