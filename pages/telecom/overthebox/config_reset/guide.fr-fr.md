@@ -39,7 +39,7 @@ Appuyez de façon répétée, en moins de 2 secondes, 5 fois sur le bouton Power
 
 Appuyez de façon répétée, en moins de 2 seconde, 5 fois sur le bouton Reset.
 
-![overthebox](images/reset-method1_OTBv2c.jpg){.thumbnail}
+![overthebox](images/reset-method1_OTBv2c_edit.jpg){.thumbnail}
 
 Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle.
 
