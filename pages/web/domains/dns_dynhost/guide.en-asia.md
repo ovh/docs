@@ -76,7 +76,7 @@ There is a wide range of options for this, so please note that this client may a
 
 Depending on the client you are using, you may need to provide an update URL address, as well as further information on the DynHost username and subdomain concerned. If this is the case, use the URL template below, and take care to replace the generic information with your own information:
 
-http://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
+https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
 
 |Information|Replace with|
 |---|---|
