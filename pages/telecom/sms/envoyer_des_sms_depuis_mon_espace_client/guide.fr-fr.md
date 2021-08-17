@@ -118,7 +118,7 @@ Une fois sur la page d'ajout, vous disposez de plusieurs options pour configurer
 
 **Exemple:** si vous souhaitez envoyer votre sms avec le nom de votre societé comme expéditeur, un justificatif de la societé vous sera demandé.
 
-La validation d'un expediteur alphanumérique est effectuée en moyenne dans les 24H aprés sa création.
+La validation d'un expéditeur alphanumérique est effectuée en moyenne dans les 24 heures après sa création.
 
 > [!primary]
 >
