@@ -1,6 +1,6 @@
 ---
 title: Was sind die IP-Adressen des OVHcloud Monitorings?
-slug: ip-monitoring-ovhcloud
+slug: monitoring-ip-ovh
 excerpt: Hier finden Sie die IP-Adressen, die bei der Einrichtung einer Firewall angegeben werden müssen, damit das OVHcloud Monitoring auf Ihrem Server weiterhin funktioniert.
 section: Netzwerk & IP
 ---
