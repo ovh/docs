@@ -3,7 +3,7 @@ title: Troubleshooting an "Index of" page
 excerpt: Find out how to get your website back online if it displays an "Index of" page
 slug: diagnostic-index-of
 section: Diagnostics
-order: 5
+order: 6
 ---
 
 **Last updated 25th June 2021**

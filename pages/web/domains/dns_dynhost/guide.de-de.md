@@ -75,7 +75,7 @@ Für die Installation des Clients stehen einige Möglichkeiten zur Verfügung. E
 
 Je nach verwendetem Client kann es sein, dass zusätzlich zu den Informationen zum DynHost-Benutzer und der betreffenden Subdomain noch eine Update-URL erforderlich ist. Verwenden Sie in diesem Fall die folgende URL und ersetzen Sie die allgemeinen Informationen:
 
-http://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
+https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
 
 |Information|Ersetzen durch|
 |---|---|

@@ -76,7 +76,7 @@ Pamiętaj, że klient może być zainstalowany na Twoim serwerze lub komputerze 
 
 W zależności od używanego klienta, poza informacjami o identyfikatorze DynHost i o danej subdomenie, może być również wymagany adres URL aktualizacji. W takim przypadku użyj podanego poniżej adresu URL i zastąp w nim informacje ogólne:
 
-http://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
+https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
 
 |Informacje|Czym należy zastąpić|
 |---|---|
