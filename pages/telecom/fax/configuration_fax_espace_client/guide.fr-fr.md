@@ -33,11 +33,21 @@ Pour le définir, sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.act
 
 Le mot de passe doit contenir au moins 6 caractères.
 
+> [!primary]
+>
+> Dans le cas d'une ancienne offre de type « Ecofax Perso », la modification du mot de passe s'effectue depuis l'onglet `Configuration du fax`{.action} puis en cliquant sur `Générer`{.action}.
+>
+
 ### Options de configuration
 
 Sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.action} puis sur `Configuration du Fax`{.action}.
 
 ![menu fax](images/configuration-fax.png){.thumbnail}
+
+> [!primary]
+>
+> Dans le cas d'une ancienne offre de type « Ecofax Perso », l'envoi des fax est possible si le nombre de fax restant est positif. Dans le cas contraire, vous pouvez commander des fax via l'onglet situé juste en dessous.
+>
 
 #### Options générales
 
