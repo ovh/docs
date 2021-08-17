@@ -6,11 +6,11 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 19/07/2021**
+**Last updated 19th July 2021**
 
 ## Objective
 
-If you have just purchased an MX Plan solution, This means you have email addresses that you can use to send and receive messages from a device of your choice.
+If you have just purchased an MX Plan solution, this means you have email addresses that you can use to send and receive messages from a device of your choice.
 
 **Find out how to get started with an MX Plan solution.**
 
@@ -21,9 +21,9 @@ If you have just purchased an MX Plan solution, This means you have email addres
 
 ## Instructions <a name="instructions"></a>
 
-Once the MX Plan solution has been created and is available, you can manage it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/), you may have the old or new version of the solution. Before you proceed, you will need to check which version you are using.
+Once the MX Plan solution has been created and is available, you can manage it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/), you may have the old or new version of the solution. You will need to check this before you proceed any further.
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) , and open the Web Cloud section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and open the Web Cloud section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
@@ -32,13 +32,13 @@ To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?act
 
 ### New version of the MX Plan solution <a name="newmxplan"></a>
 
-#### Access your solution management
+#### Accessing your solution management
 
-If you are using the new version of the MX Plan solution, If you do not see the following view, see the [previous information](#instructions) .  
+If you are using the new version of the MX Plan solution, this is the display you should get. If not, please ensure you follow the right path [by referring to the information above](#instructions).
 
 ![email](images/mxplan-starter-new-step1.png){.thumbnail}
 
-#### Add an email account
+#### Adding an email account
 
 To configure your email addresses, go to the `Email accounts`{.action} tab. The window that opens will list the accounts that are already available, as well as those that you can still create. To add a new email account, click `Add account`{.action}.
 
@@ -48,21 +48,21 @@ In the pop-up window, enter the following information:
 
 |Information|Description|
 |---|---|
-|Email account|A temporary name is already pre-filled in the text box: delete it and enter your new email address (firstname.lastname, for example). The domain name for the email address is already pre-selected in the list.|
+|Email account|A temporary name is already pre-filled in the text box: delete it and enter your new email address (e.g. firstname.surname). The domain name for the email address is already pre-selected in the list.|
 |First name|Enter a first name.|
-|Last name|Enter a surname.|
-|Display name|Enter the name you want to be displayed as a sender when you send emails from this address.|
+|Last name|Enter a last name.|
+|Display name|Enter the name that will be displayed when sending emails from this address.|
 |Password|[Enter and confirm a password](https://docs.ovh.com/gb/en/customer/manage-password/). For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth) and we also recommend renewing it regularly.|
 
 Once you have completed the text fields, click `Next`{.action} and then check the information that appears in the summary. If it is all correct, click `Confirm`{.action} . Repeat this step as necessary according to the number of accounts you have.
 
 ![email](images/mxplan-starter-new-step3.png){.thumbnail}
 
-#### Use your email addresses
+#### Using your email addresses
 
 Once you have created your email addresses, you can start using them straight away. You can do this using Outlook Web Access (OWA) webmail, or you can use any software you want.
 
-##### **1. Use Outlook Web Access (OWA) webmail**
+##### **1. Using Outlook Web Access (OWA) webmail**
 
 Go to the [Webmail login](https://www.ovh.co.uk/mail/) page, then enter the email address and password. Then click the `Login`{.action} button.
 
@@ -70,9 +70,9 @@ When you first log in to the webmail interface, you are prompted to set the inte
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 
-##### **2. Use the software of your choice**
+##### **2. Using the software of your choice**
 
-To use your email address with third-party software, you will need to configure this email address on the device you want to use (PC, Mac, smartphone or tablet). To do this, you can use our configuration guides:
+To use your email address with a third-party software, you will need to configure this email address on the device you want to use (PC, Mac, smartphone or tablet). To do this, you can use our configuration guides:
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
@@ -105,59 +105,59 @@ If you just need the information required to configure your email address, the s
 
 ##### **Security policy**
 
-You want to increase the security of access to your email addresses.
+You may want to increase the security of access to your email addresses.
 
 You can do this by setting the security policy for your MX Plan solution.
 
-Please follow our guide on [Managing the security policy of an email](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-security-policy-password/) service.
+Please follow our guide on [Managing the security policy of an email service](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-security-policy-password/).
 
 ##### **Redirections**
 
-You want to redirect your emails to another recipient, create an alias or systematically copy another email address.
+You may want to redirect your emails to another recipient, create an alias or systematically copy another email address.
 
 To do this, you will need to create a redirection.
 
 You can do this in two ways:
 
-- create your redirection via webmail, via the inbox rules. To do this, please follow our guide on [Inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/#example-1-redirecting-emails-to-another-address).
+- creating a redirection via webmail, via the inbox rules. To do this, please follow our guide on [Inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/#example-1-redirecting-emails-to-another-address).
 
-- create a redirection from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](https://docs.ovh.com/gb/en/emails/email-redirection-guide/#mx-plan-new-version_1) redirections.
+- creating a redirection from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](https://docs.ovh.com/gb/en/emails/email-redirection-guide/#mx-plan-new-version_1) redirections.
 
 ##### **Voicemail**
 
-You must leave on holiday, or you will not have access to your email address for a certain period.
+You may go on holidays, or you may not have access to your email address for a certain period of time.
 
 You can then create an automatic reply. Please follow our guide on [Setting up automatic replies in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/).
 
 ##### **Delegations**
 
-You want to send an email from your personal email address, **instead of** or **from another** email address associated with your domain name.
+You may want to send an email from your personal email address, **instead of** or **from another** email address associated with your domain name.
 
-To do this, you will need to configure the delegation for the email address concerned. Please follow our guide on [Delegating account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_grant_full_access_permissions_for_an_account/) rights.
+To do this, you will need to configure the delegation for the email address concerned. Please follow our guide on [Delegating account rights](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_grant_full_access_permissions_for_an_account/).
 
 ##### **Mailing lists**
 
-You want to send a regular newsletter to your contacts.
+You may want to send a regular newsletter to your contacts.
 
 To do this, you can create a mailing list. Please follow our guide on [Managing and using mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/).
 
 ##### **Bottom of page**
 
-You want to apply a global signature to all the email addresses for your domain name.
+You may want to apply a global signature to all the email addresses for your domain name.
 
 You can do this in the footer, which can be configured from your Control Panel. Please follow our guide on [Adding a footer to your emails](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_create_an_automatic_signature/).
 
 ### MX Plan legacy version <a name="oldmxplan"></a>
 
-#### Access your solution management
+#### Accessing your solution management
 
-If you are using the legacy version of the MX Plan solution, If you do not see the following view, see the [previous](#instructions) information.
+If you are using the legacy version of the MX Plan solution, this is the display you should see. If not, please ensure you follow the right path [by referring to the information above](#instructions).
 
 ![email](images/mxplan-starter-legacy-step1.png){.thumbnail}
 
-#### Add an email account
+#### Adding an email account
 
-To create an email address, go to the `Email`{.action} accounts tab. The table that appears will contain all of the email addresses you have created as part of your MX Plan solution. Then click the `Create Email Address`{.action} button.
+To create an email address, go to the `Email accounts`{.action} tab. The table that appears will contain all of the email addresses you have created as part of your MX Plan solution. Then click the `Create Email Address`{.action} button.
 
 ![email](images/mxplan-starter-legacy-step2.png){.thumbnail}
 
@@ -174,11 +174,11 @@ Once you have completed the text fields, click `Next`{.action} and then check th
 
 ![email](images/mxplan-starter-legacy-step3.png){.thumbnail}
 
-#### Use your email addresses
+#### Using your email addresses
 
-Once you have created your email addresses, you can start using them straight away. There are two ways you can do this: use the RoundCube webmail interface, or use the software of your choice.
+Once you have created your email addresses, you can start using them straight away. There are two ways you can do this: using the RoundCube webmail interface, or using the software of your choice.
 
-##### **1. Use RoundCube webmail**
+##### **1. Using RoundCube webmail**
 
 Go to the [Webmail login](https://www.ovh.co.uk/mail/) page, then enter the email address and password. Then click the `Login`{.action} button.
 
@@ -186,9 +186,9 @@ Your inbox will appear. To find out how to use your email address via the RoundC
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
-##### **2. Use the software of your choice**
+##### **2. Using the software of your choice**
 
-To use your email address with third-party software, you will need to configure this email address on the device you want to use (PC, Mac, smartphone or tablet). To do this, you can use our configuration guides:
+To use your email address with a third-party software, you will need to configure this email address on the device you want to use (PC, Mac, smartphone or tablet). To do this, you can use our configuration guides:
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
@@ -220,32 +220,32 @@ If you just need the information required to configure your email address, the s
 
 ##### **Redirection**
 
-You want to redirect your emails to another recipient, create an alias or systematically copy another email address.
+You may want to redirect your emails to another recipient, create an alias or systematically copy another email address.
 
 To do this, you will need to create a redirection. Please follow our guide on [Using email](https://docs.ovh.com/gb/en/emails/email-redirection-guide/#mx-plan-legacy-version) redirections.
 
 ##### **Voicemail**
 
-You must leave on holiday, or you will not have access to your email address for a certain period.
+You may go on holidays, or you will not have access to your email address for a certain period of time.
 
 You can then use the automatic reply on your email address. Please follow our guide on [Creating an auto-reply for an email](https://docs.ovh.com/gb/en/emails/set-up-email-responder/) address.
 
 ##### **Delegations**
 
-You want to **delegate all the email service for a domain name to another OVHcloud** account, or **delegate one or more email accounts to another OVHcloud** account. For example, you can allow the holder of this other OVHcloud account to change the password for an email address.
+You may want to **delegate all the email service for a domain name to another OVHcloud account** , or **delegate one or more email accounts to another OVHcloud account**. For example, you can allow the holder of this other OVHcloud account to change the password for an email address.
 
 Please follow our guide on [Delegating email management to another person](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/).
 
 ##### **Mailing lists**
 
-You want to send a regular newsletter to your contacts.
+You may want to send a regular newsletter to your contacts.
 
 To do this, you can create a mailing list. Please follow our guide on [Managing and using mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/).
 
 ## Go further
 
-Migrating legacy MX Plan solutions to new MX Plan solutions. If you would like to migrate your solution as a priority, you can follow the instructions on [this page](https://www.ovh.co.uk/mxplan-migration/#accordion_6001-4).
+The legacy MX Plan solutions are being migrated to the new MX Plan solutions. If you would like to migrate your solution as a priority, you can follow the instructions on [this page](https://www.ovh.co.uk/mxplan-migration/#accordion_6001-4).
 
-If your needs change and you want additional features, you can also [migrate an MX Plan email address to an Email Pro or Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migration-email-address-to-exchange/) account.
+If your needs change and you want additional features, you can also [migrate an MX Plan email address to an Email Pro or Exchange account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migration-email-address-to-exchange/).
 
 Join our community of users on <https://community.ovh.com/en/>.
