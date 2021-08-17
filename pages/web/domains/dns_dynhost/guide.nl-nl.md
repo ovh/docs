@@ -76,7 +76,7 @@ Er is een breed scala aan opties hiervoor, dus houd er rekening mee dat deze cli
 
 Afhankelijk van de client die u gebruikt, moet u mogelijk een update-URL-adres opgeven, evenals verdere informatie over de DynHost-gebruikersnaam en het betreffende subdomein. Als dit het geval is, gebruik dan het onderstaande URL-sjabloon en zorg ervoor dat de generieke informatie wordt vervangen door uw eigen informatie:
 
-> http://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
+> https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
 
 |Informatie|Vervang met|
 |---|---|
