@@ -39,6 +39,8 @@ Sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.action} puis sur `Con
 
 ![menu fax](images/configuration-fax.png){.thumbnail}
 
+Pour l'ancienne offre fax "perso" la modification du mot de passe de fait dans configuration du fax puis "éditer" et générer.
+
 #### Options générales
 
 La qualité d'envoi de vos télécopies peut avoir un impact sur vos émissions de télécopies à destination de certains numéros spéciaux.
@@ -48,6 +50,8 @@ Passez la en « Meilleure » pour faciliter des envois vers les numéros spécia
 Vous pouvez aussi paramétrer le nombre de tentatives d'envoi maximum, dans le cas d'un échec de transmission lors de la première tentative.
 
 ![options envoi](images/options_generales.jpg){.thumbnail}
+
+Pour l'offre fax "perso" vous devez vérifier votre nombre de fax restants dans l'onglet information générale, si besoin vous pouvez en commander dans l'onglet en dessous "commander des fax" 
 
 #### Entête des fax émis
 
