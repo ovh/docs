@@ -187,7 +187,7 @@ Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz
 
 Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovh.pl/mail/), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
-Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail RoundCube, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](../utilisation-roundcube/).
+Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail RoundCube, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](https://docs.ovh.com/fr/emails/utilisation-roundcube/).
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
