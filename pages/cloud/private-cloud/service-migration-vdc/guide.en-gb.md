@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Last updated 28th July 2021**
+**Last updated 18th August 2021**
 
 > [!warning]
 >
@@ -36,75 +36,86 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 
 ### OVHcloud context
 
-#### Add new destination vDC
+#### Adding a new destination vDC
 
 You can add a destination vDC following those steps:
 
-1\. Check your datacenter is eligible to move to target range 
+1\. Check that your datacenter is eligible to move to the target range:
 
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/commercialRange/compliance
 >
-Expected return: dedicatedCloud.compliantRanges[]
 
-2\. Get your available services to upgrade
+**Expected return:** dedicatedCloud.compliantRanges[]
+
+2\. Check which of your services you can upgrade:
 
 > [!api]
 >
 > @api {GET} /order/upgrade/privateCloudManagementFee
 >
-Expected return: List of available services to upgrade
 
-3\. View what you are able to upgrade to
+**Expected return:** List of available services available to the upgrade.
+
+3\. View what you are able to upgrade to:
 
 > [!api]
 >
 > @api {GET} /order/upgrade/privateCloudManagementFee/{serviceName}
 >
-Expected return: order.cart.GenericProductDefinition[]
 
-4\. Verify you are able to upgrade with serviceName and planCode for destination range
+**Expected return:** order.cart.GenericProductDefinition[]
+
+4\. Verify you are able to upgrade with your serviceName and planCode for destination range:
 
 > [!api]
 >
 > @api {GET} /order/upgrade/privateCloudManagementFee/{serviceName}/{planCode} ( quantity : 1 )
 >
-Expected return: order.upgrade.OperationAndOrder
 
-5\. Create the order
+**Expected return:** order.upgrade.OperationAndOrder
+
+5\. Create the order:
+
 > [!api]
 >
 > @api {POST} /order/upgrade/privateCloudManagementFee/{serviceName}/{planCode} ( quantity : 1 )
 >
-Expected return: order.upgrade.OperationAndOrder
 
-This API call generates an order that needs to be validated. If you don’t have a payment method, please contact your Support team or Account Manager to get it validated
+**Expected return:** order.upgrade.OperationAndOrder
 
-#### Add new ressources
+This API call generates an order that needs to be validated. If you don’t have a payment method, please contact your support team or Account Manager to get it validated.
 
-You can proceed with ordering new ressources to the new Destination vDC following the guide https://docs.ovh.com/ie/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly
+#### Adding new ressources
 
-#### Convert datastores to global
+You can proceed with ordering new resources to the new Destination vDC following this [Information about Dedicated Cloud billing](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) guide.
+
+#### Converting a datastore to a global datastore
 
 A global datastore is a datastore mounted on all clusters / virtual datacenters within a VMware infrastructure, i.e. shared between the source vDC and the destination vDC :
 
-Run the OVHcloud API to check datastores compatibility, we recommand selecting the datastores ordered in the new vDC, old datastores may not be compatible.
+Run the OVHcloud API to check datastores compatibility. We recommend selecting the datastores ordered in the new vDC, old datastores may not be compatible.
+
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/checkGlobalCompatible
 >
-Expected return: boolean
 
-If the API retun is FALSE, your datastores are not compatible, you will need to order new datastores and use storage motion, using the guides https://docs.ovh.com/ie/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly and https://docs.ovh.com/ie/en/private-cloud/vmware_storage_vmotion
+**Expected return:** boolean
 
-If the API retun is TRUE, you can proceed with the conversio to global datastores
-Run the OVHcloud API to check datastores compatibility
+If the API return is FALSE, your datastores are not compatible, you will need to order new datastores and use storage motion, using the following [Information about Dedicated Cloud billing](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) and [VMware Storage vMotion](https://docs.ovh.com/gb/en/private-cloud/vmware_storage_vmotion/) guides.
+
+If the API return is TRUE, you can proceed with the conversion to global datastores.
+
+Run the OVHcloud API to check datastores compatibility:
+
 > [!api]
 >
 > @api {POST}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/convertToGlobal
 >
-Expected return: Task information
+
+**Expected return:** Task information
 
 #### Security
 
