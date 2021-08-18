@@ -35,6 +35,7 @@ order: 1
 | Max. number of IPSec VPN Tunnels | Max. number of VPN tunnels per edge | 512 compact edge<br>1600 large edge<br>4096 quad large edge<br>6000 extra large edge |
 | Max. number of vRack per vDC | Max. number of private networks per virtual data centre | 1 |
 | Max. number of L2 VPN Clients | Number of VPN clients to connect | 5 |
+| Max. number of whitelisted IP | Number of IP allowed to connect to your VMware infrastructure | 2048 |
 
 
 

@@ -37,6 +37,8 @@ In the new Window, enter an IP address (range) that should be allowed access. Yo
 
 Click on `Next`{.action} when you have filled in the fields, then click on `Confirm`{.action} to apply your changes. Connections from this IP address (range) will now be possible.
 
+Please note that for security reason, you will only be able to allow a maximum of 2048 IP addresses to connect to your vCenter
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
