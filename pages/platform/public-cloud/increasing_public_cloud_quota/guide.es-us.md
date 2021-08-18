@@ -23,7 +23,7 @@ Si desea crear más, es necesario aumentar el límite.
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - [Disponer de una forma de pago válida](../../billing/gestionar-formas-de-pago/) en el área de cliente de OVHcloud.
 - Haber alcanzado el número máximo de proyectos utilizados en su cuenta de OVHCloud.
 
@@ -31,7 +31,7 @@ Si desea crear más, es necesario aumentar el límite.
 
 Si desea solicitar un aumento del número de proyectos y/o los límites de un proyecto, póngase en contacto con el equipo de asistencia.
 
-Conéctese a su >área de `Gestión` del proyecto, haga clic en `Quota and Regions` {.action}.
+Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione su proyecto de Public Cloud. En el apartado `Gestión del proyecto`, haga clic en `Quota and Regions`{.action}.
 
 Esta página presenta un resumen de los límites actuales de su proyecto, por región. Cuando se alcance el 80% de su cuota, aparecerá una advertencia junto a un recurso.
 
