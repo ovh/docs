@@ -1,6 +1,6 @@
 ---
 title: 'Getting started with the MX Plan solution'
-slug: overview-of-shared-emails
+slug: web_hosting_an_overview_of_ovh_email
 excerpt: 'Find out how to get started with an MX Plan solution'
 section: 'Getting started'
 order: 1
@@ -182,7 +182,7 @@ Once you have created your email addresses, you can start using them straight aw
 
 Go to the [Webmail login](https://www.ovh.co.uk/mail/) page, then enter the email address and password. Then click the `Login`{.action} button.
 
-Your inbox will appear. To find out how to use your email address via the RoundCube webmail interface, use our guide “[Use your email address via the RoundCube webmail interface](../utilisation-roundcube/)”.
+Your inbox will appear. To find out how to use your email address via the RoundCube webmail interface, use our guide “[Use your email address via the RoundCube webmail interface ](https://docs.ovh.com/fr/emails/utilisation-roundcube/)”.
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
