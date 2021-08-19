@@ -1,7 +1,7 @@
 ---
 title: 'Liste de destinataires SMS'
 slug: liste_de_destinataire_sms
-excerpt: 'Création d’une liste de destinataires SMS.'
+excerpt: "Découvrez comment créer une liste de destinataires SMS et l'importer dans votre espace client OVHcloud."
 legacy_guide_number: g2402
 section: 'Gérer mon offre'
 ---
@@ -10,9 +10,9 @@ section: 'Gérer mon offre'
 
 ## Objectif
 
-Tous les comptes SMS OVHcloud peuvent utiliser une ou plusieurs listes de destinataires. L'objectif est de pouvoir envoyer une campagne de SMS à de nombreux destinataires référencés dans une liste.
+Afin d'envoyer une campagne de SMS à de multiples contacts, vous pouvez importer une ou plusieurs listes de destinataires dans votre espace client OVHcloud.
 
-**Découvrez comment créer une liste de destinataires SMS et l'importer dans votre espace client OVHcloud.**
+**Découvrez comment créer une liste de destinataires SMS, via un tableur ou un éditeur de texte, et l'importer dans votre espace client OVHcloud.**
 
 ## Prérequis
 
@@ -53,7 +53,7 @@ Les points suivants sont indispensables pour que votre liste de destinataires so
 - Respectez le format international pour vos numéros (exemple pour un numéro français : +33612345678).
 - Enregistrez votre fichier au format .csv (séparateur : point-virgule).
 
-#### Créer votre liste via un  éditeur de texte
+#### Créer votre liste via un éditeur de texte
 
 Une méthode alternative consiste à créer simplement un fichier .txt depuis un éditeur de texte ou ou bloc-notes.
 
@@ -68,7 +68,7 @@ Vous devriez obtenir le résultat ci-dessous :
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Telecom`{.action}. Sélectionnez ensuite `SMS`{.action} dans les menus de gauche.
 
-Sélectionnez votre compte SMS désiré puis cliquez sur l'onglet `Contacts`{.action} et sur `Créer une liste de contacts`{.action}.
+Sélectionnez votre compte SMS puis cliquez sur l'onglet `Contacts`{.action} et sur `Créer une liste de contacts`{.action}.
 
 ![recipients](images/sms-recipientlist-3b.png){.thumbnail}
 
@@ -78,13 +78,13 @@ Il vous suffit pour cela de cliquer sur `Actions`{.action} puis de cliquer sur `
 
 ![recipients](images/sms-recipientlist-5b.png){.thumbnail}
 
-Nommez votre ficher de destinataires et importez votre fichier local dans l'espace client.
+Nommez votre liste de destinataires et importez votre fichier local dans l'espace client.
 
 ![recipients](images/sms-recipientlist-6b.png){.thumbnail}
 
 ### Étape 3 : envoyer un SMS à votre liste de destinataires
 
-Maintenant que votre liste de destinataires est importée, vous pouvez suivre les instructions de notre guide « [Envoyer des SMS depuis mon espace client](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_mon_espace_client/) » afin d'envoyer un SMS aux destinataires de cette liste.
+Maintenant que votre liste est importée, vous pouvez suivre les instructions de notre guide « [Envoyer des SMS depuis mon espace client](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_mon_espace_client/) » afin d'envoyer un SMS aux destinataires de cette liste.
 
 ## Aller plus loin
 
