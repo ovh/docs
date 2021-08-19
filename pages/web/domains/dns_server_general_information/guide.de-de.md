@@ -7,6 +7,7 @@ order: 1
 ---
 
 > [!primary]
+>
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
@@ -69,6 +70,9 @@ Stellen Sie sicher, dass Ihre Domain aufgrund der Änderungen nicht unerreichbar
 Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Server`{.action}.
 
 Die angezeigte Tabelle listet die DNS-Server auf, die derzeit von OVHcloud für Ihre Domain definiert sind. Es werden möglicherweise mehrere DNS-Server angezeigt. Eine Tabellenzeile entspricht dabei jeweils einem Server.
+
+> [!primary]
+> Wenn Sie die OVHcloud DNS Server verwenden, haben die Server-Nummern keine Verbindung zu den von Ihnen genutzten Diensten. Nur die Option [DNS Anycast](https://www.ovh.de/domains/dns-anycast/) verwendet bestimmte DNS Server, die Ihnen automatisch zugewiesen werden.
 
 ![DNS-Server](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
