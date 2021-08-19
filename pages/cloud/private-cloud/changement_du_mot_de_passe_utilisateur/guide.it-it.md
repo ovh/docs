@@ -5,7 +5,7 @@ excerpt: Come impostare una nuova password per un utente del client vSphere dall
 section: Funzionalità OVHcloud
 ---
 
-**Ultimo aggiornamento: 17/06/2020**
+**Ultimo aggiornamento: 19/08/2021**
  
 ## Obiettivo
 
@@ -22,17 +22,17 @@ Le autorizzazioni e le password associate agli utenti del client vSphere possono
 
 ### Modifica la password
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, nella sezione `Hosted Private Cloud`{.action}  (1), clicca su `Private Cloud`{.action} (2), seleziona il server dalla lista (3) e clicca sulla scheda `Utenti`{.action}(4).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, nella sezione `Hosted Private Cloud`{.action}  (1), clicca su `Hosted Private Cloud`{.action} (2), seleziona il server dalla lista (3) e clicca sulla scheda `Utenti`{.action}(4).
 
-![Accesso allo Spazio Cliente](images/userpassword1.png){.thumbnail}
+![Accesso allo Spazio Cliente](images/userpassword1b.png){.thumbnail}
 
 Clicca sul pulsante `(...)`{.action} in corrispondenza dell’account interessato e seleziona `Modifica la password`{.action}.
 
-![Modifica password](images/userpassword2.png){.thumbnail}
+![Modifica password](images/userpassword2b.png){.thumbnail}
 
 Nella nuova finestra, inserisci la password e confermala.
 
-![Modifica password](images/userpassword3.png){.thumbnail}
+![Modifica password](images/userpassword3b.png){.thumbnail}
 
 > [!primary]
 > Se non viene inserita una password, ne verrà generata una in modo casuale che sarà poi inviata via email all’indirizzo associato all’utente.
