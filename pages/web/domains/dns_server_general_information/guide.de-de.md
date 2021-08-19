@@ -72,6 +72,7 @@ Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/aut
 Die angezeigte Tabelle listet die DNS-Server auf, die derzeit von OVHcloud für Ihre Domain definiert sind. Es werden möglicherweise mehrere DNS-Server angezeigt. Eine Tabellenzeile entspricht dabei jeweils einem Server.
 
 > [!primary]
+>
 > Wenn Sie die OVHcloud DNS Server verwenden, haben die Server-Nummern keine Verbindung zu den von Ihnen genutzten Diensten. Nur die Option [DNS Anycast](https://www.ovh.de/domains/dns-anycast/) verwendet bestimmte DNS Server, die Ihnen automatisch zugewiesen werden.
 
 ![DNS-Server](images/edit-dns-server-ovh-step1.png){.thumbnail}
