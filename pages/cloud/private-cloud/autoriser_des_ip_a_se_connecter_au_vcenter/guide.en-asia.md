@@ -8,7 +8,7 @@ space_name: vSphere as a Service
 section: 'OVHcloud services and options'
 ---
 
-**Last updated 30th June 2020**
+**Last updated 18th August 2021**
 
 ## Objective
 
@@ -36,6 +36,11 @@ In the new Window, enter an IP address (range) that should be allowed access. Yo
 ![vCenter](images/restrictIP2.JPG){.thumbnail}
 
 Click on `Next`{.action} when you have filled in the fields, then click on `Confirm`{.action} to apply your changes. Connections from this IP address (range) will now be possible.
+
+> [!primary]
+>
+> Please note that for security reasons, you will only be able to allow a maximum of 2048 IP addresses to connect to your vCenter.
+>
 
 ## Go further
 
