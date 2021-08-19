@@ -10,7 +10,7 @@ order: 2
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 30 November 2020**
+**Letzte Aktualisierung am 18.08.2021**
 
 ## Ziel
 
@@ -38,6 +38,7 @@ order: 2
 | Maximale Anzahl IPSec VPN Tunnel | Maximale Anzahl von VPN-Tunneln pro | 512 Compact Edge<br>1600 Edge<br>4096 quad large edge<br>6000 extra large Edge |
 | Maximale Anzahl vRack pro vDc | Maximale Anzahl private Netzwerke von Virtual Data Center (VDC) | 1 |
 | Maximale Anzahl L2 VPN Kunden | Anzahl zu verbindender VPN Clients | 5 |
+| Maximale Anzahl autorisierte IP-Adressen | Anzahl der IP-Adressen, die sich mit Ihrer VMware Infrastruktur verbinden dürfen | 2048 |
 
 ## Weiterführende Informationen
 
