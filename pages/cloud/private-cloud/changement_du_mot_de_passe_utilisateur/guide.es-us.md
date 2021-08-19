@@ -5,7 +5,7 @@ excerpt: Cómo modificar la contraseña de usuario del cliente vSphere desde el 
 section: Funcionalidades de OVHcloud
 ---
 
-**Última actualización: 17/06/2020**
+**Última actualización: 19/08/2021**
  
 ## Objetivo
 
@@ -24,15 +24,15 @@ Es posible gestionar los permisos y contraseñas de los usuarios del cliente vSp
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda al menú `Servidores`{.action} y, en la sección `Private Cloud`{.action}, seleccione su servidor en la lista. A continuación, haga clic en la pestaña `Usuarios` (4).
 
-![acceso área de cliente](images/userpassword1.png){.thumbnail}
+![acceso área de cliente](images/userpassword1b.png){.thumbnail}
 
 Haga clic en el botón `(...)`{.action} situado al final de la línea correspondiente al usuario y seleccione `Cambiar la contraseña`{.action}.
 
-![cambiar la contraseña](images/userpassword2.png){.thumbnail}
+![cambiar la contraseña](images/userpassword2b.png){.thumbnail}
 
 Introduzca la nueva contraseña y confírmela.
 
-![cambiar la contraseña](images/userpassword3.png){.thumbnail}
+![cambiar la contraseña](images/userpassword3b.png){.thumbnail}
 
 > [!primary]
 > Si no introduce ninguna contraseña, se generará una contraseña de forma aleatoria, que será enviada por correo electrónico a la dirección asociada al usuario.

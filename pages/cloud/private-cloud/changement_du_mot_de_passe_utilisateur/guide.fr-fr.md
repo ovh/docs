@@ -5,8 +5,8 @@ excerpt: Découvrez comment modifier le mot de passe d'un utilisateur du client 
 section: Fonctionnalités OVHcloud
 ---
 
-**Dernière mise à jour le 17/06/2020**
- 
+**Dernière mise à jour le 19/08/2021**
+
 ## Objectif
 
 La gestion des autorisations et mots de passe des utilisateurs du client vSphere s'effectue depuis l'espace client OVHcloud.
@@ -16,28 +16,27 @@ La gestion des autorisations et mots de passe des utilisateurs du client vSphere
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
-- Disposer d'un compte utilisateur créé depuis l'espace client OVHcloud. Pour plus d'informations, consultez [ce guide](../manager-ovh-private-cloud/#utilisateurs)
+- Disposer d'un compte utilisateur créé depuis l'espace client OVHcloud. Pour plus d'informations, consultez [ce guide](../manager-ovh-private-cloud/#utilisateurs).
 
 ## En pratique
 
 ### Modifier le mot de passe
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Hosted Private Cloud`{.action} (1), cliquez sur `Private Cloud`{.action} (2) et sélectionnez votre serveur dans la liste (3). Cliquez alors sur l'onglet `Utilisateurs`{.action} (4).
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Hosted Private Cloud`{.action} (1), cliquez sur le produit `Hosted Private Cloud`{.action} (2) dans la colonne de gauche et sélectionnez votre serveur dans la liste (3). Cliquez alors sur l'onglet `Utilisateurs`{.action} (4).
 
-![acces espace client](images/userpassword1.png){.thumbnail}
+![acces espace client](images/userpassword1b.png){.thumbnail}
 
 Cliquez sur le bouton `(...)`{.action} à droite de l'utilisateur concerné puis sur `Changer le mot de passe`{.action}.
 
-![modifier mot de passe](images/userpassword2.png){.thumbnail}
+![modifier mot de passe](images/userpassword2b.png){.thumbnail}
 
 Renseignez alors un nouveau mot de passe et confirmez-le.
 
-![modifier mot de passe](images/userpassword3.png){.thumbnail}
+![modifier mot de passe](images/userpassword3b.png){.thumbnail}
 
 > [!primary]
 > Si vous ne renseignez pas de mot de passe, un mot de passe généré de façon aléatoire sera envoyé par e-mail à l'adresse associée à l'utilisateur.
-> 
-
+>
 
 > [!warning]
 >
