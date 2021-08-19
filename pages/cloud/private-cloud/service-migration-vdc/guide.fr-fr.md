@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Dernière mise à jour le 25/01/2021**
+**Dernière mise à jour le 18/08/2021**
 
 > [!warning]
 >
@@ -35,6 +35,87 @@ La migration vers un nouveau vDC comporte deux aspects :
 Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**.
 
 ### Contexte OVHcloud
+
+#### Ajout d'un nouveau vDC de destination
+
+Vous pouvez ajouter un vDC de destination en procédant comme suit :
+
+1\. Vérifiez que votre datacenter est éligible à la migration vers la plage de destination :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/commercialRange/compliance
+>
+
+**Résultat attendu :** dedicatedCloud.compliantRanges\[]
+
+2\. Vérifiez parmi vos services ceux qui peuvent être migrés :
+
+> [!api]
+>
+> @api {GET} /order/upgrade/privateCloudManagementFee
+>
+
+**Résultat attendu :** liste des services éligibles à la migration.
+
+3\. Visualiser les services auxquels vous pouvez souscrire :
+
+> [!api]
+>
+> @api {GET} /order/upgrade/privateCloudManagementFee/{serviceName}
+>
+
+**Résultat attendu :** order.cart.GenericProductDefinition\[]
+
+4\. Vérifiez que vous pouvez effectuer une migration avec vos serviceName et planCode pour la plage de destination :
+
+> [!api]
+>
+> @api {GET} /order/upgrade/privateCloudManagementFee/{serviceName}/{planCode} ( quantity : 1 )
+>
+
+**Résultat attendu :** order.upgrade.OperationAndOrder
+
+5\. Création de la commande :
+
+> [!api]
+>
+> @api {POST} /order/upgrade/privateCloudManagementFee/{serviceName}/{planCode} ( quantity : 1 )
+>
+
+**Résultat attendu :** order.upgrade.OperationAndOrder
+
+Cet appel API génère un bon de commande qui doit être validé. Si vous n'avez pas de moyen de paiement, merci de contacter le support ou votre Account Manager pour le faire valider.
+
+#### Ajout de nouvelles ressources
+
+Vous pouvez procéder à la commande de nouvelles ressources dans le nouveau vDC de destination en suivant ce [guide d'informations sur la facturation Private Cloud (EN)](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly).
+
+#### Conversion d'un datastore en datastore global
+
+Un datastore global est un datastore monté sur l’ensemble des clusters / datacentres virtuels d’une infrastructure VMware, c’est-à-dire mutualisé entre le vDC d'origine et le vDC de destination :
+
+Exécutez l'API OVHcloud pour vérifier la compatibilité des datastores. Nous vous recommandons de sélectionner les datastores commandés dans le nouveau vDC, les anciens datastores peuvent ne pas être compatibles.
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/checkGlobalCompatible
+>
+
+**Résultat attendu :** boolean
+
+Si le retour API est FALSE, vos datastores ne sont pas compatibles, vous devrez commander de nouveaux datastores et utiliser VMware Storage vMotion. À cet effet, consultez nos guides « [Informations sur la facturation Private Cloud (EN)](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) » et [VMware Storage vMotion](https://docs.ovh.com/fr/private-cloud/vmware-storage-vmotion-new/).
+
+Si le retour API est TRUE, vous pouvez procéder à la conversion en datastore global.
+
+Exécutez l'API OVHcloud pour vérifier la compatibilité des datastores :
+
+> [!api]
+>
+> @api {POST}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/convertToGlobal
+>
+
+**Résultat attendu :** Informations de tâche
 
 #### Sécurité
 
