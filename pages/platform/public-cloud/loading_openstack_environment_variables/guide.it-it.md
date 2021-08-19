@@ -27,7 +27,7 @@ Per recuperare le variabili d’ambiente scarica il file OpenRC dall’utente Op
 Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud in alto a sinistra.
 <br> Nella sezione `Project Management`, clicca su `Users & Roles`{.action}, clicca sui `...`{.action} a destra del tuo utente e seleziona `Scarica il file RC di Openstack`{.action}.
 
-![openstack-variables](images/pciopenstackvariables1.png){.thumbnail}
+![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
 
 Un file OpenRC corrisponde sia un utente che a una zona. Non è possibile gestire più zone in uno stesso file.
 

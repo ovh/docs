@@ -29,7 +29,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 Click on `Users & Roles`{.action}, then click on the `...`{.action} to the right of your user, then select `Download OpenStack's RC file`{.action}.
 
-![openstack-variables](images/pciopenstackvariables1.png){.thumbnail}
+![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
 
 An OpenRC file corresponds to a specific user and zone. You cannot manage multiple zones in the same file.
 

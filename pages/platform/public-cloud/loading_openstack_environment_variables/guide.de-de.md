@@ -27,7 +27,7 @@ Nachdem Sie Ihre Umgebungsvariablen zurück bekommen haben können Sie die Datei
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie Ihr Public Cloud Projekt oben links aus.
 <br>Im Bereich `Project Management`, klicken Sie auf `Users & Roles`{.action}, klicken Sie auf die `...`{.action} rechts von Ihrem Nutzer und wählen Sie dann `Die Datei RC von OpenStack herunterladen`{.action}.
 
-![openstack-variables](images/pciopenstackvariables1.png){.thumbnail}
+![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
 
 Eine OpenRC-Datei entspricht einem Nutzer und auch einer Zone. Sie können nicht mehrere Zonen in derselben Datei verwalten.
 
