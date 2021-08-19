@@ -5,7 +5,7 @@ excerpt: Erfahren Sie, wie Sie das Passwort eines Nutzers des vSphere Clients in
 section: OVHcloud Funktionen
 ---
 
-**Letzte Aktualisierung am 17.06.2020**
+**Letzte Aktualisierung am 19.08.2021**
  
 ## Ziel
 
@@ -22,17 +22,17 @@ Die Berechtigungen und Passwörter von Nutzern des vSphere Clients werden im OVH
 
 ### Passwort ändern
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie dann den Bereich `Hosted Private Cloud` (1). Klicken Sie im linken Menü auf `Private Cloud` (2) und wählen Sie die betreffende Infrastruktur aus (3). Klicken Sie dann auf den Tab `Nutzer`{.action} (4).
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie dann den Bereich `Hosted Private Cloud` (1). Klicken Sie im linken Menü auf `Hosted Private Cloud` (2) und wählen Sie die betreffende Infrastruktur aus (3). Klicken Sie dann auf den Tab `Nutzer`{.action} (4).
 
-![Zugang zum Kundencenter](images/userpassword1.png){.thumbnail}
+![Zugang zum Kundencenter](images/userpassword1b.png){.thumbnail}
 
 Klicken Sie auf die Schaltfläche `(...)`{.action} rechts neben dem jeweiligen Nutzer, dann auf `Passwort ändern`{.action}.
 
-![Passwort ändern](images/userpassword2.png){.thumbnail}
+![Passwort ändern](images/userpassword2b.png){.thumbnail}
 
 Geben Sie nun ein neues Passwort ein und bestätigen Sie es.
 
-![Passwort ändern](images/userpassword3.png){.thumbnail}
+![Passwort ändern](images/userpassword3b.png){.thumbnail}
 
 > [!primary]
 > Wenn Sie kein neues Passwort eingeben, wird ein zufällig generiertes Passwort per E-Mail an die Adresse gesendet, die mit dem Nutzer verbunden ist.
