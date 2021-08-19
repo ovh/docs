@@ -63,6 +63,10 @@ First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=go
 
 The table that appears will list the DNS servers currently set by OVHcloud for your domain name. Several DNS servers can be listed, each with its own row in the table.
 
+> [!primary]
+>
+> When you use OVHcloud DNS servers, the server numbers are not linked to the service(s) you are using. Only the [DNS Anycast](https://www.ovh.com/world/domains/dns-anycast/) option uses specific DNS servers that are automatically assigned to you.
+
 ![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
 ### Modifying DNS servers

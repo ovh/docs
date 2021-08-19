@@ -28,7 +28,7 @@ Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=
 
 En el apartado `Project Management`, haga clic en `Users & roles`{.action}, haga clic en `«...»`{.action} a la derecha de su usuario y seleccione `«Descargar el archivo RC de OpenStack»`{.action}.
 
-![openstack-variables](images/pciopenstackvariables1.png){.thumbnail}
+![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
 
 Un archivo OpenRC corresponde tanto a un usuario como a una zona. No puede gestionar varias zonas en un mismo archivo.
 

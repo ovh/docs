@@ -51,6 +51,10 @@ En primer lugar, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com
 
 Se mostrará una tabla con los servidores DNS actualmente configurados en OVHcloud para el dominio. Cada línea de la tabla contiene un servidor DNS (puede haber varios).
 
+> [!primary]
+>
+> Cuando se utilizan los servidores DNS de OVHcloud, los números de servidores no guardan relación con el servicio o servicios que utiliza. Sólo la opción [DNS anycast](https://www.ovh.com/world/es/dominios/dns-anycast/) utiliza servidores DNS específicos que se le atribuyen automáticamente.
+
 ![Servidor DNS](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
 ### 2. Editar los servidores DNS de un dominio
