@@ -140,7 +140,7 @@ rescue:~# fdisk -l
 rescue:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
-Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et redémarrez le serveur en ligne de commande.
+Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et redémarrez le serveur en ligne de commande.
 
 ### Utilisation de l'interface Web du mode rescue (« rescue64-pro » uniquement)
 
