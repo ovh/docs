@@ -19,7 +19,7 @@ Suivez le processus d'installation d'Hyper-V, l'association d'un switch virtuel 
 - Un image ISO pour le système d'exploitation qui sera installé sur votre machine virtuelle (CentOS 7 sera utilisé comme exemple dans ce guide).
 - Un vRack livré sur votre compte OVHcloud.
 - Un Bloc IP  de 4 adresses IP ou plus.
-- Etre connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Etre connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## En pratique
 
