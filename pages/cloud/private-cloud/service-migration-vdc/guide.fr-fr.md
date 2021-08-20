@@ -58,7 +58,7 @@ Vous pouvez ajouter un vDC de destination en procédant comme suit :
 
 **Résultat attendu :** liste des services éligibles à la migration.
 
-3\. Visualiser les services auxquels vous pouvez souscrire :
+3\. Visualisez les gammes commerciales auxquelles vous pouvez souscrire :
 
 > [!api]
 >
