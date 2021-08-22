@@ -161,6 +161,4 @@ Reboot your VM, and then just update your KMS and launch its activation; your gu
 
 ## Go further
 
-[Another important related guide](url)
-
 Join our community of users on <https://community.ovh.com/en/>.
