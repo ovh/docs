@@ -78,7 +78,9 @@ If peering is **DOWN** on one or both sides, there may be several reasons:
 
 #### SFP Configuration
 
-The SFP to use on the client device on an OVHcloud Connect link depends on the link you ordered.
+Optical values **UP** but no Ethernet link (interface **DOWN**) are a symptom of a misconfigured SFP.
+
+The SFP to use on the client device on an OVHcloud Connect link depends on the link you ordered. You must use an SFP that conforms to the ordered bandwidth.
 
 If you have ordered a 1 Gbps link, the SFP will be: 1000Base-LX/LH.
 
@@ -101,7 +103,26 @@ Auto-negotiation is not supported in the OVHcloud Connect solution. This setting
 To disable auto-negotiation on a Cisco device, use the following command:
 
 ```
-no negotiate
+no negotiate auto
+```
+
+or
+
+```
+no speed negotiate
+```
+
+On Cisco IOS, use the following command:
+
+```
+speed nonegotiate
+```
+
+On Cisco NX-OS, use the following command:
+
+```
+speed 1000
+no negotiate auto
 ```
 
 #### PoP/DC configuration
@@ -110,8 +131,8 @@ An IP address conflict may occur if you have selected an IP address used by OVHc
 
 The rules for configuring IP addresses based on the Subnet are as follows.
 
-- DC-side subnet: /30 - First IP address for OVHcloud, second IP address for the customer.
-- PoP-side Subnet: /28 - First three IP addresses for OVHcloud - Vlan by default at 0
+- DC-side subnet: /28 (minimum value) - First IP address for OVHcloud, second IP address for the customer.
+- PoP-side Subnet: /30 (fixed value) - First three IP addresses for OVHcloud - Vlan by default at 0
 
 ### Configuring the BGP link
 

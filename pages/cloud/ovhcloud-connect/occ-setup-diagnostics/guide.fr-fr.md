@@ -37,7 +37,7 @@ Lors de la commande d’un lien OVHCloud Connect, il est possible de voir côté
 #### Vérification de la LOA
 
 Une mauvaise interprétation de la position sur l'interconnexion (Cross-Connect) par le PoP peut engendrer une absence de lumière sur le lien OVHcloud Connect.
-Par exemple, le PoP peut indiquer qu'il n'y a pas d'interconnecion sur la position mentionnée sur la LOA.
+Par exemple, le PoP peut indiquer qu'il n'y a pas d'interconnexion sur la position mentionnée sur la LOA.
 
 ##### **Comment lire les informations sur la LOA ?**
 
@@ -78,15 +78,17 @@ Si le peering est « **DOWN** » d'un côté  ou des deux côtés, cela peut avo
 
 #### Configuration SFP
 
-Le SFP à utiliser sur l'équipement client sur une liaison OVHcloud Connect dépend du lien commmandé.
+Des valeurs optiques **UP** mais pas de lien Ethernet (interface **DOWN**) sont un symptôme d'un SFP mal configuré.
 
-Si vous avez commandé un lien 1 Gbit/s, le SFP sera: 1000Base-LX/LH.
+Le SFP à utiliser sur l'équipement client sur une liaison OVHcloud Connect dépend du lien commmandé. Vous devez utiliser un SFP conforme à la bande-passante commandée.
+
+Si vous avez commandé un lien 1 Gbit/s, le SFP sera: 1000Base-LX/LH. Utilisez la commande suivante :
 
 ```
 speed 1000
 ```
 
-Si vous avez commandé un lien 10 Gbit/s, le SFP sera: 10GBase-LR.
+Si vous avez commandé un lien 10 Gbit/s, le SFP sera: 10GBase-LR. Utilisez la commande suivante :
 
 ```
 speed 10000
@@ -98,9 +100,28 @@ Pour plus d'informations, consultez les [capacités et limites techniques de l'o
 
 L'auto-négociation n'est pas supportée dans l'offre OVHcloud Connect. Ce paramètre doit être désactivé.
 
-Pour désactiver l'auto-négociation sur un équipement Cisco, utilisez la commande suivante :
+Pour désactiver l'auto-négociation sur un équipement Cisco, utilisez la commande :
 
 ```
+no negotiate auto
+```
+
+ou
+
+```
+no speed negotiate
+```
+
+Sur Cisco IOS, utilisez la commande suivante :
+
+```
+speed nonegotiate
+```
+
+Sur Cisco NX-OS, utilisez la commande suivante :
+
+```
+speed 1000
 no negotiate auto
 ```
 
@@ -110,8 +131,8 @@ Un conflit d'adresses IP peut survenir si vous avez sélectionné une adresse IP
 
 Les règles de configuration des adresses IP en fonction du Subnet sont les suivantes :
 
-- Subnet côté DC : /30 - Première adresse IP pour OVHcloud, deuxième adresse IP pour le client.
-- Subnet côté PoP: /28 - Trois premières adresses IP pour OVHcloud - Vlan par défaut à 0
+- Subnet côté DC : /28 (valeur minimum) - Première adresse IP pour OVHcloud, deuxième adresse IP pour le client.
+- Subnet côté PoP: /30 (valeur fixe) - Trois premières adresses IP pour OVHcloud - Vlan par défaut à 0
 
 ### Configuration du lien BGP
 
