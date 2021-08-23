@@ -75,7 +75,7 @@ In questo caso, è preferibile ripristinare solo la directory interessata. Per m
 ## Ripristina il tuo database SQL
 Se necessario, consulta le nostre guide per [esportare](https://www.ovh.it/g1394.web_hosting_come_esportare_un_database) e [importare](https://www.ovh.it/g1393.web_hosting_come_importare_un_database_mysql) il tuo database.
 
-Una volta effettuato il backup del database (dump), per importarlo è necessario eliminare tutte le tabelle dall'interfaccia [phpMyAdmin](https://phpmyadmin.ovh.net).
+Una volta effettuato il backup del database (dump), per importarlo è necessario eliminare tutte le tabelle dall'interfaccia [phpMyAdmin](https://docs.ovh.com/it/hosting/connessione-database-server-bdd/).
 
 
 ## Cosa fare dopo aver effettuato il ripristino?
@@ -88,7 +88,7 @@ Se l’attacco è avvenuto in una data precedente al periodo di backup, ecco com
 ## Non riesci ad accedere al pannello di amministrazione WordPress
 In questo caso, modifica la tua [password amministratore](https://codex.wordpress.org/) seguendo la guida ufficiale di Wordpress.
 
-È possibile aggiornare la tua email dalla tabella user di [phpMyAdmin](https://phpmyadmin.ovh.net). Ritorna poi alla pagina di login, clicca su Hai dimenticato la password? e aspetta che ti venga inviata l'email.
+È possibile aggiornare la tua email dalla tabella user di [phpMyAdmin](https://docs.ovh.com/it/hosting/connessione-database-server-bdd/). Ritorna poi alla pagina di login, clicca su Hai dimenticato la password? e aspetta che ti venga inviata l'email.
 
 
 ## Scarica di nuovo i file di WordPress e sostituiscili a quelli già esistenti.

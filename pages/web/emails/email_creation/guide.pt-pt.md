@@ -78,7 +78,7 @@ Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, e
 
 Aceda à página “[Ligação ao webmail]({ovh_www}/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
-Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual [Utilizar o endereço de e-mail a partir do webmail Outlook Web Access (OWA)](https://docs.ovh.pt/emails/utilizacao-owa/){.external}.
+Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual [Utilizar o endereço de e-mail a partir do webmail Outlook Web Access (OWA)](https://docs.ovh.com/pt/emails/utilizacao-owa/){.external}.
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 

@@ -16,7 +16,7 @@ You can manage an SSL certificate on your Web Hosting plan. You can either order
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](hhttps://www.ovh.com/world/web-hosting/){.external}
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/){.external}
 - at least one [domain name](https://www.ovh.com/world/domains/){.external}
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
