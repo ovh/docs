@@ -1,147 +1,84 @@
 ---
-title: 'Configurer son adresse e-mail sur Thunderbird pour Mac'
+title: 'Configurer son adresse e-mail sur Thunderbird pour Mac OS'
 legacy_guide_number: 1911
 slug: guide-de-configuration-email-pour-thunderbird-mac
-excerpt: 'Retrouvez ici les informations pour configurer votre adresse e-mail sur Thunderbird Mac.'
+excerpt: 'Découvrez comment configurer votre adresse e-mail MX Plan sur Thunderbird sur Mac OS'
 Section: 'Configuration sur ordinateur'
 order: 6
 ---
 
+**Dernière mise à jour le 17/08/2021**
+
+## Objectif
+
+Les comptes MX Plan peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Thunderbird est un client de messagerie libre et gratuit.
+
+**Découvrez comment configurer votre adresse e-mail MX Plan sur Thunderbird sur Mac OS.**
+
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
-## Configuration de Thunderbird sous Mac
+## Prérequis
 
-### Demarrage
-Dans un premier temps, rendez-vous dans l'application "Thunderbird" installée sur votre Mac.
+- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}).
+- Disposer du logiciel Thunderbird installé sur votre Mac.
+- Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+ 
+## En pratique
 
-Voici l'interface qui apparaîtra par défaut si vous n'avez pas d'adresse e-mail configurée. Sinon, allez dans le menu pour lancer l'ajout d'un nouveau compte.
+### Ajouter le compte
 
-Afin de poursuivre l'installation du compte e-mail, sélectionnez "Passer cette étape et utiliser mon adresse existante" pour continuer.
+- **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche et vous invite à renseigner votre adresse e-mail.
 
+- **Si un compte a déjà été paramétré** : cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran, puis `Nouveau`{.action} et enfin `Obtenir un nouveau compte courrier…`{.action}.
 
-![emails](images/2856.png){.thumbnail}
-
-
-### Création du compte
-"Votre nom complet" : renseignez ici le nom d'affichage désiré.
-
-"Adresse électronique" : votre adresse e-mail entière.
-
-"Mot de passe" : le mot de passe défini dans votre espace client pour le compte e-mail mutualisé.
-
-"Retenir le mot de passe" : vous devez cocher cette option.
-
-Cliquez sur "Continuer" pour poursuivre les étapes d'installation.
+| | |
+|---|---|
+|![Thunderbird](images/thunderbird-mac-mxplan01.png){.thumbnail}|Depuis la fenêtre qui s'affiche, saisissez les 3 informations suivantes: <br>- Votre nom complet (Nom d'affichage)<br>- Adresse électronique <br>- Mot de passe.|
+|Cliquez ensuite sur `Configurer manuellement...`{.action} pour saisir les paramètres de serveur **ENTRANT**: <br>- Protocole **IMAP** <br>- Serveur **ssl0.ovh.net** <br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**|![Thunderbird](images/thunderbird-mac-mxplan02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-mac-mxplan03.png){.thumbnail}|Saisir les paramètres de serveur **SORTANT**: <br>- Protocole **SMTP** <br>- Serveur **ssl0.ovh.net** <br>- Port **465** <br>- SSL **SSL/TLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**<br><br>Pour finaliser la configuration, cliquez sur `Terminé`{.action}|
 
 
-![emails](images/2857.png){.thumbnail}
 
+Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 
-### Création du compte (suite)
-Thunderbird récupère les paramètres de l'adresse e-mail et vous propose deux configurations possibles :  **IMAP**  ou POP3.
+|Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
+|---|---|---|---|
+|Entrant|ssl0.ovh.net|SSL/TLS|995|
+|Sortant|ssl0.ovh.net|SSL/TLS|465|
 
-Dans notre exemple, on configure le compte en  **IMAP**  mais il vous est tout à fait possible de le configurer en POP. Vous retrouverez à la fin de ce guide les informations de configuration pour un compte mail de type POP3.
+### Utiliser l'adresse e-mail
 
-À noter que Thunderbird propose une configuration manuelle.
+Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-Cliquez sur "Configuration manuelle" pour poursuivre les étapes d'installation.
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, n'hésitez pas à consulter notre guide [Consulter son compte Exchange depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/) ou [Utiliser son adresse e-mail depuis le webmail RoundCube](https://docs.ovh.com/fr/emails/utilisation-roundcube/#ou-et-comment-se-connecter-au-webmail-roundcube)
 
+### Récupérer une sauvegarde de votre adresse e-mail
 
-![emails](images/2858.png){.thumbnail}
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consulter le paragraphe « **Exporter** » dans la partie « **Thunderbird** »sur notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter_1).
 
+### Modifier les paramètres existants
 
-### Configuration des parametres serveurs
-Vérifiez que ces paramètres sont correctement renseignés :
+Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
 
-Pour la première ligne Serveur entrant :
+- Allez dans `Outils`{.action} depuis la barre de menu en haut de votre écran.
+- Cliquez sur `Paramètres des comptes`{.action}.
 
-Serveur entrant : IMAP
+![Thunderbird](images/thunderbird-mac-mxplan04.png){.thumbnail}
 
-Nom d'hôte du serveur : SSL0.OVH.NET
+- Pour modifier les paramètres liés à la **réception** de vos e-mails, cliquez sur `Paramètres serveur`{.action} dans la colonne de gauche sous votre adresse e-mail, pour accéder à la fenêtre de paramètres.
 
-Port : 993
+![Thunderbird](images/thunderbird-mac-mxplan05.png){.thumbnail}
 
-SSL : SSL/TLS
+- Pour modifier les paramètres liés à **l'envoi** de vos e-mails, cliquez sur `Serveur sortant (SMTP)`{.action} (**1**) tout en bas de la colonne de gauche.
+- Cliquez sur l'adresse e-mail concernée dans la liste (**2**), puis cliquez sur `Modifier`{.action}(**3**)
 
-Authentification : Mot de passe normal
+![Thunderbird](images/thunderbird-mac-mxplan06.png){.thumbnail}
 
-
-![emails](images/2859.png){.thumbnail}
-
-Pour la seconde ligne Serveur sortant :
-
-Serveur sortant : SMTP
-
-Nom d'hôte du serveur : SSL0.OVH.NET
-
-Port : 465
-
-SSL : SSL/TLS
-
-Authentification : Mot de passe normal
-
-Identifiant serveur entrant & sortant : votre adresse e-mail entière
-
-Cliquez sur "Terminé" pour finaliser l'installation.
-
-
-### Parametres serveur &amp; Serveur Sortant (SMTP)
-Le compte étant maintenant ajouté, vous trouverez les différents paramètres serveur.
-
-Cliquez sur "Serveur sortant (SMTP)" pour vérifier les informations renseignées pour le serveur sortant.
-
-
-![emails](images/2860.png){.thumbnail}
-
-
-### Parametres serveur &amp; Serveur Sortant (SMTP) suite
-Voici les paramètres SMTP à renseigner : Nom du serveur : SSL0.OVH.NET Port : 465 Sécurité de la connexion : SSL/TLS Méthode d'authentification : Mot de passe normal Nom d'utilisateur : votre adresse e-mail entière
-
-Cliquez sur  **"Ok"**  pour valider les informations du SMTP.
-
-
-![emails](images/2861.png){.thumbnail}
-
-
-## Rappel des parametres POP - IMAP
-
-### Configuration POP
-Voici les informations à retenir pour la configuration d'un compte e-mail **POP** .
-
-Configuration  **POP**  avec sécurisation SSL activée ou désactivée :
-
-Adresse Email : Votre adresse e-mail mutualisée entière. Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Nom d'utilisateur : Votre adresse e-mail mutualisée entière. Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET** Port serveur entrant : Le port du serveur entrant :  **995**  ou  **110** Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET** Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
-
-Les ports  **110**  et  **587**  correspondent à la sécurisation SSL désactivée. Les ports  **995**  et  **465**  correspondent à la sécurisation SSL activée.
-
-- Vous devez obligatoirement activer [l'authentification](#parametres_des_comptes_parametres_du_serveur_sortant_smtp){.external} du serveur sortant SMTP.
-
-|Ports|SSL activé|SSL désactivé|
-|---|---|---|
-|Entrant|995|110|
-|Sortant|465|587|
-
-
-### Configuration IMAP
-Voici les informations à retenir pour la configuration d'un compte e-mail **IMAP** .
-
-Configuration  **IMAP**  avec sécurisation SSL activée ou désactivée :
-
-Adresse Email : Votre adresse e-mail mutualisée entière. Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Nom d'utilisateur : Votre adresse e-mail mutualisée entière. Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET** Port serveur entrant : Le port du serveur entrant :  **993**  ou  **143** Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET** Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
-
-Les ports  **143**  et  **587**  correspondent à la sécurisation SSL désactivée. Les ports  **993**  et  **465**  correspondent à la sécurisation SSL activée.
-
-- Vous devez obligatoirement activer [l'authentification](#parametres_des_comptes_parametres_du_serveur_sortant_smtp){.external} du serveur sortant SMTP.
-
-|Ports|SSL activé|SSL désactivé|
-|---|---|---|
-|Entrant|993|143|
-|Sortant|465|587|
 
 ## Aller plus loin
 
