@@ -37,8 +37,6 @@ order: 1
 | Max. number of L2 VPN Clients | Number of VPN clients to connect | 5 |
 | Max. number of whitelisted IPs | Number of IPs allowed to connect to your VMware infrastructure | 2048 |
 
-
-
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

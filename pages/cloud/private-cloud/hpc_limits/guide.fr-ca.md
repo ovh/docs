@@ -6,7 +6,7 @@ section: FAQ
 order: 2
 ---
 
-**Dernière mise à jour le 30 novembre 2020**
+**Dernière mise à jour le 18/08/2021**
 
 ## Objectif
 
@@ -34,6 +34,7 @@ order: 2
 | Nombre max. de tunnels VPN IPSec | Nombre max. de tunnels VPN par edge | 512 compact edge<br>1600 large edge<br>4096 quad large edge<br>6000 extra large edge |
 | Nombre max. de vRack par vDC | Nombre max. de réseaux privés par Virtual Data Center (VDC) | 1 |
 | Nombre max. de clients VPN L2 | Nombre de clients VPN à connecter | 5 |
+| Nombre max. d'adresses IP autorisées | Nombre d’adresses IP autorisées à se connecter à votre infrastructure VMware | 2048 |
 
 ## Aller plus loin
 

@@ -6,7 +6,7 @@ legacy_guide_number: '1442255'
 section: OVHcloud Funktionen
 ---
 
-**Letzte Aktualisierung am 25.06.2020**
+**Letzte Aktualisierung am 18.08.2021**
 
 ## Ziel
 
@@ -32,6 +32,11 @@ Fügen Sie hier die entsprechende IP hinzu. Sie können auch eine Beschreibung a
 Nun müssen Sie nur noch bestätigen: Klicken Sie auf `Weiter`{.action}, und sobald die IP als **„Autorisiert und eingerichtet“** gekennzeichnet ist, ist die Verbindung mit vSphere über diese IP möglich.
 
 ![vCenter](images/restrictIP2.JPG){.thumbnail}
+
+> [!primary]
+>
+> Bitte beachten Sie, dass Sie aus Sicherheitsgründen maximal 2048 IP-Adressen erlauben können, sich mit vCenter zu verbinden.
+>
 
 ## Weiterführende Informationen
 

@@ -1,6 +1,7 @@
 ---
 title: SSL Gateway
 slug: ssl-gateway
-excerpt: La securite accessible a tous
+excerpt: La sécurité accessible à tous
 sections: Général, Utilisation
+order: 07
 ---

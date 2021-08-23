@@ -105,7 +105,7 @@ Il est préférable de ne restaurer que le répertoire concerné dans le cas où
 ### Restauration base de donnees SQL
 Voici 2 guides expliquant comment réaliser un [export](../exportation-bases-donnees/){.external} de la base de données et comment réaliser [l'import](../mutualise-guide-importation-dune-base-de-donnees-mysql/){.external}.
 
-Une fois la sauvegarde de la base (dump) réalisée, il sera nécessaire de supprimer l'ensemble des tables depuis [phpMyAdmin](https://phpmyadmin.ovh.net){.external} afin de pouvoir importer votre sauvegarde.
+Une fois la sauvegarde de la base (dump) réalisée, il sera nécessaire de supprimer l'ensemble des tables depuis [phpMyAdmin](https://docs.ovh.com/fr/hosting/connexion-base-de-donnees-serveur-bdd/){.external} afin de pouvoir importer votre sauvegarde.
 
 
 ### Suite a la restauration
@@ -119,7 +119,7 @@ Il faut aussi désinstaller les plugins non utilisés, la désactivation n'est p
 ### Vous ne pouvez pas vous connecter a votre panneau administrateur WordPress
 Il faut dans ce cas modifier votre [mot de passe administrateur](https://codex.wordpress.org/){.external} en suivant le guide officiel de Wordpress.
 
-Si vous trouvez cela trop compliqué, il est possible de mettre à jour votre e-mail depuis [phpMyAdmin](https://phpmyadmin.ovh.net){.external} dans la table user et revenir à la page de connexion, cliquez sur Mot de passe oublié, et d'attendre que l'e-mail vous soit envoyé.
+Si vous trouvez cela trop compliqué, il est possible de mettre à jour votre e-mail depuis [phpMyAdmin](https://docs.ovh.com/fr/hosting/connexion-base-de-donnees-serveur-bdd/){.external} dans la table user et revenir à la page de connexion, cliquez sur Mot de passe oublié, et d'attendre que l'e-mail vous soit envoyé.
 
 
 ### Remplacez les fichiers de WordPress avec ceux d'un WordPress fraichement telecharge.

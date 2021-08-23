@@ -138,7 +138,7 @@ Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'adminis
 
 ### Monitoring OVHcloud
 
-Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). L'option se situe dans la section `État des services`.
+Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). L'option se situe dans la section `État des services`.
 
 ![monitoring](images/monitoring-your-server.png){.thumbnail}
 

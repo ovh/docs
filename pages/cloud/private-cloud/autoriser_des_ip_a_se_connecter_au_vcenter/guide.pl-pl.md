@@ -4,7 +4,7 @@ slug: autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter
 section: Funkcjonalności OVHcloud
 ---
 
-**Ostatnia aktualizacja z dnia 01-09-2020**
+**Ostatnia aktualizacja z dnia 18-08-2021**
 
 ## Wprowadzenie
 
@@ -30,6 +30,11 @@ Dodaj tutaj adres IP i ewentualnie jego opis, aby można go było później łat
 Na koniec zatwierdź operację, klikając `Dalej`{.action}. Zaznacz IP jako **Autoryzowany i wdrożony**, wówczas połączenie z vSphere będzie możliwe z tego adresu IP.
 
 ![vCenter](images/restrictIP2.JPG){.thumbnail}
+
+> [!primary]
+>
+> Ze względów bezpieczeństwa możesz przypisać do połączenia z vCenter maksymalnie 2048 adresów IP.
+>
 
 ## Sprawdź również
 

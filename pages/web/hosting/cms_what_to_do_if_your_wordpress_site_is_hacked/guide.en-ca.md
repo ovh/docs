@@ -73,7 +73,7 @@ If you have multiple websites on your webspace, it is better to only restore the
 ## Restoring your SQL database
 If you need to, see our two guides, to [export](../web_hosting_database_export_guide/) your database.
 
-Once you have backed up your database (dump), you have to delete all the tables from [phpMyAdmin](https://phpmyadmin.ovh.net) in order to import your backup.
+Once you have backed up your database (dump), you have to delete all the tables from [phpMyAdmin](https://docs.ovh.com/ca/en/hosting/connecting-to-database-on-database-server/) in order to import your backup.
 
 
 ## What should I do once I have restored my backup?
@@ -86,7 +86,7 @@ If the attack occurred before the last backup period, here's how to reset your W
 ## You cannot log in to your WordPress administrator panel
 In this instance, reset your [administrator password](https://codex.wordpress.org/) by following the official WordPress guide. 
 
-If you find this too complicated, you can update your email from [phpMyAdmin](https://phpmyadmin.ovh.net) in the userstable. Then go back to the login page, click on Forgotten password, and wait to receive an email.
+If you find this too complicated, you can update your email from [phpMyAdmin](https://docs.ovh.com/ca/en/hosting/connecting-to-database-on-database-server/) in the userstable. Then go back to the login page, click on Forgotten password, and wait to receive an email.
 
 
 ## Download new WordPress files and replace the existing ones.
