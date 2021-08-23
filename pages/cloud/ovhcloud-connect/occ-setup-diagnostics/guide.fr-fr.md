@@ -131,7 +131,7 @@ Un conflit d'adresses IP peut survenir si vous avez sélectionné une adresse IP
 
 Les règles de configuration des adresses IP en fonction du subnet sont les suivantes :
 
-- subnet côté DC : /28 (valeur minimum) - Trois premières adresses IP pour OVHcloud - Vlan par défaut à 0.
+- subnet côté DC : /28 (valeur minimum) - Trois premières adresses IP pour OVHcloud - Vlan fixé à 0 (untagged).
 - subnet côté PoP: /30 (valeur fixe) - Première adresse IP pour OVHcloud, deuxième adresse IP pour le client.
 
 ### Configuration du lien BGP
