@@ -10,7 +10,7 @@ order: 2
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 30 de novembro de 2020**
+**Última atualização: 18/08/2021**
 
 ## Objetivo
 
@@ -38,6 +38,7 @@ order: 2
 | Número máximo. de túneis VPN IPSec | Número máximo. de túneis VPN por edge | 512 compact edge<br>1600 banda larga<br>4096 quad large dge<br>6000 extra - idade |
 | Número máximo. do vRack por vDC | Número máximo. de redes privadas por Virtual Data Center (VDC) | 1 |
 | Número máximo. de clientes VPN L2 | Número de clientes VPN a ligar | 5 |
+| Número máximo. de endereços IP autorizados | Número de endereços IP autorizados a ligar-se à sua infraestrutura VMware | 2048 |
 
 ## Quer saber mais?
 

@@ -7,7 +7,7 @@ space_name: vSphere as a Service
 section: Funcionalidades de OVHcloud
 ---
 
-**Última actualización: 25/06/2020**
+**Última actualización: 18/08/2021**
 
 ## Objetivo
 
@@ -33,6 +33,11 @@ Añada la dirección IP y, si lo desea, una descripción para poder identificarl
 Por último, haga clic en `Siguiente`{.action} y, una vez que la IP esté marcada como autorizada e instalada, podrá conectarse al vSphere desde esa dirección IP.
 
 ![vCenter](images/restrictIP2.JPG){.thumbnail}
+
+> [!primary]
+>
+> Tenga en cuenta que, por motivos de seguridad, solo podrá autorizar a un máximo de 2048 direcciones IP para conectarse a su vCenter.
+>
 
 ## Más información
 
