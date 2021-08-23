@@ -1,7 +1,7 @@
 ---
 title: "Résoudre les erreurs fréquentes lors de la mise en service de OVHcloud Connect"
 slug: occ-diagnostics
-excerpt: "Découvrez comment résourdre les erreurs les plus fréquentes liées à la mise en service de OVHcloud Connect"
+excerpt: "Découvrez comment résoudre les erreurs les plus fréquentes liées à la mise en service de OVHcloud Connect"
 section: Premiers pas
 order: 4
 ---
@@ -10,7 +10,7 @@ order: 4
 
 ## Objectif
 
-Découvrez comment résourdre les erreurs les plus fréquentes liées à la mise en service de OVHcloud Connect
+Découvrez comment résoudre les erreurs les plus fréquentes liées à la mise en service de OVHcloud Connect.
 
 ## Prérequis
 
@@ -18,7 +18,7 @@ Découvrez comment résourdre les erreurs les plus fréquentes liées à la mise
 
 ## En pratique
 
-### Vérification de la présence de lumière sur le lien OVHcloud Connect
+### Vérifier la présence de lumière sur le lien OVHcloud Connect
 
 Lors de la commande d’un lien OVHCloud Connect, il est possible de voir côté OVHcloud les valeurs optiques IN/OUT. Vous pouvez demander des informations à ce sujet à votre équipe support.
 
@@ -31,7 +31,7 @@ Lors de la commande d’un lien OVHCloud Connect, il est possible de voir côté
 > [!warning]
 >
 > - Pour rappel, l'interconnexion (Cross-Connect) est sous votre responsabilité contractuelle.
-> - Avant de prendre contact avec les équipes OVHcloud, vous devez ouvrir un ticket vers le PoP.
+> - Avant de prendre contact avec les équipes OVHcloud, vous devez ouvrir un ticket auprès du PoP.
 >
 
 #### Vérification de la LOA
@@ -108,7 +108,7 @@ no negotiate auto
 
 Un conflit d'adresses IP peut survenir si vous avez sélectionné une adresse IP utilisée par OVHcloud.
 
-Les règles de configuration des adresses IP en fonction du Subnet sont les suivantes.
+Les règles de configuration des adresses IP en fonction du Subnet sont les suivantes :
 
 - Subnet côté DC : /30 - Première adresse IP pour OVHcloud, deuxième adresse IP pour le client.
 - Subnet côté PoP: /28 - Trois premières adresses IP pour OVHcloud - Vlan par défaut à 0
