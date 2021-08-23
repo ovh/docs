@@ -115,7 +115,7 @@ Il motore PHP consente di attivare o disattivare l’acceleratore PHP (PHP-FPM),
 È possibile modificare il motore PHP di un hosting Web in diversi modi:
 
 - **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web//#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida. Per attivare l’acceleratore PHP (PHP-FPM) seleziona “php” come motore; per disattivarlo, scegli “phpcgi”.
-- **agire manualmente sul file .ovhconfig**: questa soluzione, più tecnica, richiede la connessione allo spazio di storage. Per modificare il file **.ovhconfig**, consulta la nostra guida [Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.it/hosting/configurare-file-ovhconfig/){.external}.
+- **agire manualmente sul file .ovhconfig**: questa soluzione, più tecnica, richiede la connessione allo spazio di storage. Per modificare il file **.ovhconfig**, consulta la nostra guida [Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/){.external}.
 
 #### Modalità 
 
@@ -129,7 +129,7 @@ La modalità permette di gestire sia il comportamento della cache dei file stati
 È possibile modificare la modalità utilizzata da un hosting Web in diversi modi:
 
 - **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web//#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida.
-- **agire manualmente sul file .ovhconfig**: questa soluzione, più tecnica, richiede la connessione allo spazio di storage. Per modificare il file **.ovhconfig**, consulta la nostra guida [Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.it/hosting/configurare-file-ovhconfig/){.external}.
+- **agire manualmente sul file .ovhconfig**: questa soluzione, più tecnica, richiede la connessione allo spazio di storage. Per modificare il file **.ovhconfig**, consulta la nostra guida [Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/){.external}.
 
 ## Per saperne di più
 

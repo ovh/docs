@@ -155,6 +155,6 @@ Relembramos que, se encontrar dificuldades durante a publicação do site, será
 
 [Aceder ao espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external}
 
-[Alterar a palavra-passe de um utilizador FTP](http://docs.uxci.ovh/pt-pt/web/hosting/alterar-palavra-passe-utilizador-ftp/){.external}
+[Alterar a palavra-passe de um utilizador FTP](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/){.external}
 
 Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}

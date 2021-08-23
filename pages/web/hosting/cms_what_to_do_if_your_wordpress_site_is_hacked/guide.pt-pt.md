@@ -75,7 +75,7 @@ Através do Manager é possível restaurar a totalidade do espaço FTP mas pode 
 ## Restauração de base de dados SQL
 Deixamos 2 guias que explicam como efetuar [exportação](https://www.ovh.pt/g1394.exportacao-de-base-de-dados) da base de dados e como efetuar uma [limportação](https://www.ovh.pt/g1393.importacao-de-base-de-dados-mysql).
 
-Após ter efetuado o backup da base de dados (dump), é necessário eliminar o conjunto das tabelas a partir do [phpMyAdmin](https://phpmyadmin.ovh.net) a fim de poder importar o seu backup.
+Após ter efetuado o backup da base de dados (dump), é necessário eliminar o conjunto das tabelas a partir do [phpMyAdmin](https://docs.ovh.com/pt/hosting/conexao-base-de-dados-servidor-bdd/) a fim de poder importar o seu backup.
 
 
 ## Seguimento do restauro
@@ -88,7 +88,7 @@ Se o acto de pirataria é mais antigo e o restauro não resolve o problema veja 
 ## Não se consegue ligar ao painel de administrador WordPress
 Deve, nesse caso, modificar a sua [password do administrador](https://codex.wordpress.org/) ao seguir o guia oficial do Wordpress.
 
-Se verifica que é complicado, é igualmente necessário atualizar o seu endereço de e-mail a partir do [phpMyAdmin](https://phpmyadmin.ovh.net) na tabela user e ao voltar à página de ligação clique em Perdeu a password?, e aguarde por um e-mail.
+Se verifica que é complicado, é igualmente necessário atualizar o seu endereço de e-mail a partir do [phpMyAdmin](https://docs.ovh.com/pt/hosting/conexao-base-de-dados-servidor-bdd/) na tabela user e ao voltar à página de ligação clique em Perdeu a password?, e aguarde por um e-mail.
 
 
 ## Substitua os ficheiros Wordpress com os de um Wordpress "virgem"

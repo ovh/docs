@@ -70,7 +70,7 @@ De nombreux conseils sont également proposés par les membres de notre communau
 
 ### Pourquoi mon débit est trop faible ?
 
-En cas de débit trop faible, testez tout d'abord votre connexion en effectuant un test neutre. Ne branchez qu'un seul ordinateur sur l'un des ports ethernet (RJ45) de votre modem, sans utiliser un éventuel switch ou autre équipement intermédiaire. [Désactivez le Wi-Fi sur votre modem](../configuration_du_modem_a_partir_de_votre_espace_client/#22-configuration-generale) puis rendez-vous sur [ovh.net](http://ovh.net/) pour effectuer un test de débit (speedtest).
+En cas de débit trop faible, testez tout d'abord votre connexion en effectuant un test neutre. Ne branchez qu'un seul ordinateur sur l'un des ports ethernet (RJ45) de votre modem, sans utiliser un éventuel switch ou autre équipement intermédiaire. [Désactivez le Wi-Fi sur votre modem](../configuration_du_modem_a_partir_de_votre_espace_client/#22-configuration-generale) puis rendez-vous sur [proof.ovh.net](https://proof.ovh.net/) pour effectuer un test de débit (speedtest).
 
 Si votre débit reste trop bas, pensez à redémarrer votre modem. Vous pouvez également le réinitialiser. Consultez les méthodes de redémarrage et de réinitialisation applicables à votre modem sur notre guide [Redémarrer ou réinitialiser une box OVHcloud](../redemarrer-reinitialiser-modem-adsl-ovh/).
 
