@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak utworzyć instancję w Panelu klienta OVHcloud Publi
 slug: tworzenie_instancji_w_panelu_klienta_ovh
 section: 'Pierwsze kroki'
 order: 3
+hidden: true
 ---
 
 **Ostatnia aktualizacja: 30/03/2021**

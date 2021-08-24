@@ -1,8 +1,9 @@
 ---
-title: 'Primeros pasos con una instancia de Public Cloud'
+title: 'Gestionar las instancias de Public Cloud'
 slug: empezar-con-una-instancia-public-cloud
 excerpt: 'Cómo empezar a utilizar una instancia de Public Cloud'
 section: 'Primeros pasos'
+order: 2
 ---
 
 **Última actualización: 4/12/2019**
@@ -15,7 +16,7 @@ Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?act
 
 ### Requisitos
 
-- Una [instancia de Public Cloud de OVHcloud](https://www.ovhcloud.com/es/public-cloud/)
+- Una [instancia de Public Cloud de OVHcloud](../public-cloud-primeros-pasos/)
 - [Una clave SSH](../crear-llave-ssh/)
 
 ### Procedimiento

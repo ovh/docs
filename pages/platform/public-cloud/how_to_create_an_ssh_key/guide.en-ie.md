@@ -4,6 +4,7 @@ slug: create-ssh-keys
 excerpt: 'Find out how to create an SSH key and add it in your Public Cloud Control Panel'
 section: Getting started
 order: 2
+hidden: true
 ---
 
 **Last updated 21st December 2020**

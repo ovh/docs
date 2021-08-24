@@ -3,7 +3,7 @@ title: 'Muelog das imagens Public Cloud & VPS'
 slug: trocelog-imagens
 excerpt:  Descubra as modificações introduzidas nas imagens fornecidas nas soluções Public Cloud e VPS
 section: Introdução
-order: 12
+order: 8
 ---
 
 **Última atualização: 18/01/2021**

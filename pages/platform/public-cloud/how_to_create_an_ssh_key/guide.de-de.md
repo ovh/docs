@@ -4,6 +4,7 @@ slug: create-ssh-keys
 excerpt: 'Erfahren Sie hier, wie Sie einen SSH-Schlüssel erstellen, um sich bei Ihrer Instanz anzumelden'
 section: Erste Schritte
 order: 3
+hidden: true
 ---
 
 **Letzte Aktualisierung am 21.12.2020**

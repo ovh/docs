@@ -3,6 +3,7 @@ title: 'Criar chaves SSH'
 slug: criacao-de-chaves-ssh
 excerpt: 'Como criar uma chave SSH para se ligar uma instância'
 section: Introdução
+hidden: true
 ---
 
 **Última atualização a 14 de Novembro de 2019**
