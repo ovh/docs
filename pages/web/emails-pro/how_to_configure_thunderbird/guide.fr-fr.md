@@ -29,7 +29,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
  
 ## En pratique
 
-> [!primary]
+> [!warning]
 >
 > Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
@@ -70,7 +70,7 @@ Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des
 
 ### Modifier les paramètres existants
 
-> [!primary]
+> [!warning]
 >
 > Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
