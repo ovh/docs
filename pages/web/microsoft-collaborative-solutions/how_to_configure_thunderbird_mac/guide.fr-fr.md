@@ -4,7 +4,7 @@ slug: exchange-configuration-de-thunderbird-mac
 legacy_guide_number: 1278
 excerpt: 'Découvrez comment configurer votre adresse e-mail Exchange sur Thunderbird pour Mac OS'
 section: 'Configuration Exchange sur ordinateur'
-order: 6
+order: 7
 ---
 
 **Dernière mise à jour le 23/08/2021**
