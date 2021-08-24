@@ -3,7 +3,7 @@ title: 'Changelog delle immagini Public Cloud & VPS'
 slug: changelog-immagini
 excerpt:  Scopri le modifiche apportate alle immagini fornite sulle soluzioni Public Cloud e VPS
 section: 'Per iniziare'
-order: 12
+order: 8
 ---
 
 **Ultimo aggiornamento: 18/01/2021**

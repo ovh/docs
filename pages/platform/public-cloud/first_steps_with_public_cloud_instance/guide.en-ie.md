@@ -1,8 +1,9 @@
 ---
-title: 'Getting started with a Public Cloud Instance'
+title: 'Managing your Public Cloud Instances'
 slug: get-started-with-a-public-cloud-instance
-excerpt: 'Find out how to get started with an OVHcloud Public Cloud Instance'
-section: 'Quick start'
+excerpt: 'Find out how to manage your Public Cloud projects via the OVHcloud Control Panel'
+section: Getting started
+order: 2
 ---
 
 **Last updated 4th December 2019**
@@ -15,9 +16,8 @@ You can manage your Public Cloud projects easily via the [OVHcloud Control Panel
 
 ## Requirements
 
-- a [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud) in your OVHcloud account
-- an [SSH key](https://docs.ovh.com/ie/en/public-cloud/create-ssh-keys/)
-
+- a [Public Cloud instance in your Control Panel](../public-cloud-first-steps/)
+- an [an SSH key](../create-ssh-keys/).
 
 ## Instructions
 

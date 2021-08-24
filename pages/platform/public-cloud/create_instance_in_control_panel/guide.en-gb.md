@@ -5,6 +5,7 @@ excerpt: 'Find out how to create an instance in the OVHcloud Public Cloud Contro
 legacy_guide_number: g1775
 section: Getting started
 order : 3
+hidden: true
 ---
 
 **Last updated 30th March 2021**

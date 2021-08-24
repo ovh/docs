@@ -1,9 +1,10 @@
 ---
-title: 'Pierwsze kroki z instancją Public Cloud'
+title: 'Zarządzanie instancjami Public Cloud'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z instancji Public Cloud'
 slug: rozpoczecie_pracy_z_instancja_public_cloud
 legacy_guide_number: g2018
 section: 'Pierwsze kroki'
+order: 2
 ---
 
 **Ostatnia aktualizacja: 04-12-2019**
@@ -16,7 +17,7 @@ Instancjami OVHcloud Public Cloud można łatwo zarządzać za pośrednictwem [P
 
 ### Wymagania początkowe
 
-- [instancja OVHcloud Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/){.external}
+- [instancja OVHcloud Public Cloud](../public-cloud-pierwsze-kroki/){.external}
 - [klucz SSH](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/){.external}
 
 ### W praktyce

@@ -4,6 +4,7 @@ excerpt: 'Aprenda a crear una instancia desde el área de cliente Public Cloud d
 slug: crear_una_instancia_desde_el_area_de_cliente_de_ovh
 legacy_guide_number: g1775
 section: 'Primeros pasos'
+hidden: true
 ---
 
 **Última actualización: 30/03/2021**

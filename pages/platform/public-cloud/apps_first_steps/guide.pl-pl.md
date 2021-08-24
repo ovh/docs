@@ -3,6 +3,7 @@ title: Pierwsze kroki z preinstalowanymi aplikacjami
 slug: aplikacje-preinstalowane
 excerpt: Dowiedz się, jak wdrożyć aplikacje zainstalowane na Twoich instancjach Public Cloud
 section: Pierwsze kroki
+order: 7
 ---
 
 **Ostatnia aktualizacja z dnia 24 sierpnia 2020 r**

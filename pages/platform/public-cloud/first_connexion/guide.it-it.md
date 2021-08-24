@@ -4,6 +4,7 @@ slug: prima-connessione
 legacy_guide_number: 1787
 excerpt: 'Scopri come connettersi a un’istanza Public Cloud'
 section: 'Per iniziare'
+hidden: true
 ---
 
 **Ultimo aggiornamento 06/12/2019**

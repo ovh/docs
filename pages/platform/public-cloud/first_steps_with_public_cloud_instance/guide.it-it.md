@@ -1,9 +1,10 @@
 ---
-title: 'Iniziare a utilizzare un’istanza Public Cloud'
+title: 'Gestire le istanze Public Cloud'
 slug: come_utilizzare_la_tua_istanza_public_cloud
-excerpt: 'Come eseguire le prime operazioni su un’istanza Public Cloud OVH'
+excerpt: 'Come eseguire le prime operazioni su un’istanza Public Cloud OVHcloud'
 section: 'Per iniziare'
 legacy_guide_number: g2018
+order: 2
 ---
 
 **Ultimo aggiornamento 04/12/2019**
@@ -16,7 +17,7 @@ La sezione Cloud dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?actio
 
 ### Prerequisiti
 
-- [Aver creato un’istanza Public Cloud OVHcloud](../crea_unistanza_dallo_spazio_cliente_ovh/)
+- [Aver creato un’istanza Public Cloud OVHcloud](../primi-passi-public-cloud/)
 - [Aver creato una chiave SSH](../creare-chiave-ssh/)
 
 ### Procedura
