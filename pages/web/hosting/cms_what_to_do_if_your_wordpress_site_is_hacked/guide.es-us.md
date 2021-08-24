@@ -72,7 +72,7 @@ En caso de que varios sitios cohabiten en el mismo alojamiento, le aconsejamos q
 ## Restauración de la base de datos SQL
 Estas dos guías explican cómo realizar la [exportación](http://www.ovh.es/g1394.exportacion-base-de-datos) y la [importación](https://www.ovh.es/g1393.importacion-base-de-datos-mysql) de la base de datos.
 
-Una vez que haya realizado la copia de seguridad de la base de datos (dump), deberá eliminar el conjunto de tablas desde [phpMyAdmin](https://phpmyadmin.ovh.net) para poder importar la copia de seguridad.
+Una vez que haya realizado la copia de seguridad de la base de datos (dump), deberá eliminar el conjunto de tablas desde [phpMyAdmin](https://docs.ovh.com/es/hosting/coneccion-base-de-datos-servidor-bdd/) para poder importar la copia de seguridad.
 
 
 ## Tras la restauración
@@ -85,7 +85,7 @@ Si el pirateo es más antiguo y la restauración no funciona, estos son los paso
 ## No puede conectarse al panel de administración de WordPress
 En ese caso, deberá modificar su [contraseña de administrador](https://codex.wordpress.org/
 
-Si le resulta demasiado complicado, podrá actualizar su correo desde [phpMyAdmin](https://phpmyadmin.ovh.net) en la tabla «user». Vuelva a la página de conexión, haga clic en «He olvidado mi contraseña» y espere a que se le envíe un mensaje de correo electrónico.
+Si le resulta demasiado complicado, podrá actualizar su correo desde [phpMyAdmin](https://docs.ovh.com/es/hosting/coneccion-base-de-datos-servidor-bdd/) en la tabla «user». Vuelva a la página de conexión, haga clic en «He olvidado mi contraseña» y espere a que se le envíe un mensaje de correo electrónico.
 
 
 ## Sustituir los archivos de WordPress por otros de un WordPress que haya sido descargado recientemente

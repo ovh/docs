@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Dernière mise à jour le 25/01/2021**
+**Dernière mise à jour le 18/08/2021**
 
 > [!warning]
 >
@@ -27,14 +27,95 @@ La migration vers un nouveau vDC comporte deux aspects :
 
 ## Prérequis
 
-* Une infrastructure PCC (SDDC)
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
+* Une infrastructure PCC (SDDC ou DC)
+* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Hosted Private Cloud`{.action}.
 
 ## En pratique
 
 Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**.
 
 ### Contexte OVHcloud
+
+#### Ajout d'un nouveau vDC de destination
+
+Vous pouvez ajouter un vDC de destination en procédant comme suit :
+
+1\. Vérifiez que votre datacenter est éligible à la migration vers la plage de destination :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/commercialRange/compliance
+>
+
+**Résultat attendu :** dedicatedCloud.compliantRanges\[]
+
+2\. Vérifiez parmi vos services ceux qui peuvent être migrés :
+
+> [!api]
+>
+> @api {GET} /order/upgrade/privateCloudManagementFee
+>
+
+**Résultat attendu :** liste des services éligibles à la migration.
+
+3\. Visualisez les gammes commerciales auxquelles vous pouvez souscrire :
+
+> [!api]
+>
+> @api {GET} /order/upgrade/privateCloudManagementFee/{serviceName}
+>
+
+**Résultat attendu :** order.cart.GenericProductDefinition\[]
+
+4\. Vérifiez que vous pouvez effectuer une migration avec vos serviceName et planCode pour la plage de destination :
+
+> [!api]
+>
+> @api {GET} /order/upgrade/privateCloudManagementFee/{serviceName}/{planCode} ( quantity : 1 )
+>
+
+**Résultat attendu :** order.upgrade.OperationAndOrder
+
+5\. Création de la commande :
+
+> [!api]
+>
+> @api {POST} /order/upgrade/privateCloudManagementFee/{serviceName}/{planCode} ( quantity : 1 )
+>
+
+**Résultat attendu :** order.upgrade.OperationAndOrder
+
+Cet appel API génère un bon de commande qui doit être validé. Si vous n'avez pas de moyen de paiement, merci de contacter le support ou votre Account Manager pour le faire valider.
+
+#### Ajout de nouvelles ressources
+
+Vous pouvez procéder à la commande de nouvelles ressources dans le nouveau vDC de destination en suivant ce [guide d'informations sur la facturation Private Cloud (EN)](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly).
+
+#### Conversion d'un datastore en datastore global
+
+Un datastore global est un datastore monté sur l’ensemble des clusters / datacentres virtuels d’une infrastructure VMware, c’est-à-dire mutualisé entre le vDC d'origine et le vDC de destination :
+
+Exécutez l'API OVHcloud pour vérifier la compatibilité des datastores. Nous vous recommandons de sélectionner les datastores commandés dans le nouveau vDC, les anciens datastores peuvent ne pas être compatibles.
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/checkGlobalCompatible
+>
+
+**Résultat attendu :** boolean
+
+Si le retour API est FALSE, vos datastores ne sont pas compatibles, vous devrez commander de nouveaux datastores et utiliser VMware Storage vMotion. À cet effet, consultez nos guides « [Informations sur la facturation Private Cloud (EN)](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) » et [VMware Storage vMotion](https://docs.ovh.com/fr/private-cloud/vmware-storage-vmotion-new/).
+
+Si le retour API est TRUE, vous pouvez procéder à la conversion en datastore global.
+
+Exécutez l'API OVHcloud pour vérifier la compatibilité des datastores :
+
+> [!api]
+>
+> @api {POST}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/convertToGlobal
+>
+
+**Résultat attendu :** Informations de tâche
 
 #### Sécurité
 
@@ -49,6 +130,11 @@ Suite au changement de politique d'accès, si celle-ci est passée en « restrei
 Dans le cycle de vie du vDC d'origine, une liste d'utilisateurs peut avoir été créée pour des besoins métiers, ou des besoins organisationnels. Vous devez donc les créer à nouveau sur le vDC de destination et leur attribuer les droits adéquats, en fonction de la configuration du vDC de destination.
 
 Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](../changer-les-droits-d-un-utilisateur/), [modifier le mot de passe d'un utilisateur](../changement-du-mot-de-passe-utilisateur/) et [associer un e-mail à un utilisateur](../associer-email-a-un-utilisateur/).
+
+##### **Option de sauvegarde et de PRA **
+
+Cette option est à activer et à configurer par vDC.
+Vous devez activer l’option concernée sur le nouveau vDC.
 
 ##### **KMS**
 
@@ -172,8 +258,6 @@ Voici comment procéder:
 
 4\. Répétez les étapes 2 et 3 pour toutes les machines virtuelles dont les sauvegardes sont activées et qui ont été migrées vers le nouveau vDC.
 
-5\. Désactivez Veeam Backup sur l'ancien vDC.
-
 ##### **1.8 Organisation de l'inventaire (facultatif)**
 
 Pour des raisons organisationelles, les VMs, les hosts ou les datastores peuvent avoir été placés dans des répertoires.
@@ -287,6 +371,52 @@ Les objets devant être considérés :
 - Resource Pool
 - vApp
 
+##### **1.10 Zerto Replication**
+
+Zerto Replication est configuré au niveau du vDC. Afin de protéger la charge de travail sur le nouveau vDC, certaines actions sont nécessaires.
+
+> **Prérequis :**
+>
+> - Avoir un nouveau vDC
+> - Disposer sous le nouveau vDC d’un cluster host avec au moins deux (2) hosts
+> - Avoir sous le nouveau vDC un datastore accessible depuis les 2 hosts
+> - Avoir activé Zerto Replication sur le nouveau vDC
+>
+
+Exécutez l'API OVHcloud pour préparer la migration :
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/startMigration
+>
+
+`{datacenterId}` est le **nouvel** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+>
+
+Une tâche est lancée sur l'infrastructure pour déployer vRA sur chacun des hosts du nouveau vDC.
+
+Ensuite, Zerto Replication fonctionnera sur les deux datacentres :
+
+- l'ancien est toujours en cours d'exécution et protège votre charge de travail
+- le nouveau est prêt à accueillir votre charge de travail
+
+L'étape suivante dépend de la configuration actuelle par [groupe de protection virtuelle](../zerto-virtual-replication-vmware-vsphere-drp/) :
+
+- source de la réplication
+- destination de la réplication
+
+##### **1.10.1 VPG comme Source**
+
+Avec la migration sur le nouveau vDC, Zerto continuera de protéger la charge de travail avec vRA déployé sur le cluster et les hôtes cibles.
+
+##### **1.10.1 VPG comme destination**
+
+Malheureusement, il n'y a aucun moyen de mettre à jour la configuration de VPG, la seule option est de supprimer le VPG et d'en créer un nouveau.
+
 #### Etape 2 : migration des VM
 
 Comme le vDC d'origine et le vDC de destination se trouvent dans le même vCenter, VMware VMotion peut être utilisé à chaud ou à froid pour migrer des VMs.
@@ -311,6 +441,132 @@ Voici une liste des aspects à prendre en compte:
 Les règles d'affinité sont basées sur des objets de VM de sorte que les règles ne peuvent être créées qu'après la migration des VMs vers le vDC de destination. Une fois la migration terminée, les règles d'affinité peuvent être réappliquées sur le vDC de destination.
 
 **Conseils d'automatisation :** [Ce fil de discussion de communauté VMware](https://communities.vmware.com/t5/VMware-PowerCLI-Discussions/Backup-Restore-DRS-VM-affinity-anti-affinity-rules-can-these-be/td-p/733981/page/2) détaille les options d'exportation et d'importation des règles d'affinité via powercli.
+
+##### **Configuration de Veeam backup**
+
+Désactivez Veeam Backup sur l'ancien vDC. Cela peut se faire via l'appel API suivant :
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/disable
+>
+
+`{datacenterId}` est l'**ancien** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+>
+
+##### **Zerto Replication**
+
+Exécutez l'API OVHcloud pour finaliser la migration :
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/endMigration
+>
+
+`{datacenterId}` est le **nouvel** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+>
+
+Une tâche est lancée pour :
+
+- Vérifier si aucun VPG de destination n'existe encore sur le datacentre : ils DOIVENT être retirés.
+- Basculer l’option Zerto Replication (souscription) de l’ancien vers le nouveau vDC.
+- Retirer tous les vRA des hôtes sur l'ancien vDC.
+
+##### **Supprimer le vDC précédent**
+
+À cette étape, on peut considérer qu’il n’y a plus de données et/ou de VM sur l’ancien vDC, donc on peut supprimer des ressources.
+
+Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+>
+
+#### **Passer les hosts en mode maintenance**
+
+Vous devez mettre les hôtes en mode maintenance en procédant comme suit :
+
+1. Dans le client vSphere, accédez à `Hosts and Clusters`{.action}.
+2. Accédez à un `Host`{.action}.
+3. Faites un clic droit sur le Host.
+4. Accédez à `Maintenance Mode`{.action}.
+5. Cliquez sur `Enter Maintenance Mode`{.action}.
+
+Répétez l'action pour chaque hôte.
+
+#### **Supprimer les datastores**
+
+Avec l'API, obtenez la liste des ID du filer (datastore) :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
+>
+
+Puis pour chaque ID :
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/remove
+>
+
+Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/task/{taskId}
+>
+
+> [!warning]
+>
+> Attendez la fin complète des tâches avant de poursuivre.
+>
+
+#### **Supprimer les hôtes**
+
+Avec l'API, obtenez la liste des ID d'hôte :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
+>
+
+Puis pour chaque ID :
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/remove
+>
+
+Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{hostId}/task/{taskId}
+>
+
+> [!warning]
+>
+> Attendez la fin complète des tâches avant de poursuivre.
+>
+
+#### **Supprimer le vDC**
+
+Avec l'API, demandez la suppression du vDC :
+
+> [!api]
+>
+> @api {DELETE} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
+>
 
 ## Aller plus loin
 

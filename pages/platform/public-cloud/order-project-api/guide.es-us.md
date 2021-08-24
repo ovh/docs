@@ -3,7 +3,7 @@ title: Contratar un proyecto de Public Cloud a través de la API de OVHcloud
 excerpt: Cómo contratar su proyecto de Public Cloud con la API de OVHcloud
 slug: contratar-proyecto-public-cloud-api
 section: Primeros pasos
-order: 13
+order: 9
 ---
 
 **Última actualización: 22 de diciembre de 2020**

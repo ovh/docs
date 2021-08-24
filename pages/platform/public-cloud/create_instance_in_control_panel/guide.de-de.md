@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier die notwendigen Schritte um eine Public Cloud-Instan
 slug: erstellung_einer_instanz_im_ovh_kundencenter
 legacy_guide_number: g1775
 section: Erste Schritte
+hidden: true
 ---
 
 **Letzte Aktualisierung am 30.03.2021**

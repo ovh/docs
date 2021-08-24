@@ -10,7 +10,7 @@ order: 2
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 30 listopada 2020 r**
+**Ostatnia aktualizacja z dnia 18/08/2021**
 
 ## Wprowadzenie
 
@@ -38,6 +38,7 @@ order: 2
 | Maksymalna liczba tuneli VPN IPSec | Maksymalna liczba tuneli VPN na edge | 512 compact edge<br>1600 large<br>4096 kwadrokopter<br>6000 extra large |
 | Maksymalna liczba vRack na vDC | Maksymalna liczba prywatnych sieci przez Virtual Data Center (VDC) | 1 |
 | Maksymalna liczba klientów VPN L2 | Liczba klientów VPN do połączenia | 5 |
+| Maksymalna liczba upoważnionych adresów IP | Liczba adresów IP upoważnionych do łączenia się z Twoją infrastrukturą VMware | 2048 |
 
 ## Sprawdź również
 

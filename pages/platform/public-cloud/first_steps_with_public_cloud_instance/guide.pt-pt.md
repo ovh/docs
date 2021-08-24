@@ -1,28 +1,29 @@
 ---
-title: 'Primeiros passos com uma instância Public Cloud'
+title: 'Gerir as suas instâncias Public Cloud'
 slug: comecar-com-uma-instancia-public-cloud
 excerpt: 'Saiba como começar a utilizar uma instância Public Cloud'
 section: Introdução
+order: 2
 ---
 
 **Última atualização: 4 de dezembro de 2019**
 
 ## Sumário
 
-Tem a possibilidade de gerir facilmente as suas instâncias Public Cloud da OVH a partir da sua [Área de Cliente OVH](https://www.ovh.pt/auth/?action=gotomanager){.external}. Aqui poderá consultar todos os seus projetos de infraestrutura (instâncias, backups, discos, chaves SSH, etc.) e de armazenamento (incluindo a lista de containers).
+Tem a possibilidade de gerir facilmente as suas instâncias Public Cloud da OVH a partir da sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Aqui poderá consultar todos os seus projetos de infraestrutura (instâncias, backups, discos, chaves SSH, etc.) e de armazenamento (incluindo a lista de containers).
 
 **Saiba como começar a utilizar uma instância Public Cloud.**
 
 ### Requisitos
 
-- uma [instância Public Cloud OVH](../criar_uma_instancia_a_partir_do_espaco_cliente_ovh/)
+- uma [instância Public Cloud OVH](../public-cloud-primeiros-passos/)
 - uma [chave SSH](../criacao-de-chaves-ssh/)
 
 ### Instruções
 
 ### Aceder à interface de gestão da instância
 
-Comece por aceder à [Área de Cliente OVH](https://www.ovh.pt/auth/?action=gotomanager){.external}, vá até à secção “Public Cloud” e selecione o serviço Public Cloud em questão. Depois, clique no separador `Instâncias`{.action} à sua esquerda.
+Comece por aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, vá até à secção “Public Cloud” e selecione o serviço Public Cloud em questão. Depois, clique no separador `Instâncias`{.action} à sua esquerda.
 
 Nessa página, verá um resumo de todas as instâncias. Aqui poderá consultar várias informações:
 
