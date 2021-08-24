@@ -3,7 +3,7 @@ title: 'Ordering Public Cloud projects using the OVHcloud API'
 excerpt: 'Find out how to order your Public Cloud project with the OVHcloud API'
 slug: public-cloud-project-order-api
 section: Getting started
-order: 8
+order: 9
 ---
 
 **Last updated 9th December 2020**

@@ -4,6 +4,7 @@ slug: primera-conexion
 legacy_guide_number: 1787
 excerpt: 'Esta guía explica como conectarse a las instancias de Public Cloud de OVHcloud utilizando Windows y Linux'
 section: 'Primeros pasos'
+hidden: true
 ---
 
 **Última actualización: 27/03/2020**

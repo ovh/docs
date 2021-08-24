@@ -3,6 +3,7 @@ title: 'Accedere come utente root e impostare una password'
 slug: imposta_una_password_amministratore
 excerpt: 'Come utilizzare l’utente amministratore e creare la password associata'
 section: Tutorial
+order: 5
 ---
 
 **Ultimo aggiornamento: 08/08/2019**

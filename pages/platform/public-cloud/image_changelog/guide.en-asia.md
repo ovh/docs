@@ -3,6 +3,7 @@ title: 'PCI & VPS - Image changelog'
 slug: pci-vps-image-changelog
 excerpt: Find out what has changed in the images provided for Public Cloud & VPS
 section: 'Getting started'
+order: 8
 ---
 
 **Last updated 9th February 2021**

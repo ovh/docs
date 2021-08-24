@@ -4,6 +4,7 @@ slug: erster-login
 legacy_guide_number: 1787
 excerpt: 'Erfahren Sie hier, wie Sie sich unter Windows und Linux mit Ihren Public Cloud Instanzen verbinden'
 section: 'Erste Schritte'
+hidden: true
 ---
 
 **Letzte Aktualisierung am 03.12.2019**

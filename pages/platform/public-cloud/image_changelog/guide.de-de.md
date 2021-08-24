@@ -3,6 +3,7 @@ title: 'Changelog der Public Cloud & VPS Images'
 slug: changelog-images
 excerpt: Erfahren Sie hier die Änderungen, die an den Images der Public Cloud und VPS Lösungen vorgenommen wurden
 section: 'Erste Schritte'
+order: 8
 ---
 
 > [!primary]

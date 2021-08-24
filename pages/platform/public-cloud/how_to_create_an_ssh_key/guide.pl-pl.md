@@ -3,6 +3,7 @@ title: 'Tworzenie kluczy SSH'
 slug: tworzenie-kluczy-ssh
 excerpt: 'Dowiedz się, jak wygenerować klucz SSH do logowania do Twojej instancji'
 section: 'Pierwsze kroki'
+hidden: true
 ---
 
 **Ostatnia aktualizacja: 21/12/2020**

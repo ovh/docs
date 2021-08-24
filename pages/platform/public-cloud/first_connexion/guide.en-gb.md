@@ -5,6 +5,7 @@ legacy_guide_number: 1787
 excerpt: 'This guide will explain how to log in to your OVH Public Cloud instances using Windows and Linux'
 section: Getting started
 order: 4
+hidden: true
 ---
 
 **Last updated 6th December 2019**

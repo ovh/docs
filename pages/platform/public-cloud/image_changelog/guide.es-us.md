@@ -3,6 +3,7 @@ title: 'Cambio de las imágenes de Public Cloud y VPS'
 slug: changelog-images
 excerpt:  Descubra los cambios realizados en las imágenes que aparecen en las soluciones Public Cloud y VPS.
 section: 'Primeros pasos'
+order: 8
 ---
 
 **Última actualización: 18/01/2021**

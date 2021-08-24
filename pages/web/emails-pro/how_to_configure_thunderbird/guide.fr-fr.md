@@ -1,18 +1,20 @@
 ---
 title: 'Configurer son compte E-mail Pro sur Thunderbird pour Windows'
 slug: configuration-thunderbird-45-8-0
-excerpt: 'Retrouvez ici comment configurer votre adresse E-mail Pro sur Thunderbird 45.8.0'
+routes:
+    canonical: 'https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/'
+excerpt: 'Retrouvez ici comment configurer votre adresse E-mail Pro sur Thunderbird pour Windows'
 section: 'Configuration sur ordinateur'
 order: 5
 ---
 
-**Dernière mise à jour le 20/03/2020**
+**Dernière mise à jour le 23/08/2021**
 
 ## Objectif
 
-Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie et interfaces en ligne compatibles. Cela vous permet d'envoyer et de recevoir vos messages depuis l'appareil ou l'interface en ligne de votre choix.
+Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Thunderbird est un client de messagerie libre et gratuit.
 
-**Apprenez à configurer un compte E-mail Pro sur Thunderbird pour Windows.**
+**Découvrez comment configurer votre adresse E-mail Pro sur Thunderbird sur Windows.**
 
 > [!warning]
 >
@@ -21,17 +23,15 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
-### Prérequis
+## Prérequis
 
-- Disposer d'une adresse E-mail Pro fonctionnelle
+- Disposer d’une adresse E-mail Pro (comprise dans l’offre E-mail Pro ou dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}).
+- Disposer du logiciel Thunderbird installé sur votre Windows.
+- Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+ 
+## En pratique
 
-- Disposer du logiciel Thunderbird 45.8.0 ou supérieur
-
-## Configuration de Thunderbird
-
-### Démarrage
-
-> [!primary]
+> [!warning]
 >
 > Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
@@ -39,108 +39,62 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 > dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 > 
 
-Voici comment réaliser votre configuration en **IMAP** avec **SSL** activé.
+### Ajouter le compte
 
-- Lancez le logiciel Thunderbird.
+- **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche et vous invite à renseigner votre adresse e-mail.
 
-### Ajout du compte
+- **Si un compte a déjà été paramétré** : cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran, puis `Nouveau`{.action} et enfin `Obtenir un nouveau compte courrier…`{.action}.
 
-> [!primary]
+| | |
+|---|---|
+|![Thunderbird](images/thunderbird-win-emailpro01.png){.thumbnail}|Dans la fenêtre qui s'affiche, saisissez les 3 informations suivantes: <br>- Votre nom complet (Nom d'affichage)<br>- Adresse électronique <br>- Mot de passe.|
+|Cliquez ensuite sur `Configurer manuellement...`{.action} pour saisir les paramètres de serveur **ENTRANT**: <br>- Protocole **IMAP** <br>- Serveur **pro?.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**|![Thunderbird](images/thunderbird-win-emailpro02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-emailpro03.png){.thumbnail}|Saisir les paramètres de serveur **SORTANT**: <br>- Protocole **SMTP** <br>- Serveur **pro?.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**<br><br>Pour finaliser la configuration, cliquez sur `Terminé`{.action}|
+
+
+
+Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
+
+|Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
+|---|---|---|---|
+|Entrant|pro**?**.mail.ovh.net (la mention **«?»** est à remplacer par le numéro de votre serveur)|SSL/TLS|995|
+|Sortant|pro**?**.mail.ovh.net (la mention **«?»** est à remplacer par le numéro de votre serveur)|STARTTLS|587|
+
+### Utiliser l'adresse e-mail
+
+Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
+
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, aidez-vous de notre guide [Consulter son compte Exchange depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/).
+
+### Récupérer une sauvegarde de votre adresse e-mail
+
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter_1).
+
+### Modifier les paramètres existants
+
+> [!warning]
 >
-> Si l'assistant de configuration se lance au démarrage de Thunderbird, cliquez simplement sur la croix afin de fermer celui-ci.
+> Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> 
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}
+>  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 > 
 
-- Cliquez sur le bouton **"Menu"**, puis **"Options"**, et enfin `Paramètres des comptes`{.action}.
+Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
 
-![hosting](images/1a.png){.thumbnail}
+- Allez dans `Outils`{.action} depuis la barre de menu en haut de votre écran.
+- Cliquez sur `Paramètres des comptes`{.action}.
 
-- Cliquez ensuite sur **"Gestion des comptes"**, puis `Ajouter un compte de messagerie`{.action}.
+![Thunderbird](images/thunderbird-win-emailpro04.png){.thumbnail}
 
-![hosting](images/1b.png){.thumbnail}
+- Pour modifier les paramètres liés à la **réception** de vos e-mails, cliquez sur `Paramètres serveur`{.action} dans la colonne de gauche sous votre adresse e-mail.
 
-### Configuration du compte
+![Thunderbird](images/thunderbird-win-emailpro05.png){.thumbnail}
 
-- Renseignez les champs ci-dessous et cliquez sur `Continuer`{.action} :
-    - Votre nom complet : **Indiquez votre nom complet**
-    - Adresse électronique : **Indiquez votre adresse E-mail Pro OVHcloud**
-    - Mot de passe : **Indiquez le mot de passe de votre adresse E-mail Pro**
-    - Cochez la case "**Retenir le mot de passe**"
+- Pour modifier les paramètres liés à **l'envoi** de vos e-mails, cliquez sur `Serveur sortant (SMTP)`{.action} tout en bas de la colonne de gauche.
+- Cliquez sur l'adresse e-mail concernée dans la liste , puis cliquez sur `Modifier`{.action}.
 
-![hosting](images/2.png){.thumbnail}
-
-Si l'enregistrement DNS SRV est correctement paramétré, la configuration se complètera automatiquement. En cas contraire, vous devrez réaliser une  `Configuration manuelle`{.action}.
-
-Dans le cas d'une configuration manuelle, renseignez les éléments ci-dessous et cliquez sur `Terminer`{.action} :
-
-![hosting](images/5.png){.thumbnail}
-
-|Serveur entrant||
-|---|---|
-|POP / IMAP|IMAP|
-|Nom d'hôte du serveur|pro**?**.mail.ovh.net|
-|Port|993|
-|SSL|SSL/TLS|
-|Authentification|Mot de passe normal|
-
-|Serveur sortant||
-|---|---|
-|POP / IMAP|IMAP|
-|Nom d'hôte du serveur|pro**?**.mail.ovh.net|
-|Port|587|
-|SSL|STARTTLS|
-|Authentification|Mot de passe normal|
-
-|Identifiants||
-|---|---|
-|Serveur entrant|Votre adresse E-mail Pro|
-|Nom d'hôte du serveur|pro**?**.mail.ovh.net|
-
-La configuration de votre compte est maintenant terminée.
-
-
-## Test d'envoi et reception
-À cette étape, vous constaterez que votre adresse E-mail Pro OVHcloud apparaît bien sur la gauche de Thunderbird.
-
-- Cliquez sur `Écrire`{.action} :
-
-![hosting](images/6.png){.thumbnail}
-
-- Effectuez un envoi vers votre propre adresse en rédigeant un message, puis cliquez sur `Envoyer`{.action}.
-
-![hosting](images/7.png){.thumbnail}
-
-- Attendez quelques secondes, vous recevrez alors votre e-mail.
-
-![hosting](images/8.png){.thumbnail}
-
-## POP ou IMAP ?
-Lors de la configuration, vous pouvez choisir le protocole **"POP"** au lieu de **"IMAP"**.
-
-Nous vous invitons à vous renseigner sur l'utilisation de ces deux protocoles avant de faire votre choix. Dans le doute, choisissez la configuration **"IMAP"**".
-
-### Configuration POP
-Si vous désirez configurer votre compte en POP, choisissez ce protocole lors de l'ajout de votre compte E-mail Pro OVHcloud, puis indiquez ces paramètres :
-
-|Serveur entrant||
-|---|---|
-|POP / IMAP|POP|
-|Nom d'hôte du serveur|pro**?**.mail.ovh.net|
-|Port|995|
-|SSL|SSL/TLS|
-|Authentification|Mot de passe normal|
-
-|Serveur sortant||
-|---|---|
-|POP / IMAP|POP|
-|Nom d'hôte du serveur|pro**?**.mail.ovh.net|
-|Port|587|
-|SSL|STARTTLS|
-|Authentification|Mot de passe normal|
-
-|Identifiants||
-|---|---|
-|Serveur entrant|Votre adresse E-mail Pro|
-|Nom d'hôte du serveur|pro**?**.mail.ovh.net|
+![Thunderbird](images/thunderbird-win-emailpro06.png){.thumbnail}
 
 
 ## Aller plus loin

@@ -3,6 +3,7 @@ title: 'Ejecutar comandos como root'
 slug: conectarse_como_usuario_root_y_establecer_una_contrasena
 excerpt: 'Cómo establecer la contraseña del usuario root y ejecutar comandos como root'
 section: Tutoriales
+order: 5
 ---
 
 **Última actualización: 11/04/2019**

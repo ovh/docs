@@ -4,6 +4,7 @@ excerpt: 'Root-Rechte erlangen und Passwort festlegen'
 slug: root-rechte_erlangen_und_passwort_festlegen
 legacy_guide_number: g1786
 section: 'Erste Schritte'
+order: 5
 ---
 
 ## 

@@ -3,7 +3,7 @@ title: "Ein Public Cloud Projekt über die OVHcloud API bestellen"
 excerpt: "Hier erfahren Sie, wie Sie Ihr Public Cloud Projekt mit der OVHcloud API bestellen."
 slug: public-cloud-api
 section: Erste Schritte
-order: 13
+order: 9
 ---
 
 **Letzte Aktualisierung am 22 Dezember 2020**

@@ -4,6 +4,7 @@ slug: pierwsze-logowanie
 legacy_guide_number: 1787
 excerpt: 'Ten przewodnik zawiera informacje o logowaniu do instancji OVHcloud Public Cloud przy użyciu systemu Windows i Linux'
 section: 'Szybki start'
+hidden: true
 ---
 
 **Ostatnia aktualizacja: 06-12-2019**
