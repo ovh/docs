@@ -1,11 +1,11 @@
 ---
-title: 'Configurer son compte E-mail Pro sur Thunderbird pour Windows'
-slug: configuration-thunderbird-45-8-0
+title: 'Configurer son compte E-mail Pro sur Thunderbird pour Mac OS'
+slug: configuration-thunderbird-macos
 routes:
     canonical: 'https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/'
-excerpt: 'Retrouvez ici comment configurer votre adresse E-mail Pro sur Thunderbird pour Windows'
+excerpt: 'Retrouvez ici comment configurer votre adresse E-mail Pro sur Thunderbird pour Mac OS '
 section: 'Configuration sur ordinateur'
-order: 5
+order: 6
 ---
 
 **Dernière mise à jour le 23/08/2021**
@@ -14,7 +14,7 @@ order: 5
 
 Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Thunderbird est un client de messagerie libre et gratuit.
 
-**Découvrez comment configurer votre adresse E-mail Pro sur Thunderbird sur Windows.**
+**Découvrez comment configurer votre adresse E-mail Pro sur Thunderbird sur Mac OS.**
 
 > [!warning]
 >
@@ -26,7 +26,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 ## Prérequis
 
 - Disposer d’une adresse E-mail Pro (comprise dans l’offre E-mail Pro ou dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}).
-- Disposer du logiciel Thunderbird installé sur votre Windows.
+- Disposer du logiciel Thunderbird installé sur votre Mac.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
  
 ## En pratique
@@ -47,9 +47,9 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 | | |
 |---|---|
-|![Thunderbird](images/thunderbird-win-emailpro01.png){.thumbnail}|Dans la fenêtre qui s'affiche, saisissez les 3 informations suivantes: <br>- Votre nom complet (Nom d'affichage)<br>- Adresse électronique <br>- Mot de passe.|
-|Cliquez ensuite sur `Configurer manuellement...`{.action} pour saisir les paramètres de serveur **ENTRANT**: <br>- Protocole **IMAP** <br>- Serveur **pro?.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**|![Thunderbird](images/thunderbird-win-emailpro02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-emailpro03.png){.thumbnail}|Saisir les paramètres de serveur **SORTANT**: <br>- Protocole **SMTP** <br>- Serveur **pro?.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**<br><br>Pour finaliser la configuration, cliquez sur `Terminé`{.action}|
+|![Thunderbird](images/thunderbird-mac-emailpro01.png){.thumbnail}|Dans la fenêtre qui s'affiche, saisissez les 3 informations suivantes: <br>- Votre nom complet (Nom d'affichage)<br>- Adresse électronique <br>- Mot de passe.|
+|Cliquez ensuite sur `Configurer manuellement...`{.action} pour saisir les paramètres de serveur **ENTRANT**: <br>- Protocole **IMAP** <br>- Serveur **pro?.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**|![Thunderbird](images/thunderbird-mac-emailpro02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-mac-emailpro03.png){.thumbnail}|Saisir les paramètres de serveur **SORTANT**: <br>- Protocole **SMTP** <br>- Serveur **pro?.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**<br><br>Pour finaliser la configuration, cliquez sur `Terminé`{.action}|
 
 
 
@@ -85,16 +85,16 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 - Allez dans `Outils`{.action} depuis la barre de menu en haut de votre écran.
 - Cliquez sur `Paramètres des comptes`{.action}.
 
-![Thunderbird](images/thunderbird-win-emailpro04.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-emailpro04.png){.thumbnail}
 
 - Pour modifier les paramètres liés à la **réception** de vos e-mails, cliquez sur `Paramètres serveur`{.action} dans la colonne de gauche sous votre adresse e-mail.
 
-![Thunderbird](images/thunderbird-win-emailpro05.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-emailpro05.png){.thumbnail}
 
 - Pour modifier les paramètres liés à **l'envoi** de vos e-mails, cliquez sur `Serveur sortant (SMTP)`{.action} tout en bas de la colonne de gauche.
-- Cliquez sur l'adresse e-mail concernée dans la liste , puis cliquez sur `Modifier`{.action}.
+- Cliquez sur l'adresse e-mail concernée dans la liste, puis cliquez sur `Modifier`{.action}.
 
-![Thunderbird](images/thunderbird-win-emailpro06.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-emailpro06.png){.thumbnail}
 
 
 ## Aller plus loin
