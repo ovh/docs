@@ -319,6 +319,8 @@ Pour enregistrer vos modifications, cliquez sur `Modifier`{.action}.
 
 ![Optionsccs](images/optionsccs.png){.thumbnail}
 
+![Optionsccs](images/numeropres.png){.thumbnail}
+
 ### Consulter le tableau de bord <a name="tableau-de-bord"></a>
 
 Le tableau de bord vous permet d'obtenir des statistiques détaillées sur les appels reçus par votre numéro configuré en CCS et par les différentes files le composant.
