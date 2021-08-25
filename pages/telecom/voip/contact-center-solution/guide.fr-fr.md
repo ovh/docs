@@ -315,6 +315,8 @@ Pour enregistrer vos modifications, cliquez sur `Modifier`{.action}.
 
 ![CCS configuration](images/filtrages2021.png){.thumbnail}
 
+### Gérer les options du CCS <a name="tableau-de-bord"></a>
+
 ### Consulter le tableau de bord <a name="tableau-de-bord"></a>
 
 Le tableau de bord vous permet d'obtenir des statistiques détaillées sur les appels reçus par votre numéro configuré en CCS et par les différentes files le composant.
