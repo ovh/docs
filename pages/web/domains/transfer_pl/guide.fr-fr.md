@@ -111,7 +111,7 @@ La procédure de transfert de nom de domaine implique une validation par e-mail.
 > La validation du transfert via le lien doit être effectuée dans les 5 jours suivant la demande.Au-delà, le transfert sera annulé.
 
 
-### Étape 6 : gérer son nom de domaine avec OVHcloud
+### Étape 5 : gérer son nom de domaine avec OVHcloud
 
 Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action} dans la barre de services à gauche, puis cliquez sur le nom de domaine concerné.
 
