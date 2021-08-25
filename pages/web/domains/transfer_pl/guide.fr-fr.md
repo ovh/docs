@@ -1,13 +1,15 @@
 ---
 title: 'Transférer son nom de domaine en .pl vers OVHcloud'
 slug: transferer-mon-domaine-pl
+routes:
+    canonical: 'https://docs.ovh.com/fr/domains/transferer-mon-domaine-generique/'
 hidden: true
 excerpt: "Découvrez comment réaliser le transfert d'un nom de domaine en .pl vers OVHcloud"
 section: Transfert
 order: 1
 ---
 
-**Dernière mise à jour le 20/04/2021**
+**Dernière mise à jour le 25/08/2021**
 
 ## Objectif
 
@@ -19,7 +21,7 @@ En transférant votre nom de domaine, vous changerez de registre pour celui-ci. 
 
 ## Prérequis
 
-- Le nom de domaine en .pl enregistré auprès d'un autre bureau d'enregistrement.
+- Le nom de domaine en .pl est enregistré auprès d'un autre bureau d'enregistrement.
 - Le nom de domaine existe depuis plus de 60 jours.
 - Le nom de domaine n'a pas été transféré ou n'a pas changé de propriétaire au cours des 60 derniers jours.
 - L'état du nom de domaine est « OK » ou « Transférable ».
@@ -40,15 +42,13 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 |3|Demande de transfert de nom de domaine|Toute personne possédant le code de transfert, également avec la permission du propriétaire|Avec le nouveau bureau d'enregistrement (par exemple OVHcloud)|Dépend de vos actions|
 |4|Validation du transfert|Le propriétaire du nom de domaine doit valider le transfert à la demande du registre |Par e-mail|Cinq jours maximum|
 
-
-
 ### Étape 1 : vérifier les informations associées au nom de domaine
 
 **Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](https://www.ovh.com/fr/support/outils/check_whois.pl) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
 
 - ** Si les informations sont correctes : passez à l'étape suivante de ce guide.**
 
-- ** Si les informations sont incorrectes ou invisibles : contactez votre le bureau d'enregistrement actuel du nom de domaine pour vérifier et/ou modifier ce dernier.**
+- ** Si les informations sont incorrectes ou invisibles : contactez le bureau d'enregistrement actuel du nom de domaine pour vérifier et/ou modifier ce dernier.**
 
 > [!primary]
 >
@@ -108,8 +108,8 @@ La procédure de transfert de nom de domaine implique une validation par e-mail.
 
 > [!warning]
 >
-> La validation du transfert via le lien doit être effectuée dans les 5 jours suivant la demande.Au-delà, le transfert sera annulé.
-
+> La validation du transfert via le lien doit être effectuée dans les 5 jours suivant la demande. Au-delà, le transfert sera annulé.
+>
 
 ### Étape 5 : gérer son nom de domaine avec OVHcloud
 
