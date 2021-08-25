@@ -330,7 +330,7 @@ Et pour terminer de configurer le numéro à présenter :
 
 Trois possibilité s'offrent alors à nous :
 
-Présenter l'appelant, le numéro du CCS ou les deux numéros, options permettant d'identifier à votre niveau quelle file fut contactée en plus d'obtenir classiquement le numéro de votre appelant. 
+Présenter l'appelant, le numéro du CCS ou les deux numéros, option permettant d'identifier à votre niveau quelle file fut contactée en plus d'obtenir classiquement le numéro de votre appelant. 
 
 ![Optionsccs](images/numeropres.png){.thumbnail}
 
