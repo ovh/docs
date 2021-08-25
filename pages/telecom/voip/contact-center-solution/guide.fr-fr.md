@@ -317,6 +317,8 @@ Pour enregistrer vos modifications, cliquez sur `Modifier`{.action}.
 
 ### Gérer les options du CCS <a name="options"></a>
 
+![Optionsccs](images/modifieroption.png){.thumbnail}
+
 ![Optionsccs](images/optionsccs.png){.thumbnail}
 
 ![Optionsccs](images/numeropres.png){.thumbnail}
