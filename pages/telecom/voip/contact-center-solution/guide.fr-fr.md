@@ -315,7 +315,9 @@ Pour enregistrer vos modifications, cliquez sur `Modifier`{.action}.
 
 ![CCS configuration](images/filtrages2021.png){.thumbnail}
 
-### Gérer les options du CCS <a name="tableau-de-bord"></a>
+### Gérer les options du CCS <a name="options"></a>
+
+![Optionsccs](images/optionsccs.png){.thumbnail}
 
 ### Consulter le tableau de bord <a name="tableau-de-bord"></a>
 
