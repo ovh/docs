@@ -101,14 +101,14 @@ Une fois la commande validée, vous recevrez un bon de commande gratuit. Le proc
 
 La procédure de transfert de nom de domaine implique une validation par e-mail. Cette étape peut être effectuée dès le début du transfert, mais peut prendre jusqu'à cinq jours.
 
-- Le propriétaire du nom de domaine reçoit un e-mail sur l'adresse qu'il a renseigné, présente dans le Whois (si elle est n'est pas masquée).
+- Le propriétaire du nom de domaine reçoit un e-mail sur l'adresse qu'il a renseignée, présente dans le Whois (si elle est n'est pas masquée).
 - Cet e-mail provient du registre des noms de domaine « .pl », depuis l'adresse « automat@dns.pl» .
 - Cliquez sur le lien de validation présent dans cet e-mail pour finaliser le transfert.
 - Une fois la validation effectuée, le domaine sera accessible depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans les 24 heures.
 
 > [!warning]
 >
-> La validation du transfert via le lien doit être effectuée dans les 5 jours suivant la demande. Au delà, le transfert sera annulé.
+> La validation du transfert via le lien doit être effectuée dans les 5 jours suivant la demande.Au-delà, le transfert sera annulé.
 
 
 ### Étape 6 : gérer son nom de domaine avec OVHcloud
