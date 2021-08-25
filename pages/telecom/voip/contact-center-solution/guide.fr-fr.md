@@ -317,9 +317,20 @@ Pour enregistrer vos modifications, cliquez sur `Modifier`{.action}.
 
 ### Gérer les options du CCS <a name="options"></a>
 
+Le CCS dispose également d'options qu'il est possible de modifier via le menu suivant : 
+
 ![Optionsccs](images/modifieroption.png){.thumbnail}
 
+Nous trouvons donc la possibilité de changer le nom du CCS, mais également de gérer le timeout d'un transfert vers une ligne externe (ici exprimé en seconde). 
+Il est également possible d'accepter les appels masqués si la case est cochée, dans le cas contraire de refuser les appelants anonymes.
+
+Et pour terminer de configurer le numéro à présenter : 
+
 ![Optionsccs](images/optionsccs.png){.thumbnail}
+
+Trois possibilité s'offrent alors à nous :
+
+Présenter l'appelant, le numéro du CCS ou les deux numéros, options permettant d'identifier à votre niveau quelle file fut contactée en plus d'obtenir classiquement le numéro de votre appelant. 
 
 ![Optionsccs](images/numeropres.png){.thumbnail}
 
