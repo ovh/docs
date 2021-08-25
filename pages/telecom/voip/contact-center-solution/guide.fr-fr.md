@@ -334,7 +334,7 @@ Trois options de présentation du numéro, sur le téléphone qui reçoit l'appe
 
 - présenter le numéro de l'appelant;
 - présenter le numéro du CCS, c'est à dire le numéro alias qui a été composé par l'appelant, ce qui peut être utile si vous possédez plusieurs numéros alias configurés;
-- présenter les deux numéros, celui d'appelant et celui du CCS.
+- présenter les deux numéros, celui de l'appelant et celui du CCS.
 
 ![Optionsccs](images/numeropres2.png){.thumbnail}
 
