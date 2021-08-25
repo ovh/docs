@@ -51,7 +51,7 @@ Switch to the tab `Users`{.action}. An admin user is pre-configured during the s
 
 ![Users](images/configure_mongo03.png){.thumbnail}
 
-You can more users by clicking on the button `Add user`{.action}.
+You can add more users by clicking on the button `Add user`{.action}.
 
 ![Add users](images/configure_mongo04.png){.thumbnail}
 
