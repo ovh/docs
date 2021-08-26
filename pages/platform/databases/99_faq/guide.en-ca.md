@@ -1,7 +1,7 @@
 ---
-title: Q&A
-excerpt: 'Cloud databases Q&A'
-slug:  cloud-databases-qna
+title: FAQ
+excerpt: 'Cloud databases FAQ'
+slug:  cloud-databases-faq
 section: Getting started
 order: 99
 ---
@@ -10,7 +10,7 @@ order: 99
 
 ## Objective
 
-This guide gathers all the frequently asked questions by the customer about the OVHcloud Control Panel.
+This guide gathers all the frequently asked questions by the customer about the Public Cloud Databases.
 
 ## Overall
 
@@ -34,7 +34,7 @@ Major differences with our Web Hosting Databases are the ability to connect to p
 
 ### What DBMS are supported ?
 
-We are adding more and more Databases Management Systems over time, please find the exact list and proposed versions in our [Capabilities page](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/capabilities/).
+We are adding more and more Databases Management Systems over time, please find the exact list and proposed versions in our [Capabilities page](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/capabilities/).
 
 ### Can I connect Public Cloud Databases to other OVHcloud Products ?
 
@@ -85,7 +85,6 @@ You can find a detailed version of responsibilities in our Responsibility Matrix
 ### What are my responsibilities VS OVHcloud ?
 
 We detailed customers and OVHcloud responsibilities inside a Responsibility matrix.
-You can find the document here.
 
 ### How many DB instances can I run ?
 
@@ -98,7 +97,7 @@ Public Cloud Databases requires a Public Cloud project. Once created, you can st
 
 Please refers to these guides:
 
-- Getting started with Public Cloud Databases, [read more](https://docs.ovh.com/au/en/publiccloud/databases/getting-started/)
+- Getting started with Public Cloud Databases, [read more](https://docs.ovh.com/ca/en/publiccloud/databases/getting-started/)
 
 ### How do I import data into an DB instance ?
 
@@ -116,7 +115,7 @@ You can find offical documentation of official website of each DBMS:
 
 ### What are the proposed DBMS versions ?
 
-We are adding more and more Databases Management Systems over time, please find the exact list and proposed version in our [Capabilities page](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/capabilities/).
+We are adding more and more Databases Management Systems over time, please find the exact list and proposed version in our [Capabilities page](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/capabilities/).
 
 ### What is a minor and a major version ?
 
@@ -170,7 +169,7 @@ You will be warn in order to upgrade your version.
 Each DBMS has its own specificities for extensions.
 As a general rules, we only provided officialy supported extensions.
 
-Please find the exact list and proposed version in our [Capabilities page](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/capabilities/).
+Please find the exact list and proposed version in our [Capabilities page](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/capabilities/).
 
 ## Billing
 
@@ -248,7 +247,7 @@ Just keep in mind that our performances gaps are linear.
 ### Where are deployed my DB instances ?
 
 During the DB instance creation, you can select the region and datacenter to deploy your service
-Please find the exact list and proposed version in our [Capabilities page](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/capabilities/).
+Please find the exact list and proposed version in our [Capabilities page](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/capabilities/).
 
 ### Do we provide Multi-AZ deployments ?
 
@@ -316,7 +315,7 @@ When possible, we store your encrypted backups outside the region of your servic
 The location of the backup is available with all the other information of the backup in the API.
 
 The period for which the backup is store depends on the plan you subscribed.
-You can find it in our [Capabilities page](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/capabilities/).
+You can find it in our [Capabilities page](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/capabilities/).
 
 ### What are my responsibilities about backups ?
 
@@ -357,13 +356,13 @@ To sum-up, initially your database cannot be accessed. It's made on purpose to p
 
 Once your database instance is created, you can manage authorized IPs or IPs block through OVHcloud control panel or API. You need art least 1 authorized IP to access your service.
 
-You can follow or [Getting started](https://docs.ovh.com/au/en/publiccloud/databases/getting-started/) guide to see a step by step documentation
+You can follow or [Getting started](https://docs.ovh.com/ca/en/publiccloud/databases/getting-started/) guide to see a step by step documentation
 
 ### How can I add new users for my database instance ?
 
 Once your database instance is created, you can manage database users through OVHcloud control panel or API.
 You need at least 1 created and configured user.
-You can follow or [Getting started](https://docs.ovh.com/au/en/publiccloud/databases/getting-started/) guide to see a step by step documentation.
+You can follow or [Getting started](https://docs.ovh.com/ca/en/publiccloud/databases/getting-started/) guide to see a step by step documentation.
 
 ### Is my data encrypted ?
 

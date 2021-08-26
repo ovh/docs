@@ -1,7 +1,7 @@
 ---
-title: Q&A
-excerpt: 'Cloud databases Q&A'
-slug:  cloud-databases-qna
+title: FAQ
+excerpt: 'Cloud databases FAQ'
+slug:  cloud-databases-faq
 section: Getting started
 order: 99
 ---
@@ -10,7 +10,7 @@ order: 99
 
 ## Objective
 
-This guide gathers all the frequently asked questions by the customer about the OVHcloud Control Panel.
+This guide gathers all the frequently asked questions by the customer about the Public Cloud Databases.
 
 ## Overall
 
@@ -85,7 +85,6 @@ You can find a detailed version of responsibilities in our Responsibility Matrix
 ### What are my responsibilities VS OVHcloud ?
 
 We detailed customers and OVHcloud responsibilities inside a Responsibility matrix.
-You can find the document here.
 
 ### How many DB instances can I run ?
 
