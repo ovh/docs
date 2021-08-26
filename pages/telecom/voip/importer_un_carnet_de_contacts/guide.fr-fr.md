@@ -50,7 +50,7 @@ Pour créer un carnet de contact, renseignez le nom du carnet dans la zone de te
 
 Pour ajouter un nouveau contact, cliquez sur le bouton `Actions`{.action}, puis sur `Ajouter`{.action}. Pour modifier un contact existant, cliquez sur le bouton représentant trois points à droite du contact concerné, puis sur `Éditer`{.action}.
 
-![carnet de contacts](images/creercarnet.png){.thumbnail}
+![carnet de contacts](images/creercarnetV2.png){.thumbnail}
 
 Remplissez ensuite les informations demandées. Les numéros doivent être renseignés au format international (par exemple, « 0033100000000 » pour un numéro français). Une fois les informations complétées, cliquez sur le bouton `Valider`{.action} pour ajouter le contact. Répétez cette manipulation autant de fois que nécessaire.
 
