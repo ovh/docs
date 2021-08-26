@@ -59,9 +59,6 @@ You can filter by label such as "Databases".
 ### What are the major differences between Essential, Business and Enterprises plans ?
 
 We built service plans based on business use-cases. They have major differentiators, related to each DBMS.
-```ToWithdraw?
-Please refer to the commercial website for comparative matrix per DBMS.
-```
 
 Overall, we designed 3 services plans with these usages in mind:
 
@@ -81,13 +78,7 @@ Still, since we provide a database access, as a customer you are responsible for
 - Configuring the settings based on your use cases, including network, security, backups.
 - Defining your relational or NoSQL data schemas that will fit your needs.
 - Performance tuning
-```ToWithdraw?
-You can find a detailed version of responsibilities in our Responsibility Matrix.
-```
-### What are my responsibilities VS OVHcloud ?
-```ToWithdraw?
-We detailed customers and OVHcloud responsibilities inside a Responsibility matrix.
-```
+
 ### How many DB instances can I run ?
 
 OVHcloud Public Cloud allows you to create projects, then you will have quotas and billing per project.
@@ -126,16 +117,10 @@ In contrast, a major version can bring incompatibilities.
 
 Each DBMS acts differently and their official documentation is the source of truth.
 
-### What is the lifecycle policy for adding and removing minor and major versions to Public Cloud Databases ?
-```ToWithdraw?
-Please refer to our Public Cloud Databases policy.
-```
 ### How can I select the DBMS version during the DB instance creation ?
 
 You can create a DB instance via API or the OVHcloud Control Panel. In both cases, you are able to select various parameters such as DBMS type and DBMS versions. 
-```ToWithdraw?
-The proposed versions depend on our lifecycle policy.
-```
+
 ### Can I manually update my DBMS version ?
 
 Yes, when all the required conditions are met:
@@ -150,10 +135,6 @@ If all the conditions are validated, you can perform the update directly via API
 
 An update of a DBMS must always be tested before, and a customer should follow the DBMS official best practices.
 Usually, new major versions introduce new features and deprecate few others. Based on your own usage, it could lead to an outage of your applicative code.
-
-```ToWithdraw?
-The customer has the entire responsibility to comply with our lifecycle policy and verify his applicative compliance.
-```
 
 ### Can I test a new version before upgrading ?
 
@@ -342,7 +323,7 @@ Each database instance is strongly secured through multiple actions:
 
 - **Infrastructure**: we rely on Openstack open source software stack for our whole Public Cloud. We are audited by official organisms and certified with ISO27001 norms for example.
 - **Public or Private Network**: based on your needs and your internal policies about security, you can opt for public network access (Internet) or Private Network (vRack) access.
-- **Network ACL**: we provide Access Control List (ACL) allowing you to specify which IPs or IP block have the right to connect to your database instance. By default,
+- **Network ACL**: we provide Access Control List (ACL) allowing you to specify which IPs or IP block have the right to connect to your database instance. By default, no ACL is declared on the service meaning nobody can connect to your service until you add at least one.
 - **End-to-End encryption**: connections to databases are, by default, encrypted with TLS protocol, providing an end-to-end encryption protection. OVHcloud generates a SSL/TLS certificate for each dB instance. Once you establish an encrypted connection betwen your application and your database instance, your data flows will be encrypted.
 - **Data encryption**: data is stored on dedicated volumes that are encrypted.
 - **European data sovereignty**: Public Cloud Databases are part of OVHcloud, a European company. It guarantees data sovereignty to our customers. [Read more](https://www.ovhcloud.com/fr/about-us/data-sovereignty/)
@@ -411,12 +392,6 @@ It allows you to benefit from a predictive pricing, without any risks of uncontr
 
 Exceptions: for databases instances located in APAC (Sydney, Singapore), inbound/outbound network is capped. This information is shown in the website pricing page.
 
-### What is the amount of bandwidth, throughput and latency for my service ?
-
-```ToWithdraw?
-Bandwidth is defined by your instance range and flavors. Please refer to our commercial page for an exact listing.
-```
-
 ## Troubleshooting
 
 ### I'm unable to connect to my database instance
@@ -431,9 +406,6 @@ To connect to a database instance, please make sure to:
 - know your database instance connection parameters: host address, port, security mode.
 
 Once you are ready, you can test the connection via the DBMS official command line interface OR with classic application code such as Python, PHP, java...
-```ToWithdraw?
-For connection examples, please refer to our official documentation.
-```
 
 If you still have connectivity issues, please contact our support.
 
@@ -458,7 +430,7 @@ If you are running out of storage, you can:
 
 ### My queries are slow
 
-Queries are operations performed on your databases instances, such as READ informations, WRITE informations, or DELETE informations.
+Queries are operations performed on your databases instances, such as READ operations, WRITE operations, or DELETE operations.
 
 These queries performances are related to many external factors:
 
@@ -466,7 +438,7 @@ These queries performances are related to many external factors:
 - The amount of data to query. A query on a 1 table of 1000 lines is different from a query on 20 tables of 1 million lines.
 - The quality of your application code.
 - The flavor performance: each flavor has its own hardware specifications. The more RAM and vCPU you have, the more efficient queries will be.
-- The heavy usage of the service (due to a legit cause such as Sales actions, or due 
+- The heavy usage of the service (for example a legit traffic due to Sales actions).
 - An issue on the hardware infrastructure or network.
 
 To troubleshoot your performance, usually the first step is to check if the service is not affected, i.e. by a [travaux task](http://travaux.ovh.net/).
