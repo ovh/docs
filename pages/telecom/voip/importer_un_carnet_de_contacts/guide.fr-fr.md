@@ -5,7 +5,7 @@ excerpt: 'Apprenez à gérer un carnet de contacts sur une ligne SIP OVHcloud'
 section: 'Lignes téléphoniques'
 ---
 
-**Dernière mise à jour le 03/06/2020**
+**Dernière mise à jour le 26/08/2021**
 
 ## Objectif
 
