@@ -6,7 +6,7 @@ legacy_guide_number: g2144
 section: 'Gérer mon offre'
 ---
 
-**Dernière mise à jour le 19/11/2019** 
+**Dernière mise à jour le 26/08/2021** 
 
 ## Objectif
 
@@ -26,13 +26,13 @@ Un utilisateur SMS API peut être utile pour plusieurs raisons :
 - Il permet au propriétaire du compte SMS de sécuriser ses accès lors d'un envoi de SMS via une API externe.
 En effet, le script appelant ne connaît que l'identifiant de l'utilisateur et son mot de passe, et non la session de l'identifiant client du propriétaire.
 
-- La création de plusieurs utilisateurs API peut être utile dans une entreprise, notamment pour une meilleure traçabilité. 
+- La création de plusieurs utilisateurs API peut être utile dans une entreprise, notamment pour une meilleure traçabilité.
 Un utilisateur API qui envoie des SMS de manière abusive peut de suite être décelé par le propriétaire du compte.
 
-- Un utilisateur API peut être soumis à des restrictions (quotas) dans ses crédits SMS. 
+- Un utilisateur API peut être soumis à des restrictions (quotas) dans ses crédits SMS.
 Ainsi il est possible pour le propriétaire du compte SMS de diviser ses crédits sur ses différents comptes utilisateurs API.
 
-Afin de gérer au mieux le crédit de votre compte SMS, il est possible de fixer une limite et un quota à vos utilisateurs API. 
+Afin de gérer au mieux le crédit de votre compte SMS, il est possible de fixer une limite et un quota à vos utilisateurs API.
 
 - Le **quota** est la quantité de crédits SMS disponibles pour l’utilisateur API.
 
@@ -40,38 +40,33 @@ Afin de gérer au mieux le crédit de votre compte SMS, il est possible de fixer
 
 ### Étape 1 : créer un utilisateur API
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche (2)  puis choisissez votre compte SMS (3).
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche et choisissez votre compte SMS (2).
 
-Cliquez enfin sur l'onglet `Utilisateurs API`{.action} (4).
+Cliquez sur l'onglet `Utilisateurs API`{.action} (3). Pour ajouter un utilisateur, cliquez sur le bouton `Actions`{.action} puis sur `Ajouter`{.action} (4).
 
-![sms-users](images/smsusers01e.png){.thumbnail}
+![sms-users](images/smsusers01e-2021.png){.thumbnail}
 
-Pour ajouter un utilisateur, cliquez sur le bouton `Actions`{.action} puis sur `Ajouter`{.action}. 
-
-![sms-users](images/smsusers02e.png){.thumbnail}
-
-La définition du nom de l'utilisateur API est libre. Le mot de passe d'un utilisateur API doit être composé de 8 caractères alphanumériques. 
-
+La définition du nom de l'utilisateur API est libre. Le mot de passe d'un utilisateur API doit être composé de 8 caractères alphanumériques.
 
 ### Étape 2 : attribuer un quota à un utilisateur API
 
 La gestion du quota s'effectue depuis l'onglet `Utilisateurs API`{.action}. En face de l'utilisateur choisi, cliquez sur les `...`{.action} puis sur `Quota`{.action}.
 
-![sms-users](images/smsusers03e.png){.thumbnail}
+![sms-users](images/smsusers03e-2021.png){.thumbnail}
 
 Vous pourrez alors effectuer deux actions.
 
 - **Activer quota ?** : vous permet de définir si cet utilisateur est soumis à un quota.
 - **Nouveau quota** : définit le quota de l’utilisateur. Une fois ce quota atteint, l’envoi de SMS sera bloqué pour cet utilisateur.
 
-![sms-users](images/smsusers04.png){.thumbnail}
+![sms-users](images/smsusers04-2021.png){.thumbnail}
 
 > [!primary]
-> 
+>
 > L'affectation d'un quota à un utilisateur API va réduire d'autant le crédit total du compte SMS.
 >
 > Exemple : un compte SMS dispose au total de 200 crédits. L'affectation de 150 crédits à un utilisateur API va défalquer 150 crédits du compte SMS qui ne disposera alors plus que de 50 crédits.
-> 
+>
 
 ### Étape 3 : attribuer une limite à un utilisateur API
 
@@ -83,13 +78,12 @@ Les paramètres suivants sont alors disponibles :
 - **Seuil d’alerte** : définit le niveau de crédits SMS restant à partir duquel la notification est envoyée.
 - **Notification** : permet de choisir le type de notification : e-mail (renseignez alors votre adresse e-mail), SMS (renseignez votre numéro au format international) ou les deux.
 
-> [!primary]
+> [!warning]
 >
->L'envoi d'une notification par SMS sera déduit de votre crédit SMS.
+> L'envoi d'une notification par SMS sera déduit de votre crédit SMS.
 >
 
-![sms-users](images/smsusers05.png){.thumbnail}
-
+![sms-users](images/smsusers05-2021.png){.thumbnail}
 
 ### Étape 4 : définir une restriction par IP pour la fonction http2sms
 
@@ -99,7 +93,7 @@ Pour l'activer, cliquez sur les `...`{.action} à droite de l'utilisateur puis s
 
 Vous pouvez renseigner jusqu'à 5 adresses IP publiques différentes pour les envois de vos requêtes https.
 
-![sms-users](images/smsusers06.png){.thumbnail}
+![sms-users](images/smsusers06-2021.png){.thumbnail}
 
 Pour plus d'informations sur la fonction http2sms, consultez le guide [Envoyer des SMS depuis une URL](../envoyer_des_sms_depuis_une_url_-_http2sms/).
 
@@ -107,7 +101,7 @@ Pour plus d'informations sur la fonction http2sms, consultez le guide [Envoyer d
 
 Pour un suivi personnalisé des accusés de réception SMS (Delivery reporting ou DLR), il est possible de spécifier une URL dite de Callback en cliquant sur les `...`{.action} à droite de l'utilisateur puis sur `Callback`{.action}.
 
-![sms-users](images/smsusers07.png){.thumbnail}
+![sms-users](images/smsusers07-2021.png){.thumbnail}
 
 Lorsque le statut d'envoi du SMS est mis à jour, nous appelons l'URL spécifiée. Les valeurs suivantes sont automatiquement insérées dans la querystring :
 
@@ -117,9 +111,20 @@ Lorsque le statut d'envoi du SMS est mis à jour, nous appelons l'URL spécifié
 - description : ID du DLR . Les différents ID sont décrits dans le second tableau ci-dessous
 - descriptionDlr : description du status du DLR
 
-**Les différentes codes ptt.**
+#### Les codes ptt
 
-|État|Description|
+Pour obtenir la description d'un code ptt spécifique, vous pouvez utiliser l'API suivante :
+
+> [!api]
+>
+> @api {GET} /sms/ptts
+>
+
+Pour plus d'informations sur l'utilisation des API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/).
+
+Vous retrouverez dans le tableau ci-dessous une liste non-exhaustive des codes ptt principaux.
+
+|Code|Description|
 |---|---|
 |1|Notification d'état intermédiaire indiquant que le message n'a pas encore été livré en raison d'un problème de téléphone, mais est en cours de nouvel essai (Intermediate state notification that the message has not yet been delivered due to a phone related problem but is being retried).|
 |2|Utilisé pour indiquer que le message n'a pas encore été livré en raison d'un problème d'opérateur, mais est en cours de nouvel essai au sein du réseau (Used to indicate that the message has not yet been delivered due to some operator related problem but is being retried within the network).|
@@ -144,7 +149,7 @@ Lorsque le statut d'envoi du SMS est mis à jour, nous appelons l'URL spécifié
 |76|Le message a échoué car les combinaisons portées sont bloquées pour le client (le client a été sur mis liste noire pour la destination portée) (The message was failed due to the ported combinations being blocked for client (the client has been blacklisted from the ported destination)).|
 |202|Le message a échoué en raison des combinaisons portées bloquées pour le client. Contactez le support client pour plus d'informations (The message was failed due to the ported combinations being blocked for the client. Please contact Client Support for additional information).|
 
-**Les différents ID du DLR**
+#### Les différents ID du DLR
 
 |État|Description|
 |---|---|
