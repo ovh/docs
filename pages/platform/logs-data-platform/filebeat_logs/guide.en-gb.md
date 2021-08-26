@@ -192,6 +192,7 @@ You can also use our [Elasticsearch endpoint](../ldp-index){.ref} to send your l
 #==================== Elasticsearch template setting ==========================
 
 setup.template.enabled: false
+setup.ilm.enabled: false
 
 #-------------------------- Elasticsearch output ------------------------------
 output.elasticsearch:
