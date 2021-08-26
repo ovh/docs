@@ -5,7 +5,7 @@ excerpt: 'Apprenez à gérer un carnet de contacts sur une ligne SIP OVHcloud'
 section: 'Lignes téléphoniques'
 ---
 
-**Dernière mise à jour le 03/06/2020**
+**Dernière mise à jour le 26/08/2021**
 
 ## Objectif
 
@@ -28,13 +28,13 @@ Vous avez la possibilité de gérer le carnet de contacts d'une seule ligne ou d
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Téléphone`{.action} et cliquez sur `Carnets de contacts`{.action}.
  
-![carnet de contacts](images/carnet-contacts-step1.png){.thumbnail}
+![carnet de contacts](images/carnetligne.png){.thumbnail}
 
 - **Pour accéder à la gestion du carnet de contacts d'un groupe de lignes** :
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis cliquez sur le groupe de lignes concerné. Cliquez enfin sur le bouton `Carnet de contacts`{.action}.
  
-![carnet de contacts](images/carnet-contacts-step2.png){.thumbnail}
+![carnet de contacts](images/carnetgroupe.png){.thumbnail}
 
 ### Étape 2 : gérer le carnet de contacts
 
@@ -44,13 +44,13 @@ La gestion du carnet de contacts s'effectue de la même manière, que vous ayez 
 
 Pour créer un carnet de contact, renseignez le nom du carnet dans la zone de texte en dessous de « Nom du carnet de contacts », puis cliquez sur le bouton `Créer le carnet de contacts`{.action}.
 
-![carnet de contacts](images/carnet-contacts-step3.png){.thumbnail}
+![carnet de contacts](images/creercarnet.png){.thumbnail}
 
 #### Ajouter ou modifier un contact
 
 Pour ajouter un nouveau contact, cliquez sur le bouton `Actions`{.action}, puis sur `Ajouter`{.action}. Pour modifier un contact existant, cliquez sur le bouton représentant trois points à droite du contact concerné, puis sur `Éditer`{.action}.
 
-![carnet de contacts](images/carnet-contacts-step4.png){.thumbnail}
+![carnet de contacts](images/creercarnetV2.png){.thumbnail}
 
 Remplissez ensuite les informations demandées. Les numéros doivent être renseignés au format international (par exemple, « 0033100000000 » pour un numéro français). Une fois les informations complétées, cliquez sur le bouton `Valider`{.action} pour ajouter le contact. Répétez cette manipulation autant de fois que nécessaire.
 
@@ -83,7 +83,7 @@ Le fichier obtenu sera au format .csv.
 
 Pour supprimer un seul contact, cliquez sur le bouton représentant trois points à droite du contact concerné, puis sur `Supprimer`{.action}. Pour en supprimer plusieurs, cochez la case à gauche des contacts concernés, puis cliquez sur `Supprimer les contacts sélectionnés`{.action}.
 
-![carnetcontacts](images/carnet-contacts-step7.png){.thumbnail}
+![carnetcontacts](images/supprimercontact.png){.thumbnail}
 
 #### Supprimer un carnet de contacts
 
@@ -93,7 +93,7 @@ Pour supprimer un carnet de contacts, cliquez sur le bouton `Supprimer le carnet
 
 Afin que votre téléphone puisse utiliser le carnet de contacts ou récupérer les éventuelles modifications effectuées dans celui-ci, commencez par le redémarrer. Une fois votre téléphone redémarré, il devrait avoir téléchargé le nouveau carnet de contacts.
 
-À noter que si vous utilisez un téléphone Cisco ou Gigaset, seul le numéro du contact sera affiché (et non son nom et son prénom) lors d'un appel entrant, même si ce dernier est présent dans le carnet de contacts dans votre espace client. Ce comportement est spécifique aux téléphones Cisco et Gigaset. Si vous souhaitez afficher le nom de vos correspondants, vous devrez enregistrer ces informations dans votre téléphone.
+
 
 ## Aller plus loin
 
