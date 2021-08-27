@@ -21,11 +21,9 @@ En transférant votre nom de domaine, vous changerez de registre pour celui-ci. 
 
 ## Prérequis
 
-- Le nom de domaine en .pl est enregistré auprès d'un autre bureau d'enregistrement.
-- Le nom de domaine existe depuis plus de 60 jours.
-- Le nom de domaine n'a pas été transféré ou n'a pas changé de propriétaire au cours des 60 derniers jours.
+- Le nom de domaine en .pl a été enregistré ou transféré auprès d'un autre bureau d'enregistrement depuis au moins 5 jours.
 - L'état du nom de domaine est « OK » ou « Transférable ».
-- Le nom de domaine n'a pas expiré et a une date d'expiration permettant de terminer le processus de transfert dans les temps (recommandé : plus de 60 jours).
+- Le nom de domaine n'est pas expiré et a une date d'expiration permettant de terminer le processus de transfert dans les temps (recommandé : plus de 60 jours).
 - Être en mesure de déverrouiller le nom de domaine.
 - Posséder le code de transfert ou être en mesure de le récupérer.
 - Être habilité à demander le transfert du nom de domaine.
