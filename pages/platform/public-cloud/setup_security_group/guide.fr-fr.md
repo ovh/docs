@@ -23,7 +23,16 @@ Pour des raisons de sécurité, il est possible de configurer et d'utiliser des 
 
 ### Étape 1 : créer un groupe de sécurité
 
-Accédez à l'interface Horizon, dépliez le menu `Network`{.action} et cliquez sur `Security Groups`{.action}. Un tableau liste les groupes de sécurité créés. Le groupe « default » y est déjà listé. Celui-ci laisse passer tout le trafic entrant et sortant.
+Accédez à l'interface [Horizon](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/). Choisissez alors la région dans laquelle vous voulez créer un groupe de sécurité, via le bouton en haut à gauche.
+
+![définir la région](images/security-group0.png){.thumbnail}
+
+> [!primary]
+>
+> Si un groupe de sécurité doit être utilisé dans plusieurs régions, vous devez le créer pour chacune d’elles.
+>
+
+A présent, dépliez le menu `Network`{.action} et cliquez sur `Security Groups`{.action}. Un tableau liste les groupes de sécurité créés. Le groupe « default » y est déjà listé. Celui-ci laisse passer tout le trafic entrant et sortant.
 
 Pour ajouter un nouveau groupe de sécurité, cliquez sur le bouton `+ Create Security Group`{.action}.
 
@@ -56,7 +65,7 @@ Dès lors, sur la page de gestion des règles, vous avez la possibilité de :
 - supprimer une règle existante : utilisez pour cela le bouton `Delete Rule`{.action} ;
 - ajouter une nouvelle règle : utilisez pour cela le bouton `+ Add Rule`{.action}.
 
-Lors de l'ajout d'une règle, vous devrez compléter les informations demandées puis cliquer sur `Ajouter`{.action}.
+Lors de l'ajout d'une règle, vous devrez compléter les informations demandées puis cliquer sur `Add`{.action}.
 
 ![ajouter une règle](images/security-group4.png){.thumbnail}
 
@@ -69,7 +78,7 @@ Last login: Tue Oct 13 13:56:30 2015 from proxy-109-190-254-35.ovh.net
 admin@serveur1:~$
 ```
 
-### Étape 3 : configurer un groupe de sécurité sur son instance <a name="instance-security-group"></a>
+### Configurer un groupe de sécurité sur une instance <a name="instance-security-group"></a>
 
 Depuis l'interface Horizon, dépliez le menu `Compute`{.action} et sélectionnez `Instances`{.action}. Depuis cette page, créez une nouvelle instance via le bouton `Launch Instance`{.action}.
 
@@ -80,6 +89,12 @@ Lors de la création de votre instance, vous pourrez choisir, via le menu `Secur
 Vous pouvez appliquer un nouveau groupe de sécurité sur une instance déjà créée en cliquant sur `Edit Security Groups`{.action} à droite de l'instance.
 
 ![modifier groupe de sécurité](images/security-group6.png){.thumbnail}
+
+### Supprimer un groupe de sécurité
+
+Pour supprimer un groupe de sécurité, sélectionnez-le en cochant la case correspondante à gauche puis cliquez sur `Delete Security Groups`{.action}
+
+![supprimer groupe de sécurité](images/security-group7.png){.thumbnail}
 
 ## Aller plus loin
 
