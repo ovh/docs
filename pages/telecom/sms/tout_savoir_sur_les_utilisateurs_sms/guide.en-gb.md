@@ -6,7 +6,7 @@ legacy_guide_number: g2144
 section: 'Managing your solution'
 ---
 
-**Last updated 09th June 2020** 
+**Last updated 26th August 2021** 
 
 ## Objective
 
@@ -15,7 +15,7 @@ This guide will explain how to create and manage API users.
 ## Requirements
 
 - an active OVHcloud SMS account
-- access to the OVHcloud Control Panel
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
@@ -40,40 +40,35 @@ To better manage credit for your SMS accounts, you can set a limit and quota for
 
 ### Step 1: Create an API user.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then select `Telecom`{.action} (1). Next, click `SMS`{.action} on the left (2) and select your SMS account (3).
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then select `Telecom`{.action} (1). Next, click `SMS`{.action} on the left and select your SMS account (2).
 
-Then click on the `API users`{.action} tab (4).
+Then click on the `API users`{.action} tab (3). To add a user, click `Actions`{.action}, then `Add`{.action} (4).
 
-![sms-users](images/smsusers01e.png){.thumbnail}
+![sms-users](images/smsusers01e-2021.png){.thumbnail}
 
-To add a user, click `Actions`{.action}, then `Add`{.action}. 
+You can enter a name for the API user. The password for an API user must contain 8 alpha-numeric characters.
 
-![sms-users](images/smsusers02e.png){.thumbnail}
-
-You can enter a name for the API user. The password for an API user must contain 8 alpha-numeric characters. 
-
-
-### Step 2: Set a quota for an API user.
+### Step 2: Set a quota for an API user
 
 You can manage quotas in the `API users`{.action} tab. Click `...`{.action} next to the user concerned, then `Quota`{.action}.
 
-![sms-users](images/smsusers03e.png){.thumbnail}
+![sms-users](images/smsusers03e-2021.png){.thumbnail}
 
 You can then perform two actions.
 
 - **Enable quota?** Use this to define whether this user has a quota.
 - **New quota**. Defines the user quota. Once this quota is reached, the user will be blocked from sending SMS messages.
 
-![sms-users](images/smsusers04.png){.thumbnail}
+![sms-users](images/smsusers04-2021.png){.thumbnail}
 
 > [!primary]
-> 
+>
 > Assigning a quota to an API user will reduce the total credit of an SMS account by an equal amount.
 >
 > As an example: an SMS account has a total of 200 credits. Assigning 150 credits to an API user will deduct 150 credits from the SMS account. It will then have 50 credits.
-> 
+>
 
-### Step 3: Set a limit for an API user.
+### Step 3: Set a limit for an API user
 
 To configure a limit for a user, stay in the same menu, click `...`{.action}, then `Limit`{.action}.
 
@@ -83,15 +78,14 @@ The following settings are now available:
 - **Alert threshold**. Defines the level of remaining SMS credits that will trigger the notification.
 - **Notification**. For choosing the notification type. Options include: email (enter your email address), SMS (enter your number in international format), or both.
 
-> [!primary]
+> [!warning]
 >
->When a notification is sent via SMS, it is deducted from your SMS credit.
+> When a notification is sent via SMS, it is deducted from your SMS credit.
 >
 
-![sms-users](images/smsusers05.png){.thumbnail}
+![sms-users](images/smsusers05-2021.png){.thumbnail}
 
-
-### Step 4: Define a restriction by IP for the http2sms feature.
+### Step 4: Define a restriction by IP for the http2sms feature
 
 You can secure the http2sms feature by applying IP restrictions for each API user.
 
@@ -99,15 +93,15 @@ To enable it, click `...`{.action} to the right of the user, then `Restrictions`
 
 You can enter up to 5 different IP addresses for sending HTTPS requests.
 
-![sms-users](images/smsusers06.png){.thumbnail}
+![sms-users](images/smsusers06-2021.png){.thumbnail}
 
 For further details on the http2sms feature, please refer to our guide on [Sending SMS messages via a URL](../send_sms_messages_via_url_-_http2sms/).
 
-### Step 5: Specify a callback URL.
+### Step 5: Specify a callback URL
 
 To set up custom tracking for SMS delivery (Delivery reporting or DLR), you can specify a callback URL by clicking `...`{.action} to the right of a user, then `Callback`{.action}.
 
-![sms-users](images/smsusers07.png){.thumbnail}
+![sms-users](images/smsusers07-2021.png){.thumbnail}
 
 When the send status of an SMS message is updated, we call the specified URL. The following values are automatically inserted into the query string:
 
@@ -117,9 +111,20 @@ When the send status of an SMS message is updated, we call the specified URL. Th
 - description: The DLR ID. The various ptt codes are explained in the table below.
 - descriptionDlr: The DLR status description.
 
-**The various ptt codes.**
+#### The ptt codes
 
-|Status|Description|
+To get a description of a specific ptt code, you can use the following API:
+
+> [!api]
+>
+> @api {GET} /sms/ptts
+>
+
+For more information on using OVHcloud APIs, please refer to our guide [Getting started with OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+
+The table below provides a non-exhaustive list of the main ptt codes.
+
+|Code|Description|
 |---|---|
 |1|An intermediary status notification indicating that the message has not yet been delivered due to a phone-related problem, but delivery is being re-tried.|
 |2|Used to indicate that the message has not yet been delivered due to an operator-related problem, but delivery is being re-tried within the network.|
@@ -144,7 +149,7 @@ When the send status of an SMS message is updated, we call the specified URL. Th
 |76|The message failed due to the ported combinations being blocked for the client (the client has been blacklisted from the ported destination).|
 |202|The message failed due to the ported combinations being blocked for the client. Please contact Customer Support for additional information).|
 
-**The various DLR IDs**
+#### The DLR IDs
 
 |Status|Description|
 |---|---|
