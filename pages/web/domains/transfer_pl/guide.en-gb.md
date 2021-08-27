@@ -4,7 +4,7 @@ slug: transfer-my-domain-pl
 routes:
     canonical: 'https://docs.ovh.com/gb/en/domains/transfer-generic-domain/'
 hidden: true
-excerpt: `Find out how to transfer a .pl domain name to OVHcloud`
+excerpt: 'Find out how to transfer a .pl domain name to OVHcloud'
 section: Transfer
 order: 1
 ---
