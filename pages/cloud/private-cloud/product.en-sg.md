@@ -1,8 +1,9 @@
 ---
-title: Hosted Private Cloud
+title: Hosted Private Cloud powered by VMware
 slug: private-cloud
 excerpt: How to use your Hosted Private Cloud
 sections: Getting started, Resource management, OVHcloud Features, Maintenance and monitoring, NSX, Networking, VMware vSphere features, OpenShift, OVHcloud services and options, Meltdown and Spectre information
+order: 01
 ---
 
 > [!product-section]

@@ -1,5 +1,6 @@
 ---
 title: CloudDB
 slug: clouddb
-excerpt: Crea database in pochi click. OVH si occupa del resto.
+excerpt: Crea database in pochi click. OVHcloud si occupa del resto.
+order: 11
 ---

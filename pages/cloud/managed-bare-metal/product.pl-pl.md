@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pl/private-cloud/'
 excerpt: 'Dowiedz się, jak korzystać z Managed Bare Metal'
 sections: 'Pierwsze kroki, Zarządzanie wirtualnymi maszynami, Funkcjonalności OVHcloud, Funkcjonalności VMware vSphere, Migracja wirtualnych maszyn, Usługi i opcje OVHcloud, Zerto, vRops, FAQ'
+order: 05
 ---
 
 > [!product-section]
