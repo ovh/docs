@@ -1,5 +1,6 @@
 ---
 title: Billing
 slug: billing
-excerpt: Manage and follow your OVH products billing
+excerpt: Manage and follow your OVHcloud products billing
+order: 02
 ---

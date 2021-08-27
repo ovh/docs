@@ -2,6 +2,7 @@
 title: Hosted email - MX Plan
 slug: emails
 excertp: All you need to know about hosted email
+order: 03
 ---
 
 > [!product-section]

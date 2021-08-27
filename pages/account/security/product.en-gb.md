@@ -3,6 +3,7 @@ title: Security
 slug: security
 excerpt: OVHcloud security policies and best practices
 Sections: Security policies, Best practices
+order: 04
 ---
 
 > [!product-section]

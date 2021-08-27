@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/ca/fr/private-cloud/'
 excerpt: Guides d'utilisation de vos services Managed Bare Metal
 sections: Premiers pas, Fonctionnalités OVHcloud
+order: 05
 ---
 
 > [!product-section]

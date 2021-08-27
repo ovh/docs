@@ -2,6 +2,7 @@
 title: 'Cloud Web'
 slug: cloud-web
 sections: 'Pierwsze kroki'
+order: 09
 ---
 
 > [!product-section]
