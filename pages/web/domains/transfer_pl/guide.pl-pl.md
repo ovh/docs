@@ -1,9 +1,8 @@
 ---
-title: 'Transfer domeny do OVHcloud'
+title: 'Transfer domeny .pl do OVHcloud'
 slug: przeniesienie-domeny-pl
 routes:
     canonical: 'https://docs.ovh.com/pl/domains/przeniesienie-domeny-globalnej/'
-hidden: true
 excerpt: "Dowiedz się, jak wykonać transfer domeny .pl do OVHcloud"
 section: Transfer
 order: 1
