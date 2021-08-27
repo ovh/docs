@@ -9,7 +9,7 @@ section: Transfert
 order: 1
 ---
 
-**Dernière mise à jour le 25/08/2021**
+**Dernière mise à jour le 27/08/2021**
 
 ## Objectif
 
@@ -44,9 +44,9 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 **Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](https://www.ovh.com/fr/support/outils/check_whois.pl) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
 
-- ** Si les informations sont correctes : passez à l'étape suivante de ce guide.**
+- **Si les informations sont correctes : passez à l'étape suivante de ce guide.**
 
-- ** Si les informations sont incorrectes ou invisibles : contactez le bureau d'enregistrement actuel du nom de domaine pour vérifier et/ou modifier ce dernier.**
+- **Si les informations sont incorrectes ou invisibles : contactez le bureau d'enregistrement actuel du nom de domaine pour vérifier et/ou modifier ce dernier.**
 
 > [!primary]
 >
@@ -72,7 +72,7 @@ Une fois le déverrouillage de votre nom de domaine effectué et votre code obte
 
 Lorsque vous êtes invité à fournir votre code de transfert, entrez-le dans la zone en face de votre nom de domaine. Si vous ne disposez pas encore du code de transfert, vous pouvez cocher la case intitulée `Entrer le code de transfert ultérieurement`{.action}. Toutefois, nous vous conseillons vivement de vous assurer que vous disposez du code à remettre avant de continuer. N'oubliez pas que le transfert ne démarrera pas tant qu'un code valide n'aura pas été fourni.
 
-Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](../../hosting/migrer-mon-site-chez-ovh/){.external} » vous fournira des instructions sur la façon de procéder.
+Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](../../hosting/migrer-mon-site-chez-ovh/) » vous fournira des instructions sur la façon de procéder.
 
 > [!warning]
 >
@@ -93,7 +93,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](https:
 
 ![domaine](images/Order_summary.png){.thumbnail}
 
-Une fois la commande validée, vous recevrez un bon de commande gratuit. Le processus de transfert ne démarrera qu'après validation de ce bon de commande gratuit. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action} dans la barre de services située à gauche, puis ` Opérations en cours`{.action}.
+Une fois la commande validée, vous recevrez un bon de commande gratuit. Le processus de transfert ne démarrera qu'après validation de ce bon de commande gratuit. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action} dans la barre de services située à gauche, puis `Opérations en cours`{.action}.
 
 ### Étape 4 : Validation du transfert
 
@@ -115,6 +115,6 @@ Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de d
 
 ## Aller plus loin
 
-[Migration de votre site Web et de vos e-mails vers OVHcloud](../../hosting/migrer-mon-site-chez-ovh/){.external}
+[Migration de votre site Web et de vos e-mails vers OVHcloud](../../hosting/migrer-mon-site-chez-ovh/)
 
 Rejoignez notre communauté d'utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external}.

@@ -12,7 +12,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 25-08-2021**
+**Ostatnia aktualizacja z dnia 27-08-2021**
 
 ## Wprowadzenie
 
@@ -48,9 +48,9 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 
 **W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych widocznych w bazie "Whois". Sugerujemy zatem sprawdzenie informacji dotyczących Twojej domeny u aktualnego operatora.
 
-- ** Jeśli informacje są poprawne: przejdź do kolejnego etapu niniejszego przewodnika.**
+- **Jeśli informacje są poprawne: przejdź do kolejnego etapu niniejszego przewodnika.**
 
-- ** Jeśli informacje są nieprawidłowe lub niewidoczne: skontaktuj się z aktualnym operatorem domeny, aby je zweryfikować i/lub zmodyfikować.**
+- **Jeśli informacje są nieprawidłowe lub niewidoczne: skontaktuj się z aktualnym operatorem domeny, aby je zweryfikować i/lub zmodyfikować.**
 
 > [!primary]
 >
@@ -76,7 +76,7 @@ Po odblokowaniu Twojej domeny i uzyskanym kodzie możesz zamówić jej transfer 
 
 Wprowadź kod transferu w polu obok nazwy Twojej domeny. Jeśli nie posiadasz jeszcze kodu transferu, możesz zaznaczyć pole `Podaj kod transferu później`{.action}. Zalecamy jednak, abyś przed kolejnymi krokami upewnił się, że jesteś w stanie ten kod uzyskać. Pamiętaj, że transfer nie rozpocznie się, dopóki nie zostanie podany prawidłowy kod.
 
-Możesz również zakończyć zamówienie [hostingiem www](https://www.ovh.pl/hosting/){.external} i innymi rozwiązaniami OVHcloud. Może to być interesujące, jeśli chcesz przenieść Twoje usługi do OVHcloud. Przewodnik "[Przeniesienie strony WWW do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}" zawiera instrukcje, jak to zrobić.
+Możesz również zakończyć zamówienie [hostingiem www](https://www.ovh.pl/hosting/){.external} i innymi rozwiązaniami OVHcloud. Może to być interesujące, jeśli chcesz przenieść Twoje usługi do OVHcloud. Przewodnik [Przeniesienie strony WWW do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/) zawiera instrukcje, jak to zrobić.
 
 > [!warning]
 >
@@ -97,7 +97,7 @@ Możesz również zakończyć zamówienie [hostingiem www](https://www.ovh.pl/ho
 
 ![domena](images/Order_summary.png){.thumbnail}
 
-Po zatwierdzeniu zamówienia otrzymasz bezpłatne zamówienie. Transfer rozpocznie się po zatwierdzeniu tego darmowego zamówienia. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](https://https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Aby śledzić postęp procesu, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie ` Operacje w toku`{.action}.
+Po zatwierdzeniu zamówienia otrzymasz bezpłatne zamówienie. Transfer rozpocznie się po zatwierdzeniu tego darmowego zamówienia. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](https://https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Aby śledzić postęp procesu, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie `Operacje w toku`{.action}.
 
 ### Etap 4: Zatwierdzenie transferu
 
@@ -119,6 +119,6 @@ Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta
 
 ## Sprawdź również
 
-[Migracja strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
+[Migracja strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/)
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>{.external}.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
