@@ -1,171 +1,89 @@
 ---
-title: 'Email condivisa: guida alla configurazione di Thundebird'
-excerpt: ''
+title: Configurare un indirizzo email su Thunderbird per Windows
 slug: email_condivisa_guida_alla_configurazione_di_thundebird
 legacy_guide_number: g1297
+excerpt: Trovi qui le informazioni per configurare il tuo indirizzo email su Thunderbird.
+section: Windows
+order: 5
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## Parte 1: avvio
-Accedi all'applicazione "Thunderbird".
+**Ultimo aggiornamento: 26/08/2021**
 
-Questa è l'interfaccia che appare di default se non ci sono account email configurati. Altrimenti accedi al menu per aggiungere un nuovo account.
+## Obiettivo
 
-Seleziona "Posta elettronica" per continuare.
+Gli account MX Plan possono essere configurati su client di posta compatibili, per permetterti di utilizzare il tuo account email dal dispositivo che preferisci. Thunderbird è un client di posta gratuito e gratuito.
 
-![](images/img_1227.jpg){.thumbnail}
+**Questa guida ti mostra come configurare il tuo indirizzo email MX Plan su Thunderbird su Windows.**
 
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> 
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVH non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> 
 
-## Parte 2: avvio (seguito)
-Per continuare l'installazione dell'account email, seleziona "Salta questo step e utilizza il mio indirizzo esistente" per continuare.
+## Prerequisiti
 
-![](images/img_1228.jpg){.thumbnail}
+- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovh.it/hosting-web/){.external}
+- Aver installato il software Thunderbird sul tuo Windows
+- Disporre delle credenziali associate all’indirizzo email da configurare
+ 
+## Procedura
 
+### Aggiungi l'account
 
-## Parte 3: creazione account
-Compila questi campi
+- Durante il primo avvio dell’applicazione un assistente di configurazione apparirà sullo schermo e ti inviterà a inserire il tuo indirizzo e-mail.
 
-"Nome e cognome": inserisci il nome che vuoi che sia visualizzato
+- **Se è già stato impostato** un account: clicca su `File`{.action} nella barra dei menu in alto nello schermo, poi `Nuovo`{.action} e infine `Ricevi un nuovo account di posta...`{.action}.
 
-"Indirizzo email": il tuo indirizzo email completo
+| | |
+|---|---|
+|![Thunderbird](images/thunderbird-win-mxplan01.png){.thumbnail}|Nella finestra che appare inserisci queste 3 informazioni: <br>- Nome completo (Nome visualizzato)<br>- Indirizzo di posta elettronica <br>- Password|
+|Clicca su `Configura manualmente...`{.action} per inserire le impostazioni del server **IN ENTRATA**: <br>- Protocollo **IMAP** <br>- Server **ssl0.ovh.net** <br>- Port **993** <br>- SSL **SSL/TLS** <br>- Autenticazione **Password normale** <br>- Identificativo **del tuo indirizzo email completo**|![Thunderbird](images/thunderbird-win-mxplan02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-mxplan03.png){.thumbnail}|Inserisci le impostazioni del server **USCENTE**: <br>- Protocollo **SMTP** <br>- Server **ssl0.ovh.net** <br>- Port **465** <br>- SSL **SSL/TLS** <br>- Autenticazione **Password normale** <br>- Identificativo **del tuo indirizzo email completo**<br><br>Per completare la configurazione, clicca su `Fine`{.action}|
 
-"Password": password definita nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanagerl) per l'account condiviso
 
-"Ricorda la password": seleziona questa opzione
 
-Thunderbird recupera i parametri dell'indirizzo email e ti propone due configurazioni: IMAP ou POP3.
+Nell'ambito di una configurazione in **POP**, i valori sono i seguenti:
 
-Nel nostro esempio, configuriamo l'account in IMAP. È possibile configurarlo in POP, con le informazioni alla fine di questa guida, per un account POP3.
+|Tipo di server|Nome del server|Metodo di cifratura|Porta|
+|---|---|---|---|
+|In entrata|ssl0.ovh.net|SSL/TLS|995|
+|In uscita|ssl0.ovh.net|SSL/TLS|465|
 
-Thunderbird ti consente di eseguire una configurazione manuale, ti spieghiamo come nella sezione "Configurazione Manuale" della nostra guida.
+### Utilizza l'indirizzo email
 
-Clicca su "Completato" per finalizzare l'installazione.
+Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-![](images/img_1229.jpg){.thumbnail}
+OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. disponibile alla pagina <https://www.ovh.it/mail/> accessibile utilizzando le credenziali del tuo account. Se hai bisogno di aiuto per effettuare questa operazione, consulta [il tuo account Exchange dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/) o [Utilizza il tuo indirizzo email dalla Webmail RoundCube](https://docs.ovh.com/it/emails/webmail_guida_allutilizzo_di_roundcube/).
 
+### Recuperare un backup del tuo indirizzo email
 
-## Parte 4: finalizzazione
-A questo livello, il tuo indirizzo email è stato aggiunto automaticamente e funziona.
+Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione consulta il paragrafo "**Esporta**" nella sezione "**Thunderbird**" della nostra guida [Migrare manualmente il tuo indirizzo email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/#esportare_1).
 
-Analizziamo le diverse configurazioni dell'account. 
-Seleziona "Visualizza i parametri di questo account" dopo aver cliccato sull'indirizzo mail.
+### Modifica i parametri esistenti
 
-![](images/img_1230.jpg){.thumbnail}
+Se il tuo account email è già configurato e devi accedere alle impostazioni dell'account per modificarle:
 
+- Seleziona `Strumenti`{.action} dalla barra dei menu in alto nello schermo.
+- Clicca su `Impostazioni account`{.action}.
 
-## Parametri dell'account
-Qui trovi le informazioni generali sul tuo account email.
+![Thunderbird](images/thunderbird-win-mxplan04.png){.thumbnail}
 
-Puoi aggiungere una firma o definire un indirizzo a cui rispondano le persone che ti hanno scritto.
+- Per modificare i parametri legati alla **ricezione** delle tue email, clicca su `Impostazioni server`{.action} nella colonna di sinistra sotto il tuo indirizzo email.
 
-Puoi anche consultare e modificare il server SMTP utilizzato per l'account email.
+![Thunderbird](images/thunderbird-win-mxplan05.png){.thumbnail}
 
-![](images/img_1231.jpg){.thumbnail}
+- Per modificare le impostazioni relative **all'invio** delle tue email, clicca su `Server in uscita (SMTP)`{.action} in basso a sinistra.
+- Clicca sull'indirizzo email corrispondente nella lista e poi clicca su `Modifica`{.action}.
 
+![Thunderbird](images/thunderbird-win-mxplan06.png){.thumbnail}
 
-## Impostazioni del server in entrata
-In questa finestra trovi le informazioni sul server di posta in entrata. 
 
-Imposta l'intervallo di tempo fra un aggiornamento e l'altro o la politica di eliminazione delle mail.
+## Per saperne di più
 
-![](images/img_1232.jpg){.thumbnail}
-
-
-## Copie e cartelle
-Gestisci le impostazioni delle cartelle, dell'invio dei messaggi e degli archivi.
-
-![](images/img_1233.jpg){.thumbnail}
-
-
-## Sincronizzazione e spazio disco
-Scegli come sincronizzare le tue mail, definisci i parametri di eliminazione dei messaggi.
-
-![](images/img_1234.jpg){.thumbnail}
-
-
-## Impostazione del server in uscita SMTP
-Aggiungi o modifica i server SMTP configurati sul tuo client.
-
-![](images/img_1235.jpg){.thumbnail}
-
-
-## Impostazione del server in uscita SMTP: parte 2
-Trovi qui i parametri che puoi modificare, che vengono visualizzati dopo aver selezionato il tuo server SMTP e cliccato su "Modifica".
-
-
-- Devi tassativamente attivare l'autenticazione[/url] del server in uscita SMTP.
-
-
-Seleziona per metodo di autenticazione Password normale
-
-![](images/img_1236.jpg){.thumbnail}
-
-- L'autenticazione con Password è un parametro indispensabile per inviare email sui nostri server SMTP.
-
-- Se l'autenticazione non è attivata un ticket incidente Open SMTP può essere aperto automaticamente per informarti che l'autenticazione "POP before SMTP" non è supportata. Devi tassativamente attivare l'autenticazione del server in uscita per poter inviare email.
-
-
-
-
-## Aggiungi manualmente un account
-Dopo aver cliccato su "Configurazione manuale" (Cf. parte 3).
-
-Definisci i tuoi parametri di configurazione dell'account email.
-
-![](images/img_1237.jpg){.thumbnail}
-
-
-## Configurazione POP
-Queste sono le informazioni per configurare un account email POP.
-
-Configurazione POP con sicurezza SSL attivata o disattivata:
-
-Indirizzo email: il tuo indirizzo di mail condivisa completo
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-Nome utente: il tuo indirizzo di mail condivisa completo
-Server di posta in entrata, il server che riceve i messaggi: ssl0.ovh.net
-Porta del server in entrata, la porta del server in entrata: 995 o 110
-Server di posta in uscita, il server di invio delle mail: ssl0.ovh.net
-Porta del server in uscita, la porta del server in uscita: 465 o 587
-
-Le porte110 e 587 corrispondono alla securizzazione SSL disattivata.
-Le porte995 e 465 corrispondono alla securizzazione SSL attivata.
-
-
-- Devi tassativamente attivare [l'autenticazione](#configuration_partie_7_parametres_avances_du_serveur_denvoi) del server in uscita SMTP.
-
-
-|Porte|SSLattivata|SSLdisattivata|
-|---|---|---|
-|In entrata|995|110|
-|In uscita|465|587|
-
-
-
-
-## Configurazione IMAP
-Queste sono le informazioni per configurare un account email IMAP.
-
-Configurazione IMAP con sicurezza SSL attivata o disattivata:
-
-Indirizzo email: il tuo indirizzo di mail condivisa completo
-
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-
-Nome utente: il tuo indirizzo di mail condivisa completo
-Server di posta in entrata, il server che riceve i messaggi: ssl0.ovh.net
-Porta del server in entrata, la porta del server in entrata: 993 o 143
-Server di posta in uscita, il server di invio delle mail: ssl0.ovh.net
-Porta del server in uscita, la porta del server in uscita: 465 o 587
-
-Le porte143 e 587 corrispondono alla securizzazione SSL disattivata.
-Le porte993 e 465 corrispondono alla securizzazione SSL attivata.
-
-
-- Devi tassativamente attivare [l'autenticazione](#activer_lauthentification_smtp_sous_ios_-_iphone_-_ipad) del server in uscita SMTP.
-
-
-|Porte|SSLattivata|SSLdisattivata|
-|---|---|---|
-|In entrata|993|143|
-|In uscita|465|587|
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
