@@ -6,7 +6,7 @@ legacy_guide_number: g2144
 section: 'Gestionar el servicio'
 ---
 
-**Última actualización: 30/03/2020** 
+**Última actualización: 26/08/2021** 
 
 ## Objetivo
 
@@ -15,7 +15,7 @@ Esta guía explica cómo crear y gestionar usuarios de la API de SMS.
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud.
-- Tener acceso al área de cliente de OVHcloud.
+- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
@@ -39,36 +39,31 @@ Para gestionar mejor el saldo de su cuenta de SMS, es posible aplicar un límite
 
 ### 1. Crear un usuario de la API
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovhtelecom.fr/manager/) en la sección `Telecom`{.action} (1). A continuación, haga clic en `SMS`{.action} en la columna izquierda (2) y seleccione su cuenta de SMS (3).
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Telecom`{.action} (1). A continuación, haga clic en `SMS`{.action} en la columna izquierda y seleccione su cuenta de SMS (2).
 
-Por último, abra la pestaña `Usuarios API`{.action} (4).
+Por último, abra la pestaña `Usuarios API`{.action} (3). Para añadir un usuario, haga clic en el botón `Acciones`{.action} y seleccione `Añadir`{.action} (4).
 
-![Usuarios API](images/smsusers01e.png){.thumbnail}
+![Usuarios API](images/smsusers01e-2021.png){.thumbnail}
 
-Para añadir un usuario, haga clic en el botón `Acciones`{.action} y seleccione `Añadir`{.action}. 
-
-![Añadir un usuario API](images/smsusers02e.png){.thumbnail}
-
-Introduzca el nombre que quiera asignarle a su usuario de la API. La contraseña del usuario de la API debe estar compuesta por 8 caracteres alfanuméricos. 
-
+Introduzca el nombre que quiera asignarle a su usuario de la API. La contraseña del usuario de la API debe estar compuesta por 8 caracteres alfanuméricos.
 
 ### 2. Añadir una cuota a un usuario de la API
 
 Puede gestionar las cuotas desde la pestaña `Usuarios API`{.action}. Haga clic en el botón `···`{.action} situado al final de la fila correspondiente al usuario de la API y seleccione `Cuota`{.action}.
 
-![Añadir una cuota a un usuario API](images/smsusers03e.png){.thumbnail}
+![Añadir una cuota a un usuario API](images/smsusers03e-2021.png){.thumbnail}
 
 Podrá realizar dos acciones:
 
 - **Activar la cuota**: Marque la casilla `¿Quiere activar la cuota?`{.action} para activar una cuota para el usuario de la API.
 - **Establecer una cuota**: Establezca una cuota para el usuario en el campo `Nueva cuota`{.action}. Una vez alcanzada la cuota asignada, el envío de SMS se bloqueará para ese usuario.
 
-![Activar una cuota](images/smsusers04.png){.thumbnail}
+![Activar una cuota](images/smsusers04-2021.png){.thumbnail}
 
 > [!primary]
-> 
+>
 > La asignación de una cuota a un usuario de la API reducirá considerablemente el crédito total de la cuenta de SMS.
-> 
+>
 > Por ejemplo, si una cuenta de SMS tiene un total de 200 créditos y asigna 150 créditos a un usuario de la API, este crédito se descontará de la cuenta de SMS, que solo dispondrá de 50 créditos.
 >
 
@@ -82,13 +77,12 @@ Podrá realizar las siguientes acciones:
 - **Establecer un umbral de alerta**: Indique en el campo `Umbral de alerta`{.action} el número de créditos de SMS del que debe bajar para activar el envío de la notificación.
 - **Configurar la notificación**: Elija el medio por el que desea recibir la notificación: correo electrónico, SMS o ambos, e indique la dirección de correo electrónico y/o el número de teléfono móvil.
 
-> [!primary]
+> [!warning]
 >
->El envío de las notificaciones por SMS se cargará a su saldo de SMS.
+> El envío de las notificaciones por SMS se cargará a su saldo de SMS.
 >
 
-![Configuración de un límite](images/smsusers05.png){.thumbnail}
-
+![Configuración de un límite](images/smsusers05-2021.png){.thumbnail}
 
 ### 4. Aplicar una restricción por IP para la función http2sms
 
@@ -98,7 +92,7 @@ Para activar la restricción por IP, haga clic en el botón `···`{.action} si
 
 Puede introducir hasta 5 direcciones IP públicas diferentes por usuario para enviar las peticiones http.
 
-![Restricciones por IP](images/smsusers06.png){.thumbnail}
+![Restricciones por IP](images/smsusers06-2021.png){.thumbnail}
 
 Para más información sobre la función http2sms, consulte la guía [Enviar SMS desde una URL](https://docs.ovh.com/es/sms/enviar-sms-desde-una-url).
 
@@ -106,7 +100,7 @@ Para más información sobre la función http2sms, consulte la guía [Enviar SMS
 
 Para realizar un seguimiento personalizado de los acuses de recibo de los SMS (DLR, de *delivery reporting*) es posible indicar una URL de callback haciendo clic en botón `···`{.action} situado al final de la fila correspondiente al usuario de la API y seleccionando `Callback`{.action}.
 
-![Indicar URL de callback](images/smsusers07.png){.thumbnail}
+![Indicar URL de callback](images/smsusers07-2021.png){.thumbnail}
 
 Cuando se actualiza el estado de envío del SMS, el servicio realiza una llamada a la URL indicada, añadiendo los siguientes parámetros:
 
@@ -116,9 +110,20 @@ Cuando se actualiza el estado de envío del SMS, el servicio realiza una llamada
 - **description**: ID del DLR. Los distintos ID de DLR se describen más abajo.
 - **descriptionDIr**: Descripción del estado del DLR.
 
-**Códigos ptt**
+#### Los códigos ptt
 
-|Estado|Descripción|
+Para obtener la descripción de un código ptt específico, puede utilizar la siguiente API:
+
+> [!api]
+>
+> @api {GET} /sms/ptts
+>
+
+Para más información sobre el uso de las API de OVHcloud, consulte nuestra guía [Primeros pasos con la API de OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN).
+
+En la siguiente tabla encontrará una lista no exhaustiva de los códigos ptt principales.
+
+|Código|Descripción|
 |---|---|
 |1|Estado intermedio que indica que el mensaje todavía no se ha entregado debido a un problema relacionado con el teléfono, pero sigue intentando entregarse.|
 |2|El mensaje todavía no se ha entregado debido a un problema relacionado con el operador, pero sigue intentando enviarse dentro de la red.|
@@ -143,7 +148,7 @@ Cuando se actualiza el estado de envío del SMS, el servicio realiza una llamada
 |76|El mensaje no ha podido entregarse porque el número portado está bloqueado para el cliente (el cliente ha sido incluido en una lista negra por el destino portado).|
 |202|El mensaje no ha podido entregarse porque el número portado está bloqueado para el cliente. Para más información, contacte con el servicio de atención al cliente.|
 
-**ID del DLR**
+#### Los ID del DLR
 
 |Estado|Descripción|
 |---|---|
@@ -156,4 +161,4 @@ Cuando se actualiza el estado de envío del SMS, el servicio realiza una llamada
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
