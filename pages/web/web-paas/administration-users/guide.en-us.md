@@ -5,7 +5,7 @@ section: Administration
 order: 11
 ---
 
-**Last updated 26th August 2021**
+**Last updated 27th August 2021**
 
 
 ## Objective  
@@ -15,7 +15,6 @@ Every Web PaaS user has a role that controls their access and permission levels.
 Any user added to a project or an environment type on Web PaaS will need to [register for an account](https://www.ovh.com/auth/) before they can contribute. 
 
 ## Instructions
-
 ### User roles
 
 Grant user permissions to the entire project:
@@ -55,15 +54,15 @@ The `Access` tab shows project-level users and their roles.
 
 Selecting a user will allow you either to edit that user's permissions or delete the user's access to the project entirely.
 
-Add a new user by clicking on the `Add` button.
+To add a new user, log in to your OVHcloud Control Panel and switch to `Web Cloud`{.action} in the top navigation bar. Select `Web PaaS`{.action} in the services bar on the left-hand side. Then choose your project. In the project details page, select the `Users`{.action} tab and click on `Invite user`{.action}.
 
 You can either grant the `Project admin` role to the user, which will give them `Admin` access to every environment in the project, or grant specific permissions on each environment type.
 
-After inviting a new user, if the user does not have a Web PaaS account, they will receive an invitation email asking to confirm their details and register an account.
+
 
 In order to push and pull code (or to SSH to one of the project's environments) the user will need to add an SSH key or use the WebPaas CLI.
 
-If the user already has an account, they will receive an email with a link to access the project.
+.
 
 ### Manage users permissions with the CLI
 
@@ -71,8 +70,8 @@ You can use the [Web PaaS CLI (Command Line Interface)](../development-cli). to 
 
 Available commands:
 
-* `webpaas user:add`
-  * Add a user to the project
+
+
 * `webpaas user:delete`
   * Delete a user
 * `webpaas user:list` (`users`)
@@ -80,13 +79,13 @@ Available commands:
 * `webpaas user:role`
   * View or change a user's role
 
-For example, the following command would add `alice@example.com` with **Project Admin** role in the current project.
+
 
 ```bash
-webpaas user:add alice@example.com -r admin
+
 ```
 
-After adding `alice@example.com`, Alice will receive an invitation email asking to confirm her details and optionally, register for a Web PaaS account.
+
 
 To give Bob different levels of access depending on the environment type, in the current project:
  
