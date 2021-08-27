@@ -57,7 +57,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 |![Outlook](images/config-outlook-emailpro02.png){.thumbnail}|Entre los distintos tipos de cuenta, elija IMAP o POP. <br>Le recomendamos que utilice IMAP.|
 |Introduzca la contraseña de su dirección de correo electrónico y haga clic en `Siguiente`{.action}. |![Outlook](images/config-outlook-emailpro03.png){.thumbnail}|
 |![Outlook](images/config-outlook-emailpro04.png){.thumbnail}|Si Outlook no ha podido configurar su dirección de forma automática, se abrirá esta ventana. <br>Haga clic en `Modificar los parámetros de la cuenta`{.action} |
-|Escriba en el **Correo entrante**: <br>- el servidor **pro**?**.mail.ovh.net** (sustituya "**?**" por el número de su servidor) <br>- Port **993**<br>- Método de cifrado **SSL/TLS**<br><br>Escriba en **Correo saliente**: <br>- el servidor **pro**?**.mail.ovh.net** (sustituya "**?**" por el número de su servidor)<br>- Port **587**<br>- Método de cifrado **SSL/TLS**<br><br>Haga clic en `Siguiente`{.action} para aceptar. |![Outlook](images/config-outlook-emailpro05.png){.thumbnail}|
+|Escriba en el **Correo entrante**: <br>- el servidor **pro**?**.mail.ovh.net** (sustituya "**?**" por el número de su servidor) <br>- Port **993**<br>- Método de cifrado **SSL/TLS**<br><br>Escriba en **Correo saliente**: <br>- el servidor **pro**?**.mail.ovh.net** (sustituya "**?**" por el número de su servidor)<br>- Port **587**<br>- Método de cifrado **STARTTLS**<br><br>Haga clic en `Siguiente`{.action} para aceptar. |![Outlook](images/config-outlook-emailpro05.png){.thumbnail}|
 
 
 En una configuración en **POP**, los valores son los siguientes:
