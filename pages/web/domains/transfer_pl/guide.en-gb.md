@@ -9,7 +9,7 @@ section: Transfer
 order: 1
 ---
 
-**Last updated 25/08/2021**
+**Last updated 27/08/2021**
 
 ## Objective
 
@@ -44,9 +44,9 @@ The transfer procedure has several steps, including contacting multiple entities
 
 **To start with, it is important to ensure that the information associated with the domain name is up-to-date.** Since the implementation of the GDPR, the data visible in “Whois” has become very limited. We recommend that you check the information associated with your domain name via your current domain name registrar.
 
-- ** If the information is correct: go to the next step of this guide.**
+- **If the information is correct: go to the next step of this guide.**
 
-- ** If the information is incorrect or invisible: contact your domain name registrar to check and/or modify it.**
+- **If the information is incorrect or invisible: contact your domain name registrar to check and/or modify it.**
 
 > [!primary]
 >
@@ -72,7 +72,7 @@ Once you have unlocked your domain name and obtained your code, you can order th
 
 When you are asked to provide your transfer code, enter it in the box next to your domain name. If you do not yet have the transfer code, you can tick the box labelled `Enter transfer code at a later stage`{.action}. However, we strongly advise ensuring that you have the code to hand before you continue. Remember that the transfer will not start until a valid code has been provided.
 
-You can also complete your order with a [web hosting plan](https://www.ovh.co.uk/web-hosting/){.external}  and other OVHcloud solutions. This may be of interest to you, if you would also like to migrate your services to OVHcloud. Our guide to [Migrating your website to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external} provides instructions on how to do this.
+You can also complete your order with a [web hosting plan](https://www.ovh.co.uk/web-hosting/){.external}  and other OVHcloud solutions. This may be of interest to you, if you would also like to migrate your services to OVHcloud. Our guide to [Migrating your website to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/) provides instructions on how to do this.
 
 > [!warning]
 >
@@ -93,7 +93,7 @@ You can also complete your order with a [web hosting plan](https://www.ovh.co.uk
 
 ![domain](images/Order_summary.png){.thumbnail}
 
-Once the order has been confirmed, you will receive a free purchase order. The transfer process will only start once you have confirmed this free purchase order. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To track the progress, click `Domain`{.action} names in the services bar on the left-hand side, then` Ongoing`{.action} operations.
+Once the order has been confirmed, you will receive a free purchase order. The transfer process will only start once you have confirmed this free purchase order. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To track the progress, click `Domain`{.action} names in the services bar on the left-hand side, then`Ongoing`{.action} operations.
 
 ### Step 4: Transfer confirmation
 
@@ -115,6 +115,6 @@ Once the transfer procedure is complete, you can manage your domain name from th
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/)
 
 Join our community of users on <https://community.ovh.com/en/>.
