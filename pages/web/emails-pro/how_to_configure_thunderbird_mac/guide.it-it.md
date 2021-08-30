@@ -1,12 +1,11 @@
 ---
-title: Configurare un indirizzo email su Thunderbird per macOS
-slug: servizio_email_guida_alla_configurazione_di_thunderbird_su_mac
+title: Configurare un account Email Pro su Thunderbird per macOS
+slug: configurazione-thundebird-emailpro-mac
 routes:
     canonical: 'https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/'
-legacy_guide_number: g1297
-excerpt: Trovi qui le informazioni per configurare il tuo indirizzo email su Thunderbird.
-section: Apple
-order: 5
+excerpt: Come configurare il tuo indirizzo Email Pro su Thunderbird per macOS
+section: Configurazione di un client di posta
+order: 6
 ---
 
 > [!primary]
@@ -17,9 +16,9 @@ order: 5
 
 ## Obiettivo
 
-Gli account MX Plan possono essere configurati su client di posta compatibili, per permetterti di utilizzare il tuo account email dal dispositivo che preferisci. Thunderbird è un client di posta gratuito e gratuito.
+Gli account Email Pro possono essere configurati su client di posta compatibili, per permetterti di utilizzare il tuo account email dal dispositivo che preferisci. Thunderbird è un client di posta gratuito e gratuito.
 
-**Questa guida ti mostra come configurare il tuo indirizzo email MX Plan su Thunderbird su macOS.**
+**Questa guida ti mostra come configurare il tuo indirizzo email Email Pro su Thunderbird su macOS.**
 
 > [!warning]
 >
@@ -30,11 +29,19 @@ Gli account MX Plan possono essere configurati su client di posta compatibili, p
 
 ## Prerequisiti
 
-- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovh.it/hosting-web/){.external}
+- Disporre di un account email [Email Pro](https://docs.ovh.com/it/emails-pro/)
 - Aver installato il software Thunderbird sul tuo macOS
 - Disporre delle credenziali associate all’indirizzo email da configurare
  
 ## Procedura
+
+> [!warning]
+>
+> Nel nostro esempio, usiamo il nome del server: pro**?**.mail.ovh.net. Dovrai sostituire il "? " dalla cifra che indica il server del tuo servizio Email Pro.
+> 
+> Questa cifra è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nella sezione `Web Cloud`{.action} e poi nella sezione `Email Pro`{.action}
+> nella colonna a sinistra. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
+> 
 
 ### Aggiungi l'account
 
@@ -44,9 +51,9 @@ Gli account MX Plan possono essere configurati su client di posta compatibili, p
 
 | | |
 |---|---|
-|![Thunderbird](images/thunderbird-mac-mxplan01.png){.thumbnail}|Nella finestra che appare inserisci queste 3 informazioni: <br>- Nome completo (Nome visualizzato)<br>- Indirizzo di posta elettronica <br>- Password|
-|Clicca su `Configura manualmente...`{.action} per inserire le impostazioni del server **IN ENTRATA**: <br>- Protocollo **IMAP** <br>- Server **ssl0.ovh.net** <br>- Port **993** <br>- SSL **SSL/TLS** <br>- Autenticazione **Password normale** <br>- Identificativo **del tuo indirizzo email completo**|![Thunderbird](images/thunderbird-mac-mxplan02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-mac-mxplan03.png){.thumbnail}|Inserisci le impostazioni del server **USCENTE**: <br>- Protocollo **SMTP** <br>- Server **ssl0.ovh.net** <br>- Port **465** <br>- SSL **SSL/TLS** <br>- Autenticazione **Password normale** <br>- Identificativo **del tuo indirizzo email completo**<br><br>Per completare la configurazione, clicca su `Fine`{.action}|
+|![Thunderbird](images/thunderbird-mac-emailpro01.png){.thumbnail}|Nella finestra che appare inserisci queste 3 informazioni: <br>- Nome completo (Nome visualizzato)<br>- Indirizzo di posta elettronica <br>- Password|
+|Clicca su `Configura manualmente...`{.action} per inserire le impostazioni del server **IN ENTRATA**: <br>- Protocollo **IMAP** <br>- Server **ssl0.ovh.net** <br>- Port **993** <br>- SSL **SSL/TLS** <br>- Autenticazione **Password normale** <br>- Identificativo **del tuo indirizzo email completo**|![Thunderbird](images/thunderbird-mac-emailpro02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-mac-emailpro03.png){.thumbnail}|Inserisci le impostazioni del server **USCENTE**: <br>- Protocollo **SMTP** <br>- Server **ssl0.ovh.net** <br>- Port **465** <br>- SSL **SSL/TLS** <br>- Autenticazione **Password normale** <br>- Identificativo **del tuo indirizzo email completo**<br><br>Per completare la configurazione, clicca su `Fine`{.action}|
 
 
 
@@ -61,7 +68,7 @@ Nell'ambito di una configurazione in **POP**, i valori sono i seguenti:
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. disponibile alla pagina <https://www.ovh.it/mail/> accessibile utilizzando le credenziali del tuo account. Se hai bisogno di aiuto per effettuare questa operazione, consulta [il tuo account Exchange dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/) o [Utilizza il tuo indirizzo email dalla Webmail RoundCube](https://docs.ovh.com/it/emails/webmail_guida_allutilizzo_di_roundcube/).
+OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. disponibile alla pagina <https://www.ovh.it/mail/> accessibile utilizzando le credenziali del tuo account. Se hai bisogno di aiuto per effettuare questa operazione, consulta [il tuo account Exchange dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/).
 
 ### Recuperare un backup del tuo indirizzo email
 
@@ -69,21 +76,29 @@ Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei
 
 ### Modifica i parametri esistenti
 
+> [!warning]
+>
+> Nel nostro esempio, usiamo il nome del server: pro**?**.mail.ovh.net. Dovrai sostituire il "? " dalla cifra che indica il server del tuo servizio Email Pro.
+> 
+> Questa cifra è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nella sezione `Web Cloud`{.action} e poi nella sezione `Email Pro`{.action}
+> nella colonna a sinistra. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
+> 
+
 Se il tuo account email è già configurato e devi accedere alle impostazioni dell'account per modificarle:
 
 - Seleziona `Strumenti`{.action} dalla barra dei menu in alto nello schermo.
 - Clicca su `Impostazioni account`{.action}.
 
-![Thunderbird](images/thunderbird-mac-mxplan04.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-emailpro04.png){.thumbnail}
 
 - Per modificare i parametri legati alla **ricezione** delle tue email, clicca su `Impostazioni server`{.action} nella colonna di sinistra sotto il tuo indirizzo email.
 
-![Thunderbird](images/thunderbird-mac-mxplan05.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-emailpro05.png){.thumbnail}
 
 - Per modificare le impostazioni relative **all'invio** delle tue email, clicca su `Server in uscita (SMTP)`{.action} in basso a sinistra.
 - Clicca sull'indirizzo email corrispondente nella lista e poi clicca su `Modifica`{.action}.
 
-![Thunderbird](images/thunderbird-mac-mxplan06.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-emailpro06.png){.thumbnail}
 
 
 ## Per saperne di più
