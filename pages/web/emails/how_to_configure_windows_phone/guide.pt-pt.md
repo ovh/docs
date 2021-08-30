@@ -3,6 +3,7 @@ title: 'Mail partilhado: Guia de configuração Windows Phone'
 excerpt: Guia de configuração Windows Phone
 slug: mail_partilhado_guia_de_configuracao_windows_phone
 legacy_guide_number: g1346
+hidden: true
 ---
 
 

@@ -4,6 +4,7 @@ excerpt: Esta guía explica cómo configurar un teléfono móvil en Android 5.1
 slug: correo_guia_de_configuracion_de_un_telefono_movil_en_android_51
 legacy_guide_number: g1912
 section: Android
+hidden: true
 ---
 
 

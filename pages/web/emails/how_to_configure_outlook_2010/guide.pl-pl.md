@@ -3,6 +3,7 @@ title: Konfiguracja konta e-mail w programie Outlook 2010
 excerpt: ''
 slug: konfiguracja_konta_e-mail_w_programie_outlook_2010
 legacy_guide_number: g1299
+hidden: true
 ---
 
 

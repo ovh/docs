@@ -4,6 +4,7 @@ excerpt: ''
 slug: correo_guia_de_configuracion_en_mail_de_mac_mavericks_y_yosemite
 legacy_guide_number: g1599
 section: Apple
+hidden: true
 ---
 
 
