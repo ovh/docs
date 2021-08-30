@@ -1,5 +1,5 @@
 ---
-title: 'Configurar um endereço de e-mail no Outlook 2016 para Mac'
+title: 'Configurar um endereço de e-mail no Outlook para macOS'
 slug: configuracao-outlook-2016-mac
 excerpt: 'Saiba como configurar um endereço de e-mail MX Plan no Outlook 2016 para Mac'
 section: Outlook

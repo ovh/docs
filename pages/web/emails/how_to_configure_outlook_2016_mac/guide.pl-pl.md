@@ -1,5 +1,5 @@
 ---
-title: Konfiguracja konta e-mail w programie Outlook 2016 na urządzeniu Mac
+title: Konfiguracja konta e-mail w programie Outlook na urządzeniu macOS
 slug: konfiguracja-outlook-2016-mac
 excerpt: Dowiedz się, jak skonfigurować konto e-mail MX Plan w programie Outlook 2016 na urządzeniu Mac
 section: Outlook
