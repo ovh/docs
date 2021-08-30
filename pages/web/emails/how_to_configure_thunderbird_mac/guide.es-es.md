@@ -3,7 +3,8 @@ title: 'Correo: Guía de configuración para Thunderbird en Mac'
 excerpt: ''
 slug: correo_guia_de_configuracion_para_thunderbird_en_mac
 legacy_guide_number: g1911
-section: Apple
+section: Configuración en el ordenador
+order: 05
 ---
 
 

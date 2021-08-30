@@ -3,7 +3,7 @@ title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web Access (OWA)
 slug: korzystanie-owa
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
 section: 'Pierwsze kroki'
-order: 4
+order: 04
 ---
 
 **Ostatnia aktualizacja z dnia 24-04-2019**

@@ -3,6 +3,8 @@ title: 'Email condivisa: guida alla configurazione di Thundebird'
 excerpt: ''
 slug: email_condivisa_guida_alla_configurazione_di_thundebird
 legacy_guide_number: g1297
+section: Configurazione su computer
+order: 04
 ---
 
 

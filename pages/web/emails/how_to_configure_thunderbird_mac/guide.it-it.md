@@ -3,6 +3,8 @@ title: 'Servizio Email: guida alla configurazione di Thunderbird su MAC'
 excerpt: ''
 slug: servizio_email_guida_alla_configurazione_di_thunderbird_su_mac
 legacy_guide_number: g1911
+section: Configurazione su computer
+order: 05
 ---
 
 

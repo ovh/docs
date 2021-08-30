@@ -2,7 +2,8 @@
 title: 'Konfiguracja konta e-mail na urządzeniach Android poprzez aplikację Gmail'
 slug: konfiguracja-android
 excerpt: 'Dowiedz się, jak skonfigurować konto MX Plan na urządzeniu z systemem Android poprzez aplikację Gmail'
-section: Android
+section: Konfiguracja na smartfonie
+order: 02
 ---
 
 **Ostatnia aktualizacja dnia 2018-04-09**

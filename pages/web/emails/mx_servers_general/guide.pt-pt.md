@@ -3,6 +3,7 @@ title: 'Mail Partilhado: Generalidades sobre os servidores MX'
 excerpt: 'Mail Partilhado: Generalidades sobre os servidores MX'
 slug: mail_partilhado_generalidades_sobre_os_servidores_mx
 legacy_guide_number: g2003
+hidden: true
 ---
 
 

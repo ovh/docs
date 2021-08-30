@@ -3,6 +3,8 @@ title: 'E-mails Partilhados: Guia de configuração para o Thunderbird'
 excerpt: ''
 slug: e-mails_partilhados_guia_de_configuracao_para_o_thunderbird
 legacy_guide_number: g1297
+section: Configuração num computador
+order: 04
 ---
 
 

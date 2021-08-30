@@ -4,7 +4,7 @@ legacy_guide_number: 1933
 slug: deleguer-gestion-emails-autre-identifiant
 excerpt: 'Ce guide vous aidera a deleguer la gestion de vos emails a un autre identifiant OVH.'
 section: 'Fonctionnalités des adresses e-mail'
-order: 6
+order: 05
 ---
 
 ## Informations et pre-requis

@@ -2,7 +2,8 @@
 title: 'Email Partilhado: guia de configuração para Thunderbird'
 excerpt: ''
 slug: email_partilhado_guia_de_configuracao_para_thunderbird
-legacy_guide_number: g1911
+legacy_guide_number: Configuração num computador
+order: 05
 ---
 
 

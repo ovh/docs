@@ -3,7 +3,8 @@ title: 'Correo: Guía de configuración en Thunderbird'
 excerpt: ''
 slug: correo_guia_de_configuracion_en_thunderbird
 legacy_guide_number: g1297
-section: Windows
+section: Configuración en el ordenador
+order: 04
 ---
 
 

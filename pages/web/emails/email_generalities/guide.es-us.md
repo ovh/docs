@@ -3,7 +3,7 @@ title: 'Primeros pasos con la solución de correo electrónico OVHcloud'
 slug: primeros-pasos-correo-compartido
 excerpt: 'Cómo empezar a utilizar la solución de correo electrónico OVHcloud'
 section: 'Primeros pasos'
-order: 1
+order: 01
 ---
 
 **Última actualización: 05/05/2020**

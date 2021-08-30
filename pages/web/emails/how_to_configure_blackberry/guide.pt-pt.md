@@ -3,6 +3,8 @@ title: 'E-mail Partilhado: Guia de configuração Blacklberry'
 excerpt: 'E-mail Partilhado: Guia de configuração Blacklberry'
 slug: e-mail_partilhado_guia_de_configuracao_blacklberry
 legacy_guide_number: g1381
+section: Configuração no smartphone
+order: 03
 ---
 
 

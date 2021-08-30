@@ -4,6 +4,7 @@ excerpt: ''
 slug: hosting_www_konfiguracja_konta_e-mail_w_programie_thunderbird_mac
 legacy_guide_number: g1911
 section: 'Konfiguracja na komputerze'
+order: 05
 ---
 
 ## Część 1: Uruchomienie programu

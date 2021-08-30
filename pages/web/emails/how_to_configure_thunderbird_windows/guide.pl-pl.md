@@ -3,6 +3,8 @@ title: Konfiguracja konta e-mail w programie Thunderbird
 excerpt: ''
 slug: konfiguracja_konta_e-mail_w_programie_thunderbird
 legacy_guide_number: g1297
+section: Konfiguracja na komputerze
+order: 04
 ---
 
 

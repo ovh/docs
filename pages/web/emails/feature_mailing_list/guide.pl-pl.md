@@ -4,6 +4,7 @@ excerpt: 'Z tego przewodnika dowiesz się, jak korzystać z list mailingowych'
 slug: hosting_www_listy_mailingowe
 legacy_guide_number: g1596
 section: 'Funkcjonalności kont e-mail'
+order: 03
 ---
 
 **Ostatnia aktualizacja z dnia 13-02-2020**

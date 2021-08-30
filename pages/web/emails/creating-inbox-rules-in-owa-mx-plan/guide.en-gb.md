@@ -3,7 +3,7 @@ title: 'Creating inbox rules in OWA (MX Plan)'
 slug: creating-inbox-rules-in-owa-mx-plan
 excerpt: 'Find out how to create email redirections and filters using OWA'
 section: 'Getting started'
-order: 5
+order: 05
 ---
 
 **Last updated 12th March 2020**
