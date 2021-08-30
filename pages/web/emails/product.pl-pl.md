@@ -6,9 +6,3 @@ sections: Pierwsze kroki, Funkcjonalności kont e-mail, Konfiguracja na komputer
 order: 03
 ---
 
-> [!product-section]
->
-> ### Diagnostyka
->
-> - [Co zrobić, jeśli moje konto zostało zablokowane z powodu rozsyłania spamu?](https://docs.ovh.com/pl/microsoft-collaborative-solutions/blokada-za-spam/)
->

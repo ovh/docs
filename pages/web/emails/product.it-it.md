@@ -6,9 +6,3 @@ sections: "Per iniziare, Funzionalità degli indirizzi email, Configurazione su 
 order: 03
 ---
 
-> [!product-section]
->
-> ### Diagnostica
->
-> - [Che fare in caso di account bloccato per invio di Spam ?](https://docs.ovh.com/it/microsoft-collaborative-solutions/blocco-per-spam/)
->

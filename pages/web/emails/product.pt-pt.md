@@ -6,9 +6,3 @@ sections: Introdução, Funcionalidades dos endereços e-mail, Configuração nu
 order: 03
 ---
 
-> [!product-section]
->
-> ### Diagnóstico
->
-> - [O que fazer no caso de uma conta bloqueada por spam?](https://docs.ovh.com/pt/microsoft-collaborative-solutions/bloqueado-por-spam/)
->

@@ -6,9 +6,3 @@ sections: Primeros pasos, Funcionalidades de las direcciones de correo electrón
 order: 03
 ---
 
-> [!product-section]
->
-> ### Diagnóstico
->
-> - [¿Qué hacer con una cuenta bloqueada debido a correo no deseado?](https://docs.ovh.com/es/microsoft-collaborative-solutions/bloqueo-por-correo-no-deseado/)
->
