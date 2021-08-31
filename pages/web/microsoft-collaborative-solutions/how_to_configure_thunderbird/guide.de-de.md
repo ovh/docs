@@ -60,8 +60,8 @@ Bei einer **POP** Konfiguration ergeben sich folgende Werte:
 
 |Server-Typ|Servername|Verschlüsselungsmethode|Port|
 |---|---|---|---|
-|Eingangsserver|ex**?**.mail.ovh.net (Angabe**"?"** soll durch die Nummer Ihres Servers ersetzt werden)|SSL/TLS|995|
-|Ausgangsserver|ex**?**.mail.ovh.net (Angabe**"?"** soll durch die Nummer Ihres Servers ersetzt werden)|STARTTLS|587|
+|Eingangsserver|ex**?**.mail.ovh.net (Angabe **"?"** soll durch die Nummer Ihres Servers ersetzt werden)|SSL/TLS|995|
+|Ausgangsserver|ex**?**.mail.ovh.net (Angabe **"?"** soll durch die Nummer Ihres Servers ersetzt werden)|STARTTLS|587|
 
 ### E-Mail-Adresse verwenden
 

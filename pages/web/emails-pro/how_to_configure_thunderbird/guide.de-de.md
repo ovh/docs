@@ -51,17 +51,17 @@ Email Pro Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingeric
 
 | | |
 |---|---|
-|![Thunderbird](images/thunderbird-win-mxplan01.png){.thumbnail}|Geben Sie im angezeigten Fenster die folgenden 3 Informationen ein: <br>- Ihr vollständiger Name (Anzeigename)<br>- E-Mail-Adresse <br>- Passwort.|
-|Klicken Sie anschließend auf `Manuell konfigurieren...`{.action} um die Einstellungen des **EINGEHEND** Servers einzugeben: <br>- Protokoll **IMAP** <br>- Server **pro?.mail.ovh.net** (ersetzen Sie gut "**?**"durch die Nummer Ihres Servers)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentifizierung **Normales Passwort** <br>- Kennung **Ihrer vollständigen E-Mail-Adresse**|![Thunderbird](images/thunderbird-win-mxplan02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-mxplan03.png){.thumbnail}|Geben Sie die Einstellungen des **AUSGEHEND** Servers an: <br>- Protokoll **SMTP** <br>- Server **pro?.mail.ovh.net** (ersetzen Sie gut "**?**"durch die Nummer Ihres Servers)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentifizierung **Normales Passwort** <br>- Kennung **Ihrer vollständigen E-Mail-Adresse**<br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Fertig`{.action}|
+|![Thunderbird](images/thunderbird-win-emailpro01.png){.thumbnail}|Geben Sie im angezeigten Fenster die folgenden 3 Informationen ein: <br>- Ihr vollständiger Name (Anzeigename)<br>- E-Mail-Adresse <br>- Passwort.|
+|Klicken Sie anschließend auf `Manuell konfigurieren...`{.action} um die Einstellungen des **EINGEHEND** Servers einzugeben: <br>- Protokoll **IMAP** <br>- Server **pro?.mail.ovh.net** (ersetzen Sie gut "**?**"durch die Nummer Ihres Servers)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentifizierung **Normales Passwort** <br>- Kennung **Ihrer vollständigen E-Mail-Adresse**|![Thunderbird](images/thunderbird-win-emailpro02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-emailpro03.png){.thumbnail}|Geben Sie die Einstellungen des **AUSGEHEND** Servers an: <br>- Protokoll **SMTP** <br>- Server **pro?.mail.ovh.net** (ersetzen Sie gut "**?**"durch die Nummer Ihres Servers)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentifizierung **Normales Passwort** <br>- Kennung **Ihrer vollständigen E-Mail-Adresse**<br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Fertig`{.action}|
 
 
 Bei einer **POP** Konfiguration ergeben sich folgende Werte:
 
 |Server-Typ|Servername|Verschlüsselungsmethode|Port|
 |---|---|---|---|
-|Eingangsserver|pro**?**.mail.ovh.net (Angabe**"?"** soll durch die Nummer Ihres Servers ersetzt werden)|SSL/TLS|995|
-|Ausgangsserver|pro**?**.mail.ovh.net (Angabe**"?"** soll durch die Nummer Ihres Servers ersetzt werden)|STARTTLS|587|
+|Eingangsserver|pro**?**.mail.ovh.net (Angabe **"?"** soll durch die Nummer Ihres Servers ersetzt werden)|SSL/TLS|995|
+|Ausgangsserver|pro**?**.mail.ovh.net (Angabe **"?"** soll durch die Nummer Ihres Servers ersetzt werden)|STARTTLS|587|
 
 ### E-Mail-Adresse verwenden
 
