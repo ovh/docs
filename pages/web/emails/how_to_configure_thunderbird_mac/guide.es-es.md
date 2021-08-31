@@ -6,7 +6,7 @@ routes:
 legacy_guide_number: g1297 
 excerpt: 'Aquí encontrará la información necesaria para configurar su dirección de correo electrónico en Thunderbird'
 section: Configuración en el ordenador
-order: 5
+order: 05
 ---
 
 > [!primary]

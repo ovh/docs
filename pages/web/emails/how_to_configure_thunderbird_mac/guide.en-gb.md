@@ -6,7 +6,7 @@ routes:
 legacy_guide_number: 1297
 excerpt: 'Find here the information to configure your email address on Thunderbird.'
 section: 'Configure on computer'
-order: 5
+order: 05
 ---
 
 **Last updated 26/08/2021**
