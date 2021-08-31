@@ -4,7 +4,7 @@ slug: correo_guia_de_configuracion_para_thunderbird_en_mac
 routes:
     canonical: 'https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/'
 legacy_guide_number: g1297 
-excerpt: 'Aquí encontrará la información necesaria para configurar su dirección de correo electrónico en Thunderbird'.
+excerpt: 'Aquí encontrará la información necesaria para configurar su dirección de correo electrónico en Thunderbird'
 section: Configuración en el ordenador
 order: 5
 ---
