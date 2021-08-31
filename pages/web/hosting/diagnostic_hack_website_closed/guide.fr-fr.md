@@ -14,8 +14,6 @@ Votre hébergement web vous permet de mettre en ligne un ou plusieurs sites inte
 
 **Appréhendez certaines pratiques liées à la sécurité et découvrez comment réagir en cas de désactivation de votre hébergement.**
 
-![403](images/403.png){.thumbnail}
-
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
