@@ -6,7 +6,7 @@ section: OVHcloud Features
 hidden: true
 ---
 
-**Last updated 17th April 2020**
+**Last updated 20th August 2021**
 
 ## Objective
 
@@ -47,6 +47,7 @@ The vSphere interface is accessible by default over the Internet. For infrastruc
 ### Enable the Private Gateway
 
 Before starting, get the following necessary information:
+
 - **serviceName** : the Hosted Private Cloud name(syntaxe pcc-X-X-X-X)
 - **datacenterId** : the datacenter ID
 - **ip** & **netmask** : the IP address and netmask for the private gateway
@@ -63,9 +64,13 @@ Start activation with:
 
 The call creates a task that will deploy the virtual machine and make the network configuration.
 
+You may receive a resource delivery notification (a new datastore), this will not be charged and will be placed in the **Admin Storages** 
+folder from the **Storage** view. It is added to host the virtual machine without consuming your datastores.
+
 ### Disable the Private Gateway
 
 Before starting, get the following necessary information:
+
 - **serviceName** : the Hosted Private Cloud name(syntaxe pcc-X-X-X-X)
 - **datacenterId** : the datacenter ID
 

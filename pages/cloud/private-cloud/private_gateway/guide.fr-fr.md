@@ -6,7 +6,7 @@ section: Fonctionnalités OVHcloud
 hidden: true
 ---
 
-**Dernière mise à jour le 22/04/2020**
+**Dernière mise à jour le 20/08/2021**
 
 ## Objectif
 
@@ -42,11 +42,12 @@ L'interface vSphere est accessible par défaut via Internet. Pour les infrastruc
 
 * Avoir créer un Portgroup sur le vRack pour connecter la private gateway. Il doit etre sous le datacenter prévu.
 * Avoir ajouté le réseau de la private gateway dans [les autorisations par IP source](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/).
-* Avoir ajouté une entrée dans le fichier /etc/hosts ou C:\Windows\system32\etc\hosts pour faire correspondre l'adresse pcc-X-X-X-X.ovh.com avec l'adresse IP privée (outre éviter des messages d'erreurs de certificat, cela est nécéssaire pour un bon fonctionnement des différentes consoles VMRC ou autre)
+* Avoir ajouté une entrée dans le fichier /etc/hosts ou C:\Windows\system32\drivers\etc\hosts pour faire correspondre l'adresse pcc-X-X-X-X.ovh.com avec l'adresse IP privée (outre éviter des messages d'erreurs de certificat, cela est nécessaire pour un bon fonctionnement des différentes consoles VMRC ou autre)
 
 ### Activer la private gateway
 
 Avant de commencer, rassembler les informations nécessaires suivantes :
+
 - **serviceName** : le nom du Hosted Private Cloud (syntaxe pcc-X-X-X-X)
 - **datacenterId** : le datacenter ID
 - **ip** & **netmask** : le réseau IP pour la private gateway
@@ -63,9 +64,13 @@ Lancer l'activation avec :
 
 L'appel entraîne la création d'une tâche qui va déployer la machine virtuelle et fait la configuration réseau.
 
+Vous recevrez peut-être une notification de livraison de ressource (un nouveau datastore), celui-ci ne sera pas facturé et sera placé dans le dossier **
+Admin Storages** de la vue **Storage**. Il est ajouté pour pouvoir héberger la machine virtuelle sans impacter vos espaces de Storage.
+
 ### Désactiver la private gateway
 
 Avant de commencer, rassembler les informations nécessaires suivantes :
+
 - **serviceName** : le nom du Hosted Private Cloud (syntaxe pcc-X-X-X-X)
 - **datacenterId** : le datacenter ID
 
