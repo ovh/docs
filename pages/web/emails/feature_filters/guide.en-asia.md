@@ -4,7 +4,7 @@ slug: email-hosting-configuring-filters
 legacy_guide_number: 1973
 excerpt: 'Find out how to create and configure filter rules on your email address'
 section: 'Email address features'
-order: 5
+order: 04
 ---
 
 **Last updated 12th August 2020**

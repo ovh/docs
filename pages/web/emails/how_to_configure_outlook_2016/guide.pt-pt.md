@@ -2,8 +2,8 @@
 title: 'Configurar um endereço de e-mail no Outlook para Windows'
 slug: configuracao-outlook-2016
 excerpt: 'Saiba como configurar um endereço de e-mail MX Plan no Outlook para Windows'
-section: Outlook
-order: 1
+section: Configuração num computador
+order: 01
 ---
  
 > [!primary]

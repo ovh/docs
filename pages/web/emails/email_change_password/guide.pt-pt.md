@@ -3,7 +3,7 @@ title: 'Alterar a palavra-passe de um endereço de e-mail MX Plan'
 slug: alterar-palavra-passe-endereco-email
 excerpt: 'Saiba como alterar a palavra-passe de um endereço de e-mail criado com a oferta MX Plan'
 section: Introdução
-order: 2
+order: 03
 ---
 
 **Última atualização: 14/05/2019**

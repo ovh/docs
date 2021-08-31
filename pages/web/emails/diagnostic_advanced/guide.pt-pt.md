@@ -4,7 +4,7 @@ slug: utilizacao_avancada_dos_e-mails_ovh
 legacy_guide_number: 2117
 excerpt: "Saiba como reagir em caso de problemas de envio ou receção de e-mails na OVHcloud"
 section: 'Diagnóstico'
-order: 9
+order: 02
 ---
 
 > [!primary]

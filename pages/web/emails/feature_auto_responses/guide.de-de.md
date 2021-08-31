@@ -3,7 +3,7 @@ title: 'Einrichten von Auto-Antworten für E-Mails'
 excerpt: 'Erfahren Sie, wie Sie einen E-Mail-Responder einrichten'
 slug: einrichten_von_auto-antworten
 section: 'E-Mail Account Funktionen'
-order: 2
+order: 02
 legacy_guide_number: g2052
 ---
 

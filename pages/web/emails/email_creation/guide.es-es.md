@@ -3,7 +3,7 @@ title: 'Crear una dirección de correo electrónico en un MX Plan'
 slug: correo_guia_de_creacion_de_una_direccion_de_correo_electronico
 excerpt: 'Cómo crear una dirección de correo electrónico en la solución MX Plan'
 section: 'Primeros pasos'
-order: 2
+order: 02
 ---
 
 **Última actualización: 14/05/2019**

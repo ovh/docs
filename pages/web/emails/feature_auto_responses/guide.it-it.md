@@ -3,6 +3,8 @@ title: 'Creare una risposta automatica per il proprio indirizzo email'
 excerpt: 'Come configurare una risposta automatica'
 slug: servizio_email_configura_una_risposta_automatica
 legacy_guide_number: g2052
+section: Funzionalità degli indirizzi email
+order: 02
 ---
 
 > [!primary]

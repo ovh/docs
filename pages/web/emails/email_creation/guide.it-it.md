@@ -3,7 +3,7 @@ title: 'Creare un account email con MX Plan'
 slug: servizio_email_guida_alla_creazione_di_un_indirizzo_email
 excerpt: 'Come aggiungere una casella di posta elettronica sulla soluzione MX Plan'
 section: 'Per iniziare'
-order: 2
+order: 02
 legacy_guide_number: g1343
 ---
 

@@ -2,7 +2,8 @@
 title: 'Configurar una cuenta de correo electrónico en Mail de macOS'
 excerpt: 'Cómo configurar una cuenta MX Plan en Mail de macOS El Capitan, Sierra y High Sierra'
 slug: correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan
-section: Apple
+section: Configuración en el ordenador
+order: 03
 ---
 
 **Última actualización: 05/05/2020**

@@ -4,6 +4,7 @@ excerpt: Guía de configuración en una tablet Android 4.1.2
 slug: correo_guia_de_configuracion_en_una_tablet_android_412
 legacy_guide_number: g1283
 section: Android
+hidden: true
 ---
 
 

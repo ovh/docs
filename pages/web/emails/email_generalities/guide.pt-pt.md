@@ -3,6 +3,7 @@ title: 'Introdução à oferta MX Plan'
 slug: partilhado_generalidades_e-mail_partilhado_ovh
 excerpt: 'Saiba como começar a usar a oferta MX Plan'
 section: Introdução
+order: 01
 legacy_guide_number: g1474
 ---
 

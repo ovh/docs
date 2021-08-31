@@ -4,7 +4,7 @@ slug: utilisation-avancee-des-e-mails
 legacy_guide_number: 2117
 excerpt: "Découvrez comment réagir en cas de dysfonctionnement à l'envoi ou la réception des e-mails chez OVHcloud"
 section: 'Diagnostic'
-order: 9
+order: 02
 ---
 
 **Dernière mise à jour le 04/06/2021**

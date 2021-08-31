@@ -3,7 +3,7 @@ title: 'Using the Outlook Web App with an email account'
 slug: using-owa
 excerpt: 'Find out how to manage an email address using OWA webmail'
 section: 'Getting started'
-order: 4
+order: 04
 ---
 
 **Last updated 25th February 2020**

@@ -3,7 +3,7 @@ title: "Premiers pas avec l'offre MX Plan"
 slug: generalites-sur-les-emails-mutualises
 excerpt: 'Découvrez comment bien débuter avec votre offre MX Plan'
 section: 'Premiers pas'
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 19/07/2021**
