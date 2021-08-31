@@ -6,7 +6,7 @@ routes:
 legacy_guide_number: g1297
 excerpt: 'Informacje dotyczące konfiguracji Twojego konta e-mail w programie Thunderbird znajdują się tutaj.'
 section: Konfiguracja na komputerze
-order: 05
+order: 5
 ---
 
 > [!primary]
