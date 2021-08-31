@@ -1,11 +1,11 @@
 ---
-title: 'Konfiguracja konta Exchange w programie Thunderbird na urządzeniu z systemem Windows'
-slug: exchange_20132016_konfiguracja_w_programie_thunderbird
+title: 'Konfiguracja konta Exchange w programie Thunderbird na urządzeniu z systemem macOS'
+slug: konfiguracja-exchange-thunderbird-mac
 routes:
     canonical: 'https://docs.ovh.com/pl/emails/konfiguracja_konta_e-mail_w_programie_thunderbird/'
 excerpt: 'Tutaj znajdziesz procedurę dodawania konta Exchange w programie Thunderbird'
 section: 'Konfigurowanie konta Exchange na komputerze'
-order: 5
+order: 6
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ order: 5
 
 Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji. Thunderbird to darmowy program pocztowy.
 
-**Dowiedz się, jak skonfigurować Twoje konto Exchange w programie Thunderbird w systemie Windows.**
+**Dowiedz się, jak skonfigurować Twoje konto Exchange w programie Thunderbird w systemie macOS.**
 
 > [!warning]
 >
@@ -30,7 +30,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 ## Wymagania początkowe
 
 - Posiadanie konta [Exchange](https://www.ovh.pl/emaile/hosted-exchange/).
-- Instalacja programu Thunderbird na Twoim urządzeniu z systemem Windows.
+- Instalacja programu Thunderbird na Twoim urządzeniu z systemem macOS.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować.
  
 ## W praktyce
@@ -51,9 +51,9 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 | | |
 |---|---|
-|![Thunderbird](images/thunderbird-win-exchange01.png){.thumbnail}|W oknie, które się wyświetla wprowadź 3 następujące informacje: <br>- Pełna nazwa (nazwa wyświetlacza)<br>- Adres e-mail <br>- Hasło.|
-|Następnie kliknij `Konfiguracja ręcznie...`{.action}, aby wprowadzić parametry serwera **PRZYCHODZĄCEGO**: <br>- Protokół **IMAP** <br>- Serwer **ex?.mail.ovh.net** (zmień "**?**" na numer serwera)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Uwierzytelnianie **Zwykłe hasło** <br>- Identyfikator **Twojego kompletnego konta e-mail**|![Thunderbird](images/thunderbird-win-exchange02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-exchange03.png){.thumbnail}|Wpisz parametry serwera **WYCHODZĄCEGO**: <br>- Protokół **SMTP** <br>- Serwer **ex?.mail.ovh.net** (zmień "**?**" na numer serwera)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Uwierzytelnianie **Zwykłe hasło** <br>- Identyfikator **Twojego kompletnego konta e-mail**<br><br>Aby zakończyć konfigurację, kliknij `Zakończ`{.action}|
+|![Thunderbird](images/thunderbird-mac-exchange01.png){.thumbnail}|W oknie, które się wyświetla wprowadź 3 następujące informacje: <br>- Pełna nazwa (nazwa wyświetlacza)<br>- Adres e-mail <br>- Hasło.|
+|Następnie kliknij `Konfiguracja ręcznie...`{.action}, aby wprowadzić parametry serwera **PRZYCHODZĄCEGO**: <br>- Protokół **IMAP** <br>- Serwer **ex?.mail.ovh.net** (zmień "**?**" na numer serwera)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Uwierzytelnianie **Zwykłe hasło** <br>- Identyfikator **Twojego kompletnego konta e-mail**|![Thunderbird](images/thunderbird-mac-exchange02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-mac-exchange03.png){.thumbnail}|Wpisz parametry serwera **WYCHODZĄCEGO**: <br>- Protokół **SMTP** <br>- Serwer **ex?.mail.ovh.net** (zmień "**?**" na numer serwera)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Uwierzytelnianie **Zwykłe hasło** <br>- Identyfikator **Twojego kompletnego konta e-mail**<br><br>Aby zakończyć konfigurację, kliknij `Zakończ`{.action}|
 
 W przypadku konfiguracji **POP** wartości są następujące:
 
@@ -87,16 +87,16 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do
 - Przejdź do `Narzędzi`{.action} z paska menu na górze ekranu.
 - Kliknij `Ustawienia kont`{.action}.
 
-![Thunderbird](images/thunderbird-win-exchange04.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-exchange04.png){.thumbnail}
 
 - Aby zmienić parametry związane z **otrzymywaniem** wiadomości, w kolumnie po lewej stronie kliknij `Parametry serwera`{.action} pod adresem e-mail.
 
-![Thunderbird](images/thunderbird-win-exchange05.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-exchange05.png){.thumbnail}
 
 - Aby zmienić parametry związane **z wysyłką** e-maili, kliknij `Serwer poczty wychodzącej (SMTP)`{.action} na dole kolumny po lewej stronie.
 - Kliknij odpowiedni adres e-mail na liście, po czym kliknij `Zmień`{.action}.
 
-![Thunderbird](images/thunderbird-win-exchange06.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-exchange06.png){.thumbnail}
 
 
 ## Sprawdź również

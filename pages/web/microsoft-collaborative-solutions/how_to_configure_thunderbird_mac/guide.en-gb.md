@@ -1,11 +1,11 @@
 ---
-title: 'Configuring your Exchange account in Thunderbird for Windows'
-slug: exchange-configuration-thunderbird
+title: 'Configuring your Exchange account in Thunderbird for macOS'
+slug: exchange-configuration-thunderbird-mac
 routes:
     canonical: 'https://https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/'
-excerpt: 'Find out how to add an Exchange account on Thunderbird'
+excerpt: 'Find out how to add an Exchange account on Thunderbird for macOS'
 section: 'Email clients'
-order: 5
+order: 6
 ---
 
 **Last updated 26/08/2021**
@@ -14,7 +14,7 @@ order: 5
 
 You can configure Exchange accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application. Thunderbird is a free email client.
 
-**Find out how to configure your Exchange  address on Thunderbird on Windows.**
+**Find out how to configure your Exchange  address on Thunderbird on macOS.**
 
 > [!warning]
 >
@@ -26,7 +26,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 ## Requirements
 
 - You must have an [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/)account.
-- Thunderbird software installed on your Windows system
+- Thunderbird software installed on your macOS system
 - You need to have the required credentials for the email address you would like to configure.
  
 ## Instructions
@@ -47,9 +47,9 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 | | |
 |---|---|
-|![Thunderbird](images/thunderbird-win-exchange01.png){.thumbnail}|In the window that appears, enter the following 3 information: <br>- Your display name<br>- Email <br>- Password|
-|Then click `Configure manually...`{.action} to enter the **INCOMING** server settings: <br>- Protocol **IMAP** <br>- Server **ex?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentication **Normal password** <br>- Identifying **your full email address**|![Thunderbird](images/thunderbird-win-exchange02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-exchange03.png){.thumbnail}|Enter **OUTGOING** server settings: <br>- Protocol **SMTP** <br>- Server **ex?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentication **Normal password** <br>- Identifying **your full email address**<br><br>To complete the configuration, click `Done`{.action}|
+|![Thunderbird](images/thunderbird-mac-exchange01.png){.thumbnail}|In the window that appears, enter the following 3 information: <br>- Your display name<br>- Email <br>- Password|
+|Then click `Configure manually...`{.action} to enter the **INCOMING** server settings: <br>- Protocol **IMAP** <br>- Server **ex?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentication **Normal password** <br>- Identifying **your full email address**|![Thunderbird](images/thunderbird-mac-exchange02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-mac-exchange03.png){.thumbnail}|Enter **OUTGOING** server settings: <br>- Protocol **SMTP** <br>- Server **ex?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentication **Normal password** <br>- Identifying **your full email address**<br><br>To complete the configuration, click `Done`{.action}|
 
 
 
@@ -85,16 +85,16 @@ If your email account has already been set up and you need to access the account
 - Go to `Tools`{.action} from the menu bar at the top of your screen.
 - Click `Account`{.action} Settings.
 
-![Thunderbird](images/thunderbird-win-exchange04.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-exchange04.png){.thumbnail}
 
 - To change the settings for **receiving** your emails, click `Server`{.action} settings in the left-hand column below your email address.
 
-![Thunderbird](images/thunderbird-win-exchange05.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-exchange05.png){.thumbnail}
 
 - To change **the settings for sending** emails, click Outgoing `server (SMTP)`{.action} at the bottom of the left-hand column.
 - Click the email address in the list, and then click `Edit`{.action}.
 
-![Thunderbird](images/thunderbird-win-exchange06.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-exchange06.png){.thumbnail}
 
 
 ## Go further

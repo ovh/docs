@@ -1,11 +1,11 @@
 ---
-title: 'Configurar una cuenta Exchange en Thunderbird para Windows'
-slug: exchange-configuracion-de-thunderbird
+title: 'Configurar una cuenta Exchange en Thunderbird para macOS'
+slug: exchange-configuracion-de-thunderbird-mac
 routes:
     canonical: 'https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/'
-excerpt: 'Cómo configurar una cuenta Exchange en Thunderbird para Windows'
+excerpt: 'Cómo configurar una cuenta Exchange en Thunderbird para macOS'
 section: 'Configuración del cliente de correo Exchange'
-order: 5
+order: 6
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ order: 5
 
 Es posible configurar sus cuentas Exchange en el cliente de correo que usted utilice, siempre que sea compatible, para poder acceder a ellas desde cualquiera de sus dispositivos. Thunderbird es un cliente de correo libre y gratuito.
 
-**Esta guía explica cómo configurar una cuenta Exchange en Thunderbird de Windows.**
+**Esta guía explica cómo configurar una cuenta Exchange en Thunderbird de macOS.**
 
 > [!warning]
 >
@@ -30,7 +30,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 ## Requisitos
 
 - Disponer de una cuenta [Exchange](https://www.ovh.es/emails/hosted-exchange/).
-- Tener Thunderbird instalado en su Windows.
+- Tener Thunderbird instalado en su macOS.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
  
 ## Procedimiento
@@ -51,9 +51,9 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 | | |
 |---|---|
-|![Thunderbird](images/thunderbird-win-exchange01.png){.thumbnail}|En la nueva ventana, introduzca los siguientes 3 datos: <br>- Su nombre completo (Nombre mostrado)<br>- Dirección de correo electrónico <br>- Contraseña.|
-|Haga clic en `Configurar manualmente...`{.action} para introducir la configuración del servidor **ENTRANT**: <br>- Protocolo **IMAP** <br>- Servidor **ex?.mail.ovh.net** (sustituya "**?**" por el número del servidor)<br>- Puerto **993** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**|![Thunderbird](images/thunderbird-win-exchange02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-exchange03.png){.thumbnail}|Introduzca la configuración del servidor **SALIENTE**: <br>- Protocolo **SMTP** <br>- Servidor **ex?.mail.ovh.net** (sustituya "**?**" por el número del servidor)<br>- Puerto **587** <br>- SSL **STARTTLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**<br><br>Para finalizar la configuración, haga clic en `Finalizado.`{.action}|
+|![Thunderbird](images/thunderbird-mac-exchange01.png){.thumbnail}|En la nueva ventana, introduzca los siguientes 3 datos: <br>- Su nombre completo (Nombre mostrado)<br>- Dirección de correo electrónico <br>- Contraseña.|
+|Haga clic en `Configurar manualmente...`{.action} para introducir la configuración del servidor **ENTRANT**: <br>- Protocolo **IMAP** <br>- Servidor **ex?.mail.ovh.net** (sustituya "**?**" por el número del servidor)<br>- Puerto **993** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**|![Thunderbird](images/thunderbird-mac-exchange02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-mac-exchange03.png){.thumbnail}|Introduzca la configuración del servidor **SALIENTE**: <br>- Protocolo **SMTP** <br>- Servidor **ex?.mail.ovh.net** (sustituya "**?**" por el número del servidor)<br>- Puerto **587** <br>- SSL **STARTTLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**<br><br>Para finalizar la configuración, haga clic en `Finalizado.`{.action}|
 
 En una configuración en **POP**, los valores son los siguientes:
 
@@ -87,16 +87,16 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 - Vaya a `Herramientas`{.action} desde la barra de menú situada en la parte superior de su pantalla.
 - Haga clic en `Configuración de las cuentas`{.action}.
 
-![Thunderbird](images/thunderbird-win-exchange04.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-exchange04.png){.thumbnail}
 
 - Para cambiar los parámetros de **recepción** de los mensajes de correo, haga clic en `Configuración del servidor`{.action} en la columna izquierda, bajo su dirección de correo electrónico.
 
-![Thunderbird](images/thunderbird-win-exchange05.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-exchange05.png){.thumbnail}
 
 - Para cambiar la configuración **del envío** de mensajes de correo, haga clic en `Servidor de salida (SMTP)`{.action} situado en la columna izquierda.
 - Haga clic en la dirección de correo electrónico correspondiente en la lista y, seguidamente, en `Modificar`{.action}.
 
-![Thunderbird](images/thunderbird-win-exchange06.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-exchange06.png){.thumbnail}
 
 
 ## Más información

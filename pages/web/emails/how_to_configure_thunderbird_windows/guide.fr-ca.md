@@ -4,14 +4,16 @@ slug: configuration-email-configuration-pour-thunderbird
 legacy_guide_number: 1297
 excerpt: 'Retrouvez ici les informations pour configurer votre adresse e-mail sur Thunderbird.'
 section: 'Configuration sur ordinateur'
-order: 5
+order: 4
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 17/08/2021**
 
-Cliquez [ici](http://www.ovh.com/ca/fr/hebergement-web/guides){.external} pour retrouver nos différents guides de configuration e-mail.
+## Objectif
 
-La configuration est réalisée sur la version 24.2.0 de Thunderbird.
+Les comptes MX Plan peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Thunderbird est un client de messagerie libre et gratuit.
+
+**Découvrez comment configurer votre adresse e-mail MX Plan sur Thunderbird sur Windows.**
 
 > [!warning]
 >
@@ -20,203 +22,63 @@ La configuration est réalisée sur la version 24.2.0 de Thunderbird.
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
-## Configuration de Thunderbird
+## Prérequis
 
-### Demarrage
-Dans un premier temps, rendez-vous dans l'application "Thunderbird" installée sur votre poste.
+- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}).
+- Disposer du logiciel Thunderbird installé sur votre Windows.
+- Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+ 
+## En pratique
 
-Voici l'interface qui apparaîtra par défaut si vous n'avez pas d'adresse e-mail configurée. Sinon allez dans le menu pour lancer l'ajout d'un nouveau compte.
+### Ajouter le compte
 
-Sélectionnez "Courrier électronique" pour continuer.
+- **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche et vous invite à renseigner votre adresse e-mail.
 
+- **Si un compte a déjà été paramétré** : cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran, puis `Nouveau`{.action} et enfin `Obtenir un nouveau compte courrier…`{.action}.
 
-![emails](images/1227.png){.thumbnail}
+| | |
+|---|---|
+|![Thunderbird](images/thunderbird-win-mxplan01.png){.thumbnail}|Dans la fenêtre qui s'affiche, saisissez les 3 informations suivantes: <br>- Votre nom complet (Nom d'affichage)<br>- Adresse électronique <br>- Mot de passe.|
+|Cliquez ensuite sur `Configurer manuellement...`{.action} pour saisir les paramètres de serveur **ENTRANT**: <br>- Protocole **IMAP** <br>- Serveur **ssl0.ovh.net** <br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**|![Thunderbird](images/thunderbird-win-mxplan02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-mxplan03.png){.thumbnail}|Saisir les paramètres de serveur **SORTANT**: <br>- Protocole **SMTP** <br>- Serveur **ssl0.ovh.net** <br>- Port **465** <br>- SSL **SSL/TLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**<br><br>Pour finaliser la configuration, cliquez sur `Terminé`{.action}|
 
 
-### Demarrage (suite)
-Afin de poursuivre l'installation du compte e-mail, sélectionnez "Passer cette étape et utiliser mon adresse existante" pour continuer.
 
+Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 
-![emails](images/1228.png){.thumbnail}
+|Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
+|---|---|---|---|
+|Entrant|ssl0.ovh.net|SSL/TLS|995|
+|Sortant|ssl0.ovh.net|SSL/TLS|465|
 
+### Utiliser l'adresse e-mail
 
-### Création compte
-Renseignez les champs affichés :
+Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-"Vos nom et prénom" : renseignez ici le nom d'affichage désiré.
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, aidez-vous de notre guide [Consulter son compte Exchange depuis l’interface OWA](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/) ou [Utiliser son adresse e-mail depuis le webmail RoundCube](https://docs.ovh.com/ca/fr/emails/utilisation-roundcube/#ou-et-comment-se-connecter-au-webmail-roundcube).
 
-"Adresse électronique" : votre adresse e-mail entière.
+### Récupérer une sauvegarde de votre adresse e-mail
 
-"Mot de passe" : le mot de passe défini dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} pour le compte e-mail mutualisé.
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/ca/fr/emails/migrer-ses-adresses-email-manuellement/#exporter_1).
 
-"Retenir le mot de passe" : vous devez cocher cette option.
+### Modifier les paramètres existants
 
-Thunderbird récupère les paramètres de l'adresse e-mail, et vous propose deux configurations possibles :  **IMAP**  ou  **POP3** .
+Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
 
-*Dans notre exemple on configure le compte en IMAP. Il vous est tout à fait possible de le configurer en POP, vous retrouverez à la fin de ce guide les informations de configuration pour un compte mail de type POP3.*
+- Allez dans `Outils`{.action} depuis la barre de menu en haut de votre écran.
+- Cliquez sur `Paramètres des comptes`{.action}.
 
-*À noté que Thunderbird propose une configuration manuelle, vous retrouverez cet onglet dans la section "Configuration Manuelle" de notre guide.*
+![Thunderbird](images/thunderbird-win-mxplan04.png){.thumbnail}
 
-Cliquez sur "Terminé" pour finaliser les étapes d'installation.
+- Pour modifier les paramètres liés à la **réception** de vos e-mails, cliquez sur `Paramètres serveur`{.action} dans la colonne de gauche sous votre adresse e-mail.
 
+![Thunderbird](images/thunderbird-win-mxplan05.png){.thumbnail}
 
-![emails](images/1229.png){.thumbnail}
+- Pour modifier les paramètres liés à **l'envoi** de vos e-mails, cliquez sur `Serveur sortant (SMTP)`{.action} tout en bas de la colonne de gauche.
+- Cliquez sur l'adresse e-mail concernée dans la liste, puis cliquez sur `Modifier`{.action}.
 
+![Thunderbird](images/thunderbird-win-mxplan06.png){.thumbnail}
 
-### Finalisation
-À ce niveau votre adresse e-mail est automatiquement ajoutée et fonctionnelle.
-
-Nous allons voir ensemble dans la suite de ce guide, les différents paramètres du compte. Pour cela sélectionnez  **"Voir les paramètres pour ce compte"**  après avoir cliqué sur l'adresse e-mail.
-
-
-![emails](images/1230.png){.thumbnail}
-
-
-## Parametres des comptes
-
-### Parametres du compte
-Vous trouvez ici les informations générales de votre compte e-mail.
-
-Ici, vous pouvez ajouter une signature à vos e-mails, ou définir une autre adresse mail à laquelle vos destinataires répondront.
-
-Vous pouvez également consulter et modifier le serveur SMTP utilisé par le compte e-mail.
-
-
-![emails](images/1231.png){.thumbnail}
-
-
-### Parametres du serveur entrant
-Dans cette fenêtre vous trouverez toutes les informations concernant le serveur de courrier entrant.
-
-Vous pouvez paramétrer le temps entre deux collectes de nouveaux e-mails, ou la politique de gestion de suppression des mails.
-
-
-![emails](images/1232.png){.thumbnail}
-
-
-### Copies et dossiers
-À ce niveau vous trouverez les différents réglages concernant vos dossiers, l'envoi de messages, les archives.
-
-
-![emails](images/1233.png){.thumbnail}
-
-
-### Synchronisation et espace disque
-Vous avez ici la possibilité de choisir la manière dont vos mails vont se synchroniser, définir vos choix sur la suppression ou non des messages.
-
-
-![emails](images/1234.png){.thumbnail}
-
-
-### Parametres du serveur sortant SMTP
-Il vous est possible ici d'ajouter ou de modifier les serveurs SMTP configurés sur votre logiciel.
-
-
-![emails](images/1235.png){.thumbnail}
-
-
-### Parametres du serveur sortant SMTP &#58; (suite)
-Vous retrouverez ici les différents paramètres modifiables, qui apparaîtront après avoir sélectionné votre serveur SMTP, et cliqué sur  **"Modifier"** .
-
-- Vous devez obligatoirement activer l'authentification du serveur sortant SMTP.
-
-Sélectionnez pour méthode d'authentification : Mot de passe normal
-
-
-![emails](images/1236.png){.thumbnail}
-
-
-
-> [!success]
->
-> - 
-> L'Authentification par Mot de passe est un paramétrage indispensable
-> afin que l'émission d'email puisse fonctionner sur nos serveurs SMTP.
-> - 
-> Si l'authentification n'est pas effectuée par mot de passe, un ticket
-> incident Open SMTP peut être ouvert vous informant que
-> l'authentification "POP before SMTP" n'est pas supportée. Vous devrez
-> impérativement activer l'authentification par Mot de passe afin de
-> pouvoir émettre des emails.
-> 
-> 
-
-
-## Configuration Manuelle
-
-### Ajouter un compte manuellement
-Voici ce qui apparaît après un clic sur  **"Configuration manuelle"**  (Cf. partie 3).
-
-Vous pouvez définir vos paramètres de configuration du compte e-mail.
-
-
-![emails](images/1237.png){.thumbnail}
-
-
-## Rappel des parametres POP - IMAP
-
-### Configuration POP
-Voici les informations à retenir pour la configuration d'un compte e-mail **POP** .
-
-Configuration  **POP**  avec sécurisation SSL activée ou désactivée :
-
-Adresse Email : Votre adresse e-mail mutualisée entière.
-
-Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
-
-Nom d'utilisateur : Votre adresse e-mail mutualisée entière.
-
-Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET**
-
-Port serveur entrant : Le port du serveur entrant :  **995**  ou  **110**
-
-Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET**
-
-Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
-
-Les ports  **110**  et  **587**  correspondent à la sécurisation SSL désactivée.
-
-Les ports  **995**  et  **465**  correspondent à la sécurisation SSL activée.
-
-- Vous devez obligatoirement activer [l'authentification](#parametres_des_comptes_parametres_du_serveur_sortant_smtp){.external} du serveur sortant SMTP.
-
-|Ports|SSL activé|SSL désactivé|
-|---|---|---|
-|Entrant|995|110|
-|Sortant|465|587|
-
-995465
-
-
-### Configuration IMAP
-Voici les informations à retenir pour la configuration d'un compte e-mail **IMAP** .
-
-Configuration  **IMAP**  avec sécurisation SSL activée ou désactivée :
-
-Adresse Email : Votre adresse e-mail mutualisée entière.
-
-Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
-
-Nom d'utilisateur : Votre adresse e-mail mutualisée entière.
-
-Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET**
-
-Port serveur entrant : Le port du serveur entrant :  **993**  ou  **143**
-
-Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET**
-
-Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
-
-Les ports  **143**  et  **587**  correspondent à la sécurisation SSL désactivée.
-
-Les ports  **993**  et  **465**  correspondent à la sécurisation SSL activée.
-
-- Vous devez obligatoirement activer [l'authentification](#parametres_des_comptes_parametres_du_serveur_sortant_smtp){.external} du serveur sortant SMTP.
-
-|Ports|SSL activé|SSL désactivé|
-|---|---|---|
-|Entrant|993|143|
-|Sortant|465|587|
 
 ## Aller plus loin
 

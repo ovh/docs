@@ -1,10 +1,10 @@
 ---
-title: 'Konfiguration des Exchange Accounts in Thunderbird für Windows'
-slug: exchange_20132016_konfiguration_in_thunderbird
+title: 'Konfiguration Ihrer Email Pro Adresse auf Thunderbird für Windows'
+slug: konfiguration-emailpro-thunderbird-windows
 routes:
     canonical: 'https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-windows/'
-excerpt: 'Erfahren Sie hier die Vorgehensweise zum Hinzufügen eines Exchange Accounts im Thunderbird Client'
-section: 'Konfiguration des Exchange E-Mail-Clients'
+excerpt: 'Hier finden Sie die Informationen zur Konfiguration Ihrer Email Pro Adresse auf Thunderbird.'
+section: 'Konfiguration des E-Mail-Clients'
 order: 5
 ---
 
@@ -16,9 +16,9 @@ order: 5
 
 ## Ziel
 
-Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden. Thunderbird ist ein freier E-Mail-Client.
+Email Pro Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden. Thunderbird ist ein freier E-Mail-Client.
 
-**Hier erfahren Sie, wie Sie Ihre Exchange Adresse auf Windows einrichten.**
+**Hier erfahren Sie, wie Sie Ihre Email Pro Adresse auf Windows einrichten.**
 
 > [!warning]
 >
@@ -29,7 +29,7 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Exchange Adresse](https://www.ovh.com/fr/emails/hosted-exchange/) .
+- Sie verfügen über eine [Email Pro Adresse](https://www.ovh.de/emails/email-pro/) .
 - Sie verfügen über das auf Windows installierte Thunderbird-Programm.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
  
@@ -37,9 +37,9 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 
 > [!warning]
 >
-> In unserem Beispiel verwenden wir den Servernamen: ex**?**.mail.ovh.net Ersetzen Sie das "? " durch die Zahl für den Server Ihres Exchange Dienstes.
+> In unserem Beispiel verwenden wir den Servernamen: pro**?**.mail.ovh.net Ersetzen Sie das "? " durch die Zahl für den Server Ihres Email Pro Dienstes.
 > 
-> Diese Zahl finden Sie in [Ihrem OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Kundencenter im Bereich `Web Cloud`{.action} und `Microsoft`{.action}/`Exchange`{.action}
+> Diese Zahl finden Sie in [Ihrem OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}  im Bereich `Web Cloud`{.action} und `Email Pro`{.action}
 > in der Spalte links. Den Servernamen sehen Sie im Rahmen  **Verbindung** des Tabs `Allgemeine Informationen`{.action}.
 > 
 
@@ -51,17 +51,17 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 
 | | |
 |---|---|
-|![Thunderbird](images/thunderbird-win-exchange01.png){.thumbnail}|Geben Sie im angezeigten Fenster die folgenden 3 Informationen ein: <br>- Ihr vollständiger Name (Anzeigename)<br>- E-Mail-Adresse <br>- Passwort.|
-|Klicken Sie anschließend auf `Manuell konfigurieren...`{.action} um die Einstellungen des **EINGEHEND** Servers einzugeben: <br>- Protokoll **IMAP** <br>- Server **ex?.mail.ovh.net** (ersetzen Sie gut "**?**"durch die Nummer Ihres Servers)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentifizierung **Normales Passwort** <br>- Kennung **Ihrer vollständigen E-Mail-Adresse**|![Thunderbird](images/thunderbird-win-exchange02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-exchange03.png){.thumbnail}|Geben Sie die Einstellungen des **AUSGEHEND** Servers an: <br>- Protokoll **SMTP** <br>- Server **ex?.mail.ovh.net** (ersetzen Sie gut "**?**"durch die Nummer Ihres Servers)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentifizierung **Normales Passwort** <br>- Kennung **Ihrer vollständigen E-Mail-Adresse**<br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Fertig`{.action}|
+|![Thunderbird](images/thunderbird-win-emailpro01.png){.thumbnail}|Geben Sie im angezeigten Fenster die folgenden 3 Informationen ein: <br>- Ihr vollständiger Name (Anzeigename)<br>- E-Mail-Adresse <br>- Passwort.|
+|Klicken Sie anschließend auf `Manuell konfigurieren...`{.action} um die Einstellungen des **EINGEHEND** Servers einzugeben: <br>- Protokoll **IMAP** <br>- Server **pro?.mail.ovh.net** (ersetzen Sie gut "**?**"durch die Nummer Ihres Servers)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentifizierung **Normales Passwort** <br>- Kennung **Ihrer vollständigen E-Mail-Adresse**|![Thunderbird](images/thunderbird-win-emailpro02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-emailpro03.png){.thumbnail}|Geben Sie die Einstellungen des **AUSGEHEND** Servers an: <br>- Protokoll **SMTP** <br>- Server **pro?.mail.ovh.net** (ersetzen Sie gut "**?**"durch die Nummer Ihres Servers)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentifizierung **Normales Passwort** <br>- Kennung **Ihrer vollständigen E-Mail-Adresse**<br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Fertig`{.action}|
 
 
 Bei einer **POP** Konfiguration ergeben sich folgende Werte:
 
 |Server-Typ|Servername|Verschlüsselungsmethode|Port|
 |---|---|---|---|
-|Eingangsserver|ex**?**.mail.ovh.net (Angabe **"?"** soll durch die Nummer Ihres Servers ersetzt werden)|SSL/TLS|995|
-|Ausgangsserver|ex**?**.mail.ovh.net (Angabe **"?"** soll durch die Nummer Ihres Servers ersetzt werden)|STARTTLS|587|
+|Eingangsserver|pro**?**.mail.ovh.net (Angabe **"?"** soll durch die Nummer Ihres Servers ersetzt werden)|SSL/TLS|995|
+|Ausgangsserver|pro**?**.mail.ovh.net (Angabe **"?"** soll durch die Nummer Ihres Servers ersetzt werden)|STARTTLS|587|
 
 ### E-Mail-Adresse verwenden
 
@@ -77,9 +77,9 @@ Wenn Sie eine Änderung vornehmen müssen, die den Verlust der Daten Ihres E-Mai
 
 > [!warning]
 >
-> In unserem Beispiel verwenden wir den Servernamen: ex**?**.mail.ovh.net Ersetzen Sie das "? " durch die Zahl für den Server Ihres Exchange Dienstes.
+> In unserem Beispiel verwenden wir den Servernamen: pro**?**.mail.ovh.net Ersetzen Sie das "? " durch die Zahl für den Server Ihres Email Pro Dienstes.
 > 
-> Diese Zahl finden Sie in [Ihrem OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Kundencenter im Bereich `Web Cloud`{.action} und `Microsoft`{.action}/`Exchange`{.action}
+> Diese Zahl finden Sie in [Ihrem OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}  im Bereich `Web Cloud`{.action} und `Email Pro`{.action}
 > in der Spalte links. Den Servernamen sehen Sie im Rahmen  **Verbindung** des Tabs `Allgemeine Informationen`{.action}.
 > 
 
@@ -88,16 +88,16 @@ Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Account-Einstel
 - Gehen Sie `über`{.action} die Menüleiste oben auf Ihrem Bildschirm in Werkzeuge.
 - Klicken Sie auf `Einstellungen der Accounts`{.action}.
 
-![Thunderbird](images/thunderbird-win-exchange04.png){.thumbnail}
+![Thunderbird](images/thunderbird-win-emailpro04.png){.thumbnail}
 
 - Um die Einstellungen für den **Empfang** Ihrer E-Mails zu ändern, klicken Sie in der linken `Spalte`{.action} unter Ihrer E-Mail-Adresse auf Server-Einstellungen.
 
-![Thunderbird](images/thunderbird-win-exchange05.png){.thumbnail}
+![Thunderbird](images/thunderbird-win-emailpro05.png){.thumbnail}
 
 - Um die Einstellungen für den **Versand** Ihrer E-Mails zu ändern, klicken Sie auf `Ausgangsserver (SMTP)`{.action} ganz unten in der linken Spalte.
 - Klicken Sie auf die entsprechende E-Mail-Adresse in der Liste und anschließend auf `Ändern`{.action}.
 
-![Thunderbird](images/thunderbird-win-exchange06.png){.thumbnail}
+![Thunderbird](images/thunderbird-win-emailpro06.png){.thumbnail}
 
 
 ## Weiterführende Informationen

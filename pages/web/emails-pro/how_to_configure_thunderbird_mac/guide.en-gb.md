@@ -1,20 +1,20 @@
 ---
-title: 'Configuring your Exchange account in Thunderbird for Windows'
-slug: exchange-configuration-thunderbird
+title: 'Configuring an Email Pro address on Thunderbird for macOS'
+slug: configure-emailpro-for-thunderbird-mac
 routes:
     canonical: 'https://https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/'
-excerpt: 'Find out how to add an Exchange account on Thunderbird'
-section: 'Email clients'
-order: 5
+excerpt: 'Find out how to configure your Email Pro address on Thunderbird for macOS'
+section: 'Email client configuration'
+order: 6
 ---
 
 **Last updated 26/08/2021**
 
 ## Objective
 
-You can configure Exchange accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application. Thunderbird is a free email client.
+You can configure Email Pro accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application. Thunderbird is a free email client.
 
-**Find out how to configure your Exchange  address on Thunderbird on Windows.**
+**Find out how to configure your Email Pro  address on Thunderbird on macOS.**
 
 > [!warning]
 >
@@ -25,17 +25,17 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- You must have an [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/)account.
-- Thunderbird software installed on your Windows system
+- You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro/)account.
+- Thunderbird software installed on your macOS system
 - You need to have the required credentials for the email address you would like to configure.
  
 ## Instructions
 
 > [!warning]
 >
-> In our example, we use the server comment: ex**?**.mail.ovh.net. You will need to replace the “?” by the number designating the server for your Exchange service.
+> In our example, we use the server comment: pro**?**.mail.ovh.net. You will need to replace the “?” by the number designating the server for your Email Pro service.
 > 
-> You can find this figure in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Web Cloud`{.action} section, then `Microsoft`{.action}/`Exchange`{.action}.
+> You can find this figure in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Web Cloud`{.action} section, then `Email Pro`{.action}
 > in the left-hand column. The server name is visible in the **Connection** box on the `General`{.action} Information tab.
 > 
 
@@ -47,9 +47,9 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 | | |
 |---|---|
-|![Thunderbird](images/thunderbird-win-exchange01.png){.thumbnail}|In the window that appears, enter the following 3 information: <br>- Your display name<br>- Email <br>- Password|
-|Then click `Configure manually...`{.action} to enter the **INCOMING** server settings: <br>- Protocol **IMAP** <br>- Server **ex?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentication **Normal password** <br>- Identifying **your full email address**|![Thunderbird](images/thunderbird-win-exchange02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-exchange03.png){.thumbnail}|Enter **OUTGOING** server settings: <br>- Protocol **SMTP** <br>- Server **ex?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentication **Normal password** <br>- Identifying **your full email address**<br><br>To complete the configuration, click `Done`{.action}|
+|![Thunderbird](images/thunderbird-mac-emailpro01.png){.thumbnail}|In the window that appears, enter the following 3 information: <br>- Your display name<br>- Email <br>- Password|
+|Then click `Configure manually...`{.action} to enter the **INCOMING** server settings: <br>- Protocol **IMAP** <br>- Server **pro?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentication **Normal password** <br>- Identifying **your full email address**|![Thunderbird](images/thunderbird-mac-emailpro02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-mac-emailpro03.png){.thumbnail}|Enter **OUTGOING** server settings: <br>- Protocol **SMTP** <br>- Server **pro?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentication **Normal password** <br>- Identifying **your full email address**<br><br>To complete the configuration, click `Done`{.action}|
 
 
 
@@ -57,8 +57,8 @@ For **POP** configuration, the values are:
 
 |Server type|Server name|Encryption method|Port|
 |---|---|---|---|
-|Incoming|ex**?**.mail.ovh.net (the word **?** should be replaced by your server number)|SSL/TLS|995|
-|Outgoing|ex**?**.mail.ovh.net (the word **?** should be replaced by your server number)|STARTTLS|587|
+|Incoming|pro**?**.mail.ovh.net (the word **?** should be replaced by your server number)|SSL/TLS|995|
+|Outgoing|pro**?**.mail.ovh.net (the word **?** should be replaced by your server number)|STARTTLS|587|
 
 ### Use email address
 
@@ -74,9 +74,9 @@ If you need to make a change that could lead to the loss of your email account d
 
 > [!warning]
 >
-> In our example, we use the server comment: ex**?**.mail.ovh.net. You will need to replace the “?” by the number designating the server for your Exchange service.
+> In our example, we use the server comment: pro**?**.mail.ovh.net. You will need to replace the “?” by the number designating the server for your Email Pro service.
 > 
-> You can find this figure in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Web Cloud`{.action} section, then `Microsoft`{.action}/`Exchange`{.action}.
+> You can find this figure in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Web Cloud`{.action} section, then `Email Pro`{.action}
 > in the left-hand column. The server name is visible in the **Connection** box on the `General`{.action} Information tab.
 > 
 
@@ -85,16 +85,16 @@ If your email account has already been set up and you need to access the account
 - Go to `Tools`{.action} from the menu bar at the top of your screen.
 - Click `Account`{.action} Settings.
 
-![Thunderbird](images/thunderbird-win-exchange04.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-emailpro04.png){.thumbnail}
 
 - To change the settings for **receiving** your emails, click `Server`{.action} settings in the left-hand column below your email address.
 
-![Thunderbird](images/thunderbird-win-exchange05.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-emailpro05.png){.thumbnail}
 
 - To change **the settings for sending** emails, click Outgoing `server (SMTP)`{.action} at the bottom of the left-hand column.
 - Click the email address in the list, and then click `Edit`{.action}.
 
-![Thunderbird](images/thunderbird-win-exchange06.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-emailpro06.png){.thumbnail}
 
 
 ## Go further

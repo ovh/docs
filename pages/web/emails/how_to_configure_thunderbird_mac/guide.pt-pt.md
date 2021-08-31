@@ -1,138 +1,87 @@
 ---
-title: 'Email Partilhado: guia de configuração para Thunderbird'
-excerpt: ''
+title: 'Configurar um endereço de e-mail no Thunderbird para macOS'
 slug: email_partilhado_guia_de_configuracao_para_thunderbird
-legacy_guide_number: g1911
+routes:
+    canonical: 'https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_thunderbird/'
+legacy_guide_number: g1297
+excerpt: 'Encontre aqui as informações para configurar o seu endereço de e-mail no Thunderbird.'
+section: Configuração num computador
+order: 5
 ---
 
+**Última atualização: 26/08/2021**
 
-## Parte 1: Início
-Num primeiro tempo aceda à aplicação "Thunderbird" instalada no seu computador.
+## Objetivo
 
-Eis a interface que irá aparecer por defeito caso ainda não possua nenhuma conta de e-mail configurada. Caso contrário, no menu poderá adicionar uma nova conta.
+As contas MX Plan podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir. A Thunderbird é um cliente de e-mails livre e gratuito.
 
-Selecione "Ignorar esta etapa e utilizar a minha conta existente" para continuar a instalação da conta.
+**Saiba como configurar o seu endereço de e-mail MX Plan no Thunderbird no macOS.**
 
-![](images/img_2856.jpg){.thumbnail}
+> [!warning]
+>
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+> 
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+> 
 
+## Requisitos
 
-## Parte 2: Criação da conta
-"O seu nome e apelido": introduza o nome desejado.
+- Ter um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external}).
+- Dispor do software Thunderbird instalado no seu macOS.
+- Dispor das credenciais do endereço de e-mail que pretende configurar.
+ 
+## Instruções
 
-"Endereço de e-mail": o seu endereço de e-mail completo.
+### Adicionar a conta
 
-Password: A password que definiu no [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para a conta de e-mail partilhada.
+- **Se for a primeira vez que utiliza a aplicação**, aparecerá um assistente de configuração que lhe irá solicitar o seu endereço de e-mail.
 
-"Guardar a password": deve selecionar esta opção.
+- **Se uma conta já estiver configurada**: clique em `Ficheiro`{.action} na barra de menu no topo do seu ecrã, depois em `Novo`{.action} e, por fim, em `Obter uma nova conta de correio...`{.action}.
 
-Clique em "Continuar" para finalizar as etapas da instalação.
-
-![](images/img_2857.jpg){.thumbnail}
-
-
-## Parte 3: Criação da conta (continuação)
-O Thunderbird recupera os parâmetros da conta de e-mail e propõe-lhe duas possíveis configurações: IMAP ou POP3.
-
-No nosso exemplo vamos configurar a conta como IMAP. É porém possível que a configure como POP, encontrando no final deste guias as informações necessárias para que configure a conta como POP3.
-
-Deve ter em conta que o Thunderbird propõe uma configuração manual.
-
-Clique em "Configuração Manual" para finalizar as etapas da instalação.
-
-![](images/img_2858.jpg){.thumbnail}
-
-
-## Parte 4: Configuração dos parâmetros do servidor
-Verifique que estes parâmetros são corretamente introduzidos:
-Na linha de servidor de receção:
-Servidor de receção: IMAP
-Nome do servidor: SSL0.OVH.NET
-Porta: 993
-SSL: SSL/TLS
-Autenticação: Palavra-passe normal
-
-![](images/img_2859.jpg){.thumbnail}
-Na linha do servidor de envio:
-Servidor de envio: IMAP
-Nome do servidor: SSL0.OVH.NET
-Porta: 465
-SSL: SSL/TLS
-Autenticação: Palavra-passe normal
-Identificador para envio & receção:  O seu endereço de email completo
-Clique em "Concluído" para finalizar a instalação
-
-
-## Parte 5: Parâmetros do servidor de envio & receção (SMTP)
-A conta foi agora adicionada e deverá verificar as os parâmetros do servidor.
-
-Clique em "Servidor de envio (SMTP)" para verificar as informações introduzidas para o servidor de envio.
-
-![](images/img_2860.jpg){.thumbnail}
-
-
-## Parte 5: Parâmetros do servidor de envio & receção (SMTP) .. continuação
-Eis os dados a inserir:
-Nome do servidor: SSL0.OVH.NET
-Porta: 465
-Segurança da ligação: SSL/TLS
-Autenticação: Palavra-passe normal
-Identificador para envio & receção:  O seu endereço de email completo
-
-Clique em "OK" para validar as definições SMTP.
-
-![](images/img_2861.jpg){.thumbnail}
-
-
-## Configuração POP
-Eis as informações a ter em conta para a configuração de uma conta de email POP.
-
-Configuração POP com encriptação SSL ativada ou SSL desativada : 
-
-Endereço de Email : O seu endereço de email completo.
-Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-Nome de utilizador : O seu endereço de email completo.
-Servidor de receção : Servidor de receção de emails : SSL0.OVH.NET
-Porta do servidor de receção : A porta : 995 ou 110
-Servidor de envio : O servidor deve ser : SSL0.OVH.NET
-Porta do servidor de envio: Use a porta: 465 ou 587
-
-As portas 110 e 587 correspondem à encriptação SSL desativada.
-As portas 995 e 465 correspondem à encriptação SSL ativada.
-
-
-- Deve obrigatoriamente ativar a [autenticação](#parametros_do_servidor_smtp) para o servidor SMTP.
-
-
-|Portas|SSLativado|SSLdesativado|
-|Receção|995|110|
-|Envio|465|587|
+| | |
+|---|---|
+|![Thunderbird](images/thunderbird-mac-mxplan01.png){.thumbnail}|Na nova janela, introduza as seguintes 3 informações: <br>- O seu nome completo (Nome de apresentação)<br>- Endereço eletrónico <br>- Palavra-passe.|
+|A seguir, clique em `Configurar manualmente...`{.action} para introduzir os parâmetros do servidor **ENTRAANT**: <br>- Protocolo **IMAP** <br>- Servidor **ssl0.ovh.net** <br>- Porta **993** <br>- SSL **SSL/TLS** <br>- Autenticação da **password normal** <br>- Identificar **o seu endereço de e-mail completo**|![Thunderbird](images/thunderbird-mac-mxplan02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-mac-mxplan03.png){.thumbnail}|Introduzir os parâmetros do servidor de **saída**: <br>- Protocolo **SMTP** <br>- Servidor **ssl0.ovh.net** <br>- Porta **465** <br>- SSL **SSL/TLS** <br>- Autenticação da **password normal** <br>- Identificar **o seu endereço de e-mail completo**<br><br>Para terminar a configuração, clique em `Terminado`{.action}|
 
 
 
+No âmbito de uma configuração em **POP**, os valores são os seguintes:
 
-## Configuração IMAP
-Eis as informações a ter em conta para a configuração de uma conta de email IMAP.
+|Tipo de servidor|Nome do servidor|Método de encriptação|Porta|
+|---|---|---|---|
+|Entrada|ssl0.ovh.net|SSL/TLS|995|
+|Saída|ssl0.ovh.net|SSL/TLS|465|
 
-Configuração IMAP com encriptação SSL ativada ou SSL desativada : 
+### Utilizar o endereço de e-mail
 
-Endereço de Email : O seu endereço de email completo.
-Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-Nome de utilizador : O seu endereço de email completo.
-Servidor de receção : Servidor de receção de emails : SSL0.OVH.NET
-Porta do servidor de receção : A porta : 993 ou 143
-Servidor de envio : O servidor deve ser : SSL0.OVH.NET
-Porta do servidor de envio: Use a porta: 465 ou 587
+Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-As portas 143 e 587 correspondem à encriptação SSL desativada.
-As portas 993 e 465 correspondem à encriptação SSL ativada.
+A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Consultar a sua conta Exchange a partir da interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/) ou [Utilizar o seu endereço de e-mail a partir do webmail RoundCube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/).
+
+### Recuperar um backup do seu endereço de e-mail
+
+Se tiver de efetuar uma operação suscetível de causar a perda dos dados da sua conta de e-mail, sugerimos que efetue uma cópia de segurança da conta de e-mail em questão. Para isso, consulte o parágrafo "**Exportar**" na secção "**Thunderbird**" do nosso guia [Migrar manualmente o seu endereço de e-mail](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/).
+
+### Modificar os parâmetros existentes
+
+Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros da conta para os alterar:
+
+- Aceda às `Ferramentas`{.action} a partir da barra de menu no topo do ecrã.
+- Clique em `Parâmetros das contas`{.action}.
+
+![Thunderbird](images/thunderbird-mac-mxplan04.png){.thumbnail}
+
+- Para alterar os parâmetros associados à **receção** dos seus e-mails, clique em `Parâmetros do servidor`{.action} na coluna da esquerda do seu endereço de e-mail.
+
+![Thunderbird](images/thunderbird-mac-mxplan05.png){.thumbnail}
+
+- Para modificar os parâmetros associados ao **envio** dos seus e-mails, clique em `Servidor de saída (SMTP)`{.action} no fundo da coluna da esquerda.
+- Clique no endereço de e-mail em questão na lista e, a seguir, em `Alterar`{.action}.
+
+![Thunderbird](images/thunderbird-mac-mxplan06.png){.thumbnail}
 
 
-- Deve obrigatoriamente ativar a [autenticação](#parametros_do_servidor_smtp) para o servidor SMTP.
+## Saiba mais
 
-
-|Portas|SSLativado|SSLdesativado|
-|Receção|993|143|
-|Envio|465|587|
-
-
-
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
