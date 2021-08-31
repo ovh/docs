@@ -67,6 +67,8 @@ Dès lors, sur la page de gestion des règles, vous avez la possibilité de :
 
 Lors de l'ajout d'une règle, vous devrez compléter les informations demandées puis cliquer sur `Add`{.action}.
 
+Dans notre exemple, nous allons autoriser la connexion SSH à l'instance.
+
 ![ajouter une règle](images/security-group4.png){.thumbnail}
 
 Une fois la nouvelle règle ajoutée, patientez quelques minutes le temps que celle-ci soit prise en compte.
