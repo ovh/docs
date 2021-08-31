@@ -6,7 +6,7 @@ section: User guides
 order: 0
 ---
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated 31<sup>st</sup> August, 2021.**
 
 
 ## Objective
@@ -29,7 +29,9 @@ You can find the detailed installation instructions for `kubectl` in Kubernetes'
 
 ### Step 1 - Configure the default settings for kubectl
 
-First, log in to the OVH Control Panel, open the 'Cloud' tab, and click on the 'Platforms and Services' menu:
+First, log in to the OVH Control Panel, open the 'Public Cloud' top tab, and click on the 'Managed Kubernetes Service' link under 'Containers & Orchestration' menu:
+
+Then, choose one of your Kubernetes cluster in the tab.
 
 ![Configuring default settings for kubectl](images/kubernetes-quickstart-01.png){.thumbnail}
 
