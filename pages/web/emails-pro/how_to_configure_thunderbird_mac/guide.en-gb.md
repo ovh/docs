@@ -1,6 +1,8 @@
 ---
 title: 'Configuring an Email Pro address on Thunderbird for macOS'
 slug: configure-emailpro-for-thunderbird-mac
+routes:
+    canonical: 'https://https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/'
 excerpt: 'Find out how to configure your Email Pro address on Thunderbird for macOS'
 section: 'Email client configuration'
 order: 6
@@ -23,7 +25,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro/).
+- You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro/)account.
 - Thunderbird software installed on your macOS system
 - You need to have the required credentials for the email address you would like to configure.
  

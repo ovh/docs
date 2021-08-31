@@ -3,8 +3,8 @@ title: Configurare un indirizzo email su Thunderbird per Windows
 slug: email_condivisa_guida_alla_configurazione_di_thundebird
 legacy_guide_number: g1297
 excerpt: Trovi qui le informazioni per configurare il tuo indirizzo email su Thunderbird.
-section: Windows
-order: 5
+section: Configurazione su computer
+order: 4
 ---
 
 > [!primary]

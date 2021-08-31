@@ -3,8 +3,8 @@ title: 'Konfiguracja konta e-mail w programie Thunderbird na urządzeniu z syste
 slug: konfiguracja_konta_e-mail_w_programie_thunderbird
 legacy_guide_number: g1297
 excerpt: 'Informacje dotyczące konfiguracji Twojego konta e-mail w programie Thunderbird znajdują się tutaj.'
-section: 'Windows'
-order: 5
+section: Konfiguracja na komputerze
+order: 4
 ---
 
 > [!primary]

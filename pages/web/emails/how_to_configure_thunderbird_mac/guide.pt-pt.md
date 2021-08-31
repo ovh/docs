@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_thunderbird/'
 legacy_guide_number: g1297
 excerpt: 'Encontre aqui as informações para configurar o seu endereço de e-mail no Thunderbird.'
-section: 'Apple'
+section: Configuração num computador
 order: 5
 ---
 

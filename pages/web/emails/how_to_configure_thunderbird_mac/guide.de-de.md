@@ -6,7 +6,7 @@ routes:
 legacy_guide_number: 1297
 excerpt: 'Hier finden Sie die Informationen zur Konfiguration Ihrer E-Mail-Adresse auf Thunderbird.'
 section: 'E-Mail Clients'
-order: 6
+order: 11
 ---
 
 > [!primary]

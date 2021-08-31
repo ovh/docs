@@ -3,8 +3,8 @@ title: 'Configurar um endereço de e-mail no Thunderbird para Windows'
 slug: e-mails_partilhados_guia_de_configuracao_para_o_thunderbird
 legacy_guide_number: g1297
 excerpt: 'Encontre aqui as informações para configurar o seu endereço de e-mail no Thunderbird.'
-section: 'Windows'
-order: 5
+section: Configuração num computador
+order: 4
 ---
 
 **Última atualização: 26/08/2021**

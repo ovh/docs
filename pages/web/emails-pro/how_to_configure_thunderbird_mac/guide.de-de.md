@@ -39,7 +39,7 @@ Email Pro Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingeric
 >
 > In unserem Beispiel verwenden wir den Servernamen: pro**?**.mail.ovh.net Ersetzen Sie das "? " durch die Zahl für den Server Ihres Email Pro Dienstes.
 > 
-> Diese Zahl finden Sie in [Ihrem OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Kundencenter im Bereich `Web Cloud`{.action} und `Email Pro`{.action}
+> Diese Zahl finden Sie in [Ihrem OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}  im Bereich `Web Cloud`{.action} und `Email Pro`{.action}
 > in der Spalte links. Den Servernamen sehen Sie im Rahmen  **Verbindung** des Tabs `Allgemeine Informationen`{.action}.
 > 
 
@@ -60,8 +60,8 @@ Bei einer **POP** Konfiguration ergeben sich folgende Werte:
 
 |Server-Typ|Servername|Verschlüsselungsmethode|Port|
 |---|---|---|---|
-|Eingangsserver|pro**?**.mail.ovh.net (Angabe**"?"** soll durch die Nummer Ihres Servers ersetzt werden)|SSL/TLS|995|
-|Ausgangsserver|pro**?**.mail.ovh.net (Angabe**"?"** soll durch die Nummer Ihres Servers ersetzt werden)|STARTTLS|587|
+|Eingangsserver|pro**?**.mail.ovh.net (Angabe **"?"** soll durch die Nummer Ihres Servers ersetzt werden)|SSL/TLS|995|
+|Ausgangsserver|pro**?**.mail.ovh.net (Angabe **"?"** soll durch die Nummer Ihres Servers ersetzt werden)|STARTTLS|587|
 
 ### E-Mail-Adresse verwenden
 
@@ -79,7 +79,7 @@ Wenn Sie eine Änderung vornehmen müssen, die den Verlust der Daten Ihres E-Mai
 >
 > In unserem Beispiel verwenden wir den Servernamen: pro**?**.mail.ovh.net Ersetzen Sie das "? " durch die Zahl für den Server Ihres Email Pro Dienstes.
 > 
-> Diese Zahl finden Sie in [Ihrem OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} Kundencenter im Bereich `Web Cloud`{.action} und `Email Pro`{.action}
+> Diese Zahl finden Sie in [Ihrem OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}  im Bereich `Web Cloud`{.action} und `Email Pro`{.action}
 > in der Spalte links. Den Servernamen sehen Sie im Rahmen  **Verbindung** des Tabs `Allgemeine Informationen`{.action}.
 > 
 

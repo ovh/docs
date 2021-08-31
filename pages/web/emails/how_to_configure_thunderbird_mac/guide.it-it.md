@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/'
 legacy_guide_number: g1297
 excerpt: Trovi qui le informazioni per configurare il tuo indirizzo email su Thunderbird.
-section: Apple
+section: Configurazione su computer
 order: 5
 ---
 

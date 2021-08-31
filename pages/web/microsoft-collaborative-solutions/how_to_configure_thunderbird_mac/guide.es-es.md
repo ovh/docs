@@ -1,11 +1,11 @@
 ---
-title: 'Configurar una cuenta Email Pro en Thunderbird para Windows'
-slug: configuracion-thunderbird-emailpro-windows
+title: 'Configurar una cuenta Exchange en Thunderbird para macOS'
+slug: exchange-configuracion-de-thunderbird-mac
 routes:
     canonical: 'https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/'
-excerpt: 'Cómo configurar una cuenta Email Pro en Thunderbird para Windows'
-section: Configuración del cliente de correo
-order: 5
+excerpt: 'Cómo configurar una cuenta Exchange en Thunderbird para macOS''.
+section: 'Configuración del cliente de correo Exchange'
+order: 6
 ---
 
 > [!primary]
@@ -16,9 +16,9 @@ order: 5
 
 ## Objetivo
 
-Es posible configurar sus cuentas Email Pro en el cliente de correo que usted utilice, siempre que sea compatible, para poder acceder a ellas desde cualquiera de sus dispositivos. Thunderbird es un cliente de correo libre y gratuito.
+Es posible configurar sus cuentas Exchange en el cliente de correo que usted utilice, siempre que sea compatible, para poder acceder a ellas desde cualquiera de sus dispositivos. Thunderbird es un cliente de correo libre y gratuito.
 
-**Esta guía explica cómo configurar una cuenta Email Pro en Thunderbird de Windows.**
+**Esta guía explica cómo configurar una cuenta Exchange en Thunderbird de macOS.**
 
 > [!warning]
 >
@@ -29,17 +29,17 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 ## Requisitos
 
-- Disponer de una cuenta [Email Pro](https://www.ovh.es/emails/email-pro/).
-- Tener Thunderbird instalado en su Windows.
+- Disponer de una cuenta [Exchange](https://www.ovh.es/emails/hosted-exchange/).
+- Tener Thunderbird instalado en su macOS.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
  
 ## Procedimiento
 
 > [!warning]
 >
-> En nuestro ejemplo, utilizamos el nombre del servidor: pro**?**.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Email Pro.
+> En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
 > 
-> Encontrará esta cifra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Email Pro.`{.action}
+> Encontrará esta cifra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}.
 > en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
 > 
 
@@ -51,18 +51,16 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 | | |
 |---|---|
-|![Thunderbird](images/thunderbird-win-emailpro01.png){.thumbnail}|En la nueva ventana, introduzca los siguientes 3 datos: <br>- Su nombre completo (Nombre mostrado)<br>- Dirección de correo electrónico <br>- Contraseña.|
-|Haga clic en `Configurar manualmente...`{.action} para introducir la configuración del servidor **ENTRANT**: <br>- Protocolo **IMAP** <br>- Servidor **pro?.mail.ovh.net** (sustituya "**?**" por el número del servidor)<br>- Puerto **993** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**|![Thunderbird](images/thunderbird-win-emailpro02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-emailpro03.png){.thumbnail}|Introduzca la configuración del servidor **SALIENTE**: <br>- Protocolo **SMTP** <br>- Servidor **pro?.mail.ovh.net** (sustituya "**?**" por el número del servidor)<br>- Puerto **587** <br>- SSL **STARTTLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**<br><br>Para finalizar la configuración, haga clic en `Finalizado.`{.action}|
-
-
+|![Thunderbird](images/thunderbird-mac-exchange01.png){.thumbnail}|En la nueva ventana, introduzca los siguientes 3 datos: <br>- Su nombre completo (Nombre mostrado)<br>- Dirección de correo electrónico <br>- Contraseña.|
+|Haga clic en `Configurar manualmente...`{.action} para introducir la configuración del servidor **ENTRANT**: <br>- Protocolo **IMAP** <br>- Servidor **ex?.mail.ovh.net** (sustituya "**?**" por el número del servidor)<br>- Puerto **993** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**|![Thunderbird](images/thunderbird-mac-exchange02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-mac-exchange03.png){.thumbnail}|Introduzca la configuración del servidor **SALIENTE**: <br>- Protocolo **SMTP** <br>- Servidor **ex?.mail.ovh.net** (sustituya "**?**" por el número del servidor)<br>- Puerto **587** <br>- SSL **STARTTLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**<br><br>Para finalizar la configuración, haga clic en `Finalizado.`{.action}|
 
 En una configuración en **POP**, los valores son los siguientes:
 
 |Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
 |---|---|---|---|
-|Entrante|pro**?***.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|995|
-|Saliente|pro**?***.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|STARTTLS|587|
+|Entrante|ex**?***.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|995|
+|Saliente|ex**?***.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|STARTTLS|587|
 
 ### Utilizar la dirección de correo
 
@@ -78,9 +76,9 @@ Si necesita realizar alguna operación que pueda provocar la pérdida de los dat
 
 > [!warning]
 >
-> En nuestro ejemplo, utilizamos el nombre del servidor: pro**?**.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Email Pro.
+> En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
 > 
-> Encontrará esta cifra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Email Pro.`{.action}
+> Encontrará esta cifra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}.
 > en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
 > 
 
@@ -89,16 +87,16 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 - Vaya a `Herramientas`{.action} desde la barra de menú situada en la parte superior de su pantalla.
 - Haga clic en `Configuración de las cuentas`{.action}.
 
-![Thunderbird](images/thunderbird-win-emailpro04.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-exchange04.png){.thumbnail}
 
 - Para cambiar los parámetros de **recepción** de los mensajes de correo, haga clic en `Configuración del servidor`{.action} en la columna izquierda, bajo su dirección de correo electrónico.
 
-![Thunderbird](images/thunderbird-win-emailpro05.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-exchange05.png){.thumbnail}
 
 - Para cambiar la configuración **del envío** de mensajes de correo, haga clic en `Servidor de salida (SMTP)`{.action} situado en la columna izquierda.
 - Haga clic en la dirección de correo electrónico correspondiente en la lista y, seguidamente, en `Modificar`{.action}.
 
-![Thunderbird](images/thunderbird-win-emailpro06.png){.thumbnail}
+![Thunderbird](images/thunderbird-mac-exchange06.png){.thumbnail}
 
 
 ## Más información

@@ -4,7 +4,7 @@ slug: konfiguration-email-thunderbird-windows
 legacy_guide_number: 1297
 excerpt: 'Hier finden Sie die Informationen zur Konfiguration Ihrer E-Mail-Adresse auf Thunderbird.'
 section: 'E-Mail Clients'
-order: 5
+order: 10
 ---
 
 > [!primary]
