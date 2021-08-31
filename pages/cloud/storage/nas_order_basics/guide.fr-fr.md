@@ -44,7 +44,7 @@ Pour modifier la taille d'une partition, cliquez sur le bouton `(...)`{.action} 
 
 Indiquez la nouvelle taille, puis validez.
 
-#### Modifier la fréquence des snapshots
+### Modifier la fréquence des snapshots
 
 Par défaut, un snapshot du contenu de votre NAS a lieu toutes les heures, et s'enregistre sur votre NAS.
 
@@ -64,7 +64,7 @@ En dehors des snapshots réalisés automatiquement, vous pouvez à tout moment c
 
 Nommez le snapshot et cliquez sur `Ajouter`{.action}
 
-#### Ajouter un accès
+### Ajouter un accès
 
 Afin de pouvoir accéder à la partition que vous avez créée précédemment, vous devez configurer un accès.
 
