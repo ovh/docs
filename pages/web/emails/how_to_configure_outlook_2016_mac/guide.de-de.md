@@ -1,7 +1,7 @@
 ---
-title: 'Konfiguration Ihrer E-Mail-Adresse auf Outlook 2016 für Mac'
+title: 'Konfiguration Ihrer E-Mail-Adresse auf Outlook für macOS'
 slug: konfiguration-outlook-2016-mac
-excerpt: 'So konfigurieren Sie Ihre MX Plan E-Mail-Adresse auf Outlook 2016 für Mac'
+excerpt: 'So konfigurieren Sie Ihre MX Plan E-Mail-Adresse auf Outlook 2016 für macOS'
 section: 'E-Mail Clients'
 order: 4
 ---

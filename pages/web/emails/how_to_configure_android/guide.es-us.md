@@ -2,7 +2,8 @@
 title: 'Configurar una cuenta de correo electrónico en Android utilizando la aplicación Gmail'
 slug: configuracion-android
 excerpt: 'Cómo configurar una cuenta MX Plan en Android utilizando la aplicación Gmail'
-section: Android
+section: Configuración en el smartphone
+order: 02
 ---
 
 **Última actualización: 05/05/2020**

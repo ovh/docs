@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak zainstalować autoresponder e-mail'
 slug: przewodnik_dotyczacy_aktywacji_autorespondera
 legacy_guide_number: g2052
 section: 'Funkcjonalności kont e-mail'
+order: 02
 ---
 
 > [!primary]

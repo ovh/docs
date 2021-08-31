@@ -4,6 +4,7 @@ excerpt: 'Konfiguracja na tablecie Android 4.1.2'
 slug: hosting_www_konfiguracja_na_tablecie_android_412
 legacy_guide_number: g1283
 section: 'Konfiguracja na smartfonie'
+hidden: true
 ---
 
 ## Część 1: E-mail

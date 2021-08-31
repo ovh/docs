@@ -3,7 +3,8 @@ title: 'Webmail: Guía de uso de Roundcube'
 excerpt: ''
 slug: webmail_guia_de_uso_de_roundcube
 legacy_guide_number: g1302
-section: Herramientas
+section: Primeros pasos
+order: 05
 ---
 
 

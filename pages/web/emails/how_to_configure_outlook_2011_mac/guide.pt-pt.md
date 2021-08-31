@@ -3,6 +3,7 @@ title: 'Mail partilhado: Guia de configuração do Outlook 2011 no Mac'
 excerpt: Configuração do Outlook 2011 no MAc
 slug: mail_partilhado_guia_de_configuracao_do_outlook_2011_no_mac
 legacy_guide_number: g1345
+hidden: true
 ---
 
 

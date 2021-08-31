@@ -4,6 +4,7 @@ excerpt: ''
 slug: correo_guia_de_configuracion_en_windows_mail
 legacy_guide_number: g1300
 section: Windows
+hidden: true
 ---
 
 

@@ -3,6 +3,7 @@ title: 'E-Mail Partilhado: Guia de configuração de um smarpthone com Android 5
 excerpt: Guia de configuração de um smartphone com Android 5.1
 slug: e-mail_partilhado_guia_de_configuracao_de_um_smarpthone_com_android_51
 legacy_guide_number: g1912
+hidden: true
 ---
 
 

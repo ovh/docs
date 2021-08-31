@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak utworzyć i skonfigurować filtr na Twoim koncie e-m
 slug: hosting_www_konfiguracja_filtrow_e-mail_w_panelu_klienta
 legacy_guide_number: g1973
 section: 'Funkcjonalności kont e-mail'
+order: 04
 ---
 
 > [!primary]

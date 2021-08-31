@@ -3,7 +3,7 @@ title: 'Managing and using mailing lists'
 slug: guide-dutilisation-mailing-list
 excerpt: 'Find out how to use mailing lists'
 section: 'Email address features'
-order: 2
+order: 03
 ---
 
 **Last updated 19th March 2020**

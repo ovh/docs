@@ -46,7 +46,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 
 ### Etap 1: weryfikacja informacji związanych z domeną
 
-**W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych widocznych w bazie "Whois". Sugerujemy zatem sprawdzenie informacji dotyczących Twojej domeny u aktualnego operatora.
+**W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych jest widocznych w bazie "Whois". Sugerujemy zatem sprawdzenie informacji dotyczących Twojej domeny u aktualnego operatora.
 
 - **Jeśli informacje są poprawne: przejdź do kolejnego etapu niniejszego przewodnika.**
 

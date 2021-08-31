@@ -4,6 +4,7 @@ excerpt: Cómo reaccionar ante un fallo de funcionamiento en el envío o recepci
 slug: uso_avanzado_del_correo_de_ovh
 legacy_guide_number: g2117
 section: Diagnóstico
+order: 02
 ---
 
 > [!primary]

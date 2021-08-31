@@ -3,7 +3,7 @@ title: 'Passwort einer MX Plan E-Mail-Adresse ändern'
 slug: passwort-e-mail-adresse-aendern
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie das Passwort einer E-Mail-Adresse ändern, die Sie in Ihrem MX Plan Account angelegt haben.'
 section: 'Erste Schritte'
-order: 3
+order: 03
 ---
 
 **Stand 01.07.2019**

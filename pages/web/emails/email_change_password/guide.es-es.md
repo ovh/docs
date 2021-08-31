@@ -3,7 +3,7 @@ title: 'Cambiar la contraseña de una dirección de correo MX Plan'
 slug: cambiar-contrasena-direccion-correo
 excerpt: 'Cómo cambiar la contraseña de una dirección de correo electrónico de la solución MX Plan'
 section: 'Primeros pasos'
-order: 3
+order: 03
 ---
 
 **Última actualización: 17/05/2019**

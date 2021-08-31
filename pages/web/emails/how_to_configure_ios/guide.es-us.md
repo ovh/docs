@@ -2,7 +2,8 @@
 title: 'Configurar una cuenta de correo electrónico en iPhone o iPad'
 excerpt: 'Cómo configurar una cuenta de correo electrónico en un iPhone o iPad'
 slug: correo_guia_de_configuracion_en_iphone_ios_91
-section: Apple
+section: Configuración en el smartphone
+order: 01
 ---
 
 > [!primary]
