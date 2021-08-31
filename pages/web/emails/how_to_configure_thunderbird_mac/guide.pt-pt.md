@@ -6,7 +6,7 @@ routes:
 legacy_guide_number: g1297
 excerpt: 'Encontre aqui as informações para configurar o seu endereço de e-mail no Thunderbird.'
 section: Configuração num computador
-order: 5
+order: 05
 ---
 
 **Última atualização: 26/08/2021**

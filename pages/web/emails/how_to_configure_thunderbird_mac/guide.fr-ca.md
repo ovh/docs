@@ -6,7 +6,7 @@ routes:
     canonical: 'https://docs.ovh.com/ca/fr/emails/configuration-email-configuration-pour-thunderbird/'
 excerpt: 'Découvrez comment configurer votre adresse e-mail MX Plan sur Thunderbird sur Mac OS'
 Section: 'Configuration sur ordinateur'
-order: 6
+order: 05
 ---
 
 **Dernière mise à jour le 17/08/2021**
