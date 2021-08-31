@@ -147,7 +147,7 @@ Un redémarrage peut être nécessaire pour appliquer des configurations mises �
 reboot
 ```
 
-Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sous l'onglet `Accueil`{.action}, cliquez sur `Rédamarrer mon VPS`{.action}  puis sur `Confirmer`{.action} dans la fenêtre contextuelle.
+Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Sous l'onglet `Accueil`{.action}, cliquez sur `Rédamarrer mon VPS`{.action}  puis sur `Confirmer`{.action} dans la fenêtre contextuelle.
 
 ![Reboot](images/reboot-vps-older.png){.thumbnail}
 

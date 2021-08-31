@@ -6,7 +6,7 @@ section: 'Numéros ou alias'
 order: 7
 ---
 
-**Dernière mise à jour le 07/06/2021**
+**Dernière mise à jour le 25/08/2021**
 
 ## Objectif
 
@@ -62,7 +62,7 @@ Le plan de configuration contient différents menus.
 |Menu du numéro|Menu de la configuration|Menu d'étape|
 |---|---|---|
 |![menu numéro](images/menu-numero2021.png){.thumbnail}|![menu configuration](images/menu-configuration2021.png){.thumbnail}|![menu étape](images/menu-etape2021.png){.thumbnail}|
-|Permet de gérer les options principales de la configuration.|Permet de gérer les étapes du plan ainsi que les options d'affichage des appels.|Permet d'ajouter des actions au sein d'une étape ainsi que des conditions d'exécution de l'étape.|
+|Permet de gérer les options principales de la configuration.|Permet de gérer les étapes du plan ainsi que les [options des appels](#options).|Permet d'ajouter des actions au sein d'une étape ainsi que des conditions d'exécution de l'étape.|
 
 Les étapes décrites dans ce guide permettent d'aboutir à la création d'une configuration complète.
 
@@ -314,6 +314,29 @@ Une fois que vous avez sélectionné la liste que vous souhaitez utiliser, compl
 Pour enregistrer vos modifications, cliquez sur `Modifier`{.action}.
 
 ![CCS configuration](images/filtrages2021.png){.thumbnail}
+
+### Gérer les options du CCS <a name="options"></a>
+
+Des options supplémentaires sont disponibles en cliquant sur le bouton `(...)`{.action} du menu de la configuration :
+
+![Optionsccs](images/modifieroption.png){.thumbnail}
+
+Les options disponibles dans ce menu vous permettent de :
+
+- modifier le nom du CCS.
+- gérer le timeout de transfert d'appel vers une ligne externe (ici exprimé en secondes). Lorsque votre configuration comporte un transfert vers une ligne externe, si cette ligne ne décroche pas avant la durée définie dans ce champ, l'appel passera à l'étape suivante de la configuration.
+- gérer la présentation du numéro de vos appelants.
+- accepter ou refus les appels masqués (anonymes).
+
+![Optionsccs](images/optionsccs.png){.thumbnail}
+
+Trois options de présentation du numéro, sur le téléphone qui reçoit l'appel, sont possibles :
+
+- présenter le numéro de l'appelant;
+- présenter le numéro du CCS, c'est à dire le numéro alias qui a été composé par l'appelant, ce qui peut être utile si vous possédez plusieurs numéros alias configurés;
+- présenter les deux numéros, celui de l'appelant et celui du CCS.
+
+![Optionsccs](images/numeropres2.png){.thumbnail}
 
 ### Consulter le tableau de bord <a name="tableau-de-bord"></a>
 

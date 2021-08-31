@@ -4,6 +4,7 @@ slug: first-login
 legacy_guide_number: 1787
 excerpt: 'This guide will explain how to log in to your OVH Public Cloud instances using Windows and Linux'
 section: 'Getting started'
+hidden: true
 ---
 
 **Last updated 5th October 2018**

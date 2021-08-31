@@ -5,14 +5,15 @@ slug: zmienne-srodowiskowe-openstack
 section: 'Zarządzanie w OpenStack CLI'
 ---
 
-**Ostatnia aktualizacja z dnia 20-11-2019**
+**Ostatnia aktualizacja z dnia 18-08-2021**
 
 ## Wprowadzenie
 
 Pobranie zmiennych środowiskowych OpenStack na Twoje stanowisko umożliwi Ci korzystanie z interfejsu API OpenStack i zastosowanie go do zarządzania infrastrukturą.
 
-
 ## Wymagania początkowe
+
+- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Utworzenie użytkownika OpenStack. Informacje na ten temat znajdziesz [w tym przewodniku](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/#tworzenie-konta-uzytkownika-openstack)
 - Przygotowanie środowiska do korzystania z OpenStack. Informacje na ten temat znajdziesz w tym przewodniku: [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/)
 
@@ -22,9 +23,10 @@ Pobranie zmiennych środowiskowych OpenStack na Twoje stanowisko umożliwi Ci ko
 
 Aby zgromadzić zmienne środowiskowe, możesz pobrać utworzony wcześniej plik OpenRC użytkownika OpenStack.
 
-W tym celu przejdź do rubryki `Users & Roles`{.action}, po prawej stronie nazwy użytkownika kliknij symbol `...`{.action} i wybierz pozycję `Pobierz plik RC OpenStack`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Public Cloud`{.action} i wybierz Twój projekt Public Cloud na górze po lewej stronie.
+<br> W rubryce `Project Management` kliknij `Users & Roles`{.action}, po prawej stronie nazwy użytkownika kliknij symbol `...`{.action} i wybierz pozycję `Pobierz plik RC OpenStack`{.action}.
 
-![openstack-variables](images/pciopenstackvariables1.png){.thumbnail}
+![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
 
 Plik OpenRC odpowiada użytkownikowi, a także strefie. Nie można zarządzać kilkoma strefami w jednym pliku.
 

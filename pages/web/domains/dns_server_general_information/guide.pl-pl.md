@@ -69,6 +69,10 @@ Przed rozpoczęciem operacji zaloguj się do [Panelu klienta OVHcloud](https://w
 
 Pojawi się tabela wyszczególniająca serwery DNS aktualnie zdefiniowane przez OVHcloud dla Twojej domeny. Może pojawić się kilka serwerów DNS, przy czym jeden serwer odpowiada jednej linii w tabeli. 
 
+> [!primary]
+>
+> Jeśli używasz serwerów DNS OVHcloud, numery serwerów nie mają żadnego związku z Twoją usługą lub usługami. Tylko opcja [DNS anycast](https://www.ovh.pl/domeny/dns-anycast/) wykorzystuje przydzielone automatycznie serwery DNS.
+
 ![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
 ### Zmień serwery DNS

@@ -5,7 +5,11 @@ slug: informacje-o-uzytkownikach-sms
 section: 'Zarządzanie ofertą'
 ---
 
-**Ostatnia aktualizacja z dnia 19-11-2019** 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 26-08-2021** 
 
 ## Wprowadzenie
 
@@ -14,7 +18,7 @@ Niniejszy przewodnik wyjaśnia, jak tworzyć użytkowników API i zarządzać ni
 ## Wymagania początkowe
 
 - Posiadanie aktywnego konta SMS OVHcloud
-- Dostęp do Panelu klienta OVHcloud
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -39,38 +43,33 @@ Aby jak najlepiej zarządzać zasileniami konta SMS, możesz ustalić ograniczen
 
 ### Etap 1: utworzenie użytkownika API
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz opcję `Telecom`{.action} (1). Następnie kliknij pozycję `SMS`{.action} po lewej stronie (2) i wybierz Twoje konto SMS (3).
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz opcję `Telecom`{.action} (1). Następnie kliknij pozycję `SMS`{.action} po lewej stronie i wybierz Twoje konto SMS (2).
 
-Teraz kliknij kartę `Użytkownicy API`{.action} (4).
+Teraz kliknij kartę `Użytkownicy API`{.action} (3). Aby dodać użytkownika, kliknij przycisk `Działania`{.action}, a następnie `Dodaj`{.action} (4).
 
-![sms-users](images/smsusers01e.png){.thumbnail}
-
-Aby dodać użytkownika, kliknij przycisk `Działania`{.action}, a następnie `Dodaj`{.action}. 
-
-![sms-users](images/smsusers02e.png){.thumbnail}
+![sms-users](images/smsusers01e-2021.png){.thumbnail}
 
 Użytkownikowi API można nadać dowolną nazwę. Hasło użytkownika API musi składać się z 8 znaków alfanumerycznych. 
-
 
 ### Etap 2: przypisywanie limitu użytkownikowi API
 
 Limitami możesz zarządzać z poziomu karty `Użytkownicy API`{.action}. Obok wybranego użytkownika kliknij pozycję `...`{.action}, a następnie `Limity`{.action}.
 
-![sms-users](images/smsusers03e.png){.thumbnail}
+![sms-users](images/smsusers03e-2021.png){.thumbnail}
 
 Teraz możesz wykonać dwa działania.
 
 - **Aktywować limit?**: pozwala określić, czy dany użytkownik podlega limitom.
 - **Nowy limit**: pozwala ustalić limit obowiązujący danego użytkownika. Po osiągnięciu tego limitu możliwość wysyłania wiadomości SMS przez tego użytkownika zostanie zablokowana.
 
-![sms-users](images/smsusers04.png){.thumbnail}
+![sms-users](images/smsusers04-2021.png){.thumbnail}
 
 > [!primary]
-> 
+>
 > Przypisanie limitu do użytkownika API spowoduje zmniejszenie stanu zasileń konta SMS o wartość limitu.
 >
 > Przykład: na koncie SMS jest do dyspozycji 200 zasileń. Przydzielenie użytkownikowi API 150 zasileń spowoduje potrącenie tej liczby z konta SMS, na którym zostanie już tylko 50 zasileń.
-> 
+>
 
 ### Etap 3: przypisywanie progu alertu użytkownikowi API
 
@@ -82,13 +81,12 @@ Dostępne są następujące parametry:
 - **Próg alertu**: określa poziom pozostałych zasileń SMS, po osiągnięciu którego wysyłane jest powiadomienie.
 - **Powiadomienie**: pozwala wybrać rodzaj powiadomienia, tzn. e-mail (należy podać adres e-mail), wiadomość SMS (należy podać numer telefonu w formacie międzynarodowym) lub obie formy.
 
-> [!primary]
->
->Wysłanie powiadomienia przez wiadomość SMS zostanie odliczone od Twojego stanu zasileń SMS.
->
+![sms-users](images/smsusers05-2021.png){.thumbnail}
 
-![sms-users](images/smsusers05.png){.thumbnail}
-
+> [!warning]
+>
+> Wysłanie powiadomienia przez wiadomość SMS zostanie odliczone od Twojego stanu zasileń SMS.
+>
 
 ### Etap 4: określanie ograniczenia funkcji http2sms dla adresu IP
 
@@ -98,7 +96,7 @@ Aby aktywować funkcję, po prawej stronie użytkownika kliknij pozycję `...`{.
 
 Możesz wprowadzić do 5 różnych publicznych adresów IP dla wysyłania zapytań https.
 
-![sms-users](images/smsusers06.png){.thumbnail}
+![sms-users](images/smsusers06-2021.png){.thumbnail}
 
 Aby uzyskać więcej informacji na temat funkcji http2sms, przeczytaj przewodnik [Wysyłanie wiadomości SMS z adresu URL](../wysylanie-wiadomosci-sms-z-adresu-url-http2sms/).
 
@@ -106,7 +104,7 @@ Aby uzyskać więcej informacji na temat funkcji http2sms, przeczytaj przewodnik
 
 Aby monitorować potwierdzenia odbioru wiadomości SMS (Delivery reporting lub DLR), można określić adres URL wywołania zwrotnego, po prawej stronie użytkownika klikając pozycję `...`{.action}, a następnie `Wywołanie zwrotne`{.action}.
 
-![sms-users](images/smsusers07.png){.thumbnail}
+![sms-users](images/smsusers07-2021.png){.thumbnail}
 
 Gdy status wysyłki wiadomości SMS zostanie zaktualizowany, wywołamy określony adres URL. Poniższe wartości są automatycznie wstawiane w ciągu zapytania:
 
@@ -116,7 +114,18 @@ Gdy status wysyłki wiadomości SMS zostanie zaktualizowany, wywołamy określon
 - description: identyfikator raportu DLR; Różne identyfikatory zostały opisane w drugiej tabeli poniżej.
 - descriptionDlr: opis statusu raportu DLR.
 
-**Różne kody ptt**
+#### Różne kody ptt
+
+Aby uzyskać opis określonego kodu ptt, możesz użyć następującego API:
+
+> [!api]
+>
+> @api {GET} /sms/ptts
+>
+
+Aby uzyskać więcej informacji na temat korzystania z API OVHcloud, zapoznaj się z naszym przewodnikiem [Pierwsze kroki z API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN).
+
+Poniższa tabela zawiera niewyczerpującą listę głównych kodów ptt.
 
 |Status|Opis|
 |---|---|
@@ -143,7 +152,7 @@ Gdy status wysyłki wiadomości SMS zostanie zaktualizowany, wywołamy określon
 |76|Wysłanie wiadomości nie powiodło się, ponieważ przeniesione kombinacje są zablokowane dla klienta (klient został umieszczony na czarnej liście przeniesionej lokalizacji docelowej) (The message was failed due to the ported combinations being blocked for client (the client has been blacklisted from the ported destination)).|
 |202|Wysłanie wiadomości nie powiodło się, ponieważ przeniesione kombinacje są zablokowane dla klienta. Skontaktuj się z obsługą klienta, aby uzyskać więcej informacji (The message was failed due to the ported combinations being blocked for the client. Please contact Client Support for additional information).|
 
-**Różne identyfikatory raportu DLR**
+#### Różne identyfikatory raportu DLR
 
 |Status|Opis|
 |---|---|

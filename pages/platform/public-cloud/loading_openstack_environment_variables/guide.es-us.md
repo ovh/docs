@@ -6,14 +6,15 @@ legacy_guide_number: 1852
 section: OpenStack
 ---
 
-**Última actualización: 20/11/2019**
+**Última actualización: 18/08/2021**
 
 ## Objetivo
 
 Cambiar las variables de entorno necesarias para OpenStack en su equipo le permitirá utilizar la API de OpenStack y, así, gestionar su infraestructura desde esta.
 
-
 ## Requisitos
+
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Haber creado un usuario de OpenStack. Consulte [la guía dedicada a este tema](../crear_un_acceso_a_horizon/#crear-un-usuario-openstack)
 - Haber preparado el entorno para utilizar OpenStack. Para ello, consulte la siguiente guía: [«Preparar el entorno para utilizar la API de OpenStack»](../preparar_el_entorno_para_utilizar_la_api_de_openstack/)
 
@@ -23,9 +24,11 @@ Cambiar las variables de entorno necesarias para OpenStack en su equipo le permi
 
 Para obtener sus variables de entorno, puede descargar el archivo OpenRC de su usuario OpenStack previamente creado.
 
-Para ello, acceda a la sección `«Usuarios y roles»`{.action}, haga clic en `«...»`{.action} a la derecha de su usuario y seleccione `«Descargar el archivo RC de OpenStack»`{.action}.
+Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione su proyecto de Public Cloud.
 
-![openstack-variables](images/pciopenstackvariables1.png){.thumbnail}
+En el apartado `Project Management`, haga clic en `Users & roles`{.action}, haga clic en `«...»`{.action} a la derecha de su usuario y seleccione `«Descargar el archivo RC de OpenStack»`{.action}.
+
+![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
 
 Un archivo OpenRC corresponde tanto a un usuario como a una zona. No puede gestionar varias zonas en un mismo archivo.
 

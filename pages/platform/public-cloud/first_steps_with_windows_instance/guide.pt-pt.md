@@ -80,7 +80,7 @@ Para evitar este comportamento, pode desativar a segurança reforçada a partir 
 
 ## Quer saber mais?
 
-[Acesso e segurança na interface Horizon](https://docs.ovh.com/pt/public-cloud/acesso_e_seguranca_na_interface_horizon/){.external}
+[Acesso e segurança na interface Horizon](https://docs.ovh.com/pt/public-cloud/gestao-a-partir-do-horizon/){.external}
 
 [Aceder à consola de uma instância na interface Horizon](https://docs.ovh.com/pt/public-cloud/aceder_a_consola_de_uma_instancia_na_interface_horizon/){.external}
 

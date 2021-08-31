@@ -70,6 +70,10 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Visualizzi una tabella con tutti i server DNS OVHcloud configurati per il tuo dominio. A ogni riga corrisponde un server DNS. 
 
+> [!primary]
+>
+> Quando utilizzi i server DNS OVHcloud, i numeri dei server non hanno alcun legame con i servizi che utilizzi. Solo l'opzione [DNS anycast](https://www.ovh.it/domini/dns-anycast/) utilizza server DNS specifici che ti vengono automaticamente attribuiti.
+
 ![dns server](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
 ### Modifica i server DNS

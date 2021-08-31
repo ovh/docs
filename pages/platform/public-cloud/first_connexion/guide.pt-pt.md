@@ -4,6 +4,7 @@ slug: primeira-conexao
 legacy_guide_number: 1787
 excerpt: 'Descubra como conectar-se a uma instância Public Cloud'
 section: Introdução
+hidden: true
 ---
 
 **Última atualização: 6 de dezembro de 2019**

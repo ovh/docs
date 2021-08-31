@@ -1,22 +1,22 @@
 ---
 title: 'Filtrer et renvoyer ses appels'
 slug: comment-configurer-les-renvois-d-appels
-excerpt: 'Découvrez comment filtrer et renvoyer les appels entrants et sortants de votre ligne SIP OVH'
+excerpt: 'Découvrez comment filtrer et renvoyer les appels entrants et sortants de votre ligne SIP OVHcloud'
 section: 'Lignes téléphoniques'
 ---
 
-**Dernière mise à jour le 09/08/2018**
+**Dernière mise à jour le 18/08/2021**
 
 ## Objectif
 
-Votre ligne SIP OVH vous permet de recevoir et d'émettre des appels. Pour diverses raisons, comme vos disponibilités, vous pouvez être amené à devoir filtrer et/ou renvoyer les appels entrants et sortants. Ceci passe par la mise en place de trois solutions : le verrouillage des appels sortants, les renvois d'appel et le filtrage d'appels.
+Votre ligne SIP OVHcloud vous permet de recevoir et d'émettre des appels. Pour diverses raisons, comme vos disponibilités, vous pouvez être amené à devoir filtrer et/ou renvoyer les appels entrants et sortants. Ceci passe par la mise en place de trois solutions : le verrouillage des appels sortants, les renvois d'appel et le filtrage d'appels.
 
-**Découvrez comment filtrer et renvoyer les appels entrants et sortants de votre ligne SIP OVH.**
+**Découvrez comment filtrer et renvoyer les appels entrants et sortants de votre ligne SIP OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'une [ligne SIP OVH](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
-- Disposer d'un accès à la gestion de la ligne SIP concernée depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Disposer d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
+- Disposer d'un accès à la gestion de la ligne SIP concernée depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
 ## En pratique
 
@@ -36,13 +36,13 @@ Poursuivez la lecture de cette documentation en fonction de la solution que vous
 
 ### Activer le verrouillage des appels sortants
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Verrouillage des appels sortants`{.action}.
 
 ![gerer-appels-verrouillage](images/manage-calls-locking-step1.png){.thumbnail}
 
-Sur la page qui s'affiche, cochez la case `Activer le verrouillage`{.action} et renseignez un code à 4 chiffres. Celui-ci vous permettra d'émettre tout de même des appels sortants depuis la ligne que vous verrouillez. 
+Sur la page qui s'affiche, cochez la case `Activer le verrouillage`{.action} et renseignez un code à 4 chiffres. Celui-ci vous permettra d'émettre tout de même des appels sortants depuis la ligne que vous verrouillez.
 
 Vous avez la possibilité d'appliquer ce verrouillage à plusieurs lignes grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez finalement sur le bouton `Valider`{.action} pour appliquer la nouvelle configuration.
 
@@ -50,7 +50,12 @@ Vous avez la possibilité d'appliquer ce verrouillage à plusieurs lignes grâce
 
 ### Activer le renvoi d'appel
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
+> [!primary]
+>
+> Si vous souhaitez renvoyer les appels **en fonction de plages horaires**, consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](../configurer-plages-horaires-fermetures-exceptionnelles-ligne/)».
+>
+
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Renvoi d'appel`{.action}.
 
@@ -70,7 +75,7 @@ Pour activer une configuration, cochez la case à côté de cette dernière puis
 |Renvoyer vers un|Description|
 |---|---|  
 |Fax|Il s'agit du service fax. Cette fonctionnalité est réservée aux offres Fax.|
-|Numéro hors OVH|Permet de renvoyer l'appel vers un numéro hors OVH. Sachez que les communications vers un numéro non enregistré chez OVH seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](https://www.ovhtelecom.fr/telephonie/voip/){.external} (voir la note en bas de page) et [les tarifs en vigueur](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml){.external}.|
+|Numéro hors OVHcloud|Permet de renvoyer l'appel vers un numéro hors OVHcloud. Sachez que les communications vers un numéro non enregistré chez OVHcloud seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](https://www.ovhtelecom.fr/telephonie/voip/){.external} (voir la note en bas de page) et [les tarifs en vigueur](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml){.external}.|
 |Répondeur|Permet de renvoyer l'appel vers la boîte vocale d'une des lignes présentes dans votre parc téléphonique.|
 |Téléphone|Permet de renvoyer l'appel vers une autre ligne présente dans votre parc téléphonique.|
 
@@ -85,7 +90,7 @@ Vous avez la possibilité d'appliquer vos choix de configuration à plusieurs li
 
 ### Activer le filtrage d'appels
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Filtrage d'appels`{.action}.
 
@@ -122,7 +127,7 @@ Concernant la configuration de nouveaux filtrages, trois moyens existent :
 
 |Configurations|Description|
 |---|---|  
-|Ajout en mode manuel|Vous devrez remplir les informations demandées dans la partie « Configurer de nouveaux filtrages » selon ce que vous souhaitez mettre en place, puis cliquer sur le bouton `Ajouter`{.action}. Ce mode vous permet également de filtrer les « services OVH » (tels que le service de messagerie).|
+|Ajout en mode manuel|Vous devrez remplir les informations demandées dans la partie « Configurer de nouveaux filtrages » selon ce que vous souhaitez mettre en place, puis cliquer sur le bouton `Ajouter`{.action}. Ce mode vous permet également de filtrer les « services OVHcloud » (tels que le service de messagerie).|
 |Utiliser un assistant|L'assistant vous permet de créer des filtres sur des types de numéros (comme les numéros spéciaux). Ce filtre sera ajouté à la liste que vous avez sélectionnée lors de la complétion de l'assistant. Pour accéder à celui-ci, cliquez sur `Assistant`{.action}.|
 |Importer un CSV|Vous devrez sélectionner sur votre propre machine le fichier CSV contenant les filtres que vous souhaitez importer. Pour accéder à l'import, cliquez sur `Import CSV`{.action}.|
 
@@ -130,11 +135,13 @@ Enfin, dans la partie « Configuration actuelle », vous pouvez visualiser les f
 
 > [!warning]
 >
-> Lors de vos paramétrages, pensez à autoriser dans vos listes les « services OVH » (tels que le service de messagerie) si vous souhaitez toujours y accéder.
+> Lors de vos paramétrages, pensez à autoriser dans vos listes les « services OVHcloud » (tels que le service de messagerie) si vous souhaitez toujours y accéder.
 >
 
 ![gerer-appels-filtrage](images/manage-calls-filtering-step3.png){.thumbnail}
 
 ## Aller plus loin
+
+[Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](../configurer-plages-horaires-fermetures-exceptionnelles-ligne/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

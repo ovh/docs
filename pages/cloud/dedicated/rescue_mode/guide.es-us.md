@@ -144,7 +144,7 @@ Ahora monte la partición con el siguiente comando, sustituyendo `sdbX` por el v
 rescue:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
-Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el disco duro`{.action} en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el servidor en línea de comandos.
+Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el disco duro`{.action} en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y reinicie el servidor en línea de comandos.
 
 ### Uso de la interfaz web del modo de rescate ("rescue64-pro" únicamente)
 

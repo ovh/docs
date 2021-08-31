@@ -3,6 +3,7 @@ title: Primeros pasos con las aplicaciones preinstaladas
 slug: aplicaciones-preinstalables
 excerpt: Cómo desplegar aplicaciones preinstaladas en las instancias de Public Cloud
 section: Primeros pasos
+order: 7
 ---
 
 **Última actualización: 24 de agosto de 2020**

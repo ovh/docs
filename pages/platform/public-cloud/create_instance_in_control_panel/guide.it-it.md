@@ -4,6 +4,7 @@ excerpt: 'Come creare un’istanza dallo Spazio Cliente OVHcloud'
 slug: crea_unistanza_dallo_spazio_cliente_ovh
 legacy_guide_number: g1775
 section: 'Per iniziare'
+hidden: true
 ---
 
 **Ultimo aggiornamento 30/03/2021**

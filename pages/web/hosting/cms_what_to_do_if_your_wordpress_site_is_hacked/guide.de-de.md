@@ -76,7 +76,7 @@ In solchen Fällen ist es sinnvoller, nur das betroffene Verzeichnis wiederherzu
 ## Wiederherstellung der SQL-Datenbank
 Zur Wiederherstellung Ihrer Datenbank finden Sie bei uns zwei Hilfen, eine zum [Export](https://www.ovh.de/g1394.webhosting_hilfe_zum_export_von_datenbanken) und eine zum [Import](https://www.ovh.de/g1393.webhosting_import_einer_mysql-datenbank).
 
-Wenn Sie Ihre Dtaenbank gesichert haben (dump), müssen Sie über [phpMyAdmin](https://phpmyadmin.ovh.net) alle Tabellen löschen, um anschließend das Backup zu importieren.
+Wenn Sie Ihre Dtaenbank gesichert haben (dump), müssen Sie über [phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-verbindung-auf-bdd/) alle Tabellen löschen, um anschließend das Backup zu importieren.
 
 
 ## Nach der Wiederherstellung
@@ -89,7 +89,7 @@ Wenn der Hack länger zurückliegt und eine Wiederherstellung nicht möglich ist
 ## Sie können sich nicht auf Ihrem Wordpress Admin-Panel anmelden
 In diesem Fall müssen Sie Ihr [Administrator-Passwort](https://codex.wordpress.org/) zurücksetzen. Wie das geht, erfahren Sie im offiziellen WordPress Guide.
 
-Wenn Ihnen das zu kompliziert ist, können Sie auch über [phpMyAdmin](https://phpmyadmin.ovh.net) Ihre E-Mail-Adresse in der Tabelle User aktualisieren. Wenn Sie dann auf die Login-Seite gehen und auf Passwort vergessen klicken, wird Ihnen eine entsprechende E-Mail zugesandt.
+Wenn Ihnen das zu kompliziert ist, können Sie auch über [phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-verbindung-auf-bdd/) Ihre E-Mail-Adresse in der Tabelle User aktualisieren. Wenn Sie dann auf die Login-Seite gehen und auf Passwort vergessen klicken, wird Ihnen eine entsprechende E-Mail zugesandt.
 
 
 ## Ersetzen Sie Ihre WordPress Dateien durch neu heruntergeladene Dateien

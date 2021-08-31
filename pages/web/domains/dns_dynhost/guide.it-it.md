@@ -69,7 +69,7 @@ La scelta dei tool disponibili è molto ampia: il client può infatti essere ins
 
 In base al client utilizzato è possibile che, oltre ai dati relativi all’utente DynHost e al sottodominio in questione, venga richiesto un URL di aggiornamento. In questo caso utilizza l’indirizzo fornito qui sotto sostituendo le informazioni generiche:
 
-> http://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
+> https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
 
 |Campo|Sostituire con...|
 |---|---|

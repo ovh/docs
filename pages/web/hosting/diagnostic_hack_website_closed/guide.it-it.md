@@ -3,7 +3,7 @@ title: 'Cosa fare in caso di hosting disattivato per motivi di sicurezza'
 slug: sito-chiuso-per-hack
 excerpt: 'Come comportarsi in caso di disattivazione di un hosting Web OVH per motivi di sicurezza'
 section: Diagnostica
-order: 1
+order: 7
 ---
 
 **Ultimo aggiornamento: 25/07/2019**

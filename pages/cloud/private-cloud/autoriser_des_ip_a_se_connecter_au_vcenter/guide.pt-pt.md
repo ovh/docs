@@ -7,7 +7,7 @@ space_name: vSphere as a Service
 section: Funcionalidades da OVHcloud
 ---
 
-**Última atualização: 27/07/2020**
+**Última atualização: 18/08/2021**
 
 ## Objetivo
 
@@ -33,6 +33,11 @@ Aqui, deve adicionar o IP em questão e eventualmente uma descrição para o enc
 Só precisa de validar clicando em `Seguinte`{.action} e, uma vez que o IP está corretamente marcado como **Autorizado e implementado**, a ligação ao vSphere será possível a partir do IP em questão.
 
 ![vCenter](images/restrictIP2.JPG){.thumbnail}
+
+> [!primary]
+>
+> Tenha em conta que, por razões de segurança, só poderá autorizar um máximo de 2048 endereços IP a ligar-se ao seu vCenter.
+>
 
 ## Quer saber mais?
 

@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak się zalogować jako użytkownik root i ustawić dla
 slug: dostep_root_i_zdefiniowanie_hasla
 legacy_guide_number: g1786
 section: Tutoriale
+order: 5
 ---
 
 **Ostatnia aktualizacja z dnia 17-06-2019**

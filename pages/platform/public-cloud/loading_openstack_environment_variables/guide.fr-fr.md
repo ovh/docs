@@ -7,14 +7,15 @@ section: 'Gestion via OpenStack'
 order: 2
 ---
 
-**Dernière mise à jour le 20/11/2019**
+**Dernière mise à jour le 18/08/2021**
 
 ## Objectif
 
 Charger les variables d'environnement OpenStack sur votre poste vous permettra d'utiliser l'API OpenStack et ainsi gérer votre infrastructure depuis celle-ci.
 
-
 ## Prérequis
+
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir créé un utilisateur OpenStack. Consultez [le guide qui y est dédié](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/#creer-un-utilisateur-openstack)
 - Avoir préparé l'environnement pour utiliser OpenStack. Consultez pour cela le guide suivant : [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/)
 
@@ -24,9 +25,10 @@ Charger les variables d'environnement OpenStack sur votre poste vous permettra d
 
 Afin de récupérer vos variables d'environnement, vous pouvez télécharger le fichier OpenRC de votre utilisateur OpenStack créé au préalable.
 
-Pour cela, rendez-vous dans la rubrique `Users & Roles`{.action}, cliquez sur les `...`{.action} à droite de votre utilisateur et sélectionnez `Télécharger le fichier RC d'OpenStack`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud en haut à gauche.
+<br> Dans la rubrique `Project Management`, cliquez sur `Users & Roles`{.action}, puis sur les `...`{.action} à droite de votre utilisateur et sélectionnez `Télécharger le fichier RC d'OpenStack`{.action}.
 
-![openstack-variables](images/pciopenstackvariables1.png){.thumbnail}
+![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
 
 Un fichier OpenRC correspond à un utilisateur et aussi à une zone. Vous ne pouvez pas gérer plusieurs zones dans un même fichier.
 
@@ -89,7 +91,6 @@ set OS_PASSWORD="Mot de passe de l'utilisateur Horizon"
 ```
 
 - Il est possible de charger les variables directement depuis les paramètres système : Panneau de configuration > Système > Paramètres systèmes avancés > Variables d'environnement :
-
 
 ![public-cloud](images/pciopenstackvariables2.png){.thumbnail}
 

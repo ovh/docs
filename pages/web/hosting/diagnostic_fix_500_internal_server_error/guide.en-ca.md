@@ -4,6 +4,7 @@ excerpt: Find out how to fix some of the most common website errors
 slug: web_hosting_how_to_fix_the_500_internal_server_error
 legacy_guide_number: g1987
 section: 'Diagnostics'
+order: 5
 ---
 
 

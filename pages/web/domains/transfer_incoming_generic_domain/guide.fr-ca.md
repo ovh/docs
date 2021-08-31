@@ -51,7 +51,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 - ** Si les informations sont correctes : passez à l'étape suivante de ce guide.**
 
-- ** Si les informations sont incorrectes ou invisibles : contactez votre le bureau d'enregistrement actuel du nom de domaine pour vérifier et/ou modifier ce dernier.**
+- ** Si les informations sont incorrectes ou invisibles : contactez le bureau d'enregistrement actuel du nom de domaine pour vérifier et/ou modifier ce dernier.**
 
 > [!primary]
 >

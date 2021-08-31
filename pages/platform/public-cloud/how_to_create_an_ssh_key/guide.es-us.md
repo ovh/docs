@@ -3,6 +3,7 @@ title: 'Crear una llave SSH'
 slug: crear-llave-ssh
 excerpt: 'Cómo generar una llave SSH para conectarse a una instancia'
 section: Seguridad
+hidden: true
 ---
 
 **Última actualización: 21/12/2020**

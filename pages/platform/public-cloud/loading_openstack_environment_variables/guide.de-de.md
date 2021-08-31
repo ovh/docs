@@ -6,26 +6,28 @@ legacy_guide_number: 1852
 section: 'OpenStack'
 ---
 
-**letzter Stand 20.11.2019**
+**letzter Stand 18.08.2021**
 
 ## Ziel
 
 Das Laden der Umgebungsvariablen OpenStack auf Ihrem Arbeitsplatz ermöglicht Ihnen die API OpenStack zu nutzen und auf diese Weise Ihre Infrastruktur durch sie zu verwalten.
 
-
 ## Voraussetzungen
+
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Einen OpenStack-Benutzer erstellen Konsultieren Sie [den hierfür gedachten Leitfaden](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/)
 - Sie müssen zuvor die Umgebung für die Verwendung von OpenStack vorbereitet haben. Konsultieren Sie dazu den folgenden Leitfaden: [Umgebung für die Verwendung der OpenStack-API vorbereiten](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
 
-## Praktische Vorgehensweise:
+## Praktische Vorgehensweise
 
 ### Schritt Nr 1: die Variablen wieder erhalten
 
 Nachdem Sie Ihre Umgebungsvariablen zurück bekommen haben können Sie die Datei OpenRC von Ihrem vorher erstellten OpenStack-Nutzer herunterladen.
 
-Gehen Sie dazu zur Rubrik `Nutzer & Rollen`{.action}, klicken Sie auf die`...`{.action} rechts von Ihrem Nutzer und wählen Sie dann `Die Datei RC von OpenStack herunterladen`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie Ihr Public Cloud Projekt oben links aus.
+<br>Im Bereich `Project Management`, klicken Sie auf `Users & Roles`{.action}, klicken Sie auf die `...`{.action} rechts von Ihrem Nutzer und wählen Sie dann `Die Datei RC von OpenStack herunterladen`{.action}.
 
-![openstack-variables](images/pciopenstackvariables1.png){.thumbnail}
+![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
 
 Eine OpenRC-Datei entspricht einem Nutzer und auch einer Zone. Sie können nicht mehrere Zonen in derselben Datei verwalten.
 

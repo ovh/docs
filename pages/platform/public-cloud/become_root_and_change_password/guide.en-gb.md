@@ -4,7 +4,7 @@ slug: become_the_root_user_and_select_a_password
 excerpt: 'This guide will show you how to become the root user and create a password for the root account'
 legacy_guide_number: g1786
 section: Getting started
-order: 7
+order: 5
 ---
 
 **Last updated 11th October 2018**

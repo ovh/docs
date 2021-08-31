@@ -37,9 +37,9 @@ Appuyez de façon répétée, en moins de 2 secondes, 5 fois sur le bouton Power
 
 - Dans le cas d'un OverTheBox IT v2 :
 
-Appuyez de façon répétée, en moins de 2 seconde, 5 fois sur le bouton Reset.
+Appuyez de façon répétée, en moins de 2 secondes, 5 fois sur le bouton Reset.
 
-![overthebox](images/reset-method1_OTBv2c.jpg){.thumbnail}
+![overthebox](images/reset-method1_OTBv2c_edit.jpg){.thumbnail}
 
 Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle.
 
@@ -291,7 +291,7 @@ Dans le cas d'une OverTheBox IT v2, la clé USB doit être branchée sur un des 
 
 > [!success]
 >
-> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans les guides suivants :
+> Votre OvertheBox est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans les guides suivants :
 >
 > [Installation OverTheBox Intel ou IT v1](../intel-itv1-installation/)
 >

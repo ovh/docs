@@ -7,7 +7,7 @@ space_name: vSphere as a Service
 section: Funzionalità OVHcloud
 ---
 
-**Ultimo aggiornamento: 25/06/2020**
+**Ultimo aggiornamento: 18/08/2021**
 
 ## Obiettivo
 
@@ -33,6 +33,11 @@ Nella nuova finestra, indica l’IP in questione ed eventualmente una descrizion
 Clicca su `Continua`{.action} per confermare l’operazione: una volta che l’IP risulterà **Autorizzato e installato**, potrà essere utilizzato per l’accesso a vSphere.
 
 ![vCenter](images/restrictIP2.JPG){.thumbnail}
+
+> [!primary]
+>
+> Ti ricordiamo che, per motivi di sicurezza, puoi autorizzare un massimo di 2048 indirizzi IP a connettersi al tuo vCenter.
+>
 
 ## Per saperne di più
 

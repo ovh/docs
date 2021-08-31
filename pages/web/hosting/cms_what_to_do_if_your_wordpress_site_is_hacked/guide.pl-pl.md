@@ -73,7 +73,7 @@ Lepiej byłoby przywrócić dany katalog, w przypadku gdy na jednym hostingu zna
 ## Przywracanie baz danych SQL
 Dostępne są dwa przewodniki wyjaśniające, jak wykonać [eksport](https://www.ovh.pl/g1394.eksport-bazy-danych) bazy danych oraz jak wykonać [import/blue]](https://www.ovh.pl/g1393.import-bazy-danych-mysql).
 
-Po wykonaniu kopii zapasowej bazy danych (dump), należy usunąć wszystkie tabele z poziomu [interfejsu phpMyAdmin](https://phpmyadmin.ovh.net), aby móc zaimportować kopię zapasową.
+Po wykonaniu kopii zapasowej bazy danych (dump), należy usunąć wszystkie tabele z poziomu [interfejsu phpMyAdmin](https://docs.ovh.com/pl/hosting/polaczenie-bazy-danych-serwer-bdd/), aby móc zaimportować kopię zapasową.
 
 
 ## Po przywróceniu
@@ -86,7 +86,7 @@ Jeśli włamanie jest starsze a przywrócenie danych nie jest możliwe, przedsta
 ## Nie możesz zalogować się do panelu administracyjnego WordPress.
 W takim przypadku należy zmienić [hasło administratora](https://codex.wordpress.org/) korzystając z oficjalnego przewodnika Wordpress.
 
-Jeśli jest to zbyt skomplikowane, można zaktualizować adres e-mail w [interfejsie phpMyAdmin](https://phpmyadmin.ovh.net) w tabeli user, powrócić na stronę logowania, kliknąć na Nie pamiętasz hasła? i poczekać na wysłanie e-maila.
+Jeśli jest to zbyt skomplikowane, można zaktualizować adres e-mail w [interfejsie phpMyAdmin](https://docs.ovh.com/pl/hosting/polaczenie-bazy-danych-serwer-bdd/) w tabeli user, powrócić na stronę logowania, kliknąć na Nie pamiętasz hasła? i poczekać na wysłanie e-maila.
 
 
 ## Zastąp pliki modułu WordPress plikami nowo pobranego modułu WordPress.

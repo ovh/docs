@@ -2,6 +2,7 @@
 title: 'Cloud Web'
 slug: cloud-web
 sections: 'Erste Schritte'
+order: 09
 ---
 
 > [!product-section]
