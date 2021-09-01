@@ -27,7 +27,7 @@ To perform certain administrative functions on your server (e.g. installing pack
 This guide assumes that the default user is called 'admin'.
 >
 
-### Changing the root password
+### Setting the root password (Works only for connections using our VNC console)
 
 First, establish an SSH connection to your server.
 
@@ -40,6 +40,16 @@ Retype new UNIX password:
 passwd: password updated 
 successfully
 ```
+### Become root
+
+To become the root user, type the following command at the command line:
+
+```
+~$ sudo su -
+~#
+```
+
+Next, enter the root password.
 
 ### Update repositories (Debian/Ubuntu)
 
@@ -63,16 +73,24 @@ To update your server's operating system, type the following command at the comm
 ~$ sudo vi /etc/hosts.allow
 ```
 
-### Become root
-
-To become the root user, type the following command at the command line:
+### To allow root login for connections using other applications such as putty, type the following commands at the command line :
 
 ```
-~$ sudo su -
-~#
+~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 ```
 
-Next, enter the root password.
+### Restart your sshd service :
+
+```
+~$ service sshd restart
+```
+
+[!primary]
+>
+> Note : For a terminal such as putty, you also have to remove the private key you added the authenticator agent file.
+>
 
 ## Go further
 
