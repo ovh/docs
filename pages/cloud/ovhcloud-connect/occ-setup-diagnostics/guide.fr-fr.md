@@ -18,7 +18,7 @@ Découvrez comment résoudre les erreurs les plus fréquentes liées à la mise 
 
 ## En pratique
 
-### OVHcloud Connect direct (uniquement) : vérifier la présence de lumière sur le lien
+### OVHcloud Connect Direct (uniquement) : vérifier la présence de lumière sur le lien
 
 Lors de la commande d’un lien OVHCloud Connect Direct, il est possible de voir côté OVHcloud les valeurs optiques IN/OUT. Vous pouvez demander des informations à ce sujet à votre équipe support.
 
