@@ -3,7 +3,7 @@ title: 'Erste Schritte mit MX Plan'
 slug: allgemeines-zu-shared-e-mails
 excerpt: 'Hier erfahren Sie, wie Sie Ihr MX Plan Angebot verwenden.'
 section: 'Erste Schritte'
-order: 1
+order: 01
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: Servizio Email guida alla configurazione su Windows Phone
 excerpt: In questa guida ti mostriamo come configurare il tuo account email sul tuo Windows Phone
 slug: servizio_email_guida_alla_configurazione_su_windows_phone
 legacy_guide_number: g1346
+hidden: true
 ---
 
 

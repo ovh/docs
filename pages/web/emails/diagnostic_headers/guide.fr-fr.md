@@ -4,6 +4,7 @@ slug: recuperation-des-entetes-e-mails
 legacy_guide_number: 1365
 excerpt: 'Retrouver ici comment récupérer un entête e-mail.'
 section: Diagnostic
+order: 03
 ---
 
 Chaque e-mail reçu possède des entêtes (les headers) qui permettent de connaître les serveurs par lesquels votre e-mail a transité.

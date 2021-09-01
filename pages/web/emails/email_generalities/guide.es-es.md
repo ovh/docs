@@ -3,7 +3,7 @@ title: 'Primeros pasos con la solución MX Plan'
 slug: primeros-pasos-correo-compartido
 excerpt: 'Cómo empezar a utilizar la solución de correo electrónico MX Plan'
 section: 'Primeros pasos'
-order: 1
+order: 01
 ---
 
 > [!primary]

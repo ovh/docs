@@ -3,7 +3,7 @@ title: 'Mailinglisten verwalten und nutzen'
 slug: webhosting_e-mail_verwendung_von_mailinglisten
 excerpt: 'Erfahren Sie hier, wie Sie Mailinglisten verwenden'
 section: 'E-Mail Account Funktionen'
-order: 4
+order: 03
 legacy_guide_number: g1596
 ---
 

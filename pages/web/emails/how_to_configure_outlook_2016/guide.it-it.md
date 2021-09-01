@@ -2,7 +2,8 @@
 title: 'Configurare un account email su Outlook per Windows'
 slug: configurazione-outlook-2016
 excerpt: 'Scopri come configurare un indirizzo email MX Plan su Outlook per Windows'
-section: Outlook
+section: Configurazione su computer
+order: 01
 ---
 
  

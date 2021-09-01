@@ -4,6 +4,7 @@ slug: email-advanced-usage
 legacy_guide_number: 2117
 excerpt: Find out what to do if your emails are not sent or received correctly by OVHcloud
 section: Troubleshooting
+order: 02
 ---
 
 **Last updated 16th June 2021**

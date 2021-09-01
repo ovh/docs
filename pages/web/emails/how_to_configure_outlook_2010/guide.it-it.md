@@ -3,6 +3,7 @@ title: 'Email condivisa: guida alla configurazione di Outlook 2010'
 excerpt: ''
 slug: email_condivisa_guida_alla_configurazione_di_outlook_2010
 legacy_guide_number: g1299
+hidden: true
 ---
 
 

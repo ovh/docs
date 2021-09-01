@@ -4,7 +4,7 @@ slug: zaawansowane_korzystanie_z_e-maili_ovh
 legacy_guide_number: 2117
 excerpt: "Dowiedz się, jak należy zareagować w przypadku problemów z wysyłaniem lub odbieraniem wiadomości e-mail do OVHcloud"
 section: 'Diagnostyka'
-order: 9
+order: 02
 ---
 
 > [!primary]

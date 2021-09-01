@@ -3,7 +3,7 @@ title: 'Eine E-Mail-Adresse mit MX Plan erstellen'
 slug: e-mail-adresse-erstellen
 excerpt: 'So erstellen Sie eine E-Mail-Adresse mit MX Plan'
 section: 'Erste Schritte'
-order: 2
+order: 02
 ---
 
 **Stand 28.06.2019**
