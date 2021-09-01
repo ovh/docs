@@ -1,12 +1,12 @@
 ---
 title: Enable the Private Gateway
 slug: private-gateway
-excerpt: Learn how to enable Private Gateway infrastructure Hosted Private Cloud
+excerpt: Learn how to enable Private Gateway on a Hosted Private Cloud infrastructure
 section: OVHcloud Features
 hidden: true
 ---
 
-**Last updated 17th April 2020**
+**Last updated 20th August 2021**
 
 ## Objective
 
@@ -40,19 +40,20 @@ The vSphere interface is accessible by default over the Internet. For infrastruc
 
 ### Prerequisites
 
-* Create a Portgroup on the vRack to connect the private gateway. It must be under the right datacenter.
-* Have added the private gateway network to [restrictions per source IP](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/).
-* Add a entry in file /etc/hosts or C:\Windows\system32\etc\hosts for pcc-X-X-X-X.ovh.com with the private IP
+* Creating a Portgroup on the vRack to connect the private gateway. It must be under the right datacenter.
+* Having added the private gateway network to [restrictions per source IP](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/).
+* Adding a entry in file /etc/hosts or C:\Windows\system32\etc\hosts for pcc-X-X-X-X.ovh.com with the private IP
 
 ### Enable the Private Gateway
 
 Before starting, get the following necessary information:
-- **serviceName** : the Hosted Private Cloud name(syntaxe pcc-X-X-X-X)
-- **datacenterId** : the datacenter ID
-- **ip** & **netmask** : the IP address and netmask for the private gateway
-- **portgroup** : the PortGroup name for vRack connexion.
 
-To be used in the following API calls.
+- **serviceName**: the Hosted Private Cloud name (syntax: pcc-X-X-X-X)
+- **datacenterId**: the datacenter ID
+- **ip** & **netmask**: the IP address and netmask for the private gateway
+- **portgroup**: the PortGroup name for vRack connexion.
+
+These elements will be used in the following API calls.
 
 Start activation with:
 
@@ -63,11 +64,14 @@ Start activation with:
 
 The call creates a task that will deploy the virtual machine and make the network configuration.
 
+You may receive a resource delivery notification (a new datastore). This will not be charged and will be placed in the **Admin Storages** folder from the **Storage** view. It is added to host the virtual machine without consuming your datastores.
+
 ### Disable the Private Gateway
 
 Before starting, get the following necessary information:
-- **serviceName** : the Hosted Private Cloud name(syntaxe pcc-X-X-X-X)
-- **datacenterId** : the datacenter ID
+
+- **serviceName**: the Hosted Private Cloud name (syntax: pcc-X-X-X-X)
+- **datacenterId**: the datacenter ID
 
 > [!warning]
 >
