@@ -89,8 +89,9 @@ Now that the cert-manager is deployed, we need to configure a cluster-issuer to 
 
 To avoid to be banned by Let's Encrypt robots, for testing purposes, the staging environment should be used before going to prod.
 
-<pre class="console"><code>$ cat <<EOT > lets-encrypt-issuer.yaml
-apiVersion: cert-manager.io/v1
+Apply this file using kubectl to add new certificate issuers:
+
+<pre class="console"><code>apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
   name: letsencrypt-prod
@@ -127,7 +128,6 @@ spec:
     - http01:
         ingress:
           class: nginx
-EOT
 </code></pre>
 
 > [!primary]
@@ -135,8 +135,9 @@ EOT
 
 Now, any ingress resources will be able to be annotated with:
 
-<pre class="console"><code>
-"cert-manager.io/cluster-issuer": "letsencrypt-prod"
+<pre class="console"><code>"cert-manager.io/cluster-issuer": "letsencrypt-prod"
+# Or for tests
+"cert-manager.io/cluster-issuer": "letsencrypt-staging"
 </code></pre>
 
 Please refer to [How to install Ingress Nginx Controller](../installing-nginx-ingress/) tutorial for ingresses configuration.
