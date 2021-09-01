@@ -4,6 +4,7 @@ excerpt: Esta guía explica cómo configurar una cuenta de correo en Windows Pho
 slug: correo_guia_de_configuracion_en_windows_phone
 legacy_guide_number: g1346
 section: Windows
+hidden: true
 ---
 
 

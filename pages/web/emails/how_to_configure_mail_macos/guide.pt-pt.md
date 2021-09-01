@@ -3,6 +3,8 @@ title: 'Email Partilhado: Guia de configuração de Mail para MAC - El capitan'
 excerpt: ''
 slug: email_partilhado_guia_de_configuracao_de_mail_para_mac_-_el_capitan
 legacy_guide_number: g1965
+section: Configuração num computador
+order: 03
 ---
 
 ## A sua conta de e-mail OVH no seu Mac com 1 clique

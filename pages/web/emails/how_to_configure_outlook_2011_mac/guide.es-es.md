@@ -4,6 +4,7 @@ excerpt: Esta guía explica cómo configurar una cuenta de correo en Outlook 201
 slug: web_hosting_guia_de_configuracion_de_outlook_2011_en_mac
 legacy_guide_number: g1345
 section: Outlook
+hidden: true
 ---
 
 

@@ -3,6 +3,7 @@ title: Konfiguracja adresu e-mail w Windows 8
 excerpt: ''
 slug: konfiguracja_adresu_e-mail_w_windows_8
 legacy_guide_number: g1281
+hidden: true
 ---
 
 

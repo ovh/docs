@@ -3,6 +3,7 @@ title: FAQ
 excerpt: 'Znajdź najczęściej zadawane pytania dotyczące kont e-mail OVHcloud'
 slug: faq-konta-email
 section: Pierwsze kroki
+order: 07
 ---
 
 **Ostatnia aktualizacja z dnia 15-05-2020**

@@ -2,7 +2,8 @@
 title: 'Configurar o seu e-mail num iPhone ou num iPad'
 slug: mail_partilhado_guia_configuracao_iphone_ios_91
 excerpt: 'Aprenda a configurar um endereço de e-mail MX Plan num iPhone ou num iPad'
-section: Apple
+section: Configuração no smartphone
+order: 01
 ---
 
 

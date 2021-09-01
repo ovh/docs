@@ -3,6 +3,7 @@ title: 'Servizio Email: guida alla configurazione di Outlook 2011 su Mac'
 excerpt: In questa guida ti mostriamo come configurare Outlook 2011 sull'email di Mac
 slug: servizio_email_guida_alla_configurazione_di_outlook_2011_su_mac
 legacy_guide_number: g1345
+hidden: true
 ---
 
 

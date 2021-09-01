@@ -4,6 +4,7 @@ excerpt: ''
 slug: correo_guia_de_configuracion_en_outlook_2010
 legacy_guide_number: g1299
 section: Outlook
+hidden: true
 ---
 
 

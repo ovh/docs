@@ -4,6 +4,7 @@ excerpt: 'Correo: Redirecciones de correo'
 slug: correo_redirecciones_de_correo
 legacy_guide_number: g2001
 section: 'Gestión de la cuenta de correo'
+order: 01
 ---
 
 **Última actualización: 22/01/2019**

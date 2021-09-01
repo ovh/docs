@@ -3,6 +3,8 @@ title: 'Configurare un account email su Mail di macOS'
 slug: servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan
 excerpt: 'Scopri come configurare un indirizzo email MX Plan su Mail di macOS El Capitan, Sierra e High Sierra'
 legacy_guide_number: g1965
+section: Configurazione su computer
+order: 03
 ---
 
 **Ultimo aggiornamento: 11/09/2018**
