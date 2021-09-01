@@ -1,151 +1,91 @@
 ---
-title: 'Correo: Guía de configuración para Thunderbird en Mac'
+title: 'Configurar una cuenta de correo electrónico en Thunderbird para macOS'
 slug: correo_guia_de_configuracion_para_thunderbird_en_mac
-legacy_guide_number: g1911
+routes:
+    canonical: 'https://docs.ovh.com/us/es/emails/correo_guia_de_configuracion_en_thunderbird/'
+legacy_guide_number: g1297 
+excerpt: 'Aquí encontrará la información necesaria para configurar su dirección de correo electrónico en Thunderbird'
 section: Configuración en el ordenador
 order: 05
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
 
-## Parte 1: Inicio
-En primer lugar, acceda a la aplicación «Thunderbird» instalada en Mac. 
+**Última actualización: 26/08/2021**
 
-Esta es la interfaz que aparecerá por defecto si no tiene ninguna dirección de correo configurada. Si no, acceda al menú para agregar una nueva cuenta. 
+## Objetivo
 
-Para instalar su cuenta de correo, seleccione la opción «Saltarse esto y usar mi cuenta de correo».
+Es posible configurar sus cuentas MX Plan en el cliente de correo que usted utilice, siempre que sea compatible, para poder acceder a ellas desde cualquiera de sus dispositivos. Thunderbird es un cliente de correo libre y gratuito.
 
-![Thunderbird](images/img_2856.jpg){.thumbnail}
+**Esta guía explica cómo configurar una cuenta MX Plan en Thunderbird de macOS.**
 
+> [!warning]
+>
+> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
+> 
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+> 
 
-## Parte 2: Creación de la cuenta
-«Su nombre»: Su nombre, tal y como se muestra a los demás.
+## Requisitos
 
-«Dirección de correo»: Su dirección completa de correo. 
+- Disponer de una cuenta MX Plan (incluida en un MX Plan o en un plan de [hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}).
+- Tener Thunderbird instalado en su macOS.
+- Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
+ 
+## Procedimiento
 
-«Contraseña»: La contraseña que haya definido en su área de cliente para esa cuenta de correo compartido.
+### Añadir la cuenta
 
-«Recordar contraseña»: Debe marcar esta opción. 
+- **Si es la primera vez que usa la aplicación**, aparecerá un asistente de configuración solicitándole su dirección de correo electrónico.
 
-Haga clic en «Continuar» para proseguir con la instalación.
+- **Si ya ha configurado** una cuenta: haga clic en `Archivo`{.action} en el menú situado en la parte superior de la pantalla, luego en `Nuevo`{.action} y luego en `Obtener una nueva cuenta de correo..`{.action}.
 
-![Thunderbird](images/img_2857.jpg){.thumbnail}
-
-
-## Parte 3: Creación de la cuenta - Continuación
-Thunderbird recupera los parámetros de la dirección de correo y le propone dos tipos de configuración: IMAP o POP3.
-
-En nuestro ejemplo, vamos a configurar la cuenta con IMAP, aunque se puede configurar igualmente en POP. Al final de esta guía encontrará información relativa a la configuración de una cuenta de correo de tipo POP3. 
-
-Thunderbird propone una configuración manual. 
-
-Haga clic en «Config. manual» para proseguir con la instalación.
-
-![Thunderbird](images/img_2858.jpg){.thumbnail}
-
-
-## Parte 4: Configuración de los parámetros del servidor
-Compruebe que los parámetros son correctos:
-Para el servidor entrante:
-Entrante: «IMAP»
-Nombre del servidor: «SSL0.OVH.NET»
-Puerto: «993»
-SSL: «SSL/TLS»
-Identificación: «Contraseña normal»
-
-![](images/img_2859.jpg){.thumbnail}
-Para el servidor saliente:
-Saliente: «SMTP»
-Nombre del servidor: «SSL0.OVH.NET»
-Puerto: «465»
-SSL: «SSL/TLS»
-Identificación: «Contraseña normal»
-Identificador entrante y saliente: «Dirección completa de correo»
-Haga clic en «Hecho» para completar la instalación.
-
-
-## Parte 5: Parámetros del servidor & servidor de salida (SMTP)
-Una vez creada la cuenta, podrá acceder a los distintos parámetros del servidor. 
-
-Haga clic en «Servidor de salida (SMTP)» para verificar la información introducida en el servidor saliente.
-
-![Thunderbird](images/img_2860.jpg){.thumbnail}
-
-
-## Parte 6: Parámetros del servidor & servidor de salida (SMTP) - Continuación
-Estos son los parámetros SMTP que debe introducir:
-Nombre del servidor: «SSL0.OVH.NET»
-Puerto: «465»
-Seguridad de la conexión: «SSL/TLS»
-Método de identificación: «Contraseña normal»
-Nombre de usuario: «Dirección completa de correo
-
-Haga clic en «Aceptar» para validar la configuración del SMTP.
-
-![Thunderbird](images/img_2861.jpg){.thumbnail}
-
-
-## Configuración POP
-A continuación, le indicamos cómo configurar una cuenta de correo POP.
-
-Configuración POP con seguridad SSL activada o desactivada:
-
-Dirección de correo: Su dirección completa de correo.
-
-Contraseña: La contraseña que haya definido en su [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-
-Nombre de usuario: Su dirección completa de correo.
-
-Entrante: El servidor de recepción de correos: SSL0.OVH.NET
-
-Puerto del servidor entrante: El puerto del servidor entrante: 995 o 110
-
-Saliente: El servidor de envío de correos: SSL0.OVH.NET
-
-Puerto del servidor saliente: El puerto del servidor saliente: 465 o 587
-
-Los puertos 110 y 587 corresponden a la seguridad SSL desactivada.
-Los puertos 995 y 465 corresponden a la seguridad SSL activada.
-
-
-- Debe activar obligatoriamente la identificación[/url] del servidor saliente SMTP.
-
-
-|Puertos|SSLactivado|SSLdesactivado|
-|Entrante|995|110|
-|Saliente|465|587|
+| | |
+|---|---|
+|![Thunderbird](images/thunderbird-mac-mxplan01.png){.thumbnail}|En la nueva ventana, introduzca los siguientes 3 datos: <br>- Su nombre completo (Nombre mostrado)<br>- Dirección de correo electrónico <br>- Contraseña.|
+|Haga clic en `Configurar manualmente...`{.action} para introducir la configuración del servidor **ENTRANT**: <br>- Protocolo **IMAP** <br>- Servidor **ssl0.ovh.net** <br>- Puerto **993** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**|![Thunderbird](images/thunderbird-mac-mxplan02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-mac-mxplan03.png){.thumbnail}|Introduzca la configuración del servidor **SALIENTE**: <br>- Protocolo **SMTP** <br>- Servidor **ssl0.ovh.net** <br>- Puerto **465** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**<br><br>Para finalizar la configuración, haga clic en `Finalizado.`{.action}|
 
 
 
+En una configuración en **POP**, los valores son los siguientes:
 
-## Configuración IMAP
-A continuación, le indicamos cómo configurar una cuenta de correo IMAP.
+|Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
+|---|---|---|---|
+|Entrante|ssl0.ovh.net|SSL/TLS|995|
+|Saliente|ssl0.ovh.net|SSL/TLS|465|
 
-Configuración IMAP con seguridad SSL activada o desactivada:
+### Utilizar la dirección de correo
 
-Dirección de correo: Su dirección completa de correo.
+Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-Contraseña: La contraseña que haya definido en su [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.com/world/es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/) o [Utilizar su dirección de correo desde el webmail Roundcube](https://docs.ovh.com/us/es/emails/webmail_guia_de_uso_de_roundcube/).
 
-Nombre de usuario: Su dirección completa de correo.
+### Obtener una copia de seguridad de su dirección de correo
 
-Entrante: El servidor de recepción de correos: SSL0.OVH.NET
+Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar**" de la sección "**Thunderbird**" de nuestra guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/us/es/emails/migrar-sus-direcciones-de-correo-manualmente/#exportar_1).
 
-Puerto del servidor entrante: El puerto del servidor entrante: 993 o 143
+### Modificar los parámetros existentes
 
-Saliente: El servidor de envío de correos: SSL0.OVH.NET
+Si su cuenta de correo ya está configurada y debe acceder a los parámetros de la cuenta para modificarlos:
 
-Puerto del servidor saliente: El puerto del servidor saliente: 465 o 587
+- Vaya a `Herramientas`{.action} desde la barra de menú situada en la parte superior de su pantalla.
+- Haga clic en `Configuración de las cuentas`{.action}.
 
-Los puertos 143 y 587 corresponden a la seguridad SSL desactivada.
-Los puertos 993 y 465 corresponden a la seguridad SSL activada.
+![Thunderbird](images/thunderbird-mac-mxplan04.png){.thumbnail}
+
+- Para cambiar los parámetros de **recepción** de los mensajes de correo, haga clic en `Configuración del servidor`{.action} en la columna izquierda, bajo su dirección de correo electrónico.
+
+![Thunderbird](images/thunderbird-mac-mxplan05.png){.thumbnail}
+
+- Para cambiar la configuración **del envío** de mensajes de correo, haga clic en `Servidor de salida (SMTP)`{.action} situado en la columna izquierda.
+- Haga clic en la dirección de correo electrónico correspondiente en la lista y, seguidamente, en `Modificar`{.action}.
+
+![Thunderbird](images/thunderbird-mac-mxplan06.png){.thumbnail}
 
 
-- Debe activar obligatoriamente la identificación[/url] del servidor saliente SMTP.
+## Más información
 
-
-|Puertos|SSLactivado|SSLdesactivado|
-|Entrante|993|143|
-|Saliente|465|587|
-
-
-
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
