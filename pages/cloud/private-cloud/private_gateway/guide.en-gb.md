@@ -1,7 +1,7 @@
 ---
 title: Enable the Private Gateway
 slug: private-gateway
-excerpt: Learn how to enable Private Gateway infrastructure Hosted Private Cloud
+excerpt: Learn how to enable Private Gateway on a Hosted Private Cloud infrastructure
 section: OVHcloud Features
 hidden: true
 ---
@@ -40,9 +40,9 @@ The vSphere interface is accessible by default over the Internet. For infrastruc
 
 ### Prerequisites
 
-* Create a Portgroup on the vRack to connect the private gateway. It must be under the right datacenter.
-* Have added the private gateway network to [restrictions per source IP](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/).
-* Add a entry in file /etc/hosts or C:\Windows\system32\etc\hosts for pcc-X-X-X-X.ovh.com with the private IP
+* Creating a Portgroup on the vRack to connect the private gateway. It must be under the right datacenter.
+* Having added the private gateway network to [restrictions per source IP](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/).
+* Adding a entry in file /etc/hosts or C:\Windows\system32\etc\hosts for pcc-X-X-X-X.ovh.com with the private IP
 
 ### Enable the Private Gateway
 
@@ -53,7 +53,7 @@ Before starting, get the following necessary information:
 - **ip** & **netmask**: the IP address and netmask for the private gateway
 - **portgroup**: the PortGroup name for vRack connexion.
 
-To be used in the following API calls.
+These elements will be used in the following API calls.
 
 Start activation with:
 
@@ -64,8 +64,7 @@ Start activation with:
 
 The call creates a task that will deploy the virtual machine and make the network configuration.
 
-You may receive a resource delivery notification (a new datastore), this will not be charged and will be placed in the **Admin Storages** 
-folder from the **Storage** view. It is added to host the virtual machine without consuming your datastores.
+You may receive a resource delivery notification (a new datastore). This will not be charged and will be placed in the **Admin Storages** folder from the **Storage** view. It is added to host the virtual machine without consuming your datastores.
 
 ### Disable the Private Gateway
 

@@ -1,7 +1,7 @@
 ---
 title: Activer la Private Gateway
 slug: private-gateway
-excerpt: Découvrez comment activer la Private Gateway une infrastructure Hosted Private Cloud
+excerpt: Découvrez comment activer la Private Gateway sur une infrastructure Hosted Private Cloud
 section: Fonctionnalités OVHcloud
 hidden: true
 ---
@@ -40,22 +40,22 @@ L'interface vSphere est accessible par défaut via Internet. Pour les infrastruc
 
 ### Prérequis
 
-* Avoir créer un Portgroup sur le vRack pour connecter la private gateway. Il doit etre sous le datacenter prévu.
+* Avoir créé un Portgroup sur le vRack pour connecter la private gateway. Il doit etre sous le datacenter prévu.
 * Avoir ajouté le réseau de la private gateway dans [les autorisations par IP source](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/).
-* Avoir ajouté une entrée dans le fichier /etc/hosts ou C:\Windows\system32\drivers\etc\hosts pour faire correspondre l'adresse pcc-X-X-X-X.ovh.com avec l'adresse IP privée (outre éviter des messages d'erreurs de certificat, cela est nécessaire pour un bon fonctionnement des différentes consoles VMRC ou autre)
+* Avoir ajouté une entrée dans le fichier /etc/hosts ou C:\Windows\system32\drivers\etc\hosts pour faire correspondre l'adresse pcc-X-X-X-X.ovh.com avec l'adresse IP privée (outre éviter des messages d'erreurs de certificat, cela est nécessaire pour un bon fonctionnement des différentes consoles VMRC ou autre).
 
 ### Activer la private gateway
 
-Avant de commencer, rassembler les informations nécessaires suivantes :
+Avant de commencer, rassemblez les informations nécessaires suivantes :
 
 - **serviceName** : le nom du Hosted Private Cloud (syntaxe pcc-X-X-X-X)
 - **datacenterId** : le datacenter ID
 - **ip** & **netmask** : le réseau IP pour la private gateway
 - **portgroup** : le nom du PortGroup pour la connexion au vRack
 
-A utiliser dans les différents appels d'API qui suivent.
+Ces informations seront à utiliser dans les différents appels d'API qui suivent.
 
-Lancer l'activation avec :
+Lancez l'activation avec :
 
 > [!api]
 >
@@ -64,12 +64,11 @@ Lancer l'activation avec :
 
 L'appel entraîne la création d'une tâche qui va déployer la machine virtuelle et fait la configuration réseau.
 
-Vous recevrez peut-être une notification de livraison de ressource (un nouveau datastore), celui-ci ne sera pas facturé et sera placé dans le dossier **
-Admin Storages** de la vue **Storage**. Il est ajouté pour pouvoir héberger la machine virtuelle sans impacter vos espaces de Storage.
+Vous recevrez peut-être une notification de livraison de ressource (un nouveau datastore). Celui-ci ne sera pas facturé et sera placé dans le dossier **Admin Storages** de la vue **Storage**. Il est ajouté pour pouvoir héberger la machine virtuelle sans affecter vos espaces de stockage.
 
 ### Désactiver la private gateway
 
-Avant de commencer, rassembler les informations nécessaires suivantes :
+Avant de commencer, rassemblez les informations nécessaires suivantes :
 
 - **serviceName** : le nom du Hosted Private Cloud (syntaxe pcc-X-X-X-X)
 - **datacenterId** : le datacenter ID
@@ -79,8 +78,7 @@ Avant de commencer, rassembler les informations nécessaires suivantes :
 > La désactivation de la private gateway rétablit l'accès depuis Internet, il est donc important de s'assurer d'avoir mis en place le filtrage IP voulu.
 >
 
-
-Lancer la désactivation avec :
+Lancez la désactivation avec :
 
 > [!api]
 >
