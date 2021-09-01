@@ -89,7 +89,7 @@ To update your server's operating system, type the following command at the comm
 
 [!primary]
 >
-> Note : For a terminal such as putty, in addition to the steps above, you also have to remove the private key added to the authenticator agent file.
+> Note : For a terminal such as putty, in addition to the steps above, you also have to remove the private key added to the putty authentication agent file.
 >
 
 ## Go further
