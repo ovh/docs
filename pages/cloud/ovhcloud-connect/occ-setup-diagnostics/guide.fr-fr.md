@@ -6,7 +6,7 @@ section: Premiers pas
 order: 4
 ---
 
-**Dernière mise à jour le 23/08/2021**
+**Dernière mise à jour le 01/09/2021**
 
 ## Objectif
 
@@ -18,9 +18,9 @@ Découvrez comment résoudre les erreurs les plus fréquentes liées à la mise 
 
 ## En pratique
 
-### Vérifier la présence de lumière sur le lien OVHcloud Connect
+### OVHcloud Connect direct (uniquement) : vérifier la présence de lumière sur le lien
 
-Lors de la commande d’un lien OVHCloud Connect, il est possible de voir côté OVHcloud les valeurs optiques IN/OUT. Vous pouvez demander des informations à ce sujet à votre équipe support.
+Lors de la commande d’un lien OVHCloud Connect Direct, il est possible de voir côté OVHcloud les valeurs optiques IN/OUT. Vous pouvez demander des informations à ce sujet à votre équipe support.
 
 - Si **OUT** est « **DOWN** », cela signifie que le port est en cours d'activation sur l'équipement OVHcloud. Le port devient actif (« **UP** ») au bout de quelques minutes.
 - Si **IN** est « **DOWN** », les raisons suivantes peuvent en être à l'origine :
@@ -36,7 +36,7 @@ Lors de la commande d’un lien OVHCloud Connect, il est possible de voir côté
 
 #### Vérification de la LOA
 
-Une mauvaise interprétation de la position sur l'interconnexion (Cross-Connect) par le PoP peut engendrer une absence de lumière sur le lien OVHcloud Connect.
+Une mauvaise interprétation de la position sur l'interconnexion (Cross-Connect) par le PoP peut engendrer une absence de lumière sur le lien OVHcloud Connect Direct.
 Par exemple, le PoP peut indiquer qu'il n'y a pas d'interconnexion sur la position mentionnée sur la LOA.
 
 ##### **Comment lire les informations sur la LOA ?**
@@ -142,6 +142,15 @@ La BGP Area côté client doit être différente de celle côté OVHcloud.
 - AS : n'importe lequel (de préférence entre 64512-65534)
 - La zone AS d'OVHcloiud BGP et votre numéro d'AS BGP (côté PoP) doivent être différents.
 - La zone AS d'OVHcloud BGP : peut être la même entre la configuration côté DC et la configuration côté PoP (recommandé)
+
+### OVHcloud Connect Direct (uniquement) : mon offre n'est pas visible dans l'espace client
+
+Un service OVHcloud Connect apparaît dans votre espace client OVHcloud dès lors qu'il est considéré comme **livré**.
+
+En ce qui concerne l'offre OVHcloud Connect Direct, le service est **livré** dans les situations suivantes :
+
+- dès lors que l'interconnexion (Cross-Connect) est établie par le client, de la lumière alors étant détectée côté OVHcloud.
+- au bout de 60 jours après la commande si aucune lumière n'a été détectée.
 
 ## Aller plus loin
 
