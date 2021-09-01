@@ -5,7 +5,7 @@ section: Administration
 order: 11
 ---
 
-**Last updated 27th August 2021**
+**Last updated 1st September 2021**
 
 
 ## Objective  
@@ -62,7 +62,7 @@ You can either grant the `Project admin` role to the user, which will give them 
 
 In order to push and pull code (or to SSH to one of the project's environments) the user will need to add an SSH key or use the WebPaas CLI.
 
-.
+
 
 ### Manage users permissions with the CLI
 
@@ -73,11 +73,11 @@ Available commands:
 
 
 * `webpaas user:delete`
-  * Delete a user
+    * Delete a user
 * `webpaas user:list` (`users`)
-  * List project users
+    * List project users
 * `webpaas user:role`
-  * View or change a user's role
+    * View or change a user's role
 
 
 
