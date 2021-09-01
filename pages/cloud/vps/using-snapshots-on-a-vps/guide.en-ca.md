@@ -50,6 +50,11 @@ Since you can only have one snapshot activated at a time, the existing snapshot 
 
 If you are sure that you would like to reset your VPS to the status of the snapshot, click `Restore the snapshot`{.action} and confirm the restoration task in the popup window.
 
+> [!alert]
+>
+> Restoring a snapshot will automatically delete it to make space for the next one, this action is irreversible. If you wish to conserve the same snapshot, make sure you take a new one once the restoration process is completed before making any changes to the restored system.
+> 
+
 ### Best practice for using snapshots
 
 #### Configuring the QEMU agent on a VPS
