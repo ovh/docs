@@ -73,7 +73,9 @@ To update your server's operating system, type the following command at the comm
 ~$ sudo vi /etc/hosts.allow
 ```
 
-### To allow root login for connections using other applications such as putty, type the following commands at the command line :
+### To allow root login for connections using other applications such as putty
+
+Type the following commands at the command line :
 
 ```
 ~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
