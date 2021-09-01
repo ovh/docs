@@ -121,6 +121,22 @@ You now need to restart your interface:
 /etc/init.d/networking restart
 ```
 
+### Debian 10
+
+#### Step 1: Create a backup
+
+First, make a copy of the config file, so that you can revert at any time:
+
+```sh
+cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+```
+You can now modify the config file:
+
+```sh
+editor /etc/network/interfaces.d/50-cloud-init
+```
+
+Next, follow the instructions in step 2 and 3 as shown above.
 
 ### Debian 9+, Ubuntu 17.04, Fedora 26+ and Arch Linux
 
