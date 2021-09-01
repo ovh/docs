@@ -18,28 +18,19 @@ Découvrez comment résoudre les erreurs les plus fréquentes liées à la mise 
 
 ## En pratique
 
-### OVHcloud Connect Direct (uniquement) : vérifier la présence de lumière sur le lien
+Un service OVHcloud Connect apparaît dans votre espace client OVHcloud et ne peut être confgiuré que lorsqu'il est considéré comme **livré**.
 
-Lors de la commande d’un lien OVHCloud Connect Direct, il est possible de voir côté OVHcloud les valeurs optiques IN/OUT. Vous pouvez demander des informations à ce sujet à votre équipe support.
+En ce qui concerne l'offre **OVHcloud Connect Direct**, le service est **livré** dans les situations suivantes :
 
-- Si **OUT** est « **DOWN** », cela signifie que le port est en cours d'activation sur l'équipement OVHcloud. Le port devient actif (« **UP** ») au bout de quelques minutes.
-- Si **IN** est « **DOWN** », les raisons suivantes peuvent en être à l'origine :
-    - votre équipement n'est pas encore branché;
-    - le port peut être désactivé;
-    - un défaut est présent au niveau de l'interconnexion (Cross Connect).
+- dès lors que l'interconnexion (Cross-Connect) est établie par le client, de la lumière alors étant détectée côté OVHcloud.
+- au bout de 60 jours après la commande si aucune lumière n'a été détectée.
 
-> [!warning]
->
-> - Pour rappel, l'interconnexion (Cross-Connect) est sous votre responsabilité contractuelle.
-> - Avant de prendre contact avec les équipes OVHcloud, vous devez ouvrir un ticket auprès du PoP.
->
-
-#### Vérification de la LOA
+### Vérification de la LOA
 
 Une mauvaise interprétation de la position sur l'interconnexion (Cross-Connect) par le PoP peut engendrer une absence de lumière sur le lien OVHcloud Connect Direct.
 Par exemple, le PoP peut indiquer qu'il n'y a pas d'interconnexion sur la position mentionnée sur la LOA.
 
-##### **Comment lire les informations sur la LOA ?**
+#### Comment lire les informations sur la LOA ?
 
 Voici un exemple d'informations sur la LOA :
 
@@ -59,20 +50,48 @@ Voici l'interprétation de ces informations :
 - Side (face avant ou arrière) : **BACK**
 - Fiber Termination : **SC/PC**
 
-#### Inversion de fibre
+### OVHcloud Connect Direct (uniquement) : vérifier la présence de lumière sur le lien
 
-S'il y a une inversion de fibre entre le PortA et le PortB, le lien sera « DOWN ».
+> [!warning]
+>
+> - Pour rappel, l'interconnexion (Cross-Connect) est contractuellement de votre responsabilité.
+> - Avant de prendre contact avec les équipes OVHcloud, vous devez ouvrir un ticket auprès du PoP concerné par la LOA.
+>
 
-Prenez contact avec le PoP pour vérifier qu'il n'y a pas d'inversion sur le patch panel.
+#### Avant la livraison du service
+
+Lors de la commande d’un lien OVHCloud Connect Direct, il est possible de voir côté OVHcloud les valeurs optiques IN/OUT. Vous pouvez demander des informations à ce sujet à votre équipe support.
+
+Si le service n'est pas encore livré, nos équipes support pourront vérifier le statut des valeurs optiques IN et OUT côté infrastructure OVHcloud.
+
+#### Après la livraison du service
+
+Dans votre espace client OVHcloud, vérifiez les valeurs optiques IN/OUT :
+
+- Si la valeur **OUT** est « **DOWN** », les raisons suivantes peuvent en être à l'origine :
+    - le port côté OVHcloud n'émet pas de lumière.
+    - le service est en cours de résiliation.
+    - le port est verrouillé dans votre espace client OVHcloud.
+    - il y a un défaut sur le SFP.
+- Si **IN** est « **DOWN** », les raisons suivantes peuvent en être à l'origine :
+    - votre équipement n'est pas encore branché;
+    - le port peut être désactivé ou a un défaut qui l'empêche d'émettre de la lumière;
+    - un défaut est présent au niveau de l'interconnexion (Cross Connect).
+
+### Inversion de fibre Tx/Rx
+
+S'il y a une inversion de fibre entre le Port A et le Port B, la lumière n'est pas reçue au bon endroit et le port **IN (Rx)** affichera **DOWN**. Si votre service n'est pas encore livré, contactez le support pour connaître l'état du lien.
+
+Prenez contact avec le PoP concerné par la LOA pour vérifier qu'il n'y a pas d'inversion Tx/Rx sur l'interconnexion (Cross Connect).
 
 ### Vérification du peering
 
 La vérification du peering doit être faite une fois que la lumière est « **UP** » des deux côtés.
 
-Si le peering est « **DOWN** » d'un côté  ou des deux côtés, cela peut avoir plusieurs raisons :
+Si le peering ne peut pas être établi (DOWN) d'un côté ou des deux côtés, cela peut avoir plusieurs raisons :
 
 - un défaut de SFP;
-- une mauvaise configuration de l'auto-négociation;
+- une mauvaise configuration de l'auto-négociation côté client;
 - un conflit d'adresses IP;
 - une mauvaise configuration du lien BGP.
 
@@ -80,7 +99,7 @@ Si le peering est « **DOWN** » d'un côté  ou des deux côtés, cela peut avo
 
 Des valeurs optiques **UP** mais pas de lien Ethernet (interface **DOWN**) sont un symptôme d'un SFP mal configuré.
 
-Le SFP à utiliser sur l'équipement client sur une liaison OVHcloud Connect dépend du lien commmandé. Vous devez utiliser un SFP conforme à la bande-passante commandée.
+Le SFP à utiliser sur l'équipement client pour une liaison OVHcloud Connect dépend du lien commmandé. Vous devez utiliser un SFP conforme à la bande-passante commandée.
 
 Si vous avez commandé un lien 1 Gbit/s, le SFP sera: 1000Base-LX/LH. Utilisez la commande suivante :
 
@@ -96,7 +115,7 @@ speed 10000
 
 Pour plus d'informations, consultez les [capacités et limites techniques de l'offre OVHcloud Connect](../occ-limits/)
 
-#### Configuration de l'auto-négociation
+#### Désactiver l'auto-négociation
 
 L'auto-négociation n'est pas supportée dans l'offre OVHcloud Connect. Ce paramètre doit être désactivé.
 
@@ -125,32 +144,26 @@ speed 1000
 no negotiate auto
 ```
 
-#### Configuration du PoP/DC
+#### Configuration IP du PoP/DC
 
-Un conflit d'adresses IP peut survenir si vous avez sélectionné une adresse IP utilisée par OVHcloud.
+Un conflit d'adresses IP peut survenir si vous utilisez une/des adresse(s) IP normalement réservée(s) pour OVHcloud.
 
-Les règles de configuration des adresses IP en fonction du subnet sont les suivantes :
+Les règles d'attribution des adresses IP en fonction du subnet sont les suivantes :
 
-- subnet côté DC : /28 (valeur minimum) - Trois premières adresses IP pour OVHcloud - Vlan fixé à 0 (untagged).
-- subnet côté PoP: /30 (valeur fixe) - Première adresse IP pour OVHcloud, deuxième adresse IP pour le client.
+- subnet côté DC : /28 (valeur minimum) - Les trois premières adresses IP sont réservées pour OVHcloud - Vlan fixé à 0 (untagged).
+- subnet côté PoP: /30 (valeur fixe) - La pemière adresse IP est réservée pour OVHcloud, deuxième adresse IP pour le client.
 
-### Configuration du lien BGP
+#### Configuration du lien BGP
 
 La BGP Area côté client doit être différente de celle côté OVHcloud.
 
 - Range Area = AS BGP
-- AS : n'importe lequel (de préférence entre 64512-65534)
-- La zone AS d'OVHcloiud BGP et votre numéro d'AS BGP (côté PoP) doivent être différents.
+- Numéro d'AS : Nous recommandons des ASN entre 64512 et 65534. Le choix reste libre, à l'exception des numéros suivants qui sont réservés pour OVHcloud.
+     - 65501 si le PoP est en Europe
+     - 65502 si le PoP est au Canada
+     - 65519 si le PoP est en Asie
+- La zone AS d'OVHcloud BGP et votre numéro d'AS BGP (côté PoP) doivent être différents.
 - La zone AS d'OVHcloud BGP : peut être la même entre la configuration côté DC et la configuration côté PoP (recommandé)
-
-### OVHcloud Connect Direct (uniquement) : mon offre n'est pas visible dans l'espace client
-
-Un service OVHcloud Connect apparaît dans votre espace client OVHcloud dès lors qu'il est considéré comme **livré**.
-
-En ce qui concerne l'offre OVHcloud Connect Direct, le service est **livré** dans les situations suivantes :
-
-- dès lors que l'interconnexion (Cross-Connect) est établie par le client, de la lumière alors étant détectée côté OVHcloud.
-- au bout de 60 jours après la commande si aucune lumière n'a été détectée.
 
 ## Aller plus loin
 
