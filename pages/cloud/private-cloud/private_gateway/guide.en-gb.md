@@ -48,10 +48,10 @@ The vSphere interface is accessible by default over the Internet. For infrastruc
 
 Before starting, get the following necessary information:
 
-- **serviceName** : the Hosted Private Cloud name(syntaxe pcc-X-X-X-X)
-- **datacenterId** : the datacenter ID
-- **ip** & **netmask** : the IP address and netmask for the private gateway
-- **portgroup** : the PortGroup name for vRack connexion.
+- **serviceName**: the Hosted Private Cloud name (syntax: pcc-X-X-X-X)
+- **datacenterId**: the datacenter ID
+- **ip** & **netmask**: the IP address and netmask for the private gateway
+- **portgroup**: the PortGroup name for vRack connexion.
 
 To be used in the following API calls.
 
@@ -71,8 +71,8 @@ folder from the **Storage** view. It is added to host the virtual machine withou
 
 Before starting, get the following necessary information:
 
-- **serviceName** : the Hosted Private Cloud name(syntaxe pcc-X-X-X-X)
-- **datacenterId** : the datacenter ID
+- **serviceName**: the Hosted Private Cloud name (syntax: pcc-X-X-X-X)
+- **datacenterId**: the datacenter ID
 
 > [!warning]
 >
