@@ -35,9 +35,21 @@ Ces blocages se traduisent par une page "403 fordidden" indiquant que l'accès a
 
 ### Étape 1 : déterminez les causes de l'anomalie
 
-### Étape 2 : intervenir sur votre hébergement
+La page "403 forbidden" est-elle apparue suite à une modification de votre site (comme une modification des droits d'accès sur ses fichiers, du fichier .htaccess ou de l'installation d'un plugin de sécurité ?) Si tel est le cas, [restaurez l'espace de stockage de votre hébergement](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) à une date antérieure à cette modification.
+
+Dans le cas contraire, consultez votre adresse e-mail d'échange avec nos services. Si vous avez reçu un mail d'OVHcloud indiquant une fermeture de votre hébergement pour des raisons de sécurité, passez à [l'étape 2][#etape2]
+
+![mail_blocage](images/mail_blocage.png){.thumbnail}
+
+### Étape 2 : intervenir sur votre hébergement <a name="etape2"></a>
+
+
+
+
 
 ### Étape 3 : réactiver votre hébergement web
+
+
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
