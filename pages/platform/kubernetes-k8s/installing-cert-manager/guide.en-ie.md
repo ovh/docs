@@ -87,7 +87,7 @@ https://cert-manager.io/docs/usage/ingress/
 
 Now that the cert-manager is deployed, we need to configure a cluster-issuer to perform Let's Encrypt ACME challenges.
 
-To avoid be banned by Let's Encrypt robots, for testing purposes, the staging environment should be used before going prod.
+To avoid to be banned by Let's Encrypt robots, for testing purposes, the staging environment should be used before going to prod.
 
 <pre class="console"><code>$ cat <<EOT > lets-encrypt-issuer.yaml
 apiVersion: cert-manager.io/v1
