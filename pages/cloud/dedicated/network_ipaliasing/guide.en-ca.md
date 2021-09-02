@@ -5,7 +5,7 @@ excerpt: 'Find out how to add failover IP addresses to your server configuration
 section: 'Network Management'
 ---
 
-**Last updated 19th April 2021**
+**Last updated 2nd September 2021**
 
 ## Objective
 
@@ -35,6 +35,95 @@ The following sections contain the configurations for the most commonly used dis
 Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
 > 
 
+### Debian 10
+
+#### Step 1: Create a backup
+
+First, make a copy of the config file, so that you can revert at any time:
+
+```sh
+cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+```
+You can now modify the config file:
+
+```sh
+editor /etc/network/interfaces.d/50-cloud-init
+```
+
+#### Step 2: Edit the config file
+
+> [!primary]
+>
+Note that the names of the network interfaces in our examples may differ from your own. Please adjust to your appropriate interface names.
+>
+
+You can now modify the config file:
+
+```sh
+editor /etc/network/interfaces
+```
+
+You then need to add a secondary interface:
+
+```bash
+auto eth0:0
+iface eth0:0 inet static
+address FAILOVER_IP
+netmask 255.255.255.255
+```
+
+To ensure that the secondary interface is enabled or disabled whenever the `eth0` interface is enabled or disabled, you need to add the following line to the eth0 configuration:
+
+```bash
+post-up /sbin/ifconfig eth0:0 FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP
+pre-down /sbin/ifconfig eth0:0 down
+```
+
+If you have two failover IPs to configure, the /etc/network/interfaces file should look like this:
+
+```bash
+auto eth0
+iface eth0 inet static
+address SERVER_IP
+netmask 255.255.255.0
+broadcast xxx.xxx.xxx.255
+gateway xxx.xxx.xxx.254
+
+auto eth0:0
+iface eth0:0 inet static
+address FAILOVER_IP1
+netmask 255.255.255.255
+
+auto eth0:1
+iface eth0:1 inet static
+address FAILOVER_IP2
+netmask 255.255.255.255
+```
+Or like this:
+```bash
+auto eth0
+iface eth0 inet static
+address SERVER_IP
+netmask 255.255.255.0
+broadcast xxx.xxx.xxx.255
+gateway xxx.xxx.xxx.254
+
+# IPFO 1
+post-up /sbin/ifconfig eth0:0 FAILOVER_IP1 netmask 255.255.255.255 broadcast FAILOVER_IP1
+pre-down /sbin/ifconfig eth0:0 down
+
+# IPFO 2
+post-up /sbin/ifconfig eth0:1 FAILOVER_IP2 netmask 255.255.255.255 broadcast FAILOVER_IP2
+pre-down /sbin/ifconfig eth0:1 down
+```
+
+#### Step 3: Restart the interface
+
+You now need to restart your interface:
+
+```sh
+/etc/init.d/networking restart
+```
 
 ### Debian 6/7/8 and derivatives
 
@@ -120,23 +209,6 @@ You now need to restart your interface:
 ```sh
 /etc/init.d/networking restart
 ```
-
-### Debian 10
-
-#### Step 1: Create a backup
-
-First, make a copy of the config file, so that you can revert at any time:
-
-```sh
-cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
-```
-You can now modify the config file:
-
-```sh
-editor /etc/network/interfaces.d/50-cloud-init
-```
-
-Next, follow the instructions in step 2 and 3 as shown above.
 
 ### Debian 9+, Ubuntu 17.04, Fedora 26+ and Arch Linux
 
@@ -315,7 +387,6 @@ You now need to restart your interface:
 /etc/init.d/net.eth0 restart
 ```
 
-
 ### openSUSE
 
 #### Step 1: Create a backup
@@ -470,7 +541,6 @@ Type in your failover IP and the subnet mask **255.255.255.255**.
 Click on `Add`{.action}.
 
 Your failover IP is now functional.
-
 
 ### FreeBSD
 
