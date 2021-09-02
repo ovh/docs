@@ -99,8 +99,6 @@ SITE CHMOD 705 /
 
 Une réponse **« 200 Permissions changed on / »** devrait vous confirmer que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site. 
 
-![result_filezilla](images/result_filezilla.png){.thumbnail}
-
 #### Réactiver votre hébergement avec le FTP Explorer « net2ftp »
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez vous dans la partie `Web Cloud`{.action}, `Hébergements`{.action}, puis cliquez sur l'onglet `FTP - SSH`{.action} de l'hébergement concerné. 
@@ -109,15 +107,15 @@ Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
-Dans la partie supérieure de la page, renseignez la commande ci-dessous puis cliquez sur le bouton représentant un « v » vert. 
+Dans la partie supérieure de la page, renseignez la commande ci-dessous puis cliquez sur le bouton représentant un « v » vert.
+
+![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
 
 ```
 SITE CHMOD 705 /
 ```
 
-Une réponse **« 200 Permissions changed on / »** devrait vous confirmer que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site.
-
-![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
+Une réponse **« 200 Permissions changed on / »** confirme que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site.
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
