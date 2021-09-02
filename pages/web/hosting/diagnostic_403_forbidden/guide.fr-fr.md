@@ -43,7 +43,7 @@ Dans le cas contraire, consultez votre adresse e-mail d'échange avec nos servic
 
 ![mail_blocage](images/mail_blocage.png){.thumbnail}
 
-Si la page "403 forbidden" est apparue sans action de votre part et que vous n'avez pas reçu de mails de nos services à ce sujet, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
+Si la page "403 forbidden" est apparue sans action de votre part et que vous n'avez pas reçu de mails de nos services à ce sujet ou si la [restauration de votre hébergement]((../restauration-ftp-filezilla-espace-client/)) ne rétablit pas l'accès à votre site, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
 
 ### Étape 2 : sécuriser vos solutions
 
@@ -65,25 +65,54 @@ Modifiez ensuite l'ensemble des mots de passe de vos services OVHcloud en suivan
 
 ### Étape 3 : intervenir sur votre hébergement
 
-Vérifiez tout d'abord la date d'envoi du mail de nos services indiquant la fermeture de votre hébergement :
+Notez tout d'abord la date d'envoi du mail indiquant la fermeture de votre hébergement, ainsi que le ou les répertoires qui contiennent les exemples de fichiers illégitimes.
 
-#### Cas 1 : Votre hébergement a été désactivé il y a 14 au plus
+#### Cas 1 : votre hébergement a été désactivé il y a moins de deux semaines
 
-Si l'accès à votre site est impossible depuis deux semaines maximum et que votre hébergement ne contient qu'un seul site, restaurez votre espace de stockage en suivant les instructions de ce [guide](../restauration-ftp-filezilla-espace-client/#restaurer-lespace-de-stockage-depuis-lespace-client).
+Si votre hébergement a été fermé il y a moins de deux semaines et qu'il ne contient qu'un seul site, restaurez votre espace de stockage en suivant les instructions de ce [guide](../restauration-ftp-filezilla-espace-client/#restaurer-lespace-de-stockage-depuis-lespace-client).
 
-Si l'accès à votre site est impossible depuis deux semaines maximum et que votre hébergement contient plusieurs sites, restaurez votre espace de stockage en suivant les instructions de ce [guide](../restauration-ftp-filezilla-espace-client/#restaurer-un-fichier-depuis-un-logiciel-ou-une-interface).
+Si votre hébergement a été fermé il y a moins de deux semaines et qu'il contient plusieurs sites, restaurez uniquement le ou les dossiers contenant les fichiers illégitimes en suivant les instructions de ce [guide](../restauration-ftp-filezilla-espace-client/#restaurer-un-fichier-depuis-un-logiciel-ou-une-interface).
 
-#### Cas 2 : Votre hébergement a été désactivé il y a plus de 14 jours
+#### Cas 2 : votre hébergement a été désactivé il y a plus de 14 jours
 
-Si l'accès à votre site est impossible depuis plus de 14 jours,
+Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/), afin d'effectuer un audit de sécurité de vos solutions, **avant** la réouverture de votre hébergement.
 
-### Étape 5 : réactiver votre hébergement web
+### Étape 4 : réactiver votre hébergement web
+
+#### Réactiver votre hébergement avec FileZilla
 
 > [!primary]
 >
-> Que faire si la restauration ne suffit pas ?
+> Si vous souhaitez installer le logiciel **Filezilla** afin de manipuler les fichiers de votre site, suivez les instructions de ce [guide](../mutualise-guide-utilisation-filezilla/)
 >
-> 
+
+Ouvrez votre logiciel FileZilla puis connectez-vous à votre espace de stockage. Cliquez ensuite sur `Serveur`{.action} dans la barre de menu, puis sur `Entrer une commande FTP`{.action} (l'intitulé peut être légèrement différent suivant la version de FileZilla que vous utilisez). Dans la fenêtre qui s'affiche, renseignez la commande ci-dessous puis validez-la.
+
+```
+SITE CHMOD 705 /
+```
+
+Une réponse « ok » devrait vous confirmer que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site. 
+
+![](images/.png){.thumbnail}
+
+#### Réactiver votre hébergement avec le FTP Explorer « net2ftp »
+
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez vous dans la partie `Web Cloud`{.action}, `Hébergements`{.action} puis dans l'onglet `FTP - SSH`{.action} de l'hébergement concerné. 
+
+Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](/connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Cliquez ensuite sur le bouton `Avancé`{.action}, puis sur le bouton `Go`{.action} à côté de « Envoyer des commandes FTP arbitraires au serveur FTP ».
+
+![](images/.png){.thumbnail}
+
+Dans la partie supérieure de la page, renseignez la commande ci-dessous puis cliquez sur le bouton représentant un « v » vert. 
+
+```
+SITE CHMOD 705 /
+```
+
+Une réponse devrait vous confirmer que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site.
+
+![](images/.png){.thumbnail}
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
