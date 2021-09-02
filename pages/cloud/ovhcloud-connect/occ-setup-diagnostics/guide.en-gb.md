@@ -6,7 +6,7 @@ section: Getting started
 order: 4
 ---
 
-**Last updated 23rd August 2021**
+**Last updated 1st September 2021**
 
 ## Objective
 
@@ -18,28 +18,19 @@ Find out how to resolve the most common errors associated with setting up OVHclo
 
 ## Instructions
 
-### Checking for light on the OVHcloud Connect link
+An OVHcloud Connect service will appear in your OVHcloud Control Panel, and can only be configured when it is considered **delivered**.
 
-When you order an OVHcloud Connect link, you can see the IN/OUT optical values on the OVHcloud side. You can request information about this from your support team.
+For the **OVHcloud Connect Direct** offer, the service is **delivered** in the following situations:
 
-- If **OUT** is **DOWN**, this means that the port is being enabled on OVHcloud equipment. After a few minutes, the port becomes active (**UP**).
-- If **IN** is **DOWN**, the following reasons may be the cause:
-    - your equipment is not yet connected
-    - the port may be disabled;
-    - there is a Cross-Connect issue.
+- as soon as the cross-connect is established by the customer, light is then detected on the OVHcloud side.
+- after 60 days after the order if no light has been detected.
 
-> [!warning]
->
-> - As a reminder, Cross-Connect is your contractual responsibility.
-> - Before contacting the OVHcloud teams, you will need to open a ticket to the PoP.
->
-
-#### LOA verification
+### LOA verification
 
 A misinterpretation of the position on the Cross-Connect by the PoP can result in a lack of light on the OVHcloud Connect link.
-For example, the PoP may indicate that there is no interconnection at the LOA position.
+For example, the PoP may indicate that there is no interconnection at the position mentioned on the LOA.
 
-##### **How to read LOA information?**
+#### How to read LOA information?
 
 Here is an example of information on the LOA:
 
@@ -59,20 +50,48 @@ This information is interpreted as follows:
 - Side (front or back): **BACK**
 - Fiber Termination: **SC/PC**
 
-#### Fiber inversion
+### OVHcloud Connect Direct (only): checking for light on the link
 
-If there is a fiber inversion between PortA and PortB, the link will be DOWN.
+> [!warning]
+>
+> - As a reminder, Cross-Connect is contractually your responsibility.
+> - Before contacting the OVHcloud teams, you will need to open a ticket to the PoP concerned by the LOA.
+>
 
-Contact the PoP to check that there is no reversal on the patch panel.
+#### Before service delivery
+
+When you order an OVHcloud Connect link, the IN/OUT optical values can be checked on the OVHcloud side. You can request information about this from your support team.
+
+If the service has not yet been delivered, our support teams will be able to check the status of the IN and OUT optical values on the OVHcloud infrastructure side.
+
+#### After service delivery
+
+In the OVHcloud Control Panel, check the IN/OUT optical values:
+
+- If the **OUT** value is **DOWN**, , the following reasons may be the cause:
+    - the port on the OVHcloud side does not emit light
+    - the service is being cancelled
+    - the port is locked in your OVHcloud Control Panel
+    - there is an SFP issue
+- If **IN** is **DOWN**, the following reasons may be the cause:
+    - your equipment is not yet connected
+    - the port can be disabled or has a defect that prevents it from emitting light
+    - there is a Cross-Connect issue
+
+### TX/Rx Fiber inversion
+
+If there is a fiber inversion between Port A and Port B, the light is not received in the right place and the **IN (Rx)** port will display **DOWN**. If your service has not yet been delivered, contact the support teams so that the link status is checked.
+
+Contact the PoP concerned by the LOA to check that there is no Tx/Rx inversion on the Cross-Connect.
 
 ### Peering verification
 
-The peering check should be done once the light is **UP** on both sides.
+The peering should be checked once the light is **UP** on both sides.
 
-If peering is **DOWN** on one or both sides, there may be several reasons:
+If peering cannot be established (DOWN) on one or both sides, there may be several reasons:
 
 - An SFP issue
-- An improper auto-negotiation configuration
+- Auto-negotiation is not disabled on the customer side
 - IP address conflict
 - BGP link misconfiguration
 
@@ -96,7 +115,7 @@ speed 10000
 
 For more information, please read the [technical capabilities and limitations of the OVHcloud Connect solution](../occ-limits/)
 
-#### Configuring auto-negotiation
+#### Disabling auto-negotiation
 
 Auto-negotiation is not supported in the OVHcloud Connect solution. This setting must be disabled.
 
@@ -127,20 +146,23 @@ no negotiate auto
 
 #### PoP/DC configuration
 
-An IP address conflict may occur if you have selected an IP address used by OVHcloud.
+An IP address conflict may occur if you are using an IP address(es) normally reserved for OVHcloud.
 
-The rules for configuring IP addresses based on the subnet are as follows:
+The rules for assigning IP addresses according to the subnet are as follows:
 
-- DC-side subnet: /28 (minimum value) - First three IP addresses for OVHcloud - Vlan fixed to 0 (untagged).
-- PoP-side subnet: /30 (fixed value) - First IP address for OVHcloud, second IP address for the customer.
+- DC-side subnet: /28 (minimum value) - The first three IP addresses are reserved for OVHcloud - Vlan fixed to 0 (untagged).
+- PoP-side subnet: /30 (fixed value) - The first IP address is reserved for OVHcloud, the second IP address for the customer.
 
-### Configuring the BGP link
+#### Configuring the BGP link
 
-The BGP Area on your side must be different to the OVHcloud side.
+The BGP Area on the customer side must be different from the OVHcloud side.
 
 - Range Area = AS BGP
-- AS: any (preferably between 64512-65534)
-- The OVHcloud BGP AS zone and your BGP AS number (PoP side) must be different.
+- AS number: We recommend ASNs between 64512 and 65534. The choice is your, with the exception of the following numbers, which are reserved for OVHcloud.
+    - 65501 if the PoP is in Europe
+    - 65502 if the PoP is in Canada
+    - 65519 if the PoP is in Asia
+- The OVHcloud BGP AS zone and your BGP AS number (on the PoP side) must be different.
 - The OVHcloud BGP AS zone: can be the same between the DC side and the PoP side configuration (recommended)
 
 ## Go further

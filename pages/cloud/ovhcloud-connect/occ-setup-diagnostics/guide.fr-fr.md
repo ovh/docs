@@ -18,7 +18,7 @@ Découvrez comment résoudre les erreurs les plus fréquentes liées à la mise 
 
 ## En pratique
 
-Un service OVHcloud Connect apparaît dans votre espace client OVHcloud et ne peut être confgiuré que lorsqu'il est considéré comme **livré**.
+Un service OVHcloud Connect apparaît dans votre espace client OVHcloud et ne peut être configuré que lorsqu'il est considéré comme **livré**.
 
 En ce qui concerne l'offre **OVHcloud Connect Direct**, le service est **livré** dans les situations suivantes :
 
@@ -91,7 +91,7 @@ La vérification du peering doit être faite une fois que la lumière est « **
 Si le peering ne peut pas être établi (DOWN) d'un côté ou des deux côtés, cela peut avoir plusieurs raisons :
 
 - un défaut de SFP;
-- une mauvaise configuration de l'auto-négociation côté client;
+- l'auto-négociation n'est pas désactivée côté client;
 - un conflit d'adresses IP;
 - une mauvaise configuration du lien BGP.
 
