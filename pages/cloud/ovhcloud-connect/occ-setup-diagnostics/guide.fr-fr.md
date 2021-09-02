@@ -69,9 +69,9 @@ Si le service n'est pas encore livré, nos équipes support pourront vérifier l
 Dans votre espace client OVHcloud, vérifiez les valeurs optiques IN/OUT :
 
 - Si la valeur **OUT** est « **DOWN** », les raisons suivantes peuvent en être à l'origine :
-    - le port côté OVHcloud n'émet pas de lumière.
-    - le service est en cours de résiliation.
-    - le port est verrouillé dans votre espace client OVHcloud.
+    - le port côté OVHcloud n'émet pas de lumière;
+    - le service est en cours de résiliation;
+    - le port est verrouillé dans votre espace client OVHcloud;
     - il y a un défaut sur le SFP.
 - Si **IN** est « **DOWN** », les raisons suivantes peuvent en être à l'origine :
     - votre équipement n'est pas encore branché;
@@ -158,12 +158,12 @@ Les règles d'attribution des adresses IP en fonction du subnet sont les suivant
 La BGP Area côté client doit être différente de celle côté OVHcloud.
 
 - Range Area = AS BGP
-- Numéro d'AS : Nous recommandons des ASN entre 64512 et 65534. Le choix reste libre, à l'exception des numéros suivants qui sont réservés pour OVHcloud.
+- Numéro d'AS : Nous recommandons des ASN entre 64512 et 65534. Le choix reste libre, à l'exception des numéros suivants qui sont réservés pour OVHcloud :
      - 65501 si le PoP est en Europe
      - 65502 si le PoP est au Canada
      - 65519 si le PoP est en Asie
 - La zone AS d'OVHcloud BGP et votre numéro d'AS BGP (côté PoP) doivent être différents.
-- La zone AS d'OVHcloud BGP : peut être la même entre la configuration côté DC et la configuration côté PoP (recommandé)
+- La zone AS d'OVHcloud BGP : peut être la même entre la configuration côté DC et la configuration côté PoP (recommandé).
 
 ## Aller plus loin
 
