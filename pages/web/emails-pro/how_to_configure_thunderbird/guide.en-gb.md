@@ -3,100 +3,98 @@ title: 'Configuring an Email Pro address on Thunderbird for Windows'
 slug: configure-emailpro-for-thunderbird-windows
 routes:
     canonical: 'https://https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/'
-excerpt: 'Find out how to configure your Email Pro address on Thunderbird for Windows'
+excerpt: 'Find out how to configure your Email Pro address in Thunderbird for Windows'
 section: 'Email client configuration'
 order: 5
 ---
 
-**Last updated 26/08/2021**
+**Last updated 26th August 2021**
 
 ## Objective
 
 You can configure Email Pro accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application. Thunderbird is a free email client.
 
-**Find out how to configure your Email Pro  address on Thunderbird on Windows.**
+**This guide explains how to configure your Email Pro address on Thunderbird for Windows.**
 
 > [!warning]
+> This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
-> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
-> 
-> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+> If you experience any difficulties carrying out these operations, we recommend that you contact a specialist service provider and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
 > 
 
 ## Requirements
 
-- You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro/)account.
+- an [Email Pro](https://www.ovh.co.uk/emails/email-pro/)account
 - Thunderbird software installed on your Windows system
-- You need to have the required credentials for the email address you would like to configure.
+- login credentials for the email account to be configured
  
 ## Instructions
 
-> [!warning]
+> [!primary]
 >
-> In our example, we use the server comment: pro**?**.mail.ovh.net. You will need to replace the “?” by the number designating the server for your Email Pro service.
+> In this guide, we use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this figure in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Web Cloud`{.action} section, then `Email Pro`{.action}
-> in the left-hand column. The server name is visible in the **Connection** box on the `General`{.action} Information tab.
-> 
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+>
 
-### Add account
+### Adding the account
 
 - **When you start the application for the first time**: A setup wizard will appear and prompt you to enter your email address.
 
-- **If an account has already been set up**: click `File`{.action} in the menu bar at the top of your screen, then `New`{.action} and finally `Get a new email account...`{.action}.
+- **If you have already added an account**: Click `File`{.action} in the menu bar at the top of your screen, then `New`{.action} and finally `Get a new email account...`{.action}.
+
 
 | | |
 |---|---|
-|![Thunderbird](images/thunderbird-win-emailpro01.png){.thumbnail}|In the window that appears, enter the following 3 information: <br>- Your display name<br>- Email <br>- Password|
-|Then click `Configure manually...`{.action} to enter the **INCOMING** server settings: <br>- Protocol **IMAP** <br>- Server **pro?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentication **Normal password** <br>- Identifying **your full email address**|![Thunderbird](images/thunderbird-win-emailpro02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-emailpro03.png){.thumbnail}|Enter **OUTGOING** server settings: <br>- Protocol **SMTP** <br>- Server **pro?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentication **Normal password** <br>- Identifying **your full email address**<br><br>To complete the configuration, click `Done`{.action}|
+|![Thunderbird](images/thunderbird-win-emailpro01.png){.thumbnail}|In the window that appears, enter the following information: <br>\- Your display name<br>\- Email <br>\- Password|
+|Then click `Configure manually...`{.action} to enter the **INCOMING** server settings: <br>- Protocol **IMAP** <br>- Server **pro?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentication **Normal password** <br>- Username **Full email address**|![Thunderbird](images/thunderbird-win-emailpro02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-emailpro03.png){.thumbnail}|Enter **OUTGOING** server settings: <br>- Protocol **SMTP** <br>- Server **pro?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentication **Normal password** <br>- Username **Full email address**<br><br>To complete the configuration, click `Done`{.action}|
 
 
 
 For **POP** configuration, the values are:
 
-|Server type|Server name|Encryption method|Port|
+|Server type|Server name|Security type|Port|
 |---|---|---|---|
-|Incoming|pro**?**.mail.ovh.net (the word **?** should be replaced by your server number)|SSL/TLS|995|
-|Outgoing|pro**?**.mail.ovh.net (the word **?** should be replaced by your server number)|STARTTLS|587|
+|Incoming|pro**?**.mail.ovh.net (replace "?" with your server number)|SSL/TLS|993|
+|Outgoing|pro**?**.mail.ovh.net (replace "?" with your server number)|STARTTLS|587|
 
-### Use email address
+### Using your email address
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using an Exchange account in the OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/) interface.
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](../../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
 
-### Retrieve a backup of your email address
+### Retrieving a backup of your email address
 
-If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Export**” section in the “**Thunderbird**” section of our guide on Manually [migrating your email](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/#exporting_1) address.
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/#exporting_1).
 
-### Modify existing settings
+### Modifying existing settings
 
-> [!warning]
+> [!primary]
 >
-> In our example, we use the server comment: pro**?**.mail.ovh.net. You will need to replace the “?” by the number designating the server for your Email Pro service.
+> In this guide, we use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this figure in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Web Cloud`{.action} section, then `Email Pro`{.action}
-> in the left-hand column. The server name is visible in the **Connection** box on the `General`{.action} Information tab.
-> 
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+>
 
 If your email account has already been set up and you need to access the account settings to change them:
 
 - Go to `Tools`{.action} from the menu bar at the top of your screen.
-- Click `Account`{.action} Settings.
+- Click `Account Settings`{.action}.
 
 ![Thunderbird](images/thunderbird-win-emailpro04.png){.thumbnail}
 
-- To change the settings for **receiving** your emails, click `Server`{.action} settings in the left-hand column below your email address.
+- To change the settings for **receiving** your emails, click `Server Settings`{.action} in the left-hand column below your email address.
 
 ![Thunderbird](images/thunderbird-win-emailpro05.png){.thumbnail}
 
-- To change **the settings for sending** emails, click Outgoing `server (SMTP)`{.action} at the bottom of the left-hand column.
-- Click the email address in the list, and then click `Edit`{.action}.
+- To change the settings for **sending** emails, click `Outgoing Server (SMTP)`{.action} at the bottom of the left-hand column.
+- Select the email address in the list, and then click on `Edit`{.action}.
 
 ![Thunderbird](images/thunderbird-win-emailpro06.png){.thumbnail}
 
 
-## Go further
+## Go further <a name="gofurther"></a>
 
 Join our community of users on <https://community.ovh.com/en/>.

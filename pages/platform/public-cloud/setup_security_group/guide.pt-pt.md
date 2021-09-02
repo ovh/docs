@@ -1,98 +1,107 @@
 ---
-title: Configurar um grupo de segurança
-excerpt: Configurar um grupo de segurança
+title: 'Criar e configurar um grupo de segurança no Horizon'
+excerpt: 'Saiba como criar um grupo de segurança e configurá-lo numa instância Public Cloud'
 slug: configurar_um_grupo_de_seguranca
 legacy_guide_number: g1925
 section: Gestão a partir do Horizon
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## 
-Por razões de segurança é possível que configure e utilize regras de filtragem que definem o acesso às suas instâncias.
-Poderá então autorizar e bloquear certas ligações de entrada e saída com a ajuda destes grupos de segurança.
-Eles poderão ser aplicados ao tráfego proveniente de certos endereços IPs, ou mesmo de instânicas configuradas em grupos de segurança específicos.
+**Última atualização: 24/08/2021**
 
-Este guia irá explicar-lhe como poderá proteger as suas instâncias
+## Objetivo
 
+Por razões de segurança, é possível configurar e utilizar regras de filtragem que irão definir os acessos às suas instâncias. Pode autorizar ou bloquear certas ligações de entrada ou de saída através de grupos de segurança. Estas regras podem ser aplicadas para o tráfego proveniente de certos endereços IP, ou mesmo para as instâncias configuradas em grupos de segurança em particular.
 
-## Pré-requisitos
+**Saiba como criar um grupo de segurança e configurá-lo numa instância Public Cloud.**
 
-- [Criar um acesso ao Horizon]({legacy}1773)
-- Estar ligado no manager Horizon
+## Requisitos
 
+- Um [projeto Public Cloud](https://www.ovhcloud.com/pt/public-cloud/).
+- [Ter acesso à interface Horizon](https://docs.ovh.com/pt/public-cloud/criar_um_acesso_a_interface_horizon/)
 
+## Instruções
 
+### 1 - criar um grupo de segurança
 
-## Criação do grupo de segurança
+Aceda à interface [Horizon](https://docs.ovh.com/pt/public-cloud/criar_um_acesso_a_interface_horizon/). Escolha a região na qual pretende criar um grupo de segurança através do botão no canto superior esquerdo.
 
-- Aceda ao menu "Acesso e Segurança" e aceda depois ao separador "Grupos de segurança".
+![definir a região](images/security-group0.png){.thumbnail}
 
+> [!primary]
+>
+> Se um grupo de segurança deve ser utilizado em várias regiões, deve criá-lo para cada uma delas.
+>
 
+Agora, introduza o menu `Network`{.action} e clique em `Security Groups`{.action}. Um quadro lista os grupos de segurança criados. O grupo "default" já está incluído. Este deixa passar todo o tráfego de entrada e de saída.
 
-![](images/img_2959.jpg){.thumbnail}
-Um grupo de segurança "default" já está presente, deixando passar todo o tráfego de entrada e saída.
+Para adicionar um novo grupo de segurança, clique no botão `+ Create Security Group`{.action}.
 
-- Clique em "Criar um grupo de segurança"
+![aceder aos grupos de segurança](images/security-group1.png){.thumbnail}
 
+Na página que aparecer, dê um nome e uma descrição ao grupo que está prestes a criar. Depois, clique no botão `Create Security Group`{.action}.
 
+![criar um grupo de segurança](images/security-group2.png){.thumbnail}
 
-![](images/img_2960.jpg){.thumbnail}
+De volta para o separador `Security Groups`{.action}, a tabela apresenta agora o grupo recém-criado. As regras estão configuradas de forma padrão. Estas últimas deixam passar apenas o tráfego de saída. Passe para a etapa seguinte se pretender alterá-las.
 
-- Depois de preencher o nome e a descrição clique em "Criar um grupo de segurança".
+Se precisar destas regras, continue a ler este manual na etapa 3 "[configurar um grupo de segurança na sua instância](#instance-security-group)".
 
+### Etapa 2: configurar as regras de um grupo de segurança
 
-Ao clicar em "Gerir as regras" poderá consultar as regras criadas de forma padrão:
+Para alterar as regras padrão ou se as suas necessidades evoluírem, clique no botão `Manage Rules`{.action}.
 
-![](images/img_2961.jpg){.thumbnail}
-Um novo grupo de segurança deixará, de forma padrão, passar unicamente o tráfego de saída.
+![gerir as regras](images/security-group3.png){.thumbnail}
 
+Se deixou as regras predefinidas no seu grupo de segurança, estas só deixam passar o tráfego de saída.
 
-## Configuração de uma instância com o grupo de segurança
-
-- Aceder ao menu "Instâncias"
-- Criar uma nova instância
-- Aceder ao separador "Acesso e Segurança" e selecione apenas o novo grupo de segurança.
-
-
-
-![](images/img_2962.jpg){.thumbnail}
-É possível alterar a configuração dos grupos de segurança de instâncias já criadas ao selecionar a opção "Editar os grupos de segurança".
-
-![](images/img_2964.jpg){.thumbnail}
-
-
-## Configuração do grupo de segurança
-Como indicado anteriormente, o grupo de segurança criado somente permite, de forma padrão, passar o tráfego de saída:
-
-
-```
+```bash
 root@serveur:~$ ssh admin@149.xxx.xxx.177
 
 ssh: connect to host 149.xxx.xxx.177 port 22: Connection timed out
 ```
 
+A seguir, na página de gestão das regras, poderá:
 
+- suprimir uma regra existente: para isso, utilize o botão `Delete Rule`{.action};
+- adicionar uma nova regra: para isso, utilize o botão `+ Add Rule`{.action}.
 
-- Aceda ao menu "Acesso e Segurança" e depois aceda a "Grupos de segurança".
-- Clique em "Gerir as regras" e depois clique em "Adicionar uma regra"
+Ao adicionar uma regra, deverá completar as informações solicitadas e clicar em `Add`{.action}.
 
+No nosso exemplo, vamos autorizar a ligação SSH à instância.
 
+![adicionar uma regra](images/security-group4.png){.thumbnail}
 
-![](images/img_2963.jpg){.thumbnail}
-Depois de adicionar a regra deverá aguardar alguns minutos para que a regra seja aplicada.
+Depois de adicionar a nova regra, aguarde alguns minutos para que esta seja tomada em conta.
 
-![](images/img_2965.jpg){.thumbnail}
-
-```
+```bash
 root@serveur:~$ ssh admin@149.xxx.xxx.177
 
-Last login: Tue Oct 13 13:56:30 2015 from proxy-109-190-254-35.ovh.net
-admin@serveur1:~$
+Last login: Tue Out 13 13:56:30 2015 from proxy-109-190-254-35.ovh.net
+admin@serveur1
 ```
 
+### Configurar um grupo de segurança numa instância <a name="instance-security-group"></a>
 
+Na interface Horizon, expanda o menu `Compute`{.action} e selecione `Instances`{.action}. A partir desta página, crie uma nova instância através do botão `Launch Instance`{.action}.
 
+Ao criar a instância, poderá escolher, através do menu `Security Groups`{.action}, o novo grupo de segurança criado na etapa anterior.
 
-## 
-[Voltar ao índice dos guias Cloud]({legacy}1785)
+![afetar grupo de segurança](images/security-group5.png){.thumbnail}
 
+Pode aplicar um novo grupo de segurança numa instância já criada ao clicar no `Edit Security Groups`{.action} à direita da instância.
+
+![modificar grupo de segurança](images/security-group6.png){.thumbnail}
+
+### Eliminar um grupo de segurança
+
+Para eliminar um grupo de segurança, selecione-o clicando no quadrado correspondente à esquerda e clique em `Delete Security Groups`{.action}.
+
+![eliminar um grupo de segurança](images/security-group7.png){.thumbnail}
+
+## Saiba mais
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
