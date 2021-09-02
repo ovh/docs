@@ -27,7 +27,9 @@ To perform certain administrative functions on your server (e.g. installing pack
 This guide assumes that the default user is called 'admin'.
 >
 
-### Setting the root password (Works only for connections using our VNC console)
+### Setting the root password 
+
+#### For connections using our VNC console
 
 First, establish an SSH connection to your server.
 
@@ -40,6 +42,36 @@ Retype new UNIX password:
 passwd: password updated 
 successfully
 ```
+
+#### For connections using Putty
+
+First, establish an SSH connection to your server.
+
+At the command line, enter a password for the admin user (for security reasons, the password will not be shown as you type it):
+
+```sh
+~$ sudo passwd
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated 
+successfully
+```
+
+Next, enable root login and password authentication :
+
+```
+~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+
+~$ service sshd restart
+```
+
+[!primary]
+>
+> Note : You have to remove the private key added to the putty authentication agent file(Pageant key list) to log in as root.
+>
+
 ### Become root
 
 To become the root user, type the following command at the command line:
@@ -72,27 +104,6 @@ To update your server's operating system, type the following command at the comm
 ```
 ~$ sudo vi /etc/hosts.allow
 ```
-
-### To allow root login for connections using other applications such as putty
-
-Type the following commands at the command line :
-
-```
-~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
-
-~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
-```
-
-### Restart your sshd service :
-
-```
-~$ service sshd restart
-```
-
-[!primary]
->
-> Note : For a terminal such as putty, in addition to the steps above, you also have to remove the private key added to the putty authentication agent file.
->
 
 ## Go further
 
