@@ -20,14 +20,14 @@ Por motivos de seguridad, es posible configurar y utilizar reglas de filtrado qu
 
 ## Requisitos
 
-- Un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/).
-- [Estar conectado a Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/)
+- Un [proyecto de Public Cloud](https://www.ovhcloud.com/es/public-cloud/).
+- [Estar conectado a Horizon](https://docs.ovh.com/us/es/public-cloud/crear_un_acceso_a_horizon/)
 
 ## Procedimiento
 
 ### 1\. crear un grupo de seguridad
 
-Acceda a la interfaz [Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/). Seleccione la región en la que desea crear un grupo de seguridad utilizando el botón superior izquierdo.
+Acceda a la interfaz [Horizon](https://docs.ovh.com/us/es/public-cloud/crear_un_acceso_a_horizon/). Seleccione la región en la que desea crear un grupo de seguridad utilizando el botón superior izquierdo.
 
 ![definir la región](images/security-group0.png){.thumbnail}
 
