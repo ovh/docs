@@ -60,7 +60,7 @@ Note that the names of the network interfaces in our examples may differ from yo
 You can now modify the config file:
 
 ```sh
-editor /etc/network/interfaces
+editor /etc/network/interfaces.d/50-cloud-init
 ```
 
 You then need to add a secondary interface:
@@ -79,7 +79,7 @@ post-up /sbin/ifconfig eth0:0 FAILOVER_IP netmask 255.255.255.255 broadcast FAIL
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
-If you have two failover IPs to configure, the /etc/network/interfaces file should look like this:
+If you have two failover IPs to configure, the /etc/network/interfaces.d/50-cloud-init file should look like this:
 
 ```bash
 auto eth0
