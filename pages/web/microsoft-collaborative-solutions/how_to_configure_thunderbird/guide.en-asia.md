@@ -2,7 +2,7 @@
 title: 'Configuring your Exchange account in Thunderbird for Windows'
 slug: exchange-configuration-thunderbird
 routes:
-    canonical: 'https://https://docs.ovh.com/ie/en/emails/configure-email-for-thunderbird-windows/'
+    canonical: 'https://https://docs.ovh.com/asia/en/emails/configure-email-for-thunderbird-windows/'
 excerpt: 'Find out how to configure your Exchange account in Thunderbird'
 section: 'Email clients'
 order: 5
@@ -24,7 +24,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- an [OVHcloud Exchange account](https://www.ovh.ie/emails/hosted-exchange/)
+- an [OVHcloud Exchange account](https://www.ovh.com/asia/emails/hosted-exchange/)
 - Thunderbird software installed on your Windows system
 - login credentials for the email account to be configured
  
@@ -34,7 +34,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 >
 > In this guide, we use as the hostname: ex**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action} in the left-hand column. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action} in the left-hand column. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 ### Adding the account
@@ -62,11 +62,11 @@ For **POP** configuration, the values are:
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-Your Exchange email address and all of its collaborative features are also available via the [OWA interface](https://www.ovh.ie/mail/). If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](../exchange_2016_outlook_web_app_user_guide/).
+Your Exchange email address and all of its collaborative features are also available via the [OWA interface](https://www.ovh.com/asia/mail/). If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](../exchange_2016_outlook_web_app_user_guide/).
 
 ### Retrieving a backup of your email address
 
-If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](https://docs.ovh.com/ie/en/emails/migrate-email-addresses-manually/#exporting_1).
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](https://docs.ovh.com/asia/en/emails/migrate-email-addresses-manually/#exporting_1).
 
 ### Modifying existing settings
 
@@ -74,7 +74,7 @@ If you need to make a change that could lead to the loss of your email account d
 >
 > In this guide, we use as the hostname: ex**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action} in the left-hand column. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action} in the left-hand column. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 If your email account has already been set up and you need to access the account settings to change them:
