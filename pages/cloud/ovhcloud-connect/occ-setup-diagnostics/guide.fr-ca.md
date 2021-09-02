@@ -14,7 +14,7 @@ Découvrez comment résoudre les erreurs les plus fréquentes liées à la mise 
 
 ## Prérequis
 
-- Posséder une [offre OVHcloud Connect](https://www.ovhcloud.com/fr/network-security/ovhcloud-connect/)
+- Posséder une [offre OVHcloud Connect](https://www.ovhcloud.com/fr-ca/network-security/ovhcloud-connect/)
 
 ## En pratique
 
