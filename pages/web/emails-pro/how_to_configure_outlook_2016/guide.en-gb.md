@@ -93,7 +93,7 @@ The window is divided into two parts, **Incoming Mail** and **Outgoing Mail**. C
 ![Outlook](images/config-outlook-emailpro07.png){.thumbnail}
 
 
-## Go further
+## Go further <a name="gofurther"></a>
 
 [Configuring your MX Plan address in Outlook for Windows](../../emails/configuration-outlook-2016/)
 
