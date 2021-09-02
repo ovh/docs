@@ -10,9 +10,9 @@ order: 7
 
 ## Objectif
 
-Suite à une détection d'anomalies, nos robots de sécurité peuvent être amenés à bloquer temporairement l'accès aux sites de votre hébergement. Ce type de blocage automatique vise à empêcher l'envoi de code malveillant vers d'autres entités et à vous protéger ainsi juridiquement.
+Des modifications sur les droits d'accès aux fichiers de votre site, le fichier **.htaccess** ou l'installation d'un plugin de sécurité peuvent parfois se traduire par une page "403 fordidden".
 
-Ces blocages se traduisent par une page "403 fordidden" indiquant que l'accès aux fichiers de votre hébergement est interdit. 
+Il est également possible, que, suite à une détection d'anomalies, nos robots de sécurité aient été amenés à bloquer temporairement l'accès aux fichiers de votre hébergement. Ce type de blocage automatique vise à empêcher l'envoi de code malveillant vers d'autres entités et à vous protéger juridiquement.
 
 ![403error](images/403error.png){.thumbnail}
 
@@ -28,30 +28,31 @@ Ces blocages se traduisent par une page "403 fordidden" indiquant que l'accès a
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/) OVHcloud.
-- Disposer des [identifiants de connexion](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter) à l'espace de stockage de votre hébergement.
+- Disposer des [identifiants de connexion](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter) à l'espace de stockage de votre hébergement.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
 
 ### Étape 1 : estimer la situation
 
-La page "403 forbidden" est-elle apparue suite à une modification de votre site (comme une modification des droits d'accès sur vos fichiers, du [.htaccess](../mutualise-tout-sur-le-fichier-htaccess/) ou de l'installation d'un plugin de sécurité) ?
+Si la page **« 403 forbidden »** est apparue suite à une modification erronée de votre site, [restaurez tout ou partie de l'espace de stockage de votre hébergement](../restauration-ftp-filezilla-espace-client/) à une date antérieure.
 
-Si tel est le cas, [restaurez l'espace de stockage de votre hébergement](../restauration-ftp-filezilla-espace-client/) à une date antérieure.
+Si les sauvegardes disponibles ne vous permettent pas de rétablir l'accès à votre site, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
 
-Dans le cas contraire, consultez votre adresse e-mail d'échange avec nos services. Si vous avez reçu un mail d'OVHcloud indiquant une fermeture de votre hébergement pour des raisons de sécurité, passez à [l'étape 2][#etape2] :
+Dans le cas contraire, consultez votre messagerie. Si vous avez reçu un mail de nos services indiquant une fermeture de votre hébergement pour des raisons de sécurité, passez à [l'étape 2][#etape2] :
 
 ![mail_blocage](images/mail_blocage.png){.thumbnail}
 
-Si la page "403 forbidden" est apparue sans action de votre part et que vous n'avez pas reçu de mails de nos services à ce sujet ou si la [restauration de votre hébergement]((../restauration-ftp-filezilla-espace-client/)) ne rétablit pas l'accès à votre site, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
+Si la page **« 403 forbidden »** est apparue sans action de votre part et que vous n'avez pas reçu de mails de nos services à ce sujet, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
 
 ### Étape 2 : sécuriser vos solutions
 
 Vérifiez tout d'abord la sécurité de votre poste :
 
-• Effectuez les mises à jour de sécurité sur votre appareil.
-• Vérifiez également la présence d'un antivirus, mettez-le à jour et lancez un scan complet. (Si vous n'en possédez aucun, consultez un prestataire spécialisé, avant toute installation).
-• Modifiez l'ensemble de vos mots de passe, notamment ceux de vos adresses e-mails, en respectant ces [bonnes pratiques](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/mots-de-passe){.external}.
+• Effectuez les mises à jour de sécurité.
+• Vérifiez également la présence d'un antivirus, mettez-le à jour et lancez un scan complet. (Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/)  avant toute installation).
+• Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mails, en respectant ces [bonnes pratiques](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/mots-de-passe){.external}.
+• Modifiez les mots de passe de vos services OVHcloud en suivant les instructions de ce [guide](../gerer-et-acceder-a-ses-mots-de-passe/).
 
 > [!alert]
 >
@@ -61,11 +62,9 @@ Vérifiez tout d'abord la sécurité de votre poste :
 >
 > En cas de doute sur les manipulations à réaliser, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
-Modifiez ensuite l'ensemble des mots de passe de vos services OVHcloud en suivant les instructions de ce [guide](../gerer-et-acceder-a-ses-mots-de-passe/).
-
 ### Étape 3 : intervenir sur votre hébergement
 
-Notez tout d'abord la date d'envoi du mail indiquant la fermeture de votre hébergement, ainsi que le ou les répertoires qui contiennent les exemples de fichiers illégitimes.
+Notez tout d'abord la date d'envoi du mail indiquant la désactivation de votre hébergement, ainsi que le ou les dossiers qui contiennent les exemples de fichiers illégitimes.
 
 #### Cas 1 : votre hébergement a été désactivé il y a moins de deux semaines
 
@@ -75,7 +74,12 @@ Si votre hébergement a été fermé il y a moins de deux semaines et qu'il cont
 
 #### Cas 2 : votre hébergement a été désactivé il y a plus de 14 jours
 
-Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/), afin d'effectuer un audit de sécurité de vos solutions, **avant** la réouverture de votre hébergement.
+Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/), afin d'effectuer un audit de sécurité de vos solutions. 
+
+> [!warning]
+>
+> Nous vous recommandons de réaliser un audit de sécurité **avant** la réouverture de votre hébergement. Tout envoi de codes malveillants depuis votre hébergement peut engager votre responsabilité juridique.
+>
 
 ### Étape 4 : réactiver votre hébergement web
 
@@ -91,18 +95,19 @@ Ouvrez votre logiciel FileZilla puis connectez-vous à votre espace de stockage.
 ```
 SITE CHMOD 705 /
 ```
+![filezilla](images/filezilla.png){.thumbnail}
 
-Une réponse « ok » devrait vous confirmer que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site. 
+Une réponse **« 200 Permissions changed on / »** devrait vous confirmer que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site. 
 
-![](images/.png){.thumbnail}
+![result_filezilla](images/result_filezilla.png){.thumbnail}
 
 #### Réactiver votre hébergement avec le FTP Explorer « net2ftp »
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez vous dans la partie `Web Cloud`{.action}, `Hébergements`{.action} puis dans l'onglet `FTP - SSH`{.action} de l'hébergement concerné. 
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez vous dans la partie `Web Cloud`{.action}, `Hébergements`{.action}, puis cliquez sur l'onglet `FTP - SSH`{.action} de l'hébergement concerné. 
 
-Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](/connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Cliquez ensuite sur le bouton `Avancé`{.action}, puis sur le bouton `Go`{.action} à côté de « Envoyer des commandes FTP arbitraires au serveur FTP ».
+Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](../connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Cliquez ensuite sur le bouton `Avancé`{.action}, puis sur le bouton `Go`{.action} à côté de **« Envoyer des commandes FTP arbitraires au serveur FTP »**.
 
-![](images/.png){.thumbnail}
+![net2ftp](images/net2ftp.png){.thumbnail}
 
 Dans la partie supérieure de la page, renseignez la commande ci-dessous puis cliquez sur le bouton représentant un « v » vert. 
 
@@ -110,9 +115,9 @@ Dans la partie supérieure de la page, renseignez la commande ci-dessous puis cl
 SITE CHMOD 705 /
 ```
 
-Une réponse devrait vous confirmer que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site.
+Une réponse **« 200 Permissions changed on / »** devrait vous confirmer que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site.
 
-![](images/.png){.thumbnail}
+![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
