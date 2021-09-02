@@ -94,7 +94,7 @@ Vous pouvez appliquer un nouveau groupe de sécurité sur une instance déjà cr
 
 ### Supprimer un groupe de sécurité
 
-Pour supprimer un groupe de sécurité, sélectionnez-le en cochant la case correspondante à gauche puis cliquez sur `Delete Security Groups`{.action}
+Pour supprimer un groupe de sécurité, sélectionnez-le en cochant la case correspondante à gauche puis cliquez sur `Delete Security Groups`{.action}.
 
 ![supprimer groupe de sécurité](images/security-group7.png){.thumbnail}
 
