@@ -7,7 +7,7 @@ section: 'Getting started'
 order: 5
 ---
 
-**Last updated 2018/10/15**
+**Last updated 2021/09/02**
 
 ## Objective
 
@@ -69,7 +69,7 @@ Next, enable root login and password authentication :
 
 [!primary]
 >
-> Note : You have to remove the private key added to the putty authentication agent file(Pageant key list) to log in as root.
+> Note : To log in as root, remove the private key added to the putty authentication agent file(Pageant key list).
 >
 
 ### Become root
