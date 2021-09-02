@@ -78,7 +78,7 @@ Si votre hébergement a été fermé il y a plus de deux semaines, contactez un 
 
 > [!warning]
 >
-> Nous vous recommandons de réaliser un audit de sécurité **avant** la réouverture de votre hébergement. Tout envoi de codes malveillants depuis votre hébergement peut engager votre responsabilité juridique.
+> Nous vous recommandons de réaliser un audit de sécurité **avant** la réouverture de votre hébergement. Tout envoi de code malveillant depuis votre hébergement peut engager votre responsabilité juridique.
 >
 
 ### Étape 4 : réactiver votre hébergement web
@@ -92,12 +92,9 @@ Si votre hébergement a été fermé il y a plus de deux semaines, contactez un 
 
 Ouvrez votre logiciel FileZilla puis connectez-vous à votre espace de stockage. Cliquez ensuite sur `Serveur`{.action} dans la barre de menu, puis sur `Entrer une commande FTP`{.action} (l'intitulé peut être légèrement différent suivant la version de FileZilla que vous utilisez). Dans la fenêtre qui s'affiche, renseignez la commande ci-dessous puis validez-la.
 
-```
-SITE CHMOD 705 /
-```
 ![filezilla](images/filezilla.png){.thumbnail}
 
-Une réponse **« 200 Permissions changed on / »** devrait vous confirmer que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site. 
+Une réponse **« 200 Permissions changed on / »** confirme que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site.
 
 #### Réactiver votre hébergement avec le FTP Explorer « net2ftp »
 
@@ -110,10 +107,6 @@ Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre
 Dans la partie supérieure de la page, renseignez la commande ci-dessous puis cliquez sur le bouton représentant un « v » vert.
 
 ![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
-
-```
-SITE CHMOD 705 /
-```
 
 Une réponse **« 200 Permissions changed on / »** confirme que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site.
 
