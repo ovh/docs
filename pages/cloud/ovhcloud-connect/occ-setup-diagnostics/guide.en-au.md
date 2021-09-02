@@ -78,7 +78,7 @@ In the OVHcloud Control Panel, check the IN/OUT optical values:
     - the port can be disabled or has a defect that prevents it from emitting light
     - there is a Cross-Connect issue
 
-### TX/Rx Fiber inversion
+### Tx/Rx Fiber inversion
 
 If there is a fiber inversion between Port A and Port B, the light is not received in the right place and the **IN (Rx)** port will display **DOWN**. If your service has not yet been delivered, contact the support teams so that the link status is checked.
 
