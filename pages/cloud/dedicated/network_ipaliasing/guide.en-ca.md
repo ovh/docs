@@ -84,7 +84,6 @@ If you have two failover IPs to configure, the /etc/network/interfaces.d/50-clou
 ```bash
 auto eth0
 iface eth0 inet dhcp
-    mtu 1500
 
 auto eth0:0
 iface eth0:0 inet static
@@ -100,8 +99,6 @@ Or like this:
 ```bash
 auto eth0
 iface eth0 inet dhcp
-    mtu 1500
-
 
 # IPFO 1
 post-up /sbin/ifconfig eth0:0 FAILOVER_IP1 netmask 255.255.255.255 broadcast FAILOVER_IP1
