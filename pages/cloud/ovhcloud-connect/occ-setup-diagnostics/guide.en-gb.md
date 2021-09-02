@@ -6,7 +6,7 @@ section: Getting started
 order: 4
 ---
 
-**Last updated 1st September 2021**
+**Last updated 2nd September 2021**
 
 ## Objective
 
@@ -14,7 +14,7 @@ Find out how to resolve the most common errors associated with setting up OVHclo
 
 ## Requirements
 
-- an OVHcloud Connect [solution](https://www.ovhcloud.com/en-gb/network-security/ovhcloud-connect/)
+- an [OVHcloud Connect solution](https://www.ovhcloud.com/en-gb/network-security/ovhcloud-connect/)
 
 ## Instructions
 
@@ -22,8 +22,8 @@ An OVHcloud Connect service will appear in your OVHcloud Control Panel, and can 
 
 For the **OVHcloud Connect Direct** offer, the service is **delivered** in the following situations:
 
-- as soon as the cross-connect is established by the customer, light is then detected on the OVHcloud side.
-- after 60 days after the order if no light has been detected.
+- When OVHcloud detects light at the position indicated in the LOA. This detection suggests that the cross-connect was performed by the client.
+- 60 days after the order if no light has been detected.
 
 ### LOA verification
 

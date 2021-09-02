@@ -6,7 +6,7 @@ section: Premiers pas
 order: 4
 ---
 
-**Dernière mise à jour le 01/09/2021**
+**Dernière mise à jour le 02/09/2021**
 
 ## Objectif
 
@@ -22,7 +22,7 @@ Un service OVHcloud Connect apparaît dans votre espace client OVHcloud et ne pe
 
 En ce qui concerne l'offre **OVHcloud Connect Direct**, le service est **livré** dans les situations suivantes :
 
-- dès lors que l'interconnexion (Cross-Connect) est établie par le client, de la lumière alors étant détectée côté OVHcloud.
+- dès lors que OVHcloud détecte de la lumière sur la position indiquée dans la LOA. Cette détection suggère que l'interconnexion (Cross-Connect) a été réalisée par le client.
 - au bout de 60 jours après la commande si aucune lumière n'a été détectée.
 
 ### Vérification de la LOA
@@ -60,7 +60,7 @@ Voici l'interprétation de ces informations :
 
 #### Avant la livraison du service
 
-Lors de la commande d’un lien OVHCloud Connect Direct, il est possible de voir côté OVHcloud les valeurs optiques IN/OUT. Vous pouvez demander des informations à ce sujet à votre équipe support.
+Lors de la commande d’un lien OVHcloud Connect Direct, il est possible de voir côté OVHcloud les valeurs optiques IN/OUT. Vous pouvez demander des informations à ce sujet à votre équipe support.
 
 Si le service n'est pas encore livré, nos équipes support pourront vérifier le statut des valeurs optiques IN et OUT côté infrastructure OVHcloud.
 
