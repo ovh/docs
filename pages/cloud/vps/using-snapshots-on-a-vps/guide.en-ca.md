@@ -120,7 +120,7 @@ $ sudo service qemu-guest-agent status
 
 ##### **Kernel issues on Cpanel**
 
-Consult this guide [here](https://docs.ovh.com/ca/en/vps/cpanel_auto_backup/)
+Consult this guide [Cpanel auto backup](https://docs.ovh.com/ca/en/vps/cpanel_auto_backup/)
 
 
 ##### **Windows**
