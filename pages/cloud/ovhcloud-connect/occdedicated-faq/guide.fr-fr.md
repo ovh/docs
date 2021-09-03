@@ -3,7 +3,7 @@ title: FAQ
 slug: ovhcloudconnect-faq
 excerpt: 'Les FAQ sur l’offre OVHcloud Connect'
 section: Premiers pas
-order: 4
+order: 3
 ---
 
 **Dernière mise à jour le 07/09/2020**
