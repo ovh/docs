@@ -123,13 +123,13 @@ De retour dans la fenêtre **Security**, vous pouvez vérifier que le compte est
 
 L'utilisateur OVHVeeamEntrepise est accessible uniquement en local, il faut donc ajouter les permissions dans l’interface graphique d’utilisateur Windows pour l'activation de connexion à distance.
 
-Via l’interface graphique d’utilisateur
+Via l’interface graphique d’utilisateur:
 
 1. Dans votre barre de recherche Windows tapez `Services de composants`{.action} et lancer le service.
-2. Dans le menu à gauche et suivant l'arborescence, cliquez sur `Services de composants`{.action}, puis`Ordinateurs`{.action}, puis `Poste de travail`{.action}
-3. À droite, sous l'onglet `Actions`{.action} cliquez puis sur `Autres actions`{.action} puis sur `Propriétés`{.action}
-4. Allez dans `Sécurité COM`{.action}, sous la deuxième option `Autorisations d'exécution d'activation`{.action} cliquez sur `Modifier`{.action}
-5. Cliquez sur l'utilisateur `OVHVeeamEntreprise`{.action} et activer toutes les permissions
+2. Dans le menu à gauche et suivant l'arborescence, cliquez sur `Services de composants`{.action}, puis `Ordinateurs`{.action}, puis `Poste de travail`{.action}.
+3. À droite, sous l'onglet `Actions`{.action} cliquez puis sur `Autres actions`{.action} puis sur `Propriétés`{.action}.
+4. Allez dans `Sécurité COM`{.action}, sous la deuxième option `Autorisations d'exécution d'activation`{.action} cliquez sur `Modifier`{.action}.
+5. Cliquez sur l'utilisateur `OVHVeeamEntreprise`{.action} et activer toutes les permissions.
 
 ![Propriétés Autorisations d'exécution et d'activation](images/permissionsuserveam.png){.thumbnail}
 
