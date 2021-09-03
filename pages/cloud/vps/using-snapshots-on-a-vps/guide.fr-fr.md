@@ -6,7 +6,7 @@ section: Sauvegarde
 order: 1
 ---
 
-**Dernière mise à jour le 25/09/2020**
+**Dernière mise à jour le 03/09/2021**
 
 ## Objectif
 
@@ -120,7 +120,7 @@ $ sudo service qemu-guest-agent status
 
 ##### **Problèmes Kernel sur Cpanel**
 
-Consultez notre guide [Sauvegarde automatique - Kernel panic (cPanel)](https://docs.ovh.com/fr/vps/cpanel_auto_backup/) pour savoir comment résoudre les problèmes de blocage des serveurs cPanel lors de la sauvegarde automatique OVHcloud
+Consultez notre guide [Sauvegarde automatique - Kernel panic (cPanel)](https://docs.ovh.com/fr/vps/cpanel_auto_backup/) pour savoir comment résoudre les problèmes de blocage des serveurs cPanel lors de la sauvegarde automatique OVHcloud.
 
 ##### **Windows**
 

@@ -6,7 +6,7 @@ section: 'Backup options'
 order: 1
 ---
 
-**Last updated 23rd September 2020**
+**Last updated 3rd September 2021**
 
 ## Objective
 
@@ -23,7 +23,6 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - an OVHcloud [VPS service](https://www.ovhcloud.com/en-ie/vps/) already set up
-
 
 ## Instructions
 
@@ -70,6 +69,7 @@ Use the following command to check whether the system is properly set up for sna
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
+
 If the output is different ("No such file or directory"), install the latest package:
 
 ```
@@ -119,7 +119,7 @@ $ sudo service qemu-guest-agent status
 
 ##### **Kernel issues on Cpanel**
 
-Consult our [Cpanel auto backup](https://docs.ovh.com/ie/en/vps/cpanel_auto_backup/) guide to find out how to fix issues with cpanel servers getting stuck during an OVHcloud automated backup.
+Consult our [cPanel auto backup](https://docs.ovh.com/ie/en/vps/cpanel_auto_backup/) guide to find out how to fix issues with cPanel servers getting stuck during an OVHcloud automated backup.
 
 ##### **Windows**
 
@@ -135,10 +135,8 @@ Status   Name               DisplayName
 Running  QEMU-GA            QEMU Guest Agent
 ```
 
-
 ## Go further
 
 [Using automated backups on a VPS](../using-automated-backups-on-a-vps)
-
 
 Join our community of users on <https://community.ovh.com/en/>.
