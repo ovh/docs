@@ -48,6 +48,11 @@ Une fois l'option activée, cliquez sur `...`{.action} à droite de l'option « 
 
 Si vous êtes sûr de vouloir restaurer votre VPS à l'état du snapshot, cliquez sur `Restaurer le snapshot`{.action} et confirmez la restauration dans la fenêtre qui s'affiche alors.
 
+> [!alert]
+>
+> Lorsque vous restaurez un VPS à partir d’un snapshot, ce dernier sera supprimé. Si vous souhaitez conserver le même snapshot, vous devez en prendre un nouveau avant d'apporter des modifications au système restauré.
+>
+
 ### Bonnes pratiques pour la création d'un snapshot
 
 #### Configuration de l'agent QEMU sur un VPS
@@ -112,6 +117,10 @@ Vérifier l'agent et vérifiez qu'il est en cours d'exécution :
 ```
 $ sudo service qemu-guest-agent status
 ```
+
+##### **Problèmes Kernel sur Cpanel**
+
+Consultez notre guide [Cpanel auto backup](https://docs.ovh.com/ca/fr/vps/cpanel_auto_backup/) pour savoir comment résoudre les problèmes de blocage des serveurs cpanel lors d’une sauvegarde automatisée par OVHcloud.
 
 ##### **Windows**
 
