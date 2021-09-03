@@ -78,9 +78,9 @@ To update your server's operating system, type the following command at the comm
 
 #### For connections using Putty
 
-First, set the root password - [retrieving information to become the root user](#settingtherootpassword)
+- [First, set the root password](#settingtherootpassword)
 
-Next, enable root login and password authentication:
+Next, enable root login and password authentication in your sshd config file :
 
 ```
 ~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
