@@ -7,7 +7,7 @@ section: 'Getting started'
 order: 5
 ---
 
-**Last updated 2021/09/02**
+**Last updated 2021/09/03**
 
 ## Objective
 
@@ -27,9 +27,7 @@ To perform certain administrative functions on your server (e.g. installing pack
 This guide assumes that the default user is called 'admin'.
 >
 
-### Setting the root password 
-
-#### For connections using our VNC console
+### Setting the root password <a name="settingtherootpassword"></a>
 
 First, establish an SSH connection to your server.
 
@@ -42,35 +40,6 @@ Retype new UNIX password:
 passwd: password updated 
 successfully
 ```
-
-#### For connections using Putty
-
-First, establish an SSH connection to your server.
-
-At the command line, enter a password for the admin user (for security reasons, the password will not be shown as you type it):
-
-```sh
-~$ sudo passwd
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated 
-successfully
-```
-
-Next, enable root login and password authentication :
-
-```
-~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
-
-~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
-
-~$ service sshd restart
-```
-
-[!primary]
->
-> Note : To log in as root, remove the private key added to the putty authentication agent file(Pageant key list).
->
 
 ### Become root
 
@@ -104,6 +73,26 @@ To update your server's operating system, type the following command at the comm
 ```
 ~$ sudo vi /etc/hosts.allow
 ```
+
+### Enable root login and Password authentication
+
+#### For connections using Putty
+
+First, set the root password - [retrieving information to become the root user](#settingtherootpassword)
+
+Next, enable root login and password authentication:
+
+```
+~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+
+~$ service sshd restart
+```
+
+In the Putty authentication agent(pageant key list) remove your private SSH key.
+
+![Remove private key](images/pageantkeylist.png){.thumbnail}
 
 ## Go further
 
