@@ -52,8 +52,8 @@ If you are sure that you would like to reset your VPS to the status of the snaps
 
 > [!alert]
 >
-> Restoring a snapshot will automatically delete it to make space for the next one, this action is irreversible. If you wish to conserve the same snapshot, make sure you take a new one once the restoration process is completed before making any changes to the restored system.
-> 
+> Restoring a snapshot will automatically delete it to make space for the next one, this action is irreversible. If you wish to keep the same snapshot, make sure you take a new one once the restoration process is completed before making any changes to the restored system.
+>
 
 ### Best practice for using snapshots
 
@@ -120,7 +120,7 @@ $ sudo service qemu-guest-agent status
 
 ##### **Kernel issues on Cpanel**
 
-Consult this guide [Cpanel auto backup](https://docs.ovh.com/ca/en/vps/cpanel_auto_backup/)
+Consult our [Cpanel auto backup](https://docs.ovh.com/ca/en/vps/cpanel_auto_backup/) guide to find out how to fix issues with cPanel servers getting stuck during an OVHcloud automated backup.
 
 
 ##### **Windows**
