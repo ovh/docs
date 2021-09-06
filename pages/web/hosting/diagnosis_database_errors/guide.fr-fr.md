@@ -46,7 +46,7 @@ Vérifiez tout d'abord sur [http://travaux.ovh.com/](http://travaux.ovh.com/) qu
 > - Pour retrouver le nom de votre serveur **Private SQL** ou **CloudDB**, cliquez sur `Bases de données`{.action} dans le menu de gauche, puis sur l'offre concernée. Vous trouverez cette information sous la mention `Host` dans l'onglet `Informations générales`{.action}.
 >
 
-#### Vérifier les identifiants de connexion à votre base de données
+#### Vérifier les identifiants de connexion à votre base de données <a name="config_file"></a>
 
 Connectez-vous en [FTP](../connexion-espace-stockage-ftp-hebergement-web/) à votre espace de stockage et retrouvez le fichier de configuration de votre site (Par exemple, pour un site **Wordpress**, il s'agit du fichier **wp-config.php** situé dans le dossier contenant votre site).
 
@@ -104,13 +104,33 @@ Trois méthodes vous permettront de débloquer votre base de données :
 
 Si vous disposez d'une formule d'hébergement **Perso2014** ou **Pro2014**, vous pouvez passer sur l'offre supérieure, afin que la taille de votre base de données augmente automatiquement et soit réouverte. Cette méthode est la plus simple et ne nécessite aucune compétence technique particulière.
 
-Pour effectuer ce changement, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis cliquez sur `Hébergements`{.action}, puis l'hébergement concerné. Cliquez sur le bouton `...`{.action} dans la partie `Offre` sur la droite de l'écran.
+Pour effectuer ce changement, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis cliquez sur `Hébergements`{.action}, puis l'hébergement concerné. Cliquez sur le bouton `...`{.action} dans la partie `Offre` sur la droite de l'écran, afin de `Changer d'offres`{.action}.
 
-Si vous utilisez une offre **Performance**, reportez-vous à la [méthode 2](#methode2)
+Si vous utilisez une offre **Performance**, reportez-vous à la [méthode 2](#methode2).
 
 #### Méthode 2 : migrer vos données sur une base de taille supérieure <a name="methode2"></a>
 
+Vous pouvez également migrer vos données sur une nouvelle base :
+
+- Commandez, si nécessaire, une [base de données](https://www.ovh.com/fr/hebergement-web/options-sql.xml) de taille supérieure puis lancez sa [création](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/);
+
+- Effectuez un [export de vos données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/), puis [importez-les](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/) dans la nouvelle base;
+
+- Intégrez les identifiants de la nouvelle base dans le [fichier de configuration](#config_file) de votre site.
+
+> [!primary]
+>
+> Si vous disposez d'un hébergement **Performance**, vous pouvez également [activer le serveur SQL Privé](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/#activation-de-votre-serveur-sql-prive-inclus-avec-votre-offre-dhebergement-web) inclus dans votre offre.
+>
+
 #### Méthode 3 : supprimer les données inutiles
+
+Vous pouvez enfin vous [connecter à votre interface PhpMyAdmin](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin_1), afin de supprimer les données inutiles dans votre base puis relancer le calcul du quota utilisé  depuis l'onglet `Bases de données`{.action} de l'hébergement concerné.
+
+> [!alert]
+>
+> Cette opération nécessite de fortes compétences techniques et nous vous conseillons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) pour la réaliser.
+>
 
 ### Dépassement de RAM
 
