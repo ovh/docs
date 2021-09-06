@@ -23,6 +23,11 @@ Vous pouvez réaliser ceci grâce à un fichier .htaccess. Avant de procéder, i
 ### Creer le fichier de mot de passe
 Dans un premier temps, il faut créer le fichier qui contiendra la liste des utilisateurs ayant le droit de se connecter et le mot de passe qui leur est associé. En général, on crée pour cela un fichier .htpasswd qui sera ensuite utilisé par le fichier .htaccess. Il s'agit d'un fichier texte simple, à l'intérieur duquel sont indiqués les noms des utilisateurs et leurs mots de passe sous forme cryptée. Le mot de passe rattaché à ces utilisateurs devra être crypté. Vous trouverez plusieurs manière de faire sur internet.
 
+> [!primary]
+>
+> Pour toute question sur la méthode à utiliser pour crypter les mots de passe dans un fichier .htpasswd, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
+>
+
 Sous windows, vous ne pouvez pas créer directement un fichier nommé .htaccess ou .htpasswd. Il vous suffit alors de le nommer autrement, de le transférer sur votre espace web, et de le renommer en .htaccess ou .htpasswd ensuite à l'aide de votre client FTP.
 
 Le fichier .htpasswd ne doit pas forcément être au même endroit que le fichier .htaccess. Vous pouvez par exemple le placer à la racine de votre hébergement, et l'utiliser pour protéger différents répertoires de votre site, étant donné qu'un seul fichier .htpasswd peut être utilisé par plusieurs fichiers .htaccess. Le fichier .htpasswd doit contenir une ligne par utilisateur précisant le nom d'utilisateur et le mot de passe associé.

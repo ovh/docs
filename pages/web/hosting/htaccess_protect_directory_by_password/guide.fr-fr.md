@@ -23,7 +23,7 @@ Dans un premier temps, il faut créer le fichier qui contiendra la liste des uti
 
 > [!primary]
 >
-> En cas de doute sur la méthode à utiliser pour crypter les mots de passe dans un fichier .htpasswd, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+> Pour toute question sur la méthode à utiliser pour crypter les mots de passe dans un fichier .htpasswd, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 >
 
 Sous windows, vous ne pouvez pas créer directement un fichier nommé .htaccess ou .htpasswd. Il vous suffit alors de le nommer autrement, de le transférer sur votre espace web, et de le renommer en .htaccess ou .htpasswd ensuite à l'aide de votre client FTP.
