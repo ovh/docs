@@ -6,7 +6,7 @@ excerpt: "Retrouvez ici les manipulations necessaires pour proteger l'acces a un
 section: 'Réécriture et authentification'
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 06/09/2021**
 
 Vous pouvez réaliser ceci grâce à un fichier .htaccess. Avant de procéder, il est nécessaire de préciser quelques petites choses par rapport aux fichiers .htaccess. Tout d'abord, il faut savoir qu'il s'agit de fichiers particuliers pour le serveur web, et que ces fichiers n'apparaissent pas dans l'arborescence du répertoire concerné si un internaute fait un accès à un répertoire listable (qui ne contient pas de page index, et dont le listage n'est pas interdit). Ensuite, il faut bien prendre en compte que les paramétrages indiqués par un fichier .htaccess s'appliquent au répertoire où le fichier est installé, ainsi qu'à tout ses sous-répertoires.
 
