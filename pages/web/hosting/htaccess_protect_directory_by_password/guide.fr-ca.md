@@ -21,7 +21,7 @@ Vous pouvez réaliser ceci grâce à un fichier .htaccess. Avant de procéder, i
 ## Procedure a suivre
 
 ### Creer le fichier de mot de passe
-Dans un premier temps, il faut créer le fichier qui contiendra la liste des utilisateurs ayant le droit de se connecter et le mot de passe qui leur est associé. En général, on crée pour cela un fichier .htpasswd qui sera ensuite utilisé par le fichier .htaccess. Il s'agit d'un fichier texte simple, à l'intérieur duquel sont indiqués les noms des utilisateurs et leurs mots de passe sous forme cryptée. Le mot de passe rattaché à ces utilisateurs devra être crypté. Vous trouverez plusieurs manière de faire sur internet.
+Dans un premier temps, il faut créer le fichier qui contiendra la liste des utilisateurs ayant le droit de se connecter et le mot de passe qui leur est associé. En général, on crée pour cela un fichier .htpasswd qui sera ensuite utilisé par le fichier .htaccess. Il s'agit d'un fichier texte simple, à l'intérieur duquel sont indiqués les noms des utilisateurs et leurs mots de passe sous forme cryptée. Le mot de passe rattaché à ces utilisateurs devra être crypté.
 
 > [!primary]
 >
