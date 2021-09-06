@@ -25,7 +25,7 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Exchange Account](https://www.ovh.de/emails/){.external}.
+- Sie verfügen über einen [Exchange Account](https://www.ovh.de/emails/hosted-exchange/){.external}.
 - Microsoft Outlook ist auf Ihrem Gerät installiert.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 - Der OVHcloud SRV-Eintrag muss in der DNS-Zone der Domain korrekt konfiguriert sein. Lesen Sie hierzu unsere Anleitung "[Eine Domain zu Ihrer Exchange Dienstleistung hinzufügen](../domain-zu-exchange-hinzufugen/)".

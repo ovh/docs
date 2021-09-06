@@ -1,29 +1,32 @@
 ---
 title: MongoDB Capabilities and Limitations
 slug: mongodb/capabilities
-excerpt: Find out what are the capabilities and limitations of the Cloud Databases (Beta) MongoDB offer
+excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
 section: Concepts
 order: 1
 ---
 
-**Last updated June 1<sup>st</sup>, 2021**
+**Last updated September 3<sup>rd</sup>, 2021**
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Cloud Databases (Beta) MongoDB offer.
+This page provides the technical capabilities and limitations of the Public Cloud Databases for MongoDB offer.
 
 ## Capabilities and limitations
 
 ### Supported regions
 
-The Cloud Databases (Beta) offer is available in the following regions:
+The Public Cloud Databases offer is available in the following regions:
 
 - `BHS` (Beauharnois, Canada)
+- `DE` (Frankfurt, Germany)
 - `GRA` (Gravelines, France)
+- `UK` (London, United Kingdom)
+- `WAW` (Warsaw, Poland)
 
 ### MongoDB version
 
-The Cloud Databases (Beta) offer supports the following MongoDB versions:
+The Public Cloud Databases offer supports the following MongoDB versions:
 
 - MongoDB 4.2
 - MongoDB 4.4
@@ -90,13 +93,15 @@ Public networking can be used for all the offers.
 
 Private Networking (vRack) is available for *Business* and *Enterprise*.
 
+When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
+
 ### Backups
 
-*Essential* plan clusters are automatically backed up daily during their maintainance window. Backup retention is 2 days.
+*Essential* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 2 days.
 
-*Business* plan clusters are automatically backed up daily during their maintainance window. Backup retention is 7 days.
+*Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 7 days.
 
-*Enterprise* plan clusters are automatically backed up daily during their maintainance window, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 7 days.
+*Enterprise* plan clusters are automatically backed up daily during their maintenance window, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 7 days.
 
 ### Users
 
@@ -106,7 +111,7 @@ In order to properly manage your MongoDB cluster, some MongoDB users are set up 
 - `mms-automation@admin` is a technical user required for automation purposes
 - `backup-*@admin` are used to perform backups
 
-Furthermore, user creation from the MongoDB Shell is unsupported: You need to use the OVHcloud API or the OVHcloud Control Panel in order to manage your clusters' users.
+Furthermore, user creation from the MongoDB Shell is **not** supported: You need to use the OVHcloud API or the OVHcloud Control Panel in order to manage your clusters' users. Any user created through the mongo shell will be deleted by the automation mechanism.
 
 ## We want your feedback!
 
