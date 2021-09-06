@@ -3,6 +3,7 @@ title: FAQ
 excerpt: Domande più frequenti sulle email OVHcloud
 slug: faq-emails
 section: Per iniziare
+order: 07
 ---
 
 **Ultimo aggiornamento: 15/05/2020**

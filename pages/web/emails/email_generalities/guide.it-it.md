@@ -3,7 +3,7 @@ title: 'Iniziare a utilizzare la soluzione MX Plan'
 slug: informazioni-generali-email-condivise
 excerpt: 'Come eseguire le prime operazioni sul servizio MX Plan'
 section: 'Per iniziare'
-order: 1
+order: 01
 legacy_guide_number: g1474
 ---
 

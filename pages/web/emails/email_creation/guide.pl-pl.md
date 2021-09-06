@@ -3,7 +3,7 @@ title: 'Tworzenie konta e-mail w ramach usługi MX Plan'
 slug: przewodnik_na_temat_zakladania_adresu_e-mail
 excerpt: 'Dowiedz się, jak utworzyć konto e-mail w ramach pakietu MX Plan'
 section: 'Pierwsze kroki'
-order: 2
+order: 02
 ---
 
 **Ostatnia aktualizacja z dnia 24-04-2019**

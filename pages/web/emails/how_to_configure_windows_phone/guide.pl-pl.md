@@ -4,6 +4,7 @@ excerpt: 'Przewodnik ten opisuje konfigurację programu Windows Phone'
 slug: przewodnik_dotyczacy_konfiguracji_programu_windows_phone
 legacy_guide_number: g1346
 section: 'Konfiguracja na smartfonie'
+hidden: true
 ---
 
 ## Część 1: Parametry

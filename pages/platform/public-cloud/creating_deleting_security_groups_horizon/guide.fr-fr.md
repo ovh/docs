@@ -4,6 +4,7 @@ excerpt: Découvrez comment créer ou supprimer un groupe de sécurité via Hori
 slug: creer-supprimer-groupe-securite-dans-horizon
 section: Gestion depuis Horizon
 order: 17
+hidden: true
 ---
 
 **Dernière mise à jour le 27/02/2018**

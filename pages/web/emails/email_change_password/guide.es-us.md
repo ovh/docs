@@ -3,7 +3,7 @@ title: 'Cambiar la contraseña de una dirección de correo'
 slug: cambiar-contrasena-direccion-correo
 excerpt: 'Cómo cambiar la contraseña de una dirección de correo electrónico'
 section: 'Primeros pasos'
-order: 3
+order: 03
 ---
 
 **Última actualización: 05/05/2020**

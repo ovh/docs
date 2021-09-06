@@ -3,7 +3,7 @@ title: 'Créer un répondeur pour son adresse e-mail'
 slug: mise-en-place-repondeur-mail
 excerpt: 'Découvrez comment mettre en place un répondeur e-mail'
 section: 'Fonctionnalités des adresses e-mail'
-order: 3
+order: 02
 ---
 
 **Dernière mise à jour le 28/08/2020**

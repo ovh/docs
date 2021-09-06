@@ -4,7 +4,7 @@ slug: guide-des-redirections-emails
 legacy_guide_number: 2001
 excerpt: 'Decouvrez dans ce guide comment gérer vos redirections e-mail'
 section: 'Fonctionnalités des adresses e-mail'
-order: 2
+order: 01
 ---
 
 **Dernière mise à jour le 22/01/2020**

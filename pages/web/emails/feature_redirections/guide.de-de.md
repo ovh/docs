@@ -3,7 +3,7 @@ title: 'E-Mail-Weiterleitungen verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail-Weiterleitungen verwalten'
 slug: webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung
 section: 'E-Mail Account Funktionen'
-order: 1
+order: 01
 legacy_guide_number: g2001
 ---
 

@@ -4,7 +4,7 @@ excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi MX Plan'
 slug: hosting_www_informacje_ogolne_o_kontach_e-mail_ovh
 legacy_guide_number: g1474
 section: 'Pierwsze kroki'
-order: 1
+order: 01
 ---
 
 > [!primary]

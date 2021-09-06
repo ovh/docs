@@ -2,7 +2,8 @@
 title: 'Konfiguracja konta e-mail w aplikacji Mail na urządzeniach macOS'
 slug: konfiguracja-mail-macos
 excerpt: 'Dowiedz się, jak skonfigurować konto MX Plan w aplikacji Mail na urządzeniach z systemem macOS El Capitan, Sierra i High Sierra'
-section: Apple
+section: Konfiguracja na komputerze
+order: 03
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-26**

@@ -4,6 +4,7 @@ excerpt: Find out how to create and delete security groups via the Horizon inter
 slug: create-delete-security-group-horizon
 section: Horizon
 order: 5
+hidden: true
 ---
 
 **Last updated 07th March 2018**

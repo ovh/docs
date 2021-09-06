@@ -12,16 +12,16 @@ order: 8
 
 The purpose of this tutorial is to show how to deploy a web service for YOLOv5 using your own weights generated after training a YOLOv5 model on your dataset.
 
-In order to do this, you will use [Flask](https://flask.palletsprojects.com/en/2.0.x/), an open-source micro framework for web development in Python. You will also learn how to build and use a custom docker image for a Flask application.
+In order to do this, you will use [Flask](https://flask.palletsprojects.com/en/2.0.x/), an open-source micro framework for web development in Python. You will also learn how to build and use a custom Docker image for a Flask application.
 
-For more information on how to train YOLOv5 on a custom dataset, refer to the following [documentation](https://docs.ovh.com/ie/en/ai-training/yolov5-example/).
+For more information on how to train YOLOv5 on a custom dataset, refer to the following [documentation](../yolov5-example/).
 
 ## Requirements
 
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 -   an AI Training project created inside a Public Cloud project
 -   a [user for AI Training](../create-user)
--   [docker](https://www.docker.com/get-started) installed on your local computer
+-   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 -   your weights obtained from training a YOLOv5 model on your dataset (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv5](https://github.com/ovh/ai-training-examples/blob/main/notebooks/pytorch/tuto/notebook_object_detection_yolov5.ipynb))
 
@@ -31,9 +31,9 @@ First, the tree structure of your folder should be as follows.
 
 ![image](images/tree_yolov5_web_service.png){.thumbnail}
 
--   you have to create the folder named `models_train` and this is where you can store the weights generated after your trainings. You are free to put as many weight files as you want in the `models_train` folder.
+-   You have to create the folder named `models_train` and this is where you can store the weights generated after your trainings. You are free to put as many weight files as you want in the `models_train` folder.
 
--   here we will mainly discuss how to write the `app.py` code, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub](https://github.com/ovh/ai-training-examples/tree/main/jobs/yolov5-web-service) repository.
+-   Here we will mainly discuss how to write the `app.py` code, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub](https://github.com/ovh/ai-training-examples/tree/main/jobs/yolov5-web-service) repository.
 
 ### Write the Flask application
 
@@ -135,7 +135,7 @@ if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0')
 ```
 
-More information about Flask application [here](https://flask.palletsprojects.com/en/2.0.x/quickstart/#a-minimal-application) to get ready to use it.
+Find more information about the Flask application [here](https://flask.palletsprojects.com/en/2.0.x/quickstart/#a-minimal-application) to get ready to use it.
 
 ### Write the requirements.txt file for the application
 
@@ -187,7 +187,7 @@ RUN chown -R 42420:42420 /workspace
 ENV HOME=/workspace
 ```
 
-### Build the docker image from the Dockerfile
+### Build the Docker image from the Dockerfile
 
 Launch the following command from the **Dockerfile** directory to build your application image:
 
@@ -203,9 +203,9 @@ docker build . -t yolov5_web:latest
 >
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **yolov5\_web:latest**.
 
-### Test it locally (Optional)
+### Test it locally (optional)
 
-Launch the following **docker command** to launch your application locally on your computer:
+Launch the following **Docker command** to launch your application locally on your computer:
 
 ``` {.console}
 docker run --rm -it -p 5000:5000 --user=42420:42420 yolov5_web:latest
@@ -213,19 +213,19 @@ docker run --rm -it -p 5000:5000 --user=42420:42420 yolov5_web:latest
 
 > [!primary]
 >
-> The `-p 5000:5000` argument indicates that you want to execute a port rediction from the port **5000** of your local machine into the port **5000** of the docker container. The port **5000** is the default port used by **Flask** applications.
+> The `-p 5000:5000` argument indicates that you want to execute a port rediction from the port **5000** of your local machine into the port **5000** of the Docker container. The port **5000** is the default port used by **Flask** applications.
 
 > [!warning]
 >
-> Don't forget the `--user=42420:42420` argument if you want to simulate the exact same behavior that will occur on **AI TRAINING jobs**. It executes the docker container as the specific OVHcloud user (user **42420:42420**).
+> Don't forget the `--user=42420:42420` argument if you want to simulate the exact same behaviour that will occur on **AI TRAINING jobs**. It executes the Docker container as the specific OVHcloud user (user **42420:42420**).
 
-Once started, your application should be available on http://localhost:5000.
+Once started, your application should be available on `http://localhost:5000`.
 
 ### Push the image into the shared registry
 
 > [!warning]
 >
-> The shared registry of AI Training should only be used for testing purpose. Please consider attaching your own docker registry. More information about this can be found [here](../add-private-registry).
+> The shared registry of AI Training should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](../add-private-registry).
 
 Find the adress of your shared registry by launching this command:
 
@@ -256,11 +256,11 @@ ovhai job run --default-http-port 5000 --cpu 4 <shared-registry-address>/yolov5_
 
 > [!primary]
 >
-> `--default-http-port 5000` indicates that the port to reach on the job url is the `5000`.
+> `--default-http-port 5000` indicates that the port to reach on the job URL is the `5000`.
 
 > [!primary]
 >
-> `--cpu 4` indicates that we request 4 cpu for that job.
+> `--cpu 4` indicates that we request 4 CPUs for that job.
 
 > [!primary]
 >

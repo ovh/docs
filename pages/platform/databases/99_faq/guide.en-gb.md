@@ -6,7 +6,7 @@ section: Getting started
 order: 99
 ---
 
-**Last updated 25<sup>th</sup> August, 2021**
+**Last updated August 25<sup>th</sup>, 2021**
 
 ## Objective
 
@@ -24,7 +24,7 @@ Our Public Cloud Databases can be reached via Public network (Internet) or Priva
 
 ### What is the difference between this offer and the Enterprise Cloud Databases offer ?
 
-Enterprises Cloud Databases is only providing the PostgreSQL database engine, and is powered by dedicated servers. Public Cloud Databases are based on virtual machines, and provides multiples DBMS.
+Enterprise Cloud Databases is only providing the PostgreSQL database engine, and is powered by dedicated servers. Public Cloud Databases are based on virtual machines, and provides multiples DBMS.
 
 Enterprise Cloud Databases will smoothly be transited to Public Cloud Databases in the near future.
 
@@ -56,7 +56,7 @@ You can filter by label such as "Databases".
 
 ## Service Plans and instances
 
-### What are the major differences between Essential, Business and Enterprises plans ?
+### What are the major differences between Essential, Business and Enterprise plans ?
 
 We built service plans based on business use-cases. They have major differentiators, related to each DBMS.
 

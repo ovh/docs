@@ -3,6 +3,7 @@ title: FAQ
 excerpt: 'Find the answers to the most frequently asked questions about OVHcloud emails'
 slug: emails-faq
 section: 'Getting started'
+order: 07
 ---
 
 **Last updated 05th May 2020**

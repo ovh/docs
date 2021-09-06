@@ -3,6 +3,8 @@ title: Criar uma resposta automática para o seu endereço de e-mail
 excerpt: Saiba como configurar uma resposta automática de e-mail
 slug: guia_de_ajuda_a_implementacao_de_respostas_automaticas
 legacy_guide_number: g2052
+section: Funcionalidades dos endereços e-mail
+order: 02
 ---
 
 > [!primary]

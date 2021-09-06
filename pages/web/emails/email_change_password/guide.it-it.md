@@ -3,7 +3,7 @@ title: 'Modificare la password di un account email MX Plan'
 slug: modificare-password-account-email-mxplan
 excerpt: 'Come impostare una nuova password per un indirizzo email creato con MX Plan'
 section: 'Per iniziare'
-order: 3
+order: 03
 ---
 
 **Ultimo aggiornamento: 23/07/2019**
