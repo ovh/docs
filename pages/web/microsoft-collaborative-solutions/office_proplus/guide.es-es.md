@@ -57,11 +57,11 @@ Instalar una solución Microsoft 365 Apps para una empresa en un ordenador compa
 - **Ejecute** la herramienta de despliegue en su máquina.
 
 
-- Modifique el archivo de `configuración.xml`.
+- Modifique el archivo de `configuration.xml`.
 
 ![Office 365](images/4720.png){.thumbnail}
 
-Edite el archivo de `configuración.xml` y desmarque las siguientes líneas:
+Edite el archivo de `configuration.xml` y desmarque las siguientes líneas:
 
 ```bash
 Display Level="None" AcceptEULA="True"
@@ -70,7 +70,7 @@ Property Name="SharedComputerLicensing" Value="1"
 
 Si estas líneas no existen, puede copiarlas y pegarlas en el archivo.
 
-- Guarde los cambios realizados. Abra un terminal powershell y ejecute estos dos comandos desde el directorio en el que se encuentra el archivo de `configuración.xml`:
+- Guarde los cambios realizados. Abra un terminal powershell y ejecute estos dos comandos desde el directorio en el que se encuentra el archivo de `configuration.xml`:
 
 ```powershell
 ./setup.exe /download configuration.xml
@@ -79,7 +79,7 @@ Si estas líneas no existen, puede copiarlas y pegarlas en el archivo.
 y
 
 ```powershell
-./setup.exe /configure configuracion.xml
+./setup.exe /configure configuration.xml
 ```
 > [!primary]
 >

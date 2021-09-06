@@ -57,11 +57,11 @@ Instalacja oferty Microsoft 365 Apps for entreprise na współdzielonym komputer
 - **Uruchom** narzędzie do wdrażania na Twojej maszynie.
 
 
-- Zmień plik `konfiguracyjny.xml`.
+- Zmień plik `configuration.xml`.
 
 ![office 365](images/4720.png){.thumbnail}
 
-Edytuj plik `konfiguracyjny.xml`, następnie uruchom następujące wiersze:
+Edytuj plik `configuration.xml`, następnie uruchom następujące wiersze:
 
 ```bash
 Display Level="None" AcceptEULA="True"
@@ -70,7 +70,7 @@ Property Name="SharedComputerLicensing" Value="1"
 
 Jeśli te linie nie istnieją, możesz je skopiować/wkleić do pliku.
 
-- Zapisz wprowadzone zmiany. Następnie otwórz terminal powershell i wykonaj oba polecenia z folderu, w którym znajduje się plik `konfiguracyjny.xml`:
+- Zapisz wprowadzone zmiany. Następnie otwórz terminal powershell i wykonaj oba polecenia z folderu, w którym znajduje się plik `configuration.xml`:
 
 ```powershell
 ./setup.exe /download configuration.xml
@@ -79,7 +79,7 @@ Jeśli te linie nie istnieją, możesz je skopiować/wkleić do pliku.
 następnie
 
 ```powershell
-./setup.exe /configure.xml
+./setup.exe /configure configuration.xml
 ```
 > [!primary]
 >
@@ -96,6 +96,7 @@ HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration
 ```bash
 SharedComputerLicensing
 ```
+
 Upewnijcie się, że jej wartość wynosi `jeden`. Jeśli ten klucz nie istnieje, możesz go utworzyć.
 
 ![emails](images/4723.png){.thumbnail}

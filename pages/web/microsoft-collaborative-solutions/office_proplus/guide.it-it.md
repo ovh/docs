@@ -57,11 +57,11 @@ L'installazione di un'offerta Microsoft 365 Apps for entreprise su un computer c
 - **Esegui** il tool di distribuzione sulla tua macchina.
 
 
-- Modifica il file `configurazione.xml`.
+- Modifica il file `configuration.xml`.
 
 ![office 365](images/4720.png){.thumbnail}
 
-Modifica il file di `configurazione.xml` e modifica queste righe:
+Modifica il file di `configuration.xml` e modifica queste righe:
 
 ```bash
 Display Level="None" AcceptEULA="True"
@@ -70,7 +70,7 @@ Property Name="SharedComputerLicensing" Value="1"
 
 Se queste righe non esistono, è possibile copiarle e incollarle nel file.
 
-- Salva le modifiche effettuate. Apri un terminale powershell ed esegui questi due comandi dalla cartella in cui si trova il file `configurazione.xml`:
+- Salva le modifiche effettuate. Apri un terminale powershell ed esegui questi due comandi dalla cartella in cui si trova il file `configuration.xml`:
 
 ```powershell
 ./setup.exe /download configuration.xml
@@ -79,7 +79,7 @@ Se queste righe non esistono, è possibile copiarle e incollarle nel file.
 poi
 
 ```powershell
-./setup.exe /configura configurazione.xml
+./setup.exe /configure configuration.xml
 ```
 > [!primary]
 >

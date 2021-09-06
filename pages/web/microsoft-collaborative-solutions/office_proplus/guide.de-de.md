@@ -57,11 +57,11 @@ Die Installation eines Microsoft 365 Apps for Enterprise Angebots auf einem gete
 - **Führen** Sie das Deployment-Tool auf Ihrer Maschine aus.
 
 
-- Bearbeiten Sie die `Konfigurationsdatei.xml`.
+- Bearbeiten Sie die `configuration.xml`.
 
 ![365](images/4720.png){.thumbnail}
 
-Bearbeiten Sie die `Datei konfiguration.xml` und kommentieren Sie folgende Zeilen:
+Bearbeiten Sie die Datei `configuration.xml` und kommentieren Sie folgende Zeilen:
 
 ```bash
 Display Level="None" AcceptEULA="True"
@@ -70,7 +70,7 @@ Property Name="SharedComputerLicensing" Value="1"
 
 Wenn diese Zeilen nicht existieren, können Sie sie in die Datei kopieren/einfügen.
 
-- Speichern Sie die vorgenommenen Änderungen. Öffnen Sie anschließend ein Powershell-Terminal und führen Sie beide Befehle aus dem Ordner aus, in dem sich die Datei `konfiguration.xml befindet:
+- Speichern Sie die vorgenommenen Änderungen. Öffnen Sie anschließend ein Powershell-Terminal und führen Sie beide Befehle aus dem Ordner aus, in dem sich die Datei `configuration.xml befindet:
 
 ```powershell
 ./setup.exe /download configuration.xml
@@ -79,7 +79,7 @@ Wenn diese Zeilen nicht existieren, können Sie sie in die Datei kopieren/einfü
 und
 
 ```powershell
-./setup.exe /configure konfiguration.xml
+./setup.exe /configure configuration.xml
 ```
 > [!primary]
 >

@@ -57,11 +57,11 @@ A instalação de uma oferta Microsoft 365 Apps for entreprise num computador pa
 - **Execute** a ferramenta de implementação na sua máquina.
 
 
-- Altere o ficheiro de `configuração.xml`.
+- Altere o ficheiro de `configuration.xml`.
 
 ![office 365](images/4720.png){.thumbnail}
 
-Edite o ficheiro de `configuração.xml` e depois descarregue as seguintes linhas:
+Edite o ficheiro de `configuration.xml` e depois descarregue as seguintes linhas:
 
 ```bash
 Display Level="None" AcceptEULA="True"
@@ -70,7 +70,7 @@ Property Name="SharedComputerLicensing" Value="1"
 
 Se estas linhas não existirem, pode copiá-las/colá-las no ficheiro.
 
-- Registe as alterações efetuadas. A seguir, abra um terminal powershell e execute estes dois comandos a partir da pasta onde está o ficheiro de `configuração.xml`:
+- Registe as alterações efetuadas. A seguir, abra um terminal powershell e execute estes dois comandos a partir da pasta onde está o ficheiro de `configuration.xml`:
 
 ```powershell
 ./setup.exe /download configuration.xml
@@ -79,7 +79,7 @@ Se estas linhas não existirem, pode copiá-las/colá-las no ficheiro.
 e
 
 ```powershell
-./setup.exe /configura configuração.xml
+./setup.exe /configure configuration.xml
 ```
 > [!primary]
 >
@@ -96,6 +96,7 @@ HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration
 ```bash
 SharedComputerLicensing
 ```
+
 Certifique-se de que o seu valor é de `1`. Se esta chave não existir, pode criá-la.
 
 ![emails](images/4723.png){.thumbnail}
