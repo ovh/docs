@@ -6,6 +6,8 @@ section: 'Premiers pas'
 order: 3
 ---
 
+**Dernière mise à jour le 06/09/2021**
+
 ## FAQ Public Cloud
 
 ### Comment se connecter à une instance Public cloud ?

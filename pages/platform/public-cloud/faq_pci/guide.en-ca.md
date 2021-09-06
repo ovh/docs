@@ -69,7 +69,7 @@ You can attach up to 26 additional volumes per instance.
 
 OVHcloud protects its entire infrastructure with its exclusive anti-DDoS solution. In addition, you can add the OpenStack security groups. This firewall equivalent is managed directly through the OpenStack infrastructure, above your instances.
 
-Please refer to our guide on [Configuring a security group](../configure-security-group-horizon/) .
+Please refer to our guide on [Configuring a security group](../configuring-security-group/) .
 
 These protections, combined with others that can be launched on your servers, will help you maximise the reliability of your solutions.
 
