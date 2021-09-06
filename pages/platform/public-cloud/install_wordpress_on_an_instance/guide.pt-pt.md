@@ -3,6 +3,7 @@ title: Instalar o Wordpress numa instância
 excerpt: Saiba como utilizar uma instância Public Cloud para WordPress
 slug: instalar_o_wordpress_numa_instancia
 section: Tutoriais
+hidden: true
 ---
 
 > [!primary]

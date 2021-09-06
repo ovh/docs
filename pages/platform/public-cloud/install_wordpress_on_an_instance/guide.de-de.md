@@ -3,6 +3,7 @@ title: Installation von WordPress auf einer Instanz
 excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz für WordPress nutzen
 slug: installation_von_wordpress_auf_einer_instanz
 section: 'Tutorials'
+hidden: true
 ---
 
 > [!primary]
