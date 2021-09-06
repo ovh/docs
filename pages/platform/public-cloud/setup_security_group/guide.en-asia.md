@@ -6,7 +6,7 @@ section: Horizon
 order: 5
 ---
 
-**Last updated 24th August, 2021**
+**Last updated 24th August 2021**
 
 ## Objective
 
@@ -57,7 +57,7 @@ To change the default rules, or if your needs change, click the `Manage Rules`{.
 If you have left the default rules on your security group, they will only let outgoing traffic pass through.
 
 ```bash
-root@serveur:~$ ssh admin@149.xxx.xxx.177
+root@server:~$ ssh admin@149.xxx.xxx.177
 
 ssh connect to host 149.xxx.xxx.177 port 22: Connection timed out
 ```
@@ -76,10 +76,10 @@ In our example, we will authorise the SSH connection to the instance.
 Once you have added the new rule, wait a few minutes for it to take effect.
 
 ```bash
-root@serveur:~$ ssh admin@149.xxx.xxx.177
+root@server:~$ ssh admin@149.xxx.xxx.177
 
 Last login: Tue Oct 13 13:56:30 2015 from proxy-109-190-254-35.ovh.net
-admin@serveur1:~$
+admin@server1:~$
 ```
 
 ### Configuring a security group on an instance <a name="instance-security-group"></a>
