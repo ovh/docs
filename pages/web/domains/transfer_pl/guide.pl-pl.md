@@ -12,11 +12,11 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 27-08-2021**
+**Ostatnia aktualizacja z dnia 06-09-2021**
 
 ## Wprowadzenie
 
-Twoja domena.pl jest aktualnie zarejestrowana u innego operatora i chcesz ją przenieść do OVHcloud? Jest to możliwe dzięki zastosowaniu procedury transferu.
+Twoja domena. pl jest aktualnie zarejestrowana u innego operatora i chcesz ją przenieść do OVHcloud? Jest to możliwe dzięki zastosowaniu procedury transferu.
 
 Transfer domeny umożliwia jej przeniesienie do innego operatora. Możesz przenieść domenę do OVHcloud, składając zamówienie. Zajmie to od jednego do pięciu dni.
 
@@ -26,8 +26,8 @@ Transfer domeny umożliwia jej przeniesienie do innego operatora. Możesz przeni
 
 - Domena .pl jest zarejestrowana u innego operatora.
 - Zainicjowanie transferu możliwe jest najwcześniej 5 dni od daty rejestracji domeny lub jej ostatniego transferu.
-- Nazwa domeny to "OK" lub "Transferable".
-- Nazwa domeny nie wygasła i ma datę wygaśnięcia pozwalającą na zakończenie procesu transferu w czasie (zalecane: ponad 60 dni).
+- Status domeny to "OK" lub "Transferrable".
+- Domena nie wygasła i ma datę wygaśnięcia pozwalającą na zakończenie procesu transferu w czasie (zalecane: ponad 60 dni).
 - Posiadanie możliwości odblokowania domeny
 - Posiadanie kodu transferu lub możliwość jego uzyskania
 - Posiadanie uprawnień do złożenia wniosku o transfer domeny

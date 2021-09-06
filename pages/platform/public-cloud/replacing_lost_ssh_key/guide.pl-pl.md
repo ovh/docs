@@ -6,101 +6,88 @@ legacy_guide_number: g2069
 section: Tutoriale
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-## 
-W przypadku utraty klucza SSH (na przykład na skutek reinstalacji komutera), możesz mieć problem z zalogowaniem się na swoją instancję, jeśli nie skonfigurowałeś innego alternatywnego sposobu logowania się na instancję. 
+**Ostatnia aktualizacja z dnia 27/09/2018**
 
-Abyś mógł odzyskać dostęp, udostępniamy tryb rescue, który pozwala na zalogowanie się za pomocą hasła i na zmodyfikowanie plików. 
+## Wprowadzenie
 
-Przewodnik ten wyjaśnia, jak skonfigurować plik authorized_keys użytkownika admin, aby móc dodać nowy klucz SSH i odzyskać dostęp do instancji.
+W przypadku utraty klucza SSH, niezależnie od tego, czy nastąpiła zmiana instalacji poczty czy innego typu, możliwe jest, że nie będziesz mógł się zalogować do instancji, jeśli nie skonfigurowałeś żadnego innego sposobu logowania się do instancji.
 
+Aby odzyskać dostęp, udostępniliśmy [tryb Rescue](https://docs.ovh.com/pl/public-cloud/przelaczenie_instancji_w_tryb_rescue/), który pozwala na zalogowanie się przy użyciu hasła i na zmianę plików.
 
-## Wstępne wymagania
+**Niniejszy przewodnik wyjaśnia, jak skonfigurować plik *authorized_keys* użytkownika *admin*, aby móc dodać nowy klucz SSH, aby uzyskać dostęp do instancji.**
 
-- [Utworzenie kluczy SSH]({legacy}1769)
-- [Przełączenie instancji w tryb rescue]({legacy}2029)
+## Wymagania początkowe
 
+- Utwórz klucz SSH
+- Zmień instancję w trybie Rescue
 
+## W praktyce
 
+> [!primary]
+>
+Jeśli chcesz zapisać klucz SSH w Panelu klienta OVHcloud, zalecamy użycie szyfrowania RSA lub ECDSA. ED25519 nie jest aktualnie obsługiwany.
+>
 
-## 
-Po zamontowaniu dysku instancji w trybie rescue, uzyskasz dostęp do wszystkich plików. 
+Po zamontowaniu dysku Twojej instancji w [trybie Rescue](https://docs.ovh.com/pl/public-cloud/przelaczenie_instancji_w_tryb_rescue/) będziesz mógł uzyskać dostęp do wszystkich Twoich plików.
 
-Klucze SSH znajdują się w pliku:
+Plik zawierający klucze SSH to:
 
-
-```
-/home/NOM_UTILISATEUR/.ssh/authorized_keys
-```
-
-
-Jeśli chcesz dodać nowy klucz SSH, wystarczy wyedytować ten plik i dodać do niego nowy klucz:
-
-
-```
-admin@instance:~$ sudo vim /mnt/home/NOM_UTILISATEUR/.ssh/authorized_keys
-
-ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
-777777777778888888888999999900000000000000000000000000== old@sshkey
-ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
-EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
+```sh
+/home/USER_NAME/.ssh/authorized_keys
 ```
 
+Jeśli chcesz dodać nowy klucz SSH, wystarczy edytować ten plik i dodać nowy klucz:
 
-
-## Informacje:
-Aby zmodyfikować klucz SSH domyślnego użytkownika, należy przejść do jego prywatnego katalogu. 
-
-Na przykład dla użytkownika admin plik będzie się znajdował w poniższym katalogu:
-
-
+```sh
+sudo vim /mnt/home/USER_NAME/.ssh/authorized_keys
+ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666777777777778888888888999999900000000000000000000000000= old@sshkey
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh= new@sshkey
 ```
+
+### Zmień klucz SSH użytkownika domyślnie
+
+Aby zmienić klucz SSH domyślnego użytkownika, wystarczy przejść do jego osobistego folderu. Na przykład, dla użytkownika administratora, plik, który ma być odnaleziony, znajduje się w następującym folderze:
+
+```sh
 /home/admin/.ssh/authorized_keys
 ```
 
+W przypadku instancji z Ubuntu 15.10 domyślnym użytkownikiem będzie Ubuntu, plik będzie więc w następującym folderze:
 
-Dla instancji z systemem Ubuntu 15.10 domyślnym użytkownikiem będzie ubuntu. Plik będzie się znajdował w poniższym katalogu:
-
-
-```
+```sh
 /home/ubuntu/.ssh/authorized_keys
 ```
 
+### Zmiana domyślnego hasła użytkownika
 
+Możesz również zmienić domyślne hasło użytkownika, używając trybu Rescue i następujących poleceń (w przypadku gdy użytkownik jest admin):
 
-## Warto wiedzieć:
-Możesz również zmienić hasło domyślnego użytkownika korzystając z trybu rescue i poniższych poleceń (jeśli użytkownikiem jest admin):
+Zmieniamy katalog główny i umieszczamy go bezpośrednio na dysku instancji:
 
+> [!primary]
+>
+W poniższym przykładzie jako punkt montowania użyliśmy vdb1 jako nazwy dysku serwera.
+>
 
-- Zmieniamy katalog główny, aby przejść bezpośrednio na dysk instancji:
-
-
-```
-root@instance:/home/admin# mount /dev/vdb1 /mnt/
-root@instance:/home/admin# chroot /mnt/
-```
-
-
-- Zmieniamy hasło dla użytkownika admin:
-
-
-```
-root@instance:/# passwd admin
+```sh
+/home/admin# mount /dev/vdb1 /mnt/
+/home/admin# chroot /mnt/
 ```
 
+Zmiana hasła administratora:
 
+```sh
+passwd admin
+```
 
-Po wykonaniu i zapisaniu zmiany wystarczy zrestartować i uruchomić instancję z jej dysku. Można już zalogować się na instancję za pomocą nowego klucza SSH.
+Po wykonaniu modyfikacji i zapisaniu jej zawartości wystarczy zrestartować instancję na dysku, aby móc połączyć się z instancją za pomocą nowego klucza SSH.
 
+## Sprawdź również
 
-## 
+[Zmień instancję w trybie Rescue](https://docs.ovh.com/pl/public-cloud/przelaczenie_instancji_w_tryb_rescue/)
 
-- [Konfiguracja dodatkowych kluczy SSH]({legacy}1924)
-- [Zdefiniowanie hasła przez użytkownika root]({legacy}1786)
-
-
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
