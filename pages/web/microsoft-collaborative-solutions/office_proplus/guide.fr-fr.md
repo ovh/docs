@@ -109,4 +109,6 @@ Assuez-vous que sa valeur est à `1`. Si cette clé n'existe pas, vous pouvez la
 
 ## Aller plus loin
 
+Ce guide est basé sur les informations délivrées dans le guide Microsoft [Déployer Microsoft 365 Apps à l’aide des services Bureau à distance](https://docs.microsoft.com/fr-fr/deployoffice/deploy-microsoft-365-apps-remote-desktop-services)
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
