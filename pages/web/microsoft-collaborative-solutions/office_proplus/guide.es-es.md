@@ -22,7 +22,7 @@ Quiere utilizar la suite de software presente en el pack Microsoft 365 apps en u
 ## Requisitos
 
 - Disponer de una licencia Microsoft 365 apps para empresas (anteriormente Office 365 ProPlus).
-- Utilizar Microsoft Windows a través de un escritorio remoto (****Remote ****Desktop ****Services)
+- Utilizar Microsoft Windows a través de un escritorio remoto (**R**emote **D**esktop **S**ervices)
 
 > [!warning]
 >

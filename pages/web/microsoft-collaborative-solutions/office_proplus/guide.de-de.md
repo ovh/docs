@@ -51,7 +51,7 @@ Die Installation eines Microsoft 365 Apps for Enterprise Angebots auf einem gete
 > Wenn Sie Ihre Office 365 Proplus Lizenz bereits installiert haben, müssen Sie sich **entledigen**.
 >
 
-- Wenn Sie Ihre Dessert-Lizenz haben, [klicken](https://www.microsoft.com/en-us/download/details.aspx?id=49117){.external} Sie bitte hier, um das Deployment-Tool Microsoft 365 herunterzuladen.
+- Wenn Sie Ihre Dessert-Lizenz haben, [klicken Sie bitte hier](https://www.microsoft.com/en-us/download/details.aspx?id=49117){.external}, um das Deployment-Tool Microsoft 365 herunterzuladen.
 
 
 - **Führen** Sie das Deployment-Tool auf Ihrer Maschine aus.
