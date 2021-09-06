@@ -3,7 +3,7 @@ title: Configurer son adresse e-mail sur Outlook pour Windows
 slug: configuration-outlook-2016
 excerpt: Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook pour Windows
 section: Configuration sur ordinateur
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 05/06/2021**

@@ -58,7 +58,7 @@ For **POP** configuration, the values are:
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|
-|Incoming|pro**?**.mail.ovh.net (replace "?" with your server number)|SSL/TLS|993|
+|Incoming|pro**?**.mail.ovh.net (replace "?" with your server number)|SSL/TLS|995|
 |Outgoing|pro**?**.mail.ovh.net (replace "?" with your server number)|STARTTLS|587|
 
 ### Using your email address
@@ -93,7 +93,7 @@ The window is divided into two parts, **Incoming Mail** and **Outgoing Mail**. C
 ![Outlook](images/config-outlook-emailpro07.png){.thumbnail}
 
 
-## Go further
+## Go further <a name="gofurther"></a>
 
 [Configuring your MX Plan address in Outlook for Windows](../../emails/configuration-outlook-2016/)
 

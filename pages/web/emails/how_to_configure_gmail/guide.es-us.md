@@ -2,7 +2,8 @@
 title: 'Configurar una dirección de correo electrónico en la interfaz web de Gmail'
 slug: configurar-direccion-de-correo-electronico-en-interfaz-web-gmail
 excerpt: 'Cómo configurar una cuenta MX Plan en la interfaz web de Gmail'
-section: 'Otros clientes de correo'
+section: Configuración en una interfaz web
+order: 01
 ---
 
 **Última actualización: 08/01/2021**

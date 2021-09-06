@@ -4,6 +4,7 @@ excerpt: 'Saiba como criar um endereço de e-mail com a oferta MX Plan'
 slug: e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail
 legacy_guide_number: g1343
 section: Introdução
+order: 02
 ---
 
 **Última atualização: 09/07/2019**

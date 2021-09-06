@@ -3,6 +3,7 @@ title: 'Wdrażanie serwera OpenVPN'
 slug: openvpn
 excerpt: 'Dowiedz się, jak zainstalować serwer OpenVPN na serwerze VPS'
 section: 'Poziom zaawansowany'
+hidden: true
 ---
 
 > [!primary]

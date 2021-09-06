@@ -1,40 +1,41 @@
 ---
-title: Build & use streamlit image
+title: Build & use a Streamlit image
 slug: build-use-streamlit-image
-excerpt: How to build and use a custom docker image containing a streamlit application
+excerpt: How to build and use a custom Docker image containing a Streamlit application
 section: Tutorials
 order: 7
 ---
-*Last updated 5th of June, 2021.*
+
+**Last updated 5th of June, 2021.**
 
 ## Objective
 
 [Streamlit](https://streamlit.io/) is a python framework that turns scripts into shareable web application.
 
-The purpose of this tutorial is to provide a concrete example on how to build and use a custom docker image for a streamlit applications.
+The purpose of this tutorial is to provide a concrete example on how to build and use a custom Docker image for Streamlit applications.
 
 ## Requirements
 
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
--   an **AI Training project** created inside a **public cloud** project
+-   an **AI Training project** created inside a **Public Cloud** project
 -   a [user for AI Training](../create-user)
--   [docker](https://www.docker.com/get-started) installed on your local computer
+-   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
 ## Instructions
 
-### Write a simple streamlit application
+### Write a simple Streamlit application
 
 Create a simple python file with name `simple_app.py`.
 
-Inside that file, import your required modules :
+Inside that file, import your required modules:
 
 ``` {.python}
 import streamlit as st
 import pandas as pd
 ```
 
-Display all information you want on your streamlit application :
+Display all information you want on your Streamlit application:
 
 ``` {.python}
 st.title('My first app')
@@ -45,10 +46,10 @@ st.write(pd.DataFrame({
 }))
 ```
 
--   More information about streamlit capabilities can be found [here](https://docs.streamlit.io/en/stable/)
+-   More information about Streamlit capabilities can be found [here](https://docs.streamlit.io/en/stable/)
 -   Direct link to the full python file can be found here [here](https://github.com/ovh/ai-training-examples/blob/main/jobs/streamlit/tuto_simple_app/simple_app.py)
 
-### Write the the dockerfile for your application
+### Write the the Dockerfile for your application
 
 Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from a classic python image.
 
@@ -56,7 +57,7 @@ Your Dockerfile should start with the the `FROM` instruction indicating the pare
 FROM python:3.8
 ```
 
-Install your needed python module using a `pip install ...` command. In our case we only need these 2 modules :
+Install your needed python module using a `pip install ...` command. In our case we only need these 2 modules:
 
 -   streamlit
 -   pandas
@@ -65,13 +66,13 @@ Install your needed python module using a `pip install ...` command. In our case
 RUN pip install streamlit pandas
 ```
 
-Install your application inside your image. In our case, we just copy our python file inside the `/opt` directory
+Install your application inside your image. In our case, we just copy our python file inside the `/opt` directory.
 
 ``` {.console}
 COPY simple_app.py /opt/simple_app.py
 ```
 
-Define your default launching command to start the application :
+Define your default launching command to start the application:
 
 ``` {.console}
 CMD [ "streamlit" , "run" , "/opt/simple_app.py", "--server.address=0.0.0.0" ]
@@ -79,9 +80,9 @@ CMD [ "streamlit" , "run" , "/opt/simple_app.py", "--server.address=0.0.0.0" ]
 
 > [!warning]
 >
-> In order to access the job from the outside world, don't forget to add the `--server.address=0.0.0.0` instruction on your `streamlit run ...` command. By doing this you indicate to the process that it have to bind on all network interfaces and not only the `localhost`
+> In order to access the job from the outside world, don't forget to add the `--server.address=0.0.0.0` instruction on your `streamlit run ...` command. By doing this you indicate to the process that it have to bind on all network interfaces and not only the `localhost`.
 
-Create the home directory of the **ovhcloud user** (`42420:42420`) and give it correct access rights
+Create the home directory of the **ovhcloud user** (`42420:42420`) and give it correct access rights:
 
 ``` {.console}
 RUN mkdir /workspace && chown -R 42420:42420 /workspace
@@ -91,14 +92,14 @@ WORKDIR /workspace
 
 > [!primary]
 >
-> This last step is mandatory because streamit needs to be able to write inside the `HOME` directory of the owner of the process in order to work properly
+> This last step is mandatory because streamit needs to be able to write inside the `HOME` directory of the owner of the process in order to work properly.
 
 -   More information about Dockerfiles can be found [here](https://docs.docker.com/engine/reference/builder/)
 -   Direct link to the full Dockerfile can be found here [here](https://github.com/ovh/ai-training-examples/blob/main/jobs/streamlit/tuto_simple_app/Dockerfile)
 
 ### Build the docker image from the dockerfile
 
-Launch the following command from the **Dockerfile** directory to build your application image
+Launch the following command from the **Dockerfile** directory to build your application image.
 
 ``` {.console}
 docker build . -t streamlit-example:latest
@@ -106,15 +107,15 @@ docker build . -t streamlit-example:latest
 
 > [!primary]
 >
-> The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory
+> The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 
 > [!primary]
 >
-> The `-t` argument allow you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **streamlit-example:latest**
+> The `-t` argument allow you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **streamlit-example:latest**.
 
-### Test it locally (Optional)
+### Test it locally (optional)
 
-Launch the following **docker command** to launch your application locally on your computer
+Launch the following **docker command** to launch your application locally on your computer:
 
 ``` {.console}
 docker run --rm -it -p 8501:8501 --user=42420:42420 streamlit-example:latest
@@ -126,29 +127,29 @@ docker run --rm -it -p 8501:8501 --user=42420:42420 streamlit-example:latest
 
 > [!warning]
 >
-> Don't forget the `--user=42420:42420` argument if you want to simulate the exact same behavior that will occur on **AI TRAINING jobs**. It executes the docker container as the specific OVHcloud user (user **42420:42420**)
+> Don't forget the `--user=42420:42420` argument if you want to simulate the exact same behavior that will occur on **AI TRAINING jobs**. It executes the docker container as the specific OVHcloud user (user **42420:42420**).
 
-Once started, your application should be available on http://localhost:8501
+Once started, your application should be available on `http://localhost:8501`.
 
 ### Push the image into the shared registry
 
 > [!warning]
 >
-> The shared registry of AI Training should only be use for testing purpose. Please consider attaching your own docker registry. More information about this can be found [here](../add-private-registry)
+> The shared registry of AI Training should only be use for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](../add-private-registry).
 
-Find the adress of your shared registry by launching this command
+Find the adress of your shared registry by launching this command:
 
 ``` {.console}
 ovhai registry list
 ```
 
-Login on the shared registry with your usual openstack credencials
+Login on the shared registry with your usual openstack credentials:
 
 ``` {.console}
 docker login -u <user-password> -p <user-password> <shared-registry-address>
 ```
 
-Push the compiled image into the shared registry
+Push the compiled image into the shared registry:
 
 ``` {.console}
 docker tag streamlit-example:latest <shared-registry-address>/streamlit-example:latest
@@ -157,7 +158,7 @@ docker push <shared-registry-address>/streamlit-example:latest
 
 ### Launch the job
 
-The following command starts a new job running your streamit application
+The following command starts a new job running your streamit application:
 
 ``` {.console}
 ovhai job run --default-http-port 8501 --cpu 1 <shared-registry-address>/streamlit-example:latest
@@ -165,17 +166,17 @@ ovhai job run --default-http-port 8501 --cpu 1 <shared-registry-address>/streaml
 
 > [!primary]
 >
-> `--default-http-port 8501` indicates that the port to reach on the job url is the `8501`.
+> `--default-http-port 8501` indicates that the port to reach on the job URL is the `8501`.
 
 > [!primary]
 >
-> `--cpu 1` indicates that we only request 1 cpu for that job.
+> `--cpu 1` indicates that we only request 1 CPU for that job.
 
 > [!primary]
 >
-> Consider adding the `--unsecure-http` attribute if you want your application to be reachable without any authentication
+> Consider adding the `--unsecure-http` attribute if you want your application to be reachable without any authentication.
 
-Once the job is running you can access your streamlit application directly from the job's url
+Once the job is running you can access your streamlit application directly from the job's URL.
 
 ![image](images/streamlit.png){.thumbnail}
 

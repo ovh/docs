@@ -3,7 +3,7 @@ title: 'Getting started with an MX Plan solution'
 slug: web_hosting_an_overview_of_ovh_email
 excerpt: 'Find out how to get started with an MX Plan solution'
 section: 'Getting started'
-order: 3
+order: 01
 ---
 
 **Last updated 26th March 2019**

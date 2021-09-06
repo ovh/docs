@@ -1,170 +1,85 @@
 ---
-title: 'E-mails Partilhados: Guia de configuração para o Thunderbird'
-excerpt: ''
+title: 'Configurar um endereço de e-mail no Thunderbird para Windows'
 slug: e-mails_partilhados_guia_de_configuracao_para_o_thunderbird
 legacy_guide_number: g1297
+excerpt: 'Encontre aqui as informações para configurar o seu endereço de e-mail no Thunderbird.'
+section: Configuração num computador
+order: 04
 ---
 
+**Última atualização: 26/08/2021**
 
-## Parte 1: Início
-Num primeiro tempo aceda à aplicação "Thunderbird" instalada no seu computador.
+## Objetivo
 
-Veja a interface que irá aparecer por defeito caso ainda não possui nenhuma conta de e-mail configurada. Caso contrário, no menu poderá adicionar uma nova conta.
+As contas MX Plan podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir. A Thunderbird é um cliente de e-mails livre e gratuito.
 
-Selecione "Correio eletrónico" para continuar.
+**Saiba como configurar o seu endereço de e-mail MX Plan no Thunderbird no Windows.**
 
-![](images/img_1227.jpg){.thumbnail}
+> [!warning]
+>
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+> 
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+> 
 
+## Requisitos
 
-## Parte 2: Início (continuação)
-Para prosseguirmos com a instalação da conta de e-mail, selecione "Passar esta etapa e utilizar o meu endereço de e-mail existente" para continuar.
+- Ter um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external}).
+- Dispor do software Thunderbird instalado no seu Windows.
+- Dispor das credenciais do endereço de e-mail que pretende configurar.
+ 
+## Instruções
 
-![](images/img_1228.jpg){.thumbnail}
+### Adicionar a conta
 
+- **Se for a primeira vez que utiliza a aplicação**, aparecerá um assistente de configuração que lhe irá solicitar o seu endereço de e-mail.
 
-## Parte 3: Criação da conta
-Introduzas os campos apresentados:
+- **Se uma conta já estiver configurada**: clique em `Ficheiro`{.action} na barra de menu no topo do seu ecrã, depois em `Novo`{.action} e, por fim, em `Obter uma nova conta de correio...`{.action}.
 
-"O seu nome e apelido": introduza o nome desejado.
+| | |
+|---|---|
+|![Thunderbird](images/thunderbird-win-mxplan01.png){.thumbnail}|Na nova janela, introduza as seguintes 3 informações: <br>- O seu nome completo (Nome de apresentação)<br>- Endereço eletrónico <br>- Palavra-passe.|
+|A seguir, clique em `Configurar manualmente...`{.action} para introduzir os parâmetros do servidor **ENTRAANT**: <br>- Protocolo **IMAP** <br>- Servidor **ssl0.ovh.net** <br>- Porta **993** <br>- SSL **SSL/TLS** <br>- Autenticação da **password normal** <br>- Identificar **o seu endereço de e-mail completo**|![Thunderbird](images/thunderbird-win-mxplan02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-mxplan03.png){.thumbnail}|Introduzir os parâmetros do servidor de **saída**: <br>- Protocolo **SMTP** <br>- Servidor **ssl0.ovh.net** <br>- Porta **465** <br>- SSL **SSL/TLS** <br>- Autenticação da **password normal** <br>- Identificar **o seu endereço de e-mail completo**<br><br>Para terminar a configuração, clique em `Terminado`{.action}|
 
-"Endereço de e-mail": o seu endereço de e-mail na íntegra.
 
-Password: A password que definiu no [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para a conta de e-mail partilhada.
 
-"Guardar a password": deve selecionar esta opção.
+No âmbito de uma configuração em **POP**, os valores são os seguintes:
 
-O Thunderbird recupera os parâmetros da conta de e-mail e propõe-lhe duas possíveis configurações: IMAP ou POP3.
+|Tipo de servidor|Nome do servidor|Método de encriptação|Porta|
+|---|---|---|---|
+|Entrada|ssl0.ovh.net|SSL/TLS|995|
+|Saída|ssl0.ovh.net|SSL/TLS|465|
 
-No nosso exemplo vamos configurar a conta como IMAP. É porém possível que a configure como POP, encontrando no final deste guias as informações necessárias para que configure a conta como POP3.
+### Utilizar o endereço de e-mail
 
-Deve ter em conta que o Thunderbird propõe uma configuração manual, podendo encontrá-la na secção "Configuração Manual" deste guia.
+Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-Clique em "Terminar" para finalizar as etapas da instalação.
+A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Consultar a sua conta Exchange a partir da interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/) ou [Utilizar o seu endereço de e-mail a partir do webmail RoundCube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/).
 
-![](images/img_1229.jpg){.thumbnail}
+### Recuperar um backup do seu endereço de e-mail
 
+Se tiver de efetuar uma operação suscetível de causar a perda dos dados da sua conta de e-mail, sugerimos que efetue uma cópia de segurança da conta de e-mail em questão. Para isso, consulte o parágrafo "**Exportar**" na secção "**Thunderbird**" do nosso guia [Migrar manualmente o seu endereço de e-mail](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/).
 
-## Parte 4: Finalização
-Nesta altura o seu endereço de e-mail foi adicionado automaticamente e está funcional.
+### Modificar os parâmetros existentes
 
-Vamos ver em conjunto no seguimento deste guia, os diferentes parâmetros da conta.
+Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros da conta para os alterar:
 
-Para tal selecione "Ver os parâmetros desta conta" após clicar no endereço de e-mail.
+- Aceda às `Ferramentas`{.action} a partir da barra de menu no topo do ecrã.
+- Clique em `Parâmetros das contas`{.action}.
 
-![](images/img_1230.jpg){.thumbnail}
+![Thunderbird](images/thunderbird-win-mxplan04.png){.thumbnail}
 
+- Para alterar os parâmetros associados à **receção** dos seus e-mails, clique em `Parâmetros do servidor`{.action} na coluna da esquerda do seu endereço de e-mail.
 
-## Parâmetros da conta
-Encontra aqui as informações gerais da sua conta de e-mail.
+![Thunderbird](images/thunderbird-win-mxplan05.png){.thumbnail}
 
-Pode adicionar aqui uma assinatura aos seus e-mails, ou definir um outro endereço de e-mail ao qual os seus destinatários respondem.
+- Para modificar os parâmetros associados ao **envio** dos seus e-mails, clique em `Servidor de saída (SMTP)`{.action} no fundo da coluna da esquerda.
+- Clique no endereço de e-mail em questão na lista e, a seguir, em `Alterar`{.action}.
 
-Pode igualmente consultar e modificar o servidor SMTP utilizado pela conta de e-mail.
+![Thunderbird](images/thunderbird-win-mxplan06.png){.thumbnail}
 
-![](images/img_1231.jpg){.thumbnail}
 
+## Saiba mais
 
-## Parâmetros do servidor de receção
-Nesta janela irá encontrar todas as informações que dizem respeito ao servidor de receção de e-mails.
-
-Pode parametrizar o intervalo de tempo em que o software verifica as novas mensagens ou a política de gestão de eliminação de e-mails.
-
-![](images/img_1232.jpg){.thumbnail}
-
-
-## Cópias e pastas
-Aqui encontrará as diferentes regras que dizem respeito às pastas, ao envio de e-mails, aos arquivos.
-
-![](images/img_1233.jpg){.thumbnail}
-
-
-## Sincronização e espaço em disco
-Dispõe da possibilidade de escolher a forma como os seus e-mails são sincronizados, podendo ainda definir a eliminação, ou não, dos seus e-mails.
-
-![](images/img_1234.jpg){.thumbnail}
-
-
-## Parâmetros do servidor de envio SMTP
-É possível que adicione ou modifique os servidores SMTP configurados no seu software.
-
-![](images/img_1235.jpg){.thumbnail}
-
-
-## Parâmetros do servidor de envio SMTP: (continuação)
-Encontrará aqui os diferentes parâmetros modificáveis, que aparecerão assim que clicar no seu servidor SMTP e clicar em "Modificar".
-
-
-- Deve, imperiosamente, ativar  a autenticação do servidor SMTP.
-
-
-Selecione como método de autenticação: Palavra-passe normal
-
-![](images/img_1236.jpg){.thumbnail}
-
-- A autenticação para o servidor de envio é um parâmetro indispensável para que a emissão de email possa funcionar corretamente nos nossos servidores SMTP.
-
-- Se a autenticação não estiver ativada, um ticket de incidente Open SMTP poderá ser automaticamente encetado e enviado para o informar quanto ao facto de que a autenticação "POP before SMTP" não é suportada. Deverá, imperativamente, ativar a Autenticação para o servidor de saída a fim de poder enviar emails.
-
-
-
-
-## Adicionar uma conta manualmente
-Veja o que aparece após clicar em "Configuração manual" (Cf. parte 3).
-
-Pode definir os parâmetros de configuração da conta de e-mail.
-
-![](images/img_1237.jpg){.thumbnail}
-
-
-## Configuração POP
-Eis as informações a ter em conta para a configuração de uma conta de email POP.
-
-Configuração POP com encriptação SSL activada ou SSL desativada : 
-
-Endereço de Email : O seu endereço de email completo.
-Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-Nome de utilizador : O seu endereço de email completo.
-Servidor de receção : Servidor de receção de emails : SSL0.OVH.NET
-Porta do servidor de receção : A porta : 995 ou 110
-Servidor de envio : O servidor deve ser : SSL0.OVH.NET
-Porta do servidor de envio: Use a porta: 465 ou 587
-
-As portas 110 e 587 correspondem à encriptação SSL desativada.
-As portas 995 e 465 correspondem à encriptação SSL ativada.
-
-
-- Deve obrigatoriamente ativar a  autenticação[/url] para o servidor SMTP.
-
-
-|Portas|SSLactivado|SSLdesativado|
-|---|---|---|
-|Receção|995|110|
-|Envio|465|587|
-
-
-
-
-## Configuração IMAP
-Eis as informações a ter em conta para a configuração de uma conta de email IMAP.
-
-Configuração IMAP com encriptação SSL activada ou SSL desativada : 
-
-Endereço de Email : O seu endereço de email completo.
-Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-Nome de utilizador : O seu endereço de email completo.
-Servidor de receção : Servidor de receção de emails : SSL0.OVH.NET
-Porta do servidor de receção : A porta : 993 ou 143
-Servidor de envio : O servidor deve ser : SSL0.OVH.NET
-Porta do servidor de envio: Use a porta: 465 ou 587
-
-As portas 143 e 587 correspondem à encriptação SSL desativada.
-As portas 993 e 465 correspondem à encriptação SSL ativada.
-
-
-- Deve obrigatoriamente ativar a  autenticação[/url] para o servidor SMTP.
-
-
-|Portas|SSLactivado|SSLdesativado|
-|---|---|---|
-|Receção|993|143|
-|Envio|465|587|
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

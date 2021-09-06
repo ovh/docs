@@ -3,7 +3,7 @@ title: FAQ
 slug: ovhcloudconnect-faq
 excerpt: 'FAQ about the OVHcloud Connect solution'
 section: Getting started
-order: 4
+order: 3
 ---
 
 **Last updated 14th September 2020**

@@ -3,6 +3,7 @@ title: Installa Wordpress sulla tua istanza
 excerpt: Scopri come usare il Public Cloud per WordPress
 slug: installa_wordpress_sulla_tua_istanza
 section: Tutorial
+hidden: true
 ---
 
 > [!primary]

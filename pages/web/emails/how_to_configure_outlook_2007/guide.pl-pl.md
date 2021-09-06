@@ -3,6 +3,7 @@ title: Konfiguracja konta e-mail w programie Outlook 2007
 excerpt: ''
 slug: konfiguracja_konta_e-mail_w_programie_outlook_2007
 legacy_guide_number: g1298
+hidden: true
 ---
 
 

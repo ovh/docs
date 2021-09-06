@@ -4,7 +4,7 @@ legacy_guide_number: 1381
 slug: mail-mutualise-guide-configuration-blackberry
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur BlackBerry
 section: Configuration sur smartphone
-order: 3
+order: 03
 ---
 
 **Dernière mise à jour le 05/05/2020**

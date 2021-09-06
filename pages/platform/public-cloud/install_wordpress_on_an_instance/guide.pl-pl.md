@@ -3,6 +3,7 @@ title: Zainstaluj moduł WordPress w instancji
 excerpt: Dowiedz się, jak korzystać z instancji Public Cloud dla modułu WordPress
 slug: instalacja_modulu_wordpress_na_instancji
 section: Tutoriale
+hidden: true
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: Przewodnik dotyczący konfiguracji programu Outlook 2011 w systemie Mac
 excerpt: Przewodnik ten opisuje konfigurację programu Outlook 2011 w systemie Mac
 slug: przewodnik_dotyczacy_konfiguracji_programu_outlook_2011_w_systemie_mac
 legacy_guide_number: g1345
+hidden: true
 ---
 
 

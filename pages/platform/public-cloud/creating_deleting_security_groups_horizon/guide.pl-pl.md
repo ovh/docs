@@ -3,6 +3,7 @@ title: Tworzenie i usuwanie grup bezpieczeństwa w panelu Horizon
 excerpt: Tworzenie zestawu reguł filtrowania IP
 slug: tworzenie-usuwanie-grupy-bezpieczenstwa-horizon
 section: Zarządzanie w interfejsie Horizon
+hidden: true
 ---
 
 **Ostatnia aktualizacja dnia 16-01-2018**

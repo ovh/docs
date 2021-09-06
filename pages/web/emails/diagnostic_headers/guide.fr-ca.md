@@ -4,6 +4,7 @@ slug: recuperation-des-entetes-e-mails
 legacy_guide_number: 1365
 excerpt: 'Retrouver ici comment récupérer un entête e-mail.'
 section: Diagnostic
+order: 03
 ---
 
 **Dernière mise à jour le 05/05/2020**

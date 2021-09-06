@@ -4,7 +4,7 @@ slug: email-redirection-guide
 legacy_guide_number: 2001
 excerpt: 'Find out how to manage email redirections'
 section: 'Email address features'
-order: 2
+order: 01
 ---
 
 **Last updated 5th May 2020**
