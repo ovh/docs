@@ -27,7 +27,7 @@ Vous souhaitez utiliser la suite logicielle présente dans le pack Microsoft 365
 
 ## En pratique
 
-Ce guide est basé sur les informations délivrées dans le guide Microsoft [Déployer Microsoft 365 Apps à l’aide des services Bureau à distance].(https://docs.microsoft.com/fr-fr/deployoffice/deploy-microsoft-365-apps-remote-desktop-services)
+Ce guide est basé sur les informations délivrées dans le guide Microsoft [Déployer Microsoft 365 Apps à l’aide des services Bureau à distance](https://docs.microsoft.com/fr-fr/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
 
 > [!warning]
 >
