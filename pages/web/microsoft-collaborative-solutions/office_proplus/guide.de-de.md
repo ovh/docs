@@ -1,7 +1,7 @@
 ---
 title: Remote Desktop mit Microsoft 365 Apps verwenden
 legacy_guide_number: 2339
-slug: office365-proplus-desktop-a-remote
+slug: office365-proplus-remotedesktopdienste
 excerpt: So installieren und verwenden Sie Microsoft 365 Apps auf einem entfernten Desktop (RDS) oder einem geteilten Computer
 section: Office
 order: 4
@@ -31,7 +31,7 @@ Sie möchten die im Microsoft 365 Apps Paket enthaltene Software-Suite auf einer
 
 ## In der praktischen Anwendung
 
-Diese Anleitung basiert auf den Informationen, die in der Microsoft [Deployment Microsoft 365 Apps Anleitung über Remotedesktop-Dienste bereitgestellt werden](https://docs.microsoft.com/de/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
+Diese Anleitung basiert auf den Informationen, die in der Microsoft [Deployment Microsoft 365 Apps Anleitung über Remotedesktop-Dienste bereitgestellt werden](https://docs.microsoft.com/de-de/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
 
 > [!warning]
 >
@@ -51,7 +51,7 @@ Die Installation eines Microsoft 365 Apps for Enterprise Angebots auf einem gete
 > Wenn Sie Ihre Office 365 Proplus Lizenz bereits installiert haben, müssen Sie sich **entledigen**.
 >
 
-- Wenn Sie Ihre Dessert-Lizenz [haben, klicken](https://www.microsoft.com/en-us/download/details.aspx?id=49117){.external} Sie bitte hier, um das Deployment-Tool Microsoft 365 herunterzuladen.
+- Wenn Sie Ihre Dessert-Lizenz haben, [klicken](https://www.microsoft.com/en-us/download/details.aspx?id=49117){.external} Sie bitte hier, um das Deployment-Tool Microsoft 365 herunterzuladen.
 
 
 - **Führen** Sie das Deployment-Tool auf Ihrer Maschine aus.
