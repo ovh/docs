@@ -98,13 +98,17 @@ Vous avez reçu un mail d'OVHcloud, indiquant que la base de données de votre s
 
 ![mail_overquota](images/mail_overquota.png){.thumbnail}
 
-
-
-
+Trois méthodes vous permettront de débloquer votre base de données : 
 
 #### Méthode 1 : passer votre abonnement sur une offre supérieure
 
-#### Méthode 2 : migrer vos données sur une base de taille supérieure
+Si vous disposez d'une formule d'hébergement **Perso2014** ou **Pro2014**, vous pouvez passer sur l'offre supérieure, afin que la taille de votre base de données augmente automatiquement et soit réouverte. Cette méthode est la plus simple et ne nécessite aucune compétence technique particulière.
+
+Pour effectuer ce changement, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis cliquez sur `Hébergements`{.action}, puis l'hébergement concerné. Cliquez sur le bouton `...`{.action} dans la partie `Offre` sur la droite de l'écran.
+
+Si vous utilisez une offre **Performance**, reportez-vous à la [méthode 2](#methode2)
+
+#### Méthode 2 : migrer vos données sur une base de taille supérieure <a name="methode2"></a>
 
 #### Méthode 3 : supprimer les données inutiles
 
