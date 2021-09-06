@@ -70,7 +70,7 @@ Um diese Installation durchzuführen, vergewissern Sie sich, dass im Feld `Insta
 
 ![Einfache Installation eines Moduls](images/choose_installation.png){.thumbnail}
 
-Nach Abschluss der Installation erhalten Sie eine E-Mail mit den notwendigen Information für den Login zum Verwaltungsinterface des CMS. Sie können sich jetzt einloggen und Ihre Website anpassen.
+Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit den notwendigen Informationen für die Verbindung zum Administrator-Interface des CMS. Loggen Sie sich dann in diese ein, um Ihre Website zu personalisieren.
 
 
 #### Erweiterte Installation eines Moduls

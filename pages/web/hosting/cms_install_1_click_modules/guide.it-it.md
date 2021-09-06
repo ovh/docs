@@ -66,7 +66,7 @@ Assicurati che la casella `Installazione avanzata`{.action} non sia selezionata 
 
 ![Installazione base di un modulo](images/choose_installation.png){.thumbnail}
 
-A installazione completata ricevi un’email con le informazioni necessarie ad accedere all'interfaccia di amministrazione del CMS, da cui potrai personalizzare il tuo sito. 
+Una volta completata l'installazione, riceverai un'email con le informazioni necessarie per accedere all'interfaccia di gestione del CMS. Per personalizzare il sito, accedi alla pagina.
 
 #### Installazione avanzata di un modulo
 
