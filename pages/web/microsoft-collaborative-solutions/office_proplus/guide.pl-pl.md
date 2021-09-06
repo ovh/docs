@@ -31,7 +31,7 @@ Chcesz korzystać z pakietu oprogramowania Microsoft 365 apps na maszynie zdalne
 
 ## W praktyce
 
-Niniejszy przewodnik jest oparty na informacjach wydanych w przewodniku Microsoft [Wdrażaj Microsoft 365 Apps za pomocą usług zdalnego](https://docs.microsoft.com/pl-pl/deployoffice/deploy-microsoft-365-apps-remote-desktop-services) pulpitu.
+Niniejszy przewodnik jest oparty na informacjach wydanych w przewodniku Microsoft [Deploy Microsoft 365 Apps by using Remote Desktop Services](https://docs.microsoft.com/pl-pl/deployoffice/deploy-microsoft-365-apps-remote-desktop-services) pulpitu.
 
 > [!warning]
 >

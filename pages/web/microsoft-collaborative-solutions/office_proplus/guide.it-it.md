@@ -31,7 +31,7 @@ Vuoi utilizzare la suite software presente nel pack Microsoft 365 aps su una mac
 
 ## Procedura
 
-Questa guida si basa sulle informazioni fornite nella guida Microsoft [Implementa Microsoft 365 Apps utilizzando i servizi desktop remoto](https://docs.microsoft.com/it-it/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
+Questa guida si basa sulle informazioni fornite nella guida Microsoft [Distribuire Microsoft 365 Apps mediante Servizi Desktop remoto](https://docs.microsoft.com/it-it/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
 
 > [!warning]
 >

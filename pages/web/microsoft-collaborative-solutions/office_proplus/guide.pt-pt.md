@@ -31,7 +31,7 @@ Deseja utilizar o pacote de software presente no pack Microsoft 365 apps numa m�
 
 ## Instruções
 
-Este guia baseia-se nas informações fornecidas no guia Microsoft [Implementar Microsoft 365 Apps com a ajuda dos serviços de ambiente de trabalho remoto](https://docs.microsoft.com/pt/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
+Este guia baseia-se nas informações fornecidas no guia Microsoft [Deploy Microsoft 365 Apps by using Remote Desktop Services](https://docs.microsoft.com/pt/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
 
 > [!warning]
 >

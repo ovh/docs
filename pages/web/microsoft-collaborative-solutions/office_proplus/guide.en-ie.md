@@ -27,7 +27,7 @@ You want to use the software suite in the Microsoft 365 apps pack on a remote or
 
 ## Instructions
 
-This guide is based on the information in the Microsoft [Deploy Microsoft 365 Apps Using Remote](https://docs.microsoft.com/fr-fr/deployoffice/deploy-microsoft-365-apps-remote-desktop-services) Desktop Services guide.
+This guide is based on the information in the Microsoft [Deploy Microsoft 365 Apps by using Remote Desktop Services](https://docs.microsoft.com/fr-fr/deployoffice/deploy-microsoft-365-apps-remote-desktop-services) Desktop Services guide.
 
 > [!warning]
 >

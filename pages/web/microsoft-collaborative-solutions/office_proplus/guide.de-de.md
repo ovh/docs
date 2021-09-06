@@ -31,7 +31,7 @@ Sie möchten die im Microsoft 365 Apps Paket enthaltene Software-Suite auf einer
 
 ## In der praktischen Anwendung
 
-Diese Anleitung basiert auf den Informationen, die in der Microsoft [Deployment Microsoft 365 Apps Anleitung über Remotedesktop-Dienste bereitgestellt werden](https://docs.microsoft.com/de-de/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
+Diese Anleitung basiert auf den Informationen, die in der Microsoft [Bereitstellen von Microsoft 365 Apps mithilfe der Remotedesktopdienste](https://docs.microsoft.com/de-de/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
 
 > [!warning]
 >

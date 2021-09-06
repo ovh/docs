@@ -31,7 +31,7 @@ Quiere utilizar la suite de software presente en el pack Microsoft 365 apps en u
 
 ## Procedimiento
 
-Esta guía se basa en la información proporcionada en la guía Microsoft [Desplegar Microsoft 365 Apps utilizando los servicios de escritorio remoto](https://docs.microsoft.com/es-es/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
+Esta guía se basa en la información proporcionada en la guía Microsoft [Implementar Aplicaciones de Microsoft 365 con Servicios de Escritorio remoto](https://docs.microsoft.com/es-es/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
 
 > [!warning]
 >
