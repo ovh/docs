@@ -3,6 +3,7 @@ title: 'OpenVPN Server einrichten'
 slug: openvpn
 excerpt: 'Erfahren Sie hier, wie Sie einen OpenVPN Server auf einem VPS installieren'
 section: 'Fortgeschrittene Nutzung'
+hidden: true
 ---
 
 > [!primary]

@@ -58,7 +58,7 @@ For **POP** configuration, the values are:
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|
-|Incoming|pro**?**.mail.ovh.net (replace "?" with your server number)|SSL/TLS|993|
+|Incoming|pro**?**.mail.ovh.net (replace "?" with your server number)|SSL/TLS|995|
 |Outgoing|pro**?**.mail.ovh.net (replace "?" with your server number)|STARTTLS|587|
 
 ### Using your email address

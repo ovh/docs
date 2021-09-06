@@ -3,6 +3,7 @@ title: 'Deploying an OpenVPN server'
 slug: openvpn
 excerpt: 'Find out how to install an OpenVPN server on a VPS'
 section: 'Advanced usage'
+hidden: true
 ---
 
 **Last updated 24th June 2021**
