@@ -2,7 +2,7 @@
 title: Utiliser le bureau à distance avec Microsoft 365 apps
 legacy_guide_number: 2339
 slug: office365-proplus-bureau-a-distance
-excerpt: Découvez comment installer et utiliser Microsoft 365 apps sur un bureau distant (RDS) ou un ordinateur partagé
+excerpt: Découvrez comment installer et utiliser Microsoft 365 apps sur un bureau distant (RDS) ou un ordinateur partagé
 section: Office
 order: 4
 ---
@@ -11,9 +11,9 @@ order: 4
 
 ## Objectif
 
-Vous souhaitez utiliser la suite logiciel présente dans le pack Microsoft 365 apps sur une machine distante ou partagée. Pour ce faire, il est necessaire de suivre la procédure d'installation décrite dans ce guide.
+Vous souhaitez utiliser la suite logicielle présente dans le pack Microsoft 365 apps sur une machine distante ou partagée. Pour ce faire, il est nécessaire de suivre la procédure d'installation décrite dans ce guide.
 
-**Découvez comment installer et utiliser Microsoft 365 apps sur un bureau distant (RDS) ou un ordinateur partagé**
+**Découvrez comment installer et utiliser Microsoft 365 apps sur un bureau distant (RDS) ou un ordinateur partagé**
 
 ## Prérequis
 
@@ -64,7 +64,7 @@ Display Level="None" AcceptEULA="True"
 Property Name="SharedComputerLicensing" Value="1"
 ```
 
-Si ces lignes n'existe pas, vous pouvez les copier/coller dans le fichier.
+Si ces lignes n'existent pas, vous pouvez les copier/coller dans le fichier.
 
 - Enregistrez les modifications effectuées. Ouvrez ensuite un terminal powershell et exécutez ces deux commandes depuis le dossier où se trouve le fichier `configuration.xml`:
 
