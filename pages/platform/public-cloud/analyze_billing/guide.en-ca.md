@@ -6,19 +6,27 @@ section: 'Project management'
 order: 2
 ---
 
-**Last updated 09th January 2020**
+**Last updated 07th September 2021**
 
-## Introduction
+## Objective
+
 One of the main principles of cloud computing is based on **pay-as-you-go** billing, where customers pay for what they use.
 
 The standard billing option for renting computing resources is generally based on a contract with a pre-determined length (usually 12 months) and a commitment between two parties during this period. However, cloud computing offers a more flexible billing system — **one where you pay at the end of the month for the time during which you have used the resources**.
 
 This system is similar to the one used by certain telephone operators, where they bill at the end of the month for the number of minutes used. Here, OVHcloud bills the hours for which the server, storage space or another element of the service is used.
 
-This guide details the billing design of OVHcloud Public Cloud solutions.
+**This guide details the billing design of OVHcloud Public Cloud solutions.**
+
+## Requirements
+
+* a [Public Cloud]({ovh_www}/public-cloud/){.external} project in your OVH account
+* a [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/){.external}.
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 
 
 ## General design
+
 Our goal is to provide a billing system that matches the way our customers use this service as closely as possible. To achieve this, we needed to make the billing granular. This is why the unit system is usually the amount of time, counted in hours in this case.
 
 For each resource to be billed, an hour counter starts when the resource is created, and stops when the resource is removed. This works in accordance with the principle of each hour of use being billed.
@@ -28,7 +36,7 @@ At the end of the month, each counter is multiplied by the hourly rate for the r
 Each cloud project has its own bill, which totals up all of the resources billed during the month. This bill is generated on the first day of the following month.
 
 
-## Example
+### Example
 This example might provide a clear explanation of how this works.
 
 - a user launches a B2-15 instance on the 04th day of the month, at 09:40
@@ -55,7 +63,7 @@ ie. €20.97.
 > 
 
 
-## View your bills.
+### View your bills.
 To view the bills for a project, go to the `Public Cloud`{.action}(1) tab in the OVHcloud Control Panel. Next, select the public cloud project in the left-hand menu (2), then click `Billing Control`{.action} (3) and `Log`{.action}(4).
 
 
@@ -67,13 +75,13 @@ In this screen, you can:
 - browse logs by going to the previous or next month
 
 
-## View your current resource usage.
+### View your current resource usage.
 You can also view your current resource usage (for the ongoing month) by clicking `Current resource usage`{.action}.
 
 
 ![public-cloud](images/pci-billing-information2.png){.thumbnail}
 
-The first part, **"Already billed"**, includes resources billed by the month (see instances billed at the lower monthly rate). These resources are the exception to the “pay-as-you-go” method. Commitments are billed on a monthly basis and payable in advance. This means that on the 01st of the month, the user pays to use their resources for the 30 days that follow. The commitment option offers the user a cost advantage. In this resource usage screen, you have already paid for the resources on the 1st day of the ongoing month.
+The first part, **"Already billed"**, includes resources billed by the month (see instances billed at the lower monthly rate). These resources are the exception to the “pay-as-you-go” method. Commitments are billed on a monthly basis and payable in advance. 
 
 The second part, **"Upcoming bills"**, includes pay-as-you-go resources. It lists your resource usage from the first of the month up to that day.
 
@@ -94,9 +102,8 @@ You can also have an `Estimation of your next bill`{.action} (for the 01st of th
 If you would like to receive alerts when the forecast of your resource usage exceeds a set threshold, you can configure this via this screen. When your forecasted usage exceeds the set threshold, you will receive an email to alert you of this.
 
 
-## Instances
+### Instances
 The prices of cloud instances (or cloud servers) are listed in the OVHcloud Control Panel before you get started with an instance. You can also view prices on the [pricing page](https://www.ovhcloud.com/en-ca/public-cloud/prices/){.external}.
-
 
 
 > [!primary]
@@ -105,22 +112,6 @@ The prices of cloud instances (or cloud servers) are listed in the OVHcloud Cont
 > 
 
 Each instance model has two different billing methods: hourly and monthly.
-
-
-### Hourly price
-This pricing follows the pay-as-you-go model explained earlier.
-
-These instances are paid for on the first day of the following month, for the hours of resource usage over the course of the previous month.
-
-
-### Monthly price
-This pricing offers a price reduction of around 50% compared to hourly billing. This is typical cloud billing.
-
-These instances are paid on the first day of each month, for rental until the first day of the following month. They are paid in advance for the entire month, even if the instance is deleted before the end of the month.
-
-When you first order an instance with monthly pricing, a first bill is generated, corresponding to the monthly price calculated on a pro rata basis for the period between the order date, and the end of the month.
-
-
 
 > [!alert]
 >
@@ -131,7 +122,24 @@ When you first order an instance with monthly pricing, a first bill is generated
 > 
 
 
-## Storage
+#### Hourly price
+This pricing follows the pay-as-you-go model explained earlier.
+
+These instances are paid for on the first day of the following month, for the hours of resource usage over the course of the previous month.
+
+##### **Suspend or shelve an instance**
+
+For hourly instances, it is possible to suspend or shelve an instance in order to release the resources dedicated to the instance. In this case, the data on your local disk will be stored, and only the storage used for this will be charged(snapshot created once the instance is suspended). The IP address will remain.
+
+For more information about this consult this guide: 
+
+#### Monthly price
+This pricing offers a price reduction of around 50% compared to hourly billing. This is typical cloud billing.
+
+Every month started is billed, even if the instance is deleted before the end of the month.
+
+
+### Storage
 Storage solutions are generally charged on the basis of a GB per month price. To see the price per GB per hour, simply divide the per-month price by 720, the average number of hours in a month. The result of this calculation will be the cost of an element stored per hour. 
 
 The calculation is: ( Price per GB per month / 720 ) x number of hours x number of GB

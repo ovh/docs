@@ -10,7 +10,7 @@ order: 4
 
 ## Objective
 
-When you create a Public Cloud instance, you can choose to be billed at either an hourly or monthly rate. Hourly-rate instances are billed on a pay-as-you-go basis, i.e. at the end of the month, users are billed for the specific resources they have utilised. Monthly-rate instances can be paid for in advance, and are billed at a lower price (50% less than pay-as-you-go). If you initially selected hourly billing, you can switch to monthly billing at any time.
+When you create a Public Cloud instance, you can choose to be billed at either an hourly or monthly rate. Hourly-rate instances are billed on a pay-as-you-go basis, i.e. at the end of the month, users are billed for the hour for any specific resources have been used. Monthly-rate instances are most of the time 50% less expensive than hourly-rate, each month started is billed at the end of the month. If you initially selected hourly billing, you can switch to monthly billing at any time.
 
 **This guide explains how to switch from hourly to monthly billing.**
 
