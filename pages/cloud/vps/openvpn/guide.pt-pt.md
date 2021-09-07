@@ -3,6 +3,7 @@ title: 'Implementar um servidor OpenVPN'
 slug: openvpn
 excerpt: 'Saiba como instalar um servidor OpenVPN num VPS'
 section: 'Utilização avançada'
+hidden: true
 ---
 
 > [!primary]

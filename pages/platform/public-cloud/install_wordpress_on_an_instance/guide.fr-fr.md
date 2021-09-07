@@ -4,6 +4,7 @@ slug: installer-wordpress-sur-une-instance
 excerpt: Découvrez comment utiliser une instance Public Cloud pour WordPress
 legacy_guide_number: 2060
 section: Tutoriels
+hidden: true
 ---
 
 **Dernière mise à jour le 26/07/2021**
