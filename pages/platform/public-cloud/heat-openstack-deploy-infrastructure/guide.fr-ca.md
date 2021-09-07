@@ -2,7 +2,7 @@
 title: Déployer une infrastructure simple avec Heat d'OpenStack (BÊTA)
 slug: deployer-infrastructure-avec-heat-openstack
 excerpt: Découvrez une première approche de Heat et des *stacks* en déployant votre première infrastructure
-section: L'orchestration avec Heat d'OpenStack
+section: Tutoriels
 ---
 
 **Dernière mise à jour le 2018/06/20**
