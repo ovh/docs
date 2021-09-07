@@ -72,7 +72,7 @@ Require valid-user
 
 ### Bloquer l'accès à un ou plusieurs fichiers
 
-Pour bloquer l'accès à un ou plusieurs fichiers précis, il suffit d'ajouter des balises php **« FILES »** (une balise par fichier) dans le fichier **« .htaccess »** :
+Pour bloquer l'accès à un ou plusieurs fichiers précis, il suffit d'ajouter une [directive <Files>](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} (une balise par fichier) dans le fichier **« .htaccess »** :
 
 ```bash
 <Files test.php>
@@ -84,6 +84,13 @@ Require valid-user
 
 </Files>
 ```
+
+> [!warning]
+>
+> Les directives <Files> s'appliquent à tout fichier avec le nom spécifié, quel que soit le répertoire ou sous-répertoire dans lequel il se trouve. 
+>
+> Elles s'appliquent également à tout fichier se terminant par le nom spécifié (Dans l'exemple ci-dessus, la directive <Files> s'appliquerait par exemple sur un fichier **« nouveau_test.php »**).
+>
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
