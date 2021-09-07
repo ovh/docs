@@ -3,8 +3,8 @@ title: 'Configuring additional SSH keys'
 slug: configuring_additional_ssh_keys
 excerpt: 'This guide will explain how to configure additional SSH keys for your instance in order to grant access to other people.'
 legacy_guide_number: g1924
-section: Security
-order: 3
+section: Tutorials
+order: 1
 ---
 
 **Last updated 13th March 2019**

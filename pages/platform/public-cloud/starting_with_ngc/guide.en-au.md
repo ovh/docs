@@ -2,6 +2,9 @@
 title: 'Getting started with NGC on OpenStack'
 excerpt: 'Use NVIDIA GPU Cloud to speed up your GPU-accelerated development'
 slug: getting_started_with_ngc
+section: OpenStack
+order: 4
+hidden: true
 ---
 
 **Last updated 11/12/2018**
