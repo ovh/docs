@@ -21,4 +21,5 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|
 |PostgreSQL 11|To be defined|To be defined|To be defined|
 |PostgreSQL 12|To be defined|To be defined|To be defined|
-|Redis 4.0|To be defined|To be defined|To be defined|
+|Redis 4.0|2021-09-07|2021-12-15|2022-03-16|
+|Redis 6.0|To be defined|To be defined|To be defined|
