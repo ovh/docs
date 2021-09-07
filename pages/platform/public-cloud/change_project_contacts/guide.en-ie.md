@@ -3,58 +3,67 @@ title: Change project contacts
 excerpt: Change project contacts
 slug: change_project_contacts
 legacy_guide_number: g2106
+section: Project management
+order: 6
 ---
 
+**Last updated 6th December 2019**
 
-## 
-With the OVH Public Cloud you can now change the contacts for billing and project administration. 
-This means that you can seperate the OVH account which manages your bills from the OVH account which manages your various instances. 
+## Objective
+
+With the OVHcloud Public Cloud you can now change the contacts for billing and project administration. 
+This means that you can seperate the OVHcloud account which manages your bills from the OVHcloud account which manages your various instances.
 
 This guide explains how to edit your contacts.
 
+## Requirements
 
-## Prerequisites
+- Two OVHcloud accounts
+- A Public Cloud project
+- Be sure that both admin and billing contacts belongs to the same subsidiary
 
-- two OVH accounts
-- a Public Cloud project
+## Instructions
 
+In order to modify your project contacts, first go to the `Contacts and Rights`{.action} below Project management tab.
 
+![change-contacts](images/contact.png){.thumbnail}
 
-
-## 
-In order to modify your project contacts, first go to the Project management and resources usage tab.
-
-![](images/img_3825.jpg){.thumbnail}
-Then go to the Contacts and rights menu.
-
-![](images/img_3822.jpg){.thumbnail}
 You will now see your current administrative and billing contacts.
 
-![](images/img_3823.jpg){.thumbnail}
-When you click on Modify you will be taken to a new page which lets you modify your contacts:
+![change-contacts](images/contact1.png){.thumbnail}
 
-![](images/img_3819.jpg){.thumbnail}
-Once you have configured the new contacts, the two OVH accounts will receive an email containing a code allowing them to confirm this change:
+When you click on `Edit`{.action} you will be taken to a new page which lets you modify your contacts:
 
-![](images/img_3820.jpg){.thumbnail}
+![change-contacts](images/contactchange.png){.thumbnail}
+
+Then, click the `...`{.action} on the right of the Public Cloud project and click in `Edit Contacts`{.action}. A new window will appear so you can change the contacts.
+
+![change-contacts](images/contactchange1.png){.thumbnail}
+
+Once you have confirmed the new contacts, both OVHcloud accounts will receive an email containing a code allowing them to confirm this change:
+
+![change-contacts](images/contactchange2.png){.thumbnail}
+
 You have to confirm this procedure in both accounts.
 
-To do this go to your account properties and select my contacts on the right:
+## Confirmation
 
-![](images/img_3824.jpg){.thumbnail}
-For the original contact, you have to go to the My sent requests section, for the new contact, it will be My received requests A line will now appear as follows:
+To do this go to your account properties and select `My contacts`{.action} on the right:
 
-![](images/img_3821.jpg){.thumbnail}
+![change-contacts](images/controlpanel.png){.thumbnail}
+
+In both contacts Control Panel, you have to go to the `My requests`{.action} section:
+
+![change-contacts](images/controlpanel1.png){.thumbnail}
+
+Click the `...`{.action} on the right and click `Accept`{.action}. A new window will appear: 
+
+![change-contacts](images/contactchange3.png){.thumbnail}
+
 You just have to insert the code which you have just received by email into the window which appeared after you confirmed the procedure from both accounts.
 
+After this is done, contacts have been changed as requested.
 
-## 
+## Go further
 
-- [Manage contacts]({legacy}1858)
-
-
-
-
-## 
-[Go back to the index of Cloud guides](../)
-
+Join our community of users on <https://community.ovh.com/en/>.
