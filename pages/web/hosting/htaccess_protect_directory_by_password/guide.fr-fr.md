@@ -33,11 +33,27 @@ Avant de procéder, il est toutefois nécessaire de préciser que les paramétra
 
 ### Créer le fichier « .htpasswd »
 
-Dans un premier temps, il faut créer le fichier qui contiendra la liste des utilisateurs autorisés à se connecter et le mot de passe qui leur sera associé. En général, on crée pour cela un fichier **« .htpasswd »** qui sera ensuite utilisé par le fichier **« .htaccess »**. Il s'agit d'un fichier texte simple, à l'intérieur duquel sont indiqués les noms des utilisateurs et leurs mots de passe sous forme cryptée. Le mot de passe rattaché à ces utilisateurs devra être crypté. 
+Dans un premier temps, il faut créer le fichier qui contiendra la liste des utilisateurs autorisés à se connecter et le mot de passe qui leur sera associé. En général, on crée pour cela un fichier **« .htpasswd »** qui sera ensuite utilisé par le fichier **« .htaccess »**. Il s'agit d'un fichier texte simple, à l'intérieur duquel sont indiqués les noms des utilisateurs et leurs mots de passe sous forme cryptée. Le mot de passe rattaché à ces utilisateurs devra être crypté.
 
-> [!primary]
+Pour crypter un mot de passe, créez un fichier **« crypt.php »** sur votre hébergement et utilisez la fonction **« crypt() »** de PHP :
+
+```bash
+<?php
+php echo crypt('motdepasse');
+?>
+```
+
+Connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement, afin d'exécuter ce fichier et de récupérer le mot de passe crypté :
+
+```bash
+php crypt.php
+```
+
+> [!warning]
 >
-> Pour toute question sur la méthode à utiliser pour crypter les mots de passe dans un fichier **« .htpasswd »**, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+> Seules les [offres d'hébergement](https://www.ovh.com/fr/hebergement-web/) **Pro2014** et **Performance** permettent une [connexion en SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/).
+>
+> Pour toute question complémentaire sur la méthode à utiliser pour crypter les mots de passe dans un fichier **« .htpasswd »**, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 >
 
 Le fichier **« .htpasswd »** ne doit pas forcément être au même endroit que le fichier **« .htaccess »**. Vous pouvez par exemple le placer à la racine de votre hébergement et l'utiliser pour protéger différents répertoires de votre site, étant donné qu'un seul fichier **« .htpasswd »** peut être utilisé par plusieurs fichiers **« .htaccess »**. Le fichier **« .htpasswd »** doit contenir une ligne par utilisateur précisant le nom d'utilisateur et le mot de passe associé.
