@@ -51,7 +51,7 @@ Im angezeigten Fenster wählen Sie zunächst das gewünschte CMS und anschließe
 
 Wenn Sie die gewünschte Domain nicht in der Liste finden, klicken Sie auf den Tab `Multisite`{.action}, um sie hinzuzufügen, und versuchen Sie anschließend erneut, ein Modul hinzuzufügen.
 
-Für weitere Informationen, lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren//){.external}.
+Für weitere Informationen, lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}.
 
 Nachdem Sie die gewünschte Domain ausgewählt haben, haben Sie die Wahl zwischen einer einfachen oder der erweiterten Installation „im Experten-Modus“:
 
@@ -70,7 +70,7 @@ Um diese Installation durchzuführen, vergewissern Sie sich, dass im Feld `Insta
 
 ![Einfache Installation eines Moduls](images/choose_installation.png){.thumbnail}
 
-Nach Abschluss der Installation erhalten Sie eine E-Mail mit den notwendigen Information für den Login zum Verwaltungsinterface des CMS. Sie können sich jetzt einloggen und Ihre Website anpassen.
+Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit den notwendigen Informationen für die Verbindung zum Administrator-Interface des CMS. Loggen Sie sich dann in dieses ein, um Ihre Website zu personalisieren.
 
 
 #### Erweiterte Installation eines Moduls
