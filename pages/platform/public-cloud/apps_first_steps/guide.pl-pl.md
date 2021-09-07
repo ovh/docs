@@ -6,7 +6,7 @@ section: Pierwsze kroki
 order: 7
 ---
 
-**Ostatnia aktualizacja z dnia 24 sierpnia 2020 r**
+**Ostatnia aktualizacja z dnia 07/09/2021**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -14,7 +14,7 @@ order: 7
 
 ## Wprowadzenie
 
-OVHcloud udostępnia klientom Public Cloud obrazy wstępnie zainstalowanych aplikacji, które umożliwiają szybkie i łatwe wdrażanie. 
+OVHcloud udostępnia klientom Public Cloud obrazy wstępnie zainstalowanych aplikacji, które umożliwiają szybkie i łatwe wdrażanie.
 
 **Dowiedz się, jak wdrożyć aplikacje zainstalowane na Twoich instancjach Public Cloud.**
 
@@ -114,7 +114,7 @@ WAŻNE UWAGI:
    your certificates, run "certbot renew"
 ```
 
-### cPanel 
+### cPanel
 
 Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu cPanel. Po wszystkich etapach oznaczone "\*" pojawi się FAQ.
 
@@ -192,89 +192,6 @@ Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalo
 
 1. Połącz się z serwerem za pomocą SSH za pomocą użytkownika CentOS.
 2. Sprawdź, czy Docker działa za pomocą polecenia "docker run hello-world".
-
-Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
-
-### GitLab
-
-Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu GitLab.
-
-1. Pobierz URL dostępu do Twojej aplikacji, [wykonując te kroki](./#szczegoly-logowania-do-aplikacji).
-2. Kliknij link zwrócony przez API.
-3. Wpisz nowe hasło.
-4. Zaloguj się do użytkownika "root" i nowego hasła, które właśnie zdefiniowałeś.
-
-Możesz pójść o krok dalej i zabezpieczyć Twój GitLab certyfikatem SSL postępując zgodnie z [tym przewodnikiem GitLab.](https://docs.gitlab.com/omnibus/settings/ssl.html){.external}.
-
-Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
-
-### OpenVPN
-
-Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu OpenVPN.
-
-1. Pobierz URL dostępu do Twojej aplikacji, [wykonując te kroki](./#szczegoly-logowania-do-aplikacji).
-2. Kliknij link zwrócony przez API.
-3. Zaloguj się za pomocą nazwy użytkownika i hasła zwróconego przez API.
-
-Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
-
-### WordPress
-
-Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu WordPress.
-
-1. Pobierz URL dostępu do Twojej aplikacji, [wykonując te kroki](./#szczegoly-logowania-do-aplikacji).
-2. Kliknij link zwrócony przez API.
-3. Postępuj zgodnie z instrukcjami dotyczącymi konfiguracji WordPress. Gdy zostaniesz poproszony o podanie informacji na bazie danych, użyj zawsze "localhost" jako adresu. W przypadku nazwy użytkownika i hasła użyj informacji dostarczonych przez API.
-
-Możesz pójść o krok dalej i zabezpieczyć Twoją stronę WWW za pomocą darmowego certyfikatu SSL, [postępując zgodnie z poniższymi krokami](./#lets-encrypt-ssl).
-
-Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
-
-### Joomla
-
-Poniżej znajdziesz pierwsze kroki związane z uruchomieniem pre-instalowanego obrazu Joomla.
-
-1. Pobierz URL dostępu do Twojej aplikacji, [wykonując te kroki](./#szczegoly-logowania-do-aplikacji).
-2. Kliknij link zwrócony przez API.
-3. Postępuj zgodnie z instrukcjami dotyczącymi konfiguracji Joomla. Gdy zostaniesz poproszony o podanie informacji na bazie danych, użyj zawsze "localhost" jako adresu. W przypadku nazwy użytkownika i hasła użyj informacji dostarczonych przez API.
-
-Możesz pójść o krok dalej i zabezpieczyć Twoją stronę WWW za pomocą darmowego certyfikatu SSL, [postępując zgodnie z poniższymi krokami](./#lets-encrypt-ssl).
-
-Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
-
-### Drupal
-
-Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu Drupal.
-
-1. Pobierz URL dostępu do Twojej aplikacji, [wykonując te kroki](./#szczegoly-logowania-do-aplikacji).
-2. Kliknij link zwrócony przez API.
-3. Postępuj zgodnie z instrukcjami dotyczącymi konfiguracji Drupal.Gdy zostaniesz poproszony o dostarczenie informacji na temat bazy danych, użyj zawsze "localhost" jako adresu. W przypadku nazwy użytkownika i hasła użyj informacji dostarczonych przez API.
-
-Możesz pójść o krok dalej i zabezpieczyć Twoją stronę WWW za pomocą darmowego certyfikatu SSL, [postępując zgodnie z poniższymi krokami](./#lets-encrypt-ssl).
-
-Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
-
-### Prestashop
-
-Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu Prestashop.
-
-1. Pobierz URL dostępu do Twojej aplikacji, [postępując zgodnie z instrukcjami podanymi w tych krokach.](./#szczegoly-logowania-do-aplikacji).
-2. Kliknij link zwrócony przez API.
-3. Postępuj zgodnie z instrukcjami dotyczącymi konfiguracji modułu Prestashop. Gdy zostaniesz poproszony o podanie informacji w bazie danych, użyj zawsze "localhost" jako adresu, a w przypadku nazwy użytkownika i hasła użyj informacji dostarczonych przez API.
-4. Po zakończeniu instalacji możesz usunąć katalog instalacyjny i zmienić adres administracyjny za pomocą skryptu, który umieściliśmy na serwerze. Wykonując ten skrypt, zastosujemy zalecenie bezpieczeństwa Prestashop po instalacji. Wystarczy zalogować się do serwera przez SSH i uruchomić następujące polecenia:
-
-```sh
-sudo -i
-sh /root/secure_prestashop.sh
-rm -f /root/secure_prestashop.sh
-```
-
-> [!primary]
->
-> Zarejestruj odesłany link. Dostęp do interfejsu administracyjnego Prestashop jest możliwy tylko pod nowym linkiem.
->
-
-Zabezpiecz swoją stronę za pomocą certyfikatu SSL [postępując zgodnie z instrukcjami podanymi w tych krokach](./#lets-encrypt-ssl).
 
 Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
 

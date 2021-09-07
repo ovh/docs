@@ -5,7 +5,7 @@ excerpt: Hier erfahren Sie, wie Sie vorinstallierte Anwendungen auf Ihren Public
 section: Erste Schritte
 ---
 
-**Letzte Aktualisierung am 24 August 2020**
+**Letzte Aktualisierung am 7 September 2021**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -191,89 +191,6 @@ Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstalliert
 
 1. Verbinden Sie sich via SSH mit dem CentOS-Benutzer mit dem Server.
 2. Überprüfen Sie, dass Docker mit dem "docker run hello-world" Befehl funktioniert.
-
-Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
-
-### GitLab
-
-Nachfolgend die ersten Schritte zur Inbetriebnahme des vorinstallierten Images von GitLab.
-
-1. Erhalten Sie die URL für den Zugriff auf Ihre Anwendung [in diesen Schritten](./#verbindungsdetails-zur-anwendung).
-2. Klicken Sie auf die von der API zurückgegebene URL.
-3. Legen Sie Ihr neues Passwort fest.
-4. Verbinden Sie sich mit dem Root-Benutzer und dem neuen Passwort, das Sie soeben festgelegt haben.
-
-Sie können Ihr GitLab mit einem SSL-Zertifikat schützen, indem Sie diese [Anleitung GitLab befolgen.](https://docs.gitlab.com/omnibus/settings/ssl.html){.external}.
-
-Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
-
-### OpenVPN
-
-Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstallierten OpenVPN Images.
-
-1. Erhalten Sie die URL für den Zugriff auf Ihre Anwendung [in diesen Schritten](./#verbindungsdetails-zur-anwendung).
-2. Klicken Sie auf die von der API zurückgegebene URL.
-3. Loggen Sie sich mithilfe des Benutzernamens und des von der API zurückgegebenen Passworts ein.
-
-Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
-
-### WordPress
-
-Nachfolgend die ersten Schritte zur Inbetriebnahme des vorinstallierten WordPress-Images.
-
-1. Erhalten Sie die URL für den Zugriff auf Ihre Anwendung [in diesen Schritten](./#verbindungsdetails-zur-anwendung).
-2. Klicken Sie auf die von der API zurückgegebene URL.
-3. Folgen Sie den WordPress-Konfigurationsanweisungen. Wenn Sie Informationen zur Datenbank erhalten möchten, verwenden Sie immer "localhost"als Adresse. Verwenden Sie für den Benutzernamen und das Passwort die von der API bereitgestellten Informationen.
-
-Mit einem kostenlosen SSL-Zertifikat können Sie Ihre Website weiter [schützen](./#lets-encrypt-ssl).
-
-Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
-
-### Joomla
-
-Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstallierten Joomla-Images.
-
-1. Erhalten Sie die URL für den Zugriff auf Ihre Anwendung [in diesen Schritten](./#verbindungsdetails-zur-anwendung).
-2. Klicken Sie auf die von der API zurückgegebene URL.
-3. Folgen Sie den Konfigurationsanweisungen von Joomla. Wenn Sie Informationen zur Datenbank erhalten möchten, verwenden Sie immer "localhost"als Adresse. Verwenden Sie für den Benutzernamen und das Passwort die von der API bereitgestellten Informationen.
-
-Mit einem kostenlosen SSL-Zertifikat können Sie Ihre Website weiter [schützen](./#lets-encrypt-ssl).
-
-Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
-
-### Drupal
-
-Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstallierten Drupal Images.
-
-1. Erhalten Sie die URL für den Zugriff auf Ihre Anwendung [in diesen Schritten](./#verbindungsdetails-zur-anwendung).
-2. Klicken Sie auf die von der API zurückgegebene URL.
-3. Folgen Sie den Konfigurationsanweisungen von Drupal.Wenn Sie Informationen zur Datenbank benötigen, verwenden Sie immer "localhost" als Adresse. Verwenden Sie für den Benutzernamen und das Passwort die von der API bereitgestellten Informationen.
-
-Mit einem kostenlosen SSL-Zertifikat können Sie Ihre Website weiter [schützen](./#lets-encrypt-ssl).
-
-Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
-
-### Prestashop
-
-Nachfolgend die ersten Schritte zur Inbetriebnahme des vorinstallierten PrestaShop Images.
-
-1. Erhalten Sie die URL für den Zugang zu Ihrer Anwendung [in diesen Schritten.](./#verbindungsdetails-zur-anwendung).
-2. Klicken Sie auf die von der API zurückgegebene URL.
-3. Folgen Sie den Konfigurationsanweisungen von Prestashop. Wenn Sie Informationen zur Datenbank erhalten möchten, verwenden Sie immer "localhost"als Adresse und verwenden Sie für den Benutzernamen und das Passwort die von der API bereitgestellten Informationen.
-4. Wenn die Installation abgeschlossen ist, können Sie den Installationsordner löschen und die Administrations-URL mithilfe eines Skripts ändern, das wir für Sie auf dem Server platziert haben. Wenn wir dieses Skript ausführen, wenden wir die Prestashop Sicherheitsempfehlung nach der Installation an. Loggen Sie sich einfach per SSH mit dem Server ein und führen Sie folgende Befehle aus:
-
-```sh
-sudo -i
-sh /root/secure_prestashop.sh
-rm -f /root/secure_prestashop.sh
-```
-
-> [!primary]
->
-> Bitte speichern Sie den zurückgegebenen Link. Sie können nur über den neuen Link auf die Prestashop Administration zugreifen.
->
-
-Sichern Sie Ihre Website mit einem SSL-Zertifikat kostenlos ab, indem [Sie diese Schritte ausführen](./#lets-encrypt-ssl).
 
 Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
 
