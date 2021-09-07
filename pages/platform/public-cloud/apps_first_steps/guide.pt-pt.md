@@ -6,7 +6,7 @@ section: Introdução
 order: 7
 ---
 
-**Última atualização: 24 de agosto de 2020**
+**Última atualização: 07/09/2021**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -14,7 +14,7 @@ order: 7
 
 ## Objetivo
 
-A OVHcloud oferece aos clientes Public Cloud imagens de aplicações pré-instaladas para uma implementação rápida e fácil em apenas alguns cliques. 
+A OVHcloud oferece aos clientes Public Cloud imagens de aplicações pré-instaladas para uma implementação rápida e fácil em apenas alguns cliques.
 
 **Saiba como implementar aplicações pré-instaladas nas suas instâncias Public Cloud.**
 
@@ -114,7 +114,7 @@ IMPORTANTE NOTAS:
    your certificates, run "certbot renew"
 ```
 
-### cPanel 
+### cPanel
 
 Encontrará abaixo as primeiras etapas relativas à implementação da imagem pré-instalada do cPanel. Os passos assinalados com "\*" serão seguidos de uma FAQ.
 
@@ -152,7 +152,7 @@ Encontrará abaixo os primeiros passos para a implementação da imagem pré-ins
 1. Obtenha o URL de acesso à sua aplicação seguindo [estas etapas](./#detalhes-de-ligacao-a-aplicacao).
 2. Clique no URL reenviado pela API.
 3. Ligue-se com o nome de utilizador e a palavra-passe retornada pela API.
-4. Uma vez ligado, o Plesk irá pedir-lhe:   
+4. Uma vez ligado, o Plesk irá pedir-lhe:
     a) Os seus dados.  
     b) Uma nova palavra-passe para o utilizador "admin" que irá utilizar para se ligar à interface do Plesk.  
     c) Informações sobre a licença.*  
@@ -195,89 +195,6 @@ Encontrará abaixo os primeiros passos para a implementação da imagem pré-ins
 
 Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
 
-### GitLab
-
-Encontrará abaixo os primeiros passos para a implementação da imagem pré-instalada do GitLab.
-
-1. Obtenha o URL de acesso à sua aplicação seguindo [estas etapas](./#detalhes-de-ligacao-a-aplicacao).
-2. Clique no URL reenviado pela API.
-3. Defina a sua nova password.
-4. Ligue-se ao utilizador root e à nova palavra-passe que acabou de definir.
-
-Pode ir mais longe ao proteger o seu GitLab com um certificado SSL ao seguir [este guia GitLab.](https://docs.gitlab.com/omnibus/settings/ssl.html){.external}.
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-### OpenVPN
-
-Encontrará abaixo as primeiras etapas relativas à implementação da imagem pré-instalada do OpenVPN.
-
-1. Obtenha o URL de acesso à sua aplicação seguindo [estas etapas](./#detalhes-de-ligacao-a-aplicacao).
-2. Clique no URL reenviado pela API.
-3. Ligue-se com o nome de utilizador e a palavra-passe retornada pela API.
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-### WordPress
-
-Encontrará abaixo os primeiros passos para a implementação da imagem pré-instalada do WordPress.
-
-1. Obtenha o URL de acesso à sua aplicação seguindo [estas etapas](./#detalhes-de-ligacao-a-aplicacao).
-2. Clique no URL reenviado pela API.
-3. Siga as instruções de configuração do WordPress. Quando for necessário fornecer informações sobre a base de dados, utilize sempre o "localhost" como endereço. Para o nome de utilizador e a palavra-passe, utilize as informações fornecidas pela API.
-
-Pode ir mais longe ao proteger o seu site com um certificado SSL gratuito ao [seguir estes passos](./#lets-encrypt-ssl).
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-### Joomla
-
-Encontrará abaixo os primeiros passos para a implementação da imagem pré-instalada do Joomla.
-
-1. Obtenha o URL de acesso à sua aplicação seguindo [estas etapas](./#detalhes-de-ligacao-a-aplicacao).
-2. Clique no URL reenviado pela API.
-3. Siga as instruções de configuração do Joomla. Quando for necessário fornecer informações sobre a base de dados, utilize sempre o "localhost" como endereço. Para o nome de utilizador e a palavra-passe, utilize as informações fornecidas pela API.
-
-Pode ir mais longe ao proteger o seu site com um certificado SSL gratuito ao [seguir estes passos](./#lets-encrypt-ssl).
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-### Drupal
-
-Encontramos abaixo os primeiros passos para a implementação da imagem pré-instalada do Drupal.
-
-1. Obtenha o URL de acesso à sua aplicação seguindo [estas etapas](./#detalhes-de-ligacao-a-aplicacao).
-2. Clique no URL reenviado pela API.
-3. Siga as instruções de configuração do Drupal.Quando for necessário fornecer informações sobre a base de dados, utilize sempre o "localhost" como endereço. Para o nome de utilizador e a palavra-passe, utilize as informações fornecidas pela API.
-
-Pode ir mais longe ao proteger o seu site com um certificado SSL gratuito ao [seguir estes passos](./#lets-encrypt-ssl).
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-### Prestashop
-
-Encontrará abaixo as primeiras etapas relativas à implementação da imagem pré-instalada do Prestashop.
-
-1. Obtenha o URL de acesso à sua aplicação [seguindo estas etapas.](./#detalhes-de-ligacao-a-aplicacao).
-2. Clique no URL reenviado pela API.
-3. Siga as instruções de configuração do Prestashop. Quando for necessário fornecer informações sobre a base de dados, utilize sempre o "localhost" como endereço e, para o nome de utilizador e a palavra-passe, utilize as informações fornecidas pela API.
-4. Uma vez terminada a instalação, pode eliminar a pasta de instalação e modificar o URL de administração através de um script que colocámos no servidor para si. Ao executar este script, aplicaremos a recomendação de segurança do Prestashop após a instalação. Basta que se ligue ao servidor em SSH e execute os seguintes comandos:
-
-```sh
-sudo -i
-/root/secure_prestashop.sh
-rm -f /root/secure_prestashop.sh
-```
-
-> [!primary]
->
-> Queira registar o link enviado. Só poderá aceder à administração do Prestashop com o novo link.
->
-
-Proteja gratuitamente o seu site com um certificado SSL ao [seguir estas etapas](./#lets-encrypt-ssl).
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-## Vá mais longe
-
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+## Quer saber mais?
+ 
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
