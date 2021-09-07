@@ -121,19 +121,19 @@ De retour dans la fenêtre **Security**, vous pouvez vérifier que le compte est
 
 #### Autorisations d'exécution et d'activation
 
-L'utilisateur OVHVeeamEntrepise est accessible uniquement en local, il faut donc ajouter les permissions dans l’interface graphique d’utilisateur Windows pour l'activation de connexion à distance.
+L'utilisateur OVHVeeamEntreprise est accessible uniquement en local, il faut donc ajouter les permissions dans l’interface graphique d’utilisateur Windows pour l'activation de la connexion à distance.
 
-Via l’interface graphique d’utilisateur:
+Via l’interface graphique d’utilisateur :
 
-1. Dans votre barre de recherche Windows tapez `Services de composants`{.action} et lancer le service.
+1. Dans votre barre de recherche Windows, tapez `Services de composants`{.action} et lancez le service.
 2. Dans le menu à gauche et suivant l'arborescence, cliquez sur `Services de composants`{.action}, puis `Ordinateurs`{.action}, puis `Poste de travail`{.action}.
-3. À droite, sous l'onglet `Actions`{.action} cliquez puis sur `Autres actions`{.action} puis sur `Propriétés`{.action}.
-4. Allez dans `Sécurité COM`{.action}, sous la deuxième option `Autorisations d'exécution d'activation`{.action} cliquez sur `Modifier`{.action}.
-5. Cliquez sur l'utilisateur `OVHVeeamEntreprise`{.action} et activer toutes les permissions.
+3. À droite, sous l'onglet `Actions`{.action}, cliquez sur `Autres actions`{.action} puis sur `Propriétés`{.action}.
+4. Allez dans `Sécurité COM`{.action} et sous la deuxième option `Autorisations d'exécution d'activation`{.action}, cliquez sur `Modifier`{.action}.
+5. Cliquez sur l'utilisateur `OVHVeeamEntreprise`{.action} et activez toutes les permissions.
 
 ![Propriétés Autorisations d'exécution et d'activation](images/permissionsuserveam.png){.thumbnail}
 
-6. Cliquez sur `OK`{.action} pour confimer et `Appliquer`{.action} pour valider les changements.
+6. Cliquez sur `OK`{.action} pour confirmer et sur `Appliquer`{.action} pour valider les changements.
 
 Votre utilisateur OVHVeeamEntreprise est maintenant accessible en local et à distance.
 
