@@ -3,6 +3,7 @@ title: Creare un server OpenVPN
 slug: openvpn
 excerpt: Come installare un server OpenVPN su un VPS
 section: Utilizzo avanzato
+hidden: true
 ---
 
 > [!primary]

@@ -6,101 +6,88 @@ legacy_guide_number: g2069
 section: Gestão a partir da Área de Cliente OVHcloud
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## 
-Em caso de perda da password SSH, que se trate de uma reinstalação do seu computador, ou outro problema, é possível que deixe de poder aceder à sua instância se não configurou um acesso alternativo.
+**Última atualização: 27/09/2018**
 
-Para recuperar o acesso, implementámos um modo de rescue que permite que se ligue com a ajuda de uma password de forma a poder modificar os seus ficheiros.
+## Objetivo
 
-Este guia explica como configurar o ficheiro authorized_keys do utilizador admin de forma a poder adicionar uma nova chave SSH para recuperar o acesso à sua instância.
+Em caso de perda de chaves SSH, seja na sequência de uma reinstalação de correio, é possível que não esteja em condições de se ligar à sua instância se não tiver configurado nenhum meio alternativo de se ligar à sua instância.
 
+Para recuperar o acesso, disponibilizámos-lhe um [modo de rescue](https://docs.ovh.com/pt/public-cloud/passar_uma_instancia_em_modo_de_rescue/) que lhe permite ligar-se através de uma palavra-passe e depois modificar os seus ficheiros.
 
-## Pré-requisitos
+**Este manual explica-lhe como configurar o ficheiro *authorized_keys* do utilizador *admin* para poder adicionar uma nova chave SSH para recuperar o acesso à sua instância.**
 
-- [Criação das chaves SSH]({legacy}1769)
-- [Passar uma instância para modo de rescue]({legacy}2029)
+## Requisitos
 
+- Criar uma chave SSH
+- Passar uma instância em modo rescue
 
+## Instruções
 
+> [!primary]
+>
+Se pretender guardar uma chave SSH na Área de Cliente OVHcloud, recomendamos que utilize a encriptação RSA ou ECDSA. ED25519 não está atualmente a ser utilizado.
+>
 
-## 
-Após montar o disco da sua instância em modo de rescue, poderá aceder então ao conjunto dos seus ficheiros.
+Depois de montar o disco da sua instância em [modo rescue](https://docs.ovh.com/pt/public-cloud/passar_uma_instancia_em_modo_de_rescue/), poderá aceder ao conjunto dos seus ficheiros.
 
-O ficheiro que contém as suas chaves SSH é o ficheiro:
+O ficheiro que contém as suas chaves SSH é o seguinte:
 
-
-```
+```sh
 /home/NOME_UTILIZADOR/.ssh/authorized_keys
 ```
 
+Para adicionar a nova chave SSH, basta editar o ficheiro e adicionar a nova chave:
 
-Se deseja adicionar uma nova chave SSH, basta que o edite e adicione a nova chave:
-
-
-```
-admin@instance:~$ sudo vim /mnt/home/NOME_UTILIZADOR/.ssh/authorized_keys
-
-ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
-777777777778888888888999999900000000000000000000000000== old@sshkey
-ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
-EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
+```sh
+sudo vim /mnt/home/NOME_UTILIZADOR/.ssh/authorized_keys
+ssh-rsa 1111111111122222222222333333333334444444555 5555555666666666777777777777888888888899999000000= old@sshkey0000000000000000000
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh= new@sshkey
 ```
 
+### Alterar a chave SSH utilizador padrão
 
+Para alterar a chave SSH do utilizador predefinida, só precisa de aceder à pasta pessoal do utilizador. Por exemplo, para o utilizador admin, o ficheiro a encontrar encontra-se na seguinte pasta:
 
-## Informações:
-Para modificar a chave SSH do seu utilizador padrão, basta que aceda à pasta pessoal deste último.
-
-Por exemplo, para o utilizador admin, o ficheiro encontra-se na seguinte pasta:
-
-
-```
+```sh
 /home/admin/.ssh/authorized_keys
 ```
 
+Para uma instância sob Ubuntu 15.10, o utilizador predefinido será ubuntu, o ficheiro estará na seguinte pasta:
 
-Para uma instância sob Ubuntu 15.10, o utilizador padrão será ubuntu, o ficheiro estará então na seguinte pasta:
-
-
-```
+```sh
 /home/ubuntu/.ssh/authorized_keys
 ```
 
+### Alterar a palavra-passe de utilizador predefinida
 
+Também pode alterar a palavra-passe do utilizador predefinido utilizando o modo rescue e os seguintes comandos (no caso de o utilizador ser admin):
 
-## A saber:
-Poderá alterar igualmente a password do seu utilizador padrão ao utilizar o modo de rescue e os seguintes comandos (no caso de ser o utilizador admin) :
+A pasta raiz é alterada para ser colocada diretamente no disco da instância:
 
+> [!primary]
+>
+No exemplo abaixo, utilizámos o vdb1 como nome do disco do servidor e como ponto de montagem.
+>
 
-- Vamos alterar a pasta raiz para nos deslocarmos para a raiz do disco da instância:
-
-
-```
-root@instance:/home/admin# mount /dev/vdb1 /mnt/
-root@instance:/home/admin# chroot /mnt/
-```
-
-
-- Vamos alterar a password admin :
-
-
-```
-root@instance:/# passwd admin
+```sh
+/home/admin# mount /dev/vdb1 /mnt/
+/home/admin# chroot /mnt/
 ```
 
+Alteramos a palavra-passe admin:
 
+```sh
+passwd admin
+```
 
-Após a modificação efetuada e guardada, basta que reinicie a sua instância em disco rígido de forma a poder ligar-se à sua instância com a nova chave SSH.
+Depois de efetuar esta modificação e de efetuar o backup, basta que reinicie a sua instância no seu disco para que se possa ligar à sua instância com a sua nova chave SSH.
 
+## Saiba mais
 
-## 
+[Passar uma instância em modo rescue](https://docs.ovh.com/pt/public-cloud/passar_uma_instancia_em_modo_de_rescue/)
 
-- [Configurar as chaves SSH suplementares]({legacy}1924)
-- [Tornar-se root e definir uma palavra-passe]({legacy}1786)
-
-
-
-
-## 
-[Voltar à página inicial dos guias Cloud]({legacy}1785)
-
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

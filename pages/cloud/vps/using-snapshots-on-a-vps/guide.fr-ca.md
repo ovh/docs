@@ -6,11 +6,11 @@ section: Sauvegarde
 order: 1
 ---
 
-**Dernière mise à jour le 23/09/2020**
+**Dernière mise à jour le 03/09/2021**
 
 ## Objectif
 
-La création d'un snapshot (instantané) est un moyen simple et rapide de sauvegarder un système fonctionnel avant d'y apporter des modifications pouvant avoir des conséquences non souhaitées ou imprévues. Par exemple, tester une nouvelle configuration ou un nouveau logiciel. 
+La création d'un snapshot (instantané) est un moyen simple et rapide de sauvegarder un système fonctionnel avant d'y apporter des modifications pouvant avoir des conséquences non souhaitées ou imprévues. Par exemple, tester une nouvelle configuration ou un nouveau logiciel.
 Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 
 **Ce guide explique l'utilisation des snapshots pour votre VPS.**
@@ -47,6 +47,11 @@ Une fois l'option activée, cliquez sur `...`{.action} à droite de l'option « 
 ![snapshotvps](images/snapshot_vps_step2.png){.thumbnail}
 
 Si vous êtes sûr de vouloir restaurer votre VPS à l'état du snapshot, cliquez sur `Restaurer le snapshot`{.action} et confirmez la restauration dans la fenêtre qui s'affiche alors.
+
+> [!alert]
+>
+> Lorsque vous restaurez un VPS à partir d’un snapshot, ce dernier sera supprimé. Si vous souhaitez conserver le même snapshot, vous devez en créér un nouveau avant d'apporter des modifications au système restauré.
+>
 
 ### Bonnes pratiques pour la création d'un snapshot
 
@@ -112,6 +117,10 @@ Vérifier l'agent et vérifiez qu'il est en cours d'exécution :
 ```
 $ sudo service qemu-guest-agent status
 ```
+
+##### **Problèmes Kernel sur Cpanel**
+
+Consultez notre guide [Sauvegarde automatique - Kernel panic (cPanel)](https://docs.ovh.com/ca/fr/vps/cpanel_auto_backup/) pour savoir comment résoudre les problèmes de blocage des serveurs cPanel lors de la sauvegarde automatique OVHcloud.
 
 ##### **Windows**
 

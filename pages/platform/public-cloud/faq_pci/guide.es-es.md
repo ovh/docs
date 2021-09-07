@@ -6,9 +6,11 @@ section: Primeros pasos
 order: 11
 ---
 
+**Última actualización: 06/09/2021**
+
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
 
 ## FAQ Public Cloud
 
@@ -80,7 +82,7 @@ Estos sistemas de protección, combinados con los que usted puede implementar en
 Public Cloud integra una solución SDN (software-defined network). que permite crear redes privadas dinámicamente y conectarlas a las instancias desde el área de cliente o a través de la API.
 Estas redes privadas se basan en la tecnología vRack de OVHcloud, compartida con otros servicios de la empresa, como Private Cloud o servidores dedicados. de esta forma, la solución ofrece la posibilidad de comunicar todos sus elementos de infraestructura con OVHcloud de forma aislada y segura.
 
-Para más información, consulte la guía [Configuración del vRack Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/).
+Para más información, consulte la guía [Configuración del vRack Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/) (EN).
 
 ## Más información
 

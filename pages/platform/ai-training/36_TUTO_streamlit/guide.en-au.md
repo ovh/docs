@@ -1,7 +1,7 @@
 ---
-title: Build & use streamlit image
+title: Build & use a Streamlit image
 slug: build-use-streamlit-image
-excerpt: How to build and use a custom docker image containing a streamlit application
+excerpt: How to build and use a custom Docker image containing a Streamlit application
 section: Tutorials
 order: 7
 ---
@@ -12,19 +12,19 @@ order: 7
 
 [Streamlit](https://streamlit.io/) is a python framework that turns scripts into shareable web application.
 
-The purpose of this tutorial is to provide a concrete example on how to build and use a custom docker image for a streamlit applications.
+The purpose of this tutorial is to provide a concrete example on how to build and use a custom Docker image for Streamlit applications.
 
 ## Requirements
 
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
--   an **AI Training project** created inside a **public cloud** project
+-   an **AI Training project** created inside a **Public Cloud** project
 -   a [user for AI Training](../create-user)
--   [docker](https://www.docker.com/get-started) installed on your local computer
+-   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
 ## Instructions
 
-### Write a simple streamlit application
+### Write a simple Streamlit application
 
 Create a simple python file with name `simple_app.py`.
 
@@ -35,7 +35,7 @@ import streamlit as st
 import pandas as pd
 ```
 
-Display all information you want on your streamlit application:
+Display all information you want on your Streamlit application:
 
 ``` {.python}
 st.title('My first app')
@@ -46,10 +46,10 @@ st.write(pd.DataFrame({
 }))
 ```
 
--   More information about streamlit capabilities can be found [here](https://docs.streamlit.io/en/stable/)
+-   More information about Streamlit capabilities can be found [here](https://docs.streamlit.io/en/stable/)
 -   Direct link to the full python file can be found here [here](https://github.com/ovh/ai-training-examples/blob/main/jobs/streamlit/tuto_simple_app/simple_app.py)
 
-### Write the the dockerfile for your application
+### Write the the Dockerfile for your application
 
 Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from a classic python image.
 
