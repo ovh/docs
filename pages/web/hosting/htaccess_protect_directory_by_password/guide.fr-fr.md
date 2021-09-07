@@ -42,7 +42,7 @@ Connectez-vous à [l'espace de stockage de votre hébergement](../connexion-espa
 
 Ce fichier contiendra la liste des utilisateurs autorisés à se connecter à la partie privée de votre site et leur mot de passe chiffré.
 
-Pour chiffrer un mot de passe, créez un autre fichier texte **« crypt.php »** dans [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement et indiquez, par exemple, les lignes suivantes :
+Pour chiffrer un mot de passe, créez un fichier PHP **« crypt.php »** dans [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement et indiquez, par exemple, les lignes suivantes :
 
 ```bash
 <?php
