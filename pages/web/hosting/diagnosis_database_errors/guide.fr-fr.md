@@ -136,6 +136,11 @@ Vous pouvez enfin vous [connecter à votre interface PhpMyAdmin](https://docs.ov
 
 ### Erreurs import / export de bases de données
 
+#1071 - La clé est trop longue. Longueur maximale: 767 
+< CS2937679
+
+
+
 ### Impossible d'accéder à PhpMyAdmin - « Access denied for user »
 
 ### Impossible d'accéder à PhpMyAdmin - too many connections
