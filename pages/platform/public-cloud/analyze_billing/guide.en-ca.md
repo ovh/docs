@@ -138,20 +138,20 @@ For hourly instances, it is possible to suspend or shelve an instance in order t
 
 #### From the OVHcloud Panel
 
-In the OVH control panel, click on the 'Public Cloud' section{.action} menu, select your Cloud project and click on 'instances'{.action} in the left side menu. 
-Click on the '...'{.action} button to the right of the instance you want to suspend, then click on 'suspend'{.action}.
+In the OVH control panel, click on the `Public Cloud` section{.action} menu, select your Cloud project and click on `instances`{.action} in the left side menu. 
+Click on the `...`{.action} button to the right of the instance you want to suspend, then click on `suspend`{.action}.
 
 ![suspend instance](images/suspend_an_instance.png){.thumbnail}
 
-In the pop-up window, take note of the message and click on 'confirm'{.action}.
+In the pop-up window, take note of the message and click on `confirm`{.action}.
 
 ![confirm suspension](images/confirm_suspension.png){.thumbnail}
 
-Once the process is completed, your instance will now appear as 'suspend'{.action}.
+Once the process is completed, your instance will now appear as `suspended` {.action}.
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
-To view the snapshot, on the left side menu, click on 'Instance Backup'{.action}
+To view the snapshot, on the left side menu, click on `Instance Backup`{.action}
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
@@ -159,21 +159,21 @@ To view the snapshot, on the left side menu, click on 'Instance Backup'{.action}
 #### From the Horizon interface
 
 - [Configure user access to Horizon](../configure_user_access_to_horizon/)
-- [Log in to [the Horizon interface](https://horizon.cloud.ovh.net/auth/login/)
+- [Log in to the Horizon interface](https://horizon.cloud.ovh.net/auth/login/)
 
-If you have deployed instances in different regions, make sure you are in the correct region. You can verify this at the top corner left of the horizon interface. To select the appropriate region, click on the dropdown arrow as seen below 'highlighted'{.action} section and select your region.
+If you have deployed instances in different regions, make sure you are in the correct region. You can verify this at the top corner left of the horizon interface. To select the appropriate region, click on the dropdown arrow as seen below `highlighted`{.action} section and select your region.
 
 ![horizon interface](images/firstaccesshorizon.png){.thumbnail}
 
-Click on the 'Compute'{.action} menu on the left side and select 'Instances'{.action}. Select 'Shelve Instance'{.action} in the drop list for the corresponding instance.
+Click on the `Compute`{.action} menu on the left side and select `Instances`{.action}. Select `Shelve Instance`{.action} in the drop list for the corresponding instance.
 
 ![shelve instance](images/shelveinstancehorizon.png){.thumbnail}
 
-Once the process is completed, your instance will now appear as 'Shelved Offloaded'{.action}.
+Once the process is completed, your instance will now appear as `Shelved Offloaded`{.action}.
 
 ![shelved instance](images/newinstancestatushorizon.png){.thumbnail}
 
-To view the snapshot, in the 'Compute'{.action} menu, click on 'Images'{.action}
+To view the snapshot, in the `Compute`{.action} menu, click on `Images`{.action}
 
 ![snapshot](images/snapshothorizon.png){.thumbnail}
 
@@ -211,22 +211,22 @@ This option will allow you to re-up your instance so that you can continue using
 
 #### From the OVHcloud Panel
 
-In the OVH control panel, click on the 'Public Cloud' section{.action} menu, select your Cloud project and click on 'instances'{.action} in the left side menu. 
-Click on the '...'{.action} button to the right of the instance you want to suspend, then click on 'reactivate'{.action}.
+In the OVH control panel, click on the `Public Cloud` section{.action} menu, select your Cloud project and click on `instances`{.action} in the left side menu. 
+Click on the '...'{.action} button to the right of the instance you want to suspend, then click on `reactivate`{.action}.
 
 ![reactivate instance](images/reactivate_instancePanel.png){.thumbnail}
 
-In the pop-up window, take note of the message and click on 'confirm'{.action}.
+In the pop-up window, take note of the message and click on `confirm`{.action}.
 
-Once the process is completed, your instance will now appear as 'Activated'{.action}
+Once the process is completed, your instance will now appear as `Activated`{.action}
 
 #### From the Horizon interface
 
-Click on the 'Compute'{.action} menu on the left and then select Instances{.action}. Select 'unshelve Instance'{.action} in the drop list for the corresponding instance.
+Click on the `Compute`{.action} menu on the left and then select Instances{.action}. Select `unshelve Instance`{.action} in the drop list for the corresponding instance.
 
 ![unshelve instance](images/unshelveinstancehorizon.png){.thumbnail}
 
-Once the process is completed, your instance will now appear as 'Active'{.action}.
+Once the process is completed, your instance will now appear as `Active`{.action}.
 
 #### Using Openstack/Nova APIs
 
