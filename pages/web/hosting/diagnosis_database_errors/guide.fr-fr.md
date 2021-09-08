@@ -132,14 +132,22 @@ Vous pouvez enfin vous [connecter à votre interface PhpMyAdmin](https://docs.ov
 > Cette opération nécessite de fortes compétences techniques et nous vous conseillons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) pour la réaliser.
 >
 
-### Dépassement de RAM
+### Dépassements de la mémoire RAM
+
+Le message suivant dans la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) indique que votre serveur [SQL privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml) ou [CloudDB](https://www.ovh.com/fr/cloud-databases/) a été trop sollicité par les sites de vos hébergements : 
+
+![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+
+Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](../configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee) disponible depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) (Dans l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`)
+
+Vous pouvez également optimiser les performances de votre site en suivant les instructions de ce [guide](../optimisation-performances-site/).
+
+> [!primary]
+>
+> Si vous rencontrez des difficultés à diminuer l'utilisation des ressources de votre serveur de bases de données et que vous ne souhaitez pas les augmenter, nous vous conseillons de contacter notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+>
 
 ### Erreurs import / export de bases de données
-
-#1071 - La clé est trop longue. Longueur maximale: 767 
-< CS2937679
-
-
 
 ### Impossible d'accéder à PhpMyAdmin - « Access denied for user »
 
