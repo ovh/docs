@@ -6,7 +6,7 @@ section: 'Project management'
 order: 2
 ---
 
-**Last updated 07th September 2021**
+**Last updated 08th September 2021**
 
 ## Objective
 
@@ -129,9 +129,117 @@ These instances are paid for on the first day of the following month, for the ho
 
 ##### **Suspend or shelve an instance**
 
-For hourly instances, it is possible to suspend or shelve an instance in order to release the resources dedicated to the instance. In this case, the data on your local disk will be stored, and only the storage used for this will be charged(snapshot created once the instance is suspended). The IP address will remain.
+For hourly instances, it is possible to suspend or shelve an instance in order to release the resources dedicated to the instance. In this case, the data on your local disk will be stored, and only the storage used for this will be charged(snapshot created once an instance is shelved/suspended). The IP address will remain.
 
-For more information about this consult this guide: 
+> [!alert]
+>
+>This process is only functional for hourly instances, it will not stop the billing of your instance but it will reduce your cost by only charging you for the snapshot.
+>
+
+#### From the OVHcloud Panel
+
+In the OVH control panel, click on the 'Public Cloud' section{.action} menu, select your Cloud project and click on 'instances'{.action} in the left side menu. 
+Click on the '...'{.action} button to the right of the instance you want to suspend, then click on 'suspend'{.action}.
+
+![suspend instance](images/suspend_an_instance.png){.thumbnail}
+
+In the pop-up window, take note of the message and click on 'confirm'{.action}.
+
+![confirm suspension](images/confirm_suspension.png){.thumbnail}
+
+Once the process is completed, your instance will now appear as 'suspend'{.action}.
+
+![suspended status](images/instance_suspended.png){.thumbnail}
+
+To view the snapshot, on the left side menu, click on 'Instance Backup'{.action}
+
+![snapshot tab](images/shelved_backup.png){.thumbnail}
+
+
+#### From the Horizon interface
+
+- [Configure user access to Horizon](../configure_user_access_to_horizon/)
+- [Log in to [the Horizon interface](https://horizon.cloud.ovh.net/auth/login/)
+
+If you have deployed instances in different regions, make sure you are in the correct region. You can verify this at the top corner left of the horizon interface. To select the appropriate region, click on the dropdown arrow as seen below 'highlighted'{.action} section and select your region.
+
+![horizon interface](images/firstaccesshorizon.png){.thumbnail}
+
+Click on the 'Compute'{.action} menu on the left side and select 'Instances'{.action}. Select 'Shelve Instance'{.action} in the drop list for the corresponding instance.
+
+![shelve instance](images/shelveinstancehorizon.png){.thumbnail}
+
+Once the process is completed, your instance will now appear as 'Shelved Offloaded'{.action}.
+
+![shelved instance](images/newinstancestatushorizon.png){.thumbnail}
+
+To view the snapshot, in the 'Compute'{.action} menu, click on 'Images'{.action}
+
+![snapshot](images/snapshothorizon.png){.thumbnail}
+
+
+#### Using Openstack/Nova APIs
+
+### Prerequisites
+
+Please refer to the following guides:
+
+- [Preparing an environment for using the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/){.external}
+- [Setting OpenStack environment variables](../set-openstack-environment-variables/){.external}
+
+Once your environement is ready, type the following at the command line:
+
+```bash
+openstack server shelve <UID server>
+ 
+=====================================
+
+nova shelve <UID server> 
+```
+
+##### **Actions on the snapshot**
+
+> [!alert]
+>
+> Any actions on the snapshot other than unshelve can be very dangerous for your infrastructure in case of misuse. It is not recommended to deploy a new instance from any snapshot created as a result of suspending an instance. Once you unshelve an instance, the snapshot is automatically deleted. 
+>
+> OVHcloud is providing you with machines that you are responsible for. We have no access to these machines, and therefore cannot manage them.  You are responsible for your own software and security management. If you experience any issues or doubts when it comes to managing, using or securing your server, we recommend that you contact a specialist service provider.
+>
+
+##### **Unshelve or Unsuspend an instance**
+This option will allow you to re-up your instance so that you can continue using it. Please note that once this is done, the billing will resume normally.
+
+#### From the OVHcloud Panel
+
+In the OVH control panel, click on the 'Public Cloud' section{.action} menu, select your Cloud project and click on 'instances'{.action} in the left side menu. 
+Click on the '...'{.action} button to the right of the instance you want to suspend, then click on 'reactivate'{.action}.
+
+![reactivate instance](images/reactivate_instancePanel.png){.thumbnail}
+
+In the pop-up window, take note of the message and click on 'confirm'{.action}.
+
+Once the process is completed, your instance will now appear as 'Activated'{.action}
+
+#### From the Horizon interface
+
+Click on the 'Compute'{.action} menu on the left and then select Instances{.action}. Select 'unshelve Instance'{.action} in the drop list for the corresponding instance.
+
+![unshelve instance](images/unshelveinstancehorizon.png){.thumbnail}
+
+Once the process is completed, your instance will now appear as 'Active'{.action}.
+
+#### Using Openstack/Nova APIs
+
+Once your environement is ready, type the following at the command line:
+
+```bash
+~$ openstack server unshelve <UID server>
+
+=========================================
+
+~$ nova unshelve <UID server>
+```
+
 
 #### Monthly price
 This pricing offers a price reduction of around 50% compared to hourly billing. This is typical cloud billing.
