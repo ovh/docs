@@ -3,6 +3,8 @@ title: Delete a project
 excerpt: Delete a project
 slug: delete_a_project
 legacy_guide_number: g2129
+section: Project management
+order: 1
 ---
 
 **Last updated 6th December 2019**

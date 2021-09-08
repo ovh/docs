@@ -6,16 +6,15 @@ section: 'Pierwsze kroki'
 order: 8
 ---
 
-**Ostatnia aktualizacja z dnia 8 września 2020 r**
+**Ostatnia aktualizacja z dnia 07/09/2021**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
-> 
-
+>
 
 ## Wprowadzenie
 
-OVHcloud udostępnia klientom VPS obrazy wstępnie zainstalowanych aplikacji, które umożliwiają szybkie i łatwe wdrożenie. 
+OVHcloud udostępnia klientom VPS obrazy wstępnie zainstalowanych aplikacji, które umożliwiają szybkie i łatwe wdrożenie.
 
 **Dowiedz się, jak wdrożyć aplikacje zainstalowane na serwerze VPS.**
 
@@ -28,7 +27,7 @@ OVHcloud udostępnia klientom VPS obrazy wstępnie zainstalowanych aplikacji, kt
 ### Zainstaluj wybraną wstępnie zainstalowaną aplikację
 
 W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub w API OVHcloud zainstaluj wybraną aplikację. Zapoznaj się również z naszym przewodnikiem Pierwsze kroki [z serwerem VPS](../pierwsze-kroki-vps/).
- 
+
 #### cPanel
 
 Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu cPanel. Po wszystkich etapach oznaczone "\*" pojawi się FAQ.
@@ -51,7 +50,7 @@ Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalo
 
 Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
 
-> \[!faq]
+> [!faq]
 >
 > Czy mogę korzystać z własnych serwerów DNS?
 >> Tak, możesz. Upewnij się, że tworzysz rekordy GLUE z Twoim operatorem domeny. Na przykład, jeśli chcesz "ns1.mydomain.com" i "ns2.mydomain.com", musisz skonfigurować rekordy "GLUE", aby oba wskazywały na adres IP Twojego serwera. Jeśli Twoja domena jest zarejestrowana w OVHcloud, zapoznaj się [z tym przewodnikiem.](../../domains/glue_registry/#etap-1-dodanie-rekordow-glue) Tworzenie może trwać 24 godziny.
@@ -67,7 +66,7 @@ Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalo
 1. Otwórz otrzymany e-mail zawierający dane do logowania do aplikacji.
 2. W tym e-mailu kliknij link Pleska.
 3. Zaloguj się za pomocą nazwy użytkownika i hasła dostępnych w e-mailu.
-4. Po zalogowaniu Plesk poprosi:   
+4. Po zalogowaniu Plesk poprosi:
     a) Twoje dane kontaktowe.  
     b) Nowe hasło dla użytkownika "admin", którego będziesz używał do logowania się do interfejsu Plesk.  
     c) Informacje o licencji.*  
@@ -77,7 +76,7 @@ No further steps are necessary to complete the first configuration of this appli
 
 Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
 
-> \[!faq]
+> [!faq]
 >
 > Gdzie jest moja licencja Plesk?
 >> Licencję Plesk możesz zamówić dla serwera VPS w [Panelu klienta OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
@@ -109,92 +108,6 @@ Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalo
 
 1. Połącz się z serwerem za pomocą SSH za pomocą nazwy użytkownika i hasła dostępnych w wiadomości e-mail.
 2. Sprawdź, czy Docker działa za pomocą polecenia "docker run hello-world".
-
-Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
-
-#### GitLab
-
-Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu GitLab.
-
-1. Otwórz otrzymany e-mail zawierający dane do logowania do aplikacji.
-2. Kliknij URL GitLab w tym e-mailu.
-3. Wpisz nowe hasło.
-4. Zaloguj się do użytkownika "root" i nowego hasła, które właśnie zdefiniowałeś.
-
-Możesz pójść o krok dalej i zabezpieczyć Twój GitLab certyfikatem SSL postępując zgodnie z [tym przewodnikiem GitLab.](https://docs.gitlab.com/omnibus/settings/ssl.html){.external}.
-
-Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
-
-#### OpenVPN
-
-Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu OpenVPN.
-
-1. Otwórz otrzymany e-mail zawierający dane do logowania do aplikacji.
-2. Kliknij link OpenVPN w tym e-mailu.
-3. Zaloguj się za pomocą nazwy użytkownika i hasła dostępnych w e-mailu.
-
-Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
-
-
-#### WordPress
-
-Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu WordPress.
-
-1. Otwórz otrzymany e-mail zawierający dane do logowania do aplikacji.
-2. Kliknij link WordPress w tym e-mailu.
-3. Postępuj zgodnie z instrukcjami dotyczącymi konfiguracji WordPress. Gdy zostaniesz poproszony o podanie informacji na bazie danych, użyj zawsze "localhost" jako adresu. W przypadku nazwy użytkownika i hasła użyj informacji dostarczonych przez API.
-
-Możesz pójść o krok dalej i zabezpieczyć Twoją stronę WWW za pomocą darmowego certyfikatu SSL, [postępując zgodnie z poniższymi krokami](./#lets-encrypt-ssl_1).
-
-Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
-
-
-#### Joomla
-
-Poniżej znajdziesz pierwsze kroki związane z uruchomieniem pre-instalowanego obrazu Joomla.
-
-1. Otwórz otrzymany e-mail zawierający dane do logowania do aplikacji.
-2. W tym e-mailu kliknij link Joomla.
-3. Postępuj zgodnie z instrukcjami dotyczącymi konfiguracji Joomla. Gdy zostaniesz poproszony o podanie informacji na bazie danych, użyj zawsze "localhost" jako adresu. W przypadku nazwy użytkownika i hasła użyj informacji dostarczonych przez API.
-
-Możesz pójść o krok dalej i zabezpieczyć Twoją stronę WWW za pomocą darmowego certyfikatu SSL, [postępując zgodnie z poniższymi krokami](./#lets-encrypt-ssl_1).
-
-Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
-
-
-#### Drupal
-
-Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu Drupal.
-
-1. Otwórz otrzymany e-mail zawierający dane do logowania do aplikacji.
-2. Kliknij link Drupal'a w tym e-mailu.
-3. Postępuj zgodnie z instrukcjami dotyczącymi konfiguracji Drupal.Gdy zostaniesz poproszony o dostarczenie informacji na temat bazy danych, użyj zawsze "localhost" jako adresu. W przypadku nazwy użytkownika i hasła użyj informacji dostarczonych przez API.
-
-Możesz pójść o krok dalej i zabezpieczyć Twoją stronę WWW za pomocą darmowego certyfikatu SSL, [postępując zgodnie z poniższymi krokami](./#lets-encrypt-ssl_1).
-
-Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
-
-#### Prestashop
-
-Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu Prestashop.
-
-1. Otwórz otrzymany e-mail zawierający dane do logowania do aplikacji.
-2. Kliknij link Prestashop w tym e-mailu.
-3. Postępuj zgodnie z instrukcjami dotyczącymi konfiguracji modułu Prestashop. Gdy zostaniesz poproszony o podanie informacji w bazie danych, użyj zawsze "localhost" jako adresu, a w przypadku nazwy użytkownika i hasła użyj informacji dostarczonych przez API.
-4. Po zakończeniu instalacji możesz usunąć katalog instalacyjny i zmienić adres administracyjny za pomocą skryptu, który umieściliśmy na serwerze. Wykonując ten skrypt, zastosujemy zalecenie bezpieczeństwa Prestashop po instalacji. Wystarczy zalogować się do serwera przez SSH i uruchomić następujące polecenia:
-
-```sh
-sudo -i
-sh /root/secure_prestashop.sh
-rm -f /root/secure_prestashop.sh
-```
-
-> [!primary]
->
-> Zarejestruj odesłany link. Dostęp do interfejsu administracyjnego Prestashop jest możliwy tylko pod nowym linkiem.
->
-
-Zabezpiecz swoją stronę za pomocą certyfikatu SSL [postępując zgodnie z instrukcjami podanymi w tych krokach](./#lets-encrypt-ssl_1).
 
 Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
 

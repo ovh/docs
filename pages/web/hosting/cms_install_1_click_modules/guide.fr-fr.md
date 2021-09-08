@@ -72,7 +72,7 @@ Pour réaliser cette installation, assurez-vous que la case `Installation en mod
 
 ![Installation simple d'un module](images/choose_installation.png){.thumbnail}
 
-Une fois l'installation terminée, vous recevrez un e-mail comportant les informations nécessaires à votre connexion à l'interface administrateur du CMS. Connectez-vous dès à présent à celui-ci pour personnaliser votre site.
+Une fois l'installation terminée, vous recevrez un e-mail comportant les informations nécessaires à votre connexion à l'interface administrateur du CMS. Connectez-vous alors à celle-ci pour personnaliser votre site.
 
 #### Installation avancée d'un module
 
