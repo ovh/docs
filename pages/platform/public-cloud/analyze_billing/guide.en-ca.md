@@ -138,16 +138,16 @@ For hourly instances, it is possible to suspend or shelve an instance in order t
 
 #### From the OVHcloud Panel
 
-In the OVH control panel, click on the `Public Cloud` section{.action} menu, select your Cloud project and click on `instances`{.action} in the left side menu. 
-Click on the `...`{.action} button to the right of the instance you want to suspend, then click on `suspend`{.action}.
+In the OVH control panel, click on the `Public Cloud` section{.action} menu, select your Cloud project and click on `Instances`{.action} in the left side menu. 
+Click on the `...`{.action} button to the right of the instance you want to suspend, then click on `Suspend`{.action}.
 
 ![suspend instance](images/suspend_an_instance.png){.thumbnail}
 
-In the pop-up window, take note of the message and click on `confirm`{.action}.
+In the pop-up window, take note of the message and click on `Confirm`{.action}.
 
 ![confirm suspension](images/confirm_suspension.png){.thumbnail}
 
-Once the process is completed, your instance will now appear as `suspended` {.action}.
+Once the process is completed, your instance will now appear as `Suspended` {.action}.
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
@@ -211,18 +211,18 @@ This option will allow you to re-up your instance so that you can continue using
 
 #### From the OVHcloud Panel
 
-In the OVH control panel, click on the `Public Cloud` section{.action} menu, select your Cloud project and click on `instances`{.action} in the left side menu. 
-Click on the '...'{.action} button to the right of the instance you want to suspend, then click on `reactivate`{.action}.
+In the OVH control panel, click on the `Public Cloud` section{.action} menu, select your Cloud project and click on `Instances`{.action} in the left side menu. 
+Click on the '...'{.action} button to the right of the instance you want to suspend, then click on `Reactivate`{.action}.
 
 ![reactivate instance](images/reactivate_instancePanel.png){.thumbnail}
 
-In the pop-up window, take note of the message and click on `confirm`{.action}.
+In the pop-up window, take note of the message and click on `Confirm`{.action}.
 
 Once the process is completed, your instance will now appear as `Activated`{.action}
 
 #### From the Horizon interface
 
-Click on the `Compute`{.action} menu on the left and then select Instances{.action}. Select `unshelve Instance`{.action} in the drop list for the corresponding instance.
+Click on the `Compute`{.action} menu on the left and then select Instances{.action}. Select `Unshelve Instance`{.action} in the drop list for the corresponding instance.
 
 ![unshelve instance](images/unshelveinstancehorizon.png){.thumbnail}
 
