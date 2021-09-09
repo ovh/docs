@@ -88,7 +88,7 @@ Save the content above in a file name `values.yml` as we will use it in the next
 
 ### Deploying the pod
 
-With all the settings define in the previous step, we can install Grafana using the following command:
+With all the settings defined in the previous step, we can install Grafana using the following command:
 
 ```bash
 helm install grafana grafana/grafana -f values.yml
@@ -119,7 +119,8 @@ kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-passwor
 To clean up your cluster, simply use Helm to delete your Grafana release.
 
 ```bash
-helm delete grafana
+helm uninstall grafana
 ```
 
 It will delete your Grafana and its associated resources from your cluster.
+~~~~
