@@ -10,9 +10,9 @@ order: 7
 
 ## Objectif
 
-Des modifications sur les droits d'accès aux fichiers de votre site, le fichier **.htaccess** ou l'installation d'un plugin de sécurité peuvent parfois se traduire par une page "403 fordidden".
+Des modifications sur les droits d'accès aux fichiers de votre site, sur le fichier **.htaccess** ou l'installation d'un plugin de sécurité peuvent parfois se traduire par une page **"403 fordidden"**.
 
-Il est également possible, que, suite à une détection d'anomalies, nos robots de sécurité aient été amenés à bloquer temporairement l'accès aux fichiers de votre hébergement. Ce type de blocage automatique vise à empêcher l'envoi de code malveillant vers d'autres entités et à vous protéger juridiquement.
+Il peut aussi arriver que, suite à une détection d'anomalies, nos robots de sécurité aient été amenés à bloquer temporairement l'accès aux fichiers de votre hébergement. Ce type de blocage automatique vise à empêcher l'envoi de code malveillant vers d'autres entités et à vous protéger juridiquement.
 
 ![403error](images/403error.png){.thumbnail}
 
@@ -39,7 +39,7 @@ Si la page **« 403 forbidden »** est apparue suite à une modification erroné
 
 Si les sauvegardes disponibles ne vous permettent pas de rétablir l'accès à votre site, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
 
-Dans le cas contraire, consultez votre messagerie. Si vous avez reçu un mail de nos services indiquant une fermeture de votre hébergement pour des raisons de sécurité, passez à [l'étape 2](#etape2) :
+Dans le cas contraire, consultez votre messagerie. Si vous avez reçu un e-mail de nos services indiquant une fermeture de votre hébergement pour des raisons de sécurité, passez à [l'étape 2](#etape2) :
 
 ![mail_blocage](images/mail_blocage.png){.thumbnail}
 
@@ -47,34 +47,35 @@ Si la page **« 403 forbidden »** est apparue sans action de votre part et que 
 
 ### Étape 2 : sécuriser vos solutions <a name="etape2"></a>
 
-Vérifiez tout d'abord la sécurité de votre poste :
+Vérifiez tout d'abord la sécurité de votre/vos poste(s) informatique(s) :
 
 - Effectuez les mises à jour de sécurité.
-- Vérifiez également la présence d'un antivirus, mettez-le à jour et lancez un scan complet. (Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) avant toute installation).
-- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mails, en respectant ces [bonnes pratiques](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/mots-de-passe){.external}.
+- Vérifiez également qu'un antivirus est installé, mettez-le à jour et lancez un scan complet. Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) avant toute installation.
+- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mail, en respectant ces [bonnes pratiques](../../../customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe).
 - Modifiez les mots de passe de vos services OVHcloud en suivant les instructions de ce [guide](../gerer-et-acceder-a-ses-mots-de-passe/).
 
 > [!warning]
 >
 > Avant de changer le mot de passe de la base de données de votre site depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), mettez à jour le fichier de configuration de votre site afin qu'il se connecte à la base de données avec le nouveau mot de passe.
 >
-> La modification du mot de passe de votre base de données entraînera sinon une coupure du site ou des services qui l'utilisent.
+> Dans le cas contraire, la modification du mot de passe de votre base de données entraînera une coupure du site ou des services qui l'utilisent.
 >
 > En cas de doute sur les manipulations à réaliser, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+>
 
 ### Étape 3 : intervenir sur votre hébergement
 
-Notez tout d'abord la date d'envoi du mail indiquant la désactivation de votre hébergement, ainsi que le ou les dossiers qui contiennent les exemples de fichiers illégitimes.
+Notez tout d'abord la date d'envoi de l'e-mail indiquant la désactivation de votre hébergement, ainsi que le ou les dossiers qui contiennent les exemples de fichiers illégitimes.
 
-#### Cas 1 : votre hébergement a été désactivé il y a moins de deux semaines
+#### Cas n°1 : votre hébergement a été désactivé il y a moins de deux semaines
 
 Si votre hébergement a été fermé il y a moins de deux semaines et qu'il ne contient qu'un seul site, restaurez votre espace de stockage en suivant les instructions de ce [guide](../restauration-ftp-filezilla-espace-client/#restaurer-lespace-de-stockage-depuis-lespace-client).
 
 Si votre hébergement a été fermé il y a moins de deux semaines et qu'il contient plusieurs sites, restaurez uniquement le ou les dossiers contenant les fichiers illégitimes en suivant les instructions de ce [guide](../restauration-ftp-filezilla-espace-client/#restaurer-un-fichier-depuis-un-logiciel-ou-une-interface).
 
-#### Cas 2 : votre hébergement a été désactivé il y a plus de 14 jours
+#### Cas n°2 : votre hébergement a été désactivé il y a plus de deux semaines
 
-Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/), afin d'effectuer un audit de sécurité de vos solutions. 
+Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) afin d'effectuer un audit de sécurité de vos solutions. 
 
 > [!warning]
 >
@@ -87,7 +88,7 @@ Si votre hébergement a été fermé il y a plus de deux semaines, contactez un 
 
 > [!primary]
 >
-> Si vous souhaitez installer le logiciel **Filezilla** afin de manipuler les fichiers de votre site, suivez les instructions de ce [guide](../mutualise-guide-utilisation-filezilla/)
+> Si vous souhaitez installer le logiciel **FileZilla** afin de manipuler les fichiers de votre site, suivez les instructions de ce [guide](../mutualise-guide-utilisation-filezilla/).
 >
 
 Ouvrez votre logiciel FileZilla puis connectez-vous à votre espace de stockage. Cliquez ensuite sur `Serveur`{.action} dans la barre de menu, puis sur `Entrer une commande FTP`{.action} (l'intitulé peut être légèrement différent suivant la version de FileZilla que vous utilisez) :
@@ -106,13 +107,13 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 #### Réactiver votre hébergement avec le FTP Explorer « net2ftp »
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez vous dans la partie `Web Cloud`{.action}, `Hébergements`{.action}, puis cliquez sur l'onglet `FTP - SSH`{.action} de l'hébergement concerné. 
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez vous dans la partie `Web Cloud`{.action} puis `Hébergements`{.action} et cliquez sur l'onglet `FTP - SSH`{.action} de l'hébergement concerné.
 
-Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](../connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Cliquez ensuite sur le bouton `Avancé`{.action}, puis sur le bouton `Go`{.action} à côté de **« Envoyer des commandes FTP arbitraires au serveur FTP »**.
+Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](../connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Cliquez ensuite sur le bouton `Avancé`{.action} puis sur le bouton `Go`{.action} à côté de **« Envoyer des commandes FTP arbitraires au serveur FTP »**.
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
-Dans la partie supérieure de la page, renseignez la commande ci-dessous puis cliquez sur le bouton représentant un « v » vert.
+Dans la partie supérieure de la page, renseignez la commande ci-dessous puis cliquez sur le bouton représentant un **« V »** vert.
 
 ![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
 
