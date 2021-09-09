@@ -6,11 +6,11 @@ section: Project management
 order: 4
 ---
 
-**Last updated 09th September 2021**
+**Last updated 08th September 2021**
 
 ## Objective
 
-When you create a Public Cloud instance, you can choose to be billed at either an hourly or monthly rate. Hourly-rate instances are billed on a pay-as-you-go basis, i.e. at the end of the month, users are billed for the hour for any specific resources have been used. Monthly-rate instances are most of the time 50% less expensive than hourly-rate, each month started is billed at the end of the month. If you initially selected hourly billing, you can switch to monthly billing at any time.
+When you create a Public Cloud instance, you can choose to be billed at either an hourly or monthly rate. Hourly-rate instances are billed on a pay-as-you-go basis, i.e. at the end of each month, users are billed for every commenced hour per actual resources used. Monthly-rate instances are 50% less expensive compared to an hourly rate for the same duration. Each month commenced will be billed at the end of the month. If you initially selected hourly billing, you can switch to monthly billing at any time.
 
 **This guide explains how to switch from hourly to monthly billing.**
 
@@ -41,7 +41,7 @@ You will then need to confirm that you want to change the billing rate:
 
 ![Confirm billing calculation change](images/confirm_to_monthly_updated.png){.thumbnail}
 
-Once you have confirmed your choice, your next bill will include the hourly cost of the instance for the remaining days of the month, along with the cost for the next month at the monthly flat rate.
+Once you have confirmed your choice, your next bill will include the hourly-rate part of the month (1st of the month until the change) and the pro rata monthly fee for the remaining month.
 
 
 ## Go further

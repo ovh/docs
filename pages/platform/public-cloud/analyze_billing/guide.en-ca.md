@@ -81,7 +81,7 @@ You can also view your current resource usage (for the ongoing month) by clickin
 
 ![public-cloud](images/pci-billing-information2.png){.thumbnail}
 
-The first part, **"Already billed"**, includes resources billed by the month (see instances billed at the lower monthly rate). These resources are the exception to the “pay-as-you-go” method. Commitments are billed on a monthly basis and payable in advance. 
+The first part, **"Already billed"**, includes resources billed by the month (see instances billed at the lower monthly rate). These resources are the exception to the “pay-as-you-go” method. Commitments are billed on a monthly basis and payable in advance. The commitment option offers the user a cost advantage.
 
 The second part, **"Upcoming bills"**, includes pay-as-you-go resources. It lists your resource usage from the first of the month up to that day.
 
@@ -244,7 +244,7 @@ Once your environement is ready, type the following at the command line:
 #### Monthly price
 This pricing offers a price reduction of around 50% compared to hourly billing. This is typical cloud billing.
 
-Every month started is billed, even if the instance is deleted before the end of the month.
+Each commenced month is billed, even if the instance is deleted before the end of the month.
 
 
 ### Storage
