@@ -129,11 +129,11 @@ These instances are paid for on the first day of the following month, for the ho
 
 ##### **Shelve(suspend) an instance**
 
-For hourly instances, it is possible to shelve(suspend) an instance in order to release the resources dedicated to it. In this case, the data on your local disk will be stored (snapshot created once an instance is shelved/suspended)and only the snapshot will be charged. The IP address will remain.
+For hourly instances, it is possible to shelve(suspend) an instance in order to release the resources dedicated to it while keeping the same IP. In this case, the data on your local disk will be stored in a snapshot that is created when an instance is shelved/suspended), only the snapshot will be billed.
 
 > [!alert]
 >
->This process is only functional for hourly billed instances, it will not stop the billing of your instance but it will reduce your cost by only charging you for the snapshot.
+>This process is only functional for hourly billed instances, it will not stop the billing of your instance but it will reduce your cost.
 >
 
 For more information on how to proceed, consult this [guide](https://github.com/ovh/docs/blob/JF-PCI_billing/pages/platform/public-cloud/suspend_or_pause_an_instance/guide.en-ca.md).
