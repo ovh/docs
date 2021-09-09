@@ -6,11 +6,11 @@ section: 'Premiers pas'
 order: 8
 ---
 
-**Dernière mise à jour le 8 Septembre 2020**
+**Dernière mise à jour le 07/09/2021**
 
 ## Objectif
 
-OVHcloud offre aux clients VPS des images d'applications préinstallées pour un déploiement rapide et facile en quelques clics. 
+OVHcloud offre aux clients VPS des images d'applications préinstallées pour un déploiement rapide et facile en quelques clics.
 
 **Découvrez comment déployer des applications préinstallées sur votre VPS.**
 
@@ -23,7 +23,7 @@ OVHcloud offre aux clients VPS des images d'applications préinstallées pour un
 ### Installer l'application préinstallée de votre choix
 
 Depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou les API OVHcloud, installez l'application de votre choix. Vous pouvez également consulter notre guide [Débuter avec un VPS](../debuter-avec-vps/).
- 
+
 #### cPanel
 
 Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de cPanel. Les étapes marquées d'un « * » seront suivies d'une FAQ.
@@ -104,92 +104,6 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 
 1. Connectez-vous en SSH sur le serveur à l'aide du nom d'utilisateur et du mot de passe présents dans l'e-mail.
 2. Vérifiez que Docker fonctionne à l'aide de la commande « docker run hello-world ».
-
-Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
-
-#### GitLab
-
-Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de GitLab.
-
-1. Ouvrez l'e-mail que vous avez reçu contenant les identifiants de connexion à l'application.
-2. Cliquez sur l'URL de GitLab dans cet e-mail.
-3. Définissez votre nouveau mot de passe.
-4. Connectez-vous avec l'utilisateur « root » et le nouveau mot de passe que vous venez de définir.
-
-Vous pouvez aller plus loin en sécurisant votre GitLab avec un certificat SSL en suivant [ce guide GitLab.](https://docs.gitlab.com/omnibus/settings/ssl.html){.external}.
-
-Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
-
-#### OpenVPN
-
-Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de OpenVPN.
-
-1. Ouvrez l'e-mail que vous avez reçu contenant les identifiants de connexion à l'application.
-2. Cliquez sur l'URL de OpenVPN dans cet e-mail.
-3. Connectez-vous à l'aide du nom d'utilisateur et du mot de passe présents dans l'e-mail.
-
-Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
-
-
-#### WordPress
-
-Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de WordPress.
-
-1. Ouvrez l'e-mail que vous avez reçu contenant les identifiants de connexion à l'application.
-2. Cliquez sur l'URL de WordPress dans cet e-mail.
-3. Suivez les instructions de configuration de WordPress. Lorsque vous êtes invité à fournir des informations sur la base de données, utilisez toujours « localhost » comme adresse. Pour le nom d'utilisateur et le mot de passe, utilisez les informations fournies par l'API.
-
-Vous pouvez aller plus loin en sécurisant votre site avec un certificat SSL gratuit en [suivant ces étapes](./#lets-encrypt-ssl_1).
-
-Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
-
-
-#### Joomla
-
-Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de Joomla.
-
-1. Ouvrez l'e-mail que vous avez reçu contenant les identifiants de connexion à l'application.
-2. Cliquez sur l'URL de Joomla dans cet e-mail.
-3. Suivez les instructions de configuration de de Joomla. Lorsque vous êtes invité à fournir des informations sur la base de données, utilisez toujours « localhost » comme adresse. Pour le nom d'utilisateur et le mot de passe, utilisez les informations fournies par l'API.
-
-Vous pouvez aller plus loin en sécurisant votre site avec un certificat SSL gratuit en [suivant ces étapes](./#lets-encrypt-ssl_1).
-
-Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
-
-
-#### Drupal
-
-Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de Drupal.
-
-1. Ouvrez l'e-mail que vous avez reçu contenant les identifiants de connexion à l'application.
-2. Cliquez sur l'URL de Drupal dans cet e-mail.
-3. Suivez les instructions de configuration de Drupal.Lorsque vous êtes invité à fournir des informations sur la base de données, utilisez toujours « localhost » comme adresse. Pour le nom d'utilisateur et le mot de passe, utilisez les informations fournies par l'API.
-
-Vous pouvez aller plus loin en sécurisant votre site avec un certificat SSL gratuit en [suivant ces étapes](./#lets-encrypt-ssl_1).
-
-Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
-
-#### Prestashop
-
-Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de Prestashop.
-
-1. Ouvrez l'e-mail que vous avez reçu contenant les identifiants de connexion à l'application.
-2. Cliquez sur l'URL de Prestashop dans cet e-mail.
-3. Suivez les instructions de configuration de Prestashop. Lorsque vous êtes invité à fournir des informations sur la base de données, utilisez toujours « localhost » comme adresse et, pour le nom d'utilisateur et le mot de passe, utilisez les informations fournies par l'API.
-4. Une fois l'installation terminée, vous pouvez supprimer le dossier d'installation et modifier l'URL d'administration à l'aide d'un script que nous avons placé sur le serveur pour vous. En exécutant ce script, nous appliquerons la recommandation de sécurité de Prestashop après l'installation. Il suffit de vous connecter au serveur en SSH et d'exécuter les commandes suivantes:
-
-```sh
-sudo -i
-sh /root/secure_prestashop.sh
-rm -f /root/secure_prestashop.sh
-```
-
-> [!primary]
->
-> Veillez à enregistrer le lien renvoyé. Vous ne pourrez accéder à l'administration de Prestashop qu'avec le nouveau lien.
->
-
-Sécurisez gratuitement votre site avec un certificat SSL en [suivant ces étapes](./#lets-encrypt-ssl_1).
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 

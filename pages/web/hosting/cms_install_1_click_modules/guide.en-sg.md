@@ -71,7 +71,7 @@ To carry out this installation, check that the `Installation in advanced mode`{.
 
 ![Basic module installation](images/choose_installation.png){.thumbnail}
 
-Once the installation process is complete, you will receive an email containing the information you need to log in to the CMS admin interface. You can now log in to the admin interface, and start customising your website.
+Once the installation is complete, you will receive an email containing the information you need to log in to the CMS admin interface. Then log in to the interface to customise your website.
 
 #### Advanced module installation
 

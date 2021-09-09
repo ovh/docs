@@ -68,7 +68,7 @@ Para realizar esta instalação, certifique-se que a `Instalação em modo avan�
 
 ![Instalação simples](images/choose_installation.png){.thumbnail}
 
-Terminada a instalação, irá receber um e-mail com os dados necessários para aceder à interface de gestão do CMS. Aceda a esta interface para criar, personalizar e gerir o seu site .
+Uma vez concluída a instalação, receberá um e-mail com as informações necessárias para aceder à interface de administrador do CMS. Aceda a esta para personalizar o seu site.
 
 #### Instalação avançada
 

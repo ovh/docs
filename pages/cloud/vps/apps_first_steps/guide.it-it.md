@@ -6,7 +6,7 @@ section: 'Per iniziare'
 order: 8
 ---
 
-**Ultimo aggiornamento: 8 settembre 2020**
+**Ultimo aggiornamento: 07/09/2021**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -14,7 +14,7 @@ order: 8
 
 ## Obiettivo
 
-OVHcloud offre ai clienti VPS immagini di applicazioni preinstallate per un'implementazione rapida e semplice in pochi click. 
+OVHcloud offre ai clienti VPS immagini di applicazioni preinstallate per un'implementazione rapida e semplice in pochi click.
 
 **Questa guida ti mostra come configurare applicazioni preinstallate sul tuo VPS.**
 
@@ -27,7 +27,7 @@ OVHcloud offre ai clienti VPS immagini di applicazioni preinstallate per un'impl
 ### Installa l'applicazione preinstallata che preferisci
 
 Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) o tramite le API OVHcloud è possibile installare l'applicazione che preferisci. Consulta la guida Iniziare [a utilizzare un VPS](../iniziare-a-utilizzare-vps/).
- 
+
 #### cPanel
 
 Di seguito trovi i primi step per la messa in servizio dell'immagine preinstallata di cPanel. Gli step contrassegnati con "\*" saranno seguiti da FAQ.
@@ -66,7 +66,7 @@ Di seguito trovi i primi step per la messa in servizio dell'immagine preinstalla
 1. Apri l'email ricevuta con le credenziali di accesso all'applicazione.
 2. Clicca sull'URL di Plesk in questa email.
 3. Accedi utilizzando il nome utente e la password presenti nell'email.
-4. Una volta connesso, Plesk ti chiederà:   
+4. Una volta connesso, Plesk ti chiederà:
     a) I tuoi dati.  
     b) Una nuova password per l'utente "admin" che utilizzerai per accedere all'interfaccia di Plesk.  
     c) Informazioni sulla licenza.*  
@@ -108,92 +108,6 @@ Di seguito trovi i primi step per la messa in servizio dell'immagine preinstalla
 
 1. Accedi in SSH al server utilizzando il nome utente e la password presenti nell'email.
 2. Verifica che Docker funzioni utilizzando il comando "docker run hello-world".
-
-Per completare la prima configurazione dell'applicazione non sono necessari ulteriori step.
-
-#### GitLab
-
-Di seguito trovi i primi step per la messa in servizio dell'immagine preinstallata di GitLab.
-
-1. Apri l'email ricevuta con le credenziali di accesso all'applicazione.
-2. Clicca sull'URL di GitLab in questa email.
-3. Definisci la tua nuova password.
-4. Connettiti con l'utente "root" e la nuova password che hai appena definito.
-
-Per spingere oltre proteggendo il tuo GitLab con un certificato SSL, consulta [questa guida GitLab](https://docs.gitlab.com/omnibus/settings/ssl.html){.external}.
-
-Per completare la prima configurazione dell'applicazione non sono necessari ulteriori step.
-
-#### OpenVPN
-
-Di seguito trovi i primi step per la messa in servizio dell'immagine preinstallata di OpenVPN.
-
-1. Apri l'email ricevuta con le credenziali di accesso all'applicazione.
-2. Clicca sull'URL di OpenVPN in questa email.
-3. Accedi utilizzando il nome utente e la password presenti nell'email.
-
-Per completare la prima configurazione dell'applicazione non sono necessari ulteriori step.
-
-
-#### WordPress
-
-Di seguito trovi i primi step per la messa in servizio dell'immagine preinstallata di WordPress.
-
-1. Apri l'email ricevuta con le credenziali di accesso all'applicazione.
-2. Clicca sull'URL di WordPress in questa email.
-3. Segui le istruzioni per la configurazione di WordPress. Quando ti viene chiesto di fornire informazioni sul database, utilizza sempre "localhost" come indirizzo. Per nome utente e password, utilizza le informazioni fornite dall'API.
-
-Rendi più sicuro il tuo sito con un certificato SSL gratuito seguendo questi [step](./#lets-encrypt-ssl_1).
-
-Per completare la prima configurazione dell'applicazione non sono necessari ulteriori step.
-
-
-#### Joomla!
-
-Di seguito trovi i primi step per la messa in servizio dell'immagine preinstallata di Joomla.
-
-1. Apri l'email ricevuta con le credenziali di accesso all'applicazione.
-2. Clicca sull'URL di Joomla in questa email.
-3. Segui le istruzioni per la configurazione di Joomla. Quando ti viene chiesto di fornire informazioni sul database, utilizza sempre "localhost" come indirizzo. Per nome utente e password, utilizza le informazioni fornite dall'API.
-
-Rendi più sicuro il tuo sito con un certificato SSL gratuito seguendo questi [step](./#lets-encrypt-ssl_1).
-
-Per completare la prima configurazione dell'applicazione non sono necessari ulteriori step.
-
-
-#### Drupal
-
-Di seguito trovi i primi step per la messa in servizio dell'immagine preinstallata di Drupal.
-
-1. Apri l'email ricevuta con le credenziali di accesso all'applicazione.
-2. Clicca sull'URL di Drupal in questa email.
-3. Segui le istruzioni di configurazione di Drupal.Quando ti viene chiesto di fornire informazioni sul database, utilizza sempre "localhost" come indirizzo. Per nome utente e password, utilizza le informazioni fornite dall'API.
-
-Rendi più sicuro il tuo sito con un certificato SSL gratuito seguendo questi [step](./#lets-encrypt-ssl_1).
-
-Per completare la prima configurazione dell'applicazione non sono necessari ulteriori step.
-
-#### Prestashop
-
-Di seguito trovi i primi step per la messa in servizio dell'immagine preinstallata di Prestashop.
-
-1. Apri l'email ricevuta con le credenziali di accesso all'applicazione.
-2. Clicca sull'URL di Prestashop in questa email.
-3. Segui le istruzioni per la configurazione di Prestashop. Quando ti viene chiesto di fornire informazioni sul database, utilizza sempre "localhost" come indirizzo e, per nome utente e password, utilizza le informazioni fornite dall'API.
-4. Una volta completata l'installazione, puoi eliminare la cartella di installazione e modificare l'URL di amministrazione tramite uno script che abbiamo inserito sul server per te. Eseguendo questo script, applicheremo la raccomandazione di sicurezza di Prestashop dopo l'installazione. Accedi al server in SSH ed esegui questi comandi:
-
-```sh
-sudo -i
-sh /root/secure_prestashop.sh
-rm -f /root/secure_prestashop.sh
-```
-
-> [!primary]
->
-> Salva il link reindirizzato. Potrai accedere all'amministrazione di Prestashop solo con il nuovo link.
->
-
-Proteggi gratuitamente il tuo sito con un certificato SSL seguendo [questi step](./#lets-encrypt-ssl_1).
 
 Per completare la prima configurazione dell'applicazione non sono necessari ulteriori step.
 
