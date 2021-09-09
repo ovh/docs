@@ -127,7 +127,7 @@ This pricing follows the pay-as-you-go model explained earlier.
 
 These instances are paid for on the first day of the following month, for the hours of resource usage over the course of the previous month.
 
-##### **Suspend or shelve an instance**
+##### **Shelve(suspend) an instance**
 
 For hourly instances, it is possible to shelve(suspend) an instance in order to release the resources dedicated to it. In this case, the data on your local disk will be stored (snapshot created once an instance is shelved/suspended)and only the snapshot will be charged. The IP address will remain.
 
