@@ -24,7 +24,7 @@ order: 11
  
 ## Requirements
 
-- an [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) on hourly billing.
+- an [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) on hourly billing
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 - access to the [Horizon interface](https://docs.ovh.com/ca/en/public-cloud/configure_user_access_to_horizon/)
 - Knowledge of [Openstack API](https://docs.ovh.com/ca/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
