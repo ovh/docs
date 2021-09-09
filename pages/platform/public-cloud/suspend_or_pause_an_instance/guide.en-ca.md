@@ -116,7 +116,7 @@ This option will allow you to re-up your instance so that you can continue using
 #### From the OVHcloud Panel
 
 In the OVH control panel, click on the `Public Cloud` section{.action} menu, select your Cloud project and click on `Instances`{.action} in the left side menu. 
-Click on the '...'{.action} button to the right of the instance you want to suspend, then click on `Reactivate`{.action}.
+Click on the `...`{.action} button to the right of the instance you want to suspend, then click on `Reactivate`{.action}.
 
 ![reactivate instance](images/reactivate_instancePanel.png){.thumbnail}
 
@@ -149,22 +149,22 @@ Once your environement is ready, type the following at the command line:
 #### From the OVHcloud Panel
 
 In the OVH control panel, click on the `Public Cloud` section{.action} menu, select your Cloud project and click on `Instances`{.action} in the left side menu. 
-Click on the '...'{.action} button to the right of the instance you want to stop, then click on `Stop`{.action}.
+Click on the `...`{.action} button to the right of the instance you want to stop, then click on `Stop`{.action}.
 
-In the pop-up window, take note of the message and click on `confirm`{.action}.
+In the pop-up window, take note of the message and click on `Confirm`{.action}.
 
 Once the process is completed, your instance will now appear as `Off`{.action}.
 
-To resume the instance, perform the same steps as mentioned above and select `Boot`{.action}. In some cases, you might need to do a cold reboot instead.
+To resume the instance, perform the same steps as mentioned above and select `Boot`{.action}. In some cases, you might need to do a cold reboot.
 
 
 #### From the Horizon interface 
 
 In the horizon interface, click on the `Compute`{.action} menu on the left and then select Instances{.action}. Select `Suspend Instance`{.action} in the drop list for the corresponding instance.
 
-Once the process is completed, your instance will now appear as `Suspended`{.action}.
+The confirmation message will appear, indicating that the instance has been suspended.
 
-To unsuspend the instance, perform the same steps as mentioned above and select `Resume Instance`{.action} in the drop list
+To unsuspend the instance, perform the same steps as mentioned above and select `Resume Instance`{.action} in the drop list.
 
 
 #### Using Openstack/Nova APIs
@@ -173,13 +173,13 @@ Please refer to the [official guide](https://docs.openstack.org/mitaka/user-guid
 
 
 ### Pause an instance
-This action is only possible in the horizon interface or via the openstack/nova api.
+This action is only possible in the Horizon interface or via the Openstack/Nova api.
 
 #### Using Horizon
 
 In the horizon interface, click on the `Compute`{.action} menu on the left and then select Instances{.action}. Select `Pause Instance`{.action} in the drop list for the corresponding instance.
 
-Once the process is completed, your instance will now appear as `Paused`{.action}.
+The confirmation message will appear, indicating that the instance has been Paused.
 
 To unpause the instance, perform the same steps as mentioned above and select `Resume Instance`{.action} in the drop list
 
