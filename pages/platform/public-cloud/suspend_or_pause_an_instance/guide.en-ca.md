@@ -181,7 +181,7 @@ Click on the `Compute`{.action} menu on the left and then select Instances{.acti
 
 Once the process is completed, your instance will now appear as `Paused`{.action}.
 
-To unpause the instance, To unsuspend the instance, perform the same steps as mentioned above and select `Resume Instance`{.action} in the drop list
+To unpause the instance, perform the same steps as mentioned above and select `Resume Instance`{.action} in the drop list
 
 #### Using Openstack/Nova APIs
 
