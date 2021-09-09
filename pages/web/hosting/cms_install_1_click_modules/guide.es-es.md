@@ -68,7 +68,7 @@ Para instalar el módulo en modo simple, asegúrese de que la casilla `Instalaci
 
 ![Instalación simple de un módulo](images/choose_installation.png){.thumbnail}
 
-Una vez haya finalizado la instalación, recibirá por correo electrónico la información necesaria para conectarse al panel de administración del CMS. Ya puede conectarse a su CMS para personalizar su sitio web.
+Una vez finalizada la instalación, recibirá por correo electrónico la información necesaria para conectarse al panel de administración del CMS. Conéctese a ella para personalizar su sitio web.
 
 
 #### Instalación avanzada de un módulo
