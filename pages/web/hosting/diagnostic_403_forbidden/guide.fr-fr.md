@@ -49,12 +49,12 @@ Si la page **« 403 forbidden »** est apparue sans action de votre part et que 
 
 Vérifiez tout d'abord la sécurité de votre poste :
 
-• Effectuez les mises à jour de sécurité.
-• Vérifiez également la présence d'un antivirus, mettez-le à jour et lancez un scan complet. (Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) avant toute installation).
-• Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mails, en respectant ces [bonnes pratiques](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/mots-de-passe){.external}.
-• Modifiez les mots de passe de vos services OVHcloud en suivant les instructions de ce [guide](../gerer-et-acceder-a-ses-mots-de-passe/).
+- Effectuez les mises à jour de sécurité.
+- Vérifiez également la présence d'un antivirus, mettez-le à jour et lancez un scan complet. (Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) avant toute installation).
+- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mails, en respectant ces [bonnes pratiques](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/mots-de-passe){.external}.
+- Modifiez les mots de passe de vos services OVHcloud en suivant les instructions de ce [guide](../gerer-et-acceder-a-ses-mots-de-passe/).
 
-> [!alert]
+> [!warning]
 >
 > Avant de changer le mot de passe de la base de données de votre site depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), mettez à jour le fichier de configuration de votre site afin qu'il se connecte à la base de données avec le nouveau mot de passe.
 >
@@ -90,9 +90,17 @@ Si votre hébergement a été fermé il y a plus de deux semaines, contactez un 
 > Si vous souhaitez installer le logiciel **Filezilla** afin de manipuler les fichiers de votre site, suivez les instructions de ce [guide](../mutualise-guide-utilisation-filezilla/)
 >
 
-Ouvrez votre logiciel FileZilla puis connectez-vous à votre espace de stockage. Cliquez ensuite sur `Serveur`{.action} dans la barre de menu, puis sur `Entrer une commande FTP`{.action} (l'intitulé peut être légèrement différent suivant la version de FileZilla que vous utilisez). Dans la fenêtre qui s'affiche, renseignez la commande ci-dessous puis validez-la.
+Ouvrez votre logiciel FileZilla puis connectez-vous à votre espace de stockage. Cliquez ensuite sur `Serveur`{.action} dans la barre de menu, puis sur `Entrer une commande FTP`{.action} (l'intitulé peut être légèrement différent suivant la version de FileZilla que vous utilisez) :
 
-![filezilla](images/filezilla.png){.thumbnail}
+![command_filezilla1](images/command_filezilla1.png){.thumbnail}
+
+Dans la fenêtre qui s'affiche, renseignez la commande ci-dessous puis validez-la :
+
+```
+SITE CHMOD 705 /
+```
+
+![command_filezilla2](images/command_filezilla2.png){.thumbnail}
 
 Une réponse **« 200 Permissions changed on / »** confirme que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site.
 
