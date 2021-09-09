@@ -126,7 +126,7 @@ Once the process is completed, your instance will now appear as `Activated`{.act
 
 #### From the Horizon interface
 
-Click on the `Compute`{.action} menu on the left and then select Instances{.action}. Select `Unshelve Instance`{.action} in the drop list for the corresponding instance.
+In the horizon interface, click on the `Compute`{.action} menu on the left and then select Instances{.action}. Select `Unshelve Instance`{.action} in the drop list for the corresponding instance.
 
 ![unshelve instance](images/unshelveinstancehorizon.png){.thumbnail}
 
@@ -160,7 +160,7 @@ To resume the instance, perform the same steps as mentioned above and select `Bo
 
 #### From the Horizon interface 
 
-Click on the `Compute`{.action} menu on the left and then select Instances{.action}. Select `Suspend Instance`{.action} in the drop list for the corresponding instance.
+In the horizon interface, click on the `Compute`{.action} menu on the left and then select Instances{.action}. Select `Suspend Instance`{.action} in the drop list for the corresponding instance.
 
 Once the process is completed, your instance will now appear as `Suspended`{.action}.
 
@@ -177,7 +177,7 @@ This action is only possible in the horizon interface or via the openstack/nova 
 
 #### Using Horizon
 
-Click on the `Compute`{.action} menu on the left and then select Instances{.action}. Select `Pause Instance`{.action} in the drop list for the corresponding instance.
+In the horizon interface, click on the `Compute`{.action} menu on the left and then select Instances{.action}. Select `Pause Instance`{.action} in the drop list for the corresponding instance.
 
 Once the process is completed, your instance will now appear as `Paused`{.action}.
 
