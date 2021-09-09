@@ -3,7 +3,7 @@ title: Shelve or pause an instance
 slug: shelve-or-pause-an-instance
 legacy_guide_number: 1781
 section: Project management
-order: 11
+order: 3
 ---
 
 **Last updated 9th September 2021**
@@ -15,7 +15,7 @@ order: 11
 > The naming of these options in the OVHcloud Control panel is different from the naming in Openstack/Horizon. If you are doing this via the OVHcloud Control panel, make sure you select the right option.
 >
 
-**This guide explains how to shelve, pause or suspend your instance**
+**This guide explains how to shelve, pause or suspend your instance.**
  
 ## Requirements
 
@@ -36,7 +36,7 @@ Please take note of the following before proceeding:
 
 |Term|Description|Billing|
 |---|---|---|
-|Shelve|Retains the resources and data in your disk(a snapshot is created), all other resources are released.|You are only billed for the snapshot.|
+|Shelve|Retains the resources and data in your disk by creating a snapshot, all other resources are released.|You are only billed for the snapshot.|
 |Pause|Stores the state of the VM in RAM, a paused instance becomes frozen.|You will still be billed the same price for your instance.|
 |Suspend|Stores the VM state on disk, the resources dedicated to instance are still reserved.|You will still be billed the same price for your instance.|
 
@@ -59,7 +59,7 @@ Once the process is completed, your instance will now appear as `Suspended` {.a
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
-To view the snapshot, on the left side menu, click on `Instance Backup`{.action}.
+To view the snapshot, go to the left side menu and click on `Instance Backup`{.action}. A snapshot named *xxxxx-shelved* will now be visible:
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
@@ -68,7 +68,7 @@ To view the snapshot, on the left side menu, click on `Instance Backup`{.action}
 
 To proceed, you need to [Configure user access to Horizon](../configure_user_access_to_horizon/) and [Log in to the Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
 
-If you have deployed instances in different regions, make sure you are in the correct region. You can verify this at the top corner left in the Horizon interface. 
+If you have deployed instances in different regions, make sure you are in the correct region. You can verify this on the top left corner in the Horizon interface. 
 
 ![horizon interface](images/firstaccesshorizon.png){.thumbnail}
 
@@ -87,7 +87,9 @@ To view the snapshot, in the `Compute`{.action} menu, click on `Images`{.action}
 
 #### Using Openstack/Nova APIs
 
-To proceed, you need to have a knowledge of [Openstack API](https://docs.ovh.com/ca/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) and [Openstack variables](https://docs.ovh.com/ca/en/public-cloud/set-openstack-environment-variables/).
+Before proceeding, it is recommended that you consult these guides: 
+
+[Prepare the environment to use the OpenStack API](https://docs.ovh.com/ca/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) and [Set OpenStack environment variables](https://docs.ovh.com/ca/en/public-cloud/set-openstack-environment-variables/).
 
 Once your environment is ready, type the following at the command line:
 
@@ -102,7 +104,7 @@ nova shelve <UUID server>
 
 > [!alert] **Actions on the snapshot**
 >
-> Any actions on the snapshot other than *unshelve* can be very dangerous for your infrastructure in case of misuse. It is not recommended to deploy a new instance from any snapshot created as a result of suspending an instance. Once you *unshelve* an instance, the snapshot is automatically deleted. 
+> Any actions on the snapshot other than *unshelve* can be very dangerous for your infrastructure in case of misuse. Once you *unshelve* an instance, the snapshot is automatically deleted. It is not recommended to deploy a new instance from any snapshot created as a result of shelving(suspending) an instance. 
 >
 > OVHcloud is providing you with machines that you are responsible for. We have no access to these machines, and therefore cannot manage them.  You are responsible for your own software and security management. If you experience any issues or doubts when it comes to managing, using or securing your server, we recommend that you contact a specialist service provider.
 >
@@ -143,11 +145,11 @@ Once your environment is ready, type the following at the command line:
 ```
 
 ### Suspend(stop) an instance
-This option will allow you to shutdown your instance and store the state on disk.
+This option will allow you to shutdown your instance and store the VM state on disk, the memory will be written to the disk as well. 
 
 #### From the OVHcloud Control Panel
 
-In the OVHcloud Control panel, click on the `Public Cloud`{.action} section menu, select your Public Cloud project and click on `Instances`{.action} in the left side menu. 
+In the OVHcloud Control Panel, click on the `Public Cloud`{.action} section menu, select your Public Cloud project and click on `Instances`{.action} in the left side menu. 
 
 Click on the `...`{.action} button to the right of the instance you want to stop, then click on `Stop`{.action}.
 
@@ -157,8 +159,7 @@ In the pop-up window, take note of the message and click on `Confirm`{.action}.
 
 Once the process is completed, your instance will now appear as `Off`{.action}.
 
-To resume the instance, perform the same steps as mentioned above and select `Boot`{.action}. In some cases, you might need to do a cold reboot.
-
+To resume the instance, perform the same steps as mentioned above. Click on the `...`{.action} button to the right of the instance and select `Boot`{.action}. In some cases, you might need to do a cold reboot.
 
 #### From the Horizon interface 
 
@@ -168,10 +169,9 @@ In the Horizon interface, click on the `Compute`{.action} menu on the left and t
 
 The confirmation message will appear, indicating that the instance has been suspended.
 
-To unsuspend the instance, perform the same steps as mentioned above and select `Resume Instance`{.action} in the drop list.
+To unsuspend the instance, perform the same steps as mentioned above. In the drop list for the corresponding instance select `Resume Instance`{.action}.
 
-
-#### Using Openstack/Nova APIs
+#### Using Openstack/Nova API
 
 Once your environment is ready, type the following at the command line:
 
@@ -183,7 +183,6 @@ Once your environment is ready, type the following at the command line:
 ~$ nova suspend <UUID server>
 ```
 
-
 To unsuspend the instance, type the following at the command line:
 
 ```bash
@@ -194,30 +193,30 @@ To unsuspend the instance, type the following at the command line:
 ~$ nova unsuspend <UUID server>
 ```
 
-
 ### Pause an instance
 This action is only possible in the Horizon interface or via the Openstack/Nova api. It allows you to *freeze* your instance.
 
 #### Using Horizon
 
-In the Horizon interface, click on the `Compute`{.action} menu on the left and then select Instances{.action}. Select `Pause Instance`{.action} in the drop list for the corresponding instance.
+In the Horizon interface, click on the `Compute`{.action} menu on the left and then select `Instances`{.action}. Select `Pause Instance`{.action} in the drop list for the corresponding instance.
 
 ![Pause instance](images/pauseinstancehorizon.png){.thumbnail}
 
-The confirmation message will appear, indicating that the instance has been Paused.
+The confirmation message will appear, indicating that the instance has been paused.
 
-To unpause the instance, perform the same steps as mentioned above and select `Resume Instance`{.action} in the drop list
+To unpause the instance, perform the same steps as mentioned above. In the drop list for the corresponding instance select `Resume Instance`{.action}.
 
 #### Using Openstack/Nova APIs
 
 Once your environment is ready, type the following at the command line:
 
+
 ```bash
-~$ openstack server pause <UID server>
+~$ openstack server pause <UUID server>
 
 =========================================
 
-~$ nova pause <UID server>
+~$ nova pause <UUID server>
 ```
 
 To unpause the instance, type the following at the command line:
