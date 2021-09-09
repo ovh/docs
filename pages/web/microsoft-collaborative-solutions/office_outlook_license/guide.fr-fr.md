@@ -2,124 +2,95 @@
 title: Obtenir une licence Outlook pour Exchange
 slug: exchange-licence-outlook-exchange-2013
 legacy_guide_number: 1718
-excerpt: Retrouver ici la procedure pour commander une licence outlook depuis votre plateforme Exchange OVH
+excerpt: Découvrez comment souscrire une licence Outlook depuis votre plateforme Exchange OVHcloud et l'installer
 section: Office
 order: 1
 ---
 
-Retrouvez des informations sur la commande et l'installation d'une licence Outlook Exchange 2013 chez OVH.
+**Dernière mise à jour le 07/09/2021**
 
-Retrouvez nos différents [guides Exchange](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external}.
+## Objectif
 
+Vous souhaitez bénéficier d'une licence Outlook pour consulter et gérer vos e-mails sur votre compte Exchange.
 
-## Généralités
+OVHcloud vous propose le client de messagerie Outlook au tarif de 2 euros HT par mois. Il sera associé à un compte Exchange OVHcloud dont vous avez la gestion.
 
-### Licence Outlook Exchange 2013
-OVH vous propose le logiciel officiel de messagerie Outlook au tarif de 2 euros HT par mois. Il sera associé à un compte Exchange OVH dont vous avez la gestion.
+Après votre souscription, vous pouvez télécharger Outlook parmi l'une des 6 versions suivantes:
 
-Ce logiciel se présente sous diverses versions, téléchargeables depuis l'espace client Web :
-
-- Outlook 2010 pour Windows 32 bits.
-- Outlook 2010 pour Windows 64 bits.
 - Outlook 2013 pour Windows 32 bits.
 - Outlook 2013 pour Windows 64 bits.
+- Outlook 2016 pour Windows 32 bits.
+- Outlook 2016 pour Windows 64 bits.
 - Outlook 2011 pour MAC 64 bits.
+- Outlook 2016 pour MAC 64 bits.
 
+**Découvrez comment souscrire une licence Outlook depuis votre plateforme Exchange OVHcloud et l'installer.**
 
-## Comment souscrire a l'option de Licence Outlook ?
+## En pratique
 
-### Cas d'une plate-forme de type Hosted Exchange
-Rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur votre plate-forme Exchange, puis onglet "Comptes E-mail". Vous verrez alors en face de l'adresse Exchange pour laquelle vous souhaitez bénéficier du logiciel Outlook un icône en forme de caddie dans la colonne "Outlook".
+### Commander une licence Outlook
 
-Cliquez sur cet icône, la fenêtre suivante apparaîtra :
+#### Pour un compte Hosted Exchange
 
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web`. Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme **Hosted Exchange** concernée.
 
-![emails](images/2558.png){.thumbnail}
+Cliquez sur l'icône `...`{.action} à droite du compte concerné, puis sur `Commander une licence Outlook`{.action}.
 
-- Choisissez la version du logiciel, la période de souscription (au mois ou à l'année) puis passez à l'étape suivante.
+![Outlook](images/order-outlook01.png){.thumbnail}
 
+Définissez la fréquence de renouvellement de votre licence Outlook et validez les conditions. Cliquez ensuite sur `Suivant`{.action}.
 
-![emails](images/2559.png){.thumbnail}
+![Outlook](images/order-outlook02.png){.thumbnail}
 
-- Après le récapitulatif de votre commande, utilisez le bouton " Régler " afin de générer le bon de commande. Vous serez redirigé vers une page internet OVH qui affichera le résultat de votre commande et les moyens de paiement disponibles.
+Après le récapitulatif de votre commande, utilisez le bouton `Régler`{.action} afin de générer le bon de commande. Vous serez redirigé vers une nouvelle page qui vous permettra de régler votre commande via les moyens de paiement à votre disposition.
 
+Patientez quelques instants le temps de la mise à dispostion de votre licence Outlook dans votre espace client.
 
-![emails](images/2560.png){.thumbnail}
+#### Pour un compte Private Exchange
 
-- Un délai de deux heures au maximum devra être constaté avant la mise à disposition du lien de téléchargement d'Outlook.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web`. Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme **Private Exchange** concernée.
 
+Cliquez sur l'icône `...`{.action} à droite du compte concerné, puis sur `Activer la licence Outlook`{.action}.
 
-![emails](images/2561.png){.thumbnail}
+![Outlook](images/order-outlook03.png){.thumbnail}
 
+Une fenêtre vous demande si vous souhaitez activer la licence Outlook sur votre compte Exchange. Cliquez sur `Valider`{.action} pour activer la licence sur le compte concerné.
 
-### Cas d'une plate-forme de type Private Exchange
-Rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur votre plate-forme Exchange, puis onglet "Comptes E-mail".
+![Outlook](images/order-outlook04.png){.thumbnail}
 
-- Cliquez sur l'icône  en face de l'adresse Exchange concernée.
+Patientez quelques instants le temps de la mise à dispostion de votre licence Outlook dans votre espace client.
 
-
-![emails](images/2562.png){.thumbnail}
-
-- Cochez la case " Licence Outlook ".
-
-
-![emails](images/2563.png){.thumbnail}
-
-
-## Comment telecharger le logiciel Outlook ?
-
-### Informations generales
-Rendez-vous dans votre espace client Web, cliquez sur votre plate-forme Exchange, onglet "Comptes E-mail".
-
-Vous observerez dans la colonne "Outlook" le bouton "Oui". Cliquez sur ce dernier afin de choisir la version du logiciel Outlook et le langage utilisé.
-
-
-![emails](images/2567.png){.thumbnail}
-
-- Vous ne connaissez pas la version de votre Windows ou votre MAC? Voici les guides officiels de Microsoft et Apple :
-- [Windows](http://windows.microsoft.com/fr-fr/windows/which-operating-system){.external}
-- [Mac](http://support.apple.com/fr-fr/HT1159){.external}
-
-
-![emails](images/2564.png){.thumbnail}
-
-- Génération de l'URL de téléchargement.
-
-
-![emails](images/2565.png){.thumbnail}
-
-Cliquez ensuite sur l'URL afin de lancer le téléchargement. N'oubliez pas de noter la clef de sécurité ou Serial. Elle sera réclamée durant l'installation du logiciel.
-
-- Aucune clef/Serial n'est nécessaire pour l'installation d'Outlook 2011 pour MAC.
-
-
-![emails](images/2566.png){.thumbnail}
-
-
-## Comment installer la version d'Outlook telechargee ?
-
-### Informations generales
-Le fichier téléchargé correspond à un .ISO, c'est à dire une image de disque. Il n'est pas exploitable en l'état et nécessite d'utiliser l'une de ces solutions pour exécuter l'installation du logiciel Outlook :
-
-**Lecteur virtuel**
-
-Des lecteurs virtuels gratuits sont disponibles sur internet et vous permettent de simuler un lecteur sur votre ordinateur.
-
-Il vous suffit ensuite de monter le fichier .ISO sur le lecteur virtuel afin de faire croire à votre ordinateur que vous lui faites lire un disque d'installation.
-
-**Graver le fichier .ISO**
-
-Si votre ordinateur est muni d'un graveur CD/DVD, utilisez le logiciel correspondant pour graver le fichier .ISO.  Vous serez alors muni d'un CD/DVD d'installation d'Outlook.
-
-- N'oubliez pas de vous munir de la clef d'installation récupérée lors de la génération de l'URL de téléchargement.
-
-
-
-> [!success]
+> [!primary]
 >
-> - 
-> L'aide à l'installation d'Outlook ne fait pas partie du cadre
-> d'intervention du support Exchange. Nous ne pourrons donc pas vous
-> assister dans cette démarche.
-> 
-> 
+> La facturation de votre licence Outlook sera intégrée dans celle de votre Plateforme Private Exchange, chaque mois.
+>
+
+### Télécharger et installer Outlook
+
+Il vous faut maintenant télécharger le fichier d'installation d'Outlook pour votre machine.
+
+Depuis l'interface de gestion de votre plateforme Exchange, cliquez sur l'icône `...`{.action} à droite du compte concerné, puis sur `Utiliser la licence Outlook`{.action}
+
+Choisissez la version dans le menu déroulant en fonction de votre système d'exploitation et la langue, puis cliquez sur `Suivant`{.action}
+
+![Outlook](images/order-outlook05.png){.thumbnail}
+
+Après quelques instants, un lien de téléchargement est généré, ainsi qu'une clé de licence à utiliser lors de l'installation sur votre machine.
+
+![Outlook](images/order-outlook06.png){.thumbnail}
+
+Le fichier téléchargé est au format .ISO, c'est à dire une image disque. Lancez l'installation et saisissez la clé de licence lorsqu'elle vous sera demandée.
+
+### Supprimer la licence Outlook de votre compte
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web`. Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
+
+Cliquez sur l'icône `...`{.action} à droite du compte concerné, puis sur `Supprimer la licence Outlook`{.action}
+
+![Outlook](images/order-outlook07.png){.thumbnail}
+
+Après validation, il vous est rappelé que la licence sera définitvement supprimée à sa date d'expiration
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
