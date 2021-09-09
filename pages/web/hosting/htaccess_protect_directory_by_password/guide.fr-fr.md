@@ -1,18 +1,18 @@
 ---
-title: 'Comment proteger l’accès a un répertoire par une authentification ?'
+title: 'Protéger l’accès à la partie Administrateur de votre site par un fichier .htaccess'
 slug: mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification
 legacy_guide_number: 1968
-excerpt: "Retrouvez ici les manipulations necessaires pour proteger l'acces a un repertoire de votre hebergement via une authentification."
+excerpt: 'Retrouvez ici les manipulations nécessaires pour protéger l'accès à un repertoire de votre hébergement via une authentification.'
 section: 'Réécriture et authentification'
 ---
 
-**Dernière mise à jour le 07/09/2021**
+**Dernière mise à jour le 09/09/2021**
 
 ## Objectif
 
-Il peut parfois être nécessaire de protéger l'accès à une partie de votre site par un mot de passe. Vous pourrez mettre en place cette configuration grâce à un fichier **« .htaccess »**. 
+Il peut parfois être nécessaire de protéger l'accès à une partie de votre site par des identifiants. Vous pourrez notamment mettre en place un fichier **« .htaccess »** afin de protéger l'accès à l'espace Administrateur de votre site. 
 
-**Découvrez comment pour protéger l'acces à un répertoire de votre hébergement via une authentification par un fichier « .htaccess ».**
+**Découvrez comment pour protéger l'acces à la partie Administrateur de votre site via une authentification par un fichier « .htaccess ».**
 
 > [!warning]
 >
@@ -46,7 +46,7 @@ Pour chiffrer un mot de passe, créez un fichier PHP **« crypt.php »** dans [l
 
 ```bash
 <?php
-php echo crypt('mot_de_passe_à_chiffrer');
+echo crypt('mot_de_passe_à_chiffrer');
 ?>
 ```
 
