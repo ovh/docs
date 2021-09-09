@@ -50,6 +50,11 @@ Puesto que las instantáneas solo se pueden activar de una en una, se debe elimi
 
 Si está seguro de que desea restablecer su servidor virtual privado (VPS) al estado de la instantánea, haga clic en `Restaurar la instantánea`{.action} y confirme la acción de restauración en la ventana emergente.
 
+> [!alert]
+> 
+> Tenga en cuenta que, al restaurar un VPS a partir de un snapshot, el snapshot se eliminará. Si desea conservar la misma instantánea, debe tomar una nueva antes de realizar cambios en el sistema restaurado.
+>
+
 ### Buenas prácticas para la creación de un snapshot
 
 #### Configuración del software QEMU en un VPS

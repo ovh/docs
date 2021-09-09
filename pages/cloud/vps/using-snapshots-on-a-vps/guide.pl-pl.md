@@ -50,6 +50,11 @@ Ponieważ jednocześnie może być aktywna tylko jedna migawka, przed utworzenie
 
 Jeśli na pewno chcesz zresetować status prywatnego serwera wirtualnego do stanu z migawki, kliknij pozycję `Przywróć migawkę`{.action} i potwierdź zadanie przywracania w wyświetlonym oknie.
 
+> [!alert]
+>
+> Pamiętaj, że przywrócenie systemu ze snapshota spowoduje usunięcie samego shapshota. Jeśli chcesz zachować tę samą migawkę, musisz wykonać nową przed wprowadzeniem zmian w przywróconym systemie.
+>
+
 ### Dobre praktyki dotyczące tworzenia migawek
 
 #### Konfiguracja agenta QEMU na serwerze VPS

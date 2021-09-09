@@ -50,6 +50,11 @@ Dal momento che puoi ottenere l’attivazione di un solo snapshot alla volta, qu
 
 Se sei certo che desideri ripristinare il tuo VPS allo stato dello snapshot, clicca su `Ripristina lo snapshot`{.action} e conferma il ripristino nella finestra popup.
 
+> [!alert]
+>
+> Ricorda che quando ripristina un VPS da un'istantanea, quest'ultima verrà eliminata. Per conservare la stessa istantanea, è necessario ripeterne una prima di apportare modifiche al sistema ripristinato.
+>
+
 ### Best practice per la creazione di uno Snapshot
 
 #### Configurazione del software QEMU su un VPS

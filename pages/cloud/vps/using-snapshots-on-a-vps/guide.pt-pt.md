@@ -50,6 +50,11 @@ Uma vez que apenas é permitido ter um snapshot ativado de cada vez, o snapshot 
 
 Se tem a certeza que pretende restaurar o estado do seu alojamento VPS de acordo com o snapshot, clique em `Restaurar snapshot`{.action} e confirme na janela de pop-up.
 
+> [!alert]
+>
+> Tenha em atenção que quando restaurar um VPS a partir de um instantâneo, este será eliminado. Se deseja conservar a mesma imagem, deve tomar uma nova antes de efetuar modificações no sistema restaurado.
+>
+
 ### Boas práticas para a criação de uma snapshot
 
 #### Configuração do agente QEMU num VPS

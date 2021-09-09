@@ -48,7 +48,12 @@ Da immer nur ein Snapshot aktiviert sein kann, muss der vorhandene Snapshot gel�
 
 ![snapshotvps](images/snapshot_vps_step2.png){.thumbnail}
 
-Wenn Sie sicher sind, dass Sie Ihren VPS auf den Stand des Snapshots zurücksetzen möchten, klicken Sie auf `Snapshot wiederherstellen`{.action} und bestätigen Sie die Aktion im Popup-Fenster. Dabei ist zu beachten, das der Snapshot im Zuge der Wiederherstellung gelöscht wird.
+Wenn Sie sicher sind, dass Sie Ihren VPS auf den Stand des Snapshots zurücksetzen möchten, klicken Sie auf `Snapshot wiederherstellen`{.action} und bestätigen Sie die Aktion im Popup-Fenster. 
+
+> [!alert]
+>
+> Dabei ist zu beachten, das der Snapshot im Zuge der Wiederherstellung gelöscht wird. Wenn Sie denselben Schnappschuss behalten möchten, müssen Sie einen neuen Schnappschuss verwenden, bevor Sie Änderungen am wiederhergestellten System vornehmen.
+>
 
 ### Optimale Vorgehensweise zur Snapshot-Erstellung
 
