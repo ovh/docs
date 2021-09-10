@@ -56,7 +56,7 @@ Connectez-vous en [FTP](../connexion-espace-stockage-ftp-hebergement-web/) à vo
 > Nous vous recommandons de vous rapprocher de l’éditeur du [CMS](../modules-en-1-clic/) ou de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous souhaitez obtenir de l’aide pour réaliser les manipulations sur ce fichier.
 >
 
-Vérifiez ensuite la correspondance exacte entre les identifiants de connexion à [PhpMyAdmin](/exportation-bases-donnees/#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin_1) (Vérifiez simplement si les identifiants indiqués et le mot de passe vous permettent d'ouvrir cette interface) et ceux du fichier de configuration de votre site.
+Vérifiez ensuite la correspondance exacte entre les identifiants de connexion à [PhpMyAdmin](../exportation-bases-donnees/#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin_1) (Vérifiez simplement si les identifiants indiqués et le mot de passe vous permettent d'ouvrir cette interface) et ceux du fichier de configuration de votre site.
 
 Changez, si nécessaire, le [mot de passe de votre base de données](../modifier-mot-de-passe-base-de-donnees/).
 
@@ -125,20 +125,29 @@ Vous pouvez également migrer vos données sur une nouvelle base :
 
 #### Méthode 3 : supprimer les données inutiles
 
-Vous pouvez enfin vous [connecter à votre interface PhpMyAdmin](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin_1), afin de supprimer les données inutiles dans votre base puis relancer le calcul du quota utilisé  depuis l'onglet `Bases de données`{.action} de l'hébergement concerné.
+Après avoir effectué une [sauvegarde de votre base de données](), vous pouvez enfin vous [connecter à votre interface PhpMyAdmin](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin_1), afin de supprimer les données inutiles dans votre base puis relancer le calcul du quota utilisé  depuis l'onglet `Bases de données`{.action} de l'hébergement concerné.
 
-> [!alert]
+> [!warning]
 >
 > Cette opération nécessite de fortes compétences techniques et nous vous conseillons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) pour la réaliser.
 >
 
+#### Méthode 3 : Optimiser votre base de données
+
+Pour optimiser votre base de données, suivez les instructions de ce [guide](/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) puis relancer le calcul du quota utilisé  depuis l'onglet `Bases de données`{.action} de l'hébergement concerné en cliquant sur le bouton `...`{.action} concerné.
+
+> [!warning]
+>
+> Si les conseils fournis sur l'optimisation de votre base de données ne suffisaient pas à débloquer l'accès à votre site, nous vous conseillons de contacter notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+>
+
 ### Dépassements de la mémoire RAM
 
-Le message suivant dans la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) indique que votre serveur [SQL privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml) ou [CloudDB](https://www.ovh.com/fr/cloud-databases/) a été trop sollicité par les sites de vos hébergements : 
+Le message suivant dans la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) indique que votre serveur [SQL privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml) ou [CloudDB](https://www.ovh.com/fr/cloud-databases/) a été trop sollicité par les sites de vos hébergements :
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](../configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee) disponible depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) (Dans l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`)
+Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](../configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans l'onglet  cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
 
 Vous pouvez également optimiser les performances de votre site en suivant les instructions de ce [guide](../optimisation-performances-site/).
 
@@ -147,9 +156,23 @@ Vous pouvez également optimiser les performances de votre site en suivant les i
 > Si vous rencontrez des difficultés à diminuer l'utilisation des ressources de votre serveur de bases de données et que vous ne souhaitez pas les augmenter, nous vous conseillons de contacter notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
-### Erreurs import / export de bases de données
+### Erreurs d'import de bases de données
 
-### Impossible d'accéder à PhpMyAdmin - « Access denied for user »
+#### #1044 - Access denied for user
+
+Assurez-vous tout d'abord que votre base de données est bien vide avant de lancer l'import. Au besoin, relancez le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de l'hébergement concerné. Vous pouvez également cocher la case `Vider la base de données actuelle`{.action} juste avant de [lancer l'import](../mutualise-guide-importation-dune-base-de-donnees-mysql/#importer-votre-propre-sauvegarde-depuis-lespace-client) :
+
+![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+
+https://csm.ovh.tools/kb_view.do?sys_kb_id=c6c017f10026acd01e110e5612445f7a
+
+#### #2006 - MySQL server has gone away
+
+Erreurs similaires : 
+ERROR 1062 (23000) at line 1: Duplicate entry '982722-0' for key ‘PRIMARY’
+ERROR 1053 (08S01) at line 5: Server shutdown in progress
+
+### Impossible d'accéder à PhpMyAdmin - « #1045 - Access denied for user »
 
 ### Impossible d'accéder à PhpMyAdmin - too many connections
 
