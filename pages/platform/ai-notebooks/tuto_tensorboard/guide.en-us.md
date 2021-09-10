@@ -5,7 +5,8 @@ excerpt: How to use tensoboard inside AI Notebooks
 section: Tutorials
 order: 2
 ---
-*Last updated 9th of September, 2021.*
+
+**Last updated 9th September 2021**
 
 ## Objective
 
@@ -21,13 +22,11 @@ The tutorial presents a simple example of launching **TensorBoard** in a noteboo
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
--   an AI Notebooks project created inside a Public Cloud project
--   a user for AI Notebooks
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- an AI Notebooks project created inside a Public Cloud project
+- a user for AI Notebooks
 
 ## Instructions
-
-Follow the instructions below.
 
 ### Launch and access Jupyter notebook
 
@@ -73,10 +72,10 @@ A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-tr
 
 ### How to use TensorBoard with AI training ?
 
-If you want to launch TensorBoard in a job, please refer to this [documentation](../../tuto-tensorboard-inside-job).
+If you want to launch TensorBoard in a job, please refer to this [documentation](https://docs.ovh.com/us/en/ai-training/tuto-tensorboard-inside-job).
 
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
