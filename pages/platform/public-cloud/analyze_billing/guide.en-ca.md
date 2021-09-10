@@ -1,5 +1,5 @@
 ---
-title: 'Information regarding cloud billing options'
+title: 'Information regarding Public Cloud billing options'
 slug: information-on-cloud-billing-options
 excerpt: 'Find out more about the different billing options for Public Cloud products'
 section: 'Project management'
