@@ -5,7 +5,8 @@ excerpt: How to use wandb in notebooks
 section: Tutorials
 order: 1
 ---
-*Last updated 9th of September, 2021.*
+
+**Last updated 9th September 2021**
 
 ## Objective
 
@@ -19,22 +20,20 @@ This tutorial presents two examples of using Weights & Biases. The first noteboo
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca);
--   a Public Cloud project created;
--   a Public Cloud user with the ability to start AI Notebooks;
--   a Weights & Biases account, you can create it on their [website](https://wandb.ai/site). It's Free for individuals.
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca);
+- a Public Cloud project created;
+- a Public Cloud user with the ability to start AI Notebooks;
+- a Weights & Biases account, you can create it on their [website](https://wandb.ai/site). It's Free for individuals.
 
 ## Instructions
 
 ### Launch and access a Jupyter notebook
 
-The first step will consiste of creating a Jupyter Notebook with OVHcloud AI Notebooks.
+The first step will consist of creating a Jupyter Notebook with OVHcloud AI Notebooks.
 
-If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), just follow this \[guide\]\[OVH Notebooks\] and select the TensorFlow or PyTorch image, with Jupyter interface. GPU compute is preferred for the PyTorch example required lot of compute power.
+First, you have to install the OVHAI CLI then just choose the name of the notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
 
-If you want to launch it with the CLI, you have first to install the OVHAI CLI then just choose the name of the notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
-
--   TensorFlow image docker:
+- TensorFlow image docker:
 
 ``` {.bash}
 ovhai notebook run tensorflow jupyterlab \
@@ -42,7 +41,7 @@ ovhai notebook run tensorflow jupyterlab \
     --gpu <nb-gpus>
 ```
 
--   PyTorch image docker:
+- PyTorch image docker:
 
 ``` {.bash}
 ovhai notebook run pytorch jupyterlab \
@@ -70,11 +69,11 @@ git clone https://github.com/ovh/ai-training-examples.git
 
 Once the repository has been cloned, find the notebook of your choice.
 
--   The notebook using TensorFlow and Weights & Biases is based on the MNIST dataset. To access it, follow this path:
+- The notebook using TensorFlow and Weights & Biases is based on the MNIST dataset. To access it, follow this path:
 
 `ai-training-examples` > `notebooks` > `tensorflow` > `tuto` > `notebook_Weights_and_Biases_MNIST.ipynb`
 
--   The notebook using PyTorch and Weights & Biases is based on YOLOv5 and the COCO dataset. To access it, follow this path:
+- The notebook using PyTorch and Weights & Biases is based on YOLOv5 and the COCO dataset. To access it, follow this path:
 
 `ai-training-examples` > `notebooks` > `pytorch` > `tuto` > `notebook_Weights_and_Biases_yolov5.ipynb`
 
@@ -84,7 +83,7 @@ Instructions are directly shown inside the notebooks. You can run them with the 
 
 The aim of this tutorial is to show how it is possible, thanks to Weights & Biases, to compare the results of trainings according to the chosen hyperparameters.
 
-You can for example display the accuracy and loss curves for your valid and train data. These metrics will be displayed for each epoch of each training.
+For example, you can display the accuracy and loss curves for your valid and train data. These metrics will be displayed for each epoch of each training.
 
 ![image](images/valid_train_metrics_mnist_wandb.png){.thumbnail}
 
@@ -100,7 +99,7 @@ A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-tr
 
 #### Notebook using PyTorch and Weights & Biases is based on YOLOv5 and the COCO dataset
 
-The aim of this tutorial is to show how Weights & Biases can be used with the YOLOv5 real-time object detection framework. In oder to achieve this, the YOLOv5 s, m, l and x models performance will be compare on the COCO dataset for the same number of epochs.
+The aim of this tutorial is to show how Weights & Biases can be used with the YOLOv5 real-time object detection framework. In order to achieve this, the YOLOv5 s, m, l and x models performance will be compared on the COCO dataset for the same number of epochs.
 
 ![image](images/loss_train_valid_yolov5_wandb.png){.thumbnail}
 
@@ -124,4 +123,4 @@ You can use it directly on OVHcloud AI Notebooks in few minutes.
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
