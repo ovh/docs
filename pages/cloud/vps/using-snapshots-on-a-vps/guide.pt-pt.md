@@ -6,7 +6,11 @@ section: 'Opções de backup'
 order: 1
 ---
 
-**Última atualização: 29 de julho de 2020**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 10 de setembro de 2021**
 
 
 ## Sumário
