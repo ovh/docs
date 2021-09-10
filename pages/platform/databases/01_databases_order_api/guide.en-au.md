@@ -1,9 +1,9 @@
 ---
-title: How to order a MongoDB database via API
-excerpt: Find out how to order your Public Cloud managed database service using the OVHcloud API
+title: How to order and manage a MongoDB database via API
+excerpt: Find out how to order and manage your Public Cloud managed database service using the OVHcloud API
 slug: order-api
-section: Configuration
-order: 1
+section: MongoDB
+order: 9
 ---
 
 **Last updated September 3<sup>rd</sup>, 2021**
