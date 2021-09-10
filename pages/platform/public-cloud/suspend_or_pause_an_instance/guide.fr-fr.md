@@ -1,9 +1,9 @@
 ---
-Titre : Suspendre ou mettre en pause une instance
-slug : suspendre-ou-mettre-en-pause-une-instance
+title: Suspendre ou mettre en pause une instance
+slug: suspendre-ou-mettre-en-pause-une-instance
 legacy_guide_number: 1781
-section : Gestion de projets
-Commande : 3
+section: Gestion de projets
+order: 3
 ---
 
 **Dernière mise à jour le 10/09/2021**
