@@ -6,7 +6,11 @@ section: 'Opciones de copia de seguridad'
 order: 1
 ---
 
-**Última actualización: 23/09/2020**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 10/09/2021**
 
 
 ## Objetivo
@@ -49,6 +53,11 @@ Puesto que las instantáneas solo se pueden activar de una en una, se debe elimi
 ![snapshotvps](images/snapshot_vps_step2.png){.thumbnail}
 
 Si está seguro de que desea restablecer su servidor virtual privado (VPS) al estado de la instantánea, haga clic en `Restaurar la instantánea`{.action} y confirme la acción de restauración en la ventana emergente.
+
+> [!alert]
+> 
+> Tenga en cuenta que, al restaurar un VPS a partir de un snapshot, el snapshot se eliminará. Si desea conservar la misma instantánea, debe tomar una nueva antes de realizar cambios en el sistema restaurado.
+>
 
 ### Buenas prácticas para la creación de un snapshot
 

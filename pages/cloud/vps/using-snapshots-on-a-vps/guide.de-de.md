@@ -6,7 +6,11 @@ section: 'Backup Optionen'
 order: 1
 ---
 
-**Letzte Aktualisierung am 24.09.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 10.09.2021**
 
 
 ## Ziel
@@ -48,7 +52,12 @@ Da immer nur ein Snapshot aktiviert sein kann, muss der vorhandene Snapshot gel�
 
 ![snapshotvps](images/snapshot_vps_step2.png){.thumbnail}
 
-Wenn Sie sicher sind, dass Sie Ihren VPS auf den Stand des Snapshots zurücksetzen möchten, klicken Sie auf `Snapshot wiederherstellen`{.action} und bestätigen Sie die Aktion im Popup-Fenster. Dabei ist zu beachten, das der Snapshot im Zuge der Wiederherstellung gelöscht wird.
+Wenn Sie sicher sind, dass Sie Ihren VPS auf den Stand des Snapshots zurücksetzen möchten, klicken Sie auf `Snapshot wiederherstellen`{.action} und bestätigen Sie die Aktion im Popup-Fenster. 
+
+> [!alert]
+>
+> Dabei ist zu beachten, dass der Snapshot im Zuge der Wiederherstellung gelöscht wird. Wenn Sie einen identischen Snapshot behalten möchten, ist es notwendig,  einen neuen Snapshot zu erzeugen, bevor Sie Änderungen am wiederhergestellten System vornehmen.
+>
 
 ### Optimale Vorgehensweise zur Snapshot-Erstellung
 
