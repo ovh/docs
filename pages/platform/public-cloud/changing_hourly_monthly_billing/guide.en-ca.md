@@ -6,7 +6,7 @@ section: Project management
 order: 4
 ---
 
-**Last updated 08th September 2021**
+**Last updated 10th September 2021**
 
 ## Objective
 
@@ -41,7 +41,7 @@ You will then need to confirm that you want to change the billing rate:
 
 ![Confirm billing calculation change](images/confirm_to_monthly_updated.png){.thumbnail}
 
-Once you have confirmed your choice, your next bill will include the hourly-rate part of the month (1st of the month until the change) and the pro rata monthly fee for the remaining month.
+Once you have confirmed your choice, you will immediately receive a monthly prorated bill. The next bill will include the hourly-rate part of the month (1st of the month until the change) and the new monthly fee.
 
 
 ## Go further
