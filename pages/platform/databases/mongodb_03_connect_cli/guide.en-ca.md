@@ -3,7 +3,7 @@ title: Connect to MongoDB with CLI
 excerpt: Connect to your Public Cloud Databases for MongoDB using the Command Line Interface (CLI)
 slug: mongodb/connect-cli
 section: MongoDB
-order: 100
+order: 3
 ---
 
 **Last updated 09th September 2021**
