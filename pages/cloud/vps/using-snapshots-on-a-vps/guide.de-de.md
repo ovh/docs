@@ -56,7 +56,7 @@ Wenn Sie sicher sind, dass Sie Ihren VPS auf den Stand des Snapshots zurücksetz
 
 > [!alert]
 >
-> Dabei ist zu beachten, das der Snapshot im Zuge der Wiederherstellung gelöscht wird. Wenn Sie denselben Schnappschuss behalten möchten, müssen Sie einen neuen Schnappschuss verwenden, bevor Sie Änderungen am wiederhergestellten System vornehmen.
+> Dabei ist zu beachten, dass der Snapshot im Zuge der Wiederherstellung gelöscht wird. Wenn Sie einen identischen Snapshot behalten möchten, ist es notwendig,  einen neuen Snapshot zu erzeugen, bevor Sie Änderungen am wiederhergestellten System vornehmen.
 >
 
 ### Optimale Vorgehensweise zur Snapshot-Erstellung
