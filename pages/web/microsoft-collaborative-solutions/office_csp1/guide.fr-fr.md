@@ -23,21 +23,21 @@ Voici la liste des logiciels compris dans la suite:
 
 ## Prérequis
 
-- disposer d'un [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disposer d'un [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
 
-### Commander une licences
+### Commander une licence
 
-Rendez-vous sur notre site [OVHcloud.com](https://www.ovh.com/fr/office-365-business){.external} Dans la rubrique "Outils collaboratifs" de notre section "Web Cloud". vous pouvez également cliquez sur le bouton `Commander`{.action} en haut à gauche de la section `Web Cloud`{.action}, puis `o365`{.action}.
+Rendez-vous sur notre site [OVHcloud.com](https://www.ovh.com/fr/office-365-business){.external} Dans la rubrique "Outils collaboratifs" de notre section "Web Cloud". vous pouvez également cliquer sur le bouton `Commander`{.action} en haut à gauche de la section `Web Cloud`{.action}, puis `o365`{.action}.
 
-- Choissez parmis nos offres disponible à savoir "Apps for business" et "Apps for entreprise"
+- Choisissez parmi nos offres disponibles à savoir "Apps for business" et "Apps for entreprise"
 
 - Définissez la fréquence de renouvellement de votre groupe de licence
 
 - Définissez le nombre de licences que vous souhaitez, puis cliquez sur `Commander`{.action}
 
-Vous serrez redirigez vers la page de commande afin de validez et régler celle-ci. 
+Vous serrez redirigez vers la page de commande afin de valider et régler celle-ci. 
 
 ### Activer votre licence 
 
@@ -47,7 +47,7 @@ Cliquez sur le bouton `...`{.action} devant la licence, puis sur `Editer le comp
 
 ![emails](images/Outlook-cps1-01.png){.thumbnail}
 
-Saisisez les informations relative à l'utilisateur de la licence, cliquez sur `Suivant`{.action}, puis `Valider`{.action}
+Saisissez les informations relatives à l'utilisateur de la licence, cliquez sur `Suivant`{.action}, puis `Valider`{.action}
 
 ![emails](images/Outlook-cps1-02.png){.thumbnail}
 
@@ -55,18 +55,18 @@ Saisisez les informations relative à l'utilisateur de la licence, cliquez sur `
 
 Une fois la licence activée, vous recevez un e-mail sur l'adresse e-mail de contact de votre compte OVHcloud. Vous pouvez également retrouver cet e-mail depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), en cliquant sur votre profil en haut à droite, puis sur  `E-mails de service`{.action} dans la partie `Raccourcis`.
 
-Cet email contient les informations nécessaire au téléchargement et à l'installation de votre suite Microsoft 365, à savoir **l'adresse e-mail d'activation** et le **mot de passe**. 
+Cet e-mail contient les informations nécessaires au téléchargement et à l'installation de votre suite Microsoft 365, à savoir **l'adresse e-mail d'activation** et le **mot de passe**. 
 
 
 >
-> Si vous souhaitez définir vous même le mot de passe, il est de le faire depuis l'espace client. Dans la section `Webcloud`. Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Office`{.action} et sélectionnez le groupe de licence concerné. 
+> Si vous souhaitez définir vous-même le mot de passe, il est de le faire depuis l'espace client. Dans la section `Webcloud`. Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Office`{.action} et sélectionnez le groupe de licence concerné. 
 >
 > Cliquez sur le bouton `...`{.action} devant la licence, puis sur `Changer le mot de passe`{.action}
 >
 >![emails](images/Outlook-cps1-03.png){.thumbnail}
 >
 
-Rendez-vous sur <https://portal.office.com/> et connectez-vous avec **l'adresse e-mail d'activation** et le **mot de passe** précédement configurés. Vous serrez dirigé vers une fenêtre vous permettant de télécharger la suite Microsoft 365 sur votre poste avec les instructions d'installation.
+Rendez-vous sur <https://portal.office.com/> et connectez-vous avec **l'adresse e-mail d'activation** et le **mot de passe** précédemment configurés. Vous serrez dirigé vers une fenêtre vous permettant de télécharger la suite Microsoft 365 sur votre poste avec les instructions d'installation.
 
 ![emails](images/Outlook-cps1-04.png){.thumbnail}
 
