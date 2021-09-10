@@ -72,7 +72,7 @@ Rendez-vous sur <https://portal.office.com/> et connectez-vous avec **l'adresse 
 
 > [!primary]
 >
-> L'utilisateur peut installer la suite office sur 5 machines sur Windows ou macOS, sur 5 tablettes et 5 smartphones 
+> L'utilisateur peut installer la suite Microsoft 365 sur 5 machines sur Windows ou macOS, sur 5 tablettes et 5 smartphones 
 > 
 
 ### Ajouter une licence à un groupe existant
