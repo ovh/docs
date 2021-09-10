@@ -162,15 +162,13 @@ Vous pouvez également optimiser les performances de votre site en suivant les i
 
 Assurez-vous tout d'abord que votre base de données est bien vide avant de lancer l'import. Au besoin, relancez le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de l'hébergement concerné. Vous pouvez également cocher la case `Vider la base de données actuelle`{.action} juste avant de [lancer l'import](../mutualise-guide-importation-dune-base-de-donnees-mysql/#importer-votre-propre-sauvegarde-depuis-lespace-client) :
 
-![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+![database-import-empty](images/database-import-empty.png){.thumbnail}
 
-https://csm.ovh.tools/kb_view.do?sys_kb_id=c6c017f10026acd01e110e5612445f7a
+
 
 #### #2006 - MySQL server has gone away
 
-Erreurs similaires : 
-ERROR 1062 (23000) at line 1: Duplicate entry '982722-0' for key ‘PRIMARY’
-ERROR 1053 (08S01) at line 5: Server shutdown in progress
+
 
 ### Impossible d'accéder à PhpMyAdmin - « #1045 - Access denied for user »
 
