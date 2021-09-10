@@ -164,6 +164,19 @@ Assurez-vous tout d'abord que votre base de données est bien vide avant de lanc
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
+Ce message d'erreur signifie que la base de données que vous tentez d'importer contient des éléments non autorisés sur l'infrastructure mutualisée OVHcloud. Nous vous invitons à contacter notre [communauté d'utilisateurs](https://community.ovh.com) ou un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) à ce sujet.
+
+> [!success]
+>
+> Avoir un « trigger » dans le script d'import de votre base de données n'est pas autorisé sur les hébergements mutualisés. Dans cette situation, importez votre base de données sur un serveur [SQL privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml) ou [CloudDB](https://www.ovh.com/fr/cloud-databases/).
+>
+> La requête suivante n'est également pas autorisée :
+>
+
+```bash
+
+```
+
 
 
 #### #2006 - MySQL server has gone away
