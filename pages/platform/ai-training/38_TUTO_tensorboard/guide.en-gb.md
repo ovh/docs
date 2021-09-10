@@ -5,7 +5,8 @@ excerpt: How to use a tensorboard inside an AI Training Job
 section: Tutorials
 order: 9
 ---
-*Last updated 10th of September, 2021.*
+
+**Last updated 10th September 2021**
 
 ## Objective
 
@@ -21,15 +22,13 @@ The tutorial presents a simple example of launching **TensorBoard** in a job.
 
 ## Requirements
 
--   a working `ovhai` CLI [how to install ovhai CLI](../install-client)
+- a working `ovhai` CLI [how to install ovhai CLI](../install-client)
 
 ## Instructions
 
-Follow the instructions below.
-
 ### Have an object store container where your metric logs are saved
 
-First of all, you must have trained your model and saved your results in an object store container (exemple: `my_tf_metrics` located in Graveline `GRA`).
+First of all, you must have trained your model and saved your results in an object store container (exemple: `my_tf_metrics` located in Gravelines `GRA`).
 
 Alternatively, you can have a job already `RUNNING` that is plugged with that object store container and is writting metric logs inside it (exemple: `my_tf_metrics@GRA:/runs:RW:cache`). In that last case, don't forget the `cache` parameter indicating that the volume is cached and sharable among jobs. More information about volumes configuration in jobs can be found [here](../run-job-cli/#attaching-volumes), information about volume caching can be found [here](../data/#capabilities).
 
@@ -65,7 +64,7 @@ Connect the volume containing your tensorboard metric logs.
 
 > [!primary]
 >
-> `--volume my_tf_metrics@GRA:/runs:RO:cache` indicates that you are connecting the container `my_tf_metrics` from Graveline (**GRA**) Object Store into the `/runs` directory of your job. The **read only** `RO` permission is enough because TensorBoard does not need access on write. The container `my_tf_metrics@GRA` should contains your tensorflow metrics.
+> `--volume my_tf_metrics@GRA:/runs:RO:cache` indicates that you are connecting the container `my_tf_metrics` from Gravelines (**GRA**) Object Store into the `/runs` directory of your job. The **read only** `RO` permission is enough because TensorBoard does not need access on write. The container `my_tf_metrics@GRA` should contain your tensorflow metrics.
 
 Specify the tensorboard launch command.
 
@@ -83,4 +82,4 @@ Once the job is running you can access your TensorBoard directly from the job's 
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
