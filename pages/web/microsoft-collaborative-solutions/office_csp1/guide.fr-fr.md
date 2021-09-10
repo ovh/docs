@@ -21,6 +21,10 @@ Voici la liste des logiciels compris dans la suite:
 
 **Découvez comment souscrire à une licence Micorosft 365 et la gérer dans votre espace client OVHcloud**
 
+## Prérequis
+
+- disposer d'un [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+
 ## En pratique
 
 ### Commander une licences
