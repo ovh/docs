@@ -147,7 +147,7 @@ Se o container estiver configurado como público, pode aceder ao ficheiro atrav�
 https://storage.gra1.cloud.ovh.net/v1/AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29/container1/images/OVHlogo.png
 ```
 
-Este URL é composto por um ponto de terminação, disponível a partir da [interface Horizon](../acesso_e_seguranca_na_interface_horizon/), do nome do seu container e do nome do seu objeto (incluindo o prefixo).
+Este URL é composto por um ponto de terminação, disponível a partir da [interface Horizon](../gestao-a-partir-do-horizon/), do nome do seu container e do nome do seu objeto (incluindo o prefixo).
 
 ### Descarregamento de ficheiros
 
