@@ -21,8 +21,8 @@ order: 3
 ## Requirements
 
 - an [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) on hourly billing
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} or [Horizon interface](https://docs.ovh.com/ca/en/public-cloud/configure_user_access_to_horizon/)
-- Knowledge of [Openstack API](https://docs.ovh.com/ca/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) and [Openstack variables](https://docs.ovh.com/ca/en/public-cloud/set-openstack-environment-variables/)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} or [Horizon interface](https://docs.ovh.com/au/en/public-cloud/configure_user_access_to_horizon/)
+- Knowledge of [Openstack API](https://docs.ovh.com/au/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) and [Openstack variables](https://docs.ovh.com/au/en/public-cloud/set-openstack-environment-variables/)
 
 ## Instructions
 
@@ -87,8 +87,8 @@ To view the snapshot, in the `Compute`{.action} menu, click on `Images`{.action}
 
 Before proceeding, it is recommended that you consult these guides:
 
-- [Prepare the environment to use the OpenStack API](https://docs.ovh.com/ca/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Set OpenStack environment variables](https://docs.ovh.com/ca/en/public-cloud/set-openstack-environment-variables/).
+- [Prepare the environment to use the OpenStack API](https://docs.ovh.com/au/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Set OpenStack environment variables](https://docs.ovh.com/au/en/public-cloud/set-openstack-environment-variables/).
 
 Once your environment is ready, type the following at the command line:
 
