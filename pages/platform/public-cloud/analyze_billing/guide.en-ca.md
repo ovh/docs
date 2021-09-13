@@ -1,12 +1,12 @@
 ---
-title: 'Information regarding cloud billing options'
+title: 'Information regarding Public Cloud billing options'
 slug: information-on-cloud-billing-options
 excerpt: 'Find out more about the different billing options for Public Cloud products'
 section: 'Project management'
 order: 2
 ---
 
-**Last updated 08th September 2021**
+**Last updated 10th September 2021**
 
 ## Objective
 
@@ -21,7 +21,7 @@ This system is similar to the one used by certain telephone operators, where the
 ## Requirements
 
 * a [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/){.external} in your OVHcloud account
-* a [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/){.external}.
+* a [Public Cloud instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/){.external}.
 * access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 
 ## General design
@@ -57,6 +57,8 @@ ie. €20.97.
 >
 > The prices listed here are not contractual, and are only used to provide an example.
 >
+
+## Instructions
 
 ### View your bills
 
@@ -144,23 +146,23 @@ The number of GB per hour corresponds to the maximum number of GB stored over th
 
 The storage prices are available directly on the [OVHcloud website](https://www.ovhcloud.com/en-ca/public-cloud/storage/){.external}.
 
-### Additional volumes
+#### Additional volumes
 
 The additional volumes are simply billed per GB provisioned, with a different price depending on the range.
 
-### Backups of additional volumes
+#### Backups of additional volumes
 
 Backups of additional volumes are billed the same way as the volumes themselves.
 
-### Snapshots of additional volumes
+#### Snapshots of additional volumes
 
 Snapshots of additional volumes are billed the same way as the volumes themselves.
 
-### Instance snapshots and images
+#### Instance snapshots and images
 
 Both snapshots and images of instances (excluding the catalogue of images supplied by OVHcloud) are billed at a flat rate per GB per month, regardless of the original instance and image type. Go to the [pricing page](https://www.ovhcloud.com/en-ca/public-cloud/prices/){.external} to view prices.
 
-### Object storage
+#### Object storage
 
 Two elements are billed for object storage:
 
@@ -179,7 +181,7 @@ Two elements are billed for object storage:
 > to be outgoing traffic.
 >
 
-### Archives
+#### Archives
 
 Three elements are billed for archive storage:
 
