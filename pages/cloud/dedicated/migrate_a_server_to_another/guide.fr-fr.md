@@ -34,13 +34,13 @@ Les besoins évoluant constamment et les gammes OVH évoluant sans cesse, il est
 
 ### Préparer son environnement
 
-La première étape une fois le nouveau serveur en sa possession, sera de créer un environnement (OS, logiciels, sécurisation...) à l'identique du précédent, ou du moins autant que possible.
+La première étape une fois le nouveau serveur livré sur votre compte, sera de créer un environnement (OS, logiciels, sécurisation...) à l'identique du précédent, ou du moins autant que possible.
 
 Dans le cadre de changement de version d'OS ou de logiciel, il faudra s'assurer que les emplacements de fichiers restent les mêmes, ainsi que de la compatibilité des données entre les versions.
 
 ### Migrer les données
 
-La migration des données consiste généralement à copier les fichiers d'un serveur à un autre, pour cela, quelques solutions existent. 
+La migration des données consiste généralement à copier les fichiers d'un serveur à un autre, pour cela, quelques solutions existent : 
 
 1. La plus simple étant d'utiliser un logiciel adapté tel que [SFTP](https://docs.ovh.com/fr/dedicated/deposer-et-recuperer-donnees-via-sftp/).
 
@@ -51,7 +51,7 @@ La migration des données consiste généralement à copier les fichiers d'un se
 L'option Backup Storage vous permet de stocker des données sur un service externalisé à votre serveur. De base, il est lié uniquement au service sur lequel vous l'avez commandé : [Backup Storage](https://www.ovhcloud.com/fr/bare-metal/backup-storage/).
 
 > [!warning]
-> Le stockage de sauvegarde est accessible uniquement depuis les serveurs OVHcloud et les IP localisées dans la même zone. Par exemple, si un serveur situé dans le centre de données SBG dispose d'un espace de stockage de sauvegarde, les serveurs situés dans les centres de données GRA ou RBX peuvent y accéder, mais les serveurs situés dans les centres de données BHS ou WAW ne peuvent pas avoir accès à cet espace de stockage.
+> Le Backup storage est accessible uniquement depuis les serveurs OVHcloud et les IP localisées dans la même zone. Par exemple, si un serveur situé dans le centre de données SBG dispose d'un Backup Storage, les serveurs situés dans les centres de données GRA ou RBX peuvent y accéder. Cepedant, les serveurs situés dans les centres de données BHS ou WAW n’y auront pas accès.
 >
 
 Vous pouvez autoriser l'accès à ce stockage depuis votre nouveau serveur, ainsi, vous disposerez d'une passerelle permettant le transfert de vos données. Référez-vous à notre guide [utiliser backup storage sur un serveur dédié](https://docs.ovh.com/fr/dedicated/services-backup-storage/){.external} pour plus d'informations.
@@ -70,12 +70,12 @@ Une fois que vous en disposerez, il vous suffira de déplacer celles-ci vers le 
 
 
 > [!alert]
-> La suppression du service principal auquel une option a été commandé (Backup Storage, IP failover) entrainant la suppression définitive de ces options.
+> La suppression du service principal auquel une option a été commandé (Backup Storage, IP failover) entraine la suppression définitive de ces options.
 > 
 >Il est donc nécessaire d'effectuer toutes les manipulation avant de supprimer le service.
 > 
 
-Dès que les données sont disponible sur le nouveau serveur, Il sera peut être nécessaire de modifier votre configuration DNS, dans le cas où l'IP principal été utilisé par exemple, plus d'informations via le lien suivant : [Domaines et Dns](https://docs.ovh.com/fr/domains/).
+Dès que les données sont disponible sur le nouveau serveur, Il sera peut être nécessaire de modifier votre configuration DNS dans le cas où l'IP principal été utilisé par exemple. Pour plus d'informations, consulter le lien suivant : [Domaines et Dns](https://docs.ovh.com/fr/domains/).
 
 ## Aller plus loin
  
