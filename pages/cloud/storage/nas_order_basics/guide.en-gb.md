@@ -6,15 +6,15 @@ section: NAS
 order: 01
 ---
 
-**Last updated 31/08/2021**
+**Last updated 31st August 2021**
 
 ## Objective
 
-The Network Attached Storage (NAS) is a file server connected to a network whose main function is the sotcking of data in a centralized volume for heterogeneous network clients.
+Network Attached Storage (NAS) is a file server connected to a network whose main function is the storing of data in a centralised volume for heterogeneous network clients.
 
 ## Requirements
 
-- an IP address attached to an OVHcloud service (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud Instance, etc)
+- an IP address attached to an OVHcloud service (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud instance, etc.)
 - a [HA-NAS solution](https://www.ovh.co.uk/nas/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
@@ -62,7 +62,7 @@ Apart from the snapshots taken automatically, you can create an instant snapshot
 
 ![snapshot](images/nas2021-10.png){.thumbnail}
 
-Name the snapshot and click `Add`{.action}
+Name the snapshot and click `Add`{.action}.
 
 ### Adding an access
 
@@ -70,7 +70,7 @@ In order to access the partition you created earlier, you will need to configure
 
 > [!primary]
 >
-> Only OVHcloud service IP addresses can access your NAS (e.g. a dedicated server, a VPS, a Public Cloud instance, etc.)
+> Only OVHcloud service IP addresses can access your NAS (e.g. a dedicated server, a VPS, a Public Cloud instance, etc.).
 >
 
 To authorise an IP to access the NAS, click on the `...`{.action} button to the right of the existing partition, then on `Manage access`{.action}.
@@ -78,7 +78,7 @@ To authorise an IP to access the NAS, click on the `...`{.action} button to the 
 ![manage access](images/nas2021-06.png){.thumbnail}
 
 Then click `Add an access`{.action}, and select the IP address of your OVHcloud product.
-<br>You must also define whether the authorised access for this IP address is read-only or read-write.
+<br>You must also define whether the authorised access for this IP address is read-only or read/write.
 
 ![add access](images/nas2021-07.png){.thumbnail}
 
@@ -92,16 +92,16 @@ To remove access to a partition, click on the `...`{.action} button to the right
 
 > [!warning]
 >
-> All the default Z File System settings are optimal. Though we do not recommend changing those settings, this menu does allow you to tune the ZFS that the HA-NAS is using.
+> All the default Z File System settings are optimised. Though we do not recommend changing those settings, this menu does allow you to adjust the ZFS that the HA-NAS is using.
 >
 
 To change the ZFS settings of a partition, click on the `...`{.action} button to the right of the partition concerned, then `Z File System (ZFS) settings`{.action}.
 
 ![zfss](images/nas2021-13.png){.thumbnail}
 
-- Disabling access time update (atime): Disabling atime means the ZFS filesystem will no longer update the access times. It could be referred to the last date and time a specific file had bean read on the filesystem level. Disabling atime can help with frequent read operation such as on static web pages but should not be done for uses such as a database.
-- ZFS record size: This property changes the maximum block size on the ZFS filesystem. Please note that ZFS will also use a smaller block size if the file is smaller. For example, a 16KB file will use a 16KB (plus metadata) to not waste storage space. We generally don't recommend to change this option because of this reason.
-- Sync: This changes the behaviour of how the ZFS filesystem will take in data to RAM and/or the drives. We do not recommend changing this unless you know what you're doing.
+- Disabling access time update (atime): Disabling *atime* means the kernel will no longer update the file system timestamp each time a file is accessed. Disabling *atime* can be useful to speed up frequent read operations, for example on static web pages. However, it should not be enabled for consistency-critical applications such as databases.
+- ZFS recordsize: This property changes the maximum block size on the ZFS filesystem. Please note that ZFS will still use a smaller block size if the file is smaller than the maximum. For example, a 16KB file will use a 16KB block (plus metadata) to not waste storage space. We generally advise against changing ZFS recordsize for this reason.
+- Sync: This changes the behaviour of ZFS filesystem transactions with regard to RAM data buffering and writing data to disk. We do not recommend changing this without an appropriate reason.
 
 ### Deleting a partition
 
