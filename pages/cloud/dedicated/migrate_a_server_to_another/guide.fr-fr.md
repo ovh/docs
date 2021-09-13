@@ -51,7 +51,7 @@ La migration des données consiste généralement à copier les fichiers d'un se
 L'option Backup Storage vous permet de stocker des données sur un service externalisé à votre serveur. De base, il est lié uniquement au service sur lequel vous l'avez commandé : [Backup Storage](https://www.ovhcloud.com/fr/bare-metal/backup-storage/).
 
 > [!warning]
-> Le Backup storage est accessible uniquement depuis les serveurs OVHcloud et les IP localisées dans la même zone. Par exemple, si un serveur situé dans le centre de données SBG dispose d'un Backup Storage, les serveurs situés dans les centres de données GRA ou RBX peuvent y accéder. Cepedant, les serveurs situés dans les centres de données BHS ou WAW n’y auront pas accès.
+> Le Backup storage est accessible uniquement depuis les serveurs OVHcloud et les IP localisées dans la même zone. Par exemple, si un serveur situé dans le centre de données SBG dispose d'un Backup Storage, les serveurs situés dans les centres de données GRA ou RBX peuvent y accéder. Cependant, les serveurs situés dans les centres de données BHS ou WAW n’y auront pas accès.
 >
 
 Vous pouvez autoriser l'accès à ce stockage depuis votre nouveau serveur, ainsi, vous disposerez d'une passerelle permettant le transfert de vos données. Référez-vous à notre guide [utiliser backup storage sur un serveur dédié](https://docs.ovh.com/fr/dedicated/services-backup-storage/){.external} pour plus d'informations.
