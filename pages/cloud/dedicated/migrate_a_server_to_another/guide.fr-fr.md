@@ -1,6 +1,7 @@
 ---
 title: Migrer d'un serveur dédié vers un autre
 slug: migrer-un-serveur-dedie-vers-un-autre
+excerpt : Découvrez comment migrer les données d'un serveur dédié vers un autre
 section: Premiers pas
 order: 5
 ---
@@ -41,13 +42,13 @@ Dans le cadre de changement de version d'OS ou de logiciel, il faudra s'assurer 
 
 La migration des données consiste généralement à copier les fichiers d'un serveur à un autre, pour cela, quelques solutions existent. 
 
-1. La plus simple étant d'utiliser un logiciel adapté tel que [SFTP](https://docs.ovh.com/fr/dedicated/deposer-et-recuperer-donnees-via-sftp/)
+1. La plus simple étant d'utiliser un logiciel adapté tel que [SFTP](https://docs.ovh.com/fr/dedicated/deposer-et-recuperer-donnees-via-sftp/).
 
-2. L'autre option est de [synchroniser](https://docs.ovh.com/fr/dedicated/copier-donnees-serveur-rsync/) les deux serveurs entres-eux. 
+2. L'autre option est de [Synchroniser](https://docs.ovh.com/fr/dedicated/copier-donnees-serveur-rsync/) les deux serveurs entres-eux. 
 
 ### Utiliser le backup storage (disponible uniquement sur OVHcloud et Soyoustart)
 
-L'option Backup Storage vous permet de stocker des données sur un service externalisé à votre serveur. De base, il est lié uniquement au service sur lequel vous l'avez commandé : [Backup Storage](https://www.ovhcloud.com/fr/bare-metal/backup-storage/)
+L'option Backup Storage vous permet de stocker des données sur un service externalisé à votre serveur. De base, il est lié uniquement au service sur lequel vous l'avez commandé : [Backup Storage](https://www.ovhcloud.com/fr/bare-metal/backup-storage/).
 
 > [!warning]
 > Le stockage de sauvegarde est accessible uniquement depuis les serveurs OVHcloud et les IP localisées dans la même zone. Par exemple, si un serveur situé dans le centre de données SBG dispose d'un espace de stockage de sauvegarde, les serveurs situés dans les centres de données GRA ou RBX peuvent y accéder, mais les serveurs situés dans les centres de données BHS ou WAW ne peuvent pas avoir accès à cet espace de stockage.
@@ -65,7 +66,7 @@ Vous pouvez autoriser l'accès à ce stockage depuis votre nouveau serveur, ains
 
 Il est fortement conseillé d'utiliser des IP failovers si la réputation de vos IPs est importante afin de pouvoir garder celles-ci même en cas de migration.
 
-Une fois que vous en disposerez, il vous suffira de déplacer celles-ci vers le nouveau serveur : [déplacer une IP Fail Over](https://docs.ovh.com/fr/dedicated/ip-fo-move/)
+Une fois que vous en disposerez, il vous suffira de déplacer celles-ci vers le nouveau serveur : [Déplacer une IP Fail Over](https://docs.ovh.com/fr/dedicated/ip-fo-move/).
 
 
 > [!alert]
@@ -74,7 +75,7 @@ Une fois que vous en disposerez, il vous suffira de déplacer celles-ci vers le 
 >Il est donc nécessaire d'effectuer toutes les manipulation avant de supprimer le service.
 > 
 
-Dès que les données sont disponible sur le nouveau serveur, Il sera peut être nécessaire de modifier votre configuration DNS, dans le cas où l'IP principal été utilisé par exemple, plus d'informations via le lien suivant : [domaines et dns](https://docs.ovh.com/fr/domains/)
+Dès que les données sont disponible sur le nouveau serveur, Il sera peut être nécessaire de modifier votre configuration DNS, dans le cas où l'IP principal été utilisé par exemple, plus d'informations via le lien suivant : [Domaines et Dns](https://docs.ovh.com/fr/domains/).
 
 ## Aller plus loin
  
