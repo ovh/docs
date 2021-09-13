@@ -31,15 +31,15 @@ order: 3
 > These manipulations still result in the instance being billed as long as the instance is not deleted.
 >
 
-Please take note of the following before proceeding:
+The table below allows you to differentiate the options available on your instances. Continue reading this guide by clicking on the option of your choice.
 
 |Term|Description|Billing|
 |---|---|---|
-|Shelve|Retains the resources and data in your disk by creating a snapshot, all other resources are released.|You are only billed for the snapshot.|
-|Pause|Stores the state of the VM in RAM, a paused instance becomes frozen.|You will still be billed the same price for your instance.|
-|Suspend|Stores the VM state on disk, the resources dedicated to instance are still reserved.|You will still be billed the same price for your instance.|
+|[Shelve](#shelve-instance)|Retains the resources and data in your disk by creating a snapshot, all other resources are released.|You are only billed for the snapshot.|
+|[Suspend)](#stop-suspend-instance)|Stores the VM state on disk, the resources dedicated to instance are still reserved.|You will still be billed the same price for your instance.|
+|[Pause](#pause-instance)|Stores the state of the VM in RAM, a paused instance becomes frozen.|You will still be billed the same price for your instance.|
 
-### Shelve (suspend) an instance
+### Shelve (suspend) an instance <a name="shelve-instance"></a>
 
 This option will allow you to release the resources dedicated to your Public Cloud instance, but the IP address will remain. The data on your local disk will be stored in a snapshot automatically created once the instance is shelved. Data stored in the memory and elsewhere will not be retained.
 
@@ -65,7 +65,7 @@ To view the snapshot, go to the left side menu and click on `Instance Backup`{.a
 
 #### From the Horizon Interface
 
-To proceed, you need to [Configure user access to Horizon](../configure_user_access_to_horizon/) and [log in to the Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+To proceed, you need to [configure user access to Horizon](../configure_user_access_to_horizon/) and [log in to the Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
 
 If you have deployed instances in different regions, make sure you are in the correct region. You can verify this on the top left corner in the Horizon interface.
 
@@ -100,16 +100,16 @@ openstack server shelve <UUID server>
 nova shelve <UUID server> 
 ```
 
+### Unshelve (reactivate) an instance
+
+This option will allow you to re-up your instance so that you can continue using it. Please note that once this is done, the billing will resume normally.
+
 > [!alert] **Actions on the snapshot**
 >
 > Any actions on the snapshot other than *unshelve* can be very dangerous for your infrastructure in case of misuse. Once you *unshelve* an instance, the snapshot is automatically deleted. It is not recommended to deploy a new instance from any snapshot created as a result of shelving(suspending) an instance.
 >
 > OVHcloud is providing you with machines that you are responsible for. We have no access to these machines, and therefore cannot manage them.  You are responsible for your own software and security management. If you experience any issues or doubts when it comes to managing, using or securing your server, we recommend that you contact a specialist service provider.
 >
-
-### Unshelve (reactivate) an instance
-
-This option will allow you to re-up your instance so that you can continue using it. Please note that once this is done, the billing will resume normally.
 
 #### From the OVHcloud Control Panel
 
@@ -143,7 +143,7 @@ Once your environment is ready, type the following at the command line:
 ~$ nova unshelve <UUID server>
 ```
 
-### Suspend (stop) an instance
+### Suspend (stop) an instance <a name="stop-suspend-instance"></a>
 
 This option will allow you to shutdown your instance and store the VM state on disk, the memory will be written to the disk as well.
 
@@ -193,7 +193,7 @@ To unsuspend the instance, type the following at the command line:
 ~$ nova unsuspend <UUID server>
 ```
 
-### Pause an instance
+### Pause an instance <a name="pause-instance"></a>
 
 This action is only possible in the Horizon interface or via the Openstack/Nova API. It allows you to *freeze* your instance.
 
