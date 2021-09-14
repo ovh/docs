@@ -88,6 +88,6 @@ Pour plus d'informations, consultez notre documentation sur les [domaines et DNS
 
 ## Aller plus loin
 
-Pour bénéficier d'une assistance à la migration de votre serveur, nous vous proposons de consulter [nos différentes offres de support](https://www.ovhcloud.com/fr-ca/support-levels/) ou de contacter [notre réseau de partenaires](https://partner.ovhcloud.com/fr-ca/).
+Pour bénéficier d'une assistance à la migration de votre serveur, nous vous proposons de contacter [notre réseau de partenaires](https://partner.ovhcloud.com/fr-ca/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

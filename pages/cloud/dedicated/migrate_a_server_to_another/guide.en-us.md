@@ -85,6 +85,6 @@ For more information, please read our documentation on [domains and Dns](https:/
 
 ## Go further
 
-If you would like assistance migrating your server, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/) or contact [OVHcloud partners](https://partner.ovhcloud.com/en/).
+If you would like assistance migrating your server, please contact [OVHcloud partners](https://partner.ovhcloud.com/en/).
 
 Join our community of users on <https://community.ovh.com/en/>.
