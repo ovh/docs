@@ -1,18 +1,18 @@
 ---
-title: 
-excerpt: 
-slug: 
-section: 
-order: 
+title: Résoudre les erreurs les plus fréquentes liées aux bases de données 
+excerpt: Diagnostiquez les cas les plus courants d'erreurs liées aux bases de données
+slug: erreurs-frequentes-bases-de-donnees
+section: Diagnostic
+order: 4
 ---
 
-**Dernière mise à jour le **
+**Dernière mise à jour le 14/09/2021**
 
 ## Objectif
 
+L'utilisation de vos bases de données peut entraîner un certain nombre d'anomalies sur votre site ou votre espace client OVHcloud.
 
-
-**Découvrez comment .**
+**Découvrez comment résoudre les erreurs liées aux bases de données sur les hébergements mutualisés OVHcloud.**
 
 > [!warning]
 >
@@ -177,11 +177,10 @@ Ce message d'erreur signifie que la base de données que vous tentez d'importer 
 >```
 > Remplacez là par :
 >```bash
->USE `Database-Name`; (Database-name must be the real name of the DB on OVH).
+>USE `Database-Name`;
 >```
+> (`Database-Name` : Indiquez le nom de la base de données indiqué dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 >
-
-
 
 #### #2006 - MySQL server has gone away
 
