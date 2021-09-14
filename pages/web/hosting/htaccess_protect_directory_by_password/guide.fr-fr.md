@@ -1,18 +1,18 @@
 ---
-title: 'Protéger l’accès à la partie Administrateur de votre site par un fichier .htaccess'
+title: 'Protéger l'espace Administrateur de votre site par un fichier .htaccess'
 slug: mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification
 legacy_guide_number: 1968
-excerpt: 'Retrouvez ici les manipulations nécessaires pour protéger l'accès à un repertoire de votre hébergement via une authentification.'
-section: 'Réécriture et authentification'
+excerpt: "Retrouvez ici comment protéger l'accès à l'administration de votre site via une authentification par un fichier .htaccess"
+section: Réécriture et authentification
 ---
 
-**Dernière mise à jour le 09/09/2021**
+**Dernière mise à jour le 14/09/2021**
 
 ## Objectif
 
-Il peut parfois être nécessaire de protéger l'accès à une partie de votre site par des identifiants. Vous pourrez notamment mettre en place un fichier **« .htaccess »** afin de protéger l'accès à l'espace Administrateur de votre site. 
+Il peut parfois être nécessaire de protéger l'accès à une partie de votre site par des identifiants. Vous pourrez notamment mettre en place un fichier **« .htaccess »** afin de protéger l'accès à l'espace d'administration de votre site. 
 
-**Découvrez comment pour protéger l'acces à la partie Administrateur de votre site via une authentification par un fichier « .htaccess ».**
+**Découvrez comment protéger l'acces à la partie Administrateur de votre site via une authentification par un fichier « .htaccess ».**
 
 > [!warning]
 >
@@ -31,18 +31,18 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 
 ### Créer le fichier « .htpasswd »
 
-Connectez-vous à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement et créez un fichier texte **« .htpasswd »**, par exemple, dans le [dossier « racine » contenant les fichiers de votre site](/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
+Connectez-vous à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement et créez un fichier texte **« .htpasswd »** dans le [dossier qui contient les fichiers de votre site](/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
 
 > [!primary]
 >
-> Les fichiers **« .htpasswd »** et **« .htaccess »** n'ont pas forcément besoin d'être dans le **Dossier racine** de votre site ni même au même endroit dans l'arborescence de votre site. Vous pouvez par exemple placer le **« .htpasswd »** à la racine de votre hébergement et l'utiliser pour protéger différents répertoires de votre site, étant donné qu'un seul fichier **« .htpasswd »** peut être utilisé par plusieurs **« .htaccess »**.
+> Les fichiers **« .htpasswd »** et **« .htaccess »** n'ont pas forcément besoin d'être dans le **Dossier racine** de votre site ni même au même endroit dans son arborescence. Vous pouvez par exemple placer le **« .htpasswd »** à la racine de votre hébergement et l'utiliser pour protéger différents répertoires, étant donné qu'un seul fichier **« .htpasswd »** peut être utilisé par plusieurs **« .htaccess »**.
 >
 > Les paramétrages indiqués par un fichier **« .htaccess »** s'appliquent au répertoire où il est installé, ainsi qu'à tous les sous-répertoires.
 >
 
 Ce fichier contiendra la liste des utilisateurs autorisés à se connecter à la partie privée de votre site et leur mot de passe chiffré.
 
-Pour chiffrer un mot de passe, créez un fichier PHP **« crypt.php »** dans [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement et indiquez, par exemple, les lignes suivantes :
+Pour chiffrer un mot de passe, créez un fichier PHP **« crypt.php »** dans [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) contenant les lignes suivantes :
 
 ```bash
 <?php
@@ -50,7 +50,7 @@ echo crypt('mot_de_passe_à_chiffrer');
 ?>
 ```
 
-Connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement, afin d'exécuter ce fichier et de récupérer le mot de passe crypté :
+Connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement afin d'exécuter ce fichier et de récupérer le mot de passe crypté :
 
 ```bash
 php crypt.php
