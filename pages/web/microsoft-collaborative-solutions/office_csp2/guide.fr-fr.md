@@ -1,7 +1,7 @@
 ---
 title: Gérer un groupe de licences Office 365 Revendeur (CSP2) OVHcloud
 slug: commander-et-gerer-un-groupe-de-licences-office-365-revendeur-csp2-ovh
-excerpt: Découvrez comment administrer un groupe de licences Office 365 Revendeur (CSP2) chez OVHcloud
+excerpt: Découvrez comment  souscrire et administrer un service Office 365 Revendeur (CSP2) chez OVHcloud
 section: Office
 order: 3
 ---
@@ -10,9 +10,9 @@ order: 3
 
 ## Objectif
 
-Office 365 Revendeurs (CSP2) est un service vous permettant de bénéficier de différents types de licences Microsoft 365 aux tarifs préférenciels pour les revendres auprès de vos clients.
+Office 365 Revendeurs (CSP2) est un service vous permettant de bénéficier de différents types de licences Microsoft 365 aux tarifs préférentiels afin que vous puissiez les revendre auprès de vos clients.
 
-**Découvrez comment administrer un service Office 365 Revendeur (CSP2) chez OVHcloud.**
+**Découvrez comment  souscrire et administrer un service Office 365 Revendeur (CSP2) chez OVHcloud.**
 
 ## Prérequis
 
@@ -71,7 +71,7 @@ OVHcloud met à disposition un outil facilitant la configuration de la zone DNS 
 Pour réaliser la manipulation, vous devez choisir le domaine concerné dans la liste déroulante puis sélectionner les solutions souhaitées. Nous créerons alors les champs DNS adéquats dans la zone DNS OVHcloud du domaine.
 
 > [!warning]
-> Pour que la configuration soit fonctionnelle, vous devez vous assurez vous utilisez bien les serveurs DNS OVHcloud pour les noms de domaine concernés. N'hésitez pas à vous appuyer de notre guide [Modifier les serveurs DNS d’un nom de domaine OVHcloud](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/).
+> Pour que la configuration soit fonctionnelle, vous devez vous assurer vous utilisez bien les serveurs DNS OVHcloud pour les noms de domaine concernés. N'hésitez pas à vous appuyer de notre guide [Modifier les serveurs DNS d’un nom de domaine OVHcloud](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/).
 
 ![office365](images/sunrise_office365_CSP2_automatic_domain_configuration.png){.thumbnail}
 
