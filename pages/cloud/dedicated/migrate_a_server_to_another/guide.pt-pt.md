@@ -94,6 +94,6 @@ Para mais informações queira ler a nossa documentação sobre [domínios e DNS
 
 ## Saiba mais
 
-Se deseja obter ajuda na migração do seu servidor, contacte os [parceiros da OVHcloud](https://partner.ovhcloud.com/pt/).
+Se deseja obter ajuda na migração do seu servidor, contacte os [a nossa rede de parceiros](https://partner.ovhcloud.com/pt/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

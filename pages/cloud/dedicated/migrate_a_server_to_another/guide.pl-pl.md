@@ -93,6 +93,6 @@ Więcej informacji znajdziesz w naszej dokumentacji dotyczącej [domeny i DNS](h
 
 ## Sprawdź również
 
-Jeśli chcesz uzyskać pomoc w migracji serwera, skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+Jeśli chcesz uzyskać pomoc w migracji serwera, skontaktuj się z [nasza sieć partnerów](https://partner.ovhcloud.com/pl/).
 
 Dołącz do społeczności naszych użytkowników na stronie: <https://community.ovh.com/en/>.
