@@ -1,7 +1,7 @@
 ---
-title: "Migrate data from one dedicated server to another"
+title: Migrate data from one dedicated server to another
 slug: migrate-data-from-one-dedicated-server-to-another
-excerpt : "Find out how to migrate data from one dedicated server to another"
+excerpt : Find out how to migrate data from one dedicated server to another
 section: Getting started
 order: 5
 ---
@@ -21,12 +21,14 @@ As your needs and OVHcloud ranges are constantly evolving, it is sometimes neces
 
 ## Requirements
 
-- Own two dedicated servers (old and new) with the OS installed and accessible in administrator mode
-- System administration skills
+- two dedicated servers (the old one and a new one) with the OS installed
+- administrative access to your servers
+- system administration skills
 
 ## Instructions
 
-> [!warning] Some of the options mentioned in this guide may not be available on your server range, or they may be located in another section in your Control Panel (Kimsufi, SoYouStart).
+> [!warning]
+> Some of the options mentioned in this guide may not be available on your server range, or they may be located in another section in your Control Panel (Kimsufi, So you Start).
 >
 
 ### Preparing your environment
@@ -35,25 +37,27 @@ Once the new server has been delivered to your account, the first step will be t
 
 If an OS or software version change is required, make sure the locations of the files remain the same, as well as the compatibility of the data between versions.
 
-### Migrate the data
+### Migrating the data
 
 Data migration usually involves copying files from one server to another. There are several solutions for this:
 
 - The easiest way is to use a suitable software such as [SFTP](https://docs.ovh.com/ca/en/dedicated/store-retrieve-data-via-sftp/).
 - The other option is to [synchronise the two servers with each other](https://docs.ovh.com/ca/en/dedicated/copy-data-server-rsync/).
 
-### Use the backup storage (available only on OVHcloud and So you Start)
+### Using the backup storage (available only on OVHcloud and So you Start)
 
 With the [Backup Storage](https://www.ovhcloud.com/en-ca/bare-metal/backup-storage/) option, you can store data on a service that is external to your server. It is only linked to the service you ordered it from.
 
-> [!warning] The Backup storage can only be accessed from OVHcloud servers and IPs located in the same zone.
+> [!warning]
 >
-> For example, if a server located in the SBG data center has backup storage, servers located in the GRA or RBX data centers can access it. However, servers located in BHS or WAW data centers will not have access this storage.
+> The Backup Storage can only be accessed from OVHcloud servers and IPs located in the same zone.
+>
+> For example, if a server located in the SBG data center has Backup Storage enabled, servers located in the GRA or RBX data centers can access it. However, servers located in BHS or WAW data centers will not have access to this storage.
 >
 
-You can authorise access to the backup storage from your new server. This way, you will have a gateway for transferring your data.
+You can authorise access to the Backup Storage from your new server. This way, you will have a gateway for transferring your data.
 
-See our guide on [using backup storage on a dedicated server](https://docs.ovh.com/ca/en/dedicated/using-backup-storage/){.external} for more information.
+See our guide on [using Backup Storage on a dedicated server](https://docs.ovh.com/ca/en/dedicated/using-backup-storage/){.external} for more information.
 
 ### Migrating a failover IP (only available on OVHcloud and So you Start)
 

@@ -10,7 +10,7 @@ order: 5
 
 ## Objectif
 
-Vos besoins et les gammes OVHcloud évoluant constamment, il est parfois nécessaire de changer de serveur et donc, de migrer ses données.
+Vos besoins et les gammes OVHcloud évoluant constamment, il est parfois nécessaire de changer de serveur et donc de migrer vos données.
 
 **Ce guide a pour but de centraliser les étapes afin d'effectuer la migration des données d'un serveur à un autre.**
 
