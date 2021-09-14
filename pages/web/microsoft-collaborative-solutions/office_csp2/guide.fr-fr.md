@@ -24,7 +24,7 @@ Office 365 Revendeurs (CSP2) est un service vous permettant de bénéficier de d
 
 Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois connecté, sélectionnez `Sunrise`{.action} dans le bandeau supérieur puis cliquez sur `Office 365 Revendeurs`{.action}.
 
-- Complétez les informations de contact du client final, celles-ci sont demandées pour définir le gestionnaire du groupe de licence s(Tenant) que vous allez créer.
+- Complétez les informations de contact du client final, celles-ci sont demandées pour définir le gestionnaire du groupe de licences (Tenant) que vous allez créer.
 
 > [!primary]
 >
