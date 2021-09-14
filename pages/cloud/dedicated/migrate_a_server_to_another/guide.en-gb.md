@@ -41,12 +41,12 @@ If an OS or software version change is required, make sure the locations of the 
 
 Data migration usually involves copying files from one server to another. There are several solutions for this:
 
-- The easiest way is to use a suitable software such as [SFTP](https://docs.ovh.com/ca/en/dedicated/store-retrieve-data-via-sftp/).
-- The other option is to [synchronise the two servers with each other](https://docs.ovh.com/ca/en/dedicated/copy-data-server-rsync/).
+- The easiest way is to use a suitable software such as [SFTP](https://docs.ovh.com/gb/en/dedicated/store-retrieve-data-via-sftp/).
+- The other option is to [synchronise the two servers with each other](https://docs.ovh.com/gb/en/dedicated/copy-data-server-rsync/).
 
 ### Using the backup storage (available only on OVHcloud and So you Start)
 
-With the [Backup Storage](https://www.ovhcloud.com/en-ca/bare-metal/backup-storage/) option, you can store data on a service that is external to your server. It is only linked to the service you ordered it from.
+With the [Backup Storage](https://www.ovhcloud.com/en-gb/bare-metal/backup-storage/) option, you can store data on a service that is external to your server. It is only linked to the service you ordered it from.
 
 > [!warning]
 >
@@ -57,7 +57,7 @@ With the [Backup Storage](https://www.ovhcloud.com/en-ca/bare-metal/backup-stora
 
 You can authorise access to the Backup Storage from your new server. This way, you will have a gateway for transferring your data.
 
-See our guide on [using Backup Storage on a dedicated server](https://docs.ovh.com/ca/en/dedicated/using-backup-storage/){.external} for more information.
+See our guide on [using Backup Storage on a dedicated server](https://docs.ovh.com/gb/en/dedicated/services-backup-storage/){.external} for more information.
 
 ### Migrating a failover IP (only available on OVHcloud and So you Start)
 
@@ -66,10 +66,10 @@ See our guide on [using Backup Storage on a dedicated server](https://docs.ovh.c
 > The migration of a failover IP between two accounts of different branches is only possible from a So you Start account to OVHcloud. It is not possible to migrate an IP from an OVHcloud account to So you Start.
 >
 
-If the reputation of your IP addresses is important, we strongly recommend using [failover IPs](https://www.ovhcloud.com/en-ca/bare-metal/ip/), as they can be kept if you migrate.
+If the reputation of your IP addresses is important, we strongly recommend using [failover IPs](https://www.ovhcloud.com/en-gb/bare-metal/ip/), as they can be kept if you migrate.
 
 Once you have these IPs, you simply need to move them to the new server.
-To do this, please refer to our dedicated guide: [Moving a failover IP](https://docs.ovh.com/ca/en/dedicated/ip-fo-move/).
+To do this, please refer to our dedicated guide: [Moving a failover IP](https://docs.ovh.com/gb/en/dedicated/ip-fo-move/).
 
 > [!alert] Deleting the original server, on which one or more options have been ordered (Backup Storage, failover IP), will permanently delete these options.
 >
@@ -78,7 +78,7 @@ To do this, please refer to our dedicated guide: [Moving a failover IP](https://
 
 Once the data is available on the new server, you may need to modify your DNS configuration, for example if the primary IP address was used.
 
-For more information, please read our documentation on [domains and Dns](https://docs.ovh.com/ca/en/domains/).
+For more information, please read our documentation on [domains and Dns](https://docs.ovh.com/gb/en/domains/).
 
 ## Go further
 
