@@ -1,6 +1,6 @@
 ---
 title: Databases (Beta)
 slug: publiccloud/databases
-sections: Concepts, Getting started
+sections: General information, MongoDB
 order: 02
 ---

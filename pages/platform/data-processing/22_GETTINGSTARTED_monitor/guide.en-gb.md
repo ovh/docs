@@ -42,45 +42,20 @@ The Apache Spark dashboard for your job will then start automatically.
 
 ### Grafana Dashboard
 
-After you submit a job to the Data Processing platform, follow these steps to monitor your job using a Grafana dashboard. 
+After you submit a job to the Data Processing platform, follow these steps to monitor your job using a Grafana dashboard.
 
 - Find your job in the list of jobs in the Data Processing page in the OVHcloud Manager.
-- Click on the name of the job to open its dashboard. 
-- In the dashboard, click on `Monitor job`{.action} in the **Actions** panel. 
+- Click on the name of the job to open its dashboard.
+- In the dashboard, click on `Monitor job`{.action} in the **Actions** panel.
 
 ![Metrics token](images/token.png){.thumbnail}
 
-- Copy and save the metrics token that is now displayed in the popup. 
-- Open [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login) and login with your OVHcloud account. 
-- Click on the Grafana logo at the upper left corner of the page and from the main menu select `Data Sources`{.action}
-- Click on the `Add data source`{.action} button. 
-- Fill in the fields like in the pictures with the following data: 
-  - Name: Select a name for your data source (for example `My Data Source 1`). 
-  - Type: `Warp10`
-  - URL: `https://warp10.gra1.metrics.ovh.net`
-  - Access: `direct`
+- Copy and save the metrics token that is now displayed in the popup.
+- Open [https://grafana.dataconvergence.ovh.com:3000/d/VhF0A_Gnz/ovhcloud-data-processing-overview?orgId=2](https://grafana.dataconvergence.ovh.com:3000/d/VhF0A_Gnz/ovhcloud-data-processing-overview?orgId=2) and login with your OVHcloud account.
+- Paste the metrics token that you copied and saved before in the `token`{.action} field.
+- You can now select a job ID from the list of all the jobs you have submitted so far to see its Grafana dashboard.
 
-![datasource](images/datasource.png){.thumbnail}
-
-- Click on the `Add`{.action} button. 
-- Click on the `Save & Test`{.action} button. 
-- Click on the Grafana logo at the upper left corner of the page and from the main menu select `Dashboards`{.action} -> `Import`{.action}
-![grafana](images/grafana.png){.thumbnail}
-
-- In the import dashboard page, inside the `Grafana.com Dashboard` textbox write `11844` and click on the `Load`{.action} button. (11844 is the ID of a Grafana template that has been created specifically for Data Processing monitoring)
-
-![grafana import](images/import.png){.thumbnail}
-
-- Write a name for your dashboard 
-- Paste the metrics token that you copied and saved before. 
-- For *datasource*, select `My Data Source 1`{.action} from the menu (Or any other name that you selected for your data source).
-- Click on the `Import`{.action} button to open your dashboard. 
-
-![grafana import](images/import2.png){.thumbnail}
-
-- You can now select a job ID from the list of all the jobs you have submitted so far to see its Grafana dashboard. 
-
-![grafana charts](images/grafanacharts.png){.thumbnail}
+![grafana charts](images/grafanadashboard.png){.thumbnail}
 
 ## Go further
 
