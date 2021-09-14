@@ -10,7 +10,7 @@ order: 4
 
 ## Objectif
 
-L'utilisation de vos bases de données peut entraîner un certain nombre d'anomalies sur votre site ou votre espace client OVHcloud.
+L'utilisation de vos bases de données peut entraîner un certain nombre d'anomalies sur votre site ou votre espace client OVHcloud, ainsi que sur l'interface PhpMyAdmin.
 
 **Découvrez comment résoudre les erreurs liées aux bases de données sur les hébergements mutualisés OVHcloud.**
 
@@ -179,18 +179,34 @@ Ce message d'erreur signifie que la base de données que vous tentez d'importer 
 >```bash
 >USE `Database-Name`;
 >```
-> (`Database-Name` : Indiquez le nom de la base de données indiqué dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+>(`Database-Name` : Indiquez le nom de la base de données indiqué dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 >
 
-#### #2006 - MySQL server has gone away
+#### #2006 - MySQL server has gone away (Uniquement sur les serveurs SQL Privé)
 
+Ce message d'erreur peut apparaître lors de [l'import d'une base de données](../restaurer-importer-base-de-donnees/#2-importer-une-sauvegarde-locale) sur un serveur [SQL Privé](../premiers-pas-avec-sql-prive/). Il est lié la plupart du temps à la quantité trop importante de données à importer ou à un manque d'optimisation des requêtes SQL dans le script d'import.
 
+Pour résoudre cette anomalie, vous pouvez :
+
+- Augmenter la quantité de mémoire vive (RAM), rendez vous sur le serveur SQL privé concerné dans la rubrique « Bases de données » de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur le bouton ... dans la partie RAM, puis Changer la quantité de RAM.
+
+- Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (Pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
+
+- [Optimisez votre base de données](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) puis répétez les opérations d'export / import.
 
 ### Impossible d'accéder à PhpMyAdmin - « #1045 - Access denied for user »
+
+Ce message d'erreur peut apparaître lors de la connexion à votre base de données par [PhpMyAdmin](../exportation-bases-donnees/#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin_1). Elle indique que les identifiants indiqués sont erronés.
+
+![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
+
+Dans cette situation, [vérifiez les identifiants indiqués](../connexion-base-de-donnees-serveur-bdd/#en-pratique) et modifiez si besoin le [mot de passe de votre base de données](../modifier-mot-de-passe-base-de-donnees/).
 
 ### Impossible d'accéder à PhpMyAdmin - too many connections
 
 ### Impossible d'accéder à PhpMyAdmin - « Name or service not known »
+
+![name_or_service_not_known](images/.png){name_or_service_not_known.thumbnail}
 
 ### Connexion impossible depuis l'extérieur de l'infra (CloudDB)
 
