@@ -3,7 +3,7 @@ title: 'Creating SSH keys'
 slug: creating-ssh-keys-dedicated
 excerpt: 'Find out how to create SSH keys for a secure connection to your dedicated server'
 section: 'Getting started'
-order: 4
+order: 3
 ---
 
 **Last updated 8th June 2020**
