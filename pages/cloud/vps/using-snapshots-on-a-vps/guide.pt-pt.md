@@ -6,7 +6,11 @@ section: 'Opções de backup'
 order: 1
 ---
 
-**Última atualização: 29 de julho de 2020**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 10 de setembro de 2021**
 
 
 ## Sumário
@@ -49,6 +53,11 @@ Uma vez que apenas é permitido ter um snapshot ativado de cada vez, o snapshot 
 ![snapshotvps](images/snapshot_vps_step2.png){.thumbnail}
 
 Se tem a certeza que pretende restaurar o estado do seu alojamento VPS de acordo com o snapshot, clique em `Restaurar snapshot`{.action} e confirme na janela de pop-up.
+
+> [!alert]
+>
+> Tenha em atenção que quando restaurar um VPS a partir de um instantâneo, este será eliminado. Se deseja conservar a mesma imagem, deve tomar uma nova antes de efetuar modificações no sistema restaurado.
+>
 
 ### Boas práticas para a criação de uma snapshot
 
