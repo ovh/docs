@@ -14,7 +14,9 @@ As your needs and OVHcloud ranges are constantly evolving, it is sometimes neces
 
 **The purpose of this guide is to centralize the steps for migrating data from one server to another.**
 
-> [!warning] OVHcloud is providing you with services for which you are responsible, with regard to their configuration and security. Since we have no administrative access to your devices, it is your responsibility to manage the software and to ensure they function correctly.
+> [!warning]
+>
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and security. Since we have no administrative access to your devices, it is your responsibility to manage the software and to ensure they function correctly.
 >
 > This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a specialised service provider if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
 >
@@ -28,6 +30,7 @@ As your needs and OVHcloud ranges are constantly evolving, it is sometimes neces
 ## Instructions
 
 > [!warning]
+>
 > Some of the options mentioned in this guide may not be available on your server range, or they may be located in another section in your Control Panel (Kimsufi, So you Start).
 >
 
@@ -61,7 +64,9 @@ See our guide on [using Backup Storage on a dedicated server](https://docs.ovh.c
 
 ### Migrating a failover IP (only available on OVHcloud and So you Start)
 
-> [!warning] The primary IP address of a server cannot be migrated and will be lost in the process.
+> [!warning]
+>
+> The primary IP address of a server cannot be migrated and will be lost in the process.
 >
 > The migration of a failover IP between two accounts of different branches is only possible from a So you Start account to OVHcloud. It is not possible to migrate an IP from an OVHcloud account to So you Start.
 >
@@ -71,7 +76,9 @@ If the reputation of your IP addresses is important, we strongly recommend using
 Once you have these IPs, you simply need to move them to the new server.
 To do this, please refer to our dedicated guide: [Moving a failover IP](https://docs.ovh.com/ie/en/dedicated/ip-fo-move/).
 
-> [!alert] Deleting the original server, on which one or more options have been ordered (Backup Storage, failover IP), will permanently delete these options.
+> [!alert]
+>
+> Deleting the original server, on which one or more options have been ordered (Backup Storage, failover IP), will permanently delete these options.
 >
 > It is therefore necessary to make all the changes before deleting the service.
 >

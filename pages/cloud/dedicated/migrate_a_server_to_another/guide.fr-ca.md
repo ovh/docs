@@ -15,6 +15,7 @@ Vos besoins et les gammes OVHcloud évoluant constamment, il est parfois nécess
 **Ce guide a pour but de centraliser les étapes afin d'effectuer la migration des données d'un serveur à un autre.**
 
 > [!warning]
+>
 > OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d’assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
@@ -28,6 +29,7 @@ Vos besoins et les gammes OVHcloud évoluant constamment, il est parfois nécess
 ## En pratique
 
 > [!warning]
+>
 > Attention, certaines options mentionnées dans ce guide peuvent ne pas être disponibles sur votre gamme de serveur ou se trouver à un autre emplacement dans votre espace client (Kimsufi, SoYouStart).
 >
 
@@ -49,6 +51,7 @@ La migration des données consiste généralement à copier les fichiers d'un se
 L'option [Backup Storage](https://www.ovhcloud.com/fr-ca/bare-metal/backup-storage/) vous permet de stocker des données sur un service externalisé à votre serveur. De base, il est lié uniquement au service sur lequel vous l'avez commandé.
 
 > [!warning]
+>
 > Le Backup storage est accessible uniquement depuis les serveurs OVHcloud et les IP localisées dans la même zone.
 >
 > Par exemple, si un serveur situé dans le centre de données SBG dispose d'un Backup Storage, les serveurs situés dans les centres de données GRA ou RBX peuvent y accéder. Cependant, les serveurs situés dans les centres de données BHS ou WAW n’y auront pas accès.
@@ -61,6 +64,7 @@ Consultez notre guide « [utiliser backup storage sur un serveur dédié](https:
 ### Migrer son IP fail-over (disponible uniquement sur OVHcloud et So you Start)
 
 > [!warning]
+>
 > L'adresse IP principale d'un serveur ne peut être migrée et sera perdue dans le processus.
 >
 > La migration d'une IP failover entre deux comptes de branches différentes n'est possible que d'un compte SYS vers OVHcloud. Il n'est pas possible d'effectuer la migration d'un compte OVHcloud vers So you Start.
@@ -72,6 +76,7 @@ Une fois ces IP en votre possession, il vous suffira de déplacer celles-ci vers
 À cet effet, consultez notre guide dédié : [Déplacer une IP Fail Over](https://docs.ovh.com/ca/fr/dedicated/ip-fo-move/).
 
 > [!alert]
+>
 > La suppression du serveur d'origine, sur lequel une ou plusieurs options ont été commandées (Backup Storage, IP fail-over), entraine la suppression définitive de ces options.
 >
 > Il est donc nécessaire d'effectuer toutes les manipulations avant de supprimer le service.
