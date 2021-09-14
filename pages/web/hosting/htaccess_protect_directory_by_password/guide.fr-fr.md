@@ -110,7 +110,7 @@ Require valid-user
 
 #### Bloquer l'accès à un ou plusieurs fichiers
 
-Pour bloquer l'accès à un ou plusieurs fichiers précis, ajoutez une [directive <Files>](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} dans le **« .htaccess »** :
+Pour bloquer l'accès à un ou plusieurs fichiers précis, ajoutez une [directive « Files »](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} dans le **« .htaccess »** :
 
 ```bash
 <Files test.php>
