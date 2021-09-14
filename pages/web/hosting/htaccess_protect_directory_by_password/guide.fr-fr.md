@@ -40,7 +40,7 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 
 Connectez-vous à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Ouvrez le [« dossier racine » de votre site](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud). Créez un fichier **« crypt.php »**.
 
-![root_folder](images/.png){root_folder.thumbnail}
+![root_folder](images/root_folder.png){.thumbnail}
 
 Ouvrez ou créez le dossier destiné à contenir la partie **« admin »** de votre site. Créez dans ce répertoire un fichier **« .htpasswd »** et un fichier **« .htaccess »**.
 
