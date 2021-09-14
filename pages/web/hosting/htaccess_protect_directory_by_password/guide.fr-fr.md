@@ -1,5 +1,5 @@
 ---
-title: 'Protéger l'espace Administrateur de votre site par un fichier .htaccess'
+title: "Protéger l'espace Administrateur de votre site par un fichier .htaccess"
 slug: mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification
 legacy_guide_number: 1968
 excerpt: "Retrouvez ici comment protéger l'accès à l'administration de votre site via une authentification par un fichier .htaccess"
@@ -29,16 +29,31 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 
 ## En pratique
 
-### Créer le fichier « .htpasswd »
+> [!warning]
+>
+> La solution proposée ici n'est qu'une possibilité technique parmi d'autres pour mettre en place un espace administrateur sur votre site. Vous pouvez également utiliser la fonctionnalité [Module en 1 clic](../modules-en-1-clic/) proposée par [OVHcloud](https://www.ovh.com/fr/).
+>
 
-Connectez-vous à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement et créez un fichier texte **« .htpasswd »** dans le [dossier qui contient les fichiers de votre site](/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
+### Créer l'arborescence
+
+Connectez-vous à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Ouvrez le [« dossier racine » de votre site](/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud). Créez un fichier **« crypt.php »**.
+
+
+
+Ouvrez le dossier contenant la partie **« admin »** de votre site. Créez dans ce répertoire un fichier **« .htpasswd »** et un fichier **« .htpasswd »**.
 
 > [!primary]
 >
 > Les fichiers **« .htpasswd »** et **« .htaccess »** n'ont pas forcément besoin d'être dans le **Dossier racine** de votre site ni même au même endroit dans son arborescence. Vous pouvez par exemple placer le **« .htpasswd »** à la racine de votre hébergement et l'utiliser pour protéger différents répertoires, étant donné qu'un seul fichier **« .htpasswd »** peut être utilisé par plusieurs **« .htaccess »**.
 >
-> Les paramétrages indiqués par un fichier **« .htaccess »** s'appliquent au répertoire où il est installé, ainsi qu'à tous les sous-répertoires.
+> Les paramétrages indiqués par un fichier **« .htaccess »** s'appliquent au répertoire où il est installé ainsi qu'à tous les sous-répertoires.
 >
+
+### Créer le fichier « .htpasswd »
+
+
+
+
 
 Ce fichier contiendra la liste des utilisateurs autorisés à se connecter à la partie privée de votre site et leur mot de passe chiffré.
 
@@ -46,11 +61,12 @@ Pour chiffrer un mot de passe, créez un fichier PHP **« crypt.php »** dans [l
 
 ```bash
 <?php
-echo crypt('mot_de_passe_à_chiffrer');
+echo crypt('mot_de_passe_à_chiffrer_1');
+echo crypt('mot_de_passe_à_chiffrer_2');
 ?>
 ```
 
-Connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement afin d'exécuter ce fichier et de récupérer le mot de passe crypté :
+Connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement afin d'exécuter ce fichier et de récupérer le mot de passe chiffré :
 
 ```bash
 php crypt.php
@@ -60,16 +76,16 @@ php crypt.php
 >
 > Seules les [offres d'hébergement](https://www.ovh.com/fr/hebergement-web/) **Pro2014** et **Performance** permettent une [connexion en SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/).
 >
-> Même si le SSH est conseillé, il vous sera également possible d'exécuter le fichier **« crypt.php »** par votre navigateur Web (Par exemple, en allant sur l'url : **https://mon-domaine.ovh/crypt.php**).
+> Même si le SSH est conseillé, il vous sera également possible d'exécuter le fichier **« crypt.php »** par votre navigateur Web (Par exemple, en allant sur une url du type **https://mon-domaine.ovh/crypt.php**).
 >
-> Pour toute question complémentaire sur la méthode à utiliser pour crypter les mots de passe dans un fichier **« .htpasswd »**, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+> Pour toute question complémentaire sur la méthode à utiliser pour chiffrer les mots de passe dans un fichier **« .htpasswd »**, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 >
 
 Le fichier **« .htpasswd »** devra contenir **une ligne par utilisateur** précisant le nom d'utilisateur et le mot de passe associé :
 
 ```bash
-utilisateur1:mot_de_passe_crypté1
-utilisateur2:mot_de_passe_crypté2
+utilisateur1:mot_de_passe_chiffré_1
+utilisateur2:mot_de_passe_chiffré_2
 ```
 
 ### Créer le fichier « .htaccess »
