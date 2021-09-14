@@ -1,8 +1,8 @@
 ---
-title: "Protéger l'espace Administrateur de votre site par un fichier .htaccess"
+title: "Protéger l'interface d'administration de votre site par un fichier .htaccess"
 slug: mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification
 legacy_guide_number: 1968
-excerpt: "Retrouvez ici comment protéger l'accès à l'administration de votre site via une authentification par un fichier .htaccess"
+excerpt: "Retrouvez ici comment protéger l'accès à l'administration de votre site avec un fichier .htaccess"
 section: Réécriture et authentification
 ---
 
@@ -10,9 +10,9 @@ section: Réécriture et authentification
 
 ## Objectif
 
-Il peut parfois être nécessaire de protéger l'accès à une partie de votre site par des identifiants. Vous pourrez notamment mettre en place un fichier **« .htaccess »** afin de protéger l'accès à l'espace d'administration de votre site. 
+Il peut parfois être nécessaire de protéger l'accès à une partie de votre site par des identifiants. Vous pourrez notamment mettre en place un fichier **« .htaccess »** afin de protéger l'accès à son interface d'administration. 
 
-**Découvrez comment protéger l'acces à la partie Administrateur de votre site via une authentification par un fichier « .htaccess ».**
+**Découvrez comment protéger l'accès à la partie Administrateur de votre site via une authentification par un fichier « .htaccess ».**
 
 > [!warning]
 >
@@ -29,44 +29,42 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 
 ## En pratique
 
-> [!warning]
+> [!primary]
 >
 > La solution proposée ici n'est qu'une possibilité technique parmi d'autres pour mettre en place un espace administrateur sur votre site. Vous pouvez également utiliser la fonctionnalité [Module en 1 clic](../modules-en-1-clic/) proposée par [OVHcloud](https://www.ovh.com/fr/).
 >
+> Pour toute demande sur la création ou la programmation de votre site, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ces sujets.
+> 
 
 ### Créer l'arborescence
 
-Connectez-vous à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Ouvrez le [« dossier racine » de votre site](/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud). Créez un fichier **« crypt.php »**.
+Connectez-vous à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Ouvrez le [« dossier racine » de votre site](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud). Créez un fichier **« crypt.php »**.
 
+![root_folder](images/.png){root_folder.thumbnail}
 
+Ouvrez ou créez le dossier destiné à contenir la partie **« admin »** de votre site. Créez dans ce répertoire un fichier **« .htpasswd »** et un fichier **« .htaccess »**.
 
-Ouvrez le dossier contenant la partie **« admin »** de votre site. Créez dans ce répertoire un fichier **« .htpasswd »** et un fichier **« .htpasswd »**.
+![folder_admin](images/folder_admin.png){.thumbnail}
 
 > [!primary]
 >
-> Les fichiers **« .htpasswd »** et **« .htaccess »** n'ont pas forcément besoin d'être dans le **Dossier racine** de votre site ni même au même endroit dans son arborescence. Vous pouvez par exemple placer le **« .htpasswd »** à la racine de votre hébergement et l'utiliser pour protéger différents répertoires, étant donné qu'un seul fichier **« .htpasswd »** peut être utilisé par plusieurs **« .htaccess »**.
+> Les fichiers **« .htpasswd »** et **« .htaccess »** peuvent être dans des dossiers différents. Un seul fichier **« .htpasswd »** peut être utilisé par plusieurs **« .htaccess »**.
 >
-> Les paramétrages indiqués par un fichier **« .htaccess »** s'appliquent au répertoire où il est installé ainsi qu'à tous les sous-répertoires.
+> Les paramétrages indiqués par un fichier **« .htaccess »** s'appliquent au répertoire où il est installé ainsi qu'à tous ses sous-répertoires.
 >
 
-### Créer le fichier « .htpasswd »
+### Compléter le fichier « crypt.php »
 
-
-
-
-
-Ce fichier contiendra la liste des utilisateurs autorisés à se connecter à la partie privée de votre site et leur mot de passe chiffré.
-
-Pour chiffrer un mot de passe, créez un fichier PHP **« crypt.php »** dans [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) contenant les lignes suivantes :
+Inscrivez dans le fichier **« crypt.php »** créé précédemment les lignes suivantes (à répéter selon le nombre de mots de passe à générer):
 
 ```bash
 <?php
-echo crypt('mot_de_passe_à_chiffrer_1');
-echo crypt('mot_de_passe_à_chiffrer_2');
+echo crypt('mot_de_passe_utilisateur1');
+echo crypt('mot_de_passe_utilisateur2');
 ?>
 ```
 
-Connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement afin d'exécuter ce fichier et de récupérer le mot de passe chiffré :
+Si vous disposez d'un hébergement **Pro2014** ou **Performance**, connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécuter la commande suivante puis récupérer les mots de passe chiffrés :
 
 ```bash
 php crypt.php
@@ -74,28 +72,32 @@ php crypt.php
 
 > [!warning]
 >
-> Seules les [offres d'hébergement](https://www.ovh.com/fr/hebergement-web/) **Pro2014** et **Performance** permettent une [connexion en SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/).
+> Pour des raisons de sécurité, l'utilisation du SSH est conseillé. Toutefois, si vous disposez d'une offre **Kimsufi Web** ou **Perso2014** et que vous ne souhaitez pas [changer d'offre](https://www.ovh.com/fr/hebergement-web/), vous pouvez aussi exécuter le fichier **« crypt.php »** par votre navigateur Web (Par exemple, en allant sur une url du type **https://mon-domaine.ovh/crypt.php**).
 >
-> Même si le SSH est conseillé, il vous sera également possible d'exécuter le fichier **« crypt.php »** par votre navigateur Web (Par exemple, en allant sur une url du type **https://mon-domaine.ovh/crypt.php**).
->
-> Pour toute question complémentaire sur la méthode à utiliser pour chiffrer les mots de passe dans un fichier **« .htpasswd »**, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+> Pour toute question complémentaire sur la méthode à utiliser pour chiffrer les mots de passe dans un fichier **« .htpasswd »**, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
-Le fichier **« .htpasswd »** devra contenir **une ligne par utilisateur** précisant le nom d'utilisateur et le mot de passe associé :
+### Compléter le fichier « .htpasswd »
+
+Le fichier **« .htpasswd »** contient la liste des utilisateurs autorisés à se connecter à l'interface d'administration de votre site et leur mot de passe chiffré.
+
+Inscrivez dans ce fichier **pour chaque utilisateur** une ligne indiquant son identifiant et son mot de passe chiffré :
 
 ```bash
 utilisateur1:mot_de_passe_chiffré_1
 utilisateur2:mot_de_passe_chiffré_2
 ```
 
-### Créer le fichier « .htaccess »
+### Compléter le fichier « .htaccess »
 
-Pour bloquer l'accès à un répertoire complet, créez un fichier texte **« .htaccess »** dans le répertoire à protéger et comportant le code suivant :
+#### Bloquer l'accès à un répertoire complet
+
+Dans le répertoire à protéger, créez un fichier **« .htaccess »** avec le code suivant :
 
 ```bash
-AuthName "Accès Restreint"
+AuthName "Indiquez vos identifiants administrateur"
 AuthType Basic
-AuthUserFile "/home/votre_login_ftp/www/.htpasswd"
+AuthUserFile "/home/votre_login_ftp/dossier_racine/admin/.htpasswd"
 Require valid-user
 ```
 
@@ -103,20 +105,19 @@ Require valid-user
 >
 > Dans cet exemple, il faut remplacer **votre_login_ftp** par votre [identifiant FTP](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter). Vous le trouverez dans la rubrique `Hébergements`{.action}, puis dans l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
 >
-> Pensez également, si besoin, à remplacer dans l'exemple ci-dessous **« www »** par le [dossier « racine » contenant les fichiers de votre site](/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
+> Pensez également, si besoin, à remplacer dans l'exemple ci-dessous **« dossier_racine »** par le nom du [dossier « racine » contenant les fichiers de votre site](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
 >
 
+#### Bloquer l'accès à un ou plusieurs fichiers
 
-### Bloquer l'accès à un ou plusieurs fichiers
-
-Pour bloquer l'accès à un ou plusieurs fichiers précis, il suffit d'ajouter une [directive <Files>](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} (une balise par fichier) dans le **« .htaccess »** :
+Pour bloquer l'accès à un ou plusieurs fichiers précis, ajoutez une [directive <Files>](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} dans le **« .htaccess »** :
 
 ```bash
 <Files test.php>
 
-AuthName "Accès Restreint"
+AuthName "Indiquez vos identifiants"
 AuthType Basic
-AuthUserFile "/home/votre_login_ftp/www/.htpasswd"
+AuthUserFile "/home/votre_login_ftp/dossier_racine/admin/.htpasswd"
 Require valid-user
 
 </Files>
@@ -124,7 +125,9 @@ Require valid-user
 
 > [!warning]
 >
-> Les directives <Files> s'appliquent à l'ensemble des fichiers du même nom ou se terminant par le nom spécifié. Ceci à condition qu'ils soient contenus dans le même répertoire que le **« .htaccess »** ou dans l'un de ses sous-répertoires (Dans l'exemple ci-dessus, la directive <Files> s'appliquerait par exemple sur un fichier **« nouveau_test.php »** contenu dans un sous-répertoire du dossier **« www »**).
+> Vous devrez indiquer une [directive <Files>](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} pour **chaque** fichier à protéger.
+>
+> Les directives <Files> s'appliquent à l'ensemble des fichiers du même nom ou se terminant par le nom spécifié. Ceci à condition qu'ils soient contenus dans le même répertoire que le **« .htaccess »** ou dans l'un de ses sous-répertoires (Dans la configuration indiquée ici, la directive <Files> s'appliquerait par exemple sur un fichier **« nouveau_test.php »** contenu dans un sous-répertoire du dossier **« admin »**).
 >
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
