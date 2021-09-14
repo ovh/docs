@@ -44,7 +44,7 @@ Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace 
 
 ![office365](images/csp2-01.png){.thumbnail}
 
-### Gérer votre service Office 365 Revendeur (CSP2)
+### Gérer votre service Office 365 Revendeur
 
 Une fois le service Office 365 créé et disponible, vous pouvez le gérer depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
