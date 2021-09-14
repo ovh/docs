@@ -172,10 +172,14 @@ Ce message d'erreur signifie que la base de données que vous tentez d'importer 
 >
 > La requête suivante n'est également pas autorisée :
 >
-
-```bash
-
-```
+>```bash
+>CREATE DATABASE IF NOT EXISTS `nom-base-de-donnees` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
+>```
+> Remplacez là par :
+>```bash
+>USE `Database-Name`; (Database-name must be the real name of the DB on OVH).
+>```
+>
 
 
 
