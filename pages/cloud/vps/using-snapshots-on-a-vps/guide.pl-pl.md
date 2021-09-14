@@ -6,7 +6,11 @@ section: 'Opcje kopii zapasowych'
 order: 1
 ---
 
-**Ostatnia aktualizacja: 29-07-2020**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja: 10-09-2021**
 
 
 ## Wprowadzenie
@@ -49,6 +53,11 @@ Ponieważ jednocześnie może być aktywna tylko jedna migawka, przed utworzenie
 ![snapshotvps](images/snapshot_vps_step2.png){.thumbnail}
 
 Jeśli na pewno chcesz zresetować status prywatnego serwera wirtualnego do stanu z migawki, kliknij pozycję `Przywróć migawkę`{.action} i potwierdź zadanie przywracania w wyświetlonym oknie.
+
+> [!alert]
+>
+> Pamiętaj, że przywrócenie systemu ze snapshota spowoduje usunięcie samego shapshota. Jeśli chcesz zachować tę samą migawkę, musisz wykonać nową przed wprowadzeniem zmian w przywróconym systemie.
+>
 
 ### Dobre praktyki dotyczące tworzenia migawek
 
