@@ -64,7 +64,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-r
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc7/aio/deploy/recommended.yaml
 ```
 
-### For Kubernetes 1.20, choose the [latest version](https://github.com/kubernetes/dashboard/releases)
+### For Kubernetes 1.20, choose the [v2.3.1](https://github.com/kubernetes/dashboard/releases/tag/v2.3.1)
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml
