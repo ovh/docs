@@ -5,7 +5,7 @@ excerpt: 'Find out how to add failover IP addresses to your server configuration
 section: 'Network Management'
 ---
 
-**Last updated 2nd September 2021**
+**Last updated 15th September 2021**
 
 ## Objective
 
@@ -31,8 +31,7 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 The following sections contain the configurations for the most commonly used distributions/operating systems.
 
 > [!primary]
->
-Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
+> Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
 > 
 
 ### Debian 10
@@ -44,17 +43,12 @@ First, make a copy of the config file, so that you can revert at any time:
 ```sh
 cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
 ```
-You can now modify the config file:
-
-```sh
-editor /etc/network/interfaces.d/50-cloud-init
-```
 
 #### Step 2: Edit the config file
 
 > [!primary]
->
-Note that the names of the network interfaces in our examples may differ from your own. Please adjust to your appropriate interface names.
+> 
+> Note that the names of the network interfaces in our examples may differ from your own. Please adjust to your appropriate interface names.
 >
 
 You can now modify the config file:
@@ -96,6 +90,7 @@ address FAILOVER_IP2
 netmask 255.255.255.255
 ```
 Or like this:
+
 ```bash
 auto eth0
 iface eth0 inet dhcp
