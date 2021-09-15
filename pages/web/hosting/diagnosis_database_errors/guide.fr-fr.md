@@ -202,11 +202,19 @@ Ce message d'erreur peut apparaître lors de la connexion à votre base de donn�
 
 Dans cette situation, [vérifiez les identifiants indiqués](../connexion-base-de-donnees-serveur-bdd/#en-pratique) et modifiez si besoin le [mot de passe de votre base de données](../modifier-mot-de-passe-base-de-donnees/).
 
-### Impossible d'accéder à PhpMyAdmin - too many connections
+### Impossible d'accéder à PhpMyAdmin - « Too many connections »
+
+Le nombre de connexions actives maximale pour les bases de données livrées avec les hébergements mutualisés (StartSQL) est de 30 et de 50 pour celles des serveurs SQL privé et CloudDB.
+
+Ce message d'erreur apparaît lors de la connexion à PhpMyAdmin lorsque ce nombre de connexions est dépassée.
+
+![too_many_connections](images/too_many_connections.png){.thumbnail}
+
+Dans cette situation, vous devrez [optimiser vos bases de données]()
 
 ### Impossible d'accéder à PhpMyAdmin - « Name or service not known »
 
-![name_or_service_not_known](images/.png){name_or_service_not_known.thumbnail}
+![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
 
 ### Connexion impossible depuis l'extérieur de l'infra (CloudDB)
 
