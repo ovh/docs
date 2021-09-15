@@ -41,7 +41,7 @@ Afin de retrouver votre **login** et votre **domain**, connectez-vous à votre [
 
 ![ligne sip - Login et Domain](images/login-domain1.png){.thumbnail}
 
-Vous retrouvez alors, dans le cadre « Informations SIP », votre **dogin** et votre **domain**.
+Vous retrouvez alors, dans le cadre « Informations SIP », votre **login** et votre **domain**.
 
 ![ligne sip - Login et Domain](images/login-domain2.png){.thumbnail}
 
