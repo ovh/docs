@@ -158,7 +158,7 @@ Vous pouvez également optimiser les performances de votre site en suivant les i
 
 ### Erreurs d'import de bases de données
 
-#### #1044 - Access denied for user
+#### Access denied for user
 
 Assurez-vous tout d'abord que votre base de données est bien vide avant de lancer l'import. Au besoin, relancez le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de l'hébergement concerné. Vous pouvez également cocher la case `Vider la base de données actuelle`{.action} juste avant de [lancer l'import](../mutualise-guide-importation-dune-base-de-donnees-mysql/#importer-votre-propre-sauvegarde-depuis-lespace-client) :
 
@@ -182,7 +182,7 @@ Ce message d'erreur signifie que la base de données que vous tentez d'importer 
 >(`Database-Name` : Indiquez le nom de la base de données indiqué dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 >
 
-#### #2006 - MySQL server has gone away (Uniquement sur les serveurs SQL Privé)
+#### MySQL server has gone away
 
 Ce message d'erreur peut apparaître lors de [l'import d'une base de données](../restaurer-importer-base-de-donnees/#2-importer-une-sauvegarde-locale) sur un serveur [SQL Privé](../premiers-pas-avec-sql-prive/). Il est lié la plupart du temps à la quantité trop importante de données à importer ou à un manque d'optimisation des requêtes SQL dans le script d'import.
 
@@ -194,7 +194,9 @@ Pour résoudre cette anomalie, vous pouvez :
 
 - [Optimisez votre base de données](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) puis répétez les opérations d'export / import.
 
-### Impossible d'accéder à PhpMyAdmin - « #1045 - Access denied for user »
+### Impossible d'accéder à PhpMyAdmin
+
+#### Access denied for user
 
 Ce message d'erreur peut apparaître lors de la connexion à votre base de données par [PhpMyAdmin](../exportation-bases-donnees/#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin_1). Elle indique que les identifiants indiqués sont erronés.
 
@@ -202,19 +204,36 @@ Ce message d'erreur peut apparaître lors de la connexion à votre base de donn�
 
 Dans cette situation, [vérifiez les identifiants indiqués](../connexion-base-de-donnees-serveur-bdd/#en-pratique) et modifiez si besoin le [mot de passe de votre base de données](../modifier-mot-de-passe-base-de-donnees/).
 
-### Impossible d'accéder à PhpMyAdmin - « Too many connections »
+#### Too many connections
 
 Le nombre de connexions actives maximale pour les bases de données livrées avec les hébergements mutualisés (StartSQL) est de 30 et de 50 pour celles des serveurs SQL privé et CloudDB.
 
-Ce message d'erreur apparaît lors de la connexion à PhpMyAdmin lorsque ce nombre de connexions est dépassée.
+Ce message d'erreur apparaît lors de la [connexion à PhpMyAdmin](../connexion-base-de-donnees-serveur-bdd/#en-pratique) lorsque ce nombre de connexions est dépassé.
 
 ![too_many_connections](images/too_many_connections.png){.thumbnail}
 
-Dans cette situation, vous devrez [optimiser vos bases de données]()
+Dans cette situation, vous devrez [optimiser vos bases de données](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) afin de réduire le nombre de connexions actives.
 
-### Impossible d'accéder à PhpMyAdmin - « Name or service not known »
+> [!warning]
+> 
+> Pour toute question sur les manipulations à réaliser afin de réduire le nombre de connexions actives sur votre base de données, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+>
+
+#### Name or service not known
+
+Ce message d'erreur apparaît lors de la [connexion à PhpMyAdmin](../connexion-base-de-donnees-serveur-bdd/#en-pratique) lorsque le nom de serveur renseigné est incorrect.
 
 ![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
+
+Vérifiez le nom du serveur à inscrire dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+> [!success]
+>
+> Si la base à laquelle vous souhaitez vous connecter apparaît dans l'onglet `Bases de données`{.action} de votre hébergement sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), le nom à renseigner est inscrit dans la colonne `Adresse du serveur`.
+>
+> Si vous souhaitez vous connecter à une base de données sur un serveur [SQL privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml) ou [CloudDB](https://www.ovh.com/fr/cloud-databases/), le nom de serveur à renseigner est inscrit dans l'onglet `Informations générales`{.action}, partie `Informations de connexions`{.action}, `SQL`{.action} et dans la rubrique `Nom d'hôte`{.action}.
+> 
+
 
 ### Connexion impossible depuis l'extérieur de l'infra (CloudDB)
 
