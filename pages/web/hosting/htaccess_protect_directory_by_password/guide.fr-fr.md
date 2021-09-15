@@ -57,11 +57,30 @@ Ouvrez ou créez le dossier destiné à contenir la partie **« admin »** de vo
 
 Inscrivez dans le fichier **« crypt.php »** créé précédemment les lignes suivantes (à répéter selon le nombre de mots de passe à générer):
 
-```bash
+```php
 <?php
-echo crypt('mot_de_passe_utilisateur1');
-echo crypt('mot_de_passe_utilisateur2');
-?>
+if (isset($_POST['login']) AND isset($_POST['pass']))
+    {
+        $login = $_POST['login'];
+        $pass_crypte = crypt($_POST['pass']);
+        echo '<p>Copiez cette ligne dans le .htpasswd :<br />' . $login . ':' . $pass_crypte . '</p>';
+    }
+
+else
+    {
+    ?>
+    <p>Entrez un nom d'utilisateur et son mot de passe.</p>
+    <form method="post">
+        <p>
+            Nom d'utilisateur : <input type="text" name="login"><br />
+            Mot de passe : <input type="text" name="pass"><br /><br />
+            <input type="submit" value="Valider">
+        </p>
+    </form>
+     
+    <?php
+    }
+    ?>
 ```
 
 Si vous disposez d'un hébergement **Pro2014** ou **Performance**, connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécuter la commande suivante puis récupérer les mots de passe chiffrés :
