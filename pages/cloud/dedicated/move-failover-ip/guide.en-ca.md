@@ -29,10 +29,10 @@ With this technology, you can switch IP addresses from one solution to another i
 ## Instructions
 
 > [!primary]
-> Moving an IP block between dedicated servers with unique virtual MAC addresses will temporarily suspend these vmacs. They will appear on the new server once the move is completed. On the otherhand, blocks with duplicate virtual MAC addresses cannot be moved, you will be prompted to delete the duplicate vmac on the block to move before you can proceed.
+> When an IP block with unique virtual MAC addresses is moved between servers, the vmacs are temporarily suspended. They will appear on the new server once the move is done. On the otherhand, blocks with duplicate virtual MAC addresses cannot be moved, you will first be prompted to delete the duplicate vmac on the block to move.
 >
  
-
+ 
 ### Moving an IP from the OVHcloud Control Panel
 
 Log in to the [OVHcloud Control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), click on the `Bare Metal Cloud`{.action} menu, then click on the `IP`{.action} section at the bottom of the column on the left of the page.
