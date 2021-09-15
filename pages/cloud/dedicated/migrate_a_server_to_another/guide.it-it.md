@@ -25,7 +25,6 @@ Le esigenze e le gamme OVHcloud si evolvono costantemente ed è quindi necessari
 > Mettiamo questa guida a tua disposizione per aiutarti con le attività più comuni. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 >
 
-
 ## Prerequisiti
 
 - Possedere due server dedicati (il vecchio e il nuovo) con il sistema operativo installato
