@@ -45,7 +45,7 @@ Diese eigens generierte URL erlaubt es, sich erstmals ohne Benutzername und Pass
 
 > [!primary]
 >
-> Wenn der Link bereits abgelaufen ist, verbinden Sie sich bitte mit dem CentOS-Benutzer über SSH mit Ihrem VPS und führen Sie den Befehl "whmlogin" aus, um einen neuen Link zu erzeugen.
+> Wenn der Link bereits abgelaufen ist, verbinden Sie sich mit dem CentOS-Benutzer über SSH mit Ihrem VPS und führen Sie den Befehl "whmlogin" aus, um einen neuen Link zu erzeugen.
 >
 
 #### Schritt 1: Lesen und akzeptieren der cPanel-Nutzungsbedingungen
