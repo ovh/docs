@@ -5,7 +5,7 @@ excerpt: 'So fügen Sie Failover-IPs zu Ihrer Konfiguration hinzu'
 section: 'Netzwerk & IP'
 ---
 
-**Letzte Aktualisierung am 07.09.2018**
+**Letzte Aktualisierung am 16.09.2021**
 
 ## Einleitung
 
@@ -24,6 +24,79 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 
 In dieser Anleitung finden Sie die Konfigurationen für die gängigsten Distributionen.
 
+### Debian 10
+
+#### Schritt 1: Die Quelldatei erstellen
+
+Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
+
+```sh
+cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+```
+
+#### Schritt 2: Die Quelldatei bearbeiten
+
+Sie können nun die Quelldatei ändern:
+
+```sh
+editor /etc/network/interfaces.d/50-cloud-init
+```
+
+Fügen Sie anschließend ein sekundäres Interface hinzu:
+
+```bash
+auto eth0:0
+iface eth0:0 inet static
+address IP_FAILOVER
+netmask 255.255.255.255
+```
+
+Um sicherzustellen, dass das sekundäre Interface aktiviert wird, wenn auch die `eth0` Schnittstelle aktiv ist, fügen Sie die folgende Zeile zur Konfiguration von eth0 hinzu:
+
+```bash
+post-up /sbin/ifconfig eth0:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER
+pre-down /sbin/ifconfig eth0:0 down
+```
+
+Wenn Sie zwei Failover-IPs einrichten, muss die Datei /etc/network/interfaces.d/50-cloud-init wie folgt konfiguriert werden:
+
+```bash
+auto eth0
+iface eth0 inet dhcp
+
+auto eth0:0
+iface eth0:0 inet static
+address FAILOVER_IP1
+netmask 255.255.255.255
+
+auto eth0:1
+iface eth0:1 inet static
+address FAILOVER_IP2
+netmask 255.255.255.255
+```
+Or like this:
+
+```bash
+auto eth0
+iface eth0 inet dhcp
+
+# IPFO 1
+post-up /sbin/ifconfig eth0:0 FAILOVER_IP1 netmask 255.255.255.255 broadcast FAILOVER_IP1
+pre-down /sbin/ifconfig eth0:0 down
+
+# IPFO 2
+post-up /sbin/ifconfig eth0:1 FAILOVER_IP2 netmask 255.255.255.255 broadcast FAILOVER_IP2
+pre-down /sbin/ifconfig eth0:1 down
+```
+
+
+#### Schritt 3: Interface neu starten
+
+Im letzten Schritt starten Sie Ihr Interface neu:
+
+```sh
+/etc/init.d/networking restart
+```
 
 ### Debian 6/7/8 und Derivate
 
