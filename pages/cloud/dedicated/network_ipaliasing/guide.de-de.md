@@ -30,7 +30,7 @@ In dieser Anleitung finden Sie die Konfigurationen für die gängigsten Distribu
 
 ### Debian 10
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -78,7 +78,8 @@ iface eth0:1 inet static
 address FAILOVER_IP2
 netmask 255.255.255.255
 ```
-Or like this:
+
+Alternative:
 
 ```bash
 auto eth0
@@ -96,7 +97,7 @@ pre-down /sbin/ifconfig eth0:1 down
 
 #### Schritt 3: Interface neu starten
 
-Im letzten Schritt starten Sie Ihr Interface neu:
+Im letzten Schritt starten Sie das Interface neu:
 
 ```sh
 /etc/init.d/networking restart
@@ -104,7 +105,7 @@ Im letzten Schritt starten Sie Ihr Interface neu:
 
 ### Debian 6/7/8 und Derivate
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -180,7 +181,7 @@ Im letzten Schritt starten Sie Ihr Interface neu:
 
 Bei diesen Distributionen wurde die Benennung von Interfaces in eth0, eth1... abgeschafft und es wird nun die generische Bezeichnung `systemd-network` verwendet.
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -214,7 +215,7 @@ systemctl restart systemd-networkd
 
 ### CentOS und Fedora (25 und vorherige)
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, um sie als Template verwenden zu können:
 
@@ -252,7 +253,7 @@ ifup eth0:0
 
 ### Gentoo
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -308,7 +309,7 @@ Im letzten Schritt starten Sie Ihr Interface neu:
 
 ### openSUSE
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -329,7 +330,7 @@ LABEL_1=ens32:0
 
 ### cPanel
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -490,7 +491,7 @@ ifconfig
 In unserem Beispiel lautet der Name des Interface **nfe0**.
 
 
-#### Schritt 2: Die Quelldatei erstellen
+#### Schritt 2: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -543,7 +544,7 @@ ifconfig -a
 In unserem Beispiel lautet der Name des Interface **e1000g0**.
 
 
-#### Schritt 2: Die Quelldatei erstellen
+#### Schritt 2: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
