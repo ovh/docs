@@ -59,31 +59,14 @@ Inscrivez dans le fichier **« crypter.php »** créé précédemment les lignes
 
 ```php
 <?php
-if (isset($_POST['login']) AND isset($_POST['pass']))
-    {
-        $login = $_POST['login'];
-        $pass_crypte = crypt($_POST['pass']);
-        echo '<p>Copiez cette ligne dans le .htpasswd :<br />' . $login . ':' . $pass_crypte . '</p>';
-    }
-
-else
-    {
-    ?>
-    <p>Entrez un nom d'utilisateur et son mot de passe.</p>
-    <form method="post">
-        <p>
-            Nom d'utilisateur : <input type="text" name="login"><br />
-            Mot de passe : <input type="text" name="pass"><br /><br />
-            <input type="submit" value="Valider">
-        </p>
-    </form>
-     
-    <?php
-    }
-    ?>
+$mot_de_passe_crypte1 = crypt('motdepasse1');
+$mot_de_passe_crypte2 = crypt('motdepasse2');
+$mot_de_passe_crypte3 = crypt('motdepasse3');
+echo nl2br("$mot_de_passe_crypte1 \n $mot_de_passe_crypte2 \n $mot_de_passe_crypte3");
+ ?>
 ```
 
-Si vous disposez d'un hébergement **Pro2014** ou **Performance**, connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécuter la commande suivante puis récupérer les mots de passe chiffrés :
+Si vous disposez d'un hébergement **Pro2014** ou **Performance**, connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécuter la commande suivante puis récupérer les mots de passe chiffrés (Ne pas copiez le **"<br />"**):
 
 ```bash
 php crypt.php
@@ -91,7 +74,7 @@ php crypt.php
 
 > [!warning]
 >
-> Pour des raisons de sécurité, l'utilisation du SSH est conseillé. Toutefois, si vous disposez d'une offre **Kimsufi Web** ou **Perso2014** et que vous ne souhaitez pas [changer d'offre](https://www.ovh.com/fr/hebergement-web/), vous pouvez aussi exécuter le fichier **« crypter.php »** par votre navigateur Web (Par exemple, en allant sur une url du type **https://mon-domaine.ovh/crypt.php**).
+> Pour des raisons de sécurité, l'utilisation du SSH est conseillé. Toutefois, si vous disposez d'une offre **Kimsufi Web** ou **Perso2014** et que vous ne souhaitez pas [changer d'offre](https://www.ovh.com/fr/hebergement-web/), vous pouvez aussi exécuter le fichier **« crypter.php »** par votre navigateur Web (Par exemple, en allant sur une url du type **https://mon-domaine.ovh/crypter.php**).
 >
 > Pour toute question complémentaire sur la méthode à utiliser pour chiffrer les mots de passe dans un fichier **« .htpasswd »**, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
