@@ -39,9 +39,7 @@ Si la page **« 403 forbidden »** est apparue suite à une modification erroné
 
 Si les sauvegardes disponibles ne vous permettent pas de rétablir l'accès à votre site, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
 
-Dans le cas contraire, consultez votre messagerie. Si vous avez reçu un e-mail de nos services indiquant une fermeture de votre hébergement pour des raisons de sécurité, passez à [l'étape 2](#etape2) :
-
-![mail_blocage](images/mail_blocage.png){.thumbnail}
+Dans le cas contraire, consultez votre messagerie. Si vous avez reçu un e-mail de nos services indiquant une fermeture de votre hébergement pour des raisons de sécurité, passez à [l'étape 2](#etape2).
 
 Si la page **« 403 forbidden »** est apparue sans action de votre part et que vous n'avez pas reçu de mails de nos services à ce sujet, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
 
