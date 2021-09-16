@@ -5,9 +5,13 @@ excerpt: 'So fügen Sie Failover-IPs zu Ihrer Konfiguration hinzu'
 section: 'Netzwerk & IP'
 ---
 
-**Letzte Aktualisierung am 07.09.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
 
-## Einleitung
+**Letzte Aktualisierung am 16.09.2021**
+
+## Ziel
 
 IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der Sie mehrere IP-Adressen auf einem einzigen Netzwerkinterface verknüpfen können.
 
@@ -20,14 +24,88 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 - Sie sind via SSH auf Ihrem Server eingeloggt (Root-Zugriff).
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
 In dieser Anleitung finden Sie die Konfigurationen für die gängigsten Distributionen.
 
+### Debian 10
+
+#### Schritt 1: Die Quelldatei sichern
+
+Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
+
+```sh
+cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+```
+
+#### Schritt 2: Die Quelldatei bearbeiten
+
+Sie können nun die Quelldatei ändern:
+
+```sh
+editor /etc/network/interfaces.d/50-cloud-init
+```
+
+Fügen Sie anschließend ein sekundäres Interface hinzu:
+
+```bash
+auto eth0:0
+iface eth0:0 inet static
+address IP_FAILOVER
+netmask 255.255.255.255
+```
+
+Um sicherzustellen, dass das sekundäre Interface aktiviert wird, wenn auch die `eth0` Schnittstelle aktiv ist, fügen Sie die folgende Zeile zur Konfiguration von eth0 hinzu:
+
+```bash
+post-up /sbin/ifconfig eth0:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER
+pre-down /sbin/ifconfig eth0:0 down
+```
+
+Wenn Sie zwei Failover-IPs einrichten, muss die Datei /etc/network/interfaces.d/50-cloud-init wie folgt konfiguriert werden:
+
+```bash
+auto eth0
+iface eth0 inet dhcp
+
+auto eth0:0
+iface eth0:0 inet static
+address FAILOVER_IP1
+netmask 255.255.255.255
+
+auto eth0:1
+iface eth0:1 inet static
+address FAILOVER_IP2
+netmask 255.255.255.255
+```
+
+Alternative:
+
+```bash
+auto eth0
+iface eth0 inet dhcp
+
+# IPFO 1
+post-up /sbin/ifconfig eth0:0 FAILOVER_IP1 netmask 255.255.255.255 broadcast FAILOVER_IP1
+pre-down /sbin/ifconfig eth0:0 down
+
+# IPFO 2
+post-up /sbin/ifconfig eth0:1 FAILOVER_IP2 netmask 255.255.255.255 broadcast FAILOVER_IP2
+pre-down /sbin/ifconfig eth0:1 down
+```
+
+
+#### Schritt 3: Interface neu starten
+
+Im letzten Schritt starten Sie das Interface neu:
+
+```sh
+/etc/init.d/networking restart
+```
 
 ### Debian 6/7/8 und Derivate
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -103,7 +181,7 @@ Im letzten Schritt starten Sie Ihr Interface neu:
 
 Bei diesen Distributionen wurde die Benennung von Interfaces in eth0, eth1... abgeschafft und es wird nun die generische Bezeichnung `systemd-network` verwendet.
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -137,7 +215,7 @@ systemctl restart systemd-networkd
 
 ### CentOS und Fedora (25 und vorherige)
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, um sie als Template verwenden zu können:
 
@@ -175,7 +253,7 @@ ifup eth0:0
 
 ### Gentoo
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -231,7 +309,7 @@ Im letzten Schritt starten Sie Ihr Interface neu:
 
 ### openSUSE
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -252,7 +330,7 @@ LABEL_1=ens32:0
 
 ### cPanel
 
-#### Schritt 1: Die Quelldatei erstellen
+#### Schritt 1: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -413,7 +491,7 @@ ifconfig
 In unserem Beispiel lautet der Name des Interface **nfe0**.
 
 
-#### Schritt 2: Die Quelldatei erstellen
+#### Schritt 2: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 
@@ -466,7 +544,7 @@ ifconfig -a
 In unserem Beispiel lautet der Name des Interface **e1000g0**.
 
 
-#### Schritt 2: Die Quelldatei erstellen
+#### Schritt 2: Die Quelldatei sichern
 
 Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zum ursprünglichen Zustand zurückkehren können:
 

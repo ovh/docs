@@ -3,6 +3,7 @@ title: NAS-HA
 slug: nas/get-started
 excerpt: Find out how to order and use a NAS-HA.
 section: NAS
+hidden: true
 ---
 
 
