@@ -1,81 +1,93 @@
 ---
-title: Gérer un service Office 365 Revendeur (CSP2) OVH
+title: Gérer un groupe de licences Office 365 Revendeurs (CSP2) OVHcloud
 slug: commander-et-gerer-un-groupe-de-licences-office-365-revendeur-csp2-ovh
-excerpt: Découvrez comment administrer un service Office 365 Revendeur (CSP2) chez OVH
+excerpt: Découvrez comment  souscrire et administrer un service Office 365 Revendeurs (CSP2) chez OVHcloud
 section: Office
 order: 3
 ---
 
-**Dernière mise à jour le 15/12/2017**
+**Dernière mise à jour le 13/09/2021**
 
 ## Objectif
 
-Une licence Office 365 peut être utilisée sur 5 PC/Mac, 5 tablettes et 5 smartphones. Vous disposez constamment de mises à jour, y compris lors des sorties de versions majeures.
+Office 365 Revendeurs (CSP2) est un service vous permettant de bénéficier de différents types de licences Microsoft 365 aux tarifs préférentiels afin que vous puissiez les revendre auprès de vos clients.
 
-**Découvrez comment administrer un service Office 365 Revendeur (CSP2) chez OVH.**
+**Découvrez comment  souscrire et administrer un service Office 365 Revendeurs (CSP2) chez OVHcloud.**
 
 ## Prérequis
-- Disposer d'un identifiant OVH (NIC handle).
-- Être inscrit au programme partenaires **Community Web** via notre site [http://partners.ovh.com/](http://partners.ovh.com/){.external}. 
-- Disposer de licences Office 365 CSP2.
+
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
-### Accéder à la gestion d'un service Office 365 Revendeur
 
-Une fois le service Office 365 créé et disponible, vous pouvez le gérer depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+### Commander un service Office 365 Revendeurs
 
-Pour cela, connectez-vous à ce dernier, puis rendez-vous dans la section `Sunrise`{.action}. Dans le menu de gauche, choisissez `Office 365 Revendeurs`{.action} puis sélectionnez le service.
+Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois connecté, sélectionnez `Sunrise`{.action} dans le bandeau supérieur puis cliquez sur `Office 365 Revendeurs`{.action}.
+
+- Complétez les informations de contact du client final, celles-ci sont demandées pour définir le gestionnaire du groupe de licences (Tenant) que vous allez créer.
 
 > [!primary]
 >
-> Si vous disposez déjà d'un service Office 365 CSP2 chez Microsoft, vous avez la possibilité d'en déléguer l'administration à OVH. Vous pourrez ainsi ajouter des abonnements supplémentaires directement depuis votre espace client OVH. Sur la commande d'un nouveau groupe de licences, vous devrez alors choisir `Délégation d'une plateforme créée au préalable chez Microsoft`{.action}.
+> - Si vous disposez déjà d'un service Office 365 CSP2 chez Microsoft, vous avez la possibilité d'en déléguer l'administration à OVHcloud. Vous pourrez ainsi ajouter des abonnements supplémentaires directement depuis votre espace client OVHcloud. Lors de la commande d'un nouveau groupe de licences, vous devrez alors choisir `Délégation d'une plateforme créée au préalable chez Microsoft`{.action}.
+>
+> - Si vous disposez d'un Microsoft Partner ID, vous pouvez le renseigner depuis cette même interface. Ceci vous permettra d'obtenir un cashback sur les abonnements que vous commanderez via notre espace client. Ce cashback est soumis à des règles définies par Microsoft en fonction des volumes d'abonnements que vous générerez.
 >
 
-Sachez également que si vous disposez d'un Microsoft Partner ID, vous pouvez le renseigner depuis cette même interface. Ceci vous permettra d'obtenir un cashback sur les abonnements que vous commanderez via notre espace client. Ce cashback est soumis à des règles définies par Microsoft en fonction des volumes d'abonnements que vous générerez.
+- Dans la liste en dessous, indiquez les licences que vous souhaitez ajouter à votre groupe.
 
-![office365](images/sunrise_office365_CSP2.png){.thumbnail}
+- Cliquez sur `Commander`{.action} pour finaliser votre commande.
 
-### Visualiser les détails de votre service Office 365 Revendeur (CSP2)
+> [!warning]
+>
+> Veuillez vous assurer de la validité de l'adresse e-mail renseignée lors de la création de votre groupe de licences, car celle-ci recevra les informations d'identification à la plateforme Microsoft.
+>
 
-En cliquant sur le nom de ce dernier dans le menu de gauche, des informations apparaîtront.
+![office365](images/csp2-01.png){.thumbnail}
 
-|Intitulé|Description|
-|---|---|
-|Nom interne du service|Indique le nom de votre service. Cela n'est visible que depuis votre espace client.|
-|Nom d'affichage du service|Permet de personnaliser le nom d'affichage du service dans votre espace client.|
-|Créé le|Indique la date de création du service.|
-|Portail d'administration Microsoft|Indique le lien du portail Office qui permet d'administrer vos abonnements.|
-|Tutoriels en ligne|Adresse d'une formation en ligne (MOOC) Office, afin d'avoir une assistance sur le fonctionnement des différents logiciels de la suite Office 365.|
-|Réinitialiser le mot de passe administrateur|Permet de modifier le mot de passe de connexion au portail d’administration Microsoft.|
+### Gérer votre service Office 365 Revendeur
+
+Une fois le service Office 365 créé et disponible, vous pouvez le gérer depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+
+Pour cela, rendez-vous dans la section `Sunrise`{.action}. Dans le menu de gauche, choisissez `Office 365 Revendeurs`{.action} puis sélectionnez le service.
+
+Les informations suivantes apparaissent:
+
+- **Nom interne du service** : indique le nom de votre service. Cela n'est visible que depuis votre espace client.
+- **Nom d'affichage du service** : permet de personnaliser le nom d'affichage du service dans votre espace client.
+- **Créé le** : indique la date de création du service.
+- **Portail d'administration Microsoft** : lien du portail Office qui permet d'administrer vos abonnements.
+- **Réinitialiser le mot de passe administrateur** : permet de modifier le mot de passe de connexion au portail d’administration Microsoft.
 
 ![office365](images/sunrise_office365_CSP2_services_details.png){.thumbnail}
 
-### Configurer automatiquement un domaine hébergé chez OVH
+### Configurer automatiquement un nom de domaine hébergé chez OVHcloud
 
-OVH met à disposition un outil facilitant la configuration d'un domaine. Grâce à ce dernier, vous pouvez configurer automatiquement vos domaines utilisant la zone DNS OVH afin qu'ils puissent fonctionner avec les solutions suivantes :
+OVHcloud met à disposition un outil facilitant la configuration de la zone DNS de votre nom de domaine. Vous pouvez configurer automatiquement vos noms de domaine utilisant la zone DNS OVHcloud afin qu'ils puissent fonctionner avec les solutions suivantes :
 
-- Exchange Online ;
-- Skype ;
+- Exchange Online;
+- Skype;
 - Intune.
 
-Pour réaliser la manipulation, vous devez choisir le domaine concerné dans la liste déroulante puis sélectionner les solutions souhaitées. Nous créerons alors les champs DNS adéquats dans la zone DNS OVH du domaine.
+Pour réaliser la manipulation, vous devez choisir le domaine concerné dans la liste déroulante puis sélectionner les solutions souhaitées. Nous créerons alors les champs DNS adéquats dans la zone DNS OVHcloud du domaine.
+
+> [!warning]
+> Pour que la configuration soit fonctionnelle, vous devez vous assurer que vous utilisez bien les serveurs DNS OVHcloud pour les noms de domaine concernés. N'hésitez pas à consulter notre guide [Modifier les serveurs DNS d’un nom de domaine OVHcloud](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/).
+>
 
 ![office365](images/sunrise_office365_CSP2_automatic_domain_configuration.png){.thumbnail}
 
-### Gérer les abonnements
+### Gérer vos abonnements
 
-La gestion des abonnements permet de commander ou d'annuler des abonnements à des licences Office 365. Un tableau affiche le détail de vos abonnements actuels.
+La gestion de vos abonnements vous permet d'augmenter ou d'annuler les licences associées à votre groupe d'abonnements. Un tableau vous permet de visualiser les détails:
 
-|Intitulé|Description|
-|---|---|
-|ID|Chaque type de licence commandée dispose d'un identifiant (ID) unique.|
-|Status|Correspond à l'état de votre licence.|
-|Nom de la licence|Indique le type de licence souscrite.|
-|Nombre de licences|Indique le nombre de licences disponibles.|
-|Date de création|Indique la date de création de l'abonnement au type de licence sélectionné.|
-|Dernière mise à jour|Indique la date de dernière mise à jour (comme l'ajout d'une licence par exemple) à l'abonnement.|
+- **ID** : chaque type de licence commandée dispose d'un identifiant (ID) unique.
+- **Status** : correspond à l'état de votre licence.
+- **Nom de la licence** : indique le type de licence souscrite.
+- **Nombre de licences** : indique le nombre de licences disponibles.
+- **Date de création** : indique la date de création de l'abonnement au type de licence sélectionné.
+- **Dernière mise à jour** : indique la date de dernière mise à jour (comme l'ajout d'une licence par exemple) de l'abonnement.
 
-L’icône en forme de crayon permet de modifier le nombre total de licences de l'abonnement. L'icône en forme de corbeille permet de résilier l'abonnement ainsi que toutes ses licences.
+`L’icône en forme de crayon` permet de modifier le nombre total de licences de l'abonnement. `L'icône en forme de corbeille` permet de résilier l'abonnement ainsi que toutes ses licences.
 
 > [!primary]
 >
@@ -86,9 +98,9 @@ L’icône en forme de crayon permet de modifier le nombre total de licences de 
 
 ### Gérer les utilisateurs
 
-Maintenant que vous disposez de licences suffisantes, vous devez gérer les utilisateurs qui utiliseront ces dernières. Cette partie s'effectue directement depuis le [portail d'administration Microsoft](https://portal.office.com/Admin/Default.aspx){.external}.
+Maintenant que vous disposez d'un nombre de licences suffisant, vous devez gérer les utilisateurs qui utiliseront ces dernières. Cette partie s'effectue directement depuis le [portail d'administration Microsoft](https://portal.office.com/Admin/Default.aspx){.external}.
 
-Pour vous y connecter, vous devez renseigner votre identifiant ainsi que le mot de passe envoyé dans l'e-mail OVH vous confirmant l'installation de votre groupe de licences.
+Pour vous y connecter, vous devez renseigner votre identifiant ainsi que le mot de passe envoyé dans l'e-mail OVHcloud vous confirmant l'installation de votre groupe de licences. Ces informations sont envoyées à l'adresse renseignée lors de la création du groupe de licences.
 
 ## Aller plus loin
 

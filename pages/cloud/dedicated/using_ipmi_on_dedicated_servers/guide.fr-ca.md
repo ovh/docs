@@ -3,6 +3,7 @@ title: "Utilisation de l'IPMI pour les serveurs dédiés"
 slug: utilisation-ipmi-serveurs-dedies
 excerpt: "L'IPMI permet de vous connecter à votre serveur sans utiliser un logiciel externe"
 section: 'Premiers pas'
+order: 4
 ---
 
 **Dernière mise à jour le 18/03/2021**
