@@ -63,7 +63,7 @@ Mit der Option [Backup Storage](https://www.ovhcloud.com/de/bare-metal/backup-st
 
 Sie können Zugriff auf den Backup Storage von Ihrem neuen Server aus erlauben. So verfügen Sie über ein Gateway zum Datentransfer.
 
-Weitere Informationen dazu finden Sie in unserer Anleitung [Backup Storage auf einem Dedicated Server verwenden](https://docs.ovh.com/de/dedicated/dienste-storage-backup/){.external}.
+Weitere Informationen dazu finden Sie in unserer Anleitung "[Backup Storage auf einem Dedicated Server verwenden](https://docs.ovh.com/de/dedicated/dienste-storage-backup/)".
 
 ### Migration einer Failover-IP (nur verfügbar für OVHcloud und So you Start)
 
