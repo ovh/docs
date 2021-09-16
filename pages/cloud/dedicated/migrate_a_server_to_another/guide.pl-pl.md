@@ -10,7 +10,7 @@ order: 5
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 14-09-2021**
+**Ostatnia aktualizacja z dnia 16-09-2021**
 
 ## Wprowadzenie
 
@@ -70,9 +70,11 @@ Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem dotyczącym [Korz
 
 > [!warning]
 >
-> Nie można migrować podstawowego adresu IP serwera. Zostanie on utracony.
+> - Główny adres IP serwera nie może zostać przeniesiony na inny serwer.
 >
-> Przeniesienie adresu IP Failover między dwoma kontami w różnych oddziałach jest możliwe tylko z konta So you Start do OVHcloud. Nie można przenieść adresu IP z konta OVHcloud na konto So you Start.
+> - Migracja adresu IP failover z konta So you Start na konto OVHcloud. Operacja ta jest fakturowana podobnie jak utworzenie nowego adresu IP.
+>
+> - Migracja adresu IP z konta OVHcloud do konta So you Start nie jest możliwa.
 >
 
 Jeśli reputacja Twoich adresów IP jest ważna, zalecamy korzystanie z adresów [IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/), które możesz zachować w przypadku migracji.

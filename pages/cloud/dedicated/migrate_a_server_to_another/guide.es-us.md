@@ -11,7 +11,7 @@ order: 4
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 14/09/2021**
+**Última actualización: 16/09/2021**
 
 ## Objetivo
 
@@ -71,9 +71,11 @@ Para más información, consulte nuestra guía sobre [utilizar Backup Storage en
 
 > [!warning]
 >
-> La dirección IP principal de un servidor no puede migrarse y se perderá en el proceso.
+> - La dirección IP principal de un servidor no puede migrarse a otro servidor.
 >
-> La migración de una dirección IP failover entre dos cuentas de diferentes sucursales sólo es posible desde una cuenta So you start a una cuenta OVHcloud. No es posible migrar una dirección IP failover de una cuenta de OVHcloud a So you Start.
+> - Es posible migrar una IP failover desde una cuenta de So you Start a una cuenta de OVHcloud. Esta operación se factura al igual que la creación de una nueva IP.
+>
+> - No es posible migrar una IP desde una cuenta de OVHcloud a una cuenta de So you Start.
 >
 
 Si la reputación de sus direcciones IP es importante, le recomendamos encarecidamente que utilice las direcciones [IP failover](https://www.ovhcloud.com/es/bare-metal/ip/), ya que pueden conservarse si se migra.

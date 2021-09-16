@@ -10,7 +10,7 @@ order: 5
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 14.09.2021**
+**Letzte Aktualisierung am 16.09.2021**
 
 ## Ziel
 
@@ -69,9 +69,11 @@ Weitere Informationen dazu finden Sie in unserer Anleitung "[Backup Storage auf 
 
 > [!warning]
 >
-> Die Haupt-IP-Adresse eines Servers kann nicht migriert werden und wird mit dem Auslaufen des alten Server-Abos verloren gehen.
+> - Die Haupt-IP-Adresse eines Servers kann nicht migriert werden und wird mit dem Auslaufen des alten Server-Abos verloren gehen.
 >
-> Die Migration einer Failover-IP von einem So you Start Account zu einem OVHcloud Kunden-Account ist möglich. Sie können aber eine Failover-IP nicht von einem OVHcloud Kunden-Account zu So you Start migrieren.
+> - Sie können eine Failover-IP von einem So you Start Account zu einem OVHcloud Kunden-Account migrieren. Bei diesem Vorgang entstehen die regulären IP-Einrichtungsgebühren.
+>
+> - Es ist nicht möglich, eine Failover-IP von einem OVHcloud Kunden-Account zu einem So you Start Account zu migrieren.
 >
 
 Wenn IP-Adressen-Reputation für Sie wichtig ist, empfehlen wir Ihnen dringend die Verwendung von [Failover-IPs](https://www.ovhcloud.com/de/bare-metal/ip/), da diese bei einer Migration beibehalten werden können.
