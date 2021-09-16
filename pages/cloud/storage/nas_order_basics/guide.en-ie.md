@@ -15,12 +15,12 @@ Network Attached Storage (NAS) is a file server connected to a network whose mai
 ## Requirements
 
 - an IP address attached to an OVHcloud service (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud instance, etc.)
-- a [HA-NAS solution](https://www.ovh.com/ca/en/nas/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
+- a [HA-NAS solution](https://www.ovh.ie/nas/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
-You can manage your HA-NAS via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
+You can manage your HA-NAS via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 Once you have logged in, click on `Bare Metal Cloud`{.action}, then `NAS and CDN`{.action} in the menu on the left. Click on your service to access the administration menu.
 
