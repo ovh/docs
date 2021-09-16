@@ -37,7 +37,7 @@ Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstalliert
 
 > [!primary]
 >
-> Wenn der Link bereits abgelaufen ist, verbinden Sie sich bitte mit dem CentOS-Benutzer über SSH mit Ihrem VPS und führen Sie den Befehl "whmlogin" aus, um einen neuen Link zu erzeugen.
+> Wenn der Link bereits abgelaufen ist, verbinden Sie sich mit dem CentOS-Benutzer über SSH mit Ihrem VPS und führen Sie den Befehl "whmlogin" aus, um einen neuen Link zu erzeugen.
 >
 
 <ol start="3">
