@@ -11,7 +11,7 @@ section: 'Netzwerk & IP'
 
 **Letzte Aktualisierung am 16.09.2021**
 
-## Einleitung
+## Ziel
 
 IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der Sie mehrere IP-Adressen auf einem einzigen Netzwerkinterface verknüpfen können.
 
@@ -24,7 +24,7 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 - Sie sind via SSH auf Ihrem Server eingeloggt (Root-Zugriff).
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
 In dieser Anleitung finden Sie die Konfigurationen für die gängigsten Distributionen.
 
