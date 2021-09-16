@@ -5,7 +5,7 @@ excerpt: 'So instanziieren Sie einen VPS mit cPanel-Template'
 section: 'Fortgeschrittene Nutzung'
 ---
 
-**Letzte Aktualisierung am 29.10.2020**
+**Letzte Aktualisierung am 16.09.2021**
 
 ## Ziel
 
@@ -45,7 +45,7 @@ Diese eigens generierte URL erlaubt es, sich erstmals ohne Benutzername und Pass
 
 > [!primary]
 >
-> Der Link ist zeitlich begrenzt gültig und kann daher abgelaufen sein. Installieren Sie dann den VPS neu unter Auswahl von "CentOS 7 - cPanel".
+> Wenn der Link bereits abgelaufen ist, verbinden Sie sich bitte mit dem CentOS-Benutzer über SSH mit Ihrem VPS und führen Sie den Befehl "whmlogin" aus, um einen neuen Link zu erzeugen.
 >
 
 #### Schritt 1: Lesen und akzeptieren der cPanel-Nutzungsbedingungen

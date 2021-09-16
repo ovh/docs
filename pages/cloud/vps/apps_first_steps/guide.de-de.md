@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 6
 ---
 
-**Letzte Aktualisierung am 7 September 2021**
+**Letzte Aktualisierung am 16 September 2021**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -37,7 +37,7 @@ Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstalliert
 
 > [!primary]
 >
-> Wenn der Link bereits abgelaufen ist, loggen Sie sich via SSH mithilfe des CentOS-Benutzers mit dem Server ein und führen Sie den Befehl "Whmlogin"aus, um einen neuen Server zu erstellen, oder installieren Sie die Instanz neu.
+> Wenn der Link bereits abgelaufen ist, verbinden Sie sich bitte mit dem CentOS-Benutzer über SSH mit Ihrem VPS und führen Sie den Befehl "whmlogin" aus, um einen neuen Link zu erzeugen.
 >
 
 <ol start="3">

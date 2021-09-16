@@ -33,7 +33,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 
 > [!primary]
 >
-> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l'aide de l'utilisateur CentOS et exécutez la commande « whmlogin » pour en générer un nouveau ou réinstallez l'instance.
+> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l'aide de l'utilisateur CentOS et exécutez la commande « whmlogin » pour générer un nouveau lien. 
 >
 
 <ol start="3">
