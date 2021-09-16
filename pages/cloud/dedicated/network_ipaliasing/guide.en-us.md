@@ -5,7 +5,7 @@ excerpt: 'Find out how to add failover IP addresses to your server configuration
 section: 'Network Management'
 ---
 
-**Last updated 15th September 2021**
+**Last updated 16th September 2021**
 
 ## Objective
 
@@ -14,9 +14,9 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 **This guide explains how to add failover IP addresses to your network configuration.**
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
