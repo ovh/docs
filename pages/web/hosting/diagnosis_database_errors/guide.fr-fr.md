@@ -6,7 +6,7 @@ section: Diagnostic
 order: 4
 ---
 
-**Dernière mise à jour le 15/09/2021**
+**Dernière mise à jour le 16/09/2021**
 
 ## Objectif
 
@@ -233,8 +233,6 @@ Dans cette situation, [vérifiez les identifiants indiqués](../connexion-base-d
 Le nombre de connexions actives maximal pour les bases de données livrées avec les hébergements mutualisés ([StartSQL](https://www.ovh.com/fr/hebergement-web/options-sql.xml)) est de **30**. Elle est de **50** pour les bases des serveurs [SQL privé](../premiers-pas-avec-sql-prive/) et [Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
 
 Ce message apparaît lors de la [connexion à PhpMyAdmin](../creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) lorsque ce nombre maximal de connexions est dépassé.
-
-![too_many_connections](images/too_many_connections.png){.thumbnail}
 
 Dans cette situation, vous devrez [optimiser vos bases de données](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) afin de réduire le nombre de connexions actives.
 
