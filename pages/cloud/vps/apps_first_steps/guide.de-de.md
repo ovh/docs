@@ -1,7 +1,7 @@
 ---
 title: 'Erste Schritte mit vorinstallierten Anwendungen'
 slug: vorstellige-anwendungen
-excerpt: In dieser Anleitung erfahren Sie, wie Sie auf Ihrem VPS vorinstallierte Anwendungen einrichten.
+excerpt: In dieser Anleitung erfahren Sie, wie Sie auf Ihrem VPS vorinstallierte Anwendungen einrichten
 section: 'Erste Schritte'
 order: 6
 ---
