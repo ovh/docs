@@ -59,14 +59,14 @@ Inscrivez dans le fichier **« crypter.php »** créé précédemment les lignes
 
 ```php
 <?php
-$motdepasse_chiffré_1 = crypt('motdepasse_en_clair_1');
-$motdepasse_chiffré_2 = crypt('motdepasse_en_clair_2');
-$motdepasse_chiffré_3 = crypt('motdepasse_en_clair_3');
-echo nl2br("$motdepasse_chiffré_1 \n $motdepasse_chiffré_2 \n $motdepasse_chiffré_3");
+$string_1 = crypt('motdepasse_en_clair_1');
+$string_2 = crypt('motdepasse_en_clair_2');
+$string_3 = crypt('motdepasse_en_clair_3');
+echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Si vous disposez d'un hébergement **Pro2014** ou **Performance**, connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécuter la commande suivante :
+Si vous disposez d'un hébergement [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml), connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécutez la commande suivante :
 
 ```bash
 php crypt.php
@@ -74,14 +74,14 @@ php crypt.php
 
 > [!warning]
 >
-> Pour des raisons de sécurité, l'utilisation du SSH est conseillé. Toutefois, si vous disposez d'une offre **Kimsufi Web** ou **Perso2014** et que vous ne souhaitez pas [changer d'offre](https://www.ovh.com/fr/hebergement-web/), vous pouvez aussi exécuter le fichier **« crypter.php »** par votre navigateur Web (Par exemple, en allant sur une url du type **https://mon-domaine.ovh/crypter.php**).
+> Pour des raisons de sécurité, l'utilisation du SSH est recommandée. Toutefois, si vous disposez d'une offre **Kimsufi Web** ou **Perso2014** et que vous ne souhaitez pas passer sur une offre [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml), vous pouvez aussi exécuter le fichier **« crypter.php »** par votre navigateur Web (En allant sur une url du type **https://votre-domaine.ovh/crypter.php**).
 >
-> Pour toute question complémentaire sur la méthode à utiliser pour chiffrer les mots de passe dans un fichier **« .htpasswd »**, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Pour toute question complémentaire sur la méthode à utiliser pour chiffrer vos mots de passe, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
-Récupérez les mots de passe chiffrés (Ne pas copiez le **"<br />"** si vous exécutez la commande **« php crypt.php »** en SSH) :
+Récupérez les mots de passe chiffrés (Ne pas copiez le **"<br />"** si vous exécutez la commande **« php crypter.php »** en SSH) :
 
-```
+```bash
 motdepasse_chiffré1
 motdepasse_chiffré2
 motdepasse_chiffré3
@@ -94,8 +94,9 @@ Le fichier **« .htpasswd »** contient la liste des utilisateurs autorisés à 
 Inscrivez dans ce fichier **pour chaque utilisateur** une ligne indiquant son identifiant et son mot de passe chiffré :
 
 ```bash
-utilisateur1:mot_de_passe_chiffré_1
-utilisateur2:mot_de_passe_chiffré_2
+utilisateur1:motdepasse_chiffré1
+utilisateur2:motdepasse_chiffré2
+utilisateur3:motdepasse_chiffré3
 ```
 
 ### Compléter le fichier « .htaccess »
@@ -113,14 +114,14 @@ Require valid-user
 
 > [!warning]
 >
-> Dans cet exemple, il faut remplacer **votre_login_ftp** par votre [identifiant FTP](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter). Vous le trouverez dans la rubrique `Hébergements`{.action}, puis dans l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
+> Dans cet exemple, il faut remplacer **votre_login_ftp** par votre [identifiant FTP](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter). Dans la rubrique `Hébergements`{.action}, vous le trouverez dans l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
 >
-> Pensez également, si besoin, à remplacer dans l'exemple ci-dessous **« dossier_racine »** par le nom du [dossier « racine » contenant les fichiers de votre site](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
+> Pensez également, si besoin, à remplacer dans l'exemple ci-dessous **« dossier_racine »** par le nom du [dossier contenant les fichiers de votre site](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
 >
 
 #### Bloquer l'accès à un ou plusieurs fichiers
 
-Pour bloquer l'accès à un ou plusieurs fichiers précis, ajoutez une [directive « Files »](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} dans le **« .htaccess »** :
+Pour bloquer l'accès à un ou plusieurs fichiers précis, ajoutez une [directive « Files »](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} dans le fichier **« .htaccess »** :
 
 ```bash
 <Files test.php>
