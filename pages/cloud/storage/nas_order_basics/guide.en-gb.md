@@ -6,7 +6,7 @@ section: NAS
 order: 01
 ---
 
-**Last updated 31st August 2021**
+**Last updated 16th September 2021**
 
 ## Objective
 
@@ -116,4 +116,4 @@ To delete a partition, click on the `...`{.action} button to the right of the ex
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
