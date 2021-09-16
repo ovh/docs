@@ -12,7 +12,7 @@ order: 5
 
 As your needs and OVHcloud ranges are constantly evolving, it is sometimes necessary to change servers and migrate the data as a result.
 
-**The purpose of this guide is to centralize the steps for migrating data from one server to another.**
+**The purpose of this guide is to centralise the steps for migrating data from one server to another.**
 
 > [!warning]
 >
@@ -55,7 +55,7 @@ With the [Backup Storage](https://www.ovhcloud.com/en-gb/bare-metal/backup-stora
 >
 > The Backup Storage can only be accessed from OVHcloud servers and IPs located in the same zone.
 >
-> For example, if a server located in the SBG data center has Backup Storage enabled, servers located in the GRA or RBX data centers can access it. However, servers located in BHS or WAW data centers will not have access to this storage.
+> For example, if a server located in the SBG data centre has Backup Storage enabled, servers located in the GRA or RBX data centres can access it. However, servers located in BHS or WAW data centres will not have access to this storage.
 >
 
 You can authorise access to the Backup Storage from your new server. This way, you will have a gateway for transferring your data.
@@ -85,7 +85,7 @@ To do this, please refer to our dedicated guide: [Moving a failover IP](https://
 
 Once the data is available on the new server, you may need to modify your DNS configuration, for example if the primary IP address was used.
 
-For more information, please read our documentation on [domains and Dns](https://docs.ovh.com/gb/en/domains/).
+For more information, please read our documentation on [domains and DNS](https://docs.ovh.com/gb/en/domains/).
 
 ## Go further
 
