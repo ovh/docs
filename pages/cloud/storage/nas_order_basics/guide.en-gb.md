@@ -99,9 +99,9 @@ To change the ZFS settings of a partition, click on the `...`{.action} button to
 
 ![zfss](images/nas2021-13.png){.thumbnail}
 
-- Disabling access time update (atime): Disabling *atime* means the kernel will no longer update the file system timestamp each time a file is accessed. This can be useful to speed up frequent read operations, for example on static web pages. However, it should not be enabled for consistency-critical applications such as databases.
-- ZFS recordsize: This property changes the maximum block size on the ZFS filesystem. Please note that ZFS will still use a smaller block size if the file is smaller than the maximum. For example, a 16 KB file will use a 16 KB block (plus metadata) to not waste storage space. We generally advise against changing ZFS *recordsize* for this reason.
-- Sync: This changes the behaviour of ZFS filesystem transactions with regard to RAM data buffering and writing data to disk. We do not recommend changing this property without an appropriate reason.
+- **Disabling access time update (atime)**: Disabling *atime* means the kernel will no longer update the file system timestamp each time a file is accessed. This can be useful to speed up frequent read operations, for example on static web pages. However, it should not be enabled for consistency-critical applications such as databases.
+- **ZFS recordsize**: This property changes the maximum block size on the ZFS filesystem. Please note that ZFS will still use a smaller block size if the file is smaller than the maximum. For example, a 16 KB file will use a 16 KB block (plus metadata) to not waste storage space. We generally advise against changing ZFS *recordsize* for this reason.
+- **Sync**: This changes the behaviour of ZFS filesystem transactions with regard to RAM data buffering and writing data to disk. We do not recommend changing this property without an appropriate reason.
 
 ### Deleting a partition
 
