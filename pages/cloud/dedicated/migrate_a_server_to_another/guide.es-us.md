@@ -19,8 +19,8 @@ Como sus necesidades y las gamas de OVHcloud evolucionan constantemente, es nece
 
 **Esta guía centraliza los pasos para migrar los datos de un servidor a otro.**
 
-> [!warning] 
-> 
+> [!warning]
+>
 > OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
 >
 > Esta guía le ayudará en la mayor medida posible a realizar las tareas habituales. No obstante, si tiene dificultades o dudas con respecto a la administración, el uso o la ejecución de los servicios en un servidor, le recomendamos que contacte con un proveedor de servicios especializado.
@@ -34,8 +34,8 @@ Como sus necesidades y las gamas de OVHcloud evolucionan constantemente, es nece
 
 ## Procedimiento
 
-> [!warning] 
-> 
+> [!warning]
+>
 > Algunas de las opciones que ofrece esta guía pueden no estar disponibles en su gama de servidores o pueden encontrarse en otra sección del panel de configuración. (Kimsufi, So you Start).
 >
 
@@ -65,7 +65,7 @@ Con la opción [Backup Storage](https://www.ovhcloud.com/es/bare-metal/backup-st
 
 Puedes autorizar el acceso al Backup Storage desde tu nuevo servidor. De este modo, dispondrá de una pasarela para transferir sus datos.
 
-Para más información, consulte nuestra guía sobre [utilizar Backup Storage en un servidor dedicado](https://docs.ovh.com/us/es/dedicated/servicio-backup-storage/){.external}.
+Para más información, consulte nuestra guía sobre [utilizar Backup Storage en un servidor dedicado](https://docs.ovh.com/us/es/dedicated/servicio-backup-storage/).
 
 ### Migración de una dirección IP failover (disponible únicamente en OVHcloud y So you Start)
 

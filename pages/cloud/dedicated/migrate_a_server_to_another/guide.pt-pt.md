@@ -1,6 +1,6 @@
 ---
 title: Migração dos dados de um servidor dedicado para outro
-slug: migração-dos-dados-de-um-servidor-dedicado-para-outro
+slug: migracao-dos-dados-de-um-servidor-dedicado-para-outro
 excerpt: Saiba como migrar dados de um servidor dedicado para outro
 section: Introdução
 order: 4
@@ -20,11 +20,10 @@ Como as suas necessidades e as gamas OVHcloud evoluem constantemente, é por vez
 
 > [!warning]
 >
-> A utilização e a gestão dos serviços OVH são da responsabilidade do cliente. A OVH não tem permissões de acesso à parte lógica dos sistemas. O cliente é o único responsável pela gestão e pela segurança destes serviços.
+> A utilização e a gestão dos serviços OVHcloud são da responsabilidade do cliente. A OVHcloud não tem permissões de acesso à parte lógica dos sistemas. O cliente é o único responsável pela gestão e pela segurança destes serviços.
 >
 > Este guia explica como implementar algumas medidas para tornar o seu sistema mais seguro. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste guia intitulada: «Quer saber mais?»
 >
-
 
 ## Requisitos
 
