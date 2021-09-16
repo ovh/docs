@@ -6,11 +6,11 @@ section: Diagnostic
 order: 7
 ---
 
-**Dernière mise à jour le 31/08/2021**
+**Dernière mise à jour le 16/09/2021**
 
 ## Objectif
 
-Des modifications sur les droits d'accès aux fichiers de votre site, sur le fichier **.htaccess** ou l'installation d'un plugin de sécurité peuvent parfois se traduire par une page **"403 fordidden"**.
+Des modifications sur les droits d'accès aux fichiers de votre site, sur le fichier **.htaccess** ou l'installation d'un plugin de sécurité peuvent parfois se traduire par une page **« 403 forbidden »**.
 
 Il peut aussi arriver que, suite à une détection d'anomalies, nos robots de sécurité aient été amenés à bloquer temporairement l'accès aux fichiers de votre hébergement. Ce type de blocage automatique vise à empêcher l'envoi de code malveillant vers d'autres entités et à vous protéger juridiquement.
 
@@ -33,13 +33,13 @@ Il peut aussi arriver que, suite à une détection d'anomalies, nos robots de s�
 
 ## En pratique
 
-### Étape 1 : estimer la situation
+### Étape 1 : analyser la situation
 
 Si la page **« 403 forbidden »** est apparue suite à une modification erronée de votre site, [restaurez tout ou partie de l'espace de stockage de votre hébergement](../restauration-ftp-filezilla-espace-client/) à une date antérieure.
 
 Si les sauvegardes disponibles ne vous permettent pas de rétablir l'accès à votre site, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
 
-Dans le cas contraire, consultez votre messagerie. Si vous avez reçu un e-mail de nos services indiquant une fermeture de votre hébergement pour des raisons de sécurité, passez à [l'étape 2](#etape2).
+Si la page **« 403 forbidden »** n'est pas apparue suite à une modification de votre site, consultez votre messagerie. Si vous avez reçu un e-mail de nos services indiquant une fermeture de votre hébergement pour des raisons de sécurité, passez à [l'étape 2](#etape2).
 
 Si la page **« 403 forbidden »** est apparue sans action de votre part et que vous n'avez pas reçu de mails de nos services à ce sujet, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
 
@@ -63,7 +63,7 @@ Vérifiez tout d'abord la sécurité de votre/vos poste(s) informatique(s) :
 
 ### Étape 3 : intervenir sur votre hébergement
 
-Notez tout d'abord la date d'envoi de l'e-mail indiquant la désactivation de votre hébergement, ainsi que le ou les dossiers qui contiennent les exemples de fichiers illégitimes.
+Notez tout d'abord la date d'envoi de l'e-mail d'OVHcloud indiquant la désactivation de votre hébergement, ainsi que le ou les dossiers qui contiennent les exemples de fichiers illégitimes.
 
 #### Cas n°1 : votre hébergement a été désactivé il y a moins de deux semaines
 
@@ -89,7 +89,7 @@ Si votre hébergement a été fermé il y a plus de deux semaines, contactez un 
 > Si vous souhaitez installer le logiciel **FileZilla** afin de manipuler les fichiers de votre site, suivez les instructions de ce [guide](../mutualise-guide-utilisation-filezilla/).
 >
 
-Ouvrez votre logiciel FileZilla puis connectez-vous à votre espace de stockage. Cliquez ensuite sur `Serveur`{.action} dans la barre de menu, puis sur `Entrer une commande FTP`{.action} (l'intitulé peut être légèrement différent suivant la version de FileZilla que vous utilisez) :
+Ouvrez le logiciel FileZilla puis connectez-vous à votre espace de stockage. Cliquez ensuite sur `Serveur`{.action} dans la barre de menu, puis sur `Entrer une commande FTP`{.action} (l'intitulé peut être légèrement différent suivant la version de FileZilla que vous utilisez) :
 
 ![command_filezilla1](images/command_filezilla1.png){.thumbnail}
 
@@ -105,9 +105,9 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 #### Réactiver votre hébergement avec le FTP Explorer « net2ftp »
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez vous dans la partie `Web Cloud`{.action} puis `Hébergements`{.action} et cliquez sur l'onglet `FTP - SSH`{.action} de l'hébergement concerné.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez vous dans la partie `Web Cloud`{.action} puis `Hébergements`{.action} et cliquez sur l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
 
-Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](../connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Cliquez ensuite sur le bouton `Avancé`{.action} puis sur le bouton `Go`{.action} à côté de **« Envoyer des commandes FTP arbitraires au serveur FTP »**.
+Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](../connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Cliquez sur le bouton `Avancé`{.action} puis sur le bouton `Go`{.action} à côté de **« Envoyer des commandes FTP arbitraires au serveur FTP »**.
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
@@ -119,11 +119,11 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Conseils suite au piratage de votre site WordPress](https://docs.ovh.com/fr/hosting/piratage-de-votre-site-wordpress-conseils-et-cas-dusages/)
+[Conseils suite au piratage de votre site WordPress](../piratage-de-votre-site-wordpress-conseils-et-cas-dusages/)
 
-[Activation du pare-feu applicatif](https://docs.ovh.com/fr/hosting/activation-pare-feu-applicatif/)
+[Activation du pare-feu applicatif](../activation-pare-feu-applicatif/)
 
-[Changer la version de PHP de son hébergement web](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/)
+[Changer la version de PHP de son hébergement web](../configurer-le-php-sur-son-hebergement-web-mutu-2014/)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
