@@ -6,7 +6,7 @@ excerpt: "Retrouvez ici comment protéger l'accès à l'administration de votre 
 section: Réécriture et authentification
 ---
 
-**Dernière mise à jour le 14/09/2021**
+**Dernière mise à jour le 16/09/2021**
 
 ## Objectif
 
@@ -59,14 +59,14 @@ Inscrivez dans le fichier **« crypter.php »** créé précédemment les lignes
 
 ```php
 <?php
-$mot_de_passe_crypte1 = crypt('motdepasse1');
-$mot_de_passe_crypte2 = crypt('motdepasse2');
-$mot_de_passe_crypte3 = crypt('motdepasse3');
-echo nl2br("$mot_de_passe_crypte1 \n $mot_de_passe_crypte2 \n $mot_de_passe_crypte3");
+$motdepasse_chiffré_1 = crypt('motdepasse_en_clair_1');
+$motdepasse_chiffré_2 = crypt('motdepasse_en_clair_2');
+$motdepasse_chiffré_3 = crypt('motdepasse_en_clair_3');
+echo nl2br("$motdepasse_chiffré_1 \n $motdepasse_chiffré_2 \n $motdepasse_chiffré_3");
  ?>
 ```
 
-Si vous disposez d'un hébergement **Pro2014** ou **Performance**, connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécuter la commande suivante puis récupérer les mots de passe chiffrés (Ne pas copiez le **"<br />"**):
+Si vous disposez d'un hébergement **Pro2014** ou **Performance**, connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécuter la commande suivante :
 
 ```bash
 php crypt.php
@@ -78,6 +78,14 @@ php crypt.php
 >
 > Pour toute question complémentaire sur la méthode à utiliser pour chiffrer les mots de passe dans un fichier **« .htpasswd »**, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
+
+Récupérez les mots de passe chiffrés (Ne pas copiez le **"<br />"** si vous exécutez la commande **« php crypt.php »** en SSH) :
+
+```
+motdepasse_chiffré1
+motdepasse_chiffré2
+motdepasse_chiffré3
+```
 
 ### Compléter le fichier « .htpasswd »
 
