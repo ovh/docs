@@ -38,7 +38,7 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 
 ### Créer l'arborescence
 
-Connectez-vous à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Ouvrez le [« dossier racine » de votre site](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud). Créez un fichier **« crypt.php »**.
+Connectez-vous à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Ouvrez le [« dossier racine » de votre site](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud). Créez un fichier **« crypter.php »**.
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
@@ -48,14 +48,14 @@ Ouvrez ou créez le dossier destiné à contenir la partie **« admin »** de vo
 
 > [!primary]
 >
-> Les fichiers **« .htpasswd »** et **« .htaccess »** peuvent être dans des dossiers différents. Un seul fichier **« .htpasswd »** peut être utilisé par plusieurs **« .htaccess »**.
+> Les fichiers **« .htpasswd »** et **« .htaccess »** peuvent être dans des dossiers différents. Un seul fichier **« .htpasswd »** peut être utilisé pour plusieurs **« .htaccess »**.
 >
 > Les paramétrages indiqués par un fichier **« .htaccess »** s'appliquent au répertoire où il est installé ainsi qu'à tous ses sous-répertoires.
 >
 
-### Compléter le fichier « crypt.php »
+### Compléter le fichier « crypter.php »
 
-Inscrivez dans le fichier **« crypt.php »** créé précédemment les lignes suivantes (à répéter selon le nombre de mots de passe à générer):
+Inscrivez dans le fichier **« crypter.php »** créé précédemment les lignes suivantes (à répéter selon le nombre de mots de passe à générer):
 
 ```php
 <?php
@@ -91,7 +91,7 @@ php crypt.php
 
 > [!warning]
 >
-> Pour des raisons de sécurité, l'utilisation du SSH est conseillé. Toutefois, si vous disposez d'une offre **Kimsufi Web** ou **Perso2014** et que vous ne souhaitez pas [changer d'offre](https://www.ovh.com/fr/hebergement-web/), vous pouvez aussi exécuter le fichier **« crypt.php »** par votre navigateur Web (Par exemple, en allant sur une url du type **https://mon-domaine.ovh/crypt.php**).
+> Pour des raisons de sécurité, l'utilisation du SSH est conseillé. Toutefois, si vous disposez d'une offre **Kimsufi Web** ou **Perso2014** et que vous ne souhaitez pas [changer d'offre](https://www.ovh.com/fr/hebergement-web/), vous pouvez aussi exécuter le fichier **« crypter.php »** par votre navigateur Web (Par exemple, en allant sur une url du type **https://mon-domaine.ovh/crypt.php**).
 >
 > Pour toute question complémentaire sur la méthode à utiliser pour chiffrer les mots de passe dans un fichier **« .htpasswd »**, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
@@ -114,7 +114,7 @@ utilisateur2:mot_de_passe_chiffré_2
 Dans le répertoire à protéger, créez un fichier **« .htaccess »** avec le code suivant :
 
 ```bash
-AuthName "Indiquez vos identifiants administrateur"
+AuthName "Indiquez votre identifiant administrateur et son mot de passe"
 AuthType Basic
 AuthUserFile "/home/votre_login_ftp/dossier_racine/admin/.htpasswd"
 Require valid-user
