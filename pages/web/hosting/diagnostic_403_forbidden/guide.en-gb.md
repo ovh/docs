@@ -89,7 +89,7 @@ If your hosting plan was closed more than two weeks ago, contact a [specialised 
 > If you want to install the **FileZilla** software to manipulate your website files, follow the instructions in this [guide](../web_hosting_filezilla_user_guide/).
 >
 
-Open FileZilla software then [log on to your FTP storage space](../mutualise-guide-utilisation-filezilla/#connexion-ftp). Click on `Server`{.action} in the menu bar then on `Enter custom command`{.action} (the title may be slightly different depending on which version of FileZilla you are using):
+Open FileZilla software then [log on to your FTP storage space](../web_hosting_filezilla_user_guide/#ftp-connection). Click on `Server`{.action} in the menu bar then on `Enter custom command`{.action} (the title may be slightly different depending on which version of FileZilla you are using):
 
 ![command_filezilla1](images/command_filezilla1.png){.thumbnail}
 
@@ -101,32 +101,32 @@ SITE CHMOD 705 /
 
 ![command_filezilla2](images/command_filezilla2.png){.thumbnail}
 
-A response **“200 Permissions changed on”** confirms that the change was successful. To check, try accessing your site again.
+A response **"200 Permissions changed on"** confirms that the change was successful. To check, try accessing your site again.
 
 #### Reactivate your hosting with the FTP Explorer "net2ftp"
 
 In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud`{.action} section then `Hosting plans`{.action} and click on the `FTP-SSH`{.action} tab for the hosting plan concerned.
 
-Then click on the `FTP Explorer`{.action} button and log in to your storage space, following the instructions in this [guide](../connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Click the `Advanced`{.action} button and then click the `Go`{.action} button next to \`**Send arbitrary FTP commands to the FTP server\`**.
+Then click on the `FTP Explorer`{.action} button and log in to your storage space, following the instructions in this [guide](../log-in-to-storage-ftp-web-hosting/#1-log-in-via-ftp-explorer). Click the `Advanced`{.action} button and then click the `Go`{.action} button next to **"Send arbitrary FTP commands to the FTP server"**.
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
-At the top of the page, enter the command below, then click on the green “**V”** button.
+At the top of the page, enter the command below then click on the green **"V"** button.
 
 ![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
 
-A response **“200 Permissions changed on /”** confirms that the change was successful. To check, try accessing your site again.
+A response **"200 Permissions changed on"”** confirms that the change was successful. To check, try accessing your site again.
 
 ## Go further <a name="gofurther"></a>
 
-[Tips for hacking your WordPress website](../piratage-de-votre-site-wordpress-conseils-et-cas-dusages/)
+[What to do if your WordPress site is hacked](../what_to_do_if_your_wordpress_site_is_hacked/)
 
-[Enabling application firewall](../activation-pare-feu-applicatif/)
+[Activating the application firewall](../web_hosting_activating_an_application_firewall/)
 
-[Changing a Web Hosting plan’s PHP version](../configurer-le-php-sur-son-hebergement-web-mutu-2014/)
+[Changing a Web Hosting plan’s PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud](https://partner.ovhcloud.com/en-gb/) partners.
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/fr/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
-Join our community of users on <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
