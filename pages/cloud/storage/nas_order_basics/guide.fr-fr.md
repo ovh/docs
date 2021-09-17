@@ -6,7 +6,7 @@ section: NAS
 order: 01
 ---
 
-**Dernière mise à jour le 31/08/2021**
+**Dernière mise à jour le 16/09/2021**
 
 ## Objectif
 
@@ -87,6 +87,21 @@ Cliquez alors sur `Ajouter un accès`{.action} puis sélectionnez l'adresse IP d
 Pour supprimer un accès à une partition, cliquez sur le bouton `(...)`{.action} situé à droite de l'adresse IP concernée puis sur `Supprimer`{.action}.
 
 ![createaccess](images/nas2021-09.png){.thumbnail}
+
+### Paramètres Z File System (ZFS)
+
+> [!warning]
+>
+> Tous les paramètres ZFS par défaut sont optimisés. Bien que nous déconseillons la modification de ces paramètres, ce menu permet d'ajuster le ZFS utilisé par le NAS-HA.
+>
+
+Pour modifier les paramètres ZFS d'une partition, cliquez sur le bouton `...`{.action} à droite de la partition concernée, puis sur `Paramètres Z File System (ZFS)`{.action}.
+
+![zfs](images/nas2021-13.png){.thumbnail}
+
+- **Désactiver la mise à jour des temps d'accès (*atime*)** : La désactivation du *atime* signifie que le noyau ne mettra plus à jour l'horodatage du système de fichiers à chaque accès à un fichier. Cela peut être utile pour accélérer les opérations de lecture fréquentes, par exemple sur des pages web statiques. Cependant, cette désactivation n'est pas conseillée pour les applications critiques en terme de cohérence, telles que les bases de données.
+- **ZFS recordsize** : Cette propriété modifie la taille de bloc maximale sur le système de fichiers ZFS. Notez que ZFS utilisera toujours une taille de bloc inférieure si le fichier est inférieur à la taille maximale. Par exemple, un fichier de 16 KB utilisera un bloc de 16 KB (plus les métadonnées) pour ne pas gaspiller d'espace de stockage. De manière générale, nous vous déconseillons donc de modifier le ZFS *recordsize*.
+- **Sync** : Ce paramètre modifie le comportement des transactions du système de fichiers ZFS en ce qui concerne la mise en mémoire tampon des données RAM et l’écriture des données sur le disque. Sauf raison spécifique, nous vous déconseillons de modifier cette propriété.
 
 ### Supprimer une partition
 

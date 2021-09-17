@@ -3,6 +3,7 @@ title: NAS - Frequently Asked Questions
 slug: faq-nas
 excerpt: Do you have questions about NAS? Here are the most frequently asked questions
 section: NAS
+hidden: true
 ---
 
 **Last updated 22nd November 2017**

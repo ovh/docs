@@ -6,7 +6,7 @@ section: Premiers pas
 order: 5
 ---
 
-**Dernière mise à jour le 13/09/2021**
+**Dernière mise à jour le 16/09/2021**
 
 ## Objectif
 
@@ -65,9 +65,11 @@ Consultez notre guide « [utiliser backup storage sur un serveur dédié](https:
 
 > [!warning]
 >
-> L'adresse IP principale d'un serveur ne peut être migrée et sera perdue dans le processus.
+> - L'adresse IP principale d'un serveur ne peut être migrée vers un autre serveur.
 >
-> La migration d'une IP failover entre deux comptes de branches différentes n'est possible que d'un compte SYS vers OVHcloud. Il n'est pas possible d'effectuer la migration d'un compte OVHcloud vers So you Start.
+> - La migration d'une IP failover est possible depuis un compte So you Start vers un compte OVHcloud. Cette opération est facturée au même titre que la création d'une nouvelle IP.
+>
+> - Il n'est pas possible d'effectuer la migration d'une IP depuis un compte OVHcloud vers un compte So you Start.
 >
 
 Si la réputation de vos adresses IP est importante, il est fortement conseillé d'utiliser des [IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/), celles-ci pouvant être conservées en cas de migration.
