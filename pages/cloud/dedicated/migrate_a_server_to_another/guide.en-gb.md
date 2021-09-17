@@ -6,13 +6,13 @@ section: Getting started
 order: 5
 ---
 
-**Last updated 13th September 2021**
+**Last updated 16th September 2021**
 
 ## Objective
 
 As your needs and OVHcloud ranges are constantly evolving, it is sometimes necessary to change servers and migrate the data as a result.
 
-**The purpose of this guide is to centralize the steps for migrating data from one server to another.**
+**The purpose of this guide is to centralise the steps for migrating data from one server to another.**
 
 > [!warning]
 >
@@ -55,7 +55,7 @@ With the [Backup Storage](https://www.ovhcloud.com/en-gb/bare-metal/backup-stora
 >
 > The Backup Storage can only be accessed from OVHcloud servers and IPs located in the same zone.
 >
-> For example, if a server located in the SBG data center has Backup Storage enabled, servers located in the GRA or RBX data centers can access it. However, servers located in BHS or WAW data centers will not have access to this storage.
+> For example, if a server located in the SBG data centre has Backup Storage enabled, servers located in the GRA or RBX data centres can access it. However, servers located in BHS or WAW data centres will not have access to this storage.
 >
 
 You can authorise access to the Backup Storage from your new server. This way, you will have a gateway for transferring your data.
@@ -66,9 +66,11 @@ See our guide on [using Backup Storage on a dedicated server](https://docs.ovh.c
 
 > [!warning]
 >
-> The primary IP address of a server cannot be migrated and will be lost in the process.
+> - The primary IP address of a server can't be migrated to a new one.
 >
-> The migration of a failover IP between two accounts of different branches is only possible from a So you Start account to OVHcloud. It is not possible to migrate an IP from an OVHcloud account to So you Start.
+> - You can migrate a failover IP from a So you Start account to an OVHcloud account. This operation is billed as a new IP creation.
+>
+> - It is not possible to migrate an IP from an OVHcloud account to a So you Start account.
 >
 
 If the reputation of your IP addresses is important, we strongly recommend using [failover IPs](https://www.ovhcloud.com/en-gb/bare-metal/ip/), as they can be kept if you migrate.
@@ -85,7 +87,7 @@ To do this, please refer to our dedicated guide: [Moving a failover IP](https://
 
 Once the data is available on the new server, you may need to modify your DNS configuration, for example if the primary IP address was used.
 
-For more information, please read our documentation on [domains and Dns](https://docs.ovh.com/gb/en/domains/).
+For more information, please read our documentation on [domains and DNS](https://docs.ovh.com/gb/en/domains/).
 
 ## Go further
 

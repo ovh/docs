@@ -6,7 +6,7 @@ section: Getting started
 order: 5
 ---
 
-**Last updated 13th September 2021**
+**Last updated 16th September 2021**
 
 ## Objective
 
@@ -66,9 +66,11 @@ See our guide on [using Backup Storage on a dedicated server](https://docs.ovh.c
 
 > [!warning]
 >
-> The primary IP address of a server cannot be migrated and will be lost in the process.
+> - The primary IP address of a server can't be migrated to a new one.
 >
-> The migration of a failover IP between two accounts of different branches is only possible from a So you Start account to OVHcloud. It is not possible to migrate an IP from an OVHcloud account to So you Start.
+> - You can migrate a failover IP from a So you Start account to an OVHcloud account. This operation is billed as a new IP creation.
+>
+> - It is not possible to migrate an IP from an OVHcloud account to a So you Start account.
 >
 
 If the reputation of your IP addresses is important, we strongly recommend using [failover IPs](https://www.ovhcloud.com/en-ie/bare-metal/ip/), as they can be kept if you migrate.

@@ -5,7 +5,7 @@ excerpt: 'Find out how to add failover IP addresses to your server configuration
 section: 'Network Management'
 ---
 
-**Last updated 19th April 2021**
+**Last updated 16th September 2021**
 
 ## Objective
 
@@ -14,9 +14,9 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 **This guide explains how to add failover IP addresses to your network configuration.**
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
@@ -32,9 +32,86 @@ The following sections contain the configurations for the most commonly used dis
 
 > [!primary]
 >
-Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
+> Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
 > 
 
+### Debian 10
+
+#### Step 1: Create a backup
+
+First, make a copy of the config file, so that you can revert at any time:
+
+```sh
+cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+```
+
+#### Step 2: Edit the config file
+
+> [!primary]
+> 
+> Note that the names of the network interfaces in our examples may differ from your own. Please adjust to your appropriate interface names.
+>
+
+You can now modify the config file:
+
+```sh
+editor /etc/network/interfaces.d/50-cloud-init
+```
+
+You then need to add a secondary interface:
+
+```bash
+auto eth0:0
+iface eth0:0 inet static
+address FAILOVER_IP
+netmask 255.255.255.255
+```
+
+To ensure that the secondary interface is enabled or disabled whenever the `eth0` interface is enabled or disabled, you need to add the following line to the eth0 configuration:
+
+```bash
+post-up /sbin/ifconfig eth0:0 FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP
+pre-down /sbin/ifconfig eth0:0 down
+```
+
+If you have two failover IPs to configure, the /etc/network/interfaces.d/50-cloud-init file should look like this:
+
+```bash
+auto eth0
+iface eth0 inet dhcp
+
+auto eth0:0
+iface eth0:0 inet static
+address FAILOVER_IP1
+netmask 255.255.255.255
+
+auto eth0:1
+iface eth0:1 inet static
+address FAILOVER_IP2
+netmask 255.255.255.255
+```
+Or like this:
+
+```bash
+auto eth0
+iface eth0 inet dhcp
+
+# IPFO 1
+post-up /sbin/ifconfig eth0:0 FAILOVER_IP1 netmask 255.255.255.255 broadcast FAILOVER_IP1
+pre-down /sbin/ifconfig eth0:0 down
+
+# IPFO 2
+post-up /sbin/ifconfig eth0:1 FAILOVER_IP2 netmask 255.255.255.255 broadcast FAILOVER_IP2
+pre-down /sbin/ifconfig eth0:1 down
+```
+
+#### Step 3: Restart the interface
+
+You now need to restart your interface:
+
+```sh
+/etc/init.d/networking restart
+```
 
 ### Debian 6/7/8 and derivatives
 

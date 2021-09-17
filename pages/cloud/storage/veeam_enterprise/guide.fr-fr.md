@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment installer un serveur Veeam Backup & Replication ave
 section: 'Veeam'
 ---
 
-**Dernière mise à jour le 02/07/2020**
+**Dernière mise à jour le 03/09/2021**
 
 ## Objectif
 
@@ -21,7 +21,7 @@ Veeam Backup & Replication est un logiciel de protection des données. Il offre 
 
 > [!primary]
 >
-> Nos offres Veeam ne sont actuellement pas compatibles avec la dernière version (10) proposée par Veeam. OVHcloud continuera de proposer la version 9.5 jusqu'à nouvel ordre. Veuillez prendre en compte ce point lors de la configuration de Veeam pour vos services.
+> Nos offres Veeam sont uniquement compatibles avec la dernière version (10) proposée par Veeam. Veuillez prendre en compte ce point lors de la configuration de Veeam pour vos services.
 >
 
 ## En pratique
@@ -118,6 +118,24 @@ Puis dans la fenêtre `Add User`{.action}, saisissez le compte de service préc�
 De retour dans la fenêtre **Security**, vous pouvez vérifier que le compte est bien défini.
 
 ![](images/veeamBandR_conf_5.png){.thumbnail}
+
+#### Autorisations d'exécution et d'activation
+
+L'utilisateur OVHVeeamEntreprise est accessible uniquement en local, il faut donc ajouter les permissions dans l’interface graphique d’utilisateur Windows pour l'activation de la connexion à distance.
+
+Via l’interface graphique d’utilisateur :
+
+1. Dans votre barre de recherche Windows, tapez `Services de composants`{.action} et lancez le service.
+2. Dans le menu à gauche et suivant l'arborescence, cliquez sur `Services de composants`{.action}, puis `Ordinateurs`{.action}, puis `Poste de travail`{.action}.
+3. À droite, sous l'onglet `Actions`{.action}, cliquez sur `Autres actions`{.action} puis sur `Propriétés`{.action}.
+4. Allez dans `Sécurité COM`{.action} et sous la deuxième option `Autorisations d'exécution d'activation`{.action}, cliquez sur `Modifier`{.action}.
+5. Cliquez sur l'utilisateur `OVHVeeamEntreprise`{.action} et activez toutes les permissions.
+
+![Propriétés Autorisations d'exécution et d'activation](images/permissionsuserveam.png){.thumbnail}
+
+6. Cliquez sur `OK`{.action} pour confirmer et sur `Appliquer`{.action} pour valider les changements.
+
+Votre utilisateur OVHVeeamEntreprise est maintenant accessible en local et à distance.
 
 ### Enregistrer le serveur Veeam Backup
 
