@@ -3,6 +3,7 @@ title: 'Cómo conectarse a hubiC sin utilizar la web o la aplicación'
 slug: conectarse-hubic-sin-aplicacion
 excerpt: 'Cómo conectarse a un cluster hubiC de tres formas diferentes'
 section: hubiC
+hidden: true
 ---
 
 ## Introducción 

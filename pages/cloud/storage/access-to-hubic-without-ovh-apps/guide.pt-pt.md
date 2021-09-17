@@ -3,6 +3,7 @@ title: 'Como aceder ao hubiC sem usar o website ou as aplicações'
 slug: aceder-ao-hubic-sem-aplicacao
 excerpt: 'Saiba como aceder a um cluster hubiC de três formas diferentes'
 section: hubiC
+hidden: true
 ---
 
 ## Introdução 
