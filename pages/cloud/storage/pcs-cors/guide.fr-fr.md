@@ -1,5 +1,3 @@
-# CORS
-
 ## Préambule
 
 CORS est un mécanisme qui permet au code s'exécutant dans un navigateur (Javascript par exemple) de faire des requêtes vers un domaine autre que celui d'où il provient.
