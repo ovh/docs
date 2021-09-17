@@ -33,7 +33,7 @@ Esta es la lista de programas incluidos en la siguiente:
 
 ### Contratar una licencia
 
-Acceda a nuestra web de [OVHcloud.com](https://www.ovh.es/office-365/){.external} y seleccione el apartado "Herramientas colaborativas" de nuestra sección "Web Cloud". 
+Acceda a nuestra web de [OVHcloud.com](https://www.ovh.es/office-365/){.external} y seleccione el apartado "Herramientas colaborativas" de nuestra sección "Web Cloud".
 
 También puede contratar una licencia desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Una vez conectado, seleccione `Web Cloud`{.action} en la barra superior y haga clic en el botón `Contratar`{.action} y en `o365`{.action}.
 
@@ -62,14 +62,14 @@ Una vez activada la licencia, recibirá un mensaje de correo electrónico en la 
 Este mensaje de correo electrónico incluye la información necesaria para descargar e instalar su suite Microsoft 365, es decir, la dirección de **correo electrónico de activación** y la **contraseña**.
 
 >
-> Si desea establecer usted mismo la contraseña, deberá hacerlo desde el área de cliente. En la sección `Web Cloud`, haga clic en `Microsoft`{.action} ` `{.action} en la columna izquierda y seleccione el grupo de licencias correspondiente.
+> Si desea establecer usted mismo la contraseña, deberá hacerlo desde el área de cliente. En la sección `Web Cloud`, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione el grupo de licencias correspondiente.
 >
 > Haga clic en el botón `...`{.action} a la derecha de la licencia correspondiente y, seguidamente, en `Cambiar la contraseña`{.action}.
 >
 >![correo electrónico](images/Outlook-cps1-03.png){.thumbnail}
 >
 
-Acceda a <https://portal.office.com/>y conéctese con la dirección de **correo electrónico de activación** y la **contraseña** previamente configuradas. Se abrirá una ventana en la que podrá descargar la suite Microsoft 365 de su equipo con las instrucciones de instalación.
+Acceda a <https://portal.office.com/> y conéctese con la dirección de **correo electrónico de activación** y la **contraseña** previamente configuradas. Se abrirá una ventana en la que podrá descargar la suite Microsoft 365 de su equipo con las instrucciones de instalación.
 
 ![correo electrónico](images/Outlook-cps1-04.png){.thumbnail}
 

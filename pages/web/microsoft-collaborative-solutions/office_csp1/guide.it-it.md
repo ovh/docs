@@ -33,7 +33,7 @@ Ecco l'elenco dei software inclusi nella suite:
 
 ### Ordina una licenza
 
-Accedi al nostro sito [OVHcloud.com](https://www.ovh.it/office-365/){.external} e seleziona la sezione "Strumenti in collaborazione" della sezione "Web Cloud". 
+Accedi al nostro sito [OVHcloud.com](https://www.ovh.it/office-365/){.external} e seleziona la sezione "Strumenti in collaborazione" della sezione "Web Cloud".
 
 È possibile ordinare una licenza direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona `Web Cloud`{.action} nella fascia superiore e clicca sul pulsante `Ordina`{.action} e su `o365`{.action}.
 

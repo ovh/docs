@@ -33,7 +33,7 @@ Eis a lista dos softwares incluídos:
 
 ### Encomendar uma licença
 
-Aceda ao nosso site [OVHcloud.com](https://www.ovh.pt/office-365/){.external} e selecione a rubrica "Ferramentas colaborativas" na nossa secção "Web Cloud". 
+Aceda ao nosso site [OVHcloud.com](https://www.ovh.pt/office-365/){.external} e selecione a rubrica "Ferramentas colaborativas" na nossa secção "Web Cloud".
 
 Também pode encomendar uma licença a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Uma vez ligado, selecione a `Web Cloud`{.action} no painel superior e clique em `Encomendar`{.action} e `o365`{.action}.
 
@@ -69,7 +69,7 @@ Este e-mail contém as informações necessárias para o download e a instalaç�
 >![emails](images/Outlook-cps1-03.png){.thumbnail}
 >
 
-Aceda <https://portal.office.com/>e ligue-se ao endereço **de e-mail de ativação** e à **password** previamente configuradas. Será encaminhado para uma janela que lhe permite descarregar a suite Microsoft 365 no seu computador com as instruções de instalação.
+Aceda <https://portal.office.com/> e ligue-se ao endereço **de e-mail de ativação** e à **password** previamente configuradas. Será encaminhado para uma janela que lhe permite descarregar a suite Microsoft 365 no seu computador com as instruções de instalação.
 
 ![emails](images/Outlook-cps1-04.png){.thumbnail}
 

@@ -33,7 +33,7 @@ Oto lista programów zawartych w pakiecie:
 
 ### Zamów licencję
 
-Przejdź na naszą stronę [OVHcloud.com](https://www.ovh.pl/office-365/){.external} i wybierz sekcję "Narzędzia współpracy" w sekcji "Web Cloud". 
+Przejdź na naszą stronę [OVHcloud.com](https://www.ovh.pl/office-365/){.external} i wybierz sekcję "Narzędzia współpracy" w sekcji "Web Cloud".
 
 Licencję możesz również zamówić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Po zalogowaniu wybierz `Web Cloud`{.action} na górnym pasku, następnie kliknij przycisk `Zamów`{.action} i `o365`{.action}.
 
@@ -62,7 +62,7 @@ Po aktywacji licencji otrzymasz e-mail na adres e-mail do kontaktu Twojego konta
 E-mail zawiera informacje niezbędne do pobrania i instalacji pakietu Microsoft 365, **a mianowicie adres e-mail aktywacyjny** oraz **hasło**.
 
 >
-> Jeśli chcesz samodzielnie zdefiniować hasło, musisz to zrobić w Panelu klienta. W sekcji `Web Cloud` kliknij Microsoft` na pasku usług po lewej stronie, następnie `{.action}Office` `{.action} i wybierz odpowiednią grupę licencji.
+> Jeśli chcesz samodzielnie zdefiniować hasło, musisz to zrobić w Panelu klienta. W sekcji `Web Cloud` kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Office`{.action} i wybierz odpowiednią grupę licencji.
 >
 > Kliknij przycisk `...`{.action} po prawej stronie wybranej licencji, a następnie `Zmień hasło`{.action}.
 >
