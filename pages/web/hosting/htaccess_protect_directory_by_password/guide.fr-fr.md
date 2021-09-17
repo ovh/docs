@@ -116,7 +116,7 @@ Require valid-user
 >
 > Dans cet exemple, il faut remplacer **votre_login_ftp** par votre [identifiant FTP](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter). Dans la rubrique `Hébergements`{.action}, vous le trouverez dans l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
 >
-> Pensez également, si besoin, à remplacer dans l'exemple ci-dessous **« dossier_racine »** par le nom du [dossier contenant les fichiers de votre site](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
+> Remplacez si besoin dans l'exemple ci-dessous **« dossier_racine »** par le nom du [dossier contenant les fichiers de votre site](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
 >
 
 #### Bloquer l'accès à un ou plusieurs fichiers
