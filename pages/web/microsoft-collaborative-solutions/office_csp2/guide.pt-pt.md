@@ -58,7 +58,7 @@ Surgem as seguintes informações:
 
 - **Nome interno do serviço**: indica o nome do seu serviço. Isto só é visível a partir da Área de Cliente.
 - **Nome de apresentação do serviço**: permite personalizar o nome de visualização do serviço na sua Área de Cliente.
-- **Criado a: ** indica a data de criação do serviço.
+- **Criado a**: indica a data de criação do serviço.
 - **Portal de administração Microsoft**: ligação do portal Office que permite administrar as suas subscrições.
 - **Reinicializar a password administrador**: permite alterar a palavra-passe de ligação ao portal de administração Microsoft.
 
@@ -109,4 +109,3 @@ Para se conectar, deve introduzir o seu ID de utilizador bem como a palavra-pass
 ## Saiba mais
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
-

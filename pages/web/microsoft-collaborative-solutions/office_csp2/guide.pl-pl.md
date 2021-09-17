@@ -20,13 +20,13 @@ Office 365 Resellerzy (CSP2) to usługa pozwalająca na korzystanie z różnych 
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
 ### Zamów usługę Office 365 Reseller
 
-Aby zamówić usługę Office 365 Reseller, przejdź do [Panelu klienta OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Po zalogowaniu wybierz `Sunrise`{.action} na górnym pasku, a następnie kliknij `Office 365 Reseller`{.action}.
+Aby zamówić usługę Office 365 Reseller, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Po zalogowaniu wybierz `Sunrise`{.action} na górnym pasku, a następnie kliknij `Office 365 Reseller`{.action}.
 
 - Uzupełnij dane kontaktowe klienta końcowego, są one wymagane, aby zdefiniować menedżera grupy licencji (Tenant), którą utworzysz.
 
@@ -50,7 +50,7 @@ Aby zamówić usługę Office 365 Reseller, przejdź do [Panelu klienta OVHcloud
 
 ### Zarządzaj usługą Office 365 Reseller
 
-Po utworzeniu i udostępnieniu usługi Office 365, można nią zarządzać poprzez [Panel klienta OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+Po utworzeniu i udostępnieniu usługi Office 365, można nią zarządzać poprzez [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 W tym celu przejdź do sekcji `Sunrise`{.action}. W menu po lewej stronie wybierz `Office 365 Reseller`{.action} i wybierz usługę.
 
