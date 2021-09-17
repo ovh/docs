@@ -2,7 +2,7 @@
 title: What do I do if my website is down?
 slug: server-error-inaccessible
 excerpt: How to diagnose the causes of inaccessibility of your web site
-section: Diagnostics
+section: Troubleshooting
 Order: 1
 ---
 
