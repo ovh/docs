@@ -6,7 +6,7 @@ section: Tutorials
 order: 3
 ---
 
-**Last updated April 08<sup>th</sup>, 2020.**
+**Last updated September 15<sup>th</sup>, 2021.**
 
 <style>
  pre {
@@ -64,7 +64,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-r
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc7/aio/deploy/recommended.yaml
 ```
 
-### For Kubernetes 1.20, choose the [v2.3.1](https://github.com/kubernetes/dashboard/releases/tag/v2.3.1)
+### For Kubernetes 1.20, choose version [v2.3.1](https://github.com/kubernetes/dashboard/releases/tag/v2.3.1)
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml

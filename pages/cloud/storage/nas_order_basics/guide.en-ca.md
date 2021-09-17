@@ -1,134 +1,119 @@
 ---
-title: NAS-HA
+title: Getting started with a HA-NAS solution
 slug: nas/get-started
-excerpt: Find out how to order and use a NAS-HA.
+excerpt: Find out how to manage a HA-NAS via the OVHcloud Control Panel
 section: NAS
+order: 01
 ---
 
+**Last updated 16th September 2021**
+
+## Objective
+
+Network Attached Storage (NAS) is a file server connected to a network whose main function is the storing of data in a centralised volume for heterogeneous network clients.
 
 ## Requirements
-The Network Attached Storage (NAS) is a file server connected to a network whose main function is the stocking of data in a centralized volume for heterogeneous network clients.
 
-To order and configure a NAS-HA, you must:
+- an IP address attached to an OVHcloud service (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud instance, etc.)
+- a [HA-NAS solution](https://www.ovh.com/ca/en/nas/)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 
-- Have an IP attached to an OVH service (dedicated server, VPS, Public Cloud instance, ADSL, ...)
-- Access to the customer area.
+## Instructions
 
+You can manage your HA-NAS via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 
-## Order a NAS-HA
-To order a NAS-HA, you must first connect to your customer area.
+Once you have logged in, click on `Bare Metal Cloud`{.action}, then `NAS and CDN`{.action} in the menu on the left. Click on your service to access the administration menu.
 
-Then, go to the universe `Bare Metal Cloud`{.action}, select `Order`{.action} on the top left, then select `NAS-HA`{.action}.
+![NAS access](images/nas2021-01.png){.thumbnail}
 
+### Creating a partition
 
-![NAS](images/NAS-1.png){.thumbnail}
+To add a new partition, click `Create a partition`{.action}.
 
-You can choose the location of your NAS, the type of NAS, and the initial commitment time.
+![create a partition](images/nas2021-02.png){.thumbnail}
 
-All you have to do is read and validate the general conditions in order to generate the order form that will allow you to settle the rental of the NAS.
+Simply enter your partition **name**, partition **size**, and authorised **protocol** (NFS or CIFS).
 
+![partition attributes](images/nas2021-03.png){.thumbnail}
 
-## Use a NAS-HA
+### Modifying the size of a partition
 
-### Creating a Partition
-Once you have the NAS-HA in your possession, go to your customer area, universe `Bare Metal Cloud`{.action}, section `NAS and CDN`{.action} and select your NAS.
+To change the size of a partition, click on the `...`{.action} button to the right of the partition concerned, then `Modify size`{.action}.
 
-Then click `Create a partition`{.action}.
+![change the size of a partition](images/nas2021-04.png){.thumbnail}
 
-
-![NAS-0](images/NAS-0.png){.thumbnail}
-
-All you have to do is fill in the **Name of your partition**, **size** of the partition, as well as the **authorized protocol** (NFS or CIFS).
-
-
-### Change the size of a partition
-To change the size of a partition, go to your customer space, universe `Bare Metal Cloud`{.action}, section `Platforms and services`{.action} and select your NAS.
-
-Click on the '...' to the right of the existing partition, then `Change size`{.action}.
-
-
-![NAS-2](images/NAS-2.png){.thumbnail}
-
-Specify the new size, then validate.
-
+Enter the new size, then confirm.
 
 ### Change the frequency of snapshots
-By default, a snapshot of the content of your NAS happens every hour, and registers on your NAS.
 
-However, you can create up to 3 additional snapshots at different frequencies if desired, which will also be stored on your NAS.
+By default, a snapshot of your NAS content takes place every hour, and is saved on your NAS.
 
-To do this, go to your customer area, universe `Bare Metal Cloud`{.action}, section `Platforms and services`{.action} and select your NAS.
+However, you can create up to 3 additional snapshots at different frequencies if you wish, which will also be saved on your NAS.
 
-Click on the '...' to the right of the existing partition, then `Snapshot frequency`{.action}.
+To do this, click the `...`{.action} button to the right of the partition concerned, then click `Frequency of snapshots`{.action}.
 
+![change snapshot frequency](images/nas2021-05.png){.thumbnail}
 
-![NAS-2](images/NAS-2.png){.thumbnail}
+Select the new frequency, then confirm.
 
-Select the frequency and confirm.
+### Creating an instant snapshot
 
+Apart from the snapshots taken automatically, you can create an instant snapshot of a partition at any time by clicking on the `...`{.action} button to the right of the partition, then on `Custom snapshot`{.action}.
 
-### Add an access
-In order to access the partition you created earlier, you need to configure an access.
+![snapshot](images/nas2021-10.png){.thumbnail}
 
+Name the snapshot and click `Add`{.action}.
 
+### Adding an access
+
+In order to access the partition you created earlier, you will need to configure access.
 
 > [!primary]
 >
-> Only the IPs of OVH services are compatible with the use of your NAS (eg : a dedicated server, an ADSL line, a VPS, a Public Cloud instance, etc.)
-> 
+> Only OVHcloud service IP addresses can access your NAS (e.g. a dedicated server, a VPS, a Public Cloud instance, etc.).
+>
 
-Go to your customer area, universe `Bare Metal Cloud`{.action}, section `Platforms and services`{.action} and select your NAS.
+To authorise an IP to access the NAS, click on the `...`{.action} button to the right of the existing partition, then on `Manage access`{.action}.
 
-Click on the '...' located to the right of the existing partition, then `Manage access`{.action}.
+![manage access](images/nas2021-06.png){.thumbnail}
 
+Then click `Add an access`{.action}, and select the IP address of your OVHcloud product.
+<br>You must also define whether the authorised access for this IP address is read-only or read/write.
 
-![NAS-2](images/NAS-2.png){.thumbnail}
-![NAS-4](images/NAS-4.png){.thumbnail}
+![add access](images/nas2021-07.png){.thumbnail}
 
-Now you can `Add access`{.action}, and select the IP of your OVH product.
+#### Deleting an access
 
+To remove access to a partition, click on the `...`{.action} button to the right of the IP address concerned, then `Delete`{.action}.
 
-![createaccess](images/NAS-3.png){.thumbnail}
+![createaccess](images/nas2021-09.png){.thumbnail}
 
-
-### Remove a partition
-
+### ZFS settings
 
 > [!warning]
 >
-> Deleting a partition results in the total and permanent deletion of any data present on it.
-> 
+> All the default Z File System settings are optimised. Though we do not recommend changing those settings, this menu does allow you to adjust the ZFS that the HA-NAS is using.
+>
 
-To delete a partition, go to your customer space, universe `Bare Metal Cloud`{.action}, section `Platforms and services`{.action} and select your NAS.
+To change the ZFS settings of a partition, click on the `...`{.action} button to the right of the partition concerned, then `Z File System (ZFS) settings`{.action}.
 
-Click on the '...' to the right of the existing partition, then `Delete`{.action}.
+![zfss](images/nas2021-13.png){.thumbnail}
 
+- **Disabling access time update (atime)**: Disabling *atime* means the kernel will no longer update the file system timestamp each time a file is accessed. This can be useful to speed up frequent read operations, for example on static web pages. However, it should not be enabled for consistency-critical applications such as databases.
+- **ZFS recordsize**: This property changes the maximum block size on the ZFS filesystem. Please note that ZFS will still use a smaller block size if the file is smaller than the maximum. For example, a 16 KB file will use a 16 KB block (plus metadata) to not waste storage space. We generally advise against changing ZFS *recordsize* for this reason.
+- **Sync**: This changes the behaviour of ZFS filesystem transactions with regard to RAM data buffering and writing data to disk. We do not recommend changing this property without an appropriate reason.
 
-![NAS-2](images/NAS-2.png){.thumbnail}
+### Deleting a partition
 
+> [!alert]
+>
+> Deleting a partition deletes all of the data stored on it permanently.
+>
 
-### Delete an access
-To delete an access, go to your customer space, universe `Bare Metal Cloud`{.action}, section `Platforms and services`{.action} and select your NAS.
+To delete a partition, click on the `...`{.action} button to the right of the existing partition, then `Delete`{.action}.
 
-Click on the '...' located to the right of the existing partition, then `Manage access`{.action}.
+![delete a partition](images/nas2021-08.png){.thumbnail}
 
+## Go further
 
-![createaccess](images/NAS-3.png){.thumbnail}
-
-Then click on the icon to the right of the access currently present, and confirm the deletion.
-
-
-### ZFS settings
-To change some of the ZFS settings, go to your customer space, universe `Bare Metal Cloud`{.action}, section `NAS and CDN`{.action} and select your NAS.
-
-Click on the '...' located to the right of the existing partition, then `Z File System (ZFS) settings`{.action}.
-
-
-![zfss](images/NAS-5.png){.thumbnail}
-
-
-All the default settings are optimal and generally we do not recommend to change this but this menu does allow you to tune the ZFS filesystem that the NAS-HA is using.
-
-- Access time update (atime): This is an option to tell the ZFS filesystem to not update the access times or could be referred to the last date and time a specific file had bean read on the filesystem level. This option can help with frequent read operation like some static web pages for example but should not be done for something like a database.
-- ZFS record size: This property changes the maximum block size on the ZFS filesystem but do note that ZFS will also use a smaller block size if the file is smaller. For example, a 16KB file will use a 16KB(plus metadata) to not waist space. We generally don't recommend to change this option because of this reason.
-- Sync: This changes the behaviour of how the ZFS filesystem will take in data to RAM and/or the drives. We do not recommend changing this unless you know what you're doing.
+Join our community of users on <https://community.ovh.com/en/>.
