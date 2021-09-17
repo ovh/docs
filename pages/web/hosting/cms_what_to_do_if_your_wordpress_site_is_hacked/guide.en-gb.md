@@ -2,7 +2,7 @@
 title: What to do if your WordPress site is hacked
 excerpt: ''
 slug: what_to_do_if_your_wordpress_site_is_hacked
-section: Diagnostics
+section: Troubleshooting
 legacy_guide_number: g1874
 ---
 

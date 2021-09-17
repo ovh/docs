@@ -3,6 +3,7 @@ title: Web hosting come fai a diagnosticare una pagina bianca?
 excerpt: Questa guida ti spiega come determinare la causa della visualizzazione di una pagina bianca nel tuo sito
 slug: web_hosting_come_fai_a_diagnosticare_una_pagina_bianca
 legacy_guide_number: g1562
+section: Diagnostica
 order : 8
 ---
 
