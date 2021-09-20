@@ -25,7 +25,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution and in [OVHcloud Web Hosting plans](https://www.ovh.com/au/web-hosting/){.external})
+- an MX Plan email address (included in the MX Plan solution and in [OVHcloud Web Hosting plans](https://www.ovh.com.au/web-hosting/){.external})
 - Thunderbird software installed on your macOS system
 - login credentials for the email account to be configured
 
@@ -57,7 +57,7 @@ For **POP** configuration, the values are:
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.com/au/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guides on [Using the Outlook Web App](../../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/) and [Using an email address with RoundCube](https://docs.ovh.com/fr/emails/utilisation-roundcube/#ou-et-comment-se-connecter-au-webmail-roundcube) respectively.
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.com.au/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guides on [Using the Outlook Web App](../../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/) and [Using an email address with RoundCube](https://docs.ovh.com/fr/emails/utilisation-roundcube/#ou-et-comment-se-connecter-au-webmail-roundcube) respectively.
 
 ### Retrieving a backup of your email address
 
