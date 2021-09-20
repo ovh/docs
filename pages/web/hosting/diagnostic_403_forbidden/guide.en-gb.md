@@ -49,7 +49,7 @@ First, check the security of your computer station(s):
 
 - Perform security updates.
 - Also check that an antivirus software is installed, update it and run a complete scan. If you do not have such software, consult a [specialised service provider](https://partner.ovhcloud.com/en-gb/) before installing it.
-- Change all your local passwords, including your email addresses ones, in accordance with these [best practices](../../../customer/manage-password/#generate-a-strong-password).
+- Change all your local passwords, including your email addresses ones, in accordance with these [best practices](https://docs.ovh.com/gb/en/customer/manage-password/#generate-a-strong-password).
 - Change the passwords for your OVHcloud services by following the instructions in this [guide](../gerer-et-acceder-a-ses-mots-de-passe/).
 
 > [!warning]

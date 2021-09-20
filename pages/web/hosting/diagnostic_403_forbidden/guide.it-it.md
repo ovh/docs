@@ -49,7 +49,7 @@ Verifica la sicurezza della tua postazione(e) informatica:
 
 - Effettua gli aggiornamenti di sicurezza.
 - Verifica anche che sia installato un antivirus, aggiorna e avvia una scansione completa. Se non ne hai uno, consulta un [provider specializzato](https://partner.ovhcloud.com/it/) prima di installare il tuo servizio.
-- Modificate l'insieme delle vostre password locali, in particolare quelle dei vostri indirizzi email, rispettando queste [buone pratiche](../../../gestire-la-password/#genera-una-password-efficace).
+- Modificate l'insieme delle vostre password locali, in particolare quelle dei vostri indirizzi email, rispettando queste [buone pratiche](https://docs.ovh.com/it/customer/gestire-la-password/#genera-una-password-efficace).
 - Modificare le password dei servizi OVHcloud seguendo le indicazioni di questa [guida](../hosting_web_gestisci_le_tue_password/).
 
 > [!warning]
@@ -119,14 +119,14 @@ Una risposta **"200 Permissions changed on"** conferma che l'operazione è stata
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Consigli in caso di hacking del tuo sito WordPress](../piratage-de-votre-site-wordpress-conseils-et-cas-dusages/)
+[Consigli in caso di hacking del tuo sito WordPress](../hacking_del_tuo_sito_wordpress_consigli_e_casi_pratici/)
 
-[Attivazione del firewall applicativo](../activation-pare-feu-applicatif/)
+[Attivazione del firewall applicativo](../hosting_condiviso_attiva_un_firewall_applicativo/)
 
-[Modificare la versione di PHP su un hosting Web](../configurer-le-php-sur-son-hebergement-web-mutu-2014/)
+[Modificare la versione di PHP su un hosting Web](../configura_php_sul_tuo_hosting_web_condiviso_2014_ovh/)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/fr/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
