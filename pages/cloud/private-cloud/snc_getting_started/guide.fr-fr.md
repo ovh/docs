@@ -57,38 +57,37 @@ Pour cela, effectuez les actions suivantes :
 
 L'utilisateur **« admin »** doit avoir des informations à jour et disposer de l'autorisation nécessaire: depuis l'onglet `Utilisateurs`{.action} , assurez-vous pour l'utilisateur "admin" que le numéro de téléphone et l'adresse e-mail sont correctement renseignés. L'utilisateur **« admin »** doit aussi disposer de l'autorisation "**token validator**". Si nécessaire, pour changer d'utilisateur, cliquez sur le bouton `...`{.action} , puis sur `Modifier`{.action}. N'hésitez pas à consulter notre guide [Présentation de l’espace client Private Cloud OVHcloud](../manager-ovh-private-cloud/).
 
-Accedez à l’interface sécurisée du service, exemple : https://pcc-192-0-2-1.ovh.com/secure/ (attention à ne pas oublier le “/” final de l’adresse).
-
-![Mot de passe perdu](images/vsphere_secnumcloud_0.png){.thumbnail}
+Accédez à l’interface sécurisée du service, exemple : https://pcc-192-0-2-1.ovh.com/secure/ (attention à ne pas oublier le “/” final de l’adresse).
 
 Cliquez sur le bouton `Password lost`{.action}.
 
-![Lancement du processus](images/vsphere_secnumcloud_1.png){.thumbnail}
+![Mot de passe perdu](images/vsphere_secnumcloud_0.png){.thumbnail}
 
 Un message indique que vous devez être en mesure de recevoir des messages SMS pour continuer.
 Cliquez sur le bouton `start the process`{.action}.
 
-![Informations utilisateur](images/vsphere_secnumcloud_2.png){.thumbnail}
+![Lancement du processus](images/vsphere_secnumcloud_1.png){.thumbnail}
 
 Renseignez les informations demandées pour le compte **admin** (elles doivent être identiques aux informations précédemment ajoutées dans le manager) et cliquez sur `Next step`{.action}.
 
-![Informations utilisateur](images/vsphere_secnumcloud_3.png){.thumbnail}
+![Informations utilisateur](images/vsphere_secnumcloud_2.png){.thumbnail}
 
 Au sein de l’interface, vous devez alors :
 
-- Entrer le code reçu par SMS,
-- Entrer le code reçu par courriel,
-- Renseigner un nouveau mot de passe,
-- Confirmer celui-ci,
-- Scanner le QRcode avec l’application d’authentification de votre choix,
-- Entrer le code obtenu.
+- entrer le code reçu par SMS;
+- entrer le code reçu par courriel;
+- renseigner un nouveau mot de passe;
+- confirmer celui-ci;
+- scanner le QRcode avec l’application d’authentification de votre choix;
+- entrer le code obtenu.
 
-Cliquez sur le bouton `Change password`{.action}.
+Cliquez enfin sur le bouton `Define password`{.action}.
+
+![Informations utilisateur](images/vsphere_secnumcloud_3.png){.thumbnail}
 
 Une fois le compte activé et sécurisé (2FA & mot de passe), il est nécessaire de confirmer ce compte comme **token validator**. Ceci afin de pouvoir valider les opérations sensibles sur l'infrastructure.
 
 Pour cela il faut confirmer la poursuite des opérations via le call d'API suivant :
-
 
 > [!api]
 >
@@ -103,6 +102,7 @@ En spécifiant :
 Vous allez alors recevoir un SMS pour valider l'autorisation "**token validator**" sur le numéro de téléphone précédemment renseigné.
 
 Voici un exemple de SMS envoyé:
+
 ```
 OVHcloud - Dedicated Cloud - message destiné à l'utilisateur admin.
 L'opération testTokenValidation (#1743283) sur pcc-192-0-2-1 a besoin d'une validation.
@@ -160,7 +160,7 @@ Configurez alors le KMS dans vSphere en vous aidant du guide suivant :
 
 * [Activation du chiffrement des machines virtuelles (VM Encryption)](../vm-encrypt/)
 
-### Etape  6: Vérification de la conformité SecNumCloud
+### Etape  6: vérification de la conformité SecNumCloud
 
 Après avoir effectué les démarches de sécurisation de l'infrastructure, vous devez contacter le support OVHcloud
 pour une revue de la mise en conformité SecNumCloud de l'infrastructure vSphere.
