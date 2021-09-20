@@ -6,7 +6,7 @@ section: Fonctionnalités OVHcloud
 hidden: true
 ---
 
-**Dernière mise à jour le 19/08/2021**
+**Dernière mise à jour le 14/09/2021**
 
 ## Objectif
 
@@ -32,8 +32,8 @@ Celui-ci contient notamment vos informations de connexion, telles que dans l'exe
 > - nom d'utilisateur : admin
 > - mot de passe : **********
 >
-> Vous pouvez récupérer votre mot de passe depuis l'espace sécurisé : https://www.ovh.com/secret-as-a-service-ui/#!/secret-retrieve?id=mr8n2f85-tv19-6h1j-cu5m-lwfct1n5mali
->
+
+Vous noterez qu'il n'y a pas de mot de passe dans l'email, celui-ci sera obtenu à l'issue de l'étape 2.
 
 ### Etape 1 : ajouter des adresses IP pour se connecter au vCenter
 
@@ -44,9 +44,91 @@ Le guide suivant vous décrit comment effectuer cette manipulation :
 
 * [Autoriser des IP à se connecter au vCenter](../autoriser-des-ip-a-se-connecter-au-vcenter/)
 
-A l'issue de cette configuration, vous serez en capacité d'ouvrir une session sur l'interface vSphere pour les prochaines étapes.
+### Etape 2 : configuration avancée de la sécurité
 
-### Etape 2 : configurer un VPN IPSec avec NSX-V
+Les mesures de sécurité suivantes sont mises en place à la livraison de votre service :
+
+* tous les utilisateurs existants de votre Private Cloud seront désactivés (lors de la livraison, seul l'utilisateur **admin** est présent);
+* vous devrez modifier les mots de passe des utilisateurs afin que ceux-ci soient réactivés;
+* vous devrez faire l'enrôlement 2FA au moment du changement des mots de passe des utilisateurs;
+* la modification des mots de passe de vos utilisateurs devra être réalisée uniquement à partir de l’interface sécurisée. Vous ne pourrez plus effectuer cette manipulation à partir de votre espace client OVHcloud.
+
+Pour cela, effectuez les actions suivantes :
+
+L'utilisateur **« admin »** doit avoir des informations à jour et disposer de l'autorisation nécessaire: depuis l'onglet `Utilisateurs`{.action} , assurez-vous pour l'utilisateur "admin" que le numéro de téléphone et l'adresse e-mail sont correctement renseignés. L'utilisateur **« admin »** doit aussi disposer de l'autorisation "**token validator**". Si nécessaire, pour changer d'utilisateur, cliquez sur le bouton `...`{.action} , puis sur `Modifier`{.action}. N'hésitez pas à consulter notre guide [Présentation de l’espace client Private Cloud OVHcloud](../manager-ovh-private-cloud/).
+
+Accédez à l’interface sécurisée du service, exemple : https://pcc-192-0-2-1.ovh.com/secure/ (attention à ne pas oublier le “/” final de l’adresse).
+
+Cliquez sur le bouton `Password lost`{.action}.
+
+![Mot de passe perdu](images/vsphere_secnumcloud_0.png){.thumbnail}
+
+Un message indique que vous devez être en mesure de recevoir des messages SMS pour continuer.
+Cliquez sur le bouton `start the process`{.action}.
+
+![Lancement du processus](images/vsphere_secnumcloud_1.png){.thumbnail}
+
+Renseignez les informations demandées pour le compte **admin** (elles doivent être identiques aux informations précédemment ajoutées dans le manager) et cliquez sur `Next step`{.action}.
+
+![Informations utilisateur](images/vsphere_secnumcloud_2.png){.thumbnail}
+
+Au sein de l’interface, vous devez alors :
+
+- entrer le code reçu par SMS;
+- entrer le code reçu par courriel;
+- renseigner un nouveau mot de passe;
+- confirmer celui-ci;
+- scanner le QRcode avec l’application d’authentification de votre choix;
+- entrer le code obtenu.
+
+Cliquez enfin sur le bouton `Define password`{.action}.
+
+![Informations utilisateur](images/vsphere_secnumcloud_3.png){.thumbnail}
+
+Une fois le compte activé et sécurisé (2FA & mot de passe), il est nécessaire de confirmer ce compte comme **token validator**. Ceci afin de pouvoir valider les opérations sensibles sur l'infrastructure.
+
+Pour cela il faut confirmer la poursuite des opérations via le call d'API suivant :
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/securityOptions/{name}/resumePendingEnabling
+>
+
+En spécifiant :
+
+- {serviceName} : le nom du service (exemple: pcc-192-0-2-1)
+- {name} : snc
+
+Vous allez alors recevoir un SMS pour valider l'autorisation "**token validator**" sur le numéro de téléphone précédemment renseigné.
+
+Voici un exemple de SMS envoyé:
+
+```
+OVHcloud - Dedicated Cloud - message destiné à l'utilisateur admin.
+L'opération testTokenValidation (#1743283) sur pcc-192-0-2-1 a besoin d'une validation.
+Id d'opération : 1743283.
+Token de confirmation : 540427.
+Interface de validation : https://pcc-192-0-2-1.ovh.com/secure/operation-validation?task=1743283&token=540427
+Ce token est valide pour 15 minutes.
+Si vous ne confirmez pas cette opération avant l'expiration, elle sera annulée et aucune action ne sera effectuée.
+```
+
+> [!warning]
+>
+> Le token généré n'est valide que pour 15 minutes.
+> 
+> Les prochaines actions sont à effectuer dans ce temps imparti sinon la tâche sera annulée une fois ce temps écoulé.
+>
+> Il sera ensuite nécessaire de contacter le support pour finaliser les opérations.
+>
+
+Le guide suivant vous décrit comment effectuer cette manipulation :
+
+* [Valider une opération avec un token](../interface-secure/#valider-une-operation-avec-un-jeton)
+
+A l'issue de cette étape, vous serez en capacité d'ouvrir une session sur l'interface vSphere et valider toutes les opérations sensibles sur l'infrastructure lors les prochaines étapes.
+
+### Etape 3 : configurer un VPN IPSec avec NSX-V
 
 La mise en place d'un VPN est nécessaire pour vous permettre de vous connecter via Internet aux réseaux privés de votre environnement SecNumCloud.
 
@@ -54,7 +136,7 @@ Le guide suivant vous décrit comment effectuer cette manipulation :
 
 * [Configurer un VPN IPSec via une Gateway Edge](../configurer-un-vpn-via-une-gateway-edge/#ipsec-vpn)
 
-### Etape 3 : activer la private gateway
+### Etape 4 : activer la private gateway
 
 Nous allons maintenant basculer l'interface de management vSphere sur un des réseaux privés de l'environnement SecNumCloud.
 
@@ -64,7 +146,7 @@ Le guide suivant vous décrit comment effectuer cette manipulation :
 
 * [Activer la Private Gateway](../private-gateway/)
 
-### Etape 4 : mettre en place le KMS pour le chiffrement
+### Etape 5 : mettre en place le KMS pour le chiffrement
 
 Nous passons ensuite à la mise en place du chiffrement pour les machines virtuelles qui seront hébergées.
 
@@ -78,10 +160,10 @@ Configurez alors le KMS dans vSphere en vous aidant du guide suivant :
 
 * [Activation du chiffrement des machines virtuelles (VM Encryption)](../vm-encrypt/)
 
-### Etape 5 : demander l'activation de la conformité SecNumCloud
+### Etape  6: vérification de la conformité SecNumCloud
 
 Après avoir effectué les démarches de sécurisation de l'infrastructure, vous devez contacter le support OVHcloud
-pour les dernières étapes de mise en conformité SecNumCloud sur l'infrastructure vSphere.
+pour une revue de la mise en conformité SecNumCloud de l'infrastructure vSphere.
 
 ## Aller plus loin
 
