@@ -80,7 +80,7 @@ php crypt.php
 > Pour toute question complémentaire sur la méthode à utiliser pour chiffrer vos mots de passe, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
-Récupérez les mots de passe chiffrés (Ne copiez pas le **"<br />"** si vous exécutez la commande **« php crypter.php »** en SSH) :
+Récupérez les mots de passe chiffrés (Ne copiez pas le **"'<br />'"** si vous exécutez la commande **« php crypter.php »** en SSH) :
 
 ```bash
 motdepasse_chiffré1
