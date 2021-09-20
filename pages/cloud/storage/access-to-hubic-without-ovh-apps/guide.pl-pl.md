@@ -3,6 +3,7 @@ title: 'Logowanie do hubiC bez użycia strony WWW lub aplikacji'
 slug: logowanie-do-hubic-bez-aplikacji
 excerpt: 'Dowiedz się, jak się zalogować do klastra hubiC, używając jednej z trzech dostępnych metod'
 section: hubiC
+hidden: true
 ---
 
 ## Wprowadzenie 
