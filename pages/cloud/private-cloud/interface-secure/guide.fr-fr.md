@@ -6,7 +6,7 @@ section: Services et options OVHcloud
 order: 04
 ---
 
-**Dernière mise à jour le 30 juin 2020**
+**Dernière mise à jour le 17 septembre 2021**
 
 ## Objectif
 
@@ -17,7 +17,7 @@ OVHcloud vous met à disposition une interface sécurisée pour valider les opé
 ## Prérequis
 
 - Disposer d'une infrastructure avec l'option **advanced security** (inclus dans les offres [PCI-DSS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) et [HDS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/hds/)). Ce droit permet la validation.
-- Avoir accès à l'interface sécurisée du PCC, exemple : https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ (attention à ne pas oublier le “/” final de l’adresse).
+- Avoir accès à l'interface sécurisée du PCC, exemple : https://pcc-192-0-2-1.ovh.com/secure/ (attention à ne pas oublier le “/” final de l’adresse).
 
 ## En pratique
 
@@ -31,7 +31,7 @@ A partir de l'interface sécurisée, vous pouvez effectuer trois opérations. Re
 - [Modifier le mot de passe de l'utilisateur](./#modifier-le-mot-de-passe-de-lutilisateur)
 - [Réinitialiser un mot de passe](./#reinitialiser-un-mot-de-passe)
 
-### Valider une opération avec un token
+### Valider une opération avec un jeton
 
 Lorsqu'un token est reçu par SMS, il doit être entré dans l'interface sécurisée pour valider la tâche en attente.
 
@@ -54,7 +54,7 @@ Ce message contient:
 - le token de validation
 - un lien permettant de valider l'opération (notez que si votre téléphone n'est pas connecté à un réseau dont [l'adresse IP est autorisée](../manager-ovh-private-cloud/#securite), la page n'apparaîtra pas).
 
-Pour valider l'opération, connectez-vous via le lien affiché dans le message. Accédez ensuite à la section `Operation calidation`{.action}.
+Pour valider l'opération, connectez-vous via le lien affiché dans le message. Accédez ensuite à la section `Operation validation`{.action}.
 
 ![Validation de l'opération](images/operationValidation.png){.thumbnail}
 
@@ -83,7 +83,7 @@ Tout utilisateur peut modifier son mot de passe, même sans l'autorisation **tok
 > Si l'utilisateur n'a plus son mot de passe, il doit demander à un autre utilisateur disposant de l'autorisation **token validator** d'effectuer la modification pour lui, via la procédure [password reset](./#reinitialiser-un-mot-de-passe).
 > 
 
-Pour modifier le mot de passe d'un utilisateur, connectez-vous à l'interface sécurisée (`https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/`) et cliquez sur le bouton `Modifier le mot de passe`{.action}.
+Pour modifier le mot de passe d'un utilisateur, connectez-vous à l'interface sécurisée (`https://pcc-192-0-2-1.ovh.com/secure/`) et cliquez sur le bouton `Modifier le mot de passe`{.action}.
 
 ![Modifier le mot de passe](images/changePassword.png){.thumbnail}
 
@@ -102,7 +102,7 @@ Cette procédure n'est disponible que pour les utilisateurs disposant de l'autor
 > Si un utilisateur qui ne dispose pas de l'autorisation **token validator** perd son mot de passe, il devra demander à un utilisateur disposant de ce privilège de le réinitialiser.
 > 
 
-Pour réinitialiser le mot de passe d'un utilisateur, connectez-vous à l'interface sécurisée (`https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/`) et cliquez sur le bouton `Password lost`{.action}.
+Pour réinitialiser le mot de passe d'un utilisateur, connectez-vous à l'interface sécurisée (`https://pcc-192-0-2-1.ovh.com/secure/`) et cliquez sur le bouton `Password lost`{.action}.
 
 ![Mot de passe perdu](images/passwordLost.png){.thumbnail}
 
