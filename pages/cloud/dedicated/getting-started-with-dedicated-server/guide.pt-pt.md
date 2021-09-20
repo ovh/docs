@@ -3,6 +3,7 @@ title: 'Primeiros passos com um servidor dedicado'
 slug: primeiros-passos-servidor-dedicado
 excerpt: 'Saiba como utilizar o seu novo servidor dedicado'
 section: Introdução
+order: 1
 ---
 
 > [!primary]

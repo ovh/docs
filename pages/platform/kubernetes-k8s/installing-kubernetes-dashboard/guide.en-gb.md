@@ -64,6 +64,12 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-r
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc7/aio/deploy/recommended.yaml
 ```
 
+### For Kubernetes 1.20, choose the [v2.3.1](https://github.com/kubernetes/dashboard/releases/tag/v2.3.1)
+
+```bash
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml
+```
+
 It should display something like this:
 
 <pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc7/aio/deploy/recommended.yaml
@@ -120,7 +126,7 @@ Using the `cluster-admin` role for your cluster, we will create a `RoleBinding`,
 To do this, please copy the following YAML into a `dashboard-cluster-role-binding.yml` file:
 
 ```yaml
-apiVersion: rbac.authorization.k8s.io/v1beta1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
   name: admin-user
