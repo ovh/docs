@@ -1,7 +1,7 @@
 ---
 title: Managing a group of Microsoft 365 OVHcloud licences
 slug: manage-office-365-csp1
-excerpt: Find out how to subscribe to a Microsoft 365 licence and manage it in the OVHcloud Control Panel.
+excerpt: Find out how to subscribe to a Microsoft 365 licence and manage it in the OVHcloud Control Panel
 section: Office
 order: 2
 ---
@@ -10,7 +10,7 @@ order: 2
 
 ## Objective
 
-There are several advantages to subscribing to the OVHcloud **Microsoft 365 apps for business** or **Microsoft 365 apps for enterprise** offers. Billing is monthly and you can use one licence for 5 PCs/Macs, 5 tablets and 5 smartphones.
+There are several advantages to subscribing to the OVHcloud **Microsoft 365 Apps for business** or **Microsoft 365 Apps for enterprise** offers. Billing is monthly and you can use one licence for 5 PCs/Macs, 5 tablets and 5 smartphones.
 
 Your Microsoft 365 licences are collected into a group, also called `Service`. An Apps for business licence group can contain up to 300 licences, an Apps for enterprise licence group is unlimited.
 
