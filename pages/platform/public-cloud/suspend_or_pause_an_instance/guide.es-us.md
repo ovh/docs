@@ -25,9 +25,9 @@ section: Gestión del proyecto
 
 ## Requisitos
 
-- Tener [una instancia de Public Cloud](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/) sobre la facturación por horas
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o al [Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/)
-- Conocimiento de la [API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) y de las [variables Openstack](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
+- Tener [una instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/) sobre la facturación por horas
+- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o al [Horizon](https://docs.ovh.com/us/es/public-cloud/crear_un_acceso_a_horizon/)
+- Conocimiento de la [API de OpenStack](https://docs.ovh.com/us/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) y de las [variables Openstack](https://docs.ovh.com/us/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
 
 ## Procedimiento
 
@@ -70,11 +70,11 @@ Para ver el snapshot, acceda al menú de la izquierda y haga clic en `Instance B
 
 #### Desde la interfaz Horizon
 
-Para continuar, debe [crear un acceso a Horizon](..crear_un_acceso_a_horizon/) y [conectarse al panel Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Para continuar, debe [crear un acceso a Horizon](../crear_un_acceso_a_horizon/) y [conectarse al panel Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Si ha desplegado instancias en diferentes regiones, asegúrese de que se encuentre en la región adecuada. Puede comprobarlo en la esquina superior izquierda de Horizon.
 
-![horizon](images/firstaccesshorizon.png){.thumbnail}
+![first access horizon](images/firstaccesshorizon.png){.thumbnail}
 
 Haga clic en el menú `Compute`{.action} en el lado izquierdo y seleccione `Instances`{.action}. Seleccione `Shelve Instance`{.action} en la lista desplegable de la instancia correspondiente.
 
@@ -92,8 +92,8 @@ Para ver la instantánea (snapshot), haga clic en `Images`{.action} en el menú 
 
 Antes de continuar, se recomienda consultar las siguientes guías:
 
-- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/)
-- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/).
+- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/us/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/)
+- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/us/es/public-cloud/cargar-las-variables-de-entorno-openstack/).
 
 Una vez que el entorno esté listo, escriba lo siguiente en la línea de comandos:
 
