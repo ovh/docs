@@ -1,4 +1,3 @@
-
 ---
 title: MongoDB - Connect with Python
 excerpt: Connect to your Public Cloud Databases for MongoDB using the Python programming language
@@ -17,9 +16,9 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
-- An up and running Public Cloud Database for MongoDB; This guide was made with MongoDB 4.4.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account.
+- An up and running Public Cloud Database for MongoDB. This guide was made with MongoDB 4.4.
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.9.5.
 
 ## Concept
@@ -28,7 +27,7 @@ A MongoDB instance can be managed through multiple ways.
 One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MongoDB with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-cli).
 
 Another way is to interact directly using a programming language, such as Python.
-Python is one of the major programming languages in the world, especially when in the Data ecosystem.
+Python is one of the major programming languages in the world, especially in the Data ecosystem.
 MongoDB provides official Python drivers, allowing us to connect and manage a MongoDB instance from code.
 
 In order to do so, we will need to set up our Python environment with MongoDB drivers, then configure our Public Cloud Databases for MongoDB instances to accept incoming connections, and finally code in Python to perform a few example actions.
@@ -43,10 +42,10 @@ In order to do so, we will need to set up our Python environment with MongoDB dr
 > Conda will allow you to build a specific environment when working with MongoDB, without impacting your existing configurations. For more information please visit <https://www.conda.io>.
 >
 
-To interact with your MongoDB instance using Python, your development environment needs to be configured with :
+To interact with your MongoDB instance using Python, your development environment needs to be configured with:
 
-- A compatible version of Python;
-- MongoDB official driver, called PyMongo, or Motor, when working asynchonously with MongoDB
+- A compatible version of Python.
+- MongoDB official driver, called PyMongo, or Motor, when working asynchonously with MongoDB.
 
 This guide will focus on the use of **PyMongo**, which covers most of the use cases.
 
@@ -63,6 +62,7 @@ Python 3.9.5
 ```
 
 In the same console, by typing a **pip list** check if **pymongo** is correctly installed :
+
 ```python
 laptop$  pip list           
 Package                Version
@@ -85,12 +85,11 @@ pymongo                3.12.0
 In my case, I can find **Python 3.9.5**, and **PyMongo 3.12**. Based on official MongoDB compatibility matrix linked previously, I will be able to connect to MongoDB instances in versions 4.x and 5.
 This is compliant with my current MongoDB 4.4 instance.
 
-Finally, copy the IP address of your Python environment and keep it for later.
+Finally, copy the IP address of your Python environment and save it for later.
 If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/){.external} from your station hosting the Python environment.
 In our example, we will use the (fake) IP 109.190.200.59.
 
 We are now ready to learn how to connect to our MongoDB instance !
-
 
 ### Configure your MongoDB instance to accept incoming connections
 
@@ -124,7 +123,7 @@ Click to authorize a new IP, and enter the previously found IP of your Python en
 
 > [!primary]
 >
-> If you want to allow any connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully. Every IPs will be authorized.
+> If you want to allow any connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully. Every IP will be authorized.
 >
 
 ### Get your connection information (URI)
@@ -187,10 +186,9 @@ MongoClient(host=['node1-123456789.database.cloud.ovh.net:27017'], document_clas
 ```
 
 If not, your CLI should give you more details about the issue, for example : 
-- *Authentication failed* : could be a error with your user login or password;
+- *Authentication failed* : could be an error with your user login or password;
 - *nodename nor servname provided, or not known* : could be a wrongly typed hostname;
 - *Connection reset by peer* : usually due to connection without secure TLS mode. use *tls=true* parameter.
-
 
 Once connected, you can perform multiple operations, for example a few inserts and a **find()** inside a collection :
 
@@ -236,7 +234,6 @@ The result here is for the **print(record)** :
 This code correctly found the two previously inserted objects. It means that here we were able to connect to the MongoDB instance, insert data, and look for this data.
 Congratulations! Everything is working properly.
 
-
 ## Go further
 
 [MongoDB capabilities](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/capabilities/)
@@ -248,5 +245,3 @@ Congratulations! Everything is working properly.
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
 Join our community of users on <https://community.ovh.com/en/>.
-
-
