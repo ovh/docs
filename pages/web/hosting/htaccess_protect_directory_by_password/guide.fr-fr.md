@@ -6,13 +6,13 @@ excerpt: "Retrouvez ici comment protéger l'accès à l'administration de votre 
 section: Réécriture et authentification
 ---
 
-**Dernière mise à jour le 16/09/2021**
+**Dernière mise à jour le 20/09/2021**
 
 ## Objectif
 
-Il peut parfois être nécessaire de protéger l'accès à une partie de votre site par des identifiants. Vous pourrez notamment mettre en place un fichier **« .htaccess »** afin de protéger l'accès à son interface d'administration. 
+Il peut parfois être nécessaire de protéger l'accès à une partie de votre site par des identifiants. Vous pourrez notamment mettre en place un fichier **« .htaccess »** afin de protéger l'accès à son interface d'administration.
 
-**Découvrez comment protéger l'accès à la partie Administrateur de votre site via une authentification par un fichier « .htaccess ».**
+**Découvrez comment protéger l'accès à la partie administrateur de votre site via une authentification par un fichier « .htaccess ».**
 
 > [!warning]
 >
@@ -34,11 +34,12 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 > La solution proposée ici n'est qu'une possibilité technique parmi d'autres pour mettre en place un espace administrateur sur votre site. Vous pouvez également utiliser la fonctionnalité [Module en 1 clic](../modules-en-1-clic/) proposée par [OVHcloud](https://www.ovh.com/fr/).
 >
 > Pour toute demande sur la création ou la programmation de votre site, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ces sujets.
-> 
+>
 
-### Créer l'arborescence
+### Etape 1 : créer l'arborescence
 
-Connectez-vous à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Ouvrez le [« dossier racine » de votre site](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud). Créez un fichier **« crypter.php »**.
+Connectez-vous à [l'espace de stockage](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Ouvrez le [« dossier racine »](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud) de votre site.<br>
+Créez un fichier **« crypter.php »**.
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
@@ -50,12 +51,12 @@ Ouvrez ou créez le dossier destiné à contenir la partie **« admin »** de vo
 >
 > Les fichiers **« .htpasswd »** et **« .htaccess »** peuvent être dans des dossiers différents. Un seul fichier **« .htpasswd »** peut être utilisé pour plusieurs **« .htaccess »**.
 >
-> Les paramétrages indiqués par un fichier **« .htaccess »** s'appliquent au répertoire où il est installé ainsi qu'à tous ses sous-répertoires.
+> Les paramètres définis par un fichier **« .htaccess »** s'appliquent au répertoire où il est installé ainsi qu'à tous ses sous-répertoires.
 >
 
-### Compléter le fichier « crypter.php »
+### Etape 2 : compléter le fichier « crypter.php »
 
-Inscrivez dans le fichier **« crypter.php »** créé précédemment les lignes suivantes (à répéter selon le nombre de mots de passe à générer):
+Inscrivez, dans le fichier **« crypter.php »** créé précédemment, les lignes suivantes (à répéter selon le nombre de mots de passe à générer):
 
 ```php
 <?php
@@ -74,12 +75,12 @@ php crypt.php
 
 > [!warning]
 >
-> Pour des raisons de sécurité, l'utilisation du SSH est recommandée. Toutefois, si vous disposez d'une offre **Kimsufi Web** ou **Perso2014** et que vous ne souhaitez pas passer sur une offre [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml), vous pouvez aussi exécuter le fichier **« crypter.php »** par votre navigateur Web (En allant sur une url du type **https://votre-domaine.ovh/crypter.php**).
+> Pour des raisons de sécurité, l'utilisation du SSH est recommandée. Toutefois, si vous disposez d'une offre **Kimsufi Web** ou **Perso2014** et que vous ne souhaitez pas passer sur une offre [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml), vous pouvez aussi exécuter le fichier **« crypter.php »** par le biais de votre navigateur Web (En allant sur une URL du type **https://votre-domaine.ovh/crypter.php**).
 >
 > Pour toute question complémentaire sur la méthode à utiliser pour chiffrer vos mots de passe, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
-Récupérez les mots de passe chiffrés (Ne pas copiez le **"<br />"** si vous exécutez la commande **« php crypter.php »** en SSH) :
+Récupérez les mots de passe chiffrés (Ne copiez pas le **"<br />"** si vous exécutez la commande **« php crypter.php »** en SSH) :
 
 ```bash
 motdepasse_chiffré1
@@ -87,7 +88,7 @@ motdepasse_chiffré2
 motdepasse_chiffré3
 ```
 
-### Compléter le fichier « .htpasswd »
+### Etape 3 : compléter le fichier « .htpasswd »
 
 Le fichier **« .htpasswd »** contient la liste des utilisateurs autorisés à se connecter à l'interface d'administration de votre site et leur mot de passe chiffré.
 
@@ -99,7 +100,7 @@ utilisateur2:motdepasse_chiffré2
 utilisateur3:motdepasse_chiffré3
 ```
 
-### Compléter le fichier « .htaccess »
+### Etape 4 : compléter le fichier « .htaccess »
 
 #### Bloquer l'accès à un répertoire complet
 
