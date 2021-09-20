@@ -16,15 +16,15 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account.
 - An up and running Public Cloud Database for MongoDB. This guide was made with MongoDB 4.4.
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.9.5.
 
 ## Concept
 
 A MongoDB instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MongoDB with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-cli).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MongoDB with CLI](https://docs.ovh.com/ie/en/publiccloud/databases/mongodb/connect-cli/).
 
 Another way is to interact directly using a programming language, such as Python.
 Python is one of the major programming languages in the world, especially in the Data ecosystem.
@@ -95,7 +95,7 @@ We are now ready to learn how to connect to our MongoDB instance !
 
 Before making a connection, we need to verify that our MongoDB instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your MongoDB instance.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your MongoDB instance.
 
 #### Step 1: Verify your user roles and password
 
@@ -132,7 +132,7 @@ The setup is now done for both the Python environment and the MongoDB instance.
 
 Select the `General Information`{.action} tab. In the **Login Information** section, copy the Service URI.
 
-It should be similar to this when you have a single node (Essential service plan) :
+It should be similar to this when you have a single node (Essential service plan):
 
 ```
 mongodb://<username>:<password>@<hostname>/admin?tls=true
@@ -185,7 +185,7 @@ MongoDB cluster is reachable
 MongoClient(host=['node1-123456789.database.cloud.ovh.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True)
 ```
 
-If not, your CLI should give you more details about the issue, for example :
+If not, your CLI should give you more details about the issue, for example:
 
 - *Authentication failed* : could be an error with your user login or password;
 - *nodename nor servname provided, or not known* : could be a wrongly typed hostname;
@@ -237,11 +237,11 @@ Congratulations! Everything is working properly.
 
 ## Go further
 
-[MongoDB capabilities](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/capabilities/)
+[MongoDB capabilities](https://docs.ovh.com/ie/en/publiccloud/databases/mongodb/capabilities/)
 
-[Managing a MongoDB service from the OVHcloud Control Panel](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/managing-service/)
+[Managing a MongoDB service from the OVHcloud Control Panel](https://docs.ovh.com/ie/en/publiccloud/databases/mongodb/managing-service/)
 
-[Configuring vRack for Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/)
+[Configuring vRack for Public Cloud](https://docs.ovh.com/ie/en/public-cloud/public-cloud-vrack/)
 
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
