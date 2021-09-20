@@ -39,8 +39,8 @@ La tabella qui sotto ti permette di differenziare le opzioni disponibili sulle t
 
 |Termine|Descrizione|Fatturazione|
 |---|---|---|
-|[Sospesa](#shelve-instance)|Conserva le risorse e i dati del tuo disco creando uno Snapshot. Tutte le altre risorse sono liberate.|Viene fatto pagare solo lo snapshot.|
-|[Arresta)](#stop-suspend-instance)|Salvare lo stato della macchina virtuale sul disco, le risorse dedicate all'istanza sono sempre riservate.|Riceverai sempre la stessa tariffa per la tua istanza.|
+|[Sospesa (*shelve*)](#shelve-instance)|Conserva le risorse e i dati del tuo disco creando uno Snapshot. Tutte le altre risorse sono liberate.|Viene fatto pagare solo lo snapshot.|
+|[Arresta (*suspend*)](#stop-suspend-instance)|Salvare lo stato della macchina virtuale sul disco, le risorse dedicate all'istanza sono sempre riservate.|Riceverai sempre la stessa tariffa per la tua istanza.|
 |[Pausa](#pause-instance)|Salva lo stato della macchina virtuale nella RAM, un'istanza sospesa diventa «bloccata».|Riceverai sempre la stessa tariffa per la tua istanza.|
 
 ### Sospesa (shelve) un'istanza <a name="shelve-instance"></a>
@@ -69,7 +69,7 @@ Lo snapshot sarà disponibile nella sezione `Instance Backup`{.action}. Un'istan
 
 #### Dall'interfaccia Horizon
 
-Per continuare, devi [creare un utente per accedere a horizon/](..crea_un_utente_per_accedere_a_horizon/) e [connetterti all'interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Per continuare, devi [creare un utente per accedere a horizon](..crea_un_utente_per_accedere_a_horizon/) e [connetterti all'interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Se hai installato istanze in diverse Region, assicurati di essere nella localizzazione giusta. Puoi verificarlo nell'angolo superiore sinistro dell'interfaccia Horizon.
 
@@ -92,7 +92,7 @@ Per visualizzare lo snapshot, nel menu `Compute`{.action}, clicca su `Images`{.a
 Prima di continuare, si raccomanda di consultare le seguenti guide:
 
 - [Preparare l’ambiente per utilizzare l’API OpenStack](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/)
-- [Impostare le variabili d’ambiente OpenStack](https://docs.ovh.com/it/public-cloud/impostare-le-variabili-dambiente-openstack/).
+- [Impostare le variabili d’ambiente OpenStack](https://docs.ovh.com/it/public-cloud/impostare-le-variabili-dambiente-openstack/)
 
 Una volta che l'ambiente è pronto, esegui questo comando:
 

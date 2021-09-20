@@ -39,8 +39,8 @@ In der folgenden Tabelle können Sie die auf Ihren Instanzen verfügbaren Option
 
 |Begriff|Beschreibung|Abrechnung|
 |---|---|---|
-|[Aussetzen](#shelve-instance)|Speichert die Ressourcen und Daten Ihrer Festplatte, indem Sie einen Snapshot erstellen. Alle anderen Ressourcen werden freigegeben.|Sie werden nur für die Momentaufnahme berechnet.|
-|[Anhalten)](#stop-suspend-instance)|Speichert den Zustand der virtuellen Maschine auf der Festplatte, die der Instanz zugewiesenen Ressourcen sind immer reserviert.|Für Ihre Instanz wird Ihnen immer der gleiche Preis in Rechnung gestellt.|
+|[Aussetzen (*shelve*)](#shelve-instance)|Speichert die Ressourcen und Daten Ihrer Festplatte, indem Sie einen Snapshot erstellen. Alle anderen Ressourcen werden freigegeben.|Sie werden nur für die Momentaufnahme berechnet.|
+|[Anhalten (*suspend*)](#stop-suspend-instance)|Speichert den Zustand der virtuellen Maschine auf der Festplatte, die der Instanz zugewiesenen Ressourcen sind immer reserviert.|Für Ihre Instanz wird Ihnen immer der gleiche Preis in Rechnung gestellt.|
 |[Pauserien](#pause-instance)|Speichert den Zustand der virtuellen Maschine im RAM, wird eine hängende Instanz eingefroren.|Für Ihre Instanz wird Ihnen immer der gleiche Preis in Rechnung gestellt.|
 
 ### Aussetzen (shelve) einer Instanz <a name="shelve-instance"></a>
@@ -69,7 +69,7 @@ Um den Snapshot anzuzeigen, gehen Sie auf das linke Menü und klicken Sie auf `I
 
 #### Horizon-Interface
 
-Um fortzufahren, [erstellung eines zugangs zu Horizon/](../erstellung_eines_zugangs_zu_horizon/) und [loggen Sie sich in das Horizon-interface](https://horizon.cloud.ovh.net/auth/login/) .
+Um fortzufahren, [erstellung eines zugangs zu Horizon](../erstellung_eines_zugangs_zu_horizon/) und [loggen Sie sich in das Horizon-interface](https://horizon.cloud.ovh.net/auth/login/) .
 
 Wenn Sie Instanzen in verschiedenen Regionen eingerichtet haben, stellen Sie sicher, dass Sie sich in der entsprechenden Region befinden. Überprüfen Sie es in der oberen linken Ecke des Horizon-Interface.
 

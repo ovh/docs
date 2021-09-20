@@ -87,7 +87,7 @@ To view the snapshot, in the `Compute`{.action} menu, click on `Images`{.action}
 Before proceeding, it is recommended that you consult these guides:
 
 - [Prepare the environment to use the OpenStack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Set OpenStack environment variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/).
+- [Set OpenStack environment variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
 
 Once your environment is ready, type the following at the command line:
 

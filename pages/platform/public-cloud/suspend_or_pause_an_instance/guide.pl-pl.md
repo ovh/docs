@@ -25,7 +25,7 @@ order: 3
 ## Wymagania początkowe
 
 - [Utworzona na Twoim koncie instancja Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/)
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub [interfejsu Horizon](../tworzenie_dostepu_do_interfejsu_horizon/){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub [interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)
 - Znajomość [API Openstack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/) i [Zmienne Openstack](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/)
 
 ## W praktyce
@@ -40,7 +40,7 @@ Poniższa tabela pozwoli Ci odróżnić opcje dostępne dla Twoich instancji. Ko
 |Nazwa|Opis|Płatności|
 |---|---|---|
 |[Zawieś (*shelve*)](#shelve-instance)|Zachowuje zasoby i dane na dysku przez utworzenie migawki. Wszystkie inne zasoby zostaną zwolnione.|Płatność dotyczy tylko kopii zapasowych snapshot.|
-|[Zatrzymaj(*suspend*)](#stop-suspend-instance)|Przechowuje stan VM na dysku. Zasoby przeznaczone na instancję są nadal zarezerwowane.|W przypadku Twojej instancji opłata jest taka sama.|
+|[Zatrzymaj (*suspend*)](#stop-suspend-instance)|Przechowuje stan VM na dysku. Zasoby przeznaczone na instancję są nadal zarezerwowane.|W przypadku Twojej instancji opłata jest taka sama.|
 |[Wstrzymaj](#pause-instance)|Przechowuje stan wirtualnej maszyny w pamięci RAM. Wstrzymana instancja zostaje zablokowana.|W przypadku Twojej instancji opłata jest taka sama.|
 
 ### Zawieś (shelve) instancję <a name="shelve-instance"></a>

@@ -40,8 +40,8 @@ En la siguiente tabla podrá diferenciar las opciones disponibles en sus instanc
 
 |Término|Descripción|Facturación|
 |---|---|---|
-|[Suspender](#shelve-instance)|Conserva los recursos y los datos de su disco creando un snapshot. Todos los demás recursos son liberados.|Solo se le facturará por la instantánea (snapshot).|
-|[Detener)](#stop-suspend-instance)|Almacena el estado de la máquina virtual en el disco. Los recursos dedicados a la instancia están siempre reservados.|La instancia se facturará al mismo precio.|
+|[Suspender (*shelve*)](#shelve-instance)|Conserva los recursos y los datos de su disco creando un snapshot. Todos los demás recursos son liberados.|Solo se le facturará por la instantánea (snapshot).|
+|[Detener (*suspend*)](#stop-suspend-instance)|Almacena el estado de la máquina virtual en el disco. Los recursos dedicados a la instancia están siempre reservados.|La instancia se facturará al mismo precio.|
 |[Pausa](#pause-instance)|Almacena el estado de la máquina virtual en la RAM, una instancia en pausa se convierte en bloqueado.|La instancia se facturará al mismo precio.|
 
 ### Suspender (shelve) una instancia <a name="shelve-instance"></a>
@@ -93,7 +93,7 @@ Para ver la instantánea (snapshot), haga clic en `Images`{.action} en el menú 
 Antes de continuar, se recomienda consultar las siguientes guías:
 
 - [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/us/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/)
-- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/us/es/public-cloud/cargar-las-variables-de-entorno-openstack/).
+- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/us/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
 
 Una vez que el entorno esté listo, escriba lo siguiente en la línea de comandos:
 
