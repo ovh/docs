@@ -105,7 +105,7 @@ SITE CHMOD 705 /
 
 ![command_filezilla2](images/command_filezilla2.png){.thumbnail}
 
-Eine Antwort **“200 Permissions changed on“** bestätigt, dass der Vorgang erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
+Eine Antwort **“200 Permissions changed on /“** bestätigt, dass der Vorgang erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
 
 #### Ihr Hosting mit dem FTP-Explorer “net2ftp“ reaktivieren
 
@@ -119,7 +119,7 @@ Geben Sie im oberen Teil der Seite den unten stehenden Befehl ein und klicken Si
 
 ![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
 
-Eine Antwort **“200 Permissions changed on“** bestätigt, dass der Vorgang erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
+Eine Antwort **“200 Permissions changed on /“** bestätigt, dass der Vorgang erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 

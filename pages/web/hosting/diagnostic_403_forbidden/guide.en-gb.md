@@ -101,21 +101,21 @@ SITE CHMOD 705 /
 
 ![command_filezilla2](images/command_filezilla2.png){.thumbnail}
 
-A response **"200 Permissions changed on"** confirms that the change was successful. To check, try accessing your site again.
+A response **"200 Permissions changed on /"** confirms that the change was successful. To check, try accessing your site again.
 
 #### Reactivate your hosting with the FTP Explorer "net2ftp"
 
 In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud`{.action} section then `Hosting plans`{.action} and click on the `FTP-SSH`{.action} tab for the hosting plan concerned.
 
-Then click on the `FTP Explorer`{.action} button and log in to your storage space, following the instructions in this [guide](../log-in-to-storage-ftp-web-hosting/#1-log-in-via-ftp-explorer). Click the `Advanced`{.action} button and then click the `Go`{.action} button next to **"Send arbitrary FTP commands to the FTP server"**.
+Then click on the `FTP Explorer`{.action} button and log in to your storage space, following the instructions in this [guide](../log-in-to-storage-ftp-web-hosting/#1-log-in-via-ftp-explorer). Click the `Advanced`{.action} button and then click the `Go`{.action} button next to "Send arbitrary FTP commands to the FTP server".
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
-At the top of the page, enter the command below then click on the green **"V"** button.
+At the top of the page, enter the command below then click on the green "V" button.
 
 ![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
 
-A response **"200 Permissions changed on"”** confirms that the change was successful. To check, try accessing your site again.
+A response **"200 Permissions changed on /"** confirms that the change was successful. To check, try accessing your site again.
 
 ## Go further <a name="gofurther"></a>
 

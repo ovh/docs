@@ -101,21 +101,21 @@ SITE CHMOD 705 /
 
 ![command_filezilla2](images/command_filezilla2.png){.thumbnail}
 
-Una risposta **"200 Permissions changed on"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
+Una risposta **"200 Permissions changed on /"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
 
 #### Riattiva il tuo hosting con FTP Explorer "net2ftp"
 
 Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Web Cloud`{.action}, poi `Hosting`{.action} e clicca sulla scheda `FTP-SSH`{.action} dell'hosting in questione.
 
-Clicca sul pulsante `FTP Explorer`{.action} e accedi allo spazio di storage seguendo le indicazioni di questa [guida](../accedere-spazio-storage-ftp-hosting-web/#1-ftp-explorer). Clicca sul pulsante `Funzioni avanzate`{.action} e poi sul pulsante `Esegui`{.action} accanto a **"Send arbitrary FTP commands to the FTP server"**.
+Clicca sul pulsante `FTP Explorer`{.action} e accedi allo spazio di storage seguendo le indicazioni di questa [guida](../accedere-spazio-storage-ftp-hosting-web/#1-ftp-explorer). Clicca sul pulsante `Funzioni avanzate`{.action} e poi sul pulsante `Esegui`{.action} accanto a "Send arbitrary FTP commands to the FTP server".
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
-Nella parte superiore della pagina, inserisci il comando qui sotto e clicca su **"V"** verde.
+Nella parte superiore della pagina, inserisci il comando qui sotto e clicca su "V" verde.
 
 ![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
 
-Una risposta **"200 Permissions changed on"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
+Una risposta **"200 Permissions changed on /"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
 
 ## Per saperne di più <a name="gofurther"></a>
 
