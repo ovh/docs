@@ -189,7 +189,7 @@ swift copy -d /<conteneur_de_destination> <conteneur> <objet>
 > [!primary]
 >
 > Dans cet exemple, le LargeObject à été uploadé en mode SLO.
-> Consultez la documentation [memo de commandes curl](https://docs.ovh.com/fr/storage/pca/curl-commands-memo) pour l'upload du manifest.
+> Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/fr/storage/pca/curl-commands-memo) pour l'upload du manifest.
 >
 
 Sur un LargeObject, la commande `swift copy` renvoie une **erreur 413** :
