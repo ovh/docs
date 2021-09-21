@@ -1,23 +1,23 @@
 ---
 title: Aussetzen oder Pausieren einer Instanz
-excerpt: Aussetzen oder Pausieren einer Instanz in Horizon
 slug: aussetzen_oder_pausieren_einer_instanz
 legacy_guide_number: g1781
-section: 'Horizon'
+section: 'Projektverwaltung'
+order: 3
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 20.09.2021**
+**Letzte Aktualisierung am 21.09.2021**
 
 ## Ziel
 
- Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie möglicherweise den Zugriff auf Ihre Instanzen reduzieren, um verschiedene Tests durchzuführen. OpenStack erlaubt es Ihnen, Ihre Instanz zu sperren, auszusetzen oder zu reservieren. In jedem Fall bleibt Ihre IP-Adresse erhalten.
+ Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie möglicherweise den Zugriff auf Ihre Instanzen reduzieren, um verschiedene Tests durchzuführen. Mit OpenStack können Sie Ihre Instanz aussetzen, pausieren oder anhalten. In jedem Fall bleibt Ihre IP-Adresse erhalten.
 
 > [!warning]
-> Der Name dieser Optionen im OVHcloud Konfigurationspanel unterscheidet sich vom Namen in Openstack/Horizon. Wenn Sie diese Operation über das OVHcloud Konfigurationspanel durchführen, wählen Sie die entsprechende Option aus.
+> Der Name dieser Optionen im OVHcloud Kundencenter unterscheidet sich vom Namen in Openstack/Horizon. Wenn Sie diese Operation über das OVHcloud Kundencenter durchführen, wählen Sie die entsprechende Option aus.
 >
 
 **Diese Anleitung erklärt, wie Sie eine Instanz aussetzen, anhalten oder pausieren können.**
