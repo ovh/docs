@@ -97,7 +97,7 @@ La opción `Alerta de consumo bajo demanda`{.action} permite crear una alerta ba
 
 ### Instancias
 
-Es posible consultar el precio de las instancias cloud (o servidores cloud) en el área de cliente de OVHcloud, antes de iniciarlas. También puede consultar el precio directamente en el [sitio web de OVHcloud](https://www.ovhcloud.com/es-es/public-cloud/prices/){.external}.
+Es posible consultar el precio de las instancias cloud (o servidores cloud) en el área de cliente de OVHcloud, antes de iniciarlas. También puede consultar el precio directamente en el [sitio web de OVHcloud](https://www.ovhcloud.com/es/public-cloud/prices/){.external}.
 
 > [!primary]
 >
@@ -145,7 +145,7 @@ El cálculo será el siguiente: (precio mensual del GB / 720) x número de horas
 
 El número de GB por hora corresponde a la cantidad máxima de GB almacenada durante una hora. Por ejemplo, si usted tiene almacenados 15 GB a las 16:20, 17 GB a las 16:40 y 14 GB a las 16:50, OVHcloud facturará 17 GB para el período que va de las 16:00 a las 17:00.
 
-Puede consultar el precio del almacenamiento en el [sitio web de OVHcloud](https://www.ovhcloud.com/es-es/public-cloud/storage/){.external}.
+Puede consultar el precio del almacenamiento en el [sitio web de OVHcloud](https://www.ovhcloud.com/es/public-cloud/storage/){.external}.
 
 #### Volúmenes adicionales
 
@@ -161,7 +161,7 @@ El snapshot de los volúmenes adicionales se factura del mismo modo que los vol�
 
 #### Snapshots e imágenes de instancias
 
-Los snapshots de instancias como las imágenes (fuera del catálogo de imágenes de OVHcloud) se facturan con un precio fijo por GB/mes, independientemente de la instancia de origen o el tipo de imagen. Puede consultar el precio de las instancias en el [sitio web de OVHcloud](https://www.ovhcloud.com/es-es/public-cloud/prices/){.external}.
+Los snapshots de instancias como las imágenes (fuera del catálogo de imágenes de OVHcloud) se facturan con un precio fijo por GB/mes, independientemente de la instancia de origen o el tipo de imagen. Puede consultar el precio de las instancias en el [sitio web de OVHcloud](https://www.ovhcloud.com/es/public-cloud/prices/){.external}.
 
 #### Object Storage
 

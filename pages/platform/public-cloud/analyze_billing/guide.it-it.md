@@ -146,21 +146,17 @@ Le tariffe relative allo storage sono disponibili direttamente sul [sito OVHclou
 
 I dischi aggiuntivi vengono fatturati in base alla capacità di GB selezionata, con tariffe che variano a seconda della gamma di volumi scelta.
 
-
 #### Backup dei volumi aggiuntivi
 
 I backup dei dischi aggiuntivi sono fatturati con le stesse modalità dei volumi stessi.
-
 
 #### Snapshot dei volumi aggiuntivi
 
 Gli Snapshot dei dischi aggiuntivi sono fatturati con le stesse modalità dei volumi stessi.
 
-
 #### Snapshot e immagini di istanza
 
 Gli Snapshot delle istanze e le immagini (escluso il catalogo di immagini fornito da OVHcloud) sono fatturati a una tariffa fissa per GB/mese, indipendentemente dall’istanza di origine e dal tipo di immagine. Le tariffe applicate al servizio sono disponibili direttamente sul [sito OVHcloud](https://www.ovhcloud.com/it/public-cloud/prices/){.external}.
-
 
 #### Object Storage
 

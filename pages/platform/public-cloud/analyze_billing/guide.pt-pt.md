@@ -129,7 +129,7 @@ Para as instâncias horários, é possível suspender (*shelve*) uma instância 
 
 > [!warning]
 >
->Este processo só está funcional para as instâncias faturadas à hora, não pára a faturação da sua instância, mas reduz os seus custos.
+> Este processo só está funcional para as instâncias faturadas à hora, não pára a faturação da sua instância, mas reduz os seus custos.
 >
 
 Para mais informações sobre o procedimento a seguir, consulte este [guia](suspend or pause instance)

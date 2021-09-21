@@ -127,7 +127,7 @@ W przypadku instancji typu godzinowego można zawieś  na półkę (*shelve*) in
 
 > [!warning]
 >
->Proces ten działa tylko w przypadku instancji rozliczanych w modelu godzinowym. Nie powoduje on zatrzymania rozliczania instancji, ale zmniejsza koszty.
+> Proces ten działa tylko w przypadku instancji rozliczanych w modelu godzinowym. Nie powoduje on zatrzymania rozliczania instancji, ale zmniejsza koszty.
 >
 
 Aby uzyskać więcej informacji, zapoznaj się z tym [przewodnikiem](suspend or pause instance)

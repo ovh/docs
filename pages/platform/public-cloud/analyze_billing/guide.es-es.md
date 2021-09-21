@@ -53,6 +53,7 @@ Al final de mes, la factura incluirá:
 
 El importe total será de 20,97 euros.
 
+
 > [!primary]
 >
 > Los precios mostrados no son contractuales y solo se incluyen a modo

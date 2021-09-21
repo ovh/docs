@@ -129,7 +129,7 @@ Für die Zeitinstanzen können Sie eine Instanz aussetzen (shelve), um die für 
 
 > [!warning]
 >
->Dieser Prozess ist nur für die stündlich abgerechneten Instanzen funktionsfähig. Er beendet nicht die Abrechnung Ihrer Instanz, sondern reduziert Ihre Kosten.
+> Dieser Prozess ist nur für die stündlich abgerechneten Instanzen funktionsfähig. Er beendet nicht die Abrechnung Ihrer Instanz, sondern reduziert Ihre Kosten.
 >
 
 Weitere Informationen zum Vorgehen finden Sie in dieser [anleitung](../shelve-or-pause-an-instance).
