@@ -1,3 +1,11 @@
+---
+title: Mémo de commandes Swift
+slug: pca/swift-commands-memo
+excerpt: Retrouvez ici les principales commandes swift pour gérer vos conteneurs d'objets Cloud Archive.
+section: Public Cloud Archive
+---
+
+
 ## Objectif
 
 Vous pouvez utiliser l’API OpenStack pour générer divers scripts afin d’automatiser vos actions sur vos instances Public Cloud.
@@ -29,7 +37,7 @@ swift stat
 swift stat <conteneur>
 ```
 
-### Afficher les informations relatives à un object:
+### Afficher les informations relatives à un objet:
 ```bash
 swift stat <conteneur> <objet>
 ```
@@ -44,17 +52,17 @@ swift list
 swift list <conteneur>
 ```
 
-### Upload d'un object inférieur à 5GB:
+### Upload d'un objet inférieur à 5GB:
 ```bash
 swift upload <conteneur> <objet>
 ```
 
-### Upload d'un object supérieur à 5GB en mode SLO:
+### Upload d'un objet supérieur à 5GB en mode SLO:
 ```bash
 swift upload --use-slo --segment-size 1G <conteneur> <objet>
 ```
 
-### Upload d'un object supérieur à 5GB en mode DLO:
+### Upload d'un objet supérieur à 5GB en mode DLO:
 ```bash
 swift upload --segment-size 1G <conteneur> <objet>
 ```
@@ -83,7 +91,7 @@ $ swift list <conteneur_segments>
 
 > Il est donc recommandé de supprimer le conteneur : <conteneur_segments> ou au moins les segments ccorrespondant à l'objet abandonné
 
-### Download d'un object:
+### Download d'un objet:
 ```bash
 swift download <conteneur> <objet>
 ```
@@ -98,7 +106,7 @@ swift delete <conteneur>
 swift delete <conteneur>
 ```
 
-### Supprimer un object:
+### Supprimer un objet:
 ```bash
 swift delete <conteneur> <objet>
 ```
@@ -164,9 +172,9 @@ Particularité des LargeObject
 Sur un LargeObject la commande `swift copy` renvoie une **erreur 413**:
 
 ```bash
-swift copy -d /<conteneur_de_destination> <conteneur> <largeobjet>
+swift copy -d /<conteneur_de_destination> <conteneur> <largeobject>
 created container <conteneur_de_destination>
-Object COPY failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>/<largeobjet> 413 Request Entity Too Large  [first 60 chars of response] b'<html><h1>Request Entity Too Large</h1><p>The body of your r'
+Object COPY failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>/<largeobject> 413 Request Entity Too Large  [first 60 chars of response] b'<html><h1>Request Entity Too Large</h1><p>The body of your r'
 ```
 
 Il faut donc commencer par déplacer les segments:
@@ -179,32 +187,32 @@ Il faut donc commencer par déplacer les segments:
 ```bash
 for obj in $(swift list <conteneur_segments>);do swift copy -d /<conteneur_de_destination_segments> <conteneur_segments> $obj;done
 created container <conteneur_de_destination_segments>
-<conteneur_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000000 copied to /<conteneur_de_destination_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000000
+<conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000000 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000000
 created container <conteneur_de_destination_segments>
-<conteneur_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000001 copied to /<conteneur_de_destination_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000001
+<conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000001 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000001
 created container <conteneur_de_destination_segments>
-<conteneur_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000002 copied to /<conteneur_de_destination_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000002
+<conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000002 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000002
 created container <conteneur_de_destination_segments>
-<conteneur_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000003 copied to /<conteneur_de_destination_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000003
+<conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000003 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000003
 created container <conteneur_de_destination_segments>
-<conteneur_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000004 copied to /<conteneur_de_destination_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000004
+<conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000004 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000004
 created container <conteneur_de_destination_segments>
-<conteneur_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000005 copied to /<conteneur_de_destination_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000005
+<conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000005 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000005
 ```
 Puis récupérer le manifest, l'adapter et le ré-uploader
 
 ```bash
 $(swift auth)
-curl -s -X GET "$OS_STORAGE_URL/<conteneur>/<largeobjet>?multipart-manifest=get" -H "X-Auth-Token:$OS_AUTH_TOKEN" | jq '.' > <largeobjet>.json
+curl -s -X GET "$OS_STORAGE_URL/<conteneur>/<largeobject>?multipart-manifest=get" -H "X-Auth-Token:$OS_AUTH_TOKEN" | jq '.' > <largeobject>.json
 
-sed -i 's/name/path/g' <largeobjet>.json
-sed -i 's/bytes/size_bytes/g' <largeobjet>.json
-sed -i '/hash/d' <largeobjet>.json
-sed -i '/last_modified/d' <largeobjet>.json
-sed -i '/content_type/d' <largeobjet>.json
-sed -i '/path/s/,$//g' <largeobjet>.json
+sed -i 's/name/path/g' <largeobject>.json
+sed -i 's/bytes/size_bytes/g' <largeobject>.json
+sed -i '/hash/d' <largeobject>.json
+sed -i '/last_modified/d' <largeobject>.json
+sed -i '/content_type/d' <largeobject>.json
+sed -i '/path/s/,$//g' <largeobject>.json
 
-curl -i -X PUT -H "X-Auth-Token:$OS_AUTH_TOKEN" -T <largeobjet>.json "$OS_STORAGE_URL/<conteneur_de_destination>/<largeobjet>?multipart-manifest=put"
+curl -i -X PUT -H "X-Auth-Token:$OS_AUTH_TOKEN" -T <largeobject>.json "$OS_STORAGE_URL/<conteneur_de_destination>/<largeobject>?multipart-manifest=put"
 ```
 
 ### Renommer un conteneur
@@ -271,14 +279,14 @@ Particularité des LargeObject
 >
 
 ```bash
-time swift upload --use-slo --segment-size 1G <conteneur> <largeobjet>
-<largeobjet> segment 4
-<largeobjet> segment 2
-<largeobjet> segment 0
-<largeobjet> segment 1
-<largeobjet> segment 5
-<largeobjet> segment 3
-<largeobjet>
+time swift upload --use-slo --segment-size 1G <conteneur> <largeobject>
+<largeobject> segment 4
+<largeobject> segment 2
+<largeobject> segment 0
+<largeobject> segment 1
+<largeobject> segment 5
+<largeobject> segment 3
+<largeobject>
 
 real	190m55,547s
 user	0m57,906s
@@ -288,9 +296,9 @@ sys	0m14,246s
 Sur un LargeObject la commande `swift copy` renvoie une **erreur 413**:
 
 ```bash
-swift copy -d /<conteneur_de_destination> <conteneur> <largeobjet>
+swift copy -d /<conteneur_de_destination> <conteneur> <largeobject>
 created container <conteneur_de_destination>
-Object COPY failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>/<largeobjet> 413 Request Entity Too Large  [first 60 chars of response] b'<html><h1>Request Entity Too Large</h1><p>The body of your r'
+Object COPY failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>/<largeobject> 413 Request Entity Too Large  [first 60 chars of response] b'<html><h1>Request Entity Too Large</h1><p>The body of your r'
 ```
 
 Il faut donc commencer par déplacer les segments:
@@ -303,32 +311,32 @@ Il faut donc commencer par déplacer les segments:
 ```bash
 for obj in $(swift list <conteneur_segments>);do swift copy -d /<conteneur_de_destination_segments> <conteneur_segments> $obj;done
 created container <conteneur_de_destination_segments>
-<conteneur_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000000 copied to /<conteneur_de_destination_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000000
+<conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000000 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000000
 created container <conteneur_de_destination_segments>
-<conteneur_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000001 copied to /<conteneur_de_destination_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000001
+<conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000001 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000001
 created container <conteneur_de_destination_segments>
-<conteneur_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000002 copied to /<conteneur_de_destination_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000002
+<conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000002 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000002
 created container <conteneur_de_destination_segments>
-<conteneur_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000003 copied to /<conteneur_de_destination_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000003
+<conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000003 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000003
 created container <conteneur_de_destination_segments>
-<conteneur_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000004 copied to /<conteneur_de_destination_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000004
+<conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000004 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000004
 created container <conteneur_de_destination_segments>
-<conteneur_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000005 copied to /<conteneur_de_destination_segments>/<largeobjet>/slo/1629978906.614903/6442450944/1073741824/00000005
+<conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000005 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000005
 ```
 Puis récupérer le manifest, l'adapter et le ré-uploader
 
 ```bash
 $(swift auth)
-curl -s -X GET "$OS_STORAGE_URL/<conteneur>/<largeobjet>?multipart-manifest=get" -H "X-Auth-Token:$OS_AUTH_TOKEN" | jq '.' > <largeobjet>.json
+curl -s -X GET "$OS_STORAGE_URL/<conteneur>/<largeobject>?multipart-manifest=get" -H "X-Auth-Token:$OS_AUTH_TOKEN" | jq '.' > <largeobject>.json
 
-sed -i 's/name/path/g' <largeobjet>.json
-sed -i 's/bytes/size_bytes/g' <largeobjet>.json
-sed -i '/hash/d' <largeobjet>.json
-sed -i '/last_modified/d' <largeobjet>.json
-sed -i '/content_type/d' <largeobjet>.json
-sed -i '/path/s/,$//g' <largeobjet>.json
+sed -i 's/name/path/g' <largeobject>.json
+sed -i 's/bytes/size_bytes/g' <largeobject>.json
+sed -i '/hash/d' <largeobject>.json
+sed -i '/last_modified/d' <largeobject>.json
+sed -i '/content_type/d' <largeobject>.json
+sed -i '/path/s/,$//g' <largeobject>.json
 
-curl -i -X PUT -H "X-Auth-Token:$OS_AUTH_TOKEN" -T <largeobjet>.json "$OS_STORAGE_URL/<conteneur_de_destination>/<largeobjet>?multipart-manifest=put"
+curl -i -X PUT -H "X-Auth-Token:$OS_AUTH_TOKEN" -T <largeobject>.json "$OS_STORAGE_URL/<conteneur_de_destination>/<largeobject>?multipart-manifest=put"
 ```
 
 ### Obtenir l'espace utilisé dans un conteneur
@@ -376,3 +384,7 @@ openstack token issue -f json | jq -r '.user_id'
 ```bash
 swift capabilities
 ```
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
