@@ -1,3 +1,11 @@
+---
+title: Mémo de commandes Curl
+slug: pcs/curl-commands-memo
+excerpt: Retrouvez ici les principales commandes curl pour gérer vos conteneurs d'objets.
+section: Object Storage
+---
+
+
 ## Objectif
 
 Dans ce guide, vous retrouvez les principales commandes curl pour gérer vos conteneurs d'objets.
@@ -30,7 +38,7 @@ curl -i "${OS_STORAGE_URL}" -X HEAD -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 curl -i "${OS_STORAGE_URL}/<conteneur>" -X HEAD -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-### Afficher les informations relatives à un object:
+### Afficher les informations relatives à un objet:
 ```bash
 curl -i "${OS_STORAGE_URL}/<conteneur>/<objet>" -X HEAD -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
@@ -45,12 +53,12 @@ curl "${OS_STORAGE_URL}" -X GET -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 curl "${OS_STORAGE_URL}/<conteneur>" -X GET -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-### Upload d'un object inférieur à 5GB:
+### Upload d'un objet inférieur à 5GB:
 ```bash
 curl -i "${OS_STORAGE_URL}/<conteneur>/<objet>" -X PUT -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "Content-Type: application/octet-stream" -d "@<objet>"
 ```
 
-### Upload d'un object supérieur à 5GB en mode SLO:
+### Upload d'un objet supérieur à 5GB en mode SLO:
 ```bash
 FILE=/datas/6gb.img
 CONTAINER=pcs-test
@@ -114,7 +122,7 @@ cd
 rm -rf "${TMPDIR}"
 ```
 
-### Upload d'un object supérieur à 5GB en mode DLO:
+### Upload d'un objet supérieur à 5GB en mode DLO:
 ```bash
 FILE=/datas/6gb.img
 CONTAINER=pcs-test
@@ -145,7 +153,7 @@ cd
 rm -rf "${TMPDIR}"
 ```
 
-### Download d'un object:
+### Download d'un objet:
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>/<objet>" -X GET -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -o <output_file>
 ```
@@ -217,12 +225,12 @@ done
 
 ```
 
-### Supprimer un object:
+### Supprimer un objet:
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>/<objet>" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-### Supprimer un object supérieur à 5Gb:
+### Supprimer un objet supérieur à 5Gb:
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>/<objet>?multipart-manifest=delete" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
@@ -268,3 +276,8 @@ curl "${OS_STORAGE_URL}/<conteneur>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "X-Remove-Container-Write:x"
 ```
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
