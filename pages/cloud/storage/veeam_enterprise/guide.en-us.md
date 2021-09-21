@@ -5,7 +5,7 @@ excerpt: 'Find out how to set up a Veeam Backup & Replication server with Veeam 
 section: Veeam
 ---
 
-**Last updated 8th November 2018**
+**Last updated 21st September 2021**
 
 ## Objective
 
@@ -21,7 +21,7 @@ Veeam Backup & Replication is a form of data protection software. It offers its 
 
 > [!primary]
 >
-> Our Veeam offers are currently not compatible with the latest version (10) offered by Veeam. OVHcloud will continue to offer version 9.5 until further notice. Please take this into consideration when configuring Veeam for your services.
+> Our Veeam offers are only compatible with the latest version (10) offered by Veeam. Please take this into consideration when configuring Veeam for your services.
 >
 
 ## Instructions
@@ -118,6 +118,24 @@ Then, in the `Add User`{.action} window, enter the service account you have crea
 If you go back to the **Security** window, you can check that the account has been defined properly.
 
 ![](images/veeamBandR_conf_5.png){.thumbnail}
+
+#### Launch and Activation Permissions
+
+The OVHVeeamEntreprise user will only be accessible locally, to enable a remote connection for this user, it will be necessary to add the permissions in the Windows graphical user interface.
+
+Via the graphical user interface:
+
+1. In your Windows search bar, type `Component Services`{.action} and launch the service.
+2. In the menu on the left and following the tree structure, click `Component Services`{.action}, then on `Computers`{.action}, then on `My Computer`{.action}.
+3. On the right-hand side, under the `Actions`{.action} tab, click `More Actions`{.action}, and then click `Properties`{.action}.
+4. Go to `COM Security`{.action}, underneath the second section `Launch and Activation Permissions`{.action}, click on `Edit Limits`{.action}.
+5. Select the `OVHVeeamEntreprise`{.action} user and enable all permissions.
+
+![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
+
+6. Click on `OK`{.action} to confirm and on `Apply`{.action} to validate the changes.
+
+Your OVHVeeamEntreprise user is now accessible locally and remotely.
 
 #### Register the Veeam Backup & Replication server.
 
