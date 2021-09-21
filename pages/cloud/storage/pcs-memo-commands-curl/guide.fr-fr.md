@@ -15,7 +15,7 @@ Dans ce guide, vous retrouvez les principales commandes curl pour gérer vos con
 Chargez les variables d'environnement suivantes:
 
 > `export OS_AUTH_URL=https://auth.cloud.ovh.net/v3/`  
-> `export OS_STORAGE_URL=https://storage.<region>.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf` 
+> `export OS_STORAGE_URL=https://storage.<region>.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf`  
 > `export OS_AUTH_TOKEN=xxx`  
 > `export OS_USERNAME=user-xxxxxx`  
 > `export OS_PASSWORD=xxx`  
