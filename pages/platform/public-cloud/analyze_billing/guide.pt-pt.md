@@ -132,7 +132,7 @@ Para as instâncias horários, é possível suspender (*shelve*) uma instância 
 > Este processo só está funcional para as instâncias faturadas à hora, não pára a faturação da sua instância, mas reduz os seus custos.
 >
 
-Para mais informações sobre o procedimento a seguir, consulte este [guia](suspend or pause instance)
+Para mais informações sobre o procedimento a seguir, consulte este [guia](https://docs.ovh.com/pt/public-cloud/suspender_ou_colocar_em_pausa_uma_instancia/)
 
 #### Preço mensal
 

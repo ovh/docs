@@ -21,7 +21,7 @@ Przypomina to model rozliczenia stosowany przez niektórych operatorów telefoni
 ## Wymagania początkowe
 
 * [projekt Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
-* [instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}
+* [instancja Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji){.external}
 * dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## Ogólna zasada
@@ -75,15 +75,15 @@ Możesz teraz:
 
 ### sprawdzić obecne zużycie
 
-Obecne zużycie (z bieżącego miesiąca) możesz również sprawdzić, klikając zakładkę `Moje obecne zużycie`{.action}.
+Obecne zużycie (z bieżącego miesiąca) możesz również sprawdzić, klikając zakładkę `Aktualne zużycie zasobów`{.action}.
 
 ![public-cloud](images/pci-billing-information2-2021.png){.thumbnail}
 
-Pierwsza część **„Zafakturowane”** dotyczy zasobów rozliczanych w trybie miesięcznym (w szczególności patrz poniżej instancje fakturowane w modelu miesięcznym). Zasoby te są wyjątkiem od zasady „Pay as you go”. Umowa terminowa obejmuje rozliczenie za jeden miesiąc, a należność za wykorzystanie zasobów w ciągu najbliższych 30 dni płatna jest z góry, czyli pierwszego dnia danego miesiąca. Celem jest uzyskanie korzyści handlowej. Na ekranie ukazującym bieżące zużycie zasoby zostały już opłacone pierwszego dnia bieżącego miesiąca.
+Pierwsza część **"Zafakturowane należności"** dotyczy zasobów rozliczanych w trybie miesięcznym (w szczególności patrz poniżej instancje fakturowane w modelu miesięcznym). Zasoby te są wyjątkiem od zasady "Pay as you go". Umowa terminowa obejmuje rozliczenie za jeden miesiąc, a należność za wykorzystanie zasobów w ciągu najbliższych 30 dni płatna jest z góry, czyli pierwszego dnia danego miesiąca. Celem jest uzyskanie korzyści handlowej. Na ekranie ukazującym bieżące zużycie zasoby zostały już opłacone pierwszego dnia bieżącego miesiąca.
 
-Druga część **„Do zafakturowania”** dotyczy wszystkich zasobów „Pay as you go”. W części tej sprawdzisz wykorzystanie zasobów od początku miesiąca do bieżącego dnia.
+Druga część **"Kolejna faktura"** dotyczy wszystkich zasobów "Pay as you go". W części tej sprawdzisz wykorzystanie zasobów od początku miesiąca do bieżącego dnia.
 
-Otrzymasz również `Prognozę kwoty Twojej następnej faktury`{.action} (pierwszego dnia następnego miesiąca) przygotowaną na podstawie wcześniejszego zużycia. 
+Otrzymasz również `Oszacowanie kolejnej faktury`{.action} (pierwszego dnia następnego miesiąca) przygotowaną na podstawie wcześniejszego zużycia. 
 
 > [!primary]
 >
@@ -117,6 +117,7 @@ Każdy model instancji jest dostępny w dwóch trybach rozliczenia: godzinowym l
 >
 
 #### Rozliczenie godzinowe
+
 Rozliczenie godzinowe odpowiada opisanemu wyżej modelowi „Pay as you go”.
 
 Płatności za instancje objęte takim rozliczeniem realizowane są pierwszego dnia następnego miesiąca za godziny zużyte w bieżącym miesiącu.
@@ -130,7 +131,7 @@ W przypadku instancji typu godzinowego można zawieś  na półkę (*shelve*) in
 > Proces ten działa tylko w przypadku instancji rozliczanych w modelu godzinowym. Nie powoduje on zatrzymania rozliczania instancji, ale zmniejsza koszty.
 >
 
-Aby uzyskać więcej informacji, zapoznaj się z tym [przewodnikiem](suspend or pause instance)
+Aby uzyskać więcej informacji, zapoznaj się z tym [przewodnikiem](https://docs.ovh.com/pl/public-cloud/wstrzymanie_lub_uspienie_instancji/)
 
 #### Rozliczenie miesięczne
 

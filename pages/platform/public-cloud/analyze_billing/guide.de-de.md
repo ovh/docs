@@ -81,7 +81,7 @@ Sie können auch die aktuelle Ressourcennutzung anzeigen (für den laufenden Mon
 
 ![public-cloud](images/pci-billing-information2-2021.png){.thumbnail}
 
-Der erste Teil, **"bereits abgerechnet"**, beinhaltet die monatlich abgerechneten Ressourcen (siehe die Instanzen mit dem niedrigsten monatlichen Zinssatz). Diese Mittel sind eine Ausnahme von der Zahlungsmethode bei der Verwendung. Die Verbindlichkeiten werden monatlich in Rechnung gestellt und im Voraus gezahlt. Die Verpflichtungsoption bietet dem Nutzer einen Kostenvorteil.
+Der erste Teil, **"Bereits abgerechnet"**, beinhaltet die monatlich abgerechneten Ressourcen (siehe die Instanzen mit dem niedrigsten monatlichen Zinssatz). Diese Mittel sind eine Ausnahme von der Zahlungsmethode bei der Verwendung. Die Verbindlichkeiten werden monatlich in Rechnung gestellt und im Voraus gezahlt. Die Verpflichtungsoption bietet dem Nutzer einen Kostenvorteil.
 
 Der zweite Teil, **"Kommende Abrechnung"**, beinhaltet Ressourcen à la carte. Er erfasst die Verwendung Ihrer Ressourcen vom ersten Monat bis zum heutigen Tag.
 
@@ -132,7 +132,7 @@ Für die Zeitinstanzen können Sie eine Instanz aussetzen (shelve), um die für 
 > Dieser Prozess ist nur für die stündlich abgerechneten Instanzen funktionsfähig. Er beendet nicht die Abrechnung Ihrer Instanz, sondern reduziert Ihre Kosten.
 >
 
-Weitere Informationen zum Vorgehen finden Sie in dieser [anleitung](../shelve-or-pause-an-instance).
+Weitere Informationen zum Vorgehen finden Sie in dieser [anleitung](https://docs.ovh.com/de/public-cloud/aussetzen_oder_pausieren_einer_instanz/).
 
 #### Monatspreis
 
@@ -148,7 +148,7 @@ Die Berechnung lautet: ( Preis pro GB pro Monat / 720 ) x Anzahl Stunden x Anzah
 
 Die Anzahl GB pro Stunde entspricht der maximalen Anzahl GB, die während einer Stunde gespeichert werden. Wenn ein Benutzer beispielsweise 15 GB um 16:20, 17 GB um 16:40 und 14 GB um 16:50 Uhr hat, lädt OVHcloud 17 GB für den Zeitraum 16:00 - 17:00.
 
-Die Speicherpreise sind direkt auf der Website von [OVHcloud verfügbar](https://www.ovhcloud.com/de/public-cloud/storage/){.external}.
+Die Speicherpreise sind direkt auf der [OVHcloud-Website](https://www.ovhcloud.com/de/public-cloud/storage/){.external}verfügbar.
 
 #### Zusätzliche Volumes
 
@@ -164,7 +164,7 @@ Die Momentaufnahmen zusätzlicher Volumes werden genauso abgerechnet wie die Vol
 
 #### Instanz-Snapshots und Images
 
-Die Snapshots und Instanzimages (mit Ausnahme des von OVHcloud bereitgestellten Bildkatalogs) werden unabhängig von Instanz und Bildtyp zu einem pauschalen Preis pro GB und Monat berechnet. Die Preisliste[ finden ](https://www.ovhcloud.com/de/public-cloud/prices/){.external}Sie hier.
+Die Snapshots und Instanzimages (mit Ausnahme des von OVHcloud bereitgestellten Bildkatalogs) werden unabhängig von Instanz und Bildtyp zu einem pauschalen Preis pro GB und Monat berechnet. Gehen Sie auf die [Preisseite](https://www.ovhcloud.com/de/public-cloud/prices/){.external}, um die Preise einzusehen.
 
 #### Object Storage
 
