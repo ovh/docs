@@ -56,11 +56,11 @@ Gehen Sie hierzu in den Bereich `Sunrise`{.action}. Im Menü auf der linken Seit
 
 Folgende Angaben werden angezeigt:
 
-- **Interner Name der Dienstleistung**: zeigt den Namen Ihrer Dienstleistung an. Dieser ist nur in Ihrem Kundencenter sichtbar.
-- **Anzeigename der Dienstleistung**: erlaubt es, den Anzeigenamen des Dienstes in Ihrem Kundencenter zu personalisieren.
-- **Erstellt**: gibt das Erstellungsdatum des Dienstes an.
-- **Microsoft Administrationsportal**: URL zur Office Verwaltungsoberfläche, über die Sie Ihre Abonnements verwalten können.
-- **Adminpasswort zurücksetzen**: ermöglicht die Änderung des Login-Passworts zum Microsoft Administrationsportal.
+- **Interner Servicename**: zeigt den Namen Ihrer Dienstleistung an. Dieser ist nur in Ihrem Kundencenter sichtbar.
+- **Anzeigename des Dienstes**: erlaubt es, den Anzeigenamen des Dienstes in Ihrem Kundencenter zu personalisieren.
+- **Erstellt am**: gibt das Erstellungsdatum des Dienstes an.
+- **Microsoft Verwaltungsportal**: URL zur Office Verwaltungsoberfläche, über die Sie Ihre Abonnements verwalten können.
+- **Das Administrator-Passwort zurücksetzen**: ermöglicht die Änderung des Login-Passworts zum Microsoft Administrationsportal.
 
 ![office365](images/sunrise_office365_CSP2_services_details.png){.thumbnail}
 
