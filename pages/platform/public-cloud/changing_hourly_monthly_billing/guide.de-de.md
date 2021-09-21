@@ -5,7 +5,7 @@ slug: abrechnungsart-aendern-public-cloud
 section: Projektverwaltung
 ---
 
-**Letzte Aktualisierung am 03.12.2019**
+**Letzte Aktualisierung am 21.09.2021**
 
 ## Ziel
 
@@ -34,13 +34,13 @@ Wenn Sie eine Public Cloud Instanz erstellen, können Sie wählen, ob die Abrech
 
 Wählen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) unter `Instances`{.action} die Instanz für welche Sie den Abrechnungssatz ändern möchten. Öffnen Sie das Kontextmenü indem Sie auf die 3 Punkte rechts neben der Instanz klicken. Sie sehen dann die Option `Auf monatliche Abrechnung umstellen`{.action}:
 
-![Change billing calculation](images/switch.png){.thumbnail}
+![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
 Sie müssen dann bestätigen, dass Sie die Abrechnungsart ändern möchten:
 
-![Confirm billing calculation change](images/switch1.png){.thumbnail}
+![Confirm billing calculation change](images/confirm_to_monthly_updated.png){.thumbnail}
 
-Sobald Sie Ihre Wahl bestätigt haben, enthält Ihre nächste Rechnung die stündlichen Kosten der Instanz für die verbleibenden Tage des Monats sowie die Kosten für den nächsten Monat zum monatlichen Pauschalpreis.
+Sobald Sie Ihre Wahl bestätigt haben, erhalten Sie sofort eine anteilige Monatsrechnung. Die nächste Rechnung enthält den Stundensatzanteil des Monats (1. des Monats bis zur Änderung) und die neue monatliche Gebühr.
 
 
 ## Weiterführende Informationen
