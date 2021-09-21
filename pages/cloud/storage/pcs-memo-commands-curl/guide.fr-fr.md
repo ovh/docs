@@ -1,14 +1,13 @@
 ---
 title: Mémo de commandes Curl
 slug: pcs/curl-commands-memo
-excerpt: Retrouvez ici les principales commandes curl pour gérer vos conteneurs d'objets.
+excerpt: Retrouvez ici les principales commandes curl pour gérer vos conteneurs d'objets
 section: Object Storage
 ---
 
-
 ## Objectif
 
-Dans ce guide, vous retrouvez les principales commandes curl pour gérer vos conteneurs d'objets.
+**Retrouvez dans ce guide les principales commandes curl pour gérer vos conteneurs d'objets.**
 
 ## Prérequis
 
@@ -23,42 +22,50 @@ Chargez les variables d'environnement suivantes:
 
 ## En pratique
 
-### Création de conteneur PCS:
+### Création de conteneur PCS
+
 ```bash
 curl -i "${OS_STORAGE_URL}/<conteneur>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-### Afficher les informations relatives à un compte:
+### Afficher les informations relatives à un compte
+
 ```bash
 curl -i "${OS_STORAGE_URL}" -X HEAD -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-### Afficher les informations relatives à un conteneur:
+### Afficher les informations relatives à un conteneur
+
 ```bash
 curl -i "${OS_STORAGE_URL}/<conteneur>" -X HEAD -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-### Afficher les informations relatives à un objet:
+### Afficher les informations relatives à un objet
+
 ```bash
 curl -i "${OS_STORAGE_URL}/<conteneur>/<objet>" -X HEAD -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-### Lister le(s) conteneur(s) relatif(s) à un compte:
+### Lister le(s) conteneur(s) relatif(s) à un compte
+
 ```bash
 curl "${OS_STORAGE_URL}" -X GET -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-### Lister le contenu d'un conteneur:
+### Lister le contenu d'un conteneur
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>" -X GET -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-### Upload d'un objet inférieur à 5GB:
+### Upload d'un objet inférieur à 5GB
+
 ```bash
 curl -i "${OS_STORAGE_URL}/<conteneur>/<objet>" -X PUT -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "Content-Type: application/octet-stream" -d "@<objet>"
 ```
 
-### Upload d'un objet supérieur à 5GB en mode SLO:
+### Upload d'un objet supérieur à 5GB en mode SLO
+
 ```bash
 FILE=/datas/6gb.img
 CONTAINER=pcs-test
@@ -69,7 +76,7 @@ CHUNK_SIZE=500M
 TMPDIR="$(mktemp -d)"
 cd "${TMPDIR}"
 
-# Spliter le fichier en chunks
+# Diviser le fichier en chunks
 split -d -b "${CHUNK_SIZE}" "${FILE}" "$(basename $FILE)_"
 
 # Créer les containers
@@ -81,7 +88,8 @@ for chunk in *; do
     curl -X PUT -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -T "${chunk}" "${OS_STORAGE_URL}/${CONTAINER}_segments/${OBJECT}/${chunk}"
 done
 ```
-Créer le manifeste au format json en fonction des attributs suivants
+
+Créez le manifeste au format json en fonction des attributs suivants :
 
 - **path** (Obligatoire)
   eg: `pcs-test_segments/6gb.img_01`
@@ -90,7 +98,8 @@ Créer le manifeste au format json en fonction des attributs suivants
 - **size_bytes** (Facultatif)
   Taille du segment. Cette valeur est disponible dans le metadata `Content-Length` du segment via : `curl -i -X HEAD "$OS_STORAGE_URL/<conteneur>/<objet>" -H "X-Auth-Token:$OS_AUTH_TOKEN"`
 
-exemple de manifest
+Voici un exemple de manifest :
+
 ```json
 [
   {
@@ -112,7 +121,6 @@ exemple de manifest
 ]
 ```
 
-
 ```bash
 # Upload du fichier manifest
 curl -X PUT -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -T manifest.json "$OS_STORAGE_URL/$CONTAINER/$OBJECT?multipart-manifest=put"
@@ -122,7 +130,8 @@ cd
 rm -rf "${TMPDIR}"
 ```
 
-### Upload d'un objet supérieur à 5GB en mode DLO:
+### Upload d'un objet supérieur à 5GB en mode DLO
+
 ```bash
 FILE=/datas/6gb.img
 CONTAINER=pcs-test
@@ -133,7 +142,7 @@ CHUNK_SIZE=500M
 TMPDIR="$(mktemp -d)"
 cd "${TMPDIR}"
 
-# Spliter le fichier en chunks
+# Diviser le fichier en chunks
 split -d -b "${CHUNK_SIZE}" "${FILE}" "$(basename $FILE)_"
 
 # Créer les containers
@@ -153,19 +162,21 @@ cd
 rm -rf "${TMPDIR}"
 ```
 
-### Download d'un objet:
+### Download d'un objet
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>/<objet>" -X GET -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -o <output_file>
 ```
 
-### Supprimer un conteneur vide:
+### Supprimer un conteneur vide
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-### Supprimer un conteneur non vide de moins de 10000 objets:
+### Supprimer un conteneur non vide de moins de 10000 objets
 
-> Si le conteneur contient des LargeObject il faudra supprimer manuellement le conteneur : <conteneur_segments>
+> Si le conteneur contient des LargeObject, il faudra supprimer manuellement le conteneur : <conteneur_segments>
 
 ```bash
 OBJECTS=$(curl -s "${OS_STORAGE_URL}/<conteneur>" -X GET -H "X-Auth-Token: ${OS_AUTH_TOKEN}")
@@ -176,9 +187,9 @@ done
 curl "${OS_STORAGE_URL}/<conteneur>" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-### Vider un conteneur de plus de 10000 objets:
+### Vider un conteneur de plus de 10000 objets
 
-> Si le conteneur contient des LargeObject il faudra supprimer manuellement le conteneur : <conteneur_segments>
+> Si le conteneur contient des LargeObject, il faudra supprimer manuellement le conteneur : <conteneur_segments>
 
 ```bash
 #!/bin/bash
@@ -225,58 +236,67 @@ done
 
 ```
 
-### Supprimer un objet:
+### Supprimer un objet
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>/<objet>" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-### Supprimer un objet supérieur à 5Gb:
+### Supprimer un objet supérieur à 5Gb
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>/<objet>?multipart-manifest=delete" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
 
-> Sans l'argument `?multipart-manifest=delete` cela ne supprimera que le fichier manifest sans les segments
+> Sans l'argument `?multipart-manifest=delete`, cela ne supprimera que le fichier manifest sans les segments.
 
 ### Ajouter un metadata à un conteneur
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "X-Container-Meta-Access-Control-Allow-Origin:http://example.com"
 ```
 
 ### Ajouter un metadata à un objet
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>/<objet>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "X-Object-Meta-my-custom-key:value"
 ```
 
 ### Supprimer un metadata d'un conteneur
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "X-Remove-Container-Meta-Access-Control-Allow-Origin"
 ```
 
 ### Supprimer un metadata d'un objet
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>/<objet>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "X-Remove-Object-My-Custom-Key"
 ```
 
 ### Définir l'ACL de lecture sur un conteneur
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "X-Container-Read:${OS_TENANT_ID}:*"
 ```
 
 ### Définir l'ACL d'écriture sur un conteneur
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "X-Container-Write:${OS_TENANT_ID}:*"
 ```
 
 ### Supprimer l'ACL de lecture sur un conteneur
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "X-Remove-Container-Read:x"
 ```
 
 ### Supprimer l'ACL d'écriture sur un conteneur
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "X-Remove-Container-Write:x"
 ```
-
 
 ## Aller plus loin
 
