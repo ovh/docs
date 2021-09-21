@@ -51,9 +51,9 @@ Wenn die Seite **“403 forbidden“** ohne Aktion Ihrerseits erschienen ist und
 
 Überprüfen Sie zunächst die Sicherheit Ihrer IT-Telefone:
 
-- Führen Sie die Sicherheitsupdates durch.
-- Überprüfen Sie außerdem, dass ein Antivirus installiert ist, aktualisieren Sie es und starten Sie einen vollständigen Scan. Wenn Sie keine Domain besitzen, konsultieren Sie vor der Installation einen spezialisierten [Dienstleister](https://partner.ovhcloud.com/de/).
-- Ändern Sie alle Ihre lokalen Passwörter, insbesondere die Passwörter Ihrer E-Mail-Adressen, und halten Sie sich dabei an diese [bewährten Praktiken](https://docs.ovh.com/de/customer/Passwort-verwalten/#ein-adaquates-passwort-erstellen).
+- Führen Sie die Sicherheitsupdates durch;
+- Überprüfen Sie außerdem, dass ein Antivirus installiert ist, aktualisieren Sie es und starten Sie einen vollständigen Scan. Wenn Sie keine Domain besitzen, konsultieren Sie vor der Installation einen spezialisierten [Dienstleister](https://partner.ovhcloud.com/de/);
+- Ändern Sie alle Ihre lokalen Passwörter, insbesondere die Passwörter Ihrer E-Mail-Adressen, und halten Sie sich dabei an diese [bewährten Praktiken](https://docs.ovh.com/de/customer/Passwort-verwalten/#ein-adaquates-passwort-erstellen);
 - Ändern Sie die Passwörter Ihrer OVHcloud Dienste entsprechend den Anweisungen in dieser [Anleitung](../ftp-benutzer-passwort-aendern/) um die FTP-Benutzer Passwort und [diese](../datenbank-passwort-aendern/) um die Passwort ihrer Webhosting-Datenbank zu ändern.
 
 > [!warning]

@@ -47,9 +47,9 @@ Si la page **« 403 forbidden »** est apparue sans action de votre part et que 
 
 Vérifiez tout d'abord la sécurité de votre/vos poste(s) informatique(s) :
 
-- Effectuez les mises à jour de sécurité.
-- Vérifiez également qu'un antivirus est installé, mettez-le à jour et lancez un scan complet. Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) avant toute installation.
-- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mail, en respectant ces [bonnes pratiques](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe).
+- Effectuez les mises à jour de sécurité ;
+- Vérifiez également qu'un antivirus est installé, mettez-le à jour et lancez un scan complet. Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) avant toute installation ;
+- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mail, en respectant ces [bonnes pratiques](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe) ;
 - Modifiez les mots de passe de vos services OVHcloud en suivant les instructions de ce [guide](../gerer-et-acceder-a-ses-mots-de-passe/).
 
 > [!warning]

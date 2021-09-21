@@ -37,7 +37,7 @@ También puede ocurrir que, debido a una detección de anomalías, nuestros robo
 
 ## Procedimiento
 
-### 1. analizar la situación
+### Etapa 1: analizar la situación
 
 Si la página **"403 forbidden"** aparece debido a una modificación errónea de su sitio web, [restablezca la totalidad o parte del espacio de almacenamiento de su alojamiento](../restaurar-espacio-almacenamiento-alojamiento-web/) a una fecha anterior.
 
@@ -47,7 +47,7 @@ Si la página **"403 forbidden"** no ha aparecido debido a una modificación de 
 
 Si la página **"403 forbidden"** ha aparecido sin ninguna acción por su parte y no ha recibido ningún correo de nuestros servicios al respecto, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/).
 
-### 2. proteger sus soluciones <a name="step2"></a>
+### Etapa 2: proteger sus soluciones <a name="step2"></a>
 
 En primer lugar, compruebe la seguridad de sus equipos informáticos:
 
@@ -65,7 +65,7 @@ En primer lugar, compruebe la seguridad de sus equipos informáticos:
 > Si tiene alguna duda sobre las operaciones que debe realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 >
 
-### 3. intervenir en su alojamiento
+### Etapa 3: intervenir en su alojamiento
 
 En primer lugar, la fecha de envío del mensaje de correo electrónico de OVHcloud indica la desactivación de su alojamiento, así como el directorio o carpetas que contienen ejemplos de archivos ilegítimos.
 
@@ -84,7 +84,7 @@ Si su alojamiento ha sido cerrado más de dos semanas antes, póngase en contact
 > Le recomendamos que realice una auditoría de seguridad **antes** de reabrir el alojamiento. Cualquier envío de código malicioso desde su alojamiento puede conllevar su responsabilidad jurídica.
 >
 
-### 4. reactivar su alojamiento web
+### Etapa 4: reactivar su alojamiento web
 
 #### Reactivar el alojamiento con FileZilla
 
