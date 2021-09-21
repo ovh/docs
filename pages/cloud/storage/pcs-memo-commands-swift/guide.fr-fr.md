@@ -97,7 +97,7 @@ $ swift list <conteneur_segments>
 <objet>/slo/1628738591.297565/6442450944/524288000/00000009
 ```
 
-> Il est donc recommandé de supprimer le conteneur : <conteneur_segments> ou au moins les segments ccorrespondant à l'objet abandonné.
+> Il est donc recommandé de supprimer le conteneur `<conteneur_segments>` ou au moins les segments ccorrespondant à l'objet abandonné.
 
 ### Download d'un objet
 
@@ -188,7 +188,7 @@ swift copy -d /<conteneur_de_destination> <conteneur> <objet>
 
 > [!primary]
 >
-> Dans cet exemple le LargeObject à été uploadé en mode SLO.
+> Dans cet exemple, le LargeObject à été uploadé en mode SLO.
 > Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/fr/storage/pcs/curl-commands-memo/) pour l'upload du manifest.
 >
 
@@ -270,7 +270,7 @@ swift list --lh -t <autre_conteneur>
 2.0G
 ```
 
-On remarque que pour les petits objets cela ne change pas grand chose. Par contre, pour les objets de taille un peu plus conséquente (500M) :
+On remarque que, pour les petits objets, cela ne change pas grand chose. Par contre, pour les objets de taille un peu plus conséquente (500M) :
 
 ```bash
 time swift upload <conteneur> <objet> --object-name <objet_bis>
@@ -391,7 +391,7 @@ swift list --lh -t -p <prefix> <conteneur>
 685K
 ```
 
-### Obtenir l'`id` d'un utilisateur
+### Obtenir l'id d'un utilisateur
 
 ```bash
 openstack user show --format json "${OS_USERNAME}" | jq -r '.id'

@@ -176,7 +176,7 @@ curl "${OS_STORAGE_URL}/<conteneur>" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN
 
 ### Supprimer un conteneur non vide de moins de 10000 objets
 
-> Si le conteneur contient des LargeObject, il faudra supprimer manuellement le conteneur : <conteneur_segments>
+> Si le conteneur contient des LargeObject, il faudra supprimer manuellement le conteneur `<conteneur_segments>`
 
 ```bash
 OBJECTS=$(curl -s "${OS_STORAGE_URL}/<conteneur>" -X GET -H "X-Auth-Token: ${OS_AUTH_TOKEN}")
@@ -189,7 +189,7 @@ curl "${OS_STORAGE_URL}/<conteneur>" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN
 
 ### Vider un conteneur de plus de 10000 objets
 
-> Si le conteneur contient des LargeObject, il faudra supprimer manuellement le conteneur : <conteneur_segments>
+> Si le conteneur contient des LargeObject, il faudra supprimer manuellement le conteneur `<conteneur_segments>`
 
 ```bash
 #!/bin/bash

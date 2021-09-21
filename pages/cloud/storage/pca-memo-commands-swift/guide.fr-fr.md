@@ -97,7 +97,7 @@ $ swift list <conteneur_segments>
 <objet>/slo/1628738591.297565/6442450944/524288000/00000009
 ```
 
-> Il est donc recommandé de supprimer le conteneur : <conteneur_segments> ou au moins les segments correspondant à l'objet abandonné.
+> Il est donc recommandé de supprimer le conteneur `<conteneur_segments>` ou au moins les segments correspondant à l'objet abandonné.
 
 ### Download d'un objet
 
@@ -204,7 +204,7 @@ Il faut donc commencer par déplacer les segments :
 
 > [!warning]
 >
-> Il faut au préalable créer le <conteneur_de_destination_segments>
+> Il faut au préalable créer le `<conteneur_de_destination_segments>`
 >
 
 ```bash
@@ -280,7 +280,7 @@ swift list --lh -t <autre_conteneur>
 2.0G
 ```
 
-On remarque que pour les petits objets, cela ne change pas grand chose. Par contre, pour les objets de taille un peu plus conséquente (500M) :
+On remarque que, pour les petits objets, cela ne change pas grand chose. Par contre, pour les objets de taille un peu plus conséquente (500M) :
 
 ```bash
 time swift upload <conteneur> <objet> --object-name <objet_bis>
@@ -336,7 +336,7 @@ Il faut donc commencer par déplacer les segments :
 
 > [!warning]
 >
-> Il faut au préalable créer le <conteneur_de_destination_segments>
+> Il faut au préalable créer le `<conteneur_de_destination_segments>`.
 >
 
 ```bash
@@ -378,7 +378,7 @@ swift list --lh -t <conteneur>
 8.4G
 ```
 
-Il n'y a ps de notion de dossier dans un conteneur, cependant on peut utiliser les préfixes :
+Il n'y a pas de notion de dossier dans un conteneur, cependant on peut utiliser les préfixes :
 
 ```bash
 swift list -p <prefix> <conteneur>
@@ -407,7 +407,7 @@ swift list --lh -t -p <prefix> <conteneur>
 685K
 ```
 
-### Obtenir l'`id` d'un utilisateur
+### Obtenir l'id d'un utilisateur
 
 ```bash
 openstack user show --format json "${OS_USERNAME}" | jq -r '.id'
