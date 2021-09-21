@@ -5,6 +5,8 @@ excerpt: Retrouvez ici les principales commandes swift pour gérer vos conteneur
 section: Public Cloud Archive
 ---
 
+**Dernière mise à jour le 21/09/2021**
+
 ## Objectif
 
 Vous pouvez utiliser l’API OpenStack pour générer divers scripts afin d’automatiser vos actions sur vos instances Public Cloud.

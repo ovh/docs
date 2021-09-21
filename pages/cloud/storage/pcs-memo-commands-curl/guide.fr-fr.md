@@ -5,6 +5,8 @@ excerpt: Retrouvez ici les principales commandes curl pour gérer vos conteneurs
 section: Object Storage
 ---
 
+**Dernière mise à jour le 21/09/2021**
+
 ## Objectif
 
 **Retrouvez dans ce guide les principales commandes curl pour gérer vos conteneurs d'objets.**

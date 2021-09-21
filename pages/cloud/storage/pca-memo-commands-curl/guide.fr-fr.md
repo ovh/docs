@@ -5,6 +5,8 @@ excerpt: Retrouvez ici les principales commandes curl pour gérer vos conteneurs
 section: Public Cloud Archive
 ---
 
+**Dernière mise à jour le 21/09/2021**
+
 ## Objectif
 
 Retrouvez dans ce guide les principales commandes curl pour gérer vos conteneurs d'objets Public Cloud Archive.
