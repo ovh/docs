@@ -28,10 +28,24 @@ order: 1
 
 ## En pratique
 
+### Adopter les bonnes pratiques en matière de mots de passe
+
+#### Apprendre à générer des mots de passe complexes
+
+https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe
+
+#### Utiliser un gestionnaire de mots de passe
+
+https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe
+
+#### Autres bonnes pratiques liées aux mots de passe
+
+https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#bonnes-pratiques-pour-la-gestion-de-votre-mot-de-passe
+
 
 ### Sécuriser ses solutions locales
 
-#### Vérifier son ordinateur
+#### Vérifier ses appareils
 
 https://docs.ovh.com/fr/hosting/piratage-de-votre-site-wordpress-conseils-et-cas-dusages/#scannez-votre-poste
 
@@ -46,19 +60,31 @@ https://docs.ovh.com/fr/customer/arnaques-fraude-phishing/
 #### Adopter les bonnes pratiques
 
 Ne pas enregistrer ses mots de passe dans son navigateur
-cf anssi
+cf anssi - cybermalveillance.gouv.fr
+https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#aller-plus-loin_2
 
 
 
 ### Sécuriser son espace client
 
+#### Activer la double authentification
+
 https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/
-https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/
-https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/
+
+#### Conserver ses codes de secours
+
+https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/#etape-2-sauvegarder-les-codes-de-secours
+
+#### Ajouter un e-mail de secours
+
+https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#ajouter-une-adresse-e-mail-de-secours
+
+#### Mettre à jour ses informations personnelles
+
+https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#comment-gerer-mes-informations-personnelles_1
 
 
-
-### Sécuriser ses données
+### Sécuriser les données de son hébergement
 
 #### Effectuer des sauvegardes régulièrement
 
@@ -66,22 +92,16 @@ ransomware
 https://docs.ovh.com/fr/hosting/exportation-bases-donnees/
 https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/
 https://docs.ovh.com/fr/hosting/exporter-son-site-web/
+https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/
 
 #### Mettre en place le renouvellement automatique
 
 https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/
 https://docs.ovh.com/fr/billing/faq-renouvellement-automatique-ovh/
 
-#### Changer ses mots de passe régulièrement
+#### Utiliser une version récente de PHP
 
-https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/
-https://docs.ovh.com/fr/hosting/gerer-et-acceder-a-ses-mots-de-passe/
-
-#### Mettre en place le https
-
-https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/
-https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/
-
+https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
 
 
 ### Sécuriser son site
@@ -91,9 +111,10 @@ https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/
 https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#22-mettre-a-jour-votre-site-internet
 https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#etape-4-veiller-a-la-securite-de-votre-site_1
 
-#### Utiliser une version récente de PHP
+#### Mettre en place le https
 
-https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
+https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/
+https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/
 
 #### Activer le Parefeu applicatif
 
@@ -108,10 +129,6 @@ https://docs.ovh.com/fr/hosting/activation-pare-feu-applicatif/
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
-
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
-
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
