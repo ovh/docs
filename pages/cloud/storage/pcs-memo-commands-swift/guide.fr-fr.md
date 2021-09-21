@@ -20,7 +20,7 @@ Le swiftclient OpenStack vous permet d’interagir avec vos conteneurs et objets
 
 ## En pratique
 
-### Création de conteneur PCS
+### Créer un conteneur PCS
 
 ```bash
 swift post <conteneur>
@@ -270,7 +270,7 @@ swift list --lh -t <autre_conteneur>
 2.0G
 ```
 
-On remarque que pour les petits objets cela ne change pas grand chose. Par contre, pour les objets de taille un peu plus conséquentes (500M) :
+On remarque que pour les petits objets cela ne change pas grand chose. Par contre, pour les objets de taille un peu plus conséquente (500M) :
 
 ```bash
 time swift upload <conteneur> <objet> --object-name <objet_bis>
@@ -295,7 +295,7 @@ sys	0m0,091s
 > [!primary]
 >
 > Dans cet exemple, le LargeObject à été uploader en mode SLO.
-> Consultez la documentation [memo de commandes curl](https://docs.ovh.com/fr/storage/pcs/curl-commands-memo/) pour l'upload du manifest.
+> Consultez la documentation [Mémo de commandes Curl](https://docs.ovh.com/fr/storage/pcs/curl-commands-memo/) pour l'upload du manifest.
 >
 
 ```bash

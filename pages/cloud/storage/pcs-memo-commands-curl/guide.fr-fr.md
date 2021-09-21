@@ -22,7 +22,7 @@ Chargez les variables d'environnement suivantes:
 
 ## En pratique
 
-### Création de conteneur PCS
+### Créer un conteneur PCS
 
 ```bash
 curl -i "${OS_STORAGE_URL}/<conteneur>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
