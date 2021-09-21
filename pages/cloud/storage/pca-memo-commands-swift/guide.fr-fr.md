@@ -206,7 +206,7 @@ Il faut donc commencer par déplacer les segments :
 
 > [!warning]
 >
-> Il faut au préalable créer le `<conteneur_de_destination_segments>`
+> Il faut au préalable créer le `<conteneur_de_destination_segments>`.
 >
 
 ```bash
