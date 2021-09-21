@@ -27,7 +27,7 @@ section: Getting started
  }
 </style>
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated 21<sup>st</sup> September, 2021.**
 
 ## Objective
 
@@ -36,7 +36,7 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 ## Requirements
 
 - an OVHcloud Managed Kubernetes cluster
-- at least one node on the cluster (see the [ordering a node](../managing-nodes/) guide for details) 
+- at least one node on the cluster (see the [ordering a node](../adding-nodes/) guide for details) 
 - a well configured  `kubectl` (see the [configuring kubectl](../configuring-kubectl/) guide for details) 
 
 ## Instructions
@@ -45,7 +45,7 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 The following command will deploy a simple application (nginx image) using a [Kubernetes Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) and a [Kubernetes Service](https://kubernetes.io/docs/concepts/services-networking/service/).
 
-Create a `hello.yaml` file for our `ovhplatform/hello` Docker image:
+Create a `hello.yml` file for our `ovhplatform/hello` Docker image:
 
 ```yaml
 apiVersion: v1
@@ -93,7 +93,7 @@ And apply the file:
 kubectl apply -f hello.yml
 ```
 
-After applying the YAML file, a new `hello-world` service and the corresponding `hello-world-deployment` deployment are created:
+After applying the YAML file, a new `hello-world` service and the corresponding `hello-world-deployment` deployment are created in the `default` namespace:
 
 <pre class="console"><code>$ kubectl apply -f  hello.yml
 service/hello-world created
@@ -101,7 +101,7 @@ deployment.apps/hello-world-deployment created
 </code></pre>
 
 > [!primary]
-> The application you have just deployed is a simple nginx server with a single static *Hello World* page. 
+> The application you have just deployed is a simple Nginx server with a single static *Hello World* page. 
 > Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/){.external}
 
 ### Step 2 - List the pods
@@ -118,6 +118,9 @@ You should see your newly created pod:
 NAME                                           READY     STATUS    RESTARTS   AGE
 hello-world-deployment-d98c6464b-7jqvg         1/1       Running   0          47s
 </code></pre>
+
+> [!primary]
+> `default` namespace is the Kubernetes namespace by default so you don't need to specify it in your kubectl commands
 
 ### Step 3 - List the deployments
 
@@ -139,18 +142,18 @@ hello-world-deployment        1         1         1            1           1m
 And now you're going to use `kubectl` to see your service:
 
 ```bash
-kubectl -n=default get services
+kubectl -n=default get services -l app=hello-world
 ```
 
 You should see your newly created service:
 
-<pre class="console"><code>$ kubectl get service hello-world
-NAME          TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)        AGE
-hello-world   LoadBalancer   10.3.81.234   6d6regsa9pc.lb.c1.gra.k8s.ovh.net   80:31699/TCP   4m
+<pre class="console"><code>$ kubectl -n=default get services -l app=hello-world
+NAME          TYPE           CLUSTER-IP     EXTERNAL-IP    PORT(S)        AGE
+hello-world   LoadBalancer   10.3.234.211   51.178.69.47   80:31885/TCP   6m54s
 </code></pre>
 
 > [!primary]
-> If under `EXTERNAL-IP` you get `&lt;pending>`, don't worry, the provisioning of the LoadBalancer 
+> If under `EXTERNAL-IP` you get `<pending>`, don't worry, the provisioning of the LoadBalancer 
 can take a minute or two, please try again in a few moments.
 
 For each service you deploy with LoadBalancer type, you will get a new sub-domain `XXXXXX.lb.c1.gra.k8s.ovh.net` to access the service. In my example that URL to access the service would be `http://6d6regsa9pc.lb.c1.gra.k8s.ovh.net`
@@ -160,6 +163,42 @@ For each service you deploy with LoadBalancer type, you will get a new sub-domai
 If you point your web browser to the service URL, the `hello-world` service will answer you:
 
 ![Testing your service](images/deploying_an_application-01.png){.thumbnail}
+
+
+You can even test the newly creates service, in command line, with curl:
+
+```bash
+curl 51.178.69.47
+```
+
+You should see your newly created service:
+
+<pre class="console"><code>$ kubectl -n=default get services -l app=hello-world
+$ curl 51.178.69.47
+<!doctype html>
+
+<html>
+<head>
+<title>OVH K8S</title>
+</head>
+<style>
+.title {
+font-size: 3em;
+padding: 2em;
+text-align: center;
+}
+</style>
+<body>
+<div class="title">
+<p>Hello from Kubernetes!</p>
+<img src="./ovh.svg">
+</div>
+</body>
+</html>
+</code></pre>
+
+> [!primary]
+> If you have an error message "Failed to connect to 51.178.69.47 port 80: Connection refused", it's normal, the service is starting, so you have to wait few seconds in order to test it again
 
 ### Step 6 - Clean up
 
@@ -175,7 +214,7 @@ If you list the services you will see that `hello-world` doesn't exist anymore:
 
 <pre class="console"><code>$ kubectl delete service hello-world
 service "hello-world" deleted
-$ kubectl get services
+$ kubectl get services -l app=hello-world
 No resources found.
 </code></pre>
 
