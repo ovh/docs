@@ -10,7 +10,7 @@ order: 3
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja dnia 2021-09-20**
+**Ostatnia aktualizacja dnia 2021-09-21**
 
 ## Wprowadzenie
 
@@ -20,7 +20,7 @@ order: 3
 > Nazwy tych opcji w Panelu klienta OVHcloud różnią się od nazw w interfejsie Openstack/Horizon. Jeśli przeprowadzasz tę operację w Panelu klienta OVHcloud, pamiętaj o wybraniu odpowiedniej opcji.
 >
 
-**Dowiedz się, jak odłożyć, wstrzymać lub zawiesić instancję.**
+**Dowiedz się, jak zawiesić, wstrzymać lub zatrzymać swoją instancję.**
 
 ## Wymagania początkowe
 
@@ -163,7 +163,7 @@ W oknie, które się wyświetla, zapoznaj się z komunikatem i kliknij przycisk 
 
 Po ukończeniu procesu Twoja instancja będzie wyświetlana jako *Wyłączona*.
 
-Aby wznowić instancję, wykonaj kroki opisane powyżej. Kliknij przycisk `...`{.action} po prawej stronie instancji i wybierz pozycję `Uruchom`{.action}. W niektórych przypadkach może być konieczne wykonanie restartu sprzętowego.
+Aby ponownie włączyć instancję, wykonaj kroki opisane powyżej. Kliknij przycisk `...`{.action} po prawej stronie instancji i wybierz pozycję `Uruchom`{.action}. W niektórych przypadkach może być konieczne wykonanie restartu sprzętowego.
 
 #### Z poziomu interfejsu horizon
 
@@ -173,7 +173,7 @@ W interfejsie Horizon kliknij menu `Compute`{.action} po lewej stronie, a nastę
 
 Pojawi się komunikat potwierdzenia wskazujący, że instancja została zawieszona.
 
-Aby odblokować instancję, wykonaj kroki opisane powyżej. Z listy rozwijanej odpowiedniej instancji wybierz pozycję `Resume Instance`{.action}.
+Aby ponownie włączyć instancję, wykonaj kroki opisane powyżej. Z listy rozwijanej odpowiedniej instancji wybierz pozycję `Resume Instance`{.action}.
 
 #### Korzystanie z API Openstack/Nova
 
@@ -187,7 +187,7 @@ Kiedy Twoje środowisko jest gotowe, wpisz w wierszu poleceń:
 ~$ nova suspend <UUID server>
 ```
 
-Aby wstrzymać instancję, w wierszu polecenia wpisz następujące polecenie:
+Aby ponownie włączyć instancję, w wierszu polecenia wpisz następujące polecenie:
 
 ```bash
 ~$ openstack server unsuspend <UUID server>
@@ -209,7 +209,7 @@ W interfejsie Horizon kliknij menu `Compute`{.action} po lewej stronie, a nastę
 
 Zostanie wyświetlony komunikat potwierdzenia z informacją o wstrzymaniu instancji.
 
-Aby odblokować instancję, wykonaj kroki opisane powyżej. Z listy rozwijanej odpowiedniej instancji wybierz pozycję `Resume Instance`{.action}.
+Aby ponownie włączyć instancję, wykonaj kroki opisane powyżej. Z listy rozwijanej odpowiedniej instancji wybierz pozycję `Resume Instance`{.action}.
 
 #### Korzystanie z API Openstack/Nova
 
@@ -223,7 +223,7 @@ Kiedy Twoje środowisko jest gotowe, wpisz w wierszu poleceń:
 ~$ nova pause <UUID server>
 ```
 
-Aby wstrzymać instancję, wpisz w wierszu polecenia:
+Aby ponownie włączyć instancję, wpisz w wierszu polecenia:
 
 ```bash
 ~$ openstack server unpause <UUID server>

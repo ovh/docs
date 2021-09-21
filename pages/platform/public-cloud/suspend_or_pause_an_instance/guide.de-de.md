@@ -91,7 +91,7 @@ Um die Momentaufnahme anzuzeigen, klicken Sie im Menü `Compute`{.action} auf `I
 
 Bevor Sie fortfahren, empfehlen wir Ihnen folgende Anleitungen:
 
-- [Vorbereitung der umgebung fur die verwendung der openstack api](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
+- [Vorbereitung der umgebung fur die verwendung der OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
 - [Die variablen der umgebung OpenStack laden](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/)
 
 Sobald Ihre Umgebung fertig ist, geben Sie auf der Kommandozeile Folgendes ein:

@@ -10,7 +10,7 @@ order: 3
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 17/09/2021**
+**Última atualização: 21/09/2021**
 
 ## Objetivo
 
@@ -163,7 +163,7 @@ Na janela contextual, tome nota da mensagem e clique em `Confirmar`{.action}.
 
 Uma vez terminado o processo, a instância aparece como *Apagada*.
 
-Para reativar a sua instância, efetue as mesmas etapas que as acima mencionadas. Clique então nas `...`{.action} à direita da instânciae selecione o `Iniciar`{.action}. Em alguns casos, poderá ter de efetuar uma Reboot a frio.
+Para reativar a instância, efetue as mesmas etapas que as acima mencionadas. Clique então nas `...`{.action} à direita da instânciae selecione o `Iniciar`{.action}. Em alguns casos, poderá ter de efetuar uma Reboot a frio.
 
 #### Da interface Horizon 
 
@@ -173,7 +173,7 @@ Na interface Horizon, clique no menu `Compute`{.action} no lado esquerdo e selec
 
 Aparecerá a mensagem de confirmação indicando que a instância foi suspensa.
 
-Para reactivar a sua instância, efetue as mesmas operações que as acima mencionadas. Na lista pendente da instância correspondente, selecione `Resume Instance`{.action}.
+Para reactivar a instância, efetue as mesmas operações que as acima mencionadas. Na lista pendente da instância correspondente, selecione `Resume Instance`{.action}.
 
 #### Utilização da API OpenStack/Nova
 
@@ -209,7 +209,7 @@ Na interface Horizon, clique no menu `Compute`{.action} no lado esquerdo e selec
 
 Aparecerá a mensagem de confirmação indicando que a instância foi pausada.
 
-Para reactivar a sua instância, efetue as mesmas etapas que as mencionadas acima. Na lista pendente da instância correspondente, selecione `Resume Instance`{.action}.
+Para reactivar a instância, efetue as mesmas etapas que as mencionadas acima. Na lista pendente da instância correspondente, selecione `Resume Instance`{.action}.
 
 #### Utilização das API OpenStack/Nova
 

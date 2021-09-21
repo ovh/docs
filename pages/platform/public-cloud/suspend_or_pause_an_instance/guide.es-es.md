@@ -1,16 +1,16 @@
 ---
 title: Suspender o poner en pausa una instancia
-excerpt: Cómo suspender o poner en pausa una instancia en Horizon.
 slug: suspender_o_poner_en_pausa_una_instancia
 legacy_guide_number: g1781
 section: Gestión del proyecto
+order: 3
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 17/09/2021**
+**Última actualización: 21/09/2021**
 
 ## Objetivo
 
@@ -27,7 +27,7 @@ section: Gestión del proyecto
 
 - Tener [una instancia de Public Cloud](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/) sobre la facturación por horas
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o al [Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/)
-- Conocimiento de la [API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) y de las [variables Openstack](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
+- Conocimiento de la [API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) y de las [variables OpenStack](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
 
 ## Procedimiento
 
@@ -109,7 +109,7 @@ nova shelve <UUID server>
 
 Esta opción le permite reiniciar su instancia para poder seguir utilizándola. Tenga en cuenta que, una vez hecho esto, la facturación se reanudará con normalidad.
 
-> [! alert] **Acciones en el snapshot**
+> [!alert] **Acciones en el snapshot**
 >
 > Cualquier acción en el snapshot que no sea la reactivación (*unshelve*) puede ser muy peligrosa para su infraestructura en caso de mal uso. Cuando se «reactiva» (*unshelved*) una instancia, la instantánea se eliminará automáticamente. No es recomendable desplegar una nueva instancia a través de una instantánea creada después de que una instancia haya sido suspendida.
 >
@@ -188,7 +188,7 @@ Una vez que el entorno esté listo, escriba lo siguiente en la línea de comando
 ~$ nova suspend <UUID server>
 ```
 
-Para cancelar la suspensión de la instancia, escriba lo siguiente en la línea de comandos:
+Para reactivar la instancia, escriba lo siguiente en la línea de comandos:
 
 ```bash
 ~$ openstack server unsuspend <UUID server>
@@ -210,7 +210,7 @@ En Horizon, haga clic en el menú `Compute`{.action} en el lado izquierdo y sele
 
 Aparecerá el mensaje de confirmación, indicando que la instancia ha sido pausada.
 
-Para cancelar la suspensión de la instancia, siga los pasos que se indican más arriba. En la lista desplegable correspondiente, seleccione `Resume Instance`{.action}.
+Para reactivar la instancia, siga los pasos que se indican más arriba. En la lista desplegable correspondiente, seleccione `Resume Instance`{.action}.
 
 #### Utilizando la API de OpenStack/Nova
 

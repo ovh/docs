@@ -10,7 +10,7 @@ order: 3
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 20 settembre 2021**
+**Ultimo aggiornamento: 21 settembre 2021**
 
 ## Obiettivo
 
@@ -20,7 +20,7 @@ order: 3
 > Il nome di queste opzioni nello Spazio Cliente OVHcloud è diverso dal nome in Openstack/Horizon. Se effettui questa operazione utilizzando lo Spazio Cliente OVHcloud, assicurati di selezionare l'opzione più adatta.
 >
 
-**Questa guida ti mostra come sospendere, arrestare o mettere in pausa l'istanza.**
+**Questa guida ti mostra come sospendere, arrestare o mettere in pausa un'istanza.**
 
 ## Prerequisiti
 
@@ -51,7 +51,7 @@ Questa opzione permette di liberare le risorse dedicate all'istanza Public Cloud
 
 Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.
 
-Clicca sul pulsante `...`{.action} a destra dell'istanza da sospendere, poi clicca su `Sospesa`{.action}.
+Clicca su `...`{.action} a destra dell'istanza da sospendere, poi clicca su `Sospesa`{.action}.
 
 ![suspend instance](images/suspend_an_instance.png){.thumbnail}
 
@@ -110,7 +110,7 @@ Questa opzione ti permette di riattivare l'istanza per poterla utilizzare. Ti ri
 
 > [!alert] **Azioni sullo snapshot**
 >
-> Qualsiasi azione sullo snapshot diversa dalla (*unshelve*) può essere molto pericolosa per la tua infrastruttura in caso di uso improprio. Quando un'istanza è «riattivata» (*unshelved*), lo snapshot viene automaticamente eliminata. Non è consigliabile creare una nuova istanza da un snapshot creata in seguito alla sospesa di un'istanza.
+> Qualsiasi azione sullo snapshot diversa dalla riattivazione (*unshelve*) può essere molto pericolosa per la tua infrastruttura in caso di uso improprio. Quando un'istanza è «riattivata» (*unshelved*), lo snapshot viene automaticamente eliminata. Non è consigliabile creare una nuova istanza da un snapshot creata in seguito alla sospesa di un'istanza.
 >
 > OVHcloud fornisce i servizi di cui sei responsabile. Non avendo accesso a queste macchine, non siamo noi gli amministratori e pertanto non possiamo fornirti alcuna assistenza. È responsabilità dell’utente garantire ogni giorno la gestione e la sicurezza del software. In caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida. .
 >
@@ -119,7 +119,7 @@ Questa opzione ti permette di riattivare l'istanza per poterla utilizzare. Ti ri
 
 Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.
 
-Clicca sul pulsante `...`{.action} a destra dell'istanza e poi clicca su `Riattiva`{.action}.
+Clicca su `...`{.action} a destra dell'istanza e poi clicca su `Riattiva`{.action}.
 
 ![reactivate instance](images/reactivate_instancePanel.png){.thumbnail}
 
@@ -155,7 +155,7 @@ Questa opzione ti permette di arrestare la tua istanza e salvare lo stato della 
 
 Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”
 
-Clicca sul pulsante `...`{.action} a destra dell'istanza da arrestare, poi clicca su `Arresta`{.action}.
+Clicca su `...`{.action} a destra dell'istanza da arrestare, poi clicca su `Arresta`{.action}.
 
 ![stop instance](images/stopinstance.png){.thumbnail}
 
@@ -163,7 +163,7 @@ Nella finestra contestuale, annota il messaggio e clicca su `Conferma`{.action}.
 
 Una volta completata la procedura, l'istanza si *Spento*.
 
-Per riavviare l'istanza, effettua gli stessi step indicati in precedenza. Clicca sul pulsante `...`{.action} a destra dell'istanza e seleziona `Comincia ora`{.action}. In alcuni casi, potrebbe essere necessario riavviare a freddo.
+Per riattivare l'istanza, effettua gli stessi step indicati in precedenza. Clicca su `...`{.action} a destra dell'istanza e seleziona `Comincia ora`{.action}. In alcuni casi, potrebbe essere necessario riavviare a freddo.
 
 #### Dall'interfaccia Horizon 
 
@@ -173,7 +173,7 @@ Nell'interfaccia Horizon, clicca su `Compute`{.action} nel menu a sinistra e sel
 
 Compare il messaggio di conferma che l'istanza è stata sospesa.
 
-Per riavviare l'istanza, effettua le stesse operazioni indicate in precedenza. Nella lista a tendina dell'istanza corrispondente, seleziona `Resume Instance`{.action}.
+Per riattivare l'istanza, effettua le stesse operazioni indicate in precedenza. Nella lista a tendina dell'istanza corrispondente, seleziona `Resume Instance`{.action}.
 
 #### Dalle API Openstack/Nova
 
@@ -187,7 +187,7 @@ Una volta che l'ambiente è pronto, esegui questo comando:
 ~$ nova suspend <UUID server>
 ```
 
-Per riavviare l'istanza, esegui questo comando:
+Per riattivare l'istanza, esegui questo comando:
 
 ```bash
 ~$ openstack server unsuspend <UUID server>
@@ -209,7 +209,7 @@ Nell'interfaccia Horizon, clicca su `Compute`{.action} nel menu a sinistra e sel
 
 Compare il messaggio di conferma che l'istanza è stata messa in pausa.
 
-Per disinserire la pausa dell'istanza, segui gli step indicati qui sotto. Nella lista a tendina dell'istanza corrispondente, seleziona `Resume Instance`{.action}.
+Per riattivare l'istanza, segui gli step indicati qui sotto. Nella lista a tendina dell'istanza corrispondente, seleziona `Resume Instance`{.action}.
 
 #### Dalle API Openstack/Nova
 
@@ -223,7 +223,7 @@ Una volta che l'ambiente è pronto, esegui questo comando:
 ~$ nova pause <UUID server>
 ```
 
-Per disinserire la pausa dell'istanza, esegui questo comando:
+Per riattivare l'istanza, esegui questo comando:
 
 ```bash
 ~$ openstack server unpause <UUID server>
