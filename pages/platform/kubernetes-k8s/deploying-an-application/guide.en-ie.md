@@ -120,7 +120,7 @@ hello-world-deployment-d98c6464b-7jqvg         1/1       Running   0          47
 </code></pre>
 
 > [!primary]
-> `default` namespace is the Kubernetes namespace by default so you don't need to specify it in your kubectl commands
+> `default` namespace is the Kubernetes namespace by default so you don't need to specify it in your kubectl commands.
 
 ### Step 3 - List the deployments
 
@@ -165,7 +165,7 @@ If you point your web browser to the service URL, the `hello-world` service will
 ![Testing your service](images/deploying_an_application-01.png){.thumbnail}
 
 
-You can even test the newly creates service, in command line, with curl:
+You can even test the newly created service, in command line, with curl:
 
 ```bash
 curl 51.178.69.47
@@ -198,7 +198,7 @@ text-align: center;
 </code></pre>
 
 > [!primary]
-> If you have an error message "Failed to connect to 51.178.69.47 port 80: Connection refused", it's normal, the service is starting, so you have to wait few seconds in order to test it again
+> If you have an error message "Failed to connect to 51.178.69.47 port 80: Connection refused", it's normal. The service is starting, so you have to wait a few seconds in order to test it again.
 
 ### Step 6 - Clean up
 

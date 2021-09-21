@@ -5,13 +5,15 @@ excerpt: Retrouvez ici les principales commandes curl pour gérer vos conteneurs
 section: Public Cloud Archive
 ---
 
+**Dernière mise à jour le 21/09/2021**
+
 ## Objectif
 
-Dans ce guide, vous retrouvez les principales commandes curl pour gérer vos conteneurs d'objets Public Cloud Archive.
+Retrouvez dans ce guide les principales commandes curl pour gérer vos conteneurs d'objets Public Cloud Archive.
 
 ## Prérequis
 
-Chargez les variables d'environnement suivantes:
+Chargez les variables d'environnement suivantes :
 
 > `export OS_AUTH_URL=https://auth.cloud.ovh.net/v3/`  
 > `export OS_STORAGE_URL=https://storage.<region>.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf`  
@@ -98,7 +100,7 @@ Créez le manifeste au format json en fonction des attributs suivants :
 - **size_bytes** (Facultatif)
   Taille du segment. Cette valeur est disponible dans le metadata `Content-Length` du segment via : `curl -i -X HEAD "$OS_STORAGE_URL/<conteneur>/<objet>" -H "X-Auth-Token:$OS_AUTH_TOKEN"`
 
-Voici un xemple de manifeste :
+Voici un exemple de manifeste :
 
 ```json
 [
@@ -168,7 +170,8 @@ rm -rf "${TMPDIR}"
 curl "${OS_STORAGE_URL}/<conteneur>/<objet>" -X GET -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -o <output_file>
 ```
 
-### Supprimer un conteneur vide:
+### Supprimer un conteneur vide
+
 ```bash
 curl "${OS_STORAGE_URL}/<conteneur>" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN}"
 ```
@@ -177,7 +180,7 @@ curl "${OS_STORAGE_URL}/<conteneur>" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN
 
 > [!primary]
 >
-> Si le conteneur contient des LargeObject, il faudra supprimer manuellement le conteneur : <conteneur_segments>
+> Si le conteneur contient des LargeObject, il faudra supprimer manuellement le conteneur : `<conteneur_segments>`
 >
 
 ```bash
@@ -193,7 +196,7 @@ curl "${OS_STORAGE_URL}/<conteneur>" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN
 
 > [!primary]
 >
-> Si le conteneur contient des LargeObject, il faudra supprimer manuellement le conteneur : <conteneur_segments>
+> Si le conteneur contient des LargeObject, il faudra supprimer manuellement le conteneur : `<conteneur_segments>`
 >
 
 ```bash
