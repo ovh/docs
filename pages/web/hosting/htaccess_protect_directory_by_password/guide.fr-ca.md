@@ -6,7 +6,7 @@ excerpt: "Retrouvez ici les manipulations necessaires pour proteger l'acces a un
 section: 'Réécriture et authentification'
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 06/09/2021**
 
 Vous pouvez réaliser ceci grâce à un fichier .htaccess. Avant de procéder, il est nécessaire de préciser quelques petites choses par rapport aux fichiers .htaccess. Tout d'abord, il faut savoir qu'il s'agit de fichiers particuliers pour le serveur web, et que ces fichiers n'apparaissent pas dans l'arborescence du répertoire concerné si un internaute fait un accès à un répertoire listable (qui ne contient pas de page index, et dont le listage n'est pas interdit). Ensuite, il faut bien prendre en compte que les paramétrages indiqués par un fichier .htaccess s'appliquent au répertoire où le fichier est installé, ainsi qu'à tout ses sous-répertoires.
 
@@ -21,7 +21,12 @@ Vous pouvez réaliser ceci grâce à un fichier .htaccess. Avant de procéder, i
 ## Procedure a suivre
 
 ### Creer le fichier de mot de passe
-Dans un premier temps, il faut créer le fichier qui contiendra la liste des utilisateurs ayant le droit de se connecter et le mot de passe qui leur est associé. En général, on crée pour cela un fichier .htpasswd qui sera ensuite utilisé par le fichier .htaccess. Il s'agit d'un fichier texte simple, à l'intérieur duquel sont indiqués les noms des utilisateurs et leurs mots de passe sous forme cryptée. Le mot de passe rattaché à ces utilisateurs devra être crypté. Vous trouverez plusieurs manière de faire sur internet.
+Dans un premier temps, il faut créer le fichier qui contiendra la liste des utilisateurs ayant le droit de se connecter et le mot de passe qui leur est associé. En général, on crée pour cela un fichier .htpasswd qui sera ensuite utilisé par le fichier .htaccess. Il s'agit d'un fichier texte simple, à l'intérieur duquel sont indiqués les noms des utilisateurs et leurs mots de passe sous forme cryptée. Le mot de passe rattaché à ces utilisateurs devra être crypté.
+
+> [!primary]
+>
+> Pour toute question sur la méthode à utiliser pour crypter les mots de passe dans un fichier .htpasswd, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
+>
 
 Sous windows, vous ne pouvez pas créer directement un fichier nommé .htaccess ou .htpasswd. Il vous suffit alors de le nommer autrement, de le transférer sur votre espace web, et de le renommer en .htaccess ou .htpasswd ensuite à l'aide de votre client FTP.
 

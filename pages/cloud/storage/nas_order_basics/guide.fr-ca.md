@@ -14,7 +14,7 @@ Le NAS (Network Attached Storage) est un serveur de fichiers relié à un résea
 
 ## Prérequis
 
-- Disposer d'une adresse IP attachée à un service OVHcloud (Hosted Private Cloud, Serveur Dédié, VPS, Instance Public Cloud, Offre Internet, etc...)
+- Disposer d'une adresse IP attachée à un service OVHcloud (Hosted Private Cloud, Serveur Dédié, VPS, Instance Public Cloud, etc...)
 - Disposer d'un [NAS-HA](https://www.ovh.com/ca/fr/nas/)
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
@@ -70,7 +70,7 @@ Afin de pouvoir accéder à la partition que vous avez créée précédemment, v
 
 > [!primary]
 >
-> Seules les adresses IP de services OVHcloud peuvent accéder à votre NAS (ex : un serveur dédié, un accès Internet fourni par OVHcloud, un VPS, une instance Public Cloud, etc...)
+> Seules les adresses IP de services OVHcloud peuvent accéder à votre NAS (ex : un serveur dédié, un VPS, une instance Public Cloud, etc...)
 >
 
 Pour autoriser une IP à accéder au NAS, cliquez sur le bouton `(...)`{.action} situé à droite de la partition existante, puis sur `Gérer les accès`{.action}.
@@ -95,7 +95,7 @@ Pour supprimer un accès à une partition, cliquez sur le bouton `(...)`{.action
 > Tous les paramètres ZFS par défaut sont optimisés. Bien que nous déconseillons la modification de ces paramètres, ce menu permet d'ajuster le ZFS utilisé par le NAS-HA.
 >
 
-Pour modifier les paramètres ZFS d'une partition, cliquez sur le bouton `...`{.action} à droite de la partition concernée, puis sur `Paramètres Z File System (ZFS)`{.action}.
+Pour modifier les paramètres ZFS d'une partition, cliquez sur le bouton `(...)`{.action} à droite de la partition concernée, puis sur `Paramètres Z File System (ZFS)`{.action}.
 
 ![zfs](images/nas2021-13.png){.thumbnail}
 

@@ -95,7 +95,7 @@ Pour supprimer un accès à une partition, cliquez sur le bouton `(...)`{.action
 > Tous les paramètres ZFS par défaut sont optimisés. Bien que nous déconseillons la modification de ces paramètres, ce menu permet d'ajuster le ZFS utilisé par le NAS-HA.
 >
 
-Pour modifier les paramètres ZFS d'une partition, cliquez sur le bouton `...`{.action} à droite de la partition concernée, puis sur `Paramètres Z File System (ZFS)`{.action}.
+Pour modifier les paramètres ZFS d'une partition, cliquez sur le bouton `(...)`{.action} à droite de la partition concernée, puis sur `Paramètres Z File System (ZFS)`{.action}.
 
 ![zfs](images/nas2021-13.png){.thumbnail}
 
