@@ -83,7 +83,7 @@ split -d -b "${CHUNK_SIZE}" "${FILE}" "$(basename $FILE)_"
 curl -X PUT -H "X-Auth-Token: ${OS_AUTH_TOKEN}" "${OS_STORAGE_URL}/${CONTAINER}"
 curl -X PUT -H "X-Auth-Token: ${OS_AUTH_TOKEN}" "${OS_STORAGE_URL}/${CONTAINER}_segments"
 
-# Upload les chunks
+# Upload des chunks
 for chunk in *; do
     curl -X PUT -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -T "${chunk}" "${OS_STORAGE_URL}/${CONTAINER}_segments/${OBJECT}/${chunk}"
 done
@@ -149,7 +149,7 @@ split -d -b "${CHUNK_SIZE}" "${FILE}" "$(basename $FILE)_"
 curl -X PUT -H "X-Auth-Token: ${OS_AUTH_TOKEN}" "${OS_STORAGE_URL}/${CONTAINER}"
 curl -X PUT -H "X-Auth-Token: ${OS_AUTH_TOKEN}" "${OS_STORAGE_URL}/${CONTAINER}_segments"
 
-# Upload les chunks
+# Upload des chunks
 for chunk in *; do
     curl -X PUT -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -T "${chunk}" "${OS_STORAGE_URL}/${CONTAINER}_segments/${OBJECT}/${chunk}"
 done
