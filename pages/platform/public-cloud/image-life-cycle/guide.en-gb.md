@@ -1,7 +1,7 @@
 ---
 title: 'PCI & VPS - Image life cycle'
 slug: pci-vps-image-life-cycle
-excerpt: Find out about the life cycle of images provided for Public Cloud & VPS 
+excerpt: Find out about the life cycle of images provided for Public Cloud & VPS
 section: 'Getting started'
 order: 8
 ---

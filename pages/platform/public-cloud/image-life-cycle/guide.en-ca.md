@@ -1,8 +1,8 @@
 ---
 title: 'PCI & VPS - Image life cycle'
 slug: pci-vps-image-life-cycle
-excerpt: Find out about image life cycle
-section: 'OpenStack'
+excerpt: Find out about the life cycle of images provided for Public Cloud & VPS
+section: 'Getting started'
 order: 8
 ---
 
@@ -10,7 +10,7 @@ order: 8
 
 ## Objective
 
-This documentation will share the OVHcloud image end of life roadmap. OVHcloud follows the life cycle of each distribution meaning if officially the distribution is end of life, it will be also end of life on OVHcloud VPS and Public Cloud product on the same day.
+This documentation will share the end of life (EOL) roadmap for OVHcloud images. OVHcloud follows the official life cycle of each distribution. This means that when a distribution reaches its end of life, it will also be the EOL of the corresponding OVHcloud image for VPS and Public Cloud services on the same date.
 
 ## Distribution Life Cycle
 
@@ -31,13 +31,13 @@ This documentation will share the OVHcloud image end of life roadmap. OVHcloud f
 | Windows Server 2016           | [Life Cycle](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2016)     |
 | Windows Server 2019           | [Life Cycle](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2019)     |
 
-## End of lifes in 2021
+## EOLs in 2021
 
-1. Ubuntu 16.04 - April 2021
-1. Fedora 32 - May 2021
-1. Ubuntu 20.10 - July 2021
-1. Fedora 33 - ~ November 2021 (maintained for 4 weeks after Fedora 35 release)
-1. Centos 8 - December 2021
+- Ubuntu 16.04 - April 2021
+- Fedora 32 - May 2021
+- Ubuntu 20.10 - July 2021
+- Fedora 33 - ~ November 2021 (maintained for 4 weeks after Fedora 35 release)
+- Centos 8 - December 2021
 
 ## Go further
 
