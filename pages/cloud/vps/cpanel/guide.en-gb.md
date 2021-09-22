@@ -5,7 +5,7 @@ excerpt: 'Find out how to instantiate a VPS with the pre-installed cPanel applic
 section: 'Advanced usage'
 ---
 
-**Last updated 16th September 2021**
+**Last updated 22nd September 2021**
 
 ## Objective
 
@@ -46,7 +46,7 @@ The URL above allows you to log in without credentials (user and password) to yo
 
 > [!primary]
 >
-> IIf the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the “whmlogin” command to generate a new link.
+> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the “whmlogin” command to generate a new link.
 >
 
 #### Step 1: Read and accept the terms of cPanel
