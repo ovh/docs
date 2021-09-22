@@ -25,7 +25,7 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 ![first connection](images/firstconnection.png){.thumbnail}
 
-You will be redirected to a new page where you have to enter your **Project name** and agree to the **General terms of service**. 
+You will be redirected to a new page where you will be required to enter your **Project name** and agree to the **General terms of service.**
 
 If this is your first time creating a Public Cloud project, you can add voucher if applicable. Available vouchers can be retrieved [here](https://www.ovhcloud.com/en-ca/public-cloud/).
 
@@ -33,30 +33,34 @@ If this is your first time creating a Public Cloud project, you can add voucher 
 > It is necessary to use the voucher provided for your respective branch.
 >
 
+> [!alert]
+> If you had previously created a project in your account, you will not be able to use a voucher, even if the project was deleted a long time ago.
+> 
+
 Once done, click on `Continue`{.action}
 
 ![confirm voucher](images/confirmvoucher.png){.thumbnail}
 
 Next, you will be prompted to **Register a payment method**, this will be requested even if a voucher is applied. This is to ensure that your service can be renewed via automatic payments. You can register a Credit card or a Paypal account. 
 
-If you add a Credit card, you will be charged a **small fee** to confirm your card's validty. This will be returned once the process is completed.
+If you add a Credit card, you will be charged a **small fee** to confirm your card's validity. This will be returned once the process is completed.
 
 If you add a Paypal account, you will be charged an **upfont fee** of $30. This fee will not be returned.
 
 ![add card](images/addcard.png){.thumbnail}
 
-Fill in the necessary information and confirm bu clicking on the `Add` button to proceed.
+Fill in the necessary information and confirm by clicking on the `Add`{.action} button.
 
-Once the payment method is confirmed, the projecting will begin :
+Once the payment method is confirmed, the project creation will be initiated:
 
 ![creating project](images/creatingproject.png){.thumbnail}
 
-Once the process is complete, your new Public Cloud project will now be available in your OVHcloud account.
+Once the process is complete, your new Public Cloud project will now be available in your OVHcloud account:
 
 ![new project created](images/newprojectcreated.png){.thumbnail}
 
 > [!warning]
-> If you receive the following error message while registering your payment method, please contact our support team by creating a ticket.
+> If you receive the below error message while registering your payment method, please contact our support team by creating a ticket from your OVHcloud Control Panel.
 > 
 
 ![public cloud error message](images/publicclouddenymessage.png){.thumbnail}
