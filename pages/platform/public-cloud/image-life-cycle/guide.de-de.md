@@ -1,7 +1,7 @@
 ---
-title: 'Public Cloud & VPS - Lebenszyklus des Images'
-slug: public-cloud-vps-image-life-cycle
-excerpt: Mehr Informationen zum Lebenszyklus der für die Public Cloud und den VPS bereitgestellten Images
+title: 'Public Cloud & VPS - Lebenszyklus von Images'
+slug: public-cloud-vps-image-lebenszyklus
+excerpt: Informationen zum Lebenszyklus der für Public Cloud und VPS bereitgestellten Images
 section: Erste Schritte
 order: 8
 ---
@@ -14,19 +14,19 @@ order: 8
 
 ## Ziel
 
-In dieser Anleitung erfahren Sie, wie die Bilder von OVHcloud am Ende ihrer Lebensdauer aussehen. OVHcloud folgt dem offiziellen Lebenszyklus jeder Distribution. Dies bedeutet, dass, wenn eine Distribution ihr Ende erreicht, sie auch das Ende der Lebensdauer des entsprechenden OVHcloud Images für VPS und Public Cloud Dienste zum gleichen Zeitpunkt sein wird.
+Auf dieser Seite können Sie die End-of-Life (EOL) Roadmap für OVHcloud Images einsehen. OVHcloud folgt dem offiziellen Lebenszyklus jeder Distribution. Dies bedeutet, dass zum EOL einer Distribution auch die Lebensdauer des ihr entsprechenden OVHcloud Image für VPS und Public Cloud Dienste zum gleichen Stichtag endet.
 
-## Lebenszyklus der Distribution
+## Lebenszyklus der Distributionen
 
 | Distribution                  | URL                                                                                       |
 | ----------------------------- | ----------------------------------------------------------------------------------------- |
 | Debian 11                     | [Lebenszyklus](https://wiki.debian.org/DebianReleases)                                      |
 | Debian 10                     | [Lebenszyklus](https://wiki.debian.org/DebianReleases)                                      |
 | Debian 9                      | [Lebenszyklus](https://wiki.debian.org/DebianReleases)                                      |
-| Ubuntu 18,04                  | [Lebenszyklus](https://wiki.ubuntu.com/Releases)                                            |
-| Ubuntu 20,04                  | [Lebenszyklus](https://wiki.ubuntu.com/Releases)                                            |
-| Ubuntu 20,10                  | [Lebenszyklus](https://wiki.ubuntu.com/Releases)                                            |
-| Ubuntu 21,04                  | [Lebenszyklus](https://wiki.ubuntu.com/Releases)                                            |
+| Ubuntu 18.04                  | [Lebenszyklus](https://wiki.ubuntu.com/Releases)                                            |
+| Ubuntu 20.04                  | [Lebenszyklus](https://wiki.ubuntu.com/Releases)                                            |
+| Ubuntu 20.10                  | [Lebenszyklus](https://wiki.ubuntu.com/Releases)                                            |
+| Ubuntu 21.04                  | [Lebenszyklus](https://wiki.ubuntu.com/Releases)                                            |
 | Centos 7                      | [Lebenszyklus](https://wiki.centos.org/About/Product)                                       |
 | Centos 8                      | [Lebenszyklus](https://wiki.centos.org/About/Product)                                       |
 | Fedora 33                     | [Lebenszyklus](https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle)                    |
@@ -35,12 +35,12 @@ In dieser Anleitung erfahren Sie, wie die Bilder von OVHcloud am Ende ihrer Lebe
 | Windows Server 2016           | [Lebenszyklus](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2016)     |
 | Windows Server 2019           | [Lebenszyklus](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2019)     |
 
-## Lebensende 2021
+## EOLs in 2021
 
 - Ubuntu 16.04 - April 2021
 - Fedora 32 - Mai 2021
 - Ubuntu 20.10 - Juli 2021
-- Fedora 33 - ~ November 2021 (4 Wochen nach Verlassen von Fedora 35)
+- Fedora 33 - ~ November 2021 (4 Wochen nach dem Fedora 35 Release)
 - Centos 8 - Dezember 2021
 
 ## Weiterführende Informationen
