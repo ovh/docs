@@ -95,6 +95,9 @@ Pour relier votre domaine à un autre répertoire, cliquez sur `Modifier le doma
 
 Vous pouvez également vous connecter à votre hébergement via [FTP](../connexion-espace-stockage-ftp-hebergement-web/), puis supprimer ou déplacer le contenu du dossier, après l'avoir sauvegardé.
 
+### « Une erreur s'est produite lors du chargement des informations. (There is not enough space on your hosting (you need at least XXX MB)) »
+> TODO
+
 ### « Impossible de se connecter à la base de données » <a name="supprimer-le-module"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
@@ -108,6 +111,18 @@ Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
 
 Puis relancez l'installation d'un nouveau module.
+
+### (les dns ne pointent pas)
+> TODO
+
+### (Le préfixe de la base de données existent déjà)
+> TODO
+
+### (les DNS du domaine ne pointent pas sur l'hébergement)
+> TODO
+
+### (base de données en lecture seule)
+> TODO
 
 ### Votre nom de domaine n'est pas proposé lors de la création du module
 
