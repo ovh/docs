@@ -1,5 +1,5 @@
 ---
-title: 'PCI & VPS - Image changelog'
+title: 'Public Cloud & VPS - Image changelog'
 slug: pci-vps-image-changelog
 excerpt: Find out what has changed in the images provided for Public Cloud & VPS
 section: 'Getting started'
