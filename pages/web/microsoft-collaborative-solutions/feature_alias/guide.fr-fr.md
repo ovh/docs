@@ -39,6 +39,8 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Dans le tableau qui s'affiche, vous observerez une colonne `Alias`.
 
+![emails](images/email-alias012.png){.thumbnail}
+
 > [!warning]
 >
 > Si vous avecz une offre e-mail de type MXplan et que vous n'avez pas la colonne `Alias`, vous êtes sur la version historique du MXplan. Dans ce cas, les alias se créer sous forme de redirection. N'hésitez pas à consulter notre guide [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#version-historique-de-loffre-mx-plan)
