@@ -1,61 +1,71 @@
 ---
-title: Ajouter un alias sur un compte Exchange
+title: Ajouter un alias sur son compte E-mail
 slug: exchange-ajouter-un-alias-sur-un-e-mail-depuis-le-manager
 legacy_guide_number: 1252
-excerpt: Retrouvez ici la procedure pour ajouter un alias sur un e-mail Exchange depuis le manager
+excerpt: Découvrer comment ajouter un alias sur un e-mail Exchange depuis le manager
 section: Fonctionnalités des comptes Exchange
 order: 1
 ---
 
-Voici comment ajouter un alias sur un e-mail avec l'offre Exchange depuis le [Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}. Vous devez vous munir de vos identifiants OVH afin de réaliser la manipulation.
+**Dernière mise à jour le 20/09/2021**
 
-Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides.
+## Objectif
+
+Créer un alias pour votre adresse e-mail vous permet de pourvoir communiquer une adresse email "masque" à vos contact sans devoir donner votre adresse email personnel à l'expéditeur. il est possible d'attribuer plusieurs alias sur une adresse e-mail.
+
+![emails](images/email-alias01.png){.thumbnail}
+
+Exemple: votre adresse e-mail est **john.smtih@mydomain.ovh** et votre alias **anonymous@mydomain.ovh**. Vous pouvez alors communiquer à vos contact l'adresse **anonymous@mydomain.ovh** et recevoir sur **john.smtih@mydomain.ovh** sans que l'expéditeur est connaisance de **john.smtih@mydomain.ovh**. 
+ 
+## Prérequis
+
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'une solution e-mail OVHcloud qui doit avoir été configurée au préalable. **MX Plan** (Nouvelle version), proposée parmi nos [offres d’hébergement web](https://www.ovh.com/fr/hebergement-web/)) ou commandée séparément comme solution autonome, telles que [**Hosted Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/)
+ 
+
+## En pratique
+
+### Créer un alias
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web`. En fonction de votre Offre e-mail, dirigez -vous:
+
+- **Exchange**: Dans `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme concernée. Cliquez sur l'onglet `Comptes e-mail`{.action}.
+
+- **E-mail Pro**: Dans `E-mail Pro`{.action} dans la barre de services à gauche puis cliquez sur l'onglet `Comptes e-mail`{.action}.
+
+- **Emails**(MXplan): Dans `Emails`{.action} dans la barre de services à gauche puis cliquez sur l'onglet `Comptes e-mail`{.action}.
+
+Dans le tableau qui s'affiche, vous observerez une colonne `Alias`.
+
+> [!warning]
+>
+> Si vous avecz une offre e-mail de type MXplan et que vous n'avez pas la colonne `Alias`, vous êtes sur la version historique du MXplan. Dans ce cas, les alias se créer sous forme de redirection. N'hésitez pas à consulter notre guide [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#version-historique-de-loffre-mx-plan).
+
+![emails](images/email-alias02.png){.thumbnail}
+
+Pour ajouter un alias à votre compte e-mail: 
+
+- Cliquez sur le bouton `...`{.action} puis sur `Configurer les alias`{.action} ( ou `Gérer les alias`{.action}).
+
+![emails](images/email-alias03.png){.thumbnail}
+
+- Cliquez sur `Ajouter un alias`{.action}, puis saisissez l'adresse que vous avez choisie pour votre alias et validez votre choix.
+
+![emails](images/email-alias04.png){.thumbnail}
+
+### Suprimer un alias
+
+Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite l'adresse e-mail concernée. Cliquez sur `Configurer les alias`{.action} ( ou `Gérer les alias`{.action}).
+
+Depuis le panneau de gestion des alias, cliquez sur le bouton `...`{.action} à droite l'alias concernée. Pour supprimer, cliquez sur `Supprimer l'alias`{.action}
+
+![emails](images/email-alias05.png){.thumbnail}
 
 
-## Mise en place des alias sur l'offre Exchange.
+## Aller plus loin
 
-### Ajouter un alias &#58; Partie 1
-Vous devez réaliser la manipulation depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}.
+[Consulter son compte Exchange depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/)
 
-Une fois connecté, sélectionnez votre service Exchange.
-
-Dans la rubrique "Compte e-mail", cliquez sur la roue crantée à droite du compte puis "Configurer les Alias"
-
-
-![emails](images/1047.png){.thumbnail}
-
-
-### Ajouter un alias &#58; Partie 2
-Une nouvelle interface apparaît. Il vous est possible d'ajouter un alias ou de le supprimer. Il est aussi possible de vérifier les alias présents sur le compte e-mail.
-
-
-![emails](images/1048.png){.thumbnail}
-
-
-### Ajouter un alias &#58; Partie 3
-Lors de l'ajout d'un alias, on vous demande de choisir le login de l'alias et le domaine associé.
-
-Il suffit de valider la seconde étape en cliquant sur `Valider`{.action}.
-
-Un message apparaît ensuite, précisant que l'alias va être ajouté.
-
-
-![emails](images/1049.png){.thumbnail}
-
-
-### Supprimer un alias.
-Il vous est possible de supprimer un alias via un clic sur la corbeille à côté de celui-ci.
-
-Vous devrez ensuite valider la demande en confirmant via un clic sur le bouton `Supprimer`{.action}.
-
-
-![emails](images/1050.png){.thumbnail}
-
-
-### Erreur classique
-Voici enfin un exemple d'erreur si vous ajoutez un alias qui a pour adresse un compte e-mail Exchange existant.
-
-Il n'est en effet pas possible d'ajouter un alias si ce compte e-mail existe déjà.
-
-
-![emails](images/1051.png){.thumbnail}
+[Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/)
+ 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
