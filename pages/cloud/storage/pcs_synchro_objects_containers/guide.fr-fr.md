@@ -11,7 +11,7 @@ section: Object Storage
 Si vous souhaitez déplacer vos objets d'un data center à un autre, ou même d'un projet à un autre, la synchronisation d'objets entre conteneurs est la meilleure solution afin d'éviter une coupure de service lors de votre migration. Ce guide vous explique comment mettre en place cette solution.
 
 
-### Prérequis
+## Prérequis
 - [Préparez l'environnement pour utiliser l'API OpenStack](https://www.ovh.com/fr/g1851.preparer_lenvironnement_pour_utiliser_lapi_openstack){.external} avec le client swift
 - [Chargez les variables d'environnement OpenStack](https://www.ovh.com/fr/g1852.charger_les_variables_denvironnement_openstack){.external}
 - 2 conteneurs d'objets dans 2 data-centres différents
@@ -36,7 +36,7 @@ root@serveur-1:~$ sharedKey=$(openssl rand -base64 32)
 ```
 
 
-### Configuration du conteneur destinataire
+#### Configuration du conteneur destinataire
 Dans un premier temps, il faut configurer la clé sur le conteneur qui recevra les données. Dans notre cas, celui-ci se trouve a BHS.
 
 - Vérifier la région chargée dans les variables d'environnement :
