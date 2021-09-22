@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 7
 ---
 
-**Última actualización: 07/09/2021**
+**Última actualización: 16/09/2021**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -37,7 +37,7 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
 
 > [!primary]
 >
-> Si el enlace ya ha expirado, conéctese al servidor por SSH utilizando el usuario CentOS y ejecute el comando "whmlogin" para generar uno nuevo o reinstale la instancia.
+> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando "whmlogin" para generar un nuevo enlace.
 >
 
 <ol start="3">

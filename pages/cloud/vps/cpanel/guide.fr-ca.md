@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment instancier un VPS avec l’application cPanel pré-
 section: 'Utilisation avancée'
 ---
 
-**Dernière mise à jour le 15/05/2020**
+**Dernière mise à jour le 16/09/2021**
 
 ## Objectif
 
@@ -45,7 +45,7 @@ Une fois que vous avez reçu l'e-mail avec le lien unique, cliquez sur ce lien p
 
 > [!primary]
 >
-> Si le lien a déjà expiré, réinstallez le VPS avec cPanel.
+> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l’aide de l’utilisateur CentOS et exécutez la commande « whmlogin » pour générer un nouveau lien.
 >
 
 L'URL citée plus haut vous permet de vous connecter sans informations d'identification (utilisateur et mot de passe) à votre interface WHM.
