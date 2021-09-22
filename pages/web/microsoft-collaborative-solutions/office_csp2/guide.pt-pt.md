@@ -1,103 +1,111 @@
 ---
-title: Encomendar e gerir um grupo de licenças Office 365 Revendedor (CSP2) OVH
-excerpt: Encomendar e gerir um grupo de licenças Office 365 Revendedor (CSP2) OVH
+title: Gerir um grupo de licenças Office 365 Revendedores (CSP2) OVHcloud
 slug: encomendar_e_gerir_um_grupo_de_licencas_office_365_revendedor_csp2_ovh
-legacy_guide_number: g2248
+excerpt: Saiba como subscrever e administrar um serviço Office 365 Revendedores (CSP2) na OVHcloud
+section: Office
+order: 3
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## 
-Para poder subscrever uma encomenda de licenças Office 365 revendedor (CSP2) existem vários requisitos:
+**Última atualização: 13/09/2021**
 
+## Objetivo
 
-- Dispor de um número de [cliente OVH](https://www.ovh.pt/suporte/new_nic.xml) (Nic-Handle) e um Número de Identificação Fiscal Empresarial
+O Office 365 Revendedores (CSP2) é um serviço que lhe permite beneficiar de diferentes tipos de licenças Microsoft 365 a preços preferenciais, para que possa revendê-las junto dos seus clientes.
 
-- Estar inscrito no nosso programa Community Web sur [Partners.ovh.com](http://partners.ovh.com)
+**Saiba como subscrever e administrar um serviço Office 365 Revendedores (CSP2) na OVHcloud.**
 
-- Subscrever ao pack comercial Web no seu [espaço parceiros](http://partners.ovh.com), secção Encomendas parceiros e depois Programas comerciais.
+## Requisitos
 
-- Dispor de um MPN ID Microsoft.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
+## Instruções
 
-Após estar inscrito como parceiro OVH, iremos estudar o seu dossier de forma a validar, ou não, a sua inscrição. Somente poderá encomendar o programa comercial Web após a validação do seu dossier.
+### Encomendar um serviço Office 365 Revendedores
 
+Para encomendar um serviço Office 365 Revendedores, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Depois de conectar, selecione `Sunrise`{.action} no painel superior e clique em `Office 365 Revendedores`{.action}.
 
-## 
-Após o grupo de licenças ter sido criado e estar disponível no seu Espaço Cliente poderá ativar as suas licenças "Office 365".
+- Complete as informações de contacto do cliente final, estas são solicitadas para definir o gestor do grupo de licenças (Tenant) que vai criar.
 
-Para tal deve ligar-se ao seu Espaço Cliente e clicar depois em "Sunrise". No menu à esquerda selecione "Office 365 Reseller" e depois selecione o seu grupo de licenças.
+> [!primary]
+>
+> - Se já dispõe de um serviço Office 365 CSP2 na Microsoft, tem a possibilidade de delegar a sua administração na OVHcloud. Assim, poderá adicionar subscrições suplementares diretamente a partir da sua Área de Cliente OVHcloud. Ao encomendar um novo grupo de licenças, deverá escolher `Delegação de uma plataforma criada previamente na Microsoft`{.action}.
+>
+> - Se dispõe de um Microsoft Partner ID, pode introduzi-lo a partir desta mesma interface. Isto permitir-lhe-á obter um backup das subscrições que encomendará através do nosso Espaço Cliente. Este cashback está sujeito a regras definidas pela Microsoft em função dos volumes de subscrições que gerará.
+>
 
-![](images/img_4387.jpg){.thumbnail}
+- Na lista abaixo, indique as licenças que deseja adicionar ao seu grupo.
 
+- Clique em `Encomendar`{.action} para finalizar a sua encomenda.
 
-## Informações gerais
-São indicadas várias informações relativas ao seu serviço Office 365 revendedor:
+> [!warning]
+>
+> Certifique-se da validade do endereço de e-mail indicado aquando da criação do seu grupo de licenças, pois esta receberá as informações de identificação na plataforma Microsoft.
+>
 
+![office365](images/csp2-01.png){.thumbnail}
 
-- Nome interno do serviço: indique o nome do seu grupo de licença, ele será visível apenas no seu Espaço Cliente.
+### Gerir o serviço Office 365 Revendedor
 
-- Criado em: indica a data de criação do grupo de licença.
+Depois de criado e disponível o serviço Office 365, poderá geri-lo a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
-- Portal de administração Microsoft: indica o link do portal Office onde poderá administrar as suas licenças.
+Para isso, aceda à secção `Sunrise`{.action}. No menu à esquerda, escolha o `Office 365 Revendedores`{.action} e selecione o serviço.
 
-- Tutoriais online: Endereço de um Mooc Office de forma a poder dispor de uma assistência sobre o funcionamento dos diferentes softwares da suite Office 365.
+Surgem as seguintes informações:
 
-- Reinicializar a password do administrador: Permite modificar a password de acesso ao portal Office 365.
+- **Nome interno do serviço**: indica o nome do seu serviço. Isto só é visível a partir da Área de Cliente.
+- **Nome de apresentação do serviço**: permite personalizar o nome de visualização do serviço na sua Área de Cliente.
+- **Criado a**: indica a data de criação do serviço.
+- **Portal de administração Microsoft**: ligação do portal Office que permite administrar as suas subscrições.
+- **Reinicializar a password administrador**: permite alterar a palavra-passe de ligação ao portal de administração Microsoft.
 
+![office365](images/sunrise_office365_CSP2_services_details.png){.thumbnail}
 
+### Configurar automaticamente um domínio alojado na OVHcloud
 
-![](images/img_4390.jpg){.thumbnail}
+A OVHcloud disponibiliza uma ferramenta que facilita a configuração da zona DNS do seu domínio. Pode configurar automaticamente os seus nomes de domínio que utilizam a zona DNS da OVHcloud para que possam funcionar com as seguintes soluções:
 
+- Exchange Online;
+- Skype;
+- Intune.
 
-## Gestão das subscrições
-A este nível é possível que efetue várias ações:
-Nova subscrição:
+Para realizar esta operação, deve escolher o domínio em questão na lista pendente e selecionar as soluções desejadas. Criaremos então os campos DNS adequados na zona DNS da OVHcloud do domínio.
 
-Permite a encomenda de um novo tipo de licenças Office 365.
+> [!warning]
+> Para que a configuração seja funcional, deve assegurar-se de que utiliza corretamente os servidores DNS da OVHcloud para os nomes de domínio em causa. Não hesite em consultar o nosso guia [Alterar os servidores DNS de um nome de domínio OVHcloud](https://docs.ovh.com/pt/domains/partilhado_generalidades_sobre_os_servidores_dns/).
+>
 
-Veja os detalhes da esquerda para a direita das informações apresentadas:
+![office365](images/sunrise_office365_CSP2_automatic_domain_configuration.png){.thumbnail}
 
+### Gerir as suas subscrições
 
-- id: Cada tipo de licenças encomenda tem um id único apresentado à esquerda da sua licença.
+A gestão das suas subscrições permite-lhe aumentar ou anular as licenças associadas ao seu grupo de subscrições. Pode visualizar os detalhes através de uma tabela:
 
-- Estado: Corresponde ao estado da sua licença.
+- **ID**: cada tipo de licença comandada dispõe de um identificador (ID) único.
+- **Estado**: corresponde ao estado da sua licença.
+- **Nome da licença**: indica o tipo de licença subscrita.
+- **Número de licenças**: indicar o número de licenças disponíveis.
+- **Data de criação**: indicar a data de criação da assinatura do tipo de licença selecionado.
+- **Última atualização**: indicar a data da última atualização (por exemplo, adição de uma licença) da assinatura.
 
-- Nome da licença: Lembra o tipo de licença.
+`O ícone em forma de lápis` permite modificar o número total de licenças da assinatura. `O ícone em forma de caixote do lixo` permite cancelar a assinatura e todas as licenças.
 
-- Número de lugares: Indica o número de licenças disponíveis.
+> [!primary]
+>
+> Devem ser respeitadas condições particulares de utilização fornecidas pela Microsoft para as licenças Educação. Pode encontrar estes documentos oficiais em função da sua língua e região [aqui](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&Keyword=AcademicQualEdUserDef){.external}.
+>
 
-- Data de criação: Lembra a data de criação do seu grupo de licenças.
+![office365](images/sunrise_office365_CSP2_Subscribers.png){.thumbnail}
 
-- Última atualização: Indica a última modificação relacionada com o seu grupo de licença.
+### Gerir os utilizadores
 
+Agora que dispõe de um número de licenças suficiente, deve gerir os utilizadores que as utilizarão. Esta parte efetua-se diretamente a partir do [portal de administração Microsoft](https://portal.office.com/Admin/Default.aspx){.external}.
 
-Estão disponíveis 2 ícones à direita:
+Para se conectar, deve introduzir o seu ID de utilizador bem como a palavra-passe enviada para o e-mail OVHcloud, confirmando a instalação do seu grupo de licenças. Estas informações devem ser enviadas para o endereço indicado aquando da criação do grupo de licenças.
 
-O lápis: permite-lhe modificar o número de lugares no seu grupo de licenças.
+## Saiba mais
 
-A lixeira: Permite terminar/cancelar o grupo de licenças.
-
-![](images/img_4403.jpg){.thumbnail}
-
-
-## Trabalhos em curso
-Poderá consultar aqui os trabalhos em curso.
-
-No nosso exemplo, o trabalho diz respeito a uma modificação do número de lugares relativos a um grupo de licenças.
-
-![](images/img_4418.jpg){.thumbnail}
-
-
-## 
-A gestão dos utilizadores efetua-se diretamente no portal Office 365 da Microsoft:
-
-
-- No e-mail recebido é indicado: o seu identificador e a password padrão para poder aceder ao portal Office 365.
-
-
-Esta password, tal como indicado em cima, poderá ser modificada no seu Espaço Cliente.
-
-Após estar ligado ao portal Office 365 poderá gerir as suas licenças, os seus utilizadores...
-
-![](images/img_4419.jpg){.thumbnail}
-
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

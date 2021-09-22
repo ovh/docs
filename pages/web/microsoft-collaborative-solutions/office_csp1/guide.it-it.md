@@ -1,114 +1,93 @@
 ---
-title: Ordina e gestisci un gruppo di licenze Office 365 OVH
-excerpt: Ordina una licenza Office 365 OVH
+title: Gestisci un gruppo di licenze Microsoft 365 OVHcloud
 slug: ordina_e_gestisci_un_gruppo_di_licenze_office_365_ovh
-legacy_guide_number: g1960
+excerpt: Questa guida ti mostra come attivare una licenza Microsoft 365 e come gestirlo nello Spazio Cliente OVHcloud.
+section: Office
+order: 2
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## Dal sito OVH (presto disponibile)
-La procedura per effettuare l'ordine dal sito www.ovh.it sarà presto disponibile. 
-Al momento, cliccando su "Ordina" vieni reindirizzato al tuo Spazio Cliente OVH e potrai procedere all'acquisto.
-Ordinando le tue licenze Office 365 dal [sito OVH](https://www.ovh.it/office-365-business), crei automaticamente un nuovo gruppo di licenze.
+**Ultimo aggiornamento: 09/09/2021**
 
-Per aggiungere licenze in un gruppo già esistente, è necessario effettuare l'operazione dal tuo Spazio Cliente OVH.
+## Obiettivo
 
-Per ordinare il tuo Office365 e creare il tuo gruppo di licenze, accedi al [sito OVH](https://www.ovh.it/office-365-business) e clicca su Ordina.
+OVHcloud **Microsoft 365 apps for business** o **Microsoft 365 apps for entreprise**. La fatturazione è mensile e puoi installare una licenza su 5 PC/Mac, 5 tablet e 5 smartphone.
 
-![](images/img_4181.jpg){.thumbnail}
-Scegli il numero di licenze Business e Pro Plus di cui hai bisogno e clicca su Ordina
+Le tue licenze Microsoft 365 sono raggruppate in un gruppo chiamato anche "Service". Un gruppo di licenze Apps for business può contenere al massimo 300 licenze, un gruppo di licenze Apps for entreprise è illimitato.
 
-![](images/img_4183.jpg){.thumbnail}
-A questo punto, visualizzi l'anteprima del tuo ordine. Clicca su Continua.
+Ecco l'elenco dei software inclusi nella suite:
 
-![](images/img_4184.jpg){.thumbnail}
+- Licenze Apps for business: Excel, Word, PowerPoint, Outlook, Note, Publisher.
+- Licenze Apps for entreprise: Excel, Word, PowerPoint, Outlook, Note, Publisher, Access.
 
-- Inserisci le tue credenziali.
+**Come attivare una licenza Microsoft 365 e gestirlo nello Spazio Cliente OVHcloud**
 
-- Se non hai ancora un identificativo cliente, clicca su Create your account.
+## Prerequisiti
 
- 
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
-![](images/img_4185.jpg){.thumbnail}
-Accetta i contratti dell'offerta Office 365 e clicca su Conferma e Salda per accedere al buono d'ordine.
+## Procedura
 
-L'installazione del tuo servizio richiede qualche minuto. Una volta completata, ricevi un'email.
+### Ordina una licenza
 
- 
+Accedi al nostro sito [OVHcloud.com](https://www.ovh.it/office-365/){.external} e seleziona la sezione "Strumenti in collaborazione" della sezione "Web Cloud".
 
+È possibile ordinare una licenza direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona `Web Cloud`{.action} nella fascia superiore e clicca sul pulsante `Ordina`{.action} e su `o365`{.action}.
 
-## Dal tuo Spazio Cliente OVH
-Inserisci le credenziali per accedere al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web).
+- Scegli tra le nostre offerte disponibili, cioè Apps for business e Apps for entreprise.
+- Definisci la frequenza di rinnovo del tuo gruppo di licenze.
+- Definisci il numero di licenze che desideri e clicca su `Ordina`{.action}.
 
-![](images/img_3073.jpg){.thumbnail}
+Verrai reindirizzato alla pagina dell'ordine per convalidare e saldare questa.
 
-- Nella sezione Microsoft del menu a sinistra, seleziona Office e poi clicca su Ordina un gruppo di licenze.
+### Attiva la tua licenza
 
+Una volta ordinata la licenza, è necessario attivarla dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella sezione `Web Cloud`, clicca su `Microsoft`{.action} nel menu a sinistra, poi su `Office`{.action} e seleziona il gruppo di licenze corrispondente.
 
+Clicca sui tre puntini `...`{.action} davanti alla licenza e poi su `Modifica l'account`{.action}.
 
-![](images/img_3074.jpg){.thumbnail}
-Scegli il tipo e il numero di licenze che vuoi ordinare:
+![email](images/Outlook-cps1-01.png){.thumbnail}
 
+Inserisci le informazioni relative all'utente della licenza, clicca su `Seguente`{.action} e poi su `Conferma`{.action}
 
-- Licenze Office Business: Excel, Word, PowerPoint, Outlook, Note, Publisher
+![email](images/Outlook-cps1-02.png){.thumbnail}
 
-- Licenze Office Pro Plus: Excel, Word, PowerPoint, Outlook, Access, Power BI.
+### Installare la suite Microsoft 365 sulla tua macchina
 
+Una volta attivata la licenza, riceverai un'email all'indirizzo di contatto del tuo account OVHcloud. Questa email è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), cliccando sul tuo profilo in alto a destra e poi su `Email di servizio`{.action} nella sezione `Scelta`.
 
-Vantaggi della licenzaOffice Pro Plus:
+Questa email contiene le informazioni necessarie al download e all'installazione della tua suite Microsoft 365, cioè **l'indirizzo email di attivazione** e la **password**.
 
+>
+> Per impostare autonomamente la password, è necessario farlo dallo Spazio Cliente. Nella sezione `Web Cloud`, clicca su `Microsoft`{.action} nel menu a sinistra, poi su `Office`{.action} e seleziona il gruppo di licenze corrispondente.
+>
+> Clicca sui tre puntini `...`{.action} in corrispondenza della licenza in questione e seleziona `Modifica la password`{.action}.
+>
+>![email](images/Outlook-cps1-03.png){.thumbnail}
+>
 
-- ti permette di utilizzare oltre 300 licenze
-- include anche Access e Power BI
+Accedi alla pagina <https://portal.office.com/> e inserisci **l'indirizzo email di attivazione** e la **password** configurate precedentemente. Verrai reindirizzato verso una finestra che ti permetterà di scaricare la suite Microsoft 365 sulla tua postazione con le istruzioni di installazione.
 
+![email](images/Outlook-cps1-04.png){.thumbnail}
 
+> [!primary]
+>
+> L'utente può installare la suite Microsoft 365 su 5 macchine su Windows o macOS, su 5 tablet e 5 smartphone.
+>
 
-![](images/img_3076.jpg){.thumbnail}
-La versione MacOS non include Note e Publisher.
-Una volta scelto il tipo e il numero di licenze, leggi e accetta i contratti e clicca su Genera ordine
+### Aggiungi una licenza a un gruppo esistente
 
-![](images/img_3077.jpg){.thumbnail}
-Una volta saldato il buono d'ordine generato, riceverai le licenze entro 4 ore.
+Per aggiungere una o più licenze al tuo gruppo di licenze esistenti, è possibile farlo direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella sezione `Web Cloud`, clicca su `Microsoft`{.action} nel menu a sinistra, poi su `Office`{.action} e seleziona il gruppo di licenze corrispondente.
 
+Clicca sul pulsante `Ordina più licenze`{.action} a destra. Indica il numero e il tipo di licenze che vuoi ordinare.
 
-## 
-Le informazioni generali sulla tua offerta di Office sono visualizzate con dei valori generici. Per modificarle, seleziona Modifica il gruppo di licenze.
-Una volta che il tuo gruppo di licenze è disponibile nel tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web), è possibile attivarle.
+![email](images/Outlook-cps1-05.png){.thumbnail}
 
-Di default non vengono visualizzati utenti, è necessario inserirli manualmente. Nel nostro esempio, abbiamo aggiunto un utente al nostro gruppo.
+## Per saperne di più
 
-Per creare la tua licenza, clicca su Aggiungi un utente.
+[Utilizza il desktop remoto con Microsoft 365 aps](https://docs.ovh.com/it/microsoft-collaborative-solutions/office365-proplus-desktop-remoto/)
 
-![](images/img_3084.jpg){.thumbnail}
-Inserisci le informazioni richieste:
-
-
-- Nome
-- Cognome
-- Login
-- Licenza utilizzata
-
-
-Clicca su Seguente. La tua licenza sarà disponibile in pochi minuti.
-
-![](images/img_3085.jpg){.thumbnail}
-Una volta attiva, la licenza è visibile nel tuo Spazio Cliente OVH.
-Clicca sulla scheda Consumo per verificare il numero di licenze che utilizzi mensilmente.
-
-![](images/img_3086.jpg){.thumbnail}
-Per aggiungere un nuovo utente non è necessario creare un nuovo gruppo di licenze, è sufficiente cliccare su Aggiungi un utente. La fatturazione viene calcolata automaticamente in base al numero di licenze utilizzate il mese precedente.
-Una volta aggiunta una nuova licenza, ricevi un'email con le credenziali necessarie per accedere al sito di [Office](https://portal.office.com), dove potrai scaricare l'installer del pacchetto.
-
-![](images/img_3784.jpg){.thumbnail}
-L'email ricevuta è disponibile sul tuo account cliente, nel menu Il tuo account > Email ricevute.
-
-![](images/img_3089.jpg){.thumbnail}
-Inserisci le credenziali di accesso ricevute via email.
-
-![](images/img_3090.jpg){.thumbnail}
-Clicca su Installa per scaricare il file eseguibile per avviare l'installazione del tuo pacchetto Office. 
-
-Nel menu Telefono e tablet trovi le informazioni per installare la suite Office sui tuoi dispositivi.
-
-![](images/img_3092.jpg){.thumbnail}
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
