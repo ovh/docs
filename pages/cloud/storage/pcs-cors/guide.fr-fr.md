@@ -1,3 +1,15 @@
+---
+title: CORS
+slug: pcs/cors
+excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre CORS.
+section: Object Storage
+---
+
+
+## Objectif
+
+Ce guide a pour objectif de vous familiariser avec le concept de CORS
+
 ## Préambule
 
 CORS est un mécanisme qui permet au code s'exécutant dans un navigateur (Javascript par exemple) de faire des requêtes vers un domaine autre que celui d'où il provient.
@@ -252,3 +264,7 @@ swift stat <conteneur>
                  X-Iplb-Request-Id: 6DBEFE1E:90B8_3626E64B:01BB_6107E597_4276574:220B
                    X-Iplb-Instance: 33617
 ```
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
