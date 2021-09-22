@@ -15,21 +15,21 @@ Créer un alias pour votre adresse e-mail vous permet de pourvoir communiquer un
 
 ![emails](images/email-alias01.png){.thumbnail}
 
-Exemple: votre adresse e-mail est **john.smtih@mydomain.ovh** et votre alias **anonymous@mydomain.ovh**. Vous pouvez alors communiquer à vos contacts l'adresse **anonymous@mydomain.ovh** et recevoir sur **john.smtih@mydomain.ovh** sans que l'expéditeur est connaissance de **john.smtih@mydomain.ovh**. 
+Par exemple, votre adresse e-mail est **john.smtih@mydomain.ovh** et votre alias **anonymous@mydomain.ovh**. Vous pouvez alors communiquer à vos contacts l'adresse **anonymous@mydomain.ovh** et recevoir sur **john.smtih@mydomain.ovh** sans que l'expéditeur est connaissance de **john.smtih@mydomain.ovh**. 
 
 **Découvrez comment ajouter un alias sur une adresse e-mail depuis votre espace client**
  
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-- Disposer d'une solution e-mail OVHcloud qui doit avoir été configurée au préalable. **MX Plan** (Nouvelle version), proposée parmi nos [offres d’hébergement web](https://www.ovh.com/fr/hebergement-web/)) ou commandée séparément comme solution autonome, telles que [**Hosted Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Disposer d'une solution e-mail OVHcloud qui doit avoir été configurée au préalable. **MX Plan** (Nouvelle version), proposée parmi nos [offres d’hébergement web](https://www.ovh.com/fr/hebergement-web/)) ou commandée séparément comme solution autonome, telles que [**Hosted Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/)?
  
 
 ## En pratique
 
 ### Créer un alias
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web`. En fonction de votre Offre e-mail, dirigez -vous:
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web`. En fonction de votre Offre e-mail, dirigez-vous:
 
 - **Exchange**: Dans `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme concernée. Cliquez sur l'onglet `Comptes e-mail`{.action}.
 
