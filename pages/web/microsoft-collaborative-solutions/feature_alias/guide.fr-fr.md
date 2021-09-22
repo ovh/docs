@@ -2,7 +2,7 @@
 title: Ajouter un alias sur son compte E-mail
 slug: exchange-ajouter-un-alias-sur-un-e-mail-depuis-le-manager
 legacy_guide_number: 1252
-excerpt: Découvrer comment ajouter un alias sur un e-mail Exchange depuis le manager
+excerpt: Découvrez comment ajouter un alias sur une adresse e-mail depuis votre espace client
 section: Fonctionnalités des comptes Exchange
 order: 1
 ---
@@ -11,11 +11,13 @@ order: 1
 
 ## Objectif
 
-Créer un alias pour votre adresse e-mail vous permet de pourvoir communiquer une adresse email "masque" à vos contact sans devoir donner votre adresse email personnel à l'expéditeur. il est possible d'attribuer plusieurs alias sur une adresse e-mail.
+Créer un alias pour votre adresse e-mail vous permet de pourvoir communiquer une adresse "masque" à vos contacts sans devoir donner votre adresse email personnel à l'expéditeur. Il est possible d'attribuer plusieurs alias sur une adresse e-mail.
 
 ![emails](images/email-alias01.png){.thumbnail}
 
-Exemple: votre adresse e-mail est **john.smtih@mydomain.ovh** et votre alias **anonymous@mydomain.ovh**. Vous pouvez alors communiquer à vos contact l'adresse **anonymous@mydomain.ovh** et recevoir sur **john.smtih@mydomain.ovh** sans que l'expéditeur est connaisance de **john.smtih@mydomain.ovh**. 
+Exemple: votre adresse e-mail est **john.smtih@mydomain.ovh** et votre alias **anonymous@mydomain.ovh**. Vous pouvez alors communiquer à vos contacts l'adresse **anonymous@mydomain.ovh** et recevoir sur **john.smtih@mydomain.ovh** sans que l'expéditeur est connaissance de **john.smtih@mydomain.ovh**. 
+
+**Découvrez comment ajouter un alias sur une adresse e-mail depuis votre espace client**
  
 ## Prérequis
 
