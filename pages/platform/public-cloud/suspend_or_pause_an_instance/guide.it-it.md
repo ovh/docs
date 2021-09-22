@@ -10,11 +10,11 @@ order: 3
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 21 settembre 2021**
+**Ultimo aggiornamento: 22 settembre 2021**
 
 ## Obiettivo
 
- Nell' ambito della configurazione di un'infrastruttura ad alta disponibilità, potreste aver bisogno di interrompere l'accesso alle vostre istanze per eseguire vari test. OpenStack vi permette di sospendere, arrestare o mettere in pausa la vostra istanza. In ogni caso, il tuo IP viene mantenuto.
+ Durante la configurazione di un'infrastruttura ad alta disponibilità, potresti avere bisogno di interrompere l’esecuzione delle tue istanze per effettuare alcuni test. OpenStack ti permette di sospendere, arrestare o mettere in pausa le tue istanze. In ogni caso, il tuo IP viene mantenuto.
 
 > [!warning]
 > Il nome di queste opzioni nello Spazio Cliente OVHcloud è diverso dal nome in Openstack/Horizon. Se effettui questa operazione utilizzando lo Spazio Cliente OVHcloud, assicurati di selezionare l'opzione più adatta.
@@ -24,7 +24,7 @@ order: 3
 
 ## Prerequisiti
 
-- un'[istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/) sulla fatturazione oraria
+- un'[istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/) con la fatturazione oraria
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[interfaccia Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/)
 - Conoscenza dell'[API Openstack](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/) e delle [variabili d’ambiente Openstack](https://docs.ovh.com/it/public-cloud/impostare-le-variabili-dambiente-openstack/)
 
@@ -39,17 +39,17 @@ La tabella qui sotto ti permette di differenziare le opzioni disponibili sulle t
 
 |Termine|Descrizione|Fatturazione|
 |---|---|---|
-|[Sospesa (*shelve*)](#shelve-instance)|Conserva le risorse e i dati del tuo disco creando uno Snapshot. Tutte le altre risorse sono liberate.|Viene fatto pagare solo lo snapshot.|
-|[Arresta (*suspend*)](#stop-suspend-instance)|Salvare lo stato della macchina virtuale sul disco, le risorse dedicate all'istanza sono sempre riservate.|Riceverai sempre la stessa tariffa per la tua istanza.|
-|[Pausa](#pause-instance)|Salva lo stato della macchina virtuale nella RAM, un'istanza sospesa diventa «bloccata».|Riceverai sempre la stessa tariffa per la tua istanza.|
+|[Sospendere (*shelve*)](#shelve-instance)|Conserva le risorse e i dati del tuo disco creando uno Snapshot. Tutte le altre risorse sono liberate.|Viene fatto pagare solo lo snapshot.|
+|[Arrestare (*suspend*)](#stop-suspend-instance)|Salvare lo stato della macchina virtuale sul disco, le risorse dedicate all'istanza sono sempre riservate.|Riceverai sempre la stessa tariffa per la tua istanza.|
+|[Pausare](#pause-instance)|Salva lo stato della macchina virtuale nella RAM, un'istanza sospesa diventa «bloccata».|Riceverai sempre la stessa tariffa per la tua istanza.|
 
-### Sospesa (shelve) un'istanza <a name="shelve-instance"></a>
+### Sospendere (shelve) un'istanza <a name="shelve-instance"></a>
 
-Questa opzione permette di liberare le risorse dedicate all'istanza Public Cloud, ma l'indirizzo IP resta. I dati del disco locale saranno salvati in un'istantanea creata automaticamente una volta che l'istanza è sospesa. I dati archiviati nella memoria e altrove non saranno conservati.
+Questa opzione permette di liberare le risorse dedicate all'istanza Public Cloud, ma l'indirizzo IP resta. I dati del disco locale saranno salvati in un snapshot «istantanea» creata automaticamente una volta che l'istanza è sospesa. I dati archiviati nella memoria e altrove non saranno conservati.
 
 #### Nello Spazio Cliente OVHcloud
 
-Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.
+Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra. 
 
 Clicca su `...`{.action} a destra dell'istanza da sospendere, poi clicca su `Sospesa`{.action}.
 
@@ -71,7 +71,7 @@ Lo snapshot sarà disponibile nella sezione `Instance Backup`{.action}. Un'istan
 
 Per continuare, devi [creare un utente per accedere a horizon](..crea_un_utente_per_accedere_a_horizon/) e [connetterti all'interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
-Se hai installato istanze in diverse Region, assicurati di essere nella localizzazione giusta. Puoi verificarlo nell'angolo superiore sinistro dell'interfaccia Horizon.
+Se hai installato istanze in diverse regioni, assicurati di essere nella localizzazione giusta. Puoi verificarlo nell'angolo superiore sinistro dell'interfaccia Horizon.
 
 ![horizon interface](images/firstaccesshorizon.png){.thumbnail}
 
@@ -117,7 +117,7 @@ Questa opzione ti permette di riattivare l'istanza per poterla utilizzare. Ti ri
 
 #### Nello Spazio Cliente OVHcloud
 
-Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.
+Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra.
 
 Clicca su `...`{.action} a destra dell'istanza e poi clicca su `Riattiva`{.action}.
 
@@ -153,7 +153,7 @@ Questa opzione ti permette di arrestare la tua istanza e salvare lo stato della 
 
 #### Nello Spazio Cliente OVHcloud
 
-Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”
+Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra.
 
 Clicca su `...`{.action} a destra dell'istanza da arrestare, poi clicca su `Arresta`{.action}.
 
@@ -199,7 +199,7 @@ Per riattivare l'istanza, esegui questo comando:
 
 ### Mettere in pausa un'istanza <a name="pause-instance"></a>
 
-Questa operazione è possibile solo nell'interfaccia Horizon o tramite l'API Openstack/Nova. Permette di *bloccare* l'istanza
+Questa operazione è possibile solo nell'interfaccia Horizon o tramite l'API Openstack/Nova. Permette di mettere l'istanza in *standby*
 
 #### Dall'interfaccia Horizon 
 

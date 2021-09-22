@@ -10,30 +10,30 @@ order: 3
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 21/09/2021**
+**Última actualización: 22/09/2021**
 
 ## Objetivo
 
- Como parte de la configuración de una infraestructura de alta disponibilidad, puede encontrarse con la necesidad de cortar el acceso a sus instancias para realizar diferentes pruebas. OpenStack le permite suspender, pausar o detener su instancia. En cada caso, su IP se mantiene.
+ Como parte de la configuración de una infraestructura de alta disponibilidad, puede encontrarse con la necesidad de cortar el acceso a sus instancias para poder realizar distintas pruebas. OpenStack le permite suspender, detener o poner en pausa sus instancias. En cada caso, su IP se mantiene.
 
 
 > [!warning]
 > El nombre de estas opciones en el área de cliente de OVHcloud es diferente del nombre en OpenStack/Horizon. Si realiza la operación a través del área de cliente, asegúrese de seleccionar la opción correcta.
 >
 
-**Esta guía explica cómo suspender, pausar o detener una instancia.**
+**Esta guía explica cómo suspender, detener o poner en pausa una instancia.**
 
 ## Requisitos
 
 - Tener [una instancia de Public Cloud](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/) sobre la facturación por horas
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o al [Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/)
+- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o al [interfaz de Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/)
 - Conocimiento de la [API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) y de las [variables OpenStack](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
 
 ## Procedimiento
 
 > [!alert]
 >
-> Estas operaciones no interrumpen la facturación de la instancia, que seguirá facturándose mientras no haya sido terminada.
+> Estas operaciones no interrumpen la facturación de la instancia, que seguirá facturándose mientras no haya sido **terminada**.
 >
 
 En la siguiente tabla podrá diferenciar las opciones disponibles en sus instancias. Continúe leyendo esta guía en el apartado correspondiente a su opción.
@@ -109,7 +109,7 @@ nova shelve <UUID server>
 
 Esta opción le permite reiniciar su instancia para poder seguir utilizándola. Tenga en cuenta que, una vez hecho esto, la facturación se reanudará con normalidad.
 
-> [!alert] **Acciones en el snapshot**
+> [!alert] **Acciones sobre el snapshot**
 >
 > Cualquier acción en el snapshot que no sea la reactivación (*unshelve*) puede ser muy peligrosa para su infraestructura en caso de mal uso. Cuando se «reactiva» (*unshelved*) una instancia, la instantánea se eliminará automáticamente. No es recomendable desplegar una nueva instancia a través de una instantánea creada después de que una instancia haya sido suspendida.
 >
@@ -128,7 +128,7 @@ En la pantalla que aparece, tome nota del mensaje y haga clic en `Confirmar`{.ac
 
 Una vez finalizado el proceso, su instancia se mostrará como *Activa*.
 
-#### Desde la interfaz Horizon
+#### Desde la interfaz de Horizon
 
 En Horizon, haga clic en el menú `Compute`{.action} en el lado izquierdo y seleccione `Instances`{.action}. Seleccione `Unshelve Instance`{.action} en la lista desplegable de la instancia correspondiente.
 
@@ -166,7 +166,7 @@ Una vez finalizado el proceso, la instancia se mostrará como *Apagada*.
 
 Para reanudar la instancia, siga los pasos que se indican más arriba. Haga clic en el botón `...`{.action} a la derecha de la instancia y seleccione `Iniciar`{.action}. En algunos casos, quizá necesite reiniciarse en frío.
 
-#### Desde la interfaz Horizon 
+#### Desde la interfaz de Horizon 
 
 En Horizon, haga clic en el menú `Compute`{.action} en el lado izquierdo y seleccione `Instances`{.action}. Seleccione `Suspend Instance`{.action} en la lista desplegable de la instancia correspondiente.
 
@@ -202,7 +202,7 @@ Para reactivar la instancia, escriba lo siguiente en la línea de comandos:
 
 Esta operación sólo puede realizarse desde la interfaz Horizon o a través de la API OpenStack/Nova. Una instancia en pausa sigue funcionando en un estado bloqueado.
 
-#### Desde la interfaz Horizon
+#### Desde la interfaz de Horizon
 
 En Horizon, haga clic en el menú `Compute`{.action} en el lado izquierdo y seleccione `Instances`{.action}. Seleccione `Pause Instance`{.action} en la lista desplegable de la instancia correspondiente.
 

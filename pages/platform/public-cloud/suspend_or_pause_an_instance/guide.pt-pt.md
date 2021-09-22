@@ -10,11 +10,11 @@ order: 3
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 21/09/2021**
+**Última atualização: 22/09/2021**
 
 ## Objetivo
 
- No âmbito da configuração de uma infraestrutura de alta disponibilidade, é possível que tenha de reduzir o acesso às suas instâncias para efetuar diferentes testes. OpenStack permite-lhe suspender, parar ou colocar em pausa sua instância. Em cada caso, o seu endereço IP é mantido.
+ No âmbito da configuração de uma infraestrutura de alta disponibilidade, é possível que tenha de reduzir o acesso às suas instâncias para efetuar alguns testes. OpenStack que suspenda, parar ou coloque em pausa as suas instâncias. Em cada caso, o seu endereço IP é mantido.
 
 > [!warning]
 > O nome destas opções na Área de Cliente OVHcloud é diferente do nome no Openstack/Horizon. Se efetuar esta operação através da Área de Cliente OVHcloud, certifique-se de que selecionou a opção adequada.
@@ -32,16 +32,16 @@ order: 3
 
 > [!alert]
 >
-> Estas manipulações não interrompem a faturação da instância, ela será faturada até que a eliminada.
+> Estas manipulações não interrompem a faturação da instância, ela será faturada até que a **eliminada**.
 >
 
 A tabela abaixo permite-lhe diferenciar as opções disponíveis nas suas instâncias. Consulte este manual clicando na opção que preferir.
 
 |Termo|Descrição|Faturação|
 |---|---|---|
-|[Suspender (*shelve*)](#shelve-instance)|Conserve os recursos e os dados do seu disco criando uma snapshot. Todos os outros recursos são libertados.|Só lhe é cobrado a snapshot.|
+|[Suspender (*shelve*)](#shelve-instance)|Conserve os recursos e os dados do seu disco criando um snapshot. Todos os outros recursos são libertados.|Só é faturado por snapshot.|
 |[Parar (*suspend*)](#stop-suspend-instance)|Armazena o estado da máquina virtual no disco, os recursos dedicados à instância estão sempre reservados.|Será sempre faturado ao mesmo preço para a sua instância.|
-|[Pausa](#pause-instance)|Armazena o estado da máquina virtual na memória RAM, uma instância suspensa torna-se « gelada ».|Será sempre faturado ao mesmo preço para a sua instância.|
+|[Pausa](#pause-instance)|Armazena o estado da máquina virtual na memória RAM, uma instância suspensa torna se « gelada ».|Será sempre faturado ao mesmo preço para a sua instância.|
 
 ### Suspender (shelve) uma instância <a name="shelve-instance"></a>
 
@@ -69,7 +69,7 @@ Para apresentar a snapshot, aceda ao menu à esquerda e clique em `Instance Back
 
 #### Da interface Horizon
 
-Para continuar, deve [criar um acesso à interface Horizon](../criar_um_acesso_a_interface_horizon/) e [ligar-se à interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Para continuar, deve [criar um acesso à interface Horizon](../criar_um_acesso_a_interface_horizon/) e se [ligar à interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Se criou instâncias em regiões diferentes, certifique-se de que se encontra na região apropriada. Pode verificá-lo no canto superior esquerdo da interface Horizon.
 
@@ -108,7 +108,7 @@ nova shelve <UUID server>
 
 Esta opção permite-lhe reativar a sua instância para que a possa continuar a utilizar. Tenha em conta que, uma vez efetuada esta operação, a faturação será retomada normalmente.
 
-> [!alert] **Ações na snapshot**
+> [!alert] **Ações no snapshot**
 >
 > Qualquer ação no snapshot que não a reativação *unshelve* pode ser muito perigosa para a sua infraestrutura em em caso de mau uso. Uma vez « reactivada » (*unshelved*) uma instância, a snapshot é automaticamente eliminada. Não é recomendado criar uma nova instância a partir de uma snapshot criada após a suspensão de uma instância.
 >
@@ -199,9 +199,9 @@ Para anular a suspensão da instância, utilize o seguinte comando
 
 ### Colocar em pausa uma instância <a name="pause-instance"></a>
 
-Esta ação só é possível através da interface Horizon ou da API Openstack/Nova. Permite-lhe colocar em modo de standby ou « gelar » a sua instância.
+Esta ação só é possível através da interface Horizon ou da API Openstack/Nova. A instância tem um estado de « gelado » ou de « espera »
 
-#### Utilização do Horizon
+#### Da interface Horizon 
 
 Na interface Horizon, clique no menu `Compute`{.action} no lado esquerdo e selecione `Instances`{.action}. Selecione `Pause Instance`{.action} na lista pendente para a instância correspondente.
 

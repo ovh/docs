@@ -10,7 +10,7 @@ order: 3
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 21.09.2021**
+**Letzte Aktualisierung am 22.09.2021**
 
 ## Ziel
 
@@ -25,8 +25,8 @@ order: 3
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) zur stundenweisen Abrechnung
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder [Horizon-Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/)
-- Kenntnis der [OpenStack-API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/) und der [OpenStack-Variablen](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/)
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/)
+- Kenntnis der [OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/) und der [OpenStack Variablen](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/)
 
 ## In der praktischen Anwendung
 
