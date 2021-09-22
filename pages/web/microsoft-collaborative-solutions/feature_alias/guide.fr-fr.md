@@ -57,9 +57,9 @@ Pour ajouter un alias à votre compte e-mail:
 
 ### Suprimer un alias
 
-Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite de l'adresse e-mail concernée. Cliquez sur `Configurer les alias`{.action} ( ou `Gérer les alias`{.action}).
+Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite de l'adresse e-mail concernée, puis sur `Configurer les alias`{.action} ( ou `Gérer les alias`{.action}).
 
-Depuis le panneau de gestion des alias, cliquez sur le bouton `...`{.action} à droite de l'alias concernée. Pour supprimer, cliquez sur `Supprimer l'alias`{.action}
+Cliquez sur le bouton `...`{.action} à droite de l'alias concernée, dans le panneau de gestion des alias. Enfin, cliquez sur `Supprimer l'alias`{.action}
 
 ![emails](images/email-alias04.png){.thumbnail}
 
