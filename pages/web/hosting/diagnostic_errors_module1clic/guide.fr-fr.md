@@ -96,7 +96,17 @@ Pour relier votre domaine à un autre répertoire, cliquez sur `Modifier le doma
 Vous pouvez également vous connecter à votre hébergement via [FTP](../connexion-espace-stockage-ftp-hebergement-web/), puis supprimer ou déplacer le contenu du dossier, après l'avoir sauvegardé.
 
 ### « Une erreur s'est produite lors du chargement des informations. (There is not enough space on your hosting (you need at least XXX MB)) »
-> TODO
+
+Ce message indique que l'[espace de stockage](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement comporte trop de données et que vous devez donc en supprimer ou déplacer avant de pouvoir installer un nouveau [module en 1 clic](../modules-en-1-clic/).
+
+Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-hebergement-web/) à votre hébergement, sauvegardez localement les fichiers et dossiers non nécessaires et supprimez-les.
+
+> [!primary]
+>
+> Pour toute question sur les fichiers et dossiers à supprimer pour dimininuer la quantité de données sur votre hébergement, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).<br>
+> Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
+>
+
 
 ### « Impossible de se connecter à la base de données » <a name="supprimer-le-module"></a>
 
@@ -113,7 +123,14 @@ Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
 Puis relancez l'installation d'un nouveau module.
 
 ### (les dns ne pointent pas)
-> TODO
+
+Ce message indique que votre domaine n'est pas relié à votre hébergement via sa [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns), ce qui empêche l'installation de votre [module en 1 clic](../modules-en-1-clic/).
+
+Dans cette situation, modifiez votre [zone DNS](../../domains/editer-ma-zone-dns/#acceder-a-la-gestion-dune-zone-dns-ovhcloud) ou vos [serveurs DNS](../../domains/generalites-serveurs-dns/), patientez 48 heures (Temps de propagation des changements DNS) puis relancez l'installation de votre [module en 1 clic](../modules-en-1-clic/).
+
+>[!warning]
+>
+> La modification
 
 ### (Le préfixe de la base de données existent déjà)
 > TODO
