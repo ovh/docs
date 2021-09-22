@@ -1,5 +1,5 @@
 ---
-title: CORS
+title: Mettre en place CORS sur Object Storage
 slug: pcs/cors
 excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre CORS.
 section: Object Storage
