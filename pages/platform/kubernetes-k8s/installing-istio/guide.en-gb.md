@@ -75,11 +75,9 @@ Istio is installed in its own `istio-system` namespace and can manage services f
 
 For the rest of the tutorial, please remain on this directory.
 
-
 ## Installing Istio
 
-
-For this installation, we use the `istioctl` command line tool that provide rich customization of the Istio control plane and of the sidecars for the Istio data plane. It has user input validation to help prevent installation errors and customization options to override any aspect of the configuration.
+For this installation, we use the `istioctl` command line tool that provides rich customization of the Istio control plane and of the sidecars for the Istio data plane. It has user input validation to help prevent installation errors and customization options to override any aspect of the configuration.
 
 In this tutorial you're going to install Istio with the default profile, [other profiles](https://istio.io/latest/docs/setup/additional-setup/config-profiles/) exists.
 
@@ -102,7 +100,7 @@ The `istio-system` namespace is created with all Istio components.
 
 ## Installing Addons
 
-Istio integrates with several different telemetry applications. These can help you gain an understanding of the structure of your service mesh, display the topology of the mesh, and analyze the health of your mesh.
+Istio integrates several different telemetry applications. These can help you gain an understanding of the structure of your service mesh, display the topology of the mesh, and analyze the health of your mesh.
 
 Use the following instructions to deploy the `Kiali` dashboard, along with `Prometheus`, `Grafana`, and `Jaeger`.
 
@@ -294,7 +292,7 @@ An [Istio Gateway](https://istio.io/docs/concepts/traffic-management/#gateways){
 
 Set `GATEWAY_URL`, the URL of the `istio-gateway` service.
 
-You can get it with these following commands:
+You can get it with the following commands:
 
 <pre class="console"><code>$ export INGRESS_HOST=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 $ export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].port}')
@@ -338,7 +336,7 @@ istioctl dashboard kiali
 Now, we will take a look to the traffic. For that, in the left navigation menu, select `Graph` and in the `Namespace` drop down, select `istio-apps`.
 
 > [!warning]
-> To see trace data, you must send requests to your service. In order to send a 100 requests to the productpage service, use the following command:
+> To see trace data, you must send requests to your service. In order to send 100 requests to the productpage service, use the following command:
 > ```
 > for i in `seq 1 100`; do curl -s -o /dev/null "http://$GATEWAY_URL/productpage"; done
 > ```
