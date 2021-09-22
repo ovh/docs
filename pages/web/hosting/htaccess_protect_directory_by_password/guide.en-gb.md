@@ -60,9 +60,9 @@ In the "crypter.php" file created earlier, enter the following lines (to be repe
 
 ```php
 <?php
-$string_1 = crypt('clear_password_1');
-$string_2 = crypt('clear_password_2');
-$string_3 = crypt('clear_password_3');
+$string_1 = crypt('non_encrypted_password_1');
+$string_2 = crypt('non_encrypted_password_2');
+$string_3 = crypt('non_encrypted_password_3');
 echo nl2br(`$string_1 \n $string_2 \n $string_3`);
  ?>
 ```
