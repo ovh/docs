@@ -1,5 +1,5 @@
 ---
-title: ACL Public Cloud Archive
+title: Mettre en place une Access Control List sur Object Storage
 slug: pcs/acl
 excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre les ACL dans Object Storage.
 section: Object Storage
