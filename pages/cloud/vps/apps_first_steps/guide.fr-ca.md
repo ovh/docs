@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 8
 ---
 
-**Dernière mise à jour le 07/09/2021**
+**Dernière mise à jour le 16/09/2021**
 
 ## Objectif
 
@@ -33,7 +33,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 
 > [!primary]
 >
-> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l'aide de l'utilisateur CentOS et exécutez la commande « whmlogin » pour en générer un nouveau ou réinstallez l'instance.
+> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l'aide de l'utilisateur CentOS et exécutez la commande « whmlogin » pour générer un nouveau lien. 
 >
 
 <ol start="3">
