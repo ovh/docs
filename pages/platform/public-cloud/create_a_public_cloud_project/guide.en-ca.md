@@ -21,23 +21,27 @@ Creating a project is the first step in deploying [Public Cloud instances](https
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section and click on `Create your first OVH Public Cloud project`{.action}. Alternatively, for newly created accounts with no services, this information will be available in `Dashboard`{.action} section.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section and click on `Create your first OVH Public Cloud project`{.action}. Alternatively, for newly created accounts with no services, this option will be available in `Dashboard`{.action} area as soon as you log into your account.
 
-![first connection](firstconnection.png){.thumbnail}
+![first connection](images/firstconnection.png){.thumbnail}
 
-You will be redirected to a new page where you can enter your **Project name** and agree to the **General terms of service**. 
+You will be redirected to a new page where you have to enter your **Project name** and agree to the **General terms of service**. 
 
-If this is your first time creating a project, you can add voucher if applicable. Available vouchers can be retreived here : https://www.ovhcloud.com/en-ca/public-cloud/
+If this is your first time creating a Public Cloud project, you can add voucher if applicable. Available vouchers can be retrieved [here](https://www.ovhcloud.com/en-ca/public-cloud/).
 
 > [!primary]
-> As OVHcloud offers the possibility to create accounts in different branches, it is necessary to use the voucher provided for your respective branch.
+> It is necessary to use the voucher provided for your respective branch.
 >
 
 Once done, click on `Continue`{.action}
 
-![confirm voucher](confirmvoucher.png){.thumbnail}
+![confirm voucher](images/confirmvoucher.png){.thumbnail}
 
-Next, you will be asked to **Register a payment method**,this will be requested even if a voucher is been used. This is to ensure that your service can be renewed via automatic payments. You can register a Credit card or Paypal account. You will be charged a small fee to confirm your card's validty. This will be returned once the process is completed.
+Next, you will be prompted to **Register a payment method**, this will be requested even if a voucher is applied. This is to ensure that your service can be renewed via automatic payments. You can register a Credit card or a Paypal account. 
+
+If you add a Credit card, you will be charged a **small fee** to confirm your card's validty. This will be returned once the process is completed.
+
+If you add a Paypal account, you will be charged an **upfont fee** of $30. This fee will not be returned.
 
 ![add card](images/addcard.png){.thumbnail}
 
