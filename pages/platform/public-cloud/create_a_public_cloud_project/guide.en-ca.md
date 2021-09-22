@@ -39,23 +39,23 @@ Once done, click on `Continue`{.action}
 
 Next, you will be asked to **Register a payment method**,this will be requested even if a voucher is been used. This is to ensure that your service can be renewed via automatic payments. You can register a Credit card or Paypal account. You will be charged a small fee to confirm your card's validty. This will be returned once the process is completed.
 
-![add card](addcard.png){.thumbnail}
+![add card](images/addcard.png){.thumbnail}
 
 Fill in the necessary information and confirm bu clicking on the `Add` button to proceed.
 
 Once the payment method is confirmed, the projecting will begin :
 
-![creating project](creatingproject.png){.thumbnail}
+![creating project](images/creatingproject.png){.thumbnail}
 
 Once the process is complete, your new Public Cloud project will now be available in your OVHcloud account.
 
-![new project created](newprojectcreated.png){.thumbnail}
+![new project created](images/newprojectcreated.png){.thumbnail}
 
 > [!warning]
 > If you receive the following error message while registering your payment method, please contact our support team by creating a ticket.
 > 
 
-![public cloud error message](publicclouddenymessage.png){.thumbnail}
+![public cloud error message](images/publicclouddenymessage.png){.thumbnail}
 
 ## Go further
 
