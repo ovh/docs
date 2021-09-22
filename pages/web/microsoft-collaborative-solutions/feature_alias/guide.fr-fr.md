@@ -41,19 +41,17 @@ Dans le tableau qui s'affiche, vous observerez une colonne `Alias`.
 
 > [!warning]
 >
-> Si vous avecz une offre e-mail de type MXplan et que vous n'avez pas la colonne `Alias`, vous êtes sur la version historique du MXplan. Dans ce cas, les alias se créer sous forme de redirection. N'hésitez pas à consulter notre guide [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#version-historique-de-loffre-mx-plan).
-
-![emails](images/email-alias02.png){.thumbnail}
+> Si vous avecz une offre e-mail de type MXplan et que vous n'avez pas la colonne `Alias`, vous êtes sur la version historique du MXplan. Dans ce cas, les alias se créer sous forme de redirection. N'hésitez pas à consulter notre guide [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#version-historique-de-loffre-mx-plan)
 
 Pour ajouter un alias à votre compte e-mail: 
 
 - Cliquez sur le bouton `...`{.action} puis sur `Configurer les alias`{.action} ( ou `Gérer les alias`{.action}).
 
-![emails](images/email-alias03.png){.thumbnail}
+![emails](images/email-alias02.png){.thumbnail}
 
 - Cliquez sur `Ajouter un alias`{.action}, puis saisissez l'adresse que vous avez choisie pour votre alias et validez votre choix.
 
-![emails](images/email-alias04.png){.thumbnail}
+![emails](images/email-alias03.png){.thumbnail}
 
 ### Suprimer un alias
 
@@ -61,7 +59,7 @@ Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} 
 
 Depuis le panneau de gestion des alias, cliquez sur le bouton `...`{.action} à droite l'alias concernée. Pour supprimer, cliquez sur `Supprimer l'alias`{.action}
 
-![emails](images/email-alias05.png){.thumbnail}
+![emails](images/email-alias04.png){.thumbnail}
 
 
 ## Aller plus loin
