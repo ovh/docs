@@ -1,3 +1,15 @@
+---
+title: ACL Public Cloud Archive
+slug: pca/acl
+excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre les ACL dans Public Cloud Archive.
+section: Public Cloud Archive
+---
+
+
+## Objectif
+
+Ce guide à pour objectif de vous aider à vous familiariser avec les ACL afin d'affiner les droits d'accès à vos conteneurs
+
 ## Préambule
 
 Les ACL des conteneurs sont stockées dans les métadonnées X-Container-Write et X-Container-Read. La portée de l'ACL est limitée au conteneur dans lequel les métadonnées sont définies et aux objets du conteneur. De plus :
@@ -15,10 +27,6 @@ Les éléments peuvent être séparés par des espaces, comme dans l'exemple sui
 .r : *, .rlistings, 702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf:*
 ```
 
-## Objectif
-
-Ce guide à pour objectif de vous aider à vous familiariser avec les ACL afin d'affiner les droits d'accès à vos conteneurs
-
 ## Prérequis
 
 - Avoir créé un container Object Storage
@@ -33,7 +41,7 @@ Ce guide à pour objectif de vous aider à vous familiariser avec les ACL afin d
 - Un compte **user** sans aucun rôle
 - Un compte **limited_user** sans aucun rôle
 
-![](images/markdown-img-paste-20210917090513392.png)
+![Création des utilisateurs](images/create-users.png)
 
 ### Charger l'environnement du compte **admin**
 
@@ -44,7 +52,7 @@ Ce guide à pour objectif de vous aider à vous familiariser avec les ACL afin d
 ### Créer un conteneur et déposer de deux fichiers test
 ```bash
 swift post <conteneur>
-swift upload <conteneur> <large_object>
+swift upload <conteneur> <largeobject>
 swift upload <conteneur> <object>
 ```
 
@@ -99,7 +107,7 @@ X-Openstack-Request-Id: tx5dc255c8afcb46e8a39be-0061272d16
 X-Iplb-Request-Id: 6DBEFE1E:806A_3626E64B:01BB_61272D16_2672F8C:12099
 X-Iplb-Instance: 38426
 
-<large_object>
+<largeobject>
 <object>
 ```
 
@@ -225,7 +233,7 @@ X-Openstack-Request-Id: tx36cc5c3ed5224bdabaa61-0061273644
 X-Iplb-Request-Id: 6DBEFE1E:8486_3626E64B:01BB_61273644_20D14A0:15614
 X-Iplb-Instance: 38342
 
-<large_object>
+<largeobject>
 <object>
 ```
 
@@ -263,7 +271,7 @@ X-Openstack-Request-Id: txe320d39085464a24b7e48-00612736a9
 X-Iplb-Request-Id: 6DBEFE1E:8514_3626E64B:01BB_612736A8_202065D:27FE7
 X-Iplb-Instance: 33618
 
-<large_object>
+<largeobject>
 <object>
 ```
 
@@ -346,7 +354,7 @@ X-Openstack-Request-Id: txa2611c408ccd4c5599a69-0061273cdd
 X-Iplb-Request-Id: 6DBEFE1E:874E_3626E64B:01BB_61273CDD_1F01CA8:20722
 X-Iplb-Instance: 12308
 
-<large_object>
+<largeobject>
 <object>
 ```
 
@@ -384,7 +392,7 @@ X-Openstack-Request-Id: txb6c4e1e26225414fbfee6-0061273d2a
 X-Iplb-Request-Id: 6DBEFE1E:87A8_3626E64B:01BB_61273D2A_2218418:4ED4
 X-Iplb-Instance: 33617
 
-<large_object>
+<largeobject>
 <object>
 ```
 
@@ -422,17 +430,21 @@ X-Openstack-Request-Id: tx677723846a044648b1498-0061273d73
 X-Iplb-Request-Id: 6DBEFE1E:8804_3626E64B:01BB_61273D73_1F9C77D:27FE7
 X-Iplb-Instance: 12309
 
-<large_object>
+<largeobject>
 <object>
 ```
 
-### Autoriser un domaine reférent à télécharger des objects:
+### Autoriser un domaine reférent à télécharger des objets:
 
 Afin d'autoriser toutes les requêtes en provenance du domaine `example.com` à avoir accès aux objets du conteneur:
 ```bash
 swift post <conteneur> -r ".r:.example.com"
 ```
-> **ATTENTION** Bien que la plupart des navigateurs modernes inclus l'en-tête `Referrer` dans leurs requêtes, cela constitue un risque de sécurité car il est tout à fait possible de changer la valeur de cette en-tête.
+
+> [!primary]
+>
+> Bien que la plupart des navigateurs modernes inclus l'en-tête `Referrer` dans leurs requêtes, cela constitue un risque de sécurité car il est tout à fait possible de changer la valeur de cette en-tête.
+>
 
 #### Vérification des accès
 ```bash
@@ -444,7 +456,7 @@ curl -i $STORAGE_URL/<conteneur>/<object> -H "Referrer: http://example.com/index
 
 Depuis un autre projet, créer un utilisateur **other-project-user** sans aucun rôle
 
-![](images/markdown-img-paste-2021091709091459.png)
+![Autre utilisateur](images/other-user.png)
 
 Obtenir l'`id` de l'utilisateur
 
@@ -487,7 +499,7 @@ Depuis le compte `other-project-user`
 swift --os-storage-url https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b list <conteneur>
 ```
 ```
-<large_object>
+<largeobject>
 <object>
 ```
 
@@ -517,7 +529,7 @@ X-Iplb-Request-Id: 6DBEFE1E:8A5A_3626E64B:01BB_61274201_22328AF:4ED4
 X-Iplb-Instance: 33617
 ```
 
-## Le cas des LargeObjects
+## Le cas des Large Objects
 
 Si un objet de plus de 5Gb à été déposé cela génère un conteneur tel que : <conteneur_segments>.
 Il faut appliquer les mêmes ACL à ce conteneur afin de pouvoir récupérer l'objet de plus de 5Gb
@@ -571,10 +583,10 @@ X-Iplb-Instance: 38342
 ```
 
 ```bash
-swift download <conteneur> <large_object>
+swift download <conteneur> <largeobject>
 ```
 ```
-Error downloading object '<conteneur>/<large_object>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur>/<large_object> 409 Conflict  [first 60 chars of response] b'<html><h1>Conflict</h1><p>There was a conflict when trying t'
+Error downloading object '<conteneur>/<largeobject>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur>/<largeobject> 409 Conflict  [first 60 chars of response] b'<html><h1>Conflict</h1><p>There was a conflict when trying t'
 ```
 
 ```bash
@@ -606,8 +618,13 @@ X-Iplb-Instance: 38426
 ```
 
 ```bash
-swift download <conteneur> <large_object>
+swift download <conteneur> <largeobject>
 ```
 ```
-<large_object> [auth 0.739s, headers 1.408s, total 5504.436s, 1.171 MB/s]
+<largeobject> [auth 0.739s, headers 1.408s, total 5504.436s, 1.171 MB/s]
 ```
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
