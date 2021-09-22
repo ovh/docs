@@ -5,7 +5,7 @@ excerpt: 'Come configurare un server Veeam Backup & Replication con Veeam Enterp
 section: 'Veeam Backup & Replication'
 ---
 
-**Ultimo aggiornamento: 17/05/2019**
+**Ultimo aggiornamento: 22/09/2021**
 
 ## Obiettivo
 
@@ -21,7 +21,7 @@ Veeam Backup & Replication è un software di protezione dei dati che offre diver
 
 > [!primary]
 >
-> Le soluzioni Veeam non sono al momento compatibili con l'ultima versione (10) proposta da Veeam. OVHcloud continuerà a proporre la versione 9.5 fino a nuovo avviso. Tieni conto di questo punto durante la configurazione di Veeam per i tuoi servizi.
+> Le soluzioni Veeam sono compatibili solo con l'ultima versione (10) proposta da Veeam. Tieni conto di questo punto durante la configurazione di Veeam per i tuoi servizi.
 >
 
 ## Procedura
@@ -117,6 +117,24 @@ Nella finestra `Add User`{.action}, inserisci l’account di servizio creato pre
 Per verificare che l’account sia definito correttamente, torna sulla finestra **Security**.
 
 ![](images/veeamBandR_conf_16.PNG){.thumbnail}
+
+#### Autorizzazioni di esecuzione e di attivazione
+
+L'utente OVHVeamEntreprise è accessibile esclusivamente in locale, è quindi necessario aggiungere i permessi nell'interfaccia grafica di utente Windows per l'attivazione della connessione a distanza.
+
+Tramite l'interfaccia grafica utente:
+
+1. Nella barra di ricerca Windows, inserisci `Component Services`{.action} e avvia il servizio.
+2. Nel menu a sinistra e nella colonna a sinistra, clicca su `Component Services`{.action}, poi `Computers`{.action}, poi `My Computer`{.action}.
+3. A destra, sotto la scheda `Actions`{.action}, clicca su `More Actions`{.action} e poi su `Properties`{.action}.
+4. Seleziona `COM Security`{.action} e sotto la seconda sezione `Launch and Activation Permissions`{.action}, clicca su `Edit Limits`{.action}.
+5. Clicca sull'utente `OVHVeeamEntreprise`{.action} e attiva tutti i permessi.
+
+![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
+
+6. Clicca su `OK`{.action} per confermare e `Apply`{.action} per validare le modifiche.
+
+Il tuo utente OVHVeeamEntreprise è accessibile in locale e a distanza.
 
 #### Registra il server Veeam Backup & Replication
 
