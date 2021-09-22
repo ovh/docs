@@ -1,6 +1,8 @@
 ---
 title: ACL Public Cloud Archive
 slug: pca/acl
+routes:
+    canonical: 'https://docs.ovh.com/fr/storage/pcs/acl/'
 excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre les ACL dans Public Cloud Archive.
 section: Public Cloud Archive
 ---
