@@ -29,6 +29,8 @@ Une fois que le procédé débuté, un délai apparaîtra à la place du bouton 
 - [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/){.external} en installant python-swiftclient
 - [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/){.external}
 
+### En pratique
+
 Vérifier l'état de l'objet à télécharger:
 
 ```bash
