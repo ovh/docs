@@ -1,9 +1,9 @@
 ---
-title : 'Public Cloud & VPS - Cycle de vie des images'
-slug : public-cloud-vps-image-life-cycle
+title: 'Public Cloud & VPS - Cycle de vie des images'
+slug: public-cloud-vps-image-life-cycle
 excerpt: Découvrez le cycle de vie des images fournies pour Public Cloud & VPS
-section : 'Premiers pas'
-order : 8
+section: 'Premiers pas'
+order: 8
 ---
 
 **Dernière mise à jour le 22/09/2021**
@@ -37,7 +37,7 @@ Cette page documente la roadmap de fin de vie (*End of Life* ou EOL) des images 
 - Fedora 32 - Mai 2021
 - Ubuntu 20.10 - Juillet 2021
 - Fedora 33 - ~ Novembre 2021 (maintenu pendant 4 semaines après la sortie de Fedora 35)
-- Centos 8 - décembre 2021
+- Centos 8 - Décembre 2021
 
 ## Aller plus loin
 
