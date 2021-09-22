@@ -1,5 +1,5 @@
 ---
-title: ACL Public Cloud Archive
+title: Mettre en place une Access Control List sur Public Cloud Archive
 slug: pca/acl
 routes:
     canonical: 'https://docs.ovh.com/fr/storage/pcs/acl/'
