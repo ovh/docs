@@ -49,7 +49,7 @@ Delivering a fully managed service, including OS and other component updates, yo
 Creating a Kubernetes service of type LoadBalancer in a Managed Kubernetes cluster triggers the creation of a Public Cloud Load Balancer.
 The lifespan of the external Load Balancer (and thus the associated IP address) is linked to the lifespan of this Kubernetes resource.
 
-There is a default quota of 16 external Load Balancers per Openstack project (also named Openstack tenant).
+There is a default quota of 200 external Load Balancers per Openstack project (also named Openstack tenant).
 This limit can be exceptionally raised upon request through our support team.
 
 There is also a limit of __10 open ports__ on every `LoadBalancer`, and these ports must be in a range between __6 and 65535__.
