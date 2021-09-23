@@ -5,6 +5,8 @@ excerpt: Retrouvez ici les principales capacités et limitations pour la gestion
 section: Object Storage
 ---
 
+**Dernière mise à jour le 23/09/2021**
+
 ## Objectif
 
 Ce guide à pour objectif de vous présenter les principales capacités et limitations pour la gestion de vos conteneurs.
