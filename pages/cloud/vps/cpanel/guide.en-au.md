@@ -5,7 +5,7 @@ excerpt: 'Find out how to instantiate a VPS with the pre-installed cPanel applic
 section: 'Advanced usage'
 ---
 
-**Last updated 2020/05/28**
+**Last updated 2021/09/16**
 
 ## Objective
 
@@ -44,7 +44,7 @@ Once you received the email with the unique link, please proceed to the link to 
 
 > [!primary]
 >
-> If the link has expired already, please reinstall the VPS again with cPanel.
+> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the “whmlogin” command to generate a new link.
 >
 
 The URL above allows you to log in without credentials (user and password) to your WHM manager.
