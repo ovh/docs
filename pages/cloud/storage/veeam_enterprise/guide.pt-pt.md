@@ -5,7 +5,7 @@ excerpt: 'Saiba como instalar um servidor Veeam Backup & Replication com Veeam E
 section: Veeam
 ---
 
-**Última atualização: 22/09/2021**
+**Última atualização: 23/09/2021**
 
 ## Sumário
 
@@ -120,7 +120,7 @@ Ao voltar à janela **Security**, pode verificar se a conta aparece.
 
 #### Autorizações de execução e de ativação
 
-O utilizador OVHVeeamEntreprise só está acessível localmente, pelo que é necessário adicionar as permissões na interface gráfica de utilizador Windows para a ativação da ligação à distância.
+O utilizador OVHVeeamEnterprise só está acessível localmente. É necessário adicionar autorizações na interface gráfica Windows para ativar a ligação à distância.
 
 Através da interface gráfica de utilizador:
 

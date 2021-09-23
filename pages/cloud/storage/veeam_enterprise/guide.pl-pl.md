@@ -120,7 +120,7 @@ W oknie **Security** możesz sprawdzić, czy konto zostało utworzone.
 
 #### Zezwolenia na wykonywanie i aktywację
 
-Użytkownik OVHVeeamEntreprise jest dostępny tylko lokalnie. Aby aktywować zdalne połączenie, należy dodać uprawnienia do graficznego interfejsu użytkownika Windows.
+Użytkownik OVHVeeamEntreprise jest dostępny tylko lokalnie, dlatego aby włączyć zdalne połączenie, należy dodać uprawnienia do graficznego interfejsu użytkownika Windows.
 
 Za pomocą interfejsu graficznego użytkownika:
 

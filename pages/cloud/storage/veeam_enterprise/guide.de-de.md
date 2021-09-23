@@ -121,7 +121,7 @@ Im Fenster **Security** können Sie nun überprüfen, ob Ihr Account korrekt def
 
 #### Durchführungs- und Aktivierungsgenehmigungen
 
-Der Benutzer von OVHVeeamEnterprise ist ausschließlich lokal verfügbar. Um die Fernverbindung zu aktivieren, müssen die Berechtigungen in der grafischen Benutzerschnittstelle von Windows hinzugefügt werden.
+Der OVHVeeamEnterprise Benutzer ist nur lokal verfügbar. Um die Remote-Verbindung zu aktivieren, müssen Sie in der grafischen Windows-Benutzerschnittstelle Berechtigungen hinzufügen.
 
 Über das grafische Benutzerinterface:
 

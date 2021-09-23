@@ -121,13 +121,13 @@ If you go back to the **Security** window, you can check that the account has be
 
 #### Launch and Activation Permissions
 
-The OVHVeeamEntreprise user will only be accessible locally, to enable a remote connection for this user, it will be necessary to add the permissions in the Windows graphical user interface.
+The OVHVeeamEntreprise user is only accessible locally, so it is necessary to add permissions in the Windows graphical user interface to enable the remote connection.
 
 Via the graphical user interface:
 
 1. In your Windows search bar, type `Component Services`{.action} and launch the service.
-2. In the menu on the left and following the tree structure, click `Component Services`{.action}, then on `Computers`{.action}, then on `My Computer`{.action}.
-3. On the right-hand side, under the `Actions`{.action} tab, click `More Actions`{.action}, and then click `Properties`{.action}.
+2. On the left menu and following the tree structure, click on `Component Services`{.action}, then on `Computers`{.action}, then on `My Computer`{.action}.
+3. On the right, under the `Actions`{.action} tab, click on `More Actions`{.action}, then on `Properties`{.action}.
 4. Go to `COM Security`{.action}, underneath the second section `Launch and Activation Permissions`{.action}, click on `Edit Limits`{.action}.
 5. Select the `OVHVeeamEntreprise`{.action} user and enable all permissions.
 

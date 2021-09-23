@@ -120,7 +120,7 @@ Per verificare che l’account sia definito correttamente, torna sulla finestra 
 
 #### Autorizzazioni di esecuzione e di attivazione
 
-L'utente OVHVeamEntreprise è accessibile esclusivamente in locale, è quindi necessario aggiungere i permessi nell'interfaccia grafica di utente Windows per l'attivazione della connessione a distanza.
+L'utente OVHVeeamEnterprise è accessibile solo in locale. Per attivare la connessione remota, è necessario aggiungere autorizzazioni nell'interfaccia utente grafica Windows.
 
 Tramite l'interfaccia grafica utente:
 

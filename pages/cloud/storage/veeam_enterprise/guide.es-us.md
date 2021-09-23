@@ -119,7 +119,7 @@ Al volver a la ventana **Security**, compruebe que aparezca la cuenta.
 
 #### Autorizaciones de ejecución y activación
 
-El usuario de OVHVeamEntreprise solo es accesible localmente, por lo que es necesario añadir los permisos en la interfaz gráfica de usuario de Windows para activar la conexión remota.
+El usuario de OVHVeeamEnterprise solo está disponible localmente. Para activar la conexión a distancia, es necesario añadir permisos en la interfaz gráfica de usuario Windows.
 
 Desde la interfaz gráfica de usuario:
 
@@ -127,13 +127,13 @@ Desde la interfaz gráfica de usuario:
 2. En el menú de la izquierda, haga clic en `Component Services`{.action} y seleccione `Computers`{.action}. A continuación, haga clic en `My Computer`{.action}.
 3. A la derecha, en la pestaña `Actions`{.action}, haga clic en `More Actions`{.action} y seleccione `Properties`{.action}.
 4. Vaya a `COM Security`{.action} y, bajo la segunda opción `Launch and Activation Permissions`{.action}, haga clic en `Edit Limits`{.action}.
-5. Haga clic en el usuario de `OVHVeamEntreprise`{.action} y active todos los permisos.
+5. Haga clic en el usuario de `OVHVeeamEntreprise`{.action} y active todos los permisos.
 
 ![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
 
 6. Haga clic en `OK`{.action} para confirmar y `Apply`{.action} para aceptar los cambios.
 
-Ya puede acceder a su usuario de OVHVeamEntreprise local y a distancia.
+Ya puede acceder a su usuario de OVHVeeamEntreprise local y a distancia.
 
 #### Registrar el servidor Veeam Backup & Replication
 
