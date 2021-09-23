@@ -5,7 +5,7 @@ slug: cpanel
 section: 'Uso avanzado'
 ---
 
-**Última actualización: 28/05/2020**
+**Última actualización: 16/09/2021**
 
 
 ## Objectivo
@@ -44,7 +44,7 @@ Una vez que reciba el email con el enlace único, por favor proceda al enlace pa
 
 > [!primary]
 >
-> Si el enlace ha expirado, por favor reinstale el VPS otra vez con cPanel.
+> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando "whmlogin" para generar un nuevo enlace.
 >
 
 La URL anterior permite iniciar sesión sin credenciales (usuario y contraseña) en su administrador WHM.
