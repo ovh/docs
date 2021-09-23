@@ -43,7 +43,7 @@ There are several existing `namespaces` running in your cluster:
 
 - `default`: namespace by default
 - `kube-system`: for objects created by Kubernetes
-- `kube-public`: reserved mainly for cluster usage & in case of specific oruces should be publicly available
+- `kube-public`: reserved mainly for cluster usage & in case of specific resources should be publicly available
 - `kube-node-lease`: for heartbeat Node's lease object
 
 The following listed resources are running in theses `namespaces`.
