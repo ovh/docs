@@ -31,9 +31,9 @@ También puede ocurrir que, debido a una detección de anomalías, nuestros robo
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting](https://www.ovh.es/hosting/) de OVHcloud.
+- Tener contratado un plan de [hosting](hhttps://www.ovh.com/world/es/hosting/) de OVHcloud.
 - Disponer de las [claves de conexión](../conexion-espacio-almacenamiento-ftp-alojamiento-web/#1-obtener-los-datos-de-conexion) al espacio de almacenamiento del alojamiento.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
@@ -41,28 +41,28 @@ También puede ocurrir que, debido a una detección de anomalías, nuestros robo
 
 Si la página **"403 forbidden"** aparece debido a una modificación errónea de su sitio web, [restablezca la totalidad o parte del espacio de almacenamiento de su alojamiento](../restaurar-espacio-almacenamiento-alojamiento-web/) a una fecha anterior.
 
-Si las copias de seguridad disponibles no le permiten restablecer el acceso a su sitio web, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/).
+Si las copias de seguridad disponibles no le permiten restablecer el acceso a su sitio web, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/).
 
 Si la página **"403 forbidden"** no ha aparecido debido a una modificación de su sitio web, consulte su mensajería. Si por motivos de seguridad nuestros servicios le han enviado un mensaje de correo electrónico indicándole que quiere cerrar el alojamiento, vaya al paso 2 [del siguiente paso](#step2).
 
-Si la página **"403 forbidden"** ha aparecido sin ninguna acción por su parte y no ha recibido ningún correo de nuestros servicios al respecto, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/).
+Si la página **"403 forbidden"** ha aparecido sin ninguna acción por su parte y no ha recibido ningún correo de nuestros servicios al respecto, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/).
 
 ### Etapa 2: proteger sus soluciones <a name="step2"></a>
 
 En primer lugar, compruebe la seguridad de sus equipos informáticos:
 
 - Realice las actualizaciones de seguridad.
-- Compruebe también que haya instalado un antivirus, actualícela y lance una exploración completa. Si no tiene ninguno, consulte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) antes de instalar el módulo.
+- Compruebe también que haya instalado un antivirus, actualícela y lance una exploración completa. Si no tiene ninguno, consulte con un [proveedor especializado](https://partner.ovhcloud.com/es/) antes de instalar el módulo.
 - Cambie todas sus contraseñas locales, incluidas las de sus direcciones de correo, respetando las [buenas prácticas](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/#generar-una-contrasena-adecuada).
 - Cambie las contraseñas de todos sus servicios de OVHcloud, especialmente de su [base de datos](../cambiar-contrasena-base-de-datos/) y del acceso a su [espacio de almacenamiento FTP](../cambiar-contrasena-usuario-ftp/).
 
 > [!warning]
 >
-> Antes de cambiar la contraseña de la base de datos del sitio web desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), actualice el archivo de configuración del sitio web para que se conecte a la base de datos con la nueva contraseña.
+> Antes de cambiar la contraseña de la base de datos del sitio web desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), actualice el archivo de configuración del sitio web para que se conecte a la base de datos con la nueva contraseña.
 >
 > En caso contrario, si cambia la contraseña de la base de datos, el sitio web o los servicios que lo utilizan se cortarán.
 >
-> Si tiene alguna duda sobre las operaciones que debe realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+> Si tiene alguna duda sobre las operaciones que debe realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/).
 >
 
 ### Etapa 3: intervenir en su alojamiento
@@ -77,7 +77,7 @@ Si su alojamiento ha sido cerrado hace menos de dos semanas y contiene varios si
 
 #### Caso n° 2: su alojamiento ha sido desactivado más de dos semanas antes.
 
-Si su alojamiento ha sido cerrado más de dos semanas antes, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) para realizar una auditoría de seguridad de sus soluciones. 
+Si su alojamiento ha sido cerrado más de dos semanas antes, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es/) para realizar una auditoría de seguridad de sus soluciones. 
 
 > [!warning]
 >
@@ -109,7 +109,7 @@ Una respuesta **"200 Permissions changed on /"** confirma que la operación se h
 
 #### Reactivar el alojamiento con el explorador FTP "net2ftp"
 
-En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Web Cloud`{.action} y, seguidamente, haga clic en `Alojamientos`{.action} en la pestaña `FTP-SSH`{.action} del alojamiento correspondiente.
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Web Cloud`{.action} y, seguidamente, haga clic en `Alojamientos`{.action} en la pestaña `FTP-SSH`{.action} del alojamiento correspondiente.
 
 Haga clic en el botón `Explorador FTP `{.action} y conéctese al espacio de almacenamiento siguiendo las instrucciones de esta [guía](../conexion-espacio-almacenamiento-ftp-alojamiento-web/#21-conexion-mediante-un-explorador-ftp). Haga clic en el botón `Avanzado`{.action} y, a continuación, en el botón `Go`{.action} situado junto a "Send arbitrary FTP commands to the FTP server".
 
@@ -129,8 +129,8 @@ Una respuesta **"200 Permissions changed on /"** confirma que la operación se h
 
 [Cambiar la versión de PHP de un alojamiento web](../cambiar-version-php-en-alojamiento-web/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
