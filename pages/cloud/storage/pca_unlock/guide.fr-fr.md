@@ -1,41 +1,52 @@
 ---
-title: Degeler vos donnees stockees sur le Public Cloud Archive
+title: Dégeler vos données stockées sur Public Cloud Archive
 slug: pca/unlock
-excerpt: Retrouvez ici comment degeler vos archives.
+excerpt: Retrouvez ici comment dégeler vos archives
 section: Public Cloud Archive
 ---
 
+**Dernière mise à jour le 23/09/2021**
 
-## Preambule
-Public Cloud Archive est une offre de stockage froid destinée à héberger de gros volumes de données et cela sans limite de taille avec une tarification très attractive. Destinée aux données rarement consultées, une requête de déblocage est nécessaire impliquant un délai avant récupération. Ce délai est variable en fonction de l'ancienneté et de la fréquence d'accès à vos données.
+## Objectif
 
+Public Cloud Archive est une offre de stockage froid destinée à héberger de gros volumes de données et cela sans limite de taille, avec une tarification très attractive.
 
-## Degeler vos objets depuis l'espace client
-Lorsque vous stockez des données sur PCA, celles-ci sont directement gelées et ainsi ne peuvent pas être récupérées. Il vous faudra alors cliquer sur le bouton "Dégeler" afin d'entamer le processus de récupération.
+Destinée aux données rarement consultées, une requête de déblocage est nécessaire, impliquant un délai avant récupération. Ce délai est variable en fonction de l'ancienneté et de la fréquence d'accès à vos données.
 
+**Découvrez comment dégeler vos données stockées sur Public Cloud Arhive, via l'espace client OVHcloud ou via python-swiftclient.**
+
+## Prérequis
+
+- Via l'espace client OVHcloud :
+    - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Via python-swiftclient :
+    - [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/){.external} en installant python-swiftclient.
+    - [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/){.external}.
+
+## En pratique
+
+### Dégeler vos objets depuis l'espace client
+
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Cloud Archive`{.action} dans le menu de gauche.
+
+Il vous faudra cliquer sur le bouton `Dégeler`{.action} afin d'entamer le processus de récupération.
 
 ![public-cloud](images/PCA-unlock-1-fr.png){.thumbnail}
 
-Une fois que le procédé débuté, un délai apparaîtra à la place du bouton "dégeler". Votre fichier sera alors disponible au téléchargement à l'issue de ce délai. Enfin votre fichier est accessible à l'issue du délai. Vous pouvez ainsi entammer le téléchargement directement par le navigateur ou via un[client Swift/SFTP/SCP](../pca_sftp/guide.fr-fr.md){.ref}
+Une fois le processus entamé, un délai apparaîtra à la place du bouton « Dégeler ».
 
+Votre fichier sera disponible au téléchargement à l'issue de ce délai. Vous pourrez alors entammer le téléchargement directement par le navigateur ou via un[client Swift/SFTP/SCP](https://docs.ovh.com/fr/storage/pca/sftp/).
 
 ![public-cloud](images/PCA-unlock-2-fr.png){.thumbnail}
 
+### Dégeler vos objets via python-swiftclient
 
-## Degeler vos objets depuis python-swiftclient
-
-### Prérequis
-
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/){.external} en installant python-swiftclient
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/){.external}
-
-### En pratique
-
-Vérifier l'état de l'objet à télécharger:
+Vérifiez l'état de l'objet à télécharger :
 
 ```bash
 swift stat <conteneur_pca> <objet>
 ```
+
 ```
                Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
              Container: <conteneur_pca>
@@ -54,15 +65,18 @@ X-Openstack-Request-Id: txbb0eff9ebf9442eab0d02-0061123b5a
        X-Iplb-Instance: 12308
 ```
 
-La ligne suivante indique que l'objet est gelé:
+La ligne suivante indique que l'objet est gelé :
+
 ```
 X-Ovh-Retrieval-State: sealed
 ```
 
-donc la commande `swift download` renverra une erreur 429:
+Par conséquent, la commande `swift download` renverra une erreur 429 :
+
 ```bash
 swift download <conteneur_pca> <objet>
 ```
+
 ```
 Error downloading object '<conteneur_pca>/<objet>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur_pca>/<objet> 429 Too Many Requests
 ```
@@ -72,6 +86,7 @@ En relançant la commande `swift stat` :
 ```bash
 swift stat <conteneur_pca> <objet>
 ```
+
 ```
                Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
              Container: <conteneur_pca>
@@ -91,21 +106,24 @@ X-Openstack-Request-Id: tx9012d12434a447bd81528-0061123c54
        X-Iplb-Instance: 12309
 ```
 
-La ligne suivante indique que l'objet est en cours de dégèle:
+La ligne suivante indique que l'objet est en cours de dégel :
+
 ```
 X-Ovh-Retrieval-State: unsealing
 ```
 
-Et la ligne suivante indique le délai (en secondes) à attendre avant de pouvoir télécharger l'objet:
+Et la ligne suivante indique le délai (en secondes) à attendre avant de pouvoir télécharger l'objet :
+
 ```
 X-Ovh-Retrieval-Delay: 14313
 ```
 
-Une fois le délai passé:
+Une fois le délai écoulé :
 
 ```bash
 swift stat <conteneur_pca> <objet>
 ```
+
 ```
                Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
              Container: <conteneur_pca>
@@ -124,36 +142,44 @@ X-Openstack-Request-Id: txaf1eac9ceb8a45efb36e1-0061127482
        X-Iplb-Instance: 38343
 ```
 
-La ligne suivante indique que l'objet est dégelé:
+La ligne suivante indique que l'objet est dégelé :
+
 ```
 X-Ovh-Retrieval-State: unsealed
 ```
 
-Le téléchargement de l'objet fonctionne:
+Le téléchargement de l'objet fonctionne alors :
 
 ```bash
 swift download <conteneur_pca> <objet>
 ```
+
 ```
 swift download <conteneur_pca> <objet>
 <objet> [auth 0.961s, headers 1.767s, total 1.768s, 0.001 MB/s]
 ```
 
-#### Automatiser le téléchargement de l'objet:
+#### Automatiser le téléchargement de l'objet
 
 > [!primary]
 >
-> Requiert le package `at`
+> Cette fonctionnalité requiert le package `at`.
 >
 
 ```bash
 swift download <conteneur_pca> <objet>
 ```
+
 ```
 Error downloading object '<conteneur_pca>/<objet>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur_pca>/<objet> 429 Too Many Requests
 ```
+
 ```bash
 X_OVH_RETRIEVAL_DELAY=$(swift download <conteneur_pca> <objet> | awk -F ": " '/X-Ovh-Retrieval-Delay/ {print $2}'
 RETRIEVAL_DELAY=$((${X_OVH_RETRIEVAL_DELAY} / 60 + 2))
 swift download <conteneur_pca> <objet> | at now + ${RETRIEVAL_DELAY} minutes
 ```
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
