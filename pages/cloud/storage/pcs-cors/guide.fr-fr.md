@@ -5,14 +5,11 @@ excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre CORS.
 section: Object Storage
 ---
 
+**Dernière mise à jour le 23/09/2021**
 
 ## Objectif
 
-Ce guide a pour objectif de vous familiariser avec le concept de CORS
-
-## Préambule
-
-CORS est un mécanisme qui permet au code s'exécutant dans un navigateur (Javascript par exemple) de faire des requêtes vers un domaine autre que celui d'où il provient.
+CORS est un mécanisme qui permet au code s'exécutant dans un navigateur (Javascript, par exemple) de faire des requêtes vers un domaine autre que celui d'où il provient.
 
 Swift supporte les requêtes CORS vers les conteneurs et les objets.
 
@@ -20,8 +17,10 @@ Les métadonnées CORS ne sont présentes que dans le conteneur. Les valeurs ind
 
 > [!primary]
 >
-> N'est pas compatible avec l'API S3
+> CORS n'est pas compatible avec l'API S3.
 >
+
+**Ce guide a pour objectif de vous familiariser avec le concept de CORS.**
 
 ## Prérequis
 
@@ -30,20 +29,20 @@ Les métadonnées CORS ne sont présentes que dans le conteneur. Les valeurs ind
 
 ## En pratique
 
-Il existe 3 métadonnées permettant de gérer le CORS sur un conteneur:
+Il existe 3 métadonnées permettant de gérer le CORS sur un conteneur :
 
 | Métadonnées | Description |
 |:------------|:------------|
-| X-Container-Meta-Access-Control-Allow-Origin | Origins autorisés à faire des requêtes Cross Origin, séparé par un espace. |
+| X-Container-Meta-Access-Control-Allow-Origin | Origins autorisés à faire des requêtes Cross Origin, séparés par un espace. |
 | X-Container-Meta-Access-Control-Max-Age | Durée maximale pendant laquelle l'origins peut conserver les résultats du contrôle préalable. |
 | X-Container-Meta-Access-Control-Expose-Headers | En-têtes exposés à l'agent utilisateur (par exemple, le navigateur) dans la réponse à la demande réelle. Séparés par un espace. |
-
 
 ### Contexte
 
 ```bash
 swift stat <conteneur>
 ```
+
 ```
                            Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
                          Container: <conteneur>
@@ -65,7 +64,7 @@ swift stat <conteneur>
                    X-Iplb-Instance: 33617
 ```
 
-###  Définition des métadonnées CORS
+### Définition des métadonnées CORS
 
 > [!primary]  
 >
@@ -73,8 +72,8 @@ swift stat <conteneur>
 >
 
 > [!warning]  
->  
-> Si le serveur tourne sur un port non standard il faut le préciser: `http://example.com:8080`
+>
+> Si le serveur tourne sur un port non standard, il faut le préciser: `http://example.com:8080`
 >
 
 ```bash
@@ -84,6 +83,7 @@ swift post -H 'X-Container-Meta-Access-Control-Expose-Headers:X-Container-Meta-A
 # stat
 swift stat <conteneur>
 ```
+
 ```
                              Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
                            Container: <conteneur>
@@ -108,14 +108,12 @@ swift stat <conteneur>
                      X-Iplb-Instance: 38427
 ```
 
+#### Page de démonstration
 
+Hébergez la page html suivante sur le serveur web correspondant au CORS origin.
 
-####  Page de démonstration
+`cors.html` :
 
-
-Héberger la page html suivante sur le serveur web ccorrespondant au CORS origin
-
-`cors.html`:
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -183,6 +181,7 @@ Héberger la page html suivante sur le serveur web ccorrespondant au CORS origin
 ```
 
 **Request Headers**
+
 ```
 GET /v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/pcs-web/lorem.txt HTTP/1.1
 Host: storage.gra.cloud.ovh.net
@@ -202,7 +201,9 @@ Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7
 If-None-Match: 51f122f524c46cafcf9628305db99144
 If-Modified-Since: Tue, 03 Aug 2021 07:10:26 GMT
 ```
+
 **Response Headers**
+
 ```
 HTTP/1.1 200 OK
 Access-Control-Expose-Headers: expires, content-language, cache-control, meta, X-Container-Read, X-Storage-Policy, last-modified, etag, x-timestamp, pragma, x-trans-id, access-control-allow-origin, content-type, x-openstack-request-id, x-object-meta-mtime
@@ -221,21 +222,21 @@ Content-Type: text/plain
 Etag: 51f122f524c46cafcf9628305db99144
 ```
 
-Avant qu'un navigateur n'émette une demande réelle, il peut émettre une demande de contrôle préalable. La demande de contrôle préalable est un appel destiné à vérifier que l'origine est autorisée à effectuer la demande. La séquence des événements est la suivante,
+Avant qu'un navigateur n'émette une demande réelle, il peut émettre une demande de contrôle préalable. La demande de contrôle préalable est un appel destiné à vérifier que l'origine est autorisée à effectuer la demande. La séquence des événements est la suivante :
 
-- Le navigateur envoie une demande OPTIONS à Swift
+- Le navigateur envoie une demande OPTIONS à Swift.
 - Swift renvoie `200/401` au navigateur en fonction des `origins` autorisées.
-- Si `200`, le navigateur effectue la "demande réelle" à Swift, c'est-à-dire `PUT`, `POST`, `DELETE`, `HEAD`, `GET`.
+- Si `200`, le navigateur effectue la « demande réelle » à Swift, c'est-à-dire `PUT`, `POST`, `DELETE`, `HEAD`, `GET`.
 
-Lorsqu'un navigateur reçoit une réponse à une demande réelle, il n'expose que les en-têtes énumérés dans l'en-tête `Access-Control-Expose-Headers`. Par défaut, Swift renvoie les valeurs suivantes pour cet en-tête,
+Lorsqu'un navigateur reçoit une réponse à une demande réelle, il n'expose que les en-têtes énumérés dans l'en-tête `Access-Control-Expose-Headers`. Par défaut, Swift renvoie les valeurs suivantes pour cet en-tête :
 
-- "simple-response-header" tels qu'elles sont listées sur http://www.w3.org/TR/cors/#simple-response-header
-- Les en-têtes `etag`, `x-timestamp`, `x-trans-id`, `x-openstack-request-id`
-- Tous les en-têtes de métadonnées (`X-Container-Meta-*` pour les conteneurs et `X-Object-Meta-*` pour les objets)
-- Les en-têtes énumérés dans `X-Container-Meta-Access-Control-Expose-Headers`
-- Les en-têtes configurés à l'aide de l'option cors_expose_headers dans `proxy-server.conf`
+- « simple-response-header » telles qu'elles sont listées sur http://www.w3.org/TR/cors/#simple-response-header
+- Les en-têtes `etag`, `x-timestamp`, `x-trans-id`, `x-openstack-request-id`.
+- Tous les en-têtes de métadonnées (`X-Container-Meta-*` pour les conteneurs et `X-Object-Meta-*` pour les objets).
+- Les en-têtes énumérés dans `X-Container-Meta-Access-Control-Expose-Headers`.
+- Les en-têtes configurés à l'aide de l'option cors_expose_headers dans `proxy-server.conf`.
 
-###  Supprimer les métadonnées CORS
+### Supprimer les métadonnées CORS
 
 ```bash
 swift post -H "X-Remove-Container-Meta-Access-Control-Allow-Origin:x" <conteneur>
@@ -244,6 +245,7 @@ swift post -H "X-Remove-Container-Meta-Access-Control-Expose-Headers:x" <contene
 # stat
 swift stat <conteneur>
 ```
+
 ```
                            Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
                          Container: <conteneur>
