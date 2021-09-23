@@ -567,7 +567,7 @@ X-Iplb-Instance: 33617
 
 ## Le cas des Large Objects
 
-Si un objet de plus de 5Gb à été déposé, cela génère un conteneur tel que : <conteneur_segments>.
+Si un objet de plus de 5Gb à été déposé, cela génère un conteneur tel que : `<conteneur_segments>`.<br>
 Il faut appliquer les mêmes ACL à ce conteneur afin de pouvoir récupérer l'objet de plus de 5Gb
 
 ```bash
