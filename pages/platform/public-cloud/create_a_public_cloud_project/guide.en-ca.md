@@ -21,13 +21,13 @@ Creating a project is the first step in deploying [Public Cloud instances](https
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section and click on `Create your first OVH Public Cloud project`{.action}. Alternatively, for newly created accounts with no services, this option will be available in `Dashboard`{.action} area as soon as you log into your account.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section and click on `Create your first OVH Public Cloud project`{.action}. Alternatively, for newly created accounts with no services, this option will be available in the `Dashboard`{.action} area as soon as you log into your account.
 
 ![first connection](images/firstconnection.png){.thumbnail}
 
 You will be redirected to a new page where you will be required to enter your **Project name** and agree to the **General terms of service.**
 
-If this is your first time creating a Public Cloud project, you can add voucher if applicable. Available vouchers can be retrieved [here](https://www.ovhcloud.com/en-ca/public-cloud/).
+If this is your first time creating a Public Cloud project, you can add a voucher if applicable. Available vouchers can be retrieved [here](https://www.ovhcloud.com/en-ca/public-cloud/).
 
 > [!primary]
 > It is necessary to use the voucher provided for your respective branch.
@@ -45,7 +45,7 @@ Next, you will be prompted to **Register a payment method**, this will be reques
 
 If you add a Credit card, you will be charged a **small fee** to confirm your card's validity. This will be returned once the process is completed.
 
-If you add a Paypal account, you will be charged an **upfont fee** of $30. This fee will not be returned.
+If you add a Paypal account, you will be charged an **upfront fee** of $30. This fee is non refundable.
 
 ![add card](images/addcard.png){.thumbnail}
 
@@ -55,12 +55,12 @@ Once the payment method is confirmed, the project creation will be initiated:
 
 ![creating project](images/creatingproject.png){.thumbnail}
 
-Once the process is complete, your new Public Cloud project will now be available in your OVHcloud account:
+Once the process is complete, your new Public Cloud project will be available in your OVHcloud account:
 
 ![new project created](images/newprojectcreated.png){.thumbnail}
 
 > [!warning]
-> If you receive the below error message while registering your payment method, please contact our support team by creating a ticket from your OVHcloud Control Panel.
+> If you receive the error message below while registering your payment method, please contact our support team by creating a ticket from your OVHcloud Control Panel.
 > 
 
 ![public cloud error message](images/publicclouddenymessage.png){.thumbnail}
