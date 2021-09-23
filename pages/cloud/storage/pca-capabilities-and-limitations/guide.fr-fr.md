@@ -3,13 +3,15 @@ title: Capacités et limitations
 slug: pca/capabilities-and-limitations
 routes:
     canonical: 'https://docs.ovh.com/fr/storage/pcs/capabilities-and-limitations/'
-excerpt: Retrouvez ici les principales capacités et limitations pour la gestion de vos conteneurs.
+excerpt: Retrouvez ici les principales capacités et limitations pour la gestion de vos conteneurs
 section: Public Cloud Archive
 ---
 
-## Objectifs
+**Dernière mise à jour le 23/09/2021**
 
-Ce guide à pour objectif de vous présenter les principales capacités et limitations pour la gestion de vos conteneurs.
+## Objectif
+
+Ce guide a pour objectif de vous présenter les principales capacités et limitations pour la gestion de vos conteneurs.
 
 ## En pratique
 
@@ -22,7 +24,7 @@ Ce guide à pour objectif de vous présenter les principales capacités et limit
 
 Le nombre par défaut (et maximum) d'éléments renvoyés pour une demande de liste de conteneur.
 
-Affiche le tout
+Afficher tous les éléments avec python-swiftclient :
 
 ```bash
 swift list <conteneur>
@@ -37,7 +39,9 @@ container_listing_limit/00007
 [...]
 container_listing_limit/10038
 ```
-N'affiche que les 10000 premiers objets
+
+N'afficher que les 10000 premiers objets :
+
 ```bash
 curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>" -X GET -H "X-Auth-Token: xxx"
 ```
@@ -73,16 +77,16 @@ Vous pouvez utiliser les paramètres `marker`, `limit` et `end_marker` pour cont
 
 | Paramètre | Type | Description |
 |:----------|:-----|:------------|
-| marker | sting | Pour obtenir les noms suivants, vous devez faire une autre demande avec le paramètre marker. Définissez le paramètre marker sur le nom du dernier élément renvoyé dans la liste précédente. |
+| marker | string | Pour obtenir les noms suivants, vous devez faire une autre demande avec le paramètre marker. Définissez le paramètre marker sur le nom du dernier élément renvoyé dans la liste précédente. |
 | limit | integer | Pour renvoyer moins de 10 000 noms, utilisez le paramètre limit. |
 | end_marker | integer | Limite le jeu de résultats aux noms dont le nombre est inférieur à la valeur du paramètre end_marker. |
 
-Afficher la suite via `marker`
+Afficher la suite via `marker` :
 
 ```bash
-# Affiche les 10000 premiers résultats
 curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>?marker=container_listing_limit/10000" -X GET -H "X-Auth-Token: xxx"
 ```
+
 ```output
 Content-Length: 10038
 X-Container-Object-Count: 10038
@@ -131,6 +135,7 @@ Le plus grand objet normal qui peut être enregistré dans le cluster. Il s'agit
 ```bash
 swift upload <conteneur> <largeobject>
 ```
+
 ```
 Object PUT failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>/<largeobject> 413 Request Entity Too Large   b'Your request is too large.'
 Consider using the --segment-size option to chunk the object
@@ -171,20 +176,23 @@ do
 swift post -m "max_meta_count_$i:value" <conteneur>
 done
 ```
+
 ```output
 Container POST failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur> 400 Bad Request   b'Too many metadata items; max 90'
 Failed Transaction ID: txef5aa187467c4c949c0d4-00610a35f0
 ```
+
 ```bash
 swift stat <conteneur>
 ```
+
 ```output
 Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur> 502 Bad Gateway
 ```
 
 ### max_meta_name_length = 128
 
-Le nombre maximum d'octets dans l'encodage utf8 de la partie nom d'un en-tête de métadonnées.
+Le nombre maximum d'octets dans l'encodage utf8 de la partie « nom » d'un en-tête de métadonnées.
 
 ```bash
 swift post -m 'max_meta_name_length_oROpb2gFutM1NrZI9Q5aOuJDi0eiO0hFvJIJo9Hrd7mhPeAOoRwoCk00CJPX0yFvmbcatIuqXY8avxTLhhQBRwVhBJ0Ht2DeUKFTEZDeKfF2xBou4aC9krFMjVoF8wEsdb:value' <conteneur>
@@ -205,6 +213,7 @@ do
 swift post -m "max_meta_overall_size_$i:oROpb2gFutM1NrZI9Q5aOuJDi0eiO0hFvJIJo9Hrd7mhPeAOoRwoCk00CJPX0yFvmbcatIuqXY8avxTLhhQBRwVhBJ0Ht2DeUKFTEZDeKfF2xBou4aC9krFMjVoF8wEsdb" <conteneur>
 done
 ```
+
 ```
 Container POST failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur> 400 Bad Request   b'Total metadata too large; max 4096'
 Failed Transaction ID: tx062504c366c3454c958c9-00610a34c0
@@ -223,34 +232,40 @@ touch max_object_name_length.txt
 file="$(pwd)/max_object_name_length.txt"
 swift upload <conteneur> $file
 ```
+
 ```
 Object PUT failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702de32b692c4842b0bb751dc5085daf/<conteneur>/tmp/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/max_object_name_length.txt 400 Bad Request   b'Object name length of 1141 longer than 1024'
 
 ```
 
 ### Durée de validité d'un token
-Un token est valide 24h
+
+Un token est valide 24h.
 
 > [!warning]
 >
-> Un trop grand nombre de demande de token renverra une erreur 429 Too Many Requests
+> Un trop grand nombre de demandes de token renverra une erreur 429 Too Many Requests.
 >
 
-
 ### Création de conteneur via Horizon
-Horizon ne liste pas les politiques de stockage ce qui fait qu'il n'est pas possible de créer de conteneur PCA via Horizon, PCS étant la politique de stockage par défaut
+
+Horizon ne liste pas les politiques de stockage. Par conséquent, il n'est pas possible de créer de conteneur PCA via Horizon, PCS étant la politique de stockage par défaut.
 
 ### Nombre de conteneurs dans un stockage
-Il n'y a pas de limite au nombre de conteneur dans un stockage
+
+Il n'y a pas de limite au nombre de conteneurs dans un stockage.
 
 ### Nombre de comptes utilisateurs par projet
+
 1000
 
 ### Création de conteneur Public Cloud Archive sur SBG
-Il n'est plus possible de créer de conteneur PCA sur SBG, pas de date de retour annoncée pour le moment
+
+Il n'est plus possible de créer de conteneur PCA sur SBG. Aucune date de retour n'a été annoncée pour le moment.
 
 ### Keystone API version
-La version actuelle de keystone est la 3 la v2 étant obsolète dépuis plusieures années : http://travaux.ovh.net/?do=details&id=42179
+
+La version actuelle de keystone est la 3, la v2 étant obsolète depuis plusieures années : http://travaux.ovh.net/?do=details&id=42179
 
 ## Aller plus loin
 
