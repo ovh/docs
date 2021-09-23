@@ -17,7 +17,7 @@ Ce guide a pour objectif de vous présenter les principales capacités et limita
 
 > [!primary]
 >
-> Vous pouvez consulter une partie des ces informations directement depuis un navigateur en vous rendant sur : `https://storage.<region>.cloud.ovh.net/info`, ou si vous utilisez python-swiftclient via la commande : `swift capabilities`
+> Vous pouvez consulter une partie des ces informations directement depuis un navigateur en vous rendant sur : `https://storage.<region>.cloud.ovh.net/info`, ou, si vous utilisez python-swiftclient, via la commande : `swift capabilities`
 >
 
 ### container_listing_limit = 10000
@@ -265,7 +265,7 @@ Il n'est plus possible de créer de conteneur PCA sur SBG. Aucune date de retour
 
 ### Keystone API version
 
-La version actuelle de keystone est la 3, la v2 étant obsolète depuis plusieures années : http://travaux.ovh.net/?do=details&id=42179
+La version actuelle de keystone est la 3, la v2 étant obsolète depuis plusieures années : <http://travaux.ovh.net/?do=details&id=42179>
 
 ## Aller plus loin
 
