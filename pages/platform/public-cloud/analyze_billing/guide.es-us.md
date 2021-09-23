@@ -106,13 +106,13 @@ Es posible consultar el precio de las instancias cloud (o servidores cloud) en e
 
 Cada modelo de instancias está disponible con facturación mensual o por horas.
 
-> [!warning]
+> [!alert]
 >
 > La facturación de una instancia se detiene cuando esta se elimina
-> de forma permanente. Si la instancia tiene un estado como "detenido" o "suspendido", el contador de facturación continúa
-> para funcionar, ya que la instancia no se ha eliminado.
-> Con los dos métodos de facturación, el servicio se factura en función del tiempo durante el que se utilice.
->
+> de forma definitiva. Los estados «detenida», «en pausa» o «interrumpida», entre otros,
+> no detendrán la facturación, que seguirá activa hasta que la instancia se elimine definitivamente.
+> Independientemente del tipo de facturación elegido, cualquier unidad de tiempo comenzada deberá abonarse completa.
+> 
 
 #### Precio por hora
 
