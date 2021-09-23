@@ -247,7 +247,7 @@ Il n'y a pas de limite au nombre de conteneur dans un stockage
 1000
 
 ### Création de conteneur Public Cloud Archive sur SBG
-Il n'est plus possible de créer de PCA sur SBG (pas de date de définie pour le moment mais dans tous les cas pas avant début 2022)
+Il n'est plus possible de créer de conteneur PCA sur SBG, pas de date de retour annoncée pour le moment
 
 ### Keystone API version
 La version actuelle de keystone est la 3 la v2 étant obsolète dépuis plusieures années : http://travaux.ovh.net/?do=details&id=42179
