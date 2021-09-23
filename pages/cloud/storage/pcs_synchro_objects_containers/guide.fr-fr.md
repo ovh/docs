@@ -1,46 +1,46 @@
 ---
 title: Synchroniser des conteneurs d’objets
 slug: pcs/sync-container
-excerpt: Retrouvez ici comment synchroniser deux conteneurs entre eux.
+excerpt: Retrouvez ici comment synchroniser deux conteneurs entre eux
 section: Object Storage
 ---
 
-**Dernière mise à jour le 22/09/2021**
+**Dernière mise à jour le 23/09/2021**
 
 ## Objectif
+
 Si vous souhaitez déplacer vos objets d'un data center à un autre, ou même d'un projet à un autre, la synchronisation d'objets entre conteneurs est la meilleure solution afin d'éviter une coupure de service lors de votre migration. Ce guide vous explique comment mettre en place cette solution.
 
-
 ## Prérequis
-- [Préparez l'environnement pour utiliser l'API OpenStack](https://www.ovh.com/fr/g1851.preparer_lenvironnement_pour_utiliser_lapi_openstack){.external} avec le client swift
-- [Chargez les variables d'environnement OpenStack](https://www.ovh.com/fr/g1852.charger_les_variables_denvironnement_openstack){.external}
-- 2 conteneurs d'objets dans 2 data-centres différents
+
+- [Préparer l'environnement pour utiliser l'API OpenStack](https://www.ovh.com/fr/g1851.preparer_lenvironnement_pour_utiliser_lapi_openstack){.external} avec le client swift.
+- [Charger les variables d'environnement OpenStack](https://www.ovh.com/fr/g1852.charger_les_variables_denvironnement_openstack){.external}.
+- 2 conteneurs d'objets dans 2 data-centres différents.
 
 ## En pratique
 
 > [!warning]
-> 
-> Si vos conteneurs contiennent des Large Objects (objet supérieur à 5Gb), il faut que vos conteneurs aient le même nom
-> 
+>
+> Si vos conteneurs contiennent des Large Objects (objet supérieur à 5Gb), il faut que vos conteneurs aient le même nom.
+>
 
 ### Configuration de la synchronisation
 
-#### Creation de la cle de synchronisation
+#### Création de la clé de synchronisation
+
 Afin que les conteneurs puissent s'identifier, il faudra créer une clé puis la configurer sur chacun des conteneurs d'objets :
 
 - Créer la clé :
-
 
 ```bash
 root@serveur-1:~$ sharedKey=$(openssl rand -base64 32)
 ```
 
-
 #### Configuration du conteneur destinataire
-Dans un premier temps, il faut configurer la clé sur le conteneur qui recevra les données. Dans notre cas, celui-ci se trouve a BHS.
+
+Dans un premier temps, il faut configurer la clé sur le conteneur qui recevra les données. Dans notre cas, celui-ci se trouve à BHS.
 
 - Vérifier la région chargée dans les variables d'environnement :
-
 
 ```bash
 root@serveur-1:~$ env | grep OS_REGION
@@ -49,12 +49,9 @@ OS_REGION_NAME=BHS1
 
 - Configurer la clé sur le conteneur destinataire :
 
-
 ```bash
 root@serveur-1:~$ swift post --sync-key "$sharedKey" containerBHS
 ```
-
-
 
 Il est possible de vérifier que celle-ci a bien été configurée grâce à la commande suivante :
 
@@ -79,15 +76,14 @@ Meta Access-Control-Allow-Origin: https://www.ovh.com
 
 - Récupérer l'adresse du conteneur destinataire pour ensuite la configurer sur le conteneur source :
 
-
 ```bash
 root@serveur-1:~$ destContainer=$(swift --debug stat containerBHS 2>&1 | grep 'curl -i.*storage' | awk '{ print $4 }')
 ```
 
 
 #### Configuration du conteneur source
-- Changer de région dans les variables d'environnement :
 
+- Changer de région dans les variables d'environnement :
 
 ```bash
 root@serveur-1:~$ export OS_REGION_NAME=GRA1
@@ -95,19 +91,15 @@ root@serveur-1:~$ export OS_REGION_NAME=GRA1
 
 - Configurer la clé sur le conteneur source :
 
-
 ```bash
 root@serveur-1:~$ swift post --sync-key "$sharedKey" containerGRA
 ```
 
 - Configurer le destinataire sur le conteneur source :
 
-
 ```bash
 root@serveur-1:~$ swift post --sync-to "//OVH_PUBLIC_CLOUD/{zone}/AUTH_account/containerDest" containerGRA
 ```
-
-
 
 Comme précédemment, il est possible de vérifier que celle-ci a bien été configurée grâce à la commande suivante :
 
@@ -129,12 +121,11 @@ X-Storage-Policy: Policy-0
     Content-Type: text/plain; charset=utf-8
 ```
 
-
 #### Verification de la synchronisation
-Aprés quelques instants (en fonction du nombre et de la taille des fichiers à envoyer), il est possible de vérifier que la synchronisation s’est bien déroulée simplement en listant les fichiers dans chacun des conteneurs.
+
+Après quelques instants (en fonction du nombre et de la taille des fichiers à envoyer), il est possible de vérifier que la synchronisation s’est bien déroulée, en listant les fichiers dans chacun des conteneurs.
 
 - Lister les fichiers présents sur le conteneur source :
-
 
 ```bash
 root@serveur-1:~$ swift list containerGRA
@@ -145,7 +136,6 @@ test3.txt
 
 - Lister les fichiers présents sur le conteneur destinataire :
 
-
 ```bash
 root@serveur-1:~$ swift list containerBHS
 test1.txt
@@ -153,9 +143,11 @@ test2.txt
 test3.txt
 ```
 
-
-
 > [!success]
 >
 > Ce guide est aussi utilisable pour une migration d'objets de RunAbove vers Public Cloud.
-> 
+>
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
