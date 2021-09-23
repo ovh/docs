@@ -1,61 +1,72 @@
 ---
-title: Ajouter un alias sur un compte Exchange
+title: Ajouter un alias sur son compte e-mail
 slug: exchange-ajouter-un-alias-sur-un-e-mail-depuis-le-manager
 legacy_guide_number: 1252
-excerpt: Retrouvez ici la procedure pour ajouter un alias sur un e-mail Exchange depuis le manager
+excerpt: Découvrez comment ajouter un alias sur une adresse e-mail depuis votre espace client OVHcloud
 section: Fonctionnalités des comptes Exchange
 order: 1
 ---
 
-Voici comment ajouter un alias sur un e-mail avec l'offre Exchange depuis le [Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}. Vous devez vous munir de vos identifiants OVH afin de réaliser la manipulation.
+**Dernière mise à jour le 20/09/2021**
 
-Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides.
+## Objectif
 
+Créer un alias pour votre adresse e-mail vous permet de communiquer une adresse « masque » à vos contacts, sans avoir à donner votre adresse email personnelle à l'expéditeur. Une adresse e-mail peut avoir plusieurs alias.
 
-## Mise en place des alias sur l'offre Exchange.
+![emails](images/email-alias01.png){.thumbnail}
 
-### Ajouter un alias &#58; Partie 1
-Vous devez réaliser la manipulation depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}.
+Par exemple, votre adresse e-mail est **john.smith@mydomain.ovh** et votre alias **anonymous@mydomain.ovh**. Vous pouvez alors communiquer à vos contacts l'adresse **anonymous@mydomain.ovh** et recevoir vos e-mails sur **john.smith@mydomain.ovh** sans que l'expéditeur n'ait connaissance de **john.smith@mydomain.ovh**.
 
-Une fois connecté, sélectionnez votre service Exchange.
+**Découvrez comment ajouter un alias sur une adresse e-mail depuis votre espace client OVHcloud**
 
-Dans la rubrique "Compte e-mail", cliquez sur la roue crantée à droite du compte puis "Configurer les Alias"
+## Prérequis
 
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Disposer d'une solution e-mail OVHcloud qui doit avoir été configurée au préalable (**MX Plan** (Nouvelle version), proposée parmi nos [offres d’hébergement web](https://www.ovh.com/fr/hebergement-web/) ou commandée séparément comme solution autonome, [**Hosted Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/)).
 
-![emails](images/1047.png){.thumbnail}
+## En pratique
 
+### Créer un alias
 
-### Ajouter un alias &#58; Partie 2
-Une nouvelle interface apparaît. Il vous est possible d'ajouter un alias ou de le supprimer. Il est aussi possible de vérifier les alias présents sur le compte e-mail.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web Cloud`. Choisissez ensuite le menu en fonction de votre offre e-mail :
 
+- **Exchange** : dans `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme concernée. Cliquez sur l'onglet `Comptes e-mail`{.action}.
 
-![emails](images/1048.png){.thumbnail}
+- **E-mail Pro** : dans `E-mail Pro`{.action} dans la barre de services à gauche, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
 
+- **Emails** (MXplan): dans `Emails`{.action} dans la barre de services à gauche, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
 
-### Ajouter un alias &#58; Partie 3
-Lors de l'ajout d'un alias, on vous demande de choisir le login de l'alias et le domaine associé.
+Dans le tableau qui s'affiche, vous trouverez une colonne `Alias`.
 
-Il suffit de valider la seconde étape en cliquant sur `Valider`{.action}.
+![emails](images/email-alias012.png){.thumbnail}
 
-Un message apparaît ensuite, précisant que l'alias va être ajouté.
+> [!warning]
+>
+> Si vous avez une offre e-mail de type MXplan et que la colonne Alias n'apparaît pas, vous êtes sur la version historique de l'offre. Dans ce cas, les alias sont créés sous forme de redirections. Consultez pour cela notre guide « [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#version-historique-de-loffre-mx-plan) ».
+>
 
+Pour ajouter un alias à votre compte e-mail :
 
-![emails](images/1049.png){.thumbnail}
+- Cliquez sur le bouton `...`{.action} puis sur `Configurer les alias`{.action} (ou `Gérer les alias`{.action}).
 
+![emails](images/email-alias02.png){.thumbnail}
 
-### Supprimer un alias.
-Il vous est possible de supprimer un alias via un clic sur la corbeille à côté de celui-ci.
+- Cliquez sur `Ajouter un alias`{.action}, puis saisissez l'adresse que vous avez choisie pour votre alias et validez votre choix.
 
-Vous devrez ensuite valider la demande en confirmant via un clic sur le bouton `Supprimer`{.action}.
+![emails](images/email-alias03.png){.thumbnail}
 
+### Suprimer un alias
 
-![emails](images/1050.png){.thumbnail}
+Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite de l'adresse e-mail concernée, puis sur `Configurer les alias`{.action} ( ou `Gérer les alias`{.action}).
 
+Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le menu de gestion des alias. Enfin, cliquez sur `Supprimer l'alias`{.action}
 
-### Erreur classique
-Voici enfin un exemple d'erreur si vous ajoutez un alias qui a pour adresse un compte e-mail Exchange existant.
+![emails](images/email-alias04.png){.thumbnail}
 
-Il n'est en effet pas possible d'ajouter un alias si ce compte e-mail existe déjà.
+## Aller plus loin
 
+[Consulter son compte Exchange depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/)
 
-![emails](images/1051.png){.thumbnail}
+[Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
