@@ -27,13 +27,26 @@ section: Technical resources
  }
 </style>
 
-**Last updated September 21<sup>st</sup>, 2019.**
+**Last updated 23 September, 2021.**
 
-We list here the  Kubernetes objects you can find running in an OVHcloud Managed Kubernetes.
+We list here the Kubernetes objects you can find running in an OVHcloud Managed Kubernetes.
 
-These objects are created either at the cluster or at the node creation, and they allow the cluster operation and management.
-Please refrain from deleting or otherwise altering them.
+These objects are created either at the cluster or at the `node` creation, and they allow the cluster operation and management.
 
+> [!warning]
+> Please refrain from deleting or otherwise altering them!
+
+
+### Namespaces
+
+There are several existing `namespaces` running in your cluster:
+
+- `default`: namespace by default
+- `kube-system`: for objects created by Kubernetes
+- `kube-public`: reserved mainly for cluster usage & in case of specific oruces should be publicly available
+- `kube-node-lease`: for heartbeat Node's lease object
+
+The following listed resources are running in theses `namespaces`.
 
 ### Services
 
