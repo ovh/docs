@@ -54,7 +54,7 @@ En primer lugar, compruebe la seguridad de sus equipos informáticos:
 - Realice las actualizaciones de seguridad.
 - Compruebe también que haya instalado un antivirus, actualícela y lance una exploración completa. Si no tiene ninguno, consulte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) antes de instalar el módulo.
 - Cambie todas sus contraseñas locales, incluidas las de sus direcciones de correo, respetando las [buenas prácticas](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/#generar-una-contrasena-adecuada).
-- Cambie las contraseñas de sus servicios de OVHcloud siguiendo las instrucciones de esta [guía](../web_hosting_administrar_y_acceder_a_sus_contrasenas/).
+- Cambie las contraseñas de todos sus servicios de OVHcloud, especialmente de su [base de datos](../cambiar-contrasena-base-de-datos/) y del acceso a su [espacio de almacenamiento FTP](../cambiar-contrasena-usuario-ftp/).
 
 > [!warning]
 >

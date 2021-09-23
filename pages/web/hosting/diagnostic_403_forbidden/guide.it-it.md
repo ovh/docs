@@ -50,7 +50,7 @@ Verifica la sicurezza della tua postazione(e) informatica:
 - Effettua gli aggiornamenti di sicurezza;
 - Verifica anche che sia installato un antivirus, aggiorna e avvia una scansione completa. Se non ne hai uno, consulta un [provider specializzato](https://partner.ovhcloud.com/it/) prima di installare il tuo servizio;
 - Modificate l'insieme delle vostre password locali, in particolare quelle dei vostri indirizzi email, rispettando queste [buone pratiche](https://docs.ovh.com/it/customer/gestire-la-password/#genera-una-password-efficace);
-- Modificare le password dei servizi OVHcloud seguendo le indicazioni di questa [guida](../hosting_web_gestisci_le_tue_password/).
+- Modifica le password di tutti i tuoi servizi OVHcloud, in particolare del tuo [database](../modificare-password-database/) e dell'accesso al tuo [spazio di storage FTP](../modificare-la-password-utente-ftp/).
 
 > [!warning]
 >

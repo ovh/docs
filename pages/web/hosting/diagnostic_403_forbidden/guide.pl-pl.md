@@ -54,7 +54,7 @@ Sprawdź bezpieczeństwo Twojej poczty lub stacji:
 - Wykonaj aktualizacje dotyczące bezpieczeństwa;
 - Upewnij się również, czy zainstalowany jest antywirus, zaktualizuj go i uruchom pełny skan. Jeśli nie posiadasz domeny w OVH, przed instalacją skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) usług hostingowych;
 - Zmień wszystkie Twoje lokalne hasła, zwłaszcza te przypisane do Twoich kont e-mail, przestrzegając tych [dobrych praktyk](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/#generowanie-hasla);
-- Zmień hasła do usług OVHcloud zgodnie z instrukcjami zawartymi w tym [przewodniku](../uslugi_www_zarzadzanie_haslami_i_dostep_do_nich/).
+- Zmień hasła do wszystkich usług OVHcloud, w szczególności do [bazy danych](../zmiana-hasla-do-bazy-danych/) i do [przestrzeni dyskowej FTP](../zmiana-hasla-konto-ftp/).
 
 > [!warning]
 >

@@ -43,7 +43,7 @@ Wenn die Seite **“403 forbidden“** aufgrund einer fehlerhaften Änderung Ihr
 
 Wenn Sie mit den verfügbaren Backups den Zugang zu Ihrer Website nicht wiederherstellen können, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/).
 
-Wenn die Seite **“403 forbidden“** nach einer Änderung Ihrer Website nicht angezeigt wurde, rufen Sie bitte Ihren E-Mail-Dienst auf. Wenn Sie eine E-Mail von unseren Dienstleistungen erhalten haben, die eine Schließung Ihres Hostings aus Sicherheitsgründen [anzeigt, gehen Sie zu Schritt zwei](#step2).
+Wenn die Seite **“403 forbidden“** nach einer Änderung Ihrer Website nicht angezeigt wurde, rufen Sie bitte Ihren E-Mail-Dienst auf. Wenn Sie eine E-Mail von unseren Dienstleistungen erhalten haben, die eine Schließung Ihres Hostings aus Sicherheitsgründen anzeigt, gehen Sie zu [Schritt zwei](#step2).
 
 Wenn die Seite **“403 forbidden“** ohne Aktion Ihrerseits erschienen ist und Sie diesbezüglich keine E-Mails von unseren Dienstleistungen erhalten haben, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/).
 
