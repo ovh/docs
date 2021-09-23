@@ -17,9 +17,9 @@ Destinée aux données rarement consultées, une requête de déblocage est néc
 
 ## Prérequis
 
-- Via l'espace client OVHcloud :
+- Dégel via l'espace client OVHcloud :
     - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-- Via python-swiftclient :
+- Dégel via python-swiftclient :
     - [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/){.external} en installant python-swiftclient.
     - [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/){.external}.
 
@@ -29,15 +29,15 @@ Destinée aux données rarement consultées, une requête de déblocage est néc
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Cloud Archive`{.action} dans le menu de gauche.
 
-Il vous faudra cliquer sur le bouton `Dégeler`{.action} afin d'entamer le processus de récupération.
+Pour dégeler une archive, cliquez sur le bouton `...`{.action} à droite de celle-ci, puis sur `Dégeler`{.action} afin d'entamer le processus de récupération.
 
-![public-cloud](images/PCA-unlock-1-fr.png){.thumbnail}
+![dégel](images/unfreeze.png){.thumbnail}
 
-Une fois le processus entamé, un délai apparaîtra à la place du bouton « Dégeler ».
+Une fois le processus entamé, la date et l'heure de disponibilité de votre archive sont affichées dans la colonne `Disponibilité`.
+
+![délai avant dégel](images/unfreeze_result.png){.thumbnail}
 
 Votre fichier sera disponible au téléchargement à l'issue de ce délai. Vous pourrez alors entammer le téléchargement directement par le navigateur ou via un[client Swift/SFTP/SCP](https://docs.ovh.com/fr/storage/pca/sftp/).
-
-![public-cloud](images/PCA-unlock-2-fr.png){.thumbnail}
 
 ### Dégeler vos objets via python-swiftclient
 
