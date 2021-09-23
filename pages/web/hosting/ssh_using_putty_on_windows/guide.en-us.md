@@ -19,7 +19,6 @@ You will also need your FTP credentials
 - FTP login.
 - FTP password.
 
-
 You can find this information in your control panel. Go to the FTP section or follow
 [this guide](../log-in-to-storage-ftp-web-hosting/).
 

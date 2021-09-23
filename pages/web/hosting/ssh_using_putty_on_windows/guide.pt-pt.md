@@ -18,8 +18,8 @@ Será então necessário ter consigo os seus identificadores FTP
 - Login FTP.
 - Password FTP.
 
-
-Poderá encontrar estas informações de ligação no seu Espaço Cliente, seção FTP, ou ao seguir as instruções dadas [neste guia](https://www.ovh.com/fr/g1909.mutualise_gerer_et_acceder_a_ses_mots_de_passe).
+Encontrará estas informações no Painel de configuração. Aceda à secção FTP ou siga as instruções abaixo
+[este guia](../aceder-espaco-de-armazenamento-ftp-alojamento-web/).
 
 
 ## Inicio do Putty
