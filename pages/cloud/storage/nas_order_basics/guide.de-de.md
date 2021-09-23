@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit einem HA-NAS
 slug: nas/erste-schritte
-excerpt: Hier erfahren Sie, wie Sie einen HA-NAS über Ihr OVHcloud Kundencenter verwalten
+excerpt: Erfahren Sie hier, wie Sie ein High Availability NAS über Ihr OVHcloud Kundencenter verwalten
 section: NAS
 order: 01
 ---
@@ -10,21 +10,21 @@ order: 01
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Stand 16.09.2021**
+**Letzte Aktualisierung am 16.09.2021**
 
 ## Ziel
 
-Das NAS (Network Attached Storage) ist ein Dateiserver, der mit einem Netzwerk verbunden ist und dessen Hauptfunktion darin besteht, Daten in einem zentralisierten Volumen für heterogene Netzwerkkunden zu speichern.
+Ein NAS (Network Attached Storage) ist ein Dateiserver, der mit einem Netzwerk verbunden ist und dessen Hauptfunktion darin besteht, Daten auf einem zentralisierten Volume für heterogene Netzwerk-Clients zu speichern.
 
 ## Voraussetzungen
 
-- Sie verfügen über eine IP-Adresse, die an einen OVHcloud Dienst angehängt ist (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud Instanz, usw.)
-- Sie verfügen über einen [HA-NAS](https://www.ovh.de/nas/)
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angemeldet.
+- Sie verfügen über eine IP-Adresse, die an einen OVHcloud Dienst angebunden ist (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud Instanz, etc.).
+- Sie verfügen über einen [HA-NAS](https://www.ovh.de/nas/) Dienst.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
-Die Verwaltung Ihres HA-NAS erfolgt über das OVHcloud [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}.
+Die Verwaltung Ihres HA-NAS erfolgt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 Klicken Sie nach dem Login auf `Bare Metal Cloud`{.action} und dann im linken Menü auf `NAS`{.action} und CDN. Klicken Sie auf Ihre Dienstleistung, um Zugriff auf das Verwaltungsmenü zu erhalten.
 
@@ -120,4 +120,4 @@ Um eine Partition zu löschen, klicken Sie auf den `...`{.action} Button rechts 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
