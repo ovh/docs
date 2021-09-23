@@ -9,7 +9,7 @@ section: 'Utilização avançada'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 02/06/2020**
+**Última atualização: 16/09/2021**
 
 ## Objetivo
 
@@ -48,7 +48,7 @@ Depois de receber o e-mail com o link único, clique neste link para efetuar a c
 
 > [!primary]
 >
-> Se a ligação já expirou, reinstale o VPS com cPanel.
+> Se a ligação já expirou, ligue-se ao seu VPS via SSH usando o utilizador CentOS e execute o comando "whmlogin" para gerar uma nova ligação.
 >
 
 O URL acima mencionado permite-lhe ligar-se sem informações de identificação (utilizador e palavra-passe) à sua interface WHM.
