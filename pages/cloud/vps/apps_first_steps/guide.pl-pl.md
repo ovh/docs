@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 8
 ---
 
-**Ostatnia aktualizacja z dnia 07/09/2021**
+**Ostatnia aktualizacja z dnia 16/09/2021**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -37,7 +37,7 @@ Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalo
 
 > [!primary]
 >
-> Jeśli link wygasł, zaloguj się przez SSH do serwera za pomocą użytkownika CentOS i wprowadź komendę "whmlogin", aby wygenerować nową instancję lub ponownie zainstaluj instancję.
+> Jeśli link już wygasł, proszę połączyć się z VPS przez SSH używając użytkownika CentOS i wykonać polecenie "whmlogin", aby wygenerować nowy link.
 >
 
 <ol start="3">

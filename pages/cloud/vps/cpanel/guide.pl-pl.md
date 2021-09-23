@@ -9,7 +9,7 @@ section: 'Poziom zaawansowany'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 02-06-2020**
+**Ostatnia aktualizacja z dnia 16-09-2021**
 
 ## Wprowadzenie
 
@@ -48,7 +48,7 @@ Po otrzymaniu wiadomości e-mail z unikalnym linkiem kliknij ten link, aby przep
 
 > [!primary]
 >
-> Jeśli link wygasł, zainstaluj ponownie serwer VPS za pomocą cPanel.
+> Jeśli link już wygasł, proszę połączyć się z VPS przez SSH używając użytkownika CentOS i wykonać polecenie "whmlogin", aby wygenerować nowy link.
 >
 
 Podany wyżej URL umożliwia zalogowanie się do interfejsu WHM bez danych identyfikacyjnych (użytkownika i hasła).

@@ -9,7 +9,7 @@ section: 'Uso avanzado'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 02/06/2020**
+**Última actualización: 16/09/2021**
 
 ## Objetivo
 
@@ -48,7 +48,7 @@ Una vez que haya recibido el mensaje de correo electrónico con el único enlace
 
 > [!primary]
 >
-> Si el enlace ya ha expirado, reinstale el VPS con cPanel.
+> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando "whmlogin" para generar un nuevo enlace.
 >
 
 La URL anteriormente citada le permite conectarse a su interfaz WHM sin claves de usuario y contraseña.

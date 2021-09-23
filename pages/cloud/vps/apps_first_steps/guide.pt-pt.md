@@ -6,7 +6,7 @@ section: 'Introdução'
 order: 8
 ---
 
-**Última atualização: 07/09/2021**
+**Última atualização: 16/09/2021**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -37,7 +37,7 @@ Encontrará abaixo as primeiras etapas relativas à implementação da imagem pr
 
 > [!primary]
 >
-> Se o link já expirou, ligue-se ao servidor em SSH com a ajuda do utilizador CentOS e execute o comando "whmlogin" para gerar um novo ou reinstalar a instância.
+> Se a ligação já expirou, ligue-se ao seu VPS via SSH usando o utilizador CentOS e execute o comando "whmlogin" para gerar uma nova ligação.
 >
 
 <ol start="3">
