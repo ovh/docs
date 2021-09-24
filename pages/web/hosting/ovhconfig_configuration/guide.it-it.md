@@ -2,7 +2,7 @@
 title: 'Configurare il file .ovhconfig di un hosting Web'
 slug: configurare-file-ovhconfig
 excerpt: 'Come recuperare e modificare il file .ovhconfig di un hosting Web OVH'
-section: 'Configurazione dell’hosting'
+section: Configurazione dell’hosting
 order: 4
 ---
 
