@@ -23,17 +23,17 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Disposer d'une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être en possession des identifiants permettant de se connecter à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/).
 
 ## En pratique
 
 > [!primary]
 >
-> La solution proposée ici n'est qu'une possibilité technique parmi d'autres pour mettre en place un espace administrateur sur votre site. Vous pouvez également utiliser la fonctionnalité [Module en 1 clic](../modules-en-1-clic/) proposée par [OVHcloud](https://www.ovhcloud.com/fr/).
+> La solution proposée ici n'est qu'une possibilité technique parmi d'autres pour mettre en place un espace administrateur sur votre site. Vous pouvez également utiliser la fonctionnalité [Module en 1 clic](../modules-en-1-clic/) proposée par [OVHcloud](https://www.ovhcloud.com/fr-ca/).
 >
-> Pour toute demande sur la création ou la programmation de votre site, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ces sujets.
+> Pour toute demande sur la création ou la programmation de votre site, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ces sujets.
 >
 
 ### Etape 1 : créer l'arborescence
@@ -67,7 +67,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Si vous disposez d'un hébergement [Pro](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml), connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécutez la commande suivante :
+Si vous disposez d'un hébergement [Pro](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-pro.xml) ou [Performance](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-performance.xml), connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécutez la commande suivante :
 
 ```bash
 php crypt.php
@@ -75,9 +75,9 @@ php crypt.php
 
 > [!warning]
 >
-> Pour des raisons de sécurité, l'utilisation du SSH est recommandée. Toutefois, si vous disposez d'une offre [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) ou [Perso](https://www.ovh.com/fr/hebergement-web/hebergement-perso.xml) et que vous ne souhaitez pas passer sur une offre [Pro](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml), vous pouvez aussi exécuter le fichier « crypter.php » par le biais de votre navigateur Web (En allant sur une URL du type https://votre-domaine.ovh/crypter.php).
+> Pour des raisons de sécurité, l'utilisation du SSH est recommandée. Toutefois, si vous disposez d'une offre [Kimsufi Web](https://www.kimsufi.com/ca/fr/) ou [Perso](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-perso.xml) et que vous ne souhaitez pas passer sur une offre [Pro](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-pro.xml) ou [Performance](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-performance.xml), vous pouvez aussi exécuter le fichier « crypter.php » par le biais de votre navigateur Web (En allant sur une URL du type https://votre-domaine.ovh/crypter.php).
 >
-> Pour toute question complémentaire sur la méthode à utiliser pour chiffrer vos mots de passe, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Pour toute question complémentaire sur la méthode à utiliser pour chiffrer vos mots de passe, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 Récupérez les mots de passe chiffrés (Ne copiez pas le « &#60;br /> » si vous exécutez la commande « php crypter.php » en SSH) :
@@ -146,6 +146,6 @@ Require valid-user
 
 [Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
