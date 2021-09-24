@@ -2,7 +2,7 @@
 title: Accedere al database del tuo database server
 slug: connessione-database-server-bdd
 excerpt: Come connettersi al database
-section: 'SQL Privato'
+section: SQL Privato
 order: 3
 ---
 

@@ -4,6 +4,7 @@ excerpt: Come fai a installare manualmente Prestashop?
 id: '1979'
 slug: cms_installa_manualmente_prestashop
 legacy_guide_number: g1979
+section: CMS
 ---
 
 

@@ -1,9 +1,9 @@
 ---
-title: Les codes de reponse d’un serveur HTTP
+title: "Les codes de reponse d’un serveur HTTP"
 legacy_guide_number: 1991
 slug: mutualise-les-codes-de-reponse-dun-serveur-http
 excerpt: Ce guide a pour objectif de vous lister les codes de retour d’un serveur HTTP et pour certains d’entre eux, de vous proposer des solutions pour ne plus les avoir.
-section: "Configuration de l’hébergement"
+section: "Configuration de l'hébergement"
 ---
 
 

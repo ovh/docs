@@ -4,6 +4,7 @@ excerpt: Gestisci il tuo database
 id: '1943'
 slug: gestisci_un_database_dal_tuo_hosting_condiviso
 legacy_guide_number: g1943
+section: Database
 hidden: true
 ---
 
