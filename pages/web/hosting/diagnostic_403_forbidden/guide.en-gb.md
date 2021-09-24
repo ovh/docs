@@ -38,7 +38,7 @@ If the page "**403 forbidden**" appeared following an incorrect modification of 
 
 If the backups available do not allow you to restore access to your site, contact a [specialised service provider](https://partner.ovhcloud.com/en-gb/directory/).
 
-If the page "**403 forbidden**" did not appear after a modification on your website, check your inbox for an email notifying you that your hosting has been closed due to security reasons. If you have received such a message from our system, skip to [step 2](#step2).
+If the page "**403 forbidden**" did appear without a modification on your website, check your inbox for an email notifying you that your hosting has been closed due to security reasons. If you have received such a message from our system, skip to [step 2](#step2).
 
 If the page "**403 forbidden**" appeared without any action on your part and you have not received any emails from our hosting services on this subject, contact a [specialised service provider](https://partner.ovhcloud.com/en-gb/directory/).
 
@@ -64,13 +64,13 @@ First, verify the security of your devices and services:
 
 First, take note of the date on which the OVHcloud email regarding the deactivation of your hosting and the list of folder(s) containing the detected illegitimate files.
 
-#### Case no. 1: your Web Hosting plan has been disabled for less than two weeks
+#### Case no. 1: Your Web Hosting plan has been disabled for less than two weeks
 
 If your Web Hosting plan was closed less than two weeks ago and only contains one website, restore your storage space following the instructions in this [guide](../restoring-ftp-filezilla-control-panel/#restore-the-storage-space-via-the-ovh-control-panel).
 
 If your Web Hosting plan was closed less than two weeks ago and contains multiple websites, only restore the folder(s) containing the suspicious files as described in this [guide](../restoring-ftp-filezilla-control-panel/#restore-a-file-using-a-software-program-or-interface).
 
-#### Case no. 2:: your Web Hosting plan has been disabled for more than two weeks
+#### Case no. 2: Your Web Hosting plan has been disabled for more than two weeks
 
 If your Web Hosting plan was closed more than two weeks ago, contact a [specialised service provider](https://partner.ovhcloud.com/en-gb/directory/). 
 
