@@ -27,9 +27,9 @@ Il peut aussi arriver que, suite à une détection d'anomalies, nos robots de s�
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/) OVHcloud.
+- Disposer d'une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/) OVHcloud.
 - Disposer des [identifiants de connexion](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter) à l'espace de stockage de votre hébergement.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## En pratique
 
@@ -37,28 +37,28 @@ Il peut aussi arriver que, suite à une détection d'anomalies, nos robots de s�
 
 Si la page **« 403 forbidden »** est apparue suite à une modification erronée de votre site, [restaurez tout ou partie de l'espace de stockage de votre hébergement](../restauration-ftp-filezilla-espace-client/) à une date antérieure.
 
-Si les sauvegardes disponibles ne vous permettent pas de rétablir l'accès à votre site, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
+Si les sauvegardes disponibles ne vous permettent pas de rétablir l'accès à votre site, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/).
 
 Si la page **« 403 forbidden »** n'est pas apparue suite à une modification de votre site, consultez votre messagerie. Si vous avez reçu un e-mail de nos services indiquant une fermeture de votre hébergement pour des raisons de sécurité, passez à [l'étape 2](#etape2).
 
-Si la page **« 403 forbidden »** est apparue sans action de votre part et que vous n'avez pas reçu de mails de nos services à ce sujet, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
+Si la page **« 403 forbidden »** est apparue sans action de votre part et que vous n'avez pas reçu de mails de nos services à ce sujet, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/).
 
 ### Étape 2 : sécuriser vos solutions <a name="etape2"></a>
 
 Vérifiez tout d'abord la sécurité de votre/vos poste(s) informatique(s) :
 
 - Effectuez les mises à jour de sécurité ;
-- Vérifiez également qu'un antivirus est installé, mettez-le à jour et lancez un scan complet. Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) avant toute installation ;
-- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mail, en respectant ces [bonnes pratiques](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe) ;
+- Vérifiez également qu'un antivirus est installé, mettez-le à jour et lancez un scan complet. Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) avant toute installation ;
+- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mail, en respectant ces [bonnes pratiques](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe) ;
 - Modifiez les mots de passe de l'ensemble de vos services OVHcloud, notamment de votre [base de données](../modifier-mot-de-passe-base-de-donnees/) et de l'accès à votre [espace de stockage FTP](../modifier-mot-de-passe-utilisateur-ftp/).
 
 > [!warning]
 >
-> Avant de changer le mot de passe de la base de données de votre site depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), mettez à jour le fichier de configuration de votre site afin qu'il se connecte à la base de données avec le nouveau mot de passe.
+> Avant de changer le mot de passe de la base de données de votre site depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), mettez à jour le fichier de configuration de votre site afin qu'il se connecte à la base de données avec le nouveau mot de passe.
 >
 > Dans le cas contraire, la modification du mot de passe de votre base de données entraînera une coupure du site ou des services qui l'utilisent.
 >
-> En cas de doute sur les manipulations à réaliser, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+> En cas de doute sur les manipulations à réaliser, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 >
 
 ### Étape 3 : intervenir sur votre hébergement
@@ -73,7 +73,7 @@ Si votre hébergement a été fermé il y a moins de deux semaines et qu'il cont
 
 #### Cas n°2 : votre hébergement a été désactivé il y a plus de deux semaines
 
-Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) afin d'effectuer un audit de sécurité de vos solutions. 
+Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) afin d'effectuer un audit de sécurité de vos solutions. 
 
 > [!warning]
 >
@@ -105,7 +105,7 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 #### Réactiver votre hébergement avec le FTP Explorer « net2ftp »
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez vous dans la partie `Web Cloud`{.action} puis `Hébergements`{.action} et cliquez sur l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
+Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez vous dans la partie `Web Cloud`{.action} puis `Hébergements`{.action} et cliquez sur l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
 
 Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](../connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Cliquez sur le bouton `Avancé`{.action} puis sur le bouton `Go`{.action} à côté de « Envoyer des commandes FTP arbitraires au serveur FTP ».
 
@@ -125,8 +125,8 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 [Changer la version de PHP de son hébergement web](../configurer-le-php-sur-son-hebergement-web-mutu-2014/)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
