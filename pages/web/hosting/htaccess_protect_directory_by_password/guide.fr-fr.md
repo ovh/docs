@@ -38,7 +38,7 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 
 ### Etape 1 : créer l'arborescence
 
-Connectez-vous à [l'espace de stockage](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Ouvrez le [« dossier racine »](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud) de votre site.<br>
+Connectez-vous à [l'espace de stockage](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Ouvrez le [« dossier racine »](../configurare-un-multisito-su-un-hosting-web/#step-21-aggiungere-un-dominio-registrato-in-ovhcloud) de votre site.<br>
 Créez un fichier « crypter.php ».
 
 ![root_folder](images/root_folder.png){.thumbnail}

@@ -35,14 +35,14 @@ A volte potrebbe essere necessario proteggere l'accesso a una parte del tuo sito
 
 > [!primary]
 >
-> La soluzione proposta è solo una delle possibilità tecniche per creare uno spazio amministratore sul tuo sito. Inoltre, è possibile utilizzare la funzionalità [CMS in 1 click](../modules-en-1-clic/) proposta da [OVHcloud](https://www.ovh.com/fr/).
+> La soluzione proposta è solo una delle possibilità tecniche per creare uno spazio amministratore sul tuo sito. Inoltre, è possibile utilizzare la funzionalità [CMS in 1 click](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/) proposta da [OVHcloud](https://www.ovhcloud.com/it/).
 >
-> Per qualsiasi richiesta relativa alla creazione o alla programmazione del tuo sito, contatta la nostra [Community di utenti](https://community.ovh.com) o i [partner OVHcloud](https://partner.ovhcloud.com/fr/). OVH non sarà infatti in grado di fornirti assistenza su questi argomenti.
+> Per qualsiasi richiesta relativa alla creazione o alla programmazione del tuo sito, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/). OVH non sarà infatti in grado di fornirti assistenza su questi argomenti.
 >
 
 ### Step 1: creare l'arborescenza
 
-Accedi a >
+Accedi allo [spazio di storage](../accedere-spazio-storage-ftp-hosting-web/) del tuo hosting. Apri la ["Cartella di root"](../configurare-un-multisito-su-un-hosting-web/#step-21-aggiungere-un-dominio-registrato-in-ovhcloud) del tuo sito.
 Crea un file "crypter.php".
 
 ![root_folder](images/root_folder.png){.thumbnail}
@@ -64,14 +64,14 @@ Inserisci nel file "crypter.php" creato precedentemente le seguenti righe (da ri
 
 ```php
 <?php
-$string_1 = crypt('motdepasse_en_clair_1');
-$string_2 = crypt('motdepasse_en_clair_2');
-$string_3 = crypt('motdepasse_en_clair_3');
+$string_1 = crypt('password_non_cifrata_1');
+$string_2 = crypt('password_non_cifrata_2');
+$string_3 = crypt('password_non_cifrata_3');
 echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Se disponi di un hosting [Pro](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) o [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml), accedi in [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) al tuo hosting. Esegui questo comando:
+Se disponi di un hosting [Pro](https://www.ovh.it/hosting-web/hosting-web-pro.xml) o [Performance](https://www.ovh.it/hosting-web/hosting-web-performance.xml), accedi in [SSH](../hosting_condiviso_il_protocollo_ssh/) al tuo hosting. Esegui questo comando:
 
 ```bash
 php crypt.php
@@ -79,17 +79,17 @@ php crypt.php
 
 > [!warning]
 >
-> Per motivi di sicurezza, si raccomanda l'utilizzo di SSH. Tuttavia, se disponi di un'offerta [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) o [Personale](https://www.ovh.com/fr/hebergement-web/hebergement-perso.xml) e non desideri passare a un'offerta [Pro](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) o [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml), puoi anche eseguire il file "crypter.php" tramite il tuo browser Web (accedendo a un URL di tipo https://votre-domaine.ovh/crypter.php).
+> Per motivi di sicurezza, si raccomanda l'utilizzo di SSH. Tuttavia, se disponi di un'offerta [Kimsufi Web](https://www.kimsufi.com/it/) o [Personale](https://www.ovh.it/hosting-web/hosting-web-personale.xml) e non desideri passare a un'offerta [Pro](https://www.ovh.it/hosting-web/hosting-web-pro.xml) o [Performance](https://www.ovh.it/hosting-web/hosting-web-performance.xml), puoi anche eseguire il file "crypter.php" tramite il tuo browser Web (accedendo a un URL di tipo https://votre-domaine.ovh/crypter.php).
 >
-> Per maggiori informazioni sul metodo da utilizzare per cifrare la password, contatta la nostra [Community di utenti](https://community.ovh.com) o i [partner OVHcloud](https://partner.ovhcloud.com/fr/). Non saremo in grado di fornirti assistenza al riguardo.
+> Per maggiori informazioni sul metodo da utilizzare per cifrare la password, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/). Non saremo in grado di fornirti assistenza al riguardo.
 >
 
-Recupera le password cifrate (Non copiare "<br />" se esegui il comando "php cripter.php" in SSH):
+Recupera le password cifrate (Non copiare "&#60;br />" se esegui il comando "php cripter.php" in SSH):
 
 ```bash
-password_crittografata1
-password_crittografata2
-password_crittografata3
+password_crittografata_1
+password_crittografata_2
+password_crittografata_3
 ```
 
 ### Step 3: completare il file ".htpasswd"
@@ -99,9 +99,9 @@ Il file ".htpasswd" contiene la lista degli utenti autorizzati a connettersi all
 Inserisci in questo file per **ogni utente** una riga che indica il suo identificativo e la password cifrata:
 
 ```bash
-utente1:password_crittografata1
-utente2:password_crittografata2
-utente3:password_crittografata3
+utente1:password_crittografata_1
+utente2:password_crittografata_2
+utente3:password_crittografata_3
 ```
 
 ### Step 4: completare il file ".htaccess"
@@ -113,15 +113,15 @@ Nella directory da proteggere, crea un file ".htaccess" con questo codice:
 ```bash
 AuthName "Inserisci il tuo identificativo amministratore e la password"
 AuthType Basic
-AuthUserFile "/home/votre_login_ftp/dossier_racine/admin/.htpasswd"
+AuthUserFile "/home/il_tuo_login_ftp/Cartella_di_root/admin/.htpasswd"
 Richiedi valid-user
 ```
 
 > [!warning]
 >
-> In questo esempio, è necessario sostituire "il tuo_login_ftp" con il tuo [identificativo FTP](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter). Nella sezione `Hosting`{.action}, è disponibile nella scheda `FTP-SSH`{.action} del tuo hosting.
+> In questo esempio, è necessario sostituire "il_tuo_login_ftp" con il tuo [identificativo FTP](../accedere-spazio-storage-ftp-hosting-web/#step-1-recupera-i-dati-necessari-a-effettuare-laccesso). Nella sezione `Hosting`{.action}, è disponibile nella scheda `FTP-SSH`{.action} del tuo hosting.
 >
-> Sostituisci, se necessario, nell'esempio qui sotto "cartella_radice" con il nome della [cartella contenente i file del tuo sito](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
+> Sostituisci, se necessario, nell'esempio qui sotto ["Cartella di root"](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud) con il nome della cartella contenente i file del tuo sito].
 >
 
 #### Blocca l'accesso a uno o più file
@@ -150,6 +150,6 @@ Richiedi valid-user
 
 [Tutto sul file .htaccess](../mutualise-tout-sur-le-fichier-htaccess/)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/fr/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
