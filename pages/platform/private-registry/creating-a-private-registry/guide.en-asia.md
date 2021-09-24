@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 23 September, 2021.**
+**Last updated 24 September, 2021.**
 
 <style>
  pre {
@@ -42,25 +42,25 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 
 ## Instructions
 
-1. First, log in to the OVHcloud Public Cloud Manager.
+1. First, log in to the OVHcloud Control Panel.
 
-1. In the left menu, in section *Containers & Orchestration*, select *Managed Private Registry*.
+1. In the left menu, in section `Containers & Orchestration`{.action}, select `Managed Private Registry`{.action}.
 
     ![Create a Private Registry](images/create-a-private-registry-001.png){.thumbnail}
 
-1. Then click on *Create a private registry* button.
+1. Then click on `Create a private registry`{.action} button.
 
     ![Create a Private Registry](images/create-a-private-registry-002.png){.thumbnail}
 
-1. In the *Create a private registry*, choose a region to deploy your private registry in, and click on *Next* button.
+1. In the `Create a private registry`{.action}, choose a region to deploy your private registry in, and click on `Next`{.action} button.
 
     ![Create a Private Registry](images/create-a-private-registry-003.png){.thumbnail}
 
-1. Choose the registry name (`my-registry` in my example), and click on *Next* button.
+1. Choose the registry name (`my-registry` in my example), and click on `Next`{.action} button.
 
     ![Create a Private Registry](images/create-a-private-registry-004.png){.thumbnail}
 
-1. Choose your plan between the three available plans, and click on *Next* button.
+1. Choose your plan between the three available plans, and click on `Next`{.action} button.
 
     ![Create a Private Registry](images/create-a-private-registry-005.png){.thumbnail}
 
@@ -68,11 +68,11 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 
     ![Create a Private Registry](images/create-a-private-registry-006.png){.thumbnail}
 
-1. When status switches to *OK*. click on the right *...* button and select *Generate identification details*
+1. When status switches to `OK`{.action}. click on the right `...`{.action} button and select `Generate identification details`{.action}
 
     ![Create a Private Registry](images/create-a-private-registry-007.png){.thumbnail}
 
-1. Then confirm to generate new credentials    
+1. Then click on `Confirm`{.action} button to generate new credentials    
 
     ![Create a Private Registry](images/create-a-private-registry-008.png){.thumbnail}
 
@@ -81,7 +81,7 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
     ![Create a Private Registry](images/create-a-private-registry-009.png){.thumbnail}
 
 
-Congratulations, you have now a working OVHcloud Managed Private Registry
+Congratulations, you have now a working OVHcloud Managed Private Registry.
 
 ## Go further
 
