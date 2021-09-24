@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 2
 ---
 
-**Last updated 20<sup>th</sup> January, 2020.**
+**Last updated 24 September, 2021.**
 
 <style>
  pre {
@@ -43,22 +43,20 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 
 ## Instructions
 
-1. On your OVHcloud Public Cloud Manager, select your *Managed Private Registry* and click on the *more options* (*...*) button at the right end
+1. On your OVHcloud Control Panel, select your `Managed Private Registry`{.action}, click on the *more options* (`...`{.action}) button at the right end and click on `Harbor user interface`{.action} button:
 
-    ![Managing users and projects](images/connecting-to-the-ui-001-s.jpg){.thumbnail}
+    ![Managing users and projects](images/connecting-to-the-ui-002.png){.thumbnail}
 
-1. Select Harbor UI ([Harbor](https://goharbor.io/) is the open source engine running your OVHcloud Managed Private Registry)
 
-    ![Managing users and projects](images/connecting-to-the-ui-002-s.jpg){.thumbnail}
+1. On the login page of ([Harbor](https://goharbor.io/) UI, the open source engine running your OVHcloud Managed Private Registry, enter the credentials (user and password) of your OVHcloud Managed Private Registry:
 
-1. On the login page of Harbor UI, introduce the credentials (user and password) of your OVHcloud Managed Private Registry
-
-    ![Managing users and projects](images/connecting-to-the-ui-003-s.jpg){.thumbnail}
+    ![Managing users and projects](images/connecting-to-the-ui-003.png){.thumbnail}
 
 
 Now you can use Harbor UI to manage your private registry
 
-![Managing users and projects](images/connecting-to-the-ui-004-s.jpg){.thumbnail}
+![Managing users and projects](images/connecting-to-the-ui-004.png){.thumbnail}
+
 
 
 
