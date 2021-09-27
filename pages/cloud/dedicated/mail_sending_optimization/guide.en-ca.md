@@ -5,7 +5,7 @@ excerpt: 'Find out how to send emails and limit the risk of them being marked as
 section: Advanced
 ---
 
-**Last updated 24th September 2021**
+**Last updated 27th September 2021**
 
 ## Objective
 
@@ -71,7 +71,7 @@ When you enter your domain name in the reverse, it double checks immediately if 
 
    - it cannot start with a `-`
    - it cannot be longer than 80 characters
-   - it cannot contain capital letters
+   - It cannot contain uppercase characters
    - it must end with a `.`
 
 Example : "YourDomain.ca" in the reverse field would be **"yourdomain.ca."**
