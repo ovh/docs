@@ -41,7 +41,9 @@ Once done, click on the `Continue`{.action} button.
 
 ![confirm voucher](images/confirmvoucher.png){.thumbnail}
 
-Next, you will be prompted to **Register a payment method**, this will be requested even if a voucher is applied. This is to ensure that your service can be renewed via automatic payments. You can register a Credit card or a Paypal account. 
+Next, you will be prompted to **Register a payment method** if you do not have one already. This will be requested even if a voucher is applied. Having a valid payment method ensures that your service can be renewed via automatic payments. 
+
+You can register a Credit card or a Paypal account. 
 
 If you add a Credit card, you will be charged a **small fee** to confirm your card's validity. This will be returned once the process is completed.
 
