@@ -31,7 +31,7 @@ Par exemple : vous souhaitez que tout e-mail contenant "[SPAM]" dans le sujet so
 
 > [!warning]
 >
-> Le guide suivant s'adresse aux détenteurs de l'offre MXplan « historique ». Pour la nouvelle offre, la gestion des filtres se fait directemet via le webmail OWA (**O**utlook **W**eb **A**pplication). identifiez votre offre à l'aide du tableau ci-dessous.
+> Le guide suivant s'adresse aux détenteurs de l'offre MXplan « historique ». Pour la nouvelle offre, la gestion des filtres se fait directement via le webmail OWA (**O**utlook **W**eb **A**pplication). identifiez votre offre à l'aide du tableau ci-dessous.
 > 
 
 Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
