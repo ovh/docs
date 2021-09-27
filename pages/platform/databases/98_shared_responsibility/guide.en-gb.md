@@ -12,7 +12,6 @@ This shared model can help relieve the customer’s operational burden.
 
 # Definition RACI
 
-
 | Roles |
 | --- |
 | R: Is in charge of carrying out the process | 
@@ -22,18 +21,16 @@ This shared model can help relieve the customer’s operational burden.
 
 For your information, a **Service** is considered a Public Cloud Databases service such as a MySQL, PostgreSQL, MongoDB, Redis, Kafka, Cassandra, or M3 cluster.
 
-
 ## 1. Before subscription
 
 ### 1.1. Specify service as needed
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Learn about the capabilities and limitations of the Services detailed in OVHcloud documentation | RA | I |
+| Learn about the capabilities and limitations of the Services detailed in the OVHcloud documentation | RA | I |
 | Choose service location | RA | I |
 | Size services as needed | RA | I |
 | Choose options as needed | RA | I |
-
 
 ## 2. Service availability
 
@@ -62,7 +59,6 @@ For your information, a **Service** is considered a Public Cloud Databases servi
 | Use all virtual machines (nodes) deployed in the IaaS |  | RA |
 | Decide to add/delete resources to the existing service | RA | I |
 | Add/delete resources to the existing service | I | RA |
-
 
 #### 3.1.2. Access management
 
@@ -111,7 +107,6 @@ For your information, a **Service** is considered a Public Cloud Databases servi
 | Managing the physical security of equipment and infrastructures hosted at OVHcloud | I | RA |
 | Maintain Public Cloud Databases services and their extensions | C | RA |
 
-
 #### 3.1.7. Business continuity
 
 | **Activity** | **Customer** | **OVHcloud** |
@@ -127,7 +122,6 @@ For your information, a **Service** is considered a Public Cloud Databases servi
 | --- | --- | --- |
 | Intervening with Public Cloud Databases managed elements |  | RA |
 
-
 #### 3.2.2. Changes
 
 | **Activity** | **Customer** | **OVHcloud** |
@@ -137,7 +131,6 @@ For your information, a **Service** is considered a Public Cloud Databases servi
 | Confirm the customer's request to change the hardware or software for the Database service | A | R | 
 | Deploy patches, update and configure the information system using Public Cloud Databases | RA |  |
 | Perform preventive interventions on managed elements of the Public Cloud Databases | I | AR |
-
 
 ## 4. Reverting
 
