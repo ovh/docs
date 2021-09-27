@@ -5,7 +5,7 @@ excerpt: 'Find out how to send emails and limit the risk of them being marked as
 section: Advanced
 ---
 
-**Last updated 20th January 2017**
+**Last updated 27th September 2021**
 
 ## Objective
 
@@ -53,11 +53,28 @@ The authentication is carried out by a DKIM key that needs to be added in your D
 
 To further optimise email sending and stop your emails from being blocked, you can configure a reverse IP with your domain name.
 
-To modify your reverse IP in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, go to the `Bare Metal Cloud`{.action} section, then `IP`{.action}. Then select an IPv4 address, click the cogwheel on the right-hand side, then click `Modify the reverse`{.action}:
+To be able to properly add a reverse DNS record, you will have to first create an A record with your registrar, and pointing it to your server.
 
-![Reverse IP](images/reverse_ip_2020.png)
+Once done, you can add a PTR record (Also known as the reverse) by performing the following steps:
 
-Here, you can add your domain name as a reverse IP.
+Log into the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Bare Metal Cloud`{.action} section, then click on the `IP`{.action} section at the bottom of the column on the left side of the page. 
+
+![Reverse IP](images/reversedns.png)
+
+The **“Service”** drop-down menu allows you to filter for services or Failover IPs.
+
+Select an IPv4 address, click the on `pencil icon`{.action} underneath the `Reverse DNS`{.action} tab and enter your domain name:
+
+![Reverse IP](images/setreversedns.png)
+
+When you enter your domain name in the reverse, it double checks immediately if the A Record is referring back to the same IP. This is used in anti-spam procedures, so your A Record must be valid and propagated. There are certain rules to follow while entering the reverse:
+
+   - it cannot start with a `-`
+   - it cannot be longer than 80 characters
+   - It cannot contain uppercase characters
+   - it must end with a `.`
+
+Example : "YourDomain.ca" in the reverse field would be **"yourdomain.ca."**
 
 ### Check your information.
 
