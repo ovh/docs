@@ -90,11 +90,9 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 
 1. receive a first email alert once cluster is reaching 80% storage capacity;
 2. receive a second email alert once cluster is reaching 90% storage capacity;
-3. have is database instance moved in "read-only" mode, meaning no more wrties can be done.
-
+3. have his database instance moved in "read-only" mode, meaning no more writes can be done.
 
 ### Features
-
 
 #### Network
 
@@ -116,17 +114,15 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 
 *Enterprise* plan clusters are automatically backed up daily during their maintenance window, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days.
 
-
 #### Logs and Metrics
 
-Logs and metrics are available via Public Cloud contron panel.
-You cannot export Logs and metrics today, neither plug them to a remote tool.
+Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
+As of today, you can't export Logs and metrics, neither plug them to a remote tool.
 
 **Logs retention :** 1000 lines of logs;
 **Metrics retention :** 1 calendar year.
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
-
 
 #### Users and roles
 
@@ -144,7 +140,6 @@ In order to properly manage your MongoDB cluster, some MongoDB users are set up 
 - `backup-*@admin` are used to perform backups
 
 Furthermore, user creation from the MongoDB Shell is **not** supported: You need to use the OVHcloud API or the OVHcloud Control Panel in order to manage your clusters' users. Any user created through the mongo shell will be deleted by the automation mechanism.
-
 
 ## We want your feedback!
 
