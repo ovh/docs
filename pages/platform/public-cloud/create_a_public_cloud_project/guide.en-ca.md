@@ -6,7 +6,7 @@ section: Getting Started
 order: 1
 ---
 
-**Last updated 2021/09/22**
+**Last updated 2021/09/27**
 
 ## Objective
 
@@ -25,7 +25,7 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 ![first connection](images/firstconnection.png){.thumbnail}
 
-You will be redirected to a new page where you will be required to enter your **Project name** and agree to the **General terms of service.**
+Give your **Project name**, read and agree to the **General terms of service.**
 
 If this is your first time creating a Public Cloud project, you can add a voucher if applicable. Available vouchers can be retrieved [here](https://www.ovhcloud.com/en-ca/public-cloud/).
 
@@ -37,7 +37,7 @@ If this is your first time creating a Public Cloud project, you can add a vouche
 > If you had previously created a project in your account, you will not be able to use a voucher, even if the project was deleted a long time ago.
 > 
 
-Once done, click on `Continue`{.action}
+Once done, click on the `Continue`{.action} button.
 
 ![confirm voucher](images/confirmvoucher.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Once the process is complete, your new Public Cloud project will be available in
 ![new project created](images/newprojectcreated.png){.thumbnail}
 
 > [!warning]
-> If you receive the error message below while registering your payment method, please contact our support team by creating a ticket from your OVHcloud Control Panel.
+> If you receive the below error message while registering your payment method, please contact our support team by creating a ticket from your OVHcloud Control Panel.
 > 
 
 ![public cloud error message](images/publicclouddenymessage.png){.thumbnail}
