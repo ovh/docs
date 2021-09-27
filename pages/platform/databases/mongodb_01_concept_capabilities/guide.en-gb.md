@@ -67,7 +67,6 @@ Your choice of plan affects the number of nodes your cluster can run as well as 
 
 License cost is included inside the service plans. You cannot bring your own licenses.
 
-
 ### Hardware resources
 
 Here are the node types you can choose from:
