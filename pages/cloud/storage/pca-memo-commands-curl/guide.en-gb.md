@@ -180,7 +180,7 @@ curl "${OS_STORAGE_URL}/<container>" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN
 
 > [!primary]
 >
-> If the container contains LargeObjects, you will need to manually delete the container: `<segment_container>`
+> If the container contains LargeObjects, you will need to manually delete the container: `<container_segments>`
 >
 
 ```bash
@@ -196,7 +196,7 @@ curl "${OS_STORAGE_URL}/<container>" -X DELETE -H "X-Auth-Token: ${OS_AUTH_TOKEN
 
 > [!primary]
 >
-> If the container contains LargeObjects, you will need to manually delete the container: `<segment_container>`
+> If the container contains LargeObjects, you will need to manually delete the container: `<container_segments>`
 >
 
 
