@@ -69,10 +69,10 @@ Select an IPv4 address, click the on `pencil icon`{.action} underneath the `Reve
 
 When you enter your domain name in the reverse, it double checks immediately if the A Record is referring back to the same IP. This is used in anti-spam procedures, so your A Record must be valid and propagated. There are certain rules to follow while entering the reverse:
 
-   - it cannot start with a **"-"**
+   - it cannot start with a `-`
    - it cannot be longer than 80 characters
    - it cannot contain capital letters
-   - it must end with a **"."**
+   - it must end with a `.`
 
 Example : "YourDomain.ca" in the reverse field would be **"yourdomain.ca."**
 
