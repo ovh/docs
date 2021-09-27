@@ -30,11 +30,9 @@ order: 1
  }
 </style>
 
-
 A Docker Registry is a system that lets you store and distribute your Docker images. The best known Registry is the official [Docker Hub](https://hub.docker.com/){.external}, where you can find official public images such as [Alpine](https://hub.docker.com/_/alpine){.external}, [Golang](https://hub.docker.com/_/golang){.external} or [Debian](https://hub.docker.com/_/debian){.external}.
 
 Today, OVHcloud allows you to spawn your own authenticated Docker Registry where you can privately store your Docker images. This is the best way to use your private images with our OVHcloud Managed Kubernetes Service offer without exposing them to everyone.
-
 
 ## Objective
 
@@ -42,47 +40,46 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 
 ## Instructions
 
-1. First, log in to the OVHcloud Control Panel.
+1. First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
-1. In the left menu, in section `Containers & Orchestration`{.action}, select `Managed Private Registry`{.action}.
+1. In the left menu, in the `Containers & Orchestration`{.action} section, select `Managed Private Registry`{.action}.
 
     ![Create a Private Registry](images/create-a-private-registry-001.png){.thumbnail}
 
-1. Then click on `Create a private registry`{.action} button.
+2. Then click on `Create a private registry`{.action}.
 
     ![Create a Private Registry](images/create-a-private-registry-002.png){.thumbnail}
 
-1. In the `Create a private registry`{.action}, choose a region to deploy your private registry in, and click on `Next`{.action} button.
+3. In the following menu, choose a region to deploy your private registry in, and click on `Next`{.action}.
 
     ![Create a Private Registry](images/create-a-private-registry-003.png){.thumbnail}
 
-1. Choose the registry name (`my-registry` in my example), and click on `Next`{.action} button.
+4. Choose the registry name (`my-registry` in my example), and click on `Next`{.action}.
 
     ![Create a Private Registry](images/create-a-private-registry-004.png){.thumbnail}
 
-1. Choose your plan between the three available plans, and click on `Next`{.action} button.
+5. Choose your plan between the three available plans, and click on `Next`{.action}.
 
     ![Create a Private Registry](images/create-a-private-registry-005.png){.thumbnail}
 
-1. Your private registry is being created...
+6. Your private registry is being created...
 
     ![Create a Private Registry](images/create-a-private-registry-006.png){.thumbnail}
 
-1. When status switches to `OK`{.action}. click on the right `...`{.action} button and select `Generate identification details`{.action}
+7. When status switches to `OK`, click on the right `...`{.action} button and select `Generate identification details`{.action}.
 
     ![Create a Private Registry](images/create-a-private-registry-007.png){.thumbnail}
 
-1. Then click on `Confirm`{.action} button to generate new credentials    
+8. Then click on `Confirm`{.action} to generate new credentials.
 
     ![Create a Private Registry](images/create-a-private-registry-008.png){.thumbnail}
 
-1. Credential will be shown on the page. Please write then down, you will need them in order to use your private registry
+9. Credentials will be shown on the page. Please write then down, you will need them in order to use your private registry.
 
     ![Create a Private Registry](images/create-a-private-registry-009.png){.thumbnail}
-
 
 Congratulations, you have now a working OVHcloud Managed Private Registry.
 
 ## Go further
 
-To go further you can look at our guide on [Connecting to the UI](../connecting-to-the-ui/).
+To go further you can look at our guide on [connecting to the UI](../connecting-to-the-ui/).
