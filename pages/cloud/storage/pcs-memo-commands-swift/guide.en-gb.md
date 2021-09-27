@@ -83,10 +83,10 @@ $ swift upload --use-slo --segment-size 500M <container> <object>
 ^C Aborted
 $ swift list
 <container>
-<conteneur_segments>
+<container_segments>
 $ swift list <container>
 $
-$ swift list <conteneur_segments>
+$ swift list <container_segments>
 <object>/slo/1628738591.297565/6442450944/524288000/00000000
 <object>/slo/1628738591.297565/6442450944/524288000/00000001
 <object>/slo/1628738591.297565/6442450944/524288000/00000002
@@ -99,7 +99,7 @@ $ swift list <conteneur_segments>
 <object>/slo/1628738591.297565/6442450944/524288000/00000009
 ```
 
-> It is recommended that you delete the `<segments_container>` or at least the segments that correspond to the dropped object.
+> It is recommended that you delete the `<container_segments>` or at least the segments that correspond to the dropped object.
 
 ### Download an object
 
@@ -205,19 +205,19 @@ Object COPY failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxx
 So we need to start by moving the segments:
 
 ```bash
-for obj in $(swift list <segment_container>);do swift copy -d /<segment_destination_container> <segment_container> $obj;done
-created container <segment_destination_container>
-<segment_container>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000000 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000000
-created container <segment_destination_container>
-<segment_container>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000001 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000001
-created container <segment_destination_container>
-<segment_container>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000002 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000002
-created container <segment_destination_container>
-<segment_container>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000003 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000003
-created container <segment_destination_container>
-<segment_container>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000004 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000004
-created container <segment_destination_container>
-<segment_container>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000005 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000005
+for obj in $(swift list <container_segments>);do swift copy -d /<destination_container_segments> <container_segments> $obj;done
+created container <destination_container_segments>
+<container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000000 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000000
+created container <destination_container_segments>
+<container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000001 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000001
+created container <destination_container_segments>
+<container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000002 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000002
+created container <destination_container_segments>
+<container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000003 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000003
+created container <destination_container_segments>
+<container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000004 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000004
+created container <destination_container_segments>
+<container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000005 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000005
 ```
 
 Then retrieve the manifest, adapt it and re-upload it
@@ -281,7 +281,7 @@ We notice that for small objects, this does not change much. However, for object
 
 ```bash
 time swift upload <container> <object> --object-name <bis_object>
-<objet_bis>
+<bis_object>
 
 real	15m51,525s
 user	0m4,245s
@@ -332,19 +332,19 @@ Object COPY failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxx
 So we need to start by moving the segments:
 
 ```bash
-for obj in $(swift list <segment_container>);do swift copy -d /<segment_destination_container> <segment_container> $obj;done
-created container <segment_destination_container>
-<segment_container>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000000 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000000
-created container <segment_destination_container>
-<segment_container>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000001 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000001
-created container <segment_destination_container>
-<segment_container>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000002 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000002
-created container <segment_destination_container>
-<segment_container>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000003 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000003
-created container <segment_destination_container>
-<segment_container>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000004 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000004
-created container <segment_destination_container>
-<segment_container>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000005 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000005
+for obj in $(swift list <container_segments>);do swift copy -d /<destination_container_segments> <container_segments> $obj;done
+created container <destination_container_segments>
+<container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000000 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000000
+created container <destination_container_segments>
+<container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000001 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000001
+created container <destination_container_segments>
+<container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000002 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000002
+created container <destination_container_segments>
+<container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000003 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000003
+created container <destination_container_segments>
+<container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000004 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000004
+created container <destination_container_segments>
+<container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000005 copied to /<destination_container_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/0000000005
 ```
 
 Then retrieve the manifest, adapt it and re-upload it
