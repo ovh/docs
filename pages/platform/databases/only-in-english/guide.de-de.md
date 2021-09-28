@@ -1,5 +1,5 @@
 ---
-title: Databases (Beta)
+title: Databases
 slug: only-in-english
 excerpt: Nur auf Englisch verfügbar
 section: Erste Schritte
