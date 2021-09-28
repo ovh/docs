@@ -17,8 +17,8 @@ Le swiftclient OpenStack vous permet d’interagir avec vos conteneurs et objets
 
 ## Prérequis
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/) en installant python-swiftclient.
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/).
+- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/) en installant python-swiftclient.
+- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/charger-les-variables-denvironnement-openstack/).
 
 ## En pratique
 
@@ -191,7 +191,7 @@ swift copy -d /<conteneur_de_destination> <conteneur> <objet>
 > [!primary]
 >
 > Dans cet exemple, le LargeObject à été uploadé en mode SLO.
-> Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/fr/storage/pca/curl-commands-memo) pour l'upload du manifest.
+> Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/ca/fr/storage/pca/curl-commands-memo) pour l'upload du manifest.
 >
 
 Sur un LargeObject, la commande `swift copy` renvoie une **erreur 413** :
@@ -308,7 +308,7 @@ sys	0m0,091s
 > [!primary]
 >
 > Dans cet exemple, le LargeObject à été uploadé en mode SLO.
-> Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/fr/storage/pca/curl-commands-memo) pour l'upload du manifest.
+> Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/ca/fr/storage/pca/curl-commands-memo) pour l'upload du manifest.
 >
 
 ```bash
