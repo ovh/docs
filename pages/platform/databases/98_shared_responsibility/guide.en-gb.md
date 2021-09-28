@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases responsibility model
+title: Responsibility model
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 slug: responsibility-model
 section: General information
