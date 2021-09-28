@@ -5,7 +5,7 @@ excerpt: 'Find out how to send emails and limit the risk of them being marked as
 section: Advanced
 ---
 
-**Last updated 27th September 2021**
+**Last updated 28th September 2021**
 
 ## Objective
 
@@ -53,9 +53,11 @@ The authentication is carried out by a DKIM key that needs to be added in your D
 
 To further optimise email sending and stop your emails from being blocked, you can configure a reverse IP with your domain name.
 
-To be able to properly add a reverse DNS record, you will have to first create an A record with your registrar, and pointing it to your server.
+To be able to properly add a reverse DNS record, you will first have to create an A record in the DNS Zone of your Domain with the IP Adress of your server as a target.
 
-Once done, you can add a PTR record (Also known as the reverse) by performing the following steps:
+If your DNS Servers are managed by OVHcloud, please consult this [guide](https://docs.ovh.com/ca/en/domains/web_hosting_how_to_edit_my_dns_zone/#instructions).
+
+Once done, you can add the PTR record (also known as the reverse) by performing the following steps:
 
 Log into the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Bare Metal Cloud`{.action} section, then click on the `IP`{.action} section at the bottom of the column on the left side of the page. 
 
@@ -63,7 +65,7 @@ Log into the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanage
 
 The **“Service”** drop-down menu allows you to filter for services or Failover IPs.
 
-Select an IPv4 address, click the on `pencil icon`{.action} underneath the `Reverse DNS`{.action} tab and enter your domain name:
+Select an IPv4 address, click on `...`{.action} in the relevant row to open the context menu, and select `Modify the reverse path`{.action}:
 
 ![Reverse IP](images/setreversedns.png)
 
