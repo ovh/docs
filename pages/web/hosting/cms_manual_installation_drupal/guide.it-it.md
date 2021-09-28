@@ -4,6 +4,7 @@ excerpt: Come fai a installare manualmente Drupal?
 id: '1976'
 slug: cms_installa_manualmente_drupal
 legacy_guide_number: g1976
+section: CMS
 ---
 
 
