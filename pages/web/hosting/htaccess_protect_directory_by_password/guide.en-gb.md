@@ -1,8 +1,8 @@
 ---
-title: "Protect your website's administration interface with a .htaccess file"
+title: "Protecting your website's administration interface with a .htaccess file"
 slug: how-to-protect-access-files-by-authentication
 legacy_guide_number: 1968
-excerpt: "Find here how to protect access to your website's administration with a .htaccess file"
+excerpt: "Find out how to protect access to your website's administration with a .htaccess file"
 section: Redirection and authentication
 ---
 
@@ -10,22 +10,21 @@ section: Redirection and authentication
 
 ## Objective
 
-You may need to protect access to part of your website with login credentials. You can set up a ".htaccess" file to protect access to its administration interface.
+You may need to protect access to part of your website with login credentials. You can set up a file named ".htaccess" to protect access to its administration interface.
 
 **Find out how to protect the access to the admin section of your website with a .htaccess file.**
 
 > [!warning]
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
->
-> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
 
-- a [web hosting plan](https://www.ovh.co.uk/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- the login details to log in to the [storage space on your Web Hosting plan](../log-in-to-storage-ftp-web-hosting/)
+- the [login details](../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 
 ## Instructions
 
@@ -36,9 +35,9 @@ You may need to protect access to part of your website with login credentials. Y
 > If you have any question regarding the creation or programming of your site, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/). We will not be able to assist you with these matters.
 >
 
-### Step 1: create the tree
+### Step 1: Create the file path
 
-Log in to your [hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting/) and open your site's [root folder](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).<br>
+Log in to your [Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting/) and open your site's [root folder](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).<br>
 Create a file named "crypter.php".
 
 ![root_folder](images/root_folder.png){.thumbnail}
@@ -49,14 +48,14 @@ Open or create the folder that contains the admin section of your site. Create a
 
 > [!primary]
 >
-> The ".htpasswd" and ".htaccess" files can be in different folders. Only one ".htpasswd" file can be used for several ".htaccess" files.
+> The ".htpasswd" and ".htaccess" files can be in different folders. A single ".htpasswd" file can be used for several ".htaccess" files.
 >
-> The settings defined by a ".htaccess" file apply to the directory where it is installed and to all its subdirectories.
+> The settings defined by a ".htaccess" file apply to the directory where it is located and to all its subdirectories.
 >
 
-### Step 2: complete the file "crypter.php"
+### Step 2: Edit the file "crypter.php"
 
-In the "crypter.php" file created earlier, enter the following lines (to be repeated depending on the number of passwords you need to generate):
+In the "crypter.php" file previously created, enter the following lines (to be adjusted depending on the number of passwords you need to generate):
 
 ```php
 <?php
@@ -67,15 +66,15 @@ echo nl2br(`$string_1 \n $string_2 \n $string_3`);
  ?>
 ```
 
-If you have a [Pro](https://www.ovh.co.uk/web-hosting/web-hosting-pro.xml) or [Performance](https://www.ovh.co.uk/web-hosting/performance-web-hosting.xml) hosting plan, log in to your hosting plan via [SSH](../web_hosting_ssh_on_web_hosting_packages/). Run the following command:
+If you have a [Professional](https://www.ovh.co.uk/web-hosting/web-hosting-pro.xml) or [Performance](https://www.ovh.co.uk/web-hosting/performance-web-hosting.xml) Web Hosting plan, log in to your hosting via [SSH](../web_hosting_ssh_on_web_hosting_packages/). Run the following command:
 
 ```bash
-php crypt.php
+php crypter.php
 ```
 
 > [!warning]
 >
-> For security reasons, using SSH in this case is recommended. However, if you have a [Kimsufi Web](https://www.kimsufi.com/uk/) or [Personal](https://www.ovh.co.uk/web-hosting/web-hosting-personal.xml) offer and you do not want to upgrade it to a [Pro](https://www.ovh.co.uk/web-hosting/web-hosting-pro.xml) or [Performance](https://www.ovh.co.uk/web-hosting/performance-web-hosting.xml) one, you can also run the "crypter.php" file with your web browser (by going to a URL like https://votre-domaine.ovh/crypter.php for example).
+> For security reasons, using SSH in this case is recommended. However, if you have a [Personal](https://www.ovh.co.uk/web-hosting/web-hosting-personal.xml) offer and you do not want to upgrade it to a [Professional](https://www.ovh.co.uk/web-hosting/web-hosting-pro.xml) or [Performance](https://www.ovh.co.uk/web-hosting/performance-web-hosting.xml) one, you can also run the "crypter.php" file with your web browser (by simply opening the URL, for example: https://yourdomainname.ovh/crypter.php).
 >
 > For any additional questions on how to encrypt your passwords, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/). We will not be able to assist you with this matter.
 >
@@ -88,11 +87,11 @@ encrypted_password2
 encrypted_password3
 ```
 
-### Step 3: complete the ".htpasswd" file
+### Step 3: Edit the ".htpasswd" file
 
-The ".htpasswd" file contains the list of users authorised to log in to your website's administration interface and their encrypted password.
+The ".htpasswd" file contains the list of users authorised to log in to your website's administration interface and their encrypted passwords.
 
-Enter a line in this file for **each user** indicating their username and encrypted password:
+Enter one line in this file **for each user** indicating their username and encrypted password:
 
 ```bash
 user1:encrypted_password1
@@ -100,9 +99,9 @@ user2:encrypted_password2
 user3:encrypted_password3
 ```
 
-### Step 4: complete the ".htaccess" file
+### Step 4: Edit the ".htaccess" file
 
-#### Block access to a full directory
+#### Blocking access to an entire directory
 
 In the directory to be protected, create a ".htaccess" file with the following code:
 
@@ -120,9 +119,9 @@ Require valid-user
 > In the example below, replace "root_folder" with the name of the [folder containing your site files](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).
 >
 
-#### Block access to one or more files
+#### Blocking access to one or more files
 
-To block access to one or more specific files, add a ["Files" directive](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} to the ".htaccess":
+To block access to one or more specific files, add a ["Files" directive](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} to the ".htaccess" file:
 
 ```bash
 <Files test.php>
@@ -137,15 +136,15 @@ Require valid-user
 
 > [!warning]
 >
-> You will need to specify a ["Files" directive](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} for **each file** to be protected.
+> You will need to specify a ["Files" directive](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} **for each file** to be protected.
 >
-> The "Files" directives apply to all files with the same name or ending with the specified name, that are contained in the same directory as the ".htaccess" or in one of its subdirectories (In the configuration shown here, the "Files" directive would apply for example on a "new_test.php" file contained in a subdirectory of the "admin" folder).
+> The "Files" directives apply to all files with the same name or ending with the specified name, that are contained in the same directory as the ".htaccess" or in one of its subdirectories. (For example, if you apply the configuration shown here, the "Files" directive would apply to a file named "new_test.php" located in a subdirectory of the folder "admin").
 >
 
 ## Go further <a name="gofurther"></a>
 
 [All about the .htaccess file](../all_about_the_htaccess_file/)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
 Join our community of users on <https://community.ovh.com/en/>.
