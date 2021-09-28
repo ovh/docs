@@ -14,48 +14,48 @@ order: 3
 
 ## Ziel
 
- Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie möglicherweise den Zugriff auf Ihre Instanzen reduzieren, um verschiedene Tests durchzuführen. Mit OpenStack können Sie Ihre Instanz aussetzen, pausieren oder anhalten. In jedem Fall bleibt Ihre IP-Adresse erhalten.
+Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie möglicherweise den Zugriff auf Ihre Instanzen reduzieren, um verschiedene Tests durchzuführen. Mit OpenStack können Sie Ihre Instanz aussetzen, pausieren oder anhalten. Die zugehörige IP-Adresse bleibt in jedem Fall erhalten.
 
 > [!warning]
-> Der Name dieser Optionen im OVHcloud Kundencenter unterscheidet sich vom Namen in Openstack/Horizon. Wenn Sie diese Operation über das OVHcloud Kundencenter durchführen, wählen Sie die entsprechende Option aus.
+> Die Bezeichnung dieser Optionen im OVHcloud Kundencenter unterscheidet sich von den Namen in OpenStack/Horizon. Wenn Sie Operationen über das OVHcloud Kundencenter durchführen, wählen Sie jeweils die unten beschriebene passende Option aus.
 >
 
 **Diese Anleitung erklärt, wie Sie eine Instanz aussetzen, anhalten oder pausieren können.**
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) zur stundenweisen Abrechnung
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/)
-- Kenntnis der [OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/) und der [OpenStack Variablen](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/)
+- Sie verfügen über eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) mit stündlicher Abrechnung.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder das [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
+- Sie haben Kenntnisse der [OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/) und der [OpenStack Variablen](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/).
 
 ## In der praktischen Anwendung
 
 > [!alert]
 >
-> Diese Operation zieht eine weitere Abrechnung der Instanz nach sich, solange diese nicht terminiert wurde.
+> Diese Manipulationen führen dazu, dass die Instanz weiterhin abgerechnet wird, solange sie nicht gelöscht wird.
 >
 
-In der folgenden Tabelle können Sie die auf Ihren Instanzen verfügbaren Optionen unterscheiden. Klicken Sie auf die Option Ihrer Wahl, um die Anleitung zu lesen.
+In der folgenden Tabelle finden Sie die auf Ihren Instanzen verfügbaren Optionen in der Übersicht. Klicken Sie auf die Option Ihrer Wahl, um zum entsprechenden Teil der Anleitung zu gelangen.
 
-|Begriff|Beschreibung|Abrechnung|
+|Funktion|Beschreibung|Abrechnung|
 |---|---|---|
-|[Aussetzen (*shelve*)](#shelve-instance)|Speichert die Ressourcen und Daten Ihrer Festplatte, indem Sie einen Snapshot erstellen. Alle anderen Ressourcen werden freigegeben.|Sie werden nur für die Momentaufnahme berechnet.|
-|[Anhalten (*suspend*)](#stop-suspend-instance)|Speichert den Zustand der virtuellen Maschine auf der Festplatte, die der Instanz zugewiesenen Ressourcen sind immer reserviert.|Für Ihre Instanz wird Ihnen immer der gleiche Preis in Rechnung gestellt.|
-|[Pauserien](#pause-instance)|Speichert den Zustand der virtuellen Maschine im RAM, wird eine hängende Instanz eingefroren.|Für Ihre Instanz wird Ihnen immer der gleiche Preis in Rechnung gestellt.|
+|[Aussetzen (*shelve*)](#shelve-instance)|Speichert die Ressourcen und Daten Ihrer Disk, indem ein Snapshot erstellt wird. Alle anderen Ressourcen werden freigegeben.|Ihnen wird nur der Snapshot berechnet.|
+|[Anhalten (*suspend*)](#stop-suspend-instance)|Speichert den Zustand der VM auf die Disk. Die der Instanz zugewiesenen Ressourcen bleiben reserviert.|An der Abrechnung der Instanz ändert sich nichts.|
+|[Pausieren (*pause*)](#pause-instance)|Speichert den Zustand der VM im RAM. Eine pausierte Instanz wird "eingefroren".|An der Abrechnung der Instanz ändert sich nichts.|
 
-### Aussetzen (shelve) einer Instanz <a name="shelve-instance"></a>
+### Aussetzen einer Instanz (*shelve*) <a name="shelve-instance"></a>
 
-Diese Option erlaubt es Ihnen, die dedizierten Ressourcen Ihrer Public Cloud Instanz freizugeben, die IP-Adresse bleibt jedoch bestehen. Die Daten Ihrer lokalen Festplatte werden in einem automatisch erstellten Snapshot gespeichert, sobald die Instanz reserviert ist. Die im Arbeitsspeicher und anderswo gespeicherten Daten werden nicht gespeichert.
+Diese Option erlaubt es Ihnen, die dedizierten Ressourcen Ihrer Public Cloud Instanz freizugeben, während die IP-Adresse bestehen bleibt. Die Daten der lokalen Disk werden in einem automatisch erstellten Snapshot gespeichert, sobald die Instanz den Status *shelved* hat. Die im Arbeitsspeicher und anderswo gespeicherten Daten werden nicht gesichert.
 
-#### Vom OVHcloud Kundencenter
+#### Im OVHcloud Kundencenter
 
 Loggen Sie sich in Ihr OVHcloud Kundencenter ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
 
-Klicken Sie im Interface für die Instanzen auf `...`{.action} rechts neben der Instanz und wählen Sie `Aussetzen`{.action}.
+Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Aussetzen`{.action}.
 
 ![suspend instance](images/suspend_an_instance.png){.thumbnail}
 
-Notieren Sie sich die Meldung im Dialogfenster und klicken Sie auf `Bestätigen`{.action}.
+Nehmen Sie die Meldung im Dialogfenster zur Kenntnis und klicken Sie auf `Bestätigen`{.action}.
 
 ![confirm suspension](images/confirm_suspension.png){.thumbnail}
 
@@ -63,27 +63,27 @@ Sobald der Vorgang abgeschlossen ist, erscheint die Instanz als *Ausgesetzt*.
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
-Um den Snapshot anzuzeigen, gehen Sie auf das linke Menü und klicken Sie auf `Instance Backup`{.action}. Ein Snapshot namens *xxxxx-shelved* ist jetzt sichtbar:
+Um den Snapshot zu sehen, klicken Sie im linken Menü auf `Instance Backup`{.action}. Ein Snapshot namens *xxxxx-shelved* wird jetzt angezeigt.
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
-#### Horizon-Interface
+#### Im Horizon-Interface
 
-Um fortzufahren, [erstellung eines zugangs zu Horizon](../erstellung_eines_zugangs_zu_horizon/) und [loggen Sie sich in das Horizon-interface](https://horizon.cloud.ovh.net/auth/login/) .
+Um fortzufahren, muss der [Zugang zu Horizon](../erstellung_eines_zugangs_zu_horizon/) konfiguriert sein, damit Sie sich [in das Horizon-interface einloggen](https://horizon.cloud.ovh.net/auth/login/) können.
 
-Wenn Sie Instanzen in verschiedenen Regionen eingerichtet haben, stellen Sie sicher, dass Sie sich in der entsprechenden Region befinden. Überprüfen Sie es in der oberen linken Ecke des Horizon-Interface.
+Wenn Sie Instanzen in verschiedenen Regionen eingerichtet haben, stellen Sie sicher, dass Sie sich in der korrekten Region befinden. Überprüfen Sie es in der oberen linken Ecke des Horizon-Interface.
 
 ![horizon interface](images/firstaccesshorizon.png){.thumbnail}
 
-Klicken Sie auf das Menü `Compute`{.action} auf der linken Seite und wählen Sie `Instances`{.action} aus. Wählen Sie `Shelve Instance`{.action} Drop-down-Liste für die entsprechende Instanz aus.
+Klicken Sie auf das Menü `Compute`{.action} auf der linken Seite und wählen Sie `Instances`{.action} aus. Wählen Sie `Shelve Instance`{.action} in der Drop-down-Liste für die betreffende Instanz aus.
 
 ![shelve instance](images/shelveinstancehorizon.png){.thumbnail}
 
-Sobald der Vorgang abgeschlossen ist, erscheint Ihre Instanz nun als *Shelved Offloaded*.
+Sobald der Vorgang abgeschlossen ist, hat die Instanz den Status *Shelved Offloaded*.
 
 ![shelved instance](images/newinstancestatushorizon.png){.thumbnail}
 
-Um die Momentaufnahme anzuzeigen, klicken Sie im Menü `Compute`{.action} auf `Images`{.action}.
+Um den Snapshot anzuzeigen, klicken Sie im Menü `Compute`{.action} auf `Images`{.action}.
 
 ![snapshot](images/snapshothorizon.png){.thumbnail}
 
@@ -91,10 +91,10 @@ Um die Momentaufnahme anzuzeigen, klicken Sie im Menü `Compute`{.action} auf `I
 
 Bevor Sie fortfahren, empfehlen wir Ihnen folgende Anleitungen:
 
-- [Vorbereitung der umgebung fur die verwendung der OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
-- [Die variablen der umgebung OpenStack laden](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/)
+- [Vorbereitung Ihrer Umgebung zur Verwendung der OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
+- [Konfigurieren der OpenStack-Umgebungsvariablen](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/)
 
-Sobald Ihre Umgebung fertig ist, geben Sie auf der Kommandozeile Folgendes ein:
+Sobald Ihre Umgebung bereit ist, geben Sie in der Kommandozeile Folgendes ein:
 
 ```bash
 ~$ openstack server shelve <UUID server>
@@ -104,32 +104,32 @@ Sobald Ihre Umgebung fertig ist, geben Sie auf der Kommandozeile Folgendes ein:
 ~$ nova shelve <UUID server> 
 ```
 
-### Reaktivieren (unshelve) einer Instanz 
+### Reaktivieren einer Instanz (*unshelve*)
 
-Mit dieser Option können Sie Ihre Instanz neu konfigurieren, damit Sie sie weiterhin verwenden können. Bitte beachten Sie, dass die Abrechnung nach Abschluss der Operation normalerweise wieder erfolgt.
+Mit dieser Option können Sie Ihre Instanz aus dem ausgesetzten Zustand entfernen, um sie wieder verwenden zu können. Bitte beachten Sie, dass die Abrechnung nach Abschluss der Operation  wieder regulär erfolgt.
 
 > [!alert] **Aktionen auf dem Snapshot**
 >
-> Jede Aktion auf dem Snapshot außer der Reaktivierung (*unshelve*), kann für Ihre Infrastruktur sehr gefährlich sein, wenn sie missbraucht wird. Wenn Sie eine Instanz reaktivieren (*unshelved*), der Snapshot wird automatisch gelöscht. Es wird nicht empfohlen, eine neue Instanz aus einem Snapshot bereitzustellen, der erstellt wurde, nachdem eine Instanz angehalten wurde.
+> Jede Aktion auf dem Snapshot außer der Reaktivierung (*unshelve*), kann für Ihre Infrastruktur sehr gefährlich sein, wenn sie nicht korrekt ausgeführt wird. Wenn Sie eine Instanz reaktivieren (*unshelve*), wird der Snapshot automatisch gelöscht. Es wird nicht empfohlen, eine neue Instanz auf einem Snapshot zu basieren, der beim Aussetzen der Instanz erzeugt wurde.
 >
-> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere Community wenden, um sich mit anderen Benutzern auszutauschen.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren. Wir empfehlen Ihnen, einen spezialisierten Dienstleister zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste haben.
 >
 
-#### Vom OVHcloud Kundencenter
+#### Im OVHcloud Kundencenter
 
 Loggen Sie sich in Ihr OVHcloud Kundencenter ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
 
-Klicken Sie im Interface für die Instanzen auf `...`{.action} rechts neben der Instanz und wählen Sie `Reaktivieren`{.action}.
+Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Reaktivieren`{.action}.
 
 ![reactivate instance](images/reactivate_instancePanel.png){.thumbnail}
 
-Notieren Sie sich die Meldung im Dialogfenster und klicken Sie auf `Bestätigen`{.action}.
+Nehmen Sie die Meldung im Dialogfenster zur Kenntnis und klicken Sie auf `Bestätigen`{.action}.
 
 Sobald der Vorgang abgeschlossen ist, erscheint Ihre Instanz als *Aktiviert*.
 
-#### Horizon-Interface
+#### Im Horizon-Interface
 
-Klicken Sie auf das Menü `Compute`{.action} auf der linken Seite und wählen Sie `Instances`{.action} aus. Wählen Sie `Unshelve Instance`{.action} Drop-down-Liste für die entsprechende Instanz aus.
+Klicken Sie auf das Menü `Compute`{.action} auf der linken Seite und wählen Sie `Instances`{.action} aus. Wählen Sie `Unshelve Instance`{.action} in der Drop-down-Liste für die betreffende Instanz aus.
 
 ![unshelve instance](images/unshelveinstancehorizon.png){.thumbnail}
 
@@ -137,7 +137,7 @@ Sobald der Vorgang abgeschlossen ist, erscheint Ihre Instanz als *Active*.
 
 #### Verwendung der OpenStack/Nova APIs
 
-Sobald Ihre Umgebung fertig ist, geben Sie auf der Kommandozeile Folgendes ein:
+Sobald Ihre Umgebung bereit ist, geben Sie in der Kommandozeile Folgendes ein:
 
 ```bash
 ~$ openstack server unshelve <UUID server>
@@ -147,37 +147,37 @@ Sobald Ihre Umgebung fertig ist, geben Sie auf der Kommandozeile Folgendes ein:
 ~$ nova unshelve <UUID server>
 ```
 
-### Anhalten (suspend) einer Instanz <a name="stop-suspend-instance"></a>
+### Anhalten einer Instanz (*suspend*) <a name="stop-suspend-instance"></a>
 
 Mit dieser Option können Sie Ihre Instanz anhalten und den Zustand der virtuellen Maschine auf der Festplatte speichern. Der Speicher wird ebenfalls auf die Festplatte geschrieben.
 
-#### Vom OVHcloud Kundencenter
+#### Im OVHcloud Kundencenter
 
 Loggen Sie sich in Ihr OVHcloud Kundencenter ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
 
-Klicken Sie im Interface für die Instanzen auf `...`{.action} rechts neben der Instanz und wählen Sie `Anhalten`{.action}.
+Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Anhalten`{.action}.
 
 ![stop instance](images/stopinstance.png){.thumbnail}
 
-Notieren Sie sich die Meldung im Dialogfenster und klicken Sie auf `Bestätigen`{.action}.
+Nehmen Sie die Meldung im Dialogfenster zur Kenntnis und klicken Sie auf `Bestätigen`{.action}.
 
 Sobald der Vorgang abgeschlossen ist, erscheint die Instanz als *Ausgeschaltet*.
 
-Um mit der Instanz fortzufahren, folgen Sie den oben genannten Schritten. Klicken Sie im Interface für die Instanzen auf `...`{.action} rechts neben der Instanz wählen Sie `Starten`{.action}. In einigen Fällen müssen Sie möglicherweise einen Neustart durchführen.
+Um mit der Instanz fortzufahren, klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz wählen Sie `Starten`{.action}. In einigen Fällen müssen Sie möglicherweise einen Neustart durchführen.
 
-#### Horizon-Interface 
+#### Im Horizon-Interface
 
-Klicken Sie auf das Menü `Compute`{.action} auf der linken Seite und wählen Sie `Instances`{.action} aus. Wählen Sie `Suspend Instance`{.action} Drop-down-Liste für die entsprechende Instanz aus.
+Klicken Sie auf das Menü `Compute`{.action} auf der linken Seite und wählen Sie `Instances`{.action} aus. Wählen Sie `Suspend Instance`{.action} in der Drop-down-Liste für die betreffende Instanz aus.
 
 ![suspend instance Horizon](images/suspendinstancehorizon.png){.thumbnail}
 
-Die Bestätigungsmeldung wird angezeigt, aus der hervorgeht, dass die Instanz suspendiert wurde.
+Es erscheint eine Bestätigungsmeldung, die anzeigt, dass die Instanz gestoppt wurde.
 
-Um die Instanz neu zu starten, führen Sie die gleichen Schritte wie oben beschrieben durch. Wählen Sie in der Dropdown-Liste für die entsprechende Instanz `Resume Instance`{.action}.
+Um die Instanz wieder in Betrieb zu nehmen (*unsuspend*), wählen Sie in der Drop-down-Liste für die entsprechende Instanz `Resume Instance`{.action}.
 
 #### Verwendung der OpenStack/Nova API
 
-Sobald Ihre Umgebung fertig ist, geben Sie auf der Kommandozeile Folgendes ein:
+Sobald Ihre Umgebung bereit ist, geben Sie in der Kommandozeile Folgendes ein:
 
 ```bash
 ~$ openstack server suspend <UUID server>
@@ -187,7 +187,7 @@ Sobald Ihre Umgebung fertig ist, geben Sie auf der Kommandozeile Folgendes ein:
 ~$ nova suspend <UUID server>
 ```
 
-Um die Aussetzung der Instanz aufzuheben, geben Sie auf der Kommandozeile Folgendes ein:
+Um die Instanz wieder in Betrieb zu nehmen, geben Sie in der Kommandozeile Folgendes ein:
 
 ```bash
 ~$ openstack server unsuspend <UUID server>
@@ -197,23 +197,23 @@ Um die Aussetzung der Instanz aufzuheben, geben Sie auf der Kommandozeile Folgen
 ~$ nova unsuspend <UUID server>
 ```
 
-### Pause einer Instanz <a name="pause-instance"></a>
+### Pausieren einer Instanz (*pause*) <a name="pause-instance"></a>
 
-Diese Aktion ist nur im Horizon-Interface oder über die Openstack/Nova-API möglich. Damit können Sie *Ihre* Instanz einfrieren.
+Diese Aktion ist nur im Horizon-Interface oder über die OpenStack/Nova-API möglich. Damit können Sie eine Instanz "einfrieren".
 
-#### Horizon-Interface
+#### Im Horizon-Interface
 
 Klicken Sie auf das Menü `Compute`{.action} auf der linken Seite und wählen Sie `Instances`{.action} aus. Wählen Sie `Pause Instance`{.action} Drop-down-Liste für die entsprechende Instanz aus.
 
 ![Pause instance](images/pauseinstancehorizon.png){.thumbnail}
 
-Die Bestätigungsmeldung wird angezeigt, aus der hervorgeht, dass die Instanz suspendiert wurde.
+Es erscheint eine Bestätigungsmeldung, die anzeigt, dass die Instanz pausiert wurde.
 
-Um die Pause der Instanz abzubrechen, folgen Sie den oben genannten Schritten. Wählen Sie in der Dropdown-Liste der entsprechenden Instanz `Resume Instance`{.action}.
+Um die Instanz wieder in Betrieb zu nehmen (*unpause*), wählen Sie in der Dropdown-Liste der entsprechenden Instanz `Resume Instance`{.action}.
 
 #### Verwendung der OpenStack/Nova API
 
-Sobald Ihre Umgebung fertig ist, geben Sie auf der Kommandozeile Folgendes ein:
+Sobald Ihre Umgebung bereit ist, geben Sie in der Kommandozeile Folgendes ein:
 
 ```bash
 ~$ openstack server pause <UUID server>
@@ -223,7 +223,7 @@ Sobald Ihre Umgebung fertig ist, geben Sie auf der Kommandozeile Folgendes ein:
 ~$ nova pause <UUID server>
 ```
 
-Um die Pause der Instanz abzubrechen, geben Sie auf der Kommandozeile Folgendes ein:
+Um die Instanz wieder in Betrieb zu nehmen, geben Sie in der Kommandozeile Folgendes ein:
 
 ```bash
 ~$ openstack server unpause <UUID server>
