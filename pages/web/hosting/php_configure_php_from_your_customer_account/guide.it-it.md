@@ -4,6 +4,7 @@ excerpt: Configura la tua versione di PHP dal tuo Spazio Cliente OVH
 id: '1999'
 slug: web_hosting_configura_la_tua_versione_di_php_dal_tuo_spazio_cliente_ovh
 legacy_guide_number: g1999
+section: PHP
 ---
 
 

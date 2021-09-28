@@ -2,7 +2,7 @@
 title: 'Modificare la password di un utente FTP'
 slug: modificare-la-password-utente-ftp
 excerpt: 'Scopri come cambiare la password di un utente FTP creata sul tuo hosting Web OVH'
-section: 'FTP e SSH'
+section: FTP e SSH
 order: 1
 ---
 
