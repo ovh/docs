@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 5
 ---
 
-**Last updated 21st February 2020**
+**Last updated 24th September 2021**
 
 ## Objective
 
@@ -51,10 +51,10 @@ The holder of the account xx11111-ovh always has **administrator** access, so th
 
 ### Step 2: Add a user.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, click `your name`{.action} (1) in the top right-hand corner, then click `My account`{.action} (2).
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, click `your name`{.action} (1) in the top right-hand corner, then click on your support level. In our example `Standard support`{.action} (2).
 Next, click on the `User management`{.action}tab (3), and `Add a user`{.action} (4).
 
-![users-management](images/usersmanagement1.png){.thumbnail}
+![users-management](images/addauser2021.png){.thumbnail}
 
 A window will pop up, and you will need to complete the required fields. Click `Confirm`{.action} to create the user.
 
@@ -72,7 +72,7 @@ The user then gets their own ID made up of your account’s digital ID (which is
 
 E.g.: **1234-567-89/john.smith**.
 
-![users-management](images/usersmanagement3.png){.thumbnail}
+![users-management](images/addeduser2021.png){.thumbnail}
 
 The user you have created can then log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} using this ID. 
 
@@ -82,7 +82,7 @@ They can also change their password and secure their own access to your account 
 
 You can disable/enable or remove a user by clicking on the `…`{.action} button to the right of the user’s name.
 
-![users-management](images/usersmanagement4.png){.thumbnail}
+![users-management](images/edituser2021.png){.thumbnail}
 
 When you edit a user you can update their email address, privileges and description.
 
