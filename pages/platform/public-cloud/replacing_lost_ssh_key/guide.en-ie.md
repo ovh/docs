@@ -3,7 +3,7 @@ title: 'Replacing your lost SSH key pair'
 slug: replacing_your_lost_ssh_key_pair
 excerpt: 'Find out how to regain SSH access to your Public Cloud Instance'
 legacy_guide_number: g2069
-section: Security
+section: Management via Control Panel
 order: 4
 ---
 

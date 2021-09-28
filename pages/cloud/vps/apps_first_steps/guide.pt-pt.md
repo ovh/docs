@@ -6,7 +6,7 @@ section: 'Introdução'
 order: 8
 ---
 
-**Última atualização: 8 de setembro de 2020**
+**Última atualização: 16/09/2021**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -14,7 +14,7 @@ order: 8
 
 ## Objetivo
 
-A OVHcloud oferece aos clientes VPS imagens de aplicações pré-instaladas para uma implementação rápida e fácil em apenas alguns cliques. 
+A OVHcloud oferece aos clientes VPS imagens de aplicações pré-instaladas para uma implementação rápida e fácil em apenas alguns cliques.
 
 **Saiba como implementar aplicações pré-instaladas no seu VPS.**
 
@@ -27,7 +27,7 @@ A OVHcloud oferece aos clientes VPS imagens de aplicações pré-instaladas para
 ### Instalar a aplicação pré-instalada à sua escolha
 
 A partir [da Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou das API OVHcloud, instale a aplicação que desejar. Também pode consultar o nosso guia [VPS](../instalar-gerir-vps/): primeira utilização
- 
+
 #### cPanel
 
 Encontrará abaixo as primeiras etapas relativas à implementação da imagem pré-instalada do cPanel. Os passos assinalados com "\*" serão seguidos de uma FAQ.
@@ -37,7 +37,7 @@ Encontrará abaixo as primeiras etapas relativas à implementação da imagem pr
 
 > [!primary]
 >
-> Se o link já expirou, ligue-se ao servidor em SSH com a ajuda do utilizador CentOS e execute o comando "whmlogin" para gerar um novo ou reinstalar a instância.
+> Se a ligação já expirou, ligue-se ao seu VPS via SSH usando o utilizador CentOS e execute o comando "whmlogin" para gerar uma nova ligação.
 >
 
 <ol start="3">
@@ -50,7 +50,7 @@ Encontrará abaixo as primeiras etapas relativas à implementação da imagem pr
 
 Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
 
-> \[!faq]
+> [!faq]
 >
 > Posso utilizar os meus próprios servidores DNS?
 >> Sim, podem. Certifique-se de que criou os registos "GLUE" com o seu agente de registo de domínio. Por exemplo, se deseja "ns1.mydomain.com" e "ns2.mydomain.com", deve configurar os registos "GLUE" para que ambos apontem para o endereço IP do seu servidor. Se o seu domínio estiver registado com a OVHcloud, pode seguir [este guia.](../../domains/glue_registry/#1-adicionar-os-registos-glue). Note que a criação pode levar 24 horas.
@@ -66,7 +66,7 @@ Encontrará abaixo os primeiros passos para a implementação da imagem pré-ins
 1. Abra o e-mail que recebeu com os dados de acesso à aplicação.
 2. Clique no URL do Plesk neste e-mail.
 3. Ligue-se com o nome de utilizador e a palavra-passe presentes no e-mail.
-4. Uma vez ligado, o Plesk irá pedir-lhe:   
+4. Uma vez ligado, o Plesk irá pedir-lhe:
     a) Os seus dados.  
     b) Uma nova palavra-passe para o utilizador "admin" que irá utilizar para se ligar à interface do Plesk.  
     c) Informações sobre a licença.*  
@@ -76,7 +76,7 @@ No further steps are necessário ary to complete the first configuration of this
 
 Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
 
-> \[!faq]
+> [!faq]
 >
 > Onde está a minha licença Plesk?
 >> Pode encomendar a sua licença Plesk para o seu VPS a partir [da Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
@@ -108,92 +108,6 @@ Encontrará abaixo os primeiros passos para a implementação da imagem pré-ins
 
 1. Aceda ao servidor com o nome de utilizador e a palavra-passe presentes no e-mail.
 2. Verifique que o Docker funciona com o comando "docker run hello-world".
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-#### GitLab
-
-Encontrará abaixo os primeiros passos para a implementação da imagem pré-instalada do GitLab.
-
-1. Abra o e-mail que recebeu com os dados de acesso à aplicação.
-2. Clique no URL do GitLab nesse e-mail.
-3. Defina a sua nova password.
-4. Ligue-se ao utilizador root e à nova palavra-passe que acabou de definir.
-
-Pode ir mais longe ao proteger o seu GitLab com um certificado SSL ao seguir [este guia GitLab.](https://docs.gitlab.com/omnibus/settings/ssl.html){.external}.
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-#### OpenVPN
-
-Encontrará abaixo as primeiras etapas relativas à implementação da imagem pré-instalada do OpenVPN.
-
-1. Abra o e-mail que recebeu com os dados de acesso à aplicação.
-2. Clique no URL da OpenVPN neste e-mail.
-3. Ligue-se com o nome de utilizador e a palavra-passe presentes no e-mail.
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-
-#### WordPress
-
-Encontrará abaixo os primeiros passos para a implementação da imagem pré-instalada do WordPress.
-
-1. Abra o e-mail que recebeu com os dados de acesso à aplicação.
-2. Clique no URL do WordPress neste e-mail.
-3. Siga as instruções de configuração do WordPress. Quando for necessário fornecer informações sobre a base de dados, utilize sempre o "localhost" como endereço. Para o nome de utilizador e a palavra-passe, utilize as informações fornecidas pela API.
-
-Pode ir mais longe ao proteger o seu site com um certificado SSL gratuito ao [seguir estes passos](./#lets-encrypt-ssl_1).
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-
-#### Joomla
-
-Encontrará abaixo os primeiros passos para a implementação da imagem pré-instalada do Joomla.
-
-1. Abra o e-mail que recebeu com os dados de acesso à aplicação.
-2. Clique no URL do Joomla neste e-mail.
-3. Siga as instruções de configuração do Joomla. Quando for necessário fornecer informações sobre a base de dados, utilize sempre o "localhost" como endereço. Para o nome de utilizador e a palavra-passe, utilize as informações fornecidas pela API.
-
-Pode ir mais longe ao proteger o seu site com um certificado SSL gratuito ao [seguir estes passos](./#lets-encrypt-ssl_1).
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-
-#### Drupal
-
-Encontramos abaixo os primeiros passos para a implementação da imagem pré-instalada do Drupal.
-
-1. Abra o e-mail que recebeu com os dados de acesso à aplicação.
-2. Clique no URL do Drupal neste e-mail.
-3. Siga as instruções de configuração do Drupal.Quando for necessário fornecer informações sobre a base de dados, utilize sempre o "localhost" como endereço. Para o nome de utilizador e a palavra-passe, utilize as informações fornecidas pela API.
-
-Pode ir mais longe ao proteger o seu site com um certificado SSL gratuito ao [seguir estes passos](./#lets-encrypt-ssl_1).
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-#### Prestashop
-
-Encontrará abaixo as primeiras etapas relativas à implementação da imagem pré-instalada do Prestashop.
-
-1. Abra o e-mail que recebeu com os dados de acesso à aplicação.
-2. Clique no URL do Prestashop neste e-mail.
-3. Siga as instruções de configuração do Prestashop. Quando for necessário fornecer informações sobre a base de dados, utilize sempre o "localhost" como endereço e, para o nome de utilizador e a palavra-passe, utilize as informações fornecidas pela API.
-4. Uma vez terminada a instalação, pode eliminar a pasta de instalação e modificar o URL de administração através de um script que colocámos no servidor para si. Ao executar este script, aplicaremos a recomendação de segurança do Prestashop após a instalação. Basta que se ligue ao servidor em SSH e execute os seguintes comandos:
-
-```sh
-sudo -i
-/root/secure_prestashop.sh
-rm -f /root/secure_prestashop.sh
-```
-
-> [!primary]
->
-> Queira registar o link enviado. Só poderá aceder à administração do Prestashop com o novo link.
->
-
-Proteja gratuitamente o seu site com um certificado SSL ao [seguir estas etapas](./#lets-encrypt-ssl_1).
 
 Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
 

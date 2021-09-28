@@ -5,7 +5,11 @@ excerpt: Saiba como adicionar endereços IP Failover à configuração de rede
 section: Redes & IP
 ---
 
-**Última atualização no dia 08/03/2018**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização no dia 16/09/2021**
 
 ## Sumário
 
@@ -24,6 +28,79 @@ O IP aliasing é uma configuração de rede para servidores dedicados que permit
 
 O presente guia inclui instruções paras sistemas Linux e para o Windows Server.
 
+### Debian 10
+
+#### 1 - Fazer cópia do ficheiro de configuração (*source file*)
+
+Primeiro, faça uma cópia do ficheiro de configuração para, se necessário, poder reverter o sistema para o estado inicial.
+
+```sh
+cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+```
+
+#### 2 - Alterar o ficheiro de configuração
+
+Agora altere o ficheiro de configuração usando o seguinte comando:
+
+```sh
+editor /etc/network/interfaces.d/50-cloud-init
+```
+
+De seguida, adicione uma interface secundária:
+
+```bash
+auto eth0:0
+iface eth0:0 inet static
+address IP_FAILOVER
+netmask 255.255.255.255
+```
+
+Para garantir que a interface secundária é ativada ao mesmo tempo que a interface `eth0`, adicione esta instrução à configuração de eth0:
+
+```bash
+post-up /sbin/ifconfig eth0:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER
+pre-down /sbin/ifconfig eth0:0 down
+```
+
+Se quiser adicionar dois IP Failover, o ficheiro /etc/network/interfaces.d/50-cloud-init deve ter um conteúdo semelhante a este:
+
+```bash
+auto eth0
+iface eth0 inet dhcp
+
+auto eth0:0
+iface eth0:0 inet static
+address FAILOVER_IP1
+netmask 255.255.255.255
+
+auto eth0:1
+iface eth0:1 inet static
+address FAILOVER_IP2
+netmask 255.255.255.255
+```
+Ou assim:
+
+```bash
+auto eth0
+iface eth0 inet dhcp
+
+# IPFO 1
+post-up /sbin/ifconfig eth0:0 FAILOVER_IP1 netmask 255.255.255.255 broadcast FAILOVER_IP1
+pre-down /sbin/ifconfig eth0:0 down
+
+# IPFO 2
+post-up /sbin/ifconfig eth0:1 FAILOVER_IP2 netmask 255.255.255.255 broadcast FAILOVER_IP2
+pre-down /sbin/ifconfig eth0:1 down
+```
+
+
+#### 3 - Reiniciar a interface de rede
+
+Agora, execute este comando para reiniciar a interface:
+
+```sh
+/etc/init.d/networking restart
+```
 
 ### Debian 6/7/8 e «derivações»
 
@@ -78,6 +155,8 @@ auto eth0:1
 iface eth0:1 inet static
 address IP_FAILOVER2
 netmask 255.255.255.255
+
+Ou assim:
 
 # IPFO 1
 post-up /sbin/ifconfig eth0:0 IP_FAILOVER1 netmask 255.255.255.255 broadcast IP_FAILOVER1

@@ -4,6 +4,7 @@ slug: hosting_condiviso_guida_allutilizzo_di_filezilla
 excerpt: 'In questa guida ti illustriamo come utilizzare il client FTP FileZilla'
 id: '1380'
 legacy_guide_number: g1380
+section: FTP e SSH
 ---
 
 ## A cosa serve FileZilla?

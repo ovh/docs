@@ -1,95 +1,111 @@
 ---
-title: 'Zarządzanie usługą Office 365 Reseller (CSP2)'
+title: Zarządzanie grupą licencji Office 365 Reseller (CSP2) OVHcloud
 slug: zarzadzanie-licencje-office-365-reseller-csp2
-excerpt: 'Zobacz, jak zarządzać usługą Office 365 Reseller (CSP2) w OVH'
-section: 'Office 365'
+excerpt: Dowiedz się, jak zamówić i zarządzać usługą Office 365 Reseller (CSP2) w OVHcloud
+section: Office
+order: 3
 ---
 
-**Ostatnia aktualizacja dnia 2018-02-07**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 13-09-2021**
 
 ## Wprowadzenie
 
-Licencja Office 365 może być wykorzystywana na 5 komputerach PC/Mac, 5 tabletach oraz 5 smartphonach. Aktualizacje są regularnie udostępniane, nawet po ukazaniu się wyższych wersji.
+Office 365 Resellerzy (CSP2) to usługa pozwalająca na korzystanie z różnych typów licencji Microsoft 365 w preferencyjnych cenach, dzięki czemu możesz je odsprzedać swoim klientom.
 
-**Zobacz, jak zarządzać usługą Office 365 Reseller (CSP2) w OVH.**
+**Dowiedz się, jak zamówić i zarządzać usługą Office 365 Reseller (CSP2) w OVHcloud.**
 
 ## Wymagania początkowe
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Dołączenie do programu partnerskiego **Community Web,** poprzez rejestrację na stronie [http://partners.ovh.com/](http://partners.ovh.com/){.external}. 
-- Posiadanie licencje Office 365 CSP2.
+
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
-### Dostęp do zarządzania Office 365 Reseller
+### Zamów usługę Office 365 Reseller
 
-Po utworzeniu i udostępnieniu usługi Office 365, można nią zarządzać poprzez [Panel klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+Aby zamówić usługę Office 365 Reseller, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Po zalogowaniu wybierz `Sunrise`{.action} na górnym pasku, a następnie kliknij `Office 365 Reseller`{.action}.
 
-Aby to zrobić, wejdź do panelu, a następnie przejdź do sekcji `Sunrise`{.action}. W lewym menu, przejdź do `Office 365 Reseller`{.action} i wybierz usługę.
+- Uzupełnij dane kontaktowe klienta końcowego, są one wymagane, aby zdefiniować menedżera grupy licencji (Tenant), którą utworzysz.
 
 > [!primary]
 >
-> Jeśli posiadasz już usługę Office 365 CSP2 bezpośrednio w Microsoft, istnieje możliwość powierzenia administracji usługą OVH. Tym sposobem będzie można dodawać dodatkowe subskrypcje bezpośrednio przez Panel klienta OVH. Zamawiając nową grupę licencji, trzeba wtedy wybrać `Przeniesienie platformy utworzonej wcześniej w firmie Microsoft`{.action}.
+> - Jeśli posiadasz już usługę Office 365 CSP2 w Microsoft, masz możliwość powierzenia administracji usługą OVHcloud. W ten sposób będziesz mógł dodawać dodatkowe subskrypcje bezpośrednio w Panelu klienta OVHcloud. Podczas zamawiania nowej grupy licencji należy wybrać `Delegację platformy utworzonej wcześniej w firmie Microsoft`{.action}.
+>
+> - Jeśli posiadasz partnera Microsoft ID, możesz go wprowadzić w tym samym interfejsie. Pozwoli to klientowi uzyskać zwroty pieniężne z subskrypcji, które będzie zamawiał poprzez naszą strefę klienta. Te zwroty podlegają zasadom zdefiniowanym przez Microsoft, w zależności od generowanych ilości subskrypcji.
 >
 
-Przypominamy również, że jeśli posiadasz Microsoft Partner ID, możesz go dodać używając tego samego interfejsu. Pozwoli to uzyskać zwroty pieniężne z subskrypcji, które będziesz zamawiał poprzez Panel klienta. Te zwroty podlegają zasadom zdefiniowanym przez Microsoft, w zależności od generowanych ilości subskrypcji.
+- Na poniższej liście zaznacz licencje, które chcesz dodać do swojej grupy.
 
-![office365](images/sunrise_office365_CSP2.png){.thumbnail}
+- Kliknij na `Zamów`{.action}, aby sfinalizować zamówienie.
 
-### Sprawdzanie szczegółów Office 365 Reseller (CSP2)
+> [!warning]
+>
+> Upewnij się, czy adres e-mail podany podczas tworzenia grupy licencji jest ważny, ponieważ grupa ta otrzyma dane identyfikacyjne na platformie Microsoft.
+>
 
-Informacje wyświetlą się po kliknięciu na nazwę usługi w lewym menu.
+![office365](images/csp2-01.png){.thumbnail}
 
-|Tytuł|Opis|
-|---|---|
-|Wewnętrzna nazwa usługi|Pokazuje nazwę usługi. Jest ona widoczna wyłącznie poprzez Panel klienta.|
-|Wyświetlana nazwa usługi|Umożliwia dostosowanie wyświetlanej nazwy usługi w Panelu klienta.|
-|Data utworzenia|Pokazuje datę utworzenia usługi.|
-|Portal administracyjny Microsoft|Wskazuje link do portalu Office, który umożliwia zarządzanie subskrypcjami.|
-|Samouczek online|Adres szkolenia online (MOOC-masowy otwarty kurs online) do oprogramowania Office oferuje pomoc w używaniu rożnych programów pakietu Office 365.|
-|Zresetuj hasło administratora|Pozwala zmienić hasło logowania do portalu administratora Microsoft.|
+### Zarządzaj usługą Office 365 Reseller
+
+Po utworzeniu i udostępnieniu usługi Office 365, można nią zarządzać poprzez [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+
+W tym celu przejdź do sekcji `Sunrise`{.action}. W menu po lewej stronie wybierz `Office 365 Reseller`{.action} i wybierz usługę.
+
+Pojawiają się następujące informacje:
+
+- **Nazwa wewnętrzna usługi**: wskazuje nazwę Twojej usługi. Jest to widoczne jedynie w Panelu klienta.
+- **Nazwa wyświetlania usługi**: pozwala na personalizację nazwy wyświetlacza w Panelu klienta.
+- **Utworzony dnia**: wskazuje datę utworzenia usługi.
+- **Portal administracyjny Microsoft**: link do portalu Office pozwalający na zarządzanie subskrypcjami.
+- **Zresetuj hasło administratora**: umożliwia zmianę hasła do portalu administracyjnego Microsoft.
 
 ![office365](images/sunrise_office365_CSP2_services_details.png){.thumbnail}
 
-### Automatyczna konfiguracja domeny hostowanej w OVH
+### Automatyczna konfiguracja domeny hostowanej w OVHcloud
 
-OVH udostępnia narzędzie ułatwiające konfigurację domeny. Dzięki czemu można automatycznie skonfigurować domeny, które używają strefy DNS OVH, aby mogły funkcjonować z następującymi programami:
+OVHcloud udostępnia narzędzie ułatwiające konfigurację strefy DNS Twojej domeny. Możesz automatycznie skonfigurować Twoje domeny w strefie DNS OVHcloud, aby mogły działać z następującymi rozwiązaniami:
 
-- Exchange Online,
-- Skype,
+- Exchange Online;
+- Skype;
 - Intune.
 
-Aby przeprowadzić konfigurację, wybierz daną domenę z rozwijanej listy, a następnie wybierz pożądane rozwiązania. Stworzymy wtedy odpowiednie pola DNS w strefie DNS domeny.
+Aby przeprowadzić konfigurację, wybierz daną domenę z rozwijanej listy, a następnie wybierz pożądane rozwiązania. Utworzymy wtedy odpowiednie pola DNS w strefie DNS domeny.
+
+> [!warning]
+> Aby konfiguracja działała, upewnij się, że korzystasz z serwerów DNS OVHcloud dla domen, których dotyczy operacja. Zapoznaj się z naszym przewodnikiem [Zmiana serwerów DNS domeny OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/).
+>
 
 ![office365](images/sunrise_office365_CSP2_automatic_domain_configuration.png){.thumbnail}
 
 ### Zarządzanie subskrypcjami
 
-Zarządzanie subskrypcjami umożliwia zamawianie lub anulowanie subskrypcji na licencje Office 365. Tabela wyświetla szczegóły aktywnych subskrypcji.
+Zarządzanie subskrypcjami pozwala na zwiększenie lub anulowanie licencji przypisanych do grupy subskrypcji. Tabela pozwala wyświetlić szczegóły:
 
-|Tytuł|Opis|
-|---|---|
-|ID|Każdy typ zamówionej licencji posiada unikalny identyfikator (ID).| 
-|Status|Pokazuje stan licencji.|
-|Nazwa licencji|Pokazuje typ zakupionej licencji.| 
-|Ilość licencji|Wskazuje liczbę dostępnych licencji.|
-|Data utworzenia|Pokazuje datę utworzenia subskrypcji dla wybranego typu licencji.| 
-|Ostatnia aktualizacja|Wskazuje datę ostatniej aktualizacji subskrypcji (jak np. dodanie licencji).|
+- **ID**: każdy rodzaj zamówionej licencji posiada unikalny identyfikator (ID).
+- **Status**: odpowiada statusowi Twojej licencji.
+- **Nazwa licencji**: wskazuje rodzaj licencji wykupionej.
+- **Liczba licencji**: wskazuje liczbę dostępnych licencji.
+- **Data utworzenia**: wskazuje datę utworzenia subskrypcji wybranego typu licencji.
+- **Ostatnia aktualizacja**: wskazuje datę ostatniej aktualizacji (np. dodanie licencji) subskrypcji.
 
-Ikona ołówka umożliwia zmianę całkowitej liczby licencji w danej subskrypcji. Ikona kosza umożliwia anulowanie subskrypcji oraz wszystkich przypisanych do niej licencji.
+`Ikona w kształcie ołówka` pozwala na zmianę całkowitej liczby licencji w abonamencie. `Ikona w kształcie kosza` pozwala na anulowanie subskrypcji oraz wszystkich licencji.
 
 > [!primary]
 >
-> Specjalne warunki użytkowania zapewniane przez Microsoft muszą być przestrzegane w przypadku licencji edukacyjnych. Znajdź dokumenty w swoim języku i odpowiednie dla Twojego regionu [tutaj](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&Keyword=AcademicQualEdUserDef){.external}.
+> Specjalne warunki użytkowania zapewniane przez Microsoft muszą być przestrzegane w przypadku licencji edukacyjnych. Oficjalne dokumenty dostępne są [tutaj](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&Keyword=AcademicQualEdUserDef){.external} w zależności od języka i regionu.
 >
 
 ![office365](images/sunrise_office365_CSP2_Subscribers.png){.thumbnail}
 
 ### Zarządzanie użytkownikami
 
-Gdy posiadasz już wystarczającą liczbę licencji, możesz zarządzać użytkownikami, którzy będą z nich korzystać. Ten etap jest wykonywany bezpośrednio z [portalu administratora Microsoft](https://portal.office.com/Admin/Default.aspx){.external}.
+Teraz, kiedy masz już wystarczającą liczbę licencji, musisz zarządzać użytkownikami, którzy będą z nich korzystać. Ta część odbywa się bezpośrednio z poziomu [portalu administracyjnego Microsoft](https://portal.office.com/Admin/Default.aspx){.external}.
 
-Aby się zalogować, należy podać swoją nazwę użytkownika oraz hasło wysłane w e-mailu od OVH potwierdzającym instalację grupy licencji.
+Aby się zalogować, wpisz swój identyfikator klienta oraz hasło wysłane w e-mailu OVHcloud potwierdzającym instalację grupy licencji. Informacje te są wysyłane na adres podany podczas tworzenia grupy licencji.
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com](https://community.ovh.com){.external}
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

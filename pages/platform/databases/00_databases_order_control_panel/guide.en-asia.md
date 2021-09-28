@@ -1,12 +1,12 @@
 ---
-title: Getting started with MongoDB
+title: Getting started with Public Cloud Databases
 excerpt: Find out how to set up your managed MongoDB service in the OVHcloud Control Panel
 slug: getting-started
-section: Getting started
+section: General information
 order: 1
 ---
 
-**Last updated 14th June 2021**
+**Last updated June 14<sup>th</sup>, 2021**
 
 ## Objective
 

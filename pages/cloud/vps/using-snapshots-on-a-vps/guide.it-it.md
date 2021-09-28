@@ -6,7 +6,11 @@ section: 'Opzioni di backup'
 order: 1
 ---
 
-**Ultimo aggiornamento: 22/07/2020**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 10/09/2021**
 
 
 ## Obiettivo
@@ -49,6 +53,11 @@ Dal momento che puoi ottenere l’attivazione di un solo snapshot alla volta, qu
 ![snapshotvps](images/snapshot_vps_step2.png){.thumbnail}
 
 Se sei certo che desideri ripristinare il tuo VPS allo stato dello snapshot, clicca su `Ripristina lo snapshot`{.action} e conferma il ripristino nella finestra popup.
+
+> [!alert]
+>
+> Ricorda che quando ripristina un VPS da un'istantanea, quest'ultima verrà eliminata. Per conservare la stessa istantanea, è necessario ripeterne una prima di apportare modifiche al sistema ripristinato.
+>
 
 ### Best practice per la creazione di uno Snapshot
 

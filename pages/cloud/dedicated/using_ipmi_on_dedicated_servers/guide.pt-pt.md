@@ -3,6 +3,7 @@ title: 'Como utilizar o IPMI com servidores dedicados'
 slug: usar-ipmi-servidores-dedicados
 excerpt: 'O IPMI permite aceder diretamente ao seu servidor, sem necessidade de usar outro software'
 section: Introdução
+order: 4
 ---
 
 > [!primary]

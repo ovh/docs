@@ -70,7 +70,7 @@ W celu przeprowadzenia tej instalacji upewnij się, że pole wyboru `Instalacja 
 
 ![Prosta instalacja modułu](images/choose_installation.png){.thumbnail}
 
-Po zakończeniu instalacji, otrzymasz wiadomość e-mail zawierającą dane niezbędne do zalogowania się do interfejsu administratora CMS-a. Od tej chwili możesz się do niego logować i personalizować Twoją stronę.
+Po zakończeniu instalacji otrzymasz e-mail z informacjami niezbędnymi do logowania się do interfejsu administratora CMS-a. Zaloguj się do Panelu klienta i personalizuj Twoją stronę WWW.
 
 #### Instalacja w trybie zaawansowanym
 

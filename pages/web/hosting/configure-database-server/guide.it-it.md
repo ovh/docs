@@ -2,7 +2,7 @@
 title: Configura il tuo database server 
 slug: configurare-ottimizzare-il-tuo-database-server
 excerpt: Come configurare e ottimizzare il tuo database server
-section: 'SQL Privato'
+section: SQL Privato
 order: 6
 ---
 

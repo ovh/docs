@@ -1,102 +1,93 @@
 ---
-title: Contratar y gestionar un grupo de licencias de Office 365 OVH
-excerpt: Contratar una licencia de Office 365 OVH
+title: Gestionar un grupo de licencias Microsoft 365 OVHcloud
 slug: contratar_y_gestionar_un_grupo_de_licencias_de_office_365_ovh
-legacy_guide_number: g1960
-section: Office 365
+excerpt: Esta guía explica cómo contratar una licencia Microsoft 365 y administrarla desde el área de cliente de OVHcloud.
+section: Office
+order: 2
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
 
-## Desde la web de OVH
-Es posible contratar licencias de Office 365 desde el área de cliente o desde el sitio web [www.ovh.es](https://www.ovh.es/office-365-business).
-Al contratar licencias de Office 365 desde [www.ovh.es](https://www.ovh.es/office-365-business), se crea automáticamente un nuevo grupo de licencias.
+**Última actualización: 09/09/2021**
 
-Si quiere añadir licencias a un grupo existente, es necesario hacerlo desde el área de cliente.
+## Objetivo
 
-Para contratar Office 365 (creación de un grupo de licencias), haga siga este enlace: [www.ovh.es](https://www.ovh.es/office-365-business) y haga clic en «Contratar».
+Existen varias ventajas para contratar los productos OVHcloud **Microsoft 365 apps for business** o **Microsoft 365 apps for enterprise**. La facturación es mensual y puede instalar una licencia en 5 PC o Mac, 5 tablets y 5 smartphones.
 
-![](images/img_4181.jpg){.thumbnail}
-Indique el número de licencias Business o Pro Plus que necesita y haga clic en «Contratar».
+Sus licencias Microsoft 365 se agrupan en un grupo, también llamado "Service". Un grupo de licencias Apps for business puede contener un máximo de 300 licencias, un grupo de licencias Apps for enterprise es ilimitado.
 
-![](images/img_4183.jpg){.thumbnail}
-A continuación se mostrará un resumen del pedido. Haga clic en «Continuar».
+Esta es la lista de programas incluidos en la siguiente:
 
-![](images/img_4184.jpg){.thumbnail}
-Conéctese con su ID de cliente y contraseña. Si aún no tiene un ID de cliente, haga clic en «Crear una cuenta».
+- Licencias Apps for business: Excel, Word, PowerPoint, Outlook, Note, Publisher.
+- Licencias Apps para empresa: Excel, Word, PowerPoint, Outlook, Nota, Publisher, Access.
 
-![](images/img_4185.jpg){.thumbnail}
-Una vez se haya conectado deberá aceptar los contratos relativos al servicio Office 365 y hacer clic en «Confirmar y pagar» para acceder a la orden de pedido.
+**Cómo contratar una licencia Microsoft 365 y administrarla desde el área de cliente de OVHcloud**
 
-La instalación del servicio se realiza en unos minutos. Cuando haya finalizado, le informaremos por correo electrónico.
+## Requisitos
 
+- Estar conectado al [área de cliente de OVHcloud.](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 
-## Desde el área de cliente
-Conéctese al [área de cliente](https://www.ovh.com/manager/web) con su ID de cliente y contraseña.
+## Procedimiento
 
-![](images/img_3073.jpg){.thumbnail}
-En la columna izquierda, sección «Microsoft», haga clic en «Contratar un grupo de licencias Office».
+### Contratar una licencia
 
-![](images/img_3074.jpg){.thumbnail}
-Elija el tipo y número de licencias que desea contatar:
+Acceda a nuestra web de [OVHcloud.com](https://www.ovh.es/office-365/){.external} y seleccione el apartado "Herramientas colaborativas" de nuestra sección "Web Cloud".
 
+También puede contratar una licencia desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Una vez conectado, seleccione `Web Cloud`{.action} en la barra superior y haga clic en el botón `Contratar`{.action} y en `o365`{.action}.
 
-- Licencias Office Business: Excel, Word, PowerPoint, Outlook, Note y Publisher.
+- Elija entre los productos disponibles, es decir, "Apps for business" y "Apps for enterprise".
+- Indique la frecuencia de renovación del grupo de licencias.
+- Indique el número de licencias que desea y haga clic en `Contratar`{.action}.
 
-- Licencias Office Pro Plus: Excel, Word, PowerPoint, Outlook, Note, Publisher, Access y Power BI.
+Será redirigido a la página de contratación para validarla y abonarla.
 
+### Activar la licencia
 
-Las licencias Office Pro Plus tienen las siguientes ventajas: 
+Una vez que haya contratado la licencia, deberá activarla desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la sección `Web Cloud`, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione `Office`{.action} y el grupo de licencias correspondiente.
 
+Haga clic en el botón `...`{.action} delante de la licencia y, seguidamente, en `Editar la cuenta`{.action}.
 
-- Pro Plus permite tener más de 300 licencias Office en el grupo.
-- Pro Plus incluye Access y Power BI.
+![correo electrónico](images/Outlook-cps1-01.png){.thumbnail}
 
+Introduzca la información relativa al usuario de la licencia, haga clic en `Siguiente`{.action} y luego en `Aceptar.`{.action}
 
+![correo electrónico](images/Outlook-cps1-02.png){.thumbnail}
 
-![](images/img_3076.jpg){.thumbnail}
-La versión para Mac no incluye los programas Note y Publisher.
-Una vez haya elegido el tipo y número de licencias, deberá aceptar los contratos y hacer clic en «Generar la orden de pedido».
+### Instalar la suite Microsoft 365 en su máquina
 
-![](images/img_3077.jpg){.thumbnail}
-Después de abonar la orden de pedido, este puede tardar hasta 4 horas en finalizarse.
+Una vez activada la licencia, recibirá un mensaje de correo electrónico en la dirección de correo electrónico de contacto de su cuenta de OVHcloud. También puede consultar este mensaje desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haciendo clic en su perfil en la esquina superior derecha y seleccionando el servicio de `correo electrónico`{.action} en la sección `Accesos rápidos`.
 
+Este mensaje de correo electrónico incluye la información necesaria para descargar e instalar su suite Microsoft 365, es decir, la dirección de **correo electrónico de activación** y la **contraseña**.
 
-## 
-La información general relativa al servicio Office aparecerá precumplimentada con valores genéricos. Puede modificarlos seleccionando «Editar el grupo de licencias».
-Una vez haya creado el grupo y este esté disponible en el [área de cliente](https://www.ovh.com/manager/web), podrá activar sus licencias de Office 365.
+>
+> Si desea establecer usted mismo la contraseña, deberá hacerlo desde el área de cliente. En la sección `Web Cloud`, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione el grupo de licencias correspondiente.
+>
+> Haga clic en el botón `...`{.action} a la derecha de la licencia correspondiente y, seguidamente, en `Cambiar la contraseña`{.action}.
+>
+>![correo electrónico](images/Outlook-cps1-03.png){.thumbnail}
+>
 
-Por defecto no aparecerá ningún usuario, tendrá que añadirlo para crear la licencia. Para ello, haga clic en el botón «Añadir un usuario».
+Acceda a <https://portal.office.com/> y conéctese con la dirección de **correo electrónico de activación** y la **contraseña** previamente configuradas. Se abrirá una ventana en la que podrá descargar la suite Microsoft 365 de su equipo con las instrucciones de instalación.
 
-![](images/img_3084.jpg){.thumbnail}
-Introduzca la siguiente información: 
+![correo electrónico](images/Outlook-cps1-04.png){.thumbnail}
 
+> [!primary]
+>
+> El usuario puede instalar la suite Microsoft 365 en 5 máquinas en Windows o macOS, en 5 tablets y 5 smartphones.
+>
 
-- Nombre (nombre de pila) 
-- Nombre (apellidos) 
-- Usuario 
-- Licencia utilizada
+### Añadir una licencia a un grupo existente
 
+Si quiere añadir una o más licencias al grupo de licencias existente, puede hacerlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la sección `Web Cloud`, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione `Office`{.action} y el grupo de licencias correspondiente.
 
-Haga clic en «Aceptar» para finalizar la operación. Su licencia estará disponible en unos minutos.
+Haga clic en el botón `Contratar más licencias`{.action} a la derecha. Indique el número y el tipo de licencias que quiere contratar.
 
-![](images/img_3085.jpg){.thumbnail}
-La licencia se activará y aparecerá en su área de cliente.
-En la pestaña «Consumo» podrá acceder al número de licencias utilizadas por mes.
+![correo electrónico](images/Outlook-cps1-05.png){.thumbnail}
 
-![](images/img_3086.jpg){.thumbnail}
-Para añadir otro usuario no tendrá que volver a crear un grupo de licencias, bastará con hacer clic directamente en el botón «Añadir un usuario». Se generará una factura automática correspondiente al número de licencias utilizadas durante un mes.
-Recibirá un mensaje de correo electrónico que podrá consultar haciendo clic en el menú con su nombre e ID de cliente > «Mi cuenta» > «Mensajes recibidos».
+## Más información
 
-![](images/img_3784.jpg){.thumbnail}
-Dicho mensaje contiene sus claves de acceso al sitio web de [Office](https://portal.office.com), donde podrá descargar el instalador del paquete Office.
+[Utilizar el escritorio remoto con Microsoft 365 apps](https://docs.ovh.com/es/microsoft-collaborative-solutions/office365-proplus-escritorio-remoto/)
 
-![](images/img_3089.jpg){.thumbnail}
-Introduzca en la web de Office las claves de acceso que se indican en el email.
-
-![](images/img_3090.jpg){.thumbnail}
-Haga clic en «Instalar» para descargar en su ordenador el archivo ejecutable que le permitirá instalar el paquete Office.
-
-En el menú «teléfono y tableta» encontrará información sobre cómo instalar Office en estos dispositivos.
-
-![](images/img_3092.jpg){.thumbnail}
-
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -4,8 +4,7 @@ legacy_guide_number: 2052
 slug: mise-en-place-repondeur-mail
 excerpt: 'Découvrez comment mettre en place un répondeur e-mail'
 section: 'Fonctionnalités des adresses e-mail'
-order: 3
-hiddent: true
+order: 02
 ---
 
 **Dernière mise à jour le 28/08/2020**

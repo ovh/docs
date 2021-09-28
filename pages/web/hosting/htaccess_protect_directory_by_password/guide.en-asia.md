@@ -9,6 +9,11 @@ legacy_guide_number: g1968
 
 Firstly, you have to create the file which will contain the list of usernames and passwords which are allowed to access the site. Usually, you create a .htpasswd file for this which will then be used by the .htaccess file. It is a simple text file, which contains usernames and their encrypted passwords. 
 
+> [!primary]
+>
+> If you have any questions about how to encrypt passwords in a .htpasswd file, please contact our [community of users](https://community.ovh.com/en/) or the [OVHcloud partners](https://partner.ovhcloud.com/asia/).
+>
+
 In Windows, you cannot directly create a file named .htaccess or .htpasswd. You must give it another name, transfer it to your web space and then rename it .htaccess or .htpasswd using your FTP client.
 
 The .htpasswd should not necessarily be in the same location as the .htaccess file. For example, you could place it in the webroot, and use it to protect different website directories, given that a single .htpasswd file can be used by several .htaccess files. The .htpasswd file must contain one line per user specifying the username and password.

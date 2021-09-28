@@ -3,7 +3,7 @@ title: 'Specifiche tecniche degli hosting condivisi'
 excerpt: 'Questa guida contiene informazioni e specifiche tecniche degli hosting condivisi'
 slug: hosting_condiviso_specifiche_tecniche
 legacy_guide_number: g1463
-section: 'Configurazione dell’hosting'
+section: Configurazione dell’hosting
 order: 6
 ---
 

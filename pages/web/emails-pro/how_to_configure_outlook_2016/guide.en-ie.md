@@ -51,14 +51,14 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 |![Outlook](images/config-outlook-emailpro02.png){.thumbnail}|Choose between IMAP and POP from the list of account types. <br>We recommend using IMAP.|
 |Enter your email password, then click `Next`{.action}. |![Outlook](images/config-outlook-emailpro03.png){.thumbnail}|
 |![Outlook](images/config-outlook-emailpro04.png){.thumbnail}|If Outlook was unable to automatically configure your address, this window will appear. <br>Click `Change Account Settings`{.action} |
-|Enter in **Incoming mail**: <br>- Server **pro**?**.mail.ovh.net** (replace "?" with your server number) <br>- Port **993**<br>- Encryption method **SSL/TLS**<br><br>Enter in **Outgoing mail**: <br>- Server **pro**?**.mail.ovh.net** (replace "?" with your server number)<br>- Port **587**<br>- Encryption method **SSL/TLS**<br><br>Click `Next`{.action} to confirm. |![Outlook](images/config-outlook-emailpro05.png){.thumbnail}|
+|Enter in **Incoming mail**: <br>- Server **pro**?**.mail.ovh.net** (replace "?" with your server number) <br>- Port **993**<br>- Encryption method **SSL/TLS**<br><br>Enter in **Outgoing mail**: <br>- Server **pro**?**.mail.ovh.net** (replace "?" with your server number)<br>- Port **587**<br>- Encryption method **STARTTLS**<br><br>Click `Next`{.action} to confirm. |![Outlook](images/config-outlook-emailpro05.png){.thumbnail}|
 
 
 For **POP** configuration, the values are:
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|
-|Incoming|pro**?**.mail.ovh.net (replace "?" with your server number)|SSL/TLS|993|
+|Incoming|pro**?**.mail.ovh.net (replace "?" with your server number)|SSL/TLS|995|
 |Outgoing|pro**?**.mail.ovh.net (replace "?" with your server number)|STARTTLS|587|
 
 ### Using your email address
@@ -93,7 +93,7 @@ The window is divided into two parts, **Incoming Mail** and **Outgoing Mail**. C
 ![Outlook](images/config-outlook-emailpro07.png){.thumbnail}
 
 
-## Go further
+## Go further <a name="gofurther"></a>
 
 [Configuring your MX Plan address in Outlook for Windows](../../emails/configuration-outlook-2016/)
 

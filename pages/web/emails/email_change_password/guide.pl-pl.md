@@ -3,7 +3,7 @@ title: 'Zmiana hasła do konta e-mail'
 slug: zmiana-hasla-do-konta-email
 excerpt: 'Dowiedz się, jak zmienić hasło do konta e-mail utworzonego w ramach pakietu MX Plan'
 section: 'Pierwsze kroki'
-order: 3
+order: 03
 ---
 
 **Ostatnia aktualizacja z dnia 06-05-2019**

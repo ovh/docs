@@ -2,7 +2,7 @@
 title: 'Starting an instance on a attached volume'
 excerpt: 'Find out how to start an instance on an attached volume'
 slug: start-instance-on-a-volume
-section: Getting Started
+section: Getting started
 order: 6
 ---
 

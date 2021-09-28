@@ -5,7 +5,7 @@ excerpt: 'Find out how to install Nginx Ingress on OVHcloud Managed Kubernetes '
 section: Tutorials
 ---
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated 31<sup>st</sup> August, 2021.**
 
 <style>
  pre {
@@ -51,15 +51,15 @@ The chart is fully configurable, but here we are using the default configuration
 ```
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
-helm install ngingress ingress-nginx/ingress-nginx
+helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
 ```
 
 The install process will begin:
 
-<pre class="console"><code>$ helm install ngingress ingress-nginx/ingress-nginx
-NAME: ngingress
+<pre class="console"><code>$ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
+NAME: ingress-nginx
 LAST DEPLOYED: Thu Jan 28 11:45:21 2021
-NAMESPACE: default
+NAMESPACE: ingress-nginx
 STATUS: deployed
 REVISION: 1
 TEST SUITE: None
@@ -72,7 +72,7 @@ test your `nginx-ingress` but the YAML provided is based on old API version (ext
 <pre class="console"><code>NOTES:
 The nginx-ingress controller has been installed.
 It may take a few minutes for the LoadBalancer IP to be available.
-You can watch the status by running 'kubectl --namespace default get services -o wide -w ngingress-ingress-nginx-controller'
+You can watch the status by running 'kubectl --namespace ingress-nginx get services -o wide -w ingress-nginx-controller'
 
 An example Ingress that makes use of the controller:
 
@@ -117,12 +117,12 @@ As the `LoadBalancer` creation is asynchronous, and the provisioning of the load
 
 If you try again in a few minutes you should get an `EXTERNAL-IP`:
 
-<pre class="console"><code>$ kubectl  get services  winning-lizard-nginx-ingress-controller
-NAME                                      TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)                      AGE
-winning-lizard-nginx-ingress-controller   LoadBalancer   10.3.106.37   6d6xxxx8r8.lb.c1.gra.k8s.ovh.net   80:30782/TCP,443:30619/TCP   6m
+<pre class="console"><code>$ kubectl -n ingress-nginx ingress-nginx-controller
+NAME                                      TYPE           CLUSTER-IP    EXTERNAL-IP    PORT(S)                      AGE
+winning-lizard-nginx-ingress-controller   LoadBalancer   10.3.106.37   152.42.42.42   80:30782/TCP,443:30619/TCP   6m
 </code></pre>
 
-You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_URL]` via HTTP or `https://[YOUR_LOAD_BALANCER_URL]` via HTTPS.
+You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_IP]` via HTTP or `https://[YOUR_LOAD_BALANCER_IP]` via HTTPS.
 
 In order to test your `nginx-ingress`, you can for example [install a Wordpress](../installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
 
@@ -137,7 +137,7 @@ metadata:
   namespace: default
 spec:
   rules:
-    - host: [YOUR_LOAD_BALANCER_URL]
+    - host: [YOUR_LOAD_BALANCER_IP]
       http:
         paths:
           - backend:
@@ -148,7 +148,7 @@ spec:
 ```
 
 > [!primary]
-> Don't forget to replace `[YOUR_LOAD_BALANCER_URL]` and `[YOUR_WORDPRESS_SERVICE_NAME]`.
+> Don't forget to replace `[YOUR_LOAD_BALANCER_IP]` and `[YOUR_WORDPRESS_SERVICE_NAME]`.
 
 Apply the file:
 
@@ -162,6 +162,6 @@ And the Ingress is created.
 ingress.extensions/ingress created
 </code></pre>
 
-So now if you point your browser to `http://[YOUR_LOAD_BALANCER_URL]`, you will see your Wordpress:
+So now if you point your browser to `http://[YOUR_LOAD_BALANCER_IP]`, you will see your Wordpress:
 
 ![Wordpress using Ingress](images/installing-ingress-01.png){.thumbnail}

@@ -4,6 +4,7 @@ title: Creatie en verwijdering van een beveiligingsgroep in Horizon
 excerpt: Leer hoe u een beveiligingsgroep via Horizon kunt aanmaken of verwijderen
 slug: creatie-verwijdering-beveiligingsgroep-horizon
 section: Vanaf de Horizon-interface
+hidden: true
 ---
 
 **Laatste update 07-03-2018**

@@ -3,6 +3,8 @@ title: 'Gerir e utilizar as mailing lists'
 excerpt: 'Neste guia, fique a saber como usar as mailing lists'
 slug: email_partilhado_guia_de_utilizacao_de_mailing-lists
 legacy_guide_number: g1596
+section: Funcionalidades dos endereços e-mail
+order: 03
 ---
 
 **Última atualização: 13/02/2020**

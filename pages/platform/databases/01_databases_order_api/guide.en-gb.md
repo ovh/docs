@@ -1,12 +1,12 @@
 ---
-title: How to order a MongoDB database via API
-excerpt: Find out how to order your Public Cloud managed database service using the OVHcloud API
+title: How to order and manage a database via API
+excerpt: Find out how to order and manage your Public Cloud managed database service using the OVHcloud API
 slug: order-api
-section: Configuration
-order: 1
+section: General information
+order: 2
 ---
 
-**Last updated 8th July 2021**
+**Last updated September 3<sup>rd</sup>, 2021**
 
 ## Objective
 
@@ -72,7 +72,7 @@ If you want to use public networking, you're all set. If you want to use private
 - **networkId**: The ID of the vRack you want to use
 - **subnetId**: The ID of the vRack subnet you want your cluster to be attached to
 
-The call returns an object describing the cluster you asked for. Initially, its **status** property will be `CREATING`. The **primaryUser** property lists the first provisioned user, with its initial password. That initial password won't be available again after this point. Take note of the **id** property of the newly-created cluster for the next step.
+The call returns an object describing the cluster you asked for. Initially, its **status** property will be `CREATING`. Take note of the **id** property of the newly-created cluster for the next step.
 
 ### Step 3: Wait for your database service to be ready
 
@@ -98,32 +98,24 @@ Declare the IP address blocks allowed to connect to your cluster with:
 
 You can add multiple allowed IP blocks.
 
-### Step 5: Find out about available users' roles
+### Step 5: Reset the primary user password
 
-Use this call to retrieve the list of available role IDs:
-
-> [!api]
-> @api {GET} /cloud/project/{serviceName}/database/mongodb/{clusterId}/role
-
-Then use this call to get the details for each one of the roles:
+At this point you don't know your cluster primary user's password. List your cluster's users with:
 
 > [!api]
-> @api {GET} /cloud/project/{serviceName}/database/mongodb/{clusterId}/role/{roleId}
+> @api {GET} /cloud/project/{serviceName}/database/mongodb/{clusterId}/user
 
-Refer to the [MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/) to learn about the permissions associated with each role.
-
-### Step 6: Create a user to access the cluster
-
-Create a user with:
+Note the id of your admin user. Reset its password with:
 
 > [!api]
-> @api {POST} /cloud/project/{serviceName}/database/mongodb/{clusterId}/user
+> @api {POST} /cloud/project/{serviceName}/database/mongodb/{clusterId}/user/{userId}/credentials/reset
 
-- **name** the name of the new user
-- **password** its password
-- **roles** an array of role IDs to associate with the user
+Note the new password of the user to later be able to connect to the cluster.
 
-### Step 7: Start using the cluster
+> [!warning]
+> That password won't ever be available later on: OVHcloud never stores users' passwords.
+
+### Step 6: Start using the cluster
 
 You’ll find the cluster connection information in your Control Panel; you can now start using the cluster!
 

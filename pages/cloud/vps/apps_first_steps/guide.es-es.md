@@ -6,15 +6,15 @@ section: 'Primeros pasos'
 order: 7
 ---
 
-**Última actualización: 8 de septiembre de 2020**
+**Última actualización: 16/09/2021**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
 
 ## Objetivo
 
-OVHcloud ofrece a los clientes VPS imágenes de aplicaciones preinstaladas para un despliegue rápido y fácil en pocos clics. 
+OVHcloud ofrece a los clientes VPS imágenes de aplicaciones preinstaladas para un despliegue rápido y fácil en pocos clics.
 
 **Esta guía explica cómo desplegar aplicaciones preinstaladas en un VPS.**
 
@@ -37,7 +37,7 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
 
 > [!primary]
 >
-> Si el enlace ya ha expirado, conéctese al servidor por SSH utilizando el usuario CentOS y ejecute el comando "whmlogin" para generar uno nuevo o reinstale la instancia.
+> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando "whmlogin" para generar un nuevo enlace.
 >
 
 <ol start="3">
@@ -66,7 +66,7 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
 1. Abra el mensaje de correo electrónico que haya recibido con las claves de acceso a la aplicación.
 2. Haga clic en la URL de Plesk en este email.
 3. Conéctese con el nombre de usuario y la contraseña del mensaje de correo electrónico.
-4. Una vez conectado, Plesk le preguntará:   
+4. Una vez conectado, Plesk le preguntará:
     a) Sus datos.  
     b) Una nueva contraseña para el usuario "admin" que utilizará para conectarse a la interfaz de Plesk.  
     c) Información sobre la licencia.*  
@@ -108,92 +108,6 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
 
 1. Conéctese al servidor por SSH utilizando el nombre de usuario y la contraseña del mensaje de correo electrónico.
 2. Compruebe que Docker funciona con el comando "docker run hello-world".
-
-No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
-
-#### GitLab
-
-A continuación se indican los primeros pasos para poner en servicio la imagen preinstalada de GitLab.
-
-1. Abra el mensaje de correo electrónico que haya recibido con las claves de acceso a la aplicación.
-2. Haga clic en la URL de GitLab en este email.
-3. Establezca su nueva contraseña.
-4. Conéctese con el usuario root y la nueva contraseña que acaba de establecer.
-
-Para más información, puede proteger su GitLab con un certificado SSL en [esta guía GitLab.](https://docs.gitlab.com/omnibus/settings/ssl.html){.external}..
-
-No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
-
-#### OpenVPN
-
-A continuación se indican los primeros pasos para poner en servicio la imagen preinstalada de OpenVPN.
-
-1. Abra el mensaje de correo electrónico que haya recibido con las claves de acceso a la aplicación.
-2. Haga clic en la URL de OpenVPN en este email.
-3. Conéctese con el nombre de usuario y la contraseña del mensaje de correo electrónico.
-
-No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
-
-
-#### WordPress
-
-A continuación se indican los primeros pasos para poner en servicio la imagen preinstalada de WordPress.
-
-1. Abra el mensaje de correo electrónico que haya recibido con las claves de acceso a la aplicación.
-2. Haga clic en la URL de WordPress en este email.
-3. Siga las instrucciones de configuración de WordPress. Cuando se le pida información sobre la base de datos, utilice localhost como dirección. Para el nombre de usuario y la contraseña, utilice la información proporcionada por la API.
-
-Para más información, asegúrese de que su sitio web está protegido con un certificado SSL gratuito, [siguiendo estos pasos](./#lets-encrypt-ssl_1).
-
-No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
-
-
-#### Joomla
-
-A continuación se indican los primeros pasos para poner en servicio la imagen preinstalada de Joomla.
-
-1. Abra el mensaje de correo electrónico que haya recibido con las claves de acceso a la aplicación.
-2. Haga clic en la URL de Joomla en este email.
-3. Siga las instrucciones de configuración de Joomla. Cuando se le pida información sobre la base de datos, utilice localhost como dirección. Para el nombre de usuario y la contraseña, utilice la información proporcionada por la API.
-
-Para más información, asegúrese de que su sitio web está protegido con un certificado SSL gratuito, [siguiendo estos pasos](./#lets-encrypt-ssl_1).
-
-No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
-
-
-#### Drupal
-
-A continuación se indican los primeros pasos para poner en servicio la imagen preinstalada de Drupal.
-
-1. Abra el mensaje de correo electrónico que haya recibido con las claves de acceso a la aplicación.
-2. Haga clic en la URL de Drupal en este email.
-3. Siga las instrucciones de configuración de Drupal. Cuando se le pida información sobre la base de datos, utilice "localhost" como dirección. Para el nombre de usuario y la contraseña, utilice la información proporcionada por la API.
-
-Para más información, asegúrese de que su sitio web está protegido con un certificado SSL gratuito, [siguiendo estos pasos](./#lets-encrypt-ssl_1).
-
-No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
-
-#### Prestashop
-
-A continuación ofrecemos las primeras etapas relativas a la puesta en servicio de la imagen preinstalada de Prestashop.
-
-1. Abra el mensaje de correo electrónico que haya recibido con las claves de acceso a la aplicación.
-2. Haga clic en la URL de PrestaShop en este email.
-3. Siga las instrucciones de configuración de PrestaShop. Cuando se le pida información sobre la base de datos, utilice siempre "localhost" como dirección y, para el nombre de usuario y la contraseña, utilice la información proporcionada por la API.
-4. Una vez finalizada la instalación, puede eliminar la carpeta de instalación y editar la URL de administración utilizando un script que hemos colocado en el servidor para usted. Al ejecutar este script, aplicaremos la recomendación de seguridad de Prestashop después de la instalación. Solo tiene que conectarse al servidor por SSH y ejecutar los siguientes comandos:
-
-```sh
-sudo -i
-sh /root/secure_prestashop.sh
-rm -f /root/secure_prestashop.sh
-```
-
-> [!primary]
->
-> Por favor, guarde el enlace devuelto. Solo podrá acceder a la administración de PrestaShop con el nuevo enlace.
->
-
-Proteja su sitio web gratuitamente con un certificado SSL en [estos pasos](./#lets-encrypt-ssl_1).
 
 No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
 

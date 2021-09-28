@@ -3,6 +3,7 @@ title: 'Crear y eliminar un grupo de seguridad en Horizon'
 slug: crear-eliminar-grupo-seguridad-en-horizon
 excerpt: 'Cómo crear o eliminar un grupo de seguridad desde Horizon'
 section: Horizon
+hidden: true
 ---
 
 **Última actualización: 18/06/2018**

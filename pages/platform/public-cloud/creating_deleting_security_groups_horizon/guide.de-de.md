@@ -3,6 +3,7 @@ title: 'Eine Sicherheitsgruppe in Horizon erstellen oder löschen'
 excerpt: 'Hier erfahren Sie, wie Sie über Horizon Sicherheitsgruppen erstellen oder löschen können.'
 slug: sicherheitsgruppe-in-horizon-erstellen-loeschen
 section: 'Horizon'
+hidden: true
 ---
 
 **Stand 16.08.2018**

@@ -1,5 +1,5 @@
 ---
-title: 'Configurar un grupo de seguridad'
+title: 'Crear y configurar un grupo de seguridad en Horizon'
 slug: configurar-un-grupo-de-seguridad
 excerpt: 'Cómo crear un grupo de seguridad y configurarlo en una instancia de Public Cloud'
 section: Gestión desde Horizon
@@ -8,9 +8,9 @@ order: 16
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
 
-**Última actualización: 08/11/2018**
+**Última actualización: 24/08/2021**
 
 ## Objetivo
 
@@ -20,31 +20,41 @@ Por motivos de seguridad, es posible configurar y utilizar reglas de filtrado qu
 
 ## Requisitos
 
-- Estar conectado a Horizon. Para más información, consulte la guía [Conectarse a Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/){.external}.
+- Un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/).
+- [Estar conectado a Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/)
 
 ## Procedimiento
 
 ### 1\. crear un grupo de seguridad
 
-En el menú `Acceso y seguridad`{.action}, abra la pestaña `Grupos de seguridad`{.action}. Una tabla lista los grupos de seguridad creados. El grupo "default" ya está listado. que permite pasar todo el tráfico entrante y saliente.
+Acceda a la interfaz [Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/). Seleccione la región en la que desea crear un grupo de seguridad utilizando el botón superior izquierdo.
 
-Para añadir un nuevo grupo de seguridad, haga clic en el botón `Crear un grupo de seguridad`{.action}.
+![definir la región](images/security-group0.png){.thumbnail}
 
-![public-cloud](images/2959.png){.thumbnail}
+> [!primary]
+>
+> Si un grupo de seguridad va a utilizarse en varias regiones, deberá crearlo para cada una de ellas.
+>
 
-En la nueva página, introduzca un nombre y una descripción para el grupo que vaya a crear. A continuación, haga clic en el botón `Crear un grupo de seguridad`{.action}.
+Despliegue el menú `Network`{.action} y haga clic en `Security Groups`{.action}. Una tabla lista los grupos de seguridad creados. El grupo "default" ya está listado. que permite pasar todo el tráfico entrante y saliente.
 
-![public-cloud](images/2960.png){.thumbnail}
+Para añadir un nuevo grupo de seguridad, haga clic en el botón `+ Create Security Group`{.action}.
 
-A continuación, en la pestaña `Grupos de seguridad`{.action}, la tabla mostrará el grupo que acaba de crear. Las reglas están configuradas por defecto. estas últimas dejan pasar únicamente el tráfico saliente. Si desea modificarlas, vaya al siguiente paso.
+![acceder a los grupos de seguridad](images/security-group1.png){.thumbnail}
 
-Si lo necesita, vaya al paso [3\. Configurar un grupo de seguridad en su instancia ](./#3-configurar-un-grupo-de-seguridad-en-su-instancia){.external} de dicho servicio.
+En la nueva página, introduzca un nombre y una descripción para el grupo que vaya a crear. A continuación, haga clic en el botón `Create Security Group`{.action}.
 
-### 2\. Configurar las reglas de un grupo de seguridad
+![crear un grupo de seguridad](images/security-group2.png){.thumbnail}
 
-Para modificar las reglas o, si lo necesita, acceda al menú `Acceso y Seguridad`{.action} y abra la pestaña `Grupos de seguridad`{.action}. Haga clic en el botón `Gestionar las reglas`{.action}. 
+A continuación, en la pestaña `Security Groups`{.action}, la tabla mostrará el grupo que acaba de crear. Las reglas están configuradas por defecto. estas últimas dejan pasar únicamente el tráfico saliente. Si desea modificarlas, vaya al siguiente paso.
 
-![public-cloud](images/2961.png){.thumbnail}
+Si lo necesita, lea esta guía en el [paso 3\. Configurar un grupo de seguridad en la instancia](#instance-security-group).
+
+### 2\. configurar las reglas de un grupo de seguridad
+
+Para cambiar las reglas por defecto o, si lo necesita, haga clic en el botón `Manage Rules`{.action}.
+
+![gestionar las reglas](images/security-group3.png){.thumbnail}
 
 Si ha dejado las reglas por defecto en su grupo de seguridad, estas solo dejan pasar el tráfico saliente.
 
@@ -56,14 +66,16 @@ ssh: connect to host 149.xxx.xxx.177 port 22: Connection timed out
 
 A continuación, en la página de gestión de las reglas, podrá:
 
-- eliminar una regla existente: Para ello, utilice el botón `Eliminar la regla`{.action}.
-- añadir una nueva regla: para ello, haga clic en el botón `Añadir una regla`{.action}.
+- eliminar una regla existente: Para ello, utilice el botón `Delete Rule`{.action}.
+- añadir una nueva regla: para ello, utilice el botón `+ Add Rule`{.action}.
 
-Al añadir una regla, deberá completar la información solicitada y hacer clic en `Añadir`{.action}. 
+Al añadir una regla, deberá completar la información solicitada y hacer clic en `Add`{.action}.
 
-![public-cloud](images/2963.png){.thumbnail}
+En nuestro ejemplo, vamos a autorizar la conexión SSH a la instancia.
 
-Una vez que haya solicitado la adición, espere a que esta esté operativa.
+![añadir una regla](images/security-group4.png){.thumbnail}
+
+Una vez que haya añadido la nueva regla, espere a que se aplique.
 
 ```bash
 root@serveur:~$ ssh admin@149.xxx.xxx.177
@@ -72,17 +84,23 @@ Last login: Tue Oct 13 13:56:30 2015 from proxy-109-190-254-35.ovh.net
 admin@serveur1:~$
 ```
 
-### 3\. Configurar un grupo de seguridad en su instancia
+### Configurar un grupo de seguridad en una instancia <a name="instance-security-group"></a>
 
-Una vez conectado a la interfaz, seleccione el menú `Instancias`{.action}. Cree una nueva instancia desde esta página. 
+Despliegue el menú `Compute`{.action} y seleccione `Instances`{.action} desde Horizon. Desde esta página, cree una nueva instancia utilizando el botón `Launch Instance`{.action}.
 
-A continuación, abra la pestaña `Acceso y seguridad`{.action} y seleccione el nuevo grupo de seguridad creado en el paso anterior.
+Al crear la instancia, puede elegir el nuevo grupo de seguridad creado en el paso anterior a través del menú `Security Groups`{.action}.
 
-![public-cloud](images/2962.png){.thumbnail}
+![Asignar grupo de seguridad](images/security-group5.png){.thumbnail}
 
-Es posible cambiar la configuración de los grupos de seguridad de las instancias ya creadas seleccionando la opción "Editar los grupos de seguridad".
+Puede aplicar un nuevo grupo de seguridad a una instancia ya creada haciendo clic en `Edit Security Groups`{.action} a la derecha de la instancia.
 
-![public-cloud](images/2964.png){.thumbnail}
+![modificar grupo de seguridad](images/security-group6.png){.thumbnail}
+
+### Eliminar un grupo de seguridad
+
+Para eliminar un grupo de seguridad, selecciónelo marcando la casilla correspondiente a la izquierda y haga clic en `Delete Security Groups`{.action}.
+
+![eliminar el grupo de seguridad](images/security-group7.png){.thumbnail}
 
 ## Más información
 

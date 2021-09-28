@@ -1,7 +1,8 @@
 ---
-title: Hosted Private Cloud
+title: Hosted Private Cloud powered by VMware
 slug: private-cloud
 excerpt: How to use your Hosted Private Cloud
+order: 01
 ---
 
 > [!product-section]

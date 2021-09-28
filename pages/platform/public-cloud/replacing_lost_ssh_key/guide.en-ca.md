@@ -3,7 +3,8 @@ title: 'Replacing your lost SSH key pair'
 slug: replacing_your_lost_ssh_key_pair
 excerpt: 'This guide explains how to configure the authorized_keys file for the admin user, so that you can add a new SSH key to regain access to your instance'
 legacy_guide_number: g2069
-section: Troubleshooting
+section: Management via Control Panel
+order: 4
 ---
 
 **Last updated 2018/10/05**

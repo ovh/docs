@@ -3,7 +3,7 @@ title: Configuring an email address on Android via the Gmail app
 slug: configuration-android
 excerpt: Find out how to configure an email address on Android, via the Gmail app
 section: Configure on smartphone
-order: 2
+order: 02
 ---
 
 **Last updated 5th May 2020**

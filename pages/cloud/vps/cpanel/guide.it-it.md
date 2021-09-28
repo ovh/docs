@@ -9,7 +9,7 @@ section: Utilizzo avanzato
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 02/06/2020**
+**Ultimo aggiornamento: 16/09/2021**
 
 ## Obiettivo
 
@@ -48,7 +48,7 @@ Una volta ricevuto l'email con il link unico, clicca su questo link per effettua
 
 > [!primary]
 >
-> Se il link è già scaduto, reinstalla il VPS con cPanel.
+> Se il link è già scaduto, connettiti al tuo VPS via SSH usando l'utente CentOS ed esegui il comando "whmlogin" per generare un nuovo link.
 >
 
 L'URL di cui sopra ti permette di connetterti senza informazioni di identificazione (utente e password) alla tua interfaccia WHM.

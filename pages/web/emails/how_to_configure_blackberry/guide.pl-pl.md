@@ -3,6 +3,7 @@ title: 'Konfiguracja konta e-mail na telefonie BlackBerry'
 excerpt: 'Przewodnik ten wyjaśnia, w jaki sposób skonfigurować konto e-mail w BlackBerry.'
 slug: hosting_www_konfiguracja_blackberry
 section: 'Konfiguracja na smartfonie'
+order: 03
 ---
 
 ## Część 1: Ustawienia

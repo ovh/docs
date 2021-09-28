@@ -3,6 +3,7 @@ title: Installing WordPress on an instance
 excerpt: Find out how to use a Public Cloud instance for WordPress
 slug: install_wordpress_on_an_instance
 section: Tutorials
+hidden: true
 ---
 
 **Last updated 26th July 2021**

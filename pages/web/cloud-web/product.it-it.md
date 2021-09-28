@@ -2,6 +2,7 @@
 title: Cloud Web
 slug: cloud-web
 sections: Per iniziare
+order: 09
 ---
 
 > [!product-section]

@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 8
 ---
 
-**Last updated 8th September 2020**
+**Last updated 16th September 2021**
 
 ## Objective
 
@@ -33,7 +33,7 @@ This section will explain the first steps specifically for the cPanel pre-instal
 
 > [!primary]
 >
-> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the "whmlogin" command to generate a new one or just reinstall the VPS.
+> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the "whmlogin" command to generate a new link.
 >
 
 <ol start="3">
@@ -102,89 +102,6 @@ This section will explain the first steps specifically for the Docker pre-instal
 
 1. SSH into the server using the login details sent in the email to you.
 2. Check that Docker is working using the "docker run hello-world" command.
-
-No further steps are necessary to complete the first configuration of this application.
-
-#### GitLab
-
-This section will explain the first steps specifically for the GitLab pre-installed image.
-
-1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for GitLab in the email.
-3. Set your new password.
-4. Log in with "root" and the new password you have just set.
-
-You can go further by securing your GitLab with an SSL certificate by following [this GitLab guide.](https://docs.gitlab.com/omnibus/settings/ssl.html){.external}.
-
-No further steps are necessary to complete the first configuration of this application.
-
-#### OpenVPN
-
-This section will explain the first steps specifically for the OpenVPN pre-installed image.
-
-1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for OpenVPN in the email.
-3. Log in using the username and password provided in the email.
-
-No further steps are necessary to complete the first configuration of this application.
-
-#### WordPress
-
-This section will explain the first steps specifically for the WordPress pre-installed image.
-
-1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for WordPress in the email.
-3. Follow the on screen final configuration instructions of WordPress. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
-
-You can go further by securing your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl_1).
-
-No further steps are necessary to complete the first configuration of this application.
-
-#### Joomla
-
-This section will explain the first steps specifically for the Joomla pre-installed image.
-
-1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for Joomla in the email.
-3. Follow the on screen final configuration instructions of Joomla. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
-
-You can go further by securing your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl_1).
-
-No further steps are necessary to complete the first configuration of this application.
-
-#### Drupal
-
-This section will explain the first steps specifically for the Drupal pre-installed image.
-
-1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for Drupal in the email.
-3. Follow the on screen final configuration instructions of Drupal. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
-
-You can go further by securing your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl_1).
-
-No further steps are necessary to complete the first configuration of this application.
-
-#### Prestashop
-
-This section will explain the first steps specifically for the Prestashop pre-installed image.
-
-1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for Prestashop in the email.
-3. Follow the on screen final configuration instructions of Prestashop. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
-4. Once the initial setup is done you can delete the install folder and change the admin URL using a script we placed on the server for you. By executing this script we will carry out the security recommendation by Prestashop after installation. Just SSH into the server and execute these commands:
-
-```sh
-sudo -i
-sh /root/secure_prestashop.sh
-rm -f /root/secure_prestashop.sh
-```
-
-> [!primary]
->
-> Make sure you save the link that is returned. You will only be able to access Prestashop admin with the new link.
->
-
-Secure your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl_1).
 
 No further steps are necessary to complete the first configuration of this application.
 

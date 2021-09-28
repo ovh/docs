@@ -11,5 +11,5 @@ order: 04
 > ### SSH et clé SSH
 >
 > - [Introduction au SSH](https://docs.ovh.com/fr/dedicated/ssh-introduction/)
-> - [Installer la clé SSH OVH](https://docs.ovh.com/fr/dedicated/ovh-ssh-key/)
+> - [Installer la clé SSH OVHcloud](https://docs.ovh.com/fr/dedicated/ovh-ssh-key/)
 >

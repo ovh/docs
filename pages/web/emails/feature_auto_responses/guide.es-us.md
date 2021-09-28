@@ -4,7 +4,7 @@ excerpt: Cómo configurar un contestador de correo
 slug: guia_de_creacion_de_un_contestador
 legacy_guide_number: g2052
 section: Gestión de la cuenta de correo
-hidden: true
+order: 02
 ---
 
 > [!primary]

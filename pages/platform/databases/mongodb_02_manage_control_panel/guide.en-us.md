@@ -1,12 +1,12 @@
 ---
-title: Managing a MongoDB database service from the OVHcloud Control Panel
+title: MongoDB - Managing a database service from the OVHcloud Control Panel
 excerpt: Find out how to manage your databases in the OVHcloud Control Panel
 slug: mongodb/managing-service
-section: Getting started
+section: MongoDB
 order: 2
 ---
 
-**Last updated 14th June 2021**
+**Last updated June 14<sup>th</sup>, 2021**
 
 ## Objective
 
@@ -51,7 +51,7 @@ Switch to the tab `Users`{.action}. An admin user is pre-configured during the s
 
 ![Users](images/configure_mongo03.png){.thumbnail}
 
-You can more users by clicking on the button `Add user`{.action}.
+You can add more users by clicking on the button `Add user`{.action}.
 
 ![Add users](images/configure_mongo04.png){.thumbnail}
 

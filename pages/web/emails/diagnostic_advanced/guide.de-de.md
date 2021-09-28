@@ -3,7 +3,7 @@ title: 'E-Mails können nicht gesendet oder empfangen werden'
 excerpt: 'Erfahren Sie hier die Vorgehensweise, wenn Sende- oder Empfangsprobleme über OVHcloud auftreten'
 slug: die_statuscodes_von_smtp-servern
 section: Diagnose
-order: 1
+order: 02
 legacy_guide_number: g2272
 ---
 

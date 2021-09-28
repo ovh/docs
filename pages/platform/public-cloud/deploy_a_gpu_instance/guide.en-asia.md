@@ -2,7 +2,7 @@
 title: 'Deploying a GPU instance'
 slug: deploying-a-gpu-instance
 excerpt: 'Find out how to deploy a GPU instance on Linux or Windows'
-section: 'From the OVHcloud Control Panel'
+section: Management via Control Panel
 ---
 
 **Last updated 2018/10/30**

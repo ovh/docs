@@ -3,7 +3,8 @@ title: 'Transfer an instance backup from one datacentre to another'
 slug: transfer_instance_backup_from_one_datacentre_to_another
 excerpt: 'This guide will show you how to transfer an instance backup from one datacentre to another while preserving the configuration and state of the instance'
 legacy_guide_number: g1853
-section: 'Resource management'
+section: OpenStack
+order: 7
 ---
 
 **Last updated 1st April 2019**

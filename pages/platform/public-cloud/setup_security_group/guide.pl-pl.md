@@ -1,92 +1,107 @@
 ---
-title: Konfiguracja grup zabezpieczeń
+title: 'Tworzenie i konfigurowanie grupy zabezpieczeń w interfejsie Horizon'
 slug: konfiguracja_grupy_zabezpieczen
-excerpt: Dostosowywanie reguł filtrowania dla ruchu sieciowego w interfejsie Horizon.
+excerpt: 'Dowiedz się, jak utworzyć grupę zabezpieczeń i skonfigurować ją na instancji Public Cloud'
 legacy_guide_number: g1925
 section: Zarządzanie w interfejsie Horizon
 ---
 
-**Ostatnia aktualizacja dnia 2018-03-12**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 24-08-2021**
 
 ## Wprowadzenie
 
-W celu podniesienia bezpieczeństwa infrastruktury stosowane są reguły zabezpieczeń, czyli reguły filtrowania, które będą definiować dostęp do instancji. Możesz autoryzować lub blokować połączenia przychodzące lub wychodzące za pomocą grup zabezpieczeń, korzystając z predefiniowanych filtrów, na przykład dla ruchu w protokole UDP jak i filtrów konfigurowanych samodzielnie.
+Ze względów bezpieczeństwa możesz konfigurować i używać reguł filtrowania, które zdefiniują dostęp do instancji. Możesz zezwolić lub zablokować niektóre połączenia przychodzące lub wychodzące za pomocą grup zabezpieczeń. Reguły te mogą być stosowane w przypadku ruchu pochodzącego z niektórych adresów IP lub nawet w przypadku instancji skonfigurowanych w grupach zabezpieczeń.
 
-Funkcję tę można wykorzystywać jako szablon dla tworzonych instancji, w ten sposób nowo utworzone instancje od razu będą działały ze zdefiniowanymi wcześniej przez Ciebie regułami zabezpieczeń.
-
-**Przewodnik ten wyjaśnia, jak posługiwać się konfiguratorem, aby ustawić potrzebne zabezpieczenia sieci dla usługi [Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}.**
-
-W ten sposób grupy zabezpieczeń pozwalają na znaczne zaoszczędzenie czasu przy konfiguracji nowych instancji czy całych infrastruktur.
-
-Także wprowadzanie zmian jest znacznie szybsze, zamiast wprowadzać je kolejno na wszystkich instancjach, wystarczy zmodyfikować konfigurację danej grupy zabezpieczeń. Wszystkie maszyny z niej korzystające automatycznie będą przez nie chronione.
-
+**Dowiedz się, jak utworzyć grupę zabezpieczeń i skonfigurować ją na instancji Public Cloud.**
 
 ## Wymagania początkowe
 
-- Utworzony projekt [Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}
-- Dostęp do [interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/){.external}
+- Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/).
+- [Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)
 
 ## W praktyce
 
-### Konfiguracja grupy zabezpieczeń
+### Etap 1: utworzyć grupę zabezpieczeń
 
-Zaloguj się do Horizon upewniając się, że logujesz się do odpowiedniego Projektu Public Cloud. Po zalogowaniu sprawdź, czy wyświetlane są dane właściwego `Regionu` (zaznaczenie nr 1), w lewym menu wybierz `Network`{.action} (zaznaczenie numer 2), a następnie `Security Groups`{.action} (zaznaczenie nr 3).
+Dostęp do interfejsu [Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/). Wybierz region, w którym chcesz utworzyć grupę zabezpieczeń, klikając przycisk w lewym górnym rogu.
 
-![Grupy bezpieczeństwa](images/1_security_groups_menu_description.png){.thumbnail}
-
-Możesz zmienić ustawienia domyślnie skonfigurowanej grupy klikając na  przycisk `Manage Rules`{.action} (zaznaczenie nr 4) lub utworzyć nową grupę zabezpieczeń (zaznaczenie nr 5).
-
-Nowo utworzona grupa domyślnie umożliwia jedynie ruch wychodzący. Aby nowo utworzoną grupę skonfigurować według własnych potrzeb, kliknij na `Manage Rules`{.action}. Teraz możesz dodać nową regułę klikając na `+ Add Rule`{.action} lub usunąć istniejącą przyciskiem `Delete`{.action}.
-
-
-![Konfiguracja reguły](images/2_add_rule.png){.thumbnail}
-
-
-Zostanie otwarte okno konfiguracyjne:
-
-
-![Opcje konfiguracyjne](images/3_manage_security_group_rules.png){.thumbnail}
-
-
-Pole `Rule`: możesz wybrać szablon reguły (np.: IMAP) lub użyć reguł niestandardowych, np dla ruchu z wykorzystaniem protokołu UDP.
-
-Pole `Direction` określa jakiego ruchu dotyczy reguła, opcja dostępna dla reguł niestandardowych.
-
-Pole `Open port` oraz `Port` służą do zdefiniowania jednego portu lub zakresu portów.
-W przypadku reguł TCP i UDP można wybrać otwarcie jednego portu lub zakresu portów. W przypadku reguł ICMP należy zamiast portów podać typ ICMP i kod w dostarczonych przestrzeniach.
-
-Pole `Remote` służy wskazaniu źródła ruchu, które będzie akceptowane przez tę regułę. Możesz to zrobić w postaci bloku adresu IP (CIDR) lub grupy źródłowej (grupa zabezpieczeń). 
-Wybranie grupy zabezpieczeń jako źródła umożliwi dowolnej instancji w tej grupie zabezpieczeń na dostęp do dowolnej innej instancji za pośrednictwem tej reguły.
+![określenie regionu](images/security-group0.png){.thumbnail}
 
 > [!primary]
 >
-> Każda grupa zabezpieczeń funkcjonuje tylko w jednym Regionie i tylko instancje z tego samego regionu będą mogły z niego korzystać. Aby taka sama grupa zabezpieczeń mogła funkcjonować w wielu Regionach, należy je utworzyć i kolejno skonfigurować.
+> Jeśli grupa zabezpieczeń ma być używana w kilku regionach, należy ją utworzyć dla każdego z nich.
 >
 
+Teraz rozwiń menu `Network`{.action} i kliknij `Security Groups`{.action}. Tabela zawiera listę utworzonych grup zabezpieczeń. Grupa "default" została już wymieniona. Pozwala on na przepuszczanie całego ruchu przychodzącego i wychodzącego.
 
-### Dodawanie grupy zabezpieczeń do instancji
+Aby dodać nową grupę zabezpieczeń, kliknij przycisk `+ Create Security Group`{.action}.
 
-Aby dana grupa zabezpieczeń była respektowana dla danej instancji, należy tę grupę dodać w konfiguracji instancji. W panelu Horizon ta opcja jest dostępna także podczas tworzenia nowej instancji.
+![dostęp do grup zabezpieczeń](images/security-group1.png){.thumbnail}
 
-Przejdź do sekcji `Compute`{.action} a następnie `Instances`{.action} w lewym menu i wyświetl menu instancji, dla której chcesz zmienić ustawienia grup zabezpieczeń:
+Na stronie, która się wyświetla podaj nazwę i opis grupie, którą zamierzasz utworzyć. Po wykonaniu tego działania kliknij przycisk `Create Security Group`{.action}.
 
-![Opcje konfiguracyjne](images/4_instance_menu_sec_group.png){.thumbnail}
+![utworzyć grupę zabezpieczeń](images/security-group2.png){.thumbnail}
 
+W zakładce `Security Groups`{.action} tabela wyświetla nowo utworzoną grupę. Reguły są skonfigurowane domyślnie. Ruch wychodzący z listy jest przepuszczalny. Przejdź do kolejnego etapu, jeśli chcesz je zmienić.
 
-W oknie edycyjnym wyświetlą się dwie kolumny: `All Security Groups` (wszystkie grupy zabezpieczeń), która prezentuje dostępne grupy zabezpieczeń dla danego Projektu i Regionu.
+Jeśli użytkownik zgadza się z tymi zasadami, zapoznaj się z tym przewodnikiem w etapie 3 "[konfiguracja grupy zabezpieczeń na jego instancji](#instance-security-group)".
 
-![Opcje konfiguracyjne](images/5_instance_sec_group_adding.png){.thumbnail}
+### Etap 2: skonfiguruj reguły grupy zabezpieczeń
 
-W kolumnie `Instance Security Groups` (grupy zabezpieczeń instancji) prezentowana jest lista grup, w których pracuje ta instancja.
+Aby zmienić domyślne reguły lub zmienić Twoje potrzeby, kliknij przycisk `Manage Rules`{.action}.
 
-Użyj przycisków `+` i `-` aby przyłączyć lub odłączyć daną grupę. Zapisane zmiany będą wdrożone w ciągu kilku minut.
+![zarządzanie regułami](images/security-group3.png){.thumbnail}
 
+Jeśli zostawiłeś domyślne reguły dla grupy zabezpieczeń, przepuszczają one tylko ruch wychodzący.
 
-## Sprawdź również 
+```bash
+root@serveur:~$ ssh admin@149.xxx.xxx.177
 
-[Dostęp do panelu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/){.external}
+ssh: connect to host 149.xxx.xxx.177 port 22: Connection timed out
+```
 
-[Tworzenie i usuwanie grup zabezpieczeń](https://docs.ovh.com/pl/public-cloud/tworzenie-usuwanie-grupy-bezpieczenstwa-horizon/){.external}
+Teraz na stronie zarządzania regułami możesz:
 
+- usuń istniejącą regułę: w tym celu użyj przycisku `Delete Rule`{.action};
+- dodaj nową regułę: Użyj przycisku `+ Add Rule`{.action}.
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Podczas dodawania reguły należy uzupełnić wymagane informacje, a następnie kliknąć `Add`{.action}.
+
+W poniższym przykładzie pozwolimy na połączenie SSH z instancją.
+
+![dodaj regułę](images/security-group4.png){.thumbnail}
+
+Po dodaniu nowej reguły odczekaj kilka minut, aż zostanie ona uwzględniona.
+
+```bash
+root@serveur:~$ ssh admin@149.xxx.xxx.177
+
+Last login: Tue Oct 13 13:56:30 2015 from proxy-109-190-254-35.ovh.net
+admin@serveur1:~
+```
+
+### Konfiguracja grupy zabezpieczeń na instancji <a name="instance-security-group"></a>
+
+W interfejsie Horizon rozwiń menu `Compute`{.action} i wybierz `Instancje`{.action}. Na tej stronie możesz utworzyć nową instancję za pomocą przycisku `Launch Instance`{.action}.
+
+Po utworzeniu instancji możesz, za pomocą menu `Security Groups`{.action}, wybrać nową grupę zabezpieczeń utworzoną na poprzednim etapie.
+
+![przypisz grupę zabezpieczeń](images/security-group5.png){.thumbnail}
+
+Możesz zastosować nową grupę zabezpieczeń dla instancji, która została już utworzona, klikając `Edit Security Groups`{.action} po prawej stronie instancji.
+
+![zmiana grupy zabezpieczeń](images/security-group6.png){.thumbnail}
+
+### Usuń grupę zabezpieczeń
+
+Aby usunąć grupę zabezpieczeń, zaznacz ją w odpowiednim polu po lewej stronie, następnie kliknij Delete `Security Groups`{.action}
+
+![usuń grupę zabezpieczeń](images/security-group7.png){.thumbnail}
+
+## Sprawdź również
+
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
