@@ -4,6 +4,7 @@ excerpt: "Guida all'ottimizzazione delle performance del tuo sito"
 id: '1396'
 slug: web_hosting_ottimizza_le_performance_del_tuo_sito
 legacy_guide_number: g1396
+section: Ottimizza il tuo sito
 ---
 
 **Ultimo aggiornamento: 05/02/2020**

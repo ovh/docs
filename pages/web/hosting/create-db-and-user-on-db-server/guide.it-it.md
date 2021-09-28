@@ -2,7 +2,7 @@
 title: Crea i tuoi database e i tuoi utenti sul tuo database server
 slug: creare-database-e-utente
 excerpt: Come creare un database sul tuo database server
-section: 'SQL Privato'
+section: SQL Privato
 order: 2
 ---
 
