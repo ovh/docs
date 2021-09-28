@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 5
 ---
 
-**Dernière mise à jour le 30/01/2020**
+**Dernière mise à jour le 28/09/2021**
 
 ## Objectif
 
@@ -51,10 +51,10 @@ Le propriétaire du compte xx11111-ovh a obligatoirement le privilège **adminis
 
 ### Étape 2 : ajouter un utilisateur
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez en haut à droite sur`votre nom`{.action} (1), puis sélectionnez `Mon compte`{.action} (2). 
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez en haut à droite sur`votre nom`{.action} (1), puis sur vos initiales (2). 
 Cliquez alors sur l'onglet `Gestion des utilisateurs`{.action} (3) puis sur `Ajouter un utilisateur`{.action} (4).
 
-![users-management](images/usersmanagement1.png){.thumbnail}
+![users-management](images/hubusers.png){.thumbnail}
 
 Une fenêtre apparaît et vous devez y compléter les champs requis. Cliquez sur `Valider`{.action} pour créer l'utilisateur.
 
