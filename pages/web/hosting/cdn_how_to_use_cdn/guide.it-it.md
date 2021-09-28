@@ -2,7 +2,7 @@
 title: 'Aumentare la velocità di un sito Web con la CDN'
 excerpt: 'Come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN'
 slug: guida_allutilizzo_dellacceleratore_geocache_su_un_hosting_web
-ection: 'Ottimizza il tuo sito'
+section: Ottimizza il tuo sito
 legacy_guide_number: g1290
 ---
 

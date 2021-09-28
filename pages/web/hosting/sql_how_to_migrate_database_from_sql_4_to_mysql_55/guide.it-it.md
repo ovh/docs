@@ -4,6 +4,7 @@ excerpt: 'Hosting condiviso: come migrare il tuo database da SQL 4 a MySQL 5.5'
 id: '1957'
 slug: hosting_condiviso_come_migrare_il_tuo_database_da_sql_4_a_mysql_55
 legacy_guide_number: g1957
+section: Database
 hidden: true
 ---
 

@@ -2,7 +2,7 @@
 title: 'Attivare gli indirizzi email inclusi in un hosting Web'
 slug: attivare-email-hosting-web
 excerpt: 'Come attivare gli account di posta inclusi nella tua soluzione di hosting Web'
-section: 'Per iniziare'
+section: Per iniziare
 order: 3
 ---
 

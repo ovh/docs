@@ -2,7 +2,7 @@
 title: Ripristinare e importare un database sul tuo server di database
 slug: ripristinare-importare-database
 excerpt: Come ripristinare e importare il database
-section: 'SQL Privato'
+section: SQL Privato
 order: 5
 ---
 

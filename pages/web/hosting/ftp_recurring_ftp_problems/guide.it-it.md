@@ -4,6 +4,7 @@ slug: hosting_condiviso_problemi_ftp_ricorrenti
 excerpt: 'Hosting condiviso: problemi FTP ricorrenti'
 id: '1996'
 legacy_guide_number: g1996
+section: FTP e SSH
 ---
 
 ## Hai trasferito i tuoi file via FTP, ma non riesci a visualizzare il tuo sito
