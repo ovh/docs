@@ -26,9 +26,9 @@ It may also be the case that our security robots have temporarily blocked access
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/)
 - having the [login details](../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
 
@@ -36,28 +36,28 @@ It may also be the case that our security robots have temporarily blocked access
 
 If the page "**403 forbidden**" appeared following an incorrect modification of your site, restore all or part of your [hosting storage space](../restoring-ftp-filezilla-control-panel/) to an earlier date.
 
-If the backups available do not allow you to restore access to your site, contact a [specialised service provider](https://partner.ovhcloud.com/en-gb/directory/).
+If the backups available do not allow you to restore access to your site, contact a [specialised service provider](https://partner.ovhcloud.com/asia/directory/).
 
 If the page "**403 forbidden**" did appear without a modification on your website, check your inbox for an email notifying you that your hosting has been closed due to security reasons. If you have received such a message from our system, skip to [step 2](#step2).
 
-If the page "**403 forbidden**" appeared without any action on your part and you have not received any emails from our hosting services on this subject, contact a [specialised service provider](https://partner.ovhcloud.com/en-gb/directory/).
+If the page "**403 forbidden**" appeared without any action on your part and you have not received any emails from our hosting services on this subject, contact a [specialised service provider](https://partner.ovhcloud.com/asia/directory/).
 
 ### Step 2: Apply security measures on your side <a name="step2"></a>
 
 First, verify the security of your devices and services:
 
 - Perform security updates;
-- Also check that an antivirus software is installed, update it and run a complete scan. If you do not have such software, consult a [specialised service provider](https://partner.ovhcloud.com/en-gb/directory/) before installing it;
-- Change all your personal passwords, including the ones of your email accounts, in accordance with these [best practices](https://docs.ovh.com/gb/en/customer/manage-password/#generate-a-strong-password);
+- Also check that an antivirus software is installed, update it and run a complete scan. If you do not have such software, consult a [specialised service provider](https://partner.ovhcloud.com/asia/directory/) before installing it;
+- Change all your personal passwords, including the ones of your email accounts, in accordance with these [best practices](https://docs.ovh.com/asia/en/customer/manage-password/#generate-a-strong-password);
 - Change the passwords for all of your OVHcloud services, including your [databases](../change-password-database/) and access to your [FTP storage space](../modify-ftp-user-password/).
 
 > [!warning]
 >
-> Before changing the password for your website’s database in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), update your website’s configuration file so that it will stay connected to the database with the new password.
+> Before changing the password for your website’s database in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), update your website’s configuration file so that it will stay connected to the database with the new password.
 >
 > Otherwise, changing your database password will result in your website and any services accessing it being blocked.
 >
-> If you have any doubts about how to do this, contact a [specialised service provider](https://partner.ovhcloud.com/en-gb/directory/).
+> If you have any doubts about how to do this, contact a [specialised service provider](https://partner.ovhcloud.com/asia/directory/).
 >
 
 ### Step 3: Intervene on your hosting
@@ -72,7 +72,7 @@ If your Web Hosting plan was closed less than two weeks ago and contains multipl
 
 #### Case no. 2: Your Web Hosting plan has been disabled for more than two weeks
 
-If your Web Hosting plan was closed more than two weeks ago, contact a [specialised service provider](https://partner.ovhcloud.com/en-gb/directory/). 
+If your Web Hosting plan was closed more than two weeks ago, contact a [specialised service provider](https://partner.ovhcloud.com/asia/directory/). 
 
 > [!warning]
 >
@@ -104,7 +104,7 @@ The response "**200 Permissions changed on /**" confirms that the change was suc
 
 #### Reactivating your hosting via your web browser with the FTP Explorer ("net2ftp")
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud`{.action} section, then open `Hosting plans`{.action} and switch to the `FTP-SSH`{.action} tab of the Web Hosting plan concerned.
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Web Cloud`{.action} section, then open `Hosting plans`{.action} and switch to the `FTP-SSH`{.action} tab of the Web Hosting plan concerned.
 
 Click on the `FTP Explorer`{.action} button and log in to your storage space, following the instructions in this [guide](../log-in-to-storage-ftp-web-hosting/#1-log-in-via-ftp-explorer). Click on the `Advanced`{.action} button and then click the `Go`{.action} button next to "Send arbitrary FTP commands to the FTP server".
 
@@ -124,8 +124,8 @@ The response "**200 Permissions changed on /**" confirms that the change was suc
 
 [Changing a Web Hosting plan’s PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
