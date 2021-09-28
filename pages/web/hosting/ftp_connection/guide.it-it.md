@@ -2,7 +2,7 @@
 title: 'Accedere allo spazio di storage di un hosting Web'
 slug: accedere-spazio-storage-ftp-hosting-web
 excerpt: 'Come connettersi allo spazio di storage del tuo hosting Web OVH'
-section: 'FTP e SSH'
+section: FTP e SSH
 order: 1
 ---
 

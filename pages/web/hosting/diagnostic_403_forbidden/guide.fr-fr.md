@@ -47,10 +47,10 @@ Si la page **« 403 forbidden »** est apparue sans action de votre part et que 
 
 Vérifiez tout d'abord la sécurité de votre/vos poste(s) informatique(s) :
 
-- Effectuez les mises à jour de sécurité.
-- Vérifiez également qu'un antivirus est installé, mettez-le à jour et lancez un scan complet. Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) avant toute installation.
-- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mail, en respectant ces [bonnes pratiques](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe).
-- Modifiez les mots de passe de vos services OVHcloud en suivant les instructions de ce [guide](../gerer-et-acceder-a-ses-mots-de-passe/).
+- Effectuez les mises à jour de sécurité ;
+- Vérifiez également qu'un antivirus est installé, mettez-le à jour et lancez un scan complet. Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) avant toute installation ;
+- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mail, en respectant ces [bonnes pratiques](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe) ;
+- Modifiez les mots de passe de l'ensemble de vos services OVHcloud, notamment de votre [base de données](../modifier-mot-de-passe-base-de-donnees/) et de l'accès à votre [espace de stockage FTP](../modifier-mot-de-passe-utilisateur-ftp/).
 
 > [!warning]
 >
@@ -107,11 +107,11 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez vous dans la partie `Web Cloud`{.action} puis `Hébergements`{.action} et cliquez sur l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
 
-Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](../connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Cliquez sur le bouton `Avancé`{.action} puis sur le bouton `Go`{.action} à côté de **« Envoyer des commandes FTP arbitraires au serveur FTP »**.
+Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](../connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Cliquez sur le bouton `Avancé`{.action} puis sur le bouton `Go`{.action} à côté de « Envoyer des commandes FTP arbitraires au serveur FTP ».
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
-Dans la partie supérieure de la page, renseignez la commande ci-dessous puis cliquez sur le bouton représentant un **« V »** vert.
+Dans la partie supérieure de la page, renseignez la commande ci-dessous puis cliquez sur le bouton représentant un « V » vert.
 
 ![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
 

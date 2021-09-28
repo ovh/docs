@@ -3,6 +3,7 @@ title: Visualizza le metriche del tuo SQL Privato con Grafana
 excerpt: Visualizza le metriche del tuo SQL Privato con Grafana
 slug: visualizza_le_metriche_del_tuo_sql_privato_con_grafana
 legacy_guide_number: g2057
+section: SQL Privato
 ---
 
 

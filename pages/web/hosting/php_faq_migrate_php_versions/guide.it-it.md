@@ -4,6 +4,7 @@ excerpt: 'Hosting condiviso: FAQ - Come aggiornare la tua versione di PHP'
 id: '1758'
 slug: hosting_condiviso_faq_-_come_aggiornare_la_tua_versione_di_php
 legacy_guide_number: g1758
+section: PHP
 hidden: true
 ---
 
