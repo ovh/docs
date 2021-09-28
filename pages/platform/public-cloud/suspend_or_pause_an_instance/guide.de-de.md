@@ -6,10 +6,6 @@ section: 'Projektverwaltung'
 order: 3
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
->
-
 **Letzte Aktualisierung am 22.09.2021**
 
 ## Ziel
@@ -106,11 +102,11 @@ Sobald Ihre Umgebung bereit ist, geben Sie in der Kommandozeile Folgendes ein:
 
 ### Reaktivieren einer Instanz (*unshelve*)
 
-Mit dieser Option können Sie Ihre Instanz aus dem ausgesetzten Zustand entfernen, um sie wieder verwenden zu können. Bitte beachten Sie, dass die Abrechnung nach Abschluss der Operation  wieder regulär erfolgt.
+Mit dieser Option können Sie Ihre Instanz aus dem ausgesetzten Zustand entfernen, um sie wieder verwenden zu können. Bitte beachten Sie, dass die Abrechnung nach Abschluss der Operation wieder regulär erfolgt.
 
 > [!alert] **Aktionen auf dem Snapshot**
 >
-> Jede Aktion auf dem Snapshot außer der Reaktivierung (*unshelve*), kann für Ihre Infrastruktur sehr gefährlich sein, wenn sie nicht korrekt ausgeführt wird. Wenn Sie eine Instanz reaktivieren (*unshelve*), wird der Snapshot automatisch gelöscht. Es wird nicht empfohlen, eine neue Instanz auf einem Snapshot zu basieren, der beim Aussetzen der Instanz erzeugt wurde.
+> Jede Aktion auf dem Snapshot außer der Reaktivierung (*unshelve*), kann für Ihre Infrastruktur sehr gefährlich sein, wenn sie nicht korrekt ausgeführt wird. Wenn Sie eine Instanz reaktivieren, wird der Snapshot automatisch gelöscht. Es wird nicht empfohlen, eine neue Instanz auf einem Snapshot zu basieren, der beim Aussetzen (*shelve*) der Instanz erzeugt wurde.
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren. Wir empfehlen Ihnen, einen spezialisierten Dienstleister zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste haben.
 >
@@ -149,7 +145,7 @@ Sobald Ihre Umgebung bereit ist, geben Sie in der Kommandozeile Folgendes ein:
 
 ### Anhalten einer Instanz (*suspend*) <a name="stop-suspend-instance"></a>
 
-Mit dieser Option können Sie Ihre Instanz anhalten und den Zustand der virtuellen Maschine auf der Festplatte speichern. Der Speicher wird ebenfalls auf die Festplatte geschrieben.
+Mit dieser Option können Sie Ihre Instanz anhalten und den Zustand der virtuellen Maschine auf der Disk sichern. Der Arbeitsspeicher wird ebenfalls auf die Disk geschrieben.
 
 #### Im OVHcloud Kundencenter
 
@@ -163,7 +159,7 @@ Nehmen Sie die Meldung im Dialogfenster zur Kenntnis und klicken Sie auf `Bestä
 
 Sobald der Vorgang abgeschlossen ist, erscheint die Instanz als *Ausgeschaltet*.
 
-Um mit der Instanz fortzufahren, klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz wählen Sie `Starten`{.action}. In einigen Fällen müssen Sie möglicherweise einen Neustart durchführen.
+Um die Instanz wieder in Betrieb zu nehmen (*unsuspend*), klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Starten`{.action}. In einigen Fällen müssen Sie möglicherweise einen Neustart durchführen.
 
 #### Im Horizon-Interface
 
