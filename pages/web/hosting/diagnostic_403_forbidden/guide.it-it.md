@@ -6,7 +6,7 @@ section: Diagnostica
 order: 7
 ---
 
-**Ultimo aggiornamento: 20/09/2021**
+**Ultimo aggiornamento: 16/09/2021**
 
 ## Obiettivo
 
@@ -29,7 +29,7 @@ In caso di malfunzionamenti, i nostri sistemi di sicurezza hanno dovuto bloccare
 
 - Disporre di una [soluzione di hosting Web](https://www.ovh.it/hosting-web/) OVHcloud
 - Disporre delle [credenziali di accesso](../accedere-spazio-storage-ftp-hosting-web/#step-1-recupera-i-dati-necessari-a-effettuare-laccesso) allo spazio di storage dell'hosting
-- Avere accesso allo [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -39,7 +39,7 @@ Se la pagina **"403 forbidden"** è apparsa a seguito di una modifica errata del
 
 Se i backup disponibili non ti permettono di ripristinare l'accesso al tuo sito, contatta un [provider specializzato](https://partner.ovhcloud.com/it/).
 
-Se la pagina **"403 forbidden"** non è apparsa a seguito di una modifica del tuo sito, consulta la tua messaggeria. Se hai ricevuto un'email dai nostri servizi che indica la chiusura dell'hosting per motivi di sicurezza, passa allo Step [2](#step2).
+Se la pagina **"403 forbidden"** non è apparsa a seguito di una modifica del tuo sito, consulta la tua messaggeria. Se hai ricevuto un'email dai nostri servizi che indica la chiusura dell'hosting per motivi di sicurezza, passa allo [Step 2](#step2).
 
 Se la pagina **"403 forbidden"** è apparsa senza azione da parte tua e non hai ricevuto email dai nostri servizi a questo proposito, contatta un [provider specializzato](https://partner.ovhcloud.com/it/).
 
