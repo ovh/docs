@@ -5,6 +5,7 @@ slug: mise-en-place-repondeur-mail
 excerpt: 'Découvrez comment mettre en place un répondeur e-mail'
 section: 'Fonctionnalités des adresses e-mail'
 order: 02
+hidden: true
 ---
 
 **Dernière mise à jour le 28/08/2020**

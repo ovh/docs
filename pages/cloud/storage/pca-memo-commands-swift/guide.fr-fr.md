@@ -308,7 +308,7 @@ sys	0m0,091s
 > [!primary]
 >
 > Dans cet exemple, le LargeObject à été uploadé en mode SLO.
-> Consultez la documentation [Mémo de commandes curl]([memo_cmd_curl.md](https://docs.ovh.com/fr/storage/pca/curl-commands-memo)) pour l'upload du manifest.
+> Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/fr/storage/pca/curl-commands-memo) pour l'upload du manifest.
 >
 
 ```bash

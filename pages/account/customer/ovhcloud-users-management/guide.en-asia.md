@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 5
 ---
 
-**Last updated 21st February 2020**
+**Last updated 28th September 2021**
 
 ## Objective
 
@@ -51,8 +51,10 @@ The holder of the account xx11111-ovh always has **administrator** access, so th
 
 ### Step 2: Add a user.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, click `your name`{.action} (1) in the top right-hand corner, then click `My account`{.action} (2).
-Next, click on the `User management`{.action}tab (3), and `Add a user`{.action} (4).
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, click `your name`{.action} (1) in the top right-hand corner, then click on your initials (2).
+Next, click on the `User management`{.action} tab (3), and `Add a user`{.action} (4).
+
+![users-management](images/hubusers.png){.thumbnail}
 
 ![users-management](images/usersmanagement1.png){.thumbnail}
 

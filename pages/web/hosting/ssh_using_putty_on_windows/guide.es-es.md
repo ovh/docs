@@ -15,13 +15,12 @@ Puede descargarlo desde su [página oficial](http://www.putty.org/).
 
 También necesitará sus usuarios FTP: 
 
-
 - Servidor FTP 
 - Nombre de usuario FTP 
 - Contraseña FTP 
 
-
-Podrá acceder a esta información en su área de cliente, en la pestaña «FTP-SSH». Si desea más información, consulte nuestra [guía](https://www.ovh.es/g1909.web_hosting_administrar_y_acceder_a_sus_contrasenas).
+Puede consultar esta información en el Panel de control. Acceda a la sección FTP o siga las instrucciones que se indican a continuación 
+[esta guía](../conexion-espacio-almacenamiento-ftp-alojamiento-web/).
 
 
 ## Ejecutar PuTTY

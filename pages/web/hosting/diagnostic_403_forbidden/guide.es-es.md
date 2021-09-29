@@ -43,7 +43,7 @@ Si la página **"403 forbidden"** aparece debido a una modificación errónea de
 
 Si las copias de seguridad disponibles no le permiten restablecer el acceso a su sitio web, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/).
 
-Si la página **"403 forbidden"** no ha aparecido debido a una modificación de su sitio web, consulte su mensajería. Si por motivos de seguridad nuestros servicios le han enviado un mensaje de correo electrónico indicándole que quiere cerrar el alojamiento, vaya al paso 2 [del siguiente paso](#step2).
+Si la página **"403 forbidden"** no ha aparecido debido a una modificación de su sitio web, consulte su mensajería. Si por motivos de seguridad nuestros servicios le han enviado un mensaje de correo electrónico indicándole que quiere cerrar el alojamiento, vaya al [paso 2](#step2).
 
 Si la página **"403 forbidden"** ha aparecido sin ninguna acción por su parte y no ha recibido ningún correo de nuestros servicios al respecto, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/).
 

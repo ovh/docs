@@ -21,7 +21,7 @@ It may also be the case that our security robots have temporarily blocked access
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
 
 
 ## Requirements
@@ -49,7 +49,7 @@ First, verify the security of your devices and services:
 - Perform security updates;
 - Also check that an antivirus software is installed, update it and run a complete scan. If you do not have such software, consult a [specialised service provider](https://partner.ovhcloud.com/en-gb/directory/) before installing it;
 - Change all your personal passwords, including the ones of your email accounts, in accordance with these [best practices](https://docs.ovh.com/gb/en/customer/manage-password/#generate-a-strong-password);
-- Change the passwords for all of your OVHcloud services, including your [databases](../change-password-database/) and access to your [FTP storage space](../hosting/modify-ftp-user-password/).
+- Change the passwords for all of your OVHcloud services, including your [databases](../change-password-database/) and access to your [FTP storage space](../modify-ftp-user-password/).
 
 > [!warning]
 >
@@ -106,7 +106,7 @@ The response "**200 Permissions changed on /**" confirms that the change was suc
 
 In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud`{.action} section, then open `Hosting plans`{.action} and switch to the `FTP-SSH`{.action} tab of the Web Hosting plan concerned.
 
-Click on the `FTP Explorer`{.action} button and log in to your storage space, following the instructions in this [guide](../log-in-to-storage-ftp-web-hosting/#1-log-in-via-ftp-explorer). Click the `Advanced`{.action} button and then click the `Go`{.action} button next to "Send arbitrary FTP commands to the FTP server".
+Click on the `FTP Explorer`{.action} button and log in to your storage space, following the instructions in this [guide](../log-in-to-storage-ftp-web-hosting/#1-log-in-via-ftp-explorer). Click on the `Advanced`{.action} button and then click the `Go`{.action} button next to "Send arbitrary FTP commands to the FTP server".
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
@@ -124,7 +124,7 @@ The response "**200 Permissions changed on /**" confirms that the change was suc
 
 [Changing a Web Hosting plan’s PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
