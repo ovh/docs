@@ -79,12 +79,12 @@ php crypt.php
 
 > [!warning]
 >
-> Per motivi di sicurezza, si raccomanda l'utilizzo di SSH. Tuttavia, se disponi di un'offerta [Kimsufi Web](https://www.kimsufi.com/it/) o [Personale](https://www.ovh.it/hosting-web/hosting-web-personale.xml) e non desideri passare a un'offerta [Pro](https://www.ovh.it/hosting-web/hosting-web-pro.xml) o [Performance](https://www.ovh.it/hosting-web/hosting-web-performance.xml), puoi anche eseguire il file "crypter.php" tramite il tuo browser Web (accedendo a un URL di tipo https://votre-domaine.ovh/crypter.php).
+> Per motivi di sicurezza, si raccomanda l'utilizzo di SSH. Tuttavia, se disponi di un'offerta [Kimsufi Web](https://www.kimsufi.com/it/) o [Personale](https://www.ovh.it/hosting-web/hosting-web-personale.xml) e non desideri passare a un'offerta [Pro](https://www.ovh.it/hosting-web/hosting-web-pro.xml) o [Performance](https://www.ovh.it/hosting-web/hosting-web-performance.xml), puoi anche eseguire il file "crypter.php" tramite il tuo browser Web (accedendo a un URL di tipo https://il-tuo-dominio.ovh/crypter.php).
 >
 > Per maggiori informazioni sul metodo da utilizzare per cifrare la password, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/). Non saremo in grado di fornirti assistenza al riguardo.
 >
 
-Recupera le password cifrate (Non copiare "&#60;br />" se esegui il comando "php cripter.php" in SSH):
+Recupera le password cifrate (Non copiare "&#60;br />" se esegui il comando "php crypter.php" in SSH):
 
 ```bash
 password_crittografata_1
@@ -121,35 +121,35 @@ Richiedi valid-user
 >
 > In questo esempio, è necessario sostituire "il_tuo_login_ftp" con il tuo [identificativo FTP](../accedere-spazio-storage-ftp-hosting-web/#step-1-recupera-i-dati-necessari-a-effettuare-laccesso). Nella sezione `Hosting`{.action}, è disponibile nella scheda `FTP-SSH`{.action} del tuo hosting.
 >
-> Sostituisci, se necessario, nell'esempio qui sotto ["Cartella di root"](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud) con il nome della cartella contenente i file del tuo sito].
+> Sostituisci, se necessario, nell'esempio qui sotto ["Cartella di root"](../configurare-un-multisito-su-un-hosting-web/#step-21-aggiungere-un-dominio-registrato-in-ovhcloud) con il nome della cartella contenente i file del tuo sito.
 >
 
 #### Blocca l'accesso a uno o più file
 
-Per bloccare l'accesso a uno o più file specifici, aggiungi una [direttiva "Code"](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} nel file ".htaccess":
+Per bloccare l'accesso a uno o più file specifici, aggiungi una [direttiva "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} nel file ".htaccess":
 
 ```bash
 <Files test.php>
 
 AuthName "Indica i tuoi identificativi"
 AuthType Basic
-AuthUserFile "/home/votre_login_ftp/dossier_racine/admin/.htpasswd"
-Richiedi valid-user
+AuthUserFile "/home/il_tuo_login_ftp/cartella_di_root/admin/.htpasswd"
+Require valid-user
 
 </Files>
 ```
 
 > [!warning]
 >
-> Dovrai indicare una [direttiva "Code"](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} per **ogni file** da proteggere.
+> Dovrai indicare una [direttiva "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} per **ogni file** da proteggere.
 >
-> Le direttive "Code" si applicano a tutti i file dello stesso nome o che terminano con il nome specificato. Questo a condizione che siano contenuti nella stessa directory del.htaccess o in una delle sue sottodirectory (Nella configurazione qui indicata, la direttiva "tile" si applicherebbe ad esempio su un file "nuovo_test.php" contenuto in una sottodirectory della cartella "admin").
+> Le direttive "Files" si applicano a tutti i file dello stesso nome o che terminano con il nome specificato. Questo a condizione che siano contenuti nella stessa directory del.htaccess o in una delle sue sottodirectory (Nella configurazione qui indicata, la direttiva "Files" si applicherebbe ad esempio su un file "nuovo_test.php" contenuto in una sottodirectory della cartella "admin").
 >
 
 ## Spingiti oltre <a name="gofurther"></a>
 
-[Tutto sul file .htaccess](../mutualise-tout-sur-le-fichier-htaccess/)
+[Hosting condiviso: tutto sul file .htaccess](../hosting_condiviso_tutto_sul_file_htaccess/)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
