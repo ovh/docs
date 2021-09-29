@@ -5,7 +5,6 @@ excerpt: Learn how to manage your object storage data with the ovhai CLI
 section: How to (with CLI)
 order: 5
 ---
-
 **Last updated 16th of June, 2021.**
 
 ## Objective
@@ -14,7 +13,7 @@ This guide covers the basic commands needed to manipulate your data on object st
 
 ## Requirements
 
-- a working `ovhai` CLI. See our guide on [how to install ovhai CLI](../install-client).
+*a working `ovhai` CLI. See our guide on [how to install ovhai CLI](../install-client).
 
 ## Instructions
 
@@ -269,4 +268,4 @@ ovhai data delete GRA my-container file1
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+-   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

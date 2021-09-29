@@ -5,7 +5,6 @@ excerpt: Example on how to use a YOLOv5 model on AI Training
 section: Tutorials
 order: 4
 ---
-
 **Last updated 21st of June, 2021.**
 
 ## Objective
@@ -16,10 +15,10 @@ It is based on the YOLOv5 open source repository by [Ultralytics](https://github
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- an AI Training project created inside a Public Cloud project
-- a user for AI Training
-- your own dataset
+*access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+*an AI Training project created inside a Public Cloud project
+*a user for AI Training
+*your own dataset
 
 ## Instructions
 
@@ -89,4 +88,4 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+-   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

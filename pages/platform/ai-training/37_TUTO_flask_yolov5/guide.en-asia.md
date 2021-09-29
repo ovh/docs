@@ -5,8 +5,7 @@ excerpt: How to deploy a web service for YOLOv5 using your own weights with Flas
 section: Tutorials
 order: 8
 ---
-
-**Last updated 27th of July, 2021.**
+*Last updated 30th of July, 2021.*
 
 ## Objective
 
@@ -93,8 +92,8 @@ Define the GET method:
 ``` {.python}
 @app.route('/', methods=['GET'])
 def get():
-    # in the select we will have each key of the list in option
-    return render_template("index.html", len = len(listOfKeys), listOfKeys = listOfKeys)
+  # in the select we will have each key of the list in option
+  return render_template("index.html", len = len(listOfKeys), listOfKeys = listOfKeys)
 ```
 
 Define the POST method:
@@ -168,7 +167,7 @@ WORKDIR /workspace
 ADD . /workspace
 ```
 
-Install the requirements.txt file which contains your needed Python modules using a `pip install ...` command:
+Install the `requirements.txt` file which contains your needed Python modules using a `pip install ...` command:
 
 ``` {.console}
 RUN pip install -r requirements.txt
@@ -201,7 +200,7 @@ docker build . -t yolov5_web:latest
 
 > [!primary]
 >
-> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **yolov5\_web:latest**.
+> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **yolov5_web:latest**.
 
 ### Test it locally (optional)
 
@@ -213,7 +212,7 @@ docker run --rm -it -p 5000:5000 --user=42420:42420 yolov5_web:latest
 
 > [!primary]
 >
-> The `-p 5000:5000` argument indicates that you want to execute a port rediction from the port **5000** of your local machine into the port **5000** of the Docker container. The port **5000** is the default port used by **Flask** applications.
+> The `-p 5000:5000` argument indicates that you want to execute a port redirection from the port **5000** of your local machine into the port **5000** of the Docker container. The port **5000** is the default port used by **Flask** applications.
 
 > [!warning]
 >
@@ -271,4 +270,3 @@ ovhai job run --default-http-port 5000 --cpu 4 <shared-registry-address>/yolov5_
 Please send us your questions, feedback and suggestions to improve the service:
 
 -   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
-
