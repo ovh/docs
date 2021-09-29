@@ -1,5 +1,5 @@
 ---
-title: Getting started
+title: Getting Started
 slug: getting-started-cli
 excerpt: Learn how to run an AI Training notebook using the CLI
 section: How to (with CLI)
@@ -9,11 +9,11 @@ order: 1
 
 ## Objective
 
-This guide covers the submission of [**notebooks**](https://docs.ovh.com/sg/en/publiccloud/ai/notebooks/definition/) through the **ovhai** CLI.
+This guide covers the submission of [**notebooks**](../definition) through the **ovhai** CLI.
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/sg/en/ai-training/install-client/))
+-   a working `ovhai` CLI ([how to install ovhai CLI](../../ai-training/install-client))
 
 ## Instructions
 
@@ -70,14 +70,17 @@ status:
   monitoringUrl: ~
   lastStartedAt: ~
   lastStoppedAt: ~
-  dataSync: []
-```
+  dataSync: []```
 
 The first line in the output shows the ID of the notebook: `fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e`.
 
+The "Url" corresponds to your JupyterLab server. Pasting this URL in your browser displays the following screen:
+
+![image](images/jupyterlab_home_page.png)
+
 If you don't have the ID of the notebook you want to access, you can list all your notebooks using:
 
-``` {.console}
+```console
 $ ovhai notebook ls
 ```
 
@@ -129,8 +132,7 @@ Stopping a notebook will make it unavailable from your browser, and start synchr
 
 Once the synchronisation is finished, and the notebook state is `STOPPED`, you can either start it again or delete it.
 
-Being able to restart a notebook is one of the main differences compared to using [jobs](https://docs.ovh.com/sg/en/ai-training/jobs/). Restarting a notebook will restore your notebook code as it was when you stopped it. However, you will need to re-run your code to reload your variables because the program state is not saved.
-
+Being able to restart a notebook is one of the main differences compared to using [jobs](../../ai-training/jobs). Restarting a notebook will restore your notebook code as it was when you stopped it. However, you will need to re-run your code to reload your variables because the program state is not saved.
 To restart a notebook, run this command:
 
 ``` {.console}
@@ -150,9 +152,9 @@ Note that a notebook must first be stopped before being deleted, and that delete
 
 ## Going further
 
-Learn how to access your object storage data from your notebooks [here](https://docs.ovh.com/sg/en/publiccloud/ai/notebooks/access-object-storage-data/).
+Learn how to access your object storage data from your notebooks [here](../data).
 
-Learn how to share your notebooks with other people [here](https://docs.ovh.com/sg/en/publiccloud/ai/notebooks/sharing-notebooks/).
+Learn how to share your notebooks with other people [here](../sharing-notebooks).
 
 ## Feedback
 

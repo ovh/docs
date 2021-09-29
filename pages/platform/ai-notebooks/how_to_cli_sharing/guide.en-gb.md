@@ -5,16 +5,15 @@ excerpt: Learn how to share a notebook
 section: How to (with CLI)
 order: 3
 ---
-
 *Last updated 27th of May, 2021.*
 
 ## Objective
 
-This guide shows how to share [**notebooks**](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/definition/) with other people through the **ovhai** CLI.
+This guide shows how to share [**notebooks**](../definition) with other people through the **ovhai** CLI.
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/ie/en/ai-training/install-client/))
+-   a working `ovhai` CLI ([how to install ovhai CLI](../../ai-training/install-client))
 
 ## Share a notebook with people in your Public Cloud project
 
@@ -91,9 +90,9 @@ Here the URL is `https://d8d809f2-717b-4b60-9881-07e6987a144d.notebook.gra.train
 It will be different for every notebook you will create. Anyone in your Public Cloud project can now access this URL
 from their browser using their own credentials.
 
-## Share a notebook with people outside of your Public Cloud project
+## Share a notebook with people outside your Public Cloud project
 
-In order to allow people outside of your Public Cloud project to access your notebook, we need to generate some credentials
+In order to allow people outside your Public Cloud project to access your notebook, we need to generate some credentials
 for them that will only give them access to the notebooks we want. These credentials are named App tokens and are represented
 by a long string of characters.
 
@@ -199,7 +198,7 @@ Clicking on `Login with token` leads to this page:
 
 ![image](images/ovh_login_token_page.png){.thumbnail}
 
-Paste the token we created earlier into the text box and click on `Connect`. You should now see your notebook.
+Paste the token we created earlier in the text box and click on `Connect`. You should now see your notebook.
 
 You can now give this token to anyone that you wish to share the notebook with.
 
