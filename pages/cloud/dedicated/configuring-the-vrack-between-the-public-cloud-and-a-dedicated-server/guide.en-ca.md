@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to configure private networking between a
 section: 'Network Management'
 ---
 
-**Last updated 18th June 2018**
+**Last updated 29th September 2021**
 
 ## Objective
 
@@ -16,6 +16,7 @@ The [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} allows you to
 
 ## Requirements
 
+* an [OVHcloud Public Cloud instance](..create_an_instance_in_your_ovh_customer_account/)
 * a [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} service activated in your account
 * a vRack-compatible [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/){.external}
 * access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
@@ -24,59 +25,61 @@ The [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} allows you to
 
 ## Instructions
 
-### Create a Public Cloud project
+### Add a Public Cloud project to the vRack
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
+Once your [Public Cloud project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project) is set up, you will need to add it to the vrack. This can be done in two ways:
 
-Click on the `Bare Metal Cloud`{.action} menu and then click the `Order`{.action} button.
+1. By ordering a vRack service if you do not have one yet. This service is free of charge. 
 
-![Create project](images/pci-project-01_2020.png){.thumbnail}
+Go to `Bare Metal Cloud`{.action} menu and click the `Order`{.action} button. Under the Order menu, click on the `vRack`{.action} button.
 
-Under the **Order** menu, click on the `Cloud project`{.action} button.
+![Order vrack](images/orderingvrack.png){.thumbnail}
 
-![Create project](images/pci-project-02_2020.png){.thumbnail}
+You will be redirected to an order page, validate the order and wait for the vRack to be setup in your account. This will take a few minutes.
 
-Give your project a name, read and accept the contracts, and then click the `Continue`{.action} button.
+Once done, the new vRack service will be visible by going to `Bare Metal Cloud`{.action} > `Network`{.action} > `vRack`{.action}.
 
-![Create project](images/pci-project-03a_2020.png){.thumbnail}
+![](images/vrackdelivered.png){.thumbnail}
 
-Select a payment method and then click `Create my project`{.action}
 
-![Create project](images/pci-project-03b_2020.png){.thumbnail}
+2. By [creating or adding an existing vRack service](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#instructions_1) in the `Public Cloud`{.action} section.
 
-Once your project is set up, you will need to add it to the vrack. Click on `Bare Metal Cloud`{.action} and then on `vRack`{.action}
 
-![Enable vRack](images/pci-vrack-00_2020.png){.thumbnail}
+### Add an Instance to the vRack 
 
-Select your exisitng vRack, then select your Cloud Project, then click on `Add`{.action}
+Two situations may arise:
 
-![Enable vRack](images/pci-vrack-00a_2020.png){.thumbnail}
+- The instance does not exist yet.
+- The instance already exists and you must add it to the vRack.
 
-Next,  you need to enable private networks. Click the `Enable private networks`{.action} button on the project page.
+#### Case of a new instance
 
-![Enable vRack](images/pci-vrack-01_2020.png){.thumbnail}
+See the guide [Creating your first Public Cloud instance](../public-cloud-first-steps/). When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
 
-Here you can create your networks setup and name the network. Once this is setup to your preference click on `Create` {.action}
+#### Case of an existing instance
 
-![Enable vRack](images/pci-vrack-02_2020.png){.thumbnail}
+You can attach an existing instance to a private network. See the guide [Configuring vRack on the Public Cloud](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#cases-of-an-already-existing-instance_2) for more information.
 
-### Create a Public Cloud instance
 
-On your project page, click the `Create an instance`{.action} button.
+### Create a VLAN ID
 
-![Create an instance](images/pci-01_2020.png){.thumbnail}
+For both services to communicate with each other, they should have the same **VLAN ID**. 
 
-Select your Model, Region, and Image. Then choose your Private Network.
+By default, the VLAN ID for dedicated servers is **0**, it will be necessary to tag the private network linked to your instance with the same vlan ID **0**. To do this, do not check the `Set VLAN` box when adding a private network to your instance.
 
-![Create an instance](images/pci-02_2020.png){.thumbnail}
+See the following guide for more information: [Create a vlan in the vrack](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#step-2-create-a-vlan-in-the-vrack_1)
 
-Finally, choose your billing period  and then click the `Create an instance`{.action} button. For detailed information on the various options, please refer to this guide: [Create an instance in your OVHcloud customer account](../../public-cloud/create_an_instance_in_your_ovh_customer_account/){.external}.
+If you decide to use a different ID or have tagged your instance private network with a different VLAN ID:
+
+- The private network interface on the dedicated server should be tagged with this ID
+- The private network interface on the instance should be tagged with this ID
+
+An example: If you tagged your instance private network with VLAN ID 2 when creating it, you must use this VLAN ID when configuring the vrack network interface on your dedicated server. For more information see the following guide: [Create multiple VLANs in the vRack](https://docs.ovh.com/ca/en/dedicated/multiple-vlans/).
 
 
 ### Configure your network interfaces
 
 Next, configure the the network interfaces on your new [Public Cloud instance](https://www.ovh.com/ca/en/public-cloud/instances/){.external} and [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/){.external} using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}.
-
 
 ## Go further
 
