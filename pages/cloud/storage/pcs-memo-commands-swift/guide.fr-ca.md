@@ -1,8 +1,8 @@
 ---
 title: Mémo de commandes Swift
-slug: pca/swift-commands-memo
-excerpt: Retrouvez ici les principales commandes swift pour gérer vos conteneurs d'objets Public Cloud Archive
-section: Public Cloud Archive
+slug: pcs/swift-commands-memo
+excerpt: Retrouvez ici les principales commandes swift pour gérer vos conteneurs d'objets
+section: Object Storage
 ---
 
 **Dernière mise à jour le 21/09/2021**
@@ -17,15 +17,15 @@ Le swiftclient OpenStack vous permet d’interagir avec vos conteneurs et objets
 
 ## Prérequis
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/) en installant python-swiftclient.
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/).
+- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/) en installant python-swiftclient.
+- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/charger-les-variables-denvironnement-openstack/).
 
 ## En pratique
 
-### Créer un conteneur PCA
+### Créer un conteneur PCS
 
 ```bash
-swift post -H "X-Storage-Policy: PCA" <conteneur>
+swift post <conteneur>
 ```
 
 ### Afficher les informations relatives à un compte
@@ -76,7 +76,7 @@ swift upload --use-slo --segment-size 1G <conteneur> <objet>
 swift upload --segment-size 1G <conteneur> <objet>
 ```
 
-### Abandon de l'upload d'un Large Object
+### Abandon de l'upload d'un LargeObject
 
 ```bash
 $ swift upload --use-slo --segment-size 500M <conteneur> <objet>
@@ -99,7 +99,7 @@ $ swift list <conteneur_segments>
 <objet>/slo/1628738591.297565/6442450944/524288000/00000009
 ```
 
-> Il est donc recommandé de supprimer le conteneur `<conteneur_segments>` ou au moins les segments correspondant à l'objet abandonné.
+> Il est donc recommandé de supprimer le conteneur `<conteneur_segments>` ou au moins les segments ccorrespondant à l'objet abandonné.
 
 ### Download d'un objet
 
@@ -191,7 +191,7 @@ swift copy -d /<conteneur_de_destination> <conteneur> <objet>
 > [!primary]
 >
 > Dans cet exemple, le LargeObject à été uploadé en mode SLO.
-> Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/fr/storage/pca/curl-commands-memo) pour l'upload du manifest.
+> Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/ca/fr/storage/pcs/curl-commands-memo/) pour l'upload du manifest.
 >
 
 Sur un LargeObject, la commande `swift copy` renvoie une **erreur 413** :
@@ -202,12 +202,7 @@ created container <conteneur_de_destination>
 Object COPY failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>/<largeobject> 413 Request Entity Too Large  [first 60 chars of response] b'<html><h1>Request Entity Too Large</h1><p>The body of your r'
 ```
 
-Il faut donc commencer par déplacer les segments :
-
-> [!warning]
->
-> Il faut au préalable créer le `<conteneur_de_destination_segments>`.
->
+Il faut donc commencer par déplacer les segments:
 
 ```bash
 for obj in $(swift list <conteneur_segments>);do swift copy -d /<conteneur_de_destination_segments> <conteneur_segments> $obj;done
@@ -225,7 +220,7 @@ created container <conteneur_de_destination_segments>
 <conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000005 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000005
 ```
 
-Puis récupérer le manifest, l'adapter et le ré-uploader :
+Puis récupérer le manifest, l'adapter et le ré-uploader
 
 ```bash
 $(swift auth)
@@ -243,7 +238,7 @@ curl -i -X PUT -H "X-Auth-Token:$OS_AUTH_TOKEN" -T <largeobject>.json "$OS_STORA
 
 ### Renommer un conteneur
 
-Il n'est pas possible de renommer un conteneur. Il faut pour cela créer un nouveau conteneur et ré-uploader les objets dedans. Cependant, swift dispose de la fonction `copy` qui semble fournir de meilleures performances.
+Il n'est pas possible de renommer un conteneur. Il faut pour cela créer un nouveau conteneur et ré-uploader les objets dedans. Cependant, Swift dispose de la fonction `copy` qui semble fournir de meilleures performances.
 
 Délai pour uploader 2Gb (1500 objets de 1M et 1 objet de 500M) :
 
@@ -253,30 +248,25 @@ real	69m26,159s
 user	0m20,017s
 sys	0m3,689s
 ```
-
 ```bash
 swift list --lh -t <conteneur>
 2.0G
 ```
-
 ```bash
 swift list
 <conteneur>
 ```
-
 ```bash
 time for obj in $(swift list <conteneur>);do swift copy -d /<autre_conteneur> <conteneur> $obj; done
 real	54m43,898s
 user	12m38,060s
 sys	1m34,394s
 ```
-
 ```bash
 swift list
 <autre_conteneur>
 <conteneur>
 ```
-
 ```bash
 swift list --lh -t <autre_conteneur>
 2.0G
@@ -292,7 +282,6 @@ real	15m51,525s
 user	0m4,245s
 sys	0m0,848s
 ```
-
 ```bash
 time swift copy -d /<autre_conteneur> <conteneur> <objet_bis>
 created container <autre_conteneur>
@@ -307,8 +296,8 @@ sys	0m0,091s
 
 > [!primary]
 >
-> Dans cet exemple, le LargeObject à été uploadé en mode SLO.
-> Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/fr/storage/pca/curl-commands-memo) pour l'upload du manifest.
+> Dans cet exemple, le LargeObject à été uploader en mode SLO.
+> Consultez la documentation [Mémo de commandes Curl](https://docs.ovh.com/ca/fr/storage/pcs/curl-commands-memo/) pour l'upload du manifest.
 >
 
 ```bash
@@ -336,11 +325,6 @@ Object COPY failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxx
 
 Il faut donc commencer par déplacer les segments :
 
-> [!warning]
->
-> Il faut au préalable créer le `<conteneur_de_destination_segments>`.
->
-
 ```bash
 for obj in $(swift list <conteneur_segments>);do swift copy -d /<conteneur_de_destination_segments> <conteneur_segments> $obj;done
 created container <conteneur_de_destination_segments>
@@ -357,7 +341,7 @@ created container <conteneur_de_destination_segments>
 <conteneur_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000005 copied to /<conteneur_de_destination_segments>/<largeobject>/slo/1629978906.614903/6442450944/1073741824/00000005
 ```
 
-Puis récupérer le manifest, l'adapter et le ré-uploader :
+Puis récupérer le manifest, l'adapter et le ré-uploader
 
 ```bash
 $(swift auth)
@@ -424,4 +408,4 @@ swift capabilities
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
