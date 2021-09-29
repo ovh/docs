@@ -21,7 +21,7 @@ The tutorial presents a simple example of launching **TensorBoard** in a job.
 
 ## Requirements
 
-*a working `ovhai` CLI [how to install ovhai CLI](../install-client)
+-   a working `ovhai` CLI [how to install ovhai CLI](../install-client)
 
 ## Instructions
 

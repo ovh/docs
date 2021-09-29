@@ -142,13 +142,18 @@ $ ovhai notebook start fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e
 You are billed for `RUNNING` notebooks but not for `STARTING`, `STOPPING` and `STOPPED` notebooks.
 However, to restore your code when you restart a `STOPPED` notebook, it needs to be stored in your object storage, which you are billed for.
 
-This is useful when you work on a notebook for some time. If you know you will not use a notebook anymore and want to remove the notebook state from your object storage, you need to delete the notebook:
+This is useful when you work on a notebook for some time. If you know you will not use a notebook anymore you can delete it:
 
 ``` {.console}
 $ ovhai notebook delete fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e
 ```
 
 Note that a notebook must first be stopped before being deleted, and that deleted notebook cannot be restarted.
+
+> [!primary]
+>
+> The notebook state stored in the Object Storage (including your notebook files) is not cleaned up automatically after notebook deletion.
+> You can find it and delete in the `notebooks_workspace` container of your Object Storage under the notebook ID directory.
 
 ## Going further
 

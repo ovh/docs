@@ -13,7 +13,7 @@ This guide covers the basic commands needed to manipulate your data on object st
 
 ## Requirements
 
-*a working `ovhai` CLI. See our guide on [how to install ovhai CLI](../install-client).
+-   a working `ovhai` CLI. See our guide on [how to install ovhai CLI](../install-client).
 
 ## Instructions
 
