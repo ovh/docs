@@ -1,6 +1,6 @@
 ---
 title: Accessing data from your Object Storage
-slug: data
+slug: access-object-storage-data
 excerpt: Learn how to access data from your Object Storage in your Notebook
 section: How to (with CLI)
 order: 2
@@ -9,11 +9,11 @@ order: 2
 
 ## Objective
 
-This guide shows how to access Object Storage data from your [**notebooks**](../definition).
+This guide shows how to access Object Storage data from your [**notebooks**](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/definition/).
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](../../ai-training/install-client))
+-   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/au/en/ai-training/install-client/))
 
 ## Upload data to your Object Storage
 
@@ -39,8 +39,8 @@ $ ovhai notebook run --volume my-dataset@GRA:/workspace/datasets:ro tensorflow j
 This command can be read as "Load the container `my-dataset` from the GRA region, in the /workspace/datasets directory,
 with `ro` (read-only) permissions".
 
-Wait a few seconds for the notebook to start, then you should see its URL in the output - access this URL in your browser.
-You can read the [Getting Started](../getting-started-cli) page to know how to find this URL.
+Wait a few seconds for the notebook to start, then you should see its URL in the output that you can access from your browser.
+You can read the [Getting started](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/getting-started-cli/) page to know how to find this URL.
 
 You should get a page like this, showing your dataset in the file explorer:
 
@@ -48,7 +48,7 @@ You should get a page like this, showing your dataset in the file explorer:
 
 You will not be able to modify the dataset from this notebook because you loaded it with read-only permissions.
 
-Read-only permissions are here to ensure you don't modify your data by mistake. If you want to modify data from your
+Read-only permissions are to ensure you don't modify your data by mistake. If you want to modify data from your
 notebooks, to store a trained neural network for example, you can use the read-write permission instead.
 
 ## Access with Read-Write permissions
@@ -65,7 +65,7 @@ to the `/workspace/neural-networks` folder.
 
 This folder will be uploaded to your Object Storage when you will stop your notebook.
 As long as your notebook is in the `STOPPING` state, this means that the upload is still in progress. Once the state
-changes to `STOPPED`, then it means all the data were uploaded to your Object Storage.
+changes to `STOPPED`, it means all the data were uploaded to your Object Storage.
 
 ## Access multiple volumes
 
@@ -81,9 +81,7 @@ In this case, we loaded `my-dataset` in read-only, and `my-neural-networks` in r
 
 ## Using cached volumes
 
-When loading large files from the Object Storage, it can take some time to download from your object
-storage to your notebooks. In these cases, you can cache the volumes so that it does not need to be downloaded again
-when you start new notebooks that use the same data.
+When loading large files from the Object Storage, it can take some time to download to your notebooks. In these cases, you can cache the volumes so that it does not need to be downloaded again when you start new notebooks that use the same data.
 
 To do so, you can append `:cache` after the permissions when specifying volumes:
 
