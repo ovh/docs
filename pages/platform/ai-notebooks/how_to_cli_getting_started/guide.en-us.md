@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Getting started
 slug: getting-started-cli
 excerpt: Learn how to run an AI Training notebook using the CLI
 section: How to (with CLI)
@@ -9,11 +9,11 @@ order: 1
 
 ## Objective
 
-This guide covers the submission of [**notebooks**](../definition) through the **ovhai** CLI.
+This guide covers the submission of [**notebooks**](https://docs.ovh.com/us/en/publiccloud/ai/notebooks/definition/) through the **ovhai** CLI.
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](../../ai-training/install-client))
+-   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/us/en/ai-training/install-client/))
 
 ## Instructions
 
@@ -70,7 +70,8 @@ status:
   monitoringUrl: ~
   lastStartedAt: ~
   lastStoppedAt: ~
-  dataSync: []```
+  dataSync: []
+```
 
 The first line in the output shows the ID of the notebook: `fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e`.
 
@@ -142,7 +143,7 @@ $ ovhai notebook start fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e
 You are billed for `RUNNING` notebooks but not for `STARTING`, `STOPPING` and `STOPPED` notebooks.
 However, to restore your code when you restart a `STOPPED` notebook, it needs to be stored in your object storage, which you are billed for.
 
-This is useful when you work on a notebook for some time. If you know you will not use a notebook anymore you can delete it:
+This is useful when you work on a notebook for some time. If you know you will not use a notebook anymore, you can delete it:
 
 ``` {.console}
 $ ovhai notebook delete fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e
@@ -153,7 +154,7 @@ Note that a notebook must first be stopped before being deleted, and that delete
 > [!primary]
 >
 > The notebook state stored in the Object Storage (including your notebook files) is not cleaned up automatically after notebook deletion.
-> You can find it and delete in the `notebooks_workspace` container of your Object Storage under the notebook ID directory.
+> You can find it and delete it in the `notebooks_workspace` container of your Object Storage, under the notebook ID directory.
 
 ## Going further
 
