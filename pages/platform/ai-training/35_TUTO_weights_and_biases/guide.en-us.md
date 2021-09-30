@@ -84,4 +84,4 @@ A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-tr
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

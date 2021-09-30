@@ -198,7 +198,7 @@ Clicking on `Login with token` leads to this page:
 
 ![image](images/ovh_login_token_page.png){.thumbnail}
 
-Paste the token we created earlier in the text box and click on `Connect`. You should now see your notebook.
+Paste the token we created earlier into the text box and click on `Connect`. You should now see your notebook.
 
 You can now give this token to anyone that you wish to share the notebook with.
 
@@ -280,4 +280,4 @@ In this example, the `Url` is `https://8e3ac445-0b47-4eea-9269-19a36b7213c7.note
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
