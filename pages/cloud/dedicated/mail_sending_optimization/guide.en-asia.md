@@ -52,11 +52,13 @@ The authentication is carried out by a DKIM key that needs to be added in your D
 
 ### Configure the reverse IP.
 
-To further optimise email sending and lower the risk for your emails to be blocked, you can also configure a reverse IP with your domain name.
+To further optimise email sending and lower the risk of your emails being blocked, you can also configure a reverse IP with your domain name.
 
-To begin, you will first have to create an A record in the DNS Zone of your Domain with the IP Adress of your server as a target.
+To begin, you first have to create an A record in the DNS Zone of your domain with the IP address of your server as a target.
 
 If your DNS Servers are managed by OVHcloud, please consult this [guide](https://docs.ovh.com/asia/en/domains/web_hosting_how_to_edit_my_dns_zone/#instructions).
+
+Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 
 Once done, add the PTR record (also known as the reverse):
 
@@ -64,11 +66,11 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 
 ![Reverse IP](images/ipsection.png)
 
-The **“Service”** drop-down select an IPv4 address:
+In the **“Service”** drop-down menu, select an IPv4 address:
 
 ![Reverse IP](images/servicedropmenu.png)
 
-click on `...`{.action} in the relevant row to open the context menu, and select `Modify the reverse path`{.action}:
+click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
 
 ![Reverse IP](images/setreversedns.png)
 
@@ -77,7 +79,7 @@ Enter your domain name on the Reverse DNS section and click on `Confirm`{.action
 ![Reverse IP](images/enterreverse.png)
 
 > [!primary]
-> When you enter your domain name in the reverse, it double checks immediately if the A Record is referring back to the same IP. This is used in anti-spam procedures, so your A Record must be  valid and propagated. There are certain rules to follow while entering the reverse:
+> When you enter your domain name in the reverse, it double checks immediately if the A Record is referring back to the same IP. This is used in anti-spam procedures, so your A Record must be valid and propagated. There are certain rules to follow while entering the reverse:
 > 
 >  - it cannot start with a `-`
 >  - it cannot be longer than 80 characters
