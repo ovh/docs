@@ -10,7 +10,7 @@ order: 1
 
 ## Objectif
 
-Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode bridged (via des MAC Virtuelles) n'est pas possible. Il est donc de configurer les IP fail-over en mode routé ou via le vRack.
+Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode bridged (via des MAC Virtuelles) n'est pas possible. Il est donc nécessaire de configurer les IP fail-over en mode routé ou via le vRack.
 
 **Découvrez comment configurer le réseau sous ProxMox VE.**
 
@@ -23,7 +23,7 @@ Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode br
 
 > [!warning]
 >
-> Aucun MAC virtuelle ne doit être appliquée sur les IP fail-over dans l'espace client OVHcloud.
+> Aucune MAC virtuelle ne doit être appliquée sur les IP fail-over dans l'espace client OVHcloud.
 >
 
 ## En pratique
@@ -46,7 +46,7 @@ Il faut :
 
 - créer un agrégat;
 - créer un bridge;
-- autoriser le forwardind et ajouter les routes.
+- autoriser le forwarding et ajouter les routes.
 
 #### Configurer l'hyperviseur
 
@@ -90,7 +90,7 @@ iface bond0 inet dhcp
 #Private
 
 auto vmbr0
-# Configuration du bridge avec une adresse privée et l'ajout de route pour y envoyer les IP fail-over
+# Configuration du bridge avec une adresse privée et l'ajout de routes pour y envoyer les IP fail-over
 # A.B.C.D/X  => Subnet des IP fail-over affectées au serveur, cela peut être un host avec du /32
 iface vmbr0 inet static
 	address 192.168.0.1
@@ -101,7 +101,7 @@ iface vmbr0 inet static
         post-up ip route add A.B.C.D/X dev vmbr0
 ```
 
-A ce stade, relancez les services réseaux ou redémarrez le serveur.
+A ce stade, relancez les services réseau ou redémarrez le serveur.
 
 #### Exemple de configuration VM cliente Debian
 
@@ -226,7 +226,7 @@ iface vmbr1 inet static
 
 ```
 
-A ce stade, relancez les services réseaux ou redémarrez le serveur.
+A ce stade, relancez les services réseau ou redémarrez le serveur.
 
 #### Exemple de configuration VM cliente Debian
 
