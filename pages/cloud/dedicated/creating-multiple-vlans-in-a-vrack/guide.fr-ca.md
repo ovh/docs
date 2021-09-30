@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment créer plusieurs VLAN dans le vRack'
 section: vRack
 ---
 
-**Dernière mise à jour le 27/07/2018**
+**Dernière mise à jour le 29/09/2021**
 
 ## Objectif
 
@@ -73,7 +73,7 @@ Pour finir, il reste à modifier la configuration de l'interface réseau afin qu
 sudo /etc/network/interfaces
 
 auto eth1.10
-iface eth1 inet static
+iface eth1.10 inet static
 address 192.168.0.50
 netmask 255.255.0.0
 broadcast 192.168.255.255

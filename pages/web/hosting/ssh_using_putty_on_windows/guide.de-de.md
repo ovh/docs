@@ -19,9 +19,8 @@ Weiterhin benötigen Sie Ihre FTP-Daten:
 - FTP-Login.
 - FTP-Passwort.
 
-
-Sie finden diese Daten in Ihrem Kundencenter (Abschnitt FTP). Oder folgen Sie einfach den Anweisungen in [dieser Hilfe](https://www.ovh.de/g1909.webhosting_passworter_erstellen_und_verwalten).
-
+Diese Informationen finden Sie im Konfigurationspanel. Gehen Sie in den Bereich FTP oder folgen Sie den nachstehenden Anweisungen
+[diese Anleitung](../verbindung-ftp-speicher-webhosting/).
 
 ## PuTTY starten
 

@@ -5,7 +5,7 @@ excerpt: 'So erstellen Sie mehrere VLANs im vRack'
 section: vRack
 ---
 
-**Stand 02.08.2019**
+**Stand 29.09.2021**
 
 ## Einleitung
 
@@ -72,8 +72,8 @@ Um den Vorgang abzuschließen, bearbeiten Sie die Konfiguration des Netzwerkinte
 ```sh
 nano /etc/network/interfaces
 
-auto eth1:1
-iface eth1 inet static
+auto eth1.10
+iface eth1.10 inet static
 address 192.168.0.50
 netmask 255.255.0.0
 broadcast 192.168.255.255

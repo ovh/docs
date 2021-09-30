@@ -1,9 +1,12 @@
 ---
-title: Public Cloud Databases responsibility model
-slug: 'Shared responsibilities between OVHcloud and the customer'
+title: Responsibility model
+excerpt: 'Shared responsibilities between OVHcloud and the customer'
+slug: responsibility-model
 section: General information
 order: 98
 ---
+
+**Last updated September 28th, 2021**
 
 Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 

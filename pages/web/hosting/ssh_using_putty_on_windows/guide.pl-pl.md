@@ -16,8 +16,8 @@ Będziesz potrzebować danych do FTP:
 - Login FTP.
 - Hasło FTP.
 
-
-Informacje na temat uzyskania danych do FTP znajdziesz w tym [przewodniku](https://www.ovh.pl/g1909.uslugi_www_zarzadzanie_haslami_i_dostep_do_nich).
+Informacja ta jest dostępna w panelu klienta. Przejdź do sekcji FTP lub postępuj zgodnie z instrukcjami.
+[tym przewodniku](../logowanie-przestrzen-dyskowa-ftp-hosting-web/).
 
 
 ## Uruchamianie programu Putty

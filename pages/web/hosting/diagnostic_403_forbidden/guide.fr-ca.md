@@ -105,7 +105,7 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 #### Réactiver votre hébergement avec le FTP Explorer « net2ftp »
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez vous dans la partie `Web Cloud`{.action} puis `Hébergements`{.action} et cliquez sur l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
+Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la partie `Web Cloud`{.action} puis `Hébergements`{.action} et cliquez sur l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
 
 Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](../connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Cliquez sur le bouton `Avancé`{.action} puis sur le bouton `Go`{.action} à côté de « Envoyer des commandes FTP arbitraires au serveur FTP ».
 

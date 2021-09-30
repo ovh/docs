@@ -58,7 +58,7 @@ Em primeiro lugar, verifique a segurança do(s) seu(s) computador(s):
 
 > [!warning]
 >
-> Antes de alterar a palavra-passe da base de dados do seu site a partir da Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), atualize o ficheiro de configuração do seu site para que este se ligue à base de dados com a nova palavra-passe.
+> Antes de alterar a palavra-passe da base de dados do seu site a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), atualize o ficheiro de configuração do seu site para que este se ligue à base de dados com a nova palavra-passe.
 >
 > Caso contrário, a alteração da palavra-passe da sua base de dados levará a um corte do site ou dos serviços que o utilizam.
 >

@@ -5,7 +5,7 @@ excerpt: 'Cómo crear varias VLAN en el vRack'
 section: vRack
 ---
 
-**Última actualización: 25/10/2018**
+**Última actualización: 29/09/2021**
 
 ## Objetivo
 
@@ -61,7 +61,7 @@ Por último, modifique la configuración de la interfaz de red para que reconozc
 sudo nano /etc/network/interfaces
 
 auto eth1.10
-iface eth1 inet static
+iface eth1.10 inet static
 address 192.168.0.50
 netmask 255.255.0.0
 broadcast 192.168.255.255
