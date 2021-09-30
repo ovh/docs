@@ -74,7 +74,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
 Se disponi di un hosting [Pro](https://www.ovh.it/hosting-web/hosting-web-pro.xml) o [Performance](https://www.ovh.it/hosting-web/hosting-web-performance.xml), accedi in [SSH](../hosting_condiviso_il_protocollo_ssh/) al tuo hosting. Esegui questo comando:
 
 ```bash
-php crypt.php
+php crypter.php
 ```
 
 > [!warning]

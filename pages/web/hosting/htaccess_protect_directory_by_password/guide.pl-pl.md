@@ -74,7 +74,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
 Jeśli dysponujesz hostingiem [Pro](https://www.ovh.pl/hosting/hosting-pro.xml) lub [Performance](https://www.ovh.pl/hosting/hosting-performance.xml), zaloguj się do Twojego hostingu za pomocą [SSH](../hosting_www_ssh_na_hostingu/). Wprowadź następujące polecenie:
 
 ```bash
-php crypt.php
+php crypter.php
 ```
 
 > [!warning]
@@ -152,4 +152,4 @@ Require walid-user
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
