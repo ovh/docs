@@ -18,8 +18,8 @@ Prima di iniziare, recupera le credenziali FTP che ti serviranno per accedere al
 - Login FTP
 - Password FTP
 
-
-Le informazioni di connessione sono disponibili nella sezione FTP del tuo Spazio Cliente OVH o in [questa guida](https://www.ovh.it/g1909.hosting_web_gestisci_le_tue_password).
+Queste informazioni sono disponibili nella cartella di configurazione. Accedi alla sezione FTP o segui le istruzioni qui sotto
+[guida](../accedere-spazio-storage-ftp-hosting-web/).
 
 
 ## Avvia Putty

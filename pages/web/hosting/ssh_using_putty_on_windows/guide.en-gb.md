@@ -18,9 +18,8 @@ You will also need your FTP credentials
 - FTP login.
 - FTP password.
 
-
 You can find this information in your control panel. Go to the FTP section or follow
-[this guide](https://www.ovh.co.uk/fr/g1909.mutualise_gerer_et_acceder_a_ses_mots_de_passe).
+[this guide](../log-in-to-storage-ftp-web-hosting/).
 
 
 ## Run PuTTy

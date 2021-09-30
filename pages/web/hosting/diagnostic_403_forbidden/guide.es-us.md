@@ -31,7 +31,7 @@ También puede ocurrir que, debido a una detección de anomalías, nuestros robo
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting](hhttps://www.ovh.com/world/es/hosting/) de OVHcloud.
+- Tener contratado un [plan de hosting](hhttps://www.ovh.com/world/es/hosting/) de OVHcloud.
 - Disponer de las [claves de conexión](../conexion-espacio-almacenamiento-ftp-alojamiento-web/#1-obtener-los-datos-de-conexion) al espacio de almacenamiento del alojamiento.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
@@ -43,7 +43,7 @@ Si la página **"403 forbidden"** aparece debido a una modificación errónea de
 
 Si las copias de seguridad disponibles no le permiten restablecer el acceso a su sitio web, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/).
 
-Si la página **"403 forbidden"** no ha aparecido debido a una modificación de su sitio web, consulte su mensajería. Si por motivos de seguridad nuestros servicios le han enviado un mensaje de correo electrónico indicándole que quiere cerrar el alojamiento, vaya al paso 2 [del siguiente paso](#step2).
+Si la página **"403 forbidden"** no ha aparecido debido a una modificación de su sitio web, consulte su mensajería. Si por motivos de seguridad nuestros servicios le han enviado un mensaje de correo electrónico indicándole que quiere cerrar el alojamiento, vaya al [paso 2](#step2).
 
 Si la página **"403 forbidden"** ha aparecido sin ninguna acción por su parte y no ha recibido ningún correo de nuestros servicios al respecto, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/).
 
