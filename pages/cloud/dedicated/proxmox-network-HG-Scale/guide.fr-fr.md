@@ -36,7 +36,7 @@ Sur les gammes HighGrade & SCALE, le fonctionnement des IP Failover en mode brid
 
 #### Schéma de la configuration cible
 
-![schema route](images/scema_route2022.png){.thumbnail}
+![schema route](images/schema_route2022.png){.thumbnail}
 
 #### Explications
 Il faut:
@@ -124,7 +124,7 @@ iface ens18 inet static
 
 #### Schéma de la configuration cible
 
-![schema vrack](images/scema_vrack2022.png){.thumbnail}
+![schema vrack](images/schema_vrack2022.png){.thumbnail}
 
 #### Explications
 Il faut:
