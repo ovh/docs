@@ -6,7 +6,7 @@ section: Advanced
 ---
 
 
-**Last updated 28th September 2021**
+**Last updated 30th September 2021**
 
 ## Objective
 
@@ -52,36 +52,40 @@ The authentication is carried out by a DKIM key that needs to be added in your D
 
 ### Configure the reverse IP.
 
-To further optimise email sending and stop your emails from being blocked, you can configure a reverse IP with your domain name.
+To further optimise email sending and lower the risk for your emails to be blocked, you can also configure a reverse IP with your domain name.
 
-To be able to properly add a reverse DNS record, you will first have to create an A record in the DNS Zone of your Domain with the IP Adress of your server as a target.
+To begin, you will first have to create an A record in the DNS Zone of your Domain with the IP Adress of your server as a target.
 
 If your DNS Servers are managed by OVHcloud, please consult this [guide](https://docs.ovh.com/au/en/domains/web_hosting_how_to_edit_my_dns_zone/#instructions).
 
-Once done, you can add the PTR record (also known as the reverse) by performing the following steps:
+Once done, add the PTR record (also known as the reverse):
 
-Log into the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, go to the `Bare Metal Cloud`{.action} section, then click on the `IP`{.action} section at the bottom of the column on the left side of the page. 
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, go to the `Bare Metal Cloud`{.action} section, then click on the `IP`{.action} section at the bottom left of the page. 
 
-![Reverse IP](images/reversedns.png)
+![Reverse IP](images/ipsection.png)
 
-The **“Service”** drop-down menu allows you to filter for services or Failover IPs.
+The **“Service”** drop-down select an IPv4 address:
 
-Select an IPv4 address, click on `...`{.action} in the relevant row to open the context menu, and select `Modify the reverse path`{.action}:
+![Reverse IP](images/servicedropmenu.png)
+
+click on `...`{.action} in the relevant row to open the context menu, and select `Modify the reverse path`{.action}:
 
 ![Reverse IP](images/setreversedns.png)
 
-When you enter your domain name in the reverse, it double checks immediately if the A Record is referring back to the same IP. This is used in anti-spam procedures, so your A Record must be valid and propagated. There are certain rules to follow while entering the reverse:
+Enter your domain name on the Reverse DNS section and click on `Confirm`{.action}
 
-   - it cannot start with a `-`
-   - it cannot be longer than 80 characters
-   - It cannot contain uppercase characters
-   - it must end with a `.`
+![Reverse IP](images/enterreverse.png)
 
-Example : "YourDomain.ca" in the reverse field would be **"yourdomain.ca."**
-
-### Check your information.
-
-You may want to use a website like [Mail Tester](http://www.mail-tester.com/) to check that all of your settings are correct.
+> [!primary]
+> When you enter your domain name in the reverse, it double checks immediately if the A Record is referring back to the same IP. This is used in anti-spam procedures, so your A Record must be  valid and propagated. There are certain rules to follow while entering the reverse:
+> 
+>  - it cannot start with a `-`
+>  - it cannot be longer than 80 characters
+>  - It cannot contain uppercase characters
+>  - it must end with a `.`
+>
+> Example : "MyDomain.ca" in the reverse field would be **"mydomain.ca."**
+>
 
 ### Specific types of email sending
 
@@ -95,6 +99,9 @@ To do this, please open a support request with Microsoft here: <https://support.
 
 If your recipients are with Gmail, adding specific records (e.g. a DMAC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en).
 
+### Check your information.
+
+You may want to use a website like [Mail Tester](http://www.mail-tester.com/) to check that all of your settings are correct.
 
 
 ## Go further
