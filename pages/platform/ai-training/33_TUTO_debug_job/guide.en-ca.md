@@ -20,13 +20,13 @@ This tutorial tries to give you some hints about how you could debug your jobs i
 
 A lot of options and sub-commands are available in the ovhai tool.
 
-To get a list of available sub-commands and arguments, just start run
+To get a list of available sub-commands and arguments, just start run:
 
 ``` {.bash}
 ovhai --help
 ```
 
-further details on each sub-command can be accessed by
+further details on each sub-command can be accessed by:
 
 ``` {.bash}
 ovhai <subcommand> --help
@@ -34,13 +34,13 @@ ovhai <subcommand> --help
 
 ## Where to find the UUID of my job?
 
-First you need the UUID of your job, so use
+First you need the UUID of your job, so use:
 
 ``` {.bash}
 ovhai job list
 ```
 
-if your job is not listed, you may use
+if your job is not listed, you may use:
 
 ``` {.bash}
 $ ovhai job list -a
@@ -52,13 +52,13 @@ to list all jobs.
 
 ### First, check the return-code / error-code of my job
 
-You can find the return-code of your job by running
+You can find the return-code of your job by running:
 
 ``` {.bash}
 ovhai job get <UUID>
 ```
 
-your return-code is listed in the "Infos"-field in the "Status"-section
+your return-code is listed in the "Infos"-field in the "Status"-section:
 
 ``` {.bash}
 Status:
@@ -76,7 +76,7 @@ Check for typos and access issues if you try to access a non-public image.
 
 ### Check if there are any error-messages.
 
-Your stdout (Output) and stderr (Error) messages can be read with
+Your stdout (Output) and stderr (Error) messages can be read with:
 
 ``` {.bash}
 ovhai job logs <UUID>
@@ -92,7 +92,7 @@ To skip any "autostart" of your image, you may use a bash with infinite sleep an
 ovhai job run --ssh-public-keys ~/.ssh/id_rsa.pub <Image> -- bash -c 'sleep inf'
 ```
 
-Verify you can connect to the SSH host by running the following command
+Verify you can connect to the SSH host by running the following command:
 
 ``` {.bash}
 ssh <job-id>@gra.training.ai.cloud.ovh.net
@@ -105,7 +105,7 @@ You may now start your commands and/or use the typical commandline utils to debu
 
 ### Debug your Code
 
-The easiest way to debug your code may be using above interactive debug-session and run/compile your code interactively checking for
+The easiest way to debug your code may be using above interactive debug-session and run/compile your code interactively checking for:
 
 -   error-messages
 -   syntax errors
@@ -113,7 +113,7 @@ The easiest way to debug your code may be using above interactive debug-session 
 -   wrong versions
 -   ...
 
-f.e. by running (parts) of your python-code with
+f.e. by running (parts) of your python-code with:
 
 ``` {.bash}
 python -i

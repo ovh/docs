@@ -15,10 +15,10 @@ It is based on the YOLOv5 open source repository by [Ultralytics](https://github
 
 ## Requirements
 
-*access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-*an AI Training project created inside a Public Cloud project
-*a user for AI Training
-*your own dataset
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+* an AI Training project created inside a Public Cloud project
+* a user for AI Training
+* your own dataset
 
 ## Instructions
 

@@ -21,9 +21,9 @@ The tutorial presents a simple example of launching **TensorBoard** in a noteboo
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
--   an AI Notebooks project created inside a Public Cloud project
--   a user for AI Notebooks
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- an AI Notebooks project created inside a Public Cloud project
+- a user for AI Notebooks
 
 ## Instructions
 
