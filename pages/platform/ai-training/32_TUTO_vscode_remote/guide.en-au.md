@@ -42,7 +42,7 @@ ovhai job get <job-id>
 
 ## Configure VSCode Remote Development
 
-Verify you can connect to the SSH host by running the following command: from a terminal / PowerShell window replacing user\@hostname accordingly.
+Verify you can connect to the SSH host by running the following command from a terminal / PowerShell window replacing user\@hostname accordingly:
 
 ``` {.bash}
 ssh <job-id>@gra.training.ai.cloud.ovh.net
@@ -71,4 +71,4 @@ Enjoy.
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

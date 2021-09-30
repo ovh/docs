@@ -9,11 +9,11 @@ order: 3
 
 ## Objective
 
-This guide shows how to share [**notebooks**](../definition) with other people through the **ovhai** CLI.
+This guide shows how to share [**notebooks**](https://docs.ovh.com/ca/en/publiccloud/ai/notebooks/definition/) with other people through the **ovhai** CLI.
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](../../ai-training/install-client))
+-   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/ca/en/ai-training/install-client/))
 
 ## Share a notebook with people in your Public Cloud project
 

@@ -81,7 +81,7 @@ The "Url" corresponds to your JupyterLab server. Pasting this URL in your browse
 
 If you don't have the ID of the notebook you want to access, you can list all your notebooks using:
 
-```console
+``` {.console}
 $ ovhai notebook ls
 ```
 
@@ -158,9 +158,9 @@ Note that a notebook must first be stopped before being deleted, and that delete
 
 ## Going further
 
-Learn how to access your object storage data from your notebooks [here](../data).
+Learn how to access your object storage data from your notebooks [here](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/access-object-storage-data/).
 
-Learn how to share your notebooks with other people [here](../sharing-notebooks).
+Learn how to share your notebooks with other people [here](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/sharing-notebooks/).
 
 ## Feedback
 

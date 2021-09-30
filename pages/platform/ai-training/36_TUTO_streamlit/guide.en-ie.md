@@ -11,7 +11,7 @@ order: 7
 
 [Streamlit](https://streamlit.io/) is a python framework that turns scripts into shareable web application.
 
-The purpose of this tutorial is to provide a concrete example on how to build and use a custom docker image for a streamlit applications.
+The purpose of this tutorial is to provide a concrete example on how to build and - On the use a custom Docker image for a Streamlit applications.
 
 ## Requirements
 
@@ -34,7 +34,7 @@ import streamlit as st
 import pandas as pd
 ```
 
-Display all information you want on your Streamlit application :
+Display all information you want on your Streamlit application:
 
 ``` {.python}
 st.title('My first app')

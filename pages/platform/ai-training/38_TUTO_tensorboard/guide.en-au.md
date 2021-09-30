@@ -21,7 +21,7 @@ The tutorial presents a simple example of launching **TensorBoard** in a job.
 
 ## Requirements
 
--   a working `ovhai` CLI [how to install ovhai CLI](../install-client)
+- a working `ovhai` CLI [how to install ovhai CLI](../install-client)
 
 ## Instructions
 
@@ -81,4 +81,4 @@ Once the job is running you can access your TensorBoard directly from the job's 
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

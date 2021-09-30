@@ -71,7 +71,7 @@ A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-tr
 
 ### How to use TensorBoard with AI training ?
 
-If you want to launch TensorBoard in a job, please refer to this [documentation](../../tuto-tensorboard-inside-job).
+If you want to launch TensorBoard in a job, please refer to this [documentation](https://docs.ovh.com/ca/en/ai-training/tuto-tensorboard-inside-job).
 
 ## Feedback
 
