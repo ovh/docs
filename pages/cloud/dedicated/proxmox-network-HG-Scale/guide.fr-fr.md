@@ -34,7 +34,7 @@ Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode br
 >
 
 
-### IP fail-over en mode routé sur la patte publique
+### IP fail-over en mode routé sur les interfaces réseau publiques
 
 #### Schéma de la configuration cible
 
