@@ -7,67 +7,80 @@ section: 'Fonctionnalités des adresses e-mail'
 order: 04
 ---
 
-**Dernière mise à jour le 12/08/2020**
+**Dernière mise à jour le 27/09/2021**
 
 ## Objectif
 
-Un filtre permet de configurer des conditions sur les e-mails que vous recevez, ainsi que des actions qui en découlent.
+Un filtre e-mail permet d'appliquer différents traitements sur les messages que vous recevez, selon les critères de votre choix.
 
-Par exemple : vous souhaitez que tout e-mail contenant "[SPAM]" dans le sujet soit supprimé.
+Par exemple : vous souhaitez que tout e-mail contenant « [SPAM] » dans le sujet soit supprimé.
 
-- Condition = le sujet de l'e-mail contient *SPAM*
-- Action = supprimer l'e-mail
+- Critère = le sujet de l'e-mail contient *SPAM*
+- Traitement = supprimer l'e-mail
 
-**Découvrez comment créer et configurer un filtre sur votre adresse e-mail**
-
+**Découvrez comment créer et configurer un filtre sur votre adresse e-mail.**
 
 ## Prérequis
 
-- Avoir une offre e-mail MX Plan ou un [Pack Hébergement Web](https://www.ovh.com/fr/hebergement-web/){.external} .
-- Avoir l'accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'une offre e-mail MX Plan (disponible via : une offre d’[hébergement web]({ovh_www}/hebergement-web/){.external}, l'[hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external} compris avec un nom de domaine, ou l'offre MX Plan commandée séparément).
+- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-## En pratique
+> [!warning]
+>
+> Le guide suivant s'adresse aux détenteurs de l'offre MXplan « historique ». Pour la nouvelle offre, la gestion des filtres se fait directement via le webmail OWA (**O**utlook **W**eb **A**pplication). Identifiez votre offre à l'aide du tableau ci-dessous.
+>
 
-Dans un premier temps, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
+|---|---|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
+|Poursuivez la lecture de ce guide à partir de la section « [En pratique](#oldmxplan) ».|Poursuivez vers notre guide « [Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/) ».|
 
-Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}.
+## En pratique <a name="oldmxplan"></a>
 
-Dans le tableau listant vos différentes adresses e-mails, cliquez sur l'icône `Filtre`{.action} de l'adresse concernée.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Web Cloud`.
+
+Cliquez sur `Emails`{.action} dans la barre de services à gauche, puis choisissez le nom du service MX Plan concerné.
+
+Dans l'onglet `Emails`{.action} de votre service MXplan, vous trouverez la liste de vos adresses e-mail. Une colonne `Filtres` est visible dans le tableau des comptes e-mail. Cliquez sur l'icône d'entonnoir.
 
 ![emails](images/img_3239.jpg){.thumbnail}
 
-Vous accéderez à la liste de vos filtres actuellement configurés pour cette adresse e-mail. Pour en ajouter un, cliquez donc sur le bouton à droite `Ajouter un Filtre`{.action}.
+Vous accédez alors à la liste des filtres actuellement configurés pour cette adresse e-mail.
 
 ![emails](images/img_3240.jpg){.thumbnail}
 
+Pour ajouter une règle à votre adresse e-mail, cliquez sur le bouton `Ajouter un Filtre`{.action}.
+
+- **Nom du filtre :** choisissez un nom pour votre filtre.
+
+- **Priorité :** définit l'ordre d'exécution de vos filtres sur un message entrant. Un filtre de priorité 1 s'exécutera avant un filtre de priorité 2.
+
+- **Activer le filtre :** décochez cette option si vous souhaitez appliquer ce filtre plus tard.
+
 ### Comprendre la configuration des filtres d'e-mails
+
+Lorsque vous ajoutez un filtre, la fenêtre suivante s'affiche :
 
 ![emails](images/img_3241.jpg){.thumbnail}
 
-#### Informations
-
-- **Nom du filtre :** Cela sert à différencier vos filtres dans l'espace client.
-- **Priorité :** Cela définit l'ordre d'exécution de vos filtres sur une même boite e-mail. Un filtre de priorité 1 s'exécutera avant un filtre de priorité 5.
-- **Activer le filtre :** Cela détermine si le filtre sera effectif ou pas (Vous pouvez créer un filtre en décochant l'option si vous souhaitez l'activer plus tard par exemple).
-
 #### Règles
 
-C'est ici que vous allez configurer les conditions, les règles du filtre.
+Cette partie vous permet de définir les messages sur lesquels le filtre s'appliquera.
 
-Premier choix (En-tête):
+Premier choix (en-tête) :
 
-- **De :** Correspond à l'expéditeur, exemple : "Si l'expéditeur ..."
-- **À :** Correspond au destinataire, exemple : "Si le destinataire ..."
-- **Sujet du message :** Correspond au sujet du message, exemple : "Si le sujet du message ..."
-- **Autre :** Autre paramètre
+- **De :** désigne l'adresse e-mail de l'expéditeur, par exemple : « Si l'expéditeur ... »
+- **À :** désigne l'adresse e-mail du destinataire, par exemple : « Si le destinataire ... »
+- **Sujet du message :** désigne le contenu du sujet du message, par exemple : « Si le sujet du message ... ».
+- **Autre :** indiquez un autre élément à prendre en compte dans l'en-tête de l'e-mail.
 
-Deuxième choix (Règle):
+Deuxième choix (règle) :
 
-- **spf :** Paramètre qui dépend du champ SPF, exemple : "... n'a pas de champ SPF ..."
-- **contient :** exemple : "... contient ..."
-- **ne contient pas :** exemple : "... ne contient pas ..."
+- **spf :** Indiquez une valeur du [champ SPF](https://docs.ovh.com/fr/domains/le-champ-spf/) à prendre en compte, par exemple : « ... n'a pas de champ SPF ... ».
+- **contient :** exemple : « ... contient ... ».
+- **ne contient pas :** exemple : « ... ne contient pas ... ».
 
-Troisième choix (valeur):
+Troisième choix (valeur) :
 
 - Exemple : [SPAM]
 
@@ -75,20 +88,18 @@ Quatrième choix (+) :
 
 - Cela vous permet d'ajouter une ou plusieurs conditions pour la même action.
 
-**Résultat de ces conditions** - Exemple : "Si le sujet du message contient [SPAM]"
-
 #### Actions
 
-C'est ici que vous allez choisir ce qui sera fait par le filtre si les conditions au dessus sont réunies.
+Cette partie vous permet de définir les actions à appliquer.
 
 Vous avez le choix entre :
 
-- **Accepter :** Les e-mails remplissant les conditions seront reçus normalement.
-- **Rediriger vers une adresse locale :** Redirige les e-mails remplissant les conditions vers une des adresses e-mails de votre domaine.
-- **Suppression :** Les e-mails remplissant les conditions seront supprimés.
-- **Rediriger vers une adresse distante :** Redirige les e-mails remplissant les conditions vers l'adresse e-mail de votre choix.
+- **Accepter :** les e-mails remplissant les conditions seront reçus normalement.
+- **Rediriger vers une adresse locale :** redirige les e-mails remplissant les conditions vers une des adresses e-mail de votre domaine.
+- **Suppression :** les e-mails remplissant les conditions seront supprimés.
+- **Rediriger vers une adresse distante :** redirige les e-mails remplissant les conditions vers l'adresse e-mail de votre choix.
 
-### Exemples
+### Exemples de filtres
 
 #### Supprimer les spams
 
@@ -111,7 +122,7 @@ Vous avez le choix entre :
 |Paramètres du filtre|À|contient|ML@mailing.com|Rediriger vers une adresse locale : recipient@mypersonaldomain.ovh|
 |Ce que le filtre va faire|Si le message a été envoyé à la Mailing-List|appelée|ML@mailing.com|alors, renvoyer le message vers mon autre adresse : recipient@mypersonaldomain.ovh|
 
-#### Supprimer les e-mails contenant une mention indésirable à l'exception d'un expéditeur
+#### Supprimer les e-mails contenant une mention indésirable, à l'exception d'un expéditeur
 
 Deux filtres sont à ajouter :
 
@@ -120,12 +131,14 @@ Deux filtres sont à ajouter :
 |Paramètres du filtre 1|Sujet du message|contient|"money"|suppression|
 |Paramètres du filtre 2|De|ne contient pas|john@mybank.ovh|suppression|
 
-Si le sujet du message contient le mot "money", **et que** l'expéditeur du message n'est pas "john@mybank.ovh" alors le message sera supprimé.
-
-Dans ce cas, la configuration sera la suivante :
+Si le sujet du message contient le mot « money », **et que** l'expéditeur du message n'est pas « john@mybank.ovh », alors le message sera supprimé :
 
 ![emails](images/img_3242.jpg){.thumbnail}
 
 ## Aller plus loin
+
+[Premiers pas avec l’offre MX Plan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/)
+
+[Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/emails/regles-boite-de-reception-owa-mx-plan/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
