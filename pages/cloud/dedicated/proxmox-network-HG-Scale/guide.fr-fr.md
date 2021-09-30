@@ -90,7 +90,7 @@ iface bond0 inet dhcp
 #Private
 
 auto vmbr0
-# Configuration du bridge avec une adresse privée et l'ajout de routes pour y envoyer les IP fail-over
+# Configuration du bridge avec une adresse privée et l'ajout de route(s) pour y envoyer les IP fail-over
 # A.B.C.D/X  => Subnet des IP fail-over affectées au serveur, cela peut être un host avec du /32
 iface vmbr0 inet static
 	address 192.168.0.1
