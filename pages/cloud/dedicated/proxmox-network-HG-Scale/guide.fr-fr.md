@@ -17,29 +17,34 @@ Sur les gammes HighGrade & SCALE, le fonctionnement des IP Failover en mode brid
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
-- Disposer d'IP FailOver
-- Ne pas mettre de MAC virtuelle sur les IP FO dans le manager OVH.
+* Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
+* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+* Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
+* Disposer d'IP FailOver
+* Ne pas mettre de MAC virtuelle sur les IP FailOver dans le manager OVH.
 
-## Pour info
 
-Sur ces gammes de serveurs, il y a 4 cartes réseaux. Les deux premieres pour le public, les deux dernieres pour le privé. Pour profiter de l'ensemble de la bande passante, des aggrégat doivent être crée.
+## En pratique
 
-## IP FailOver en mode routé sur la patte publique
+> [!primary]
+>
+> Sur ces gammes de serveurs, il y a 4 cartes réseaux. Les deux premières pour le public, les deux dernières pour le privé. Pour profiter de l'ensemble de la bande passante, des agrégat doivent être crée.
+>
 
-### Schéma de la configuration cible
+
+### IP FailOver en mode routé sur la patte publique
+
+#### Schéma de la configuration cible
 
 ![schema route](images/scema_route2022.png){.thumbnail}
 
-### Explications
+#### Explications
 Il faut:
 - Créer un agrégat
 - Créer un bridge
 - autoriser le forwardind et ajouter les routes
 
-### Configuration hyperviseur
+#### Configuration hyperviseur
 
 Tout se passe dans le fichier /etc/network/interfaces
 
@@ -82,7 +87,7 @@ iface bond0 inet dhcp
 
 auto vmbr0
 # Configuration du bridge avec une adresse privée et l'ajout de route pour y envoyer les IP FailOver
-# A.B.C.D/X  => Subnet des IP FailOver affectées au serveur
+# A.B.C.D/X  => Subnet des IP FailOver affectées au serveur, peut-être un host avec du /32
 iface vmbr0 inet static
 	address 192.168.0.1
         netmask 255.255.255.255
@@ -92,9 +97,9 @@ iface vmbr0 inet static
         post-up ip route add A.B.C.D/X dev vmbr0
 ```
 
-Relance des servcies réseaux ou reboot serveur.
+Relance des services réseaux ou reboot serveur.
 
-### Exemple Configuration VM Cliente Debian
+#### Exemple Configuration VM Cliente Debian
 
 Contenu du fichier /etc/network/interfaces
 
@@ -107,9 +112,9 @@ iface ens18 inet static
     gateway 192.168.0.1
 ```
 
-## IP FailOver via le vRack
+### IP FailOver via le vRack
 
-### Prérequis
+#### Prérequis
 
 * Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.
 * Préparer votre plage d'adresses IP privées choisies.
@@ -117,16 +122,16 @@ iface ens18 inet static
 * Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
 * Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-### Schéma de la configuration cible
+#### Schéma de la configuration cible
 
 ![schema vrack](images/scema_vrack2022.png){.thumbnail}
 
-### Explications
+#### Explications
 Il faut:
-- Créer un aggrégat
-- Créer un bridge pluggé à l'aggrégat
+- Créer un agrégat
+- Créer un bridge pluggé à l’agrégat
 
-### Configurer une adresse IP utilisable
+#### Configurer une adresse IP utilisable
 
 Dans le cas du vRack, la première, l'avant-dernière et la dernière adresse d'un bloc d'IP donné sont toujours réservées respectivement à l'adresse réseau, la passerelle réseau et au *broadcast* du réseau. Cela signifie que la première adresse utilisable est la deuxième adresse du bloc, comme indiqué ci-dessous :
 
@@ -156,15 +161,15 @@ Pour configurer la première adresse IP utilisable, vous devez éditer le fichie
 > Le masque de sous-réseau utilisé dans cet exemple est approprié pour notre bloc IP. Votre masque de sous-réseau peut différer en fonction de la taille de votre bloc. Lorsque vous achetez votre bloc d'IP, vous recevez un e-mail vous indiquant le masque de sous-réseau à utiliser.
 >
 
-### Configuration hyperviseur
+#### Configuration hyperviseur
 
 Tout se passe dans le fichier /etc/network/interfaces
-
-Ici, ce qui compte c'est la configuration bond1 et vmbr1
 
 ```bash
 vi /etc/network/interfaces
 ```
+
+Ici, ce qui compte c'est la configuration bond1 et vmbr1
 
 ```bash
 auto lo
@@ -215,9 +220,9 @@ iface vmbr1 inet static
 
 ```
 
-Relance des servcies réseaux ou reboot serveur.
+Relance des services réseaux ou reboot serveur.
 
-### Exemple Configuration VM Cliente Debian
+#### Exemple Configuration VM Cliente Debian
 
 Contenu du fichier /etc/network/interfaces
 
@@ -230,7 +235,6 @@ iface ens18 inet static
     gateway 46.105.135.110
 ```
 
-
+## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
-
