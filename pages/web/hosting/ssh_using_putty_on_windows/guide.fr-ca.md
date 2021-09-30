@@ -30,7 +30,7 @@ Vous aurez également besoin de vos identifiants FTP
 - Login FTP .
 - Mot de passe FTP .
 
-Vous pouvez retrouver ces informations de connexion sur votre espace client, partie FTP, ou en suivant [ce guide](../connexion-espace-stockage-ftp-hebergement-web/){.external}.
+Vous pouvez retrouver ces informations de connexion sur votre espace client, partie FTP, ou en suivant [ce guide](../connexion-espace-stockage-ftp-hebergement-web/).
 
 
 ### Lancement de Putty

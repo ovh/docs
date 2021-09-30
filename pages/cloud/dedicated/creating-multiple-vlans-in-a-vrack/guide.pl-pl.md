@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak utworzyć kilka sieci VLAN w prywatnej sieci vRack'
 section: vRack
 ---
 
-**Ostatnia aktualizacja z dnia 09-10-2018**
+**Ostatnia aktualizacja z dnia 29-09-2021**
 
 ## Wprowadzenie
 
@@ -61,7 +61,7 @@ Na koniec zmodyfikuj konfigurację interfejsu sieciowego, aby uwzględnił tag V
 sudo /etc/network/interfaces
 
 auto eth1.10
-iface eth1 inet static
+iface eth1.10 inet static
 address 192.168.0.50
 netmask 255.255.0.0
 broadcast 192.168.255.255
