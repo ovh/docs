@@ -49,7 +49,7 @@ Job URL for accessing the port 9000 (starting with the job's ID followed by the 
 
 -   https://00000000-0000-0000-0000-000000000000-9000.job.gra.training.ai.cloud.ovh.net
 
-Only layer 7 is accessible.
+Only the HTTP layer is accessible.
 
 ### OVHcloud vRack
 
