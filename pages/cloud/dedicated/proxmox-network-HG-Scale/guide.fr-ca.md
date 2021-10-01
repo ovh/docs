@@ -16,9 +16,9 @@ Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode br
 
 ## Prérequis
 
-* Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
-* Disposer d'[IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/)
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+* Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/)
+* Disposer d'[IP fail-over](https://www.ovhcloud.com/fr-ca/bare-metal/ip/)
+* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 > [!warning]
 >
@@ -120,9 +120,9 @@ iface ens18 inet static
 
 * Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.
 * Préparer votre plage d'adresses IP privées choisies.
-* Posséder un [serveur compatible vRack](https://www.ovhcloud.com/fr/bare-metal/){.external}.
-* Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
-* Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+* Posséder un [serveur compatible vRack](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}.
+* Activer un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
+* Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 #### Schéma de la configuration cible
 
