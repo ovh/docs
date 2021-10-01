@@ -66,7 +66,7 @@ echo nl2br(`$string_1 \n $string_2 \n $string_3`);
  ?>
 ```
 
-If you have a [Professional](https://www.ovh.co.uk/web-hosting/web-hosting-pro.xml) or [Performance](https://www.ovh.co.uk/web-hosting/performance-web-hosting.xml) Web Hosting plan, log in to your hosting via [SSH](../web_hosting_ssh_on_web_hosting_packages/). Run the following command:
+If you have a [Professional](https://www.ovh.com/asia/web-hosting/web-hosting-pro.xml) or [Performance](https://www.ovh.com/asia/web-hosting/performance-web-hosting.xml) Web Hosting plan, log in to your hosting via [SSH](../web_hosting_ssh_on_web_hosting_packages/). Run the following command:
 
 ```bash
 php crypter.php
@@ -74,9 +74,9 @@ php crypter.php
 
 > [!warning]
 >
-> For security reasons, using SSH in this case is recommended. However, if you have a [Personal](https://www.ovh.co.uk/web-hosting/web-hosting-personal.xml) offer and you do not want to upgrade it to a [Professional](https://www.ovh.co.uk/web-hosting/web-hosting-pro.xml) or [Performance](https://www.ovh.co.uk/web-hosting/performance-web-hosting.xml) one, you can also run the "crypter.php" file with your web browser (by simply opening the URL, for example: https://yourdomainname.ovh/crypter.php).
+> For security reasons, using SSH in this case is recommended. However, if you have a [Personal](https://www.ovh.com/asia/web-hosting/web-hosting-perso.xml) offer and you do not want to upgrade it to a [Professional](https://www.ovh.com/asia/web-hosting/web-hosting-pro.xml) or [Performance](https://www.ovh.com/asia/web-hosting/performance-web-hosting.xml) one, you can also run the "crypter.php" file with your web browser (by simply opening the URL, for example: https://your-domain-name.ovh/crypter.php).
 >
-> For any additional questions on how to encrypt your passwords, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/). We will not be able to assist you with this matter.
+> For any additional questions on how to encrypt your passwords, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/asia/). We will not be able to assist you with this matter.
 >
 
 Retrieve the encrypted passwords (Do not copy the "&#60;br />" if you run the "php crypter.php" command in SSH):
@@ -143,8 +143,8 @@ Require valid-user
 
 ## Go further <a name="gofurther"></a>
 
-[All about the .htaccess file](../all_about_the_htaccess_file/)
+[What else can you do with the .htaccess file?](../what_else_can_you_do_with_the_htaccess_file/)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/asia/).
 
 Join our community of users on <https://community.ovh.com/en/>.

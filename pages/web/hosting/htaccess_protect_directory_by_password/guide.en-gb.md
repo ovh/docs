@@ -74,7 +74,7 @@ php crypter.php
 
 > [!warning]
 >
-> For security reasons, using SSH in this case is recommended. However, if you have a [Personal](https://www.ovh.co.uk/web-hosting/web-hosting-personal.xml) offer and you do not want to upgrade it to a [Professional](https://www.ovh.co.uk/web-hosting/web-hosting-pro.xml) or [Performance](https://www.ovh.co.uk/web-hosting/performance-web-hosting.xml) one, you can also run the "crypter.php" file with your web browser (by simply opening the URL, for example: https://yourdomainname.ovh/crypter.php).
+> For security reasons, using SSH in this case is recommended. However, if you have a [Personal](https://www.ovh.co.uk/web-hosting/web-hosting-personal.xml) offer and you do not want to upgrade it to a [Professional](https://www.ovh.co.uk/web-hosting/web-hosting-pro.xml) or [Performance](https://www.ovh.co.uk/web-hosting/performance-web-hosting.xml) one, you can also run the "crypter.php" file with your web browser (by simply opening the URL, for example: https://your-domain-name.ovh/crypter.php).
 >
 > For any additional questions on how to encrypt your passwords, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/). We will not be able to assist you with this matter.
 >
