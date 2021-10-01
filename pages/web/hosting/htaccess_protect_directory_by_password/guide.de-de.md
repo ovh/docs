@@ -1,7 +1,7 @@
 ---
 title: Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen
 slug: hosting-htaccess-authentifizierung
-legacy_guide_number: 1968
+legacy_guide_number: g1968
 excerpt: Erfahren Sie hier, wie Sie den Zugang zur Verwaltung Ihrer Website mit einer .htaccess Datei schützen.
 section: Weiterleitung und Authentifizierung
 ---

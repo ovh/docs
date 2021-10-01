@@ -1,7 +1,7 @@
 ---
 title: "Chroń interfejs administracyjny Twojej strony za pomocą pliku .htaccess"
 slug: hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu
-legacy_guide_number: 1968
+legacy_guide_number: g1968
 excerpt: "Dowiedz się, jak zabezpieczyć dostęp do strony WWW za pomocą pliku .htaccess"
 section: Przekierowania i uprawnienia dostępu
 ---

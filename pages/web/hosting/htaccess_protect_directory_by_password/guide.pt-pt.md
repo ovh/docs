@@ -1,7 +1,7 @@
 ---
 title: "Proteger a interface de administração do seu site com um ficheiro .htaccess"
 slug: partilhado-htaccess-como-protecao-lacces-a-um-diretorio-por-autenticacao
-legacy_guide_number: 1968
+legacy_guide_number: g1968
 excerpt: "Encontre aqui como proteger o acesso à administração do seu site com um ficheiro .htaccess"
 ---
 

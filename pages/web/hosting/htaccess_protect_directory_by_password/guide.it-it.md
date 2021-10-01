@@ -1,7 +1,7 @@
 ---
 title: "Proteggi l'interfaccia di gestione del tuo sito con un file.htaccess"
 slug: condividi-htaccess-come-proteggere-lacci-a-una-cartella-tramite-autenticazione
-legacy_guide_number: 1968
+legacy_guide_number: g1968
 excerpt: Come proteggere l'accesso alla gestione del tuo sito con un file .htaccess
 section: Scrittura e autenticazione
 ---
