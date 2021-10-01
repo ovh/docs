@@ -1,7 +1,7 @@
 ---
-title: 'Configuring the network on ProxMox VE on the High Grade & SCALE ranges'
+title: 'Configuring the network on Proxmox VE on the High Grade & SCALE ranges'
 slug: proxmox-network-hg-scale
-excerpt: 'Find out how to configure the network on ProxMox VE on the High Grade & SCALE ranges.'
+excerpt: 'Find out how to configure the network on Proxmox VE on the High Grade & SCALE ranges'
 section: 'Advanced use'
 order: 1
 ---
@@ -12,13 +12,13 @@ order: 1
 
 On the High Grade & SCALE ranges, it is not possible to operate failover IPs in bridged mode (via virtual MACs). It is therefore necessary to configure failover IPs in routed mode or via the vRack.
 
-**Find out how to configure the network in ProxMox VE.**
+**This guide explains how to configure the network in Proxmox VE.**
 
 ## Requirements
 
-* an [OVHcloud dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/)
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-* a [failover IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/)
+- an [OVHcloud dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- a [failover IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/)
 
 > [!warning]
 >
@@ -29,12 +29,12 @@ On the High Grade & SCALE ranges, it is not possible to operate failover IPs in 
 
 > [!primary]
 >
-> On these server ranges, there are 4 network cards. The first two for the public, the last two for the private. To get all the bandwidth, aggregates must be created.
+> On these server ranges, there are 4 network cards. The first two for the public, the last two for the private network. To get all the bandwidth, aggregates must be created.
 >
 
 ### Failover IP in routed mode on public network interfaces
 
-#### Target Configuration Schema
+#### Target configuration schema
 
 ![route diagram](images/schema_route2022.png){.thumbnail}
 
@@ -42,13 +42,13 @@ On the High Grade & SCALE ranges, it is not possible to operate failover IPs in 
 
 You need to:
 
-* create an aggregate
-* create a bridge
-* allow forwarding and add routes.
+- create an aggregate
+- create a bridge
+- allow forwarding and add routes.
 
-#### Configure hypervisor
+#### Configure the hypervisor
 
-Everything happens in the `/etc/network/interfaces` file:
+The entire configuration is done in the `/etc/network/interfaces` file:
 
 ```bash
 vi /etc/network/interfaces
@@ -75,7 +75,7 @@ auto ens35f1
 iface ens35f1 inet manual
 
 auto bond0
-# LACP Aggregate on public interfaces
+# LACP aggregate on public interfaces
 # configured in DHCP mode on this example
 # Has the server's public IP
 iface bond0 inet dhcp
@@ -101,7 +101,7 @@ iface vmbr0 inet static
 
 At this point, restart the network services or restart the server.
 
-#### Debian Client VM Configuration Example
+#### Configuration example of a client VM on Debian
 
 File contents `/etc/network/interfaces`:
 
@@ -118,13 +118,14 @@ iface ens18 inet static
 
 #### Requirements
 
-* You need to have reserved a public block of IP addresses in your account, with a minimum of four addresses.
-* Prepare your chosen private IP range.
-* a vRack-compatible [server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
-* Activate a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service.
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- a public block of IP addresses in your account, with a minimum of four addresses
+- your chosen private IP address range
+- a [vRack compatible server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
+- a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
-#### Target Configuration Schema
+
+#### Target configuration schema
 
 ![vrack diagram](images/schema_vrack2022.png){.thumbnail}
 
@@ -132,8 +133,8 @@ iface ens18 inet static
 
 You need to:
 
-* create an aggregate
-* create a bridge connected to the aggregate
+- create an aggregate
+- create a bridge connected to the aggregate
 
 #### Configure a usable IP address
 
@@ -158,16 +159,16 @@ For vRack, the first, penultimate, and last addresses in a given IP block are al
 46.105.135.111 # Reserved: network broadcast
 ```
 
-To configure the first usable IP address, you must edit the network configuration file as shown below. In this example, use a subnet mask of **255.255.255.240**.
+To configure the first usable IP address, you must edit the network configuration file as shown below. In this example, we use a subnet mask of **255.255.255.240**.
 
 > [!primary]
 >
 > The subnet mask used in this example is appropriate for our IP block. Your subnet mask may differ depending on the size of your block. When you purchase your IP block, you will receive an email notifying you of the subnet mask to use.
 >
 
-#### Configure hypervisor
+#### Configure the hypervisor
 
-Everything happens in the `/etc/network/interfaces` file:
+The entire configuration is done in the `/etc/network/interfaces` file:
 
 ```bash
 vi /etc/network/interfaces
@@ -226,7 +227,7 @@ iface vmbr1 inet static
 
 At this point, restart the network services or restart the server.
 
-#### Debian Client VM Configuration Example
+#### Configuration example of a client VM on Debian
 
 File contents `/etc/network/interfaces`:
 
