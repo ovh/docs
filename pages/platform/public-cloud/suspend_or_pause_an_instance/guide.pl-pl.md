@@ -10,7 +10,7 @@ order: 3
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja dnia 2021-09-21**
+**Ostatnia aktualizacja dnia 2021-10-01**
 
 ## Wprowadzenie
 
@@ -25,8 +25,8 @@ order: 3
 ## Wymagania początkowe
 
 - [Utworzona na Twoim koncie instancja Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/)
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub [interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)
-- Znajomość [API Openstack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/) i [Zmienne Openstack](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub [interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)
+- Znajomość [API OpenStack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/) i [Zmienne OpenStack](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/)
 
 ## W praktyce
 
@@ -87,7 +87,7 @@ Aby wyświetlić migawkę, w menu `Compute`{.action} kliknij pozycję `Images`{.
 
 ![snapshot](images/snapshothorizon.png){.thumbnail}
 
-#### Korzystanie z API Openstack/Nova
+#### Korzystanie z API OpenStack/Nova
 
 Przed kontynuowaniem zalecamy zapoznanie się z następującymi przewodnikami:
 
@@ -110,7 +110,7 @@ Ta opcja pozwoli Ci na ponowne utworzenie instancji, abyś mógł z niej nadal k
 
 > [!alert] **Operacje na snapshot**
 >
-> Wszelkie działania na snapshotach inne niż reaktywacja (*unshelve*) mogą być bardzo niebezpieczne dla infrastruktury, jeśli zostaną niewłaściwie użyte. Po ponownej aktywacji (*unshelve*) instancji, snapshot jest automatycznie usuwany. Nie jest zalecane wdrażanie nowej instancji ze snapshota utworzonego w wyniku odłożenia (zawieszenia) instancji.
+> Wszelkie działania na snapshotach inne niż reaktywacja (*unshelve*) mogą być bardzo niebezpieczne dla infrastruktury, jeśli zostaną niewłaściwie użyte. Po ponownej aktywacji (*unshelve*) instancji, snapshot jest automatycznie usuwany. Nie jest zalecane wdrażanie nowej instancji ze snapshota utworzonego w wyniku zawieszenia (*shelve*) instancji.
 >
 > OVH oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVH nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji „Sprawdź również”. 
 >
@@ -135,7 +135,7 @@ W interfejsie Horizon kliknij menu `Compute`{.action} po lewej stronie, a nastę
 
 Po ukończeniu procesu Twoja instancja będzie widoczna jako *Active*.
 
-#### Korzystanie z API Openstack/Nova
+#### Korzystanie z API OpenStack/Nova
 
 Kiedy Twoje środowisko jest gotowe, wpisz w wierszu poleceń:
 
@@ -175,7 +175,7 @@ Pojawi się komunikat potwierdzenia wskazujący, że instancja została zawieszo
 
 Aby ponownie włączyć instancję, wykonaj kroki opisane powyżej. Z listy rozwijanej odpowiedniej instancji wybierz pozycję `Resume Instance`{.action}.
 
-#### Korzystanie z API Openstack/Nova
+#### Korzystanie z API OpenStack/Nova
 
 Kiedy Twoje środowisko jest gotowe, wpisz w wierszu poleceń:
 
@@ -199,7 +199,7 @@ Aby ponownie włączyć instancję, w wierszu polecenia wpisz następujące pole
 
 ### Wstrzymaj instancję <a name="pause-instance"></a>
 
-Operacja ta jest możliwa wyłącznie w interfejsie Horizon lub poprzez API Openstack/Nova. Umożliwia ona *zamrożenie* instancji.
+Operacja ta jest możliwa wyłącznie w interfejsie Horizon lub poprzez API OpenStack/Nova. Umożliwia ona *zamrożenie* instancji.
 
 #### Korzystanie z programu Horizon
 
@@ -211,7 +211,7 @@ Zostanie wyświetlony komunikat potwierdzenia z informacją o wstrzymaniu instan
 
 Aby ponownie włączyć instancję, wykonaj kroki opisane powyżej. Z listy rozwijanej odpowiedniej instancji wybierz pozycję `Resume Instance`{.action}.
 
-#### Korzystanie z API Openstack/Nova
+#### Korzystanie z API OpenStack/Nova
 
 Kiedy Twoje środowisko jest gotowe, wpisz w wierszu poleceń:
 
@@ -235,6 +235,6 @@ Aby ponownie włączyć instancję, wpisz w wierszu polecenia:
 
 ## Sprawdź również
 
-[Dokumentacja Openstack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html)
+[Dokumentacja OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html)
 
 Przyłącz się do społeczności naszych użytkowników na stronie: <https://community.ovh.com/en/>.

@@ -10,7 +10,7 @@ order: 3
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 22/09/2021**
+**Última actualización: 01/10/2021**
 
 ## Objetivo
 
@@ -111,7 +111,7 @@ Esta opción le permite reiniciar su instancia para poder seguir utilizándola. 
 
 > [!alert] **Acciones sobre el snapshot**
 >
-> Cualquier acción en el snapshot que no sea la reactivación (*unshelve*) puede ser muy peligrosa para su infraestructura en caso de mal uso. Cuando se «reactiva» (*unshelved*) una instancia, la instantánea se eliminará automáticamente. No es recomendable desplegar una nueva instancia a través de una instantánea creada después de que una instancia haya sido suspendida.
+> Cualquier acción en el snapshot que no sea la reactivación (*unshelve*) puede ser muy peligrosa para su infraestructura en caso de mal uso. Cuando se «reactiva» (*unshelved*) una instancia, la instantánea se eliminará automáticamente. No es recomendable desplegar una nueva instancia a través de una instantánea creada después de que una instancia haya sido suspendida (*shelve*).
 >
 > La responsabilidad sobre los servicios que OVH pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. Si tiene problemas o dudas sobre  la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
 >
@@ -198,7 +198,7 @@ Para reactivar la instancia, escriba lo siguiente en la línea de comandos:
 ~$ nova unsuspend <UUID server>
 ```
 
-### Poner en pausa una instancia <a name="pause-instance"></a>
+### Poner en pausa una instancia (*pause*) <a name="pause-instance"></a>
 
 Esta operación sólo puede realizarse desde la interfaz Horizon o a través de la API OpenStack/Nova. Una instancia en pausa sigue funcionando en un estado bloqueado.
 

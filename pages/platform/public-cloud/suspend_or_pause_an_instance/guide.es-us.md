@@ -10,7 +10,7 @@ order: 3
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 22/09/2021**
+**Última actualización: 01/10/2021**
 
 ## Objetivo
 
@@ -198,7 +198,7 @@ Para reactivar la instancia, escriba lo siguiente en la línea de comandos:
 ~$ nova unsuspend <UUID server>
 ```
 
-### Poner en pausa una instancia <a name="pause-instance"></a>
+### Poner en pausa una instancia (*pause*) <a name="pause-instance"></a>
 
 Esta operación sólo puede realizarse desde la interfaz Horizon o a través de la API OpenStack/Nova. Una instancia en pausa sigue funcionando en un estado bloqueado.
 

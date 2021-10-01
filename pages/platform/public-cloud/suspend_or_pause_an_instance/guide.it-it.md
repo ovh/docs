@@ -10,14 +10,14 @@ order: 3
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 22 settembre 2021**
+**Ultimo aggiornamento: 1 Ottobre 2021**
 
 ## Obiettivo
 
  Durante la configurazione di un'infrastruttura ad alta disponibilità, potresti avere bisogno di interrompere l’esecuzione delle tue istanze per effettuare alcuni test. OpenStack ti permette di sospendere, arrestare o mettere in pausa le tue istanze. In ogni caso, il tuo IP viene mantenuto.
 
 > [!warning]
-> Il nome di queste opzioni nello Spazio Cliente OVHcloud è diverso dal nome in Openstack/Horizon. Se effettui questa operazione utilizzando lo Spazio Cliente OVHcloud, assicurati di selezionare l'opzione più adatta.
+> Il nome di queste opzioni nello Spazio Cliente OVHcloud è diverso dal nome in OpenStack/Horizon. Se effettui questa operazione utilizzando lo Spazio Cliente OVHcloud, assicurati di selezionare l'opzione più adatta.
 >
 
 **Questa guida ti mostra come sospendere, arrestare o mettere in pausa un'istanza.**
@@ -26,7 +26,7 @@ order: 3
 
 - un'[istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/) con la fatturazione oraria
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[interfaccia Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/)
-- Conoscenza dell'[API Openstack](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/) e delle [variabili d’ambiente Openstack](https://docs.ovh.com/it/public-cloud/impostare-le-variabili-dambiente-openstack/)
+- Conoscenza dell'[API OpenStack](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/) e delle [variabili d’ambiente OpenStack](https://docs.ovh.com/it/public-cloud/impostare-le-variabili-dambiente-openstack/)
 
 ## Procedura
 
@@ -79,7 +79,7 @@ Clicca su `Compute`{.action} nel menu a sinistra e seleziona `Instances`{.action
 
 ![instance shelve](images/shelveinstancehorizon.png){.thumbnail}
 
-Una volta terminata la procedura, l'istanza apparirà come *Shelved Offloaded*..
+Una volta terminata la procedura, l'istanza apparirà come *Shelved Offloaded*.
 
 ![istanza riservata](images/newinstancestatushorizon.png){.thumbnail}
 
@@ -87,7 +87,7 @@ Per visualizzare lo snapshot, nel menu `Compute`{.action}, clicca su `Images`{.a
 
 ![snapshot](images/snapshothorizon.png){.thumbnail}
 
-#### Dalle API Openstack/Nova
+#### Dalle API OpenStack/Nova
 
 Prima di continuare, si raccomanda di consultare le seguenti guide:
 
@@ -110,7 +110,7 @@ Questa opzione ti permette di riattivare l'istanza per poterla utilizzare. Ti ri
 
 > [!alert] **Azioni sullo snapshot**
 >
-> Qualsiasi azione sullo snapshot diversa dalla riattivazione (*unshelve*) può essere molto pericolosa per la tua infrastruttura in caso di uso improprio. Quando un'istanza è «riattivata» (*unshelved*), lo snapshot viene automaticamente eliminata. Non è consigliabile creare una nuova istanza da un snapshot creata in seguito alla sospesa di un'istanza.
+> Qualsiasi azione sullo snapshot diversa dalla riattivazione (*unshelve*) può essere molto pericolosa per la tua infrastruttura in caso di uso improprio. Quando un'istanza è riattivata (*unshelved*), lo snapshot viene automaticamente eliminata. Non è consigliabile creare una nuova istanza da un snapshot creata in seguito alla Sospesa (*shelve*) di un'istanza.
 >
 > OVHcloud fornisce i servizi di cui sei responsabile. Non avendo accesso a queste macchine, non siamo noi gli amministratori e pertanto non possiamo fornirti alcuna assistenza. È responsabilità dell’utente garantire ogni giorno la gestione e la sicurezza del software. In caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida. .
 >
@@ -129,13 +129,13 @@ Una volta terminato il processo, l'istanza apparirà come *Attivo*.
 
 #### Dall'interfaccia Horizon
 
-Nell'interfaccia Horizon, clicca su `Compute`{.action} nel menu a sinistra e seleziona `Instances`{.action}. Seleziona `Resume Instance`{.action} nel menu a tendina dell'istanza.
+Nell'interfaccia Horizon, clicca su `Compute`{.action} nel menu a sinistra e seleziona `Instances`{.action}. Seleziona `Unshelve Instance`{.action} nel menu a tendina dell'istanza.
 
 ![unshelve instance](images/unshelveinstancehorizon.png){.thumbnail}
 
 Una volta terminato il processo, l'istanza apparirà come *Active*.
 
-#### Dalle API Openstack/Nova
+#### Dalle API OpenStack/Nova
 
 Una volta che l'ambiente è pronto, esegui questo comando:
 
@@ -161,7 +161,7 @@ Clicca su `...`{.action} a destra dell'istanza da arrestare, poi clicca su `Arre
 
 Nella finestra contestuale, annota il messaggio e clicca su `Conferma`{.action}.
 
-Una volta completata la procedura, l'istanza si *Spento*.
+Una volta completata la procedura, l'istanza apparirà come *Spento*.
 
 Per riattivare l'istanza, effettua gli stessi step indicati in precedenza. Clicca su `...`{.action} a destra dell'istanza e seleziona `Comincia ora`{.action}. In alcuni casi, potrebbe essere necessario riavviare a freddo.
 
@@ -175,7 +175,7 @@ Compare il messaggio di conferma che l'istanza è stata sospesa.
 
 Per riattivare l'istanza, effettua le stesse operazioni indicate in precedenza. Nella lista a tendina dell'istanza corrispondente, seleziona `Resume Instance`{.action}.
 
-#### Dalle API Openstack/Nova
+#### Dalle API OpenStack/Nova
 
 Una volta che l'ambiente è pronto, esegui questo comando:
 
@@ -211,7 +211,7 @@ Compare il messaggio di conferma che l'istanza è stata messa in pausa.
 
 Per riattivare l'istanza, segui gli step indicati qui sotto. Nella lista a tendina dell'istanza corrispondente, seleziona `Resume Instance`{.action}.
 
-#### Dalle API Openstack/Nova
+#### Dalle API OpenStack/Nova
 
 Una volta che l'ambiente è pronto, esegui questo comando:
 
@@ -235,6 +235,6 @@ Per riattivare l'istanza, esegui questo comando:
 
 ## Per saperne di più
 
-[Documentazione Openstack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html)
+[Documentazione OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

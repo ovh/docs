@@ -10,7 +10,7 @@ order: 3
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 22/09/2021**
+**Última atualização: 01/10/2021**
 
 ## Objetivo
 
@@ -110,7 +110,7 @@ Esta opção permite-lhe reativar a sua instância para que a possa continuar a 
 
 > [!alert] **Ações no snapshot**
 >
-> Qualquer ação no snapshot que não a reativação *unshelve* pode ser muito perigosa para a sua infraestrutura em em caso de mau uso. Uma vez « reactivada » (*unshelved*) uma instância, a snapshot é automaticamente eliminada. Não é recomendado criar uma nova instância a partir de uma snapshot criada após a suspensão de uma instância.
+> Qualquer ação no snapshot que não a reativação *unshelve* pode ser muito perigosa para a sua infraestrutura em em caso de mau uso. Uma vez « reactivada » (*unshelved*) uma instância, a snapshot é automaticamente eliminada. Não é recomendado criar uma nova instância a partir de uma snapshot criada após a suspensão (*shelve*) de uma instância.
 >
 > A utilização e a gestão dos serviços OVHcloud são da responsabilidade do cliente. Como não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”. 
 >
@@ -167,7 +167,7 @@ Para reativar a instância, efetue as mesmas etapas que as acima mencionadas. Cl
 
 #### Da interface Horizon 
 
-Na interface Horizon, clique no menu `Compute`{.action} no lado esquerdo e selecione `Instances`{.action}. Selecione `Pause Instance`{.action} na lista pendente para a instância correspondente.
+Na interface Horizon, clique no menu `Compute`{.action} no lado esquerdo e selecione `Instances`{.action}. Selecione `Suspend Instance`{.action} na lista pendente para a instância correspondente.
 
 ![instance suspension horizon](images/suspendinstancehorizon.png){.thumbnail}
 
@@ -197,7 +197,7 @@ Para anular a suspensão da instância, utilize o seguinte comando
 ~$ nova unsuspend <UUID server>
 ```
 
-### Colocar em pausa uma instância <a name="pause-instance"></a>
+### Colocar em pausa uma instância (*pause*) <a name="pause-instance"></a>
 
 Esta ação só é possível através da interface Horizon ou da API Openstack/Nova. A instância tem um estado de « gelado » ou de « espera »
 
@@ -223,7 +223,7 @@ Quando o ambiente estiver pronto, utilize o seguinte comando:
 ~$ nova pause <UUID server>
 ```
 
-Para anular a pausa da instância, utilize o seguinte comando:
+Para reactivar a instância, utilize o seguinte comando:
 
 ```bash
 ~$ openstack server unpause <UUID server>
@@ -235,6 +235,6 @@ Para anular a pausa da instância, utilize o seguinte comando:
 
 ## Quer saber mais?
 
-[Documentação Openstack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html)
+[Documentação OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
