@@ -6,7 +6,7 @@ section: vRack
 order: 1
 ---
 
-**Last updated 27th July 2020**
+**Last updated 1st October 2021**
 
 ## Objective
 
@@ -129,7 +129,7 @@ This can be useful in order to segment your vRack between multiple virtual netwo
 
 In the OVHcloud Control Panel, you will be able to assign the VLAN of your choice, but you will not be able to customise the IP range. vRack will be active in all zones.
 
-Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 for example), deployment zone, DCHP, Gateway, etc.
+Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 for example), deployment zone, DHCP, Gateway, etc.
 
 > [!primary]
 > On dedicated servers, you are using VLAN 0 by default. The OpenStack infrastructure requires to specify your VLAN ID directly at the infrastructure level.
@@ -376,7 +376,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
-Click on `Instances`{.action} in the left-hand navigation bar and then on `...`{.action} to the right of the indstance. Select `Instance details`{.action}.
+Click on `Instances`{.action} in the left-hand navigation bar and then on `...`{.action} to the right of the instance. Select `Instance details`{.action}.
 
 ![detail instance](images/vrack7.png){.thumbnail}
 
@@ -384,7 +384,7 @@ This will open the instance dashboard. Click on the `...`{.action} button in the
 
 ![attach network](images/vrack8.png){.thumbnail}
 
-In the popup window that appears, select the private network to attach to your instance and click `Attach`{.action}.
+In the popup window that appears, select the private network(s) to attach to your instance and click `Attach`{.action}.
 
 ![attach network](images/vrack9.png){.thumbnail}
 
