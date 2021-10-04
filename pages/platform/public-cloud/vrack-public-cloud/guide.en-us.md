@@ -16,7 +16,7 @@ The [vRack](https://www.ovh.com/world/solutions/vrack/) is a private network tha
 
 ## Requirements
 
-a [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
+- a [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
 - an OpenStack user (optional)
 - Basic networking knowledge
