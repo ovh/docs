@@ -6,7 +6,7 @@ section: 'Project management'
 order: 2
 ---
 
-**Last updated 10th September 2021**
+**Last updated 21st September 2021**
 
 ## Objective
 
@@ -81,7 +81,7 @@ The first part, **"Already billed"**, includes resources billed by the month (se
 
 The second part, **"Future bills"**, includes pay-as-you-go resources. It lists your resource usage from the first of the month up to that day.
 
-You can also have an `Estimation of of my next invoice`{.action} (for the 01st of the next month) based on a forecast of resource usage taking into account the current situation, and predicted usage for the remainder of the month.
+You can also have an `Estimation of my next invoice`{.action} (for the 01st of the next month) based on a forecast of resource usage taking into account the current situation, and predicted usage for the remainder of the month.
 
 > [!primary]
 >
