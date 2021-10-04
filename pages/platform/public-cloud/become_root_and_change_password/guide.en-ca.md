@@ -7,7 +7,7 @@ section: 'Getting started'
 order: 5
 ---
 
-**Last updated 2021/09/03**
+**Last updated 2021/10/04**
 
 ## Objective
 
@@ -28,6 +28,8 @@ This guide assumes that the default user is called 'admin'.
 >
 
 ### Setting the root password <a name="settingtherootpassword"></a>
+
+#### For connections to the OVHcloud VNC console
 
 First, establish an SSH connection to your server.
 
@@ -76,17 +78,23 @@ To update your server's operating system, type the following command at the comm
 
 ### Enable root login and Password authentication
 
+By default, a key-based SSH login is mandatory for connections to Public Cloud instances. If you prefer to log in via other terminals using a password login, it will be necessary to modify the **ssh config** file.
+
 #### For connections using linux terminals
 
 - [First, set the root password](#settingtherootpassword)
 
-Next, enable root login and password authentication in your sshd config file :
+Next, enable root login and password authentication in your **sshd_config** file :
 
 ```
 ~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 
 ~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+```
 
+Restart the SSH service
+
+```
 ~$ service sshd restart
 ```
 
@@ -96,19 +104,25 @@ Once done, you should be able to access your server with the root user and passw
 
 - [First, set the root password](#settingtherootpassword)
 
-Next, enable root login and password authentication in your sshd config file :
+Next, enable root login and password authentication in your **sshd_config** file :
 
 ```
 ~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 
 ~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+```
 
+Restart the SSH service
+
+```
 ~$ service sshd restart
 ```
 
 In the Putty authentication agent(pageant key list) remove your private SSH key.
 
 ![Remove private key](images/pageantkeylist.png){.thumbnail}
+
+Once done, you should be able to access your server with the root user and password set
 
 ## Go further
 
