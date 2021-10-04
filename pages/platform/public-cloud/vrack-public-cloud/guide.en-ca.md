@@ -6,7 +6,7 @@ section: vRack
 order: 1
 ---
 
-**Last updated 1st October 2021**
+**Last updated 4th October 2021**
 
 ## Objective
 
@@ -54,7 +54,7 @@ Consult the following [guide](../configure_user_access_to_horizon/) to familiari
 Every action you take in your OVHcloud Control Panel can be called with the [OVHcloud API](https://ca.api.ovh.com/).
 It even offers more possibilities than the graphical interface.
 
-The API interface is less visual than the OVHcloud Control Panel but will allow you to perform a lot of actions. a large number of actions. You can manage and customise your VLAN, add interfaces to your instances, or create highly customised servers.
+The API interface is less visual than the OVHcloud Control Panel but will allow you to perform a large number of actions. You can manage and customise your VLAN, add interfaces to your instances, or create highly customised servers.
 
 You can simply access it from [our web page](https://ca.api.ovh.com/), but also use it to create your PHP or Python scripts. This way, you can freely automate basic tasks with scripts, optimize your own functions and much more.
 
@@ -85,7 +85,7 @@ You will then be able to use the APIs dedicated to OpenStack, depending on your 
 - Neutron (network)
 
 > [!primary]
->In some cases, it will be easier to use OpenStack APIs and in others, Nova APIs, Neutron APIs, etc.
+>In some cases, it will be easier to use the OpenStack APIs and in others, Nova APIs, Neutron APIs, etc.
 >
 > Moreover, some features may be missing from the OpenStack API depending on the version of your client and operating system.
 For the purpose of making this guide more accessible, it presents the simplest and most intuitive options.
@@ -106,11 +106,11 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 ![project selection](images/vrack1.png){.thumbnail}
 
-Click on `Private network`{.action} in the left side menu.
+Click on `Private network`{.action} (1) in the left side menu.
 
-![Private Network](images/vrack2.png){.thumbnail}
+![Private Network](images/vrack2021-02.png){.thumbnail}
 
-Click the `To get started, create a vRack`{.action} button. You will then have to choose to create a new vRack or to use an existing vRack. In our example, we will create a new vRack. Once you have made your choice, click `Create`{.action}.
+Click the `To get started, create a vRack`{.action} button (2). You will then have to choose to create a new vRack or to use an existing vRack. In our example, we will create a new vRack. Once you have made your choice, click `Create`{.action}.
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
@@ -138,7 +138,7 @@ From the OVHcloud API, you can customize all settings: IP range (e.g. 10.0.0.0/1
 >
 > Unlike dedicated servers, there is no need to tag a VLAN directly on a Public Cloud instance.
 >
-> For more information about vRack VLAN management for dedicated servers, see this guide: [Create multiple VLANs in vRack](../../dedicated/multiple-vlans/)
+> For more information about vRack VLAN management for dedicated servers, see this guide: [Create multiple vLANs in vRack](../../dedicated/multiple-vlans/)
 
 > [!warning]
 > Because vRack is managed at the OVHcloud infrastructure level, you can only administer it through the OVHcloud Control Panel and the OVHcloud API.
@@ -150,7 +150,7 @@ From the OVHcloud API, you can customize all settings: IP range (e.g. 10.0.0.0/1
 
 Once the vRack is created, navigate to the `Private Network`{.action} section. 
 
-![VLAN creation](images/vrack4.png){.thumbnail}
+![VLAN creation](images/vrack2021-03.png){.thumbnail}
 
 Click on the button `Add Private Network`{.action}. The following page allows you to customise multiple settings.
 
@@ -160,11 +160,11 @@ If you select the `Set a VLAN ID` option, you will need to choose a VLAN ID numb
 
 If you have not ticked the box `Set VLAN`, VLAN 0 will be set automatically.
 
-If you need to have dedicated OVHcloud servers communicate with tagged vLan, see the following guide: [Create multiple VLANs in the vRack](../../dedicated/multiple-vlans/).
+In case you need to be able to communicate with dedicated servers in this VLAN, please consult the guide [Create multiple vLANs in the vRack](../../dedicated/multiple-vlans/).
 
 The default DHCP range is 10.0.0.0/16. To change this IP range, you must use the OVHcloud API.
 
-Validate the different regions you want, enter a name for your private network, and then click `Create`{.action} to start creating it.
+In the next step, choose the regions you want, enter a name for your private network, and then click `Create`{.action} to start the process.
 
 > [!primary]
 > Creating the private network can take several minutes.
@@ -179,10 +179,10 @@ To create a VLAN from the OVHcloud APIv6, click [here](../public-cloud-vrack-api
 
 There are two possible scenarios:
 
-- The instance does not exist yet.
-- The instance already exists and needs to be added to the vRack.
+- The instance to be integrated does not exist yet.
+- An existing instance needs to be added to the vRack.
 
-#### Case of a new instance
+#### In case of a new instance
 
 ##### **From the OVHcloud Control Panel** 
 
@@ -199,7 +199,7 @@ If you need assistance, follow this guide first: [Creating your first Public Clo
 
 Please refer to [this section](../public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) of the corresponding guide.
 
-###### **From the OpenStack API**
+##### **From the OpenStack API**
 
 To use the OpenStack APIs, if you have not already done so, consider preparing your work environment as indicated in the [first part of this guide](./#api-openstack).
 
@@ -231,7 +231,7 @@ nova net-list
 +--------------------------------------+------------+------+
 | 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42 | None |
 | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | None |
-| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MtVlan_0  | None |
+| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0  | None |
 +--------------------------------------+------------+------+
 ```
 
@@ -249,7 +249,7 @@ Also, note the following information, as indicated in the [Nova API User's Guide
 
 ###### Instance Deployment
 
-With previously obtained information, an instance can be created by including it directly in the vRack:
+With the previously obtained information, an instance can be created by including it directly in the vRack:
 
 ```bash
 nova boot --key-name SSHKEY --flavor [ID-flavor] --image [ID-Image] --nic net-id=[ID-Network 1] --nic net-id=[ID-Network 2] [name-of-instance]
@@ -361,7 +361,7 @@ nova list
 +--------------------------------------+--------------------+--------+------------+-------------+--------------------------------------------------+
 ```
 
-#### Cases of an existing instance
+#### In case of an existing instance
 
 The OVHcloud Control Panel allows you to attach an instance to one or more private network(s) but does not provide advanced configuration of network interfaces. If you want to further customize these, you will need to manage them either through the OVHcloud APIv6, through the OpenStack APIs or via Horizon.
 

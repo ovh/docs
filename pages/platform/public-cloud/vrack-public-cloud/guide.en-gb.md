@@ -6,7 +6,7 @@ section: vRack
 order: 1
 ---
 
-**Last updated 1st October 2021**
+**Last updated 4th October 2021**
 
 ## Objective
 
@@ -105,11 +105,11 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 ![select project](images/vrack1.png){.thumbnail}
 
-Click on `Private network`{.action} in left-hand navigation bar.
+Click on `Private network`{.action} (1) in left-hand navigation bar.
 
-![Private Network](images/vrack2.png){.thumbnail}
+![Private Network](images/vrack2021-02.png){.thumbnail}
 
-Click on the button `To get started, create a vRack`{.action}. You will then have to choose to create a new vRack or to use an existing vRack. In our example, we will create a new vRack. Once you have made your choice, click `Create`{.action}.
+Click on the button `To get started, create a vRack`{.action} (2). You will then have to choose to create a new vRack or to use an existing vRack. In our example, we will create a new vRack. Once you have made your choice, click `Create`{.action}.
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
@@ -148,7 +148,7 @@ Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 
 
 Once a vRack exists, navigate to the `Private Network`{.action} section. 
 
-![VLAN creation](images/vrack4.png){.thumbnail}
+![VLAN creation](images/vrack2021-03.png){.thumbnail}
 
 Click on the button `Add Private Network`{.action}. The following page allows you to customise multiple settings.
 
