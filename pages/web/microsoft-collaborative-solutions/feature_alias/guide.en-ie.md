@@ -20,14 +20,14 @@ For example, your email address is **john.smith@mydomain.ovh** and you create an
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- an email service with OVHcloud: [**Exchange**](https://www.ovh.co.uk/emails/hosted-exchange/){.external}, [**Email Pro**](https://www.ovh.co.uk/emails/email-pro/){.external} or **MX Plan** (new version only, included in an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} or ordered separately as a standalone solution)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- an email service with OVHcloud: [**Exchange**](https://www.ovh.ie/emails/hosted-exchange/){.external}, [**Email Pro**](https://www.ovh.ie/emails/email-pro/){.external} or **MX Plan** (new version only, included in an [OVHcloud Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} or ordered separately as a standalone solution)
 
 ## Instructions
 
 ### Creating an alias
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and go to the `Web Cloud` section. Then choose the menu section coresponding to your email solution:
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and go to the `Web Cloud` section. Then choose the menu section coresponding to your email solution:
 
 - **Exchange**: Open `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}, and select the service concerned. Click on the `Email accounts`{.action} tab.
 
@@ -41,7 +41,7 @@ In the table that appears, you will see an `Alias` column.
 
 > [!warning]
 >
-> If you have an MXplan email solution and the Alias column does not appear, you are using the **legacy version** of the service. In this case, the aliases are created as redirections. To do this, please refer to our guide on [Using email redirections](https://docs.ovh.com/gb/en/emails/email-redirection-guide/#mx-plan-legacy-version) .
+> If you have an MXplan email solution and the Alias column does not appear, you are using the **legacy version** of the service. In this case, the aliases are created as redirections. To do this, please refer to our guide on [Using email redirections](https://docs.ovh.com/ie/en/emails/email-redirection-guide/#mx-plan-legacy-version) .
 >
 
 To add an alias to your email account:
@@ -64,8 +64,8 @@ Click the `...`{.action} button to the right of the alias in question, in the al
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/)
+[Using the Outlook Web App with an Exchange account](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/)
 
-[Inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/)
+[Inbox rules in OWA](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/)
 
 Join our community of users on <https://community.ovh.com/en/>.

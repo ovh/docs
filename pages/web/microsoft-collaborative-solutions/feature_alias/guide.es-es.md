@@ -37,7 +37,7 @@ Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?ac
 
 - **Email Pro**: en `Email Pro`{.action}, seleccione la plataforma correspondiente y haga clic en la pestaña `Cuentas de correo`{.action}.
 
-- **Emails** (MXplan): en la `columna izquierda, seleccione la plataforma correspondiente y haga clic en `{.action} `Cuentas de correo`{.action}.
+- **Emails** (MXplan): en `Emails`{.action} en la columna izquierda, seleccione la plataforma correspondiente y haga clic en `Cuentas de correo`{.action}.
 
 Se abrirá una columna llamada `Alias`.
 
