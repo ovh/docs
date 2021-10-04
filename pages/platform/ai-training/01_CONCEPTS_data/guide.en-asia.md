@@ -5,7 +5,8 @@ excerpt: Learn the concept behind AI Training data
 section: Concepts
 order: 1
 ---
-*Last updated 18th May, 2021.*
+
+**Last updated 18th May, 2021.**
 
 ## Definition
 
@@ -66,4 +67,4 @@ User can enable a `cache` feature that allow jobs to re-use available volumes in
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

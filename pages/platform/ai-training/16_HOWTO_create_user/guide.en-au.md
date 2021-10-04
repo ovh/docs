@@ -5,7 +5,8 @@ excerpt: Learn how to create AI training users that will interract with jobs
 section: How to (with UI)
 order: 2
 ---
-*Last updated 3rd May, 2021.*
+
+**Last updated 3rd May, 2021.**
 
 ## Objective
 
@@ -32,4 +33,4 @@ It is recommended to assign both roles.
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

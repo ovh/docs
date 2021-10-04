@@ -12,7 +12,7 @@ order: 7
 
 [Streamlit](https://streamlit.io/) is a python framework that turns scripts into shareable web application.
 
-The purpose of this tutorial is to provide a concrete example on how to build and use a custom Docker image for Streamlit applications.
+The purpose of this tutorial is to provide a concrete example on how to build and - On the use a custom Docker image for a Streamlit applications.
 
 ## Requirements
 
@@ -49,7 +49,7 @@ st.write(pd.DataFrame({
 -   More information about Streamlit capabilities can be found [here](https://docs.streamlit.io/en/stable/)
 -   Direct link to the full python file can be found here [here](https://github.com/ovh/ai-training-examples/blob/main/jobs/streamlit/tuto_simple_app/simple_app.py)
 
-### Write the the Dockerfile for your application
+### Write the Dockerfile for your application
 
 Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from a classic python image.
 
@@ -137,13 +137,13 @@ Once started, your application should be available on `http://localhost:8501`.
 >
 > The shared registry of AI Training should only be use for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](../add-private-registry).
 
-Find the adress of your shared registry by launching this command:
+Find the address of your shared registry by launching this command:
 
 ``` {.console}
 ovhai registry list
 ```
 
-Login on the shared registry with your usual openstack credentials:
+Login on the shared registry with your usual Openstack credentials
 
 ``` {.console}
 docker login -u <user-password> -p <user-password> <shared-registry-address>
@@ -158,7 +158,7 @@ docker push <shared-registry-address>/streamlit-example:latest
 
 ### Launch the job
 
-The following command starts a new job running your streamit application:
+The following command starts a new job running your Streamlit application:
 
 ``` {.console}
 ovhai job run --default-http-port 8501 --cpu 1 <shared-registry-address>/streamlit-example:latest
@@ -184,4 +184,4 @@ Once the job is running you can access your streamlit application directly from 
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
