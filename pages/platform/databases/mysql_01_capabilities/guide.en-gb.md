@@ -13,16 +13,15 @@ order: 1
 This page provides the technical capabilities and limitations of the Public Cloud Databases' MySQL offer.
 We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
-
 ## BETA phase
 
-Please note that the Public cloud Databases' MySQL offer is currently in BETA Phase, meaning :
+Please note that the Public cloud Databases' MySQL offer is currently in BETA Phase, meaning:
 
-- Free service during BETA phase;
-- Not ready for production;
-- No official support;
-- No contractual agreements (SLA);
-- Some features are under development. You can check out our BETA vs General Availability here : <https://github.com/ovh/public-cloud-roadmap/issues/119>.
+- the service is free during BETA phase;
+- the service is not ready for production;
+- there is no official support;
+- there are no contractual agreements (SLA);
+- some features are under development. You can check out our BETA vs General Availability here : <https://github.com/ovh/public-cloud-roadmap/issues/119>.
 
 ## Capabilities and limitations
 
@@ -79,7 +78,7 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 Each cluster is provided with the MySQL Community (GPL) license.
 
-If any, license cost is included inside the service plans. You cannot bring your own licenses.
+If any, license cost is included inside the service plans. You can't bring your own licenses.
 
 ### Hardware resources
 
@@ -97,11 +96,11 @@ Right now, all nodes of a given cluster should be of the same type and live in t
 
 #### Effective storage
 
-The disk size listed above is the total disk size of the underlying machine, however, a small part of it goes towards the OS install.
+The disk size listed above is the total disk size of the underlying machine. However, a small part of it goes towards the OS install.
 
-We try hard to avoid "disk full" situations that could be harmful to cluster health. Therefore, The customer will :
+We try hard to avoid "disk full" situations that could be harmful to cluster health. Therefore:
 
-1. When reaching 97% capacity, have his database instance moved in "DISK_FULL" state, and 'read-only" mode, meaning no more writes can be done.
+1. When reaching 97% capacity, the customer will have his database instance moved in "DISK_FULL" state, and 'read-only" mode, meaning no more writes can be done.
 2. You then have the ability to upgrade to a higher service plan with more storage.
 
 
@@ -113,7 +112,7 @@ MySQL clusters are reachable through default port 3306.
 
 Public networking can be used for all the offers.
 
-Private Networking (vRack) is planned for *Business* and *Enterprise*.
+Private networking (vRack) is planned for *Business* and *Enterprise*.
 
 When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
 
@@ -121,7 +120,7 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 
 #### Maximum simultaneous connections
 
-Number of simultaneous connections in Public Cloud Databases for MySQL depends on the available total memory on the node. 
+The number of simultaneous connections in Public Cloud Databases for MySQL depends on the available total memory on the node. 
 We allow 75 connections per each GB of usable memory. Usable memory is the total memory on the node minus operating system and management overhead, which is currently estimated at 350 MiB. The usable memory is rounded to nearest gigabyte.
 
 So for example on a server with 7 GB memory, you will get 7 * 75 = 525 connections and with 15 GB memory you will get 14 * 75 = 1050 connections. 
@@ -130,7 +129,6 @@ Note that the MySQL max-connections setting is always set to one higher (e.g. 52
 #### Advanced parameters
 
 We do not currently support MySQL advanced parameters.
-
 
 #### Backups
 
@@ -152,13 +150,10 @@ Please note that if the database instance is deleted, logs and metrics are also 
 
 #### Users and roles
 
-Creation of users is allowed via control panel and API with default admin roles and privileges.
-
-
+Creation of users is allowed via the Control Panel and API with default admin roles and privileges.
 
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
-
