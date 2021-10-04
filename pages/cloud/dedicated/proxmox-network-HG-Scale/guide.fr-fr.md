@@ -6,7 +6,7 @@ section: 'Utilisation avancée'
 order: 1
 ---
 
-**Dernière mise à jour le 30/09/2021**
+**Dernière mise à jour le 04/10/2021**
 
 ## Objectif
 
@@ -217,7 +217,7 @@ iface bond1 inet manual
 auto vmbr1
 # Bridge raccordé sur l'agrégat bond1
 # Pas besoin d'IP
-iface vmbr1 inet static
+iface vmbr1 inet manual
 	bridge-ports bond1
 	bridge-stp off
 	bridge-fd 0
