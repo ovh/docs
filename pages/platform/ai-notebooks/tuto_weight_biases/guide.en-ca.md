@@ -5,7 +5,8 @@ excerpt: How to use wandb in notebooks
 section: Tutorials
 order: 1
 ---
-*Last updated 9th of September, 2021.*
+
+**Last updated 9th of September, 2021.**
 
 ## Objective
 

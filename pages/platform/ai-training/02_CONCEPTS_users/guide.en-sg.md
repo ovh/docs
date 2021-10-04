@@ -5,7 +5,8 @@ excerpt: Learn the concept behind AI Training users
 section: Concepts
 order: 2
 ---
-*Last updated 3rd May, 2021.*
+
+**Last updated 3rd May, 2021.**
 
 ## Definition
 

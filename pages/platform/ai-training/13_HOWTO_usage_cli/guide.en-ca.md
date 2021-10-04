@@ -5,7 +5,8 @@ excerpt: Learn how to use the CLI to interact with AI Training
 section: How to (with CLI)
 order: 3
 ---
-*Last updated 20th April, 2021.*
+
+**Last updated 20th April, 2021.**
 
 ## Objective
 

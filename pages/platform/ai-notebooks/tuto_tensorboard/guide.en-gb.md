@@ -5,7 +5,8 @@ excerpt: How to use tensoboard inside AI Notebooks
 section: Tutorials
 order: 2
 ---
-*Last updated 9th of September, 2021.*
+
+**Last updated 9th of September, 2021.**
 
 ## Objective
 

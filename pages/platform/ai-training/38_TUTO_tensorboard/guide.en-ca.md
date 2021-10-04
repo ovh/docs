@@ -5,7 +5,8 @@ excerpt: How to use a tensorboard inside an AI Training Job
 section: Tutorials
 order: 9
 ---
-*Last updated 10th of September, 2021.*
+
+**Last updated 10th of September, 2021.**
 
 ## Objective
 

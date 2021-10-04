@@ -5,7 +5,8 @@ excerpt: Learn the concept behind AI Training notebooks
 section: Introduction
 order: 1
 ---
-*Last updated 27th May, 2021.*
+
+**Last updated 27th May, 2021.**
 
 ## Definition
 
@@ -36,7 +37,7 @@ During its lifetime the notebook will transition between the following statuses:
 > * Billing starts once a notebook is `RUNNING` and ends when its status switches to `STOPPING`.
 > * Only notebooks in states `STARTING` and `RUNNING` are included in the resource quota computation.
 
--   `STARTING`: the notebook is starting, and volumes are synchroniaed from the Object Storage
+-   `STARTING`: the notebook is starting, and volumes are synchronised from the Object Storage
 -   `RUNNING`: the notebook is running and can be accessed from your browser
 -   `STOPPING`: the notebook is still running, but an interruption order was received and `RW` volumes are uploaded to your Object Storage
 -   `STOPPED`: the notebook is stopped and `RW` volumes have been synchronised back to your Object Storage

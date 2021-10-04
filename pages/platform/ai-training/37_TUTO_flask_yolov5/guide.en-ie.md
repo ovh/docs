@@ -5,7 +5,8 @@ excerpt: How to deploy a web service for YOLOv5 using your own weights with Flas
 section: Tutorials
 order: 8
 ---
-*Last updated 30th of July, 2021.*
+
+**Last updated 04th of October, 2021.**
 
 ## Objective
 

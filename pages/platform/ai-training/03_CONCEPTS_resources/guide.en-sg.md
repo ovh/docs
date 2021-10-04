@@ -5,7 +5,8 @@ excerpt: Learn the resources provided by AI Training jobs
 section: Concepts
 order: 3
 ---
-*Last updated 3rd May, 2021.*
+
+**Last updated 3rd May, 2021.**
 
 ## Description
 

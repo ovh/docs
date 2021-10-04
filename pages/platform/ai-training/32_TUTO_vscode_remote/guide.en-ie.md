@@ -5,7 +5,8 @@ excerpt: Tutorial to configure Remote Visual Studio with AI Training
 section: Tutorials
 order: 2
 ---
-*Last updated 23rd February 2021.*
+
+**Last updated 23rd February 2021.**
 
 ## Objective
 

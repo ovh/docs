@@ -5,6 +5,7 @@ excerpt: Example on how to use a YOLOv5 model on AI Training
 section: Tutorials
 order: 4
 ---
+
 **Last updated 21st of June, 2021.**
 
 ## Objective

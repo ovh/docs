@@ -5,6 +5,7 @@ excerpt: Learn how to manage your object storage data with the ovhai CLI
 section: How to (with CLI)
 order: 5
 ---
+
 **Last updated 16th of June, 2021.**
 
 ## Objective

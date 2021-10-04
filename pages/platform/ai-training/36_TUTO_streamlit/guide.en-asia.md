@@ -5,7 +5,8 @@ excerpt: How to build and use a custom Docker image containing a Streamlit appli
 section: Tutorials
 order: 7
 ---
-*Last updated 5th of June, 2021.*
+
+**Last updated 5th of June, 2021.**
 
 ## Objective
 

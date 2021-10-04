@@ -5,7 +5,8 @@ excerpt: Learn how to add your own registry to AI Training via UI
 section: How to (with UI)
 order: 4
 ---
-*Last updated 20th April, 2021.*
+
+**Last updated 20th April, 2021.**
 
 ## Objective
 

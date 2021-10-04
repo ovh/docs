@@ -5,7 +5,8 @@ excerpt: Learn how to share a notebook
 section: How to (with CLI)
 order: 3
 ---
-*Last updated 27th of May, 2021.*
+
+**Last updated 27th of May, 2021.**
 
 ## Objective
 

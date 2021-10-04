@@ -5,7 +5,8 @@ excerpt: How to use wandb in notebooks
 section: Tutorials
 order: 6
 ---
-*Last updated 21th of June, 2021.*
+
+**Last updated 4th of October, 2021.**
 
 ## Objective
 
@@ -76,7 +77,7 @@ A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-tr
 
 #### Notebook using Pytorch and Weights & Biases is based on YOLOv5 and the COCO dataset
 
-The aim of this tutorial is to show how Weights & Biases can be used with the YOLOv5 real-time object detection framework. In oder to achieve this, the YOLOv5 s, m, l and x models performance will be compare on the COCO dataset for the same number of epochs.
+The aim of this tutorial is to show how Weights & Biases can be used with the YOLOv5 real-time object detection framework. In order to achieve this, the YOLOv5 s, m, l and x models performance will be compared on the COCO dataset for the same number of epochs.
 
 A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-training-examples/blob/main/notebooks/pytorch/tuto/notebook_Weights_and_Biases_yolov5.ipynb).
 

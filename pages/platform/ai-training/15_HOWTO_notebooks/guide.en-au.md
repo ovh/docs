@@ -5,7 +5,8 @@ excerpt: Learn how to start and use notebooks over AI training
 section: How to (with UI)
 order: 5
 ---
-*Last updated 3rd May, 2021.*
+
+**Last updated 3rd May, 2021.**
 
 ## Objective
 

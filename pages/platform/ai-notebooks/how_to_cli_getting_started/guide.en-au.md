@@ -5,7 +5,8 @@ excerpt: Learn how to run an AI Training notebook using the CLI
 section: How to (with CLI)
 order: 1
 ---
-*Last updated 27th of May, 2021.*
+
+**Last updated 27th of May, 2021.**
 
 ## Objective
 

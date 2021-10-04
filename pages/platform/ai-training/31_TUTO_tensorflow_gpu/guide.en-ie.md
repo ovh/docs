@@ -5,7 +5,8 @@ excerpt: Example on how to use Tensorflow library with GPUs
 section: Tutorials
 order: 3
 ---
-*Last updated 16th January, 2021.*
+
+**Last updated 16th January, 2021.**
 
 ## Objective
 

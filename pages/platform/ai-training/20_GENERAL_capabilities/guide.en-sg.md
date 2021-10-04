@@ -5,7 +5,8 @@ excerpt: Find out about current capabilities and limitations of AI Training
 section: General
 order: 0
 ---
-*Last updated 20th April, 2021.*
+
+**Last updated 20th April, 2021.**
 
 ## Capabilities and known limits
 

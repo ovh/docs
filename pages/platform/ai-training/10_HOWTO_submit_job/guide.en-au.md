@@ -5,7 +5,8 @@ excerpt: Learn how to submit an AI Training job via UI
 section: How to (with UI)
 order: 1
 ---
-*Last updated 18th May, 2021.*
+
+**Last updated 18th May, 2021.**
 
 ## Objective
 

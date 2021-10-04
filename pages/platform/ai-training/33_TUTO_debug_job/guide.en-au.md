@@ -5,11 +5,12 @@ excerpt: Tutorial about how to debug your jobs
 section: Tutorials
 order: 5
 ---
-*Last updated 23rd February 2021.*
+
+**Last updated 04th of October, 2021.**
 
 ## Objective
 
-This tutorial tries to give you some hints about how you could debug your jobs if things go wrong.
+This tutorial gives you some hints on how to debug your jobs if things go wrong.
 
 ## Requirements
 
@@ -26,7 +27,7 @@ To get a list of available sub-commands and arguments, just start run:
 ovhai --help
 ```
 
-further details on each sub-command can be accessed by:
+Further details on each sub-command can be accessed by:
 
 ``` {.bash}
 ovhai <subcommand> --help
@@ -40,7 +41,7 @@ First you need the UUID of your job, so use:
 ovhai job list
 ```
 
-if your job is not listed, you may use:
+If your job is not listed, you may use:
 
 ``` {.bash}
 $ ovhai job list -a
@@ -48,7 +49,7 @@ $ ovhai job list -a
 
 to list all jobs.
 
-## My job is FAILED, but why?
+## Why has my job FAILED?
 
 ### First, check the return-code / error-code of my job
 
@@ -58,7 +59,7 @@ You can find the return-code of your job by running:
 ovhai job get <UUID>
 ```
 
-your return-code is listed in the "Infos"-field in the "Status"-section:
+Your return-code is listed in the "Infos"-field in the "Status"-section:
 
 ``` {.bash}
 Status:
@@ -74,7 +75,7 @@ Check for typos and access issues if you try to access a non-public image.
   Infos:          Error image pull
 ```
 
-### Check if there are any error-messages.
+### Check if there are any error-messages
 
 Your stdout (Output) and stderr (Error) messages can be read with:
 
@@ -84,7 +85,7 @@ ovhai job logs <UUID>
 
 ### Debug interactively
 
-If above doesnt help you solving your issue, it may help running your job a bit more interactively.
+If the answers above don't help you solving your issue, it may help running your job a bit more interactively.
 
 To skip any "autostart" of your image, you may use a bash with infinite sleep and connect to this by SSH.
 

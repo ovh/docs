@@ -5,7 +5,8 @@ excerpt: Learn the concept behind AI Training notebooks
 section: Introduction
 order: 1
 ---
-*Last updated 27th May, 2021.*
+
+**Last updated 27th May, 2021.**
 
 ## Definition
 

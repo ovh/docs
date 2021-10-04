@@ -5,7 +5,8 @@ excerpt: Learn how to access data from your Object Storage in your Notebook
 section: How to (with CLI)
 order: 2
 ---
-*Last updated 27th of May, 2021.*
+
+**Last updated 27th of May, 2021.**
 
 ## Objective
 

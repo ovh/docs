@@ -5,7 +5,8 @@ excerpt: Learn the concept behind AI Training jobs
 section: Concepts
 order: 1
 ---
-*Last updated 18th May, 2021.*
+
+**Last updated 18th May, 2021.**
 
 ## Definition
 

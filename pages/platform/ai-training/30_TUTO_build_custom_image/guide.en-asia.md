@@ -5,7 +5,8 @@ excerpt: Explanations on how to build and use your own custom image
 section: Tutorials
 order: 1
 ---
-*Last updated 10th June, 2021.*
+
+**Last updated 10th June, 2021.**
 
 ## Objective
 

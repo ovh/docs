@@ -5,7 +5,8 @@ excerpt: Learn how to install the CLI to interact with AI Training
 section: How to (with CLI)
 order: 1
 ---
-*Last updated 20th April, 2021.*
+
+**Last updated 20th April, 2021.**
 
 ## Objective
 

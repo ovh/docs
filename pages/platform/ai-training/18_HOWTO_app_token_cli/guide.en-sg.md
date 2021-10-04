@@ -5,7 +5,8 @@ excerpt: Learn how to create Application tokens with the ovhai CLI
 section: How to (with CLI)
 order: 4
 ---
-*Last updated 25th of March, 2021.*
+
+**Last updated 25th of March, 2021.**
 
 ## Objective
 

@@ -5,7 +5,8 @@ excerpt: Learn how to run an AI Training job using the CLI
 section: How to (with CLI)
 order: 2
 ---
-*Last updated 25th of March, 2021.*
+
+**Last updated 25th of March, 2021.**
 
 ## Objective
 

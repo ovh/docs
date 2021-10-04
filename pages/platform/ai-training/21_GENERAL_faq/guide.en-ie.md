@@ -5,7 +5,8 @@ excerpt: Find the answers to the most frequently asked questions about OVHcloud 
 section: General
 order: 1
 ---
-*Last updated 20th April, 2021.*
+
+**Last updated 20th April, 2021.**
 
 ## Objective
 
