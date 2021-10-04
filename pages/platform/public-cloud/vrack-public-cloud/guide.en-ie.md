@@ -360,7 +360,7 @@ nova list
 
 #### In case of an existing instance
 
-The OVHcloud Control Panel allows you to attach an instance to a private network but does not offer advanced network interface configuration. If you want to customise further, you will need to manage them either through the OVHcloud APIv6, through the OpenStack APIs or via Horizon.
+The OVHcloud Control Panel allows you to attach an instance to one or more private network(s) but does not offer advanced network interface configuration. If you want to customise further, you will need to manage them either through the OVHcloud APIv6, through the OpenStack APIs or via Horizon.
 
 The required action is simply to add a new network interface to your server, in addition to the existing one.
 
@@ -378,11 +378,11 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 Click on `Instances`{.action} in the left-hand navigation bar and then on `...`{.action} to the right of the instance. Select `Instance details`{.action}.
 
-![detail instance](images/vrack7.png){.thumbnail}
+![detail instance](images/vrack2021.png){.thumbnail}
 
 This will open the instance dashboard. Click on the `...`{.action} button in the box "Networks", next to "Private networks", and select `Attach a network`{.action}.
 
-![attach network](images/vrack8.png){.thumbnail}
+![attach network](images/vrack2021-01.png){.thumbnail}
 
 In the popup window that appears, select the private network(s) to attach to your instance and click `Attach`{.action}.
 
