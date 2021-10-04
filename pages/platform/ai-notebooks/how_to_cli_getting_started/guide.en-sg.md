@@ -123,6 +123,16 @@ Now that the notebook is in the `RUNNING` state, a https address is defined in t
 
 You can now start writing code in your notebook. Since we used the PyTorch framework in our example, we will be able to use it without having to install anything ourselves.
 
+When using a notebook, there are 2 important folders where you can put your data:
+
+```
+/data : Will disappear when your notebook will stop
+/workspace : Will be synchronized automatically to your object storage when your notebook will stop
+```
+
+In short, `/data` is useful for temporary data, while `/workspace` is useful to store your `.ipynb` files, source code
+and training checkpoints in case of long-running experiments.
+
 Once you are done with your notebook, you can stop it with the command below:
 
 ``` {.console}
