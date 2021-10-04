@@ -6,13 +6,15 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 16 mars 2021**
+**Dernière mise à jour le 04/10/2021**
 
 ## Objectif
 
 Un serveur privé virtuel (VPS, pour Virtual Private Server) est un serveur dédié virtualisé. Contrairement à un hébergement web (dit mutualisé) où la gestion technique est prise en charge par OVHcloud, c’est vous qui administrez totalement votre VPS.
 
 **Ce guide fournit des informations de base pour vous aider à prendre en main votre VPS.**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0JZ8Qe4otgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!warning]
 >OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
