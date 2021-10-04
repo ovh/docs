@@ -25,9 +25,9 @@ order: 3
 
 ## Requisitos
 
-- Tener [una instancia de Public Cloud](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/) sobre la facturación por horas
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o al [interfaz de Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/)
-- Conocimiento de la [API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) y de las [variables OpenStack](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
+- Tener [una instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/) sobre la facturación por horas
+- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o al [interfaz de Horizon](https://docs.ovh.com/us/es/public-cloud/crear_un_acceso_a_horizon/)
+- Conocimiento de la [API de OpenStack](https://docs.ovh.com/us/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) y de las [variables OpenStack](https://docs.ovh.com/us/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
 
 ## Procedimiento
 
@@ -68,13 +68,13 @@ Para ver el snapshot, acceda al menú de la izquierda y haga clic en `Instance B
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
-#### Desde la interfaz Horizon
+#### Desde la interfaz de Horizon
 
-Para continuar, debe [crear un acceso a Horizon](..crear_un_acceso_a_horizon/) y [conectarse al panel Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Para continuar, debe [crear un acceso a Horizon](../crear_un_acceso_a_horizon/) y [conectarse al panel Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Si ha desplegado instancias en diferentes regiones, asegúrese de que se encuentre en la región adecuada. Puede comprobarlo en la esquina superior izquierda de Horizon.
 
-![horizon](images/firstaccesshorizon.png){.thumbnail}
+![first access horizon](images/firstaccesshorizon.png){.thumbnail}
 
 Haga clic en el menú `Compute`{.action} en el lado izquierdo y seleccione `Instances`{.action}. Seleccione `Shelve Instance`{.action} en la lista desplegable de la instancia correspondiente.
 
@@ -92,8 +92,8 @@ Para ver la instantánea (snapshot), haga clic en `Images`{.action} en el menú 
 
 Antes de continuar, se recomienda consultar las siguientes guías:
 
-- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/)
-- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
+- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/us/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/)
+- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/us/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
 
 Una vez que el entorno esté listo, escriba lo siguiente en la línea de comandos:
 
@@ -111,7 +111,7 @@ Esta opción le permite reiniciar su instancia para poder seguir utilizándola. 
 
 > [!alert] **Acciones sobre el snapshot**
 >
-> Cualquier acción en el snapshot que no sea la reactivación (*unshelve*) puede ser muy peligrosa para su infraestructura en caso de mal uso. Cuando se «reactiva» (*unshelved*) una instancia, la instantánea se eliminará automáticamente. No es recomendable desplegar una nueva instancia a través de una instantánea creada después de que una instancia haya sido suspendida (*shelve*).
+> Cualquier acción en el snapshot que no sea la reactivación (*unshelve*) puede ser muy peligrosa para su infraestructura en caso de mal uso. Cuando se «reactiva» (*unshelved*) una instancia, la instantánea se eliminará automáticamente. No es recomendable desplegar una nueva instancia a través de una instantánea creada después de que una instancia haya sido suspendida.
 >
 > La responsabilidad sobre los servicios que OVH pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. Si tiene problemas o dudas sobre  la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
 >
