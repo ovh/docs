@@ -5,7 +5,8 @@ excerpt: Learn the concept behind AI Training users
 section: Concepts
 order: 2
 ---
-*Last updated 3rd May, 2021.*
+
+**Last updated 3rd May, 2021.**
 
 ## Definition
 
@@ -33,4 +34,4 @@ There are 2 available roles :
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

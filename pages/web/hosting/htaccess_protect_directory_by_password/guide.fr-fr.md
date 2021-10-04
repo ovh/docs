@@ -31,7 +31,7 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 
 > [!primary]
 >
-> La solution proposée ici n'est qu'une possibilité technique parmi d'autres pour mettre en place un espace administrateur sur votre site. Vous pouvez également utiliser la fonctionnalité [Module en 1 clic](../modules-en-1-clic/) proposée par [OVHcloud](https://www.ovh.com/fr/).
+> La solution proposée ici n'est qu'une possibilité technique parmi d'autres pour mettre en place un espace administrateur sur votre site. Vous pouvez également utiliser la fonctionnalité [Module en 1 clic](../modules-en-1-clic/) proposée par [OVHcloud](https://www.ovhcloud.com/fr/).
 >
 > Pour toute demande sur la création ou la programmation de votre site, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ces sujets.
 >
