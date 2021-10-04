@@ -5,7 +5,8 @@ excerpt: Learn how to run an AI Training notebook using the CLI
 section: How to (with CLI)
 order: 1
 ---
-*Last updated 27th of May, 2021.*
+
+**Last updated 27th of May, 2021.**
 
 ## Objective
 
@@ -75,6 +76,10 @@ status:
 
 The first line in the output shows the ID of the notebook: `fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e`.
 
+The "Url" corresponds to your JupyterLab server. Pasting this URL in your browser displays the following screen:
+
+![image](images/jupyterlab_home_page.png)
+
 If you don't have the ID of the notebook you want to access, you can list all your notebooks using:
 
 ``` {.console}
@@ -129,8 +134,7 @@ Stopping a notebook will make it unavailable from your browser, and start synchr
 
 Once the synchronisation is finished, and the notebook state is `STOPPED`, you can either start it again or delete it.
 
-Being able to restart a notebook is one of the main differences compared to using [jobs](https://docs.ovh.com/au/en/ai-training/jobs/). Restarting a notebook will restore your notebook code as it was when you stopped it. However, you will need to re-run your code to reload your variables because the program state is not saved.
-
+Being able to restart a notebook is one of the main differences compared to using [jobs](../../ai-training/jobs). Restarting a notebook will restore your notebook code as it was when you stopped it. However, you will need to re-run your code to reload your variables because the program state is not saved.
 To restart a notebook, run this command:
 
 ``` {.console}
@@ -140,13 +144,18 @@ $ ovhai notebook start fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e
 You are billed for `RUNNING` notebooks but not for `STARTING`, `STOPPING` and `STOPPED` notebooks.
 However, to restore your code when you restart a `STOPPED` notebook, it needs to be stored in your object storage, which you are billed for.
 
-This is useful when you work on a notebook for some time. If you know you will not use a notebook anymore and want to remove the notebook state from your object storage, you need to delete the notebook:
+This is useful when you work on a notebook for some time. If you know you will not use a notebook anymore, you can delete it:
 
 ``` {.console}
 $ ovhai notebook delete fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e
 ```
 
 Note that a notebook must first be stopped before being deleted, and that deleted notebook cannot be restarted.
+
+> [!primary]
+>
+> The notebook state stored in the Object Storage (including your notebook files) is not cleaned up automatically after notebook deletion.
+> You can find it and delete it in the `notebooks_workspace` container of your Object Storage, under the notebook ID directory.
 
 ## Going further
 
@@ -158,4 +167,4 @@ Learn how to share your notebooks with other people [here](https://docs.ovh.com/
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

@@ -6,7 +6,7 @@ section: Tutorials
 order: 2
 ---
 
-**Last updated 9th September 2021**
+**Last updated 9th of September, 2021.**
 
 ## Objective
 
