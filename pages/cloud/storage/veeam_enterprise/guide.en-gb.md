@@ -5,13 +5,13 @@ excerpt: 'Find out how to set up a Veeam Backup & Replication server with Veeam 
 section: Veeam
 ---
 
-**Last updated 23rd July 2020**
+**Last updated 4th October 2021**
 
 ## Objective
 
 Veeam Backup & Replication is a data protection software. It offers its users a wide range of options for backing up, replicating and restoring their data.
 
-**Find out how to set up a Veeam Backup & Replication server, then register it with an OVHcloud Veeam Enterprise licence server.**
+**This guide explains how to set up a Veeam Backup & Replication server, then register it with an OVHcloud Veeam Enterprise licence server.**
 
 
 ## Requirements
@@ -32,7 +32,7 @@ Download the **Veeam Backup & Replication** solution from the Veeam website. If 
 
 The file will appear in ISO disk image format. Once you have transferred it onto your server, select the server’s CD reader, then select the image.
 
-In the server, you can then launch the installation wizard. Select `Veeam Backup & Replication (Install)`{.action}.
+On the server, you can then launch the installation wizard. Select `Veeam Backup & Replication (Install)`{.action}.
 
 ![installation Veeam](images/veeamBandR_inst_01.png){.thumbnail}
 
@@ -40,7 +40,7 @@ After you have read the licence agreement, accept the terms and click `Next`{.ac
 
 ![terms conditions](images/veeamBandR_inst_02.png){.thumbnail}
 
-Click `Next`{.action} to proceed to the next stage, where you can save the licence file.
+Click `Next`{.action} to skip the step of opening a licence file.
 
 ![licence](images/veeamBandR_inst_03.png){.thumbnail}
 
@@ -121,7 +121,7 @@ If you go back to the **Security** window, you can check that the account has be
 
 #### Launch and Activation Permissions
 
-The OVHVeeamEntreprise user is only accessible locally, so it is necessary to add permissions in the Windows graphical user interface to enable the remote connection.
+The OVHVeeamEnterprise user is only accessible locally, so it is necessary to add permissions in the Windows graphical user interface to enable the remote connection.
 
 Via the graphical user interface:
 
