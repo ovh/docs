@@ -11,7 +11,7 @@ We list here some details on the APIs we expose, the software versions we use an
 
 ## OVHcloud API
 
-We have added a [Kubernetes section](https://api.ovh.com/console/#/cloud/project/{serviceName}/kube) to the [OVHcloud API](https://ca.api.ovh.com/console/).  
+We have added a [Kubernetes section](https://api.ovh.com/console/#/cloud/project/{serviceName}/kube) to the [OVHcloud API](https://api.ovh.com/console/).
 Using it allows you to add and remove nodes, update and reset your clusters or getting `kubectl` configuration.
 
 > [!primary]
