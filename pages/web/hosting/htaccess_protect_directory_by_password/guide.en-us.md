@@ -1,6 +1,6 @@
 ---
 title: "Protecting your website's administration interface with a .htaccess file"
-slug: how-to-protect-access-files-by-authentication
+slug: how_to_password_protect_a_directory_on_your_website
 legacy_guide_number: g1968
 excerpt: "Find out how to protect access to your website's administration with a .htaccess file"
 section: Redirection and authentication
