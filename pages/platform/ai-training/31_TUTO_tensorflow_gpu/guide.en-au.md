@@ -5,7 +5,8 @@ excerpt: Example on how to use Tensorflow library with GPUs
 section: Tutorials
 order: 3
 ---
-*Last updated 16th January, 2021.*
+
+**Last updated 16th January, 2021.**
 
 ## Objective
 
@@ -67,4 +68,4 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

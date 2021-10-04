@@ -1,11 +1,12 @@
 ---
 title: Accessing data from your Object Storage
 slug: access-object-storage-data
-excerpt: Learn how to access data from your Object Storage in your notebook
+excerpt: Learn how to access data from your Object Storage in your Notebook
 section: How to (with CLI)
 order: 2
 ---
-*Last updated 27th of May, 2021.*
+
+**Last updated 27th of May, 2021.**
 
 ## Objective
 
@@ -28,7 +29,7 @@ $ ovhai data upload GRA my-dataset my-dataset.zip
 
 This file can now be accessed from your notebooks, either with read-only or read-write permissions.
 
-## Access with read-only permissions
+## Access with Read-Only permissions
 
 In order to access your dataset, you can use the `--volume` option.
 
@@ -39,7 +40,7 @@ $ ovhai notebook run --volume my-dataset@GRA:/workspace/datasets:ro tensorflow j
 This command can be read as "Load the container `my-dataset` from the GRA region, in the /workspace/datasets directory,
 with `ro` (read-only) permissions".
 
-Wait a few seconds for the notebook to start and paste its URL in your browser.
+Wait a few seconds for the notebook to start, then you should see its URL in the output that you can access from your browser.
 You can read the [Getting started](https://docs.ovh.com/asia/en/publiccloud/ai/notebooks/getting-started-cli/) page to know how to find this URL.
 
 You should get a page like this, showing your dataset in the file explorer:
@@ -51,7 +52,7 @@ You will not be able to modify the dataset from this notebook because you loaded
 Read-only permissions are to ensure you don't modify your data by mistake. If you want to modify data from your
 notebooks, to store a trained neural network for example, you can use the read-write permission instead.
 
-## Access with read-write permissions
+## Access with Read-Write permissions
 
 Similarly to the read-only mode, you can use the `--volume` option to load data with read-write permission.
 The only difference is that you specify `rw` instead of `ro` in the command:
@@ -97,4 +98,4 @@ is the fact that if someone else modifies the data in your cached volume, you wi
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

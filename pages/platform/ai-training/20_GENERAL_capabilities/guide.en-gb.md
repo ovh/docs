@@ -5,7 +5,8 @@ excerpt: Find out about current capabilities and limitations of AI Training
 section: General
 order: 0
 ---
-*Last updated 20th April, 2021.*
+
+**Last updated 20th April, 2021.**
 
 ## Capabilities and known limits
 
@@ -49,6 +50,8 @@ Job URL for accessing the port 9000 (starting with the job's ID followed by the 
 
 -   https://00000000-0000-0000-0000-000000000000-9000.job.gra.training.ai.cloud.ovh.net
 
+Only the HTTP layer is accessible.
+
 ### OVHcloud vRack
 
 -   AI Training cannot use or access OVHcloud vRack.
@@ -70,4 +73,4 @@ Job URL for accessing the port 9000 (starting with the job's ID followed by the 
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

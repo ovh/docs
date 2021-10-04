@@ -5,7 +5,8 @@ excerpt: Learn how to install the CLI to interact with AI Training
 section: How to (with CLI)
 order: 1
 ---
-*Last updated 20th April, 2021.*
+
+**Last updated 20th April, 2021.**
 
 ## Objective
 
@@ -65,4 +66,4 @@ In addition, when performing any action in the **AI Training** section of the OV
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

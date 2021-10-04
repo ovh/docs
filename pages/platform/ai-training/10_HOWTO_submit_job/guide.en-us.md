@@ -5,7 +5,8 @@ excerpt: Learn how to submit an AI Training job via UI
 section: How to (with UI)
 order: 1
 ---
-*Last updated 18th May, 2021.*
+
+**Last updated 18th May, 2021.**
 
 ## Objective
 
@@ -149,4 +150,4 @@ From the list of **jobs** you can list the available actions at the far right of
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

@@ -6,7 +6,7 @@ section: Project management
 order: 3
 ---
 
-**Last updated 10th September 2021**
+**Last updated 20th September 2021**
 
 ## Objective
 
@@ -36,7 +36,7 @@ The table below allows you to differentiate the options available on your instan
 |Term|Description|Billing|
 |---|---|---|
 |[Shelve](#shelve-instance)|Retains the resources and data in your disk by creating a snapshot, all other resources are released.|You are only billed for the snapshot.|
-|[Suspend)](#stop-suspend-instance)|Stores the VM state on disk, the resources dedicated to instance are still reserved.|You will still be billed the same price for your instance.|
+|[Suspend](#stop-suspend-instance)|Stores the VM state on disk, the resources dedicated to instance are still reserved.|You will still be billed the same price for your instance.|
 |[Pause](#pause-instance)|Stores the state of the VM in RAM, a paused instance becomes frozen.|You will still be billed the same price for your instance.|
 
 ### Shelve (suspend) an instance <a name="shelve-instance"></a>
@@ -88,7 +88,7 @@ To view the snapshot, in the `Compute`{.action} menu, click on `Images`{.action}
 Before proceeding, it is recommended that you consult these guides:
 
 - [Prepare the environment to use the OpenStack API](https://docs.ovh.com/au/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Set OpenStack environment variables](https://docs.ovh.com/au/en/public-cloud/set-openstack-environment-variables/).
+- [Set OpenStack environment variables](https://docs.ovh.com/au/en/public-cloud/set-openstack-environment-variables/)
 
 Once your environment is ready, type the following at the command line:
 
@@ -222,11 +222,11 @@ Once your environment is ready, type the following at the command line:
 To unpause the instance, type the following at the command line:
 
 ```bash
-~$ openstack server unpause <UID server>
+~$ openstack server unpause <UUID server>
 
 =========================================
 
-~$ nova unpause <UID server>
+~$ nova unpause <UUID server>
 ```
 
 ## Go further

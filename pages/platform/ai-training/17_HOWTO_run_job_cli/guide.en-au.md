@@ -5,7 +5,8 @@ excerpt: Learn how to run an AI Training job using the CLI
 section: How to (with CLI)
 order: 2
 ---
-*Last updated 25th of March, 2021.*
+
+**Last updated 25th of March, 2021.**
 
 ## Objective
 
@@ -215,4 +216,4 @@ To know more about the CLI and available commands to interact with your job chec
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

@@ -6,7 +6,7 @@ section: How to (with CLI)
 order: 3
 ---
 
-*Last updated 27th of May, 2021.*
+**Last updated 27th of May, 2021.**
 
 ## Objective
 
@@ -91,9 +91,9 @@ Here the URL is `https://d8d809f2-717b-4b60-9881-07e6987a144d.notebook.gra.train
 It will be different for every notebook you will create. Anyone in your Public Cloud project can now access this URL
 from their browser using their own credentials.
 
-## Share a notebook with people outside of your Public Cloud project
+## Share a notebook with people outside your Public Cloud project
 
-In order to allow people outside of your Public Cloud project to access your notebook, we need to generate some credentials
+In order to allow people outside your Public Cloud project to access your notebook, we need to generate some credentials
 for them that will only give them access to the notebooks we want. These credentials are named App tokens and are represented
 by a long string of characters.
 
@@ -281,5 +281,4 @@ In this example, the `Url` is `https://8e3ac445-0b47-4eea-9269-19a36b7213c7.note
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
-
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
