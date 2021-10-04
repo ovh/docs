@@ -7,7 +7,7 @@ section: 'Getting started'
 order: 5
 ---
 
-**Last updated 2018/10/15**
+**Last updated 2021/10/04**
 
 ## Objective
 
@@ -27,9 +27,9 @@ To perform certain administrative functions on your server (e.g. installing pack
 This guide assumes that the default user is called 'admin'.
 >
 
-### Changing the root password
+### Setting the root password <a name="settingtherootpassword"></a>
 
-First, establish an SSH connection to your server.
+First, establish an [SSH connection](https://docs.ovh.com/asia/en/public-cloud/public-cloud-first-steps/#step-4-connecting-to-your-instance) to your server.
 
 At the command line, enter a password for the admin user (for security reasons, the password will not be shown as you type it):
 
@@ -40,6 +40,17 @@ Retype new UNIX password:
 passwd: password updated 
 successfully
 ```
+
+### Become root
+
+To become the root user, type the following command at the command line:
+
+```
+~$ sudo su -
+~#
+```
+
+Next, enter the root password.
 
 ### Update repositories (Debian/Ubuntu)
 
@@ -63,16 +74,63 @@ To update your server's operating system, type the following command at the comm
 ~$ sudo vi /etc/hosts.allow
 ```
 
-### Become root
+### Enable root login and Password authentication
 
-To become the root user, type the following command at the command line:
+#### For connections via the built-in VNC console in the OVHcloud Control Panel
+
+- [First, set the root password](#settingtherootpassword)
+
+Next, access the VNC console on the manager:
+
+Click on the `...`{.action} button next to the corresponding instance and then click on `Instance details`{.action}. Switch to the tab VNC console.  
+
+At the command prompt, enter your login as **root** and your password.
+
+![vnc](images/vnc.png){.thumbnail} 
+
+#### For connections using linux terminals
+
+- [First, set the root password](#settingtherootpassword)
+
+Next, enable root login and password authentication in your **sshd_config** file:
 
 ```
-~$ sudo su -
-~#
+~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 ```
 
-Next, enter the root password.
+Restart the SSH service
+
+```
+~$ service sshd restart
+```
+
+Once done, you should be able to access your server with the root user and password set.
+
+#### For connections using Putty
+
+- [First, set the root password](#settingtherootpassword)
+
+Next, enable root login and password authentication in your **sshd_config** file:
+
+```
+~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+```
+
+Restart the SSH service
+
+```
+~$ service sshd restart
+```
+
+In the Putty authentication agent (pageant key list) remove your private SSH key.
+
+![Remove private key](images/pageantkeylist.png){.thumbnail}
+
+Once done, you should be able to access your server with the root user and password set.
 
 ## Go further
 
