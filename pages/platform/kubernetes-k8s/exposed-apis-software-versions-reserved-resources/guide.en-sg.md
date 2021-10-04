@@ -5,7 +5,7 @@ slug: exposed-apis-software-versions-reserved-resources
 section: Technical resources
 ---
 
-**Last updated February 24<sup>th</sup>, 2021.**
+**Last updated October 4<sup>th</sup>, 2021.**
 
 We list here some details on the APIs we expose, the software versions we use and the resources we reserve on each node.
 
@@ -21,12 +21,13 @@ Using it allows you to add and remove nodes, update and reset your clusters or g
 
 Currently, we support the following Kubernetes releases:
 
-* `1.15` (deprecated)
-* `1.16` (deprecated)
-* `1.17`
-* `1.18`
+* `1.16` (end-of-life)
+* `1.17` (deprecated)
+* `1.18` (deprecated)
 * `1.19`
 * `1.20`
+* `1.21`
+* `1.22`
 
 If you run a Managed Kubernetes Service using an older version we strongly encourage you to use the [version upgrade feature](../upgrading-kubernetes-version/) to receive official support for your cluster.
 
@@ -55,12 +56,13 @@ The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.ext
 
 The versions installed depends on the Kubernetes version:
 
-* `1.15`: calico 3.7.2, flannel 0.11.0 (deprecated)
-* `1.16`: calico 3.9.1, flannel 0.11.0 (deprecated)
-* `1.17`: calico 3.10.3, flannel 0.11.0
-* `1.18`: calico 3.10.3, flannel 0.11.0
-* `1.19`: calico 3.10.3, flannel 0.11.0
-* `1.20`: calico 3.10.3, flannel 0.11.0
+* `1.16`: calico v3.9.1,  flannel v0.11.0, coredns v1.8.0, metrics-server v0.3.3, csi-plugin v1.18.0 (end-of-life)
+* `1.17`: calico v3.10.3, flannel v0.11.0, coredns v1.8.0, metrics-server v0.3.6, csi-plugin v1.18.0 (deprecated)
+* `1.18`: calico v3.10.3, flannel v0.11.0, coredns v1.8.0, metrics-server v0.3.6, csi-plugin v1.18.0 (deprecated)
+* `1.19`: calico v3.10.3, flannel v0.11.0, coredns v1.8.0, metrics-server v0.3.7, csi-plugin v1.18.0
+* `1.20`: calico v3.10.3, flannel v0.11.0, coredns v1.8.0, metrics-server v0.3.7, csi-plugin v1.18.0
+* `1.21`: calico v3.19.3, flannel v0.11.0, coredns v1.8.4, metrics-server v0.4.4, csi-plugin v1.18.0
+* `1.22`: calico v3.20.1, flannel v0.14.0, coredns v1.8.4, metrics-server v0.5.0, csi-plugin v1.18.0
 
 ## Enabled policies
 
