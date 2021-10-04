@@ -1,6 +1,6 @@
 ---
 title: "Proteger a interface de administração do seu site com um ficheiro .htaccess"
-slug: partilhado-htaccess-como-protecao-lacces-a-um-diretorio-por-autenticacao
+slug: partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao
 legacy_guide_number: g1968
 excerpt: "Encontre aqui como proteger o acesso à administração do seu site com um ficheiro .htaccess"
 ---
@@ -21,7 +21,7 @@ Por vezes, poderá ser necessário proteger o acesso a uma parte do seu site com
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#gofurther).
 >
 
 ## Requisitos

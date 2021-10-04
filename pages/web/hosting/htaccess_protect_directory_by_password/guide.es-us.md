@@ -1,6 +1,6 @@
 ---
 title: Proteger el panel de administración del sitio web con un archivo .htaccess
-slug: compartido-htaccess-como-proteger-lacces-a-un-directorio-por-autenticacion
+slug: compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion
 legacy_guide_number: g1968
 excerpt: Cómo proteger el acceso a la administración de su sitio web con un archivo .htaccess
 section: Reescritura y autenticación
@@ -64,9 +64,9 @@ Introduzca las siguientes líneas en el archivo "crypter.php" creado anteriormen
 
 ```php
 <?php
-$string_1 = crypt('ontraseña_sin_cifrar_1');
-$string_2 = crypt('ontraseña_sin_cifrar_2');
-$string_3 = crypt('ontraseña_sin_cifrar_3');
+$string_1 = crypt('contraseña_sin_cifrar_1');
+$string_2 = crypt('contraseña_sin_cifrar_2');
+$string_3 = crypt('contraseña_sin_cifrar_3');
 echo nl2br("$string_1 \n $string_2 \n $string_3");
 ?>
 ```
