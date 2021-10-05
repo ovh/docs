@@ -104,7 +104,7 @@ Edit the file so that it reflects the configuration below (please remember to fi
 
 - For older distributions:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -119,7 +119,7 @@ iface eth0 inet static
 
 - For the latest distributions:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -144,7 +144,7 @@ Save and close the file, then restart your network or reboot the virtual machine
 
 Open a terminal on your virtual machine. Open the virtual machine's network configuration file located in `/etc/network/interfaces`. Edit the file so that it reflects the configuration below (please remember to fill in your own values).
 
-```sh
+```bash
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
@@ -178,7 +178,7 @@ Save and close the file, then reboot your virtual machine.
 
 Open a terminal on your virtual machine. Open the virtual machine's network configuration file located in `/etc/sysconfig/network-scripts/ifcfg-(interface-name)`. Edit the file so that it reflects the configuration below (please remember to fill in your own values).
 
-```sh
+```bash
 DEVICE=(interface-name)
 BOOTPROTO=none
 ONBOOT=yes
@@ -205,7 +205,7 @@ default GATEWAY_IP
 Save and close the file.<br>
 Next, open the virtual machine's DNS configuration file, which is located in `/etc/resolv.conf` and add this line:
 
-```bash
+```console
 nameserver 213.186.33.99
 ```
 
@@ -225,7 +225,7 @@ route_net2="default GATEWAY_IP"
 Save and close the file.<br>
 Next, edit or create the file `/etc/resolv.conf` and add this line.
 
-```sh
+```console
 nameserver 213.186.33.99
 ```
 
@@ -241,7 +241,7 @@ First, open a terminal on your virtual machine and open the network configuratio
 
 Once the file is open for editing, amend it with the following code:
 
-```sh
+```yaml
 network:
     ethernets:
         (interface-name):
@@ -261,8 +261,8 @@ network:
 
 Save and close the file, then run the following command:
 
-```sh
-# netplan try
+```bash
+netplan try
 Warning: Stopping systemd-networkd.service, but it can still be activated by:
   systemd-networkd.socket
 Do you want to keep these settings?
