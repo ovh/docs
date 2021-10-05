@@ -29,9 +29,9 @@ This guide assumes that the default user is called 'admin'.
 
 ### Setting the root password <a name="settingtherootpassword"></a>
 
-First, establish an [SSH connection](https://docs.ovh.com/us/en/public-cloud/public-cloud-first-steps/#step-4-connecting-to-your-instance) to your server.
+First, establish an [SSH connection](https://docs.ovh.com/us/en/public-cloud/public-cloud-first-steps/#step-4-connecting-to-your-instance) to your server with your default user.
 
-At the command line, enter a password for the admin user (for security reasons, the password will not be shown as you type it):
+At the command line, set a password for the root user (for security reasons, the password will not be shown as you type it):
 
 ```sh
 ~$ sudo passwd
