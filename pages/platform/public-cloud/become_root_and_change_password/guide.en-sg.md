@@ -7,7 +7,7 @@ section: 'Getting started'
 order: 5
 ---
 
-**Last updated 2021/10/04**
+**Last updated 2021/10/05**
 
 ## Objective
 
@@ -17,8 +17,8 @@ To perform certain administrative functions on your server (e.g. installing pack
 
 ## Requirements
 
-* a Public Cloud project activated
-* access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
+* a [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
 
 ## Instructions
 

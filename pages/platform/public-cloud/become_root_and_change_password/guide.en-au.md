@@ -7,7 +7,7 @@ section: 'Getting started'
 order: 5
 ---
 
-**Last updated 2021/10/04**
+**Last updated 2021/10/05**
 
 ## Objective
 
@@ -16,9 +16,8 @@ To perform certain administrative functions on your server (e.g. installing pack
 **This guide will show you how to become the root user and create a password for the root account.**
 
 ## Requirements
-
-* a Public Cloud project activated
-* access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
+a [Public Cloud instance](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 
 ## Instructions
 
