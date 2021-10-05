@@ -110,11 +110,11 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 ![sélection project](images/vrack1.png){.thumbnail}
 
-Cliquez alors sur  `Private network`{.action} dans le menu latéral de gauche. 
+Cliquez alors sur `Private network`{.action} (1) dans le menu latéral de gauche. 
 
-![Private Network](images/vrack2.png){.thumbnail}
+![Private Network](images/vrack2021-02.png){.thumbnail}
 
-Cliquez sur le bouton `Pour commencer, créez un vRack`{.action}. Vous devrez alors choisir de créer un nouveau vRack ou d'utiliser un vRack existant. Dans notre exemple, nous allons créer un nouveau vRack. Une fois votre choix effectué, cliquez sur `Créer`{.action}.
+Cliquez sur le bouton `Pour commencer, créez un vRack`{.action} (2). Vous devrez alors choisir de créer un nouveau vRack ou d'utiliser un vRack existant. Dans notre exemple, nous allons créer un nouveau vRack. Une fois votre choix effectué, cliquez sur `Créer`{.action}.
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
@@ -135,14 +135,14 @@ Cela peut vous être utile afin de segmenter votre vRack entre plusieurs réseau
 
 Depuis l'espace client OVHcloud, vous pourrez affecter le vLan de votre choix, mais vous ne pourrez pas personnaliser la plage IP. Le vRack sera actif dans toutes les zones.
 
-Depuis les APIv6 OVHcloud, vous pourrez personnaliser l'ensemble des paramètres : plage IP (10.0.0.0/16 par exemple), zone de déploiement, DCHP, Gateway...
+Depuis les APIv6 OVHcloud, vous pourrez personnaliser l'ensemble des paramètres : plage IP (10.0.0.0/16 par exemple), zone de déploiement, DHCP, Gateway, etc.
 
 > [!primary]
-> Sur les serveurs dédiés, par défaut, vous êtes sur le vLan0. Le fonctionnement de l’infrastructure OpenStack fait que vous devrez spécifier le numéro de votre vLan directement au niveau de l'infrastructure.
+> Sur les serveurs dédiés, par défaut, vous êtes sur le VLAN 0. Le fonctionnement de l’infrastructure OpenStack fait que vous devrez spécifier le numéro de votre VLAN directement au niveau de l'infrastructure.
 >
-> Contrairement aux serveurs dédiés, il n'est pas nécessaire de faire du vLan taggé directement sur l'instance.
+> Contrairement aux serveurs dédiés, il n'est pas nécessaire de taggé directement un VLAN sur l'instance.
 >
-> Pour plus d'informations sur la gestion des vLan du vRack des serveurs dédiés, vous pouvez consulter ce guide : [Créer plusieurs VLAN dans le vRack](../../dedicated/creer-vlan-vrack/)
+> Pour plus d'informations sur la gestion des vLan du vRack des serveurs dédiés, vous pouvez consulter ce guide : [Créer plusieurs VLAN dans le vRack](../../dedicated/creer-vlan-vrack/).
 
 > [!warning]
 > Le vRack étant une infrastructure gérée au niveau d'OVHcloud, vous ne pourrez l'administrer qu'au travers de l'espace client OVHcloud et des APIv6 OVHcloud.
@@ -154,7 +154,7 @@ Depuis les APIv6 OVHcloud, vous pourrez personnaliser l'ensemble des paramètres
 
 Une fois le vRack créé, cliquez à nouveau sur  `Private network`{.action} dans le menu latéral de gauche. 
 
-![VLAN creation](images/vrack4.png){.thumbnail}
+![VLAN creation](images/vrack2021-03.png){.thumbnail}
 
 Cliquez à présent sur `Créer un réseau privé`{.action}. La page suivante vous permettra de personnaliser plusieurs paramètres.
 
@@ -247,7 +247,7 @@ Pensez également à noter les informations suivantes, comme indiqueé dans le [
 
 - ID ou nom de la clé SSH OpenStack
 - ID du type d'instance (flavor)
-- ID de l'image souhaitée (Système d'exploitation, snapshot...)
+- ID de l'image souhaitée (Système d'exploitation, snapshot, etc.)
 
 ###### Déploiement de l'instance
 
@@ -383,11 +383,11 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Cliquez alors sur `Instances`{.action} dans le menu latéral de gauche. Cliquez ensuite sur le bouton `...`{.action} à droite de l'instance concernée puis sur `Détail de l'instance`{.action}.
 
-![detail instance](images/vrack7.png){.thumbnail}
+![detail instance](images/vrack2021.png){.thumbnail}
 
 Le tableau de bord de votre instance vous est alors présenté. Cliquez sur le bouton `...`{.action} à droite de « Réseau(x) privé(s) » puis sur `Attacher un réseau`{.action}.
 
-![attacher réseau](images/vrack8.png){.thumbnail}
+![attacher réseau](images/vrack2021-01.png){.thumbnail}
 
 Dans la pop-up qui apparaît, sélectionnez le réseau privé à attacher à votre instance puis cliquez sur  `Attacher`{.action}.
 
@@ -430,7 +430,7 @@ Sélectionnez votre interface et validez :
 > [!warning]
 > La suppression d'une interface est définitive.
 >
->Dans le cas où vous supprimeriez l'interface « Ext-Net » (IP publique), ceyye adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
+>Dans le cas où vous supprimeriez l'interface « Ext-Net » (IP publique), cette adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
 ><br>Cette action n'est à effectuer que si vous souhaitez isoler votre serveur dans le vRack (interface « Ext-Net ») ou la sortir d'un vLan.
 >
 
@@ -552,7 +552,7 @@ openstack server show <ID-instance>
 > [!warning]
 > La suppression d'une interface est définitive.
 >
->Dans le cas où vous supprimeriez l'interface « Ext-Net » (IP publique), ceyye adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
+>Dans le cas où vous supprimeriez l'interface « Ext-Net » (IP publique), cette adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
 ><br>Cette action n'est à effectuer que si vous souhaitez isoler votre serveur dans le vRack (interface « Ext-Net ») ou la sortir d'un vLan.
 >
 
