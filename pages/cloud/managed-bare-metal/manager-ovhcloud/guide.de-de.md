@@ -1,5 +1,5 @@
 ---
-title: Einführung in das Kundencenter der OVHcloud Managed Bare Metal
+title: Einführung in das OVHcloud Managed Bare Metal Kundencenter
 slug: manager-ovhcloud
 routes:
     canonical: 'https://docs.ovh.com/de/private-cloud/manager-ovh-private-cloud/'
@@ -8,9 +8,9 @@ section: Erste Schritte
 order: 1
 ---
 
-**Stand 18.11.2020**
+**Letzte Aktualisierung am 05.10.2021**
 
-## Einleitung
+## Ziel
 
 Das OVHcloud Kundencenter bietet zahlreiche Optionen für die Konfiguration Ihrer Managed Bare Metal Infrastruktur.
 
@@ -19,35 +19,33 @@ Das OVHcloud Kundencenter bietet zahlreiche Optionen für die Konfiguration Ihre
 ## Voraussetzungen
 
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich unter `Bare Metal Cloud`{.action} im Bereich `Managed Bare Metal`{.action}.
-- Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Produkt.
+- Sie verfügen über eine [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Infrastruktur.
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
-### Tab „Allgemeines“
+### Tab "Allgemeine Informationen"
 
-Im Menüpunkt `Bare Metal Cloud`{.action} im Bereich `Managed Bare Metal`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} finden Sie eine allgemeine Übersicht Ihrer Managed Bare Metal:
+Unter dem Menüpunkt `Bare Metal Cloud`{.action} im Bereich `Managed Bare Metal`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} finden Sie eine allgemeine Übersicht.
 
 ![Allgemeine Informationen](images/controlpanel1-e.png){.thumbnail}
 
-Im oberen Teil der Seite, `1 auf der Abbildung`, finden sie den Namen und die Beschreibung Ihrer Managed Bare Metal. Diese können Sie gerne anpassen, was besonders nützlich ist, wenn Sie über mehrere Infrastrukturen verfügen. 
+Im oberen Teil der Seite (1 auf der Abbildung) finden sie den Namen und die Beschreibung Ihrer Managed Bare Metal Infrastruktur. Diese können Sie gerne anpassen, was besonders nützlich ist, wenn Sie über mehrere Dienste verfügen. 
 
-Auf der linken Seite, `2 auf der Abbildung`, finden Sie Ihre Managed Bare Metal(s) sowie das bzw. die virtuellen Datacenter, aus denen diese besteht.
-
+Auf der linken Seite (2 auf der Abbildung) werden Ihre Managed Bare Metal Infrastrukturen sowie deren virtuellen Rechenzentren aufgelistet.
 
 #### Allgemeine Informationen
 
-In der linken Tabelle finden Sie die allgemeinen Informationen zu Ihrer Managed Bare Metal.
+In diesem Bereich finden Sie die allgemeinen Informationen zu Ihrem Dienst.
 
 ![Allgemeine Informationen](images/controlpanel2-e.png){.thumbnail}
 
-
-- die Beschreibung Ihrer Managed Bare Metal (mit der Möglichkeit, den Namen zu ändern)
-- die Version Ihrer Managed Bare Metal
-- das Datacenter und genauer, die Zone, in der sich Ihre Infrastruktur befindet
-- die Zugangseinstellungen für Ihre Infrastruktur (`Offen` oder `Eingeschränkt`) mit den Einschränkungen nach Quell-IP
-- die Anzahl der virtuellen Datacenter in Ihrer Infrastruktur
-- die Anzahl der IP-Blöcke (mit der Möglichkeit, weitere Blöcke zu bestellen)
+- Die Beschreibung Ihrer Managed Bare Metal Infrastruktur (mit der Möglichkeit, den Namen zu ändern)
+- Die Version Ihrer Managed Bare Metal Infrastruktur
+- Das "Datacenter" und genauer, die Zone, in der sich Ihre Infrastruktur befindet
+- Die Zugangseinstellungen für Ihre Infrastruktur (`Offen` oder `Eingeschränkt`) mit den Einschränkungen nach Quell-IP
+- Die Anzahl der virtuellen "Datacenter" in Ihrer Infrastruktur
+- Die Anzahl der IP-Blöcke (mit der Möglichkeit, weitere Blöcke zu bestellen)
 
 
 #### Optionen und Compliance
@@ -68,17 +66,16 @@ Weitere Informationen zur Kündigung eines Managed Bare Metal Dienstes finden Si
 
 #### Datacenter
 
-In diesem Tab finden Sie eine kurze Zusammenfassung der virtuellen Datacenter in Ihrer Managed Bare Metal Lösung:
+In diesem Tab finden Sie eine kurze Zusammenfassung der virtuellen "Datacenter" in Ihrer Managed Bare Metal Infrastruktur:
 
 ![Datacenter](images/controlpanel5-e.png){.thumbnail}
 
-Weiter unten in dieser Anleitung finden Sie eine detailliertere Übersicht zu den virtuellen Datacentern.
+Weiter unten in dieser Anleitung finden Sie eine detailliertere Übersicht zu den virtuellen "Datacentern".
 
 > [!primary]
 >
-> Auf dieser Seite können Sie ein weiteres Datacenter hinzufügen. Dies verursacht keine zusätzlichen Kosten.
+> Auf dieser Seite können Sie ein weiteres "Datacenter" hinzufügen. Dies verursacht keine zusätzlichen Kosten.
 > 
-
 
 
 #### Benutzer
@@ -89,30 +86,30 @@ In diesem Bereich werden alle Benutzer angezeigt, die sich auf vSphere einloggen
 
 Sie können einen Benutzer erstellen, indem Sie links auf den Button `Benutzer erstellen`{.action} klicken.
 
-Zu jedem Benutzer finden Sie verschiedene Benutzerinformationen sowie die für die gesamte Managed Bare Metal geltenden Berechtigungen:
+Zu jedem Benutzer finden Sie verschiedene Benutzerinformationen sowie die für die gesamte Managed Bare Metal Infrastruktur geltenden Berechtigungen:
 
 - Kennung
 - Vorname (optional)
 - Nachname (optional)
 - E-Mail-Adresse (optional)
 - Telefon-/Faxnummer (optional)
-- *token validator*-Berechtigung, erlaubt die Bestätigung kritischer Operationen auf Managed Bare Metals
-- *IP*-Berechtigung, erlaubt Zugriff auf das OVH Network Plugin
-- *Failover-IP*-Berechtigung, erlaubt die Verwaltung von mit Ihrer Managed Bare Metal verbundenen Failover-IPs
+- *token validator*-Berechtigung, erlaubt die Bestätigung kritischer Operationen auf Managed Bare Metal Diensten
+- *IP*-Berechtigung, erlaubt Zugriff auf das "OVH Network Plugin"
+- *Failover-IP*-Berechtigung, erlaubt die Verwaltung von mit dem Managed Bare Metal Dienst verbundenen Failover-IPs
 - Status (Diagnose), zeigt an, ob der Benutzer erfolgreich erstellt wurde
 
 Wenn Sie rechts in der Tabelle auf den Button `...`{.action} klicken, werden Ihnen mehrere Optionen angezeigt:
 
 - Einträge dieser Tabelle bearbeiten (die zuvor eingesehenen Berechtigungen ändern, eine E-Mail-Adresse oder Telefonnummer hinzufügen)
-- Berechtigungen des Benutzers je Datacenter anzeigen und bearbeiten
+- Berechtigungen des Benutzers je "Datacenter" anzeigen und bearbeiten
 - Benutzerpasswort ändern
 - Benutzer löschen
 
-Nachfolgend sehen Sie die Berechtigungen je Datacenter im Detail:
+Nachfolgend sehen Sie die Berechtigungen je "Datacenter" im Detail:
 
 ![Benutzerrechte je Datacenter](images/controlpanel7-e.png){.thumbnail}
 
-- `vSphere-Zugriff`{.action} \- hierbei handelt es sich um die globalen Rechte des Benutzers für vSphere:
+- `vSphere-Zugriff`{.action}: Hierbei handelt es sich um die globalen Rechte des Benutzers für vSphere:
 
 |Berechtigung|Beschreibung|
 |---|---|
@@ -121,7 +118,7 @@ Nachfolgend sehen Sie die Berechtigungen je Datacenter im Detail:
 |Lesen/Schreiben|lesender und schreibender Zugriff|
 |Operator|den OVHcloud Administratoren vorbehaltener Zugriff|
 
-- `Zugriff auf VM Network`{.action} \- hierbei handelt es sich um die Rechteverwaltung für den öffentlichen Netzwerkbereich (im vSphere Interface als `VM Network` bezeichnet):
+- `Zugriff auf VM Network`{.action}: Hierbei handelt es sich um die Rechteverwaltung für den öffentlichen Netzwerkbereich (im vSphere Interface als `VM Network` bezeichnet):
 
 |Berechtigung|Beschreibung|
 |---|---|
@@ -129,7 +126,7 @@ Nachfolgend sehen Sie die Berechtigungen je Datacenter im Detail:
 |Nur Lesen|nur lesender Zugriff|
 |Operator|erlaubt die Konfiguration virtueller Maschinen (VMs) im öffentlichen Netzwerk|
 
-- `Hinzufügen von Ressourcen`{.action} \- dieser Button erlaubt die Vergabe bzw. das Entziehen der Berechtigung, zusätzliche Ressourcen über das OVH Plugin im vSphere Client hinzuzufügen.
+- `Hinzufügen von Ressourcen`{.action}: Dieser Button erlaubt die Vergabe bzw. das Entziehen der Berechtigung, zusätzliche Ressourcen über das OVH Plugin im vSphere Client hinzuzufügen.
 
 
 #### Sicherheit
@@ -144,8 +141,7 @@ Sie können die Elemente im oberen Teil sowie in der Tabelle mit den Buttons rec
 
 - Anzahl der erlaubten Simultanverbindungen
 
-- Sicherheitseinstellungen, eingeschränkt oder nicht, mit Berechtigung je Quell-IP. Die IPs werden in der Tabelle angezeigt.
-Die IP bzw. der IP-Bereich können geändert oder gelöscht werden, indem Sie auf den Button `...`{.action} rechts neben der Tabelle klicken.
+- Sicherheitseinstellungen, eingeschränkt oder nicht, mit Berechtigung je Quell-IP. Die IPs werden in der Tabelle angezeigt. Die IP bzw. der IP-Bereich können geändert oder gelöscht werden, indem Sie auf den Button `...`{.action} rechts neben der Tabelle klicken.
 
 > [!warning]
 >
@@ -153,12 +149,11 @@ Die IP bzw. der IP-Bereich können geändert oder gelöscht werden, indem Sie au
 > 
 
 
-- Die Abmeldungseinstellungen bestimmen, ob der erste oder der letzte verbundene Benutzer ausgeloggt wird.
-Wenn im vorliegenden Beispiel 50 Benutzer eingeloggt sind und sich ein 51\. Benutzer anmeldet, so wird der erste, der eine Verbindung hergestellt hat, ausgeloggt.
+- Die Abmeldungseinstellungen bestimmen, ob der erste oder der letzte verbundene Benutzer ausgeloggt wird. Wenn im vorliegenden Beispiel 50 Benutzer eingeloggt sind und sich ein 51\. Benutzer anmeldet, so wird der erste, der eine Verbindung hergestellt hat, ausgeloggt.
 
 Es ist eine zweite Tabelle für die Option *VM Encryption* verfügbar.
 
-Weitere Informationen zu dieser Option finden Sie in dieser [Anleitung](../vm-encrypt/).
+Weitere Informationen zu dieser Option finden Sie in [dieser Anleitung](../vm-encrypt/).
 
 #### Operationen
 
@@ -166,9 +161,9 @@ In diesem Tab finden Sie die aktuell auf Ihrer Infrastruktur ausgeführten Opera
 
 ![Operationen](images/controlpanel9-e.png){.thumbnail}
 
-Sie können hier nachsehen, ob eine Operation fehlgeschlagen ist, Wartungsarbeiten geplant sind, ...
+Sie können hier nachsehen, ob eine Operation fehlgeschlagen ist, Wartungsarbeiten geplant sind, etc.
 
-Sie können das Datum für eine Wartungsarbeit ändern, indem Sie rechts in der Tabelle auf den Button `...`{.action} klicken.
+Sie können das Datum für einen Eingriff ändern, indem Sie rechts in der Tabelle auf den Button `...`{.action} klicken.
 
 > [!primary]
 >
@@ -185,21 +180,21 @@ Im Tab `Windows-Lizenz`{.action} können Sie Windows-SPLA-Lizenzen auf Ihrer Man
 Die Preisübersicht hierzu finden Sie [hier](https://www.ovhcloud.com/de/managed-bare-metal/options/){.external}.
 
 
-
 ### Datacenter-Ansicht
 
-Eine Managed Bare Metal kann mehrere Datacenter enthalten. Wenn Sie auf Ihre Managed Bare Metal klicken, sehen Sie Folgendes:
+Eine Managed Bare Metal kann mehrere virtuelle Rechenzentren umfassen. Die linke Navigationsleiste listet diese auf, wenn Sie einen Managed Bare Metal Dienst auswählen. Klicken Sie auf ein "Datacenter", um dessen spezifische Verwaltungsseite zu öffnen.
 
 ![Datacenter-Ansicht](images/controlpanel11-e.png){.thumbnail}
 
-Sie können den Namen Ihres Datacenters ändern oder eine angepasste Beschreibung hinzufügen, indem Sie auf das Stift-Symbol klicken.
+Sie können den Namen Ihres "Datacenters" ändern oder eine angepasste Beschreibung hinzufügen, indem Sie auf das Stift-Symbol klicken.
 
-Hier finden Sie die Hauptinformationen zu Ihrem Datacenter, seine Reihe sowie die Anzahl der Hosts und Datastores.
+#### Allgemeine Informationen
 
+Hier finden Sie die Hauptinformationen zu Ihrem "Datacenter", den Diensttyp sowie die Anzahl der Hosts und Datastores.
 
 #### Hosts
 
-Hier werden die Hosts Ihres Datacenters angezeigt:
+Hier werden die Hosts Ihres "Datacenters" angezeigt:
 
 ![Hosts](images/controlpanel12-e.png){.thumbnail}
 
