@@ -84,7 +84,7 @@ Next, access the VNC console on the manager:
 
 Click on the `...`{.action} button next to the corresponding instance and then click on `Instance details`{.action}. 
 
-![acces instance](images/accessinstance.png){.thumbnail} 
+![acces instance](images/instancedetails.png){.thumbnail} 
 
 Switch to the tab VNC console. At the command prompt, enter your login as **root** and your password.
 
