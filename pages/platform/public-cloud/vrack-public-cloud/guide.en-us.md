@@ -595,5 +595,8 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Go further
 
+[Configuring vRack for Public Cloud using OVHcloud APIv6](../public-cloud-vrack-apiv6)
+
+[Creating multiple vLANs in a vRack](../../dedicated/multiple-vlans/)
 
 Join our community of users on <https://community.ovh.com/en/>.
