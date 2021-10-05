@@ -107,7 +107,6 @@ Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-h
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
-
 ### « Impossible de se connecter à la base de données » <a name="supprimer-le-module"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
@@ -121,25 +120,6 @@ Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
 
 Puis relancez l'installation d'un nouveau module.
-
-### (les dns ne pointent pas)
-
-Ce message indique que votre domaine n'est pas relié à votre hébergement via sa [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns), ce qui empêche l'installation de votre [module en 1 clic](../modules-en-1-clic/).
-
-Dans cette situation, modifiez votre [zone DNS](../../domains/editer-ma-zone-dns/#acceder-a-la-gestion-dune-zone-dns-ovhcloud) ou vos [serveurs DNS](../../domains/generalites-serveurs-dns/), patientez 48 heures (Temps de propagation des changements DNS) puis relancez l'installation de votre [module en 1 clic](../modules-en-1-clic/).
-
->[!warning]
->
-> La modification
-
-### (Le préfixe de la base de données existent déjà)
-> TODO
-
-### (les DNS du domaine ne pointent pas sur l'hébergement)
-> TODO
-
-### (base de données en lecture seule)
-> TODO
 
 ### Votre nom de domaine n'est pas proposé lors de la création du module
 
