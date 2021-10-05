@@ -102,7 +102,7 @@ Once the vRack is activated, you will find this service under the name "pn-xxxxx
 
 #### From the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Public Cloud` section{.action} and select the Public Cloud project of your choice at the top left.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Public Cloud`{.action} section and select the Public Cloud project of your choice at the top left.
 
 ![project selection](images/vrack1.png){.thumbnail}
 
@@ -114,7 +114,7 @@ Click the `To get started, create a vRack`{.action} button (2). You will then ha
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
-To continue configuring the vRack from the OVHcloud Control Panel, skip to the section [Create a VLAN from the OVHcloud Control Panel](./#create-a-vlan-from-the-ovhcloud-control-space) of this guide.
+To continue configuring the vRack from the OVHcloud Control Panel, skip to the section [Create a VLAN from the OVHcloud Control Panel](./#create-a-vlan-from-the-ovhcloud-control-panel) of this guide.
 
 #### From the OVHcloud API
 
@@ -377,7 +377,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 
 ##### **From the OVHcloud Control Panel**
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Public Cloud` section{.action} and select the relevant Public Cloud project in the top left.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Public Cloud`{.action} section and select the relevant Public Cloud project in the top left.
 
 Click on `Instances`{.action} in the left side menu and then on `...`{.action} to the right of the instance concerned. Select `Instance details`{.action}.
 
