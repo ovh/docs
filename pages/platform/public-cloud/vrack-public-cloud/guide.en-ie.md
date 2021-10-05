@@ -6,7 +6,7 @@ section: vRack
 order: 1
 ---
 
-**Last updated 27th July 2020**
+**Last updated 4th October 2021**
 
 ## Objective
 
@@ -105,11 +105,11 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 ![select project](images/vrack1.png){.thumbnail}
 
-Click on `Private network`{.action} in left-hand navigation bar.
+Click on `Private network`{.action} (1) in left-hand navigation bar.
 
-![Private Network](images/vrack2.png){.thumbnail}
+![Private Network](images/vrack2021-02.png){.thumbnail}
 
-Click on the button `To get started, create a vRack`{.action}. You will then have to choose to create a new vRack or to use an existing vRack. In our example, we will create a new vRack. Once you have made your choice, click `Create`{.action}.
+Click on the button `To get started, create a vRack`{.action} (2). You will then have to choose to create a new vRack or to use an existing vRack. In our example, we will create a new vRack. Once you have made your choice, click `Create`{.action}.
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
@@ -129,7 +129,7 @@ This can be useful in order to segment your vRack between multiple virtual netwo
 
 In the OVHcloud Control Panel, you will be able to assign the VLAN of your choice, but you will not be able to customise the IP range. vRack will be active in all zones.
 
-Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 for example), deployment zone, DCHP, Gateway, etc.
+Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 for example), deployment zone, DHCP, Gateway, etc.
 
 > [!primary]
 > On dedicated servers, you are using VLAN 0 by default. The OpenStack infrastructure requires to specify your VLAN ID directly at the infrastructure level.
@@ -148,7 +148,7 @@ Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 
 
 Once a vRack exists, navigate to the `Private Network`{.action} section. 
 
-![VLAN creation](images/vrack4.png){.thumbnail}
+![VLAN creation](images/vrack2021-03.png){.thumbnail}
 
 Click on the button `Add Private Network`{.action}. The following page allows you to customise multiple settings.
 
@@ -360,7 +360,7 @@ nova list
 
 #### In case of an existing instance
 
-The OVHcloud Control Panel allows you to attach an instance to a private network but does not offer advanced network interface configuration. If you want to customise further, you will need to manage them either through the OVHcloud APIv6, through the OpenStack APIs or via Horizon.
+The OVHcloud Control Panel allows you to attach an instance to one or more private networks but does not offer advanced network interface configuration. If you want to customise further, you will need to manage them either through the OVHcloud APIv6, through the OpenStack APIs or via Horizon.
 
 The required action is simply to add a new network interface to your server, in addition to the existing one.
 
@@ -376,15 +376,15 @@ For example, if you have a public interface *eth0*, you will add the interface *
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
-Click on `Instances`{.action} in the left-hand navigation bar and then on `...`{.action} to the right of the indstance. Select `Instance details`{.action}.
+Click on `Instances`{.action} in the left-hand navigation bar and then on `...`{.action} to the right of the instance. Select `Instance details`{.action}.
 
-![detail instance](images/vrack7.png){.thumbnail}
+![detail instance](images/vrack2021.png){.thumbnail}
 
 This will open the instance dashboard. Click on the `...`{.action} button in the box "Networks", next to "Private networks", and select `Attach a network`{.action}.
 
-![attach network](images/vrack8.png){.thumbnail}
+![attach network](images/vrack2021-01.png){.thumbnail}
 
-In the popup window that appears, select the private network to attach to your instance and click `Attach`{.action}.
+In the popup window that appears, select the private network(s) to attach to your instance and click `Attach`{.action}.
 
 ![attach network](images/vrack9.png){.thumbnail}
 
