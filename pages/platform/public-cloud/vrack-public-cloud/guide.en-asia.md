@@ -137,7 +137,7 @@ From the OVHcloud API, you can customize all settings: IP range (e.g. 10.0.0.0/1
 >
 > Unlike dedicated servers, there is no need to tag a VLAN directly on a Public Cloud instance.
 >
-> For more information about vRack VLAN management for dedicated servers, see this guide: [Create multiple vLANs in vRack](../../dedicated/multiple-vlans/)
+> For more information about vRack VLAN management for dedicated servers, see this guide: [Creating multiple vLANs in a vRack](../../dedicated/multiple-vlans/).
 
 > [!warning]
  > Because vRack is managed at the OVHcloud infrastructure level, you can only administer it through the OVHcloud Control Panel and the OVHcloud API.
@@ -157,9 +157,9 @@ Click on the button `Add Private Network`{.action}. The following page allows yo
 
 If you select the `Set a VLAN ID` option, you will need to choose a VLAN ID number between 2 and 4,000.
 
-If you have not ticked the box `Set VLAN`, VLAN 0 will be set automatically.
+If you have not ticked the box `Set a VLAN ID`, VLAN 0 will be set automatically.
 
-In case you need to be able to communicate with dedicated servers in this VLAN, please consult the guide [Create multiple vLANs in the vRack](../../dedicated/multiple-vlans/).
+In case you need to be able to communicate with dedicated servers in this VLAN, please consult the guide [Create multiple vLANs in a vRack](../../dedicated/multiple-vlans/).
 
 The default DHCP range is 10.0.0.0/16. To change this IP range, you must use the OVHcloud API.
 
@@ -362,7 +362,7 @@ nova list
 
 #### In case of an existing instance
 
-The OVHcloud Control Panel allows you to attach an instance to one or more private network(s) but does not provide advanced configuration of network interfaces. If you want to further customize these, you will need to manage them either through the OVHcloud APIv6, through the OpenStack APIs or via Horizon.
+The OVHcloud Control Panel allows you to attach an instance to one or more private networks but does not provide advanced configuration of network interfaces. If you want to further customize these, you will need to manage them either through the OVHcloud APIv6, through the OpenStack APIs or via Horizon.
 
 The action will be to simply add a new network interface to your server, in addition to the existing one.
 
