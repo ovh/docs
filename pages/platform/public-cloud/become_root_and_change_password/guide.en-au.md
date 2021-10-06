@@ -16,7 +16,8 @@ To perform certain administrative functions on your server (e.g. installing pack
 **This guide will show you how to become the root user and create a password for the root account.**
 
 ## Requirements
-a [Public Cloud instance](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+
+* a [Public Cloud instance](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
 * access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 
 ## Instructions
@@ -85,7 +86,7 @@ Click on the `...`{.action} button next to the corresponding instance and then c
 
 ![acces instance](images/instancedetails.png){.thumbnail}
 
-Switch to the tab VNC console. At the command prompt, enter your login as **root** and your password.
+Switch to the tab `VNC console`{.action}. At the command prompt, enter your login as **root**, then enter your password.
 
 ![vnc](images/vnc.png){.thumbnail} 
 

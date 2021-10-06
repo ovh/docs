@@ -86,7 +86,7 @@ Click on the `...`{.action} button next to the corresponding instance and then c
 
 ![acces instance](images/instancedetails.png){.thumbnail} 
 
-Switch to the tab VNC console. At the command prompt, enter your login as **root** and your password.
+Switch to the tab `VNC console`{.action}. At the command prompt, enter your login as **root**, then enter your password.
 
 ![vnc](images/vnc.png){.thumbnail} 
 
