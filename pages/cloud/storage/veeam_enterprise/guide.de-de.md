@@ -5,7 +5,7 @@ excerpt: 'Erfahren Sie hier, wie Sie einen Veeam Backup & Replication Server mit
 section: Veeam
 ---
 
-**Letzte Aktualisierung am 22.09.2021**
+**Letzte Aktualisierung am 04.10.2021**
 
 ## Ziel
 
