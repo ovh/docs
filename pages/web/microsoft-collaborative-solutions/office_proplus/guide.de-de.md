@@ -2,7 +2,7 @@
 title: Remote Desktop mit Microsoft 365 Apps verwenden
 legacy_guide_number: 2339
 slug: office365-proplus-remotedesktopdienste
-excerpt: So installieren und verwenden Sie Microsoft 365 Apps auf einem entfernten Desktop (RDS) oder einem geteilten Computer
+excerpt: Erfahren Sie hier, wie Sie Microsoft 365 Apps auf einem Remote- (RDS) oder einem gemeinsam genutzten Desktop verwenden
 section: Office
 order: 4
 ---
@@ -15,18 +15,18 @@ order: 4
 
 ## Ziel
 
-Sie möchten die im Microsoft 365 Apps Paket enthaltene Software-Suite auf einer entfernten oder geteilten Maschine verwenden. Dazu ist das in dieser Anleitung beschriebene Installationsverfahren anzuwenden.
+Sie haben die Möglichkeit, die im Microsoft 365 Apps Paket enthaltene Software-Suite auf einem Remote-Desktop oder gemeinsam genutzten Gerät zu verwenden. Dazu ist das in dieser Anleitung beschriebene Installationsverfahren anzuwenden.
 
-**So installieren und verwenden Sie Microsoft 365 Apps auf einem entfernten Desktop (RDS) oder einem geteilten Computer.**
+**Diese Anleitung erklärt, wie Sie Microsoft 365 Apps auf einem Remote- (RDS) oder einem gemeinsam genutzten Computer verwenden.**
 
 ## Voraussetzungen
 
-- Sie verfügen über eine Microsoft 365 apps for Enterprise Lizenz (früher Office 365 ProPlus)
-- Microsoft Windows über einen Remote-Desktop (**R**emote **D**esktop **S**ervices) verwenden
+- Sie verfügen über eine Microsoft 365 Apps for enterprise Lizenz (ehemals Office 365 ProPlus).
+- Sie verwenden Microsoft Windows über einen Remote-Desktop (**R**emote **D**esktop **S**ervices).
 
 > [!warning]
 >
-> Die Microsoft 365 Apps for Business Lizenz ist mit der Verwendung über RDS und geteilten Computern nicht kompatibel.
+> Die Lizenz Microsoft 365 Apps for business ist mit der Verwendung über RDS und geteilten Computern nicht kompatibel.
 > 
 
 ## In der praktischen Anwendung
@@ -37,55 +37,54 @@ Diese Anleitung basiert auf den Informationen, die in der Microsoft [Bereitstell
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 > 
 
 ### Methode 1: Manuelle Konfiguration
 
-Die Installation eines Microsoft 365 Apps for Enterprise Angebots auf einem geteilten Computer mit Remotedesktop-Diensten (RDS) funktioniert nicht ohne eine bestimmte Konfiguration. Ohne diese Einstellung erhalten Sie folgende Nachricht:
+Die Installation von Microsoft 365 Apps for enterprise auf einem geteilten Computer mit Remote Desktop (RDS) funktioniert nicht ohne eine bestimmte Konfiguration. Ohne diese erhalten Sie folgende Nachricht:
 
 ![E-Mails](images/4717.png){.thumbnail}
 
 > [!primary]
 >
-> Wenn Sie Ihre Office 365 Proplus Lizenz bereits installiert haben, müssen Sie sich **entledigen**.
+> Wenn Sie bereits die Lizenz Office 365 Proplus installiert haben, müssen Sie diese erst **entfernen**.
 >
 
-- Wenn Sie Ihre Dessert-Lizenz haben, [klicken Sie bitte hier](https://www.microsoft.com/en-us/download/details.aspx?id=49117){.external}, um das Deployment-Tool Microsoft 365 herunterzuladen.
+- Nach dem Entfernen [klicken Sie hier](https://www.microsoft.com/en-gb/download/details.aspx?id=49117){.external}, um das Microsoft 365 Deployment-Tool herunterzuladen.
 
 
-- **Führen** Sie das Deployment-Tool auf Ihrer Maschine aus.
+- **Starten** Sie das Deployment-Tool.
 
 
-- Bearbeiten Sie die `configuration.xml`.
+- Bearbeiten Sie die Datei `configuration.xml`.
 
 ![365](images/4720.png){.thumbnail}
 
-Bearbeiten Sie die Datei `configuration.xml` und kommentieren Sie folgende Zeilen:
+Bearbeiten Sie die Datei `configuration.xml` und entkommentieren Sie folgende Zeilen:
 
 ```bash
 Display Level="None" AcceptEULA="True"
 Property Name="SharedComputerLicensing" Value="1"
 ```
 
-Wenn diese Zeilen nicht existieren, können Sie sie in die Datei kopieren/einfügen.
+Wenn diese Zeilen dort nicht existieren, können Sie sie kopieren und einfügen.
 
-- Speichern Sie die vorgenommenen Änderungen. Öffnen Sie anschließend ein Powershell-Terminal und führen Sie beide Befehle aus dem Ordner aus, in dem sich die Datei `configuration.xml befindet:
+- Speichern Sie die vorgenommenen Änderungen. Öffnen Sie anschließend ein Powershell-Terminal und führen Sie aus dem Ordner, in dem sich die Datei `configuration.xml` befindet die folgenden Befehle aus:
 
 ```powershell
 ./setup.exe /download configuration.xml
 ```
 
-und
-
 ```powershell
 ./setup.exe /configure configuration.xml
 ```
+
 > [!primary]
 >
-> Die Ausführung dieser Bestellungen kann einige Minuten in Anspruch nehmen.
+> Die Ausführung kann einige Minuten in Anspruch nehmen.
 
-- Öffnen Sie den Editor des Windows-Registers, indem Sie "Regedit" ausführen, und folgen Sie dem folgenden Pfad:
+- Öffnen Sie den Windows Registry-Editor, indem Sie "Regedit" ausführen, und gehen Sie zu folgendem Pfad:
 
 ```bash
 HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration
@@ -96,7 +95,8 @@ HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration
 ```bash
 SharedComputerLicensing
 ```
-Stellen Sie sicher, dass er eins `hat`. Wenn dieser Schlüssel nicht existiert, können Sie ihn erstellen.
+
+Stellen Sie sicher, dass er den Wert `1` hat. Wenn dieser Schlüssel nicht existiert, können Sie ihn erstellen.
 
 ![E-Mails](images/4723.png){.thumbnail}
 
@@ -104,12 +104,12 @@ Stellen Sie sicher, dass er eins `hat`. Wenn dieser Schlüssel nicht existiert, 
 
 ![E-Mails](images/4724.png){.thumbnail}
 
-- Sie können nun Ihre Office 365 Suite von Ihrem geteilten Computer aus unter Verwendung der Remotedesktop-Dienste (RDS) verwenden.
+- Sie können nun Ihre Office 365 Suite von Ihrem geteilten Computer aus unter Verwendung der Remote Desktop-Dienste (RDS) nutzen.
 
 
 ![E-Mails](images/4726.png){.thumbnail}
 
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="gofurther"></a>
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
