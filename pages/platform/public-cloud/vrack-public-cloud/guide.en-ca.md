@@ -6,7 +6,7 @@ section: vRack
 order: 1
 ---
 
-**Last updated 4th October 2021**
+**Last updated 5th October 2021**
 
 ## Objective
 
@@ -102,7 +102,7 @@ Once the vRack is activated, you will find this service under the name "pn-xxxxx
 
 #### From the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Public Cloud` section{.action} and select the Public Cloud project of your choice at the top left.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Public Cloud`{.action} section and select the Public Cloud project of your choice at the top left.
 
 ![project selection](images/vrack1.png){.thumbnail}
 
@@ -114,7 +114,7 @@ Click the `To get started, create a vRack`{.action} button (2). You will then ha
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
-To continue configuring the vRack from the OVHcloud Control Panel, skip to the section [Create a VLAN from the OVHcloud Control Panel](./#create-a-vlan-from-the-ovhcloud-control-space) of this guide.
+To continue configuring the vRack from the OVHcloud Control Panel, skip to the section [Create a VLAN from the OVHcloud Control Panel](./#create-a-vlan-from-the-ovhcloud-control-panel) of this guide.
 
 #### From the OVHcloud API
 
@@ -172,7 +172,7 @@ In the next step, choose the regions you want, enter a name for your private net
 
 #### Create a VLAN from the OVHcloud APIv6
 
-To create a VLAN from the OVHcloud APIv6, click [here](../public-cloud-vrack-apiv6/) to view the specific guide.
+To create a VLAN from the OVHcloud APIv6, click [here](../public-cloud-vrack-apiv6/#step-3-create-a-vlan-on-the-vrack_1) to view the specific guide.
 
 
 ### Step 3: Add an instance to the vRack
@@ -182,7 +182,7 @@ There are two possible scenarios:
 - The instance to be integrated does not exist yet.
 - An existing instance needs to be added to the vRack.
 
-#### In case of a new instance
+#### Cases of a new instance
 
 ##### **From the OVHcloud Control Panel** 
 
@@ -197,11 +197,11 @@ If you need assistance, follow this guide first: [Creating your first Public Clo
 
 ##### **From the OVHcloud API**
 
-Please refer to [this section](../public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) of the corresponding guide.
+Please refer to [this section](../public-cloud-vrack-apiv6/#step-4-adding-an-instance-to-the-vrack_1) of the corresponding guide.
 
 ##### **From the OpenStack API**
 
-To use the OpenStack APIs, if you have not already done so, consider preparing your work environment as indicated in the [first part of this guide](./#api-openstack).
+To use the OpenStack APIs, if you have not already done so, consider preparing your work environment as indicated in the [first part of this guide](./#openstack-api).
 
 The following steps are necessary to create an instance directly in the vRack.
 
@@ -361,7 +361,7 @@ nova list
 +--------------------------------------+--------------------+--------+------------+-------------+--------------------------------------------------+
 ```
 
-#### In case of an existing instance
+#### Cases of an already existing instance
 
 The OVHcloud Control Panel allows you to attach an instance to one or more private networks but does not provide advanced configuration of network interfaces. If you want to further customize these, you will need to manage them either through the OVHcloud APIv6, through the OpenStack APIs or via Horizon.
 
@@ -377,7 +377,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 
 ##### **From the OVHcloud Control Panel**
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Public Cloud` section{.action} and select the relevant Public Cloud project in the top left.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Public Cloud`{.action} section and select the relevant Public Cloud project in the top left.
 
 Click on `Instances`{.action} in the left side menu and then on `...`{.action} to the right of the instance concerned. Select `Instance details`{.action}.
 
@@ -393,11 +393,11 @@ In the popup window that appears, select the private network(s) to attach to you
 
 ##### **Managing network interfaces with the OVHcloud APIv6**
 
-Please refer to [this section](../public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) of the corresponding guide.
+Please refer to [this section](../public-cloud-vrack-apiv6/#cases-of-an-already-existing-instance_2) of the corresponding guide.
 
 ##### **Managing network interfaces with OpenStack Horizon**
 
-Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/){.external} using the method specified in the [first part of this guide](./#interface-horizon).
+Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/){.external} using the method specified in the [first part of this guide](./#horizon-interface).
 
 Select your region:
 
@@ -442,7 +442,7 @@ Select the interface you want to remove and confirm:
 
 ##### **Managing network interfaces from the OpenStack API**
 
-To use the OpenStack APIs, if you have not already done so, consider preparing your working environment as indicated in the [first part of this guide](./#api-openstack).
+To use the OpenStack APIs, if you have not already done so, consider preparing your working environment as indicated in the [first part of this guide](./#openstack-api).
 
 The following steps are necessary to integrate an existing instance into the vRack.
 
@@ -601,3 +601,4 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 [Creating multiple vLANs in a vRack](../../dedicated/multiple-vlans/)
 
 Join our community of users on <https://community.ovh.com/en/>.
+
