@@ -5,7 +5,7 @@ excerpt: 'Cómo instalar un servidor Veeam Backup & Replication con Veeam Enterp
 section: 'Veeam Backup & Replication'
 ---
 
-**Última actualización: 06/10/2021**
+**Última actualización: 05/10/2021**
 
 ## Objetivo
 
