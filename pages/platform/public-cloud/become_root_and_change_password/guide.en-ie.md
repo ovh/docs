@@ -7,7 +7,7 @@ section: 'Getting started'
 order: 5
 ---
 
-**Last updated 5th October 2021**
+**Last updated 6th October 2021**
 
 ## Objective
 
@@ -24,7 +24,7 @@ To perform certain administrative functions on your server (e.g. installing pack
 
 > [!primary]
 >
-This guide assumes that the default user is called 'admin'.
+This guide assumes that the default user is called "admin".
 >
 
 ### Setting the root password <a name="settingtherootpassword"></a>
@@ -74,11 +74,11 @@ To update your server's operating system, type the following command at the comm
 ~$ sudo vi /etc/hosts.allow
 ```
 
-### Enable root login and Password authentication
+### Enable root login and password authentication
 
 #### For connections via the built-in VNC console in the OVHcloud Control Panel
 
-- [First, set the root password](#settingtherootpassword)
+First, [set the root password](#settingtherootpassword)
 
 Next, access the VNC console on the manager:
 
@@ -90,9 +90,9 @@ Switch to the tab VNC console. At the command prompt, enter your login as **root
 
 ![vnc](images/vnc.png){.thumbnail} 
 
-#### For connections using linux terminals
+#### For connections using Linux terminals
 
-- [First, set the root password](#settingtherootpassword)
+First, [set the root password](#settingtherootpassword)
 
 Next, enable root login and password authentication in your **sshd_config** file:
 
@@ -102,7 +102,7 @@ Next, enable root login and password authentication in your **sshd_config** file
 ~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 ```
 
-Restart the SSH service
+Restart the SSH service:
 
 ```
 ~$ service sshd restart
@@ -112,7 +112,7 @@ Once done, you should be able to access your server with the root user and passw
 
 #### For connections using Putty
 
-- [First, set the root password](#settingtherootpassword)
+First, [set the root password](#settingtherootpassword)
 
 Next, enable root login and password authentication in your **sshd_config** file:
 
@@ -122,13 +122,13 @@ Next, enable root login and password authentication in your **sshd_config** file
 ~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 ```
 
-Restart the SSH service
+Restart the SSH service:
 
 ```
 ~$ service sshd restart
 ```
 
-In the Putty authentication agent (pageant key list) remove your private SSH key.
+In the Putty authentication agent (pageant key list), remove your private SSH key.
 
 ![Remove private key](images/pageantkeylist.png){.thumbnail}
 
