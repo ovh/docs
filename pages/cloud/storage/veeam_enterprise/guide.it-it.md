@@ -5,7 +5,7 @@ excerpt: 'Come configurare un server Veeam Backup & Replication con Veeam Enterp
 section: 'Veeam Backup & Replication'
 ---
 
-**Ultimo aggiornamento: 22/09/2021**
+**Ultimo aggiornamento: 06/10/2021**
 
 ## Obiettivo
 
@@ -128,13 +128,13 @@ Tramite l'interfaccia grafica utente:
 2. Nel menu a sinistra e nella colonna a sinistra, clicca su `Component Services`{.action}, poi `Computers`{.action}, poi `My Computer`{.action}.
 3. A destra, sotto la scheda `Actions`{.action}, clicca su `More Actions`{.action} e poi su `Properties`{.action}.
 4. Seleziona `COM Security`{.action} e sotto la seconda sezione `Launch and Activation Permissions`{.action}, clicca su `Edit Limits`{.action}.
-5. Clicca sull'utente `OVHVeeamEntreprise`{.action} e attiva tutti i permessi.
+5. Clicca sull'utente `OVHVeeamEnterprise`{.action} e attiva tutti i permessi.
 
 ![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
 
 6. Clicca su `OK`{.action} per confermare e `Apply`{.action} per validare le modifiche.
 
-Il tuo utente OVHVeeamEntreprise è accessibile in locale e a distanza.
+Il tuo utente OVHVeeamEnterprise è accessibile in locale e a distanza.
 
 #### Registra il server Veeam Backup & Replication
 

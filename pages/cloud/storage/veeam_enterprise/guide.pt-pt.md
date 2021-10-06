@@ -5,7 +5,7 @@ excerpt: 'Saiba como instalar um servidor Veeam Backup & Replication com Veeam E
 section: Veeam
 ---
 
-**Última atualização: 23/09/2021**
+**Última atualização: 06/10/2021**
 
 ## Sumário
 
@@ -128,13 +128,13 @@ Através da interface gráfica de utilizador:
 2. No menu à esquerda e seguindo a arborescência, clique em `Component Services`{.action}, depois em `Computers`{.action} e depois em `My Computer`{.action}.
 3. À direita, no separador `Actions`{.action}, clique em `More Actions`{.action} e, a seguir, em `Properties`{.action}.
 4. Aceda à `COM Security`{.action} e, sob a segunda opção `Launch and Activation Permissions`{.action}, clique em `Edit Limits`{.action}.
-5. Clique no utilizador `OVHVeeamEntreprise`{.action} e ative todas as permissões.
+5. Clique no utilizador `OVHVeeamEnterprise`{.action} e ative todas as permissões.
 
 ![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
 
 6. Clique em `OK`{.action} para confirmar e `Apply`{.action} para validar as alterações.
 
-O seu utilizador OVHVeeamEntreprise está agora acessível local e à distância.
+O seu utilizador OVHVeeamEnterprise está agora acessível local e à distância.
 
 #### Registar o servidor Veeam Backup & Replication
 

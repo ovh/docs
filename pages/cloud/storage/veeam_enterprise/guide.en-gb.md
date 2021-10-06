@@ -129,13 +129,13 @@ Via the graphical user interface:
 2. On the left menu and following the tree structure, click on `Component Services`{.action}, then on `Computers`{.action}, then on `My Computer`{.action}.
 3. On the right, under the `Actions`{.action} tab, click on `More Actions`{.action}, then on `Properties`{.action}.
 4. Go to `COM Security`{.action}, underneath the second section `Launch and Activation Permissions`{.action}, click on `Edit Limits`{.action}.
-5. Select the `OVHVeeamEntreprise`{.action} user and enable all permissions.
+5. Select the `OVHVeeamEnterprise`{.action} user and enable all permissions.
 
 ![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
 
 6. Click on `OK`{.action} to confirm and on `Apply`{.action} to validate the changes.
 
-Your OVHVeeamEntreprise user is now accessible locally and remotely.
+Your OVHVeeamEnterprise user is now accessible locally and remotely.
 
 #### Step 3: Register the Veeam Backup & Replication server
 

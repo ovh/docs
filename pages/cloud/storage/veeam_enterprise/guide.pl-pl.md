@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak zainstalować serwer Veeam Backup & Replication z Ve
 section: Veeam
 ---
 
-**Ostatnia aktualizacja z dnia 22-09-2021**
+**Ostatnia aktualizacja z dnia 06-10-2021**
 
 ## Wprowadzenie
 
@@ -120,7 +120,7 @@ W oknie **Security** możesz sprawdzić, czy konto zostało utworzone.
 
 #### Zezwolenia na wykonywanie i aktywację
 
-Użytkownik OVHVeeamEntreprise jest dostępny tylko lokalnie, dlatego aby włączyć zdalne połączenie, należy dodać uprawnienia do graficznego interfejsu użytkownika Windows.
+Użytkownik OVHVeeamEnterprise jest dostępny tylko lokalnie, dlatego aby włączyć zdalne połączenie, należy dodać uprawnienia do graficznego interfejsu użytkownika Windows.
 
 Za pomocą interfejsu graficznego użytkownika:
 
@@ -128,13 +128,13 @@ Za pomocą interfejsu graficznego użytkownika:
 2. W menu po lewej stronie i po drzewie kliknij `Component Services`{.action}, następnie `Computers`{.action}, a następnie `My Computer`{.action}.
 3. Po prawej stronie w zakładce `Actions`{.action} kliknij `More Actions`{.action}, a następnie `Properties`{.action}.
 4. Przejdź do `COM Security`{.action} i do drugiej opcji `Launch and Activation Permissions`{.action}, kliknij `Edit Limits`{.action}.
-5. Kliknij na użytkownika `OVHVeeamEntreprise`{.action} i aktywuj wszystkie uprawnienia.
+5. Kliknij na użytkownika `OVHVeeamEnterprise`{.action} i aktywuj wszystkie uprawnienia.
 
 ![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
 
 6. Kliknij `OK`{.action}, aby potwierdzić i `Apply`{.action}, aby zatwierdzić zmiany.
 
-Twój użytkownik OVHVeeamEntreprise jest teraz dostępny lokalnie i zdalnie.
+Twój użytkownik OVHVeeamEnterprise jest teraz dostępny lokalnie i zdalnie.
 
 #### Zarejestruj licencję dla serwera Veeam Backup & Replication
 
