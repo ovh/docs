@@ -6,7 +6,7 @@ section: Diagnostic
 order: 2
 ---
 
-**Dernière mise à jour le 24/06/2021**
+**Dernière mise à jour le 06/10/2021**
 
 ## Objectif
 
@@ -95,15 +95,17 @@ Pour relier votre domaine à un autre répertoire, cliquez sur `Modifier le doma
 
 Vous pouvez également vous connecter à votre hébergement via [FTP](../connexion-espace-stockage-ftp-hebergement-web/), puis supprimer ou déplacer le contenu du dossier, après l'avoir sauvegardé.
 
-### « Une erreur s'est produite lors du chargement des informations. (There is not enough space on your hosting (you need at least XXX MB)) »
+### « Une erreur s'est produite lors du chargement des informations. (There is not enough space on your hosting (you need at least xxx MB)) »
 
-Ce message indique que l'[espace de stockage](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement comporte trop de données et que vous devez donc en supprimer ou déplacer avant de pouvoir installer un nouveau [module en 1 clic](../modules-en-1-clic/).
+![not_enough_space](images/not_enough_space.png){.thumbnail}
 
-Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-hebergement-web/) à votre hébergement, sauvegardez localement les fichiers et dossiers non nécessaires et supprimez-les.
+Ce message indique que l'[espace de stockage](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement comporte un volume de données trop important. Vous devez donc en supprimer ou en déplacer avant de pouvoir installer un nouveau [module en 1 clic](../modules-en-1-clic/).
+
+Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-hebergement-web/) à votre hébergement, [sauvegardez localement](../mutualise-guide-utilisation-filezilla/#transfert-des-fichiers) vos données puis supprimez les fichiers qui ne sont pas nécessaires au fonctionnement de votre site.
 
 > [!primary]
 >
-> Pour toute question sur les fichiers et dossiers à supprimer pour dimininuer la quantité de données sur votre hébergement, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).<br>
+> Pour toute question sur les données à supprimer pour dimininuer la quantité de données sur votre hébergement, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).<br>
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
@@ -125,17 +127,17 @@ Puis relancez l'installation d'un nouveau module.
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}
 
-Ce message indique que votre base de données ne peut plus être modifiée, car la quantité de données qu'elle contient dépasse la limite autorisée. Il apparaît lors de l'installation d'un module en [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module).
+Votre base de données ne peut plus être modifiée car la quantité de données qu'elle contient dépasse la limite autorisée. Ce message apparaît lors de l'installation d'un module en [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module).
 
-Dans cette situation, choisissez une autre base de données lors de l'installation de votre module. Si besoin, commandez une [offre de bases de données](https://www.ovh.com/fr/hebergement-web/options-sql.xml) complémentaire.
+Dans cette situation, installez votre module en passant par le [mode « simple »](../modules-en-1-clic/#installation-simple-dun-module) ou choisissez une autre base de données lors de son installation en mode avancé. Si besoin, commandez une [offre de bases de données](https://www.ovh.com/fr/hebergement-web/options-sql.xml) complémentaire.
 
-Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [récupérez une sauvegarde](../exportation-bases-donnees/#en-pratique) de votre base puis supprimez les données inutiles.
+Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [importez une copie de votre base](../exportation-bases-donnees/#en-pratique) puis supprimez les données inutiles.
 
-> [!primary]
+> [!warning]
 >
-> Attention : supprimer des éléments dans votre base de données n’est pas anodin. Cela peut entrainer une coupure du site ou des services qui l'utilisent. 
+> **Supprimer des éléments dans votre base de données peut entraîner une coupure de votre site.**
 >
-> Pour toute question sur les manipulations à réaliser dans cette situation, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).<br>
+> Pour toute question complémentaire, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).<br>
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
@@ -143,7 +145,7 @@ Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas 
 
 ![domainenotproposed](images/domainenotproposed.png){.thumbnail}
 
-Cliquez sur l’onglet `Multisite`{.action}, puis effectuez les vérifications suivantes :
+Cliquez sur l’onglet `Multisite`{.action} puis effectuez les vérifications suivantes :
 
 |Scénario|Action à entreprendre|
 |---|---|
