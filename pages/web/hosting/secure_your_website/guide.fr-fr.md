@@ -10,7 +10,7 @@ order: 1
 
 ## Objectif
 
-
+Ce guide est destiné aux clients qui souhaitent améliorer la sécurité de leurs solutions OVHcloud. Il vous permettra d’acquérir des connaissances fondamentales visant à assurer la disponibilité de vos services Web, à protéger l'intégrité de vos données et à sécuriser l'accès à vos solutions en ligne et locales.
 
 **Découvrez comment sécuriser votre site Web.**
 
