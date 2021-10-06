@@ -35,9 +35,7 @@ If this is your first time creating a Public Cloud project, it is possible to ad
 > If you had previously created a Public Cloud project in your account and deleted it, you do not qualify to use the voucher.
 > 
 
-Give your **Project name**, read and agree to the **General terms of service.**
-
-Once done, click on the `Continue`{.action} button.
+Give your project a name, read and accept the contracts, and then click on the `Continue`{.action} button.
 
 ![name project](images/confirmvoucher.png){.thumbnail}
 
