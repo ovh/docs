@@ -35,13 +35,13 @@ Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o m
 
 Nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} seleziona l’istanza per la quale desideri modificare la modalità di fatturazione e clicca sui tre puntini a destra per aprire il relativo menu opzioni. A questo punto clicca sul pulsante `Passa al forfait mensile`{.action}:
 
-![Change billing calculation](images/switch.png){.thumbnail}
+![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
 È necessario confermare la modifica:
 
-![Confirm billing calculation change](images/switch1.png){.thumbnail}
+![Confirm billing calculation change](images/confirm_to_monthly_updated.png){.thumbnail}
 
-In seguito a questa modifica, verrà emessa una fattura per l’ammontare corrispondente al numero dei giorni rimanenti fino alla fine del mese. Pertanto, la fattura finale conterrà il costo delle ore dell’istanza del mese trascorso in configurazione oraria ed il costo del mese entrante in configurazione mensile.
+In seguito a questa modifica, riceverete immediatamente una fattura mensile pro rata. La prossima fattura comprenderà la parte di tariffa oraria del mese (il 1° del mese fino al cambiamento) e il nuovo costo mensile.
 
 
 ## Per saperne di più

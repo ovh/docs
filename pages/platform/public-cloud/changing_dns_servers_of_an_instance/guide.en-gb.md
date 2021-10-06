@@ -1,5 +1,5 @@
 ---
-title: 'Changing an instance’s DNS servers'
+title: 'Changing the DNS servers of Public Cloud instances'
 slug: change-instance-dns-servers
 excerpt: 'Find out how to change the default DNS servers on a Public Cloud instance'
 legacy_guide_number: 1985
@@ -7,17 +7,25 @@ section: Networking
 order: 12
 ---
 
-**Last updated 02nd January 2020**
+**Last updated 30th September 2021**
 
 ## Objective
 
-The default DNS server configured on instances will be the OVHcloud server ( 213.186.33.99 ). You can change this, or add another DNS server. However, the DNS servers are configured automatically with a DHCP server, and you will not be able to change it by editing the resolv.conf file.
+The default DNS server configured on instances will be the OVHcloud server (213.186.33.99). You can add a secondary one or replace this configuration with your own. However, the DNS servers are configured automatically by a DHCP server, and you will not be able to change it by editing the resolv.conf file.
 
-This guide explains the procedure to follow in order to change your instance’s DHCP configuration. You can then change your instance’s DNS servers.
+**This guide explains how to change the DHCP configuration of an instance in order to change the DNS servers.**
 
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>
 
 ## Requirements
-- a Public Cloud instance
+
+- a [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- administrative access (root) via SSH or GUI to your instance
+- basic networking and administration knowledge
 
 ## Instructions
 
@@ -26,19 +34,22 @@ This guide explains the procedure to follow in order to change your instance’s
 - Connect to your instance via SSH. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](../first-login/){.external}.
 - Make yourself the root user. To do this, you can refer to our guide on [Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/){.external}.
 
-> [!success]
+> [!primary]
 >
-> You can read the resolv.conf file to check which DNS server is configured:
+> You can check the `resolv.conf` file to verify the configured DNS servers.
 > 
-> cat /etc/resolv.conf
-> 
-> 
-> domain openstacklocal
-> search openstacklocal
-> nameserver 213.186.33.99
->
+
+```
+cat /etc/resolv.conf
+
+domain openstacklocal
+search openstacklocal
+nameserver 213.186.33.99
+```
+
 
 - Edit the /etc/dhcp/dhclient.conf file with the DNS servers you want.
+
 There are two ways of configuring this:
 
 You can add a DNS server in addition to the one we provide by default.
@@ -66,8 +77,8 @@ nameserver 213.186.33.99
 
 ### For CentOS/Fedora
 
-- Connect to your instance via SSH. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](../first-login/){.external}.
-- Make yourself the root user. To do this, you can refer to our guide on [Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/){.external}.
+- Connect to your instance via SSH. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](../first-login/).
+- Make yourself the root user. To do this, you can refer to our guide on [Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/).
 - Check the current configuration via the nmcli command:
 
 ```
@@ -93,6 +104,7 @@ DNS configuration:
         servers: 127.0.0.1 213.186.33.99
         interface: eth0
 ```
+
 - Find the name of your public interface:
 
 ```
@@ -101,17 +113,20 @@ nmcli connection show
 NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ```
+
 - Disable automatic DNS modification, and enter the DNS you want:
 
 ```
 nmcli con mod "Your interface name" ipv4.ignore-auto-dns yes
 nmcli con mod "Your interface name" ipv4.dns "127.0.0.1 213.186.33.99"
 ```
+
 - Apply the configuration:
 
 ```
 nmcli con down "Your interface name" && nmcli con up "Your interface name"
 ```
+
 - Check that the configuration has been properly applied:
 
 ```
@@ -124,9 +139,9 @@ DNS configuration:
 
 ### On Windows
 
-- Connect via remote desktop, or via the VNC console. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](../first-login/){.external}.
+- Connect via remote desktop, or via the VNC console. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](../first-login/).
 
-- Go to network configuration.
+- Open the network configuration control panel.
 
 ![change-dns-servers](images/changednsservers1.png){.thumbnail}
 
@@ -140,16 +155,15 @@ DNS configuration:
 
 > [!success]
 >
-In PowerShell, you can use the nslookup command to check which DNS server is used by default.
+In PowerShell, you can use the command `nslookup` to check which DNS server is used by default.
 >
 
 ## Go further
 
-[Logging in to an OVHcloud Public Cloud instance](../first-login/){.external}.
+[Logging in to an OVHcloud Public Cloud instance](../first-login/)
 
-[Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/){.external}.
+[Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/)
 
-[Changing the hostname of a Public Cloud instance](../changing_the_hostname_of_an_instance/){.external}.
+[Changing the hostname of a Public Cloud instance](../changing_the_hostname_of_an_instance/)
 
 Join our community of users on <https://community.ovh.com/en/>.
-

@@ -93,4 +93,4 @@ Once you have confirmed, you are reminded that the licence will be permanently d
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.

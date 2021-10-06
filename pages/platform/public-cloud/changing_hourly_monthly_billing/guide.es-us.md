@@ -5,7 +5,7 @@ slug: cambiar-modalidad-facturacion-public-cloud
 section: 'Gestión del proyecto'
 ---
 
-**Última actualización: 6/12/2019**
+**Última actualización: 21/09/2021**
 
 ## Objetivo
 
@@ -34,13 +34,13 @@ Al crear una instancia de Public Cloud, puede elegir entre una tarifa por horas 
 
 Una vez iniciada sesión en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, seleccione la instancia cuya tarifa de facturación desea cambiar en el panel de control y abra su menú de opciones haciendo clic en los tres puntos a la derecha de dicha instancia. A continuación, podrá ver el botón `«Cambiar a suscripción mensual»`{.action}:
 
-![Change billing calculation](images/switch.png){.thumbnail}
+![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
 A continuación, debe confirmar que desea cambiar su tarifa de facturación:
 
-![Confirm billing calculation change](images/switch1.png){.thumbnail}
+![Confirm billing calculation change](images/confirm_to_monthly_updated.png){.thumbnail}
 
-Una vez confirmada su elección, su siguiente factura incluirá el coste por horas de la instancia en concepto de los días restantes del mes, incluyendo el coste del mes siguiente a la tarifa plana mensual.
+Una vez confirmada su elección, recibirá de inmediato una factura mensual proporcional a la parte restante. El próximo proyecto de ley incluirá la parte de la tarifa horaria del mes (el 1er del mes hasta el cambio) y la nueva tarifa mensual.
 
 
 ## Más información
