@@ -41,7 +41,7 @@ Give your project a name, read and accept the contracts, and then click on the `
 
 Next, you will be prompted to **Register a payment method** if you do not have one already. This will be requested even if a voucher is applied. 
  
-Select a payment method and then click `Create my project`{.action} 
+Select a payment method and then click on `Create my project`{.action} 
 
 ![add card](images/pci-project-03b_2020.png){.thumbnail}
 
