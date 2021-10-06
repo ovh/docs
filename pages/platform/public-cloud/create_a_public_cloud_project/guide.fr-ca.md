@@ -27,7 +27,7 @@ Cliquez ensuite sur `Créez votre premier projet OVH Public Cloud`{.action}
 
 ![première connexion](images/firstconnection.png){.thumbnail}
 
-S’il s’agit de votre premier projet Public Cloud, il est possible d’ajouter un voucher. Les vouchers disponibles peuvent être récupérés [ici](https://www.ovhcloud.com/fr-ca/public-cloud/).
+S’il s’agit de votre premier projet Public Cloud, il est possible d’ajouter un bon d'achat. Le bon d'achat disponible peut être récupéré [ici](https://www.ovhcloud.com/fr-ca/public-cloud/).
 
 > [!primary]
 > Il est nécessaire d’utiliser le bon d’achat fourni pour votre filiale OVHcloud.
