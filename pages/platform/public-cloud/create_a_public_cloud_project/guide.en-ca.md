@@ -25,7 +25,7 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 ![first connection](images/firstconnection.png){.thumbnail}
 
-If this is your first time creating a Public Cloud project, it is possible to add a voucher. Available vouchers can be retrieved [here](https://www.ovhcloud.com/en-ca/public-cloud/).
+If this is your first time creating a Public Cloud project, it is possible to add a voucher. The available voucher can be retrieved [here](https://www.ovhcloud.com/en-ca/public-cloud/).
 
 > [!primary]
 > It is necessary to use the voucher provided for your OVHcloud branch.
