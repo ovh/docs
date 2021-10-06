@@ -39,19 +39,15 @@ Give your **Project name**, read and agree to the **General terms of service.**
 
 Once done, click on the `Continue`{.action} button.
 
-![confirm voucher](images/confirmvoucher.png){.thumbnail}
+![name project](images/confirmvoucher.png){.thumbnail}
 
 Next, you will be prompted to **Register a payment method** if you do not have one already. This will be requested even if a voucher is applied. 
+ 
+Select a payment method and then click `Create my project`{.action} 
 
-A valid payment method ensures that your service can be renewed via automatic payments. 
+![add card](images/pci-project-03b_2020.png){.thumbnail}
 
-You can register a Credit card or a Paypal account. 
-
-![add card](images/addcard.png){.thumbnail}
-
-Fill in the necessary information, then confirm by clicking on the `Add`{.action} button.
-
-Once the payment method is registered, the project creation will begin:
+Once done, the project creation will begin:
 
 ![creating project](images/creatingproject.png){.thumbnail}
 
