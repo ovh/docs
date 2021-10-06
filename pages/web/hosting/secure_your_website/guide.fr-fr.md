@@ -28,103 +28,62 @@ order: 1
 
 ## En pratique
 
-### Adopter les bonnes pratiques en matière de mots de passe
-
-#### Apprendre à générer des mots de passe complexes
-
-https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe
-
-#### Utiliser un gestionnaire de mots de passe
-
-https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe
-
-#### Autres bonnes pratiques liées aux mots de passe
-
-https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#bonnes-pratiques-pour-la-gestion-de-votre-mot-de-passe
-
-
-### Sécuriser ses solutions locales
-
-#### Vérifier ses appareils
-
-https://docs.ovh.com/fr/hosting/piratage-de-votre-site-wordpress-conseils-et-cas-dusages/#scannez-votre-poste
-
-Le premier endroit où vous devez commencer est votre environnement local. Dans de nombreux cas, la source de l’attaque/infection commence localement (par exemple, ordinateur portable, ordinateur de bureau, etc …).
-
-Assurez-vous que vous exécutez un antivirus/malware sur votre machine locale. Certains virus peuvent ne pas être supprimés par certains logiciels anti-virus. Il peut être intéressant d’en utiliser plusieurs (local et en ligne). Ce conseil se prolonge à la fois pour Windows, Mac et Linux.
-
-#### Apprendre à reconnaître les e-mails frauduleux
-
-https://docs.ovh.com/fr/customer/arnaques-fraude-phishing/
-
-#### Adopter les bonnes pratiques
-
-Ne pas enregistrer ses mots de passe dans son navigateur
-cf anssi - cybermalveillance.gouv.fr
-https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#aller-plus-loin_2
-
-
-
-### Sécuriser son espace client
-
-#### Activer la double authentification
-
-https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/
-
-#### Conserver ses codes de secours
-
-https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/#etape-2-sauvegarder-les-codes-de-secours
-
-#### Ajouter un e-mail de secours
-
-https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#ajouter-une-adresse-e-mail-de-secours
-
-#### Mettre à jour ses informations personnelles
-
-https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#comment-gerer-mes-informations-personnelles_1
-
-
-### Sécuriser les données de son hébergement
-
+### Sauvegarder ses données
+#### Testez régulièrement votre site
+Tester régulièrement en local ou sur autre serveur les sauvegardes générées (proactivité sur la corruption de bases)
+audit de sécurité ?
 #### Effectuer des sauvegardes régulièrement
-
-ransomware
+Guide sauvegarde ftp/base de données / Evoquer les plugins/modules de sauvegarde en ligne pour les cms
 https://docs.ovh.com/fr/hosting/exportation-bases-donnees/
 https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/
 https://docs.ovh.com/fr/hosting/exporter-son-site-web/
 https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/
-
 #### Mettre en place le renouvellement automatique
-
 https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/
 https://docs.ovh.com/fr/billing/faq-renouvellement-automatique-ovh/
 
-#### Utiliser une version récente de PHP
-
-https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
-
-
-### Sécuriser son site
-
-#### Effectuer régulièrement les mises à jour
-
+### Garder son site à jour
+#### Vérifiez que votre site est à jour
 https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#22-mettre-a-jour-votre-site-internet
 https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#etape-4-veiller-a-la-securite-de-votre-site_1
+#### Utilisez une version de PHP récente
+https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
 
-#### Mettre en place le https
+### Sécuriser activement son hébergement
+#### Mettez en place un parefeu applicatif sur votre site
+https://docs.ovh.com/fr/hosting/activation-pare-feu-applicatif/
+#### Vérfiez la présence de fichiers malveillants sur votre hébergment
 
+### Sécurisez les échanges de données vers vos utilisateurs
+#### Activez le https
 https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/
 https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/
+#### Protégez vos formulaires
 
-#### Activer le Parefeu applicatif
+### Adopter les bonnes pratiques en matière de mots de passe
+#### Apprenez à générer des mots de passe complexes
+https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe
+#### Utilisez un gestionnaire de mots de passe
+https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe
+#### Autres bonnes pratiques liées aux mots de passe
+https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#bonnes-pratiques-pour-la-gestion-de-votre-mot-de-passe
+Ne pas enregistrer ses mots de passe dans son navigateur
+cf anssi - cybermalveillance.gouv.fr
+https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#aller-plus-loin_2
 
-https://docs.ovh.com/fr/hosting/activation-pare-feu-applicatif/
-
-#### Mettre en place un captcha sur chaque formulaire
-
-#### Etre attentif à l'installation de plugins et templates
-
-
+### Sécuriser son environnement local et l'accès à son espace client OVHcloud
+#### Vérifiez vos appareils
+https://docs.ovh.com/fr/hosting/piratage-de-votre-site-wordpress-conseils-et-cas-dusages/#scannez-votre-poste
+Le premier endroit où vous devez commencer est votre environnement local. Dans de nombreux cas, la source de l’attaque/infection commence localement (par exemple, ordinateur portable, ordinateur de bureau, etc …).
+Assurez-vous que vous exécutez un antivirus/malware sur votre machine locale. Certains virus peuvent ne pas être supprimés par certains logiciels anti-virus. Il peut être intéressant d’en utiliser plusieurs (local et en ligne). Ce conseil se prolonge à la fois pour Windows, Mac et Linux.
+#### Apprennez à reconnaître les e-mails frauduleux
+https://docs.ovh.com/fr/customer/arnaques-fraude-phishing/
+#### Activez la double authentification
+https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/
+https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/#etape-2-sauvegarder-les-codes-de-secours
+#### Vérifiez vos informations personnelles
+https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#ajouter-une-adresse-e-mail-de-secours
+https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#comment-gerer-mes-informations-personnelles_1
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
