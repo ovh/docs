@@ -6,7 +6,7 @@ section: Tutorials
 order: 1
 ---
 
-**Last updated 9th September 2021**
+**Last updated 9th of September, 2021.**
 
 ## Objective
 
@@ -29,7 +29,7 @@ This tutorial presents two examples of using Weights & Biases. The first noteboo
 
 ### Launch and access a Jupyter notebook
 
-The first step will consist of creating a Jupyter Notebook with OVHcloud AI Notebooks.
+The first step consists in creating a Jupyter Notebook with OVHcloud AI Notebooks.
 
 First, you have to install the OVHAI CLI then just choose the name of the notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
 

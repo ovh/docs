@@ -5,7 +5,8 @@ excerpt: Learn the resources provided by AI Training jobs
 section: Concepts
 order: 3
 ---
-*Last updated 3rd May, 2021.*
+
+**Last updated 3rd May, 2021.**
 
 ## Description
 
@@ -114,4 +115,4 @@ This panel shows the usage and limit of ephemeral storage allocated to your job.
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

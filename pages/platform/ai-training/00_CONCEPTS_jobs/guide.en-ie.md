@@ -5,7 +5,8 @@ excerpt: Learn the concept behind AI Training jobs
 section: Concepts
 order: 1
 ---
-*Last updated 18th May, 2021.*
+
+**Last updated 18th May, 2021.**
 
 ## Definition
 
@@ -58,4 +59,4 @@ During its lifetime the job will transition between the following statuses:
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

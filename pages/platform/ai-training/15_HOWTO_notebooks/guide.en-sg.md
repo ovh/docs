@@ -5,7 +5,8 @@ excerpt: Learn how to start and use notebooks over AI training
 section: How to (with UI)
 order: 5
 ---
-*Last updated 3rd May, 2021.*
+
+**Last updated 3rd May, 2021.**
 
 ## Objective
 
@@ -115,4 +116,4 @@ After some time your job should go in `interrupted` state meaning that the job h
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

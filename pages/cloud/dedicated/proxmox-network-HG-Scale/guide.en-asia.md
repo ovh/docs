@@ -6,7 +6,7 @@ section: 'Advanced use'
 order: 1
 ---
 
-**Last updated 30th September 2021**
+**Last updated 4th October 2021**
 
 ## Objective
 
@@ -82,7 +82,7 @@ iface bond0 inet dhcp
 	bond-slaves ens33f0 ens33f1
         bond-miimon 100
 	bond-mode 802.3ad
-        echo 1 post-up > /proc/sys/net/ipv4/conf/bond0/proxy_arp
+        post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
         post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 #Private
@@ -201,7 +201,7 @@ iface bond0 inet dhcp
 	bond-slaves ens33f0 ens33f1
         bond-miimon 100
 	bond-mode 802.3ad
-        echo 1 post-up > /proc/sys/net/ipv4/conf/bond0/proxy_arp
+        post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
         post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 auto bond1
@@ -218,8 +218,8 @@ iface bond1 inet manual
 auto vmbr1
 # Bridge connected to bond1 aggregate
 # No need for IP
-iface vmbr1 inet static
-	bond1 port bridge
+iface vmbr1 inet manual
+	bridge-ports bond1
 	bridge-stp off
 	bridge-fd 0
 

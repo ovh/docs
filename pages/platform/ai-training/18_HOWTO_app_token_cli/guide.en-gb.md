@@ -5,7 +5,8 @@ excerpt: Learn how to create Application tokens with the ovhai CLI
 section: How to (with CLI)
 order: 4
 ---
-*Last updated 25th of March, 2021.*
+
+**Last updated 25th of March, 2021.**
 
 ## Objective
 
@@ -110,4 +111,4 @@ ovhai token renew <token-id>
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

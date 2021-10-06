@@ -5,7 +5,7 @@ slug: mudar-tipo-faturacao-public-cloud
 section: 'Gestão do projeto'
 ---
 
-**Última atualização: 30/03/2020**
+**Última atualização: 21/09/2021**
 
 ## Sumário
 
@@ -35,13 +35,13 @@ Ao criar uma instância Public Cloud, é possível escolher entre uma faturaçã
 
 Na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, escolha a instância para a qual deseja mudar o modo de faturação e abra o respetivo menu de opções clicando nos 3 pontos do lado direito da Instância. Terá então acesso ao botão `Passar para o plano mensal`{.action}:
 
-![Mudar o cálculo de faturação](images/switch.png){.thumbnail}
+![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
 Em seguida, tem de confirmar que pretende mudar o modo de faturação:
 
-![Confirmar a mudança do cálculo de faturação](images/switch1.png){.thumbnail}
+![Confirm billing calculation change](images/confirm_to_monthly_updated.png){.thumbnail}
 
-Depois de confirmar a sua escolha, a sua fatura seguinte incluirá o valor por hora da instância correspondente ao número de dias restantes até ao fim do mês e o valor do mês seguinte à taxa fixa mensal.
+Depois de confirmar a sua escolha, receberá imediatamente uma factura mensal rateada. A factura seguinte incluirá a parte do mês com a taxa horária (1º do mês até à mudança) e a nova taxa mensal.
 
 
 ## Quer saber mais?
