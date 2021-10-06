@@ -216,7 +216,7 @@ Jeśli masz wątpliwości dotyczące okresu użytkowania, zalecamy wybór rozlic
 
 Po upewnieniu się, że wybrana konfiguracja jest prawidłowa kliknij przycisk `Utwórz instancję`{.action}, aby ukończyć tworzenie nowej instancji. Realizacja usługi może zająć kilka minut.
 
-### Krok 4: połączenie z instancją
+### Krok 4: połączenie z instancją <a name="connect-to-instance"></a>
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze „Środowisko obliczeniowe”. Instancja jest gotowa, gdy w kolumnie „Status” ma ustawienie „Aktywowano”. Aby to sprawdzić, możesz kliknąć przycisk „Odśwież” obok przycisku `Utwórz instancję`{.action}.
 

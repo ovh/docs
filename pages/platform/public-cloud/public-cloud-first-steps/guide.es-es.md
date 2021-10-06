@@ -216,7 +216,7 @@ Si tiene dudas sobre el período de uso, le recomendamos que elija la opción de
 
 Una vez que haya confirmado que todos los datos introducidos son correctos, haga clic en `Crear una instancia`{.action} para finalizar el proceso. Su instancia podría tardar unos minutos en estar disponible.
 
-### 4. Conectarse a una instancia
+### 4. Conectarse a una instancia <a name="connect-to-instance"></a>
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Haga clic en `Instances`{.action}, en la sección «Compute» del menú de la izquierda. Su instancia estará activada cuando se muestre el estado «Activa». Para comprobarlo, haga clic en el botón «Refrescar» que aparece en la parte superior, junto al buscador.
 
