@@ -121,6 +121,24 @@ Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
 
 Puis relancez l'installation d'un nouveau module.
 
+### « You have insufficient rights on this database. »
+
+![insufficient_rights](images/insufficient_rights.png){.thumbnail}
+
+Ce message indique que votre base de données ne peut plus être modifiée, car la quantité de données qu'elle contient dépasse la limite autorisée. Il apparaît lors de l'installation d'un module en [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module).
+
+Dans cette situation, choisissez une autre base de données lors de l'installation de votre module. Si besoin, commandez une [offre de bases de données](https://www.ovh.com/fr/hebergement-web/options-sql.xml) complémentaire.
+
+Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [récupérez une sauvegarde](../exportation-bases-donnees/#en-pratique) de votre base puis supprimez les données inutiles.
+
+> [!primary]
+>
+> Attention : supprimer des éléments dans votre base de données n’est pas anodin. Cela peut entrainer une coupure du site ou des services qui l'utilisent. 
+>
+> Pour toute question sur les manipulations à réaliser dans cette situation, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).<br>
+> Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
+>
+
 ### Votre nom de domaine n'est pas proposé lors de la création du module
 
 ![domainenotproposed](images/domainenotproposed.png){.thumbnail}
@@ -148,9 +166,9 @@ Cette anomalie peut avoir plusieurs causes :
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Comment diagnostiquer une page blanche ?](../comment-diagnostiquer-page-blanche/)
+[Installer son site avec les modules en 1 clic](../hosting/modules-en-1-clic/)
 
-[Les codes de reponse d’un serveur HTTP](../mutualise-les-codes-de-reponse-dun-serveur-http/)
+[Les problemes recurrents lors de l’utilisation d’un logiciel FTP](../mutualise-les-problemes-ftp-recurrents/)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/)
 
