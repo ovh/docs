@@ -5,7 +5,7 @@ excerpt: 'Come configurare un server Veeam Backup & Replication con Veeam Enterp
 section: 'Veeam Backup & Replication'
 ---
 
-**Ultimo aggiornamento: 05/10/2021**
+**Ultimo aggiornamento: 06/10/2021**
 
 ## Obiettivo
 
