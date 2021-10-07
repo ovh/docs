@@ -1,16 +1,16 @@
 ---
-title: 'Configurer le réseaux sur ESXi sur les gammes High Grade & SCALE'
-slug: esxi-network-HG-Scale
-excerpt: 'Découvrez comment configurer le réseaux sur ESXi sur les gammes High Grade & SCALE.'
+title: 'Configurer le réseau sur ESXi sur les gammes High Grade & SCALE'
+slug: esxi-network-hg-scale
+excerpt: 'Découvrez comment configurer le réseau sur ESXi sur les gammes High Grade & SCALE.'
 section: 'Utilisation avancée'
-order: 1
+order: 6
 ---
 
 **Dernière mise à jour le 07/10/2021**
 
 ## Objectif
 
-Sur les gammes HighGrade & SCALE, le fonctionnement des IP Failover en mode bridgé (via des MAC virtuelles) n'est pas possible. L'objectif est de configurer les IP failover en mode routé ou via le vRack.
+Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode *bridged* (via des MAC virtuelles) n'est pas possible. Il est donc nécessaire de configurer les IP fail-over en mode routé ou via le vRack.
 
 > [!primary]
 >
@@ -19,15 +19,13 @@ Sur les gammes HighGrade & SCALE, le fonctionnement des IP Failover en mode brid
 
 **Découvrez comment configurer le réseau sous ESXi.**
 
-
 ## Prérequis
 
 * Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.
 * Préparer votre plage d'adresses IP privées choisies.
-* Posséder un [serveur compatible vRack](https://www.ovh.com/fr/serveurs_dedies/){.external}.
+* Disposer d'un [serveur dédié compatible vRack](https://www.ovh.com/fr/serveurs_dedies/){.external}.
 * Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
-* Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-
+* Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
@@ -36,39 +34,41 @@ Sur les gammes HighGrade & SCALE, le fonctionnement des IP Failover en mode brid
 > Sur ces gammes de serveurs, il y a 4 cartes réseaux. Deux pour le public, deux pour le privé. Pour profiter de l'ensemble de la bande passante, des agrégats doivent être créés.
 >
 
-
-### IP FailOver via le vRack
+### IP fail-over via le vRack
 
 #### Configuration d'origine
 
 ![schema esxi](images/schema_esxi_A01_2022.png){.thumbnail}
 
-Sur cet exemple, les interfaces:
-- publiques sont vmnic2 et vmnic3
-- privées sont sur vmnic0 et vmnic1
+Dans cet exemple :
 
-Un premier vSwitch existe mais ne comporte qu'une interface "vnic2".
+* les interfaces publiques sont `vmnic2` et `vmnic3`;
+* les interfaces privées sont sur `vmnic0` et `vmnic1`.
+
+Un premier vSwitch existe mais ne comporte qu'une interface `vmnic2`.
 
 > [!primary]
 >
-> Vérifiez que dans votre cas c'est pareil. Vous avez les informations MAC / Publique ou Privée dans le manager ou via l'API.
+> Vérifiez que votre configuration est semblable. Vous disposez des informations relatives aux MAC et interfaces publiques ou privées dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou via l'API OVHcloud.
 >
 
 #### Explications
-Il faut:
-- Créer l'agrégat sur le vSwitch publique
-- Créer le vSwitch pour le vRack
-- Créer un groupe de ports
-- créer les VM en utilsant le nouveau groupe de ports comme interface réseau
 
-#### Configuration ESXi
+Vous devez à présent :
+
+* créer l'agrégat sur le vSwitch public;
+* créer le vSwitch pour le vRack;
+* créer un groupe de ports;
+* créer les VM en utilsant le nouveau groupe de ports comme interface réseau.
+
+#### Configurer ESXi
 
 > [!primary]
 >
-> Manipulations en mode commande (shell) et non depuis l'interface graphique (GUI) de  l'ESXi 
+> Les manipulations sont à faire en mode commande (shell) et non depuis l'interface graphique (GUI) de ESXi.
 >
 
-##### Création de l'agrégat en mode LACP sur le vSwitch qui porte les interfaces publiques
+##### **Création de l'agrégat en mode LACP sur le vSwitch qui porte les interfaces publiques**
 
 ```bash
 [root@localhost:~] esxcli network vswitch standard uplink add --uplink-name=vmnic3 --vswitch-name=vSwitch0
@@ -76,9 +76,10 @@ Il faut:
 ```
 
 Résultat :
+
 ![schema esxi](images/schema_esxi_A02_2022.png){.thumbnail}
 
-##### Création du vSwitch et de l'agrégat pour le vRack sur les interfaces privées
+##### **Création du vSwitch et de l'agrégat pour le vRack sur les interfaces privées**
 
 ```bash
 [root@localhost:~] esxcli network vswitch standard add --vswitch-name=vRackvSwitch
@@ -89,24 +90,24 @@ Résultat :
 ```
 
 Résultat :
+
 ![schema esxi](images/schema_esxi_A03_2022.png){.thumbnail}
 
-##### Configuration de la VM
+##### **Configuration de la VM**
 
-Les VM doivent avoir en interface réseau le nouveau groupe de ports "portgroupvRackvSwitch"
+Les VM doivent avoir en interface réseau le nouveau groupe de ports `portgroupvRackvSwitch`.
 
 ![schema esxi](images/schema_esxi_A04_2022.png){.thumbnail}
 
-##### Création d'un groupe de ports pour le nouveau vSwitch "vRackvSwitch"
+##### **Création d'un groupe de ports pour le nouveau vSwitch « vRackvSwitch »**
+
 ```bash
 [root@localhost:~] esxcli network vswitch standard portgroup add --portgroup-name=portgroupvRackvSwitch --vswitch-name=vRackvSwitch
 ```
 
-
-
 #### Configurer une adresse IP utilisable
 
-Dans le cas du vRack, la première et les deux dernières adresses d'un bloc d'IP donné sont toujours réservées respectivement à l'adresse du réseau, sa passerelle et son adresse de _broadcast_. Cela signifie que la première adresse utilisable est la deuxième adresse du bloc, comme indiqué ci-dessous :
+Dans le cas du vRack, la première et les deux dernières adresses d'un bloc d'IP donné sont toujours réservées respectivement à l'adresse du réseau, sa passerelle et son adresse de *broadcast*. Cela signifie que la première adresse utilisable est la deuxième adresse du bloc, comme indiqué ci-dessous :
 
 ```sh
 46.105.135.96   # Réservée : adresse du réseau
@@ -134,10 +135,9 @@ Pour configurer la première adresse IP utilisable, vous devez éditer le fichie
 > Le masque de sous-réseau utilisé dans cet exemple est approprié pour notre bloc IP. Votre masque de sous-réseau peut différer en fonction de la taille de votre bloc. Lorsque vous achetez votre bloc d'IP, vous recevez un e-mail vous indiquant le masque de sous-réseau à utiliser.
 >
 
+#### Exemple de configuration d'une VM cliente sous Debian
 
-#### Exemple de Configuration d'une VM cliente sous Debian
-
-Contenu du fichier /etc/network/interfaces
+Contenu du fichier `/etc/network/interfaces` :
 
 ```bash
 auto lo ens18
