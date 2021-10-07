@@ -110,7 +110,7 @@ Dans le cas du vRack, la première et les deux dernières adresses d'un bloc d'I
 
 ```sh
 46.105.135.96   # Réservée : adresse du réseau
-46.105.135.97   # Première IP utilisable
+46.105.135.97   # Première adresse utilisable
 46.105.135.98
 46.105.135.99
 46.105.135.100
