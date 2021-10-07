@@ -14,7 +14,7 @@ Sur les gammes HighGrade & SCALE, le fonctionnement des IP Failover en mode brid
 
 > [!primary]
 >
-> A ce jour, la documentation ne couvre que la solution via le vRack.
+> À ce jour, la documentation ne couvre que la solution via le vRack.
 >
 
 **Découvrez comment configurer le réseau sous ESXi.**
