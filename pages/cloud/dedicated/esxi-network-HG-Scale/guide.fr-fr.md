@@ -68,7 +68,7 @@ Il faut:
 > En mode commande
 >
 
-##### Création de l'agrégat en mode LACP sur le vSwitch qui porte les interfaces publiques:
+##### Création de l'agrégat en mode LACP sur le vSwitch qui porte les interfaces publiques
 
 ```bash
 [root@localhost:~] esxcli network vswitch standard uplink add --uplink-name=vmnic3 --vswitch-name=vSwitch0
