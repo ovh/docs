@@ -18,7 +18,7 @@ order: 2
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 > [!primary]
-> Be sure to consider the capabilities of the service as well as the known limitations during the launch phase, as detailed on [this page](../anthos-technical-capabilities/).
+> Be sure to consider the capabilities of the service as well as the known limitations during the launch phase, as detailed on [this page](../technical-capabilities/).
 >
 
 ## Instructions
