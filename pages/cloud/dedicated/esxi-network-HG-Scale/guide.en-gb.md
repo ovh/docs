@@ -1,12 +1,12 @@
 ---
 title: 'Configuring the network on ESXi on the High Grade & SCALE ranges'
 slug: esxi-network-hg-scale
-excerpt: 'Find out how to configure the network on ESXi on the High Grade & SCALE ranges'
+excerpt: 'Find out how to configure the network on VMware ESXi on the High Grade & SCALE ranges'
 section: 'Advanced use'
 order: 6
 ---
 
-**Last updated 7th october 2021**
+**Last updated 7th October 2021**
 
 ## Objective
 
@@ -17,15 +17,15 @@ On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *
 > To date, the documentation only covers the solution via the vRack.
 >
 
-**Find out how to configure the network on ESXi.**
+**This guide explains how to configure the network on VMware ESXi.**
 
 ## Requirements
 
-* a public block of IP addresses in your account, with a minimum of four addresses
-* your chosen private IP address range
-* a [vRack-compatible dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
-* a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account.
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- a public block of IP addresses in your account, with a minimum of four addresses
+- your chosen private IP address range
+- a [vRack compatible dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
+- a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
@@ -42,8 +42,8 @@ On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *
 
 In this example:
 
-* the public interfaces are `vmnic2` and `vmnic3`;
-* the private interfaces are on `vmnic0` and `vmnic1`.
+- the public interfaces are `vmnic2` and `vmnic3`;
+- the private interfaces are on `vmnic0` and `vmnic1`.
 
 A first vSwitch exists but only has a `vmnic2` interface.
 
@@ -56,16 +56,16 @@ A first vSwitch exists but only has a `vmnic2` interface.
 
 You need to:
 
-* create the aggregate on the public vSwitch
-* create the vSwitch for the vRack
-* create a port group
-* create VMs using the new port group as the network interface.
+- create the aggregate on the public vSwitch
+- create the vSwitch for the vRack
+- create a port group
+- create VMs using the new port group as the network interface.
 
 #### Configure ESXi
 
 > [!primary]
 >
-> You will need to follow the next steps in command mode (shell) and not from the ESXi GUI.
+> You will need to follow the next steps in command mode (shell) instead of the ESXi GUI.
 >
 
 ##### **Creating the aggregate in LACP mode on the vSwitch that carries the public interfaces**
@@ -107,11 +107,11 @@ The VMs must have the new `portgroupvRackvSwitch` port group in the network inte
 
 #### Configure a usable IP address
 
-In the case of vRack, the first and last two addresses in a given IP block are always reserved for the network address, its gateway and its *broadcast* address respectively. This means that the first usable address is the second address in the block, as shown below:
+In the case of vRack, the first address and the last two addresses in a given IP block are always reserved for the network address, its gateway and its *broadcast* address respectively. This means that the first usable address is the second address in the block, as shown below:
 
 ```sh
 46.105.135.96 # Reserved: network address
-46.105.135.97 # First Usable IP
+46.105.135.97 # First usable IP
 46.105.135.98
 46.105.135.99
 46.105.135.100
@@ -123,7 +123,7 @@ In the case of vRack, the first and last two addresses in a given IP block are a
 46.105.135.106
 46.105.135.107
 46.105.135.108
-46.105.135.109 # Last Usable IP
+46.105.135.109 # Last usable IP
 46.105.135.110 # Reserved: network gateway
 46.105.135.111 # Reserved: network broadcast
 ```
@@ -135,7 +135,7 @@ To configure the first usable IP address, you must edit the network configuratio
 > The subnet mask used in this example is appropriate for our IP block. Your subnet mask may differ depending on the size of your block. When you purchase your IP block, you will receive an email notifying you of the subnet mask to use.
 >
 
-#### Client VM configuration example in Debian
+#### Configuration example of a client VM on Debian
 
 File contents `/etc/network/interfaces`:
 
