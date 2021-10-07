@@ -135,7 +135,7 @@ Pour configurer la première adresse IP utilisable, vous devez éditer le fichie
 >
 
 
-#### Exemple Configuration VM Cliente Debian
+#### Exemple de Configuration d'une VM cliente sous Debian
 
 Contenu du fichier /etc/network/interfaces
 
