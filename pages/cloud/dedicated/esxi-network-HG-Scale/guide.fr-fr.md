@@ -65,7 +65,7 @@ Il faut:
 
 > [!primary]
 >
-> En mode commande
+> Manipulations en mode commande (shell) et non depuis l'interface graphique (GUI) de  l'ESXi 
 >
 
 ##### Création de l'agrégat en mode LACP sur le vSwitch qui porte les interfaces publiques
