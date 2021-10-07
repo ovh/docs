@@ -78,6 +78,7 @@ Résultat:
 ![schema esxi](images/schema_esxi_A02_2022.png){.thumbnail}
 
 ##### Création du vSwitch et de l'agrégat pour le vRack sur les interfaces privées :
+
 ```bash
 [root@localhost:~] esxcli network vswitch standard add --vswitch-name=vRackvSwitch
 [root@localhost:~] esxcli network vswitch standard uplink add --uplink-name=vmnic0 --vswitch-name=vRackvSwitch
@@ -93,7 +94,11 @@ Résultat:
 ```bash
 [root@localhost:~] esxcli network vswitch standard portgroup add --portgroup-name=portgroupvRackvSwitch --vswitch-name=vRackvSwitch
 ```
+##### Configuration de la VM
 
+Les VM doivent avoir en interface réseau le nouveau groupe de ports "portgroupvRackvSwitch"
+
+![schema esxi](images/schema_esxi_A04_2022.png){.thumbnail}
 
 
 #### Configurer une adresse IP utilisable
