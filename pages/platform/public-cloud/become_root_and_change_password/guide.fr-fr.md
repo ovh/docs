@@ -28,7 +28,7 @@ Pour exécuter certaines fonctions administratives sur votre serveur (l’instal
 
 ### Définir le mot de passe root <a name="définirlemotdepasseroot"></a>
 
-Pour commencer, établissez une [connexion SSH](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) à votre serveur avec votre utilisateur par défaut.
+Pour commencer, établissez une [connexion SSH](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) à votre serveur avec votre utilisateur par défaut.
 
 Utilisez la commande ci-dessous, puis entrez un mot de passe pour l’utilisateur root (pour des raisons de sécurité, celui-ci ne sera pas affiché lors de la saisie) :
 
