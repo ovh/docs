@@ -124,7 +124,7 @@ Dans le cas du vRack, la première et les deux dernières adresses d'un bloc d'I
 46.105.135.108
 46.105.135.109   # Dernière adresse utilisable
 46.105.135.110   # Réservée : passerelle du réseau
-46.105.135.111   # Réservée : broadcast réseau
+46.105.135.111   # Réservée : adresse de broadcast réseau
 ```
 
 Pour configurer la première adresse IP utilisable, vous devez éditer le fichier de configuration réseau comme indiqué ci-dessous. Dans cet exemple, utilisez un masque de sous-réseau de **255.255.255.240**.
