@@ -109,7 +109,7 @@ Les VM doivent avoir en interface réseau le nouveau groupe de ports "portgroupv
 Dans le cas du vRack, la première et les deux dernières adresses d'un bloc d'IP donné sont toujours réservées respectivement à l'adresse du réseau, sa passerelle et son adresse de _broadcast_. Cela signifie que la première adresse utilisable est la deuxième adresse du bloc, comme indiqué ci-dessous :
 
 ```sh
-46.105.135.96   # Réservée : adresse réseau
+46.105.135.96   # Réservée : adresse du réseau
 46.105.135.97   # Première IP utilisable
 46.105.135.98
 46.105.135.99
