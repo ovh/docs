@@ -88,7 +88,7 @@ Résultat :
 [root@localhost:~] 
 ```
 
-Résultat:
+Résultat :
 ![schema esxi](images/schema_esxi_A03_2022.png){.thumbnail}
 
 ##### Configuration de la VM
