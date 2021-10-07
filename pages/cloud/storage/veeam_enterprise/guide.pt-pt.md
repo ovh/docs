@@ -5,7 +5,7 @@ excerpt: 'Saiba como instalar um servidor Veeam Backup & Replication com Veeam E
 section: Veeam
 ---
 
-**Última atualização: 29/11/2018**
+**Última atualização: 06/10/2021**
 
 ## Sumário
 
@@ -21,7 +21,7 @@ O Veeam Backup & Replication é um programa de proteção de dados, que oferece 
 
 > [!primary]
 >
-> As nossas ofertas Veeam não são compatíveis com a versão mais recente (10) proposta pela Veeam. A OVHcloud continuará a propor a versão 9.5 até indicação em contrário. Tenha em conta este ponto durante a configuração do Veeam para os seus serviços.
+> As nossas ofertas Veeam são unicamente compatíveis com a última versão (10) proposta pela Veeam. Tenha em conta este ponto durante a configuração do Veeam para os seus serviços.
 >
 
 ## Instruções
@@ -118,12 +118,30 @@ Ao voltar à janela **Security**, pode verificar se a conta aparece.
 
 ![](images/veeamBandR_conf_5.png){.thumbnail}
 
+#### Autorizações de execução e de ativação
+
+O utilizador OVHVeeamEnterprise só está acessível localmente. É necessário adicionar autorizações na interface gráfica Windows para ativar a ligação à distância.
+
+Através da interface gráfica de utilizador:
+
+1. Na sua barra de pesquisa Windows, introduza `Component Services`{.action} e lance o serviço.
+2. No menu à esquerda e seguindo a arborescência, clique em `Component Services`{.action}, depois em `Computers`{.action} e depois em `My Computer`{.action}.
+3. À direita, no separador `Actions`{.action}, clique em `More Actions`{.action} e, a seguir, em `Properties`{.action}.
+4. Aceda à `COM Security`{.action} e, sob a segunda opção `Launch and Activation Permissions`{.action}, clique em `Edit Limits`{.action}.
+5. Clique no utilizador `OVHVeeamEnterprise`{.action} e ative todas as permissões.
+
+![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
+
+6. Clique em `OK`{.action} para confirmar e `Apply`{.action} para validar as alterações.
+
+O seu utilizador OVHVeeamEnterprise está agora acessível local e à distância.
+
 #### Registar o servidor Veeam Backup & Replication
 
-**Através da Área de Cliente OVH
+**Através da Área de Cliente OVHcloud
 **
 
-A partir da Área de Cliente OVH, abra o universo Cloud e, na secção `Platforms and services`{.action}, selecione o seu serviço **backupserverenterprise**.
+A partir da Área de Cliente OVHcloud, abra o universo Cloud e, na secção `Platforms and services`{.action}, selecione o seu serviço **backupserverenterprise**.
 
 ![](images/backupEnterpriseServer_manager_01.png){.thumbnail}
 

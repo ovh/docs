@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak zainstalować serwer Veeam Backup & Replication z Ve
 section: Veeam
 ---
 
-**Ostatnia aktualizacja z dnia 13-11-2018**
+**Ostatnia aktualizacja z dnia 06-10-2021**
 
 ## Wprowadzenie
 
@@ -21,7 +21,7 @@ Veeam Backup & Replication jest oprogramowaniem do ochrony danych. Oferuje wiele
 
 > [!primary]
 >
-> Nasze pakiety Veeam nie są obecnie kompatybilne z najnowszą wersją (10) proponowaną przez Veeam. OVHcloud będzie nadal proponować wersję 9.5, aż do odwołania. Prosimy o uwzględnienie tego punktu podczas konfiguracji usługi Veeam.
+> Nasze pakiety Veeam są kompatybilne wyłącznie z najnowszą wersją (10) proponowaną przez Veeam. Prosimy o uwzględnienie tego punktu podczas konfiguracji usługi Veeam.
 >
 
 ## W praktyce
@@ -117,6 +117,24 @@ Następnie w oknie `Add User`{.action} wybierz utworzone konto usługi. Wybierz 
 W oknie **Security** możesz sprawdzić, czy konto zostało utworzone.
 
 ![](images/veeamBandR_conf_16.PNG){.thumbnail}
+
+#### Zezwolenia na wykonywanie i aktywację
+
+Użytkownik OVHVeeamEnterprise jest dostępny tylko lokalnie, dlatego aby włączyć zdalne połączenie, należy dodać uprawnienia do graficznego interfejsu użytkownika Windows.
+
+Za pomocą interfejsu graficznego użytkownika:
+
+1. W pasku wyszukiwania Windows wpisz `Component Services`{.action} i uruchom usługę.
+2. W menu po lewej stronie i po drzewie kliknij `Component Services`{.action}, następnie `Computers`{.action}, a następnie `My Computer`{.action}.
+3. Po prawej stronie w zakładce `Actions`{.action} kliknij `More Actions`{.action}, a następnie `Properties`{.action}.
+4. Przejdź do `COM Security`{.action} i do drugiej opcji `Launch and Activation Permissions`{.action}, kliknij `Edit Limits`{.action}.
+5. Kliknij na użytkownika `OVHVeeamEnterprise`{.action} i aktywuj wszystkie uprawnienia.
+
+![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
+
+6. Kliknij `OK`{.action}, aby potwierdzić i `Apply`{.action}, aby zatwierdzić zmiany.
+
+Twój użytkownik OVHVeeamEnterprise jest teraz dostępny lokalnie i zdalnie.
 
 #### Zarejestruj licencję dla serwera Veeam Backup & Replication
 
