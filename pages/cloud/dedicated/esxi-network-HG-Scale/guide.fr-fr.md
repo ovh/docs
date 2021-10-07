@@ -33,7 +33,7 @@ Sur les gammes HighGrade & SCALE, le fonctionnement des IP Failover en mode brid
 
 > [!primary]
 >
-> Sur ces gammes de serveurs, il y a 4 cartes réseaux. Deux pour le public, deux pour le privé. Pour profiter de l'ensemble de la bande passante, des agrégat doivent être crée.
+> Sur ces gammes de serveurs, il y a 4 cartes réseaux. Deux pour le public, deux pour le privé. Pour profiter de l'ensemble de la bande passante, des agrégats doivent être créés.
 >
 
 
