@@ -12,7 +12,7 @@ Commande : 1
 
 La création d’un projet est la première étape du déploiement des instances [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/).
  
-**Ce guide vous présente les étapes de création de votre premier projet Public Cloud.**
+**Ce guide vous guidera à travers les étapes de la création de votre premier projet Public Cloud.**
 
 ## Prérequis
 
