@@ -122,7 +122,7 @@ Dans le cas du vRack, la première, l'avant-dernière et la dernière adresse d'
 46.105.135.106
 46.105.135.107
 46.105.135.108
-46.105.135.109   # Dernière IP utilisable
+46.105.135.109   # Dernière adresse utilisable
 46.105.135.110   # Réservée : passerelle réseau Reserved: Network gateway
 46.105.135.111   # Réservée : broadcast réseau
 ```
