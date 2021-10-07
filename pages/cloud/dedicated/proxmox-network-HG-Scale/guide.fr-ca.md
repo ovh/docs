@@ -1,9 +1,9 @@
 ---
-title: 'Configurer le réseau sur ProxMox VE sur les gammes High Grade & SCALE'
+title: 'Configurer le réseau sur Proxmox VE sur les gammes High Grade & SCALE'
 slug: proxmox-network-hg-scale
-excerpt: 'Découvrez comment configurer le réseau sur ProxMox VE sur les gammes High Grade & SCALE.'
+excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE sur les gammes High Grade & SCALE.'
 section: 'Utilisation avancée'
-order: 1
+order: 5
 ---
 
 **Dernière mise à jour le 04/10/2021**
@@ -12,7 +12,7 @@ order: 1
 
 Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode bridged (via des MAC Virtuelles) n'est pas possible. Il est donc nécessaire de configurer les IP fail-over en mode routé ou via le vRack.
 
-**Découvrez comment configurer le réseau sous ProxMox VE.**
+**Découvrez comment configurer le réseau sous Proxmox VE.**
 
 ## Prérequis
 
