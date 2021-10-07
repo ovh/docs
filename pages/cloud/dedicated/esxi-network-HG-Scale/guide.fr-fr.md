@@ -75,6 +75,7 @@ Il faut:
 ```
 
 Résultat:
+
 ![schema esxi](images/schema_esxi_A02_2022.png){.thumbnail}
 
 ##### Création du vSwitch et de l'agrégat pour le vRack sur les interfaces privées :
@@ -88,6 +89,7 @@ Résultat:
 ```
 
 Résultat:
+
 ![schema esxi](images/schema_esxi_A03_2022.png){.thumbnail}
 
 ##### Création d'un groupe de ports pour le nouveau vSwitch "vRackvSwitch"
