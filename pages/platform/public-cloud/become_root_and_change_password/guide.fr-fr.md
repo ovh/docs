@@ -30,7 +30,7 @@ Pour exécuter certaines fonctions administratives sur votre serveur (l’instal
 
 Pour commencer, établissez une [connexion SSH](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) à votre serveur avec votre utilisateur par défaut.
 
-Utilisez la commande ci-dessous, puis entrez un mot de passe pour l’utilisateur root (pour des raisons de sécurité, celui-ci ne sera pas affiché lors de la saisie) :
+Utilisez la commande ci-dessous pour définir un mot de passe pour l’utilisateur root (pour des raisons de sécurité, celui-ci ne sera pas affiché lors de la saisie) :
 
 ```sh
 ~$ sudo passwd
