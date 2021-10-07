@@ -1,9 +1,9 @@
 ---
-title: 'Konfiguracja sieci na ProxMox VE w ofercie High Grade & SCALE'
+title: 'Konfiguracja sieci na Proxmox VE w ofercie High Grade & SCALE'
 slug: proxmox-network-hg-scale
-excerpt: 'Dowiedz się, jak skonfigurować sieć na ProxMox VE w ofercie High Grade & SCALE'
+excerpt: 'Dowiedz się, jak skonfigurować sieć na Proxmox VE w ofercie High Grade & SCALE'
 section: 'Poziom zaawansowany'
-order: 1
+order: 5
 ---
 
 > [!primary]
@@ -16,7 +16,7 @@ order: 1
 
 W ofercie High Grade & SCALE nie jest możliwe działanie adresów IP Failover w trybie bridged (poprzez wirtualne maszyny MAC). Konieczne jest zatem skonfigurowanie IP Failover w trybie routera lub vRack.
 
-**Dowiedz się, jak skonfigurować sieć w programie ProxMox VE.**
+**Dowiedz się, jak skonfigurować sieć w programie Proxmox VE.**
 
 ## Wymagania początkowe
 
