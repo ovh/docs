@@ -78,7 +78,7 @@ Il faut:
 Résultat :
 ![schema esxi](images/schema_esxi_A02_2022.png){.thumbnail}
 
-##### Création du vSwitch et de l'agrégat pour le vRack sur les interfaces privées :
+##### Création du vSwitch et de l'agrégat pour le vRack sur les interfaces privées
 
 ```bash
 [root@localhost:~] esxcli network vswitch standard add --vswitch-name=vRackvSwitch
