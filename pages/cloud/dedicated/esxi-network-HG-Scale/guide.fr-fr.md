@@ -123,7 +123,7 @@ Dans le cas du vRack, la première et les deux dernières adresses d'un bloc d'I
 46.105.135.107
 46.105.135.108
 46.105.135.109   # Dernière adresse utilisable
-46.105.135.110   # Réservée : passerelle réseau Reserved: Network gateway
+46.105.135.110   # Réservée : passerelle du réseau
 46.105.135.111   # Réservée : broadcast réseau
 ```
 
