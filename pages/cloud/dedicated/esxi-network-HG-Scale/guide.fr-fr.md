@@ -75,7 +75,7 @@ Il faut:
 [root@localhost:~] esxcli network vswitch standard policy failover set -l iphash -v vSwitch0
 ```
 
-Résultat:
+Résultat :
 ![schema esxi](images/schema_esxi_A02_2022.png){.thumbnail}
 
 ##### Création du vSwitch et de l'agrégat pour le vRack sur les interfaces privées :
