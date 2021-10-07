@@ -59,7 +59,7 @@ Il faut:
 - Créer l'agrégat sur le vSwitch publique
 - Créer le vSwitch pour le vRack
 - Créer un groupe de ports
-- créer les VM en utilsant le nouveau groupe de port comme interface réseau
+- créer les VM en utilsant le nouveau groupe de ports comme interface réseau
 
 #### Configuration ESXi
 
