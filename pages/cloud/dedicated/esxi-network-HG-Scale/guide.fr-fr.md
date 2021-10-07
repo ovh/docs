@@ -50,7 +50,7 @@ Un premier vSwitch existe mais ne comporte qu'une interface "vnic2".
 
 > [!primary]
 >
-> Vérifier que dans votre cas c'est pareil. Vous avec les informations MAC / Publique ou Privée dans le manager ou via l'API.
+> Vérifier que dans votre cas c'est pareil avec les informations sur quelles MAC sont Publique ou Privée dans le manager ou via l'API.
 >
 
 #### Explications
