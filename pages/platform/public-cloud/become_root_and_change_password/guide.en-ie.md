@@ -34,23 +34,12 @@ First, establish an [SSH connection](https://docs.ovh.com/ie/en/public-cloud/pub
 At the command line, set a password for the root user (for security reasons, the password will not be shown as you type it):
 
 ```sh
-~$ sudo passwd
+~$ sudo passwd root
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated 
 successfully
 ```
-
-### Become root
-
-To become the root user, type the following command at the command line:
-
-```
-~$ sudo su -
-~#
-```
-
-Next, enter the root password.
 
 ### Update repositories (Debian/Ubuntu)
 
@@ -73,6 +62,18 @@ To update your server's operating system, type the following command at the comm
 ```
 ~$ sudo vi /etc/hosts.allow
 ```
+
+### Become root
+
+To become the root user, type the following command at the command line:
+
+```
+~$ sudo su -
+~#
+```
+
+Next, enter the root password.
+
 
 ### Enable root login and password authentication
 
