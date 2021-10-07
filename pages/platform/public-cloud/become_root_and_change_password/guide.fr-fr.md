@@ -33,23 +33,12 @@ Pour commencer, établissez une [connexion SSH](https://docs.ovh.com/fr/public-c
 Utilisez la commande ci-dessous pour définir un mot de passe pour l’utilisateur root (pour des raisons de sécurité, celui-ci ne sera pas affiché lors de la saisie) :
 
 ```sh
-~$ sudo passwd
+~$ sudo passwd root
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully 
 successfully
 ```
-
-### Passer à root
-
-Pour devenir l'utilisateur root, tapez la commande suivante :
-
-```
-~$ sudo su -
-~#
-```
-
-Ensuite, tapez le mot de passe root.
 
 ### Mettre à jour des dépôts (Debian et Ubuntu)
 
@@ -72,6 +61,18 @@ Pour mettre à jour le système d'exploitation de votre serveur, entrez la comma
 ```
 ~$ sudo vi /etc/hosts.allow
 ```
+
+### Passer à root
+
+Pour devenir l'utilisateur root, tapez la commande suivante :
+
+```
+~$ sudo su -
+~#
+```
+
+Ensuite, tapez le mot de passe root.
+
 
 ### Autoriser l'authentification par root avec mot de passe
 
