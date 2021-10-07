@@ -7,136 +7,138 @@ section: 'Email address features'
 order: 04
 ---
 
-**Last updated 12th August 2020**
+**Last updated 27/09/2021**
 
 ## Objective
 
-With a filter you can configure conditions for your account's incoming emails and set actions based on them.
+An email filter allows you to apply different treatments to the messages you receive, according to the criteria of your choice.
 
-For example: you can automatically delete emails tagged as spam by our spam protection.
+For example: you want any email containing `[SPAM]` in the subject to be deleted.
 
-- Condition: email subject contains *[SPAM]*
-- Action: delete email
+- Criterion = Email subject contains *SPAM*
+- Processing = deleting the email
 
-**This guide explains how to create and configure a filter on your email address.**
-
+**Find out how to create and configure a filter on your email address.**
 
 ## Requirements
 
-- an MX Plan email solution or a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- an MX Plan email solution (available via: a [web hosting](https://www.ovh.co.uk/web-hosting/){.external} plan, the free [Start 10M](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external} hosting plan including a domain name, or the MX Plan solution ordered separately).
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
+> [!warning]
+>
+> The following guide is for holders of the legacy MXplan solution. For the new solution, you can manage filters directly via OWA (**O**utlook **W**eb **A**pplication). Identify your solution using the table below.
+>
 
-## Instructions
+MX Plan legacy version|MX Plan new version|
+|---|---|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the `Summary` box|
+|Continue reading this guide from the `[In Practice](#oldmxplan)` section.|Continue to our guide on [Inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/).|
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar.
+## In practice <a name="oldmxplan"></a>
 
-Select the domain name from the `Emails`{.action} section in the services bar on the left-hand side. Switch to the tab `Emails`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and open the `Web Cloud` section.
 
-In the table listing your email addresses, click on the `Filter`{.action} icon in the row of the email address concerned.
+Click `Emails`{.action} in the service bar on the left-hand side, and then choose the name of the MX Plan service concerned.
+
+In the `Emails`{.action} tab of your MX Plan service, you will find a list of your email addresses. You will see a `Filters` column in the table of email accounts. Click the funnel icon.
 
 ![emails](images/img_3239.jpg){.thumbnail}
 
-A new window will open which contains the list of filters currently configured for this email address. To add one, click on the button `Add a Filter`{.action}.
+You will then see the list of filters currently configured for this email address.
 
 ![emails](images/img_3240.jpg){.thumbnail}
 
-### Understanding the email filter settings
+To add a rule to your email address, click `Add a Filter`{.action}.
+
+- **Filter name:** choose a name for your filter.
+
+- **Priority:** sets the order in which your filters run on an incoming message. A Priority 1 filter will run before a Priority 2 filter.
+
+- **Enable filter:** uncheck this option if you want to apply this filter later.
+
+### Understanding email filter configuration
+
+When you add a filter, the following window appears:
 
 ![emails](images/img_3241.jpg){.thumbnail}
 
+#### <u>Rules:</u>
 
-#### Information
+This part allows you to define the messages on which the filter will apply.
 
-- **Filter name:** This is used to differentiate your filters inside the Control Panel.
-- **Priority:** This sets the order in which your filters will run for all emails received on this address. A Priority 1 filter will run before a Priority 5 filter.
-- **Enable filter:** This determines whether the filter will be applied to the inbox (for example, you can temporarily disable a filter without deleting it by unchecking this option).
+First choice (header):
 
+- **From:** is the sender's email address, for example: “If the sender ...”
+- **To:** is the recipient's email address, for example: “If the recipient ...”
+- **Message subject:** means the content of the subject of the message, for example: “If the subject of the message ... ”.
+- **Other:** specify another item to be considered in the email header.
 
-#### Rules
+Second choice (rule):
 
-In this section you can configure the filter conditions, also known as inbox rules.
+- **spf:** Specify a value for the [SPF field](https://docs.ovh.com/gb/en/domains/web_hosting_the_spf_record/) to be taken into account, for example:  “... has no SPF record ... ”.
+- **contains:** example: “... contains... ”.
+- **does not contain:** example: “... does not contain... ”.
 
-First choice (Header):
+Third choice (value):
 
-- **From**: Corresponds to the sender, example: `If the sender ...`.
-- **To**: Corresponds to the recipient, example: `If the recipient ...`.
-- **Message subject**: Matches the subject of the message, example: `If the subject of the message ...`.
-- **Other**: Other parameter.
-
-Second choice (Rule):
-
-- **spf**: Parameter that depends on a domain's SPF, example: `... has no SPF record`.
-- **includes**: Positive condition, example: `the subject contains ...`.
-- **does not include**: Negative condition, example: `... does not contain ...`.
-
-Third choice (Value):
-
-- A concrete value to define this rule, for example: `[SPAM]`.
+- Example: [SPAM]
 
 Fourth choice (+):
 
-- This allows you to add more rules for the action defined below.
+- This allows you to add one or more conditions for the same action.
 
-**Result of these rules**
+#### Actions
 
-- Example: `If the message subject contains [SPAM]`
+This section allows you to define the actions to apply.
 
+You can choose between:
 
-#### Action
+- **Accept:** emails meeting the conditions will be received normally.
+- **Redirect to a local address:** redirects eligible emails to one of your domain’s email addresses.
+- **Deleting:** emails that meet the conditions will be deleted.
+- **Redirect to a remote address:** redirects eligible emails to the email address of your choice.
 
-This is where you decide how the filter handles an email if the above conditions are met.
+### Filter examples
 
-You can choose between these types of actions:
+#### Delete spam
 
-- **accept**: the email will stay in your inbox.
-- **redirect to a local address**: redirects the email to one of your other email addresses on the same domain.
-- **deletion**: deletes the email from your inbox without further notice.
-- **redirect to a remote address**: redirects the email to whichever email address you enter.
-
-
-### Examples
-
-#### Deleting spam emails
-
-||Header|Rule|Value|Action|
+||Header|Ruler|Value|Action|
 |---|---|---|---|---|
 |Filter settings|Message subject|includes|[SPAM]|deletion|
-|What the filter will do|If the subject of the message|includes|the word `[SPAM]`|then delete the message.|
+|What the filter will do|If the subject of the message|includes|the `[SPAM]` suite|then delete the message.|
 
+#### Redirect emails from a recipient
 
-#### Redirecting emails from a certain sender
-
-||Header|Rule|Value|Action|
+||Header|Ruler|Value|Action|
 |---|---|---|---|---|
 |Filter settings|From|includes|contact@domaintest.ovh|redirect to a remote address: jean@otherdomain.ovh|
-|What the filter will do|If the sender|is|contact@domaintest.ovh|then redirect the email to jean@otherdomain.ovh|
+|What the filter will do|If the sender|is|contact@domaintest.ovh|then resend the email to jean@otherdomain.ovh|
 
+#### Redirect emails sent to a mailing list
 
-#### Redirecting emails sent to a mailing list
-
-||Header|Rule|Value|Action|
+||Header|Ruler|Value|Action|
 |---|---|---|---|---|
-|Filter settings|To|includes|ML@mailing.com|redirect to a local address: recipient@mypersonaldomain.ovh|
-|What the filter will do|If the message was sent to the mailing list|called|ML@mailing.com|then redirect the message to my other address: recipient@mypersonaldomain.ovh|
+|Filter settings|WHETHER YOU'RE ON FOOT|includes|ML@mailing.com|Redirect to a local address: recipient@mypersonaldomain.ovh|
+|What the filter will do|If the message was sent to the mailing list|called|ML@mailing.com|then forward the message to my other address: recipient@mypersonaldomain.ovh|
 
-<a name="MULTI"></a>
+#### Delete emails containing an unwanted comment, except for a sender
 
-#### Deleting emails containing an unwanted phrase, excluding one sender 
+Two filters should be added:
 
-This filter example consists of two rules:
-
-||Header|Rule|Value|Action|
+||Header|Ruler|Value|Action|
 |---|---|---|---|---|
-|Filter settings 1|Message subject|includes|money|deletion|
-|Filter settings 2|From|does not include|john@mybank.ovh|deletion|
+|Filter Settings 1|Message subject|includes|"money"|deletion|
+|Filter Settings 2|From|doesn't include|john@mybank.ovh|deletion|
 
-**What the filter will do**: If the subject of the message contains the word `money` **and** the sender of the message is not `john@mybank.ovh`, then the message will be deleted.
-
-In the Control Panel, the filter configuration looks like this:
+If the subject of the message contains the word “ money ”, **and that** the sender of the message is not `john@mybank.ovh`, then the message will be deleted:
 
 ![emails](images/img_3242.jpg){.thumbnail}
 
 ## Go further
+
+[Getting started with the MX Plan solution](https://docs.ovh.com/gb/en/emails/web_hosting_an_overview_of_ovh_email/)
+
+[Inbox rules in OWA](https://docs.ovh.com/gb/en/emails/creating-inbox-rules-in-owa-mx-plan/)
 
 Join our community of users on <https://community.ovh.com/en/>.

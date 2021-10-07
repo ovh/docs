@@ -11,87 +11,99 @@ order: 04
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 12/08/2020**
+**Última actualización: 27/09/2021**
 
 ## Objetivo
 
-Un filtro permite configurar las condiciones de los mensajes de correo que usted reciba y las acciones que se desprenden de ellos.
+Un filtro de correo permite aplicar diferentes tratamientos a los mensajes que reciba, según los criterios que usted decida.
 
 Por ejemplo: desea que se elimine todo email que contenga "[SPAM]" en el asunto.
 
-- Condición = el asunto del mensaje de correo contiene *SPAM*
-- Acción = eliminar el email
+- Criterio = asunto del email contiene *SPAM*
+- Tratamiento = eliminar el mensaje de correo
 
-**Cómo crear y configurar un filtro en una dirección de correo electrónico**
+**Esta guía explica cómo crear y configurar un filtro en una dirección de correo electrónico.**
 
 ## Requisitos
 
-- Tener una solución de correo MX Plan o un [plan de hosting](https://www.ovh.es/hosting/){.external} .
-- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Disponer de una solución de correo MX Plan (disponible a través de: un [plan de hosting](https://www.ovh.com/world/es/hosting/){.external}, el [alojamiento gratuito Start 10M](https://www.ovh.es/dominios/oferta_hosting_start10m.xml){.external} incluido con un dominio o la solución MX Plan contratada por separado.
+- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
-## Procedimiento
+> [!warning]
+>
+> La siguiente guía se dirige a los titulares de la solución MX Plan "histórico". Para el nuevo plan, la gestión de los filtros se realiza directamente a través del webmail OWA (**O**utlook **W**eb **A**pplication). Identifique su producto utilizando la siguiente tabla.
+>
 
-En primer lugar, conéctese al [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
+|---|---|
+|![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro Suscripción, en el epígrafe Producto.|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro Resumen, en el epígrafe Referencia del servidor.|
+|Continúe leyendo esta guía en el apartado "[En la práctica](#oldmxplan)".|Para más información, consulte nuestra guía Reglas de la bandeja de entrada desde la [interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/crear-reglas-de-bandeja-de-entrada-en-owa/).|
 
-Seleccione el dominio en la sección `Correo electrónico`{.action}.
+## En la práctica <a name="oldmxplan"></a>
 
-En la tabla, que recoge las direcciones de correo, haga clic en el icono `Filtro`{.action} de la dirección en cuestión.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`.
+
+En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
+
+En la pestaña `Correo electrónico`{.action} de su servicio MXplan, encontrará la lista de sus direcciones de correo. En el cuadro de cuentas de correo puede verse una columna `Filtros`. Haga clic en el icono de embudo.
 
 ![correo electrónico](images/img_3239.jpg){.thumbnail}
 
-Acceda a la lista de filtros actualmente configurados para esta dirección de correo. Para añadir un filtro, haga clic en el botón a la derecha `Añadir un filtro`{.action}.
+A continuación, acceda a la lista de filtros actualmente configurados para esta dirección de correo.
 
 ![correo electrónico](images/img_3240.jpg){.thumbnail}
 
+Para añadir una regla a su dirección de correo electrónico, haga clic en el botón `Añadir un filtro`{.action}.
+
+- **Nombre del filtro:** elija un nombre para el filtro.
+
+- **Prioridad:** define el orden de ejecución de sus filtros en un mensaje de entrada. Un filtro de prioridad 1 se ejecutará antes de un filtro de prioridad 2.
+
+- **Activar el filtro:** desactive esta opción si desea aplicar este filtro más adelante.
+
 ### Configurar los filtros de correo
+
+Al añadir un filtro, se mostrará la siguiente ventana:
 
 ![correo electrónico](images/img_3241.jpg){.thumbnail}
 
-#### Campo
-
-- **Nombre del filtro:** para diferenciar los filtros en el área de cliente.
-- **Prioridad:** para configurar el orden de ejecución de los filtros en una misma cuenta de correo. Un filtro de prioridad 1 se ejecutará antes de un filtro de prioridad 5.
-- **Activar el filtro:** Esto determina si el filtro será efectivo o no (puede crear un filtro desmarcando la opción si desea activarlo más adelante, por ejemplo).
-
 #### Reglas
 
-Aquí es donde va a configurar las condiciones, las reglas del filtro.
+Esta sección le permite definir los mensajes en los que se aplicará el filtro.
 
-Primera elección (Cabecera):
+Primera elección (cabecera):
 
-- **De:** Coincide con el remitente, por ejemplo: "Si el remitente..."
-- **A:** Coincide con el destinatario, por ejemplo: "Si el destinatario..."
-- **Asunto:** Coincide con el asunto del mensaje, por ejemplo: "Si el tema del mensaje..."
-- **Otro:** Otro parámetro
+- **De:** designa la dirección de correo electrónico del remitente, por ejemplo: "Si el remitente..."
+- **A:** designa la dirección de correo electrónico del destinatario, por ejemplo: "Si el destinatario..."
+- **Asunto:** hace referencia al contenido del asunto del mensaje, por ejemplo: "Si el asunto del mensaje... ".
+- **Otro:** indique otro elemento en la cabecera del mensaje de correo electrónico.
 
-Segunda opción (Regla):
+Segunda opción (regla):
 
-- **spf:** Parámetro dependiente del registro SPF, por ejemplo: "... no tiene registro SPF ..."
-- **contiene:** ejemplo: "... contiene ..."
-- **no contiene:** ejemplo: "... no contiene ..."
+- **spf:** Indique el valor del [registro SPF](https://docs.ovh.com/es/domains/web_hosting_el_registro_spf/) que quiera tener en cuenta, por ejemplo: "... no tiene registro SPF ... ".
+- **contiene:** ejemplo: "... contiene ... ".
+- **no contiene:** ejemplo: "... no contiene ... ".
 
-Tercera elección (valor):
+Tercera opción (valor):
 
 - Ejemplo: [SPAM]
 
 Cuarta opción (+):
 
-- Esto le permite añadir una o más condiciones para la misma acción.
-
-**Resultado de estas condiciones** - Ejemplo: "Si el asunto del mensaje contiene [SPAM]"
+- Esto permite añadir una o más condiciones para la misma acción.
 
 #### Acciones
 
-Aquí es donde van a elegir qué hará el filtro si se cumplen las condiciones de arriba.
+En esta sección se definen las acciones que debe realizar.
 
 Puede elegir entre:
 
-- **Aceptar:** Los mensajes que cumplan las condiciones se recibirán normalmente.
-- **Redirigir a una dirección local:** Redirige los mensajes de correo que cumplen las condiciones hacia una de las direcciones de correo del dominio.
-- **Eliminación:** Se eliminarán los mensajes de correo que cumplan las condiciones.
-- **Redirigir a una dirección remota:** Redirige los mensajes de correo que cumplen las condiciones a la dirección de correo que usted elija.
+- **Aceptar:** los emails que cumplan las condiciones se recibirán normalmente.
+- **Redirigir a una dirección local:** redirige los mensajes que cumplen las condiciones a una de las direcciones de correo del dominio.
+- **Eliminación:** se eliminarán los mensajes de correo que cumplan las condiciones.
+- **Redirigir a una dirección remota:** redirige los mensajes que cumplen las condiciones a la dirección de correo electrónico que elija.
 
-### Ejemplos
+### Ejemplos de filtros
 
 #### Eliminar el spam
 
@@ -104,17 +116,17 @@ Puede elegir entre:
 
 ||Cabecera|Regla|Valor|Escenarios posibles|
 |---|---|---|---|---|
-|Configuración del filtro|De|contiene|contact@domaintest.ovh|redirigir a una dirección remota: john@otherdomain.ovh|
-|Lo que el filtro hará|Si el remitente|es|contact@domaintest.ovh|reenvíe el mensaje a john@otherdomain.ovh.|
+|Configuración del filtro|De|contiene|contact@domaintest.ovh|redirigir a una dirección remota: jean@otherdomain.ovh|
+|Lo que el filtro hará|Si el remitente|es|contact@domaintest.ovh|reenvíe el mensaje a jean@otherdomain.ovh.|
 
 #### Redirigir los mensajes dirigidos a una lista de correo
 
 ||Cabecera|Regla|Valor|Escenarios posibles|
 |---|---|---|---|---|
-|Configuración del filtro|À|contiene|ML@mailing.com|Redirigir a una dirección local: recipient@mypersonaldomain.ovh|
+|Configuración del filtro|A|contiene|ML@mailing.com|Redirigir a una dirección local: recipient@mypersonaldomain.ovh|
 |Lo que el filtro hará|Si el mensaje ha sido enviado a la lista de correo|denominada|ML@mailing.com|reenvíe el mensaje a mi otra dirección: recipient@mypersonaldomain.ovh|
 
-#### Eliminar los mensajes de correo que contengan una mención no deseada, a excepción de un remitente 
+#### Eliminar los mensajes de correo que contengan una mención no deseada, a excepción de un remitente
 
 Se añaden dos filtros:
 
@@ -123,12 +135,14 @@ Se añaden dos filtros:
 |Parámetros del filtro 1|Asunto del mensaje|contiene|"money"|eliminación|
 |Parámetros del filtro 2|De|no contiene|john@mybank.ovh|eliminación|
 
-Si el asunto del mensaje contiene la palabra "money", **y** el remitente del mensaje no es "john@mybank.ovh", entonces el mensaje se eliminará.
-
-En ese caso, la configuración será la siguiente:
+Si el asunto del mensaje contiene la palabra "money" **y el** remitente del mensaje no es "john@mybank.ovh", entonces el mensaje se eliminará:
 
 ![correo electrónico](images/img_3242.jpg){.thumbnail}
 
 ## Más información
+
+[Primeros pasos con la solución MX Plan](https://docs.ovh.com/es/emails/primeros-pasos-correo-compartido/)
+
+[Reglas de la bandeja de entrada desde la interfaz OWA](https://docs.ovh.com/es/emails/crear-reglas-de-bandeja-de-entrada-en-owa/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -9,65 +9,80 @@ order: 04
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-**Ostatnia aktualizacja z dnia 12-08-2020**
+**Ostatnia aktualizacja z dnia 27-09-2021**
 
 ## Wprowadzenie
 
-Filtr pozwala na skonfigurowanie warunków dotyczących otrzymywanych wiadomości e-mail oraz związanych z nimi działań.
+Filtr e-mail umożliwia zastosowanie różnych metod leczenia otrzymywanych wiadomości zgodnie z wybranymi kryteriami.
 
 Na przykład: chcesz, aby wszystkie e-maile zawierające "[SPAM]" w temacie zostały usunięte.
 
-- Warunek = temat wiadomości e-mail zawiera *SPAM*
-- Action = usuń e-mail
+- Kryterium = Temat e-maila zawiera *SPAM*
+- Przetwarzanie = usuń e-mail
 
-**Dowiedz się, jak utworzyć i skonfigurować filtr na Twoim koncie e-mail**
+**Dowiedz się, jak utworzyć i skonfigurować filtr na Twoim koncie e-mail.**
 
 ## Wymagania początkowe
 
-- Posiadanie usługi e-mail MX Plan lub [Pakiet hostingu www](https://www.ovh.pl/hosting/){.external}.
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie usługi e-mail MX Plan (dostępnej poprzez: [oferta hostingu](https://www.ovh.pl/hosting/){.external}, bezpłatny [hosting Start 10M](https://www.ovh.pl/domeny/oferta_serwer_start10m.xml){.external} zawarty w ofercie domeny lub oferta MX Plan zamówiona oddzielnie).
+- Posiadanie dostępu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
-## W praktyce
+> [!warning]
+>
+> Poniższy przewodnik skierowany jest do posiadaczy "historycznej" oferty MXplan. W przypadku nowej oferty zarządzanie filtrami odbywa się bezpośrednio w Webmail OWA (**O**utlook **W**eb **A**pplication). Zidentyfikuj ofertę korzystając z poniższej tabeli.
+>
 
-Najpierw zaloguj się do Twojego [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
+|---|---|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Znajdź Oznaczenie serwera w polu "Podsumowanie"|
+|Przejdź do sekcji "[W praktyce](#oldmxplan)" niniejszego przewodnika.|Przejdź do naszego przewodnika "[Reguły skrzynki odbiorczej w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/tworzenie-regul-skrzynki-odbiorczej-w-owa/)".|
 
-Wybierz odpowiednią domenę w sekcji `E-maile`{.action}.
+## W praktyce <a name="oldmxplan"></a>
 
-W tabeli z listą adresów e-mail kliknij ikonę `Filtr`{.action} odpowiedniego konta.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji `Web Cloud`.
+
+Kliknij E-maile na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę MX Plan.
+
+W zakładce `E-maile`{.action} w Twojej usłudze MXplan znajdziesz listę Twoich kont e-mail. Kolumna `Filtry` jest widoczna w tabeli kont e-mail. Kliknij ikonę lejka.
 
 ![emails](images/img_3239.jpg){.thumbnail}
 
-Pojawi się lista filtrów aktualnie skonfigurowanych dla tego konta e-mail. Aby dodać filtr, kliknij przycisk po prawej stronie `Dodaj Filtr`{.action}.
+Teraz przejdź do listy filtrów aktualnie skonfigurowanych dla tego konta e-mail.
 
 ![emails](images/img_3240.jpg){.thumbnail}
 
+Aby dodać regułę do Twojego konta e-mail, kliknij przycisk `Dodaj Filtr`{.action}.
+
+- **Nazwa filtra:** wybierz nazwę dla filtra.
+
+- **Priorytet:** określa kolejność wykonywania filtrów dla wiadomości przychodzącej. Filtr priorytetowy 1 zostanie uruchomiony przed filtrem priorytetowym 2.
+
+- **Włącz filtr:** usuń zaznaczenie tej opcji, jeśli chcesz zastosować ten filtr później.
+
 ### Dowiedz się, jak skonfigurować filtry e-maili
+
+Po dodaniu filtra wyświetli się następujące okno:
 
 ![emails](images/img_3241.jpg){.thumbnail}
 
-#### Informacje
-
-- **Nazwa filtra:** Dzięki temu możesz wyróżnić Twoje filtry w Panelu klienta.
-- **Priorytet:** Dzięki temu możesz zarządzać filtrami na tej samej skrzynce e-mail. Filtr priorytetowy 1 zostanie uruchomiony przed filtrem priorytetowym 5.
-- **Włącz filtr:** Określa to, czy filtr będzie skuteczny czy nie (Możesz utworzyć filtr, wybierając opcję, jeśli chcesz ją aktywować później).
-
 #### Zasady
 
-Tutaj skonfigurujesz warunki, zasady filtra.
+W tej części możesz zdefiniować wiadomości, do których zostanie zastosowany filtr.
 
-Wybór (Nagłówek):
+Wybór (nagłówek):
 
-- **Od:** Przykład korespondencji z nadawcą: "Jeśli nadawca ..."
-- **DO:** Odbiorca: "Jeśli odbiorca ..."
-- **Temat wiadomości:** Odpowiadający treści wiadomości, przykład: "Jeśli temat wiadomości ..."
-- **Inne:** Inny parametr
+- **Od:** na przykład adres e-mail nadawcy: "Jeśli nadawca ..."
+- **Do:** na przykład adres e-mail odbiorcy: "Jeśli odbiorca ..."
+- **Temat wiadomości:** oznacza treść treści komunikatu, np.: "Jeśli temat wiadomości ... ".
+- **Inne:** wskaż inny element, który należy uwzględnić w nagłówku wiadomości e-mail.
 
-Drugi wybór (Zasada):
+Druga opcja (reguła):
 
-- **spf:** Parametr zależny od pola SPF, na przykład: "... nie ma pola SPF ..."
-- **zawiera:** przykład: "... zawiera ..."
-- **nie zawiera:** przykład: "... nie zawiera ..."
+- **spf:** Wskaż wartość [pola SPF](https://docs.ovh.com/pl/domains/uslugi_www_pole_spf/), które należy uwzględnić, na przykład: "... nie ma pola SPF ... ".
+- **zawiera:** przykład: "... zawiera ... ".
+- **nie zawiera:** przykład: ".. nie zawiera ... ".
 
 Trzeci wybór (wartość):
 
@@ -75,22 +90,20 @@ Trzeci wybór (wartość):
 
 Czwarty wybór (+):
 
-- Dzięki temu możesz dodać jeden lub więcej warunków dla tej samej operacji.
-
-**Wynik tych warunków** - Przykład: "Jeśli temat wiadomości zawiera [SPAM]"
+- Dzięki temu możesz dodać jeden lub kilka warunków dla tej samej operacji.
 
 #### Działania
 
-Tutaj właśnie wybierzecie, co zostanie zrobione przez filtr, jeśli powyższe warunki są spełnione.
+Ta część pozwala na zdefiniowanie operacji, które chcesz zastosować.
 
 Możesz wybrać:
 
-- **Zaakceptuj:** Wiadomości spełniające te warunki będą zwykle otrzymywane.
-- **Przekieruj na adres lokalny:** Przekieruj e-maile spełniające te warunki na jeden z kont e-mail domeny.
-- **Usuwanie:** Zostaną usunięte e-maile spełniające warunki.
-- **Przekieruj na zdalny adres:** Przekieruj wiadomości spełniające warunki na wybrany przez Ciebie adres e-mail.
+- **Zaakceptuj:** e-maile spełniające te warunki będą zwykle otrzymywane.
+- **Przekieruj na adres lokalny:** przekierowuje e-maile spełniające te warunki na jeden z adresów e-mail Twojej domeny.
+- **Usuwanie:** zostaniesz usunięty e-maile spełniające warunki.
+- **Przekieruj na zdalny adres:** przekierowuje wiadomości spełniające warunki na wybrany przez Ciebie adres e-mail.
 
-### Przykłady
+### Przykłady filtrów
 
 #### Usuń spam
 
@@ -103,8 +116,8 @@ Możesz wybrać:
 
 ||Nagłówek|Zasada|Wartość|Działanie|
 |---|---|---|---|---|
-|Parametry filtra|Od|zawiera|contact@domaintest.ovh|przekierowanie na zdalny adres: john@otherdomain.ovh|
-|Co zrobi filtr|Jeśli nadawca|jest|contact@domaintest.ovh|prześlij e-mail na adres john@otherdomain.ovh|
+|Parametry filtra|Od|zawiera|contact@domaintest.ovh|przekierowanie na zdalny adres: jean@otherdomain.ovh|
+|Co zrobi filtr|Jeśli nadawca|jest|contact@domaintest.ovh|prześlij e-mail na adres jean@otherdomain.ovh|
 
 #### Przekierowanie adresów e-mail do listy mailingowej
 
@@ -113,7 +126,7 @@ Możesz wybrać:
 |Parametry filtra|DO|zawiera|ML@mailing.com|Przekieruj na adres lokalny: recipient@mypersonaldomain.ovh|
 |Co zrobi filtr|Jeśli wiadomość została wysłana na listę mailingową|nazywane|ML@mailing.com|prześlij wiadomość na inny adres: recipient@mypersonaldomain.ovh|
 
-#### Usuń e-maile zawierające niechcianą informację z wyjątkiem nadawcy
+#### Usuń e-maile zawierające niechcianą informację, z wyjątkiem nadawcy
 
 Dodaje się dwa filtry:
 
@@ -122,12 +135,14 @@ Dodaje się dwa filtry:
 |Parametry filtra 1|Temat wiadomości|zawiera|"money"|usuwanie|
 |Parametry filtra 2|Od|nie zawiera|john@mybank.ovh|usuwanie|
 
-Jeśli temat wiadomości zawiera słowo "money", **a** nadawcą wiadomości nie jest "john@mybank.ovh", wówczas wiadomość zostanie usunięta.
-
-W takim przypadku konfiguracja będzie następująca:
+Jeśli temat wiadomości zawiera słowo "money", **a nadawcą wiadomości nie jest** "john@mybank.ovh", wówczas komunikat zostanie usunięty:
 
 ![emails](images/img_3242.jpg){.thumbnail}
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+[Pierwsze kroki z usługą MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)
+
+[Reguły skrzynki odbiorczej w interfejsie OWA](https://docs.ovh.com/pl/emails/tworzenie-regul-skrzynki-odbiorczej-w-owa/)
+
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
