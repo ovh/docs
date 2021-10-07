@@ -22,10 +22,11 @@ Sur les gammes HighGrade & SCALE, le fonctionnement des IP Failover en mode brid
 
 ## Prérequis
 
-* Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-* Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
-* Disposer d'IP FailOver
+* Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.
+* Préparer votre plage d'adresses IP privées choisies.
+* Posséder un [serveur compatible vRack](https://www.ovh.com/fr/serveurs_dedies/){.external}.
+* Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
+* Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 
 ## En pratique
@@ -50,7 +51,7 @@ Un premier vSwitch existe mais ne comporte qu'une interface "vnic2".
 
 > [!primary]
 >
-> Vérifier que dans votre cas c'est pareil avec les informations sur quelles MAC sont Publique ou Privée dans le manager ou via l'API.
+> Vérifier que dans votre cas c'est pareil. Vous avec les informations MAC / Publique ou Privée dans le manager ou via l'API.
 >
 
 #### Explications
@@ -75,7 +76,6 @@ Il faut:
 ```
 
 Résultat:
-
 ![schema esxi](images/schema_esxi_A02_2022.png){.thumbnail}
 
 ##### Création du vSwitch et de l'agrégat pour le vRack sur les interfaces privées :
@@ -89,18 +89,19 @@ Résultat:
 ```
 
 Résultat:
-
 ![schema esxi](images/schema_esxi_A03_2022.png){.thumbnail}
 
-##### Création d'un groupe de ports pour le nouveau vSwitch "vRackvSwitch"
-```bash
-[root@localhost:~] esxcli network vswitch standard portgroup add --portgroup-name=portgroupvRackvSwitch --vswitch-name=vRackvSwitch
-```
 ##### Configuration de la VM
 
 Les VM doivent avoir en interface réseau le nouveau groupe de ports "portgroupvRackvSwitch"
 
 ![schema esxi](images/schema_esxi_A04_2022.png){.thumbnail}
+
+##### Création d'un groupe de ports pour le nouveau vSwitch "vRackvSwitch"
+```bash
+[root@localhost:~] esxcli network vswitch standard portgroup add --portgroup-name=portgroupvRackvSwitch --vswitch-name=vRackvSwitch
+```
+
 
 
 #### Configurer une adresse IP utilisable
