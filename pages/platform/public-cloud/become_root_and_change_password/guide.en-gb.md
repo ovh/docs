@@ -17,7 +17,7 @@ To perform certain administrative functions on your server (e.g. installing pack
 
 ## Requirements
 
-* a [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+* a [Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance) in your OVHcloud account
 * access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
