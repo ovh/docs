@@ -10,7 +10,7 @@ order: 1
 
 ## Objectif
 
-Sur les gammes HighGrade & SCALE, le fonctionnement des IP Failover en mode bridgé (via des MAC Virtuelles) n'est pas possible. L'objectif est de configurer les IP failover en mode routé ou via le vRack.
+Sur les gammes HighGrade & SCALE, le fonctionnement des IP Failover en mode bridgé (via des MAC virtuelles) n'est pas possible. L'objectif est de configurer les IP failover en mode routé ou via le vRack.
 
 > [!primary]
 >
