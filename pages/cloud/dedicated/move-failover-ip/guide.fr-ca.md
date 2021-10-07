@@ -6,7 +6,7 @@ section: 'Réseau & IP'
 order: 7
 ---
 
-**Dernière mise à jour le 15/09/2021**
+**Dernière mise à jour le 07/10/2021**
 
 ## Objectif
 
@@ -29,7 +29,9 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 ## En pratique
 
 > [!primary]
-> Lorsqu’un bloc IP avec des adresses MAC virtuelles uniques est déplacé entre serveurs, ces vmacs sont temporairement suspendues. Elles apparaîtront sur le nouveau serveur une fois le déplacement effectué. D’autre part, les blocs avec des adresses MAC virtuelles en double ne peuvent pas être déplacés, vous serez d'abord invité à supprimer la vmac en double sur le bloc à déplacer.
+> Lorsqu’un bloc IP avec des adresses MAC virtuelles uniques est déplacé entre serveurs, ces vmacs sont temporairement suspendues. Elles apparaîtront sur le nouveau serveur une fois le déplacement effectué. 
+> 
+> D’autre part, les blocs avec des adresses MAC virtuelles en double ne peuvent pas être déplacés. Vous serez d'abord invité à supprimer la vmac en double sur le bloc à déplacer.
 >
 
 ### Déplacer une IP depuis l'espace client OVHcloud

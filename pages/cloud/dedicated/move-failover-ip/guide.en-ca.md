@@ -6,7 +6,7 @@ section: Network Management
 order: 7
 ---
 
-**Last updated 15th September 2021**
+**Last updated 7th October 2021**
 
 ## Objective
 
@@ -29,7 +29,9 @@ With this technology, you can switch IP addresses from one solution to another i
 ## Instructions
 
 > [!primary]
-> When an IP block with unique virtual MAC addresses is moved between servers, the vmacs are temporarily suspended. They will appear on the new server once the move is done. On the otherhand, blocks with duplicate virtual MAC addresses cannot be moved, you will first be prompted to delete the duplicate vmac on the block to move.
+> When an IP block with unique virtual MAC addresses is moved between servers, the vmacs are temporarily suspended. They will appear on the new server once the move is done. 
+>
+> On the otherhand, blocks with duplicate virtual MAC addresses cannot be moved. You will be prompted to delete the duplicate virtual MAC addresse(s) on the block to be moved.
 >
  
  
