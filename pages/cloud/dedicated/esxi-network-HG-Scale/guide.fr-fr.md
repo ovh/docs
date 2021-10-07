@@ -58,7 +58,7 @@ Un premier vSwitch existe mais ne comporte qu'une interface "vnic2".
 Il faut:
 - Créer l'agrégat sur le vSwitch publique
 - Créer le vSwitch pour le vRack
-- Créer un groupe de port
+- Créer un groupe de ports
 - créer les VM en utilsant le nouveau groupe de port comme interface réseau
 
 #### Configuration ESXi
