@@ -217,7 +217,7 @@ Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour passer à la der
 
 Après vérification de votre configuration, cliquez sur `Créer une instance`{.action} pour terminer la création de votre nouvelle instance. L'opération peut prendre quelques minutes jusqu'à la livraison de votre service.
 
-### Étape 4: Connexion à votre instance
+### Étape 4: Connexion à votre instance <a name="connect-to-instance"></a>
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), allez dans la section `Public Cloud`{.action}  et sélectionnez le projet Cloud public concerné. Cliquez sur `Instances`{.action} dans la barre de services à gauche en-dessous de **Compute**. Votre instance est prête lorsque la colonne « Statut » du tableau indique  « Activée ». Pour vérifier, vous pouvez cliquer sur le bouton  « Actualiser » à droite de `Créer une instance`{.action}.
 

@@ -6,12 +6,17 @@ section: Network Management
 order: 7
 ---
 
-**Last updated 12th March 2021**
+**Last updated 7th October 2021**
 
 ## Objective
 
 Failover IP addresses can be moved between the services you use. This provides an advantage since you can maintain your IP reputation, your SEO and improve the continuity of service of your applications and systems.<br>
 With this technology, you can switch IP addresses from one solution to another in less than a minute, with virtually no interruption to services for your users. It is useful for service migrations (e.g. moving projects from development to production), or when switching to a backup server during a technical issue.
+
+> [!primary]
+> A failover IP cannot be moved from one zone to another. For example, an IP located in the SBG data centre can be moved to GRA or RBX, but cannot be moved to BHS.
+>
+> Migration only works for whole blocks, it is not possible to migrate individual IPs within a block.
 
 **This guide explains how to move a failover IP in your OVHcloud Control Panel or via the OVHcloud API.**
 
@@ -24,7 +29,9 @@ With this technology, you can switch IP addresses from one solution to another i
 ## Instructions
 
 > [!primary]
-> A failover IP cannot be moved from one zone to another. For example, an IP located in the SBG data centre can be moved to GRA or RBX, but cannot be moved to BHS.
+> When an IP block containing unique virtual MAC addresses is moved between two servers, those addresses are temporarily suspended. They will appear on the new server once the move is complete.
+>
+> On the other hand, blocks containing duplicate virtual MAC addresses cannot be moved. You must first delete the duplicate virtual MAC address on the block to be moved.
 >
 
 ### Moving an IP from the OVHcloud Control Panel

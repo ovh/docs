@@ -7,7 +7,7 @@ section: Networking
 order: 12
 ---
 
-**Last updated 02nd January 2020**
+**Last updated 2nd January 2020**
 
 ## Objective
 

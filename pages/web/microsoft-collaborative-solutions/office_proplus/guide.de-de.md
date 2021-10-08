@@ -11,27 +11,27 @@ order: 4
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Stand 06.09.2021**
+**Letzte Aktualisierung am 06.09.2021**
 
 ## Ziel
 
-Sie haben die Möglichkeit, die im Microsoft 365 Apps Paket enthaltene Software-Suite auf einem Remote-Desktop oder gemeinsam genutzten Gerät zu verwenden. Dazu ist das in dieser Anleitung beschriebene Installationsverfahren anzuwenden.
+Sie haben die Möglichkeit, die im Paket "Microsoft 365 Apps" enthaltene Software-Suite auf einem Remote-Desktop oder gemeinsam genutzten Gerät zu verwenden. Hiernei ist das in dieser Anleitung beschriebene Installationsverfahren anzuwenden.
 
-**Diese Anleitung erklärt, wie Sie Microsoft 365 Apps auf einem Remote- (RDS) oder einem gemeinsam genutzten Computer verwenden.**
+**Diese Anleitung erklärt, wie Sie Microsoft 365 Apps auf einem Remote-Computer (RDS) oder einem gemeinsam genutzten Gerät verwenden.**
 
 ## Voraussetzungen
 
-- Sie verfügen über eine Microsoft 365 Apps for enterprise Lizenz (ehemals Office 365 ProPlus).
+- Sie verfügen über eine "Microsoft 365 Apps for enterprise" Lizenz (ehemals Office 365 ProPlus).
 - Sie verwenden Microsoft Windows über einen Remote-Desktop (**R**emote **D**esktop **S**ervices).
 
 > [!warning]
 >
-> Die Lizenz Microsoft 365 Apps for business ist mit der Verwendung über RDS und geteilten Computern nicht kompatibel.
+> Die Lizenz "Microsoft 365 Apps for business" ist mit der Verwendung über RDS und geteilten Computern nicht kompatibel.
 > 
 
 ## In der praktischen Anwendung
 
-Diese Anleitung basiert auf den Informationen, die in der Microsoft [Bereitstellen von Microsoft 365 Apps mithilfe der Remotedesktopdienste](https://docs.microsoft.com/de-de/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
+Diese Anleitung basiert auf den Informationen in der Microsoft-Dokumentation "[Bereitstellen von Microsoft 365 Apps mithilfe der Remotedesktopdienste](https://docs.microsoft.com/de-de/deployoffice/deploy-microsoft-365-apps-remote-desktop-services)".
 
 > [!warning]
 >
@@ -42,7 +42,7 @@ Diese Anleitung basiert auf den Informationen, die in der Microsoft [Bereitstell
 
 ### Methode 1: Manuelle Konfiguration
 
-Die Installation von Microsoft 365 Apps for enterprise auf einem geteilten Computer mit Remote Desktop (RDS) funktioniert nicht ohne eine bestimmte Konfiguration. Ohne diese erhalten Sie folgende Nachricht:
+Die Installation von "Microsoft 365 Apps for enterprise" auf einem geteilten Computer mit Remote Desktop (RDS) funktioniert nicht ohne eine bestimmte Konfiguration. Ohne diese erhalten Sie folgende Nachricht:
 
 ![E-Mails](images/4717.png){.thumbnail}
 
@@ -63,7 +63,7 @@ Die Installation von Microsoft 365 Apps for enterprise auf einem geteilten Compu
 
 Bearbeiten Sie die Datei `configuration.xml` und entkommentieren Sie folgende Zeilen:
 
-```bash
+```xml
 Display Level="None" AcceptEULA="True"
 Property Name="SharedComputerLicensing" Value="1"
 ```
@@ -84,15 +84,15 @@ Wenn diese Zeilen dort nicht existieren, können Sie sie kopieren und einfügen.
 >
 > Die Ausführung kann einige Minuten in Anspruch nehmen.
 
-- Öffnen Sie den Windows Registry-Editor, indem Sie "Regedit" ausführen, und gehen Sie zu folgendem Pfad:
+- Öffnen Sie den Windows Registry-Editor, indem Sie `Regedit` ausführen, und gehen Sie zu folgendem Pfad:
 
-```bash
+```powershell
 HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration
 ```
 
 - Überprüfen Sie folgenden Schlüssel:
 
-```bash
+```powershell
 SharedComputerLicensing
 ```
 

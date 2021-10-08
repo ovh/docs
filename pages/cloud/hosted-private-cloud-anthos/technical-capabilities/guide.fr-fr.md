@@ -6,7 +6,7 @@ section : Premiers pas
 order : 1
 ---
 
-**Dernière mise à jour le 20/09/2021**
+**Dernière mise à jour le 08/10/2021**
 
 ## Objectif
 
@@ -29,7 +29,7 @@ Retrouvez ci-dessous les capacités techniques et les limites de l'offre Hosted 
 - **Compatibilité vRack** : Dans un premier temps, il ne sera pas possible de connecter un déploiement Anthos à un vRack existant. Cette option sera ajoutée ultérieurement. Vous pouvez cependant déplacer des services existants vers le vRack livré avec votre Hosted Private Cloud powered by Anthos.
 
 > [!primary]
-> Veuillez également consulter notre [page produit]([link](https://www.ovhcloud.com/fr/hosted-private-cloud/anthos/)) pour en savoir plus sur les détails techniques et les spécifications du service.
+> Veuillez également consulter notre [page produit](https://www.ovhcloud.com/fr/hosted-private-cloud/anthos/)) pour en savoir plus sur les détails techniques et les spécifications du service.
 >
 
 ### FAQ technique concernant le service

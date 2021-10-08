@@ -6,7 +6,7 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 5th October 2021**
+**Last updated 8th October 2021**
 
 ## Objective
 
@@ -14,7 +14,7 @@ This page provides an overview of the technical capabilities and limitations of 
 
 ### Limitations at launch
 
-- Additional bare metal Nodes and IP addresses are not available to order in the Control Panel yet. Please contact your OVHcloud sales representative if you have further needs during the launch phase.
+- Additional bare metal nodes and IP addresses are not available to order in the Control Panel yet. Please contact your OVHcloud sales representative if you have further needs during the launch phase.
 - The Dedicated NetApp console is not yet available.
 - Anthos updates will only be available after the launch phase.
 
@@ -23,7 +23,7 @@ This page provides an overview of the technical capabilities and limitations of 
 
 - **Public network**: Each service is delivered with a block of 50 usable IPv4 addresses. Additional IP addresses will be orderable in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (256 maximum per service).
 
-- **User cluster capacity**: The production packs include 15 bare metal Nodes which can be used for your Kubernetes clusters and containers. Additional bare metal Nodes can be added in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). The OVHcloud Hosted Private Cloud powered by Anthos solution can handle multiple Kubernetes clusters, with a total of 100 bare metal Nodes running 100 Pods each. (Please contact your OVHcloud sales representative if your needs exceed these thresholds.)
+- **User cluster capacity**: The production packs include 15 bare metal nodes which can be used for your Kubernetes clusters and containers. Additional bare metal nodes can be added in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). The OVHcloud Hosted Private Cloud powered by Anthos solution can handle multiple Kubernetes clusters, with a total of 100 bare metal nodes running 100 pods each. (Please contact your OVHcloud sales representative if your needs exceed these thresholds.)
 
 - **Persistent storage**: With the included Dedicated NetApp storage (powered by ONTAP), each deployment can support up to 1000 Storage Virtual Machines (SVM) and a total of 2000 volumes per NetApp instance. (Please contact your OVHcloud sales representative if you require storage beyond these limits.) NetApp is only available with the Stateful Production Pack.
 

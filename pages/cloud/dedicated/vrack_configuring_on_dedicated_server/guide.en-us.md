@@ -5,7 +5,7 @@ excerpt: Help on how to configure the vRack on two or more dedicated servers
 section: Network Management
 ---
 
-**Last updated 2018/06/21**
+**Last updated 21st June 2018**
 
 ## Objective
 

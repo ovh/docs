@@ -11,7 +11,7 @@ order: 04
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 12.08.2020**
+**Letzte Aktualisierung am 27.09.2021**
 
 ## Ziel
 
@@ -24,14 +24,22 @@ Zum Beispiel: Sie können jede E-Mail, die von unserem Spamschutz als Spam marki
 
 **Diese Anleitung erklärt, wie Sie Filter für Ihre E-Mail-Adressen erstellen und konfigurieren.**
 
-
 ## Voraussetzungen
 
 - Sie verfügen über ein MX Plan E-Mail-Angebot oder ein [Webhosting](https://www.ovh.de/hosting/){.external}.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
+> [!warning]
+>
+> Die folgende Anleitung ist nur anwendbar auf den Dienst MX Plan *Legacy*. Für unsere aktuelle Version dieses Angebots erfolgt die Filterverwaltung direkt über das OWA Webmail (**O**utlook **W**eb **A**pplication). Sie können anhand der nachstehenden Tabelle identifizieren, welche Version des MX Plan Sie verwenden.
+>
 
-## In der praktischen Anwendung
+MX Plan Legacy|MX Plan neuere Version|
+|---|---|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Die Angebotsbezeichnung steht in der Box "Abo".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Die `Server-Referenz` befindet sich in der Box "Zusammenfassung".|
+|Lesen Sie weiter in dieser `[Anleitung](#oldmxplan)`.|Fahren Sie fort mit unserer Anleitung zu [Posteingangsregeln in OWA](https://docs.ovh.com/de/microsoft-collaborative-solutions/posteingangsregeln-in-owa-erstellen/).|
+
+## In der praktischen Anwendung <a name="oldmxplan"></a>
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 
@@ -55,7 +63,7 @@ Ein neues Fenster öffnet sich, das Ihre derzeit für diese E-Mail-Adresse konfi
 - **Priorität**: Dies legt die Reihenfolge der Ausführung Ihrer Filter für alle eingehenden Nachrichten auf dieser Adresse fest. Ein Filter der Priorität 1 wird vor einem der Priorität 5 ausgeführt.
 - **Den Filter aktivieren**: Legt fest, ob der Filter auf den Posteingang angewendet wird (Sie können z.B. einen Filter vorübergehend deaktivieren, ohne ihn zu löschen, indem Sie den Haken bei dieser Option entfernen.)
 
-#### Regeln
+#### <u>Regeln:</u>
 
 In diesem Bereich können Sie die Filterbedingungen, auch Posteingangsregeln genannt, konfigurieren.
 

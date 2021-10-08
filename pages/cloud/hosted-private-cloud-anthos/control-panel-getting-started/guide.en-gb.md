@@ -6,7 +6,7 @@ section: Getting started
 order: 2
 ---
 
-**Last updated 5th October 2021**
+**Last updated 8th October 2021**
 
 ## Objective
 
@@ -34,13 +34,13 @@ The `General information`{.action} tab displays technical details of the selecte
 ![Control Panel](images/anthos_cp02.png){.thumbnail}
 
 In the section `Security and access`{.action} of this tab you can find the URLs for your Anthos Management Center (Anthos console) and the [Dedicated NetApp console](#netapp) (only if NetApp is included in your subscription). Access these management tools directly via the respective button.
-<br>You can find the option `Renew admin password`{.action} for the consoles by clicking on the `...`{.action} buttons next to the URL fields.
+<br>In order to renew admin passwords, you can find the option `Reset access`{.action} for the consoles by clicking on the `...`{.action} buttons next to the URL fields.
 
-The section `Resources`{.action} shows in brief the number of hosts, the Dedicated NetApp storage allocation and how many IP addresses are assigned to this deployment. With the respective `...`{.action} button you can [order more hosts](#hosts), [add SVMs](#netapp) or [assign public and private IP ranges](#iprange).
+The section `Resources`{.action} shows in brief the number of hosts, the Dedicated NetApp storage allocation and how many IP addresses are assigned to this deployment. With the respective `...`{.action} button you can [order more hosts](#hosts), [add SVMs](#netapp) and [assign public and private IP ranges](#iprange).
 
 ![Control Panel](images/anthos_cp03.png){.thumbnail}
 
-### Creating and managing bare metal Nodes (Hosts) <a name="hosts"></a>
+### Creating and managing bare metal nodes (Host) <a name="hosts"></a>
 
 Expand the top table on this page to see the **included hosts** of the Hosted Private Cloud powered by Anthos pack. A second table will contain **additional hosts** that can be ordered separately.
 <br>You can start the order process by clicking on the button `Order a host`{.action}. Additional hosts have a minimum renewal period of one month. A discount will be granted on orders with longer commitments.
@@ -49,7 +49,7 @@ Expand the top table on this page to see the **included hosts** of the Hosted Pr
 
 #### Rebooting a host
 
-Click on the `...`{.action} button next to the host in the table and then select `Reboot`{.action}.
+Click on the `...`{.action} button next to the host in the table and then select `Restart`{.action}.
 
 ![Control Panel](images/anthos_cp05.png){.thumbnail}
 
@@ -69,7 +69,7 @@ Take note of the warning message in the popup window and click on `Confirm`{.act
 
 #### Configuring the state of a host
 
-Click on the `...`{.action} button next to the host in the table and then select `Define state`{.action}.
+Click on the `...`{.action} button next to the host in the table and then select `Set status`{.action}.
 
 ![Control Panel](images/anthos_cp07.png){.thumbnail}
 
@@ -114,7 +114,7 @@ You can use **private IP addresses** freely but the ranges have to be declared i
 
 ![Control Panel](images/anthos_cp11.png){.thumbnail}
 
-To delete an entry, use the respective `Delete`{.action} button in the table. Only IP addresses that are not assigned in the Anthos console can be removed (status `Inactive` in the table).
+To delete an entry, use the respective `Delete`{.action} button in the table. Only IP addresses that are not assigned in the Anthos console can be removed (status `Disabled` in the table).
 
 #### Using the vRack with Hosted Private Cloud powered by Anthos and other OVHcloud services <a name="vrack"></a>
 
@@ -133,7 +133,7 @@ Please continue with our [documentation on creating a cluster in the Anthos cons
 
 ## Go further <a name="gofurther"></a>
 
-[Technical capabilities and limitations of the Hosted Private Cloud powered by Anthos](../technical-capabilities/)
+[Technical capabilities and limitations of Hosted Private Cloud powered by Anthos](../technical-capabilities/)
 
 [Hosted Private Cloud powered by Anthos: Dedicated user documentation](https://docs.anthos.ovh.net/docs/anthos/private-mode/index.html)
 

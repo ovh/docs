@@ -98,7 +98,7 @@ Puede elegir entre:
 ||Cabecera|Regla|Valor|Escenarios posibles|
 |---|---|---|---|---|
 |Configuración del filtro|Asunto del mensaje|contiene|[SPAM]|eliminación|
-|Lo que el filtro hará|Si el asunto del mensaje|contiene|la suite "[SPAM]"|elimine el mensaje.|
+|Lo que el filtro hará|Si el asunto del mensaje|contiene|[SPAM]|elimine el mensaje.|
 
 #### Redirigir los emails de un destinatario
 

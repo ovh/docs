@@ -216,7 +216,7 @@ We recommend to choose hourly billing if there is any doubt regarding the usage 
 
 Once you have made sure that your configuration choices are correct, click on the `Create an instance`{.action} button to finish creating your new instance. It may take a few minutes until your service is delivered.
 
-### Step 4: Connecting to your instance
+### Step 4: Connecting to your instance <a name="connect-to-instance"></a>
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Instances`{.action} in the left-hand navigation bar under "Compute". Your instance is ready when the "Status" column in the table is set to "Activated". To verify, you can click on the "Refresh" button right next to `Create an instance`{.action}.
 

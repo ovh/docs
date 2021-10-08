@@ -3,7 +3,7 @@ title: Que faire en cas de page « Index of » ?
 excerpt: Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »
 slug: diagnostic-index-of
 section: Diagnostic
-order: 6
+order: 7
 ---
 
 **Dernière mise à jour le 25/06/2021**
