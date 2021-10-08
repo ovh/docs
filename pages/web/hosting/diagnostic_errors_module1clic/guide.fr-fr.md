@@ -149,6 +149,16 @@ Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas 
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
+### « Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES) »
+
+![cant_connect](images/cant_connect.png){.thumbnail}
+
+Vous avez lancé l'installation d'un module 1 clic en [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) sur une base de données située sur un [serveur SQL privé](../premiers-pas-avec-sql-prive/) ou [CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/). Vous avez reçu ce message d'erreur par e-mail. Il signifie que l'utilisateur noté lors de l'installation ne possède pas les droits suffisants sur la base de données ou que les identifiants indiqués sont incorrects.
+
+Dans cette situation, modifiez tout d'abord les [droits de l'utilisateur](../creer-bases-de-donnees-et-utilisateurs/#gerer-les-droits-des-utilisateurs) concerné, afin qu'il dispose des droits **Administrateur** ou en **Lecture/écriture** sur la base de données.
+
+Vérifiez également ses identifiants en vous [connectant directement](../connexion-base-de-donnees-serveur-bdd/#en-pratique) à votre serveur de bases de données puis relancez l'installation de votre module.
+
 ### Votre nom de domaine n'est pas proposé lors de la création du module
 
 ![domainenotproposed](images/domainenotproposed.png){.thumbnail}
@@ -164,7 +174,7 @@ Cliquez sur l’onglet `Multisite`{.action} puis effectuez les vérifications su
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
-Après avoir réalisé toutes les sauvegardes nécessaires, [supprimez votre module](#supprimer-le-module), puis sa [base de données](#supprimer-la-base). Puis relancez son installation sur le nom de domaine souhaité.
+Après avoir réalisé toutes les sauvegardes nécessaires, [supprimez votre module](#supprimer-le-module) puis sa [base de données](#supprimer-la-base). Puis relancez son installation sur le nom de domaine souhaité.
 
 ### Votre ancien site continue de s'afficher
 
