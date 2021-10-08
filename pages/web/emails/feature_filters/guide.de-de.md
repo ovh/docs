@@ -11,138 +11,136 @@ order: 04
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Stand 27.09.2021**
+**Letzte Aktualisierung am 27.09.2021**
 
 ## Ziel
 
-Mit einem E-Mail Filter können Sie verschiedene Verarbeitungen für die Nachrichten anwenden, die Sie erhalten, abhängig von den Kriterien Ihrer Wahl.
+Mit einem Filter können Bedingungen für die von Ihnen erhaltenen E-Mails sowie die sich daraus ergebenden Aktionen konfiguriert werden.
 
-Zum Beispiel: Sie möchten, dass alle E-Mails mit "[SPAM]"im Betreff gelöscht werden.
+Zum Beispiel: Sie können jede E-Mail, die von unserem Spamschutz als Spam markiert wurde, automatisch löschen lassen.
 
-- Kriterium = Betreff der E-Mail enthält *SPAM*
-- Bearbeitung = E-Mail löschen
+- Bedingung: der Betreff der E-Mail enthält *[SPAM]*
+- Aktion: E-Mail löschen
 
-**Hier erfahren Sie, wie Sie einen Filter für Ihre E-Mail-Adresse erstellen und konfigurieren.**
+**Diese Anleitung erklärt, wie Sie Filter für Ihre E-Mail-Adressen erstellen und konfigurieren.**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein MX Plan E-Mail-Angebot (verfügbar über: ein [Webhosting-Angebot](https://www.ovh.de/hosting/){.external}, das [kostenlose Start 10M](https://www.ovh.de/domains/angebot_hosting_start10m.xml){.external} Hosting mit Domainnamen oder separat bestellbar.
-- Sie haben Zugriff auf Ihr [OVH Kunden Center](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}.
+- Sie verfügen über ein MX Plan E-Mail-Angebot oder ein [Webhosting](https://www.ovh.de/hosting/){.external}.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
 >
-> Die folgende Anleitung richtet sich an die Inhaber des MXplan Angebots "History". Für das neue Angebot erfolgt die Filterverwaltung direkt über die OWA Webmail (**O**utlook **W**eb **A**pplication). Identifizieren Sie Ihr Angebot mit der nachstehenden Tabelle.
+> Die folgende Anleitung ist nur anwendbar auf den Dienst MX Plan *Legacy*. Für unsere aktuelle Version dieses Angebots erfolgt die Filterverwaltung direkt über das OWA Webmail (**O**utlook **W**eb **A**pplication). Sie können anhand der nachstehenden Tabelle identifizieren, welche Version des MX Plan Sie verwenden.
 >
 
-Historische MX Plan Version|Neue MX Plan Version|
+MX Plan Legacy|MX Plan neuere Version|
 |---|---|
-|![E-Mail](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Ihr Angebot steht in der Box „Abo“|![E-Mail](images/mxplan-starter-new-step1.png){.thumbnail}<br>Die "Server-Referenz"finden Sie in der Box "Zusammenfassung"|
-|Lesen Sie diese Anleitung weiter unter " [In der Praxis](#oldmxplan)".|Weitere Informationen finden Sie [in unserer Anleitung "Posteingangsregeln über das OWA](https://docs.ovh.com/de/microsoft-collaborative-solutions/posteingangsregeln-in-owa-erstellen/) Interface".|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Die Angebotsbezeichnung steht in der Box "Abo".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Die `Server-Referenz` befindet sich in der Box "Zusammenfassung".|
+|Lesen Sie weiter in dieser `[Anleitung](#oldmxplan)`.|Fahren Sie fort mit unserer Anleitung zu [Posteingangsregeln in OWA](https://docs.ovh.com/de/microsoft-collaborative-solutions/posteingangsregeln-in-owa-erstellen/).|
 
-## In der Praxis <a name="oldmxplan"></a>
+## In der praktischen Anwendung <a name="oldmxplan"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 
-Klicken Sie im linken Menü auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus.
+Wählen Sie die Domain links aus dem Bereich `E-Mails`{.action} aus und wechseln Sie dann zum Tab `E-Mails`{.action}.
 
-Im Tab `E-Mails`{.action} Ihres MXplan Dienstes finden Sie die Liste Ihrer E-Mail-Adressen. Eine Spalte `Filter` ist in der Tabelle der E-Mail-Accounts sichtbar. Klicken Sie auf das Trichtersymbol.
+Klicken Sie in der Tabelle, in der Ihre E-Mail-Adressen aufgelistet sind, auf das `Filter`{.action}-Symbol in der Zeile der zu bearbeitenden Adresse.
 
 ![E-Mails](images/img_3239.jpg){.thumbnail}
 
-Sie finden nun die Liste der aktuell für diese E-Mail-Adresse konfigurierten Filter.
+Ein neues Fenster öffnet sich, das Ihre derzeit für diese E-Mail-Adresse konfigurierten Filter anzeigt. Um einen hinzuzufügen, klicken Sie rechts auf den Button `Filter hinzufügen`{.action}.
 
 ![E-Mails](images/img_3240.jpg){.thumbnail}
 
-Um eine Regel zu Ihrer E-Mail-Adresse hinzuzufügen, klicken Sie auf den Button `Filter hinzufügen`{.action}.
-
-- **Filtername:** Wählen Sie einen Namen für Ihren Filter aus.
-
-- **Priorität:** legt den Ausführungsbefehl für Ihre Filter auf einer eingehenden Nachricht fest. Ein Prioritätsfilter 1 wird vor einem Prioritätsfilter 2 durchgeführt.
-
-- **Filter aktivieren:** Entfernen Sie diese Option, wenn Sie den Filter später anwenden möchten.
-
-### Die Konfiguration der E-Mail-Filter verstehen
-
-Wenn Sie einen Filter hinzufügen, öffnet sich folgendes Fenster:
+### Die Filter-Einstellungen verstehen
 
 ![E-Mails](images/img_3241.jpg){.thumbnail}
 
-#### Regeln
+#### Information
 
-In diesem Abschnitt können Sie die Nachrichten definieren, auf die der Filter angewendet wird.
+- **Filtername**: Hiermit können Sie Ihre Filter im Kundencenter unterscheiden.
+- **Priorität**: Dies legt die Reihenfolge der Ausführung Ihrer Filter für alle eingehenden Nachrichten auf dieser Adresse fest. Ein Filter der Priorität 1 wird vor einem der Priorität 5 ausgeführt.
+- **Den Filter aktivieren**: Legt fest, ob der Filter auf den Posteingang angewendet wird (Sie können z.B. einen Filter vorübergehend deaktivieren, ohne ihn zu löschen, indem Sie den Haken bei dieser Option entfernen.)
 
-Erste Wahl (Header):
+#### <u>Regeln:</u>
 
-- **Von:** bezeichnet die E-Mail-Adresse des Absenders, zum Beispiel: "Wenn der Absender ..."
-- **An:** bezeichnet die E-Mail-Adresse des Empfängers, zum Beispiel: "Wenn der Empfänger ..."
-- **Betreff der Nachricht:** bezeichnet den Inhalt des Betreff der Nachricht, zum Beispiel: "Wenn der Betreff der Nachricht ... "
-- **Andere:** Geben Sie einen anderen Aspekt an, der im Header der E-Mail zu berücksichtigen ist.
+In diesem Bereich können Sie die Filterbedingungen, auch Posteingangsregeln genannt, konfigurieren.
 
-Zweite Wahl (Regel):
+Erste Auswahl (Header):
 
-- **spf:** Geben Sie einen Wert des zu berücksichtigenden [SPF-Eintrags](https://docs.ovh.com/de/domains/webhosting_spf-eintrag/) an, zum Beispiel: "... hat keinen SPF Eintrag ... "
-- **enthält:** z. B. " enthält ... "
-- **enthält nicht:** z. B. "... enthält nicht ... "
+- **Von**: Entspricht dem Absender, zum Beispiel: "Wenn der Absender ...".
+- **An**: Entspricht dem Empfänger, zum Beispiel: "Wenn der Empfänger ...".
+- **Betreff der Nachricht**: Entspricht dem Inhalt des Betreffs, zum Beispiel: "Wenn der Betreff der Nachricht ...".
+- **Sonstige**: Anderer Parameter.
 
-Dritte Wahl (Wert):
+Zweite Auswahl (Regel):
 
-- Beispiel: [SPAM]
+- **spf**: Vom SPF einer Domain abhängiger Parameter, zum Beispiel: "... hat keinen SPF Eintrag".
+- **enthält**: Positive Bedingung, zum Beispiel "Der Betreff enthält ...".
+- **enthält nicht**: Negative Bedingung, zum Beispiel "... enthält nicht ...".
 
-Vierte Wahl (+):
+Dritte Auswahl (Wert):
 
-- So können Sie eine oder mehrere Bedingungen für dieselbe Aktion hinzufügen.
+- Ein konkreter Wert zur Definition dieser Regel, zum Beispiel: `[SPAM]`.
+
+Vierte Auswahl (+):
+
+- Damit können Sie weitere Regeln für die Aktion hinzufügen, die weiter unten definiert wird.
+
+**Ergebnis dieser Regeln**
+
+Beispiel: `Wenn der Betreff der Nachricht [SPAM] enthält`
 
 #### Aktionen
 
-In diesem Abschnitt können Sie die durchzuführenden Aktionen festlegen.
+Hier entscheiden Sie, wie der Filter eine E-Mail behandelt, wenn die oben genannten Bedingungen erfüllt sind.
 
-Sie haben die Wahl zwischen:
+Sie können zwischen diesen Arten von Aktionen wählen:
 
-- **Akzeptieren:** E-Mails, die die Bedingungen erfüllen, werden normalerweise empfangen.
-- **Auf eine lokale Adresse weiterleiten:** leitet E-Mails, die die Bedingungen erfüllen, an eine der E-Mail-Adressen Ihrer Domain weiter.
-- **Löschen:** E-Mails, die die Bedingungen erfüllen, werden gelöscht.
-- **Auf eine entfernte Adresse weiterleiten:** leitet die E-Mails, die die Bedingungen erfüllen, an die E-Mail-Adresse Ihrer Wahl weiter.
+- **Akzeptieren**: Die E-Mail verbleibt in Ihrem Posteingang.
+- **An eine lokale Adresse weiterleiten**: Leitet die Nachricht an eine Ihrer anderen E-Mail-Adressen auf derselben Domain weiter.
+- **Löschen**: Löscht die E-Mail ohne weitere Benachrichtigung aus Ihrem Posteingang.
+- **Auf eine andere Remote-Adresse weiterleiten**: Leitet die Nachricht an die von Ihnen angegebene E-Mail-Adresse weiter.
 
-### Filterbeispiele
+### Beispiele
 
 #### Spam löschen
 
 ||Header|Regel|Wert|Aktion|
 |---|---|---|---|---|
 |Filtereinstellungen|Betreff der Nachricht|enthält|[SPAM]|löschen|
-|Was der Filter tun wird|Wenn|enthält|die Suite "[SPAM]"|dann die Nachricht löschen.|
+|Was der Filter bewirkt|Wenn der Betreff|enthält|das Wort `[SPAM]`|dann die Nachricht löschen.|
 
-#### E-Mails eines Empfängers weiterleiten
+#### E-Mails eines bestimmten Senders weiterleiten
 
 ||Header|Regel|Wert|Aktion|
 |---|---|---|---|---|
 |Filtereinstellungen|Von|enthält|contact@domaintest.ovh|an eine Remote-Adresse weiterleiten: jean@otherdomain.ovh|
-|Was der Filter tun wird|Hat der|ist|contact@domaintest.ovh|Die E-Mail an jean@otherdomain.ovh weiterleiten|
+|Was der Filter bewirkt|Wenn der Absender|ist|contact@domaintest.ovh|dann die Nachricht an jean@otherdomain.ovh weiterleiten|
 
-#### An eine Mailingliste adressierte E-Mails weiterleiten
-
-||Header|Regel|Wert|Aktion|
-|---|---|---|---|---|
-|Filtereinstellungen|An|enthält|ml@mailing.com|Auf eine lokale Adresse weiterleiten: recipient@mypersonaldomain.ovh|
-|Was der Filter tun wird|Wenn die Nachricht an die Mailingliste versandt wurde|bezeichnet|ml@mailing.com|Senden Sie die Nachricht an meine andere Adresse: recipient@mypersonaldomain.ovh|
-
-#### E-Mails mit unerwünschten Angaben außer Absendern löschen
-
-Es sind zwei Filter hinzuzufügen:
+#### An eine Mailingliste adressierte E-Mail weiterleiten
 
 ||Header|Regel|Wert|Aktion|
 |---|---|---|---|---|
-|Filterparameter 1|Betreff der Nachricht|enthält|"money"|löschen|
-|Filterparameter 2|Von|enthält nicht|john@mybank.ovh|löschen|
+|Filtereinstellungen|An|enthält|ML@mailing.com|an eine lokale Adresse weiterleiten: recipient@mypersonaldomain.ovh|
+|Was der Filter bewirkt|Wenn die Nachricht an die Mailingliste versandt wurde|namens|ML@mailing.com|dann die Nachricht an meine andere Adresse weiterleiten: recipient@mypersonaldomain.ovh|
 
-Wenn der Betreff der Nachricht das Wort "money" enthält **und der** Absender der Nachricht nicht "john@mybank.ovh" ist, wird die Nachricht gelöscht:
+#### E-Mails mit unerwünschten Phrasen löschen, unter Ausnahme einer Absenderadresse
+
+Dieses Filterbeispiel besteht aus zwei Regeln:
+
+||Header|Regel|Wert|Aktion|
+|---|---|---|---|---|
+|Filtereinstellungen 1|Betreff der Nachricht|enthält|money|löschen|
+|Filtereinstellungen 2|Von|enthält nicht|john@mybank.ovh|löschen|
+
+**Was der Filter bewirkt**: Wenn der Betreff der Nachricht das Wort `money` enthält **und** der Absender der Nachricht nicht `john@mybank.ovh` ist, wird die Nachricht gelöscht.
+
+Im Kundencenter sieht diese Konfiguration so aus:
 
 ![E-Mails](images/img_3242.jpg){.thumbnail}
 
 ## Weiterführende Informationen
-
-[Erste Schritte mit MX Plan](https://docs.ovh.com/de/emails/allgemeines-zu-shared-e-mails/)
-
-[Posteingangsregeln über das OWA Interface](https://docs.ovh.com/de/emails/posteingangsregeln-in-owa-erstellen/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
