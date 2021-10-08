@@ -10,7 +10,7 @@ order: 2
 
 ## Objectif
 
-La création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou avancé peut occasionner différentes anomalies.
+Si certains pré-requis ne sont pas remplis, la création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou avancé peut occasionner différentes anomalies
 
 **Découvez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de modules en 1 clic**
 
@@ -80,6 +80,14 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 Pour installer votre module sur une base de données déjà utilisée, vous devrez utilisez le [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) d'installation d'un nouveau **Module en 1 clic**.
 
 Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
+
+> [!primary]
+>
+> Vous pourrez sauvegarder les données d'un seul site dans cette situation en utilisant un [script PHP ou une commande SSH](../exportation-bases-donnees/#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin_1).
+>
+> Pour toute question sur les manipulations à réaliser, contactez la [communauté OVHcloud](https://community.ovh.com) ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/).<br>
+> Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
+>
 
 ### « Le répertoire d'installation n'est pas vide »
 
