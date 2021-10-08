@@ -1,9 +1,9 @@
 ---
-title: 'Configurar la red en ProxMox VE en las gamas High Grade & SCALE'
+title: 'Configurar la red en Proxmox VE en las gamas High Grade & SCALE'
 slug: proxmox-network-hg-scale
-excerpt: 'Cómo configurar la red en ProxMox VE en las gamas High Grade & SCALE'
+excerpt: 'Cómo configurar la red en Proxmox VE en las gamas High Grade & SCALE'
 section: 'Uso avanzado'
-order: 1
+order: 5
 ---
 
 > [!primary]
@@ -16,7 +16,7 @@ order: 1
 
 En las gamas High Grade & SCALE, no es posible el funcionamiento de las IP failover en modo bridged (a través de MAC Virtuales). Por lo tanto, es necesario configurar las IP failover en modo enrutado o a través del vRack.
 
-**Esta guía explica cómo configurar la red en ProxMox VE.**
+**Esta guía explica cómo configurar la red en Proxmox VE.**
 
 ## Requisitos
 
