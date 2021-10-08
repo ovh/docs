@@ -6,7 +6,7 @@ section: Diagnostic
 order: 4
 ---
 
-**Dernière mise à jour le 16/09/2021**
+**Dernière mise à jour le 08/10/2021**
 
 ## Objectif
 
@@ -31,7 +31,7 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 ### « Erreur lors de la connexion à la base de données »
 
-#### Vérifier le site http://travaux.ovh.com/
+#### Vérifier les incidents en cours
 
 Vérifiez tout d'abord sur [http://travaux.ovh.com/](http://travaux.ovh.com/) que votre datacentre, votre cluster d'hébergement, votre serveur SQL privé ou Cloud Databases n'est pas concerné par un incident sur l'infrastructure OVHcloud. 
 
@@ -69,7 +69,7 @@ S'il s'agit d'un site Wordpress, ouvrez le fichier `wp-config.php`.
 define('DB_NAME', 'my_database');
  
 /** MySQL database username */
-define('DB_USER', 'my_database123');
+define('DB_USER', 'my_user');
  
 /** MySQL database password */
 define('DB_PASSWORD', 'my_password');
@@ -79,10 +79,10 @@ define('DB_HOST', 'my_server.mysql.db:port');
 ```
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la partie `Hébergements`{.action}, cliquez sur l'onglet `Bases de données`{.action} puis vérifiez la correspondance entre les éléments affichés et ceux présents dans le fichier `wp-config.php` :
 
-- **DB_NAME** correspond au `Nom de la base`;
-- **DB_USER** correspond au `Nom d'utilisateur`;
-- **DB_PASSWORD** correspond au [mot de passe de votre base de données](../modifier-mot-de-passe-base-de-donnees/);
-- **DB_HOST** correspond à la colonne `Adresse du serveur`.
+- **my_database** doit correspondre à ce qui est noté dans `Nom de la base`;
+- **my_user** doit correspondre à ce qui est noté dans `Nom d'utilisateur`;
+- **my_password** correspond au [mot de passe de votre base de données](../modifier-mot-de-passe-base-de-donnees/);
+- **my_server.mysql.db** doit correspondre à ce qui est noté dans `Adresse du serveur`.
 
 > [!primary]
 >
@@ -91,9 +91,9 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 > Contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) ensuite si nécessaire. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
-### Dépassement du quota autorisée de la base de données
+### Dépassement du quota autorisé de la base de données
 
-Vous avez reçu un mail d'OVHcloud, indiquant que la base de données de votre site a dépassé la taille autorisée sur le serveur. Votre base est donc passée en lecture seule, ce qui empêche toute modification de votre site.
+Vous avez reçu un e-mail de nos services indiquant que la quantité de données sur votre base dépasse la limite autorisée. Votre base est donc passée en lecture seule. Ceci empêche toute modification de votre site.
 
 ![mail_overquota](images/mail_overquota.png){.thumbnail}
 
@@ -131,7 +131,7 @@ Vous pouvez également migrer vos données sur une nouvelle base :
 
 #### Méthode 3 : supprimer les données inutiles
 
-Après avoir effectué une [sauvegarde de votre base de données](../exportation-bases-donnees/), vous pouvez enfin vous [connecter à votre interface PhpMyAdmin](../creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) afin de supprimer les données inutiles grâce aux commandes Drop, Delete et Truncate.
+Après avoir effectué une [sauvegarde de votre base de données](../exportation-bases-donnees/), connectez-vous à votre interface [PhpMyAdmin](../creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) afin de supprimer les données inutiles grâce aux commandes Drop, Delete et Truncate.
 
 Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de l'hébergement concerné : cliquez sur le bouton `...`{.action} concerné puis sur `Recalculer le quota`{.action}.
 
@@ -142,7 +142,7 @@ Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`
 
 #### Méthode 4 : optimiser votre base de données
 
-Pour optimiser votre base de données, suivez les instructions de ce [guide](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) puis relancer le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de l'hébergement concerné en cliquant sur le bouton `...`{.action} concerné.
+Pour optimiser votre base de données, suivez les instructions de notre guide [Configurer votre serveur de bases de données](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) puis relancer le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de votre hébergement en cliquant sur le bouton `...`{.action} de la base de données concernée.
 
 > [!warning]
 >
@@ -157,7 +157,7 @@ Le message suivant dans la partie `Bases de données`{.action} de votre [espace 
 
 Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](../configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
 
-Vous pouvez également optimiser votre base de données en suivant les instructions de ce [guide](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1).
+Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide [Configurer votre serveur de bases de données](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1).
 
 > [!primary]
 >
@@ -230,7 +230,7 @@ Dans cette situation, [vérifiez les identifiants indiqués](../connexion-base-d
 > **« mysqli_real_connect(): (HY000/1040): Too many connections »**
 >
 
-Le nombre de connexions actives maximal pour les bases de données livrées avec les hébergements mutualisés ([StartSQL](https://www.ovh.com/fr/hebergement-web/options-sql.xml)) est de **30**. Elle est de **50** pour les bases des serveurs [SQL privé](../premiers-pas-avec-sql-prive/) et [Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
+Le nombre de connexions actives maximal pour les bases de données livrées avec les hébergements mutualisés ([StartSQL](https://www.ovh.com/fr/hebergement-web/options-sql.xml)) est de **30**. Il est de **200** pour les bases des serveurs [SQL privé](../premiers-pas-avec-sql-prive/) et [Cloud Databases](https://www.ovh.com/fr/cloud-databases/). (Ce paramètre est modifiable dans la partie `Configuration`{.action} de votre serveur de base de données).
 
 Ce message apparaît lors de la [connexion à PhpMyAdmin](../creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) lorsque ce nombre maximal de connexions est dépassé.
 
