@@ -26,7 +26,7 @@ Pour exécuter certaines fonctions administratives sur votre serveur (l’instal
 > Ce guide suppose que l'utilisateur par défaut s'appelle « admin ».
 >
 
-### Définir le mot de passe root <a name="definirlemotdepasseroot"></a>
+### Définir le mot de passe root <a name="settingtherootpassword"></a>
 
 Pour commencer, établissez une [connexion SSH](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) à votre serveur avec votre utilisateur par défaut.
 
@@ -77,7 +77,7 @@ Entrez ensuite le mot de passe root.
 
 #### Pour les connexions via la console VNC intégrée dans votre espace client OVHcloud
 
-Pour commencer, [définissez le mot de passe root](#definirlemotdepasseroot)
+Pour commencer, [définissez le mot de passe root](#settingtherootpassword)
 
 Ensuite, accédez à la console VNC :
 
@@ -91,7 +91,7 @@ Rendez-vous dans l’onglet `console VNC`{.action}. A l'invite de commande, rens
 
 #### Pour les connexions utilisant des terminaux Linux
 
-Pour commencer, [définissez le mot de passe root](#definirlemotdepasseroot)
+Pour commencer, [définissez le mot de passe root](#settingtherootpassword)
 
 Activez ensuite l'authentification root et le mot de passe dans votre fichier **sshd_config** :
 
@@ -111,7 +111,7 @@ Une fois cette étape effectuée, vous devriez pouvoir accéder à votre serveur
 
 #### Pour les connexions utilisant Putty
 
-Pour commencer, [définissez le mot de passe root](#definirlemotdepasseroot)
+Pour commencer, [définissez le mot de passe root](#settingtherootpassword)
 
 Activez ensuite l'authentification root et le mot de passe dans votre fichier **sshd_config** :
 
