@@ -1,6 +1,6 @@
 ---
 title: Résoudre les erreurs les plus fréquentes liées aux bases de données 
-excerpt: Diagnostiquez les cas les plus courants d'erreurs liées aux bases de données
+excerpt: "Diagnostiquez les cas les plus courants d'erreurs liées aux bases de données"
 slug: erreurs-frequentes-bases-de-donnees
 section: Diagnostic
 order: 4
@@ -33,7 +33,7 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 #### Vérifier les incidents en cours
 
-Vérifiez tout d'abord sur [http://travaux.ovh.com/](http://travaux.ovh.com/) que votre datacentre, votre cluster d'hébergement, votre serveur SQL privé ou Cloud Databases n'est pas concerné par un incident sur l'infrastructure OVHcloud. 
+Vérifiez tout d'abord sur [http://travaux.ovh.com/](http://travaux.ovh.com/) que votre datacentre, votre cluster d'hébergement, votre serveur SQL privé ou Cloud Databases n'est pas concerné par un incident sur l'infrastructure OVHcloud.
 
 > [!primary]
 >
@@ -46,7 +46,7 @@ Vérifiez tout d'abord sur [http://travaux.ovh.com/](http://travaux.ovh.com/) qu
 
 #### Vérifier les identifiants de connexion à votre base de données <a name="config_file"></a>
 
-Connectez-vous en [FTP](../connexion-espace-stockage-ftp-hebergement-web/) à l'espace de stockage de fichiers sur votre hébergement et retrouvez le fichier de configuration de votre site (Par exemple, pour un site Wordpress, il s'agit du fichier **wp-config.php** situé dans le dossier contenant votre site).
+Connectez-vous en [FTP](../connexion-espace-stockage-ftp-hebergement-web/) à l'espace de stockage de fichiers sur votre hébergement et retrouvez le fichier de configuration de votre site (par exemple, pour un site Wordpress, il s'agit du fichier **wp-config.php** situé dans le dossier contenant votre site).
 
 > [!warning]
 >
@@ -61,7 +61,7 @@ Changez, si nécessaire, le [mot de passe de votre base de données](../modifier
 
 ##### Exemple pour Wordpress
 
-Si votre site affiche un message **« Erreur lors de la connexion à la base de données »** et qu'il n'est pas concerné par un [incident](http://travaux.ovh.com/), connectez-vous en [FTP](../connexion-espace-stockage-ftp-hebergement-web/) à votre hébergement puis ouvrez le répertoire contenant votre site (Par défaut, il s'agit du dossier `www`).
+Si votre site affiche un message **« Erreur lors de la connexion à la base de données »** et qu'il n'est pas concerné par un [incident](http://travaux.ovh.com/), connectez-vous en [FTP](../connexion-espace-stockage-ftp-hebergement-web/) à votre hébergement puis ouvrez le répertoire contenant votre site (par défaut, il s'agit du dossier `www`).
 
 S'il s'agit d'un site Wordpress, ouvrez le fichier `wp-config.php`.
 
@@ -77,6 +77,7 @@ define('DB_PASSWORD', 'my_password');
 /** MySQL hostname */
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
+
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la partie `Hébergements`{.action}, cliquez sur l'onglet `Bases de données`{.action} puis vérifiez la correspondance entre les éléments affichés et ceux présents dans le fichier `wp-config.php` :
 
 - **my_database** doit correspondre à ce qui est noté dans `Nom de la base`;
@@ -88,7 +89,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 >
 > Si ces manipulations ne vous permettent pas de rétablir l'accès à votre site, [sauvegardez votre base de données](../exportation-bases-donnees/) puis [restaurez-la à une date antérieure](../restaurer-importer-base-de-donnees/#1-restaurer-une-sauvegarde-existante) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 >
-> Contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) ensuite si nécessaire. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Contactez ensuite un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si nécessaire. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 ### Dépassement du quota autorisé de la base de données
@@ -97,19 +98,19 @@ Vous avez reçu un e-mail de nos services indiquant que la quantité de données
 
 ![mail_overquota](images/mail_overquota.png){.thumbnail}
 
-Trois méthodes vous permettront de débloquer votre base de données : 
+Trois méthodes vous permettront de débloquer votre base de données :
 
 #### Méthode 1 : passer votre abonnement sur une offre supérieure
 
-Si vous disposez d'une formule **Perso2014** ou **Pro2014**, nous vous conseillons dans cette situation de passer sur l'[offre d'hébergement supérieure](https://www.ovh.com/fr/hebergement-web/). Ce changement d'abonnement augmentera la taille de votre base de données ce qui la réouvrira automatiquement. Cette méthode est la plus simple et ne nécessite aucune compétence technique particulière.
+Si vous disposez d'une formule **Perso2014** ou **Pro2014**, nous vous conseillons dans cette situation de passer sur l'[offre d'hébergement supérieure](https://www.ovh.com/fr/hebergement-web/). Ce changement d'abonnement augmentera la taille de votre base de données, ce qui la réouvrira automatiquement. Cette méthode est la plus simple et ne nécessite aucune compétence technique particulière.
 
 > [!warning]
 >
-> L'augmentation de la taille de votre base de données peut être liée à un dysfonctionnement dans le code interne de votre site. 
+> L'augmentation de la taille de votre base de données peut être liée à un dysfonctionnement dans le code interne de votre site.
 >
-> Une anomalie peut entraîner une augmentation permanente de la taille de votre base de données auquel cas le changement d'offre d'hébergement serait inefficace.
+> Une anomalie peut entraîner une augmentation permanente de la taille de votre base de données, auquel cas le changement d'offre d'hébergement serait inefficace.
 >
-> Nous vous conseillons donc, si vous constatez une augmentation soudaine de la taille de votre base de données ou si vous disposez d'un site de type « Blog » normalement peu consommateur de données, de contacter immédiatement un [prestataire spécialisé](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous apporter un support sur ce sujet.
+> Nous vous conseillons donc, si vous constatez une augmentation soudaine de la taille de votre base de données, ou si vous disposez d'un site de type « blog » normalement peu consommateur de données, de contacter immédiatement un [prestataire spécialisé](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous apporter un support sur ce sujet.
 >
 
 Pour effectuer ce changement, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis cliquez sur `Hébergements`{.action}, puis sur l'hébergement concerné. Cliquez sur le bouton `...`{.action} dans la rubrique `Offre` sur la droite de votre écran puis sur `Changer d'offre`{.action}.
@@ -142,7 +143,7 @@ Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`
 
 #### Méthode 4 : optimiser votre base de données
 
-Pour optimiser votre base de données, suivez les instructions de notre guide [Configurer votre serveur de bases de données](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) puis relancer le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de votre hébergement en cliquant sur le bouton `...`{.action} de la base de données concernée.
+Pour optimiser votre base de données, suivez les instructions de notre guide « [Configurer votre serveur de bases de données](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) ». Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de votre hébergement, en cliquant sur le bouton `...`{.action} de la base de données concernée.
 
 > [!warning]
 >
@@ -157,11 +158,11 @@ Le message suivant dans la partie `Bases de données`{.action} de votre [espace 
 
 Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](../configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
 
-Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide [Configurer votre serveur de bases de données](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1).
+Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide « [Configurer votre serveur de bases de données](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) ».
 
 > [!primary]
 >
-> Si vous rencontrez des difficultés à diminuer l'utilisation des ressources sur votre serveur de bases de données et que vous ne souhaitez pas les augmenter,  contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Si vous rencontrez des difficultés à diminuer l'utilisation des ressources sur votre serveur de bases de données et que vous ne souhaitez pas les augmenter, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 ### Erreurs d'import de bases de données
@@ -172,7 +173,9 @@ Vous pouvez également optimiser votre base de données en suivant les instructi
 > **« #1044 - Access denied for user to database »**
 >
 
-Assurez-vous tout d'abord que votre base de données est vide depuis l'onglet `Bases de données`{.action} de l'hébergement concerné (cliquez sur le bouton `...`{.action} concerné puis sur `Recalculer le quota`{.action}) afin de [sauvegarder les données présentes](../exportation-bases-donnees/). Vous pouvez également cocher la case `Vider la base de données actuelle`{.action} juste avant de [lancer l'import](../mutualise-guide-importation-dune-base-de-donnees-mysql/#importer-votre-propre-sauvegarde-depuis-lespace-client) :
+Assurez-vous tout d'abord que votre base de données est vide depuis l'onglet `Bases de données`{.action} de l'hébergement concerné (cliquez sur le bouton `...`{.action} concerné puis sur `Recalculer le quota`{.action}) afin de [sauvegarder les données présentes](../exportation-bases-donnees/).
+
+Vous pouvez également cocher la case `Vider la base de données actuelle`{.action} juste avant de [lancer l'import](../mutualise-guide-importation-dune-base-de-donnees-mysql/#importer-votre-propre-sauvegarde-depuis-lespace-client) :
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
@@ -187,11 +190,14 @@ Ce message d'erreur signifie que la base de données que vous tentez d'importer 
 >```bash
 >CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 >```
-> Remplacez là par :
+>
+> Remplacez-la par :
+>
 >```bash
 >USE `Database-Name`;
 >```
->(`Database-Name` : Indiquez le nom de la base de données indiqué dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+>
+>(`Database-Name` : indiquez le nom de la base de données indiqué dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 >
 
 #### « MySQL server has gone away »
@@ -204,9 +210,9 @@ Ce message d'erreur apparaît lors de [l'import d'une base de données](../resta
 
 Pour résoudre cette anomalie, vous pouvez :
 
-- Augmenter la [quantité de mémoire vive (RAM)](../configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee), rendez vous sur le [serveur SQL privé](../premiers-pas-avec-sql-prive/) concerné dans la rubrique `Bases de données` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis `Changer la quantité de RAM`{.action}.
+- Augmenter la [quantité de mémoire vive (RAM)](../configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee). Pour cela, rendez vous sur le [serveur SQL privé](../premiers-pas-avec-sql-prive/) concerné dans la rubrique `Bases de données` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis sur `Changer la quantité de RAM`{.action}.
 
-- Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (Pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
+- Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
 
 - [Optimisez votre base de données](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) puis répétez les opérations d'export / import.
 
@@ -218,11 +224,11 @@ Pour résoudre cette anomalie, vous pouvez :
 > **« mysqli::real_connect(): (HY000/1045): Access denied for user »**
 >
 
-Ce message d'erreur peut apparaître lors de la connexion à votre base de données par [PhpMyAdmin](../creer-base-de-donnees/#acceder-a-linterface-phpmyadmin). Elle indique que les identifiants indiqués sont erronés.
+Ce message d'erreur peut apparaître lors de la connexion à votre base de données par [PhpMyAdmin](../creer-base-de-donnees/#acceder-a-linterface-phpmyadmin). Elle indique que les identifiants renseignés sont erronés.
 
 ![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
 
-Dans cette situation, [vérifiez les identifiants indiqués](../connexion-base-de-donnees-serveur-bdd/#en-pratique) et modifiez si besoin le [mot de passe de votre base de données](../modifier-mot-de-passe-base-de-donnees/).
+Dans cette situation, [vérifiez les identifiants renseignés](../connexion-base-de-donnees-serveur-bdd/#en-pratique) et modifiez si besoin le [mot de passe de votre base de données](../modifier-mot-de-passe-base-de-donnees/).
 
 #### « Too many connections »
 
@@ -230,14 +236,16 @@ Dans cette situation, [vérifiez les identifiants indiqués](../connexion-base-d
 > **« mysqli_real_connect(): (HY000/1040): Too many connections »**
 >
 
-Le nombre de connexions actives maximal pour les bases de données livrées avec les hébergements mutualisés ([StartSQL](https://www.ovh.com/fr/hebergement-web/options-sql.xml)) est de **30**. Il est de **200** pour les bases des serveurs [SQL privé](../premiers-pas-avec-sql-prive/) et [Cloud Databases](https://www.ovh.com/fr/cloud-databases/). (Ce paramètre est modifiable dans la partie `Configuration`{.action} de votre serveur de base de données).
+Le nombre maximal de connexions actives pour les bases de données livrées avec les hébergements mutualisés ([StartSQL](https://www.ovh.com/fr/hebergement-web/options-sql.xml)) est de **30**.
+
+Ce nombre est de **200** pour les bases des serveurs [SQL privé](../premiers-pas-avec-sql-prive/) et [Cloud Databases](https://www.ovh.com/fr/cloud-databases/). (Ce paramètre est modifiable dans la partie `Configuration`{.action} de votre serveur de base de données).
 
 Ce message apparaît lors de la [connexion à PhpMyAdmin](../creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) lorsque ce nombre maximal de connexions est dépassé.
 
 Dans cette situation, vous devrez [optimiser vos bases de données](../configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) afin de réduire le nombre de connexions actives.
 
 > [!warning]
-> 
+>
 > Pour toute question sur les manipulations à réaliser afin de réduire le nombre de connexions actives sur votre base de données, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
@@ -264,15 +272,15 @@ Vérifiez le nom du serveur à inscrire dans votre [espace client OVHcloud](http
 
 Disposer d'un serveur [Cloud Databases](https://docs.ovh.com/fr/clouddb/) vous permet de vous [connecter à vos bases de données](../connexion-base-de-donnees-serveur-bdd/) depuis votre ordinateur ou un serveur extérieur à l'infrastructure d'OVHcloud.
 
-Si cette connexion s'avère impossible, commencez par vérifier que vous avez bien [autorisé votre adresse IP publique](../../../clouddb/debuter-avec-clouddb/#autoriser-une-adresse-ip) à se connecter au serveur de bases de données.
+Si cette connexion s'avère impossible, commencez par vérifier que vous avez bien [autorisé votre adresse IP publique](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#autoriser-une-adresse-ip) à se connecter au serveur de bases de données.
 
-Si cette opération a bien été réalisée, contactez votre Fournisseur d'Accès Internet ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance dans cette situation.
+Si cette opération a bien été réalisée, contactez votre Fournisseur d'Accès à Internet ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance dans cette situation.
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
 [Premiers pas avec le service SQL Privé](../premiers-pas-avec-sql-prive/)
 
-[Premiers pas avec le service CloudDB](../../../clouddb/debuter-avec-clouddb/)
+[Premiers pas avec le service CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
