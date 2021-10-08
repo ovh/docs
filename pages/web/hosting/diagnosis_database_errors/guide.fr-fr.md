@@ -131,7 +131,7 @@ Vous pouvez également migrer vos données sur une nouvelle base :
 
 #### Méthode 3 : supprimer les données inutiles
 
-Après avoir effectué une [sauvegarde de votre base de données](../exportation-bases-donnees/), vous pouvez enfin vous [connecter à votre interface PhpMyAdmin](../creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) afin de supprimer les données inutiles.
+Après avoir effectué une [sauvegarde de votre base de données](../exportation-bases-donnees/), vous pouvez enfin vous [connecter à votre interface PhpMyAdmin](../creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) afin de supprimer les données inutiles grâce aux commandes Drop, Delete et Truncate.
 
 Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de l'hébergement concerné : cliquez sur le bouton `...`{.action} concerné puis sur `Recalculer le quota`{.action}.
 
