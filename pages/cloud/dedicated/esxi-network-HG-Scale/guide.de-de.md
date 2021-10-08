@@ -18,7 +18,7 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Failover-IPs im *Bridged*-
 
 > [!primary]
 >
-> Die bisher existierende Dokumentation deckt nur die Lösung über das vRack ab.
+> Die bisher existierende Dokumentation deckt lediglich die Lösung über das vRack ab.
 >
 
 **Diese Anleitung erklärt, wie Sie das Netzwerk mit VMware ESXi konfigurieren.**

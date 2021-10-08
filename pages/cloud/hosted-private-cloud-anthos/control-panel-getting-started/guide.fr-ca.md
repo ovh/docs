@@ -14,8 +14,8 @@ order: 2
 
 ## Prérequis
 
-- Posséder un produit [Hosted Private Cloud powered by Anthos](https://www.ovhcloud.com/fr/hosted-private-cloud/anthos/)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Posséder un produit [Hosted Private Cloud powered by Anthos](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/anthos/)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 > [!primary]
 > Prenez connaissance des capacités du service ainsi que des limitations connues pendant la phase de lancement, comme détaillé sur [cette page](../technical-capabilities/).
@@ -23,7 +23,7 @@ order: 2
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Hosted Private Cloud`{.action} dans la barre de navigation en haut de l’écran.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez `Hosted Private Cloud`{.action} dans la barre de navigation en haut de l’écran.
 
 Cliquez sur `Anthos`{.action} dans la barre latérale de gauche et sélectionnez votre offre Hosted Private Cloud powered by Anthos.
 
@@ -86,7 +86,7 @@ Dans la fenêtre qui apparaît, prenez connaissance des informations concernant 
 ### Créer et gérer des SVM NetApp (Stockage) <a name="netapp"></a>
 
 > [!primary]
-> Le stockage Dedicated NetApp est disponible uniquement avec le [Stateful Production Pack](https://www.ovhcloud.com/fr/hosted-private-cloud/anthos/). Il sera possible ultérieurement de faire évoluer un Hosted Private Cloud powered by Anthos.
+> Le stockage Dedicated NetApp est disponible uniquement avec le [Stateful Production Pack](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/anthos/). Il sera possible ultérieurement de faire évoluer un Hosted Private Cloud powered by Anthos.
 >
 
 Le stockage Dedicated NetApp s'appuie sur NetApp ONTAP et dispose de la technologie Trident, permettant à vos applications d'utiliser efficacement le stockage persistant via le standard Kubernetes Container Storage Interface (CSI) (création et modification de volumes, prise de snapshots, etc...).
@@ -118,7 +118,7 @@ Pour supprimer une entrée, utilisez le bouton `Supprimer`{.action} à droite de
 
 #### Utilisation du vRack avec Hosted Private Cloud powered by Anthos et les autres services OVHcloud <a name="vrack"></a>
 
-Chaque Hosted Private Cloud powered by Anthos est livré avec un [vRack OVHcloud](https://www.ovh.com/fr/solutions/vrack/). Veuillez pour cela prendre connaissances des informations données dans l’e-mail d’installation qui vous a été envoyé. D’autres services OVHcloud compatibles peuvent être attachés à ce vRack.
+Chaque Hosted Private Cloud powered by Anthos est livré avec un [vRack OVHcloud](https://www.ovh.com/ca/fr/solutions/vrack/). Veuillez pour cela prendre connaissances des informations données dans l’e-mail d’installation qui vous a été envoyé. D’autres services OVHcloud compatibles peuvent être attachés à ce vRack.
 
 ### Premiers pas <a name="firststeps"></a>
 
