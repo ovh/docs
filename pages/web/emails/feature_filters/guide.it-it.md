@@ -31,7 +31,7 @@ Ad esempio: vuoi che tutte le email contenenti "[SPAM]" nell'oggetto siano elimi
 
 > [!warning]
 >
-> Questa guida ti mostra come utilizzare il servizio MXplan storico. Per la nuova offerta, i filtri vengono gestiti direttamente tramite la Webmail OWA (****Outlook ****Web ****App). Utilizza la tabella qui sotto per identificare la tua offerta.
+> Questa guida ti mostra come utilizzare il servizio MXplan storico. Per la nuova offerta, i filtri vengono gestiti direttamente tramite la Webmail OWA (**O**utlook **W**eb **A**pp). Utilizza la tabella qui sotto per identificare la tua offerta.
 >
 
 Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
@@ -43,7 +43,7 @@ Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`.
 
-e seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra.
+E seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra.
 
 Nella scheda `Email`{.action} del tuo servizio MXplan, visualizzi la lista dei tuoi indirizzi email. Una colonna `Filtri` è visibile nella tabella degli account email. Clicca sull'icona dell'imbuto.
 
@@ -110,7 +110,7 @@ Puoi scegliere tra:
 ||Intestazione|Regola|Valore|Scenario possibile|
 |---|---|---|---|---|
 |Impostazioni del filtro|Oggetto del messaggio|contiene|[SPAM]|eliminazione|
-|Cosa farà il filtro|Se il soggetto del messaggio|contiene|la suite "[SPAM]"|elimina il messaggio.|
+|Cosa farà il filtro|Se il soggetto del messaggio|contiene|[SPAM]|elimina il messaggio.|
 
 #### Reindirizzare le email di un destinatario
 
@@ -123,8 +123,8 @@ Puoi scegliere tra:
 
 ||Intestazione|Regola|Valore|Scenario possibile|
 |---|---|---|---|---|
-|Impostazioni del filtro|A|contiene|ML@mailing.com|Reindirizza verso un indirizzo locale: recipient@mypersonaldomain.ovh|
-|Cosa farà il filtro|Se il messaggio è stato inviato alla Mailing List|chiamata|ML@mailing.com|quindi, reindirizza il messaggio al mio altro indirizzo: recipient@mypersonaldomain.ovh|
+|Impostazioni del filtro|A|contiene|ml@mailing.com|Reindirizza verso un indirizzo locale: recipient@mypersonaldomain.ovh|
+|Cosa farà il filtro|Se il messaggio è stato inviato alla Mailing List|chiamata|ml@mailing.com|quindi, reindirizza il messaggio al mio altro indirizzo: recipient@mypersonaldomain.ovh|
 
 #### Eliminare le email contenenti una menzione indesiderata, ad eccezione del mittente
 

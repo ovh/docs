@@ -123,8 +123,8 @@ Możesz wybrać:
 
 ||Nagłówek|Zasada|Wartość|Działanie|
 |---|---|---|---|---|
-|Parametry filtra|DO|zawiera|ML@mailing.com|Przekieruj na adres lokalny: recipient@mypersonaldomain.ovh|
-|Co zrobi filtr|Jeśli wiadomość została wysłana na listę mailingową|nazywane|ML@mailing.com|prześlij wiadomość na inny adres: recipient@mypersonaldomain.ovh|
+|Parametry filtra|DO|zawiera|ml@mailing.com|Przekieruj na adres lokalny: recipient@mypersonaldomain.ovh|
+|Co zrobi filtr|Jeśli wiadomość została wysłana na listę mailingową|nazywane|ml@mailing.com|prześlij wiadomość na inny adres: recipient@mypersonaldomain.ovh|
 
 #### Usuń e-maile zawierające niechcianą informację, z wyjątkiem nadawcy
 

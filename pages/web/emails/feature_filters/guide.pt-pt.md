@@ -31,7 +31,7 @@ Por exemplo: deseja que todo o e-mail que contenha "\[SPAM]" no assumpto seja el
 
 > [!warning]
 >
-> O seguinte guia é endereçado aos detentores da oferta MX Plan "Histórico". Para a nova oferta, a gestão dos filtros é feita diretamente através do webmail OWA (****Outlook ****Web ****Application). Identifique a sua oferta através da tabela abaixo.
+> O seguinte guia é endereçado aos detentores da oferta MX Plan "Histórico". Para a nova oferta, a gestão dos filtros é feita diretamente através do webmail OWA (**O**utlook **W**eb **A**pplication). Identifique a sua oferta através da tabela abaixo.
 >
 
 Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
@@ -123,8 +123,8 @@ Pode escolher entre:
 
 ||Cabeçalho|Règle|Valor|Cenários|
 |---|---|---|---|---|
-|Parâmetros do filtro|A|contém|ML@mailing.com|Reencaminhar para um endereço local: recipient@mypersonaldomain.ovh|
-|O que o filtro vai fazer|Se a mensagem foi enviada à Mailing-List|chamada|ML@mailing.com|então, enviar a mensagem para o meu outro endereço: recipient@mypersonaldomain.ovh|
+|Parâmetros do filtro|A|contém|ml@mailing.com|Reencaminhar para um endereço local: recipient@mypersonaldomain.ovh|
+|O que o filtro vai fazer|Se a mensagem foi enviada à Mailing-List|chamada|ml@mailing.com|então, enviar a mensagem para o meu outro endereço: recipient@mypersonaldomain.ovh|
 
 #### Eliminar os e-mails que contenham uma menção indesejável, com exceção de um remetente
 

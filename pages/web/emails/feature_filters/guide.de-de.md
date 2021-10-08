@@ -123,8 +123,8 @@ Sie haben die Wahl zwischen:
 
 ||Header|Regel|Wert|Aktion|
 |---|---|---|---|---|
-|Filtereinstellungen|An|enthält|ML@mailing.com|Auf eine lokale Adresse weiterleiten: recipient@mypersonaldomain.ovh|
-|Was der Filter tun wird|Wenn die Nachricht an die Mailingliste versandt wurde|bezeichnet|ML@mailing.com|Senden Sie die Nachricht an meine andere Adresse: recipient@mypersonaldomain.ovh|
+|Filtereinstellungen|An|enthält|ml@mailing.com|Auf eine lokale Adresse weiterleiten: recipient@mypersonaldomain.ovh|
+|Was der Filter tun wird|Wenn die Nachricht an die Mailingliste versandt wurde|bezeichnet|ml@mailing.com|Senden Sie die Nachricht an meine andere Adresse: recipient@mypersonaldomain.ovh|
 
 #### E-Mails mit unerwünschten Angaben außer Absendern löschen
 

@@ -110,7 +110,7 @@ Puede elegir entre:
 ||Cabecera|Regla|Valor|Escenarios posibles|
 |---|---|---|---|---|
 |Configuración del filtro|Asunto del mensaje|contiene|[SPAM]|eliminación|
-|Lo que el filtro hará|Si el asunto del mensaje|contiene|la suite "[SPAM]"|elimine el mensaje.|
+|Lo que el filtro hará|Si el asunto del mensaje|contiene|[SPAM]|elimine el mensaje.|
 
 #### Redirigir los emails de un destinatario
 
@@ -123,8 +123,8 @@ Puede elegir entre:
 
 ||Cabecera|Regla|Valor|Escenarios posibles|
 |---|---|---|---|---|
-|Configuración del filtro|A|contiene|ML@mailing.com|Redirigir a una dirección local: recipient@mypersonaldomain.ovh|
-|Lo que el filtro hará|Si el mensaje ha sido enviado a la lista de correo|denominada|ML@mailing.com|reenvíe el mensaje a mi otra dirección: recipient@mypersonaldomain.ovh|
+|Configuración del filtro|A|contiene|ml@mailing.com|Redirigir a una dirección local: recipient@mypersonaldomain.ovh|
+|Lo que el filtro hará|Si el mensaje ha sido enviado a la lista de correo|denominada|ml@mailing.com|reenvíe el mensaje a mi otra dirección: recipient@mypersonaldomain.ovh|
 
 #### Eliminar los mensajes de correo que contengan una mención no deseada, a excepción de un remitente
 

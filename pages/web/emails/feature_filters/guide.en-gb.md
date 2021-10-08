@@ -119,8 +119,8 @@ You can choose between:
 
 ||Header|Ruler|Value|Action|
 |---|---|---|---|---|
-|Filter settings|WHETHER YOU'RE ON FOOT|includes|ML@mailing.com|Redirect to a local address: recipient@mypersonaldomain.ovh|
-|What the filter will do|If the message was sent to the mailing list|called|ML@mailing.com|then forward the message to my other address: recipient@mypersonaldomain.ovh|
+|Filter settings|WHETHER YOU'RE ON FOOT|includes|ml@mailing.com|Redirect to a local address: recipient@mypersonaldomain.ovh|
+|What the filter will do|If the message was sent to the mailing list|called|ml@mailing.com|then forward the message to my other address: recipient@mypersonaldomain.ovh|
 
 #### Delete emails containing an unwanted comment, except for a sender
 
