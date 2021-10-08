@@ -7,7 +7,7 @@ section: 'Email address features'
 order: 04
 ---
 
-**Last updated 12th August 2020**
+**Last updated 27th September 2021**
 
 ## Objective
 
@@ -26,8 +26,17 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 - an MX Plan email solution or a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
+> [!warning]
+>
+> The following instructions are only eligible for the legacy MX Plan solution. For our current solution, you can manage filters directly via OWA (**O**utlook **W**eb **A**pplication). You can identify which version you are using with the table below.
+>
 
-## Instructions
+MX Plan legacy version|MX Plan new version|
+|---|---|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the section "Plan".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the section "Summary".|
+|Continue reading this guide in the `[Instructions](#oldmxplan)` section below.|Continue with our guide regarding [Inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/).|
+
+## Instructions <a name="oldmxplan"></a>
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar.
 
@@ -53,7 +62,7 @@ A new window will open which contains the list of filters currently configured f
 - **Enable filter:** This determines whether the filter will be applied to the inbox (for example, you can temporarily disable a filter without deleting it by unchecking this option).
 
 
-#### Rules
+#### <u>Rules:</u>
 
 In this section you can configure the filter conditions, also known as inbox rules.
 

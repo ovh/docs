@@ -106,7 +106,7 @@ Vous avez le choix entre :
 ||En-tête|Règle|Valeur|Action|
 |---|---|---|---|---|
 |Paramètres du filtre|Sujet du message|contient|[SPAM]|suppression|
-|Ce que le filtre va faire|Si le sujet du message|contient|la suite "[SPAM]"|alors, supprimer le message.|
+|Ce que le filtre va faire|Si le sujet du message|contient|[SPAM]|alors, supprimer le message.|
 
 #### Rediriger les e-mails d'un destinataire
 
@@ -119,8 +119,8 @@ Vous avez le choix entre :
 
 ||En-tête|Règle|Valeur|Action|
 |---|---|---|---|---|
-|Paramètres du filtre|À|contient|ML@mailing.com|Rediriger vers une adresse locale : recipient@mypersonaldomain.ovh|
-|Ce que le filtre va faire|Si le message a été envoyé à la Mailing-List|appelée|ML@mailing.com|alors, renvoyer le message vers mon autre adresse : recipient@mypersonaldomain.ovh|
+|Paramètres du filtre|À|contient|ml@mailing.com|Rediriger vers une adresse locale : recipient@mypersonaldomain.ovh|
+|Ce que le filtre va faire|Si le message a été envoyé à la Mailing-List|appelée|ml@mailing.com|alors, renvoyer le message vers mon autre adresse : recipient@mypersonaldomain.ovh|
 
 #### Supprimer les e-mails contenant une mention indésirable, à l'exception d'un expéditeur
 
