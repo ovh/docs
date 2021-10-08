@@ -65,7 +65,7 @@ Une nouvelle fenêtre s'affiche. Cliquez sur le bouton `+`{.action} à droite de
 
 Vous pouvez déléguer votre service MXplan à plusieurs identifiants OVHcloud
 
-### Deleguer un ou plusieurs comptes e-mails a un identifiant
+### Déléguer un ou plusieurs comptes e-mails a un identifiant
 
 Cette délégation vous permet de changer le mot de passe du compte e-mail concerné et de gérer ses filtres.
 
