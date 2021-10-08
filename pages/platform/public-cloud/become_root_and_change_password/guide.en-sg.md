@@ -33,7 +33,7 @@ First, establish an [SSH connection](https://docs.ovh.com/sg/en/public-cloud/pub
 
 At the command line, set a password for the root user (for security reasons, the password will not be shown as you type it):
 
-```sh
+```bash
 ~$ sudo passwd root
 Enter new UNIX password:
 Retype new UNIX password:
@@ -45,7 +45,7 @@ successfully
 
 To update the installed software packages on your server, type the following command at the command line:
 
-```
+```bash
 ~$ sudo apt-get update
 ```
 
@@ -53,13 +53,13 @@ To update the installed software packages on your server, type the following com
 
 To update your server's operating system, type the following command at the command line:
 
-```
+```bash
 ~$ sudo yum update
 ```
 
 ### Edit a configuration file
 
-```
+```bash
 ~$ sudo vi /etc/hosts.allow
 ```
 
@@ -67,7 +67,7 @@ To update your server's operating system, type the following command at the comm
 
 To become the root user, type the following command at the command line:
 
-```
+```bash
 ~$ sudo su -
 ~#
 ```
@@ -97,7 +97,7 @@ First, [set the root password](#settingtherootpassword)
 
 Next, enable root login and password authentication in your **sshd_config** file:
 
-```
+```bash
 ~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 
 ~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
@@ -105,7 +105,7 @@ Next, enable root login and password authentication in your **sshd_config** file
 
 Restart the SSH service:
 
-```
+```bash
 ~$ service sshd restart
 ```
 
@@ -117,7 +117,7 @@ First, [set the root password](#settingtherootpassword)
 
 Next, enable root login and password authentication in your **sshd_config** file:
 
-```
+```bash
 ~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 
 ~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
@@ -125,7 +125,7 @@ Next, enable root login and password authentication in your **sshd_config** file
 
 Restart the SSH service:
 
-```
+```bash
 ~$ service sshd restart
 ```
 
