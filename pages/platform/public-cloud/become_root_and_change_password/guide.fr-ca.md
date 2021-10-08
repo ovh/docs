@@ -32,7 +32,7 @@ Pour commencer, établissez une [connexion SSH](https://docs.ovh.com/ca/fr/publi
 
 Utilisez la commande ci-dessous pour définir un mot de passe pour l’utilisateur root (pour des raisons de sécurité, celui-ci ne sera pas affiché lors de la saisie) :
 
-```sh
+```bash
 ~$ sudo passwd root
 Enter new UNIX password:
 Retype new UNIX password:
@@ -44,7 +44,7 @@ successfully
 
 Pour mettre à jour les packages logiciels installés sur votre serveur, entrez la commande suivante :
 
-```
+```bash
 ~$ sudo apt-get update
 ```
 
@@ -52,13 +52,13 @@ Pour mettre à jour les packages logiciels installés sur votre serveur, entrez 
 
 Pour mettre à jour le système d'exploitation de votre serveur, entrez la commande suivante :
 
-```
+```bash
 ~$ sudo yum update
 ```
 
 ### Modifier le fichier de configuration
 
-```
+```bash
 ~$ sudo vi /etc/hosts.allow
 ```
 
@@ -66,7 +66,7 @@ Pour mettre à jour le système d'exploitation de votre serveur, entrez la comma
 
 Pour devenir l'utilisateur root, tapez la commande suivante :
 
-```
+```bash
 ~$ sudo su -
 ~#
 ```
@@ -96,7 +96,7 @@ Pour commencer, [définissez le mot de passe root](#définirlemotdepasseroot)
 
 Ensuite, activez l'authentification root et le mot de passe dans votre fichier **sshd_config** :
 
-```
+```bash
 ~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 
 ~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
@@ -104,7 +104,7 @@ Ensuite, activez l'authentification root et le mot de passe dans votre fichier *
 
 Redémarrer le service SSH :
 
-```
+```bash
 ~$ service sshd restart
 ```
 
@@ -116,7 +116,7 @@ Pour commencer, [définissez le mot de passe root](#définirlemotdepasseroot)
 
 Ensuite, activez l'authentification root et le mot de passe dans votre fichier **sshd_config** :
 
-```
+```bash
 ~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 
 ~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
@@ -124,7 +124,7 @@ Ensuite, activez l'authentification root et le mot de passe dans votre fichier *
 
 Redémarrer le service SSH :
 
-```
+```bash
 ~$ service sshd restart
 ```
 
