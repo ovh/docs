@@ -20,16 +20,16 @@ Retrouvez ci-dessous les capacités techniques et les limites de l'offre Hosted 
 
 ### Capacités techniques et limites connues
 
-- **Réseau public** : Chaque service est livré avec un bloc de 50 adresses IPv4 utilisables. Des adresses IP supplémentaires pourront être commandées dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) (256 maximum par service).
+- **Réseau public** : Chaque service est livré avec un bloc de 50 adresses IPv4 utilisables. Des adresses IP supplémentaires pourront être commandées dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) (256 maximum par service).
 
-- **Capacité du cluster utilisateur** : Les packs de production comprennent 15 noeuds de travail bare metal utilisables pour vos clusters et conteneurs Kubernetes. Des noeuds bare metal supplémentaires pourront être ajoutés dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). La solution Hosted Private Cloud powered by Anthos peut gérer plusieurs clusters Kubernetes, avec un total de 100 noeuds bare metal exécutant 100 pods chacun. Si vos besoins dépassent ces seuils, veuillez contacter votre commercial OVHcloud.
+- **Capacité du cluster utilisateur** : Les packs de production comprennent 15 noeuds de travail bare metal utilisables pour vos clusters et conteneurs Kubernetes. Des noeuds bare metal supplémentaires pourront être ajoutés dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). La solution Hosted Private Cloud powered by Anthos peut gérer plusieurs clusters Kubernetes, avec un total de 100 noeuds bare metal exécutant 100 pods chacun. Si vos besoins dépassent ces seuils, veuillez contacter votre commercial OVHcloud.
 
 - **Persistent storage** : Grâce au stockage NetApp dédié inclus (dans le Stateful Production Pack), chaque déploiement peut prendre en charge jusqu'à 1 000 machines virtuelles de stockage (SVM) et un total de 2 000 volumes par instance NetApp. Si vous avez besoin d'un stockage au-delà de ces limites, veuillez contacter votre commercial OVHcloud.
 
 - **Compatibilité vRack** : Dans un premier temps, il ne sera pas possible de connecter un déploiement Anthos à un vRack existant. Cette option sera ajoutée ultérieurement. Vous pouvez cependant déplacer des services existants vers le vRack livré avec votre Hosted Private Cloud powered by Anthos.
 
 > [!primary]
-> Veuillez également consulter notre [page produit](https://www.ovhcloud.com/fr/hosted-private-cloud/anthos/)) pour en savoir plus sur les détails techniques et les spécifications du service.
+> Veuillez également consulter notre [page produit](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/anthos/) pour en savoir plus sur les détails techniques et les spécifications du service.
 >
 
 ### FAQ technique concernant le service

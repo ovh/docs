@@ -14,8 +14,8 @@ order: 2
 
 ## Requirements
 
-- a [Hosted Private Cloud powered by Anthos service](https://www.ovhcloud.com/en-gb/hosted-private-cloud/anthos/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- a [Hosted Private Cloud powered by Anthos service](https://www.ovhcloud.com/en-ie/hosted-private-cloud/anthos/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 > [!primary]
 > Be sure to consider the capabilities of the service as well as the known limitations during the launch phase, as detailed on [this page](../technical-capabilities/).
@@ -23,7 +23,7 @@ order: 2
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Hosted Private Cloud`{.action} in the top navigation bar.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Hosted Private Cloud`{.action} in the top navigation bar.
 
 Open `Anthos`{.action} in the left-hand sidebar and select your Hosted Private Cloud powered by Anthos deployment.
 
@@ -86,7 +86,7 @@ In the popup window, take note of the information about the cancellation process
 ### Creating and managing NetApp SVMs (Storage) <a name="netapp"></a>
 
 > [!primary]
-> Dedicated NetApp storage is only available with the [Stateful Production Pack](https://www.ovhcloud.com/en-gb/hosted-private-cloud/anthos/). It will be possible to upgrade a Hosted Private Cloud powered by Anthos deployment.
+> Dedicated NetApp storage is only available with the [Stateful Production Pack](https://www.ovhcloud.com/en-ie/hosted-private-cloud/anthos/). It will be possible to upgrade a Hosted Private Cloud powered by Anthos deployment.
 >
 
 The Dedicated NetApp storage is powered by NetApp ONTAP and features Trident, enabling your applications to efficiently make use of persistent storage via the Kubernetes Container Storage Interface (CSI) standard (creating and modifiying volumes, taking snapshots, etc.).
@@ -118,7 +118,7 @@ To delete an entry, use the respective `Delete`{.action} button in the table. On
 
 #### Using the vRack with Hosted Private Cloud powered by Anthos and other OVHcloud services <a name="vrack"></a>
 
-Each Hosted Private Cloud powered by Anthos is delivered with a [OVHcloud vRack](https://www.ovh.co.uk/solutions/vrack/). Please take note of the information disclosed in the installation email. Other compatible OVHcloud services can be attached to this vRack.
+Each Hosted Private Cloud powered by Anthos is delivered with a [OVHcloud vRack](https://www.ovh.ie/solutions/vrack/). Please take note of the information disclosed in the installation email. Other compatible OVHcloud services can be attached to this vRack.
 
 ### First steps <a name="firststeps"></a>
 

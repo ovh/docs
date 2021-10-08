@@ -21,16 +21,16 @@ This page provides an overview of the technical capabilities and limitations of 
 
 ### Technical capabilities and known limits
 
-- **Public network**: Each service is delivered with a block of 50 usable IPv4 addresses. Additional IP addresses will be orderable in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (256 maximum per service).
+- **Public network**: Each service is delivered with a block of 50 usable IPv4 addresses. Additional IP addresses will be orderable in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) (256 maximum per service).
 
-- **User cluster capacity**: The production packs include 15 bare metal nodes which can be used for your Kubernetes clusters and containers. Additional bare metal nodes can be added in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). The OVHcloud Hosted Private Cloud powered by Anthos solution can handle multiple Kubernetes clusters, with a total of 100 bare metal nodes running 100 pods each. (Please contact your OVHcloud sales representative if your needs exceed these thresholds.)
+- **User cluster capacity**: The production packs include 15 bare metal nodes which can be used for your Kubernetes clusters and containers. Additional bare metal nodes can be added in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). The OVHcloud Hosted Private Cloud powered by Anthos solution can handle multiple Kubernetes clusters, with a total of 100 bare metal nodes running 100 pods each. (Please contact your OVHcloud sales representative if your needs exceed these thresholds.)
 
 - **Persistent storage**: With the included Dedicated NetApp storage (powered by ONTAP), each deployment can support up to 1000 Storage Virtual Machines (SVM) and a total of 2000 volumes per NetApp instance. (Please contact your OVHcloud sales representative if you require storage beyond these limits.) NetApp is only available with the Stateful Production Pack.
 
 - **vRack compatibility**: At first, it will not be possible to connect an Hosted Private Cloud powered by Anthos deployment to an existing vRack. (This option will be added at a later stage.) You can however move existing services to the vRack delivered with your Hosted Private Cloud powered by Anthos.
 
 > [!primary]
-> Please also refer to our [product page](https://www.ovhcloud.com/en-gb/hosted-private-cloud/anthos/) to learn the technical details and specifications of the service.
+> Please also refer to our [product page](https://www.ovhcloud.com/en-au/hosted-private-cloud/anthos/) to learn the technical details and specifications of the service.
 >
 
 ### Technical FAQ regarding the service
