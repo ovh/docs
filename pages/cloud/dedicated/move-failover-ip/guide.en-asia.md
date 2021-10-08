@@ -29,9 +29,9 @@ With this technology, you can switch IP addresses from one solution to another i
 ## Instructions
 
 > [!primary]
-> When an IP block with unique virtual MAC addresses is moved between servers, the vmacs are temporarily suspended. They will appear on the new server once the move is done. 
+> When an IP block containing unique virtual MAC addresses is moved between two servers, those addresses are temporarily suspended. They will appear on the new server once the move is complete.
 >
-> On the otherhand, blocks with duplicate virtual MAC addresses cannot be moved. You will be prompted to delete the duplicate virtual MAC addresse(s) on the block to be moved.
+> On the other hand, blocks containing duplicate virtual MAC addresses cannot be moved. You must first delete the duplicate virtual MAC address on the block to be moved.
 >
 
 ### Moving an IP from the OVHcloud Control Panel
