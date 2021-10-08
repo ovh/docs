@@ -17,7 +17,6 @@ Creating a project is the first step in deploying [Public Cloud instances](https
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- a valid [payment method](https://docs.ovh.com/ca/en/billing/manage-payment-methods/) saved in your OVHcloud account
 
 ## Instructions
 
@@ -25,13 +24,9 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 ![first connection](images/firstconnection.png){.thumbnail}
 
-If this is your first time creating a Public Cloud project, it is possible to add a voucher. The available voucher can be retrieved [here](https://www.ovhcloud.com/en-ca/public-cloud/).
+You can now add a voucher if you have one. Only a voucher provided for your OVHcloud branch can be used.
 
-> [!primary]
-> It is necessary to use the voucher provided for your OVHcloud branch.
->
-
-> [!alert]
+> [!warning]
 > If you had previously created a Public Cloud project in your account and deleted it, you do not qualify to use the voucher.
 >
 

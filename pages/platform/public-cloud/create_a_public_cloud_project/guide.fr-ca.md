@@ -17,7 +17,6 @@ La création d’un projet est la première étape indispensable pour déployer 
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Disposer d’un [mode de paiement](https://docs.ovh.com/ca/fr/billing/manage-payment-methods/) valide et enregistré dans votre compte OVHcloud
 
 ## En pratique
 
@@ -27,17 +26,13 @@ Cliquez ensuite sur `Créez votre premier projet OVH Public Cloud`{.action}.
 
 ![première connexion](images/firstconnection.png){.thumbnail}
 
-S’il s’agit de votre premier projet Public Cloud, il est possible d’ajouter un bon d'achat. Le bon d'achat disponible peut être récupéré [ici](https://www.ovhcloud.com/fr-ca/public-cloud/).
+Si vous disposez d'un bon d'achat, vous pouvez alors le renseigner. Seuls les bons d'achats fournis pour votre filiale OVHcloud peuvent être utilisés.
 
-> [!primary]
-> Il est nécessaire d’utiliser le bon d’achat fourni pour votre filiale OVHcloud.
->
-
-> [!alert]
+> [!warning]
 > Si vous aviez précédemment créé un projet Public Cloud sur votre compte et que vous l'avez supprimé, vous ne pourrez utiliser le bon d'achat.
 >
 
-Donnez un nom à votre projet, prenez connaissances des contrats et acceptez-les, puis cliquez sur le bouton `Continuer`{.action}.
+Donnez un nom à votre projet, prenez connaissance des contrats et acceptez-les, puis cliquez sur le bouton `Continuer`{.action}.
 
 ![name project](images/confirmvoucher.png){.thumbnail}
 
