@@ -10,9 +10,9 @@ order: 2
 
 ## Objectif
 
-Si certains pré-requis ne sont pas remplis, la création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou avancé peut occasionner différentes anomalies
+Si certains pré-requis ne sont pas remplis, la création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou avancé peut occasionner différentes anomalies.
 
-**Découvez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de modules en 1 clic**
+**Découvrez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de modules en 1 clic**
 
 > [!warning]
 >
@@ -34,7 +34,7 @@ Si certains pré-requis ne sont pas remplis, la création d'un [Module en 1 clic
 > Nous indiquons ici les erreurs les plus courantes. Si vous rencontrez une autre anomalie, consultez notre [FAQ sur les hébergements Web](../faq-hebergement/).
 >
 
-### « Une erreur s'est produite lors du chargement des informations. (You need at least one free database) »
+### « Une erreur s'est produite lors du chargement des informations (You need at least one free database) »
 
 ![1freeDB](images/1freeDB.png){.thumbnail}
 
@@ -77,7 +77,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 #### Solution n°4 : installer votre module sur une base de données déjà utilisée
 
-Pour installer votre module sur une base de données déjà utilisée, vous devrez utilisez le [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) d'installation d'un nouveau **Module en 1 clic**.
+Pour installer votre module sur une base de données déjà utilisée, vous devrez utiliser le [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) d'installation d'un nouveau **Module en 1 clic**.
 
 Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
 
@@ -103,7 +103,7 @@ Pour relier votre domaine à un autre répertoire, cliquez sur `Modifier le doma
 
 Vous pouvez également vous connecter à votre hébergement via [FTP](../connexion-espace-stockage-ftp-hebergement-web/), puis supprimer ou déplacer le contenu du dossier, après l'avoir sauvegardé.
 
-### « Une erreur s'est produite lors du chargement des informations. (There is not enough space on your hosting (you need at least xxx MB)) »
+### « Une erreur s'est produite lors du chargement des informations (There is not enough space on your hosting (you need at least xxx MB)) »
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
 
@@ -113,7 +113,7 @@ Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-h
 
 > [!primary]
 >
-> Pour toute question sur les données à supprimer pour dimininuer la quantité de données sur votre hébergement, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).<br>
+> Pour toute question sur les données à supprimer afin de dimininuer la quantité de données sur votre hébergement, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).<br>
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
@@ -121,7 +121,7 @@ Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-h
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
-Après avoir lancé l'installation de votre module en mode avancé, vous avez reçu un e-mail indiquant que votre module ne peut pas se connecter à la base de données indiquée. 
+Après avoir lancé l'installation de votre module en mode avancé, vous avez reçu un e-mail indiquant que votre module ne peut pas se connecter à la base de données indiquée.
 
 Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
 
@@ -153,7 +153,7 @@ Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas 
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Vous avez lancé l'installation d'un module 1 clic en [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) sur une base de données située sur un [serveur SQL privé](../premiers-pas-avec-sql-prive/) ou [CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/). Vous avez reçu ce message d'erreur par e-mail. Il signifie que l'utilisateur noté lors de l'installation ne possède pas les droits suffisants sur la base de données ou que les identifiants indiqués sont incorrects.
+Vous avez lancé l'installation d'un module en 1 clic en [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) sur une base de données située sur un [serveur SQL privé](../premiers-pas-avec-sql-prive/) ou [CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/). Vous avez reçu ce message d'erreur par e-mail. Il signifie que l'utilisateur noté lors de l'installation ne possède pas les droits suffisants sur la base de données ou que les identifiants indiqués sont incorrects.
 
 Dans cette situation, modifiez tout d'abord les [droits de l'utilisateur](../creer-bases-de-donnees-et-utilisateurs/#gerer-les-droits-des-utilisateurs) concerné, afin qu'il dispose des droits **Administrateur** ou en **Lecture/écriture** sur la base de données.
 
@@ -174,11 +174,11 @@ Cliquez sur l’onglet `Multisite`{.action} puis effectuez les vérifications su
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
-Après avoir réalisé toutes les sauvegardes nécessaires, [supprimez votre module](#supprimer-le-module) puis sa [base de données](#supprimer-la-base). Puis relancez son installation sur le nom de domaine souhaité.
+Après avoir réalisé toutes les sauvegardes nécessaires, [supprimez votre module](#supprimer-le-module) puis sa [base de données](#supprimer-la-base). Relancez ensuite son installation sur le nom de domaine souhaité.
 
 ### Votre ancien site continue de s'afficher
 
-Cette anomalie peut avoir plusieurs causes : 
+Cette anomalie peut avoir plusieurs causes :
 
 - Vous avez effectué récemment un changement dans votre zone ou vos serveurs [DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) ou un [transfert de nom de domaine](../../domains/transferer-mon-domaine-generique/). Patientez jusqu'à ce que ces opérations soient finalisées (48 heures pour des changements dans vos DNS). Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.
 
