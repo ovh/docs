@@ -216,7 +216,7 @@ Se hai dubbi riguardo al periodo di utilizzo, ti consigliamo di scegliere la fat
 
 Una volta confermate le informazioni inserite, clicca sul pulsante `Crea un’istanza`{.action} per completare l’operazione. L’installazione dell’istanza potrebbe richiedere alcuni minuti.
 
-### Step 4: accedi alla tua istanza
+### Step 4: accedi alla tua istanza <a name="connect-to-instance"></a>
 
 Accedi allo [Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. A questo punto clicca su `Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.  La tua istanza è pronta quando la colonna “Stato” nella tabella è impostata su “Attivo”.  Per verificarlo, clicca sul pulsante “Refresh” situato accanto a `Crea un’istanza`{.action}.
 

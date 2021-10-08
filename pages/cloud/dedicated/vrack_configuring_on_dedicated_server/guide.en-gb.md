@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure the vRack on two or more dedicated servers'
 section: 'vRack'
 ---
 
-**Last updated 30th September 2021**
+**Last updated 21st June 2018**
 
 ## Objective
 

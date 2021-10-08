@@ -63,7 +63,7 @@ A instalação de uma oferta Microsoft 365 Apps for entreprise num computador pa
 
 Edite o ficheiro de `configuration.xml` e depois descarregue as seguintes linhas:
 
-```bash
+```xml
 Display Level="None" AcceptEULA="True"
 Property Name="SharedComputerLicensing" Value="1"
 ```
@@ -85,15 +85,15 @@ e
 >
 > A execução destes comandos pode levar vários minutos.
 
-- Abra o editor do registo windows executando o "Regedit" e siga o seguinte caminho:
+- Abra o editor do registo windows executando o `Regedit` e siga o seguinte caminho:
 
-```bash
+```powershell
 HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration
 ```
 
 - Verifique a seguinte chave:
 
-```bash
+```powershell
 SharedComputerLicensing
 ```
 
@@ -111,6 +111,6 @@ Certifique-se de que o seu valor é de `1`. Se esta chave não existir, pode cri
 ![emails](images/4726.png){.thumbnail}
 
 
-## Saiba mais
+## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

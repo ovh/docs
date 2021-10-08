@@ -7,7 +7,7 @@ section: Office
 order: 4
 ---
 
-**Last updated 30th September 2021**
+**Last updated 6th September 2021**
 
 ## Objective
 
@@ -58,7 +58,7 @@ Installing a Microsoft 365 Apps for enterprise solution on a shared computer usi
 
 Edit the `configuration.xml` file, then uncomment the following lines:
 
-```bash
+```xml
 Display Level="None" AcceptEULA="True"
 Property Name="SharedComputerLicensing" Value="1"
 ```
@@ -79,15 +79,15 @@ If these lines do not exist, you can copy and paste them into the file.
 >
 > These commands can take several minutes to complete.
 
-- Open the Windows registry editor by running \`Regedit\`, then follow this path:
+- Open the Windows registry editor by running `Regedit`, then follow this path:
 
-```bash
+```powershell
 HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration
 ```
 
 - Check the following key:
 
-```bash
+```powershell
 SharedComputerLicensing
 ```
 
