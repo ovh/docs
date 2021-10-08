@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-On the High Grade & SCALE ranges, it is not possible to operate failover IPs in bridged mode (via virtual MACs). It is therefore necessary to configure failover IPs in routed mode or via the vRack.
+On the High Grade & SCALE ranges, it is not possible to operate failover IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure failover IPs in routed mode or via the vRack.
 
 **This guide explains how to configure the network in Proxmox VE.**
 
@@ -120,9 +120,9 @@ iface ens18 inet static
 
 - a public block of IP addresses in your account, with a minimum of four addresses
 - your chosen private IP address range
-- a [vRack compatible server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
+- a [vRack compatible dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
 - a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 
 #### Target configuration schema

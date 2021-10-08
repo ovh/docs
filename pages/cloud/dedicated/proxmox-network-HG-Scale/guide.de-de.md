@@ -14,7 +14,7 @@ order: 1
 
 ## Ziel
 
-Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Failover-IPs im Bridged-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Failover-IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
+Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Failover-IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Failover-IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
 
 **Diese Anleitung erklärt, wie Sie das Netzwerk mit Proxmox VE konfigurieren.**
 
