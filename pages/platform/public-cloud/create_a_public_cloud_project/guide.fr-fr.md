@@ -10,24 +10,24 @@ order: 1
 
 ## Objectif
 
-La création d’un projet est la première étape indispensable pour déployer des instances [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/).
+La création d’un projet est la première étape indispensable pour déployer des [instances Public Cloud](https://www.ovhcloud.com/fr/public-cloud/).
 
 **Ce guide vous guidera à travers les étapes de création de votre premier projet Public Cloud.**
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Disposer d’un [mode de paiement](https://docs.ovh.com/ca/fr/billing/manage-payment-methods/) valide et enregistré dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disposer d’un [mode de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/) valide et enregistré dans votre compte OVHcloud
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), et cliquez sur le menu `Public Cloud`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), et cliquez sur le menu `Public Cloud`{.action}.
 
 Cliquez ensuite sur `Créez votre premier projet OVH Public Cloud`{.action}.
 
 ![première connexion](images/firstconnection.png){.thumbnail}
 
-S’il s’agit de votre premier projet Public Cloud, il est possible d’ajouter un bon d'achat. Le bon d'achat disponible peut être récupéré [ici](https://www.ovhcloud.com/fr-ca/public-cloud/).
+S’il s’agit de votre premier projet Public Cloud, il est possible d’ajouter un bon d'achat. Le bon d'achat disponible peut être récupéré [ici](https://www.ovhcloud.com/fr/public-cloud/).
 
 > [!primary]
 > Il est nécessaire d’utiliser le bon d’achat fourni pour votre filiale OVHcloud.
