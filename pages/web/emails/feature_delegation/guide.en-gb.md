@@ -36,12 +36,6 @@ By creating a delegation, you can enable an email account user to manage their o
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the section "Plan".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the section "Summary".|
 |Continue reading this guide in the `[Instructions](#oldmxplan)` section below.|Continue with our guide on [Accessing your email account with OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/#changing-the-password).|
 
-MX Plan legacy version|MX Plan new version|
-|---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the section "Plan".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the section "Summary".|
-|Continue reading this guide in the `[Instructions](#oldmxplan)` section below.|Continue with our guide regarding [Inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/).|
-
-
 ## Instructions <a name="oldmxplan"></a>
 
 > [!primary]
