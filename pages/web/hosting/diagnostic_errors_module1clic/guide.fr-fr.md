@@ -186,7 +186,7 @@ Cette anomalie peut avoir plusieurs causes :
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Installer son site avec les modules en 1 clic](../hosting/modules-en-1-clic/)
+[Installer son site avec les modules en 1 clic](../modules-en-1-clic/)
 
 [Les problemes recurrents lors de l’utilisation d’un logiciel FTP](../mutualise-les-problemes-ftp-recurrents/)
 
