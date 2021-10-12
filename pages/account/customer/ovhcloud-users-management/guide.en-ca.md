@@ -28,7 +28,7 @@ With OVHcloud, you can create additional users with read or write access to your
 
 ## Instructions
 
-### Step 1: Learn about the different user privileges.
+### Step 1: Learn about the different user privileges
 
 You can choose from three privilege levels for your users.
 
@@ -49,7 +49,7 @@ The holder of the account xx11111-ovh always has **administrator** access, so th
 
 ![users-management](images/umv4.png){.thumbnail}
 
-### Step 2: Add a user.
+### Step 2: Add a user
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, click `your name`{.action} (1) in the top right-hand corner, then click on your initials (2).
 Next, click on the `User management`{.action} tab (3), and `Add a user`{.action} (4).
@@ -72,17 +72,17 @@ The user then gets their own ID made up of your account’s digital ID (which is
 
 E.g.: **1234-567-89/john.smith**.
 
-![users-management](images/addeduser2021.png){.thumbnail}
+![users-management](images/usersmanagement3.png){.thumbnail}
 
 The user you have created can then log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} using this ID. 
 
 They can also change their password and secure their own access to your account by enabling two-factor authentication (this is only for their access as a user). To find out how to enable two-factor authentication, you can refer to [this guide](https://docs.ovh.com/ca/en/customer/secure-account-with-2FA/){.external}.
 
-### Step 3: Manage users.
+### Step 3: Manage users
 
 You can disable/enable or remove a user by clicking on the `…`{.action} button to the right of the user’s name.
 
-![users-management](images/edituser2021.png){.thumbnail}
+![users-management](images/usersmanagement4.png){.thumbnail}
 
 When you edit a user you can update their email address, privileges and description.
 

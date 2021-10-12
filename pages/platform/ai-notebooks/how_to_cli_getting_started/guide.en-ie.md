@@ -14,7 +14,7 @@ This guide covers the submission of [**notebooks**](https://docs.ovh.com/ie/en/p
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/ie/ie/ai-training/install-client/))
+-   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/ie/en/ai-training/install-client/))
 
 ## Instructions
 
@@ -134,7 +134,7 @@ Stopping a notebook will make it unavailable from your browser, and start synchr
 
 Once the synchronisation is finished, and the notebook state is `STOPPED`, you can either start it again or delete it.
 
-Being able to restart a notebook is one of the main differences compared to using [jobs](../../ai-training/jobs). Restarting a notebook will restore your notebook code as it was when you stopped it. However, you will need to re-run your code to reload your variables because the program state is not saved.
+Being able to restart a notebook is one of the main differences compared to using [jobs](https://docs.ovh.com/ie/en/ai-training/jobs/). Restarting a notebook will restore your notebook code as it was when you stopped it. However, you will need to re-run your code to reload your variables because the program state is not saved.
 To restart a notebook, run this command:
 
 ``` {.console}

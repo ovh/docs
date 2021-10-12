@@ -55,7 +55,7 @@ As contas OVHcloud adicionadas desta forma poderão encontrar o projeto na sua p
 
 ## Quer saber mais?
 
-[Acesso e segurança na interface Horizon](https://docs.ovh.com/pt/public-cloud/acesso_e_seguranca_na_interface_horizon/)
+[Acesso e segurança na interface Horizon](https://docs.ovh.com/pt/public-cloud/gestao-a-partir-do-horizon/)
 
 [Criar um acesso à interface Horizon](https://docs.ovh.com/pt/public-cloud/criar_um_acesso_a_interface_horizon/)
 
