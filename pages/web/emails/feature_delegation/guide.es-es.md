@@ -38,7 +38,7 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 |![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro «Suscripción», en el epígrafe «Producto».|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro Resumen, en el epígrafe Referencia del servidor.|
 |Continúe leyendo esta guía en el apartado "[En la práctica](#oldmxplan)".|Consulte nuestra guía "[Consultar su cuenta Exchange desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/#cambiar-la-contrasena)"|
 
-## En la práctica <a name="oldmxplan"></a>
+## Procedimiento <a name="oldmxplan"></a>
 
 > [!primary]
 >

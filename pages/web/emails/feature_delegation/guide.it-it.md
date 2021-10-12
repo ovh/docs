@@ -38,7 +38,7 @@ La delega offre all'utente di un account email la possibilità di gestire autono
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Il servizio è indicato nel riquadro “Abbonamento”|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Nel riquadro "Riepilogo", individua il "Referenza server"|
 |Prosegui nella lettura di questa guida nella sezione "[In pratica](#oldmxplan)"|Consulta la nostra guida "[Consulta il tuo account Exchange dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/#modificare-la-password)"|
 
-## In pratica <a name="oldmxplan"></a>
+## Procedura <a name="oldmxplan"></a>
 
 > [!primary]
 >

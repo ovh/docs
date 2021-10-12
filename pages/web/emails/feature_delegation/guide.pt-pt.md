@@ -38,7 +38,7 @@ A delegação dá ao utilizador de uma conta de e-mail a possibilidade de gerir 
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção «Subscrição».|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Consulte a Referência do servidor na secção "Resumo".|
 |Consulte este manual a partir da secção "[Na prática](#oldmxplan)".|Consulte o nosso manual "[Consultar a sua conta Exchange a partir da interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/#alterar-a-palavra-passe)"|
 
-## Prática <a name="oldmxplan"></a>
+## Instruções <a name="oldmxplan"></a>
 
 > [!primary]
 >
