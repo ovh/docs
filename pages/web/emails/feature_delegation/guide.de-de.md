@@ -1,7 +1,7 @@
 ---
 title: 'Die Verwaltung Ihrer E-Mail-Accounts einer anderen Person übertragen'
 legacy_guide_number: 1933
-slug: dereguer-emails-andere
+slug: delegation-emails
 excerpt: Erfahren Sie hier, wie Sie die Verwaltung der E-Mail-Accounts Ihres MX Plan Angebots delegieren
 section: E-Mail Account Funktionen
 order: 05
