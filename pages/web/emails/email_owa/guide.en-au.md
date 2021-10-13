@@ -10,7 +10,7 @@ order: 04
 
 ## Objective
 
-With OVHcloud Hosted Exchange you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web Application (OWA). Our [webmail login page](https://www.ovh.com.au/mail/) is the single point of access to the respective OWA for all active email accounts on MX Plan, Email Pro and Hosted Exchange.
+With OVHcloud Email offer you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web Application (OWA). Our [webmail login page](https://www.ovh.com.au/mail/) is the single point of access to the respective OWA for all active email accounts on MX Plan, Email Pro and Email offer.
 
 **This guide explains how to use your email address with OWA and exemplifies the most important features of this interface.**
 
@@ -119,7 +119,6 @@ Fill in the requested information depending on the action you want the rule to c
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-For more detailed instructions about creating inbox rules, please refer to our guide: [Creating inbox rules in OWA](../creating-inbox-rules-in-owa).
 
 ### Managing a contact list
 
@@ -171,8 +170,6 @@ Now, fill in the requested information depending on the action you want it to ca
 
 ![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-For more detailed instructions about creating auto-replies, please refer to our guide: [Creating automatic replies in OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa).
-
 ### Adding a signature
 
 To add an email signature, click the gear icon at the top, then click `Options`{.action}.
@@ -184,8 +181,6 @@ On the left-hand side of the new page, click `Email signature`{.action}. In the 
 ![useowa](images/owa_exchange_step22.png){.thumbnail}
 
 Compose your electronic signature in the editor box. You can specify whether you want to include the signature by default in new emails only or in replies and forwarded emails as well. Once you have finished, click `Save`{.action} to confirm.
-
-For instructions about creating automated signatures by using domain-wide templates, please refer to our guide: [Creating automatic signatures](../exchange_20132016_how_to_create_an_automatic_signature).
 
 ### Accessing the options section
 
@@ -205,7 +200,5 @@ If you want to disable these exchanges, you can use a content blocking extension
 However, disabling these cookies may affect the stability of your webmail.
 
 ## Go further
-
-[Creating automatic replies in OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa)
 
 Join our community of users on <https://community.ovh.com/en/>.
