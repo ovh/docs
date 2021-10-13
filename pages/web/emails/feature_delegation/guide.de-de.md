@@ -25,8 +25,8 @@ Die Delegation gibt dem Benutzer eines E-Mail-Accounts die Möglichkeit, verschi
 
 ## Voraussetzungen
 
-- Sie haben ein MX Plan Angebot, Diese ist verfügbar über: ein [Cloud Webhosting](https://www.ovh.de/hosting/) , ein [kostenloses-Start 10M](https://www.ovh.de/domains/angebot_hosting_start10m.xml)Hosting oder ein separat bestelltes MX Plan Angebot.
-- Sie sind im OVHcloud [Kundencenter eingeloggt](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und befinden sich im `Bereich WebCloud`{.action}.
+ - Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovh.de/hosting) enthalten, separat bestellt, oder als Teil eines kostenlosen [Start 10M Hostings](https://www.ovh.de/domains/angebot_hosting_start10m.xml).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
 >
