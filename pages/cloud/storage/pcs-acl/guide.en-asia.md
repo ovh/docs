@@ -34,9 +34,9 @@ Elements can be separated by spaces, as in the following example:
 ## Requirements
 
 - an Object Storage container
-- [OpenStack users](https://docs.ovh.com/gb/en/public-cloud/creation-and-deletion-of-openstack-user/)
-- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
-- [Loading the OpenStack environment variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
+- [OpenStack users](https://docs.ovh.com/asia/en/public-cloud/creation-and-deletion-of-openstack-user/)
+- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/asia/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
+- [Loading the OpenStack environment variables](https://docs.ovh.com/asia/en/public-cloud/set-openstack-environment-variables/) 
 
 ## Instructions
 

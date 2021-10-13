@@ -1,77 +1,77 @@
 ---
-title: Set up an Access Control List on Object Storage
+title: Mettre en place une Access Control List sur Object Storage
 slug: pcs/acl
-excerpt: Here are the concepts for implementing ACLs in Object Storage
+excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre les ACL dans Object Storage
 section: Object Storage
 ---
 
-**Last updated 23rd September 2021**
+**Dernière mise à jour le 23/09/2021**
 
-## Objective
+## Objectif
 
-The purpose of this guide is to help you become familiar with ACLs in order to refine access rights to your containers.
+Ce guide à pour objectif de vous aider à vous familiariser avec les ACL afin d'affiner les droits d'accès à vos conteneurs.
 
-## Introduction
+## Préambule
 
-The container ACLs are stored in the **X-Container-Write** and **X-Container-Read** metadata. The scope of the ACL is limited to the container in which the metadata is defined and to the container objects. Furthermore:
+Les ACL des conteneurs sont stockées dans les métadonnées **X-Container-Write** et **X-Container-Read**. La portée de l'ACL est limitée au conteneur dans lequel les métadonnées sont définies et aux objets du conteneur. De plus :
 
-- **X-Container-Write** provides the ability to perform PUT, POST, and DELETE operations on objects in a container. It does not allow POST or DELETE operations on the container itself. Some items in the access control list can also be used to perform HEAD or GET operations on the container.
+- **X-Container-Write** accorde la possibilité d'effectuer des opérations PUT, POST et DELETE sur les objets d'un conteneur. Il ne permet pas d'effectuer des opérations POST ou DELETE sur le conteneur lui-même. Certains éléments de la liste de contrôle d'accès permettent également d'effectuer des opérations HEAD ou GET sur le conteneur.
 
-- **X-Container-Read** enables GET and HEAD operations to be performed on objects in a container. Some items in the access control list also allow HEAD or GET operations on the container itself. However, a container ACL does not provide access to privileged metadata (such as X-Container-Sync-Key).
+- **X-Container-Read** permet d'effectuer des opérations GET et HEAD sur des objets dans un conteneur. Certains éléments de la liste de contrôle d'accès permettent également d'effectuer des opérations HEAD ou GET sur le conteneur lui-même. Toutefois, une ACL de conteneur ne permet pas d'accéder aux métadonnées privilégiées (telles que X-Container-Sync-Key).
 
-Container ACLs use ACL syntax "V1" which is a comma-separated string of elements as shown in the following example:
+Les ACL de conteneurs utilisent la syntaxe ACL « V1 » qui est une chaîne d'éléments séparés par des virgules comme le montre l'exemple suivant :
 
 ```
 .r:*,.rlistings,702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf:*
 ```
 
-Elements can be separated by spaces, as in the following example:
+Les éléments peuvent être séparés par des espaces, comme dans l'exemple suivant :
 
 ```
 .r : *, .rlistings, 702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf:*
 ```
 
-## Requirements
+## Prérequis
 
-- an Object Storage container
-- [OpenStack users](https://docs.ovh.com/gb/en/public-cloud/creation-and-deletion-of-openstack-user/)
-- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
-- [Loading the OpenStack environment variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
+- Avoir créé un container Object Storage.
+- [Avoir créé des utilisateurs OpenStack](https://docs.ovh.com/ca/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
+- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/) en installant python-swiftclient.
+- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/charger-les-variables-denvironnement-openstack/).
 
-## Instructions
+## En pratique
 
-### Create three users
+### Créer trois utilisateurs
 
-- An **admin** account with the `ObjectStore operator` role
-- A **user** account with no role
-- A **limited_user** account with no role
+- Un compte **admin** ayant le rôle `ObjectStore operator`
+- Un compte **user** sans aucun rôle
+- Un compte **limited_user** sans aucun rôle
 
-![Creating new users](images/create-users.png)
+![Création des utilisateurs](images/create-users.png)
 
-### Load the **admin** account environment
+### Charger l'environnement du compte **admin**
 
 ```bash
 . openrc-admin.sh
 ```
 
-### Create a container and drop two test files
+### Créer un conteneur et déposer deux fichiers test
 
 ```bash
-swift post <container>
-swift upload <container> <largeobject>
-swift upload <container> <object>
+swift post <conteneur>
+swift upload <conteneur> <largeobject>
+swift upload <conteneur> <object>
 ```
 
-#### Access verification
+#### Vérification des accès
 
-From the **admin** account:
+Depuis le compte **admin** :
 
 ```bash
 . openrc-admin.sh
 swift stat
 swift list
-swift stat <container>
-swift list <container>
+swift stat <conteneur>
+swift list <conteneur>
 ```
 
 ```
@@ -92,11 +92,11 @@ X-Openstack-Request-Id: txa90afd77faf64420a26fe-0061272ba6
 X-Iplb-Request-Id: 6DBEFE1E:EDE8_3626E64B:01BB_61272BA5_1E67059:20729
 X-Iplb-Instance: 12308
 
-<container>
-<container_segments>
+<conteneur>
+<conteneur_segments>
 
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
-Container: <container>
+Container: <conteneur>
 Objects: 1
 Bytes: 3302
 Read ACL:
@@ -118,14 +118,14 @@ X-Iplb-Instance: 38426
 <object>
 ```
 
-From the **user** account:
+Depuis le compte **user** :
 
 ```bash
 . openrc-user.sh
 swift stat
 swift list
-swift stat <container>
-swift list <container>
+swift stat <conteneur>
+swift list <conteneur>
 ```
 
 ```
@@ -135,21 +135,21 @@ Failed Transaction ID: tx5c07e0049b244351a8ad3-0061272d97
 Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: txc64f2ae1b13b4512921d7-0061272dbe
 
-Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container> 403 Forbidden
+Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur> 403 Forbidden
 Failed Transaction ID: txe28a06b820024e2db7fdd-0061272dd0
 
-Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
+Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: tx7f02e551b0124f33bf7e3-0061272dde
 ```
 
-From the **limited_user** account:
+Depuis le compte **limited_user** :
 
 ```bash
 . openrc-limited-user.sh
 swift stat
 swift list
-swift stat <container>
-swift list <container>
+swift stat <conteneur>
+swift list <conteneur>
 ```
 
 ```
@@ -159,16 +159,16 @@ Failed Transaction ID: tx08b18a4a051d490ca02b6-00612734a6
 Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: tx072cebdc7d634368ab78f-00612734b3
 
-Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container> 403 Forbidden
+Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur> 403 Forbidden
 Failed Transaction ID: tx1370b790fcf14068b3c4b-00612734c4
 
-Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
+Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: tx46316b5682924d4c849ac-00612734db
 ```
 
-### Share the container in read/write mode with a specific member of the project
+### Partager le conteneur en lecture / écriture avec un membre spécifique du projet
 
-Get user `id`:
+Obtenir l'`id` de l'utilisateur :
 
 ```bash
 . openrc-user.sh
@@ -190,20 +190,20 @@ openstack user show --format json "${OS_USERNAME}"
 
 ```bash
 . openrc-admin.sh
-swift post <container> -r "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72" \
+swift post <conteneur> -r "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72" \
                        -w "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72"
 ```
 
-#### Access verification
+#### Vérification des accès
 
-From the **admin** account:
+Depuis le compte **admin** :
 
 ```bash
 . openrc-admin.sh
 swift stat
 swift list
-swift stat <container>
-swift list <container>
+swift stat <conteneur>
+swift list <conteneur>
 ```
 
 ```
@@ -224,11 +224,11 @@ X-Openstack-Request-Id: txa02aabbe1e154f7284a12-0061273617
 X-Iplb-Request-Id: 6DBEFE1E:8412_3626E64B:01BB_61273616_20D6218:4ED7
 X-Iplb-Instance: 33617
 
-<container>
-<container_segments>
+<conteneur>
+<conteneur_segments>
 
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
-Container: <container>
+Container: <conteneur>
 Objects: 2
 Bytes: 4048
 Read ACL: 297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72
@@ -250,14 +250,14 @@ X-Iplb-Instance: 38342
 <object>
 ```
 
-From the **user** account:
+Depuis le compte **user** :
 
 ```bash
 . openrc-user.sh
 swift stat
 swift list
-swift stat <container>
-swift list <container>
+swift stat <conteneur>
+swift list <conteneur>
 ```
 
 ```
@@ -268,7 +268,7 @@ Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxx
 Failed Transaction ID: txdf7a083913a449a0bdaa0-0061273699
 
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
-Container: <container>
+Container: <conteneur>
 Objects: 2
 Bytes: 4048
 Read ACL:
@@ -290,48 +290,48 @@ X-Iplb-Instance: 33618
 <object>
 ```
 
-From the **limited_user** account:
+Depuis le compte **limited_user** :
 
 ```bash
 . openrc-limited-user.sh
 swift stat
 swift list
-swift stat <container>
-swift list <container>
+swift stat <conteneur>
+swift list <conteneur>
 ```
 
 ```
 Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b 403 Forbidden
 Failed Transaction ID: tx9ee6002842844cf791a8c-0061273715
 
-Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
+Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: txab4706eabf354d2982630-0061273724
 
-Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container> 403 Forbidden
+Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur> 403 Forbidden
 Failed Transaction ID: txa7a488b0549647e886757-0061273734
 
-Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
+Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: txdd45d71c14314f589744e-0061273744
 ```
 
-### Share container with project members
+### Partager le conteneur avec les membres du projet
 
 ```bash
 . openrc-admin.sh
-swift post <container> -r "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:*" \
+swift post <conteneur> -r "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:*" \
                        -w "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:*"
 ```
 
-#### Access verification
+#### Vérification des accès
 
-From the **admin** account:
+Depuis le compte **admin** :
 
 ```bash
 . openrc-admin.sh
 swift stat
 swift list
-swift stat <container>
-swift list <container>
+swift stat <conteneur>
+swift list <conteneur>
 ```
 
 ```
@@ -352,11 +352,11 @@ X-Openstack-Request-Id: tx1d665074c05545ce9f398-0061273cad
 X-Iplb-Request-Id: 6DBEFE1E:8712_3626E64B:01BB_61273CAD_1EB615D:20727
 X-Iplb-Instance: 12308
 
-<container>
-<container_segments>
+<conteneur>
+<conteneur_segments>
 
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
-Container: <container>
+Container: <conteneur>
 Objects: 2
 Bytes: 4048
 Read ACL: 297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:*
@@ -378,25 +378,25 @@ X-Iplb-Instance: 12308
 <object>
 ```
 
-From the **user** account:
+Depuis le compte **user** :
 
 ```bash
 . openrc-user.sh
 swift stat
 swift list
-swift stat <container>
-swift list <container>
+swift stat <conteneur>
+swift list <conteneur>
 ```
 
 ```
 Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b 403 Forbidden
 Failed Transaction ID: txa890a6d4b42c4f32be23e-0061273d10
 
-Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
+Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: txc3a82eda633e47e691633-0061273d1f
 
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
-Container: <container>
+Container: <conteneur>
 Objects: 2
 Bytes: 4048
 Read ACL:
@@ -418,25 +418,25 @@ X-Iplb-Instance: 33617
 <object>
 ```
 
-From the **limited_user** account:
+Depuis le compte **limited_user** :
 
 ```bash
 . openrc-limited-user.sh
 swift stat
 swift list
-swift stat <container>
-swift list <container>
+swift stat <conteneur>
+swift list <conteneur>
 ```
 
 ```
 Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b 403 Forbidden
 Failed Transaction ID: txf0ef1ea9e9024e8da4886-0061273d58
 
-Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
+Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: tx554571e2af674d58913d2-0061273d65
 
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
-Container: <container>
+Container: <conteneur>
 Objects: 2
 Bytes: 4048
 Read ACL:
@@ -458,33 +458,33 @@ X-Iplb-Instance: 12309
 <object>
 ```
 
-### Allow a referring domain to download objects
+### Autoriser un domaine reférent à télécharger des objects
 
-In order to allow all requests from the domain `example.com` to have access to the container objects:
+Afin d'autoriser toutes les requêtes en provenance du domaine `example.com` à avoir accès aux objets du conteneur :
 
 ```bash
-swift post <container> -r ".r:.example.com"
+swift post <conteneur> -r ".r:.example.com"
 ```
 
 > {!primary}
 >
-> Although most modern browsers include the `Referrer` header in their queries, this is a security risk because it is quite possible to change the value of this header.
+> Bien que la plupart des navigateurs modernes incluent l'en-tête `Referrer` dans leurs requêtes, cela constitue un risque de sécurité car il est tout à fait possible de changer la valeur de cet en-tête.
 >
 
-#### Access verification
+#### Vérification des accès
 
 ```bash
 STORAGE_URL=`swift auth | awk -F = '/OS_STORAGE_URL/ {print $2}'`
-curl -i $STORAGE_URL/<container>/<object> -H "Referrer: http://example.com/index.html"
+curl -i $STORAGE_URL/<conteneur>/<object> -H "Referrer: http://example.com/index.html"
 ```
 
-### Share a container with a user external to the project
+### Partager un conteneur avec un utilisateur externe au projet
 
-From another project, create an **other-project-user** user without any role:
+Depuis un autre projet, créez un utilisateur **other-project-user** sans aucun rôle :
 
-![Other user](images/other-user.png)
+![Autre utilisateur](images/other-user.png)
 
-Get user `id`:
+Obtenir l'`id` de l'utilisateur :
 
 ```bash
 . openrc-other-project-user.sh
@@ -504,7 +504,7 @@ openstack user show --format json "${OS_USERNAME}"
 }
 ```
 
-Get the storage URL:
+Obtenir l'URL du stockage :
 
 ```bash
 . openrc-admin.sh
@@ -515,20 +515,20 @@ swift auth | awk -F = '/OS_STORAGE_URL/ {print $2}'
 https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
 ```
 
-Allow **other-project-user** to access the read container:
+Autoriser l'utilisateur **other-project-user** à avoir accès au conteneur en lecture :
 
 ```bash
 . openrc-admin.sh
-swift post -r "702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf:c9677ed21acb4724aeafe2f60b7123f9" <container>
+swift post -r "702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf:c9677ed21acb4724aeafe2f60b7123f9" <conteneur>
 ```
 
-#### Access verification
+#### Vérification des accès
 
-From the `other-project-user` account:
+Depuis le compte `other-project-user` :
 
 ```bash
 . openrc-other-project-user.sh
-swift --os-storage-url https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b list <container>
+swift --os-storage-url https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b list <conteneur>
 ```
 
 ```
@@ -536,16 +536,16 @@ swift --os-storage-url https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxx
 <object>
 ```
 
-From the **admin** account:
+Depuis le compte **admin** :
 
 ```bash
 . openrc-admin.sh
-swift stat <container>
+swift stat <conteneur>
 ```
 
 ```
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
-Container: <container>
+Container: <conteneur>
 Objects: 2
 Bytes: 4048
 Read ACL: 702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf:c9677ed21acb4724aeafe2f60b7123f9
@@ -564,18 +564,17 @@ X-Iplb-Request-Id: 6DBEFE1E:8A5A_3626E64B:01BB_61274201_22328AF:4ED4
 X-Iplb-Instance: 33617
 ```
 
-## The case of Large Objects
+## Le cas des Large Objects
 
-If an object over 5Gb has been dropped, this generates a container such as: `<container_segments>`.<br>
-The same ACLs must be applied to this container in order to retrieve the object larger than 5Gb.
+Si un objet de plus de 5Gb à été déposé, cela génère un conteneur tel que : `<conteneur_segments>`.<br>
+Il faut appliquer les mêmes ACL à ce conteneur afin de pouvoir récupérer l'objet de plus de 5Gb.
 
 ```bash
-swift stat <container>
+swift stat <conteneur>
 ```
-
 ```
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
-Container: <container>
+Container: <conteneur>
 Objects: 2
 Bytes: 4048
 Read ACL: 297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72
@@ -595,12 +594,11 @@ X-Iplb-Instance: 38343
 ```
 
 ```bash
-swift stat <container_segments>
+swift stat <conteneur_segments>
 ```
-
 ```
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
-Container: <container_segments>
+Container: <conteneur_segments>
 Objects: 13
 Bytes: 6442450944
 Read ACL:
@@ -620,24 +618,24 @@ X-Iplb-Instance: 38342
 ```
 
 ```bash
-swift download <container> <largeobject>
+swift download <conteneur> <largeobject>
 ```
 
 ```
-Error downloading object '<container>/<largeobject>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>/<largeobject> 409 Conflict  [first 60 chars of response] b'<html><h1>Conflict</h1><p>There was a conflict when trying t'
-```
-
-```bash
-swift post <container_segments> -r "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72"
+Error downloading object '<conteneur>/<largeobject>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur>/<largeobject> 409 Conflict  [first 60 chars of response] b'<html><h1>Conflict</h1><p>There was a conflict when trying t'
 ```
 
 ```bash
-swift stat <container_segments>
+swift post <conteneur_segments> -r "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72"
+```
+
+```bash
+swift stat <conteneur_segments>
 ```
 
 ```
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
-Container: <container_segments>
+Container: <conteneur_segments>
 Objects: 13
 Bytes: 6442450944
 Read ACL: 297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72
@@ -657,12 +655,12 @@ X-Iplb-Instance: 38426
 ```
 
 ```bash
-swift download <container> <largeobject>
+swift download <conteneur> <largeobject>
 ```
 ```
 <largeobject> [auth 0.739s, headers 1.408s, total 5504.436s, 1.171 MB/s]
 ```
 
-## Go further
+## Aller plus loin
 
-Join our community of users on <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
