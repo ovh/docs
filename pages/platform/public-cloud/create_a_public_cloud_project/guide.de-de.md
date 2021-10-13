@@ -28,7 +28,7 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 
 ![first connection](images/firstconnection.png){.thumbnail}
 
-Sie können jetzt einen Gutschein hinzufügen, wenn Sie einen haben. Es kann nur ein Gutschein für Ihre OVHclow Zweigniederlassung verwendet werden.
+Sie können jetzt einen Gutschein hinzufügen, wenn Sie einen haben. Es kann nur ein Gutschein für Ihre OVHcloud Zweigniederlassung verwendet werden.
 
 > [!warning]
 > Wenn Sie zuvor ein Public Cloud-Projekt in Ihrem Konto erstellt und gelöscht haben, können Sie den Gutschein nicht verwenden.

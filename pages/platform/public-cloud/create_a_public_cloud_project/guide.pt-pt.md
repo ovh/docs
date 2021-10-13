@@ -1,6 +1,6 @@
 ---
 title: 'Criando seu primeiro projeto Public Cloud da OVHcloud'
-slug: 'criar_seu_primeiro_projeto_public_loud'
+slug: 'criar_seu_primeiro_projeto_public_cloud'
 excerpt: 'Saiba como criar seu primeiro projeto Public Cloud através da Área de Cliente OVHcloud'
 section: Introdução
 order: 1
@@ -17,7 +17,7 @@ order: 1
 
 A criação de um projeto é a primeira etapa na implantação de [instâncias Public Cloud](https://www.ovhcloud.com/pt/public-cloud/).
 
-**Este guia o levará através das etapas de criação do seu primeiro projeto de Nuvem Pública.**
+**Este guia o levará através das etapas de criação do seu primeiro projeto Public Cloud.**
 
 ## Requisitos
 
@@ -29,10 +29,10 @@ Primeiro, inicie sessão na [Área de Cliente OVHcloud](https://www.ovh.com/auth
 
 ![first connection](images/firstconnection.png){.thumbnail}
 
-Agora você pode adicionar um *voucher* se tiver um. Somente um comprovante fornecido para a sua ramificação de nuvem OVH pode ser usado.
+Agora você pode adicionar um *voucher* se tiver um. Somente um comprovante fornecido para a sua ramificação de nuvem OVHcloud pode ser usado.
 
 > [!warning]
-> Se você tiver criado anteriormente um projeto de Nuvem Pública na sua conta e o tiver excluído, você não se qualificará para usar o *voucher*.
+> Se você tiver criado anteriormente um projeto Public Cloud na sua conta e o tiver excluído, você não se qualificará para usar o *voucher*.
 >
 
 Dê ao seu projeto um nome, leia e aceite os contratos e clique no botão `Continuar`{.action}.

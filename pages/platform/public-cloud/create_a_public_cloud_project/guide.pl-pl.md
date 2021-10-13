@@ -28,7 +28,7 @@ Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?act
 
 ![first connection](images/firstconnection.png){.thumbnail}
 
-Możesz teraz dodać *voucher*, jeśli go posiadasz. Można skorzystać wyłącznie z kodu przypisanego do Twojego oddziału OVHcloud.
+Możesz teraz dodać *voucher*, jeśli go posiadasz. Możesz wykorzystać tylko *voucher* przypisany do Twojego oddziału OVHcloud.
 
 > [!warning]
 > Jeśli utworzyłeś wcześniej na Twoim koncie projekt Public Cloud i usunąłeś go, nie masz uprawnień do korzystania z *voucher*.
