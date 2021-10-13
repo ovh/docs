@@ -96,7 +96,7 @@ X-Iplb-Instance: 12308
 <container_segments>
 
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
-Container: <conteneur>
+Container: <container>
 Objects: 1
 Bytes: 3302
 Read ACL:
@@ -135,10 +135,10 @@ Failed Transaction ID: tx5c07e0049b244351a8ad3-0061272d97
 Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: txc64f2ae1b13b4512921d7-0061272dbe
 
-Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur> 403 Forbidden
+Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container> 403 Forbidden
 Failed Transaction ID: txe28a06b820024e2db7fdd-0061272dd0
 
-Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
+Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: tx7f02e551b0124f33bf7e3-0061272dde
 ```
 
@@ -159,10 +159,10 @@ Failed Transaction ID: tx08b18a4a051d490ca02b6-00612734a6
 Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: tx072cebdc7d634368ab78f-00612734b3
 
-Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur> 403 Forbidden
+Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container> 403 Forbidden
 Failed Transaction ID: tx1370b790fcf14068b3c4b-00612734c4
 
-Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
+Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: tx46316b5682924d4c849ac-00612734db
 ```
 
@@ -307,10 +307,10 @@ Failed Transaction ID: tx9ee6002842844cf791a8c-0061273715
 Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
 Failed Transaction ID: txab4706eabf354d2982630-0061273724
 
-Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur> 403 Forbidden
+Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container> 403 Forbidden
 Failed Transaction ID: txa7a488b0549647e886757-0061273734
 
-Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
+Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
 Failed Transaction ID: txdd45d71c14314f589744e-0061273744
 ```
 
@@ -396,7 +396,7 @@ Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxx
 Failed Transaction ID: txc3a82eda633e47e691633-0061273d1f
 
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
-Container: <conteneur>
+Container: <container>
 Objects: 2
 Bytes: 4048
 Read ACL:
@@ -624,7 +624,7 @@ swift download <container> <largeobject>
 ```
 
 ```
-Error downloading object '<container>/<largeobject>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur>/<largeobject> 409 Conflict  [first 60 chars of response] b'<html><h1>Conflict</h1><p>There was a conflict when trying t'
+Error downloading object '<container>/<largeobject>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>/<largeobject> 409 Conflict  [first 60 chars of response] b'<html><h1>Conflict</h1><p>There was a conflict when trying t'
 ```
 
 ```bash
