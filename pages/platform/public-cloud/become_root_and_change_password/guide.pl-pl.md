@@ -10,7 +10,7 @@ order: 5
 **Ostatnia aktualizacja z dnia 12-10-2021**
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zaproponuj zmianę" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -21,7 +21,7 @@ Aby wykonywać niektóre działania administracyjne na Twoim serwerze (np. insta
 
 ## Wymagania początkowe
 
-* instancja [Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud.
+* instancja [Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
 * dostęp do [Panelu klienta OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
@@ -31,7 +31,7 @@ Aby wykonywać niektóre działania administracyjne na Twoim serwerze (np. insta
 > W przewodniku tym przyjmujemy, że użytkownik ma przypisaną domyślnie nazwę "admin”. 
 >
 
-### Ustawianie hasła root "root" <a name="settingtherootpassword"></a>
+### Ustawianie hasła root <a name="settingtherootpassword"></a>
 
 Po pierwsze nawiąż [połączenie SSH](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-4-polaczenie-z-instancja) z serwerem przy użyciu domyślnego użytkownika.
 

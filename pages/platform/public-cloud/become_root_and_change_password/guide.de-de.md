@@ -22,7 +22,7 @@ Um bestimmte Verwaltungsfunktionen auf Ihrem Server auszuführen (zum Beispiel d
 ## Voraussetzungen
 
 * eine [Public Cloud](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen)Instanz in Ihrem OVHcloud Account
-* Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}.
+* Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}
 
 ## In der praktischen Anwendung
 
@@ -33,7 +33,7 @@ Um bestimmte Verwaltungsfunktionen auf Ihrem Server auszuführen (zum Beispiel d
 
 ### Festlegen des Root-Passworts <a name="settingtherootpassword"></a>
 
-Stellen Sie zunächst eine [SSH](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-4-mit-ihrer-instanz-verbinden)-Verbindung zu Ihrem Server her.
+Stellen Sie zunächst eine [SSH-Verbindung](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-4-mit-ihrer-instanz-verbinden) zu Ihrem Server her.
 
 Geben Sie auf der Kommandozeile ein Passwort für den root-Benutzer ein (aus Sicherheitsgründen wird das Passwort beim Eingeben nicht angezeigt):
 
@@ -67,7 +67,7 @@ Um das Betriebssystem Ihres Servers zu aktualisieren, geben Sie folgenden Befehl
 ~$ sudo vi /etc/hosts.allow
 ```
 
-### Wurzel "root"
+### Wurzel root
 
 Geben Sie folgenden Befehl ein, um Root-Benutzer zu werden:
 

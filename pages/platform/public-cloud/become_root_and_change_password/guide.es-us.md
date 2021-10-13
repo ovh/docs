@@ -14,27 +14,27 @@ order: 5
 
 ## Objetivo
 
-Para realizar determinadas tareas en un servidor (como la instalación de paquetes), es necesario disponer de un nivel de acceso elevado. En los servidores Linux, este nivel se denomina «root».
+Para realizar determinadas tareas en un servidor (como la instalación de paquetes), es necesario disponer de un nivel de acceso elevado. En los servidores Linux, este nivel se denomina "root".
 
 **Esta guía explica cómo configurar el usuario root y establecer la contraseña.**
 
 ## Requisitos
 
-* una [instancia de Public Cloud](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/#3-crear-una-instancia) en su cuenta de OVHcloud
-* Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+* una [instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/#3-crear-una-instancia) en su cuenta de OVHcloud
+* Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 ## Procedimiento
 
 > [!primary]
 >
-> En esta guía nos basamos en el supuesto de que el usuario por defecto es «admin».
+> En esta guía nos basamos en el supuesto de que el usuario por defecto es "admin".
 >
 
 ### Establecer la contraseña root <a name="settingtherootpassword"></a>
 
-En primer lugar, conéctese al servidor por [SSH](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/#4-conectarse-a-una-instancia) con el usuario por defecto.
+En primer lugar, conéctese al servidor por [SSH](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/#4-conectarse-a-una-instancia) con el usuario por defecto.
 
-Para ello, utilice el comando que se indica a continuación y establezca una contraseña para el usuario *root* (por motivos de seguridad, la contraseña no se mostrará mientras la escriba).
+Para ello, utilice el comando que se indica a continuación y establezca una contraseña para el usuario *root* (por motivos de seguridad, la contraseña no se mostrará mientras la escriba):
 
 ```bash
 ~$ sudo passwd root
@@ -84,9 +84,9 @@ A continuación escriba la contraseña root.
 
 #### Para las conexiones desde la consola VNC del área de cliente de OVHcloud
 
-En primer lugar, [establezca la contraseña root](#establecerlacontraseñaroot)
+En primer lugar, [establezca la contraseña root](#settingtherootpassword)
 
-Acceda a la consola VNC:
+A continuación, acceda a la consola VNC:
 
 Haga clic en los `...`{.action} a la derecha de la instancia correspondiente y seleccione `Detalles de la instancia`{.action}. 
 
