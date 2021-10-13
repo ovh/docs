@@ -1,8 +1,8 @@
 ---
 title: 'Die Verwaltung Ihrer E-Mail-Accounts einer anderen Person übertragen'
 legacy_guide_number: 1933
-slug: dereguer-emails-andere
-excerpt: Erfahren Sie, wie Sie die Verwaltung der E-Mail-Accounts Ihres MX Plan Angebots delegieren
+slug: delegation-emails
+excerpt: Erfahren Sie hier, wie Sie die Verwaltung der E-Mail-Accounts Ihres MX Plan Angebots delegieren
 section: E-Mail Account Funktionen
 order: 05
 ---
@@ -19,68 +19,67 @@ Die Delegation gibt dem Benutzer eines E-Mail-Accounts die Möglichkeit, verschi
 
 - Alle **Ihre E-Mail-Accounts** einem oder mehreren OVHcloud Accounts übertragen. Diese Art der Übertragung ermöglicht es Kunden-Accounts, die Filter, E-Mail-Beantworter, Weiterleitungen/Alias sowie Mailinglisten zu verwalten.
 
-- Einen **oder mehrere E-Mail**-Accounts und deren Filter einem einzigen OVHcloud-Account zuweisen. Diese Art der Übertragung erlaubt es den Empfängern nicht, die E-Mail Beantworter, Weiterleitungen oder Mailinglisten zu verwalten. Außerdem ist es den Empfängern nicht möglich, das oder die betreffenden E-Mail-Accounts zu löschen, E-Mails von einem anderen Account zu importieren oder Delegationen zu verwalten.
+- Einen **oder mehrere E-Mail-Accounts** und deren Filter einem einzigen OVHcloud-Account zuweisen. Diese Art der Übertragung erlaubt es den Empfängern nicht, die E-Mail Beantworter, Weiterleitungen oder Mailinglisten zu verwalten. Außerdem ist es den Empfängern nicht möglich, das oder die betreffenden E-Mail-Accounts zu löschen, E-Mails von einem anderen Account zu importieren oder Delegationen zu verwalten.
 
-**Hier erfahren Sie, wie Sie die E-Mail-Accounts Ihres MX Plan Angebots delegieren.**
+**Diese Anleitung erklärt, wie Sie die E-Mail-Accounts Ihres MX Plan Angebots delegieren können.**
 
 ## Voraussetzungen
 
-- Sie haben ein MX Plan Angebot, Diese ist verfügbar über: ein [Cloud Webhosting](https://www.ovh.de/hosting/) , ein [kostenloses-Start 10M](https://www.ovh.de/domains/angebot_hosting_start10m.xml)Hosting oder ein separat bestelltes MX Plan Angebot.
-- Sie sind im OVHcloud [Kundencenter eingeloggt](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und befinden sich im `Bereich WebCloud`{.action}.
+ - Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovh.de/hosting) enthalten, separat bestellt, oder als Teil eines kostenlosen [Start 10M Hostings](https://www.ovh.de/domains/angebot_hosting_start10m.xml).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
 >
-> Die folgende Anleitung richtet sich an die Inhaber des MXplan Angebots "History". Für das neue Angebot gibt es keine Delegationen. Die Änderung des Passworts, die Filter und Auto-Antworten einer E-Mail-Adresse können direkt über das OWA Webmail (**O**utlook **W**eb **A**pplication) geändert werden. **Identifizieren Sie Ihr Angebot mit der nachstehenden Tabelle.**
+> Die folgende Anleitung ist nur anwendbar auf den Dienst MX Plan *Legacy*. Für unsere aktuelle Version dieses Angebots gibt es keine Delegationsverwaltung. Die Änderung des Passworts, die Eingangsfilter und Auto-Antworten eines E-Mail-Accounts können direkt über das OWA Webmail (**O**utlook **W**eb **A**pplication) verwaltet werden. Sie können anhand der nachstehenden Tabelle identifizieren, welche Version des MX Plan Sie verwenden.
 >
 
-|Historische MX Plan Version|Neue MX Plan Version|
-|---|---|
-|![E-Mail](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Ihr Angebot steht in der Box „Abo“.|![E-Mail](images/mxplan-starter-new-step1.png){.thumbnail}<br>Die "Server-Referenz"finden Sie in der Box "Zusammenfassung"|
-|Lesen Sie diese Anleitung weiter unter "[In der Praxis](#oldmxplan)"|Lesen Sie unsere Anleitung "[Den Exchange Account über das OWA Interface einsehen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/#passwort-andern)"|
 
-## In der Praxis <a name="oldmxplan"></a>
+|MX Plan Legacy|MX Plan neuere Version|
+|---|---|
+|![E-Mail](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Die Angebotsbezeichnung steht in der Box "Abo".|![E-Mail](images/mxplan-starter-new-step1.png){.thumbnail}<br>Die `Server-Referenz` befindet sich in der Box "Zusammenfassung".|
+|Lesen Sie weiter in dieser `[Anleitung](#oldmxplan)`.|Fahren Sie fort mit unserer Anleitung zur [Verwendung der Outlook Web App](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/#passwort-andern).|
+
+
+## In der praktischen Anwendung <a name="oldmxplan"></a>
 
 > [!primary]
 >
->Die Einrichtung einer Delegation auf einem E-Mail-Account zeigt diese im betreffenden [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-an. In diesem Fall sind jedoch nur die im Abschnitt [Ziel](#objective) dieser Anleitung aufgeführten Änderungen möglich.
+>Die Einrichtung einer Delegation für einen E-Mail-Account führt dazu, dass er im betreffenden [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angezeigt wird. Für den delegierten Account sind jedoch nur die im Abschnitt [Ziel](#objective) dieser Anleitung aufgeführten Änderungen möglich.
 >
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und gehen Sie in den Bereich `Web Cloud`.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Bereich `Web Cloud`{.action}.
 
-Klicken Sie im linken Menü auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus.
-
-Um die Liste der E-Mail-Accounts Ihres MXplan Angebots anzuzeigen, klicken Sie auf den Tab `E-Mails`{.action}.
+Wählen Sie die Domain links aus dem Menü `E-Mails`{.action} aus und wechseln Sie dann zum Tab `E-Mails`{.action}, um die Liste der E-Mail-Accounts Ihres MX Plan Angebots anzuzeigen.
 
 ![Delegation](images/mxplan-delegation-01.png){.thumbnail}
 
-### Alle Ihre E-Mail-Accounts einem oder mehreren OVHcloud-Accounts übertragen
+### Alle Ihre E-Mail-Accounts an einen oder mehrere OVHcloud Kundenkennungen delegieren
 
-Diese Art der Übertragung ermöglicht es dem Empfänger, Passwörter, Filter, E-Mail-Beantworter, Weiterleitungen/Alias sowie Mailinglisten zu verwalten.
+Diese Art der Delegation ermöglicht es dem begünstigten Account, Passwörter, Filter, E-Mail-Beantworter, Weiterleitungen/Alias sowie Mailinglisten zu verwalten.
 
-Klicken Sie auf `Freigaben für alle E-Mail-Adressen verwalten`{.action}
+Klicken Sie rechts auf `Freigaben für alle E-Mail-Adressen verwalten`{.action}.
 
 ![Delegation](images/mxplan-delegation-02.png){.thumbnail}
 
-Es öffnet sich ein neues Fenster. Klicken Sie rechts `+`{.action} neben der Angabe Eine `Kennung hinzufügen `. Geben Sie die OVHcloud-Kennung an, die diese Berechtigung erhält, und bestätigen Sie Ihre Wahl.
+Es öffnet sich ein neuer Bereich. Klicken Sie auf `+`{.action} neben `Eine Kennung hinzufügen`. Geben Sie die OVHcloud Kundenkennung an, die diese Delegation erhält, und bestätigen Sie Ihre Eingabe.
 
 ![Delegation](images/mxplan-delegation-03.png){.thumbnail}
 
-Sie können die Verwaltung Ihres MXplan Dienstes an mehrere OVHcloud-Kennungen delegieren.
+Sie können die Verwaltung Ihres MX Plan Dienstes an mehrere OVHcloud Kundenkennungen delegieren.
 
-### Einen oder mehrere E-Mail-Accounts mit einer
+### Einen oder mehrere E-Mail-Accounts an einen Benutzer delegieren
 
 Mit dieser Delegation können Sie das Passwort des betreffenden E-Mail-Accounts ändern und dessen Filter verwalten.
 
-Klicken Sie rechts neben dem E-Mail-Account, den Sie delegieren möchten, auf `...`{.action} und dann `auf Verwaltung der Delegation`{.action}.
+Klicken Sie rechts neben dem E-Mail-Account, den Sie delegieren möchten, auf `...`{.action} und dann `Delegationsverwaltung`{.action}.
 
 ![Delegation](images/mxplan-delegation-04.png){.thumbnail}
 
-Geben Sie die OVHcloud-Kennung an, die von dieser Berechtigung profitieren wird, und bestätigen Sie Ihre Wahl.
+Geben Sie die OVHcloud Kundenkennung an, die diese Delegation erhält, und bestätigen Sie Ihre Eingabe.
 
 ![Delegation](images/mxplan-delegation-05.png){.thumbnail}
 
-Um jede E-Mail-Adresse zu verwalten, können Sie mehrere OVHcloud-Login-Daten hinzufügen.
+Sie können mehrere Kundenkennung angeben, um einen E-Mail-Account zu verwalten.
 
 ## Weiterführende Informationen
 
