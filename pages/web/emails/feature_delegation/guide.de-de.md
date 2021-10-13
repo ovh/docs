@@ -19,7 +19,7 @@ Die Delegation gibt dem Benutzer eines E-Mail-Accounts die Möglichkeit, verschi
 
 - Alle **Ihre E-Mail-Accounts** einem oder mehreren OVHcloud Accounts übertragen. Diese Art der Übertragung ermöglicht es Kunden-Accounts, die Filter, E-Mail-Beantworter, Weiterleitungen/Alias sowie Mailinglisten zu verwalten.
 
-- Einen **oder mehrere E-Mail**-Accounts und deren Filter einem einzigen OVHcloud-Account zuweisen. Diese Art der Übertragung erlaubt es den Empfängern nicht, die E-Mail Beantworter, Weiterleitungen oder Mailinglisten zu verwalten. Außerdem ist es den Empfängern nicht möglich, das oder die betreffenden E-Mail-Accounts zu löschen, E-Mails von einem anderen Account zu importieren oder Delegationen zu verwalten.
+- Einen **oder mehrere E-Mail-Accounts** und deren Filter einem einzigen OVHcloud-Account zuweisen. Diese Art der Übertragung erlaubt es den Empfängern nicht, die E-Mail Beantworter, Weiterleitungen oder Mailinglisten zu verwalten. Außerdem ist es den Empfängern nicht möglich, das oder die betreffenden E-Mail-Accounts zu löschen, E-Mails von einem anderen Account zu importieren oder Delegationen zu verwalten.
 
 **Diese Anleitung erklärt, wie Sie die E-Mail-Accounts Ihres MX Plan Angebots delegieren können.**
 
