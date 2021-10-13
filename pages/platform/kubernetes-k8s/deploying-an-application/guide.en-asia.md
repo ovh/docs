@@ -191,6 +191,7 @@ text-align: center;
 <body>
 <div class="title">
 <p>Hello from Kubernetes!</p>
+<img src="images/ovhcloud.svg">
 </div>
 </body>
 </html>
