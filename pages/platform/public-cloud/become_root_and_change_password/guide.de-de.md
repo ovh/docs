@@ -1,7 +1,7 @@
 ---
 title: 'Root-Rechte erlangen und Passwort festlegen'
-excerpt: 'Root-Rechte erlangen und Passwort festlegen'
 slug: root-rechte_erlangen_und_passwort_festlegen
+excerpt: 'Root-Rechte erlangen und Passwort festlegen'
 legacy_guide_number: g1786
 section: 'Erste Schritte'
 order: 5
@@ -41,8 +41,7 @@ Geben Sie auf der Kommandozeile ein Passwort für den root-Benutzer ein (aus Sic
 ~$ sudo passwd root
 Enter new UNIX password:
 Retype new UNIX password:
-passwd: password updated 
-successfully
+passwd: password updated successfully
 ```
 
 ### Repositorys aktualisieren (Debian/Ubuntu)

@@ -42,7 +42,6 @@ W wierszu polecenia ustaw hasło dla użytkownika "root" (ze względów bezpiecz
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully 
-successfully
 ```
 
 ### Aktualizacja repozytoriów (Debian i Ubuntu)

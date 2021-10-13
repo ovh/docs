@@ -41,7 +41,6 @@ Esegui il comando qui sotto e definisci una password per l’utente “root” (
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully 
-successfully
 ```
 
 ### Aggiorna le applicazioni (Debian/Ubuntu)

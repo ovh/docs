@@ -42,7 +42,6 @@ Para isso, utilize o comando indicado abaixo e defina uma palavra-passe para o u
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully 
-successfully
 ```
 
 ### Atualizar os repositórios (Debian e Ubuntu)
