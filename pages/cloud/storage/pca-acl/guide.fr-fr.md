@@ -35,7 +35,7 @@ Les éléments peuvent être séparés par des espaces, comme dans l'exemple sui
 
 ## Prérequis
 
-- Avoir créé un container Object Storage.
+- Avoir créé un container Public Cloud Archive.
 - [Avoir créé des utilisateurs OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
 - [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/) en installant python-swiftclient.
 - [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/).
@@ -81,9 +81,9 @@ Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
 Containers: 2
 Objects: 14
 Bytes: 6442454246
-Containers in policy "pcs": 2
-Objects in policy "pcs": 14
-Bytes in policy "pcs": 6442454246
+Containers in policy "pca": 2
+Objects in policy "pca": 14
+Bytes in policy "pca": 6442454246
 X-Timestamp: 1628236187.15682
 Content-Type: text/plain; charset=utf-8
 Accept-Ranges: bytes
@@ -213,9 +213,9 @@ Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
 Containers: 2
 Objects: 15
 Bytes: 6442454992
-Containers in policy "pcs": 2
-Objects in policy "pcs": 15
-Bytes in policy "pcs": 6442454992
+Containers in policy "pca": 2
+Objects in policy "pca": 15
+Bytes in policy "pca": 6442454992
 X-Timestamp: 1628236187.15682
 Content-Type: text/plain; charset=utf-8
 Accept-Ranges: bytes
@@ -341,9 +341,9 @@ Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
 Containers: 2
 Objects: 15
 Bytes: 6442454992
-Containers in policy "pcs": 2
-Objects in policy "pcs": 15
-Bytes in policy "pcs": 6442454992
+Containers in policy "pca": 2
+Objects in policy "pca": 15
+Bytes in policy "pca": 6442454992
 X-Timestamp: 1628236187.15682
 Content-Type: text/plain; charset=utf-8
 Accept-Ranges: bytes
