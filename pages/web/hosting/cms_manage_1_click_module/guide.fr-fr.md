@@ -1,18 +1,18 @@
 ---
-title: How to manage a 1 click module ?
-excerpt: Find out how to manage your 1 click module
-slug: 1_click_module_management
+title: Comment gérer votre module en 1 clic ?
+excerpt: Découvrez comment gérer votre module en 1 clic depuis votre espace client OVHcloud
+slug: gestion_module_1_clic
 section: CMS
 order: 2
 ---
 
-**Dernière mise à jour le **
+**Dernière mise à jour le 14/10/2021**
 
 ## Objectif
 
+Les modules en 1 clic permettent l’installation facile et rapide d’un logiciel en ligne d'assistance à la création d'un site Internet (CMS). OVHcloud vous propose les CMS les plus connus : WordPress, PrestaShop, Drupal et Joomla.
 
-
-**Découvrez comment .**
+**Découvrez comment gérer votre module en 1 clic depuis votre espace client OVHcloud.**
 
 > [!warning]
 >
@@ -23,14 +23,49 @@ order: 2
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/)
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovh.com/fr/hebergement-web/) permettant l'installation d'un [module en 1 clic]() (seule l'offre gratuite [Start10M]() n'est pas concernée)
+- Avoir créé un module en 1 clic sur cet hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide]())
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
 
+### Accéder à votre site
 
+(Chemin dans l'espace client)
+
+(liens vers guide troubleshooting : que faire en cas d'affichage "index of")
+
+(Liens vers la FAQ avec autres messages d'erreur (too many redirect, css cassé, blocage google, etc) à ajouter par la suite)
+
+### Accéder à l'interface administrateur de votre site
+
+(Chemin dans l'espace client)
+
+### Modifier le mot de passe de votre module 1 clic
+
+(Chemin dans l'espace client)
+(Chemin sur la page de connexion à l'admin cms)
+(Que faire si vous ne recevez pas le message avec le nouveau mdp ? (à ajouter au guide module 1 clic ?))
+
+### Supprimer votre module en 1 clic
+
+(Comment effectuer un backup > liens vers les guides)
+(Chemins / process dans l'espace client)
+
+### Retrouver les identifiants de connexion à votre module en 1 clic
+
+(chemin dans l'esapce client)
+
+### Bonnes pratiques
+
+(liens vers guides bonne pratiques mdp manager)
+(captcha sur les formulaires)
+(ne pas installer n'importe quoi)
+(faire des sauvegardes locales régulièrement)
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
+
+(liens vers les docs / communauté des différents cms)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
