@@ -21,7 +21,7 @@ Si vous souhaitez en créer davantage, une augmentation de quota est alors néce
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - [Disposer d'un moyen de paiement valide](../../billing/manage-payment-methods/) dans votre espace client OVHcloud
-- Avoir atteint le nombre maximum de projets utilisés sur votre compte OVHCloud.
+- Avoir atteint le nombre maximum de projets utilisés sur votre compte OVHCloud
 
 ## En pratique
 
@@ -44,15 +44,13 @@ Cette page présente un récapitulatif des quotas actuels de votre projet, par r
 
 ![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
-Cliquez sur `Augmenter mes quotas`{.action} et sélectionnez le projet Public Cloud de votre choix.
-
-Cliquez ensuite sur la flèche déroulante à côté de "Select the volume" pour afficher la liste des quotas actuellement disponibles pour mettre à niveau vos ressources vers. Cette section affiche également le montant à payer pour bénéficier de ces ressources.
+Cliquez sur `Augmenter mes quotas`{.action}, ensuite cliquez sur la flèche déroulante à côté de "Sélectionnez le volume" pour afficher la liste des quotas actuellement disponibles. Cette section affiche également le montant à payer pour bénéficier de ces ressources.
 
 ![select quota](images/selectquotas.png){.thumbnail}
 
 Dans notre exemple ci-dessus, nous souhaitons augmenter notre quota de ressources à « 20 Vms ».
 
-Dans ce cas, **$316.20 CAD** sera automatiquement débité du moyen de paiement enregistré au compte, une fois que nous aurons cliqué sur le bouton `Confirmer`{.action} .
+Dans ce cas, **$316.20 CAD** sera automatiquement débité du moyen de paiement enregistré au compte une fois que nous aurons cliqué sur le bouton `Confirmer`{.action}.
 
 > [!warning]
 > Veuillez noter que ce processus est immédiat.
@@ -62,14 +60,14 @@ Dans ce cas, **$316.20 CAD** sera automatiquement débité du moyen de paiement 
 
 #### Augmenter automatiquement votre quota de ressources via l'option « Quota autoscaling »
 
-Cette option vous permet de demander une augmentation automatique et progressive de votre quota de ressources. Votre quota sera automatiquement augmenté en fonction de votre utilisation et d'un certain nombre de critères internes.
+Cette option vous permet de demander une augmentation automatique et progressive de votre quota de ressources. Votre quota sera augmenté en fonction de votre utilisation et d'un certain nombre de critères internes.
 
 Veuillez notez que ceci n'est pas un processus immédiat et le quota de ressources est augmenté au fil du temps. 
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
 <br> Dans la rubrique `Project Management`, cliquez sur `Quota and Regions`{.action}.
 
-Cliquez sur le bouton `?`{.action} pour plus d'informations sur cette fonctionnalité, ensuite, cliquez sur `l'icône de basculement`{.action} et passez l'état à **activé**.
+Pour avoir plus d'informations sur cette fonctionnalité, cliquez sur le bouton `?`{.action}. Cliquez sur `l'icône de basculement`{.action} pour passez l'état à **activé**.
 
 ![auto scaling](images/autoscaling.png){.thumbnail}
 
