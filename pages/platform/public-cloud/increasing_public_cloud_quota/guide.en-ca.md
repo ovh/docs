@@ -7,7 +7,7 @@ section: Project management
 order: 5
 ---
 
-**Last updated 13/10/2021**
+**Last updated 14/10/2021**
 
 ## Objective
 
@@ -34,7 +34,7 @@ You can increase your resources quota manually or automatically.
 
 #### Increasing your resources quota manually
 
-This procedure allows you to manually request a quota increase and validate with an upfront payment (Public Cloud credit).
+This procedure allows you to manually request a quota increase and validate it with an upfront payment (Public Cloud credit).
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and switch to the `Public Cloud`{.action} section. Click on `Quota and Regions`{.action} in the left-hand sidebar.
 
@@ -46,29 +46,33 @@ This page provides an overview of regions and their available resources. A warni
 
 Click on the `Increase your quota!`{.action} button and select the Public Cloud project of your choice.
 
-Next, click on the drop down arrow next to "Select the volume" to view the list of quotas currently available to upgrade your resources to. This section also displays the cost needed to benefit from these resources.
+Next, click on the drop down arrow next to "Select the volume" to view the list of quotas currently available to upgrade your resources to. This section also displays the amount needed to benefit from these resources.
 
 ![select quota](images/selectquota.png){.thumbnail}
 
 In our example above, we wish to raise our resources quota to « 100 Vms ».
 
-In this case, **$1581 CAD** will automatically be charged to the payment method on file once we click on the `Confirm`{.action} button.
+In this case, **$1581 CAD** will be automatically charged to the payment method on file once we click on the `Confirm`{.action} button.
+
+> [!warning]
+> Please note that this is an imstant process.
+>
+> Once you click on the `Confirm`{.action} button, the order is automatically created and charged to your account.
+> 
 
 #### Increasing your resources quota automatically through « Auto-scaling quota »
 
-This option allows you to request an automatic and gradual increase of your resources quota. This is not an instant process and the time frame will depend on the internal criteria mentioned above. 
-
-With this procedure, no upfront payment is required. However, it is not recommended in the case of an urgent need.
+This option allows you to request an automatic and gradual increase of your resources quota. This is not an immediate process and the resources quota are increased over the course of time.
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and switch to the `Public Cloud`{.action} section. Click on `Quota and Regions`{.action} in the left-hand sidebar.
 
-Click on the `?`{.action} button for more information about this feature, then click on `Auto-scaling quota`{.action} to enable it.
+Click on the `?`{.action} button to find more information about this feature, then click on `Auto-scaling quota`{.action} to enable it.
 
-Once done, auto-scaling will now be enabled for your project and your resources quota will be increased periodically.
+Once done, auto-scaling will be enabled for your project and your resources quota will be increased over the course of time.
 
 ### Increasing the quota of your Public Cloud projects
 
-Project quotas cannot be increased from the OVHcloud Control Panel. To proceed with this request, you have to open a support ticket from your OVHcloud account.
+If you have exhausted the project quota of your OVHcloud account, you can request an increase by creating a support ticket. It is not possible to raise your project quota from the OVHcloud manager.
 
 ## Go further
 
