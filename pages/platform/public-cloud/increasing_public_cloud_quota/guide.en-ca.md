@@ -48,25 +48,29 @@ Click on the `Increase your quota!`{.action} button and select the Public Cloud 
 
 Next, click on the drop down arrow next to "Select the volume" to view the list of quotas currently available to upgrade your resources to. This section also displays the amount needed to benefit from these resources.
 
-![select quota](images/selectquota.png){.thumbnail}
+![select quota](images/selectquotas.png){.thumbnail}
 
-In our example above, we wish to raise our resources quota to « 100 Vms ».
+In our example above, we wish to raise our resources quota to « 20 Vms ».
 
-In this case, **$1581 CAD** will be automatically charged to the payment method on file once we click on the `Confirm`{.action} button.
+In this case, **$316.20 CAD** will be automatically charged to the payment method on file once we click on the `Confirm`{.action} button.
 
 > [!warning]
-> Please note that this is an imstant process.
+> Please note that this is an instant process.
 >
 > Once you click on the `Confirm`{.action} button, the order is automatically created and charged to your account.
 > 
 
 #### Increasing your resources quota automatically through « Auto-scaling quota »
 
-This option allows you to request an automatic and gradual increase of your resources quota. This is not an immediate process and the resources quota are increased over the course of time.
+This option allows you to request an automatic and gradual increase of your resources quota. Your quota will be automatically increased depending on your usage, and based a a certain number of internal criteria.
+
+This is not an immediate process and the resources quota are increased over the course of time. 
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and switch to the `Public Cloud`{.action} section. Click on `Quota and Regions`{.action} in the left-hand sidebar.
 
-Click on the `?`{.action} button to find more information about this feature, then click on `Auto-scaling quota`{.action} to enable it.
+Click on the `?`{.action} button for more information about this feature, then click on the `toggle icon`{.action} to switch the status to **enabled**.
+
+![auto scaling](images/autoscaling.png){.thumbnail}
 
 Once done, auto-scaling will be enabled for your project and your resources quota will be increased over the course of time.
 
