@@ -60,17 +60,17 @@ In this case, **$316.20 CAD** will be automatically charged to the payment metho
 > Once you click on the `Confirm`{.action} button, the order is automatically created and charged to your account.
 > 
 
-#### Increasing your resources quota automatically through « Auto-scaling quota »
+#### Increasing your resources quota automatically through « Auto-scaling quota » feature
 
-This option allows you to request an automatic and gradual increase of your resources quota. Your quota will be automatically increased depending on your usage, and based a a certain number of internal criteria.
+This option allows you to request an automatic and gradual increase of your resources quota. Your quota will increased depending on your usage, and based on a certain number of internal criteria.
 
 This is not an immediate process and the resources quota are increased over the course of time. 
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section, and select your Public Cloud project.
 
-Next, click on `Quota and Regions`{.action} in the left-hand sidebar.
+In the left-hand sidebar, click on `Quota and Regions`{.action}.
 
-Click on the `?`{.action} button for more information about this feature, then click on the `toggle icon`{.action} to switch the status to **enabled**.
+Click on the `?`{.action} button for more information ont this feature, then click on the `toggle icon`{.action} to switch the status to **enabled**.
 
 ![auto scaling](images/autoscaling.png){.thumbnail}
 
