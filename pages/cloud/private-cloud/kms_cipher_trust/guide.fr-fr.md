@@ -31,79 +31,88 @@ Les prérequis nécessaires à la mise en place de l’infrastructure sont :
 
 ## En pratique 
 
-### Installer des OVF Cipher Trust Manager  
+### Installer les OVA CipherTrust Manager
 
 Etapes :
 
 * Se connecter au vCenter avec un compte permettant le déploiement d’un modèle OVF
+
+![kms_cipher_trust_ova_01](images/kms_cipher_trust_ova_01.png){.thumbails}
+
 * Dans le menu Hôte et cluster, sélectionner le cluster, puis cliquer sur Actions > Déployer un modèle OVF 
 
-![capture1](images/capture1.PNG){.thumbails}
 
 * Suivre les étapes du wizard d’installation :
 
-* Sélectionner les fichiers locaux liés au modèle OVF
-* k170v-2.4.0.6018.mf
-* k170v-2.4.0.6018.ovf
-* k170v-2.4.0.6018 -disk1.vmdk
-
-![capture2](images/capture2.PNG){.thumbails}
-
-*	Next
-*	Renseigner le nom de la machine virtuelle
-*	Le nom doit être différent entre chaque instance. Ici nous l’appellerons kmsMasterNode
-
-![capture3](images/capture3.PNG){.thumbails}
-
-*	Next
-*	Sélectionner la ressource :
-
-*	Chaque instance doit être installée sur un ESXi différent. On sélectionnera donc un membre spécifique du cluster :
-
-![capture4](images/capture4.PNG){.thumbails}
-
-*	Next
-*	Vérifier les informations
-*	Next
-*	Sélectionner le périphérique de stockage
-
-![capture5](images/capture5.PNG){.thumbails}
-
-*	Next
-*	Sélectionner le réseaux VM Network
-
-![capture6](images/capture6.PNG){.thumbails}
-
-*	Next
-*	Vérifier les informations liées au déploiement
-*	Finish
-
-Une fois la VM déployées, ajouter un lecteur CD DVD
-*	Sélectionner la VM 
-
-![capture7](images/capture7.PNG){.thumbails}
+![capture2](images/kms_cipher_trust_ova_02.png){.thumbails}
 
 
-* Dans l’onglet résumé, au niveau du bloc « Matériel VM », cliquer sur « Modifier les paramètres
+* Sélectionner les fichiers locaux liés au modèle OVA : 610-000612-005_SW_VMware_CipherTrust_Manager_v2.4.0_RevA.ova
+* cliquez sur le bouton `Next`{.action}
 
-![capture8](images/capture8.PNG){.thumbails}
+![capture3](images/kms_cipher_trust_ova_03.png){.thumbails}
 
+* Renseigner le nom de la machine virtuelle. Le nom doit être différent entre chaque instance. Ici nous l’appellerons **KMS_01_master**
+* Selectionner le datacenter où sera placer la VM
+* Cliquez sur le bouton `Next`{.action}
 
-* Ajouter un périphérique > Sélectionner « Lecteur CD/DVD » puis OK
+![capture4](images/kms_cipher_trust_ova_04.png){.thumbails}
 
-![capture9](images/capture9.PNG){.thumbails}
+* Sélectionner la ressource de compute, ici **Cluster1**
+* Cliquez sur le bouton `Next`{.action}
+
+![capture5](images/kms_cipher_trust_ova_05.png){.thumbails}
+
+* Vérifier les informations
+* Cliquez sur le bouton `Next`{.action}
+
+![capture6](images/kms_cipher_trust_ova_06.png){.thumbails}
+
+* Sélectionner le périphérique de stockage
+* Cliquez sur le bouton `Next`{.action}
+
+![capture7](images/kms_cipher_trust_ova_07.png){.thumbails}
+
+* Sélectionner le réseaux approprié, ici **ADM**
+* Cliquez sur le bouton `Next`{.action}
+
+![capture7](images/kms_cipher_trust_ova_08.png){.thumbails}
+
+* Vérifier les informations liées au déploiement
+* Cliquez sur le bouton `Finish`{.action}
+
+Une fois la VM déployées,
+
+![capture8](images/kms_cipher_trust_vm_01.png){.thumbails}
+
+* Sélectionner la VM
+* Cliquez sur `Edit Settings`{.action}
+
+![capture8](images/kms_cipher_trust_vm_02.png){.thumbails}
+
+* Dans l’onglet **Virtual Hardware**, cliquer sur `Add New Device`{.action}
+* Sélectionner **CD/DVD Drive**
+
+![capture9](images/kms_cipher_trust_vm_03.png){.thumbails}
+
+* Puis `OK`{.action}
 
 Configuration de la VM
 
-* Aller dans l’onglet configuration > Option vApp
+![capture9](images/kms_cipher_trust_vm_04.png){.thumbails}
 
-![capture10](images/capture10.PNG){.thumbails}
+* Aller dans l’onglet **Configure**
+* Puis dans le menu de gauche **vApp Options**
+* Cliquez sur `Edit...`{.action}
 
-*	Cliquer sur « Modifier », un pop up s’ouvre > aller dans l’onglet « Détail du fichier OVF » et sélectionner « Image ISO » puis OK
+![capture9](images/kms_cipher_trust_vm_05.png){.thumbails}
 
-![capture11](images/capture11.PNG){.thumbails}
+* Vérifier que **Enable vApp options** est bien coché
+* Aller dans l’onglet **OVF Details**
+* Cocher **ISO images**
+* Cliquez sur `OK`{.action}
 
-preparer le fichier cloud.init selon le modéle suivant
+Preparer le fichier cloud.init selon le modéle suivant
 
 ```
 #cloud-config
@@ -131,22 +140,39 @@ Attention :
 
 *	ce fichier ne doit pas contenir de tabulation, uniquement les espace sont acceptés
 *	Toutes les valeurs entre « < » et « > » doivent être remplacées par les bonnes valeurs
+
+
 Mettre le fichier cloud.init en base 64. Exemple : 
 
-`openssl base64 -in cloud.init -out cloudb64.init`
+```openssl base64 -in cloud.init -out cloudb64.init```
 
-* Attention : La chaine en base 64 doit être sur une seule ligne pour le reste de l’opération.
+> [!warning]
+>
+> La chaine en base 64 doit être sur une seule ligne pour le reste de l’opération.
+> 
 
-Finalisation de la configuration de la VM
-*	Aller dans l’onglet configuration > Option vApp cliquer sur « Ajouter », un pop up s’ouvre
-*	Dans l’onglet Général : Renseigner l’étiquette en écrivant « user-data »
-*	Dans l’onglet Type : Renseigner la valeur par défaut en positionnant le base64 de l’étape 6
+Finalisation de la configuration de la VM,
 
-![capture12](images/capture12.PNG){.thumbails}
+![capture9](images/kms_cipher_trust_vm_06.png){.thumbails}
 
-![capture13](images/capture13.PNG){.thumbails}
+* Aller dans l’onglet **Configure**
+* Puis dans le menu de gauche **vApp Options**
+* Puis dans la section **Properties**, cliquez sur `ADD`{.action}
+
+![capture9](images/kms_cipher_trust_vm_08.png){.thumbails}
+
+* Dans l’onglet **General**
+* Définir le lable à **user-data**
+
+![capture9](images/kms_cipher_trust_vm_10.png){.thumbails}
+
+* Dans l’onglet **Type**
+* Saisir dans **Default value**, la chaine en base 64
+* Cliquez sur `SAVE`{.action}
 
 Démarrer la VM et vérifier qu’à l’issu du démarrage l’IP configurée est bien présente.
+
+Repéter les étapes pour la seconde instance **KMS_01_master**
 
 A l’issue de ces étapes, les différentes instances doivent être visibles. Exemple : 
 
@@ -225,7 +251,7 @@ Attention : le script est un script bash, dans le cas d’une utilisation sous W
 * KSCTL_URL : https://<ip>:443 en utilisant l’IP de l’une des deux instances
 
 Exemple de fichier :
-
+```
 KSCTL_VERBOSITY: false
 KSCTL_RESP: json
 KSCTL_USERNAME: admin
@@ -234,6 +260,7 @@ KSCTL_URL: https://51.222.126.181:443
 KSCTL_JWT:
 KSCTL_NOSSLVERIFY: true
 KSCTL_TIMEOUT: 30
+```
 
 * OPTIONNEL
 Configuration du profile de certificat utilisateur kmip
@@ -307,7 +334,6 @@ Une fois les prérequis validés :
 
 `./ctmInit.sh -c config.json` 
 
-
 Durant l’exécution du script, les interfaces WEB et KMIP des instances du KMS seront redémarrés, les accès WEB peuvent donc être bloqués jusqu’à la fin.
 
 Une fois que le script a rendu la main, effectuer les vérifications d’usage :
@@ -346,5 +372,4 @@ Rappel :
 *	Connector Lock Code à utiliser pour les licences de connecteur comme KMIP.
 
 
-
-Votre KMS est prêt à etre consommé.
+Votre KMS est prêt à etre utilisé.
