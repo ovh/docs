@@ -81,7 +81,7 @@ Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle
 
 Il est possible de réinstaller une nouvelle image depuis l'interface. Cette méthode restaurera complètement votre système.
 
-- Téléchargez la dernière image sur votre ordinateur : [http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz){.external}
+- Téléchargez la dernière image sur votre ordinateur : [http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz){.external}
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
 - Cliquez sur **"System"**
 - Cliquez sur **"Backup/Flash Firmware"**
@@ -173,7 +173,7 @@ Il est possible de créer une clé USB bootable contenant l'image OverTheBox afi
 
 #### Création d'une clé USB bootable sous windows
 
-- Téléchargez la dernière image **OverTheBox** sur votre ordinateur : [http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz){.external}
+- Téléchargez la dernière image **OverTheBox** sur votre ordinateur : [http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz){.external}
 - Décompressez l'image grâce à un logiciel comme [winrar](https://www.rarlab.com/download.htm){.external} afin d'obtenir le fichier **.img**
 - Branchez la clé USB sur l'ordinateur
 - Téléchargez le logiciel [Win32 Disk Imager](https://win32diskimager.org/#download){.external} et ouvrez le.
@@ -196,7 +196,7 @@ Toute l'opération se fera en ligne de commande, veuillez donc ouvrir le **Termi
 - Téléchargez la dernière image **OverTheBox** sur votre ordinateur, grace à la commande suivante :
 
 ```bash
-curl -C - -O http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz
+curl -C - -O http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz
 ```
 
 Il est ensuite impératif de connaitre le dossier désignant les partitions de votre clé USB, pour cela :
@@ -234,7 +234,7 @@ Toute l'opération se fera en ligne de commande, veuillez donc ouvrir le **Termi
 - Téléchargez la dernière image **OverTheBox** sur votre ordinateur, grace à la commande suivante :
 
 ```bash
-wget http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz
+wget http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz
 ```
 
 Il est ensuite impératif de connaitre le dossier désignant les partitions de votre clé USB, pour cela :
