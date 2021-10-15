@@ -44,33 +44,33 @@ In the left-hand sidebar, click on `Quota and Regions`{.action}.
 
 This page provides an overview of regions and their available resources. A warning will be displayed next to a resource as soon as 80% of its current quota is reached.
 
+Click on the `Increase your quota!`{.action} button.
+
 ![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
-Click on the `Increase your quota!`{.action} button and click on the drop down arrow next to "Select the volume" to view the list of quotas currently available to upgrade your resources to. This section also displays the amount to pay in order benefit from these resources.
+  Next, click on the drop down arrow next to "Select the volume" to view the list of quotas currently available to upgrade your resources to. This section also shows the amount to pay in order benefit from these resources.
 
 ![select quota](images/selectquotas.png){.thumbnail}
 
-In our example above, we wish to raise our resources quota to « 20 Vms ».
-
-In this case, **$316.20 CAD** will be automatically charged to the payment method on file once we click on the `Confirm`{.action} button.
+Once you have selected your volume, click on `Confirm`{.action}. Your payment will be processed as soon as possible.
 
 > [!warning]
-> Please note that this is an instant process.
+> Please note that the billing process is immediate.
 >
 > Once you click on the `Confirm`{.action} button, the order is automatically created and charged to your account.
 > 
 
 #### Increasing your resources quota automatically through « Auto-scaling quota » feature
 
-This option allows you to request an automatic and gradual increase of your resources quota. Your quota will increased depending on your usage, and based on a certain number of internal criteria.
+This option allows you to request an automatic and gradual increase of your resources quota. Your quota will be increased depending on your usage, and based on a certain number of internal criteria.
 
-This is not an immediate process and the resources quota are increased over the course of time. 
+This is not an instant process and the resources quota are increased over the course of time. 
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section, and select your Public Cloud project.
 
 In the left-hand sidebar, click on `Quota and Regions`{.action}.
 
-Click on the `?`{.action} button for more information ont this feature, then click on the `toggle icon`{.action} to switch the status to **enabled**.
+Click on the `?`{.action} button for more information on this feature, then click on the `toggle icon`{.action} to switch the status to **enabled**.
 
 ![auto scaling](images/autoscaling.png){.thumbnail}
 
