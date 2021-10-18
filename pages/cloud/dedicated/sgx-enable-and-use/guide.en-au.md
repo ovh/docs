@@ -1,11 +1,11 @@
 ---
-title: 'Managing Intel SGX on an Infrastructure server'
+title: 'Managing Intel SGX on a dedicated server'
 slug: enable-and-use-intel-sgx
 excerpt: 'Find out how to enable SGX on your dedicated server and install the Linux SGX software stack'
 section: 'Advanced use'
 ---
 
-**Last updated 22nd September 2020**
+**Last updated 18th October 2021**
 
 ## Objective
 
@@ -15,7 +15,7 @@ Enabling Intel Software Guard Extensions (SGX) on your server allows you to run 
 
 ## Requirements
 
-- a dedicated server in the [Infrastructure range](https://www.ovhcloud.com/en-au/bare-metal/infra/) with the [SGX](https://www.ovhcloud.com/en-au/bare-metal/intel-software-guard-extensions/) option in your OVHcloud account
+- a dedicated server in the [Infrastructure range](https://www.ovhcloud.com/en-au/bare-metal/infra/) or [Advance range](https://www.ovhcloud.com/en-au/bare-metal/advance/), with the [SGX](https://www.ovhcloud.com/en-au/bare-metal/intel-software-guard-extensions/) option in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) / to the [OVHcloud API](https://ca.api.ovh.com/console/)
 - root access via SSH on your server
 
