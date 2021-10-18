@@ -3,7 +3,7 @@ title: 'Passer root et définir un mot de passe'
 slug: passer-root-et-definir-un-mot-de-passe
 excerpt: "Apprenez à vous servir de l'utilisateur root et à créer un mot de passe pour celui-ci"
 section: 'Premiers pas'
-order: 5
+order: 08
 ---
 
 **Dernière mise à jour le 06/10/2021**
