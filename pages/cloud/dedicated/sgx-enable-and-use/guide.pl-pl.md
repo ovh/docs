@@ -1,15 +1,15 @@
 ---
-title: 'Rozszerzenie Intel SGX na serwerze Infrastructure'
+title: 'Włączenie Intel SGX na serwerze dedykowanym'
 slug: wlaczanie_i_uzywanie_intel_sgx
-excerpt: 'Włącz na swoim serwerze Infrastructure rozszerzenie SGX i zainstaluj zestaw oprogramowania SGX do systemu Linux'
+excerpt: 'Włącz opcję SGX na serwerze Infrastructure lub Advance i zainstaluj stos oprogramowania SGX na Linux'
 section: 'Poziom zaawansowany'
 ---
 
-**Ostatnia aktualizacja: 16-12-2020**
+**Ostatnia aktualizacja: 18-10-2021**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
-> 
+>
 
 ## Wprowadzenie
 
@@ -18,7 +18,7 @@ Rozszerzenie Intel SGX zapewnia zaawansowane funkcje szyfrowania sprzętowego or
 
 ## Wymagania początkowe
 
-- [Dedykowany serwer Infrastructure](https://www.ovh.pl/serwery_dedykowane/infra/){.external} z opcją [SGX](https://www.ovhcloud.com/pl/bare-metal/intel-software-guard-extensions/){.external}
+- Dedykowany serwer [Infrastructure](https://www.ovh.pl/serwery_dedykowane/infra/){.external} lub z [gamy Advance](https://www.ovhcloud.com/pl/bare-metal/advance/) z opcją [SGX](https://www.ovhcloud.com/pl/bare-metal/intel-software-guard-extensions/){.external}
 - Dostęp administracyjny (uprawnienia użytkownika root) do serwera za pośrednictwem protokołu SSH
 - Dostęp do [interfejsów API OVHcloud](https://api.ovh.com/console/){.external}
 - Zainstalowana na serwerze dystrybucja Ubuntu 18.04 lub podobna
@@ -107,11 +107,13 @@ Teraz można sprawdzić, że status to „włączono” (enabled):
 Teraz zostaną zainstalowane sterownik i zestaw SDK Intel, które umożliwiają tworzenie oraz uruchamianie aplikacji SGX.  
 
 Najpierw zainstaluj zależności:
+
 ```bash
 sudo apt-get install build-essential ocaml ocamlbuild automake autoconf libtool wget python libssl-dev libcurl4-openssl-dev protobuf-compiler libprotobuf-dev debhelper cmake git
 ```
 
 Następnie pobierz, zbuduj i zainstaluj zestaw oprogramowania SGX:
+
 ```bash
 BASE_DIR=/opt/intel
 [[ -d $BASE_DIR ]] || sudo mkdir -p $BASE_DIR && sudo chown `whoami` $BASE_DIR
@@ -131,6 +133,7 @@ sudo dpkg -i $BASE_DIR/linux-sgx/linux/installer/deb/libsgx-urts_2.6.100.51363-b
 ```
 
 Pobierz i zainstaluj sterownik:
+
 ```bash
 wget https://download.01.org/intel-sgx/linux-2.6/ubuntu18.04-server/sgx_linux_x64_driver_2.5.0_2605efa.bin
 chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
@@ -142,6 +145,7 @@ sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 #### Krok 6\. Sprawdzenie poprawności instalacji przy użyciu przykładowej aplikacji
 
 Zbuduj jedną z udostępnionych przykładowych aplikacji:
+
 ```bash
 BASE_DIR=/opt/intel
 cd $BASE_DIR/sgxsdk/SampleCode/LocalAttestation/
@@ -150,6 +154,7 @@ make SGX_DEBUG=0 SGX_MODE=HW SGX_PRERELEASE=1
 ```
 
 Uruchom ją:
+
 ```bash
 ovh@nsXXXX:/opt/intel/sgxsdk/SampleCode/LocalAttestation$ ./app 
 
