@@ -46,7 +46,7 @@ Click on the `Increase your quota!`{.action} button.
 
 ![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
- Next, click on the drop down arrow next to "Select the volume" to view the list of quotas currently available to upgrade your resources to. This section also shows the amount to pay in order to benefit from these resources.
+Next, click on the drop down arrow next to "Select the volume" to view the list of quotas currently available to upgrade your resources to. This section also shows the amount to pay in order to benefit from these resources.
 
 ![select quota](images/selectquotas.png){.thumbnail}
 
