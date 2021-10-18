@@ -49,6 +49,16 @@ Cliquez sur la flèche à côté de « Sélectionnez le volume » pour afficher 
 
 ![select quota](images/selectquotas.png){.thumbnail}
 
+Le tableau ci-dessous vous indique les ressources obtenues pour chaque quota :
+
+|Quota|Instances|CPU/Cores|RAM|Taille du volume|Volumes|Snapshots|
+|---|---|---|---|---|---|---|
+|10 VMs|10|20|40GB|20TB|20|20|
+|20 VMs|20|40|240GB|20TB|40|40|
+|50 VMs|50|64|496GB|20TB|100|100|
+|100 VMs|100|128|992GB|39TB|200|200|
+|200 VMs|200|512|3.9TB|78TB|400|400|
+
 Une fois votre volume sélectionné, cliquez sur `Confirmer`{.action}. Votre paiement sera pris en compte dans les plus brefs délais.
 
 > [!warning]

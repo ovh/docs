@@ -17,12 +17,10 @@ To be able to use additional resources and projects, the quotas need to be incre
 
 **This guide explains how to request and increase a Public Cloud quota in the OVHcloud Control Panel.**
 
-
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - a [valid payment method](../../billing/manage-payment-methods/) registered in your OVHcloud account
-- you have exhausted the project quota of your OVHcloud account
 
 ## Instructions
 
@@ -48,11 +46,11 @@ Click on the `Increase your quota!`{.action} button.
 
 ![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
- Next, click on the drop down arrow next to "Select the volume" to view the list of quotas currently available to upgrade your resources to. This section also shows the amount to pay in order benefit from these resources.
+ Next, click on the drop down arrow next to "Select the volume" to view the list of quotas currently available to upgrade your resources to. This section also shows the amount to pay in order to benefit from these resources.
 
 ![select quota](images/selectquotas.png){.thumbnail}
 
-The table below shows the resources your get for each volume:
+The table below shows the resources you get for each quota:
 
 |Quota|Instances|CPU/Cores|RAM|Volume Size|Volumes|Snapshots|
 |---|---|---|---|---|---|---|
@@ -68,19 +66,19 @@ Once you have selected your volume, click on `Confirm`{.action}. Your payment wi
 > Please note that the billing process is immediate.
 >
 > Once you click on the `Confirm`{.action} button, the order is automatically created and charged to your account.
-> 
+>
 
 #### Increasing your resources quota automatically through « Auto-scaling quota » feature
 
 This option allows you to request an automatic and gradual increase of your resources quota. Your quota will be increased depending on your usage, and based on a certain number of internal criteria.
 
-This is not an instant process and the resources quota are increased over the course of time. 
+This is not an instant process and the resources quota are increased over the course of time.
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section, and select your Public Cloud project.
 
 In the left-hand sidebar, click on `Quota and Regions`{.action}.
 
-Click on the `?`{.action} button for more information on this feature, then click on the `toggle icon`{.action} to switch the status to **enabled**.
+Click on the `?`{.action} button for more information on this feature, then click on the `toggle icon`{.action} to switch the status to "**Enabled**".
 
 ![auto scaling](images/autoscaling.png){.thumbnail}
 
@@ -88,7 +86,7 @@ Once done, auto-scaling will be enabled for your project and your resources quot
 
 ### Increasing the quota of your Public Cloud projects
 
-To request for an increase in the number of projects, you will need to contact the support team.
+If you have reached the maximum number of Public Cloud projects authorised in your Control Panel, and you would like to create additional projects, please submit a request to our support teams.
 
 ## Go further
 
