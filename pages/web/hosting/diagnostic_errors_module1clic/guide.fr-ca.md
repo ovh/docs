@@ -6,7 +6,7 @@ section: Diagnostic
 order: 2
 ---
 
-**Dernière mise à jour le 24/06/2021**
+**Dernière mise à jour le 08/10/2021**
 
 ## Objectif
 
@@ -113,7 +113,7 @@ Puis relancez l'installation d'un nouveau module.
 
 ![domainenotproposed](images/domainenotproposed.png){.thumbnail}
 
-Cliquez sur l’onglet `Multisite`{.action}, puis effectuez les vérifications suivantes :
+Cliquez sur l’onglet `Multisite`{.action} puis effectuez les vérifications suivantes :
 
 |Scénario|Action à entreprendre|
 |---|---|
