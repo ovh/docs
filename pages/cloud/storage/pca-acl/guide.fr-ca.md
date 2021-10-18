@@ -1,9 +1,9 @@
 ---
-title: Mettre en place une Access Control List sur Public Cloud Archive
+title: Mettre en place une Access Control List sur Object Storage
 slug: pca/acl
 routes:
     canonical: 'https://docs.ovh.com/fr/storage/pcs/acl/'
-excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre les ACL dans Public Cloud Archive
+excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre les ACL dans Object Storage
 section: Public Cloud Archive
 ---
 
@@ -11,7 +11,7 @@ section: Public Cloud Archive
 
 ## Objectif
 
-Ce guide à pour objectif de vous aider à vous familiariser avec les ACL afin d'affiner les droits d'accès à vos conteneurs
+Ce guide à pour objectif de vous aider à vous familiariser avec les ACL afin d'affiner les droits d'accès à vos conteneurs.
 
 ## Préambule
 
@@ -21,7 +21,7 @@ Les ACL des conteneurs sont stockées dans les métadonnées **X-Container-Write
 
 - **X-Container-Read** permet d'effectuer des opérations GET et HEAD sur des objets dans un conteneur. Certains éléments de la liste de contrôle d'accès permettent également d'effectuer des opérations HEAD ou GET sur le conteneur lui-même. Toutefois, une ACL de conteneur ne permet pas d'accéder aux métadonnées privilégiées (telles que X-Container-Sync-Key).
 
-Les ACL de conteneurs utilisent la syntaxe ACL « V1 » qui est une chaîne d'éléments séparés par des virgules, comme le montre l'exemple suivant :
+Les ACL de conteneurs utilisent la syntaxe ACL « V1 » qui est une chaîne d'éléments séparés par des virgules comme le montre l'exemple suivant :
 
 ```
 .r:*,.rlistings,702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf:*
@@ -35,10 +35,10 @@ Les éléments peuvent être séparés par des espaces, comme dans l'exemple sui
 
 ## Prérequis
 
-- Avoir créé un container Public Cloud Archive.
-- [Avoir créé des utilisateurs OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/) en installant python-swiftclient.
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/).
+- Avoir créé un container Object Storage.
+- [Avoir créé des utilisateurs OpenStack](https://docs.ovh.com/ca/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
+- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/) en installant python-swiftclient.
+- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/charger-les-variables-denvironnement-openstack/).
 
 ## En pratique
 
@@ -460,7 +460,7 @@ X-Iplb-Instance: 12309
 <object>
 ```
 
-### Autoriser un domaine reférent à télécharger des objets
+### Autoriser un domaine reférent à télécharger des objects
 
 Afin d'autoriser toutes les requêtes en provenance du domaine `example.com` à avoir accès aux objets du conteneur :
 
@@ -468,7 +468,7 @@ Afin d'autoriser toutes les requêtes en provenance du domaine `example.com` à 
 swift post <conteneur> -r ".r:.example.com"
 ```
 
-> [!primary]
+> {!primary}
 >
 > Bien que la plupart des navigateurs modernes incluent l'en-tête `Referrer` dans leurs requêtes, cela constitue un risque de sécurité car il est tout à fait possible de changer la valeur de cet en-tête.
 >
@@ -482,7 +482,7 @@ curl -i $STORAGE_URL/<conteneur>/<object> -H "Referrer: http://example.com/index
 
 ### Partager un conteneur avec un utilisateur externe au projet
 
-Depuis un autre projet, créez un utilisateur **other-project-user** sans aucun rôle.
+Depuis un autre projet, créez un utilisateur **other-project-user** sans aucun rôle :
 
 ![Autre utilisateur](images/other-user.png)
 
@@ -532,6 +532,7 @@ Depuis le compte `other-project-user` :
 . openrc-other-project-user.sh
 swift --os-storage-url https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b list <conteneur>
 ```
+
 ```
 <largeobject>
 <object>
@@ -568,12 +569,11 @@ X-Iplb-Instance: 33617
 ## Le cas des Large Objects
 
 Si un objet de plus de 5Gb à été déposé, cela génère un conteneur tel que : `<conteneur_segments>`.<br>
-Il faut appliquer les mêmes ACL à ce conteneur afin de pouvoir récupérer l'objet de plus de 5Gb
+Il faut appliquer les mêmes ACL à ce conteneur afin de pouvoir récupérer l'objet de plus de 5Gb.
 
 ```bash
 swift stat <conteneur>
 ```
-
 ```
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
 Container: <conteneur>
@@ -598,7 +598,6 @@ X-Iplb-Instance: 38343
 ```bash
 swift stat <conteneur_segments>
 ```
-
 ```
 Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
 Container: <conteneur_segments>
@@ -660,7 +659,6 @@ X-Iplb-Instance: 38426
 ```bash
 swift download <conteneur> <largeobject>
 ```
-
 ```
 <largeobject> [auth 0.739s, headers 1.408s, total 5504.436s, 1.171 MB/s]
 ```

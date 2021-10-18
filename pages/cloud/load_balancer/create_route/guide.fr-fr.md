@@ -15,8 +15,7 @@ Dans certains cas, il est possible d'aller plus loin, et de router, rediriger ou
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVH](https://www.ovh.com/fr/solutions/load-balancer/){.external}.
-sur une offre autorisant la création des routes
+- Disposer d'un [Load Balancer OVH](https://www.ovh.com/fr/solutions/load-balancer/){.external} sur une offre autorisant la création des routes
 - Avoir accès à l'[API OVH](https://api.ovh.com/){.external}.
 
 ## En pratique
@@ -373,7 +372,7 @@ Cet appel retourne la liste des identifiants numériques des routes définies po
 |frontendId||Identifiant numérique d'un Frontend HTTP auquel les routes sont attachées|
 
 #### Créer une route
-Cet appel permet de créer une route. Seule l'action est obligatoire. Une route peut être attachée et détachée d'un Frontend. Il est possible de créer jusqu'à 20 routes sur un service OVH Load Balancer. Cet appel retourne la route créée en cas de succès. Votre service OVH Load Balancer doit être re-déployé pour appliquer les changements.
+Cet appel permet de créer une route. Seule l'action est obligatoire. Une route peut être attachée et détachée d'un Frontend. Il est possible de créer jusqu'à 50 routes sur un service OVH Load Balancer. Cet appel retourne la route créée en cas de succès. Votre service OVH Load Balancer doit être re-déployé pour appliquer les changements.
 
 
 > [!api]

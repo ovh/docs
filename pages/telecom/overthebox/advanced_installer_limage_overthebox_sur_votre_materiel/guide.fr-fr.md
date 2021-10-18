@@ -31,11 +31,11 @@ On identifie dans cette exemple que la destination d'installation sera **mmcbk0*
 
 
 ## Téléchargez l'image OverTheBox
-Sur cette page vous pouvez retrouver les images d' **OverTheBox**  compilées : [http://downloads.overthebox.net/stable/targets/x86/64/](http://downloads.overthebox.net/stable/targets/x86/64/){.external}
+Sur cette page vous pouvez retrouver les images d' **OverTheBox**  compilées : [http://downloads.overthebox.ovh/stable/targets/x86/64/](http://downloads.overthebox.ovh/stable/targets/x86/64/){.external}
 
 
 ```bash
-wget http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz
+wget http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz
 ```
 
 
