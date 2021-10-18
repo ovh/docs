@@ -52,9 +52,9 @@ Cliquez sur la flèche à côté de « Sélectionnez le volume » pour afficher 
 Une fois votre volume sélectionné, cliquez sur `Confirmer`{.action}. Votre paiement sera pris en compte dans les plus brefs délais.
 
 > [!warning]
-> Veuillez noter que le processus de facturation est immédiat.
+> **Toute augmentation manuelle de quota est immédiatement facturée**.
 >
-> Une fois que vous cliquez sur le bouton `Confirmer`{.action}, la commande est automatiquement créée et débitée de votre compte.
+> Une fois que vous cliquez sur le bouton `Confirmer`{.action}, la commande est automatiquement créée et débitée de votre moyen de paiement.
 >
 
 #### Augmenter automatiquement votre quota de ressources via l'option « Quota autoscaling »
@@ -66,7 +66,7 @@ Veuillez noter que le processus n'est pas immédiat. Le quota de ressources est 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
 <br> Dans la rubrique `Project Management`, cliquez sur `Quota and Regions`{.action}.
 
-Pour avoir plus d'informations sur cette fonctionnalité, cliquez sur le bouton `?`{.action}. Cliquez ensuite sur le bouton dédié afin de passer l'état à **activé**.
+Pour avoir plus d'informations sur cette fonctionnalité, cliquez sur le bouton `?`{.action}. Cliquez ensuite sur le bouton dédié afin de passer l'état à « **Activé** ».
 
 ![auto scaling](images/autoscaling.png){.thumbnail}
 
