@@ -1,117 +1,126 @@
 ---
 title: 'Root-Rechte erlangen und Passwort festlegen'
-excerpt: 'Root-Rechte erlangen und Passwort festlegen'
 slug: root-rechte_erlangen_und_passwort_festlegen
+excerpt: 'Erfahren Sie hier, wie Sie Root-Rechte erlangen und ein Passwort vergeben'
 legacy_guide_number: g1786
 section: 'Erste Schritte'
 order: 5
 ---
 
-## 
-Zur Durchführung bestimmter Aktionen kann es erforderlich sein, dass Sie sich root-Rechte verschaffen, um Operationen als Benutzer "root" realisieren zu können, zum Beispiel:
+**Letzte Aktualisierung am 19.10.2021**
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
 
-- Die Installation von Paketen
-- Das Festlegen eines Passworts für einen Benutzer oder für Root (für den KVM Zugriff erforderlich)
-- Verschiedene Administrationstätigkeiten
+## Ziel
 
+Um bestimmte Verwaltungsfunktionen auf Ihrer Instanz auszuführen (zum Beispiel die Installation von Paketen), benötigen Sie eine höhere Berechtigungsstufe. Auf Linux-Servern wird dieser Zugang als "Root" bezeichnet.
 
-
+**Diese Anleitung erklärt, wie Sie zum Root-Benutzer wechseln und ein Passwort für den Root-Account erstellen.**
 
 ## Voraussetzungen
 
-- [Eine erstellte Instanz](https://www.ovh.de/public-cloud/)
-- Eine SSH-Verbindung zur Instanz mit dem Standardbenutzer (admin oder der Name der Distribution für neuere Images)
+- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) erstellt.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
+## In der praktischen Anwendung
 
+### Festlegen des Root-Passworts <a name="settingtherootpassword"></a>
 
-## Hinweis:
-In dieser Hilfe gehen wir von dem Standardbenutzer admin aus.
+Stellen Sie zunächst eine [SSH-Verbindung](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-4-mit-ihrer-instanz-verbinden) zu Ihrer Instanz her.
 
+Geben Sie auf der Kommandozeile ein Passwort für den root-Benutzer ein (aus Sicherheitsgründen wird das Passwort beim Eingeben nicht angezeigt):
 
-## Festlegen eines Passworts
-
-- Festlegen eines Passworts für den Benutzer admin (das Passwort wird bei der Eingabe aus Sicherheitsgründen nicht angezeigt):
-
-```
-~$ sudo passwd
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-- Festlegen eines Passworts für den Benutzer root (das Passwort wird bei der Eingabe aus Sicherheitsgründen nicht angezeigt):
-
-```
+```bash
 ~$ sudo passwd root
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
 ```
 
+### Repositorys aktualisieren (Debian/Ubuntu)
 
+Um die auf Ihrem Server installierten Softwarepakete zu aktualisieren, geben Sie folgenden Befehl in der Kommandozeile ein:
 
-
-
-## Weitere Beispiele
-
-- Update des Paket-Caches (Debian / Ubuntu):
-
-```
+```bash
 ~$ sudo apt-get update
 ```
 
+### System aktualisieren (CentOS/Fedora)
 
-- Update des Systems (CentOS / Fedora):
+Um das Betriebssystem Ihres Servers zu aktualisieren, geben Sie folgenden Befehl in der Kommandozeile ein:
 
-```
+```bash
 ~$ sudo yum update
 ```
 
+### Zum Root-Benutzer wechseln
 
-- Bearbeiten einer Konfigurationsdatei:
+Geben Sie folgenden Befehl ein, um Root zu werden:
 
-```
-~$ sudo vi /etc/hosts.allow
-```
-
-
-
-
-
-## 
-
-- root-Rechte verschaffen:
-
-```
+```bash
 ~$ sudo su -
 ~#
 ```
 
+Geben Sie anschließend das Passwort für den Root-Account ein.
 
-- Festlegen eines Passworts für den Benutzer root (nach dem Verschaffen von root-Rechten):
 
+### Root-Login und Authentifizierung mit Passwort aktivieren
+
+#### Für Verbindungen über die im OVHcloud Kundencenter integrierte VNC-Konsole
+
+Nachdem [das Root-Passwort erstellt wurde](#settingtherootpassword), gehen Sie zur VNC-Konsole:
+
+Klicken Sie auf den `...`{.action} rechts von Ihrer Instanz und dann auf `Instanz-Details`{.action}. 
+
+![access instance](images/instancedetails.png){.thumbnail} 
+
+Wechseln Sie zum Tab `VNC-Konsole`{.action}. Geben Sie an der Eingabeaufforderung als Login **root** ein und anschließend Ihr Passwort.
+
+![vnc](images/vnc.png){.thumbnail} 
+
+#### Für Verbindungen mit Linux-Endgeräten
+
+Nachdem [das Root-Passwort erstellt wurde](#settingtherootpassword), aktivieren Sie den Root-Login und die Kennwortauthentifizierung in der Datei **sshd_config**:
+
+```bash
+~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 ```
-~# passwd
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
+
+Starten Sie den SSH-Dienst neu:
+
+```bash
+~$ service sshd restart
 ```
 
+Sobald die Operation abgeschlossen ist, sollten Sie mit Root-Benutzer und Passwort auf Ihren Server zugreifen können.
 
-- Festlegen eines Passworts für den Benutzer admin (nach dem Verschaffen von root-Rechten):
+#### Für Putty-Verbindungen
 
+Nachdem [das Root-Passwort erstellt wurde](#settingtherootpassword), aktivieren Sie den Root-Login und die Kennwortauthentifizierung in der Datei **sshd_config**:
+
+```bash
+~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 ```
-~# passwd admin
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
+
+Starten Sie den SSH-Dienst neu:
+
+```bash
+~$ service sshd restart
 ```
 
+Löschen Sie im Putty Authentifizierungsagent (*pageant key list*) Ihren privaten SSH-Schlüssel.
 
+![remove private key](images/pageantkeylist.png){.thumbnail}
 
+Sobald die Operation abgeschlossen ist, sollten Sie mit Root-Benutzer und Passwort auf Ihren Server zugreifen können.
 
-## 
-[Zurück zum Index der Cloud Hilfen](https://docs.ovh.com/de/public-cloud/)
+## Weiterführende Informationen
 
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
