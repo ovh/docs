@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 5
 ---
 
-**Dernière mise à jour le 06/10/2021**
+**Dernière mise à jour le 19/10/2021**
 
 ## Objectif
 
@@ -20,11 +20,6 @@ Pour exécuter certaines fonctions administratives sur votre serveur (l’instal
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 
 ## En pratique
-
-> [!primary]
->
-> Ce guide suppose que l'utilisateur par défaut s'appelle « admin ».
->
 
 ### Définir le mot de passe root <a name="settingtherootpassword"></a>
 
@@ -54,12 +49,6 @@ Pour mettre à jour le système d'exploitation de votre serveur, entrez la comma
 
 ```bash
 ~$ sudo yum update
-```
-
-### Modifier le fichier de configuration
-
-```bash
-~$ sudo vi /etc/hosts.allow
 ```
 
 ### Passer à root
