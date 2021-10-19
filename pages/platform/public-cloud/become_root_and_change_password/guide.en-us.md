@@ -7,7 +7,7 @@ section: 'Getting started'
 order: 5
 ---
 
-**Last updated 6th October 2021**
+**Last updated 19th October 2021**
 
 ## Objective
 
@@ -21,11 +21,6 @@ To perform certain administrative functions on your server (e.g. installing pack
 * access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
 
 ## Instructions
-
-> [!primary]
->
-This guide assumes that the default user is called "admin".
->
 
 ### Setting the root password <a name="settingtherootpassword"></a>
 
@@ -55,12 +50,6 @@ To update your server's operating system, type the following command at the comm
 
 ```bash
 ~$ sudo yum update
-```
-
-### Edit a configuration file
-
-```bash
-~$ sudo vi /etc/hosts.allow
 ```
 
 ### Become root
