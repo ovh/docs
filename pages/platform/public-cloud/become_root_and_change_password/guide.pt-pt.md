@@ -122,7 +122,7 @@ Reinicie o serviço SSH:
 ~$ service sshd restart
 ```
 
-No agente de autenticação Putty (pageant key list), elimine a sua chave SSH privada.
+No agente de autenticação Putty (*pageant key list*), elimine a sua chave SSH privada.
 
 ![remove private key](images/pageantkeylist.png){.thumbnail}
 
