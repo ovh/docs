@@ -1,6 +1,6 @@
 ---
 title: 'Tornar-se o utilizador root e selecionar uma palavra-passe'
-slug: 'tornar-se_root_e_definir_uma_palavra-passe'
+slug: tornar-se_root_e_definir_uma_palavra-passe
 excerpt: 'Saiba como tornar-se o utilizador root e criar uma palavra-passe para a conta root'
 legacy_guide_number: g1786
 section: Introdução

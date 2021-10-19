@@ -1,6 +1,6 @@
 ---
 title: 'Zostań użytkownikiem root i wybierz hasło'
-slug: 'zostan_uzytkownikiem_root_i_wybierz_haslo'
+slug: dostep_root_i_zdefiniowanie_hasla
 excerpt: 'Dowiedz się, jak się zalogować jako użytkownik root i ustawić dla niego hasło'
 legacy_guide_number: g1786
 section: Tutoriale
