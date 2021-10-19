@@ -94,6 +94,19 @@ To link your domain to another directory, click on `Modify domain`{.action} in t
 
 You can also log in to your hosting plan via [FTP](../log-in-to-storage-ftp-web-hosting/), then delete or move the folder content after backing it up.
 
+### `An error has occurred loading the information (There is not enough space on your hosting (you need at least xxx MB)`
+
+![not_enough_space](images/not_enough_space.png){.thumbnail}
+
+This message indicates that the [storage space](../connection-storage-space-ftp-web-hosting/) of your hosting has too much data. You must delete or move one before you can install a new [1-click module](../1-click-modules/).
+
+In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to your hosting plan, [back up locally](../share-guide-using-filezilla/#transfer-of-files) your data, then delete the files that are not necessary for your website to work properly.
+
+> [!primary]
+>
+> If you have any questions about which data to delete in order to reduce the amount of data on your hosting plan, please contact our [user community](https://community.ovh.com) or [OVHcloud partners](https://partner.ovhcloud.com/fr/).<br>
+> We will not be able to assist you with this.
+
 ### “Unable to connect to database“ <a name="deleteModule"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
