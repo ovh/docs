@@ -216,7 +216,7 @@ Wir empfehlen Ihnen, bei Unsicherheit bezüglich des Verwendungszeitraums die st
 
 Nachdem Sie überprüft haben, dass Ihre Konfigurationseinstellungen korrekt sind, klicken Sie auf den Button `Instanz erstellen`{.action}, um den Vorgang abzuschließen. Es kann einige Minuten dauern, bis Ihr Dienst geliefert wird.
 
-### Schritt 4: Mit Ihrer Instanz verbinden
+### Schritt 4: Mit Ihrer Instanz verbinden <a name="connect-to-instance"></a>
 
 Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Compute“ auf `Instanzen`{.action}. Ihre Instanz steht bereit, sobald in der entsprechenden Tabellenspalte als Status „Aktiviert“ angezeigt wird. Um dies zu überprüfen, können Sie rechts neben `Instanz erstellen`{.action} auf den Aktualisierungsbutton klicken.
 

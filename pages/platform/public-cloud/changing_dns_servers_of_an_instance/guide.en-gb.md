@@ -7,18 +7,18 @@ section: Networking
 order: 12
 ---
 
-**Last updated 30th September 2021**
+**Last updated 2nd January 2020**
 
 ## Objective
 
-The default DNS server configured on instances will be the OVHcloud server (213.186.33.99). You can add a secondary one or replace this configuration with your own. However, the DNS servers are configured automatically by a DHCP server, and you will not be able to change it by editing the resolv.conf file.
+The default DNS server configured on instances you create will be the OVHcloud server (213.186.33.99). You can add a secondary server or replace this configuration with your own. However, the DNS servers are configured automatically by a DHCP server and you will not be able to change the DNS configuration by editing the `resolv.conf` file.
 
 **This guide explains how to change the DHCP configuration of an instance in order to change the DNS servers.**
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
@@ -31,8 +31,8 @@ The default DNS server configured on instances will be the OVHcloud server (213.
 
 ### For Debian/Ubuntu
 
-- Connect to your instance via SSH. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](../first-login/){.external}.
-- Make yourself the root user. To do this, you can refer to our guide on [Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/){.external}.
+- Log in to your instance via SSH. To do this, you can refer to our guide on [Connecting to a Public Cloud instance](../public-cloud-first-steps/#connect-to-instance).
+- Switch the root user. To do this, you can refer to our guide on [Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/).
 
 > [!primary]
 >
@@ -153,12 +153,12 @@ DNS configuration:
 
 ![change-dns-servers](images/changednsservers3.png){.thumbnail}
 
-> [!success]
+> [!primary]
 >
 In PowerShell, you can use the command `nslookup` to check which DNS server is used by default.
 >
 
-## Go further
+## Go further <a name="gofurther"></a>
 
 [Logging in to an OVHcloud Public Cloud instance](../first-login/)
 

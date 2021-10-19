@@ -7,7 +7,7 @@ section: 'Getting started'
 order: 5
 ---
 
-**Last updated 2018/10/15**
+**Last updated 6th October 2021**
 
 ## Objective
 
@@ -17,24 +17,24 @@ To perform certain administrative functions on your server (e.g. installing pack
 
 ## Requirements
 
-* a Public Cloud project activated
-* access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
+* a [Public Cloud instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance) in your OVHcloud account
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 
 ## Instructions
 
 > [!primary]
 >
-This guide assumes that the default user is called 'admin'.
+This guide assumes that the default user is called "admin".
 >
 
-### Changing the root password
+### Setting the root password <a name="settingtherootpassword"></a>
 
-First, establish an SSH connection to your server.
+First, establish an [SSH connection](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/#step-4-connecting-to-your-instance) to your server with your default user.
 
-At the command line, enter a password for the admin user (for security reasons, the password will not be shown as you type it):
+At the command line, set a password for the root user (for security reasons, the password will not be shown as you type it):
 
-```sh
-~$ sudo passwd
+```bash
+~$ sudo passwd root
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated 
@@ -45,7 +45,7 @@ successfully
 
 To update the installed software packages on your server, type the following command at the command line:
 
-```
+```bash
 ~$ sudo apt-get update
 ```
 
@@ -53,13 +53,13 @@ To update the installed software packages on your server, type the following com
 
 To update your server's operating system, type the following command at the command line:
 
-```
+```bash
 ~$ sudo yum update
 ```
 
 ### Edit a configuration file
 
-```
+```bash
 ~$ sudo vi /etc/hosts.allow
 ```
 
@@ -67,12 +67,73 @@ To update your server's operating system, type the following command at the comm
 
 To become the root user, type the following command at the command line:
 
-```
+```bash
 ~$ sudo su -
 ~#
 ```
 
 Next, enter the root password.
+
+
+### Enable root login and password authentication
+
+#### For connections via the built-in VNC console in the OVHcloud Control Panel
+
+First, [set the root password](#settingtherootpassword)
+
+Next, access the VNC console on the manager:
+
+Click on the `...`{.action} button next to the corresponding instance and then click on `Instance details`{.action}. 
+
+![acces instance](images/instancedetails.png){.thumbnail} 
+
+Switch to the tab `VNC console`{.action}. At the command prompt, enter your login as **root**, then enter your password.
+
+![vnc](images/vnc.png){.thumbnail} 
+
+#### For connections using Linux terminals
+
+First, [set the root password](#settingtherootpassword)
+
+Next, enable root login and password authentication in your **sshd_config** file:
+
+```bash
+~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+```
+
+Restart the SSH service:
+
+```bash
+~$ service sshd restart
+```
+
+Once done, you should be able to access your server with the root user and password set.
+
+#### For connections using Putty
+
+First, [set the root password](#settingtherootpassword)
+
+Next, enable root login and password authentication in your **sshd_config** file:
+
+```bash
+~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+~$ sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+```
+
+Restart the SSH service:
+
+```bash
+~$ service sshd restart
+```
+
+In the Putty authentication agent (pageant key list), remove your private SSH key.
+
+![Remove private key](images/pageantkeylist.png){.thumbnail}
+
+Once done, you should be able to access your server with the root user and password set.
 
 ## Go further
 

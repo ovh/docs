@@ -59,7 +59,7 @@ L'installation d'une offre Microsoft 365 Apps for entreprise sur un ordinateur p
 
 Éditez le fichier `configuration.xml`, puis décommentez les lignes suivantes :
 
-```bash
+```xml
 Display Level="None" AcceptEULA="True"
 Property Name="SharedComputerLicensing" Value="1"
 ```
@@ -81,15 +81,15 @@ puis
 >
 > L'exécution de ces commandes peut prendre plusieurs minutes.
 
-- Ouvrez l'éditeur du registre de windows en exécutant "Regedit", puis suivre le chemin suivant :
+- Ouvrez l'éditeur du registre de windows en exécutant `Regedit`, puis suivre le chemin suivant :
 
-```bash
+```powershell
 HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration
 ```
 
 - Vérifiez la clé suivante :
 
-```bash
+```powershell
 SharedComputerLicensing
 ```
 Assurez-vous que sa valeur est à `1`. Si cette clé n'existe pas, vous pouvez la créer.

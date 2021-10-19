@@ -69,7 +69,7 @@ Lo snapshot sarà disponibile nella sezione `Instance Backup`{.action}. Un'istan
 
 #### Dall'interfaccia Horizon
 
-Per continuare, devi [creare un utente per accedere a horizon](..crea_un_utente_per_accedere_a_horizon/) e [connetterti all'interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Per continuare, devi [creare un utente per accedere a horizon](../crea_un_utente_per_accedere_a_horizon/) e [connetterti all'interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Se hai installato istanze in diverse regioni, assicurati di essere nella localizzazione giusta. Puoi verificarlo nell'angolo superiore sinistro dell'interfaccia Horizon.
 

@@ -144,8 +144,6 @@ Require valid-user
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/)
-
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

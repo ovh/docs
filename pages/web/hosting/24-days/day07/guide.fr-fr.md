@@ -1,7 +1,7 @@
 ---
-title: 'Déploiement avance avec SSH, Git et Composer'
+title: 'Déploiement avancé avec SSH, Git et Composer'
 slug: day07
-excerpt: 'Deployer une application PHP moderne'
+excerpt: 'Déployer une application PHP moderne'
 section: "Cas d'usage"
 hidden: true
 ---

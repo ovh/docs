@@ -5,13 +5,13 @@ excerpt: 'Find out how to set up a Veeam Backup & Replication server with Veeam 
 section: Veeam
 ---
 
-**Last updated 23rd July 2020**
+**Last updated 4th October 2021**
 
 ## Objective
 
 Veeam Backup & Replication is a data protection software. It offers its users a wide range of options for backing up, replicating and restoring their data.
 
-**Find out how to set up a Veeam Backup & Replication server, then register it with an OVHcloud Veeam Enterprise licence server.**
+**This guide explains how to set up a Veeam Backup & Replication server, then register it with an OVHcloud Veeam Enterprise licence server.**
 
 
 ## Requirements
@@ -21,7 +21,7 @@ Veeam Backup & Replication is a data protection software. It offers its users a 
 
 > [!primary]
 >
-> Our Veeam offers are currently not compatible with the latest version (10) offered by Veeam. OVHcloud will continue to offer version 9.5 until further notice. Please take this into consideration when configuring Veeam for your services.
+> Our Veeam offers are only compatible with the latest version (10) offered by Veeam. Please take this into consideration when configuring Veeam for your services.
 >
 
 ## Instructions
@@ -32,7 +32,7 @@ Download the **Veeam Backup & Replication** solution from the Veeam website. If 
 
 The file will appear in ISO disk image format. Once you have transferred it onto your server, select the server’s CD reader, then select the image.
 
-In the server, you can then launch the installation wizard. Select `Veeam Backup & Replication (Install)`{.action}.
+On the server, you can then launch the installation wizard. Select `Veeam Backup & Replication (Install)`{.action}.
 
 ![installation Veeam](images/veeamBandR_inst_01.png){.thumbnail}
 
@@ -40,7 +40,7 @@ After you have read the licence agreement, accept the terms and click `Next`{.ac
 
 ![terms conditions](images/veeamBandR_inst_02.png){.thumbnail}
 
-Click `Next`{.action} to proceed to the next stage, where you can save the licence file.
+Click `Next`{.action} to skip the step of opening a licence file.
 
 ![licence](images/veeamBandR_inst_03.png){.thumbnail}
 
@@ -118,6 +118,24 @@ Then, in the "Add User" window, enter the service account name you have created.
 If you go back to the **Security** window, you can check that the account has been defined properly.
 
 ![user added](images/veeamBandR_conf_5.png){.thumbnail}
+
+#### Launch and Activation Permissions
+
+The OVHVeeamEnterprise user is only accessible locally, so it is necessary to add permissions in the Windows graphical user interface to enable the remote connection.
+
+Via the graphical user interface:
+
+1. In your Windows search bar, type `Component Services`{.action} and launch the service.
+2. On the left menu and following the tree structure, click on `Component Services`{.action}, then on `Computers`{.action}, then on `My Computer`{.action}.
+3. On the right, under the `Actions`{.action} tab, click on `More Actions`{.action}, then on `Properties`{.action}.
+4. Go to `COM Security`{.action}, underneath the second section `Launch and Activation Permissions`{.action}, click on `Edit Limits`{.action}.
+5. Select the `OVHVeeamEnterprise`{.action} user and enable all permissions.
+
+![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
+
+6. Click on `OK`{.action} to confirm and on `Apply`{.action} to validate the changes.
+
+Your OVHVeeamEnterprise user is now accessible locally and remotely.
 
 #### Step 3: Register the Veeam Backup & Replication server
 

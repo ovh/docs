@@ -3,14 +3,14 @@ title: 'Configuring the network on Proxmox VE on the High Grade & SCALE ranges'
 slug: proxmox-network-hg-scale
 excerpt: 'Find out how to configure the network on Proxmox VE on the High Grade & SCALE ranges'
 section: 'Advanced use'
-order: 1
+order: 5
 ---
 
 **Last updated 4th October 2021**
 
 ## Objective
 
-On the High Grade & SCALE ranges, it is not possible to operate failover IPs in bridged mode (via virtual MACs). It is therefore necessary to configure failover IPs in routed mode or via the vRack.
+On the High Grade & SCALE ranges, it is not possible to operate failover IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure failover IPs in routed mode or via the vRack.
 
 **This guide explains how to configure the network in Proxmox VE.**
 
@@ -18,7 +18,7 @@ On the High Grade & SCALE ranges, it is not possible to operate failover IPs in 
 
 - an [OVHcloud dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- a [failover IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/)
+- a [failover IP](https://www.ovhcloud.com/es-es/bare-metal/ip/)
 
 > [!warning]
 >
@@ -120,9 +120,9 @@ iface ens18 inet static
 
 - a public block of IP addresses in your account, with a minimum of four addresses
 - your chosen private IP address range
-- a [vRack compatible server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
+- a [vRack compatible dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
 - a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 
 #### Target configuration schema
