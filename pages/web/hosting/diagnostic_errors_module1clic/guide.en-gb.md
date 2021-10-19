@@ -33,7 +33,7 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 > We point out the most common errors here. If you have further difficulties, please consult our [Web Hosting FAQ](../web-hosting-faq/).
 >
 
-### “An error has occurred loading the information. (You need at least one free database)“
+### "An error has occurred loading the information. (You need at least one free database)"
 
 ![1freeDB](images/1freeDB.png){.thumbnail}
 
@@ -80,7 +80,7 @@ To install your module on an existing database, you will need to use the [advanc
 
 To find your database login details, please read our [FAQ](https://www.ovh.co.uk/web-hosting/faq/).
 
-### “The installation directory is not empty“
+### "The installation directory is not empty"
 
 ![folder_not_empty](images/folder_not_empty.png){.thumbnail}
 
@@ -92,22 +92,23 @@ To link your domain to another directory, click on `Modify domain`{.action} in t
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
-You can also log in to your hosting plan via [FTP](../log-in-to-storage-ftp-web-hosting/), then delete or move the folder content after backing it up.
+You can also log in to your hosting plan via [FTP](../log-in-to-storage-ftp-web-hosting/) then delete or move the folder content after backing it up.
 
-### `An error has occurred loading the information (There is not enough space on your hosting (you need at least xxx MB)`
+### "An error has occurred loading the information (There is not enough space on your hosting (you need at least xxx MB)"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
 
-This message indicates that the [storage space](../connection-storage-space-ftp-web-hosting/) of your hosting has too much data. You must delete or move one before you can install a new [1-click module](../1-click-modules/).
+This message indicates that the [storage space](../log-in-to-storage-ftp-web-hosting/) of your hosting has too much data. You must delete or move one before you can install a new [1-click module](../web_hosting_web_hosting_modules/).
 
-In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to your hosting plan, [back up locally](../share-guide-using-filezilla/#transfer-of-files) your data, then delete the files that are not necessary for your website to work properly.
+In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to your hosting plan, [back up locally](../web_hosting_filezilla_user_guide/#file-transfers) your data, then delete the files that are not necessary for your website to work properly.
 
 > [!primary]
 >
-> If you have any questions about which data to delete in order to reduce the amount of data on your hosting plan, please contact our [user community](https://community.ovh.com) or [OVHcloud partners](https://partner.ovhcloud.com/fr/).<br>
+> If you have any questions about which data to delete in order to reduce the amount of data on your hosting plan, please contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).<br>
 > We will not be able to assist you with this.
+>
 
-### “Unable to connect to database“ <a name="deleteModule"></a>
+### "Unable to connect to database" <a name="deleteModule"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
@@ -121,6 +122,44 @@ Then delete your module via the `1-click modules`{.action} tab.
 
 Then try installing a new module.
 
+### "You have insufficient rights on this database."
+
+![insufficient_rights](images/insufficient_rights.png){.thumbnail}
+
+Your database can no longer be modified because the amount of data in your database exceeds the limit. This message appears when installing a module in [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation).
+
+In this situation, install your module via [simple mode](../web_hosting_web_hosting_modules/#basic-module-installation) or choose another database when installing it in advanced mode. If required, order an additional [database offer](https://www.ovh.co.uk/web-hosting/sql-options.xml).
+
+If you don't have any other databases and you don't want to order an additional offer, [import a copy of your database](../web_hosting_database_export_guide/#instructions) then delete any unnecessary data.
+
+> [!warning]
+>
+> **Deleting items in your database may cause your site to shut down.**
+>
+> For any further questions, please contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).<br>
+> We will not be able to assist you with this.
+>
+
+### "Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxx' (using password: YES)"
+
+![cant_connect](images/cant_connect.png){.thumbnail}
+
+You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#basic-module-installation) on a database located on a [private SQL server](../getting-started-with-private-sql/) or [CloudDB](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/). You received this error message by e-mail. This means that the user logged in during the installation does not have sufficient rights to the database, or that the credentials entered are incorrect.
+
+In this situation, first modify the [user rights](../create-databases-and-users/#managing-user-rights) concerned, so that they have **Administrator** or **Read/write** rights on the database.
+
+You can also verify your login details by [connecting directly](../connecting-to-database-on-database-server/#instructions) to your database server then run the module installation again.
+
+### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
+
+![cant_connect_server](images/cant_connect_server.png){.thumbnail}
+
+You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation) on a database located on a [private SQL server](../getting-started-with-private-sql/) or [CloudDB](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/). You received this error message by e-mail. This means that the database server name you specified is incorrect.
+
+Click on the `Web cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) then on the `Databases`{.action} tab on the left-hand side of your screen.
+
+Then click on the solution concerned: The name of the server to be used is indicated under 'Host name' in the 'SQL' subpart of 'Login information'.
+
 ### Your domain name is not offered when you create the module
 
 ![domainenotproposed](images/domainenotproposed.png){.thumbnail}
@@ -132,7 +171,7 @@ Click on the `Multisite`{.action} tab and perform the following checks:
 |The domain or subdomain linked to the website you want to create does not appear in the `Multisite`{.action} section.|Add your domain by following [this guide](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).|
 |The domain name has been deleted from the `Multisite`{.action} without any action on your side.|If your domain or its [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) is not managed from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), follow this [guide](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain) to add your domain name to the `Multisite`{.action}.|
 
-### Your module appears under a web address such as “xxxxx.cluster0xx.hosting.ovh.net”
+### Your module appears under a web address such as "xxxxx.cluster0xx.hosting.ovh.net"
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
