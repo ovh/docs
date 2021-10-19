@@ -7,7 +7,7 @@ section: Introdução
 order: 5
 ---
 
-**Última atualização: 12/10/2021**
+**Última atualização: 19/10/2021**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -25,11 +25,6 @@ Para realizar determinadas tarefas num servidor (como a instalação de pacotes,
 * ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 
 ## Instruções
-
-> [!primary]
->
-> Este manual supõe que o utilizador predefinido tem como nome “admin”.
->
 
 ### Definição da password "root" <a name="settingtherootpassword"></a>
 
@@ -58,14 +53,6 @@ Para atualizar o sistema operativo do servidor, insira o seguindo comando:
 
 ```bash
 sudo yum update
-```
-
-### Alterar o ficheiro de configuração
-
-Para atualizar o ficheiro de configuração do servidor, insira o seguindo comando:
-
-```bash
-sudo vi /etc/hosts.allow
 ```
 
 ### Ligar-se como root

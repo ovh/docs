@@ -7,7 +7,7 @@ section: Tutoriale
 order: 5
 ---
 
-**Ostatnia aktualizacja z dnia 12-10-2021**
+**Ostatnia aktualizacja z dnia 19-10-2021**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zaproponuj zmianę" na tej stronie.
@@ -25,11 +25,6 @@ Aby wykonywać niektóre działania administracyjne na Twoim serwerze (np. insta
 * dostęp do [Panelu klienta OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
-
-> [!primary]
->
-> W przewodniku tym przyjmujemy, że użytkownik ma przypisaną domyślnie nazwę "admin”. 
->
 
 ### Ustawianie hasła root <a name="settingtherootpassword"></a>
 
@@ -58,14 +53,6 @@ Aby zaktualizować system operacyjny Twojego serwera, wprowadź następującą k
 
 ```bash
 ~$ sudo yum update
-```
-
-### Modyfikacja pliku konfiguracyjnego 
-
-Aby zaktualizować plik konfiguracyjny Twojego serwera, wprowadź następującą komendę:
-
-```bash
-~$ sudo vi /etc/hosts.allow
 ```
 
 ### Logowanie jako użytkownik root

@@ -6,7 +6,7 @@ section: Tutorial
 order: 5
 ---
 
-**Ultimo aggiornamento: 12/10/2021**
+**Ultimo aggiornamento: 19/10/2021**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -24,11 +24,6 @@ Per eseguire alcune funzioni amministrative sul tuo server (ad esempio l'install
 * Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
-
-> [!primary]
->
-> In questa guida l’utente predefinito è chiamato “admin”. 
->
 
 ### Impostare la password di root  <a name="settingtherootpassword"></a>
 
@@ -57,14 +52,6 @@ Per l’update del sistema operativo installato sul server, utilizza questo coma
 
 ```bash
 ~$ sudo yum update
-```
-
-### Modifica il file di configurazione
-
-Per modificare un file di configurazione del server, utilizza questo comando:
-
-```bash
-~$ sudo vi /etc/hosts.allow
 ```
 
 ### Accedi come utente root

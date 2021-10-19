@@ -6,7 +6,7 @@ section: 'Tutoriales'
 order: 5
 ---
 
-**Última actualización: 12/10/2021**
+**Última actualización: 19/10/2021**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -24,11 +24,6 @@ Para realizar determinadas tareas en un servidor (como la instalación de paquet
 * Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
 
 ## Procedimiento
-
-> [!primary]
->
-> En esta guía nos basamos en el supuesto de que el usuario por defecto es "admin".
->
 
 ### Establecer la contraseña root <a name="settingtherootpassword"></a>
 
@@ -57,14 +52,6 @@ Para actualizar el sistema operativo del servidor, introduzca el siguiente coman
 
 ```bash
 ~$ sudo yum update
-```
-
-### Editar un archivo de configuración
-
-Para editar el archivo de configuración del servidor, introduzca el siguiente comando:
-
-```bash
-~$ sudo vi /etc/hosts.allow
 ```
 
 ### Conectarse como root
