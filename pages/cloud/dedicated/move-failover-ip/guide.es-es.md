@@ -10,12 +10,17 @@ order: 7
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 12/03/2021**
+**Última actualización: 19/10/2021**
 
 ## Objetivo
 
 Las IP failover pueden moverse entre los servicios que utilice. El objetivo es no perder su reputación, su posicionamiento y mejorar la continuidad del servicio de sus aplicaciones y sistemas.
 Esta tecnología le permite intercambiar las direcciones IP de una solución a otra en menos de un minuto, prácticamente sin interrupciones para sus usuarios. Asimismo, este mecanismo también puede utilizarse durante la migración de servicios, transfiriendo los proyectos del entorno de desarrollo al de producción, o durante la migración hacia un servidor de backup en caso de fallo.
+
+> [!primary]
+> Una IP failover no puede moverse de una zona a otra. Por ejemplo, una IP situada en el datacenter SBG podrá migrarse a GRA o RBX, pero no podrá migrarse a BHS.
+>
+> Sólo se puede mover todo el bloque, no es posible migrar IPs individuales dentro de un bloque.
 
 **Cómo mover una IP failover desde el área de cliente de OVHcloud o a través de las API de OVHcloud**
 
@@ -28,7 +33,10 @@ Esta tecnología le permite intercambiar las direcciones IP de una solución a o
 ## Procedimiento
 
 > [!primary]
-> Una IP failover no puede moverse de una zona a otra. Por ejemplo, una IP situada en el datacenter SBG podrá migrarse a GRA o RBX, pero no podrá migrarse a BHS
+> Cuando un bloque IP que contiene MAC virtuales únicas se mueve entre dos servidores, esas direcciones se suspenden temporalmente. Aparecerá en el nuevo servidor una vez que se haya completado el movimiento.
+>
+> Por otra parte, no se pueden mover los bloques que contienen direcciones MAC virtuales duplicadas. Primero debe eliminar la dirección MAC virtual duplicada en el bloque a mover.
+>
 
 ### Migrar una IP desde el área de cliente de OVHcloud
 
