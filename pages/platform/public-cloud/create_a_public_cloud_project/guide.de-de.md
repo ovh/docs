@@ -1,6 +1,6 @@
 ---
-title: "Erstellung Sie Ihr erstes OVHcloud Public Cloud Projekt"
-slug: erstellen_eines_public_cloud_projekt
+title: "Erstellung Ihres ersten OVHcloud Public Cloud Projekts"
+slug: erstellung_public_cloud_projekt
 excerpt: "Finden Sie heraus, wie Sie Ihr erstes Public Cloud Projekt über das OVHcloud Kundencenter"
 section: Erste Schritte
 order: 1
@@ -14,13 +14,13 @@ order: 1
 
 ## Ziel
 
-Das Erstellen eines Projekt ist der erste Schritt bei der Bereitstellung von [Public Cloud Instanzen](https://www.ovhcloud.com/de/public-cloud/).
+Das Erstellen eines Projekts ist die Voraussetzung, um [Public Cloud Instanzen](https://www.ovhcloud.com/de/public-cloud/) verwenden zu können.
 
-**Dieser Leitfaden führt Sie durch die Schritte zur Erstellung Ihres ersten Public Cloud Projekt.**
+**Diese Anleitung erklärt die Schritte zur Erstellung Ihres ersten Public Cloud Projekts.**
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -28,27 +28,27 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 
 ![first connection](images/firstconnection.png){.thumbnail}
 
-Sie können jetzt einen Gutschein hinzufügen, wenn Sie einen haben. Es kann nur ein Gutschein für Ihre OVHcloud Zweigniederlassung verwendet werden.
+Sie können jetzt einen Gutschein hinzufügen, falls vorhanden. Beachten Sie, dass Gutscheine niederlassungsabhängig sind (OVHcloud Subsidiary).
 
 > [!warning]
-> Wenn Sie zuvor ein Public Cloud-Projekt in Ihrem Konto erstellt und gelöscht haben, können Sie den Gutschein nicht verwenden.
+> Wenn Sie bereits ein Public Cloud-Projekt in Ihrem Konto erstellt und gelöscht haben, können Sie den Gutschein nicht verwenden.
 >
 
-Geben Sie Ihrem Projekt einen Namen, lesen Sie die Verträge und akzeptieren Sie sie, und klicken Sie dann auf die Schaltfläche `Weiter`{.action}.
+Geben Sie Ihrem Projekt einen Namen, lesen Sie die Verträge und akzeptieren Sie sie, und klicken Sie dann auf `Weiter`{.action}.
 
 ![name project](images/confirmvoucher.png){.thumbnail}
 
-Anschließend werden zu, **eine Zahlungsart eintragen**, wenn Sie noch keine haben. Dies wird auch bei Beantragung eines Gutscheins verlangt.
+Im zweiten Schritt können Sie **eine Zahlungsart hinterlegen**, falls Sie noch keine haben. Dies ist auch zur Beantragung eines Gutscheins notwendig.
 
-Wählen Sie eine Zahlungsart eintragen aus und klicken Sie dann auf `Mein Projekt erstellen`{.action}
+Wählen Sie eine Zahlungsart aus und klicken Sie dann auf `Hinzufügen`{.action}.
 
 ![add card](images/pci-project-03b_2020.png){.thumbnail}
 
-Sobald das Projekt abgeschlossen ist, beginnt die Projekterstellung:
+Anschließend startet die Projekterstellung.
 
 ![creating project](images/creatingproject.png){.thumbnail}
 
-Sobald der Prozess abgeschlossen ist, steht Ihr neues Projekt Public Cloud im `Public Cloud`{.action}-Bereich in Ihrem OVHcloud Kundencenterzur Verfügung:
+Sobald der Prozess abgeschlossen ist, steht Ihr neues Public Cloud Projekt im Bereich `Public Cloud`{.action} Ihres OVHcloud Kundencenters zur Verfügung.
 
 ![new project created](images/newprojectcreated.png){.thumbnail}
 
