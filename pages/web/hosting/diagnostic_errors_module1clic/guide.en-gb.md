@@ -140,7 +140,7 @@ If you don't have any other databases and you don't want to order an additional 
 > We will not be able to assist you with this.
 >
 
-### "Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxx' (using password: YES)"
+### "Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxx' (using password: YES)"
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 

@@ -149,7 +149,7 @@ Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas 
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
-### « Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES) »
+### « Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES) »
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 

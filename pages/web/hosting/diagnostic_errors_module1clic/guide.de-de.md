@@ -99,6 +99,20 @@ Um Ihre Domain mit einem anderen Verzeichnis zu verbinden, klicken Sie auf `Doma
 
 Sie können sich auch per [FTP](../verbindung-ftp-speicher-webhosting/) mit Ihrem Hosting verbinden und den Ordnerinhalt löschen oder verschieben, nachdem Sie ihn lokal gesichert haben.
 
+### "An error has occurred loading the information (There is not enough space on your hosting (you need at least xxx MB)"
+
+![not_enough_space](images/not_enough_space.png){.thumbnail}
+
+Diese Nachricht zeigt an, dass der [Speicherplatz](../verbindung-ftp-speicher-webhosting/) Ihres Hostings zu viele Daten enthält. Sie müssen diese also löschen oder verschieben, bevor Sie ein neues [1-Klick-Modul](../webhosting_installation_von_webhosting-modulen/) installieren können.
+
+In diesem Fall verbinden Sie sich via FTP mit Ihrem Hosting (../verbindung-ftp-speicher-webhosting/), [backup lokal](../webhosting_hilfe_zur_verwendung_von_filezilla/#ubertragen-von-dateien) und löschen Sie dann die Dateien, die für den Betrieb Ihrer Website nicht notwendig sind.
+
+> [!primary]
+>
+> Kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/).<br>
+> Wir werden Ihnen in diesem Bereich keine Hilfe leisten können.
+>
+
 ### “Keine Verbindung zur Datenbank“ <a name="deleteModule"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
@@ -112,6 +126,44 @@ Löschen Sie anschließend Ihr Modul über den Tab `1-Klick-Module`{.action}.
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
 
 Starten Sie anschließend die Installation eines neuen Moduls.
+
+### “You have insufficient rights on this database.“
+
+![insufficient_rights](images/insufficient_rights.png){.thumbnail}
+
+Ihre Datenbank kann nicht mehr geändert werden, da die darin enthaltene Datenmenge den erlaubten Grenzwert überschreitet. Diese Nachricht wird bei der Installation eines [Advanced-Modul](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) angezeigt.
+
+Installieren Sie in diesem Fall Ihr Modul über den [einfachen Modus](../webhosting_installation_von_webhosting-modulen/#einfache-installation-eines-moduls) oder wählen Sie bei der Installation im Experten-Modus eine andere Datenbank aus. Wenn nötig, bestellen Sie eine zusätzliche [Datenbank-Angebot](https://www.ovh.de/hosting/sql-optionen.xml).
+
+Wenn Sie nicht über andere Datenbanken verfügen und kein zusätzliches Angebot bestellen möchten, [importieren Sie eine Kopie Ihrer Datenbank](../webhosting_hilfe_zum_export_von_datenbanken/#beschreibung) und löschen Sie anschließend unnötige Daten.
+
+> [!warning]
+>
+> **Die Löschung von Elementen in Ihrer Datenbank kann zu einer Unterbrechung Ihrer Website führen.**
+>
+> Kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/)<br>
+> Wir werden Ihnen in diesem Bereich keine Hilfe leisten können.
+>
+
+### “Can't connect to database 'xxxxxxxx' at 'xxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)“
+
+![cant_connect](images/cant_connect.png) {.thumbnail}
+
+Sie haben die Installation eines 1-Klick-Moduls im [Advanced Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) auf einer Datenbank auf einem [SQL Private Server](../erste-schritte-mit-sql-private/) oder [CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) gestartet. Sie haben diese Fehlermeldung per E-Mail erhalten. Dies bedeutet, dass der bei der Installation bewertete Benutzer nicht über ausreichende Datenbankrechte verfügt oder die angegebenen Kennungen nicht korrekt sind.
+
+Ändern Sie in diesem Fall zunächst die betreffenden [Rechte des Benutzers](../datenbank-und-benutzer-erstellen/#verwaltung-der-benutzerrechte), damit dieser über die Rechte **Administrator** oder **Lesen/Schreiben** auf der Datenbank verfügt.
+
+Überprüfen Sie auch seine Zugangsdaten, indem Sie sich [direkt verbinden](../datenbank-verbindung-auf-bdd/#in-der-praktischen-anwendung) mit Ihrem Datenbankserver verbinden und anschließend die Installation Ihres Moduls neu starten.
+
+### “Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxx.mysql.db'“
+
+![cant_connect_server](images/cant_connect_server.png) {.thumbnail}
+
+Sie haben die Installation eines 1-Klick-Moduls im [Advanced Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) auf einer Datenbank auf einem [SQL Private Server](../erste-schritte-mit-sql-private/) oder [CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) gestartet. Sie haben diese Fehlermeldung per E-Mail erhalten. Es bedeutet, dass der von Ihnen angegebene Name des Datenbankservers nicht korrekt ist.
+
+Klicken Sie auf den Bereich `Web Cloud`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und anschließend auf den Tab `Datenbanken`{.action} links auf Ihrem Bildschirm.
+
+Klicken Sie anschließend auf das betreffende Angebot: Der Name des zu verwendenden Servers wird unter dem Eintrag `Hostname` im Unterabschnitt `SQL` in `Verbindungsinformationen` angegeben.
 
 ### Ihr Domainname wird bei der Erstellung des Moduls nicht zur Auswahl angeboten
 
