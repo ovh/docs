@@ -29,15 +29,15 @@ The [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} allows you to
 
 Once your [Public Cloud project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project) is set up, you will need to add it to the vrack. This can be done in two ways:
 
-1. By ordering a vRack service if you do not have one yet. This service is free of charge. 
+1. By ordering a vRack service if you do not have one yet, this service is free of charge. 
 
-Go to `Bare Metal Cloud`{.action} menu and click the `Order`{.action} button. Under the Order menu, click on the `vRack`{.action} button.
+Go to the `Bare Metal Cloud`{.action} menu and click on the `Order`{.action} button. Under the Order menu, click on the `vRack`{.action} button.
 
 ![Order vrack](images/orderingvrack.png){.thumbnail}
 
 You will be redirected to an order page, validate the order and wait for the vRack to be setup in your account. This will take a few minutes.
 
-Once done, the new vRack service will be visible by going to `Bare Metal Cloud`{.action} > `Network`{.action} > `vRack`{.action}.
+Once the vRack service is delivered to your account, to view it, go to `Bare Metal Cloud`{.action}, click on `Network`{.action}, and then on `vRack`{.action}.
 
 ![vrack delivered](images/vrackdelivered.png){.thumbnail}
 
@@ -57,12 +57,12 @@ If you need assistance, follow this guide first: [Creating your first Public Clo
 
 #### In case of an existing instance
 
-You can attach an existing instance to a private network. Please refer to [this section](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#cases-of-an-already-existing-instance_2) of the corresponding guide.
+You can attach an existing instance to a private network. For more information, please refer to [this section](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#cases-of-an-already-existing-instance_2) of the corresponding guide.
 
 
 ### Create a VLAN ID
 
-For both services to communicate with each other, they should be tagged with the same **VLAN ID**. 
+For both services to communicate with each other, they have to be tagged with the same **VLAN ID**. 
 
 #### Using the default VLAN ID
 
@@ -91,7 +91,7 @@ An example: If your instance private network is tagged with VLAN ID 2, the priva
 
 ### Configure your network interfaces
 
-Next, configure the the network interfaces on your new [Public Cloud instance](https://www.ovh.com/ca/en/public-cloud/instances/){.external} and [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/){.external} using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}. Taking into account the VLAN ID.
+Next, configure the network interfaces on your new [Public Cloud instance](https://www.ovh.com/ca/en/public-cloud/instances/){.external} and [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/){.external} using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}. Taking into account the VLAN ID.
 
 ## Go further
 
