@@ -94,7 +94,7 @@ To link your domain to another directory, click on `Modify domain`{.action} in t
 
 You can also log in to your hosting plan via [FTP](../log-in-to-storage-ftp-web-hosting/) then delete or move the folder content after backing it up.
 
-### "An error has occurred loading the information (There is not enough space on your hosting (you need at least xxx MB)"
+### "An error has occurred loading the information. (There is not enough space on your hosting (you need at least xxx MB))"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
 
