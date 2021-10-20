@@ -14,7 +14,7 @@ Le Public Cloud OVHcloud est un environnement rassemblant un grand nombre de pro
 
 La mise à disposition est quasiment instantanée et la facturation est directement adaptée à votre usage, ce qui apporte simplicité et flexibilité à vos pratiques.
 
-Ce guide vous permet de découvrir les notions essentielles pour une bonne exploitation des produits
+Ce guide vous permet de découvrir les notions essentielles pour une bonne exploitation des produits.
 <br> Si vous êtes déjà familier de ces concepts, vous pouvez poursuivre la découverte du Public Cloud OVHcloud en parcourant les guides suivants :
 
 * [Ouvrir un compte OVHcloud](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/)
@@ -53,34 +53,22 @@ Ces ressources sont disponibles dans nos différents datacenters répartis dans 
 
 ### Un fournisseur de service cloud sur un marché mature
 
-Le Public Cloud OVHcloud se positionne aux côtés de fournisseurs cloud bien connus comme AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure (de Microsoft) ou encore Alibaba Cloud. Notre offre se distingue par des tarifs particulièrement avantageux et l'utilisation d'APIs standards laissant nos utilisateurs libres des changements, sans adhérence à l'une ou l'autre technologie propriétaire.
+Le Public Cloud OVHcloud se positionne aux côtés de fournisseurs cloud bien connus comme AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure (de Microsoft) ou encore Alibaba Cloud. Notre offre se distingue par [des tarifs particulièrement avantageux](https://www.ovhcloud.com/fr/public-cloud/prices/) et l'utilisation d'APIs standards laissant nos utilisateurs libres des changements, sans adhérence à l'une ou l'autre technologie propriétaire.
 
 ## Approche concrète
 
-### Cas d'usages : quelques exemples concrets
+### Cas d'usages : quelques exemples concrets et leurs avantages
 
-#### Plus de flexibilité
-
-Vous avez une application qui fonctionne actuellement sur un hébergement classique comme un (ou plusieurs) serveur dédié et vous souhaitez plus de flexibilité dans l'utilisation.
-
+* **Plus de flexibilité** : _Vous avez une application qui fonctionne actuellement sur un hébergement classique comme un (ou plusieurs) serveur dédié et vous souhaitez plus de flexibilité dans l'utilisation._ \
 L'utilisation des instances Public Cloud est très proche de celle d'un serveur dédié, mais elle apporte la possibilité de redimensionner votre serveur facilement, suivre les évolutions matérielles, ajouter de l'espace de stockage à chaud, configurer l'architecture réseau comme vous le souhaitez, programmer des sauvegardes ou cloner votre serveur en quelques actions simples.
 
-#### Plus de scalabilité
-
- Vous développez une application cloud native et vous souhaitez une infrastructure capable d'encaisser de fortes variations de charge.
-
+* **Plus de scalabilité** : _Vous développez une application cloud native et vous souhaitez une infrastructure capable d'encaisser de fortes variations de charge._ \
 Les clusters Kubernetes peuvent réagir et s'adapter dynamiquement en fonction de la charge. Ils peuvent ajouter des noeuds au cluster de manière automatique quand la pression sur l'infrastructure augmente.
 
-#### Plus de maitrise des coûts
-
-Vous avez une application en production sujette à des saisonnalités et vous souhaitez déporter la charge de calcul au moment des pics, sans maintenir des coûts d'infrastructure importants tout au long de l'année.
-
+* **Plus de maitrise des coûts** : _Vous avez une application en production sujette à des saisonnalités et vous souhaitez déporter la charge de calcul au moment des pics, sans maintenir des coûts d'infrastructure importants tout au long de l'année._ \
 Les instances facturées à l'heure peuvent effectuer les tâches en peu de temps et être détruites une fois que le besoin est passé.
 
-#### Plus de sérénité
-
-Vous avez besoin d'une base de donnée mais vous ne souhaitez pas gérer le moteur et en assurer la maintenance.
-
+* **Plus de sérénité** : _Vous avez besoin d'une base de donnée mais vous ne souhaitez pas gérer le moteur et en assurer la maintenance._ \
 Les bases de données managées sont disponibles en quelque secondes et sont totalement gérées par OVHcloud, vous pouvez directement utiliser le service de base de données en vous affranchissant de l'installation, la maintenance, les mises à jour...
 
 ### L'utilisation : une interface simple et des API standards
