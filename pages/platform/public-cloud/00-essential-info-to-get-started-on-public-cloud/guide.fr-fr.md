@@ -15,7 +15,7 @@ Le Public Cloud OVHcloud est un environnement rassemblant un grand nombre de pro
 La mise à disposition est quasiment instantanée et la facturation est directement adaptée à votre usage, ce qui apporte simplicité et flexibilité à vos pratiques.
 
 Ce guide vous permet de découvrir les notions essentielles pour une bonne exploitation des produits.
-<br>Nous vous y présentons d'abord une [approche globale du Public Cloud](#global-approach) et quelques notions générales, puis une [approche concrète](#approche-concrète) avec les avantages fournis par Public Cloud ansi que les premières étapes de démarrage.
+<br>Nous vous y présentons d'abord une [approche globale du Public Cloud](#global-approach) et quelques notions générales, puis une [approche concrète](#approche-concrète) avec les avantages fournis par le Public Cloud, ansi que les premières étapes de démarrage.
 <br>Enfin, nous vous proposons des ressources pour [aller plus loin](#gofurther).
 
 Si vous êtes déjà familier de ces concepts, vous pouvez poursuivre la découverte du Public Cloud OVHcloud en parcourant les guides suivants :
