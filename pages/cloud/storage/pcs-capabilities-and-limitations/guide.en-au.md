@@ -77,7 +77,7 @@ You can use the `marker`, `limit`, and `end_marker` parameters to control how ma
 |:----------|:-----|:------------|
 | marker | string | To get the following names, you must make another request with the marker parameter. Set the marker parameter to the last item returned in the previous list. |
 | limit | integer | Use the limit parameter to return fewer than 10,000 names. |
-| end_marker | integer | Restricts the result set to names that are less than the end_marker value. |
+| end_marker | string | Restricts the result set to names that are less than the end_marker value. |
 
 Show more via `marker`:
 
@@ -128,7 +128,7 @@ Failed Transaction ID: txd3664103d22a445687c5a-00610a32e3
 
 ### max_file_size = 5368709122 (5Gb)
 
-The largest normal object that can be saved in the cluster. This is also the limit on the size of each segment of a large object when using the large object manifest media. This value is set in bytes. If it is less than 1MiB, some tests will fail. It is STRONGLY recommended to leave this value as the default (5 * 2**30 + 2).
+The largest normal object that can be saved in the cluster. This is also the limit on the size of each segment of a large object when using the large object manifest media. This value is set in bytes. If it is less than 1MiB, some tests will fail. It is STRONGLY recommended to leave this value as the default (`5 * 2**30 + 2`).
 
 ```bash
 swift upload <container> <largeobject>
