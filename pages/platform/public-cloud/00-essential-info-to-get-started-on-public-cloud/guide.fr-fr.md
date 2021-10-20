@@ -1,12 +1,12 @@
 ---
 title: "L'essentiel pour commencer avec Public Cloud"
-excerpt: "Découvrez dls notions de base utiles pour commencer dans l'environnement Public Cloud"
+excerpt: "Découvrez des notions de base utiles pour commencer dans l'environnement Public Cloud"
 slug: public-cloud-essential-information
 section: Premiers pas
 order: 01
 ---
 
-**Dernière mise à jour le 18/10/2021**
+**Dernière mise à jour le 20/10/2021**
 
 ## Objectif
 
@@ -15,7 +15,10 @@ Le Public Cloud OVHcloud est un environnement rassemblant un grand nombre de pro
 La mise à disposition est quasiment instantanée et la facturation est directement adaptée à votre usage, ce qui apporte simplicité et flexibilité à vos pratiques.
 
 Ce guide vous permet de découvrir les notions essentielles pour une bonne exploitation des produits.
-<br> Si vous êtes déjà familier de ces concepts, vous pouvez poursuivre la découverte du Public Cloud OVHcloud en parcourant les guides suivants :
+<br>Nous vous y présentons d'abord une [approche globale du Public Cloud](#global-approach) et quelques notions générales, puis une [approche concrète](#approche-concrète) avec les avantages fournis par Public Cloud ansi que les premières étapes de démarrage.
+<br>Enfin, nous vous proposons des ressources pour [aller plus loin](#gofurther).
+
+Si vous êtes déjà familier de ces concepts, vous pouvez poursuivre la découverte du Public Cloud OVHcloud en parcourant les guides suivants :
 
 * [Ouvrir un compte OVHcloud](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/)
 * [Créer votre premier projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/)
@@ -23,11 +26,11 @@ Ce guide vous permet de découvrir les notions essentielles pour une bonne explo
 * [Créer sa première instance](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/)
 * [Gérer ses quotas](https://docs.ovh.com/fr/public-cloud/augmenter-le-quota-public-cloud/)
 
-## Approche globale
+## Approche globale <a name="global-approach"></a>
 
 ### Un écosystème de ressources à la demande
 
-L'ensemble des produits disponibles dans Public Cloud (comme les serveurs, les clusters Kubernetes, les volumes disque...) forment un écosystème.
+L'ensemble des produits disponibles dans le Public Cloud (comme les serveurs, les clusters Kubernetes, les volumes disque...) forment un écosystème.
 <br>Chaque élément correspond à une fonction et répond à un besoin, il peut être utilisé seul ou en complément d'autres éléments du catalogue.
 <br>Par exemple, une instance (un serveur à la demande) peut être utilisée en complément d'éléments de stockage comme l'object storage. Si votre application nécessite une base de donnée, il existe également un élément pour répondre à ce besoin.
 
@@ -55,7 +58,7 @@ Ces ressources sont disponibles dans nos différents datacenters répartis dans 
 
 Le Public Cloud OVHcloud se positionne aux côtés de fournisseurs cloud bien connus comme AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure (de Microsoft) ou encore Alibaba Cloud. Notre offre se distingue par [des tarifs particulièrement avantageux](https://www.ovhcloud.com/fr/public-cloud/prices/) et l'utilisation d'APIs standards laissant nos utilisateurs libres des changements, sans adhérence à l'une ou l'autre technologie propriétaire.
 
-## Approche concrète
+## Approche concrète <a name="concrete-approach"></a>
 
 ### Cas d'usages : quelques exemples concrets et leurs avantages
 
@@ -87,7 +90,7 @@ Pour démarrer, vous aurez d'abord besoin d'un [compte client OVHcloud](https://
 
 Vous devrez ensuite [créer un projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/). Un projet est un environnement que vous allez dédier à un contexte.
 
-Par exemple, pour pouvez choisir de séparer vos environnements de test et de production dans deux projets.
+Par exemple, vous pouvez choisir de séparer vos environnements de test et de production dans deux projets.
 <br>Ou bien vous pouvez utiliser différents projets pour vos différentes applications (site public, boutique en ligne, application métier, gestion de documents, etc...).
 
 Pour démarrer un projet, vous devrez nécessairement enregistrer un moyen de payement lors de la création du projet.
@@ -115,7 +118,7 @@ Vous pouvez avoir besoin de gérer plusieurs utilisateurs qui vont intervenir su
 * Si vous souhaitez utiliser les APIs OpenStack ou S3, ou l'interface Horizon, vous aurez à [créer des utilisateurs](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/) pour cela. Les utilisateurs peuvent éventuellement avoir des droits limités afin de sécuriser les périmètres d'action.
 * Si vous n'avez pas besoin d'accéder aux APIs ou à Horizon, vous pouvez [associer un autre compte client OVHcloud](https://docs.ovh.com/fr/public-cloud/deleguer-ses-projets/) en complément sur votre projet.
 
-# Aller plus loin
+# Aller plus loin <a name="gofurther"></a>
 
 Voici quelques ressources générales qui vous aideront dans votre démarrage sur Public Cloud :
 
