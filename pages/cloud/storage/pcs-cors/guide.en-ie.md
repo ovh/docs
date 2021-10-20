@@ -24,8 +24,8 @@ CORS metadata is only present in the container. The values specified apply to th
 
 ## Requirements
 
-- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
-- [Setting the OpenStack environment variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
+- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/ie/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
+- [Setting the OpenStack environment variables](https://docs.ovh.com/ie/en/public-cloud/set-openstack-environment-variables/)
 
 ## Instructions
 
@@ -66,12 +66,12 @@ swift stat <container>
 
 ### CORS Metadata Definition
 
-> [!primary]
+> [!primary]  
 >
 > The use of wildcards is authorised but not recommended: `http://*.example.com`
 >
 
-> [!warning]
+> [!warning]  
 >
 > If the server is running on a non-standard port, it must be specified: `http://example.com:8080`
 >

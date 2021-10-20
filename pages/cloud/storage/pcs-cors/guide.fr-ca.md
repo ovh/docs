@@ -1,51 +1,51 @@
 ---
-title: Setting up CORS on Object Storage
+title: Mettre en place CORS sur Object Storage
 slug: pcs/cors
-excerpt: Find here the concepts to implement CORS
+excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre CORS.
 section: Object Storage
 ---
 
-**Last updated 23rd September 2021**
+**Dernière mise à jour le 23/09/2021**
 
-## Objective
+## Objectif
 
-CORS is a mechanism that allows code running in a browser (e.g. Javascript) to make requests to a domain other than the one from which it originates.
+CORS est un mécanisme qui permet au code s'exécutant dans un navigateur (Javascript, par exemple) de faire des requêtes vers un domaine autre que celui d'où il provient.
 
-Swift supports CORS requests to containers and objects.
+Swift supporte les requêtes CORS vers les conteneurs et les objets.
 
-CORS metadata is only present in the container. The values specified apply to the container itself and all objects contained within it.
+Les métadonnées CORS ne sont présentes que dans le conteneur. Les valeurs indiquées s'appliquent au conteneur lui-même et à tous les objets qu'il contient.
 
 > [!primary]
 >
-> CORS is not compatible with the S3 API.
+> CORS n'est pas compatible avec l'API S3.
 >
 
-**The purpose of this guide is to familiarise you with the concept of CORS.**
+**Ce guide a pour objectif de vous familiariser avec le concept de CORS.**
 
-## Requirements
+## Prérequis
 
-- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
-- [Setting the OpenStack environment variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
+- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/) en installant python-swiftclient.
+- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/charger-les-variables-denvironnement-openstack/).
 
-## Instructions
+## En pratique
 
-There are 3 metadata to manage the CORS on a container:
+Il existe 3 métadonnées permettant de gérer le CORS sur un conteneur :
 
-| Metadata | Description |
+| Métadonnées | Description |
 |:------------|:------------|
-| X-Container-Meta-Access-Control-Allow-Origin | Origins allowed to make Cross Origin queries, separated by a space. |
-| X-Container-Meta-Access-Control-Max-Age | Maximum time during which the origins can retain the results of the preliminary check. |
-| X-Container-Meta-Access-Control-Expose-Headers | Headers exposed to the user agent (for example the browser) in the actual request response. Separated by a space. |
+| X-Container-Meta-Access-Control-Allow-Origin | Origins autorisés à faire des requêtes Cross Origin, séparés par un espace. |
+| X-Container-Meta-Access-Control-Max-Age | Durée maximale pendant laquelle l'origins peut conserver les résultats du contrôle préalable. |
+| X-Container-Meta-Access-Control-Expose-Headers | En-têtes exposés à l'agent utilisateur (par exemple, le navigateur) dans la réponse à la demande réelle. Séparés par un espace. |
 
-### The background
+### Contexte
 
 ```bash
-swift stat <container>
+swift stat <conteneur>
 ```
 
-```console
+```bash
                            Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
-                         Container: <container>
+                         Container: <conteneur>
                            Objects: 37
                              Bytes: 973749
                           Read ACL: .r:*
@@ -64,29 +64,29 @@ swift stat <container>
                    X-Iplb-Instance: 33617
 ```
 
-### CORS Metadata Definition
+### Définition des métadonnées CORS
 
-> [!primary]
+> [!primary]  
 >
-> The use of wildcards is authorised but not recommended: `http://*.example.com`
+> L'utilisation des wildcard est autorisé mais non recommandé : `http://*.example.com`
 >
 
-> [!warning]
+> [!warning]  
 >
-> If the server is running on a non-standard port, it must be specified: `http://example.com:8080`
+> Si le serveur tourne sur un port non standard, il faut le préciser: `http://example.com:8080`
 >
 
 ```bash
-swift post -H 'X-Container-Meta-Access-Control-Allow-Origin: http://example.com'
-swift post -H 'X-Container-Meta-Access-Control-Max-Age:3600' <container>
-swift post -H 'X-Container-Meta-Access-Control-Expose-Headers:X-Container-Meta-Access-Control-Allow-Origin' <container>
+swift post -H 'X-Container-Meta-Access-Control-Allow-Origin: http://example.com' <conteneur>
+swift post -H 'X-Container-Meta-Access-Control-Max-Age:3600' <conteneur>
+swift post -H 'X-Container-Meta-Access-Control-Expose-Headers:X-Container-Meta-Access-Control-Allow-Origin' <conteneur>
 # stat
-swift stat <container>
+swift stat <conteneur>
 ```
 
-```console
+```bash
                              Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
-                           Container: <container>
+                           Container: <conteneur>
                              Objects: 37
                                Bytes: 973749
                             Read ACL: .r:*
@@ -108,11 +108,11 @@ swift stat <container>
                      X-Iplb-Instance: 38427
 ```
 
-#### Demo page
+#### Page de démonstration
 
-Host the following html page on the web server corresponding to the CORS origin.
+Hébergez la page html suivante sur le serveur web correspondant au CORS origin.
 
-`cors.html`:
+`cors.html` :
 
 ```html
 <!DOCTYPE html>
@@ -182,7 +182,7 @@ Host the following html page on the web server corresponding to the CORS origin.
 
 **Request Headers**
 
-```console
+```
 GET /v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/pcs-web/lorem.txt HTTP/1.1
 Host: storage.gra.cloud.ovh.net
 Connection: keep-alive
@@ -204,7 +204,7 @@ If-Modified-Since: Tue, 03 Aug 2021 07:10:26 GMT
 
 **Response Headers**
 
-```console
+```
 HTTP/1.1 200 OK
 Access-Control-Expose-Headers: expires, content-language, cache-control, meta, X-Container-Read, X-Storage-Policy, last-modified, etag, x-timestamp, pragma, x-trans-id, access-control-allow-origin, content-type, x-openstack-request-id, x-object-meta-mtime
 Accept-Ranges: bytes
@@ -222,33 +222,33 @@ Content-Type: text/plain
 Etag: 51f122f524c46cafcf9628305db99144
 ```
 
-Before a browser issues an actual request, it can issue a screening request. The screening request is a call to verify that the source is authorised to make the request. The sequence of events is as follows:
+Avant qu'un navigateur n'émette une demande réelle, il peut émettre une demande de contrôle préalable. La demande de contrôle préalable est un appel destiné à vérifier que l'origine est autorisée à effectuer la demande. La séquence des événements est la suivante :
 
-- The browser sends an OPTIONS request to Swift.
-- Swift returns `200/401` to the browser depending on the authorised `origins`.
-- If the response is `200`, the browser makes the "actual request" to Swift, i.e. `PUT`, `POST`, `DELETE`, `HEAD`, `GET`.
+- Le navigateur envoie une demande OPTIONS à Swift.
+- Swift renvoie `200/401` au navigateur en fonction des `origins` autorisées.
+- Si `200`, le navigateur effectue la « demande réelle » à Swift, c'est-à-dire `PUT`, `POST`, `DELETE`, `HEAD`, `GET`.
 
-When a browser receives a response to an actual request, it exposes only the headers listed in the `Access-Control-Expose-Headers` header. By default, Swift returns the following values for this header:
+Lorsqu'un navigateur reçoit une réponse à une demande réelle, il n'expose que les en-têtes énumérés dans l'en-tête `Access-Control-Expose-Headers`. Par défaut, Swift renvoie les valeurs suivantes pour cet en-tête :
 
-- "simple-response-header" as listed on http://www.w3.org/TR/cors/#simple-response-header
-- The `etag`, `x-timestamp`, `x-trans-id`, `x-openstack-request-id` headers.
-- All metadata headers (`X-Container-Meta-*` for containers and `X-Object-Meta-*` for objects).
-- The headers listed in `X-Container-Meta-Access-Control-Expose-Headers`.
-- Headers configured with the cors_expose_headers option in `proxy-server.conf`.
+- « simple-response-header » telles qu'elles sont listées sur http://www.w3.org/TR/cors/#simple-response-header
+- Les en-têtes `etag`, `x-timestamp`, `x-trans-id`, `x-openstack-request-id`.
+- Tous les en-têtes de métadonnées (`X-Container-Meta-*` pour les conteneurs et `X-Object-Meta-*` pour les objets).
+- Les en-têtes énumérés dans `X-Container-Meta-Access-Control-Expose-Headers`.
+- Les en-têtes configurés à l'aide de l'option cors_expose_headers dans `proxy-server.conf`.
 
-### Delete CORS Metadata
+### Supprimer les métadonnées CORS
 
 ```bash
-swift post -H `X-Remove-Container-Meta-Access-Control-Allow-Origin:x` <container>
-swift post -H "X-Remove-Container-Meta-Access-Control-Max-Age:x" <container>
-swift post -H "X-Remove-Container-Meta-Access-Control-Expose-Headers:x" <container>
+swift post -H "X-Remove-Container-Meta-Access-Control-Allow-Origin:x" <conteneur>
+swift post -H "X-Remove-Container-Meta-Access-Control-Max-Age:x" <conteneur>
+swift post -H "X-Remove-Container-Meta-Access-Control-Expose-Headers:x" <conteneur>
 # stat
-swift stat <container>
+swift stat <conteneur>
 ```
 
-```console
+```
                            Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
-                         Container: <container>
+                         Container: <conteneur>
                            Objects: 37
                              Bytes: 973749
                           Read ACL: .r:*
@@ -267,6 +267,6 @@ swift stat <container>
                    X-Iplb-Instance: 33617
 ```
 
-## Go further
+## Aller plus loin
 
-Join our community of users on <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
