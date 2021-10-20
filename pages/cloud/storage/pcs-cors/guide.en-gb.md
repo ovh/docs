@@ -35,7 +35,7 @@ There are 3 metadata to manage the CORS on a container:
 |:------------|:------------|
 | X-Container-Meta-Access-Control-Allow-Origin | Origins allowed to make Cross Origin queries, separated by a space. |
 | X-Container-Meta-Access-Control-Max-Age | Maximum time during which the origins can retain the results of the preliminary check. |
-| X-Container-Meta-Access-Control-Expose-Headers | Headers exposed to the user agent (for example, the browser) in the actual request response. Separated by a space. |
+| X-Container-Meta-Access-Control-Expose-Headers | Headers exposed to the user agent (for example the browser) in the actual request response. Separated by a space. |
 
 ### The background
 
@@ -226,7 +226,7 @@ Before a browser issues an actual request, it can issue a screening request. The
 
 - The browser sends an OPTIONS request to Swift.
 - Swift returns `200/401` to the browser depending on the authorised `origins`.
-- If `200`, the browser makes the "actual request" to Swift, i.e. `PUT`, `POST`, `DELETE`, `HEAD`, `GET`.
+- If the response is `200`, the browser makes the "actual request" to Swift, i.e. `PUT`, `POST`, `DELETE`, `HEAD`, `GET`.
 
 When a browser receives a response to an actual request, it exposes only the headers listed in the `Access-Control-Expose-Headers` header. By default, Swift returns the following values for this header:
 
