@@ -1,86 +1,144 @@
 ---
-title: Configuring the vRack on your Dedicated Servers
+title: 'Configuring the vRack on your dedicated servers'
 slug: configuring-vrack-on-dedicated-servers
-excerpt: Help on how to configure the vRack on two or more dedicated servers
-section: Network Management
+excerpt: 'Find out how to configure the vRack on two or more dedicated servers'
+section: 'vRack'
 ---
 
-**Last updated 21st June 2018**
+**Last updated 19th October 2021**
 
 ## Objective
 
-The vRack or virtual rack allows multiple servers to be grouped together (regardless of number and physical location in our datacentre) and connects them to a virtual switch within the same private network. Your servers can communicate privately and securely between each other (within a dedicated VLAN).
+The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together (regardless of number and physical location in our data centres) and connects them to a virtual switch within the same private network. Your servers can communicate privately and securely between each other, within a dedicated VLAN.
 
-**This guide will help you to configure the vRack on two or more dedicated servers.**
+**This guide explains how to configure the vRack on two or more dedicated servers.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-
 ## Requirements
 
-- a [vRack](https://www.ovh.com/world/solutions/vrack/){.external} service in your account
-- two or more [vRack compatible servers](https://www.ovh.com/world/dedicated-servers/){.external}
-- administrative (root) access to the server via SSH
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
-- your chosen private IP address range
+- a [vRack](https://www.ovh.com/world/solutions/vrack/) service activated in your account
+- two or more [dedicated servers](https://www.ovhcloud.com/en/bare-metal/) (compatible with vRack)
+- administrative access (root) to the server via SSH or RDP
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- a private IP address range of your choice
 
 
 ## Instructions
 
-### Add your servers to the vRack
+### Step 1: Adding your servers to the vRack
 
-**Step 1.** Once the vRack is in your account go to the `Cloud`{.action} section of your control panel
+Once the vRack is activated in your account, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and open the `vRack`{.action} menu in the left-hand sidebar.
 
-**Step 2.** Select the `vRack`{.action} menu from the left side of the control panel
+Select your vRack from the list to display the list of eligible services. Click on each server you want to add to the vRack and then click the `Add`{.action} button.
 
-**Step 3.** Select your vRack from the list
+![vRack selection](images/vrack_selection.png){.thumbnail}
 
-**Step 4.** From the list of eligible services, select the servers you want to add to the vRack and then click the `Add`{.action} button
+### Step 2: Configuring your network interfaces
 
-![vRack selection](images/vrack_selection_2020.png){.thumbnail}
+The following sections contain the configurations for the most commonly used recent distributions/operating systems. The first step is always to [log in to your server](../getting-started-dedicated-server/) via SSH or a RDP session (for Windows). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 
-### Configure your network interfaces
+> [!primary]
+>
+Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
+> 
+For example purposes, the configuration details below will have the IP address range `192.168.0.0/16` (**Subnet mask**: `255.255.0.0`).
+> 
+You can use any private IP range of your choice and any address within that range.
+> 
 
-For example purposes, we’ll use an internal IP address range of *192.168.0.0/16*.
+#### GNU/Linux configurations
 
-Also, we’ve used the names of eth1 and eno4 for the secondary network interface. Your servers may use a different naming convention. To be sure, please check with the following commands.
+The network interface names of your servers are not always the same. Whenever used in the following examples, replace NETWORK_INTERFACE with the appropriate interface name.
 
-List your network interfaces with the following command:
+The sure way to verify the correct interface for the vRack is to check the tab `Network interfaces`{.action} of your server in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). In the table at the bottom, take note of the MAC address which is also the **Name** of the **Private** interface.
 
-```sh
-ifconfig -a | grep eth | awk '{print $ 1}'
+![vRack interface](images/private_interface.png){.thumbnail}
+
+Once connected to your server via SSH, you can list your network interfaces with the following command:
+
+```bash
+ip a
 ```
 
-The first interface in the list is your primary network connection. you can check which one is active with the following command:
+In the line that begins with ```link ether```, you can verify that this interface matches the **Private** interface listed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). Use this interface name to replace `NETWORK_INTERFACE` in the configurations below (example: `eno2`).
 
-```sh
-ifconfig eth1 up
+```console
+link ether f0:00:00:ef:0e:f0
 ```
 
-```sh
-ethtool eth1 | grep "Link detected"
+##### **Debian**
+
+Using a text editor of your choice, open the network configuration file located in `/etc/network/interfaces.d` for editing. Here the file is called `50-cloud-init`.
+
+```bash
+editor /etc/network/interfaces.d/50-cloud-init
 ```
 
-If the command returns Link detected: no then this is the network interface you should use for your vRack configuration after running this command:
+Add the following lines:
 
-```sh
-ifconfig eth1 down
+```console
+auto NETWORK_INTERFACE
+iface NETWORK_INTERFACE inet static
+address 192.168.0.1
+netmask 255.255.0.0
 ```
 
-#### CentOS 6 and 7
+Save your changes to the config file and exit the editor.
 
-Open the network interface configuration file with the following command:
+Restart the networking service to apply the configuration:
 
-```sh
-vi /etc/sysconfig/network-scripts/ifcfg-eth1
+```bash
+systemctl restart networking
 ```
 
-Press the `I` key on your keyboard to enter Insert Mode.
+Repeat the process for your other server(s) and assign a unique IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
 
-Configure the secondary network interface as follows: 
+##### **Ubuntu**
 
-```sh
-DEVICE=eth1
+Using a text editor of your choice, open the network configuration file located in `/etc/netplan/` for editing. Here the file is called `50-cloud-init.yaml`.
+
+```bash
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Add the IP configuration to the existing one after the line `ethernets`:
+
+```yaml
+    ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: no
+            addresses:
+              - 192.168.0.1/16
+```
+
+> [!warning]
+>
+> It is important to respect the alignment of each element in `yaml` files as represented in the example above. Do not use the tab key to create your spacing. Only the space key is needed. 
+>
+
+Save your changes to the config file and exit the editor.
+
+Apply the configuration:
+
+```bash
+netplan apply
+```
+
+Repeat the process for your other server(s) and assign a unique IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
+
+##### **CentOS**
+
+Using a text editor of your choice, open the file `/etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE`.
+
+```bash
+editor /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
+```
+
+Add these lines:
+
+```console
+DEVICE=NETWORK_INTERFACE
 BOOTPROTO=static
 IPADDR=192.168.0.1
 NETMASK=255.255.0.0
@@ -88,187 +146,58 @@ ONBOOT=yes
 TYPE=Ethernet
 ```
 
-In the example above you can use any private IP range of your choice and any address within that range.
+Save your changes to the config file and exit the editor.
 
-**Step 1.** Press the `ESC` key
+Restart the networking service to apply the changes:
 
-**Step 2.** Press `SHIFT`+ the colon key to bring up the editor prompt
-
-**Step 3.** Type `wq`
-
-**Step 4.** Press the `Enter` key
-
-**Step 5.** Reboot your server
-
-**Step 6.** Repeat all steps for your other server(s) and assign a unique IP address from your internal range. After doing this, your servers will be able to communicate with each other on the private network.
-
-
-#### Debian 7 and 8
-
-Open the network interface configuration file with the following command:
-
-```sh
-nano /etc/network/interfaces
+```bash
+systemctl restart networking
 ```
 
-Configure the secondary network interface as follows:
+On **CentOS 8** use this command:
 
-```sh
-auto eth1
-iface eth1 inet static
-           address 192.168.0.1
-           netmask 255.255.0.0
+```bash
+systemctl restart NetworkManager.service
 ```
 
-In the example above you can use any private IP range of your choice and any address within that range.
+Repeat the process for your other server(s) and assign a unique IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
 
 
-**Step 1.** `CTRL + X` to exit the network config file
+#### Windows configuration 
 
-**Step 2.** Press the `Y` key to save your changes and then press `Enter`
+For example purposes, the following configurations will use the IP address range of `192.168.0.0/16` (**Subnet mask**: `255.255.0.0`).
 
-**Step 3.** Reboot your server
-
-**Step 4.** Repeat all steps for your other server(s) and assign a unique IP address from your internal range. After doing this, your servers will be able to communicate with each other on the private network.
-
-
-#### Debian 9
-
-Open the network interface configuration file with the following command:
-
-```sh
-nano /etc/network/interfaces
-```
-
-Configure the secondary network interface as follows:
-
-```sh
-auto eno4
-iface eno4 inet static
-address 192.168.0.1
-netmask 255.255.0.0
-```
-
-In the example above you can use any private IP range of your choice and any address within that range.
-
-**Step 1.** `CTRL + X` to exit the network config file
-
-**Step 2.** Press the `Y` key to save your changes and then press `Enter`
-
-**Step 3.** Reboot your server
-
-**Step 4.**Step  Repeat all for your other server(s) and assign a unique IP address from your internal range. After doing this, your servers will be able to communicate with each other on the private network.
-
-
-#### Ubuntu Server 16
-
-Open the network interface configuration file with the following command:
-
-```sh
-vi /etc/network/interfaces
-```
-
-Press the `I` key on your keyboard to enter Insert Mode.
-
-Configure the secondary network interface as follows: 
-
-```sh
-auto eth1
-iface eth1 inet static
-           address 192.168.0.1
-           netmask 255.255.0.0
-```
-
-In the example above you can use any private IP range of your choice and any address within that range.
-
-**Step 1.** Press the `ESC` key
-
-**Step 2.** Press `SHIFT` + the colon key to bring up the editor prompt
-
-**Step 3.** Type `wq`
-
-**Step 4.** Press the `Enter` key
-
-**Step 5.** Reboot your server
-
-**Step 6.** Repeat all steps for your other server(s) and assign a unique IP address from your internal range. After doing this, your servers will be able to communicate with each other on the private network.
-
-
-
-#### Ubuntu Server 17
-
-Open the network interface configuration file with the following command:
-
-```sh
-nano /etc/network/interfaces
-```
-
-Configure the secondary network interface as follows:
-
-```sh
-auto eno4
-iface eno4 inet static
-address 192.168.0.1
-netmask 255.255.0.0
-```
-
-In the example above you can use any private IP range of your choice and any address within that range.
-
-Step 1. CTRL + X to exit the network config file
-Step 2. Press the Y key to save your changes and then press Enter
-Step 3. Reboot your server
-Step 4. Repeat steps 1 to 5 for your other server(s) and assign a unique IP address from your internal range. After doing this, your servers will be able to communicate with each other on the private network.
-
-
-#### Windows
-
-For example purposes, we’ll use an internal IP address range of 192.168.0.0/16.
-
-**Step 1.** Log onto your Windows server by remote desktop
-
-**Step 2.** Click the `Start`{.action} button
-
-**Step 3.** Click `Control Panel`{.action}
+Log on to your Windows server via remote desktop and go to the **Control Panel**.
 
 ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
 
-**Step 4.** Click `Network and Internet`{.action}
+Click on `Network and Internet`{.action}.
 
 ![Network and Internet](images/windows_network_and_internet.png){.thumbnail}
 
-
-**Step 5.** Click `Network and Sharing Centre`{.action}
+Open `Network and Sharing Center`{.action}.
 
 ![Network and Sharing Centre](images/windows_network_and_sharing_centre.png){.thumbnail}
 
-
-**Step 6.** Click `Change Adapter Settings`{.action}
+Click on `Change Adapter Settings`{.action}.
 
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
-
-**Step 7.** Right-click the secondary network interface
-
-**Step 8.** Click `Properties`{.action}
+Right-click the secondary network interface and then click `Properties`{.action}.
 
 ![Windows Properties](images/windows_properties_button.png){.thumbnail}
 
-**Step 9.** Double-click `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action}
+Double-click `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Internet Protocol Version 4 (TCP/IP/IPv4)](images/windows_ipv4.png){.thumbnail}
 
-**Step 10.** Click `Use the following IP address`:
-
-- For `IP address`: type in an IP from your internal range
-- For `Subnet mask`: type in 255.255.0.0
+Click on **Use the following IP address**. Enter any **IP address** from your private range and the appropriate **Subnet mask** (`255.255.0.0` in this example) into the respective field.
 
 ![Use the following IP address](images/windows_use_following_ip_address.png){.thumbnail}
 
-**Step 11.** Click the `OK`{.action} button to save the changes.
+Click on `OK`{.action} to save the changes and reboot your server to apply them.
 
-**Step 12.** Reboot your server
-
-**Step 13.** Repeat all steps for your other server(s) and assign a unique IP address from your internal range. After doing this, your servers will be able to communicate with each other on the private network.
+Repeat this process for your other server(s) and assign an unused IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
 
 ## Go further
 
