@@ -1,53 +1,54 @@
 ---
-title: 'Laden der OpenStack-Umgebungsvariablen.'
-excerpt: 'Lernen Sie, wie Sie Ihre Umgebungsvariablen für die Nutzung der API von OpenStack laden können'
+title: 'OpenStack Umgebungsvariablen einrichten'
+excerpt: 'Erfahren Sie hier, wie Sie Ihre Umgebungsvariablen für die Nutzung der OpenStack API einrichten'
 slug: die-variablen-der-umgebung-openstack-laden
 legacy_guide_number: 1852
 section: 'OpenStack'
 ---
 
-**letzter Stand 18.08.2021**
+**Letzte Aktualisierung am 18.08.2021**
 
 ## Ziel
 
-Das Laden der Umgebungsvariablen OpenStack auf Ihrem Arbeitsplatz ermöglicht Ihnen die API OpenStack zu nutzen und auf diese Weise Ihre Infrastruktur durch sie zu verwalten.
+Das Konfigurieren der OpenStack Umgebungsvariablen auf Ihrem lokalen Gerät ermöglicht es, die OpenStack API zu nutzen und auf diese Weise Ihre Infrastruktur zu verwalten.
 
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Einen OpenStack-Benutzer erstellen Konsultieren Sie [den hierfür gedachten Leitfaden](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/)
-- Sie müssen zuvor die Umgebung für die Verwendung von OpenStack vorbereitet haben. Konsultieren Sie dazu den folgenden Leitfaden: [Umgebung für die Verwendung der OpenStack-API vorbereiten](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
+- Sie haben einen [OpenStack User erstellt](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/)
+- OpenStack ist bereits [auf Ihrem System installiert](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/).
 
-## Praktische Vorgehensweise
+## In der praktischen Anwendung
 
-### Schritt Nr 1: die Variablen wieder erhalten
+### Schritt Nr 1: Die Variablen abrufen
 
-Nachdem Sie Ihre Umgebungsvariablen zurück bekommen haben können Sie die Datei OpenRC von Ihrem vorher erstellten OpenStack-Nutzer herunterladen.
+Um die Umgebungsvariablen zu erhalten, können Sie die *OpenRC*-Datei von Ihrem zuvor erstellten OpenStack User-Account herunterladen.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie Ihr Public Cloud Projekt oben links aus.
-<br>Im Bereich `Project Management`, klicken Sie auf `Users & Roles`{.action}, klicken Sie auf die `...`{.action} rechts von Ihrem Nutzer und wählen Sie dann `Die Datei RC von OpenStack herunterladen`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Bereich `Public Cloud`{.action}. Wählen Sie Ihr Public Cloud Projekt oben links aus.
+<br>Öffnen Sie `Users & Roles`{.action} unter `Project Management` im linken Menü. klicken Sie auf `...`{.action} rechts von Ihrem Benutzer und wählen Sie dann `RC-Datei von OpenStack herunterladen`{.action}.
 
 ![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
 
-Eine OpenRC-Datei entspricht einem Nutzer und auch einer Zone. Sie können nicht mehrere Zonen in derselben Datei verwalten.
+Eine *OpenRC*-Datei entspricht einem User und einer Zone. Sie können nicht mehrere Zonen in derselben Datei verwalten.
 
-### Schritt Nr 2: Die Variablen laden
+### Schritt Nr 2: Die Variablen konfigurieren
 
-#### **Unter Linux**
+#### **Mit Linux**
 
-* Öffnen Sie einen Terminal oder verbinden Sie sich mit dem Nutzer der die Aufrufe an die OpenStack API machen wird
-* Laden Sie den Inhalt der Datei in die bestehende Umgebung. Sie werden jetzt nach dem Passwort des Nutzers Horizon gefragt.
+Öffnen Sie ein Terminal oder verbinden Sie sich über den Benutzer, der die Aufrufe an die OpenStack API ausführen wird.
+
+Laden Sie den Inhalt der Datei in die bestehende Umgebung. Sie werden dann nach dem Passwort des Benutzers gefragt:
 
 ```bash
 admin@vpsxxxxxx:~$ source openrc.sh
-Bitte geben Sie Ihr OpenStack-Passwort ein:
+Please enter your OpenStack Password:
 ```
 
-Wie in dem Leitfaden angegeben [Zur Benutzeroberfläche Horizon gehen](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/), das Passwort ist nur ein einziges Mal, sichtbar und dies während seiner Erstellung, sichtbar.
+Wie in der [Anleitung zu Horizon](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/) erklärt, ist das Passwort ist nur eimalig während der Erstellung sichtbar.
 
-Wenn Sie es vergessen haben müssen Sie es neu erstellen.
+Wenn Sie das Passwort nicht zur Verfügung haben, muss es neu erstellt werden.
 
-Wenn die CLI schon installiert sind überprüfen Sie deren reibungslose Funktion ganz einfach wie folgt:
+Wenn die CLIs schon installiert sind, überprüfen Sie deren Funktion wie folgt:
 
 ```bash
 admin@vpsxxxxxx:~$ nova list
@@ -58,44 +59,43 @@ admin@vpsxxxxxx:~$ nova list
 +--------------------------------------+------+--------+------------+-------------+------------------------+
 ```
 
-Man kann das Passwort des Horizon-Nutzers fest gespeichert werden. Dazu ersetzen Sie:
+Das Passwort des Horizon-Nutzers kann fest gespeichert werden. Dazu ersetzen Sie den folgenden Abschnitt:
 
 ```bash
-echo „Bitte geben Sie Ihr OpenStack-Passwort ein:“
+echo "Please enter your OpenStack Password: "
 read -sr OS_PASSWORD_INPUT
 export OS_PASSWORD=$OS_PASSWORD_INPUT
 ```
 
-durch:
+Fügen Sie Folgendes ein:
 
 ```bash
 #echo "Please enter your OpenStack Password: "
 #read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD="Passwort Horizon-Nutzer"
+export OS_PASSWORD="Ihr Benutzerpasswort"
 ```
 
-Standardmäßig muss diese Umgebung nach jeder Sitzungseröffnung in der bestehenden Umgebung geladen werden.  Eine dauerhafte Ladung kann durch Hinzufügung der Quelle openrc.sh zur Datei bashrc erstellt werden. Dies erfordert die Integrierung des Passwortes auf der Datei. 
+Diese Umgebung muss für jede neue Sitzung in der bestehenden Umgebung geladen werden. Sie können dies aber auch auf permanente Weise einrichten, indem die Quelle (*openrc.sh*) zur Datei *bashrc* hinzugefügt wird. Dazu muss das Passwort in die Datei geschrieben werden. 
 
 
-#### **Unter Windows**
+#### **Mit Windows**
 
-Die OpenRC Datei ist nicht dazu vorgesehen um unter Windows gestartet zu werden.
+Die *OpenRC*-Datei ist nicht dazu vorgesehen, unter Windows geladen zu werden.
 
-Sie haben also für das Laden der Umgebungsvariablen 2 Lösungen:
+Für das Laden der Umgebungsvariablen gitb es zwei Lösungen:
 
-- Man muss die Datei durch die Änderung mancher Befehle anpassen. In der Tat kann **export** durch **set**  ersetzt werden :
+- Die Datei kann mittels entsprechender Änderungen angepasst werden. Sie können **export** durch **set** ersetzen:
 
 ```bash
-export OS_PASSWORD="Passwort Horizon-Nutzer"
+set OS_PASSWORD="Ihr Benutzerpasswort"
 ```
 
-- Man kann die Variablen direkt aus den Systemeinstellungen heraus laden: Systemsteuerung > System > fortgeschrittene Systemeinstellungen > Umgebungsvariablen:
-
+- Man kann die Variablen über den folgenden Menüpfad direkt aus den Systemeinstellungen heraus laden: Systemsteuerung > System > Fortgeschrittene Systemeinstellungen > Umgebungsvariablen.
 
 ![public-cloud](images/pciopenstackvariables2.png){.thumbnail}
 
 ## Weiterführende Informationen
 
-Um die Nutzung von OpenStack zu erlernen: [OpenStack Dokumentation](https://docs.openstack.org/train/){.external}
+[OpenStack Dokumentation](https://docs.openstack.org/train/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
