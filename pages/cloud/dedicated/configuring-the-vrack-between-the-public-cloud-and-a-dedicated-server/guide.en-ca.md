@@ -11,7 +11,7 @@ section: 'Network Management'
 
 The [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](https://www.ovhcloud.com/en-ca/bare-metal/){.external}. But it also allows you to add [Public Cloud instances](https://www.ovh.com/ca/en/public-cloud/instances/){.external} to your private network so that you can create an infrastructure of both physical and virtual resources.
 
-**This guide will show you how to configure private networking between a [Public Cloud instance](https://www.ovh.com/ca/en/public-cloud/instances/){.external} and a [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/){.external}.**
+**This guide will show you how to configure private networking between a [Public Cloud instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance/){.external} and a [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/){.external}.**
 
 
 ## Requirements
@@ -68,11 +68,12 @@ For both services to communicate with each other, they have to be tagged with th
 
 By default, the VLAN ID for dedicated servers is **0**. If you wish to use this VLAN ID, it will be necessary to tag the private network linked to your instance with the same VLAN ID **0**. To do this, do not check the `Set VLAN` box when adding a private network to your instance.
 
-See the following guide for more information: [Create a vlan in the vrack](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#step-2-create-a-vlan-in-the-vrack_1)
+For more information, consult [this section](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#step-2-create-a-vlan-in-the-vrack_1) of the corresponding guide. 
 
 > [!primary]
-> For Public Cloud, only one private network can be tagged with the VLAN ID 0.
->
+> For Public Cloud, you set a unique VLAN ID per private network.
+> 
+> It is not possbile to set the same VLAN ID on two different networks.
 
 #### Using a different VLAN ID
 
