@@ -78,20 +78,21 @@ See the following guide for more information: [Create a vlan in the vrack](https
 
 If you decide to use a different VLAN ID:
 
-- In the network configuration file on the dedicated server, the private network interface should be tagged with this ID.
 - The private network linked to the Public Cloud instance should be tagged with this ID.
+- In the network configuration file on the dedicated server, the private network interface should be tagged with this ID.
+
 
 > [!primary]
 > 
 > Unlike dedicated servers, there is no need to tag a VLAN directly on a Public Cloud instance.
 >
 
-An example: If your instance private network is tagged with VLAN ID 2, the private network interface on your dedicated server should be tagged with this same ID. For more information see the following guide: [Create multiple VLANs in the vRack](https://docs.ovh.com/ca/en/dedicated/multiple-vlans/).
+An example: If your instance private network is tagged with VLAN ID 2, the private network interface on your dedicated server should be tagged with the same ID. For more information consult the following guide: [Create multiple VLANs in the vRack](https://docs.ovh.com/ca/en/dedicated/multiple-vlans/).
 
 
 ### Configure your network interfaces
 
-Next, configure the network interfaces on your new [Public Cloud instance](https://www.ovh.com/ca/en/public-cloud/instances/){.external} and [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/){.external} using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}. Taking into account the VLAN ID.
+Next, configure the network interfaces on your new [Public Cloud instance](https://www.ovh.com/ca/en/public-cloud/instances/){.external} and [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/){.external} using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}.
 
 ## Go further
 
