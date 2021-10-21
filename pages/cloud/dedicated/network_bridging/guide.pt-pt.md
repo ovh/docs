@@ -107,7 +107,7 @@ Altere o ficheiro para que este reflita a configuração abaixo. Não se esqueç
 
 - Distribuições antigas:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -122,7 +122,7 @@ iface eth0 inet static
 
 - Distribuições recentes:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -137,7 +137,7 @@ iface eth0 inet static
 
 Substitua também `eth0` se o seu sistema utilizar nomes de interface de rede previsíveis. Para encontrar os nomes de interface de rede, execute o seguinte comando:
 
-```sh
+```bash
 ls /sys/class/net
 ```
 
@@ -147,7 +147,7 @@ Registe e feche o ficheiro e reinicie a máquina virtual.
 
 Abra um terminal na sua máquina virtual. Uma vez ligado, abra o ficheiro de configuração de rede da máquina virtual. Este encontra-se situado em `/etc/network/interfaces`. Altere o ficheiro para que este reflita a configuração abaixo. Não se esqueça de substituir as nossas variáveis pelos seus próprios valores:
 
-```sh
+```console
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
@@ -166,7 +166,7 @@ Agora, registe e feche o ficheiro.
 
 De seguida, abra o ficheiro de roteamento da máquina virtual. Este encontra-se em `/etc/sysconfig/network-scripts/rodoviário-eth0`. Altere o ficheiro para que este reflita a configuração abaixo. Não se esqueça de substituir as nossas variáveis pelos seus próprios valores:
 
-```bash
+```console
 GATEWAY_IP dev eth0
 default via GATEWAY_IP dev eth0
 ```
@@ -182,7 +182,7 @@ Registe e feche o ficheiro e reinicie a máquina virtual.
 
 Abra um terminal na sua máquina virtual. Uma vez ligado, abra o ficheiro de configuração de rede da máquina virtual, que se encontra em `/etc/sysconfig/network-scripts/ifcfg-(nome da interface)`. Altere o ficheiro para que este reflita a configuração abaixo. Não se esqueça de substituir as nossas variáveis pelos seus próprios valores:
 
-```sh
+```console
 DEVICE=(interface-name)
 BOOTPROTO=none
 ONBOOT=yes
@@ -201,7 +201,7 @@ Guarde e feche o ficheiro.
 
 De seguida, abra o ficheiro de roteamento da máquina virtual, que se encontra em `/etc/sysconfig/network-scripts/rodoviário-(nome-da-interface)`. Altere o ficheiro para que este reflita a configuração abaixo. Não se esqueça de substituir as nossas variáveis pelos seus próprios valores:
 
-```bash
+```console
 GATEWAY_IP - 169.254.10.254 (nome-interface)
 NETWORK_GW_VM - 255.255.255.0 (insira o nome da interface)
 default GATEWAY_IP
@@ -211,7 +211,7 @@ Registe e feche o ficheiro.
 
 De seguida, abra o ficheiro de roteamento da máquina virtual. Este endereço encontra-se em `/etc/sysconfig/network/resolv.conf`.
 
-```bash
+```console
 nameserver 213.186.33.99
 ```
 
@@ -221,7 +221,7 @@ Depois de guardar e fechar o ficheiro, reinicie a sua rede ou máquina virtual.
 
 Abra um terminal na sua máquina virtual. Uma vez ligado, abra o ficheiro de configuração de rede da máquina virtual, situado na pasta `/etc/rc.conf`. Altere o ficheiro para que este reflita a configuração abaixo. Neste exemplo, o nome da interface é "em0". Pode alterá-lo se necessário.
 
-```bash
+```console
 ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
 static_rodoviário="net1 net2"
 rodoviário_net1="-net GATEWAY_IP/32 -interface em0"
@@ -230,7 +230,7 @@ rodoviário_net2="default GATEWAY_IP"
 
 Registe e feche o ficheiro. De seguida, edite o ficheiro `/etc/resolv.conf`. Crie-o se necessário.
 
-```sh
+```console
 nameserver 213.186.33.99
 ```
 
@@ -240,13 +240,13 @@ Registe e feche o ficheiro e reinicie a máquina virtual.
 
 Em primeiro lugar, estabeleça uma ligação SSH à sua máquina virtual e abra o ficheiro de configuração de rede situado em `/etc/netplan/` através do comando seguinte. Para efeitos de demonstração, o nosso ficheiro chama-se "50-cloud-init.yaml".
 
-```sh
+```bash
 # nano /etc/netplan/50-cloud-init.yaml
 ```
 
 Depois de abrir o ficheiro, altere-o com o seguinte código:
 
-```sh
+```yaml
 network:
     ethernets:
         (nome da interface):
@@ -266,7 +266,7 @@ network:
 
 Depois de realizar as modificações, registe e feche o ficheiro e execute o seguinte comando:
 
-```sh
+```bash
 # netplan try
 Warning: Stopping systemd-networkd.service, but it can still be activated by:
   systemd-networkd.socket

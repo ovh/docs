@@ -5,7 +5,7 @@ excerpt: 'So instanziieren Sie einen VPS mit cPanel-Template'
 section: 'Fortgeschrittene Nutzung'
 ---
 
-**Letzte Aktualisierung am 16.09.2021**
+**Letzte Aktualisierung am 14.10.2021**
 
 ## Ziel
 
