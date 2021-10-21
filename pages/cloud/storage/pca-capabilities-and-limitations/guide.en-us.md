@@ -1,33 +1,33 @@
 ---
-title: Capacités et limitations
+title: Capabilities and limitations
 slug: pca/capabilities-and-limitations
 routes:
-    canonical: 'https://docs.ovh.com/fr/storage/pcs/capabilities-and-limitations/'
-excerpt: Retrouvez ici les principales capacités et limitations pour la gestion de vos conteneurs
+    canonical: 'https://docs.ovh.com/gb/en/storage/pcs/capabilities-and-limitations'
+excerpt: Find here the main capacities and limitations for the management of your containers
 section: Public Cloud Archive
 ---
 
-**Dernière mise à jour le 23/09/2021**
+**Last updated 23rd September 2021**
 
-## Objectif
+## Objective
 
-Ce guide a pour objectif de vous présenter les principales capacités et limitations pour la gestion de vos conteneurs.
+The purpose of this guide is to outline the main capacities and limitations for managing your containers.
 
-## En pratique
+## Instructions
 
 > [!primary]
 >
-> Vous pouvez consulter une partie des ces informations directement depuis un navigateur en vous rendant sur : `https://storage.<region>.cloud.ovh.net/info`, ou, si vous utilisez python-swiftclient, via la commande : `swift capabilities`
+> You can view some of this information directly from a browser by going to: `https://storage.<region>.cloud.ovh.net/info`, or, if you are using python-swiftclient, via the command: `swift capabilities`.
 >
 
 ### container_listing_limit = 10000
 
-Le nombre par défaut (et maximum) d'éléments renvoyés pour une demande de liste de conteneur.
+The default (and maximum) number of items returned for a container list request.
 
-Afficher tous les éléments avec python-swiftclient :
+Show all items with python-swiftclient:
 
 ```bash
-swift list <conteneur>
+swift list <container>
 
 container_listing_limit/00001
 container_listing_limit/00002
@@ -40,10 +40,10 @@ container_listing_limit/00007
 container_listing_limit/10038
 ```
 
-N'afficher que les 10000 premiers objets :
+Show only the first 10000 objects:
 
 ```bash
-curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>" -X GET -H "X-Auth-Token: xxx"
+curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container>" -X GET -H `X-Auth-Token: xxx`
 ```
 
 ```
@@ -73,15 +73,15 @@ container_listing_limit/00007
 container_listing_limit/10000
 ```
 
-Vous pouvez utiliser les paramètres `marker`, `limit` et `end_marker` pour contrôler le nombre d'éléments retournés dans une liste et l'endroit où la liste commence ou se termine.
+You can use the `marker`, `limit`, and `end_marker` parameters to control how many items are returned in a list and where the list starts or ends.
 
-| Paramètre | Type | Description |
+| Setting | Type | Description |
 |:----------|:-----|:------------|
-| marker | string | Pour obtenir les noms suivants, vous devez faire une autre demande avec le paramètre marker. Définissez le paramètre marker sur le nom du dernier élément renvoyé dans la liste précédente. |
-| limit | integer | Pour renvoyer moins de 10 000 noms, utilisez le paramètre limit. |
-| end_marker | string | Limite le jeu de résultats aux noms dont le nombre est inférieur à la valeur du paramètre end_marker. |
+| marker | string | To get the following names, you must make another request with the marker parameter. Set the marker parameter to the last item returned in the previous list. |
+| limit | integer | Use the limit parameter to return fewer than 10,000 names. |
+| end_marker | string | Restricts the result set to names that are less than the end_marker value. |
 
-Afficher la suite via `marker` :
+Show more via `marker`:
 
 ```bash
 curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>?marker=container_listing_limit/10000" -X GET -H "X-Auth-Token: xxx"
@@ -116,7 +116,7 @@ container_listing_limit/10038
 
 ### max_container_name_length = 256
 
-Le nombre maximum d'octets dans l'encodage utf8 d'un nom de conteneur.
+The maximum number of bytes in utf8 encoding of a container name.
 
 ```bash
 max_container_name_length="max_container_name_length_$(cat /dev/urandom | tr -dc "a-zA-Z0-9" | fold -w 300 | head -n1)"
@@ -130,10 +130,10 @@ Failed Transaction ID: txd3664103d22a445687c5a-00610a32e3
 
 ### max_file_size = 5368709122 (5Gb)
 
-Le plus grand objet normal qui peut être enregistré dans le cluster. Il s'agit également de la limite de la taille de chaque segment d'un grand objet lors de l'utilisation du support du manifeste de grand objet. Cette valeur est définie en octets. Si elle est inférieure à 1MiB, certains tests échoueront. Il est FORTEMENT recommandé de laisser cette valeur par défaut (`5 * 2**30 + 2`).
+The largest normal object that can be saved in the cluster. This is also the limit on the size of each segment of a large object when using the large object manifest media. This value is set in bytes. If it is less than 1MiB, some tests will fail. It is STRONGLY recommended to leave this value as the default (`5 * 2**30 + 2`).
 
 ```bash
-swift upload <conteneur> <largeobject>
+swift upload <container> <largeobject>
 ```
 
 ```
@@ -142,8 +142,9 @@ Consider using the --segment-size option to chunk the object
 ```
 
 ```bash
-swift upload --use-slo --segment-size 1G <conteneur> <largeobject>
+swift upload --use-slo --segment-size 1G <container> <largeobject>
 ```
+
 ```
 <largeobject> segment 5
 <largeobject> segment 4
@@ -155,8 +156,9 @@ swift upload --use-slo --segment-size 1G <conteneur> <largeobject>
 ```
 
 ```bash
-swift list <conteneur_segments>
+swift list <container_segments>
 ```
+
 ```
 <largeobject>/slo/1627934910.652204/6442450944/1073741824/00000000
 <largeobject>/slo/1627934910.652204/6442450944/1073741824/00000001
@@ -168,34 +170,34 @@ swift list <conteneur_segments>
 
 ### max_meta_count = 90
 
-Le nombre maximum de clés de métadonnées qui peuvent être stockées sur un seul compte, conteneur ou objet.
+The maximum number of metadata keys that can be stored on a single account, container, or object.
 
 ```bash
-for i in $(seq 1 1 100)
+for i in $(seq 1 100)
 do
-swift post -m "max_meta_count_$i:value" <conteneur>
+swift post -m "max_meta_count_$i:value" <container>
 done
 ```
 
 ```output
-Container POST failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur> 400 Bad Request   b'Too many metadata items; max 90'
+Container POST failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container> 400 Bad Request  b'Too many metadata items; max 90'
 Failed Transaction ID: txef5aa187467c4c949c0d4-00610a35f0
 ```
 
 ```bash
-swift stat <conteneur>
+swift stat <container>
 ```
 
 ```output
-Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur> 502 Bad Gateway
+Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container> 502 Bad Gateway
 ```
 
 ### max_meta_name_length = 128
 
-Le nombre maximum d'octets dans l'encodage utf8 de la partie « nom » d'un en-tête de métadonnées.
+The maximum number of bytes in utf8 encoding of the name portion of a metadata header.
 
 ```bash
-swift post -m 'max_meta_name_length_oROpb2gFutM1NrZI9Q5aOuJDi0eiO0hFvJIJo9Hrd7mhPeAOoRwoCk00CJPX0yFvmbcatIuqXY8avxTLhhQBRwVhBJ0Ht2DeUKFTEZDeKfF2xBou4aC9krFMjVoF8wEsdb:value' <conteneur>
+swift post -m 'max_meta_name_length_oROpb2gFutM1NrZI9Q5aOuJDi0eiO0hFvJIJo9Hrd7mhPeAOoRwoCk00CJPX0yFvmbcatIuqXY8avxTLhhQBRwVhBJ0Ht2DeUKFTEZDeKfF2xBou4aC9krFMjVoF8wEsdb:value' <container>
 ```
 
 ```
@@ -205,24 +207,24 @@ Failed Transaction ID: tx6ced883b311a4c1eb5e75-00610a30eb
 
 ### max_meta_overall_size = 4096
 
-Le nombre maximum d'octets dans l'encodage utf8 des métadonnées (clés + valeurs).
+The maximum number of bytes in the utf8 encoding of metadata (keys + values).
 
 ```bash
 for i in $(seq 1 1 50)
 do
-swift post -m "max_meta_overall_size_$i:oROpb2gFutM1NrZI9Q5aOuJDi0eiO0hFvJIJo9Hrd7mhPeAOoRwoCk00CJPX0yFvmbcatIuqXY8avxTLhhQBRwVhBJ0Ht2DeUKFTEZDeKfF2xBou4aC9krFMjVoF8wEsdb" <conteneur>
+swift post -m "max_meta_overall_size_$i:oROpb2gFutM1NrZI9Q5aOuJDi0eiO0hFvJIJo9Hrd7mhPeAOoRwoCk00CJPX0yFvmbcatIuqXY8avxTLhhQBRwVhBJ0Ht2DeUKFTEZDeKfF2xBou4aC9krFMjVoF8wEsdb" <container>
 done
 ```
 
 ```
-Container POST failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur> 400 Bad Request   b'Total metadata too large; max 4096'
+Container POST failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container> 400 Bad Request   b'Total metadata too large; max 4096'
 Failed Transaction ID: tx062504c366c3454c958c9-00610a34c0
 ```
 
-###  max_object_name_length = 1024
+### max_object_name_length = 1024
 
-Le nombre maximum d'octets dans l'encodage utf8 d'un nom d'objet.  
-Le nom d'un objet inclut son préfixe
+The maximum number of bytes in utf8 encoding of an object name.  
+The name of an object includes its prefix.
 
 ```bash
 cd /tmp/
@@ -230,7 +232,7 @@ d=$(cat /dev/urandom | tr -dc "a-zA-Z0-9" | fold -w 100 | head -n1)
 mkdir -p "$d/$d/$d/$d/$d/$d/$d/$d/$d/$d/$d/" && cd $_
 touch max_object_name_length.txt
 file="$(pwd)/max_object_name_length.txt"
-swift upload <conteneur> $file
+swift upload <container> $file
 ```
 
 ```
@@ -238,35 +240,35 @@ Object PUT failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702de32b692c4842b0b
 
 ```
 
-### Durée de validité d'un token
+### Validity period of a token
 
-Un token est valide 24h.
+A token is valid for 24 hours.
 
 > [!warning]
 >
-> Un trop grand nombre de demandes de token renverra une erreur 429 Too Many Requests.
+> Too many token requests will return a 429 Too Many Requests error.
 >
 
-### Création de conteneur via Horizon
+### Creating a container via Horizon
 
-Horizon ne liste pas les politiques de stockage. Par conséquent, il n'est pas possible de créer de conteneur PCA via Horizon, PCS étant la politique de stockage par défaut.
+Horizon does not list storage policies. As a result, it is not possible to create a PCA container via Horizon, with PCS being the default storage policy.
 
-### Nombre de conteneurs dans un stockage
+### Number of containers in storage
 
-Il n'y a pas de limite au nombre de conteneurs dans un stockage.
+There is no limit to the number of containers in a storage.
 
-### Nombre de comptes utilisateurs par projet
+### Number of user accounts per project
 
-1000
+1,000
 
-### Création de conteneur Public Cloud Archive sur SBG
+### Creating a Public Cloud Archive container on SBG
 
-Il n'est plus possible de créer de conteneur PCA sur SBG. Aucune date de retour n'a été annoncée pour le moment.
+It is no longer possible to create a PCA container on SBG. No return date has been announced for the moment.
 
 ### Keystone API version
 
-La version actuelle de keystone est la 3, la v2 étant obsolète depuis plusieures années : <http://travaux.ovh.net/?do=details&id=42179>
+The current version of Keystone is version 3, v2 being obsolete for several years: <http://travaux.ovh.net/?do=details&id=42179>
 
-## Aller plus loin
+## Go further
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Join our community of users on <https://community.ovh.com/en/>.

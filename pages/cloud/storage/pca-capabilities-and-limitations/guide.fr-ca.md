@@ -11,18 +11,18 @@ section: Public Cloud Archive
 
 ## Objectif
 
-Ce guide a pour objectif de vous présenter les principales capacités et limitations pour la gestion de vos conteneurs.
+Ce guide à pour objectif de vous présenter les principales capacités et limitations pour la gestion de vos conteneurs.
 
 ## En pratique
 
 > [!primary]
 >
-> Vous pouvez consulter une partie des ces informations directement depuis un navigateur en vous rendant sur : `https://storage.<region>.cloud.ovh.net/info`, ou, si vous utilisez python-swiftclient, via la commande : `swift capabilities`
+> Vous pouvez consulter une partie des ces informations directement depuis un navigateur en vous rendant sur : `https://storage.<region>.cloud.ovh.net/info`, ou, si vous utilisez python-swiftclient, via la commande : `swift capabilities`.
 >
 
 ### container_listing_limit = 10000
 
-Le nombre par défaut (et maximum) d'éléments renvoyés pour une demande de liste de conteneur.
+Le nombre par défaut (et maximum) d'éléments renvoyés pour une demande de liste de conteneurs.
 
 Afficher tous les éléments avec python-swiftclient :
 
@@ -144,6 +144,7 @@ Consider using the --segment-size option to chunk the object
 ```bash
 swift upload --use-slo --segment-size 1G <conteneur> <largeobject>
 ```
+
 ```
 <largeobject> segment 5
 <largeobject> segment 4
@@ -157,6 +158,7 @@ swift upload --use-slo --segment-size 1G <conteneur> <largeobject>
 ```bash
 swift list <conteneur_segments>
 ```
+
 ```
 <largeobject>/slo/1627934910.652204/6442450944/1073741824/00000000
 <largeobject>/slo/1627934910.652204/6442450944/1073741824/00000001
@@ -219,10 +221,10 @@ Container POST failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxx
 Failed Transaction ID: tx062504c366c3454c958c9-00610a34c0
 ```
 
-###  max_object_name_length = 1024
+### max_object_name_length = 1024
 
 Le nombre maximum d'octets dans l'encodage utf8 d'un nom d'objet.  
-Le nom d'un objet inclut son préfixe
+Le nom d'un objet inclut son préfixe.
 
 ```bash
 cd /tmp/
