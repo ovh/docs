@@ -43,7 +43,7 @@ container_listing_limit/10038
 Show only the first 10000 objects:
 
 ```bash
-curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container>` -X GET -H `X-Auth-Token: xxx`
+curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container>" -X GET -H `X-Auth-Token: xxx`
 ```
 
 ```
