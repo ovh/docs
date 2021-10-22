@@ -23,7 +23,7 @@ Vous souhaitez migrer vos adresses e-mail présentes sur une plateforme Exchange
 ## Prérequis
 
 - Disposer d'une plateforme **«source»** avec des comptes [Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external} ou [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external} configurés.
-- Disposer d'une plateforme **«destination»** avec des comptes [Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external}, [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external} ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}). Cette plateforme doit disposer de comptes non-configuré ou disponible pour acceuillir les adresses e-mail qui doivent être migrées.
+- Disposer d'une plateforme **«destination»** avec des comptes [Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external}, [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external} ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}). Cette plateforme doit disposer de comptes non configurés ou disponibles pour acceuillir les adresses e-mail qui doivent être migrées.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
@@ -40,7 +40,7 @@ Avant de commencer votre migration, si vous venez de commander votre nouvelle of
 
 ### Migrer les comptes e-mail <a name="accountsmigration"></a>
 
-La migration de vos comptes e-mail se fera en 3 grandes étapes, **Renommer** le compte e-mail d'origine,**Créer** le nouveau compte e-mail et **Migrer** de la plateforme d'origine vers la nouvelle. 
+La migration de vos comptes e-mail se fera en 3 grandes étapes, **Renommer** le compte e-mail d'origine, **Créer** le nouveau compte e-mail et **Migrer** de la plateforme d'origine vers la nouvelle. 
 
 ![email-migration](images/migration_platform03.gif){.thumbnail}
 
