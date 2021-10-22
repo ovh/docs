@@ -1,57 +1,56 @@
 ---
 title: 'Configurer le vRack sur vos serveurs dédiés'
 slug: configurer-plusieurs-serveurs-dedies-dans-le-vrack
-excerpt: 'Découvrez comment configurer le vRack sur deux ou plusieurs serveurs dédiés'
+excerpt: 'Découvrez comment configurer le vRack sur plusieurs serveurs dédiés'
 section: 'vRack'
 ---
 
-**Dernière mise à jour le 19 octobre 2021**
+**Dernière mise à jour le 19/10/2021**
 
 ## Objectif
 
-Le vRack (baie virtuelle) d’OVHcloud permet de rassembler virtuellement plusieurs serveurs (quel que soit leur nombre et leur emplacement physique dans nos datacenters et de les connecter à un switch virtuel au sein d’un même réseau privé). Vos serveurs peuvent ainsi communiquer de manière privée et sécurisée entre eux, au sein d'un VLAN dédié.
+Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs serveurs (quel que soit leur nombre et leur emplacement physique dans nos datacenters) et de les connecter à un switch virtuel au sein d’un même réseau privé. Vos serveurs peuvent ainsi communiquer de manière privée et sécurisée entre eux, au sein d'un VLAN dédié.
 
-**Ce guide vous explique comment configurer le vRack sur deux ou plusieurs serveurs dédiés.**
+**Déouvrez comment configurer le vRack sur plusieurs serveurs dédiés.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Prérequis
 
-- un service [vRack](https://www.ovh.co.uk/solutions/vrack/) activé dans votre compte
-- deux ou plusieurs serveurs [dédiés](https://www.ovhcloud.com/en-gb/bare-metal/) (compatible vRack)
-- Disposer d’un accès administratif (root) au serveur via SSH ou RDP.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- une plage d'adresses IP privée de votre choix
+- Un service [vRack]((https://www.ovh.com/fr/solutions/vrack/) activé dans votre compte
+- Plusieurs [serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/) (compatibles vRack)
+- Disposer d’un accès administrateur (root) au serveur via SSH ou RDP.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Préparer la plage d'adresses IP privées que vous avez choisie.
 
+## En pratique
 
-## Instructions
+### Étape 1 : ajouter vos serveurs au vRack
 
-### Étape 1 : Ajouter vos serveurs au vRack
-
-Une fois le vRack activé dans votre compte, rendez-vous dans la section `Bare Metal Cloud`{.action} de votre espace client [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) et ouvrez le menu `vRack`{.action} dans le menu de gauche.
+Une fois le vRack activé dans votre compte, rendez-vous dans la section `Bare Metal Cloud`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et ouvrez le menu `vRack`{.action} dans le menu de gauche.
 
 Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur chacun des serveurs que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action} .
 
 ![Choix du vRack](images/vrack_selection.png){.thumbnail}
 
-### Étape 2 : Configuration de vos interfaces réseau
+### Étape 2 : configuration de vos interfaces réseau
 
-Les sections suivantes contiennent les configurations des distributions/systèmes d'exploitation récents les plus couramment utilisés. La première étape consiste toujours à vous [connecter à votre serveur](../getting-started-dedicated-server/) en SSH ou en session RDP (pour Windows). Les exemples ci-dessous supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées (Administrateur/sudo).
+Les étapes suivantes contiennent les configurations des distributions/systèmes d'exploitation récents les plus couramment utilisés. La première étape consiste toujours à vous [connecter à votre serveur](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/) en SSH ou en session RDP (pour Windows). Les exemples ci-dessous supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées (Administrateur/sudo).
 
 > [!primary]
 >
-Concernant les différentes distributions, sachez que la procédure à suivre pour configurer votre interface réseau ainsi que les noms de fichiers ont pu être sujets à modification. Nous vous recommandons de consulter les manuels et les ressources de connaissances des versions respectives du système d'exploitation si vous rencontrez des problèmes.
-> 
-Par exemple, les détails de configuration ci-dessous auront l'adresse IP `192.168.0.0/16` (**Subnet mask**: `255.255.0.0`).
-> 
+Concernant les différentes distributions, sachez que la procédure à suivre pour configurer votre interface réseau, ainsi que les noms de fichiers, ont pu être sujets à modification. Si vous rencontrez des difficultés, Nous vous recommandons de consulter les manuels et les bases de connaissances des versions respectives du système d'exploitation.
+>
+Par exemple, les détails de configuration ci-dessous auront l'adresse IP `192.168.0.0/16` (**Masque de sous-réseau**: `255.255.0.0`).
+>
 Vous pouvez utiliser n'importe quelle plage d'IP privée de votre choix et n'importe quelle adresse dans cette plage.
-> 
+>
 
 #### Configurations GNU/Linux
 
 Les noms des interfaces réseau de vos serveurs ne sont pas toujours les mêmes. Dans les exemples suivants, remplacez NETWORK_INTERFACE par le nom d'interface approprié.
 
-Le meilleur moyen de vérifier la bonne interface pour le vRack est de vérifier l'onglet `Interfaces`{.action} réseau de votre serveur dans votre espace client [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Dans le tableau du bas, notez l'adresse MAC qui est aussi le **Nom** de l'interface **Privée**.
+Le meilleur moyen de vérifier la bonne interface pour le vRack est de vérifier l'onglet `Interfaces réseau`{.action} de votre serveur dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans le tableau du bas, notez l'adresse MAC qui est aussi le **Nom** de l'interface **Privée**.
 
 ![Interface vRack](images/private_interface.png){.thumbnail}
 
@@ -61,7 +60,7 @@ Une fois connecté à votre serveur via SSH, vous pouvez lister vos interfaces r
 ip a
 ```
 
-Sur la ligne qui commence par l'```éther``` lien, vous pouvez vérifier que cette interface correspond à l'interface **Privé** renseignée dans votre espace client [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configurations ci-dessous (exemple : `eno2`).
+Sur la ligne qui commence par ```link ether```, vous pouvez vérifier que cette interface correspond à l'interface **Privée** renseignée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configurations ci-dessous (exemple : `eno2`).
 
 ```console
 link ether f0:00:00:ef:0e:f0
@@ -69,7 +68,7 @@ link ether f0:00:00:ef:0e:f0
 
 ##### **Debian**
 
-Dans un éditeur de texte de votre choix, ouvrez le fichier de configuration réseau situé dans `/etc/network/interfaces.d` pour le modifier. Ici, le fichier s'appelle `50-cloud-init`.
+Dans un éditeur de texte, ouvrez le fichier de configuration réseau situé dans `/etc/network/interfaces.d` pour le modifier. Ici, le fichier s'appelle `50-cloud-init`.
 
 ```bash
 editor /etc/network/interfaces.d/50-cloud-init
@@ -92,11 +91,11 @@ Redémarrez le service réseau pour appliquer la configuration :
 systemctl restart networking
 ```
 
-Répétez la procédure pour vos autres serveurs et attribuez une adresse IP unique à votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
+Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
 
 ##### **Ubuntu**
 
-A l'aide de l'éditeur de texte de votre choix, ouvrez le fichier de configuration réseau se trouvant dans `/etc/netplan/` pour l'éditer. Ici, le fichier s'appelle `50-cloud-init.yaml`.
+A l'aide de l'éditeur de texte de votre choix, ouvrez le fichier de configuration réseau se trouvant dans `/etc/netplan/` afin de l'éditer. Ici, le fichier s'appelle `50-cloud-init.yaml`.
 
 ```bash
 editor /etc/netplan/50-cloud-init.yaml
@@ -114,18 +113,18 @@ Ajoutez la configuration IP à la configuration existante après la ligne `ether
 
 > [!warning]
 >
-> Il est important de respecter l'alignement de chaque élément dans les fichiers `yaml` comme représenté dans l'exemple ci-dessus. N'utilisez pas la touche de tabulation pour créer votre espacement. Seule la touche espace est nécessaire. 
+> Il est important de respecter l'alignement de chaque élément dans les fichiers `yaml` comme représenté dans l'exemple ci-dessus. N'utilisez pas la touche de tabulation pour créer votre espacement. Seule la touche espace doit être utilisée.
 >
 
 Enregistrez vos modifications dans le fichier de configuration et quittez l'éditeur.
 
-Appliquer la configuration :
+Appliquez la configuration :
 
 ```bash
-# netplan apply
+netplan apply
 ```
 
-Répétez la procédure pour vos autres serveurs et attribuez une adresse IP unique à votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
+Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
 
 ##### **CentOS**
 
@@ -160,12 +159,11 @@ Sous **CentOS 8**, utilisez cette commande :
 systemctl restart NetworkManager.service
 ```
 
-Répétez la procédure pour vos autres serveurs et attribuez une adresse IP unique à votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
+Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
 
+#### Configuration Windows
 
-#### Configuration Windows 
-
-À titre d'exemple, les configurations suivantes utiliseront la plage d'adresses IP de `192.168.0.0/16` (**Subnet mask**: `255.255.0.0`).
+À titre d'exemple, les configurations suivantes utiliseront la plage d'adresses IP de `192.168.0.0/16` (**Masque de sous-réseau**: `255.255.0.0`).
 
 Connectez-vous à votre serveur Windows via le bureau à distance et allez dans le **Panneau de configuration**.
 
@@ -183,7 +181,7 @@ Cliquez sur `Change Adapter Settings`{.action}.
 
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
-Cliquez avec le bouton droit sur l'interface réseau secondaire, puis cliquez sur `Propriétés`{.action}.
+Faites un clic-droit sur l'interface réseau secondaire, puis cliquez sur `Propriétés`{.action}.
 
 ![Windows Properties](images/windows_properties_button.png){.thumbnail}
 
@@ -191,14 +189,14 @@ Double-cliquez sur `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Internet Protocol Version 4 (TCP/IP/IPv4)](images/windows_ipv4.png){.thumbnail}
 
-Cliquez sur **Utiliser l'adresse** IP suivante. Entrez n'importe quelle adresse **IP** de votre plage privée et le **masque** de sous-réseau approprié (`255.255.0.0` dans cet exemple) dans le champ correspondant.
+Cliquez sur **Utiliser l'adresse IP suivante**. Entrez n'importe quelle adresse **IP** de votre plage privée et le **masque** de sous-réseau approprié (`255.255.0.0` dans cet exemple) dans le champ correspondant.
 
 ![Utiliser l'adresse IP suivante](images/windows_use_following_ip_address.png){.thumbnail}
 
-Cliquez sur `OK`{.action} pour sauvegarder les modifications et redémarrer votre serveur pour les appliquer.
+Cliquez sur `OK`{.action} pour sauvegarder les modifications puis redémarrez votre serveur pour les appliquer.
 
-Répétez cette procédure pour votre ou vos autres serveurs et attribuez une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
+Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
