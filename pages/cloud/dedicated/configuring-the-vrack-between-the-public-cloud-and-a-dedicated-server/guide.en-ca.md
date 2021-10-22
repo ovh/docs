@@ -35,15 +35,15 @@ Go to the `Bare Metal Cloud`{.action} menu and click on the `Order`{.action} but
 
 ![Order vrack](images/orderingvrack.png){.thumbnail}
 
-You will be redirected to an order page, validate the order and wait for the vRack to be setup in your account. This will take a few minutes.
+You will be redirected to an order page to validate the order. It will take a few minutes for the vRack to be setup in your account.
 
 Once the vRack service is delivered to your account, you can now add your project to it.
 
-Go to the `Bare Metal Cloud`{.action} menu, click on `Network`{.action}, then on `vRack`{.action} and select your vRack from the list,
+Go to the `Bare Metal Cloud`{.action} menu, click on `Network`{.action}, then on `vRack`{.action} and select your vRack from the list.
 
 ![vrack delivered](images/vrackdelivered.png){.thumbnail}
 
-From the list of eligible services, select the project you want to add to the vRack and then click the Add button
+From the list of eligible services, select the project you want to add to the vRack and then click the `Add`{.action} button
 
 ![add project to vrack](images/addprojectvrack.png){.thumbnail}
 
