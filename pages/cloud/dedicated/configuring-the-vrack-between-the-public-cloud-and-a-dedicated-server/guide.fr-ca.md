@@ -35,11 +35,17 @@ Allez dans le menu `Bare Metal Cloud`{.action} et cliquez sur le bouton `Command
 
 ![Commander le vrack](images/orderingvrack.png){.thumbnail}
 
-Vous serez redirigé sur une page de commande, valider la commande et attendre que le vRack soit installé sur votre compte. L'opération sera effective d'ici quelques minutes.
+Vous serez redirigé vers une autre page pour valider la commande, l'opération prendra quelques minutes.
 
-Une fois le service vRack livré sur votre compte, pour y avoir accès, cliquez sur le menu `Bare Metal Cloud`{.action}, puis cliquez sur `Network`{.action}, et ensuite sur `vRack`{.action}.
+Une fois le service vRack livré sur votre compte, vous pouvez à présent y ajouter votre projet.
+
+Cliquez sur le menu `Bare Metal Cloud`{.action}, puis sur `Network`{.action}, et ensuite sur `vRack`{.action}. Sélectionnez votre vRack dans la liste.
 
 ![vrack livré](images/vrackdelivered.png){.thumbnail}
+
+Dans la liste des services éligibles, sélectionnez le projet que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}
+
+![ajouter un projet au vrack](images/addprojectvrack.png){.thumbnail}
 
 2. En [créant ou en ajoutant un service vRack existant](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-vrack/#etape-1-activer-et-gerer-un-vrack) dans la section `Public Cloud`{.action}.
 
@@ -88,7 +94,7 @@ Si vous décidez d'utiliser un VLAN ID différent :
 > Contrairement aux serveurs dédiés, il n’est pas nécessaire de faire du VLAN taggé directement sur l’instance.
 >
 
-Un exemple : Si vous avez défini le réseau privé lié à votre instance avec VLAN 2, l'interface réseau privé de votre serveur dédié droit être taguée avec le même ID. Pour plus d'informations consultez le guide suivant : [Créer plusieurs VLAN dans le vRack](https://docs.ovh.com/ca/fr/dedicated/creer-vlan-vrack/).
+Un exemple : Si vous avez défini le réseau privé lié à votre instance avec VLAN 2, l'interface réseau privé de votre serveur dédié droit être taguée avec VLAN 2. Pour plus d'informations consultez le guide suivant : [Créer plusieurs VLAN dans le vRack](https://docs.ovh.com/ca/fr/dedicated/creer-vlan-vrack/).
 
 
 ### Configurez vos interfaces réseau
