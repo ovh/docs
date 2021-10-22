@@ -62,17 +62,13 @@ Le Public Cloud OVHcloud se positionne aux côtés de fournisseurs cloud bien co
 
 ### Cas d'usages : quelques exemples concrets et leurs avantages
 
-* **Plus de flexibilité** : _Vous avez une application qui fonctionne actuellement sur un hébergement classique comme un (ou plusieurs) serveur dédié et vous souhaitez plus de flexibilité dans l'utilisation._ \
-L'utilisation des instances Public Cloud est très proche de celle d'un serveur dédié, mais elle apporte la possibilité de redimensionner votre serveur facilement, suivre les évolutions matérielles, ajouter de l'espace de stockage à chaud, configurer l'architecture réseau comme vous le souhaitez, programmer des sauvegardes ou cloner votre serveur en quelques actions simples.
+* **Plus de flexibilité** : _Vous avez une application qui fonctionne actuellement sur un hébergement classique comme un (ou plusieurs) serveur dédié et vous souhaitez plus de flexibilité dans l'utilisation._ L'utilisation des instances Public Cloud est très proche de celle d'un serveur dédié, mais elle apporte la possibilité de redimensionner votre serveur facilement, suivre les évolutions matérielles, ajouter de l'espace de stockage à chaud, configurer l'architecture réseau comme vous le souhaitez, programmer des sauvegardes ou cloner votre serveur en quelques actions simples.
 
-* **Plus de scalabilité** : _Vous développez une application cloud native et vous souhaitez une infrastructure capable d'encaisser de fortes variations de charge._ \
-Les clusters Kubernetes peuvent réagir et s'adapter dynamiquement en fonction de la charge. Ils peuvent ajouter des noeuds au cluster de manière automatique quand la pression sur l'infrastructure augmente.
+* **Plus de scalabilité** : _Vous développez une application cloud native et vous souhaitez une infrastructure capable d'encaisser de fortes variations de charge._ Les clusters Kubernetes peuvent réagir et s'adapter dynamiquement en fonction de la charge. Ils peuvent ajouter des noeuds au cluster de manière automatique quand la pression sur l'infrastructure augmente.
 
-* **Plus de maitrise des coûts** : _Vous avez une application en production sujette à des saisonnalités et vous souhaitez déporter la charge de calcul au moment des pics, sans maintenir des coûts d'infrastructure importants tout au long de l'année._ \
-Les instances facturées à l'heure peuvent effectuer les tâches en peu de temps et être détruites une fois que le besoin est passé.
+* **Plus de maitrise des coûts** : _Vous avez une application en production sujette à des saisonnalités et vous souhaitez déporter la charge de calcul au moment des pics, sans maintenir des coûts d'infrastructure importants tout au long de l'année. Les instances facturées à l'heure peuvent effectuer les tâches en peu de temps et être détruites une fois que le besoin est passé.
 
-* **Plus de sérénité** : _Vous avez besoin d'une base de donnée mais vous ne souhaitez pas gérer le moteur et en assurer la maintenance._ \
-Les bases de données managées sont disponibles en quelque secondes et sont totalement gérées par OVHcloud, vous pouvez directement utiliser le service de base de données en vous affranchissant de l'installation, la maintenance, les mises à jour...
+* **Plus de sérénité** : _Vous avez besoin d'une base de donnée mais vous ne souhaitez pas gérer le moteur et en assurer la maintenance. Les bases de données managées sont disponibles en quelque secondes et sont totalement gérées par OVHcloud, vous pouvez directement utiliser le service de base de données en vous affranchissant de l'installation, la maintenance, les mises à jour...
 
 ### L'utilisation : une interface simple et des API standards
 
