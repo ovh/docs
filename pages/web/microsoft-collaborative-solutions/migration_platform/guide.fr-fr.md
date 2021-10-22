@@ -1,9 +1,9 @@
 ---
-title: 'Migrer vos adresses e-mail d'une plaforme e-mail OVHcloud vers une autre'
+title: Migrer vos adresses e-mail d'une plaforme e-mail OVHcloud vers une autre
 slug: migration-email-platform
-excerpt: 'Découvrez comment migrer les adresses e-mail d'une plateforme Exchange ou E-mail Pro vers une autre plateforme Exchange E-mail Pro ou MX Plan'
-section: 'Migration'
-order: 1
+excerpt: Découvrez comment migrer les adresses e-mail d'une plateforme Exchange ou E-mail Pro vers une autre plateforme Exchange, E-mail Pro ou MX Plan
+section: Migration
+order: 2
 ---
 
 **Dernière mise à jour le 21/10/2020**
