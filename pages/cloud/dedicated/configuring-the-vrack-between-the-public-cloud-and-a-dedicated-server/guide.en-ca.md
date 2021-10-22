@@ -27,19 +27,25 @@ The [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} allows you to
 
 ### Add a Public Cloud project to the vRack
 
-Once your [Public Cloud project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project) is set up, you will need to add it to the vrack. This can be done in two ways:
+Once your [Public Cloud project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project) is set up, you will need to add it to the vRack. This can be done in two ways:
 
 1. By ordering a vRack service if you do not have one yet, this service is free of charge. 
 
-Go to the `Bare Metal Cloud`{.action} menu and click on the `Order`{.action} button. Under the Order menu, click on the `vRack`{.action} button.
+Go to the `Bare Metal Cloud`{.action} menu and click on the `Order`{.action} button. Under this menu, click on `vRack`{.action}.
 
 ![Order vrack](images/orderingvrack.png){.thumbnail}
 
 You will be redirected to an order page, validate the order and wait for the vRack to be setup in your account. This will take a few minutes.
 
-Once the vRack service is delivered to your account, to view it, go to `Bare Metal Cloud`{.action}, click on `Network`{.action}, and then on `vRack`{.action}.
+Once the vRack service is delivered to your account, you can now add your project to it.
+
+Go to the `Bare Metal Cloud`{.action} menu, click on `Network`{.action}, then on `vRack`{.action} and select your vRack from the list,
 
 ![vrack delivered](images/vrackdelivered.png){.thumbnail}
+
+From the list of eligible services, select the project you want to add to the vRack and then click the Add button
+
+![add project to vrack](images/addprojectvrack.png){.thumbnail}
 
 2. By [creating or adding an existing vRack service](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#instructions_1) in the `Public Cloud`{.action} section.
 
@@ -66,21 +72,21 @@ For both services to communicate with each other, they have to be tagged with th
 
 #### Using the default VLAN ID
 
-By default, the VLAN ID for dedicated servers is **0**. If you wish to use this VLAN ID, it will be necessary to tag the private network linked to your instance with the same VLAN ID **0**. To do this, do not check the `Set VLAN` box when adding a private network to your instance.
+By default, the VLAN ID for dedicated servers is **0**. To use this VLAN ID, it will be necessary to tag the private network linked to your instance with VLAN **0**. To do this, do not check the `Set VLAN` box when adding a private network to your instance.
 
 For more information, consult [this section](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#step-2-create-a-vlan-in-the-vrack_1) of the corresponding guide. 
 
 > [!primary]
 > For Public Cloud, you set a unique VLAN ID per private network.
 > 
-> It is not possbile to set the same VLAN ID on two different networks.
+> It is not possbile to set the same VLAN ID on two different private networks.
 
 #### Using a different VLAN ID
 
-If you decide to use a different VLAN ID:
+To use a different VLAN ID:
 
-- The private network linked to the Public Cloud instance should be tagged with this ID.
-- In the network configuration file on the dedicated server, the private network interface should be tagged with this ID.
+- The private network linked to the Public Cloud instance must be tagged with this VLAN ID.
+- In the network configuration file on the dedicated server, the private network interface should be tagged with this VLAN ID.
 
 
 > [!primary]
@@ -88,7 +94,7 @@ If you decide to use a different VLAN ID:
 > Unlike dedicated servers, there is no need to tag a VLAN directly on a Public Cloud instance.
 >
 
-An example: If your instance private network is tagged with VLAN ID 2, the private network interface on your dedicated server should be tagged with the same ID. For more information consult the following guide: [Create multiple VLANs in the vRack](https://docs.ovh.com/ca/en/dedicated/multiple-vlans/).
+An example: If your instance private network is tagged with VLAN 2, the private network interface on your dedicated server should be tagged with VLAN 2. For more information consult the following guide: [Create multiple VLANs in the vRack](https://docs.ovh.com/ca/en/dedicated/multiple-vlans/).
 
 
 ### Configure your network interfaces
