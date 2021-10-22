@@ -1,44 +1,43 @@
 ---
-title: Installer Wordpress sur une instance
+title: Installer WordPress sur une instance
 excerpt: Découvrez comment utiliser une instance Public Cloud pour héberger des sites WordPress
 slug: installer-wordpress-sur-une-instance
 section: Tutoriels
 ---
 
-**Dernière mise à jour le 15 octobre 2021**
+**Dernière mise à jour le 15/10/2021**
 
 ## Objectif
 
-WordPress est un système de gestion de contenu (CMS) vous permettant de créer et d’administrer des sites web à des fins multiples, sans avoir besoin de compétences en programmation.
+WordPress est un système de gestion de contenu (CMS) vous permettant de créer et d’administrer des sites web à des fins multiples, sans avoir besoin de compétences particulières en programmation.
 
 Ce tutoriel fournit les étapes de base pour une installation manuelle de WordPress sur une instance Public Cloud : installer un serveur web, configurer la base de données, télécharger et lancer WordPress.
 
-**Ce guide vous explique comment installer WordPress sur une instance Public Cloud.**
-
+**Découvrez comment installer WordPress sur une instance Public Cloud.**
 
 ## Prérequis
 
-- un projet [Public Cloud](https://www.ovhcloud.com/en-gb/public-cloud/) dans votre compte OVHcloud
-- Avoir une instance [Public Cloud](../public-cloud-first-steps/) avec Debian ou Ubuntu installé.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Avoir une [instance Public Cloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/) avec Debian ou Ubuntu installé
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Disposer d’un accès administratif (root) à votre instance via SSH
 
-## Instructions
+## En pratique
 
 > [!primary]
 >
-> Les instructions suivantes sont vérifiées pour Debian 11. Ubuntu est basé sur Debian et le tutoriel devrait donc fonctionner pour une distribution Ubuntu actuelle également.
+> Les instructions suivantes sont vérifiées pour Debian 11. Ubuntu est basé sur Debian et le tutoriel devrait donc également fonctionner pour une distribution Ubuntu actuelle.
+>
 
+Afin d'accéder à votre installation via un nom de domaine, vous devez relier celui-ci à votre instance. Pour ce faire, vous devez éditer la zone DNS accessible depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), à condition que OVHcloud soit votre bureau d’enregistrement **et** que le nom de domaine utilise les serveurs DNS OVHcloud.
 
-Afin d'accéder à votre installation via un nom de domaine, vous devez l'attacher à votre instance. Pour ce faire, vous devez éditer la zone DNS accessible depuis votre espace client [OVHcloud, à condition qu’OVHcloud soit votre bureau d’enregistrement ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)et que le nom de domaine utilise les** ** serveurs DNS d’OVHcloud.
+Consultez le guide [Éditer sa zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) pour en savoir plus. Si le nom de domaine est actuellement utilisé, ne configurez les DNS qu'après l'installation du nouveau WordPress et le démarrage de votre site web.
 
-Consultez le guide "[Éditer sa zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) DNS" pour en savoir plus. Si le nom de domaine est actuellement utilisé, ne configurez les DNS qu'après l'installation du nouveau WordPress et le démarrage de votre site web.
+### Étape 1 : installation du serveur web (LAMP)
 
-### Étape 1 : Installation du serveur web (LAMP)
+Afin de pouvoir servir des pages web dynamiques avec WordPress, une *stack* dite *LAMP* sera installée sur l’instance. LAMP désigne **Linux**, **Apache**, **MariaDB** et **PHP**.
 
-Afin de pouvoir servir des pages web dynamiques avec WordPress, une stack dite *LAMP* sera installée sur l’instance. LAMP signifie ****Linux, ****Apache, ****MariaDB et ****PHP. 
-
-Une fois connecté à votre instance avec SSH, assurez-vous que tous les packages sont à jour :
+Une fois connecté à votre instance via SSH, assurez-vous que tous les paquets sont à jour :
 
 ```bash
 debian@instance:~$ sudo apt update && sudo apt-get upgrade -y
@@ -46,8 +45,8 @@ debian@instance:~$ sudo apt update && sudo apt-get upgrade -y
 
 > [!primary]
 >
-> Comme les progiciels sont régulièrement mis à jour, vous devrez peut-être ajuster les instructions suivantes en fonction des dernières versions.
-
+> Etant donné que les paquets logiciel sont régulièrement mis à jour, vous devrez peut-être ajuster les instructions suivantes en fonction des dernières versions.
+>
 
 Installez les paquets LAMP :
 
@@ -55,7 +54,7 @@ Installez les paquets LAMP :
 debian@instance:~$ sudo apt install apache2 mariadb-server php libapache2-mod-php php-mysql
 ```
 
-### Étape 2 : Configuration du serveur de base de données <a name="sqlconf"></a>
+### Étape 2 : configuration du serveur de base de données <a name="sqlconf"></a>
 
 MariaDB fournit un script pour vous aider dans la configuration initiale et pour appliquer certains paramètres liés à la sécurité.
 
@@ -67,10 +66,10 @@ debian@instance:~$ sudo mysql_secure_installation
 
 Confirmez la première invite en appuyant sur `Entrée`{.action}.
 
-Choisissez ensuite une méthode pour sécuriser les accès à votre serveur de bases de données. 
+Choisissez ensuite une méthode pour sécuriser les accès à votre serveur de bases de données.
 
 ```console
-Passer à l'authentification unix_socket [Y/n]
+Switch to unix_socket authentication [Y/n]
 ```
 
 Il est recommandé d'utiliser la méthode d'authentification proposée à la place de l'accès par mot de passe root. Appuyez sur `y`{.action} puis sur `Entrée`{.action}. (Si vous décidez d'utiliser l'accès utilisateur root, tapez `n`{.action}, puis définissez un mot de passe root.)
@@ -78,66 +77,69 @@ Il est recommandé d'utiliser la méthode d'authentification proposée à la pla
 Entrez `n`{.action} à l'invite suivante :
 
 ```console
-Changer le mot de passe root ? [Y/n]
+Change the root password? [Y/n]
 ```
 
 Les invites suivantes concernant les mesures de sécurité, confirmez-les toutes avec `y`{.action} jusqu'à la fin du script.
 
-Si vous avez configuré l'accès MariaDB de la manière recommandée (*unix_socket*), vous disposez désormais d'un accès root automatique à celui-ci chaque fois que vous êtes connecté à l'instance en tant qu'utilisateur avec des droits élevés. 
+Si vous avez configuré l'accès MariaDB de la façon recommandée (*unix_socket*), vous disposez désormais d'un accès root automatique à celui-ci chaque fois que vous êtes connecté à l'instance en tant qu'utilisateur avec des droits élevés.
 
 Ouvrez le shell MariaDB :
 
 ```bash
 debian@instance:~$ sudo mariadb
 ```
+
 ```mysql
 MariaDB [(none)]> 
 ```
 
-Créer la base de données pour WordPress :
+Créez la base de données pour WordPress :
 
 ```mysql
-MariaDB [(none)]> CREATE DATABASE wordpress ;
+MariaDB [(none)]> CREATE DATABASE wordpress;
 ```
 
 Ensuite, accordez au nouvel utilisateur "wordpress" tous les droits sur cette base de données. Cet utilisateur va accéder à la base de données et effectuer toutes les opérations pour le CMS WordPress. Remplacez `your_password` par un mot de passe fort pour cet utilisateur.
 
 ```mysql
-MariaDB [(none)]> GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED BY 'your_password' WITH GRANT OPTION ;
+MariaDB [(none)]> GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED BY 'your_password' WITH GRANT OPTION;
 ```
 
 > [!primary]
 >
 > Vous aurez besoin de ces identifiants plus tard lors de l’installation de WordPress.
+>
 
 La base de données est maintenant prête à être utilisée avec WordPress. Assurez-vous que les changements sont appliqués pour les prochaines étapes, puis quittez le shell MariaDB :
 
 ```mysql
-MariaDB [(none)]> PRIVILÈGES FLUSH ;
+MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
+
 ```mysql
 MariaDB [(none)]> exit;
 ```
 
-### Étape 3 : Configurer le firewall
+### Étape 3 : configurer le firewall
 
-La configuration d’un pare-feu (*iptables*) permet d’améliorer la sécurité de votre instance WordPress. Ce processus peut être simplifié en utilisant le frontend "Uncomplex Firewall" (UFW) et son ensemble de profils prédéfinis. Installer UFW :
+La configuration d’un pare-feu (*iptables*) permet d’améliorer la sécurité de votre instance WordPress. Ce processus peut être simplifié en utilisant le frontend « Uncomplicated Firewall » (UFW) et son ensemble de profils prédéfinis. Installez UFW :
 
 ```bash
 debian@instance:~$ sudo apt install ufw
 ```
 
-Les profils concernés portent la mention "WWW" dans la liste des applications :
+Les profils concernés portent la mention « WWW » dans la liste des applications :
 
 ```bash
 debian@instance:~$ sudo ufw app list | grep WWW
   WWW
-  Cache WWW
+  WWW Cache
   WWW Full
   WWW Secure
 ```
 
-En choisissant "WWW Full", les connexions sécurisées (port 443) et les requêtes http non sécurisées (port 80) au serveur web seront autorisées.
+En choisissant « WWW Full », les connexions sécurisées (port 443) et les requêtes http non sécurisées (port 80) au serveur web seront autorisées.
 
 Pour voir quels ports sont affectés par un profil particulier, entrez ```sudo ufw app info "profile name"```.
 
@@ -156,51 +158,52 @@ Finalement, vérifiez la configuration et activez les règles de firewall :
 ```bash
 debian@instance:~$ sudo ufw status
 ```
+
 ```bash
 debian@instance:~$ sudo ufw enable
 ```
 
 Vous pouvez aller plus loin avec l’UFW, par exemple si vous souhaitez restreindre les attaques par *déni de service* (DOS) ou empêcher les requêtes par certaines plages d’adresses IP. Reportez-vous à la documentation officielle de l'UFW.
 
-### Étape 4 : Installation de WordPress
+### Étape 4 : installation de WordPress
 
-Rendez-vous sur le site[ officiel de ](https://wordpress.org/download/)WordPress afin de récupérer l’URL** de **téléchargement de la dernière version (au format "tar.gz"). Téléchargez ensuite le fichier :
+Rendez-vous sur le [site officiel de WordPress](https://wordpress.org/download/) afin de récupérer **l’URL de téléchargement** de la dernière version (au format « tar.gz ). Téléchargez ensuite le fichier :
 
 ```bash
 debian@instance:~$ wget https://wordpress.org/latest.tar.gz
 ```
 
-Décompresser l'archive téléchargée :
+Décompressez l'archive téléchargée :
 
 ```bash
-debian@instance:~$ tar zxvf last.tar.gz
+debian@instance:~$ tar zxvf latest.tar.gz
 ```
 
-Votre serveur Apache doit être prêt à fonctionner dès maintenant. Vous pouvez vérifier avec la commande suivante :
+Votre serveur Apache doit être prêt à fonctionner à ce stade. Vous pouvez vérifier avec la commande suivante :
 
 ```bash
 sudo systemctl status apache2
 ```
 
-Vous pouvez également ouvrir `http://ip_of_your_instance` dans un navigateur Web. La page "Apache2 Debian Default Page" devrait s'afficher.
+Vous pouvez également ouvrir `http://ip_de_votre_instance` dans un navigateur Web. La page « Apache2 Debian Default Page » devrait s'afficher.
 
 Les étapes suivantes installeront WordPress en remplaçant le dossier Apache par défaut pour les pages web.
 
-Au lieu d'utiliser le dossier par défaut, vous pouvez également créer un nouvel *hôte* virtuel pour l'installation de WordPress. Ce dernier est utile pour héberger plusieurs sites web, ce qui n'est pas pertinent pour ce tutoriel.
+Au lieu d'utiliser le dossier par défaut, vous pouvez également créer un nouvel *hôte virtuel* pour l'installation de WordPress. Ce dernier est utile pour héberger plusieurs sites web, ce qui n'est pas pertinent pour ce tutoriel.
 
-Supprimer le dossier existant :
+Supprimez le dossier existant :
 
 ```bash
 debian@instance:~$ sudo rm -R /var/www/html/
 ```
 
-Remplacer le dossier du serveur web par défaut par le dossier WordPress :
+Remplacez le dossier du serveur web par défaut par le dossier WordPress :
 
 ```bash
 debian@instance:~$ sudo mv wordpress /var/www/html
 ```
 
-Autoriser le serveur Web à `écrire` dans le dossier :
+Donnez au serveur Web les droits en écriture (`write`) dans le dossier :
 
 ```bash
 debian@instance:~$ sudo chown -R www-data:www-data /var/www/html/
@@ -208,9 +211,9 @@ debian@instance:~$ sudo chown -R www-data:www-data /var/www/html/
 
 Le serveur web est maintenant prêt pour la configuration initiale de WordPress.
 
-### Étape 5 : Configurer WordPress
+### Étape 5 : configurer WordPress
 
-Ouvrez un navigateur Web et connectez-vous au site WordPress en saisissant l'adresse IP de votre instance (ou le nom de domaine si vous en avez déjà [attaché une à l'instance](../../domains/web_hosting_how_to_edit_my_dns_zone/)). Choisissez une langue sur la première page.
+Ouvrez un navigateur Web et connectez-vous au site WordPress en saisissant l'adresse IP de votre instance (ou le nom de domaine si vous en avez déjà [relié un à l'instance](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/)). Choisissez une langue sur la première page.
 
 Utilisez l’assistant de configuration WordPress pour donner accès à votre base de données. Renseignez les informations que vous avez [configurées précédemment](#sqlconf).
 
@@ -224,22 +227,23 @@ Une fois validé, vous pourrez vous connecter à l'espace d'administration de vo
 
 > [!primary]
 >
-> Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification comme "[Let’s Encrypt](https://letsencrypt.org/)" qui propose des certificats gratuits. Vous devrez installer un outil client (comme "Certbot") et configurer Apache. Sans cette étape, votre site ne pourra accepter que des requêtes `http`. 
+> Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification comme [Let’s Encrypt](https://letsencrypt.org/){.external} qui propose des certificats gratuits. Vous devrez installer un outil client (comme « Certbot ») et configurer Apache. Sans cette étape, votre site ne pourra accepter que des requêtes `http`.
+>
 
-### Étape 6 (facultatif) : Activer des connexions sécurisées avec Let’s Encrypt
+### Étape 6 (facultatif) : activer des connexions sécurisées avec Let’s Encrypt
 
 Vérifiez en premier lieu que votre nom de domaine dispose des bons enregistrements dans la zone DNS, c'est-à-dire qu'il pointe vers l'adresse IP de votre instance.
 
-Installez les packages nécessaires pour le client Certbot :
+Installez les paquers nécessaires pour le client Certbot :
 
 ```bash
 debian@instance:~$ sudo apt install certbot python3-certbot-apache
 ```
 
-Obtenez le certificat de votre nom de domaine. (Vous pouvez inclure le sous-domaine "www" en ajoutant `-d www.yourdomainname.ovh`.)
+Obtenez le certificat de votre nom de domaine. (Vous pouvez inclure le sous-domaine « www » en ajoutant `-d www.yourdomainname.ovh`.)
 
 ```bash
-debian@instance:~$ sudo certbot —apache -d votrenomdedomaine.ovh
+debian@instance:~$ sudo certbot --apache -d yourdomainname.ovh
 ```
 
 Vous devrez renseigner une adresse e-mail valide et accepter les conditions d'utilisation.
@@ -248,4 +252,4 @@ Certbot renouvelle automatiquement les certificats. Aucune autre étape n'est re
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
