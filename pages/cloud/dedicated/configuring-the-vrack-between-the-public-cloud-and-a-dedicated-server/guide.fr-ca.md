@@ -17,10 +17,10 @@ Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external} est un réseau
 ## Prérequis
 
 * Avoir créé une [instance Public Cloud OVHcloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/)
-* Avoir activé un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack){.external}. 
-* Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} compatible avec le vRack.
-* Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
-* Avoir accès à votre plage d'adresses IP privées choisie.
+* Avoir activé un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack){.external}
+* Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} compatible avec le vRack
+* Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+* Avoir accès à votre plage d'adresses IP privées choisie
 
 
 ## Instructions
