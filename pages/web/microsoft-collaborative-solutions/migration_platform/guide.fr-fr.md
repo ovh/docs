@@ -1,5 +1,5 @@
 ---
-title: Migrer vos adresses e-mail d'une plaforme e-mail OVHcloud vers une autre
+title: Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre
 slug: migration-email-platform
 excerpt: Découvrez comment migrer les adresses e-mail d'une plateforme Exchange ou E-mail Pro vers une autre plateforme Exchange, E-mail Pro ou MX Plan
 section: Migration
@@ -48,8 +48,8 @@ La migration de vos comptes e-mail se fera en 3 grandes étapes, **Renommer** le
 >
 > Cas particulier:
 >
-> - Si vous devez migrez **un compte Exchange** vers un compte **E-mail Pro**, vous devez vous assurez que vos compteq e-mail n'exède pas les 10Go. Les fonctions collaboratives, la synchronisation des calendriers et contacts  ne sont pas présentes sur E-mail Pro et ne peuvent pas être migrées.
-> - Si vous devez migrez **un compte Exchange ou E-mail Pro** vers un compte **MX Plan**, vous devez vous assurez que votre compte e-mail n'exède pas les 5Go. Les fonctions collaboratives, la synchronisation des calendriers et contacts  ne sont pas présentes sur MX Plan et ne peuvent pas être migrées.
+> - Si vous devez migrer **un compte Exchange** vers un compte **E-mail Pro**, vous devez vous assurer que vos comptes e-mail n'excède pas les 10Go. Les fonctions collaboratives, la synchronisation des calendriers et contacts  ne sont pas présentes sur E-mail Pro et ne peuvent pas être migrées.
+> - Si vous devez migrer **un compte Exchange ou E-mail Pro** vers un compte **MX Plan**, vous devez vous assurer que votre compte e-mail n'excède pas les 5Go. Les fonctions collaboratives, la synchronisation des calendriers et contacts  ne sont pas présentes sur MX Plan et ne peuvent pas être migrées.
 
 #### Renommer 
 
