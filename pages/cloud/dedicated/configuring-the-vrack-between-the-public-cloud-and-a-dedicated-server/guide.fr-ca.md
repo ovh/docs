@@ -31,7 +31,7 @@ Une fois votre [projet Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/cre
 
 1. En commandant un service vRack si vous n’en avez pas un, ce produit est gratuit et la mise à disposition ne prends que quelques minutes 
 
-Allez dans le menu `Bare Metal Cloud`{.action} et cliquez sur le bouton `Commander`{.action}. Sous le menu Commander, cliquez sur l'option `vRack`{.action} .
+Allez dans le menu `Bare Metal Cloud`{.action} et cliquez sur le bouton `Commander`{.action}. Sous ce menu, cliquez sur l'option `vRack`{.action}
 
 ![Commander le vrack](images/orderingvrack.png){.thumbnail}
 
