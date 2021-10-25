@@ -30,22 +30,15 @@ This lifecycle policy is provided to help clients understand the underlying reas
 ### Commercial range concerned
 
 Hosted Private Cloud
-- DC2011
-- DC2013
-- DC2014
-- DC2016
-- SDDC2016
-- SDDC2018
-- Premier
-
+    DC2011 & DC2013 (AMD Opteron, AMD Bulldozer)
+    DC2014 & DC2016 (AMD PileDriver)
+    SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell)
+    SDDC2018 (Intel Broadwell, Intel Haswell)
+    Premier (Intel Cascade Lake)
 Managed Bare Metal
-- Essentials
+    Essentials (Intel Broadwell)
 
 ## Lifecycle timeframe and definitions
-
-### Timeframe
-
-![Typical lifecycle](images/01_lifecycle_pcc.png){.thumbnail}
 
 ### Definitions
 
@@ -87,6 +80,10 @@ Following the End of Life, the servers concerned will be shut down definitively.
 
 Clients should anticipate the range change by testing in advance and making sure their configuration and software are compatible with the range they are upgrading to.
 
+### Timeframe
+
+![Typical lifecycle](images/01_lifecycle_pcc.png){.thumbnail}
+
 ### Summary
 
 This table presents a summary of the different phases of the lifecycle of the service. The impact for each commercial range may differ.
@@ -118,7 +115,7 @@ This table presents a summary of the different phases of the lifecycle of the se
 | Premier | 20/07/2020 |  |  |  |  |
 | Essentials | 18/11/2020 |  |  |  |  |
 
-### Hosts (compute)
+### Datastores (storage)
 
 | Datastore | General Availability | End of Sales | End of Growth | End of Support | End of Life |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
@@ -136,18 +133,18 @@ This table presents a summary of the different phases of the lifecycle of the se
 
 ### VMware lifecycle policy
 
-To know the lifecycle policy of VMware products, please refer to the editor's publication accessible at the following url:
-https://lifecycle.vmware.com/#/
+To know the lifecycle policy of VMware products, please refer to the editor's publication accessible at the following url :
+<https://lifecycle.vmware.com/#/>
 
 ### Veeam Backup & Replication lifecycle policy
 
-To know the lifecycle policy of Veeam products, please refer to the editor's publications accessible at the following urls:
-https://www.veeam.com/product-lifecycle.html and https://www.veeam.com/releasestatus_rn.pdf
+To know the lifecycle policy of Veeam products, please refer to the editor's publications accessible at the following urls :
+<https://www.veeam.com/product-lifecycle.html and <https://www.veeam.com/releasestatus_rn.pdf>
 
 ### Zerto lifecycle policy
 
-To know the lifecycle policy of Zerto products, please refer to the editor's publication accessible at the following url:
-http://s3.amazonaws.com/zertodownload_docs/Latest/Zerto+Virtual+Replication+Product+Version+Lifecycle+Matrix.pdf
+To know the lifecycle policy of Zerto products, please refer to the editor's publication accessible at the following url :
+<http://s3.amazonaws.com/zertodownload_docs/Latest/Zerto+Virtual+Replication+Product+Version+Lifecycle+Matrix.pdf>
 
 ## Go further
 
