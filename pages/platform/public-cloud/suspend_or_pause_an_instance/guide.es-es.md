@@ -70,7 +70,7 @@ Para ver el snapshot, acceda al menú de la izquierda y haga clic en `Instance B
 
 #### Desde la interfaz Horizon
 
-Para continuar, debe [crear un acceso a Horizon](..crear_un_acceso_a_horizon/) y [conectarse al panel Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Para continuar, debe [crear un acceso a Horizon](../crear_un_acceso_a_horizon/) y [conectarse al panel Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Si ha desplegado instancias en diferentes regiones, asegúrese de que se encuentre en la región adecuada. Puede comprobarlo en la esquina superior izquierda de Horizon.
 

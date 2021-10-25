@@ -49,7 +49,7 @@ A first vSwitch exists but only has a `vmnic2` interface.
 
 > [!primary]
 >
-> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 ) or via the OVHcloud API.
 >
 
@@ -138,7 +138,7 @@ To configure the first usable IP address, you must edit the network configuratio
 
 #### Configuration example of a client VM on Debian
 
-File contents `/etc/network/interfaces`:
+Content of the file `/etc/network/interfaces`:
 
 ```bash
 auto lo ens18

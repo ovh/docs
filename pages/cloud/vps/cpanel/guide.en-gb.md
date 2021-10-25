@@ -5,7 +5,7 @@ excerpt: 'Find out how to instantiate a VPS with the pre-installed cPanel applic
 section: 'Advanced usage'
 ---
 
-**Last updated 22nd September 2021**
+**Last updated 14th October 2021**
 
 ## Objective
 

@@ -103,7 +103,7 @@ Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez p
 
 - Distributions anciennes :
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -118,7 +118,7 @@ iface eth0 inet static
 
 - Distributions récentes :
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -133,7 +133,7 @@ iface eth0 inet static
 
 Remplacez également `eth0` si votre système utilise des noms d'interface réseau prévisibles. Vous pouvez trouver les noms d'interface réseau à l'aide de la commande suivante :
 
-```sh
+```bash
 ls /sys/class/net
 ```
 
@@ -143,7 +143,7 @@ Enregistrez et fermez le fichier, puis redémarrez la machine virtuelle.
 
 Ouvrez un terminal sur votre machine virtuelle. Une fois connecté, ouvrez le fichier de configuration réseau de la machine virtuelle. Celui-ci est situé dans `/etc/network/interfaces`. Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez pas de remplacer nos variables par vos propres valeurs :
 
-```sh
+```console
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
@@ -162,7 +162,7 @@ Maintenant, enregistrez et fermez le fichier.
 
 Ensuite, ouvrez le fichier de routage de la machine virtuelle. Celui-ci se trouve dans `/etc/sysconfig/network-scripts/route-eth0`. Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez pas de remplacer nos variables par vos propres valeurs :
 
-```bash
+```console
 GATEWAY_IP dev eth0
 default via GATEWAY_IP dev eth0
 ```
@@ -178,7 +178,7 @@ Enregistrez et fermez le fichier, puis redémarrez la machine virtuelle.
 
 Ouvrez un terminal sur votre machine virtuelle. Une fois connecté, ouvrez le fichier de configuration réseau de la machine virtuelle, qui se trouve dans `/etc/sysconfig/network-scripts/ifcfg-(nom de l'interface)`. Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez pas de remplacer nos variables par vos propres valeurs :
 
-```sh
+```console
 DEVICE=(interface-name)
 BOOTPROTO=none
 ONBOOT=yes
@@ -207,7 +207,7 @@ Enregistrez et fermez le fichier.
 
 Ensuite, ouvrez le fichier de routage de la machine virtuelle. Celui-ci se trouve dans `/etc/sysconfig/network/resolv.conf`.
 
-```bash
+```console
 nameserver 213.186.33.99
 ```
 
@@ -217,7 +217,7 @@ Après avoir enregistré et fermé le fichier, redémarrez votre réseau ou votr
 
 Ouvrez un terminal sur votre machine virtuelle. Une fois connecté, ouvrez le fichier de configuration réseau de la machine virtuelle, situé dans le dossier `/etc/rc.conf`. Modifiez le fichier pour qu'il reflète la configuration ci-dessous. Dans cet exemple, le nom de l'interface est « em0 ». Vous pouvez le modifier si nécessaire.
 
-```bash
+```console
 ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
 static_routes="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
@@ -226,7 +226,7 @@ route_net2="default GATEWAY_IP"
 
 Enregistrez et fermez le fichier. Ensuite, éditez le fichier `/etc/resolv.conf`. Créez-le si nécessaire.
 
-```sh
+```console
 nameserver 213.186.33.99
 ```
 
@@ -236,13 +236,13 @@ Enregistrez et fermez le fichier, puis redémarrez la machine virtuelle.
 
 En premier lieu, établissez une connexion SSH à votre machine virtuelle et ouvrez le fichier de configuration réseau situé dans `/etc/netplan/` à l'aide de la commande suivante. À des fins de démonstration, notre fichier s'appelle « 50-cloud-init.yaml ».
 
-```sh
+```bash
 # nano /etc/netplan/50-cloud-init.yaml
 ```
 
 Une fois le fichier ouvert, modifiez-le avec le code suivant :
 
-```sh
+```yaml
 network:
     ethernets:
         (nom-interface) :
@@ -262,7 +262,7 @@ network:
 
 Une fois les modifications effectuées, enregistrez et fermez le fichier, puis exécutez la commande suivante :
 
-```sh
+```bash
 # netplan try
 Warning: Stopping systemd-networkd.service, but it can still be activated by:
   systemd-networkd.socket

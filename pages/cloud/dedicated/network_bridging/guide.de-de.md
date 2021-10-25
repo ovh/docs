@@ -108,7 +108,7 @@ Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (De
 
 - Ältere Distributionen:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -123,7 +123,7 @@ iface eth0 inet static
 
 - Aktuelle Distributionen:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -138,7 +138,7 @@ iface eth0 inet static
 
 Ersetzen Sie auch `eth0`, wenn Ihr System *Predictible Network Interface Names* verwendet. Sie können die Netzwerkinterface-Namen mit folgendem Befehl finden:
 
-```sh
+```bash
 ls /sys/class/net
 ```
 
@@ -148,7 +148,7 @@ Speichern und schließen Sie die Datei und starten Sie den Netzwerkdienst oder d
 
 Öffnen Sie ein Terminal auf Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/network/interfaces` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.)
 
-```sh
+```console
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
@@ -166,7 +166,7 @@ HWADDR=MY:VI:RT:UA:LM:AC
 Speichern und schließen Sie die Datei.<br>
 Öffnen Sie anschließend die Routing-Datei der VM, in `/etc/sysconfig/network-scripts/route-eth0`. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.)
 
-```bash
+```console
 GATEWAY_IP dev eth0
 default via GATEWAY_IP dev eth0
 ```
@@ -182,7 +182,7 @@ Speichern und schließen Sie die Datei und starten Sie die VM neu.
 
 Öffnen Sie ein Terminal auf Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/sysconfig/network-scripts/ifcfg-(Interface_Name)` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.)
 
-```sh
+```console
 DEVICE=(interface-name)
 BOOTPROTO=none
 ONBOOT=yes
@@ -200,7 +200,7 @@ HWADDR=MY:VI:RT:UA:LM:AC
 Speichern und schließen Sie die Datei.<br>
 Öffnen Sie anschließend die Routing-Datei der VM, die sich in `/etc/sysconfig/network-scripts/route-(Interface_Name)` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.)
 
-```bash
+```console
 GATEWAY_IP - 169.254.10.254 (interface-name)
 NETWORK_GW_VM - 255.255.255.0 (interface-name)
 default GATEWAY_IP
@@ -209,7 +209,7 @@ default GATEWAY_IP
 Speichern und schließen Sie die Datei.<br>
 Öffnen Sie anschließend die DNS-Konfigurationsdatei der VM, die sich unter `/etc/sysconfig/network/resolv.conf` befindet und fügen Sie die folgende Zeile ein:
 
-```bash
+```console
 nameserver 213.186.33.99
 ```
 
@@ -219,7 +219,7 @@ Speichern und schließen Sie die Datei und starten Sie den Netzwerkdienst oder d
 
 Öffnen Sie ein Terminal auf Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/rc.conf` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.) In diesem Beispiel lautet der Name des Interface "em0". Ersetzen Sie diesen Wert nötigenfalls.
 
-```bash
+```console
 ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
 static_routes="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
@@ -229,7 +229,7 @@ route_net2="default GATEWAY_IP"
 Speichern und schließen Sie die Datei.<br>
 Öffnen/erstellen Sie anschließend die Datei `/etc/resolv.conf` und fügen Sie die folgende Zeile ein:
 
-```sh
+```console
 nameserver 213.186.33.99
 ```
 
@@ -239,13 +239,13 @@ Speichern und schließen Sie die Datei und starten Sie die VM neu.
 
 Öffnen Sie ein Terminal auf Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/netplan/` befindet mit folgendem Befehl. Zu Demonstrationszwecken heißt unsere Datei "50-cloud-init.yaml".
 
-```sh
+```bash
 # nano /etc/netplan/50-cloud-init.yaml
 ```
 
 Wenn die Datei zum Bearbeiten geöffnet ist, passen Sie die folgenden Zeilen an:
 
-```sh
+```yaml
 network:
     ethernets:
         (interface-name):
@@ -265,7 +265,7 @@ network:
 
 Speichern und schließen Sie die Datei und führen Sie folgenden Befehl aus:
 
-```sh
+```bash
 # netplan try
 Warning: Stopping systemd-networkd.service, but it can still be activated by:
   systemd-networkd.socket

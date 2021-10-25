@@ -5,7 +5,7 @@ excerpt: 'Find out how to instantiate a VPS with the pre-installed cPanel applic
 section: 'Advanced usage'
 ---
 
-**Last updated 22nd September 2021**
+**Last updated 14th October 2021**
 
 ## Objective
 
@@ -67,7 +67,7 @@ Now you should be able to login to WHM and SSH using the root user with the pass
 
 We recommend that you take further additional steps to ensure you secure your WHM and VPS. For this we recommend reading the recommendations provided by cPanel [here](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
 
-Furthermore we recommend setting up the [OVHcloud network firewall](../../dedicated/firewall-network/) and [setup a backup solution](../tips-for-securing-a-vps/#backing-up-your-system-and-your-data) on your VPS.
+Furthermore we recommend setting up the [OVHcloud network firewall](../../dedicated/firewall-network/) and [set up a backup solution](../tips-for-securing-a-vps/#backing-up-your-system-and-your-data) on your VPS.
 
 ## Go further
 

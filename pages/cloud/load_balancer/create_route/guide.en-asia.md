@@ -385,7 +385,7 @@ This call returns the list of ID numbers of routes defined for HTTP protocol. Yo
 
 #### Create a route.
 
-With this call, you can create a route. Only the action is mandatory. A route can be attached to and detached from a front-end. You can create up to 20 routes on an OVH Load Balancer. This call returns the route created, if it is successful. You will need to re-deploy your OVH Load Balancer to apply the changes.
+With this call, you can create a route. Only the action is mandatory. A route can be attached to and detached from a front-end. You can create up to 50 routes on an OVH Load Balancer. This call returns the route created, if it is successful. You will need to re-deploy your OVH Load Balancer to apply the changes.
 
 > [!api]
 >

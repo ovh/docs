@@ -137,7 +137,7 @@ To configure the first usable IP address, you must edit the network configuratio
 
 #### Configuration example of a client VM on Debian
 
-File contents `/etc/network/interfaces`:
+Content of the file `/etc/network/interfaces`:
 
 ```bash
 auto lo ens18

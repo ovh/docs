@@ -229,7 +229,7 @@ At this point, restart the network services or restart the server.
 
 #### Configuration example of a client VM on Debian
 
-File contents `/etc/network/interfaces`:
+Content of the file `/etc/network/interfaces`:
 
 ```bash
 auto lo ens18

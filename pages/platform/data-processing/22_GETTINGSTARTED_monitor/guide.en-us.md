@@ -53,8 +53,9 @@ After you submit a job to the Data Processing platform, follow these steps to mo
 - Copy and save the metrics token that is now displayed in the popup.
 - Open [https://grafana.dataconvergence.ovh.com:3000/d/VhF0A_Gnz/ovhcloud-data-processing-overview?orgId=2](https://grafana.dataconvergence.ovh.com:3000/d/VhF0A_Gnz/ovhcloud-data-processing-overview?orgId=2) and login with your OVHcloud account.
 - Paste the metrics token that you copied and saved before in the `token`{.action} field.
-- You can now select a job ID from the list of all the jobs you have submitted so far to see its Grafana dashboard.
-
+- You should now be able to see your job's dashboard if your job ID is already set in the `jobId`{.action} field.
+  Otherwise, you can simply write the ID of the jobs you want to monitor in this field.
+  
 ![grafana charts](images/grafanadashboard.png){.thumbnail}
 
 ## Go further
