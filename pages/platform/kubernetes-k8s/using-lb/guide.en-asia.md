@@ -6,7 +6,7 @@ section: Getting started
 ---
 
 
-**Last updated 22<sup>st</sup> Mar, 2021.**
+**Last updated 19<sup>th</sup> October 2021.**
 
 <style>
  pre {
@@ -38,6 +38,11 @@ In this tutorial we are explaining how to deploy services on OVHcloud Managed Ku
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
+> [!warning]
+> By deploying a __Network Load Balancer__ resource in your Managed Kubernetes Service, we will deploy a public Load Balancer allowing routing from the public traffic to your K8s cluster.
+> This resource is hourly charged. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#network)
+>
+
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
 
 When you begin to use Kubernetes for real applications, one of the first questions is how to get external traffic into your cluster. The [official doc](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types){.external} gives you a good but rather dry explanation on the topic, but here we are trying to explain the concepts in a minimal, need-to-know way.
@@ -54,7 +59,7 @@ There are several ways to route the external traffic into your cluster:
 
 The default Kubernetes `ServiceType` is `ClusterIp`, that exposes the `Service` on a cluster-internal IP. To reach the `ClusterIp` from an external computer, you can open a Kubernetes proxy between the external computer and the cluster.
 
-You can use `kubectl` to create such a proxy. When the proxy is up, you're directly connected to the cluster, and you can use the `Services` internal IP (ClusterIp)
+You can use `kubectl` to create such a proxy. When the proxy is up, you're directly connected to the cluster, and you can use the `Services` internal IP (ClusterIp).
 
 ![ClusterIp and kubectl proxy](images/using-lb-ClusterIp.jpg){.thumbnail}
 
@@ -66,7 +71,7 @@ Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP
 
 ![NodePort](images/using-lb-NodePort.jpg){.thumbnail}
 
-It's rather cumbersome to use `NodePort` `Services` in production. As you are using non-standard ports, you often need to set-up an external load balancer that listen in standard ports and redirects the traffic to  the `<NodeIp>:<NodePort>`.
+It's rather cumbersome to use `NodePort` `Services` in production. As you are using non-standard ports, you often need to set up an external load balancer that listen in standard ports and redirects the traffic to  the `<NodeIp>:<NodePort>`.
 
 ### Exposing services as LoadBalancer
 
@@ -74,13 +79,13 @@ Declaring a service of type `LoadBalancer` exposes it externally using a cloud p
 
 ![LoadBalancer](images/using-lb-LoadBalancer.jpg){.thumbnail}
 
-The `LoadBalancer` is the best option for a production environnement, with two caveats:
+The `LoadBalancer` is the best option for a production environment, with two caveats:
 
-- Every `Service` of type `LoadBalancer` you deploy will get it's own IP.
+- Every `Service` of type `LoadBalancer` you deploy will get its own IP.
 - The `LoadBalancer` is usually billed by the number of exposed services, it can be expensive.
 
 > [!primary]
-> There is a limit of 16 active `LoadBalancer` per Openstack project (also named Openstack tenant). This limit can be exceptionally raised upon request through our support team
+> There is a limit of 200 active `LoadBalancer` per Openstack project (also named Openstack tenant). This limit can be exceptionally raised upon request through our support team.
 
 ### Supported annotations
 
@@ -94,7 +99,7 @@ There are several annotations available to customize your load balancer:
 
 ### What about Ingress
 
-According to the [official documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/){.external}, an `Ingress` is an API object that manages external access to the services in a cluster, typically HTTP. Whats the difference with the `LoadBalancer` or `NodePort`?
+According to the [official documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/){.external}, an `Ingress` is an API object that manages external access to the services in a cluster, typically HTTP. What is the difference with the `LoadBalancer` or `NodePort`?
 
 `Ingress` isn't a type of `Service`, but an object that acts as a [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy){.external}, and single entrypoint to your cluster that routes the request to the different services. The most basic `Ingress` is the [NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx){.external}, where the NGINX take the role of reverse proxy, but also functions as SSL.
 
@@ -104,7 +109,7 @@ The main advance of using an `Ingress` behind a `LoadBalancer` is the cost: you 
 
 ## Deploying LoadBalancer Services on OVHcloud Managed Kubernetes clusters
 
-In our OVHcloud Managed Kubernetes we propose a load balancing service enabling you to use `LoadBalancer` `ServiceType`. There is a limit of 16 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request through our support team
+In our OVHcloud Managed Kubernetes we propose a load balancing service enabling you to use `LoadBalancer` `ServiceType`.
 
 ## Deploying a Hello World LoadBalancer service
 
@@ -164,7 +169,7 @@ deployment.apps/hello-world-deployment created
 </code></pre>
 
 > [!primary]
-> The application you have just deployed is a simple nginx server with a single static *Hello World* page. 
+> The application you have just deployed is a simple nginx server with a single static *Hello World* page.
 > Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/)
 
 ### List the services
@@ -178,16 +183,16 @@ kubectl get service hello-world -w
 You should see your newly created service:
 
 <pre class="console"><code>$ kubectl get services
-NAME          TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)                      AGE
-hello-world   LoadBalancer   10.3.81.234   &lt;pending>                          80:31699/TCP              9s
+NAME          TYPE           CLUSTER-IP    EXTERNAL-IP     PORT(S)            AGE
+hello-world   LoadBalancer   10.3.81.234   <pending>       80:31699/TCP       9s
 </code></pre>
 
-As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `&lt;pending>` `EXTERNAL-IP`.
+As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `<pending> EXTERNAL-IP`.
 
 If you try again in a few minutes you should get an `EXTERNAL-IP`:
 
 <pre class="console"><code>$ kubectl get service hello-world
-NAME          TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)        AGE
+NAME          TYPE           CLUSTER-IP    EXTERNAL-IP       PORT(S)        AGE
 hello-world   LoadBalancer   10.3.81.234   xxx.xxx.xxx.xxx   80:31699/TCP   4m
 </code></pre>
 
@@ -223,7 +228,7 @@ Then, you can delete the deployment:
 kubectl delete deploy hello-world-deployment
 ```
 
-And now if you list you deployment you will find no resources:
+And now if you list your deployment you will find no resource:
 
 <pre class="console"><code>$ kubectl delete deploy hello-world-deployment
 deployment.extensions "hello-world-deployment" deleted
