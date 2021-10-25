@@ -5,7 +5,7 @@ order: 2
 section: Get Started
 ---
 
-**Last updated 29th July 2019**
+**Last updated 25th October 2021**
 
 ## Objective
 
@@ -86,8 +86,7 @@ Specifying correct numeric suffix type is the only way to generate numeric Widge
 
 ![Numeric widget](images/bytes.png){.thumbnail}
 
-
-Our platform limits the usage of IP adresses as field keys. IP adresses have a high cardinality and thus are not allowed to be use as keys (of course they are supported and enriched as values as you can see above). If you use an IP address as key, it will be changed. For example:
+Our platform limits the usage of IP adresses as field keys. IP addresses have a high cardinality and thus are not allowed to be used as keys (of course they are supported and enriched as values, as you can see above). If you use an IP address as key, it will be changed. For example:
 
 ```json
 {  
