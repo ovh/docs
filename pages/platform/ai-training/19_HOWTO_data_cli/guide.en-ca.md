@@ -269,4 +269,4 @@ ovhai data delete GRA my-container file1
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
