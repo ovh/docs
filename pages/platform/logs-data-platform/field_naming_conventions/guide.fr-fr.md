@@ -86,6 +86,34 @@ Specifying correct numeric suffix type is the only way to generate numeric Widge
 
 ![Numeric widget](images/bytes.png){.thumbnail}
 
+
+Our platform limits the usage of IP adresses as field keys. IP adresses have a high cardinality and thus are not allowed to be use as keys (of course they are supported and enriched as values as you can see above). If you use an IP address as key, it will be changed. For example:
+
+```json
+{  
+   "version":"1.1",
+   "host":"my_host",
+   "_some_user_id_float":123,
+   "short_message":"A short message that can save your life",
+   "192.168.1.1":"SSL Handshake Failures"
+}
+```
+
+will become:
+
+```json
+{  
+   "version":"1.1",
+   "host":"my_host",
+   "_some_user_id_float":123,
+   "short_message":"A short message that can save your life",
+   "invalid_ip_fields":"192.168.1.1",
+   "invalid_ip_fields_values":"SSL Handshake Failures",
+   "ovh_warn_ip_as_field":"One of your field name is an IP"
+}
+```
+
+
 So this is everything you need to know to send valid messages format and not shoot yourself in the foot. If you have any question you can always reach us [on the community hub](https://community.ovh.com/c/platform/data-platforms){.external}.
 
 Happy Logging
