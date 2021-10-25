@@ -150,4 +150,4 @@ From the list of **jobs** you can list the available actions at the far right of
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
