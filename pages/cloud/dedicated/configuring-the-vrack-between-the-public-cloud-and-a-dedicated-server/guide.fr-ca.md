@@ -9,17 +9,17 @@ section: vRack
 
 ## Objectif
 
-Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external} est un réseau privé qui vous permet de configurer l'adressage entre deux ou plusieurs [serveurs dédiés](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} OVHcloud. Mais il vous permet également d'ajouter des [instances Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} à votre réseau privé afin de créer une infrastructure de ressources physiques et virtuelles.
+Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) est un réseau privé qui vous permet de configurer l'adressage entre deux ou plusieurs [serveurs dédiés](https://www.ovh.com/ca/fr/serveurs_dedies/) OVHcloud. Mais il vous permet également d'ajouter des [instances Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/) à votre réseau privé afin de créer une infrastructure de ressources physiques et virtuelles.
 
-**Ce guide vous montre comment configurer le réseau privé entre une [instance Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance){.external} et un [serveur dédié](https://www.ovhcloud.com/en-ca/bare-metal/){.external}.**
+**Ce guide vous montre comment configurer le réseau privé entre une [instance Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) et un [serveur dédié](https://www.ovhcloud.com/en-ca/bare-metal/).**
 
 
 ## Prérequis
 
 * Avoir créé une [instance Public Cloud OVHcloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/)
-* Avoir activé un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack){.external}
-* Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} compatible avec le vRack
-* Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+* Avoir activé un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack)
+* Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/) compatible avec le vRack
+* Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 * une plage d'adresses IP privées de votre choix
 
 ## Instructions
@@ -58,7 +58,7 @@ Deux situations peuvent se présenter à vous :
 
 #### Cas d’une nouvelle instance
 
-Si vous avez besoin d’aide, consultez le guide : [Créer une instance](../premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) Public Cloud. Lors de la création d’une instance, vous pourrez spécifier, durant l’étape 4, un réseau privé dans lequel intégrer votre instance. Choisissez alors, dans le menu déroulant présenté, votre vRack précédemment créé.
+Si vous avez besoin d’aide, consultez le guide : [Créer une instance](../premiers-pas-instance-public-cloud/#etape-3-creer-une-instance){.external} Public Cloud. Lors de la création d’une instance, vous pourrez spécifier, durant l’étape 4, un réseau privé dans lequel intégrer votre instance. Choisissez alors, dans le menu déroulant présenté, votre vRack précédemment créé.
 
 #### Cas d’une instance déjà existante
 
