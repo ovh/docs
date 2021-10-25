@@ -28,7 +28,7 @@ order: 7
  }
 </style>
 
-**Last updated March 25<sup>th</sup>, 2020.**
+**Last updated 19<sup>th</sup> October 2021.**
 
 In this tutorial we are going to guide you with the resize of [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) (PVs) on your OVHcloud Managed Kubernetes Service.
 
@@ -45,6 +45,11 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 You also need to know how PVs are handled on OVHcloud Managed Kubernetes service, please refer to the [Persistent Volumes on OVHcloud Managed Kubernetes](../ovh-kubernetes-persistent-volumes/) guide.
 
+> [!warning]
+> By creating a __Persistent Volumes__ resource in your Managed Kubernetes Service, we will create for you a volume from the __Block Storage__ category.
+> This volume is visible through the OVHcloud Manager and is hourly charged. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#storage)
+>
+>
 ## Let's make a Persistent Volume Claim
 
 To test the PVs resizing, we will need a PV associated to the cluster, i.e. we need to deploy a service making a PVC. To keep thing simple, we choose to deploy a single instance of [MySQL](https://www.mysql.com/).
@@ -85,7 +90,7 @@ metadata:
   name: mysql
 spec:
   ports:
-  - port: 3306
+    - port: 3306
   selector:
     app: mysql
   clusterIP: None
@@ -107,22 +112,22 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: mysql:5.6
-        name: mysql
-        env:
-          # Use secret in real usage
-        - name: MYSQL_ROOT_PASSWORD
-          value: password
-        ports:
-        - containerPort: 3306
+        - image: mysql:5.6
           name: mysql
-        volumeMounts:
-        - name: mysql-persistent-storage
-          mountPath: /var/lib/mysql
+          env:
+            # Use secret in real usage
+            - name: MYSQL_ROOT_PASSWORD
+              value: password
+          ports:
+            - containerPort: 3306
+              name: mysql
+          volumeMounts:
+            - name: mysql-persistent-storage
+              mountPath: /var/lib/mysql
       volumes:
-      - name: mysql-persistent-storage
-        persistentVolumeClaim:
-          claimName: mysql-pv-claim
+        - name: mysql-persistent-storage
+          persistentVolumeClaim:
+            claimName: mysql-pv-claim
 ```
 
 And we deploy and verify it:
