@@ -6,7 +6,7 @@ section: Tutorials
 order: 6
 ---
 
-**Last updated March 25<sup>th,</sup> 2020.**
+**Last updated 19<sup>th</sup> October 2021.**
 
 <style>
  pre {
@@ -38,19 +38,24 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 It also supposes you have read our [Persistent Volumes on OVHcloud Managed Kubernetes](../ovh-kubernetes-persistent-volumes) guide.
 
+> [!warning]
+> By creating a __Persistent Volumes__ resource in your Managed Kubernetes Service, we will create for you a volume from the __Block Storage__ category.
+> This volume is visible through the OVHcloud Manager and is hourly charged. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#storage)
+>
+
 ## Persistent Volumes (PV) and Persistent Volume Claims (PVC)
 
 As the [official documentation](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) states:
 
-> A `PersistentVolume` (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes. It is a resource in the cluster just like a node is a cluster resource.
->
-> A `PersistentVolumeClaim` (PVC) is a request for storage by a user. It is similar to a pod. Pods consume node resources and PVCs consume PV resources. Pods can request specific levels of resources (CPU and Memory). Claims can request specific size and access modes (e.g., can be mounted once read/write or many times read-only).
+- A `PersistentVolume` (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes. It is a resource in the cluster just like a node is a cluster resource.
+- A `PersistentVolumeClaim` (PVC) is a request for storage by a user. It is similar to a pod. Pods consume node resources and PVCs consume PV resources. Pods can request specific levels of resources (CPU and Memory). Claims can request specific size and access modes (e.g., can be mounted once read/write or many times read-only).
 
-Or, if you prefer an analogy, **PVC are to PV like pods are to nodes**. PVC consume abstract storage resources (the PVs) as Pods consume node resources.
+Or, if you prefer an analogy, **PVC are to PV like pods are to nodes**.  
+PVC consume abstract storage resources (the PVs) as Pods consume node resources.
 
 ## So you want some persistent storage on your cluster
 
-Let's say you need some persistent storage on your cluster, some kind of network storage (for OVHcloud Managed Kubernetes that currently means a storage based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}. In Kubernetes terms you will need two objects:  a `PersistentVolumeClaim` and its associated `PersistentVolume`.
+Let's say you need some persistent storage on your cluster, some kind of network storage for OVHcloud Managed Kubernetes Service that currently means a storage based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}. In Kubernetes terms you will need two objects:  a `PersistentVolumeClaim` and its associated `PersistentVolume`.
 
 How do you get them? You simply need to create the PVC object in your cluster. Kubernetes will see your claim and, according to its available resources, allocate a PV corresponding to your claim.
 
@@ -71,9 +76,6 @@ spec:
       storage: 10Gi
   storageClassName: csi-cinder-high-speed
 ```
-
-> [!warning]
-> For Kubernetes clusters running in versions 1.13.x and 1.14.x the storageClassName should be: cinder-high-speed.
 
 And apply it to your cluster:
 
@@ -113,15 +115,15 @@ metadata:
   name: test-pvc-pod
 spec:
   containers:
-    - name: myfrontend
-      image: nginx
-      volumeMounts:
-      - mountPath: "/var/www/html"
-        name: test-volume
+  - name: myfrontend
+    image: nginx
+    volumeMounts:
+    - mountPath: "/var/www/html"
+      name: test-volume
   volumes:
-    - name: test-volume
-      persistentVolumeClaim:
-        claimName: test-pvc
+  - name: test-volume
+    persistentVolumeClaim:
+      claimName: test-pvc
 ```
 
 And apply it to the cluster:
@@ -235,7 +237,7 @@ And patch it to change its reclaim policy:
 kubectl patch pv <your-pv-name> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
 ```
 
-where &lt;your-pv-name> is the name of your chosen PersistentVolume.
+Where `<your-pv-name>` is the name of your chosen PersistentVolume.
 
 Now you can verify that the PV has the right policy:
 
