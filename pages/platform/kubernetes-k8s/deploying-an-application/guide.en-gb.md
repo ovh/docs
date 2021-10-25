@@ -39,6 +39,10 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 - at least one node on the cluster (see the [ordering a node](../adding-nodes/) guide for details) 
 - a well configured  `kubectl` (see the [configuring kubectl](../configuring-kubectl/) guide for details) 
 
+> [!warning]
+> When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your K8S application.
+> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#network)
+
 ## Instructions
 
 ### Step 1 - Deploy your first application

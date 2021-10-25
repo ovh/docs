@@ -39,9 +39,8 @@ In this tutorial we are explaining how to deploy services on OVHcloud Managed Ku
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 > [!warning]
-> By deploying a __Network Load Balancer__ resource in your Managed Kubernetes Service, we will deploy a public Load Balancer allowing routing from the public traffic to your K8s cluster.
-> This resource is hourly charged. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#network)
->
+> When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your K8S application.
+> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#network)
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
 
@@ -71,11 +70,11 @@ Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP
 
 ![NodePort](images/using-lb-NodePort.jpg){.thumbnail}
 
-It's rather cumbersome to use `NodePort` `Services` in production. As you are using non-standard ports, you often need to set up an external load balancer that listen in standard ports and redirects the traffic to  the `<NodeIp>:<NodePort>`.
+It's rather cumbersome to use `NodePort` `Services` in production. As you are using non-standard ports, you often need to set up an external load balancer that listens on standard ports and redirects the traffic to the `<NodeIp>:<NodePort>`.
 
 ### Exposing services as LoadBalancer
 
-Declaring a service of type `LoadBalancer` exposes it externally using a cloud provider’s load balancer. The cloud provider will provision a load balancer for the `Service`, and map it to its automatically assigned `NodePort`.How the traffic from that external load balancer is routed to the `Service` pods depends on the cluster provider.
+Declaring a service of type `LoadBalancer` exposes it externally using a cloud provider’s load balancer. The cloud provider will provision a load balancer for the `Service`, and map it to its automatically assigned `NodePort`. How the traffic from that external load balancer is routed to the `Service` pods depends on the cluster provider.
 
 ![LoadBalancer](images/using-lb-LoadBalancer.jpg){.thumbnail}
 

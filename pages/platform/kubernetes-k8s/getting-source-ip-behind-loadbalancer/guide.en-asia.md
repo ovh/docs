@@ -34,9 +34,8 @@ section: Tutorials
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and you have deployed there an application using the OVHcloud Managed Kubernetes LoadBalancer. If you want to know more on those topics, please look at the [using the OVHcloud Managed Kubernetes LoadBalancer](../using-lb/) documentation.
 
 > [!warning]
-> By deploying a __Network Load Balancer__ resource in your Managed Kubernetes Service, we will deploy a public Load Balancer allowing routing from the public traffic to your K8s cluster.
-> This resource is hourly charged. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#network)
->
+> When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your K8S application.
+> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#network)
 
 ## The problem
 

@@ -13,9 +13,8 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 > [!warning]
-> By creating a __Persistent Volumes__ resource in your Managed Kubernetes Service, we will create for you a volume from the __Block Storage__ category.
-> This volume is visible through the OVHcloud Manager and is hourly charged. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#storage)
->
+> When a __Persistent Volumes__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it.
+> This volume is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#storage)
 
 ## Persistent Volumes
 
