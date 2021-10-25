@@ -85,7 +85,7 @@ We recommend you to take the following steps to troubleshoot your cert-manager, 
 
 ### Other cases
 
-If cert-manager is not the root cause, you should turn to the other running operators which create kubernetes resources.  
+If cert-manager is not the root cause, you should turn to the other running operators which create Kubernetes resources.  
 We have found that the following resources can sometimes be generated continuously by existing operators:
 
 - `backups.velero.io`
