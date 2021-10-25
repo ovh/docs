@@ -71,7 +71,7 @@ Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP
 
 ![NodePort](images/using-lb-NodePort.jpg){.thumbnail}
 
-It's rather cumbersome to use `NodePort` `Services` in production. As you are using non-standard ports, you often need to set up an external load balancer that listen in standard ports and redirects the traffic to  the `<NodeIp>:<NodePort>`.
+It's rather cumbersome to use `NodePort` `Services` in production. As you are using non-standard ports, you often need to set up an external load balancer that listen in standard ports and redirects the traffic to the `<NodeIp>:<NodePort>`.
 
 ### Exposing services as LoadBalancer
 
