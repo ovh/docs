@@ -9,9 +9,9 @@ section: 'Network Management'
 
 ## Objective
 
-The OVHcloud [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](https://www.ovhcloud.com/en-ca/bare-metal/){.external}. But it also allows you to add [Public Cloud instances](https://www.ovh.com/ca/en/public-cloud/instances/){.external} to your private network so that you can create an infrastructure of both physical and virtual resources.
+The OVHcloud [vRack](https://www.ovh.com/ca/en/solutions/vrack/) allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](https://www.ovhcloud.com/en-ca/bare-metal/). But it also allows you to add [Public Cloud instances](https://www.ovh.com/ca/en/public-cloud/instances/) to your private network so that you can create an infrastructure of both physical and virtual resources.
 
-**This guide will show you how to configure private networking between a [Public Cloud instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance/){.external} and a [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/){.external}.**
+**This guide will show you how to configure private networking between a [Public Cloud instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance/) and a [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/).**
 
 
 ## Requirements
@@ -19,7 +19,7 @@ The OVHcloud [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} allo
 * an [OVHcloud Public Cloud instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/)
 * a [vRack](https://www.ovh.com/ca/en/solutions/vrack/) service activated in your account
 * a [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/){.external} compatible with the vRack
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 * a private IP address range of your choice
 
 
@@ -59,7 +59,7 @@ Two situations may arise:
 
 #### In case of a new instance
 
-If you need assistance, follow this guide first: [Creating your first Public Cloud instance](../public-cloud-first-steps/#step-3-creating-an-instance). When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
+If you need assistance, follow this guide first: [Creating your first Public Cloud instance](../public-cloud-first-steps/#step-3-creating-an-instance){.external}. When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
 
 #### In case of an existing instance
 
@@ -99,7 +99,7 @@ An example: If your instance private network is tagged with VLAN 2, the private 
 
 ### Configure your network interfaces
 
-Next, configure the network interfaces on your new [Public Cloud instance](https://www.ovh.com/ca/en/public-cloud/instances/){.external} and [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/){.external} using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}.
+Next, configure the network interfaces on your new [Public Cloud instance](https://www.ovh.com/ca/en/public-cloud/instances/) and [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/) using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.extenal}.
 
 ## Go further
 
