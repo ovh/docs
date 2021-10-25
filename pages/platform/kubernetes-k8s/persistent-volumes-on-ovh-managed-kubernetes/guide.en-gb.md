@@ -5,7 +5,17 @@ excerpt: 'Find out how to setup and manage Persistent Volumes on OVHcloud Manage
 section: Getting started
 ---
 
-**Last updated March 27<sup>th</sup>, 2020.**
+**Last updated 19<sup>th</sup>October 2021.**
+
+## Before you begin
+
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it.  
+If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+
+> [!warning]
+> By creating a __Persistent Volumes__ resource in your Managed Kubernetes Service, we will create for you a volume from the __Block Storage__ category.
+> This volume is visible through the OVHcloud Manager and is hourly charged. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#storage)
+>
 
 ## Persistent Volumes
 
@@ -15,7 +25,7 @@ There are currently two kinds of storage available with Kubernetes: Volumes and 
 Kubernetes __Volumes__ exist only while the container pod exists, and are deleted when it is deleted.  
 As a result, Kubernetes Volumes are only useful for storing temporary data.
 
-Kubernetes __Persistent Volumes__ allow us to work with non-volatile data in Kubernetes. Persistent Volumes are not tied to the pod lifecycle, or to a a single pod. Pods can claim Persistent Volumes, thus making the data available to them.
+Kubernetes __Persistent Volumes__ allow us to work with non-volatile data in Kubernetes. Persistent Volumes are not tied to the pod lifecycle, or to a single pod. Pods can claim Persistent Volumes, thus making the data available to them.
 
 > [!warning]
 > You must be wondering how Persistent Volumes are compatible with the rule that *containers should be stateless* – one of the most important principles of best practice for containers. It's important to note that as the Kubernetes ecosystem has matured, and persistent storage solutions have emerged, this rule is no longer universally applicable.
