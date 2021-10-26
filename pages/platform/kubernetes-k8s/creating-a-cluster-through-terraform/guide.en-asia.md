@@ -3,10 +3,9 @@ title: Creating a cluster through Terraform
 slug: creating-a-cluster-through-terraform
 excerpt: 'Creates a Kubernetes cluster through Terraform'
 section: Getting started
-# order: 0
 ---
 
-**Last updated 25th October 2021**
+**Last updated 26th October 2021**
 
 ## Objective
 
@@ -37,8 +36,10 @@ In order to create a Kubernetes cluster, and others resources, OVHcloud provides
 All available resources and data sources have their definition and documentation.
 
 In this guide, we will create two resources:
-* a [/cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube){.external}
-* and a [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool){.external}
+* a [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube){.external}, that represent a OVH managed Kubernetes cluster
+* and a [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool){.external}, that represent a Kubernetes Node Pool
+
+![Kubernetes cluster and node pool](images/cluster-and-node-pool.png){.thumbnail}
 
 ## Getting your cluster/API tokens information
 
@@ -49,6 +50,7 @@ The OVH provider needs to be configured with a set of credentials:
 * a `consumer_key`
 
 Why?
+
 Because, behind the scene, the OVH Terraform provider is doing requests to OVHcloud APIs. 
 
 In order to retrieve theses needed informations, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) tutorial.
@@ -59,9 +61,11 @@ A latest needed information, is the `service_name`: it is the ID of your Public 
 
 How to get it?
 
+In Public Cloud section, you can retrieve your service name ID thanks to `Copy to clipboard`{.action} button.
+
 ![Copy paste service name](images/get-service-name.png){.thumbnail}
 
-You will use theses informations in Terraform resources definition file.
+You will also use this information in Terraform resources definition files.
 
 ## Instructions 
 
@@ -76,7 +80,7 @@ So, let's start!
 
 ### Resources definition
 
-First, create a `provider.tf` file with the minimum version, european endpoint and keys you got in this guide previously.
+First, create a `provider.tf` file with the minimum version, european endpoint ("ovh-eu") and keys you got in this guide previously.
 
 ```
 # Configure the OVHcloud Provider
@@ -88,6 +92,12 @@ provider "ovh" {
   consumer_key       = "<your_consumer_key>"
 }
 ```
+
+Here, we defined `ovh-eu` endpoint, because we want to call OVHcloud Europe API, but another endpoints exists depending on your needs:
+
+* `ovh-eu` for OVHcloud Europe API
+* `ovh-us` for OVHcloud US API
+* `ovh-ca` for OVHcloud North-America API
 
 Then, create a `variables.tf` with service_name:
 
@@ -133,6 +143,17 @@ output "kubeconfig" {
 With this output, we tell Terraform to retrieve the `kubeconfig file` content. This information is needed to connect to the new Kubernetes cluster.
 
 For your information, outputs are useful to retrieve and display specific informations after the resources creation.
+
+Your code organization should be like this: 
+
+```
+.
+├── data.tf
+├── output.tf
+├── ovh_kube_cluster.tf
+├── provider.tf
+└── variables.tf
+```
 
 ### Create our cluster through Terraform
 
@@ -203,7 +224,7 @@ Terraform will perform the following actions:
       + next_upgrade_versions       = (known after apply)
       + nodes_url                   = (known after apply)
       + region                      = "GRA7"
-      + service_name                = "a212a1e43b614c4ba27a247b890fcf59"
+      + service_name                = "<your-service-name>"
       + status                      = (known after apply)
       + update_policy               = (known after apply)
       + url                         = (known after apply)
@@ -221,7 +242,7 @@ Terraform will perform the following actions:
       + min_nodes      = 3
       + monthly_billed = false
       + name           = "my-pool"
-      + service_name   = "a212a1e43b614c4ba27a247b890fcf59"
+      + service_name   = "<your-service-name>"
       + status         = (known after apply)
     }
 
@@ -365,24 +386,26 @@ Now, click on `my_kube_cluster`, then in `Node pools` tab:
 
 ![Node pool created](images/node-pool-created.png){.thumbnail}
 
-Our node poll is created too.
+Our node pool is created too.
 
 Perfect!
 
 ## Connect to the cluster
 
-First, retrieve the kubeconfig file locally:
+Our cluster is created, now we need to connect to it in order to check our nodes, existing pods and to deploy our applications.
+
+In order to do this, retrieve the kubeconfig file locally:
 
 ```
 $ terraform output kubeconfig > /Users/<your-user>/.kube/my_kube_cluster.yml
 ```
 
-Now, you can use it directly in the `kubectl` command with `--kubeconfig` option.
+You can define it in your `$KUBECONFIG` environment variable or you can use it directly in the `kubectl` command with `--kubeconfig` option.
 
 Display the nodes:
 
 ```
-$ kubectl --kubeconfig=/Users/avache/.kube/my_kube_cluster.yml get node
+$ kubectl --kubeconfig=/Users/<your-user>/.kube/my_kube_cluster.yml get node
 NAME                  STATUS   ROLES    AGE   VERSION
 my-pool-node-1bb290   Ready    <none>   1d   v1.22.2
 my-pool-node-8280a6   Ready    <none>   1d   v1.22.2
@@ -390,6 +413,7 @@ my-pool-node-8a1bfe   Ready    <none>   1d   v1.22.2
 ```
 
 Awesome!
+
 You can now deploy your applications and/or create new clusters through Terraform.
 
 ## Go further
