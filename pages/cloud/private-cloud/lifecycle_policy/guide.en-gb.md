@@ -88,7 +88,7 @@ Clients should anticipate the range change by testing in advance and making sure
 
 This table presents a summary of the different phases of the lifecycle of the service. The impact for each commercial range may differ.
 
-| Phases | General Availability | General Support | Deprecated | Decommissionning / Grace Period |
+| Phases | General Availability | General Support | Deprecated | Grace Period / Decommissionning |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
 | Sales (start new services) | X |  |  |  |
 | Growth (existing services) | X | X |  |  |
