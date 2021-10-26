@@ -384,7 +384,7 @@ As you can see, your cluster have been successfuly created:
 
 Now, click on `my_kube_cluster`, then in `Node pools` tab:
 
-![Node pool created](images/node-pool-created.png){.thumbnail}
+![Node pool created](images/my-pool-node-pool-created.png){.thumbnail}
 
 Our node pool is created too.
 
