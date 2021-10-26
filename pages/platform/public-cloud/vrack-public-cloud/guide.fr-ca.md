@@ -31,9 +31,9 @@ Selon votre profil technique et vos besoins,  vous serez amenés à devoir chois
 
 ### Espace client OVHcloud
 
-[L'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) est une interface entièrement et uniquement visuelle, ce qui en fait une interface idéale si vous n'avez qu'un seul vLan à gérer. Vous ne pourrez personnaliser la plage d'IP privée qui sera uniquement en 10.x.x.x/16.
+[L'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) est une interface entièrement et uniquement visuelle, ce qui en fait une interface idéale si vous n'avez qu'un seul VLAN à gérer. Vous ne pourrez personnaliser la plage d'IP privée qui sera uniquement en 10.x.x.x/16.
 
-Les vLan seront déployés par défaut sur toutes les zones. Vous aurez juste la possibilité d'activer ou non les passerelles.
+Les vlan seront déployés par défaut sur toutes les zones. Vous aurez juste la possibilité d'activer ou non les passerelles.
 
 Vous pourrez également gérer la facturation de vos services au travers de votre espace client OVHcloud.
 
@@ -41,7 +41,7 @@ Vous pourrez également gérer la facturation de vos services au travers de votr
 
 Interface visuelle indépendante d'OVHcloud, [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} est l'implémentation d’origine du tableau de bord d'OpenStack, qui fournit une interface utilisateur web aux services OpenStack, notamment Nova, Swift, Keystone, etc...
 
-Cette interface complète et technique vous permet de gérer la quasi totalité des actions Openstack. Ce sera une des interfaces nécessaires si vous souhaitez gérer plus de deux vLan, ajouter des interfaces réseau privées à vos instances, gérer des images personnalisées, etc...
+Cette interface complète et technique vous permet de gérer la quasi totalité des actions Openstack. Ce sera une des interfaces nécessaires si vous souhaitez gérer plus de deux VLAN, ajouter des interfaces réseau privées à vos instances, gérer des images personnalisées, etc...
 
 Consultez le guide [Accéder à l'interface Horizon](../creer-un-acces-a-horizon/) pour vous familiariser à Horizon.
 
@@ -54,7 +54,7 @@ Consultez le guide [Accéder à l'interface Horizon](../creer-un-acces-a-horizon
 Chaque action que vous effectuez dans l'espace client OVHcloud fait appel aux [APIv6 OVHcloud](https://ca.api.ovh.com/console/). 
 Vous pouvez même aller plus loin dans les API que dans votre espace client.
 
-L'interface est moins visuelle que l'espace client OVHcloud mais vous permettra d'effectuer un grand nombre d'actions. Vous pourrez par ce biais gérer et personnaliser vos vLan, ajouter des interfaces à vos instances ou encore créer des serveurs hautement personnalisés.
+L'interface est moins visuelle que l'espace client OVHcloud mais vous permettra d'effectuer un grand nombre d'actions. Vous pourrez par ce biais gérer et personnaliser vos VLAN, ajouter des interfaces à vos instances ou encore créer des serveurs hautement personnalisés.
 
 Il vous sera parfois nécessaire de récupérer plusieurs informations avant l'utilisation d'une API spécifique.
 
@@ -108,7 +108,7 @@ Une fois le vRack actif, vous retrouverez ce service sous l’appellation « pn-
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez ensuite le projet Public Cloud de votre choix en haut à gauche.
 
-![sélection project](images/vrack1.png){.thumbnail}
+![sélection project](images/vrack2021-04.png){.thumbnail}
 
 Cliquez alors sur `Private network`{.action} (1) dans le menu latéral de gauche. 
 
@@ -118,22 +118,22 @@ Cliquez sur le bouton `Pour commencer, créez un vRack`{.action} (2). Vous devre
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
-Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un vLan dans le vRack depuis l'espace client OVHcloud](./#depuis-lespace-client-ovhcloud_2)
+Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un VLAN dans le vRack depuis l'espace client OVHcloud](./#depuis-lespace-client-ovhcloud_2)
 
 #### Depuis les APIv6 OVHcloud
 
 Pour activer et gérer un vRack depuis les APIv6 OVHcloud, cliquez [ici](../public-cloud-vrack-apiv6/#etape-1-activer-et-gerer-un-vrack) pour consulter le [guide spécifique à cette méthode](../public-cloud-vrack-apiv6/#etape-1-activer-et-gerer-un-vrack).
 
-### Étape 2 : Créer un vLan dans le vRack
+### Étape 2 : Créer un VLAN dans le vRack
 
-Il est nécessaire de créer un vLan (ou réseau local virtuel) afin que les instances reliées au vRack puissent communiquer entre elles.
+Il est nécessaire de créer un VLAN (ou réseau local virtuel) afin que les instances reliées au vRack puissent communiquer entre elles.
 
 Sur l'offre Public Cloud, vous pouvez créer jusqu'à 4 000 vLan au sein d’un seul vRack. Cela signifie donc que vous pouvez utiliser chaque adresse IP privée jusqu’à 4 000 fois.
-Ainsi, par exemple, l'IP 192.168.0.10 du vLan 2 est différente de l'IP 192.168.0.10 du vLan 42.
+Ainsi, par exemple, l'IP 192.168.0.10 du VLAN 2 est différente de l'IP 192.168.0.10 du VLAN 42.
 
 Cela peut vous être utile afin de segmenter votre vRack entre plusieurs réseaux virtuels.
 
-Depuis l'espace client OVHcloud, vous pourrez affecter le vLan de votre choix, mais vous ne pourrez pas personnaliser la plage IP. Le vRack sera actif dans toutes les zones.
+Depuis l'espace client OVHcloud, vous pourrez affecter le VLAN de votre choix, mais vous ne pourrez pas personnaliser la plage IP. Le vRack sera actif dans toutes les zones.
 
 Depuis les APIv6 OVHcloud, vous pourrez personnaliser l'ensemble des paramètres : plage IP (10.0.0.0/16 par exemple), zone de déploiement, DHCP, Gateway, etc.
 
@@ -147,10 +147,10 @@ Depuis les APIv6 OVHcloud, vous pourrez personnaliser l'ensemble des paramètres
 > [!warning]
 > Le vRack étant une infrastructure gérée au niveau d'OVHcloud, vous ne pourrez l'administrer qu'au travers de l'espace client OVHcloud et des APIv6 OVHcloud.
 >
->OpenStack n'étant pas située au même niveau de l'infrastructure, vous ne pourrez pas personnaliser les vLan au travers de l'interface Horizon ou des API OpenStack.
+>OpenStack n'étant pas située au même niveau de l'infrastructure, vous ne pourrez pas personnaliser les VLAN au travers de l'interface Horizon ou des API OpenStack.
 >
 
-#### Créer un vLan depuis l'espace client OVHcloud
+#### Créer un VLAN depuis l'espace client OVHcloud
 
 Une fois le vRack créé, cliquez à nouveau sur  `Private network`{.action} dans le menu latéral de gauche. 
 
@@ -160,11 +160,11 @@ Cliquez à présent sur `Créer un réseau privé`{.action}. La page suivante vo
 
 ![add private network](images/vrack5.png){.thumbnail}
 
-Si vous cochez la case `Définir un VLAN`, vous devrez choisir un numéro de vLan allant de 2 à 4000.
+Si vous cochez la case `Définir un VLAN`, vous devrez choisir un numéro de VLAN allant de 2 à 4000.
 
-Si vous ne cochez pas la case `Définir un VLAN`, vous serez par défaut dans le vLan 0.
+Si vous ne cochez pas la case `Définir un VLAN`, vous serez par défaut dans le VLAN 0.
 
-Dans le cas où vous devez faire communiquer des serveurs dédiés OVHcloud avec du vLan taggé, consultez le guide suivant : [Créer plusieurs VLAN dans le vRack](../..//dedicated/creer-vlan-vrack/).
+Dans le cas où vous devez faire communiquer des serveurs dédiés OVHcloud avec du VLAN taggé, consultez le guide suivant : [Créer plusieurs VLAN dans le vRack](../..//dedicated/creer-vlan-vrack/).
 
 La plage DHCP par défaut est en 10.0.0.0/16. Pour modifier cette plage IP, vous devrez obligatoirement passer par les APIv6 OVHcloud.
 
@@ -174,9 +174,9 @@ Validez les différentes régions souhaitées, saisissez un nom pour votre rése
 > La création du réseau privé peut prendre plusieurs minutes.
 >
 
-#### Créer un vLan depuis les APIv6 OVHcloud
+#### Créer un VLAN depuis les APIv6 OVHcloud
 
-Pour créer un vLan depuis les APIv6 OVHcloud, cliquez [ici](../public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1) pour consulter le [guide spécifique à cette méthode](../public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1).
+Pour créer un VLAN depuis les APIv6 OVHcloud, cliquez [ici](../public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1) pour consulter le [guide spécifique à cette méthode](../public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1).
 
 ### Étape 3 : Intégrer une instance dans le vRack
 
@@ -194,7 +194,7 @@ Consultez le guide [Créer une instance depuis l’espace client](../create_an_i
 ![attach new instance](images/vrack6.png){.thumbnail}
 
 > [!warning]
-> Vous ne pourrez raccorder votre instance qu'à un et un seul vRack depuis l'espace client OVHcloud.
+> Lors de la création d'une nouvelle instance, vous ne pourrez raccorder votre instance qu'à un seul vRack depuis l'espace client OVHcloud.
 > Pour ajouter plusieurs interfaces différentes, vous devrez passer par les API OpenStack ou Horizon.
 >
 
@@ -240,7 +240,7 @@ nova net-list
 > [!primary]
 > Vous devrez noter les ID des réseaux vous intéressant :
 ><br> - Ext-Net pour avoir une IP publique
-><br> - Celui du ou des vLan nécessaires à votre configuration
+><br> - Celui du ou des VLAN nécessaires à votre configuration
 >
 
 Pensez également à noter les informations suivantes, comme indiqueé dans le [guide d'utilisation de l'API Nova](../debuter-avec-lapi-nova/) :
@@ -365,7 +365,7 @@ nova list
 
 #### Cas d'une instance déjà existante
 
-L'espace-client OVHcloud permet d'attacher une instance à un réseau privé mais n'offre pas de configuration avancée des interfaces réseaux. Si vous souhaitez personnaliser davantage celles-ci, il vous faudra les gérer soit depuis les APIv6 OVHcloud, soit via les API OpenStack ou via Horizon.
+L'espace client OVHcloud permet d'attacher une instance à un ou plusieurs réseau privé mais n'offre pas de configuration avancée des interfaces réseaux. Si vous souhaitez personnaliser davantage celles-ci, il vous faudra les gérer soit depuis les APIv6 OVHcloud, soit via les API OpenStack ou via Horizon.
 
 L'action consistera alors à simplement ajouter une nouvelle interface réseau à votre serveur, en plus de celle existante.
 
