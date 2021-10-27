@@ -6,7 +6,7 @@ section: FAQ
 order: 3
 ---
 
-**Last updated 25th October 2021**
+**Last updated 28th October 2021**
 
 > [!warning]
 >
@@ -20,23 +20,33 @@ order: 3
 OVHcloud's Hosted Private Cloud VMware service proposes dedicated infrastructure based on VMware SDDC technologies as well as other editors' technologies (such as Veeam or Zerto).
 
 OVHcloud has a lifecycle policy for the service in order to take into account several factors, such as:
+
 - the lifecycle policy of integrated software components as determined by their editors (VMware, Veeam, Zerto, etc.);
 - the lifecycle of the hardware components;
 - the compatibility between hardware and/or software components;
 - any factor affecting the quality of the service.
+
 
 This lifecycle policy is provided to help clients understand the underlying reasons for version or range changes and the impact of each phase of the lifecycle on the service, and anticipate and prepare the transition to newer version or range.
 
 ### Commercial range concerned
 
 Hosted Private Cloud
-    DC2011 & DC2013 (AMD Opteron, AMD Bulldozer)
-    DC2014 & DC2016 (AMD PileDriver)
-    SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell)
-    SDDC2018 (Intel Broadwell, Intel Haswell)
-    Premier (Intel Cascade Lake)
+
+
+- DC2011 & DC2013 (AMD Opteron, AMD Bulldozer)
+- DC2014 & DC2016 (AMD PileDriver)
+- SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell)
+- SDDC2018 (Intel Broadwell, Intel Haswell)
+- Premier (Intel Cascade Lake)
+
+
 Managed Bare Metal
-    Essentials (Intel Broadwell)
+
+
+- Essentials (Intel Broadwell)
+
+
 
 ## Lifecycle timeframe and definitions
 
@@ -44,35 +54,35 @@ Managed Bare Metal
 
 #### End of Sales
 
-This refers to the date when the sales of new service for a version or range is discontinued. Past this date, clients will not be able to start a service on the discontinued version or range anymore.
+This refers to the date when the sales of new service for a commercial range or version is discontinued. Past this date, clients will not be able to start a service on the discontinued commercial range or version anymore.
 
-After the End of Salesfor a specific Service generation, the Client will still be able to use and grow existing instances of the Service and add additional individual Host Servers. The Packs from that previous generation or any other generation before it will not be available anymore for ordering new instances of the Service. The Packs will be sold for the new Service generation launched on the market only.
+After the End of Sales for a specific commercial range, the Client will still be able to use and grow existing instances of the Service and add additional individual Host Servers. The Packs from that previous commercial range or any other commercial range before it will not be available anymore for ordering new instances of the Service. The Packs will be sold for the new commercial range launched on the market only.
 
 The End of Sales are usually announced with a thirty (30) days minimum warning.
 
-A range will typically reach its End of Sales three (3) years after the beginning of the General Availability phase.
+A commercial range or version will typically reach its End of Sales three (3) years after the beginning of the General Availability phase.
 
 #### End of Growth
 
-This refers to the date when the growth for a version or range is discontinued. Past this date, clients will not be able to order the discontinued version or range anymore.
+This refers to the date when the growth for a commercial range or version is discontinued. Past this date, clients will not be able to order the discontinued commercial range or version anymore.
 
 The End of Sales are usually announced with a thirty (30) days minimum warning.
 
-A range will typically reach its End of Growth five(5) years after the beginning of the General Availability phase.
+A commercial range or version will typically reach its End of Growth five(5) years after the beginning of the General Availability phase.
 
-#### End of Support
+#### End of Support - Applicable only for Essentials and Premier commercial ranges
 
-This refers to the date when a version or range ceases to have support from OVHcloud.
+This refers to the date when a commercial range or version ceases to have support from OVHcloud.
 
 The End of Life may involve the unapplicability of SLAs, and the absence of support services, limited availability of spares, hardware delivery without any guaranteed specific timeframe.
 
 The End of Support are usually announced with a thirty (30) days minimum warning.
 
-A range will typically reach its End of Support five (5) years after the beginning of the General Availability phase.
+A commercial range or version will typically reach its End of Support five (5) years after the beginning of the General Availability phase.
 
-#### End of Life
+#### End of Life 
 
-This refers to the date when a version or range is being shut down
+This refers to the date when a commercial range or version is being shut down
 
 The End of Life may involve the unapplicability of SLAs, and the absence of support services, the absence of spares.
 
@@ -88,7 +98,7 @@ Clients should anticipate the range change by testing in advance and making sure
 
 This table presents a summary of the different phases of the lifecycle of the service. The impact for each commercial range may differ.
 
-| Phases | General Availability | General Support | Deprecated | Grace Period / Decommissionning |
+| Phases | General Availability | General Support | Deprecated (applicable on Essentials and Premier only) | Grace Period / Decommissionning |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
 | Sales (start new services) | X |  |  |  |
 | Growth (existing services) | X | X |  |  |
@@ -100,34 +110,33 @@ This table presents a summary of the different phases of the lifecycle of the se
 | Security patches | X | X | X | X |
 | Knowledge Base | X | X | X | X |
 
+
+
 ## OVHcloud Commercial Range status
 
 ### Hosts (compute)
 
 | Commercial Range | General Availability | End of Sales | End of Growth | End of Support | End of Life |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| DC2011 (AMD Opteron) | 2011 | 28/02/2015 | 28/02/2022 | 30/06/2022 | 31/07/2022 |
-| DC2013 (AMD Bulldozer) | 2013 | 28/02/2015 | 28/02/2022 | 30/06/2022 | 31/07/2022 |
-| DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 30/06/2022 | 31/07/2022 |
-| DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 30/06/2022 | 31/07/2022 |
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2023 | 31/05/2023 | 31/08/2023 |
-| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/02/2024 | 31/05/2024 | 31/08/2024 |
+| DC2011 (AMD Opteron) | 2011 | 28/02/2015 | 28/02/2022 | not applicable | 31/07/2022 |
+| DC2013 (AMD Bulldozer) | 2013 | 28/02/2015 | 28/02/2022 | not applicable | 31/07/2022 |
+| DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | not applicable | 31/07/2022 |
+| DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | not applicable | 31/07/2022 |
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2023 | not applicable | 31/08/2023 |
+| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/02/2024 | not applicable | 31/08/2024 |
 | Premier (Intel Cascade Lake) | 20/07/2020 |  |  |  |  |
 | Essentials (Intel Broadwell) | 18/11/2020 |  |  |  |  |
 
+
 ### Datastores (storage)
 
-| Datastore | General Availability | End of Sales | End of Growth | End of Support | End of Life |
+| Datastore | General Availability | End of Sales | End of Growth | End of Support (applicable on Essentials and Premier only) | End of Life |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 300Gb | 2013 | 28/02/2015 | 31/03/2022 | 31/07/2022 | 31/10/2022 |
-| 600Gb | 2013 | 28/02/2015 | 31/03/2022 | 31/07/2022 | 31/10/2022 |
-| 900Gb | 2016 | 31/08/2017 | 31/03/2022 | 31/07/2022 | 31/10/2022 |
-| 1200Gb | 2016 | 30/11/2018 | 31/03/2022 | 31/07/2022 | 31/10/2022 |
-| 3000Gb | 2020 |  |  |  |  |
-| 6000Gb | 2020 |  |  |  |  |
-| 9000Gb | 2020 |  |  |  |  |
-| 18000Gb | 2020 |  |  |  |  |
-| 36000Gb | 2020 |  |  |  |  |
+| 300/600Gb HDD based datastores (300Gb, 1200Gb, 3300Gb, 6600Gb, 13000Gb) | 2013 | 28/02/2015 | 31/03/2022 | 31/07/2022 | 31/10/2022 |
+| 800Gb SSD based datastores (800Gb, 1600Gb, 2400Gb) | 2013 | 28/02/2015 | 31/03/2022 | 31/07/2022 | 31/10/2022 |
+| 1200Gb HDD based datastores (1200Gb, 3300Gb, 6600Gb, 13000Gb) | 2016 | 31/08/2017 | 31/03/2022 | 31/07/2022 | 31/10/2022 |
+| 3000Gb SSD based datastores (3Tb, 6Tb, 9Tb, 18Tb, 36Tb)  | 2020 |  |  |  |  |
+
 
 ## Integrated Software
 
