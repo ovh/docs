@@ -93,11 +93,11 @@ provider "ovh" {
 }
 ```
 
-Here, we defined `ovh-eu` endpoint, because we want to call OVHcloud Europe API, but another endpoints exists depending on your needs:
+Here, we defined `ovh-eu` endpoint, because we want to call OVHcloud Europe API, but another endpoints exists depending on the OVHcloud entity you created you account with:
 
 * `ovh-eu` for OVHcloud Europe API
 * `ovh-us` for OVHcloud US API
-* `ovh-ca` for OVHcloud North-America API
+* `ovh-ca` for OVHcloud APAC and America API (If you subcribed with OVHcloud Canada or Australia for example)
 
 Then, create a `variables.tf` with service_name:
 
