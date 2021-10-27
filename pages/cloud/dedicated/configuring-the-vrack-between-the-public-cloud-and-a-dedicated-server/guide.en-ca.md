@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure private networking between a Public Cloud in
 section: 'Network Management'
 ---
 
-**Last updated 15/10/2021**
+**Last updated 15th October 2021**
 
 ## Objective
 
@@ -47,7 +47,9 @@ From the list of eligible services, select the project you want to add to the vR
 
 ![add project to vrack](images/addprojectvrack.png){.thumbnail}
 
-2. By [creating or adding an existing vRack service](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#instructions_1) in the `Public Cloud`{.action} section.
+<ol start="2">
+  <li>By [creating or adding an existing vRack service](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#instructions_1) in the `Public Cloud`{.action} section.
+</ol>
 
 
 ### Add an Instance to the vRack 
@@ -59,12 +61,11 @@ Two situations may arise:
 
 #### In case of a new instance
 
-If you need assistance, follow this guide first: [Creating your first Public Cloud instance](../public-cloud-first-steps/#step-3-creating-an-instance){.external}. When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
+If you need assistance, follow this guide first: [Creating your first Public Cloud instance](../public-cloud-first-steps/#step-3-creating-an-instance). When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
 
 #### In case of an existing instance
 
 You can attach an existing instance to a private network. For more information, please refer to [this section](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#cases-of-an-already-existing-instance_2) of the corresponding guide.
-
 
 ### Create a VLAN ID
 
@@ -95,7 +96,6 @@ To use a different VLAN ID:
 >
 
 An example: If your instance private network is tagged with VLAN 2, the private network interface on your dedicated server should be tagged with VLAN 2. For more information consult the following guide: [Create multiple VLANs in the vRack](https://docs.ovh.com/ca/en/dedicated/multiple-vlans/).
-
 
 ### Configure your network interfaces
 
