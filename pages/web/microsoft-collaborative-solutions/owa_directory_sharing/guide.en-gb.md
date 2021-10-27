@@ -16,13 +16,13 @@ It is not always appropriate to delegate the usage of an entire email account. T
 
 > [!primary]
 >
-> Although this guide will refer to our Exchange services, you can follow the instructions for [Email Pro](https://www.ovh.co.uk/emails/email-pro) accounts as well.
+> Although this guide will refer to our Exchange services, you can follow the instructions for [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) accounts as well.
 >
 
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](https://www.ovh.co.uk/emails/hosted-exchange) already set up
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) already set up
 - access to your Exchange account (email address and password)
 
 

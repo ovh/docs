@@ -10,7 +10,7 @@ order: 2
 
 ## Objective
 
-This guideline will outline the steps to follow in order to export all elements of your website in a standard format, from an [OVHcloud web hosting plan](https://www.ovh.co.uk/web-hosting/).
+This guideline will outline the steps to follow in order to export all elements of your website in a standard format, from an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
 
 **Find out how to export an OVHcloud website.**
 

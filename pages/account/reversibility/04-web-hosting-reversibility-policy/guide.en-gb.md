@@ -9,7 +9,7 @@ order: 5
 
 ## Objective
 
-This document is the reversibility policy for the **Web Hosting** product for the [domain name](https://www.ovh.co.uk/domains/) activity.
+This document is the reversibility policy for the **Web Hosting** product for the [domain name](https://www.ovhcloud.com/en-gb/domains/) activity.
 
 This policy aims at implementing the global reversibility principles and requirements of [SWIPO IaaS Code of Conduct for Cloud Providers](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
 

@@ -16,7 +16,7 @@ You can use an email address in your MX Plan solution to send and receive emails
 
 ## Requirements
 
-- an MX Plan solution, available via a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}, [a free Start 10M hosting solution](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external} including a domain name (activated in advance), or the MX Plan solution, ordered separately
+- an MX Plan solution, available via a [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}, [a free Start 10M hosting solution](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/){.external} including a domain name (activated in advance), or the MX Plan solution, ordered separately
 - the ability to create email addresses as part of your solution
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
