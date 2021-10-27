@@ -11,7 +11,7 @@ section: NAS
 
 ### Can I manage my HA-NAS via a configuration panel?
 
-Yes, you can manage it from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) by going to the `Bare Metal Cloud`{.action}, then `NAS and CDN`{.action} section.
+Yes, you can manage it from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) by going to the `Bare Metal Cloud`{.action}, then `NAS and CDN`{.action} section.
 
 ### Can I increase the total storage capacity of my NAS?
 
@@ -37,7 +37,7 @@ The disks of your HA-NAS are dedicated to your services. The machine’s other r
 
 ### How long can I subscribe to an HA-NAS solution?
 
-The subscription periods offered are 1 month, 3 months, 6 months and 12 months. At the end of your subscription period, your subscription is renewed automatically unless you submit a cancellation request. You can do this at any time during your subscription period, via your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+The subscription periods offered are 1 month, 3 months, 6 months and 12 months. At the end of your subscription period, your subscription is renewed automatically unless you submit a cancellation request. You can do this at any time during your subscription period, via your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
 ## Using the product
 
@@ -101,7 +101,7 @@ You can set the frequency of snapshots from your Control Panel. You can choose t
 - once every 3 days;
 - once every week.
 
-You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or via the [API](https://ca.api.ovh.com/):
+You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or via the [API](https://ca.api.ovh.com/):
 
 > [!api]
 >
