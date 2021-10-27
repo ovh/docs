@@ -5,7 +5,7 @@ slug: etcd-quota-error
 section: Diagnostics
 ---
 
-**Last updated April 22<sup>nd</sup>, 2021.**
+**Last updated 19<sup>th</sup> October 2021.**
 
 ## Objective
 
@@ -22,19 +22,21 @@ rpc error: code = Unknown desc = The OVHcloud storage quota has been reached
 ## Requirements
 
 - An OVHcloud Managed Kubernetes cluster
-- The [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed
+- The [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed
 
 ## Instructions
 
 ### Background
 
 Each Kubernetes cluster has a dedicated quota on ETCD storage usage, calculated through the following formula:
-*Quota = 10MB + (25MB per node)* (capped to 200MB)
 
-For example, a cluster with 3 `b2-7` servers has a quota of 85MB.
+```
+Quota = 10MB + (25MB per node)* (capped to 200MB)
+```
 
-The quota can thus be increased by adding nodes, but will never be decreased (even if all nodes are removed) to prevent data loss.
+For example, a cluster with 3 `b2-7` servers has a quota of __85 MB__.
 
+The quota can thus be increased by adding nodes, but will never be decreased (even if all nodes are removed) to prevent data loss.  
 The error mentioned above states that the cluster's ETCD storage usage has exceeded the quota.
 
 **To resolve the situation, resources created in excess need to be deleted.**
@@ -73,27 +75,24 @@ kubectl delete order.acme.cert-manager.io -A --all
 
 - Updating cert-manager
 
-There is no generic way to do this, but if you use Helm we recommend you to use it for the update.
-[Cert Manager official documentation](https://cert-manager.io/docs/installation/kubernetes/)
+There is no generic way to do this, but if you use Helm we recommend you to use it for the update: [Cert Manager official documentation](https://cert-manager.io/docs/installation/kubernetes/)
 
 - Fixing the issue
 
-We recommend you to take the following steps to troubleshoot your cert-manager, and to ensure that everything is correctly configured:
-[Acme troubleshoot](https://cert-manager.io/docs/faq/acme/)
+We recommend you to take the following steps to troubleshoot your cert-manager, and to ensure that everything is correctly configured: [Acme troubleshoot](https://cert-manager.io/docs/faq/acme/)
 
 - Starting cert-manager
 
 ### Other cases
 
-If cert-manager is not the root cause, you should turn to the other running operators which create kubernetes resources.
-
+If cert-manager is not the root cause, you should turn to the other running operators which create Kubernetes resources.  
 We have found that the following resources can sometimes be generated continuously by existing operators:
+
 - `backups.velero.io`
 - `ingress.networking.k8s.io`
 - `ingress.extensions`
 
-If that still does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.
-
+If that still does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.  
 Then you should delete the resources in excess and fix the process responsible for their creation.
 
 ## Go further

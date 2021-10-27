@@ -101,7 +101,7 @@ Select the **UEFI Virtual CDROM 1.00** option from the boot menu to start the se
 
 Complete the steps required to install the operating system. Do not forget to remove the ISO from the "Redirect ISO" option.
 
-### Installing an OS Utilizing IPMI v2
+### Installing an OS using IPMI v2
 
 > [!warning]
 > OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
