@@ -6,7 +6,7 @@ section: FAQ
 order: 3
 ---
 
-**Last updated 28th October 2021**
+**Last updated 25th October 2021**
 
 > [!warning]
 >
@@ -39,11 +39,6 @@ Hosted Private Cloud
 - SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell)
 - SDDC2018 (Intel Broadwell, Intel Haswell)
 - Premier (Intel Cascade Lake)
-
-
-Managed Bare Metal
-
-
 - Essentials (Intel Broadwell)
 
 
@@ -130,12 +125,12 @@ This table presents a summary of the different phases of the lifecycle of the se
 
 ### Datastores (storage)
 
-| Datastore | General Availability | End of Sales | End of Growth | End of Support (applicable on Essentials and Premier only) | End of Life |
+| Datastore | General Availability | End of Sales | End of Growth | End of Life |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 300/600Gb HDD based datastores (300Gb, 1200Gb, 3300Gb, 6600Gb, 13000Gb) | 2013 | 28/02/2015 | 31/03/2022 | 31/07/2022 | 31/10/2022 |
-| 800Gb SSD based datastores (800Gb, 1600Gb, 2400Gb) | 2013 | 28/02/2015 | 31/03/2022 | 31/07/2022 | 31/10/2022 |
-| 1200Gb HDD based datastores (1200Gb, 3300Gb, 6600Gb, 13000Gb) | 2016 | 31/08/2017 | 31/03/2022 | 31/07/2022 | 31/10/2022 |
-| 3000Gb SSD based datastores (3Tb, 6Tb, 9Tb, 18Tb, 36Tb)  | 2020 |  |  |  |  |
+| 300/600Gb HDD based datastores (300Gb, 1200Gb, 3300Gb, 6600Gb, 13000Gb) | 2013 | 28/02/2015 | 31/03/2022 | 31/10/2022 |
+| 800Gb SSD based datastores (800Gb, 1600Gb, 2400Gb) | 2013 | 28/02/2015 | 31/03/2022 | 31/10/2022 |
+| 1200Gb HDD based datastores (1200Gb, 3300Gb, 6600Gb, 13000Gb) | 2016 | 31/08/2017 | 31/03/2022 | 31/10/2022 |
+| 3000Gb SSD based datastores (3Tb, 6Tb, 9Tb, 18Tb, 36Tb) | 2016 | 30/11/2018 | 31/03/2022 | 31/10/2022 |
 
 
 ## Integrated Software
