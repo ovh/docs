@@ -224,7 +224,7 @@ Terraform will perform the following actions:
       + next_upgrade_versions       = (known after apply)
       + nodes_url                   = (known after apply)
       + region                      = "GRA7"
-      + service_name                = "<your-service-name>"
+      + service_name                = "<your_service_name>"
       + status                      = (known after apply)
       + update_policy               = (known after apply)
       + url                         = (known after apply)
@@ -242,7 +242,7 @@ Terraform will perform the following actions:
       + min_nodes      = 3
       + monthly_billed = false
       + name           = "my-pool"
-      + service_name   = "<your-service-name>"
+      + service_name   = "<your_service_name>"
       + status         = (known after apply)
     }
 
@@ -436,6 +436,80 @@ xxx can be: RAM, CPU, VM, Disk or Port.
 If this is the case, the quotas must be increased.
 In order to check your quota and increase them, please follow this tutorial:
 [increase Public Cloud quota](https://docs.ovh.com/gb/en/public-cloud/increase-public-cloud-quota/){.external}.
+
+## Destroy (cleanup)
+
+If you want to easily destroy created resources, you can use `terraform destroy` command.
+
+```
+$ terraform destroy
+ovh_cloud_project_kube.my_kube_cluster: Refreshing state... [id=7628f0e1-a082-4ec5-98df-2aba283ca3f3]
+ovh_cloud_project_kube_nodepool.node_pool: Refreshing state... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5]
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # ovh_cloud_project_kube.my_kube_cluster will be destroyed
+  - resource "ovh_cloud_project_kube" "my_kube_cluster" {
+      - control_plane_is_up_to_date = true -> null
+      - id                          = "7628f0e1-a082-4ec5-98df-2aba283ca3f3" -> null
+      - is_up_to_date               = true -> null
+      - kubeconfig                  = (sensitive value)
+      - name                        = "my_kube_cluster" -> null
+      - next_upgrade_versions       = [] -> null
+      - nodes_url                   = "z2tj25.nodes.c1.gra7.k8s.ovh.net" -> null
+      - region                      = "GRA7" -> null
+      - service_name                = "<your_service_name>" -> null
+      - status                      = "READY" -> null
+      - update_policy               = "ALWAYS_UPDATE" -> null
+      - url                         = "xxxxxx.c1.gra7.k8s.ovh.net" -> null
+      - version                     = "1.22" -> null
+    }
+
+  # ovh_cloud_project_kube_nodepool.node_pool will be destroyed
+  - resource "ovh_cloud_project_kube_nodepool" "node_pool" {
+      - anti_affinity  = false -> null
+      - desired_nodes  = 3 -> null
+      - flavor_name    = "b2-7" -> null
+      - id             = "ebfa7726-d50c-4fbc-8b24-e722a1ff28f5" -> null
+      - kube_id        = "7628f0e1-a082-4ec5-98df-2aba283ca3f3" -> null
+      - max_nodes      = 3 -> null
+      - min_nodes      = 3 -> null
+      - monthly_billed = false -> null
+      - name           = "my-pool" -> null
+      - service_name   = "<your_service_name>" -> null
+      - status         = "READY" -> null
+    }
+
+Plan: 0 to add, 0 to change, 2 to destroy.
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+ovh_cloud_project_kube_nodepool.node_pool: Destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5]
+ovh_cloud_project_kube_nodepool.node_pool: Still destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5, 10s elapsed]
+ovh_cloud_project_kube_nodepool.node_pool: Still destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5, 20s elapsed]
+ovh_cloud_project_kube_nodepool.node_pool: Still destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5, 30s elapsed]
+ovh_cloud_project_kube_nodepool.node_pool: Still destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5, 40s elapsed]
+ovh_cloud_project_kube_nodepool.node_pool: Still destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5, 50s elapsed]
+ovh_cloud_project_kube_nodepool.node_pool: Still destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5, 1m0s elapsed]
+ovh_cloud_project_kube_nodepool.node_pool: Destruction complete after 1m2s
+ovh_cloud_project_kube.my_kube_cluster: Destroying... [id=7628f0e1-a082-4ec5-98df-2aba283ca3f3]
+ovh_cloud_project_kube.my_kube_cluster: Still destroying... [id=7628f0e1-a082-4ec5-98df-2aba283ca3f3, 10s elapsed]
+ovh_cloud_project_kube.my_kube_cluster: Still destroying... [id=7628f0e1-a082-4ec5-98df-2aba283ca3f3, 20s elapsed]
+ovh_cloud_project_kube.my_kube_cluster: Still destroying... [id=7628f0e1-a082-4ec5-98df-2aba283ca3f3, 30s elapsed]
+ovh_cloud_project_kube.my_kube_cluster: Destruction complete after 33s
+
+Destroy complete! Resources: 2 destroyed.
+```
+
+Perfect, your Kubernetes cluster and associated resources (Nodes, Pods...) have been correctly destroyed!
 
 ## Go further
 
