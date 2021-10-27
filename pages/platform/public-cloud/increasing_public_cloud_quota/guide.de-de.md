@@ -1,6 +1,6 @@
 ---
-title: 'Public Cloud Quotas erhöhen'
-excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Public Cloud Quotas beantragen'
+title: 'Public Cloud Quote erhöhen'
+excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud beantragen'
 slug: public-cloud-quota-erhoehen
 legacy_guide_number: 1904
 section: Projektverwaltung
@@ -23,14 +23,14 @@ Um zusätzliche Ressourcen und Instanzen nutzen zu können, müssen deren Quotas
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-- Sie haben eine [gültige Zahlungsart](../../billing/zahlungsarten-verwalten/) in Ihrem OVHcloud Kundencenter hinterlegt
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben eine [gültige Zahlungsart](../../billing/zahlungsarten-verwalten/) in Ihrem OVHcloud Kundencenter hinterlegt.
 
 ## In der praktischen Anwendung
 
 ### Erhöhung der Ressourcenquote
 
-Gemäß den internen Kriterien (Dienstalter, Bestehen bezahlter Rechnungen usw.) können Sie nun direkt vom OVHcloud Kundencenter Quotenerhöhungen für Ihre Public Cloud-Projekte beantragen.
+Gemäß interner Kriterien (Dienstalter, bezahlte Rechnungen usw.) können Sie direkt vom OVHcloud Kundencenter aus Quotenerhöhungen für Ihre Public Cloud-Projekte beantragen.
 
 Sie können Ihre Ressourcenquote manuell oder automatisch erhöhen.
 
@@ -38,9 +38,9 @@ Sie können Ihre Ressourcenquote manuell oder automatisch erhöhen.
 
 Dieses Verfahren ermöglicht Ihnen, eine Quotenerhöhung manuell anzufordern und mit einer Vorauszahlung (Public Cloud Credit) zu bestätigen.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Tab `Public Cloud`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Bereich `Public Cloud`{.action}.
 
-Klicken Sie im linken Menü auf `Quota and Regions`{.action}
+Klicken Sie im linken Menü auf `Quota and Regions`{.action}.
 
 ![access quota](images/raisepciquota2021.png){.thumbnail}
 
@@ -50,13 +50,13 @@ Um eine Quota-Erhöhung zu beantragen, klicken Sie auf `Quota erhöhen`{.action}
 
 ![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
-Klik vervolgens op de pijl omlaag naast "Wählen Sie die Menge aus", um die Liste der Quoten anzuzeigen, auf die Ihre Ressourcen derzeit aktualisiert werden können. Dieser Abschnitt zeigt auch den Betrag, der zu zahlen ist, um von diesen Mitteln zu profitieren.
+Klicken Sie dann auf den Dropdown-Pfeil neben "Volumen auswählen", um die Liste der derzeit verfügbaren Kontingente anzuzeigen, auf die Sie Ihre Ressourcen aktualisieren können. In diesem Abschnitt wird auch der fällige Betrag angezeigt, um diese Ressourcen nutzen zu können.
 
 ![select quota](images/selectquotas.png){.thumbnail}
 
 Die nachstehende Tabelle zeigt die Ressourcen, die Sie für jedes Kontingent erhalten:
 
-|Quota|Instances|CPU/Cores|RAM|Volume Size|Volumes|Snapshots|
+|Quota|Instanzen|CPU/Cores|RAM|Größe Disk|Anzahl Disk|Snapshots|
 |---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|
 |20 VMs|20|40|240GB|20TB|40|40|
@@ -64,33 +64,33 @@ Die nachstehende Tabelle zeigt die Ressourcen, die Sie für jedes Kontingent erh
 |100 VMs|100|128|992GB|39TB|200|200|
 |200 VMs|200|512|3.9TB|78TB|400|400|
 
-Klicken Sie nach Auswahl der Lautstärke auf `Bestätigen`{.action}. Ihre Zahlung wird so schnell wie möglich bearbeitet.
+Klicken Sie nach Auswahl der gewünschten Kapazität auf `Bestätigen`{.action}. Ihre Zahlung wird so schnell wie möglich bearbeitet.
 
 > [!warning]
 > Bitte beachten Sie, dass die Rechnungsstellung sofort erfolgt.
 >
-> Wenn Sie auf die Schaltfläche `Bestätigen`{.action} klicken, wird die Bestellung automatisch erstellt und Ihrem Konto gutgeschrieben.
+> Wenn Sie auf die Schaltfläche `Bestätigen`{.action} klicken, wird die Bestellung automatisch erstellt und Ihr Guthaben-Konto entsprechend belastet.
 >
 
-#### Automatisches Erhöhen der Ressourcenquote durch die Funktion « *Quota Autoscaling* »
+#### Automatisches Erhöhen der Ressourcenquote durch die Funktion "Quota Autoscaling"
 
 Mit dieser Option können Sie eine automatische und schrittweise Erhöhung Ihrer Ressourcenquote anfordern. Ihre Quote wird abhängig von Ihrer Nutzung und auf der Grundlage einer Reihe interner Kriterien erhöht.
 
-Dies ist kein sofortiger Prozess, und die Ressourcenquote wird im Laufe der Zeit erhöht.
+Dies ist kein sofortiger Prozess; die Ressourcenquote wird im Laufe der Zeit erhöht.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Tab `Public Cloud`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Bereich `Public Cloud`{.action}.
 
-Klicken Sie im linken Menü auf `Quota and Regions`{.action}
+Klicken Sie im linken Menü auf `Quota and Regions`{.action}.
 
-Klicken Sie auf die `?`{.action} für weitere Informationen zu dieser Funktion, klicken Sie dann auf das `Umschalten-Symbol`{.action}, um den Status zu "**Aktiviert**" zu wechseln.
+Sie können auf den Button `?`{.action} klicken, um weitere Informationen zu dieser Funktion anzuzeigen. Klicken Sie dann auf den `Schieberegler`{.action}, um den Status auf "**Aktiviert**" zu setzen.
 
 ![auto scaling](images/autoscaling.png){.thumbnail}
 
-Nach Abschluss des Vorgangs wird die *autoscaling* für Ihr Projekt aktiviert und Ihre Ressourcenquote wird im Laufe der Zeit erhöht.
+Nach Abschluss des Vorgangs wird *Autoscaling* für Ihr Projekt aktiviert und Ihre Ressourcenquote wird im Laufe der Zeit erhöht.
 
-### Erhöhung der Quote Ihrer Projekte im Bereich der öffentlichen Cloud
+### Erhöhung der Quote Ihrer Public Cloud-Projekte
 
-Wenn Sie die maximale Anzahl an Public Cloud-Projekten in Ihrem Control Panel erreicht haben und weitere Projekte erstellen möchten, senden Sie bitte eine Anfrage an unsere Support-Teams.
+Wenn Sie die maximale Anzahl an Public Cloud-Projekten in Ihrem Kunden-Account erreicht haben und weitere Projekte erstellen möchten, senden Sie bitte eine Anfrage an unsere Support-Teams.
 
 ## Weiterführende Informationen
 
