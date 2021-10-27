@@ -23,7 +23,7 @@ La migration vers un nouveau vDC comporte deux aspects :
 * L'infrastructure OVHcloud elle-même, qui inclut la côté client de l'administration d'une infrastructure.
 * L'infrastructure VMware, qui inclut l'ensemble de l'écosystème VMware.
 
-**Découvez comment couvrir tous les aspects liés tous les aspects de la migration d'une infrastructure OVHcloud préexistante vers un nouveau vDC.**
+**Découvez comment couvrir tous les aspects liés à la migration d'une infrastructure OVHcloud préexistante vers un nouveau vDC.**
 
 ## Prérequis
 
@@ -109,7 +109,7 @@ Exécutez l'API OVHcloud pour vérifier la compatibilité des datastores. Nous v
 
 **Résultat attendu :** boolean
 
-Si le retour API est FALSE, vos datastores ne sont pas compatibles, vous devrez commander de nouveaux datastores et utiliser VMware Storage vMotion. À cet effet, consultez nos guides « [Informations sur la facturation Private Cloud (EN)](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) » et [VMware Storage vMotion](https://docs.ovh.com/fr/private-cloud/vmware-storage-vmotion-new/).
+Si le retour API est FALSE, vos datastores ne sont pas compatibles, vous devrez commander de nouveaux datastores et utiliser VMware Storage vMotion. À cet effet, consultez nos guides « [Informations sur la facturation Private Cloud (EN)](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) » et « [VMware Storage vMotion](https://docs.ovh.com/fr/private-cloud/vmware-storage-vmotion-new/) ».
 
 Si le retour API est TRUE, vous pouvez procéder à la conversion en datastore global.
 
