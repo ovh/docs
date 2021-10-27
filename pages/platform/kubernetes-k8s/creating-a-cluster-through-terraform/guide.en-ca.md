@@ -424,6 +424,19 @@ Awesome!
 
 You can now deploy your applications and/or create new clusters through Terraform.
 
+## Known issues
+
+By default, the Public Cloud projects as well as the resources total (RAM, CPU, disk space, number of instances, etc.) you can use are limited for security reasons.
+
+When you create a new Kubernetes Node Pool, if you run out of resources in your available quota, the Nodes might be in error.
+
+You may get the following error message: "not enough xxx quotas".
+xxx can be: RAM, CPU, VM, Disk or Port.
+
+If this is the case, the quotas must be increased.
+In order to check your quota and increase them, please follow this tutorial:
+[increase Public Cloud quota](https://docs.ovh.com/ca/en/public-cloud/increase-public-cloud-quota/){.external}.
+
 ## Go further
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-ca/public-cloud/kubernetes/).
