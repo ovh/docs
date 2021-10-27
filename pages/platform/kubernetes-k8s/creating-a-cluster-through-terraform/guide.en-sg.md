@@ -402,7 +402,15 @@ $ terraform output kubeconfig > /Users/<your-user>/.kube/my_kube_cluster.yml
 
 You can define it in your `$KUBECONFIG` environment variable or you can use it directly in the `kubectl` command with `--kubeconfig` option.
 
-Display the nodes:
+List our Node Pool:
+
+```
+$ kubectl --kubeconfig=/Users/<your-user>/.kube/my_kube_cluster.yml get nodepool
+NAME      FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
+my-pool   b2-7     false         false            false           3         3         3            3           3     3     1d
+```
+
+Display the list of the Nodes:
 
 ```
 $ kubectl --kubeconfig=/Users/<your-user>/.kube/my_kube_cluster.yml get node
