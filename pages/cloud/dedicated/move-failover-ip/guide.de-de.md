@@ -36,7 +36,7 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 > [!primary]
 > Wenn ein IP-Block mit eindeutigen virtuellen MAC-Adressen zwischen zwei Servern verschoben wird, werden diese Adressen vorübergehend ausgesetzt. Sie werden auf dem neuen Server angezeigt, sobald der Umzug abgeschlossen ist.
 >
-> Auf der anderen Seite können Blöcke mit doppelten virtuellen MAC-Adressen nicht verschoben werden. Sie müssen zuerst die doppelte virtuelle MAC-Adresse des zu verschiebenden Blocks löschen.
+> Auf der anderen Seite können Blöcke mit doppelten virtuellen MAC-Adressen nicht verschoben werden. Sie müssen zuerst die mehrfach verwendeten virtuellen MAC-Adressen des zu verschiebenden Blocks löschen.
 >
 
 ### Eine IP über das OVHcloud Kundencenter umziehen
