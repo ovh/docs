@@ -90,6 +90,8 @@ The easiest way to enable the autoscaler is using the Kubernetes API, for exampl
 
 As explained in the [How nodes and node pools work](../managing-nodes/) guide, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (groups of nodes sharing the same configuration).
 
+![Node pool](images/node-pool.png){.thumbnail}
+
 Autoscale is configured on a node pool basis, i.e. you don't enable autoscaling on a full cluster, you enable it for one or more of your node pools.
 
 You can activate the autoscaler on several node pools, each of which can have a different type of instance as well as different min and max nodes number limits.
@@ -169,6 +171,58 @@ nodepool-b2-7   b2-7     true          false            false           3       
 > During this beta phase, the configuration options for the cluster autoscaler are immutable, set to sensible by-default values. We plan to progressively allow our users to modify some of these parameters to better tailor them to their specific use cases.
 
 When the autoscaler is enabled on a node pool, is uses a by default configuration. To better understand the by-default configuration and its parameters, see the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
+
+### Configuring the autoscaler
+
+#### Using Kubernetes API
+
+When the autoscaler is enabled on a node pool, it uses a [default configuration](https://docs.ovh.com/us/en/kubernetes/configuring-cluster-autoscaler/#cluster-autoscaler-configuration).
+
+You can change several parameters values through kubectl command:
+
+```bash
+kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"scaleDownUnneededTimeSeconds": <a_value>, "scaleDownUnreadyTimeSeconds": <another_value>, "scaleDownUtilizationThreshold": "<and_another_one>"}}'
+```
+
+In my example cluster:
+<pre class="console"><code>$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+{
+  "antiAffinity": false,
+  "autoscale": true,
+  "desiredNodes": 3,
+  "flavor": "b2-7",
+  "maxNodes": 100,
+  "minNodes": 0,
+  "monthlyBilled": true,
+  "scaleDownUnneededTimeSeconds": 600,
+  "scaleDownUnreadyTimeSeconds": 1200,
+  "scaleDownUtilizationThreshold": "0.5"
+}
+
+$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}'
+nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
+
+$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+{
+  "antiAffinity": false,
+  "autoscale": true,
+  "desiredNodes": 3,
+  "flavor": "b2-7",
+  "maxNodes": 100,
+  "minNodes": 0,
+  "monthlyBilled": true,
+  "scaleDownUnneededTimeSeconds": 900,
+  "scaleDownUnreadyTimeSeconds": 1500,
+  "scaleDownUtilizationThreshold": "0.7"
+}
+</code></pre>
+
+For the moment, only these following parameters are editable:
+* scaleDownUnneededTimeSeconds
+* scaleDownUnreadyTimeSeconds
+* scaleDownUtilizationThreshold
+
+You can contact us through [gitter](https://gitter.im/ovh/kubernetes) if you need to edit others parameters and/or you can check our [public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
 
 ## Go further
 

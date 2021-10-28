@@ -170,6 +170,58 @@ nodepool-b2-7   b2-7     true          false            false           3       
 
 When the autoscaler is enabled on a node pool, is uses a by default configuration. To better understand the by-default configuration and its parameters, see the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
 
+### Configuring the autoscaler
+
+#### Using Kubernetes API
+
+When the autoscaler is enabled on a node pool, it uses a [default configuration](https://docs.ovh.com/ie/en/kubernetes/configuring-cluster-autoscaler/#cluster-autoscaler-configuration).
+
+You can change several parameters values through kubectl command:
+
+```bash
+kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"scaleDownUnneededTimeSeconds": <a_value>, "scaleDownUnreadyTimeSeconds": <another_value>, "scaleDownUtilizationThreshold": "<and_another_one>"}}'
+```
+
+In my example cluster:
+<pre class="console"><code>$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+{
+  "antiAffinity": false,
+  "autoscale": true,
+  "desiredNodes": 3,
+  "flavor": "b2-7",
+  "maxNodes": 100,
+  "minNodes": 0,
+  "monthlyBilled": true,
+  "scaleDownUnneededTimeSeconds": 600,
+  "scaleDownUnreadyTimeSeconds": 1200,
+  "scaleDownUtilizationThreshold": "0.5"
+}
+
+$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}'
+nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
+
+$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+{
+  "antiAffinity": false,
+  "autoscale": true,
+  "desiredNodes": 3,
+  "flavor": "b2-7",
+  "maxNodes": 100,
+  "minNodes": 0,
+  "monthlyBilled": true,
+  "scaleDownUnneededTimeSeconds": 900,
+  "scaleDownUnreadyTimeSeconds": 1500,
+  "scaleDownUtilizationThreshold": "0.7"
+}
+</code></pre>
+
+For the moment, only these following parameters are editable:
+* scaleDownUnneededTimeSeconds
+* scaleDownUnreadyTimeSeconds
+* scaleDownUtilizationThreshold
+
+You can contact us through [gitter](https://gitter.im/ovh/kubernetes) if you need to edit others parameters and/or you can check our [public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
+
 ## Go further
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
