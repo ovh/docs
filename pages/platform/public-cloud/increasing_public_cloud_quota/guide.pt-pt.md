@@ -24,8 +24,8 @@ Se deseja criar mais, é necessário um aumento de quota.
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- [Ter um método de pagamento válido](../../billing/gerir-metodos-de-pagamento/) na Área de Cliente OVHcloud
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- [Ter um método de pagamento válido](../../billing/gerir-metodos-de-pagamento/) na Área de Cliente OVHcloud.
 
 ## Instruções
 
@@ -58,7 +58,7 @@ Em seguida, clique na seta descendente ao lado de "Selecione o volume" para exib
 
 A tabela abaixo mostra os recursos obtidos para cada cota:
 
-|Quota|Instances|CPU/Cores|RAM|Volume Size|Volumes|Snapshots|
+|Quota|Instâncias|CPU/Cores|RAM|Tamanho do volume|Volumes|Snapshots|
 |---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|
 |20 VMs|20|40|240GB|20TB|40|40|
@@ -74,7 +74,7 @@ Depois de selecionar o volume, clique em `Confirmar`{.action}. Seu pagamento ser
 > Uma vez que clique no botão `Confirmar`{.action}, a ordem é automaticamente criada e debitada na sua conta.
 >
 
-#### Aumentar automaticamente a sua quota de recursos através de « *Quota autoscaling* »
+#### Aumentar automaticamente a sua quota de recursos através de « Quota autoscaling »
 
 Esta opção permite solicitar um aumento automático e gradual da sua quota de recursos. Sua cota será aumentada dependendo do seu uso e com base em um certo número de critérios internos.
 
@@ -88,7 +88,7 @@ Clique no `?`{.action} para obter mais informações sobre esse recurso, clique 
 
 ![auto scaling](images/autoscaling.png){.thumbnail}
 
-Uma vez terminada a operação, *autoscaling* é ativado para o seu projeto e a sua quota de recursos é aumentada ao longo do tempo.
+Uma vez terminada a operação, *Autoscaling* é ativado para o seu projeto e a sua quota de recursos é aumentada ao longo do tempo.
 
 ### Aumentando a cota de seus projetos Public Cloud
 

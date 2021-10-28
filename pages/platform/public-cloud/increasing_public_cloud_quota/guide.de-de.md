@@ -50,7 +50,7 @@ Um eine Quota-Erhöhung zu beantragen, klicken Sie auf `Quota erhöhen`{.action}
 
 ![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
-Klicken Sie dann auf den Dropdown-Pfeil neben "Volumen auswählen", um die Liste der derzeit verfügbaren Kontingente anzuzeigen, auf die Sie Ihre Ressourcen aktualisieren können. In diesem Abschnitt wird auch der fällige Betrag angezeigt, um diese Ressourcen nutzen zu können.
+Klicken Sie dann auf den Dropdown-Pfeil neben "Wählen Sie die Menge aus", um die Liste der derzeit verfügbaren Kontingente anzuzeigen, auf die Sie Ihre Ressourcen aktualisieren können. In diesem Abschnitt wird auch der fällige Betrag angezeigt, um diese Ressourcen nutzen zu können.
 
 ![select quota](images/selectquotas.png){.thumbnail}
 

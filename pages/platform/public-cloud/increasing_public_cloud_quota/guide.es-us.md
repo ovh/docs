@@ -55,7 +55,7 @@ A continuación, haga clic en la flecha desplegable situada junto a "Seleccione 
 
 La tabla siguiente muestra los recursos que obtiene por cada cuota:
 
-|Quota|Instancias|CPU/núcleos|RAM|Tamaño del volumen|Volúmenes|Instantáneas|
+|Quota|Instancias|CPU/núcleos|RAM|Tamaño del volumen|Volúmenes|Snapshots|
 |---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|
 |20 VMs|20|40|240GB|20TB|40|40|
@@ -68,7 +68,7 @@ Una vez seleccionado el volumen, haga clic en `Confirmar`{.action}. El pago se p
 > [!warning]
 > **Tenga en cuenta que el proceso de facturación es inmediato.**
 >
-> Una vez que haga clic en `Confirmar`{.acción}, el pedido se crea automáticamente y se carga en su cuenta.
+> Una vez que haga clic en `Confirmar`{.action}, el pedido se crea automáticamente y se carga en su cuenta.
 >
 
 #### Aumentar la cuota de recursos automáticamente mediante la función « Cuota autoscaling »
@@ -85,7 +85,7 @@ En la barra lateral izquierda, haga clic en `Cuota y regiones`{.action}.
 
 ![auto scaling](images/autoscaling.png){.thumbnail}
 
-Una vez hecho, se habilitará el *autoscaling* para su proyecto y su cuota de recursos se incrementará con el paso del tiempo.
+Una vez hecho, se habilitará el *Autoscaling* para su proyecto y su cuota de recursos se incrementará con el paso del tiempo.
 
 ### Incremento de la cuota de sus proyectos Public Cloud
 

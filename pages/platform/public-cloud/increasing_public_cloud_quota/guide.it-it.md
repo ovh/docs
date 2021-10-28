@@ -23,8 +23,8 @@ Per creare di più, è necessario aumentare la quota disponibile.
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- [Disporre di una modalità di pagamento valida](../../billing/manage-payment-methods/) nello Spazio Cliente OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- [Disporre di una modalità di pagamento valida](../../billing/manage-payment-methods/) nello Spazio Cliente OVHcloud.
 
 
 ## Procedura
@@ -57,7 +57,7 @@ In seguito, clicca sulla freccia a discesa accanto a "Seleziona il volume" per v
 
 Nella tabella seguente vengono indicate le risorse disponibili per ogni quota:
 
-|Quota|Instances|CPU/Cores|RAM|Volume Size|Volumes|Snapshots|
+|Quota|Instanze|CPU/Cores|RAM|Dimensione del volume|Volumi|Snapshots|
 |---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|
 |20 VMs|20|40|240GB|20TB|40|40|
@@ -70,10 +70,10 @@ Una volta selezionato il suo volume, clicca su `Conferma`{.azione}. Il tuo pagam
 > [!warning]
 > **La procedura di fatturazione è immediata.**
 >
-> Una volta che clicca su `Conferma`{.azione}, l'ordine è creato automaticamente e addebitato sul suo conto.
+> Una volta che clicca su `Conferma`{.action}, l'ordine è creato automaticamente e addebitato sul suo conto.
 >
 
-#### Aumentare la quota di risorse automaticamente attraverso la funzione « *Quota autoscaling* »
+#### Aumentare la quota di risorse automaticamente attraverso la funzione « Quota autoscaling »
 
 Questa opzione consente di richiedere un aumento automatico e graduale della quota delle risorse. La quota verrà aumentata a seconda dell'utilizzo e in base a un certo numero di criteri interni.
 
@@ -81,13 +81,13 @@ Non si tratta di un processo immediato e la quota di risorse viene aumentata nel
 
 Accedi allo [Spazio cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud` e seleziona il tuo progetto Public Cloud.
 
-Nella barra laterale sinistra, clicca su `Quota and Regions`{.action} 
+Nella barra laterale sinistra, clicca su `Quota and Regions`{.action}. 
 
-Clicca sul pulsante `?`{.action} per maggiori informazioni su questa funzionalità, poi clicca sull' `icona interruttore`{.action} per cambiare lo stato in **Attivo**
+Clicca sul pulsante `?`{.action} per maggiori informazioni su questa funzionalità, poi clicca sull' `icona interruttore`{.action} per cambiare lo stato in **Attivo**.
 
 ![auto scaling](images/autoscaling.png){.thumbnail}
 
-Una volta fatto, *l'autoscaling* sarà abilitato per il tuo progetto e la tua quota di risorse sarà aumentata nel corso del tempo.
+Una volta fatto, *Autoscaling* sarà abilitato per il tuo progetto e la tua quota di risorse sarà aumentata nel corso del tempo.
 
 ### Aumentare la quota dei progetti Public Cloud
 

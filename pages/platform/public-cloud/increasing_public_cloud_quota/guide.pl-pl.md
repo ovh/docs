@@ -23,8 +23,8 @@ Jeśli chcesz utworzyć więcej zasobów, musisz zwiększyć limit.
 
 ## Wymagania początkowe
 
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- [Posiadanie ważnego](../../billing/zarzadzanie-sposobami-platnosci/) sposobu płatności w Panelu klienta OVHcloud
+- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- [Posiadanie ważnego](../../billing/zarzadzanie-sposobami-platnosci/) sposobu płatności w Panelu klienta OVHcloud.
 
 
 ## Wskazówki
@@ -57,7 +57,7 @@ Następnie kliknij na strzałkę rozwijaną obok "Wybierz wolumen", aby wyświet
 
 Poniższa tabela wyszczególnia zasoby, które możesz uzyskać dla każdego limitu:
 
-|Quota|Instances|CPU/Cores|RAM|Volume Size|Volumes|Snapshots|
+|Quota|Instancje|CPU/Cores|RAM|Rozmiar woluminu|Woluminy|Snapshots|
 |---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|
 |20 VMs|20|40|240GB|20TB|40|40|
