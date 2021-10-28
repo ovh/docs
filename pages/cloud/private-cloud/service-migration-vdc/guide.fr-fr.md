@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Dernière mise à jour le 18/08/2021**
+**Dernière mise à jour le 19/10/2021**
 
 > [!warning]
 >
@@ -23,7 +23,7 @@ La migration vers un nouveau vDC comporte deux aspects :
 * L'infrastructure OVHcloud elle-même, qui inclut la côté client de l'administration d'une infrastructure.
 * L'infrastructure VMware, qui inclut l'ensemble de l'écosystème VMware.
 
-**Découvez comment couvrir tous les aspects liés tous les aspects de la migration d'une infrastructure OVHcloud préexistante vers un nouveau vDC.**
+**Découvez comment couvrir tous les aspects liés à la migration d'une infrastructure OVHcloud préexistante vers un nouveau vDC.**
 
 ## Prérequis
 
@@ -87,6 +87,11 @@ Vous pouvez ajouter un vDC de destination en procédant comme suit :
 
 Cet appel API génère un bon de commande qui doit être validé. Si vous n'avez pas de moyen de paiement, merci de contacter le support ou votre Account Manager pour le faire valider.
 
+> [!primary]
+>
+> Tant que vous n’aurez pas attribué les autorisations nécessaires aux utilisateurs sur le nouveau vDC, vous ne pourrez pas voir le nouveau vDC dans le client vSphere.
+>
+
 #### Ajout de nouvelles ressources
 
 Vous pouvez procéder à la commande de nouvelles ressources dans le nouveau vDC de destination en suivant ce [guide d'informations sur la facturation Private Cloud (EN)](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly).
@@ -104,7 +109,7 @@ Exécutez l'API OVHcloud pour vérifier la compatibilité des datastores. Nous v
 
 **Résultat attendu :** boolean
 
-Si le retour API est FALSE, vos datastores ne sont pas compatibles, vous devrez commander de nouveaux datastores et utiliser VMware Storage vMotion. À cet effet, consultez nos guides « [Informations sur la facturation Private Cloud (EN)](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) » et [VMware Storage vMotion](https://docs.ovh.com/fr/private-cloud/vmware-storage-vmotion-new/).
+Si le retour API est FALSE, vos datastores ne sont pas compatibles, vous devrez commander de nouveaux datastores et utiliser VMware Storage vMotion. À cet effet, consultez nos guides « [Informations sur la facturation Private Cloud (EN)](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) » et « [VMware Storage vMotion](https://docs.ovh.com/fr/private-cloud/vmware-storage-vmotion-new/) ».
 
 Si le retour API est TRUE, vous pouvez procéder à la conversion en datastore global.
 
@@ -123,11 +128,12 @@ Exécutez l'API OVHcloud pour vérifier la compatibilité des datastores :
 
 Pour vous connecter à la plateforme VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](../changer-la-politique-d-acces-au-vcenter/).
 
-Suite au changement de politique d'accès, si celle-ci est passée en « restreinte », il faut bien sûr appliquer les mêmes IPs de connexion sur le vDC de destination que sur le vDC d'origine.
+Suite au changement de politique d'accès, si celle-ci est passée en « restreinte », le nouveau vDC héritera de la politique d'accès utilisée par le vDC d'origine.
 
 ##### **Utilisateurs du Hosted Private Cloud**
 
-Dans le cycle de vie du vDC d'origine, une liste d'utilisateurs peut avoir été créée pour des besoins métiers, ou des besoins organisationnels. Vous devez donc les créer à nouveau sur le vDC de destination et leur attribuer les droits adéquats, en fonction de la configuration du vDC de destination.
+Dans le cycle de vie du vDC d'origine, une liste d'utilisateurs peut avoir été créée pour des besoins métiers, ou des besoins organisationnels. 
+Ces utilisateurs seront également présents sur le nouveau vDC mais n'auront aucun droit sur ce nouveau vDC. Vous devrez donc attribuer les droits appropriés aux utilisateurs, en fonction de la configuration du vDC de destination.
 
 Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](../changer-les-droits-d-un-utilisateur/), [modifier le mot de passe d'un utilisateur](../changement-du-mot-de-passe-utilisateur/) et [associer un e-mail à un utilisateur](../associer-email-a-un-utilisateur/).
 
@@ -156,7 +162,7 @@ Si une option a été activée, elle reste disponible sur le vDC de destination.
 > Des VMnetworks situés dans la même région ne pourront pas être inter-connectés dans un vRack.
 >
 
-Vous pouvez, dans le cadre d'une migration, lier vos services Hosted Private Cloud au sein du même vRack. Consultez notre guide sur [l'utilisation du Private Cloud au sein d'un vRack](../utiliser-le-private-cloud-au-sein-d-un-vrack/).
+Par défaut, dans le cadre d'une migration, le nouveau vDC sera lié au même vRack que le vDC d'origine. Consultez notre guide sur [l'utilisation du Private Cloud au sein d'un vRack](../utiliser-le-private-cloud-au-sein-d-un-vrack/).
 
 ##### **Réseau public**
 
@@ -277,19 +283,29 @@ Pour ce faire, vous devez modifier la zone de transport actuelle afin d'inclure 
 
 Pour ce faire, suivez les étapes suivantes :
 
-Dans le client vSphere, rendez-vous dans `Networking and Security`{.action}, puis dans `Installation and Upgrade`{.action}.
+1\. Dans le client vSphere, rendez-vous dans `Networking and Security`{.action}, puis dans `Installation and Upgrade`{.action}.
 
-Cliquez sur l'onglet `Logical Network Settings`{.action}, puis sur l'onglet `Transport Zones`{.action}.
+2\. Cliquez sur l'onglet `Logical Network Settings`{.action}, puis sur l'onglet `Transport Zones`{.action}.
 
-Sélectionnez alors une zone de transport et cliquez sur l'option `Connect Clusters`{.action}.
+3\. Sélectionnez alors une zone de transport et cliquez sur l'option `Connect Clusters`{.action}.
 
-Sélectionnez le ou les nouveaux clusters qui se trouvent dans le vDC de destination et choisissez `Save`{.action}.
+4\. Sélectionnez le ou les nouveaux clusters qui se trouvent dans le vDC de destination et choisissez `Save`{.action}.
 
-Répétez cette opération pour toutes les zones de transport en cours d'utilisation.
+5\. Répétez cette opération pour toutes les zones de transport en cours d'utilisation.
+
+Vous pouvez également créer de nouveaux réseaux VXLAN en suivant ces étapes :
+
+1\. Dans le client vSphere, rendez-vous dans `Networking and Security`{.action}, puis dans `Logical Switches`{.action}.
+
+2\. Cliquez sur `+ Add`{.action}.
+
+3\. Donnez un nom au Switch logique/VXLAN et choisissez la zone de transport.
+
+4\. Cliquez sur `Add`{.action}.
 
 ###### **1.9.2 NSX Edges**
 
-Pour migrer une gateway Edge, nous devons demander au Manager NSX de redéployer la gateway Edge dans le vDC de destination. Cela permet d'assurer la cohérence au sein de la base de données du Manager NSX. Pour ce faire, toutes les interfaces d'une gateway Edge doivent être connectées aux réseaux qui ont un object ID valable sur tout le PCC. Les VXLANs créés lors de l'extension de la zone de transport seront utilisés dans ce but.
+Pour migrer une gateway Edge, nous devons demander au Manager NSX de redéployer la gateway Edge dans le vDC de destination. Cela permet d'assurer la cohérence au sein de la base de données du Manager NSX. Pour ce faire, il est nécessaire que toutes les interfaces d’une Edge gateway soient attachées aux VXLANs.
 
 > [!primary]
 >
@@ -300,7 +316,7 @@ Pour migrer une gateway Edge, nous devons demander au Manager NSX de redéployer
 >
 > - Si des VLANs vRack sont en cours d'utilisation, assurez-vous que les VLANs sont recréés dans le vDC de destination et que le vDC d'origine et de destination font partie du même vRack. Cela permettra la communication L2 entre les vDC.
 >
-> - Il est conseillé de créer un réseau VXLAN de nom comparable pour tout réseau VLAN qui est utilisé sur le NSX Edge. Pour éviter toute confusion lors d'allers et retours, il est recommandé d'ajouter un suffixe au nom des réseaux VXLAN temporaires (_temp, par exemple).
+> - Pour la migration Edge, tous les portgroups VLAN (y compris le VM Network) seront basculés vers des portgroups VXLAN. Le Edge sera ensuite migré vers le nouveau vDC. Enfin, une nouvelle bascule vers des portgroups VLAN sera effectuée. Nous vous conseillons de garder une trace des réseaux qui ont été basculés.
 >
 
 Vous pouvez migrer un NSX Edge en suivant ces étapes :
@@ -321,7 +337,15 @@ Vous pouvez migrer un NSX Edge en suivant ces étapes :
 
 8\. Cliquez sur l'onglet `Interfaces`{.action}.
 
-9\. L'objectif ici est de basculer toute interface connectée à un portgroup VLAN, vers un portgroup VXLAN (par exemple, le VM Network ou tout autre groupe de ports vRack).
+9\. L'objectif ici est de basculer toute interface connectée à un portgroup VLAN, vers un portgroup VXLAN. Par exemple :
+
+- Etape 1 - Sélectionnez l'interface qui est connectée au VM Network (ou tout autre portgroup VLAN)
+- Etape 2 - Cliquez sur `Edit`{.action}.
+- Etape 3 - Cliquez sur l'icône « Crayon » à côté du champ « Connected to ».
+- Etape 4 - Dans l'onglet « Logical switch », choisissez un réseau VXLAN temporaire auquel connecter cette interface. **Prenez note du mappage VLAN à VXLAN**.
+- Etape 5 - Cliquez sur `OK`{.action}.
+- Etape 6 - Cliquez sur `Save`{.action}.
+- Etape 7 - Répétez cette opération pour tous les autres portgroups VLAN.
 
 > [!primary]
 >
@@ -330,7 +354,7 @@ Vous pouvez migrer un NSX Edge en suivant ces étapes :
 > - Toute VM passant d'un réseau VLAN  à un réseau temporaire VXLAN subira une déconnexion du réseau.
 >
 
-10\. Cliquez sur l'onglet  `Appliance Settings`{.action}.
+10\. Une fois tous les réseaux VLAN transformés en réseaux VXLAN, cliquez sur l'onglet  `Appliance Settings`{.action}.
 
 11\. Sous l'en-tête `Edge Appliance VMs`, sélectionnez la roue crantée et cliquez sur  `Edit`{.action}.
 
@@ -338,13 +362,24 @@ Vous pouvez migrer un NSX Edge en suivant ces étapes :
 
 13\. La gateway Edge sera redéployée dans le vDC de destination.
 
+> [!primary]
+>
+> Si vous voyez les détails de deux edge dans la section « Edge Appliance VMs » même si vous avez désactivé HA, vous devrez soit répéter les étapes ci-dessus pour migrer cette edge « fantôme », soit cliquer sur la roue crantée pour cette edge fantôme et « non déployée » et cliquer sur `Supprimer`{.action}.
+
 14\. Une fois la tâche de redéploiement terminée, cliquez sur l'onglet `Configure`{.action}.
 
 15\. Cliquez sur l'onglet `Interfaces`{.action}.
 
 16\. L'objectif ici est de rétablir tout réseau VLAN qui a été modifié en réseau VXLAN à l'étape 9, et de revenir au réseau VLAN correct qui existe dans le nouveau vDC.
 
-17\. Répétez cette opération pour tous les autres NSX Edge.
+17\. Réactivez HA sur la Edge.
+
+18\. Répétez cette opération pour tous les autres NSX Edge.
+
+> [!primary]
+>
+> Si vous avez migré la Edge alors que HA était activé et que vous rencontrez des problèmes de connectivité, il est recommandé de basculer les edge HA et de tester à nouveau. Pour ce faire, accédez à `Configure`{.action}, `Appliance Settings`{.action} et sélectionnez la roue crantée de la edge active, puis sélectionnez `Set Admin State Down`{.action}. Testez à nouveau puis repassez le statut admin à « Up ».
+>
 
 ###### **1.9.3 Routage logique distribué NSX**
 
@@ -353,6 +388,8 @@ Une fois que la zone de transport NSX a été étendue au nouveau vDC, le routag
 Les routeurs logiques distribués NSX ne doivent être migrés que lorsqu'une VM de contrôle est déployée en appui du DLR qui facilite le routage dynamique.
 
 Si une VM de contrôle est déployée, suivez les étapes de migration NSX Edge ci-dessus.
+
+Notez qu’il n’est pas nécessaire de changer d’interface car les DLR **doivent** déjà se connecter aux VXLANs.
 
 ###### **1.9.4 Pare-feu distribué NSX**
 
@@ -429,6 +466,8 @@ Voici une liste des aspects à prendre en compte:
 
 - Chipsets de CPU hôte ESXi sur les vDC d'origine et de destination
 - Modes EVC sur les clusters d'origine et de destination
+- Les versions vDS sont les mêmes entre le vDC d'origine et le vDC de destination
+
 
 > [!primary]
 > Il est recommandé de tester le chemin de migration avec des VMs à faible impact ou de tester les VMs avant la migration de production.

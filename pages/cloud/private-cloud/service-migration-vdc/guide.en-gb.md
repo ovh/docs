@@ -334,13 +334,13 @@ You can migrate an NSX Edge by following these steps:
 
 9\. In here the goal is  to change any interface that is connected to a VLAN backed portgroup, to a VXLAN backed portgroup. For example:
 
-    Step 1 - Select the interface that is connected to the VM Network (or any other VLAN portgroup)
-    Step 2 - Select `Edit`{.action}.
-    Step 3 - Click the "pencil" icon next to the "Connected to" field.
-    Step 4 - In the "Logical switch" tab, choose a temporary VXLAN network to connect this interface to. **Keep note of the VLAN to VXLAN mapping**.
-    Step 5 - Click `OK`{.action}.
-    Step 6 - Click `Save`{.action}.
-    Step 7 - Repeat for all other VLAN backed portgroups.
+- Step 1 - Select the interface that is connected to the VM Network (or any other VLAN portgroup)
+- Step 2 - Select `Edit`{.action}.
+- Step 3 - Click the "pencil" icon next to the "Connected to" field.
+- Step 4 - In the "Logical switch" tab, choose a temporary VXLAN network to connect this interface to. **Keep note of the VLAN to VXLAN mapping**.
+- Step 5 - Click `OK`{.action}.
+- Step 6 - Click `Save`{.action}.
+- Step 7 - Repeat for all other VLAN backed portgroups.
 
 > [!primary]
 >
