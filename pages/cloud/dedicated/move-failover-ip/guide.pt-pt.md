@@ -14,7 +14,7 @@ Os IP Failover podem ser migrados entre os serviços que utiliza. O interesse é
 Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra em menos de um minuto, praticamente sem qualquer interrupção para os seus utilizadores. Pode ser utilizada durante as migrações de serviços (deslocação dos projetos do ambiente de desenvolvimento para o de produção, por exemplo) ou aquando da migração para um servidor de recurso em caso de falha.
 
 > [!primary]
-> Um IP Fail Over não pode ser migrado de uma zona para outra. Por exemplo, um IP situado no datacenter SBG poderá ser migrado para GRA ou RBX mas não poderá ser migrado para BHS.
+> Um IP Failover não pode ser migrado de uma zona para outra. Por exemplo, um IP situado no datacenter SBG poderá ser migrado para GRA ou RBX mas não poderá ser migrado para BHS.
 >
 > A migração só funciona para blocos inteiros, não é possível migrar IPs individuais dentro de um bloco.
 

@@ -18,7 +18,7 @@ Gli IP Failover possono essere trasferiti tra i servizi utilizzati. L'interesse 
 Questa tecnologia permette di scambiare gli indirizzi IP da una soluzione all'altra in meno di un minuto, praticamente senza alcuna interruzione per i tuoi utenti. Può essere utilizzata in caso di migrazione di servizi (ad esempio, spostamento dei progetti dall'ambiente di sviluppo a quello di produzione) o in caso di trasferimento verso un server di backup in caso di guasto.
 
 > [!primary]
-> Un IP FailOver non può essere spostato da una zona all'altra. Ad esempio, un IP situato nel datacenter SBG potrà essere spostato verso GRA o RBX ma non potrà essere spostato verso BHS.
+> Un IP Failover non può essere spostato da una zona all'altra. Ad esempio, un IP situato nel datacenter SBG potrà essere spostato verso GRA o RBX ma non potrà essere spostato verso BHS.
 > 
 > Solo l'intero blocco può essere spostato, non è possibile migrare i singoli IP all'interno di un blocco.
 
