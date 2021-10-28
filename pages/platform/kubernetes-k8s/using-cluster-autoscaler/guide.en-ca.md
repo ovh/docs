@@ -28,7 +28,7 @@ order: 6
  }
 </style>
 
-**Last updated July 27<sup>th</sup>, 2021.**
+**Last updated October 28<sup>th</sup>, 2021.**
 
 ## Objective
 
