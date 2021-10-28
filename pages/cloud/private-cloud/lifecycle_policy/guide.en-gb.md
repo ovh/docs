@@ -37,12 +37,6 @@ Hosted Private Cloud
 * DC2014 & DC2016 (AMD PileDriver)
 * SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell)
 * SDDC2018 (Intel Broadwell, Intel Haswell)
-* Premier (Intel Cascade Lake)
-
-Managed Bare Metal 
-
-* Essentials (Intel Broadwell)
-
 
 
 ## Lifecycle timeframe and definitions
@@ -66,16 +60,6 @@ This refers to the date when the growth for a commercial range or version is dis
 The End of Sales are usually announced with a thirty (30) days minimum warning.
 
 A commercial range or version will typically reach its End of Growth five(5) years after the beginning of the General Availability phase.
-
-#### End of Support - Applicable only for Essentials and Premier commercial ranges
-
-This refers to the date when a commercial range or version ceases to have support from OVHcloud.
-
-The End of Life may involve the unapplicability of SLAs, and the absence of support services, limited availability of spares, hardware delivery without any guaranteed specific timeframe.
-
-The End of Support are usually announced with a thirty (30) days minimum warning.
-
-A commercial range or version will typically reach its End of Support five (5) years after the beginning of the General Availability phase.
 
 #### End of Life 
 
@@ -121,14 +105,12 @@ This table presents a summary of the different phases of the lifecycle of the se
 | DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | not applicable | 31/07/2022 |
 | SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2023 | not applicable | 31/08/2023 |
 | SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2024 | not applicable | 31/08/2024 |
-| Premier (Intel Cascade Lake) | 20/07/2020 |  |  |  |  |
-| Essentials (Intel Broadwell) | 18/11/2020 |  |  |  |  |
 
 
 ### Datastores (storage)
 
 | Datastore | General Availability | End of Sales | End of Growth | End of Life |
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|:-----:|:-----:|:-----:|:-----:|:-----:|
 | 300/600Gb HDD based datastores (300Gb, 1200Gb, 3300Gb, 6600Gb, 13000Gb) | 2013 | 28/02/2015 | 31/03/2022 | 31/10/2022 |
 | 800Gb SSD based datastores (800Gb, 1600Gb, 2400Gb) | 2013 | 28/02/2015 | 31/03/2022 | 31/10/2022 |
 | 1200Gb HDD based datastores (1200Gb, 3300Gb, 6600Gb, 13000Gb) | 2016 | 31/08/2017 | 31/03/2022 | 31/10/2022 |
@@ -140,17 +122,18 @@ This table presents a summary of the different phases of the lifecycle of the se
 ### VMware lifecycle policy
 
 To know the lifecycle policy of VMware products, please refer to the editor's publication accessible at the following url :
-<https://lifecycle.vmware.com/#/>
+[VMware Product Lifecycle](https://lifecycle.vmware.com/#/)
 
 ### Veeam Backup & Replication lifecycle policy
 
 To know the lifecycle policy of Veeam products, please refer to the editor's publications accessible at the following urls :
-<https://www.veeam.com/product-lifecycle.html and <https://www.veeam.com/releasestatus_rn.pdf>
+[Veeam Version release](https://www.veeam.com/releasestatus_rn.pdf)
+[Veeam Product Version Lifecycle](https://www.veeam.com/product-lifecycle.html)
 
 ### Zerto lifecycle policy
 
 To know the lifecycle policy of Zerto products, please refer to the editor's publication accessible at the following url :
-<http://s3.amazonaws.com/zertodownload_docs/Latest/Zerto+Virtual+Replication+Product+Version+Lifecycle+Matrix.pdf>
+[Zerto Virtual Replication Product Version Lifecycle Matrix](http://s3.amazonaws.com/zertodownload_docs/Latest/Zerto+Virtual+Replication+Product+Version+Lifecycle+Matrix.pdf)
 
 ## Go further
 
