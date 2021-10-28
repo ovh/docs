@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated August 2<sup>nd</sup>, 2021.**
+**Last updated 19<sup>th</sup> October 2021.**
 
 <style>
  pre {
@@ -40,7 +40,8 @@ A node can run up to 110 pods. This limit does not depend on node flavor.
 
 In general, it is better to have several mid-size Kubernetes clusters than a monster-size one.
 
-To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable. Note that any operation requested to our services, like node deletions or updates, will be performed even if Kubernetes budget restrictions are present.
+To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable.  
+Note that any operation requested to our services, like node deletions or updates, will be performed even if Kubernetes budget restrictions are present.
 
 Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH as root into your nodes.
 
@@ -76,15 +77,17 @@ In any case, there are some ports that you shouldn't block on your instances if 
 
 ### Ports to open from public network (INPUT)
 
-- TCP Port 22 (*ssh*): needed for nodes management by OVH
+- TCP Port 22 (*ssh*): needed for nodes management by OVHcloud
 - TCP Port 10250 (*kubelet*): needed for [communication from apiserver to worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
 - TCP Ports from 30000 to 32767 (*NodePort* services port range): needed for [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) and [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) services
+- TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
 
 ### Ports to open from instances to public network (OUTPUT)
 
-- TCP Port 8090 (*internal service*): needed for nodes management by OVH
-- UDP Port 123: needed to allow NTP servers synchronization (*systemd-timesync*)
-- TCP/UDP Port 53: needed to allow domain name resolution (*systemd-resolve*)
+- TCP Port 8090 (*internal service*): needed for nodes management by OVHcloud
+- UDP Port 123 (*systemd-timesync*): needed to allow NTP servers synchronization
+- TCP/UDP Port 53 (*systemd-resolve*): needed to allow domain name resolution
+- TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
 
 ### Ports to open from others worker nodes (INPUT/OUPUT)
 
@@ -126,6 +129,6 @@ The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.s
 
 For more details, please refer to the [Resizing Persistent Volumes documentation](../resizing-persistent-volumes/).
 
-The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.
-A worker node can get attached to a maximum of 25 persistent volumes, and a persistent volume can only be attached to a single worker node.
+The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.  
+A worker node can get attached to a maximum of 25 persistent volumes, and a persistent volume can only be attached to a single worker node.  
 You can manually [configure multi-attach persistent volumes with NAS-HA](../Configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/).

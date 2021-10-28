@@ -2,8 +2,8 @@
 title: 'Changelog des images Public Cloud & VPS'
 slug: changelog-images
 excerpt:  Découvrez les modifications apportées dans les images fournies sur les solutions Public Cloud et VPS
-section: 'Premiers pas'
-order: 8
+section: 'Informations générales'
+order: 03
 ---
 
 **Dernière mise à jour le 18/01/2020**

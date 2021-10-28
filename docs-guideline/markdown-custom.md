@@ -189,6 +189,24 @@
 
 ![api](images/api.png)
 
+## Tabs
+
+```md
+/* markdown */
+
+> [!tabs]
+> Tab title 1
+>> Some *content*
+> Tab title 2
+>> {!> path/to/file.md !}
+> Tab title 3
+>> ```
+>> {!> path/to/file.md !}
+>> ```
+```
+
+An example can be found here : [guide source](https://github.com/ovh/docs/blob/master/pages/web/web-paas/languages-python/guide.en-gb.md) & [rendered version](https://docs.ovh.com/gb/en/web-paas/languages-python/).
+
 ## Advanced
 
 You can mix different custom syntax

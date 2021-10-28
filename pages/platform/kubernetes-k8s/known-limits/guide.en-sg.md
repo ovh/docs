@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated May 11, 2021.**
+**Last updated 19<sup>th</sup> October 2021.**
 
 <style>
  pre {
@@ -40,7 +40,8 @@ A node can run up to 110 pods. This limit does not depend on node flavor.
 
 In general, it is better to have several mid-size Kubernetes clusters than a monster-size one.
 
-To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable. Note that any operation requested to our services, like node deletions or updates, will be performed even if Kubernetes budget restrictions are present.
+To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable.  
+Note that any operation requested to our services, like node deletions or updates, will be performed even if Kubernetes budget restrictions are present.
 
 Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH as root into your nodes.
 
@@ -57,7 +58,7 @@ There is also a limit of __10 open ports__ on every `LoadBalancer`, and these po
 
 ## OpenStack
 
-Our Managed Kubernetes service is based on OpenStack, and your nodes and persistent volumes are built on it, using OVH Public Cloud. As such, you can see them in the `Compute` > `Instances` section of [OVH Public Cloud Manager](https://www.ovh.com/manager/public-cloud/). It doesn't mean that you can deal directly with these nodes and persistent volumes as other cloud instances.  
+Our Managed Kubernetes service is based on OpenStack, and your nodes and persistent volumes are built on it, using OVH Public Cloud. As such, you can see them in the `Compute` > `Instances` section of [OVH Public Cloud Manager](https://www.ovh.com/manager/public-cloud/). It doesn't mean that you can deal directly with these nodes and persistent volumes as other cloud instances.
 
 The *managed* part of OVHcloud Managed Kubernetes Service means that we have configured those nodes and volumes to be part of our Managed Kubernetes.  
 Please refrain from manipulating them from the *OVH Public Cloud Manager* (modifying ports left opened, renaming, resizing volumes...), as you could break them.
@@ -66,7 +67,7 @@ There is also a limit of __20__ Managed Kubernetes Services by Openstack project
 
 ### Node naming
 
-Due to known limitations currently present in the `Kubelet` service, be careful to set __a unique name__ to all your Openstack instances running in your tenant __including__ your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.  
+Due to known limitations currently present in the `Kubelet` service, be careful to set __a unique name__ to all your Openstack instances running in your tenant __including__ your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.
 
 The usage of the __period (`.`)__ character is forbidden in node name. Please, prefer the __dash__ (`-`) character instead.
 
@@ -76,15 +77,17 @@ In any case, there are some ports that you shouldn't block on your instances if 
 
 ### Ports to open from public network (INPUT)
 
-- TCP Port 22 (*ssh*): needed for nodes management by OVH
+- TCP Port 22 (*ssh*): needed for nodes management by OVHcloud
 - TCP Port 10250 (*kubelet*): needed for [communication from apiserver to worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
 - TCP Ports from 30000 to 32767 (*NodePort* services port range): needed for [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) and [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) services
+- TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
 
 ### Ports to open from instances to public network (OUTPUT)
 
-- TCP Port 8090 (*internal service*): needed for nodes management by OVH
-- UDP Port 123: needed to allow NTP servers synchronization (*systemd-timesync*)
-- TCP/UDP Port 53: needed to allow domain name resolution (*systemd-resolve*)
+- TCP Port 8090 (*internal service*): needed for nodes management by OVHcloud
+- UDP Port 123 (*systemd-timesync*): needed to allow NTP servers synchronization
+- TCP/UDP Port 53 (*systemd-resolve*): needed to allow domain name resolution
+- TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
 
 ### Ports to open from others worker nodes (INPUT/OUPUT)
 
@@ -93,7 +96,7 @@ In any case, there are some ports that you shouldn't block on your instances if 
 
 ## Private Networks
 
-The `vRack` feature is currently available and compliant with our Managed Kubernetes Service.  
+The `vRack` feature is currently available and compliant with our Managed Kubernetes Service.
 
 To prevent any conflict, we advise you to keep `DHCP` service running in your private network.
 
@@ -126,6 +129,6 @@ The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.s
 
 For more details, please refer to the [Resizing Persistent Volumes documentation](../resizing-persistent-volumes/).
 
-The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.
-A worker node can get attached to a maximum of 25 persistent volumes, and a persistent volume can only be attached to a single worker node.
+The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.  
+A worker node can get attached to a maximum of 25 persistent volumes, and a persistent volume can only be attached to a single worker node.  
 You can manually [configure multi-attach persistent volumes with NAS-HA](../Configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/).

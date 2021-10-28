@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment instancier un VPS avec l’application cPanel pré-
 section: 'Utilisation avancée'
 ---
 
-**Dernière mise à jour le 16/09/2021**
+**Dernière mise à jour le 14/10/2021**
 
 ## Objectif
 

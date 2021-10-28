@@ -466,7 +466,7 @@ Afin d'autoriser toutes les requêtes en provenance du domaine `example.com` à 
 swift post <conteneur> -r ".r:.example.com"
 ```
 
-> {!primary}
+> [!primary]
 >
 > Bien que la plupart des navigateurs modernes incluent l'en-tête `Referrer` dans leurs requêtes, cela constitue un risque de sécurité car il est tout à fait possible de changer la valeur de cet en-tête.
 >

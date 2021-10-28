@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Last updated 18th August 2021**
+**Last updated 19th October 2021**
 
 > [!warning]
 >
@@ -87,6 +87,11 @@ You can add a destination vDC following those steps:
 
 This API call generates an order that needs to be validated. If you don’t have a payment method, please contact your support team or Account Manager to get it validated.
 
+> [!primary]
+>
+> You will not be able to see the new vDC in the vSphere client until you have assigned the correct permissions to users for the new vDC.
+>
+
 #### Adding new ressources
 
 You can proceed with ordering new resources to the new Destination vDC following this [Information about Dedicated Cloud billing](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) guide.
@@ -123,11 +128,11 @@ Run the OVHcloud API to check datastores compatibility:
 
 For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](../modify-vcenter-access-policy/) for details.
 
-If the access policy has been changed to "Restricted", you will need to apply the same connection IPs to the destination vDC as to the source vDC.
+If the access policy has been changed to "Restricted", the new vDC will inherit the access policy that the source vDC uses.
 
 ##### **Hosted Private Cloud users**
 
-In the lifecycle of the source vDC, a list of users may have been created for business or organisational needs. You must therefore create them again on the destination vDC and assign them the appropriate rights, depending on the configuration of the destination vDC.
+In the lifecycle of the source vDC, a list of users may have been created for business or organisational needs. These users will also be present on the new vDC but will have no permissions on this new vDC. You must therefore assign the users the appropriate rights, depending on the configuration of the destination vDC.
 
 To do this, please refer to our guides on [Changing user rights](../change-users-rights/), [Changing the User Password](../changing-user-password/) and [Associating an email with a vSphere user](../associate-email-with-vsphere-user/).
 
@@ -155,7 +160,7 @@ If an option has been enabled, they stay available on the destination vDC.
 > VMnetworks located in the same region cannot be interconnected in a vRack.
 >
 
-As part of a migration process, you can link your Hosted Private Cloud services within the same vRack. Please consult our guide to [Using Private Cloud within a vRack](../using-private-cloud-with-vrack/).
+As part of a migration process, by default, the new vDC will be linked to the same vRack as the source vDC. Please consult our guide to [Using Private Cloud within a vRack](../using-private-cloud-with-vrack/).
 
 ##### **Public network**
 
@@ -273,19 +278,29 @@ To achieve this, we need to edit the current Transport Zone to include the new c
 
 You can do this by following these steps:
 
-In the vSphere Client navigate to `Networking and Security`{.action} then to `Installation and Upgrade`{.action}. 
+1\. In the vSphere Client navigate to `Networking and Security`{.action} then to `Installation and Upgrade`{.action}.
 
-Click the `Logical Network Settings`{.action} tab then the `Transport Zones`{.action} tab. 
+2\. Click the `Logical Network Settings`{.action} tab then the `Transport Zones`{.action} tab.
 
-Select a Transport Zone in here and click the `Connect Clusters`{.action} option.
+3\. Select a Transport Zone in here and click the `Connect Clusters`{.action} option.
 
-Select the new cluster(s) that are within the destination vDC and choose `Save`{.action}.
+4\. Select the new cluster(s) that are within the destination vDC and choose `Save`{.action}.
 
-Repeat for all, in-use, Transport Zones.
+5\. Repeat for all, in-use, Transport Zones.
+
+You can also create new VXLAN networks by following these steps:
+
+1\. In the vSphere Client navigate to `Networking and Security`{.action} then to `Logical Switches`{.action}.
+
+2\. Click `+ Add`{.action}.
+
+3\. Give the Logical Switch/VXLAN a name and choose the Transport Zone.
+
+4\. Click `Add`{.action}.
 
 ###### **1.9.2 NSX Edges**
 
-To migrate an edge gateway, we need to instruct NSX manager to redeploy the edge gateway into the destination vDC. This is to ensure consistency within the NSX manager database. To do this, we need all interfaces on an edge gateway to be attached to networks that have a PCC-wide object ID. The VXLANs that were created when we extended the Transport Zone will be used for this.
+To migrate an edge gateway, we need to instruct NSX manager to redeploy the edge gateway into the destination vDC. This is to ensure consistency within the NSX manager database. To do this, we need all interfaces on an edge gateway to be attached to VXLANs.
 
 > [!primary]
 >
@@ -295,8 +310,8 @@ To migrate an edge gateway, we need to instruct NSX manager to redeploy the edge
 > **Prerequisites:**
 >
 > - If vRack VLANs are in use, ensure that the VLANs are re-created in the destination vDC and that the source and destination vDC are part of the same vRack. This will allow for L2 communication between vDCs.
-> 
-> - It is advised that for any VLAN backed network that is in use on the NSX edge, a comparably named VXLAN network is created.  To reduce confusion when switching back and forth it is recommended that the temporary VXLAN networks have something appended to the name (_temp for example).
+>
+> - For the edge migration, we will be switching all VLAN portgroups (including the VM Network) to VXLAN portgroups. Then we will migrate the edge to the new vDC. After this we will revert to VLAN portgroups. It is advised to keep track of what networks were switched.
 >
 
 You can migrate an NSX Edge by following these steps:
@@ -317,7 +332,15 @@ You can migrate an NSX Edge by following these steps:
 
 8\. Click the `Interfaces`{.action} tab.
 
-9\. In here the goal is to change any interface that is connected to a VLAN backed portgroup, to a VXLAN backed portgroup (for example, the VM Network or any vRack port-group). 
+9\. In here the goal is  to change any interface that is connected to a VLAN backed portgroup, to a VXLAN backed portgroup. For example:
+
+- Step 1 - Select the interface that is connected to the VM Network (or any other VLAN portgroup)
+- Step 2 - Select `Edit`{.action}.
+- Step 3 - Click the "pencil" icon next to the "Connected to" field.
+- Step 4 - In the "Logical switch" tab, choose a temporary VXLAN network to connect this interface to. **Keep note of the VLAN to VXLAN mapping**.
+- Step 5 - Click `OK`{.action}.
+- Step 6 - Click `Save`{.action}.
+- Step 7 - Repeat for all other VLAN backed portgroups.
 
 > [!primary]
 >
@@ -326,7 +349,7 @@ You can migrate an NSX Edge by following these steps:
 > - Any VMs on a VLAN backed network that changes to a temporary VXLAN backed network will see network downtime
 >
 
-10\. Click the `Appliance Settings`{.action} tab.
+10\. Once all VLAN networks have been changed to VXLAN networks, click the `Appliance Settings`{.action} tab.
 
 11\. Under the “Edge Appliance VMs” heading select the cog and `Edit`{.action}.
 
@@ -334,21 +357,35 @@ You can migrate an NSX Edge by following these steps:
 
 13\. The edge gateway will redeploy into the destination vDC.
 
+> [!primary]
+>
+> If you see details for two edges in the "Edge Appliance VMs" section even though you have disabled HA, you will need to either repeat the above steps to migrate this "ghost" edge, or select the cog for the ghost, "undeployed" edge and select `Delete`{.action}.
+>
+
 14\. Once the redeploy task is completed click the `Configure`{.action} tab.
 
 15\. Click the `Interfaces`{.action} tab.
 
 16\. In here the goal is to revert any VLAN backed network that was changed to VXLAN backed in step 9, back to the correct VLAN backed network that exists in the new vDC.
 
-17\. Repeat for all other NSX Edges.
+17\. Re-enable HA on the edge.
+
+18\. Repeat for all other NSX Edges.
+
+> [!primary]
+>
+> If you migrated the edge while HA was enabled and you are experiencing connectivity problems, it is recommended to failover the HA edges and re-test. This can be done by going to `Configure`{.action}, `Appliance Settings`{.action} and selecting the cog for the active edge then selecting `Set Admin State Down`{.action}. Re-test and change the admin state back to "Up".
+>
 
 ###### **1.9.3 NSX Distributed Logical Routing**
 
-Once the NSX Transport Zone has been extended to the new vDC, Distributed Logical Routing will be available in the ESXi hosts on the destination vDC. 
+Once the NSX Transport Zone has been extended to the new vDC, Distributed Logical Routing will be available in the ESXi hosts on the destination vDC.
 
 NSX Distributed Logical routers only need to be migrated when there is a Control VM deployed along side the DLR that facilitates dynamic routing.
 
 If a control VM is deployed, please follow the NSX Edge migration steps above.
+
+Note that you will not need to change interfaces as DLRs **must** already connect to VXLANs.
 
 ###### **1.9.4 NSX Distributed Firewall**
 
@@ -425,6 +462,7 @@ Here is a checklist of aspects to take into account:
 
 - ESXi host CPU chipsets on source and destination vDCs
 - EVC modes on source and destination Clusters
+- vDS versions are the same between source and destination vDC
 
 > [!primary]
 > It is recommended to test the migration path with low-impact or test VMs before production migration.
