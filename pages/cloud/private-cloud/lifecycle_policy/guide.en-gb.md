@@ -21,10 +21,10 @@ OVHcloud's Hosted Private Cloud VMware service proposes dedicated infrastructure
 
 OVHcloud has a lifecycle policy for the service in order to take into account several factors, such as:
 
-- the lifecycle policy of integrated software components as determined by their editors (VMware, Veeam, Zerto, etc.);
-- the lifecycle of the hardware components;
-- the compatibility between hardware and/or software components;
-- any factor affecting the quality of the service.
+* the lifecycle policy of integrated software components as determined by their editors (VMware, Veeam, Zerto, etc.);
+* the lifecycle of the hardware components;
+* the compatibility between hardware and/or software components;
+* any factor affecting the quality of the service.
 
 
 This lifecycle policy is provided to help clients understand the underlying reasons for version or range changes and the impact of each phase of the lifecycle on the service, and anticipate and prepare the transition to newer version or range.
@@ -33,13 +33,15 @@ This lifecycle policy is provided to help clients understand the underlying reas
 
 Hosted Private Cloud
 
+* DC2011 & DC2013 (AMD Opteron, AMD Bulldozer)
+* DC2014 & DC2016 (AMD PileDriver)
+* SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell)
+* SDDC2018 (Intel Broadwell, Intel Haswell)
+* Premier (Intel Cascade Lake)
 
-- DC2011 & DC2013 (AMD Opteron, AMD Bulldozer)
-- DC2014 & DC2016 (AMD PileDriver)
-- SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell)
-- SDDC2018 (Intel Broadwell, Intel Haswell)
-- Premier (Intel Cascade Lake)
-- Essentials (Intel Broadwell)
+Managed Bare Metal 
+
+* Essentials (Intel Broadwell)
 
 
 
@@ -118,7 +120,7 @@ This table presents a summary of the different phases of the lifecycle of the se
 | DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | not applicable | 31/07/2022 |
 | DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | not applicable | 31/07/2022 |
 | SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2023 | not applicable | 31/08/2023 |
-| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/02/2024 | not applicable | 31/08/2024 |
+| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2024 | not applicable | 31/08/2024 |
 | Premier (Intel Cascade Lake) | 20/07/2020 |  |  |  |  |
 | Essentials (Intel Broadwell) | 18/11/2020 |  |  |  |  |
 
@@ -130,7 +132,7 @@ This table presents a summary of the different phases of the lifecycle of the se
 | 300/600Gb HDD based datastores (300Gb, 1200Gb, 3300Gb, 6600Gb, 13000Gb) | 2013 | 28/02/2015 | 31/03/2022 | 31/10/2022 |
 | 800Gb SSD based datastores (800Gb, 1600Gb, 2400Gb) | 2013 | 28/02/2015 | 31/03/2022 | 31/10/2022 |
 | 1200Gb HDD based datastores (1200Gb, 3300Gb, 6600Gb, 13000Gb) | 2016 | 31/08/2017 | 31/03/2022 | 31/10/2022 |
-| 3000Gb SSD based datastores (3Tb, 6Tb, 9Tb, 18Tb, 36Tb) | 2016 | 30/11/2018 | 31/03/2022 | 31/10/2022 |
+| 3000Gb SSD based datastores (3Tb, 6Tb, 9Tb, 18Tb, 36Tb) | 2018 |  |  |  |
 
 
 ## Integrated Software
