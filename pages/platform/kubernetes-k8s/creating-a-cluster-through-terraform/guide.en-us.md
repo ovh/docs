@@ -9,41 +9,42 @@ section: Getting started
 
 ## Objective
 
-Creating a OVHcloud Managed Kubernetes cluster through the OVHcloud Control Panel is cool but do you know you can deploy a cluster programmatically, with Terraform?
+Creating an OVHcloud Managed Kubernetes cluster through the OVHcloud Control Panel is cool but do you know you can deploy a cluster programmatically, with Terraform?
 
 ## Terraform
 
-[Terraform](https://www.terraform.io/), is an open-source infrastructure as code (IaC) tool created by [Hashicorp](https://www.hashicorp.com/) in 2014, written in Go. It aims to build, change and version control your infrastructure. You can define and provision your infrastructure by writing the definition of your resources in Hashicorp Configuration Language (HCL).
+[Terraform](https://www.terraform.io/) is an open-source infrastructure as code (IaC) tool created by [Hashicorp](https://www.hashicorp.com/) in 2014, written in Go. It aims to build, change and version control your infrastructure. You can define and provision your infrastructure by writing the definition of your resources in Hashicorp Configuration Language (HCL).
 
-This tool have a powerful and very intuitive command line interface (CLI).
-If you are interested to leverage your knowledge about Terraform CLI, a [Cheat Sheet](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf){.external} exists.
+This tool has a powerful and very intuitive command line interface (CLI).
+If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat Sheet](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf){.external} exists.
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-us/public-cloud/) in your OVHcloud account
-- [Install Terraform CLI](https://www.terraform.io/downloads.html){.external}
+- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
+- Installing [Terraform CLI](https://www.terraform.io/downloads.html){.external}
 
 ## Before you begin
 
-* You should have installed Terraform CLI, version 0.12.x minimum, in your machine. You can install it with [detailed installation instructions](){.external} or with [tfenv](https://github.com/tfutils/tfenv){.external} tool.
+* You should have installed Terraform CLI, version 0.12.x minimum, on your machine. You can install it by following [detailed installation instructions](https://www.terraform.io/docs/cli/index.html){.external} or with the tool [tfenv](https://github.com/tfutils/tfenv){.external}.
 
 ## OVHcloud Terraform provider
 
 ![Terraform](images/ovh-loves-terraform.png){.thumbnail}
 
-In order to create a Kubernetes cluster, and others resources, OVHcloud provides a [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external} which is available in the official Terraform registry.
+In order to create a Kubernetes cluster and other resources, OVHcloud provides a [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external} which is available in the official Terraform registry.
 
 All available resources and data sources have their definition and documentation.
 
 In this guide, we will create two resources:
-* a [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube){.external}, that represent a OVH managed Kubernetes cluster
-* and a [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool){.external}, that represent a Kubernetes Node Pool
+
+* a [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube){.external}, that represents an OVHcloud managed Kubernetes cluster
+* and a [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool){.external}, that represents a Kubernetes Node Pool
 
 ![Kubernetes cluster and node pool](images/cluster-and-node-pool.png){.thumbnail}
 
 ## Getting your cluster/API tokens information
 
-The OVH provider needs to be configured with a set of credentials:
+The "OVH provider" needs to be configured with a set of credentials:
 
 * an `application_key`
 * an `application_secret`
@@ -51,17 +52,17 @@ The OVH provider needs to be configured with a set of credentials:
 
 Why?
 
-Because, behind the scene, the OVH Terraform provider is doing requests to OVHcloud APIs. 
+Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve theses needed informations, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/) tutorial.
 
-When you have successfully generated your OVH tokens, please keep them. You'll have to defined them in the coming minutes ;-).
+When you have successfully generated your OVH tokens, please keep them. You'll have to define them in the coming minutes ;-).
 
-A latest needed information, is the `service_name`: it is the ID of your Public Cloud project.
+The last needed information is the `service_name`: it is the ID of your Public Cloud project.
 
 How to get it?
 
-In Public Cloud section, you can retrieve your service name ID thanks to `Copy to clipboard`{.action} button.
+In the Public Cloud section, you can retrieve your service name ID thanks to the `Copy to clipboard`{.action} button.
 
 ![Copy paste service name](images/get-service-name.png){.thumbnail}
 
@@ -73,7 +74,8 @@ When you want to manage (create, modify, and remove) your infrastructure, gettin
 Just create files ending with `.tf` containing the description of the resources you want to have.
 
 In our case, we want to create:
-* a OVHcloud managed Kubernetes cluster
+
+* an OVHcloud managed Kubernetes cluster
 * a nodepool
 
 So, let's start!
@@ -93,7 +95,7 @@ provider "ovh" {
 }
 ```
 
-Here, we defined `ovh-eu` endpoint, because we want to call OVHcloud Europe API, but another endpoints exists depending on your needs:
+Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API, but other endpoints exist, depending on your needs:
 
 * `ovh-eu` for OVHcloud Europe API
 * `ovh-us` for OVHcloud US API
@@ -129,7 +131,8 @@ resource "ovh_cloud_project_kube_nodepool" "node_pool" {
 }
 ```
 
-In this resources definition, we ask to Terraform to create a Kubernetes cluster, in GRA7 region, with the Kubernetes version equals to 1.22 (the last and recommended version at the time we wrote this tutorial).
+In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA7 region, using the Kubernetes version 1.22 (the last and recommended version at the time we wrote this tutorial).
+
 And we tell Terraform to create a Node Pool with 3 Nodes with B2-7 machine type.
 
 Finally, create a `output.tf` file with the following content:
@@ -142,9 +145,9 @@ output "kubeconfig" {
 
 With this output, we tell Terraform to retrieve the `kubeconfig file` content. This information is needed to connect to the new Kubernetes cluster.
 
-For your information, outputs are useful to retrieve and display specific informations after the resources creation.
+For your information, outputs are useful to retrieve and display specific information after the resources creation.
 
-Your code organization should be like this: 
+Your code organisation should be like this: 
 
 ```
 .
@@ -157,7 +160,7 @@ Your code organization should be like this:
 
 ### Create our cluster through Terraform
 
-Now we need to initialize Terraform, generate a plan, and apply it.
+Now we need to initialise Terraform, generate a plan, and apply it.
 
 ```bash
 $ terraform init
@@ -187,14 +190,14 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
 
-The `init` command will initialize your working directory which contains `.tf` configuration files.
+The `init` command will initialise your working directory which contains `.tf` configuration files.
 
 It’s the first command to execute for a new configuration, or after doing a checkout of an existing configuration in a given git repository for example.
 
 The `init` command will:
 
 * Download and install Terraform providers/plugins
-* Initialize backend (if defined)
+* Initialise backend (if defined)
 * Download and install modules (if defined)
 
 Now, we can generate our plan:
@@ -224,7 +227,7 @@ Terraform will perform the following actions:
       + next_upgrade_versions       = (known after apply)
       + nodes_url                   = (known after apply)
       + region                      = "GRA7"
-      + service_name                = "<your-service-name>"
+      + service_name                = "<your_service_name>"
       + status                      = (known after apply)
       + update_policy               = (known after apply)
       + url                         = (known after apply)
@@ -242,7 +245,7 @@ Terraform will perform the following actions:
       + min_nodes      = 3
       + monthly_billed = false
       + name           = "my-pool"
-      + service_name   = "<your-service-name>"
+      + service_name   = "<your_service_name>"
       + status         = (known after apply)
     }
 
@@ -255,9 +258,9 @@ can't guarantee that exactly these actions will be performed if
 "terraform apply" is subsequently run.
 ```
 
-Thanks to the `plan` command, we can check what Terraform want to create, modify or remove.
+Thanks to the `plan` command, we can check what Terraform wants to create, modify or remove.
 
-the plan is OK for us, so let's apply it:
+The plan is OK for us, so let's apply it:
 
 ```
 $ terraform apply
@@ -377,12 +380,12 @@ users:
     client-key-data: <encoded_value>
 ```
 
-Now, go in the `OVHcloud Control Panel`, click on [Public Cloud](https://www.ovhcloud.com/en-us/public-cloud/) and then click on `Managed Kubernetes Service` section. 
-As you can see, your cluster have been successfuly created:
+Now, go to the `OVHcloud Control Panel`, click on [Public Cloud](https://www.ovhcloud.com/en/public-cloud/) and then click on `Managed Kubernetes Service` section. 
+As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
 
-Now, click on `my_kube_cluster`, then in `Node pools` tab:
+Now, click on `my_kube_cluster`, then on the `Node pools` tab:
 
 ![Node pool created](images/my-pool-node-pool-created.png){.thumbnail}
 
@@ -410,7 +413,7 @@ NAME      FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURR
 my-pool   b2-7     false         false            false           3         3         3            3           3     3     1d
 ```
 
-Display the list of the Nodes:
+Display the list of Nodes:
 
 ```
 $ kubectl --kubeconfig=/Users/<your-user>/.kube/my_kube_cluster.yml get node
@@ -434,8 +437,9 @@ You may get the following error message: "not enough xxx quotas".
 xxx can be: RAM, CPU, VM, Disk or Port.
 
 If this is the case, the quotas must be increased.
-In order to check your quota and increase them, please follow this tutorial:
-[increase Public Cloud quota](https://docs.ovh.com/us/en/public-cloud/increase-public-cloud-quota/){.external}.
+In order to check your quotas and increase them, please follow this tutorial:
+
+[Increasing Public Cloud quotas](https://docs.ovh.com/us/en/public-cloud/increase-public-cloud-quota/){.external}.
 
 ## Destroy (cleanup)
 
@@ -513,7 +517,7 @@ Perfect, your Kubernetes cluster and associated resources (Nodes, Pods...) have 
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-us/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en/public-cloud/kubernetes/).
 
 To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying a Hello World application](../deploying-hello-world/).
 
