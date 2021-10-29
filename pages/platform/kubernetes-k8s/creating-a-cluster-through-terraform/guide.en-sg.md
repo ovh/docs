@@ -54,7 +54,7 @@ Why?
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/sg/en/api/first-steps-with-ovh-api/) tutorial.
 
 When you have successfully generated your OVH tokens, please keep them. You'll have to define them in the coming minutes ;-).
 
