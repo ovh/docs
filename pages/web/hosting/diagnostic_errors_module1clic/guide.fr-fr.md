@@ -139,7 +139,7 @@ Votre base de données ne peut plus être modifiée car la quantité de données
 
 Dans cette situation, installez votre module en passant par le [mode « simple »](../modules-en-1-clic/#installation-simple-dun-module) ou choisissez une autre base de données lors de son installation en mode avancé. Si besoin, commandez une [offre de bases de données](https://www.ovh.com/fr/hebergement-web/options-sql.xml) complémentaire.
 
-Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [importez une copie de votre base](../exportation-bases-donnees/#en-pratique) puis supprimez les données inutiles.
+Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [importez localement une copie de votre base](../exportation-bases-donnees/#en-pratique) puis supprimez les données inutiles.
 
 > [!warning]
 >
