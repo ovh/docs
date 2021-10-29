@@ -15,6 +15,11 @@ This tutorial provides the basic steps for a manual installation of WordPress on
 
 **This guide explains how to install WordPress on a Public Cloud instance.**
 
+> [!warning]
+>This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation.
+>
+>If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with [our community](https://community.ovh.com/en/). OVHcloud cannot provide you with technical support in this regard.
+>
 
 ## Requirements
 
@@ -27,7 +32,7 @@ This tutorial provides the basic steps for a manual installation of WordPress on
 
 > [!primary]
 >
-> The following instructions are verfied for Debian 11. Ubuntu is based on Debian and the tutorial should therefore work for a current Ubuntu distribution as well.
+> The following instructions are verfied for Debian 11. Since Ubuntu is based on Debian the tutorial should work for a current Ubuntu distribution as well.
 
 
 In order to access your installation via a domain name, you need to attach it to your instance. This is done by editing the DNS zone which you can do in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), provided OVHcloud is your domain registrar **and** the domain name uses OVHcloud DNS servers.
@@ -41,7 +46,7 @@ To be able to serve dynamic web pages with WordPress, a so-called *LAMP stack* w
 After logging in to your instance with SSH, ensure that all packages are up-to-date:
 
 ```bash
-debian@instance:~$ sudo apt update && sudo apt-get upgrade -y
+debian@instance:~$ sudo apt update && sudo apt upgrade -y
 ```
 
 > [!primary]
@@ -141,8 +146,10 @@ By choosing "WWW Full", both secure connections (port 443) and not-secured http 
 
 To see which ports are affected by a particular profile, enter ```sudo ufw app info "profile name"```.
 
+By entering the following command, the ports defined by the profile "WWW Full" will be opened:
+
 ```bash
-debian@instance:~$ sudo ufw app list
+debian@instance:~$ sudo ufw allow 'WWW Full'
 ```
 
 Since all ports not explicitly allowed will be blocked after enabling the firewall, make sure to allow SSH connections (port 22) as well:
@@ -179,7 +186,7 @@ debian@instance:~$ tar zxvf latest.tar.gz
 Your Apache server should be ready to use at this point. You can verify with the following command.
 
 ```bash
-sudo systemctl status apache2
+debian@instance:~$ sudo systemctl status apache2
 ```
 
 You can also open `http://ip_of_your_instance` in a web browser. The "Apache2 Debian Default Page" should appear.

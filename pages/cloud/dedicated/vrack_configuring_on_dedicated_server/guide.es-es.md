@@ -5,77 +5,143 @@ excerpt: 'Cómo configurar varios servidores dedicados en el vRack'
 section: vRack
 ---
 
-**Última actualización: 29/05/2018**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+**Última actualización: 19/10/2021**
 
 ## Objetivo
 
-La tecnología vRack (rack virtual) permite agrupar virtualmente varios servidores, independientemente de su número y su ubicación física en nuestros datacenters, y conectarlos a un switch virtual dentro de una misma red privada. De esa forma, los servidores pueden comunicarse entre sí de forma privada y segura a través de una VLAN dedicada.
+El vRack (rack virtual) de OVHcloud permite agrupar virtualmente varios servidores (independientemente de su número y su ubicación física en nuestros datacenters) y conectarlos a un switch virtual dentro de una misma red privada. De este modo, sus servidores pueden comunicarse entre sí de forma privada y segura, dentro de una VLAN dedicada.
 
-**Esta guía explica cómo configurar varios servidores dedicados en el vRack.**
+**Esta guía explica cómo configurar el vRack en varios servidores dedicados.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos
 
-- Tener un [vRack](https://www.ovh.es/soluciones/vrack/){.external}.
-- Disponer de al menos dos [servidores compatibles con el vRack](https://www.ovh.es/servidores_dedicados/){.external}.
-- Estar conectado por SSH (o a través de una interfaz gráfica) al servidor Linux (con acceso *root*).
-- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Un servicio [vRack](https://www.ovh.es/soluciones/vrack/) activado en su cuenta.
+- Varios [servidores dedicados](https://www.ovhcloud.com/es-es/bare-metal/) (compatibles con el vRack).
+- Tener acceso de administrador (root) al servidor por SSH o RDP.
+- Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Tener un rango de direcciones IP privadas.
-
 
 ## Procedimiento
 
-### Añadir los servidores al vRack
+### Paso 1: añadir sus servidores al vRack
 
-1. Una vez que haya añadido el vRack a su cuenta, acceda a la sección `Cloud`{.action} del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-2. En la columna izquierda, haga clic en `vRack`{.action} y seleccione el vRack.
-4. En la lista de servicios compatibles, seleccione los servidores que quiera añadir al vRack y haga clic en el botón `Añadir`{.action}.
+Una vez que haya activado el vRack en su cuenta, acceda a la sección `Cloud`{.action} de la bare metal de su [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra el menú `vRack`{.action} en la columna izquierda.
+
+Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga clic en cada uno de los servidores que quiera añadir al vRack y, seguidamente, en el botón `Añadir`{.action}.
 
 ![Selección del vRack](images/vrack_selection.png){.thumbnail}
 
-### Configurar las interfaces de red
+### Paso 2: configuración de las interfaces de red
 
-En este ejemplo, vamos a utilizar el rango de direcciones IP internas **192.168.0.0/16**.
+Las siguientes etapas contienen las configuraciones de las distribuciones/sistemas operativos recientes más comúnmente utilizadas. En primer lugar, debe [conectarse al servidor](https://docs.ovh.com/es/dedicated/primeros-pasos-servidor-dedicado/) por SSH o en sesión RDP (para Windows). Los siguientes ejemplos suponen que está conectado como usuario con permisos muy exigentes (administrador/sudo).
 
-También usaremos los nombres **eth1** y **eno4** para la interfaz de red secundaria. Sus servidores pueden utilizar una nomenclatura diferente. Puede comprobarlo utilizando los comandos que indicamos a continuación.
+> [!primary]
+>
+En cuanto a las diferentes distribuciones, es posible que haya cambiado el procedimiento para configurar la interfaz de red y los nombres de archivos. Si necesita ayuda, le recomendamos consultar los manuales y las bases de conocimiento de las respectivas versiones del sistema operativo.
+>
+Por ejemplo, los siguientes detalles de configuración tendrán la dirección IP `192.168.0.0/16` (**Máscara de subred**: `255.255.0.0`).
+>
+Puede utilizar cualquier rango de IP privadas de su elección y cualquier dirección dentro de este rango.
+>
 
-Para mostrar las interfaces de red, utilice el siguiente comando:
+#### Configuraciones GNU/Linux
 
-```
-ifconfig -a | grep eth | awk '{print $ 1}'
-```
+Los nombres de las interfaces de red de los servidores no son siempre los mismos. En los siguientes ejemplos, sustituya NETWORK_INTERFACE por el nombre de interfaz apropiado.
 
-La primera interfaz de la lista hace referencia a su conexión de red principal. Para comprobar que esté activa, utilice los siguientes comandos:
+La mejor forma de comprobar la interfaz del vRack es comprobar la pestaña `Interfaces de red`{.action} del servidor en el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la tabla inferior, tenga en cuenta la dirección MAC, que es también el **Nombre** de la interfaz **privada**.
 
-```
-ifconfig eth1 up
-```
+![Interfaz vRack](images/private_interface.png){.thumbnail}
 
-```
-ethtool eth1 | grep "Link detected"
-```
+Una vez que se haya conectado al servidor por SSH, podrá ver las interfaces de red con el siguiente comando:
 
-Si este último comando le devuelve el mensaje **Link detected: no**, se trata de la interfaz de red que deberá utilizar para configurar el vRack. Ejecute entonces este comando:
-
-```
-ifconfig eth1 down
-```
-
-#### CentOS 6 y 7
-
-Abra el archivo de configuración de la interfaz de red con el siguiente comando:
-
-```
-vi /etc/sysconfig/network-scripts/ifcfg-eth1
+```bash
+ip a
 ```
 
-Pulse la tecla `I` del teclado para pasar al modo de inserción.
+En la línea que empieza por ```link ether```, puede comprobar que esta interfaz se corresponde con la interfaz **privada** que haya introducido en el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Utilice este nombre de interfaz para reemplazar `NETWORK_INTERFACE` en las configuraciones siguientes (por ejemplo: `eno2`).
 
-Configure la interfaz de red secundaria como se indica a continuación:
-
+```console
+link ether f0:00:00:ef:0e:f0
 ```
-DEVICE=eth1
+
+##### **Debian**
+
+En un editor de texto, abra el archivo de configuración de red en `/etc/network/interfaces.d` para cambiarlo. El archivo se llama `50-cloud-init`.
+
+```bash
+editor /etc/network/interfaces.d/50-cloud-init
+```
+
+Añada las siguientes líneas:
+
+```console
+auto NETWORK_INTERFACE
+iface NETWORK_INTERFACE inet static
+address 192.168.0.1
+netmask 255.255.0.0
+```
+
+Guarde los cambios en el archivo de configuración y salga del editor.
+
+Reinicie el servicio de red para aplicar la configuración:
+
+```bash
+systemctl restart networking
+```
+
+Repita este procedimiento para los demás servidores y asígnele a cada uno de ellos una dirección IP no utilizada desde su rango privado. A continuación, los servidores podrán comunicarse entre sí en la red privada.
+
+##### **Ubuntu**
+
+Utilice el editor de texto que desee para editar el archivo de configuración de red situado en `/etc/netplan/`. El archivo se llama `50-cloud-init.yaml`.
+
+```bash
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Añada la configuración IP a la configuración existente después de la línea `ethernets`:
+
+```yaml
+    ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: no
+            addresses:
+              - 192.168.0.1/16
+```
+
+> [!warning]
+>
+> Es importante respetar la alineación de cada elemento en los archivos `yaml` como se muestra en el ejemplo anterior. No use la tecla de tabulación para crear el espacio. Sólo se debe utilizar la tecla espacio.
+>
+
+Guarde los cambios en el archivo de configuración y salga del editor.
+
+Aplique la configuración:
+
+```bash
+netplan apply
+```
+
+Repita este procedimiento para los demás servidores y asígnele a cada uno de ellos una dirección IP no utilizada desde su rango privado. A continuación, los servidores podrán comunicarse entre sí en la red privada.
+
+##### **CentOS**
+
+Utilice el editor de texto que desee para abrir el archivo `/etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE`.
+
+```bash
+editor /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
+```
+
+Añadir estas líneas:
+
+```console
+DEVICE=NETWORK_INTERFACE
 BOOTPROTO=static
 IPADDR=192.168.0.1
 NETMASK=255.255.0.0
@@ -83,150 +149,37 @@ ONBOOT=yes
 TYPE=Ethernet
 ```
 
-En el ejemplo anterior, puede utilizar cualquier rango de IP privadas y cualquier dirección IP incluida dentro de ese rango.
+Guarde los cambios en el archivo de configuración y salga del editor.
 
-1. Pulse la tecla `Esc`.
-2. Pulse las teclas `Shift + :` para abrir el editor.
-3. Introduzca **wq**.
-4. Pulse la tecla `Entrar`.
-5. Reinicie el servidor.
-6. Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno. 
- 
-Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
+Reinicie el servicio de red para aplicar los cambios:
 
-
-#### Debian 7 y 8
-
-Abra el archivo de configuración de la interfaz de red con el siguiente comando:
-
-```
-nano /etc/network/interfaces
+```bash
+systemctl restart networking
 ```
 
-Configure la interfaz de red secundaria como se indica a continuación:
+En **CentOS 8**, utilice el siguiente comando:
 
-```
-auto eth1
-iface eth1 inet static
-address 192.168.0.1
-netmask 255.255.0.0
+```bash
+systemctl restart NetworkManager.service
 ```
 
-En el ejemplo anterior, puede utilizar cualquier rango de IP privadas y cualquier dirección IP incluida dentro de ese rango.
+Repita este procedimiento para los demás servidores y asígnele a cada uno de ellos una dirección IP no utilizada desde su rango privado. A continuación, los servidores podrán comunicarse entre sí en la red privada.
 
+#### Configuración Windows
 
-1. Pulse las teclas `CTRL + X` para salir del archivo de configuración de red.
-2. Pulse la tecla `Y` para guardar los cambios y, a continuación, pulse `Entrar`.
-3. Reinicie el servidor.
-4. Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno. 
+A modo de ejemplo, las siguientes configuraciones utilizarán el rango de direcciones IP de `192.168.0.0/16` (**Máscara de subred**: `255.255.0.0`).
 
-Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
-
-
-#### Debian 9
-
-Abra el archivo de configuración de la interfaz de red con el siguiente comando:
-
-```
-nano /etc/network/interfaces
-```
-
-Configure la interfaz de red secundaria como se indica a continuación:
-
-```
-auto eno4
-iface eno4 inet static
-address 192.168.0.1
-netmask 255.255.0.0
-```
-
-En el ejemplo anterior, puede utilizar cualquier rango de IP privadas y cualquier dirección IP incluida dentro de ese rango.
-
-1. Pulse las teclas `CTRL + X` para salir del archivo de configuración de red.
-2. Pulse la tecla `Y` para guardar los cambios y, a continuación, pulse `Entrar`.
-3. Reinicie el servidor.
-4. Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno.
-
-Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
-
-
-#### Ubuntu Server 16
-
-Abra el archivo de configuración de la interfaz de red con el siguiente comando:
-
-```
-vi /etc/network/interfaces
-```
-
-Pulse la tecla `I` del teclado para pasar al modo de inserción.
-
-Configure la interfaz de red secundaria como se indica a continuación:
-
-```
-auto eth1
-iface eth1 inet static
-address 192.168.0.1
-netmask 255.255.0.0
-```
-
-En el ejemplo anterior, puede utilizar cualquier rango de IP privadas y cualquier dirección IP incluida dentro de ese rango.
-
-1. Pulse la tecla `Esc`.
-2. Pulse las teclas `Shift + :` para abrir el editor.
-3. Introduzca **wq**.
-4. Pulse la tecla `Entrar`.
-5. Reinicie el servidor.
-6. Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno.
-
-Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
-
-
-#### Ubuntu Server 17
-
-Abra el archivo de configuración de la interfaz de red con el siguiente comando:
-
-```
-nano /etc/network/interfaces
-```
-
-Configure la interfaz de red secundaria como se indica a continuación:
-
-```
-auto eno4
-iface eno4 inet static
-address 192.168.0.1
-netmask 255.255.0.0
-```
-
-En el ejemplo anterior, puede utilizar cualquier rango de IP privadas y cualquier dirección IP incluida dentro de ese rango.
-
-1. Pulse las teclas `CTRL + X` para salir del archivo de configuración de red.
-2. Pulse la tecla `Y` para guardar los cambios y, a continuación, pulse `Entrar`.
-3. Reinicie el servidor.
-4. Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno.
-
-Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
-
-
-#### Windows
-
-En este ejemplo, vamos a utilizar el rango de direcciones IP internas **192.168.0.0/16**.
-
-Conéctese a su servidor Windows a través del escritorio remoto.
-
-Haga clic en `Inicio`{.action}.
-
-Haga clic en `Panel de control`{.action}.
+Conéctese a su servidor Windows a través del escritorio remoto y acceda al **Panel de configuración**.
 
 ![Panel de control de Windows](images/windows_control_panel.png){.thumbnail}
 
 Haga clic en `Redes e Internet`{.action}.
 
-![Redes e Internet](images/windows_network_and_internet.png){.thumbnail}
+![Red e Internet](images/windows_network_and_internet.png){.thumbnail}
 
-Haga clic en `Centro de redes y recursos compartidos`{.action}.
+Abra `Network and Sharing Center`{.action}.
 
-![Centro de redes y recursos compartidos](images/windows_network_and_sharing_centre.png){.thumbnail}
+![Network and Sharing Center](images/windows_network_and_sharing_centre.png){.thumbnail}
 
 Haga clic en `Cambiar configuración del adaptador`{.action}.
 
@@ -236,25 +189,18 @@ Haga clic derecho en la interfaz de red secundaria y seleccione `Propiedades`{.a
 
 ![Propiedades de Windows](images/windows_properties_button.png){.thumbnail}
 
-Haga doble clic en `Protocolo de Internet versión 4 (TCP/IPv4)`{.action}.
+Haga doble clic en Protocolo de `Internet versión 4 (TCP/IPv4)`{.action}.
 
 ![Protocolo de Internet versión 4 (TCP/IPv4)](images/windows_ipv4.png){.thumbnail}
 
-Marque la opción `Usar la siguiente dirección IP`{.action}.
-
-- En **Dirección IP** introduzca una dirección IP de su rango interno.
-- En **Máscara de subred** introduzca **255.255.0.0**.
+Haga clic en **Usar la siguiente** dirección IP. Introduzca en el campo correspondiente cualquier dirección **IP** de su rango privado y la **máscara** de subred adecuada (`255.255.0.0` en este ejemplo).
 
 ![Usar la siguiente dirección IP](images/windows_use_following_ip_address.png){.thumbnail}
 
-Haga clic en `Aceptar`{.action} para guardar los cambios.
+Haga clic en `Aceptar`{.action} para guardar los cambios y reinicie el servidor para aplicarlos.
 
-Reinicie el servidor.
-
-Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno. 
-
-Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
+Repita este procedimiento para los demás servidores y asígnele a cada uno de ellos una dirección IP no utilizada desde su rango privado. A continuación, los servidores podrán comunicarse entre sí en la red privada.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/>.
