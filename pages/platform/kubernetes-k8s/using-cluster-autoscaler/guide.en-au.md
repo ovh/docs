@@ -222,7 +222,7 @@ For the moment, only these following parameters are editable:
 * scaleDownUnreadyTimeSeconds
 * scaleDownUtilizationThreshold
 
-You can contact us through [gitter](https://gitter.im/ovh/kubernetes) if you need to edit others parameters and/or you can check our [public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
+You can contact us through [Gitter](https://gitter.im/ovh/kubernetes) if you need to edit other parameters and/or you can check our [public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
 
 ## Go further
 
