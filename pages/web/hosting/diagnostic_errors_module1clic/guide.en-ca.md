@@ -98,7 +98,7 @@ You can also log in to your hosting plan via [FTP](../log-in-to-storage-ftp-web-
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
-After launching your module installation in advanced mode, you receive an e-mail stating that your module cannot connect to the specified database.
+After launching your module installation in advanced mode, you receive an email stating that your module cannot connect to the specified database.
 
 First check your database credentials. To find them, please read our [FAQ](https://www.ovh.co.uk/web-hosting/faq/).
 
