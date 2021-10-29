@@ -39,8 +39,8 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 
 Per prima cosa verifica su [http://travaux.ovh.com/](http://travaux.ovh.com/) che il tuo datacenter, il tuo cluster di hosting, il tuo server SQL privato o Cloud Database non sia interessato da un incidente sull'infrastruttura OVHcloud.
 
-[!primary]
->
+
+> [!primary]
 > Per maggiori informazioni, accedi allo Spazio Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}:
 >
 > - Per recuperare la `Datacenter` del tuo hosting e la `Filer` (server di file), seleziona `Hosting`{.action} nel menu di sinistra e poi l'hosting interessato. Queste informazioni sono disponibili nella scheda `Informazioni generali`{.action}.
@@ -89,8 +89,8 @@ Nello Spazio Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from
 - **my_password** corrisponde alla [password del tuo database](.../modificare-password-database/)
 - **my_server.mysql.db** deve corrispondere a quanto riportato su `Indirizzo del server`.
 
-[!primary]
->
+
+> [!primary]
 > Se queste operazioni non ti permettono di ripristinare l'accesso al tuo sito, [salva il tuo database](../web_hosting_come_esportare_un_database/) e [ripristina il database](.../ripristinare-importare-database/#ripristina-e-importa-un-database-dallo-spazio-cliente) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 >
 > Contatta uno specialista del settore (https://partner.ovhcloud.com/it/directory/) se necessario. Non saremo in grado di fornirti assistenza al riguardo.
@@ -129,8 +129,7 @@ Puoi anche migrare i tuoi dati su un nuovo database:
 - Effettua un [export dei tuoi dati](../web_hosting_come_esportare_un_database/), poi [importali](.../web_hosting_come_importare_un_database_mysql/) nel nuovo database;
 - Inserisci gli identificativi del nuovo database nel [file di configurazione](#config_file) del tuo sito.
 
-[!primary]
->
+> [!primary]
 > Se disponi di un hosting **Performance**, puoi anche [attivare gratuitamente un server SQL Privato](.../iniziare-a-utilizzare-sql-privato/).
 >
 
@@ -164,8 +163,7 @@ In questa situazione è possibile aumentare la [quantità di memoria RAM](.../co
 
 Per ottimizzare il tuo database, segui le istruzioni della nostra guida "[Configurare il tuo server di database](.../configurare-ottimizzare-il-tuo-database-server/#ottimizza-i-tuoi-database_1)".
 
-[!primary]
->
+> [!primary]
 > Se riscontri difficoltà nell'utilizzo delle risorse sul tuo server di database e non desideri aumentarle, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza al riguardo.
 >
 
@@ -273,7 +271,7 @@ Verifica il nome del server da iscrivere nel tuo [Spazio Cliente OVHcloud](https
 >
 
 
-## ## Per saperne di più <a name="gofurther"></a>
+## Per saperne di più <a name="gofurther"></a>
 
 [Iniziare a utilizzare il servizio SQL Privato](../iniziare-a-utilizzare-sql-privato/)
 
