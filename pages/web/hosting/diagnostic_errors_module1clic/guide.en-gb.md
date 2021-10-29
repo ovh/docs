@@ -158,7 +158,7 @@ You have launched the installation of a 1-click module in [advanced mode](../web
 
 Click on the `Web Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) then on the `Databases`{.action} tab on the left-hand side of your screen.
 
-Then click on the solution concerned: The name of the server to be used is indicated under 'Host name' in the 'SQL' section of 'Login information'.
+Then click on the solution concerned: The name of the server to be used is indicated under `Host name` in the `SQL` section of `Login information`.
  
 ### Your domain name is not offered when you create the module
 

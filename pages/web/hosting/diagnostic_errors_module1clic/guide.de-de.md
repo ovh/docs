@@ -8,7 +8,7 @@ order: 2
 
 > [!primary]
 >
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 08.10.2021**
@@ -40,7 +40,7 @@ Die Erstellung eines [1-Klick-Moduls](../webhosting_installation_von_webhosting-
 
 ### “Beim Laden der Informationen ist ein Fehler aufgetreten. (Sie benötigen mindestens eine freie Datenbank)“
 
-![1 freeDB](images/1freeDB.png){.thumbnail}
+![1freeDB](images/1freeDB.png){.thumbnail}
 
 Diese Meldung kann erscheinen, wenn Sie versuchen, ein neues Modul automatisch zu erstellen. Jedes 1-Klick-Modul benötigt eine Datenbank, um zu funktionieren. Der Fehler tritt auf, wenn das Hosting derzeit keine unbenutzte Datenbank zur Verfügung hat. Die folgenden Lösungen können in Betracht gezogen werden:
 
@@ -51,11 +51,11 @@ Diese Meldung kann erscheinen, wenn Sie versuchen, ein neues Modul automatisch z
 > Hier finden Sie die Übersicht unserer [Webhosting Angebote](https://www.ovh.de/hosting/).
 >
 
-Klicken Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie dann im Bereich **Abo** bei `Angebot` auf `...`{.action} und `Upgraden`{.action}.
+Klicken Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie dann im Bereich `Abo*` bei `Angebot` auf `...`{.action} und `Upgraden`{.action}.
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Mit den [Pro](https://www.ovh.de/hosting/hosting-pro.xml)- und [Performance](https://www.ovh.de/hosting/performance-hosting.xml)-Angeboten können Sie bis zu drei zusätzliche 1-Klick-Module erstellen. Bei einem Performance Webhosting können Sie auch kostenlos "[SQL Private](https://www.ovh.de/hosting/sql-optionen.xml)" aktivieren.
+Mit den [Pro](https://www.ovh.de/hosting/hosting-pro.xml)- und [Performance](https://www.ovh.de/hosting/performance-hosting.xml)-Angeboten können Sie bis zu drei zusätzliche 1-Klick-Module erstellen. Bei einem Performance Webhosting können Sie auch kostenlos [SQL Private](https://www.ovh.de/hosting/sql-optionen.xml) aktivieren.
 
 #### Lösung Nr. 2: Eine nicht verwendete Datenbank löschen <a name="deleteDB"></a>
 
