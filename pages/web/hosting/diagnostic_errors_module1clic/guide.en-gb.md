@@ -94,7 +94,7 @@ To link your domain to another directory, click on `Modify domain`{.action} in t
 
 You can also log in to your hosting plan via [FTP](../log-in-to-storage-ftp-web-hosting/) then delete or move the folder content after backing it up.
 
-### "An error has occurred loading the information (There is not enough space on your hosting (you need at least xxx MB)"
+### "An error has occurred loading the information. (There is not enough space on your hosting (you need at least xxx MB))"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
 
@@ -104,7 +104,7 @@ In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to yo
 
 > [!primary]
 >
-> If you have any questions about which data to delete in order to reduce the amount of data on your hosting plan, please contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).<br>
+> If you have any questions about which data to delete in order to reduce the amount of data on your hosting plan, please contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).<br>
 > We will not be able to assist you with this.
 >
 
@@ -112,7 +112,7 @@ In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to yo
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
-After launching your module installation in advanced mode, you receive an e-mail stating that your module cannot connect to the specified database.
+After launching your module installation in advanced mode, you receive an email stating that your module cannot connect to the specified database.
 
 First check your database credentials. To find them, please read our [FAQ](https://www.ovh.co.uk/web-hosting/faq/).
 
@@ -128,15 +128,15 @@ Then try installing a new module.
 
 Your database can no longer be modified because the amount of data in your database exceeds the limit. This message appears when installing a module in [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
-In this situation, install your module via [simple mode](../web_hosting_web_hosting_modules/#basic-module-installation) or choose another database when installing it in advanced mode. If required, order an additional [database offer](https://www.ovh.co.uk/web-hosting/sql-options.xml).
+In this situation, install your module via [simple mode](../web_hosting_web_hosting_modules/#basic-module-installation) or choose another database when installing it in advanced mode. If required, order an additional [database service](https://www.ovh.co.uk/web-hosting/sql-options.xml).
 
-If you don't have any other databases and you don't want to order an additional offer, [import a copy of your database](../web_hosting_database_export_guide/#instructions) then delete any unnecessary data.
+If you don't have any other databases and you don't want to order an additional database, [import a copy of your database](../web_hosting_database_export_guide/#instructions) then delete any unnecessary data.
 
 > [!warning]
 >
 > **Deleting items in your database may cause your site to shut down.**
 >
-> For any further questions, please contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).<br>
+> For any further questions, please contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).<br>
 > We will not be able to assist you with this.
 >
 
@@ -144,22 +144,22 @@ If you don't have any other databases and you don't want to order an additional 
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#basic-module-installation) on a database located on a [private SQL server](../getting-started-with-private-sql/) or [CloudDB](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/). You received this error message by e-mail. This means that the user logged in during the installation does not have sufficient rights to the database, or that the credentials entered are incorrect.
+You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#basic-module-installation) on a database located on a [private SQL server](../getting-started-with-private-sql/) or [CloudDB](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/). You received this error message by email. This means that the user logged in during the installation does not have sufficient rights to the database, or that the credentials entered are incorrect.
 
 In this situation, first modify the [user rights](../create-databases-and-users/#managing-user-rights) concerned, so that they have **Administrator** or **Read/write** rights on the database.
 
-You can also verify your login details by [connecting directly](../connecting-to-database-on-database-server/#instructions) to your database server then run the module installation again.
+You can also verify your login details by [connecting directly](../connecting-to-database-on-database-server/#instructions) to your database server. Then run the module installation again.
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation) on a database located on a [private SQL server](../getting-started-with-private-sql/) or [CloudDB](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/). You received this error message by e-mail. This means that the database server name you specified is incorrect.
+You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation) on a database located on a [private SQL server](../getting-started-with-private-sql/) or [CloudDB](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/). You received this error message by email. This means that the database server name you specified is incorrect.
 
-Click on the `Web cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) then on the `Databases`{.action} tab on the left-hand side of your screen.
+Click on the `Web Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) then on the `Databases`{.action} tab on the left-hand side of your screen.
 
-Then click on the solution concerned: The name of the server to be used is indicated under 'Host name' in the 'SQL' subpart of 'Login information'.
-
+Then click on the solution concerned: The name of the server to be used is indicated under 'Host name' in the 'SQL' section of 'Login information'.
+ 
 ### Your domain name is not offered when you create the module
 
 ![domainenotproposed](images/domainenotproposed.png){.thumbnail}
