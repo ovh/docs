@@ -17,8 +17,8 @@ Horizon is the native OpenStack web interface to it's services (Nova, swift, gla
 
 ## Requirements
 
-- A [Public Cloud Project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project/).
-- An [Openstack user](../creation-and-deletion-of-openstack-user/){.external}.
+- An OVHcloud [Public Cloud Project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project/)
+- An [Openstack user](../creation-and-deletion-of-openstack-user/){.external}
 
 ## Instructions
 
