@@ -98,7 +98,7 @@ This table presents a summary of the different phases of the lifecycle of the se
 ### Hosts (compute)
 
 | Commercial Range | General Availability | End of Sales | End of Growth  | End of Life |
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|:-----:|:-----:|:-----:|:-----:|:-----:|
 | DC2011 (AMD Opteron) | 2011 | 28/02/2015 | 28/02/2022 | 31/07/2022 |
 | DC2013 (AMD Bulldozer) | 2013 | 28/02/2015 | 28/02/2022 | 31/07/2022 |
 | DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 31/07/2022 |
