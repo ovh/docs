@@ -1,13 +1,13 @@
 ---
 title: Introducing Horizon 
-excerpt: Find out haw to manage your project with the OpenStack Horizon interface.
+excerpt: Find out how to manage your project with the OpenStack Horizon interface.
 slug: horizon
 section: Horizon
 order: 1
 hidden: true
 ---
 
-**Last updated 28th July 2020**
+**Last updated 29th October 2021**
 
 ## Objective
 
@@ -17,18 +17,18 @@ Horizon is the native OpenStack web interface to it's services (Nova, swift, gla
 
 ## Requirements
 
-- A [Public Cloud Project]
-- An [Openstack user](../creation-and-deletion-of-openstack-user/)
+- A [Public Cloud Project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project/).
+- An [Openstack user](../creation-and-deletion-of-openstack-user/){.external}.
 
 ## Instructions
 
-### Accessing Openstack Horizon.
+### Accessing Openstack Horizon
 
-Once you have your Openstack username and password, you can login at <https://horizon.cloud.ovh.net/auth/login/?next=/>.
+Once you have your Openstack username and password, you can access the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
 
 ### Select your Region
 
-Before making any changes, be sure that you are working on the correct region. Click the Region on top and make your selection.
+Before making any changes, be sure that you are working on the correct region. Click on the Region at the top left corner and make your selection.
 
 ![horizon region](images/choose_region.png){.thumbnail}
 
@@ -38,140 +38,46 @@ Before making any changes, be sure that you are working on the correct region. C
 
 On the Overview page, you can see details on your quota usage including a list of instances created in the selected region and the resources assigned to them.
 
+![Overview page](images/Overview.png){.thumbnail}
+
 #### Instances
 
 The Instances page is where you will be doing most of your instance management. We will detail most of the common functions below.
 
-To access this page click on the `Compute`{.action} and then click on `Instances`{.action}
+To access this page, In the left-side bar, click on `Compute`{.action} and then click on `Instances`{.action}.
 
-![horizon instances](images/menu_instances.png){.external)
-
-##### Creating an instance
-
-To create a new instance, click on the `Launch Instance`{.action} buutton.
-
-![create instance](images/create_instance.png){.thumbnail)
+![horizon instances](images/menu_instances.png){.thumbnail}
 
 
-You will then need to fill in the information requested. If you need to do so, you can use the table below to fill in the fields. Please note that this grid is not exhaustive.
-
-|Information|Details|
-|---|---|
-|Availability zone|Leave "nova" (default choice).|
-|Instance name|Specify the name you want for the Instance that will be launched.|
-|Template|Select the type of Instance to launch.|
-|Count|Specify the number of Instances to launch.|
-|Instance launch source|Select the source for launching an instance (e.g. "Launch from an image" or "Launch from a snapshot").|
-|Image name|Select the Instance image (only when launching from an image).|
-|Instance snapshot|Choose an Instance snapshot (only for launching from a snapshot).|
-|Key pair|Select an SSH key to use for connecting to the Instance later (you can create a key by clicking the "+" sign).|
-|Security groups|Specify the security group for the Instance (authorisation for opening ports).|
-|Selected networks|Select the network(s) for the Instance you want to create, from the list of available networks.|
-|Custom script source|Specify the source between a "direct entry" or a "file".|
-|Script data|Enter the script code in the input field (16KB maximum).|
-|Script file|Click ‘browse’ to select the post-installation script.|
-|Disk partitioning|Choose between "automatic" or "manual".|
-|Configuration disk|Configure OpenStack to write metadata on to a specific configuration disk that will be attached to the Instance when it is launched.|
-
-> [!success]
->
-> Please note that when selecting a Flavor any options with "-flex" will only have a disk of 50GB, this will allow downgraading the instances in the future.
->
-
-Once you are ready to launch the Instances, click the `Launch Instance`{.action} button.
-
-![create instace](images/launch_instance.png){.thumbnail}
-
-After a few moments, the instance will be spawned.
-
-##### Suspending or pausing an instance
-As part of configuring a highly available infrastructure, you may encounter the need to cut access to your instances in order to perform various tests. OpenStack allows you to suspend or pause your instance. Suspension can be compared to hibernation of your instance and pause to sleep.
-
-> [!success]
->
-> The "Suspended" status will also be used in case of billing problems.
->
-
-> [!alert]
->
->These manipulations always result in billing of the instance as the instance is not deleted.
->
-
-###### Suspending an instance
-To suspend an instance, click on the `Actions` menu and select `Suspend Instance`
-
-![suspend instance](images/suspend_instance.png){.thumbnail}
-
-> [!success]
->
-> To restart the instance, select the `Resume Instance`{.action} from the `Actions` menu.
->
-
-###### Pausing an instance
-
-To suspend an instance, click on the `Actions` menu and select `Pause Instance`
-
-![pause instance](images/pause_instance.png){.thumbnail}
+#### Editing an instance
 
 
-##### Restarting an instance
-In some situations, you will probably be need to restart your instances.
+If you wish to configure your instance's security groups, either to remove or add them, you can do this by editing your instance. 
 
-You have 2 different options for rebooting; software and hardware reboots.
+You can also use this feature to change the name of your instance.
 
-> [!success]
->
->You can restart an instance that has been turned off or suspended:
->by clicking the "Start an instance" button when it is off.
->
->by selecting "Resume Instance" from the drop-down list for a  suspended instance.
->
+Click on `Compute`{.action} and then click on `Instances`{.action}. Select `Edit Instance`{.action} in the drop list for the corresponding instance.
 
-###### Software Reboot
+![horizon instances](images/edit_instance.png){.thumbnail}
 
-To do a Soft Reboot, click on the `Actions` menu and select `Soft Reboot Instance`{.action}
 
-![reboot instance](images/menu_soft_reboot.png){.thumbnail}
+##### **Modify the name of the instance**
 
-You will then be prompted to confirm your choice. You can do so by clicking `Soft Reboot Instance`{.action}
+![horizon edit instance](images/edit_name.png){.thumbnail}
 
-![reboot instance](images/soft_reboot.png){.thumbnail}
+To confirm, click on `Save`{.action}
 
-###### Hardware Reboot
+##### **Modify the [Security Groups](https://docs.ovh.com/ca/en/public-cloud/configure-security-group-horizon/) assigned to the instance**
 
-To do a Hard Reboot, click on the `Actions` menu and select `Hard Reboot Instance`{.action}
+![horizon edit instance](images/edit_sec_group_instance.png){.thumbnail}
 
-![reboot instance](images/menu_hard_reboot.png){.thumbnail}
+Select or deselect the security group for the instance.
 
-You will then be prompted to confirm your choice. You can do so by clicking `Hard Reboot Instance`{.action}
+To confirm, click on `Save`{.action}
 
-![reboot instance](images/hard_reboot.png){.thumbnail}
 
-##### Deleting an instance
+##### **Resizing an instance**
 
-To delete an instance, you simply need to click on the `Actions` button and choose `Delete Instance`{.action}.
-
-![delete instance](images/delete_instance.png){.thumbnail}
-a
-You will be asked to confirm your choice to delete the instance. You can confirm this by clicking `Delete Instance`{.action}.
-
-![delete instance](images/delete_instance_confirm.png){.thumbnail}
-
-##### Rebuilding an instance
-
-Rebuilding an instance will allow you to recreate the instance with another image.
-
-To rebuild an instance, click on the `Actions` menu and choose `Rebuild Instance`{.action}.
-
-![horizon rebuild instance](images/menu_rebuild.png){.thumbnail}
-
-Select the Image and if you want Automatic or Manual Disk Partion and then click `Rebuild Instance`{.action}
-
-![horizon rebuild instance](images/rebuild_instance.png){.thumbnail}
-
-The rebuilding process will take a few momemnts to complete.
-
-##### Resizing an instance
 As a result of increased activity, or simply new needs, your instance may not be able to meet this new burden due to a lack of resources. However, with the Public Cloud, you can increase the resources available to your instance, and this can be done with just a few clicks.
 
 > [!alert]
@@ -181,20 +87,73 @@ As a result of increased activity, or simply new needs, your instance may not be
 
 > [!success]
 >
-> Flex instances allow resizing to higher or lower models due to a locked  single disk size.
+> Flex instances allow resizing to higher or lower models due to a locked single disk size.
 >
 
-To resize the instance, click on the `Actions` manu and select `Resize Instance`{.action}
+To resize the instance, select `Resize Instance`{.action} in the drop list for the corresponding instance.
 
 ![resize_instance](images/menu_resize.png){.action}
 
+Once the configuration is complete, click on `Resize`{.action}
 
-Once the configuration is complete, click `Resize`{.action}
 
-###### Template Selection Tab
+##### **Restarting an instance**
+
+In some situations, you will probably need to restart your instances.
+
+You have 2 different options for rebooting; software reboot and hardware reboot.
+
+
+###### **Software Reboot**
+
+To do a Soft Reboot, select `Soft Reboot Instance`{.action} in the drop list for the corresponding instance. 
+
+![reboot instance](images/menu_soft_reboot.png){.thumbnail}
+
+You will then be prompted to confirm your choice. You can do so by clicking on `Soft Reboot Instance`{.action}
+
+![reboot instance](images/soft_reboot.png){.thumbnail}
+
+###### **Hardware Reboot**
+
+To do a Hard Reboot, select `Hard Reboot Instance`{.action} in the drop list for the corresponding instance.
+
+![reboot instance](images/menu_hard_reboot.png){.thumbnail}
+
+You will then be prompted to confirm your choice. You can do so by clicking on `Hard Reboot Instance`{.action}
+
+![reboot instance](images/hard_reboot.png){.thumbnail}
+
+##### **Deleting an instance**
+
+To delete an instance, select `Delete Instance`{.action} in the drop list for the corresponding instance.
+
+![delete instance](images/delete_instance.png){.thumbnail}
+
+You will then be prompted to confirm your choice to delete the instance. You can confirm this by clicking on`Delete Instance`{.action}.
+
+![delete instance](images/delete_instance_confirm.png){.thumbnail}
+
+##### **Rebuilding an instance**
+
+Rebuilding an instance will allow you to recreate the instance with another image.
+
+To rebuild an instance, select `Rebuild Instance`{.action} in the drop list for the corresponding instance.
+
+![horizon rebuild instance](images/menu_rebuild.png){.thumbnail}
+
+Select the Image and the Disk Partion mode, then click on `Rebuild Instance`{.action}.
+
+![horizon rebuild instance](images/rebuild_instance.png){.thumbnail}
+
+The rebuilding process will take a few moments to complete.
+
+
+###### **Template Selection Tab**
 
 This section shows the current template and allows you to select a new template for the instance resource.
 
+![Flavor selection](images/templatetab.png)
 
 
 > [!success]
@@ -202,61 +161,50 @@ This section shows the current template and allows you to select a new template 
 > It is possible to preview the resources that will be taken from the total resources available to the project.
 >
 
-###### Advanced Options Tab
+###### **Advanced Options Tab**
 
-This section allows you to manage disk partitioning.
+This section allows you to manage the disk partitioning.
 
+![advance tab](images/advancedtab.png)
 
-##### Editing an instance
-
-To edit an instance, click the `Actions` menu and select `Edit Instance`.
-
-![horizon edit instance](images/edit_instance.png){.thumbnail}
-
-Editing an instance will allow you to do 2 things:
-
-- Modify the name of the instance
-
-![horizon edit instance](images/edit_name.png){.thumbnail}
-
-- The [Security Groups](./#) that the instance is assigned to.
-
-![horizon edit instance](images/edit_sec_group_instance.png){.thumbnail}
 
 ##### Creating a snapshot of an instance
-You will likely need  to back up your data, your configurations, and even your entire instances. To do this, it is possible to create snapshots of your instances, these can be used to restore a earlier configuration on your instance, or to create an exact copy of an instance.
 
-To create a snapshot, click on the `Actions` menu and select `Create Snapshot`{.action}
+During your activity, you will probably need to back up your data, your configurations, and even your entire instances. You can do this by creating snapshots of your instances, which can be used to restore a later configuration on your instance, or by creating an exact copy of an instance.
+
+To create a snapshot, select `Create Snapshot`{.action} in the drop list for the corresponding instance.
 
 ![create snapshot](images/menu_snapshot.png){.thumbnail}
 
-Give the snapshot a name and then click on `Create Snaphot`{.action}
+Give the snapshot a name and then click on `Create Snapshot`{.action}
 
 ![create snapshot](images/create_snapshot.png){.thumbnail}
 
-The snapshot will be saved in the [Images] section of Horizon.
+The snapshot will be saved in the `Images`{.action} section of Horizon.
+
+![create snapshot](images/snapshot.png){.thumbnail} 
 
 ##### Accessing the console of an instance
 
-In the event of loss of access to your instance, wether caused by a configuration error, or a malfunctioning SSH service, you are always able to reconfigure your instance with the assistance of the VNC conole.
+In the event you lose access to your instance, whether it is caused by a configuration error or a malfunctioning SSH service, you are always able to reconfigure your instance with the assistance of the VNC console.
 
-Click on the Actions menu beside the instance of choice and select the `Console` option in the drop down menu.
+Select `Console`{.action} in the drop list for the corresponding instance.
 
 ![horizon console](images/launch_console.png){.thumbnail}
 
 The VNC Console now appears.
 
+![horizon console](images/console.png){.thumbnail}
+
 > [!success]
 >
-> If the console stops responding to keyboard inputs, click oon the status bar. To exit full screen view, click on the back button on your browser.
+> You can only use the console if you have set a password for your user.  
 >
 
-![horizon console](images/console.png){.thumbnail}
 
 #### Images
 
-You can add custom images via the OpenStack Horizon interface. For example, you can use it to import images from your old virtual machines to the Public Cloud, provided that they are in a compatible format.
-
+You can add custom images via the OpenStack Horizon interface. For example, you can use it to import images from your old virtual machines to the Public Cloud, provided that they are in a compatible format. For more information, consult the following guide: [Creating, launching and deleting images in Horizon](https://docs.ovh.com/ca/en/public-cloud/create-launch-and-delete-images-in-horizon/).
 
 
 # Go further
