@@ -99,6 +99,19 @@ Aby powiązać domenę z innym katalogiem, kliknij `Zmień domenę`{.action} w z
 
 Możesz również połączyć się z hostingiem przez [FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/), a następnie usunąć lub przenieść zawartość folderu po jego zapisaniu.
 
+### "Wystąpił błąd podczas pobierania informacji (There is not enough space on your hosting (you need at least xxx MB))"
+
+![not_enough_space](images/not_enough_space.png){.thumbnail}
+
+Wiadomość ta wskazuje, że [przestrzeń dyskowa](../logowanie-przestrzen-dyskowa-ftp-hosting-web/) Twojego hostingu zawiera zbyt dużą ilość danych. Musisz więc usunąć lub przenieść domenę zanim będziesz mógł zainstalować nowy [moduł za 1 kliknięciem](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+
+W tej sytuacji [zaloguj się przez FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/) na Twoim hostingu [zapisz lokalnie](../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/#transfer-plikow), a następnie usuń pliki, które nie są konieczne do działania Twojej strony WWW.
+
+> [!primary]
+>
+> W przypadku pytań dotyczących danych do usunięcia, w celu zmniejszenia ilości danych na hostingu, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).<br>
+> Nie będziemy w stanie udzielić wsparcia w tym zakresie.
+
 ### "Nie można połączyć się z bazą danych" <a name="delete-module"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
@@ -112,6 +125,44 @@ Następnie usuń moduł w zakładce `Moduły za 1 kliknięciem`{.action}:
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
 
 Następnie uruchom ponownie instalację nowego modułu.
+
+### "You have insufficient rights on this database."
+
+![insufficient_rights](images/insufficient_rights.png){.thumbnail}
+
+Baza danych nie może zostać zmieniona, ponieważ ilość danych w niej zawartych przekracza dozwolony limit. Wiadomość ta pojawia się podczas instalacji modułu w [tryb zaawansowany](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#instalacja-w-trybie-zaawansowanym).
+
+W tej sytuacji zainstaluj moduł przechodząc przez [tryb "prosty"](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#prosta-instalacja-modulu) lub wybierz inną bazę danych podczas instalacji w trybie zaawansowanym. Jeśli potrzebujesz dodatkowej [oferty baz danych](https://www.ovh.pl/hosting/opcje-sql.xml).
+
+Jeśli nie posiadasz innych baz danych i nie chcesz zamawiać dodatkowej oferty, [zaimportuj kopię bazy](../eksport-bazy-danych/#en-praktyka) a następnie usuń niepotrzebne dane.
+
+> [!warning]
+>
+> **Usunięcie elementów z bazy danych może spowodować zablokowanie Twojej strony WWW.**
+>
+> W przypadku dodatkowych pytań skontaktuj się z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).<br>
+> Nie będziemy w stanie udzielić wsparcia w tym zakresie.
+>
+
+### "Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
+
+![cant_connect](images/cant_connect.png){.thumbnail}
+
+Instalacja modułu za pomocą 1 kliknięcia w [tryb zaawansowany](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#prosta-instalacja-modulu) na bazie danych znajdującej się na [prywatnym serwerze SQL](../pierwsze-kroki-private-sql/). Ten komunikat błędu został wysłany na e-mail. Oznacza to, że zarejestrowany użytkownik podczas instalacji nie posiada wystarczających uprawnień do bazy danych lub że wskazane identyfikatory są nieprawidłowe.
+
+W tej sytuacji najpierw zmodyfikuj [prawa użytkownika](../tworzenie-baz-danych-i-uzytkownikow/#zarzadzanie-prawami-uzytkownikow), aby posiadał on uprawnienia **Administrator** lub **Odczyt/zapis** na bazie danych.
+
+Sprawdź również jego dane do logowania [bezpośrednio](../polaczenie-bazy-danych-serwer-bdd/#w-praktyce) do serwera baz danych i uruchom ponownie instalację modułu.
+
+### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
+
+![cant_connect_server](images/cant_connect_server.png){.thumbnail}
+
+Instalacja modułu za pomocą 1 kliknięcia w [tryb zaawansowany](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#prosta-instalacja-modulu) na bazie danych znajdującej się na [prywatnym serwerze SQL](../pierwsze-kroki-private-sql/). Ten komunikat błędu został wysłany na e-mail. Oznacza to, że podana przez Ciebie nazwa serwera baz danych jest nieprawidłowa.
+
+Kliknij na `Web cloud`{.action} [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie na zakładkę `Bazy danych`{.action} po lewej stronie ekranu.
+
+Następnie kliknij wybraną ofertę: nazwa serwera, który ma być użyty, podana jest pod nagłówkiem `Nazwa hosta` w podczęści `SQL` danych do logowania.
 
 ### Twoja domena nie jest dostępna podczas tworzenia modułu
 
