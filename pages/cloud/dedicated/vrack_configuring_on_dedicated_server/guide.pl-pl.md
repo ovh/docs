@@ -5,77 +5,143 @@ excerpt: 'Dowiedz się, jak połączyć kilka serwerów w ramach rozwiązania vR
 section: vRack
 ---
 
-**Ostatnia aktualizacja dnia 2018-04-09**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
+
+**Ostatnia aktualizacja dnia 19-10-2021**
 
 ## Wprowadzenie
 
-Technologia vRack (szafa wirtualna) umożliwia zgrupowanie dowolnej liczby serwerów (bez względu na ich fizyczną lokalizację w naszych centrach danych) i ich podłączenie do wirtualnego przełącznika w ramach tej samej prywatnej sieci. Serwery komunikują się między sobą w sposób bezpieczny w ramach prywatnej dedykowanej sieci VLAN.
+vRack (wirtualna szafa) OVHcloud pozwala na wirtualne zebranie kilku serwerów (bez względu na ich liczbę i ich fizyczną lokalizację w naszych centrach danych) i na ich podłączenie do wirtualnego switcha w ramach tej samej prywatnej sieci. Dzięki temu Twoje serwery mogą komunikować się między sobą w ramach prywatnej i zabezpieczonej sieci VLAN.
 
-**Dowiedz się, jak połączyć dwa lub więcej serwerów dedykowanych siecią vRack.**
+**Dowiedz się, jak skonfigurować vRack na kilku serwerach dedykowanych.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
-- Posiadanie co najmniej dwóch [serwerów kompatybilnych z siecią vRack](https://www.ovh.pl/serwery_dedykowane/){.external}
-- Połączenie przez SSH (lub przez interfejs użytkownika) z Twoim serwerem Linux (dostęp root)
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Usługa [vRack](https://www.ovh.pl/rozwiazania/vrack/) włączona na Twoim koncie
+- Kilka [serwerów dedykowanych](https://www.ovhcloud.com/pl/bare-metal/) (kompatybilnych z vRack)
+- Dostęp administratora (root) do serwera przez SSH lub RDP
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Zakresu prywatnych adresów IP
 
 ## W praktyce
 
-### Dodanie serwerów do sieci vRack
+### Etap 1: dodaj serwery do usługi vRack
 
-1. Po dodaniu rozwiązania vRack do Twojego konta przejdź do sekcji `Cloud`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-2. Następnie wybierz menu `vRack`{.action} z listy po lewej stronie.
-3. Wybierz vRack, do którego chcesz dodać serwery.
-4. Na liście dostępnych usług zaznacz serwery, które chcesz dodać do szafy vRack, następnie kliknij na przycisk `Dodaj`{.action}.
+Po aktywacji usługi vRack na Twoim koncie przejdź do sekcji `Bare Metal Cloud`{.action} w Twoim [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i otwórz menu `vRack`{.action} w menu po lewej stronie.
+
+Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz zamówić. Kliknij każdy z serwerów, które chcesz dodać do sieci vRack, następnie kliknij przycisk `Dodaj`{.action}.
 
 ![Wybór szafy vRack](images/vrack_selection.png){.thumbnail}
 
-### Konfiguracja interfejsów sieciowych
+### Etap 2: konfiguracja interfejsów sieciowych
 
-W tym przykładzie używamy bloku prywatnych adresów IP *192.168.0.0/16*.
+Kolejne etapy obejmują konfigurację najpopularniejszych ostatnio używanych dystrybucji/systemów operacyjnych. Pierwszy etap polega zawsze na [logowaniu się do serwera](https://docs.ovh.com/pl/dedicated/pierwsze-kroki-z-serwerem-dedykowanym/) przez SSH lub przez sesję RDP (dla systemu Windows). Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z dużymi uprawnieniami (Administrator/sudo).
 
-Ponadto użyjemy nazw **eth1** i **eno4** dla dodatkowego interfejsu sieciowego. Serwery mogą używać innej nomenklatury w odniesieniu do nazw interfejsów. Sprawdź, jakie nazewnictwo jest używane, wprowadzając podane poniżej komendy.
+> [!primary]
+>
+Jeśli chodzi o poszczególne dystrybucje, należy pamiętać, że procedura konfiguracji interfejsu sieciowego oraz nazwy plików mogą ulec zmianie. Jeśli masz trudności, zalecamy zapoznanie się z podręcznikami i bazami wiedzy odpowiednich wersji systemu operacyjnego.
+>
+Na przykład poniższe szczegóły konfiguracji będą miały adres IP `192.168.0.0/16` (**Maska podsieci**: `255.255.0.0`).
+>
+Możesz korzystać z dowolnego zakresu prywatnych adresów IP i dowolnych adresów w tym zakresie.
+>
 
-W celu wyświetlenia interfejsów sieciowych należy użyć następującej komendy:
+#### Konfiguracja GNU/Linux
 
-```sh
-ifconfig -a | grep eth | awk '{print $ 1}'
+Nazwy interfejsów sieciowych serwerów nie zawsze są takie same. W poniższych przykładach zastąp NETWORK_INTERFACE odpowiednią nazwą interfejsu.
+
+Najlepszym sposobem, aby sprawdzić poprawny interfejs dla usługi vRack jest sprawdzenie karty `Interfejsy sieciowe`{.action} Twojego serwera w Twoim [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W dolnej tabeli kliknij adres MAC, który jest również **Nazwa** interfejsu **Prywatnego**.
+
+![Interface vRack](images/private_interface.png){.thumbnail}
+
+Po zalogowaniu się do serwera przez SSH możesz wyświetlić Twoje interfejsy sieciowe za pomocą polecenia:
+
+```bash
+ip a
 ```
 
-Pierwszy interfejs z listy dotyczy Twojego połączenia z siecią główną. Możesz sprawdzić, który interfejs jest aktywny, używając komendy:
+W wierszu, który rozpoczyna się od ```link ether```, możesz sprawdzić, czy interfejs ten odpowiada interfejsowi **prywatnemu** podanemu w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Użyj tej nazwy interfejsu, aby zastąpić `NETWORK_INTERFACE` w poniższych konfiguracjach (na przykład: `eno2`).
 
-```sh
-ifconfig eth1 up
+```console
+link ether f0:00:00:ef:0e:f0
 ```
 
-```sh
-ethtool eth1 | grep "Link detected"
+##### **Debian**
+
+W edytorze tekstu otwórz plik konfiguracyjny sieci znajdujący się w `/etc/network/interfaces.d`, aby go zmienić. Tutaj plik nazywa się `50-cloud-init`.
+
+```bash
+editor /etc/network/interfaces.d/50-cloud-init
 ```
 
-Jeśli komenda zwróci odpowiedź `Link detected: no`, mamy do czynienia z interfejsem sieciowym, którego należy użyć do konfiguracji vRack po wprowadzeniu poniższej komendy: 
+Dodaj następujące wiersze:
 
-```sh
-ifconfig eth1 down
+```console
+auto NETWORK_INTERFACE
+iface NETWORK_INTERFACE inet static
+address 192.168.0.1
+netmask 255.255.0.0
 ```
 
-#### CentOS 6 i 7
+Zapisz zmiany w pliku konfiguracyjnym i zamknij edytor.
 
-Otwórz plik konfiguracyjny interfejsu sieciowego za pomocą komendy:
+Zrestartuj usługę sieciową, aby zastosować konfigurację:
 
-```sh
-vi /etc/sysconfig/network-scripts/ifcfg-eth1
+```bash
+systemctl restart networking
 ```
 
-Wciśnij przycisk `I` na klawiaturze, aby włączyć tryb „insert” programu vi.
+Powtórz tę procedurę dla innych serwerów i przypisz każdemu z nich nieużywany adres IP z Twojego zakresu prywatnego. Twoje serwery będą mogły komunikować się między sobą w sieci prywatnej.
 
-Skonfiguruj dodatkowy interfejs sieciowy w następujący sposób:
+##### **Ubuntu**
 
-```sh
-DEVICE=eth1
+Aby go edytować, otwórz plik konfiguracyjny sieci w `/etc/netplan/`. Ten plik nazywa się `50-cloud-init.yaml`.
+
+```bash
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Dodaj konfigurację IP do istniejącej konfiguracji po linii `ethernets`:
+
+```yaml
+    ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: no
+            addresses:
+              - 192.168.0.1/16
+```
+
+> [!warning]
+>
+> Ważne jest, aby zachować wyrównanie każdego elementu w plikach `yaml` jak pokazano w powyższym przykładzie. Nie używaj przycisku tabulacji do tworzenia odstępów. Należy używać tylko klawisza spacji.
+>
+
+Zapisz zmiany w pliku konfiguracyjnym i zamknij edytor.
+
+Zastosuj konfigurację:
+
+```bash
+netplan apply
+```
+
+Powtórz tę procedurę dla innych serwerów i przypisz każdemu z nich nieużywany adres IP z Twojego zakresu prywatnego. Twoje serwery będą mogły komunikować się między sobą w sieci prywatnej.
+
+##### **CentOS**
+
+Otwórz plik/`etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE`, korzystając z wybranego edytora tekstu.
+
+```bash
+editor /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
+```
+
+Dodaj te linie:
+
+```console
+DEVICE=NETWORK_INTERFACE
 BOOTPROTO=static
 IPADDR=192.168.0.1
 NETMASK=255.255.0.0
@@ -83,159 +149,57 @@ ONBOOT=yes
 TYPE=Ethernet
 ```
 
-Poniższy przykład obrazuje, w jaki sposób możesz wybrać dowolny zakres prywatnych adresów IP i dowolny adres z tego zakresu.
+Zapisz zmiany w pliku konfiguracyjnym i zamknij edytor.
 
-1. Wciśnij przycisk `ESC`.
-2. Wciśnij przycisk `SHIFT` oraz przycisk *dwukropek*, aby otworzyć edytor. 
-3. Wprowadź `wq`.
-4. Wciśnij przycik `Enter`.
-5. Zrestartuj serwer.
-6. Powtórz wszystkie kroki na innych serwerach i przypisz do nich unikalny adres IP z Twojego zakresu adresów prywatnych. Po tej operacji Twoje serwery będą mogły komunikować się między sobą w ramach prywatnej sieci.
+Zrestartuj usługę sieciową, aby wprowadzić zmiany:
 
-#### Debian 7
-
-Otwórz plik konfiguracyjny interfejsu sieciowego za pomocą komendy:
-
-```sh
-nano /etc/network/interfaces
+```bash
+systemctl restart networking
 ```
 
-Skonfiguruj dodatkowy interfejs sieciowy w następujący sposób:
+W **systemie CentOS** 85 skorzystaj z polecenia:
 
-```sh
-auto eth1
-iface eth1 inet static
-address 192.168.0.1
-netmask 255.255.0.0
+```bash
+systemctl restart NetworkManager.service
 ```
 
-Poniższy przykład obrazuje, w jaki sposób możesz wybrać dowolny zakres prywatnych adresów IP i dowolny adres z tego zakresu.
+Powtórz tę procedurę dla innych serwerów i przypisz każdemu z nich nieużywany adres IP z Twojego zakresu prywatnego. Twoje serwery będą mogły komunikować się między sobą w sieci prywatnej.
 
-1. Wciśnij `CTRL + X`, aby zamknąć plik konfiguracyjny sieci. 
-2. Wciśnij przycisk `Y`, aby zapisać wprowadzone modyfikacje, a następnie `Enter`.
-3. Zrestartuj serwer.
-4. Powtórz wszystkie kroki na innych serwerach i przypisz do nich unikalny adres IP z Twojego zakresu adresów prywatnych. Po tej operacji Twoje serwery będą mogły komunikować się między sobą w ramach prywatnej sieci.
+#### Konfiguracja Windows
 
-#### Debian 9
+Na przykład następujące konfiguracje będą korzystać z zakresu adresów IP `192.168.0.0/16` (**maska podsieci**: `255.255.0.0`).
 
-Otwórz plik konfiguracyjny interfejsu sieciowego za pomocą komendy:
-
-```sh
-nano /etc/network/interfaces
-```
-
-Skonfiguruj dodatkowy interfejs sieciowy w następujący sposób:
-
-```sh
-auto eno4
-iface eno4 inet static
-address 192.168.0.1
-netmask 255.255.0.0
-```
-
-Poniższy przykład obrazuje, w jaki sposób możesz wybrać dowolny zakres prywatnych adresów IP i dowolny adres z tego zakresu.
-
-1. Wciśnij `CTRL + X`, aby zamknąć plik konfiguracyjny sieci. 
-2. Wciśnij przycisk `Y`, aby zapisać wprowadzone modyfikacje, a następnie `Enter`.
-3. Zrestartuj serwer.
-4. Powtórz wszystkie kroki na innych serwerach i przypisz do nich unikalny adres IP z Twojego zakresu adresów prywatnych. Po tej operacji Twoje serwery będą mogły komunikować się między sobą w ramach prywatnej sieci.
-
-#### Ubuntu Server 16
-
-Otwórz plik konfiguracyjny interfejsu sieciowego za pomocą komendy:
-
-```sh
-vi /etc/network/interfaces
-```
-
-Wciśnij przycisk `I` na klawiaturze, aby włączyć tryb „insert” programu vi.
-
-Skonfiguruj dodatkowy interfejs sieciowy w następujący sposób:
-
-```sh
-auto eth1
-iface eth1 inet static
-address 192.168.0.1
-netmask 255.255.0.0
-```
-
-Poniższy przykład obrazuje, w jaki sposób możesz wybrać dowolny zakres prywatnych adresów IP i dowolny adres z tego zakresu.
-
-1. Wciśnij przycisk `ESC`.
-2. Wciśnij przycisk `SHIFT` oraz przycisk *dwukropek*, aby otworzyć edytor. 
-3. Wprowadź `wq`.
-4. Wciśnij przycik `Enter`.
-5. Zrestartuj serwer.
-6. Powtórz wszystkie kroki na innych serwerach i przypisz do nich unikalny adres IP z Twojego zakresu adresów prywatnych. Po tej operacji Twoje serwery będą mogły komunikować się między sobą w ramach prywatnej sieci.
-
-#### Ubuntu Server 17
-
-Otwórz plik konfiguracyjny interfejsu sieciowego za pomocą komendy:
-
-```sh
-nano /etc/network/interfaces
-```
-
-Skonfiguruj dodatkowy interfejs sieciowy w następujący sposób:
-
-```sh
-auto eno4
-iface eno4 inet static
-address 192.168.0.1
-netmask 255.255.0.0
-```
-
-Poniższy przykład obrazuje, w jaki sposób możesz wybrać dowolny zakres prywatnych adresów IP i dowolny adres z tego zakresu.
-
-1. Wciśnij `CTRL + X`, aby zamknąć plik konfiguracyjny sieci. 
-2. Wciśnij przycisk `Y`, aby zapisać wprowadzone modyfikacje, a następnie `Enter`.
-3. Zrestartuj serwer.
-4. Powtórz kroki od 1 do 5 na innych serwerach i przypisz do nich unikalny adres IP z Twojego zakresu adresów prywatnych. Po tej operacji Twoje serwery będą mogły komunikować się między sobą w ramach prywatnej sieci.
-
-#### Windows
-
-OVH używa zakresu prywatnych adresów IP od *192.168.0.0/16*.
-
-Wykonaj następujące czynności:
-
-- Zaloguj się do Twojego serwera Windows przez zdalny pulpit.
-- Kliknij przycisk `Start`{.action}.
-- Kliknij `Control Panel`{.action}.
+Zaloguj się do serwera Windows przez zdalny pulpit i przejdź do **Panelu konfiguracyjnego**.
 
 ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
 
-- Kliknij `Network and Internet`{.action}.
+Kliknij `Network and Internet`{.action}.
 
-![Network and Internet](images/windows_network_and_internet.png){.thumbnail}
+![Sieć i Internet](images/windows_network_and_internet.png){.thumbnail}
 
-- Kliknij `Network and Sharing Centre`{.action}.
+Otwórz `Network and Sharing Center`{.action}.
 
-![Network and Sharing Centre](images/windows_network_and_sharing_centre.png){.thumbnail}
+![Network and Sharing Center](images/windows_network_and_sharing_centre.png){.thumbnail}
 
-- Kliknij `Change Adapter Settings`{.action}.
+Kliknij `Change Adapter Settings`{.action}.
 
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
-- Prawym przyciskiem myszy kliknij w interfejs dodatkowej sieci.
-
-- Kliknij `Properties`{.action}.
+Kliknij prawym przyciskiem myszy w interfejsie sieci secondary, a następnie kliknij `Właściwości`{.action}.
 
 ![Windows Properties](images/windows_properties_button.png){.thumbnail}
 
-- Kliknij dwa razy w `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action}.
+Kliknij dwukrotnie `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
-![Internet Protocol Version 4 (TCP/IP/IPv4)](images/windows_ipv4.png){.thumbnail}
+![Internet Protocol Version 4](images/windows_ipv4.png){.thumbnail}
 
-- Kliknij `Use the following IP address`:
+Kliknij **Użyj następującego** adresu IP. W odpowiednim polu wpisz dowolny adres **IP** z Twojego zakresu prywatnego oraz odpowiednią **maskę** podsieci (`255.255.0.00` w tym przykładzie).
 
-    - `IP address`: wprowadź adres IP z Twojego zakresu adresów prywatnych;
-    - `Subnet mask`: wprowadź 255.255.0.0.
+![Użyj następującego adresu IP](images/windows_use_following_ip_address.png){.thumbnail}
 
-![Use the following IP address](images/windows_use_following_ip_address.png){.thumbnail}
+Kliknij `OK`{.action}, aby zapisać zmiany, po czym zrestartuj serwer, aby je zastosować.
 
-- Kliknij `OK`{.action}, aby zapisać wprowadzone modyfikacje.
-- Zrestartuj serwer.
-- Powtórz wszystkie kroki na innych serwerach i przypisz do nich unikalny adres IP z Twojego zakresu adresów prywatnych. Po tej operacji Twoje serwery będą mogły komunikować się między sobą w ramach prywatnej sieci.
+Powtórz tę procedurę dla innych serwerów i przypisz każdemu z nich nieużywany adres IP z Twojego zakresu prywatnego. Twoje serwery będą mogły komunikować się między sobą w sieci prywatnej.
 
 ## Sprawdź również
 

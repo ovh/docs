@@ -92,7 +92,7 @@ Restart the networking service to apply the configuration:
 systemctl restart networking
 ```
 
-Repeat the process for your other server(s) and assign a unique IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
+Repeat this process for your other server(s) and assign an unused IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
 
 ##### **Ubuntu**
 
@@ -125,7 +125,7 @@ Apply the configuration:
 netplan apply
 ```
 
-Repeat the process for your other server(s) and assign a unique IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
+Repeat this process for your other server(s) and assign an unused IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
 
 ##### **CentOS**
 
@@ -160,7 +160,7 @@ On **CentOS 8** use this command:
 systemctl restart NetworkManager.service
 ```
 
-Repeat the process for your other server(s) and assign a unique IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
+Repeat this process for your other server(s) and assign an unused IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
 
 
 #### Windows configuration 
@@ -189,9 +189,9 @@ Right-click the secondary network interface and then click `Properties`{.action}
 
 Double-click `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
-![Internet Protocol Version 4 (TCP/IP/IPv4)](images/windows_ipv4.png){.thumbnail}
+![Internet Protocol Version 4](images/windows_ipv4.png){.thumbnail}
 
-Click on **Use the following IP address**. Enter any **IP address** from your private range and the appropriate **Subnet mask** (`255.255.0.0` in this example) into the respective field.
+Click on **Use the following IP address**. Enter any **IP address** from your private range and the appropriate **Subnet mask** (`255.255.0.0` in this example) into the corresponding fields.
 
 ![Use the following IP address](images/windows_use_following_ip_address.png){.thumbnail}
 
