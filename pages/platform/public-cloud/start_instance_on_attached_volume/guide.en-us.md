@@ -42,7 +42,7 @@ cinder metadata 897ec71d-bae2-4394-b8c1-4d8fd373a725 set boot_from=True
 ```
 
 ### Attaching the volume
-<br> Once the volume has been configured with the metadata `boot_from` to `True`, the volume needs to be attached to the instance.
+Once the volume has been configured with the metadata `boot_from` to `True`, the volume needs to be attached to the instance.
 
 ```bash
 nova volume-attach myinstance01 897ec71d-bae2-4394-b8c1-4d8fd373a72
@@ -72,7 +72,7 @@ vdb    252:16   0  15G  0 disk
 └─vdb1 252:17   0  15G  0 part /
 ```
 
-The mount point **/** is properly mounted from **/dev/vdb1.**
+The mount point **/** is properly mounted from **/dev/vdb1**.
 
 ## Go further
 
