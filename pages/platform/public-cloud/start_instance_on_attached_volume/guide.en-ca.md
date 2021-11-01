@@ -23,7 +23,7 @@ It is also possible to deploy an operating system to and from a volume. The clou
 > Openstack natively allows you to boot from a volume. 
 > It involves making the volume bootable and starting the instance from this volume.
 > The changes will cause the original disk to disappear as the new volume is taking over.
-> The functionality described in this guide eliminates the need to access the original disk and therefore takes advantage of its volume.
+> The functionality described in this guide eliminates the need to access the original disk and therefore takes advantage of the volume.
 >
 
 ## Requirements
