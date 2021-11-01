@@ -1,20 +1,20 @@
 ---
-title: 'Starting an instance on a attached volume'
+title: 'Starting an instance on an attached volume'
 excerpt: 'Find out how to start an instance on an attached volume'
 slug: start-instance-on-a-volume
 section: Getting started
 order: 6
 ---
 
-**Last updated 01st November 2021**
+**Last updated 1st November 2021**
 
 ## Objective
 
-Cloud servers come with an original disk that is copied from a system image (Debian 8, Windows 10...). It is also possible to use additional volumes, these are persistent disks that will allow to store data.
+Cloud servers come with an original disk that is copied from a system image (Debian 8, Windows 10, etc.). It is also possible to use additional volumes, these are persistent disks that will allow to store data.
 
 It is also possible to deploy an operating system to and from a volume. The cloud server will then start on this volume instead of the original disk.
 
-**This guide provides you with instructions on how to start an instance on a attached volume.**
+**This guide provides you with instructions on how to start an instance on an attached volume.**
 
 ![public-cloud](images/3704.png){.thumbnail}
 
@@ -33,7 +33,7 @@ It is also possible to deploy an operating system to and from a volume. The clou
 
 ### Configuring the volume
 
-#### Making the volume as priority device in the boot order.
+#### Making the volume as the priority device in the boot order.
 
 A metadata must be added to the volume so that the instance can prioritize the volume during the boot phase.
 
@@ -42,7 +42,7 @@ cinder metadata 897ec71d-bae2-4394-b8c1-4d8fd373a725 set boot_from=True
 ```
 
 ### Attaching the volume
-<br> Once the volume has been configured with the metadata 'boot_from' to 'True', the volume needs to be attached to the instance.
+<br> Once the volume has been configured with the metadata `boot_from` to `True`, the volume needs to be attached to the instance.
 
 ```bash
 nova volume-attach myinstance01 897ec71d-bae2-4394-b8c1-4d8fd373a72
@@ -50,8 +50,7 @@ nova volume-attach myinstance01 897ec71d-bae2-4394-b8c1-4d8fd373a72
 
 ### Rebooting the instance
 In order for the instance to start on the volume, it will need to be rebooted.
-
-<br> This can be done by using 'nova stop', and 'nova start' commands, or by a forced reboot.
+<br> This can be done by using `nova stop`, and `nova start` commands, or by a forced reboot.
 
 ```bash
 nova reboot --hard myinstance01
@@ -73,7 +72,7 @@ vdb    252:16   0  15G  0 disk
 └─vdb1 252:17   0  15G  0 part /
 ```
 
-The mount point "/" is properly mounted from /dev/vdb1.
+The mount point **/** is properly mounted from **/dev/vdb1.**
 
 ## Go further
 
