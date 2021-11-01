@@ -50,7 +50,7 @@ nova volume-attach myinstance01 897ec71d-bae2-4394-b8c1-4d8fd373a72
 
 ### Rebooting the instance
 In order for the instance to start on the volume, it will need to be rebooted.
-<br> This can be done by using `nova stop`, and `nova start` commands, or by a forced reboot.
+<br> This can be done by using `nova stop` and `nova start` commands, or by a forced reboot.
 
 ```bash
 nova reboot --hard myinstance01
@@ -61,7 +61,7 @@ nova reboot --hard myinstance01
 > A "soft" reboot is not sufficient for this task.
 >
 
-To verify the right boot order, you can verify the mount points.
+To make sure the boot order has been properly set on the volume, you can verify the mount points with the following command:
 
 ```bash
 $ lsblk
