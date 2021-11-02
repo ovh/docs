@@ -28,7 +28,7 @@ order: 6
  }
 </style>
 
-**Last updated October 28<sup>th</sup>, 2021.**
+**Last updated October 29<sup>th</sup>, 2021.**
 
 ## Objective
 
@@ -198,11 +198,13 @@ In my example cluster:
   "scaleDownUnreadyTimeSeconds": 1200,
   "scaleDownUtilizationThreshold": "0.5"
 }
+</code></pre>
 
-$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}'
+<pre class="console"><code>$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}'
 nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
+</code></pre>
 
-$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+<pre class="console"><code>$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
 {
   "antiAffinity": false,
   "autoscale": true,
