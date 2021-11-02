@@ -1,7 +1,7 @@
 ---
 title: Hosted Private Cloud VMware Lifecycle Policy
 slug: lifecycle-policy
-excerpt: 'Lifecycle policy for Hosted Private Cloud VMware'
+excerpt: 'Lifecycle policy for Hosted Private Cloud powered by VMware'
 section: FAQ
 order: 3
 ---
@@ -10,12 +10,12 @@ order: 3
 
 > [!warning]
 >
-> This page is for general information purpose only and OVHcloud does not guarantee that the information will be complete or up-to-date. The contracts governing this product (notably the general and specific terms of use, which can be found in the client account) and the specific communications sent by OVHcloud to the clients will prevail over any information displayed in this web page.
+> This page is for general information purposes only and OVHcloud does not guarantee that the information will be complete or up-to-date. The contracts governing this product (notably the general and specific terms of use, which can be found in the client account) and the specific communications sent by OVHcloud to the clients will prevail over any information displayed in this web page.
 >
 
 ## Objective
 
-**This page provides an overview of the lifecycle policy of OVHcloud Hosted Private Cloud VMware services.**
+**This page provides an overview of the lifecycle policy of OVHcloud Hosted Private Cloud powered by VMware services.**
 
 OVHcloud's Hosted Private Cloud VMware service proposes dedicated infrastructure based on VMware SDDC technologies as well as other editors' technologies (such as Veeam or Zerto).
 
@@ -27,7 +27,7 @@ OVHcloud has a lifecycle policy for the service in order to take into account se
 * any factor affecting the quality of the service.
 
 
-This lifecycle policy is provided to help clients understand the underlying reasons for version or range changes and the impact of each phase of the lifecycle on the service, and anticipate and prepare the transition to newer version or range.
+This lifecycle policy is provided to help clients understand the underlying reasons for version or range changes and the impact of each phase of the lifecycle on the service, and anticipate and prepare the transition to a newer version or range.
 
 ### Commercial range concerned
 
@@ -59,13 +59,13 @@ This refers to the date when the growth for a commercial range or version is dis
 
 The End of Sales are usually announced with a thirty (30) days minimum warning.
 
-A commercial range or version will typically reach its End of Growth five(5) years after the beginning of the General Availability phase.
+A commercial range or version will typically reach its End of Growth five (5) years after the beginning of the General Availability phase.
 
 #### End of Life 
 
-This refers to the date when a commercial range or version is being shut down
+This refers to the date when a commercial range or version is being shut down.
 
-The End of Life may involve the unapplicability of SLAs, and the absence of support services, the absence of spares.
+The End of Life may involve the unapplicability of SLAs, the absence of support services, and the absence of spares.
 
 Following the End of Life, the servers concerned will be shut down definitively. OVHcloud may offer a grace period of a few months to allow for the last clients using servers of this range to move onto newer ranges.
 
@@ -112,18 +112,22 @@ This table presents a summary of the different phases of the lifecycle of the se
 
 ### VMware lifecycle policy
 
-To know the lifecycle policy of VMware products, please refer to the editor's publication accessible at the following url :
+To know the lifecycle policy of VMware products, please refer to the editor's publication accessible at the following URL:
+
 [VMware Product Lifecycle](https://lifecycle.vmware.com/#/)
 
 ### Veeam Backup & Replication lifecycle policy
 
-To know the lifecycle policy of Veeam products, please refer to the editor's publications accessible at the following urls :
+To know the lifecycle policy of Veeam products, please refer to the editor's publications accessible at the following URLs:
+
 [Veeam Version release](https://www.veeam.com/releasestatus_rn.pdf)
+
 [Veeam Product Version Lifecycle](https://www.veeam.com/product-lifecycle.html)
 
 ### Zerto lifecycle policy
 
-To know the lifecycle policy of Zerto products, please refer to the editor's publication accessible at the following url :
+To know the lifecycle policy of Zerto products, please refer to the editor's publication accessible at the following URL:
+
 [Zerto Virtual Replication Product Version Lifecycle Matrix](http://s3.amazonaws.com/zertodownload_docs/Latest/Zerto+Virtual+Replication+Product+Version+Lifecycle+Matrix.pdf)
 
 ## Go further
