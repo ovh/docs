@@ -23,24 +23,25 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 ## Concept
 
 A PostgreSQL instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), also known as a Console or Terminal.
+One of the easiest, yet powerful ways, is to use a Command Line Interface (CLI), also known as a Console or Terminal.
+
 To interact correctly with the PostgreSQL instance, we need to first install something called a PostgreSQL client, in order to connect and control the PostgreSQL service remotely.
 It's a Client-Server interaction.
 
 ## Instructions
 
-### Install PostgreSQL client
+### Installing the PostgreSQL client
 
 > [!primary]
 >
 > Please note that PostgreSQL-Client is natively integrated in the PostgreSQL software package.
 >
 
-You first need to install a software to interact with your PostgreSQL instance remotely. This official software can be installed on various supports like your own computer, a VPS, a virtual machine... the only rule is to be able to reach the public network (Internet) and have sufficient rights to install it.
+You first need to install a software to interact with your PostgreSQL instance remotely. This official software can be installed on various client machines such as your own computer, a VPS or a virtual machine. The only rule is to be able to reach the public network (Internet) and have sufficient rights to install it.
 
 In order to do so and depending on your configuration, you may need to follow official PostgreSQL documentation to install PostgreSQL client (referred to as psql).
 
-Follow the steps here after selecting Windows, MacOS or Linux operation system : <https://www.postgresql.org/download/>
+Follow the steps here after selecting Windows, MacOS or Linux as operating system: <https://www.postgresql.org/download/>
 
 As explained, the **postgresql-client** is often included by default.
 
@@ -49,7 +50,7 @@ Example with Linux/Debian:
 ![Debian postgresql-client](images/debian_postgresql.png){.thumbnail}
 
 
-Once installed, you need to catch your IP address in order to authorize connection form this specific client.
+Once installed, you need to catch your IP address in order to authorise connections from this specific client.
 
 If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/){.external}.
 Copy the IP address numbers shown on this website and keep them for later.
@@ -65,12 +66,13 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 #### Step 1: Verify your user roles and password
 
-Select the `Users`{.action} tab. By default a first user called **avnadmin** is created, with permissions to perform most of usual DB management tasks. **SUPERUSER** is not allowed.
+Select the `Users`{.action} tab. By default a first user called **avnadmin** is created, with permissions to perform most of the usual DB management tasks. **SUPERUSER** is not allowed.
 
-If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user + password pair.
+If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update each access configuration in which you already use this user/password pair.
 
 This first user **avnadmin** comes with the following privileges:
-```
+
+```console
   LOGIN
   NOSUPERUSER
   INHERIT
@@ -85,19 +87,19 @@ So far, **user roles and privileges management is not supported via OVHcloud Con
 Please read the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html){.external} to select the right roles for your use-case.
 
 
-In our example, we will simple reset **avnadmin** password.
+In our example, we will simply reset the **avnadmin** password.
 
-Once created or updated, the user has to be ready and with the "Enabled" status in the control panel.
+Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
 
 ![User ready](images/user_enabled.png){.thumbnail}
 
-#### Step 2: Authorize incoming connections from the PostgreSQL client
+#### Step 2: Authorise incoming connections from the PostgreSQL client
 
 In this step, select the `Authorised IP's`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
-Like this we can help prevent intrusive connection attempts.
+This can help to prevent intrusive connection attempts.
 
-Click to authorize a new IP, and enter the previously found IP of your remote client. In our case we will enter 109.190.200.59.
+Click to authorise a new IP, and enter the previously found IP of your remote client. In our case we will enter 109.190.200.59.
 
 ![Add an IP](images/ip_whitelist.png){.thumbnail}
 
@@ -110,11 +112,11 @@ Click to authorize a new IP, and enter the previously found IP of your remote cl
 
 Now all the setup should be done, from the remote client and the PostgreSQL instance.
 
-Select the `General Information`{.action} tab. In the **Login Informations** section, copy the Service URI.
+Select the `General Information`{.action} tab. In the **Login information** section, copy the Service URI.
 
 It should be similar to this:
 
-```
+```console
 postgres://<username>:<password>@<hostname>:<port>/defaultdb?sslmode=require
 ```
 
@@ -130,7 +132,7 @@ We will now follow official PostgreSQL documentation to perform our first connec
 
 In your CLI, type **psql --version**. The result should look like this:
 
-```
+```console
 laptop$ psql --version
 psql (PostgreSQL) 13.4 (Ubuntu 13.4-1))
 ```
@@ -141,22 +143,23 @@ It means that psql is correctly installed and working properly. If you do not se
 ### Connect to your PostgreSQL instance
 
 We will follow official PostgreSQL documentation: <https://www.postgresql.org/docs/devel/app-psql.html>.
+
 To perform a connection, simply type **psql** followed by the Service URI copied before:
 
-```
+```console
 laptop$psql "postgres://<username>:<password>@<hostname>:<port>/defaultdb?sslmode=require"
 ```
 
 Don't forget you need to modify the username, password, hostname and port.
 In our example, it will look like this:
 
-```
+```console
 laptop$psql "postgre://avnadmin:Mysup3rs3cur3p4ssw0rd@postgresql-ab123456-cd7891011.database.cloud.ovh.net:20184/defaultdb?sslmode=require"
 ```
 
 Once connected correctly, you should see something similar to:
 
-```
+```console
 psql (13.4 (Ubuntu 13.4-1))
 SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
 Type "help" for help.
@@ -173,14 +176,14 @@ Once connected, you can manage your PostgreSQL instance with built-in PostgreSQL
 Please follow the official PostgreSQL documentation.
 
 To verify:
-- *\h CREATE DATABASE* will display help on a specific command. Here for CREATE DATABASE;
-- *\l+* will list all the databases;
-- *select * from pg_user;* will display informations about existing users.
+- `\h CREATE DATABASE` will display help on a specific command (here for *CREATE DATABASE*);
+- `\l+` will list all the databases;
+- `select * from pg_user;` will display informations about existing users.
 
 
-In our example, it will look like this :
+In our example, it will look like this:
 
-```
+```sql
 defaultdb=> \l+
                                                                 List of databases
    Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   |  Size   | Tablespace |            Description
@@ -194,7 +197,7 @@ defaultdb=> \l+
 (4 rows)
 ```
 
-```
+```sql
 defaultdb=> select * from pg_user;
   usename  | usesysid | usecreatedb | usesuper | userepl | usebypassrls |  passwd  | valuntil | useconfig
 -----------+----------+-------------+----------+---------+--------------+----------+----------+-----------
@@ -204,7 +207,7 @@ defaultdb=> select * from pg_user;
 (3 rows)
 ```
 
-```
+```sql
 defaultdb=> \h CREATE DATABASE
 Command:     CREATE DATABASE
 Description: create a new database
