@@ -1,91 +1,86 @@
 ---
 title: Mise en route du KMS CipherTrust Manager
 slug: kms-cipher-trust
-excerpt: Découvrez comment déployer et les premières étape de configuration du KMS CipherTrust Manager sur un environnement vSphere
+excerpt: Découvrez comment déployer et les premières étapes de configuration du KMS CipherTrust Manager sur un environnement vSphere
 section: Services et options OVHcloud
 hidden: true
 ---
 
-**Derniére mise à jour le 04/10/2021
+**Derniére mise à jour le 04/10/2021**
 
 ## Objectif
 
-Configurer le KMS CipherTrust.
+Vous trouverez dans ce guide les différentes étapes permetant la configuration du Key Management System (**KMS**) CipherTrust de Thales dans l'interface vSphere de votre Hosted Private Cloud.
 
-**Ce guide explique comment configuer un KMS Thales CipherTust.**
+** Découvrez comment configuer un KMS Thales CipherTust.**
 
 ## Prérequis
 
-Les prérequis nécessaires à la mise en place de l’infrastructure sont :
-
-* Posséder un service Hosted Private Cloud [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
-* Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
-* Avoir une IP publique par instance de KMS
-* Avoir les fichiers du modèle OVF présent sur son poste de travails
+* Disposer d'un service [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+* Être connecté à l'[interface vSphere](../connexion-interface-vsphere/) de votre service Hosted Private Cloud.
+* Avoir une adresse IP publique par instance de KMS
+* Avoir les fichiers du modèle OVF présent sur son poste de travail
 * La partie publique de la clé SSH 
 * Récupération de l'OVA [KMS](https://ovh.to/W2gBYe)
 * Une machine permettant l’exécution d’un script bash ayant :
-    * jq installé (permettant le parsing de fichier json)
-	* ksctl présent sur la machine [utilitaire Thales](https://thalesdocs.com/ctp/cm/latest/get_started/deployment/install-cli-toolkit/index.html)
+    - **jq** installé (permettant le parsing de fichier json)
+	- **ksctl** présent sur la machine [utilitaire Thales](https://thalesdocs.com/ctp/cm/latest/get_started/deployment/install-cli-toolkit/index.html)
 
 
 ## En pratique 
 
 ### Installer les OVA CipherTrust Manager
 
-Etapes :
-
 * Se connecter au vCenter avec un compte permettant le déploiement d’un modèle OVF
 
 ![kms_cipher_trust_ova_01](images/kms_cipher_trust_ova_01.png){.thumbails}
 
-* Dans le menu Hôte et cluster, sélectionner le cluster, puis cliquer sur Actions > Déployer un modèle OVF 
-
-
-* Suivre les étapes du wizard d’installation :
+* Dirigez-vous dans le menu `Hôte et cluster`{.action}, puis sélectionnez le cluster
+* Cliquez sur `Actions`{.action} > `Déployer un modèle OVF`{.action} 
+* Suivez les étapes d’installation :
 
 ![capture2](images/kms_cipher_trust_ova_02.png){.thumbails}
 
 
-* Sélectionner les fichiers locaux liés au modèle OVA : 610-000612-005_SW_VMware_CipherTrust_Manager_v2.4.0_RevA.ova
-* cliquez sur le bouton `Next`{.action}
+* Sélectionnez les fichiers locaux liés au modèle OVA : `610-000612-005_SW_VMware_CipherTrust_Manager_v2.4.0_RevA.ova`
+* Cliquez sur le bouton `Next`{.action}
 
 ![capture3](images/kms_cipher_trust_ova_03.png){.thumbails}
 
-* Renseigner le nom de la machine virtuelle. Le nom doit être différent entre chaque instance. Ici nous l’appellerons **KMS_01_master**
-* Selectionner le datacenter où sera placer la VM
+* Renseignez le nom de la machine virtuelle. Le nom doit être différent entre chaque instance. Ici, nous l’appellerons **KMS_01_master**
+* Selectionnez le datacenter où sera placé la machine virtuelle
 * Cliquez sur le bouton `Next`{.action}
 
 ![capture4](images/kms_cipher_trust_ova_04.png){.thumbails}
 
-* Sélectionner la ressource de compute, ici **Cluster1**
+* Sélectionnez la ressource de calcul (compute resource), ici **Cluster1**
 * Cliquez sur le bouton `Next`{.action}
 
 ![capture5](images/kms_cipher_trust_ova_05.png){.thumbails}
 
-* Vérifier les informations
+* Vérifiez les informations
 * Cliquez sur le bouton `Next`{.action}
 
 ![capture6](images/kms_cipher_trust_ova_06.png){.thumbails}
 
-* Sélectionner le périphérique de stockage
+* Sélectionnez le périphérique de stockage
 * Cliquez sur le bouton `Next`{.action}
 
 ![capture7](images/kms_cipher_trust_ova_07.png){.thumbails}
 
-* Sélectionner le réseaux approprié, ici **ADM**
+* Sélectionnez le réseau approprié, ici **ADM**
 * Cliquez sur le bouton `Next`{.action}
 
 ![capture7](images/kms_cipher_trust_ova_08.png){.thumbails}
 
-* Vérifier les informations liées au déploiement
+* Vérifiez les informations liées au déploiement
 * Cliquez sur le bouton `Finish`{.action}
 
-Une fois la VM déployées,
+Une fois la machine virtuelle déployée:
 
 ![capture8](images/kms_cipher_trust_vm_01.png){.thumbails}
 
-* Sélectionner la VM
+* Sélectionnez la machine virtuelle
 * Cliquez sur `Edit Settings`{.action}
 
 ![capture8](images/kms_cipher_trust_vm_02.png){.thumbails}
@@ -95,24 +90,24 @@ Une fois la VM déployées,
 
 ![capture9](images/kms_cipher_trust_vm_03.png){.thumbails}
 
-* Puis `OK`{.action}
+* Validez avec le bouton `OK`{.action}
 
-Configuration de la VM
+Configuration de la machine virtuelle :
 
 ![capture9](images/kms_cipher_trust_vm_04.png){.thumbails}
 
-* Aller dans l’onglet **Configure**
-* Puis dans le menu de gauche **vApp Options**
+* Allez dans l’onglet **Configure**
+* Dans le menu de gauche **vApp Options**
 * Cliquez sur `Edit...`{.action}
 
 ![capture9](images/kms_cipher_trust_vm_05.png){.thumbails}
 
-* Vérifier que **Enable vApp options** est bien coché
-* Aller dans l’onglet **OVF Details**
-* Cocher **ISO images**
+* Vérifiez que **Enable vApp options** est bien coché
+* Allez dans l’onglet **OVF Details**
+* Cochez **ISO images**
 * Cliquez sur `OK`{.action}
 
-Preparer le fichier cloud.init selon le modéle suivant
+Preparez le fichier cloud.init selon le modéle suivant
 
 ```
 #cloud-config
@@ -138,11 +133,11 @@ keysecure:
 
 Attention : 
 
-*	ce fichier ne doit pas contenir de tabulation, uniquement les espace sont acceptés
+*	Ce fichier ne doit pas contenir de tabulation, seuls les espaces sont acceptés
 *	Toutes les valeurs entre « < » et « > » doivent être remplacées par les bonnes valeurs
 
 
-Mettre le fichier cloud.init en base 64. Exemple : 
+Modifiez le fichier cloud.init en base 64. Exemple : 
 
 ```openssl base64 -in cloud.init -out cloudb64.init```
 
@@ -151,12 +146,12 @@ Mettre le fichier cloud.init en base 64. Exemple :
 > La chaine en base 64 doit être sur une seule ligne pour le reste de l’opération.
 > 
 
-Finalisation de la configuration de la VM,
+Finalisation de la configuration de la machine virtuelle :
 
 ![capture9](images/kms_cipher_trust_vm_06.png){.thumbails}
 
-* Aller dans l’onglet **Configure**
-* Puis dans le menu de gauche **vApp Options**
+* Dirigez-vous sur l’onglet **Configure**
+* Dans le menu de gauche **vApp Options**
 * Puis dans la section **Properties**, cliquez sur `ADD`{.action}
 
 ![capture9](images/kms_cipher_trust_vm_08.png){.thumbails}
@@ -167,88 +162,89 @@ Finalisation de la configuration de la VM,
 ![capture9](images/kms_cipher_trust_vm_10.png){.thumbails}
 
 * Dans l’onglet **Type**
-* Saisir dans **Default value**, la chaine en base 64
-* Cliquez sur `SAVE`{.action}
+* Saisissez dans **Default value**, la chaine en base 64
+* Cliquez sur `SAVE`{.action} pour valider
 
-Démarrer la VM et vérifier qu’à l’issu du démarrage l’IP configurée est bien présente.
+Démarrez la machine virtuelle et vérifiez qu’à l’issue du démarrage l’adresse IP configurée est bien présente.
 
-Repéter les étapes pour la seconde instance **KMS_01_master**
+Repétez les étapes pour la seconde instance **KMS_01_master**
 
 A l’issue de ces étapes, les différentes instances doivent être visibles. Exemple : 
 
-![capture14](images/capture14.PNG){.thumbails}
+![capture14](images/capture14.png){.thumbails}
 
-![capture15](images/capture15.PNG){.thumbails}
+![capture15](images/capture15.png){.thumbails}
 
-![capture16](images/capture16.PNG){.thumbails}
+![capture16](images/capture16.png){.thumbails}
 
 ## Pré-configurer chaque instance
 
-Attention : dans ces étapes, il est important que la clé SSH ainsi que les mots de passe définits dans les différentes instances d’un client soient identiques.
+Attention : dans ces étapes, il est important que la clé SSH ainsi que les mots de passe définis dans les différentes instances d’un client soient identiques.
 
-Lors de la génération du mot de passe temporaire, attention à ce que le mot de passe respecte les policy suivantes.
+Lors de la génération du mot de passe temporaire, attention à ce que le mot de passe respecte les règles suivantes :
 
-![capture17](images/capture17.PNG){.thumbails}
+![capture17](images/capture17.png){.thumbails}
 
-
-Etapes:
-
-Première authentification au KMS
-*	Se connecter sur l’appliance : adresseIp
+Première authentification au KMS :
+*	Connectez-vous sur l’appliance : adresseIp
 *	Renseigner la clé SSH publique du client
 
-![capture19](images/capture19.PNG){.thumbails}
+![capture19](images/capture19.png){.thumbails}
 
-*	L’insertion peut prendre quelques minutes afin que les microservices puissent se lancer
+> [!primary]
+>
+> L’insertion peut prendre quelques minutes afin que les microservices puissent se lancer.
 
-Changement du mot de passe
-*	Depuis la fenêtre, rentrer les mots de passes par défaut : admin / admin
-*	Une nouvelle fenêtre arrive afin de renouveler le mot de passe. Positionner un mot de passe temporaire qui sera à transmettre au client afin que ce dernier puisse le modifier par la suite.
+Changement du mot de passe :
+*	Depuis la fenêtre, rentrez les mots de passes par défaut : admin / admin
+*	Une nouvelle fenêtre apparaît pour renouveler le mot de passe. Renseignez un mot de passe temporaire que vous transmettrez au client afin que ce dernier puisse le modifier par la suite.
 
-![capture20](images/capture20.PNG){.thumbails}
+![capture20](images/capture20.png){.thumbails}
 
 *	Cliquer sur « Change Password »
-*	Authentifier vous pour vérifier la bonne prise en compte du mot de passe
+*	Authentifiez-vous pour vérifier l'application du mot de passe
 
-![capture21](images/capture21.PNG){.thumbails}
+![capture21](images/capture21.png){.thumbails}
 
 ## Créer le script de configuration automatique
 
-Etapes :
+* Se positionner sur une machine ayant un accès aux adresses IPs publiques des instances du KMS
+* Désarchivez le package réceptionné et vérifiez l’arborescence :
 
-* Se positionner sur une machine ayant un accès aux IPs publiques des instances du KMS
-* Désarchiver le package réceptionné et vérifier ll’arborescence :
+```
+config
+config.yaml
+configprofile.json
+cloud.init.template
+ext_ca
+sectigo_rsa.cer
+usertrust_rsa.cer
+kmip_ssl
+kmip_user
+logs
+web_ssl
+config.json
+ctmInit.sh
+ksctl.exe
+ksctlversion
+ksctl
+```
 
-*	config
-*	config.yaml
-*	configprofile.json
-*	cloud.init.template
-*	ext_ca
-*	sectigo_rsa.cer
-*	usertrust_rsa.cer
-*	kmip_ssl
-*	kmip_user
-*	logs
-*	web_ssl
-*	config.json
-*	ctmInit.sh
-*	ksctl.exe
-*	ksctlversion
-*	ksctl
-
-KSCTL et fournit par Thales en version exécutable windows, Linux et darwin.
-A la racine du package, la version windows est présente, la version Linux est quant à elle disponible dans le répertpore ksctlversion.
+KSCTL est fourni par Thales en version exécutable windows, Linux et darwin.
+À la racine du package, la version windows est présente, la version Linux est quant à elle disponible dans le répertoire **ksctlversion**.
 
 Avant de continuer, il est important de positionner, à la racine du package, la version de KSCTL correspondant au system d’exploitation utilisé.
 
-Attention : le script est un script bash, dans le cas d’une utilisation sous Windows, penser à utiliser un mobaXterm ou autre outil permettant de simuler un environnement Linux
+> [!primary]
+>
+> Il s'agit d'un script bash, dans le cas d’une utilisation sous Windows, penser à utiliser un mobaXterm ou autre outil permettant de simuler un environnement Linux
 
-* Configuration d’accès au KMS
- * Editer le fichier config/config.yaml
- * Modifier les éléments suivants :
+Configuration d’accès au KMS : 
+* Editer le fichier config/config.yaml
+* Modifiez les éléments suivants :
 
-* KSCTL_PASSWORD : password mis à jour lors de l’étape 2 du §3
-* KSCTL_URL : https://<ip>:443 en utilisant l’IP de l’une des deux instances
+  * KSCTL_PASSWORD : password mis à jour lors de l’étape 2 du §3
+  * KSCTL_URL : https://<ip>:443 en utilisant l’IP de l’une des deux instances
 
 Exemple de fichier :
 ```
@@ -262,10 +258,9 @@ KSCTL_NOSSLVERIFY: true
 KSCTL_TIMEOUT: 30
 ```
 
-* OPTIONNEL
-Configuration du profile de certificat utilisateur kmip
-*	Editer le fichier config/configprofile.json
-*	Ce fichier est à modifier uniquement dans le cas où l’on souhaite changer le nom de l’utilisateur kmip. Dans cette hypothèse, modifier la proproété « csr_cn »
+Optionnel : Configuration du profile de certificat utilisateur kmip
+*	Editez le fichier config/configprofile.json
+*	Ce fichier est à modifier uniquement dans le cas où l’on souhaite changer le nom de l’utilisateur **kmip**. Dans cette hypothèse, modifier la propriété « csr_cn »
 
 ```
 Exemple de fichier :
@@ -282,10 +277,10 @@ Exemple de fichier :
 }
 ```
 
-* Configuration du script :
+Configuration du script :
 
-* Editer le fichier config.json
-* Mettre à jour les informations :
+* Editez le fichier **config.json**
+* Mettre à jour les informations
 
 Exemple et explication : 
 ```
@@ -329,21 +324,22 @@ Le script de configuration automatique permet de réaliser les opérations suiva
 * Création d’un registration token
 * Génération du certificat KMIP SSL client (qui sera ensuite configuré dans vCenter)
 
-Cette étape ne peut être réalisées que si les étapes précédentes ont été réalisées avec succès.
+Cette dernière étape ne peut être réalisé que si les étapes précédentes ont été réalisées avec succès.
+
 Une fois les prérequis validés :
 
 `./ctmInit.sh -c config.json` 
 
-Durant l’exécution du script, les interfaces WEB et KMIP des instances du KMS seront redémarrés, les accès WEB peuvent donc être bloqués jusqu’à la fin.
+Durant l’exécution du script, les interfaces WEB et KMIP des instances du KMS seront redémarrées, les accès WEB peuvent donc être bloqués jusqu’à la fin.
 
-Une fois que le script a rendu la main, effectuer les vérifications d’usage :
+Une fois que le script a rendu la main, effectuez les vérifications d’usage :
 
 * Se connecter sur une instance 
-* Access Managerment > User => vérifier que l’utilisateur KMIP est créé
-* CA > External CA => Vérifier que les 2 ACs externes ont été configurées
-* Admin Settings > Cluster => Vérifier que les deux nœuds sont actifs
-* Products > KMIP > Registered client => Vérifier que le client KMIP a bien été enregistré
-* Sur le file system ou le script a été exécuté, vérifié dans les différents répertoires que les certificats sont bien présents, ont le bon CN et ont la bonne durée de vie
+* Access Managerment > User => vérifiez que l’utilisateur KMIP est créé
+* CA > External CA => Vérifiez que les 2 ACs externes ont été configurées
+* Admin Settings > Cluster => Vérifiez que les deux nœuds sont actifs
+* Products > KMIP > Registered client => Vérifiez que le client KMIP a bien été enregistré
+* Sur le file system ou le script a été exécuté, vérifiez dans les différents répertoires que les certificats sont bien présents, ont le bon **CN** et ont la bonne durée de vie
 
 La configuration automatique est terminée.
 
@@ -351,8 +347,8 @@ La configuration automatique est terminée.
 ## Activer la licence KMS
 
 Dans le cadre de l’installation par client, deux types de licences sont à installer par client :
-* Virtual CipherTrust Manager : licence propre à une instance :
 
+* Virtual CipherTrust Manager : licence propre à une instance :
 * Il faudra activer les licences unitairement pour chaque instance à l’aide du « Key Manager Lock Code »
 *	L’installation devra être réalisée par appliance
 *	KMIP : licence pour les clients KMIP
@@ -360,7 +356,7 @@ Dans le cadre de l’installation par client, deux types de licences sont à ins
 *	L’installation devra être réalisée une seule fois avant d’être propagée sur les membres du cluster.
 
 Afin de réaliser l’activation et l’installation des licences :
-*	Se connecter sur chacune des instances du client :
+*	Connectez-vous sur chacune des instances du client :
 *	Dans Admin Settings > Licensing > Lock Codes, récupérer :
 *	Key Manager Lock Code
 *	Connector Lock Code
