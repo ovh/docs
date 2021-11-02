@@ -6,7 +6,7 @@ section: FAQ
 order: 3
 ---
 
-**Last updated 25th October 2021**
+**Last updated 02nd November 2021**
 
 > [!warning]
 >
@@ -79,17 +79,17 @@ Clients should anticipate the range change by testing in advance and making sure
 
 This table presents a summary of the different phases of the lifecycle of the service. The impact for each commercial range may differ.
 
-| Phases | General Availability | General Support | Deprecated (applicable on Essentials and Premier only) | Grace Period / Decommissionning |
-|:-----:|:-----:|:-----:|:-----:|:-----:|
-| Sales (start new services) | X |  |  |  |
-| Growth (existing services) | X | X |  |  |
-| Maintenance updates and upgrades | X | X |  |  |
-| Support | X | X |  |  |
-| SLA | X | X |  |  |
-| bug fixes | X | X | X |  |
-| Hardware support (spares) | X | X | X |  |
-| Security patches | X | X | X | X |
-| Knowledge Base | X | X | X | X |
+| Phases | General Availability | General Support | Grace Period / Decommissionning |
+|:-----:|:-----:|:-----:|:-----:|
+| Sales (start new services) | X |  |  |
+| Growth (existing services) | X | X |  |
+| Maintenance updates and upgrades | X | X |  |
+| Support | X | X |  |
+| SLA | X | X |  |
+| bug fixes | X | X |  |
+| Hardware support (spares) | X | X |  |
+| Security patches | X | X | X |
+| Knowledge Base | X | X | X |
 
 
 
