@@ -33,7 +33,7 @@ This section will explain the first steps specifically for the cPanel pre-instal
 
 > [!primary]
 >
-> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the "whmlogin" command to generate a new link.
+> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the "sudo whmlogin" command to generate a new link.
 >
 
 <ol start="3">

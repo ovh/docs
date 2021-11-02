@@ -48,7 +48,7 @@ Depois de receber o e-mail com o link único, clique neste link para efetuar a c
 
 > [!primary]
 >
-> Se a ligação já expirou, ligue-se ao seu VPS via SSH usando o utilizador CentOS e execute o comando "whmlogin" para gerar uma nova ligação.
+> Se a ligação já expirou, ligue-se ao seu VPS via SSH usando o utilizador CentOS e execute o comando « sudo whmlogin » para gerar uma nova ligação.
 >
 
 O URL acima mencionado permite-lhe ligar-se sem informações de identificação (utilizador e palavra-passe) à sua interface WHM.

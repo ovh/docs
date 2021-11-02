@@ -37,7 +37,7 @@ Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalo
 
 > [!primary]
 >
-> Jeśli link już wygasł, proszę połączyć się z VPS przez SSH używając użytkownika CentOS i wykonać polecenie "whmlogin", aby wygenerować nowy link.
+> Jeśli link już wygasł, proszę połączyć się z VPS przez SSH używając użytkownika CentOS i wykonać polecenie « sudo whmlogin », aby wygenerować nowy link.
 >
 
 <ol start="3">

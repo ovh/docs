@@ -37,7 +37,7 @@ Di seguito trovi i primi step per la messa in servizio dell'immagine preinstalla
 
 > [!primary]
 >
-> Se il link è già scaduto, connettiti al tuo VPS via SSH usando l'utente CentOS ed esegui il comando "whmlogin" per generare un nuovo link.
+> Se il link è già scaduto, connettiti al tuo VPS via SSH usando l'utente CentOS ed esegui il comando « sudo whmlogin » per generare un nuovo link.
 >
 
 <ol start="3">
