@@ -27,7 +27,7 @@ Questa tecnologia permette di scambiare gli indirizzi IP da una soluzione all'al
 ## Prerequisiti
 
 - Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} nello Spazio Cliente OVHcloud
-- Disporre di un [indirizzo IP Fail](https://www.ovhcloud.com/it/bare-metal/ip/) Over
+- Disporre di un [indirizzo IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
@@ -69,7 +69,7 @@ Per prima cosa, è meglio verificare se l'indirizzo IP può essere spostato.
 >
 
 - `serviceName`: il riferimento del server dedicato di destinazione
-- `ip`: l'indirizzo IP FailOver da spostare
+- `ip`: l'indirizzo IP Failover da spostare
 
 Per spostare l'indirizzo IP, utilizza questa chiamata:
 
@@ -79,7 +79,7 @@ Per spostare l'indirizzo IP, utilizza questa chiamata:
 >
 
 - `serviceName`: il riferimento del server dedicato di destinazione
-- `ip`: l'indirizzo IP FailOver da spostare
+- `ip`: l'indirizzo IP Failover da spostare
 
 ## Per saperne di più
 
