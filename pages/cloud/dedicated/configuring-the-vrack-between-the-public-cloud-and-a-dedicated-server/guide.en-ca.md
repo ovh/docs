@@ -99,7 +99,7 @@ An example: If your instance private network is tagged with VLAN 2, the private 
 
 ### Configure your network interfaces
 
-Next, configure the network interfaces on your new [Public Cloud instance](https://www.ovh.com/ca/en/public-cloud/instances/) and [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/) using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.extenal}.
+Next, configure the network interfaces on your new [Public Cloud instance](https://www.ovh.com/ca/en/public-cloud/instances/) and [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/) using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}.
 
 ## Go further
 
