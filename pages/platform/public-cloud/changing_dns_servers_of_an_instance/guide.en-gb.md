@@ -11,7 +11,7 @@ order: 12
 
 ## Objective
 
-The default DNS server configured on instances you create will be the OVHcloud server (213.186.33.99). You can add a secondary server or replace this configuration with your own. However, the DNS servers are configured automatically by a DHCP server and you will not be able to change the DNS configuration by editing the `resolv.conf` file.
+The default DNS server configured on instances you create will be the OVHcloud server (213.186.33.99 for example). You can add a secondary server or replace this configuration with your own. However, the DNS servers are configured automatically by a DHCP server and you will not be able to change the DNS configuration by editing the `resolv.conf` file.
 
 **This guide explains how to change the DHCP configuration of an instance in order to change the DNS servers.**
 
