@@ -6,7 +6,7 @@ section: MySQL
 order: 100
 ---
 
-**Last updated 03nd November 2021**
+**Last updated 03rd November 2021**
 
 ## Objective
 
@@ -22,30 +22,27 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Concept
 
-A MySQL instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), also known as a Console or Terminal.
-To interact correctly with the MySQL instance, we need to first install something called a MySQL client (or shell), in order to connect and control the MySQL service remotely.
+To interact correctly with the MySQL instance, we need to first install something called a MySQL client, in order to connect and control the MySQL service remotely.
 It's a Client-Server interaction.
 
 ## Instructions
 
-### Install MySQL Shell
+### Installing the MySQL client
 
 > [!primary]
 >
-> Please note that a MySQL client is natively integrated in the MySQL software package. but he does not allow the use of service URI.
+> Please note that a MySQL client is natively integrated in the MySQL software package but it does not allow the use of Service URI.
 >
 
-You first need to install a software to interact with your MySQL instance remotely. This official software can be installed on various supports like your own computer, a VPS, a virtual machine... the only rule is to be able to reach the public network (Internet) and have sufficient rights to install it.
+You first need to install a software to interact with your MySQL instance remotely. This official software can be installed on various client machines such as your own computer, a VPS or a virtual machine. The only rule is to be able to reach the public network (Internet) and have sufficient rights to install it.
 
 In order to do so and depending on your configuration, you may need to follow official MySQL documentation to install MySQL Shell (*mysqlsh*), more powerful compared to MySQL Client (*mysql*).
 
-MySQL Shell is not mandatory but much more convenient to use compared to standard MySQL Client, since you can connect with Service URI instead of individuals parameters.
+MySQL Shell is not mandatory but much more convenient to use compared to standard MySQL Clients, since you can connect with Service URI instead of individual parameters.
 
-Follow the steps here after selecting Windows, MacOS or Linux operation system : <https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install.html>
+Follow the steps here after selecting Windows, MacOS or Linux as operating system: <https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install.html>
 
-
-Once installed, you need to catch your IP address in order to authorize connection form this specific client.
+Once installed, you need to catch your IP address in order to authorise connections from this specific client.
 
 If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/){.external}.
 Copy the IP address numbers shown on this website and keep them for later.
@@ -61,13 +58,13 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 #### Step 1: Verify your user grants and password
 
-Select the `Users`{.action} tab. By default a first user called **avnadmin** is created, with permissions to perform most of usual DB management tasks.
+Select the `Users`{.action} tab. By default a first user called **avnadmin** is created, with permissions to perform most of the usual DB management tasks. 
 
-If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user + password pair.
+If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update each access configuration in which you already use this user/password pair.
 
 This first user **avnadmin** comes with the following grants:
 
-```
+```sql
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, PROCESS, REFERENCES, INDEX, ALTER, SHOW DATABASES, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER ON *.* TO "avnadmin"@"%" WITH GRANT OPTION
 
 GRANT REPLICATION_APPLIER,ROLE_ADMIN ON *.* TO "avnadmin"@"%" WITH GRANT OPTION
@@ -79,19 +76,19 @@ So far, **user grants and privileges management is not supported via OVHcloud Co
 Please read the [official MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/privileges-provided.html){.external} to select the right grants and privileges for your use-case.
 
 
-In our example, we will simple reset **avnadmin** password.
+In our example, we will simply reset the **avnadmin** password.
 
-Once created or updated, the user has to be ready and with the "Enabled" status in the control panel.
+Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
 
 ![User ready](images/user_enabled.png){.thumbnail}
 
-#### Step 2: Authorize incoming connections from the MySQL client
+#### Step 2: Authorise incoming connections from the MySQL client
 
 In this step, select the `Authorised IP's`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
-Like this we can help prevent intrusive connection attempts.
+This can help to prevent intrusive connection attempts.
 
-Click to authorize a new IP, and enter the previously found IP of your remote client. In our case we will enter 109.190.200.59.
+Click to authorise a new IP, and enter the previously found IP of your remote client. In our case we will enter 109.190.200.59.
 
 ![Add an IP](images/ip_whitelist.png){.thumbnail}
 
@@ -104,7 +101,7 @@ Click to authorize a new IP, and enter the previously found IP of your remote cl
 
 Now all the setup should be done, from the remote client and the MySQL instance.
 
-Select the `General Information`{.action} tab. In the **Login Informations** section, copy the Service URI.
+Select the `General Information`{.action} tab. In the **Login information** section, copy the Service URI.
 
 It should be similar to this:
 
@@ -124,7 +121,7 @@ We will now follow official MySQL documentation to perform our first connection.
 
 In your CLI, type **mysqlsh --version**. The result should look like this:
 
-```
+```console
 laptop$mysqlsh --version
 /snap/mysql-shell/29/bin/mysqlsh   Ver 8.0.23 for Linux on x86_64 - for MySQL 8.0.23 (Source distribution)
 ```
@@ -135,22 +132,23 @@ It means that mysqlsh is correctly installed and working properly. If you do not
 ### Connect to your MySQL instance
 
 We will follow official MySQL documentation: <https://dev.mysql.com/doc/refman/8.0/en/connecting-using-uri-or-key-value-pairs.html>.
+
 To perform a connection, simply type **mysqlsh --sql** followed by the Service URI copied before:
 
-```
+```console
 laptop$mysqlsh --sql "mysql://<username>:<password@<hostname>t<port>/defaultdb?ssl-mode=REQUIRED"
 ```
 
 Don't forget you need to modify the username, password, hostname and port.
 In our example, it will look like this:
 
-```
+```console
 laptop$mysqlsh --sql "mysql://avnadmin:Mysup3rs3cur3p4ssw0rd@mysql-ab123456-cd7891011.database.cloud.ovh.net:20184/defaultdb?ssl-mode=REQUIRED"
 ```
 
 Once connected correctly, you should see something similar to:
 
-```
+```console
 MySQL Shell 8.0.23
 
 Copyright (c) 2016, 2021, Oracle and/or its affiliates.
@@ -177,13 +175,13 @@ Once connected, you can manage your MySQL instance with built-in MySQL client me
 Please follow the official MySQL documentation.
 
 To verify:
-- *SHOW DATABASES;* will list all the databases;
-- *select \* from mysql.user;* will display informations about existing users.
+- `SHOW DATABASES;` will list all the databases;
+- `select * from mysql.user;` will display information about existing users.
 
 
-In our example, it will look like this :
+In our example, it will look like this:
 
-```
+```sql
 mysql-sql [defaultdb]> SHOW DATABASES;
 +--------------------+
 | Database           |
@@ -197,7 +195,7 @@ mysql-sql [defaultdb]> SHOW DATABASES;
 5 rows in set (0.0046 sec)
 ```
 
-```
+```sql
 defaultdb=> \h CREATE DATABASE
 Command:     CREATE DATABASE
 Description: create a new database
