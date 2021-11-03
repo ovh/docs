@@ -274,7 +274,7 @@ Compruebe el nombre del servidor que quiera registrar en su [área de cliente de
 >
 > Si la base de datos a la que desea conectarse aparece en la pestaña `Bases de datos`{.action} de la parte `Alojamientos`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), el nombre que debe introducir se indica en la columna `Dirección del servidor`.
 >
-> Si desea conectarse a una base de datos en un servidor [SQL Privado](.../primeros-pasos-con-sql-privado/), el nombre del servidor a introducir se inscribe en la pestaña `Información general`{.action}, parte `Datos de conexión`{.action}, `SQL`{.action} y en el `Nombre del host`{.action}.
+> Si desea conectarse a una base de datos en un servidor [SQL Privado](../primeros-pasos-con-sql-privado/), el nombre del servidor a introducir se inscribe en la pestaña `Información general`{.action}, parte `Datos de conexión`{.action}, `SQL`{.action} y en el `Nombre del host`{.action}.
 >
 
 ## Más información <a name="gofurther"></a>

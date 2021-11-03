@@ -267,7 +267,7 @@ Verifica il nome del server da iscrivere nel tuo [Spazio Cliente OVHcloud](https
 >
 > Se il database a cui vuoi connetterti compare nella scheda `Database`{.action} della sezione `Hosting`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), il nome da inserire è indicato nella colonna `Indirizzo del server`.
 >
-> Se vuoi connetterti a un database su un server [SQL Privato](.../iniziare-a-utilizzare-sql-privato/) il nome del server da inserire è iscritto nella scheda `Informazioni generali`{.action}, `Informazioni di connessione`{.action}, `SQL`{.action} e nella sezione `Nome host`{.action}.
+> Se vuoi connetterti a un database su un server [SQL Privato](../iniziare-a-utilizzare-sql-privato/) il nome del server da inserire è iscritto nella scheda `Informazioni generali`{.action}, `Informazioni di connessione`{.action}, `SQL`{.action} e nella sezione `Nome host`{.action}.
 >
 
 
