@@ -4,7 +4,7 @@ slug: change-instance-dns-servers
 excerpt: 'Find out how to change the default DNS servers on a Public Cloud instance'
 legacy_guide_number: 1985
 section: Networking
-order: 12
+order: 4
 ---
 
 **Last updated 29th October 2021**
