@@ -326,7 +326,7 @@ Le script de configuration automatique permet de réaliser les opérations suiva
 
 Cette dernière étape ne peut être réalisé que si les étapes précédentes ont été réalisées avec succès.
 
-Une fois les prérequis validés :
+Une fois les prérequis validés, éxécutez la commande suivante :
 
 `./ctmInit.sh -c config.json` 
 
@@ -335,11 +335,11 @@ Durant l’exécution du script, les interfaces WEB et KMIP des instances du KMS
 Une fois que le script a rendu la main, effectuez les vérifications d’usage :
 
 * Se connecter sur une instance 
-* Access Managerment > User => vérifiez que l’utilisateur KMIP est créé
-* CA > External CA => Vérifiez que les 2 ACs externes ont été configurées
-* Admin Settings > Cluster => Vérifiez que les deux nœuds sont actifs
-* Products > KMIP > Registered client => Vérifiez que le client KMIP a bien été enregistré
-* Sur le file system ou le script a été exécuté, vérifiez dans les différents répertoires que les certificats sont bien présents, ont le bon **CN** et ont la bonne durée de vie
+* `Access Managerment`{.action} > `User`{.action} => vérifiez que l’utilisateur KMIP est créé
+* `CA`{.action} > `External CA`{.action} => Vérifiez que les 2 ACs externes ont été configurées
+* `Admin Settings`{.action} > `Cluster`{.action} => Vérifiez que les deux nœuds sont actifs
+* `Products`{.action} > `KMIP`{.action} > `Registered client`{.action} => Vérifiez que le client KMIP a bien été enregistré
+* Sur le « file system » ou le script a été exécuté, vérifiez dans les différents répertoires que les certificats sont bien présents, avec le bon **CN** et ont la bonne durée de vie
 
 La configuration automatique est terminée.
 
@@ -355,17 +355,17 @@ Dans le cadre de l’installation par client, deux types de licences sont à ins
 *	Activation de la licence en fonction du besoin. L’activation est réalisée à l’aide du « Connector Lock Code »
 *	L’installation devra être réalisée une seule fois avant d’être propagée sur les membres du cluster.
 
-Afin de réaliser l’activation et l’installation des licences :
-*	Connectez-vous sur chacune des instances du client :
-*	Dans Admin Settings > Licensing > Lock Codes, récupérer :
-*	Key Manager Lock Code
-*	Connector Lock Code
-*	Récupérer le / les document livré par Thales concernant la commande de licences
+Afin de réaliser l’activation et l’installation des licences,	connectez-vous sur chacune des instances du client :
+*	Dirigez-vous dans `Admin Settings`{.action} > `Licensing`{.action} > `Lock Codes`{.action}, puis récupérez :
+    -	Key Manager Lock Code
+    -	Connector Lock Code
+    -	Récupérer le(s) document(s) livré(s) par Thales concernant la commande de licences
 *	Suivre le mode opératoire inscrit sur la documentation.
 
-Rappel : 
-*	Key Manager Lock Code à utiliser pour l’activation de la licence de l’appliance virtuelle
-*	Connector Lock Code à utiliser pour les licences de connecteur comme KMIP.
+> [!primary]
+> 
+> *	Le Key Manager Lock Code est à utiliser pour l’activation de la licence de l’appliance virtuelle
+> *	Le Connector Lock Code est à utiliser pour les licences de connecteur comme KMIP.
 
 
 Votre KMS est prêt à etre utilisé.
