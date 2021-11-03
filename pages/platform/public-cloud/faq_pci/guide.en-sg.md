@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 3
 ---
 
-**Last updated 6th September 2021**
+**Last updated 3rd November 2021**
 
 ## Public Cloud FAQ
 
@@ -79,6 +79,12 @@ The OVHcloud Public Cloud includes a software-defined network (SDN) solution. Yo
 These private networks are powered by OVHcloud's vRack technology, which is common to the company's other services, such as Private Cloud or dedicated servers. This way, you can connect all of your infrastructure elements to OVHcloud, in an isolated, secure way.
 
 Please read our guide on [Configuring vRack for Public Cloud](../public-cloud-vrack/).
+
+### Can I change the public IP of my instance?
+
+Public IP addresses are automatically assigned to instances, and therefore cannot be modified. To control an instance's public IP address, we recommend using a failover IP. This way, regardless of the public address assigned to the instance automatically, you can add one or more failover IPs to your instance.
+
+For more information, please refer to this guide: [Buying a failover IP](../buy-a-failover-ip/).
 
 ## Go further
 
