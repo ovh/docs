@@ -31,7 +31,7 @@ Once your [Public Cloud project](https://docs.ovh.com/ca/en/public-cloud/create_
 
 1. By ordering a vRack service if you do not have one yet, this service is free of charge. 
 
-Go to the `Bare Metal Cloud`{.action} menu and click on the `Order`{.action} button. Under this menu, click on `vRack`{.action}
+Go to the `Bare Metal Cloud`{.action} menu and click on the `Order`{.action} button. Under this menu, click on `vRack`{.action}.
 
 ![Order vrack](images/orderingvrack.png){.thumbnail}
 
@@ -39,11 +39,11 @@ You will be redirected to another page to validate the order, it will take a few
 
 Once the vRack service is delivered to your account, you can now add your project to it.
 
-Go to the `Bare Metal Cloud`{.action} menu, click on `Network`{.action}, then on `vRack`{.action}. Select your vRack from the list
+Go to the `Bare Metal Cloud`{.action} menu, click on `Network`{.action}, then on `vRack`{.action}. Select your vRack from the list.
 
 ![vrack delivered](images/vrackdelivered.png){.thumbnail}
 
-From the list of eligible services, select the project you want to add to the vRack and then click on the `Add`{.action} button
+From the list of eligible services, select the project you want to add to the vRack and then click on the `Add`{.action} button.
 
 ![add project to vrack](images/addprojectvrack.png){.thumbnail}
 
