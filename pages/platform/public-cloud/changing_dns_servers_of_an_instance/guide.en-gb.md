@@ -7,7 +7,7 @@ section: Networking
 order: 12
 ---
 
-**Last updated 20th October 2021**
+**Last updated 29th October 2021**
 
 ## Objective
 
@@ -45,10 +45,16 @@ Here you can use different "statements" to add your desired DNS servers. Add the
 supersede domain-name-servers IP1, IP2;
 ```
 
-- To add additional DNS servers that will be preferred to the one configured by default:
+- To add DNS servers that will be preferred to the one configured by default:
     
 ```console
 prepend domain-name-servers IP1, IP2;
+```
+
+- To add DNS servers that will only be used if the one configured by default is unavailable:
+    
+```console
+append domain-name-servers IP1, IP2;
 ```
 
 Save your changes to the config file and exit the editor.
