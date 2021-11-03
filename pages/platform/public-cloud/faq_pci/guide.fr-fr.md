@@ -80,6 +80,12 @@ Ces réseaux privés sont portés par la technologie vRack d'OVHcloud commune au
 
 Nous vous invitons à consulter le guide [Configuration du vRack Public Cloud](../public-cloud-vrack/).
 
+### Puis-je changer l'IP publique de mon instance ?
+
+Les IP publiques sont attribuées automatiquement aux instances. Pour avoir la main sur l'IP publique d'une instance, nous vous conseillons d'utiliser une IP Failover. De cette manière, quelque soit l'adresse publique attribuée automatiquement à l'instance, vous pourrez faire pointer l'adresse qui vous interesse sur cette même instance.
+
+Nous vous invitons à consulter le guide [Acheter une IP Failover](../acheter-une-ip-failover/).
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
