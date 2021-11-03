@@ -178,7 +178,7 @@ Please follow the official PostgreSQL documentation.
 To verify:
 - `\h CREATE DATABASE` will display help on a specific command (here for *CREATE DATABASE*);
 - `\l+` will list all the databases;
-- `select * from pg_user;` will display informations about existing users.
+- `select * from pg_user;` will display information about existing users.
 
 
 In our example, it will look like this:
