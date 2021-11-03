@@ -16,8 +16,8 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia);
+- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account;
 - An up and running Public Cloud Database for PostgreSQL.
 
 ## Concept
@@ -62,7 +62,7 @@ We are now ready to learn how to connect to our PostgreSQL instance.
 
 Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your PostgreSQL instance.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your PostgreSQL instance.
 
 #### Step 1: Verify your user roles and password
 
@@ -229,9 +229,9 @@ URL: https://www.postgresql.org/docs/13/sql-createdatabase.html
 
 ## Go further
 
-[PostgreSQL capabilities](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/capabilities/)
+[PostgreSQL capabilities](https://docs.ovh.com/asia/en/publiccloud/databases/postgresql/capabilities/)
 
-[Getting started with Public Cloud Databases](https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/)
+[Getting started with Public Cloud Databases](https://docs.ovh.com/asia/en/publiccloud/databases/getting-started/)
 
 
 ## We want your feedback!
