@@ -10,25 +10,33 @@ order: 7
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 12/03/2021**
+**Ultimo aggiornamento: 19/10/2021**
 
 ## Obiettivo
 
 Gli IP Failover possono essere trasferiti tra i servizi utilizzati. L'interesse è di non perdere la tua reputazione, la tua referenziazione e migliorare la continuità di servizio delle tue applicazioni e sistemi.
 Questa tecnologia permette di scambiare gli indirizzi IP da una soluzione all'altra in meno di un minuto, praticamente senza alcuna interruzione per i tuoi utenti. Può essere utilizzata in caso di migrazione di servizi (ad esempio, spostamento dei progetti dall'ambiente di sviluppo a quello di produzione) o in caso di trasferimento verso un server di backup in caso di guasto.
 
+> [!primary]
+> Un IP Failover non può essere spostato da una zona all'altra. Ad esempio, un IP situato nel datacenter SBG potrà essere spostato verso GRA o RBX ma non potrà essere spostato verso BHS.
+> 
+> Solo l'intero blocco può essere spostato, non è possibile migrare i singoli IP all'interno di un blocco.
+
 **Come migrare un IP Failover dallo Spazio Cliente OVHcloud o tramite le API OVHcloud**
 
 ## Prerequisiti
 
 - Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} nello Spazio Cliente OVHcloud
-- Disporre di un [indirizzo IP Fail](https://www.ovhcloud.com/it/bare-metal/ip/) Over
+- Disporre di un [indirizzo IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 > [!primary]
-> Un IP FailOver non può essere spostato da una zona all'altra. Ad esempio, un IP situato nel datacenter SBG potrà essere spostato verso GRA o RBX ma non potrà essere spostato verso BHS
+> Quando un blocco IP contenente indirizzi MAC virtuali unici viene spostato tra due server, questi indirizzi vengono temporaneamente sospesi. Appariranno sul nuovo server una volta completato lo spostamento.
+>
+> D'altra parte, i blocchi che contengono indirizzi MAC virtuali duplicati non possono essere spostati. Devi prima cancellare il duplicato dell'indirizzo MAC virtuale sul blocco da spostare.
+>
 
 ### Sposta un IP dallo Spazio Cliente OVHcloud
 
@@ -61,7 +69,7 @@ Per prima cosa, è meglio verificare se l'indirizzo IP può essere spostato.
 >
 
 - `serviceName`: il riferimento del server dedicato di destinazione
-- `ip`: l'indirizzo IP FailOver da spostare
+- `ip`: l'indirizzo IP Failover da spostare
 
 Per spostare l'indirizzo IP, utilizza questa chiamata:
 
@@ -71,7 +79,7 @@ Per spostare l'indirizzo IP, utilizza questa chiamata:
 >
 
 - `serviceName`: il riferimento del server dedicato di destinazione
-- `ip`: l'indirizzo IP FailOver da spostare
+- `ip`: l'indirizzo IP Failover da spostare
 
 ## Per saperne di più
 
