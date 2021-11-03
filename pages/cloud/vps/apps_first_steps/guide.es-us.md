@@ -37,7 +37,7 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
 
 > [!primary]
 >
-> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando "whmlogin" para generar un nuevo enlace.
+> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando « sudo whmlogin » para generar un nuevo enlace.
 >
 
 <ol start="3">

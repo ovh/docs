@@ -4,14 +4,14 @@ slug: change-instance-dns-servers
 excerpt: 'Find out how to change the default DNS servers on a Public Cloud instance'
 legacy_guide_number: 1985
 section: Networking
-order: 12
+order: 4
 ---
 
-**Last updated 2nd January 2020**
+**Last updated 29th October 2021**
 
 ## Objective
 
-The default DNS server configured on instances you create will be the OVHcloud server (213.186.33.99). You can add a secondary server or replace this configuration with your own. However, the DNS servers are configured automatically by a DHCP server and you will not be able to change the DNS configuration by editing the `resolv.conf` file.
+The default DNS server configured on instances you create will be the OVHcloud server (213.186.33.99 for example). You can add a secondary server or replace this configuration with your own. However, the DNS servers are configured automatically by a DHCP server and you will not be able to change the DNS configuration by editing the `resolv.conf` file.
 
 **This guide explains how to change the DHCP configuration of an instance in order to change the DNS servers.**
 
@@ -24,64 +24,57 @@ The default DNS server configured on instances you create will be the OVHcloud s
 ## Requirements
 
 - a [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- administrative access (root) via SSH or GUI to your instance
+- administrative access (root) to the instance via SSH or RDP
 - basic networking and administration knowledge
 
 ## Instructions
 
-### For Debian/Ubuntu
+Log in to your instance via SSH. Refer to our guide on [Connecting to a Public Cloud instance](../public-cloud-first-steps/#connect-to-instance) if necessary.
 
-- Log in to your instance via SSH. To do this, you can refer to our guide on [Connecting to a Public Cloud instance](../public-cloud-first-steps/#connect-to-instance).
-- Switch the root user. To do this, you can refer to our guide on [Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/).
+Switch to the root user. Refer to our guide on [Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/) if necessary.
 
-> [!primary]
->
-> You can check the `resolv.conf` file to verify the configured DNS servers.
-> 
+### Debian/Ubuntu
 
-```
-cat /etc/resolv.conf
+Using a text editor of your choice, edit the file `/etc/dhcp/dhclient.conf` in order to configure the DNS servers you want.
 
-domain openstacklocal
-search openstacklocal
-nameserver 213.186.33.99
-```
+Here you can use different "statements" to add your desired DNS servers. Add the respective line and replace IP1/IP2 with their IP addresses.
 
-
-- Edit the /etc/dhcp/dhclient.conf file with the DNS servers you want.
-
-There are two ways of configuring this:
-
-You can add a DNS server in addition to the one we provide by default.
+- To add DNS servers that will effectively replace the one configured by default, add this line:
   
-```
-supersede domain-name-servers 127.0.0.1;
+```console
+supersede domain-name-servers IP1, IP2;
 ```
 
-You can add a DNS server to replace the one we provide by default.
+- To add DNS servers that will be preferred to the one configured by default:
     
+```console
+prepend domain-name-servers IP1, IP2;
 ```
-prepend domain-name-servers 127.0.0.1;
+
+- To add DNS servers that will only be used if the one configured by default is unavailable:
+    
+```console
+append domain-name-servers IP1, IP2;
 ```
- 
-- Check that the configuration has been applied properly (this may take several minutes):
+
+Save your changes to the config file and exit the editor.
+
+Check that the configuration has been applied properly with the following command:
 
 ```bash
 cat /etc/resolv.conf
 
 domain openstacklocal
 search openstacklocal
-nameserver 127.0.0.1
-nameserver 213.186.33.99
+nameserver IP1
+nameserver IP2
 ```
 
-### For CentOS/Fedora
+### CentOS/Fedora
 
-- Connect to your instance via SSH. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](../first-login/).
-- Make yourself the root user. To do this, you can refer to our guide on [Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/).
-- Check the current configuration via the nmcli command:
+Check the current configuration with the command `nmcli`:
 
-```
+```bash
 nmcli
  
 eth0: connected to System eth0
@@ -105,51 +98,51 @@ DNS configuration:
         interface: eth0
 ```
 
-- Find the name of your public interface:
+Retrieve the name of your public interface:
 
-```
+```bash
 nmcli connection show
  
 NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ```
 
-- Disable automatic DNS modification, and enter the DNS you want:
+Disable the automatic DNS modification and add the IP addresses (replace IP1/IP2) of the DNS servers you want to configure. (Replace `System eth0` with the actual value retrieved previously.)
 
-```
-nmcli con mod "Your interface name" ipv4.ignore-auto-dns yes
-nmcli con mod "Your interface name" ipv4.dns "127.0.0.1 213.186.33.99"
-```
-
-- Apply the configuration:
-
-```
-nmcli con down "Your interface name" && nmcli con up "Your interface name"
+```bash
+nmcli con mod "System eth0" ipv4.ignore-auto-dns yes
+nmcli con mod "System eth0" ipv4.dns "IP1 IP2"
 ```
 
-- Check that the configuration has been properly applied:
+Apply the configuration. (Replace `System eth0` with the actual value retrieved previously.)
 
+```bash
+nmcli con down "System eth0" && nmcli con up "System eth0"
 ```
+
+Check that the configuration has been properly applied:
+
+```bash
 nmcli | grep -E 'DNS|server|interface'
  
 DNS configuration:
-        servers: 127.0.0.1 213.186.33.99
+        servers: IP1 IP2
         interface: eth0
 ```
 
 ### On Windows
 
-- Connect via remote desktop, or via the VNC console. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](../first-login/).
+Connect to the instance via remote desktop session or with the VNC console. Refer to our guide on [Connecting to a Public Cloud instance](../public-cloud-first-steps/#connect-to-instance) if necessary.
 
-- Open the network configuration control panel.
+Open the `Network settings`{.action}.
 
 ![change-dns-servers](images/changednsservers1.png){.thumbnail}
 
-- Then go to your public network adapter’s IPv4 configuration.
+Go to your public network adapter’s IPv4 configuration via the control panel.
 
 ![change-dns-servers](images/changednsservers2.png){.thumbnail}
 
-- Add the servers you want to use:
+Add the servers you want to use in the `Advanced`{.action} settings.
 
 ![change-dns-servers](images/changednsservers3.png){.thumbnail}
 
@@ -160,7 +153,7 @@ In PowerShell, you can use the command `nslookup` to check which DNS server is u
 
 ## Go further <a name="gofurther"></a>
 
-[Logging in to an OVHcloud Public Cloud instance](../first-login/)
+[First steps with Public Cloud instances](../public-cloud-first-steps/)
 
 [Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/)
 
