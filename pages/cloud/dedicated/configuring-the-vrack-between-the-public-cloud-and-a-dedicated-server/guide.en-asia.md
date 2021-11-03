@@ -48,7 +48,7 @@ From the list of eligible services, select the project you want to add to the vR
 ![add project to vrack](images/addprojectvrack.png){.thumbnail}
 
 <ol start="2">
-  <li>By <a href="https://docs.ovh.com/asia/en/public-cloud/public-cloud-vrack/#instructions_1">creating or adding an existing vRack service</a></li> in the Public Cloud section.
+  <li>By <a href="https://docs.ovh.com/asia/en/public-cloud/public-cloud-vrack/#instructions_1">creating or adding an existing vRack service</a> in the Public Cloud section.
 </ol>
 
 
