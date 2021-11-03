@@ -20,15 +20,15 @@ Vous trouverez dans ce guide les différentes étapes permetant la configuration
 * Être connecté à l'[interface vSphere](../connexion-interface-vsphere/) de votre service Hosted Private Cloud.
 * Avoir une adresse IP par instance de KMS
 * Avoir les fichiers du modèle OVF présent sur son poste de travail
-* Une clé publique SSH
-* Récupération de l'OVA [KMS](https://ovh.to/W2gBYe)
+* Avoir une clé publique SSH
+* Avoir récupéré l'OVA [KMS CipherTrust Manager](https://ovh.to/W2gBYe)
 
 > [!primary]
 >
-> Dans les étapes suivantes nous utiliserons les informations suivantes:
+> Dans les étapes ci-dessous nous utiliserons les informations suivantes :
 > 
-> portgroup vSphere : ADM
-> sous-réseau local : 192.0.2.64/28
+> *	portgroup vSphere : ADM
+> *	sous-réseau local : 192.0.2.64/28
 > 
 
 ## En pratique 
