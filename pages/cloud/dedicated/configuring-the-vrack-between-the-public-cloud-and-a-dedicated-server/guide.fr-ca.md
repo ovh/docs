@@ -47,7 +47,7 @@ Dans la liste des services éligibles, sélectionnez le projet que vous souhaite
 ![ajouter un projet au vrack](images/addprojectvrack.png){.thumbnail}
 
 <ol start="2">
-  <li>En [créant ou en ajoutant un service vRack existant](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-vrack/#etape-1-activer-et-gerer-un-vrack) dans la section `Public Cloud`{.action}.</li>
+  <li>En <a href="https://docs.ovh.com/ca/fr/public-cloud/public-cloud-vrack/#etape-1-activer-et-gerer-un-vrack">créant ou en ajoutant un service vRack existant</a> dans la section Public Cloud.</li>
 </ol>
 
 ### Intégrer une instance dans le vRack
