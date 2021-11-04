@@ -28,7 +28,7 @@ order: 6
  }
 </style>
 
-**Last updated October 29<sup>th</sup>, 2021.**
+**Last updated November 4<sup>th</sup>, 2021.**
 
 ## Objective
 
@@ -218,9 +218,10 @@ nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
 </code></pre>
 
 For the moment, only these following parameters are editable:
-* scaleDownUnneededTimeSeconds
-* scaleDownUnreadyTimeSeconds
-* scaleDownUtilizationThreshold
+
+- scaleDownUnneededTimeSeconds
+- scaleDownUnreadyTimeSeconds
+- scaleDownUtilizationThreshold
 
 You can contact us through [Gitter](https://gitter.im/ovh/kubernetes) if you need to edit other parameters and/or you can check our [public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
 
