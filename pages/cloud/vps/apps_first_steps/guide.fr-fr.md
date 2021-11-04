@@ -120,8 +120,7 @@ Si votre domaine est enregistré chez OVHcloud, vous pouvez suivre [ce guide.](.
 <br>Si votre domaine est enregistré auprès d'une autre société, vous devrez contacter celle-ci pour obtenir de l'aide sur la configuration de vos enregistrements `A`.
 
 <ol start="2">
-  <li>Vous devrez peut-être attendre 24 heures avant que les deux enregistrements ne se propagent complètement. Vous pouvez toujours le vérifier avec [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx). Si l'adresse IP de votre domaine s'affiche sur mxtoolbox de la même manière que celle de votre serveur, vous pouvez passer à l'étape suivante.</li>
-
+  <li>Vous devrez peut-être attendre 24 heures avant que les deux enregistrements ne se propagent complètement. Vous pouvez toujours le vérifier avec <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. Si l'adresse IP de votre domaine s'affiche sur mxtoolbox de la même manière que celle de votre serveur, vous pouvez passer à l'étape suivante.</li>
   <li>Connectez-vous en SSH sur votre serveur avec l'utilisateur CentOS et exécutez les commandes suivantes pour installer Certbot :</li>
 </ol>
 

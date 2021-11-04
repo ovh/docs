@@ -122,7 +122,7 @@ Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung](../
 <br>Wenn Ihre Domain bei einem anderen Anbieter registriert ist, kontaktieren Sie diesen, um Hilfe bei der Konfiguration Ihrer `A` Einträge zu erhalten.
 
 <ol start="2">
-  <li>Sie müssen möglicherweise bis zu 24 Stunden warten, bis sich beide Einträge vollständig auswirken. Sie können das mit entsprechenden Tools, etwa mit [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external} überprüfen. Wenn die IP-Adresse Ihrer Domain auf mxtoolbox identisch mit der Adresse Ihres Servers angezeigt wird, können Sie zum nächsten Schritt übergehen.</li>
+  <li>Sie müssen möglicherweise bis zu 24 Stunden warten, bis sich beide Einträge vollständig auswirken. Sie können das mit entsprechenden Tools, etwa mit <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a> überprüfen. Wenn die IP-Adresse Ihrer Domain auf mxtoolbox identisch mit der Adresse Ihres Servers angezeigt wird, können Sie zum nächsten Schritt übergehen.</li>
 
   <li>Verbinden Sie sich via SSH mit dem CentOS-Benutzer auf Ihrem Server und führen Sie folgende Befehle aus, um Zertifikate zu installieren.</li>
 </ol>
