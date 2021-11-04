@@ -9,16 +9,16 @@ section: 'Network Management'
 
 ## Objective
 
-The OVHcloud [vRack](https://www.ovh.com/au/solutions/vrack) allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](https://www.ovhcloud.com/au/bare-metal/). But it also allows you to add [Public Cloud instances](https://www.ovh.com/au/public-cloud/instances/) to your private network so that you can create an infrastructure of both physical and virtual resources.
+The OVHcloud [vRack](https://www.ovh.com.au/solutions/vrack/) allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](https://www.ovhcloud.com/en-au/bare-metal/). But it also allows you to add [Public Cloud instances](https://www.ovhcloud.com/en-au/public-cloud/) to your private network so that you can create an infrastructure of both physical and virtual resources.
 
-**This guide will show you how to configure private networking between a [Public Cloud instance](https://docs.ovh.com/au/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance/) and a [Dedicated Server](https://www.ovhcloud.com/au/bare-metal/).**
+**This guide will show you how to configure private networking between a [Public Cloud instance](https://docs.ovh.com/au/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance/) and a [Dedicated Server](https://www.ovhcloud.com/en-au/bare-metal/).**
 
 
 ## Requirements
 
 * an [OVHcloud Public Cloud instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/)
-* a [vRack](https://www.ovh.com/au/solutions/vrack) service activated in your account
-* a [Dedicated Server](https://www.ovhcloud.com/au/bare-metal/){.external} compatible with the vRack
+* a [vRack](https://www.ovh.com.au/solutions/vrack/) service activated in your account
+* a [Dedicated Server](https://www.ovhcloud.com/en-au/bare-metal/){.external} compatible with the vRack
 * access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 * a private IP address range of your choice
 
@@ -99,7 +99,7 @@ An example: If your instance private network is tagged with VLAN 2, the private 
 
 ### Configure your network interfaces
 
-Next, configure the network interfaces on your new [Public Cloud instance](https://www.ovh.com/au/public-cloud/instances/) and [Dedicated Server](https://www.ovhcloud.com/au/bare-metal/) using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}.
+Next, configure the network interfaces on your new [Public Cloud instance](https://www.ovhcloud.com/en-au/public-cloud/) and [Dedicated Server](https://www.ovhcloud.com/en-au/bare-metal/) using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}.
 
 ## Go further
 
