@@ -1,7 +1,7 @@
 ---
-title: `Migrating your email addresses from one OVHcloud email platform to another`
+title: "Migrating your email addresses from one OVHcloud email platform to another"
 slug: migration-email-platform
-excerpt: `Find out how to migrate email addresses from one Exchange or Email Pro platform to another Exchange, Email Pro or MX Plan platform`
+excerpt: "Find out how to migrate email addresses from one Exchange or Email Pro platform to another Exchange, Email Pro or MX Plan platform"
 section: Account migration
 order: 2
 ---
