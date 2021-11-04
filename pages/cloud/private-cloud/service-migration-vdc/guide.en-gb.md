@@ -462,7 +462,7 @@ Here is a checklist of aspects to take into account:
 
 - ESXi host CPU chipsets on source and destination vDCs
 - EVC modes on source and destination Clusters
-- vDS versions are the same between source and destination vDC. You can upgrade the vDS vRACK from the source PCC. For the vDS with VM Network (VXLAN vDS), please contact the support so that the vDS is upgraded.
+- vDS versions are the same between source and destination vDC. You can upgrade the vDS vRACK from the source vDC. For the vDS with VM Network (VXLAN vDS), please contact the support so that the vDS is upgraded.
 
 > [!primary]
 > It is recommended to test the migration path with low-impact or test VMs before production migration.

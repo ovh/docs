@@ -466,7 +466,7 @@ Voici une liste des aspects à prendre en compte:
 
 - Chipsets de CPU hôte ESXi sur les vDC d'origine et de destination
 - Modes EVC sur les clusters d'origine et de destination
-- Les versions vDS sont les mêmes entre le vDC d'origine et le vDC de destination. Il est possible de faire évoluer le vRACK du vDS depuis le PCC d'origine. Pour un vDS sur le VM Network (VXLAN vDS), veuillez contacter le support afin que le vDS soit mis à jour.
+- Les versions vDS sont les mêmes entre le vDC d'origine et le vDC de destination. Il est possible de faire évoluer le vRACK du vDS depuis le vDC d'origine. Pour un vDS sur le VM Network (VXLAN vDS), veuillez contacter le support afin que le vDS soit mis à jour.
 
 
 > [!primary]
