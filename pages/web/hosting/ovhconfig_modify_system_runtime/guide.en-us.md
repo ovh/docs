@@ -96,7 +96,7 @@ Once you have chosen your runtime environment, you can change it in two differen
 
 #### PHP version
 
-There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVHcloud offers the very latest PHP versions, and you can view a list of them here: <https://www.ovh.com/ca/en/web-hosting/php.xml>. 
+There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVHcloud offers the very latest PHP versions, and you can view a list of them here: <https://www.ovhcloud.com/en-ca/web-hosting/php.xml>. 
 
 Because some features cannot be maintained in newer versions, **please ensure that the new PHP version you want to use is compatible with your website before you start making any changes.**
 
