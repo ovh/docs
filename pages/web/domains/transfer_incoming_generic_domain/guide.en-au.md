@@ -39,7 +39,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 > [!warning]
 >
-> The exact procedure for domain transfer may vary, especially in case of some country-code TLDs (ccTLD, such as .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) and a few special purpose TLDs (.am, .fm, etc.). Depending on your domain name extension, you may have additional requirements. We recommend to first check against the information displayed in the section of the extension concerned, on our website: <https://www.ovh.com/asia/domains/prices/>.
+> The exact procedure for domain transfer may vary, especially in case of some country-code TLDs (ccTLD, such as .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) and a few special purpose TLDs (.am, .fm, etc.). Depending on your domain name extension, you may have additional requirements. We recommend to first check against the information displayed in the section of the extension concerned, on our website: <https://www.ovhcloud.com/asia/domains/tld/>.
 >
 
 ### Step 1: Check the information associated with the domain

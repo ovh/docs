@@ -16,7 +16,7 @@ A *database* (“DB”) is used to store what are known as dynamic elements, suc
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) with the necessary permissions to manage the Web Hosting plan
 
 > [!warning]
