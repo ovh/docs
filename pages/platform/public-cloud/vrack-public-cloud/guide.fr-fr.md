@@ -16,16 +16,16 @@ Le [vRack](https://www.ovh.com/fr/solutions/vrack/) est un réseau privé qui vo
 
 ## Prérequis
 
-- Posséder un projet Public Cloud
+- Posséder un [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
-- Avoir créé un utilisateur OpenStack (facultatif)
+- Avoir [créé un utilisateur OpenStack](../../#creer-un-utilisateur-openstack) (facultatif)
 - Connaissances réseaux élémentaires
 
 ## Présentation des interfaces
 
 Que ce soit pour créer votre vRack ou ajouter une instance au sein de ce réseau, vous pouvez être amenés à utiliser l'espace client OVHcloud, les APIv6 OVHcloud, les API OpenStack ou l'interface Horizon.
 
-Selon votre profil technique et vos besoins,  vous serez amenés à devoir choisir quelle interface ou méthode utiliser. Ainsi, pour chaque action, nous vous proposerons les différentes démarches envisageables.
+Selon votre profil technique et vos besoins, vous serez amenés à devoir choisir quelle interface ou méthode utiliser. Ainsi, pour chaque action, nous vous proposerons les différentes démarches envisageables.
 
 **Voici un descriptif rapide des actions possibles suivant la méthode/interface choisie :**
 
@@ -41,7 +41,7 @@ Vous pourrez également gérer la facturation de vos services au travers de votr
 
 Interface visuelle indépendante d'OVHcloud, [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} est l'implémentation d’origine du tableau de bord d'OpenStack, qui fournit une interface utilisateur web aux services OpenStack, notamment Nova, Swift, Keystone, etc...
 
-Cette interface complète et technique vous permet de gérer la quasi totalité des actions Openstack. Ce sera une des interfaces nécessaires si vous souhaitez gérer plus de deux VLAN, ajouter des interfaces réseau privées à vos instances, gérer des images personnalisées, etc...
+Cette interface complète et technique vous permet de gérer la quasi totalité des actions OpenStack. Ce sera une des interfaces nécessaires si vous souhaitez gérer plus de deux VLAN, ajouter des interfaces réseau privées à vos instances, gérer des images personnalisées, etc...
 
 Consultez le guide [Accéder à l'interface Horizon](../creer-un-acces-a-horizon/) pour vous familiariser à Horizon.
 
@@ -108,7 +108,7 @@ Une fois le vRack actif, vous retrouverez ce service sous l’appellation « pn-
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez ensuite le projet Public Cloud de votre choix en haut à gauche.
 
-![sélection project](images/vrack2021-04.png){.thumbnail}
+![sélection project](images/vrack2021-05.png){.thumbnail}
 
 Cliquez alors sur `Private network`{.action} (1) dans le menu latéral de gauche. 
 
@@ -128,7 +128,7 @@ Pour activer et gérer un vRack depuis les APIv6 OVHcloud, cliquez [ici](../publ
 
 Il est nécessaire de créer un VLAN (ou réseau local virtuel) afin que les instances reliées au vRack puissent communiquer entre elles.
 
-Sur l'offre Public Cloud, vous pouvez créer jusqu'à 4 000 vLan au sein d’un seul vRack. Cela signifie donc que vous pouvez utiliser chaque adresse IP privée jusqu’à 4 000 fois.
+Sur l'offre Public Cloud, vous pouvez créer jusqu'à 4 000 VLAN au sein d’un seul vRack. Cela signifie donc que vous pouvez utiliser chaque adresse IP privée jusqu’à 4 000 fois.
 Ainsi, par exemple, l'IP 192.168.0.10 du VLAN 2 est différente de l'IP 192.168.0.10 du VLAN 42.
 
 Cela peut vous être utile afin de segmenter votre vRack entre plusieurs réseaux virtuels.
@@ -247,7 +247,7 @@ Pensez également à noter les informations suivantes, comme indiqueé dans le [
 
 - ID ou nom de la clé SSH OpenStack
 - ID du type d'instance (flavor)
-- ID de l'image souhaitée (Système d'exploitation, snapshot, etc.)
+- ID de l'image souhaitée (Système d'exploitation, snapshot, etc...)
 
 ###### Déploiement de l'instance
 
@@ -505,7 +505,7 @@ nova net-list
 > [!primary]
 > Vous devrez noter les ID des réseaux vous intéressant :
 ><br> - Ext-Net pour avoir une IP publique
-><br> - Celui du ou des vLan nécessaires à votre configuration
+><br> - Celui du ou des VLAN nécessaires à votre configuration
 >
 
 ###### Ajout d'une interface privée
@@ -513,7 +513,7 @@ nova net-list
 Afin d'attacher une nouvelle interface, vous pouvez effectuer la commande suivante :
 
 ```bash
-nova interface-attach --net-id <ID-vLan> <ID-instance>
+nova interface-attach --net-id <ID-VLAN> <ID-instance>
 ```
 
 Par exemple :
