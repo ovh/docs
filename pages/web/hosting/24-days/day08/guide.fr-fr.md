@@ -22,7 +22,7 @@ La première étape pour surmonter cette difficulté est de configurer un systè
 
 Cependant, la mise en cache n’est pas quelque chose de simple : il faut correctement configurer l’invalidation de cache lorsque les données sont modifiées au sein de la base.
 
-Les offres Hébergement Web **Performance** incluent une base de données **SQL privée**. Si vous êtes sur une autre offre, vous pouvez bien entendu commander cette option indépendamment. Vous trouverez toutes les informations au sujet des bases SQL privées sur cette page : [https://www.ovh.com/fr/hebergement-web/options-sql.xml](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external}
+Les offres Hébergement Web **Performance** incluent une base de données **SQL privée**. Si vous êtes sur une autre offre, vous pouvez bien entendu commander cette option indépendamment. Vous trouverez toutes les informations au sujet des bases SQL privées sur cette page : [https://www.ovhcloud.com/fr/web-hosting/options/start-sql/](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external}
 
 Nous allons donc utiliser la base SQL privée dont bénéficie mypersonaldomain.ovh avec l’offre Performance souscrite précédemment.
 

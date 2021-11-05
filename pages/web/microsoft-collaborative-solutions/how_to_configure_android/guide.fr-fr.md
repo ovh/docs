@@ -24,7 +24,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 ## Prérequis
 
-- Disposer d'une offre [Exchange](https://www.ovh.com/fr/emails/){.external}.
+- Disposer d'une offre [Exchange](https://www.ovhcloud.com/fr/emails/){.external}.
 - Disposer de l'application Gmail installée sur votre appareil. Vous pouvez installer cette dernière depuis Google Play Store.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -76,7 +76,7 @@ Vous pouvez effectuer un test d'envoi de message pour vérifier que le compte es
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose également une application web disposant de [fonctions collaboratives](https://www.ovh.com/fr/emails/){.external} accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
+OVH propose également une application web disposant de [fonctions collaboratives](https://www.ovhcloud.com/fr/emails/){.external} accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
 
 ## Aller plus loin
 

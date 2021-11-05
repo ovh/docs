@@ -19,7 +19,7 @@ Un **compte partagé** est une boîte e-mail partagée entre plusieurs comptes E
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Avoir souscrit une offre [Exchange OVHcloud](https://www.ovh.com/fr/emails/hosted-exchange).
+- Avoir souscrit une offre [Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/hosted-exchange/).
 
 ## En pratique
 

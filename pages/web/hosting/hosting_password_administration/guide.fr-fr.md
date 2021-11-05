@@ -77,7 +77,7 @@ Lorsque vous créez une adresse e-mail, vous personnalisez directement le mot de
 ## La connexion SSH
 Se connecter en SSH ( **S** ecure  **S** hell) nécessite de posséder une offre mutualisé  **PRO**  ou supérieure. La connexion se fait avec les mêmes identifiants et mot de passe que pour la connexion FTP.
 
-Pour avoir une offre permettant l'accès via SSH, dirigez vous vers [nos offres](https://www.ovh.com/fr/hebergement-web){.external}
+Pour avoir une offre permettant l'accès via SSH, dirigez vous vers [nos offres](https://www.ovhcloud.com/fr/web-hosting/){.external}
 
 
 ## Les modules en un clic

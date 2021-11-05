@@ -10,13 +10,13 @@ order: 4
 
 ## Objectif
 
-Diverses raisons peuvent vous amener à vouloir modifier la configuration de votre [hébergement web](https://www.ovh.com/fr/hebergement-web/){.external}. Pour cela, OVHcloud a mis en place un fichier permettant de changer certains paramètres : le **.ovhconfig**.
+Diverses raisons peuvent vous amener à vouloir modifier la configuration de votre [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}. Pour cela, OVHcloud a mis en place un fichier permettant de changer certains paramètres : le **.ovhconfig**.
 
 **Découvrez le fichier .ovhconfig et apprenez à le configurer.**
 
 ## Prérequis
 
-- Disposer d’une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external} (sauf Cloud Web).
+- Disposer d’une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} (sauf Cloud Web).
 - Disposer du mot de passe de l’utilisateur FTP vous permettant d’accéder à votre espace de stockage. 
 
 ## En pratique
@@ -71,8 +71,8 @@ Personnalisez les valeurs des variables selon la configuration que vous souhaite
 |Variables|Détail|
 |---|---|
 |app.engine|Permet de modifier le moteur PHP utilisé par l'hébergement. Renseignez « php » pour activer l'accélérateur PHP-FPM et « phpcgi » pour le désactiver.|
-|app.engine.version|Permet de définir la version de PHP utilisée par l'hébergement parmi [celles qu'OVHcloud propose](https://www.ovh.com/fr/hebergement-web/php.xml){.external}. Renseignez la version de votre choix.|
-|http.firewall|Permet d'activer ou de désactiver le [firewall fourni avec les hébergements web OVHcloud](https://www.ovh.com/fr/hebergement-web/mod_security.xml){.external}. Renseignez « security » pour l'activer ou « none » pour le désactiver.|
+|app.engine.version|Permet de définir la version de PHP utilisée par l'hébergement parmi [celles qu'OVHcloud propose](https://www.ovhcloud.com/fr/web-hosting/uc-programming-language/){.external}. Renseignez la version de votre choix.|
+|http.firewall|Permet d'activer ou de désactiver le [firewall fourni avec les hébergements web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/options/){.external}. Renseignez « security » pour l'activer ou « none » pour le désactiver.|
 |environment|Permet de gérer le comportement du cache des fichiers statiques de votre site internet ainsi que le traitement des erreurs PHP. Renseignez « production » pour maximiser la mise en cache et masquer les erreurs PHP ou « development » pour qu'aucun cache ne soit appliqué et que les erreurs PHP s'affichent.|
 |container.image|Permet de modifier l'environnement d'exécution utilisé par l'hébergement. Renseignez le moteur de votre choix. Vous pouvez les retrouver depuis notre documentation : [« Découvrir les configurations disponibles »](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#decouvrir-les-configurations-disponibles){.external}.|
 
