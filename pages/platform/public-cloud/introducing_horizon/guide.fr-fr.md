@@ -92,7 +92,7 @@ Pour plus d'informations, veuillez consulter la [documentation OpenStack](https:
 
 #### Identity
 
-Cee menu permet de lister les informations sur vos projets.
+Ce menu permet de lister les informations sur vos projets.
 
 ### Menu utilisateur
 
