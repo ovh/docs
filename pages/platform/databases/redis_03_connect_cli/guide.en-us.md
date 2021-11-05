@@ -2,7 +2,7 @@
 title: Redis - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for Redis using the Command Line Interface (CLI)
 slug: redis/connect-cli
-section: RedisDB
+section: Redis
 order: 100
 ---
 
@@ -107,7 +107,9 @@ A bit of information to know:
 
 We will now follow the official Redis documentation to perform our first connection.
 
-In your terminal, type `redis-cli -u rediss://<username>:<password>@<hostname>:<port> ping`. The result should look like this :
+In your terminal, type `redis-cli -u rediss://<username>:<password>@<hostname>:<port> ping`.
+
+The result should look like this :
 
 ```bash
 laptop$ redis-cli -u rediss://bastien:Mysup3rs3cur3p4ssw0rd@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185 ping
@@ -117,10 +119,15 @@ PONG
 
 It means that the Redis instance is running and responding to your command.
 
-To be in interactive mode, do not use any particular command : `redis-cli -u rediss://<username>:<password>@<hostname>:<port>`.<br>
-If you want to avoid to type username and password in your shell session, type `redis-cli -u rediss://<username>:<password>@<hostname>:<port>` to connect to the Redis instance then use the `AUTH <username> <password>` command to switch to your user that have minimum priviledges to run other commands. 
+To be in interactive mode, do not use any particular command : 
+`redis-cli -u rediss://<username>:<password>@<hostname>:<port>`.<br>
+
+If you want to avoid to type username and password in your shell session, type:
+`redis-cli -u rediss://<username>:<password>@<hostname>:<port>` 
+to connect to the Redis instance then use the `AUTH <username> <password>` command to switch to your user that have minimum priviledges to run other commands. 
 
 Don't forget you need to modify the username, password, hostname and port.
+
 In our example, it will look like this :
 
 ```bash

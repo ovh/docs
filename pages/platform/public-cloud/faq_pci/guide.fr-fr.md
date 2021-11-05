@@ -6,7 +6,7 @@ section: 'Informations générales'
 order: 01
 ---
 
-**Dernière mise à jour le 06/09/2021**
+**Dernière mise à jour le 05/10/2021**
 
 ## FAQ Public Cloud
 
@@ -82,9 +82,9 @@ Nous vous invitons à consulter le guide [Configuration du vRack Public Cloud](.
 
 ### Puis-je changer l'IP publique de mon instance ?
 
-Les IP publiques sont attribuées automatiquement aux instances et ne sont donc pas modifiables. Pour avoir la main sur l'IP publique d'une instance, nous vous conseillons d'utiliser une IP Failover. De cette manière, quelque soit l'adresse publique attribuée automatiquement à l'instance, vous avez la possibilité d'ajouter une ou plusieurs IP failover à votre instance.
+Les IP publiques sont attribuées automatiquement aux instances et ne sont donc pas modifiables. Pour avoir la main sur l'IP publique d'une instance, nous vous conseillons d'utiliser une IP fail-over. De cette manière, quelle que soit l'adresse IP publique attribuée automatiquement à l'instance, vous avez la possibilité d'ajouter une ou plusieurs IP fail-over à votre instance.
 
-Pour plus d'informations, nous vous invitons à consulter le guide : [Acheter une IP Failover](../acheter-une-ip-failover/).
+Pour plus d'informations, nous vous invitons à consulter le guide : [Acheter une IP fail-over](../acheter-une-ip-failover/).
 
 ## Aller plus loin
 
