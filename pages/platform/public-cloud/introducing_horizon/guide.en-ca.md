@@ -107,6 +107,6 @@ In the top right-hand corner of the Horizon interface, a user menu allows you to
 
 ## Go further
 
-[Familiarise yourself with the Public Cloud interface](https://docs.ovh.com/fr/public-cloud/public-cloud-interface/)
+[Familiarise yourself with the Public Cloud interface](https://docs.ovh.com/ca/en/public-cloud/public-cloud-interface/)
  
 Join our community of users on <https://community.ovh.com/en/>.
