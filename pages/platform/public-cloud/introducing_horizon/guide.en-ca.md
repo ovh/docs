@@ -4,210 +4,109 @@ excerpt: Find out how to manage your project with the OpenStack Horizon interfac
 slug: horizon
 section: Horizon
 order: 1
-hidden: true
+
 ---
 
-**Last updated 29th October 2021**
+**Last updated 5th November 2021**
 
 ## Objective
 
-Horizon is the native OpenStack web interface to it's services (Nova, swift, glance, etc.). You have the option of using this interface as well as the OVHcloud Control Panel.
+The Horizon interface, natively offered with OpenStack, has been adapted by OVHcloud to offer additional features than those available in the OVHcloud Control Panel.
 
-**This guide provides some information on the basic functions of the Horizon interface.**
+**Discover the main sections of the Horizon interface.**
 
 ## Requirements
 
-- An OVHcloud [Public Cloud Project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project/)
-- An [Openstack user](../creation-and-deletion-of-openstack-user/){.external}
+- A [Public Cloud project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account.
+- [Configure user access to Horizon](../configure_user_access_to_horizon/).
 
 ## Instructions
 
-### Accessing Openstack Horizon
+### Datacentre region selection
 
-Once you have your Openstack username and password, you can access the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+Unlike the OVHcloud Control Panel, Horizon separates your services according to their region. You can choose the region from the menu in the top left-hand corner:
 
-### Select your Region
+![public-cloud](images/region2021.png){.thumbnail}
 
-Before making any changes, be sure that you are working on the correct region. Click on the Region at the top left corner and make your selection.
+### Left side menu
 
-![horizon region](images/choose_region.png){.thumbnail}
+This menu allows you to quickly navigate through the project and its various features.
 
-### Compute
+![public-cloud](images/leftmenu2021.png){.thumbnail}
 
-#### Overview
+#### Compute
 
-On the Overview page, you can see details on your quota usage including a list of instances created in the selected region and the resources assigned to them.
+##### **Overview**
 
-![Overview page](images/Overview.png){.thumbnail}
+- **Quota Summary**
 
-#### Instances
+Horizon provides a summary of quotas, which allows you to see the used and available resources for your projects:
 
-The Instances page is where you will be doing most of your instance management. We will detail most of the common functions below.
+![public-cloud](images/quotas2021.png){.thumbnail}
 
-To access this page, In the left-side bar, click on `Compute`{.action} and then click on `Instances`{.action}.
+- **Usage Summary**
 
-![horizon instances](images/menu_instances.png){.thumbnail}
+Next, is a summary of the use of your project instances. The search period can be customised to restrict this summary to a desired period.
 
+![public-cloud](images/usagesummary2021.png){.thumbnail}
 
-#### Editing an instance
+- **Usage**
 
+A summary of your usage is also available. This is a summary of the various services associated with the project, such as the list of instances.
 
-If you wish to configure your instance's security groups, either to remove or add them, you can do this by editing your instance. 
+![public-cloud](images/usage2021.png){.thumbnail}
 
-You can also use this feature to change the name of your instance.
+The summary is downloadable in CSV format, which allows you to extract the information so that you can analyse it via other tools. Simply click on `Download CSV Summary`{.action}.
 
-Click on `Compute`{.action} and then click on `Instances`{.action}. Select `Edit Instance`{.action} in the drop list for the corresponding instance.
+![public-cloud](images/csv2021.png){.thumbnail}
 
-![horizon instances](images/edit_instance.png){.thumbnail}
+- **Instances**
 
+Use this page to list and manage instances. Here, for example, you can create new instances, pause them, access the instance console, and much more.
 
-##### **Modify the name of the instance**
+- **Images**
 
-![horizon edit instance](images/edit_name.png){.thumbnail}
+Use this menu to list and manage images, i.e. templates and snapshots associated with your project.
 
-To confirm, click on `Save`{.action}
+- **Key Pairs**
 
-##### **Modify the [Security Groups](https://docs.ovh.com/ca/en/public-cloud/configure-security-group-horizon/) assigned to the instance**
+Here you can list and create your SSH keys for connecting to your instances.
 
-![horizon edit instance](images/edit_sec_group_instance.png){.thumbnail}
+##### **Volumes**
 
-Select or deselect the security group for the instance.
+Use this menu to list and manage volumes, as well as volume backups and snapshots.
 
-To confirm, click on `Save`{.action}
+![volume](images/volumes2021.png){.thumbnail}
 
+##### **Network**
 
-##### **Resizing an instance**
+List and manage your networks and security groups here. 
 
-As a result of increased activity, or simply new needs, your instance may not be able to meet this new burden due to a lack of resources. However, with the Public Cloud, you can increase the resources available to your instance, and this can be done with just a few clicks.
+![network](images/network2021.png){.thumbnail}
 
-> [!alert]
->
-> Only resizing to a higher model is possible for regular models. In addition, this manipulation causes the instance to be shut down for the time of the operation.
->
+##### **Orchestration**
 
-> [!success]
->
-> Flex instances allow resizing to higher or lower models due to a locked single disk size.
->
+This menu allows you to orchestrate multiple composite cloud applications.<br>
+For more information, please refer to the [OpenStack documentation](https://docs.openstack.org/horizon/pike/user/stacks.html){.external}.
 
-To resize the instance, select `Resize Instance`{.action} in the drop list for the corresponding instance.
+![orchestration](images/orchestration2021.png){.thumbnail}
 
-![resize_instance](images/menu_resize.png){.action}
+#### Identity
 
-Once the configuration is complete, click on `Resize`{.action}
+Use this menu to list information about your projects.
 
+### User menu
 
-##### **Restarting an instance**
+In the top right-hand corner of the Horizon interface, a user menu allows you to: 
 
-In some situations, you will probably need to restart your instances.
+- Change interface display settings
+- Download an OpenRC file containing your user IDs
+- log out of the Horizon interface.
 
-You have 2 different options for rebooting; software reboot and hardware reboot.
+![public-cloud](images/username2021.png){.thumbnail}
 
+## Go further
 
-###### **Software Reboot**
-
-To do a Soft Reboot, select `Soft Reboot Instance`{.action} in the drop list for the corresponding instance. 
-
-![reboot instance](images/menu_soft_reboot.png){.thumbnail}
-
-You will then be prompted to confirm your choice. You can do so by clicking on `Soft Reboot Instance`{.action}
-
-![reboot instance](images/soft_reboot.png){.thumbnail}
-
-###### **Hardware Reboot**
-
-To do a Hard Reboot, select `Hard Reboot Instance`{.action} in the drop list for the corresponding instance.
-
-![reboot instance](images/menu_hard_reboot.png){.thumbnail}
-
-You will then be prompted to confirm your choice. You can do so by clicking on `Hard Reboot Instance`{.action}
-
-![reboot instance](images/hard_reboot.png){.thumbnail}
-
-##### **Deleting an instance**
-
-To delete an instance, select `Delete Instance`{.action} in the drop list for the corresponding instance.
-
-![delete instance](images/delete_instance.png){.thumbnail}
-
-You will then be prompted to confirm your choice to delete the instance. You can confirm this by clicking on`Delete Instance`{.action}.
-
-![delete instance](images/delete_instance_confirm.png){.thumbnail}
-
-##### **Rebuilding an instance**
-
-Rebuilding an instance will allow you to recreate the instance with another image.
-
-To rebuild an instance, select `Rebuild Instance`{.action} in the drop list for the corresponding instance.
-
-![horizon rebuild instance](images/menu_rebuild.png){.thumbnail}
-
-Select the Image and the Disk Partion mode, then click on `Rebuild Instance`{.action}.
-
-![horizon rebuild instance](images/rebuild_instance.png){.thumbnail}
-
-The rebuilding process will take a few moments to complete.
-
-
-###### **Template Selection Tab**
-
-This section shows the current template and allows you to select a new template for the instance resource.
-
-![Flavor selection](images/templatetab.png)
-
-
-> [!success]
->
-> It is possible to preview the resources that will be taken from the total resources available to the project.
->
-
-###### **Advanced Options Tab**
-
-This section allows you to manage the disk partitioning.
-
-![advance tab](images/advancedtab.png)
-
-
-##### Creating a snapshot of an instance
-
-During your activity, you will probably need to back up your data, your configurations, and even your entire instances. You can do this by creating snapshots of your instances, which can be used to restore a later configuration on your instance, or by creating an exact copy of an instance.
-
-To create a snapshot, select `Create Snapshot`{.action} in the drop list for the corresponding instance.
-
-![create snapshot](images/menu_snapshot.png){.thumbnail}
-
-Give the snapshot a name and then click on `Create Snapshot`{.action}
-
-![create snapshot](images/create_snapshot.png){.thumbnail}
-
-The snapshot will be saved in the `Images`{.action} section of Horizon.
-
-![create snapshot](images/snapshot.png){.thumbnail} 
-
-##### Accessing the console of an instance
-
-In the event you lose access to your instance, whether it is caused by a configuration error or a malfunctioning SSH service, you are always able to reconfigure your instance with the assistance of the VNC console.
-
-Select `Console`{.action} in the drop list for the corresponding instance.
-
-![horizon console](images/launch_console.png){.thumbnail}
-
-The VNC Console now appears.
-
-![horizon console](images/console.png){.thumbnail}
-
-> [!success]
->
-> You can only use the console if you have set a password for your user.  
->
-
-
-#### Images
-
-You can add custom images via the OpenStack Horizon interface. For example, you can use it to import images from your old virtual machines to the Public Cloud, provided that they are in a compatible format. For more information, consult the following guide: [Creating, launching and deleting images in Horizon](https://docs.ovh.com/ca/en/public-cloud/create-launch-and-delete-images-in-horizon/).
-
-
-# Go further
-
-
+[Familiarise yourself with the Public Cloud interface](https://docs.ovh.com/fr/public-cloud/public-cloud-interface/)
+ 
 Join our community of users on <https://community.ovh.com/en/>.
