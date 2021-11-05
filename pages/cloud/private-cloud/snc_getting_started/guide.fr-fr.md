@@ -6,7 +6,7 @@ section: Fonctionnalités OVHcloud
 hidden: true
 ---
 
-**Dernière mise à jour le 14/09/2021**
+**Dernière mise à jour le 05/11/2021**
 
 ## Objectif
 
@@ -28,10 +28,11 @@ Vous venez de recevoir une notification de livraison de votre service.
 
 Celui-ci contient notamment vos informations de connexion, telles que dans l'exemple ci-dessous :
 
-> - adresse IP/nom : pcc-192-0-2-1.ovh.com
-> - nom d'utilisateur : admin
-> - mot de passe : **********
->
+```
+- adresse IP/nom : pcc-192-0-2-1.ovh.com
+- nom d'utilisateur : admin
+- mot de passe : **********
+```
 
 Vous noterez qu'il n'y a pas de mot de passe dans l'email, celui-ci sera obtenu à l'issue de l'étape 2.
 
@@ -55,7 +56,12 @@ Les mesures de sécurité suivantes sont mises en place à la livraison de votre
 
 Pour cela, effectuez les actions suivantes :
 
-L'utilisateur **« admin »** doit avoir des informations à jour et disposer de l'autorisation nécessaire: depuis l'onglet `Utilisateurs`{.action} , assurez-vous pour l'utilisateur "admin" que le numéro de téléphone et l'adresse e-mail sont correctement renseignés. L'utilisateur **« admin »** doit aussi disposer de l'autorisation "**token validator**". Si nécessaire, pour changer d'utilisateur, cliquez sur le bouton `...`{.action} , puis sur `Modifier`{.action}. N'hésitez pas à consulter notre guide [Présentation de l’espace client Private Cloud OVHcloud](../manager-ovh-private-cloud/).
+* L'utilisateur **« admin »** doit avoir des informations à jour et disposer de l'autorisation nécessaire
+* Depuis l'onglet `Utilisateurs`{.action} , assurez-vous pour l'utilisateur **« admin »** que le numéro de téléphone et l'adresse e-mail sont correctement renseignés.
+* L'utilisateur **« admin »** doit aussi disposer de l'autorisation "**token validator**".
+* Si nécessaire, pour modifier l'utilisateur, cliquez sur le bouton `...`{.action} , puis sur `Modifier`{.action}.
+
+N'hésitez pas à consulter notre guide [Présentation de l’espace client Private Cloud OVHcloud](../manager-ovh-private-cloud/).
 
 Accédez à l’interface sécurisée du service, exemple : https://pcc-192-0-2-1.ovh.com/secure/ (attention à ne pas oublier le “/” final de l’adresse).
 
@@ -91,13 +97,13 @@ Pour cela il faut confirmer la poursuite des opérations via le call d'API suiva
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/securityOptions/{name}/resumePendingEnabling
+> @api {POST} /dedicatedCloud/{serviceName}/securityOptions/resumePendingEnabling
 >
 
 En spécifiant :
 
 - {serviceName} : le nom du service (exemple: pcc-192-0-2-1)
-- {name} : snc
+- {option} : tokenValidation
 
 Vous allez alors recevoir un SMS pour valider l'autorisation "**token validator**" sur le numéro de téléphone précédemment renseigné.
 
@@ -116,10 +122,7 @@ Si vous ne confirmez pas cette opération avant l'expiration, elle sera annulée
 > [!warning]
 >
 > Le token généré n'est valide que pour 15 minutes.
-> 
 > Les prochaines actions sont à effectuer dans ce temps imparti sinon la tâche sera annulée une fois ce temps écoulé.
->
-> Il sera ensuite nécessaire de contacter le support pour finaliser les opérations.
 >
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
@@ -162,8 +165,57 @@ Configurez alors le KMS dans vSphere en vous aidant du guide suivant :
 
 ### Etape  6: vérification de la conformité SecNumCloud
 
-Après avoir effectué les démarches de sécurisation de l'infrastructure, vous devez contacter le support OVHcloud
-pour une revue de la mise en conformité SecNumCloud de l'infrastructure vSphere.
+Après avoir effectué les démarches de sécurisation de l'infrastructure, vous devez finaliser l'activation SecNumCloud.
+
+Pour cela il faut lancer l'opération via le call d'API suivant :
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/securityOptions/resumePendingEnabling
+>
+
+En spécifiant :
+
+- {serviceName} : le nom du service (exemple: pcc-192-0-2-1)
+- {option} : snc
+
+Retour (tronqué) :
+
+```json
+{
+    "taskId": 4091062,
+    "name": "enableSecurityOption",
+    "progress": 0,
+    "state": "todo"
+}
+```
+
+Vous allez obtenir une tache que vous pouvez suivre à l'aide de son **taskId** via le call d'API suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/task/{taskId}
+>
+
+En spécifiant :
+
+- {serviceName} : le nom du service (exemple: pcc-192-0-2-1)
+- {taskId} : le numéro de la tache (exemple: 4091062)
+
+Une fois celle-ci terminé, vous pouvez contrôler qu'il ne reste pas d'action à faire via le call d'API suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/securityOptions/pendingOptions
+>
+
+Une liste vide en retour, comme ci-dessous :
+
+```
+[ ]
+```
+
+Vous confirme que l'ensemble des actions ont été faites sur l'environnement et que celui est pleinement opérationnel.
 
 ## Aller plus loin
 
