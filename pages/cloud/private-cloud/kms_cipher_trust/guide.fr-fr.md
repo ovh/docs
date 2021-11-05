@@ -37,73 +37,73 @@ Vous trouverez dans ce guide les différentes étapes permettant la configuratio
 
 * Connectez-vous au vCenter avec un compte permettant le déploiement d’un modèle OVF.
 
-![Deploy OVF Template](images/kms_cipher_trust_ova_01.png){.thumbails}
+![Deploy OVF Template](images/kms_cipher_trust_ova_01.png){.thumbnail}
 
 * Dirigez-vous dans le menu `Hôte et cluster`{.action}, puis sélectionnez le cluster.
 * Cliquez sur `Actions`{.action} > `Déployer un modèle OVF`{.action}.
 * Suivez les étapes d’installation :
 
-![Select an OVF template](images/kms_cipher_trust_ova_02.png){.thumbails}
+![Select an OVF template](images/kms_cipher_trust_ova_02.png){.thumbnail}
 
 * Sélectionnez les fichiers locaux liés au modèle OVA `610-000612-005_SW_VMware_CipherTrust_Manager_v2.4.0_RevA.ova`.
 * Cliquez sur le bouton `Next`{.action}.
 
-![Select a name and folder](images/kms_cipher_trust_ova_03.png){.thumbails}
+![Select a name and folder](images/kms_cipher_trust_ova_03.png){.thumbnail}
 
 * Renseignez le nom de la machine virtuelle. Le nom doit être différent pour chaque instance. Ici, nous l’appellerons **KMS_01_master**.
 * Sélectionnez le datacenter où sera placé la machine virtuelle.
 * Cliquez sur le bouton `Next`{.action}.
 
-![Select a compute resource](images/kms_cipher_trust_ova_04.png){.thumbails}
+![Select a compute resource](images/kms_cipher_trust_ova_04.png){.thumbnail}
 
 * Sélectionnez la ressource de calcul (compute resource), ici **Cluster1**.
 * Cliquez sur le bouton `Next`{.action}.
 
-![Review details](images/kms_cipher_trust_ova_05.png){.thumbails}
+![Review details](images/kms_cipher_trust_ova_05.png){.thumbnail}
 
 * Vérifiez les informations.
 * Cliquez sur le bouton `Next`{.action}.
 
-![Select storage](images/kms_cipher_trust_ova_06.png){.thumbails}
+![Select storage](images/kms_cipher_trust_ova_06.png){.thumbnail}
 
 * Sélectionnez le périphérique de stockage.
 * Cliquez sur le bouton `Next`{.action}.
 
-![Select networks](images/kms_cipher_trust_ova_07.png){.thumbails}
+![Select networks](images/kms_cipher_trust_ova_07.png){.thumbnail}
 
 * Sélectionnez le réseau approprié, ici **ADM**.
 * Cliquez sur le bouton `Next`{.action}.
 
-![Ready to complete](images/kms_cipher_trust_ova_08.png){.thumbails}
+![Ready to complete](images/kms_cipher_trust_ova_08.png){.thumbnail}
 
 * Vérifiez les informations liées au déploiement.
 * Cliquez sur le bouton `Finish`{.action}.
 
 Une fois la machine virtuelle déployée :
 
-![Edit settings](images/kms_cipher_trust_vm_01.png){.thumbails}
+![Edit settings](images/kms_cipher_trust_vm_01.png){.thumbnail}
 
 * Sélectionnez la machine virtuelle.
 * Cliquez sur `Edit Settings`{.action}.
 
-![Add New Device](images/kms_cipher_trust_vm_02.png){.thumbails}
+![Add New Device](images/kms_cipher_trust_vm_02.png){.thumbnail}
 
 * Dans l’onglet **Virtual Hardware**, cliquez sur `Add New Device`{.action}.
 * Sélectionner **CD/DVD Drive**.
 
-![New CD/DVD Drive](images/kms_cipher_trust_vm_03.png){.thumbails}
+![New CD/DVD Drive](images/kms_cipher_trust_vm_03.png){.thumbnail}
 
 * Validez avec le bouton `OK`{.action}.
 
 Configuration de la machine virtuelle :
 
-![Edit vApp Options](images/kms_cipher_trust_vm_04.png){.thumbails}
+![Edit vApp Options](images/kms_cipher_trust_vm_04.png){.thumbnail}
 
 * Allez dans l’onglet **Configure**.
 * Dans le menu de gauche **vApp Options**.
 * Cliquez sur `Edit...`{.action}.
 
-![Enable vApp options](images/kms_cipher_trust_vm_05.png){.thumbails}
+![Enable vApp options](images/kms_cipher_trust_vm_05.png){.thumbnail}
 
 * Vérifiez que **Enable vApp options** est bien coché.
 * Allez dans l’onglet **OVF Details**.
@@ -144,17 +144,17 @@ openssl base64 -A -in cloud.init -out cloudb64.init
 
 Finalisation de la configuration de la machine virtuelle :
 
-![Add vApp Properties](images/kms_cipher_trust_vm_06.png){.thumbails}
+![Add vApp Properties](images/kms_cipher_trust_vm_06.png){.thumbnail}
 
 * Dirigez-vous sur l’onglet **Configure**.
 * Dans le menu de gauche **vApp Options**.
 * Puis dans la section **Properties**, cliquez sur `ADD`{.action}.
 
-![New property](images/kms_cipher_trust_vm_08.png){.thumbails}
+![New property](images/kms_cipher_trust_vm_08.png){.thumbnail}
 
 * Dans l’onglet **General**, définissez le label à **user-data**.
 
-![default value](images/kms_cipher_trust_vm_10.png){.thumbails}
+![default value](images/kms_cipher_trust_vm_10.png){.thumbnail}
 
 * Dans l’onglet **Type**, saisissez dans **Default value**, la chaine en base 64.
 * Cliquez sur `SAVE`{.action} pour valider.
@@ -165,9 +165,9 @@ Repétez les étapes pour la seconde instance **KMS_01_slave**
 
 A l’issue de ces étapes, les différentes instances doivent être visibles. Exemple : 
 
-![KMS_01_master](images/kms_cipher_trust_vm_11.png){.thumbails}
+![KMS_01_master](images/kms_cipher_trust_vm_11.png){.thumbnail}
 
-![KMS_01_slave](images/kms_cipher_trust_vm_12.png){.thumbails}
+![KMS_01_slave](images/kms_cipher_trust_vm_12.png){.thumbnail}
 
 ### Pré-configurer chaque instance
 
@@ -176,7 +176,7 @@ A l’issue de ces étapes, les différentes instances doivent être visibles. E
 > Il est important que la clé SSH ainsi que les mots de passe définis dans les différentes instances soient identiques.
 > 
 
-![Add SSH Public Key](images/kms_cipher_trust_getting_started_01.png){.thumbails}
+![Add SSH Public Key](images/kms_cipher_trust_getting_started_01.png){.thumbnail}
 
 Première authentification au KMS :
 
@@ -189,7 +189,7 @@ Première authentification au KMS :
 > L’insertion peut prendre quelques minutes afin que les microservices puissent se lancer.
 > 
 
-![Default log in](images/kms_cipher_trust_getting_started_02.png){.thumbails}
+![Default log in](images/kms_cipher_trust_getting_started_02.png){.thumbnail}
 
 Authentification :
 
@@ -198,7 +198,7 @@ Authentification :
     * Password : **admin**
 * Cliquez sur `Log In`{.action}.
 
-![Change password](images/kms_cipher_trust_getting_started_03.png){.thumbails}
+![Change password](images/kms_cipher_trust_getting_started_03.png){.thumbnail}
 
 Une nouvelle fenêtre apparaît pour renouveler le mot de passe.
 
@@ -207,11 +207,11 @@ Une nouvelle fenêtre apparaît pour renouveler le mot de passe.
 * Retype New Password : NouveauMotDePasse
 * Cliquez sur `Change Password`{.action}.
 
-![Log In](images/kms_cipher_trust_getting_started_04.png){.thumbails}
+![Log In](images/kms_cipher_trust_getting_started_04.png){.thumbnail}
 
 Utilisez le nouveau mot de passe pour vous authentifier.
 
-![cipher trust manager](images/kms_cipher_trust_getting_started_05.png){.thumbails}
+![cipher trust manager](images/kms_cipher_trust_getting_started_05.png){.thumbnail}
 
 L'instance de KMS est prête a être utilisée.
 

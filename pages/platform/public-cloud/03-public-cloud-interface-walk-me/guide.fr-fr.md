@@ -1,6 +1,6 @@
 ---
 title: "Se familiariser avec l'interface Public Cloud"
-excerpt: "Visite guidée de l'interface Public Cloud pour découvrir les différentes sections"
+excerpt: "Visite guidée de l'interface Public Cloud"
 slug: public-cloud-interface
 section: Premiers pas
 order: 03
@@ -12,7 +12,7 @@ order: 03
 
 Vous venez de créer votre projet Public Cloud et vous souhaitez en savoir un peu plus sur l'interface utilisateur au sein de l'espace client OVHcloud.
 
-**Découvrez les principales section de l'interface Public Cloud au sein de l'espace client OVHcloud**
+**Découvrez les principales sections de l'interface Public Cloud au sein de l'espace client OVHcloud**
 
 ## Prérequis
 

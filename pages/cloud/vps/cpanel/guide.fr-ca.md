@@ -1,5 +1,5 @@
 ---
-title: 'Déployer cPanel sur centOS7'
+title: 'Déployer cPanel sur un VPS'
 slug: cpanel
 excerpt: 'Découvrez comment instancier un VPS avec l’application cPanel pré-installée.'
 section: 'Utilisation avancée'
