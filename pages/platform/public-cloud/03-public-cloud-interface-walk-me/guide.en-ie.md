@@ -1,5 +1,5 @@
 ---
-title: "Getting familiar with the Public Cloud interface"
+title: "Familiarise yourself with the Public Cloud interface"
 excerpt: "Guided tour of the Public Cloud interface to explore the different sections"
 slug: public-cloud-interface
 section: Getting started
