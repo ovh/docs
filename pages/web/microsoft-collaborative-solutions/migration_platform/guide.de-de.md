@@ -1,34 +1,38 @@
 ---
 title: "Ihre E-Mail-Adressen von einer OVHcloud E-Mail-Plattform auf eine andere migrieren"
 slug: migration-email-platform
-excerpt: "Erfahren Sie, wie Sie E-Mail-Adressen von einer Exchange oder E-Mail Pro Plattform auf eine andere Exchange, E-Mail Pro oder MX Plan migrieren."
+excerpt: "Erfahren Sie hier, wie Sie E-Mail-Adressen von einem Exchange-Dienst oder einem E-Mail Pro-Dienst zu anderen Exchange-, E-Mail Pro- oder MX Plan-Diensten migrieren"
 section: Account-Migration
 order: 2
 ---
 
-**Stand 21.10.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 21.10.2021**
 
 ## Ziel
 
-Sie möchten Ihre E-Mail-Adressen auf einer Exchange oder E-Mail Pro Plattform auf eine andere Exchange, E-Mail Pro oder MX Plan Plattform migrieren. In dieser Anleitung finden Sie einen zweistufigen Migrationsprozess:
+Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform auf eine andere Exchange-, E-Mail Pro- oder MX Plan-Plattform migrieren. In dieser Anleitung wird ein  zweistufiger Migrationsprozess beschrieben:
 
-1. **Die Zielplattform konfigurieren**.
-2. **E-Mail-Accounts** von Ihrer derzeitigen Plattform auf die neue migrieren.
+1. **Konfigurieren der Zielplattform**
+2. **Migration der E-Mail-Accounts** von der bestehenden Plattform auf die neue
 
 ![email-migration](images/migration_platform01.gif){.thumbnail}
 
 > [!primary]
 >
-> Um eine MX Plan Lösung auf eine Exchange oder E-Mail Pro Plattform zu migrieren, folgen Sie unserer Anleitung [Migration einer MX Plan E-Mail-Adresse auf einen E-Mail Pro oder Exchange Account](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-e-mail-adresse-auf-exchange/).
+> Um eine MX Plan Lösung nach Exchange oder E-Mail Pro zu migrieren, folgen Sie unserer Anleitung [Migration einer MX Plan E-Mail-Adresse auf einen E-Mail Pro oder Exchange Account](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-e-mail-adresse-auf-exchange/).
 >
 
-**Hier erfahren Sie, wie Sie E-Mail-Adressen von einer Exchange oder E-Mail Pro Plattform auf eine andere Exchange oder E-Mail Pro Plattform migrieren.**
+**Diese Anleitung erklärt, wie Sie E-Mail-Adressen von Exchange oder E-Mail Pro auf eine andere Exchange- oder E-Mail Pro-Plattform migrieren.**
 
 ## Voraussetzungen
 
-- Sie verfügen über eine "**Source"**-Plattform mit konfigurierten [Exchange](https://www.ovh.de/emails/hosted-exchange/){.external} oder [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} Accounts.
-- Sie verfügen über eine "**Ziel"**-Plattform mit [Exchange](https://www.ovh.de/emails/hosted-exchange/){.external}, [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} oder MX Plan (über das MX Plan Angebot oder in einem [OVHcloud Webhosting](https://www.ovh.de/hosting/){.external}Angebot). Diese Plattform muss über nicht konfigurierte oder verfügbare Accounts verfügen, um die zu migrierenden E-Mail-Adressen zu empfangen.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angemeldet.
+- Sie haben eine "**Quell-Plattform**" mit bereits eingerichteten [Exchange](https://www.ovh.de/emails/hosted-exchange/){.external} oder [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} Accounts.
+- Sie verfügen über eine "**Ziel-Plattform**": [Exchange](https://www.ovh.de/emails/hosted-exchange/){.external}, [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} oder MX Plan (über das MX Plan Angebot oder in einem [OVHcloud Webhosting](https://www.ovh.de/hosting/){.external} enthalten). Diese Plattform muss unkonfigurierte oder verfügbare Accounts haben, um die zu migrierenden E-Mail-Adressen zu empfangen.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -52,74 +56,74 @@ Die Migration Ihrer E-Mail-Accounts erfolgt in 3 großen Schritten: **Umbenennen
 >
 > Sonderfall:
 >
-> - Wenn Sie einen **Exchange** Account auf einen **E-Mail Pro** Account migrieren möchten, müssen Sie sicherstellen, dass Ihre E-Mail Accounts nicht mehr als 10 GB betragen. Die kollaborativen Funktionen, die Synchronisation der Kalender und Kontakte sind auf E-Mail Pro nicht verfügbar und können nicht migriert werden.
-> - Wenn Sie einen **Exchange oder E-Mail Pro** Account auf einen **MX Plan** Account migrieren möchten, müssen Sie sicherstellen, dass Ihr E-Mail-Account nicht mehr als 5 GB beträgt. Die kollaborativen Funktionen, die Synchronisation der Kalender und Kontakte sind auf MX Plan nicht vorhanden und können nicht migriert werden.
+> - Wenn Sie einen **Exchange** Account auf einen **E-Mail Pro** Account migrieren möchten, müssen Sie sicherstellen, dass Ihre E-Mail Accounts nicht mehr als 10 GB beanspruchen. Die kollaborativen Funktionen, die Synchronisation der Kalender und Kontakte sind auf E-Mail Pro nicht verfügbar und können nicht migriert werden.
+> - Wenn Sie einen **Exchange oder E-Mail Pro** Account auf einen **MX Plan** Account migrieren möchten, müssen Sie sicherstellen, dass Ihr E-Mail-Account nicht mehr als 5 GB verwendet. Die kollaborativen Funktionen, die Synchronisation der Kalender und Kontakte sind auf MX Plan nicht vorhanden und können nicht migriert werden.
 
-#### Umbenennen
+#### Schritt 1: Umbenennen
 
-Umbenennen Sie den zu migrierenden E-Mail-Account mit einem vorläufigen Namen (Beispiel: Um den E-Mail-Account *john.smith@mydomain.ovh* zu migrieren, benennen Sie diesen als *john.smith01@mydomain.ovh*und.
+Geben Sie dem zu migrierenden E-Mail-Account einen temporären Namen (Beispiel: Um den E-Mail-Account *john.smith@mydomain.ovh* zu migrieren, benennen Sie diesen um zu *john.smith01@mydomain.ovh*.)
 
-Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihrer E-Mail-Plattform auf den Button `...`{.action} und dann auf `Ändern`{.action}.
+Klicken Sie dazu im Tab `E-Mail-Accounts`{.action} Ihres Dienstes auf den Button `...`{.action} und dann auf `Ändern`{.action}.
 
 ![email-migration](images/migration_platform04.png){.thumbnail}
 
-#### Erstellen
+#### Schritt 2: Erstellen
 
-Erstellen Sie Ihre E-Mail-Adresse auf dem neuen Account Ihrer E-Mail Pro, Exchange oder MX Plan Plattform (in diesem Fall erstellen Sie *john.smith@mydomain.ovh* auf Ihrer neuen Plattform)
+Erstellen Sie die E-Mail-Adresse neu als Account von E-Mail Pro, Exchange oder MX Plan (in diesem Beispiel wäre das *john.smith@mydomain.ovh* auf Ihrer Ziel-Plattform).
 
-Klicken Sie im Tab `E-Mail`{.action}-Accounts Ihrer Plattform auf `...`{.action} rechts neben dem Ziel-E-Mail-Account und dann auf `Ändern`{.action}.
+Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihrer betreffenden Plattform auf `...`{.action} rechts neben dem Ziel-Account und dann auf `Ändern`{.action}.
 
 ![email-migration](images/migration_platform05.png){.thumbnail}
 
-#### Migrieren
+#### Schritt 3: Migrieren
 
-Migrieren Sie den Quell-E-Mail-Account mithilfe unseres [OMM](https://omm.ovh.net/)-Tools (OVH Mail Migrator) auf das Konto Ihrer neuen Plattform.
+Migrieren Sie den Quell-Account mithilfe unseres [OMM Tools](https://omm.ovh.net/) (OVH Mail Migrator) auf den Account Ihrer Ziel-Plattform.
 
-Weitere Informationen zu OMM finden Sie in unserer Anleitung [E-Mail-Accounts über den OVH Mail Migrator migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/).
+Weitere Informationen zu OMM finden Sie in unserer Anleitung "[E-Mail-Accounts über den OVH Mail Migrator migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/)".
 
 ![email-migration](images/migration_platform06.png){.thumbnail}
 
-Die Migrationsdauer hängt davon ab, wie viele Daten auf Ihren neuen Account migriert werden sollen. Dieser kann von einigen Minuten bis zu mehreren Stunden variieren.
+Die Migrationsdauer hängt davon ab, wie viele Daten auf Ihren neuen Account migriert werden sollen. Dies kann von einigen Minuten bis zu mehreren Stunden variieren.
 
-Überprüfen Sie nach der Migration, ob Sie alle Ihre Elemente finden, indem Sie sich mit dem Webmail mit der Adresse verbinden <https://www.ovh.de/mail/>.
+Überprüfen Sie nach der Migration, ob alle Ihre Elemente vorhanden sind, indem Sie sich im Webmail einloggen: <https://www.ovh.de/mail/>.
 
-Nach der Migration können Sie den ursprünglichen Account mit dem vorläufigen Namen beibehalten oder löschen.
+Nach der Migration können Sie den ursprünglichen Account mit dem geänderten Namen beibehalten oder löschen.
 
-Wenn Sie diese löschen möchten, gehen Sie in den Tab `E-Mail-Accounts`{.action} Ihrer ursprünglichen E-Mail-Plattform, klicken Sie auf `...`{.action} und dann auf `Diesen Account zurücksetzen`{.action}.
+Um ihn zu löschen, gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Quell-Plattform, klicken Sie auf `...`{.action} und dann auf `Diesen Account zurücksetzen`{.action}.
 
 ### Die Konfiguration Ihrer Domain überprüfen oder ändern
 
-In diesem Schritt müssen Ihre E-Mail-Adressen bereits migriert und funktionsfähig sein. Aus Sicherheitsgründen bitten wir Sie, die korrekte Konfiguration Ihrer Domain in Ihrem Kundencenter zu überprüfen.
+Ihre E-Mail-Adressen sollten bereits migriert und funktionsfähig sein. Aus Sicherheitsgründen bitten wir Sie, die korrekte Konfiguration Ihrer Domain in Ihrem Kundencenter zu überprüfen.
 
-Wählen Sie hierzu im linken Menü den betreffenden E-Mail Pro oder Exchange Dienst aus und gehen Sie dann auf den Tab `Assoziierte Domains`{.action}. In der angezeigten Tabelle können Sie in der Spalte "Diagnose" sehen, ob die DNS-Konfiguration korrekt ist: Ein rotes Kästchen erscheint, wenn die Konfiguration geändert werden soll.
+Wählen Sie hierzu im linken Menü den betreffenden E-Mail Pro oder Exchange Dienst aus und gehen Sie dann auf den Tab `Assoziierte Domains`{.action}. In der angezeigten Tabelle können Sie in der Spalte `Diagnose` sehen, ob die DNS-Konfiguration korrekt ist: Eine rote Meldung erscheint, wenn die Konfiguration geändert werden muss.
 
 > [!primary]
 >
-> Wenn Sie gerade die Migration durchgeführt oder einen DNS-Eintrag Ihrer Domain geändert haben, kann es einige Stunden dauern, bis die Anzeige im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktualisiert werden kann.
+> Wenn Sie gerade die Migration durchgeführt oder einen DNS-Eintrag Ihrer Domain geändert haben, kann es noch einige Stunden dauern, bis die Anzeige im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktualisiert wird.
 >
 
-Um die Konfiguration zu ändern, klicken Sie auf das rote Kästchen und führen Sie den gewünschten Vorgang durch. Diese benötigt eine Propagationszeit von 4 bis maximal 24 Stunden, bis sie voll wirksam ist.
+Um die Konfiguration zu ändern, klicken Sie auf das rote Feld und führen Sie die dort beschriebene Aktion durch. Der Vorgang benötigt eine Propagationszeit von 4 bis maximal 24 Stunden, bis die Änderung voll wirksam ist.
 
 ![email-migration](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
 ### Migrierte E-Mail-Adressen verwenden
 
-Verwenden Sie nun Ihre migrierten E-Mail-Adressen. OVHcloud stellt dazu eine Online-Anwendung (_web app_) zur Verfügung, die über die <https://www.ovh.de/mail/> Adresse erreichbar ist. Geben Sie dort die Login-Daten für Ihre E-Mail-Adresse ein.
+Sie können nun Ihre migrierten E-Mail-Adressen verwenden. OVHcloud stellt dazu einen Web-Client (*Wep App*) zur Verfügung, der über <https://www.ovh.de/mail/> erreichbar ist. Geben Sie dort die Login-Daten für Ihre E-Mail-Adresse ein.
 
-Wenn Sie einen der migrierten Accounts auf einem E-Mail-Client eingerichtet haben (Beispiel: Outlook, Thunderbird), Sie müssen es erneut konfigurieren. Die Verbindungsdaten zum OVHcloud Server haben sich nach der Migration geändert.
-<br>Weitere Informationen finden Sie in unserer Anleitung zu [E-Mail Pro](https://docs.ovh.com/de/emails-pro/){.external} und [Hosted Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/){.external}. Wenn Sie den Account nicht sofort neu konfigurieren können, ist der Zugriff über die Online-Anwendung weiterhin möglich.
+Wenn Sie einen der migrierten Accounts auf einem lokalen E-Mail-Client eingerichtet haben (Outlook, Thunderbird, etc.), muss er erneut konfiguriert werden. Die Verbindungsdaten zum OVHcloud Server haben sich nach der Migration geändert.
+<br>Weitere Informationen finden Sie jeweils in den Anleitungen zu [E-Mail Pro](https://docs.ovh.com/de/emails-pro/) und [Hosted Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/). Wenn Sie den Account nicht sofort neu konfigurieren können, gibt es stets die Möglichkeit, den Web-Client zu verwenden.
 
 > [!primary]
 >
-> Sie können auch manuell E-Mail-Adressen zu OVHcloud migrieren, indem Sie unser [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} verwenden. Hierzu benötigen Sie die Informationen (Benutzer, Passwort, Server) der Quell-E-Mail und der Ziel-E-Mail.
+> Sie können auch externe E-Mail-Adressen zu OVHcloud migrieren, indem Sie unseren [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} verwenden. Hierzu benötigen Sie die Login-Daten (Benutzer, Passwort, Server) der Quell- und Ziel-Accounts.
 >
 
 ## Weiterführende Informationen
 
-[Verwaltung der Kontakte Ihrer Dienste](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/){.external}
+[Verwaltung der Kontakte Ihrer Dienste](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/)
 
-[E-Mail Pro Hilfen](https://docs.ovh.com/de/emails-pro/){.external}.
+[E-Mail Pro Hilfen](https://docs.ovh.com/de/emails-pro/)
 
-[Exchange Hilfen](https://docs.ovh.com/de/microsoft-collaborative-solutions/){.external}.
+[Exchange Hilfen](https://docs.ovh.com/de/microsoft-collaborative-solutions/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
