@@ -103,7 +103,7 @@ Once the service is active, you will find it in your Control Panel in the `Bare 
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
-![select project](images/vrack1.png){.thumbnail}
+![project selection](images/vrack2021-05.png){.thumbnail}
 
 Click on `Private network`{.action} (1) in left-hand navigation bar.
 
