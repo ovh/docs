@@ -54,9 +54,9 @@ Die Migration Ihrer E-Mail-Accounts erfolgt in 3 großen Schritten: **Umbenennen
 
 > [!warning]
 >
-> Sonderfall:
+> Sonderfälle:
 >
-> - Wenn Sie einen **Exchange** Account auf einen **E-Mail Pro** Account migrieren möchten, müssen Sie sicherstellen, dass Ihre E-Mail Accounts nicht mehr als 10 GB beanspruchen. Die kollaborativen Funktionen, die Synchronisation der Kalender und Kontakte sind auf E-Mail Pro nicht verfügbar und können nicht migriert werden.
+> - Wenn Sie einen **Exchange** Account auf einen **E-Mail Pro** Account migrieren möchten, müssen Sie sicherstellen, dass Ihr E-Mail Account nicht mehr als 10 GB beanspruchen. Die kollaborativen Funktionen, die Synchronisation der Kalender und Kontakte sind auf E-Mail Pro nicht verfügbar und können nicht migriert werden.
 > - Wenn Sie einen **Exchange oder E-Mail Pro** Account auf einen **MX Plan** Account migrieren möchten, müssen Sie sicherstellen, dass Ihr E-Mail-Account nicht mehr als 5 GB verwendet. Die kollaborativen Funktionen, die Synchronisation der Kalender und Kontakte sind auf MX Plan nicht vorhanden und können nicht migriert werden.
 
 #### Schritt 1: Umbenennen
