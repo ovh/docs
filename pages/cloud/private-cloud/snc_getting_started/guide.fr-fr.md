@@ -28,7 +28,7 @@ Vous venez de recevoir une notification de livraison de votre service.
 
 Celui-ci contient notamment vos informations de connexion, telles que dans l'exemple ci-dessous :
 
-```
+```console
 - adresse IP/nom : pcc-192-0-2-1.ovh.com
 - nom d'utilisateur : admin
 - mot de passe : **********
@@ -56,12 +56,12 @@ Les mesures de sécurité suivantes sont mises en place à la livraison de votre
 
 Pour cela, effectuez les actions suivantes :
 
-* L'utilisateur **« admin »** doit avoir des informations à jour et disposer de l'autorisation nécessaire
-* Depuis l'onglet `Utilisateurs`{.action} , assurez-vous pour l'utilisateur **« admin »** que le numéro de téléphone et l'adresse e-mail sont correctement renseignés.
-* L'utilisateur **« admin »** doit aussi disposer de l'autorisation "**token validator**".
+* L'utilisateur « **admin** » doit avoir des informations à jour et disposer de l'autorisation nécessaire.
+* Depuis l'onglet `Utilisateurs`{.action} , assurez-vous, pour l'utilisateur « **admin** », que le numéro de téléphone et l'adresse e-mail sont correctement renseignés.
+* L'utilisateur « **admin** » doit aussi disposer de l'autorisation « **token validator** ».
 * Si nécessaire, pour modifier l'utilisateur, cliquez sur le bouton `...`{.action} , puis sur `Modifier`{.action}.
 
-N'hésitez pas à consulter notre guide [Présentation de l’espace client Private Cloud OVHcloud](../manager-ovh-private-cloud/).
+N'hésitez pas à consulter notre guide [Présentation de l’espace client Hosted Private Cloud OVHcloud](../manager-ovh-private-cloud/).
 
 Accédez à l’interface sécurisée du service, exemple : https://pcc-192-0-2-1.ovh.com/secure/ (attention à ne pas oublier le “/” final de l’adresse).
 
@@ -105,11 +105,11 @@ En spécifiant :
 - {serviceName} : le nom du service (exemple: pcc-192-0-2-1)
 - {option} : tokenValidation
 
-Vous allez alors recevoir un SMS pour valider l'autorisation "**token validator**" sur le numéro de téléphone précédemment renseigné.
+Vous allez alors recevoir un SMS pour valider l'autorisation « **token validator** » sur le numéro de téléphone précédemment renseigné.
 
 Voici un exemple de SMS envoyé:
 
-```
+```console
 OVHcloud - Dedicated Cloud - message destiné à l'utilisateur admin.
 L'opération testTokenValidation (#1743283) sur pcc-192-0-2-1 a besoin d'une validation.
 Id d'opération : 1743283.
@@ -167,7 +167,7 @@ Configurez alors le KMS dans vSphere en vous aidant du guide suivant :
 
 Après avoir effectué les démarches de sécurisation de l'infrastructure, vous devez finaliser l'activation SecNumCloud.
 
-Pour cela il faut lancer l'opération via le call d'API suivant :
+Pour cela, il faut lancer l'opération via le call d'API suivant :
 
 > [!api]
 >
@@ -190,7 +190,7 @@ Retour (tronqué) :
 }
 ```
 
-Vous allez obtenir une tache que vous pouvez suivre à l'aide de son **taskId** via le call d'API suivant :
+Vous allez obtenir une tâche que vous pouvez suivre à l'aide de son **taskId** via le call d'API suivant :
 
 > [!api]
 >
@@ -202,20 +202,18 @@ En spécifiant :
 - {serviceName} : le nom du service (exemple: pcc-192-0-2-1)
 - {taskId} : le numéro de la tache (exemple: 4091062)
 
-Une fois celle-ci terminé, vous pouvez contrôler qu'il ne reste pas d'action à faire via le call d'API suivant :
+Une fois celle-ci terminée, vous pouvez contrôler qu'il ne reste pas d'action à faire via le call d'API suivant :
 
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/securityOptions/pendingOptions
 >
 
-Une liste vide en retour, comme ci-dessous :
+Une liste vide en retour, comme ci-dessous, vous confirme que l'ensemble des actions ont été faites sur l'environnement et que celui est pleinement opérationnel :
 
-```
+```console
 [ ]
 ```
-
-Vous confirme que l'ensemble des actions ont été faites sur l'environnement et que celui est pleinement opérationnel.
 
 ## Aller plus loin
 
