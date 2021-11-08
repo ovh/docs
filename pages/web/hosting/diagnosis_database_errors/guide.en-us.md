@@ -22,9 +22,9 @@ Your database usage may result in anomalies on your website or error messages in
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- an OVHcloud database service: [Web Cloud](https://www.ovh.com/world/web-hosting/sql-options.xml) or [Private SQL](../getting-started-with-private-sql/)
+- an OVHcloud database service: [Web Cloud](https://www.ovhcloud.com/en/web-hosting/options/start-sql/) or [Private SQL](../getting-started-with-private-sql/)
 
 ## Instructions
 
@@ -101,7 +101,7 @@ There are three ways you can unblock your database in this situation.
 
 #### Method 1: Upgrade your subscription
 
-If you have a **Personal** or **Professional** Web Hosting plan, we recommend that you switch to the [high-performance offer](https://www.ovh.com/world/web-hosting/). This subscription change will increase the size of your database which will automatically reopen it. This method is the simplest and does not require any particular technical expertise.
+If you have a **Personal** or **Professional** Web Hosting plan, we recommend that you switch to the [high-performance offer](https://www.ovhcloud.com/en/web-hosting/). This subscription change will increase the size of your database which will automatically reopen it. This method is the simplest and does not require any particular technical expertise.
 
 > [!warning]
 >
@@ -120,7 +120,7 @@ If you are already subscribing to a **Performance** offer, refer to [method 2](#
 
 You can also migrate your data to a new database:
 
-- Order a larger [database service](https://www.ovh.com/world/web-hosting/sql-options.xml) if necessary, then [create the new database](../creating-database/);
+- Order a larger [database service](https://www.ovhcloud.com/en/web-hosting/options/start-sql/) if necessary, then [create the new database](../creating-database/);
 - Perform an [export of your data](../web_hosting_database_export_guide/), then [import your data](../web_hosting_guide_to_importing_a_mysql_database/) in the new database;
 - Integrate the credentials of the new database into the [configuration file](#config_file) of your site.
 
@@ -151,7 +151,7 @@ To optimise your database, follow the instructions in our guide "[Configuring yo
 
 ### RAM overflows
 
-The following message in the `Databases`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) indicates that your [Private SQL](https://www.ovh.com/world/web-hosting/sql-options.xml) server has consumed too much resources on the OVHcloud infrastructure:
+The following message in the `Databases`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) indicates that your [Private SQL](https://www.ovhcloud.com/en/web-hosting/options/start-sql/) server has consumed too much resources on the OVHcloud infrastructure:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
@@ -184,7 +184,7 @@ If necessary, contact our [user community](https://community.ovh.com/en/) or [OV
 
 > [!success]
 >
-> You cannot have a "**trigger**" in your database’s import script on OVHcloud shared hosting servers. In this situation, import your database to a [Private SQL server](https://www.ovh.com/world/web-hosting/sql-options.xml).
+> You cannot have a "**trigger**" in your database’s import script on OVHcloud shared hosting servers. In this situation, import your database to a [Private SQL server](https://www.ovhcloud.com/en/web-hosting/options/start-sql/).
 >
 
 The following query is also not allowed:
@@ -237,7 +237,7 @@ In this situation, [check the credentials entered](../connecting-to-database-on-
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
 >
 
-The maximum number of active connections for databases delivered with a shared hosting ([Start SQL](https://www.ovh.com/world/web-hosting/sql-options.xml)) is **30**.
+The maximum number of active connections for databases delivered with a shared hosting ([Start SQL](https://www.ovhcloud.com/en/web-hosting/options/start-sql/)) is **30**.
 
 This number increases to **200** for the [Private SQL service](../getting-started-with-private-sql/). (This setting can be modified in the `Configuration`{.action} section of your database service.)
 

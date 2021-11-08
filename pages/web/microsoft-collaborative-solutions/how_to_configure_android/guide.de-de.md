@@ -16,7 +16,7 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 
 ## Voraussetzungen
 
-- Sie besitzen ein [Exchange](https://www.ovh.de/emails/){.external} Angebot.
+- Sie besitzen ein [Exchange](https://www.ovhcloud.com/de/emails/){.external} Angebot.
 - Die Gmail-App ist auf Ihrem Gerät installiert. Sie können diese über den Google Play Store installieren.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
@@ -66,7 +66,7 @@ Sie können eine Test-E-Mail versenden, um zu überprüfen, dass der Account kor
 
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
-Eine OVH Webanwendung mit [kollaborativen Funktionen](https://www.ovh.de/emails/){.external} ist verfügbar unter [https://www.ovh.de/mail/](https://www.ovh.de/mail/){.external}. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+Eine OVH Webanwendung mit [kollaborativen Funktionen](https://www.ovhcloud.com/de/emails/){.external} ist verfügbar unter [https://www.ovh.de/mail/](https://www.ovh.de/mail/){.external}. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 ## Weiterführende Informationen
 

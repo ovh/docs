@@ -17,7 +17,7 @@ Leer hoe u een E-mail Pro-account kunt configureren op een iPhone of iPad, via d
 
 ## Vereisten
 
-- U moet beschikken over [E-mail Pro](https://www.ovh.nl/emails/email-pro/){.external}.
+- U moet beschikken over [E-mail Pro](https://www.ovhcloud.com/nl/emails/email-pro/){.external}.
 - Er moet een Mail-applicatie op uw apparaat zijn geïnstalleerd.
 - U moet beschikken over de inloggegevens voor het e-mailadres waarvan u de instellingen wilt bewerken.
 

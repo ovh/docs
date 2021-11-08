@@ -28,7 +28,7 @@ Er zijn enorm veel verschillende websites op het internet. Of u nu een blog of e
 
 Voor een succesvol project is het cruciaal om eerst een duidelijk beeld te hebben van uw doelstelling.   Wat wilt u met uw website bereiken?  Hoe kan het worden gepubliceerd?  Er zijn verschillende manieren om uw project online te zetten met uw OVH webhostingplan.
 
-- **Onze 1-klik modules**: deze bieden u een kant-en-klaar websitesjabloon die u kunt aanpassen met een verscheidenheid aan thema's, teksten, en nog veel meer. OVH biedt vier 1-klik modules die compatibel zijn met onze infrastructuur, op de pagina [Uw website maken met modules met 1 klik](https://www.ovh.nl/shared-hosting/website/){.external}.
+- **Onze 1-klik modules**: deze bieden u een kant-en-klaar websitesjabloon die u kunt aanpassen met een verscheidenheid aan thema's, teksten, en nog veel meer. OVH biedt vier 1-klik modules die compatibel zijn met onze infrastructuur, op de pagina [Uw website maken met modules met 1 klik](https://www.ovhcloud.com/nl/web-hosting/uc-website/){.external}.
 
 - **Gebruik van een kant-en-klare website die u handmatig installeert**: deze oplossing biedt u het voordeel van een kant-en-klare websitestructuur die u kunt aanpassen (thema's, tekst, enz.), welke u zelf installeert op uw OVH webhostingruimte.
 
@@ -74,7 +74,7 @@ Wanneer u over alle elementen beschikt, heeft u drie verschillende opties om ver
 
 - **Gebruik van FTP-compatibele software**: U moet compatibele software op uw computer installeren (zoals FileZilla); Omdat OVH het softwarepakket dat u hebt geïnstalleerd niet heeft gemaakt, dient u contact op te nemen met de uitgever van de software als u problemen ondervindt bij het gebruik ervan.
 
-- **Gebruik SSH Access**: U moet commando's vanaf een terminal gebruiken om te communiceren met uw opslagruimte. Er is meer geavanceerde kennis en een specifiek [OVH hostingplan](https://www.ovh.nl/shared-hosting/){.external} vereist om dit type toegang te gebruiken.
+- **Gebruik SSH Access**: U moet commando's vanaf een terminal gebruiken om te communiceren met uw opslagruimte. Er is meer geavanceerde kennis en een specifiek [OVH hostingplan](https://www.ovhcloud.com/nl/web-hosting/){.external} vereist om dit type toegang te gebruiken.
 
 #### 3. De bestanden uploaden naar de opslagruimte
 

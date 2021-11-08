@@ -17,8 +17,8 @@ Deze handleiding behandelt de stappen voor het hosten van meerdere websites op u
 
 ## Vereisten
 
-- U moet beschikken over een [OVH webhostingplan](https://www.ovh.nl/shared-hosting/){.external}.
-- U moet beschikken over meerdere [domeinnamen](https://www.ovh.nl/domains/){.external}.
+- U moet beschikken over een [OVH webhostingplan](https://www.ovhcloud.com/nl/web-hosting/){.external}.
+- U moet beschikken over meerdere [domeinnamen](https://www.ovhcloud.com/nl/domains/){.external}.
 - U moet het recht hebben om de configuratie van uw domeinnaam te wijzigen (via de DNS-zone).
 - U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
@@ -58,18 +58,18 @@ Als de domeinnaam niet in de lijst staat, wordt deze als extern beschouwd (naar 
 > Deze stap is alleen van toepassing als u ‘Een OVH-geregistreerd domein toevoegen’ hebt geselecteerd. Voor een niet-OVH-geregistreerde domeinnaam volgt u de handleiding van Stap 3.2: [Toevoegen van een niet-OVH-geregistreerde domeinnaam](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/#stap-32-toevoegen-van-een-externe-domeinnaam){.external}.
 >
 
-Pas nu de opties voor het toevoegen van het domein aan. Afhankelijk van het door u gekozen [OVH-webhostingsplan](https://www.ovh.nl/shared-hosting/){.external}, zijn sommige van de voorgestelde opties mogelijk niet beschikbaar.
+Pas nu de opties voor het toevoegen van het domein aan. Afhankelijk van het door u gekozen [OVH-webhostingsplan](https://www.ovhcloud.com/nl/web-hosting/){.external}, zijn sommige van de voorgestelde opties mogelijk niet beschikbaar.
 
 |Informatie|Omschrijving|
 |---|---|
 |Domein|Het door u geselecteerde domein wordt standaard automatisch ingevoerd. U kunt nu subdomeinen invoeren die zijn gerelateerd aan het domein dat u hebt geselecteerd (bijvoorbeeld blog.mypersonaldomain.ovh) en tegelijkertijd het www-subdomein maken (bijvoorbeeld www.mypersonaldomain.ovh). Dit domein is het webadres van de website die u online wilt zetten.|
 |Root directory|Stel de map in waar het domein wordt gehost op uw opslagruimte. In deze ruimte moeten de websitebestanden online worden gezet. De directory "blog" kan bijvoorbeeld worden gemaakt voor blog.mypersonaldomain.ovh. Als de map niet bestaat, wordt deze automatisch gemaakt.|
-|Activeer IPv6|Schakelt IPv6-protocol op het geselecteerde domein in. Lees meer op [onze IP-pagina](https://www.ovh.nl/shared-hosting/ip.xml){.external}.|
-|SSL|Biedt u een beveiligde verbinding (HTTPS: //) op het geselecteerde domein. Lees meer op [onze SSL-pagina](https://www.ovh.nl/ssl/){.external}. Door SSL en het CDN (Content Delivery Network) in te schakelen, kunt u ook profiteren van het **HTTP2**-protocol.|
-|Activeer de CDN|Schakelt het CDN in (dat de statische elementen van uw website, bijvoorbeeld afbeeldingen, repliceert en in de cache opslaat) op het geselecteerde domein. Lees meer op [onze CDN-pagina](https://www.ovh.nl/shared-hosting/cdn.xml){.external}. Door SSL en het CDN (Content Delivery Network) in te schakelen, kunt u ook profiteren van het **HTTP2**-protocol.|
-|Geogelokaliseerd IP|Biedt u een geogelokaliseerd IP-adres (uit een landenlijst) voor het geselecteerde domein. Lees meer op [onze IP-pagina](https://www.ovh.nl/shared-hosting/ip.xml){.external}.|
-|Activeer Firewall Network|Schakelt een firewall in (queryanalyse) voor het geselecteerde domein. Lees meer op [onze Mod Security-pagina](https://www.ovh.nl/shared-hosting/mod_security.xml){.external}.|
-|Afzonderlijke logs|Activeert een nieuwe ruimte voor logs op het geselecteerde domein. U moet een domeinnaam kiezen in de lijst. Het geselecteerde domein wordt gebruikt als toegangsnaam voor deze nieuwe ruimte. Lees meer op [onze Statistieken-pagina](https://www.ovh.nl/shared-hosting/website_statistiek.xml){.external}.|
+|Activeer IPv6|Schakelt IPv6-protocol op het geselecteerde domein in. Lees meer op [onze IP-pagina](https://www.ovhcloud.com/nl/web-hosting/options/){.external}.|
+|SSL|Biedt u een beveiligde verbinding (HTTPS: //) op het geselecteerde domein. Lees meer op [onze SSL-pagina](https://www.ovhcloud.com/nl/web-hosting/options/ssl/){.external}. Door SSL en het CDN (Content Delivery Network) in te schakelen, kunt u ook profiteren van het **HTTP2**-protocol.|
+|Activeer de CDN|Schakelt het CDN in (dat de statische elementen van uw website, bijvoorbeeld afbeeldingen, repliceert en in de cache opslaat) op het geselecteerde domein. Lees meer op [onze CDN-pagina](https://www.ovhcloud.com/nl/web-hosting/options/cdn/){.external}. Door SSL en het CDN (Content Delivery Network) in te schakelen, kunt u ook profiteren van het **HTTP2**-protocol.|
+|Geogelokaliseerd IP|Biedt u een geogelokaliseerd IP-adres (uit een landenlijst) voor het geselecteerde domein. Lees meer op [onze IP-pagina](https://www.ovhcloud.com/nl/web-hosting/options/){.external}.|
+|Activeer Firewall Network|Schakelt een firewall in (queryanalyse) voor het geselecteerde domein. Lees meer op [onze Mod Security-pagina](https://www.ovhcloud.com/nl/web-hosting/options/){.external}.|
+|Afzonderlijke logs|Activeert een nieuwe ruimte voor logs op het geselecteerde domein. U moet een domeinnaam kiezen in de lijst. Het geselecteerde domein wordt gebruikt als toegangsnaam voor deze nieuwe ruimte. Lees meer op [onze Statistieken-pagina](https://www.ovhcloud.com/nl/web-hosting/uc-website-traffic-analysis/){.external}.|
 
 Nadat u deze informatie hebt ingevoerd, klikt u op `Volgende`{.action}. Controleer vervolgens de informatie in het weergegeven overzicht.
 
@@ -97,7 +97,7 @@ Pas nu de opties voor het toevoegen van het domein aan. Sommige opties in uw OVH
 |---|---|
 |Domein|Voer de domeinnaam in die u wilt overdragen. Indien nodig kunt u ook een subdomein toevoegen (bijvoorbeeld: blog.mypersonaldomain.ovh) en tegelijkertijd het bijbehorende www-subdomein maken (bijvoorbeeld: www.mypersonaldomain.ovh). Dit domein is het webadres van de website die u online wilt zetten. Houd er rekening mee dat u de domeinconfiguratie (de DNS-zone) moet kunnen wijzigen zodat de toevoeging kan worden voltooid.|
 |Root directory|Stel de map in waar het domein wordt gehost op uw opslagruimte. In deze ruimte moeten de websitebestanden online worden gezet. De directory "blog" kan bijvoorbeeld worden gemaakt voor blog.mypersonaldomain.ovh. Als de map niet bestaat, wordt deze automatisch gemaakt.|
-|Activeer IPv6|Schakelt IPv6-protocol op het geselecteerde domein in. Lees meer op [onze IP-pagina](https://www.ovh.nl/shared-hosting/ip.xml){.external}.|
+|Activeer IPv6|Schakelt IPv6-protocol op het geselecteerde domein in. Lees meer op [onze IP-pagina](https://www.ovhcloud.com/nl/web-hosting/options/){.external}.|
 
 Nadat u deze informatie hebt ingevoerd, klikt u op `Volgende`{.action}. Controleer vervolgens de informatie in het weergegeven overzicht.
 
@@ -133,7 +133,7 @@ Als u uw website echter handmatig wilt installeren, verzamelt u alle gerelateerd
 >
 > Als u meerdere websites wilt toevoegen, moet u deze stap een aantal keren uitvoeren.
 >
-> We raden u aan voorzichtig te zijn met het aantal websites dat u host op uw webhostingplan. Hoe meer websites u host, hoe hoger de vraag naar uw toegewezen resources. Onze [webhostingpagina](https://www.ovh.nl/shared-hosting/){.external} toont het aantal websites dat u op uw plan kunt hosten.
+> We raden u aan voorzichtig te zijn met het aantal websites dat u host op uw webhostingplan. Hoe meer websites u host, hoe hoger de vraag naar uw toegewezen resources. Onze [webhostingpagina](https://www.ovhcloud.com/nl/web-hosting/){.external} toont het aantal websites dat u op uw plan kunt hosten.
 >
 
 ## Verder

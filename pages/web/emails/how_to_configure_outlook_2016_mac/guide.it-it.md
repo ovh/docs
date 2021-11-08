@@ -16,7 +16,7 @@ Scopri come configurare il tuo indirizzo email MX Plan su Outlook 2016 per Mac.
 
 ## Prerequisiti
 
-- Disporre di un indirizzo email MX Plan (ncluso in una soluzione MX Plan o in un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external})
+- Disporre di un indirizzo email MX Plan (ncluso in una soluzione MX Plan o in un piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external})
 - Aver installato l’applicazione Microsoft Outlook sul proprio Mac
 - Disporre delle credenziali associate all’account email da configurare
 
@@ -78,7 +78,7 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH propone un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external}, disponibile alla pagina [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external} e accessibile con le credenziali del tuo indirizzo email.
+OVH propone un’applicazione Web con [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}, disponibile alla pagina [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external} e accessibile con le credenziali del tuo indirizzo email.
 
 ## Per saperne di più
 

@@ -16,7 +16,7 @@ Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Ma
 
 ## Prerequisiti
 
-- Una [soluzione Web Hosting OVHcloud](https://www.ovh.it/hosting-web)
+- Una [soluzione Web Hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
 - un database disponibile tra quelli inclui nel tuo piano di hosting Web
 - Avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) 
 
@@ -42,7 +42,7 @@ Nella nuova finestra, completa i campi richiesti e poi clicca su `Seguente`{.act
 
 |Campo|Descrizione|  
 |---|---|  
-|Motore del database|Seleziona il motore che verrà utilizzato dal database (i database inclusi con gli [hosting Web OVHcloud](https://www.ovh.it/hosting-web) propongono solo il motore MySQL).|  
+|Motore del database|Seleziona il motore che verrà utilizzato dal database (i database inclusi con gli [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) propongono solo il motore MySQL).|  
 |Versione del database|Seleziona la versione utilizzata dal motore del database  (verifica la compatibilità del tuo sito con l’opzione scelta).|  
 |Tipo di database|Seleziona la capacità del database, cioè lo spazio a disposizione per salvare i dati.|   
 
@@ -106,7 +106,7 @@ Per verificare gli Snapshot disponibili e la relativa data di creazione, clicca 
 
 **Troppe connessioni**
 
-I database di Web Hosting hanno un limite di 30 connessioni simultanee (variabile del sistema *max_connections*). È necessario ottimizzare le richieste SQL per prevenire questo tipo di errore. Se il problema persiste, è necessario prendere in considerazione altre misure, ad esempio passare a un database SQL privato o effettuare l’[upgrade di un piano di hosting](https://www.ovh.it/hosting-web/quale_piano_di_hosting_scegliere.xml). 
+I database di Web Hosting hanno un limite di 30 connessioni simultanee (variabile del sistema *max_connections*). È necessario ottimizzare le richieste SQL per prevenire questo tipo di errore. Se il problema persiste, è necessario prendere in considerazione altre misure, ad esempio passare a un database SQL privato o effettuare l’[upgrade di un piano di hosting](https://www.ovhcloud.com/it/web-hosting/uc-best-web-hosting/). 
 
 **Errori di connessione o “not found”**
 

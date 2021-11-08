@@ -30,8 +30,8 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 
 ## Voraussetzungen
 
-- Sie haben eine "**Quell-Plattform**" mit bereits eingerichteten [Exchange](https://www.ovh.de/emails/hosted-exchange/){.external} oder [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} Accounts.
-- Sie verfügen über eine "**Ziel-Plattform**": [Exchange](https://www.ovh.de/emails/hosted-exchange/){.external}, [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} oder MX Plan (über das MX Plan Angebot oder in einem [OVHcloud Webhosting](https://www.ovh.de/hosting/){.external} enthalten). Diese Plattform muss unkonfigurierte oder verfügbare Accounts haben, um die zu migrierenden E-Mail-Adressen zu empfangen.
+- Sie haben eine "**Quell-Plattform**" mit bereits eingerichteten [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external} oder [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/){.external} Accounts.
+- Sie verfügen über eine "**Ziel-Plattform**": [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external}, [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/){.external} oder MX Plan (über das MX Plan Angebot oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} enthalten). Diese Plattform muss unkonfigurierte oder verfügbare Accounts haben, um die zu migrierenden E-Mail-Adressen zu empfangen.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

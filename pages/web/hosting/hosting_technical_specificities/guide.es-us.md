@@ -14,7 +14,7 @@ section: 'Configuración del alojamiento'
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](https://www.ovh.com/world/es/hosting/){.external} compatible.
+- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external} compatible.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
@@ -36,7 +36,7 @@ section: 'Configuración del alojamiento'
 
 ### Conexiones simultáneas a la base de datos
 
-- En los planes de hosting (bases de datos compartidas), existe un límite de 30 conexiones simultáneas por base de datos (200 con la base de datos privada incluida). Consulte los [detalles de nuestros planes de hosting](https://www.ovh.com/world/es/hosting/) para comprobar las opciones disponibles en cada plan de alojamiento web.
+- En los planes de hosting (bases de datos compartidas), existe un límite de 30 conexiones simultáneas por base de datos (200 con la base de datos privada incluida). Consulte los [detalles de nuestros planes de hosting](https://www.ovhcloud.com/es/web-hosting/) para comprobar las opciones disponibles en cada plan de alojamiento web.
 
 - También puede contratar bases de datos **SQL Privado** adicionales, que tienen opciones de personalización:
 
@@ -44,7 +44,7 @@ section: 'Configuración del alojamiento'
 
     - *max_user_connections*: 50 por defecto, con posibilidad de pasar a 200
 
-Para saber más, consulte los detalles de nuestros [Planes de hosting](https://www.ovh.com/world/es/hosting/) y [nuestra guía](../primeros-pasos-con-sql-privado/).
+Para saber más, consulte los detalles de nuestros [Planes de hosting](https://www.ovhcloud.com/es/web-hosting/) y [nuestra guía](../primeros-pasos-con-sql-privado/).
 
 #### Conexiones desde un servidor externo
 
@@ -65,7 +65,7 @@ Para saber más sobre la gestión de las bases de datos, consulte la guía [Crea
 
 ### PHP
 
-- Le recomendamos que consulte nuestros [planes de hosting](https://www.ovh.com/world/es/hosting/) para asegurarse de que el alojamiento web que desea contratar sea compatible con sus necesidades.
+- Le recomendamos que consulte nuestros [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) para asegurarse de que el alojamiento web que desea contratar sea compatible con sus necesidades.
 
 - Puede verificar los detalles de la configuración de su alojamiento web. Para ello, consulte la sección [« Información técnica de su alojamiento web »](./#informacion-tecnica-de-su-alojamiento-web) al final de esta guía. 
 

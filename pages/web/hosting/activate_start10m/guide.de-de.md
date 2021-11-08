@@ -13,10 +13,10 @@ section: 'Erste Schritte'
 
 ## Ziel
 
-Mit dem [Start 10M](https://www.ovh.de/domains/angebot_hosting_start10m.xml){.external} bietet Ihnen OVHcloud ein Webhosting mit 10 MB und einen E-Mail-Account mit 5 GB Speicherplatz. In dieser Anleitung erfahren Sie, wie Sie das Start 10M Hosting für einen [Domainnamen](https://www.ovh.de/domains/){.external} aktivieren.
+Mit dem [Start 10M](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external} bietet Ihnen OVHcloud ein Webhosting mit 10 MB und einen E-Mail-Account mit 5 GB Speicherplatz. In dieser Anleitung erfahren Sie, wie Sie das Start 10M Hosting für einen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external} aktivieren.
 
 > [!warning]
-> Dieses kostenlose Hosting mit 10 MB ist für eine einfache Präsentationsseite **ohne Datenbanknutzung** geeignet. Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank benötigt, wie etwa ein CMS (Worpdress, Joomla, PrestaShop, Drupal, etc.), bestellen Sie bitte eines unserer [Webhosting-Angebote direkt auf der Website](https://www.ovh.de/hosting/) oder im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+> Dieses kostenlose Hosting mit 10 MB ist für eine einfache Präsentationsseite **ohne Datenbanknutzung** geeignet. Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank benötigt, wie etwa ein CMS (Worpdress, Joomla, PrestaShop, Drupal, etc.), bestellen Sie bitte eines unserer [Webhosting-Angebote direkt auf der Website](https://www.ovhcloud.com/de/web-hosting/) oder im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 >
 
 **Diese Anleitung erklärt, wie Sie Ihr kostenloses Start 10M Hosting im OVHcloud Kundencenter aktivieren.**
@@ -24,7 +24,7 @@ Mit dem [Start 10M](https://www.ovh.de/domains/angebot_hosting_start10m.xml){.ex
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über einen [Domainnamen](https://www.ovh.de/domains/){.external} in Ihrem Kunden-Account, der noch keinem Hosting zugeordnet ist.
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external} in Ihrem Kunden-Account, der noch keinem Hosting zugeordnet ist.
 
 ## In der praktischen Anwendung
 
@@ -44,7 +44,7 @@ Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen Angebo
 | DNS MX Eintrag 	| Die E-Mail-Server von OVHcloud werden für die Domain eingetragen. 	|
 
 > [!primary]
-> Zur Erinnerung: Beim kostenlosen Start 10M Hosting sind keine Datenbanken inklusive. Wenn Ihr Projekt eine solche benötigt, wählen Sie stattdessen ein passendes [Webhosting](https://www.ovh.de/hosting/), das immer mindestens eine Datenbank enthält.
+> Zur Erinnerung: Beim kostenlosen Start 10M Hosting sind keine Datenbanken inklusive. Wenn Ihr Projekt eine solche benötigt, wählen Sie stattdessen ein passendes [Webhosting](https://www.ovhcloud.com/de/web-hosting/), das immer mindestens eine Datenbank enthält.
 
 **Schritt 3** erinnert Sie an die Preisgestaltung des Angebots. In **Schritt 4** müssen Sie die Verträge annehmen und Ihre Bestellung bestätigen.
 

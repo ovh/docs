@@ -41,7 +41,7 @@ Terminata la verifica, decidi se attivare il numero minimo di record per la zona
 |Attivare il numero minimo di record?|Descrizione|
 |---|---|
 |Sì|Seleziona questa opzione per personalizzare in autonomia la zona DNS.|
-|No|Seleziona questa opzione se pensi di utilizzare servizi OVH come un [hosting web](https://www.ovh.it/hosting-web/){.external}, dato che la zona è preconfigurata a tal fine.|
+|No|Seleziona questa opzione se pensi di utilizzare servizi OVH come un [hosting web](https://www.ovhcloud.com/it/web-hosting/){.external}, dato che la zona è preconfigurata a tal fine.|
 
 ![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 

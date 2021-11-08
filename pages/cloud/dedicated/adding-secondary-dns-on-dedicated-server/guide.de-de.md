@@ -21,7 +21,7 @@ Wenn Sie Ihren dedizierten Server als DNS-Server konfigurieren, können Sie den 
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
-- Sie haben adminstrativen Zugriff auf eine [Domain](https://www.ovh.de/domains/).
+- Sie haben adminstrativen Zugriff auf eine [Domain](https://www.ovhcloud.com/de/domains/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]

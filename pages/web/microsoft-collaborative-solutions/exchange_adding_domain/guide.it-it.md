@@ -16,7 +16,7 @@ Aggiungere uno o più domini su Exchange è un’operazione fondamentale per uti
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Exchange](https://www.ovh.it/emails/){.external}
+- Disporre di una [soluzione Exchange](https://www.ovhcloud.com/it/emails/){.external}
 - Aver registrato uno o più domini
 - Poter modificare la configurazione del dominio (zona DNS)
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
@@ -108,7 +108,7 @@ Ricordati che ogni indirizzo creato nella stessa directory del tuo Exchange potr
 
 Una volta completata la configurazione, puoi iniziare a utilizzare i tuoi account. OVH mette a disposizione la webmail **Outlook Web Application (OWA)**, disponibile all’indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external}. Per un utilizzo ottimale del tuo account Exchange, assicurati che il client di posta scelto sia compatibile con il servizio. Per configurare il tuo indirizzo email su un client di posta o un dispositivo come smartphone o tablet o se hai bisogno di assistenza sulle funzionalità di Exchange, consulta le nostre guide relative alle [soluzioni collaborative Microsoft](https://docs.ovh.com/it/microsoft-collaborative-solutions/){.external}.
 
-Dal sito OVH è inoltre possibile acquistare licenze Outlook, direttamente nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, e licenze Office 365, disponibili alla pagina [https://www.ovh.it/office-365/](https://www.ovh.it/office-365/){.external}. Per utilizzare un client di posta Outlook o una o più applicazioni della suite Office, ti consigliamo di optare per una di queste soluzioni.
+Dal sito OVH è inoltre possibile acquistare licenze Outlook, direttamente nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, e licenze Office 365, disponibili alla pagina [https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/){.external}. Per utilizzare un client di posta Outlook o una o più applicazioni della suite Office, ti consigliamo di optare per una di queste soluzioni.
 
 ## Per saperne di più
 

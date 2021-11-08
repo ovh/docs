@@ -17,7 +17,7 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovh.com/world/es/hosting/) con acceso SSH.
+- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) con acceso SSH.
 - Disponer de las claves necesarias para conectarse por SSH al espacio de almacenamiento.
 - Conectarse al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `WebCloud`{.action}.
 
@@ -31,7 +31,7 @@ En la columna «SSH» podrá consultar si el usuario SSH (o «Login SSH») dispo
 
 ![usessh](images/use-ssh-step1.png){.thumbnail}
 
-Para activarlo, haga clic en el botón `(...)`{.action} situado al final de la línea correspondiente al usuario y seleccione `Editar`{.action}. Aparecerá una ventana en la que podrá activar el acceso SSH. Si no tiene la opción de activarlo, asegúrese de que su [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/) dispone de un acceso SSH.
+Para activarlo, haga clic en el botón `(...)`{.action} situado al final de la línea correspondiente al usuario y seleccione `Editar`{.action}. Aparecerá una ventana en la que podrá activar el acceso SSH. Si no tiene la opción de activarlo, asegúrese de que su [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) dispone de un acceso SSH.
 
 ### 2\. Obtener los datos de conexión
 

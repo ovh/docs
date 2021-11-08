@@ -19,7 +19,7 @@ In dieser Anleitung wird beschrieben, wie Sie mit OMM die verschiedenen Elemente
 
 ## Voraussetzungen
 
-- Sie haben einen E-Mail-Dienst bei OVHcloud ([Exchange](https://www.ovh.de/emails/hosted-exchange), [E-Mail Pro](https://www.ovh.de/emails/email-pro) oder MX Plan, aus dem MX Plan Angebot oder als Teil eines [OVHcloud Webhostings](https://www.ovh.de/hosting)).
+- Sie haben einen E-Mail-Dienst bei OVHcloud ([Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/), [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) oder MX Plan, aus dem MX Plan Angebot oder als Teil eines [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/)).
 - Sie verfügen über die Login-Daten für die E-Mail-Accounts, die Sie migrieren möchten (Quell-Accounts).
 - Sie verfügen über die Login-Daten der OVHcloud E-Mail-Accounts, auf die Sie die Inhalte übertragen möchten (Ziel-Accounts).
 

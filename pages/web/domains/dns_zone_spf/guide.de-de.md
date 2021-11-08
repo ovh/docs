@@ -51,9 +51,9 @@ Stellen Sie sicher, dass Sie bei der Konfiguration eines SPF alle Absenderquelle
 
 Die OVHcloud Konfiguration gilt für diese Dienste:
 
-- MX-Plan, autonom oder in einem [OVHcloud Webhosting](https://www.ovh.de/hosting/) enthalten
-- [E-Mail Pro](https://www.ovh.de/emails/email-pro/)
-- [Hosted Exchange](https://www.ovh.de/emails/hosted-exchange/)
+- MX-Plan, autonom oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten
+- [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/)
+- [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/)
 
 Wenn Sie eine dieser Lösungen bestellen, empfehlen wir Ihnen, einen SPF-Eintrag mit den OVHcloud Informationen in der DNS-Zone Ihrer Domain zu verwenden. Er sieht so aus:
 

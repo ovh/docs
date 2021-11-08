@@ -29,7 +29,7 @@ Per funzionare correttamente, ciascun server salva nella memoria cache una parte
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovh.it/hosting-web/){.external} attivo
+- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
 
 ## Procedura
 

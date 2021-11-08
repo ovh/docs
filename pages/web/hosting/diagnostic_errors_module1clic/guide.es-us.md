@@ -27,7 +27,7 @@ La creación de un [Módulo en 1 clic](../modulos-en-un-clic/) en modo simple o 
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting](https://www.ovh.com/world/es/hosting/) compatible.
+- Tener contratado un plan de [hosting](https://www.ovhcloud.com/es/web-hosting/) compatible.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Haber utilizado la funcionalidad [Módulo en 1 clic](../modulos-en-un-clic/) para crear un nuevo sitio web.
 
@@ -48,14 +48,14 @@ Si aparece este mensaje al iniciar la instalación del módulo, no es posible cr
 
 > [!primary]
 >
-> Consulte nuestra comparativa de los distintos [planes de hosting](https://www.ovh.com/world/es/hosting/).
+> Consulte nuestra comparativa de los distintos [planes de hosting](https://www.ovhcloud.com/es/web-hosting/).
 >
 
 En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y haga clic en `Cambiar de plan` en la sección `Suscripción` - `Producto`.
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Los planes [Hosting Profesional](https://www.ovh.com/world/es/hosting/hosting-profesional.xml) y [Hosting Performance](https://www.ovh.com/world/es/hosting/hosting-performance.xml) permiten crear hasta tres módulos en 1 clic adicional. Los planes **Hosting Performance** también le permitirán activar gratis un [servidor SQL privado](https://www.ovh.com/world/es/hosting/opciones-sql.xml).
+Los planes [Hosting Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/) y [Hosting Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/) permiten crear hasta tres módulos en 1 clic adicional. Los planes **Hosting Performance** también le permitirán activar gratis un [servidor SQL privado](https://www.ovhcloud.com/es/web-hosting/options/start-sql/).
 
 #### Solución n°2: eliminar una base de datos no utilizada <a name="delete-the-database"></a>
 
@@ -76,14 +76,14 @@ En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager
 
 > [!primary]
 >
-> Consulte nuestra comparativa de los distintos [productos de bases de datos](https://www.ovh.com/world/es/hosting/opciones-sql.xml).
+> Consulte nuestra comparativa de los distintos [productos de bases de datos](https://www.ovhcloud.com/es/web-hosting/options/start-sql/).
 >
 
 #### Solución nº4: instalar el módulo en una base de datos ya utilizada
 
 Para instalar su módulo en una base de datos ya utilizada, deberá utilizar el [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) de instalación de un nuevo **módulo en 1 clic**.
 
-Para consultar las claves de la base de datos, consulte nuestras [FAQ](https://www.ovh.es/hosting/faq/).
+Para consultar las claves de la base de datos, consulte nuestras [FAQ](https://www.ovhcloud.com/es-es/web-hosting/).
 
 ### "El directorio de instalación no está vacío"
 
@@ -105,7 +105,7 @@ También puede conectarse al alojamiento por [FTP](../conexion-espacio-almacenam
 
 Una vez que haya iniciado la instalación del módulo en modo avanzado, recibirá un mensaje de correo electrónico indicándole que el módulo no puede conectarse a la base de datos indicada. 
 
-Por lo tanto, debe verificar las claves de la base de datos. Para localizarlos, consulte nuestras [FAQ](https://www.ovh.es/hosting/faq/).
+Por lo tanto, debe verificar las claves de la base de datos. Para localizarlos, consulte nuestras [FAQ](https://www.ovhcloud.com/es-es/web-hosting/).
 
 A continuación, elimine el módulo en la pestaña `Módulos en 1 clic`{.action}:
 

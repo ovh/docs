@@ -27,9 +27,9 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web](https://www.ovh.it/hosting-web/) attiva
+- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Utilizzare una delle nostre offerte di database: [Web Cloud](https://www.ovh.it/hosting-web/opzioni-sql.xml) o [SQL privato](.../iniziare-a-utilizzare-sql-privato/)
+- Utilizzare una delle nostre offerte di database: [Web Cloud](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [SQL privato](.../iniziare-a-utilizzare-sql-privato/)
 
 ## Procedura
 
@@ -106,7 +106,7 @@ Tre metodi ti permettono di sbloccare il tuo database:
 
 ##### Metodo 1: attiva il tuo abbonamento su un'offerta superiore
 
-Se disponi di una formula **Personale2014** o **Pro2014***, ti consigliamo di passare all'[offerta di hosting superiore](https://www.ovh.it/hosting-web/). La modifica dell'abbonamento aumenterà la dimensione del tuo database e la riaprirà automaticamente. Si tratta del metodo più semplice e non richiede particolari competenze tecniche.
+Se disponi di una formula **Personale2014** o **Pro2014***, ti consigliamo di passare all'[offerta di hosting superiore](https://www.ovhcloud.com/it/web-hosting/). La modifica dell'abbonamento aumenterà la dimensione del tuo database e la riaprirà automaticamente. Si tratta del metodo più semplice e non richiede particolari competenze tecniche.
 
 > [!warning]
 >
@@ -125,7 +125,7 @@ Se utilizzi un'offerta **Performance**, consulta la sezione [metodo 2](#methode2
 
 Puoi anche migrare i tuoi dati su un nuovo database:
 
-- Ordinare, se necessario, una [database](https://www.ovh.it/hosting-web/opzioni-sql.xml) di dimensione superiore e avviarne la [creazione](.../creare-database/);
+- Ordinare, se necessario, una [database](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) di dimensione superiore e avviarne la [creazione](.../creare-database/);
 - Effettua un [export dei tuoi dati](../web_hosting_come_esportare_un_database/), poi [importali](.../web_hosting_come_importare_un_database_mysql/) nel nuovo database;
 - Inserisci gli identificativi del nuovo database nel [file di configurazione](#config_file) del tuo sito.
 
@@ -155,7 +155,7 @@ Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configu
 
 Superamento della capacità della RAM
 
-Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) è riportato che il tuo server [SQL Privato](https://www.ovh.it/hosting-web/opzioni-sql.xml) ha consumato troppe risorse sull'infrastruttura OVHcloud:
+Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) è riportato che il tuo server [SQL Privato](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) ha consumato troppe risorse sull'infrastruttura OVHcloud:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
@@ -185,7 +185,7 @@ Questo messaggio di errore significa che il database che stai cercando di import
 
 > [!success]
 >
-> Avere un "**trigger**" nello script di importazione del tuo database non è autorizzato sui server di hosting condiviso OVHcloud. importa il tuo database su un server [SQL privato](https://www.ovh.it/hosting-web/opzioni-sql.xml).
+> Avere un "**trigger**" nello script di importazione del tuo database non è autorizzato sui server di hosting condiviso OVHcloud. importa il tuo database su un server [SQL privato](https://www.ovhcloud.com/it/web-hosting/options/start-sql/).
 >
 
 Inoltre, la seguente richiesta non è autorizzata:
@@ -238,7 +238,7 @@ In questa situazione, [verifica le credenziali inserite](.../connessione-databas
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
 >
 
-Il numero massimo di connessioni attive per i database consegnati con hosting condivisi ([StartSQL](https://www.ovh.it/hosting-web/opzioni-sql.xml) è di **30**.
+Il numero massimo di connessioni attive per i database consegnati con hosting condivisi ([StartSQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) è di **30**.
 
 Questo numero è di **200** per i database dei server [SQL privato](.../iniziare-a-utilizzare-sql-privato/). (Questo parametro è modificabile nella sezione `Configuration`{.action} del tuo server database).
 

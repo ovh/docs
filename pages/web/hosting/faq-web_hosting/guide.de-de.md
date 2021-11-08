@@ -44,11 +44,11 @@ Sobald Sie in Ihrem Kundencenter eingeloggt sind, können Sie die verschiedenen 
 
 Um Ihre Website bei OVHcloud online zu stellen, benötigen Sie einen Domainnamen, der der Adresse entspricht, über die Ihre Website verfügbar sein wird (Beispiel: ovh.com). Darüber hinaus benötigen Sie ein Webhosting, auf dem Sie Ihre Website einrichten können. Weitere Informationen hierzu finden Sie in der folgenden Anleitung: [Eine Website auf Ihrem Webhosting online stellen](../webhosting_meine_seite_online_stellen/).
 
-**Tipps und Tricks**: Um Ihnen bei der Erstellung Ihrer Website zu helfen, stellt Ihnen OVHcloud 1-Klick-Module wie WordPress, PrestaShop, Joomla oder Drupal zur Verfügung. Diese finden Sie [hier](https://www.ovh.de/hosting/website/). Weitere Informationen finden Sie in [unserer Dokumentation](../webhosting_installation_von_webhosting-modulen/).
+**Tipps und Tricks**: Um Ihnen bei der Erstellung Ihrer Website zu helfen, stellt Ihnen OVHcloud 1-Klick-Module wie WordPress, PrestaShop, Joomla oder Drupal zur Verfügung. Diese finden Sie [hier](https://www.ovhcloud.com/de/web-hosting/uc-website/). Weitere Informationen finden Sie in [unserer Dokumentation](../webhosting_installation_von_webhosting-modulen/).
 
 ### Wie migriere ich meine Website und E-Mails zu OVHcloud? 
 
-Um Ihre Website und E-Mails zu OVHcloud zu migrieren, benötigen Sie ein [OVHcloud Webhosting Angebot](https://www.ovh.de/hosting/){.external} sowie eine [OVHcloud E-Mail Lösung](https://www.ovh.de/emails/){.external}. Anschließend können Sie sich auf dem FTP-Server Ihres Hostings einloggen, um auf diesen die Dateien Ihrer Website zu übertragen. Wenn Sie bereits über eine Datenbank verfügen, denken Sie daran, für diese ein Backup durchzuführen. 
+Um Ihre Website und E-Mails zu OVHcloud zu migrieren, benötigen Sie ein [OVHcloud Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} sowie eine [OVHcloud E-Mail Lösung](https://www.ovhcloud.com/de/emails/){.external}. Anschließend können Sie sich auf dem FTP-Server Ihres Hostings einloggen, um auf diesen die Dateien Ihrer Website zu übertragen. Wenn Sie bereits über eine Datenbank verfügen, denken Sie daran, für diese ein Backup durchzuführen. 
 
 Um Ihre E-Mails zu migrieren, müssen Ihre Accounts bei OVHcloud erneut erstellt werden. Verwenden Sie anschließend unser Migrationstool [OMM (OVH Mail Migrator)](https://omm.ovh.net/). Dieses finden Sie [hier](https://omm.ovh.net/). 
 

@@ -16,7 +16,7 @@ Wenn Sie die Sicherheit Ihres Accounts erhöhen möchten, können Sie die Zwei-F
 
 ## Voraussetzungen
 
-- Sie haben bereits einen [OVHcloud Exchange](https://www.ovh.de/emails/) Dienst eingerichtet.
+- Sie haben bereits einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/) Dienst eingerichtet.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben eine OTP-Applikation auf einem Smartphone oder Tablet mit Android oder iOS installiert.
 

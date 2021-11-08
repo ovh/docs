@@ -16,12 +16,12 @@ Im Internet gibt es viele verschiedene Websites. Mit Ihrem [OVH Webhosting](http
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot (ausgenommen Cloud Web).
+- Sie verfügen über ein [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot (ausgenommen Cloud Web).
 - Je nach der verwendeten Methode benötigen Sie Zugriff auf die Verwaltung des Webhosting Angebots über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder die nötigen Login-Daten, um sich mit Ihrem Speicherplatz zu verbinden. 
 
 ## Beschreibung
 
-Es existieren zurzeit verschiedene Versionen der Programmiersprache PHP. Wie gewöhnlich bringen weiterentwickelte Versionen verschiedene Korrekturen sowie neu hinzugefügte oder entfernte Features. OVH stellt Ihnen die neuesten PHP-Hauptversionen zur Verfügung; die zugehörige Liste finden Sie hier: <https://www.ovh.de/hosting/php.xml>. 
+Es existieren zurzeit verschiedene Versionen der Programmiersprache PHP. Wie gewöhnlich bringen weiterentwickelte Versionen verschiedene Korrekturen sowie neu hinzugefügte oder entfernte Features. OVH stellt Ihnen die neuesten PHP-Hauptversionen zur Verfügung; die zugehörige Liste finden Sie hier: <https://www.ovhcloud.com/de/web-hosting/uc-programming-language/>. 
 
 Da manche Features von neueren Versionen nicht mehr unterstützt werden, **stellen Sie unbedingt vor jeder Änderung sicher, dass die neue PHP-Version mit Ihrer Website kompatibel ist.**
 
@@ -62,7 +62,7 @@ Sie haben zwei Möglichkeiten, um die PHP-Version Ihres Webhostings zu ändern:
 
 - **indem Sie manuell eine Datei auf Ihrem Speicherplatz bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind, um dort die Datei „.ovhconfig“ zu bearbeiten. Befolgen Sie hierzu die Anweisungen in der Anleitung [„.ovhconfig-Datei Ihres Webhostings konfigurieren“](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/){.external}.
 
-Für Nutzer mit fortgeschrittenen technischen Kenntnissen ist es seit den neuesten [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angeboten nicht länger möglich, die PHP-Version über eine .htaccess-Datei zu ändern. Die PHP-Version über Einstellungen in der .htaccess-Datei zu beeinflussen, wird von unseren Infrastrukturen nicht mehr unterstützt. Es ist absolut notwendig, dass Sie hierzu die Datei „.ovhconfig“ verwenden. Die entsprechende Vorgehensweise können Sie in der Anleitung [„.ovhconfig-Datei Ihres Webhostings konfigurieren“](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/){.external} nachlesen.
+Für Nutzer mit fortgeschrittenen technischen Kenntnissen ist es seit den neuesten [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angeboten nicht länger möglich, die PHP-Version über eine .htaccess-Datei zu ändern. Die PHP-Version über Einstellungen in der .htaccess-Datei zu beeinflussen, wird von unseren Infrastrukturen nicht mehr unterstützt. Es ist absolut notwendig, dass Sie hierzu die Datei „.ovhconfig“ verwenden. Die entsprechende Vorgehensweise können Sie in der Anleitung [„.ovhconfig-Datei Ihres Webhostings konfigurieren“](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/){.external} nachlesen.
 
 ## Weiterführende Informationen
 

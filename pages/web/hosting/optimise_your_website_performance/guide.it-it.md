@@ -19,9 +19,9 @@ Ti proponiamo qualche spunto per risolvere i problemi di un sito lento e per ott
 > Questa guida ti mostra come utilizzare una o più soluzioni OVHcloud con strumenti esterni e ti illustra le operazioni da eseguire in un contesto specifico. Ricordati di adattare queste operazioni al tuo caso. In caso di difficoltà, rivolgiti a un fornitore specializzato e/o contatta la nostra Community di utenti all’indirizzo<https://community.ovh.com/en/>. OVHcloud non può fornirti alcuna assistenza a questo proposito.
 
 ## Prerequisiti
-- Una [soluzione Web Hosting OVHcloud](https://www.ovh.it/hosting-web/){.external}
+- Una [soluzione Web Hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
 - Una email conferma che la tua soluzione di Web Hosting è stato configurato
-- Un [dominio](https://www.ovh.it/domini/){.external}per accedere al tuo sito
+- Un [dominio](https://www.ovhcloud.com/it/domains/){.external}per accedere al tuo sito
 - avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}OVHcloud
 
 ## Procedura
@@ -47,9 +47,9 @@ Le risposte a queste domande possono aiutarti a concentrarti su aspetti ben spec
 
 I CMS come WordPress, PrestaShop, Drupal o Joomla! utilizzano numerose librerie, in modo che una sola pagina possa contenere molti elementi.
 Questi devono essere caricati e letti dal browser Internet dei tuoi utenti.
-Ti forniamo alcuni consigli su quale soluzione Hosting Web utilizzare per i CMS sopraelencati in questa [pagina](https://www.ovh.it/hosting-web/){.external}.
+Ti forniamo alcuni consigli su quale soluzione Hosting Web utilizzare per i CMS sopraelencati in questa [pagina](https://www.ovhcloud.com/it/web-hosting/){.external}.
 
-Per maggiori informazioni clicca [qui](https://www.ovh.it/hosting-web/quale_piano_di_hosting_scegliere.xml){.external}.
+Per maggiori informazioni clicca [qui](https://www.ovhcloud.com/it/web-hosting/uc-best-web-hosting/){.external}.
 
 
 ### Step 2: Verifica la versione PHP
@@ -150,7 +150,7 @@ Trovi tutte le offerte CDN OVH [qui](https://www.ovh.it/cdn/){.external}.
 
 _Se non utilizzi un CMS, questo step è facoltativo_
 
-Per essere sicuro che il tuo piano di hosting sia adatto alle esigenze del tuo CMS, puoi confrontare i nostri servizi in [questa pagina](https://www.ovh.it/hosting-web/){.external}.
+Per essere sicuro che il tuo piano di hosting sia adatto alle esigenze del tuo CMS, puoi confrontare i nostri servizi in [questa pagina](https://www.ovhcloud.com/it/web-hosting/){.external}.
 
 - **Utilizzo dei plugin di cache:** I CMS utilizzano molte librerie in modo che una sola pagina Web possa contenere una grande quantità di elementi. Per ottimizzare l’utilizzo del tuo CMS, ti consigliamo di usare dei plugin di cache che ti permettono di evitare di rigenerare completamente il contenuto del tuo sito ogni volta che la pagina viene caricata. Cercane uno sul sito del CMS che utilizzi (Joomla! - PrestaShop - WordPress) per ottimizzare il tuo sito.
 
@@ -227,7 +227,7 @@ Ad esempio, evita di utilizzare “HAVING” (che appesantisce le tue richieste)
 
 #### SQL Privato
 Se, nonostante tutte le modifiche e le ottimizzazioni effettuate, il database è lento, o se vengono inviate numerose richieste al database, ti consigliamo di passare alla nostra soluzione SQL Privato per avere più risorse disponibili.
-Per consultare le nostre offerte, clicca [qui](https://www.ovh.it/hosting-web/opzioni-sql.xml){.external}.
+Per consultare le nostre offerte, clicca [qui](https://www.ovhcloud.com/it/web-hosting/options/start-sql/){.external}.
 
 ## Per saperne di più 
 

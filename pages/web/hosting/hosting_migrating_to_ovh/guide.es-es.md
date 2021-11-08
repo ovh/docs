@@ -51,7 +51,7 @@ Teniendo en cuenta esta posibilidad, OVH pone a su disposición dos procedimient
 
 #### 1. Contratar un alojamiento web con OVH
 
-Puede contratar su alojamiento en el [sitio web de OVH](https://www.ovh.es/hosting/){.external}. No solicite todavía la transferencia del dominio; espere a más adelante. Una vez recibido el pago, se iniciará la instalación del alojamiento. Recibirá un mensaje de correo electrónico cuando la instalación haya finalizado.
+Puede contratar su alojamiento en el [sitio web de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external}. No solicite todavía la transferencia del dominio; espere a más adelante. Una vez recibido el pago, se iniciará la instalación del alojamiento. Recibirá un mensaje de correo electrónico cuando la instalación haya finalizado.
 
 #### 2. Transferir el sitio web
 
