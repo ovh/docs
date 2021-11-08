@@ -39,7 +39,7 @@ Der Absender (sender) sendet die E-Mail an die Mailingliste. Der Moderator (mode
 
 ## Voraussetzungen
 
-- Sie verfügen über mindestens ein E-Mail-Angebot MX Plan 100 oder ein kompatibles [Webhosting](https://www.ovh.de/hosting).
+- Sie verfügen über mindestens ein E-Mail-Angebot MX Plan 100 oder ein kompatibles [Webhosting](https://www.ovhcloud.com/de/web-hosting/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

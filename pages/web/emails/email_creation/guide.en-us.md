@@ -17,7 +17,7 @@ You can use an email address in your MX Plan solution to send and receive emails
 
 ## Requirements
 
-- an MX Plan solution, available via a [Web Hosting plan](https://www.ovh.com/world/web-hosting/), or the MX Plan solution, ordered separately
+- an MX Plan solution, available via a [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/), or the MX Plan solution, ordered separately
 - the ability to create email addresses as part of your solution
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 

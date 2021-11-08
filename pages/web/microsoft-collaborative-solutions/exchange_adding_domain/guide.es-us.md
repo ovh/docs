@@ -15,7 +15,7 @@ Añadir un dominio a un servicio Exchange es un requisito indispensable para pod
 
 ## Requisitos
 
-- Tener contratada una [solución Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external}.
+- Tener contratada una [solución Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external}.
 - Tener uno o más dominios.
 - Estar en condiciones de modificar la configuración (la zona DNS) del dominio.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
@@ -39,7 +39,7 @@ Para añadir un dominio, abra la pestaña `Dominios asociados`{.action}. Se most
 
 > [!warning]
 >
-> Todas las direcciones creadas en el servicio Exchange podrán ver en el directorio el resto de direcciones asociadas al servicio, incluidas aquellas que posean un dominio diferente. Si desea crear directorios separados, deberá contratar una nueva [solución Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external} para el o los dominios en cuestión.
+> Todas las direcciones creadas en el servicio Exchange podrán ver en el directorio el resto de direcciones asociadas al servicio, incluidas aquellas que posean un dominio diferente. Si desea crear directorios separados, deberá contratar una nueva [solución Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external} para el o los dominios en cuestión.
 >
 
 ![Añadir dominio a Exchange](images/add_domain_exchange_step1.png){.thumbnail}

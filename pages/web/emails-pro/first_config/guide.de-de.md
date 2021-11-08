@@ -15,9 +15,9 @@ Sie haben gerade eine E-Mail Pro Lösung erworben. Nun können Sie zu einem gün
 
 ## Voraussetzungen
 
-- Sie haben einen [E-Mail Pro](https://www.ovh.de/emails/email-pro)-Dienst in Ihrem Kunden-Account.
+- Sie haben einen [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/)-Dienst in Ihrem Kunden-Account.
 - Sie haben die E-Mail zur Installation von E-Mail Pro bereits erhalten.
-- Sie verfügen über einen [Domainnamen](https://www.ovh.de/domains/).
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

@@ -27,7 +27,7 @@ Die Erstellung eines [1-Klick-Moduls](../webhosting_installation_von_webhosting-
 
 ## Voraussetzungen
 
-- Sie verfügen über ein kompatibles [OVHcloud Webhosting](https://www.ovh.de/hosting/).
+- Sie verfügen über ein kompatibles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben die Option [1-Klick-Modul](../webhosting_installation_von_webhosting-modulen/) verwendet, um eine neue Website zu erstellen.
 
@@ -48,14 +48,14 @@ Diese Meldung kann erscheinen, wenn Sie versuchen, ein neues Modul automatisch z
 
 > [!primary]
 >
-> Hier finden Sie die Übersicht unserer [Webhosting Angebote](https://www.ovh.de/hosting/).
+> Hier finden Sie die Übersicht unserer [Webhosting Angebote](https://www.ovhcloud.com/de/web-hosting/).
 >
 
 Klicken Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie dann im Bereich **Abo** bei `Angebot` auf `...`{.action} und `Upgraden`{.action}.
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Mit den [Pro](https://www.ovh.de/hosting/hosting-pro.xml)- und [Performance](https://www.ovh.de/hosting/performance-hosting.xml)-Angeboten können Sie bis zu drei zusätzliche 1-Klick-Module erstellen. Bei einem Performance Webhosting können Sie auch kostenlos einen [SQL Private Server(https://www.ovh.de/hosting/sql-optionen.xml) aktivieren.
+Mit den [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/)- und [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/)-Angeboten können Sie bis zu drei zusätzliche 1-Klick-Module erstellen. Bei einem Performance Webhosting können Sie auch kostenlos einen [SQL Private Server(https://www.ovhcloud.com/de/web-hosting/options/start-sql/) aktivieren.
 
 #### Lösung Nr. 2: eine nicht verwendete Datenbank löschen <a name="deleteDB"></a>
 
@@ -76,14 +76,14 @@ Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=go
 
 > [!primary]
 >
-> Hier finden Sie den Vergleich unserer [Datenbank-Angebote](https://www.ovh.de/hosting/sql-optionen.xml).
+> Hier finden Sie den Vergleich unserer [Datenbank-Angebote](https://www.ovhcloud.com/de/web-hosting/options/start-sql/).
 >
 
 #### Lösung Nr. 4: Ihr Modul auf einer bereits genutzten Datenbank installieren
 
 Um Ihr Modul auf einer bereits genutzten Datenbank zu installieren, verwenden Sie den [fortgeschrittenen Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls).
 
-Um die Login-Daten Ihrer Datenbank zu finden, lesen Sie unsere [FAQ](https://www.ovh.de/hosting/faq/).
+Um die Login-Daten Ihrer Datenbank zu finden, lesen Sie unsere [FAQ](https://www.ovhcloud.com/de/web-hosting/).
 
 ### “Das Installationsverzeichnis ist nicht leer“
 
@@ -105,7 +105,7 @@ Sie können sich auch per [FTP](../verbindung-ftp-speicher-webhosting/) mit Ihre
 
 Nachdem Sie die Installation Ihres Moduls im Experten-Modus gestartet haben, erhalten Sie über E-Mail den Hinweis, dass Ihr Modul sich nicht mit der angegebenen Datenbank verbinden kann. 
 
-Überprüfen Sie zunächst Ihre Login-Daten Ihrer Datenbank. Um sie zu finden, ziehen Sie unsere [FAQ](https://www.ovh.de/hosting/faq/) zu Rate.
+Überprüfen Sie zunächst Ihre Login-Daten Ihrer Datenbank. Um sie zu finden, ziehen Sie unsere [FAQ](https://www.ovhcloud.com/de/web-hosting/) zu Rate.
 
 Löschen Sie anschließend Ihr Modul über den Tab `1-Klick-Module`{.action}.
 

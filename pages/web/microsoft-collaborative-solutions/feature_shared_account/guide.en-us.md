@@ -19,7 +19,7 @@ A **shared account** is a mailbox shared between several Exchange accounts and c
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- an [OVHcloud Exchange solution](https://www.ovh.com/world/emails/hosted-exchange/)
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en/emails/hosted-exchange/)
 
 ## Instructions
 

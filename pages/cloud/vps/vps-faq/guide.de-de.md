@@ -59,7 +59,7 @@ So können Sie die richtige Wahl zwischen unseren VPS Lösungen treffen:
 
 Die Verwaltung eines VPS setzt Grundkenntnisse der Serveradministration voraus. Diese Kenntnisse sind für die Verwaltung des auf der Maschine installierten Betriebssystems (Linux oder Windows) und die Verwaltung der Anwendungen unerlässlich. Sie brauchen einen VPS, aber haben möglicherweise nicht die notwendigen Kenntnisse? Kontaktieren Sie einen unserer Partner. 
 
-Wenn Sie garantierte Ressourcen ohne Kenntnisse in der Serveradministration nutzen möchten, empfehlen wir Ihnen unser [Performance Webhosting](https://www.ovh.de/hosting/performance-hosting.xml).
+Wenn Sie garantierte Ressourcen ohne Kenntnisse in der Serveradministration nutzen möchten, empfehlen wir Ihnen unser [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/performance-offer/).
 
 ### Wie kann ich mich mit meinem VPS verbinden?
 

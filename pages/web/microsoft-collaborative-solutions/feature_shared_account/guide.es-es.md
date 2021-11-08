@@ -22,7 +22,7 @@ Una **cuenta compartida** es una cuenta de correo compartida entre varias cuenta
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Haber contratado una solución [Exchange de OVHcloud](https://www.ovh.es/emails/hosted-exchange/).
+- Haber contratado una solución [Exchange de OVHcloud](https://www.ovhcloud.com/es-es/emails/hosted-exchange/).
 
 ## Procedimiento
 

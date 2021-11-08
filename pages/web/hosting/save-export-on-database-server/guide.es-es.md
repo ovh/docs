@@ -20,14 +20,14 @@ Su base de datos puede contener una gran cantidad de información esencial para 
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting SQL Privado](https://www.ovh.es/hosting/opciones-sql.xml) o [Cloud Databases](https://www.ovh.es/cloud-databases/).
+- Tener contratado un plan de [hosting SQL Privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) o [Cloud Databases](https://www.ovh.es/cloud-databases/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
 > [!primary]
 >
-> Tenga en cuenta que los productos [SQL Privado](https://www.ovh.es/hosting/opciones-sql.xml) y [Cloud Databases](https://www.ovh.es/cloud-databases/) no dan acceso al host, sino a las bases de datos alojadas en este, por lo que no hay accesos super usuario "root". Los comandos SQL genéricos funcionan con normalidad y los programas de tipo HeidiSQL, SQuirreL SQL o Adminer son totalmente compatibles.
+> Tenga en cuenta que los productos [SQL Privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) y [Cloud Databases](https://www.ovh.es/cloud-databases/) no dan acceso al host, sino a las bases de datos alojadas en este, por lo que no hay accesos super usuario "root". Los comandos SQL genéricos funcionan con normalidad y los programas de tipo HeidiSQL, SQuirreL SQL o Adminer son totalmente compatibles.
 > 
 
 ### Guardar y exportar una base de datos desde el área de cliente

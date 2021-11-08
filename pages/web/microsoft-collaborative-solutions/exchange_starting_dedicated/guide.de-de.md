@@ -155,5 +155,5 @@ Nicht-alphabetische Zeichen (zum Beispiel: !, $, #, %)
 ## Abschluss der Installation
 Ihre Exchange Enterprise Dienstleistung ist nun konfiguriert!
 
-Weitere Informationen zu diesem Thema finden Sie in unseren [Hilfen zu Exchange](https://www.ovh.de/emails/hosted-exchange/anleitungen/) sowie in unseren [Online-FAQ](https://www.ovh.de/emails/hosted-exchange/faq/).
+Weitere Informationen zu diesem Thema finden Sie in unseren [Hilfen zu Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/anleitungen/) sowie in unseren [Online-FAQ](https://www.ovhcloud.com/de/emails/hosted-exchange/).
 

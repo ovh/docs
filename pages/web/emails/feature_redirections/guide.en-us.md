@@ -36,7 +36,7 @@ There are two types of redirection:
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- An MX Plan solution, available as part of our [Web Hosting plans](https://www.ovh.com/world/web-hosting/)
+- An MX Plan solution, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en/web-hosting/)
 
 ## Instructions
 

@@ -40,7 +40,7 @@ Da für eine Domain mehrere MX-Einträge erstellten werden können, muss für je
 
 ### Schritt 2: OVH MX-Konfiguration kennenlernen
 
-In der folgenden Tabelle wird Ihnen die OVH MX-Konfiguration für MX Plan (separat oder in einem [OVH Webhosting](https://www.ovh.de/hosting/){.external} enthalten), [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} und [Exchange](https://www.ovh.de/emails/){.external} angezeigt. Unsere E-Mail-Server verfügen über Antispam und Antivirus.
+In der folgenden Tabelle wird Ihnen die OVH MX-Konfiguration für MX Plan (separat oder in einem [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} enthalten), [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/){.external} und [Exchange](https://www.ovhcloud.com/de/emails/){.external} angezeigt. Unsere E-Mail-Server verfügen über Antispam und Antivirus.
 
 |Domain|TTL|Eintrag|Priorität|Ziel|
 |---|---|---|---|---|

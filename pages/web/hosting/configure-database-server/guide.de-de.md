@@ -16,7 +16,7 @@ Die SQL-Server Privat und Cloud Databases geben Ihnen die Möglichkeit, auf die 
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting mit SQL Private](https://www.ovh.de/hosting/sql-optionen.xml) in Ihrem Kunden-Account oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie haben ein [OVHcloud Webhosting mit SQL Private](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) in Ihrem Kunden-Account oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

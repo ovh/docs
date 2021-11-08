@@ -62,7 +62,7 @@ Una volta modificata la password del tuo indirizzo email, ricordati di aggiornar
 ## Connessione SSH
 Puoi accedere in SSH (Secure Shell) solo se hai attivato un piano di hosting PRO o superiore. Per l'autenticazione, utilizza le stesse credenziali della connessione FTP.
 
-Per attivare una soluzione che ti consente di accedere via SSH, consulta le [nostre offerte](https://www.ovh.it/hosting-web/)
+Per attivare una soluzione che ti consente di accedere via SSH, consulta le [nostre offerte](https://www.ovhcloud.com/it/web-hosting/)
 
 
 ## CMS in 1 click

@@ -16,9 +16,9 @@ In deze handleiding wordt uitgelegd hoe u aan de slag kunt met een Cloud Web hos
 
 ## Vereisten
 
-- U moet beschikken over een [Cloud Web plan](https://www.ovh.nl/shared-hosting/cloud-web.xml).
+- U moet beschikken over een [Cloud Web plan](https://www.ovhcloud.com/nl/web-hosting/cloud-web-offer/).
 - U moet een e-mail hebben ontvangen met daarin de bevestiging dat uw Cloud Web is geïnstalleerd.
-- U moet beschikken over een [domeinnaam](https://www.ovh.nl/domains/), wat het adres zal worden waarop uw website te vinden zal zijn.
+- U moet beschikken over een [domeinnaam](https://www.ovhcloud.com/nl/domains/), wat het adres zal worden waarop uw website te vinden zal zijn.
 - U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl).
 
 ## Instructiex
@@ -31,7 +31,7 @@ OVH Cloud Web hosting biedt een bredere keus aan configuratie-opties dan standaa
 
 - **Verdiep u in de technische vereisten voor het opzetten van uw project**: uw project kan specifieke technische benodigdheden hebben. Zorg ervoor dat u er van tevoren bekend mee bent.
 
-- **Ga na of uw project technisch compatibel is met Cloud Web hosting**: heeft u een bepaald runtime software-type of SQL nodig? Als u dit nog niet hebt gedaan, controleert u of wat u nodig hebt beschikbaar is in uw [Cloud Web](https://www.ovh.nl/shared-hosting/cloud-web.xml)-hostingplan.
+- **Ga na of uw project technisch compatibel is met Cloud Web hosting**: heeft u een bepaald runtime software-type of SQL nodig? Als u dit nog niet hebt gedaan, controleert u of wat u nodig hebt beschikbaar is in uw [Cloud Web](https://www.ovhcloud.com/nl/web-hosting/cloud-web-offer/)-hostingplan.
 
 Nadat u de verschillende beschikbare opties hebt onderzocht en uw project zorgvuldig hebt gedefinieerd, kunt u het online gaan toepassen.
 
@@ -45,7 +45,7 @@ Om toegang te krijgen tot de runtime software-toepassingen voor uw Cloud Web hos
 
 Wanneer u uw webhostingplan instelt, wordt automatisch een runtime software-toepassing gemaakt. Het is opgenomen als `standaardkeuze` in de tabel die wordt weergegeven. Als u een reeds geïnstalleerde runtime software wilt wijzigen, klikt u op de drie puntjes ernaast en vervolgens op `Wijzigen`{.action}. 
 
-Afhankelijk van welk [Cloud Web](https://www.ovh.nl/shared-hosting/cloud-web.xml) hostingplan u hebt gekozen, kunt u ook extra runtime software-toepassingen toevoegen door te klikken op de knop `Acties`{.action} en vervolgens op `Runtime software-applicatie toevoegen`{.action}. Let op: het maximale aantal runtime software-toepassingen varieert, afhankelijk van de Cloud Web-oplossing die u hebt besteld.
+Afhankelijk van welk [Cloud Web](https://www.ovhcloud.com/nl/web-hosting/cloud-web-offer/) hostingplan u hebt gekozen, kunt u ook extra runtime software-toepassingen toevoegen door te klikken op de knop `Acties`{.action} en vervolgens op `Runtime software-applicatie toevoegen`{.action}. Let op: het maximale aantal runtime software-toepassingen varieert, afhankelijk van de Cloud Web-oplossing die u hebt besteld.
 
 Nadat u dit hebt gedaan, moet u ervoor zorgen dat u over de voor uw project vereiste runtime software-toepassing(en) beschikt voordat u doorgaat.
 
@@ -112,7 +112,7 @@ Er zijn twee manieren om uw project op te zetten. Nadat u de techniek heeft geko
 
 #### 1. Gebruik onze 1-klik modules.
 
-Door onze 1-klik modules te gebruiken, krijgt u een kant-en-klaar website-sjabloon die u kunt aanpassen met een verscheidenheid aan thema's, teksten en nog veel meer. OVH biedt vier structuren met zijn 1-klik modules, en u kunt er meer over te weten komen via onze webpagina over[ Een website maken met 1-klik modules](https://www.ovh.nl/shared-hosting/website/){.external}.
+Door onze 1-klik modules te gebruiken, krijgt u een kant-en-klaar website-sjabloon die u kunt aanpassen met een verscheidenheid aan thema's, teksten en nog veel meer. OVH biedt vier structuren met zijn 1-klik modules, en u kunt er meer over te weten komen via onze webpagina over[ Een website maken met 1-klik modules](https://www.ovhcloud.com/nl/web-hosting/uc-website/){.external}.
 
 Als u een 1-klik module selecteert, klikt u op de `1-klik modules`{.action} op de Cloud Web-website en klikt u vervolgens op `Module toevoegen`{.action}. U kunt vervolgens kiezen of u het wilt installeren in de 'basismodus' (niet-aanpasbaar) of 'geavanceerd' (aanpasbaar).
 

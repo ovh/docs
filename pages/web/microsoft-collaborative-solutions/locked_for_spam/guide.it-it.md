@@ -16,7 +16,7 @@ Se hai ricevuto un’email che ti informa che uno dei tuoi indirizzi email è bl
 
 ## Prerequisiti
 
-- Disporre di un [servizio di posta elettronica OVHcloud](https://www.ovh.it/emails/){.external}.
+- Disporre di un [servizio di posta elettronica OVHcloud](https://www.ovhcloud.com/it/emails/){.external}.
 - Avere accesso alla sezione [Web](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura

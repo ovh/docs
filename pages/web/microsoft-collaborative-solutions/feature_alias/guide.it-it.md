@@ -25,7 +25,7 @@ Ad esempio, il tuo indirizzo email è **john.smith@mydomain.ovh** e il tuo alias
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan** (Nuova versione), inclusa nelle nostre [soluzioni di hosting Web](https://www.ovh.it/hosting-web/) o ordinata separatamente come soluzione autonoma, [**Hosted Exchange**](https://www.ovh.it/emails/hosted-exchange/) o [**Email Pro**](https://www.ovh.it/emails/email-pro/))
+- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan** (Nuova versione), inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/) o ordinata separatamente come soluzione autonoma, [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
 
 ## Procedura
 

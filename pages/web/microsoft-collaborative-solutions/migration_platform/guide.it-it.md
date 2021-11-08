@@ -31,8 +31,8 @@ Per migrare i tuoi indirizzi email presenti su una piattaforma Exchange o Email 
 
 ## Prerequisiti
 
-- Disporre di una piattaforma **"sorgente"** con account [Exchange](https://www.ovh.it/emails/hosted-exchange/){.external} o [Email Pro](https://www.ovh.it/emails/email-pro/){.external} configurati
-- Disporre di una piattaforma di **"destinazione"** con account [Exchange](https://www.ovh.it/emails/hosted-exchange/){.external}, [Email Pro](https://www.ovh.it/emails/email-pro/){.external} o MX Plan (inclusa nella soluzione MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovh.it/hosting-web/){.external}) Questa piattaforma deve disporre di account non configurati o disponibili per accogliere gli indirizzi email che devono essere migrati.
+- Disporre di una piattaforma **"sorgente"** con account [Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external} o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external} configurati
+- Disporre di una piattaforma di **"destinazione"** con account [Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external}, [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external} o MX Plan (inclusa nella soluzione MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}) Questa piattaforma deve disporre di account non configurati o disponibili per accogliere gli indirizzi email che devono essere migrati.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
