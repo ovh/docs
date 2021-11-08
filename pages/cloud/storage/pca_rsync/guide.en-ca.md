@@ -69,7 +69,6 @@ Since Rsync server has been patched to work with Swift API, those options will b
 
 > --inplace: Instead of the default method of creating a new copy of the file and moving it into place when it is complete, Rsync instead writes the updated data directly to the destination file.
 >
-> -W, --whole-file: Disable Rsync's delta-transfer algorithm and send the whole file "as-is" instead.
 
 Additionally, only a subset of options are allowed on the client side:
 

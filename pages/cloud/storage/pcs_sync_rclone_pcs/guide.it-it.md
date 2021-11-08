@@ -1,7 +1,7 @@
 ---
 title: "Utilizzare l'Object Storage con Rclone"
 slug: sync-rclone-object-storage
-section: 'Object Storage'
+section: Object Storage Standard (Swift)
 ---
 
 **Ultimo aggiornamento: 24/08/2018**
@@ -45,7 +45,7 @@ Ti verrà chiesto di inserire i dati di configurazione presenti nel tuo file.
 > [!primary]
 >
 > Puoi anche copiare e incollare il contenuto del tuo file nella cartella dedicata alle configurazioni di Rclone (*.config/Rclone/Rclone.conf*).
-> 
+>
 
 Una volta completata l’operazione, è possibile verificarne la correttezza, ad esempio, eseguendo il comando che restituisce la lista dei tuoi container:
 

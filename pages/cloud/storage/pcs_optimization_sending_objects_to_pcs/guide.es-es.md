@@ -2,12 +2,12 @@
 title: Optimizar los envíos hacia el Object Storage
 excerpt: Optimizar los envíos hacia el Object Storage
 slug: optimizar_los_envios_hacia_el_object_storage
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g1951
 ---
 
 
-## 
+##
 Para enviar archivos muy pesados al Object Storage (como vídeos o imágenes de disco, por ejemplo), es posible utilizar el cliente OpenStack Swift, que optimiza las transferencias segmentando los archivos.
 
 Esta guía explica cómo mejorar la velocidad de los envíos hacia el Object Storage utilizando esta funcionalidad.
@@ -23,7 +23,7 @@ Para seguir todos los pasos de esta guía, es necesario:
 
 
 
-## 
+##
 OpenStack Swift permite almacenar archivos sin límite de tamaño dividiéndolos en varios segmentos.
 
 Cuando se utiliza un cliente Swift para enviar un archivo, el proxy Swift determina el nodo de almacenamiento utilizando un hash del nombre del objeto. Por lo tanto, hay una alta probabilidad de que los segmentos sean almacenados en distintos nodos de almacenamiento, lo que permitirá escribir los datos a mayor velocidad.
@@ -42,6 +42,4 @@ container_name 10Gio.dat
 Es posible medir la velocidad de envío utilizando programas como iftop.
 
 
-## 
- 
-
+##

@@ -2,12 +2,12 @@
 title: Ottimizza il trasferimento dei tuoi file verso l’Object Storage
 excerpt: Ottimizza il trasferimento dei tuoi file verso l'Object Storage
 slug: ottimizza_il_trasferimento_dei_tuoi_file_verso_lobject_storage
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g1951
 ---
 
 
-## 
+##
 Per inviare file di grandi dimensioni (ad esempio, video o immagini disco) verso l'Object Storage, è possibile utilizzare il client OpenStack Swift per segmentare questi file e ottimizzarne il trasferimento.
 
 Questa guida ti mostra come ottimizzare il trasferimento dei tuoi file verso l'Object Storage utilizzando questa funzionalità.
@@ -21,7 +21,7 @@ Questa guida ti mostra come ottimizzare il trasferimento dei tuoi file verso l'O
 
 
 
-## 
+##
 OpenStack Swift ti permette di archiviare i tuoi file senza limiti di dimensione, dividendoli in più segmenti.
 
 Quando utilizzi un client Swift per l'invio di file, il nodo di storage è determinato dal proxy Swift tramite un hashing del nome dell'oggetto.
@@ -45,6 +45,5 @@ container_name 10Gio.dat
 Per verificare la velocità di invio, utilizza programmi come iftop.
 
 
-## 
+##
 [Ritorna all'indice delle guide Cloud]({legacy}1785)
-

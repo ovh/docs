@@ -2,12 +2,12 @@
 title: Montar un contenedor de objetos con S3QL
 excerpt: Montar un contenedor de objetos con S3QL
 slug: montar_un_contenedor_de_objetos_con_s3ql
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g1908
 ---
 
 
-## 
+##
 S3QL es un sistema de archivos que se puede montar para almacenar datos en local utilizando soluciones de almacenamiento en la nube como el Object Storage.
 
 Ofrece múltiples funcionalidades, tales como compresión transparente, encriptado o creación de snapshots, que lo hacen especialmente adecuado para la creación de backups.

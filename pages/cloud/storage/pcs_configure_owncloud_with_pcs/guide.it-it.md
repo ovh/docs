@@ -2,12 +2,12 @@
 title: Configura il tuo Object Storage su Owncloud
 excerpt: Configura il tuo Object Storage su Owncloud
 slug: configura_il_tuo_object_storage_su_owncloud
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g2000
 ---
 
 
-## 
+##
 [Owncloud](https://owncloud.org/) è un'applicazione di storage online e di gestione di file.
 Questa soluzione offre numerose funzionalità, tra cui la sincronizzazione tra più dispositivi e l'aggiunta di spazio di archiviazione esterno come l'Object Storage di OpenStack.
 
@@ -111,6 +111,5 @@ Una volta inserite tutte le informazioni e verificata la loro correttezza, il ri
 ![](images/img_3330.jpg){.thumbnail}
 
 
-## 
+##
 [Ritorna all'indice delle guide Cloud]({legacy}1785)
-

@@ -2,12 +2,12 @@
 title: Configurar a eliminação automática de objectos
 excerpt: Configurar a eliminação automática de objectos
 slug: configurar_a_eliminacao_automatica_de_objectos
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g1950
 ---
 
 
-## 
+##
 Para facilitar a gestão do seu Object Storage é possível que tenha necessidade de decidir a duração de vida dos seus ficheiros.
 Poderá, por ecemplo, guardá-los durante um certo período de tempo.
 Este guia explica-lhe como poderá eliminar os seus ficheiros de forma automática passado algum tempo ou numa data em concreto.
@@ -21,7 +21,7 @@ Este guia explica-lhe como poderá eliminar os seus ficheiros de forma automáti
 
 
 
-## 
+##
 Existem duas formas para eliminar os seus ficheiros:
 
 - Após alguns segundos (a definir)
@@ -57,6 +57,5 @@ root@server:~$ swift post --header "X-Delete-At: 1448928000000" container test.t
 O ficheiro test.txt será eliminado a 01 de Dezembro de 2015.
 
 
-## 
+##
 [Voltar ao índice dos guias Cloud]({legacy}1785)
-

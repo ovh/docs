@@ -2,13 +2,13 @@
 title: Utiliser S3QL pour monter un conteneur de object storage
 excerpt: Utiliser S3QL pour monter un conteneur de object storage
 slug: utiliser_S3QL_pour_monter_un_conteneur_de_object_storage
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g1908
 ---
 
 
-## 
-S3QL est un système de fichiers distant qui peut être configuré localement pour stocker des données à l'aide de solutions de stockage en nuage comme OVH Object Storage. 
+##
+S3QL est un système de fichiers distant qui peut être configuré localement pour stocker des données à l'aide de solutions de stockage en nuage comme OVH Object Storage.
 Il présente plusieurs caractéristiques, telles que la compression des données, le cryptage et les instantanés des conteneurs, ce qui rend cette solution particulièrement adaptée à la création de sauvegardes.
 
 Vous pouvez trouver plus d'informations directement sur leur [Site Web](http://www.rath.org/s3ql-docs/).
@@ -50,7 +50,7 @@ Vous pouvez suivre ce guide ci-dessous afin de le retrouver:
 - [Acces et Securite Dans Horizon](https://docs.ovh.com/ca/fr/public-cloud/acces-et-securite-dans-horizon/)
 
 
-Les arguments REGION_NAME et CT_NAME peuvent être adaptés en fonction du nom et de l'emplacement de votre conteneur d'objets. 
+Les arguments REGION_NAME et CT_NAME peuvent être adaptés en fonction du nom et de l'emplacement de votre conteneur d'objets.
 
 
 - Modifier les autorisations d'accès au fichier d'authentification:
@@ -68,7 +68,7 @@ admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3q
 
 
 
-Vous devez ensuite ajouter la phrase de passe à votre fichier d'authentification. 
+Vous devez ensuite ajouter la phrase de passe à votre fichier d'authentification.
 If you do not want to configure it, you have to delete the "fs-passphrase: PASSPHRASE" line from your file.
 
 

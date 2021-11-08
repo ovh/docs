@@ -5,7 +5,7 @@ excerpt: Retrouvez ici les principales commandes curl pour gérer vos conteneurs
 section: Public Cloud Archive
 ---
 
-**Dernière mise à jour le 21/09/2021**
+**Dernière mise à jour le 27/10/2021**
 
 ## Objectif
 
@@ -17,17 +17,17 @@ Chargez les variables d'environnement suivantes :
 
 > `export OS_AUTH_URL=https://auth.cloud.ovh.net/v3/`  
 > `export OS_STORAGE_URL=https://storage.<region>.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf`  
-> `export OS_AUTH_TOKEN=xxx`  
 > `export OS_USERNAME=user-xxxxxx`  
 > `export OS_PASSWORD=xxx`  
 > `export OS_TENANT_ID=702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf`  
+> `export OS_AUTH_TOKEN=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "id": "'$OS_TENANT_ID'", "domain": { "id": "default" } } } } }' | grep '^X-Subject-Token' | cut -d" " -f2 | tr -d "\r")`
 
 ## En pratique
 
 ### Créer un conteneur PCA
 
 ```bash
-curl -i "${OS_STORAGE_URL}/<conteneur>" -X POST -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "X-Storage-Policy: PCA"
+curl -i "${OS_STORAGE_URL}/<conteneur>" -X PUT -H "X-Auth-Token: ${OS_AUTH_TOKEN}" -H "X-Storage-Policy: PCA"
 ```
 
 ### Afficher les informations relatives à un compte

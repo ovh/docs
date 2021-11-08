@@ -2,7 +2,7 @@
 title: Capacités et limitations
 slug: pcs/capabilities-and-limitations
 excerpt: Retrouvez ici les principales capacités et limitations pour la gestion de vos conteneurs
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
 **Dernière mise à jour le 23/09/2021**

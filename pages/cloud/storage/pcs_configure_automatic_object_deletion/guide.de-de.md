@@ -2,12 +2,12 @@
 title: Automatisches Löschen von Objekten konfigurieren
 excerpt: Automatisches Löschen von Objekten konfigurieren
 slug: automatisches_loschen_von_objekten_konfigurieren
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g1950
 ---
 
 
-## 
+##
 Um Ihnen die Verwaltung Ihres Object Storage zu vereinfachen, können Sie die Lebensdauer gewisser dateien vordefinieren.
 
 So können Sie beispielsweise Backups nur für einen bestimmten Zeitraum aufbewahren.
@@ -23,7 +23,7 @@ In diesem Guide erfahren Sie, wie Sie das automatische Löschen von Dateien nach
 
 
 
-## 
+##
 Sie haben hierfür zwei Möglichkeiten zur Bestimmung des Zeitpunktes, zu dem Ihre Dateien gelöscht werden sollen:
 
 - nach Ablauf einer bestimmten Anzahl von Sekunden;
@@ -60,6 +60,5 @@ root@server:~$ swift post --header "X-Delete-At: 1448928000000" container test.t
 Die Datei test.txt wird am 01. Dezember 2015 gelöscht.
 
 
-## 
+##
 ... lesen Sie auch unsere anderen Hilfen zum Thema Cloud!
-

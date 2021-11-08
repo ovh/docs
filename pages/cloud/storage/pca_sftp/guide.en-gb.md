@@ -42,9 +42,9 @@ The TenantName corresponds to the name of your Horizon Project. To get the Tenan
 
 
 ## Example
-If you created a PCA container in sbg1 :
+If you created a PCA container in sbg :
 
-- Host Name : gateways.storage.sbg1.cloud.ovh.net
+- Host Name : gateways.storage.sbg.cloud.ovh.net
 - User Name : pca
 - Password : 971891XXXX1214.f6nBXXXXXAmcv.SfPeASYfuWeqBZgXXXXX2XhF3DY12RkD
 

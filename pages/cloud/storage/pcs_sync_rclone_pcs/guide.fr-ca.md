@@ -1,7 +1,7 @@
 ---
 title: Utiliser le Stockage d’objet avec rClone
 slug: sync-rclone-object-storage
-section: Stockage d’objet
+section: Object Storage Standard (Swift)
 ---
 
 **Dernière mise à jour le 2018/01/25**
@@ -45,7 +45,7 @@ Vous serez invité à insérer les données de configuration présentes dans vot
 > [!primary]
 >
 > Vous pouvez également copier-coller le contenu de votre fichier dans l'espace dédié aux configurations de Rclone (*.config/Rclone/Rclone.conf*).
-> 
+>
 
 Une fois votre configuration effectuée, vous pouvez la tester en listant par exemple vos conteneurs :
 

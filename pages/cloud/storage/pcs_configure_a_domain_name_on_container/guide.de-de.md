@@ -1,7 +1,7 @@
 ---
 title: Einem Object Storage Container eine spezifische Domain zuweisen
 excerpt: Einem Object Storage Container eine spezifische Domain zuweisen
-section: Object Storage
+section: Object Storage Standard (Swift)
 slug: einem_object_storage_container_eine_spezifische_domain_zuweisen
 legacy_guide_number: g2006
 ---
@@ -58,11 +58,11 @@ Der CNAME-Eintrag muss folgenden Vorgaben entsprechen, damit er vom Object Stora
 ```
 
 
-Für einen Container mit dem Namen staticct und ein Projekt 123xxxx456 im Rechenzentrum SBG1 ergäbe das etwa:
+Für einen Container mit dem Namen staticct und ein Projekt 123xxxx456 im Rechenzentrum SBG ergäbe das etwa:
 
 
 ```
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -70,7 +70,7 @@ Der DNS-Eintrag ist entsprechend:
 
 
 ```
-static IN CNAME staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+static IN CNAME staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -103,11 +103,11 @@ Wie beim CNAME-Eintrag müssen Sie auch hier die [VARIABLEN] anpassen:
 ```
 
 
-Für einen Container mit dem Namen staticct und ein Projekt 123xxxx456 im Rechenzentrum SBG1 ergäbe das etwa:
+Für einen Container mit dem Namen staticct und ein Projekt 123xxxx456 im Rechenzentrum SBG ergäbe das etwa:
 
 
 ```
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -115,7 +115,7 @@ Der DNS-Eintrag ist entsprechend:
 
 
 ```
-_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -123,7 +123,7 @@ Wenn Sie keine Subdomain verwenden möchten, geht das folgendermaßen:
 
 
 ```
-_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -132,9 +132,9 @@ Dafür brauchen Sie folgende Befehlen:
 
 
 ```
-dig storage.sbg1.cloud.ovh.net
-dig storage.gra1.cloud.ovh.net
-dig storage.bhs1.cloud.ovh.net
+dig storage.sbg.cloud.ovh.net
+dig storage.gra.cloud.ovh.net
+dig storage.bhs.cloud.ovh.net
 ```
 
 

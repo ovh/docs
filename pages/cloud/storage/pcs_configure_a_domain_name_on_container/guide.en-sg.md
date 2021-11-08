@@ -2,7 +2,7 @@
 title: Configure a domain name on your Object Storage container
 slug: pcs/link-domain
 excerpt: Find here how to configure a domain name on your Object Storage container
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
 
@@ -46,18 +46,18 @@ To be interpreted by the Object Storage, the CNAME record must conform to some s
 [CONTAINER_NAME].auth-[PROJECT_ID].storage.[REGION].cloud.ovh.net.
 ```
 
-For example, for a container named **staticct** and a project named **123xxxx456** to be used in sur SBG1 :
+For example, for a container named **staticct** and a project named **123xxxx456** to be used in sur SBG :
 
 
 ```bash
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 Your DNS record will be :
 
 
 ```bash
-static IN CNAME staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+static IN CNAME staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -89,30 +89,30 @@ For example, for a container named **staticct**, in project **123xxxx456** used 
 
 
 ```bash
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 Your DNS record will be :
 
 
 ```bash
-_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 If you do not want to use a subdomain, you can use the following command :
 
 
 ```bash
-_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 Finally, the last step for configuring a TXT record is to add an A record for your (sub)domain which points to the Public Cloud Object Storage IP address. To do this, use the following commad:
 
 
 ```bash
-dig storage.sbg1.cloud.ovh.net
-dig storage.gra1.cloud.ovh.net
-dig storage.bhs1.cloud.ovh.net
+dig storage.sbg.cloud.ovh.net
+dig storage.gra.cloud.ovh.net
+dig storage.bhs.cloud.ovh.net
 ```
 
 

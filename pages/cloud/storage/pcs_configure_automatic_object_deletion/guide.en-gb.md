@@ -2,12 +2,12 @@
 title: Configure automatic object deletion
 excerpt: Configure automatic object deletion
 slug: configure_automatic_object_deletion
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g1950
 ---
+**Last updated 27th October 2021**
 
-
-## 
+##
 To easily manage your Object Storage, you may need to define the lifespan of some of your files. This allows you, for example, to keep some backups only for a specific period.
 
 This guide shows you how to set up automatic file deletion after a specified period or on a specific date.
@@ -21,7 +21,7 @@ This guide shows you how to set up automatic file deletion after a specified per
 
 
 
-## 
+##
 There are two ways to delete your objects/files
 
 - After a certain number of seconds
@@ -31,7 +31,7 @@ There are two ways to delete your objects/files
 
 
 ## After a certain number of seconds
-To do this, configure your request's X-Delete-After header 
+To do this, configure your request's X-Delete-After header
 
 
 ```
@@ -57,6 +57,5 @@ root@server:~$ swift post --header "X-Delete-At: 1448928000000" container test.t
 The file will therefore be deleted on the 1st of December 2015.
 
 
-## 
+##
  
-

@@ -2,9 +2,10 @@
 title: Lier un conteneur a un nom de domaine
 slug: pcs/link-domain
 excerpt: Retrouvez ici comment lier un nom de domaine a un conteneur.
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
+**Dernière mise à jour le 27/10/2021**
 
 ## Préambule
 Un conteneur de type Public est une bonne solution pour partager vos fichiers via internet, puisque tout le monde est en mesure d'accéder à vos données. Afin de faciliter ce partage sans utiliser une longue URL, il est possible d'utiliser un nom de domaine, qui peut être le même que celui de votre site.
@@ -46,18 +47,18 @@ Le CNAME doit suivre les règles suivantes afin d'être compris par l'Object Sto
 [NOM_DU_CONTENEUR].auth-[PROJECT_ID].storage.[REGION].cloud.ovh.net.
 ```
 
-Par exemple, pour un conteneur nommé  **staticct**  et un projet  **123xxxx456**  qui sera utilisé sur SBG1 :
+Par exemple, pour un conteneur nommé  **staticct**  et un projet  **123xxxx456**  qui sera utilisé sur SBG :
 
 
 ```bash
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 Votre enregistrement DNS sera donc :
 
 
 ```bash
-static IN CNAME staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+static IN CNAME staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -85,34 +86,34 @@ Tout comme le CNAME, il doit aussi suivre les règles suivantes en adaptant les 
 [NOM_DU_CONTENEUR].auth-[PROJECT_ID].storage.[REGION].cloud.ovh.net.
 ```
 
-Par exemple, pour un conteneur nommé  **staticct**  et un projet  **123xxxx456**  qui sera utilisé sur SBG1 :
+Par exemple, pour un conteneur nommé  **staticct**  et un projet  **123xxxx456**  qui sera utilisé sur SBG :
 
 
 ```bash
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 Votre enregistrement DNS sera donc :
 
 
 ```bash
-_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 Si vous ne souhaitez pas utiliser de sous-domaine, vous pouvez faire ainsi :
 
 
 ```bash
-_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 Enfin, la dernière étape pour la configuration du champ TXT est d'ajouter un champ A pour votre (sous-)domaine pointant vers l'adresse IP de l'Object Storage du Public Cloud. Vous pouvez l'obtenir à l'aide des commandes suivantes :
 
 
 ```bash
-dig storage.sbg1.cloud.ovh.net
-dig storage.gra1.cloud.ovh.net
-dig storage.bhs1.cloud.ovh.net
+dig storage.sbg.cloud.ovh.net
+dig storage.gra.cloud.ovh.net
+dig storage.bhs.cloud.ovh.net
 ```
 
 
@@ -124,5 +125,5 @@ dig storage.bhs1.cloud.ovh.net
 > - [ _ ] selon votre fournisseur DNS
 > - Ne pas utiliser de majuscules
 > - Remplacer auth-ProjectID par auth_ProjectID
-> 
-> 
+>
+>

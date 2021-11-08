@@ -2,12 +2,12 @@
 title: Einen Object Container mit S3QL mounten
 excerpt: Einen Object Container mit S3QL mounten
 slug: einen_object_container_mit_s3ql_mounten
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g1908
 ---
 
 
-## 
+##
 S3QL ist ein Dateisystem, das Ihnen die lokale Speicherung Ihrer Daten unter Verwendung von Cloud Storage Lösungen wie OVH Object Storage ermöglicht.
 
 Es bietet zahlreiche Funktionen wie transparente Datenkompression, Verschlüsselung oder auch die Anfertigung von Snapshots. Damit ist es besonders gut geeignet für die Erstellung von Backups.

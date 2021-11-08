@@ -2,12 +2,12 @@
 title: Otimizar os uploads para o Object Storage
 excerpt: Otimizar os uploads para o Object Storage
 slug: otimizar_os_uploads_para_o_object_storage
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g1951
 ---
 
 
-## 
+##
 Aquando do envio de ficheiros volumosos para o Object Storage (como vídeos ou imagens de discos, por exemplo), é possível utilizar o cliente OpenStack Swift para otimizar as transferências ao segmentar os ficheiros.
 Este guia explica-lhe como melhorar a velocidade dos uploads para o Object Storage graças a esta funcionalidade.
 
@@ -20,7 +20,7 @@ Este guia explica-lhe como melhorar a velocidade dos uploads para o Object Stora
 
 
 
-## 
+##
 OpenStack Swift permite-lhe armazenar ficheiros sem limite de tamanho ao dividi-lo em vários segmentos.
 
 Na realidade, quando um cliente Swift é utilizado para enviar um ficheiro, o nœud de armazenamento é determinado pelo proxy Swift ao utilizar uma hash do nome do objecto.
@@ -44,6 +44,5 @@ container_name 10Gio.dat
 É possível medir a velocidade de upload ao utilizar programas como por exemplo o iftop.
 
 
-## 
+##
 [Voltar à página inicial dos guias Cloud]({legacy}1785)
-
