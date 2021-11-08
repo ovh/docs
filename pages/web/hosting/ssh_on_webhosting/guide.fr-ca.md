@@ -15,7 +15,7 @@ Les offres d'hébergement web d'OVHcloud vous donnent accès à un espace de sto
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external} bénéficiant d'un accès SSH.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} bénéficiant d'un accès SSH.
 - Être en possession des informations permettant de vous connecter en SSH à l'espace de stockage.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}.
 
@@ -29,7 +29,7 @@ Repérez dans le tableau la colonne « SSH » afin de vérifier que l'utilisateu
 
 ![usessh](images/use-ssh-step1.png){.thumbnail}
 
-Si l'accès SSH n'est pas actif, cliquez sur le bouton `...`{.action} à droite de l'utilisateur concerné, puis sur `Modifier`{.action}. Dans la fenêtre qui s'affiche, activez alors l'accès SSH puis finalisez la modification. Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external} bénéficie bien d'un accès SSH.
+Si l'accès SSH n'est pas actif, cliquez sur le bouton `...`{.action} à droite de l'utilisateur concerné, puis sur `Modifier`{.action}. Dans la fenêtre qui s'affiche, activez alors l'accès SSH puis finalisez la modification. Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} bénéficie bien d'un accès SSH.
 
 ### Étape 2 : récupérer les informations nécessaires pour se connecter
 

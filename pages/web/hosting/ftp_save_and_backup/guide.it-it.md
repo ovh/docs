@@ -16,7 +16,7 @@ Le soluzioni di hosting Web OVH includono uno spazio di storage in cui è possib
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVH]({ovh_www}/hosting-web/){.external} (escluso il servizio Cloud Web)
+- Disporre di un piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} (escluso il servizio Cloud Web)
 - In base al metodo utilizzato, disporre dell’accesso alla gestione della soluzione di hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o della password FTP per accedere allo spazio di storage 
 
 ## Procedura

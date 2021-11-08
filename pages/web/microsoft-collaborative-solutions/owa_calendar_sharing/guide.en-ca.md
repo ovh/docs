@@ -17,7 +17,7 @@ This Exchange feature allows you to grant other people access to your calendars.
 
 ## Requirements
 
-- an [OVHcloud Exchange solution]({ovh_www}/emails/hosted-exchange) already set up
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/) already set up
 - access to your Exchange account (email address and password)
 
 

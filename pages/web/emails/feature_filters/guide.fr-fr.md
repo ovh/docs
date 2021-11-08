@@ -22,7 +22,7 @@ Par exemple : vous souhaitez que tout e-mail contenant « [SPAM] » dans le suje
 
 ## Prérequis
 
-- Disposer d'une offre e-mail MX Plan (disponible via : une offre d’[hébergement web]({ovh_www}/hebergement-web/){.external}, l'[hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external} compris avec un nom de domaine, ou l'offre MX Plan commandée séparément).
+- Disposer d'une offre e-mail MX Plan (disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, l'[hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external} compris avec un nom de domaine, ou l'offre MX Plan commandée séparément).
 - Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 > [!warning]

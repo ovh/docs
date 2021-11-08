@@ -20,7 +20,7 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 
 - Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że Twój hosting został zainstalowany
-- Posiadanie [domeny]({ovh_www}/domeny/){.external}, pod którą będzie Twoja strona WWW
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external}, pod którą będzie Twoja strona WWW
 - Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
