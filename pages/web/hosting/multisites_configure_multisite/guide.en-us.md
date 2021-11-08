@@ -16,8 +16,8 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/){.external}
-- one or more [domain names](https://www.ovh.com/world/domains/){.external}
+- a compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external}
+- one or more [domain names](https://www.ovhcloud.com/en/domains/){.external}
 - the right to modify your domain name's configuration (the [DNS Zone](../../domains/web_hosting_how_to_edit_my_dns_zone/))
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
 
@@ -59,7 +59,7 @@ This step only applies if you have selected "Add a domain registered with OVHclo
 > [!primary]
 > To add a subdomain, you must first select the primary domain from the list (example: mydomain.ovh). In the next step, you can enter the subdomain (e.g. **blog**.mydomain.ovh).
 
-You will now need to customise the way you add your domain or subdomain. Some of the choices offered cannot be selected, depending on which [Web Hosting plan](https://www.ovh.com/world/web-hosting/){.external} you have.
+You will now need to customise the way you add your domain or subdomain. Some of the choices offered cannot be selected, depending on which [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external} you have.
 
 ![multisite](images/add-multisite-step2.png){.thumbnail}
 
@@ -71,7 +71,7 @@ You will now need to customise the way you add your domain or subdomain. Some of
 |Enable CDN|Enables the CDN (which replicates and caches your website’s static elements, e.g. images) on the selected domain. To find out more about this, go to [our CDN page](https://www.ovh.co.uk/web-hosting/cdn.xml){.external}. By enabling SSL and the CDN, you can also benefit from the **HTTP2** protocol (the latter is activated by default in our Gravelines data centre).|
 |Geolocated IP|Provides you with a geolocated IP address (from a country list) for the selected domain. To find out more about this, go to [our IP page](https://www.ovh.co.uk/web-hosting/ip.xml){.external}.|
 |Enable firewall|Enables a firewall (request analysis) for the selected domain. To find out more about this, go to [our ModSecurity page](https://www.ovh.co.uk/web-hosting/mod_security.xml){.external}.|
-|Separate logs|Activates a new space for logs on the selected domain. You will need to choose a domain name from the list. The selected domain will be used as an access name for this new space. Find out more about this on [our detailed statistics page](https://www.ovh.com/world/web-hosting/website_statistics.xml){.external}.|
+|Separate logs|Activates a new space for logs on the selected domain. You will need to choose a domain name from the list. The selected domain will be used as an access name for this new space. Find out more about this on [our detailed statistics page](https://www.ovhcloud.com/en/web-hosting/uc-website-traffic-analysis/){.external}.|
 
 Once you have entered this information, click `Next`{.action}. Then check the summary that appears.
 
@@ -111,7 +111,7 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 > ![multisite](images/add-multisite-external-step4.png){.thumbnail}
 >
 
- You will now need to customise the way you add your domain. Please note that some of the options included in your [Web Hosting plan](https://www.ovh.com/world/web-hosting/){.external} cannot be enabled during this process. You will need to finalise this operation in order to use them, by modifying the multisite settings once the domain is attached.
+ You will now need to customise the way you add your domain. Please note that some of the options included in your [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external} cannot be enabled during this process. You will need to finalise this operation in order to use them, by modifying the multisite settings once the domain is attached.
 
 |Information|Description|
 |---|---|

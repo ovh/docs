@@ -17,8 +17,8 @@ OVHcloud offers several email solutions: MX Plan (included in a Web Hosting plan
 
 ## Requirements
 
-- an MX Plan email address (included in an OVHcloud [Web Hosting plan](https://www.ovh.com/world/web-hosting/){.external})
-- an [Exchange](https://www.ovh.com/world/emails/hosted-exchange/){.external} service with at least one unconfigured account (which will appear as “@configureme.me”).
+- an MX Plan email address (included in an OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external})
+- an [Exchange](https://www.ovhcloud.com/en/emails/hosted-exchange/){.external} service with at least one unconfigured account (which will appear as “@configureme.me”).
 - **no redirections set on the MX Plan email address you want to migrate**
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
 
@@ -26,7 +26,7 @@ OVHcloud offers several email solutions: MX Plan (included in a Web Hosting plan
 
 ### Step 1: Defining your project
 
-With an Exchange address, you can use collaborative features, such as calendars and contact synchronisation. Please consult the [product page](https://www.ovh.com/world/emails/hosted-exchange/) for a detailed list of features.<br>
+With an Exchange address, you can use collaborative features, such as calendars and contact synchronisation. Please consult the [product page](https://www.ovhcloud.com/en/emails/hosted-exchange/) for a detailed list of features.<br>
 If you need to migrate multiple accounts, we recommend that you set up a migration plan.
 
 ### Step 2: Ordering your Exchange accounts

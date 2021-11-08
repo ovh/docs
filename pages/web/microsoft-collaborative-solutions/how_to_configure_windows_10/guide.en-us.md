@@ -16,7 +16,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- You must have an [Exchange](https://www.ovh.com/world/emails/hosted-exchange/){.external} account.
+- You must have an [Exchange](https://www.ovhcloud.com/en/emails/hosted-exchange/){.external} account.
 - You must have Microsoft Outlook installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
 

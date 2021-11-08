@@ -16,8 +16,8 @@ Las bases de datos, que hoy en día se utilizan en la mayoría de los sistemas d
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
-- Disponer de una base de datos creada en un [alojamiento web de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Disponer de una base de datos creada en un [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - Tener la copia de seguridad que quiera importar en la base de datos.
 - Según el método de importación utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o disponer de las claves necesarias para conectarse a la base de datos.
 
@@ -33,7 +33,7 @@ Antes de empezar, deberá elegir el método que quiera utilizar para importar la
 
 - **Realizar la importación utilizando un script**: Para ello, deberá crear un script y colocarlo en el alojamiento web de OVHcloud. La creación de un script requiere conocimientos técnicos.
 
-- **Realizar la importación mediante comandos SSH**: Para ello, deberá conectarse por SSH al espacio de almacenamiento y utilizar comandos para interactuar con él. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](https://www.ovh.com/world/es/hosting){.external} son compatibles.
+- **Realizar la importación mediante comandos SSH**: Para ello, deberá conectarse por SSH al espacio de almacenamiento y utilizar comandos para interactuar con él. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} son compatibles.
 
 Algunas de las operaciones anteriores se realizan en interfaces que no pertenecen a OVHcloud, por lo que no podemos orientarle sobre cómo ejecutarlas. A continuación explicamos con más detalle los distintos métodos de importación (sin que estas explicaciones sustituyan a la ayuda de un webmaster).
 

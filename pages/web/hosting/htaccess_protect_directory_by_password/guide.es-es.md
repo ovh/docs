@@ -27,7 +27,7 @@ A veces puede ser necesario proteger el acceso a una parte del sitio web con ide
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovh.com/world/es/hosting/).
+- Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Disponer de las claves necesarias para conectarse al [espacio de almacenamiento del alojamiento](../conexion-espacio-almacenamiento-ftp-alojamiento-web/).
 

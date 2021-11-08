@@ -18,7 +18,7 @@ Delegar permisos sobre toda una cuenta de correo no siempre es recomendable. La 
 
 ## Requisitos
 
-- Tener una [solución de Exchange en OVHcloud](https://www.ovh.com/world/es/emails/hosted-exchange/) ya configurada.
+- Tener una [solución de Exchange en OVHcloud](https://www.ovhcloud.com/es/emails/hosted-exchange/) ya configurada.
 - Tener acceso a la cuenta de Exchange (dirección de correo electrónico y contraseña).
 
 

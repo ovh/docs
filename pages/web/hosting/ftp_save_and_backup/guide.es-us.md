@@ -15,7 +15,7 @@ Los planes de hosting de OVHcloud incluyen un espacio de almacenamiento en el qu
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVH](https://www.ovh.com/world/es/hosting/){.external} (salvo el hosting Cloud Web).
+- Tener contratado un [plan de hosting de OVH](https://www.ovhcloud.com/es/web-hosting/){.external} (salvo el hosting Cloud Web).
 - Según el método utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o disponer de la contraseña FTP necesaria para conectarse al espacio de almacenamiento. 
 
 ## Procedimiento

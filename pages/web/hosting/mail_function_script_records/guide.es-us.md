@@ -15,12 +15,12 @@ Los mensajes de correo automatizados son emails enviados mediante scripts. Se ut
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 > [!primary]
 >
-> Esta guía solo es aplicable a los mensajes de correo electrónico enviados desde los scripts de un alojamiento web de OVHcloud. Si quiere gestionar las direcciones de correo electrónico incluidas en su solución MX Plan o en su [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}, vaya a la sección `Correo electrónico`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+> Esta guía solo es aplicable a los mensajes de correo electrónico enviados desde los scripts de un alojamiento web de OVHcloud. Si quiere gestionar las direcciones de correo electrónico incluidas en su solución MX Plan o en su [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}, vaya a la sección `Correo electrónico`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 >
 
 ## Procedimiento

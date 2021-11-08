@@ -10,13 +10,13 @@ order: 4
 
 ## Objetivo
 
-Existen diversos motivos por los que podría tener que modificar la configuración de su [alojamiento web](https://www.ovh.com/world/es/hosting/){.external}. Para ello, OVHcloud pone a su disposición el archivo **.ovhconfig**, con el que podrá cambiar determinados parámetros.
+Existen diversos motivos por los que podría tener que modificar la configuración de su [alojamiento web](https://www.ovhcloud.com/es/web-hosting/){.external}. Para ello, OVHcloud pone a su disposición el archivo **.ovhconfig**, con el que podrá cambiar determinados parámetros.
 
 **Esta guía explica cómo editar el archivo .ovhconfig para modificar la configuración de un alojamiento web.**
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external} (salvo los planes de hosting Cloud Web).
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} (salvo los planes de hosting Cloud Web).
 - Tener la contraseña del usuario FTP para acceder al espacio de almacenamiento. 
 
 ## Procedimiento

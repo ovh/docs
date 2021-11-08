@@ -39,7 +39,7 @@ The sender sends an email to the mailing list. The moderator receives an email w
 
 ## Requirements
 
-- an MX Plan 100 minimum or [Web Hosting plan](https://www.ovh.com/world/web-hosting/){.external} eligible for mailing lists
+- an MX Plan 100 minimum or [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external} eligible for mailing lists
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
 
 ## Instructions
