@@ -16,9 +16,9 @@ Los planes de hosting de OVHcloud permiten crear un sitio web de forma fácil y 
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
-- Disponer de un [dominio](https://www.ovh.com/world/es/dominios/){.external} con el que poder acceder a su sitio web.
+- Disponer de un [dominio](https://www.ovhcloud.com/es/domains/){.external} con el que poder acceder a su sitio web.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
@@ -33,7 +33,7 @@ Con los planes de hosting de OVHcloud puede crear un sitio web desde cero o migr
 
 Usted mismo puede crear su sitio web si tiene conocimientos de desarrollo, o puede optar por utilizar un sitio web de tipo llave en mano como un CMS (del inglés *content management system*). La primera solución es más técnica, pero ofrece la posibilidad de crear un proyecto personalizado. La segunda le permite beneficiarse de la estructura de un sitio web lista para usar sin necesidad de conocimientos técnicos.
 
-Desde el área de cliente, OVHcloud pone a disposición de sus clientes una herramienta para instalar un CMS en un clic, permitiéndole elegir entre WordPress, PrestaShop, Drupal y Joomla. Si no sabe qué CMS elegir, puede consultar nuestra [comparativa de CMS](https://www.ovh.com/world/es/hosting/website/comparativa-cms/){.external}. Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVHcloud, puede instalarlo manualmente en su alojamiento.
+Desde el área de cliente, OVHcloud pone a disposición de sus clientes una herramienta para instalar un CMS en un clic, permitiéndole elegir entre WordPress, PrestaShop, Drupal y Joomla. Si no sabe qué CMS elegir, puede consultar nuestra [comparativa de CMS](https://www.ovhcloud.com/es/web-hosting/uc-cms-comparison/){.external}. Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVHcloud, puede instalarlo manualmente en su alojamiento.
 
 **Migrar un sitio web existente a OVHcloud**
 
@@ -86,7 +86,7 @@ No existe un procedimiento universal, ya que cada sitio web es diferente, pero p
 
 ### 3. Crear las direcciones de correo electrónico
 
-Puede omitir este paso si no desea utilizar las direcciones de correo electrónico que se incluyen en el [plan de hosting](https://www.ovh.com/world/es/hosting/){.external}.
+Puede omitir este paso si no desea utilizar las direcciones de correo electrónico que se incluyen en el [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external}.
 
 Para crear una o más direcciones de correo electrónico, deber estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento al que está asociado el servicio de correo. A continuación, abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}.
 

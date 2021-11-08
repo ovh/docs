@@ -15,7 +15,7 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 
 ## Voraussetzungen
 
-- Sie besitzen ein [Exchange](https://www.ovh.de/emails/hosted-exchange/){.external} Angebot.
+- Sie besitzen ein [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external} Angebot.
 - Die Microsoft Outlook Anwendung ist auf Ihrem Mac installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
@@ -56,7 +56,7 @@ Sie können eine Test-E-Mail versenden, um zu überprüfen, ob der Account korre
 
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
-OVH bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen](https://www.ovh.de/emails/){.external}. Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+OVH bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen](https://www.ovhcloud.com/de/emails/){.external}. Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 ## Weiterführende Informationen
 

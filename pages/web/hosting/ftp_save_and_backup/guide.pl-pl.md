@@ -15,7 +15,7 @@ W ramach usługi hostingu OVH otrzymujesz dostęp do przestrzeni dyskowej, na kt
 
 ## Wymagania początkowe
 
-- Posiadanie oferty [hostingu](https://www.ovh.pl/hosting/){.external} (nie dotyczy hostingu Cloud Web).
+- Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external} (nie dotyczy hostingu Cloud Web).
 - W zależności od użytej metody, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub posiadanie hasła użytkownika FTP umożliwiającego zalogowanie do przestrzeni dyskowej. 
 
 ## W praktyce

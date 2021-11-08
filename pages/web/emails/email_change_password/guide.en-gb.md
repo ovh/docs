@@ -16,7 +16,7 @@ You can use the email addresses created as part of the MX Plan solution to send 
 
 ## Requirements
 
-- an MX Plan solution, available as part of our [web hosting plans](https://www.ovh.co.uk/web-hosting/){.external}, the [free Start 10M hosting plan](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external}, or ordered separately as a standalone solution
+- an MX Plan solution, available as part of our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/){.external}, the [free Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/){.external}, or ordered separately as a standalone solution
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} in the `Web Cloud`{.action} section, or access to the email address via Outlook Web Messenger (OWA) [webmail](https://www.ovh.co.uk/mail/){.external}
 
 > [!primary]

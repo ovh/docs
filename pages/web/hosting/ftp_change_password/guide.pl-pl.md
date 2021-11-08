@@ -16,7 +16,7 @@ Wraz z pakietami hostingowymi OVH zyskujesz dostęp do przestrzeni dyskowej umo�
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
+- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
@@ -31,7 +31,7 @@ W tabeli wyświetlają się nazwy użytkowników FTP utworzone na Twoim hostingu
 
 ### Etap 2: zmiana hasła użytkownika FTP
 
-Zmiana hasła do konta FTP utworzonego na Twoim hostingu może zostać przeprowadzona na dwa różne sposoby, w zależności od wybranej oferty [hostingu](https://www.ovh.pl/hosting/){.external}:
+Zmiana hasła do konta FTP utworzonego na Twoim hostingu może zostać przeprowadzona na dwa różne sposoby, w zależności od wybranej oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}:
 
 - **w przypadku pakietów, które nie pozwalają tworzyć wielu użytkowników FTP** (oferty Start 10MB, Kimsufi Web i Hosting Perso): kliknij ikonę ołówka w kolumnie `Hasło`{.action} tabeli, wprowadź nowe hasło, a następnie zatwierdź zmianę;
 
@@ -58,7 +58,7 @@ Nowe hasło będzie aktywne kilku minutach.
 
 Po zmianie hasła do konta FTP możesz zalogować się do Twojej przestrzeni dyskowej
 
-W zależności od [pakietu hostingowego](https://www.ovh.pl/hosting/){.external} masz kilka możliwości:
+W zależności od [pakietu hostingowego](https://www.ovhcloud.com/pl/web-hosting/){.external} masz kilka możliwości:
 
 - **FTP Explorer**: umożliwia dostęp do przestrzeni dyskowej przy użyciu przeglądarki internetowej. Aby skorzystać z tej opcji, pozostań w zakładce `FTP - SSH`{.action} i kliknij przycisk `FTP Explorer`{.action};
 

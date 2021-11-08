@@ -71,7 +71,7 @@ Para modificar la contraseña de una dirección de correo deberá actualizarla e
 ## Conexión SSH
 Para conectarse en SSH («Secure Shell») es necesario contratar un plan de web hosting Profesional o superior. La conexión se realiza con las mismas claves que para la conexión FTP. 
 
-Si desea contratar un plan de web hosting con conexión SSH, consulte nuestros [planes de web hosting](https://www.ovh.es/hosting/).
+Si desea contratar un plan de web hosting con conexión SSH, consulte nuestros [planes de web hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 
 
 ## Módulos en un clic

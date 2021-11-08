@@ -50,7 +50,7 @@ Aus diesem Grund stellen wir Ihnen zwei verschiedene Migrationsprozesse zur Verf
 
 #### Schritt 1: OVH Webhosting bestellen
 
-Bestellen Sie Ihr Webhosting auf der Website von [OVH](https://www.ovh.de/hosting/){.external}. Achten Sie darauf, den Transfer Ihrer Domain noch nicht zu veranlassen. Dieser wird in einem anderen Schritt durchgeführt. Sobald Ihre Zahlung eingegangen ist, wird Ihr Webhosting installiert. Im Anschluss erhalten Sie eine Bestätigungs-E-Mail zur abgeschlossenen Installation.
+Bestellen Sie Ihr Webhosting auf der Website von [OVH](https://www.ovhcloud.com/de/web-hosting/){.external}. Achten Sie darauf, den Transfer Ihrer Domain noch nicht zu veranlassen. Dieser wird in einem anderen Schritt durchgeführt. Sobald Ihre Zahlung eingegangen ist, wird Ihr Webhosting installiert. Im Anschluss erhalten Sie eine Bestätigungs-E-Mail zur abgeschlossenen Installation.
 
 #### Schritt 2: Ihre Website transferieren
 

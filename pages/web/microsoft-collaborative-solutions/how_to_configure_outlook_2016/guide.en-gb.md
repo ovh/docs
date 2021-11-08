@@ -21,7 +21,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- an [OVHcloud Exchange account](https://www.ovh.co.uk/emails/hosted-exchange/){.external}
+- an [OVHcloud Exchange account](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/){.external}
 - Microsoft Outlook 2016 or later installed on your device
 - login credentials for the email account to be configured
 - The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](../adding-domain-exchange/).

@@ -17,7 +17,7 @@ Gli indirizzi email dell’offerta MX Plan possono essere configurati su un clie
 
 ## Prerequisiti
 
-- Disporre di un indirizzo email MX Plan compreso nell’offerta MX Plan o in un’offerta di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
+- Disporre di un indirizzo email MX Plan compreso nell’offerta MX Plan o in un’offerta di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external}
 - Aver installato l’applicazione Posta sul proprio dispositivo
 - Disporre delle credenziali associate all’indirizzo email da configurare
 

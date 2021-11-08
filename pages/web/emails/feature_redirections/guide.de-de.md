@@ -36,7 +36,7 @@ Es gibt zwei Arten von Weiterleitungen:
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie besitzen ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovh.de/hosting/) Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovh.de/domains/angebot_hosting_start10m.xml) oder separat bestellbar.
+- Sie besitzen ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellbar.
 
 ## In der praktischen Anwendung
 

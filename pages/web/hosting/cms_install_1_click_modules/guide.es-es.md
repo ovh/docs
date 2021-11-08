@@ -16,7 +16,7 @@ Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](https://www.ovh.es/hosting/).
+- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 - Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth//).
 - No haber descargado archivos en el directorio en el que vaya a instalar el módulo.
 - El dominio (y el subdominio, en su caso) que utilice para el sitio web debe estar declarado como multisitio.
@@ -28,9 +28,9 @@ Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida
 
 Los CMS (del inglés *content management system*) permiten diseñar un sitio web a través de una interfaz fácil de usar. Existen distintos CMS en función del proyecto que desee crear. Estos módulos le permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.).
 
-OVH ofrece cuatro CMS con sus módulos en un clic, por lo que podrá elegir el que mejor se adapte a su proyecto. Si ya ha elegido su CMS, solo tiene que seguir los pasos que se indican en esta guía.  Si, por el contrario, todavía no ha elegido un CMS, puede consultar nuestra [comparativa de CMS](https://www.ovh.es/hosting/website/comparativa-cms/).
+OVH ofrece cuatro CMS con sus módulos en un clic, por lo que podrá elegir el que mejor se adapte a su proyecto. Si ya ha elegido su CMS, solo tiene que seguir los pasos que se indican en esta guía.  Si, por el contrario, todavía no ha elegido un CMS, puede consultar nuestra [comparativa de CMS](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/).
 
-Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVH, puede instalarlo manualmente en su alojamiento, siempre que dicho CMS sea compatible con su [plan de hosting](https://www.ovh.es/hosting/).
+Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVH, puede instalarlo manualmente en su alojamiento, siempre que dicho CMS sea compatible con su [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 
 ![Logotipos de los CMS](images/CMS_logo.png){.thumbnail}
 
@@ -137,11 +137,11 @@ Para más información sobre las distintas funcionalidades de su nuevo sitio web
 
 ## Más información
 
-[Elegir un CMS para crear un sitio web](https://www.ovh.es/hosting/website/comparativa-cms/){.external}
+[Elegir un CMS para crear un sitio web](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/){.external}
 
 [Gestionar una base de datos desde un alojamiento compartido](https://docs.ovh.com/es/hosting/gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
 
-Descubra nuestras [opciones de SQL Privado](https://www.ovh.es/hosting/opciones-sql.xml){.external}.
+Descubra nuestras [opciones de SQL Privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/){.external}.
 
 Descubra nuestras [bases de datos Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}.
 

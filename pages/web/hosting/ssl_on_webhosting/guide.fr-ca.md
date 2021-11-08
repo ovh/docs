@@ -16,8 +16,8 @@ Votre hébergement web vous permet de gérer un certificat SSL. Vous pouvez comm
 
 ## Prérequis
 
-- Posséder un [hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
-- Avoir enregistré au moins un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external}.
+- Posséder un [hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
+- Avoir enregistré au moins un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external}.
 - Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie « Web ».
 
 ## En pratique
@@ -34,7 +34,7 @@ Il existe plusieurs manières de gérer un certificat SSL sur votre hébergement
 
 ### Activer un certificat SSL sur un multisite <a name="multisite"></a>
 
-Selon le [certificat SSL ](https://www.ovh.com/ca/fr/hebergement-web/ssl_mutualise.xml){.external} que vous souhaitez commander, vous pouvez activer une connexion SSL sécurisée sur un ou plusieurs de vos multisites. Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Positionnez-vous ensuite sur l'onglet `Multisite`{.action}.
+Selon le [certificat SSL ](https://www.ovhcloud.com/fr-ca/web-hosting/options/ssl/){.external} que vous souhaitez commander, vous pouvez activer une connexion SSL sécurisée sur un ou plusieurs de vos multisites. Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Positionnez-vous ensuite sur l'onglet `Multisite`{.action}.
 
 Le tableau qui s'affiche contient tous les noms de domaine ajoutés à votre hébergement web. La colonne « SSL » vous montre l'état d'activation des connexions SSL sécurisées sur vos multisites.
 
@@ -65,10 +65,10 @@ Une fois que vous avez soumis la demande d'activation, l'état de la connexion s
 
 ### Activer un certificat SSL sur votre hébergement web <a name="enablessl"></a>
 
-Votre hébergement web OVHcloud vous permet d'activer un [certificat SSL selon plusieurs solutions](https://www.ovh.com/ca/fr/hebergement-web/ssl_mutualise.xml){.external} :
+Votre hébergement web OVHcloud vous permet d'activer un [certificat SSL selon plusieurs solutions](https://www.ovhcloud.com/fr-ca/web-hosting/options/ssl/){.external} :
 
-- un certificat SSL gratuit Let's Encrypt [inclus avec une offre d'hébergement web compatible](https://www.ovh.com/ca/fr/hebergement-web/ssl_mutualise.xml){.external} ;
-- un certificat SSL payant [en option avec un hébergement web compatible](https://www.ovh.com/ca/fr/hebergement-web/ssl_mutualise.xml){.external} ;
+- un certificat SSL gratuit Let's Encrypt [inclus avec une offre d'hébergement web compatible](https://www.ovhcloud.com/fr-ca/web-hosting/options/ssl/){.external} ;
+- un certificat SSL payant [en option avec un hébergement web compatible](https://www.ovhcloud.com/fr-ca/web-hosting/options/ssl/){.external} ;
 - l'importation d'un certificat SSL commandé auprès d'un autre fournisseur.
 
 Pour activer votre certificat, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis sélectionnez l'hébergement concerné. Cliquez sur l'onglet `Informations générales`{.action}. Sous l'onglet « Certificat SSL », la mention « Non » devrait apparaître, indiquant qu'aucun certificat SSL n'a été configuré ni installé sur votre hébergement web.
@@ -85,7 +85,7 @@ Si le mot « Oui » apparaît, cela signifie qu'un certificat SSL a déjà ét
 
 ![managessl](images/manage-ssl-step1.png){.thumbnail}
 
-Dans la fenêtre qui apparaît, sélectionnez le certificat SSL que vous souhaitez commander. Selon votre [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} et sa configuration, il se peut qu'aucune des solutions répertoriées ci-dessous ne soit disponible. Une fois que vous avez sélectionné une option, cliquez sur le bouton `Suivant`{.action}.
+Dans la fenêtre qui apparaît, sélectionnez le certificat SSL que vous souhaitez commander. Selon votre [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} et sa configuration, il se peut qu'aucune des solutions répertoriées ci-dessous ne soit disponible. Une fois que vous avez sélectionné une option, cliquez sur le bouton `Suivant`{.action}.
 
 ![managessl](images/manage-ssl-step2.png){.thumbnail}
 

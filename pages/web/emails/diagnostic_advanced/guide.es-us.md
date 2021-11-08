@@ -59,7 +59,7 @@ Desde el navegador de su ordenador o desde un smartphone, vaya a la dirección <
 
 ### No consigo conectarme al webmail
 
-Asegúrese de tener la contraseña correcta. Si lo necesita, puede modificarlo. Compruebe también si la doble autenticación está activada (solo [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/)).
+Asegúrese de tener la contraseña correcta. Si lo necesita, puede modificarlo. Compruebe también si la doble autenticación está activada (solo [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/)).
 
 Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 

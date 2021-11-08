@@ -38,7 +38,7 @@ El remitente (<i>sender</i>) transmite el correo electrónico a la lista de difu
 
 ## Requisitos
 
-- Disponga al menos de una solución de correo electrónico MX Plan 100 o de un [Web hosting](https://www.ovh.es/hosting/){.external} compatible con las listas de difusión.
+- Disponga al menos de una solución de correo electrónico MX Plan 100 o de un [Web hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external} compatible con las listas de difusión.
 - Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento

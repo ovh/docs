@@ -16,14 +16,14 @@ Nach einem Fehler auf Ihrer Datenbank müssen Sie in der Lage sein, ein Backup w
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [SQL Private Webhosting](https://www.ovh.de/hosting/sql-optionen.xml) oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie verfügen über ein [SQL Private Webhosting](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Beachten Sie, dass die Dienste [SQL Private](https://www.ovh.de/hosting/sql-optionen.xml) und [Cloud Databases](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Host gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
+> Beachten Sie, dass die Dienste [SQL Private](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und [Cloud Databases](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Host gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 > 
 
 ### Datenbank über das Kundencenter wiederherstellen und importieren
@@ -104,7 +104,7 @@ Lassen Sie die Standardoptionen aktiviert und klicken Sie auf `Ausführen`{.acti
 
 #### MySQL oder MariaDB Datenbank über die Kommandozeile importieren
 
-Diese Aktion ist nur über [SSH]( ../webhosting_ssh_auf_ihren_webhostings/) von einem [OVHcloud Webhosting](https://www.ovh.de/hosting) aus möglich.
+Diese Aktion ist nur über [SSH]( ../webhosting_ssh_auf_ihren_webhostings/) von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
 
 ```bash
 cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --password=passwort datenbankname
@@ -123,7 +123,7 @@ cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --pa
 > [!warning]
 >
 > - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
-> - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovh.de/hosting) aus möglich.
+> - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
 >
 
 ### Import von PostgreSQL Datenbanken außerhalb des Kundencenters
@@ -132,7 +132,7 @@ In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare 
 
 #### PostgreSQL Datenbank über die Kommandozeile importieren
 
-Diese Aktion ist nur über [SSH]( ../webhosting_ssh_auf_ihren_webhostings/) von einem [OVHcloud Webhosting](https://www.ovh.de/hosting) aus möglich (ab Version "stable").
+Diese Aktion ist nur über [SSH]( ../webhosting_ssh_auf_ihren_webhostings/) von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich (ab Version "stable").
 
 ```bash
 psql --host=server --port=port --user=benutzername --password=passwort datenbankname < datenbankname.sql
@@ -151,7 +151,7 @@ psql --host=server --port=port --user=benutzername --password=passwort datenbank
 > [!warning]
 >
 > - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
-> - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovh.de/hosting) aus möglich.
+> - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
 >
 
 ## Weiterführende Informationen

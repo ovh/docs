@@ -16,7 +16,7 @@ Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych progra
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail MX Plan (zawartego w pakiecie MX Plan lub w usłudze [hostingu OVH](https://www.ovh.pl/hosting/){.external})
+- Posiadanie konta e-mail MX Plan (zawartego w pakiecie MX Plan lub w usłudze [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external})
 - Instalacja aplikacji Gmail na Twoim urządzeniu (możesz pobrać ją z Google Play Store)
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 

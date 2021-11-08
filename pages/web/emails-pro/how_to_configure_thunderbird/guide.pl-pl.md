@@ -29,7 +29,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 ## Wymagania początkowe
 
-- Posiadanie konta [E-mail Pro](https://www.ovh.pl/emaile/email-pro/).
+- Posiadanie konta [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/).
 - Instalacja programu Thunderbird na Twoim urządzeniu z systemem Windows.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować.
  

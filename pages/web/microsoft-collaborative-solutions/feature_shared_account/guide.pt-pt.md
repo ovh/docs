@@ -22,7 +22,7 @@ Uma **conta partilhada** é uma caixa de e-mail partilhada entre várias contas 
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Ter contratado uma oferta [Exchange OVHcloud](https://www.ovh.pt/emails/hosted-exchange/).
+- Ter contratado uma oferta [Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
 
 ## Instruções
 

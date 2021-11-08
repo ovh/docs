@@ -19,7 +19,7 @@ Esta função colaborativa do Exchange permite criar endereços de e-mail dedica
 
 ## Requisitos
 
-- Dispor de uma [solução Exchange OVHcloud](https://www.ovh.pt/emails/hosted-exchange/) já configurada
+- Dispor de uma [solução Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/) já configurada
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Dispor de dados de acesso para a(s) conta(s) de e-mail com acesso ao recurso.
 

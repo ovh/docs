@@ -22,7 +22,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 ## Voraussetzungen
 
-- Sie besitzen ein [E-Mail Pro](https://www.ovh.de/emails/email-pro/) Angebot.
+- Sie besitzen ein [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Angebot.
 - Die Gmail-App ist auf Ihrem Gerät installiert. Sie können diese über den Google Play Store installieren.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
@@ -93,7 +93,7 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
-OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen](https://www.ovh.de/emails/). Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen](https://www.ovhcloud.com/de/emails/). Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 
 ## Weiterführende Informationen

@@ -25,7 +25,7 @@ Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre sit
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
-- Posséder une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
+- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 
 ## En pratique
 
@@ -133,7 +133,7 @@ Une fois vos règles configurées et vos options choisies, cliquez sur `Applique
 #### Configurer les options du CDN Security
 
 > [!primary]
->  les options présentées ci-dessous nécessitent la souscription au [CDN security](https://www.ovh.com/ca/fr/hebergement-web/cdn.xml) ou au [CDN Advanced](https://www.ovh.com/ca/fr/hebergement-web/cdn.xml)
+>  les options présentées ci-dessous nécessitent la souscription au [CDN security](https://www.ovhcloud.com/fr-ca/web-hosting/options/cdn/) ou au [CDN Advanced](https://www.ovhcloud.com/fr-ca/web-hosting/options/cdn/)
 
 Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis `Modifier le CDN`{.action}. 
 

@@ -36,7 +36,7 @@ Existen dos tipos de redirecciones:
 ## Requisitos
 
 - Conectarse al[área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Tener una solución MX Plan. Esta solución viene incluida en el [plan de hosting de OVHcloud](https://www.ovh.es/hosting/){.external}, en el [alojamiento gratuito Start 10M](https://www.ovh.es/dominios/oferta_hosting_start10m.xml){.external} o puede contratarse por separado.
+- Tener una solución MX Plan. Esta solución viene incluida en el [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}, en el [alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external} o puede contratarse por separado.
 
 ## Procedimiento
 

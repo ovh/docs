@@ -16,7 +16,7 @@ La solución E-mail Pro le permite disfrutar de direcciones de correo electróni
 
 ## Requisitos
 
-- Tener una cuenta [E-mail Pro](https://www.ovh.es/emails/email-pro/){.external}.
+- Tener una cuenta [E-mail Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external}.
 - Haber recibido el mensaje de correo electrónico de confirmación de la instalación de la solución E-mail Pro.
 - Tener un nombre de dominio.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.

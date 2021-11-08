@@ -27,9 +27,9 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 
 ## Requisitos
 
-- Disponer de un [plan de hosting](https://www.ovh.es/hosting/) OVHcloud.
+- Disponer de un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Utilizar uno de nuestros productos de bases de datos [Web Cloud](https://www.ovh.es/hosting/opciones-sql.xml) o [SQL Privado](../primeros-pasos-con-sql-privado/).
+- Utilizar uno de nuestros productos de bases de datos [Web Cloud](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) o [SQL Privado](../primeros-pasos-con-sql-privado/).
 
 ## Procedimiento
 
@@ -106,7 +106,7 @@ Desbloquee la base de datos de tres formas distintas:
 
 #### Método 1: cambiar la suscripción a un plan superior
 
-Si dispone de una fórmula **Personal** o **Profesional**, le recomendamos que cambie a [plan de hosting superior](https://www.ovh.es/hosting/). Este cambio de suscripción aumentará el tamaño de la base de datos, lo que la reabrirá automáticamente. Este método es el más sencillo y no necesita conocimientos técnicos específicos.
+Si dispone de una fórmula **Personal** o **Profesional**, le recomendamos que cambie a [plan de hosting superior](https://www.ovhcloud.com/es-es/web-hosting/). Este cambio de suscripción aumentará el tamaño de la base de datos, lo que la reabrirá automáticamente. Este método es el más sencillo y no necesita conocimientos técnicos específicos.
 
 > [!warning]
 >
@@ -125,7 +125,7 @@ Si utiliza un plan **Performance**, consulte el [método 2](#methode2).
 
 También puede migrar sus datos a una nueva base de datos:
 
-- Contrate, si es necesario, una [base de datos](https://www.ovh.es/hosting/opciones-sql.xml) de mayor tamaño y lance su [creación](../crear-base-de-datos/).
+- Contrate, si es necesario, una [base de datos](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) de mayor tamaño y lance su [creación](../crear-base-de-datos/).
 - Realice un [exportar sus datos](../web_hosting_exportacion_de_una_base_de_datos/) y a continuación [importar los](../web_hosting_importacion_de_una_base_de_datos_mysql/) en la nueva base de datos;
 - Integre las claves de la nueva base de datos en el [archivo de configuración](#config_file) de su sitio web.
 
@@ -156,7 +156,7 @@ Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Confi
 
 ### Memoria RAM rebasada
 
-El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), indica que su servidor [SQL privado](https://www.ovh.es/hosting/opciones-sql.xml) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
+El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), indica que su servidor [SQL privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
@@ -193,7 +193,7 @@ Este mensaje de error significa que la base de datos que está intentando import
 >
 > ¿Qué elementos del script de importación de mi base de datos pueden causar un error "#1044 - Access denied for user to database"?
 
-Tener un **"trigger"** en el script de importación de su base de datos no está autorizado en los servidores de alojamiento compartido de OVHcloud. En ese caso, importe la base de datos en un servidor [SQL Privado](https://www.ovh.es/hosting/opciones-sql.xml).
+Tener un **"trigger"** en el script de importación de su base de datos no está autorizado en los servidores de alojamiento compartido de OVHcloud. En ese caso, importe la base de datos en un servidor [SQL Privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/).
 
 Por otro lado, no está permitida la siguiente petición:
 
@@ -245,7 +245,7 @@ En ese caso, [compruebe los identificadores indicados](../conectar-base-de-datos
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
 >
 
-El número máximo de conexiones activas para las bases de datos entregadas con los alojamientos compartidos [StartSQL](https://www.ovh.es/hosting/opciones-sql.xml) es de **30**.
+El número máximo de conexiones activas para las bases de datos entregadas con los alojamientos compartidos [StartSQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) es de **30**.
 
 Este número es de **200** para las bases de servidores [SQL Privado](../primeros-pasos-con-sql-privado/). (Puede cambiar este parámetro en la sección `Configuración`{.action} del servidor de la base de datos).
 

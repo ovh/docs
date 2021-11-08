@@ -26,7 +26,7 @@ Por ejemplo: desea que se elimine todo email que contenga "[SPAM]" en el asunto.
 
 ## Requisitos
 
-- Tener una solución de correo MX Plan o un [plan de hosting](https://www.ovh.com/world/es/hosting/){.external} .
+- Tener una solución de correo MX Plan o un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external} .
 - Tener acceso al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento

@@ -16,9 +16,9 @@ Właśnie kupiłeś hosting, aby stworzyć swoją stronę internetową. Umożliw
 
 ## Wymagania początkowe
 
-- Zakupienie [hostingu OVH](https://www.ovh.pl/hosting/){.external}.
+- Zakupienie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Otrzymanie wiadomości e-mail potwierdzającej uruchomienie usługi.
-- Posiadanie [nazwy domeny](https://www.ovh.pl/domeny/){.external}, czyli adresu, pod którym dostępna będzie Twoja strona.
+- Posiadanie [nazwy domeny](https://www.ovhcloud.com/pl/domains/){.external}, czyli adresu, pod którym dostępna będzie Twoja strona.
 - Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
@@ -32,7 +32,7 @@ Dzięki hostingowi OVH, możesz stworzyć nową stronę internetową lub przenie
 
 Jeżeli posiadasz odpowiednią wiedzę w zakresie programowania, możesz sam stworzyć stronę internetową lub skorzystać z gotowych rozwiązań CMS (Content Management System). Pierwsze z podanych rozwiązań wymaga umiejętności technicznych, jednak daje możliwość stworzenia unikalnej strony WWW. Drugie rozwiązanie umożliwia skorzystanie z gotowego projektu strony bez konieczności posiadania umiejętności technicznych.
 
-OVH udostępnia w Panelu klienta narzędzia umożliwiające automatyczną instalację wybranego systemu CMS: WordPress, PrestaShop, Drupal lub Joomla. Jeżeli nie wiesz, który z systemów CMS wybrać, poniższe [zestawienie](https://www.ovh.pl/hosting/website/porownanie-cms/){.external} pomoże Ci podjąć decyzję. Jeżeli OVH nie ma w swojej ofercie systemu CMS, który chcesz wykorzystać, możesz zainstalować go ręcznie na hostingu.
+OVH udostępnia w Panelu klienta narzędzia umożliwiające automatyczną instalację wybranego systemu CMS: WordPress, PrestaShop, Drupal lub Joomla. Jeżeli nie wiesz, który z systemów CMS wybrać, poniższe [zestawienie](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/){.external} pomoże Ci podjąć decyzję. Jeżeli OVH nie ma w swojej ofercie systemu CMS, który chcesz wykorzystać, możesz zainstalować go ręcznie na hostingu.
 
 - **Przenoszenie istniejącej już strony na serwer OVH**
 
@@ -85,7 +85,7 @@ Biorąc pod uwagę, że strony internetowe mogą się w znaczącym stopniu od si
 
 ### Etap 3: tworzenie adresów e-mail
 
-Możesz pominąć ten etap, jeżeli nie chcesz korzystać z adresów e-mail wchodzących w skład Twojego [pakietu hostingowego](https://www.ovh.pl/hosting){.external}. Aby stworzyć jeden lub kilka adresów e-mail, upewnij się najpierw, że jesteś zalogowany do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku usług po lewej stronie wybierz sekcję `E-maile`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `E-maile`{.action} wybierz opcję `Załóż adres e-mail`{.action}.
+Możesz pominąć ten etap, jeżeli nie chcesz korzystać z adresów e-mail wchodzących w skład Twojego [pakietu hostingowego](https://www.ovhcloud.com/pl/web-hosting/){.external}. Aby stworzyć jeden lub kilka adresów e-mail, upewnij się najpierw, że jesteś zalogowany do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku usług po lewej stronie wybierz sekcję `E-maile`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `E-maile`{.action} wybierz opcję `Załóż adres e-mail`{.action}.
 
 ![Załóż adres e-mail](images/create_an_email_address.png){/thumbnail}
 

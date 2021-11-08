@@ -15,7 +15,7 @@ Il servizio di posta Exchange permette di usufruire di indirizzi email professio
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange](https://www.ovh.it/emails/){.external}
+- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/){.external}
 - Disporre di almeno due account attivi e configurati sulla stessa piattaforma Exchange OVH
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre delle credenziali dell’account Exchange a cui verranno delegati i diritti

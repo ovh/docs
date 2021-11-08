@@ -40,7 +40,7 @@ Para além da [gestão dos contactos](../../customer/gestao_dos_contactos/), o r
 > Em caso de dúvida, recomendamos que consulte os seguintes recursos:
 >
 > - O sítio Web do registo TLD correspondente;
-> - a [lista dos TLD disponíveis na OVHcloud](https://www.ovh.pt/dominios/precos/);
+> - a [lista dos TLD disponíveis na OVHcloud](https://www.ovhcloud.com/pt/domains/tld/);
 > - a secção `Operações em curso`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para verificar as atualizações do estado do domínio.
 >
 

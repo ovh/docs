@@ -53,7 +53,7 @@ Se mostrará una tabla con los servidores DNS actualmente configurados en OVHclo
 
 > [!primary]
 >
-> Cuando se utilizan los servidores DNS de OVHcloud, los números de servidores no guardan relación con el servicio o servicios que utiliza. Sólo la opción [DNS anycast](https://www.ovh.com/world/es/dominios/dns-anycast/) utiliza servidores DNS específicos que se le atribuyen automáticamente.
+> Cuando se utilizan los servidores DNS de OVHcloud, los números de servidores no guardan relación con el servicio o servicios que utiliza. Sólo la opción [DNS anycast](https://www.ovhcloud.com/es/domains/options/dns-anycast/) utiliza servidores DNS específicos que se le atribuyen automáticamente.
 
 ![Servidor DNS](images/edit-dns-server-ovh-step1.png){.thumbnail}
 

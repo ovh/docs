@@ -75,7 +75,7 @@ Cuando haya completado todos los datos, haga clic en «Conexión rápida» para 
 ## Conexión SFTP
 El SFTP (de SSH File Transfer Protocol) es una conexión FTP en el puerto 22, por lo que permite una conexión segura.
 
-Este tipo de conexión solo es válido a partir del plan [Profesional](https://www.ovh.com/world/es/hosting/).
+Este tipo de conexión solo es válido a partir del plan [Profesional](https://www.ovhcloud.com/es/web-hosting/).
 
 Permite, por ejemplo, cambiar los permisos de archivos que no se pueden ejecutar estando conectado por FTP al puerto 21.
 

@@ -22,7 +22,7 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
+- a compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - using the [1-click module](../web_hosting_web_hosting_modules/) feature to create a new website
 
@@ -43,14 +43,14 @@ This message might appear when you try to auto-create a new module. Each 1-click
 
 > [!primary]
 >
-> View our comparison of different [hosting plans](https://www.ovh.com/ca/en/web-hosting/).
+> View our comparison of different [hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/).
 >
 
 In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), click on `Web Cloud`{.action}, then `Hosting plans`{.action}. Select the plan concerned, then click `Upgrade` in the `Plan` section.
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-With the [Professional hosting](https://www.ovh.com/ca/en/web-hosting/web-hosting-pro.xml) and [Performance hosting](https://www.ovh.com/ca/en/web-hosting/web-hosting-performance.xml) offers, you can create up to three additional 1-click modules. **Performance hosting**  plans also allow you to enable a [private SQL server](https://www.ovh.com/ca/en/web-hosting/sql-options.xml) for free.
+With the [Professional hosting](https://www.ovhcloud.com/en-ca/web-hosting/professional-offer/) and [Performance hosting](https://www.ovhcloud.com/en-ca/web-hosting/performance-offer/) offers, you can create up to three additional 1-click modules. **Performance hosting**  plans also allow you to enable a [private SQL server](https://www.ovhcloud.com/en-ca/web-hosting/options/start-sql/) for free.
 
 #### Solution 2: delete an unused database <a name="deleteDB"></a>
 
@@ -71,14 +71,14 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 
 > [!primary]
 >
-> Check our various [database offers](https://www.ovh.com/ca/en/web-hosting/sql-options.xml).
+> Check our various [database offers](https://www.ovhcloud.com/en-ca/web-hosting/options/start-sql/).
 >
 
 #### Solution 4: install your module on a database you already use
 
 To install your module on an existing database, you will need to use the [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
-To find your database login details, please read our [FAQ](https://www.ovh.co.uk/web-hosting/faq/).
+To find your database login details, please read our [FAQ](https://www.ovhcloud.com/en-gb/web-hosting/).
 
 ### “The installation directory is not empty“
 
@@ -100,7 +100,7 @@ You can also log in to your hosting plan via [FTP](../log-in-to-storage-ftp-web-
 
 After launching your module installation in advanced mode, you receive an email stating that your module cannot connect to the specified database.
 
-First check your database credentials. To find them, please read our [FAQ](https://www.ovh.co.uk/web-hosting/faq/).
+First check your database credentials. To find them, please read our [FAQ](https://www.ovhcloud.com/en-gb/web-hosting/).
 
 Then delete your module via the `1-click modules`{.action} tab.
 

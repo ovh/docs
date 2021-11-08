@@ -24,7 +24,7 @@ In the OVHcloud Control Panel, you can create universal signatures (footers) for
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- an [OVHcloud Exchange](https://www.ovh.ie/emails/hosted-exchange) or [Email Pro](https://www.ovh.ie/emails/email-pro) solution already set up
+- an [OVHcloud Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) or [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) solution already set up
 
 
 ## Instructions

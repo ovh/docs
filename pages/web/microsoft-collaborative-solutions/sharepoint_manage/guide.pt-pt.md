@@ -18,7 +18,7 @@ As ofertas SharePoint disponibilizam um espaço de armazenamento partilhado ao s
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Ter previamente subscrito uma plataforma [Hosted Exchange](https://www.ovh.pt/emails/hosted-exchange/){.external} para encomendar uma plataforma SharePoint associada.
+- Ter previamente subscrito uma plataforma [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external} para encomendar uma plataforma SharePoint associada.
 
 ## Instruções
 

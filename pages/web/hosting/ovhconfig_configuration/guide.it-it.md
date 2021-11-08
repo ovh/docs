@@ -10,13 +10,13 @@ order: 4
 
 ## Obiettivo
 
-Nel caso in cui, per diversi motivi, avessi bisogno di modificare la configurazione del tuo [hosting Web](https://www.ovh.it/hosting-web/){.external}, OVH permette di cambiare i parametri necessari tramite il file **.ovhconfig**.
+Nel caso in cui, per diversi motivi, avessi bisogno di modificare la configurazione del tuo [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}, OVH permette di cambiare i parametri necessari tramite il file **.ovhconfig**.
 
 **Questa guida ti mostra come utilizzare il file .ovhconfig del tuo hosting Web OVH.**
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} (escluso il servizio Cloud Web)
+- Disporre di un piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} (escluso il servizio Cloud Web)
 - Disporre della password associata all’utente FTP per accedere allo spazio di storage 
 
 ## Procedura
@@ -71,8 +71,8 @@ Sostituisci le variabili con i valori della configurazione che intendi utilizzar
 |Variabile|Descrizione|
 |---|---|
 |app.engine|Permette di modificare il motore PHP utilizzato dall’hosting. Inserisci “php” per attivare l’acceleratore PHP-FPM e “phpcgi” per disattivarlo.|
-|app.engine.version|Permette di definire la versione di PHP utilizzata dall’hosting tra [quelle proposte da OVH](https://www.ovh.it/hosting-web/php.xml){.external}. Inserisci la versione che vuoi utilizzare.|
-|http.firewall|Permette di attivare o disattivare il [firewall incluso sugli hosting Web OVH](https://www.ovh.it/hosting-web/mod_security.xml){.external}: inserisci “security” per attivarlo e “none” per disattivarlo.|
+|app.engine.version|Permette di definire la versione di PHP utilizzata dall’hosting tra [quelle proposte da OVH](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/){.external}. Inserisci la versione che vuoi utilizzare.|
+|http.firewall|Permette di attivare o disattivare il [firewall incluso sugli hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/options/){.external}: inserisci “security” per attivarlo e “none” per disattivarlo.|
 |environment|Permette di gestire il comportamento della cache dei file statici del tuo sito e gli errori PHP.  Inserisci “production” per ottimizzare la memorizzazione in cache e nascondere gli errori PHP o “development” per disattivare la cache e visualizzare gli errori PHP.|
 |container.image|Permette di modificare l’ambiente di esecuzione utilizzato dall’hosting. Per conoscere i motori disponibili, consulta la sezione   “Opzioni di configurazione disponibili” della guida [Modificare la configurazione di un hosting Web](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/#opzioni-di-configurazione-disponibili){.external}.|
 

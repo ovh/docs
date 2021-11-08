@@ -16,7 +16,7 @@ Uma base de dados (*database*, «DB» ou «BDD») permite armazenar elementos co
 
 ## Requisitos
 
-- Dispor de um [serviço de alojamento SQL Privado](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml){.external} ou de [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
+- Dispor de um [serviço de alojamento SQL Privado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/){.external} ou de [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções

@@ -24,7 +24,7 @@ Les comptes Exchange peuvent être configurés sur un logiciel de messagerie com
 
 ## Prérequis
 
-- Disposer d'une offre [Exchange](https://www.ovh.com/fr/emails/){.external}.
+- Disposer d'une offre [Exchange](https://www.ovhcloud.com/fr/emails/){.external}.
 - Disposer de l'application Mail installée sur votre appareil.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -83,7 +83,7 @@ Pour retrouver ce serveur, connectez-vous à votre [espace client OVH](https://w
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose une application web disposant de [fonctions collaboratives](https://www.ovh.com/fr/emails/){.external} accessible sur l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez y accéder grâce aux identifiants relatifs à votre adresse e-mail.
+OVH propose une application web disposant de [fonctions collaboratives](https://www.ovhcloud.com/fr/emails/){.external} accessible sur l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez y accéder grâce aux identifiants relatifs à votre adresse e-mail.
 
 ## Aller plus loin
 

@@ -20,7 +20,7 @@ Baza danych może zawierać dużą liczbę informacji niezbędnych dla Twojej st
 
 ## Wymagania początkowe
 
-- Posiadanie [oferty hostingu Private](https://www.ovh.pl/hosting/opcje-sql.xml) SQL lub [Cloud Databases](https://www.ovh.pl/cloud-databases/)
+- Posiadanie [oferty hostingu Private](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) SQL lub [Cloud Databases](https://www.ovh.pl/cloud-databases/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce

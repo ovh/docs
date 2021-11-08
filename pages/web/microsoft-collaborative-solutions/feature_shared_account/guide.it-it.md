@@ -23,7 +23,7 @@ Un **account condiviso** è una casella email condivisa tra più account Exchang
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Disporre di una soluzione [Exchange OVHcloud](https://www.ovh.it/emails/hosted-exchange/)
+- Disporre di una soluzione [Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/)
 
 ## Procedura
 

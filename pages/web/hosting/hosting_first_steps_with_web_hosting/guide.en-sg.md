@@ -16,9 +16,9 @@ This guide is designed for customers who have just purchased a Web Hosting plan 
 
 ## Requirements
 
-- You must have an [OVHcloud Web Hosting plan](https://www.ovh.com/sg/web-hosting/).
+- You must have an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/).
 - You must have received an email confirming that your Web Hosting plan has been set up.
-- You must have a [domain name](https://www.ovh.com/sg/domains/) that can be used to access your website.
+- You must have a [domain name](https://www.ovhcloud.com/en-sg/domains/) that can be used to access your website.
 - You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}.
 
 ## Instructions
@@ -33,7 +33,7 @@ With your OVHcloud Web Hosting plan, you can build a website from scratch, or mi
 
 You can either build your website manually, using your own programming skills, or you can use turn-key tools like Content Management Systems (CMSs). The first method requires more technical skills, but gives you total flexibility when ti comes to customising your project. The second method provides you with a ready-to-use website structure, and doesn’t require technical knowledge.
 
-In the Control Panel, OVHcloud provides a tool that allows you to install a CMS in one click. The choices available are WordPress, PrestaShop, Drupal and Joomla!. Not sure which CMS to use? You can use this [comparison page](https://www.ovh.com/sg/web-hosting/website/cms-comparison/){.external} to help you decide which one is best for you. If the CMS you want to use is not offered by OVHcloud, you can install it manually on your Web Hosting plan.
+In the Control Panel, OVHcloud provides a tool that allows you to install a CMS in one click. The choices available are WordPress, PrestaShop, Drupal and Joomla!. Not sure which CMS to use? You can use this [comparison page](https://www.ovhcloud.com/en-sg/web-hosting/uc-cms-comparison/){.external} to help you decide which one is best for you. If the CMS you want to use is not offered by OVHcloud, you can install it manually on your Web Hosting plan.
 
 - **Migrating an existing website to OVHcloud**
 
@@ -86,7 +86,7 @@ As every website is unique, there is no universal straightforward method for get
 
 ### Step 3: Create your email addresses
 
-This stage is optional if you don’t want to use the email addresses included in your [Web Hosting plan](https://www.ovh.com/sg/web-hosting/){.external}. To create one or more email addresses, please ensure that you are logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. In the services bar on the left-hand side, go to the `Emails`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `Emails`{.action} section, click `Create an email address`{.action}.
+This stage is optional if you don’t want to use the email addresses included in your [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external}. To create one or more email addresses, please ensure that you are logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. In the services bar on the left-hand side, go to the `Emails`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `Emails`{.action} section, click `Create an email address`{.action}.
 
 ![Create an email address](images/create_an_email_address.png){/thumbnail}
 

@@ -22,14 +22,14 @@ En caso de ausencia en su despacho, puede poner en marcha un contestador email q
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovh.com/world/es/hosting/){.external}.
+- Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - Haber iniciado sesión en el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
 
 > [!primary]
 >
-> Si su dirección de correo electrónico está en un servicio [**Exchange**](https://www.ovh.com/world/es/emails/hosted-exchange/) o no hay una sección de `Gestión de contestadores`{.action} en su MXplan, deberá crear el contestador desde su webmail utilizando la guía ["Implementar un contestador automático desde la interfaz OWA"](../../microsoft-collaborative-solutions/exchange_2016_crear_un_contestador_con_el_webmail_owa/).
+> Si su dirección de correo electrónico está en un servicio [**Exchange**](https://www.ovhcloud.com/es/emails/hosted-exchange/) o no hay una sección de `Gestión de contestadores`{.action} en su MXplan, deberá crear el contestador desde su webmail utilizando la guía ["Implementar un contestador automático desde la interfaz OWA"](../../microsoft-collaborative-solutions/exchange_2016_crear_un_contestador_con_el_webmail_owa/).
 
 ### Creación del contestador
 

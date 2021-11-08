@@ -16,7 +16,7 @@ Os planos de alojamento web da OVH dão acesso a um espaço de armazenamento que
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Ter um serviço de [alojamento web OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
@@ -32,7 +32,7 @@ Aparecerá uma tabela com os utilizadores FTP criados no seu alojamento. Estes u
 
 ### 2 - Alterar a palavra-passe de um utilizador FTP
 
-Para alterar a palavra-passe de um utilizador FTP criado no seu alojamento, pode fazê-lo de duas formas consoante o seu plano de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}:
+Para alterar a palavra-passe de um utilizador FTP criado no seu alojamento, pode fazê-lo de duas formas consoante o seu plano de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}:
 
 - **Para os planos onde não é possível criar vários utilizadores FTP** (plano Start 10M, Kimsufi Web e Perso): clique no ícone em forma de lápis na coluna `Palavra-passe`{.action} da tabela, introduza a nova palavra-passe no campo de texto e valide a alteração.
 
@@ -59,7 +59,7 @@ A alteração demorará alguns minutos até ficar efetiva.
 
 Depois de alterar a palavra-passe do utilizador FTP, poderá aceder ao seu espaço de armazenamento.
 
-Para isso, e dependendo do seu plano de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}, existem várias formas de o fazer:
+Para isso, e dependendo do seu plano de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}, existem várias formas de o fazer:
 
 - **Utilizar o Explorador FTP**: permite-lhe aceder ao espaço de armazenamento a partir do navegador. Para o utilizar, ainda no separador `FTP - SSH`{.action}, clique no botão `Explorador FTP`{.action}.
 

@@ -23,7 +23,7 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logicie
 
 ## Prérequis
 
-- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}).
+- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}).
 - Disposer de l'application Courrier installée sur votre appareil.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 

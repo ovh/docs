@@ -18,7 +18,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 
 ## Requirements
 
-- a [domain name](https://www.ovh.com/sg/domains/) registered with OVHcloud
+- a [domain name](https://www.ovhcloud.com/en-sg/domains/) registered with OVHcloud
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) with the necessary permissions to manage the domain name (domain administrator)
 - the registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of owner) during the last 60 days
 
@@ -34,7 +34,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 > We recommend to consult the following resources in case of any doubt:
 >
 > - the website of the respective TLD registry
-> - the [list of TLDs available at OVHcloud](https://www.ovh.com/sg/domains/prices/)
+> - the [list of TLDs available at OVHcloud](https://www.ovhcloud.com/en-sg/domains/tld/)
 > - [ICANN's explanation of EPP Status Codes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (to find out which status codes currently apply to your domain name, carry out a *Whois* search, preferably using the respective TLD registry's website)
 > - your new registrar's website and management interface, especially for questions about a pending transfer process
 >

@@ -16,7 +16,7 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
@@ -31,7 +31,7 @@ Se mostrará una tabla que contiene los usuarios FTP creados en su alojamiento. 
 
 ### 2. Cambiar la contraseña de un usuario FTP
 
-En función de su [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}, podrá cambiar la contraseña de un usuario FTP de una de las siguientes formas:
+En función de su [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}, podrá cambiar la contraseña de un usuario FTP de una de las siguientes formas:
 
 - **Planes que no permiten crear varios usuarios FTP** (plan Start 10M y plan de hosting Personal): Haga clic en el icono con forma de lápiz situado en la columna **Contraseña**, introduzca la nueva contraseña en el campo de texto y haga clic en `Aceptar`{.action}.
 
@@ -54,7 +54,7 @@ El cambio de contraseña tardará unos minutos en aplicarse.
 
 Una vez que haya cambiado la contraseña del usuario FTP, ya puede acceder a su espacio de almacenamiento.
 
-En función del [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external} del que disponga, podrá acceder de diversas formas:
+En función del [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} del que disponga, podrá acceder de diversas formas:
 
 - **Explorador FTP**: Le permite acceder a su espacio de almacenamiento desde un navegador web. Para utilizarlo, abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}.
 

@@ -33,7 +33,7 @@ Oto lista programów zawartych w pakiecie:
 
 ### Zamów licencję
 
-Przejdź na naszą stronę [OVHcloud.com](https://www.ovh.pl/office-365/){.external} i wybierz sekcję "Narzędzia współpracy" w sekcji "Web Cloud".
+Przejdź na naszą stronę [OVHcloud.com](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/){.external} i wybierz sekcję "Narzędzia współpracy" w sekcji "Web Cloud".
 
 Licencję możesz również zamówić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Po zalogowaniu wybierz `Web Cloud`{.action} na górnym pasku, następnie kliknij przycisk `Zamów`{.action} i `o365`{.action}.
 

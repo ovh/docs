@@ -16,7 +16,7 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.ie/web-hosting)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
 - an available database of those included in your Web Hosting plan
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) with the necessary permissions to manage the Web Hosting plan 
 
@@ -42,7 +42,7 @@ In the window that pops up, select the appropriate information, then click on `N
 
 |Information|Description|  
 |---|---|  
-|Database engine|Select the engine that the database will use. Databases included in an [OVHcloud Web Hosting plan](https://www.ovh.ie/web-hosting) are available with the MySQL engine only.|  
+|Database engine|Select the engine that the database will use. Databases included in an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) are available with the MySQL engine only.|  
 |Database version|Select the version used by the database engine. Verify that your website is compatible with the version you have chosen. |  
 |Database type|Select the size of the database. This size refers to the space available to your database for storing data.|   
 
@@ -106,7 +106,7 @@ To verify the available snapshots and their creation timestamp, click on the sym
 
 **Too many connections**
 
-Web Hosting databases are limited to 30 simultaneous connections (system variable *max_connections*). SQL requests should therefore be optimised to prevent this kind of error. If issues persist anyway, alternative measures should be considered i.e. switching to a Private SQL database or a [hosting plan upgrade](https://www.ovh.co.uk/web-hosting/what_web_hosting_choice.xml). 
+Web Hosting databases are limited to 30 simultaneous connections (system variable *max_connections*). SQL requests should therefore be optimised to prevent this kind of error. If issues persist anyway, alternative measures should be considered i.e. switching to a Private SQL database or a [hosting plan upgrade](https://www.ovhcloud.com/en-gb/web-hosting/uc-best-web-hosting/). 
 
 **Connection / "not found" errors**
 

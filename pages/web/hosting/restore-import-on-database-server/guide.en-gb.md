@@ -16,14 +16,14 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovh.co.uk/web-hosting/sql-options.xml) or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/)
+- a [Private SQL Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 > [!primary]
 >
-> Please note that the [Private SQL](https://www.ovh.co.uk/web-hosting/sql-options.xml) and [Cloud Databases](https://www.ovh.co.uk/cloud-databases/) solutions do not give access to the host, but to the databases hosted on it; there is no root user access. Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
+> Please note that the [Private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) and [Cloud Databases](https://www.ovh.co.uk/cloud-databases/) solutions do not give access to the host, but to the databases hosted on it; there is no root user access. Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 > 
 
 ### Restoring and importing a database from the Control Panel

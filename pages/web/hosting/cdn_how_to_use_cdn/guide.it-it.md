@@ -29,7 +29,7 @@ Per funzionare correttamente, ciascun server salva nella memoria cache una parte
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovh.it/hosting-web/){.external} attivo
+- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
 
 ## Procedura
 
@@ -137,7 +137,7 @@ Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la 
 #### Configura le opzioni della CDN Security
 
 > [!primary]
->  le opzioni presentate qui sotto richiedono la sottoscrizione della [CDN security](https://www.ovh.com/fr/hebergement-web/cdn.xml) o della [CDN Advanced](https://www.ovh.com/fr/hebergement-web/cdn.xml)
+>  le opzioni presentate qui sotto richiedono la sottoscrizione della [CDN security](https://www.ovhcloud.com/fr/web-hosting/options/cdn/) o della [CDN Advanced](https://www.ovhcloud.com/fr/web-hosting/options/cdn/)
 
 Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini `...`{.action} a destra del record multisito e poi  `Modifica la CDN `{.action}. 
 

@@ -27,7 +27,7 @@ Konta e-mail usługi MX Plan mogą być skonfigurowane w jednej z kompatybilnych
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](https://www.ovh.pl/hosting/){.external}.
+- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Instalacja aplikacji Mail na Twoim urządzeniu iOS
 - Posiadanie danych do logowania do konta e-mail, które chcesz skonfigurować.
 

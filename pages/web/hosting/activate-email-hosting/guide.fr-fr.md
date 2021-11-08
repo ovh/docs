@@ -16,8 +16,8 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} dans votre espace client OVHcloud.
-- Posséder une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} dans votre espace client OVHcloud.
+- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
@@ -35,7 +35,7 @@ La fenêtre d'activation s'affiche. Choisissez le nom de domaine auquel vous sou
 ![email-activation](images/mail-hosting02.png){.thumbnail}
 
 > [!primary]
-> Si vous souhaitez bénéficiez davantage de comptes e-mails inclus, nous invitons à commander une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} supérieure depuis notre page commerciale.
+> Si vous souhaitez bénéficiez davantage de comptes e-mails inclus, nous invitons à commander une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} supérieure depuis notre page commerciale.
 
 ### Conservation de vos adresses e-mail avant expiration de l'hébergement web
 

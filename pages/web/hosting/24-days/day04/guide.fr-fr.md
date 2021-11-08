@@ -30,7 +30,7 @@ L’équipe a choisi WordPress pour les raisons que nous avons évoquées ci-des
 
 
 ## Comment installer un blog avec OVH ?
-Sur les hébergements web d’OVH, il est possible de demander [l’installation automatique de WordPress](https://www.ovh.com/fr/hebergement-web/site/wordpress.xml){.external}. C’est la fonctionnalité appelée **module en 1 clic**. D’ailleurs, si vous souhaitez ouvrir uniquement un blog, vous pouvez demander à ce que votre hébergement web soit livré directement avec WordPress lors de la commande initiale.
+Sur les hébergements web d’OVH, il est possible de demander [l’installation automatique de WordPress](https://www.ovhcloud.com/fr/web-hosting/uc-wordpress-website/){.external}. C’est la fonctionnalité appelée **module en 1 clic**. D’ailleurs, si vous souhaitez ouvrir uniquement un blog, vous pouvez demander à ce que votre hébergement web soit livré directement avec WordPress lors de la commande initiale.
 
 OVH propose aussi d’autres modules en 1 clic :
 
@@ -38,7 +38,7 @@ OVH propose aussi d’autres modules en 1 clic :
 - **Joomla**, qui est l’un des CMS les plus utilisés après WordPress ;
 - **Drupal**,  qui est un CMS utilisé pour des projets web un peu complexes, car il présente l’avantage d’être en grande partie programmable.
 
-Vous retrouverez plus d’informations sur ces différents modules sur la page : [https://www.ovh.com/fr/hebergement-web/site/](https://www.ovh.com/fr/hebergement-web/site/){.external}
+Vous retrouverez plus d’informations sur ces différents modules sur la page : [https://www.ovhcloud.com/fr/web-hosting/uc-website/](https://www.ovhcloud.com/fr/web-hosting/uc-website/){.external}
 
 Revenons quelques instants à notre site de petites annonces. Il nous faut maintenant configurer le sous-domaine *blog.mypersonaldomain.ovh* qui va pointer vers notre futur blog. Pour cela, il faut configurer un nouveau **multisite**, c’est-à-dire un nouveau site web sur notre hébergement.
 

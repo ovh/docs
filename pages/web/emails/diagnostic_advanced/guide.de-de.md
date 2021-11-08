@@ -63,7 +63,7 @@ Gehen Sie dazu über einen Webbrowser auf die Adresse <https://www.ovh.com/de/ma
 
 ### Ich kann mich nicht mit dem Webmail verbinden
 
-Stellen Sie sicher, dass Sie das richtige Passwort haben. Sie können es nötignfalls immer im Kundencenter ändern. Überprüfen Sie auch, ob die Zwei-Faktor-Authentifizierung aktiviert ist (nur[Exchange](https://www.ovh.de/emails/hosted-exchange/)).
+Stellen Sie sicher, dass Sie das richtige Passwort haben. Sie können es nötignfalls immer im Kundencenter ändern. Überprüfen Sie auch, ob die Zwei-Faktor-Authentifizierung aktiviert ist (nur[Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/)).
 
 So ändern Sie das Passwort einer E-Mail-Adresse:
 

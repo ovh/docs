@@ -12,7 +12,7 @@ Una base de datos está formada por un conjunto de datos estructurados y organiz
 
 Los planes de web hosting de OVH incluyen por defecto bases de datos SQL. El número de bases y su capacidad dependerá del tipo de plan.
 
-Haga clic [aquí](https://www.ovh.com/world/es/hosting/){.external} para consultar nuestras guías de web hosting.
+Haga clic [aquí](https://www.ovhcloud.com/es/web-hosting/){.external} para consultar nuestras guías de web hosting.
 
 A estas bases de datos tan solo se puede acceder desde los alojamientos compartidos de OVHcloud. No es posible conectar un sitio o una aplicación fuera de OVHcloud.
 

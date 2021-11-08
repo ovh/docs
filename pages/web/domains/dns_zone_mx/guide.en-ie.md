@@ -39,7 +39,7 @@ Generally speaking, **changing MX records is a tricky task**. If you make any mi
 
 ### Step 2: Familiarise yourself with the OVH MX configuration
 
-In the table below, we have listed the OVH MX configuration to use for our MX Plan solutions (both as a standalone solution, or included as part of our [OVH Web Hosting plans](https://www.ovh.ie/web-hosting/){.external}, [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} and [Exchange](https://www.ovh.ie/emails/){.external} solutions. Our email servers also have anti-spam and anti-virus protection.
+In the table below, we have listed the OVH MX configuration to use for our MX Plan solutions (both as a standalone solution, or included as part of our [OVH Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/){.external} and [Exchange](https://www.ovhcloud.com/en-ie/emails/){.external} solutions. Our email servers also have anti-spam and anti-virus protection.
 
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|

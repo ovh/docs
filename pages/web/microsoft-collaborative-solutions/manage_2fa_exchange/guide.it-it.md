@@ -16,7 +16,7 @@ Per rafforzare la sicurezza del tuo account Exchange, puoi attivare l’autentic
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange OVHcloud](https://www.ovh.it/emails/){.external}
+- Disporre di una soluzione [Exchange OVHcloud](https://www.ovhcloud.com/it/emails/){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Aver installato un’applicazione OTP su smartphone o tablet Android o iOS. 
 

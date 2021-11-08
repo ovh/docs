@@ -11,15 +11,15 @@ legacy_guide_number: g1374
 
 ## Obiettivo
 
-I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale... gli [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](https://webhosting-infos.hosting.ovh.net){.external}.
+I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale... gli [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Questa guida ti mostra le operazioni da eseguire per mettere online un sito su un hosting Web OVH.** 
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
+- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
-- Disporre di un [dominio](https://www.ovh.it/domini/){.external} attivo, che corrisponderà all’indirizzo del sito
+- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} attivo, che corrisponderà all’indirizzo del sito
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
@@ -28,7 +28,7 @@ I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, s
 
 Per realizzare al meglio il tuo progetto, è importante avere una visione chiara dell’obiettivo da raggiungere. Cosa fare con il sito Web? Come pubblicarlo? Gli hosting OVH offrono numerose opzioni: 
 
-- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). Con i moduli in 1 click sono infatti disponibili 4 CMS già compatibili con le infrastrutture OVH. Per maggiori informazioni, consulta [questa pagina](https://www.ovh.it/hosting-web/website/){.external}.
+- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). Con i moduli in 1 click sono infatti disponibili 4 CMS già compatibili con le infrastrutture OVH. Per maggiori informazioni, consulta [questa pagina](https://www.ovhcloud.com/it/web-hosting/uc-website/){.external}.
 
 - **creare un sito chiavi in mano da installare manualmente**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...) da installare sul proprio hosting Web OVH.
 
@@ -82,7 +82,7 @@ Una volta recuperati i dati potrai connetterti allo spazio di storage in tre mod
 
 - **software compatibile con il protocollo FTP**: sarà necessario installare sul tuo computer un software compatibile con il protocollo FTP (ad esempio, FileZilla). Per informazioni sul suo utilizzo, contatta l’editor del software scelto.
 
-- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage. Questo tipo di accesso richiede conoscenze avanzate e una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} attiva.
+- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage. Questo tipo di accesso richiede conoscenze avanzate e una soluzione di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} attiva.
 
 #### 3. Caricare i file
 
@@ -111,7 +111,7 @@ Se stai migrando un sito, contatta il tuo precedente provider per recuperare il 
 
 #### 2. Creare il database in OVH (opzionale)
 
-Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVH](https://www.ovh.it/hosting-web/){.external}, [SQL Privato](https://www.ovh.it/hosting-web/opzioni-sql.xml){.external} o [Cloud DB](https://www.ovh.it/cloud/cloud-databases/){.external}) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
+Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVH](https://www.ovhcloud.com/it/web-hosting/){.external}, [SQL Privato](https://www.ovhcloud.com/it/web-hosting/options/start-sql/){.external} o [Cloud DB](https://www.ovh.it/cloud/cloud-databases/){.external}) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
 
 Per creare un nuovo database accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
 Inserisci le informazioni richieste.

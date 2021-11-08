@@ -62,7 +62,7 @@ A modificação da password de um endereço de e-mail requer que a atualize nos 
 ## A ligação SSH
 Ligar-se via SSH (Secure Shell) necessita que possuia uma oferta partilhada PRO ou superior. A ligação efetua-se com os mesmos dados de acesso que para a ligação FTP.
 
-Para obter uma oferta que permita o acesso via SSH consulte as [nossas ofertas](https://www.ovh.pt/alojamento-partilhado/)
+Para obter uma oferta que permita o acesso via SSH consulte as [nossas ofertas](https://www.ovhcloud.com/pt/web-hosting/)
 
 
 ## Os módulos em 1 clique

@@ -15,7 +15,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- You must have an [Exchange](https://www.ovh.co.uk/emails/){.external} account.
+- You must have an [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external} account.
 - You must have Microsoft Outlook installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -62,7 +62,7 @@ To check that the account has been correctly configured, you can send a test ema
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails/){.external}. You can access this application at <https://www.ovh.co.uk/mail/>. Log in using your email credentials.
+OVH also offers a web application that includes various [collaborative features](https://www.ovhcloud.com/en-gb/emails/){.external}. You can access this application at <https://www.ovh.co.uk/mail/>. Log in using your email credentials.
 
 ## Go further
 

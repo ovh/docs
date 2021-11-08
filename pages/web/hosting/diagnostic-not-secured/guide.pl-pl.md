@@ -48,9 +48,9 @@ Aby usunąć tę anomalię, należy:
 
 #### Sprawdź adres IP hostingu
 
-[Poprzednie](#objective) komunikaty błędów niekoniecznie oznaczają, że Twoja strona WWW jest zainstalowana na jednym z naszych [pakietów Web Cloud](https://www.ovh.pl/hosting/). Należy zatem sprawdzić adres IP serwera, do którego jest podłączony Twoja [nazwa domeny](https://www.ovh.pl/domeny/).
+[Poprzednie](#objective) komunikaty błędów niekoniecznie oznaczają, że Twoja strona WWW jest zainstalowana na jednym z naszych [pakietów Web Cloud](https://www.ovhcloud.com/pl/web-hosting/). Należy zatem sprawdzić adres IP serwera, do którego jest podłączony Twoja [nazwa domeny](https://www.ovhcloud.com/pl/domains/).
 
-Aby odnaleźć adres IP Twojego hostingu [hosting OVHcloud](https://www.ovh.pl/hosting/), kliknij na górze [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) na `Web Cloud`{.action}, następnie w menu po lewej stronie na `Hosting`{.action} i wybierz odpowiedni hosting.
+Aby odnaleźć adres IP Twojego hostingu [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/), kliknij na górze [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) na `Web Cloud`{.action}, następnie w menu po lewej stronie na `Hosting`{.action} i wybierz odpowiedni hosting.
 
 W zakładce `Informacje ogólne`{.action} podaj adres IPV4 i/lub IPV6 Twojego hostingu.
 
@@ -58,7 +58,7 @@ W zakładce `Informacje ogólne`{.action} podaj adres IPV4 i/lub IPV6 Twojego ho
 
 #### Sprawdź adres IP w strefie DNS
 
-Teraz sprawdź, czy adres IP podany w [Strefa DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns) odpowiada adresowi Twojej [hostingu Web Cloud](https://www.ovh.pl/hosting/).
+Teraz sprawdź, czy adres IP podany w [Strefa DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns) odpowiada adresowi Twojej [hostingu Web Cloud](https://www.ovhcloud.com/pl/web-hosting/).
 
 Kliknij przycisk `Domeny{.action} w lewym górnym rogu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz nazwę domeny Twojej strony.
 
@@ -85,7 +85,7 @@ W zakładce `Informacje ogólne`{.action} Twojego hostingu OVHcloud sprawdź sek
 
 #### Scenariusz 1: Twój hosting nie zawiera certyfikatu SSL
 
-Włącz [certyfikat SSL](https://www.ovh.pl/ssl/) na Twoim hostingu postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](../certyfikaty-ssl-na-hostingu/).
+Włącz [certyfikat SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/) na Twoim hostingu postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](../certyfikaty-ssl-na-hostingu/).
 
 #### Scenariusz 2: certyfikat SSL nie działa
 

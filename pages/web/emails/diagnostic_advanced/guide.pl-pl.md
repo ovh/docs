@@ -63,7 +63,7 @@ Przejdź na adres z poziomu przeglądarki internetowej lub smartfona <https://ww
 
 ### Nie mogę się zalogować do interfejsu Webmail
 
-Upewnij się, że posiadasz właściwe hasło. W razie potrzeby możesz go zmienić. Sprawdź również, czy weryfikacja dwuetapowa jest aktywna ([tylko Exchange](https://www.ovh.pl/emaile/hosted-exchange/)).
+Upewnij się, że posiadasz właściwe hasło. W razie potrzeby możesz go zmienić. Sprawdź również, czy weryfikacja dwuetapowa jest aktywna ([tylko Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/)).
 
 W jaki sposób zmienić hasło do konta e-mail:
 

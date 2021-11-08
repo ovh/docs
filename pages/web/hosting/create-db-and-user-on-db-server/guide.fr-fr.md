@@ -16,7 +16,7 @@ Une base de données (*database*, « DB » ou « BDD ») permet de stocker des �
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement SQL Privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external} ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
+- Disposer d'une [offre d'hébergement SQL Privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external} ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique

@@ -39,7 +39,7 @@ De forma geral, **alterar os campos MX do domínio é uma operação delicada**:
 
 ### 2 - Conhecer a configuração MX da OVH
 
-Consulte abaixo a configuração MX da OVH que deve utilizar nas soluções MX Plan (só ou incluída numa oferta de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}, [E-mail Pro](https://www.ovh.pt/emails/email-pro/){.external} e [Exchange](https://www.ovh.com/pt/emails/){.external}. Os nossos servidores de e-mail dispõem de um anti-spam e antivírus.
+Consulte abaixo a configuração MX da OVH que deve utilizar nas soluções MX Plan (só ou incluída numa oferta de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}, [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external} e [Exchange](https://www.ovh.com/pt/emails/){.external}. Os nossos servidores de e-mail dispõem de um anti-spam e antivírus.
 
 |Domínio|TTL|Tipo de registo|Prioridade|Destino|
 |---|---|---|---|---|

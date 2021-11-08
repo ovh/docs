@@ -18,7 +18,7 @@ Les modules en 1 clic permettent l'installation facile et rapide d'un site Inter
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/) compatible.
+- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) compatible.
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Ne pas avoir téléchargé de fichiers dans le répertoire où sera installé votre module.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site internet doit être déclaré en tant que multisite.
@@ -29,9 +29,9 @@ Les modules en 1 clic permettent l'installation facile et rapide d'un site Inter
 
 Un CMS (pour Content Management System) vous permet de concevoir un site web via une interface simple d'utilisation. Il en existe plusieurs types en fonction des projets de chacun. Vous pourrez ainsi bénéficier d'une structure de site prête à l'emploi à personnaliser (thème, textes, etc.) à votre convenance.
 
-OVHcloud propose 4 quatre CMS avec ses modules en 1 clic. En utilisant cette solution, vous devrez donc choisir dans cette liste. Si votre choix s'est déjà porté sur l'un d'entre eux, poursuivez les différentes étapes de ce tutoriel. Dans le cas contraire, ce [comparatif des CMS](https://www.ovh.com/ca/fr/hebergement-web/site/comparatif-cms/) pourrait vous aider dans votre décision.
+OVHcloud propose 4 quatre CMS avec ses modules en 1 clic. En utilisant cette solution, vous devrez donc choisir dans cette liste. Si votre choix s'est déjà porté sur l'un d'entre eux, poursuivez les différentes étapes de ce tutoriel. Dans le cas contraire, ce [comparatif des CMS](https://www.ovhcloud.com/fr-ca/web-hosting/uc-cms-comparison/) pourrait vous aider dans votre décision.
 
-Si vous souhaitez installer un CMS non proposé par les modules en 1 clic OVHcloud, vous pouvez toujours l'installer manuellement sur votre hébergement, sous réserve de la compatibilité de ce CMS avec votre offre (retrouvez nos offres [ici](https://www.ovh.com/ca/fr/hebergement-web/)).
+Si vous souhaitez installer un CMS non proposé par les modules en 1 clic OVHcloud, vous pouvez toujours l'installer manuellement sur votre hébergement, sous réserve de la compatibilité de ce CMS avec votre offre (retrouvez nos offres [ici](https://www.ovhcloud.com/fr-ca/web-hosting/)).
 
 ![Logo des CMS](images/CMS_logo.png){.thumbnail}
 
@@ -139,12 +139,12 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre site
 
 ## Aller plus loin
 
-[Choisir un CMS pour créer un site web](https://www.ovh.com/ca/fr/hebergement-web/site/comparatif-cms/){.external}
+[Choisir un CMS pour créer un site web](https://www.ovhcloud.com/fr-ca/web-hosting/uc-cms-comparison/){.external}
 
 [Comment partager mon hébergement web entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
 
 [Créer une base de données sur son hébergement web](../creer-base-de-donnees/){.external}
 
-Découvrez nos [offres SQL Privé](https://www.ovh.com/ca/fr/hebergement-web/options-sql.xml){.external}
+Découvrez nos [offres SQL Privé](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -16,7 +16,7 @@ Bei Ihrem OVH Webhosting können Sie ein SSL-Zertifikat verwenden. Damit haben S
 
 ## Voraussetzungen
 
-- Auf Ihrem [OVH Webhosting](https://www.ovh.de/hosting/){.external} ist ein [SSL-Zertifikat](https://www.ovh.de/ssl/){.external} installiert.
+- Auf Ihrem [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} ist ein [SSL-Zertifikat](https://www.ovh.de/ssl/){.external} installiert.
 - Sie besitzen mindestens eine Website, die über Ihr OVH Webhosting eingerichtet und zugänglich ist.
 - Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
