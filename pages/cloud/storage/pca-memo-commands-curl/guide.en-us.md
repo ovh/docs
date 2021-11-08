@@ -5,7 +5,7 @@ excerpt: Find here the main curl commands for managing your Public Cloud Archive
 section: Public Cloud Archive
 ---
 
-**Last updated 27st October 2021**
+**Last updated 27th October 2021**
 
 ## Objective
 
