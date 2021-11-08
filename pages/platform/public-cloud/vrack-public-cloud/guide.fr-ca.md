@@ -118,7 +118,7 @@ Cliquez sur le bouton `Pour commencer, créez un vRack`{.action}. Vous devrez al
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
-Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un VLAN dans le vRack depuis l'espace client OVHcloud](./#depuis-lespace-client-ovhcloud_2)
+Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un VLAN dans le vRack depuis l'espace client OVHcloud](./#depuis-lespace-client-ovhcloud_2).
 
 #### Depuis les APIv6 OVHcloud
 
