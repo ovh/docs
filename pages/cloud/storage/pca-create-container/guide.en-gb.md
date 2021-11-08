@@ -1,38 +1,34 @@
 ---
 title: Creating a Public Cloud Archive container
 slug: pca/create-container
-excerpt: Find out how to create your Public Cloud Archive containers from your Customer Area
+excerpt: Find out how to create your Public Cloud Archive containers in the OVHcloud Control Panel
 section: Public Cloud Archive
 ---
 
-
-
-**Dernière mise à jour le 27/10/2021**
+**Last updated 27th October 2021**
 
 ## Objectif
 
-Public Cloud is an unlimited storage solution with simple billing tailored to your needs. There are many types of object containers:
+Public Cloud Archive is an unlimited storage solution with simple billing tailored to your needs. There are many types of object containers:
 
 - For static hosting (static website).
-- For private hosting (e.g. storage of personal data)
-- For public hosting (to store everything that is accessible to the public)
-- For cold storage (archiving)
+- For private hosting (e.g. storage of personal data).
+- For public hosting (to store everything that is accessible to the public).
+- For cold storage (archiving).
 
-The first step is to create a container that will hold your files. This guide explains how to create it from the customer area and from the Horizon interface of Openstack
+The first step is to create a container that will hold your files. 
+
+**This guide explains how to create a container in the OVHcloud Control Panel.**
 
 ## Requirements
 
-- Be logged in to your customer area
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 ### Creating a Public Cloud Archive container from the customer area
 
-Log in to your [customer area](https://www.ovh.com/manager/#/){.external} :
-
-1. Click on the `Public Cloud`{.action} tab
-1. Click on `Cloud Archive`{.action} in the menu on the left
-1. Click `Create an object container`{.action}
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Cloud Archive`{.action} in the left-hand navigation bar under "Storage".
 
 If this is your first container :
 
@@ -55,7 +51,7 @@ Name your container, then click `Create the container`{.action} :
 > - [ _ ]
 > - And you must not use capital letters.
 >  
-> See : [Linking a container to a domain name](https://docs.ovh.com/fr/storage/pcs/link-domain/)
+> Refer to our guide on [linking a container to a domain name](https://docs.ovh.com/fr/storage/pcs/link-domain/) if necessary.
 >
 
 ![container name](images/create-container-20211006094550334.png)
@@ -66,4 +62,4 @@ Your container is now created:
 
 ## Go further
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Join our community of users on <https://community.ovh.com/en/>.
