@@ -13,7 +13,7 @@ order: 1
 Les serveurs DNS hébergent la configuration DNS d'un nom de domaine. Dans une utilisation classique, cette configuration permet de faire le lien entre votre nom de domaine et le ou les serveurs qui hébergent votre site internet et vos adresses e-mail. Ces dernières années, des personnes malveillantes ont mis au point des méthodes d'empoisonnement des serveur DNS, leur permettant de détourner le trafic vers d'autres serveurs. Il existe un moyen de protéger votre nom de domaine de ces actions : le DNSSEC.
 
 **Apprenez à activer le DNSSEC sur votre nom de domaine afin de le protéger contre le Cache Poisoning.**  
-Pour comprendre comment cette protection fonctionne, nous vous conseillons de consulter cette page : « [Comprendre le DNSSEC](https://www.ovh.com/ca/fr/domaines/service_dnssec.xml){.external} ».
+Pour comprendre comment cette protection fonctionne, nous vous conseillons de consulter cette page : « [Comprendre le DNSSEC](https://www.ovhcloud.com/fr-ca/domains/dnssec/){.external} ».
 
 ## Prérequis
 

@@ -16,7 +16,7 @@ Os planos de alojamento web da OVH dão-lhe acesso a um espaço de armazenamento
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Ter um serviço de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 
 ## Instruções
@@ -43,7 +43,7 @@ Poderá ver as informações relativas ao seu espaço de armazenamento, assim co
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
 
-Graças a estas informações, terá a possibilidade de encontrar os elementos necessários para aceder ao seu espaço de armazenamento. Caso seja necessário, consulte a tabela abaixo para saber como identificá-los. Lembre-se de que algumas informações podem não aparecer, dependendo do plano de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} que possuir.
+Graças a estas informações, terá a possibilidade de encontrar os elementos necessários para aceder ao seu espaço de armazenamento. Caso seja necessário, consulte a tabela abaixo para saber como identificá-los. Lembre-se de que algumas informações podem não aparecer, dependendo do plano de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external} que possuir.
 
 |Informação|Descrição|
 |---|---|
@@ -66,7 +66,7 @@ A ligação ao espaço de armazenamento pode ser realizada de várias formas. Co
 
 [2. Ligação através de um software FTP](./#2-ligacao-atraves-de-um-software-ftp): permite-lhe aceder ao espaço de armazenamento através de um software (tal como FileZilla ou Cyberduck). Deverá instalar com antecedência o software no seu computador.
 
-[3. Ligação através de um acesso SSH](./#3-ligacao-atraves-de-um-acesso-ssh): permite-lhe aceder ao espaço de armazenamento através de um acesso SSH. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançados, bem como um plano de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} específico.
+[3. Ligação através de um acesso SSH](./#3-ligacao-atraves-de-um-acesso-ssh): permite-lhe aceder ao espaço de armazenamento através de um acesso SSH. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançados, bem como um plano de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external} específico.
 
 #### 1. Ligação através de FTP Explorer
 

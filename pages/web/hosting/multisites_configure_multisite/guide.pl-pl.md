@@ -19,8 +19,8 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu OVHcloud](https://www.ovh.pl/hosting/){.external}.
-- Zarejestrowana domena lub kilka [domen](https://www.ovh.pl/domeny/){.external}.
+- Posiadanie kompatybilnego [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Zarejestrowana domena lub kilka [domen](https://www.ovhcloud.com/pl/domains/){.external}.
 - Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns))
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
@@ -70,11 +70,11 @@ Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego 
 |---|---|
 |Domena|Nazwa wybranej domeny wprowadzana jest automatycznie. Możesz dodać subdomenę (np. **blog**.mydomain.ovh) i jednocześnie utworzyć jej wersję wraz z WWW (np. **www.blog**.mydomain.ovh). Domena ta stanie się adresem strony WWW, którą chcesz umieścić w Internecie.|
 |Katalog główny|Określ folder na przestrzeni dyskowej, do której wskazuje domena. Pliki strony WWW będą musiały zostać umieszczone w Internecie. Na przykład, dla blog.mydomain.ovh katalogiem głównym może być "blog". Jeśli folder nie istnieje, zostanie automatycznie utworzony.|
-|SSL|Umożliwia korzystanie z bezpiecznego połączenia (HTTPS: //) z wybraną nazwą domeny. Dowiedz się więcej na [naszej stronie SSL](https://www.ovh.pl/ssl/){.external}. Aktywując SSL i CDN (Content Delivery Network), możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
-|Włącz CDN|Umożliwia aktywację CDN dla wybranej domeny (zapisywanie w pamięci podręcznej elementów statycznych Twojej strony WWW, takich jak obrazy). Dowiedz się więcej na [naszej stronie CDN](https://www.ovh.pl/hosting/cdn.xml){.external}. Aktywując SSL i CDN, możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
-|Krajowy adres IP|Umożliwia korzystanie z geolokalizowanego adresu IP (w wymienionych krajach) dla wybranej domeny. Dowiedz się więcej na [naszej stronie IP](https://www.ovh.pl/hosting/ip.xml){.external}.|
-|Włącz firewall|Umożliwia aktywację zapory (analiza zapytań) dla danej domeny. Dowiedz się więcej na [naszej stronie ModSecurity](https://www.ovh.pl/hosting/mod_security.xml){.external}.|
-|Rozdzielone logi|Umożliwia wydzielenie logów dotyczących wybranej domeny.  Wybierz z listy nazwę domeny, która będzie stanowiła dostęp do wydzielonych logów. Dowiedz się więcej na [naszej stronie szczegółowych](https://www.ovh.pl/hosting/statystyki_stron.xml){.external} statystyk.|
+|SSL|Umożliwia korzystanie z bezpiecznego połączenia (HTTPS: //) z wybraną nazwą domeny. Dowiedz się więcej na [naszej stronie SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}. Aktywując SSL i CDN (Content Delivery Network), możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
+|Włącz CDN|Umożliwia aktywację CDN dla wybranej domeny (zapisywanie w pamięci podręcznej elementów statycznych Twojej strony WWW, takich jak obrazy). Dowiedz się więcej na [naszej stronie CDN](https://www.ovhcloud.com/pl/web-hosting/options/cdn/){.external}. Aktywując SSL i CDN, możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
+|Krajowy adres IP|Umożliwia korzystanie z geolokalizowanego adresu IP (w wymienionych krajach) dla wybranej domeny. Dowiedz się więcej na [naszej stronie IP](https://www.ovhcloud.com/pl/web-hosting/options/){.external}.|
+|Włącz firewall|Umożliwia aktywację zapory (analiza zapytań) dla danej domeny. Dowiedz się więcej na [naszej stronie ModSecurity](https://www.ovhcloud.com/pl/web-hosting/options/){.external}.|
+|Rozdzielone logi|Umożliwia wydzielenie logów dotyczących wybranej domeny.  Wybierz z listy nazwę domeny, która będzie stanowiła dostęp do wydzielonych logów. Dowiedz się więcej na [naszej stronie szczegółowych](https://www.ovhcloud.com/pl/web-hosting/uc-website-traffic-analysis/){.external} statystyk.|
 
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
 
@@ -120,7 +120,7 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 |---|---|
 |Domena|Wpisz nazwę domeny, której chcesz używać. Dodaj subdomenę (np. **blog**.mydomain.ovh) i utwórz jednocześnie jej wersję wraz z WWW (np. **www.blog**.mydomain.ovh). Domena ta będzie odpowiadała adresowi strony WWW, którą chcesz umieścić w Internecie. Pamiętaj, że musisz mieć uprawnienia do modyfikacji konfiguracji domeny (jej strefy DNS), aby proces dodania domeny został ukończony.|
 |Katalog główny| Określ folder na przestrzeni dyskowej, do której wskazuje domena. Pliki strony WWW będą musiały zostać umieszczone w Internecie. Na przykład, dla blog.mydomain.ovh katalogiem głównym może być "blog". Jeśli folder nie istnieje, zostanie automatycznie utworzony.|
-|Włącz obsługę IPv6|Umożliwia aktywację protokołu IPv6 dla danej domeny. Dowiedz się więcej na [naszej stronie IP](https://www.ovh.pl/hosting/ip.xml){.external}.|
+|Włącz obsługę IPv6|Umożliwia aktywację protokołu IPv6 dla danej domeny. Dowiedz się więcej na [naszej stronie IP](https://www.ovhcloud.com/pl/web-hosting/options/){.external}.|
 
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
 
@@ -149,7 +149,7 @@ Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a nast
 >
 > Jeśli chcesz dodać kilka stron WWW, powtórz ten etap.
 >
-> Zalecamy nie instalować na jednym hostingu zbyt wielu stron. Im większa liczba zainstalowanych stron, tym większe zużycie przypisanych do danego hostingu zasobów. [Na stronie z ofertą hostingu WWW](https://www.ovh.pl/hosting/){.external} znajdziesz liczbę stron WWW, które możesz zainstalować na Twojej przestrzeni dyskowej.
+> Zalecamy nie instalować na jednym hostingu zbyt wielu stron. Im większa liczba zainstalowanych stron, tym większe zużycie przypisanych do danego hostingu zasobów. [Na stronie z ofertą hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external} znajdziesz liczbę stron WWW, które możesz zainstalować na Twojej przestrzeni dyskowej.
 >
 
 ## Sprawdź również

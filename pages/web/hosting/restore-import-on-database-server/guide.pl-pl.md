@@ -20,14 +20,14 @@ W wyniku błędu bazy danych musisz mieć możliwość przywrócenia kopii zapas
 
 ## Wymagania początkowe
 
-- Posiadanie [oferty hostingu Private](https://www.ovh.pl/hosting/opcje-sql.xml) SQL lub [Cloud Databases](https://www.ovh.pl/cloud-databases/)
+- Posiadanie [oferty hostingu Private](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) SQL lub [Cloud Databases](https://www.ovh.pl/cloud-databases/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
 > [!primary]
 >
-> Pamiętaj, że oferty [Private SQL](https://www.ovh.pl/hosting/opcje-sql.xml) i [Cloud Databases](https://www.ovh.pl/cloud-databases/) nie dają dostępu do Hosta, ale do baz danych hostowanych na Host nie ma dostępu do superużytkownika "root". Ogólne komendy SQL działają normalnie, a oprogramowanie typu HeidiSQL, SQuirreL SQL lub Adminer są w pełni kompatybilne.
+> Pamiętaj, że oferty [Private SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) i [Cloud Databases](https://www.ovh.pl/cloud-databases/) nie dają dostępu do Hosta, ale do baz danych hostowanych na Host nie ma dostępu do superużytkownika "root". Ogólne komendy SQL działają normalnie, a oprogramowanie typu HeidiSQL, SQuirreL SQL lub Adminer są w pełni kompatybilne.
 > 
 
 ### Przywracanie i importowanie bazy danych w Panelu klienta

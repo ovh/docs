@@ -21,7 +21,7 @@ Właśnie zakupiłeś usługę MX Plan. Pozwala ona na korzystanie z kont e-mail
 
 ## Wymagania początkowe
 
-- Posiadanie pakietu MX Plan Jest ona dostępna przez: oferta [hostingu](https://www.ovh.pl/hosting/), bezpłatny [hosting Start 10M](https://www.ovh.pl/domeny/oferta_serwer_start10m.xml) lub oferta MX Plan.
+- Posiadanie pakietu MX Plan Jest ona dostępna przez: oferta [hostingu](https://www.ovhcloud.com/pl/web-hosting/), bezpłatny [hosting Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub oferta MX Plan.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}.
 
 ## W praktyce <a name="instructions"></a>

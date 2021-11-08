@@ -34,7 +34,7 @@ Zdarza się to również w wyniku aktualizacji przeprowadzonej **automatycznie**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovh.pl/hosting/)
+- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 
@@ -86,7 +86,7 @@ Przewodnik "[Przewodnik dotyczący korzystania z programu FileZilla](../hosting_
 
 Ze względów bezpieczeństwa Twoja strona WWW ukrywa ewentualne szczegóły dotyczące źródła błędu 500 dla każdego, kto ją łączy za pomocą przeglądarki internetowej.
 
-Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły hostingu [pro2014](https://www.ovh.pl/hosting/hosting-pro.xml), połączyć się ze stroną za pomocą [połączenia ssh](../hosting_www_ssh_na_hostingu/).
+Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły hostingu [pro2014](https://www.ovhcloud.com/pl/web-hosting/professional-offer/), połączyć się ze stroną za pomocą [połączenia ssh](../hosting_www_ssh_na_hostingu/).
 
 ### Przywróć zawartość strony <a name="restore"></a>
 

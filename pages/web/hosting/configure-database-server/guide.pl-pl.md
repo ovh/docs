@@ -16,7 +16,7 @@ Za pomocą serwerów baz danych Private SQL i Cloud Databases możesz wpłynąć
 
 ## Wymagania początkowe
 
-- Posiadanie [oferty hostingu Private](https://www.ovh.pl/hosting/opcje-sql.xml){.external} SQL lub [Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}
+- Posiadanie [oferty hostingu Private](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/){.external} SQL lub [Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce

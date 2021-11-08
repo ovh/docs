@@ -22,7 +22,7 @@ You may need to protect access to part of your website with login credentials. Y
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/sg/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 - the [login details](../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 

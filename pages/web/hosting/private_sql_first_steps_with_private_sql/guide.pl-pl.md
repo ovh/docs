@@ -15,8 +15,8 @@ Rozwiązanie Private SQL umożliwia korzystanie z instancji SQL, posiadającej d
 
 ## Wymagania początkowe
 
-- Posiadanie usługi Private SQL (zawartego w ofercie [pakiecie hostingowym](https://www.ovh.pl/hosting/){.external} lub zakupionego w ramach [opcji SQL](https://www.ovh.pl/hosting/opcje-sql.xml){.external}).
-- Posiadanie [hostingu](https://www.ovh.pl/hosting/){.external} znajdującego się w tym samym centrum danych co instancja Private SQL (informacja ta widoczna jest w Panelu klienta OVH).
+- Posiadanie usługi Private SQL (zawartego w ofercie [pakiecie hostingowym](https://www.ovhcloud.com/pl/web-hosting/){.external} lub zakupionego w ramach [opcji SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/){.external}).
+- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external} znajdującego się w tym samym centrum danych co instancja Private SQL (informacja ta widoczna jest w Panelu klienta OVH).
 - Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce

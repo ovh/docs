@@ -29,7 +29,7 @@ These errors may also come from updates carried out **automatically** by compone
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/sg/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 
@@ -80,7 +80,7 @@ The [FileZilla guide](../web_hosting_filezilla_user_guide/#file-and-folder-permi
 
 For security reasons, your website hides all technical details about the error 500.
 
-To verify these details, you can use a [SSH connection](../web_hosting_ssh_on_web_hosting_packages/). (SSH is only available with a hosting plan of the [Business or Developer range](https://www.ovh.com/sg/web-hosting/).)
+To verify these details, you can use a [SSH connection](../web_hosting_ssh_on_web_hosting_packages/). (SSH is only available with a hosting plan of the [Business or Developer range](https://www.ovhcloud.com/en-sg/web-hosting/).)
 
 ### Restore your website to its previous state <a name="restore"></a>
 

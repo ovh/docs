@@ -16,7 +16,7 @@ With the Private SQL database servers, you can influence your server’s global 
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovh.com/sg/web-hosting/sql-options.xml)
+- a [Private SQL Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions

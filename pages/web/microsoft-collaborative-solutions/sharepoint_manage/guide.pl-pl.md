@@ -17,7 +17,7 @@ Oferty SharePoint pozwalają wykorzystać współdzieloną przestrzeń dyskową 
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Wykupienie usługi [Hosted Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external} w celu zamówienia przypisanej usługi SharePoint.
+- Wykupienie usługi [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external} w celu zamówienia przypisanej usługi SharePoint.
 
 ## W praktyce
 

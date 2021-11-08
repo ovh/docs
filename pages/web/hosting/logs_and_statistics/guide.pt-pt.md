@@ -20,7 +20,7 @@ O acesso aos logs e às estatísticas do seu site está incluído no seu plano d
 
 ## Requisitos
 
-- Ter um serviço [de alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} compatível.
+- Ter um serviço [de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instruções

@@ -16,7 +16,7 @@ With the Hosted Exchange service, you can get professional emails to use for col
 
 ## Requirements
 
-- You need to have a subscription to a [Hosted Exchange](https://www.ovh.ie/emails/hosted-exchange/) solution.
+- You need to have a subscription to a [Hosted Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) solution.
 - You need to have received an email confirming that your Hosted Exchange solution has been set up.
 - You must have a domain name.
 - You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
@@ -90,7 +90,7 @@ Once you have configured your accounts, you can now start using them. To do this
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our documentation via this portal: [https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/){.external}. To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service.
 
-OVH offers Outlook licences in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and Office 365 licences on the following page: [https://www.ovh.ie/office-365/](https://www.ovh.ie/office-365/){.external}. We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
+OVH offers Outlook licences in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and Office 365 licences on the following page: [https://www.ovhcloud.com/en-ie/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/en-ie/collaborative-tools/microsoft-365/){.external}. We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
 
 > [!primary]
 >

@@ -44,11 +44,11 @@ Quando estiver conectado à Área de Cliente, pode gerir os diferentes acessos, 
 
 Para pôr o seu site em linha na OVHcloud, deve dispor de um domínio, que corresponderá ao endereço a partir do qual o site ficará acessível (por exemplo: ovh.com). Também deve dispor de um alojamento web. Se desejar, pode consultar este guia: [Publicar um site num alojamento web](../partilhado_colocar_o_meu_website_online/)
 
-**Truques e dicas**: Para o ajudar a criar o seu site, a OVHcloud disponibiliza módulos 1 clique (por exemplo, Wordpress, Prestashop, Joomla ou Drupal). Encontre-os [aqui](https://www.ovh.pt/alojamento-partilhado/website/). Também pode consultar a nossa [documentação](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/).
+**Truques e dicas**: Para o ajudar a criar o seu site, a OVHcloud disponibiliza módulos 1 clique (por exemplo, Wordpress, Prestashop, Joomla ou Drupal). Encontre-os [aqui](https://www.ovhcloud.com/pt/web-hosting/uc-website/). Também pode consultar a nossa [documentação](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/).
 
 ### Como migrar o meu site e os meus e-mails para a OVHcloud? 
 
-Para migrar o seu site e os seus e-mails para a OVHcloud, deve dispor de um [serviço de alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, bem como de um [serviço de e-mail OVHcloud](https://www.ovh.pt/emails/){.external}. De seguida, poderá ligar-se ao servidor FTP do seu alojamento, de modo a transferir para ele os ficheiros do site. Se dispõe atualmente de uma base de dados, sugerimos que realize o respetivo backup. 
+Para migrar o seu site e os seus e-mails para a OVHcloud, deve dispor de um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, bem como de um [serviço de e-mail OVHcloud](https://www.ovhcloud.com/pt/emails/){.external}. De seguida, poderá ligar-se ao servidor FTP do seu alojamento, de modo a transferir para ele os ficheiros do site. Se dispõe atualmente de uma base de dados, sugerimos que realize o respetivo backup. 
 
 Para migrar os e-mails, tem de recriar as suas contas na OVHcloud e, depois, utilizar a nossa ferramenta de migração [OMM (OVH Mail Migrator)](https://omm.ovh.net/), que encontrará [aqui](https://omm.ovh.net/). 
 

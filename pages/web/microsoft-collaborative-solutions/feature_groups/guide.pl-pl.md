@@ -19,7 +19,7 @@ Grupy w programie Exchange umożliwiają komunikację wielu uczestników naraz p
 ## Wymagania początkowe
 
 - dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- skonfigurowane [rozwiązanie OVHcloud Exchange](https://www.ovh.pl/emaile/hosted-exchange/)
+- skonfigurowane [rozwiązanie OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
 
 
 ## W praktyce

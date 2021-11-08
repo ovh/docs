@@ -15,7 +15,7 @@ Automated emails are messages that are sent via scripts. For example, they are u
 
 ## Requirements
 
-- You must have an[OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}.
+- You must have an[OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}.
 - You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 > [!primary]

@@ -29,8 +29,8 @@ Nasze pakiety hostingowe są kompatybilne z IPv6 od 2011 roku. Aktywacja tego pr
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovh.pl/domeny/){.external} i możliwość zarządzania nią w Panelu klienta
-- Posiadanie [hostingu WWW](https://www.ovh.pl/hosting/){.external}.
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external} i możliwość zarządzania nią w Panelu klienta
+- Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce

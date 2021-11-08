@@ -15,7 +15,7 @@ With a Cloud Web hosting plan, you can choose from a range of different coding l
 
 ## Requirements
 
-- a [Cloud Web hosting plan](https://www.ovh.ie/web-hosting/cloud-web.xml)
+- a [Cloud Web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/)
 - access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
@@ -123,7 +123,7 @@ Once you have entered this information, click `Confirm`{.action}. Please ensure 
 > In our example, only PHP and Node.js environments have been created. In your project, you may be using Ruby or Python. In this case, the operations described below are
 > applicable.
 > 
-> You can use two different runtime environments alongside each other depending on which [Cloud Web hosting plan](https://www.ovh.ie/web-hosting/cloud-web.xml){.external} you choose.
+> You can use two different runtime environments alongside each other depending on which [Cloud Web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/){.external} you choose.
 > 
 
 Once you have the runtime environments you need for your project, make sure they are linked to your multi-sites. To do this, go to the `Multi-site`{.action} tab of the Cloud Web hosting plan concerned. 
