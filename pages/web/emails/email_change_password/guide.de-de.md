@@ -16,7 +16,7 @@ Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät
 
 ## Voraussetzungen
 
-- Sie besitzen ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovh.de/hosting/){.external} Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovh.de/domains/angebot_hosting_start10m.xml){.external} oder separat bestellbar.
+- Sie besitzen ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external} oder separat bestellbar.
 - Je nach der von Ihnen gewählten Vorgehensweise sind Sie entweder in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Web Cloud`{.action} oder über das [Webmail-Interface]({ovh_www}/mail/){.external} Outlook on the Web (OWA) eingeloggt.
 
 > [!primary]

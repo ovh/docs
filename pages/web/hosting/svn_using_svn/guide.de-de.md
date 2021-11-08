@@ -27,7 +27,7 @@ SVN, die Abkürzung für "Subversion", ist ein Versionsverwaltungssystem.
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting Angebot](https://www.ovh.de/hosting/) mit SSH (**ab dem Pro Angebot**).
+- Sie verfügen über ein [Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) mit SSH (**ab dem Pro Angebot**).
 - Sie können sich über SSH mit Ihrem Webhosting verbinden (vgl. unsere Anleitung [SSH-Zugang Ihres Webhostings verwenden](../webhosting_ssh_auf_ihren_webhostings/)).
 
 ## In der praktischen Anwendung

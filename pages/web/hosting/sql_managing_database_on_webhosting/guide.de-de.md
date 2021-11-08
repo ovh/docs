@@ -9,7 +9,7 @@ hidden: true
 ## Allgemeine Informationen
 Eine Datenbank ist eine Sammlung strukturierter und organisierter Daten, die dazu dient, auch große Datenmengen effizient speichern und verwenden zu können. Man spricht oft von "BDD" oder "SQL". SQL ist eine Datenbanksprache, mit der man Daten einfügen, verändern, wiederherstellen oder löschen kann.
 
-Die Webhosting-Angebote von OVH enthalten standardmäßig SQL-Datenbanken. Ihre Anzahl und maximale Größe hängen davon ab, für welches unserer Angebote Sie sich entschieden haben. Die Details zu unseren verschiedenen Angeboten finden Sie [hier](https://www.ovh.de/hosting/){.external}.
+Die Webhosting-Angebote von OVH enthalten standardmäßig SQL-Datenbanken. Ihre Anzahl und maximale Größe hängen davon ab, für welches unserer Angebote Sie sich entschieden haben. Die Details zu unseren verschiedenen Angeboten finden Sie [hier](https://www.ovhcloud.com/de/web-hosting/){.external}.
 
 Auf diese Datenbanken können Sie ausschließlich über Ihr OVH Webhosting zugreifen. Sie können keine Webseite oder Applikation außerhalb von OVH mit diesen Datenbanken verbinden.
 
@@ -167,10 +167,10 @@ Wenn die Fehlermeldung " **Too many connections**" erscheint, wenn Sie sich mit 
 ### Eine Sicherung (Dump) importieren
 Wie importiere ich das Backup meiner MySQL-Datenbank? Welche Möglichkeiten habe ich?
 
-Eine Hilfe zum Import von MySql-Datenbanken finden Sie [hier](https://www.ovh.de/hosting/guides/g1393.mutualise_guide_importation_dune_base_de_donnees_mysql){.external} .
+Eine Hilfe zum Import von MySql-Datenbanken finden Sie [hier](https://www.ovhcloud.com/de/web-hosting/guides/g1393.mutualise_guide_importation_dune_base_de_donnees_mysql){.external} .
 
 
 ### Eine Datenbank exportieren
 Wie exportiere ich meine SQL-Datenbank? Welche Möglichkeiten habe ich, um ein Backup meiner Datenbank zu erstellen?
 
-Eine Hilfe zum Export von Datenbanken finden Sie [hier](https://www.ovh.de/hosting/guides/g1394.mutualise_guide_exportation_des_bases_de_donnees){.external}.
+Eine Hilfe zum Export von Datenbanken finden Sie [hier](https://www.ovhcloud.com/de/web-hosting/guides/g1394.mutualise_guide_exportation_des_bases_de_donnees){.external}.

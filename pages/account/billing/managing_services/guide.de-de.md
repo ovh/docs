@@ -89,7 +89,7 @@ Bis zu 24 Stunden vor Ablaufdatum haben Sie die Möglichkeit, die Kündigung rü
 
 ### Dienst sofort löschen
 
-Diese Aktion ist ausschließlich für [Webhosting](https://www.ovh.de/hosting/){.external} Angebote möglich. Der ausgewählte Dienst wird sofort gelöscht, das heißt noch vor dem eigentlichen Ablaufdatum (und ohne das Vertragsende abzuwarten).
+Diese Aktion ist ausschließlich für [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebote möglich. Der ausgewählte Dienst wird sofort gelöscht, das heißt noch vor dem eigentlichen Ablaufdatum (und ohne das Vertragsende abzuwarten).
 
 **Achtung: Beim sofortigen Löschen werden alle zum Dienst gehörigen Daten unwiderruflich gelöscht. Außerdem wird für die bis zum Ablauf des Vertrages verbleibende, ungenutzte Zeit keine Rückerstattung vorgenommen.** 
 

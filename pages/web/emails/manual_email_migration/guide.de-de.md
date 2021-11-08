@@ -26,7 +26,7 @@ Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister u
 
 ## Voraussetzungen
 
-- Sie verfügen über einen E-Mail-Dienst bei OVHcloud, wie zum Beispiel [Exchange](https://www.ovh.de/emails/){.external}, [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} oder MX Plan (über das MX Plan Angebot oder in einem [OVHcloud Webhosting](https://www.ovh.de/hosting/) Angebot).
+- Sie verfügen über einen E-Mail-Dienst bei OVHcloud, wie zum Beispiel [Exchange](https://www.ovhcloud.com/de/emails/){.external}, [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/){.external} oder MX Plan (über das MX Plan Angebot oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot).
 - Sie verfügen über die Login-Daten für die E-Mail-Accounts, die Sie migrieren möchten (Quell-Accounts).
 - Sie verfügen über die Login-Daten der OVHcloud E-Mail-Accounts, auf die Sie die Inhalte übertragen möchten (Ziel-Accounts).
 
@@ -45,7 +45,7 @@ Die folgenden Anweisungen sind in zwei Teile gegliedert:
 
 ### Outlook
 
-Wenn Sie einen OVHcloud [Exchange E-Mail-Account](https://www.ovh.de/emails/hosted-exchange/) haben, können Sie diesen direkt im PST-Format über das Kundencenter exportieren.
+Wenn Sie einen OVHcloud [Exchange E-Mail-Account](https://www.ovhcloud.com/de/emails/hosted-exchange/) haben, können Sie diesen direkt im PST-Format über das Kundencenter exportieren.
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie den betreffenden Exchange Dienst aus und gehen Sie dann auf den Tab `E-Mail-Accounts`{.action}.
 
