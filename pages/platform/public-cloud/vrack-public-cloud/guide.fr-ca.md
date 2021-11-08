@@ -25,7 +25,7 @@ Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) est un réseau privé qui
 
 Que ce soit pour créer votre vRack ou ajouter une instance au sein de ce réseau, vous pouvez être amenés à utiliser l'espace client OVHcloud, les APIv6 OVHcloud, les API OpenStack ou l'interface Horizon.
 
-Selon votre profil technique et vos besoins, vous serez amenés à devoir choisir quelle interface ou méthode à utiliser. Ainsi, pour chaque action, nous vous proposerons les différentes démarches envisageables.
+Selon votre profil technique et vos besoins, vous serez amenés à devoir choisir quelle interface ou méthode utiliser. Ainsi, pour chaque action, nous vous proposerons les différentes démarches envisageables.
 
 **Voici un descriptif rapide des actions possibles suivant la méthode/interface choisie :**
 
