@@ -105,7 +105,7 @@ swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME 1.0T 0 1.0T 0% /mnt/container
 
 > [!warning]
 >
-> You cannot use S3QL in offline mode, you should not configure persistance via the /etc/fstab file but by using a script which will run when your sever starts up.
+> You cannot use S3QL in offline mode, you should not configure persistance via the /etc/fstab file but by using a script which will run when your server starts up.
 >
 
 
