@@ -158,10 +158,10 @@ In order to reverse the synchronization between two containers, you need to remo
 >
 
 ```bash
-root@serveur-1:~$ swift post -H "X-Container-Sync-To:" containerGRA
-root@serveur-1:~$ export destContainer="//OVH_PUBLIC_CLOUD/GRA/AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29/containerGRA"
-root@serveur-1:~$ export OS_REGION_NAME=BHS
-root@serveur-1:~$ swift post --sync-to "$destContainer" containerBHS
+root@server-1:~$ swift post -H "X-Container-Sync-To:" containerGRA
+root@server-1:~$ export destContainer="//OVH_PUBLIC_CLOUD/GRA/AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29/containerGRA"
+root@server-1:~$ export OS_REGION_NAME=BHS
+root@server-1:~$ swift post --sync-to "$destContainer" containerBHS
 ```
 
 ### Stop synchronization between two containers

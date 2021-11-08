@@ -8,11 +8,12 @@ order: 10
 
 **Dernière mise à jour le 27/10/2021**
 
-## Préambule
+## Objectif
+
 Si vous souhaitez déplacer vos objets d'un data-centre à un autre, ou même d'un projet à un autre, la synchronisation d'objets entre conteneurs est la meilleure solution afin d'éviter une coupure de service lors de votre migration. Ce guide vous explique comment mettre en place cette solution.
 
-
 ## Prérequis
+
 - [Préparer l'environnement pour utiliser l'API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/) avec le client swift
 - [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
 - 2 conteneurs d'objets dans 2 data centres différents
@@ -21,12 +22,13 @@ Si vous souhaitez déplacer vos objets d'un data-centre à un autre, ou même d'
 
 > [!primary]
 >
-> Si votre conteneur contient des objets supérieur à 5Gb, il faut que vos deux conteneurs aient le même nom
+> Si votre conteneur contient des objets dont la taille est supérieure à 5Gb, il faut que vos deux conteneurs aient le même nom.
 >
 
 ### Configuration de la synchronisation
 
 #### Creation de la clé de synchronisation
+
 Afin que les conteneurs puissent s'identifier, il faudra créer une clé puis la configurer sur chacun des conteneurs d'objets :
 
 - Créer la clé :
@@ -38,9 +40,10 @@ root@serveur-1:~$ sharedKey=$(openssl rand -base64 32)
 
 
 #### Configuration du conteneur destinataire
+
 Dans un premier temps, il faut configurer la clé sur le conteneur qui recevra les données. Dans notre cas, celui ci se trouve à BHS.
 
-- Vérifier la région chargée dans les variables d'environnement :
+- Vérifiez la région chargée dans les variables d'environnement :
 
 ```bash
 root@serveur-1:~$ env | grep OS_REGION
@@ -48,13 +51,13 @@ root@serveur-1:~$ env | grep OS_REGION
 OS_REGION_NAME=BHS
 ```
 
-- Configurer la clé sur le conteneur destinataire :
+- Configurez la clé sur le conteneur destinataire :
 
 ```bash
 root@serveur-1:~$ swift post --sync-key "$sharedKey" containerBHS
 ```
 
-- On vérifie que celle-ci as bien été configuré grâce la commande suivante et on récupère en même temps le contenu de la variable "Account" :
+- On vérifie que celle-ci a bien été configurée grâce à la commande suivante et on récupère en même temps le contenu de la variable "Account" :
 
 ```bash
 root@serveur-1:~$ swift stat containerBHS
@@ -75,32 +78,33 @@ Meta Access-Control-Allow-Origin: https://www.ovh.com
                     Content-Type: text/plain; charset=utf-8
 ```
 
-- Récupérer l'adresse du conteneur destinataire pour ensuite la configurer sur le conteneur source (Celle-ci est du type : "//OVH_PUBLIC_CLOUD/Région/Account/Conteneur")
+- Récupérez l'adresse du conteneur destinataire pour ensuite la configurer sur le conteneur source (Celle-ci est du type : "//OVH_PUBLIC_CLOUD/Région/Account/Conteneur")
 
 ```bash
 root@serveur-1:~$ export destContainer="//OVH_PUBLIC_CLOUD/BHS/AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29/containerBHS"
 ```
 
 #### Configuration du conteneur source
-- Changer de région dans les variables d'environnement :
+
+- Changee de région dans les variables d'environnement :
 
 ```bash
 root@serveur-1:~$ export OS_REGION_NAME=GRA
 ```
 
-- Configurer la clé sur le conteneur source :
+- Configurez la clé sur le conteneur source :
 
 ```bash
 root@serveur-1:~$ swift post --sync-key "$sharedKey" containerGRA
 ```
 
-- Configurer le destinataire sur le conteneur source :
+- Configurez le destinataire sur le conteneur source :
 
 ```bash
 root@serveur-1:~$ swift post --sync-to "$destContainer" containerGRA
 ```
 
-- Comme précédemment, il est possible de vérifier que celle ci a bien été configuré grâce la commande suivante :
+- Comme précédemment, il est possible de vérifier que celle ci a bien été configurée grâce à la commande suivante :
 
 ```bash
 root@serveur-1:~$ swift stat containerGRA
@@ -120,12 +124,11 @@ X-Storage-Policy: Policy-0
     Content-Type: text/plain; charset=utf-8
 ```
 
+#### Vérification de la synchronisation
 
+Après quelques instants (en fonction du nombre et de la taille des fichiers à envoyer), il est possible de vérifier que la synchronisation s'est bien déroulée, en listant simplement les fichiers dans chacun des conteneurs.
 
-#### Verification de la synchronisation
-Aprés quelques instants (en fonction du nombre et de la taille des fichiers à envoyer), il est possible de vérifier que la synchronisation s'est bien déroulé simplement en listant les fichiers dans chacun des conteneurs.
-
-- Lister les fichiers présents sur le conteneur source :
+- Listez les fichiers présents sur le conteneur source :
 
 ```bash
 root@serveur-1:~$ swift list containerGRA
@@ -134,7 +137,7 @@ test2.txt
 test3.txt
 ```
 
-- Lister les fichiers présents sur le conteneur destinataire :
+- Listez les fichiers présents sur le conteneur destinataire :
 
 ```bash
 root@serveur-1:~$ swift list containerBHS
@@ -145,11 +148,11 @@ test3.txt
 
 ### Inverser la synchronisation entre deux conteneurs
 
-Afin d'inverser la ssynchronisation entre deux cconteneurs, il faut supprimer la méta-donnée `--sync-to` du conteneur source, et la redéclarer sur l'autre conteneur, qui deviendra ainsi le nouveau conteneur source.
+Afin d'inverser la synchronisation entre deux aconteneurs, il faut supprimer la méta-donnée `--sync-to` du conteneur source, et la redéclarer sur l'autre conteneur, qui deviendra ainsi le nouveau conteneur source.
 
 > [!warning]
 >
-> Ne pas oubliez de changer également la région dans la nouveau URL sync-to
+> N'oubliez de changer également la région dans la nouvealle URL sync-to.
 >
 
 ```bash
@@ -161,7 +164,7 @@ root@serveur-1:~$ swift post --sync-to "$destContainer" containerBHS
 
 ### Arrêter la synchronisation entre deux conteneurs
 
-Afin d'arrêter la ssynchronisation entre deux cconteneurs, il faut supprimer les méta-données `--sync-key` et `--sync-to`
+Afin d'arrêter la synchronisation entre deux conteneurs, il faut supprimer les méta-données `--sync-key` et `--sync-to`.
 
 ```bash
 swift post -H "X-Container-Sync-Key:" containerGRA
@@ -176,4 +179,4 @@ swift post -H "X-Container-Sync-To:" containerGRA
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com>.
