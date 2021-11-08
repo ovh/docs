@@ -62,7 +62,7 @@ Dal browser del vostro computer o da uno smartphone, andate sull'indirizzo <http
 
 ### Non riesco a connettermi alla Webmail
 
-Assicurati di avere la password giusta. Se necessario, è possibile modificarlo. Verifica che la doppia autenticazione sia attiva ([solo Exchange](https://www.ovh.it/emails/hosted-exchange/)).
+Assicurati di avere la password giusta. Se necessario, è possibile modificarlo. Verifica che la doppia autenticazione sia attiva ([solo Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/)).
 
 Come modificare la password di un indirizzo email:
 

@@ -15,7 +15,7 @@ order: 6
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
+- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
@@ -37,7 +37,7 @@ order: 6
 
 ### Connessioni simultanee al database
 
-- Sui piani di hosting Web (database condivisi), sono possibili un massimo di 30 connessioni simultanee per database (200 con il database privato incluso). Per verificare le opzioni disponibili in ciascuno dei nostri piani di hosting Web, consulta i [dettagli delle nostre offerte di hosting](https://www.ovh.it/hosting-web/).
+- Sui piani di hosting Web (database condivisi), sono possibili un massimo di 30 connessioni simultanee per database (200 con il database privato incluso). Per verificare le opzioni disponibili in ciascuno dei nostri piani di hosting Web, consulta i [dettagli delle nostre offerte di hosting](https://www.ovhcloud.com/it/web-hosting/).
 
 - Inoltre è possibile ordinare database **Private SQL** aggiuntivi, che dispongono di opzioni di personalizzazione.
 
@@ -45,7 +45,7 @@ order: 6
 
     - *max_user_connections*: 50 di default, con possibilità di passare a 200
 
-Per saperne di più, consulta i dettagli delle nostre [soluzioni di hosting](https://www.ovh.it/hosting-web/) e [la nostra guida](../iniziare-a-utilizzare-sql-privato/).
+Per saperne di più, consulta i dettagli delle nostre [soluzioni di hosting](https://www.ovhcloud.com/it/web-hosting/) e [la nostra guida](../iniziare-a-utilizzare-sql-privato/).
 
 #### Connessioni dal server esterno
 
@@ -66,7 +66,7 @@ Per maggiori informazioni sulla gestione dei database, consulta la guida [Creare
 
 ### PHP
 
-- Ti consigliamo di consultare le nostre [soluzioni di hosting Web](https://www.ovh.it/hosting-web/php.xml) per assicurarti che il piano che vuoi acquistare sia adatto alle tue esigenze. 
+- Ti consigliamo di consultare le nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/) per assicurarti che il piano che vuoi acquistare sia adatto alle tue esigenze. 
 
 - È possibile verificare i dettagli della configurazione del tuo hosting Web. Per farlo, consulta la rubrica \[”Informazioni tecniche del tuo hosting Web”\](.#informazioni-tecniche-del-tuo-hosting-web) in fondo a questa guida. 
 

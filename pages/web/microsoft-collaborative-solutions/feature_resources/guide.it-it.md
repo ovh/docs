@@ -19,7 +19,7 @@ Questa funzione collaborativa di Exchange permette di creare indirizzi di posta 
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Exchange OVHcloud](https://www.ovh.it/emails/hosted-exchange/) già configurata
+- Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) già configurata
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre delle credenziali di accesso per gli account di posta che hanno accesso alla risorsa
 

@@ -22,7 +22,7 @@ Per impedire trasferimenti di domini non autorizzati, i domini sono generalmente
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovh.it/domini/) registrato in OVHcloud
+- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/) registrato in OVHcloud
 - Avere l’autorizzazione per richiedere il trasferimento di un dominio: il proprietario e/o gli amministratori devono essere informati della richiesta di trasferimento
 - Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - La registrazione del dominio in questione risale ad almeno 60 giorni fa e non è stata trasferita o scambiata (ovvero la modifica del proprietario) negli ultimi 60 giorni
@@ -43,7 +43,7 @@ Per impedire trasferimenti di domini non autorizzati, i domini sono generalmente
 > In caso di dubbi, consulta queste risorse:
 >
 > - il sito web del registro TLD corrispondente;
-> - la [lista dei TLD disponibili in OVHcloud](https://www.ovh.it/domini/tariffe/);
+> - la [lista dei TLD disponibili in OVHcloud](https://www.ovhcloud.com/it/domains/tld/);
 > - [le spiegazioni dell'ICANN sui codici di stato EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (per sapere quali codici di status si applicano attualmente al tuo dominio, effettua una ricerca *Whois*, preferibilmente utilizzando il sito web del registro TLD corrispondente);
 > - il sito Web e l'interfaccia di gestione del nuovo Registrar, in particolare per le domande relative ad un processo di trasferimento in attesa.
 >
