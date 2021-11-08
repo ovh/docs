@@ -176,7 +176,7 @@ Validez les différentes régions souhaitées, saisissez un nom pour votre rése
 
 #### Créer un VLAN depuis les APIv6 OVHcloud
 
-Pour créer un VLAN depuis les APIv6 OVHcloud, cliquez [ici](../public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1) pour consulter le [guide spécifique à cette méthode](../public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1).
+Pour créer un VLAN depuis les APIv6 OVHcloud, cliquez [ici](../public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1) pour consulter le guide spécifique à cette méthode.
 
 ### Étape 3 : Intégrer une instance dans le vRack
 
@@ -200,7 +200,7 @@ Consultez le guide [Créer une instance depuis l’espace client](../create_an_i
 
 ##### **Depuis les APIv6 OVHcloud**
 
-Cliquez [ici](../public-cloud-vrack-apiv6/#etape-4-integrer-une-instance-dans-le-vrack_1) pour consulter le [guide spécifique à cette méthode](../public-cloud-vrack-apiv6/#etape-4-integrer-une-instance-dans-le-vrack_1).
+Cliquez [ici](../public-cloud-vrack-apiv6/#etape-4-integrer-une-instance-dans-le-vrack_1) pour consulter le guide spécifique à cette méthode.
 
 ##### **Depuis les API OpenStack**
 
