@@ -41,7 +41,7 @@ De overdrachtprocedure bevat verschillende stappen. Bij deze stappen moeten vers
 
 > [!warning]
 >
-> Deze procedure is van toepassing op de meeste overdrachten. Afhankelijk van uw extensie kan dit echter anders zijn. We raden aan om de informatie op de pagina voor de betreffende extensie te controleren via: <https://www.ovh.nl/domains/tarieven/>.
+> Deze procedure is van toepassing op de meeste overdrachten. Afhankelijk van uw extensie kan dit echter anders zijn. We raden aan om de informatie op de pagina voor de betreffende extensie te controleren via: <https://www.ovhcloud.com/nl/domains/tld/>.
 >
 
 ### Stap 1: Controleer de domeingerelateerde informatie
@@ -76,7 +76,7 @@ Nu uw domeinnaam is gedeblokkeerd en u uw transfercode hebt, kunt u uw domeinnaa
 
 Wanneer u wordt gevraagd om uw transfercode (overdrachtscode) op te geven, voert u deze in het vakje naast uw domeinnaam in. Als u de transfercode niet hebt, kunt u in een later stadium een vakje aanvinken met het label `Transfercode invoeren`{.action}. We raden u echter sterk aan ervoor te zorgen dat u de code bij de hand hebt voordat u verder gaat.
 
-U kunt uw bestelling ook voltooien met een [webhostingplan](https://www.ovh.nl/shared-hosting/){.external} en andere OVH oplossingen. Deze stappen kunnen interessant voor u zijn, als u ook van plan bent om uw diensten te migreren naar OVH. De handleiding [Migratie van uw website en e-mails naar OVH](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external} kan u hierbij helpen.
+U kunt uw bestelling ook voltooien met een [webhostingplan](https://www.ovhcloud.com/nl/web-hosting/){.external} en andere OVH oplossingen. Deze stappen kunnen interessant voor u zijn, als u ook van plan bent om uw diensten te migreren naar OVH. De handleiding [Migratie van uw website en e-mails naar OVH](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external} kan u hierbij helpen.
 
 > [!warning]
 >
