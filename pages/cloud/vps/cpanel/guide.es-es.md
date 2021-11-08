@@ -48,7 +48,7 @@ Una vez que haya recibido el mensaje de correo electrónico con el único enlace
 
 > [!primary]
 >
-> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando "whmlogin" para generar un nuevo enlace.
+> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando "sudo whmlogin" para generar un nuevo enlace.
 >
 
 La URL anteriormente citada le permite conectarse a su interfaz WHM sin claves de usuario y contraseña.

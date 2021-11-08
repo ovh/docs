@@ -143,8 +143,10 @@ En choisissant « WWW Full », les connexions sécurisées (port 443) et les req
 
 Pour voir quels ports sont affectés par un profil particulier, entrez ```sudo ufw app info "profile name"```.
 
+Avec la commande suivante, les ports définis par le profil "WWW Full" seront ouverts :
+
 ```bash
-debian@instance:~$ sudo ufw app list
+debian@instance:~$ sudo ufw allow 'WWW Full'
 ```
 
 Comme tous les ports non explicitement autorisés seront bloqués après l'activation du firewall, assurez-vous d'autoriser également les connexions SSH (port 22) :
@@ -182,7 +184,7 @@ debian@instance:~$ tar zxvf latest.tar.gz
 Votre serveur Apache doit être prêt à fonctionner à ce stade. Vous pouvez vérifier avec la commande suivante :
 
 ```bash
-sudo systemctl status apache2
+debian@instance:~$ sudo systemctl status apache2
 ```
 
 Vous pouvez également ouvrir `http://ip_de_votre_instance` dans un navigateur Web. La page « Apache2 Debian Default Page » devrait s'afficher.

@@ -33,7 +33,7 @@ This section will explain the first steps specifically for the cPanel pre-instal
 
 > [!primary]
 >
-> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the "whmlogin" command to generate a new link.
+> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the "sudo whmlogin" command to generate a new link.
 >
 
 <ol start="3">
@@ -117,7 +117,7 @@ If your domain is registered with OVHcloud you can follow [this guide](../../dom
 <br>If your domain is registered with another company you will need to contact them for assistance to set up your `A` records.
 
 <ol start="2">
-<li>You may need to wait 24 hours before the two records propagate fully. You can always check it with [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.</li>
+<li>You may need to wait 24 hours before the two records propagate fully. You can always check it with <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.</li>
 <li>SSH into your server with the CentOS user and execute the following commands to install Certbot.</li>
 </ol>
 

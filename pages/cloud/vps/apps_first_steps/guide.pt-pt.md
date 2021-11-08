@@ -37,7 +37,7 @@ Encontrará abaixo as primeiras etapas relativas à implementação da imagem pr
 
 > [!primary]
 >
-> Se a ligação já expirou, ligue-se ao seu VPS via SSH usando o utilizador CentOS e execute o comando "whmlogin" para gerar uma nova ligação.
+> Se a ligação já expirou, ligue-se ao seu VPS via SSH usando o utilizador CentOS e execute o comando « sudo whmlogin » para gerar uma nova ligação.
 >
 
 <ol start="3">

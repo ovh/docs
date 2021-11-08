@@ -37,7 +37,7 @@ Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalo
 
 > [!primary]
 >
-> Jeśli link już wygasł, proszę połączyć się z VPS przez SSH używając użytkownika CentOS i wykonać polecenie "whmlogin", aby wygenerować nowy link.
+> Jeśli link już wygasł, proszę połączyć się z VPS przez SSH używając użytkownika CentOS i wykonać polecenie « sudo whmlogin », aby wygenerować nowy link.
 >
 
 <ol start="3">
@@ -124,7 +124,7 @@ Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz postępować zgodnie
 <br>Jeśli Twoja domena jest zarejestrowana w innej firmie, skontaktuj się z nią, aby uzyskać pomoc w konfiguracji rekordów `A`.
 
 <ol start="2">
-  <li>Może zaczekacie 24 godziny zanim te dwa nagrania się całkowicie rozproszą. Możesz to zawsze sprawdzić za pomocą [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. Jeśli adres IP Twojej domeny wyświetla się na serwerze mxtoolbox w taki sam sposób, jak adres IP Twojego serwera, możesz przejść do kolejnego etapu.</li>
+  <li>Może zaczekacie 24 godziny zanim te dwa nagrania się całkowicie rozproszą. Możesz to zawsze sprawdzić za pomocą <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. Jeśli adres IP Twojej domeny wyświetla się na serwerze mxtoolbox w taki sam sposób, jak adres IP Twojego serwera, możesz przejść do kolejnego etapu.</li>
 
   <li>Połącz się z użytkownikiem CentOS za pomocą SSH i wprowadź następujące polecenia, aby zainstalować Certbot:</li>
 </ol>
