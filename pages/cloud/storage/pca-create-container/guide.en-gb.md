@@ -7,7 +7,7 @@ section: Public Cloud Archive
 
 **Last updated 27th October 2021**
 
-## Objectif
+## Objective
 
 Public Cloud Archive is an unlimited storage solution with simple billing tailored to your needs. There are many types of object containers:
 
