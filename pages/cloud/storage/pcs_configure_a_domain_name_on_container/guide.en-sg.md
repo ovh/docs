@@ -46,7 +46,7 @@ To be interpreted by the Object Storage, the CNAME record must conform to some s
 [CONTAINER_NAME].auth-[PROJECT_ID].storage.[REGION].cloud.ovh.net.
 ```
 
-For example, for a container named **staticct** and a project named **123xxxx456** to be used in sur SBG :
+For example, for a container named **staticct** and a project named **123xxxx456** to be used in SBG :
 
 
 ```bash
