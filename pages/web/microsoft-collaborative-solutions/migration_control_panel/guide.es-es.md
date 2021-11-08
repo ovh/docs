@@ -20,8 +20,8 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (vendido solo 
 
 ## Requisitos
 
-- Disponer de una cuenta MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovh.es/hosting/){.external}).
-- Tener un servicio [Exchange](https://www.ovh.es/emails/hosted-exchange/){.external} o [Email Pro](https://www.ovh.es/emails/email-pro/){.external} con al menos una cuenta no configurada (que aparecerá como "@configureme.me").
+- Disponer de una cuenta MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}).
+- Tener un servicio [Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/){.external} o [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external} con al menos una cuenta no configurada (que aparecerá como "@configureme.me").
 - **No haber configurado ninguna redirección en la dirección de correo MX Plan que quiera migrar.**
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 

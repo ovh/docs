@@ -16,7 +16,7 @@ Si recibe un mensaje de correo electrónico indicándole que una de sus direccio
 
 ## Requisitos
 
-- Tener un [plan de correo en OVHcloud](https://www.ovh.es/emails/){.external}.
+- Tener un [plan de correo en OVHcloud](https://www.ovhcloud.com/es-es/emails/){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y accedido a la sección `«Web»`{.action}.
 
 ## Procedimiento

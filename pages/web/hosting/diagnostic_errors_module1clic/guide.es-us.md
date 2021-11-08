@@ -83,7 +83,7 @@ En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager
 
 Para instalar su módulo en una base de datos ya utilizada, deberá utilizar el [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) de instalación de un nuevo **módulo en 1 clic**.
 
-Para consultar las claves de la base de datos, consulte nuestras [FAQ](https://www.ovh.es/hosting/faq/).
+Para consultar las claves de la base de datos, consulte nuestras [FAQ](https://www.ovhcloud.com/es-es/web-hosting/).
 
 ### "El directorio de instalación no está vacío"
 
@@ -105,7 +105,7 @@ También puede conectarse al alojamiento por [FTP](../conexion-espacio-almacenam
 
 Una vez que haya iniciado la instalación del módulo en modo avanzado, recibirá un mensaje de correo electrónico indicándole que el módulo no puede conectarse a la base de datos indicada. 
 
-Por lo tanto, debe verificar las claves de la base de datos. Para localizarlos, consulte nuestras [FAQ](https://www.ovh.es/hosting/faq/).
+Por lo tanto, debe verificar las claves de la base de datos. Para localizarlos, consulte nuestras [FAQ](https://www.ovhcloud.com/es-es/web-hosting/).
 
 A continuación, elimine el módulo en la pestaña `Módulos en 1 clic`{.action}:
 

@@ -15,7 +15,7 @@ Añadir un dominio a un servicio Exchange es un requisito indispensable para pod
 
 ## Requisitos
 
-- Tener contratada una [solución Exchange](https://www.ovh.es/emails/){.external}.
+- Tener contratada una [solución Exchange](https://www.ovhcloud.com/es-es/emails/){.external}.
 - Tener uno o más dominios.
 - Estar en condiciones de modificar la configuración (la zona DNS) del dominio.
 - Estar conectado al [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}.
@@ -39,7 +39,7 @@ Para añadir un dominio, abra la pestaña `Dominios asociados`{.action}. Se most
 
 > [!warning]
 >
-> Todas las direcciones creadas en el servicio Exchange podrán ver en el directorio el resto de direcciones asociadas al servicio, incluidas aquellas que posean un dominio diferente. Si desea crear directorios separados, deberá contratar una nueva [solución Exchange](https://www.ovh.es/emails/){.external} para el o los dominios en cuestión.
+> Todas las direcciones creadas en el servicio Exchange podrán ver en el directorio el resto de direcciones asociadas al servicio, incluidas aquellas que posean un dominio diferente. Si desea crear directorios separados, deberá contratar una nueva [solución Exchange](https://www.ovhcloud.com/es-es/emails/){.external} para el o los dominios en cuestión.
 >
 
 ![Añadir dominio a Exchange](images/add_domain_exchange_step1.png){.thumbnail}
@@ -107,7 +107,7 @@ Recuerde que todas las direcciones creadas en el servicio Exchange podrán ver e
 
 Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVH pone a su disposición el webmail **Outlook Web Application** (OWA), al que podrá acceder en la dirección <https://www.ovh.es/mail/>. Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio. Si desea configurar su cuenta en un cliente de correo o un dispositivo externo (smartphone o tablet), o necesita ayuda sobre las funcionalidades de Exchange, consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}.
 
-OVH ofrece licencias de Outlook que podrá contratar en el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}, así como licencias de Office 365, disponibles en la página de [Office 365 de OVH](https://www.ovh.es/office-365/){.external}. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
+OVH ofrece licencias de Outlook que podrá contratar en el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}, así como licencias de Office 365, disponibles en la página de [Office 365 de OVH](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/){.external}. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
 
 ## Más información
 

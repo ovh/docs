@@ -220,7 +220,7 @@ Evite usar la cláusula «HAVING», ya que puede lentificar las consultas. Tambi
 
 #### SQL Privado
 Si a pesar de todos los cambios y optimizaciones realizados la base de datos va lenta, o en el caso de que se realicen un gran número de consultas en dicha base de datos, podría querer cambiar a nuestra oferta de SQL Privado para disponer de más recursos.
-Puede encontrar una comparativa de nuestras ofertas [en la página del producto](https://www.ovh.es/hosting/opciones-sql.xml){.external}.
+Puede encontrar una comparativa de nuestras ofertas [en la página del producto](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/){.external}.
 
 ## Más información
 

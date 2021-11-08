@@ -71,8 +71,8 @@ Personalice los valores de las variables según la configuración que quiera uti
 |Variables|Descripción|
 |---|---|
 |app.engine|Permite cambiar el motor de PHP que utiliza el alojamiento. Introduzca «php» para activar el acelerador PHP-FPM y «phpcgi» para desactivarlo.|
-|app.engine.version|Permite elegir la versión de PHP que utiliza el alojamiento entre [las que ofrece OVHcloud](https://www.ovh.es/hosting/php.xml){.external}. Introduzca la versión de PHP que quiera utilizar.|
-|http.firewall|Permite activar o desactivar el [firewall incluido con todos los planes de hosting de OVHcloud](https://www.ovh.es/hosting/mod_security.xml){.external}. Introduzca «security» para activarlo o «none» para desactivarlo.|
+|app.engine.version|Permite elegir la versión de PHP que utiliza el alojamiento entre [las que ofrece OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/uc-programming-language/){.external}. Introduzca la versión de PHP que quiera utilizar.|
+|http.firewall|Permite activar o desactivar el [firewall incluido con todos los planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}. Introduzca «security» para activarlo o «none» para desactivarlo.|
 |environment|Permite administrar el comportamiento de la caché de los archivos estáticos en su sitio web y el tratamiento de los errores PHP. Introduzca «production» para maximizar el almacenamiento en caché y ocultar los errores de PHP o «development» para que no se aplique ninguna caché y mostrar los errores PHP.|
 |container.image|Permite cambiar el entorno de ejecución que utiliza el alojamiento. Introduzca el motor que quiera utilizar. Puede consultar los distintos motores en el apartado «Opciones de configuración disponibles» de la guía [Modificar la configuración de un alojamiento web](../cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#motor-de-php){.external}.|
 

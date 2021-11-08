@@ -21,14 +21,14 @@ En caso de ausencia en su despacho, puede poner en marcha un contestador email q
 
 ## Requisitos
 
-- Tener una solución MX Plan. (disponible en: un [plan de hosting](https://www.ovh.es/hosting/){.external}, el [alojamiento gratuito Start 10M](https://www.ovh.es/dominios/oferta_hosting_start10m.xml){.external} incluido con un dominio (previamente activado) o el MX Plan contratado por separado.
+- Tener una solución MX Plan. (disponible en: un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external}, el [alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external} incluido con un dominio (previamente activado) o el MX Plan contratado por separado.
 - Haber iniciado sesión en el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
 > [!primary]
 >
-> Si su dirección de correo electrónico está en un servicio [**Exchange**](https://www.ovh.es/emails/hosted-exchange/), [**Email Pro**](https://www.ovh.es/emails/email-pro/) o no hay una sección de `Gestión de contestadores`{.action} en su MXplan, deberá crear el contestador desde su webmail utilizando la guía ["Implementar un contestador automático desde la interfaz OWA"](../../microsoft-collaborative-solutions/exchange_2016_crear_un_contestador_con_el_webmail_owa/).
+> Si su dirección de correo electrónico está en un servicio [**Exchange**](https://www.ovhcloud.com/es-es/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/es-es/emails/email-pro/) o no hay una sección de `Gestión de contestadores`{.action} en su MXplan, deberá crear el contestador desde su webmail utilizando la guía ["Implementar un contestador automático desde la interfaz OWA"](../../microsoft-collaborative-solutions/exchange_2016_crear_un_contestador_con_el_webmail_owa/).
 
 ### Creación del contestador
 

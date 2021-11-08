@@ -89,7 +89,7 @@ Si, por el contrario, se indica «Sí», significa que ya hay un certificado SSL
 
 ![Contratar un certificado SSL](images/manage-ssl-step1.png){.thumbnail}
 
-En el cuadro de diálogo, seleccione el tipo de certificado SSL que quiera contratar. Es posible que, en función del [plan de hosting](https://www.ovh.es/hosting/){.external} o de su configuración, algunas de las opciones que explicamos a continuación no estén disponibles. Una vez que haya seleccionado el tipo de certificado, haga clic en `Siguiente`{.action}.
+En el cuadro de diálogo, seleccione el tipo de certificado SSL que quiera contratar. Es posible que, en función del [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external} o de su configuración, algunas de las opciones que explicamos a continuación no estén disponibles. Una vez que haya seleccionado el tipo de certificado, haga clic en `Siguiente`{.action}.
 
 ![Contratar un certificado SSL](images/manage-ssl-step2.png){.thumbnail}
 

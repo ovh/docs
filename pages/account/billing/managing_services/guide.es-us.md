@@ -28,7 +28,7 @@ En el área de cliente puede administrar todos sus servicios de OVHcloud.
 
 En la sección `Administrar mis servicios`{.action} del área de cliente puede ver todas sus soluciones de OVHcloud. También es posible administrar la mayoría de estas soluciones, a excepción de:
 
-- servicios Microsoft (como las soluciones [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external}, [Office 365](https://www.ovh.es/office-365/){.external} y [SharePoint](https://www.ovh.es/sharepoint/){.external});
+- servicios Microsoft (como las soluciones [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external}, [Office 365](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/){.external} y [SharePoint](https://www.ovhcloud.com/es-es/collaborative-tools/sharepoint/){.external});
 - el servicio de correo MX Plan.
 
 Continúe leyendo esta guía en el apartado correspondiente a la acción que quiera realizar:
