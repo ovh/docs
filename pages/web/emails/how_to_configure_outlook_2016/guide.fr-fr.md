@@ -25,7 +25,7 @@ Les comptes MX Plan  peuvent être configurés sur différents logiciels de mess
 
 ## Prérequis
 
-- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}).
+- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}).
 - Disposer du logiciel Microsoft Outlook 2016 ou ultérieur.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
  

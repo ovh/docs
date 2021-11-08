@@ -16,7 +16,7 @@ With an OVHcloud Email offer you can send and receive your emails using a device
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovh.com.au/web-hosting/)
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-au/web-hosting/)
 - login credentials for the email address you want to configure
 
 ## Instructions

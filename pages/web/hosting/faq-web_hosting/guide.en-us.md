@@ -40,7 +40,7 @@ Once you have logged in to the OVHcloud Control Panel, you can manage different 
 
 To put your website online via OVHcloud, you need to have a domain name corresponding to the address of your future website (e.g. ovh.com). You also need to have a web hosting space to set up your website. Please read the following guide: [Publishing a website on your web hosting plan](../web_hosting_how_to_get_my_website_online).
 
-**Tips and tricks**: To help you build your website, OVHcloud offers 1-click modules like WordPress, PrestaShop, Joomla!, and Drupal. You can find them [here](https://www.ovh.co.uk/web-hosting/website/). You can also use the following documentation: [Setting up your website with 1-click modules](../web_hosting_web_hosting_modules).
+**Tips and tricks**: To help you build your website, OVHcloud offers 1-click modules like WordPress, PrestaShop, Joomla!, and Drupal. You can find them [here](https://www.ovhcloud.com/en-gb/web-hosting/uc-website/). You can also use the following documentation: [Setting up your website with 1-click modules](../web_hosting_web_hosting_modules).
 
 ### How do I migrate my website and emails to OVHcloud? 
 

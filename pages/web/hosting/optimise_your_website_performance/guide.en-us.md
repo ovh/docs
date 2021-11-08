@@ -137,7 +137,7 @@ In order to improve website access website downloads and get naturally optimised
 
 As a result you will improve response times for visitors all over the world because the static parts of your website will be downloaded directly by your visitor in the point of presence which is closest to them.
 
-Discover our [CDN solution here](https://www.ovh.co.uk/cdn/){.external}.
+Discover our [CDN solution here](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/){.external}.
 
 
 ### Step 6: Checking the Content Management System (CMS) and plugins used

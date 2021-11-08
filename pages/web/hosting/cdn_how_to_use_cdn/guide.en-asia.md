@@ -25,7 +25,7 @@ In order for this to work, each server stores a part of your website in its cach
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/)
 
 ## Instructions
 
@@ -133,7 +133,7 @@ Once you have configured your rules and chosen your options, click `Apply config
 #### Configuring CDN Security options
 
 > [!primary]
-> The options presented below require a subscription to [CDN Security](https://www.ovh.com/asia/web-hosting/cdn.xml) or [CDN Advanced](https://www.ovh.com/asia/web-hosting/cdn.xml).
+> The options presented below require a subscription to [CDN Security](https://www.ovhcloud.com/asia/web-hosting/options/cdn/) or [CDN Advanced](https://www.ovhcloud.com/asia/web-hosting/options/cdn/).
 
 Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the multisite entry, then `Modify the CDN`{.action}. 
 

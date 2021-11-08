@@ -16,7 +16,7 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovh.co.uk/web-hosting/sql-options.xml) or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/)
+- a [Private SQL Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions

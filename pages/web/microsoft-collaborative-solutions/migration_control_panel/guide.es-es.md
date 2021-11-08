@@ -31,7 +31,7 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (vendido solo 
 
 Las soluciones Email Pro y Exchange disponen de una base de funcionalidades común. Sin embargo, existen diferencias en los casos de uso. Eligiendo una dirección Exchange, dispondrá de todas las funciones colaborativas, como la sincronización del calendario y de los contactos. La solución Email Pro ofrece algunas, pero estas están limitadas a su uso únicamente a través de un webmail.
 
-Por lo tanto, es importante conocer a qué solución quiere migrar sus direcciones de correo MX Plan. Si necesita ayuda, consulte la página de [soluciones de correo electrónico profesionales de OVHcloud](https://www.ovh.com/fr/emails/){.external}, que ofrece una comparativa detallada de los productos. Es posible combinar las soluciones y utilizar una o más cuentas Email Pro y Exchange para un mismo dominio. Si quiere migrar varias cuentas, le recomendamos que establezca un plan de migración.
+Por lo tanto, es importante conocer a qué solución quiere migrar sus direcciones de correo MX Plan. Si necesita ayuda, consulte la página de [soluciones de correo electrónico profesionales de OVHcloud](https://www.ovhcloud.com/fr/emails/){.external}, que ofrece una comparativa detallada de los productos. Es posible combinar las soluciones y utilizar una o más cuentas Email Pro y Exchange para un mismo dominio. Si quiere migrar varias cuentas, le recomendamos que establezca un plan de migración.
 
 ### 2\. contratar sus cuentas Email Pro o Exchange
 

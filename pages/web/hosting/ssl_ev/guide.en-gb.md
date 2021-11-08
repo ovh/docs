@@ -9,7 +9,7 @@ section: 'SSL'
 ## Overview
 EV SSL certificates offered by OVH are published by the certificate authority Comodo. Comodo establishes the legitimacy of your company.
 
-See all commercial details on our site: [https://www.ovh.co.uk/ssl/](https://www.ovh.co.uk/ssl/){.external}
+See all commercial details on our site: [https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/](https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/){.external}
 
 
 ### Why choose an EV SSL certificate?

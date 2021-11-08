@@ -66,7 +66,7 @@ There are several ways you can access your storage space. We recommend reading t
 
 [2. Log in via an FTP program](./#2-log-in-via-an-ftp-program): Gives you access to your storage space via a program (e.g. FileZilla or Cyberduck). You will need to install the program on your computer beforehand.
 
-[3. Log in via SSH](./#3-log-in-via-ssh): Gives you access to your storage space via SSH. More advanced knowledge and a specific [OVH web hosting plan](https://www.ovh.co.uk/web-hosting/){.external} are required to use this method.
+[3. Log in via SSH](./#3-log-in-via-ssh): Gives you access to your storage space via SSH. More advanced knowledge and a specific [OVH web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} are required to use this method.
 
 #### 1. Log in via FTP Explorer.
 

@@ -16,7 +16,7 @@ With the Hosted Exchange service, you can get professional emails to use for col
 
 ## Requirements
 
-- You need to have a subscription to a [Hosted Exchange](https://www.ovh.com/ca/en/emails/hosted-exchange/){.external} solution.
+- You need to have a subscription to a [Hosted Exchange](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/){.external} solution.
 - You need to have received an email confirming that your Hosted Exchange solution has been set up.
 - You must have a domain name.
 - You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
