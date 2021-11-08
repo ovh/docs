@@ -15,8 +15,8 @@ With the Private SQL service, you can get an SQL instance that works hand-in-han
 
 ## Requirements
 
-- You must have a Private SQL instance (included in [web hosting plans](https://www.ovh.com.au/web-hosting/){.external}, or available to order as an [SQL option](https://www.ovh.com.au/web-hosting/sql-options.xml){.external}).
-- You must have a [web hosting plan](https://www.ovh.com.au/web-hosting/){.external} hosted in the same datacentre as your Private SQL instance (you can view this information in your OVHcloud Control Panel).
+- You must have a Private SQL instance (included in [web hosting plans](https://www.ovhcloud.com/en-au/web-hosting/){.external}, or available to order as an [SQL option](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/){.external}).
+- You must have a [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external} hosted in the same datacentre as your Private SQL instance (you can view this information in your OVHcloud Control Panel).
 - You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
 
 ## Instructions

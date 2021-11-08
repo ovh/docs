@@ -23,7 +23,7 @@ Si certains pré-requis ne sont pas remplis, la création d'un [Module en 1 clic
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovh.com/fr/hebergement-web/) compatible.
+- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) compatible.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir utilisé la fonctionnalité [Module en 1 clic](../modules-en-1-clic/), afin de créer un nouveau site.
 
@@ -44,14 +44,14 @@ Si ce message apparaît quand vous lancez l'installation de votre module, c'est 
 
 > [!primary]
 >
-> Retrouvez le comparatif de nos différentes [offres d'hébergement](https://www.ovh.com/fr/hebergement-web/).
+> Retrouvez le comparatif de nos différentes [offres d'hébergement](https://www.ovhcloud.com/fr/web-hosting/).
 >
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}. Choisissez l'hébergement concerné puis cliquez sur `Changer d'offre` dans la partie `Abonnement` - `Offre` :
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Les offres [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) et [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml).
+Les offres [Pro2014](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/).
 
 #### Solution n°2 : supprimer une base de données non utilisée <a name="supprimer-la-base"></a>
 
@@ -72,14 +72,14 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 > [!primary]
 >
-> Retrouvez le comparatif de nos différentes [offres de bases de données](https://www.ovh.com/fr/hebergement-web/options-sql.xml)
+> Retrouvez le comparatif de nos différentes [offres de bases de données](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/)
 >
 
 #### Solution n°4 : installer votre module sur une base de données déjà utilisée
 
 Pour installer votre module sur une base de données déjà utilisée, vous devrez utiliser le [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) d'installation d'un nouveau **Module en 1 clic**.
 
-Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
+Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovhcloud.com/fr/web-hosting/).
 
 > [!primary]
 >
@@ -123,7 +123,7 @@ Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-h
 
 Après avoir lancé l'installation de votre module en mode avancé, vous avez reçu un e-mail indiquant que votre module ne peut pas se connecter à la base de données indiquée.
 
-Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
+Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez notre [FAQ](https://www.ovhcloud.com/fr/web-hosting/).
 
 Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
 
@@ -137,7 +137,7 @@ Puis relancez l'installation d'un nouveau module.
 
 Votre base de données ne peut plus être modifiée car la quantité de données qu'elle contient dépasse la limite autorisée. Ce message apparaît lors de l'installation d'un module en [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module).
 
-Dans cette situation, installez votre module en passant par le [mode « simple »](../modules-en-1-clic/#installation-simple-dun-module) ou choisissez une autre base de données lors de son installation en mode avancé. Si besoin, commandez une [offre de bases de données](https://www.ovh.com/fr/hebergement-web/options-sql.xml) complémentaire.
+Dans cette situation, installez votre module en passant par le [mode « simple »](../modules-en-1-clic/#installation-simple-dun-module) ou choisissez une autre base de données lors de son installation en mode avancé. Si besoin, commandez une [offre de bases de données](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) complémentaire.
 
 Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [importez une copie de votre base](../exportation-bases-donnees/#en-pratique) puis supprimez les données inutiles.
 

@@ -14,7 +14,7 @@ order: 1
 DNS servers store DNS configurations for domain names. DNS records are usually used to link your domain name to the server (or servers) that host your website and email addresses. In a conventional use, this configuration allows you to link your domain name to the server(s) that host your website and email addresses. In recent years, hackers have developed methods to poison DNS servers, allowing them to divert traffic to other servers. There is a way to protect your domain name from these actions: DNSSEC.
 
 **Learn how to enable DNSSEC on your domain name to protect it against Poisoning Cache.**  
-To understand how this protection works, we recommend reading this page: [Understanding the DNSSEC service](https://www.ovh.com/ca/en/domains/dnssec_service.xml){.external}.
+To understand how this protection works, we recommend reading this page: [Understanding the DNSSEC service](https://www.ovhcloud.com/en-ca/domains/dnssec/){.external}.
 
 ## Requirements
 

@@ -16,7 +16,7 @@ You can use the email addresses created as part of the MX Plan solution to send 
 
 ## Requirements
 
-- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/)
+- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} in the `Web Cloud`{.action} section, or access to the email address via Outlook Web Messenger (OWA) [webmail](https://www.ovh.com/ca/en/mail/){.external}
 
 > [!primary]

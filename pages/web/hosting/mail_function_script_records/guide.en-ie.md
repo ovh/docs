@@ -22,7 +22,7 @@ Automated emails are messages that are sent via scripts. For example, they are u
 >
 > This guide is only relevant for emails sent using scripts located on your OVH Web Hosting plan.
 >
-> Are you looking to manage email addresses included in your MX Plan solution, or in your [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}? Go to the `Emails`{.action} section of your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+> Are you looking to manage email addresses included in your MX Plan solution, or in your [OVH Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}? Go to the `Emails`{.action} section of your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 >
 
 ## Instructions

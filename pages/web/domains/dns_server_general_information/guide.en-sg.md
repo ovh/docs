@@ -65,7 +65,7 @@ The table that appears will list the DNS servers currently set by OVHcloud for y
 
 > [!primary]
 >
-> When you use OVHcloud DNS servers, the server numbers are not linked to the service(s) you are using. Only the [DNS Anycast](https://www.ovh.co.uk/domains/dns-anycast/) option uses specific DNS servers that are automatically assigned to you.
+> When you use OVHcloud DNS servers, the server numbers are not linked to the service(s) you are using. Only the [DNS Anycast](https://www.ovhcloud.com/en-gb/domains/options/dns-anycast/) option uses specific DNS servers that are automatically assigned to you.
 
 ![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 

@@ -9,7 +9,7 @@ hidden: true
 
 Vous trouverez dans ce guide différentes informations et aides concernant la migration de la version MySQL 4 vers la version MySQL 5.6 de vos bases de données.
 
-Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/fr/hebergement-web/faq/){.external} disponibles.
+Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovhcloud.com/fr/web-hosting/){.external} disponibles.
 
 
 > [!warning]

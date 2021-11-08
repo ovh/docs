@@ -17,7 +17,7 @@ Cette fonction collaborative de Exchange permet de créer des adresses de messag
 
 ## Prérequis
 
-- Disposer d'une [solution Exchange OVHcloud](https://www.ovh.com/fr/emails/hosted-exchange/) déjà configurée
+- Disposer d'une [solution Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/hosted-exchange/) déjà configurée
 - Être connecté votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Disposer des identifiants de connexion pour le ou les comptes de messagerie ayant accès à la ressource
 

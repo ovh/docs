@@ -79,7 +79,7 @@ Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&
 
 Pour installer votre module sur une base de données déjà utilisée, vous devrez utilisez le [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) d'installation d'un nouveau **Module en 1 clic**.
 
-Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
+Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovhcloud.com/fr/web-hosting/).
 
 ### « Le répertoire d'installation n'est pas vide »
 
@@ -101,7 +101,7 @@ Vous pouvez également vous connecter à votre hébergement via [FTP](../connexi
 
 Après avoir lancé l'installation de votre module en mode avancé, vous avez reçu un e-mail indiquant que votre module ne peut pas se connecter à la base de données indiquée. 
 
-Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
+Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez notre [FAQ](https://www.ovhcloud.com/fr/web-hosting/).
 
 Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
 

@@ -24,7 +24,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution and in [OVHcloud Web Hosting plans](https://www.ovh.co.uk/web-hosting/){.external})
+- an MX Plan email address (included in the MX Plan solution and in [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/){.external})
 - Microsoft Outlook 2016 or later installed on your device
 - login credentials for the email account to be configured
  

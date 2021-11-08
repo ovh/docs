@@ -25,7 +25,7 @@ Vous utilisez Outlook 2016 pour Windows ? Consultez notre documentation : [Confi
 
 ## Configuration automatique
 
-Avant de réaliser ces manipulations, assurez-vous que le champ SRV de votre nom de domaine est correctement configuré. Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides Outlook 2007 n'est pas compatible avec Exchange 2016 et ultérieur.
+Avant de réaliser ces manipulations, assurez-vous que le champ SRV de votre nom de domaine est correctement configuré. Cliquez [ici](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external} pour retrouver nos différents guides Outlook 2007 n'est pas compatible avec Exchange 2016 et ultérieur.
 
 ### Étape 1 : Panneau de configuration
 Les manipulations réalisées sont effectuées sur un poste équipé du système d'exploitation Windows.
@@ -83,7 +83,7 @@ Une première synchronisation sera initiée avec les informations présentes sur
 
 Il est parfois nécessaire de configurer Outlook manuellement soit lorsque le champ SRV n'est pas résolu par votre fournisseur d'accès à Internet, soit si le bureau d'enregistrement de votre domaine ne permet pas l'ajout d'un champ SRV.
 
-Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange-2013/documents/){.external} pour retrouver nos différents guides.
+Cliquez [ici](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external} pour retrouver nos différents guides.
 
 Pour configurer manuellement votre Outlook, il faut récupérer au préalable le GUID disponible dans votre espace client en cliquant sur "Configuration" à droite de l'adresse à configurer.
 

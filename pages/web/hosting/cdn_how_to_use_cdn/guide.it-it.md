@@ -137,7 +137,7 @@ Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la 
 #### Configura le opzioni della CDN Security
 
 > [!primary]
->  le opzioni presentate qui sotto richiedono la sottoscrizione della [CDN security](https://www.ovh.com/fr/hebergement-web/cdn.xml) o della [CDN Advanced](https://www.ovh.com/fr/hebergement-web/cdn.xml)
+>  le opzioni presentate qui sotto richiedono la sottoscrizione della [CDN security](https://www.ovhcloud.com/fr/web-hosting/options/cdn/) o della [CDN Advanced](https://www.ovhcloud.com/fr/web-hosting/options/cdn/)
 
 Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini `...`{.action} a destra del record multisito e poi  `Modifica la CDN `{.action}. 
 

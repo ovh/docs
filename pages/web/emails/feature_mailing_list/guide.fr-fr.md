@@ -38,7 +38,7 @@ L'expéditeur (sender) transmet l'e-mail à la mailing list. Le modérateur (mod
 
 ## Prérequis
 
-- Disposez d'une offre e-mail MX Plan 100 minimum ou d'un [Hébergement Web](https://www.ovh.com/fr/hebergement-web/){.external} éligible aux listes de diffusion.
+- Disposez d'une offre e-mail MX Plan 100 minimum ou d'un [Hébergement Web](https://www.ovhcloud.com/fr/web-hosting/){.external} éligible aux listes de diffusion.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique

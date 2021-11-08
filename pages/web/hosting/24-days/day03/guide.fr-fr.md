@@ -56,7 +56,7 @@ Nous le verrons dans les jours à venir : l’accès SSH peut être très prati
 Vous n’êtes pas sûr de votre choix ? Ne vous inquiétez pas, vous pouvez changer d’offre à tout moment depuis votre espace client.
 
 ## Comment commander ?
-Si vous souhaitez commander, rendez-vous sur le site d’OVH : [https://www.ovh.com/fr/hebergement-web](https://www.ovh.com/fr/hebergement-web){.external}. Vous y retrouverez les différentes offres d’hébergement web, avec un tableau comparatif de leurs différentes caractéristiques.
+Si vous souhaitez commander, rendez-vous sur le site d’OVH : [https://www.ovhcloud.com/fr/web-hosting/](https://www.ovhcloud.com/fr/web-hosting/){.external}. Vous y retrouverez les différentes offres d’hébergement web, avec un tableau comparatif de leurs différentes caractéristiques.
 
 Vous pourrez alors commander votre site web avec votre nom de domaine. Plusieurs options vous seront proposées lors de la commande de votre hébergement web. Nous reviendrons sur chacune d'entre elle d'ici Noël.
 

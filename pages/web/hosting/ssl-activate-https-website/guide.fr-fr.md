@@ -16,7 +16,7 @@ Grâce à votre hébergement web OVH, vous pouvez bénéficier d'un certificat S
 
 ## Prérequis
 
-- Disposer d'un [certificat SSL](https://www.ovh.com/fr/ssl/){.external} installé sur votre [hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'un [certificat SSL](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external} installé sur votre [hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Disposer d'au moins un site internet installé et accessible sur votre hébergement web OVH.
 - Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
 

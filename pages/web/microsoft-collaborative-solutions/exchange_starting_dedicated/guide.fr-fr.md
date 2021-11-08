@@ -147,4 +147,4 @@ Votre service Dedicated Exchange est à présent configuré !
 
 *Il vous est possible de consulter vos e-mails via l'owa* :
 
-Pour aller plus loin, consultez nos différents [Guides Exchange](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} et retrouvez notre [FAQ en ligne](https://www.ovh.com/fr/emails/hosted-exchange-2013/faq/){.external}.
+Pour aller plus loin, consultez nos différents [Guides Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external} et retrouvez notre [FAQ en ligne](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external}.
