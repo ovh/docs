@@ -14,7 +14,7 @@ This guide explain manual configuration of outlook in case if you can't set up t
 
 ## Requirements
 
-- You need to have a subscription to a [Hosted Exchange](https://www.ovh.co.uk/emails/hosted-exchange/){.external} solution.
+- You need to have a subscription to a [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/){.external} solution.
 - You need to have created E-mail account on exchange solution.
 - You must have outlook license.
 

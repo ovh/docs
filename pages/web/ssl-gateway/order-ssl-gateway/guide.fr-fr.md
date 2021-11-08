@@ -17,7 +17,7 @@ section: Général
 
 
 ## Commande
-- Afin de commander notre offre SSL Gateway, [cliquez ici](https://www.ovh.com/fr/ssl-gateway){.external}.
+- Afin de commander notre offre SSL Gateway, [cliquez ici](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external}.
 - Choisissez votre offre, et cliquez ensuite sur `Activer maintenant`{.action} ou `Commander`{.action}.
 
 ![page commerciale](images/1.PNG){.thumbnail}

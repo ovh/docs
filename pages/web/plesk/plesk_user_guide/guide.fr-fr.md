@@ -118,7 +118,7 @@ Ces limitations sont liées au compte de démo et ne seront pas présentes sur v
 ## Commande, livraison et renouvellement du service
 
 ### Commander un hebergement web Plesk
-1. Rendez-vous sur [la page de présentation de l'hébergement web Plesk](https://www.ovh.com/fr/hebergement-plesk/){.external}
+1. Rendez-vous sur [la page de présentation de l'hébergement web Plesk](https://www.ovhcloud.com/fr/plesk-web-hosting/){.external}
 1. Choisissez alors l'offre qui convient à vos besoins en cliquant sur le bouton "**Commander**"
 1. Vous verrez sur la page suivante une prévisualisation de votre commande, cliquez sur "**Poursuivre**"
 1. Veuillez vous connecter si vous disposez déjà d'un compte client chez OVH. Vous pouvez en créer un dans le cas contraire.

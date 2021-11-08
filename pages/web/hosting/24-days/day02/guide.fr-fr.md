@@ -26,7 +26,7 @@ Le choix de votre nom de domaine peut se faire en fonction de différents param�
 
 Une contrainte, les noms de domaine sont uniques et sont donc parfois indisponible car déjà pris par d’autres. Dans ce cas, il est possible de jouer sur les mots avec le nom que vous souhaitez enregistrer. Si le nom de domaine rondcoin avait déjà été pris, l'équipe aurait pu sélectionner comme nom **lerondcoin** ou **rondcoin-annonces**. Le principal étant que le nom soit court, clair, percutant et que vos utilisateurs s'en souviennent facilement.
 
-Lorsque vous cherchez votre nom de domaine, il est possible de consulter sa disponibilité directement sur le site de OVH : [https://www.ovh.com/fr/domaines/](https://www.ovh.com/fr/domaines/){.external}.
+Lorsque vous cherchez votre nom de domaine, il est possible de consulter sa disponibilité directement sur le site de OVH : [https://www.ovhcloud.com/fr/domains/](https://www.ovhcloud.com/fr/domains/){.external}.
 
 S'il est indiqué disponible, le domaine est enregistrable. S'il est indiqué comme transférable, c'est que le nom de domaine est déjà enregistré par un tiers.
 

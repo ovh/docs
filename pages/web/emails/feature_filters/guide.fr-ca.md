@@ -22,7 +22,7 @@ Par exemple : vous souhaitez que tout e-mail contenant "[SPAM]" dans le sujet so
 
 ## Prérequis
 
-- Avoir une offre e-mail MX Plan ou un [Pack Hébergement Web](https://www.ovh.com/fr/hebergement-web/){.external} .
+- Avoir une offre e-mail MX Plan ou un [Pack Hébergement Web](https://www.ovhcloud.com/fr/web-hosting/){.external} .
 - Avoir l'accès à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
