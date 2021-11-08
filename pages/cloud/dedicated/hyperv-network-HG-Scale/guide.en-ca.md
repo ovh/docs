@@ -243,6 +243,61 @@ You need to:
 - create an aggregate
 - create a bridge connected to the aggregate
 
+#### Identify Interfaces and Configure NIC teaming
+
+Open Windows Powershell and Execute the command Get-NetAdapter
+
+```
+PS C:\Windows\system32> Get-NetAdapter
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  Mellanox ConnectX-5 Adapter                   9 Up           04-3F-72-D5-C3-38        25 Gbps
+Ethernet 4                Mellanox ConnectX-5 Adapter #4                7 Up           0C-42-A1-DD-37-B3        25 Gbps
+Ethernet 2                Mellanox ConnectX-5 Adapter #2                6 Up           04-3F-72-D5-C3-39        25 Gbps
+Ethernet 3                Mellanox ConnectX-5 Adapter #3                4 Up           0C-42-A1-DD-37-B2        25 Gbps
+```
+
+In our example:
+
+- The public interfaces are `Ehernet 3` and `Ethernet 4`
+- The private interfaces are `Ethernet` and `Ethernet 2`
+
+> [!primary]
+>
+> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or via the OVHcloud API.
+>
+
+Now go back to the Server Manager and go to `Local Server` and click on `Disabled` beside NIC Teaming.
+
+![NIC Teaming](images/nic_teaming_1.png){.thumbnail}
+
+On the following page right-click one of private interfaces identified earlier and click `Add to New Team`
+
+![NIC Teaming](images/nic_teaming_2.png){.thumbnail}
+
+Next, give your team a name, add the second interface to the team, then expand the Additional Properting and set "Teaming Mode" to `LACP`, and finally click `OK`.
+
+#### Create the Virtual Switch in Hyper-VM
+
+We will need to create a virtual switch that will link our VMs to the Team that we created.
+
+First, open the Hyper-V Manager and click on `Virtual Switch Manager
+
+![Create v-switch](images/create_vswitch_1.png){.thumbnail}
+
+On this page, make sure you have `External` selected and click `Create Virtual Switch`.
+
+![Create v-switch](images/create_vswitch_2.png){.thumbnail}
+
+Now, give your switch a name, choose your new Team adapter , then click `Apply` and then `OK`
+
+![Create v-switch](images/create_vswitch_3.png){.thumbnail}
+
+You are now ready to create your VM and configure the networking it.
+
+
+
 #### Configure a usable IP address
 
 For vRack, the first, penultimate, and last addresses in a given IP block are always reserved for the network address, network gateway, and network *broadcast* respectively. This means that the first usable address is the second address in the block, as shown below:
@@ -280,12 +335,21 @@ To configure the first usable IP address, you must edit the network configuratio
 Content of the file `/etc/netplan/vrack.yaml`:
 
 ```bash
-auto lo ens18
-iface lo inet loopback
-iface ens18 inet static
-    address 46.105.135.97
-    netmask 255.255.255.240
-    gateway 46.105.135.110
+network:
+        version: 2
+        ethernets:
+                eth0:
+                        dhcp4: no
+                        addresses:
+                                - 46.105.135.97/28
+                        nameservers:
+                                addresses:
+                                        - 213.186.33.99
+                                        - 8.8.8.8
+                        routes:
+                                - to: 0.0.0.0/0
+                                  via: 46.105.135.110
+                                  on-link: true
 ```
 
 ## Go further
