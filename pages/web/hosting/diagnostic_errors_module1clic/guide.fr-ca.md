@@ -23,7 +23,7 @@ La création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou av
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/) compatible.
+- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) compatible.
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Avoir utilisé la fonctionnalité [Module en 1 clic](../modules-en-1-clic/), afin de créer un nouveau site.
 
@@ -44,14 +44,14 @@ Si ce message apparaît quand vous lancez l'installation de votre module, c'est 
 
 > [!primary]
 >
-> Retrouvez le comparatif de nos différentes [offres d'hébergement](https://www.ovh.com/ca/fr/hebergement-web/).
+> Retrouvez le comparatif de nos différentes [offres d'hébergement](https://www.ovhcloud.com/fr-ca/web-hosting/).
 >
 
 Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}. Choisissez l'hébergement concerné puis cliquez sur `Changer d'offre` dans la partie `Abonnement` - `Offre` :
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Les offres [Pro2014](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-pro.xml) et [Performance](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-performance.xml) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://docs.ovh.com/ca/fr/hosting/premiers-pas-avec-sql-prive/).
+Les offres [Pro2014](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://docs.ovh.com/ca/fr/hosting/premiers-pas-avec-sql-prive/).
 
 #### Solution n°2 : supprimer une base de données non utilisée <a name="supprimer-la-base"></a>
 
@@ -72,7 +72,7 @@ Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&
 
 > [!primary]
 >
-> Retrouvez le comparatif de nos différentes [offres de bases de données](https://www.ovh.com/ca/fr/hebergement-web/options-sql.xml)
+> Retrouvez le comparatif de nos différentes [offres de bases de données](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/)
 >
 
 #### Solution n°4 : installer votre module sur une base de données déjà utilisée

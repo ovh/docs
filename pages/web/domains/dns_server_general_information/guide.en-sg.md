@@ -30,7 +30,7 @@ DNS servers are generally used in groups of two (primary and secondary), in orde
 
 ## Requirements
 
-- a [domain name](https://www.ovh.com/sg/domains/) registered with OVHcloud
+- a [domain name](https://www.ovhcloud.com/en-sg/domains/) registered with OVHcloud
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 > [!primary]

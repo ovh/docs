@@ -16,8 +16,8 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 
 ## Prérequis
 
-- Disposer d'une offre [d'hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} compatible.
-- Disposer d'un ou plusieurs [noms de domaine](https://www.ovh.com/ca/fr/domaines/){.external}.
+- Disposer d'une offre [d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} compatible.
+- Disposer d'un ou plusieurs [noms de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external}.
 - Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns)).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
@@ -59,7 +59,7 @@ Cette étape ne s'applique que si vous avez sélectionné « Ajouter un domaine 
 > [!primary]
 > Pour ajouter un sous-domaine, vous devez d’abord sélectionner le domaine principal dans la liste (exemple: mydomain.ovh). L’étape suivante vous permettra d’indiquer le sous-domaine (exemple: **blog**.mydomain.ovh).
 
-Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon votre offre d'[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}, certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
+Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
 
 ![multisite](images/add-multisite-step2.png){.thumbnail}
 
@@ -111,7 +111,7 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 > ![multisite](images/add-multisite-external-step4.png){.thumbnail}
 >
 
- Vous devez à présent personnaliser l’ajout du domaine. À noter que certaines options comprises dans votre offre d'[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} ne peuvent pas être activées pendant ce processus. Vous devrez finaliser la manipulation avant de pouvoir les utiliser, en modifiant les paramètres du multisite lorsqu’il sera ajouté.
+ Vous devez à présent personnaliser l’ajout du domaine. À noter que certaines options comprises dans votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} ne peuvent pas être activées pendant ce processus. Vous devrez finaliser la manipulation avant de pouvoir les utiliser, en modifiant les paramètres du multisite lorsqu’il sera ajouté.
 
 |Information|Description|
 |---|---|
@@ -146,7 +146,7 @@ A contrario, si vous souhaitez installer manuellement votre site, munissez-vous 
 >
 > Si vous souhaitez ajouter plusieurs sites web, vous devrez répéter cette étape.
 >
-> Nous vous invitons à être vigilant sur le nombre de sites que vous partagez sur votre hébergement. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} indique le nombre de sites Internet que vous pouvez accueillir sur votre espace.
+> Nous vous invitons à être vigilant sur le nombre de sites que vous partagez sur votre hébergement. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} indique le nombre de sites Internet que vous pouvez accueillir sur votre espace.
 >
 
 ## Aller plus loin

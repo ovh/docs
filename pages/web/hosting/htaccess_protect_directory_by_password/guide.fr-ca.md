@@ -23,7 +23,7 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/).
+- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être en possession des identifiants permettant de se connecter à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/).
 
@@ -67,7 +67,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Si vous disposez d'un hébergement [Pro](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-pro.xml) ou [Performance](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-performance.xml), connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécutez la commande suivante :
+Si vous disposez d'un hébergement [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécutez la commande suivante :
 
 ```bash
 php crypt.php
@@ -75,7 +75,7 @@ php crypt.php
 
 > [!warning]
 >
-> Pour des raisons de sécurité, l'utilisation du SSH est recommandée. Toutefois, si vous disposez d'une offre [Kimsufi Web](https://www.kimsufi.com/ca/fr/) ou [Perso](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-perso.xml) et que vous ne souhaitez pas passer sur une offre [Pro](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-pro.xml) ou [Performance](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-performance.xml), vous pouvez aussi exécuter le fichier « crypter.php » par le biais de votre navigateur Web (En allant sur une URL du type https://votre-domaine.ovh/crypter.php).
+> Pour des raisons de sécurité, l'utilisation du SSH est recommandée. Toutefois, si vous disposez d'une offre [Kimsufi Web](https://www.kimsufi.com/ca/fr/) ou [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) et que vous ne souhaitez pas passer sur une offre [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), vous pouvez aussi exécuter le fichier « crypter.php » par le biais de votre navigateur Web (En allant sur une URL du type https://votre-domaine.ovh/crypter.php).
 >
 > Pour toute question complémentaire sur la méthode à utiliser pour chiffrer vos mots de passe, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >

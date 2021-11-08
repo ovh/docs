@@ -26,8 +26,8 @@ You want to migrate your email addresses on an Exchange or Email Pro platform to
 
 ## Requirements
 
-- a "**source**" platform with configured [Exchange](https://www.ovh.ie/emails/hosted-exchange/){.external} or [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} accounts
-- a "**destination**" platform with [Exchange](https://www.ovh.ie/emails/hosted-exchange/){.external}, [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](https://www.ovh.ie/web-hosting/){.external}). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
+- a "**source**" platform with configured [Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/){.external} or [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/){.external} accounts
+- a "**destination**" platform with [Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/){.external}, [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/){.external} or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external}). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions

@@ -16,8 +16,8 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}
-- one or more [domain names](https://www.ovh.ie/domains/){.external}
+- a compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}
+- one or more [domain names](https://www.ovhcloud.com/en-ie/domains/){.external}
 - the right to modify your domain name's configuration (the [DNS Zone](../../domains/web_hosting_how_to_edit_my_dns_zone/))
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
@@ -59,7 +59,7 @@ This step only applies if you have selected "Add a domain registered with OVHclo
 > [!primary]
 > To add a subdomain, you must first select the primary domain from the list (example: mydomain.ovh). In the next step, you can enter the subdomain (e.g. **blog**.mydomain.ovh).
 
-You will now need to customise the way you add your domain or subdomain. Some of the choices offered cannot be selected, depending on which [Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} you have.
+You will now need to customise the way you add your domain or subdomain. Some of the choices offered cannot be selected, depending on which [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} you have.
 
 ![multisite](images/add-multisite-step2.png){.thumbnail}
 
@@ -67,11 +67,11 @@ You will now need to customise the way you add your domain or subdomain. Some of
 |---|---|
 |Domains|The domain that you have selected will be automatically entered by default. You can add a subdomain (e.g. **blog**.mydomain.ovh) to it, and create the corresponding "www" subdomain at the same time (e.g. **www.blog**.mydomain.ovh). This domain will represent the website that you want to put online.|
 |Root folder|Define the folder on your storage space to which the domain points. The website files need to be placed in this folder. For example, for blog.mydomain.ovh, the root directory could be "blog". If the directory does not exist, it will be created automatically.|
-|SSL|Provides you with a secure connection (HTTPS://) on the selected domain. Find out more about this on [our SSL page](https://www.ovh.ie/ssl/){.external}. By enabling SSL and the CDN (Content Delivery Network), you can also benefit from the **HTTP2** protocol (the latter is enabled by default in our Gravelines data centre).|
-|Enable CDN|Enables the CDN (which replicates and caches your website’s static elements, e.g. images) on the selected domain. To find out more about this, go to [our CDN page](https://www.ovh.ie/web-hosting/cdn.xml){.external}. By enabling SSL and the CDN, you can also benefit from the **HTTP2** protocol (the latter is activated by default in our Gravelines data centre).|
-|Geolocated IP|Provides you with a geolocated IP address (from a country list) for the selected domain. To find out more about this, go to [our IP page](https://www.ovh.ie/web-hosting/ip.xml){.external}.|
+|SSL|Provides you with a secure connection (HTTPS://) on the selected domain. Find out more about this on [our SSL page](https://www.ovhcloud.com/en-ie/web-hosting/options/ssl/){.external}. By enabling SSL and the CDN (Content Delivery Network), you can also benefit from the **HTTP2** protocol (the latter is enabled by default in our Gravelines data centre).|
+|Enable CDN|Enables the CDN (which replicates and caches your website’s static elements, e.g. images) on the selected domain. To find out more about this, go to [our CDN page](https://www.ovhcloud.com/en-ie/web-hosting/options/cdn/){.external}. By enabling SSL and the CDN, you can also benefit from the **HTTP2** protocol (the latter is activated by default in our Gravelines data centre).|
+|Geolocated IP|Provides you with a geolocated IP address (from a country list) for the selected domain. To find out more about this, go to [our IP page](https://www.ovhcloud.com/en-ie/web-hosting/options/){.external}.|
 |Enable firewall|Enables a firewall (request analysis) for the selected domain. To find out more about this, go to [our ModSecurity page](https://www.ovh.co.uk/web-hosting/mod_security.xml){.external}.|
-|Separate logs|Activates a new space for logs on the selected domain. You will need to choose a domain name from the list. The selected domain will be used as an access name for this new space. Find out more about this on [our detailed statistics page](https://www.ovh.ie/web-hosting/website_statistics.xml){.external}.|
+|Separate logs|Activates a new space for logs on the selected domain. You will need to choose a domain name from the list. The selected domain will be used as an access name for this new space. Find out more about this on [our detailed statistics page](https://www.ovhcloud.com/en-ie/web-hosting/uc-website-traffic-analysis/){.external}.|
 
 Once you have entered this information, click `Next`{.action}. Then check the summary that appears.
 
@@ -111,13 +111,13 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 > ![multisite](images/add-multisite-external-step4.png){.thumbnail}
 >
 
- You will now need to customise the way you add your domain. Please note that some of the options included in your [Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} cannot be enabled during this process. You will need to finalise this operation in order to use them, by modifying the multisite settings once the domain is attached.
+ You will now need to customise the way you add your domain. Please note that some of the options included in your [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} cannot be enabled during this process. You will need to finalise this operation in order to use them, by modifying the multisite settings once the domain is attached.
 
 |Information|Description|
 |---|---|
 |Domain|Enter the domain name you want to use. Add subdomains (e.g. **blog**.mydomain.ovh) if required, and create the corresponding "www" subdomain at the same time (e.g. **www.blog**.mydomain.ovh). This domain will correspond to the website that you want to put online. As a reminder, you must have the appropriate rights to modify the domain’s configuration (its DNS zone) to finalise this addition.|
 |Root folder| Define the folder on your storage space to which the domain points. The website files need to be placed in this folder. For example, for blog.mydomain.ovh, the root directory could be "blog". If the directory does not exist, it will be created automatically.|
-|Enable IPv6|Enables the IPv6 protocol on the selected domain. To find out more about this, go to [our IP page](https://www.ovh.ie/web-hosting/ip.xml){.external}.|
+|Enable IPv6|Enables the IPv6 protocol on the selected domain. To find out more about this, go to [our IP page](https://www.ovhcloud.com/en-ie/web-hosting/options/){.external}.|
 
 Once you have entered this information, click `Next`{.action}. Then check the summary that appears.
 
@@ -146,7 +146,7 @@ However, if you would like to set up your website manually, you can put it onlin
 >
 > If you would like to add several websites, you will need to repeat this step.
 >
-> We recommend taking care with the number of websites you host on your Web Hosting plan. The more websites you host, the higher the demand will be on your allocated resources. Our [Web Hosting page](https://www.ovh.ie/web-hosting/){.external} shows the number of websites you can host on your plan.
+> We recommend taking care with the number of websites you host on your Web Hosting plan. The more websites you host, the higher the demand will be on your allocated resources. Our [Web Hosting page](https://www.ovhcloud.com/en-ie/web-hosting/){.external} shows the number of websites you can host on your plan.
 >
 
 ## Go further

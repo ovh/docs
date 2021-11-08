@@ -22,7 +22,7 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/sg/web-hosting/)
+- a compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 - using the [1-click module](../web_hosting_web_hosting_modules/) feature to create a new website
 
@@ -43,14 +43,14 @@ This message might appear when you try to auto-create a new module. Each 1-click
 
 > [!primary]
 >
-> View our comparison of different [hosting plans](https://www.ovh.com/sg/web-hosting/).
+> View our comparison of different [hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/).
 >
 
 In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), click on `Web Cloud`{.action}, then `Hosting plans`{.action}. Select the plan concerned, then click `Upgrade` in the `Plan` section.
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-With the [Professional](https://www.ovh.com/sg/web-hosting/web-hosting-pro.xml) and [Performance](https://www.ovh.com/sg/web-hosting/performance-web-hosting.xml) offers, you can create up to three additional 1-click modules. **Performance** hosting plans also allow you to enable a [private SQL server](https://www.ovh.com/sg/web-hosting/sql-options.xml) for free.
+With the [Professional](https://www.ovhcloud.com/en-sg/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-sg/web-hosting/performance-offer/) offers, you can create up to three additional 1-click modules. **Performance** hosting plans also allow you to enable a [private SQL server](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) for free.
 
 #### Solution 2: delete an unused database <a name="deleteDB"></a>
 
@@ -71,7 +71,7 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 
 > [!primary]
 >
-> Check our various [database offers](https://www.ovh.com/sg/web-hosting/sql-options.xml).
+> Check our various [database offers](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/).
 >
 
 #### Solution 4: install your module on a database you already use

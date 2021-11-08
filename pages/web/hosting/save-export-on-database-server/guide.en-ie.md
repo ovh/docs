@@ -16,7 +16,7 @@ Your database can contain a lot of essential information for your website. It is
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovh.ie/web-hosting/sql-options.xml) or a [Cloud Database](https://www.ovh.ie/cloud-databases/)
+- a [Private SQL Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) or a [Cloud Database](https://www.ovh.ie/cloud-databases/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions

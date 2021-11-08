@@ -16,7 +16,7 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovh.ie/web-hosting/sql-options.xml) or a [Cloud Database](https://www.ovh.ie/cloud-databases/)
+- a [Private SQL Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) or a [Cloud Database](https://www.ovh.ie/cloud-databases/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions

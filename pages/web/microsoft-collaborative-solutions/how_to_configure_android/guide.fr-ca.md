@@ -16,7 +16,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 ## Prérequis
 
-- Disposer d'une offre [Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external}.
+- Disposer d'une offre [Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}.
 - Disposer de l'application Gmail installée sur votre appareil. Vous pouvez installer cette dernière depuis Google Play Store.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
