@@ -9,7 +9,7 @@ section: SSL
 ## Introduccion
 Los certificados SSL EV comercializados por OVH son emitidos por la autoridad de certificación Comodo, que se encarga de verificar la existencia jurídica de la empresa.
 
-Toda la información comercial está disponible en nuestro sitio web: [https://www.ovh.es/ssl/](https://www.ovh.es/ssl/){.external}.
+Toda la información comercial está disponible en nuestro sitio web: [https://www.ovhcloud.com/es-es/web-hosting/options/ssl/](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external}.
 
 
 ### Por que utilizar un certificado SSL EV

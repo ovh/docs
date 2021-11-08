@@ -25,7 +25,7 @@ order: 3
 ## Voraussetzungen
 
 - Sie haben Zugriff auf das [ OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](https://www.ovh.de/emails/hosted-exchange) oder [E-Mail Pro](https://www.ovh.de/emails/email-pro) Lösung.
+- Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Lösung.
 
 
 ## In der praktischen Anwendung

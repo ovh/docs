@@ -17,7 +17,7 @@ Los planes SharePoint permiten disfrutar de un espacio de almacenamiento compart
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Haberse suscrito a una plataforma [Hosted Exchange](https://www.ovh.es/emails/hosted-exchange/){.external} para la contratación de una plataforma SharePoint asociada.
+- Haberse suscrito a una plataforma [Hosted Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/){.external} para la contratación de una plataforma SharePoint asociada.
 
 ## Procedimiento
 

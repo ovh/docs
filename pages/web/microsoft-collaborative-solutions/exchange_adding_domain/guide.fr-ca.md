@@ -16,7 +16,7 @@ Ajouter un nom de domaine sur un service Exchange est indispensable afin de pouv
 
 ## Prérequis
 
-- Disposer d'une [solution Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external}.
+- Disposer d'une [solution Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}.
 - Disposer d'un ou plusieurs noms de domaine.
 - Être en mesure de pouvoir modifier la configuration de votre nom de domaine (sa zone DNS).
 - Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
@@ -40,7 +40,7 @@ Pour ajouter un nom de domaine, cliquez sur l'onglet `Domaine associés`{.action
 
 > [!warning]
 >
-> Toutes les adresses créées sur votre service Exchange seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, vous devez commander une nouvelle [solution Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external} pour le ou les noms de domaine concernés.
+> Toutes les adresses créées sur votre service Exchange seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, vous devez commander une nouvelle [solution Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external} pour le ou les noms de domaine concernés.
 >
 
 ![Exchange](images/add_domain_exchange_step1.png){.thumbnail}

@@ -26,9 +26,9 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-- Sie verwenden einen unserer Datenbankdienste: [Web Cloud](https://www.ovh.de/hosting/sql-optionen.xml) oder [SQL Private](../erste-schritte-mit-sql-private/).
+- Sie verwenden einen unserer Datenbankdienste: [Web Cloud](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [SQL Private](../erste-schritte-mit-sql-private/).
 
 ## In der praktischen Anwendung
 
@@ -105,7 +105,7 @@ Sie können Ihre Datenbank mit drei Methoden entsperren:
 
 #### Methode 1: Ihren Dienst upgraden
 
-Wenn Sie über ein Webhosting **Basic** oder **Pro** verfügen, empfehlen wir Ihnen, auf das [nächsthöhere Hosting-Angebot](https://www.ovh.de/hosting/) umzusteigen. Diese Erweiterung erhöht auch die Größe Ihrer Datenbank, was sie automatisch wieder öffnet. Diese Methode ist die einfachste und erfordert keine besondere technische Kompetenz.
+Wenn Sie über ein Webhosting **Basic** oder **Pro** verfügen, empfehlen wir Ihnen, auf das [nächsthöhere Hosting-Angebot](https://www.ovhcloud.com/de/web-hosting/) umzusteigen. Diese Erweiterung erhöht auch die Größe Ihrer Datenbank, was sie automatisch wieder öffnet. Diese Methode ist die einfachste und erfordert keine besondere technische Kompetenz.
 
 > [!warning]
 >
@@ -124,7 +124,7 @@ Wenn Sie ein Webhosting **Performance** verwenden, gehen Sie zu [Methode 2](#met
 
 Sie können Ihre Daten auch auf eine neue Datenbank migrieren:
 
-- Wenn nötig, bestellen Sie einen [Datenbank-Dienst](https://www.ovh.de/hosting/sql-optionen.xml) mit höherer Kapazität und [erstellen Sie die neue Datenbank](../datenbank-erstellen/).
+- Wenn nötig, bestellen Sie einen [Datenbank-Dienst](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) mit höherer Kapazität und [erstellen Sie die neue Datenbank](../datenbank-erstellen/).
 - Führen Sie einen [Export Ihrer Daten](../webhosting_hilfe_zum_export_von_datenbanken/) durch und [importieren Sie diese](../webhosting_import_einer_mysql-datenbank/) in die neue Datenbank.
 - Integrieren Sie die Login-Daten der neuen Datenbank in die [Konfigurationsdatei](#config_file) Ihrer Website.
 
@@ -155,7 +155,7 @@ Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung
 
 ### Überschreitungen der RAM-Kapazität
 
-In der unten abgebildeten Nachricht im Bereich `Datenbanken`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wird darauf hingewiesen, dass Ihr [SQL Private](https://www.ovh.de/hosting/sql-optionen.xml) zu viele Ressourcen auf der OVHcloud Infrastruktur verbraucht hat:
+In der unten abgebildeten Nachricht im Bereich `Datenbanken`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wird darauf hingewiesen, dass Ihr [SQL Private](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) zu viele Ressourcen auf der OVHcloud Infrastruktur verbraucht hat:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
@@ -188,7 +188,7 @@ Kontaktieren Sie gegebenenfalls unsere [Community](https://community.ovh.com/en/
 
 > [!success]
 >
-> Sie können keinen **Trigger** im Importskript Ihrer Datenbank verwenden. Importieren Sie in diesem Fall Ihre Datenbank auf einen [SQL Private Dienst](https://www.ovh.de/hosting/sql-optionen.xml).
+> Sie können keinen **Trigger** im Importskript Ihrer Datenbank verwenden. Importieren Sie in diesem Fall Ihre Datenbank auf einen [SQL Private Dienst](https://www.ovhcloud.com/de/web-hosting/options/start-sql/).
 >
 
 Außerdem ist folgende Abfrage nicht zulässig:
@@ -242,7 +242,7 @@ Diese Fehlermeldung kann bei der Verbindung zu Ihrer Datenbank mit [phpMyAdmin](
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
 >
 
-Die maximale Anzahl an aktiven Verbindungen für die mit den Shared Hosting Angeboten gelieferten Datenbanken ([StartSQL](https://www.ovh.de/hosting/sql-optionen.xml)) beträgt **30**.
+Die maximale Anzahl an aktiven Verbindungen für die mit den Shared Hosting Angeboten gelieferten Datenbanken ([StartSQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/)) beträgt **30**.
 
 Diese Zahl erhöht sich auf **200** für Datenbanken auf [SQL Private](../erste-schritte-mit-sql-private/). (Diese Einstellung kann im Bereich `Konfiguration`{.action} Ihres Datenbankdienstes geändert werden).
 

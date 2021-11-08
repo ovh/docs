@@ -22,7 +22,7 @@ Ein **freigegebenes Postfach** ist eine Mailbox, die zwischen mehreren Exchange 
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben einen [OVHcloud Exchange](https://www.ovh.de/emails/hosted-exchange/) Dienst eingerichtet.
+- Sie haben einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
 
 ## In der praktischen Anwendung
 

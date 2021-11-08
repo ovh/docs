@@ -23,7 +23,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external}
+- Wykupienie usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external}
 - Dane do logowania do konta E-mail Pro, które chcesz skonfigurować
 - Dane do konta Gmail, w którym chcesz skonfigurować konto E-mail Pro OVHcloud
 

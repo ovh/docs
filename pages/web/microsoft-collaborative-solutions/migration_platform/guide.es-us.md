@@ -30,8 +30,8 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 
 ## Requisitos
 
-- Tener una plataforma **"source"** con cuentas [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external}  configuradas.
-- Disponer de una plataforma de **"destino"** con cuentas [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external} o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}). Esta plataforma debe disponer de cuentas no configuradas o disponibles para recibir las direcciones de correo que deban migrarse.
+- Tener una plataforma **"source"** con cuentas [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external}  configuradas.
+- Disponer de una plataforma de **"destino"** con cuentas [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external} o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}). Esta plataforma debe disponer de cuentas no configuradas o disponibles para recibir las direcciones de correo que deban migrarse.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento

@@ -17,7 +17,7 @@ Avec OVHcloud Hosted Exchange, vous pouvez envoyer et recevoir vos e-mails à pa
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud, proposée parmi nos [offres d’hébergement web](https://www.ovh.com/ca/fr/hebergement-web/) ou commandée séparément comme solution autonome telle que [**Hosted Exchange**](https://www.ovh.com/ca/fr/emails/hosted-exchange/)
+- Disposer d'une solution e-mail OVHcloud, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) ou commandée séparément comme solution autonome telle que [**Hosted Exchange**](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)
 - Connaître les identifiants de connexion de l’adresse e-mail que vous souhaitez configurer
 
 ## En pratique

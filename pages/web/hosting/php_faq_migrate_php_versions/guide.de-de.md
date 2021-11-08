@@ -17,7 +17,7 @@ Wie alle Programmiersprachen wird auch PHP ständig weiter entwickelt, neue Vers
 Diese alten, nicht mehr gewarteten PHP Versionen weisen Sicherheitsrisiken für OVH und die Benutzer auf, deshalb werden wir sie deaktivieren.
 Welche Vorteile bietet die Migration auf eine neue PHP Version für mich als Benutzer?
 Durch die Migration Ihrer Seite auf eine der aktuellen PHP Versionen, die weiterhin gepflegt werden, reduzieren Sie die Sicherheitsrisiken in Zusammenhang mit Hacks und profitieren von Neuerungen in PHP.
-Außerdem bietet Ihnen OVH ab der PHP Version 5.3 die kostenlose PHP-FPM Optimierung zur Verbesserung der Performance Ihres Hostings. Klicken Sie [hier](https://www.ovh.de/hosting/php-fpm-optimierung.xml) für mehr Informationen zu PHP-FPM.
+Außerdem bietet Ihnen OVH ab der PHP Version 5.3 die kostenlose PHP-FPM Optimierung zur Verbesserung der Performance Ihres Hostings. Klicken Sie [hier](https://www.ovhcloud.com/de/web-hosting/php-fpm-optimierung.xml) für mehr Informationen zu PHP-FPM.
 Welche PHP Versionen sind betroffen und wann werden diese deaktiviert?
 Die betroffenen PHP Versionen sind:
 

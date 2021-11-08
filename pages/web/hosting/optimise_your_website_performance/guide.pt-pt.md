@@ -18,9 +18,9 @@ Este guia irá fornecer-lhe informações básicas sobre os pontos que podem afe
 > Este caso de uso irá mostrar-lhe como utilizar uma ou mais soluções OVHcloud com ferramentas externas e irá descrever as ações a executar num contexto específico. Lembre-se de adaptar estas ações à sua situação. Em caso de dificuldade durante a execução destas ações, contacte um fornecedor especializado e/ou discuta a situação com a nossa comunidade em <https://community.ovh.com/en/>. A OVHcloud não lhe poderá prestar apoio técnico nesta questão.
 
 ## Requisitos
-- um [plano de Alojamento Web OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external}
+- um [plano de Alojamento Web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}
 - um e-mail a confirmar a configuração do seu plano de Alojamento Web
-- um [nome de domínio](https://www.ovh.pt/dominios/){.external} que pode ser utilizado para aceder ao seu website
+- um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external} que pode ser utilizado para aceder ao seu website
 - acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 
 ## Instruções
@@ -43,9 +43,9 @@ A resposta a estas questões pode ajudá-lo a centrar-se em pontos específicos 
 
 A utilização de um CMS, como o WordPress, PrestaShop, Drupal ou Joomla!, requer muitas bibliotecas para permitir que uma única página web possa gerir diversos elementos.
 Os browsers têm de carregar e ler todos estes elementos.
-Fornecemos recomendações sobre a oferta de alojamento web a utilizar para os CMS acima indicados na [página de produto](https://www.ovh.pt/alojamento-partilhado/){.external}.
+Fornecemos recomendações sobre a oferta de alojamento web a utilizar para os CMS acima indicados na [página de produto](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 
-Encontrará mais informações acerca do plano a escolher [nesta página](https://www.ovh.pt/alojamento-partilhado/qual_alojamento_partilhado_escolher.xml){.external}.
+Encontrará mais informações acerca do plano a escolher [nesta página](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/){.external}.
 
 
 ### Passo 2: Verificar a versão PHP
@@ -145,7 +145,7 @@ Conheça a nossa [solução CDN aqui](https://www.ovh.pt/cdn/){.external}.
 
 _Este passo é opcional se não utilizar um CMS._
 
-Para garantir a adaptação da sua oferta de alojamento às necessidades do seu CMS, pode encontrar uma comparação dos nossos serviços na [página de produto](https://www.ovh.pt/alojamento-partilhado/){.external}.
+Para garantir a adaptação da sua oferta de alojamento às necessidades do seu CMS, pode encontrar uma comparação dos nossos serviços na [página de produto](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 
 - **Utilização de um plugin de cache:** A utilização de um CMS requer várias bibliotecas para que uma única página web consiga gerir uma grande quantidade de elementos. Para otimizar o seu CMS, deve utilizar diversos plugins de cache para evitar regenerar todo o conteúdo do seu website sempre que uma página é carregada. Recomendamos que procure plugins de cache em websites da comunidade relacionados com o CMS que utiliza (Joomla! - PrestaShop - WordPress) para evitar regenerar todo o conteúdo do seu website sempre que carrega a página web.
 
@@ -218,7 +218,7 @@ Evite utilizar a cláusula “HAVING”, por exemplo, que atrasa as suas consult
 
 #### SQL Privado
 Se, apesar de todas as alterações e otimizações realizadas, a base de dados estiver lenta, ou se for efetuado um grande número de consultas na base de dados, é aconselhável mudar para a nossa oferta de SQL Privado para ter mais recursos disponíveis.
-Encontrará uma comparação das nossas ofertas na [página de produto](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml){.external}.
+Encontrará uma comparação das nossas ofertas na [página de produto](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/){.external}.
 
 ## Vá mais longe
 

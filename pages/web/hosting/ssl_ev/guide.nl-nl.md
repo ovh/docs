@@ -9,7 +9,7 @@ excerpt: EV SSL certificaten garanderen de betrouwbaarheid van uw bedrijf en ver
 ## Overzicht
 Door OVH aangeboden EV SSL certificaten worden uitgegeven door de certificaatautoriteit Comodo. Comodo waarborgt de legitimiteit van uw bedrijf.
 
-U kunt alle commerciële details vinden op onze site: [https://www.ovh.nl/ssl/](https://www.ovh.nl/ssl/){.external}
+U kunt alle commerciële details vinden op onze site: [https://www.ovhcloud.com/nl/web-hosting/options/ssl/](https://www.ovhcloud.com/nl/web-hosting/options/ssl/){.external}
 
 
 ### Waarom kiezen voor een EV SSL certificaat?

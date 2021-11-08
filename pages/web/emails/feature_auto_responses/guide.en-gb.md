@@ -16,14 +16,14 @@ This OVHcloud feature allows you to set up an automatic email responder that wil
 
 ## Requirements
 
-- an MX Plan email solution or a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} 
+- an MX Plan email solution or a [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 > [!primary]
 >
-> If your email account is hosted on [**Exchange**](https://www.ovh.co.uk/emails/hosted-exchange/) or [**Email Pro**](https://www.ovh.co.uk/emails/email-pro/) or if the functionality is not available in your Control Panel, you can instead create responders from your OWA webmail using the guide "[Creating automatic replies in OWA](../../microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/)".
+> If your email account is hosted on [**Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/) or if the functionality is not available in your Control Panel, you can instead create responders from your OWA webmail using the guide "[Creating automatic replies in OWA](../../microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/)".
 
 ### Creating autoresponders
 

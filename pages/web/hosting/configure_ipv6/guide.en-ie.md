@@ -25,8 +25,8 @@ Our Web Hosting plans have been IPv6 compatible since 2011 but enabling this pro
 
 ## Requirements
 
-- a [domain name](https://www.ovh.ie/domains/) registered with OVHcloud, using OVHcoud DNS servers
-- an [OVHcloud Web Hosting plan](https://www.ovh.ie/web-hosting/)
+- a [domain name](https://www.ovhcloud.com/en-ie/domains/) registered with OVHcloud, using OVHcoud DNS servers
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions

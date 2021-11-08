@@ -16,7 +16,7 @@ Adquiriu um serviço E-mail Pro, que lhe permite beneficiar de endereços de e-m
 
 ## Requisitos
 
-- Ter o serviço [E-mail Pro](https://www.ovh.pt/emails/email-pro/){.external}.
+- Ter o serviço [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
 - Ter recebido o e-mail com a confirmação da instalação do serviço E-mail Pro.
 - Dispor de um domínio.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.

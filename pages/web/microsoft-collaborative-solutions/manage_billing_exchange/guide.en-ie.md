@@ -17,7 +17,7 @@ The Hosted Exchange and Private Exchange services offer flexible management for 
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
-- a subscription to an [Exchange](https://www.ovh.ie/emails/hosted-exchange/){.external} solution
+- a subscription to an [Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/){.external} solution
 
 ## Instructions
 

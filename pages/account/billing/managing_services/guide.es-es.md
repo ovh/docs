@@ -28,7 +28,7 @@ En el área de cliente puede administrar todos sus servicios de OVH.
 
 En la sección `Administrar mis servicios`{.action} del área de cliente puede ver todas sus soluciones de OVH. También es posible administrar la mayoría de estas soluciones, a excepción de:
 
-- servicios Microsoft (como las soluciones [Exchange](https://www.ovh.es/emails/hosted-exchange/){.external}, [Office 365](https://www.ovh.es/office-365/){.external} y [SharePoint](https://www.ovh.es/sharepoint/){.external});
+- servicios Microsoft (como las soluciones [Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/){.external}, [Office 365](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/){.external} y [SharePoint](https://www.ovhcloud.com/es-es/collaborative-tools/sharepoint/){.external});
 - el servicio de correo MX Plan.
 
 Continúe leyendo esta guía en el apartado correspondiente a la acción que quiera realizar:
@@ -87,7 +87,7 @@ Puede cancelar esta operación (revertir la solicitud de baja para continuar hac
 
 #### Eliminar inmediatamente un servicio
 
-Esta acción, disponible solo para los [alojamientos web](https://www.ovh.es/hosting/){.external}, elimina de inmediato el servicio seleccionado (es decir, antes de su fecha de expiración) sin esperar a la finalización del contrato.
+Esta acción, disponible solo para los [alojamientos web](https://www.ovhcloud.com/es-es/web-hosting/){.external}, elimina de inmediato el servicio seleccionado (es decir, antes de su fecha de expiración) sin esperar a la finalización del contrato.
 
 **Al eliminar el servicio de forma inmediata, los datos que este pueda alojar también se eliminarán de forma irreversible. No se realizará ninguna devolución por el tiempo no disfrutado restante hasta el vencimiento del contrato.** 
 

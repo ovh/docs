@@ -29,7 +29,7 @@ Para funcionar, cada servidor guarda en memoria caché una parte de su sitio web
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Tener contratado un [plan de alojamiento web](https://www.ovh.es/hosting/){.external}.
+- Tener contratado un [plan de alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 
 ## Procedimiento
 
@@ -137,7 +137,7 @@ Una vez que haya configurado las reglas y las opciones, haga clic en `Aplicar la
 #### Configurar las opciones de la CDN Security
 
 > [!primary]
->  las opciones que se presentan a continuación requieren la suscripción a la [CDN Security](https://www.ovh.es/hosting/cdn.xml) o a la [CDN Advanced](https://www.ovh.es/hosting/cdn.xml)
+>  las opciones que se presentan a continuación requieren la suscripción a la [CDN Security](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/) o a la [CDN Advanced](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/)
 
 Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego `Editar la CDN`{.action}. 
 

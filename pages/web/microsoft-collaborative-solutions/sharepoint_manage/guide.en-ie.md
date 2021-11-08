@@ -18,7 +18,7 @@ The SharePoint solutions offer shared storage space for your collaborative work.
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- an [OVHcloud Exchange solution](https://www.ovh.ie/emails/hosted-exchange) already set up (for enabling an associated SharePoint platform)
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) already set up (for enabling an associated SharePoint platform)
 
 ## Instructions
 

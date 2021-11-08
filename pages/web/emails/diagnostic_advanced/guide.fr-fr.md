@@ -58,7 +58,7 @@ Depuis le navigateur de votre ordinateur ou depuis un smartphone, allez sur l'ad
 
 ### Je ne ne parviens pas à me connecter au webmail
 
-Assurez-vous d'avoir le bon mot de passe. Si nécessaire, vous pouvez le modifier. Vérifiez également si la double authentification est activée ([Exchange](https://www.ovh.com/fr/emails/hosted-exchange/) uniquement).
+Assurez-vous d'avoir le bon mot de passe. Si nécessaire, vous pouvez le modifier. Vérifiez également si la double authentification est activée ([Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) uniquement).
 
 Voici comment modifier le mot de passe d'une adresse e-mail :
 

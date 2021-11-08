@@ -27,7 +27,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [E-Mail Pro Account](https://www.ovh.de/emails/email-pro/){.external}.
+- Sie verfügen über einen [E-Mail Pro Account](https://www.ovhcloud.com/de/emails/email-pro/){.external}.
 - Microsoft Outlook ist auf Ihrem Gerät installiert.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 

@@ -58,7 +58,7 @@ From your computer browser or smartphone, go to the address <https://www.ovh.ie/
 
 ### I cannot log in to webmail
 
-Make sure you have the right password. If necessary, you can modify it. Also check if two-factor authentication is enabled ([Exchange](https://www.ovh.ie/emails/hosted-exchange/) only).
+Make sure you have the right password. If necessary, you can modify it. Also check if two-factor authentication is enabled ([Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) only).
 
 Here is how to change the password for an email address:
 

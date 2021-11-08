@@ -16,9 +16,9 @@ Uno spazio di hosting ti permette di creare il tuo sito con soluzioni chiavi in 
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
+- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
-- Disporre di un [dominio](https://www.ovh.it/domini/){.external} attivo, che corrisponderà all’indirizzo del tuo sito
+- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} attivo, che corrisponderà all’indirizzo del tuo sito
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
@@ -33,7 +33,7 @@ Grazie agli hosting Web OVH è possibile creare un nuovo sito o migrarne uno esi
 
 Per pubblicare online file e contenuti è possibile creare un sito Internet in autonomia se si possiedono le competenze di programmazione necessarie, oppure affidarsi a soluzioni chiavi in mano come i CMS (Content Management System). La prima soluzione è più tecnica ma offre la possibilità di realizzare un progetto totalmente personalizzato. La seconda consente invece di usufruire di una struttura pronta all'uso anche senza possedere competenze tecniche specifiche.
 
-Nello Spazio Cliente OVH è disponibile uno strumento che permette di installare in un click un modulo a scelta tra WordPress, PrestaShop, Drupal e Joomla!. Se non hai ancora deciso l’applicazione da installare, la nostra [pagina comparativa dei CMS](https://www.ovh.it/hosting-web/website/confronto-cms/){.external} potrebbe esserti di aiuto. Se il CMS che hai scelto non è presente fra le opzioni proposte da OVH, potrai installarlo manualmente nel tuo spazio di hosting.
+Nello Spazio Cliente OVH è disponibile uno strumento che permette di installare in un click un modulo a scelta tra WordPress, PrestaShop, Drupal e Joomla!. Se non hai ancora deciso l’applicazione da installare, la nostra [pagina comparativa dei CMS](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external} potrebbe esserti di aiuto. Se il CMS che hai scelto non è presente fra le opzioni proposte da OVH, potrai installarlo manualmente nel tuo spazio di hosting.
 
 - **Migrare in OVH un sito Web esistente**
 
@@ -86,7 +86,7 @@ I siti Internet sono molto diversi tra loro e non esiste quindi una procedura un
 
 ### Step 3: crea i tuoi account email
 
-Se non intendi utilizzare gli account email inclusi nel tuo piano di [hosting](https://www.ovh.it/hosting-web/){.external}, questo step è facoltativo. Per creare uno o più indirizzi email, assicurati innanzitutto di essere connesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nel menu a sinistra, seleziona `Email`{.action}, clicca sul nome del tuo servizio, poi sulla scheda `Email`{.action} e infine sul pulsante `Crea un indirizzo email`{.action}. 
+Se non intendi utilizzare gli account email inclusi nel tuo piano di [hosting](https://www.ovhcloud.com/it/web-hosting/){.external}, questo step è facoltativo. Per creare uno o più indirizzi email, assicurati innanzitutto di essere connesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nel menu a sinistra, seleziona `Email`{.action}, clicca sul nome del tuo servizio, poi sulla scheda `Email`{.action} e infine sul pulsante `Crea un indirizzo email`{.action}. 
 
 ![Crea un indirizzo email](images/create_an_email_address.png){/thumbnail}
 

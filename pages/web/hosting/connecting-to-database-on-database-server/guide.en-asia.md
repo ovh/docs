@@ -16,7 +16,7 @@ You can access your database’s content via an interface. There are several way
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovh.com/asia/web-hosting/sql-options.xml)
+- a [Private SQL Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/options/start-sql/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions

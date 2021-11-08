@@ -16,12 +16,12 @@ It might become necessary to manually adjust the access settings of a service. T
 
 > [!primary]
 >
-> Please note that the IP addresses of the CDN options are "Anycast", meaning they do not need geolocalisation (see also the [product page](https://www.ovh.com/ca/en/web-hosting/cdn.xml)).
+> Please note that the IP addresses of the CDN options are "Anycast", meaning they do not need geolocalisation (see also the [product page](https://www.ovhcloud.com/en-ca/web-hosting/options/cdn/)).
 > 
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions

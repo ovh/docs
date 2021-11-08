@@ -7,7 +7,7 @@ section: Tutoriels
 
 ## Introduction
 
-[Camaleon CMS](http://camaleon.tuzitio.com/){.external} est un système de gestion de contenu (Content System Management, CMS en anglais) écrit en Ruby, basé sur le framework web [Ruby on Rails](https://rubyonrails.org/){.external}. L’[hébergement Cloud Web OVH](https://www.ovh.com/fr/hebergement-web/cloud-web.xml) permet d’utiliser Ruby comme moteur d’exécution pour vos sites web et donc d’y installer et héberger Camaleon CMS ou toute autre application web conçue en Ruby. Dans ce tutoriel, nous allons installer un site web avec Camaleon CMS sur un hébergement Cloud Web d’OVH et le mettre à disposition derrière votre nom de domaine.
+[Camaleon CMS](http://camaleon.tuzitio.com/){.external} est un système de gestion de contenu (Content System Management, CMS en anglais) écrit en Ruby, basé sur le framework web [Ruby on Rails](https://rubyonrails.org/){.external}. L’[hébergement Cloud Web OVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) permet d’utiliser Ruby comme moteur d’exécution pour vos sites web et donc d’y installer et héberger Camaleon CMS ou toute autre application web conçue en Ruby. Dans ce tutoriel, nous allons installer un site web avec Camaleon CMS sur un hébergement Cloud Web d’OVH et le mettre à disposition derrière votre nom de domaine.
 
 
 ## Prérequis
@@ -20,7 +20,7 @@ section: Tutoriels
 
 ### Ce que vous devez avoir
 
-*   Disposer d’un [hébergement Cloud WebOVH](https://www.ovh.com/fr/hebergement-web/cloud-web.xml).
+*   Disposer d’un [hébergement Cloud WebOVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
 *   Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`.
 
 

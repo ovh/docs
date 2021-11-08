@@ -20,8 +20,8 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (vendido solo 
 
 ## Requisitos
 
-- Disponer de una cuenta MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovh.es/hosting/){.external}).
-- Tener un servicio [Exchange](https://www.ovh.es/emails/hosted-exchange/){.external} o [Email Pro](https://www.ovh.es/emails/email-pro/){.external} con al menos una cuenta no configurada (que aparecerá como "@configureme.me").
+- Disponer de una cuenta MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}).
+- Tener un servicio [Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/){.external} o [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external} con al menos una cuenta no configurada (que aparecerá como "@configureme.me").
 - **No haber configurado ninguna redirección en la dirección de correo MX Plan que quiera migrar.**
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
@@ -31,7 +31,7 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (vendido solo 
 
 Las soluciones Email Pro y Exchange disponen de una base de funcionalidades común. Sin embargo, existen diferencias en los casos de uso. Eligiendo una dirección Exchange, dispondrá de todas las funciones colaborativas, como la sincronización del calendario y de los contactos. La solución Email Pro ofrece algunas, pero estas están limitadas a su uso únicamente a través de un webmail.
 
-Por lo tanto, es importante conocer a qué solución quiere migrar sus direcciones de correo MX Plan. Si necesita ayuda, consulte la página de [soluciones de correo electrónico profesionales de OVHcloud](https://www.ovh.com/fr/emails/){.external}, que ofrece una comparativa detallada de los productos. Es posible combinar las soluciones y utilizar una o más cuentas Email Pro y Exchange para un mismo dominio. Si quiere migrar varias cuentas, le recomendamos que establezca un plan de migración.
+Por lo tanto, es importante conocer a qué solución quiere migrar sus direcciones de correo MX Plan. Si necesita ayuda, consulte la página de [soluciones de correo electrónico profesionales de OVHcloud](https://www.ovhcloud.com/fr/emails/){.external}, que ofrece una comparativa detallada de los productos. Es posible combinar las soluciones y utilizar una o más cuentas Email Pro y Exchange para un mismo dominio. Si quiere migrar varias cuentas, le recomendamos que establezca un plan de migración.
 
 ### 2\. contratar sus cuentas Email Pro o Exchange
 

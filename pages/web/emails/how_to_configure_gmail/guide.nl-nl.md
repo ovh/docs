@@ -23,7 +23,7 @@ U kunt MX Plan-e-mailadressen configureren op e-mailclients en online interfaces
 
 ## Vereisten
 
-- U moet beschikken over een MX Plan-e-mailadres (inbegrepen bij MX Plan en in [OVH-webhosting](https://www.ovh.nl/shared-hosting/){.external}).
+- U moet beschikken over een MX Plan-e-mailadres (inbegrepen bij MX Plan en in [OVH-webhosting](https://www.ovhcloud.com/nl/web-hosting/){.external}).
 - U moet beschikken over de inloggegevens voor het OVH e-mailadres waarvan u de instellingen wilt bewerken.
 - U moet beschikken over de inloggegevens voor het Gmail-account waarvoor u het OVH-e-mailadres wilt instellen
 

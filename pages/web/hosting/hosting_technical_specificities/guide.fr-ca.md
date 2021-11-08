@@ -14,7 +14,7 @@ order: 6
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} compatible.
+- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} compatible.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
@@ -36,7 +36,7 @@ order: 6
 
 ### Connexions simultanées à la base de données
 
-- Sur les offres d'hébergement Web (bases de données partagées), il y a une limite de 30 connexions simultanées par base de données (200 avec la base de données privée incluse). Veuillez consulter le [détail de nos offres d'hébergement](https://www.ovh.com/ca/fr/hebergement-web/) pour vérifier les options disponibles dans chaque plan d'hébergement Web.
+- Sur les offres d'hébergement Web (bases de données partagées), il y a une limite de 30 connexions simultanées par base de données (200 avec la base de données privée incluse). Veuillez consulter le [détail de nos offres d'hébergement](https://www.ovhcloud.com/fr-ca/web-hosting/) pour vérifier les options disponibles dans chaque plan d'hébergement Web.
 
 - Vous pouvez également commander des bases de données **Private SQL** supplémentaires, celles-ci disposant d'options de personnalisation :
 
@@ -44,7 +44,7 @@ order: 6
 
     - *max_user_connections*: 50 par défaut, avec possibilité de passer à 200
 
-Pour en savoir plus, consultez les détails de nos [offres d'hébergement](https://www.ovh.com/ca/fr/hebergement-web/) et [notre guide](../premiers-pas-avec-sql-prive/).
+Pour en savoir plus, consultez les détails de nos [offres d'hébergement](https://www.ovhcloud.com/fr-ca/web-hosting/) et [notre guide](../premiers-pas-avec-sql-prive/).
 
 #### Connexions depuis un serveur externe
 
@@ -65,7 +65,7 @@ Pour plus d'informations sur la gestion des bases de données, reportez-vous au 
 
 ### PHP
 
-- Nous vous recommandons de consulter nos [offres d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/php.xml) pour vous assurer que le plan d'hébergement Web que vous souhaitez commander sera compatible avec vos besoins.
+- Nous vous recommandons de consulter nos [offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/uc-programming-language/) pour vous assurer que le plan d'hébergement Web que vous souhaitez commander sera compatible avec vos besoins.
 
 - Vous pouvez vérifier les détails de la configuration de votre hébergement web. Pour cela, consultez la rubrique [« Informations techniques de votre hébergement Web »](./#informations-techniques de-votre-hebergement-web) en bas de ce guide. 
 

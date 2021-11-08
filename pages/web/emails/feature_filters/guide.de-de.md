@@ -26,7 +26,7 @@ Zum Beispiel: Sie können jede E-Mail, die von unserem Spamschutz als Spam marki
 
 ## Voraussetzungen
 
-- Sie verfügen über ein MX Plan E-Mail-Angebot oder ein [Webhosting](https://www.ovh.de/hosting/){.external}.
+- Sie verfügen über ein MX Plan E-Mail-Angebot oder ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]

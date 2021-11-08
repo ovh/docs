@@ -15,7 +15,7 @@ El servicio Exchange permite disfrutar de direcciones de correo profesionales, q
 
 ## Requisitos
 
-- Tener un servicio [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external}.
+- Tener un servicio [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external}.
 - Tener al menos dos cuentas Exchange activas configuradas en una misma plataforma Exchange de OVH.
 - Estar conectado al [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Tener las claves de la cuenta Exchange que disfrutará de los nuevos permisos delegados.

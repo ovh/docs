@@ -16,7 +16,7 @@ I database server SQL Privato e Cloud Database ti danno la possibilità di agire
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting SQL Privato](https://www.ovh.it/hosting-web/opzioni-sql.xml) o [Cloud Database](https://www.ovh.it/cloud-databases/)
+- Disporre di una [soluzione di hosting SQL Privato](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [Cloud Database](https://www.ovh.it/cloud-databases/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura

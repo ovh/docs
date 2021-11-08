@@ -23,7 +23,7 @@ Gli account Email Pro possono essere configurati su client o applicazioni di pos
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Email Pro](https://www.ovh.it/emails/email-pro/){.external}
+- Disporre di una soluzione [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
 - Disporre delle credenziali associate all’account Email Pro da configurare
 - Disporre delle credenziali associate all’account Gmail su cui configurare l’account Email Pro OVH
 

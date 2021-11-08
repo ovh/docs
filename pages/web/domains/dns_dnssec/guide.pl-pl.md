@@ -14,7 +14,7 @@ order: 1
 Konfiguracja DNS domeny zapisana jest na serwerach DNS. W przypadku klasycznego użycia konfiguracja ta umożliwia powiązanie domeny z serwerem lub serwerami hostującymi stronę WWW i konta e-mail. W ostatnich latach atakujący opracowali bardzo skuteczne metody zatruwania serwerów DNS, dzięki czemu mogą przekierowywać ruch z domeny na inne serwery. Możesz ochronić Twoją domenę przed tego typu atakami, korzystając z DNSSEC.
 
 **Dowiedz się, jak aktywować DNSSEC dla Twojej domeny, aby zapewnić jej ochronę przed atakami DNS typu Cache Poisoning.**  
-Dla lepszego zrozumienia, jak ta ochrona działa, zachęcamy do lektury treści na stronie: [Jak działa usługa DNSSEC](https://www.ovh.pl/domeny/usluga_dnssec.xml){.external}.
+Dla lepszego zrozumienia, jak ta ochrona działa, zachęcamy do lektury treści na stronie: [Jak działa usługa DNSSEC](https://www.ovhcloud.com/pl/domains/dnssec/){.external}.
 
 ## Wymagania początkowe
 

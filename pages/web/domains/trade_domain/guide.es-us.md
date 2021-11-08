@@ -40,7 +40,7 @@ Además de [gestionar los contactos](../../customer/gestion-de-los-contactos/), 
 > En caso de duda, le recomendamos que consulte los siguientes recursos:
 >
 > - el sitio web del registro TLD correspondiente;
-> - la [lista de TLD disponibles en OVHcloud](https://www.ovh.es/dominios/precios/);
+> - la [lista de TLD disponibles en OVHcloud](https://www.ovhcloud.com/es-es/domains/tld/);
 > - la sección `Operaciones en curso`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para comprobar las actualizaciones del estado del dominio.
 >
 

@@ -16,8 +16,8 @@ Aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de conten
 
 ## Prérequis
 
-- Disposer d'une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
-- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'une offre d’[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Être en possession de la sauvegarde que vous souhaitez importer dans votre base de données ou être en mesure de pouvoir la récupérer.
 - Selon la méthode d'importation utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou des informations permettant de vous connecter à la base de données.
 
@@ -33,7 +33,7 @@ Avant de débuter, vous devez définir la méthode que vous allez utiliser pour 
 
 - **Réaliser l'import en utilisant un script** : cette solution nécessite de créer un script, hébergé sur votre hébergement web OVH, afin de réaliser l'import. Des connaissances spécifiques pour créer ce script sont nécessaires.
 
-- **Réaliser l'import depuis une commande SSH** : cette solution nécessite de se connecter à votre espace de stockage via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
+- **Réaliser l'import depuis une commande SSH** : cette solution nécessite de se connecter à votre espace de stockage via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
 
 Certaines des méthodes ci-dessus ne sont pas inhérentes à une interface OVH. Vous devrez donc, pour ces dernières, accomplir la manipulation selon vos propres connaissances. Quelques informations sont cependant présentes ci-dessous, mais elles ne se substituent pas à l’aide d’un webmaster.
 

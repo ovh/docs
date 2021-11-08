@@ -17,7 +17,7 @@ Con el servicio Hosted Exchange de OVHcloud puede enviar y recibir correo utiliz
 
 ## Requisitos
 
-- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](https://www.ovh.com/world/es/hosting/) o [**Hosted Exchange**](https://www.ovh.com/world/es/emails/hosted-exchange/))
+- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](https://www.ovhcloud.com/es/web-hosting/) o [**Hosted Exchange**](https://www.ovhcloud.com/es/emails/hosted-exchange/))
 - Tener las credenciales de acceso de la dirección de correo electrónico que quiere configurar
 
 ## Procedimiento

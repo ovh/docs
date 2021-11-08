@@ -17,7 +17,7 @@ Une base de données (BDD) est utilisée pour stocker ce que l'on appelle des é
 
 ## En pratique
 
-- un [hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web)
+- un [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
 - une base de données disponible parmi celles incluses dans votre offre d'hébergement web
 - l’accès à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) avec les autorisations nécessaires pour gérer votre hébergement web
 
@@ -43,7 +43,7 @@ Dans la fenêtre qui s’ouvre, saisissez les informations puis cliquez sur `Sui
 
 |Information|Description|  
 |---|---|  
-|Moteur de la base de données|Sélectionnez le moteur que la base de données doit utiliser. Les bases de données inclues dans votre [offre d’hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/) sont uniquement disponibles avec le moteur MySQL.|  
+|Moteur de la base de données|Sélectionnez le moteur que la base de données doit utiliser. Les bases de données inclues dans votre [offre d’hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) sont uniquement disponibles avec le moteur MySQL.|  
 |Version de la base de données|Sélectionnez la version utilisée par le moteur de la base de données. Assurez-vous que votre site web soit compatible avec la version que vous avez choisie. |  
 |Type de base de données|Sélectionnez la taille de la base de données. Cette taille fait référence à l'espace dont dispose votre base de données pour le stockage des données.|   
 
@@ -106,7 +106,7 @@ Pour vérifier les snapshots disponibles ainsi que leur date et heure de créati
 
 **Trop de connexions**
 
-Les bases de données d'hébergement web sont limitées à 30 connexions simultanées (variable système *max_connections*). Les demandes SQL doivent donc être optimisées pour éviter ce genre d'erreur. Si les problèmes persistent malgré tout, des mesures alternatives devraient être envisagées, par exemple, le passage à une base de données SQL privée ou une [mise à niveau d'une offre d'hébergement](https://www.ovh.com/fr/hebergement-web/quel_hebergement_mutualise_choisir.xml). 
+Les bases de données d'hébergement web sont limitées à 30 connexions simultanées (variable système *max_connections*). Les demandes SQL doivent donc être optimisées pour éviter ce genre d'erreur. Si les problèmes persistent malgré tout, des mesures alternatives devraient être envisagées, par exemple, le passage à une base de données SQL privée ou une [mise à niveau d'une offre d'hébergement](https://www.ovhcloud.com/fr/web-hosting/uc-best-web-hosting/). 
 
 **Erreurs de connexion / « introuvable »**
 

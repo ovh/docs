@@ -36,7 +36,7 @@ There are two types of redirection:
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovh.ie/web-hosting/), the [free Start 10M hosting plan](https://www.ovh.ie/domains/start10m_hosting_offer.xml), or ordered separately as a standalone solution
+- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), the [free Start 10M hosting plan](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/), or ordered separately as a standalone solution
 
 ## Instructions
 

@@ -27,9 +27,9 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovh.pl/hosting/) OVHcloud
+- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Korzystanie z jednej z naszych ofert baz danych [Web Cloud](https://www.ovh.pl/hosting/opcje-sql.xml) lub [SQL prywatny](../pierwsze-kroki-private-sql/).
+- Korzystanie z jednej z naszych ofert baz danych [Web Cloud](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub [SQL prywatny](../pierwsze-kroki-private-sql/).
 
 ## W praktyce
 
@@ -106,7 +106,7 @@ Odblokuj bazę danych na trzy sposoby:
 
 #### Metoda 1: przejdź na wyższą ofertę
 
-Jeśli posiadasz wzór **Personal** lub **Pro**, w tej sytuacji zalecamy przejście na górną [ofertę hostingową](https://www.ovh.pl/hosting/). Zmiana abonamentu zwiększy rozmiar bazy danych, dzięki czemu będzie ona automatycznie odnawiana. Metoda ta jest najprostsza i nie wymaga szczególnych kompetencji technicznych.
+Jeśli posiadasz wzór **Personal** lub **Pro**, w tej sytuacji zalecamy przejście na górną [ofertę hostingową](https://www.ovhcloud.com/pl/web-hosting/). Zmiana abonamentu zwiększy rozmiar bazy danych, dzięki czemu będzie ona automatycznie odnawiana. Metoda ta jest najprostsza i nie wymaga szczególnych kompetencji technicznych.
 
 > [!warning]
 >
@@ -125,7 +125,7 @@ Jeśli korzystasz z oferty **Performance**, sprawdź [metoda 2](#methode2).
 
 Możesz również przenieść dane na nową bazę:
 
-- Zamów w razie potrzeby [bazę danych](https://www.ovh.pl/hosting/opcje-sql.xml) o wyższej wielkości, a następnie uruchom [kreacja](../tworzenie-bazy-danych/);
+- Zamów w razie potrzeby [bazę danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) o wyższej wielkości, a następnie uruchom [kreacja](../tworzenie-bazy-danych/);
 - Wykonaj [eksport swoich danych](../eksport-bazy-danych/), następnie [je importować](../hosting-guide-import-bazy-danych-mysql/) w nowej bazie;
 - Wprowadź dane dostępowe nowej bazy danych do [pliku konfiguracyjnego](#config_file) swojej strony.
 
@@ -156,7 +156,7 @@ Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w p
 
 ### Przekroczenie pojemności pamięci RAM
 
-Poniższy komunikat w części `Bazy danych`{.action} Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wskazuje, że Twój serwer [SQL Prywatny](https://www.ovh.pl/hosting/opcje-sql.xml) wykorzystał zbyt dużą ilość zasobów w infrastrukturze OVHcloud:
+Poniższy komunikat w części `Bazy danych`{.action} Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wskazuje, że Twój serwer [SQL Prywatny](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) wykorzystał zbyt dużą ilość zasobów w infrastrukturze OVHcloud:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
@@ -189,7 +189,7 @@ Ten komunikat błędu oznacza, że baza danych, którą chcesz importować zawie
 >
 > Jakie elementy w skrypcie importu bazy danych mogą spowodować błąd "#1044 - Access denied for user to database"?
 
-Posiadanie **"trigger"** w skrypcie importu bazy danych nie jest dozwolone na serwerach hostingu www OVHcloud. W takiej sytuacji zaimportuj bazę danych na serwer [prywatny SQL](https://www.ovh.pl/hosting/opcje-sql.xml).
+Posiadanie **"trigger"** w skrypcie importu bazy danych nie jest dozwolone na serwerach hostingu www OVHcloud. W takiej sytuacji zaimportuj bazę danych na serwer [prywatny SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
 
 Ponadto nie zezwala się na następujące zapytanie:
 
@@ -241,7 +241,7 @@ W takiej sytuacji [sprawdź wpisane dane](../polaczenie-bazy-danych-serwer-bdd/#
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
 >
 
-Maksymalna liczba aktywnych połączeń dla baz danych dostarczanych na hostingu ([StartSQL](https://www.ovh.pl/hosting/opcje-sql.xml)) wynosi **30**.
+Maksymalna liczba aktywnych połączeń dla baz danych dostarczanych na hostingu ([StartSQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/)) wynosi **30**.
 
 Liczba ta wynosi **200** dla baz serwerów [SQL prywatny](../pierwsze-kroki-private-sql/) (Ten parametr można zmienić w części `Konfiguracja`{.action} twojego serwera bazy danych).
 

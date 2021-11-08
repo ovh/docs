@@ -25,8 +25,8 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
-- Disposer d'au moins un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external} attaché à l'hébergement.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
+- Disposer d'au moins un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} attaché à l'hébergement.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique

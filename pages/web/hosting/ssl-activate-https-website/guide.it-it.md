@@ -10,13 +10,13 @@ order: 2
 
 ## Obiettivo
 
-Gli [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} includono di default un certificato SSL gratuito, grazie al quale i siti Internet possono stabilire una connessione sicura alla rete ed essere accessibili in HTTPS. Per attivare questo canale di comunicazione sicuro, sono necessari diversi step.
+Gli [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} includono di default un certificato SSL gratuito, grazie al quale i siti Internet possono stabilire una connessione sicura alla rete ed essere accessibili in HTTPS. Per attivare questo canale di comunicazione sicuro, sono necessari diversi step.
 
 **Questa guida ti mostra come abilitare il protocollo HTTPS sul tuo sito utilizzando un certificato SSL.**
 
 ## Prerequisiti
 
-- Disporre di un [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} con [certificato SSL](https://www.ovh.it/ssl/){.external} attivo
+- Disporre di un [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} con [certificato SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external} attivo
 - Disporre di almeno un sito Internet installato e accessibile sul proprio hosting Web OVH
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
 

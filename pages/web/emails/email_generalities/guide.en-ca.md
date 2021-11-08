@@ -16,7 +16,7 @@ If you have activated an OVHcloud Web Hosting plan, you can have email addresses
 
 ## Requirements
 
-- an MX plan solution, available via a [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
+- an MX plan solution, available via a [Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions

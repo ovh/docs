@@ -14,7 +14,7 @@ order: 6
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu WWW](https://www.ovh.pl/hosting/){.external}
+- Posiadanie kompatybilnego [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
@@ -36,7 +36,7 @@ order: 6
 
 ### Jednoczesne połączenia z bazą danych
 
-- Oferty hostingu WWW (współdzielone bazy danych) są objęte ograniczeniem do 30 jednoczesnych połączeń z każdą bazą danych (200 w przypadku prywatnej bazy danych). Sprawdź [szczegóły naszych ofert hostingu](https://www.ovh.pl/hosting/), aby poznać dostępne opcje w każdym planie hostingu WWW.
+- Oferty hostingu WWW (współdzielone bazy danych) są objęte ograniczeniem do 30 jednoczesnych połączeń z każdą bazą danych (200 w przypadku prywatnej bazy danych). Sprawdź [szczegóły naszych ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/), aby poznać dostępne opcje w każdym planie hostingu WWW.
 
 - Możesz również zamówić dodatkowe bazy danych **Private SQL**, które mają opcje personalizacji:
 
@@ -44,7 +44,7 @@ order: 6
 
     - *max_user_connections*: domyślnie 50, z możliwością zwiększenia do 200
 
-Aby uzyskać więcej informacji, zapoznaj się ze szczegółami naszych [ofert hostingu](https://www.ovh.pl/hosting/) i [przewodnikiem](../pierwsze-kroki-private-sql/).
+Aby uzyskać więcej informacji, zapoznaj się ze szczegółami naszych [ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/) i [przewodnikiem](../pierwsze-kroki-private-sql/).
 
 #### Połączenia z serwera zewnętrznego
 
@@ -65,7 +65,7 @@ Aby uzyskać więcej informacji na temat zarządzania bazami danych, zapoznaj si
 
 ### PHP
 
-- Zapoznaj się z przewodnikiem po [ofertach hostingu WWW](https://www.ovh.pl/hosting/php.xml), aby upewnić się, że plan hostingu, który chcesz zamówić, odpowiada Twoim potrzebom.
+- Zapoznaj się z przewodnikiem po [ofertach hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/), aby upewnić się, że plan hostingu, który chcesz zamówić, odpowiada Twoim potrzebom.
 
 - Możesz sprawdzić szczegóły konfiguracji Twojego hostingu. W tym celu sprawdź rubrykę [„Informacje techniczne o Twoim hostingu”](./#informacje-techniczne-o-twoim-hostingu) na dole niniejszego przewodnika. 
 

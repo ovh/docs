@@ -9,13 +9,13 @@ legacy_guide_number: g2149
 
 ## Objective
 
-You can use a range of different configurations on an OVH Web Hosting plan. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, you can host whatever website you want on your [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}, provided that it is compatible with [our infrastructures’ configurations](https://webhosting-infos.hosting.ovh.net){.external}.
+You can use a range of different configurations on an OVH Web Hosting plan. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, you can host whatever website you want on your [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, provided that it is compatible with [our infrastructures’ configurations](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Find out how to modify the configuration of an OVH Web Hosting plan from the OVH Control Panel.**
 
 ## Requirements
 
-- an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} (excluding Cloud Web)
+- an [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} (excluding Cloud Web)
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
@@ -96,7 +96,7 @@ Once you have chosen your runtime environment, you can change it in two differen
 
 #### PHP version
 
-There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVH offers the very latest PHP versions, and you can view a list of them here: <https://www.ovh.ie/web-hosting/php.xml>. 
+There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVH offers the very latest PHP versions, and you can view a list of them here: <https://www.ovhcloud.com/en-ie/web-hosting/uc-programming-language/>. 
 
 Because some features cannot be maintained in newer versions, **please ensure that the new PHP version you want to use is compatible with your website before you start making any changes.**
 

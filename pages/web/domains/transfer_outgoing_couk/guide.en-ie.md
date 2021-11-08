@@ -26,7 +26,7 @@ The process of changing the registrar for Top Level Domains (TLD) of the **UK** 
 
 ## Requirements
 
-- a [.uk domain name](https://www.ovh.ie/domains/) registered with OVHcloud
+- a [.uk domain name](https://www.ovhcloud.com/en-ie/domains/) registered with OVHcloud
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) with the necessary permissions to manage the domain name (domain administrator)
 - the domain name is still active i.e. not expired or otherwise locked on the part of OVHcloud
 - the domain name is not the subject of an ongoing dispute with the responsible registry [Nominet](https://www.nominet.uk/)
