@@ -17,6 +17,6 @@ order: 1
 Die E-Mail-Accounts, die in Ihrem [OVHcloud Webhosting](https://www.ovh.de/hosting/) enthalten sind, erlauben es Ihnen, Ihre E-Mails über das Gerät und den Kunden Ihrer Wahl zu versenden und zu empfangen.
 
 Um über einen Webbrowser von überall aus auf einen Account zuzugreifen, stellt OVHcloud einen E-Mail-Client mit dem Namen Outlook Web Application (OWA) zur Verfügung.
-<br>Unsere [Webmail](https://www.ovh.de/mail/)-Verbindungsseite ist der einzige Zugriffspunkt auf das jeweilige OWA Interface für alle aktiven E-Mail-Accounts in MX Plan, [Email Pro](https://www.ovh.de/emails/email-pro/) und [Hosted Exchange](https://www.ovh.pt/emails/hosted-exchange/).
+<br>Unsere [Webmail](https://www.ovh.de/mail/)-Verbindungsseite ist der einzige Zugriffspunkt auf das jeweilige OWA Interface für alle aktiven E-Mail-Accounts in MX Plan, [Email Pro](https://www.ovh.de/emails/email-pro/) und [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
 
 Weitere [Informationen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/) zu den allgemeinen Funktionen von OWA finden Sie in dieser Anleitung.

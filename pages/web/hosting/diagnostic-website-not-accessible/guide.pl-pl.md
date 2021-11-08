@@ -120,7 +120,7 @@ Na tym etapie odnajdziesz adres IP Twojego hostingu, po czym dodaj go do Twojej 
 
 Jeśli Twoja strona nie jest hostowana w infrastrukturze OVHcloud lub jest zarządzana przez innego dostawcę, skontaktuj się z odpowiednią pomocą techniczną.
 
-Jeśli Twoja strona jest zainstalowana w jednej z naszych [ofert Web Cloud](https://www.ovh.pl/hosting/), kliknij zakładkę `Hosting`{.action} po lewej stronie ekranu, a następnie wybierz odpowiednią ofertę.
+Jeśli Twoja strona jest zainstalowana w jednej z naszych [ofert Web Cloud](https://www.ovhcloud.com/pl/web-hosting/), kliknij zakładkę `Hosting`{.action} po lewej stronie ekranu, a następnie wybierz odpowiednią ofertę.
 
 W zakładce `Informacje ogólne`{.action} skopiuj adres IPV4 i/lub IPV6 Twojej domeny.
 

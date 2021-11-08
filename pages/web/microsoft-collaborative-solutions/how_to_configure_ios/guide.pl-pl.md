@@ -29,7 +29,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 ## Wymagania początkowe
 
-- Posiadanie [konta e-mail Exchange](https://www.ovh.pl/emaile/){.external}
+- Posiadanie [konta e-mail Exchange](https://www.ovhcloud.com/pl/emails/){.external}
 - Instalacja aplikacji Mail na Twoim urządzeniu iOS
 - Posiadanie danych do logowania do konta e-mail, które chcesz skonfigurować.
 
@@ -66,7 +66,7 @@ Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skon
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową posiadającą [funkcje do pracy zespołowej Exchange](https://www.ovh.pl/emaile/){.external} dostępną pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których użyłeś do logowania się do konta e-mail.
+OVHcloud oferuje również aplikację internetową posiadającą [funkcje do pracy zespołowej Exchange](https://www.ovhcloud.com/pl/emails/){.external} dostępną pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których użyłeś do logowania się do konta e-mail.
 
 > [!primary]
 >

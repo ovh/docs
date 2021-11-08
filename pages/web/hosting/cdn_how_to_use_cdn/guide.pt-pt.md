@@ -29,7 +29,7 @@ Para funcionar, cada servidor guarda na sua memória cache uma parte do seu webs
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-- Ter um serviço de [alojamento Web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Ter um serviço de [alojamento Web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 
 ## Instruções
 
@@ -137,7 +137,7 @@ Depois de configurar as regras e selecionar as opções, clique em `Aplicar conf
 #### Configurar as opções do CDN Security
 
 > [!primary]
->  as opções apresentadas abaixo requerem a subscrição do [CDN security](https://www.ovh.pt/alojamento-partilhado/cdn.xml) ou do [CDN Advanced](https://www.ovh.pt/alojamento-partilhado/cdn.xml)
+>  as opções apresentadas abaixo requerem a subscrição do [CDN security](https://www.ovhcloud.com/pt/web-hosting/options/cdn/) ou do [CDN Advanced](https://www.ovhcloud.com/pt/web-hosting/options/cdn/)
 
 Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita da entrada multisite e depois `Alterar o CDN`{.action}. 
 

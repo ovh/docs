@@ -62,7 +62,7 @@ A partir do browser do seu computador ou a partir de um smartphone, vá ao ender
 
 ### Não consigo aceder ao webmail
 
-Certifique-se de que tem a palavra-passe correta. Se necessário, pode alterá-lo. Verifique igualmente se a dupla autenticação está ativada ([apenas Exchange](https://www.ovh.pt/emails/hosted-exchange/)).
+Certifique-se de que tem a palavra-passe correta. Se necessário, pode alterá-lo. Verifique igualmente se a dupla autenticação está ativada ([apenas Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/)).
 
 Como alterar a palavra-passe de um endereço de e-mail:
 

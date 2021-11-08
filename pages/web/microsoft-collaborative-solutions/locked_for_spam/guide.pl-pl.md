@@ -16,7 +16,7 @@ Jeśli otrzymałeś e-mail z informacją, że jeden z Twoich adresów e-mail zos
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [e-mail OVHcloud](https://www.ovh.pl/emaile/){.external}
+- Posiadanie usługi [e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/){.external}
 - Dostęp do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}
 
 ## W praktyce

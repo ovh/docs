@@ -16,7 +16,7 @@ Os serviços de e-mail da OVHcloud disponibilizam endereços de e-mail profissio
 
 ## Requisitos
 
-- Ter uma [solução de e-mail na OVHcloud](https://www.ovh.pt/emails/){.external}.
+- Ter uma [solução de e-mail na OVHcloud](https://www.ovhcloud.com/pt/emails/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Web Cloud`{.action}.
 
 ## Instruções
@@ -25,8 +25,8 @@ A gestão da política de segurança do seu serviço de e-mail pode interagir co
 
 - reforçar a segurança das contas de e-mail quando os utilizadores tentam conectar-se;
 - reforçar a segurança das palavras-passe das contas do serviço de e-mail;
-- reforçar a verificação das mensagens de entrada nos nossos servidores e com destino aos seus endereços de e-mail (exclusivamente para contas [Exchange](https://www.ovh.pt/emails/hosted-exchange/){.external};
-- definir a forma como as mensagens «indesejadas» são apresentadas nas caixas de entrada (exclusivamente para contas [Exchange](https://www.ovh.pt/emails/hosted-exchange/){.external}.
+- reforçar a verificação das mensagens de entrada nos nossos servidores e com destino aos seus endereços de e-mail (exclusivamente para contas [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external};
+- definir a forma como as mensagens «indesejadas» são apresentadas nas caixas de entrada (exclusivamente para contas [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}.
 
 Para aceder à política do seu serviço de e-mail, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e certifique-se de que está na secção `Web Cloud`{.action}. 
 

@@ -17,7 +17,7 @@ Os endereços de e-mail da oferta MX Plan permitem enviar e receber e-mails no d
 
 ## Requisitos
 
-- Ter uma oferta MX Plan (incluída num plano de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, num [alojamento gratuito Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external} ou disponível em separado).
+- Ter uma oferta MX Plan (incluída num plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, num [alojamento gratuito Start 10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} ou disponível em separado).
 - Ainda ter a possibilidade de criar endereços de e-mail no âmbito do seu plano.
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 

@@ -39,7 +39,7 @@ Wybierz, czy chcesz aktywować wersję minimum dla tworzonej strefy DNS. Wybór 
 |Czy chcesz aktywować wersję minimalną?|Szczegóły|
 |---|---|
 |Tak|Wybierz tę opcję, jeśli chcesz następnie spersonalizować strefę DNS.|
-|Nie|Wybierz tę opcję, jeśli zamierzasz korzystać z domeny wraz z [hostingiem OVH](https://www.ovh.pl/hosting/){.external}. Strefa DNS jest w tym przypadku wstępnie skonfigurowana.|
+|Nie|Wybierz tę opcję, jeśli zamierzasz korzystać z domeny wraz z [hostingiem OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}. Strefa DNS jest w tym przypadku wstępnie skonfigurowana.|
 
 ![dodanie domeny do dns](images/dns-zone-create-step2.png){.thumbnail}
 

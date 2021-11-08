@@ -23,7 +23,7 @@ excerpt: Zabezpiecz poaczenia ze swoja strona internetowa
 
 
 ## Zamowienie
-- Aby zamówić ofertę SSL Gateway, [kliknij tutaj](https://www.ovh.pl/ssl-gateway){.external}.
+- Aby zamówić ofertę SSL Gateway, [kliknij tutaj](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}.
 - Wybierz ofertę i kliknij na `Włącz teraz`{.action} lub `Zamów`{.action}.
 
 ![page commerciale](images/1-en.png){.thumbnail}

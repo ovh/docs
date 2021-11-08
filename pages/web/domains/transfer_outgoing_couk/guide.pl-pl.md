@@ -30,7 +30,7 @@ Proces zmiany operatora domeny *najwyższego poziomu* (*top-level domain*, lub *
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny .uk](https://www.ovh.pl/domeny/) zarejestrowanej w OVHcloud
+- Posiadanie [domeny .uk](https://www.ovhcloud.com/pl/domains/) zarejestrowanej w OVHcloud
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i posiadanie uprawnień niezbędnych do zarządzania domeną (administrator domeny)
 - Nazwa domeny musi być zawsze aktywna, co oznacza, że nie wygasła lub nie może zostać zablokowana przez OVHcloud
 - Nazwa domeny nie może być przedmiotem sporu toczącego się w rejestrze [Nominet](https://www.nominet.uk/)

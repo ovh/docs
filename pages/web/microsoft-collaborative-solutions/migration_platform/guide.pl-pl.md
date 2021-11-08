@@ -30,8 +30,8 @@ Chcesz przenieść Twoje konta e-mail obecne na platformę Exchange lub E-mail P
 
 ## Wymagania początkowe
 
-- Posiadanie platformy **"źródłowej"** ze skonfigurowanymi kontami [Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external} lub [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external}.
-- Posiadanie platformy **"docelowej"** z kontami [Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external}, [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external} lub MX Plan (w ramach usługi MX Plan lub pakietu [hostingowego OVHcloud](https://www.ovh.pl/hosting/){.external}) Na platformie muszą znajdować się nieskonfigurowane lub dostępne konta e-mail, które mają być migrowane.
+- Posiadanie platformy **"źródłowej"** ze skonfigurowanymi kontami [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external} lub [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external}.
+- Posiadanie platformy **"docelowej"** z kontami [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}, [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external} lub MX Plan (w ramach usługi MX Plan lub pakietu [hostingowego OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}) Na platformie muszą znajdować się nieskonfigurowane lub dostępne konta e-mail, które mają być migrowane.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
