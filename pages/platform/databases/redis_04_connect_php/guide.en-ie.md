@@ -16,15 +16,15 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie);
+- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account;
 - An up and running Public Cloud Database for Redis;
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 7.4.
 
 ## Concept
 
 A Redis instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to Redis with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-cli).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to Redis with CLI](https://docs.ovh.com/ie/en/publiccloud/databases/redis/connect-cli).
 
 Another way is to interact directly using programming languages, such as PHP.
 PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or Wordpress.
@@ -52,7 +52,7 @@ We are now ready to learn how to connect to our Redis instance. We will use phpr
 
 Before making a connection, we need to verify that our redis instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your Redis instance.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your Redis instance.
 
 #### Step 1: Verify your user roles and password
 
@@ -147,9 +147,9 @@ Congratulations! Everything is working properly.
 
 [Redis official tutorial : simple Twitter clone using PHP](https://redis.io/topics/twitter-clone)
 
-[Redis capabilities](https://docs.ovh.com/gb/en/publiccloud/databases/redis/capabilities/)
+[Redis capabilities](https://docs.ovh.com/ie/en/publiccloud/databases/redis/capabilities/)
 
-[Configuring vRack for Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/)
+[Configuring vRack for Public Cloud](https://docs.ovh.com/ie/en/public-cloud/public-cloud-vrack/)
 
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
