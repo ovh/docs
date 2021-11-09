@@ -1,6 +1,6 @@
 ---
 title: Introducing Horizon 
-excerpt: Find out how to manage your project with the OpenStack Horizon interface.
+excerpt: Discover the main sections of the Horizon interface
 slug: horizon
 section: Horizon
 order: 1
