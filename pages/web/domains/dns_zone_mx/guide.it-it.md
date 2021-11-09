@@ -40,7 +40,7 @@ Per uno stesso dominio è possibile configurare più record MX. In questo caso, 
 
 ### Step 2: conoscere la configurazione MX di OVH
 
-Qui sotto è disponibile la configurazione MX di OVH da utilizzare con i nostri servizi di posta MX Plan (da solo o incluso in un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}, [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external} e [Exchange](https://www.ovhcloud.com/it/emails/){.external}. I nostri server di posta dispongono anche di un Antispam e un Antivirus. 
+Qui sotto è disponibile la configurazione MX di OVH da utilizzare con i nostri servizi di posta MX Plan (da solo o incluso in un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}, [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external} e [Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external}. I nostri server di posta dispongono anche di un Antispam e un Antivirus. 
 
 |Dominio|TTL|Record|Priorità|Destinazione|
 |---|---|---|---|---|
