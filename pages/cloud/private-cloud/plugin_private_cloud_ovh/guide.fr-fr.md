@@ -29,11 +29,9 @@ Deux ressources dédiées sont proposées en facturation horaire :
 
 Depuis le client web vSphere, il suffit de vous rendre dans la partie "Host and Cluster" et de développer l'arborescence de gauche. Vous accédez alors aux menus du plugin via l'onglet `Configure`{.action} du datacenter ou du cluster.
 
-![](images/Plugin01.jpg){.thumbnail}
-
 Le menu `Add Host`{.action} est consacré aux serveurs hôtes. Il affiche leurs détails techniques et permet de les commander.
 
-![](images/addhost_02.png){.thumbnail}
+![](images/Plugin01.jpg){.thumbnail}
 
 La commande de datastores supplémentaires s'effectue, elle, dans le menu `Add Storage`{.action}.
 
