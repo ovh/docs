@@ -14,7 +14,7 @@ order: 4
 
 **Objetivo**
 
-A utilização das suas bases de dados pode dar origem a um certo número de anomalias no seu site ou no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), bem como na interface [PhpMyAdmin](../criar-base-de-dados/#aceder-a-interface-phpmyadmin).
+A utilização das suas bases de dados pode dar origem a um certo número de anomalias no seu site ou no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), bem como na interface [PhpMyAdmin](https://docs.ovh.com/pt/hosting/criar-base-de-dados/#aceder-a-interface-phpmyadmin).
 
 **Descubra como resolver os erros associados às bases de dados sobre os alojamentos partilhados OVHcloud.**
 
@@ -29,7 +29,7 @@ A utilização das suas bases de dados pode dar origem a um certo número de ano
 
 - Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) OVHcloud.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Utilizar uma das nossas ofertas de bases de dados [Web Cloud](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ou [SQL privado](../sql-privado-primeira-utilizacao/).
+- Utilizar uma das nossas ofertas de bases de dados [Web Cloud](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ou [SQL privado](https://docs.ovh.com/pt/hosting/sql-privado-primeira-utilizacao/).
 
 ## Instruções
 
@@ -50,22 +50,22 @@ Em [http://travaux.ovh.com/](http://travaux.ovh.com/), verifique primeiro se o s
 
 #### Verificar os dados de acesso à sua base de dados <a name="config_file"></a>
 
-Ligue-se ao espaço de armazenamento de ficheiros com [FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao espaço de armazenamento de ficheiros no seu alojamento e encontre o ficheiro de configuração do seu site (por exemplo, para um site Wordpress, trata-se do ficheiro **wp-config.php** situado na pasta que contém o seu site).
+Ligue-se ao espaço de armazenamento de ficheiros com [FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao espaço de armazenamento de ficheiros no seu alojamento e encontre o ficheiro de configuração do seu site (por exemplo, para um site Wordpress, trata-se do ficheiro **wp-config.php** situado na pasta que contém o seu site).
 
 > [!warning]
 >
 > A escolha e a configuração do ficheiro com as informações de ligação à base de dados é inerente ao editor de conteúdo (CMS) em causa e não à OVHcloud.
 >
-> Recomendamos que contacte o editor do [CMS](../módulos-en-1-clic/) utilizado para criar o seu site ou que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) em caso de necessidade. De facto, a OVHcloud não lhe poderá fornecer assistência.
+> Recomendamos que contacte o editor do [CMS](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/) utilizado para criar o seu site ou que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) em caso de necessidade. De facto, a OVHcloud não lhe poderá fornecer assistência.
 >
 
-De seguida, verifique a correspondência **exata** entre os identificadores de ligação ao [PhpMyAdmin](../criar-base-de-dados/#aceder-a-interface-phpmyadmin) e os do ficheiro de configuração do seu site.
+De seguida, verifique a correspondência **exata** entre os identificadores de ligação ao [PhpMyAdmin](https://docs.ovh.com/pt/hosting/criar-base-de-dados/#aceder-a-interface-phpmyadmin) e os do ficheiro de configuração do seu site.
 
-Altere, se necessário, a [palavra-passe da sua base de dados](../alterar-palavra-passe-base-de-dados/).
+Altere, se necessário, a [palavra-passe da sua base de dados](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-base-de-dados/).
 
 #### Exemplo para Wordpress
 
-Se o seu website apresentar uma mensagem **"Erro durante a ligação à base de dados"** e que este não é afetado por [incidente](http://travaux.ovh.com/), ligue-se em [FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao seu alojamento e abra o diretório que contém o seu website (por predefinição, trata-se do dossier `www`).
+Se o seu website apresentar uma mensagem **"Erro durante a ligação à base de dados"** e que este não é afetado por [incidente](http://travaux.ovh.com/), ligue-se em [FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao seu alojamento e abra o diretório que contém o seu website (por predefinição, trata-se do dossier `www`).
 
 Se se tratar de um site Wordpress, abra o ficheiro `wp-config.php`.
 
@@ -86,12 +86,12 @@ No seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 
 - **my_database** deve corresponder ao que é notado no `Nome da base de dados`;
 - **my_user** deve corresponder ao que é notado no `Nome do utilizador`;
-- **my_password** corresponde à [palavra-passe da sua base de dados](../alterar-palavra-passe-base-de-dados/);
+- **my_password** corresponde à [palavra-passe da sua base de dados](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-base-de-dados/);
 - **my_server.mysql.db** deve corresponder ao que é notado no `Endereço do servidor`.
 
 > [!primary]
 >
-> Se estas manipulações não lhe permitem restabelecer o acesso ao seu website, [salvaguarde a sua base de dados](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/) e depois [restaure-a numa data anterior](../restaurar-importar-base-de-dados/#1-restaurar-uma-cópia de segurança existente) a partir do seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> Se estas manipulações não lhe permitem restabelecer o acesso ao seu website, [salvaguarde a sua base de dados](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/) e depois [restaure-a numa data anterior](https://docs.ovh.com/pt/hosting/restaurar-importar-base-de-dados/#1-restaurar-uma-cópia de segurança existente) a partir do seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 >
 > Contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se necessário. De facto, a OVHcloud não lhe poderá fornecer assistência.
 >
@@ -125,18 +125,18 @@ Se utiliza uma oferta **Performance**, consulte o [método 2](#methode2).
 
 Também pode migrar os seus dados para uma nova base:
 
-- Encomende, se necessário, uma [base de dados](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) de tamanho superior e lance a sua [criação](../criar-base-de-dados/);
-- Efetue uma [exportação dos seus dados](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/) e depois [importe-os](../partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/) na nova base de dados;
+- Encomende, se necessário, uma [base de dados](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) de tamanho superior e lance a sua [criação](https://docs.ovh.com/pt/hosting/criar-base-de-dados/);
+- Efetue uma [exportação dos seus dados](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/) e depois [importe-os](https://docs.ovh.com/pt/hosting/partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/) na nova base de dados;
 - Integre os identificadores da nova base de dados no [ficheiro de configuração](#config_file) do seu site.
 
 > [!primary]
 >
-> Se dispõe de um alojamento **Performance**, pode igualmente [ativar gratuitamente um servidor SQL Privado](../sql-privado-primeira-utilizacao/#ativacao-do-seu-servidor-sql-privado-incluido-com-o-seu-plano-de-alojamento-web).
+> Se dispõe de um alojamento **Performance**, pode igualmente [ativar gratuitamente um servidor SQL Privado](https://docs.ovh.com/pt/hosting/sql-privado-primeira-utilizacao/#ativacao-do-seu-servidor-sql-privado-incluido-com-o-seu-plano-de-alojamento-web).
 >
 
 #### Método 3: eliminar dados desnecessários
 
-Depois de realizar um backup da sua base de dados, aceda à interface [PhpMyAdmin](../criar-base-de-dados/#aceder-a-interface-phpmyadmin) para eliminar os dados inúteis graças aos comandos Drop, Delete e Truncate.
+Depois de realizar um backup da sua base de dados, aceda à interface [PhpMyAdmin](https://docs.ovh.com/pt/hosting/criar-base-de-dados/#aceder-a-interface-phpmyadmin) para eliminar os dados inúteis graças aos comandos Drop, Delete e Truncate.
 
 De seguida, volte a analisar o cálculo da quota utilizado a partir do separador `Bases de dados`{.action} do alojamento em causa: clique no botão `...`{.action} em causa e depois `Recalcular o limite`{.action}.
 
@@ -147,7 +147,7 @@ De seguida, volte a analisar o cálculo da quota utilizado a partir do separador
 
 #### Método 4: otimizar a sua base de dados
 
-Para otimizar a sua base de dados, siga as instruções do nosso guia "[Configurar o seu servidor de bases de dados](../configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1)". De seguida, volte a analisar o cálculo da quota utilizado a partir do separador `Bases de dados`{.action} do seu alojamento, clicando no botão `...`{.action} da base de dados em questão.
+Para otimizar a sua base de dados, siga as instruções do nosso guia "[Configurar o seu servidor de bases de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1)". De seguida, volte a analisar o cálculo da quota utilizado a partir do separador `Bases de dados`{.action} do seu alojamento, clicando no botão `...`{.action} da base de dados em questão.
 
 > [!warning]
 >
@@ -160,9 +160,9 @@ A seguinte mensagem na parte `Bases de dados`{.action} do seu [Área de Cliente 
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-Nesta situação, pode aumentar a [quantidade de memória RAM](../configurar-otimizar-servidor-de-bases-de-dados/#acompanhar-a-ram-consumida) disponível a partir da parte `Bases de dados`{.action} do seu [espaço cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Informações gerais`{.action}, clique no botão `...`{.action} na rubrica `RAM`.
+Nesta situação, pode aumentar a [quantidade de memória RAM](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#acompanhar-a-ram-consumida) disponível a partir da parte `Bases de dados`{.action} do seu [espaço cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Informações gerais`{.action}, clique no botão `...`{.action} na rubrica `RAM`.
 
-Também pode otimizar a sua base de dados seguindo as instruções do nosso guia "[Configurar o seu servidor de bases de dados](../configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1)".
+Também pode otimizar a sua base de dados seguindo as instruções do nosso guia "[Configurar o seu servidor de bases de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1)".
 
 > [!primary]
 >
@@ -181,9 +181,9 @@ Esta mensagem de erro significa que a base de dados que está a tentar importar 
 
 Em primeiro lugar, certifique-se de que a sua base de dados está vazia no separador `Bases de dados`{.action} do alojamento em causa (clique no botão `...`{.action} em causa e depois `Recalculer o limite`{.action}).
 
-Caso contrário, [guarde os dados presentes](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/) na sua base de dados e elimine-os antes de voltar a importar os dados.
+Caso contrário, [guarde os dados presentes](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/) na sua base de dados e elimine-os antes de voltar a importar os dados.
 
-Também pode selecionar a casa `Limpar a base de dados atual`{.action} imediatamente antes de [lançar a importação](../partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/#importar-o-seu-proprio-backup-a-partir-da-area-de-cliente):
+Também pode selecionar a casa `Limpar a base de dados atual`{.action} imediatamente antes de [lançar a importação](https://docs.ovh.com/pt/hosting/partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/#importar-o-seu-proprio-backup-a-partir-da-area-de-cliente):
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
@@ -215,15 +215,15 @@ USE `Database-Name`;
 > **« ERROR 2006 : MySQL server has gone away »**
 >
 
-Esta mensagem de erro aparece aquando da [importação de uma base de dados](../restaurar-importar-base-de-dados/#2-importar-um-backup-local) num servidor [SQL Privado](../sql-privado-primeira-utilizacao/). Está ligado, na maior parte dos casos, à quantidade excessiva de dados a importar ou à falta de otimização dos pedidos SQL no script de importação.
+Esta mensagem de erro aparece aquando da [importação de uma base de dados](https://docs.ovh.com/pt/hosting/restaurar-importar-base-de-dados/#2-importar-um-backup-local) num servidor [SQL Privado](https://docs.ovh.com/pt/hosting/sql-privado-primeira-utilizacao/). Está ligado, na maior parte dos casos, à quantidade excessiva de dados a importar ou à falta de otimização dos pedidos SQL no script de importação.
 
 Para resolver esta anomalia, pode:
 
-- Aumentar a [quantidade de memória viva (RAM)](../configurar-otimizar-servidor-de-bases-de-dados/#acompanhar-a-ram-consumida). Para isso, aceda ao [servidor SQL privado](../sql-privado-primeira-utilizacao/) afetado na rubrica `Bases de dados`{.action} do seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A seguir, clique no botão `...`{.action} na parte `RAM`, e `Alterar quantidade de RAM`{.action}.
+- Aumentar a [quantidade de memória viva (RAM)](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#acompanhar-a-ram-consumida). Para isso, aceda ao [servidor SQL privado](https://docs.ovh.com/pt/hosting/sql-privado-primeira-utilizacao/) afetado na rubrica `Bases de dados`{.action} do seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A seguir, clique no botão `...`{.action} na parte `RAM`, e `Alterar quantidade de RAM`{.action}.
 
 - Transferir a base de dados para várias operações em vez de uma (para qualquer questão relativa às operações a realizar, contacte a nossa [comunidade](https://community.ovh.com/en/) ou os [parceiros da OVHcloud](https://partner.ovhcloud.com/pt/directory/). De facto, a OVHcloud não lhe poderá fornecer assistência).
 
-- [Otimize a sua base de dados](../configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1) e depois repita as operações de exportação/importação.
+- [Otimize a sua base de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1) e depois repita as operações de exportação/importação.
 
 ### Não é possível aceder ao PhpMyAdmin
 
@@ -233,11 +233,11 @@ Para resolver esta anomalia, pode:
 > **« mysqli::real_connect(): (HY000/1045): Acesso denied for user**
 >
 
-Esta mensagem de erro pode aparecer no acesso à sua base de dados por [PhpMyAdmin](../criar-base-de-dados/#aceder-a-interface-phpmyadmin). Indica que os dados de identificação introduzidos estão errados.
+Esta mensagem de erro pode aparecer no acesso à sua base de dados por [PhpMyAdmin](https://docs.ovh.com/pt/hosting/criar-base-de-dados/#aceder-a-interface-phpmyadmin). Indica que os dados de identificação introduzidos estão errados.
 
 ![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
 
-Nesta situação, [verifique os identificadores introduzidos](../conexao-base-de-dados-servidor-bdd/#instrucoes) e altere, se necessário, a [palavra-passe da sua base de dados](../alterar-palavra-passe-base-de-dados/).
+Nesta situação, [verifique os identificadores introduzidos](https://docs.ovh.com/pt/hosting/conexao-base-de-dados-servidor-bdd/#instrucoes) e altere, se necessário, a [palavra-passe da sua base de dados](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-base-de-dados/).
 
 #### "Too many connections"
 
@@ -247,11 +247,11 @@ Nesta situação, [verifique os identificadores introduzidos](../conexao-base-de
 
 O número máximo de ligações ativas para as bases de dados entregues com os alojamentos partilhados ([StartSQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/)) é de **30**.
 
-Este número é de **200** para as bases dos servidores [SQL privado](../sql-privado-primeira-utilizacao/). (Este parâmetro pode ser modificado na secção `Configuration`{.action} do seu servidor de base de dados).
+Este número é de **200** para as bases dos servidores [SQL privado](https://docs.ovh.com/pt/hosting/sql-privado-primeira-utilizacao/). (Este parâmetro pode ser modificado na secção `Configuration`{.action} do seu servidor de base de dados).
 
-Esta mensagem aparece na [ligação ao PhpMyAdmin](../criar-base-de-dados/#acaceder-a-interface-phpmyadmin) quando o número máximo de ligações é ultrapassado.
+Esta mensagem aparece na [ligação ao PhpMyAdmin](https://docs.ovh.com/pt/hosting/criar-base-de-dados/#acaceder-a-interface-phpmyadmin) quando o número máximo de ligações é ultrapassado.
 
-Nesta situação, deverá [otimizar as suas bases de dados](../configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1) de forma a reduzir o número de ligações ativas.
+Nesta situação, deverá [otimizar as suas bases de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1) de forma a reduzir o número de ligações ativas.
 
 > [!warning]
 >
@@ -264,7 +264,7 @@ Nesta situação, deverá [otimizar as suas bases de dados](../configurar-otimiz
 > **"mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known"**
 >
 
-Esta mensagem de erro aparece na [ligação a PhpMyAdmin](../conexao-base-de-dados-servidor-bdd/#instrucoes) quando o nome do servidor indicado está incorreto.
+Esta mensagem de erro aparece na [ligação a PhpMyAdmin](https://docs.ovh.com/pt/hosting/conexao-base-de-dados-servidor-bdd/#instrucoes) quando o nome do servidor indicado está incorreto.
 
 ![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
 
@@ -274,12 +274,12 @@ Verifique o nome do servidor a inscrever no seu [Área de Cliente OVHcloud](http
 >
 > Se a base de dados à qual deseja aceder aparecer no separador `Bases de dados`{.action} da parte `Alojamentos`{.action} do seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), o nome a inserir está inscrito na coluna `Endereço do servidor`.
 >
-> Se pretender ligar-se a uma base de dados num servidor [SQL privado](../sql-privado-primeira-utilizacao/), o nome do servidor a introduzir está inscrito no separador `Informações gerais`{.action}, parte `Informações da ligação`{.action}, `SQL`{.action} e na rubrica `Nome do host`{.action}.
+> Se pretender ligar-se a uma base de dados num servidor [SQL privado](https://docs.ovh.com/pt/hosting/sql-privado-primeira-utilizacao/), o nome do servidor a introduzir está inscrito no separador `Informações gerais`{.action}, parte `Informações da ligação`{.action}, `SQL`{.action} e na rubrica `Nome do host`{.action}.
 >
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Primeiros passos com o serviço SQL Privado](../sql-privado-primeira-utilizacao/)
+[Primeiros passos com o serviço SQL Privado](https://docs.ovh.com/pt/hosting/sql-privado-primeira-utilizacao/)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
