@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment utiliser le plugin Private Cloud OVH'
 section: 'Fonctionnalités OVHcloud'
 ---
 
-**Dernière mise à jour le 07/08/2018**
+**Dernière mise à jour le 10/11/2021**
 
 ## Objectif
 
@@ -31,15 +31,15 @@ Depuis le client web vSphere, il suffit de vous rendre dans la partie "Host and 
 
 ![](images/addhost_01.png){.thumbnail}
 
-Le menu `Add OVH Host`{.action} est consacré aux serveurs hôtes. Il affiche leurs détails techniques et permet de les commander.
+Le menu `Add Host`{.action} est consacré aux serveurs hôtes. Il affiche leurs détails techniques et permet de les commander.
 
 ![](images/addhost_02.png){.thumbnail}
 
-La commande de datastores supplémentaires s'effectue, elle, dans le menu `Add OVH Storage`{.action}.
+La commande de datastores supplémentaires s'effectue, elle, dans le menu `Add Storage`{.action}.
 
 ![](images/addstorage_02.png){.thumbnail}
 
-À noter qu'il existe une alternative pour accéder à ces menus. En effet, vous pouvez aussi effectuer un clic droit sur le datacenter ou le cluster de l'infrastructure, puis choisir `OVH Dedicated Cloud`{.action}.
+À noter qu'il existe une alternative pour accéder à ces menus. En effet, vous pouvez aussi effectuer un clic droit sur le datacenter ou le cluster de l'infrastructure, puis choisir `OVHcloud`{.action}.
 
 ![Option OVH Dedicated Cloud](images/rightclick.png){.thumbnail}
 
