@@ -10,13 +10,13 @@ order: 1
 
 ## Obiettivo
 
-Le soluzioni di [hosting Web OVH]({ovh_www}/hosting-web/){.external} mettono a disposizione uno spazio di storage in cui è possibile pubblicare i file del tuo sito Internet o delle tue applicazioni. L’accesso a questo spazio è possibile tramite un utente FTP o SSH e la relativa password associata.
+Le soluzioni di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} mettono a disposizione uno spazio di storage in cui è possibile pubblicare i file del tuo sito Internet o delle tue applicazioni. L’accesso a questo spazio è possibile tramite un utente FTP o SSH e la relativa password associata.
 
 **Questa guida ti mostra come effettuare l’accesso allo spazio di storage disponibile con il tuo hosting Web OVH.**
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVH]({ovh_www}/hosting-web/){.external}
+- Disporre di un piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external}
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
 
 ## Procedura
@@ -66,7 +66,7 @@ Per effettuare l’accesso, sono disponibili diverse opzioni. Prosegui nella let
 
 [2. Client FTP](./#2-client-ftp): consente di effettuare l’accesso tramite software (ad esempio, FileZilla o Cyberduck). Se opti per questa soluzione, installa il software scelto sul tuo computer.
 
-[3. Accesso SSH](./#3-accesso-ssh): consente di effettuare l’accesso tramite il protocollo Secure Shell. Per utilizzare questa soluzione sono necessarie competenze tecniche avanzate e un [hosting Web OVH]({ovh_www}/hosting-web/){.external} compatibile.
+[3. Accesso SSH](./#3-accesso-ssh): consente di effettuare l’accesso tramite il protocollo Secure Shell. Per utilizzare questa soluzione sono necessarie competenze tecniche avanzate e un [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} compatibile.
 
 #### 1. FTP Explorer
 

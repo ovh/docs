@@ -74,7 +74,7 @@ Una vez que haya obtenido el número del cluster en el que está situado el aloj
 ### Cambiar la oferta del servidor de bases de datos
 
 Para cambiar el plan de hosting de su servidor de bases de datos, acceda al [área de cliente de OVHcloudcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos.
-En la pestaña **"Información general"** que se muestra por defecto, haga clic en `..`{.action} a la derecha de la indicación "RAM" y luego en `Cambiar la cantidad de RAM`{.action} para acceder al pedido de esta modificación.
+En la pestaña **"Información general"** que se muestra por defecto, haga clic en `...`{.action} a la derecha de la indicación "RAM" y luego en `Cambiar la cantidad de RAM`{.action} para acceder al pedido de esta modificación.
 
 ![private-sql](images/private-sql-order-ram01.png){.thumbnail}
 
@@ -286,6 +286,6 @@ Evite usar **"HAVING"**, por ejemplo. Está consulta incrementará el número de
 
 [Lista de direcciones IP de los clusters y alojamientos web](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/){.external}
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
 
 

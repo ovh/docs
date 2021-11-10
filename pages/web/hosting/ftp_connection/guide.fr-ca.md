@@ -16,7 +16,7 @@ Les offres d'hébergement web d'OVHcloud vous donnent accès à un espace de sto
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
@@ -43,7 +43,7 @@ Les informations liées à votre espace de stockage apparaissent alors, ainsi qu
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
 
-Grâce à ces informations, vous devriez pouvoir retrouver les éléments requis pour vous connecter à l'espace de stockage. Si besoin, aidez-vous du tableau ci-dessous si vous n'arrivez pas à les identifier. À noter que certaines informations peuvent ne pas apparaître selon l'offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external} que vous possédez.
+Grâce à ces informations, vous devriez pouvoir retrouver les éléments requis pour vous connecter à l'espace de stockage. Si besoin, aidez-vous du tableau ci-dessous si vous n'arrivez pas à les identifier. À noter que certaines informations peuvent ne pas apparaître selon l'offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} que vous possédez.
 
 |Information|Description|
 |---|---|
@@ -66,7 +66,7 @@ La connexion à l’espace de stockage peut s’effectuer de plusieurs manières
 
 [2. Connexion via un logiciel FTP](./#2-connexion-via-un-logiciel-ftp) : vous permet d'accéder à votre espace de stockage via un logiciel (comme FileZilla ou Cyberduck). Vous devrez au préalable installer le logiciel choisi sur votre ordinateur.
 
-[3. Connexion via un accès SSH](./#3-connexion-en-ssh) : vous permet d'accéder à votre espace de stockage via un accès SSH. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
+[3. Connexion via un accès SSH](./#3-connexion-en-ssh) : vous permet d'accéder à votre espace de stockage via un accès SSH. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
 
 #### 1. Connexion via le FTP Explorer
 

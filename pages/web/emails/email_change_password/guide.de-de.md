@@ -17,7 +17,7 @@ Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät
 ## Voraussetzungen
 
 - Sie besitzen ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external} oder separat bestellbar.
-- Je nach der von Ihnen gewählten Vorgehensweise sind Sie entweder in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Web Cloud`{.action} oder über das [Webmail-Interface]({ovh_www}/mail/){.external} Outlook on the Web (OWA) eingeloggt.
+- Je nach der von Ihnen gewählten Vorgehensweise sind Sie entweder in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Web Cloud`{.action} oder über das [Webmail-Interface](https://www.ovh.de/mail/){.external} Outlook on the Web (OWA) eingeloggt.
 
 > [!primary]
 >
@@ -26,7 +26,7 @@ Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät
 
 ## Beschreibung
 
-Je nach Aktivierungsdatum Ihres Dienstes, oder falls [Ihr Angebot vor Kurzem migriert wurde]({ovh_www}/mxplan-migration/){.external}, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion. 
+Je nach Aktivierungsdatum Ihres Dienstes, oder falls [Ihr Angebot vor Kurzem migriert wurde](https://www.ovhcloud.com/de/web-hosting/mxplan-migration/){.external}, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion. 
 
 Loggen Sie sich hierzu in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich „Web“. Klicken Sie im linken Menü auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
 
@@ -48,7 +48,7 @@ Es gibt zwei Möglichkeiten, um das Passwort einer E-Mail-Adresse zu ändern. Fa
 
 #### Passwort über OWA Webmail ändern
 
-Gehen Sie zunächst auf die Seite „[Webmail Login]({ovh_www}/mail/){.external}“. Geben Sie dort Ihre vollständige E-Mail-Adresse und das aktuelle Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}. 
+Gehen Sie zunächst auf die Seite „[Webmail Login](https://www.ovh.de/mail/){.external}“. Geben Sie dort Ihre vollständige E-Mail-Adresse und das aktuelle Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}. 
 
 ![E-Mail](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -83,7 +83,7 @@ Nachdem Sie Ihre Auswahl vorgenommen haben, klicken Sie auf `Weiter`{.action}, d
 
 Nachdem Sie das Passwort geändert haben, können Sie auf Ihre E-Mail-Adresse zugreifen. Hierzu haben Sie zwei Möglichkeiten.
 
-- **Unser Webmail verwenden**: Gehen Sie auf die Seite „[Webmail Login]({ovh_www}/mail/){.external}“ und geben Sie die betreffende E-Mail-Adresse sowie das neue Passwort ein. Wenn Sie das Passwort gerade erste geändert haben und sich nicht einloggen können, warten sie einen Moment und versuchen Sie es anschließend erneut. Weitere Informationen zur Verwendung Ihrer E-Mail-Adresse mit OWA finden Sie in unserer Anleitung „[E-Mail-Adresse via Outlook on the web (OWA) verwenden](../verwendung-owa/){.external}“.
+- **Unser Webmail verwenden**: Gehen Sie auf die Seite „[Webmail Login](https://www.ovh.de/mail/){.external}“ und geben Sie die betreffende E-Mail-Adresse sowie das neue Passwort ein. Wenn Sie das Passwort gerade erste geändert haben und sich nicht einloggen können, warten sie einen Moment und versuchen Sie es anschließend erneut. Weitere Informationen zur Verwendung Ihrer E-Mail-Adresse mit OWA finden Sie in unserer Anleitung „[E-Mail-Adresse via Outlook on the web (OWA) verwenden](../verwendung-owa/){.external}“.
 
 - **Kompatiblen E-Mail-Client verwenden**: Das neue Passwort muss auf allen Geräten verwendet werden, auf denen die E-Mail-Adresse eingerichtet ist. Es kann sein, dass automatisch ein Fenster angezeigt wird, in dem Sie das neue Passwort eingeben sollen. Ist das nicht der Fall, [nutzen Sie unsere Konfigurationsanleitungen](../) oder wenden Sie sich an den Herausgeber der verwendeten Software oder Anwendung, falls der Vorgang von dieser abhängig ist.
 
@@ -105,7 +105,7 @@ Wenn Sie fertig sind, klicken Sie auf Bestätigen. Die Änderung benötigt einig
 
 Nachdem Sie das Passwort geändert haben, können Sie auf Ihre E-Mail-Adresse zugreifen. Hierzu haben Sie zwei Möglichkeiten.
 
-- **Unser Webmail verwenden**: Gehen Sie auf die Seite „[Webmail Login]({ovh_www}/mail/){.external}“ und geben Sie die betreffende E-Mail-Adresse sowie das neue Passwort ein. Wenn Sie das Passwort gerade erste geändert haben und sich nicht einloggen können, warten sie einen Moment und versuchen Sie es anschließend erneut. Weitere Informationen finden Sie in unserer Anleitung „[Webmail: Verwendung von RoundCube](../webmail_verwendung_von_roundcube/){.external}“.
+- **Unser Webmail verwenden**: Gehen Sie auf die Seite „[Webmail Login](https://www.ovh.de/mail/){.external}“ und geben Sie die betreffende E-Mail-Adresse sowie das neue Passwort ein. Wenn Sie das Passwort gerade erste geändert haben und sich nicht einloggen können, warten sie einen Moment und versuchen Sie es anschließend erneut. Weitere Informationen finden Sie in unserer Anleitung „[Webmail: Verwendung von RoundCube](../webmail_verwendung_von_roundcube/){.external}“.
 
 - **Kompatiblen E-Mail-Client verwenden**: Das neue Passwort muss auf allen Geräten verwendet werden, auf denen die E-Mail-Adresse eingerichtet ist. Es kann sein, dass automatisch ein Fenster angezeigt wird, in dem Sie das neue Passwort eingeben sollen. Ist das nicht der Fall, [nutzen Sie unsere Konfigurationsanleitungen](../) oder wenden Sie sich an den Herausgeber der verwendeten Software oder Anwendung, falls der Vorgang von dieser abhängig ist.
 

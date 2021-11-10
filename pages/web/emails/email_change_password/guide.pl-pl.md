@@ -16,8 +16,8 @@ Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzyst
 
 ## Wymagania początkowe
 
-- Wykupienie usługi MX Plan Jest ona dostępna w ramach oferty: [Hosting]({ovh_www}/hosting/){.external}, [Hosting Start 10M]({ovh_www}/domeny/oferta_serwer_start10m.xml){.external} lub oferty MX Plan zamówionej oddzielnie.
-- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail]({ovh_www}/mail/){.external} Outlook Web Access (OWA).
+- Wykupienie usługi MX Plan Jest ona dostępna w ramach oferty: [Hosting](https://www.ovhcloud.com/pl/web-hosting/){.external}, [Hosting Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} lub oferty MX Plan zamówionej oddzielnie.
+- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail](https://www.ovh.pl/mail/){.external} Outlook Web Access (OWA).
 
 > [!primary]
 >
@@ -48,7 +48,7 @@ Istnieją dwie metody zmiany hasła do konta e-mail. Przejdź do metody, z któr
 
 #### Zmiana hasła w interfejsie Webmail OWA
 
-Zaloguj się na stronie [interfejsu Webmail]({ovh_www}/mail/){.external}. Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}. 
+Zaloguj się na stronie [interfejsu Webmail](https://www.ovh.pl/mail/){.external}. Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}. 
 
 ![E-mail](images/mxplan-password-new-step2.png){.thumbnail}
 

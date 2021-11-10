@@ -36,11 +36,11 @@ Istnieją dwa rodzaje przekierowań:
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Wykupienie usługi MX Plan. Usługa jest dostępna w ramach oferty [Hosting]({ovh_www}/hosting/){.external}, [bezpłatny Hosting Start 10M]({ovh_www}/domeny/oferta_serwer_start10m.xml){.external} lub oferty MX Plan zamówionej oddzielnie.
+- Wykupienie usługi MX Plan. Usługa jest dostępna w ramach oferty [Hosting](https://www.ovhcloud.com/pl/web-hosting/){.external}, [bezpłatny Hosting Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} lub oferty MX Plan zamówionej oddzielnie.
 
 ## W praktyce
 
-W zależności od daty aktywacji oferty MX Plan lub jeśli [oferta została niedawno przeniesiona]({ovh_www}/mxplan-migration/){.external}, możliwe, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, ustal, jaką wersję posiadasz. 
+W zależności od daty aktywacji oferty MX Plan lub jeśli [oferta została niedawno przeniesiona](https://www.ovhcloud.com/pl/web-hosting/mxplan-migration/){.external}, możliwe, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, ustal, jaką wersję posiadasz. 
 
 W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji „Web”. Kliknij `E-maile`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 

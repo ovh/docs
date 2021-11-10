@@ -16,7 +16,7 @@ Les offres d'hébergement web d'OVHcloud donnent accès à un espace de stockage
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
@@ -31,7 +31,7 @@ Le tableau affiche les utilisateurs FTP créés sur votre hébergement. Ces util
 
 ### Étape 2 : modifier le mot de passe d'un utilisateur FTP
 
-La modification du mot de passe d'un utilisateur FTP créé sur votre hébergement s'effectue de deux manières selon votre offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external} :
+La modification du mot de passe d'un utilisateur FTP créé sur votre hébergement s'effectue de deux manières selon votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} :
 
 - **pour les offres ne pouvant pas créer plusieurs utilisateurs FTP** (offres Start 10M, Kimsufi Web et Perso) : cliquez sur sur le pictogramme en forme de crayon dans la colonne `Mot de passe`{.action} du tableau, renseignez le nouveau mot de passe dans la zone de texte, puis validez le changement ;
 
@@ -58,7 +58,7 @@ Le changement nécessite quelques minutes pour être effectif.
 
 Une fois le mot de passe de l'utilisateur FTP modifié, vous pouvez à présent accéder à votre espace de stockage.
 
-Pour cela, et selon votre offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external}, plusieurs moyens s'offrent à vous :
+Pour cela, et selon votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, plusieurs moyens s'offrent à vous :
 
 - **utiliser le FTP Explorer** : vous permettra d'accéder à votre espace de stockage depuis votre navigateur internet. Pour l'utiliser, toujours depuis l'onglet `FTP - SSH`{.action}, cliquez sur le bouton `FTP Explorer`{.action} ;
 
