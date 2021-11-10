@@ -15,16 +15,16 @@ Le Public Cloud OVHcloud est un environnement rassemblant un grand nombre de pro
 La mise à disposition est quasiment instantanée et la facturation est directement adaptée à votre usage, ce qui apporte simplicité et flexibilité à vos pratiques.
 
 Ce guide vous permet de découvrir les notions essentielles pour une bonne exploitation des produits.
-<br>Nous vous y présentons d'abord une [approche globale du Public Cloud](#global-approach) et quelques notions générales, puis une [approche concrète](#approche-concrète) avec les avantages fournis par le Public Cloud, ansi que les premières étapes de démarrage.
+<br>Nous vous y présentons d'abord une [approche globale du Public Cloud](#global-approach) et quelques notions générales, puis une [approche concrète](#concrete-approach) avec les avantages fournis par le Public Cloud, ansi que les premières étapes de démarrage.
 <br>Enfin, nous vous proposons des ressources pour [aller plus loin](#gofurther).
 
 Si vous êtes déjà familier de ces concepts, vous pouvez poursuivre la découverte du Public Cloud OVHcloud en parcourant les guides suivants :
 
-* [Ouvrir un compte OVHcloud](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/)
-* [Créer votre premier projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/)
-* [Se familiariser avec l'interface Public Cloud](https://docs.ovh.com/fr/public-cloud/public-cloud-interface/)
-* [Créer sa première instance](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/)
-* [Gérer ses quotas](https://docs.ovh.com/fr/public-cloud/augmenter-le-quota-public-cloud/)
+- [Ouvrir un compte OVHcloud](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/)
+- [Créer votre premier projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/)
+- [Se familiariser avec l'interface Public Cloud](https://docs.ovh.com/fr/public-cloud/public-cloud-interface/)
+- [Créer sa première instance](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/)
+- [Gérer ses quotas](https://docs.ovh.com/fr/public-cloud/augmenter-le-quota-public-cloud/)
 
 ## Approche globale <a name="global-approach"></a>
 
@@ -62,21 +62,21 @@ Le Public Cloud OVHcloud se positionne aux côtés de fournisseurs cloud bien co
 
 ### Cas d'usages : quelques exemples concrets et leurs avantages
 
-* **Plus de flexibilité** : _Vous avez une application qui fonctionne actuellement sur un hébergement classique comme un (ou plusieurs) serveur dédié et vous souhaitez plus de flexibilité dans l'utilisation._ L'utilisation des instances Public Cloud est très proche de celle d'un serveur dédié, mais elle apporte la possibilité de redimensionner votre serveur facilement, suivre les évolutions matérielles, ajouter de l'espace de stockage à chaud, configurer l'architecture réseau comme vous le souhaitez, programmer des sauvegardes ou cloner votre serveur en quelques actions simples.
+- **Plus de flexibilité** : _Vous avez une application qui fonctionne actuellement sur un hébergement classique comme un (ou plusieurs) serveur dédié et vous souhaitez plus de flexibilité dans l'utilisation._ L'utilisation des instances Public Cloud est très proche de celle d'un serveur dédié, mais elle apporte la possibilité de redimensionner votre serveur facilement, suivre les évolutions matérielles, ajouter de l'espace de stockage à chaud, configurer l'architecture réseau comme vous le souhaitez, programmer des sauvegardes ou cloner votre serveur en quelques actions simples.
 
-* **Plus de scalabilité** : _Vous développez une application cloud native et vous souhaitez une infrastructure capable d'encaisser de fortes variations de charge._ Les clusters Kubernetes peuvent réagir et s'adapter dynamiquement en fonction de la charge. Ils peuvent ajouter des noeuds au cluster de manière automatique quand la pression sur l'infrastructure augmente.
+- **Plus de scalabilité** : _Vous développez une application cloud native et vous souhaitez une infrastructure capable d'encaisser de fortes variations de charge._ Les clusters Kubernetes peuvent réagir et s'adapter dynamiquement en fonction de la charge. Ils peuvent ajouter des noeuds au cluster de manière automatique quand la pression sur l'infrastructure augmente.
 
-* **Plus de maitrise des coûts** : _Vous avez une application en production sujette à des saisonnalités et vous souhaitez déporter la charge de calcul au moment des pics, sans maintenir des coûts d'infrastructure importants tout au long de l'année. Les instances facturées à l'heure peuvent effectuer les tâches en peu de temps et être détruites une fois que le besoin est passé.
+- **Plus de maitrise des coûts** : _Vous avez une application en production sujette à des saisonnalités et vous souhaitez déporter la charge de calcul au moment des pics, sans maintenir des coûts d'infrastructure importants tout au long de l'année. Les instances facturées à l'heure peuvent effectuer les tâches en peu de temps et être détruites une fois que le besoin est passé.
 
-* **Plus de sérénité** : _Vous avez besoin d'une base de donnée mais vous ne souhaitez pas gérer le moteur et en assurer la maintenance. Les bases de données managées sont disponibles en quelque secondes et sont totalement gérées par OVHcloud, vous pouvez directement utiliser le service de base de données en vous affranchissant de l'installation, la maintenance, les mises à jour...
+- **Plus de sérénité** : _Vous avez besoin d'une base de donnée mais vous ne souhaitez pas gérer le moteur et en assurer la maintenance. Les bases de données managées sont disponibles en quelque secondes et sont totalement gérées par OVHcloud, vous pouvez directement utiliser le service de base de données en vous affranchissant de l'installation, la maintenance, les mises à jour...
 
 ### L'utilisation : une interface simple et des API standards
 
 Il y a plusieurs manière de manipuler les ressources Public Cloud. Qu'on découvre les produits Public Cloud ou qu'on soit un utilisateur avancé, l'utilisation reste simple.
 
-* Pour découvrir les produits, l'espace client vous accompagne dans la création de ressources en vous amenant à choisir la performance du produit, sa localisation, la personnalisation que vous souhaitez ou encore d'autres paramètres comme son mode de facturation.
+- Pour découvrir les produits, l'espace client vous accompagne dans la création de ressources en vous amenant à choisir la performance du produit, sa localisation, la personnalisation que vous souhaitez ou encore d'autres paramètres comme son mode de facturation.
 
-* Pour automatiser les déploiements et industrialiser vos architectures, vous pouvez également utiliser les outils du marché en vous connectant directement aux APIs standards comme l'API S3, les API d'OpenStack ou même Kubernetes.
+- Pour automatiser les déploiements et industrialiser vos architectures, vous pouvez également utiliser les outils du marché en vous connectant directement aux APIs standards comme l'API S3, les API d'OpenStack ou même Kubernetes.
 
 ### Démarrage : prise en main
 
@@ -111,8 +111,8 @@ Vous serez peut être amené à gérer la question des quotas.
 Vous pouvez avoir besoin de gérer plusieurs utilisateurs qui vont intervenir sur votre projet.
 <br>Vous avez alors deux possibilités :
 
-* Si vous souhaitez utiliser les APIs OpenStack ou S3, ou l'interface Horizon, vous aurez à [créer des utilisateurs](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/) pour cela. Les utilisateurs peuvent éventuellement avoir des droits limités afin de sécuriser les périmètres d'action.
-* Si vous n'avez pas besoin d'accéder aux APIs ou à Horizon, vous pouvez [associer un autre compte client OVHcloud](https://docs.ovh.com/fr/public-cloud/deleguer-ses-projets/) en complément sur votre projet.
+- Si vous souhaitez utiliser les APIs OpenStack ou S3, ou l'interface Horizon, vous aurez à [créer des utilisateurs](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/) pour cela. Les utilisateurs peuvent éventuellement avoir des droits limités afin de sécuriser les périmètres d'action.
+- Si vous n'avez pas besoin d'accéder aux APIs ou à Horizon, vous pouvez [associer un autre compte client OVHcloud](https://docs.ovh.com/fr/public-cloud/deleguer-ses-projets/) en complément sur votre projet.
 
 # Aller plus loin <a name="gofurther"></a>
 

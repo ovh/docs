@@ -28,20 +28,20 @@ One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as s
 
 Another way is to interact directly using programming languages, such as PHP.
 PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or Wordpress.
-Redis do have multiple PHP clients, allowing us to connect and manage a Redis instance from code. Please follow the official [Redis documentation for PHP clients](https://redis.io/clients#php){.external} to get the latest information for all Redis clients.
+Redis has multiple PHP clients, allowing us to connect and manage a Redis instance from code. Please follow the official [Redis documentation for PHP clients](https://redis.io/clients#php){.external} to get the latest information for all Redis clients.
 
-In order to do so, we will need to set up our PHP environment with phpredis client, then configure our Public Cloud Databases for Redis instances to accept incoming connections, and finally code in PHP to perform a few example actions.
+We will need to set up our PHP environment with phpredis client, then configure our Public Cloud Databases for Redis instances to accept incoming connections, and finally code in PHP to perform a few example actions.
 
 ## Instructions
 
-### Setup your PHP environment
+### Set up your PHP environment
 
 To interact with your Redis instance with PHP, your development environment needs to be configured with:
 
 - A compatible version of PHP;
 - PHP extension that support Redis 6 and TLS, as recommended by Redis : phpredis or Predis PHP Libraries.
 
-For both phpredis and Predis it is recommended to check on their respective sites how to do the install:
+For both phpredis and Predis it is recommended to check their respective sites on how to do the install:
 
 - [phpredis official GitHub](https://github.com/phpredis/phpredis);
 - [Predis official GitHub](https://github.com/predis/predis).
@@ -56,11 +56,11 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 #### Step 1: Verify your user roles and password
 
-Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user + password pair.
+Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user + password pair.
 
 We provide official Redis ACL, Access Control List. Please read the [official Redis documentation](https://redis.io/topics/acl/){.external} to select the right privileges for your user. Those ACL will define the allow or disallow commands or categories of commands, keys and Pub/Sub channels.
 
-In our example, we will create a user called *bastien* with the (fake) password *Mysup3rs3cur3p4ssw0rd* and *allcommands* for commands (syntax equivalent to *<+@all>*) / *allkeys* for keys (syntax equivalent to *<\*>*)/ *allchannels* for channels (syntax equivalent to *<\*>*).
+In our example, we will create a user called *redisUser* with the generated (fake) password *3FAKExSW6Rez9Xw0admB* and *allcommands* for commands (syntax equivalent to *<+@all>*) / *allkeys* for keys (syntax equivalent to *<\*>*)/ *allchannels* for channels (syntax equivalent to *<\*>*).
 
 ![User Creation](images/user_creation.png){.thumbnail}
 
@@ -85,9 +85,9 @@ Click to authorize a new IP, and enter the previously found IP of your remote cl
 
 ### Get your connection information (URI)
 
-Now all the setup should be done, from the remote client and the Redis instance.
+Now all the setup should be done for the remote client and the Redis instance.
 
-Select the `General Information`{.action} tab. In the **Login Informations** section, copy the Service URI.
+Select the `General Information`{.action} tab. In the **Login Information** section, copy the Service URI.
 
 It should be similar to this :
 
@@ -118,7 +118,7 @@ In your PHP environment, let's try a connection. To be sure that we are indeed c
 	$redis->connect('tls://redis-9f6095f3-of5ff6e31.database.cloud.ovh.net', 20185);
 
 	//Setup the user
-	$redis->auth(['redisUser', '3opy1xSW6Rez9Xw0admB']);
+	$redis->auth(['redisUser', '3FAKExSW6Rez9Xw0admB']);
 
 	// Ping the redis instance
 	echo "\nServer is running: ".$redis->ping("OK");
