@@ -77,7 +77,7 @@ Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, e
 
 ##### 3.1. Utilizar o webmail Outlook Web Access (OWA)
 
-Aceda à página “[Ligação ao webmail]({ovh_www}/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
+Aceda à página “[Ligação ao webmail](https://www.ovh.pt/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
 Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual [Utilizar o endereço de e-mail a partir do webmail Outlook Web Access (OWA)](https://docs.ovh.com/pt/emails/utilizacao-owa/){.external}.
 
@@ -154,7 +154,7 @@ Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, e
 
 ##### 3.1. Utilizar o webmail RoundCube
 
-Aceda à página “[Ligação ao webmail]({ovh_www}/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
+Aceda à página “[Ligação ao webmail](https://www.ovh.pt/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
 A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual “[Guia de utilização do Roundcube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/){.external}”.
 

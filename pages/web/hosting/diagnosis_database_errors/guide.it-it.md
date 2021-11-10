@@ -14,7 +14,7 @@ order: 4
 
 ## Obiettivo
 
-L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), così come sull'interfaccia [PhpMyAdmin](../creare-database/).
+L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), così come sull'interfaccia [PhpMyAdmin](https://docs.ovh.com/it/hosting/creare-database/).
 
 **Scopri come risolvere gli errori associati ai database sugli hosting condivisi OVHcloud.**
 
@@ -29,7 +29,7 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 
 - Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Utilizzare una delle nostre offerte di database: [Web Cloud](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [SQL privato](.../iniziare-a-utilizzare-sql-privato/)
+- Utilizzare una delle nostre offerte di database: [Web Cloud](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [SQL privato](https://docs.ovh.com/it/hosting/iniziare-a-utilizzare-sql-privato/)
 
 ## Procedura
 
@@ -50,18 +50,18 @@ Per prima cosa verifica su [http://travaux.ovh.com/](http://travaux.ovh.com/) ch
 
 #### Verifica le credenziali di connessione al tuo database <a name="config_file"></a>
 
-Accedi in [FTP](../accedere-spazio-storage-ftp-hosting-web/) allo spazio di archiviazione dei file sul tuo hosting e ritrova il file di configurazione del tuo sito (ad esempio, per un sito Wordpress, si tratta del file **wp-config.php***, che contiene il tuo sito).
+Accedi in [FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) allo spazio di archiviazione dei file sul tuo hosting e ritrova il file di configurazione del tuo sito (ad esempio, per un sito Wordpress, si tratta del file **wp-config.php***, che contiene il tuo sito).
 
 > [!warning]
 >
 > La scelta e la configurazione del file contenente le informazioni di connessione al database sono inerenti al mittente del contenuto (CMS) interessato e non a OVHcloud.
 >
-> In caso di necessità, ti consigliamo di rivolgerti all'editor del [CMS](.../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/) utilizzato per creare il tuo sito o di rivolgerti a uno specialista del settore(https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza al riguardo.
+> In caso di necessità, ti consigliamo di rivolgerti all'editor del [CMS](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/) utilizzato per creare il tuo sito o di rivolgerti a uno specialista del settore(https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza al riguardo.
 >
 
-Verifica la corrispondenza **esatta** tra le credenziali di connessione a [PhpMyAdmin](.../creare-database/) e quelle del file di configurazione del tuo sito.
+Verifica la corrispondenza **esatta** tra le credenziali di connessione a [PhpMyAdmin](https://docs.ovh.com/it/hosting/creare-database/) e quelle del file di configurazione del tuo sito.
 
-Modifica, se necessario, la [password del tuo database](../modificare-password-database/).
+Modifica, se necessario, la [password del tuo database](https://docs.ovh.com/it/hosting/modificare-password-database/).
 
 ##### Esempio per Wordpress
 
@@ -86,12 +86,12 @@ Nello Spazio Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from
 
 - **my_database** deve corrispondere a quanto indicato in `Nome del database`
 - **my_user** deve corrispondere a quanto riportato nella `Nome utente`
-- **my_password** corrisponde alla [password del tuo database](.../modificare-password-database/)
+- **my_password** corrisponde alla [password del tuo database](https://docs.ovh.com/it/hosting/modificare-password-database/)
 - **my_server.mysql.db** deve corrispondere a quanto riportato su `Indirizzo del server`.
 
 
 > [!primary]
-> Se queste operazioni non ti permettono di ripristinare l'accesso al tuo sito, [salva il tuo database](../web_hosting_come_esportare_un_database/) e [ripristina il database](.../ripristinare-importare-database/#ripristina-e-importa-un-database-dallo-spazio-cliente) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+> Se queste operazioni non ti permettono di ripristinare l'accesso al tuo sito, [salva il tuo database](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/) e [ripristina il database](https://docs.ovh.com/it/hosting/ripristinare-importare-database/#ripristina-e-importa-un-database-dallo-spazio-cliente) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 >
 > Contatta uno specialista del settore (https://partner.ovhcloud.com/it/directory/) se necessario. Non saremo in grado di fornirti assistenza al riguardo.
 >
@@ -125,17 +125,17 @@ Se utilizzi un'offerta **Performance**, consulta la sezione [metodo 2](#methode2
 
 Puoi anche migrare i tuoi dati su un nuovo database:
 
-- Ordinare, se necessario, una [database](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) di dimensione superiore e avviarne la [creazione](.../creare-database/);
-- Effettua un [export dei tuoi dati](../web_hosting_come_esportare_un_database/), poi [importali](.../web_hosting_come_importare_un_database_mysql/) nel nuovo database;
+- Ordinare, se necessario, una [database](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) di dimensione superiore e avviarne la [creazione](https://docs.ovh.com/it/hosting/creare-database/);
+- Effettua un [export dei tuoi dati](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/), poi [importali](https://docs.ovh.com/it/hosting/web_hosting_come_importare_un_database_mysql/) nel nuovo database;
 - Inserisci gli identificativi del nuovo database nel [file di configurazione](#config_file) del tuo sito.
 
 > [!primary]
-> Se disponi di un hosting **Performance**, puoi anche [attivare gratuitamente un server SQL Privato](.../iniziare-a-utilizzare-sql-privato/).
+> Se disponi di un hosting **Performance**, puoi anche [attivare gratuitamente un server SQL Privato](https://docs.ovh.com/it/hosting/iniziare-a-utilizzare-sql-privato/).
 >
 
 ##### Metodo 3: eliminare i dati non necessari
 
-Dopo aver effettuato un [backup del tuo database](.../web_hosting_come_esportare_un_database/), accedi alla tua interfaccia [PhpMyAdmin](.../creare-database/) per eliminare i dati inutili grazie ai comandi Drop, Delete e Truncate.
+Dopo aver effettuato un [backup del tuo database](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/), accedi alla tua interfaccia [PhpMyAdmin](https://docs.ovh.com/it/hosting/creare-database/) per eliminare i dati inutili grazie ai comandi Drop, Delete e Truncate.
 
 Esegui il calcolo della quota utilizzando la scheda `Database`{.action} dell'hosting in questione: clicca sul pulsante `...`{.action} interessata e seleziona `Ricalcola la quota`{.action}.
 
@@ -146,7 +146,7 @@ Esegui il calcolo della quota utilizzando la scheda `Database`{.action} dell'hos
 
 #### Metodo 4: ottimizzare il tuo database
 
-Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configura il tuo server di database](.../configurare-ottimizzare-il-tuo-database-server/#ottimizza-i-tuoi-database_1). Clicca sulla scheda `Database`{.action} del tuo hosting e poi riavvia il calcolo della quota `...`{.action} del database in questione.
+Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configura il tuo server di database](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/#ottimizza-i-tuoi-database_1). Clicca sulla scheda `Database`{.action} del tuo hosting e poi riavvia il calcolo della quota `...`{.action} del database in questione.
 
 > [!warning]
 >
@@ -159,9 +159,9 @@ Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-In questa situazione è possibile aumentare la [quantità di memoria RAM](.../configurare-ottimizzare-il-tuo-database-server/#monitora-la-ram-consumata) disponibile nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
+In questa situazione è possibile aumentare la [quantità di memoria RAM](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/#monitora-la-ram-consumata) disponibile nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
 
-Per ottimizzare il tuo database, segui le istruzioni della nostra guida "[Configurare il tuo server di database](.../configurare-ottimizzare-il-tuo-database-server/#ottimizza-i-tuoi-database_1)".
+Per ottimizzare il tuo database, segui le istruzioni della nostra guida "[Configurare il tuo server di database](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/#ottimizza-i-tuoi-database_1)".
 
 > [!primary]
 > Se riscontri difficoltà nell'utilizzo delle risorse sul tuo server di database e non desideri aumentarle, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza al riguardo.
@@ -175,9 +175,9 @@ Per ottimizzare il tuo database, segui le istruzioni della nostra guida "[Config
 > **"#1044 - Access denied for user to database"**
 >
 
-Per prima cosa, assicurati che il database sia vuoto dalla scheda `Database`{.action} dell'hosting interessato (clicca sul pulsante `...`{.action} in questione e su `Ricalcola la quota`{.action}) per [salvare i dati presenti](.../web_hosting_come_esportare_un_database/).
+Per prima cosa, assicurati che il database sia vuoto dalla scheda `Database`{.action} dell'hosting interessato (clicca sul pulsante `...`{.action} in questione e su `Ricalcola la quota`{.action}) per [salvare i dati presenti](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/).
 
-Seleziona la casella `Svuota il database attuale`{.action} immediatamente prima di [avviare l'importazione](../ripristinare-importare-database/):
+Seleziona la casella `Svuota il database attuale`{.action} immediatamente prima di [avviare l'importazione](https://docs.ovh.com/it/hosting/ripristinare-importare-database/):
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
@@ -208,15 +208,15 @@ USE `Database-Name`;
 > **"404 ERROR MySQL server has gone away"**
 >
 
-Questo messaggio di errore compare durante l'[importazione di un database](.../ripristinare-importare-database/#importa-un-backup-locale) su un server [SQL Privato](.../iniziare-a-utilizzare-sql-privato/). È legato per la maggior parte del tempo alla quantità troppo elevata di dati da importare o alla mancanza di ottimizzazione delle richieste SQL nello script di importazione.
+Questo messaggio di errore compare durante l'[importazione di un database](https://docs.ovh.com/it/hosting/ripristinare-importare-database/#importa-un-backup-locale) su un server [SQL Privato](https://docs.ovh.com/it/hosting/iniziare-a-utilizzare-sql-privato/). È legato per la maggior parte del tempo alla quantità troppo elevata di dati da importare o alla mancanza di ottimizzazione delle richieste SQL nello script di importazione.
 
 Per risolvere questa anomalia, puoi:
 
-- Aumentare la [quantità di RAM](../configurare-ottimizzare-il-tuo-database-server/#monitora-la-ram-consumata). accedendo alla sezione `Database` del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul pulsante `...`{.action} nella sezione `RAM` e clicca su `Modifica la quantità di RAM`{.action}.
+- Aumentare la [quantità di RAM](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/#monitora-la-ram-consumata). accedendo alla sezione `Database` del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul pulsante `...`{.action} nella sezione `RAM` e clicca su `Modifica la quantità di RAM`{.action}.
 
 - Per importare il tuo database in più operazioni anziché in una sola pagina (per maggiori informazioni sulle operazioni da effettuare, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) OVH non potrà fornirti alcuna assistenza al riguardo).
 
-- [Ottimizza il tuo database](.../configurare-ottimizzare-il-tuo-database-server/) e ripeti le operazioni di esportazione/importazione.
+- [Ottimizza il tuo database](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/) e ripeti le operazioni di esportazione/importazione.
 
 ### Impossibile accedere a PhpMyAdmin
 
@@ -226,11 +226,11 @@ Per risolvere questa anomalia, puoi:
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**
 >
 
-Questo messaggio di errore può comparire durante la connessione al tuo database da [PhpMyAdmin](.../creare-database/). Essa indica che gli identificativi indicati sono errati.
+Questo messaggio di errore può comparire durante la connessione al tuo database da [PhpMyAdmin](https://docs.ovh.com/it/hosting/creare-database/). Essa indica che gli identificativi indicati sono errati.
 
 ![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
 
-In questa situazione, [verifica le credenziali inserite](.../connessione-database-server-bdd/) e, se necessario, modifica la [password del tuo database](.../modificare-password-database/).
+In questa situazione, [verifica le credenziali inserite](https://docs.ovh.com/it/hosting/connessione-database-server-bdd/) e, se necessario, modifica la [password del tuo database](https://docs.ovh.com/it/hosting/modificare-password-database/).
 
 #### "Too many connections"
 
@@ -240,11 +240,11 @@ In questa situazione, [verifica le credenziali inserite](.../connessione-databas
 
 Il numero massimo di connessioni attive per i database consegnati con hosting condivisi ([StartSQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) è di **30**.
 
-Questo numero è di **200** per i database dei server [SQL privato](.../iniziare-a-utilizzare-sql-privato/). (Questo parametro è modificabile nella sezione `Configuration`{.action} del tuo server database).
+Questo numero è di **200** per i database dei server [SQL privato](https://docs.ovh.com/it/hosting/iniziare-a-utilizzare-sql-privato/). (Questo parametro è modificabile nella sezione `Configuration`{.action} del tuo server database).
 
-Questo messaggio compare durante la [connessione a PhpMyAdmin](../creare-database/) quando viene superato il numero massimo di connessioni.
+Questo messaggio compare durante la [connessione a PhpMyAdmin](https://docs.ovh.com/it/hosting/creare-database/) quando viene superato il numero massimo di connessioni.
 
-Per ridurre il numero di connessioni attive, è necessario [ottimizzare i tuoi database](../configurare-ottimizzare-il-tuo-database-server/).
+Per ridurre il numero di connessioni attive, è necessario [ottimizzare i tuoi database](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/).
 
 > [!warning]
 >
@@ -257,7 +257,7 @@ Per ridurre il numero di connessioni attive, è necessario [ottimizzare i tuoi d
 > **"mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known"**
 >
 
-Questo messaggio di errore compare durante la [connessione a PhpMyAdmin](.../connessione-database-server-bdd/) quando il nome del server inserito non è corretto.
+Questo messaggio di errore compare durante la [connessione a PhpMyAdmin](https://docs.ovh.com/it/hosting/connessione-database-server-bdd/) quando il nome del server inserito non è corretto.
 
 ![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
 
@@ -267,13 +267,13 @@ Verifica il nome del server da iscrivere nel tuo [Spazio Cliente OVHcloud](https
 >
 > Se il database a cui vuoi connetterti compare nella scheda `Database`{.action} della sezione `Hosting`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), il nome da inserire è indicato nella colonna `Indirizzo del server`.
 >
-> Se vuoi connetterti a un database su un server [SQL Privato](../iniziare-a-utilizzare-sql-privato/) il nome del server da inserire è iscritto nella scheda `Informazioni generali`{.action}, `Informazioni di connessione`{.action}, `SQL`{.action} e nella sezione `Nome host`{.action}.
+> Se vuoi connetterti a un database su un server [SQL Privato](https://docs.ovh.com/it/hosting/iniziare-a-utilizzare-sql-privato/) il nome del server da inserire è iscritto nella scheda `Informazioni generali`{.action}, `Informazioni di connessione`{.action}, `SQL`{.action} e nella sezione `Nome host`{.action}.
 >
 
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Iniziare a utilizzare il servizio SQL Privato](../iniziare-a-utilizzare-sql-privato/)
+[Iniziare a utilizzare il servizio SQL Privato](https://docs.ovh.com/it/hosting/iniziare-a-utilizzare-sql-privato/)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

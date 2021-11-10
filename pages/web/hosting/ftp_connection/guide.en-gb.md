@@ -16,7 +16,7 @@ OVH Web Hosting plans provide you with access to a storage space you can use to 
 
 ## Requirements
 
-- an [OVH Web Hosting plan]({ovh_www}/web-hosting/){.external}
+- an [OVH Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}
 - access to the `Web Cloud`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
@@ -43,7 +43,7 @@ The information about your storage space will appear, along with a table listing
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
 
-With this information, you should be able to find the items you need to log in to the storage space. If you are having trouble identifying this information, you can use the table below. Please note that some information may not appear, depending on which [OVH Web Hosting plan]({ovh_www}/web-hosting/){.external} you are using.
+With this information, you should be able to find the items you need to log in to the storage space. If you are having trouble identifying this information, you can use the table below. Please note that some information may not appear, depending on which [OVH Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} you are using.
 
 |Information|Description|
 |---|---|

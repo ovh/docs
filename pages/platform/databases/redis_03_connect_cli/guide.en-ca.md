@@ -63,7 +63,7 @@ Be careful! By doing so you will need to update all the places where you already
 
 We provide official Redis Access Control List (ACL). Please read the [official Redis documentation](https://redis.io/topics/acl/){.external} to select the right priviledges for your user. Those ACL will define the allow or disallow commands or categories of commands, keys and Pub/Sub channels.
 
-In our example, we will create a user called *bastien* with the (fake) password *Mysup3rs3cur3p4ssw0rd* and *allcommands* for commands (syntax equivalent to *<+@all>*) / *allkeys* for keys (syntax equivalent to *<\*>*)/ *allchannels* for channels (syntax equivalent to *<\*>*).
+In our example, we will create a user called *redisUser* with the (fake) generated password *3FAKExSW6Rez9Xw0admB* and *allcommands* for commands (syntax equivalent to *<+@all>*) / *allkeys* for keys (syntax equivalent to *<\*>*)/ *allchannels* for channels (syntax equivalent to *<\*>*).
 
 ![User Creation](images/user_creation.png){.thumbnail}
 
@@ -91,7 +91,7 @@ Click to authorize a new IP, and enter the previously found IP of your remote cl
 
 Now all the setup should be done, from the remote client and the Redis instance.
 
-Select the `General Information`{.action} tab. In the **Login Informations** section, copy the Service URI.
+Select the `General Information`{.action} tab. In the **Login Information** section, copy the Service URI.
 
 It should be similar to this:
 
@@ -112,7 +112,7 @@ In your terminal, type `redis-cli -u rediss://<username>:<password>@<hostname>:<
 The result should look like this :
 
 ```bash
-laptop$ redis-cli -u rediss://bastien:Mysup3rs3cur3p4ssw0rd@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185 ping
+laptop$ redis-cli -u rediss://redisUser:3FAKExSW6Rez9Xw0admB@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185 ping
 Warning: Using a password with '-a' or '-u' option on the command line interface may not be safe.
 PONG
 ```
@@ -131,7 +131,7 @@ Don't forget you need to modify the username, password, hostname and port.
 In our example, it will look like this :
 
 ```bash
-laptop$ redis-cli -u rediss://bastien:Mysup3rs3cur3p4ssw0rd@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185    
+laptop$ redis-cli -u rediss://redisUser:3FAKExSW6Rez9Xw0admB@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185    
 Warning: Using a password with '-a' or '-u' option on the command line interface may not be safe.
 redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185> PING
 PONG
@@ -170,7 +170,7 @@ redis-cli -u rediss://redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185 ping
 (error) NOAUTH Authentication required.
 ```
 
-In case the user doesn't have the right privilege, you will get a *NOPERM* response. So review your user's roles and attached ACL. [Official Redis ACL documentation](https://redis.io/topics/acl/){.external}
+In case the user doesn't have the right privilege, you will get a *NOPERM* response. In this case, please review your user's roles and attached ACL. For further reading, please refer to [Official Redis ACL documentation](https://redis.io/topics/acl/){.external}
 
 ## Go further
 

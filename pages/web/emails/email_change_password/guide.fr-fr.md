@@ -16,8 +16,8 @@ Les adresses e-mail de l’offre MX Plan vous permettent d’envoyer et de recev
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web]({ovh_www}/hebergement-web/){.external}, l'[hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external}, ou l'offre MX Plan commandée séparément.
-- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail]({ovh_www}/mail/){.external} Outlook Web Messenger (OWA).
+- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, l'[hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external}, ou l'offre MX Plan commandée séparément.
+- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](https://www.ovh.com/fr/mail/){.external} Outlook Web Messenger (OWA).
 
 > [!primary]
 >
@@ -26,7 +26,7 @@ Les adresses e-mail de l’offre MX Plan vous permettent d’envoyer et de recev
 
 ## En pratique
 
-Selon la date d'activation de votre service ou si [celui-ci a été récemment migré]({ovh_www}/mxplan-migration/){.external}, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci. 
+Selon la date d'activation de votre service ou si [celui-ci a été récemment migré](https://www.ovhcloud.com/fr/web-hosting/mxplan-migration/){.external}, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci. 
 
 Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie « Web ». Cliquez sur `E-mails`{.action} dans la barre de services à gauche, puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez.
 
@@ -60,7 +60,7 @@ Une fois ceci fait, cliquez sur le bouton `Suivant`{.action}, puis sur `Valider`
 
 Une fois le mot de passe modifié, vous pouvez accéder à l'adresse e-mail. Pour cela, vous disposez de deux possibilités.
 
-- **Utiliser notre webmail** : accédez à la page « [Connexion au webmail]({ovh_www}/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son nouveau mot de passe. Si vous venez à l'instant de modifier le mot de passe et que l'authentification échoue, patientez quelques instants puis effectuez une nouvelle tentative de connexion. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail OWA, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)](../utilisation-owa/){.external} ».
+- **Utiliser notre webmail** : accédez à la page « [Connexion au webmail](https://www.ovh.com/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son nouveau mot de passe. Si vous venez à l'instant de modifier le mot de passe et que l'authentification échoue, patientez quelques instants puis effectuez une nouvelle tentative de connexion. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail OWA, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)](../utilisation-owa/){.external} ».
 
 - **Utiliser un logiciel de messagerie compatible** : vous devez renseigner le nouveau mot de passe sur tous les appareils où l’adresse e-mail a été configurée. Pour cela, il se peut qu'une fenêtre apparaisse automatiquement, vous demandant de le renseigner. Dans le cas contraire, [aidez-vous de nos guides de configuration](../) ou rapprochez-vous de l'éditeur du logiciel ou de l'aplication que vous utilisez, cette manipulation étant inhérente à ce dernier.
 
@@ -68,7 +68,7 @@ Une fois le mot de passe modifié, vous pouvez accéder à l'adresse e-mail. Pou
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Commencez en accédant à la page « [Connexion au webmail]({ovh_www}/mail/){.external} ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}. 
+Commencez en accédant à la page « [Connexion au webmail](https://www.ovh.com/fr/mail/){.external} ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -109,7 +109,7 @@ Une fois ceci fait, cliquez sur le bouton `Valider`{.action}. Le changement néc
 
 Une fois le mot de passe modifié, vous pouvez accéder à l'adresse e-mail. Pour cela, vous disposez de deux possibilités.
 
-- **Utiliser notre webmail** : accédez à la page « [Connexion au webmail]({ovh_www}/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son nouveau mot de passe. Si vous venez à l'instant de modifier le mot de passe et que l'authentification échoue, patientez quelques instants puis effectuez une nouvelle tentative de connexion. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail RoundCube, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](../utilisation-roundcube/){.external} ».
+- **Utiliser notre webmail** : accédez à la page « [Connexion au webmail](https://www.ovh.com/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son nouveau mot de passe. Si vous venez à l'instant de modifier le mot de passe et que l'authentification échoue, patientez quelques instants puis effectuez une nouvelle tentative de connexion. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail RoundCube, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](../utilisation-roundcube/){.external} ».
 
 - **Utiliser un logiciel de messagerie compatible** : vous devez renseigner le nouveau mot de passe sur tous les appareils où l’adresse e-mail a été configurée. Pour cela, il se peut qu'une fenêtre apparaisse automatiquement, vous demandant de le renseigner. Dans le cas contraire, [aidez-vous de nos guides de configuration](../) ou rapprochez-vous de l'éditeur du logiciel ou de l'application que vous utilisez, cette manipulation étant inhérente à ce dernier.
 

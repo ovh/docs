@@ -16,7 +16,7 @@ Wraz z pakietami hostingowymi OVH otrzymujesz dostęp do przestrzeni dyskowej um
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH]({ovh_www}/hosting/){.external}
+- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce
@@ -66,7 +66,7 @@ Logowanie do przestrzeni dyskowej można przeprowadzić na kilka sposobów. Prze
 
 2. [Logowanie przez program FTP](./#2-logowanie-przez-program-ftp): umożliwia dostęp do Twojej przestrzeni dyskowej przy użyciu programu (np. FileZilla lub Cyberduck). W pierwszym kroku zainstaluj wybrany program na komputerze.
 
-3. [Logowanie przez SSH](./#3-logowanie-przez-ssh): umożliwia dostęp do Twojej przestrzeni dyskowej przez SSH. W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVH]({ovh_www}/hosting/){.external} z dostępem SSH.
+3. [Logowanie przez SSH](./#3-logowanie-przez-ssh): umożliwia dostęp do Twojej przestrzeni dyskowej przez SSH. W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external} z dostępem SSH.
 
 #### 1. Logowanie przez FTP Explorer
 
