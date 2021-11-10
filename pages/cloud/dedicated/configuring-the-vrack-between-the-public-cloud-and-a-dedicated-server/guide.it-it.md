@@ -5,7 +5,11 @@ excerpt: 'Scopri come configurare una rete privata tra un’istanza Public Cloud
 section: vRack
 ---
 
-**Ultimo aggiornamento: 30/11/2018**
+**Ultimo aggiornamento: 09/11/2021**
+
+> [!primary] 
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
 ## Obiettivo
 
@@ -16,15 +20,16 @@ La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} è una rete privata c
 
 ## Prerequisiti
 
-- Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
-- Disporre di un [server dedicato](https://www.ovh.it/server_dedicati/){.external} compatibile con la vRack
-- Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Avere accesso all’intervallo di indirizzi IP privati preselezionato
+- Possedre un servizio [vRack](https://www.ovh.it/soluzioni/vrack/) attivato nel tuo account
+- Aver creun'istanza [Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/) nel tuo account OVHcloud
+- Possedere un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) compatibile con la vRack
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Aver selezionato una gamma di indirizzi IP privati
 
 
 ## Procedura
 
-### Crea un progetto Public Cloud
+### Aggiungere un progetto Public Cloud a vRack
 
 Una volta connesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul menu `Cloud`{.action} e poi sul pulsante `Ordina`{.action}.
 
