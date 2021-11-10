@@ -97,7 +97,7 @@ Right now, all nodes of a given cluster should be of the same type and distribut
 
 #### Network
 
-Redis clusters are reachable through default port 6379.
+Redis clusters are reachable through default port 20182.
 
 Public networking can be used for all the offers.
 
@@ -109,10 +109,9 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 
 #### Maximum simultaneous connections
 
-The number of simultaneous connections in Public Cloud Databases for PostgreSQL depends on the available total memory on the node.
-We allow approximately 100 connections per 4 GB of RAM memory, capped to a maximum of 1000 active connections.
+The number of simultaneous connections in Public Cloud Databases for Redis depends on the available total memory on the server. We allow 4 * megabytes_of_bytes_memory  connections per RAM GB, but at least 10000 connections, even on the smallest servers. 
 
-So for example on a server with 7 GB memory, you will get approximately 200 connections and with 15 GB memory you will get 400 connections.
+So for example on a server with 7GB memory, you will get up to 7 * 4096 = 28672 simultaneous connections.
 
 #### Advanced parameters
 
