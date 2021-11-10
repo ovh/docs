@@ -16,9 +16,9 @@ On the High Grade & SCALE ranges, it is not possible to operate failover IPs in 
 
 ## Requirements
 
-- an [OVHcloud dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/)
+- an [OVHcloud dedicated server](https://www.ovhcloud.com/asia/bare-metal/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- a [failover IP](https://www.ovhcloud.com/en-ca/bare-metal/ip/)
+- a [failover IP](https://www.ovhcloud.com/asia/bare-metal/ip/)
 
 > [!warning]
 >
@@ -60,7 +60,7 @@ Ethernet 3                Mellanox ConnectX-5 Adapter #3                4 Up    
 
 In our example:
 
-- The public interfaces are `Ehernet 3` and `Ethernet 4`
+- The public interfaces are `Ethernet 3` and `Ethernet 4`
 - The private interfaces are `Ethernet` and `Ethernet 2`
 
 > [!primary]
@@ -154,11 +154,11 @@ Right click on your vEthernet Adpater and click `Properties`.
 
 ![Static IP](images/static_ip_5.png){.thumbnail}
 
-Next, double click on `Internet Protocol Version  4(TCP/IPv4)`
+Next, double click on `Internet Protocol Version  4(TCP/IPv4)
 
 ![Static IP](images/static_ip_3.png){.thumbnail}
 
-Select `Use the following IP address` and insert your IP address.
+Select `Use the following IP address` and insert your IP address.`
 
 The Subnet Mask and Default gateway will be: 255.255.255.255 and 100.64.0.1 as seen below.
 
@@ -232,8 +232,8 @@ network:
 
 - a public block of IP addresses in your account, with a minimum of four addresses
 - your chosen private IP address range
-- a [vRack compatible server](https://www.ovhcloud.com/en-ca/bare-metal/){.external}
-- a [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} service activated in your account
+- a [vRack compatible server](https://www.ovhcloud.com/asia/bare-metal/){.external}
+- a [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} service activated in your account
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 #### Explanations
@@ -260,7 +260,7 @@ Ethernet 3                Mellanox ConnectX-5 Adapter #3                4 Up    
 
 In our example:
 
-- The public interfaces are `Ehernet 3` and `Ethernet 4`
+- The public interfaces are `Ethernet 3` and `Ethernet 4`
 - The private interfaces are `Ethernet` and `Ethernet 2`
 
 > [!primary]
