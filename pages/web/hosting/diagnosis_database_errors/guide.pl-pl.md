@@ -14,7 +14,7 @@ order: 4
 
 ## Wprowadzenie
 
-Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej stronie WWW lub w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), jak również w interfejsie [phpMyAdmin](../creer-bazy-danych/#acceder-a-interfejs-phpmyadmin).
+Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej stronie WWW lub w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), jak również w interfejsie [phpMyAdmin](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin).
 
 **Dowiedz się, jak usunąć błędy związane z bazami danych na hostingu www OVHcloud.**
 
@@ -29,7 +29,7 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Korzystanie z jednej z naszych ofert baz danych [Web Cloud](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub [SQL prywatny](../pierwsze-kroki-private-sql/).
+- Korzystanie z jednej z naszych ofert baz danych [Web Cloud](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub [SQL prywatny](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/).
 
 ## W praktyce
 
@@ -50,22 +50,22 @@ Sprawdź najpierw na stronie [http://travaux.ovh.com/](http://travaux.ovh.com/),
 
 #### Sprawdź dane do logowania do bazy danych <a name="config_file"></a>
 
-Zaloguj się przez [FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/) do przestrzeni dyskowej plików na Twoim hostingu i znajdź plik konfiguracyjny Twojej strony (np. w przypadku strony Wordpress plik **wp-config.php** znajduje się w folderze zawierającym Twoją stronę).
+Zaloguj się przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) do przestrzeni dyskowej plików na Twoim hostingu i znajdź plik konfiguracyjny Twojej strony (np. w przypadku strony Wordpress plik **wp-config.php** znajduje się w folderze zawierającym Twoją stronę).
 
 > [!warning]
 >
 > Wybór i konfiguracja pliku zawierającego dane do logowania do bazy danych jest ściśle związana z wybranym edytorem treści, a nie z OVHcloud.
 >
-> Zalecamy zatem skontaktowanie się z wydawcą [CMS](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/) używanym do założenia strony lub do skorzystania z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) w razie potrzeby. Nie będziemy w stanie udzielić wsparcia w tym zakresie.
+> Zalecamy zatem skontaktowanie się z wydawcą [CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/) używanym do założenia strony lub do skorzystania z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) w razie potrzeby. Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 >
 
-Następnie sprawdź zgodność **dokładna** między identyfikatorami logowania do [phpMyAdmin](../tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin) a danymi w pliku konfiguracyjnym Twojej strony.
+Następnie sprawdź zgodność **dokładna** między identyfikatorami logowania do [phpMyAdmin](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin) a danymi w pliku konfiguracyjnym Twojej strony.
 
-W razie potrzeby zmień [hasło do Twojej bazy danych](../zmiana-hasla-do-bazy-danych/).
+W razie potrzeby zmień [hasło do Twojej bazy danych](https://docs.ovh.com/pl/hosting/zmiana-hasla-do-bazy-danych/).
 
 #### Przykład dla Wordpress
 
-Jeśli Twoja strona wyświetla komunikat **"Błąd podczas logowania do bazy danych"** i nie dotyczy jej [problem](http://travaux.ovh.com/), zaloguj się przez [FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/) do hostingu, a następnie otwórz katalog zawierający Twoją stronę (domyślnie jest to folder `www`).
+Jeśli Twoja strona wyświetla komunikat **"Błąd podczas logowania do bazy danych"** i nie dotyczy jej [problem](http://travaux.ovh.com/), zaloguj się przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) do hostingu, a następnie otwórz katalog zawierający Twoją stronę (domyślnie jest to folder `www`).
 
 Jeśli jest to strona Wordpress, otwórz plik `wp-config.php`.
 
@@ -86,12 +86,12 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 - **my_database** musi odpowiadać temu, co jest zapisane w `Nazwa bazy`;
 - **my_user** musi odpowiadać temu, co jest zapisane w `Nazwa użytkownika`;
-- **my_password** odnosi się do [hasło do bazy danych](../zmiana-hasla-do-bazy-danych/);
+- **my_password** odnosi się do [hasło do bazy danych](https://docs.ovh.com/pl/hosting/zmiana-hasla-do-bazy-danych/);
 - **my_server.mysql.db** musi odpowiadać temu, co jest zapisane w `Adres serwera`.
 
 > [!primary]
 >
-> Jeśli operacje te nie pozwalają przywrócić dostępu do Twojej strony WWW, [zapisz bazę danych](../eksport-bazy-danych/), a następnie [przywróć ją w wcześniejszej dacie](../przywracanie-importowanie-bazy-danych/#1-przywroc-istniejaca-kopie-zapasowa) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> Jeśli operacje te nie pozwalają przywrócić dostępu do Twojej strony WWW, [zapisz bazę danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/), a następnie [przywróć ją w wcześniejszej dacie](https://docs.ovh.com/pl/hosting/przywracanie-importowanie-bazy-danych/#1-przywroc-istniejaca-kopie-zapasowa) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 >
 > W razie potrzeby należy skontaktować się z [wyspecjalizowanym dostawcą usług](https://partner.ovhcloud.com/pl/directory/). Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 >
@@ -125,18 +125,18 @@ Jeśli korzystasz z oferty **Performance**, sprawdź [metoda 2](#methode2).
 
 Możesz również przenieść dane na nową bazę:
 
-- Zamów w razie potrzeby [bazę danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) o wyższej wielkości, a następnie uruchom [kreacja](../tworzenie-bazy-danych/);
-- Wykonaj [eksport swoich danych](../eksport-bazy-danych/), następnie [je importować](../hosting-guide-import-bazy-danych-mysql/) w nowej bazie;
+- Zamów w razie potrzeby [bazę danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) o wyższej wielkości, a następnie uruchom [kreacja](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/);
+- Wykonaj [eksport swoich danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/), następnie [je importować](https://docs.ovh.com/pl/hosting/hosting-guide-import-bazy-danych-mysql/) w nowej bazie;
 - Wprowadź dane dostępowe nowej bazy danych do [pliku konfiguracyjnego](#config_file) swojej strony.
 
 > [!primary]
 >
-> Jeśli dysponujesz hostingiem **Performance**, możesz również [włączyć za darmo prywatny serwer SQL](../pierwsze-kroki-private-sql/#wlaczenie-prywatnego-serwera-sql-zawartego-w-ofercie-hostingu).
+> Jeśli dysponujesz hostingiem **Performance**, możesz również [włączyć za darmo prywatny serwer SQL](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/#wlaczenie-prywatnego-serwera-sql-zawartego-w-ofercie-hostingu).
 >
 
 #### Metoda 3: usuń niepotrzebne dane
 
-Po utworzeniu [kopii zapasowej bazy danych](../eksport-bazy-danych/) zaloguj się do swojego interfejsu [phpMyAdmin](../tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin), aby usunąć niepotrzebne dane za pomocą poleceń Drop, Delete i Truncate.
+Po utworzeniu [kopii zapasowej bazy danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/) zaloguj się do swojego interfejsu [phpMyAdmin](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin), aby usunąć niepotrzebne dane za pomocą poleceń Drop, Delete i Truncate.
 
 Następnie upamiętaj obliczenie rozmiaru używanego w zakładce `Bazy danych`{.action} dla wybranego hostingu: kliknij przycisk `...`{.action} a następnie na `Przelicz rozmiar`{.action}.
 
@@ -147,7 +147,7 @@ Następnie upamiętaj obliczenie rozmiaru używanego w zakładce `Bazy danych`{.
 
 #### Metoda 4: zoptymalizuj bazę danych
 
-Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](../konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-baz-danych_1)". Następnie ponownie zastosuj rozmiar w zakładce 'Bazy danych{.action} Twojego hostingu, klikając przycisk `...`{.action} odpowiedniej bazy danych.
+Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-baz-danych_1)". Następnie ponownie zastosuj rozmiar w zakładce 'Bazy danych{.action} Twojego hostingu, klikając przycisk `...`{.action} odpowiedniej bazy danych.
 
 > [!warning]
 >
@@ -160,9 +160,9 @@ Poniższy komunikat w części `Bazy danych`{.action} Twojego [Panelu klienta OV
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-W tej sytuacji możesz zwiększyć [ilość pamięci RAM](.../konfiguracja-optymalizacja-serwera-bazy-danych/#zmiana-oferty-serwera-baz-danych_1) dostępny w części `Bazy danych`{.action} [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W karcie `Informacje ogólne`{.action} kliknij przycisk `...`{.action} w rubryce `RAM`.
+W tej sytuacji możesz zwiększyć [ilość pamięci RAM](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#zmiana-oferty-serwera-baz-danych_1) dostępny w części `Bazy danych`{.action} [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W karcie `Informacje ogólne`{.action} kliknij przycisk `...`{.action} w rubryce `RAM`.
 
-Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](../konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1)".
+Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1)".
 
 > [!primary]
 >
@@ -177,9 +177,9 @@ Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcj
 > **"#1044 - Access denied for user to database"**
 >
 
-Upewnij się, że baza danych jest pusta w zakładce `Bazy danych`{.action} odpowiedniego hostingu (kliknij przycisk `...`{.action} a następnie na `Przelicz kwotę`{.action}) w celu [zapisz obecne dane](../eksport-bazy-danych/).
+Upewnij się, że baza danych jest pusta w zakładce `Bazy danych`{.action} odpowiedniego hostingu (kliknij przycisk `...`{.action} a następnie na `Przelicz kwotę`{.action}) w celu [zapisz obecne dane](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/).
 
-Możesz również zaznaczyć kratkę `Wyczyść aktualną bazę danych`{.action} tuż przed [uruchomieniem importu](../hostingu-przewodnika-importu-bazy-danych-mysql/#zaimportować-kopię-zapasową-z-panelu klienta):
+Możesz również zaznaczyć kratkę `Wyczyść aktualną bazę danych`{.action} tuż przed [uruchomieniem importu](hhttps://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/#import-twojej-kopii-zapasowej-w-panelu-klienta):
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
@@ -211,15 +211,15 @@ USE `Database-Name`;
 > **"ERROR MySQL server has gone away"**
 >
 
-Ten komunikat błędu pojawia się podczas [importu bazy danych](../przywracanie-importowanie-bazy-danych/#1-przywroc-istniejaca-kopie-zapasowa) na serwerze [Prywatny SQL](../pierwsze-kroki-private-sql/). Wiąże się to głównie z zbyt dużą ilością danych do importu lub z brakiem optymalizacji zapytań SQL w skrypcie importu.
+Ten komunikat błędu pojawia się podczas [importu bazy danych](https://docs.ovh.com/pl/hosting/przywracanie-importowanie-bazy-danych/#1-przywroc-istniejaca-kopie-zapasowa) na serwerze [Prywatny SQL](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/). Wiąże się to głównie z zbyt dużą ilością danych do importu lub z brakiem optymalizacji zapytań SQL w skrypcie importu.
 
 Aby usunąć tę anomalię, możesz:
 
-- Zwiększyć [ilość pamięci RAM](../konfiguracja-optymalizacja-serwera-bazy-danych/#monitoruj-zuzyta-pamiec-ram). W tym celu przejdź do [prywatny serwer SQL](../pierwsze-kroki-private-sql/) w sekcji `Bazy danych`{.action} twojego [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie kliknij przycisk `...`{.action} w części `RAM`, a następnie na `Zmień ilość pamięci RAM`{.action}.
+- Zwiększyć [ilość pamięci RAM](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#monitoruj-zuzyta-pamiec-ram). W tym celu przejdź do [prywatny serwer SQL](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/) w sekcji `Bazy danych`{.action} twojego [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie kliknij przycisk `...`{.action} w części `RAM`, a następnie na `Zmień ilość pamięci RAM`{.action}.
 
 - Podziel bazę danych, aby ją importować na kilka operacji zamiast jednej (w przypadku pytań dotyczących operacji, które należy przeprowadzić, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.)
 
-- [Zoptymalizuj bazę danych](../konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1), a następnie powtórzyć operacje eksportu / importu.
+- [Zoptymalizuj bazę danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1), a następnie powtórzyć operacje eksportu / importu.
 
 ### Nie można uzyskać dostępu do PhpMyAdmin
 
@@ -229,11 +229,11 @@ Aby usunąć tę anomalię, możesz:
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**
 >
 
-Ten komunikat błędu może pojawić się podczas logowania do bazy danych przez [phpMyAdmin](../tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin). Wskazuje ona, że dane identyfikacyjne są błędne.
+Ten komunikat błędu może pojawić się podczas logowania do bazy danych przez [phpMyAdmin](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin). Wskazuje ona, że dane identyfikacyjne są błędne.
 
 ![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
 
-W takiej sytuacji [sprawdź wpisane dane](../polaczenie-bazy-danych-serwer-bdd/#w-praktyce) i w razie potrzeby zmień [hasło do bazy danych](../zmiana-hasla-do-bazy-danych/).
+W takiej sytuacji [sprawdź wpisane dane](https://docs.ovh.com/pl/hosting/polaczenie-bazy-danych-serwer-bdd/#w-praktyce) i w razie potrzeby zmień [hasło do bazy danych](https://docs.ovh.com/pl/hosting/zmiana-hasla-do-bazy-danych/).
 
 #### "Too many connections"
 
@@ -243,11 +243,11 @@ W takiej sytuacji [sprawdź wpisane dane](../polaczenie-bazy-danych-serwer-bdd/#
 
 Maksymalna liczba aktywnych połączeń dla baz danych dostarczanych na hostingu ([StartSQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/)) wynosi **30**.
 
-Liczba ta wynosi **200** dla baz serwerów [SQL prywatny](../pierwsze-kroki-private-sql/) (Ten parametr można zmienić w części `Konfiguracja`{.action} twojego serwera bazy danych).
+Liczba ta wynosi **200** dla baz serwerów [SQL prywatny](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/) (Ten parametr można zmienić w części `Konfiguracja`{.action} twojego serwera bazy danych).
 
-Wiadomość ta pojawia się podczas [logowania do phpMyAdmin](../tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin), gdy ta maksymalna liczba połączeń jest przekroczona.
+Wiadomość ta pojawia się podczas [logowania do phpMyAdmin](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin), gdy ta maksymalna liczba połączeń jest przekroczona.
 
-W takiej sytuacji powinieneś [zoptymalizować bazy danych](../konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1), aby zmniejszyć liczbę aktywnych połączeń.
+W takiej sytuacji powinieneś [zoptymalizować bazy danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1), aby zmniejszyć liczbę aktywnych połączeń.
 
 > [!warning]
 >
@@ -260,7 +260,7 @@ W takiej sytuacji powinieneś [zoptymalizować bazy danych](../konfiguracja-opty
 > **"mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known"**
 >
 
-Ten komunikat błędu pojawia się podczas [logowania do phpMyAdmin](../polaczenie-bazy-danych-serwer-bdd/#w-praktyce), gdy podana nazwa serwera jest nieprawidłowa.
+Ten komunikat błędu pojawia się podczas [logowania do phpMyAdmin](https://docs.ovh.com/pl/hosting/polaczenie-bazy-danych-serwer-bdd/#w-praktyce), gdy podana nazwa serwera jest nieprawidłowa.
 
 ![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
 
@@ -270,12 +270,12 @@ Sprawdź nazwę serwera, który chcesz zarejestrować w [Panelu klienta OVHcloud
 >
 > Jeśli baza danych, do której chcesz się zalogować, wyświetla się w zakładce `Bazy danych`{.action} w części `Hosting`{.action} w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), nazwa, którą należy wpisać jest wpisana w kolumnie `Adres serwera`.
 >
-> Jeśli chcesz zalogować się do bazy danych na serwerze [Prywatny SQL](../pierwsze-kroki-private-sql/), nazwa serwera, która ma zostać wprowadzona jest w zakładce `Informacje ogólne`{.action}, w części `Informacje na temat połączenia`{.action}, `SQL`{.action} i w sekcji `Nazwa hosta`{.action}.
+> Jeśli chcesz zalogować się do bazy danych na serwerze [Prywatny SQL](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/), nazwa serwera, która ma zostać wprowadzona jest w zakładce `Informacje ogólne`{.action}, w części `Informacje na temat połączenia`{.action}, `SQL`{.action} i w sekcji `Nazwa hosta`{.action}.
 >
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Pierwsze kroki z usługą Prywatnego SQL](../pierwsze-kroki-private-sql/)
+[Pierwsze kroki z usługą Prywatnego SQL](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
