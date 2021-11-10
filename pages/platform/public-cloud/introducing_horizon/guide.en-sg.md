@@ -4,7 +4,6 @@ excerpt: Discover the main sections of the Horizon interface
 slug: horizon
 section: Horizon
 order: 1
-
 ---
 
 **Last updated 5th November 2021**
@@ -17,12 +16,12 @@ The Horizon interface, natively offered with OpenStack, has been adapted by OVHc
 
 ## Requirements
 
-- A [Public Cloud project](https://docs.ovh.com/sg/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account.
-- [Configure user access to Horizon](../configure_user_access_to_horizon/).
+- A [Public Cloud project](https://docs.ovh.com/sg/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
+- [Configuring user access to Horizon](../configure_user_access_to_horizon/)
 
 ## Instructions
 
-### Datacentre region selection
+### Data centre region selection
 
 Unlike the OVHcloud Control Panel, Horizon separates your services according to their region. You can choose the region from the menu in the top left-hand corner:
 
@@ -46,7 +45,7 @@ Horizon provides a summary of quotas, which allows you to see the used and avail
 
 - **Usage Summary**
 
-Next, is a summary of the use of your project instances. The search period can be customised to restrict this summary to a desired period.
+Next is a summary of the use of your project instances. The search period can be customised to restrict this summary to a desired period.
 
 ![public-cloud](images/usagesummary2021.png){.thumbnail}
 
@@ -99,9 +98,9 @@ Use this menu to list information about your projects.
 
 In the top right-hand corner of the Horizon interface, a user menu allows you to: 
 
-- Change interface display settings
-- Download an OpenRC file containing your user IDs
-- log out of the Horizon interface.
+- Change interface display settings.
+- Download an OpenRC file containing your user IDs.
+- Log out of the Horizon interface.
 
 ![public-cloud](images/username2021.png){.thumbnail}
 
