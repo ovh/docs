@@ -17,13 +17,13 @@ Interfejs Horizon, natywnie proponowany z OpenStack, został dostosowany przez O
 ## Wymagania początkowe
 
 - Utworzenie [Projekt Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/) na Twoim koncie OVHcloud.
-- [Tworzenie dostepu do interfejsu Horizon/](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/).
+- [Tworzenie dostepu do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/).
 
 ## W praktyce
 
 ### Wybór regionu centrum danych
 
-W przeciwieństwie do Panelu klienta OVHcloud, Horizon rozdziela Twoje usługi w zależności od regionu. Region można wybrać z menu w lewym górnym rogu:
+W przeciwieństwie do Panelu klienta OVHcloud, Horizon rozdziela Twoje usługi w zależności od regionu. Możesz wybrać region z menu w lewym górnym rogu:
 
 ![public-cloud](images/region2021.png){.thumbnail}
 
@@ -43,7 +43,7 @@ Horizon to skrót kwot, dzięki któremu będziesz mógł zobaczyć zasoby zaję
 
 ![public-cloud](images/quotas2021.png){.thumbnail}
 
-- **Podsumowanie dotyczące stosowania (*Summary*)**
+- **Podsumowanie dotyczące stosowania (*Usage Summary*)**
 
 Poniżej znajduje się podsumowanie wykorzystania instancji Twojego projektu. Okres wyszukiwania można dostosować, aby ograniczyć to podsumowanie do pożądanego czasu.
 
@@ -61,11 +61,11 @@ Podsumowanie można pobrać w formacie CSV, co pozwala na wyodrębnienie informa
 
 - **Instances**
 
-Ta strona pozwala na wyświetlanie i zarządzanie instancjami. W tym przypadku możesz na przykład utworzyć nowe instancje, zatrzymać je, uzyskać dostęp do konsoli instancji, itp..
+Ta strona pozwala na wyświetlanie i zarządzanie instancjami. W tym przypadku możesz na przykład utworzyć nowe instancje, zatrzymać je, uzyskać dostęp do konsoli instancji, etc..
 
 - **Images**
 
-Wyświetl i administruj obrazami, czyli szablonami i snapshotami przypisanymi do Twojego projektu.
+Wyświetl i administruj obrazami, czyli szablonami i *snapshots* przypisanymi do Twojego projektu.
 
 - **Key Pairs**
 
@@ -73,7 +73,7 @@ W tej sekcji możesz utworzyć listę i utworzyć klucze SSH do łączenia się 
 
 ##### **Volumes**
 
-W tym menu możesz wyświetlić i zarządzać wolumenami oraz kopiami zapasowymi i snapshotami wolumenu.
+W tym menu możesz wyświetlić i zarządzać wolumenami oraz kopiami zapasowymi i wolumenu *snapshots*.
 
 ![objętość](images/volumes2021.png){.thumbnail}
 

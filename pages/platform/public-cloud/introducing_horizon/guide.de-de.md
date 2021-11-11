@@ -20,7 +20,7 @@ Das nativ mit OpenStack angebotene Horizon-Interface wurde von OVHcloud angepass
 
 ## Voraussetzungen
 
-- Sie haben ein [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/erstellung_public_cloud_projekt/){.external} in Ihrem Kunden-Account.
+- Sie haben ein [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/erstellung_public_cloud_projekt/) in Ihrem Kunden-Account.
 - [Erstellung eines zugangs zu horizon](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
 
 ## In der praktischen Anwendung

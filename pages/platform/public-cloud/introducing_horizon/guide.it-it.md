@@ -27,7 +27,7 @@ L'interfaccia Horizon, originariamente proposta con OpenStack, è stata adattata
 
 ### Scelta della Region del datacenter
 
-Diversamente dallo Spazio Cliente OVHcloud, Horizon separa i tuoi servizi in base alla localizzazione. Puoi scegliere la Region dal menu in alto a sinistra:
+Diversamente dallo Spazio Cliente OVHcloud, Horizon separa i tuoi servizi in base alla localizzazione. Puoi scegliere la regione dal menu in alto a sinistra:
 
 ![public-cloud](images/region2021.png){.thumbnail}
 
@@ -67,7 +67,7 @@ Il riepilogo è scaricabile in formato CSV, che permette di estrarre le informaz
 
 Questa pagina permette di visualizzare e amministrare le istanze. Ad esempio, è possibile creare nuove istanze, metterle in pausa, accedere alla console dell'istanza, ecc...
 
-- **Immages**
+- **Images**
 
 Consulta e gestisci, tramite questo menu, le immagini, cioè i templates e gli snapshot associati al tuo progetto.
 
@@ -89,7 +89,7 @@ Elenca e gestisci qui le tue reti e i diversi gruppi di sicurezza.
 
 ##### **Orchestration**
 
-Questo menu ti permette di orchestrare diverse applicazioni Cloud composite.<br>
+Questo menu ti permette di orchestrare diverse applicazioni cloud composite.<br>
 Per maggiori informazioni, consulta la [documentazione OpenStack](https://docs.openstack.org/horizon/pike/user/stacks.html){.external}.
 
 ![orchestrazione](images/orchestration2021.png){.thumbnail}
@@ -102,8 +102,8 @@ Questo menu permette di visualizzare le informazioni sui tuoi progetti.
 
 In alto a destra dell'interfaccia Horizon, un menu utente ti permette in particolare di: 
 
-- Modificare i parametri di visualizzazione dell'interfaccia;
-- Scaricare un file « OpenRC » con le credenziali utente;
+- Modificare i parametri di visualizzazione dell'interfaccia.
+- Scaricare un file « OpenRC » con le credenziali utente.
 - Disconnettersi dall'interfaccia Horizon.
 
 ![public-cloud](images/username2021.png){.thumbnail}

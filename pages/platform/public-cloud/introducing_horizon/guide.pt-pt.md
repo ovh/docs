@@ -109,8 +109,8 @@ Este menu permite listar as informações sobre os seus projetos.
 No canto superior direito da interface Horizon, um menu de utilizador permite-lhe nomeadamente: 
 
 - Alterar os parâmetros de visualização da interface.
-- descarregar um ficheiro OpenRC com os seus dados de utilizador.
-- desligar-se da interface Horizon.
+- Descarregar um ficheiro « OpenRC » com os seus dados de utilizador.
+- Desligar-se da interface Horizon.
 
 ![public-cloud](images/username2021.png){.thumbnail}
 

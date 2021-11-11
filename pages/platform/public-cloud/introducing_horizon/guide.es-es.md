@@ -14,14 +14,14 @@ order: 1
 
 ## Objetivo
 
-La interfaz Horizon, que nativamente se ofrece con OpenStack, ha sido adaptada por OVHcloud para ofrecer características adicionales a las disponibles en el Panel de control OVHcloud.
+La interfaz Horizon, que nativamente se ofrece con OpenStack, ha sido adaptada por OVHcloud para ofrecer características adicionales a las disponibles en el área de control OVHcloud.
 
-**Descubra las secciones principales de la interfaz Horizon.**
+**Descubra las secciones principales de la interfaz de Horizon.**
 
 ## Requisitos
 
 - Un [proyecto Public Cloud](https://docs.ovh.com/es/public-cloud/crear_tu_primer_proyecto_de_public_cloud/) en su cuenta de OVHcloud
-- [Crea un acceso a horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/)
+- [Crea un acceso a Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/)
 
 ## Procedimiento
 
@@ -53,13 +53,13 @@ A continuación se muestra un resumen del uso de las instancias del proyecto. El
 
 ![public-cloud](images/usagesummary2021.png){.thumbnail}
 
-- **Modo de utilización (*Usage*)** 
+- **Uso (*Usage*)** 
 
 También está disponible un resumen de su uso. Este es un resumen de los diversos servicios asociados con el proyecto, como la lista de instancias.
 
 ![public-cloud](images/usage2021.png){.thumbnail}
 
-El resumen se puede descargar en formato CSV, lo que le permite extraer la información para que pueda analizarla a través de otras herramientas. Simplemente haga clic en `Download CSV Summary`{.action} CSV.
+El resumen se puede descargar en formato CSV, lo que le permite extraer la información para que pueda analizarla a través de otras herramientas. Simplemente haga clic en `Download CSV Summary`{.action}.
 
 ![public-cloud](images/csv2021.png){.thumbnail}
 
@@ -69,7 +69,7 @@ Utilice esta página para mostrar y administrar instancias. Aquí, por ejemplo, 
 
 - **Images**
 
-Utilice este menú para mostrar y administrar imágenes, es decir, plantillas e instantáneas asociadas al proyecto.
+Utilice este menú para mostrar y administrar imágenes, es decir, plantillas e instantáneas (*snapshots*) asociadas al proyecto.
 
 - **Key Pairs**
 
@@ -77,7 +77,7 @@ Aquí puede enumerar y crear las claves SSH para conectarse a sus instancias.
 
 ##### **Volumes**
 
-Utilice este menú para listar y administrar volúmenes, así como copias de seguridad de volúmenes e instantáneas.
+Utilice este menú para listar y administrar volúmenes, así como copias de seguridad de volúmenes e instantáneas (*snapshots*).
 
 ![volumen](images/volumes2021.png){.thumbnail}
 
@@ -89,8 +89,8 @@ Enumere y administre sus redes y grupos de seguridad aquí.
 
 ##### **Orchestration**
 
-Este menú le permite orquestar varias aplicaciones de nube compuesta.<br>
-Para obtener más información, [consulte la documentación de OpenStack](https://docs.openstack.org/horizon/pike/user/stacks.html){.external}.
+Este menú le permite orquestar varias aplicaciones de cloud compuesta.<br>
+Para obtener más información, consulte la [documentación de OpenStack](https://docs.openstack.org/horizon/pike/user/stacks.html){.external}.
 
 ![orquestación](images/orchestration2021.png){.thumbnail}
 
@@ -100,11 +100,11 @@ Utilice este menú para mostrar información sobre sus proyectos.
 
 ### Menú de usuario
 
-En la esquina superior derecha de la interfaz Horizon, un menú de usuario permite: 
+En la esquina superior derecha de la interfaz de Horizon, un menú de usuario permite: 
 
 - Cambiar la configuración de la pantalla de la interfaz.
 - Descargue un archivo « OpenRC » que contenga sus ID de usuario.
-- Cerrar sesión de la interfaz de Horizonte.
+- Cerrar sesión de la interfaz de Horizon.
 
 ![public-cloud](images/username2021.png){.thumbnail}
 
