@@ -1,5 +1,5 @@
 ---
-title: "Public Cloud Interface kennenlernen"
+title: "Einführung in das Public Cloud Interface"
 excerpt: "Public Cloud Interface Tour zur Entdeckung der verschiedenen Bereiche"
 slug: public-cloud-interface
 section: Erste Schritte
