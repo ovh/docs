@@ -1,7 +1,7 @@
 ---
-title: "Familiarizzarsi con l'interfaccia Public Cloud"
+title: "Scopri l’interfaccia Public Cloud"
 excerpt: "Visita guidata dell'interfaccia Public Cloud per scoprire le diverse sezioni"
-slug: interfaccia Public Cloud
+slug: interfaccia-public-cloud
 section: Per iniziare
 order: 03
 ---
