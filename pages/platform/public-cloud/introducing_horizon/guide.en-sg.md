@@ -16,7 +16,7 @@ The Horizon interface, natively offered with OpenStack, has been adapted by OVHc
 
 ## Requirements
 
-- A [Public Cloud project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
+- A [Public Cloud project](https://docs.ovh.com/sg/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
 - [Configuring user access to Horizon](../configure_user_access_to_horizon/)
 
 ## Instructions
@@ -106,6 +106,6 @@ In the top right-hand corner of the Horizon interface, a user menu allows you to
 
 ## Go further
 
-[Familiarise yourself with the Public Cloud interface](https://docs.ovh.com/ca/en/public-cloud/public-cloud-interface/)
+[Familiarise yourself with the Public Cloud interface](https://docs.ovh.com/sg/en/public-cloud/public-cloud-interface/)
  
 Join our community of users on <https://community.ovh.com/en/>.
