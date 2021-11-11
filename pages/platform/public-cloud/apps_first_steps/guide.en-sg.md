@@ -16,7 +16,7 @@ OVHcloud offers Public Cloud customers pre-installed application images for quic
 
 ## Requirements
 
-- a [Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) in your OVHcloud account.
+- A [Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) in your OVHcloud account.
 
 ## Instructions
 
@@ -30,8 +30,8 @@ Using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&f
 
 Once the instance has been installed with your chosen pre-installed application, you can retrieve your login details via the OVHcloud API only.
 
-1. Log in to the [API console here](https://ca.api.ovh.com/console/)
-2. Then go to [here](https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST)
+1. Log in to the [API console here](https://ca.api.ovh.com/console/).
+2. Then go to [here](https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST).
 
 > API call
 >> > [!api]

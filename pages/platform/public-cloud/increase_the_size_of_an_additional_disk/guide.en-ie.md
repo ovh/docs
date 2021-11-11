@@ -16,11 +16,11 @@ If you have reached the maximum storage capacity on your additional disk, you ca
 
 ## Requirements
 
-* a [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/){.external} in your your OVH account
-* an [additional disk](https://www.ovhcloud.com/en-ie/public-cloud/block-storage/){.external} attached to your instance
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
-* administrative (root) access to your instance via SSH (for Linux only)
-* administrative access to your instance via RDP (for Windows only)
+* A [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/){.external} in your your OVH account
+* An [additional disk](https://www.ovhcloud.com/en-ie/public-cloud/block-storage/){.external} attached to your instance
+* Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+* Administrative (root) access to your instance via SSH (for Linux only)
+* Administrative access to your instance via RDP (for Windows only)
 
 ## Intructions
 

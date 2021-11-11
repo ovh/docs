@@ -22,8 +22,8 @@ Plesk is an easy-to-use hosting control panel. You can install and use it on OVH
 
 ## Requirements
 
-- [an instance created via the OVHcloud Control Panel](../create_an_instance_in_your_ovh_customer_account/)
-- [root access to the instance](../become_the_root_user_and_select_a_password/)
+- [An instance created via the OVHcloud Control Panel](../create_an_instance_in_your_ovh_customer_account/)
+- [Root access to the instance](../become_the_root_user_and_select_a_password/)
 
 ## Instructions
 

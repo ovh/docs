@@ -16,7 +16,7 @@ Creating a project is the first step in deploying [Public Cloud instances](https
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 

@@ -20,9 +20,9 @@ This can be useful in cases where:
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
-* a [Public Cloud Instance](https://www.ovh.ie/public-cloud/instances/){.external} in your OVH account
-* administrative (root) access to your instance via SSH
+- Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A [Public Cloud Instance](https://www.ovh.ie/public-cloud/instances/){.external} in your OVHcloud account
+- Administrative (root) access to your instance via SSH
 
 ## Instructions
 

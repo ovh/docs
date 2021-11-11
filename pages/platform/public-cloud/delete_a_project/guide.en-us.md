@@ -33,15 +33,15 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 Open the `Project settings`{.action} under **Project Management** in the left-hand menu.
 
-![cloud menu](images/deleteproject.png){.thumbnail}
+![menu](images/deleteproject.png){.thumbnail}
 
 Click on the button `Delete project`{.action}.
 
-![compute tab](images/deleteproject1.png){.thumbnail}
+![delete project](images/deleteproject1.png){.thumbnail}
 
 A confirmation message will appear, informing you about the removal of the project's resources, with the exception of any failover IP addresses attached. Click on `Delete project`{.action} to proceed. 
 
-![compute tab](images/deleteproject2.png){.thumbnail}
+![delete project](images/deleteproject2.png){.thumbnail}
 
 When you click on the button, an email will be sent to your contact email address, asking you to either confirm or cancel the project deletion. After clicking the confirmation link, you will be redirected to a web page where you will need to enter your account password. After entering and confirming your password, your project will be deleted.
 
