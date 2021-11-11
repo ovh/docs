@@ -2,11 +2,15 @@
 title: Introduzione a Horizon
 excerpt: Scopri le principali sezioni dell'interfaccia Horizon
 slug: horizon
-section: Horizon
+section: Gestione da Horizon
 order: 1
 ---
 
-**Ultimo aggiornamento: 10/11/2021**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 11/11/2021**
 
 ## Obiettivo
 
@@ -16,7 +20,7 @@ L'interfaccia Horizon, originariamente proposta con OpenStack, è stata adattata
 
 ## Prerequisiti
 
-- Disporre di un progetto [Public Cloud](https://docs.ovh.com/it/public-cloud/crea_il_primo_progetto_public_cloud/) nel tuo account OVHcloud
+- Disporre di un [progetto Public Cloud](https://docs.ovh.com/it/public-cloud/crea_il_primo_progetto_public_cloud/) nel tuo account OVHcloud
 - [Crea un utente per accedere a Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/)
 
 ## Procedura
@@ -99,13 +103,13 @@ Questo menu permette di visualizzare le informazioni sui tuoi progetti.
 In alto a destra dell'interfaccia Horizon, un menu utente ti permette in particolare di: 
 
 - Modificare i parametri di visualizzazione dell'interfaccia;
-- Scaricare un file "OpenRC" con le credenziali utente;
+- Scaricare un file « OpenRC » con le credenziali utente;
 - Disconnettersi dall'interfaccia Horizon.
 
 ![public-cloud](images/username2021.png){.thumbnail}
 
 ## Per saperne di più
 
-[Scopri l'interfaccia Public Cloud OVHcloud](https://docs.ovh.com/it/public-cloud/public-cloud-interface/)
+[Scopri l'interfaccia Public Cloud](https://docs.ovh.com/it/public-cloud/interfaccia-public-cloud/)
  
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -6,7 +6,11 @@ section: Horizon
 order: 1
 ---
 
-Última actualización 10/11/2021
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización 11/11/2021**
 
 ## Objetivo
 
@@ -99,13 +103,13 @@ Utilice este menú para mostrar información sobre sus proyectos.
 En la esquina superior derecha de la interfaz Horizon, un menú de usuario permite: 
 
 - Cambiar la configuración de la pantalla de la interfaz.
-- Descargue un archivo OpenRC que contenga sus ID de usuario.
+- Descargue un archivo « OpenRC » que contenga sus ID de usuario.
 - Cerrar sesión de la interfaz de Horizonte.
 
 ![public-cloud](images/username2021.png){.thumbnail}
 
 ## Más información
 
-[Conocer la interfaz de Public Cloud](https://docs.ovh.com/es/public-cloud/interfaz-de-public-cloud/)
+[Conocer la interfaz de Public Cloud](https://docs.ovh.com/us/es/public-cloud/interfaz-de-public-cloud/)
  
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
