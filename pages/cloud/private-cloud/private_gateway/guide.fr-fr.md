@@ -6,7 +6,7 @@ section: Fonctionnalités OVHcloud
 hidden: true
 ---
 
-**Dernière mise à jour le 20/08/2021**
+**Dernière mise à jour le 12/11/2021**
 
 ## Objectif
 
@@ -30,28 +30,82 @@ L'interface vSphere est accessible par défaut via Internet. Pour les infrastruc
 
 ### Architecture
 
-* La private gateway est une machine virtuelle (VM) qui sera déployée sur l'infrastructure et connectée au vRack.
+* La private gateway est une machine virtuelle (VM) qui sera déployée sur l'infrastructure et connectée à un portgroup vSphere associé au vRack.
 * La private gateway n'a pas de route, donc seul l'utilisateur du même sous-réseau peut atteindre la passerelle. La connexion à partir d'un autre réseau doit être source-natté.
 
 > [!warning]
 >
-> Le certificat TLS reste le même (pcc-X-X-X-X-X.ovh.com).
+> Les certificats TLS reste les mêmes (pcc-192-0-2-1.ovh.com)
 >
 
-### Prérequis
+### Création du PortGroup
 
-* Avoir créé un Portgroup sur le vRack pour connecter la private gateway. Il doit etre sous le datacenter prévu.
-* Avoir ajouté le réseau de la private gateway dans [les autorisations par IP source](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/).
-* Avoir ajouté une entrée dans le fichier /etc/hosts ou C:\Windows\system32\drivers\etc\hosts pour faire correspondre l'adresse pcc-X-X-X-X.ovh.com avec l'adresse IP privée (outre éviter des messages d'erreurs de certificat, cela est nécessaire pour un bon fonctionnement des différentes consoles VMRC ou autre).
+Il est possible d'utiliser un Portgroup déjà existant pour connecter la private gateway. Il doit être sous le datacenter prévu.
+
+Pour en créer un spécifiquement, se référer à la documentation [Création VLAN - vRack](../creation-vlan-vxlan/#vlan-vrack).
+
+
+### Vérification du filtrage
+
+Avant de lancer l'activation vérifier que vous avez ajouté le réseau de la private gateway dans [les autorisations par IP source](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/).
+
+> [!warning]
+>
+> En cas d'oublie et/ou d'erreur et d'activation de l'[interface securisée](../interface-secure/), **l'accès vSphere ne sera plus possible.**
+>
+
+### Ajouter des entrée dans le fichier hôtes
+
+Avec l'activation de la private gateway, il faut faire correspondre le fully qualified domain name ([FQDN](https://fr.wikipedia.org/wiki/Fully_qualified_domain_name)) pcc-192-0-2-1.ovh.com avec l'adresse IP privée de la private-gateway (exemple: 172.16.0.1) pour éviter des messages d'erreurs de certificat, cela est nécessaire pour un bon fonctionnement des différentes consoles VMRC, l'accès vRops ou encore les API vSphere et NSX Manager.
+
+> [!primary]
+>
+> Dans les prochains paragraphes replacer les valeurs suivantes par celles correspondant à votre environnement :
+> 
+> * pcc-192-0-2-1
+> * 172.16.0.1
+>
+
+#### Linux
+
+Pour les machines Linux, editer le fichier **/etc/hosts** en tant que **root** et ajouter les 3 entrées suivantes :
+
+```
+172.16.0.1 pcc-192-0-2-1.ovh.com
+172.16.0.1 vrops.pcc-192-0-2-1.ovh.com
+172.16.0.1 nsx.pcc-192-0-2-1.ovh.com
+```
+
+Enregister le fichier.
+
+#### Windows
+
+Pour les machines Linux, editer le fichier **C:\Windows\system32\drivers\etc\hosts** en tant qu'**administrateur** et ajouter les 3 entrées suivantes :
+
+```
+172.16.0.1 pcc-192-0-2-1.ovh.com
+172.16.0.1 vrops.pcc-192-0-2-1.ovh.com
+172.16.0.1 nsx.pcc-192-0-2-1.ovh.com
+```
+
+Enregister le fichier.
 
 ### Activer la private gateway
 
 Avant de commencer, rassemblez les informations nécessaires suivantes :
 
-- **serviceName** : le nom du Hosted Private Cloud (syntaxe pcc-X-X-X-X)
+- **serviceName** : le nom du Hosted Private Cloud (exemple : pcc-192-0-2-1)
 - **datacenterId** : le datacenter ID
-- **ip** & **netmask** : le réseau IP pour la private gateway
+- **ip** & **netmask** : le réseau IP pour la private gateway (exemple : 172.16.0.1/24)
 - **portgroup** : le nom du PortGroup pour la connexion au vRack
+
+> [!primary]
+>
+> Dans les prochains paragraphes replacer les valeurs suivantes par celles correspondant à votre environnement :
+> 
+> * pcc-192-0-2-1
+> * 172.16.0.1
+>
 
 Ces informations seront à utiliser dans les différents appels d'API qui suivent.
 
@@ -70,7 +124,7 @@ Vous recevrez peut-être une notification de livraison de ressource (un nouveau 
 
 Avant de commencer, rassemblez les informations nécessaires suivantes :
 
-- **serviceName** : le nom du Hosted Private Cloud (syntaxe pcc-X-X-X-X)
+- **serviceName** : le nom du Hosted Private Cloud (exemple : pcc-192-0-2-1)
 - **datacenterId** : le datacenter ID
 
 > [!warning]
