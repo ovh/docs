@@ -58,7 +58,7 @@ It helps for:
 
 Read more about [Knative 1.0 features](https://knative.dev/blog/articles/knative-1.0/).
 
-In this tutorial we are going to install Knative on a freshly created OVHcloud Managed Kubernetes Service cluster and we will deploy an example app using Knative Serving component. You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=au){.external} to reinitialize your cluster before following this tutorial.
+Knative reached the 1.0 milestone. To celebrate this achievement, in this tutorial we are going to install Knative on a freshly created OVHcloud Managed Kubernetes Service cluster and we will deploy an example app using Knative Serving component. You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=au){.external} to reinitialize your cluster before following this tutorial.
 
 
 ## Before you begin
