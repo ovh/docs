@@ -14,7 +14,7 @@ order: 1
 
 ## Objetivo
 
-La interfaz Horizon, que nativamente se ofrece con OpenStack, ha sido adaptada por OVHcloud para ofrecer características adicionales a las disponibles en el área de control OVHcloud.
+La interfaz Horizon, que nativamente se ofrece con OpenStack, ha sido adaptada por OVHcloud para ofrecer características adicionales a las disponibles en el área de cliente de OVHcloud.
 
 **Descubra las secciones principales de la interfaz de Horizon.**
 
