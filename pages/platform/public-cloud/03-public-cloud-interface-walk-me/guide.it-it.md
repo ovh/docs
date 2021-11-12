@@ -53,7 +53,7 @@ Per modificare il nome del progetto, accedi alla scheda `Impostazioni`{.action}.
 
 |Sezione|Descrizione delle opzioni|
 |---|---|
-|**Compute**|Questa sezione permette di avviare le istanze, i server Cloud disponibili on demand.|
+|**Compute**|Questa sezione permette di avviare le istanze, i server Cloud disponibili *on demand*.|
 |**Storage**|In questa sezione, troverai diverse soluzioni di storage e database, ognuna corrispondente a un'esigenza e un utilizzo particolare.|
 |**Network**|In questa sezione troverai la connessione delle tue risorse Public Cloud e il loro collegamento con altri prodotti OVHcloud.|
 |**Containers and Orchestration**|Questa sezione propone diversi strumenti per automatizzare le architetture e ottenere una maggiore flessibilità.|

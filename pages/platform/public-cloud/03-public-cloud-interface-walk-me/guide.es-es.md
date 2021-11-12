@@ -21,7 +21,7 @@ Usted acaba de crear su proyecto de Public Cloud y quiere saber más sobre la in
 ## Requisitos
 
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Haber creado un [primer proyecto de Public Cloud](https://docs.ovh.com/es/public-cloud/crear_tu_primer_proyecto_de_public_cloud/).
+- Haber creado su [primer proyecto de Public Cloud](https://docs.ovh.com/es/public-cloud/crear_tu_primer_proyecto_de_public_cloud/).
 
 ## Procedimiento
 
@@ -88,7 +88,7 @@ El proyecto de Public Cloud incluye diversas herramientas de gestión, que se en
 |**Billing Control**|Las facturas de Public Cloud funcionan en base al principio de pago por uso (en inglés, *pay-as-you-go*). En [este menú](https://docs.ovh.com/es/public-cloud/informacion-sobre-el-tipo-de-facturacion-cloud/) podrá consultar su consumo actual, ver un pronóstico de la siguiente factura y, por supuesto, recuperar sus facturas anteriores.|
 |**Credit and Vouchers**|Este menú le permite consultar el consumo de un cupón, añadir uno o [añadir crédito](https://docs.ovh.com/es/public-cloud/anadir_credito_cloud/) directamente en su proyecto de Public Cloud.|
 |**Contacts and Rights**|Además de la posibilidad de cambiar el contacto técnico o el contacto de facturación de su proyecto, también podrá [añadir otros contactos](https://docs.ovh.com/es/public-cloud/cambiar_los_contactos_de_un_proyecto/) (cuenta de OVHcloud) para administrar técnicamente su proyecto. También puede añadir usuarios únicamente *read-only*.|
-|**Project settings**|Esta última herramienta le permite configurar los parámetros generales del proyecto como su nombre, su configuración como "proyecto por defecto de la cuenta", la compatibilidad HDS o incluso [eliminar su proyecto de Public Cloud.](https://docs.ovh.com/es/public-cloud/eliminar_un_proyecto/).|
+|**Project settings**|Esta última herramienta le permite configurar los parámetros generales del proyecto como su nombre, su configuración como "proyecto por defecto de la cuenta", la compatibilidad HDS o incluso [eliminar su proyecto de Public Cloud.](https://docs.ovh.com/es/public-cloud/eliminar_un_proyecto/)|
 
 ## Más información
 
