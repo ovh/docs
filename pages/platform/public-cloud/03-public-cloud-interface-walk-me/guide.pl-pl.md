@@ -16,7 +16,7 @@ order: 03
 
 Właśnie utworzyłeś Twój projekt Public Cloud i chcesz dowiedzieć się więcej o interfejsie użytkownika w Panelu klienta OVHcloud.
 
-**Poznaj główne sekcje interfejsu Public Cloud w Panelu klienta OVHcloud**
+**Poznaj główne sekcje interfejsu Public Cloud w Panelu klienta OVHcloud.**
 
 ## Wymagania początkowe
 
@@ -85,9 +85,9 @@ W projekcie Public Cloud dostępnych jest kilka narzędzi do zarządzania. Są o
 |**Users and Roles**|Umożliwia [tworzenie użytkowników](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/) i przypisywanie im roli. Użytkownicy ci umożliwiają między innymi bezpośredni dostęp do API lub do interfejsu Horizon. Możesz na przykład utworzyć użytkownika do Twoich klasycznych prac konserwacyjnych oraz użytkownika do narzędzi automatyzacji, takich jak Terraform.|
 |**Quota and Regions**|Narzędzie to pozwala na zarządzanie lokalizacjami i limitami zasobów dostępnymi dla Twojego projektu.<br><br>**Limity**: Zgodnie z określonymi kryteriami (liczba faktur już opłaconych, korzystanie z innych produktów OVHcloud) nasz system ustala kwoty (limity) dla liczby zasobów, które możesz utworzyć, aby uniknąć problemów z brakiem płatności. Domyślnie system automatycznie zwiększa limity, gdy spełnione są określone kryteria. Można jednak [ręcznie zwiększyć kwotę](https://docs.ovh.com/pl/public-cloud/zwiekszenie_limitow_public_cloud/#reczne-zwiekszanie-limitu-zasobow) za pomocą tego narzędzia.<br><br>**Lokalizacje**: Public Cloud jest dostępny w kilku lokalizacjach na świecie. Dodatkowo każda lokalizacja może zawierać kilka « regionów » (pojęcie specyficzne dla OpenStack). Na przykład dla klienta europejskiego strefa APAC (Azja-Pacyfik) jest domyślnie wyłączona. Jeśli Twoje potrzeby są spełnione, możesz aktywować nowe regiony z tego menu.|
 |**SSH Keys**|Narzędzie do zarządzania kluczami SSH.|
-|**Billing Control**|Public Cloud działający w trybie « *pay as you go* », faktury są publikowane pod koniec miesiąca. W [tym menu](https://docs.ovh.com/pl/public-cloud/analizowanie_platnosci_i_zarzadzanie_nimi/) będziesz mógł śledzić bieżące zużycie zasobów, zobaczyć prognozę kolejnej faktury i oczywiście wyświetlić Twoje poprzednie faktury.|
+|**Billing Control**|Public Cloud działający w trybie *pay as you go*, faktury są publikowane pod koniec miesiąca. W [tym menu](https://docs.ovh.com/pl/public-cloud/analizowanie_platnosci_i_zarzadzanie_nimi/) będziesz mógł śledzić bieżące zużycie zasobów, zobaczyć prognozę kolejnej faktury i oczywiście wyświetlić Twoje poprzednie faktury.|
 |**Credit and Vouchers**|W tym menu możesz sprawdzić wykorzystanie kuponu, dodać kupon lub [dodać zasilenie](https://docs.ovh.com/pl/public-cloud/korzystanie-z-vouchera/) bezpośrednio do Twojego projektu Public Cloud.|
-|**Contacts and Rights**|Oprócz możliwości zmiany kontaktu technicznego lub kontaktu księgowego Twojego projektu, będziesz mógł [dodać kolejne kontakty](https://docs.ovh.com/pl/public-cloud/zmiana_kontaktow_projektu/) (konto OVHcloud), aby zarządzać Twoim projektem. Możesz również dodawać użytkowników tylko do wglądu (« *read-only* »).|
+|**Contacts and Rights**|Oprócz możliwości zmiany kontaktu technicznego lub kontaktu księgowego Twojego projektu, będziesz mógł [dodać kolejne kontakty](https://docs.ovh.com/pl/public-cloud/zmiana_kontaktow_projektu/) (konto OVHcloud), aby zarządzać Twoim projektem. Możesz również dodawać użytkowników tylko do wglądu (*read-only*).|
 |**Project settings**|To ostatnie narzędzie pozwala na skonfigurowanie ogólnych parametrów projektu, takich jak nazwa, konfiguracja jako "domyślny projekt konta", kompatybilność HDS, czy też na [usunięcie projektu Public Cloud](https://docs.ovh.com/pl/public-cloud/usuwanie_projektu/).|
 
 ## Sprawdź również
