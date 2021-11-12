@@ -1,12 +1,11 @@
 ---
-title: Installing Knative on OVHcloud Managed Kubernetes
+title: Run Serverless containers on OVHcloud Managed Kubernetes with Knative
 slug: installing-knative
-excerpt: Find out how to install Knative on OVHcloud Managed Kubernetes
+excerpt: Find out how to install Knative on OVHcloud Managed Kubernetes and deploy your first serverless containers
 section: Tutorials
-# order: 8 TODO:
 ---
 
-**Last updated 23 September, 2021.**
+**Last updated 12 November, 2021.**
 
 <style>
  pre {
@@ -30,26 +29,36 @@ section: Tutorials
  }
 </style>
 
-Knative 
-github.com/knative
 
-[Knative](https://knative.dev) is a Kubernetes-based platform to deploy and manage modern serverless workloads.
+[Knative](https://knative.dev) is a platform to deploy and manage Serverless applications on Kubernetes.
 
-Knatives provides a set of middleware components build on top of Kubernetes, abstracting away the complex details and enabling developers to focus on what matters. Built by codifying the best practices shared by successful real-world implementations, Knative solves the "boring but difficult" parts of deploying and managing cloud native services so you don't have to.
+![Knative](images/knative.png)
+
+Knative provides a set of middleware components build on top of Kubernetes, abstracting away the complex details and enabling developers to focus on what matters. Built by codifying the best practices shared by successful real-world implementations, Knative solves the "boring but difficult" parts of deploying and managing cloud native services so you don't have to.
+
+Concretely, you will deploy Knative components and Knative will create Kubernetes components itselfs. You don't have to worry about Kubernetes components.
+
+Knative supports multiple HTTP routing layers, including Istio, Gloo, Contour, Kourier and Ambassador.
 
 Knative have two components:
 
-- serving
-- eventing
+- Serving
+- Eventing
+
+![Knative components](images/knative-inside.png)
 
 It helps for:
 
-- Scale to zero
-- Scale from zero
-- Traffic splitting, blue/green...
+- Rapid deployment of Serverless containers
+- Scale to zero (no call = no pod = no memory/CPU usage)
+- Scale from zero (traffic spike start x Pods)
+- Configuration & revision management
+- Traffic splitting between revisions, blue/green...
 - Eventing system
 
-In this tutorial we are going to install Knative on a freshly created OVHcloud Managed Kubernetes Service cluster. You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb){.external} to reinitialize your cluster before following this tutorial.
+Read more about [Knative 1.0 features](https://knative.dev/blog/articles/knative-1.0/).
+
+In this tutorial we are going to install Knative on a freshly created OVHcloud Managed Kubernetes Service cluster and we will deploy an example app using Knative Serving component. You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb){.external} to reinitialize your cluster before following this tutorial.
 
 
 ## Before you begin
@@ -61,7 +70,7 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 The Knative CLI (kn) provides a quick and easy interface for creating Knative resources, such as Knative Services and Event Sources, without the need to create or modify YAML files directly.
 
-kn also simplifies completion of otherwise complex procedures such as autoscaling and traffic splitting.
+`kn` also simplifies completion of otherwise complex procedures such as autoscaling and traffic splitting.
 
 In order to install the CLI, [follow the instructions](https://knative.dev/docs/getting-started/#install-the-knative-cli) depending on your OS.
 
@@ -73,514 +82,388 @@ kn version
 Here the result in my computer:
 
 <pre class="console"><code>$ kn version
-Version:      v0.25.0
-Build Date:   2021-08-11 05:11:11
-Git Revision: 035150ec
+Version:      v0.26.0
+Build Date:   2021-09-22T09:11:17Z
+Git Revision: 61b8a754
 Supported APIs:
 * Serving
-  - serving.knative.dev/v1 (knative-serving v0.25.0)
+  - serving.knative.dev/v1 (knative-serving v0.26.0)
 * Eventing
-  - sources.knative.dev/v1 (knative-eventing v0.25.0)
-  - eventing.knative.dev/v1 (knative-eventing v0.25.0)
+  - sources.knative.dev/v1 (knative-eventing v0.26.0)
+  - eventing.knative.dev/v1 (knative-eventing v0.26.0)
 </code></pre>
 
 
 ## Installing Knative
 
-### Installing the Knative Serving component¶
+### Installing the Knative Serving component
 
-To install the Knative Serving component:
+The first thing to do is to install the Knative Serving component:
 
-    Install the required custom resources by running the command:
+- Install the required custom resources by running the command:
 
-kubectl apply -f https://github.com/knative/serving/releases/download/v0.25.0/serving-crds.yaml
+```
+kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-crds.yaml
+```
 
-Install the core components of Knative Serving by running the command:
+Here the result in my computer:
 
-kubectl apply -f https://github.com/knative/serving/releases/download/v0.25.0/serving-core.yaml
+<pre class="console"><code>$ kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-crds.yaml
+customresourcedefinition.apiextensions.k8s.io/certificates.networking.internal.knative.dev created
+customresourcedefinition.apiextensions.k8s.io/configurations.serving.knative.dev created
+customresourcedefinition.apiextensions.k8s.io/clusterdomainclaims.networking.internal.knative.dev created
+customresourcedefinition.apiextensions.k8s.io/domainmappings.serving.knative.dev created
+customresourcedefinition.apiextensions.k8s.io/ingresses.networking.internal.knative.dev created
+customresourcedefinition.apiextensions.k8s.io/metrics.autoscaling.internal.knative.dev created
+customresourcedefinition.apiextensions.k8s.io/podautoscalers.autoscaling.internal.knative.dev created
+customresourcedefinition.apiextensions.k8s.io/revisions.serving.knative.dev created
+customresourcedefinition.apiextensions.k8s.io/routes.serving.knative.dev created
+customresourcedefinition.apiextensions.k8s.io/serverlessservices.networking.internal.knative.dev created
+customresourcedefinition.apiextensions.k8s.io/services.serving.knative.dev created
+customresourcedefinition.apiextensions.k8s.io/images.caching.internal.knative.dev created
+</code></pre>
 
-Info
+- Install the core components of Knative Serving by running the command:
 
-For information about the YAML files in Knative Serving, see Knative Serving installation files.
+```
+kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-core.yaml
+```
+
+Here the result in my computer:
+
+<pre class="console"><code>$ kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-core.yaml
+namespace/knative-serving created
+clusterrole.rbac.authorization.k8s.io/knative-serving-aggregated-addressable-resolver created
+clusterrole.rbac.authorization.k8s.io/knative-serving-addressable-resolver created
+clusterrole.rbac.authorization.k8s.io/knative-serving-namespaced-admin created
+clusterrole.rbac.authorization.k8s.io/knative-serving-namespaced-edit created
+clusterrole.rbac.authorization.k8s.io/knative-serving-namespaced-view created
+clusterrole.rbac.authorization.k8s.io/knative-serving-core created
+clusterrole.rbac.authorization.k8s.io/knative-serving-podspecable-binding created
+serviceaccount/controller created
+clusterrole.rbac.authorization.k8s.io/knative-serving-admin created
+clusterrolebinding.rbac.authorization.k8s.io/knative-serving-controller-admin created
+clusterrolebinding.rbac.authorization.k8s.io/knative-serving-controller-addressable-resolver created
+customresourcedefinition.apiextensions.k8s.io/images.caching.internal.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/certificates.networking.internal.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/configurations.serving.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/clusterdomainclaims.networking.internal.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/domainmappings.serving.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/ingresses.networking.internal.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/metrics.autoscaling.internal.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/podautoscalers.autoscaling.internal.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/revisions.serving.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/routes.serving.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/serverlessservices.networking.internal.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/services.serving.knative.dev unchanged
+image.caching.internal.knative.dev/queue-proxy created
+configmap/config-autoscaler created
+configmap/config-defaults created
+configmap/config-deployment created
+configmap/config-domain created
+configmap/config-features created
+configmap/config-gc created
+configmap/config-leader-election created
+configmap/config-logging created
+configmap/config-network created
+configmap/config-observability created
+configmap/config-tracing created
+horizontalpodautoscaler.autoscaling/activator created
+Warning: policy/v1beta1 PodDisruptionBudget is deprecated in v1.21+, unavailable in v1.25+; use policy/v1 PodDisruptionBudget
+poddisruptionbudget.policy/activator-pdb created
+deployment.apps/activator created
+service/activator-service created
+deployment.apps/autoscaler created
+service/autoscaler created
+deployment.apps/controller created
+service/controller created
+deployment.apps/domain-mapping created
+deployment.apps/domainmapping-webhook created
+service/domainmapping-webhook created
+horizontalpodautoscaler.autoscaling/webhook created
+poddisruptionbudget.policy/webhook-pdb created
+deployment.apps/webhook created
+service/webhook created
+validatingwebhookconfiguration.admissionregistration.k8s.io/config.webhook.serving.knative.dev created
+mutatingwebhookconfiguration.admissionregistration.k8s.io/webhook.serving.knative.dev created
+mutatingwebhookconfiguration.admissionregistration.k8s.io/webhook.domainmapping.serving.knative.dev created
+secret/domainmapping-webhook-certs created
+validatingwebhookconfiguration.admissionregistration.k8s.io/validation.webhook.domainmapping.serving.knative.dev created
+validatingwebhookconfiguration.admissionregistration.k8s.io/validation.webhook.serving.knative.dev created
+secret/webhook-certs created
+</code></pre>
 
 
-kubectl apply -f https://github.com/knative/net-kourier/releases/download/v0.25.0/kourier.yaml
+### Installing a networking layer (Ingress Gateway)
 
+As the networking layer, you can [install the one you want](https://knative.dev/docs/install/serving/install-serving-with-yaml/#install-a-networking-layer): Istio, Contour, Gloo or Ambassador. In this tutorial, we will install [Kourier](https://github.com/3scale-archive/kourier): a lightweight Knative Serving Ingress.
 
-### Installing a networking layer
+Install the Knative Kourier controller by running the command:
 
-The following tabs expand to show instructions for installing a networking layer. Follow the procedure for the networking layer of your choice:
-Kourier (Choose this if you are not sure)
-
-The following commands install Kourier and enable its Knative integration.
-
-    Install the Knative Kourier controller by running the command:
-
-kubectl apply -f https://github.com/knative/net-kourier/releases/download/v0.25.0/kourier.yaml
+```
+kubectl apply -f https://github.com/knative/net-kourier/releases/download/knative-v1.0.0/kourier.yaml
+```
 
 Configure Knative Serving to use Kourier by default by running the command:
 
+```
 kubectl patch configmap/config-network \
   --namespace knative-serving \
   --type merge \
   --patch '{"data":{"ingress.class":"kourier.ingress.networking.knative.dev"}}'
+```
+
+As you can see, a new `kourier-system` namespace is created with a deployment:
+
+<pre class="console"><code>$ kubectl get deploy -n kourier-system
+NAME                     READY   UP-TO-DATE   AVAILABLE   AGE
+3scale-kourier-gateway   1/1     1            1           104m
+</code></pre>
 
 Fetch the External IP address or CNAME by running the command:
 
-kubectl --namespace kourier-system get service kourier
+```
+kubectl get service kourier -n kourier-system
+```
 
-Tip
+Here the result in my computer:
+
+<pre class="console"><code>$ kubectl get service kourier -n kourier-system 
+NAME      TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)                      AGE
+kourier   LoadBalancer   10.3.65.167   135.125.83.166   80:31357/TCP,443:31782/TCP   2m19s
+</code></pre>
+
+    Warning: As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `pending` state for `EXTERNAL-IP` field. Please try again in a few minutes to get the external IP. 
 
 Save this to use in the following Configure DNS section.
 
-### Configure DNS
-
-You can configure DNS to prevent the need to run curl commands with a host header.
-
-The following tabs expand to show instructions for configuring DNS. Follow the procedure for the DNS of your choice:
-Magic DNS (sslip.io)
-
-Knative provides a Kubernetes Job called default-domain that configures Knative Serving to use sslip.io as the default DNS suffix.
-
-kubectl apply -f https://github.com/knative/serving/releases/download/v0.25.0/serving-default-domain.yaml
-
-Warning
-
-This will only work if the cluster LoadBalancer Service exposes an IPv4 address or hostname, so it will not work with IPv6 clusters or local setups like minikube unless minikube tunnel is running.
-
-In these cases, see the "Real DNS" or "Temporary DNS" tabs.
-
-
-A new `knative-serving` namespace appear on our cluster with knative serving components:
-
-$ kubectl get po -n knative-serving
-NAME                                     READY   STATUS    RESTARTS   AGE
-activator-66ccff99f8-6fmtg               1/1     Running   0          44s
-autoscaler-5dfd7d8bc6-fgvbx              1/1     Running   0          44s
-controller-79f444b898-dvrvv              1/1     Running   0          44s
-domain-mapping-586dfb4787-rtvzf          1/1     Running   0          44s
-domainmapping-webhook-65dd85b5b8-7npx2   1/1     Running   0          44s
-webhook-854f698d87-qflzw                 1/1     Running   0          43s
-
-## Deploying an application
-
-TODO:
-
-kubectl create namespace knative-apps
-
-## TODO:
-
-xx
-
-
-## Downloading Istio
-
-Istio is installed in its own `istio-system` namespace and can manage services from all other namespaces.
-
-1. Go to the [Istio release page](https://github.com/istio/istio/releases){.external} to download the installation file for your OS, or download and extract the latest release automatically (Linux or macOS):
-
-    ```
-    curl -L https://istio.io/downloadIstio | sh -
-    ```
-
-1. Move to the Istio package directory. For example, if the package is istio-1.11.2:  
-
-    ```
-    cd istio-1.11.2
-    ```
-
-    The installation directory contains:
-
-    - Sample applications in `samples/`
-    - The `istioctl` client binary in the `bin/` directory.
-
-  
-1. Add the `istioctl` client to your PATH environment variable, on a macOS or Linux system:
-
-    ```
-    export PATH=$PWD/bin:$PATH
-    ```
-
-For the rest of the tutorial, please remain on this directory.
-
-## Installing Istio
-
-For this installation, we use the `istioctl` command line tool that provides rich customization of the Istio control plane and of the sidecars for the Istio data plane. It has user input validation to help prevent installation errors and customization options to override any aspect of the configuration.
-
-In this tutorial you're going to install Istio with the default profile, [other profiles](https://istio.io/latest/docs/setup/additional-setup/config-profiles/) exists.
-
-```bash
-istioctl install
-```
-
-<pre class="console"><code>$ istioctl install
-This will install the Istio 1.11.2 default profile with ["Istio core" "Istiod" "Ingress gateways"] components into the cluster. Proceed? (y/N) y
-✔ Istio core installed
-✔ Istiod installed
-✔ Ingress gateways installed
-✔ Installation complete
-Thank you for installing Istio 1.11.  Please take a few minutes to tell us about your install/upgrade experience!  https://forms.gle/kWULBRjUv7hHci7T6
-</code></pre>
-
-
-The `istio-system` namespace is created with all Istio components.
-
-
-## Installing Addons
-
-Istio integrates several different telemetry applications. These can help you gain an understanding of the structure of your service mesh, display the topology of the mesh, and analyze the health of your mesh.
-
-Use the following instructions to deploy the `Kiali` dashboard, along with `Prometheus`, `Grafana`, and `Jaeger`.
-
-Install Kiali and the other addons and wait for them to be deployed:
-
-```
-kubectl apply -f samples/addons
-```
-
-In my example cluster I get:
-
-<pre class="console"><code>
-$ kubectl apply -f samples/addons
-serviceaccount/grafana created
-configmap/grafana created
-service/grafana created
-deployment.apps/grafana created
-configmap/istio-grafana-dashboards created
-configmap/istio-services-grafana-dashboards created
-deployment.apps/jaeger created
-service/tracing created
-service/zipkin created
-service/jaeger-collector created
-...
-service/prometheus created
-deployment.apps/prometheus created
-</code></pre>
-
 ## Verifying the installation
 
-1. List the services in `istio-system` namespace using `kubectl get services -n istio-system` and ensure that the following services are deployed: `istiod`, `istio-ingressgateway` and the addons: `grafana`, `jaeger`, `kiali`, `prometheus`, `tracing`and `zipkin`.
+A new `knative-serving` namespace have been created on your Kubernetes cluster with knative serving components, so let's check if Knative Serving components are correctly running:
 
-    In my example cluster I get:
+```
+kubectl get pods -n knative-serving
+```
 
-    <pre class="console"><code>$  kubectl get services -n istio-system
-    NAME                   TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)                                      AGE
-    grafana                ClusterIP      10.3.75.230    <none>          3000/TCP                                     2m19s
-    istio-ingressgateway   LoadBalancer   10.3.175.205   51.178.69.212   15021:31288/TCP,80:32588/TCP,443:30085/TCP   4m38s
-    istiod                 ClusterIP      10.3.31.181    <none>          15010/TCP,15012/TCP,443/TCP,15014/TCP        4m49s
-    jaeger-collector       ClusterIP      10.3.250.26    <none>          14268/TCP,14250/TCP,9411/TCP                 2m16s
-    kiali                  ClusterIP      10.3.255.49    <none>          20001/TCP,9090/TCP                           2m15s
-    prometheus             ClusterIP      10.3.9.246     <none>          9090/TCP                                     2m15s
-    tracing                ClusterIP      10.3.220.9     <none>          80/TCP,16685/TCP                             2m16s
-    zipkin                 ClusterIP      10.3.165.183   <none>          9411/TCP                                     2m16s
-    </code></pre>
+Here the result in my computer:
 
-    As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `pending` for `istio-ingressgateway` `EXTERNAL-IP` field. Please try again in a few minutes to get the external URL to call your Istio. 
+<pre class="console"><code>$ kubectl get pods -n knative-serving
+NAME                                      READY   STATUS    RESTARTS   AGE
+activator-68b7698d74-hwrj6                1/1     Running   0          33m
+autoscaler-6c8884d6ff-6g6pv               1/1     Running   0          33m
+controller-76cf997d95-5b4l4               1/1     Running   0          33m
+domain-mapping-57fdbf97b-6vdft            1/1     Running   0          33m
+domainmapping-webhook-66c5f7d596-l97d9    1/1     Running   0          33m
+net-kourier-controller-6f68cbb74f-cgqvx   1/1     Running   0          107s
+webhook-7df8fd847b-rm9q2                  1/1     Running   0          33m
+</code></pre>
 
+And we can check the Knative Serving installed version:
 
+```
+kubectl get namespace knative-serving -o 'go-template={{index .metadata.labels "serving.knative.dev/release"}}'
+```
 
-1. List the pods in `istio-system` namespace using `kubectl get pods -n istio-system` and ensure that the following pods are deployed and all containers are up and running: `istiod-*`, `istio-ingressgateway-*` and the addons: `grafana-*`, `jaeger-*`, `kiali-*`and `prometheus-*`.
+Here the result in my computer:
 
-    In my example cluster I get:
+<pre class="console"><code>$ kubectl get namespace knative-serving -o 'go-template={{index .metadata.labels "serving.knative.dev/release"}}'
+v1.0.0
+</code></pre>
 
-    <pre class="console"><code>$ kubectl get pods -n istio-system
-    NAME                                    READY   STATUS    RESTARTS   AGE
-    grafana-556f8998cd-kmn6l                1/1     Running   0          4m23s
-    istio-ingressgateway-65668fd4dd-t8t4q   1/1     Running   0          6m43s
-    istiod-5f7bb95ddf-25f27                 1/1     Running   0          6m54s
-    jaeger-5f65fdbf9b-ctjkn                 1/1     Running   0          4m20s
-    kiali-787bc487b7-h9ck9                  1/1     Running   0          4m19s
-    prometheus-9f4947649-7wszv              2/2     Running   0          4m19s
-    </code></pre>
+Knative Serving version 1.0.0 is correctly deployed in our cluster, Cool!
 
+### Configuring DNS
+
+By default, Knative Serving uses `example.com` as the default domain.
+
+For this tutorial, it is not mandatory, but you can configure DNS to prevent the need to run `curl` commands with a host header.
+
+To configure DNS for Knative, take the External IP from setting up networking, and configure it with your DNS provider as follows:
+
+Configure a wildcard A record for the domain:
+
+```
+# Here knative.my-website.com is the domain suffix for your cluster
+*.knative.my-website.com == A 135.125.83.166
+```
+
+Once your DNS provider has been configured, direct Knative to use that domain:
+
+```
+# Replace knative.example.com with your domain suffix
+kubectl patch configmap/config-domain \
+  --namespace knative-serving \
+  --type merge \
+  --patch '{"data":{"knative.my-website.com":""}}'
+```
+
+If you have questions about DNS on OVHcloud, we have a FAQ page for you that explain [how to configure a DNS zone](https://docs.ovh.com/gb/en/domains/domains-dns-faq/#how-do-i-configure-my-dns-zone).
 
 ## Deploying an application
 
-To verify that Istio is truly working in the cluster, you are going to deploy a test application. We have choosen the [Bookinfo](https://istio.io/docs/examples/bookinfo/){.external} application, as it's a multi-technology multi-instance microservices-based application that let's you verify if Istio works as intended.
+To verify that Knative is truly working in the cluster, you are going to deploy a hello-world application.
 
-
-![Bookinfo](images/installing-istio-bookinfo.png){.thumbnail}
-
-
-
-### Installing Bookinfo
-
-The [Istio-Sidecar-injector](https://istio.io/docs/setup/kubernetes/sidecar-injection/#automatic-sidecar-injection){.external}, that you installed with Istio, will automatically inject Envoy containers into your application pods. The injector assumes the application pods are running in namespaces labeled with `istio-injection=enabled`. 
-
-Let's create and label a `istio-apps` namespace:
+The first thing to do is to create a namespace in which our apps will run:
 
 ```
-kubectl create namespace istio-apps
+kubectl create namespace knative-apps
 ```
 
-Then, add the `istio-injection=enabled` label:
+Here the result in my computer:
 
-```
-kubectl label namespace istio-apps istio-injection=enabled
-```
-
-In my example cluster I get:
-
-<pre class="console"><code>$ kubectl create namespace istio-apps
-namespace/istio-apps created
-
-$ kubectl label namespace istio-apps istio-injection=enabled
-namespace/istio-apps labeled
+<pre class="console"><code>$ kubectl create namespace knative-apps
+namespace/knative-apps created
 </code></pre>
 
+Now, let's create our first Knative Service file named `service.yaml`:
 
-And now, deploy the `bookinfo` manifest into the namespace:
 
 ```
-kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml -n istio-apps
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: hello-world
+spec:
+  template:
+    spec:
+      containers:
+      - image: ovhplatform/hello
+        ports:
+            - containerPort: 80
 ```
 
-The above command installs and launches, in `istio-apps` namespace, all four microservices as illustrated in the above diagram: `details`, `productpage`, `ratings` and  the three versions of `reviews`:
+As you can see, the Knative service YAML file is simple and concise.
 
-<pre class="console"><code>$ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml -n istio-apps
-service/details created
-serviceaccount/bookinfo-details created
-deployment.apps/details-v1 created
-service/ratings created
-serviceaccount/bookinfo-ratings created
-deployment.apps/ratings-v1 created
-service/reviews created
-serviceaccount/bookinfo-reviews created
-deployment.apps/reviews-v1 created
-deployment.apps/reviews-v2 created
-deployment.apps/reviews-v3 created
-service/productpage created
-serviceaccount/bookinfo-productpage created
-deployment.apps/productpage-v1 created
-</code></pre>
-    
+We need to apply it on our cluster with the command:
 
-Now you can verify that all services and pods are correctly defined and running:
+```
+kubectl apply -f service.yaml -n knative-apps
+```
 
-1. Use `kubectl -n istio-apps get services` to verify that the `details`, `productpage`, `ratings` and `reviews` services are up un running:
+Here the result in my computer:
 
-    <pre class="console"><code>$ kubectl -n istio-apps get services
-NAME          TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
-details       ClusterIP   10.3.131.63    <none>        9080/TCP   6s
-productpage   ClusterIP   10.3.141.189   <none>        9080/TCP   4s
-ratings       ClusterIP   10.3.133.82    <none>        9080/TCP   5s
-reviews       ClusterIP   10.3.60.119    <none>        9080/TCP   5s
-    </code></pre>
-
-1. Use `kubectl -n istio-apps get pods` to verify that the `details-v1-*`, `productpage-v1-*`, `ratings-v1-*`, `reviews-v1-*`, `reviews-v2-*` and `reviews-v3-*` are up and running:
- 
-    In the case of my example cluster:
-
-    <pre class="console"><code>$ kubectl -n istio-apps get pods
-NAME                              READY   STATUS    RESTARTS   AGE
-details-v1-79f774bdb9-wnklv       2/2     Running   0          88s
-productpage-v1-6b746f74dc-4d77c   2/2     Running   0          87s
-ratings-v1-b6994bb9-s6kwq         2/2     Running   0          88s
-reviews-v1-545db77b95-rf58h       2/2     Running   0          88s
-reviews-v2-7bf8c9648f-5dt4x       2/2     Running   0          88s
-reviews-v3-84779c7bbc-f5jbw       2/2     Running   0          87s
-    </code></pre>
-
-As you can see, each pod has 2 containers, the app container and the Istio sidecar that is deployed with it.
-
-Verify everything is working correctly up to this point. Run this command to see if the app is running inside the cluster and serving HTML pages by checking for the page title in the response:
-
-<pre class="console"><code>$ kubectl exec "$(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}')" -c ratings -- curl -sS productpage:9080/productpage | grep -o "<title>.*</title>"
-<title>Simple Bookstore App</title>
-<pre class="console"><code>
-
-### Open the application to outside traffic
-
-Now that the Bookinfo services are up and running, you need to make the application accessible from outside of your Kubernetes cluster, e.g., from a browser.
-An [Istio Gateway](https://istio.io/docs/concepts/traffic-management/#gateways){.external} is used for this purpose.
-
-1. Associate this application with the Istio gateway:
-
-    <pre class="console"><code>$ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml -n istio-apps
-    gateway.networking.istio.io/bookinfo-gateway created
-    virtualservice.networking.istio.io/bookinfo created
-    </code></pre>
-
-1. Ensure that there are no issues with the configuration:
-
-    <pre class="console"><code>$ istioctl analyze -n istio-apps
-    ✔ No validation issues found when analyzing namespace: istio-apps.
-    </code></pre>
-
-
-1. Confirm the gateway has been created:
-    
-    <pre class="console"><code>$ kubectl -n istio-apps get gateway
-    NAME               AGE
-    bookinfo-gateway   53s
-    </code></pre>
-
-
-### Determining the ingress IP and port
-
-Set `GATEWAY_URL`, the URL of the `istio-gateway` service.
-
-You can get it with the following commands:
-
-<pre class="console"><code>$ export INGRESS_HOST=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
-$ export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].port}')
-$ export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
-
-$ echo $GATEWAY_URL
-135.125.84.93
+<pre class="console"><code>$ kubectl apply -f service.yaml -n knative-apps
+service.serving.knative.dev/hello-world created
 </code></pre>
 
+Under the hood, Knative created several Knative and Kubernetes components:
 
-### Confirm the app is running
+![Knative Serving components](images/knative-serving.png)
 
-To confirm that the Bookinfo application is running, run the following `curl` command:
-
-```
-curl -o /dev/null -s -w "%{http_code}\n"  http://$GATEWAY_URL/productpage
-```
-
-You should get an [HTTP status code 200](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success) indicating that your `productpage` is OK.
-
-<pre class="console"><code>$ curl -o /dev/null -s -w "%{http_code}\n"  http://$GATEWAY_URL/productpage
-200
+A deployment:
+<pre class="console"><code>$ kubectl get deployment -n knative-apps
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+hello-world-00001-deployment   1/1     1            1           8s
 </code></pre>
 
-You can also point your browser to `http://<YOUR_GATEWAY_URL>/productpage` (in my example to http://135.125.84.93:80/productpage) to view the Bookinfo web page. If you refresh the page several times, you should see different versions of reviews shown in productpage, presented in a round robin style (red stars, black stars, no stars), since we haven’t yet used Istio to control the version routing.
+A pod:
+<pre class="console"><code>$ kubectl get pod -n knative-apps
+NAME                                            READY   STATUS    RESTARTS   AGE
+hello-world-00001-deployment-797f65cdd9-h47sk   2/2     Running   0          9s
+</code></pre>
 
+Services:
+<pre class="console"><code>$ kubectl get svc -n knative-apps
+NAME                        TYPE           CLUSTER-IP    EXTERNAL-IP                                         PORT(S)                                      AGE
+hello-world                 ExternalName   <none>        kourier-internal.kourier-system.svc.cluster.local   80/TCP                                       9s
+hello-world-00001           ClusterIP      10.3.82.197   <none>                                              80/TCP                                       12s
+hello-world-00001-private   ClusterIP      10.3.0.240    <none>                                              80/TCP,9090/TCP,9091/TCP,8022/TCP,8012/TCP   12s
+</code></pre>
 
-![Bookinfo](images/installing-istio-02.jpg){.thumbnail}
+And also Knative service, route and revision:
 
+<pre class="console"><code>$ kn service list -n knative-apps
+NAME          URL                                           LATEST              AGE   CONDITIONS   READY   REASON
+hello-world   http://hello-world.knative-apps.example.com   hello-world-00001   26m   3 OK / 3     True
 
-## Visualize the traffic
+$ kn route list -n knative-apps
+NAME          URL                                           READY
+hello-world   http://hello-world.knative-apps.example.com   True
 
-As we installed Istio addons, we can access the `Kiali` dashboard. The following command will create a tunnel between the Kiali service and your machine and then open the dashboard link in your favorite browser:
+$ kn revision list -n knative-apps
+NAME                SERVICE       TRAFFIC   TAGS   GENERATION   AGE   CONDITIONS   READY   REASON
+hello-world-00001   hello-world   100%             1            26m   3 OK / 4     True
+</code></pre>
+
+As we can see, by default, 100% of the traffic go the `hello-world-00001` revision.
+
+Now, we need to retrieve the route URL:
+
+<pre class="console"><code>$ kn service describe hello-world -n knative-apps -o url
+http://hello-world.knative-apps.example.com
+</code></pre>
+
+Ok, so with this information, and with the Load Balancer external IP, we can test to call our app:
 
 ```
-istioctl dashboard kiali
+$ curl -H "Host: hello-world.knative-apps.example.com" http://135.125.83.166:80
+<!doctype html>
+
+<html>
+<head>
+<title>OVH K8S</title>
+</head>
+<style>
+.title {
+font-size: 3em;
+padding: 2em;
+text-align: center;
+}
+</style>
+<body>
+<div class="title">
+<p>Hello from Kubernetes!</p>
+<img src="./ovh.svg">
+</div>
+</body>
+</html>
 ```
 
-![Kiali](images/installing-istio-kiali.png){.thumbnail}
+## Scaling to zero
 
-Now, we will take a look to the traffic. For that, in the left navigation menu, select `Graph` and in the `Namespace` drop down, select `istio-apps`.
+And one of Knative Serving's powers is built-in automatic scaling (autoscaling). This means your Knative Service only spins up your application to perform its job, if it is needed; otherwise, it will "scale to zero" by spinning down and waiting for a new request to come in.
 
-> [!warning]
-> To see trace data, you must send requests to your service. In order to send 100 requests to the productpage service, use the following command:
-> ```
-> for i in `seq 1 100`; do curl -s -o /dev/null "http://$GATEWAY_URL/productpage"; done
-> ```
+So, if you don't send requests to your application, Pods will be terminated automatically! :-)
 
+<pre class="console"><code>$ kubectl get po -n knative-apps
+No resources found in knative-apps namespace.
+</code></pre>
 
-The Kiali dashboard shows an overview of your mesh with the relationships between the services in the Bookinfo sample application. It also provides filters to visualize the traffic flow.
-
-![Kiali Graph](images/installing-istio-kiali-graph.png){.thumbnail}
-
+Cool!
 
 ## What's next?
 
-Now you have a working Bookinfo app deployed on Istio, you can follow the suggestions of the [Bookinfo sample app page](https://istio.io/docs/examples/bookinfo/){.external} and use this sample to experiment with Istio’s features for traffic routing, fault injection, rate limiting, etc. To proceed, refer to one or more of the [Istio Examples](https://istio.io/docs/examples){.external}, depending on your interest. [Intelligent Routing](https://istio.io/docs/examples/intelligent-routing/){.external} is a good place to start for beginners.
+Now you have a working "Hello World" app deployed on Knative on an OVHcloud Managed Kubernetes cluster. Next time we will see Knative awesome features like traffic splitting, blue/green deployment and horizontal scaling.
 
+In this tutorial we only see the Serving component. If you are interested about Knative Eventing component, we recommand you the [official documentation](https://knative.dev/docs/eventing/).
 
 ## Cleanup
 
-To uninstall the Bookinfo app, the easiest way is to use the provided `cleanup.sh` script:
+If you want, you can unininstall Knative apps, serving and core components.
 
-<pre class="console"><code>$ ./samples/bookinfo/platform/kube/cleanup.sh
-namespace ? [default] istio-apps
-using NAMESPACE=istio-apps
-virtualservice.networking.istio.io "bookinfo" deleted
-gateway.networking.istio.io "bookinfo-gateway" deleted
-Application cleanup may take up to one minute
-service "details" deleted
-serviceaccount "bookinfo-details" deleted
-deployment.apps "details-v1" deleted
-service "ratings" deleted
-serviceaccount "bookinfo-ratings" deleted
-deployment.apps "ratings-v1" deleted
-service "reviews" deleted
-serviceaccount "bookinfo-reviews" deleted
-deployment.apps "reviews-v1" deleted
-deployment.apps "reviews-v2" deleted
-deployment.apps "reviews-v3" deleted
-service "productpage" deleted
-serviceaccount "bookinfo-productpage" deleted
-deployment.apps "productpage-v1" deleted
-Application cleanup successful
-</code></pre>
-
-To confirm the shutdown you can list the virtual services, destination rules, gateway and pods in the `istio-apps` namespace:
+First, delete our Hello World app:
 
 ```
-kubectl -n istio-apps get virtualservices   #-- there should be no virtual services
-kubectl -n istio-apps get destinationrules  #-- there should be no destination rules
-kubectl -n istio-apps get gateway           #-- there should be no gateway
-kubectl -n istio-apps get pods              #-- there should be no pod
+kubectl delete -f service.yaml -n knative-apps
 ```
 
-In my example cluster:
-
-<pre class="console"><code>$ kubectl -n istio-apps get virtualservices   #-- there should be no virtual services
-No resources found in istio-apps namespace.
-kubectl -n istio-apps get destinationrules  #-- there should be no destination rules
-No resources found in istio-apps namespace.
-kubectl -n istio-apps get gateway           #-- there should be no gateway
-No resources found in istio-apps namespace.
-kubectl -n istio-apps get pods              #-- there should be no pod
-No resources found in istio-apps namespace.
-</code></pre>
-
-
-Now you can uninstall Istio with `istioctl` command:
+Then, delete Knative CRDs:
 
 ```
-istioctl manifest generate | kubectl delete --ignore-not-found=true -f -
+kubectl api-resources -o name | grep knative | xargs kubectl delete crd
 ```
 
-This command deletes the RBAC permissions and all resources hierarchically under the `istio-system` namespace. It is safe to ignore errors for non-existent resources because they may have been deleted hierarchically.
-
-The istio-system namespace is not removed by default. If no longer needed, use the following command to remove it:
+Then, delete Knative resources:
 
 ```
-kubectl delete namespace istio-system
+kubectl -n knative-serving delete po,svc,daemonsets,replicasets,deployments,rc,secrets --all
+kubectl -n kourier-system delete po,svc,daemonsets,replicasets,deployments,rc,secrets --all
 ```
 
-And remove `istio-apps` namespace:
+Finally, delete namespaces:
 
 ```
-kubectl delete namespace istio-apps
+kubectl delete namespace knative-serving
+kubectl delete namespace kourier-system
+kubectl delete namespace knative-apps
 ```
-
-
-Example on my cluster:
-
-<pre class="console"><code>
-$ istioctl manifest generate | kubectl delete --ignore-not-found=true -f -
-customresourcedefinition.apiextensions.k8s.io "authorizationpolicies.security.istio.io" deleted
-customresourcedefinition.apiextensions.k8s.io "destinationrules.networking.istio.io" deleted
-customresourcedefinition.apiextensions.k8s.io "envoyfilters.networking.istio.io" deleted
-customresourcedefinition.apiextensions.k8s.io "gateways.networking.istio.io" deleted
-customresourcedefinition.apiextensions.k8s.io "istiooperators.install.istio.io" deleted
-customresourcedefinition.apiextensions.k8s.io "peerauthentications.security.istio.io" deleted
-customresourcedefinition.apiextensions.k8s.io "requestauthentications.security.istio.io" deleted
-customresourcedefinition.apiextensions.k8s.io "serviceentries.networking.istio.io" deleted
-customresourcedefinition.apiextensions.k8s.io "sidecars.networking.istio.io" deleted
-customresourcedefinition.apiextensions.k8s.io "telemetries.telemetry.istio.io" deleted
-customresourcedefinition.apiextensions.k8s.io "virtualservices.networking.istio.io" deleted
-customresourcedefinition.apiextensions.k8s.io "workloadentries.networking.istio.io" deleted
-customresourcedefinition.apiextensions.k8s.io "workloadgroups.networking.istio.io" deleted
-serviceaccount "istio-ingressgateway-service-account" deleted
-serviceaccount "istio-reader-service-account" deleted
-serviceaccount "istiod" deleted
-serviceaccount "istiod-service-account" deleted
-clusterrole.rbac.authorization.k8s.io "istio-reader-clusterrole-istio-system" deleted
-clusterrole.rbac.authorization.k8s.io "istio-reader-istio-system" deleted
-clusterrole.rbac.authorization.k8s.io "istiod-clusterrole-istio-system" deleted
-...
-service "istio-ingressgateway" deleted
-service "istiod" deleted
-
-$ kubectl delete namespace istio-system
-namespace "istio-system" deleted
-
-$ kubectl delete namespace istio-apps
-namespace "istio-apps" deleted
-</code></pre>
