@@ -81,7 +81,7 @@ Donnez un nom à votre *teaming* puis ajoutez la seconde interface au *teaming*.
 
 Afin d'éviter une perte de connexion lors d'un redémarrage, nous devons configurer l'IP de manière statique sur le *teaming*.
 
-Appuyez sur `Windows Key + R` pour ouvrir une fenêtre Run. Entrez `ncpa.cpl` et cliquez sur `OK`{.action}. Cela ouvrira votre fenêtre « Connexions réseau ».
+Appuyez sur `Windows Key` \+ `R` pour ouvrir une fenêtre Run. Entrez `ncpa.cpl` et cliquez sur `OK`{.action}. Cela ouvrira votre fenêtre « Connexions réseau ».
 
 ![Static IP](images/static_ip_1.png){.thumbnail}
 
@@ -145,7 +145,7 @@ Enfin, cliquez sur `Finish`{.action} puis sur `Start Service`{.action} dans la f
 
 Nous devons maintenant déplacer la configuration IP vers l'interface Hyper-V.
 
-Appuyez sur `Windows Key + R` pour ouvrir une fenêtre Run. Entrez `ncpa.cpl` et cliquez sur `OK`{.action}. Cela ouvrira votre fenêtre « Connexions réseau ».
+Appuyez sur `Windows Key` \+ `R` pour ouvrir une fenêtre Run. Entrez `ncpa.cpl` et cliquez sur `OK`{.action}. Cela ouvrira votre fenêtre « Connexions réseau ».
 
 ![Static IP](images/static_ip_1.png){.thumbnail}
 
