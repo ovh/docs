@@ -16,9 +16,9 @@ On the High Grade & SCALE ranges, it is not possible to operate failover IPs in 
 
 ## Requirements
 
-- an [OVHcloud dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- a [failover IP](https://www.ovhcloud.com/en-ca/bare-metal/ip/)
+- An [OVHcloud dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- A [failover IP](https://www.ovhcloud.com/en-ca/bare-metal/ip/)
 
 > [!warning]
 >
@@ -38,13 +38,13 @@ On the High Grade & SCALE ranges, it is not possible to operate failover IPs in 
 
 You need to:
 
-- Setup NIC Teaming.
+- Set up NIC Teaming.
 - Install the Hyper-V and RRAS roles.
 - Setup RRAS to act as a router.
 
 #### Identify Interfaces and Configure NIC teaming
 
-Open Windows Powershell and Execute the command `Get-NetAdapter`:
+Open Windows Powershell and execute the command `Get-NetAdapter`:
 
 ```powershell
 PS C:\Windows\system32> Get-NetAdapter
@@ -67,7 +67,7 @@ In our example:
 > Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or via the OVHcloud API.
 >
 
-Now go back to the Server Manager and go to `Local Server`{.action} and click on `Disabled`{.action} besides NIC Teaming.
+Now go back to the Server Manager and go to `Local Server`{.action} and click on `Disabled`{.action} opposite `NIC Teaming`.
 
 ![NIC Teaming](images/nic_teaming_1.png){.thumbnail}
 
@@ -79,25 +79,25 @@ Next, give your team a name, add the second interface to the team, then expand t
 
 #### Configure a static IP
 
-In order to prevent a connection loss on a reboot we will need to configure the IP statically on the Team.
+In order to prevent a connection loss on a reboot we will need to configure the IP statically on the team.
 
-Press the `Windows Key + R` to open a Run windows and enter `ncpa.cpl` and click `open`{.action}. This will open your Network Connections window.
+Press `Windows Key` \+ `R` to open a "Run" window. Enter `ncpa.cpl` and click `OK`{.action}. This will open your Network Connections control panel.
 
 ![Static IP](images/static_ip_1.png){.thumbnail}
 
-Right click on your Team that you created and click `Properties`{.action}.
+Right click on your team that you created and click `Properties`{.action}.
 
 ![Static IP](images/static_ip_2.png){.thumbnail}
 
-Next, double click on `Internet Protocol Version  4(TCP/IPv4)`{.action}.
+Next, double-click on `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Static IP](images/static_ip_3.png){.thumbnail}
 
-Select `Use the following IP address and insert your IP address`.
+Select `Use the following IP address` and insert your IP address.
 
-The Subnet Mask and Default gateway will be: 255.255.255.255 and 100.64.0.1 as seen below.
+The "Subnet mask" and "Default gateway" will be: 255.255.255.255 and 100.64.0.1 as shown below.
 
-For DNS servers, you can choose your own, for our example we are using 213.186.33.99 and 8.8.8.8.
+For DNS servers, you can choose your own. For our example we are using 213.186.33.99 and 8.8.8.8.
 
 Once done, click `OK`{.action} to close the Window, and `OK`{.action} again to close the adapter properties Window.
 
@@ -105,11 +105,11 @@ Once done, click `OK`{.action} to close the Window, and `OK`{.action} again to c
 
 #### Installing the Hyper-V and RRAS Roles
 
-Go to the Server Manager and on `Dashboard`{.action} click on `Add roles and features`{.action}
+Go to the Server Manager and open the `Dashboard`{.action}, then click on `Add roles and features`{.action}
 
 ![Install roles](images/install_roles_1.png){.thumbnail}
 
-Go through the Wizard until you reach the `Server Roles` section and select `Hyper-v` and `Remote Access`.
+Go through the Wizard until you reach the `Server Roles` section and select `Hyper-V` and `Remote Access`.
 
 ![Install roles](images/install_roles_2.png){.thumbnail}
 
@@ -117,7 +117,7 @@ Next, proceed to the `Virtual Switches` subsection of `Hyper-V` and select your 
 
 ![Install roles](images/install_roles_3.png){.thumbnail}
 
-Next, proceed to the `Role Services` subsection of `Remote Access` and select `Routing`
+Next, proceed to the `Role Services` subsection of `Remote Access` and select `Routing`.
 
 ![Install roles](images/install_roles_4.png){.thumbnail}
 
@@ -125,7 +125,7 @@ Finally, proceed to the `Confirmation` section, select `Restart the destination 
 
 #### Configure Routing and Remote Access
 
-Open the new application called `Routing and Remote Access` and right click on your server and choose `Configure and Enable Routiong and Remote Access`{.action}.
+Open the new application called `Routing and Remote Access` and right click on your server and choose `Configure and Enable Routing and Remote Access`{.action}.
 
 ![Configure RRAS](images/configure_rras_1.png){.thumbnail}
 
@@ -145,7 +145,7 @@ Finally, click on `Finish`{.action} and then `Start Service`{.action} on the pop
 
 We must now move the IP configuration to the Hyper-V interface.
 
-Press the `Windows Key + R` to open a Run windows and enter `ncpa.cpl` and click `open`{.action}. This will open your Network Connections window.
+Press `Windows Key` \+ `R` to open a "Run" window. Enter `ncpa.cpl` and click `OK`{.action}. This will open your Network Connections control panel.
 
 ![Static IP](images/static_ip_1.png){.thumbnail}
 
@@ -153,15 +153,15 @@ Right click on your vEthernet Adapter and click `Properties`{.action}.
 
 ![Static IP](images/static_ip_5.png){.thumbnail}
 
-Next, double click on `Internet Protocol Version  4(TCP/IPv4)`{.action}.
+Next, double-click on `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Static IP](images/static_ip_3.png){.thumbnail}
 
 Select `Use the following IP address` and insert your IP address.
 
-The Subnet Mask and Default gateway will be: 255.255.255.255 and 100.64.0.1 as seen below.
+The "Subnet mask" and "Default gateway" will be: 255.255.255.255 and 100.64.0.1 as shown below.
 
-For DNS servers, you can choose your own, for our example we are using 213.186.33.99 and 8.8.8.8.
+For DNS servers, you can choose your own. For our example we are using 213.186.33.99 and 8.8.8.8.
 
 ![Static IP](images/static_ip_4.png){.thumbnail}
 
@@ -175,7 +175,7 @@ Once done, click `OK`{.action} to close the Advanced Window, click `OK`{.action}
 
 > [!warning]
 >
-> This step can cause a connection loss. If it occurs, please connect using the [IPMI](../use-ipmi-dedicated-servers) and edit the configuration again,. You will find that your default gateway is reverted back to blank. You would need to re-add the gateway of 100.64.0.1.
+> This step can cause a connection loss. If it occurs, please connect using the [IPMI](../use-ipmi-dedicated-servers) and edit the configuration again. You will find that your default gateway is reverted back to blank. You would need to re-add the gateway of 100.64.0.1.
 >
 
 
@@ -183,7 +183,7 @@ Once done, click `OK`{.action} to close the Advanced Window, click `OK`{.action}
 
 Open a command prompt as administrator and run the command `route print interface`:
 
-```console
+```powershell
 C:\Users\admin>route print interface
 ===========================================================================
 Interface List
@@ -194,11 +194,11 @@ Interface List
 ===========================================================================
 ```
 
-In our example you will see that our Hyper-V Adapter has the ID of 22.<br>
-Take note of your Hyper-V adapter then run the command `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 if 22` (replace the IP and interface id with the one you received).<br>
+In our example you will see that our Hyper-V adapter has the ID of 22.<br>
+Take note of your Hyper-V adapter then run the command `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 if 22` (replace the IP and interface ID with the one you received).<br>
 You should have the result `OK!`
 
-```console
+```powershell
 PS C:\Users\admin> route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 if 22
  OK!
 ```
@@ -207,9 +207,9 @@ Your VM, once created and configured, should now have internet access.
 
 #### Configuration example of a client VM on Ubuntu
 
-File contents `/etc/netplan/ip.yaml`:
+File contents of `/etc/netplan/ip.yaml`:
 
-```bash
+```yaml
 network:
         version: 2
         ethernets:
@@ -231,22 +231,22 @@ network:
 
 #### Requirements
 
-- a public block of IP addresses in your account, with a minimum of four addresses
-- your chosen private IP address range
-- a [vRack compatible server](https://www.ovhcloud.com/en-ca/bare-metal/){.external}
-- a [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} service activated in your account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- A public block of IP addresses in your account, with a minimum of four addresses
+- Your chosen private IP address range
+- A [vRack compatible server](https://www.ovhcloud.com/en-ca/bare-metal/){.external}
+- A [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} service activated in your account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 #### Explanations
 
 You need to:
 
-- create an aggregate
-- create a bridge connected to the aggregate
+- Create an aggregate.
+- Create a bridge connected to the aggregate.
 
 #### Identify Interfaces and Configure NIC teaming
 
-Open Windows Powershell and Execute the command `Get-NetAdapter`
+Open Windows Powershell and Execute the command `Get-NetAdapter`:
 
 ```powershell
 PS C:\Windows\system32> Get-NetAdapter
@@ -301,7 +301,7 @@ You are now ready to create your VM and configure the network for it.
 
 For vRack, the first, penultimate, and last addresses in a given IP block are always reserved for the network address, network gateway, and network *broadcast* respectively. This means that the first usable address is the second address in the block, as shown below:
 
-```sh
+```console
 46.105.135.96 # Reserved: network address
 46.105.135.97 # First usable IP
 46.105.135.98
@@ -331,7 +331,7 @@ To configure the first usable IP address, you must edit the network configuratio
 
 Content of the file `/etc/netplan/vrack.yaml`:
 
-```bash
+```yaml
 network:
         version: 2
         ethernets:
