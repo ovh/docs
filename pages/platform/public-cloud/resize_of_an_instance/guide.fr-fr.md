@@ -68,24 +68,27 @@ Une fois la configuration terminée, cliquer sur `Resize`{.action}.
 
 ### Redimensionnement du disque sous Windows
 
-Attention Lors d'un redimensionnement pour une Instance Windows, la taille de la partition n'est pas automatiquement mise a jour, il faudra du coup étendre celle ci en utilisant le  **Gestionnaire de disque**  :
+Attention, lors d'un redimensionnement pour une Instance Windows, la taille de la partition n'est pas automatiquement mise a jour, il faudra donc étendre celle ci en utilisant le  **Gestionnaire de disque**  :
 
-- Lancer le gestionnaire de disque :
+- Faire un clic droit sur le menu Démarrer et lancer le gestionnaire de disque en cliquant sur `Gestion du disque`{.action} :
 
 
 ![public-cloud](images/2980.png){.thumbnail}
 
-- Faire un clic droite sur la partition principale
+- Faire un clic droit sur la partition principale, puis cliquez sur `Étendre la partition`{.action}.
 
 
-![public-cloud](images/2981.png){.thumbnail}
+![public-cloud](images/2981a.png){.thumbnail}
 
-- Étendre la partition principale :
+- Cliquez sur `Suivant`{.action} pour accéder à `l'Assitant Extension du volume`. Choisissez les ressources et cliquez sur `Suivant`{.action}. 
 
+![public-cloud](images/2978a.png){.thumbnail}
 
-![public-cloud](images/2978.png){.thumbnail}
+Cliquez ensuite sur `Terminer`{.action} pour valider votre choix.
 
-- Valider l'extension du disque :
+![public-cloud](images/wizard2021.png){.thumbnail}
+
+- Une fois que c'est fait, la nouvelle taille du disque sera affichée dans le gestionnaire de disque.
 
 
 ![public-cloud](images/2979.png){.thumbnail}
