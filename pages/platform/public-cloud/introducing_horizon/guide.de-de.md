@@ -1,7 +1,7 @@
 ---
-title: Einführung von Horizon
+title: Einführung in das Horizon Interface
 slug: horizon
-excerpt: Entdecken Sie die wichtigsten Abschnitte des Horizon-Interface
+excerpt: Erfahren Sie hier, wie Sie das Horizon Interface verwenden
 section: Horizon
 order: 1
 ---
@@ -14,20 +14,20 @@ order: 1
 
 ## Ziel
 
-Das nativ mit OpenStack angebotene Horizon-Interface wurde von OVHcloud angepasst, um zusätzliche Funktionen zu den im OVHcloud Kundencenter verfügbaren Funktionen zu bieten.
+Das mit OpenStack ausgelieferte Horizon Interface wurde von OVHcloud angepasst, um die über das OVHcloud Kundencenter verfügbaren Optionen um zusätzliche Funktionen zu erweitern.
 
-**Entdecken Sie die wichtigsten Abschnitte des Horizon-Interface.**
+**Diese Anleitung erklärt die wichtigsten Bereiche des Horizon Interface.**
 
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/erstellung_public_cloud_projekt/) in Ihrem Kunden-Account.
-- [Erstellung eines zugangs zu horizon](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
+- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
 
 ## In der praktischen Anwendung
 
-### Wahl der Region des Datacenters
+### Auswahl der Region (Rechenzentrum)
 
-Anders als im OVHcloud Kundencenter unterscheidet Horizon Ihre Dienste je nach Region. Sie können die Region im Menü oben links auswählen:
+Anders als im OVHcloud Kundencenter unterteilt Horizon Ihre Dienste nach "Region". Sie können die Region im Menü oben links auswählen.
 
 ![public-cloud](images/region2021.png){.thumbnail}
 
@@ -41,15 +41,15 @@ Dieses Menü erlaubt es Ihnen, schnell durch das Projekt und die verschiedenen z
 
 ##### **Übersicht (*Overview*)**
 
-- **Zusammenfassung der Quoten (*Limit Summary*)**
+- **Zusammenfassung der Quotas (*Limit Summary*)**
 
-Horizon bietet eine Zusammenfassung der Quotas, damit Sie die für Ihre Projekte genutzten und verfügbaren Ressourcen sehen können:
+Horizon zeigt eine Zusammenfassung der Quotas an, damit Sie die für Ihre Projekte genutzten und verfügbaren Ressourcen sehen können:
 
 ![public-cloud](images/quotas2021.png){.thumbnail}
 
 - **Nutzungsübersicht (*Usage Summary*)**
 
-Hier finden Sie eine Zusammenfassung der Verwendung der Instanzen Ihres Projekts. Der Suchzeitraum kann personalisiert werden, um die Zusammenfassung auf einen gewünschten Zeitraum zu beschränken.
+Hier finden Sie eine Zusammenfassung der Verwendung der Instanzen Ihres Projekts. Der Suchzeitraum kann angepasst werden, um die Ansicht einzuschränken.
 
 ![public-cloud](images/usagesummary2021.png){.thumbnail}
 
@@ -59,17 +59,17 @@ Eine Zusammenfassung Ihrer "Einsatzzwecke" ist ebenfalls verfügbar. Es handelt 
 
 ![public-cloud](images/usage2021.png){.thumbnail}
 
-Die Zusammenfassung kann im CSV-Format heruntergeladen werden, sodass die Informationen extrahiert werden können, um sie dann über andere Tools analysieren zu können. Klicken Sie einfach auf `Download CSV Summary`{.action}.
+Die Zusammenfassung kann im CSV-Format heruntergeladen werden, um die Informationen zu extrahieren und über andere Tools analysieren zu können. Klicken Sie einfach auf `Download CSV Summary`{.action}.
 
 ![public-cloud](images/csv2021.png){.thumbnail}
 
 - **Instances**
 
-Auf dieser Seite können Sie die Instanzen auflisten und verwalten. Hier können zum Beispiel neue Instanzen erstellt, unterbrochen, auf die Konsole der Instanz zugegriffen werden...
+Auf dieser Seite können Sie die Instanzen auflisten und verwalten. Sie können etwa neue Instanzen erstellen, Instanzen pausieren oder auf die Konsole der Instanz zugreifen.
 
 - **Images**
 
-Lesen und verwalten Sie über dieses Menü die Images, d. h. die Templates und Snapshots Ihres Projekts.
+Verwalten Sie über dieses Menü die Images, d.h. die Templates und Snapshots Ihres Projekts.
 
 - **Key Pairs**
 
@@ -77,19 +77,19 @@ Hier können Sie Ihre SSH-Schlüssel für die Verbindung zu Ihren Instanzen aufl
 
 ##### **Volumes**
 
-Dieses Menü erlaubt es Ihnen, die Volumes sowie die Backups und Volume-Snapshots aufzulisten und zu verwalten.
+Dieses Menü erlaubt es Ihnen, die Volumes sowie Backups und Volume-Snapshots aufzulisten und zu verwalten.
 
 ![Volumen](images/volumes2021.png){.thumbnail}
 
 ##### **Network**
 
-Lesen und verwalten Sie hier Ihre Netzwerke und die verschiedenen Sicherheitsgruppen. 
+Verwalten Sie hier Ihre Netzwerke und die verschiedenen Sicherheitsgruppen. 
 
 ![network](images/network2021.png){.thumbnail}
 
 ##### **Orchestration**
 
-Dieses Menü erlaubt es Ihnen, mehrere zusammengesetzte Cloud-Anwendungen zu orchestrieren.<br>
+Dieses Menü erlaubt es Ihnen, mehrere Cloud-Anwendungen zu orchestrieren.<br>
 Weitere Informationen finden Sie in der [OpenStack Dokumentation](https://docs.openstack.org/horizon/pike/user/stacks.html){.external}.
 
 ![orchestrierung](images/orchestration2021.png){.thumbnail}
@@ -100,11 +100,11 @@ In diesem Menü finden Sie die Informationen zu Ihren Projekten.
 
 ### Benutzermenü
 
-Oben rechts neben dem Horizon-Interface können Sie in einem Benutzermenü unter anderem: 
+Oben rechts im Horizon Interface haben Sie folgende Optionen im Benutzermenü: 
 
-- Die Anzeigeeinstellungen der Schnittstelle ändern.
-- Eine « OpenRC » Datei mit Ihren Benutzerkennungen herunterladen.
-- Sie vom Horizon-Interface trennen.
+- Die Einstellungen der Anzeige ändern.
+- Eine OpenRC-Datei mit Ihren Benutzerkennungen herunterladen.
+- Vom Horizon Interface abmelden.
 
 ![public-cloud](images/username2021.png){.thumbnail}
 
