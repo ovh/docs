@@ -23,7 +23,7 @@ En raison d'une activité accrue, ou simplement de nouveaux besoins, votre insta
 
 > [!success]
 >
-> Les instances de type **flex** permettent le redimensionnement vers les modèles suppérieurs ou inférieurs grâce à une taille de disque unique.
+> Les instances de type *flex* permettent le redimensionnement vers les modèles suppérieurs ou inférieurs grâce à une taille de disque unique.
 > 
 
 ## Prérequis
@@ -47,6 +47,9 @@ Cette section indique le gabarit actuel (*old flavor*) et vous permet de sélect
 
 ![public-cloud](images/flavorchoice.png){.thumbnail}
 
+##### **Détails de gabarit (*Flavor Details*)**
+
+Dans cette section s'affiche les ressources associé au gabarit choisi. 
 
 ##### **Limites de Projet (*Project Limits*)**
 
@@ -59,7 +62,7 @@ Il est aussi possible de visionner les ressources prises sur les ressources tota
 
 #### Options avancées (*Advanced Options*)
 
-Cette section permet de gérer le partitionnement du disque (*Disk Partition*) et le groupe  de serveurs (*Server Group*).
+Cette section permet de gérer le partitionnement du disque (*Disk Partition*) et le groupe  de serveur (*Server Group*).
 
 ![public-cloud](images/resize_advanced.png){.thumbnail}
 
@@ -80,7 +83,7 @@ Attention, lors d'un redimensionnement pour une Instance Windows, la taille de l
 
 ![public-cloud](images/2981a.png){.thumbnail}
 
-- Cliquez sur `Suivant`{.action} pour accéder à `l'Assitant Extension du volume`. Choisissez les ressources et cliquez sur `Suivant`{.action}. 
+- Cliquez sur `Suivant`{.action} pour accéder à `l'Assitant Extension du volume`. Choisissez les ressources du disque à etendre et cliquez sur `Suivant`{.action}. 
 
 ![public-cloud](images/2978a.png){.thumbnail}
 
@@ -93,6 +96,6 @@ Cliquez ensuite sur `Terminer`{.action} pour valider votre choix.
 
 ![public-cloud](images/2979.png){.thumbnail}
 
-Aller plus loin
+## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
