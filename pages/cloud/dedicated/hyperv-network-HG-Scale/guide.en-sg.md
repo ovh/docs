@@ -47,7 +47,7 @@ You need to:
 
 Open Windows Powershell and Execute the command `Get-NetAdapter`
 
-```
+```powershell
 PS C:\Windows\system32> Get-NetAdapter
 
 Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
@@ -247,7 +247,7 @@ You need to:
 
 Open Windows Powershell and Execute the command `Get-NetAdapter`
 
-```
+```powershell
 PS C:\Windows\system32> Get-NetAdapter
 
 Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
