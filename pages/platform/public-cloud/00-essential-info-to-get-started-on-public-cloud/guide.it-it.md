@@ -26,7 +26,7 @@ Se hai già familiarità con questi concetti, è possibile continuare la scopert
 
 - [Apri un account OVHcloud](https://docs.ovh.com/it/customer/creare-account-ovhcloud/)
 - [Crea il tuo primo progetto Public Cloud](https://docs.ovh.com/it/public-cloud/crea_il_primo_progetto_public_cloud/)
-- [Scopri l'interfaccia Public Cloud OVH](https://docs.ovh.com/gb/en/public-cloud/public-cloud-interface/)
+- [Scopri l'interfaccia Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-interface/)
 - [Crea la tua prima istanza](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/)
 - [Gestisci le quote](https://docs.ovh.com/it/public-cloud/aumenta_la_quota_del_tuo_public_cloud/)
 
@@ -77,7 +77,7 @@ Il Public Cloud OVHcloud è posizionato insieme a provider Cloud conosciuti come
 
 Le risorse Public Cloud possono essere manipolate in diversi modi. Sia che si scopra il Public Cloud che che si sia un utente avanzato, l'utilizzo resta semplice.
 
-- Per scoprire i prodotti, lo Spazio Cliente OVH ti accompagna nella creazione di risorse, scegliendo le performance del prodotto, la sua localizzazione, la personalizzazione che desideri o altre impostazioni come la sua modalità di fatturazione.
+- Per scoprire i prodotti, lo Spazio Cliente ti accompagna nella creazione di risorse, scegliendo le performance del prodotto, la sua localizzazione, la personalizzazione che desideri o altre impostazioni come la sua modalità di fatturazione.
 
 - Per automatizzare deploy e industrializzare le architetture, puoi utilizzare gli strumenti di mercato anche collegandoti direttamente alle API standard come l'API S3, le API di OpenStack o anche Kubernetes.
 

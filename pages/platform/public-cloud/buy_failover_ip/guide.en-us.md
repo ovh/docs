@@ -13,18 +13,18 @@ order: 1
 
 You may need to configure a failover IP address on your instances for different reasons. For example, you may be:
 
-- hosting several websites on your instance
-- hosting international projects
+- Hosting several websites on your instance.
+- Hosting international projects.
 
 To meet these needs, you can order a failover IP address for your Public Cloud instances.
 
 These failover IP addresses can only be migrated to instances in the same project.
 
-This guide explains how to buy a failover IP for an OVHcloud Public Cloud project.
-
+**This guide explains how to buy a failover IP for an OVHcloud Public Cloud project.**
 
 ## Requirements
-- at least one instance (please refer to our guide on [Creating an instance in the OVHcloud Control Panel](../create_an_instance_in_your_ovh_customer_account/))
+
+- A [Public Cloud instance](../public-cloud-first-steps/) in your OVHcloud account
 
 ## Instructions
 
