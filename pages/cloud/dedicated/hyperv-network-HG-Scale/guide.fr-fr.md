@@ -16,9 +16,9 @@ Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode *b
 
 ## Prérequis
 
-* Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/)
-* Disposer d'une adresse [IP fail-over](https://www.ovhcloud.com/fr-ca/bare-metal/ip/)
-* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+* Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
+* Disposer d'une adresse [IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/)
+* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 > [!warning]
 >
@@ -64,7 +64,7 @@ Dans cet exemple :
 
 > [!primary]
 >
-> Vérifiez que votre configuration est similaire. Vous disposez des informations relatives aux MAC et interfaces publiques ou privées dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou via l'API OVHcloud.
+> Vérifiez que votre configuration est similaire. Vous disposez des informations relatives aux MAC et interfaces publiques ou privées dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou via l'API OVHcloud.
 >
 
 Retournez à présent dans le Server Manager, allez dans `Local Server`{.action} et cliquez sur `Disabled`{.action} à côté de « NIC Teaming ».
@@ -175,7 +175,7 @@ Une fois toutes les adresses renseignées, cliquez sur `OK`{.action} pour fermer
 
 > [!warning]
 >
-> Cette étape peut provoquer une perte de connexion. Si cela se produit, connectez-vous en utilisant l'[IPMI](https://docs.ovh.com/ca/fr/dedicated/utilisation-ipmi-serveurs-dedies/) et modifiez de nouveau la configuration. Vous constaterez alors que votre passerelle par défaut est revenue à l'état vide. Rajoutez la gateway 100.64.0.1.
+> Cette étape peut provoquer une perte de connexion. Si cela se produit, connectez-vous en utilisant l'[IPMI](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/) et modifiez de nouveau la configuration. Vous constaterez alors que votre passerelle par défaut est revenue à l'état vide. Rajoutez la gateway 100.64.0.1.
 >
 
 #### Ajouter une route statique
@@ -232,9 +232,9 @@ network:
 
 - Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.
 - Préparer votre plage d'adresses IP privées choisies.
-- Posséder un [serveur compatible vRack](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}.
-- Activer un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Posséder un [serveur compatible vRack](https://www.ovhcloud.com/fr/bare-metal/){.external}.
+- Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 #### Explications
 
@@ -265,7 +265,7 @@ Dans cet exemple :
 
 > [!primary]
 >
-> Vérifiez que votre configuration est similaire. Vous disposez des informations relatives aux MAC et interfaces publiques ou privées dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou via l'API OVHcloud.
+> Vérifiez que votre configuration est similaire. Vous disposez des informations relatives aux MAC et interfaces publiques ou privées dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou via l'API OVHcloud.
 >
 
 Retournez à présent dans le Server Manager, allez dans `Local Server`{.action} et cliquez sur `Disabled`{.action} à côté de « NIC Teaming ».
