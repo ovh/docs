@@ -59,7 +59,7 @@ Eine Zusammenfassung Ihrer "Einsatzzwecke" ist ebenfalls verfügbar. Es handelt 
 
 ![public-cloud](images/usage2021.png){.thumbnail}
 
-Die Zusammenfassung kann im CSV-Format heruntergeladen werden, um die Informationen zu extrahieren und über andere Tools analysieren zu können. Klicken Sie einfach auf `Download CSV Summary`{.action}.
+Die Zusammenfassung kann im CSV-Format heruntergeladen werden, um die Informationen zu extrahieren und über andere Tools analysieren zu können. Klicken Sie dazu auf `Download CSV Summary`{.action}.
 
 ![public-cloud](images/csv2021.png){.thumbnail}
 
