@@ -5,7 +5,7 @@ excerpt: Find out how to install Knative on OVHcloud Managed Kubernetes and depl
 section: Tutorials
 ---
 
-**Last updated 12 November, 2021.**
+**Last updated 12th November, 2021.**
 
 <style>
  pre {
@@ -29,6 +29,7 @@ section: Tutorials
  }
 </style>
 
+## Objective
 
 [Knative](https://knative.dev) is a platform to deploy and manage Serverless applications on Kubernetes.
 
@@ -36,11 +37,11 @@ section: Tutorials
 
 Knative provides a set of middleware components build on top of Kubernetes, abstracting away the complex details and enabling developers to focus on what matters. Built by codifying the best practices shared by successful real-world implementations, Knative solves the "boring but difficult" parts of deploying and managing cloud native services so you don't have to.
 
-Concretely, you will deploy Knative components and Knative will create Kubernetes components itselfs. You don't have to worry about Kubernetes components.
+Concretely, you will deploy Knative components and Knative will create Kubernetes components itself. You don't have to worry about Kubernetes components.
 
 Knative supports multiple HTTP routing layers, including Istio, Gloo, Contour, Kourier and Ambassador.
 
-Knative have two components:
+Knative has two components:
 
 - Serving
 - Eventing
@@ -60,13 +61,13 @@ Read more about [Knative 1.0 features](https://knative.dev/blog/articles/knative
 
 Knative reached the 1.0 milestone. To celebrate this achievement, in this tutorial we are going to install Knative on a freshly created OVHcloud Managed Kubernetes Service cluster and we will deploy an example app using Knative Serving component. You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb){.external} to reinitialize your cluster before following this tutorial.
 
-
-## Before you begin
+## Requirements
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
+## Instructions
 
-## Install Knative "kn" CLI
+### Install Knative "kn" CLI
 
 The Knative CLI (kn) provides a quick and easy interface for creating Knative resources, such as Knative Services and Event Sources, without the need to create or modify YAML files directly.
 
@@ -75,11 +76,12 @@ The Knative CLI (kn) provides a quick and easy interface for creating Knative re
 In order to install the CLI, [follow the instructions](https://knative.dev/docs/getting-started/#install-the-knative-cli) depending on your OS.
 
 Then test the CLI is correctly installed in your computer:
-```
+
+```console
 kn version
 ```
 
-Here the result in my computer:
+Here is an example of the result:
 
 <pre class="console"><code>$ kn version
 Version:      v0.26.0
@@ -94,9 +96,9 @@ Supported APIs:
 </code></pre>
 
 
-## Installing Knative
+### Installing Knative
 
-### Installing the Knative Serving component
+#### Installing the Knative Serving component
 
 The first thing to do is to install the Knative Serving component:
 
@@ -106,7 +108,7 @@ The first thing to do is to install the Knative Serving component:
 kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-crds.yaml
 ```
 
-Here the result in my computer:
+Here is an example of the result:
 
 <pre class="console"><code>$ kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-crds.yaml
 customresourcedefinition.apiextensions.k8s.io/certificates.networking.internal.knative.dev created
@@ -129,7 +131,7 @@ customresourcedefinition.apiextensions.k8s.io/images.caching.internal.knative.de
 kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-core.yaml
 ```
 
-Here the result in my computer:
+Here is an example of the result:
 
 <pre class="console"><code>$ kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-core.yaml
 namespace/knative-serving created
@@ -194,7 +196,7 @@ secret/webhook-certs created
 </code></pre>
 
 
-### Installing a networking layer (Ingress Gateway)
+#### Installing a networking layer (Ingress Gateway)
 
 As the networking layer, you can [install the one you want](https://knative.dev/docs/install/serving/install-serving-with-yaml/#install-a-networking-layer): Istio, Contour, Gloo or Ambassador. In this tutorial, we will install [Kourier](https://github.com/3scale-archive/kourier): a lightweight Knative Serving Ingress.
 
@@ -226,26 +228,26 @@ Fetch the External IP address or CNAME by running the command:
 kubectl get service kourier -n kourier-system
 ```
 
-Here the result in my computer:
+Here is an example of the result:
 
 <pre class="console"><code>$ kubectl get service kourier -n kourier-system 
 NAME      TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)                      AGE
 kourier   LoadBalancer   10.3.65.167   135.125.83.166   80:31357/TCP,443:31782/TCP   2m19s
 </code></pre>
 
-    Warning: As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `pending` state for `EXTERNAL-IP` field. Please try again in a few minutes to get the external IP. 
+    Warning: As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `pending` state for the `EXTERNAL-IP` field. Please try again in a few minutes to get the external IP. 
 
 Save this to use in the following Configure DNS section.
 
-## Verifying the installation
+### Verifying the installation
 
-A new `knative-serving` namespace have been created on your Kubernetes cluster with knative serving components, so let's check if Knative Serving components are correctly running:
+A new `knative-serving` namespace has been created on your Kubernetes cluster with knative serving components, so let's check if Knative Serving components are correctly running:
 
 ```
 kubectl get pods -n knative-serving
 ```
 
-Here the result in my computer:
+Here is an example of the result:
 
 <pre class="console"><code>$ kubectl get pods -n knative-serving
 NAME                                      READY   STATUS    RESTARTS   AGE
@@ -264,7 +266,7 @@ And we can check the Knative Serving installed version:
 kubectl get namespace knative-serving -o 'go-template={{index .metadata.labels "serving.knative.dev/release"}}'
 ```
 
-Here the result in my computer:
+Here is an example of the result:
 
 <pre class="console"><code>$ kubectl get namespace knative-serving -o 'go-template={{index .metadata.labels "serving.knative.dev/release"}}'
 v1.0.0
@@ -272,11 +274,11 @@ v1.0.0
 
 Knative Serving version 1.0.0 is correctly deployed in our cluster, Cool!
 
-### Configuring DNS
+#### Configuring DNS
 
 By default, Knative Serving uses `example.com` as the default domain.
 
-For this tutorial, it is not mandatory, but you can configure DNS to prevent the need to run `curl` commands with a host header.
+For this tutorial, though it is not mandatory, you can configure DNS to prevent the need to run `curl` commands with a host header.
 
 To configure DNS for Knative, take the External IP from setting up networking, and configure it with your DNS provider as follows:
 
@@ -299,7 +301,7 @@ kubectl patch configmap/config-domain \
 
 If you have questions about DNS on OVHcloud, we have a FAQ page for you that explain [how to configure a DNS zone](https://docs.ovh.com/gb/en/domains/domains-dns-faq/#how-do-i-configure-my-dns-zone).
 
-## Deploying an application
+### Deploying an application
 
 To verify that Knative is truly working in the cluster, you are going to deploy a hello-world application.
 
@@ -309,7 +311,7 @@ The first thing to do is to create a namespace in which our apps will run:
 kubectl create namespace knative-apps
 ```
 
-Here the result in my computer:
+Here is an example of the result:
 
 <pre class="console"><code>$ kubectl create namespace knative-apps
 namespace/knative-apps created
@@ -340,7 +342,7 @@ We need to apply it on our cluster with the command:
 kubectl apply -f service.yaml -n knative-apps
 ```
 
-Here the result in my computer:
+Here is an example of the result:
 
 <pre class="console"><code>$ kubectl apply -f service.yaml -n knative-apps
 service.serving.knative.dev/hello-world created
@@ -385,7 +387,7 @@ NAME                SERVICE       TRAFFIC   TAGS   GENERATION   AGE   CONDITIONS
 hello-world-00001   hello-world   100%             1            26m   3 OK / 4     True
 </code></pre>
 
-As we can see, by default, 100% of the traffic go the `hello-world-00001` revision.
+As we can see, by default, 100% of the traffic goes to the `hello-world-00001` revision.
 
 Now, we need to retrieve the route URL:
 
@@ -393,7 +395,7 @@ Now, we need to retrieve the route URL:
 http://hello-world.knative-apps.example.com
 </code></pre>
 
-Ok, so with this information, and with the Load Balancer external IP, we can test to call our app:
+With this information, and with the Load Balancer external IP, we can test to call our app:
 
 ```
 $ curl -H "Host: hello-world.knative-apps.example.com" http://135.125.83.166:80
@@ -419,9 +421,9 @@ text-align: center;
 </html>
 ```
 
-## Scaling to zero
+### Scaling to zero
 
-And one of Knative Serving's powers is built-in automatic scaling (autoscaling). This means your Knative Service only spins up your application to perform its job, if it is needed; otherwise, it will "scale to zero" by spinning down and waiting for a new request to come in.
+One of Knative Serving's powers is built-in automatic scaling (autoscaling). This means your Knative Service only spins up your application to perform its job, if it is needed; otherwise, it will "scale to zero" by spinning down and waiting for a new request to come in.
 
 So, if you don't send requests to your application, Pods will be terminated automatically! :-)
 
@@ -431,15 +433,15 @@ No resources found in knative-apps namespace.
 
 Cool!
 
-## What's next?
+### What's next?
 
 Now you have a working "Hello World" app deployed on Knative on an OVHcloud Managed Kubernetes cluster. Next time we will see Knative awesome features like traffic splitting, blue/green deployment and horizontal scaling.
 
 In this tutorial we only see the Serving component. If you are interested about Knative Eventing component, we recommand you the [official documentation](https://knative.dev/docs/eventing/).
 
-## Cleanup
+### Cleanup
 
-If you want, you can unininstall Knative apps, serving and core components.
+If you want, you can uninstall Knative apps, serving and core components.
 
 First, delete our Hello World app:
 
@@ -467,3 +469,7 @@ kubectl delete namespace knative-serving
 kubectl delete namespace kourier-system
 kubectl delete namespace knative-apps
 ```
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
