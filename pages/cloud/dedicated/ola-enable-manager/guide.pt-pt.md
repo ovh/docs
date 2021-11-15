@@ -10,18 +10,20 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 26/03/2021**
+**Última atualização: 15/11/2021**
 
 ## Objetivo
 
-A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas para aumentar a disponibilidade do seu servidor e aumentar a eficiência das suas ligações de rede. Em apenas alguns cliques, pode agregar as suas placas de rede e tornar as suas ligações de rede redundantes. Isto significa que se uma ligação for interrompida, o tráfego é automaticamente redirecionado para outra ligação disponível.
+A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas para aumentar a disponibilidade do seu servidor e aumentar a eficiência das suas ligações de rede. Em apenas alguns cliques, pode agregar as suas placas de rede e tornar as suas ligações de rede redundantes. Isto significa que se uma ligação for interrompida, o tráfego é automaticamente redirecionado para outra ligação disponível.<br>
+A agregação baseia-se na tecnologia IEEE 802.3ad, ou Link Aggregation Control Protocol (LACP).
 
 **Neste manual, discutiremos como criar o OLA na Área de Cliente OVHcloud.**
 
 ## Requisitos
 
-- Dispor de um [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/)
+- Dispor de um [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/).
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Um sistema operativo / Hypervisor que suporta o protocolo de agregação 802.3ad (LACP).
 
 ## Instruções
 

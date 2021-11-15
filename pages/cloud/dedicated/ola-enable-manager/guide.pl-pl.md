@@ -10,11 +10,12 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 26-03-2021**
+**Ostatnia aktualizacja z dnia 15-11-2021**
 
 ## Wprowadzenie
 
-Technologia OVHcloud Link Aggregation (OLA) została zaprojektowana przez nasze zespoły w celu zwiększenia dostępności serwera i wydajności połączeń sieciowych. Za pomocą kilku kliknięć możesz łączyć karty sieciowe i redundantować połączenia sieciowe. Oznacza to, że w przypadku awarii połączenia ruch jest automatycznie przekierowywany do innego dostępnego połączenia.
+Technologia OVHcloud Link Aggregation (OLA) została zaprojektowana przez nasze zespoły w celu zwiększenia dostępności serwera i wydajności połączeń sieciowych. Za pomocą kilku kliknięć możesz łączyć karty sieciowe i redundantować połączenia sieciowe. Oznacza to, że w przypadku awarii połączenia ruch jest automatycznie przekierowywany do innego dostępnego połączenia.<br>
+Aggregacja oparta jest na technologii IEEE 802.3ad lub Link Aggregation Control Protocol (LACP).
 
 **Dowiedz się, jak skonfigurować OLA w Panelu klienta OVHcloud.**
 
@@ -22,6 +23,7 @@ Technologia OVHcloud Link Aggregation (OLA) została zaprojektowana przez nasze 
 
 - Posiadanie [serwera dedykowanego OVHcloud](https://www.ovhcloud.com/pl/bare-metal/)
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- System operacyjny / Hypervisor obsługujący protokół 802.3ad (LACP)
 
 ## W praktyce
 
