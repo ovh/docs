@@ -1,17 +1,17 @@
 ---
-title: 'Using the OVH Private Cloud plugin'
+title: 'Using the OVH Cloud plugin'
 slug: ovh-private-cloud-plugin
-excerpt: 'Find out how to use the OVH Private Cloud plugin'
+excerpt: 'Find out how to use the OVH Cloud plugin'
 section: 'OVHcloud Features'
 ---
 
-**Last updated 26th October 2018**
+**Last updated 11/15/2021**
 
 ## Objective
 
-With the OVH Private Cloud plugin, you can add dedicated resources to your infrastructure in just a few minutes.
+With the OVH Cloud plugin, you can add dedicated resources to your infrastructure in just a few minutes.
 
-**Find out how to use the OVH Private Cloud plugin.**
+**Find out how to use the OVH Cloud plugin.**
 
 
 ## Requirements
