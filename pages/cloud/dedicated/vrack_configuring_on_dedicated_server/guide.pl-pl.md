@@ -3,6 +3,7 @@ title: 'Konfiguracja kilku serwerów dedykowanych w sieci vRack'
 slug: konfiguracja-kilku-serwerow-dedykowanych-vrack
 excerpt: 'Dowiedz się, jak połączyć kilka serwerów w ramach rozwiązania vRack'
 section: vRack
+order: 01
 ---
 
 > [!primary]
