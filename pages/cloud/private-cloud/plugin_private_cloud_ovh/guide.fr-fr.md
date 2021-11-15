@@ -1,7 +1,7 @@
 ---
-title: 'Utiliser le plugin OVH Cloud'
+title: 'Utiliser le plugin OVHcloud dans vSphere'
 slug: plugin-private-cloud-ovh
-excerpt: 'Découvrez comment utiliser le plugin OVH Cloud'
+excerpt: "Découvrez comment utiliser le plugin OVHcloud afin d'ajouter des ressources dédiées à votre infrastructure"
 section: 'Fonctionnalités OVHcloud'
 ---
 
@@ -9,16 +9,14 @@ section: 'Fonctionnalités OVHcloud'
 
 ## Objectif
 
-Le plugin OVH Cloud vous permet d'ajouter, en quelques minutes, des ressources dédiées à votre infrastructure.
+Le plugin OVHcloud vous permet d'ajouter, en quelques minutes, des ressources dédiées à votre infrastructure.
 
-**Découvrez comment utiliser ce plugin.**
-
+**Découvrez comment utiliser le plugin OVHcloud.**
 
 ## Prérequis
 
-- Posséder une offre [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Posséder une offre [Hosted Private Cloud OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 - Accéder à l’interface de gestion vSphere.
-
 
 ## En pratique
 
@@ -31,11 +29,11 @@ Depuis le client web vSphere, il suffit de vous rendre dans la partie "Host and 
 
 Le menu `Add Host`{.action} est consacré aux serveurs hôtes. Il affiche leurs détails techniques et permet de les commander.
 
-![](images/Plugin01.jpg){.thumbnail}
+![OVHcloud Plugin - ajouter des hôtes](images/Plugin01.jpg){.thumbnail}
 
 La commande de datastores supplémentaires s'effectue, elle, dans le menu `Add Storage`{.action}.
 
-![](images/Plugin02.jpg){.thumbnail}
+![OVHcloud Plugin - ajouter des datastores](images/Plugin02.jpg){.thumbnail}
 
 À noter qu'il existe une alternative pour accéder à ces menus. En effet, vous pouvez aussi effectuer un clic droit sur le datacenter ou le cluster de l'infrastructure, puis choisir `OVHcloud`{.action}.
 
