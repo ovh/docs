@@ -234,7 +234,7 @@ Migration involves recreating the vRack VLAN-backed portgroups on the destinatio
 Here is a checklist of aspects to take into account:
 
 - Portgroup VLAN type
-- Security settings **Important in case promiscuous mode is needed**
+- Security settings (**Important in case promiscuous mode is needed**)
 - Teaming and Failover settings
 - Customer network resource allocation
 
