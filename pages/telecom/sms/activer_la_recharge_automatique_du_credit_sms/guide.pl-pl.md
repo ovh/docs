@@ -5,7 +5,7 @@ excerpt: Dowiedz się, jak zarządzać zasileniami SMS OVHcloud
 section: Zarządzanie ofertą
 ---
 
-**Ostatnia aktualizacja z dnia 19-05-2020**
+**Ostatnia aktualizacja z dnia 16-11-2021**
 
 ## Wprowadzenie
 
@@ -18,7 +18,7 @@ Z tego przewodnika dowiesz się, czym są zasilenia SMS, jak je automatycznie do
 
 ## W praktyce
 
-### **Zasilenia SMS**
+### Zasilenia SMS
 
 0,35 zasilenie SMS odpowiada kosztowi wysłania 1 wiadomości SMS na numer we Polska, a opłata maleje w zależności od liczby zasileń SMS, które zamierzasz kupić za jednym razem. 
 
@@ -26,8 +26,8 @@ Listę pakietów zasileń SMS znajdziesz, klikając następujący link: [https:/
 
 **Przykładowy zakup pakietu 100 zasileń SMS, po 0,0945 PLN netto każde:**
 
-Wysłanie 1 wiadomości SMS do Polska kosztuje 0,35 zasilenie. Dzięki temu pakietowi możesz wysłać 286 wiadomości SMS do Polska.
-Wysłanie 1 wiadomości SMS do Indii kosztuje 0,1 zasilenia. Dzięki temu pakietowi możesz wysłać 1000 wiadomości SMS do Indii.
+Wysłanie 1 wiadomości SMS do Polska kosztuje 0,35 zasilenie. Dzięki temu pakietowi możesz wysłać 285 wiadomości SMS do Polska.
+Wysłanie 1 wiadomości SMS do Indii kosztuje 0,4 zasilenia. Dzięki temu pakietowi możesz wysłać 250 wiadomości SMS do Indii.
 
 Koszt wysyłki wiadomości SMS (w zasileniach) w zależności od ich miejsca przeznaczenia znajdziesz, klikając następujący link: [https://www.ovh.pl/sms/cennik/](https://www.ovh.pl/sms/cennik/).
 
@@ -38,27 +38,32 @@ Koszt wysyłki wiadomości SMS (w zasileniach) w zależności od ich miejsca prz
 > [Wysyłanie wiadomości SMS z Panelu klienta OVHcloud](../wysylanie-wiadomosci-sms-z-panelu-klienta/#etap-2-tworzenie-wiadomosci-sms)
 >
 
-### **Automatyczne doładowanie**
+### Automatyczne doładowanie
 
 Aby nigdy nie zabrakło Ci zasileń na koncie, możesz aktywować automatyczne doładowanie. Po osiągnięciu minimalnego progu zasileń nowa ilość zasileń zostanie automatycznie dodana do Twojego konta SMS.
 
-Aby aktywować automatyczne doładowanie, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do karty `Telecom`{.action}, a następnie na pasku usług po lewej stronie kliknij sekcję `SMS`{.action}. Wybierz konto SMS, dla którego chcesz aktywować automatyczne doładowanie.
+> [!warning]
+>
+> Opcja automatycznego doładowania może zostać aktywowana tylko wtedy, gdy na Twoim koncie OVHcloud dostępny jest sposób płatności typu polecenie zapłaty SEPA.
+>
 
-Przejdź do menu `Opcje`{.action} (1), a następnie `Automatyczne doładowanie`{.action} (2).
+Aby aktywować automatyczne doładowanie, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do karty `Telefonia`{.action}, a następnie na pasku usług po lewej stronie kliknij sekcję `SMS`{.action}. Wybierz konto SMS, dla którego chcesz aktywować automatyczne doładowanie.
 
-![zasilenie sms](images/smscredit1.png){.thumbnail}
+Przejdź do menu `Opcje`{.action} (1), a następnie `Automatyczne ładowanie`{.action} (2).
 
-W rubryce „Zarządzaj opcjami” kliknij polecenie `Modyfikuj`{.action}.
+![zasilenie sms](images/smscredit01.png){.thumbnail}
 
-![zasilenie sms](images/smscredit2.png){.thumbnail}
+W rubryce „Zarządzaj opcjami” kliknij polecenie `Zmień`{.action}.
+
+![zasilenie sms](images/smscredit02.png){.thumbnail}
 
 Wypełnij wymagane pola:
 
-* Próg minimalny (1): po osiągnięciu tego progu uruchomi się automatyczne doładowanie.
-* Ilość do doładowania (2): określa liczbę zasileń, które mają zostać dodane do konta SMS. Można wybrać 100, 200, 250, 500 lub 1000.
-* Kliknij przycisk `Zatwierdź`{.action} (3), aby zastosować konfigurację.
+* Minimalny próg (1): po osiągnięciu tego progu uruchomi się automatyczne doładowanie.
+* Ilość kredytów do doładowania (2): określa liczbę zasileń, które mają zostać dodane do konta SMS. Można wybrać 100, 200, 250, 500, 1000, 5000 lub 10000.
+* Kliknij przycisk `Zatwierdź`{.action}, aby zastosować konfigurację.
 
-![zasilenie sms](images/smscredit3.png){.thumbnail}
+![zasilenie sms](images/smscredit03.png){.thumbnail}
 
 ### **Przenoszenie zasileń**
 
@@ -86,4 +91,5 @@ Kliknij polecenie `Wykonaj`{.action}, aby zatwierdzić przeniesienie. To działa
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/)
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+
