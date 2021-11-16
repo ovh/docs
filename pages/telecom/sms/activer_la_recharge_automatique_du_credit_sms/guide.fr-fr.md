@@ -6,7 +6,7 @@ legacy_guide_number: '16254520'
 section: 'Gérer mon offre'
 ---
 
-**Dernière mise à jour le 16/11/2020**
+**Dernière mise à jour le 16/11/2021**
 
 ## Objectif
 
