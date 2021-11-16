@@ -65,7 +65,7 @@ Wypełnij wymagane pola:
 
 ![zasilenie sms](images/smscredit03.png){.thumbnail}
 
-### **Przenoszenie zasileń**
+### Przenoszenie zasileń
 
 > [!primary]
 >
