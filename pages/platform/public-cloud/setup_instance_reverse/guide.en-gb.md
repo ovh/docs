@@ -27,17 +27,17 @@ Configuring the reverse DNS resolution for an instance is especially useful when
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), switch to the `Bare Metal Cloud`{.action} section and click on `IP`{.action} in the left-hand menu.
 
-In the table on this page, your eligible services will be listed. You can filter for your project ID using the drop-down menu under **Services**.
+In the table on this page, your eligible services will be listed. You can filter for your Public Cloud project ID using the drop-down menu under **Services**.
 
 ![Reverse DNS](images/reversecp01.png){.thumbnail}
 
 Click on `...`{.action} in the row of the IP address concerned and select `Modify the reverse`{.action}.
 
-(You can also edit the reverse path directly via the icon in the "**Reverse DNS**" column of the table.)
-
 ![Reverse DNS](images/reversecp02.png){.thumbnail}
 
 In the new window, enter your reverse path and click on `Confirm`{.action}.
+
+You can also edit the reverse path directly via the icon in the **Reverse DNS** column of the table.
 
 > [!primary]
 >

@@ -38,9 +38,9 @@ The following page will then open:
 
 Enter the following information:
 
-* The number of failover IPs you want to order (IP blocks are not currently available).
-* The instance on which the IPs will be routed.
-* The location of the IPs.
+- The number of failover IPs you want to order (IP blocks are not currently available)
+- The instance on which the IPs will be routed
+- The location of the IPs
 
 You will also need to accept the General Terms and Conditions of Service.
 
@@ -71,7 +71,7 @@ A purchase order is then generated. Please allow pop-ups in order to be redirect
 
 ![failoverIP](images/buyfailoverip3.png){.thumbnail}
 
-You will also find the purchase order in the OVHcloud Control Panel by going to `Dashbaard`{.action}, then `View my orders`{.action}.
+You will also find the purchase order in the OVHcloud Control Panel by going to the `Dashboard`{.action}, then `View my orders`{.action}.
 
 ![failoverIP](images/buyfailoverip4_2020.png){.thumbnail}
 

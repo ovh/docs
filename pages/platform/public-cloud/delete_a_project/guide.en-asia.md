@@ -11,7 +11,7 @@ order: 1
 
 ## Objective
 
-When you no longer need your [Public Cloud](https://www.ovhcloud.com/asia/public-cloud/) project, you can delete it directly from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+When you no longer need your [Public Cloud](https://www.ovhcloud.com/asia/public-cloud/) project, you can delete it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
 When you delete your Public Cloud project, a final invoice is issued for the outstanding amount.
 
