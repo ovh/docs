@@ -93,4 +93,4 @@ If you would like to increase the quotas for Data Processing you will need to in
 Please send us your questions, feedback and suggestions to improve the service: 
 
 - On OVHcloud community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/)
-- On our public [Gitter](https://gitter.im/ovh/data-processing)
+- On our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
