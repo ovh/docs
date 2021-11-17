@@ -40,7 +40,7 @@ La case `Enable High Availability` implique qu'une seconde machine virtuelle Edg
 ![Ajout d'un nom et d'une description](images/add_edge_service_name_desc.png)
 
 
-Vous pouvez ensuite renseigner les accès de votre Edge. Par défaut, l'utilisateur "admin" est renseigné. Le mot de passe doit respecter les pré-requis de complexité standards (majuscules, minuscules, chiffres, caractères spéciaux, etc ...).
+Vous pouvez ensuite renseigner les accès de votre Edge. Par défaut, l'utilisateur "User" est renseigné. Le mot de passe doit respecter les pré-requis de complexité standards (majuscules, minuscules, chiffres, caractères spéciaux, etc ...).
 
 
 La case `Enable SSH access` vous permet d'autoriser ou non les connexions en SSH directement sur la Edge (via le port 22).
