@@ -18,7 +18,7 @@ Une *NSX Edge Services Gateway* est une appliance VMware permettant d'accèder �
 ## Prérequis
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion 
-- un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans le [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans le [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## En pratique
 
@@ -41,7 +41,7 @@ La case `Enable High Availability` implique qu'une seconde machine virtuelle Edg
 ![Ajout d'un nom et d'une description](images/add_edge_service_name_desc.png)
 
 
-Vous pouvez ensuite renseigner les accès de votre Edge. Par défaut, l'utilisateur "admin" est renseigné. Le mot de passe doit respecter les pré-requis de complexité standards (majuscules, minuscules, chiffres, caractères spéciaux, etc ...).
+Vous pouvez ensuite renseigner les accès de votre Edge. Par défaut, l'utilisateur "User" est renseigné. Le mot de passe doit respecter les pré-requis de complexité standards (majuscules, minuscules, chiffres, caractères spéciaux, etc ...).
 
 
 La case `Enable SSH access` vous permet d'autoriser ou non les connexions en SSH directement sur la Edge (via le port 22).
