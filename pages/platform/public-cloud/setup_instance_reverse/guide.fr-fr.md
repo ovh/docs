@@ -1,5 +1,5 @@
 ---
-title: Configurer le reverse d'une instance Public Cloud
+title: "Configurer le reverse DNS d'une instance Public Cloud"
 excerpt: Découvrez comment mettre en place la résolution reverse DNS
 slug: configurer-le-reverse-dns-dune-instance
 legacy_guide_number: 1940
@@ -11,23 +11,23 @@ order: 7
 
 ## Objectif
 
-La résolution DNS inverse désigne généralement le mappage d'un nom de domaine (ou nom d'hôte) à une adresse IP. Une requête DNS de l’adresse IP associée recevra alors ce nom de domaine en réponse.
+La résolution reverse DNS désigne généralement le mappage d'un nom de domaine (ou nom d'hôte) à une adresse IP. Une requête DNS sur l’adresse IP associée recevra alors ce nom de domaine en réponse.
 
-Configurer la résolution DNS inverse d’une instance est particulièrement utile pour l’envoi d’e-mails. La validation d'un serveur de messagerie par des systèmes de protection contre le spam s'améliorera si la recherche DNS de l'adresse IP se résout correctement.
+Configurer la résolution reverse DNS d’une instance est particulièrement utile pour l’envoi d’e-mails. La validation d'un serveur de messagerie par des systèmes de protection contre le spam s'améliorera si la recherche DNS de l'adresse IP se résout correctement.
 
-**Ce guide explique comment configurer le reverse DNS pour la ou les adresses IP de votre instance Public Cloud.**
+**Découvrez comment configurer le reverse DNS pour la ou les adresses IP de votre instance Public Cloud.**
 
 ## Prérequis
 
-- Avoir une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
+- Avoir une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
 - Un nom de domaine avec son champ `A` pointant vers l'instance
-- Être connecté à votre espace client [OVHcloud .](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
-## Instructions
+## En pratique
 
-Connectez-vous à votre espace client [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action} et cliquez sur `IP`{.action} dans le menu de gauche.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action} et cliquez sur `IP`{.action} dans le menu de gauche.
 
-Le tableau de cette page répertorie vos services éligibles. Vous pouvez filtrer l'ID de votre projet Public Cloud à l'aide du menu déroulant **Services**.
+Le tableau de cette page répertorie vos services éligibles. Vous pouvez filtrer l'ID de votre projet Public Cloud à l'aide du menu déroulant **Service**.
 
 ![Reverse DNS](images/reversecp01.png){.thumbnail}
 
@@ -37,7 +37,7 @@ Cliquez sur `...`{.action} dans la ligne de l'adresse IP concernée et sélectio
 
 Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Confirmer`{.action}.
 
-Vous pouvez également éditer le reverse directement via l'icône de la colonne **Reverse DNS** du tableau.
+Vous pouvez également éditer le reverse directement via l'icône de la colonne **Reverse** du tableau.
 
 > [!primary]
 >
@@ -46,6 +46,6 @@ Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` es
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Premiers pas avec les instances Public Cloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/)
+[Créer une première instance Public Cloud et s’y connecter](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
