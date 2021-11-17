@@ -11,7 +11,7 @@ order: 02
 
 ## Objectif
 
-Une *edge gataway NSX* est une appliance VMware permettant d'accèder à tous les services NSX Edge tels que le pare-feu, NAT, DHCP, VPN, l'équilibrage de charge.
+Une *NSX Edge Services Gateway* est une appliance VMware permettant d'accèder à des services tels que le pare-feu, NAT, DHCP, VPN, l'équilibrage de charge et la haute disponibilité.
 
 **Ce guide explique comment procéder au déploiement de cette appliance**
 
