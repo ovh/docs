@@ -16,7 +16,7 @@ order: 1
 
 El [vRack](https://www.ovh.com/world/es/soluciones/vrack/) OVHcloud es una solución de red privada que permite configurar el direccionamiento entre varios servidores dedicados de OVHcloud. Al mismo tiempo, le permite agregar [instancias de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/) a su red privada para crear una infraestructura de recursos físicos y virtuales.
 
-**Esta guía le ayudará a configurar sus instancias de Public Cloud en el vRack**
+**Esta guía le ayudará a configurar sus instancias de Public Cloud en el vRack.**
 
 ## Requisitos
 
