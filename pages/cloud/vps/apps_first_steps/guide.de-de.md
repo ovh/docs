@@ -26,7 +26,7 @@ OVHcloud bietet VPS-Nutzern vorinstallierte Images verschiedener Anwendungen fü
 
 ### Die vorinstallierte Anwendung Ihrer Wahl installieren
 
-Installieren Sie die [Anwendung Ihrer Wahl](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) über das OVHcloud Kundencenter oder die OVHcloud API. Sie können dazu auch unsere Anleitung [Erste Schritte mit einem VPS](../erste-schritte-mit-einem-vps/) heranziehen.
+Installieren Sie die [Anwendung Ihrer Wahl](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) über das OVHcloud Kundencenter oder die OVHcloud API. Sie können dazu auch unsere Anleitung "[Erste Schritte mit einem VPS](../erste-schritte-mit-einem-vps/)" heranziehen.
  
 #### cPanel
 
@@ -37,7 +37,7 @@ Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstalliert
 
 > [!primary]
 >
-> Wenn der Link bereits abgelaufen ist, verbinden Sie sich mit dem CentOS-Benutzer über SSH mit Ihrem VPS und führen Sie den Befehl "sudo whmlogin" aus, um einen neuen Link zu erzeugen.
+> Wenn der Link bereits abgelaufen ist, loggen Sie sich mit dem CentOS-Benutzer über SSH auf Ihrem VPS ein und führen Sie den Befehl "sudo whmlogin" aus, um einen neuen Link zu erzeugen.
 >
 
 <ol start="3">
@@ -124,7 +124,7 @@ Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung](../
 <ol start="2">
   <li>Sie müssen möglicherweise bis zu 24 Stunden warten, bis sich beide Einträge vollständig auswirken. Sie können das mit entsprechenden Tools, etwa mit <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a> überprüfen. Wenn die IP-Adresse Ihrer Domain auf mxtoolbox identisch mit der Adresse Ihres Servers angezeigt wird, können Sie zum nächsten Schritt übergehen.</li>
 
-  <li>Verbinden Sie sich via SSH mit dem CentOS-Benutzer auf Ihrem Server und führen Sie folgende Befehle aus, um Zertifikate zu installieren.</li>
+  <li>Loggen Sie sich via SSH mit dem CentOS-Benutzer auf Ihrem Server ein und führen Sie folgende Befehle aus, um Zertifikate zu installieren.</li>
 </ol>
 
 > [!warning]
@@ -174,4 +174,4 @@ IMPORTANT NOTES:
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.tps://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
