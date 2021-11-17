@@ -1,13 +1,13 @@
 ---
 title: S3/Swift REST API compatibility
-slug: object-storage-standard/S3-and-Swift-REST API compatibility
+slug: object-storage-standard-s3-and-swift-rest-api-compatibility
 section: Object Storage Standard (Swift)
 ---
 **Last updated 27th October 2021**
 
-## Objectifs
+## Objective
 
-This guide lists the main features of Amazon S3 that are supported
+This guide lists the main features of Amazon S3 that are supported.
 
 ### S3/Swift REST API Comparison Matrix
 
@@ -45,3 +45,7 @@ This guide lists the main features of Amazon S3 that are supported
 | Bucket inventory | No |
 | GET Bucket service | No |
 | Bucket accelerate | No |
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
