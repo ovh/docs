@@ -71,7 +71,7 @@ En este ejemplo:
 > Compruebe que la configuración es similar. Si dispone de información relativa a las MAC e interfaces públicas o privadas, puede hacerlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) o a través de la API de OVHcloud.
 >
 
-Vuelva al servidor, acceda a `Local Server`{.action} y haga clic en `Disabled`{.action} junto al Formación de equipos de NIC.
+Vuelva al servidor, acceda a `Local Server`{.action} y haga clic en `Disabled`{.action} junto al NIC Teaming.
 
 ![NIC Teaming](images/nic_teaming_1.png){.thumbnail}
 
@@ -79,7 +79,7 @@ Haga clic derecho en una de las interfaces públicas anteriormente identificadas
 
 ![NIC Teaming](images/nic_teaming_2.png){.thumbnail}
 
-Asigne un nombre a su *teaming* y añada la segunda interfaz al *teaming*. Abra las propiedades adicionales, defina "Modo de pintura" en "LACP" y haga clic en `Aceptar`{.action}.
+Asigne un nombre a su *teaming* y añada la segunda interfaz al *teaming*. Abra las propiedades adicionales, defina "Teaming Mode" en "LACP" y haga clic en `OK`{.action}.
 
 #### Configurar una IP estática
 
@@ -89,11 +89,11 @@ Pulse `Windows Key` + `R` para abrir una ventana Run. Introduzca `ncpa.cpl` y ha
 
 ![Static IP](images/static_ip_1.png){.thumbnail}
 
-Haga clic derecho en el *teaming* que haya creado y haga clic en `Propiedades`{.action}.
+Haga clic derecho en el *teaming* que haya creado y haga clic en `Properties`{.action}.
 
 ![Static IP](images/static_ip_2.png){.thumbnail}
 
-Haga doble clic en Protocolo de `Internet versión 4 (TCP/IPv4)`{.action}.
+Haga doble clic en Protocolo de `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Static IP](images/static_ip_3.png){.thumbnail}
 
@@ -103,7 +103,7 @@ La máscara de subred y la puerta de enlace predeterminada serán: 255.255.255.2
 
 En los servidores DNS, puede elegir los suyos. En nuestro ejemplo, utilizamos 213.186.33.99 y 8.8.8.8.
 
-Una vez que haya introducido las direcciones, haga clic en `Aceptar`{.action} para cerrar la ventana y de nuevo en `Aceptar`{.action} para cerrar la ventana de propiedades del adaptador.
+Una vez que haya introducido las direcciones, haga clic en `OK`{.action} para cerrar la ventana y de nuevo en `OK`{.action} para cerrar la ventana de propiedades del adaptador.
 
 ![Static IP](images/static_ip_4.png){.thumbnail}
 
@@ -125,7 +125,7 @@ Continúe hasta el apartado "Role Services" de "Remote Access" y seleccione `Rou
 
 ![Install roles](images/install_roles_4.png){.thumbnail}
 
-Por último, en la sección "Confirmación", seleccione `Restart the destination server automatically if required` y haga clic en `Install`{.action}.
+Por último, en la sección "Confirmation", seleccione `Restart the destination server automatically if required` y haga clic en `Install`{.action}.
 
 #### Acceso al Routing y al Remote
 
@@ -133,7 +133,7 @@ Abra la nueva aplicación llamada "Routing and Remote Access", haga clic derecho
 
 ![Configuración RRAS](images/configure_rras_1.png){.thumbnail}
 
-Seleccione `Configuración` Custom y haga clic en `Next`{.action}.
+Seleccione `Custom configuration` Custom y haga clic en `Next`{.action}.
 
 ![Configuración RRAS](images/configure_rras_2.png){.thumbnail}
 
@@ -153,7 +153,7 @@ Pulse `Windows Key` + `R` para abrir una ventana Run. Introduzca `ncpa.cpl` y ha
 
 ![Static IP](images/static_ip_1.png){.thumbnail}
 
-Haga clic derecho en su tarjeta vEthernet y seleccione `Propiedades`{.action}.
+Haga clic derecho en su tarjeta vEthernet y seleccione `Properties`{.action}.
 
 ![Static IP](images/static_ip_5.png){.thumbnail}
 
@@ -272,7 +272,7 @@ En este ejemplo:
 > Compruebe que la configuración es similar. Si dispone de información relativa a las MAC e interfaces públicas o privadas, puede hacerlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) o a través de la API de OVHcloud.
 >
 
-Vuelva al servidor, acceda a `Local Server`{.action} y haga clic en `Disabled`{.action} junto al Formación de equipos de NIC.
+Vuelva al servidor, acceda a `Local Server`{.action} y haga clic en `Disabled`{.action} junto al NIC Teaming.
 
 ![NIC Teaming](images/nic_teaming_1.png){.thumbnail}
 
@@ -280,7 +280,7 @@ Haga clic derecho en una de las interfaces privadas anteriormente identificadas 
 
 ![NIC Teaming](images/nic_teaming_2.png){.thumbnail}
 
-Asigne un nombre a su *teaming* y añada la segunda interfaz al *teaming*. Abra las propiedades adicionales, defina "Modo de pintura" en "LACP" y haga clic en `Aceptar`{.action}.
+Asigne un nombre a su *teaming* y añada la segunda interfaz al *teaming*. Abra las propiedades adicionales, defina "Teaming Mode" en "LACP" y haga clic en `Aceptar`{.action}.
 
 #### Crear el conmutador virtual en Hyper-VM
 
@@ -290,7 +290,7 @@ En primer lugar, abra el Gestor de Hyper-V y haga clic en `Virtual Switch Manage
 
 ![Create vSwitch](images/create_vswitch_1.png){.thumbnail}
 
-Asegúrese de que ha seleccionado "External" y haga clic en "`Create Virtual Switch`{.action}".
+Asegúrese de que ha seleccionado "External" y haga clic en `Create Virtual Switch`{.action}.
 
 ![Create vSwitch](images/create_vswitch_2.png){.thumbnail}
 

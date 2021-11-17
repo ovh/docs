@@ -125,7 +125,7 @@ Następnie przejdź do sekcji "Role Services" "Remote Access" i wybierz `Routing
 
 ![Instalacja](images/install_roles_4.png){.thumbnail}
 
-W sekcji "Potwierdzenie" wybierz `Restart the destination server automatically if required` i kliknij na `Install`{.action}.
+W sekcji "Confirmation" wybierz `Restart the destination server automatically if required` i kliknij na `Install`{.action}.
 
 #### Konfiguracja Routing and Remote Access
 
@@ -198,7 +198,7 @@ Interface List
 ```
 
 W naszym przykładzie widać, że karta Hyper-V posiada ID 22.<br>
-Zapoznaj się z kartą Hyper-V, a następnie wprowadź komendę `drogową add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0, jeśli 22` (zastąp IP i ID interfejsu przez otrzymaną).<br>
+Zapoznaj się z kartą Hyper-V, a następnie wprowadź komendę `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 si 22` (zastąp IP i ID interfejsu przez otrzymaną).<br>
 Powinniście otrzymać wynik "OK! ".
 
 ```console

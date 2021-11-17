@@ -48,7 +48,7 @@ Sie müssen:
 
 #### Identifikation der Interfaces und NIC-Teaming-Konfiguration
 
-Öffnen Sie Windows Powershell und führen Sie den Befehl `Get-NetAdapter aus`:
+Öffnen Sie Windows Powershell und führen Sie den Befehl `Get-NetAdapter` aus :
 
 ```powershell
 PS C:\Windows\system32> Get-NetAdapter
@@ -97,7 +97,7 @@ Doppelklicken Sie auf `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![static IP](images/static_ip_3.png){.thumbnail}
 
-Wählen Sie `Use the following IP address and insert your IP address aus`.
+Wählen Sie `Use the following IP address` Ihre IP-Adresse aus und tragen Sie diese ein.
 
 Die Subnetzmaske und das Standardgateway sind: 255.255.255.255 und 100.64.0.1 (siehe unten).
 
@@ -113,7 +113,7 @@ Wählen Sie im Server Manager das `Dashboard`{.action} aus und klicken Sie auf `
 
 ![Install Roles](images/install_roles_1.png){.thumbnail}
 
-Folgen Sie dem Assistenten bis zum Abschnitt "Server Roles". Wählen Sie dann `Hyper-v` und `Remote Access aus`.
+Folgen Sie dem Assistenten bis zum Abschnitt "Server Roles". Wählen Sie dann `Hyper-v` und `Remote Access` aus.
 
 ![Install Roles](images/install_roles_2.png){.thumbnail}
 
@@ -125,7 +125,7 @@ Gehen Sie dann bis zum Abschnitt "Role Services"von "Remote Access"und wählen S
 
 ![Install Roles](images/install_roles_4.png){.thumbnail}
 
-Wählen Sie im Bereich "Bestätigung" `Restart the destination server automatically if required` aus und klicken Sie auf `Install`{.action}.
+Wählen Sie im Bereich "Confirmation" `Restart the destination server automatically if required` aus und klicken Sie auf `Install`{.action}.
 
 #### Configurer Routing and Remote Access
 
@@ -133,7 +133,7 @@ Wählen Sie im Bereich "Bestätigung" `Restart the destination server automatica
 
 ![RRAS Konfigur](images/configure_rras_1.png){.thumbnail}
 
-Wählen Sie `Custom Konfiguration` aus und klicken Sie auf `Next`{.action}.
+Wählen Sie `Custom configuration` aus und klicken Sie auf `Next`{.action}.
 
 ![RRAS Konfigur](images/configure_rras_2.png){.thumbnail}
 
@@ -141,7 +141,7 @@ Wählen Sie dann `LAN Routing` aus und klicken Sie auf `Next`{.action}.
 
 ![RRAS Konfigur](images/configure_rras_3.png){.thumbnail}
 
-Klicken Sie dann im angezeigten Fenster auf `Finish`{.action} und `auf Start Service`{.action}.
+Klicken Sie dann im angezeigten Fenster auf `Finish`{.action} und auf `Start Service`{.action}.
 
 ![RRAS Konfigur](images/configure_rras_3.png){.thumbnail}
 
@@ -184,7 +184,7 @@ Wenn Sie alle Adressen angegeben haben, klicken Sie auf `OK`{.action}, um das er
 
 #### Statische Route hinzufügen
 
-Öffnen Sie eine Eingabeaufforderung als Administrator und führen Sie den Master-Route-Befehl `aus`:
+Öffnen Sie eine Eingabeaufforderung als Administrator und führen Sie den Befehl `route print interface` aus:
 
 ```console
 C:\Users\admin>route print interface
@@ -200,7 +200,7 @@ Interface List
 
 In unserem Beispiel sehen Sie, dass unsere Hyper-V Karte ID 22 hat.<br>
 Achten Sie auf Ihre Hyper-V-Karte und führen Sie dann den Befehl `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 si 22` (ersetzen Sie die IP-Adresse und die Interface-ID durch die Adresse, die Sie erhalten haben).<br>
-Sie sollten das Ergebnis bekommen: "OK! "
+Sie sollten das Ergebnis bekommen: "OK!"
 
 ```console
 PS C:\Users\admin> route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 if 22

@@ -125,7 +125,7 @@ De seguida, continue até à secção "Role Services" de "Remote Access" e selec
 
 ![Install roles](images/install_roles_4.png){.thumbnail}
 
-Por fim, na secção "Confirmação", selecione `Restart the destination server automatically if required` e clique em `Install`{.action}.
+Por fim, na secção "Confirmation", selecione `Restart the destination server automatically if required` e clique em `Install`{.action}.
 
 #### Configurar Routing and Remote Access
 
@@ -184,7 +184,7 @@ Depois de introduzir todos os endereços, clique em `OK`{.action} para fechar a 
 
 #### Adicionar uma estrada estática
 
-Abra uma linha de comando enquanto administrador e execute o comando `rodoviário print interface`:
+Abra uma linha de comando enquanto administrador e execute o comando `route print interface`:
 
 ```console
 C:\Users\admin>route print interface
@@ -198,8 +198,8 @@ Interface List
 ```
 
 No nosso exemplo, pode ver que o nosso cartão Hyper-V tem o ID 22.<br>
-Tome nota do seu cartão Hyper-V e execute o comando `rodoviário add -p 192.xxx.xxx.16 mask 255.255.255 0.0.0 se 22` (substitua o IP e o ID de interface pelo que recebeu).<br>
-Deveriam obter o resultado "OK! ".
+Tome nota do seu cartão Hyper-V e execute o comando `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 si 22` (substitua o IP e o ID de interface pelo que recebeu).<br>
+Deveriam obter o resultado "OK!".
 
 ```console
 PS C:\Users\admin> route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 if 22
