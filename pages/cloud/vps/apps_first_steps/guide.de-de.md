@@ -37,7 +37,7 @@ Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstalliert
 
 > [!primary]
 >
-> Wenn der Link bereits abgelaufen ist, verbinden Sie sich mit dem CentOS-Benutzer über SSH mit Ihrem VPS und führen Sie den Befehl « sudo whmlogin » aus, um einen neuen Link zu erzeugen.
+> Wenn der Link bereits abgelaufen ist, verbinden Sie sich mit dem CentOS-Benutzer über SSH mit Ihrem VPS und führen Sie den Befehl "sudo whmlogin" aus, um einen neuen Link zu erzeugen.
 >
 
 <ol start="3">
@@ -53,7 +53,7 @@ Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anw
 > [!faq]
 >
 > Kann ich meine eigenen DNS Server verwenden?
->> Ja, das können Sie. Stellen Sie sicher, dass Sie bei Ihrem Registrar für Ihre Domain "GLUE" Einträge erstellen. Wenn Sie zum Beispiel "ns1.mydomain.com" und "ns2.mydomain.com" wünschen, müssen Sie "GLUE" Einträge konfigurieren, damit beide auf die IP-Adresse Ihres Servers zeigen. Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung.](../../domains/glue-registry/#schritt-1-glue-eintrage-hinzufugen). Beachten Sie, dass die Erstellung 24 Stunden dauern kann.
+>> Ja, das können Sie. Stellen Sie sicher, dass Sie bei Ihrem Registrar für Ihre Domain "GLUE" Einträge erstellen. Wenn Sie zum Beispiel "ns1.mydomain.com" und "ns2.mydomain.com" wünschen, müssen Sie "GLUE" Einträge konfigurieren, damit beide auf die IP-Adresse Ihres Servers zeigen. Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung](../../domains/glue-registry/#schritt-1-glue-eintrage-hinzufugen). Beachten Sie, dass die Erstellung 24 Stunden dauern kann.
 > Warum sollte ich das Root-Passwort festlegen?
 >> WHM verwendet standardmäßig den Root-Benutzer für die Authentifizierung. Mit der Single Use URL können Sie auf die erste Konfiguration zugreifen und das Root-Passwort ändern. Beim nächsten Mal, wenn Sie sich mit WHM verbinden, müssen Sie den Root-Benutzer und das von Ihnen definierte Passwort verwenden.
 > Wo ist meine Lizenz für cPanel?
@@ -134,10 +134,10 @@ Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung](../
 
 ```sh
 sudo -i
-dnf install -y epel release
-dnf install -y cat python3-certifibot apache mod_ssl
+dnf install -y epel-release
+dnf install -y certbot python3-certbot-apache mod_ssl
 echo "ServerName personaldomain.ovh;" >> /etc/httpd/conf/httpd.conf
-systemctl resthttpd
+systemctl restart httpd
 ```
 
 <ol start="4">
