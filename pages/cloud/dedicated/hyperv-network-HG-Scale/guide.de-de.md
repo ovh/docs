@@ -1,7 +1,7 @@
 ---
-title: 'Netzwerk auf Windows Server mit Hyper-V auf den High Grade & SCALE Reihen konfigurieren'
+title: 'Netzwerk auf Windows Server mit Hyper-V für die High Grade & SCALE Reihen konfigurieren'
 slug: hyperv-network-hg-scale
-excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf Windows Server mit Hyper-V in den High Grade & SCALE Reihen konfigurieren'
+excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf Windows Server mit Hyper-V für die High Grade & SCALE Reihen konfigurieren'
 section: 'Fortgeschrittene Nutzung'
 order: 5
 ---
@@ -14,15 +14,15 @@ order: 5
 
 ## Ziel
 
-Bei den High Grade & SCALE Reihen ist der Betrieb von Failover-IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Konfigurieren Sie deshalb die Failover-IPs im Router-Modus oder über das vRack.
+Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Failover-IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Failover-IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
 
-**Hier erfahren Sie, wie Sie das Netzwerk mit Hyper-V unter Windows Server konfigurieren.**
+**Diese Anleitung erklärt, wie Sie das Netzwerk mit Hyper-V auf Windows Server konfigurieren.**
 
 ## Voraussetzungen
 
-* Sie verfügen über einen [dedizierten OVHcloud Server](https://www.ovhcloud.com/de/bare-metal/)
-* Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/)
-* Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet.
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
+- Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Failover-IP-Block.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
 >
@@ -33,22 +33,22 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Failover-IPs im *Bridged*-
 
 > [!primary]
 >
-> In diesen Serverreihen gibt es 4 Netzwerkkarten. Die ersten beiden für das Publikum, die zweiten für das Privatleben. Um die gesamte Bandbreite zu nutzen, müssen Aggregate erstellt werden.
+> Bei diesen Serverreihen gibt es 4 Netzwerkkarten: jeweils zwei für das öffentliche und lokale Netzwerk. Um die gesamte Bandbreite zu nutzen, müssen Aggregate erstellt werden.
 >
 
-### Failover-IP im gerouteten Modus für öffentliche Netzwerkinterfaces
+### Failover-IP im gerouteten Modus auf öffentlichen Netzwerkinterfaces
 
 #### Erläuterungen
 
-Sie müssen:
+Folgende Schritte sind notwendig:
 
-- NIC Teaming konfigurieren;
-- die Hyper-V- und RRAS-Rollen installieren;
-- RRAS als Router konfigurieren.
+- NIC Teaming konfigurieren
+- Die Hyper-V- und RRAS-Rollen installieren
+- RRAS als Router konfigurieren
 
 #### Identifikation der Interfaces und NIC-Teaming-Konfiguration
 
-Öffnen Sie Windows Powershell und führen Sie den Befehl `Get-NetAdapter` aus :
+Öffnen Sie Windows Powershell und führen Sie den Befehl `Get-NetAdapter` aus:
 
 ```powershell
 PS C:\Windows\system32> Get-NetAdapter
@@ -61,17 +61,17 @@ Ethernet 2                Mellanox ConnectX-5 Adapter #2                6 Up    
 Ethernet 3                Mellanox ConnectX-5 Adapter #3                4 Up           0C-42-A1-DD-37-B2        25 Gbps
 ```
 
-In diesem Beispiel:
+In diesem Beispiel bedeutet das folgendes:
 
-- die öffentlichen Schnittstellen sind `Ethernet 3`  und `Ethernet 4`;
-- private Interfaces sind `Ethernet` und `Ethernet2`.
+- Die öffentlichen Schnittstellen sind `Ethernet 3` und `Ethernet 4`.
+- Die privaten Schnittstellen sind `Ethernet` und `Ethernet 2`.
 
 > [!primary]
 >
-> Überprüfen Sie, dass Ihre Konfiguration ähnlich ist. Sie verfügen über Informationen zu öffentlichen oder privaten MAC-Adressen und Interfaces in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder über die OVHcloud API.
+> Überprüfen Sie, dass Ihre Konfiguration ähnlich ist. Sie können Informationen zu öffentlichen oder privaten MAC-Adressen und Interfaces in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder über die OVHcloud API abrufen.
 >
 
-Gehen Sie nun in den Server Manager, gehen Sie in `Local Server`{.action} und klicken Sie auf `Disabled`{.action} neben "NIC Teaming".
+Öffnen Sie den Server Manager, gehen Sie zu `Local Server`{.action} und klicken Sie auf `Disabled`{.action} neben "NIC Teaming".
 
 ![NIC Teaming](images/nic_teaming_1.png){.thumbnail}
 
@@ -79,17 +79,17 @@ Klicken Sie auf der nächsten Seite mit der rechten Maustaste auf eine der zuvor
 
 ![NIC Teaming](images/nic_teaming_2.png){.thumbnail}
 
-Geben Sie einen Namen für Ihr *teaming* und fügen Sie das zweite Interface zum *teaming* hinzu. Öffnen Sie anschließend die zusätzlichen Eigenschaften, definieren Sie "Teaming Mode" auf "LACP" und klicken Sie auf `OK`{.action}.
+Geben Sie einen Namen für Ihr Team ein und fügen Sie das zweite Interface hinzu. Öffnen Sie anschließend die erweiterten Einstellungen, stellen Sie "Teaming Mode" auf `LACP` ein und klicken Sie auf `OK`{.action}.
 
 #### Statische IP konfigurieren
 
-Um einen Verbindungsverlust beim Neustart zu vermeiden, müssen wir die IP-Adresse statisch auf dem *teaming* konfigurieren.
+Um einen Verbindungsverlust beim Neustart zu vermeiden, muss die IP-Adresse statisch für das Team eingerichte werden.
 
-Drücken Sie auf `Windows Key` + `R`, um ein Run-Fenster zu öffnen. Geben Sie `ncpa.cpl` ein und klicken Sie auf `OK`{.action}. Dadurch öffnet sich Ihr Fenster "Netzwerkverbindungen".
+Drücken Sie `Windows Key` \+ `R`, um ein *Run*-Fenster ("Ausführen") zu öffnen. Geben Sie `ncpa.cpl` ein und klicken Sie auf `OK`{.action}. Die Systemsteuerung für die Netzwerkverbindungen öffnet sich.
 
 ![static IP](images/static_ip_1.png){.thumbnail}
 
-Klicken Sie mit der rechten Maustaste auf das von Ihnen erstellte *teaming* und klicken Sie auf `Properties`{.action}.
+Klicken Sie rechts auf das von Ihnen erstellte Team und klicken Sie auf `Properties`{.action}.
 
 ![static IP](images/static_ip_2.png){.thumbnail}
 
@@ -97,67 +97,67 @@ Doppelklicken Sie auf `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![static IP](images/static_ip_3.png){.thumbnail}
 
-Wählen Sie `Use the following IP address` Ihre IP-Adresse aus und tragen Sie diese ein.
+Geben Sie unter `Use the following IP address` Ihre IP-Adresse ein.
 
 Die Subnetzmaske und das Standardgateway sind: 255.255.255.255 und 100.64.0.1 (siehe unten).
 
-Bei den DNS Servern können Sie Ihre selbst auswählen. In unserem Beispiel verwenden wir 213.186.33.99 und 8.8.8.8.
+Die DNS-Server können Sie selbst auswählen. In unserem Beispiel verwenden wir 213.186.33.99 und 8.8.8.8.
 
-Wenn die Adressen angegeben sind, klicken Sie auf `OK`{.action}, um das Fenster zu schließen, und erneut auf `OK`{.action}, um das Fenster der Adaptereigenschaften zu schließen.
+Klicken Sie auf `OK`{.action}, um das Fenster zu schließen, und erneut auf `OK`{.action}, um das Fenster der Adaptereigenschaften zu schließen.
 
 ![static IP](images/static_ip_4.png){.thumbnail}
 
-#### Fügt die Rollen Hyper-V und RRAS hinzu
+#### Server-Rollen Hyper-V und RRAS hinzufügen
 
-Wählen Sie im Server Manager das `Dashboard`{.action} aus und klicken Sie auf `Add Roles and Features`{.action}.
+Gehen Sie im Server Manager zum `Dashboard`{.action} und klicken Sie auf `Add Roles and Features`{.action}.
 
 ![Install Roles](images/install_roles_1.png){.thumbnail}
 
-Folgen Sie dem Assistenten bis zum Abschnitt "Server Roles". Wählen Sie dann `Hyper-v` und `Remote Access` aus.
+Folgen Sie dem Assistenten bis zum Abschnitt "Server Roles". Wählen Sie dann `Hyper-V` und `Remote Access` aus.
 
 ![Install Roles](images/install_roles_2.png){.thumbnail}
 
-Gehen Sie dann bis zum Abschnitt "Virtual Switches"von "Hyper-V"und wählen Sie Ihr zuvor erstelltes *NIC teaming* aus.
+Gehen Sie dann zum Unterbereich "Virtual Switches" von "Hyper-V" und wählen Sie Ihr zuvor erstelltes *NIC Team* aus.
 
 ![Install Roles](images/install_roles_3.png){.thumbnail}
 
-Gehen Sie dann bis zum Abschnitt "Role Services"von "Remote Access"und wählen Sie `Routing`.
+Gehen Sie dann zum Unterbereich "Role Services" von "Remote Access" und haken Sie `Routing` an.
 
 ![Install Roles](images/install_roles_4.png){.thumbnail}
 
-Wählen Sie im Bereich "Confirmation" `Restart the destination server automatically if required` aus und klicken Sie auf `Install`{.action}.
+Wählen Sie im Bereich "Confirmation" die Option `Restart the destination server automatically if required` aus und klicken Sie auf `Install`{.action}.
 
-#### Configurer Routing and Remote Access
+#### Routing und Remote Access konfigurieren
 
-Öffnen Sie die neue Anwendung "Routing and Remote Access", klicken Sie mit der rechten Maustaste auf Ihren Server und klicken Sie auf `Configure and Enable Routing and Remote Access`{.action}.
+Öffnen Sie die neue Anwendung "Routing and Remote Access" und rechtsklicken Sie auf Ihren Server. Klicken Sie hier auf `Configure and Enable Routing and Remote Access`{.action}.
 
-![RRAS Konfigur](images/configure_rras_1.png){.thumbnail}
+![RRAS Config](images/configure_rras_1.png){.thumbnail}
 
 Wählen Sie `Custom configuration` aus und klicken Sie auf `Next`{.action}.
 
-![RRAS Konfigur](images/configure_rras_2.png){.thumbnail}
+![RRAS Config](images/configure_rras_2.png){.thumbnail}
 
 Wählen Sie dann `LAN Routing` aus und klicken Sie auf `Next`{.action}.
 
-![RRAS Konfigur](images/configure_rras_3.png){.thumbnail}
+![RRAS Config](images/configure_rras_3.png){.thumbnail}
 
-Klicken Sie dann im angezeigten Fenster auf `Finish`{.action} und auf `Start Service`{.action}.
+Klicken Sie auf `Finish`{.action} und im neuen Fenster auf `Start Service`{.action}.
 
-![RRAS Konfigur](images/configure_rras_3.png){.thumbnail}
+![RRAS Config](images/configure_rras_3.png){.thumbnail}
 
-#### Die primären und zusätzlichen statischen IP-Adressen im Hyper-V Interface festlegen
+#### Die primären und zusätzlichen IP-Adressen im Hyper-V Interface statisch konfigurieren
 
-Wir müssen die IP-Konfiguration nun auf das Hyper-V-Interface umziehen.
+Die IP-Konfiguration muss nun auf das Hyper-V-Interface angewendet werden.
 
-Drücken Sie auf `Windows Key` + `R`, um ein Run-Fenster zu öffnen. Geben Sie `ncpa.cpl` ein und klicken Sie auf `OK`{.action}. Dadurch öffnet sich Ihr Fenster "Netzwerkverbindungen".
+Drücken Sie `Windows Key` \+ `R`, um ein *Run*-Fenster ("Ausführen") zu öffnen. Geben Sie `ncpa.cpl` ein und klicken Sie auf `OK`{.action}. Die Systemsteuerung für die Netzwerkverbindungen öffnet sich.
 
 ![static IP](images/static_ip_1.png){.thumbnail}
 
-Klicken Sie mit der rechten Maustaste auf Ihre vEthernet Karte und klicken Sie auf `Properties`{.action}.
+Klicken Sie rechts auf den "vEthernet"-Adapter und klicken Sie dann auf `Properties`{.action}.
 
 ![static IP](images/static_ip_5.png){.thumbnail}
 
-Doppelklicken Sie auf `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
+Doppelklicken Sie `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![static IP](images/static_ip_3.png){.thumbnail}
 
@@ -165,28 +165,28 @@ Wählen Sie `Use the following IP address` aus und tragen Sie Ihre IP-Adresse ei
 
 Die Subnetzmaske und das Standardgateway sind: 255.255.255.255 und 100.64.0.1 (siehe unten).
 
-Bei den DNS Servern können Sie Ihre selbst auswählen. In unserem Beispiel verwenden wir 213.186.33.99 und 8.8.8.8.
+Die DNS-Server können Sie selbst auswählen. In unserem Beispiel verwenden wir 213.186.33.99 und 8.8.8.8.
 
 ![static IP](images/static_ip_4.png){.thumbnail}
 
-Klicken Sie dann auf `Advanced...`. und klicken Sie im neuen Fenster auf `Add...`{.action} unter den IP-Adressen.
+Klicken Sie dann auf `Advanced...` und klicken Sie im neuen Fenster auf `Add...`{.action} unter "IP addresses".
 
-Fügen Sie die IP-Adresse und die Subnetzmaske Ihrer Failover-IP hinzu und klicken Sie auf `Add`{.action}
+Fügen Sie die IP-Adresse und die Subnetzmaske Ihrer Failover-IP hinzu und klicken Sie auf `Add`{.action}.
 
 ![static IP](images/static_ip_6.png){.thumbnail}
 
-Wenn Sie alle Adressen angegeben haben, klicken Sie auf `OK`{.action}, um das erweiterte Fenster zu schließen, erneut auf `OK`{.action}, um die TCP/IPv4-Einstellungen zu schließen, und dann auf `OK`{.action}, um das Karteneigenschaftsfenster zu schließen.
+Wenn Sie alle Adressen angegeben haben, klicken Sie auf `OK`{.action}, um das Einstellungsfenster zu schließen und erneut auf `OK`{.action}, um die TCP/IPv4-Einstellungen zu schließen. Klicken Sie nochmals auf `OK`{.action}, um die Adaptereinstellungen zu schließen.
 
 > [!warning]
 >
-> Dieser Schritt kann zu einem Verbindungsverlust führen. Sollte dies der Fall sein, loggen Sie sich via [IPMI](https://docs.ovh.com/de/dedicated/verwendung-ipmi-dedicated-server/) ein und ändern Sie die Konfiguration erneut. Sie werden feststellen, dass Ihr Standardgateway wieder leer ist. Gateway 100.64.0.1 hinzufügen.
+> Dieser Schritt kann zu einem Verbindungsabbruch führen. Sollte dies der Fall sein, loggen Sie sich via [IPMI](https://docs.ovh.com/de/dedicated/verwendung-ipmi-dedicated-server/) ein und ändern Sie die Konfiguration erneut. Sie werden feststellen, dass der Eintrag zum Standardgateway fehlt. Fügen Sie das Gateway 100.64.0.1 wieder hinzu.
 >
 
 #### Statische Route hinzufügen
 
 Öffnen Sie eine Eingabeaufforderung als Administrator und führen Sie den Befehl `route print interface` aus:
 
-```console
+```powershell
 C:\Users\admin>route print interface
 ===========================================================================
 Interface List
@@ -197,23 +197,22 @@ Interface List
 ===========================================================================
 ```
 
+In diesem Beispiel hat der Hyper-V-Adapter die ID "22".<br>
+Merken Sie sich diese ID und führen Sie dann den Befehl `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 si 22` aus. (Verwenden Sie hierbei jeweils Ihre IP-Adresse und die zuvor abgerufene ID statt der Beispielwerte).<br>
+Sie sollten dann als Antwortausgabe bekommen: "OK!"
 
-In unserem Beispiel sehen Sie, dass unsere Hyper-V Karte ID 22 hat.<br>
-Achten Sie auf Ihre Hyper-V-Karte und führen Sie dann den Befehl `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 si 22` (ersetzen Sie die IP-Adresse und die Interface-ID durch die Adresse, die Sie erhalten haben).<br>
-Sie sollten das Ergebnis bekommen: "OK!"
-
-```console
+```powershell
 PS C:\Users\admin> route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 if 22
  OK!
 ```
 
-Nachdem Sie Ihre VMs erstellt und konfiguriert haben, benötigen Sie einen Internetzugang.
+Nachdem Sie Ihre VM erstellt und konfiguriert haben, sollte sie damit Internetzugang haben.
 
-#### Beispiel für die Konfiguration einer Client-VM auf Ubuntu
+#### Beispielkonfiguration eines VM Clients mit Ubuntu
 
 Inhalt der Datei `/etc/netplan/ip.yaml`:
 
-```bash
+```yaml
 network:
         version: 2
         ethernets:
@@ -236,22 +235,22 @@ network:
 
 #### Voraussetzungen
 
-- Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Account reserviert.
-- Sie haben den gewünschten privaten IP-Adressbereich vorbereitet.
-- Sie verfügen über einen mit [vRack kompatiblen Server](https://www.ovhcloud.com/de/bare-metal/){.external}.
-- Sie haben einen [vRack](https://www.ovh.de/loesungen/vrack/){.external} Dienst aktiviert.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angemeldet.
+- Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Kunden-Account.
+- Sie haben Ihren gewünschten privaten IP-Adressbereich festgelegt.
+- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
+- Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 #### Erläuterungen
 
-Sie brauchen:
+Folgende Schritte sind notwendig:
 
-* Erstellung eines Aggregats;
-* eine an das Aggregat angeschlossene Bridge zu erstellen;
+- Erstellung eines Aggregats
+- Erstellung der Bridge
 
 #### Identifikation der Interfaces und NIC-Teaming-Konfiguration
 
-Öffnen Sie Windows Powershell und führen Sie den Befehl `Get-NetAdapter aus`
+Öffnen Sie Windows Powershell und führen Sie den Befehl `Get-NetAdapter` aus:
 
 ```powershell
 PS C:\Windows\system32> Get-NetAdapter
@@ -264,29 +263,29 @@ Ethernet 2                Mellanox ConnectX-5 Adapter #2                6 Up    
 Ethernet 3                Mellanox ConnectX-5 Adapter #3                4 Up           0C-42-A1-DD-37-B2        25 Gbps
 ```
 
-In diesem Beispiel:
+In diesem Beispiel bedeutet das folgendes:
 
-- die öffentlichen Schnittstellen sind `Ethernet 3` und `Ethernet 4`;
-- private Interfaces sind `Ethernet` und `Ethernet2`.
+- Die öffentlichen Schnittstellen sind `Ethernet 3` und `Ethernet 4`.
+- Die privaten Schnittstellen sind `Ethernet` und `Ethernet 2`.
 
 > [!primary]
 >
-> Überprüfen Sie, dass Ihre Konfiguration ähnlich ist. Sie verfügen über Informationen zu öffentlichen oder privaten MAC-Adressen und Interfaces in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder über die OVHcloud API.
+> Überprüfen Sie, dass Ihre Konfiguration ähnlich ist. Sie können Informationen zu öffentlichen oder privaten MAC-Adressen und Interfaces in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder über die OVHcloud API abrufen.
 >
 
-Gehen Sie nun in den Server Manager, gehen Sie in `Local Server`{.action} und klicken Sie auf `Disabled`{.action} neben "NIC Teaming".
+Öffnen Sie den Server Manager, gehen Sie zu `Local Server`{.action} und klicken Sie auf `Disabled`{.action} neben "NIC Teaming".
 
 ![NIC Teaming](images/nic_teaming_1.png){.thumbnail}
 
-Klicken Sie auf der nächsten Seite mit der rechten Maustaste auf eines der zuvor identifizierten privaten Interfaces und klicken Sie dann auf `Add to New Team`{.action}.
+Klicken Sie auf der nächsten Seite mit der rechten Maustaste auf eine der zuvor identifizierten öffentlichen Interfaces und klicken Sie dann auf `Add to New Team`{.action}.
 
 ![NIC Teaming](images/nic_teaming_2.png){.thumbnail}
 
-Geben Sie einen Namen für Ihr *teaming* und fügen Sie das zweite Interface zum *teaming* hinzu. Öffnen Sie anschließend die zusätzlichen Eigenschaften, definieren Sie "Teaming Mode" auf "LACP" und klicken Sie auf `OK`{.action}.
+Geben Sie einen Namen für Ihr Team ein und fügen Sie das zweite Interface hinzu. Öffnen Sie anschließend die erweiterten Einstellungen, stellen Sie "Teaming Mode" auf `LACP` ein und klicken Sie auf `OK`{.action}.
 
-#### Virtuellen Schalter in Hyper-VM erstellen
+#### Virtuellen Switch in Hyper-V erstellen
 
-Wir werden einen virtuellen Switch erstellen müssen, der unsere VMs an das *teaming* bindet, das wir erstellt haben.
+Es wird ein virtueller Switch benötigt, der die VMs an das zuvor erstellte Team bindet.
 
 Öffnen Sie zuerst den Hyper-V Manager und klicken Sie auf `Virtual Switch Manager`{.action}.
 
@@ -296,19 +295,19 @@ Vergewissern Sie sich, dass Sie "External" ausgewählt haben, und klicken Sie au
 
 ![v-switch Create](images/create_vswitch_2.png){.thumbnail}
 
-Geben Sie Ihrem Switch einen Namen, wählen Sie Ihren neuen adapter *teaming* aus, klicken Sie auf `Apply`{.action} und dann auf `OK`{.action}.
+Geben Sie Ihrem Switch einen Namen, wählen Sie Ihren neuen Team-Adapter aus, klicken Sie auf `Apply`{.action} und dann auf `OK`{.action}.
 
 ![v-switch Create](images/create_vswitch_3.png){.thumbnail}
 
-Sie sind nun bereit, Ihre VM zu erstellen und das Netzwerk dafür zu konfigurieren.
+Sie können jetzt Ihre VM erstellen und das Netzwerk darauf konfigurieren.
 
 #### Eine verwendbare IP-Adresse konfigurieren
 
-Im Fall des vRack sind die erste, die vorletzte und die letzte Adresse eines bestimmten IP-Blocks immer für die Netzwerkadresse, das Netzwerk-Gateway und den *broadcast* des Netzwerks reserviert. Das heißt, die erste verwendbare Adresse ist die zweite Adresse des Blocks, wie im Folgenden zu sehen ist:
+Im Fall des vRack sind die erste, die vorletzte und die letzte Adresse eines bestimmten IP-Blocks immer für die Netzwerkadresse, das Netzwerk-Gateway und den *Broadcast* des Netzwerks reserviert. Das heißt, die erste verwendbare Adresse ist die zweite Adresse des Blocks, wie im Folgenden dargestelltt:
 
 ```sh
-46.105.135.96   # Reserviert: Netzwerkadresse
-46.105.135.97   # Erste verwendbare IP
+46.105.135.96 # Reserved: network address
+46.105.135.97 # First usable IP
 46.105.135.98
 46.105.135.99
 46.105.135.100
@@ -320,36 +319,36 @@ Im Fall des vRack sind die erste, die vorletzte und die letzte Adresse eines bes
 46.105.135.106
 46.105.135.107
 46.105.135.108
-46.105.135.109   # Letzte verwendbare IP
-46.105.135.110   # Reserviert: Netzwerk
-46.105.135.111   # Reserviert: Netzwerk-Broadcast
+46.105.135.109 # Last usable IP
+46.105.135.110 # Reserved: network gateway
+46.105.135.111 # Reserved: network broadcast
 ```
 
-Um die erste verwendbare IP-Adresse zu konfigurieren, bearbeiten Sie die Netzwerkkonfigurationsdatei wie im Folgenden beschrieben. In unserem Beispiel verwenden wir **255.255.255.240** als Subnetzmaske.
+Um die erste verwendbare IP-Adresse zu konfigurieren, bearbeiten Sie die Netzwerkkonfigurationsdatei wie im Folgenden beschrieben. In diesem Beispiel ist die Subnetzmaske **255.255.255.240**.
 
 > [!primary]
 >
-> Die von uns in diesem Beispiel verwendete Subnetzmaske passt zu unserem IP-Block. Ihre Subnetzmaske kann je nach Größe Ihres Blocks variieren. Wenn Sie Ihren IP-Block kaufen, erhalten Sie eine E-Mail mit der zu verwendenden Subnetzmaske.
+> Die in diesem Beispiel verwendete Subnetzmaske ist passend zum IP-Block. Ihre Subnetzmaske kann je nach Größe Ihres Blocks variieren. Wenn Sie Ihren IP-Block bestellen, erhalten Sie eine E-Mail mit der zu verwendenden Subnetzmaske.
 >
 
-#### Beispiel für die VM-Konfiguration Ubuntu
+#### Beispielkonfiguration eines VM Clients mit Ubuntu
 
 Inhalt der Datei `/etc/netplan/vrack.yaml`:
 
-```bash
+```yaml
 network:
         version: 2
         ethernets:
                 eth0:
-                        dhcp4: Nr.
+                        dhcp4: no
                         addresses:
                                 - 46.105.135.97/28
                         nameservers:
                                 addresses:
                                         - 213.186.33.99
                                         - 8.8.8.8
-                        Straßen
-                                - 0.0.0.0/0
+                        routes:
+                                - to: 0.0.0.0/0
                                   via: 46.105.135.110
                                   on-link: true
 ```
