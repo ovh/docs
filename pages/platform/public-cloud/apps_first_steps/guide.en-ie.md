@@ -56,17 +56,17 @@ This section only applies to WordPress, Drupal, Joomla and Prestashop installati
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>
 
-If your domain is registered with OVHcloud you can follow [this guide.](../../domains/web_hosting_how_to_edit_my_dns_zone/).
+If your domain is registered with OVHcloud you can follow [this guide](../../domains/web_hosting_how_to_edit_my_dns_zone/).
 <br>If your domain is registered with another company you will need to contact them for assistance to set up your `A` records.
 
 <ol start="2">
-<li>You may need to wait 24 hours before the two records propagate fully. You can always check it with [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.</li>
-<li>  SSH into your server with the CentOS user and execute the following commands to install Certbot</li>
+<li>You may need to wait 24 hours before the two records propagate fully. You can always check it with <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.</li>
+<li>SSH into your server with the CentOS user and execute the following commands to install Certbot.</li>
 </ol>
 
 > [!warning]
 >
-> Replace personaldomain.ovh in the commands to your own domain name
+> Replace personaldomain.ovh in the commands with your own domain name.
 >
 
 ```sh
