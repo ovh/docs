@@ -6,7 +6,7 @@ section: NSX
 order: 01
 ---
 
-**Dernière mise à jour le 29/06/2020**
+**Dernière mise à jour le 17/11/2021**
 
 ## Objectif
 
@@ -21,13 +21,14 @@ NSX est une solution de Software Defined Network (SDN) développée par VMware q
 
 ## En pratique
 
-VMWare NSX n'est disponible que depuis l'interface vSphere.
+VMWare NSX est disponible depuis l'interface vSphere uniquement.
 
-Depuis la page d’accueil du client vSphere, cliquez sur la catégorie `Mise en réseau et sécurité`{.action} dans le menu de gauche :
+Depuis la page d’accueil du client vSphere, cliquez sur la catégorie `Mise en réseau et sécurité`{.action} dans la barre d'outil à gauche de votre écran.
+Vous pouvez également cliquer sur `Mise en réseau et sécurité`{.action} dans le Menu déroulant.
 
 ![Networking and Security](images/nsx01.png){.thumbnail}
 
-Vous avez alors accès à l'accueil NSX avec tous les menus associés.
+Vous avez alors accès au Tableau de bord NSX avec tous les menus associés.
 
 
 > [!primary]
