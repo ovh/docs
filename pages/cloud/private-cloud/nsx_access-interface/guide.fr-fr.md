@@ -26,10 +26,11 @@ VMWare NSX est disponible depuis l'interface vSphere uniquement.
 Depuis la page d’accueil du client vSphere, cliquez sur la catégorie `Mise en réseau et sécurité`{.action} dans la barre d'outil à gauche de votre écran.
 Vous pouvez également cliquer sur `Mise en réseau et sécurité`{.action} dans le Menu déroulant.
 
-![Networking and Security](images/nsx01.png){.thumbnail}
+![Networking and Security](images/Inter01fr.png){.thumbnail}
 
 Vous avez alors accès au Tableau de bord NSX avec tous les menus associés.
 
+![Networking and Security](images/Inter02fr.png){.thumbnail}
 
 > [!primary]
 >
