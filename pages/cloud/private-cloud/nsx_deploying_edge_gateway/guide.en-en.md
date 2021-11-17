@@ -1,15 +1,14 @@
 ---
-title: Comment déployer une NSX Edge Gateway
-slug: comment-deployer-une-nsx-edge-gateway
-excerpt: Découvrez comment déployer une edge gateway NSX
-legacy_guide_number: '7766362'
+title: How to deploy an NSX Edge Services Gateway
+slug: how-to-deploy-an-nsx-edge-gateway
+excerpt: Discover how to deploy an NSX Edge Services Gateway
 section: NSX
 order: 02
 ---
 
-**Dernière mise à jour le 27/02/2019**
+**Last updated on 11/17/2021**
 
-## Objectif
+## Objective
 
 Une *edge gataway NSX* est une appliance VMware permettant d'accèder à tous les services NSX Edge tels que le pare-feu, NAT, DHCP, VPN, l'équilibrage de charge.
 
