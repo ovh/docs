@@ -6,6 +6,10 @@ section: vRack
 order: 1
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
 **Ultimo aggiornamento: 17/11/2021**
 
 ## Obiettivo
@@ -27,7 +31,7 @@ Per creare la tua vRack o aggiungere un'istanza all'interno della rete, potresti
 
 In base al tuo profilo tecnico e alle tue esigenze, dovrai scegliere quale interfaccia o metodo utilizzare. In questo modo, per ogni azione, vi proporremo le varie opzioni possibili.
 
-**Ecco una breve descrizione delle azioni possibili secondo il metodo/interfaccia scelto:**
+**Ecco una breve descrizione delle azioni possibili secondo il metodo/interfaccia scelto.**
 
 ### Spazio Cliente OVHcloud
 
@@ -84,14 +88,14 @@ A seconda delle tue necessità, puoi utilizzare le API dedicate a OpenStack:
 - Nova (compute)
 - Glance (image)
 - Cinder (image)
-- Neutron (rete)
+- Neutron (network)
 
 > [!primary]
 > In alcuni casi, sarà più facile utilizzare le API OpenStack e in altri, Nova, Neutron, ecc.
 >
 > Inoltre, alcune funzionalità potrebbero mancare dall'API OpenStack a seconda della versione del client e del sistema operativo.
 Per rendere la guida più accessibile, offre le opzioni più semplici e intuitive.
-È possibile consultare la [documentazione ufficiale di OpenStack ](https://docs.openstack.org/){.external} se si desidera approfondire la conoscenza del suo utilizzo.
+È possibile consultare la [documentazione ufficiale di OpenStack](https://docs.openstack.org/){.external} se si desidera approfondire la conoscenza del suo utilizzo.
 >
 
 ## Procedura
@@ -118,8 +122,7 @@ Clicca sul pulsante `Per iniziare, crea una vRack`{.action}. In questo caso, sce
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
-Per continuare la configurazione della vRack dallo Spazio Cliente OVHcloud, continua la lettura di questa guida utilizzando la [creazione di una VLAN nella vRack dallo Spazio Cliente OVHcloud](./dallo-spazio-cliente-ovhcloud 
-).
+Per continuare la configurazione della vRack dallo Spazio Cliente OVHcloud, continua la lettura di questa guida utilizzando la [creazione di una VLAN nella vRack dallo Spazio Cliente OVHcloud](./#crea-una-vlan-dallo-spazio-cliente-ovhcloud).
 
 #### Dalle APIv6 OVHcloud
 
@@ -386,7 +389,7 @@ Clicca su `Instances`{.action} nel menu a sinistra e poi su `...`{.action} a des
 
 ![detail instance](images/vrack2021.png){.thumbnail}
 
-Verrà aperto il dashboard dell'istanza. Cliccate su `...`{.action} accanto a "Private Network(s)" e selezionate `Attach a network`{.action}.
+Verrà aperto il dashboard dell'istanza. Cliccate su `...`{.action} accanto a "Reti private" e selezionate `Associa una rete`{.action}.
 
 ![collegare rete](images/vrack2021-01.png){.thumbnail}
 
