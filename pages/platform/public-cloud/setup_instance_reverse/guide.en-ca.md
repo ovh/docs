@@ -20,7 +20,7 @@ Configuring the reverse DNS resolution for an instance is especially useful when
 ## Requirements
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
-- A domain name with its A record pointing to the instance
+- A domain name with its `A` record pointing to the instance
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
@@ -41,7 +41,7 @@ You can also edit the reverse path directly via the icon in the **Reverse DNS** 
 
 > [!primary]
 >
-If the modification does not work as expected, verify that the A record is correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited the A record.
+If the modification does not work as expected, verify that the `A` record is correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited the `A` record.
 >
 
 ## Go further <a name="gofurther"></a>

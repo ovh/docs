@@ -20,7 +20,7 @@ Die Konfiguration der umgekehrten DNS-Auflösung für eine Instanz ist besonders
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem Kunden-Account.
-- Sie verfügen über einen Domainnamen, dessen A-Eintrag die Instanz als Ziel hat.
+- Sie verfügen über einen Domainnamen, dessen `A`-Eintrag die Instanz als Ziel hat.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -41,7 +41,7 @@ Sie können den Reverse-Pfad auch direkt mithilfe des Icons in der Spalte "**Rev
 
 > [!primary]
 >
-Wenn die Änderung nicht wie erwartet funktioniert, überprüfen Sie, ob der Eintrag vom Typ A in der DNS-Zone Ihres Domainnamens korrekt konfiguriert ist. Bedenken Sie, dass es bis zu 24 Stunden dauern kann, bis DNS-Zonenänderungen wirksam sind, falls Sie den A-Eintrag erst kürzlich bearbeitet haben.
+Wenn die Änderung nicht wie erwartet funktioniert, überprüfen Sie, ob der Eintrag vom Typ `A` in der DNS-Zone Ihres Domainnamens korrekt konfiguriert ist. Bedenken Sie, dass es bis zu 24 Stunden dauern kann, bis DNS-Zonenänderungen wirksam sind, falls Sie den `A`-Eintrag erst kürzlich bearbeitet haben.
 >
 
 ## Weiterführende Informationen <a name="gofurther"></a>
