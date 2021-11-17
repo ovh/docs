@@ -6,7 +6,7 @@ section: NSX
 order: 1
 ---
 
-**Last updated 29th June 2020**
+**Last updated 11/17/2021**
 
 ## Objective
 
@@ -16,18 +16,22 @@ NSX is a Software Defined Network (SDN) solution developed by VMware that is act
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) of which you are an administrative contact (to receive login credentials)
 - a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 
 VMWare NSX is only available from [the vSphere web client](../login-vsphere-interface/).
 
-From the vSphere web client homepage, click on `Networking & Security`{.action} in the left-hand menu.
+From the vSphere web client homepage, click on `Networking and Security`{.action} in the left-hand side of your screen.
+You can also click on `Networking and Security`{.action}
 
-![Networking and Security](images/nsx01.png){.thumbnail}
+![Networking and Security](images/Inter01en.png){.thumbnail}
 
-You will now be able to access the NSX homepage with all the related menus.
+You will now be able to access the NSX dashboard and all the related menus.
+
+![Networking and Security](images/Inter02en.png){.thumbnail}
+
 
 > [!primary]
 >
