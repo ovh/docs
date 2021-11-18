@@ -79,7 +79,7 @@ swift stat <container>
 >
 
 ```bash
-swift post -H 'X-Container-Meta-Access-Control-Allow-Origin: http://example.com'
+swift post -H 'X-Container-Meta-Access-Control-Allow-Origin: http://example.com' <container>
 swift post -H 'X-Container-Meta-Access-Control-Max-Age:3600' <container>
 swift post -H 'X-Container-Meta-Access-Control-Expose-Headers:X-Container-Meta-Access-Control-Allow-Origin' <container>
 # stat
