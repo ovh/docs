@@ -43,7 +43,7 @@ You can also edit the reverse path directly via the icon in the **Reverse DNS** 
 >
 If the modification does not work as expected, verify that the `A` record is correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited the `A` record.
 >
-If the domain is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, you can refer to [this guide](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+If the domain is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, you can refer to [our DNS zone guide](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/).
 >
 
 ## Go further <a name="gofurther"></a>
