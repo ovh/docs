@@ -33,7 +33,7 @@ On the left side, navigate to the `NSX Edges`{.action} section.
 
 ![NSX](images/en02nsx.png)
 
-Click on '+Add'{.action} then `Edge Services Gateway`{.action}.
+Click on `+Add`{.action} then `Edge Services Gateway`{.action}.
 
 ![AddNSX](images/en03add.png)
 
