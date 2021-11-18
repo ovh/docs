@@ -16,20 +16,26 @@ An *NSX Edge Services Gateway* is a VMware appliance providing services such as 
 
 ## Requirements
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Be an Useristrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - Have a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 
 The following document will focus on deploying a standard appliance.
+
 First, go to the Networking and Security dashboard.
 en01image
+
 On the left side, navigate to the NSX Edges section.
 en02image
+
 Click on +Add then Edge Services Gateway.
 en03image
+
 The guided installation  window pops up.
+
 Fill in the basic information. Only the name is mandatory, the other fields are optional and will either be automatically created or be ignored if non applicable to your case. When done, click Next.
+
 (Leave Deploy Edge Appliance VM checked. unchecking it would create the rules and settings but nothing would be active until a VM is deployed. We are leaving High Availibility out of our scope for now)
 en04image
 
