@@ -15,7 +15,7 @@ order: 1
 
 ## Wprowadzenie
 
-Usługa [vRack](https://www.ovh.pl/rozwiazania/vrack/) to prywatna sieć, która umożliwia klientom kierowanie ruchu między serwerami dedykowanymi OVHcloud i innymi usługami OVHcloud. Umożliwia on również dodawanie instancji [Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/) do sieci prywatnej w celu utworzenia infrastruktury zasobów fizycznych i wirtualnych.
+Usługa [vRack](https://www.ovh.pl/rozwiazania/vrack/) to prywatna sieć, która umożliwia klientom kierowanie ruchu między serwerami dedykowanymi OVHcloud i innymi usługami OVHcloud. Umożliwia on również dodawanie [instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/) do sieci prywatnej w celu utworzenia infrastruktury zasobów fizycznych i wirtualnych.
 
 **Dowiedz się, jak skonfigurować instancje Public Cloud w ramach sieci vRack.**
 
@@ -48,7 +48,7 @@ Interfejs [Horizon](https://horizon.cloud.ovh.net/auth/login/) (niezależny od O
 
 Ten wielofunkcyjny interfejs techniczny pozwala na zarządzanie prawie wszystkimi operacjami OpenStack. Jest to jeden z niezbędnych interfejsów, jeśli potrzebujesz zarządzać więcej niż dwoma sieciami VLAN, dodawać prywatne interfejsy sieciowe do instancji, zarządzać obrazami dostosowanymi do Twoich potrzeb, itp.
 
-Zapoznaj się z [tym przewodnikiem](../tworzenie_dostepu_do_interfejsu_horizon/), aby zapoznać się z Horizon.
+Zapoznaj się z następującą [instrukcją](../tworzenie_dostepu_do_interfejsu_horizon/), aby zapoznać się z Horizon.
 
 > [!primary]
 > Horizon działa w danej strefie. Dlatego też należy pamiętać o wyborze logicznej (geograficznej) strefy roboczej w lewym górnym rogu interfejsu (GRA5, SBG3, BHS1 itd.).
@@ -56,15 +56,15 @@ Zapoznaj się z [tym przewodnikiem](../tworzenie_dostepu_do_interfejsu_horizon/)
 
 ### APIv6 OVHcloud
 
-Każde działanie podejmowane w Panelu klienta OVHcloud można wywołać za pomocą interfejsu [APIv6](https://api.ovh.com/) OVHcloud. Oferuje on nawet więcej możliwości niż interfejs graficzny.
+Każde działanie podejmowane w Panelu klienta OVHcloud można wywołać za pomocą interfejsu [APIv6 OVHcloud](https://api.ovh.com/). Oferuje on nawet więcej możliwości niż interfejs graficzny.
 
 Interfejs API jest mniej wizualny niż Panel klienta OVHcloud, ale pozwala na wykonanie dużej liczby operacji. Możesz zarządzać i dostosowywać VLAN, dodawać interfejsy do instancji lub tworzyć wysoko spersonalizowane serwery.
 
-Możesz zalogować się do niego z poziomu [naszej strony](https://api.ovh.com/) WWW, ale również wykorzystać go do tworzenia skryptów PHP lub Python. Dzięki temu możesz swobodnie automatyzować podstawowe zadania za pomocą skryptów, zoptymalizować własne funkcje i wiele więcej.
+Możesz po prostu uzyskać do niej dostęp z [naszej strony internetowej](https://api.ovh.com/), ale również wykorzystać go do tworzenia skryptów PHP lub Python. Dzięki temu możesz swobodnie automatyzować podstawowe zadania za pomocą skryptów, zoptymalizować własne funkcje i wiele więcej.
 
 Przed użyciem niektórych wywołań API może być konieczne pobranie różnych informacji, ponieważ wymagane jest wprowadzenie określonych danych.
 
-Zapoznaj się z [tym przewodnikiem](../../api/first-steps-with-ovh-api/), aby rozpocząć korzystanie z interfejsu APIv6 OVHcloud.
+Zobacz przewodnik [Pierwsze kroki z API OVHcloud](../../api/first-steps-with-ovh-api/) (EN), aby rozpocząć korzystanie z interfejsu APIv6 OVHcloud.
 
 ### API OpenStack
 
@@ -93,7 +93,7 @@ Następnie, w razie potrzeby, będziesz mógł korzystać z API dedykowanych dla
 >
 > Ponadto w API OpenStack może brakować niektórych funkcji w zależności od wersji klienta i systemu operacyjnego.
 Niniejszy przewodnik prezentuje najprostsze i najbardziej intuicyjne opcje.
-Możesz zapoznać się z [oficjalną dokumentacją](https://docs.openstack.org/){.external} OpenStack, jeśli chcesz dowiedzieć się więcej o jej używaniu.
+Możesz zapoznać się z [oficjalną dokumentacją OpenStack](https://docs.openstack.org/){.external}, jeśli chcesz dowiedzieć się więcej o jej używaniu.
 >
 
 ## W praktyce
@@ -122,7 +122,7 @@ Aby kontynuować konfigurację vRack, przejdź do sekcji [Tworzenie sieci VLAN w
 
 #### Za pomocą APIv6 OVHcloud
 
-Aby włączyć i zarządzać usługą vRack za pomocą interfejsu APIv6 OVHcloud, zapoznaj się z [tą częścią](../public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) przewodnika.
+Aby włączyć i zarządzać usługą vRack za pomocą interfejsu APIv6 OVHcloud, zapoznaj się z [tą częścią](../public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) (EN) odpowiedniego przewodnika.
 
 ### Etap 2: Tworzenie sieci VLAN w ramach usługi vRack
 
@@ -175,9 +175,9 @@ W następnym kroku wybierz żądane regiony, wprowadź nazwę prywatnej sieci, a
 
 #### Tworzenie sieci VLAN za pomocą interfejsu APIv6 OVHcloud
 
-Aby utworzyć sieć VLAN przy użyciu interfejsu APIv6 OVHcloud, zapoznaj się z [tą sekcją](../public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) odpowiedniego przewodnika.
+Aby utworzyć sieć VLAN przy użyciu interfejsu APIv6 OVHcloud, zapoznaj się z [tą sekcją](../public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN) odpowiedniego przewodnika.
 
-### Krok 3: Integracja instancji z usługą vRack
+### Etap 3: Integracja instancji z usługą vRack
 
 Możliwe są dwa scenariusze:
 
@@ -188,18 +188,18 @@ Możliwe są dwa scenariusze:
 
 ##### **W Panelu klienta OVHcloud**
 
-Jeśli potrzebujesz pomocy, zapoznaj się z tym przewodnikiem: [Tworzenie instancji w Panelu](../public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) klienta OVHcloud Podczas tworzenia instancji w etapie 4 można określić sieć prywatną, w której ma zostać zintegrowana instancja. Wybierz z rozwijanego menu utworzoną wcześniej usługę vRack.
+Jeśli potrzebujesz pomocy, zapoznaj się z tym przewodnikiem: [Tworzenie instancji](../public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) Podczas tworzenia instancji w etapie 4 można określić sieć prywatną, w której ma zostać zintegrowana instancja. Wybierz z rozwijanego menu utworzoną wcześniej usługę vRack.
 
 ![przypisz nową instancję](images/vrack6.png){.thumbnail}
 
 > [!warning]
-> W Panelu klienta OVHcloud będzie można podłączyć instancję *tylko do jednej* sieci vRack.
+> W Panelu klienta OVHcloud będzie można podłączyć instancję **tylko do jednej** sieci vRack.
 > Aby dodać kilka interfejsów, przejdź przez API OpenStack lub Horizon.
 >
 
 ##### **Za pomocą APIv6 OVHcloud**
 
-Przejdź do [tej sekcji](../public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) odpowiedniego przewodnika.
+Przejdź do [tej sekcji](../public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) (EN)odpowiedniego przewodnika.
 
 ##### **Za pomocą API OpenStack**
 
@@ -242,7 +242,7 @@ nova net-list
 ><br> - VLAN(s) niezbędny(e) do Twojej konfiguracji
 >
 
-Ponadto zapoznaj się z informacjami zawartymi w [tym przewodniku](../pierwsze_kroki_z_api_nova/):
+Należy również zwrócić uwagę na następujące informacje, jak wskazano w [Podręcznik użytkownika API Nova](../pierwsze_kroki_z_api_nova/):
 
 - Identyfikator lub nazwa klucza SSH OpenStack
 - Identyfikator typu instancji (flavor)
@@ -394,11 +394,11 @@ W wyświetlonym oknie wybierz sieci prywatne, które chcesz połączyć z instan
 
 ##### **Zarządzanie interfejsami sieciowymi za pomocą interfejsu APIv6 OVHcloud**
 
-Przejdź do [tej sekcji](../public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) odpowiedniego przewodnika.
+Przejdź do [tej sekcji](../public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) (EN) odpowiedniego przewodnika.
 
 ##### **Zarządzanie interfejsami sieciowymi za pomocą OpenStack Horizon**
 
-Zaloguj się do [interfejsu](https://horizon.cloud.ovh.net/auth/login/){.external} Horizon, jak wspomniano [powyżej](./#interfejs-horizon).
+Zaloguj się do [interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/){.external}, przy użyciu metody określonej w [pierwszej części niniejszego przewodnika](./#interfejs-horizon).
 
 Wybierz właściwą strefę roboczą.
 
@@ -529,7 +529,7 @@ nova show <ID-instance>
 +--------------------------------------+----------------------------------------------------------+
 | Property                             | Value                                                    |
 +--------------------------------------+----------------------------------------------------------+
-| Ext-Net network                      | xx.xx.xx.xx, 2001:41d0:xxx:xxxx::xxxx                    |  => twojepubliczne IP
+| Ext-Net network                      | xx.xx.xx.xx, 2001:41d0:xxx:xxxx::xxxx                    |  => twoje publiczne IP
 | MyVLAN-42 network                    | 192.168.0.x                                              | => twoje prywatne IP
 [...]
 nova show <wystąpienie identyfikatora>
@@ -543,7 +543,7 @@ openstack server show <ID-instance>
 | Field                                | Value                                                                   |
 +--------------------------------------+-------------------------------------------------------------------------+
 [...]
-| addresses                            | Ext-Net=xx.xx.xx.xx, 2001:41d0:xxx:xxxx::xxxx ; MyVLAN-42=192.168.0.x   | => publiczny adres IP; prywatne IP                                                                   
+| addresses                            | Ext-Net=xx.xx.xx.xx, 2001:41d0:xxx:xxxx::xxxx ; MyVLAN-42=192.168.0.x   | => publiczny adres IP; prywatne adres IP                                                                   
 [...]
 ```
 
@@ -598,7 +598,7 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Sprawdź również
 
-[Konfiguracja vRack dla Public Cloud przy użyciu interfejsu APIv6 OVHcloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/)
+[Konfiguracja vRack dla Public Cloud przy użyciu interfejsu APIv6 OVHcloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/) (EN)
 
 [Tworzenie kilku sieci vLAN w ramach usługi vRack](../../tworzenie-vlan-vrack/)
 
