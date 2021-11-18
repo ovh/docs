@@ -26,7 +26,7 @@ The first step is to create a container that will hold your files.
 
 If you use Horizon :
 
-- an [OpenStack user](https://docs.ovh.com/gb/en/public-cloud/creation-and-deletion-of-openstack-user/){.external}.
+- an [OpenStack user](https://docs.ovh.com/gb/en/public-cloud/creation-and-deletion-of-openstack-user/){.external}
 
 ## Instructions
 
@@ -108,7 +108,7 @@ Your container is now created:
 
 ![horizon container created](images/create-container-20211005155936971.png)
 
-You can also see it in your OVHcloud Control Panel
+You can also see it in your OVHcloud Control Panel.
 
 ![pcs dashboard](images/create-container-20211005160503200.png)
 
