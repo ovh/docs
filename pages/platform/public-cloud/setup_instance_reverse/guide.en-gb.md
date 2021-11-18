@@ -11,7 +11,7 @@ order: 7
 
 ## Objective
 
-Reverse DNS resolution generally means the mapping of a domain name (or host name) to an IP address. A DNS lookup of the associated IP address will then receive this domain name in response.
+Reverse DNS is the complement to a "forward" DNS resolution which resolves domain names into IP addresses. To set up the reverse DNS resolution means that an IP address will resolve into the domain name (or host name) it is mapped to. When a DNS lookup of the associated IP address is performed, this domain name is returned as the response.
 
 Configuring the reverse DNS resolution for an instance is especially useful when sending emails. A mail server's validation by spam protection systems will improve if a DNS lookup of the IP address resolves properly.
 
@@ -43,9 +43,13 @@ You can also edit the reverse path directly via the icon in the **Reverse DNS** 
 >
 If the modification does not work as expected, verify that the `A` record is correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited the `A` record.
 >
+If the domain is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, you can refer to [this guide](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+>
 
 ## Go further <a name="gofurther"></a>
 
 [First steps with Public Cloud instances](../public-cloud-first-steps/)
+
+[Editing an OVHcloud DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/)
 
 Join our community of users on <https://community.ovh.com/en/>.
