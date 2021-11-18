@@ -10,7 +10,7 @@ order: 02
 
 ## Objective
 
-An *NSX Edge Services Gateway* is a VMware appliance providing services such as Firewall, NAT, DHCP, VPN, Load Balancer and High Availability.
+The NSX Edge Services Gateway is a VMware appliance providing services such as Firewall, NAT, DHCP, VPN, Load Balancer and High Availability.
 
 **This guide explains how to deploy such an appliance**
 
@@ -21,7 +21,9 @@ An *NSX Edge Services Gateway* is a VMware appliance providing services such as 
 
 ## Instructions
 
-The following document will focus on deploying a standard appliance.
+You're about to embark in the NSX appliance deployment adventure.    
+We'll guide you step by step on how to set up an Edge Services Gateway with a connection inside your environment as well as another to communicate with the outside.   
+We're not in Kansas anymore.   
 
 First, go to the 'Networking and Security'{.action} dashboard.
 
@@ -123,7 +125,7 @@ The Gateway will deploy. It will show a Busy and Installing status until done.
 
 After some time, your appliance will show as Deployed.
 
-![Done](images/en17dones.png)
+![Final](images/en17done.png)
 
 Congratulations and welcome to the world of NSX!
 
