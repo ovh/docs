@@ -11,7 +11,7 @@ order: 7
 
 ## Ziel
 
-Reverse DNS-Auflösung bedeutet im Allgemeinen die Zuordnung eines Domainnamens (oder Hostnamens) zu einer IP-Adresse. Eine DNS-Abfrage der entsprechenden IP-Adresse erhält dann als Antwort diesen Domainnamen.
+Reverse DNS ist das ergänzende Gegenstück zur "*Forward*" DNS-Auflösung, die Domainnamen zu IP-Adressen auflöst. Mit Reverse DNS-Auflösung kann eine IP-Adresse zu dem Domainnamen (oder Hostnamen) aufgelöst werden, dem sie zugeordnet ist. Das bedeutet, dass DNS-Abfragen (*Lookup*) der entsprechenden IP-Adresse diesen Domainnamen zurückgeben.
 
 Die Konfiguration der umgekehrten DNS-Auflösung für eine Instanz ist besonders beim Versand von E-Mails nützlich. Die Validierung eines Mailservers durch Spamschutzsysteme verbessert sich, wenn eine DNS-Abfrage der IP-Adresse passend aufgelöst wird.
 
@@ -43,9 +43,13 @@ Sie können den Reverse-Pfad auch direkt mithilfe des Icons in der Spalte "**Rev
 >
 Wenn die Änderung nicht wie erwartet funktioniert, überprüfen Sie, ob der Eintrag vom Typ `A` in der DNS-Zone Ihres Domainnamens korrekt konfiguriert ist. Bedenken Sie, dass es bis zu 24 Stunden dauern kann, bis DNS-Zonenänderungen wirksam sind, falls Sie den `A`-Eintrag erst kürzlich bearbeitet haben.
 >
+Wenn die Domain von OVHcloud als Registrar verwaltet wird und OVHcloud DNS-Server verwendet, können Sie den Anweisungen in [unserer Anleitung zu DNS](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/) folgen.
+>
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
 [Die ersten Schritte mit Ihrer Public Cloud Instanz](../public-cloud-erste-schritte/)
+
+[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
