@@ -25,21 +25,21 @@ You're about to embark in the NSX appliance deployment adventure.
 We'll guide you step by step on how to set up an Edge Services Gateway with a connection inside your environment as well as another to communicate with the outside.   
 We're not in Kansas anymore.   
 
-First, go to the 'Networking and Security'{.action} dashboard.
+First, go to the `Networking and Security`{.action} dashboard.
 
 ![Menu](images/en01dash.png)
 
-On the left side, navigate to the 'NSX Edges'{.action} section.
+On the left side, navigate to the `NSX Edges`{.action} section.
 
 ![NSX](images/en02nsx.png)
 
-Click on '+Add'{.action} then 'Edge Services Gateway'{.action}.
+Click on '+Add'{.action} then `Edge Services Gateway`{.action}.
 
 ![AddNSX](images/en03add.png)
 
 The guided installation  window pops up.   
 Fill in the basic information. Only the name is mandatory, the other fields are optional and will either be automatically created or be ignored if non applicable to your case.   
-When done, click 'Next'{.action}.    
+When done, click `Next`{.action}.    
 *Leave Deploy Edge Appliance VM checked. unchecking it would create the rules and settings but nothing would be active until a VM is deployed. We are leaving High Availibility out of our scope for now*
 
 ![Basic](images/en04basic.png)
@@ -51,26 +51,26 @@ Create and confirm a compliant password.
 SSH option allows console access on port 22 if needed. We recommend leaving it off by default and only open access as needed.     
 FIPS mode enforces encryption and security levels compliant with the United States Federal Information Processing Standards.     
 The logging level can be adapted to your needs.    
-Click 'Next'{.action}
+Click `Next`{.action}
 
 ![Settings](images/en05settings.png)
 
 Next is the Deployment Configuration.     
-Select the destination datacenter (if you only have one datacenter in vSphere, there is no choice possible), the size of the appliance (Size will determine processing power and resource consumption) and hit the '+'{.action} button.
+Select the destination datacenter (if you only have one datacenter in vSphere, there is no choice possible), the size of the appliance (Size will determine processing power and resource consumption) and hit the `+`{.action} button.
 
 ![Deployment](images/en06deploy.png)
 
 In the next window, select where the appliance will leave within the chosen datacenter.    
 Only Cluster/Resource Pool and Datastore are mandatory field.   
 *vSphere will select the best suited places for the rest if you do not input data.*    
-Click 'Add'{.action}.
+Click `Add`{.action}.
 
 ![add](images/en07add.png)
 
-Back in the Deployment Configuration window, click 'Next'{.action}.
+Back in the Deployment Configuration window, click `Next`{.action}.
 
 Things get more serious with the Configure Interfaces.    
-Click on '+Add'{.action}
+Click on `+Add`{.action}
 
 ![Interfaces](images/en08inter.png)
 
@@ -79,42 +79,42 @@ There are 2 types of interfaces:
 - Internal will be confined to your network
 
 Let's name an interface and choose Uplink.   
-Click on the 'pen symbol'{.action} to select how it will connect out.
+Click on the `pen symbol`{.action} to select how it will connect out.
 
 ![Outside](images/en09out.png)
 
-Typically, in the 'Distributed Virtual Port Group'{.action} tab, the VM Network is the default outside access network.    
+Typically, in the `Distributed Virtual Port Group`{.action} tab, the VM Network is the default outside access network.    
 *If you customized your environment, select accordingly.*   
-Click 'OK'{.action}.
+Click `OK`{.action}.
 
 ![Net](images/en10standard.png)
 
 Back in the Interface configuration window, add a primary IP and subnet prefix for the interface.    
-Click 'OK'{.action}.
+Click `OK`{.action}.
 
 ![addIP](images/en10standard02.png)
 
 Add a second interface. This time it will be an Internal one.    
-Click on the 'pen symbol'{.action} again to select the network the interface will be part of.    
+Click on the `pen symbol`{.action} again to select the network the interface will be part of.    
 Also, add the primary IP and subnet prefix for the vNIC.
 
 ![Inside](images/en11in.png)
 
-Interfaces are ready. Review and click 'Next'{.action}.
+Interfaces are ready. Review and click `Next`{.action}.
 
 ![Ready](images/en12ready.png)
 
 Configure the Default Gateway for external access.   
 *This is not mandatory and can be disabled to be done later.*    
-Click 'Next'{.action}
+Click `Next`{.action}
 
 ![Gateway](images/en13gw.png)
 
-Enable or disable Firewall Default Policy and click 'Next'{.action}.
+Enable or disable Firewall Default Policy and click `Next`{.action}.
 
 ![Firewall](images/en14fw.png)
 
-Review the configuration and hit that 'Finish'{.action} button.
+Review the configuration and hit that `Finish`{.action} button.
 
 ![Review](images/en15review.png)
 
@@ -127,7 +127,8 @@ After some time, your appliance will show as Deployed.
 
 ![Final](images/en17done.png)
 
-Congratulations and welcome to the world of NSX!
+Congratulations and welcome to the world of NSX!   
+The journey is only starting.
 
 
 ## Go further
