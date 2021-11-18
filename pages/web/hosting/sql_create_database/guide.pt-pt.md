@@ -16,7 +16,7 @@ As bases de dados (BDD) servem para armazenar os designados «elementos dinâmic
 
 ## Requisitos
 
-- um [plano de alojamento web OVHcloud](https://www.ovh.pt/alojamento-partilhado/);
+- um [plano de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/);
 - uma base de dados disponível no seu plano de alojamento web;
 - acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), com as autorizações necessárias para gerir o plano de alojamento web. 
 
@@ -42,7 +42,7 @@ Na janela que se abrir, selecione a informação adequada e clique em `Seguinte`
 
 |Informação|Descrição|  
 |---|---|  
-|Motor da base de dados|Escolha o motor que a base de dados vai usar. As bases de dados incluídas num [plano de alojamento web OVHcloud](https://www.ovh.pt/alojamento-partilhado/) só dispõem de motores MySQL.|  
+|Motor da base de dados|Escolha o motor que a base de dados vai usar. As bases de dados incluídas num [plano de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) só dispõem de motores MySQL.|  
 |Versão da base de dados|Escolha a versão usada pelo motor da base de dados. Verifique se o seu site é compatível com a versão que escolheu. |  
 |Tipo de base de dados|Escolha a dimensão da base de dados. Esta dimensão refere-se ao espaço disponível de que a base de dados dispõe para efetuar armazenamento. |   
 
@@ -106,7 +106,7 @@ Para verificar os snapshots disponíveis e a sua data/hora de criação, clique 
 
 **Demasiadas conexões**
 
-As bases de dados dos alojamentos web têm um limite de 30 conexões simultâneas (variável de sistema *max_connections*). Assim, os pedidos SQL devem ser otimizados de modo a evitar este tipo de erro. Se continuar a encontrar problemas, considere tomar medidas alternativas; por exemplo: mudar para uma base de dados SQL privada ou fazer um [upgrade do plano de alojamento](https://www.ovh.pt/alojamento-partilhado/qual_alojamento_partilhado_escolher.xml). 
+As bases de dados dos alojamentos web têm um limite de 30 conexões simultâneas (variável de sistema *max_connections*). Assim, os pedidos SQL devem ser otimizados de modo a evitar este tipo de erro. Se continuar a encontrar problemas, considere tomar medidas alternativas; por exemplo: mudar para uma base de dados SQL privada ou fazer um [upgrade do plano de alojamento](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/). 
 
 **Erros de conexão ou «not found»**
 

@@ -20,7 +20,7 @@ El área de cliente de OVHcloud le permite crear firmas genéricas (pies de mens
 ## Requisitos
 
 - Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Tener una solución [Exchange](https://www.ovh.es/emails/hosted-exchange/) ya configuradas.
+- Tener una solución [Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) ya configuradas.
 
 
 ## Procedimiento

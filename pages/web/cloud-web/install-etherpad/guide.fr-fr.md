@@ -10,7 +10,7 @@ order: 2
 
 [Etherpad](https://etherpad.org/){.external} est un éditeur de texte en ligne collaboratif en temps réel. Il permet à plusieurs personnes d'écrire simultanément des fichiers texte via une interface web. Etherpad est écrit en JavaScript et utilise Node.js, une plateforme logicielle permettant de créer vos sites et API en JavaScript côté serveur.
 
-L'[hébergement Cloud Web OVH]({ovh_www}/hebergement-web/cloud-web.xml){.external} vous permet d'utiliser Node.js comme moteur d'exécution pour vos sites web, et donc d'y installer Etherpad ou toute autre application conçue pour Node.js.
+L'[hébergement Cloud Web OVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external} vous permet d'utiliser Node.js comme moteur d'exécution pour vos sites web, et donc d'y installer Etherpad ou toute autre application conçue pour Node.js.
 
 **Dans ce tutoriel, nous allons installer un serveur Etherpad sur un hébergement Cloud Web d'OVH et le mettre à disposition derrière votre nom de domaine.**
 
@@ -23,7 +23,7 @@ L'[hébergement Cloud Web OVH]({ovh_www}/hebergement-web/cloud-web.xml){.externa
 
 ### Ce que vous devez avoir
 
-- Disposer d'un [hébergement Cloud Web OVH]({ovh_www}/hebergement-web/cloud-web.xml){.external}.
+- Disposer d'un [hébergement Cloud Web OVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external}.
 - Avoir activé Node.js comme moteur d'exécution.
 - Avoir ajouté le nom de domaine concerné en tant que multisite et avoir défini Node.js comme étant son moteur d'exécution.
 - Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.

@@ -20,7 +20,7 @@ Funkcja Exchange pozwala na tworzenie kont e-mail dedykowanych do zasobów Twoje
 
 ## Wymagania początkowe
 
-- Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovh.pl/emaile/hosted-exchange/)
+- Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Posiadanie danych do logowania dla konta lub kont poczty elektronicznej mających dostęp do zasobu
 

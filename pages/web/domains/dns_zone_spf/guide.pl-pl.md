@@ -51,9 +51,9 @@ Upewnij się zatem, czy umieścisz w SPF źródła wysyłki, których używasz d
 
 Konfiguracja OVHcloud obejmuje następujące rozwiązania:
 
-- MX Plan samodzielnie lub w ramach pakietu [hostingowego OVHcloud](https://www.ovh.pl/hosting/){.external};
-- [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external};
-- [Hosted Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external}.
+- MX Plan samodzielnie lub w ramach pakietu [hostingowego OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external};
+- [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external};
+- [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}.
 
 Zalecamy, aby podczas zamawiania jednego z tych rozwiązań używać rekordu SPF zawierającego informacje o OVHcloud w strefie DNS Twojej domeny. Ten ostatni wygląda tak:
 
@@ -61,7 +61,7 @@ Zalecamy, aby podczas zamawiania jednego z tych rozwiązań używać rekordu SPF
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-Ta konfiguracja nie dotyczy ofert Provider Exchange i [Private Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external}.
+Ta konfiguracja nie dotyczy ofert Provider Exchange i [Private Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}.
 
 W przypadku oferty Exchange Provider konfiguracja jest następująca:
 
@@ -110,7 +110,7 @@ W oknie, które się wyświetli, pojawi się kilka rekordów DNS. Jeśli chcesz 
 
 - [Dodaj rekord TXT](#txtrecord): dla użytkowników, którzy są ostrzeżeni lub mają już pełny wpis. Na przykład, dostawca rozwiązania poczty elektronicznej przekazuje Ci wartość.
 - [Dodaj rekord SPF](#spfrecord): dla użytkowników, którzy nie posiadają całego rekordu. Na przykład dysponujesz tylko adresem IP lub nazwą hosta serwera e-mail.
-- [Dodaj rekord SPF ](#spfrecordovhcloud)**i użyj konfiguracji OVHcloud**: dla użytkowników posiadających tylko oferty e-mail OVHcloud dla ich domeny (poza [Private Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external} i Exchange Provider).
+- [Dodaj rekord SPF ](#spfrecordovhcloud)**i użyj konfiguracji OVHcloud**: dla użytkowników posiadających tylko oferty e-mail OVHcloud dla ich domeny (poza [Private Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external} i Exchange Provider).
 
 ![domena](images/spf_records_add_entry.png){.thumbnail}
 

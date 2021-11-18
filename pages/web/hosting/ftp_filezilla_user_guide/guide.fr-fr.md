@@ -8,7 +8,7 @@ section: 'FTP et SSH'
 
 Retrouvez dans ce guide de l'aide concernant l'utilisation du logiciel FileZilla.
 
-Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/fr/hebergement-web/faq/){.external} disponibles.
+Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovhcloud.com/fr/web-hosting/){.external} disponibles.
 
 > [!warning]
 >

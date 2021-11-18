@@ -60,7 +60,7 @@ Po dokonaniu zmiany hasła do konta e-mail zaktualizuj te informacje w swoim pro
 ## Logowanie SSH
 Opcja logowania przez SSH (Secure Shell) jest dostępna od oferty hostingu www PRO. Dane do logowania są takie same, jak dane do FTP. 
 
-Zapoznaj się z [naszą ofertą hostingu www](https://www.ovh.pl/hosting/).
+Zapoznaj się z [naszą ofertą hostingu www](https://www.ovhcloud.com/pl/web-hosting/).
 
 
 ## Moduły

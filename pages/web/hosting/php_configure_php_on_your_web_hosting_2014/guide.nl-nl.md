@@ -11,18 +11,18 @@ order: 1
 
 ## Introductie
 
-Er zijn enorm veel verschillende websites op het internet. Met uw [OVH webhosting](https://www.ovh.nl/shared-hosting/){.external} kunt u uw eigen website online zetten, mits deze compatibel is met de [configuratie van onze infrastructuren](https://cluster028.hosting.ovh.net/infos/){.external}. Mogelijk wilt u de door uw hosting gebruikte PHP-versie wijzigen.
+Er zijn enorm veel verschillende websites op het internet. Met uw [OVH webhosting](https://www.ovhcloud.com/nl/web-hosting/){.external} kunt u uw eigen website online zetten, mits deze compatibel is met de [configuratie van onze infrastructuren](https://cluster028.hosting.ovh.net/infos/){.external}. Mogelijk wilt u de door uw hosting gebruikte PHP-versie wijzigen.
 
 **Deze handleiding beschrijft hoe u de PHP-versie op uw webhosting kunt bewerken.**
 
 ## Vereisten
 
-- U moet beschikken over een [OVH webhostingplan](https://www.ovh.nl/shared-hosting/){.external}.
+- U moet beschikken over een [OVH webhostingplan](https://www.ovhcloud.com/nl/web-hosting/){.external}.
 - Afhankelijk van de gebruikte methode, hebt u mogelijk toegang nodig tot het beheer van het webhostingplan via het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl), of de benodigde gegevens om u in te loggen op uw opslagruimte. 
 
 ## Instructie
 
-Momenteel bestaan er verschillende versies van de PHP-programmeertaal. Zoals gewoonlijk bieden verbeterde versies verschillende oplossingen en nieuw toegevoegde of verwijderde functies. OVH biedt de nieuwste voornaamste PHP-versies, te vinden op: <https://www.ovh.nl/shared-hosting/php.xml>. 
+Momenteel bestaan er verschillende versies van de PHP-programmeertaal. Zoals gewoonlijk bieden verbeterde versies verschillende oplossingen en nieuw toegevoegde of verwijderde functies. OVH biedt de nieuwste voornaamste PHP-versies, te vinden op: <https://www.ovhcloud.com/nl/web-hosting/uc-programming-language/>. 
 
 Aangezien bepaalde functies niet langer kunnen worden onderhouden met nieuwe versies, moet u **nagaan of de nieuwe PHP-versie compatibel is met uw webpagina**.
 
@@ -64,7 +64,7 @@ Er zijn twee manieren om de PHP-versie van uw webhosting te wijzigen:
 
 - **Het handmatig bewerken van een bestand in uw opslagruimte**: deze optie is meer technisch en vereist inloggen op uw opslagruimte, waar u het .ovhconfig-bestand kunt bewerken. Volg hiervoor de instructies in de OVH handleiding: [Configuratie van het .config-bestand op uw webhosting](https://docs.ovh.com/nl/hosting/ovhconfig-bestand-bewerken/){.external}.
 
-Voor de meest geavanceerde techneuten is de wijziging van de PHP-versie via een .htaccess-bestand niet langer mogelijk op de nieuwste [OVH webhostingplannen](https://www.ovh.nl/shared-hosting/){.external}. Het beïnvloeden van de PHP-versie via instellingen in het .htaccess-bestand wordt niet langer ondersteund door onze infrastructuren. Het is absoluut noodzakelijk dat u het .ovhconfig-bestand gebruikt. De bijbehorende procedure is te vinden in de handleiding [Configuratie van het .config-bestand op uw webhosting](https://docs.ovh.com/nl/hosting/ovhconfig-bestand-bewerken/){.external}.
+Voor de meest geavanceerde techneuten is de wijziging van de PHP-versie via een .htaccess-bestand niet langer mogelijk op de nieuwste [OVH webhostingplannen](https://www.ovhcloud.com/nl/web-hosting/){.external}. Het beïnvloeden van de PHP-versie via instellingen in het .htaccess-bestand wordt niet langer ondersteund door onze infrastructuren. Het is absoluut noodzakelijk dat u het .ovhconfig-bestand gebruikt. De bijbehorende procedure is te vinden in de handleiding [Configuratie van het .config-bestand op uw webhosting](https://docs.ovh.com/nl/hosting/ovhconfig-bestand-bewerken/){.external}.
 
 ## Verder
 

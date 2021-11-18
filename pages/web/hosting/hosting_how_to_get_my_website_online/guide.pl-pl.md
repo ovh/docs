@@ -18,9 +18,9 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
+- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że Twój hosting został zainstalowany
-- Posiadanie [domeny]({ovh_www}/domeny/){.external}, pod którą będzie Twoja strona WWW
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external}, pod którą będzie Twoja strona WWW
 - Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
@@ -83,7 +83,7 @@ Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać do
 
 - **program kompatybilny z protokołem FTP lub SFTP**: zainstaluj na Twoim komputerze odpowiedni program, np. FileZilla. Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
 
-- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową.  W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external} z dostępem SSH.
+- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową.  W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external} z dostępem SSH.
 
 #### 3. Zapisanie plików na przestrzeni dyskowej
 
@@ -112,7 +112,7 @@ Jeśli przenosisz istniejącą stronę WWW do OVH, pobierz bazę danych od poprz
 
 #### 2. Utworzenie bazy danych w OVH (opcjonalnie).
 
-Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVH](https://www.ovh.pl/hosting/){.external}, rozwiązania [Private SQL](https://www.ovh.pl/hosting/opcje-sql.xml){.external} lub [Cloud DB](https://www.ovh.pl/cloud-databases/){.external}), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
+Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}, rozwiązania [Private SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/){.external} lub [Cloud DB](https://www.ovh.pl/cloud-databases/){.external}), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
 
 Jeśli chcesz utworzyć nową bazę danych w OVH, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Zaznacz nazwę odpowiedniego hostingu i przejdź do zakładki `Baza danych`{.action}.
 

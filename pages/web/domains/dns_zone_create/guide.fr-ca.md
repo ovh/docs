@@ -40,7 +40,7 @@ Dès que la vérification aboutit, vous devez choisir d'activer ou non les entr�
 |Activer les entrées minimales ?|Détails|
 |---|---|
 |Oui|Sélectionnez ce choix si vous souhaitez personnaliser vous-même la zone DNS par la suite.|
-|Non|Sélectionnez ce choix si vous prévoyez d'utiliser des services OVHcloud comme un [hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}, la zone étant préconfigurée à cet effet.|
+|Non|Sélectionnez ce choix si vous prévoyez d'utiliser des services OVHcloud comme un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, la zone étant préconfigurée à cet effet.|
 
 ![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 

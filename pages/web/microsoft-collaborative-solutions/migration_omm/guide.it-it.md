@@ -16,7 +16,7 @@ section: 'Migrazione di account'
 
 ## Prerequisiti
 
-- Disporre di un account email OVH come le soluzioni [Exchange](https://www.ovh.it/emails/){.external}, [Email Pro](https://www.ovh.it/emails/email-pro/){.external} o MX Plan (all'interno di un piano MX Plan o in una [soluzione di hosting Web](https://www.ovh.it/hosting-web/){.external})
+- Disporre di un account email OVH come le soluzioni [Exchange](https://www.ovhcloud.com/it/emails/){.external}, [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external} o MX Plan (all'interno di un piano MX Plan o in una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external})
 - Disporre delle credenziali relative agli account email da migrare
 - Disporre delle credenziali relative agli account e-mail OVH che ricevono i dati migrati (gli account di destinazione).
 

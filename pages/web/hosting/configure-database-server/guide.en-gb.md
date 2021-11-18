@@ -16,7 +16,7 @@ With the Private SQL and Cloud Databases database servers, you can influence you
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external} or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/){.external}
+- a [Private SQL Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/){.external} or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/){.external}
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions

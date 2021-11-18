@@ -25,7 +25,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 
 ## Requisitos
 
-- Ter um endereço de [E-mail Pro](https://www.ovh.pt/emails/email-pro/).
+- Ter um endereço de [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
 - Dispor do software Thunderbird instalado no seu macOS.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
  

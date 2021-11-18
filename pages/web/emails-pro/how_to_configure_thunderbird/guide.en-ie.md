@@ -24,7 +24,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- an [Email Pro](https://www.ovh.ie/emails/email-pro/)account
+- an [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/)account
 - Thunderbird software installed on your Windows system
 - login credentials for the email account to be configured
  

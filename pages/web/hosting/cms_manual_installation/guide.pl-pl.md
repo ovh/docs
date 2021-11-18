@@ -43,7 +43,7 @@ Nasze usługi hostingu WWW są kompatybilne z popularnymi systemami zarządzania
 WordPress to oprogramowanie służące do utworzenia witryny internetowej lub bloga. Jest oparte na technologii PHP i udostępnia wiele narzędzi, w tym funkcję sprawdzania pisowni oraz wtyczki SEO.
 
 
-- [Moduł WordPress](https://www.ovh.pl/hosting/website/wordpress.xml)
+- [Moduł WordPress](https://www.ovhcloud.com/pl/web-hosting/uc-wordpress-website/)
 
 Zespół wsparcia OVHcloud nie jest upoważniony do odpowiadania na pytania dotyczące konfiguracji oprogramowania WordPress.
 
@@ -64,7 +64,7 @@ Joomla! to wielokrotnie nagradzane, łatwe w obsłudze oprogramowanie, które um
 Społeczność Joomla! jest bardzo duża i może zapewnić pomoc dotyczącą wszystkich dziedzin systemu CMS (pomoc, dokumentacja, wsparcie, kompozycje itd.) oraz współuczestniczyć w jego konfigurowaniu.
 
 
-- [Moduł Joomla! ](https://www.ovh.pl/hosting/website/joomla.xml)
+- [Moduł Joomla! ](https://www.ovhcloud.com/pl/web-hosting/uc-joomla-website/)
 
 Zespół wsparcia OVHcloud nie jest upoważniony do odpowiadania na pytania dotyczące konfiguracji oprogramowania Joomla!
 
@@ -87,7 +87,7 @@ Oprogramowanie jest stale rozwijane od 2005 roku. Stabilna wersja 1.7.6.2 jest d
 
 
 
-- [Moduł PrestaShop](https://www.ovh.pl/hosting/website/prestashop.xml)
+- [Moduł PrestaShop](https://www.ovhcloud.com/pl/web-hosting/uc-prestashop-website/)
 
 Zespół wsparcia OVHcloud nie jest upoważniony do odpowiadania na pytania dotyczące konfiguracji oprogramowania PrestaShop.
 
@@ -108,7 +108,7 @@ Pomoc można uzyskać na forach związanych z
 ### Drupal
 Drupal to powstała w 2000 roku bezpłatna platforma open-source oparta na technologii PHP. Drupal umożliwia szybkie tworzenie dynamicznych witryn internetowych. Rozwiązanie można dostosować, a korzysta z niego 1% witryn na całym świecie. 
 
--  [Moduł Drupal](https://www.ovh.pl/hosting/website/drupal.xml)
+-  [Moduł Drupal](https://www.ovhcloud.com/pl/web-hosting/uc-drupal-website/)
 
 Zespół wsparcia OVHcloud nie jest upoważniony do odpowiadania na pytania dotyczące konfiguracji oprogramowania Drupal.
 
@@ -132,6 +132,6 @@ Pomoc można uzyskać na forach związanych z [Drupal](https://www.drupal.org).
 
 [Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
 
-Zobacz nasze [rozwiązania hostingu WWW](https://www.ovh.pl/hosting/){.external}
+Zobacz nasze [rozwiązania hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

@@ -15,9 +15,9 @@ Unser Cloud Web Hosting Angebot kombiniert 20 Jahre Webhosting-Erfahrung mit der
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Cloud Web Hosting](https://www.ovh.de/hosting/cloud-web.xml) Angebot.
+- Sie verfügen über ein [Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) Angebot.
 - Sie haben die Bestätigungs-E-Mail zur Installation Ihres Cloud Web Hostings erhalten.
-- Sie besitzen eine [Domain](https://www.ovh.de/domains/), über die Ihre Website erreichbar sein wird.
+- Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/), über die Ihre Website erreichbar sein wird.
 - Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
 
 ## Beschreibung
@@ -30,7 +30,7 @@ Cloud Web Hosting bietet mehr Konfigurationsmöglichkeiten als ein klassisches W
 
 - **Ermitteln Sie die technischen Voraussetzungen für die Installation**: Möglicherweise müssen für Ihr Projekt bestimmte technische Voraussetzungen erfüllt sein. Überprüfen Sie diese am besten im Voraus.
 
-- **Stellen Sie sicher, dass Ihr Projekt mit Cloud Web Hosting technisch kompatibel ist**: Benötigen Sie eine bestimmte Runtime Engine oder SQL-Sprache? Falls Sie das noch nicht getan haben, überprüfen Sie, dass alles, was Sie brauchen, bei Ihrem [Cloud Web](https://www.ovh.de/hosting/cloud-web.xml) Hosting verfügbar ist.
+- **Stellen Sie sicher, dass Ihr Projekt mit Cloud Web Hosting technisch kompatibel ist**: Benötigen Sie eine bestimmte Runtime Engine oder SQL-Sprache? Falls Sie das noch nicht getan haben, überprüfen Sie, dass alles, was Sie brauchen, bei Ihrem [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) Hosting verfügbar ist.
 
 Nachdem Sie sich die verschiedenen Optionen angesehen und Ihr Projekt genau definiert haben, können Sie mit der Umsetzung beginnen.
 
@@ -44,7 +44,7 @@ Um zu den Runtime Engines Ihres Cloud Web Hostings zu gelangen, loggen Sie sich 
 
 Bei der Installation Ihres Hostings wird automatisch eine Engine erstellt und als `Standardauswahl` in der zugehörigen Tabelle angezeigt. Um eine bereits eingerichtete Runtime Engine zu bearbeiten, klicken Sie auf die drei Punkte rechts daneben und anschließend auf `Bearbeiten`{.action}. 
 
-Je nach [Cloud Web](https://www.ovh.de/hosting/cloud-web.xml) Angebot können Sie auch zusätzliche Runtime Engines hinzufügen. Klicken Sie hierzu auf den Button `Aktionen`{.action} und anschließend auf `Runtime Engine hinzufügen`{.action}. Bitte beachten Sie, das die maximale Anzahl an Runtime Engines von dem von Ihnen bestellten Cloud Web Angebot abhängig ist.
+Je nach [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) Angebot können Sie auch zusätzliche Runtime Engines hinzufügen. Klicken Sie hierzu auf den Button `Aktionen`{.action} und anschließend auf `Runtime Engine hinzufügen`{.action}. Bitte beachten Sie, das die maximale Anzahl an Runtime Engines von dem von Ihnen bestellten Cloud Web Angebot abhängig ist.
 
 Überprüfen Sie daher, bevor Sie fortfahren, dass Sie über die für Ihr Projekt notwendigen Runtime Engines verfügen.
 
@@ -111,7 +111,7 @@ Es gibt zwei mögliche Vorgehensweisen, um Ihr Projekt einzurichten. Wenn Sie me
 
 #### 1. OVH 1-Klick-Module verwenden
 
-Mit dieser Lösung können Sie auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVH stellt Ihnen 4 verschiedene 1-Klick-Module zur Verfügung. Nähere Informationen finden Sie auf der Webseite [„Erstellen Sie Ihre Website mit 1-Klick-Modulen“](https://www.ovh.de/hosting/website/){.external}.
+Mit dieser Lösung können Sie auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVH stellt Ihnen 4 verschiedene 1-Klick-Module zur Verfügung. Nähere Informationen finden Sie auf der Webseite [„Erstellen Sie Ihre Website mit 1-Klick-Modulen“](https://www.ovhcloud.com/de/web-hosting/uc-website/){.external}.
 
 Wenn Sie sich für die Verwendung eines unserer 1-Klick-Module entscheiden, klicken Sie bei dem entsprechenden Cloud Web Hosting auf den Tab `1 Klick Module`{.action} und anschließend auf `Ein Modul hinzufügen`{.action}. Nun können Sie auswählen, ob Sie eine „einfache“ (nicht personalisierbare) Installation oder die Installation „im Experten-Modus“ (mit anpassbaren Optionen) durchführen möchten.
 

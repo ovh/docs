@@ -30,7 +30,7 @@ Der Transferprozess für Top Level Domains (TLDs) des Ländercodes **UK** (**.uk
 
 ## Voraussetzungen
 
-- Sie verfügen über einen bei OVHcloud registrierten [.uk-Domainnamen](https://www.ovh.de/domains/).
+- Sie verfügen über einen bei OVHcloud registrierten [.uk-Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zum Verwalten der Domain (Domainadministrator).
 - Der Domainname muss noch aktiv sein, d.h. er ist nicht abgelaufen oder anderweitig seitens OVHcloud gesperrt.
 - Der Domainname darf nicht Gegenstand eines laufenden Rechtsstreits bei der zuständigen Registry [Nominet](https://www.nominet.uk/) sein.

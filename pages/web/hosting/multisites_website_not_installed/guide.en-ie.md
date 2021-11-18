@@ -24,7 +24,7 @@ You may see a `Site not installed` error page appear on your web browser, partic
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.ie/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - access to the [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) your domain name is attached to.
 

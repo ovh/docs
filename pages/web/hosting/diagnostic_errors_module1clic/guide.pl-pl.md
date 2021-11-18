@@ -27,7 +27,7 @@ Utworzenie [modułu za pomocą 1 kliknięcia](../hosting_www_przewodniki_dotycza
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu](https://www.ovh.pl/hosting/).
+- Posiadanie kompatybilnego [hostingu](https://www.ovhcloud.com/pl/web-hosting/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Korzystanie z funkcji [Module za 1 kliknięciem](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/), aby utworzyć nową stronę.
 
@@ -48,14 +48,14 @@ Jeśli pojawi się ta wiadomość po uruchomieniu instalacji modułu, nie można
 
 > [!primary]
 >
-> Zapoznaj się z porównaniem naszych [ofert hostingu](https://www.ovh.pl/hosting/).
+> Zapoznaj się z porównaniem naszych [ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/).
 >
 
 W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij `Web Cloud`{.action}, a następnie `Hosting`{.action}. Wybierz odpowiedni hosting i kliknij `Zmień ofertę` w sekcji `Abonament` - `Oferta`:
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Dzięki ofercie [Hosting Pro](https://www.ovh.pl/hosting/hosting-pro.xml) i [Hosting Performance](https://www.ovh.pl/hosting/hosting-performance.xml) możesz utworzyć do trzech modułów za pomocą 1 kliknięcia. Wraz z pakietem **Hosting Performance** będziesz mógł włączyć za darmo prywatny [serwer SQL](https://www.ovh.pl/hosting/opcje-sql.xml).
+Dzięki ofercie [Hosting Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) i [Hosting Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) możesz utworzyć do trzech modułów za pomocą 1 kliknięcia. Wraz z pakietem **Hosting Performance** będziesz mógł włączyć za darmo prywatny [serwer SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
 
 #### Rozdział 2: usuń niewykorzystaną bazę danych <a name="delete-database"></a>
 
@@ -76,14 +76,14 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 > [!primary]
 >
-> Zapoznaj się z porównaniem naszych [ofert baz danych](https://www.ovh.pl/hosting/opcje-sql.xml)
+> Zapoznaj się z porównaniem naszych [ofert baz danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/)
 >
 
 #### Rozdział 4: zainstalować moduł na bazie danych
 
 Aby zainstalować moduł na bazie danych, której już używasz, [użyj zaawansowanego](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#instalacja-w-trybie-zaawansowanym)trybu instalacji nowego **modułu za pomocą 1 kliknięcia**.
 
-Aby odnaleźć dane do logowania do bazy danych, sprawdź nasz [FAQ](https://www.ovh.pl/hosting/faq/).
+Aby odnaleźć dane do logowania do bazy danych, sprawdź nasz [FAQ](https://www.ovhcloud.com/pl/web-hosting/).
 
 ### "Katalog instalacji nie jest pusty"
 
@@ -118,7 +118,7 @@ W tej sytuacji [zaloguj się przez FTP](../logowanie-przestrzen-dyskowa-ftp-host
 
 Po uruchomieniu instalacji modułu w trybie zaawansowanym otrzymałeś wiadomość e-mail z informacją, że moduł nie może się łączyć z wskazaną bazą danych. 
 
-Należy więc sprawdzić dane dostępowe do bazy danych. Aby je znaleźć, sprawdź nasz [FAQ](https://www.ovh.pl/hosting/faq/).
+Należy więc sprawdzić dane dostępowe do bazy danych. Aby je znaleźć, sprawdź nasz [FAQ](https://www.ovhcloud.com/pl/web-hosting/).
 
 Następnie usuń moduł w zakładce `Moduły za 1 kliknięciem`{.action}:
 

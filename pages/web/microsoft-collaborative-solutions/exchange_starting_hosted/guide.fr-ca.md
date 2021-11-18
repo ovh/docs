@@ -16,7 +16,7 @@ Le service Exchange Hébergé permet de bénéficier d’adresses e-mail profess
 
 ## Prérequis
 
-- Avoir souscrit une offre [Exchange Hébergé](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external}.
+- Avoir souscrit une offre [Exchange Hébergé](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}.
 - Avoir reçu l’e-mail vous confirmant l’installation de votre solution Exchange Hébergé.
 - Disposer d'un nom de domaine.
 - Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.

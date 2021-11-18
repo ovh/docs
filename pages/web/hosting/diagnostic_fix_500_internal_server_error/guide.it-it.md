@@ -32,7 +32,7 @@ A volte provengono anche da un aggiornamento effettuato **automaticamente** da u
 
 ## Prerequisiti
 
-- Disporre di un'[offerta di hosting condiviso](https://www.ovh.it/hosting-web/)
+- Disporre di un'[offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -83,7 +83,7 @@ In seguito, nella guida "[Utilizzare FileZilla con il tuo hosting](../hosting_co
 
 Per ragioni di sicurezza, il tuo sito nasconde gli eventuali dettagli sull'origine dell'errore 500 a chiunque vi si connetta tramite un browser web.
 
-Se vuoi avere accesso a questi dettagli, dal piano di hosting [pro2014](https://www.ovh.it/hosting-web/hosting-web-pro.xml) puoi connetterti al tuo sito tramite una [connessione ssh](../hosting_condiviso_il_protocollo_ssh/).
+Se vuoi avere accesso a questi dettagli, dal piano di hosting [pro2014](https://www.ovhcloud.com/it/web-hosting/professional-offer/) puoi connetterti al tuo sito tramite una [connessione ssh](../hosting_condiviso_il_protocollo_ssh/).
 
 ### Ripristina il tuo sito allo stato precedente <a name="restore"></a>
 

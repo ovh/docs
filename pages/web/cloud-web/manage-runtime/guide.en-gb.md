@@ -15,14 +15,14 @@ With a Cloud Web hosting plan, you can choose from a range of different coding l
 
 ## Requirements
 
-- a [Cloud Web hosting plan](https://www.ovh.co.uk/web-hosting/cloud-web.xml)
+- a [Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/)
 - access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 With Cloud Web, you can pick from one or more runtime environments that are best adapted to your project. The runtime environment you choose will depend on the kind of project you want to set up. 
 
-So if you have not done so yet, **please ensure that your project is compatible with your Cloud Web hosting plan**. The available coding languages are listed on the [product page](https://www.ovh.co.uk/web-hosting/cloud-web.xml). 
+So if you have not done so yet, **please ensure that your project is compatible with your Cloud Web hosting plan**. The available coding languages are listed on the [product page](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/). 
 
 Once you have chosen the exact runtime environments you will use, you can start following the steps below.
 
@@ -38,7 +38,7 @@ The table that appears will list the runtime environments currently added to you
 
 There are several different ways you can manage the runtime environments on your Cloud Web hosting plan:
 
-- [add or modify a runtime environment](./#21-add-or-modify-a-runtime-environment) (the maximum number of runtime environments will vary depending on the [plan you have selected](https://www.ovh.co.uk/web-hosting/cloud-web.xml){.external})
+- [add or modify a runtime environment](./#21-add-or-modify-a-runtime-environment) (the maximum number of runtime environments will vary depending on the [plan you have selected](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/){.external})
 - define a runtime environment as a default choice
 - delete a runtime environment
 
@@ -123,7 +123,7 @@ Once you have entered this information, click `Confirm`{.action}. Please ensure 
 > In our example, only PHP and Node.js environments have been created. In your project, you may be using Ruby or Python. In this case, the operations described below are
 > applicable.
 > 
-> You can use two different runtime environments alongside each other depending on which [Cloud Web hosting plan](https://www.ovh.co.uk/web-hosting/cloud-web.xml){.external} you choose.
+> You can use two different runtime environments alongside each other depending on which [Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/){.external} you choose.
 > 
 
 Once you have the runtime environments you need for your project, make sure they are linked to your multisites. To do this, go to the `Multisite`{.action} tab of the Cloud Web hosting plan concerned. 

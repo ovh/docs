@@ -25,7 +25,7 @@ Por exemplo, o seu endereço de e-mail é **john.smith@mydomain.ovh** e o seu al
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Dispor de uma solução de e-mail OVHcloud que deve ter sido previamente configurada (**MX Plan** (Nova versão), proposta entre as nossas [ofertas de alojamento web](https://www.ovh.pt/alojamento-partilhado/) ou encomendada separadamente como solução autónoma, [**Hosted Exchange**](https://www.ovh.pt/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.pt/emails/email-pro/)).
+- Dispor de uma solução de e-mail OVHcloud que deve ter sido previamente configurada (**MX Plan** (Nova versão), proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) ou encomendada separadamente como solução autónoma, [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/)).
 
 ## Instruções
 

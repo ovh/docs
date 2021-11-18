@@ -50,7 +50,7 @@ A first vSwitch exists but only has a `vmnic2` interface.
 > [!primary]
 >
 > Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-) or via the OVHcloud API.
+ or via the OVHcloud API.
 >
 
 #### Explanations

@@ -27,7 +27,7 @@ order: 01
 
 ## Requisitos
 
-- Disponer de un servicio de correo en OVHcloud, como una solución [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external} o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}).
+- Disponer de un servicio de correo en OVHcloud, como una solución [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external} o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}).
 - Disponer del nombre de usuario y la contraseña de las cuentas de correo electrónico que quiera migrar (las cuentas de origen).
 - Disponer del nombre de usuario y la contraseña de las cuentas de correo electrónico de OVHcloud que recibirán los datos que se migran (las cuentas de destino).
 
@@ -46,7 +46,7 @@ Las instrucciones siguientes se dividen en dos partes:
 
 ### Outlook
 
-Si tiene una cuenta de correo [Exchange de OVHcloud](https://www.ovh.com/world/es/emails/hosted-exchange/), puede exportarla directamente en formato PST desde el área de cliente.
+Si tiene una cuenta de correo [Exchange de OVHcloud](https://www.ovhcloud.com/es/emails/hosted-exchange/), puede exportarla directamente en formato PST desde el área de cliente.
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y acceda al apartado `Web Cloud`{.action}. En la columna izquierda, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. Haga clic en el nombre del servicio Hosted Exchange correspondiente.
 

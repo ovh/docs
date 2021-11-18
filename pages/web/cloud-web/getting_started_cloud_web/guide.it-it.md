@@ -15,9 +15,9 @@ La nuova soluzione di hosting Cloud Web combina i nostri 20 anni di esperienza n
 
 ## Prerequisiti
 
-- Disporre di un piano di hosting [Cloud Web](https://www.ovh.it/hosting-web/cloud-web.xml) attivo
+- Disporre di un piano di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Cloud Web
-- Disporre di un [dominio](https://www.ovh.it/domini/) attivo, che corrisponderà all’indirizzo del tuo sito
+- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/) attivo, che corrisponderà all’indirizzo del tuo sito
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -30,7 +30,7 @@ Al fine di adattarsi al meglio alle tue esigenze, il Cloud Web offre più opzion
 
 - **recuperare i prerequisiti tecnici per l’installazione**: è possibile che il progetto che hai in mente necessiti di prerequisiti particolari, pertanto assicurati di esserne a conoscenza;
 
-- **verificare la compatibilità tecnica del tuo progetto con il Cloud Web**: hai bisogno di un programma d’esecuzione o di un database in particolare? Se non l’hai ancora fatto, accertati che sia disponibile con la tua soluzione di hosting [Cloud Web](https://www.ovh.it/hosting-web/cloud-web.xml).
+- **verificare la compatibilità tecnica del tuo progetto con il Cloud Web**: hai bisogno di un programma d’esecuzione o di un database in particolare? Se non l’hai ancora fatto, accertati che sia disponibile con la tua soluzione di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/).
 
 Dopo aver valutato le diverse possibilità tra cui scegliere, puoi iniziare a metterlo online.
 
@@ -44,7 +44,7 @@ Per accedere al programma d’esecuzione del tuo hosting Cloud Web, effettua l�
 
 Nel momento in cui installi il tuo hosting, un programma viene utilizzato automaticamente e inserito come `Opzione predefinita`. Per modificare il programma d’esecuzione già configurato, clicca sui 3 puntini a destra, poi su `Modifica`{.action}. 
 
-In base alla tua soluzione di [Cloud Web](https://www.ovh.it/hosting-web/cloud-web.xml) puoi anche aggiungere programmi d’esecuzione aggiuntivi cliccando su `Azioni`{.action} > `Aggiungi un programma d’esecuzione`{.action}. Ti ricordiamo che il numero massimo di programmi d’esecuzione dipende dalla soluzione Cloud Web che hai ordinato.
+In base alla tua soluzione di [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) puoi anche aggiungere programmi d’esecuzione aggiuntivi cliccando su `Azioni`{.action} > `Aggiungi un programma d’esecuzione`{.action}. Ti ricordiamo che il numero massimo di programmi d’esecuzione dipende dalla soluzione Cloud Web che hai ordinato.
 
 Da questo momento, prima di proseguire, assicurati di disporre del programma o più programmi d’esecuzione necessari al tuo progetto.
 
@@ -111,7 +111,7 @@ Per realizzare l’installazione del tuo progetto ci sono due possibilità. Ripe
 
 #### 5.1. Utilizza i nostri moduli in 1 click
 
-Questa soluzione ti permette di usufruire di un CMS pronto all’uso e personalizzabile (tema, contenuti, ecc...). OVH propone 4 moduli in 1 click che permettono di installare un CMS in modo semplice e veloce. Per saperne di più accedi alla pagina [Crea il tuo sito con i moduli in 1 click](https://www.ovh.it/hosting-web/website/){.external}.
+Questa soluzione ti permette di usufruire di un CMS pronto all’uso e personalizzabile (tema, contenuti, ecc...). OVH propone 4 moduli in 1 click che permettono di installare un CMS in modo semplice e veloce. Per saperne di più accedi alla pagina [Crea il tuo sito con i moduli in 1 click](https://www.ovhcloud.com/it/web-hosting/uc-website/){.external}.
 
 Se vuoi optare per l’utilizzo di uno dei nostri moduli, sempre dopo aver selezionato il Cloud Web dallo Spazio Cliente, seleziona la scheda `CMS in 1 click`{.action}, poi su `Aggiungi un modulo`{.action}. A questo punto puoi dare avvio a un’installazione in modalità “semplice” (non personalizzabile) o in modalità “avanzata” (possibilità di personalizzare alcuni elementi).
 

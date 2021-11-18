@@ -20,8 +20,8 @@ Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de dom�
 
 ## Requisitos
 
-- Ter um serviço [de alojamento web OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external} compatível.
-- Dispor de um ou vários [domínios](https://www.ovh.pt/dominios/){.external}.
+- Ter um serviço [de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
+- Dispor de um ou vários [domínios](https://www.ovhcloud.com/pt/domains/){.external}.
 - Poder alterar a configuração dos seus nomes de domínio (a [zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/)).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
@@ -63,7 +63,7 @@ Esta etapa só se aplica se tiver selecionado "Adicionar um domínio registado n
 > [!primary]
 > Para adicionar um subdomínio, deve primeiro selecionar o domínio principal na lista (exemplo: mydomain.ovh). O passo seguinte permitir-lhe-á indicar o subdomínio (exemplo: **blog**.mydomain.ovh).
 
-Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu serviço de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, alguns elementos propostos não poderão ser selecionados.
+Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, alguns elementos propostos não poderão ser selecionados.
 
 ![multisite](images/add-multisite-step2.png){.thumbnail}
 
@@ -71,11 +71,11 @@ Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu
 |---|---|
 |Domínios|Por predefinição, o nome de domínio que selecionou é automaticamente indicado. Pode adicionar um subdomínio (por exemplo, **blog**.mydomain.ovh) e criar simultaneamente o subdomínio "www" correspondente (por exemplo, **www.blog**.mydomain.ovh). No final, este domínio será o endereço web do site que pretende publicar.|
 |Pasta raiz|Defina a pasta no seu espaço de armazenamento, para o qual o domínio aponta. É neste espaço que os ficheiros do site deverão ser publicados. Por exemplo, para blog.mydomain.ovh, a pasta raiz poderia ser um "blog". Se a pasta não existir, esta será criada automaticamente.|
-|SSL|Permite-lhe beneficiar de uma ligação segura (HTTPS://) no nome de domínio selecionado. Saiba mais na nossa [página sobre SSL](https://www.ovh.pt/ssl/){.external}. Ao ativar o SSL e o CDN (Content Delivery Network), poderá também beneficiar do protocolo **HTTP2** (este é ativado por predefinição no nosso datacenter de Gravelines).|
-|Ativar o CDN|Permite ativar o CDN (implementação de cache dos elementos estáticos do seu site, como as imagens) no nome de domínio selecionado. Saiba mais na [nossa página sobre CDN](https://www.ovh.pt/alojamento-partilhado/cdn.xml){.external}. Ao ativar o SSL e o CDN, poderá também beneficiar do protocolo **HTTP2** (este é ativado por predefinição no nosso datacenter de Gravelines).|
-|IP do país|Permite beneficiar de um endereço de IP geolocalizado (a partir de uma lista de países) para o nome de domínio selecionado. Obtenha mais informações na [nossa página sobre IP](https://www.ovh.pt/alojamento-partilhado/ip.xml){.external}.|
-|Ativar a firewall|Permite ativar uma firewall (análise de pedidos) no nome de domínio selecionado. Saiba mais na [nossa página sobre Mod Security](https://www.ovh.pt/alojamento-partilhado/mod_security.xml){.external}.|
-|Logs separados|Permite ativar um novo espaço de logs no domínio selecionado. Terá de escolher um nome de domínio a partir de uma lista que determinará o nome de acesso a esse novo espaço. Saiba mais na [nossa página sobre estatísticas detalhadas](https://www.ovh.pt/alojamento-partilhado/website_statistics.xml){.external}.|
+|SSL|Permite-lhe beneficiar de uma ligação segura (HTTPS://) no nome de domínio selecionado. Saiba mais na nossa [página sobre SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external}. Ao ativar o SSL e o CDN (Content Delivery Network), poderá também beneficiar do protocolo **HTTP2** (este é ativado por predefinição no nosso datacenter de Gravelines).|
+|Ativar o CDN|Permite ativar o CDN (implementação de cache dos elementos estáticos do seu site, como as imagens) no nome de domínio selecionado. Saiba mais na [nossa página sobre CDN](https://www.ovhcloud.com/pt/web-hosting/options/cdn/){.external}. Ao ativar o SSL e o CDN, poderá também beneficiar do protocolo **HTTP2** (este é ativado por predefinição no nosso datacenter de Gravelines).|
+|IP do país|Permite beneficiar de um endereço de IP geolocalizado (a partir de uma lista de países) para o nome de domínio selecionado. Obtenha mais informações na [nossa página sobre IP](https://www.ovhcloud.com/pt/web-hosting/options/){.external}.|
+|Ativar a firewall|Permite ativar uma firewall (análise de pedidos) no nome de domínio selecionado. Saiba mais na [nossa página sobre Mod Security](https://www.ovhcloud.com/pt/web-hosting/options/){.external}.|
+|Logs separados|Permite ativar um novo espaço de logs no domínio selecionado. Terá de escolher um nome de domínio a partir de uma lista que determinará o nome de acesso a esse novo espaço. Saiba mais na [nossa página sobre estatísticas detalhadas](https://www.ovhcloud.com/pt/web-hosting/website_statistics.xml){.external}.|
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifique o resumo que aparece.
 
@@ -115,13 +115,13 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 > ![multisite](images/add-multisite-external-step4.png){.thumbnail}
 >
 
- Aqui, deverá personalizar a adição do domínio. Tenha em atenção que algumas opções incluídas na sua oferta de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} não podem ser ativadas durante este processo. Deverá finalizar esta operação antes de as poder utilizar, alterando as definições dos parâmetros do multisite quando este for adicionado.
+ Aqui, deverá personalizar a adição do domínio. Tenha em atenção que algumas opções incluídas na sua oferta de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} não podem ser ativadas durante este processo. Deverá finalizar esta operação antes de as poder utilizar, alterando as definições dos parâmetros do multisite quando este for adicionado.
 
 |Informação|Descrição|
 |---|---|
 |Domínio|Indique o domínio que pretende utilizar. Se necessário, adicione um subdomínio (por exemplo, **blog**.mydomain.ovh) e, ao mesmo tempo, crie o subdomínio "www" correspondente (por exemplo, **www.blog**.mydomain.ovh). No final, este domínio será o endereço web do site que pretende publicar. Para finalizar a adição, certifique-se de que consegue alterar a configuração do domínio (a sua zona DNS).|
 |Pasta raiz| Defina a pasta no seu espaço de armazenamento, para o qual o domínio aponta. É neste espaço que os ficheiros do site deverão ser publicados. Por exemplo, para blog.mydomain.ovh, a pasta raiz poderia ser um "blog". Se a pasta não existir, esta será criada automaticamente.|
-|Ativar o IPv6|Permite ativar o protocolo IPv6 no domínio indicado. Obtenha mais informações na [nossa página sobre IP](https://www.ovh.pt/alojamento-partilhado/ip.xml){.external}.|
+|Ativar o IPv6|Permite ativar o protocolo IPv6 no domínio indicado. Obtenha mais informações na [nossa página sobre IP](https://www.ovhcloud.com/pt/web-hosting/options/){.external}.|
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifique o resumo que aparece.
 
@@ -150,7 +150,7 @@ Se, pelo contrário, pretender instalar manualmente o seu site web, deverá recu
 >
 > Se pretender adicionar vários websites, deverá repetir esta etapa.
 >
-> Lembre-se de que quanto maior for o número de sites no seu alojamento, maior será a solicitação de recursos atribuídos. [A página das nossas ofertas de alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} indica o número de websites que pode alojar no seu espaço.
+> Lembre-se de que quanto maior for o número de sites no seu alojamento, maior será a solicitação de recursos atribuídos. [A página das nossas ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} indica o número de websites que pode alojar no seu espaço.
 >
 
 ## Quer saber mais?

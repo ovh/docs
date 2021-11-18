@@ -73,7 +73,7 @@ Zodra alle gegevens correct zijn ingevoerd, klikt u op snel verbinden om de verb
 
 ## SFTP-verbinding
 De SFTP (voor SSH File Transfer Protocol) is een FTP-verbinding op de port 22 en verschaft aldus een ​​veilige verbinding.
-Let op, dit soort verbinding is slechts geldig via het [Pro](https://www.ovh.com/fr/hebergement-web/) aanbod.
+Let op, dit soort verbinding is slechts geldig via het [Pro](https://www.ovhcloud.com/fr/web-hosting/) aanbod.
 Hiermee kunt u bestandsrechten wijzigen die u niet kunt uitvoeren, terwijl u bijvoorbeeld bent ingelogd in FTP op port 21.
 
 Om verbinding te maken met de remote server, moet u in het groene vak hierboven, het volgende invoeren:

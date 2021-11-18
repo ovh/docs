@@ -29,7 +29,7 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Posiadanie [hostingu WWW](https://www.ovh.pl/hosting/){.external}.
+- Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 
 ## W praktyce
 
@@ -135,7 +135,7 @@ Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.act
 #### Konfiguracja opcji CDN Security
 
 > [!primary]
->  poniższe opcje wymagają zamówienia na [CDN security](https://www.ovh.pl/hosting/cdn.xml) lub [CDN Advanced](https://www.ovh.pl/hosting/cdn.xml)
+>  poniższe opcje wymagają zamówienia na [CDN security](https://www.ovhcloud.com/pl/web-hosting/options/cdn/) lub [CDN Advanced](https://www.ovhcloud.com/pl/web-hosting/options/cdn/)
 
 Przejdź do karty `MultiSite`{.action} Twojego hostingu, kliknij `...`{.action} po prawej stronie MultiSite, a następnie `Zmień CDN`{.action}. 
 

@@ -1,5 +1,5 @@
 ---
-title: 'Déployer cPanel sur centOS7'
+title: 'Déployer cPanel sur un VPS'
 slug: cpanel
 excerpt: 'Découvrez comment instancier un VPS avec l’application cPanel pré-installée.'
 section: 'Utilisation avancée'
@@ -45,7 +45,7 @@ Une fois que vous avez reçu l'e-mail avec le lien unique, cliquez sur ce lien p
 
 > [!primary]
 >
-> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l’aide de l’utilisateur CentOS et exécutez la commande « whmlogin » pour générer un nouveau lien.
+> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l’aide de l’utilisateur CentOS et exécutez la commande « sudo whmlogin » pour générer un nouveau lien.
 >
 
 L'URL citée plus haut vous permet de vous connecter sans informations d'identification (utilisateur et mot de passe) à votre interface WHM.

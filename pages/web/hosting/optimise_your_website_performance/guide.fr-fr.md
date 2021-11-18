@@ -20,9 +20,9 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 
 ## Prérequis
 
-- Un [hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}
+- Un [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}
 - Un e-mail confirmant que votre hébergement web a été configuré;
-- Un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} lié à votre hébergement web;
+- Un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} lié à votre hébergement web;
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
@@ -45,9 +45,9 @@ Les réponses à ces questions peuvent vous aider à cibler certains points spé
 
 L’utilisation des CMS comme WordPress, PrestaShop, Drupal ou Joomla! nécessite plusieurs bibliothèques pour qu’une seule page web puisse gérer un grand nombre d’éléments.
 Les navigateurs Internet doivent pouvoir charger et lire tous ces éléments.
-Nous fournissons des recommandations sur les solutions offertes par l’hébergement web, lesquelles peuvent être utilisées pour les CMS répertoriés ci-dessus sur la [page du produit](https://www.ovh.com/fr/hebergement-web/){.external}.
+Nous fournissons des recommandations sur les solutions offertes par l’hébergement web, lesquelles peuvent être utilisées pour les CMS répertoriés ci-dessus sur la [page du produit](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 
-Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](https://www.ovh.com/fr/hebergement-web/quel_hebergement_mutualise_choisir.xml){.external}.
+Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](https://www.ovhcloud.com/fr/web-hosting/uc-best-web-hosting/){.external}.
 
 
 ### Étape 2 : Vérification de la version PHP
@@ -157,7 +157,7 @@ Découvrez notre [solution CDN](https://www.ovh.com/fr/cdn/){.external}.
 > [!primary]
 > Cette étape est facultative si vous n’utilisez pas de CMS.
 
-Pour vous assurer que votre forfait d’hébergement est adaptée aux besoins de votre CMS, vous pouvez consulter une comparaison de nos services sur [la page du produit](https://www.ovh.com/fr/hebergement-web/){.external}. 
+Pour vous assurer que votre forfait d’hébergement est adaptée aux besoins de votre CMS, vous pouvez consulter une comparaison de nos services sur [la page du produit](https://www.ovhcloud.com/fr/web-hosting/){.external}. 
 
 - **Utilisation d’un plugin en cache :** L’utilisation d’un CMS implique de nombreuses bibliothèques, si bien qu’une seule page web peut devoir traiter un grand nombre d’éléments. Pour optimiser votre CMS, vous devez utiliser plusieurs plugins en cache pour éviter une régénération du contenu de votre site web chaque fois que le chargement d’une page est en cours. Il est recommandé de rechercher des plugins en cache sur les sites web de la communauté associés au CMS que vous utilisez (Joomla! - PrestaShop - WordPress) pour éviter la régénération de tout le contenu de votre site web chaque fois que vous chargez la page web.
 
@@ -233,7 +233,7 @@ Par exemple :
 
 #### SQL privé
 Si, en dépit de toutes les modifications et mesures d’optimisation que vous avez appliquées, la base de données est toujours lente, ou si un grand nombre de requêtes sont envoyées à la base de données, vous pourrez éventuellement opter pour notre forfait SQL privé pour disposer de plus de ressources.
-Vous trouvez une comparaison de nos offres sur [sur le site du produit](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external}.
+Vous trouvez une comparaison de nos offres sur [sur le site du produit](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external}.
 
 ## Aller plus loin
 

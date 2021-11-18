@@ -25,7 +25,7 @@ Na przykład adres e-mail to **john.smith@mydomain.ovh** oraz alias **anonymous@
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Posiadanie rozwiązania poczty elektronicznej OVHcloud, które musi zostać wcześniej skonfigurowane (**MX Plan** (Nowa wersja), proponowane w naszej [ofercie hostingu](https://www.ovh.pl/hosting/) lub zamówione oddzielnie jako rozwiązanie autonomiczne, [**Hosted Exchange**](https://www.ovh.pl/emaile/hosted-exchange/) lub [**Email Pro**](https://www.ovh.pl/emaile/email-pro/))
+- Posiadanie rozwiązania poczty elektronicznej OVHcloud, które musi zostać wcześniej skonfigurowane (**MX Plan** (Nowa wersja), proponowane w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/) lub zamówione oddzielnie jako rozwiązanie autonomiczne, [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/))
 
 ## W praktyce
 

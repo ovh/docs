@@ -25,7 +25,7 @@ Na Twoim hostingu OVHcloud możesz użyć skryptów do automatyzacji niektórych
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu WWW](https://www.ovh.pl/hosting/).
+- Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce

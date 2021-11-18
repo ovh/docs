@@ -14,7 +14,7 @@ Un database è un insieme di dati strutturati e organizzati per archiviare e acc
 SQL è il linguaggio che consente di richiedere al database di inserire, modificare, recuperare o eliminare dati.
 
 Le soluzioni di hosting condiviso OVH includono di default database SQL. Il loro numero e la loro dimensione massima dipende dall'offerta che scegli.
-Per visualizzarne tutte le nostre offerte di hosting, [clicca qui](https://www.ovh.it/hosting-web/).
+Per visualizzarne tutte le nostre offerte di hosting, [clicca qui](https://www.ovhcloud.com/it/web-hosting/).
 
 Questi database sono accessibili solo dagli hosting condivisi OVH, quindi non è possibile collegarli con siti o applicazioni esterne a OVH.
 

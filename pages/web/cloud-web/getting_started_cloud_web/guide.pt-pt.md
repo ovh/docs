@@ -9,43 +9,43 @@ section: Introdução
 
 ## Sumário
 
-A nossa oferta de alojamento [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external} combina os nossos 20 anos de experiência no alojamento web e a robustez da nossa Public Cloud. Como nos alojamentos web clássicos, os seus sites são alojados num serviço gerido 24 horas por dia, mas com muitas mais funcionalidades, como o elevado desempenho dos nossos discos SSD.
+A nossa oferta de alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} combina os nossos 20 anos de experiência no alojamento web e a robustez da nossa Public Cloud. Como nos alojamentos web clássicos, os seus sites são alojados num serviço gerido 24 horas por dia, mas com muitas mais funcionalidades, como o elevado desempenho dos nossos discos SSD.
 
 **Saiba como começar num plano de alojamento Cloud Web.**
 
 ## Requisitos
 
-- Ter um serviço de [alojamento Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external}.
+- Ter um serviço de [alojamento Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external}.
 - Ter recebido o e-mail com a confirmação da instalação do alojamento Cloud Web.
-- Ter um [domínio](https://www.ovh.pt/dominios/){.external} (endereço que permite identificar e aceder ao seu site).
+- Ter um [domínio](https://www.ovhcloud.com/pt/domains/){.external} (endereço que permite identificar e aceder ao seu site).
 - Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 ### 1 - Tipo de Projeto: Criar ou Transferir um Site.
 
-De modo a adequar-se ao máximo ao seu projeto, o alojamento [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external} oferece mais possibilidades de configuração do que um alojamento web clássico. É importante que tenha uma visão clara do seu objetivo, de forma a levá-lo a cabo o melhor possível. Para isso, aconselhamos o seguinte:
+De modo a adequar-se ao máximo ao seu projeto, o alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} oferece mais possibilidades de configuração do que um alojamento web clássico. É importante que tenha uma visão clara do seu objetivo, de forma a levá-lo a cabo o melhor possível. Para isso, aconselhamos o seguinte:
 
 
 - **definir o que deseja instalar**: Pretende partilhar um hobby ou promover uma atividade profissional? Criar um blogue ou uma loja online? Defina claramente o seu projeto antes de começar;
 
 - **reunir os pré-requisitos técnicos necessários à instalação**: é possível que o projeto que deseja instalar exija pré-requisitos técnicos particulares. Certifique-se de os conhecer previamente;
 
-- **certificar-se da compatibilidade técnica do seu projeto com o alojamento Cloud Web**\: precisa de um motor de execução ou de um SQL em particular?  Se ainda não o fez, assegure-se de que este último se encontra disponível com o seu alojamento [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external}.
+- **certificar-se da compatibilidade técnica do seu projeto com o alojamento Cloud Web**\: precisa de um motor de execução ou de um SQL em particular?  Se ainda não o fez, assegure-se de que este último se encontra disponível com o seu alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external}.
 
 Depois de ter avaliado as diferentes possibilidades ao seu dispor e de ter delimitado o seu projeto com precisão, já pode começar a pô-lo online.
 
 ### 2 - Escolher o motor de execução
 
-A [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external} disponibiliza-lhe múltiplas linguagens de desenvolvimento para construir o seu projeto. Se deseja utilizar outra linguagem que não PHP, que é a escolha padrão, deverá selecionar um «motor de execução» que corresponda à sua linguagem.
+A [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} disponibiliza-lhe múltiplas linguagens de desenvolvimento para construir o seu projeto. Se deseja utilizar outra linguagem que não PHP, que é a escolha padrão, deverá selecionar um «motor de execução» que corresponda à sua linguagem.
 
 As linguagens atualmente disponíveis são: PHP e Node.js.
 
-Para aceder aos motores de execução do seu alojamento [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external} vá à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento Cloud Web em causa. Por fim, clique no separador `Motores de execução`{.action}.
+Para aceder aos motores de execução do seu alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} vá à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento Cloud Web em causa. Por fim, clique no separador `Motores de execução`{.action}.
 
 Será automaticamente criado um motor durante a instalação do alojamento. É indicado como `Escolha padrão` no quadro que se apresenta. Para modificar um motor já parametrizado, clique nos três pontos à direita deste último e, a seguir, em `Modificar`{.action}. 
 
-Também pode adicionar motores de execução suplementares consoante o seu serviço [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external}. Para isso, basta clicar em `Ações`{.action} e, a seguir, em `Adicionar um motor de execução`{.action}. Repare que o número máximo de motores de execução depende do serviço [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external} que subscreveu.
+Também pode adicionar motores de execução suplementares consoante o seu serviço [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external}. Para isso, basta clicar em `Ações`{.action} e, a seguir, em `Adicionar um motor de execução`{.action}. Repare que o número máximo de motores de execução depende do serviço [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} que subscreveu.
 
 Assim, antes de prosseguir, certifique-se de que dispõe do ou dos motores de execução necessários ao seu projeto.
 
@@ -53,7 +53,7 @@ Assim, antes de prosseguir, certifique-se de que dispõe do ou dos motores de ex
 
 ### 3 - Criar variáveis de ambiente (facultativo)
 
-Quando deseja implementar várias vezes o seu projeto em ambientes diferentes (por exemplo: desenvolvimento, teste ou produção), deverá fornecer variáveis de modo que o código reaja em conformidade. Para isso, a [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external} possibilita a definição de variáveis de ambiente acessíveis pelo código do seu site ou da sua aplicação web.
+Quando deseja implementar várias vezes o seu projeto em ambientes diferentes (por exemplo: desenvolvimento, teste ou produção), deverá fornecer variáveis de modo que o código reaja em conformidade. Para isso, a [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} possibilita a definição de variáveis de ambiente acessíveis pelo código do seu site ou da sua aplicação web.
 
 Por exemplo, desta forma pode deixar de fora um ficheiro «.env» no framework PHP Laravel, como indica a documentação do framework: <https://laravel.com/docs/5.6/configuration>.
 
@@ -87,7 +87,7 @@ Tenha o cuidado de substituir a informação genérica presentes nestes scripts 
 
 ### 4 - Configurar domínios adicionais enquanto Multisite (facultativo)
 
-Agora que o ambiente técnico do seu alojamento [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external} está pronto, pode configurar domínios adicionais enquanto Multisite. Isto permite-lhe partilhar o seu espaço, de forma a alojar nele vários sites, por exemplo. Se isto se adequa ao seu projeto, e ainda posicionado no alojamento Cloud Web em causa, clique no separador `Multisite`{.action}.
+Agora que o ambiente técnico do seu alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} está pronto, pode configurar domínios adicionais enquanto Multisite. Isto permite-lhe partilhar o seu espaço, de forma a alojar nele vários sites, por exemplo. Se isto se adequa ao seu projeto, e ainda posicionado no alojamento Cloud Web em causa, clique no separador `Multisite`{.action}.
 
 O quadro que vai aparecer contém os domínios adicionados ao seu alojamento. Alguns de entre eles foram criados automaticamente durante a instalação do alojamento. Para adicionar um novo, clique no botão `Adicionar um domínio ou subdomínio`{.action} e siga as instruções que surgirem. A manipulação pode ser diferente se o domínio em causa estiver registado junto da OVH ou não. 
 
@@ -112,9 +112,9 @@ Tem ao dispor duas formas de efetuar a instalação do seu projeto. Repita o pro
 
 #### 1. Utilizar os nossos módulos em 1 clique
 
-Esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar ainda por personalizar (tema, textos, etc.). A OVH disponibiliza quatro com os módulos em 1 clique, a descobrir na página [Criar um site com os módulos em 1 clique](https://www.ovh.pt/alojamento-partilhado/website/){.external}.
+Esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar ainda por personalizar (tema, textos, etc.). A OVH disponibiliza quatro com os módulos em 1 clique, a descobrir na página [Criar um site com os módulos em 1 clique](https://www.ovhcloud.com/pt/web-hosting/uc-website/){.external}.
 
-Se optar pela utilização dos nossos módulos em 1 clique, e ainda posicionado no alojamento [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external} em causa, clique no separador `Módulos em 1 clique`{.action} e, a seguir, em `Adicionar um módulo`{.action}. Então, poderá iniciar uma instalação em modo «simples» (não personalizável) ou em modo «avançado» (com a possibilidade de personalizar certos elementos).
+Se optar pela utilização dos nossos módulos em 1 clique, e ainda posicionado no alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} em causa, clique no separador `Módulos em 1 clique`{.action} e, a seguir, em `Adicionar um módulo`{.action}. Então, poderá iniciar uma instalação em modo «simples» (não personalizável) ou em modo «avançado» (com a possibilidade de personalizar certos elementos).
 
 Para mais informações sobre os módulos, consulte o guia: [Instalar um site com os módulos em 1 clique](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}.
 
@@ -160,7 +160,7 @@ Há vários registos DNS inerentes à OVH. Vamos referir-nos a dois deles em par
 
 #### 2. Verificar e/ou alterar os registos DNS
 
-Agora que conhece os registos DNS inerentes ao seu alojamento [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external} e ao seu serviço de e-mail OVH, deve verificar se estes últimos estão bem configurados e fazer alterações se necessário. É imperativo que estas duas manipulações sejam feitas junto do prestatário que gere a configuração DNS (a zona DNS) do seu domínio.
+Agora que conhece os registos DNS inerentes ao seu alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} e ao seu serviço de e-mail OVH, deve verificar se estes últimos estão bem configurados e fazer alterações se necessário. É imperativo que estas duas manipulações sejam feitas junto do prestatário que gere a configuração DNS (a zona DNS) do seu domínio.
 
 
 > [!warning]

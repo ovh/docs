@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Dernière mise à jour le 19/10/2021**
+**Dernière mise à jour le 04/11/2021**
 
 > [!warning]
 >
@@ -466,7 +466,7 @@ Voici une liste des aspects à prendre en compte:
 
 - Chipsets de CPU hôte ESXi sur les vDC d'origine et de destination
 - Modes EVC sur les clusters d'origine et de destination
-- Les versions vDS sont les mêmes entre le vDC d'origine et le vDC de destination
+- Les versions vDS sont les mêmes entre le vDC d'origine et le vDC de destination. Il est possible de mettre à jour le vDS vRACK du vDC d'origine. Pour le vDS avec le VM Network (VXLAN vDS), veuillez contacter le support afin que le vDS soit mis à jour.
 
 
 > [!primary]

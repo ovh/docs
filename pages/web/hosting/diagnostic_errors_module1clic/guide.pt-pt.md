@@ -27,7 +27,7 @@ A criação de um [Módulo 1 clique](../partilhado_guias_dos_modulos_dos_alojame
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web](https://www.ovh.pt/alojamento-partilhado/) compatível.
+- Ter um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) compatível.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Ter usado a funcionalidade [Módulo 1 clique](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/) para criar um novo site.
 
@@ -48,14 +48,14 @@ Se esta mensagem aparece quando lança a instalação do seu módulo, é que nã
 
 > [!primary]
 >
-> Veja a comparação das nossas diferentes [ofertas de alojamento](https://www.ovh.pt/alojamento-partilhado/).
+> Veja a comparação das nossas diferentes [ofertas de alojamento](https://www.ovhcloud.com/pt/web-hosting/).
 >
 
 Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action}. Escolha o alojamento em causa e clique em `Mudar de oferta` na parte `Subscrição` - `Oferta`:
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-As ofertas [Alojamento Pro](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-pro.xml) e [PerfAlojamento Performanceormance](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-performance.xml) permitem-lhe criar até três módulos em 1 clique suplementares. As ofertas **Alojamento Performance** permitem-lhe também ativar gratuitamente um [servidor SQL privado](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml).
+As ofertas [Alojamento Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [PerfAlojamento Performanceormance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três módulos em 1 clique suplementares. As ofertas **Alojamento Performance** permitem-lhe também ativar gratuitamente um [servidor SQL privado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/).
 
 #### Solução n°2: eliminar uma base de dados não utilizada <a name="delete-database"></a>
 
@@ -76,14 +76,14 @@ Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 > [!primary]
 >
-> Encontre o comparativo das nossas diferentes [ofertas de bases de dados](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml)
+> Encontre o comparativo das nossas diferentes [ofertas de bases de dados](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/)
 >
 
 #### Solução n°4: instalar o módulo numa base de dados já utilizada
 
 Para instalar o módulo numa base de dados já utilizada, deverá utilizar o [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada) de instalação de um novo **Módulo 1 clique**.
 
-Para encontrar as credenciais da sua base de dados, consulte a nossa [FAQ](https://www.ovh.pt/alojamento-partilhado/faq/).
+Para encontrar as credenciais da sua base de dados, consulte a nossa [FAQ](https://www.ovhcloud.com/pt/web-hosting/).
 
 ### "O diretório de instalação não está vazio"
 
@@ -117,7 +117,7 @@ Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-h
 
 Depois de lançar a instalação do módulo em modo avançado, recebeu um e-mail indicando que o seu módulo não pode ligar-se à base de dados indicada. 
 
-Por isso, deve verificar os dados de acesso à sua base de dados. Para as encontrar, consulte a nossa [FAQ](https://www.ovh.pt/alojamento-partilhado/faq/).
+Por isso, deve verificar os dados de acesso à sua base de dados. Para as encontrar, consulte a nossa [FAQ](https://www.ovhcloud.com/pt/web-hosting/).
 
 De seguida, elimine o módulo através do separador `Módulos 1 clique`{.action}:
 

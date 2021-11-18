@@ -15,8 +15,8 @@ O serviço SQL Privado permite associar uma instância SQL, com recursos dedicad
 
 ## Requisitos
 
-- Ter uma instância SQL Privado (associada a um [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, ou contratar uma através da página [Opções SQL](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml){.external}).
-- Ter um [Alojamento Web](https://www.ovh.pt/alojamento-partilhado/){.external} e o serviço SQL Privado localizados no mesmo datacenter (confirme esta informação na Área de cliente OVH).
+- Ter uma instância SQL Privado (associada a um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, ou contratar uma através da página [Opções SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/){.external}).
+- Ter um [Alojamento Web](https://www.ovhcloud.com/pt/web-hosting/){.external} e o serviço SQL Privado localizados no mesmo datacenter (confirme esta informação na Área de cliente OVH).
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções

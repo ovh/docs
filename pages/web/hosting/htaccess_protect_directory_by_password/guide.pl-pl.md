@@ -27,7 +27,7 @@ Czasami konieczne może okazać się zabezpieczenie dostępu do części Twojej 
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovh.pl/hosting/).
+- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Posiadanie danych dostępowych umożliwiających zalogowanie się [do przestrzeni dyskowej Twojego hostingu](../logowanie-przestrzen-dyskowa-ftp-hosting-web/).
 
@@ -71,7 +71,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Jeśli dysponujesz hostingiem [Pro](https://www.ovh.pl/hosting/hosting-pro.xml) lub [Performance](https://www.ovh.pl/hosting/hosting-performance.xml), zaloguj się do Twojego hostingu za pomocą [SSH](../hosting_www_ssh_na_hostingu/). Wprowadź następujące polecenie:
+Jeśli dysponujesz hostingiem [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/), zaloguj się do Twojego hostingu za pomocą [SSH](../hosting_www_ssh_na_hostingu/). Wprowadź następujące polecenie:
 
 ```bash
 php crypter.php
@@ -79,7 +79,7 @@ php crypter.php
 
 > [!warning]
 >
-> Ze względów bezpieczeństwa zaleca się korzystanie z SSH. Jeśli jednak dysponujesz usługą [Kimsufi Web](https://www.kimsufi.com/pl/) lub [Perso](https://www.ovh.pl/hosting/hosting-osobisty.xml) i nie chcesz przejść na ofertę [Pro](https://www.ovh.pl/hosting/hosting-pro.xml) lub [Performance](https://www.ovh.pl/hosting/hosting-performance.xml), możesz również uruchomić plik "crypter.php" za pośrednictwem przeglądarki internetowej (Przechodząc na adres URL https://twoja-domena.ovh/crypter.php).
+> Ze względów bezpieczeństwa zaleca się korzystanie z SSH. Jeśli jednak dysponujesz usługą [Kimsufi Web](https://www.kimsufi.com/pl/) lub [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) i nie chcesz przejść na ofertę [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/), możesz również uruchomić plik "crypter.php" za pośrednictwem przeglądarki internetowej (Przechodząc na adres URL https://twoja-domena.ovh/crypter.php).
 >
 > W przypadku dodatkowych pytań dotyczących metody szyfrowania haseł, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/). Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 >

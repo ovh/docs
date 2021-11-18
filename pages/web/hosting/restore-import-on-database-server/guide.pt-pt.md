@@ -16,14 +16,14 @@ No seguimento de um erro numa base de dados, deve estar preparado para restaurar
 
 ## Requisitos
 
-- Dispor de um [serviço de alojamento SQL Privado](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml){.external} ou de [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
+- Dispor de um [serviço de alojamento SQL Privado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/){.external} ou de [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 > [!primary]
 >
-> Tenha em atenção que os serviços [SQL Privado](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml){.external} e [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external} não dão acesso ao host, mas sim às bases de dados alojadas neste último. Não há um acesso superutilizador «root». Os comandos SQL genéricos funcionam normalmente, e os programas de tipo HeidiSQL, SQuirreL SQL e Adminer são plenamente compatíveis.
+> Tenha em atenção que os serviços [SQL Privado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/){.external} e [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external} não dão acesso ao host, mas sim às bases de dados alojadas neste último. Não há um acesso superutilizador «root». Os comandos SQL genéricos funcionam normalmente, e os programas de tipo HeidiSQL, SQuirreL SQL e Adminer são plenamente compatíveis.
 > 
 
 ### Restaurar e importar uma base de dados a partir da Área de Cliente

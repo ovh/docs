@@ -1,78 +1,88 @@
 ---
-title: 'Modificar os servidores DNS de uma instância'
-excerpt: 'Modificar os servidores DNS padrão de uma instância Public Cloud'
+title: "Modificar os servidores DNS de uma instância Public Cloud"
+excerpt: "Saiba como alterar os servidores DNS predefinidos de uma instância Public Cloud"
 slug: modificar_os_servidores_dns_de_uma_instancia
 legacy_guide_number: g1985
 section: Rede
+order: 4
 ---
 
-**Última atualização: 18/11/2019**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 29/10/2021**
 
 ## Objetivo
 
-O servidor DNS configurado nas instâncias será, por defeito, o da OVH ( 213.186.33.99 ). É possível que pretenda modificá-lo ou adicionar outro servidor. No entanto, os servidores DNS são configurados automaticamente graças ao servidor DHCP e não poderá modificá-los através de uma simples edição do ficheiro resolv.conf.
+Por predefinição, o servidor DNS configurado nas instâncias Public Cloud será o da OVHcloud (213.186.33.99, por exemplo).<br>
+Pode adicionar um servidor secundário ou substituir esta configuração pela sua. No entanto, os servidores DNS são configurados automaticamente por um servidor DHCP e não poderá modificar a configuração DNS editando o ficheiro `resolv.conf`.
 
-Este guia explica-lhe o procedimento a seguir para modificar a configuração DHCP da sua instância. Poderá, então, alterar os servidores DNS das suas instâncias.
+**Este manual explica-lhe como alterar a configuração DHCP de uma instância para alterar os servidores DNS.**
 
+> [!warning]
+> A OVHcloud fornece-lhe serviços cuja configuração e gestão são da sua responsabilidade. Por conseguinte, é da sua responsabilidade garantir que estes serviços funcionam corretamente.
+>
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de um serviço num servidor, recomendamos que recorra a um prestador de serviços especializado. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+>
 
 ## Requisitos
-- Dispor de uma instância Public Cloud
+
+- Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
+- Dispor de um acesso de administrador (root) à instância através de SSH ou RDP.
+- Conhecimentos básicos de rede e administração
 
 ## Instruções
 
-### Em Debian/Ubuntu
+Ligue-se à sua instância em SSH. Para mais informações, consulte o manual "[Aceder a uma instância Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#connect-to-instance)".
 
-- Ligue-se à instância em SSH. Pode consultar o guia [Ligar-se a uma instância Public Cloud](https://docs.ovh.com/pt/public-cloud/primeira-conexao/){.external}.
-- Torne-se o utilizador root. Pode consultar o guia [Tornar-se o utilizador root e definir uma palavra-passe](https://docs.ovh.com/pt/public-cloud/tornar-se_root_e_definir_uma_palavra-passe/){.external}.
+Passar para o utilizador root. Se necessário, consulte o nosso guia para [passar root e definir uma palavra-passe](https://docs.ovh.com/pt/public-cloud/tornar-se_root_e_definir_uma_palavra-passe/).
 
-> [!success]
->
-> É possível ler o ficheiro resolv.conf para verificar qual é o servidor DNS configurado:
-> 
-> cat /etc/resolv.conf
-> 
-> 
-> domain openstacklocal
-> search openstacklocal
-> nameserver 213.186.33.99
->
+### Debian / Ubuntu
 
-- Edite o ficheiro /etc/dhcp/dhclient.conf com os servidores DNS desejados.
-Tem duas opções relativamente a esta configuração:
+Com a ajuda do editor de texto à sua escolha, edite o ficheiro `/etc/dhcp/dhclient.conf` para configurar os servidores DNS à sua escolha.
 
-Pretende adicionar um servidor DNS para além daquele que fornecemos por defeito:
+Pode aqui utilizar diferentes diretivas para adicionar os servidores DNS à sua escolha. Utilize a encomenda à sua escolha e substitua o IP1/IP2 pelos seus endereços IP.
+
+- Para adicionar servidores DNS que substituam efetivamente o configurado de forma padrão, adicione esta linha:
   
-```
-supersede domain-name-servers 127.0.0.1;
+```console
+supersede domain-name-servers IP1, IP2;
 ```
 
-Pretende adicionar um servidor DNS para substituir o servidor que fornecemos por defeito:
+- Para adicionar servidores DNS que serão preferidos ao configurado de forma padrão:
     
+```console
+prepend domain-name-servers IP1, IP2;
 ```
-prepend domain-name-servers 127.0.0.1;
+
+- Para adicionar servidores DNS que só serão utilizados se o configurado por predefinição estiver indisponível:
+    
+```console
+append domain-name-servers IP1, IP2;
 ```
- 
-- Verifique que a configuração é bem aplicada (isto pode demorar vários minutos):
+
+Registe as suas modificações no ficheiro de configuração e saia do editor.
+
+Verifique que a configuração foi corretamente aplicada com o seguinte comando:
 
 ```bash
 cat /etc/resolv.conf
 
 domain openstacklocal
 search openstacklocal
-nameserver 127.0.0.1
-nameserver 213.186.33.99
+nameserver IP1
+nameserver IP2
 ```
 
-### Em CentOS/Fedora
+### CentOS/Fedora
 
-- Ligue-se à instância em SSH. Pode consultar o guia [Ligar-se a uma instância Public Cloud](https://docs.ovh.com/pt/public-cloud/primeira-conexao/){.external}.
-- Torne-se o utilizador root. Pode consultar o guia [Tornar-se o utilizador root e definir uma palavra-passe](https://docs.ovh.com/pt/public-cloud/tornar-se_root_e_definir_uma_palavra-passe/){.external}.
-- Verifique a configuração atual através do comando nmcli:
+Verifique a configuração atual com o comando `nmcli`:
 
-```
+```bash
 nmcli
  
-eth0: ligado a System eth0
+eth0: connected to System eth0
         "Red Hat Virtio"
         ethernet (virtio_net), FA:16:3E:B6:FB:89, hw, mtu 1500
         ip4 default
@@ -84,7 +94,7 @@ eth0: ligado a System eth0
         route6 ff00::/8
         route6 fe80::/64
  
-lo: não-gerido
+lo: non-managed
         "lo"
         loopback (unknown), 00:00:00:00:00:00, sw, mtu 65536
  
@@ -92,62 +102,66 @@ DNS configuration:
         servers: 127.0.0.1 213.186.33.99
         interface: eth0
 ```
-- Consulte o nome da sua interface pública:
 
-```
+Obtenha o nome da sua interface pública:
+
+```bash
 nmcli connection show
  
 NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ```
-- Desative a modificação dos DNS automáticos e indique os DNS pretendidos:
 
-```
-nmcli con mod "Nome da sua interface" ipv4.ignore-auto-dns yes
-nmcli con mod "Nome da sua interface" ipv4.dns "127.0.0.1 213.186.33.99"
-```
-- Aplicar a configuração:
+Desative a modificação automática dos DNS e adicione os endereços IP (substitua o IP1/IP2) dos servidores DNS que pretende configurar. (Substitua `System eth0` pelo valor real que aparecia na posição anterior).
 
+```bash
+nmcli con mod "System eth0" ipv4.ignore-auto-dns yes
+nmcli con mod "System eth0" ipv4.dns "IP1 IP2"
 ```
-nmcli con down "Nome da sua interface" && nmcli con up "Nome da sua interface"
-```
-- Verifique que a configuração é bem aplicada:
 
+Aplicar a configuração (Substitua `System eth0` pelo valor real anteriormente recuperado).
+
+```bash
+nmcli con down "System eth0" && nmcli con up "System eth0"
 ```
+
+Verifique que a configuração é bem aplicada:
+
+```bash
 nmcli | grep -E 'DNS|server|interface'
  
 DNS configuration:
-        servers: 127.0.0.1 213.186.33.99
+        servers: IP1 IP2
         interface: eth0
 ```
 
 ### Windows
 
-- Ligue-se através do ambiente de trabalho remoto ou da consola VNC. Pode consultar o guia [Ligar-se a uma instância Public Cloud](https://docs.ovh.com/pt/public-cloud/primeira-conexao/){.external}.
+Ligue-se à instância através de uma sessão de ambiente de trabalho remoto ou com a consola VNC. Para mais informações, consulte o guia "[Aceder a uma instância Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#connect-to-instance)".
 
-- Entre na configuração Network
+Abra os `Parâmetros de rede`{.action}.
 
-![change-dns-servers](images/changednsservers1.png){.thumbnail}
+![modificar os servidores DNS](images/changednsservers1.png){.thumbnail}
 
-- Entre, então, na configuração IPv4 da sua placa de rede pública
+Através do painel de configuração, aceda à configuração IPv4 da sua placa de rede pública.
 
-![change-dns-servers](images/changednsservers2.png){.thumbnail}
+![modificar os servidores DNS](images/changednsservers2.png){.thumbnail}
 
-- Adicione os servidores DNS que pretende utilizar:
+Adicione os servidores que deseja utilizar nos `Parâmetros avançados`{.action}.
 
-![change-dns-servers](images/changednsservers3.png){.thumbnail}
+![modificar os servidores DNS](images/changednsservers3.png){.thumbnail}
 
-> [!success]
+> [!primary]
 >
-Num powershell, o comando nslookup permite-lhe verificar qual o servidor DNS utilizado por defeito.
+Num PowerShell, o comando `nslookup` permite verificar qual o servidor DNS utilizado por predefinição.
 >
 
-## Quer saber mais?
+## Quer saber mais? <a name="gofurther"></a>
 
-[Conectar-se a uma instância Public Cloud](https://docs.ovh.com/pt/public-cloud/primeira-conexao/){.external}.
+[Criar uma primeira instância Public Cloud e ligar-se a ela](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/)
 
-[Tornar-se o utilizador root e selecionar uma palavra-passe](https://docs.ovh.com/pt/public-cloud/tornar-se_root_e_definir_uma_palavra-passe/){.external}.
+[Tornar-se o utilizador root e selecionar uma palavra-passe](https://docs.ovh.com/pt/public-cloud/tornar-se_root_e_definir_uma_palavra-passe/)
 
-[Modificar o hostname de uma instância Public Cloud](https://docs.ovh.com/pt/public-cloud/modificar-hostname-de-uma-instancia/){.external}.
+[Modificar o hostname de uma instância Public Cloud](https://docs.ovh.com/pt/public-cloud/modificar-hostname-de-uma-instancia/)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

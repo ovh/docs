@@ -29,7 +29,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 ## Requisitos
 
-- Disponer de una cuenta [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/).
+- Disponer de una cuenta [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/).
 - Tener Thunderbird instalado en su macOS.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
  

@@ -27,7 +27,7 @@ La creazione di un [modulo in 1 click](../hosting_condiviso_guida_ai_moduli_degl
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/) attivo
+- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Aver utilizzato la funzionalità [Modulo in 1 click](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/) per creare un nuovo sito
 
@@ -48,14 +48,14 @@ Se questo messaggio compare durante l'installazione del tuo modulo, significa ch
 
 > [!primary]
 >
-> Consulta le nostre diverse [soluzioni di hosting](https://www.ovh.it/hosting-web/) a confronto.
+> Consulta le nostre diverse [soluzioni di hosting](https://www.ovhcloud.com/it/web-hosting/) a confronto.
 >
 
 Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action} e poi su `Hosting`{.action}. Scegli l'hosting interessato e clicca su `Modifica offerta` nella sezione `Abbonamento` - `Offerta`:
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Le offerte [Hosting Pro](https://www.ovh.it/hosting-web/hosting-web-pro.xml) e [Hosting Performance](https://www.ovh.it/hosting-web/hosting-web-performance.xml) ti permetteranno di creare fino a tre moduli in 1 click supplementari. Le offerte **Hosting Performance** ti permettono di attivare gratuitamente un [server SQL privato](https://www.ovh.it/hosting-web/opzioni-sql.xml).
+Le offerte [Hosting Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) e [Hosting Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) ti permetteranno di creare fino a tre moduli in 1 click supplementari. Le offerte **Hosting Performance** ti permettono di attivare gratuitamente un [server SQL privato](https://www.ovhcloud.com/it/web-hosting/options/start-sql/).
 
 #### Soluzione n°2: eliminare un database non utilizzato <a name="delete-the-database"></a>
 
@@ -76,14 +76,14 @@ Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fro
 
 > [!primary]
 >
-> Scopri il confronto delle diverse [offerte di database](https://www.ovh.it/hosting-web/opzioni-sql.xml)
+> Scopri il confronto delle diverse [offerte di database](https://www.ovhcloud.com/it/web-hosting/options/start-sql/)
 >
 
 #### Soluzione n°4: installare il tuo modulo su un database già utilizzato
 
 Per installare il tuo modulo su un database già utilizzato, è necessario utilizzare la [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) di installazione di un nuovo **CMS in 1 click**.
 
-Per recuperare le credenziali del tuo database, consulta le nostre [FAQ](https://www.ovh.it/hosting-web/faq/).
+Per recuperare le credenziali del tuo database, consulta le nostre [FAQ](https://www.ovhcloud.com/it/web-hosting/).
 
 ### "La directory di installazione non è vuota"
 
@@ -118,7 +118,7 @@ In questa situazione, [connettiti in FTP](../accedere-spazio-storage-ftp-hosting
 
 Dopo aver avviato l'installazione del tuo modulo in modalità avanzata, hai ricevuto un'email che ti informa che il tuo modulo non può connettersi al database indicato. 
 
-È quindi necessario verificare le credenziali del tuo database. Per trovarli, consulta le nostre [FAQ](https://www.ovh.it/hosting-web/faq/).
+È quindi necessario verificare le credenziali del tuo database. Per trovarli, consulta le nostre [FAQ](https://www.ovhcloud.com/it/web-hosting/).
 
 Elimina il tuo modulo dalla scheda `CMS in 1 click`{.action}:
 

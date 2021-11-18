@@ -21,7 +21,7 @@ Os erros nas contas de e-mail Exchange podem ter várias causas. Um diagnóstico
 
 ## Requisitos
 
-- Dispor de uma [solução Exchange OVHcloud](https://www.ovh.pt/emails/hosted-exchange/) já instalada
+- Dispor de uma [solução Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/) já instalada
 - Dispor das informações de identificação para a conta Exchange a verificar
 - Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 

@@ -44,11 +44,11 @@ Po zalogowaniu się do panelu klienta będziesz mógł(mogła) zarządzać swoim
 
 Aby umieścić swoją stronę www w internecie w infrastrukturze OVHcloud, musisz posiadać nazwę domeny odpowiadającą adresowi, z którego Twoja strona będzie dostępna (przykład: ovh.com). Musisz również mieć wykupioną usługę hostingową www, na której umieścisz Twoją stronę. Możesz również zapoznać się z naszym przewodnikiem: [Uruchomienie strony WWW na hostingu ](../hosting_www_umieszczenie_strony_w_internecie/)
 
-**Wskazówki i porady**: Aby pomóc Ci w stworzeniu Twojej strony internetowej, OVHcloud oddaje Ci do dyspozycji moduły dostępne za 1 kliknięciem, jak Wordpress, Prestashop, Joomla czy Drupal. Znajdziesz je [tutaj](https://www.ovh.pl/hosting/website/).external}. Możesz również skorzystać z [naszej dokumentacji](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+**Wskazówki i porady**: Aby pomóc Ci w stworzeniu Twojej strony internetowej, OVHcloud oddaje Ci do dyspozycji moduły dostępne za 1 kliknięciem, jak Wordpress, Prestashop, Joomla czy Drupal. Znajdziesz je [tutaj](https://www.ovhcloud.com/pl/web-hosting/uc-website/).external}. Możesz również skorzystać z [naszej dokumentacji](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
 
 ### W jaki sposób migrować moją stronę internetową i moje e-maile do infrastruktury OVHcloud? 
 
-Aby przenieść Twoją stroną internetową i Twoją ofertę e-mailową na infrastrukturę OVHcloud, musisz mieć wykupioną [usługę hostingową Web](https://www.ovh.pl/hosting/){.external} oraz [ofertę e-mailową OVHcloud](https://www.ovh.pl/emaile/){.external}. Będziesz mieć wtedy możliwość podłączenia się do serwera FTP Twojego hostingu i przeniesienia plików powiązanych z Twoją stroną. Jeżeli jesteś aktualnie w posiadaniu bazy danych, możesz również stworzyć jej kopię zapasową. 
+Aby przenieść Twoją stroną internetową i Twoją ofertę e-mailową na infrastrukturę OVHcloud, musisz mieć wykupioną [usługę hostingową Web](https://www.ovhcloud.com/pl/web-hosting/){.external} oraz [ofertę e-mailową OVHcloud](https://www.ovhcloud.com/pl/emails/){.external}. Będziesz mieć wtedy możliwość podłączenia się do serwera FTP Twojego hostingu i przeniesienia plików powiązanych z Twoją stroną. Jeżeli jesteś aktualnie w posiadaniu bazy danych, możesz również stworzyć jej kopię zapasową. 
 
 Aby przenieść e-maile, musisz ponownie stworzyć Twoje konta w OVHcloud, a następnie posłużyć się naszym narzędziem do migracji [OMM (OVH Mail Migrator)](https://omm.ovh.net/) dostępnym [tutaj](https://omm.ovh.net/). 
 

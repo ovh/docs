@@ -16,7 +16,7 @@ I servizi di posta elettronica di OVHcloud permette di usufruire di indirizzi em
 
 ## Prerequisiti
 
-- Disporre di un [servizio di posta elettronica OVHcloud](https://www.ovh.it/emails/){.external}.
+- Disporre di un [servizio di posta elettronica OVHcloud](https://www.ovhcloud.com/it/emails/){.external}.
 - Avere accesso alla sezione [Web](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -25,8 +25,8 @@ Il servizio di posta permette di configurare la politica di sicurezza in modo da
 
 - aumentare la sicurezza degli account Exchange quando gli utenti tentano di effettuare l’accesso
 - rendere più complesse le password associate agli account del servizio Exchange
-- rafforzare la verifica dei messaggi in entrata sui nostri server e destinati ai tuoi indirizzi email (esclusivamente per gli account [Exchange](https://www.ovh.it/emails/hosted-exchange/){.external});
-- definire la modalità di visualizzazione dei messaggi indesiderati nei tuoi account di posta elettronica (esclusivamente per gli account [Exchange](https://www.ovh.it/emails/hosted-exchange/){.external}).
+- rafforzare la verifica dei messaggi in entrata sui nostri server e destinati ai tuoi indirizzi email (esclusivamente per gli account [Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external});
+- definire la modalità di visualizzazione dei messaggi indesiderati nei tuoi account di posta elettronica (esclusivamente per gli account [Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external}).
 
 Per accedere alla politica di sicurezza del tuo servizio Exchange accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione “Web”. 
 
