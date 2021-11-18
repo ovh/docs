@@ -66,13 +66,13 @@ Puoi semplicemente accedere alle API dalla [nostra pagina Web](https://api.ovh.c
 
 In questo modo, potrai automatizzare liberamente le operazioni di base tramite script, ottimizzare le tue funzioni, ecc...
 
-Consulta la guida [Primi passi con le API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) per familiarizzare con l'utilizzo delle APIv6 OVHcloud.
+Consulta la guida [Primi passi con le API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN) per familiarizzare con l'utilizzo delle APIv6 OVHcloud.
 
 ### API OpenStack
 
 I servizi Public Cloud possono essere gestiti utilizzando le righe di comando Linux o Windows dopo aver scaricato e installato gli strumenti OpenStack.
 
-A seconda del livello che si desidera gestire, è necessario utilizzare il client **Nova** (calcolo), **Neutron** (rete), **Glance** (immagine) o **Swift** (archiviazione di oggetti). L'ultima aggiunta a questo assortimento, il client OpenStack, consente di gestire quasi tutti i livelli OpenStack direttamente.
+A seconda del livello che si desidera gestire, è necessario utilizzare il client **Nova** (Compute), **Neutron** (rete), **Glance** (immagine) o **Swift** (Object storage). L'ultima aggiunta a questo assortimento, il client OpenStack, consente di gestire quasi tutti i livelli OpenStack direttamente.
 
 L'API OpenStack consente inoltre di automatizzare facilmente la gestione tramite gli script.
 
@@ -126,7 +126,7 @@ Per continuare la configurazione della vRack dallo Spazio Cliente OVHcloud, cont
 
 #### Dalle APIv6 OVHcloud
 
-Per attivare e gestire una vRack, clicca [qui](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) per consultare la guida specifica a questo metodo.
+Per attivare e gestire una vRack, clicca [qui](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) (EN) per consultare la guida specifica a questo metodo.
 
 ### Step 2: Crea una VLAN nella vRack
 
@@ -168,7 +168,7 @@ Selezionando la casella `Definisci l’ID della VLAN`, dovrai scegliere un numer
 
 Se non selezioni la casella `Definisci l’ID della VLAN`, sarai di default nella VLAN 0.
 
-Se hai bisogno di far comunicare i server dedicati OVHcloud con VLAN tag, consulta questa guida: [Creare diverse VLAN nella vRack](../../dedicated/creare-vlan-vrack/).
+Se hai bisogno di far comunicare i server dedicati OVHcloud con VLAN tag, consulta questa guida: [Creare due o più VLAN nella vRack](../../dedicated/creare-vlan-vrack/).
 
 La gamma DHCP predefinita è 10.0.0.0/16. Per modificare questa classe IP, è necessario passare attraverso le APIv6 OVHcloud.
 
@@ -180,7 +180,7 @@ Conferma le Region richieste, inserisci un nome per la tua rete privata e clicca
 
 #### Crea una VLAN dalle APIv6 OVHcloud
 
-Per creare una VLAN dalle APIv6 OVHcloud, clicca [qui](../public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) per consultare la guida specifica a questo metodo.
+Per creare una VLAN dalle APIv6 OVHcloud, clicca [qui](../public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN) per consultare la guida specifica a questo metodo.
 
 ### Step 3: Integra un'istanza nella vRack
 
@@ -258,10 +258,10 @@ Ricorda anche queste informazioni, come indicato nella [guida all'utilizzo dell'
 Con gli elementi recuperati precedentemente, è possibile creare un'istanza includendola direttamente nella vRack:
 
 ```bash
-nova boot --key-name SSHKEY --flavor [ID-flavor] --image [ID-Image] --nic net-id=[ID-Network 1] --nic net-id=[ID-Network 2] [nom de votre instance]
+nova boot --key-name SSHKEY --flavor [ID-flavor] --image [ID-Image] --nic net-id=[ID-Network 1] --nic net-id=[ID-Network 2] [name-of-instance]
 
-Ex :
-nova boot --key-name ma-cle-ssh --flavor xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --image yyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy --nic net-id=[id_Ext-Net] --nic net-id=[id_VLAN] NomDeMonInstance
+Esempio :
+nova boot --key-name my-ssh-key --flavor xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --image yyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy --nic net-id=[id_Ext-Net] --nic net-id=[id_vLan] name_of_instance
 
 +--------------------------------------+------------------------------------------------------+
 | Property                             | Value                                                |
@@ -373,7 +373,7 @@ Lo Spazio Cliente OVHcloud permette di associare un'istanza a una o più reti pr
 
 L'azione consiste nell'aggiungere una nuova interfaccia di rete al tuo server, oltre a quella esistente.
 
-Ad esempio, se hai un'interfaccia pubblica eth0, avrai anche un'interfaccia eth1.
+Ad esempio, se hai un'interfaccia pubblica *eth0*, avrai anche un'interfaccia *eth1*.
 
 > [!warning]
 > La configurazione di questa nuova interfaccia è raramente automatica.
@@ -600,7 +600,7 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Per saperne di più
 
-[Configurazione della vRack Public Cloud da APIv6 OVHcloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/)
+[Configurazione della vRack Public Cloud da APIv6 OVHcloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/) (EN)
 
 [Creare due o più VLAN nella vRack](../../dedicated/creare-vlan-vrack/)
 
