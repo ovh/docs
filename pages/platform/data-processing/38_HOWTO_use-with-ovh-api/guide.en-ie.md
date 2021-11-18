@@ -111,4 +111,5 @@ If this is your first time using Data Processing, we advise to try it out first 
 
 To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at the [Data Processing documentations page](../).
 
-You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or in our public [Gitter](https://gitter.im/ovh/data-processing){.external}
+You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
+
