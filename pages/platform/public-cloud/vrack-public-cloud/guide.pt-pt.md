@@ -44,7 +44,7 @@ Também poderá gerir a faturação dos seus serviços através da Área de Clie
 
 ### Interface Horizon
 
-Interface visual independente da OVHcloud, [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} é a implementação inicial do painel de controlo da OpenStack, que fornece uma interface de utilizador web aos serviços OpenStack, nomeadamente Nova, Swift, Keystone, etc...
+Interface visual independente da OVHcloud, [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} é a implementação inicial do painel de controlo da OpenStack, que fornece uma interface de utilizador web aos serviços OpenStack, incluindo Nova, Swift, Keystone, etc...
 
 Esta interface completa e técnica permite-lhe gerir a quase totalidade das ações OpenStack. Esta será uma das interfaces necessárias se deseja gerir mais de duas VLAN, adicionar interfaces de rede privadas às suas instâncias, gerir imagens personalizadas, etc..
 
@@ -67,7 +67,7 @@ Pode simplesmente aceder às API a partir da [nossa página web](https://api.ovh
 
 Assim, poderá automatizar livremente as tarefas de base através de scripts, otimizar as suas próprias funções, etc..
 
-Consulte o guia [Primeiros passos com as API OVHcloud](../../api/first-steps-with-ovh-api/) para se familiarizar com a utilização das APIv6 OVHcloud.
+Consulte o guia [Primeiros passos com as API OVHcloud](../../api/first-steps-with-ovh-api/) (EN) para se familiarizar com a utilização das APIv6 OVHcloud.
 
 ### API OpenStack
 
@@ -123,7 +123,7 @@ Clique no botão `Para começar, crie um vRack`{.action}. Deverá escolher criar
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
-Para continuar a configuração do vRack a partir da Área de Cliente OVHcloud, prossiga a leitura deste guia a partir de [Criar uma VLAN no vRack a partir da Área de Cliente OVHcloud](./#criar-uma-vlan-a-partir-da-area-de-cliente ovhcloud).
+Para continuar a configuração do vRack a partir da Área de Cliente OVHcloud, prossiga a leitura deste guia a partir de [Criar uma VLAN no vRack a partir da Área de Cliente OVHcloud](./#criar-uma-vlan-a-partir-da-area-de-cliente-ovhcloud).
 
 #### A partir das APIv6 OVHcloud
 
@@ -262,7 +262,7 @@ Com os elementos recuperados anteriormente, é possível criar uma instância ao
 ```bash
 nova boot --key-name SSHKEY --flavor [ID-flavor] --image [ID-Image] --nic net-id=[ID-Network 1] --nic net-id=[ID-Network 2] [instance name]
 
-Example:
+Exemplo:
 nova boot --key-name my-ssh-key --flavor xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --image yyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy --nic net-id=[id_Ext-Net] --nic net-id=[id_VLAN] NameOfInstance
 
 +--------------------------------------+------------------------------------------------------+
@@ -376,7 +376,7 @@ A Área de Cliente OVHcloud permite associar uma instância a uma ou várias red
 
 A ação consistirá em simplesmente adicionar uma nova interface de rede ao seu servidor, para além da existente.
 
-Assim, por exemplo, se tiver uma interface pública **eth0**, terá ainda uma interface **eth1**.
+Assim, por exemplo, se tiver uma interface pública *eth0*, terá ainda uma interface *eth1*.
 
 > [!warning]
 > A configuração desta nova interface raramente é automática.
@@ -605,7 +605,7 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Quer saber mais?
 
-[Configuração do vRack Public Cloud a partir das APIv6 OVHcloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/)
+[Configuração do vRack Public Cloud a partir das APIv6 OVHcloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/) (EN)
 
 [Servidores dedicados - Criar várias VLAN no vRack](../../dedicated/criar-vlan-vrack/)
 
