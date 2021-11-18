@@ -35,10 +35,8 @@ Click on +Add then Edge Services Gateway.
 
 ![AddNSX](images/en03add.png)
 
-The guided installation  window pops up.
-
-Fill in the basic information. Only the name is mandatory, the other fields are optional and will either be automatically created or be ignored if non applicable to your case. When done, click Next.
-
+The guided installation  window pops up.   
+Fill in the basic information. Only the name is mandatory, the other fields are optional and will either be automatically created or be ignored if non applicable to your case. When done, click Next.    
 (Leave Deploy Edge Appliance VM checked. unchecking it would create the rules and settings but nothing would be active until a VM is deployed. We are leaving High Availibility out of our scope for now)
 ![Basic](images/en04basic.png)
 
