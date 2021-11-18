@@ -21,6 +21,19 @@ An *NSX Edge Services Gateway* is a VMware appliance providing services such as 
 
 ## Instructions
 
+The following document will focus on deploying a standard appliance.
+First, go to the Networking and Security dashboard.
+en01image
+On the left side, navigate to the NSX Edges section.
+en02image
+Click on +Add then Edge Services Gateway.
+en03image
+The guided installation  window pops up.
+Fill in the basic information. Only the name is mandatory, the other fields are optional and will either be automatically created or be ignored if non applicable to your case. When done, click Next.
+(Leave Deploy Edge Appliance VM checked. unchecking it would create the rules and settings but nothing would be active until a VM is deployed. We are leaving High Availibility out of our scope for now)
+en04image
+
+
 Pour commencer, rendez-vous dans la partie `NSX Edges` afin de trouver la liste des Edges déjà déployées. Dans l'exemple ci-dessous, nous avons déjà une Edge déployée nommée `TestFW`.
 
 ![Accueil Web](images/accueil_web.png)
