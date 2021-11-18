@@ -11,7 +11,7 @@ order: 7
 
 ## Objective
 
-Reverse DNS resolution generally means the mapping of a domain name (or host name) to an IP address. A DNS lookup of the associated IP address will then receive this domain name in response.
+Reverse DNS is the complement to "forward" DNS resolution which resolves domain names into IP addresses. With reverse DNS resolution, an IP address can resolve into the domain name (or host name) it is mapped to. This means that DNS queries of the associated IP address will return this domain name.
 
 Configuring the reverse DNS resolution for an instance is especially useful when sending emails. A mail server's validation by spam protection systems will improve if a DNS lookup of the IP address resolves properly.
 
@@ -31,7 +31,7 @@ In the table on this page, your eligible services will be listed. You can filter
 
 ![Reverse DNS](images/reversecp01.png){.thumbnail}
 
-Click on `...`{.action} in the row of the IP address concerned and select `Modify the reverse`{.action}.
+Click on `...`{.action} in the row of the IP address concerned and select `Modify the reverse path`{.action}.
 
 ![Reverse DNS](images/reversecp02.png){.thumbnail}
 
@@ -43,9 +43,13 @@ You can also edit the reverse path directly via the icon in the **Reverse DNS** 
 >
 If the modification does not work as expected, verify that the `A` record is correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited the `A` record.
 >
+If the domain is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, you can refer to [our DNS zone guide](https://docs.ovh.com/au/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+>
 
 ## Go further <a name="gofurther"></a>
 
 [First steps with Public Cloud instances](../public-cloud-first-steps/)
+
+[Editing an OVHcloud DNS zone](https://docs.ovh.com/au/en/domains/web_hosting_how_to_edit_my_dns_zone/)
 
 Join our community of users on <https://community.ovh.com/en/>.
