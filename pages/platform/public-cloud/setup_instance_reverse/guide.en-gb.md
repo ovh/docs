@@ -11,7 +11,7 @@ order: 7
 
 ## Objective
 
-Reverse DNS is the complement to a "forward" DNS resolution which resolves domain names into IP addresses. To set up the reverse DNS resolution means that an IP address will resolve into the domain name (or host name) it is mapped to. When a DNS lookup of the associated IP address is performed, this domain name is returned as the response.
+Reverse DNS is the complement to "forward" DNS resolution which resolves domain names into IP addresses. With reverse DNS resolution, an IP address can resolve into the domain name (or host name) it is mapped to. This means that DNS queries of the associated IP address will return this domain name.
 
 Configuring the reverse DNS resolution for an instance is especially useful when sending emails. A mail server's validation by spam protection systems will improve if a DNS lookup of the IP address resolves properly.
 
