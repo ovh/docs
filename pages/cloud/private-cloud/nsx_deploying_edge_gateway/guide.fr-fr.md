@@ -22,6 +22,7 @@ La NSX Edge Services Gateway est une appliance VMware offrant des services tels 
 
 ## En pratique
 
+Vous allez vous embarquer dans l'aventure du déploiement d'une appliance NSX.   
 You're about to embark in the NSX appliance deployment adventure.    
 We'll guide you step by step on how to set up an Edge Services Gateway with a connection inside your environment as well as another to communicate with the outside.   
 We're not in Kansas anymore.   
