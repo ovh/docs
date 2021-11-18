@@ -6,11 +6,11 @@ section: Optimiser son site
 order: 1
 ---
 
-**Dernière mise à jour le 17/09/2021**
+**Dernière mise à jour le 18/11/2021**
 
 ## Objectif
 
-Ce guide est destiné aux clients qui souhaitent améliorer la sécurité de leurs solutions OVHcloud. Il vous permettra d’acquérir des connaissances fondamentales visant à assurer la disponibilité de vos services Web, à protéger l'intégrité de vos données et à sécuriser l'accès à vos solutions en ligne et locales.
+Ce guide vous permettra d'améliorer la sécurité de vos solutions OVHcloud. Il vous permettra d’acquérir des connaissances fondamentales visant à assurer la disponibilité de vos services Web, à protéger l'intégrité de vos données et à sécuriser l'accès à vos solutions.
 
 **Découvrez comment sécuriser votre site Web.**
 
@@ -32,15 +32,21 @@ Ce guide est destiné aux clients qui souhaitent améliorer la sécurité de leu
 #### Testez régulièrement votre site
 Tester régulièrement en local ou sur autre serveur les sauvegardes générées (proactivité sur la corruption de bases)
 audit de sécurité ?
+"Le test en local concerne la base de données, il est tout à fait possible d'utiliser un thème de base avec les plugins indispensables pour vérifier si la base de données est fonctionnelle. Il se pose la question des versions sql et ou Apache. Pour palier à cette problématique, client peut également mettre en place une version de test de son cms (ex: test.mondomaine.tld) directement sur son mutu en utilisant une nouvelle bdd (nécessitant donc un export/import)"
+
 #### Effectuer des sauvegardes régulièrement
 Guide sauvegarde ftp/base de données / Evoquer les plugins/modules de sauvegarde en ligne pour les cms
 https://docs.ovh.com/fr/hosting/exportation-bases-donnees/
 https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/
 https://docs.ovh.com/fr/hosting/exporter-son-site-web/
 https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/
+
+"Juste évoquer le fait qu'il existe des plugin/modules qui permettent de faire des actions de sauvegarde (ne pas donner de nom). Indiquer juste l'utilisation de plugins régulièrement mis à jour et mis en avant par la communauté wordpress."
+
 #### Mettre en place le renouvellement automatique
 https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/
 https://docs.ovh.com/fr/billing/faq-renouvellement-automatique-ovh/
+
 
 ### Garder son site à jour
 #### Vérifiez que votre site est à jour
@@ -49,16 +55,20 @@ https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#etape-4-veiller-a-la-secur
 #### Utilisez une version de PHP récente
 https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
 
+
 ### Sécuriser activement son hébergement
 #### Mettez en place un parefeu applicatif sur votre site
 https://docs.ovh.com/fr/hosting/activation-pare-feu-applicatif/
+" Je déconseillerai l'utilisation simultanée d'un waf lié au cms et de modsecurity. L'avantage du parefeu lié à un cms réside dans la proactivité de la protection, les règles de sécurité sont régulièrement mises à jour. idem ici, proposer les plugins mis en avant par la communauté wordpress. Reconnaitre les fichiers hackés des autres relève du travail du webmaster, voir d'un spécialiste de sécu (audit du code php, javascript, etc...)"
 #### Vérfiez la présence de fichiers malveillants sur votre hébergment
+
 
 ### Sécurisez les échanges de données vers vos utilisateurs
 #### Activez le https
 https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/
 https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/
 #### Protégez vos formulaires
+
 
 ### Adopter les bonnes pratiques en matière de mots de passe
 #### Apprenez à générer des mots de passe complexes
@@ -70,6 +80,7 @@ https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#bonnes-pratiques-pour-l
 Ne pas enregistrer ses mots de passe dans son navigateur
 cf anssi - cybermalveillance.gouv.fr
 https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#aller-plus-loin_2
+
 
 ### Sécuriser son environnement local et l'accès à son espace client OVHcloud
 #### Vérifiez vos appareils
@@ -84,6 +95,7 @@ https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/#etape-2-sauv
 #### Vérifiez vos informations personnelles
 https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#ajouter-une-adresse-e-mail-de-secours
 https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#comment-gerer-mes-informations-personnelles_1
+
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
