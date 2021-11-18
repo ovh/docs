@@ -12,7 +12,7 @@ section: Object Storage Standard (Swift)
 
 Celui ci est compatible avec l'Object Storage du Public Cloud OVH et vous permettra donc de pouvoir effectuer une sauvegarde de vos données, et de les rendre accessibles depuis n'importe quel endroit.
 
-Ce guide vous explique comment configurer DiskStation Manager 6.0 afin de synchroniser les fichiers se trouvant sur votre NAS vers votre Object Storage.
+**Ce guide vous explique comment configurer DiskStation Manager 6.0 afin de synchroniser les fichiers se trouvant sur votre NAS vers votre Object Storage.**
 
 
 ## Prérequis
