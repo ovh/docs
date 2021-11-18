@@ -6,13 +6,13 @@ section: Object Storage Standard (Swift)
 ---
 **Last updated 27th October 2021**
 
-## Preamble
+## Objective
 [Synology DiskStation Manager 6.0](https://www.synology.com/en-global/dsm/6.0beta){.external} provides a tool for synchronisation with different cloud solutions.
 
 This is compatible with OVH Public Cloud Object Storage and lets you back up your data and access it from any location. This guide explains how to configure DiskStation Manager 6.0 so that you can synchronise your NAS files and your Object Storage.
 
 
-### Prerequisites
+## Prerequisites
 
 - [Add storage space](../../create_an_object_container/)
 - [Configure user](../../../public-cloud/set-openstack-environment-variables/)
