@@ -31,7 +31,7 @@ In the table on this page, your eligible services will be listed. You can filter
 
 ![Reverse DNS](images/reversecp01.png){.thumbnail}
 
-Click on `...`{.action} in the row of the IP address concerned and select `Modify the reverse`{.action}.
+Click on `...`{.action} in the row of the IP address concerned and select `Modify the reverse path`{.action}.
 
 ![Reverse DNS](images/reversecp02.png){.thumbnail}
 
