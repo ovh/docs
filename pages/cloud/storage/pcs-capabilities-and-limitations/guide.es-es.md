@@ -4,7 +4,7 @@ slug: pcs/capabilities-and-limitations
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/pcs/capabilities-and-limitations'
 excerpt: Find here the main capacities and limitations for the management of your containers
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
 **Last updated 23rd September 2021**
