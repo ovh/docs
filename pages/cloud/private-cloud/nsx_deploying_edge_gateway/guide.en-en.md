@@ -60,7 +60,7 @@ Select the destination datacenter (if you only have one datacenter in vSphere, t
 
 ![Deployment](images/en06deploy.png)
 
-In the next window, select where the appliance will leave within the chosen datacenter.    
+In the next window, select where the appliance will live within the chosen datacenter.    
 Only Cluster/Resource Pool and Datastore are mandatory field.   
 *vSphere will select the best suited places for the rest if you do not input data.*    
 Click `Add`{.action}.
