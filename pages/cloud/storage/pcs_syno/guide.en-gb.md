@@ -2,9 +2,9 @@
 title: Synchronise Synology NAS with Object Storage
 slug: pcs/pcs-syno
 excerpt: Find here how to synchronise a Synology NAS with Object Storage
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
-
+**Last updated 27th October 2021**
 
 ## Preamble
 [Synology DiskStation Manager 6.0](https://www.synology.com/en-global/dsm/6.0beta){.external} provides a tool for synchronisation with different cloud solutions.
@@ -56,4 +56,4 @@ You can find this information in the OpenRC file which you downloaded in the pre
 > [!alert]
 >
 > This guide is based on DiskStation Manager 6.0 Beta, the configuration process may change.
-> 
+>

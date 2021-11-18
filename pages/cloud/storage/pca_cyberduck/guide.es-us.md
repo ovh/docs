@@ -21,6 +21,13 @@ También hay disponibles otras interfaces, cuya configuración es similar a la q
 
 **Esta guía explica cómo configurar Cyberduck para gestionar su Public Cloud Archive utilizando una interfaz gráfica basada en las API OpenStack.**
 
+> [!warning]
+>
+> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
+>
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+>
+
 ## Requisitos
 
 - Descargar e instalar [Cyberduck](https://cyberduck.io/).

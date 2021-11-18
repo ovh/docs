@@ -7,7 +7,7 @@ section: Public Cloud Archive
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
 
 **Última actualización: 08/12/2020**
 
@@ -73,7 +73,6 @@ Dado que el servidor Rsync está conectado para funcionar con la API Swift, esta
 
 > —inplace : En lugar del método predeterminado de crear una nueva copia del archivo y moverla una vez finalizado el proceso, Rsync escribe los datos actualizados directamente en el archivo de destino.
 >
-> -W, —whole-file: Desactiva el algoritmo de transferencia delta de Rsync y envía el archivo completo tal y como está.
 
 Además, solo está permitido un subconjunto de opciones en el lado del cliente:
 

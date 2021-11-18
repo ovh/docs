@@ -21,6 +21,13 @@ Se não está familiarizado com a gestão do armazenamento em linha de comandos,
 
 **Saiba como utilizar o Cyberduck para gerir o seu Object Storage através de uma interface gráfica baseada nas API OpenStack.**
 
+> [!warning]
+>
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+>
+> Este guia explica como implementar algumas medidas para otimizar a performance e a segurança do seu sistema. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+>
+
 ## Requisitos
 
 - Descarregar e instalar [Cyberduck](https://cyberduck.io/).

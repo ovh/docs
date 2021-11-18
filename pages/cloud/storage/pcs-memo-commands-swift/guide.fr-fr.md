@@ -2,7 +2,7 @@
 title: Mémo de commandes Swift
 slug: pcs/swift-commands-memo
 excerpt: Retrouvez ici les principales commandes swift pour gérer vos conteneurs d'objets
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
 **Dernière mise à jour le 21/09/2021**

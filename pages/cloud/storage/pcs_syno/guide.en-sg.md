@@ -2,7 +2,7 @@
 title: Synchronise Synology NAS with Object Storage
 slug: pcs/pcs-syno
 excerpt: Find here how to synchronise a Synology NAS with Object Storage
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
 
@@ -56,4 +56,4 @@ You can find this information in the OpenRC file which you downloaded in the pre
 > [!alert]
 >
 > This guide is based on DiskStation Manager 6.0 Beta, the configuration process may change.
-> 
+>

@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar o Object Storage com o rClone'
 slug: sync-rclone-object-storage
-section: 'Object Storage'
+section: Object Storage Standard (Swift)
 ---
 
 **Última atualização no dia 16/05/2018**
@@ -34,9 +34,9 @@ Para isso, na página dos utilizadores OpenStack da Área de Cliente, clique no 
 
 - Configurar o rClone:
 
-Depois de fazer o download do arquivo, pode executar o comando que se segue, de forma a adicionar o seu novo espaço de armazenamento: 
+Depois de fazer o download do arquivo, pode executar o comando que se segue, de forma a adicionar o seu novo espaço de armazenamento:
 
-```sh 
+```sh
 rclone config
 ```
 
@@ -45,7 +45,7 @@ Neste momento, será pedido que indique os dados de configuração apresentados 
 > [!primary]
 >
 > Pode também copiar e colar o conteúdo do seu arquivo no espaço previsto para as configurações do rClone (*.config/rclone/rclone.conf*).
-> 
+>
 
 Depois de efetuar a configuração, pode testá-la listando, por exemplo, os seus containers:
 

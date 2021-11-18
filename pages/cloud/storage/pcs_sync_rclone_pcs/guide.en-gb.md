@@ -1,11 +1,11 @@
 ---
 title: Using Object Storage with Rclone
-slug: sync-rclone-object-storage 
+slug: sync-rclone-object-storage
 excerpt: This guide explains how to sync object storage via your OVH Control Panel
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
-**Last updated 19th December 2017**
+**Last updated 27th October 2021**
 
 ## Objective
 
@@ -30,16 +30,16 @@ Once you have created your container and OpenStack account, you only need to do 
 
 Once your OpenStack user account has been created, you can retrieve the config file you need for Rclone from your Control Panel.
 
-To do this, when you are on the OpenStack user page in your Control Panel, click the wrench symbol on the right, then on `Download an Rclone config file`{.external}.
+To do this, when you are on the OpenStack users page in your Control Panel, click on `...`{.action} to the right of the user and then `Download an Rclone configuration file`{.action}.
 
-![Download an Rclone config file](images/download_file.png){.thumbnail}
+![Télécharger un fichier de configuration Rclone](images/pcs_sync_rclone_pcs-20211008090532581.png)
 
 
 - Configure Rclone:
 
 Once the file has been downloaded, you can launch the following command to add your new storage space:
 
-```sh 
+```sh
 Rclone config
 ```
 
@@ -48,7 +48,7 @@ You will be asked to insert the config data that appears in your file.
 > [!primary]
 >
 > You can also copy-paste the contents of your file in the Rclone config area *.config/Rclone/Rclone.conf*).
-> 
+>
 
 Once the configuration is complete, you can test it by listing your containers, for example:
 

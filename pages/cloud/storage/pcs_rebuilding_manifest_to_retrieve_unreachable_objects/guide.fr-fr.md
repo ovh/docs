@@ -1,7 +1,7 @@
 ---
 title: Reconstruire des manifestes pour récupérer des objets inaccessibles
 slug: pcs/reconstruire-manifestes
-section: Object Storage
+section: Object Storage Standard (Swift)
 hidden: true
 ---
 
@@ -97,5 +97,5 @@ $ swift download container large_file
 ## Aller plus loin
 
 [Documentation officielle OpenStack](https://docs.openstack.org/swift/latest/overview_large_objects.html){.external}
- 
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

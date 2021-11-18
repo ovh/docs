@@ -3,11 +3,11 @@ title: Configura la cancellazione automatica dei tuoi oggetti
 excerpt: Configura la cancellazione automatica dei tuoi oggetti
 slug: configura_la_cancellazione_automatica_dei_tuoi_oggetti
 legacy_guide_number: g1950
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
 
-## 
+##
 Per gestire più facilmente il tuo Object Storage, potrebbe essere necessario definire la durata di vita di alcuni dei tuoi file. Questo ti permette, ad esempio, di conservare alcuni backup solo per un determinato periodo.
 
 Questa guida ti mostra come impostare la cancellazione automatica dei tuoi file, dopo un periodo stabilito o in una data specifica.
@@ -21,7 +21,7 @@ Questa guida ti mostra come impostare la cancellazione automatica dei tuoi file,
 
 
 
-## 
+##
 Puoi eliminare i tuoi file:
 
 - dopo un certo numero di secondi
@@ -57,6 +57,5 @@ root@server:~$ swift post --header "X-Delete-At: 1448928000000" container test.t
 Nel nostro esempio, il file test.txt sarà eliminato il 1° dicembre 2015.
 
 
-## 
+##
 [Ritorna all'indice delle guide Cloud]({legacy}1785)
-

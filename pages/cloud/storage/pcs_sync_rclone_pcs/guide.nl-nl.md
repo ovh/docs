@@ -2,7 +2,7 @@
 deprecated: true
 title: Gebruik van Object Storage met Rclone 
 slug: sync-rclone-object-storage
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
 **Laatste update 17-01-2018**
