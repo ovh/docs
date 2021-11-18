@@ -33,7 +33,7 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 > We point out the most common errors here. If you have further difficulties, please consult our [Web Hosting FAQ](../web-hosting-faq/).
 >
 
-### “An error has occurred loading the information. (You need at least one free database)“
+### "An error has occurred loading the information. (You need at least one free database)"
 
 ![1freeDB](images/1freeDB.png){.thumbnail}
 
@@ -114,8 +114,6 @@ In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to yo
 
 After launching your module installation in advanced mode, you receive an email stating that your module cannot connect to the specified database.
 
-First check your database credentials. To find them, please read our [FAQ](https://www.ovhcloud.com/en-gb/web-hosting/).
-
 Then delete your module via the `1-click modules`{.action} tab.
 
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
@@ -131,21 +129,21 @@ Click on the `Multisite`{.action} tab and perform the following checks:
 |Scenario|What to do|
 |---|---|
 |The domain or subdomain linked to the website you want to create does not appear in the `Multisite`{.action} section.|Add your domain by following [this guide](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).|
-|The domain name has been deleted from the `Multisite`{.action} without any action on your side.|If your domain or its [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) is not managed from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), follow [this guide](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain) to add your domain name to the `Multisite`{.action}.|
+|The domain name has been deleted from the `Multisite`{.action} without any action on your side.|If your domain or its [DNS Zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) is not managed from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), follow [this guide](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain) to add your domain name to the `Multisite`{.action}.|
 
-### Your module appears under a web address such as “xxxxx.cluster0xx.hosting.ovh.net”
+### Your module appears under a web address such as "xxxxx.cluster0xx.hosting.ovh.net"
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
-Back up the actual **1-click module** and its **Database**, if necessary. Then, [delete your module](#deleteModule), then its [database](#deleteDB) and create a new module on the correct `Domain name`.
+Back up the actual **1-click module** and its **Database**, if necessary. Then [delete your module](#deleteModule), then its [database](#deleteDB) and create a new module on the correct `Domain name`.
 
 ### Your old website is still displayed
 
 This can have several causes: 
 
-- You have recently changed your [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) or DNS servers, or you have [transferred your domain name](../../domains/transfer-generic-domain/). Wait until these operations are completed (48 hours for changes on your `DNS servers`). Restart your devices regularly (PC, smartphone, Internet connection, etc.) and refresh your web browser’s cache.
+- You have recently changed your [DNS Zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) or DNS servers, or you have [transferred your domain name](../../domains/transfer-generic-domain/). Wait until these operations are completed (48 hours for changes on your `DNS servers`). Restart your devices regularly (PC, smartphone, Internet connection, etc.) and refresh your web browser’s cache.
 
-- Your domain name is still linked to your old hosting plan. In this case, edit your [DNS Zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone_1) or [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/#modifying-dns-servers), or contact your old hosting provider to do so.
+- Your domain name is still linked to your old hosting plan. In this case, edit your [DNS Zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone_1) or [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/#modifying-dns-servers) or contact your old hosting provider to do so.
 
 ## Go further <a name="#gofurther"></a>
 

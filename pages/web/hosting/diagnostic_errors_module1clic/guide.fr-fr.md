@@ -31,7 +31,7 @@ Si certains pré-requis ne sont pas remplis, la création d'un [Module en 1 clic
 
 > [!primary]
 >
-> Nous indiquons ici les erreurs les plus courantes. Si vous rencontrez une autre anomalie, consultez notre [FAQ sur les hébergements Web](../faq-hebergement/).
+> Nous indiquons ici les erreurs les plus courantes. Si vous rencontrez une autre anomalie, consultez notre [FAQ sur les hébergements Web](https://docs.ovh.com/fr/hosting/faq-hebergement/).
 >
 
 ### « Une erreur s'est produite lors du chargement des informations (You need at least one free database) »
@@ -51,7 +51,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Les offres [Pro2014](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/).
+Les offres [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/).
 
 #### Solution n°2 : supprimer une base de données non utilisée <a name="supprimer-la-base"></a>
 
@@ -78,8 +78,6 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 #### Solution n°4 : installer votre module sur une base de données déjà utilisée
 
 Pour installer votre module sur une base de données déjà utilisée, vous devrez utiliser le [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) d'installation d'un nouveau **Module en 1 clic**.
-
-Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovhcloud.com/fr/web-hosting/).
 
 > [!primary]
 >

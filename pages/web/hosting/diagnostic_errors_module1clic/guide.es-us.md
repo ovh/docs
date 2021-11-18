@@ -7,7 +7,7 @@ order: 2
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 **Última actualización: 08/10/2021**
@@ -35,7 +35,7 @@ La creación de un [Módulo en 1 clic](../modulos-en-un-clic/) en modo simple o 
 
 > [!primary]
 >
-> Aquí indicamos los errores más comunes. Si encuentra otra anomalía, consulte nuestras [FAQ en los alojamientos web](../faq-web-hosting/).
+> Aquí indicamos los errores más comunes. Si encuentra otra anomalía, consulte nuestras [FAQ en los alojamientos web](https://www.ovhcloud.com/es/web-hosting/).
 >
 
 ### "Se ha producido un error al cargar la información. (You need at least one free database)"
@@ -83,7 +83,7 @@ En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager
 
 Para instalar su módulo en una base de datos ya utilizada, deberá utilizar el [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) de instalación de un nuevo **módulo en 1 clic**.
 
-Para consultar las claves de la base de datos, consulte nuestras [FAQ](https://www.ovhcloud.com/es-es/web-hosting/).
+Para consultar las claves de la base de datos, consulte nuestras [FAQ](https://www.ovhcloud.com/es/web-hosting/).
 
 ### "El directorio de instalación no está vacío"
 
@@ -105,7 +105,7 @@ También puede conectarse al alojamiento por [FTP](../conexion-espacio-almacenam
 
 Una vez que haya iniciado la instalación del módulo en modo avanzado, recibirá un mensaje de correo electrónico indicándole que el módulo no puede conectarse a la base de datos indicada. 
 
-Por lo tanto, debe verificar las claves de la base de datos. Para localizarlos, consulte nuestras [FAQ](https://www.ovhcloud.com/es-es/web-hosting/).
+Por lo tanto, debe verificar las claves de la base de datos. Para localizarlos, consulte nuestras [FAQ](https://www.ovhcloud.com/es/web-hosting/).
 
 A continuación, elimine el módulo en la pestaña `Módulos en 1 clic`{.action}:
 
@@ -136,7 +136,7 @@ Esta anomalía puede tener varias causas:
 
 - Recientemente ha realizado un cambio en la zona o servidores [DNS](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/) o una [transferencia de dominio](../../domains/transferir-un-dominio-generico/). Espere a que estas operaciones se completen (48 horas para realizar cambios en sus DNS). También puede reiniciar los dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador.
 
-- Su dominio siempre está asociado a su antiguo alojamiento. Cambie en este caso su [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-su-dominio_1) o sus [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#2-editar-los-servidores-dns-de-un-dominio) o contacte con su antiguo proveedor de hosting.
+- Su dominio siempre está asociado a su antiguo alojamiento. Cambie en este caso su [Zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-su-dominio_1) o sus [Servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#2-editar-los-servidores-dns-de-un-dominio) o contacte con su antiguo proveedor de hosting.
 
 ## Más información <a name="gofurther"></a>
 

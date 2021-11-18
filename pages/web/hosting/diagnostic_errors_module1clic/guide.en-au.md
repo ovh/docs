@@ -33,11 +33,11 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 > We point out the most common errors here. If you have further difficulties, please consult our [Web Hosting FAQ](../web-hosting-faq/).
 >
 
-### “An error has occurred loading the information. (You need at least one free database)“
+### "An error has occurred loading the information. (You need at least one free database)"
 
 ![1freeDB](images/1freeDB.png){.thumbnail}
 
-This message might appear when you try to auto-create a new module. Each 1-click module needs one database to function and the error occurs when the hosting currently has no unused database available. The following solutions might be considered:
+This message might appears when you try to auto-create a new module. Each 1-click module needs one database to function and the error occurs when the hosting currently has no unused database available. The following solutions might be considered:
 
 #### Solution 1: change your hosting plan
 
@@ -78,8 +78,6 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 
 To install your module on an existing database, you will need to use the [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
-To find your database login details, please read our [FAQ](https://www.ovhcloud.com/en-gb/web-hosting/).
-
 ### "The installation directory is not empty"
 
 ![folder_not_empty](images/folder_not_empty.png){.thumbnail}
@@ -92,7 +90,7 @@ To link your domain to another directory, click on `Modify domain`{.action} in t
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
-You can also log in to your hosting plan via [FTP](../log-in-to-storage-ftp-web-hosting/), then delete or move the folder content after backing it up.
+You can also log in to your hosting plan via [FTP](../log-in-to-storage-ftp-web-hosting/) then delete or move the folder content after backing it up.
 
 ### "An error has occurred loading the information. (There is not enough space on your hosting (you need at least xxx MB))"
 
@@ -114,7 +112,7 @@ In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to yo
 
 After launching your module installation in advanced mode, you receive an email stating that your module cannot connect to the specified database.
 
-First check your database credentials. To find them, please read our [FAQ](https://www.ovhcloud.com/en-gb/web-hosting/).
+First check your database credentials. To find them, please read our [FAQ](https://www.ovhcloud.com/en-au/web-hosting/).
 
 Then delete your module via the `1-click modules`{.action} tab.
 
@@ -133,7 +131,7 @@ Click on the `Multisite`{.action} tab and perform the following checks:
 |The domain or subdomain linked to the website you want to create does not appear in the `Multisite`{.action} section.|Add your domain by following [this guide](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).|
 |The domain name has been deleted from the `Multisite`{.action} without any action on your side.|If your domain or its [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) is not managed from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), follow this [guide](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain) to add your domain name to the `Multisite`{.action}.|
 
-### Your module appears under a web address such as “xxxxx.cluster0xx.hosting.ovh.net”
+### Your module appears under a web address such as "xxxxx.cluster0xx.hosting.ovh.net"
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 

@@ -99,7 +99,7 @@ Para asociar su dominio a otro directorio, haga clic en `Cambiar el dominio`{.ac
 
 También puede conectarse al alojamiento por [FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/) y después eliminar o mover el contenido de la carpeta después de guardarlo.
 
-### « Si è verificato un errore durante il caricamento delle informazioni (There is not enough space on your hosting (you need at least xxx MB)) »
+### "Si è verificato un errore durante il caricamento delle informazioni (There is not enough space on your hosting (you need at least xxx MB))"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
 
@@ -126,7 +126,7 @@ A continuación, elimine el módulo en la pestaña `Módulos en 1 clic`{.action}
 
 A continuación, vuelva a instalar un nuevo módulo.
 
-### « You have insufficient rights on this database. »
+### "You have insufficient rights on this database."
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}
 
@@ -144,7 +144,7 @@ Si no tiene bases de datos adicionales y no desea contratar una solución adicio
 > No podremos asistirle en este asunto.
 >
 
-### « Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES) »
+### "Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
@@ -172,14 +172,14 @@ Abra la pestaña `Multisitio`{.action} y realice las siguientes comprobaciones:
 
 |Escenario|Medidas que deberá adoptar|
 |---|---|
-|El dominio o subdominio asociado al sitio que quiere crear no aparece en el `multisitio`{.action}.|Añada su dominio siguiendo [estas indicaciones](../configurar-un-multisitio-en-un-alojamiento-web/#2-anadir-un-dominio-o-subdominio).|
-|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Si su dominio o su [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns) no están gestionados desde su cuenta de OVHcloud, añada su dominio al `multisitio`{.action} siguiendo [esta guía](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
+|El dominio o subdominio asociado al sitio que quiere crear no aparece en el `Multisitio`{.action}.|Añada su dominio siguiendo [estas indicaciones](../configurar-un-multisitio-en-un-alojamiento-web/#2-anadir-un-dominio-o-subdominio).|
+|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Si su dominio o su [Zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns) no están gestionados desde su cuenta de OVHcloud, añada su dominio al `Multisitio`{.action} siguiendo [esta guía](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
 
 ### Su módulo se muestra en una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net"
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
-Una vez que haya realizado todas las copias de seguridad necesarias, [elimine el módulo](#delete-the-module) y, a continuación, la [base de datos](#delete-the-database). A continuación, vuelva a instalar el dominio correspondiente.
+Una vez que haya realizado todas las copias de seguridad necesarias, [elimine el módulo](#delete-the-module) y, a continuación, la [Bases de datos](#delete-the-database). A continuación, vuelva a instalar el dominio correspondiente.
 
 ### Su antiguo sitio web sigue apareciendo
 
@@ -187,7 +187,7 @@ Esta anomalía puede tener varias causas:
 
 - Recientemente ha realizado un cambio en la zona o servidores [DNS](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/) o una [transferencia de dominio](../../domains/transferir-un-dominio-generico/). Espere a que estas operaciones se completen (48 horas para realizar cambios en sus DNS). También puede reiniciar los dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador.
 
-- Su dominio siempre está asociado a su antiguo alojamiento. Cambie en este caso su [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-su-dominio_1) o sus [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#cambiar-los-servidores-dns) o contacte con su antiguo proveedor de hosting.
+- Su dominio siempre está asociado a su antiguo alojamiento. Cambie en este caso su [Zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-su-dominio_1) o sus [Servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#cambiar-los-servidores-dns) o contacte con su antiguo proveedor de hosting.
 
 ## Más información <a name="gofurther"></a>
 

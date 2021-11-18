@@ -35,7 +35,7 @@ A criação de um [Módulo 1 clique](../partilhado_guias_dos_modulos_dos_alojame
 
 > [!primary]
 >
-> Indicamos aqui os erros mais comuns. Se encontrar outra anomalia, consulte a nossa [FAQ nos alojamentos Web](../faq-alojamento/).
+> Indicamos aqui os erros mais comuns. Se encontrar outra anomalia, consulte a nossa [FAQ nos alojamentos Web](https://docs.ovh.com/pt/hosting/faq-alojamento/).
 >
 
 ### "Ocorreu um erro aquando do carregamento das informações. (You need at least one free database)"
@@ -55,7 +55,7 @@ Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-As ofertas [Alojamento Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [PerfAlojamento Performanceormance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três módulos em 1 clique suplementares. As ofertas **Alojamento Performance** permitem-lhe também ativar gratuitamente um [servidor SQL privado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/).
+As ofertas [Alojamento Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [Alojamento Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três módulos em 1 clique suplementares. As ofertas **Alojamento Performance** permitem-lhe também ativar gratuitamente um [servidor SQL privado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/).
 
 #### Solução n°2: eliminar uma base de dados não utilizada <a name="delete-database"></a>
 
@@ -99,17 +99,19 @@ Para associar o seu domínio a outro diretório, clique em `Modificar o domínio
 
 Pode também ligar-se ao seu alojamento via [FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) e, depois, eliminar ou mover o conteúdo da pasta após o backup.
 
-### « Une erreur s'est produite lors du chargement des informations (There is not enough space on your hosting (you need at least xxx MB)) »
+## "Ocorreu um erro durante o carregamento das informações (There is not enough space on your hosting (you need at least xxx MB))"
 
-![not_enough_space](images/not_enough_space.png){.thumbnail}
+![not_enough_space](images/not_enough_space.png) {.thumbnail}
 
-Ce message indique que l'[espace de stockage](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement comporte un volume de données trop important. Vous devez donc en supprimer ou en déplacer avant de pouvoir installer un nouveau [module en 1 clic](../modules-en-1-clic/).
+Esta mensagem indica que o[espaço de armazenamento](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento tem um volume de dados demasiado elevado. Deve eliminar ou deslocar um novo [módulo 1 clique](../módulos-1-clique/).
 
-Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-hebergement-web/) à votre hébergement, [sauvegardez localement](../mutualise-guide-utilisation-filezilla/#transfert-des-fichiers) vos données puis supprimez les fichiers qui ne sont pas nécessaires au fonctionnement de votre site.
+Neste caso, [ligue-se em FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao seu alojamento, [salvaguarde localmente](../partilhado_guia_de_utilizacao_do_filezilla/#transferencia-de-ficheiros) os seus dados e elimine os ficheiros que não são necessários para o funcionamento do seu site.
 
 > [!primary]
 >
-> Pour toute question sur les données à supprimer afin de dimininuer la quantité de données sur votre hébergement, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).<br>
+> Para qualquer questão relativa aos dados a eliminar para reduzir a quantidade de dados no seu alojamento, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).<br>
+> Não poderemos prestar-lhe assistência nesta matéria.
+>
 
 ### "Não é possível aceder à base de dados" <a name="delete-module"></a>
 
@@ -125,13 +127,13 @@ De seguida, elimine o módulo através do separador `Módulos 1 clique`{.action}
 
 De seguida, execute a instalação de um novo módulo.
 
-### « You have insufficient rights on this database. »
+### "You have insufficient rights on this database."
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}
 
 A sua base de dados não pode ser alterada uma vez que a quantidade de dados que contém excede o limite autorizado. Esta mensagem aparece durante a instalação de um módulo em [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada).
 
-Nesta situação, instale o seu módulo passando pelo [modo "simples"](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-simples) ou escolha outra base de dados aquando da sua instalação em modo avançado. Se necessário, encomende uma oferta de bases de dados (https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml) complementar.
+Nesta situação, instale o seu módulo passando pelo [modo "simples"](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-simples) ou escolha outra base de dados aquando da sua instalação em modo avançado. Se necessário, encomende uma oferta de bases de dados (https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) complementar.
 
 Se não dispõe de outras bases de dados e não deseja encomendar uma oferta complementar, [importe localmente uma cópia da sua base de dados](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/#instrucoes) e elimine os dados inúteis.
 
@@ -186,7 +188,7 @@ Esta anomalia pode ter várias causas:
 
 - Efetuou recentemente uma alteração na sua zona ou nos seus servidores [DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns) ou uma [transferência de nome de domínio](../../domains/transferir-o-dominio-generico/). Aguarde até que estas operações estejam finalizadas (48 horas para as alterações nos seus DNS). Também pode reiniciar os seus dispositivos (PC, smartphone, box, etc.) e esvaziar a cache do seu browser.
 
-- O seu domínio está sempre associado ao seu antigo alojamento. Neste caso, altere a sua [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio_1) ou os seus [servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#modificar-os-servidores-dns) ou contacte o seu antigo fornecedor de serviços.
+- O seu domínio está sempre associado ao seu antigo alojamento. Neste caso, altere a sua [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio_1) ou os seus [Servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#modificar-os-servidores-dns) ou contacte o seu antigo fornecedor de serviços.
 
 ## Quer saber mais? <a name="gofurther"></a>
 

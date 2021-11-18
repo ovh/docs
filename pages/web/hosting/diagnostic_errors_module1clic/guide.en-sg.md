@@ -33,7 +33,7 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 > We point out the most common errors here. If you have further difficulties, please consult our [Web Hosting FAQ](../web-hosting-faq/).
 >
 
-### “An error has occurred loading the information. (You need at least one free database)“
+### "An error has occurred loading the information. (You need at least one free database)"
 
 ![1freeDB](images/1freeDB.png){.thumbnail}
 
@@ -78,7 +78,7 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 
 To install your module on an existing database, you will need to use the [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
-To find your database login details, please read our [FAQ](https://www.ovhcloud.com/en-gb/web-hosting/).
+To find your database login details, please read our [FAQ](https://www.ovhcloud.com/en-sg/web-hosting/).
 
 ### "The installation directory is not empty"
 
@@ -114,7 +114,7 @@ In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to yo
 
 After launching your module installation in advanced mode, you receive an email stating that your module cannot connect to the specified database.
 
-First check your database credentials. To find them, please read our [FAQ](https://www.ovhcloud.com/en-gb/web-hosting/).
+First check your database credentials. To find them, please read our [FAQ](https://www.ovhcloud.com/en-sg/web-hosting/).
 
 Then delete your module via the `1-click modules`{.action} tab.
 
@@ -133,7 +133,7 @@ Click on the `Multisite`{.action} tab and perform the following checks:
 |The domain or subdomain linked to the website you want to create does not appear in the `Multisite`{.action} section.|Add your domain by following [this guide](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).|
 |The domain name has been deleted from the `Multisite`{.action} without any action on your side.|If your domain or its [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) is not managed from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), follow this [guide](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain) to add your domain name to the `Multisite`{.action}.|
 
-### Your module appears under a web address such as “xxxxx.cluster0xx.hosting.ovh.net”
+### Your module appears under a web address such as "xxxxx.cluster0xx.hosting.ovh.net”
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 

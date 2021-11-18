@@ -83,8 +83,6 @@ Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=go
 
 Um Ihr Modul auf einer bereits genutzten Datenbank zu installieren, verwenden Sie den [fortgeschrittenen Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls).
 
-Um die Login-Daten Ihrer Datenbank zu finden, lesen Sie unsere [FAQ](https://www.ovh.de/hosting/faq/).
-
 ### “Das Installationsverzeichnis ist nicht leer“
 
 ![folder_not_empty](images/folder_not_empty.png){.thumbnail}
@@ -99,7 +97,7 @@ Um Ihren Domainnamen mit einem anderen Verzeichnis zu verbinden, klicken Sie auf
 
 Sie können sich auch per [FTP](../verbindung-ftp-speicher-webhosting/) mit Ihrem Hosting verbinden und den Ordnerinhalt löschen oder verschieben, nachdem Sie ihn lokal gesichert haben.
 
-### "Es ist ein Fehler beim Laden der Informationen aufgetreten. (Es ist nicht genügend Speicherplatz auf Ihrem Hosting vorhanden (Sie benötigen mindestens xxx MB))"
+### “Es ist ein Fehler beim Laden der Informationen aufgetreten. (Es ist nicht genügend Speicherplatz auf Ihrem Hosting vorhanden (Sie benötigen mindestens xxx MB))“
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
 
@@ -176,7 +174,7 @@ Klicken Sie auf den Tab `Multisite`{.action} und führen Sie folgende Schritte d
 |Die Domain oder Subdomain der zu erstellenden Website erscheint nicht unter `Multisite`{.action}.|Fügen Sie Ihre Domain mithilfe [dieser Anleitung](../multisites-mehrere-websites-konfigurieren/#schritt-21-eine-bei-ovhcloud-registrierte-domain-hinzufugen) hinzu.|
 |Die Domain wurde ohne Aktion Ihrerseits aus dem `Multisite`{.action} Bereich gelöscht.|Wenn Ihre Domain oder deren [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen) nicht über Ihren OVHcloud Kunden-Account verwaltet wird, fügen Sie Ihre Domain zur `Multisite`{.action} gemäß [dieser Anleitung](../multisites-mehrere-websites-konfigurieren/#schritt-22-eine-externe-domain-hinzufugen) hinzu.|
 
-### Ihr Modul wird unter einer Webadresse der Art "xxxxx.cluster0xx.hosting.ovh.net" angezeigt
+### Ihr Modul wird unter einer Webadresse der Art “xxxxx.cluster0xx.hosting.ovh.net“ angezeigt
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 

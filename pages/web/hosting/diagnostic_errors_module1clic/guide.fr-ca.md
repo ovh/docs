@@ -31,7 +31,7 @@ La création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou av
 
 > [!primary]
 >
-> Nous indiquons ici les erreurs les plus courantes. Si vous rencontrez une autre anomalie, consultez notre [FAQ sur les hébergements Web](../faq-hebergement/).
+> Nous indiquons ici les erreurs les plus courantes. Si vous rencontrez une autre anomalie, consultez notre [FAQ sur les hébergements Web](https://www.ovhcloud.com/fr-ca/web-hosting/).
 >
 
 ### « Une erreur s'est produite lors du chargement des informations. (You need at least one free database) »
@@ -51,7 +51,7 @@ Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Les offres [Pro2014](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://docs.ovh.com/ca/fr/hosting/premiers-pas-avec-sql-prive/).
+Les offres [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://docs.ovh.com/ca/fr/hosting/premiers-pas-avec-sql-prive/).
 
 #### Solution n°2 : supprimer une base de données non utilisée <a name="supprimer-la-base"></a>
 
@@ -79,7 +79,7 @@ Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&
 
 Pour installer votre module sur une base de données déjà utilisée, vous devrez utilisez le [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) d'installation d'un nouveau **Module en 1 clic**.
 
-Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovhcloud.com/fr/web-hosting/).
+Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovhcloud.com/fr-ca/web-hosting/).
 
 ### « Le répertoire d'installation n'est pas vide »
 
@@ -114,7 +114,7 @@ Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-h
 
 Après avoir lancé l'installation de votre module en mode avancé, vous avez reçu un e-mail indiquant que votre module ne peut pas se connecter à la base de données indiquée. 
 
-Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez notre [FAQ](https://www.ovhcloud.com/fr/web-hosting/).
+Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez notre [FAQ](https://www.ovhcloud.com/fr-ca/web-hosting/).
 
 Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
 
@@ -168,7 +168,7 @@ Cliquez sur l’onglet `Multisite`{.action} puis effectuez les vérifications su
 |Scénario|Action à entreprendre|
 |---|---|
 |Le domaine ou le sous-domaine lié au site que vous souhaitez créer n'apparaît pas dans le `Multisite`{.action}.|Ajoutez votre domaine en suivant [ces indications](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
-|Le nom de domaine a été supprimé du multisite sans action de votre part.|Si votre domaine ou sa [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre domaine au `Multisite`{.action} en suivant [ce guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
+|Le nom de domaine a été supprimé du multisite sans action de votre part.|Si votre domaine ou sa [Zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre domaine au `Multisite`{.action} en suivant [ce guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
 
 ### Votre module s'affiche sur une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net »
 
@@ -182,7 +182,7 @@ Cette anomalie peut avoir plusieurs causes :
 
 - Vous avez effectué récemment un changement dans votre zone ou vos serveurs [DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) ou un [transfert de nom de domaine](../../domains/transferer-mon-domaine-generique/). Patientez jusqu'à ce que ces opérations soient finalisées (48 heures pour des changements dans vos DNS). Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.
 
-- Votre nom de domaine est toujours relié à votre ancien hébergement. Modifiez dans ce cas votre [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) ou vos [serveurs DNS](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns) ou contactez votre ancien hébergeur à ce sujet.
+- Votre nom de domaine est toujours relié à votre ancien hébergement. Modifiez dans ce cas votre [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) ou vos [Serveurs DNS](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns) ou contactez votre ancien hébergeur à ce sujet.
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
