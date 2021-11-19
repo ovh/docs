@@ -6,7 +6,7 @@ section: NSX
 order: 1
 ---
 
-**Last updated 11/17/2021**
+**Last updated 17th November 2021**
 
 ## Objective
 
@@ -16,8 +16,8 @@ NSX is a Software Defined Network (SDN) solution developed by VMware that is act
 
 ## Requirements
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- Having a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 
