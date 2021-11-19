@@ -7,7 +7,7 @@ section: NSX
 order: 02
 ---
 
-**Dernière mise à jour le 18/11/2021**
+**Dernière mise à jour le 19/11/2021**
 
 ## Objectif
 
@@ -39,7 +39,7 @@ Cliquez sur `+ Ajouter`{.action} puis `Edge Services Gateway`{.action}.
 
 La fenêtre d'installation guidée apparait.   
 Remplissez les détails de base. Seuls le nom est obligatoire. Les autres champs seront créés automatiquement ou ignorés en fonction de votre infrastucture.   
-Quand vous êtes prêt, cliquez sure `Suivant`{.action}.    
+Quand vous êtes prêt, cliquez sur `Suivant`{.action}.    
 *Laissez Déployer une VM de dispositif Edge cochée. Décocher l'option entraine la création des règles et paramètres mais tout sera inactif tant qu'une VM n'est pas déployée. Nous laissons la Haute Disponibilité de coté pour l'instant.*
 
 ![Basic](images/fr04basic.png)
@@ -60,75 +60,74 @@ Selectionnez le centre de données cible (si vous n'avez qu'un seul centre de do
 
 ![Deployment](images/fr06deploy.png)
 
-In the next window, select where the appliance will live within the chosen datacenter.    
-Only Cluster/Resource Pool and Datastore are mandatory field.   
-*vSphere will select the best suited places for the rest if you do not input data.*    
-Click `Add`{.action}.
+Dans la fenêtre suivante, selectionner ou le dispositif sera installé dans le centre de données.    
+Seuls Cluster/Pool de ressources et Banque de données sont des champs obligatoires.   
+*vSphere choisira le reste automatiquement si vous ne rentrez aucune information.*    
+Cliquez sur `Ajouter`{.action}.
 
 ![add](images/fr07add.png)
 
-Back in the Deployment Configuration window, click `Next`{.action}.
+Vous êtes de retour dans la fenêtre précédente. Cliquez sur `Suivant`{.action}.
 
-Things get more serious with the Configure Interfaces.    
-Click on `+Add`{.action}
+Il est temps de Configurer les interfaces.    
+Cliquez sur `+ Ajouter`{.action}
 
 ![Interfaces](images/fr08inter.png)
 
-There are 2 types of interfaces:
-- Uplink will communicate with the outside of your netword
-- Internal will be confined to your network
+Il existe 2 sortes d'interfaces:
+- Liaison montante communique avex l'extérieur de votre réseau
+- Interne est confiné à l'intérieur de votre environnement
 
-Let's name an interface and choose Uplink.   
-Click on the `pen symbol`{.action} to select how it will connect out.
+Nommez une interface et choisissez Liaison montante.   
+Cliquez sur le symbole du `crayon`{.action} pour définir comment l'interface communiquera.
 
 ![Outside](images/fr09out.png)
 
-Typically, in the `Distributed Virtual Port Group`{.action} tab, the VM Network is the default outside access network.    
-*If you customized your environment, select accordingly.*   
-Click `OK`{.action}.
+Par défaut, dans la table `Groupe de ports virtuels disctribués`{.action}, VM Network est le réseau pour l'accès extérieur.    
+*Si vous avez personnalisé l'environneent, choisissez en fonction.*   
+Cliquez sur `OK`{.action}.
 
 ![Net](images/fr10standard.png)
 
-Back in the Interface configuration window, add a primary IP and subnet prefix for the interface.    
-Click `OK`{.action}.
+Revenu dans Configurer les interfaces, ajoutez un addresse IP et la longueur du préfixe pour la connexion.    
+Cliquez sur `OK`{.action}.
 
 ![addIP](images/fr10standard02.png)
 
-Add a second interface. This time it will be an Internal one.    
-Click on the `pen symbol`{.action} again to select the network the interface will be part of.    
-Also, add the primary IP and subnet prefix for the vNIC.
+Ajoutez une seconde interface, Interne cette fois.    
+Cliquez de nouveau sur le symbole du `crayon`{.action} et selectionnez le réseau souhaité.    
+Ajoutez également l'addresse IP et la longueur du préfixe pour la vNIC.
 
 ![Inside](images/fr11in.png)
 
-Interfaces are ready. Review and click `Next`{.action}.
+Vos interfaces sont prêtes. Vérifiez et cliquez sur `Suivant`{.action}.
 
 ![Ready](images/fr12ready.png)
 
-Configure the Default Gateway for external access.   
-*This is not mandatory and can be disabled to be done later.*    
-Click `Next`{.action}
+Configurez la passerelle par défaut pour votre accès extérieur.   
+*Ce n'est pas obligatoire et peut être désactivé ou fait plus tard*    
+Cliquez sur `Suivant`{.action}
 
 ![Gateway](images/fr13gw.png)
 
-Enable or disable Firewall Default Policy and click `Next`{.action}.
+Activez ou désactivez la Stratégie de pare-feu par défaut pui cliquez sur `Suivant`{.action}.
 
 ![Firewall](images/fr14fw.png)
 
-Review the configuration and hit that `Finish`{.action} button.
+Vérifiez la configuration puis cliquez sur `Terminer`{.action} button.
 
 ![Review](images/fr15review.png)
 
-The Gateway will deploy. It will show a Busy and Installing status until done.    
-*If the deployment fails, it will show you basic error message and link to the full logs in the Failed section.*
+Le dispositif est en cours de déploiement. Le status indique Occupé et Installation jusqu'à la finalisation.        
+*Si le déploiement échoue, un message d'erreur et un lien vers les logs complet seront disponible dans la section Echec.*
 
 ![Installing](images/fr16busy.png)
 
-After some time, your appliance will show as Deployed.
+Après installation, le dispositif est Déployé.
 
 ![Final](images/fr17done.png)
 
-Congratulations and welcome to the world of NSX!   
-The journey is only starting.
+Bravo et bienvenu dans le monde du NSX!   
 
 ## Aller plus loin
 
