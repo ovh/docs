@@ -42,7 +42,7 @@ root@server:~$ swift copy --header "X-Delete-After: 3600" container test.txt
 The test.txt file will be deleted in an hour.
 
 
-## On a specific date
+### On a specific date
 First, you need to know what the deletion date is in epoch format.
 To help you find the value you need to insert, use a [converter](http://www.epochconverter.com/).
 
