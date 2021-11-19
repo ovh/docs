@@ -22,17 +22,17 @@ La première étape est la création d’un conteneur qui regroupera vos fichier
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
 
 Si vous utilisez Horizon :
 
-- Avoir créé un [utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
+- Avoir créé un [utilisateur OpenStack](https://docs.ovh.com/ca/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
 
 ## En pratique
 
 ### Création d'un conteneur Object Storage depuis l'espace client OVHcloud
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans la barre de navigation de gauche sous `Storage`.
+Connectez-vous à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans la barre de navigation de gauche sous `Storage`.
 
 Cliquez ensuite sur `Create an object container`{.action}.
 
@@ -61,7 +61,7 @@ Nommez votre conteneur, puis cliquez sur `Create the container`{.action} :
 > [!warning]
 >
 > Si vous souhaitez lier votre conteneur à un nom de domaine, le nom de votre conteneur de doit pas contenir les caractères suivants : - [ . ] - [ _ ] et vous ne devez pas utiliser de majuscules.
-> Pour plus d'informations, consultez notre guide « [Lier un conteneur a un nom de domaine](https://docs.ovh.com/fr/storage/pcs/link-domain/) ».
+> Pour plus d'informations, consultez notre guide « [Lier un conteneur a un nom de domaine](https://docs.ovh.com/ca/fr/storage/pcs/link-domain/) ».
 >
 
 ![container name](images/create-container-20211005111805966.png)
@@ -93,7 +93,7 @@ Nommez votre conteneur.
   > - [ . ]
   > - [ _ ]
   > - Et vous ne devez pas utiliser de majuscules.
-  > Pour plus d'informations, consultez notre guide « [Lier un conteneur a un nom de domaine](https://docs.ovh.com/fr/storage/pcs/link-domain/) ».
+  > Pour plus d'informations, consultez notre guide « [Lier un conteneur a un nom de domaine](https://docs.ovh.com/ca/fr/storage/pcs/link-domain/) ».
   >
 
 Sélectionnez la politique d'accès de votre conteneur puis cliquez sur `Suivant`{.action}

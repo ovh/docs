@@ -9,7 +9,7 @@ section: Public Cloud Archive
 
 ## Objectif
 
-Public Cloud Archive est une solution de stockage illimitée avec une facturation simple et adaptée à vos besoins. Il existe de nombreux types de conteneurs d'objets :
+L'offre Public Cloud Archive est une solution de stockage illimitée avec une facturation simple et adaptée à vos besoins. Il existe de nombreux types de conteneurs d'objets :
 
 - pour de l'hébergement statique (site web statique);
 - pour de l'hébergement privé (Exemple : stockage de données personnelles);

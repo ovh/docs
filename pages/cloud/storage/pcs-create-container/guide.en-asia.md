@@ -22,17 +22,17 @@ The first step is to create a container that will hold your files.
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 If you use Horizon :
 
-- an [OpenStack user](https://docs.ovh.com/gb/en/public-cloud/creation-and-deletion-of-openstack-user/){.external}
+- an [OpenStack user](https://docs.ovh.com/asia/en/public-cloud/creation-and-deletion-of-openstack-user/){.external}
 
 ## Instructions
 
 ### Creating an Object Storage container from the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Object Storage`{.action} in the left-hand navigation bar under "Storage".
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Object Storage`{.action} in the left-hand navigation bar under "Storage".
 Finally, click `Create an object container`{.action}.
 
 If this is your first container:
@@ -64,7 +64,7 @@ Name your container, then click `Create the container`{.action}:
 > - [ _ ]
 > - And you must not use capital letters.
 >  
-> See: [Linking a container to a domain name](https://docs.ovh.com/fr/storage/pcs/link-domain/)
+> See: [Linking a container to a domain name](https://docs.ovh.com/asia/en/storage/pcs/link-domain/)
 >
 
 ![container name](images/create-container-20211005111805966.png)
@@ -97,7 +97,7 @@ Name your container.
 > - [ _ ]
 > - And you must not use capital letters.
 >  
-> See: [Linking a container to a domain name](https://docs.ovh.com/fr/storage/pcs/link-domain/)
+> See: [Linking a container to a domain name](https://docs.ovh.com/asia/en/storage/pcs/link-domain/)
 >
 
 Select the access policy for your container then click `Next`{.action}.
