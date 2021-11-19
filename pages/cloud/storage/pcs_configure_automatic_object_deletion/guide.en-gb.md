@@ -30,7 +30,7 @@ There are two ways to delete your objects/files
 
 
 
-## After a certain number of seconds
+### After a certain number of seconds
 To do this, configure your request's X-Delete-After header
 
 
