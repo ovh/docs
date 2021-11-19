@@ -43,8 +43,7 @@ This message might appear when you try to auto-create a new module. Each 1-click
 
 > [!primary]
 >
-> View our comparison of different [hosting plans](https://www.ovhcloud.com/asia/web-hosting/).
->
+> View our comparison of different [hosting plans](../web-hosting-faq/)
 
 In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on `Web Cloud`{.action}, then `Hosting plans`{.action}. Select the plan concerned, then click on `Upgrade` in the `Plan` section.
 
@@ -77,8 +76,6 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 #### Solution 4: install your module on a database you already use
 
 To install your module on an existing database, you will need to use the [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation).
-
-To find your database login details, please read our [FAQ](https://www.ovhcloud.com/en-gb/web-hosting/).
 
 ### "The installation directory is not empty"
 
@@ -113,6 +110,8 @@ In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to yo
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
 After launching your module installation in advanced mode, you receive an email stating that your module cannot connect to the specified database.
+
+First check your [database credentials](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
 Then delete your module via the `1-click modules`{.action} tab.
 

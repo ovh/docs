@@ -117,7 +117,7 @@ In diesem Fall verbinden Sie sich via [FTP mit Ihrem Hosting](../verbindung-ftp-
 
 Nachdem Sie die Installation Ihres Moduls im Experten-Modus gestartet haben, erhalten Sie über E-Mail den Hinweis, dass Ihr Modul sich nicht mit der angegebenen Datenbank verbinden kann. 
 
-Überprüfen Sie zunächst Ihre Login-Daten für die Datenbank. Verwenden Sie dazu unsere [FAQ](https://www.ovh.de/hosting/faq/), falls notwendig.
+Überprüfen Sie zunächst Ihre [Login-Daten](../webhosting_installation_von_webhosting-modulen/#datenbank-auswahlen) für die Datenbank.
 
 Löschen Sie anschließend Ihr Modul über den Tab `1-Klick-Module`{.action}.
 

@@ -83,7 +83,7 @@ Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 Para instalar o módulo numa base de dados já utilizada, deverá utilizar o [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada) de instalação de um novo **Módulo 1 clique**.
 
-Para encontrar as credenciais da sua base de dados, consulte a nossa [FAQ](https://www.ovhcloud.com/pt/web-hosting/).
+Para encontrar as credenciais da sua base de dados, consulte a nossa [guia](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#configurar-o-modulo).
 
 ### "O diretório de instalação não está vazio"
 
@@ -119,7 +119,7 @@ Neste caso, [ligue-se em FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-w
 
 Depois de lançar a instalação do módulo em modo avançado, recebeu um e-mail indicando que o seu módulo não pode ligar-se à base de dados indicada. 
 
-Por isso, deve verificar os dados de acesso à sua base de dados. Para as encontrar, consulte a nossa [FAQ](https://www.ovhcloud.com/pt/web-hosting/).
+Por isso, deve verificar os dados de acesso à sua base de dados. Para as encontrar, consulte a nossa [guia](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#configurar-o-modulo).
 
 De seguida, elimine o módulo através do separador `Módulos 1 clique`{.action}:
 

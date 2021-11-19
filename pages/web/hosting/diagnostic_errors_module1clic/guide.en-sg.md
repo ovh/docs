@@ -78,7 +78,7 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 
 To install your module on an existing database, you will need to use the [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
-To find your database login details, please read our [FAQ](https://www.ovhcloud.com/en-sg/web-hosting/).
+To find your database login details, please check this [guide](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
 ### "The installation directory is not empty"
 
@@ -114,7 +114,7 @@ In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to yo
 
 After launching your module installation in advanced mode, you receive an email stating that your module cannot connect to the specified database.
 
-First check your database credentials. To find them, please read our [FAQ](https://www.ovhcloud.com/en-sg/web-hosting/).
+First check your [database credentials](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
 Then delete your module via the `1-click modules`{.action} tab.
 

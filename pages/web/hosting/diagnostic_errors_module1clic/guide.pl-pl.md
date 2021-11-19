@@ -83,7 +83,7 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 Aby zainstalować moduł na bazie danych, której już używasz, [użyj zaawansowanego](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#instalacja-w-trybie-zaawansowanym)trybu instalacji nowego **modułu za pomocą 1 kliknięcia**.
 
-Aby odnaleźć dane do logowania do bazy danych, sprawdź nasz [FAQ](https://www.ovhcloud.com/pl/web-hosting/).
+Aby odnaleźć dane do logowania do bazy danych, sprawdź nasz [przewodnik](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#konfiguracja-modulu).
 
 ### "Katalog instalacji nie jest pusty"
 
@@ -118,7 +118,7 @@ W tej sytuacji [zaloguj się przez FTP](../logowanie-przestrzen-dyskowa-ftp-host
 
 Po uruchomieniu instalacji modułu w trybie zaawansowanym otrzymałeś wiadomość e-mail z informacją, że moduł nie może się łączyć z wskazaną bazą danych. 
 
-Należy więc sprawdzić dane dostępowe do bazy danych. Aby je znaleźć, sprawdź nasz [FAQ](https://www.ovhcloud.com/pl/web-hosting/).
+Należy więc sprawdzić dane dostępowe do bazy danych. Aby je znaleźć, sprawdź nasz [przewodnik](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#konfiguracja-modulu).
 
 Następnie usuń moduł w zakładce `Moduły za 1 kliknięciem`{.action}:
 

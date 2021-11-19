@@ -79,6 +79,8 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 Pour installer votre module sur une base de données déjà utilisée, vous devrez utiliser le [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) d'installation d'un nouveau **Module en 1 clic**.
 
+Pour retrouver les identifiants de votre base de données, consultez ce [guide](../modules-en-1-clic/#configurer-le-module).
+
 > [!primary]
 >
 > Vous pourrez sauvegarder les données d'un seul site dans cette situation en utilisant un [script PHP ou une commande SSH](../exportation-bases-donnees/#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin_1).
@@ -121,7 +123,7 @@ Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-h
 
 Après avoir lancé l'installation de votre module en mode avancé, vous avez reçu un e-mail indiquant que votre module ne peut pas se connecter à la base de données indiquée.
 
-Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez notre [FAQ](https://www.ovhcloud.com/fr/web-hosting/).
+Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez ce [guide](../hosting/modules-en-1-clic/#configurer-le-module).
 
 Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
 

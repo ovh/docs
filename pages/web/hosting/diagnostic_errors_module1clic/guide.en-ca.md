@@ -78,7 +78,7 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 
 To install your module on an existing database, you will need to use the [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
-To find your database login details, please read our [FAQ](https://www.ovhcloud.com/en-ca/web-hosting/).
+To find your database login details, please check this [guide](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
 ### "The installation directory is not empty"
 
@@ -114,7 +114,7 @@ In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to yo
 
 After launching your module installation in advanced mode, you receive an email stating that your module cannot connect to the specified database.
 
-First check your database credentials. To find them, please read our [FAQ](https://www.ovhcloud.com/en-ca/web-hosting/).
+First check your [database credentials](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
 Then delete your module via the `1-click modules`{.action} tab.
 
@@ -143,7 +143,7 @@ Back up the actual **1-click module** and its **Database**, if necessary. Then, 
 
 This can have several causes: 
 
-- You have recently changed your [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) or DNS servers, or you have [transferred your domain name](../../domains/transfer-generic-domain/). Wait until these operations are completed (48 hours for changes on your `DNS servers`). Restart your devices regularly (PC, smartphone, internet connection, etc.) and refresh your web browser’s cache.
+- You have recently changed your [DNS Zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) or DNS servers, or you have [transferred your domain name](../../domains/transfer-generic-domain/). Wait until these operations are completed (48 hours for changes on your `DNS servers`). Restart your devices regularly (PC, smartphone, internet connection, etc.) and refresh your web browser’s cache.
 
 - Your domain name is still linked to your old hosting plan. In this case, edit your [DNS Zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone_1) or [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/#modifying-dns-servers), or contact your old hosting provider to do so.
 

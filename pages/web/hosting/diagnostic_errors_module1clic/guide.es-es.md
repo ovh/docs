@@ -83,7 +83,7 @@ En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Para instalar su módulo en una base de datos ya utilizada, deberá utilizar el [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) de instalación de un nuevo **módulo en 1 clic**.
 
-Para consultar las claves de la base de datos, consulte nuestras [FAQ](https://www.ovhcloud.com/es-es/web-hosting/).
+Para encontrar los detalles de inicio de sesión de la base de datos, por favor, compruebe esta [guía](../modulos-en-un-clic/#configurar-el-modulo)
 
 ### "El directorio de instalación no está vacío"
 
@@ -112,13 +112,13 @@ En ese caso, [conéctese por FTP](../conexion-espacio-almacenamiento-ftp-alojami
 > Para cualquier duda sobre los datos que desea eliminar para reducir la cantidad de datos en su alojamiento, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).<br>
 > No podremos asistirle en este asunto.
 
-### "No se puede conectar a la base de datos" <a name="delete-the-module"></a>
+### "Unable to connect to database" <a name="delete-the-module"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
 Una vez que haya iniciado la instalación del módulo en modo avanzado, recibirá un mensaje de correo electrónico indicándole que el módulo no puede conectarse a la base de datos indicada. 
 
-Por lo tanto, debe verificar las claves de la base de datos. Para localizarlos, consulte nuestras [FAQ](https://www.ovhcloud.com/es-es/web-hosting/).
+Primero compruebe sus [credenciales de base de datos](../modulos-en-un-clic/#configurar-el-modulo).
 
 A continuación, elimine el módulo en la pestaña `Módulos en 1 clic`{.action}:
 
@@ -154,7 +154,7 @@ En ese caso, modifique en primer lugar los [derechos del usuario](../crear-bases
 
 Compruebe también sus claves de acceso [conectando directamente](../coneccion-base-de-datos-servidor-bdd/#procedimiento) a su servidor de bases de datos y reinicie la instalación de su módulo.
 
-### Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'
+### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
 
 ![cant_connect_server](images/cant_connect_server.png) {.thumbnail}
 

@@ -35,7 +35,7 @@ La creazione di un [modulo in 1 click](../hosting_condiviso_guida_ai_moduli_degl
 
 > [!primary]
 >
-> Inserisci qui gli errori più comuni. Se riscontri un'altra anomalia, consulta le nostre [FAQ sugli hosting Web](https://www.ovhcloud.com/it/web-hosting/).
+> Inserisci qui gli errori più comuni. Se riscontri un'altra anomalia, consulta le nostre [FAQ sugli hosting Web](../faq-hosting-web/).
 >
 
 ### "Si è verificato un errore durante il caricamento delle informazioni. (You need at least one free database)"
@@ -83,7 +83,7 @@ Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fro
 
 Per installare il tuo modulo su un database già utilizzato, è necessario utilizzare la [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) di installazione di un nuovo **CMS in 1 click**.
 
-Per recuperare le credenziali del tuo database, consulta le nostre [FAQ](https://www.ovhcloud.com/it/web-hosting/).
+Per recuperare le credenziali del tuo database, consulta le nostre [guida](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#configura-il-modulo).
 
 ### "La directory di installazione non è vuota"
 
@@ -99,7 +99,7 @@ Per collegare il tuo dominio a un'altra directory, clicca su `Modifica il domini
 
 Accedi al tuo hosting via [FTP](../accedere-spazio-storage-ftp-hosting-web/) e, dopo averlo salvato, elimina o trasferisci il contenuto della cartella.
 
-### « Si è verificato un errore durante il caricamento delle informazioni (There is not enough space on your hosting (you need at least xxx MB)) »
+### "Si è verificato un errore durante il caricamento delle informazioni (There is not enough space on your hosting (you need at least xxx MB))"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
 
@@ -118,7 +118,7 @@ In questa situazione, [connettiti in FTP](../accedere-spazio-storage-ftp-hosting
 
 Dopo aver avviato l'installazione del tuo modulo in modalità avanzata, hai ricevuto un'email che ti informa che il tuo modulo non può connettersi al database indicato. 
 
-È quindi necessario verificare le credenziali del tuo database. Per trovarli, consulta le nostre [FAQ](https://www.ovhcloud.com/it/web-hosting/).
+È quindi necessario verificare le credenziali del tuo database. Per trovarli, consulta la nostra [guida](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#configura-il-modulo).
 
 Elimina il tuo modulo dalla scheda `CMS in 1 click`{.action}:
 

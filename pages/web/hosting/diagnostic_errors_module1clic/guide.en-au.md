@@ -112,7 +112,7 @@ In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to yo
 
 After launching your module installation in advanced mode, you receive an email stating that your module cannot connect to the specified database.
 
-First check your database credentials. To find them, please read our [FAQ](https://www.ovhcloud.com/en-au/web-hosting/).
+First check your [database credentials](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
 Then delete your module via the `1-click modules`{.action} tab.
 
