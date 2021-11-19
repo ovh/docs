@@ -36,7 +36,7 @@ Sie haben hierfür zwei Möglichkeiten zur Bestimmung des Zeitpunktes, zu dem Ih
 Hierfür müssen Sie den Header X-Delete-After für Ihre Objekte konfigurieren:
 
 
-```
+```bash
 root@server:~$ swift copy --header "X-Delete-After: 3600" container test.txt
 ```
 
@@ -52,7 +52,7 @@ Es gibt spezielle [Konverter](http://www.epochconverter.com/), die Ihnen diesen 
 Anschließend geben Sie dieses Datum im Header X-Delete-At an:
 
 
-```
+```bash
 root@server:~$ swift copy --header "X-Delete-At: 1448928000000" container test.txt
 ```
 
