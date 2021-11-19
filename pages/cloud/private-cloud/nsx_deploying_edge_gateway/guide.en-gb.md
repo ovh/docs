@@ -74,7 +74,7 @@ Click on `+Add`{.action}
 ![Interfaces](images/en08inter.png)
 
 There are 2 types of interfaces:
-- Uplink will communicate with the outside of your netword
+- Uplink will communicate with the outside of your network
 - Internal will be confined to your network
 
 Let's name an interface and choose Uplink.   
