@@ -127,7 +127,7 @@ Après installation, le dispositif est Déployé.
 
 ![Final](images/fr17done.png)
 
-Bravo et bienvenu dans le monde du NSX!   
+Bravo et bienvenue dans le monde du NSX!   
 
 ## Aller plus loin
 
