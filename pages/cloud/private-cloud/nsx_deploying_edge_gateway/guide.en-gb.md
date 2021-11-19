@@ -78,7 +78,7 @@ There are 2 types of interfaces:
 - Internal will be confined to your network
 
 Let's name an interface and choose Uplink.   
-Click on the `pen`{.action} symbol to select how it will connect out.
+Click on the `pencil`{.action} symbol to select how it will connect out.
 
 ![Outside](images/en09out.png)
 
@@ -94,7 +94,7 @@ Click `OK`{.action}.
 ![addIP](images/en10standard02.png)
 
 `Add`{.action} a second interface. This time it will be an Internal one.    
-Click on the `pen`{.action} symbol again to select the network the interface will be part of.    
+Click on the `pencil`{.action} symbol again to select the network the interface will be part of.    
 Also, add the primary IP and subnet prefix for the vNIC.
 
 ![Inside](images/en11in.png)
