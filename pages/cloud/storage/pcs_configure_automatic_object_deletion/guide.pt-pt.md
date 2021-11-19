@@ -7,7 +7,7 @@ legacy_guide_number: g1950
 ---
 
 
-##
+## Objetivo
 Para facilitar a gestão do seu Object Storage é possível que tenha necessidade de decidir a duração de vida dos seus ficheiros.
 Poderá, por ecemplo, guardá-los durante um certo período de tempo.
 Este guia explica-lhe como poderá eliminar os seus ficheiros de forma automática passado algum tempo ou numa data em concreto.
@@ -21,7 +21,7 @@ Este guia explica-lhe como poderá eliminar os seus ficheiros de forma automáti
 
 
 
-##
+## Instruções
 Existem duas formas para eliminar os seus ficheiros:
 
 - Após alguns segundos (a definir)
@@ -30,11 +30,11 @@ Existem duas formas para eliminar os seus ficheiros:
 
 
 
-## Após alguns segundos (a definir)
+### Após alguns segundos (a definir)
 Para tal basta configurar o header X-Delete-After dos seus objetos
 
 
-```
+```bash
 root@server:~$ swift post --header "X-Delete-After: 3600" container test.txt
 ```
 
@@ -42,20 +42,20 @@ root@server:~$ swift post --header "X-Delete-After: 3600" container test.txt
 O ficheiro test.txt será então eliminado dentro de 1 hora
 
 
-## Numa data em concreto
+### Numa data em concreto
 Num primeiro tempo deverá conhecer a data de eliminação em formato epoch.
 É possível que utilize um [conversor](http://www.epochconverter.com/) para que consiga recuperar facilmente o valor a introduzir.
 
 Depois do valor recuperado, basta que o introduza no header X-Delete-At :
 
 
-```
+```bash
 root@server:~$ swift post --header "X-Delete-At: 1448928000000" container test.txt
 ```
 
 
 O ficheiro test.txt será eliminado a 01 de Dezembro de 2015.
 
-
-##
-[Voltar ao índice dos guias Cloud]({legacy}1785)
+## Quer saber mais?
+ 
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
