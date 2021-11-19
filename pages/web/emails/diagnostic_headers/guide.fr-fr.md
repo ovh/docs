@@ -2,200 +2,199 @@
 title: "Récupérer l'en-tête d'un e-mail"
 slug: recuperation-des-entetes-e-mails
 legacy_guide_number: 1365
-excerpt: 'Retrouver ici comment récupérer un entête e-mail.'
+excerpt: 'Découvrez comment récupérer un entête e-mail sur votre client de messagerie'
 section: Diagnostic
 order: 03
 ---
 
-Chaque e-mail reçu possède des entêtes (les headers) qui permettent de connaître les serveurs par lesquels votre e-mail a transité.
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #fff; 
+   color: #000;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.90em;
+   color: #000;
+ }
+ .small {
+     font-size: 0.90em;
+ }
+</style>
 
-Ces entêtes permettent à OVH de diagnostiquer des lenteurs, des mails en erreur ou non délivrés. Ils vous seront généralement demandés par le service technique afin de mieux cibler votre souci.
 
+**Dernière mise à jour le 04/06/2021**
 
-## Logiciel de messagerie Windows
+## Objectif
 
+L'en-tête a pour rôle de retracer le chemin empreinté par votre e-mail sur le réseau, de l'expéditeur au destinataire. Il peut être utilie pour identifier un e-mail malveillant.
 
-> [!primary]
->
-> Pour un e-mail délivré, l'opération est à effectuer par le destinataire. Pour un e-mail non délivré, cette action est à effectuer par l'émetteur.
-> 
+Chaque e-mail reçu possède un en-tête (*header*). Il ne s'affiche pas par défaut lorsque vous consultez votre e-mail, Il existe néanmoin un moyen de l'afficher sur votre client de messagerie. 
 
+Il est également possible d'extraire l'e-mail dans son intégratlité sous forme de fichier `.eml`. Ce fichier peut vous être demandé pour analyser un e-mail malveillant que vous avez reçu. pour récupérer un fichier `.eml`, consultez notre rubrique [Webmail](#webmail)
 
-### Microsoft Outlook Express
-Sélectionnez l'e-mail duquel vous souhaitez récupérer l'entête.
+**Découvrez comment récupérer un entête e-mail sur votre client de messagerie**
 
-Rendez-vous dans "Fichier" -> "Propriétés" puis "Détails".
+## Prérequis
 
-Cliquez sur "Source du message". Vous pouvez à ce niveau récupérer le *header* de l'e-mail.
+- Posséder une adresse e-mail sur une de nos [Solutions E-mails OVHcloud](https://www.ovhcloud.com/fr/emails/) ou une solution externe.
+- Avoir accès à l'adresse e-mail via son webmail ou un logiciel de messagerie.
 
+## En pratique
 
-### Microsoft Outlook 2003
-Ouvrez l'e-mail duquel vous souhaitez récupérer l'entête.
+### Comprendre le contenu d'un en-tête
 
-Dans la nouvelle fenêtre, rendez-vous dans "Affichage" -> "Options...".
+L'en-tête d'un e-mail est composé de plusieurs éléments indiquant le cheminement de l'e-mail dans un ordre chronologique, ainsi que des informations suplémentaires. Vous trouvez ci-dessous une liste non-exosistive des éléments que vous pouvez trouver dans un en-tête ainsi que leur siginification. 
 
+- Le champ `received` est présent dans l'entête à chaque passage de l'e-mail sur un serveur d'envoi (SMTP). On retrouve généralement le nom d'hôte du serveur avec son adresse IP et la date. Les champs `Received` sont classés du dernier passage au premier passage:
 
-![emails](images/img_1587.jpg){.thumbnail}
+**Exemple de champ Received**
+<pre class="console"><code>
+Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
+	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
+	for <john@mydomain.ovh>; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+ 
+</code></pre>
 
-L'entête complet de l'e-mail apparaît (cf cadre vert dans la capture ci- contre).
+- Le champ `Return-Path` correspond à l'adresse de retour lors d'un echec à l'envoi. l'adresse de retour est généralement celle qui a réalisée l'envoi. 
 
+<pre class="console"><code>
+Return-Path: &ltjohn@mydomain.ovh&gt
 
-![emails](images/img_1588.jpg){.thumbnail}
+</code></pre>
 
+- Le champ `From` désigne l'adresse de l'expéditeur de l'e-mail et son nom d'affichage.
+<pre class="console"><code>
+From: John &ltjohn@mydomain.ovh&gt
 
-### Microsoft Outlook 2007
-Faites un clic droit sur l'e-mail duquel vous souhaitez récupérer l'entête.
+</code></pre>
 
-Rendez-vous dans "Options des messages...".
+- Le champ `To` désigne l'adresse du destinataire de l'e-mail et son nom d'affichage.
+<pre class="console"><code>
+To: Robert &ltrobert@hisdomain.ovh&gt 
 
+</code></pre>
 
-![emails](images/img_1590.jpg){.thumbnail}
+- Le champ `Subject` désigne l'objet de l'e-mail.
+<pre class="console"><code>
+Subject: Hello my friend
 
-L'entête complet de l'e-mail apparaît (cf cadre vert dans la capture ci- contre).
+</code></pre>
 
+- Le champ `Message-ID` désigne l'identifiant unique de l'e-mail terminant par le nom d'hôte de l'expéditeur (après le "@"). 
+<pre class="console"><code>
+Message-ID: &ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt
 
-![emails](images/img_1592.jpg){.thumbnail}
+</code></pre>
 
+- Le champ `Received-SPF` affiche le résultat du contrôle [SPF](https://docs.ovh.com/fr/domains/le-champ-spf/) effectué sur le nom de domaine de l'expéditeur. l'argument `client-ip` permet notament de relever l'adresse IP du serveur qui a servi à expédier l'e-mail. 
+<pre class="console"><code>
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
 
-### Microsoft Outlook 2010
-Ouvrez l'e-mail duquel vous souhaitez récupérer l'entête.
+</code></pre>
 
-Dans cette nouvelle fenêtre, rendez-vous dans l'onglet "Message" puis cliquez sur la petite flèche à droite de Indicateurs (cf cadre vert dans la capture ci-contre).
+- Les champ `X-` sont des champs personalisés, ils servent de compléments au champs standard. Ils sont implémentés par les serveurs sur lesquels les e-mails transitent.
 
+<pre class="console"><code>
+X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
+X-Ovh-Tracer-Id: 1234567891011121314
+X-VR-SPAMSTATE: OK
+X-VR-SPAMSCORE: 0
+X-VR-SPAMCAUSE: 
 
-![emails](images/img_1593.jpg){.thumbnail}
+</code></pre>
 
-L'entête complet de l'e-mail apparaît (cf cadre vert dans la capture ci- contre).
+### Logiciel de messagerie
 
+#### Microsoft Outlook 
 
-![emails](images/img_1594.jpg){.thumbnail}
+Pour lire l'en-tête, ouvrez l'e-mail de votre choix dans une fenêtre séparée en double-cliquant sur celui-ci dans la liste.
 
+Dans la nouvelle fenêtre, cliquez sur `Fichier`{.action} en haut à droite.
 
-### Microsoft Outlook 2013/2016
-Ouvrez l'e-mail duquel vous souhaitez récupérer l'entête.
+![emails](images/outlook01.png){.thumbnail}
 
-Dans la nouvelle fenêtre, rendez-vous dans "Fichier".
+Sélectionnez ensuite `Informations`{.action} sur la gauche puis cliquez sur `Propriétés`{.action}.
 
+![emails](images/outlook02.png){.thumbnail}
 
-![emails](images/img_1595.jpg){.thumbnail}
+L'entête complet de l'e-mail apparaît dans le cadre inférieure. Vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
 
-Sélectionnez ensuite "Informations" puis "Propriétés".
+![emails](images/outlook03.png){.thumbnail}
 
+#### Mozilla Thunderbird
 
-![emails](images/img_1596.jpg){.thumbnail}
+Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix, puis appuyez simultanément sur les touches `Ctrl`{.action} + `U`{.action}.
 
-L'entête complet de l'e-mail apparaît (cf cadre vert dans la capture ci- contre).
+![emails](images/thunderbird01.png){.thumbnail}
 
+L'entête complet de l'e-mail apparaît dans une fenêtre séparée, vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
 
-![emails](images/img_1597.jpg){.thumbnail}
+#### Mail de Mac
 
+Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix, rendez-vous sur `Présentation`{.action} dans la barre de menu en haut, dans `Message`{.action} cliquez sur `Tous les en-têtes`.
 
-### Mozilla Thunderbird
-Sélectionnez le message duquel vous souhaitez récupérer l'entête.
+![emails](images/mailmac01.png){.thumbnail}
 
-Pressez " **Ctrl+U** ".
+L'entête complet de l'e-mail apparaît dans une fenêtre séparée, vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
 
+### Webmail <a name="webmail"></a>
 
-![emails](images/img_1598.jpg){.thumbnail}
+#### Roundcube
 
-L'entête complet de l'e-mail apparaît (cf cadre vert dans la capture ci- contre).
+##### **Récupérer l'entête**
 
+Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix, cliquez sur le bouton  `... Plus`{.action} puis sur `< > Voir la source`{.action}.
 
-![emails](images/img_1599.jpg){.thumbnail}
+![emails](images/roundcube01.png){.thumbnail}
 
+Une nouvelle fenêtre s'ouvre avec l'entête complet de l'e-mail, vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
 
-## Logiciel de messagerie Mac
+##### **Récupérer le fichier .eml**
 
-### Mail de Mac
-Sélectionnez l'e-mail duquel vous souhaitez récupérer l'entête.
+Pour télécharger le fichier `.eml`, sélectionnez l'e-mail de votre choix, cliquez sur le bouton  `... Plus`{.action} puis sur `Télécharger (.eml)`{.action}.
 
-Rendez-vous dans "Présentation" -> "Message" -> "Tous les en-têtes".
+![emails](images/roundcube02.png){.thumbnail}
 
+#### Outlook Web Application (OWA) <a name="owa"></a>
 
-![emails](images/img_1569.jpg){.thumbnail}
+##### **Récupérer l'entête**
 
-L'entête complet de l'e-mail apparaît, vous pouvez alors le récupérer.
+Pour afficher l'en-tête, sélectionnez l'e-mail que vous souhaitez. Cliquez **sur la flèche** à droite de `Répondre à tous`{.action} puis `Afficher les details du message`{.action}.Une nouvelle fenêtre s'ouvre avec l'entête complet de l'e-mail, il vous offre la possibilité de le télécharger.
 
+![emails](images/owa01.png){.thumbnail}
 
-![emails](images/img_1570.jpg){.thumbnail}
+##### **Récupérer le fichier .eml**
 
+Pour télécharger le fichier `.eml`, cliquez sur `(+) Nouveau`{.action} pour créer un nouvel e-mail. 
 
-### Microsoft Outlook 2011 pour Mac
-Faites un clic droit sur l'e-mail dont vous souhaitez récupérer l'entête.
+Sélectionnez l'e-mail que vous souhaitez extraire, puis glissez-le dans le contenu du nouvel e-mail. 
 
-Sélectionnez ensuite "Afficher la source"
+Cliquez sur la flêche qui pointe vers le bas à côté de la pièce jointe que vous venez de générer, puis cliquez sur `télécharger`{.action} pour enregistrer le ficheir sur votre machine.
 
+![emails](images/owa02.gif){.thumbnail}
 
-![emails](images/img_1565.jpg){.thumbnail}
+### Autre client de messagerie
 
-L'entête complet de l'e-mail apparaît, vous pouvez alors le récupérer.
+#### Gmail
 
+Pour récupérer l'entête, sélectionnez l'e-mail concerné, puis cliquez sur le bouton `...`{.action} (verticaux) à droite, puis sur `Afficher la source du message`{.action}. Une nouvelle fenêtre s'ouvre avec l'entête complet de l'e-mail, il vous offre la possibilité de le télécharger l'e-mail au format `.eml` également.
 
-![emails](images/img_1566.jpg){.thumbnail}
+![emails](images/gmail01.png){.thumbnail}
 
+#### Outlook.com
 
-### Microsoft Entourage 2008 pour Mac
-Sélectionnez l'e-mail duquel vous souhaitez récupérer l'entête.
+Pour afficher l'en-tête de l'interface webmail utilisée sur Outlook.com, consulter notre rubriqua [Outlook Web Application](#owa) pour le découvrir comment .
 
-Réalisez un clic droit sur l'e-mail
+## Aller plus loin
 
-Sélectionnez ensuite "Source".
+[FAQ E-mail](https://docs.ovh.com/fr/emails/faq-emails/)
 
-Une nouvelle fenêtre s'ouvre avec l'entêtes complet de l'e-mail.
-
-
-## Webmail
-
-### Roundcube
-Sélectionnez l'e-mail duquel vous souhaitez récupérer l'entête.
-
-Rendez-vous dans "... (Plus)" -> "Voir la source".
-
-
-![emails](images/img_1600.jpg){.thumbnail}
-
-Un nouvel onglet s'ouvre dans votre navigateur avec l'entête complet de l'e-mail.
-
-
-![emails](images/img_1601.jpg){.thumbnail}
-
-
-### OWA 2013
-Sélectionnez l'e-mail duquel vous souhaitez récupérer l'entête.
-
-Rendez-vous dans " **...**" -> "afficher les détails du message".
-
-
-![emails](images/img_1572.jpg){.thumbnail}
-
-L'entête complet de l'e-mail apparaît, vous pouvez alors le récupérer.
-
-
-![emails](images/img_1573.jpg){.thumbnail}
-
-
-### OWA 2016
-Sélectionnez l'e-mail duquel vous souhaitez récupérer l'entête.
-
-
-![emails](images/img_3725.jpg){.thumbnail}
-
-Cliquez à sur la flèche à droite de "Répondre à tous" puis "Afficher les details du message"
-
-
-![emails](images/img_3727.jpg){.thumbnail}
-
-Voici l'entête de l'e-mail concerné :
-
-
-![emails](images/img_3728.jpg){.thumbnail}
-
-
-## Autre
-
-### Gmail
-Ouvrez l'e-mail duquel vous souhaitez récupérer l'entête.
-
-Cliquez sur la flèche à côté du lien de réponse.
-
-Sélectionnez "Afficher l'original" pour ouvrir une nouvelle fenêtre l'entête de l'e-mail.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
