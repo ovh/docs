@@ -6,7 +6,7 @@ section: NSX
 order: 02
 ---
 
-**Last updated on 11/18/2021**
+**Last updated on 11/19/2021**
 
 ## Objective
 
