@@ -7,7 +7,7 @@ legacy_guide_number: g1950
 ---
 
 
-##
+## Objetivo
 Para facilitarle la gestión de su Object Storage, es posible que necesite especificar el ciclo de vida de determinados archivos para, por ejemplo, guardar determinados backups durante un cierto período de tiempo.
 
 Esta guía explica cómo eliminar los archivos de manera automática al cabo de un cierto período de tiempo o en una fecha concreta.
@@ -23,7 +23,7 @@ Para seguir todos los pasos de esta guía, es necesario:
 
 
 
-##
+## Procedimiento
 Existen dos formas de eliminar los archivos:
 
 
@@ -37,7 +37,7 @@ Existen dos formas de eliminar los archivos:
 Configure el header X-Delete-After de los objetos:
 
 
-```
+```bash
 root@server:~$ swift post --header "X-Delete-After: 3600" container test.txt
 ```
 
@@ -51,12 +51,13 @@ En primer lugar, hay que conocer la fecha de eliminación en formato Epoch. Para
 A continuación, introduzca ese valor en el header X-Delete-At:
 
 
-```
+```bash
 root@server:~$ swift post --header "X-Delete-At: 1512086400000" container test.txt
 ```
 
 
 En este ejemplo, el archivo test.txt se eliminará el 1 de diciembre de 2017.
 
-
-##
+## Más información
+  
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
