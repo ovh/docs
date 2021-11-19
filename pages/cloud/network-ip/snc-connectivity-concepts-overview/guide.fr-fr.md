@@ -6,6 +6,10 @@ section: SecNumCloud Connectivity
 order: 01
 ---
 
+> [!primary]
+> Une version en langue anglaise de cette page est disponible [ici](https://docs.ovh.com/gb/en/network-ip/secnumcloud-connectivity-overview-concept/).
+>
+
 **Dernière mise à jour le 18/11/2021**
 
 ## Présentation de SecNumCloud Connectivity

@@ -6,6 +6,10 @@ section: SecNumCloud Connectivity
 order: 03
 ---
 
+> [!primary]
+> Une version en langue anglaise de cette page est disponible [ici](https://docs.ovh.com/gb/en/network-ip/secnumcloud-connectivity-spn-connector-concept/).
+>
+
 **Dernière mise à jour le 18/11/2021**
 
 ## Objectif
