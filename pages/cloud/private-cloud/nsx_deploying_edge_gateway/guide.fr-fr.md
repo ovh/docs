@@ -25,38 +25,38 @@ La NSX Edge Services Gateway est une appliance VMware offrant des services tels 
 Vous allez vous embarquer dans l'aventure du déploiement d'une appliance NSX.   
 Nous vous guiderons étape par étape dans l'installation d'une Edge Services Gateway avec une connection interne à votre environnement et une autre pour communiquer avec l'extérieur.    
 
-First, go to the `Networking and Security`{.action} dashboard.
+Tout d'abord, dans votre interface vSphere, allez dans the tableau de bord `Mise en réseau et sécurité`{.action}.
 
 ![Menu](images/fr01dash.png)
 
-On the left side, navigate to the `NSX Edges`{.action} section.
+Sur la gauche de votre écran, cliquez sur `Dispositifs NSX Edge`{.action}.
 
 ![NSX](images/fr02nsx.png)
 
-Click on `+Add`{.action} then `Edge Services Gateway`{.action}.
+Cliquez sur `+ Ajouter`{.action} puis `Edge Services Gateway`{.action}.
 
 ![AddNSX](images/fr03add.png)
 
-The guided installation  window pops up.   
-Fill in the basic information. Only the name is mandatory, the other fields are optional and will either be automatically created or be ignored if non applicable to your case.   
-When done, click `Next`{.action}.    
-*Leave Deploy Edge Appliance VM checked. unchecking it would create the rules and settings but nothing would be active until a VM is deployed. We are leaving High Availibility out of our scope for now*
+La fenêtre d'installation guidée apparait.   
+Remplissez les détails de base. Seuls le nom est obligatoire. Les autres champs seront créés automatiquement ou ignorés en fonction de votre infrastucture.   
+Quand vous êtes prêt, cliquez sure `Suivant`{.action}.    
+*Laissez Déployer une VM de dispositif Edge cochée. Décocher l'option entraine la création des règles et paramètres mais tout sera inactif tant qu'une VM n'est pas déployée. Nous laissons la Haute Disponibilité de coté pour l'instant.*
 
 ![Basic](images/fr04basic.png)
 
-Now on the to the settings window.    
-The default administrator user name is filled in automatically but you can change it as you need.    
-Create and confirm a compliant password.    
-*Auto Rule Generation will add firewall, NAT, and routing to enable control traffic to flow for these services.*    
-SSH option allows console access on port 22 if needed. We recommend leaving it off by default and only open access as needed.     
-FIPS mode enforces encryption and security levels compliant with the United States Federal Information Processing Standards.     
-The logging level can be adapted to your needs.    
-Click `Next`{.action}
+La fenêtre des Paramètres suit.    
+Le compte d'administration par défaut est rempli automatiquement. Vous pouvez le changer à votre convenance.    
+Créez et confirmez un mot de passe conforme.    
+*Génération automatique de règles ajoute les règles de Pare-Feu, NAT, et routage pour la surveillance des services.*    
+L'option Accès SSH autorise un accès par console sur le port 22. Nous recommandons de la laisser désactivée par défaut et de ne l'activer que de manière temporaire quand c'est nécessaire.     
+Mode FIPS impose le chiffrement et un niveau de sécurité conforme aux normes des Federal Information Processing Standards du gouvernement américain.     
+Le niveau de journalisation peut être adapté a vos besoin.    
+Cliquez sur `Suivant`{.action}
 
 ![Settings](images/fr05settings.png)
 
-Next is the Deployment Configuration.     
-Select the destination datacenter (if you only have one datacenter in vSphere, there is no choice possible), the size of the appliance (Size will determine processing power and resource consumption) and hit the `+`{.action} button.
+Au tour de la Configuration du déploiement.     
+Selectionnez le centre de données cible (si vous n'avez qu'un seul centre de données dans vSphere, il n'y a pas d'autre choix possible), la taille du dispositif (la taille détermine la consommation de ressources et la puissance de calcul) puis appuyez sur le bouton `+`{.action}.
 
 ![Deployment](images/fr06deploy.png)
 
