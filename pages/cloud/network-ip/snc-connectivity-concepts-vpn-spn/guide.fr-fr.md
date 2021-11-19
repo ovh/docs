@@ -59,7 +59,7 @@ Dans la zone SecNumCloud, VPN-SPN doit être attaché à un SPN Connector lui-m�
 
 Informations requises :
 
-* Deux (2x) adresses IP externes (IP + netmask) au sein du sous-réseau gamme vRack (géré par OVHcloud Connect ou autre OVHcloud) → source tunnel
+* Deux (2x) adresses IP externes (IP + netmask) au sein du sous-réseau vRack (géré par OVHcloud Connect ou autre solution OVHcloud) → source tunnel
 * Une (1x) IP distante → point de terminaison VPN
 * Configuration de la sécurité (PSK)
 * Deux (2x) sous-réseaux pour les tunnels (masque réseau : /30)
