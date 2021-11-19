@@ -6,9 +6,13 @@ section: SecNumCloud Connectivity
 order: 05
 ---
 
+> [!primary]
+> Une version en langue anglaise de ce guide est disponible [ici](https://docs.ovh.com/gb/en/network-ip/secnumcloud-connectivity-faq/)
+>
+
 **Dernière mise à jour le 18/11/2021**
 
-## FAQ Ovhcloud Connect
+## FAQ SecNumCloud Connectivity
 
 ### Qu'est-ce que le Private Network ?
 
