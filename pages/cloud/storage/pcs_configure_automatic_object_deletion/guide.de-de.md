@@ -37,7 +37,7 @@ Hierfür müssen Sie den Header X-Delete-After für Ihre Objekte konfigurieren:
 
 
 ```
-root@server:~$ swift post --header "X-Delete-After: 3600" container test.txt
+root@server:~$ swift copy --header "X-Delete-After: 3600" container test.txt
 ```
 
 
@@ -53,7 +53,7 @@ Anschließend geben Sie dieses Datum im Header X-Delete-At an:
 
 
 ```
-root@server:~$ swift post --header "X-Delete-At: 1448928000000" container test.txt
+root@server:~$ swift copy --header "X-Delete-At: 1448928000000" container test.txt
 ```
 
 
