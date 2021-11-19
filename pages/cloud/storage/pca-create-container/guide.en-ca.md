@@ -22,13 +22,13 @@ The first step is to create a container that will hold your files.
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
 ### Creating a Public Cloud Archive container from the customer area
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Cloud Archive`{.action} in the left-hand navigation bar under "Storage".
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Cloud Archive`{.action} in the left-hand navigation bar under "Storage".
 
 If this is your first container :
 
@@ -51,7 +51,7 @@ Name your container, then click `Create the container`{.action} :
 > - [ _ ]
 > - And you must not use capital letters.
 >  
-> Refer to our guide on [linking a container to a domain name](https://docs.ovh.com/gb/en/storage/pcs/link-domain/) if necessary.
+> Refer to our guide on [linking a container to a domain name](https://docs.ovh.com/ca/en/storage/pcs/link-domain/) if necessary.
 >
 
 ![container name](images/create-container-20211006094550334.png)
