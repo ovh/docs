@@ -37,7 +37,7 @@ Existen dos formas de eliminar los archivos:
 Configure el header X-Delete-After de los objetos:
 
 
-```
+```bash
 root@server:~$ swift post --header "X-Delete-After: 3600" container test.txt
 ```
 
@@ -51,7 +51,7 @@ En primer lugar, hay que conocer la fecha de eliminación en formato Epoch. Para
 A continuación, introduzca ese valor en el header X-Delete-At:
 
 
-```
+```bash
 root@server:~$ swift post --header "X-Delete-At: 1512086400000" container test.txt
 ```
 
