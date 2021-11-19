@@ -32,7 +32,7 @@ On the left side, navigate to the `NSX Edges`{.action} section.
 
 ![NSX](images/en02nsx.png)
 
-Click on `+Add`{.action} then `Edge Services Gateway`{.action}.
+Click on `+ Add`{.action} then `Edge Services Gateway`{.action}.
 
 ![AddNSX](images/en03add.png)
 
@@ -69,7 +69,7 @@ Click `Add`{.action}.
 Back in the Deployment Configuration window, click `Next`{.action}.
 
 The Configure Interfaces is now before you.    
-Click on `+Add`{.action}
+Click on `+ Add`{.action}
 
 ![Interfaces](images/en08inter.png)
 
