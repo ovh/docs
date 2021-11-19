@@ -23,9 +23,8 @@ The NSX Edge Services Gateway is a VMware appliance providing services such as F
 
 You're about to embark in the NSX appliance deployment adventure.    
 We'll guide you step by step on how to set up an Edge Services Gateway with a connection inside your environment as well as another to communicate with the outside.   
-We're not in Kansas anymore.   
 
-First, go to the `Networking and Security`{.action} dashboard.
+First, in the vSphere interface, go to the `Networking and Security`{.action} dashboard.
 
 ![Menu](images/en01dash.png)
 
@@ -69,7 +68,7 @@ Click `Add`{.action}.
 
 Back in the Deployment Configuration window, click `Next`{.action}.
 
-Things get more serious with the Configure Interfaces.    
+The Configure Interfaces is now before you.    
 Click on `+Add`{.action}
 
 ![Interfaces](images/en08inter.png)
@@ -94,7 +93,7 @@ Click `OK`{.action}.
 
 ![addIP](images/en10standard02.png)
 
-Add a second interface. This time it will be an Internal one.    
+`Add`{.action} a second interface. This time it will be an Internal one.    
 Click on the `pen symbol`{.action} again to select the network the interface will be part of.    
 Also, add the primary IP and subnet prefix for the vNIC.
 
@@ -128,7 +127,6 @@ After some time, your appliance will show as Deployed.
 ![Final](images/en17done.png)
 
 Congratulations and welcome to the world of NSX!   
-The journey is only starting.
 
 
 ## Go further
