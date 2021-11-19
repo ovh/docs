@@ -5,7 +5,7 @@ excerpt: 'Cómo gestionar el crédito de SMS en OVHcloud'
 section: 'Gestionar el servicio'
 ---
 
-**Última actualización: 06/12/2019**
+**Última actualización: 16/11/2021**
 
 ## Objetivo
 
@@ -18,16 +18,16 @@ Esta guía explica en qué consiste el crédito de SMS, cómo recargarlo de form
 
 ## Procedimiento
 
-### **Crédito de SMS**
+### Crédito de SMS
 
-En España, 0,8 créditos equivalen a 1 SMS enviado (máximo 160 caracteres). El precio por SMS es decreciente y depende de la cantidad de crédito de SMS que se adquiera en una misma contratación. 
+En España, 0,7 créditos equivalen a 1 SMS enviado (máximo 160 caracteres). El precio por SMS es decreciente y depende de la cantidad de crédito de SMS que se adquiera en una misma contratación. 
 
 Puede consultar la lista de packs de créditos de SMS en el siguiente enlace: [https://www.ovh.es/sms/](https://www.ovh.es/sms/).
 
-**Por ejemplo, si adquiere un pack de 100 créditos de SMS, cada crédito tendrá un precio de 0,06 €.**
+**Por ejemplo, si adquiere un pack de 100 créditos de SMS, cada crédito tendrá un precio de 0,06 € :**
 
-Cada SMS enviado en España equivale a 0,8 créditos, por lo que podrá enviar hasta 125 SMS.
-En el caso de India, por ejemplo, cada SMS equivale a 0,1 créditos, por lo que podrá enviar hasta 1000 SMS.
+Cada SMS enviado en España equivale a 0,7 créditos, por lo que podrá enviar hasta 142 SMS.
+En el caso de India, por ejemplo, cada SMS equivale a 0,4 créditos, por lo que podrá enviar hasta 250 SMS.
 
 Para más información sobre el coste de envío en créditos de sus SMS en función del destino, consulte la siguiente página: [https://www.ovh.es/sms/precios/](https://www.ovh.es/sms/precios/).
 
@@ -38,29 +38,34 @@ Para más información sobre el coste de envío en créditos de sus SMS en funci
 > [Enviar SMS desde el área de cliente](https://docs.ovh.com/es/sms/enviar-sms-desde-el-area-de-cliente/)
 >
 
-### **Recarga automática**
+### Recarga automática
 
 Para garantizar que su cuenta de SMS dispone siempre de crédito, puede activar la recarga automática. Con esta opción, cada vez que su cuenta de SMS baje de un número de créditos determinado, se añadirá de forma automática una nueva cantidad de crédito en su cuenta.
+
+> [!warning]
+>
+> La opción de recarga automática solo puede activarse si dispone de una forma de pago de tipo Adeudo SEPA validada en su cuenta OVHcloud.
+>
 
 Para activar la recarga automática, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda a la pestaña `Telecom`{.action} y abra la sección `SMS`{.action} en el menú de la izquierda. Seleccione la cuenta de SMS en la que desea activar la recarga automática.
 
 Acceda al menú `Opciones`{.action} (1) y seleccione la opción `Recarga automática`{.action} (2).
 
-![Crédito de SMS](images/smscredit1.png){.thumbnail}
+![Crédito de SMS](images/smscredit01.png){.thumbnail}
 
-En la sección `Configurar las opciones`{.action}, haga clic en `Modificar`{.action}.
+En la sección "Administrar las opciones", haga clic en `Modificar`{.action}.
 
-![Crédito de SMS](images/smscredit2.png){.thumbnail}
+![Crédito de SMS](images/smscredit02.png){.thumbnail}
 
 Por último, configure los siguientes campos:
 
 * Umbral mínimo (1): límite mínimo por debajo del cual se realizará la recarga automática.
-* Cantidad a recargar (2): cantidad de créditos que desea recargar en su cuenta de SMS. Puede elegir entre 100, 200, 250, 500 y 1000 créditos.
-* Haga clic en `Aceptar`{.action} (3) para guardar los cambios.
+* Cantidad a recargar (2): cantidad de créditos que desea recargar en su cuenta de SMS. Puede elegir entre 100, 200, 250, 500, 1000, 5000 y 10000 créditos.
+* Haga clic en `Aceptar`{.action} para guardar los cambios.
 
-![Crédito de SMS](images/smscredit3.png){.thumbnail}
+![Crédito de SMS](images/smscredit03.png){.thumbnail}
 
-### **Transferencia de créditos**
+### Transferencia de créditos
 
 > [!primary]
 >
@@ -86,4 +91,4 @@ Haga clic en `Execute`{.action} para confirmar la transferencia, que se realizar
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
