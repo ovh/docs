@@ -36,9 +36,9 @@ order: 03
 
 L'en-tête a pour rôle de retracer le chemin empreinté par votre e-mail sur le réseau, de l'expéditeur au destinataire. Il peut être utilie pour identifier un e-mail malveillant.
 
-Chaque e-mail reçu possède un en-tête (*header*). Il ne s'affiche pas par défaut lorsque vous consultez votre e-mail, Il existe néanmoin un moyen de l'afficher sur votre client de messagerie. 
+Chaque e-mail reçu possède un en-tête (*header*). Il ne s'affiche pas par défaut lorsque vous consultez votre e-mail, Il existe néanmoins un moyen de l'afficher sur votre client de messagerie. 
 
-Il est également possible d'extraire l'e-mail dans son intégratlité sous forme de fichier `.eml`. Ce fichier peut vous être demandé pour analyser un e-mail malveillant que vous avez reçu. pour récupérer un fichier `.eml`, consultez notre rubrique [Webmail](#webmail)
+Il est également possible d'extraire l'e-mail dans son intégralité sous forme de fichier `.eml`. Ce fichier peut vous être demandé pour analyser un e-mail malveillant que vous avez reçu. Pour récupérer un fichier `.eml`, consultez notre rubrique [Webmail](#webmail)
 
 **Découvrez comment récupérer un entête e-mail sur votre client de messagerie**
 
@@ -51,7 +51,7 @@ Il est également possible d'extraire l'e-mail dans son intégratlité sous form
 
 ### Comprendre le contenu d'un en-tête
 
-L'en-tête d'un e-mail est composé de plusieurs éléments indiquant le cheminement de l'e-mail dans un ordre chronologique, ainsi que des informations suplémentaires. Vous trouvez ci-dessous une liste non-exosistive des éléments que vous pouvez trouver dans un en-tête ainsi que leur siginification. 
+L'en-tête d'un e-mail est composé de plusieurs éléments indiquant le cheminement de l'e-mail dans un ordre chronologique, ainsi que des informations supplémentaires. Vous trouvez ci-dessous une liste non exhaustive des éléments que vous pouvez trouver dans un en-tête ainsi que leur signification. 
 
 - Le champ `received` est présent dans l'entête à chaque passage de l'e-mail sur un serveur d'envoi (SMTP). On retrouve généralement le nom d'hôte du serveur avec son adresse IP et la date. Les champs `Received` sont classés du dernier passage au premier passage:
 
@@ -63,7 +63,7 @@ Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
  
 </code></pre>
 
-- Le champ `Return-Path` correspond à l'adresse de retour lors d'un echec à l'envoi. l'adresse de retour est généralement celle qui a réalisée l'envoi. 
+- Le champ `Return-Path` correspond à l'adresse de retour lors d'un echec à l'envoi. l'adresse de retour est généralement celle qui a réalisé l'envoi. 
 
 <pre class="console"><code>
 Return-Path: &ltjohn@mydomain.ovh&gt
@@ -100,7 +100,7 @@ Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=m
 
 </code></pre>
 
-- Les champ `X-` sont des champs personalisés, ils servent de compléments au champs standard. Ils sont implémentés par les serveurs sur lesquels les e-mails transitent.
+- Les champs `X-` sont des champs personnalisés, ils servent de compléments aux champs standards. Ils sont implémentés par les serveurs sur lesquels les e-mails transitent.
 
 <pre class="console"><code>
 X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
@@ -125,7 +125,7 @@ Sélectionnez ensuite `Informations`{.action} sur la gauche puis cliquez sur `Pr
 
 ![emails](images/outlook02.png){.thumbnail}
 
-L'entête complet de l'e-mail apparaît dans le cadre inférieure. Vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
+L'entête complet de l'e-mail apparaît dans le cadre inférieur. Vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
 
 ![emails](images/outlook03.png){.thumbnail}
 
@@ -167,7 +167,7 @@ Pour télécharger le fichier `.eml`, sélectionnez l'e-mail de votre choix, cli
 
 ##### **Récupérer l'entête**
 
-Pour afficher l'en-tête, sélectionnez l'e-mail que vous souhaitez. Cliquez **sur la flèche** à droite de `Répondre à tous`{.action} puis `Afficher les details du message`{.action}.Une nouvelle fenêtre s'ouvre avec l'entête complet de l'e-mail, il vous offre la possibilité de le télécharger.
+Pour afficher l'en-tête, sélectionnez l'e-mail que vous souhaitez. Cliquez **sur la flèche** à droite de `Répondre à tous`{.action} puis `Afficher les détails du message`{.action}.Une nouvelle fenêtre s'ouvre avec l'entête complet de l'e-mail, il vous offre la possibilité de le télécharger.
 
 ![emails](images/owa01.png){.thumbnail}
 
@@ -177,7 +177,7 @@ Pour télécharger le fichier `.eml`, cliquez sur `(+) Nouveau`{.action} pour cr
 
 Sélectionnez l'e-mail que vous souhaitez extraire, puis glissez-le dans le contenu du nouvel e-mail. 
 
-Cliquez sur la flêche qui pointe vers le bas à côté de la pièce jointe que vous venez de générer, puis cliquez sur `télécharger`{.action} pour enregistrer le ficheir sur votre machine.
+Cliquez sur la flèche qui pointe vers le bas à côté de la pièce jointe que vous venez de générer, puis cliquez sur `télécharger`{.action} pour enregistrer le fichier sur votre machine.
 
 ![emails](images/owa02.gif){.thumbnail}
 
