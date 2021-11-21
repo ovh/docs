@@ -34,7 +34,7 @@ order: 03
 
 ## Objectif
 
-L'en-tête a pour rôle de retracer le chemin empreinté par votre e-mail sur le réseau, de l'expéditeur au destinataire. Il peut être utilie pour identifier un e-mail malveillant.
+L'en-tête a pour rôle de retracer le chemin emprunté par votre e-mail sur le réseau, de l'expéditeur au destinataire. Il peut être utilie pour identifier un e-mail malveillant.
 
 Chaque e-mail reçu possède un en-tête (*header*). Il ne s'affiche pas par défaut lorsque vous consultez votre e-mail, Il existe néanmoins un moyen de l'afficher sur votre client de messagerie. 
 
@@ -53,7 +53,7 @@ Il est également possible d'extraire l'e-mail dans son intégralité sous forme
 
 L'en-tête d'un e-mail est composé de plusieurs éléments indiquant le cheminement de l'e-mail dans un ordre chronologique, ainsi que des informations supplémentaires. Vous trouvez ci-dessous une liste non exhaustive des éléments que vous pouvez trouver dans un en-tête ainsi que leur signification. 
 
-- Le champ `received` est présent dans l'entête à chaque passage de l'e-mail sur un serveur d'envoi (SMTP). On retrouve généralement le nom d'hôte du serveur avec son adresse IP et la date. Les champs `Received` sont classés du dernier passage au premier passage:
+- Le champ `Received` est présent dans l'entête à chaque passage de l'e-mail sur un serveur d'envoi (SMTP). On retrouve généralement le nom d'hôte du serveur avec son adresse IP et la date. Les champs `Received` sont classés du dernier passage au premier passage:
 
 **Exemple de champ Received**
 <pre class="console"><code>
@@ -63,7 +63,7 @@ Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
  
 </code></pre>
 
-- Le champ `Return-Path` correspond à l'adresse de retour lors d'un echec à l'envoi. l'adresse de retour est généralement celle qui a réalisé l'envoi. 
+- Le champ `Return-Path` correspond à l'adresse de retour lors d'un échec à l'envoi. l'adresse de retour est généralement celle qui a réalisé l'envoi. 
 
 <pre class="console"><code>
 Return-Path: &ltjohn@mydomain.ovh&gt
@@ -191,7 +191,7 @@ Pour récupérer l'entête, sélectionnez l'e-mail concerné, puis cliquez sur l
 
 #### Outlook.com
 
-Pour afficher l'en-tête de l'interface webmail utilisée sur Outlook.com, consulter notre rubriqua [Outlook Web Application](#owa) pour le découvrir comment .
+Pour afficher l'en-tête de l'interface webmail utilisée sur Outlook.com, consulter notre rubrique [Outlook Web Application](#owa) pour le découvrir comment .
 
 ## Aller plus loin
 
