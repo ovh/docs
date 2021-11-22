@@ -34,6 +34,7 @@ This tutorial requires:
 - A [PHP Redis client](https://redis.io/clients#php){.external} supported by the plugin
 - An OVHcloud Public Cloud database for Redis
 
+## Instructions
 
 ### Tutorial technical environment
 
