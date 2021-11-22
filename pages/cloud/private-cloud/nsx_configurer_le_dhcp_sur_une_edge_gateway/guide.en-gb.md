@@ -133,7 +133,7 @@ The DHCP Bindings and their basic settings are now visible.
 
 ### Menu Relay
 
-To finish, click on `Relay`{.action}.   
+For our last option, click on `Relay`{.action}.   
 *The set up of a DCHP relay implies the existence of routes to the target DHCP servers*    
 We'll first create the Global Configuration by clicking `Edit`{.action}.    
 
