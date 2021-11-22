@@ -7,7 +7,7 @@ section: Horizon
 order: 8
 ---
 
-**Last updated 22/11/2021**
+**Last updated 22nd November 2021**
 
 ## Objective
 
