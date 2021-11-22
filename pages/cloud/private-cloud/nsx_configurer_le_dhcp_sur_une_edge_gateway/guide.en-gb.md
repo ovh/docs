@@ -133,25 +133,40 @@ The DHCP Bindings and their basic settings are now visible.
 
 ### Menu Relay
 
-To finish, click on `Relay`{.action}.    
+To finish, click on `Relay`{.action}.   
+*The set up of a DCHP relay implies the existence of routes to the target DHCP servers*    
 We'll first create the Global Configuration by clicking `Edit`{.action}.    
 
+![Relay](images/en13relay.png){.thumbnail}
+
+You can add:
+- pre existing IP sets set up in your NSX Edge Services Gateway
+- IP adresses of DHCP servers
+- Domain Names
+
+Click `Save`{.action} when ready.
+
+![Relay](images/en14relayset.png){.thumbnail}
+
+Now click `+ Add`{.action} to set up an agent.     
+
+![Relay](images/en15agentadd.png){.thumbnail}
+
+The vNIC will be the Edge Services Gateway interface that will forward the dhcp requests.    
+The Gateway Address is the adress that will forward the requests.    
+Click `Add`{.action}.
+
+![Relay](images/en16agent.png){.thumbnail}
+
+We will then `Publish`{.action} the changes.
+
+![Relay](images/en17publish.png){.thumbnail}
+
+Your DHCP Relay is now functional after a short wait.
+
+![Relay](images/en18done.png){.thumbnail}
 
 
 
 
 
-
-
-
-
-
-
-
-
-Click on `+ Add`{.action} when ready.
-
-
-Si nous prenons un exemple de chaque règles nous obtenons :
-
-![](images/DHCP8.PNG){.thumbnail}
