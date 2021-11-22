@@ -18,92 +18,167 @@ Le DHCP permet une attribution automatique d'IP privée aux VMs situées derriè
 
 - Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
 
-## En pratique
+**Last Updated on 11/22/2021**
 
-### Accès à l'interface
+## Objective
 
-Pour commencer, rendez-vous dans la partie "NSX Edge" afin de trouver la liste des Edge déjà déployées. Effectuez ensuite un double-clic sur votre Edge pour accéder à sa configuration.
+DHCP allows automatic assignment of private IPs to VMs behind your NSX Edge Services Gateway.
 
-Cliquer sur l'onglet "Manage" puis "DHCP" pour découvrir des sous-menus que nous détaillerons tout au long de ce guide :
+**This guide explains how to setup the DHCP service**
 
-- "Pools" ;
-- "Bindings".
+## Requirements
 
-![](images/DHCP1.PNG){.thumbnail}
+- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Have a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Have an [NSX Edge Services Gateway](https://docs.ovh.com/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/) deployed
 
-### Menu "Pools"
+## Instructions
 
-Le menu "Pools" vous permet dans un premier temps d'activer ou de désactiver le service DHCP de la Edge via le bouton "DHCP Service Status". Par défaut, le DHCP est désactivé.
+### Interface access
 
-Vous pouvez également activer la politique d'évènements en cochant la case "Enable logging" puis vous pouvez modifier le type d'évènements répertoriés via le menu déroulant "Log level". Vous pouvez ainsi définir si vous ne souhaitez conserver que les erreurs, les alertes ou encore les notifications.
+First, in the vSphere interface menu, go to the `Networking and Security`{.action} dashboard.
 
-![](images/DHCP2.PNG){.thumbnail}
+![Menu](images/en01dash.png){.thumbnail}
 
-Le bouton "+" (petit plus vert) vous permet de gérer les plages d'attribution DHCP générales. Les deux premières cases vous permettent d'activer ou non les paramètres suivants :
+On the left side, navigate to the `NSX Edges`{.action} section then click on the appliance you're setting up.
 
-- "Auto Configure DNS" : configure automatiquement les DNS sur les machines virtuelles qui vont se configurer en DHCP ;
-- "Lease Never Expires" : la non-expiration du bail DHCP (par défaut, le bail expire au bout de 86400 secondes).
+![NSX](images/en02nsx.png){.thumbnail}
 
-Vous avez ensuite les champs suivants qui peuvent vous être utiles :
+In the `DHCP`{.action} tab,  you'll see 3 options:
 
-- "Start IP" : l'IP de départ de la plage qui peut être attribuée par le DHCP ;
-- "End IP" : l'IP de fin de la plage qui peut être attribuée par le DHCP ;
-- "Domain Name" : le nom de domaine utilisé par le serveur DHCP si il existe ;
-- "Primary Name server" : le DNS primaire attribué aux machines virtuelles par le DHCP ;
-- "Secondary Name server" : le DNS secondaire attribué aux machines virtuelles par le DHCP ;
-- "Default Gateway" : la passerelle attribuée aux machines virtuelles par le DHCP ;
-- "Subnet Mask" : le masque de sous-réseau attribué aux machines virtuelles par le DHCP ;
-- "Lease Time" : la durée du bail DHCP (non applicable si vous avez précédemment coché la case "Lease Never Expires").
+- Pools
+- Bindings
+- Relay
 
-Vous pouvez cliquer sur "OK" quand votre configuration est finalisée et vous pourrez la modifier ultérieurement si nécessaire.
+We'll set up those 3 services in this guide.    
 
-![](images/DHCP3.PNG){.thumbnail}
+Let's start with `Pools`{.action}. Click on it.
 
-Voici un exemple de configuration :
+![NSX](images/en03dhcpadd.png){.thumbnail}
 
-![](images/DHCP4.PNG){.thumbnail}
+### Menu Pools
 
-### Menu "Bindings"
+The `Pools`{.action} menu allows the traditional setup of the DHCP service.    
+We'll set up a scope for it and will start the service.
 
-Ce menu a la même fonction que le menu "Pools" mais pour une attribution manuelle de certaines IP. Pour cela, il vous suffit de cliquer sur le bouton "+" (petit plus vert).
+Click on `+ Add`{.action}    
+In the New DHCP Pool window, fill in the informations you need:
+- Start IP is the first usable IP for the DHCP service
+- End IP is the first usable IP for the DHCP service
+- Domain Name is optional but can be useful for your DNS
+- Primary and Secondary Name Server are your personalized dns settings (can be auto configured if the slider above is turned on)
+- Default Gateway is optional
+- Subnet Maskis self explanatory
+- You can set never ending leases or mofify lease times if that's a requirement
+- You have more advanced options in the `DHCP Options`{.action} tab but those are outside of the scope of this guide
 
-Vous pouvez attribuer manuellement ces IP en fonction de deux critères qui influeront sur les champs proposés.
+![Pool](images/en04pool.png){.thumbnail}
 
-![](images/DHCP5.PNG){.thumbnail}
+Click on `Add`{.action} when done.    
+The DHCP pool is ready but you need to click `Start`{.action} and then `Publish`{.action} to start the service and register the changes.
 
-VM NIC Binding :
+![Pool](images/en05publish.png){.thumbnail}
 
-- "Interface" : interface de la Edge concernée ;
-- "VM Name" : nom de la machine virtuelle ;
-- "VM vNIC Index" : adaptateur réseau de la Edge ;
-- "Host Name" : nom de la machine virtuelle ;
-- "IP Address" : adresse IP attribuée à la carte réseau ;
-- "Subnet Mask" : masque de sous-réseau attribué à la carte réseau ;
-- "Domain name" : nom de domaine attribué à la carte réseau ;
-- "Primary Name Server" : DNS primaire attribué à la carte réseau si la case "Auto Configure DNS" est décochée ;
-- "Secondary Name Server" : DNS secondaire attribué à la carte réseau si la case "Auto Configure DNS" est décochée ;
-- "Default Gateway" : passerelle par défaut attribuée à la carte réseau ;
-- "Lease Time" : durée du bail DHCP en seconde (par défaut 86400) si la case "Lease Never Expires" n'est pas cochée.
+The DHCP is now operational.     
+You can see the service status and the basic information on the pool.
 
-![](images/DHCP6.PNG){.thumbnail}
+![Pool](images/en05started.png){.thumbnail}
 
-MAC Binding :
 
-- "MAC Address" : adresse MAC de la carte réseau de la machine virtuelle ;
-- "Host Name" : nom de la machine virtuelle ;
-- "IP Address" : adresse IP attribuée à la carte réseau ;
-- "Subnet Mask" : masque de sous-réseau attribué à la carte réseau ;
-- "Domain name" : nom de domaine attribué à la carte réseau ;
-- "Primary Name Server" : DNS primaire attribué à la carte réseau si la case "Auto Configure DNS" est décochée ;
-- "Secondary Name Server" : DNS secondaire attribué à la carte réseau si la case "Auto Configure DNS" est décochée ;
-- "Default Gateway" : passerelle par défaut attribuée à la carte réseau ;
-- "Lease Time" : durée du bail DHCP en secondes (par défaut 86400) si la case "Lease Never Expires" n'est pas cochée.
+### Menu Bindings
 
-![](images/DHCP7.PNG){.thumbnail}
+Now on the left side, click on `Bindings`{.action}.    
+Bindings will always assign the same dhcp address to a specific network interface, depending on a specific information.    
+Click on `+ Add`{.action} when ready.
 
-Si nous prenons un exemple de chaque règles nous obtenons :
+![Bind](images/en06bind.png){.thumbnail}
 
-![](images/DHCP8.PNG){.thumbnail}
+There are 2 ways to create bindings:
+- VM NIC Binding: the IP address will be set for a specific VM network interface
+- MAC Binding: the IP address will be set for a specific MAC address
+
+For VM NIC Binding, type in the information as follow
+
+- Interface: Edge Services Gateway interface that will be distributing the address
+- VM Name: VM that will receive the address
+- VM vNIC Index: Which network adapter on the VM will be assigned the address
+- Host Name: DNS name of the VM (optional)
+- IP Address: Address reserved for the NIC
+- Subnet Mask: Subnet mask
+- Domain Name: Domain name (optional)
+- Default Gateway: Default Gateway
+- You can set never ending leases or mofify lease times if that's a requirement
+
+![Bind](images/en07vnicbind.png){.thumbnail}
+
+Don't forget your `DNS Settings`{.action}.    
+They can be put manually or configured automatically.     
+Click on `Save`{.action} when done.
+
+![Bind](images/en08binddns.png){.thumbnail}
+
+Now we'll click on `+ Add`{.action} again but will chose Use MAC Binding.
+
+- MAC Address: Target NIC MAC address 
+- Host Name: DNS name of the VM (optional)
+- IP Address: Address reserved for the NIC
+- Subnet Mask: Subnet mask
+- Domain Name: Domain name (optional)
+- Default Gateway: Default Gateway
+- You can set never ending leases or mofify lease times if that's a requirement
+
+![Bind](images/en09macbind.png){.thumbnail}
+
+Again, do not forget your `DNS Settings`{.action}.    
+Click on `Save`{.action} when done.
+
+![Bind](images/en10autodns.png){.thumbnail}
+
+We will now `Publish`{.action} our changes.
+
+![Bind](images/en11publish.png){.thumbnail}
+
+The DHCP Bindings and their basic settings are now visible.
+
+![Bind](images/en12done.png){.thumbnail}
+
+
+### Menu Relay
+
+For our last option, click on `Relay`{.action}.   
+*The set up of a DCHP relay implies the existence of routes to the target DHCP servers*    
+We'll first create the Global Configuration by clicking `Edit`{.action}.    
+
+![Relay](images/en13relay.png){.thumbnail}
+
+You can add:
+- pre existing IP sets set up in your NSX Edge Services Gateway
+- IP adresses of DHCP servers
+- Domain Names
+
+Click `Save`{.action} when ready.
+
+![Relay](images/en14relayset.png){.thumbnail}
+
+Now click `+ Add`{.action} to set up an agent.     
+
+![Relay](images/en15agentadd.png){.thumbnail}
+
+The vNIC will be the Edge Services Gateway interface that will forward the dhcp requests.    
+The Gateway Address is the adress that will forward the requests.    
+Click `Add`{.action}.
+
+![Relay](images/en16agent.png){.thumbnail}
+
+We will then `Publish`{.action} the changes.
+
+![Relay](images/en17publish.png){.thumbnail}
+
+Your DHCP Relay is now functional after a short wait.
+
+![Relay](images/en18done.png){.thumbnail}
+
+Bravo et merci.
 
 ## Aller plus loin
 
