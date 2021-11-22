@@ -2,7 +2,7 @@
 title: 'Network & IP'
 slug: network-ip
 excerpt: 'Guides d’utilisation des solutions réseau & IP OVHcloud'
-sections: SecNumCloud Connectivity, Nos guides réseau & IP pour VPS, Nos guides réseau & IP pour les serveurs dédiés, Nos guides réseau & IP pour Public Cloud, Nos guides réseau & IP pour Hosted Private Cloud powered by VMware, Nos guides réseau & IP pour les hébergements Web Cloud
+sections: SecNumCloud Connectivity, Nos guides réseau & IP pour VPS, Nos guides réseau & IP pour les hébergements Web Cloud, Nos guides réseau & IP pour Public Cloud, Nos guides réseau & IP pour Hosted Private Cloud powered by VMware, Nos guides réseau & IP pour les serveurs dédiés
 order: 08
 ---
 
@@ -32,7 +32,7 @@ order: 08
 > - [vRack - Configurer le vRack entre Public Cloud et un serveur dédié](https://docs.ovh.com/fr/dedicated/configurer-vrack-entre-pci-serveur-dedie/)
 > - [Gammes High Grade & SCALE - Configurer le réseau sur Proxmox VE](https://docs.ovh.com/fr/dedicated/proxmox-network-hg-scale/)
 > - [Gammes High Grade & SCALE - Configurer le réseau sur ESXi](https://docs.ovh.com/fr/dedicated/esxi-network-hg-scale/)
-> - [Gammes High Grade & SCALE - Configurer le réseau sur Hyper-V](https://docs.ovh.com/fr/dedicated/hyperv-network-hg-scale/)
+> - [Gammes High Grade & SCALE - Configurer le réseau sur Windows Server avec Hyper-V](https://docs.ovh.com/fr/dedicated/hyperv-network-hg-scale/)
 > - [OVHcloud Link Aggregation - Configurer l'agrégation de liens OLA dans votre espace client](https://docs.ovh.com/fr/dedicated/ola-manager/)
 > - [OVHcloud Link Aggregation - Comment configurer votre NIC pour OLA sur Debian 9](https://docs.ovh.com/fr/dedicated/ola-debian9/)
 > - [OVHcloud Link Aggregation - Comment configurer votre NIC pour OLA sur CentOS 7](https://docs.ovh.com/fr/dedicated/ola-centos7/)
