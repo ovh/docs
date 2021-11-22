@@ -14,7 +14,7 @@ order: 1
 
 ## Ziel
 
-Das OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/) ist ein privates Netzwerk, mit dem Sie die Adressierung zwischen mehreren dedizierten Servern von OVHcloud konfigurieren können. Sie können aber auch Public Cloud [Instanzen zu Ihrem](https://www.ovhcloud.com/fr/public-cloud/) privaten Netzwerk hinzufügen, um eine Infrastruktur mit physischen und virtuellen Ressourcen zu erstellen.
+Das OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/) ist ein privates Netzwerk, mit dem Sie die Adressierung zwischen mehreren dedizierten Servern von OVHcloud konfigurieren können. Sie können aber auch [Public Cloud Instanzen](https://www.ovhcloud.com/fr/public-cloud/) zu Ihrem privaten Netzwerk hinzufügen, um eine Infrastruktur mit physischen und virtuellen Ressourcen zu erstellen.
 
 **Diese Anleitung hilft Ihnen bei der Konfiguration Ihrer Public Cloud Instanzen in Ihrem vRack.**
 
@@ -23,7 +23,7 @@ Das OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/) ist ein privates Netzw
 - Sie verfügen über ein [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/erstellung_public_cloud_projekt/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben einen [OpenStack-Benutzer erstellen](../../#einen-openstack-benutzer-erstellen). (optional)
-- Grundkenntnisse
+- Grundlegende Netzwerkkenntnisse.
 
 ## Vorstellung der Interfaces
 
@@ -35,7 +35,7 @@ Je nach Ihrem technischen Profil und Ihren Bedürfnissen müssen Sie entscheiden
 
 ### OVHcloud Kundencenter
 
-Das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ist ein vollständig und ausschließlich visuelles Interface, was es zu einem idealen Interface macht, wenn Sie nur ein einziges VLAN verwalten müssen. Sie können den privaten IP-Bereich nicht anpassen, der nur 10.x.x/16 sein wird.
+Das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ist ein vollständig und ausschließlich visuelles Interface, was es zu einem idealen Interface macht, wenn Sie nur ein einziges VLAN verwalten müssen. Sie können den privaten IP-Bereich nicht anpassen, der nur 10.x.x.x/16 sein wird.
 
 Die VLANs werden standardmäßig in allen Zonen eingerichtet. Sie können nur die Gateways aktivieren oder nicht.
 
@@ -43,9 +43,9 @@ Sie können auch die Abrechnung Ihrer Dienste über Ihr OVHcloud Kundencenter ve
 
 ### Horizon
 
-Das Interface [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} (unabhängig von OVHcloud) ist die erste Implementierung des OpenStack-Dashboards, das ein Web-Benutzerinterface für OpenStack-Dienste, insbesondere Nova, Swift, Keystone, usw., bereitstellt.
+Das [Interface-Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} (unabhängig von OVHcloud) ist die erste Implementierung des OpenStack-Dashboards, das ein Web-Benutzerinterface für OpenStack-Dienste, insbesondere Nova, Swift, Keystone.
 
-Dieses vollständige und technische Interface erlaubt es Ihnen, fast alle OpenStack Aktionen zu verwalten. Dies wird eines der notwendigen Interfaces sein, wenn Sie mehr als zwei VLANs verwalten, private Netzwerkinterfaces zu Ihren Instanzen hinzufügen, personalisierte Images verwalten usw. möchten.
+Dieses vollständige und technische Interface erlaubt es Ihnen, fast alle OpenStack Aktionen zu verwalten. Dies wird eines der notwendigen Interfaces sein, wenn Sie mehr als zwei VLANs verwalten, private Netzwerkinterfaces zu Ihren Instanzen hinzufügen, personalisierte Images verwalten.
 
 Machen Sie sich anhand des folgenden [Leitfadens](../erstellung_eines_zugangs_zu_horizon/), mit Horizon vertraut.
 
@@ -80,8 +80,8 @@ Dank der OpenStack-API können Sie diese Verwaltung auch ganz einfach über Ihre
 
 Um sich mit der OpenStack-API vertraut zu machen, lesen Sie zuerst folgende Anleitungen:
 
-- [Umgebung für die Verwendung der OpenStack-API vorbereiten](../vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
-- [OpenStack Umgebungsvariablen einrichten](../die-variablen-der-umgebung-openstack-laden/)
+- [Umgebung für die Verwendung der OpenStack-API vorbereiten](../vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/).
+- [OpenStack Umgebungsvariablen einrichten](../die-variablen-der-umgebung-openstack-laden/).
 
 Sie können dann bei Bedarf die dedizierten OpenStack-APIs verwenden:
 
@@ -98,7 +98,7 @@ In dieser Anleitung wurden Ihnen die einfachsten und intuitivsten Alternativen a
 Sie können jederzeit die offizielle [Dokumentation von OpenStack einsehen](https://docs.openstack.org/xena/){.external}, wenn Sie diese weiter verwenden möchten.
 >
 
-## In der Praxis
+## In der praktischen Anwendung
 
 ### Schritt 1: vRack aktivieren und verwalten
 
@@ -114,7 +114,7 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 
 ![Projektauswahl](images/vrack2021-05.png){.thumbnail}
 
-KKlicken Sie auf `Private Network`{.action} im linken Menü.
+Klicken Sie auf `Private Network`{.action} im linken Menü.
 
 ![Private Network](images/vrack2021-02.png){.thumbnail}
 
@@ -204,7 +204,7 @@ Die Anleitung [Erstellen der ersten Public Cloud-Instanz](../public-cloud-erste-
 
 ##### **Über die OVHcloud APIv6**
 
-Klicken [Sie](../public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) (EN) hier, um die Anleitung zu dieser Methode zu lesen.
+Bitte lesen Sie [diesen Abschnitt](../public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) (EN).
 
 ##### **Über die OpenStack-APIs**
 
@@ -236,9 +236,9 @@ nova net-list
 +--------------------------------------+------------+------+
 | ID                                   | Label      | CIDR |
 +--------------------------------------+------------+------+
-| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42 | None |
+| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42  | None |
 | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | None |
-| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0  | None |
+| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0   | None |
 +--------------------------------------+------------+------+
 ```
 > [!primary]
@@ -247,7 +247,7 @@ nova net-list
 ><br> - Der für Ihre Konfiguration erforderliche(n) VLAN
 >
 
-Beachten Sie auch die folgenden Informationen, wie im [Benutzerhandbuch der Nova API](../starting-with-nova-api/) (EN) angegeben::
+Beachten Sie auch die folgenden Informationen, wie im [Benutzerhandbuch der Nova API](../starting-with-nova-api/) (EN) angegeben:
 
 - ID oder Name des OpenStack SSH Keys
 - ID des Instanz-Typs (flavor)
@@ -399,17 +399,17 @@ Wählen Sie im daraufhin angezeigten Popup-Fenster die privaten Netzwerke aus, d
 
 ##### **Verwaltung der Netzwerkinterfaces über die OVHcloud APIv6**
 
-Klicken [Sie](../public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) (EN) der entsprechenden Anleitung.
+Bitte lesen Sie [diesen Abschnitt](../public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1)(EN) des entsprechenden Handbuchs.
 
 ##### **Verwaltung der Netzwerkinterfaces über OpenStack Horizon**
 
-LLoggen Sie sich in die [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external}, wie [oben](./#horizon).
+Loggen Sie sich bei der [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} mit der im [ersten Teil dieses Handbuchs](./#horizon) beschriebenen Methode ein.
 
 Verbinden Sie sich gut mit Ihrem Arbeitsbereich:
 
 ![Horizon-Verbindung](images/horizon1.png){.thumbnail}
 
-Gehen Sie dann zu `Compute` und dann zu `Instanzen`:
+Gehen Sie dann zu `Compute` und dann zu `Instance`:
 
 ![Horizon Instanzen](images/horizon2.png){.thumbnail}
 
@@ -448,7 +448,7 @@ Wählen Sie das zu löschende Interface aus und bestätigen Sie:
 
 ##### **Verwaltung der Netzwerkinterfaces über die OpenStack APIs**
 
-Um die OpenStack-APIs zu verwenden, denken Sie bitte daran, Ihre Arbeitsumgebung wie im ersten Teil [dieser Anleitung beschrieben vorzubereiten](./#openstack-api).
+Um die OpenStack-APIs zu nutzen, sollten Sie, falls noch nicht geschehen, Ihre Arbeitsumgebung wie im [ersten Teil dieses Leitfadens](./#openstack-api) beschrieben vorbereiten.
 
 Wenn Sie eine bestehende Instanz in das vRack integrieren möchten, müssen Sie so verfahren.
 
