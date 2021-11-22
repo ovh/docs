@@ -605,8 +605,8 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Quer saber mais?
 
-[Configuração do vRack Public Cloud a partir das APIv6 OVHcloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/) (EN)
+[Configuração do vRack Public Cloud a partir das APIv6 OVHcloud.](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/)(EN)
 
-[Servidores dedicados - Criar várias VLAN no vRack](../../dedicated/criar-vlan-vrack/)
+[Servidores dedicados - Criar várias VLAN no vRack](../../dedicated/criar-vlan-vrack/).
 
 Fale com a nossa comunidade de utilizadores <https://community.ovh.com/en/>.
