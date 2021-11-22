@@ -46,11 +46,11 @@ This section shows the current template (old flavor) and allows you to select a 
 
 #### Flavor Details
 
-In this section, you will see the resources associated with the template you have chosen. 
+In this section, you will see the resources associated with the new template you have chosen. 
 
 #### Project Limits 
 
-Under this section, you can preview the occupied resources in relation to the total resources allocated to the project.
+Under this section, you can view the occupied resources in relation to the total resources allocated to the project.
 
 > [!warning]
 > Please note that you cannot switch models when resizing an instance. A resizing can only be done from a Linux model to another Linux model or from a Windows model to another Windows model.
@@ -66,7 +66,7 @@ Once the configuration is complete, click on `Resize`{.action}.
 
 ### Resizing a disk in Windows
 
-Be aware that when resizing a Windows Instance, the partition size is not automatically updated, so you will have to extend it using the **disk manager**:
+When performing a resize for a Windows Instance, please note that the partition size is not automatically updated, so you will have to extend it using the **disk manager**:
 
 - Right-click on the `Start`{.action} menu and launch the disk manager by clicking on `Disk Management`{.action}:
 
