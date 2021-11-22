@@ -201,3 +201,9 @@ As seen using Redis cache you will see a performance gain for your CMS. It will 
 [Redis Roadmap](https://github.com/ovh/public-cloud-roadmap/projects/2?card_filter_query=label%3Aredis)
 
 Join our community of users on <https://community.ovh.com/en/>.
+
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
