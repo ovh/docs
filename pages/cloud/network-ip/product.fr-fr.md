@@ -15,28 +15,9 @@ order: 08
 
 > [!product-section]
 >
-> ### Nos guides réseau & IP pour les serveurs dédiés
+> ### Nos guides réseau & IP pour les hébergements Web Cloud
 >
-> - [Configurer le Firewall Network](https://docs.ovh.com/fr/dedicated/firewall-network/)
-> - [Mode Bridge IP](https://docs.ovh.com/fr/dedicated/network-bridging/)
-> - [Configurer IPv6 sur un serveur dédié](https://docs.ovh.com/fr/dedicated/network-ipv6/)
-> - [Déplacer une IP fail-over](https://docs.ovh.com/fr/dedicated/ip-fo-move/)
-> - [Assigner une adresse MAC virtuelle à une IP fail-over](https://docs.ovh.com/fr/dedicated/network-virtual-mac/)
-> - [Configurer son adresse IP en alias](https://docs.ovh.com/fr/dedicated/network-ipaliasing/)
-> - [vRack - Configurer le vRack sur vos serveurs dédiés](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/)
-> - [vRack - Configurer un bloc IP dans le vRack](https://docs.ovh.com/fr/dedicated/ajouter-ou-enlever-un-bloc-ip-du-vrack/)
-> - [vRack - Modifier l'annonce d'un bloc IP dans le vRack](https://docs.ovh.com/fr/dedicated/modifier-annonce-bloc-ip-vrack/)
-> - [vRack - Configuration des trames Jumbo dans le vRack](https://docs.ovh.com/fr/dedicated/network-jumbo/)
-> - [vRack - Configurer plusieurs VLAN dans le vRack](https://docs.ovh.com/fr/dedicated/creer-vlan-vrack/)
-> - [vRack - Utiliser Hyper-V avec des adresses IP fail-over sur un vRack](https://docs.ovh.com/fr/dedicated/ipfo-vrack-hyperv/)
-> - [vRack - Configurer le vRack entre Public Cloud et un serveur dédié](https://docs.ovh.com/fr/dedicated/configurer-vrack-entre-pci-serveur-dedie/)
-> - [Gammes High Grade & SCALE - Configurer le réseau sur Proxmox VE](https://docs.ovh.com/fr/dedicated/proxmox-network-hg-scale/)
-> - [Gammes High Grade & SCALE - Configurer le réseau sur ESXi](https://docs.ovh.com/fr/dedicated/esxi-network-hg-scale/)
-> - [Gammes High Grade & SCALE - Configurer le réseau sur Windows Server avec Hyper-V](https://docs.ovh.com/fr/dedicated/hyperv-network-hg-scale/)
-> - [OVHcloud Link Aggregation - Configurer l'agrégation de liens OLA dans votre espace client](https://docs.ovh.com/fr/dedicated/ola-manager/)
-> - [OVHcloud Link Aggregation - Comment configurer votre NIC pour OLA sur Debian 9](https://docs.ovh.com/fr/dedicated/ola-debian9/)
-> - [OVHcloud Link Aggregation - Comment configurer votre NIC pour OLA sur CentOS 7](https://docs.ovh.com/fr/dedicated/ola-centos7/)
-> - [OVHcloud Link Aggregation - Comment configurer votre NIC pour OLA sur Windows Server 2019](https://docs.ovh.com/fr/dedicated/ola-w2k19/)
+> - [Configurer IPv6 pour votre site web](https://docs.ovh.com/fr/hosting/configurer-ipv6-pour-votre-site/)
 
 > [!product-section]
 >
@@ -65,7 +46,25 @@ order: 08
 
 > [!product-section]
 >
-> ### Nos guides réseau & IP pour les hébergements Web Cloud
+> ### Nos guides réseau & IP pour les serveurs dédiés
 >
-> - [Configurer IPv6 pour votre site web](https://docs.ovh.com/fr/hosting/configurer-ipv6-pour-votre-site/)
-> 
+> - [Configurer le Firewall Network](https://docs.ovh.com/fr/dedicated/firewall-network/)
+> - [Mode Bridge IP](https://docs.ovh.com/fr/dedicated/network-bridging/)
+> - [Configurer IPv6 sur un serveur dédié](https://docs.ovh.com/fr/dedicated/network-ipv6/)
+> - [Déplacer une IP fail-over](https://docs.ovh.com/fr/dedicated/ip-fo-move/)
+> - [Assigner une adresse MAC virtuelle à une IP fail-over](https://docs.ovh.com/fr/dedicated/network-virtual-mac/)
+> - [Configurer son adresse IP en alias](https://docs.ovh.com/fr/dedicated/network-ipaliasing/)
+> - [vRack - Configurer le vRack sur vos serveurs dédiés](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/)
+> - [vRack - Configurer un bloc IP dans le vRack](https://docs.ovh.com/fr/dedicated/ajouter-ou-enlever-un-bloc-ip-du-vrack/)
+> - [vRack - Modifier l'annonce d'un bloc IP dans le vRack](https://docs.ovh.com/fr/dedicated/modifier-annonce-bloc-ip-vrack/)
+> - [vRack - Configuration des trames Jumbo dans le vRack](https://docs.ovh.com/fr/dedicated/network-jumbo/)
+> - [vRack - Configurer plusieurs VLAN dans le vRack](https://docs.ovh.com/fr/dedicated/creer-vlan-vrack/)
+> - [vRack - Utiliser Hyper-V avec des adresses IP fail-over sur un vRack](https://docs.ovh.com/fr/dedicated/ipfo-vrack-hyperv/)
+> - [vRack - Configurer le vRack entre Public Cloud et un serveur dédié](https://docs.ovh.com/fr/dedicated/configurer-vrack-entre-pci-serveur-dedie/)
+> - [Gammes High Grade & SCALE - Configurer le réseau sur Proxmox VE](https://docs.ovh.com/fr/dedicated/proxmox-network-hg-scale/)
+> - [Gammes High Grade & SCALE - Configurer le réseau sur ESXi](https://docs.ovh.com/fr/dedicated/esxi-network-hg-scale/)
+> - [Gammes High Grade & SCALE - Configurer le réseau sur Windows Server avec Hyper-V](https://docs.ovh.com/fr/dedicated/hyperv-network-hg-scale/)
+> - [OVHcloud Link Aggregation - Configurer l'agrégation de liens OLA dans votre espace client](https://docs.ovh.com/fr/dedicated/ola-manager/)
+> - [OVHcloud Link Aggregation - Comment configurer votre NIC pour OLA sur Debian 9](https://docs.ovh.com/fr/dedicated/ola-debian9/)
+> - [OVHcloud Link Aggregation - Comment configurer votre NIC pour OLA sur CentOS 7](https://docs.ovh.com/fr/dedicated/ola-centos7/)
+> - [OVHcloud Link Aggregation - Comment configurer votre NIC pour OLA sur Windows Server 2019](https://docs.ovh.com/fr/dedicated/ola-w2k19/)
