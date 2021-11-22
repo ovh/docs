@@ -6,81 +6,67 @@ section: NSX
 order: 03
 ---
 
-**Dernière mise à jour le 27/02/2019**
+**Dernière mise à jour le 22/11/2021**
 
 ## Objectif
 
-Le DHCP permet une attribution automatique d'IP privée aux VMs situées derrière la Edge, dans une plage d'IP privées souhaitées.
+Le DHCP permet une attribution automatique d'IPs aux machines virtuelles résidantes derrière votre NSX Edge Services Gateway.
 
-**Ce guide explique comment paramètrer cette option**
+**Ce guide explique comment paramètrer le service DHCP**
 
 ## Prérequis
 
 - Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
 
-**Last Updated on 11/22/2021**
+## En pratique
 
-## Objective
+### Accès à l'interface
 
-DHCP allows automatic assignment of private IPs to VMs behind your NSX Edge Services Gateway.
-
-**This guide explains how to setup the DHCP service**
-
-## Requirements
-
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-- Have an [NSX Edge Services Gateway](https://docs.ovh.com/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/) deployed
-
-## Instructions
-
-### Interface access
-
-First, in the vSphere interface menu, go to the `Networking and Security`{.action} dashboard.
+Dans l'interface vShere, allez dans le Tableau de bord `Mise en réseau et sécurité`{.action}.
 
 ![Menu](images/en01dash.png){.thumbnail}
 
-On the left side, navigate to the `NSX Edges`{.action} section then click on the appliance you're setting up.
+Sur la gauche de votre écran, naviguez vers `Dispositifs NSX Edge`{.action} puis cliquez sur le dispositif à paramétrer.
 
 ![NSX](images/en02nsx.png){.thumbnail}
 
-In the `DHCP`{.action} tab,  you'll see 3 options:
+Dans la section `DHCP`{.action},  il y a 3 options:
 
 - Pools
-- Bindings
-- Relay
+- Liaisons
+- Relais
 
-We'll set up those 3 services in this guide.    
+Nous allons paramétrer ces 3 services.    
 
-Let's start with `Pools`{.action}. Click on it.
+Commençons par `Pools`{.action}.
 
 ![NSX](images/en03dhcpadd.png){.thumbnail}
 
 ### Menu Pools
 
-The `Pools`{.action} menu allows the traditional setup of the DHCP service.    
-We'll set up a scope for it and will start the service.
+Le menu `Pools`{.action} permet d'activer les fonctions traditionnelles du DHCP.    
+Ajoutons un scope et démarrons le service.
 
-Click on `+ Add`{.action}    
-In the New DHCP Pool window, fill in the informations you need:
-- Start IP is the first usable IP for the DHCP service
-- End IP is the first usable IP for the DHCP service
-- Domain Name is optional but can be useful for your DNS
-- Primary and Secondary Name Server are your personalized dns settings (can be auto configured if the slider above is turned on)
-- Default Gateway is optional
-- Subnet Maskis self explanatory
-- You can set never ending leases or mofify lease times if that's a requirement
-- You have more advanced options in the `DHCP Options`{.action} tab but those are outside of the scope of this guide
+Cliquez sur `+ Ajouter`{.action}    
+Dans la fenêtre Nouveau DHCP Pool , remplissez les informations nécessaires :
+- Adresse IP de début est la premère IP utilisable par le service DHCP
+- Adresse IP de fin est la dernière IP utilisable par le service DHCP
+- Nom de domaine est optionnel mais peut être utile pour votre dns
+- Serveur de noms principal et secondaire sont vos paramètres dns personnalisés (vous pouvez activez la configuration automatique dns)
+- Passerelle par défaut est également optionnelle
+- Masque de sous-réseau
+- Vous pouvez activer la non expiration des baux ou leur duréé si besoin.
+- D'autres options avancées sont dans la section `Options DHCP`{.action} mais sont hors du cadre de ce guide
 
 ![Pool](images/en04pool.png){.thumbnail}
 
-Click on `Add`{.action} when done.    
-The DHCP pool is ready but you need to click `Start`{.action} and then `Publish`{.action} to start the service and register the changes.
+Cliquez sur `Ajouter`{.action}.    
+Le pool DHCP est prêt mais vous devez appuyer sur `Démarrer`{.action} puis `Publier`{.action} pour lancer le service et enregistrer les changements.
 
 ![Pool](images/en05publish.png){.thumbnail}
 
-The DHCP is now operational.     
-You can see the service status and the basic information on the pool.
+Le DHCP est opérationel.     
+Le status du service et les informations basiques sont visibles.
 
 ![Pool](images/en05started.png){.thumbnail}
 
