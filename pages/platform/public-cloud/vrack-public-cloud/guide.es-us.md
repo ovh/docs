@@ -35,7 +35,7 @@ Según su perfil técnico y sus necesidades, deberá elegir qué interfaz o mét
 
 ### Área de cliente de OVHcloud
 
-El [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) es una interfaz completa y únicamente visual, lo que la convierte en una interfaz ideal si solo tiene una VLAN para gestionar. No podrá personalizar el rango de IP privadas, que estará únicamente en 10.x.x.16.
+El [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) es una interfaz completa y únicamente visual, lo que la convierte en una interfaz ideal si solo tiene una VLAN para gestionar. No podrá personalizar el rango de IP privadas, que estará únicamente en 10.x.x.x/16.
 
 Las VLAN se desplegarán por defecto en todas las zonas. Solo tiene la posibilidad de activar la puerta de enlace.
 
@@ -80,8 +80,8 @@ Gracias a la API de OpenStack, también puede automatizar esta gestión a travé
 
 Para familiarizarse con la API de OpenStack, consulte las siguientes guías:
 
-- [«Preparar el entorno para utilizar la API de OpenStack»](../preparar_el_entorno_para_utilizar_la_api_de_openstack/)
-- [Cargar las variables de entorno necesarias para OpenStack](../cargar-las-variables-de-entorno-openstack/)
+- [«Preparar el entorno para utilizar la API de OpenStack»](../preparar_el_entorno_para_utilizar_la_api_de_openstack/).
+- [Cargar las variables de entorno necesarias para OpenStack](../cargar-las-variables-de-entorno-openstack/).
 
 En ese caso, podrá utilizar las siguientes API dedicadas a OpenStack:
 
@@ -122,7 +122,7 @@ Haga clic en el botón `Crear un vRack para empezar`{.action}. A continuación, 
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
-Para continuar la configuración del vRack desde el área de cliente de OVHcloud, continúe leyendo esta guía [Crear una VLAN en el vRack desde el área de cliente de OVHcloud](./#crear-una-vlan-desde-el-area-de-cliente-de-ovhcloud)
+Para continuar la configuración del vRack desde el área de cliente de OVHcloud, continúe leyendo esta guía [Crear una VLAN en el vRack desde el área de cliente de OVHcloud](./#crear-una-vlan-desde-el-area-de-cliente-de-ovhcloud).
 
 #### Desde la APIv6 de OVHcloud
 
