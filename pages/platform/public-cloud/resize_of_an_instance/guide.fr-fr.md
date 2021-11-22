@@ -72,7 +72,7 @@ Attention, lors d'un redimensionnement pour une Instance Windows, la taille de l
 
 ![public-cloud](images/2980.png){.thumbnail}
 
-- Faites un clic droit sur la partition principale, puis cliquez sur `Étendre la partition`{.action}.
+- Faites un clic droit sur la partition principale, puis cliquez sur `Étendre le volume`{.action}.
 
 ![public-cloud](images/2981a.png){.thumbnail}
 
