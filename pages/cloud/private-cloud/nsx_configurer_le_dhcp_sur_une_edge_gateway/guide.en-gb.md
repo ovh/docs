@@ -32,12 +32,7 @@ On the left side, navigate to the `NSX Edges`{.action} section then click on the
 
 ![NSX](images/en02nsx.png){.thumbnail}
 
-Click on `+ Add`{.action} then click `Edge Services Gateway`{.action}.
-
-![AddNSX](images/en03add.png){.thumbnail}
-
-
-Cliquer sur l'onglet "Manage" puis "DHCP" pour découvrir des sous-menus que nous détaillerons tout au long de ce guide :
+In the `DHCP`{.action} tab,  you'll see 3 options:
 
 - "Pools" ;
 - "Bindings".
