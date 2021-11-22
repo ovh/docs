@@ -53,7 +53,7 @@ We'll set up a scope for it and will start the service.
 Click on `+ Add`{.action}    
 In the New DHCP Pool window, fill in the informations you need:
 - Start IP is the first usable IP for the DHCP service
-- End IPis the first usable IP for the DHCP service
+- End IP is the first usable IP for the DHCP service
 - Domain Name is optional but can be useful for your DNS
 - Primary and Secondary Name Server are your personalized dns settings (can be auto configured if the slider above is turned on)
 - Default Gateway is optional
@@ -63,21 +63,10 @@ In the New DHCP Pool window, fill in the informations you need:
 
 ![Pool](images/en04pool.png){.thumbnail}
 
-Le bouton "+" (petit plus vert) vous permet de gérer les plages d'attribution DHCP générales. Les deux premières cases vous permettent d'activer ou non les paramètres suivants :
+Click on `Add`{.action} when done.    
+The DHCP pool is ready but you need to click `Start`{.action} and then `Publish`{.action} to start the service and register the changes.
 
-- "Auto Configure DNS" : configure automatiquement les DNS sur les machines virtuelles qui vont se configurer en DHCP ;
-- "Lease Never Expires" : la non-expiration du bail DHCP (par défaut, le bail expire au bout de 86400 secondes).
-
-Vous avez ensuite les champs suivants qui peuvent vous être utiles :
-
-- "Start IP" : l'IP de départ de la plage qui peut être attribuée par le DHCP ;
-- "End IP" : l'IP de fin de la plage qui peut être attribuée par le DHCP ;
-- "Domain Name" : le nom de domaine utilisé par le serveur DHCP si il existe ;
-- "Primary Name server" : le DNS primaire attribué aux machines virtuelles par le DHCP ;
-- "Secondary Name server" : le DNS secondaire attribué aux machines virtuelles par le DHCP ;
-- "Default Gateway" : la passerelle attribuée aux machines virtuelles par le DHCP ;
-- "Subnet Mask" : le masque de sous-réseau attribué aux machines virtuelles par le DHCP ;
-- "Lease Time" : la durée du bail DHCP (non applicable si vous avez précédemment coché la case "Lease Never Expires").
+![Pool](images/en05publish.png){.thumbnail}
 
 Vous pouvez cliquer sur "OK" quand votre configuration est finalisée et vous pourrez la modifier ultérieurement si nécessaire.
 
