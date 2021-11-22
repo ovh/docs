@@ -24,7 +24,18 @@ DHCP allows automatic assignment of private IPs to VMs behind your NSX Edge Serv
 
 ### Interface access
 
-In vSphere, Go to Pour commencer, rendez-vous dans la partie "NSX Edge" afin de trouver la liste des Edge déjà déployées. Effectuez ensuite un double-clic sur votre Edge pour accéder à sa configuration.
+First, in the vSphere interface, go to the `Networking and Security`{.action} dashboard.
+
+![Menu](images/en01dash.png){.thumbnail}
+
+On the left side, navigate to the `NSX Edges`{.action} section.
+
+![NSX](images/en02nsx.png){.thumbnail}
+
+Click on `+ Add`{.action} then click `Edge Services Gateway`{.action}.
+
+![AddNSX](images/en03add.png){.thumbnail}
+
 
 Cliquer sur l'onglet "Manage" puis "DHCP" pour découvrir des sous-menus que nous détaillerons tout au long de ce guide :
 
