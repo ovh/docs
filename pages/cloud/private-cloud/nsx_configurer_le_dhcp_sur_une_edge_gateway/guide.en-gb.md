@@ -123,7 +123,13 @@ Click on `Save`{.action} when done.
 
 ![Bind](images/en10autodns.png){.thumbnail}
 
+We will now `Publish`{.action} our changes.
 
+![Bind](images/en11publish.png){.thumbnail}
+
+The DHCP Bindings and their basic settings are now visible.
+
+![Bind](images/en12done.png){.thumbnail}
 
 
 Si nous prenons un exemple de chaque règles nous obtenons :
