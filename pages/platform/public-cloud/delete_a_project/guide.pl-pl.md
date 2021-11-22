@@ -1,51 +1,59 @@
 ---
-title: 'Usuwanie projektu'
+title: 'Usuwanie projektu Public Cloud'
 excerpt: 'Dowiedz się, jak usunąć projekt Public Cloud'
 slug: usuwanie_projektu
 legacy_guide_number: g2129
 section: 'Zarządzanie projektami'
+order: 2
 ---
 
-**Ostatnia aktualizacja: 06-12-2019**
+**Ostatnia aktualizacja z dnia 17-11-2021**
 
 ## Wprowadzenie
 
-Jeśli projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} nie jest już potrzebny, można go usunąć bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+Jeśli nie potrzebujesz już [projektu Public Cloud](https://www.ovhcloud.com/pl/public-cloud/), możesz go usunąć bezpośrednio z [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Po usunięciu projektu Public Cloud zostanie utworzona końcowa faktura za pozostałą należność.
+Po usunięciu projektu Public Cloud wystawiana jest faktura zawierająca kwotę pozostającą do zapłaty.
 
 > [!warning]
 >
-Usunięcie projektu nie jest tym samym co dezaktywacja instancji Public Cloud. Po usunięciu projektu zawarte w nim zasoby zostaną skasowane. Tego działania nie można cofnąć.
+Usunięcie projektu różni się od wyłączenia instancji Public Cloud.<br>
+Po usunięciu projektu, zasoby, które on zawiera są nieodwracalnie utracone. Operacja ta jest nieodwracalna.
 >
 
-**Dowiedz się, jak usunąć projekt Public Cloud.**
+**Dowiedz się, jak usunąć projekt Public Cloud z Panelu klienta OVHcloud.**
 
 ## Wymagania początkowe
 
-* projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud
-* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij menu `Public Cloud`{.action}.
+Zaloguj się do Twojego [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Public Cloud`{.action} na górnym pasku menu.
 
-Następnie kliknij pozycję `Ustawienia projektu`{.action} w sekcji Zarządzanie projektami.
+Wybierz Twój projekt, a następnie kliknij `Project settings`{.action} w części `Project Management` w dolnej części menu po lewej stronie.
 
-![cloud menu](images/deleteproject.png){.thumbnail}
+![menu](images/deleteproject.png){.thumbnail}
 
-Kliknij kartę `Usuwanie projektu`{.action}.
+Kliknij przycisk `Usuń projekt`{.action}.
 
-![compute tab](images/deleteproject1.png){.thumbnail}
+![usuń projekt](images/deleteproject1.png){.thumbnail}
 
-Zostanie wyświetlony komunikat potwierdzenia wraz z listą zasobów, które zostaną zachowane albo skasowane po usunięciu projektu. Uważnie przeczytaj komunikat, a po zapoznaniu się z informacjami kliknij przycisk `Usuń projekt`{.action}.
+Wyświetli się komunikat potwierdzający usunięcie zasobów projektu, z wyjątkiem przypisanych adresów IP Failover. 
 
-![compute tab](images/deleteproject2.png){.thumbnail}
+Kliknij na `Usuń projekt`{.action}, aby kontynuować. 
 
-Kliknięcie przycisku usuwania spowoduje wysłanie do Ciebie e-maila z prośbą o potwierdzenie lub anulowanie usuwania projektu. Gdy klikniesz link potwierdzający, zostanie wyświetlona strona internetowa, na której trzeba wprowadzić hasło konta. Gdy wprowadzisz i potwierdzisz hasło, projekt zostanie usunięty.
+![usuń projekt](images/deleteproject2.png){.thumbnail}
+
+Po kliknięciu tego przycisku otrzymasz e-mail na adres kontaktowy, w celu potwierdzenia lub anulowania usunięcia projektu.<br>
+Po kliknięciu linku z potwierdzeniem zamieszczonego w tym e-mailu zostaniesz przekierowany do strony WWW, na której będziesz musiał wpisać hasło do Twojego konta.<br>
+Po wpisaniu hasła i potwierdzeniu Twój projekt zostanie usunięty.
 
 ## Sprawdź również
 
-[Pierwsze kroki z Public Cloud](../public-cloud-pierwsze-kroki/)
+[Utwórz Twój pierwszy projekt Public Cloud](https://docs.ovh.com/pl/public-cloud/utworz_projekt_public_cloud/)
 
-Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
+[Utwórz pierwszą instancję Public Cloud i połącz się z nią](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
