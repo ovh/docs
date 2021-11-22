@@ -68,19 +68,15 @@ The DHCP pool is ready but you need to click `Start`{.action} and then `Publish`
 
 ![Pool](images/en05publish.png){.thumbnail}
 
-Vous pouvez cliquer sur "OK" quand votre configuration est finalisée et vous pourrez la modifier ultérieurement si nécessaire.
+The DHCP is now operational.     
+You can see the service status and the basic information on the pool.
 
-![](images/DHCP3.PNG){.thumbnail}
+![Pool](images/en05started.png){.thumbnail}
 
-Voici un exemple de configuration :
-
-![](images/DHCP4.PNG){.thumbnail}
 
 ### Menu "Bindings"
 
-Ce menu a la même fonction que le menu "Pools" mais pour une attribution manuelle de certaines IP. Pour cela, il vous suffit de cliquer sur le bouton "+" (petit plus vert).
-
-Vous pouvez attribuer manuellement ces IP en fonction de deux critères qui influeront sur les champs proposés.
+Now on the left side, click on `Bindings`{.action}
 
 ![](images/DHCP5.PNG){.thumbnail}
 
