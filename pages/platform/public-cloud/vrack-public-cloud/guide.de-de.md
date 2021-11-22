@@ -91,7 +91,7 @@ Sie können dann bei Bedarf die dedizierten OpenStack-APIs verwenden:
 - Neutron (netzwerk)
 
 > [!primary]
->In einigen Fällen wird es einfacher sein, die OpenStack-APIs zu verwenden, in anderen Fällen die Nova-APIs, Neutronen usw.
+>In einigen Fällen wird es einfacher sein, die OpenStack-APIs zu verwenden, in anderen Fällen die Nova-APIs, Neutron-APIs.
 >
 > Je nach Version Ihres Kunden und Betriebssystems können auch bestimmte Funktionen der OpenStack-API fehlen.
 In dieser Anleitung wurden Ihnen die einfachsten und intuitivsten Alternativen angeboten.
