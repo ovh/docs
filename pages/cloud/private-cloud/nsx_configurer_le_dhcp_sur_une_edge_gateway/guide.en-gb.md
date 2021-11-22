@@ -85,6 +85,7 @@ Vous pouvez attribuer manuellement ces IP en fonction de deux critères qui infl
 
 ![](images/DHCP5.PNG){.thumbnail}
 
+
 VM NIC Binding :
 
 - "Interface" : interface de la Edge concernée ;
