@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Last updated 4th November 2021**
+**Last updated 22nd November 2021**
 
 > [!warning]
 >
@@ -244,10 +244,10 @@ For more information, consult OVHcloud's guide [How to create a V(x)LAN within a
 
 > [!warning]
 >
-> - Some virtual routing appliances such as pfSense use CARP to provide high availability
-> - VMs that use CARP will need “Promiscuous Mode” enabled in the security settings of a portgroup
-> - Customers can enable this setting themselves on the vRack vDS on the destination vDC
-> - However, if promiscuous mode needs to be enabled on the “VM Network” portgroup in the new vDC, please open a ticket with OVH support before migration to ensure connectivity remains during migration
+> - Some virtual routing appliances such as pfSense use CARP to provide high availability.
+> - VMs that use CARP will need “Promiscuous Mode” enabled in the security settings of a portgroup.
+> - Customers can enable this setting themselves on the vRack vDS on the destination vDC.
+> - However, if promiscuous mode needs to be enabled on the “VM Network” portgroup in the new vDC, please open a ticket with OVHcloud support before migration to ensure connectivity remains during migration.
 >
 
 ##### **1.7 Veeam backup configuration**

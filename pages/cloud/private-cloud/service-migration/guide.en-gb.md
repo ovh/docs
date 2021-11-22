@@ -6,7 +6,7 @@ section: Getting started
 order: 6
 ---
 
-**Last updated 12th February 2021**
+**Last updated 22nd November 2021**
 
 ## Objective
 
@@ -162,10 +162,10 @@ For more information, consult VMware's documentation on [how to edit general di
 
 > [!warning]
 >
-> - Some virtual routing appliances such as pfSense use CARP to provide high availability
-> - VMs that use CARP will need “Promiscuous Mode” enabled in the security settings of a portgroup
-> - Customers can enable this setting themselves on the vRack vDS on the destination HPC
-> - However, if promiscuous mode needs to be enabled on the “VM Network” portgroup in the new HPC, please open a ticket with OVH support before migration to ensure connectivity remains during migration
+> - Some virtual routing appliances such as pfSense use CARP to provide high availability.
+> - VMs that use CARP will need “Promiscuous Mode” enabled in the security settings of a portgroup.
+> - Customers can enable this setting themselves on the vRack vDS on the destination Hosted Private Cloud.
+> - However, if promiscuous mode needs to be enabled on the “VM Network” portgroup in the new Hosted Private Cloud, please open a ticket with OVHcloud support before migration to ensure connectivity remains during migration.
 >
 
 ##### **1.7 Veeam backup config**
