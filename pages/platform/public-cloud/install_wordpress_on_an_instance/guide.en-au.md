@@ -23,10 +23,10 @@ This tutorial provides the basic steps for a manual installation of WordPress on
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
-- a [Public Cloud instance](../public-cloud-first-steps/) with Debian or Ubuntu installed
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- administrative access (root) to your instance via SSH
+- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+- A [Public Cloud instance](../public-cloud-first-steps/) with Debian or Ubuntu installed
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Administrative access (root) to your instance via SSH
 
 ## Instructions
 

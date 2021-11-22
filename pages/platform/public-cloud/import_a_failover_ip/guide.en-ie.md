@@ -10,21 +10,21 @@ section: Networking
 
 ## Objective
 
-If you need to configure a failover IP address on your instances because
+You might need to configure a failover IP address on your instances because:
 
-- you have multiple websites on your instance 
-- you host international projects
-- you want to migrate from a Dedicated Server to a Public Cloud instance
+- You have multiple websites on your instance.
+- You host international projects.
+- You want to migrate from a Dedicated Server to a Public Cloud instance.
 
-... you can import a failover IP address that is linked to a different OVHcloud service.
+Instead oy buying additional ones, you can import a failover IP address that is linked to a different OVHcloud service.
 
 **This guide explains how to import this failover IP into your OVHcloud Public Cloud project.**
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- a [failover IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/)
+- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A [failover IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/)
 
 
 ## Instructions

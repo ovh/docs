@@ -60,11 +60,11 @@ Ta sekcja ma zastosowanie wyłącznie do instalacji WordPress, Drupal, Joomla i 
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>  
 
-Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz postępować zgodnie z [tym przewodnikiem.](../../domains/hosting_www_jak_edytowac_strefe_dns/) 
+Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz postępować zgodnie z [tym przewodnikiem](../../domains/hosting_www_jak_edytowac_strefe_dns/).
 <br>Jeśli Twoja domena jest zarejestrowana w innej firmie, skontaktuj się z nią, aby uzyskać pomoc w konfiguracji rekordów `A`.
 
 <ol start="2">
-  <li>Może zaczekacie 24 godziny zanim te dwa nagrania się całkowicie rozproszą. Możesz to zawsze sprawdzić za pomocą [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. Jeśli adres IP Twojej domeny wyświetla się na serwerze mxtoolbox w taki sam sposób, jak adres IP Twojego serwera, możesz przejść do kolejnego etapu.</li>
+  <li>Może zaczekacie 24 godziny zanim te dwa nagrania się całkowicie rozproszą. Możesz to zawsze sprawdzić za pomocą <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. Jeśli adres IP Twojej domeny wyświetla się na serwerze mxtoolbox w taki sam sposób, jak adres IP Twojego serwera, możesz przejść do kolejnego etapu.</li>
 
   <li>Połącz się z użytkownikiem CentOS za pomocą SSH i wprowadź następujące polecenia, aby zainstalować Certbot:</li>
 </ol>

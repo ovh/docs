@@ -20,9 +20,9 @@ This system is similar to the one used by certain telephone operators, where the
 
 ## Requirements
 
-* a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/){.external} in your OVHcloud account
-* a [Public Cloud instance](https://docs.ovh.com/ie/en/public-cloud/public-cloud-first-steps/){.external}.
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/){.external} in your OVHcloud account
+- A [Public Cloud instance](https://docs.ovh.com/ie/en/public-cloud/public-cloud-first-steps/){.external}
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## General design
 

@@ -22,10 +22,10 @@ This may be useful in the following cases:
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
-- a [Public Cloud instance](https://www.ovhcloud.com/en-au/public-cloud/){.external} in your OVHcloud account
-- a volume snapshot in the same OpenStack region
-- administrative access (root) to your instance via SSH or RDP
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- A [Public Cloud instance](https://www.ovhcloud.com/en-au/public-cloud/){.external} in your OVHcloud account
+- A volume snapshot in the same OpenStack region
+- Administrative access (root) to your instance via SSH or RDP
 
 ## Instructions
 

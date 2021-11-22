@@ -60,11 +60,11 @@ Questa sezione si applica solo agli impianti di WordPress, Drupal, Joomla e Pres
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>  
 
-Se il tuo dominio è registrato in OVHcloud, consulta [questa guida.](../../domains/web_hosting_modifica_la_tua_zona_dns/)
+Se il tuo dominio è registrato in OVHcloud, consulta [questa guida](../../domains/web_hosting_modifica_la_tua_zona_dns/).
 <br>Se il tuo dominio è registrato presso un'altra società, contatta quest'ultima per ottenere assistenza sulla configurazione dei record `A`.
 
 <ol start="2">
-  <li>Forse dovrai aspettare 24 ore prima che le due registrazioni si propaghino completamente. È sempre possibile verificarlo con [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. Se l'indirizzo IP del tuo dominio viene visualizzato su mxtoolbox nello stesso modo del tuo server, passa allo step successivo.</li>
+  <li>Forse dovrai aspettare 24 ore prima che le due registrazioni si propaghino completamente. È sempre possibile verificarlo con <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. Se l'indirizzo IP del tuo dominio viene visualizzato su mxtoolbox nello stesso modo del tuo server, passa allo step successivo.</li>
 
   <li>Accedi in SSH al tuo server con l'utente CentOS ed esegui questi comandi per installare Cerbot:</li>
 </ol>

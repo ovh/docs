@@ -21,9 +21,9 @@ This can be useful in cases where:
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
-* a [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} in your OVH account.
-* administrative (root) access to your instance via SSH.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} in your OVHcloud account
+- Administrative (root) access to your instance via SSH
 
 ## Instructions
 

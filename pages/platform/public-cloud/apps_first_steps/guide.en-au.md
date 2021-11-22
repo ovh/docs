@@ -16,7 +16,7 @@ OVHcloud offers Public Cloud customers pre-installed application images for quic
 
 ## Requirements
 
-- a [Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) in your OVHcloud account.
+- A [Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) in your OVHcloud account
 
 ## Instructions
 
@@ -30,8 +30,8 @@ Using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&f
 
 Once the instance has been installed with your chosen pre-installed application, you can retrieve your login details via the OVHcloud API only.
 
-1. Log in to the [API console here](https://ca.api.ovh.com/console/)
-2. Then go to [here](https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST)
+1. Log in to the [API console here](https://ca.api.ovh.com/console/).
+2. Then go to [here](https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST).
 
 > API call
 >> > [!api]
@@ -56,17 +56,17 @@ This section only applies to WordPress, Drupal, Joomla and Prestashop installati
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>
 
-If your domain is registered with OVHcloud you can follow [this guide.](../../domains/web_hosting_how_to_edit_my_dns_zone/).
+If your domain is registered with OVHcloud you can follow [this guide](../../domains/web_hosting_how_to_edit_my_dns_zone/).
 <br>If your domain is registered with another company you will need to contact them for assistance to set up your `A` records.
 
 <ol start="2">
-<li>You may need to wait 24 hours before the two records propagate fully. You can always check it with [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.</li>
-<li>  SSH into your server with the CentOS user and execute the following commands to install Certbot</li>
+<li>You may need to wait 24 hours before the two records propagate fully. You can always check it with <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.</li>
+<li>SSH into your server with the CentOS user and execute the following commands to install Certbot.</li>
 </ol>
 
 > [!warning]
 >
-> Replace personaldomain.ovh in the commands to your own domain name
+> Replace personaldomain.ovh in the commands with your own domain name.
 >
 
 ```sh
