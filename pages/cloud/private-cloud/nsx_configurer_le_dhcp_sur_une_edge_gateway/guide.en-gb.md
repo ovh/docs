@@ -34,10 +34,16 @@ On the left side, navigate to the `NSX Edges`{.action} section then click on the
 
 In the `DHCP`{.action} tab,  you'll see 3 options:
 
-- "Pools" ;
-- "Bindings".
+- Pools
+- Bindings
+- Relay
 
-![](images/DHCP1.PNG){.thumbnail}
+We'll set up the first two (Pools & Bindings) in this guide.    
+Relay is a more unusual setup that will be treated seperately.
+
+Let's start with `Pools`{.action}. Click on it.
+
+![NSX](images/en03dhcpadd.png){.thumbnail}
 
 ### Menu "Pools"
 
