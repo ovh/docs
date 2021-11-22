@@ -40,7 +40,7 @@ Next, click on the `Compute`{.action} menu on the left side and select `Instance
 
 ### Template Selection Tab (Flavor Choice)
 
-This section shows the current templace (old flavor) and allows you to select a new template (new flavor) for the instance resource.
+This section shows the current template (old flavor) and allows you to select a new template (new flavor) for the instance resource.
 
 ![public-cloud](images/flavorchoice.png){.thumbnail}
 
@@ -53,7 +53,7 @@ In this section, you will see the resources associated with the template you hav
 Under this section, you can preview the occupied resources in relation to the total resources allocated to the project.
 
 > [!warning]
-> Please note that you cannot swicth models when resizing an instance. A resize can only be done from a Linux model to another Linux model or from a Windows model to another Windows model.
+> Please note that you cannot switch models when resizing an instance. A resizing can only be done from a Linux model to another Linux model or from a Windows model to another Windows model.
 >
 
 ### Advanced Options
@@ -68,7 +68,7 @@ Once the configuration is complete, click on `Resize`{.action}.
 
 Be aware that when resizing a Windows Instance, the partition size is not automatically updated, so you will have to extend it using the **disk manager**:
 
-- Right-click on the `Start`{.action} menu and launch disk manager by clicking on `Disk Management`{.action}:
+- Right-click on the `Start`{.action} menu and launch the disk manager by clicking on `Disk Management`{.action}:
 
 ![public-cloud](images/2980.png){.thumbnail}
 
@@ -76,7 +76,7 @@ Be aware that when resizing a Windows Instance, the partition size is not automa
 
 ![public-cloud](images/2981a.png){.thumbnail}
 
-- The `Extend Volume Wizard` appears, click on `Next`{.action} to proceed. In the next tab, choose the disk resources to extend and click on `Next`{.action}. 
+- In the `Extend Volume Wizard` menu, click on `Next`{.action} to proceed. In the next tab, choose the disk resources to extend and click on `Next`{.action}. 
 
 ![public-cloud](images/2978a.png){.thumbnail}
 
