@@ -47,7 +47,7 @@ Das [Interface-Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} (u
 
 Dieses vollständige und technische Interface erlaubt es Ihnen, fast alle OpenStack Aktionen zu verwalten. Dies wird eines der notwendigen Interfaces sein, wenn Sie mehr als zwei VLANs verwalten, private Netzwerkinterfaces zu Ihren Instanzen hinzufügen, personalisierte Images verwalten.
 
-Machen Sie sich anhand des folgenden [Leitfadens](../erstellung_eines_zugangs_zu_horizon/), mit Horizon vertraut.
+Lesen Sie die Anleitung [Auf das Horizon-Interface zugreifen](../erstellung_eines_zugangs_zu_horizon/), um sich mit Horizon vertraut zu machen.
 
 > [!primary]
 > Horizon mit Zonenfunktion: Denken Sie daran, Ihr geografisches Arbeitsgebiet ganz oben links in Ihrem Interface zu wählen (GRA5, SBG3, BHS1...)
@@ -66,7 +66,7 @@ Sie können einfach von unserer Webseite [aus auf die](https://api.ovh.com/) API
 
 So können Sie grundlegende Tasks frei automatisieren, mit Skripten, optimieren Sie Ihre eigenen Funktionen usw.
 
-Lesen Sie die [Anleitung Erste Schritte mit den OVHcloud APIs](../../api/api-premiers-pas/) (EN), um sich mit der Verwendung der OVHcloud APIv6 vertraut zu machen.
+Lesen Sie die [Anleitung Erste Schritte mit den OVHcloud APIs](../../api/api-premiers-pas/)(EN), um sich mit der Verwendung der OVHcloud APIv6 vertraut zu machen.
 
 ### OpenStack API
 
@@ -156,7 +156,7 @@ Dies kann nützlich sein, um Ihr vRack in mehrere virtuelle Netzwerke aufzuteile
 
 #### Erstellen eines VLAN im OVHCcloud Kundencenter
 
-KSobald der vRack erstellt ist, navigieren Sie zum Abschnitt `Private Network`{.action}. 
+Sobald der vRack erstellt ist, navigieren Sie zum Abschnitt `Private Network`{.action}. 
 
 ![VLAN Erstellung](images/vrack2021-03.png){.thumbnail}
 
