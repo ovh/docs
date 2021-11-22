@@ -51,11 +51,17 @@ The `Pools`{.action} menu allows the traditional setup of the DHCP service.
 We'll set up a scope for it and will start the service.
 
 Click on `+ Add`{.action}    
-In the 
+In the New DHCP Pool window, fill in the informations you need:
+- Start IP is the first usable IP for the DHCP service
+- End IPis the first usable IP for the DHCP service
+- Domain Name is optional but can be useful for your DNS
+- Primary and Secondary Name Server are your personalized dns settings (can be auto configured if the slider above is turned on)
+- Default Gateway is optional
+- Subnet Maskis self explanatory
+- You can set never ending leases or mofify lease times if that's a requirement
+- You have more advanced options in the `DHCP Options`{.action} tab but those are outside of the scope of this guide
 
-Vous pouvez également activer la politique d'évènements en cochant la case "Enable logging" puis vous pouvez modifier le type d'évènements répertoriés via le menu déroulant "Log level". Vous pouvez ainsi définir si vous ne souhaitez conserver que les erreurs, les alertes ou encore les notifications.
-
-![](images/DHCP2.PNG){.thumbnail}
+![Pool](images/en04pool.png){.thumbnail}
 
 Le bouton "+" (petit plus vert) vous permet de gérer les plages d'attribution DHCP générales. Les deux premières cases vous permettent d'activer ou non les paramètres suivants :
 
