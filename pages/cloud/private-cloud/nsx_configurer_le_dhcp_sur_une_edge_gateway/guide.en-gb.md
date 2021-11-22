@@ -47,7 +47,11 @@ Let's start with `Pools`{.action}. Click on it.
 
 ### Menu "Pools"
 
-Le menu "Pools" vous permet dans un premier temps d'activer ou de désactiver le service DHCP de la Edge via le bouton "DHCP Service Status". Par défaut, le DHCP est désactivé.
+The `Pools`{.action} menu allows the traditional setup of the DHCP service.    
+We'll set up a scope for it and will start the service.
+
+Click on `+ Add`{.action}    
+In the 
 
 Vous pouvez également activer la politique d'évènements en cochant la case "Enable logging" puis vous pouvez modifier le type d'évènements répertoriés via le menu déroulant "Log level". Vous pouvez ainsi définir si vous ne souhaitez conserver que les erreurs, les alertes ou encore les notifications.
 
