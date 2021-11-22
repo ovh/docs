@@ -4,7 +4,7 @@ routes:
     canonical: 'https://docs.ovh.com/it/storage/pca/cyberduck/'
 excerpt: Come utilizzare il tuo Object Storage con Cyberduck
 slug: gestisci_il_tuo_object_storage_con_cyberduck
-section: 'Object Storage'
+section: Object Storage Standard (Swift)
 legacy_guide_number: g1868
 ---
 

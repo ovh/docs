@@ -63,30 +63,11 @@ user@host:~$ openstack ec2 credentials create
 With curl:
 
 ```bash
-user@host:~$ curl -s -D headers -H "Content-Type: application/json" -d '
-{ "auth": {
-    "identity": {
-      "methods": ["password"],
-      "password": {
-        "user": {
-          "name": "'$OS_USERNAME'",
-          "domain": { "name": "'$OS_USER_DOMAIN_NAME'" },
-          "password": "'$OS_PASSWORD'"
-        }
-      }
-    },
-    "scope": {
-      "project": {
-        "name": "'$OS_PROJECT_NAME'",
-        "domain": { "name": "'$OS_PROJECT_DOMAIN_NAME'" }
-      }
-    }
-  }
-}' "${OS_AUTH_URL}/auth/tokens" > token_info
-user@host:~$ OS_TOKEN=$(egrep "^X-Subject-Token:" headers | awk '{print $2}')
-user@host:~$ OS_USER_ID=$(cat token_info  | jq -r '.["token"]["user"]["id"]')
-user@host:~$ OS_PROJECT_ID=$(cat token_info  | jq -r '.["token"]["project"]["id"]')
-user@host:~$ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN" -d '{"tenant_id": "$OS_PROJECT_ID"}' "${OS_AUTH_URL}/users/${OS_USER_ID}/credentials/OS-EC2" | jq .
+. openrc.sh
+TMP_FILE=$(mktemp)
+OS_USER_ID=$(curl -s -D $TMP_FILE -X POST "${OS_AUTH_URL}auth/tokens" -H "Content-Type: application/json" -d '{"auth":{"identity":{"methods":["password"],"password":{"user":{"name":"'$OS_USERNAME'","domain":{"id":"default"},"password":"'$OS_PASSWORD'"}}},"scope":{"project":{ "id":"'$OS_TENANT_ID'","domain":{"id":"default"}}}}}' | jq -r '.["token"]["user"]["id"]')
+OS_TOKEN=$(awk '/^X-Subject-Token/ {print $2}' $TMP_FILE |  tr -d "\r")
+curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN" -d '{"tenant_id": "'$OS_TENANT_ID'"}' "${OS_AUTH_URL}users/${OS_USER_ID}/credentials/OS-EC2" | jq .
 {
   "credential": {
     "user_id": "d74d05ff121b44bea9216495e7f0df61",
@@ -108,7 +89,7 @@ Install the aws client and configure it as follows:
 ```bash
 user@host:~$ pip install awscli awscli-plugin-endpoint
 [...]
-user@host:~$ cat .aws/config
+user@host:~$ cat ~/.aws/config
 [plugins]
 endpoint = awscli_plugin_endpoint
 

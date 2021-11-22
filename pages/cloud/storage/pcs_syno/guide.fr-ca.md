@@ -6,15 +6,15 @@ section: Object Storage Standard (Swift)
 ---
 
 
-## Preambule
+## Objectif
 [DiskStation Manager 6.0](https://www.synology.com/en-global/dsm/6.0beta){.external} de Synology propose un outil de synchronisation avec différentes solutions Cloud.
 
 Celui ci est compatible avec l'Object Storage du Public Cloud OVH et vous permettra donc de pouvoir effectuer une sauvegarde de vos données, et de les rendre accessibles depuis n'importe quel endroit.
 
-Ce guide vous explique comment configurer DiskStation Manager 6.0 afin de synchroniser les fichiers se trouvant sur votre NAS vers votre Object Storage.
+**Ce guide vous explique comment configurer DiskStation Manager 6.0 afin de synchroniser les fichiers se trouvant sur votre NAS vers votre Object Storage.**
 
 
-### Prérequis
+## Prérequis
 - [Créer un conteneur de stockage](https://docs.ovh.com/gb/en/storage/create_an_object_container/)
 - [Créer un accès à Horizon](https://docs.ovh.com/ca/fr/public-cloud/creer-un-acces-a-horizon/)
 

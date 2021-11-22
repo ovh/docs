@@ -9,7 +9,7 @@ section: Public Cloud Archive
 
 ## Objective
 
-Public Cloud Archive is an unlimited storage solution with simple billing tailored to your needs. There are many types of object containers:
+The Public Cloud Archive offer is an unlimited storage solution with simple billing tailored to your needs. There are many types of object containers:
 
 - For static hosting (static website).
 - For private hosting (e.g. storage of personal data).
@@ -51,7 +51,7 @@ Name your container, then click `Create the container`{.action} :
 > - [ _ ]
 > - And you must not use capital letters.
 >  
-> Refer to our guide on [linking a container to a domain name](https://docs.ovh.com/fr/storage/pcs/link-domain/) if necessary.
+> Refer to our guide on [linking a container to a domain name](https://docs.ovh.com/gb/en/storage/pcs/link-domain/) if necessary.
 >
 
 ![container name](images/create-container-20211006094550334.png)

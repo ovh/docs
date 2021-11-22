@@ -4,7 +4,7 @@ routes:
     canonical: 'https://docs.ovh.com/pt/storage/pca/cyberduck/'
 excerpt: 'Saiba como utilizar o Object Storage com Cyberduck'
 slug: utilizar_object_storage_com_cyberduck
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
 > [!primary]

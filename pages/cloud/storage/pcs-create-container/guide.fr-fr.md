@@ -9,7 +9,7 @@ section: Object Storage Standard (Swift)
 
 ## Objectif
 
-Public Cloud propose une solution de stockage illimité avec une facturation simple et adaptée à vos besoins. Il existe de nombreux types de conteneurs d'objets :
+L'offre Object Storage pour Public Cloud propose une solution de stockage illimité avec une facturation simple et adaptée à vos besoins. Il existe de nombreux types de conteneurs d'objets :
 
 - pour de l'hébergement statique (site web statique);
 - pour de l'hébergement privé (Exemple : stockage de données personnelles);

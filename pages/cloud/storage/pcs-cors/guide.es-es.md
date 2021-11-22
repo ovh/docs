@@ -4,7 +4,7 @@ slug: pcs/cors
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/pcs/cors'
 excerpt: Find here the concepts to implement CORS
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
 **Last updated 23rd September 2021**
