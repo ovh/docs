@@ -166,7 +166,8 @@ Your DHCP Relay is now functional after a short wait.
 
 ![Relay](images/en18done.png){.thumbnail}
 
+Congratulations and thank you.
 
+## Go further
 
-
-
+Join our community of users on <https://community.ovh.com/en/>.
