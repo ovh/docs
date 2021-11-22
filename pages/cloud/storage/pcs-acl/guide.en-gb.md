@@ -2,7 +2,7 @@
 title: Set up an Access Control List on Object Storage
 slug: pcs/acl
 excerpt: Here are the concepts for implementing ACLs in Object Storage
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
 **Last updated 23rd September 2021**

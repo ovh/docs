@@ -1,7 +1,7 @@
 ---
 title: Utiliser l'Object Storage avec rClone
 slug: sync-rclone-object-storage
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
 **Dernière mise à jour le 14/12/2017**
@@ -27,17 +27,16 @@ Une fois votre container et votre utilisateur OpenStack créés, il vous reste d
 
 Une fois votre [utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/){.external} créé vous pourrez choisir, dans votre espace client, de récupérer le fichier de configuration nécessaire pour rClone.
 
-Pour cela, quand vous êtes sur la page des utilisateurs OpenStack dans votre espace client, cliquez sur la clé à molette à droite de l'utilisateur puis sur `Télécharger un fichier de configuration rClone`{.action}.
+Pour cela, quand vous êtes sur la page des utilisateurs OpenStack dans votre espace client, cliquez sur `...`{.action} à droite de l'utilisateur puis sur `Télécharger un fichier de configuration Rclone`{.action}.
 
-![Télécharger un fichier de configuration rClone](images/download_file.png){.thumbnail}
-
+![Télécharger un fichier de configuration Rclone](images/pcs_sync_rclone_pcs-20211008090532581.png)
 
 - Configurer rClone :
 
 Une fois le fichier téléchargé, vous pouvez lancer la commande suivante afin d’ajouter votre nouvel espace de stockage :
 
 ```sh
-Rclone config
+rclone config
 ```
 
 Vous serez invité à insérer les données de configuration présentes dans votre fichier.
@@ -45,12 +44,12 @@ Vous serez invité à insérer les données de configuration présentes dans vot
 > [!primary]
 >
 > Vous pouvez également copier-coller le contenu de votre fichier dans l'espace dédié aux configurations de Rclone (*.config/Rclone/Rclone.conf*).
-> 
+>
 
 Une fois votre configuration effectuée, vous pouvez la tester en listant par exemple vos containers :
 
 ```sh
-Rclone lsd BackupStorage
+rclone lsd BackupStorage
 ```
 
 *BackupStorage* correspond au nom donné à votre espace de stockage.

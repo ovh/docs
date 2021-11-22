@@ -2,12 +2,12 @@
 title: Montowanie kontenera obiektów za pomocą S3QL
 excerpt: Montowanie kontenera obiektów za pomocą S3QL
 slug: montowanie_kontenera_obiektow_za_pomoca_s3ql
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g1908
 ---
 
 
-## 
+##
 S3QL to system plików, który można zamontować, aby lokalnie przechowywać dane wykorzystując rozwiązania przestrzeni dyskowej cloud takie jak Object Storage.
 System ten proponuje funkcje takie jak: transparentna kompresja, szyfrowanie czy snapshotting wykorzystywany do tworzenia kopii zapasowych.
 
@@ -67,7 +67,7 @@ admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3q
 
 
 
-Następnie należy dodać hasło, które dodałeś w pliku uwierzytelniania. 
+Następnie należy dodać hasło, które dodałeś w pliku uwierzytelniania.
 Jeśli nie chcesz go konfigurować, należy usunąć linię "fs-passphrase: PASSPHRASE"
 z pliku uwierzytelniania, aby nie nastąpiła blokada podczas montowania systemu plików.
 
@@ -105,5 +105,5 @@ swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME 1.0T 0 1.0T 0% /mnt/container
 
 
 
-Nie będzie możliwości korzystania z S3QL w trybie offline. 
+Nie będzie możliwości korzystania z S3QL w trybie offline.
 Nie zaleca się również konfigurowania trwałości za pomocą pliku /etc/fstab, lecz za pomocą skryptu, który będzie się uruchamiał podczas uruchamiania serwera.

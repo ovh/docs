@@ -6,28 +6,31 @@ section: NSX
 order: 01
 ---
 
-**Dernière mise à jour le 29/06/2020**
+**Dernière mise à jour le 17/11/2021**
 
 ## Objectif
 
 NSX est une solution de Software Defined Network (SDN) développée par VMware qui s’active au niveau du vCenter et qui se pilote directement depuis l'interface vSphere. Avec NSX, configurez les règles d’accès à vos réseaux, créez votre politique de sécurité et déployez en quelques minutes les différents services réseau nécessaires à la construction de votre infrastructure.
 
-**Ce guide vous présente cette interface.**
+**Ce guide est une introduction à l'interface NSX.**
 
 ## Prérequis
 
-- Posséder un identifiant utilisateur actif avec les droits spécifiques pour NSX
-- Être connecté à votre [interface vSphere](../connexion-interface-vsphere/)
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 
 ## En pratique
 
-VMWare NSX n'est disponible que depuis l'interface vSphere.
+VMWare NSX est disponible depuis le client web vSphere uniquement.
 
-Depuis la page d’accueil du client vSphere, cliquez sur la catégorie `Mise en réseau et sécurité`{.action} dans le menu de gauche :
+Depuis la page d’accueil du client vSphere, cliquez sur `Mise en réseau et sécurité`{.action} dans la barre d'outil à gauche de votre écran.
+Vous pouvez également cliquer sur `Mise en réseau et sécurité`{.action} dans le Menu déroulant.
 
-![Networking and Security](images/nsx01.png){.thumbnail}
+![Networking and Security](images/Inter01fr.png){.thumbnail}
 
-Vous avez alors accès à l'accueil NSX avec tous les menus associés.
+Vous avez alors accès au tableau de bord NSX avec tous les menus associés.
+
+![Networking and Security](images/Inter02fr.png){.thumbnail}
 
 
 > [!primary]

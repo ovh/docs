@@ -3,11 +3,11 @@ title: Configura un container di oggetti S3QL
 excerpt: Configura un container di oggetti S3QL
 slug: configura_un_container_di_oggetti_s3ql
 legacy_guide_number: g1908
-section: Object Storage
+section: Object Storage Standard (Swift)
 ---
 
 
-## 
+##
 S3QL è un file system remoto che può essere configurato in locale per salvare i dati utilizzando soluzioni di archiviazione Cloud, come l'Object Storage OVH.
 Le funzionalità disponibili sono numerose, ad esempio compressione dei dati, cifratura e snapshot del container, che rende questa soluzione particolarmente adatta alla creazione di backup.
 

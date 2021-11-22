@@ -69,7 +69,6 @@ Puisque le serveur Rsync a été patché pour fonctionner avec l'API Swift, ces 
 
 > --inplace : Au lieu de la méthode par défaut qui consiste à créer une nouvelle copie du fichier puis à la déplacer une fois le processus terminé, Rsync écrit les données mises à jour directement dans le fichier de destination.
 >
-> -W, --whole-file: Désactive l'algorithme de transfert delta de Rsync et envoie le fichier entier en l'état.
 
 En outre, seul un sous-ensemble d'options est autorisé côté client:
 

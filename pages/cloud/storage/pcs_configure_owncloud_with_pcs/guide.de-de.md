@@ -2,12 +2,12 @@
 title: Konfiguration von ownCloud mit Object Storage
 excerpt: Konfiguration von ownCloud mit Object Storage
 slug: konfiguration_von_owncloud_mit_object_storage
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g2000
 ---
 
 
-## 
+##
 [ownCloud](https://owncloud.org/) ist eine Applikation für Online-Storage und Ordner-Verwaltung.
 
 Sie bietet Funktionen wie die Synchronisierung zwischen verschiedenen Peripheriegeräten
@@ -119,6 +119,5 @@ Wenn alle Angaben korrekt gemacht sind, wird das rote Quadrat vor dem Namen Ihre
 ![](images/img_3330.jpg){.thumbnail}
 
 
-## 
+##
 ... lesen Sie auch unsere anderen Hilfen zum Thema Cloud!
-

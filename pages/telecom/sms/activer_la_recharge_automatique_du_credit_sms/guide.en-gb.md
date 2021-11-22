@@ -6,7 +6,7 @@ legacy_guide_number: '16254520'
 section: 'Managing your solution'
 ---
 
-**Last updated 04th June 2020**
+**Last updated 16th November 2021**
 
 ## Objective
 
@@ -19,7 +19,7 @@ The purpose of this guide is to explain what SMS credits are, how to set up auto
 
 ## Instructions
 
-### **SMS credits**
+### SMS credits
 
 0,5 SMS credit is the cost for sending 1 SMS message in the United Kingdom. The price is degressive depending on the number of SMS credits you buy at once. 
 
@@ -27,8 +27,8 @@ You can view the list of SMS packs [here](https://www.ovh.co.uk/sms/).
 
 **E.g. to purchase a pack of 100 SMS credits, each credit costs 0.03 ex. VAT.**
 
-Sending 1 SMS message in the United Kingdom costs 0,5 credit. With this pack, you can send 200 SMS messages in in the United Kingdom.
-<br>Sending 1 SMS message in India costs 0.1 credit. With this pack, you can send 1,000 SMS messages in India.
+Sending 1 SMS message in the United Kingdom costs 0,5 credit. With this pack, you can send 200 SMS messages in the United Kingdom.
+<br>Sending 1 SMS message in India costs 0.4 credit. With this pack, you can send 250 SMS messages in India.
 
 On [this webpage](https://www.ovh.co.uk/sms/prices/), you can view the price in credits for sending SMS messages, depending on their destination.
 
@@ -39,33 +39,38 @@ On [this webpage](https://www.ovh.co.uk/sms/prices/), you can view the price in 
 > [Sending SMS messages via the OVHcloud Control Panel](../send_sms_messages_via_control_panel/#step-2-compose-your-sms-message)
 >
 
-### **Automatic re-crediting**
+### Automatic re-credit
 
 To ensure that you are never short of credit on your account, you can enable automatic re-crediting. Once a minimum threshold of remaining credit has been reached, a new number of credits is automatically added to your SMS account.
 
-To enable automatic re-crediting, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Telecom`{.action} tab. Next, click on the `SMS`{.action} section in the services bar on the left-hand side. Choose the SMS account you would like to enable automatic re-crediting for.
+> [!warning]
+>
+> The automatic re-credit option can only be activated if a SEPA direct debit payment method is present and confirmed in your OVHcloud account.
+>
 
-Go to the `Options`{.action} menu (1), then `Automatic re-crediting`{.action} (2).
+To enable automatic re-crediting, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Telecom`{.action} tab. Next, click on the `SMS`{.action} section in the services bar on the left-hand side. Choose the SMS account you would like to enable automatic re-credit for.
 
-![credit sms](images/smscredit1.png){.thumbnail}
+Go to the `Options`{.action} menu (1), then `Automatic re-credit`{.action} (2).
 
-Then click `Modify`{.action} in the “Manage options” section.
+![credit sms](images/smscredit01.png){.thumbnail}
 
-![credit sms](images/smscredit2.png){.thumbnail}
+Then click `Edit`{.action} in the “Manage options” section.
+
+![credit sms](images/smscredit02.png){.thumbnail}
 
 Finally, fill in the required fields.
 
 * Minimum threshold (1): When this threshold is reached, automatic re-crediting is triggered.
-* Amount to re-credit (2): Defines the number of credits to re-credit on to your SMS account. There are 5 possible choices: 100, 200, 250, 500, and 1,000.
-* Click `Confirm`{.action} (3) to apply the setting.
+* Amount to top-up (2): Defines the number of credits to re-credit on to your SMS account. There are 7 possible choices: 100, 200, 250, 500, 1000, 5000 and 10000.
+* Click `Confirm`{.action} to apply the settings.
 
-![credit sms](images/smscredit3.png){.thumbnail}
+![credit sms](images/smscredit03.png){.thumbnail}
 
-### **Transfer credits**
+### Transfer credits
 
 > [!primary]
 >
-> Credit can only be transferred between SMS accounts with the same OVHcloud NIC handle. Credit cannot be transferred between two different OVHcloud NIC handles.
+> Credit can only be transferred between SMS accounts within the same OVHcloud account. Credit cannot be transferred between two different OVHcloud accounts.
 >
 
 SMS credits can only be transferred via the API.
@@ -87,4 +92,4 @@ Click `Execute`{.action} to confirm the transfer. The process is immediate.
 
 ## Go further
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Join our community of users on <https://community.ovh.com/en/>.

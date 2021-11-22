@@ -48,9 +48,9 @@ Le TenantName correspond au nom de votre projet sur Horizon. Pour récupérer le
 
 ### Exemple
 
-Si vous avez créé un conteneur PCA sur SBG1 :
+Si vous avez créé un conteneur PCA sur SBG :
 
-- Host Name : gateways.storage.sbg1.cloud.ovh.net
+- Host Name : gateways.storage.sbg.cloud.ovh.net
 - User Name : pca
 - Password : 971891XXXX1214.f6nBXXXXXAmcv.SfPeASYfuWeqBZgXXXXX2XhF3DY12RkD
 

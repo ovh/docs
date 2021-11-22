@@ -4,7 +4,7 @@ routes:
     canonical: 'https://docs.ovh.com/sg/en/storage/pca/cyberduck/'
 excerpt: 'Managing Object Storage with CyberDuck'
 slug: manage_object_storage_with_cyberduck
-section: 'Object Storage'
+section: Object Storage Standard (Swift)
 legacy_guide_number: g1868
 ---
 
@@ -17,6 +17,13 @@ Object Storage is a storage solution that is managed primarily through the OpenS
 If you're not familiar with managing storage through command lines, there are some graphics solutions that use the OpenStack API for you. CyberDuck is one of these solutions and it is easy to configure.
 
 **This guide will explain how to configure Cyberduck to manage your Object Storage using a graphical interface based on the Openstack APIs.**
+
+> [!warning]
+>
+> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+>
 
 ## Requirements
 

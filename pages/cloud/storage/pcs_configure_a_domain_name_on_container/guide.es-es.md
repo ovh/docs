@@ -2,7 +2,7 @@
 title: Colocar un contenedor de Object Storage detrás de un nombre de dominio
 excerpt: Colocar un contenedor de Object Storage detrás de un nombre de dominio
 slug: colocar_un_contenedor_de_object_storage_detras_de_un_nombre_de_dominio
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g2006
 ---
 
@@ -61,11 +61,11 @@ Para que sea entendido por el Object Storage, el CNAME debe respetar las siguien
 ```
 
 
-Por ejemplo, para un contenedor llamado «staticct» y un proyecto «123xxxx456» localizado en SBG1:
+Por ejemplo, para un contenedor llamado «staticct» y un proyecto «123xxxx456» localizado en SBG:
 
 
 ```
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -73,7 +73,7 @@ Así pues, el registro DNS en este caso será:
 
 
 ```
-static IN CNAME staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+static IN CNAME staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -98,11 +98,11 @@ Al igual que el CNAME, debe respetar las siguientes reglas (no olvide sustituir 
 ```
 
 
-Por ejemplo, para un contenedor llamado «staticct» y un proyecto «123xxxx456» localizado en SBG1:
+Por ejemplo, para un contenedor llamado «staticct» y un proyecto «123xxxx456» localizado en SBG:
 
 
 ```
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -110,7 +110,7 @@ Así pues, el registro DNS en este caso será:
 
 
 ```
-_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -118,7 +118,7 @@ Si no quiere utilizar un subdominio, puede hacer lo siguiente:
 
 
 ```
-_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -126,9 +126,9 @@ Por último, hay que añadir un registro A para el (sub)dominio apuntando a la d
 
 
 ```
-dig storage.sbg1.cloud.ovh.net
-dig storage.gra1.cloud.ovh.net
-dig storage.bhs1.cloud.ovh.net
+dig storage.sbg.cloud.ovh.net
+dig storage.gra.cloud.ovh.net
+dig storage.bhs.cloud.ovh.net
 ```
 
 

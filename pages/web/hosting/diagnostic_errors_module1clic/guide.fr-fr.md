@@ -31,7 +31,7 @@ Si certains pré-requis ne sont pas remplis, la création d'un [Module en 1 clic
 
 > [!primary]
 >
-> Nous indiquons ici les erreurs les plus courantes. Si vous rencontrez une autre anomalie, consultez notre [FAQ sur les hébergements Web](../faq-hebergement/).
+> Nous indiquons ici les erreurs les plus courantes. Si vous rencontrez une autre anomalie, consultez notre [FAQ sur les hébergements Web](https://docs.ovh.com/fr/hosting/faq-hebergement/).
 >
 
 ### « Une erreur s'est produite lors du chargement des informations (You need at least one free database) »
@@ -51,7 +51,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Les offres [Pro2014](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/).
+Les offres [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/).
 
 #### Solution n°2 : supprimer une base de données non utilisée <a name="supprimer-la-base"></a>
 
@@ -79,7 +79,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 Pour installer votre module sur une base de données déjà utilisée, vous devrez utiliser le [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) d'installation d'un nouveau **Module en 1 clic**.
 
-Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovhcloud.com/fr/web-hosting/).
+Pour retrouver les identifiants de votre base de données, consultez ce [guide](../modules-en-1-clic/#configurer-le-module).
 
 > [!primary]
 >
@@ -123,7 +123,7 @@ Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-h
 
 Après avoir lancé l'installation de votre module en mode avancé, vous avez reçu un e-mail indiquant que votre module ne peut pas se connecter à la base de données indiquée.
 
-Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez notre [FAQ](https://www.ovhcloud.com/fr/web-hosting/).
+Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez ce [guide](../hosting/modules-en-1-clic/#configurer-le-module).
 
 Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
 
@@ -139,7 +139,7 @@ Votre base de données ne peut plus être modifiée car la quantité de données
 
 Dans cette situation, installez votre module en passant par le [mode « simple »](../modules-en-1-clic/#installation-simple-dun-module) ou choisissez une autre base de données lors de son installation en mode avancé. Si besoin, commandez une [offre de bases de données](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) complémentaire.
 
-Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [importez une copie de votre base](../exportation-bases-donnees/#en-pratique) puis supprimez les données inutiles.
+Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [importez localement une copie de votre base](../exportation-bases-donnees/#en-pratique) puis supprimez les données inutiles.
 
 > [!warning]
 >
@@ -149,7 +149,7 @@ Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas 
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
-### « Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES) »
+### « Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES) »
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
@@ -158,6 +158,16 @@ Vous avez lancé l'installation d'un module en 1 clic en [mode avancé](../modul
 Dans cette situation, modifiez tout d'abord les [droits de l'utilisateur](../creer-bases-de-donnees-et-utilisateurs/#gerer-les-droits-des-utilisateurs) concerné, afin qu'il dispose des droits **Administrateur** ou en **Lecture/écriture** sur la base de données.
 
 Vérifiez également ses identifiants en vous [connectant directement](../connexion-base-de-donnees-serveur-bdd/#en-pratique) à votre serveur de bases de données puis relancez l'installation de votre module.
+
+### Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'
+
+![cant_connect_server](images/cant_connect_server.png){.thumbnail}
+
+Vous avez lancé l'installation d'un module en 1 clic en [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) sur une base de données située sur un [serveur SQL privé](../premiers-pas-avec-sql-prive/) ou [CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/). Vous avez reçu ce message d'erreur par e-mail. Il signifie que le nom de serveur de bases de données que vous avez indiqué est incorrect.
+
+Cliquez sur la partie `Web cloud`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sur l'onglet `Bases de données`{.action} à gauche de votre écran.
+
+Cliquez ensuite sur l'offre concernée : le nom du serveur à utiliser est indiqué sous la mention `Nom d'hôte` dans la sous-partie `SQL` de `Informations de connexion`.
 
 ### Votre nom de domaine n'est pas proposé lors de la création du module
 
