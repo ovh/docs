@@ -3,6 +3,7 @@ title: 'vRack auf Ihren Dedicated Servern konfigurieren'
 slug: mehrere-dedizierte-server-im-vrack-konfigurieren
 excerpt: 'Erfahren Sie hier, wie Sie ein vRack auf zwei oder mehr Servern einrichten'
 section: vRack
+order: 01
 ---
 
 > [!primary]

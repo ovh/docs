@@ -3,6 +3,7 @@ title: 'Configurar varios servidores dedicados en el vRack'
 slug: configurar-vrack-en-servidor-dedicado
 excerpt: 'Cómo configurar varios servidores dedicados en el vRack'
 section: vRack
+order: 01
 ---
 
 > [!primary]

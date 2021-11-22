@@ -23,9 +23,9 @@ The default DNS server configured on instances you create will be the OVHcloud s
 
 ## Requirements
 
-- a [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
-- administrative access (root) to the instance via SSH or RDP
-- basic networking and administration knowledge
+- A [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
+- Administrative access (root) to the instance via SSH or RDP
+- Basic networking and administration knowledge
 
 ## Instructions
 

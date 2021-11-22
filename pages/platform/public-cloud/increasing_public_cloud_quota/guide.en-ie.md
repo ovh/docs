@@ -20,8 +20,8 @@ To be able to use additional resources and projects, the quotas need to be incre
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- a [valid payment method](../../billing/manage-payment-methods/) registered in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A [valid payment method](../../billing/manage-payment-methods/) registered in your OVHcloud account
 
 ## Instructions
 
