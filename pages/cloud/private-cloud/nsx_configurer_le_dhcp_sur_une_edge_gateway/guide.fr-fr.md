@@ -56,7 +56,7 @@ Dans la fenêtre Nouveau DHCP Pool , remplissez les informations nécessaires :
 - Serveur de noms principal et secondaire sont vos paramètres dns personnalisés (vous pouvez activez la configuration automatique dns)
 - Passerelle par défaut est également optionnelle
 - Masque de sous-réseau
-- Vous pouvez activer la non expiration des baux ou leur duréé si besoin.
+- Vous pouvez activer la non expiration des baux ou modifier leur duréé si besoin.
 - D'autres options avancées sont dans la section `Options DHCP`{.action} mais sont hors du cadre de ce guide
 
 ![Pool](images/en04pool.png){.thumbnail}
@@ -75,7 +75,7 @@ Le status du service et les informations basiques sont visibles.
 ### Menu Liaisons
 
 Sur la gauche, cliquez sur `Liaisons`{.action}.    
-Cette option réserve une address IP à une interface réseau particulière en fonction d'informations spécifiques.    
+Cette option réserve une addresse IP à une interface réseau particulière en fonction d'informations spécifiques.    
 Cliquez sur `+ Ajouter`{.action} quand vous êtes prêts.
 
 ![Bind](images/en06bind.png){.thumbnail}
@@ -90,11 +90,11 @@ Pour la liaison de carte réseau de VM, entrez les informations suivantes:
 - Nom de la VM: VM cible
 - Index VM vNIC: Nom de la carte réseau cible
 - Nom d'hôte 
-- IP Address: Addresse réservée
+- Addresse IP: Addresse réservée
 - Masque de sous-réseau
 - Nom de domaine (option)
 - Passerelle par défaut (option)
-- Vous pouvez activer la non expiration des baux ou leur duréé si besoin.
+- Vous pouvez activer la non expiration des baux ou modifier leur duréé si besoin.
 
 ![Bind](images/en07vnicbind.png){.thumbnail}
 
@@ -108,11 +108,11 @@ Cliquez sur `+ Ajouter`{.action} et sélectionnez Utiliser la liaison MAC.
 
 - Adresse MAC: Adresse MAC de la carte réseau cible  
 - Nom d'hôte 
-- IP Address: Addresse réservée
+- Addresse IP: Addresse réservée
 - Masque de sous-réseau
 - Nom de domaine (option)
 - Passerelle par défaut (option)
-- Vous pouvez activer la non expiration des baux ou leur duréé si besoin.
+- Vous pouvez activer la non expiration des baux ou modifier leur duréé si besoin.
 
 ![Bind](images/en09macbind.png){.thumbnail}
 
@@ -132,36 +132,36 @@ Les Liaisons DHCP et leurs paramètres de base sont maintenant visibles.
 
 ### Menu Relais
 
-For our last option, click on `Relay`{.action}.   
-*The set up of a DCHP relay implies the existence of routes to the target DHCP servers*    
-We'll first create the Global Configuration by clicking `Edit`{.action}.    
+Pour la dernière option, cliquez sur `Relais`{.action}.   
+*L'ajout d'un relai DHCP induit la présente de routage existant vers les serveurs DHCP*    
+Nous allons d'abord `Modifier`{.action} la Configuration globale.    
 
 ![Relay](images/en13relay.png){.thumbnail}
 
-You can add:
-- pre existing IP sets set up in your NSX Edge Services Gateway
-- IP adresses of DHCP servers
-- Domain Names
+Vous pouvez ajouter:
+- Des objets prédéfinis dans votre NSX Edge Services Gateway
+- Les addresses IP de serveurs DHCP
+- Des noms de domaines
 
-Click `Save`{.action} when ready.
+Cliquez sur `Enregistrer`{.action} quand tout est rempli.
 
 ![Relay](images/en14relayset.png){.thumbnail}
 
-Now click `+ Add`{.action} to set up an agent.     
+Cliquez sur `+ Ajouter`{.action} pour paramètrer un agent.     
 
 ![Relay](images/en15agentadd.png){.thumbnail}
 
-The vNIC will be the Edge Services Gateway interface that will forward the dhcp requests.    
-The Gateway Address is the adress that will forward the requests.    
-Click `Add`{.action}.
+La vNIC sera l'interface de la Edge Services Gateway qui fera suivre les requêtes DHCP.    
+L'Adresse IP de la passerelle est celle qui fera suivre les requêtes également.    
+Cliquez sur `Ajouter`{.action}.
 
 ![Relay](images/en16agent.png){.thumbnail}
 
-We will then `Publish`{.action} the changes.
+`Publier`{.action} pour enregistrer les changements.
 
 ![Relay](images/en17publish.png){.thumbnail}
 
-Your DHCP Relay is now functional after a short wait.
+Votre relai DHCP fonctionne après un petit temps d'attente.
 
 ![Relay](images/en18done.png){.thumbnail}
 
