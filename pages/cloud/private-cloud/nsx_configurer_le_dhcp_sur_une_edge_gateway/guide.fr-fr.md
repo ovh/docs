@@ -16,7 +16,8 @@ Le DHCP permet une attribution automatique d'IPs aux machines virtuelles résida
 
 ## Prérequis
 
-- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 
 ## En pratique
 
@@ -71,65 +72,65 @@ Le status du service et les informations basiques sont visibles.
 ![Pool](images/en05started.png){.thumbnail}
 
 
-### Menu Bindings
+### Menu Liaisons
 
-Now on the left side, click on `Bindings`{.action}.    
-Bindings will always assign the same dhcp address to a specific network interface, depending on a specific information.    
-Click on `+ Add`{.action} when ready.
+Sur la gauche, cliquez sur `Liaisons`{.action}.    
+Cette option réserve une address IP à une interface réseau particulière en fonction d'informations spécifiques.    
+Cliquez sur `+ Ajouter`{.action} quand vous êtes prêts.
 
 ![Bind](images/en06bind.png){.thumbnail}
 
-There are 2 ways to create bindings:
-- VM NIC Binding: the IP address will be set for a specific VM network interface
-- MAC Binding: the IP address will be set for a specific MAC address
+Il y a 2 façons de créer une liaison:
+- Utiliser la liaison de carte réseau de VM
+- Utiliser la liaison MAC
 
-For VM NIC Binding, type in the information as follow
+Pour la liaison de carte réseau de VM, entrez les informations suivantes:
 
-- Interface: Edge Services Gateway interface that will be distributing the address
-- VM Name: VM that will receive the address
-- VM vNIC Index: Which network adapter on the VM will be assigned the address
-- Host Name: DNS name of the VM (optional)
-- IP Address: Address reserved for the NIC
-- Subnet Mask: Subnet mask
-- Domain Name: Domain name (optional)
-- Default Gateway: Default Gateway
-- You can set never ending leases or mofify lease times if that's a requirement
+- Interface: l'interface de l'Edge Services Gateway qui distribuera les addresses
+- Nom de la VM: VM cible
+- Index VM vNIC: Nom de la carte réseau cible
+- Nom d'hôte 
+- IP Address: Addresse réservée
+- Masque de sous-réseau
+- Nom de domaine (option)
+- Passerelle par défaut (option)
+- Vous pouvez activer la non expiration des baux ou leur duréé si besoin.
 
 ![Bind](images/en07vnicbind.png){.thumbnail}
 
-Don't forget your `DNS Settings`{.action}.    
-They can be put manually or configured automatically.     
-Click on `Save`{.action} when done.
+N'oubliez pas vos `Paramètres DNS`{.action}.    
+Vous pouvez les rentrez manuellement ou les configurer automatiquement.     
+Cliquez sur `Ajouter`{.action}.
 
 ![Bind](images/en08binddns.png){.thumbnail}
 
-Now we'll click on `+ Add`{.action} again but will chose Use MAC Binding.
+Cliquez sur `+ Ajouter`{.action} et sélectionnez Utiliser la liaison MAC.
 
-- MAC Address: Target NIC MAC address 
-- Host Name: DNS name of the VM (optional)
-- IP Address: Address reserved for the NIC
-- Subnet Mask: Subnet mask
-- Domain Name: Domain name (optional)
-- Default Gateway: Default Gateway
-- You can set never ending leases or mofify lease times if that's a requirement
+- Adresse MAC: Adresse MAC de la carte réseau cible  
+- Nom d'hôte 
+- IP Address: Addresse réservée
+- Masque de sous-réseau
+- Nom de domaine (option)
+- Passerelle par défaut (option)
+- Vous pouvez activer la non expiration des baux ou leur duréé si besoin.
 
 ![Bind](images/en09macbind.png){.thumbnail}
 
-Again, do not forget your `DNS Settings`{.action}.    
-Click on `Save`{.action} when done.
+N'oubliez toujours pas vos `Paramètres DNS`{.action}.       
+Cliquez sur `Ajouter`{.action}.
 
 ![Bind](images/en10autodns.png){.thumbnail}
 
-We will now `Publish`{.action} our changes.
+`Publier`{.action} vos changements.
 
 ![Bind](images/en11publish.png){.thumbnail}
 
-The DHCP Bindings and their basic settings are now visible.
+Les Liaisons DHCP et leurs paramètres de base sont maintenant visibles.
 
 ![Bind](images/en12done.png){.thumbnail}
 
 
-### Menu Relay
+### Menu Relais
 
 For our last option, click on `Relay`{.action}.   
 *The set up of a DCHP relay implies the existence of routes to the target DHCP servers*    
