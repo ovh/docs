@@ -27,8 +27,9 @@ The IPv4 prefix matches the following rules:
 * the 3 first IP are reserved for OVHcloud: the first one for VIP, the two others for OVHcloud routers
 * no vlan tag
 
-A subnet can also be configured for a static route using the optional the `next-hop` field: `next-hop` is the IP address of the next-hop to reach the subnet (i.e the next-hop is acting as a router, like a firewall).<br>
-Next-hop must be part of another subnet.
+A subnet can also be configured for a static route using the optional `next-hop` field: `next-hop` is the IP address of the next-hop to reach the subnet (i.e the next-hop is acting as a router, like a firewall).<br>
+Next-hop must be part of another subnet.<br> 
+Subnet for static routing are limited in size (i.e not limited to /24).
 
 ### SPN - SecurePrivateNetwork
 

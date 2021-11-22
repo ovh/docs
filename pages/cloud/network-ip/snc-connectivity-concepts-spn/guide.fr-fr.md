@@ -35,6 +35,8 @@ Un sous-réseau peut également être configuré pour une route statique en util
 
 Le next-hop doit faire partie d'un autre sous-réseau.
 
+Un sous-réseau routé statiquement n'est pas limité en taille (c'est-à-dire qu'il peut être supérieur à /24).
+
 ### SPN - SecurePrivateNetwork
 
 SPN est le conteneur des sous-réseaux qui agissent comme une instance de routage (unique).
