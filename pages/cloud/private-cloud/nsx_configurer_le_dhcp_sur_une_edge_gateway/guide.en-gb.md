@@ -45,7 +45,7 @@ Let's start with `Pools`{.action}. Click on it.
 
 ![NSX](images/en03dhcpadd.png){.thumbnail}
 
-### Menu "Pools"
+### Menu Pools
 
 The `Pools`{.action} menu allows the traditional setup of the DHCP service.    
 We'll set up a scope for it and will start the service.
@@ -74,28 +74,31 @@ You can see the service status and the basic information on the pool.
 ![Pool](images/en05started.png){.thumbnail}
 
 
-### Menu "Bindings"
+### Menu Bindings
 
-Now on the left side, click on `Bindings`{.action}
+Now on the left side, click on `Bindings`{.action}.    
+Bindings will always assign the same dhcp address to a specific network interface, depending on a specific information.    
+Click on `+ Add`{.action} when ready.
 
-![](images/DHCP5.PNG){.thumbnail}
+![Bind](images/en06bind.png){.thumbnail}
 
+There are 2 ways to create bindings:
+- VM NIC Binding: the IP address will be set for a specific VM network interface
+- MAC Binding: the IP address will be set for a specific MAC address
 
-VM NIC Binding :
+For VM NIC Binding, type in the information as follow
 
-- "Interface" : interface de la Edge concernée ;
-- "VM Name" : nom de la machine virtuelle ;
-- "VM vNIC Index" : adaptateur réseau de la Edge ;
-- "Host Name" : nom de la machine virtuelle ;
-- "IP Address" : adresse IP attribuée à la carte réseau ;
-- "Subnet Mask" : masque de sous-réseau attribué à la carte réseau ;
-- "Domain name" : nom de domaine attribué à la carte réseau ;
-- "Primary Name Server" : DNS primaire attribué à la carte réseau si la case "Auto Configure DNS" est décochée ;
-- "Secondary Name Server" : DNS secondaire attribué à la carte réseau si la case "Auto Configure DNS" est décochée ;
-- "Default Gateway" : passerelle par défaut attribuée à la carte réseau ;
-- "Lease Time" : durée du bail DHCP en seconde (par défaut 86400) si la case "Lease Never Expires" n'est pas cochée.
+- Interface: Edge Services Gateway interface that will be distributing the address
+- VM Name: VM that will receive the address
+- VM vNIC Index: Which network adapter on the VM will be assigned the address
+- Host Name: DNS name of the VM (optional)
+- IP Address: Address reserved for the NIC
+- Subnet Mask: Subnet mask
+- Domain Name: Domain name (optional)
+- Default Gateway: Default Gateway
+- You can set never ending leases or mofify lease times if that's a requirement
 
-![](images/DHCP6.PNG){.thumbnail}
+![Bind](images/en07vnicbind.png){.thumbnail}
 
 MAC Binding :
 
