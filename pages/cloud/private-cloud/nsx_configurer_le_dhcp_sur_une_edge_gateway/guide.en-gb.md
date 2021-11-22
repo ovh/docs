@@ -38,8 +38,7 @@ In the `DHCP`{.action} tab,  you'll see 3 options:
 - Bindings
 - Relay
 
-We'll set up the first two (Pools & Bindings) in this guide.    
-Relay is a more unusual setup that will be treated seperately.
+We'll set up those 3 services in this guide.    
 
 Let's start with `Pools`{.action}. Click on it.
 
@@ -130,6 +129,27 @@ We will now `Publish`{.action} our changes.
 The DHCP Bindings and their basic settings are now visible.
 
 ![Bind](images/en12done.png){.thumbnail}
+
+
+### Menu Relay
+
+To finish, click on `Relay`{.action}.    
+We'll first create the Global Configuration by clicking `Edit`{.action}.    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Click on `+ Add`{.action} when ready.
 
 
 Si nous prenons un exemple de chaque règles nous obtenons :
