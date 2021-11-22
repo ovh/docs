@@ -100,19 +100,31 @@ For VM NIC Binding, type in the information as follow
 
 ![Bind](images/en07vnicbind.png){.thumbnail}
 
-MAC Binding :
+Don't forget your `DNS Settings`{.action}.    
+They can be put manually or configured automatically.     
+Click on `Save`{.action} when done.
 
-- "MAC Address" : adresse MAC de la carte réseau de la machine virtuelle ;
-- "Host Name" : nom de la machine virtuelle ;
-- "IP Address" : adresse IP attribuée à la carte réseau ;
-- "Subnet Mask" : masque de sous-réseau attribué à la carte réseau ;
-- "Domain name" : nom de domaine attribué à la carte réseau ;
-- "Primary Name Server" : DNS primaire attribué à la carte réseau si la case "Auto Configure DNS" est décochée ;
-- "Secondary Name Server" : DNS secondaire attribué à la carte réseau si la case "Auto Configure DNS" est décochée ;
-- "Default Gateway" : passerelle par défaut attribuée à la carte réseau ;
-- "Lease Time" : durée du bail DHCP en secondes (par défaut 86400) si la case "Lease Never Expires" n'est pas cochée.
+![Bind](images/en08binddns.png){.thumbnail}
 
-![](images/DHCP7.PNG){.thumbnail}
+Now we'll click on `+ Add`{.action} again but will chose Use MAC Binding.
+
+- MAC Address: Target NIC MAC address 
+- Host Name: DNS name of the VM (optional)
+- IP Address: Address reserved for the NIC
+- Subnet Mask: Subnet mask
+- Domain Name: Domain name (optional)
+- Default Gateway: Default Gateway
+- You can set never ending leases or mofify lease times if that's a requirement
+
+![Bind](images/en09macbind.png){.thumbnail}
+
+Again, do not forget your `DNS Settings`{.action}.    
+Click on `Save`{.action} when done.
+
+![Bind](images/en10autodns.png){.thumbnail}
+
+
+
 
 Si nous prenons un exemple de chaque règles nous obtenons :
 
