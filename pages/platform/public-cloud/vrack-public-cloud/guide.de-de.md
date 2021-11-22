@@ -66,7 +66,7 @@ Sie können einfach von unserer Webseite [aus auf die](https://api.ovh.com/) API
 
 So können Sie grundlegende Tasks frei automatisieren, mit Skripten, optimieren Sie Ihre eigenen Funktionen usw.
 
-Lesen Sie die [Anleitung Erste Schritte mit den OVHcloud APIs](../../api/api-premiers-pas/)(EN), um sich mit der Verwendung der OVHcloud APIv6 vertraut zu machen.
+Lesen Sie die [Anleitung Erste Schritte mit den OVHcloud APIs](../../api/first-steps-with-ovh-api/)(EN), um sich mit der Verwendung der OVHcloud APIv6 vertraut zu machen.
 
 ### OpenStack API
 
@@ -126,7 +126,7 @@ Um die Konfiguration des vRack über das OVHcloud Kundencenter fortzusetzen, les
 
 #### Über die OVHcloud APIv6
 
-Um einen vRack mit der OVHclow APIv6 zu aktivieren und zu verwalten, lesen Sie bitte [diesen Abschnitt](../public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) (EN) des entsprechenden Leitfadens.
+Um einen vRack mit der OVHclow APIv6 zu aktivieren und zu verwalten, lesen Sie bitte [diesen Abschnitt](../public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack)(EN) des entsprechenden Leitfadens.
 
 ### Schritt 2: Erstellen eines VLAN im vRack
 
@@ -180,7 +180,7 @@ Bestätigen Sie die gewünschten Regionen, geben Sie einen Namen für Ihr privat
 
 #### Erstellen eines VLAN mit der OVHclove APIv6
 
-Um ein VLAN mit der OVHCloud APIv6 zu erstellen, lesen Sie bitte [diesen Abschnitt](../public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN) des entsprechenden Leitfadens.
+Um ein VLAN mit der OVHCloud APIv6 zu erstellen, lesen Sie bitte [diesen Abschnitt](../public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1)(EN) des entsprechenden Leitfadens.
 
 ### Schritt 3: Instanz in das vRack integrieren
 
@@ -204,7 +204,7 @@ Die Anleitung [Erstellen der ersten Public Cloud-Instanz](../public-cloud-erste-
 
 ##### **Über die OVHcloud APIv6**
 
-Bitte lesen Sie [diesen Abschnitt](../public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) (EN).
+Bitte lesen Sie [diesen Abschnitt](../public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1)(EN).
 
 ##### **Über die OpenStack-APIs**
 
@@ -247,7 +247,7 @@ nova net-list
 ><br> - Der für Ihre Konfiguration erforderliche(n) VLAN
 >
 
-Beachten Sie auch die folgenden Informationen, wie im [Benutzerhandbuch der Nova API](../starting-with-nova-api/) (EN) angegeben:
+Beachten Sie auch die folgenden Informationen, wie im [Benutzerhandbuch der Nova API](../starting-with-nova-api/)(EN) angegeben:
 
 - ID oder Name des OpenStack SSH Keys
 - ID des Instanz-Typs (flavor)
@@ -602,8 +602,8 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ##  Weiterführende Informationen
 
-[Konfiguration von vRack für die öffentliche Cloud mit OVHclow APIv6](../public-cloud-vrack-apiv6) (EN)
+[Konfiguration von vRack für die öffentliche Cloud mit OVHclow APIv6](../public-cloud-vrack-apiv6)(EN).
 
-[Mehrere VLANs im vRack erstellen](../../dedicated/vrack-vlan-erstellen/)
+[Dedicated Server - Mehrere VLANs im vRack erstellen](../../dedicated/vrack-vlan-erstellen/).
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

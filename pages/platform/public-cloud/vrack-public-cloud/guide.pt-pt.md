@@ -67,7 +67,7 @@ Pode simplesmente aceder às API a partir da [nossa página web](https://api.ovh
 
 Assim, poderá automatizar livremente as tarefas de base através de scripts, otimizar as suas próprias funções, etc..
 
-Consulte o guia [Primeiros passos com as API OVHcloud](../../api/first-steps-with-ovh-api/) (EN) para se familiarizar com a utilização das APIv6 OVHcloud.
+Consulte o guia [Primeiros passos com as API OVHcloud](../../api/first-steps-with-ovh-api/)(EN) para se familiarizar com a utilização das APIv6 OVHcloud.
 
 ### API OpenStack
 
@@ -127,7 +127,7 @@ Para continuar a configuração do vRack a partir da Área de Cliente OVHcloud, 
 
 #### A partir das APIv6 OVHcloud
 
-Para ativar e gerir um vRack a partir das APIv6 OVHcloud, clique [aqui](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) para consultar o guia específico deste método.
+Para ativar e gerir um vRack a partir das APIv6 OVHcloud, clique [aqui](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack)(EN) para consultar o guia específico deste método.
 
 ### Etapa 2: Criar uma VLAN no vRack
 
@@ -181,7 +181,7 @@ Valide as diferentes regiões pretendidas, introduza um nome para a sua rede pri
 
 #### Criar uma VLAN a partir da APIv6 OVHcloud
 
-Para criar uma VLAN a partir da APIv6 OVHcloud, clique [aqui](../public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) para consultar o guia específico deste método.
+Para criar uma VLAN a partir da APIv6 OVHcloud, clique [aqui](../public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1)(EN) para consultar o guia específico deste método.
 
 ### Etapa 3: Integrar uma instância no vRack
 
@@ -205,7 +205,7 @@ Consulte o guia [Criar uma instância a partir da Área de Cliente](../public-cl
 
 ##### **A partir da APIv6 OVHcloud**
 
-Clique [aqui](../public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) para consultar o guia específico deste método.
+Clique [aqui](../public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1)(EN) para consultar o guia específico deste método.
 
 ##### **A partir da API OpenStack**
 
@@ -402,7 +402,7 @@ Na pop-up que aparecer, selecione a ou as redes privadas a associar à sua inst�
 
 ##### **Gestão das interfaces de rede a partir da APIv6 OVHcloud**
 
-Clique [aqui](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) para consultar o guia específico deste método.
+Clique [aqui](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1)(EN) para consultar o guia específico deste método.
 
 ##### **Gestão das interfaces de rede a partir do OpenStack Horizon**
 
@@ -605,7 +605,7 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Quer saber mais?
 
-[Configuração do vRack Public Cloud a partir das APIv6 OVHcloud.](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/)(EN)
+[Configuração do vRack Public Cloud a partir das APIv6 OVHcloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/)(EN).
 
 [Servidores dedicados - Criar várias VLAN no vRack](../../dedicated/criar-vlan-vrack/).
 
