@@ -14,7 +14,7 @@ order: 09
 ## Objectif
 
 Le gestionnaire de mises à jour de VMware permet de maintenir vos hôtes à jour en installant les Bug Fixes et Patch de Sécurité sans intervention de nos équipes.     
-*Les mises à jours de vCenter ou les mises à jours majeures nécessitent toujours notre présence*
+*Les mises à jours de vCenter ou les mises à jours majeures nécessitent toujours notre participation*
 
 **Ce guide explique le fonctionnement de cet outil**
 
