@@ -1,5 +1,5 @@
 ---
-title: Verwaltung von Archiven über einen Swift-Client
+title: Verwaltung von Archiven über einen Swift-Client (Cyberduck)
 slug: pca/cyberduck
 excerpt: Erfahren Sie hier, wie Sie Cyberduck konfigurieren, um Ihre Public Cloud Archive verwalten zu können
 section: Public Cloud Archive
