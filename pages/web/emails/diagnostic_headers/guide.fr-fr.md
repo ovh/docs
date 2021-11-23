@@ -34,9 +34,9 @@ order: 03
 
 ## Objectif
 
-L'en-tête a pour rôle de retracer le chemin emprunté par votre e-mail sur le réseau, de l'expéditeur au destinataire. Il peut être utilie pour identifier un e-mail malveillant.
+Un en-tête mail a pour rôle de retracer le chemin emprunté par celui-ci sur le réseau, de l'expéditeur au destinataire. A titre d'exemples, il peut être utile pour identifier un e-mail malveillant ou détecter une lenteur de réception.
 
-Chaque e-mail reçu possède un en-tête (*header*). Il ne s'affiche pas par défaut lorsque vous consultez votre e-mail, Il existe néanmoins un moyen de l'afficher sur votre client de messagerie. 
+Chaque e-mail reçu possède un en-tête (*header*) qui ne s'affiche pas par défaut lorsque vous consultez votre e-mail. Vous pouvez toutefois le récupérer sur votre client de messagerie ou votre webmail.
 
 Il est également possible d'extraire l'e-mail dans son intégralité sous forme de fichier `.eml`. Ce fichier peut vous être demandé pour analyser un e-mail malveillant que vous avez reçu. Pour récupérer un fichier `.eml`, consultez notre rubrique [Webmail](#webmail)
 
@@ -51,17 +51,19 @@ Il est également possible d'extraire l'e-mail dans son intégralité sous forme
 
 ### Comprendre le contenu d'un en-tête
 
-L'en-tête d'un e-mail est composé de plusieurs éléments indiquant le cheminement de l'e-mail dans un ordre chronologique, ainsi que des informations supplémentaires. Vous trouvez ci-dessous une liste non exhaustive des éléments que vous pouvez trouver dans un en-tête ainsi que leur signification. 
+L'en-tête d'un e-mail est composé de plusieurs éléments indiquant le cheminement de l'e-mail dans un ordre antéchronologique, ainsi que des informations supplémentaires. Vous trouvez ci-dessous une liste non exhaustive des éléments que vous pouvez trouver dans un en-tête ainsi que leur signification. 
 
 - Le champ `Received` est présent dans l'entête à chaque passage de l'e-mail sur un serveur d'envoi (SMTP). On retrouve généralement le nom d'hôte du serveur avec son adresse IP et la date. Les champs `Received` sont classés du dernier passage au premier passage:
 
-**Exemple de champ Received**
+
 <pre class="console"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
 	for <john@mydomain.ovh>; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
  
 </code></pre>
+
+  *Ici l'e-mail a été transmis du serveur mxplan7.mail.ovh.net vers le serveur mo3005.mail-out.ovh.net le 30 juin 2021 à 13:12:40 (Fuseau horaire UTC)*
 
 - Le champ `Return-Path` correspond à l'adresse de retour lors d'un échec à l'envoi. l'adresse de retour est généralement celle qui a réalisé l'envoi. 
 
