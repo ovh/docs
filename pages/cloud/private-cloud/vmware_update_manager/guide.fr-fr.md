@@ -41,12 +41,12 @@ Dans la section `Mode de maintenance`{.action}, selectionnez `Passer en mode de 
 ![Maintenance](images/en02maintenance.png){.thumbnail}
 
 
-Assurer vous que la case est cochée dans l'écran suivant puis cliquez sur `OK`{.action}.
+Assurez-vous que la case est cochée dans l'écran suivant puis cliquez sur `OK`{.action}.
 
 ![Maintenance](images/en03enter.png){.thumbnail}
 
 
-En supposant que DRS est actif, vos VMs de production seront migrée vers un autre hôte.    
+En supposant que DRS est actif, vos VMs de production seront migrées vers un autre hôte.    
 *Si vous avez personnalisé votre environnement, vous pourriez devoir effectuer manuellement les migrations des VMs*
 L'avertissement suivant peut apparaitre.     
 
@@ -62,19 +62,19 @@ Votre hôte est désormais en mode de maintenance.
 ### Mises à jour
 
 Selectionnez votre hôte et allez dans la section `Mises à jour`{.action}.   
-Vous voyez les différent status de base et la conformité de l'hôte.     
-Avant de se réjouir, vous allez devoir appliquer un ligne de base pour vérifier la conformité.
+Vous voyez les différents statuts de base et la conformité de l'hôte.     
+Avant de se réjouir, vous allez devoir appliquer une ligne de base pour vérifier la conformité.
 
 ![Update](images/en06summary.png){.thumbnail}
 
 
-Dans la section Lignes de base attachées, cliquez sur `Attacher`{.action} then `Attacher une ligne de base ou un groupe de...`{.action}.
+Dans la section Lignes de base attachées, cliquez sur `Attacher`{.action} puis `Attacher une ligne de base ou un groupe de...`{.action}.
 
 ![Update](images/en07attach.png){.thumbnail}
 
-Il existe des lignes de bases prédéfinies pour les différents niveau de patching recommandés.    
-*Nous utilisons les correctifs critiques dans notre exemple mais vous pouvez utiliser les deux lignes existantes ou en créer d'autres à votre convenance pour couvrir différents besoins de votre environement*       
-Selectionnez la ligne de base requise puis cliquez sur `Attacher`{.action}
+Il existe des lignes de bases prédéfinies pour les différents niveau de correctifs recommandés.    
+*Nous utilisons les correctifs critiques dans notre exemple mais vous pouvez utiliser les deux lignes existantes ou en créer d'autres à votre convenance pour couvrir les différents besoins de votre environement*       
+Sélectionnez la ligne de base requise puis cliquez sur `Attacher`{.action}
 
 ![Update](images/en08define.png){.thumbnail}
 
@@ -88,17 +88,17 @@ Retournez dans la section Lignes de base attachées, sélectionnez toutes les li
 ![Update](images/en10remediate.png){.thumbnail}
 
 
-Selectionnez l'hôte et cliquer encore sur `Corriger`{.action} again.
+Sélectionnez l'hôte et cliquer encore sur `Corriger`{.action} again.
 
 ![Update](images/en11remediate.png){.thumbnail}
 
 
-Le processus de mise à jour démarre et durera en fonction du nombre et de la taille des correctifs appliqués. Votre hôte ser redémarré automatiquement si nécessaire.
+Le processus de mise à jour démarre et durera en fonction du nombre et de la taille des correctifs appliqués. Votre hôte sera redémarré automatiquement si nécessaire.
 
 ![Update](images/en12remediating.png){.thumbnail}
 
 
-A la fin du processus, la vérification de conformité sera relancée (ou elle peut etre forcée en cliquant sur le lien) et une coche vrte devrait apparaitre.
+A la fin du processus, la vérification de conformité sera relancée (ou elle peut etre forcée en cliquant sur le lien) et une coche verte devrait apparaitre.
 
 ![Update](images/en13compliant.png){.thumbnail}
 
