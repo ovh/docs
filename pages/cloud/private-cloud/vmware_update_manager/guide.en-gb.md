@@ -1,39 +1,107 @@
 ---
-title: Use VMware Update Manager
-excerpt: ''
+title: VMware Update Manager
+excerpt: Updating your hosts with VMware Update Manager 
 slug: use_vmware_update_manager
 section: Maintenance and monitoring
+order: 09
 ---
 
+**Last Updated 23rd November 2021**
 
-## Prerequisites
-We will give you the Update Manager plug-in on the vSphere Client.
+## Objective
 
-You must have previously installed the vSphere Client on your machine:
+VMware Update Manager allows you to keep your hosts up to date by installing Bug Fixes and Security Patches without intervention from our team.     
 
--[Install the vSphere client]({legacy}600)
+> [!primary]
+> vCenter updates or major updates will still require our involvement.
 
-## IMPORTANT!!!
-If you use the RDP connection supplied when creating your account, it won't be necessary to install the Update Manager.
+**This guide will present the Update Manager functionalities**
 
+## Requirements
 
-## 
-To install the Update Manager, you must install the associated plug-in to your vSphere:
+- being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
-![](images/img_156.jpg){.thumbnail}
-You will then come to the plug-ins window and the Update Manager is at the bottom of this window. You can then click on "Download & install".
+## Instructions
 
-Once that's done you will have a new tab that will appear on the cluster and the hosts:
+### Maintenance Mode
 
-![](images/img_66.jpg){.thumbnail}
-After that all you need to do is click on the "Attach" button and select the type of update you want:
+Before working on a host, you'll need to put it in maintenance mode.
 
-![](images/img_67.jpg){.thumbnail}
-Once the baselines are selected and attached, you can perform a Patch and Upgrade scan:
+Indeed, patching often requires a restart of the host and would impact your live VMs.<br>    
+With that in mind, in the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.
 
-![](images/img_68.jpg){.thumbnail}
-You will then have a table that summarises the updates and patches available and the statistics of updated hosts.
-If you simply want to download updates without installing them you can use the "Transfer" button and if you then want to install it use the "Correct" button:
+![Maintenance](images/en01menu.png){.thumbnail}
 
-![](images/img_69.jpg){.thumbnail}
+On the left side, find your host and right-click on it.  
+In the `Maintenance Mode`{.action} section, select `Enter Maintenance Mode`{.action}.
 
+![Maintenance](images/en02maintenance.png){.thumbnail}
+
+Make sure the box in the following window is checked and click `OK`{.action}.
+
+![Maintenance](images/en03enter.png){.thumbnail}
+
+Assuming DRS is implemented, any live VM will be moved.
+
+> [!primary]
+> If you customized your environment, you may have to manually move live VMs from your host before putting it in Maintenance Mode.
+>
+
+You may see the following warning:     
+
+![Maintenance](images/en04warning.png){.thumbnail}
+
+Your host is now showing in maintenance mode.
+
+![Maintenance](images/en05maintenanced.png){.thumbnail}
+
+### Update Manager
+
+Select your host and go to the `Update`{.action} tab.
+
+You can see a summary of what is set and its compliance.     
+Before trusting what is shown, let's set the baseline against which compliance will be checked.
+
+![Update](images/en06summary.png){.thumbnail}
+
+In the `Attached Baselines` section, click on `Attach`{.action} then `Attach Baseline or Baseline Group`{.action}.
+
+![Update](images/en07attach.png){.thumbnail}
+
+There are predefined Baselines which are the recommended patching level for your hosts depending on criticality of the updates.
+
+> [!primary]
+> We'll be using the Critical Patches in this example but you can either use or create your own baselines. You can also apply several baselines to cover different scopes for a same host.
+
+Select the required baseline and click `Attach`{.action}.
+
+![Update](images/en08define.png){.thumbnail}
+
+Now, the compliance summary may look very different than it used to.     
+
+![Update](images/en09noncompliant.png){.thumbnail}
+
+Back in the `Attached Baselines` section, check the box to select all assigned baselines and click on `Remediate`{.action}.
+
+![Update](images/en10remediate.png){.thumbnail}
+
+Select the host and click on `Remediate`{.action} again.
+
+![Update](images/en11remediate.png){.thumbnail}
+
+The updating process starts and will last for a while. Your host will restart if needed.
+
+![Update](images/en12remediating.png){.thumbnail}
+
+Once the process has gone through, the compliance check will happen again (you can force it by clicking on the check compliance link) and you will see a green checkmark on the Compliance level.
+
+![Update](images/en13compliant.png){.thumbnail}
+
+Your host is now fully up-to-date.
+
+Don't forget to get it out of Maintenance Mode and it will be back in production.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

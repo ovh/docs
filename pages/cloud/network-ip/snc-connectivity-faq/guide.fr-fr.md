@@ -10,7 +10,7 @@ order: 05
 > Une version en langue anglaise de cette page est disponible [ici](https://docs.ovh.com/gb/en/network-ip/secnumcloud-connectivity-faq/).
 >
 
-**Dernière mise à jour le 18/11/2021**
+**Dernière mise à jour le 23/11/2021**
 
 ## FAQ SecNumCloud Connectivity
 
@@ -54,7 +54,7 @@ La liaison Inter DC repose sur la technologie MACsec et est donc chiffrée de bo
 
 ### Quel est le SLA pour le SPN ?
 
-La liaison Inter DC respecte le SLA Hosted Private Cloud SecNumCloud, qui garantit un taux de disponibilité des hosts Hosted Private Cloud de 99,99%.
+Le SPN respecte le SLA Hosted Private Cloud SecNumCloud, qui garantit un taux de disponibilité des hosts Hosted Private Cloud de 99,99%.
 
 ### Quel est le SLA de mon lien Inter DC ?
 

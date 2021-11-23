@@ -7,20 +7,17 @@ legacy_guide_number: g2006
 ---
 
 
-## 
+## Objective
+
 When you create a Public storage container anyone can access your data. It is the ideal solution for sharing files over the Internet but to do so you have to provide a long URL which is difficult to remember. 
 In addition, if you want to use this content on your own website it may be simpler to use your own domain name. This means you can share your data with a customised URL that is easier to remember. 
 
 This guide shows you how to configure a domain on your container.
 
-
 ## Prerequisites
 
-- [Add storage space](https://docs.ovh.com/gb/en/storage/pcs/create-container/)
+- [Add storage space](https://docs.ovh.com/ie/en/storage/pcs/create-container/)
 - A domain name
-
-
-
 
 ## In theory
 When OpenStack Object Storage receives an HTTP request, the host header is checked. If the host header differs from the current hostname, the system treats it as a mapped record and sends a DNS request for the full hostname. 

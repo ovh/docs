@@ -6,8 +6,8 @@ legacy_guide_number: g2006
 section: Object Storage Standard (Swift)
 ---
 
+## Obiettivo
 
-## 
 Quando crei un container di tipo Public, chiunque può accedere ai tuoi dati.
 È la soluzione ideale per condividere file via Internet, ad esempio con i tuoi amici, ma per farlo devi fornire un URL lungo e complicato da ricordare.
 In più, se vuoi pubblicare contenuti sul tuo sito, utilizzare il suo stesso dominio potrebbe risultare più semplice: in questo modo, infatti, puoi condividere i tuoi dati grazie a un URL personalizzato e quindi più semplice da ricordare.
@@ -19,8 +19,6 @@ Questa guida ti mostra come configurare un dominio sui tuoi container per facili
 
 - [Aggiungi storage al tuo Cloud](https://docs.ovh.com/gb/en/storage/pcs/create-container/)
 - un dominio
-
-
 
 
 ## In teoria
