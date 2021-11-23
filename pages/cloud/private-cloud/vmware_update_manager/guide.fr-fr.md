@@ -13,95 +13,99 @@ order: 09
 
 ## Objectif
 
-VMware Update Manager permet de maintenir vos hôtes à jour en installant les sans intervention de nos équipes. (Une mise à jour du vCenter ou majeure de votre hôte requiert une opération de notre part)
+Le gestionnaire de mises à jour de VMware permet de maintenir vos hôtes à jour en installant les Bug Fixes et Patch de Sécurité sans intervention de nos équipes.
+*Les mises à jours de vCenter ou les mises à jours majeures nécessitent toujours notre présence*
 
 **Ce guide explique le fonctionnement de cet outil**
 
+## Prérequis
+
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+
+
 ## En pratique
 
+### Mode de Maintenance
 
-## Instructions
-
-### Maintenance Mode
-
-Before working on a host, you'll need to put it in maintenance mode.    
-Indeed, patching often requires a restart of the host and would impact your live VMs.    
-With that in mind, in the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.
+Avant de travailler sur un hôte, vous devez le mettre en mode de maintenance.    
+En effet, patcher entraine un redémarrage de l'hôte la plupart du temps et cela limitera l'impact sur vos VMs de production.    
+Donc, dans votre menu de l'interface vSphere, allez dans le tableau de bord `Hôtes et clusters`{.action}.
 
 ![Maintenance](images/en01menu.png){.thumbnail}
 
 
-On the left side, find your host and right-click on it.    
-In the `Maintenance Mode`{.action} section, select `Enter Maintenance Mode`{.action}.
+Sur la gauche de l'écran, trouvez votre hôte et cliquez dessus avec le bouton droit.    
+Dans la section `Mode de maintenance`{.action}, selectionnez `Passer en mode de maintenance`{.action}.
 
 ![Maintenance](images/en02maintenance.png){.thumbnail}
 
 
-Make sure the box in the following window is checked and click `OK`{.action}.
+Assurer vous que la case est cochée dans l'écran suivant puis cliquez sur `OK`{.action}.
 
 ![Maintenance](images/en03enter.png){.thumbnail}
 
 
-Assuming DRS is implemented, any live VM will be moved.    
-*If you customized your environment, you may have to manually move live VMs from your host before putting it in Maintenance Mode*
-You mays see the following warning.     
+En supposant que DRS est actif, vos VMs de production seront migrée vers un autre hôte.    
+*Si vous avez personnalisé votre environnement, vous pourriez devoir effectuer manuellement les migrations des VMs*
+L'avertissement suivant peut apparaitre.     
 
 ![Maintenance](images/en04warning.png){.thumbnail}
 
 
-Your host is now showing in maintenance mode.
+Votre hôte est désormais en mode de maintenance.
 
 ![Maintenance](images/en05maintenanced.png){.thumbnail}
 
 
 
-### Update Manager
+### Mises à jour
 
-Select your host and go to the `Update`{.action} tab.   
-You can see a summary of what is set and its compliance.     
-Before trusting what is shown, let's set the baseline against which compliance will be checked.
+Selectionnez votre hôte et allez dans la section `Mises à jour`{.action}.   
+Vous voyez les différent status de base et la conformité de l'hôte.     
+Avant de se réjouir, vous allez devoir appliquer un ligne de base pour vérifier la conformité.
 
 ![Update](images/en06summary.png){.thumbnail}
 
 
-In the Attached Baselines section, click on `Attach`{.action} then `Attach Baseline or Baseline Group`{.action}.
+Dans la section Lignes de base attachées, cliquez sur `Attacher`{.action} then `Attacher une ligne de base ou un groupe de...`{.action}.
 
 ![Update](images/en07attach.png){.thumbnail}
 
-There are predefined Baselines which are the recommended patching level for your hosts depending on criticality of the updates.    
-*We'll be using the Critical Patches in this example but you can use either or create your own baselines. you can also apply several baselines to cover different scopes for a same host*       
-Select the required baseline and click `Attach`{.action}
+Il existe des lignes de bases prédéfinies pour les différents niveau de patching recommandés.    
+*Nous utilisons les correctifs critiques dans notre exemple mais vous pouvez utiliser les deux lignes existantes ou en créer d'autres à votre convenance pour couvrir différents besoins de votre environement*       
+Selectionnez la ligne de base requise puis cliquez sur `Attacher`{.action}
 
 ![Update](images/en08define.png){.thumbnail}
 
-Now, the compliance summary may look very different than it used to.     
+Maintenant, le résumé de conformité nous raconte une nouvelle histoire.     
 
 ![Update](images/en09noncompliant.png){.thumbnail}
 
 
-Back in the Attached Baselines section, check the box to select all assigned baselines and click on `Remediate`{.action}.
+Retournez dans la section Lignes de base attachées, sélectionnez toutes les lignes de bases assignées et cliquez sur `Corriger`{.action}.
 
 ![Update](images/en10remediate.png){.thumbnail}
 
 
-Select the host and click on `Remediate`{.action} again.
+Selectionnez l'hôte et cliquer encore sur `Corriger`{.action} again.
 
 ![Update](images/en11remediate.png){.thumbnail}
 
 
-The updating process starts and will last for a while. Your host will restart if needed.
+Le processus de mise à jour démarre et durera en fonction du nombre et de la taille des correctifs appliqués. Votre hôte ser redémarré automatiquement si nécessaire.
 
 ![Update](images/en12remediating.png){.thumbnail}
 
 
-Once the process has gone through, the compliance check will happen again (you can force it by click on the check compliance link) and you will see a green checkmark on the Compliance level.
+A la fin du processus, la vérification de conformité sera relancée (ou elle peut etre forcée en cliquant sur le lien) et une coche vrte devrait apparaitre.
 
 ![Update](images/en13compliant.png){.thumbnail}
 
-Your host is now fully up-to-date.    
-Don't forget to get it out of Maintenance Mode and it will be back in production.
+Votre hôte est maintenant à jour.    
+N'oubliez pas de le sortir du mode de maintenance et il sera de retour en production.
 
-Congratulations and thank you!
+Bravo et merci!
 
 ## Aller plus loin
 
