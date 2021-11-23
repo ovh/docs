@@ -31,24 +31,30 @@ With that in mind, in the vSphere interface menu, go to the `Hosts and Clusters`
 
 ![Maintenance](images/en01menu.png){.thumbnail}
 
+
 On the left side, find your host and right-click on it.    
 In the `Maintenance Mode`{.action} section, select `Enter Maintenance Mode`{.action}.
 
 ![Maintenance](images/en02maintenance.png){.thumbnail}
 
+
 Make sure the box in the following window is checked and click `OK`{.action}.
 
 ![Maintenance](images/en03enter.png){.thumbnail}
 
-Assuming DRS is implemented *(it is by default when we deliver the environment)*, any live VM will be moved.     
-You mays see the following warning.     
+
+Assuming DRS is implemented, any live VM will be moved.    
 *If you customized your environment, you may have to manually move live VMs from your host before putting it in Maintenance Mode*
+You mays see the following warning.     
 
 ![Maintenance](images/en04warning.png){.thumbnail}
+
 
 Your host is now showing in maintenance mode.
 
 ![Maintenance](images/en05maintenanced.png){.thumbnail}
+
+
 
 ### Update Manager
 
