@@ -2,7 +2,7 @@
 title: 'Network & IP'
 slug: network-ip
 excerpt: 'Guides d’utilisation des solutions réseau & IP OVHcloud'
-sections: SecNumCloud Connectivity, Nos guides réseau & IP pour VPS, Nos guides réseau & IP pour les hébergements Web Cloud, Nos guides réseau & IP pour Public Cloud, Nos guides réseau & IP pour Hosted Private Cloud powered by VMware, Nos guides réseau & IP pour les serveurs dédiés
+sections: SecNumCloud Connectivity
 order: 08
 ---
 
@@ -12,14 +12,6 @@ order: 08
 >
 > - [Configurer l'IPv6 sur un serveur VPS](https://docs.ovh.com/fr/vps/configurer-ipv6/)
 > - [Configurer une adresse IP en alias](https://docs.ovh.com/fr/vps/ip-aliasing-vps/)
-
-> [!product-section]
->
-> ### Nos guides réseau & IP pour les hébergements Web Cloud
->
-> - [Configurer IPv6 pour votre site web](https://docs.ovh.com/fr/hosting/configurer-ipv6-pour-votre-site/)
-
-> [!product-section]
 >
 > ### Nos guides réseau & IP pour Public Cloud
 >
@@ -32,6 +24,10 @@ order: 08
 > - [vRack - Configuration du vRack Public Cloud depuis les APIv6 OVHcloud](https://docs.ovh.com/fr/public-cloud/public-cloud-vrack-apiv6/)
 
 > [!product-section]
+>
+> ### Nos guides réseau & IP pour les hébergements Web Cloud
+>
+> - [Configurer IPv6 pour votre site web](https://docs.ovh.com/fr/hosting/configurer-ipv6-pour-votre-site/)
 >
 > ### Nos guides réseau & IP pour Hosted Private Cloud powered by VMware
 >
