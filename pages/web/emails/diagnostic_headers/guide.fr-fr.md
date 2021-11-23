@@ -139,7 +139,7 @@ Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix, puis appuyez si
 
 L'entête complet de l'e-mail apparaît dans une fenêtre séparée, vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
 
-#### Mail de Mac
+#### Mail de macOS
 
 Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix, rendez-vous sur `Présentation`{.action} dans la barre de menu en haut, dans `Message`{.action} cliquez sur `Tous les en-têtes`.
 
@@ -193,7 +193,7 @@ Pour récupérer l'entête, sélectionnez l'e-mail concerné, puis cliquez sur l
 
 #### Outlook.com
 
-Pour afficher l'en-tête de l'interface webmail utilisée sur Outlook.com, consulter notre rubrique [Outlook Web Application](#owa) pour le découvrir comment .
+Pour afficher l'en-tête dans l'interface webmail utilisée sur Outlook.com, consultez la rubrique [Outlook Web Application](#owa) de ce guide.
 
 ## Aller plus loin
 
