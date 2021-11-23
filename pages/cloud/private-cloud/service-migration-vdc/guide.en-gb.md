@@ -34,59 +34,57 @@ There are two aspects involved in this process
 - access to the vSphere Control Panel
 
 ## Instructions
-This guide will utilise the notions of a **source vDC** and a **destination vDC**. Please find an index of the tasks you will be performing:
-
 This guide will utilise the notions of a **source vDC** and a **destination vDC**. Please find an index of the tasks you will be performing :
 [Step 1 Design your infrastructure](#design)<br />
-&ensp;[Step 1.1 Choose between Premier or Essentials](#premoress)<br />
-&ensp;[Step 1.2 Select your hosts (compute)](#selecthosts)<br />
-&ensp;[Step 1.3 Select your datastores (storage)](#selectdatastores)<br />
+&ensp;&ensp;[Step 1.1 Choose between Premier or Essentials](#premoress)<br />
+&ensp;&ensp;[Step 1.2 Select your hosts (compute)](#selecthosts)<br />
+&ensp;&ensp;[Step 1.3 Select your datastores (storage)](#selectdatastores)<br />
 [Step 2 Build your new infrastructure](#build)<br />
-&ensp;[Step 2.1 Add a new destination vDC](#addvdc)<br />
-&emsp;[Step 2.1.1 Check that your datacenter is eligible to move to the target range](#eligible)<br />
-&emsp;[Step 2.1.2 Check which of your services you can upgrade](#checkupgrade)<br />
-&emsp;[Step 2.1.3 View what you are able to upgrade to](#checkupgradeto)<br />
-&emsp;[Step 2.1.4 Verify you are able to upgrade with your serviceName and planCode for destination range](#snandpncheck)<br />
-&emsp;[Step 2.1.5 Create the order](#createorder)<br />
-&ensp;[Step 2.3 Add new hosts and Datastores](#addhostandds)<br />
-&ensp;[Step 2.4 Convert a datastore to a global datastore](#converttoglobal)<br />
+&ensp;&ensp;[Step 2.1 Add a new destination vDC](#addvdc)<br />
+&emsp;&emsp;[Step 2.1.1 Check that your datacenter is eligible to move to the target range](#eligible)<br />
+&emsp;&emsp;[Step 2.1.2 Check which of your services you can upgrade](#checkupgrade)<br />
+&emsp;&emsp;[Step 2.1.3 View what you are able to upgrade to](#checkupgradeto)<br />
+&emsp;&emsp;[Step 2.1.4 Verify you are able to upgrade with your serviceName and planCode for destination range](#snandpncheck)<br />
+&emsp;&emsp;[Step 2.1.5 Create the order](#createorder)<br />
+&ensp;&ensp;[Step 2.3 Add new hosts and Datastores](#addhostandds)<br />
+&ensp;&ensp;[Step 2.4 Convert a datastore to a global datastore](#converttoglobal)<br />
 [Step 3 Prepare your destination vDC in the OVHcloud context](#preparevdcovhcontext)<br />
-&ensp;[Step 3.1 Check inherited characteristics (Certifications, KMS, access restrictions)](#checkovhcontext)<br />
-&emsp;[Step 3.1.1 Certifications](#certs)<br />
-&emsp;[Step 3.1.2 Key Management Server (KMS)](#kms)<br />
-&emsp;[Step 3.1.3 Access restrictions](#access)<br />
-&ensp;[Step 3.2 Assign users rights](#userrights)<br />
-&ensp;[Step 3.3 Activate Veeam Managed Backup & Zerto Disaster Recovery Options](#activateveeamzerto)<br />
-&ensp;[Step 3.4 Check your network (vRack, Public IP)](#checknetwork)<br />
-&emsp;[Step 3.4.1 vRack](#vrack)<br />
-&emsp;[Step 3.4.2 Public network](#publicnetwork)<br />
+&ensp;&ensp;[Step 3.1 Check inherited characteristics (Certifications, KMS, access restrictions)](#checkovhcontext)<br />
+&emsp;&emsp;[Step 3.1.1 Certifications](#certs)<br />
+&emsp;&emsp;[Step 3.1.2 Key Management Server (KMS)](#kms)<br />
+&emsp;&emsp;[Step 3.1.3 Access restrictions](#access)<br />
+&ensp;&ensp;[Step 3.2 Assign users rights](#userrights)<br />
+&ensp;&ensp;[Step 3.3 Activate Veeam Managed Backup & Zerto Disaster Recovery Options](#activateveeamzerto)<br />
+&ensp;&ensp;[Step 3.4 Check your network (vRack, Public IP)](#checknetwork)<br />
+&emsp;&emsp;[Step 3.4.1 vRack](#vrack)<br />
+&emsp;&emsp;[Step 3.4.2 Public network](#publicnetwork)<br />
 [Step 4 Prepare your destination vDC in the VMware context](#preparevdcvmwarecontext)<br />
-&ensp;[Step 4.1 Reconfigure VMware High Availability (HA)](#ha)<br />
-&ensp;[Step 4.2 Reconfigure VMware Distributed Resource Scheduler (DRS)](#drs)<br />
-&ensp;[Step 4.3 Rebuild resource pools](#respools)<br />
-&ensp;[Step 4.4 Recreate Datastores Clusters (if relevant)](#dsclusters)<br />
-&ensp;[Step 4.5 Enable vSAN (if relevant)](#vsan)<br />
-&ensp;[Step 4.6 Recreate vSphere networking](#vspherenetwork)<br />
-&ensp;[Step 4.7 Check inventory organisation (if relevant)](#inventory)<br />
-&ensp;[Step 4.8 Configure NSX](#nsx)<br />
-&emsp;[Step 4.8.1 v(x)lan Transport Zones](#transportzones)<br />
-&emsp;[Step 4.8.2 NSX Edges](#edges)<br />
-&emsp;[Step 4.8.3 NSX Distributed Logical Routing](#dlr)<br />
-&emsp;[Step 4.8.4 NSX Distributed Firewall](#dfw)<br />
-&ensp;[Step 4.9 Extend Zerto Disaster Recovery Protection (if relevant)](#zerto)<br />
-&emsp;[Step 4.9.1 VPG as Source](#vpgsource)<br />
-&emsp;[Step 4.9.2 VPG as destination](#vpgdest)<br />
+&ensp;&ensp;[Step 4.1 Reconfigure VMware High Availability (HA)](#ha)<br />
+&ensp;&ensp;[Step 4.2 Reconfigure VMware Distributed Resource Scheduler (DRS)](#drs)<br />
+&ensp;&ensp;[Step 4.3 Rebuild resource pools](#respools)<br />
+&ensp;&ensp;[Step 4.4 Recreate Datastores Clusters (if relevant)](#dsclusters)<br />
+&ensp;&ensp;[Step 4.5 Enable vSAN (if relevant)](#vsan)<br />
+&ensp;&ensp;[Step 4.6 Recreate vSphere networking](#vspherenetwork)<br />
+&ensp;&ensp;[Step 4.7 Check inventory organisation (if relevant)](#inventory)<br />
+&ensp;&ensp;[Step 4.8 Configure NSX](#nsx)<br />
+&emsp;&emsp;[Step 4.8.1 v(x)lan Transport Zones](#transportzones)<br />
+&emsp;&emsp;[Step 4.8.2 NSX Edges](#edges)<br />
+&emsp;&emsp;[Step 4.8.3 NSX Distributed Logical Routing](#dlr)<br />
+&emsp;&emsp;[Step 4.8.4 NSX Distributed Firewall](#dfw)<br />
+&ensp;&ensp;[Step 4.9 Extend Zerto Disaster Recovery Protection (if relevant)](#zerto)<br />
+&emsp;&emsp;[Step 4.9.1 VPG as Source](#vpgsource)<br />
+&emsp;&emsp;[Step 4.9.2 VPG as destination](#vpgdest)<br />
 [Step 5 Migrate your workload](#migrate)<br />
-&ensp;[Step 5.1 Storage Motion](#svmotion)<br />
-&ensp;[Step 5.2 vMotion](#vmotion)<br />
+&ensp;&ensp;[Step 5.1 Storage Motion](#svmotion)<br />
+&ensp;&ensp;[Step 5.2 vMotion](#vmotion)<br />
 [Step 6 Finalize your migration](#finalizemigration)<br />
-&ensp;[Step 6.1 Reconfigure Veeam Managed Backup (if relevant)](#reconveeam)<br />
-&ensp;[Step 6.2 Reconfigure Zerto Disaster Recovery (if relevant)](#reconzerto)<br />
-&ensp;[Step 6.3 Recreate Affinity rules](#recreateaffinity)<br />
-&ensp;[Step 6.4 Put hosts in maintenance mode](#hostmm)<br />
-&ensp;[Step 6.5 Remove old datastores](#removeoldds)<br />
-&ensp;[Step 6.6 Remove old hosts](#removeoldhosts)<br />
-&ensp;[Step 6.7 Remove vDC](#removeoldvdc)<br />
+&ensp;&ensp;[Step 6.1 Reconfigure Veeam Managed Backup (if relevant)](#reconveeam)<br />
+&ensp;&ensp;[Step 6.2 Reconfigure Zerto Disaster Recovery (if relevant)](#reconzerto)<br />
+&ensp;&ensp;[Step 6.3 Recreate Affinity rules](#recreateaffinity)<br />
+&ensp;&ensp;[Step 6.4 Put hosts in maintenance mode](#hostmm)<br />
+&ensp;&ensp;[Step 6.5 Remove old datastores](#removeoldds)<br />
+&ensp;&ensp;[Step 6.6 Remove old hosts](#removeoldhosts)<br />
+&ensp;&ensp;[Step 6.7 Remove vDC](#removeoldvdc)<br />
 
 <a name="design"></a>
 ### Step 1 Design your infrastructure
