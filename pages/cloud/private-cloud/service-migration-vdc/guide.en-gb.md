@@ -46,8 +46,8 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 &emsp;&emsp;[Step 2.1.3 View what you are able to upgrade to](#checkupgradeto)<br />
 &emsp;&emsp;[Step 2.1.4 Verify you are able to upgrade with your serviceName and planCode for destination range](#snandpncheck)<br />
 &emsp;&emsp;[Step 2.1.5 Create the order](#createorder)<br />
-&ensp;&ensp;[Step 2.3 Add new hosts and Datastores](#addhostandds)<br />
-&ensp;&ensp;[Step 2.4 Convert a datastore to a global datastore](#converttoglobal)<br />
+&ensp;&ensp;[Step 2.2 Add new hosts and Datastores](#addhostandds)<br />
+&ensp;&ensp;[Step 2.3 Convert a datastore to a global datastore](#converttoglobal)<br />
 [Step 3 Prepare your destination vDC in the OVHcloud context](#preparevdcovhcontext)<br />
 &ensp;&ensp;[Step 3.1 Check inherited characteristics (Certifications, KMS, access restrictions)](#checkovhcontext)<br />
 &emsp;&emsp;[Step 3.1.1 Certifications](#certs)<br />
@@ -189,11 +189,11 @@ This API call generates an order that needs to be validated. If you don’t have
 > You will not be able to see the new vDC in the vSphere client until you have assigned the correct permissions to users for the new vDC.
 >
 <a name="addhostandds"></a>
-#### Step 2.3 Add new hosts and Datastores
+#### Step 2.2 Add new hosts and Datastores
 
 In the OVHcloud Control Panel, you will see your new datacenter attached to your existing service. You can proceed with ordering new hosts and datastores (selected in step 1) in the new Destination vDC following this [Information about Dedicated Cloud billing](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) guide.
 <a name="converttoglobal"></a>
-#### Step 2.4 Convert a datastore to a global datastore
+#### Step 2.3 Convert a datastore to a global datastore
 
 You now have new datastores in the new virtual Datacenter, as well as compatible datastores in the previous datacenter. You can convert those datastores to global
 
