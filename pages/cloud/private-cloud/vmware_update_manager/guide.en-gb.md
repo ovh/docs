@@ -9,18 +9,16 @@ order: 09
 
 **Last Updated 11/23/2021**
 
-## Objectif
+## Objective
 
 Avec l'outil VMware Update Manager vous pouvez mettre à jour (patch de sécurité et critique) vos hôtes sans intervention de nos équipes. (Une mise à jour du vCenter ou majeure de votre hôte requiert une opération de notre part)
 
 **Ce guide explique le fonctionnement de cet outil**
 
 ## Requirements
-We will give you the Update Manager plug-in on the vSphere Client.
 
-You must have previously installed the vSphere Client on your machine:
-
--[Install the vSphere client]({legacy}600)
+- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Have a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 
