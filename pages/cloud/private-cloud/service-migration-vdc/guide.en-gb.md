@@ -37,55 +37,55 @@ There are two aspects involved in this process
 
 This guide will utilise the notions of a **source vDC** and a **destination vDC**. Please find an index of the tasks you will be performing :
 - Step 1 Design your infrastructure
- - Step 1.1 Choose between Premier or Essentials
- - Step 1.2 Select your hosts (compute)
- - Step 1.3 Select your datastores (storage)
+- Step 1.1 Choose between Premier or Essentials
+- Step 1.2 Select your hosts (compute)
+- Step 1.3 Select your datastores (storage)
 - Step 2 Build your new infrastructure
- - Step 2.1 Add a new destination vDC
-  - Step 2.1.1 Check that your datacenter is eligible to move to the target range
-  - Step 2.1.2 Check which of your services you can upgrade
-  - Step 2.1.3 View what you are able to upgrade to
-  - Step 2.1.4 Verify you are able to upgrade with your serviceName and planCode for destination range
-  - Step 2.1.5 Create the order
- - Step 2.3 Add new hosts and Datastores
- - Step 2.4 Convert a datastore to a global datastore
+- Step 2.1 Add a new destination vDC
+- Step 2.1.1 Check that your datacenter is eligible to move to the target range
+- Step 2.1.2 Check which of your services you can upgrade
+- Step 2.1.3 View what you are able to upgrade to
+- Step 2.1.4 Verify you are able to upgrade with your serviceName and planCode for destination range
+- Step 2.1.5 Create the order
+- Step 2.3 Add new hosts and Datastores
+- Step 2.4 Convert a datastore to a global datastore
 - Step 3 Prepare your destination vDC in the OVHcloud context
- - Step 3.1 Check inherited characteristics (Certifications, KMS, access restrictions)
-  - Step 3.1.1 Certifications
-  - Step 3.1.2 Key Management Server (KMS)
-  - Step 3.1.3 Access restrictions
- - Step 3.2 Assign users rights
- - Step 3.3 Activate Veeam Managed Backup & Zerto Disaster Recovery Options
- - Step 3.4 Check your network (vRack, Public IP)
-  - Step 3.4.1 vRack
-  - Step 3.4.2 Public network
+- Step 3.1 Check inherited characteristics (Certifications, KMS, access restrictions)
+- Step 3.1.1 Certifications
+- Step 3.1.2 Key Management Server (KMS)
+- Step 3.1.3 Access restrictions
+- Step 3.2 Assign users rights
+- Step 3.3 Activate Veeam Managed Backup & Zerto Disaster Recovery Options
+- Step 3.4 Check your network (vRack, Public IP)
+- Step 3.4.1 vRack
+- Step 3.4.2 Public network
 - Step 4 Prepare your destination vDC in the VMware context
- - Step 4.1 Reconfigure VMware High Availability (HA)
- - Step 4.2 Reconfigure VMware Distributed Resource Scheduler (DRS)
- - Step 4.3 Rebuild resource pools
- - Step 4.4 Recreate Datastores Clusters (if relevant)
- - Step 4.5 Enable vSAN (if relevant)
- - Step 4.6 Recreate vSphere networking
- - Step 4.7 Check inventory organisation (if relevant)
- - Step 4.8 Configure NSX
-  - Step 4.8.1 v(x)lan Transport Zones
-  - Step 4.8.2 NSX Edges
-  - Step 4.8.3 NSX Distributed Logical Routing
-  - Step 4.8.4 NSX Distributed Firewall
- - Step 4.9 Extend Zerto Disaster Recovery Protection (if relevant)
-  - Step 4.9.1 VPG as Source
-  - Step 4.9.2 VPG as destination
+- Step 4.1 Reconfigure VMware High Availability (HA)
+- Step 4.2 Reconfigure VMware Distributed Resource Scheduler (DRS)
+- Step 4.3 Rebuild resource pools
+- Step 4.4 Recreate Datastores Clusters (if relevant)
+- Step 4.5 Enable vSAN (if relevant)
+- Step 4.6 Recreate vSphere networking
+- Step 4.7 Check inventory organisation (if relevant)
+- Step 4.8 Configure NSX
+- Step 4.8.1 v(x)lan Transport Zones
+- Step 4.8.2 NSX Edges
+- Step 4.8.3 NSX Distributed Logical Routing
+- Step 4.8.4 NSX Distributed Firewall
+- Step 4.9 Extend Zerto Disaster Recovery Protection (if relevant)
+- Step 4.9.1 VPG as Source
+- Step 4.9.2 VPG as destination
 - Step 5 Migrate your workload
- - Step 5.1 Storage Motion
- - Step 5.2 vMotion
+- Step 5.1 Storage Motion
+- Step 5.2 vMotion
 - Step 6 Finalize your migration
- - Step 6.1 Reconfigure Veeam Managed Backup (if relevant)
- - Step 6.2 Reconfigure Zerto Disaster Recovery (if relevant)
- - Step 6.3 Recreate Affinity rules
- - Step 6.4 Put hosts in maintenance mode
- - Step 6.5 Remove old datastores
- - Step 6.6 Remove old hosts
- - Step 6.6 Remove vDC
+- Step 6.1 Reconfigure Veeam Managed Backup (if relevant)
+- Step 6.2 Reconfigure Zerto Disaster Recovery (if relevant)
+- Step 6.3 Recreate Affinity rules
+- Step 6.4 Put hosts in maintenance mode
+- Step 6.5 Remove old datastores
+- Step 6.6 Remove old hosts
+- Step 6.6 Remove vDC
 
 ### Step 1 Design your infrastructure
 
