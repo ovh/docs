@@ -36,8 +36,8 @@ There are two aspects involved in this process
 ## Instructions
 This guide will utilise the notions of a **source vDC** and a **destination vDC**. Please find an index of the tasks you will be performing :
 [Step 1 Design your infrastructure](#design)
-&nbsp;&nbsp;[Step 1.1 Choose between Premier or Essentials](#premoress)
-&nbsp;&nbsp;[Step 1.2 Select your hosts (compute)](#selecthosts)
+&#10;&#13;[Step 1.1 Choose between Premier or Essentials](#premoress)
+&#10;&#13;[Step 1.2 Select your hosts (compute)](#selecthosts)
 &nbsp;&nbsp;[Step 1.3 Select your datastores (storage)](#selectdatastores)
 [Step 2 Build your new infrastructure](#build)
 &nbsp;&nbsp;[Step 2.1 Add a new destination vDC](#addvdc)
