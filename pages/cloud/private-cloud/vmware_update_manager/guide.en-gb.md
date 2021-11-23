@@ -46,8 +46,8 @@ Make sure the box in the following window is checked and click `OK`{.action}.
 
 
 Assuming DRS is implemented, any live VM will be moved.    
-*If you customized your environment, you may have to manually move live VMs from your host before putting it in Maintenance Mode*
-You mays see the following warning.     
+*If you customized your environment, you may have to manually move live VMs from your host before putting it in Maintenance Mode*     
+You may see the following warning.     
 
 ![Maintenance](images/en04warning.png){.thumbnail}
 
