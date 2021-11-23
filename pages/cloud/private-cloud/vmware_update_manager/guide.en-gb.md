@@ -11,9 +11,10 @@ order: 09
 
 ## Objective
 
-Avec l'outil VMware Update Manager vous pouvez mettre à jour (patch de sécurité et critique) vos hôtes sans intervention de nos équipes. (Une mise à jour du vCenter ou majeure de votre hôte requiert une opération de notre part)
+VMware Update Manager allows you to keep your hosts up to date by installing Bug Fixes and Security Patches without intervention from our team.     
+*vCenter updates or major updates will still require our involvment*
 
-**Ce guide explique le fonctionnement de cet outil**
+**This guide will present the Update Manager functionalities**
 
 ## Requirements
 
@@ -22,13 +23,32 @@ Avec l'outil VMware Update Manager vous pouvez mettre à jour (patch de sécurit
 
 ## Instructions
 
-### Mise en maintenance
+### Maintenance Mode
 
-Avant toute chose, il est recommandé de mettre votre hôte en mode **maintenance** en faisant un clic droit sur celui-ci, puis `mode maintenance` et `passer en mode maintenance`{.action} .
+Before working on a host, you'll need to put it in maintenance mode.    
+Indeed, patching often requires a restart of the host and would impact your live VMs.    
+With that in mind, in the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.
 
-En effet, la quasi totalité des mises à jour nécessitent un redémarrage de l'hôte.
+![Maintenance](images/en01menu.png){.thumbnail}
 
-Durant la mise en maintenance, les machines virtuelles enregistrées seront automatiquement transférées sur un autre hôte de votre cluster si la fonction [DRS](https://docs.ovh.com/fr/private-cloud/vmware-drs-distributed-ressource-scheduler-new/){.external-link} est en mode entièrement automatisé. Si ce n'est pas le cas, vous pouvez modifier ce paramètre, ou déplacer vos machines virtuelles manuellement en effectuant des *[vMotion](https://docs.ovh.com/fr/private-cloud/vmware-vmotion-new/){.external-link}*.
+On the left side, find your host and right-click on it.    
+In the `Maintenance Mode`{.action} section, select `Enter Maintenance Mode`{.action}.
+
+![Maintenance](images/en02maintenance.png){.thumbnail}
+
+Make sure the box in the following window is checked and click `OK`{.action}.
+
+![Maintenance](images/en03enter.png){.thumbnail}
+
+Assuming DRS is implemented *(it is by default when we deliver the environment)*, any live VM will be moved.     
+You mays see the following warning.     
+*If you customized your environment, you may have to manually move live VMs from your host before putting it in Maintenance Mode*
+
+![Maintenance](images/en04warning.png){.thumbnail}
+
+Your host is now showing in maintenance mode.
+
+![Maintenance](images/en05maintenanced.png){.thumbnail}
 
 ### Update Manager
 
