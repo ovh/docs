@@ -9,7 +9,7 @@ section: NAS
 
 ## Objective
 
-Configure and mount an OVHcloud HA-NAS storage spaces on your Windows Server using CIFS.
+Configure and mount an OVHcloud HA-NAS storage space on your Windows Server using CIFS.
 
 ## Requirements
 
