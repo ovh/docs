@@ -85,7 +85,7 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 - Step 6.4 Put hosts in maintenance mode
 - Step 6.5 Remove old datastores
 - Step 6.6 Remove old hosts
-- Step 6.6 Remove vDC
+- Step 6.7 Remove vDC
 
 ### Step 1 Design your infrastructure
 
@@ -695,7 +695,7 @@ A task is created for each call, you can follow the progress with:
 > Wait for the full completion of tasks before continuing.
 >
 
-#### Step 6.6 Remove vDC
+#### Step 6.7 Remove vDC
 
 At this step, we can consider there is no longer any data and/or VM on the old vDC, so we can now remove resources.
 
