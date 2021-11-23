@@ -6,7 +6,7 @@ section: Fonctionnalités OVHcloud
 hidden: true
 ---
 
-**Dernière mise à jour le 05/11/2021**
+**Dernière mise à jour le 23/11/2021**
 
 ## Objectif
 
@@ -216,5 +216,7 @@ Une liste vide en retour, comme ci-dessous, vous confirme que l'ensemble des act
 ```
 
 ## Aller plus loin
+
+[Nos guides SecNumCloud Connectivity](https://docs.ovh.com/fr/network-ip/)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

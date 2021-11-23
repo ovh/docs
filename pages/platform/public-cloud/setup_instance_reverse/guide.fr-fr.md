@@ -48,4 +48,4 @@ Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` es
 
 [Créer une première instance Public Cloud et s’y connecter](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

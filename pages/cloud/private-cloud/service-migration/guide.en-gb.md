@@ -6,7 +6,7 @@ section: Getting started
 order: 6
 ---
 
-**Last updated 12th February 2021**
+**Last updated 22nd November 2021**
 
 ## Objective
 
@@ -152,13 +152,21 @@ Migration involves recreating the vRack VLAN-backed portgroups on the destinatio
 Here is a checklist of aspects to take into account:
 
 - Portgroup VLAN type
-- Security settings
+- Security settings (**Important in case promiscuous mode is needed**)
 - Teaming and Failover settings
 - Customer network resource allocation
 
 For more information, consult VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external} and on [how to edit distributed port teaming and failover policies](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-BB8EC262-5F85-4F42-AFC5-5FED456E2C11.html){.external}.
 
 **Automation tips:** Powercli cmdlet “Export-VDPortGroup” can retrieve Distibuted Virtual Portgroup information which can then be imported into the destination Distributed Switch with the use of the “New-VDPortgroup -BackupPath” cmdlet.
+
+> [!warning]
+>
+> - Some virtual routing appliances such as pfSense use CARP to provide high availability.
+> - VMs that use CARP will need “Promiscuous Mode” enabled in the security settings of a portgroup.
+> - Customers can enable this setting themselves on the vRack vDS on the destination Hosted Private Cloud.
+> - However, if promiscuous mode needs to be enabled on the “VM Network” portgroup in the new Hosted Private Cloud, please open a ticket with OVHcloud support before migration to ensure connectivity remains during migration.
+>
 
 ##### **1.7 Veeam backup config**
 

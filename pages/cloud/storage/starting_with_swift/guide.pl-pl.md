@@ -22,8 +22,8 @@ API OpenStack umożliwia wygenerowanie skryptów do automatyzacji Twoich działa
 
 ## Wymagania początkowe
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](../przygotowanie_srodowiska_dla_api_openstack/) poprzez instalację python-swiftclient
-- [Pobranie zmiennych środowiskowych OpenStack](../zmienne-srodowiskowe-openstack/)
+- [Przygotowanie środowiska do korzystania z API OpenStack](../../public-cloud/przygotowanie_srodowiska_dla_api_openstack/) poprzez instalację python-swiftclient
+- [Pobranie zmiennych środowiskowych OpenStack](../../public-cloud/zmienne-srodowiskowe-openstack/)
 
 ## W praktyce
 
@@ -146,7 +146,7 @@ Jeśli kontener jest skonfigurowany jako publiczny, możesz uzyskać dostęp do 
 https://storage.gra1.cloud.ovh.net/v1/AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29/container1/images/OVHlogo.png
 ```
 
-Ten adres URL składa się z punktu zakończenia dostępnego w [interfejsie Horizon](../dostęp-i-bezpieczenstwo-w-horizon/), nazwy kontenera i nazwy obiektu (w tym prefiksu).
+Ten adres URL składa się z punktu zakończenia dostępnego w [interfejsie Horizon](../../public-cloud/dostęp-i-bezpieczenstwo-w-horizon/), nazwy kontenera i nazwy obiektu (w tym prefiksu).
 
 ### Pobieranie plików
 

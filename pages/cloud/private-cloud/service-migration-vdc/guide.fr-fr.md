@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Dernière mise à jour le 04/11/2021**
+**Dernière mise à jour le 22/11/2021**
 
 > [!warning]
 >
@@ -237,13 +237,21 @@ La migration implique la recréation des groupes de ports virtuels de vRack sur 
 Voici une liste des éléments à prendre en compte:
 
 - Type de VLAN de groupe de ports
-- Paramètres de sécurité
+- Paramètres de sécurité (**Important dans le cas où le mode promiscuité (*promiscuous mode*) est nécessaire**)
 - Paramètres de Teaming et de Failover
 - Allocation des ressources réseau du client
 
 Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](../creation-vlan-vxlan/#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
 
 **Conseils d'automatisation :** L'applet de commande Powercli « Export-VDPortGroup » peut récupérer des informations de Portgroups virtuels distribués qui peuvent ensuite être importées dans le Distributed Switch de destination à l'aide de l'applet de commande « New-VDPortgroup -BackupPath ».
+
+> [!warning]
+>
+> - Certaines appliances de routage virtuel telles que pfSense utilisent CARP pour fournir de la haute disponibilité.
+> - Les VMs qui utilisent CARP auront besoin que le « *Promiscuous Mode* » soit activé dans les paramètres de sécurité d'un groupe de ports.
+> - Vous pouvez peut activer ce paramètre sur le vRack vDS du vDC de destination.
+> - Cependant, si le « *Promiscuous Mode* » doit être activé sur le portgroup « VM Network » du nouveau vDC, merci d’ouvrir un ticket auprès du support OVHcloud avant la migration, afin de maintenir la connectivité durant la migration.
+>
 
 ##### **1.7 Configuration de Veeam Backup**
 

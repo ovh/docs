@@ -20,11 +20,11 @@ This guide will help you find out what you need to know to make sure your produc
 
 If you are already familiar with these concepts, you can continue discovering the OVHcloud Public Cloud by browsing the following guides:
 
-- [Open an OVHcloud account](https://www.ovh.com/ca/en/customer/create-ovhcloud-account/)
-- [Create your first Public Cloud project](https://www.ovh.com/ca/en/public-cloud/create_a_public_cloud_project/)
-- [Familiarise yourself with the Public Cloud interface](https://www.ovh.com/ca/en/public-cloud/public-cloud-interface/)
-- [Create your first instance](https://www.ovh.com/ca/en/public-cloud/public-cloud-first-steps/)
-- [Manage quotas](https://www.ovh.com/ca/en/public-cloud/increase-public-cloud-quota/)
+- [Open an OVHcloud account](https://docs.ovh.com/ca/en/customer/create-ovhcloud-account/)
+- [Create your first Public Cloud project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project/)
+- [Familiarise yourself with the Public Cloud interface](https://docs.ovh.com/ca/en/public-cloud/public-cloud-interface/)
+- [Create your first instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/)
+- [Manage quotas](https://docs.ovh.com/ca/en/public-cloud/increase-public-cloud-quota/)
 
 ## Global approach <a name="global-approach"></a>
 
@@ -82,9 +82,9 @@ There are several ways to manage Public Cloud resources. Whether you are an adva
 
 #### The project
 
-To get started, you will first need an OVHcloud [customer account](https://www.ovh.com/ca/en/customer/create-ovhcloud-account/).
+To get started, you will first need an OVHcloud [customer account](https://docs.ovh.com/ca/en/customer/create-ovhcloud-account/).
 
-You will then need to [create a Public Cloud project](https://www.ovh.com/ca/en/public-cloud/create_a_public_cloud_project/). A project is an environment that you will dedicate to a context.
+You will then need to [create a Public Cloud project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project/). A project is an environment that you will dedicate to a context.
 
 For example, you can choose to separate your test and production environments in two projects.
 <br>Or you can use different projects for your different applications (public website, online store, business application, document management etc.).
@@ -93,7 +93,7 @@ To start a project, you will need to save a payment method when you create the p
 
 #### Billing
 
-Since your payment method has been saved, it will be used to debit the amount calculated for your [billing at the end of the month](https://www.ovh.com/ca/en/public-cloud/information-on-cloud-billing-options/). This calculation is based on the usage time of each resource, depending on the price of the resources.
+Since your payment method has been saved, it will be used to debit the amount calculated for your [billing at the end of the month](https://docs.ovh.com/ca/en/public-cloud/information-on-cloud-billing-options/). This calculation is based on the usage time of each resource, depending on the price of the resources.
 
 Example: During the month, you used 1 d2-8 instance for the whole month, and 3 b2-60 instances, which together account for 32 hours.
 <br>Your bill will be 720 (number of hours in the month) x €0.0325 ex. VAT (price per hour of a d2-8) + 32 x €0.4589 ex. VAT (price per hour of a b2-60). This amounts to €38.08 ex. VAT.
@@ -102,7 +102,7 @@ Example: During the month, you used 1 d2-8 instance for the whole month, and 3 b
 
 You may have to deal with the quota issue.
 <br>The Public Cloud quota defines the maximum number of resources you can start. It depends on certain settings (fore example: age of account, previous invoices).
-<br>These quotas are allocated by region (in the OpenStack sense). As a result, you may reach the maximum possible resources for your project, and you may need to [increase these quotas](https://www.ovh.com/ca/en/public-cloud/increase-public-cloud-quota/).
+<br>These quotas are allocated by region (in the OpenStack sense). As a result, you may reach the maximum possible resources for your project, and you may need to [increase these quotas](https://docs.ovh.com/ca/en/public-cloud/increase-public-cloud-quota/).
 
 ![Public Cloud quota](images/quota.png){.thumbnail}
 
@@ -111,8 +111,8 @@ You may have to deal with the quota issue.
 You may need to manage several users who will be involved in your project.
 <br>You then have two options:
 
-- If you would like to use the OpenStack or S3 APIs, or the Horizon interface, you will need to [create users](https://www.ovh.com/ca/en/public-cloud/creation-and-deletion-of-openstack-user/) to do this. Users may have limited permissions to secure the action perimeters.
-- If you do not need access to the APIs or Horizon, you can [link another OVHcloud](https://www.ovh.com/ca/en/public-cloud/delegate-projects/) customer account as an add-on to your project.
+- If you would like to use the OpenStack or S3 APIs, or the Horizon interface, you will need to [create users](https://docs.ovh.com/ca/en/public-cloud/creation-and-deletion-of-openstack-user/) to do this. Users may have limited permissions to secure the action perimeters.
+- If you do not need access to the APIs or Horizon, you can [link another OVHcloud](https://docs.ovh.com/ca/en/public-cloud/delegate-projects/) customer account as an add-on to your project.
 
 ## Go further <a name="gofurther"></a>
 
@@ -120,21 +120,21 @@ Here are some general resources that will help you get started with the Public C
 
 |Documentation|Details|
 |---|---|
-|[FAQ](https://www.ovh.com/ca/en/public-cloud/public-cloud-faq/)|Frequently asked questions about Public Cloud.|
-|[Glossary](https://www.ovh.com/ca/en/public-cloud/introduction-to-instances-and-other-cloud-based-terms/)|The concepts and definitions you will need to move forward.|
+|[FAQ](https://docs.ovh.com/ca/en/public-cloud/public-cloud-faq/)|Frequently asked questions about Public Cloud.|
+|[Glossary](https://docs.ovh.com/ca/en/public-cloud/introduction-to-instances-and-other-cloud-based-terms/)|The concepts and definitions you will need to move forward.|
 |[Availability of services by location](https://www.ovhcloud.com/fr/public-cloud/regions-availability/)|Service availability tables across different locations.|
-|[Image Changelog](https://www.ovh.com/ca/en/public-cloud/pci-vps-image-changelog/)|Changes to publicly available system images.|
+|[Image Changelog](https://docs.ovh.com/ca/en/public-cloud/pci-vps-image-changelog/)|Changes to publicly available system images.|
 
 Here are some guides to help you with the first steps:
 
 |Documentation|Details|
 |---|---|
-|[Create your first instance](https://www.ovh.com/ca/en/public-cloud/public-cloud-first-steps/)|First practical guide to starting a cloud server from the OVHcloud Control Panel.|
-|[Using an SSH key](https://www.ovh.com/ca/en/public-cloud/use-of-an-ssh-key-in-the-public-cloud-interface/)| To log in to a Linux instance, you will need to log in via an SSH connection. This guide details the procedure.|
-|[Private Network Configuration](https://www.ovh.com/ca/en/public-cloud/public-cloud-vrack/)|At OVHcloud, private networks are powered by vRack technology. This guide will help you get started.|
-|[Attach an additional disk to an instance](https://www.ovh.com/ca/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/)|This guide will help you add additional storage to your first instance.|
-|[Accessing the Horizon interface](https://www.ovh.com/ca/en/public-cloud/configure_user_access_to_horizon/)|The Horizon interface of OpenStack allows some advanced actions, here is how to connect to it.|
-|[Creating a Kubernetes cluster](https://www.ovh.com/ca/en/kubernetes/creating-a-cluster/)|This guide will help you step by step in creating your first Kubernetes cluster.|
+|[Create your first instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/)|First practical guide to starting a cloud server from the OVHcloud Control Panel.|
+|[Using an SSH key](https://docs.ovh.com/ca/en/public-cloud/use-of-an-ssh-key-in-the-public-cloud-interface/)| To log in to a Linux instance, you will need to log in via an SSH connection. This guide details the procedure.|
+|[Private Network Configuration](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/)|At OVHcloud, private networks are powered by vRack technology. This guide will help you get started.|
+|[Attach an additional disk to an instance](https://docs.ovh.com/ca/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/)|This guide will help you add additional storage to your first instance.|
+|[Accessing the Horizon interface](https://docs.ovh.com/ca/en/public-cloud/configure_user_access_to_horizon/)|The Horizon interface of OpenStack allows some advanced actions, here is how to connect to it.|
+|[Creating a Kubernetes cluster](https://docs.ovh.com/ca/en/kubernetes/creating-a-cluster/)|This guide will help you step by step in creating your first Kubernetes cluster.|
 
 One of the big advantages of using standard and open technologies, like OpenStack or Kubernetes, is that you can use all the documentation already available.
 
