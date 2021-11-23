@@ -58,118 +58,52 @@ Your host is now showing in maintenance mode.
 
 ### Update Manager
 
-Vous pouvez retrouver l'onglet `Update Manager` en selectionnant votre cluster.
+Select your host and go to the `Update`{.action} tab.   
+You can see a summary of what is set and its compliance.     
+Before trusting what is shown, let's set the baseline against which compliance will be checked.
 
-![](images/Update.png){.thumbnail}
+![Update](images/en06summary.png){.thumbnail}
 
-#### Attacher une ligne de base
 
-Dans un premier temps, vous devez attacher les lignes de bases.
+In the Attached Baselines section, click on `Attach`{.action} then `Attach Baseline or Baseline Group`{.action}.
 
-Pour cela cliquez sur le bouton `Attacher une ligne de base...`{.action}
+![Update](images/en07attach.png){.thumbnail}
 
-![](images/Upgrade2.png){.thumbnail}
+There are predefined Baselines which are the recommended patching level for your hosts depending on criticality of the updates.    
+*We'll be using the Critical Patches in this example but you can use either or create your own baselines. you can also apply several baselines to cover different scopes for a same host*       
+Select the required baseline and click `Attach`{.action}
 
-#### Rechercher des mises à jour
+![Update](images/en08define.png){.thumbnail}
 
-Les lignes de base étant attachées, vous pouvez à présent cliquer sur le bouton `Rechercher des mises à jour...`{.action}
+Now, the compliance summary may look very different than it used to.     
 
-![](images/Update1.png){.thumbnail}
+![Update](images/en09noncompliant.png){.thumbnail}
 
-Cochez les options suivantes et lancez le **Scan** en cliquant sur `Ok`{.action}
 
-- Patches and Extensions
-- Upgrades
+Back in the Attached Baselines section, check the box to select all assigned baselines and click on `Remediate`{.action}.
 
-Une tâche se lancera par la suite :
+![Update](images/en10remediate.png){.thumbnail}
 
-![](images/Update3.png){.thumbnail}
 
-### Transférer des correctifs
+Select the host and click on `Remediate`{.action} again.
 
-Le **scan** étant terminé il est à présent possible de télécharger les différents correctifs sur l'hôte de votre choix.
+![Update](images/en11remediate.png){.thumbnail}
 
-> [!primary]
->
-> Cette opération sera à effectuer pour chaque hôte.
->
 
-Pour télécharger les mises à jour, cliquez sur le bouton `Transférer des correctifs...`{.action}.
+The updating process starts and will last for a while. Your host will restart if needed.
 
-Une nouvelle fenêtre s'ouvrira avec plusieurs étapes.
+![Update](images/en12remediating.png){.thumbnail}
 
-Renseignez les lignes de base attachées précedemment
 
-![](images/Update4.png){.thumbnail}
+Once the process has gone through, the compliance check will happen again (you can force it by click on the check compliance link) and you will see a green checkmark on the Compliance level.
 
-Séléctionnez l'hôte sur lequel vous souhaitez appliquer les mises à jour.
+![Update](images/en13compliant.png){.thumbnail}
 
-![](images/Update5.png){.thumbnail}
+Your host is now fully up-to-date.    
+Don't forget to get it out of Maintenance Mode and it will be back in production.
 
-Séléctionnez ensuite les mises à jour que vous souhaitez appliquer. Par défaut tout est séléctionné.
+Congratulations and thank you!
 
-![](images/Update6.png){.thumbnail}
-
-Enfin un résumé est disponible. Si tout est conforme, vous pouvez cliquez sur `Terminer`{.action}.
-
-![](images/Update7.png){.thumbnail}
-
-Une tâche se lancera sur le cluster, puis sur l'hôte.
-
-![](images/Update8.png){.thumbnail}
-
-### Corriger
-
-Les correctifs sont à présent téléchargés sur l'hôte, vous pouvez maintenant les appliquer.
-
-> [!primary]
->
-> Seul cette étape nécessite le passage en mode maintenance de votre hôte.
-> 
-
-Pour appliquer ces correctifs, cliquez sur le bouton `Corriger...`{.action}.
-
-Une nouvelle fenêtre s'ouvrira pour configurer l'application des mises à jour.
-
-A nouveau, renseignez les lignes de base :
-
-![](images/Update9.png){.thumbnail}
-
-Puis l'hôte en mode maintenance sur lequel les mises à jour seront appliquées.
-
-![](images/Update10.png){.thumbnail}
-
-Vous retrouvez ensuite la liste des mises à jour téléchargées à l'étape précédente.
-
-![](images/Update11.png){.thumbnail}
-
-Dans les options avancées, vous pouvez planifier votre application. Si vous laissez décoché, elle s'appliquera immédiatement.
-
-![](images/Update12.png){.thumbnail}
-
-Si vous n'avez pas placé votre hôte en mode maintenance ou si vous planifiez l'application des correctifs à une heure ou date ultérieur, vous pouvez planifier la mise en maintenance à cette étape.
-
-![](images/Update13.png){.thumbnail}
-
-Cette ultime étape permet de désactiver certaines options du cluster et de certaines machines virtuelles pour permettre la bonne exécution des mises à jour.
-
-La désactivation du contrôle d'admission peut être interessante si vous ne disposez pas d'assez de ressources en cas de perte d'un hôte (en plus de celui sur lequel vous appliquez les mises à jour).
-
-Il est simplement necessaire de réactiver ce paramètre en editant [la fonction HA du cluster](https://docs.ovh.com/fr/private-cloud/vmware-ha-high-availability/){.external-link}, une fois les mises à jour appliquées sur les différents hôtes.
-
-![](images/Update14.png){.thumbnail}
-
-Enfin, un résumé sera disponible et si tout est en ordre, vous pourrez cliquez sur `Terminer`{.action} pour lancer l'application des mises à jour et le redémarrage de l'hôte.
-
-![](images/Update15.png){.thumbnail}
-
-Une première tâche se lancera sur le cluster, et en fonction des paramètres choisis, d'autres pourront se lancer également sur le cluster.
-
-Enfin, les tâches d'installation et de redémarrage se lanceront sur l'hôte.
-
-![](images/Update16.png){.thumbnail}
-
-Après quelques minutes, votre hôte sera à jour, vous pourrez le sortir du mode maintenance, et si besoin effectuer ces actions sur un autre hôte.
 
 ## Go further
 
