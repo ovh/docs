@@ -6,91 +6,91 @@ legacy_guide_number: g1778
 section: Zarządzanie w interfejsie Horizon
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-## 
+**Ostatnia aktualizacja z dnia 23-11-2021**
+
+## Wprowadzenie
+
 Jeśli Twoja działalność się rozwija i zapotrzebowanie na zasoby wzrasta, możesz za pomocą kilku kliknięć zwiększyć zasoby, którymi dysponuje Twoja instancja. 
 
-Przewodnik ten wyjaśnia, jak zwiększyć zasoby w interfejsie OpenStack Horizon.
+**Z tego przewodnika dowiesz się, jak zmienić rozmiar instancji w interfejsie OpenStack Horizon.**
 
-## Uwaga
-Możliwe jest tylko przejście na wyższy model.
+> [!warning]
+>
+> W przypadku modeli klasycznych możliwe jest tylko zmiana rozmiaru na wyższy.
+> Operacja ta spowoduje również wycięcie instancji w czasie jej wykonywania.
+> 
 
-Zmiana ta spowoduje przerwanie działania instancji na czas operacji.
+> [!success]
+>
+> Instancje typu *flex* umożliwiają zmianę rozmiaru na wyższe lub niższe modele dzięki unikalnemu rozmiarowi dysku.
+> 
 
+## Wymagania początkowe
 
-## Wstępne wymagania
+- Utworzenie [instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
+- [Dostęp do interfejsu Horizon](../tworzenie_dostepu_do_interfejsu_horizon/)
 
-- [Dostęp do interfejsu Horizon]({legacy}1773)
-- Instancja
+## W praktyce
 
+Zaloguj się do [interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/) i upewnij się, że jesteś we właściwym regionie. Możesz to sprawdzić w lewym górnym rogu.</br>
+Kliknij menu `Compute`{.action} po lewej stronie, a następnie wybierz `Instance`{.action}. Wybierz `Resize Instance`{.action} z rozwijanego menu po prawej stronie odpowiedniej instancji.
 
+![Resize instance](images/resizeinstance2021.png){.thumbnail}
 
+### Wybór szablonu (*Flavor Choice*)
 
-## Zmiana rozmiaru instancji
-Aby zmienić rozmiar instancji, należy:
+W tej sekcji podajemy aktualny szablon (*old flavor*) i możesz wybrać nowy szablon (*new flavor*) dla zasobów instancji.
 
+![public-cloud](images/flavorchoice.png){.thumbnail}
 
-- Zalogować się do interfejsu Horizon.
-- Kliknąć na Instancje w menu z lewej strony.
-- Wybrać Zmień rozmiar instancji z rozwijalnej listy dla tej instancji.
+#### Szczegóły szablonu (*Flavor Details*)
 
+W tej sekcji wyświetlają się zasoby przypisane do wybranego szablonu. 
 
+#### Limity Projektu (*Project limits*)
 
-![](images/img_2718.jpg){.thumbnail}
+Tutaj możecie zobaczyć wykorzystane zasoby w porównaniu z całkowitymi zasobami przeznaczonymi na dany projekt.
 
+> [!warning]
+> Pamiętaj, że możesz tylko zmienić rozmiar instancji z jednego modelu Linux na inny model Linux i z jednego modelu Windows na inny model Windows.
+>
 
-## Zakładka Wybór odmiany
-W tej sekcji widać aktualny rozmiar. Można wybrać nowy rozmiar dla zasobów instancji.
+### Opcje zaawansowane (*Advanced Options*)
 
-![](images/img_2717.jpg){.thumbnail}
+Sekcja ta pozwala na zarządzanie partycjonowaniem dysku (*Disk Partition*) i grupy serwerów (*Server Group*).
 
-## Uwaga
-Można wyświetlić wykorzystane zasoby w porównaniu z całkowitymi zasobami przypisanymi do projektu.
+![public-cloud](images/resize_advanced.png){.thumbnail}
 
+Po zakończeniu konfiguracji kliknij `Resize`{.action}.
 
-## Zakładka Ustawienia zaawansowane
-W tej sekcji można zarządzać partycjonowaniem dysku.
+### Zmiana rozmiaru dysku w systemie Windows
 
-Partycjonowanie dysku: (Automatyczne lub Ręczne)
+Uwaga: podczas zmiany rozmiaru instancji Windows rozmiar partycji nie jest automatycznie aktualizowany. Należy więc rozszerzyć ją, używając **disk manager**:
 
-![](images/img_2652.jpg){.thumbnail}
+- Kliknij prawym przyciskiem myszy w menu `Start`{.action} i uruchom menedżer dysku klikając `Disk Management`{.action}:
 
-- Po zakończeniu konfiguracji kliknij na Zmień rozmiar
+![public-cloud](images/2980.png){.thumbnail}
 
+- Kliknij prawym przyciskiem myszy na partycję główną, a następnie kliknij `Extend Volume`{.action}.
 
+![public-cloud](images/2981a.png){.thumbnail}
 
+- Kliknij `Next`{.action}, aby uzyskać dostęp do `Extend Volume Wizard`. Wybierz zasoby dysku do rozszerzenia i kliknij `Next`{.action}. 
 
-## Zmiana rozmiaru dysku w systemie Windows
- Uwaga 
-Podczas zmiany rozmiaru instancji Windows, rozmiar partycji nie jest aktualizowany automatycznie. Należy skorzystać z opcji zwiększenia rozmiaru korzystając z funkcji
-Zarządzanie dyskiem:
+![public-cloud](images/2978a.png){.thumbnail}
 
+Następnie kliknij `Finish`{.action}, aby zatwierdzić wybór.
 
-- Uruchom opcję zarządzania dyskiem:
+![public-cloud](images/wizard2021.png){.thumbnail}
 
+- Nowy rozmiar dysku zostanie wyświetlony w managerze dysku.
 
+![public-cloud](images/2979.png){.thumbnail}
 
-![](images/img_2980.jpg){.thumbnail}
+## Sprawdź również
 
-- Kliknij prawym przyciskiem na głównej partycji
-
-
-
-![](images/img_2981.jpg){.thumbnail}
-
-- Rozszerz partycję główną:
-
-
-
-![](images/img_2978.jpg){.thumbnail}
-
-- Zatwierdź zmianę rozmiaru dysku:
-
-
-
-![](images/img_2979.jpg){.thumbnail}
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

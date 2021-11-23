@@ -4,93 +4,94 @@ excerpt: Änderung der Größe einer Instanz in Horizon
 slug: nderung_der_groe_einer_instanz
 section: 'Horizon'
 legacy_guide_number: g1778
+order: 08
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## 
+**Letzte Aktualisierung am 23.11.2021**
+
+## Ziel
+
 Durch einen Anstieg der Last oder aufgrund neuer Anforderungen kann es mit der Zeit dazu kommen, dass die Ressourcen Ihrer Instanz nicht mehr ausreichen. Bei der Public Cloud können Sie in diesem Fall einfach mit einigen Klicks die Ressourcen Ihrer Instanz erhöhen.
 
-In dieser Anleitung wird die Vorgehensweise zur Änderung der Größe Ihrer Instanz über den OpenStack Horizon Manager beschrieben.
+**In dieser Anleitung wird die Vorgehensweise zur Änderung der Größe Ihrer Instanz über den OpenStack Horizon Manager beschrieben.**
 
-## Achtung:
-Die Änderung der Größe kann ausschließlich zu einem größeren Modell hin erfolgen.
+> [!warning]
+>
+> Bei klassischen Modellen ist nur die Umstellung auf ein größeres Modell möglich.
+> Darüber hinaus wird die Instanz während der Operation unterbrochen.
+> 
 
-Während der Dauer dieses Eingriffs ist die Instanz nicht verfügbar.
-
+> [!success]
+>
+> Flex-Instanzen erlauben die Anpassung auf höhere oder niedrigere Modelle aufgrund einer geschlossenen Größe einer einzelnen Disc.
+> 
 
 ## Voraussetzungen
 
-- [Erstellung eines Zugangs zu Horizon]({legacy}1773)
-- Eine erstellte Instanz
+- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) in Ihrem OVHcloud Account erstellt
+- [Sie sind im Horizon-Interface eingeloggt](../erstellung_einer_instanz_in_horizon/)
 
+## In der praktischen Anwendung
 
+Greifen Sie auf das [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) zu. Wählen Sie dann die Region aus, in der Sie eine Sicherheitsgruppe erstellen möchten, indem Sie oben links klicken.</br>
+Klicken Sie links im Menü `Compute` {.action} und wählen Sie dann `Instance` {.action} aus. Wählen Sie `Resize Instance` {.action} im Drop-down-Menü rechts neben der betreffenden Instanz aus.
 
+![Resize instance](images/resizeinstance2021.png){.thumbnail}
 
-## Änderung der Größe einer Instanz
-Um die Größe einer Instanz anzupassen gehen Sie wie folgt vor:
+### Wahl des Templates (*Flavor Choice*)
 
+Dieser Abschnitt zeigt die aktuelle Template (*old flavor*) an und erlaubt es Ihnen, eine neue Template (*new flavor*) für die Ressource der Instanz auszuwählen.
 
-- Verbinden Sie sich mit Horizon
-- Klicken Sie in dem Menü auf der linken Seite auf Instanzen
-- Wählen Sie für die gewünschte Instanz in der Dropdown-Liste Instanzgröße ändern aus
+![public-cloud](images/flavorchoice.png){.thumbnail}
 
+#### Details der Templates (*Flavor Details*)
 
+In diesem Abschnitt werden die Ressourcen angezeigt, die der gewählten Template zugeordnet sind. 
 
-![](images/img_2718.jpg){.thumbnail}
+#### Grenzen des Projekts (*Grenzen des Projekts*)
 
+Sehen Sie hier die belegten Ressourcen im Vergleich zu den gesamten Projektressourcen.
 
-## Rubrik "Varianten Auswahl"
-In dieser Rubrik wird das derzeit verwendete Template angezeigt, und Sie können ein neues Template für die Ressourcen der Instanz auswählen.
+> [!warning]
+> Bitte beachten Sie, dass Sie eine Instanz nur von einem Linux-Modell auf ein anderes Linux-Modell und von einem Windows-Modell auf ein anderes Windows-Modell anpassen können.
+>
 
-![](images/img_2717.jpg){.thumbnail}
+### Erweiterte Optionen (*Advanced Options*)
 
-## Tip:
-Hier können die verwendeten Ressourcen im Verhältnis zu den dem Projekt zugewiesenen Gesamtressourcen angezeigt werden.
+In diesem Bereich können Sie die Partitionierung der Festplatte (*Disk Partition*) und der Servergruppe (*Server Group*) verwalten.
 
+![public-cloud](images/resize_advanced.png){.thumbnail}
 
-## Rubrik "Weitergehende Optionen"
-In dieser Rubrik können Sie die Partitionierung der Festplatte verwalten.
+Wenn die Konfiguration abgeschlossen ist, klicken Sie auf `Resize`{.action}.
 
-Festplattenpartition: Automatisch oder Manuell)
+### Änderung der Größe der Festplatte unter Windows
 
-![](images/img_2652.jpg){.thumbnail}
+Achtung, bei einer Größenanpassung für eine Windows-Instanz wird die Größe der Partition nicht automatisch geupdatet, die Partition muss also über den Festplattenmanager **disk manager**:
 
-- Zum Fertigstellen der Konfiguration klicken Sie auf Größe ändern
+- Klicken Sie mit der rechten Maustaste auf `Start`{.action} und starten Sie den Festplattenmanager, indem Sie auf `Disk Management`{.action}:
 
+![public-cloud](images/2980.png){.thumbnail}
 
+- Klicken Sie mit der rechten Maustaste auf die Hauptpartition und klicken Sie dann auf `Extend Volume`{.action}.
 
+![public-cloud](images/2981a.png){.thumbnail}
 
-## Änderung der Größe der Festplatte unter Windows
- Achtung 
+- Klicken Sie auf `Next`{.action}, um auf `Extend Volume Wizard` zuzugreifen. Wählen Sie die Ressourcen der zu erweiternden Festplatte aus und klicken Sie auf `Next`{.action}. 
 
-Bei der Redimensionierung einer Windows Instanz wird die Größe der Partition nicht automatisch angepasst, Sie müssen dies in der Datenträgerverwaltung durchführen:
+![public-cloud](images/2978a.png){.thumbnail}
 
+Klicken Sie anschließend auf `Finish`{.action}, um Ihre Auswahl zu bestätigen.
 
-- Starten Sie die Datenträgerverwaltung:
+![public-cloud](images/wizard2021.png){.thumbnail}
 
+- DBestätigen Sie die Erweiterung der Partition:
 
+![public-cloud](images/2979.png){.thumbnail}
 
-![](images/img_2980.jpg){.thumbnail}
+## Weiterführende Informationen
 
-- Machen Sie einen Rechtsklick auf die Hauptpartition
-
-
-
-![](images/img_2981.jpg){.thumbnail}
-
-- Erweitern Sie die Hauptpartition
-
-
-
-![](images/img_2978.jpg){.thumbnail}
-
-- Bestätigen Sie die Erweiterung der Partition:
-
-
-
-![](images/img_2979.jpg){.thumbnail}
-
-
-## 
-[Zurück zum Index der Cloud Hilfen]({legacy}1785)
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
