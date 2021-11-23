@@ -1,7 +1,7 @@
 ---
 title: Comment sécuriser votre site Web ?
 excerpt: Apprenez à renforcer la sécurité de votre site Web
-slug: securiser-votre-site-web
+slug: securiser-votre-site
 section: Optimiser son site
 order: 1
 ---
@@ -10,7 +10,11 @@ order: 1
 
 ## Objectif
 
-Ce guide vous permettra d'améliorer la sécurité de vos solutions OVHcloud. Il vous permettra d’acquérir des connaissances fondamentales visant à assurer la disponibilité de vos services Web, à protéger l'intégrité de vos données et à sécuriser l'accès à vos solutions.
+Ce guide vous permettra d'améliorer la sécurité de vos sites Web. Il vous permettra d’acquérir des connaissances fondamentales visant à assurer la disponibilité de vos services, à protéger l'intégrité de vos données et à sécuriser l'accès à vos solutions.
+
+warning
+
+Ce guide concernera uniquement les produits liés à l'univers Web Cloud (Domaines, DNS, Hébergements mutualisés, E-mails MX Plan), ainsi que la sécurisation de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 **Découvrez comment sécuriser votre site Web.**
 
@@ -29,19 +33,29 @@ Ce guide vous permettra d'améliorer la sécurité de vos solutions OVHcloud. Il
 ## En pratique
 
 ### Sauvegarder ses données
-#### Testez régulièrement votre site
-Tester régulièrement en local ou sur autre serveur les sauvegardes générées (proactivité sur la corruption de bases)
-audit de sécurité ?
-"Le test en local concerne la base de données, il est tout à fait possible d'utiliser un thème de base avec les plugins indispensables pour vérifier si la base de données est fonctionnelle. Il se pose la question des versions sql et ou Apache. Pour palier à cette problématique, client peut également mettre en place une version de test de son cms (ex: test.mondomaine.tld) directement sur son mutu en utilisant une nouvelle bdd (nécessitant donc un export/import)"
 
 #### Effectuer des sauvegardes régulièrement
+
+Sauvegarder régulièrement vos données, quelle que soit la solution informatique concernée est le plus important geste à avoir en termes de sécurité informatique. Il sera toujours de réinstaller un logiciel ou de changer le disque dur de votre poste informatique, mais il est très difficile de récupérer des données une fois qu'elles ont été perdues.
+
+Pour cette première étape de ce parcours de sécurisation de vos solutions OVHcloud, commencez par sauvegarder vos bases de données en suivant les instructions de ce [guide](./exportation-bases-donnees/)
+
+
+
 Guide sauvegarde ftp/base de données / Evoquer les plugins/modules de sauvegarde en ligne pour les cms
-https://docs.ovh.com/fr/hosting/exportation-bases-donnees/
+
 https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/
 https://docs.ovh.com/fr/hosting/exporter-son-site-web/
 https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/
 
 "Juste évoquer le fait qu'il existe des plugin/modules qui permettent de faire des actions de sauvegarde (ne pas donner de nom). Indiquer juste l'utilisation de plugins régulièrement mis à jour et mis en avant par la communauté wordpress."
+
+#### Testez régulièrement votre site
+Tester régulièrement en local ou sur autre serveur les sauvegardes générées (proactivité sur la corruption de bases)
+audit de sécurité ?
+"Le test en local concerne la base de données, il est tout à fait possible d'utiliser un thème de base avec les plugins indispensables pour vérifier si la base de données est fonctionnelle. Il se pose la question des versions sql et ou Apache. Pour palier à cette problématique, client peut également mettre en place une version de test de son cms (ex: test.mondomaine.tld) directement sur son mutu en utilisant une nouvelle bdd (nécessitant donc un export/import)"
+
+
 
 #### Mettre en place le renouvellement automatique
 https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/
