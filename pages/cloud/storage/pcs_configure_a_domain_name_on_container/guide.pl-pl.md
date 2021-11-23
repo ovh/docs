@@ -7,7 +7,8 @@ legacy_guide_number: g2006
 ---
 
 
-## 
+## Wprowadzenie
+
 Gdy tworzysz Publiczny kontener, wszyscy mają dostęp do Twoich danych. Jest do rozwiązanie dobre w przypadku udostępniania plików w Internecie. 
 Aby móc udostępniać pliki znajomym, musisz dostarczyć im długi adres URL, który jest trudny do zapamiętania. 
 Być może będziesz chciał korzystać z tych obiektów na swojej stronie www bez potrzeby korzystania z innej nazwy domeny. 
@@ -15,14 +16,10 @@ Dzięki nazwie domeny będziesz mógł dostarczyć własny adres URL do udostęp
 
 Przewodnik ten wyjaśnia, jak skonfigurować domenę na kontenerach, aby ułatwić dostęp do nich.
 
-
 ## Wymagania
 
-- [Dodanie przestrzeni dyskowej](https://docs.ovh.com/gb/en/storage/pcs/create-container/)
+- [Dodanie przestrzeni dyskowej](https://docs.ovh.com/gb/en/storage/pcs/create-container/) (EN)
 - Domena
-
-
-
 
 ## W teorii
 Gdy zapytanie HTTP dociera na Object Storage OpenStack, wykonywana jest weryfikacja na poziomie nagłówka "hosta". Jeśli różni się on od aktualnej nazwy hosta, system stwierdzi, że jest to wpis mapowany i wykona zapytanie DNS, aby uzyskać pełny wpis DNS, który odnosi się do hosta. Jeśli wpis DNS zostanie odnaleziony, odpowiedź zostanie podzielona, w celu odnalezienia i odłączenia kontenera, konta i szukanego obiektu. Następnie zapytanie zostanie przepisane. 

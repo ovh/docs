@@ -6,23 +6,20 @@ section: Object Storage Standard (Swift)
 legacy_guide_number: g2006
 ---
 
+## Objetivo
 
-## 
 Si crea un contenedor de tipo público, todo el mundo podrá acceder a sus datos, lo cual es una buena opción para compartir sus archivos en internet.
 
 Sin embargo, para poder compartir sus archivos con sus amigos, por ejemplo, deberá proporcionarles una larga URL que suele ser difícil de retener. Además, también es posible que quiera utilizar esos objetos en su sitio web sin tener que utilizar por ello un dominio distinto.
 
 Esta guía explica cómo configurar un dominio en sus contenedores para facilitar el acceso a ellos proporcionando una URL personalizada.
 
-
 ## Requisitos
+
 Para seguir todos los pasos de esta guía, es necesario:
 
-
-- [Añadir espacios de almacenamiento](https://docs.ovh.com/us/es/storage/horizon_crear_un_contenedor_de_objetos/)
+- [Añadir espacios de almacenamiento](https://docs.ovh.com/gb/en/storage/pcs/create-container/) (EN)
 - Tener un dominio registrado
-
-
 
 
 ## La teoría

@@ -15,8 +15,8 @@ This guide will help you access objects in Swift using a software designed to in
 
 ## Requirements
 
-- [Prepare the environment to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
-- [Get Openstack RC File v3 from Horizon](../access_and_security_in_horizon/)
+- [Prepare the environment to use the OpenStack API](../../public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Get Openstack RC File v3 from Horizon](../../public-cloud/access_and_security_in_horizon/)
 
 ## Instructions
 
