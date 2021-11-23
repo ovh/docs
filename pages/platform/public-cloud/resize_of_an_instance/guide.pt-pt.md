@@ -52,7 +52,7 @@ Esta secção indica o template atual (*old flavor*) e permite-lhe selecionar um
 
 Nesta secção apresentam-se os recursos associados ao template escolhido. 
 
-#### Limites do Projeto (*Project limits*)
+#### Limites do Projeto (*Project Limits*)
 
 Visite aqui os recursos ocupados em comparação com os recursos totais atribuídos ao projeto.
 

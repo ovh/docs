@@ -51,7 +51,7 @@ W tej sekcji podajemy aktualny szablon (*old flavor*) i możesz wybrać nowy sza
 
 W tej sekcji wyświetlają się zasoby przypisane do wybranego szablonu. 
 
-#### Limity Projektu (*Project limits*)
+#### Limity Projektu (*Project Limits*)
 
 Tutaj możecie zobaczyć wykorzystane zasoby w porównaniu z całkowitymi zasobami przeznaczonymi na dany projekt.
 

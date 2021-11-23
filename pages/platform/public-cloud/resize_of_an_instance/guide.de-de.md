@@ -27,7 +27,7 @@ Durch einen Anstieg der Last oder aufgrund neuer Anforderungen kann es mit der Z
 
 > [!success]
 >
-> Flex-Instanzen erlauben die Anpassung auf höhere oder niedrigere Modelle aufgrund einer geschlossenen Größe einer einzelnen Disc.
+> *Flex*-Instanzen erlauben die Anpassung auf höhere oder niedrigere Modelle aufgrund einer geschlossenen Größe einer einzelnen Disc.
 > 
 
 ## Voraussetzungen
@@ -37,7 +37,7 @@ Durch einen Anstieg der Last oder aufgrund neuer Anforderungen kann es mit der Z
 
 ## In der praktischen Anwendung
 
-Greifen Sie auf das [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) zu. Wählen Sie dann die Region aus, in der Sie eine Sicherheitsgruppe erstellen möchten, indem Sie oben links klicken.</br>
+Greifen Sie auf das [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) an und stellen Sie sicher, dass Sie sich in der richtigen Region befinden. Sie können dies in der oberen linken Ecke überprüfen.</br>
 Klicken Sie links im Menü `Compute` {.action} und wählen Sie dann `Instance` {.action} aus. Wählen Sie `Resize Instance` {.action} im Drop-down-Menü rechts neben der betreffenden Instanz aus.
 
 ![Resize instance](images/resizeinstance2021.png){.thumbnail}
@@ -52,7 +52,7 @@ Dieser Abschnitt zeigt die aktuelle Template (*old flavor*) an und erlaubt es Ih
 
 In diesem Abschnitt werden die Ressourcen angezeigt, die der gewählten Template zugeordnet sind. 
 
-#### Grenzen des Projekts (*Grenzen des Projekts*)
+#### Grenzen des Projekts (*Project Limits*)
 
 Sehen Sie hier die belegten Ressourcen im Vergleich zu den gesamten Projektressourcen.
 
@@ -94,4 +94,4 @@ Klicken Sie anschließend auf `Finish`{.action}, um Ihre Auswahl zu bestätigen.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

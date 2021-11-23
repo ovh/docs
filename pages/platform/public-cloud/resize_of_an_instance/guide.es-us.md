@@ -37,7 +37,7 @@ En algunos casos, bien debido a un aumento de la actividad o a sus nuevas necesi
 
 ## Procedimiento
 
-Acceda a la interfaz [Horizon](https://horizon.cloud.ovh.net/auth/login/). Seleccione la región en la que desea crear un grupo de seguridad utilizando el botón superior izquierdo.</br>
+Accede a la [interfaz de Horizon](https://horizon.cloud.ovh.net/auth/login/) y asegúrate de que estás en la región correcta. Puedes comprobarlo en la esquina superior izquierda.</br>
 Haga clic en el menú `Compute` {.action} a la izquierda y seleccione `Instance` {.action}. Seleccione `Resize Instance` {.action} en el menú desplegable situado a la derecha de la instancia correspondiente.
 
 ![Resize instance](images/resizeinstance2021.png){.thumbnail}
@@ -52,7 +52,7 @@ Esta sección indica la plantilla actual (*old flavor*) y le permite seleccionar
 
 En esta sección se muestran los recursos asociados a la plantilla seleccionada. 
 
-#### Límites de Proyecto (*Project limits*)
+#### Límites de Proyecto (*Project Limits*)
 
 Consulte aquí los recursos ocupados en relación con los recursos totales asignados al proyecto.
 
@@ -80,7 +80,7 @@ Atención: Al redimensionar una instancia Windows, el tamaño de la partición n
 
 ![public-cloud](images/2981a.png){.thumbnail}
 
-- Haga clic en `Next`{.action} para acceder al `Asistente de Extensión del volumen` (*Extend Volume Wizard*). Seleccione los recursos del disco que quiera ampliar y haga clic en `Next`{.action}. 
+- Haga clic en `Next`{.action} para acceder al `Extend Volume Wizard`. Seleccione los recursos del disco que quiera ampliar y haga clic en `Next`{.action}. 
 
 ![public-cloud](images/2978a.png){.thumbnail}
 
