@@ -2,81 +2,178 @@
 title: Migrating an infrastructure to a new vDC
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/sddc-migration/'
-excerpt: Find out how to manage all aspects of migrating from one vDC to another vDC in the same PCC
+excerpt: Find out how to manage all aspects of migrating from one vDC to another vDC in the same VMware infrastructure
 slug: vdc-migration
 section: Getting started
 order: 6
 hidden: true
 ---
 
-**Last updated 22nd November 2021**
+**Last updated 23rd November 2021**
 
 > [!warning]
 >
-> The vDC migration path is not yet available because upgrades and maintenance operations are in progress. We will notify you as soon as this migration is possible.
+> The vDC migration path is not yet available to all services because upgrades and maintenance operations are in progress. We will notify you as soon as this migration is possible for your infrastructure.
 >
 
 ## Objective
 
-There are two aspects to migrating to a new vDC:
+**This guide explains how to upgrade from a previous (DC or SDDC) virtual DataCenter (vDC) to a new (Essentials or Premier) vDC**
+
+In 2020, OVHcloud have launched 2 new ranges Essentials and Premier. You can now upgrade from commercial ranges prior to 2019 to the new ranges while keeping the same VMware infrastructure (pcc-123-123-123-123) using Storage Motion and vMotion.
+
+There are two aspects involved in this process
 
 - The OVHcloud infrastructure itself which includes the customer's side of administrating an infrastructure.
 - The VMware infrastructure, which includes the entire VMware eco-system.
-
-**This guide explains how to cover all aspects of migrating a pre-existing OVHcloud infrastructure to a new vDC.**
 
 ## Requirements
 
 - a PCC infrastructure (SDDC or DC)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`Private Cloud`{.action} in the `Hosted Private Cloud`{.action} section)
+- access to the vSphere Control Panel
 
 ## Instructions
 
-This guide will utilise the notions of a **source vDC** and a **destination vDC**.
+This guide will utilise the notions of a **source vDC** and a **destination vDC**. Please find an index of the tasks you will be performing :
+- Step 1 Design your infrastructure
+ - Step 1.1 Choose between Premier or Essentials
+ - Step 1.2 Select your hosts (compute)
+ - Step 1.3 Select your datastores (storage)
+- Step 2 Build your new infrastructure
+ - Step 2.1 Add a new destination vDC
+  - Step 2.1.1 Check that your datacenter is eligible to move to the target range
+  - Step 2.1.2 Check which of your services you can upgrade
+  - Step 2.1.3 View what you are able to upgrade to
+  - Step 2.1.4 Verify you are able to upgrade with your serviceName and planCode for destination range
+  - Step 2.1.5 Create the order
+ - Step 2.3 Add new hosts and Datastores
+ - Step 2.4 Convert a datastore to a global datastore
+- Step 3 Prepare your destination vDC in the OVHcloud context
+ - Step 3.1 Check inherited characteristics (Certifications, KMS, access restrictions)
+  - Step 3.1.1 Certifications
+  - Step 3.1.2 Key Management Server (KMS)
+  - Step 3.1.3 Access restrictions
+ - Step 3.2 Assign users rights
+ - Step 3.3 Activate Veeam Managed Backup & Zerto Disaster Recovery Options
+ - Step 3.4 Check your network (vRack, Public IP)
+  - Step 3.4.1 vRack
+  - Step 3.4.2 Public network
+- Step 4 Prepare your destination vDC in the VMware context
+ - Step 4.1 Reconfigure VMware High Availability (HA)
+ - Step 4.2 Reconfigure VMware Distributed Resource Scheduler (DRS)
+ - Step 4.3 Rebuild resource pools
+ - Step 4.4 Recreate Datastores Clusters (if relevant)
+ - Step 4.5 Enable vSAN (if relevant)
+ - Step 4.6 Recreate vSphere networking
+ - Step 4.7 Check inventory organisation (if relevant)
+ - Step 4.8 Configure NSX
+  - Step 4.8.1 v(x)lan Transport Zones
+  - Step 4.8.2 NSX Edges
+  - Step 4.8.3 NSX Distributed Logical Routing
+  - Step 4.8.4 NSX Distributed Firewall
+ - Step 4.9 Extend Zerto Disaster Recovery Protection (if relevant)
+  - Step 4.9.1 VPG as Source
+  - Step 4.9.2 VPG as destination
+- Step 5 Migrate your workload
+ - Step 5.1 Storage Motion
+ - Step 5.2 vMotion
+- Step 6 Finalize your migration
+ - Step 6.1 Reconfigure Veeam Managed Backup (if relevant)
+ - Step 6.2 Reconfigure Zerto Disaster Recovery (if relevant)
+ - Step 6.3 Recreate Affinity rules
+ - Step 6.4 Put hosts in maintenance mode
+ - Step 6.5 Remove old datastores
+ - Step 6.6 Remove old hosts
+ - Step 6.6 Remove vDC
 
-### OVHcloud context
+### Step 1 Design your infrastructure
 
-#### Adding a new destination vDC
+At the end of step 1, you should have a clear view of which 2020 commercial range you want to upgrade to, as well as which hosts and storage you want to use.
+
+#### Step 1.1 Choose between Premier or Essentials
+
+As an Hosted Private Cloud VMware customer with host prior to 2020, you want to upgrade to 2020 hosts.
+First, you would need to select a commercial range between [Essentials](https://www.ovhcloud.com/fr/managed-bare-metal/) (2018 Intel CPU, no NSX, no certification, network bandwith ~1Gbps) and [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/) (2020 Intel CPU,NSX mandatory, certifications available, network bandwith ~10Gbps)
+Please note that this choice is definitive
+
+Here are a few guidelines:
+- if you are using or you plan to use [NSX](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => you must upgrade to [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
+- if you need your VMware infrastructure to be [certified](https://www.ovhcloud.com/fr/enterprise/certification-conformity/) (HDS, PCI-DSS, HIPA) => you must upgrade to [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
+- if you don't have NSX on your current infrastructure and you don't have need for certifications => you can choose between [Essentials](https://www.ovhcloud.com/fr/managed-bare-metal/) and [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/). As a general rule of thumbs, Essentials hosts have a better cost/core ratio while Premier optimize cost/ram ratio, you can compare [Essentials hosts](https://www.ovhcloud.com/fr/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/hosts/)
+
+#### Step 1.2 Select your hosts (compute)
+
+You have now chosen your commercial range.
+
+Based on your needs in terms of compute (CPU, RAM), you can select which type and how much hosts you would order between [Essentials hosts](https://www.ovhcloud.com/fr/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/hosts/)
+For exemple, if you currently use 3xDC2016 XL+, and have choosen Essentials, you can upgrade to 3xESS128 (thanks to more powerful CPU) or 3*ESS256 (if RAM is your criteria)
+Please note that this choice is not definitive, you can start with the 3xESS128 and upgrade to 3xESS256 later on.
+
+#### Step 1.3 Select your datastores (storage)
+
+You have now chosen your commercial range and your hosts. Please note that some of your actual datastores might be compatible with the newer ranges, that is those datastores can be made global. A global datastore is a datastore mounted on all clusters / virtual datacenters within a VMware infrastructure, i.e. shared between the source vDC and the destination vDC.Run the OVHcloud API to check datastores compatibility. 
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/checkGlobalCompatible
+>
+
+**Expected return:** boolean
+
+If the API return is true, this datastore is compatible with the newer ranges and you can keep this datastore, you will be make it global later on in the upgrade process.
+If the API return is FALSE, this datastore is not compatible, you will need to order new datastores between [Essentials datastores](https://www.ovhcloud.com/fr/managed-bare-metal/options/) and [Premier datastores](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/datastores-nfs/)
+Based on your needs in terms of storage capacity, you can select which type and how much datastores you would order.
+
+You only need to change the datastores that are not compatible. You will be able to release the datastores that are not compatible after you upgraded your storage.
+
+Please note that this choice is not definitive, you can start with 4x3Tb and switch to 2x6Tb later on.
+
+### Step 2 Build your new infrastructure
+
+At the end of step 2, you should have within your existing VMware infrastructure (pcc-123-123-123-123) a new Destination vDC with new 2020 hosts, and global datastores. 
+
+#### Step 2.1 Add a new destination vDC
 
 You can add a destination vDC following those steps:
 
-1\. Check that your datacenter is eligible to move to the target range:
+##### Step 2.1.1 Check that your datacenter is eligible to move to the target range
 
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/commercialRange/compliance
 >
 
-**Expected return:** dedicatedCloud.compliantRanges[]
+**Expected return:** you will see a list of the commercial ranges compatible with your VMware infrastructure, including Essentials or Premier if you are compatible. Please note that vDC migration path is not yet available to all services because upgrades and maintenance operations are in progress. We will notify you as soon as this migration is possible for your infrastructure.
 
-2\. Check which of your services you can upgrade:
+##### Step 2.1.2 Check which of your services you can upgrade
 
 > [!api]
 >
 > @api {GET} /order/upgrade/privateCloudManagementFee
 >
 
-**Expected return:** List of available services available to the upgrade.
+**Expected return:** you should get "pcc-123-123-123-123/managementfee" 
 
-3\. View what you are able to upgrade to:
+##### Step 2.1.3 View what you are able to upgrade to
 
 > [!api]
 >
 > @api {GET} /order/upgrade/privateCloudManagementFee/{serviceName}
 >
 
-**Expected return:** order.cart.GenericProductDefinition[]
+**Expected return:** you should get the plan code for the next API call "pcc-management-fee-premier" or "pcc-management-fee-essentials"
 
-4\. Verify you are able to upgrade with your serviceName and planCode for destination range:
+##### Step 2.1.4 Verify you are able to upgrade with your serviceName and planCode for destination range
 
 > [!api]
 >
 > @api {GET} /order/upgrade/privateCloudManagementFee/{serviceName}/{planCode} ( quantity : 1 )
 >
 
-**Expected return:** order.upgrade.OperationAndOrder
+**Expected return:** you should get a provisional order for the upgrade to Premier or Essentials 
 
-5\. Create the order:
+##### Step 2.1.5 Create the order
 
 > [!api]
 >
@@ -92,28 +189,15 @@ This API call generates an order that needs to be validated. If you don’t have
 > You will not be able to see the new vDC in the vSphere client until you have assigned the correct permissions to users for the new vDC.
 >
 
-#### Adding new ressources
+#### Step 2.3 Add new hosts and Datastores
 
-You can proceed with ordering new resources to the new Destination vDC following this [Information about Dedicated Cloud billing](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) guide.
+In the OVHcloud Control Panel, you will see your new datacenter attached to your existing service. You can proceed with ordering new hosts and datastores (selected in step 1) in the new Destination vDC following this [Information about Dedicated Cloud billing](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) guide.
 
-#### Converting a datastore to a global datastore
+#### Step 2.4 Convert a datastore to a global datastore
 
-A global datastore is a datastore mounted on all clusters / virtual datacenters within a VMware infrastructure, i.e. shared between the source vDC and the destination vDC :
+You now have new datastores in the new virtual Datacenter, as well as compatible datastores in the previous datacenter. You can convert those datastores to global
 
-Run the OVHcloud API to check datastores compatibility. We recommend selecting the datastores ordered in the new vDC, old datastores may not be compatible.
-
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/checkGlobalCompatible
->
-
-**Expected return:** boolean
-
-If the API return is FALSE, your datastores are not compatible, you will need to order new datastores and use storage motion, using the following [Information about Dedicated Cloud billing](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) and [VMware Storage vMotion](https://docs.ovh.com/gb/en/private-cloud/vmware_storage_vmotion/) guides.
-
-If the API return is TRUE, you can proceed with the conversion to global datastores.
-
-Run the OVHcloud API to check datastores compatibility:
+Run the OVHcloud API to convert the datastore to global:
 
 > [!api]
 >
@@ -122,38 +206,40 @@ Run the OVHcloud API to check datastores compatibility:
 
 **Expected return:** Task information
 
-#### Security
+### Step 3 Prepare your destination vDC in the OVHcloud context
 
-##### **Hosted Private Cloud access**
+#### Step 3.1 Check inherited characteristics (Certifications, KMS, access restrictions)
+
+##### Step 3.1.1 Certifications
+
+These options are enabled per vCenter and apply to any vDC.
+If an option has been enabled, they stay available on the destination vDC.
+
+##### Step 3.1.2 Key Management Server (KMS)
+
+This option is to enable and configure per vCenter and apply to any vDC.
+If virtual machines are protected by encryption, they stay protected on the destination vDC.
+
+##### Step 3.1.3 Access restrictions
 
 For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](../modify-vcenter-access-policy/) for details.
 
 If the access policy has been changed to "Restricted", the new vDC will inherit the access policy that the source vDC uses.
 
-##### **Hosted Private Cloud users**
+#### Step 3.2 Assign users rights
 
 In the lifecycle of the source vDC, a list of users may have been created for business or organisational needs. These users will also be present on the new vDC but will have no permissions on this new vDC. You must therefore assign the users the appropriate rights, depending on the configuration of the destination vDC.
 
 To do this, please refer to our guides on [Changing user rights](../change-users-rights/), [Changing the User Password](../changing-user-password/) and [Associating an email with a vSphere user](../associate-email-with-vsphere-user/).
 
-##### **Backup & DRP Options**
+#### Step 3.3 Activate Veeam Managed Backup & Zerto Disaster Recovery Options
 
-This option is to enable and configure per vDC.
+This options are enabled and configured per vDC.
 You need to enable the relevant option on the new vDC.
 
-##### **Key Management Server (KMS)**
+#### Step 3.4 Check your network (vRack, Public IP)
 
-This option is to enable and configure per vCenter and apply to any vDC.
-If virtual machines are protected by encryption, they stay protected on the destination vDC.
-
-##### **Certifications**
-
-These options are enabled per vCenter and apply to any vDC.
-If an option has been enabled, they stay available on the destination vDC.
-
-#### Network
-
-##### **vRack**
+##### Step 3.4.1 vRack
 
 > [!warning]
 >
@@ -162,15 +248,13 @@ If an option has been enabled, they stay available on the destination vDC.
 
 As part of a migration process, by default, the new vDC will be linked to the same vRack as the source vDC. Please consult our guide to [Using Private Cloud within a vRack](../using-private-cloud-with-vrack/).
 
-##### **Public network**
+##### Step 3.4.2 Public network
 
 The Public IP addresses attached to the source vDC will automatically be available for use in the destination vDC.
 
-### VMware context
+### Step 4 Prepare your destination vDC in the VMware context
 
-#### Step 1: Preparing your destination vDC
-
-##### **1.1 HA**
+#### Step 4.1 Reconfigure VMware High Availability (HA)
 
 The migration involves reconfiguring VMware High Availability (HA), including boot order and priority. Please consult our guide about [VMware HA configuration](../vmware-ha-high-availability/).
 
@@ -184,7 +268,7 @@ Here is a checklist of aspect to take into account:
 
 **Automation tips:** Powercli cmdlet “Get-Cluster” returns information on HA and DRS configuration settings that can be applied to the destination cluster with “Set-Cluster” cmdlet.
 
-##### **1.2 DRS**
+#### Step 4.2 Reconfigure VMware Distributed Resource Scheduler (DRS)
 
 The migration involves reconfiguring the VMware Distributed Resource Scheduler (DRS) feature, in particular the affinity or anti-affinity rules for groups of hosts and VMs. Please consult our guide about [configuring VMware DRS](../vmware-drs-distributed-ressource-scheduler/).
 
@@ -197,7 +281,7 @@ Here is a checklist of aspects to take into account:
 
 **Automation tips:** [This VMware community thread](https://communities.vmware.com/t5/VMware-PowerCLI-Discussions/Backup-Restore-DRS-VM-affinity-anti-affinity-rules-can-these-be/td-p/733981/page/2) details options to export and import affinity-rules via powercli.
 
-##### **1.3 Resource pools**
+#### Step 4.3 Rebuild resource pools
 
 The migration requires rebuilding resource pools including reservations, shares, and vApps. This also applies to vApps and any start-up order configuration set in the vApps.
 
@@ -212,7 +296,7 @@ Here is a checklist of aspects to take into account:
 
 **Automation tips:** Powercli cmdlet “Get-ResourcePool” to gather the resource pool information and cmdlet “New-ResourcePool” to recreate the resource pool on the destination vDC.
 
-##### **1.4 Datastore Clusters**
+#### Step 4.4 Recreate Datastores Clusters (if relevant)
 
 If datastore clusters are present in the source vDC, migration may involve the need to recreate these Datastore Clusters on the destination vDC if the same level of structure and SDRS is needed.
 
@@ -223,11 +307,11 @@ Here is a checklist of aspects to take into account:
 - SDRS affinity/anti-affinity rules
 - SDRS VM Overrides
 
-##### **1.5 vSAN**
+#### Step 4.5 Enable vSAN (if relevant)
 
 If vSAN was enabled on your source VDC, you will need to enable it again on the destination vDC. Please refer to our guide on [Using VMware Hyperconvergence with vSAN](../vmware-vsan/).
 
-##### **1.6 vSphere networking**
+#### Step 4.6 Recreate vSphere networking
 
 Migration involves recreating the vRack VLAN-backed portgroups on the destination vDC to ensure VM network consistency. If vRack VLANs are in use on the source VDC, vRack can be used to stretch the L2 domain to the destination vDC to allow for a more phased migration plan. For more information consult our guide about [Using Hosted Private Cloud within a vRack](../using-private-cloud-with-vrack/).
 
@@ -250,34 +334,15 @@ For more information, consult OVHcloud's guide [How to create a V(x)LAN within a
 > - However, if promiscuous mode needs to be enabled on the “VM Network” portgroup in the new vDC, please open a ticket with OVHcloud support before migration to ensure connectivity remains during migration.
 >
 
-##### **1.7 Veeam backup configuration**
-
-If OVHcloud provided Veeam is currently in use to backup VMs on the source vDC, it will be necessary to use the OVH API to re-check the backup jobs after the VMs have been migrated to the new vDC.
-
-Here is how to proceed:
-
-1\. Enable backup for the new vDC.
-
-2\. Migrate the VM(s) from source vDC to destination vDC.
-
-3\. Run the OVHcloud API to re-check the backup date:
-
-> [!api]
->
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
->
-
-4\. Repeat steps 2 and 3 for all VMs that have backups enabled and have been migrated to the new vDC.
-
-##### **1.8 Inventory organisation (optional)**
+#### Step 4.7 Check inventory organisation (if relevant)
 
 For organisational reasons, the VMs, hosts or datastores may have been placed in directories.
 
 If you still need this organisation, you will need to create it again in the destination vDC.
 
-##### **1.9 NSX**
+#### Step 4.8 Configure NSX
 
-###### **1.9.1 VXLAN Transport Zone**
+##### Step 4.8.1 v(x)lan Transport Zones
 
 Whether or not VXLANs or DLRs are in use in the source vDC, it will be required to extend Transport Zone(s) when moving from source vDC to destination vDC if NSX Edges are in use. The reason behind this is to create PCC-wide VXLAN network IDs that will assist in Edge migration
 
@@ -306,7 +371,7 @@ You can also create new VXLAN networks by following these steps:
 
 4\. Click `Add`{.action}.
 
-###### **1.9.2 NSX Edges**
+##### Step 4.8.2 NSX Edges
 
 To migrate an edge gateway, we need to instruct NSX manager to redeploy the edge gateway into the destination vDC. This is to ensure consistency within the NSX manager database. To do this, we need all interfaces on an edge gateway to be attached to VXLANs.
 
@@ -385,7 +450,7 @@ You can migrate an NSX Edge by following these steps:
 > If you migrated the edge while HA was enabled and you are experiencing connectivity problems, it is recommended to failover the HA edges and re-test. This can be done by going to `Configure`{.action}, `Appliance Settings`{.action} and selecting the cog for the active edge then selecting `Set Admin State Down`{.action}. Re-test and change the admin state back to "Up".
 >
 
-###### **1.9.3 NSX Distributed Logical Routing**
+##### Step 4.8.3 NSX Distributed Logical Routing
 
 Once the NSX Transport Zone has been extended to the new vDC, Distributed Logical Routing will be available in the ESXi hosts on the destination vDC.
 
@@ -395,7 +460,7 @@ If a control VM is deployed, please follow the NSX Edge migration steps above.
 
 Note that you will not need to change interfaces as DLRs **must** already connect to VXLANs.
 
-###### **1.9.4 NSX Distributed Firewall**
+##### Step 4.8.4 NSX Distributed Firewall
 
 The NSX Distributed Firewall protects the entire vDC automatically.  Thus, any new vDC will also be protected.
 
@@ -412,7 +477,7 @@ Objects that will need to be addressed:
 - Resource Pool
 - vApp
 
-##### **1.10 Zerto Replication**
+#### Step 4.9 Extend Zerto Disaster Recovery Protection (if relevant)
 
 The Zerto Replication is configured at the vDC level. To protect workload on the new vDC, you need to do some actions.
 
@@ -450,15 +515,20 @@ The next step depends on the current configuration per [Virtual Protection Group
 - source of replication
 - destination of replication
 
-##### **1.10.1 VPG as Source**
+##### Step 4.9.1 VPG as Source
 
 With the migration on the new vDC, Zerto will continue to protect workload with vRA deployed on the target cluster and hosts.
 
-##### **1.10.1 VPG as destination**
+##### Step 4.9.2 VPG as destination
 
 Unfortunately, there is no way to update VPG configuration, the only option is to delete the VPG and create a new one.
 
-#### Step 2: VM Migration
+### Step 5 Migrate your workload
+
+#### Step 5.1 Storage Motion
+You now have old datastores in the previous vDC (not compatible with the new ranges) and global datastores (either previous compatbile ones or new ones). You can use [Storage Motion](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-AB266895-BAA4-4BF3-894E-47F99DC7B77F.html) to move a virtual machine and its disk files from one datastore to another while the virtual machine is running. 
+
+#### Step 5.2 vMotion
 
 Since both source and destination vDC are within the same vCenter, hot or cold VMware VMotion can be used to migrate VMs.
 
@@ -476,17 +546,28 @@ Here is a checklist of aspects to take into account:
 > It is recommended to test the migration path with low-impact or test VMs before production migration.
 >
 
-#### Step 3: Post migration tasks
+### Step 6 Finalize your migration
 
-##### **Affinity rules**
+#### Step 6.1 Reconfigure Veeam Managed Backup (if relevant)
 
-Affinity rules are based on VM objects so rules can only be created after VMs have been migrated to the destination PCC. Once the migration is completed, affinity rules can be re-applied on the destination PCC.
+If OVHcloud provided Veeam is currently in use to backup VMs on the source vDC, it will be necessary to use the OVH API to re-check the backup jobs after the VMs have been migrated to the new vDC.
 
-**Automation tips:** [This VMware community thread](https://communities.vmware.com/t5/VMware-PowerCLI-Discussions/Backup-Restore-DRS-VM-affinity-anti-affinity-rules-can-these-be/td-p/733981/page/2) details options to export and import affinity-rules via powercli.
+Here is how to proceed:
 
-##### **Veeam backup configuration**
+1\. Enable backup for the new vDC.
 
-Disable Veeam Backup on the old vDC. It can be made with the following API call:
+2\. Migrate the VM(s) from source vDC to destination vDC.
+
+3\. Run the OVHcloud API to re-check the backup date:
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
+>
+
+4\. Repeat steps 2 and 3 for all VMs that have backups enabled and have been migrated to the new vDC.
+
+Then, you need to disable Veeam Backup on the old vDC. It can be made with the following API call:
 
 > [!api]
 >
@@ -500,7 +581,7 @@ Disable Veeam Backup on the old vDC. It can be made with the following API call:
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter
 >
 
-##### **Zerto Replication**
+#### Step 6.2 Reconfigure Zerto Disaster Recovery (if relevant)
 
 Run the OVHcloud API to finalize the migration:
 
@@ -522,18 +603,13 @@ A task is launched to :
 - Switch the Zerto Replication option (subscription) from the old to the new vDC.
 - Remove all vRA from hosts on the old vDC.
 
-##### **Remove previous vDC**
+#### Step 6.3 Recreate Affinity rules
 
-At this step, we can consider there is no longer any data and/or VM on the old vDC, so we can now remove resources.
+Affinity rules are based on VM objects so rules can only be created after VMs have been migrated to the destination PCC. Once the migration is completed, affinity rules can be re-applied on the destination PCC.
 
-In the following instructions, `{datacenterId}` is the **old** vDC id, you can get it with the following API call:
+**Automation tips:** [This VMware community thread](https://communities.vmware.com/t5/VMware-PowerCLI-Discussions/Backup-Restore-DRS-VM-affinity-anti-affinity-rules-can-these-be/td-p/733981/page/2) details options to export and import affinity-rules via powercli.
 
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
->
-
-#### **Put hosts in maintenance mode**
+#### Step 6.4 Put hosts in maintenance mode
 
 You must put hosts in maintenance mode by following these steps:
 
@@ -545,7 +621,16 @@ You must put hosts in maintenance mode by following these steps:
 
 Repeat action for each host.
 
-#### **Remove Datastores**
+#### Step 6.5 Remove old datastores
+
+At this step, we can consider there is no longer any data and/or VM on the old vDC, so we can now remove resources.
+
+In the following instructions, `{datacenterId}` is the **old** vDC id, you can get it with the following API call:
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+>
 
 With the API, get the filer (datastore) id list:
 
@@ -573,7 +658,16 @@ A task is created for each call, you can follow the progress with:
 > Wait for the full completion of tasks before continuing.
 >
 
-#### **Remove Hosts**
+#### Step 6.6 Remove old hosts
+
+At this step, we can consider there is no longer any data and/or VM on the old vDC, so we can now remove resources.
+
+In the following instructions, `{datacenterId}` is the **old** vDC id, you can get it with the following API call:
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+>
 
 With the API, get the host id list:
 
@@ -601,7 +695,16 @@ A task is created for each call, you can follow the progress with:
 > Wait for the full completion of tasks before continuing.
 >
 
-#### **Remove vDC**
+#### Step 6.6 Remove vDC
+
+At this step, we can consider there is no longer any data and/or VM on the old vDC, so we can now remove resources.
+
+In the following instructions, `{datacenterId}` is the **old** vDC id, you can get it with the following API call:
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+>
 
 With the API, ask for the vDC deletion:
 
