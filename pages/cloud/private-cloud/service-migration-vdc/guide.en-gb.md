@@ -34,7 +34,7 @@ There are two aspects involved in this process
 - access to the vSphere Control Panel
 
 ## Instructions
-[!NOTE]
+>[!note]
 >This guide will utilise the notions of a **source vDC** and a **destination vDC**. Please find an index of the tasks you will be performing :
 >- Step 1 Design your infrastructure
 >>- Step 1.1 Choose between Premier or Essentials
