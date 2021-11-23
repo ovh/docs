@@ -13,7 +13,7 @@ order: 09
 
 ## Objectif
 
-Avec l'outil **VMware Update Manager** vous pouvez mettre à jour (patch de sécurité et critique) vos hôtes sans intervention de nos équipes. (Une mise à jour du vCenter ou majeure de votre hôte requiert une opération de notre part)
+VMware Update Manager permet de maintenir vos hôtes à jour en installant les sans intervention de nos équipes. (Une mise à jour du vCenter ou majeure de votre hôte requiert une opération de notre part)
 
 **Ce guide explique le fonctionnement de cet outil**
 
