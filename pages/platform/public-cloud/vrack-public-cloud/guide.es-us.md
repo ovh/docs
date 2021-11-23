@@ -114,7 +114,7 @@ Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=got
 
 ![selección del proyecto](images/vrack2021-05.png){.thumbnail}
 
-En el menú lateral izquierdo, haga clic en `Private network`{.action}. 
+En el menú lateral izquierdo, haga clic en `Private Network`{.action}. 
 
 ![Private Network](images/vrack2021-02.png){.thumbnail}
 
@@ -122,7 +122,7 @@ Haga clic en el botón `Crear un vRack para empezar`{.action}. A continuación, 
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
-Para continuar la configuración del vRack desde el área de cliente de OVHcloud, continúe leyendo esta guía [Crear una VLAN en el vRack desde el área de cliente de OVHcloud](./#crear-una-vlan-desde-el-area-de-cliente-de-ovhcloud).
+Para continuar la configuración del vRack desde el área de cliente de OVHcloud, continúe leyendo esta guía: [Crear una VLAN en el vRack desde el área de cliente de OVHcloud](./#crear-una-vlan-desde-el-area-de-cliente-de-ovhcloud).
 
 #### Desde la APIv6 de OVHcloud
 
@@ -156,7 +156,7 @@ Con la APIv6 de OVHcloud podrá personalizar todos los parámetros: rango IP (10
 
 #### Crear una VLAN desde el área de cliente de OVHcloud
 
-Una vez creado el vRack, vuelva a hacer clic en `Private network`{.action} en el menú lateral izquierdo. 
+Una vez creado el vRack, vuelva a hacer clic en `Private Network`{.action} en el menú lateral izquierdo. 
 
 ![Creación de la VLAN](images/vrack2021-03.png){.thumbnail}
 
@@ -168,7 +168,7 @@ Si marca la casilla `Indicar un ID de VLAN`, deberá elegir un número de VLAN d
 
 Si no marca la casilla `Indicar un ID de VLAN`, se mostrará por defecto en la VLAN 0.
 
-Si desea que los servidores dedicados de OVHcloud se comuniquen con una VLAN etiquetada, consulte la siguiente guía: [Crear varias VLAN en el vRack](../../dedicated/crear-vlan-vrack/).
+Si desea que los servidores dedicados de OVHcloud se comuniquen con una VLAN « etiquetada », consulte la siguiente guía: [Crear varias VLAN en el vRack](../../dedicated/crear-vlan-vrack/).
 
 El rango DHCP predeterminado es 10.0.0.0/16. Para modificar el rango de IP, es necesario utilizar las APIv6 de OVHcloud.
 

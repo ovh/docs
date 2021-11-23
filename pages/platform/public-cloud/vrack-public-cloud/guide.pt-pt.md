@@ -48,7 +48,7 @@ Interface visual independente da OVHcloud, [Horizon](https://horizon.cloud.ovh.n
 
 Esta interface completa e técnica permite-lhe gerir a quase totalidade das ações OpenStack. Esta será uma das interfaces necessárias se deseja gerir mais de duas VLAN, adicionar interfaces de rede privadas às suas instâncias, gerir imagens personalizadas, etc..
 
-Consulte o guia [Criar um acesso à interface Horizon](../criar_um_acesso_a_interface_horizon/) para se familiarizar com o Horizon.
+Consulte o guia: [Criar um acesso à interface Horizon](../criar_um_acesso_a_interface_horizon/) para se familiarizar com o Horizon.
 
 > [!primary]
 > Uma vez que o Horizon funciona por zona, pense bem em escolher a sua zona geográfica de trabalho no topo à esquerda da sua interface (GRA5, SBG3, BHS1, etc...)
@@ -115,7 +115,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 ![seleção do projeto](images/vrack2021-05.png){.thumbnail}
 
-Clique em `Private network`{.action} no menu lateral à esquerda. 
+Clique em `Private Network`{.action} no menu lateral à esquerda. 
 
 ![Private Network](images/vrack2021-02.png){.thumbnail}
 
@@ -145,7 +145,7 @@ A partir das APIv6 OVHcloud, poderá personalizar o conjunto dos parâmetros: in
 > [!primary]
 > Nos servidores dedicados, por predefinição, está na VLAN 0. O funcionamento da infraestrutura OpenStack significa que deverá especificar o número da sua VLAN diretamente ao nível da infraestrutura.
 >
-> Contrariamente aos servidores dedicados, não é necessário "tagar" a VLAN diretamente numa instância Public Cloud. 
+> Contrariamente aos servidores dedicados, não é necessário « tagar » a VLAN diretamente numa instância Public Cloud. 
 >
 > Para mais informações sobre a gestão das VLAN do vRack dos servidores dedicados, pode consultar este guia: [Criar várias VLAN no vRack](../../dedicated/criar-vlan-vrack/).
 
@@ -194,7 +194,7 @@ Existem duas situações:
 
 ##### **A partir da Área de Cliente OVHcloud**
 
-Consulte o guia [Criar uma instância a partir da Área de Cliente](../public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia). Ao criar uma instância, poderá especificar, na etapa 4, uma rede privada na qual poderá integrar a sua instância. Escolha, no menu pendente apresentado, o seu vRack criado anteriormente.
+Consulte o guia: [Criar uma instância a partir da Área de Cliente](../public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia). Ao criar uma instância, poderá especificar, na etapa 4, uma rede privada na qual poderá integrar a sua instância. Escolha, no menu pendente apresentado, o seu vRack criado anteriormente.
 
 ![attach new instance](images/vrack6.png){.thumbnail}
 

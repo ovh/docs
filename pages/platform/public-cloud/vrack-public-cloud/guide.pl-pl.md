@@ -11,7 +11,7 @@ order: 1
 >
 
 
-**Ostatnia aktualizacja dnia 2021-11-17**
+**Ostatnia aktualizacja dnia 17/11/2021**
 
 ## Wprowadzenie
 
@@ -110,7 +110,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 ![wybór projektu](images/vrack2021-05.png){.thumbnail}
 
-Kliknij pozycję `Private network`{.action} na lewym pasku nawigacyjnym.
+Kliknij pozycję `Private Network`{.action} na lewym pasku nawigacyjnym.
 
 ![Prywatne sieci](images/vrack2021-02.png){.thumbnail}
 
