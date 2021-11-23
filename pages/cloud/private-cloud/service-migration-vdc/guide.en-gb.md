@@ -106,8 +106,8 @@ Here are a few guidelines:
 
 You have now chosen your commercial range.
 
-Based on your needs in terms of compute (CPU, RAM), you can select which type and how much hosts you would order between [Essentials hosts](https://www.ovhcloud.com/fr/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/hosts/)
-For exemple, if you currently use 3xDC2016 XL+, and have choosen Essentials, you can upgrade to 3xESS128 (thanks to more powerful CPU) or 3*ESS256 (if RAM is your criteria)
+Based on your needs in terms of compute (CPU, RAM), you can select which type and how much hosts you would order between [Essentials hosts](https://www.ovhcloud.com/fr/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/hosts/). For exemple, if you currently use 3xDC2016 XL+, and have choosen Essentials, you can upgrade to 3xESS128 (thanks to more powerful CPU) or 3*ESS256 (if RAM is your criteria). 
+
 Please note that this choice is not definitive, you can start with the 3xESS128 and upgrade to 3xESS256 later on.
 
 #### Step 1.3 Select your datastores (storage)
