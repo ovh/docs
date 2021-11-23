@@ -7,16 +7,17 @@ section: Object Storage Standard (Swift)
 
 **Dernière mise à jour le 27/10/2021**
 
-## Préambule
+## Objectif
+
 Un conteneur de type Public est une bonne solution pour partager vos fichiers via internet, puisque tout le monde est en mesure d'accéder à vos données. Afin de faciliter ce partage sans utiliser une longue URL, il est possible d'utiliser un nom de domaine, qui peut être le même que celui de votre site.
 
 Ce guide vous explique donc comment configurer un nom de domaine sur vos conteneurs afin d'en faciliter l'accès.
 
 
 ### Prérequis
-- Consultez le guide [Création de conteneur de stockage](../pcs_create_container_in_customer_panel/guide.fr-fr.md){.ref}
-- Un nom de domaine
 
+- Consultez le guide [Création de conteneur de stockage](https://docs.ovh.com/fr/storage/pcs/creation-de-conteneur/)
+- Un nom de domaine
 
 ## Comment cela fonctionne ?
 

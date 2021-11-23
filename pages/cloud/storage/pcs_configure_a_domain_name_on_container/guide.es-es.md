@@ -6,24 +6,20 @@ section: Object Storage Standard (Swift)
 legacy_guide_number: g2006
 ---
 
+## Objetivo
 
-## 
 Si crea un contenedor de tipo público, todo el mundo podrá acceder a sus datos, lo cual es una buena opción para compartir sus archivos en internet.
 
 Sin embargo, para poder compartir sus archivos con sus amigos, por ejemplo, deberá proporcionarles una larga URL que suele ser difícil de retener. Además, también es posible que quiera utilizar esos objetos en su sitio web sin tener que utilizar por ello un dominio distinto.
 
 Esta guía explica cómo configurar un dominio en sus contenedores para facilitar el acceso a ellos proporcionando una URL personalizada.
 
-
 ## Requisitos
+
 Para seguir todos los pasos de esta guía, es necesario:
 
-
-- [Añadir espacios de almacenamiento](https://docs.ovh.com/es/public-cloud/anadir_espacios_de_almacenamiento/)
+- [Añadir espacios de almacenamiento](https://docs.ovh.com/gb/en/storage/pcs/create-container/) (EN)
 - Tener un dominio registrado
-
-
-
 
 ## La teoría
 Cuando llega una petición HTTP al Object Storage de OpenStack, se realiza una comprobación en la cabecera «host»: si esta es distinta del nombre real del host, el sistema lo considera como un registro mapeado y envía una petición DNS para obtener el registro DNS completo que corresponde al host.

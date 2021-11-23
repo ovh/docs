@@ -5,17 +5,16 @@ excerpt: Find here how to configure a domain name on your Object Storage contain
 section: Object Storage Standard (Swift)
 ---
 
+## Objective
 
-## Preamble
 When you create a Public Storage Container, anyone can access your data. It is the ideal solution to share files over the Internet. However, you will need to provide a long URL to do so, which is hard to remember. If you want to use this content on your own website it may be simpler to use your own domain name. This means you can share your data with a customised URL that is easier to remember.
 
 This guide shows you how to configure a domain on your container.
 
+## Requirements
 
-### Prerequisites
-- [Have a storage space](https://docs.ovh.com/us/en/storage/create_an_object_container/){.ref}
+- [Have a storage space](https://docs.ovh.com/us/en/storage/pcs/create-container/)
 - A domain name
-
 
 ## How does it work?
 

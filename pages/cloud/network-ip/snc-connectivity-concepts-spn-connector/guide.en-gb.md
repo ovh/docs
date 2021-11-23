@@ -23,7 +23,7 @@ SPN can route trafic through SPN Connector:
 * NOT between two SPN of the same Zone.
 * An SPN can not be connected to two SPN Connector.
 
-![SPN connector rules](spn-connector-rules1.svg){.thumbnail}
+![SPN connector rules](images/spn-connector-rules1.svg){.thumbnail}
 
 All routes are forwarded through SPN Connector, no ACL/filtering is possible.
 
