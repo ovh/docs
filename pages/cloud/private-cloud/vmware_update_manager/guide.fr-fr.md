@@ -1,146 +1,108 @@
 ---
 title: VMware Update Manager
 slug: vmware-update-manager
-excerpt: Utiliser l'outil de VMware pour tenir à jour vos hôtes.
+excerpt: Utilisez l'outil de VMware pour maintenir à jour vos hôtes
 legacy_guide_number: '2163146'
-space_key: VS
-space_name: vSphere as a Service
 section: Fonctionnalités VMware vSphere
 order: 09
 ---
 
-**Dernière mise à jour le 22/02/2019**
+**Dernière mise à jour le 23/11/2021**
 
 ## Objectif
 
-Avec l'outil **VMware Update Manager** vous pouvez mettre à jour (patch de sécurité et critique) vos hôtes sans intervention de nos équipes. (Une mise à jour du vCenter ou majeure de votre hôte requiert une opération de notre part)
+Le gestionnaire de mises à jour de VMware permet de maintenir vos hôtes à jour en installant les *Bug Fixes* et Patchs de sécurité, sans intervention de nos équipes.     
+
+> [!primary]
+> Les mises à jour de vCenter ou les mises à jours majeures nécessitent toujours notre participation.
 
 **Ce guide explique le fonctionnement de cet outil**
 
+## Prérequis
+
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+
 ## En pratique
 
-### Mise en maintenance
+### Mode de maintenance
 
-Avant toute chose, il est recommandé de mettre votre hôte en mode **maintenance** en faisant un clic droit sur celui-ci, puis `mode maintenance` et `passer en mode maintenance`{.action} .
+Avant de travailler sur un hôte, vous devez le mettre en mode de maintenance.    
+En effet, patcher entraîne la plupart du temps un redémarrage de l'hôte et cela limitera l'impact sur vos VMs de production. 
 
-En effet, la quasi totalité des mises à jour nécessitent un redémarrage de l'hôte.
+Dans le menu de l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`{.action}.
 
-Durant la mise en maintenance, les machines virtuelles enregistrées seront automatiquement transférées sur un autre hôte de votre cluster si la fonction [DRS](https://docs.ovh.com/fr/private-cloud/vmware-drs-distributed-ressource-scheduler-new/){.external-link} est en mode entièrement automatisé. Si ce n'est pas le cas, vous pouvez modifier ce paramètre, ou déplacer vos machines virtuelles manuellement en effectuant des *[vMotion](https://docs.ovh.com/fr/private-cloud/vmware-vmotion-new/){.external-link}*.
+![Maintenance](images/en01menu.png){.thumbnail}
 
-### Update Manager
+Sur la gauche de l'écran, faites un clic-droit sur votre hôte. Dans la section `Mode de maintenance`{.action}, selectionnez `Passer en mode de maintenance`{.action}.
 
-Vous pouvez retrouver l'onglet `Update Manager` en selectionnant votre cluster.
+![Maintenance](images/en02maintenance.png){.thumbnail}
 
-![](images/Update.png){.thumbnail}
+Assurez-vous que la case est cochée à l'étape suivante puis cliquez sur `OK`{.action}.
 
-#### Attacher une ligne de base
+![Maintenance](images/en03enter.png){.thumbnail}
 
-Dans un premier temps, vous devez attacher les lignes de bases.
-
-Pour cela cliquez sur le bouton `Attacher une ligne de base...`{.action}
-
-![](images/Upgrade2.png){.thumbnail}
-
-#### Rechercher des mises à jour
-
-Les lignes de base étant attachées, vous pouvez à présent cliquer sur le bouton `Rechercher des mises à jour...`{.action}
-
-![](images/Update1.png){.thumbnail}
-
-Cochez les options suivantes et lancez le **Scan** en cliquant sur `Ok`{.action}
-
-- Patches and Extensions
-- Upgrades
-
-Une tâche se lancera par la suite :
-
-![](images/Update3.png){.thumbnail}
-
-### Transférer des correctifs
-
-Le **scan** étant terminé il est à présent possible de télécharger les différents correctifs sur l'hôte de votre choix.
+En supposant que DRS est actif, vos VMs de production seront migrées vers un autre hôte.
 
 > [!primary]
+> Si vous avez personnalisé votre environnement, vous pourriez avoir à effectuer manuellement les migrations des VMs.
 >
-> Cette opération sera à effectuer pour chaque hôte.
->
 
-Pour télécharger les mises à jour, cliquez sur le bouton `Transférer des correctifs...`{.action}.
+L'avertissement suivant peut apparaître :     
 
-Une nouvelle fenêtre s'ouvrira avec plusieurs étapes.
+![Maintenance](images/en04warning.png){.thumbnail}
 
-Renseignez les lignes de base attachées précedemment
+Votre hôte est alors en mode de maintenance.
 
-![](images/Update4.png){.thumbnail}
+![Maintenance](images/en05maintenanced.png){.thumbnail}
 
-Séléctionnez l'hôte sur lequel vous souhaitez appliquer les mises à jour.
+### Mises à jour
 
-![](images/Update5.png){.thumbnail}
+Selectionnez votre hôte et rendez-vous dans la section `Mises à jour`{.action}.
+Vous voyez les différents statuts de base et la conformité de l'hôte.     
 
-Séléctionnez ensuite les mises à jour que vous souhaitez appliquer. Par défaut tout est séléctionné.
+Vous allez devoir appliquer une « ligne de base » pour vérifier la conformité.
 
-![](images/Update6.png){.thumbnail}
+![Update](images/en06summary.png){.thumbnail}
 
-Enfin un résumé est disponible. Si tout est conforme, vous pouvez cliquez sur `Terminer`{.action}.
+Dans la section `Lignes de base attachées`, cliquez sur `Attacher`{.action} puis `Attacher une ligne de base ou un groupe de...`{.action}.
 
-![](images/Update7.png){.thumbnail}
+![Update](images/en07attach.png){.thumbnail}
 
-Une tâche se lancera sur le cluster, puis sur l'hôte.
-
-![](images/Update8.png){.thumbnail}
-
-### Corriger
-
-Les correctifs sont à présent téléchargés sur l'hôte, vous pouvez maintenant les appliquer.
+Il existe des lignes de bases prédéfinies pour les différents niveau de correctifs recommandés.
 
 > [!primary]
+> Dans notre exemple, nous utilisons les correctifs critiques mais vous pouvez utiliser les deux lignes existantes ou en créer d'autres à votre convenance pour couvrir les différents besoins de votre environnement.
 >
-> Seul cette étape nécessite le passage en mode maintenance de votre hôte.
-> 
 
-Pour appliquer ces correctifs, cliquez sur le bouton `Corriger...`{.action}.
+Sélectionnez la ligne de base requise puis cliquez sur `Attacher`{.action}.
 
-Une nouvelle fenêtre s'ouvrira pour configurer l'application des mises à jour.
+![Update](images/en08define.png){.thumbnail}
 
-A nouveau, renseignez les lignes de base :
+Le résumé de conformité se met alors à jour.     
 
-![](images/Update9.png){.thumbnail}
+![Update](images/en09noncompliant.png){.thumbnail}
 
-Puis l'hôte en mode maintenance sur lequel les mises à jour seront appliquées.
+Retournez dans la section `Lignes de base attachées`, sélectionnez toutes les lignes de bases assignées et cliquez sur `Corriger`{.action}.
 
-![](images/Update10.png){.thumbnail}
+![Update](images/en10remediate.png){.thumbnail}
 
-Vous retrouvez ensuite la liste des mises à jour téléchargées à l'étape précédente.
+Sélectionnez l'hôte et cliquez à nouveau sur `Corriger`{.action}.
 
-![](images/Update11.png){.thumbnail}
+![Update](images/en11remediate.png){.thumbnail}
 
-Dans les options avancées, vous pouvez planifier votre application. Si vous laissez décoché, elle s'appliquera immédiatement.
+Le processus de mise à jour démarre et durera en fonction du nombre et de la taille des correctifs appliqués.<br>
+Si nécessaire, votre hôte sera redémarré automatiquement.
 
-![](images/Update12.png){.thumbnail}
+![Update](images/en12remediating.png){.thumbnail}
 
-Si vous n'avez pas placé votre hôte en mode maintenance ou si vous planifiez l'application des correctifs à une heure ou date ultérieur, vous pouvez planifier la mise en maintenance à cette étape.
+A la fin du processus, la vérification de conformité sera relancée (ou elle peut etre forcée en cliquant sur le lien) et une coche verte devrait apparaître.
 
-![](images/Update13.png){.thumbnail}
+![Update](images/en13compliant.png){.thumbnail}
 
-Cette ultime étape permet de désactiver certaines options du cluster et de certaines machines virtuelles pour permettre la bonne exécution des mises à jour.
+Votre hôte est maintenant à jour.    
 
-La désactivation du contrôle d'admission peut être interessante si vous ne disposez pas d'assez de ressources en cas de perte d'un hôte (en plus de celui sur lequel vous appliquez les mises à jour).
-
-Il est simplement necessaire de réactiver ce paramètre en editant [la fonction HA du cluster](https://docs.ovh.com/fr/private-cloud/vmware-ha-high-availability/){.external-link}, une fois les mises à jour appliquées sur les différents hôtes.
-
-![](images/Update14.png){.thumbnail}
-
-Enfin, un résumé sera disponible et si tout est en ordre, vous pourrez cliquez sur `Terminer`{.action} pour lancer l'application des mises à jour et le redémarrage de l'hôte.
-
-![](images/Update15.png){.thumbnail}
-
-Une première tâche se lancera sur le cluster, et en fonction des paramètres choisis, d'autres pourront se lancer également sur le cluster.
-
-Enfin, les tâches d'installation et de redémarrage se lanceront sur l'hôte.
-
-![](images/Update16.png){.thumbnail}
-
-Après quelques minutes, votre hôte sera à jour, vous pourrez le sortir du mode maintenance, et si besoin effectuer ces actions sur un autre hôte.
+N'oubliez pas de le sortir du mode de maintenance et il sera de retour en production.
 
 ## Aller plus loin
 
