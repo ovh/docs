@@ -5,6 +5,10 @@ excerpt: 'Saiba como configurar uma rede privada entre uma instância Public Clo
 section: vRack
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 22/11/2021**
 
 ## Sumário
@@ -60,7 +64,7 @@ Existem duas situações:
 
 #### Caso de uma nova instância
 
-Se precisar de ajuda, consulte o guia [Criar uma instância Public Cloud](../public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia){.external}. Ao criar uma instância, poderá especificar, na etapa 4, uma rede privada na qual poderá integrar a sua instância. Escolha, no menu pendente apresentado, o seu vRack criado anteriormente.
+Se precisar de ajuda, consulte o guia: [Criar uma instância Public Cloud](../public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia){.external}. Ao criar uma instância, poderá especificar, na etapa 4, uma rede privada na qual poderá integrar a sua instância. Escolha, no menu pendente apresentado, o seu vRack criado anteriormente.
 
 #### Caso de uma instância já existente
 

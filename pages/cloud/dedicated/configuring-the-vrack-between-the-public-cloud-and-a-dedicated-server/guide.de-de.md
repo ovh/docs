@@ -5,7 +5,11 @@ excerpt: 'Hier erfahren Sie, wie Sie ein privates Netzwerk zwischen einer Public
 section: vRack
 ---
 
-**Stand 02.04.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 22.11.2021**
 
 ## Einleitung
 
@@ -59,7 +63,7 @@ Es können zwei Situationen auftreten:
 
 #### Fälle einer neuen Instanz
 
-Wenn Sie Hilfe benötigen, lesen Sie die Anleitung [Public Cloud Instanz erstellen](../public-cloud-erste-schritte/#schritt-3-instanz-erstellen){.external}. Bei der Erstellung einer Instanz können Sie in Schritt 4 ein privates Netzwerk angeben, in das Ihre Instanz integriert werden kann. Wählen Sie dann im dargestellten Drop-down-Menü Ihr zuvor erstelltes vRack aus.
+Wenn Sie Hilfe benötigen, folgen Sie zunächst diesem Leitfaden:[Erstellen Ihrer ersten Public Cloud-Instanz](../public-cloud-erste-schritte/#schritt-3-instanz-erstellen){.external}. Bei der Erstellung einer Instanz können Sie in Schritt 4 ein privates Netzwerk angeben, in das Ihre Instanz integriert werden kann. Wählen Sie dann im dargestellten Drop-down-Menü Ihr zuvor erstelltes vRack aus.
 
 #### Fälle einer bereits bestehenden Instanz
 

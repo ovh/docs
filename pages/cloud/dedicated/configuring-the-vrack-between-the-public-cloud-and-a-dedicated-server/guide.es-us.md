@@ -72,11 +72,11 @@ Es posible asociar una instancia existente a una red privada. Para más informac
 
 ### Crear un VLAN ID
 
-Para que los dos servicios puedan comunicarse entre sí, deben estar "etiquetados" con el mismo **VLAN ID**. 
+Para que los dos servicios puedan comunicarse entre sí, deben estar z etiquetados » con el mismo **VLAN ID**. 
 
 #### Uso de la VLAN ID por defecto
 
-En los servidores dedicados, por defecto está en la VLAN **0**. Si quiere utilizar este ID, deberá etiquetar la red privada asociada a su instancia con la VLAN **0**. Para ello, no marque la casilla `Indicar un ID de VLAN` al añadir una red privada a la instancia.
+En los servidores dedicados, por defecto está en la VLAN **0**. Si quiere utilizar este ID, deberá « etiquetar » la red privada asociada a su instancia con la VLAN **0**. Para ello, no marque la casilla `Indicar un ID de VLAN` al añadir una red privada a la instancia.
 
 Para más información, consulte [esta sección](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#step-2-creating-a-vlan-in-the-vrack_1) de la guía correspondiente.
 

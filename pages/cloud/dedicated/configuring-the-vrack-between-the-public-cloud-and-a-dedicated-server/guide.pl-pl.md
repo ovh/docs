@@ -5,11 +5,15 @@ excerpt: 'Dowiedz się, jak skonfigurować prywatną sieć między instancją Pu
 section: vRack
 ---
 
-**Ostatnia aktualizacja z dnia 26-10-2018**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 22-11-2021**
 
 ## Wprowadzenie
 
-Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](https://www.ovh.pl/serwery_dedykowane/){.external} OVH. Umożliwia ponadto dodawanie [instancji Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external} do Twojej prywatnej sieci w celu utworzenia infrastruktury z zasobów fizycznych i wirtualnych. 
+Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](https://www.ovhcloud.com/pl/bare-metal/) OVHcloud. Umożliwia ponadto dodawanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) do Twojej prywatnej sieci w celu utworzenia infrastruktury z zasobów fizycznych i wirtualnych. 
 
 **Niniejszy przewodnik wyjaśnia, jak skonfigurować prywatną sieć między instancją Public Cloud a serwerem dedykowanym.**
 
@@ -34,7 +38,7 @@ Przejdź do menu `Bare Metal Cloud`{.action} i kliknij przycisk `Zamów`{.action
 
 ![Zamów usługę vrack](images/orderingvrack.png){.thumbnail}
 
-Zostaniesz przekierowany na inną stronę, aby zatwierdzić zamówienie. Operacja zajmie kilka minut.
+Zostaniesz przekierowany na inną stronę, aby zatwierdzić zamówienie, operacja zajmie kilka minut.
 
 Po zainstalowaniu usługi vRack możesz dodać swój projekt.
 
@@ -47,7 +51,7 @@ Na liście usług kwalifikowanych wybierz projekt, który chcesz dodać do sieci
 ![dodaj projekt do usługi vrack](images/addprojectvrack.png){.thumbnail}
 
 <ol start="2">
-  <li>poprzez <a href="https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#instructions_1">utworzenie lub dodanie istniejącej usługi</a> vRack w sekcji Public Cloud.</li>
+  <li>poprzez <a href="https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#instructions_1">utworzenie lub dodanie istniejącej usługi vRack</a> w sekcji Public Cloud.</li>
 </ol>
 
 ### Dodaj instancję do sieci vRack 

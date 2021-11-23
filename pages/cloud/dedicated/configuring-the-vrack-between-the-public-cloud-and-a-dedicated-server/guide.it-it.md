@@ -39,11 +39,11 @@ Accedi al menu `Bare Metal Cloud`{.action} e clicca sul pulsante `Ordina`{.actio
 
 ![Ordina la vRack](images/orderingvrack.png){.thumbnail}
 
-Verrai reindirizzato verso un'altra pagina per confermare l'ordine. L'operazione richiederà alcuni minuti.
+Verrai reindirizzato verso un'altra pagina per confermare l'ordine, l'operazione richiederà alcuni minuti.
 
 Una volta che il servizio vRack viene consegnato sul tuo account, puoi aggiungervi il tuo progetto.
 
-Clicca sul menu `Bare Metal Cloud`{.action}, poi su `Network`{.action}, poi su `vRack`{.action}. Seleziona la tua vRack nella lista
+Clicca sul menu `Bare Metal Cloud`{.action}, poi su `Network`{.action}, poi su `vRack`{.action}. Seleziona la tua vRack nella lista.
 
 ![vrack consegnato](images/vrackdelivered.png){.thumbnail}
 
@@ -64,7 +64,7 @@ Possono presentarsi due situazioni:
 
 #### Caso di una nuova istanza
 
-Se hai bisogno di aiuto, consulta la guida [Creare un'istanza Public Cloud](../primi-passi-public-cloud/#step-3-crea-unistanza){.external}. Durante la creazione di un'istanza, potrai specificare, nello Step 4, una rete privata nella quale integrare la tua istanza. Nel menu a tendina presentato seleziona la tua vRack creata precedentemente.
+Se hai bisogno di aiuto, consulta la guida: [Creare un'istanza Public Cloud](../primi-passi-public-cloud/#step-3-crea-unistanza){.external}. Durante la creazione di un'istanza, potrai specificare, nello Step 4, una rete privata nella quale integrare la tua istanza. Nel menu a tendina presentato seleziona la tua vRack creata precedentemente.
 
 #### Caso di un'istanza già esistente
 
@@ -76,7 +76,7 @@ Per comunicare tra loro, i due servizi devono essere contrassegnati con la stess
 
 #### Utilizzo della VLAN ID predefinito
 
-Sui server dedicati, di default, sei sulla VLAN **0**. Per utilizzare questo ID, sarà necessario "taglare" la rete privata associata alla tua istanza con VLAN **0**. Non spuntare la casella `Definisci l’ID della VLAN` durante l'aggiunta di una rete privata alla tua istanza.
+Sui server dedicati, di default, sei sulla VLAN **0**. Per utilizzare questo ID, sarà necessario « taglare » la rete privata associata alla tua istanza con VLAN **0**. Non spuntare la casella `Definisci l’ID della VLAN` durante l'aggiunta di una rete privata alla tua istanza.
 
 Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#step-2-creating-a-vlan-in-the-vrack_1) della guida corrispondente. 
 
@@ -91,15 +91,15 @@ Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/gb/en/
 Se decidi di utilizzare una VLAN ID diversa:
 
 - La rete privata associata all'istanza Public Cloud deve essere contrassegnata con questo ID.
-- Nel file di configurazione di rete del server dedicato, l'interfaccia di rete privata deve essere "tag" con questo ID.
+- Nel file di configurazione di rete del server dedicato, l'interfaccia di rete privata deve essere « tag » con questo ID.
 
 
 > [!primary]
 > 
-> Diversamente dai server dedicati, non è necessario "taggare" la VLAN direttamente su un'istanza Public Cloud.
+> Diversamente dai server dedicati, non è necessario « taggare » la VLAN direttamente su un'istanza Public Cloud.
 >
 
-Ad esempio: se hai definito la rete privata associata alla tua istanza con VLAN 2, l'interfaccia di rete privata del tuo server dedicato deve essere "tag" con VLAN 2. Per maggiori informazioni, consulta questa guida: [Creare due o più VLAN nella vRack](https://docs.ovh.com/it/dedicated/creare-vlan-vrack/).
+Ad esempio: se hai definito la rete privata associata alla tua istanza con VLAN 2, l'interfaccia di rete privata del tuo server dedicato deve essere « tag » con VLAN 2. Per maggiori informazioni, consulta questa guida: [Creare due o più VLAN nella vRack](https://docs.ovh.com/it/dedicated/creare-vlan-vrack/).
 
 ### Configura le interfacce di rete
 
