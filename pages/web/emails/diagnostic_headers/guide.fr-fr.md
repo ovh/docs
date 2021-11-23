@@ -193,7 +193,7 @@ Pour récupérer l'entête, sélectionnez l'e-mail concerné, puis cliquez sur l
 
 #### Outlook.com
 
-Pour afficher l'en-tête dans l'interface webmail utilisée sur Outlook.com, consultez la rubrique [Outlook Web Application](#owa) de ce guide.
+Pour afficher l'en-tête dans l'interface webmail <Outlook.com>, consultez la rubrique [Outlook Web Application](#owa) de ce guide.
 
 ## Aller plus loin
 
