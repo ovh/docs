@@ -11,7 +11,7 @@ order: 09
 
 ## Objectif
 
-Dans le jargon de la sécurité réseau, un objet est une entité singulière à laquelle des règles peuvent être appliquées.    
+Dans le monde de la sécurité réseau, un objet est une entité singulière à laquelle des règles peuvent être appliquées.    
 *Exemples: addresse IP, nom de machine, service, port réseau, adresse MAC...*     
 Créer des groupes d'objets permet de limiter le nombre de règles et de simplifier leur gestion.
 
