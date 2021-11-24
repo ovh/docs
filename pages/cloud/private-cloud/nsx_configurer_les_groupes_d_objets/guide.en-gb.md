@@ -98,7 +98,7 @@ Your IP Pool is now set up and available.
 
 ### Service Groups
 
-Service Groups are collections of Services and/or Service Groups.     
+Service Groups are collections of existing Services and/or Service Groups.     
 
 To create one, in the `Service Groups`{.action} tab, click on `+ Add`{.action}.
 
@@ -109,7 +109,39 @@ Your group will need a name and objects added.
 The available objects will be of two types:
 - Service Groups
 - Services
-You can select various items from either types and drop them in the Selected
+You can highlight various items from either types and drop them in the Selected Oblects section.     
+Click `Add`{.action} when done.
+
+![SG](images/en12newserviceg.png){.thumbnail}
+
+
+Your Service Group is now set up and available.
+
+![SG](images/en14servicegdone.png){.thumbnail}
+
+
+### Services
+
+Services are applications running at the network layer and above.     
+They typically are linked to network ports and protocols for communications.
+
+To create one, in the `Service`{.action} tab, click on `+ Add`{.action}.
+
+![SG](images/en15service.png){.thumbnail}
+
+
+Most of the commonly used services are already listed but you can define new ones to allow to be more granular or create specific ports collections.     
+Click `Add`{.action} when done.
+
+![SG](images/en16newservice.png){.thumbnail}
+
+
+Your Service is now set up and available.
+
+![SG](images/en17servicedone.png){.thumbnail}
+
+
+
 
 
 ## Go further
