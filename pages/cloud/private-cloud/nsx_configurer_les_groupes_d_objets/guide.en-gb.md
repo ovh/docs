@@ -10,7 +10,7 @@ order: 09
 
 ## Objective
 
-An object, in the Network Security world, is a singular entity that can be assigned rules.    
+An object, in the Network Security world, is a singular item that can be assigned rules.    
 *Examples: IP address, machine name, service, network port, MAC adress...*     
 Leveraging object groups limits the number of rules necessary and simplify management.
 
