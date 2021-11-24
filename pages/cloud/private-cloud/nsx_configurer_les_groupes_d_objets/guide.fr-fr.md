@@ -70,7 +70,7 @@ Cliquez `OK`{.action}.
 ![TAG](images/en06tagassigned.png){.thumbnail}
 
 
-Votre Balise de sécurité est paramétrée et fonctionnelle.
+Votre balise de sécurité est paramétrée et fonctionnelle.
 
 ![TAG](images/en07tagdone.png){.thumbnail}
 
@@ -92,7 +92,7 @@ Cliquez sur `Ajouter`{.action}.
 ![POOL](images/en09newpool.png){.thumbnail}
 
 
-Votre Pool d'adresses IP est paramétré et fonctionnel.
+Votre pool d'adresses IP est paramétré et fonctionnel.
 
 ![POOL](images/en10pooldone.png){.thumbnail}
 
@@ -116,14 +116,14 @@ Cliquez sur `Ajouter`{.action}.
 ![SG](images/en12newserviceg.png){.thumbnail}
 
 
-Votre Groupe de services est paramétré et fonctionnel.
+Votre groupe de services est paramétré et fonctionnel.
 
 ![SG](images/en14servicegdone.png){.thumbnail}
 
 
 ### Services
 
-Les services sont des applications qui opèrent sur la couche Réseau et au-dessus.     
+Les services sont des applications qui opèrent sur les couches Réseau et supérieures.     
 Ils sont généralement liés à des ports réseau et des protocoles pour leur communication.
 
 Pour en créer un, allez dans la section `Services`{.action} et cliquez sur `+ Ajouter`{.action}.
@@ -131,99 +131,100 @@ Pour en créer un, allez dans la section `Services`{.action} et cliquez sur `+ A
 ![Serv](images/en15service.png){.thumbnail}
 
 
-Most of the commonly used services are already listed but you can define new ones to allow to be more granular or create specific ports collections.     
-Click `Add`{.action} when done.
+Les services les plus communs sont déjà listés mais vous pouvez en définir de nouveaux pour plus de précision ou pour créer des ensembles de ports spécifiques.     
+Cliquez sur `Ajouter`{.action}.
 
 ![Serv](images/en16newservice.png){.thumbnail}
 
 
-Votre Pool d'adresses IP est paramétré et fonctionnel.
+Votre service est paramétré et fonctionnel.
 
 ![Serv](images/en17servicedone.png){.thumbnail}
 
 
 ### Ensemble d'addresses MAC
 
-MAC Sets are collections of MAC adresses (a MAC is a physical address of a network component).     
+Une adresse MAC est l'adresse physique d'un composant réseau.     
 
-Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
+Pour créer un ensemble d'addresses MAC, allez dans la section `Ensemble d'addresses MAC`{.action} et cliquez sur `+ Ajouter`{.action}.
 
 ![MAC](images/en18mac.png){.thumbnail}
 
 
-Name your set then add the physical addresses as needed.     
-Click `Add`{.action} when done.
+Nommez votre ensemble et entrez les addresses.     
+Cliquez sur `Ajouter`{.action}.
 
 ![MAC](images/en19macset.png){.thumbnail}
 
 
-Votre Pool d'adresses IP est paramétré et fonctionnel.
+Votre ensemble d'addresses MAC est paramétré et fonctionnel.
 
 ![MAC](images/en20macdone.png){.thumbnail}
 
 
 ### Ensemble d'addresses IP
 
-IP sets are collections of IP adresses.     
-
-Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
+Pour créer un ensemble d'addresses IP, allez dans la section `Ensemble d'addresses IP`{.action} et cliquez sur `+ Ajouter`{.action}.
 
 ![IP](images/en21ip.png){.thumbnail}
 
 
-Name your set then add the addresses as needed.     
-IPs can be added as single (xxx.xxx.xxx.xxx), range (xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx) or CIDR (xxx.xxx.xxx.x/xx).     
-Click `Add`{.action} when done.
+Nommez votre ensemble et entrez les addresses.        
+Les IPs peuvent etre tapées de façon unique (xxx.xxx.xxx.xxx), en plage (xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx) ou en CIDR (xxx.xxx.xxx.x/xx).     
+Cliquez sur `Ajouter`{.action}. 
 
 ![IP](images/en22ipset.png){.thumbnail}
 
 
-Votre Pool d'adresses IP est paramétré et fonctionnel.
+Votre ensemble d'addresses IP est paramétré et fonctionnel.
 
 ![IP](images/en23ipdone.png){.thumbnail}
 
 
 ### Groupes de sécurité
 
-Security Groups are collections of network objects.     
+Un groupe de sécurité est un ensemble d'objets réseau.     
 
-Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
+Pour en créer un, allez dans la section `Groupes de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
 
 ![SEC](images/en24sec.png){.thumbnail}  
 
 
-Name your set then click `Next`{.action}.     
+Nommez l'ensemble puis cliquez sur `Suivant`{.action}.     
 
 ![SEC](images/en25secname.png){.thumbnail}
 
 
-Security Groups allow for dynamic membership. You can define a single or set of variables that will automatically assign/unassign objects.    
-*You can leave this part empty if you do not wish to use the functionality*    
-Click `Next`{.action}.
+Les groupes de sécurité peuvent etre remplis dynamiquement. Vous pouvez définir une ou de multiples variables pour assigner/retirer automatiquement des objets à un groupe.    
+*Cette fonctionalité n'est pas obligatoire et peut etre laissée vide*    
+Cliquez sur `Suivant`{.action}.
 
 ![SEC](images/en26dynamic.png){.thumbnail}
 
 
-You can now add any existing Group/Object to the Selected Object section to include them in the group.     
-Click `Next`{.action}
+Ajoutez tous les Groupes/Objets à inclure dans la section Objets Sélectionnés.     
+Cliquez sur `Suivant`{.action}.
 
 ![SEC](images/en27objects.png){.thumbnail}
 
 
-If there is a specific object that needs to be left out (a single member of a whole group you selected previously for example), find it in the Objects to Exclude window.     
-Click `Next`{.action}
+S'il y a des objets spécifiques à laisser de coté (un seul membre d'un groupe ajouté précédement par exemple), ajouter le aux objets à exclure.     
+Cliquez sur `Suivant`{.action}.
 
 ![SEC](images/en28exclude.png){.thumbnail}
 
 
-Review your settings and click `Finish`{.action}
+Vérifier vos paramètres et cliquez sur `Terminer`{.action}.
 
 ![SEC](images/en29review.png){.thumbnail}
 
 
-Votre Pool d'adresses IP est paramétré et fonctionnel.
+Votre groupe de sécurité est paramétré et fonctionnel.
 
 ![SEC](images/en30secdone.png){.thumbnail}
+
+
+
 
 ## Aller plus loin
 
