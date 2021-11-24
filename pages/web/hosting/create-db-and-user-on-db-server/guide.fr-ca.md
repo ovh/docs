@@ -6,6 +6,7 @@ section: 'SQL Privé'
 order: 2
 ---
 
+
 **Dernière mise à jour le 24/08/2020**
 
 ## Objectif
