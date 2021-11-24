@@ -18,9 +18,9 @@ hidden: true
 
 ## Objective
 
-**This guide explains how to upgrade from a previous (DC or SDDC) virtual DataCenter (vDC) to a new (Essentials or Premier) vDC**
+**This guide explains how to upgrade from a previous (DC or SDDC) virtual DataCenter (vDC) to a new (Essentials or Premier) vDC.**
 
-In 2020, OVHcloud have launched 2 new ranges Essentials and Premier. You can now upgrade from commercial ranges prior to 2019 to the new ranges while keeping the same VMware infrastructure (pcc-123-123-123-123) using Storage Motion and vMotion.
+In 2020, OVHcloud has launched 2 new ranges Essentials and Premier. You can now upgrade from commercial ranges prior to 2019 to the new ranges while keeping the same VMware infrastructure (pcc-123-123-123-123) using Storage Motion and vMotion.
 
 There are two aspects involved in this process
 
@@ -34,7 +34,9 @@ There are two aspects involved in this process
 - access to the vSphere Control Panel
 
 ## Instructions
-This guide will utilise the notions of a **source vDC** and a **destination vDC**. Please find an index of the tasks you will be performing :
+
+This guide will utilise the notions of a **source vDC** and a **destination vDC**. Please find an index of the tasks you will be performing:
+
 [Step 1 Design your infrastructure](#design)<br />
 &ensp;&ensp;[Step 1.1 Choose between Premier or Essentials](#premoress)<br />
 &ensp;&ensp;[Step 1.2 Select your hosts (compute)](#selecthosts)<br />
@@ -94,25 +96,26 @@ At the end of step 1, you should have a clear view of which 2020 commercial rang
 #### Step 1.1 Choose between Premier or Essentials
 
 As an Hosted Private Cloud VMware customer with host prior to 2020, you want to upgrade to 2020 hosts.
-First, you would need to select a commercial range between [Essentials](https://www.ovhcloud.com/fr/managed-bare-metal/) (2018 Intel CPU, no NSX, no certification, network bandwith ~1Gbps) and [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/) (2020 Intel CPU,NSX mandatory, certifications available, network bandwith ~10Gbps)
-Please note that this choice is definitive
+First, you would need to select a commercial range between [Essentials](https://www.ovhcloud.com/en-gb/managed-bare-metal/) (2018 Intel CPU, no NSX, no certification, network bandwith ~1Gbps) and [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) (2020 Intel CPU,NSX mandatory, certifications available, network bandwith ~10Gbps)
+Please note that this choice is definitive.
 
 Here are a few guidelines:
-- if you are using or you plan to use [NSX](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => you must upgrade to [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
-- if you need your VMware infrastructure to be [certified](https://www.ovhcloud.com/fr/enterprise/certification-conformity/) (HDS, PCI-DSS, HIPA) => you must upgrade to [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
-- if you don't have NSX on your current infrastructure and you don't have need for certifications => you can choose between [Essentials](https://www.ovhcloud.com/fr/managed-bare-metal/) and [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/). As a general rule of thumbs, Essentials hosts have a better cost/core ratio while Premier optimize cost/ram ratio, you can compare [Essentials hosts](https://www.ovhcloud.com/fr/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/hosts/)
+
+- if you are using or you plan to use [NSX](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => you must upgrade to [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- if you need your VMware infrastructure to be [certified](https://www.ovhcloud.com/en-gb/enterprise/certification-conformity/) (HDS, PCI-DSS, HIPA) => you must upgrade to [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- if you don't have NSX on your current infrastructure and you don't have need for certifications => you can choose between [Essentials](https://www.ovhcloud.com/en-gb/managed-bare-metal/) and [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/). As a general rule of thumbs, Essentials hosts have a better cost/core ratio while Premier optimize cost/ram ratio. You can compare [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/).
 <a name="selecthosts"></a>
 #### Step 1.2 Select your hosts (compute)
 
 You have now chosen your commercial range.
 
-Based on your needs in terms of compute (CPU, RAM), you can select which type and how much hosts you would order between [Essentials hosts](https://www.ovhcloud.com/fr/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/hosts/). For exemple, if you currently use 3xDC2016 XL+, and have choosen Essentials, you can upgrade to 3xESS128 (thanks to more powerful CPU) or 3*ESS256 (if RAM is your criteria). 
+Based on your needs in terms of compute (CPU, RAM), you can select which type and how many hosts you would order between [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/). For exemple, if you currently use 3xDC2016 XL+, and have chosen Essentials, you can upgrade to 3xESS128 (thanks to more powerful CPU) or 3*ESS256 (if RAM is your criteria). 
 
 Please note that this choice is not definitive, you can start with the 3xESS128 and upgrade to 3xESS256 later on.
 <a name="selectdatastores"></a>
 #### Step 1.3 Select your datastores (storage) <a name="introduction"></a>
 
-You have now chosen your commercial range and your hosts. Please note that some of your actual datastores might be compatible with the newer ranges, that is those datastores can be made global. A global datastore is a datastore mounted on all clusters / virtual datacenters within a VMware infrastructure, i.e. shared between the source vDC and the destination vDC.Run the OVHcloud API to check datastores compatibility. 
+You have now chosen your commercial range and your hosts. Please note that some of your actual datastores might be compatible with the newer ranges, that is to say those datastores can be made global. A global datastore is a datastore mounted on all clusters / virtual datacenters within a VMware infrastructure, i.e. shared between the source vDC and the destination vDC. Run the OVHcloud API to check datastores compatibility:
 
 > [!api]
 >
@@ -121,11 +124,11 @@ You have now chosen your commercial range and your hosts. Please note that some 
 
 **Expected return:** boolean
 
-If the API return is true, this datastore is compatible with the newer ranges and you can keep this datastore, you will be make it global later on in the upgrade process.
-If the API return is FALSE, this datastore is not compatible, you will need to order new datastores between [Essentials datastores](https://www.ovhcloud.com/fr/managed-bare-metal/options/) and [Premier datastores](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/datastores-nfs/)
-Based on your needs in terms of storage capacity, you can select which type and how much datastores you would order.
+If the API return is `true`, this datastore is compatible with the newer ranges and you can keep this datastore, you will make it global later on in the upgrade process.
+If the API return is `FALSE`, this datastore is not compatible, you will need to order new datastores, either [Essentials datastores](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) or [Premier datastores](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/datastores-nfs/).<br>
+Based on your needs in terms of storage capacity, you can select which type and how many datastores you would order.
 
-You only need to change the datastores that are not compatible. You will be able to release the datastores that are not compatible after you upgraded your storage.
+You only need to change the datastores that are not compatible. You will be able to release the datastores that are not compatible after you upgrade your storage.
 
 Please note that this choice is not definitive, you can start with 4x3Tb and switch to 2x6Tb later on.
 <a name="build"></a>
@@ -550,7 +553,7 @@ Here is a checklist of aspects to take into account:
 <a name="reconveeam"></a>
 #### Step 6.1 Reconfigure Veeam Managed Backup (if relevant)
 
-If OVHcloud provided Veeam is currently in use to backup VMs on the source vDC, it will be necessary to use the OVH API to re-check the backup jobs after the VMs have been migrated to the new vDC.
+If OVHcloud provided Veeam is currently in use to backup VMs on the source vDC, it will be necessary to use the OVHcloud API to re-check the backup jobs after the VMs have been migrated to the new vDC.
 
 Here is how to proceed:
 
@@ -605,7 +608,7 @@ A task is launched to :
 <a name="recreateaffinity"></a>
 #### Step 6.3 Recreate Affinity rules
 
-Affinity rules are based on VM objects so rules can only be created after VMs have been migrated to the destination PCC. Once the migration is completed, affinity rules can be re-applied on the destination PCC.
+Affinity rules are based on VM objects so rules can only be created after VMs have been migrated to the destination vDC. Once the migration is completed, affinity rules can be re-applied on the destination vDC.
 
 **Automation tips:** [This VMware community thread](https://communities.vmware.com/t5/VMware-PowerCLI-Discussions/Backup-Restore-DRS-VM-affinity-anti-affinity-rules-can-these-be/td-p/733981/page/2) details options to export and import affinity-rules via powercli.
 <a name="hostmm"></a>
