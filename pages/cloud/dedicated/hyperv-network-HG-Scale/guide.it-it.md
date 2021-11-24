@@ -281,7 +281,7 @@ Clicca con il tasto destro su una delle interfacce private precedentemente ident
 
 Assegna un nome al tuo *teaming* e aggiungi la seconda interfaccia al *teaming*. Apri le proprietà aggiuntive, definisci "Teaming Mode" su "LACP" e clicca su `OK`{.action}.
 
-#### Crea l'interruttore virtuale in Hyper-VM
+#### Crea l'interruttore virtuale in Hyper-V
 
 Per creare uno switch virtuale che colleghi le nostre VM al *teaming* che abbiamo creato.
 

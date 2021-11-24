@@ -283,7 +283,7 @@ Na página seguinte, clique com o botão direito do rato sobre uma das interface
 
 Atribua um nome ao seu *teaming* e adicione a segunda interface ao *teaming*. A seguir, abra as propriedades adicionais, defina "Teaming Mode" em "LACP" e clique em `OK`{.action}.
 
-#### Criar o comutador virtual na Hyper-VM
+#### Criar o comutador virtual na Hyper-V
 
 Vamos precisar de criar um switch virtual que ligará as nossas VMs ao *teaming* que criámos.
 
