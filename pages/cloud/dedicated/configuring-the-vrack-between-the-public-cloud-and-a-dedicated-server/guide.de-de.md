@@ -51,7 +51,7 @@ Wählen Sie in der Liste der verfügbaren Dienstleistungen das Projekt aus, das 
 ![Projekt zum vRack hinzufügen](images/addprojectvrack.png){.thumbnail}
 
 <ol start="2">
-  <li><a href="https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#step-1-activating-and-managing-a-vrack">Erstellen oder Hinzufügen eines bestehenden vRack Dienstes</a> im Bereich Public Cloud.</li>
+  <li><a href="https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#schritt-1-vrack-aktivieren-und-verwalten">Erstellen oder Hinzufügen eines bestehenden vRack Dienstes</a> im Bereich Public Cloud.</li>
 </ol>
 
 ### Instanz in das vRack integrieren
@@ -67,7 +67,7 @@ Wenn Sie Hilfe benötigen, folgen Sie zunächst diesem Leitfaden:[Erstellen Ihre
 
 #### Fälle einer bereits bestehenden Instanz
 
-Sie können eine bestehende Instanz einem privaten Netzwerk zuweisen. Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#in-case-of-an-existing-instance_2) der zugehörigen Anleitung.
+Sie können eine bestehende Instanz einem privaten Netzwerk zuweisen. Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#im-fall-einer-bestehenden-instanz_2) der zugehörigen Anleitung.
 
 ### VLAN-ID erstellen
 
@@ -77,7 +77,7 @@ Damit beide Dienste miteinander kommunizieren können, müssen sie mit derselben
 
 Die VLAN-ID für dedizierte Server ist standardmäßig **0**. Um diese VLAN-ID zu verwenden, müssen Sie das mit Ihrer Instanz verbundene private Netzwerk mit VLAN **0** « taggen ». Setzen Sie hierfür einen Haken bei eine `VLAN-ID festlegen`, wenn Sie Ihrer Instanz ein privates Netzwerk hinzufügen.
 
-Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#step-2-creating-a-vlan-in-the-vrack_1) der entsprechenden Anleitung.
+Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#schritt-2-erstellen-eines-vlan-im-vrack_1) der entsprechenden Anleitung.
 
 > [!primary]
 > In der Public Cloud definieren Sie eine einzige VLAN-ID pro privatem Netzwerk.
@@ -105,4 +105,4 @@ Konfigurieren Sie anschließend die Netzwerkinterfaces auf Ihrer neuen Public Cl
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.

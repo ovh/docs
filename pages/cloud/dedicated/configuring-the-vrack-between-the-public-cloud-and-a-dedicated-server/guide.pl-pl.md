@@ -51,7 +51,7 @@ Na liście usług kwalifikowanych wybierz projekt, który chcesz dodać do sieci
 ![dodaj projekt do usługi vrack](images/addprojectvrack.png){.thumbnail}
 
 <ol start="2">
-  <li>poprzez <a href="https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#instructions_1">utworzenie lub dodanie istniejącej usługi vRack</a> w sekcji Public Cloud.</li>
+  <li>poprzez <a href="https://docs.ovh.com/pl/public-cloud/public-cloud-vrack/#etap-1-aktywacja-i-zarzadzanie-usluga-vrack">utworzenie lub dodanie istniejącej usługi vRack</a> w sekcji Public Cloud.</li>
 </ol>
 
 ### Dodaj instancję do sieci vRack 
@@ -67,7 +67,7 @@ Jeśli potrzebujesz pomocy, zapoznaj się z przewodnikiem [Tworzenie instancji P
 
 #### Przypadek już istniejącej instancji
 
-Możesz przypisać istniejącą instancję do sieci prywatnej. Aby uzyskać więcej informacji, należy zapoznać się z [tą sekcją](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#in-case-of-an-existing-instance_2) odpowiedniej instrukcji.
+Możesz przypisać istniejącą instancję do sieci prywatnej. Aby uzyskać więcej informacji, należy zapoznać się z [tą sekcją](https://docs.ovh.com/pl/public-cloud/public-cloud-vrack/#w-przypadku-istniejacej-instancji_2) odpowiedniej instrukcji.
 
 
 ### Utwórz VLAN ID
@@ -78,7 +78,7 @@ Aby obie usługi mogły się ze sobą komunikować, muszą być « otagowane » 
 
 Domyślnie na serwerach dedykowanych znajdujesz się w sieci VLAN id **0**. Jeśli chcesz użyć tego ID, konieczne będzie « oznakować » sieci prywatnej przypisanej do Twojej instancji za pomocą VLAN ID **0**. W tym celu nie zaznacz kratki `Wybierz ID sieci VLAN` podczas dodawania prywatnej sieci do Twojej instancji.
 
-Więcej informacji znajdziesz w [tej sekcji](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#step-2-creating-a-vlan-in-the-vrack_1)  odpowiedniego przewodnika.
+Więcej informacji znajdziesz w [tej sekcji](https://docs.ovh.com/pl/public-cloud/public-cloud-vrack/#etap-2-tworzenie-sieci-vlan-w-ramach-uslugi-vrack_1) odpowiedniego przewodnika.
 
 > [!primary]
 > W usłudze Public Cloud możesz zdefiniować unikalną sieć VLAN ID za pomocą sieci prywatnej.

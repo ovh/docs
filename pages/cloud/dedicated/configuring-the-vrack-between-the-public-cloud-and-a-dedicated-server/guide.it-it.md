@@ -52,7 +52,7 @@ Nella lista dei servizi ammissibili, seleziona il progetto che vuoi aggiungere a
 ![aggiungi un progetto alla vrack](images/addprojectvrack.png){.thumbnail}
 
 <ol start="2">
-  <li><a href="https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#step-1-activating-and-managing-a-vrack">Creando o aggiungendo un servizio vRack esistente</a> nella sezione Public Cloud.</li>
+  <li><a href="https://docs.ovh.com/it/public-cloud/public-cloud-vrack/#step-1-attivazione-e-gestione-di-un-vrack">Creando o aggiungendo un servizio vRack esistente</a> nella sezione Public Cloud.</li>
 </ol>
 
 ### Integra un'istanza nella vRack
@@ -68,7 +68,7 @@ Se hai bisogno di aiuto, consulta la guida: [Creare un'istanza Public Cloud](../
 
 #### Caso di un'istanza già esistente
 
-È possibile associare un'istanza esistente a una rete privata. Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#in-case-of-an-existing-instance_2) della guida corrispondente.
+È possibile associare un'istanza esistente a una rete privata. Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/it/public-cloud/public-cloud-vrack/#in-caso-di-istanza-esistente_2) della guida corrispondente.
 
 ### Crea una VLAN ID
 
@@ -78,7 +78,7 @@ Per comunicare tra loro, i due servizi devono essere contrassegnati con la stess
 
 Sui server dedicati, di default, sei sulla VLAN **0**. Per utilizzare questo ID, sarà necessario « taglare » la rete privata associata alla tua istanza con VLAN **0**. Non spuntare la casella `Definisci l’ID della VLAN` durante l'aggiunta di una rete privata alla tua istanza.
 
-Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#step-2-creating-a-vlan-in-the-vrack_1) della guida corrispondente. 
+Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/it/public-cloud/public-cloud-vrack/#step-2-crea-una-vlan-nella-vrack_1) della guida corrispondente. 
 
 
 > [!primary]

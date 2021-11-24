@@ -52,7 +52,7 @@ Seleccione el proyecto que quiera añadir al vRack y haga clic en el botón `Añ
 ![añadir un proyecto al vrack](images/addprojectvrack.png){.thumbnail}
 
 <ol start="2">
-  <li><a href="https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#step-1-activating-and-managing-a-vrack">Creando o añadiendo un servicio vRack existente</a> en la sección Public Cloud.</li>
+  <li><a href="https://docs.ovh.com/us/es/public-cloud/public-cloud-vrack/#etapa-1-activar-y-gestionar-un-vrack">Creando o añadiendo un servicio vRack existente</a> en la sección Public Cloud.</li>
 </ol>
 
 ### Integrar una instancia en el vRack
@@ -68,7 +68,7 @@ Si necesita ayuda, consulte la guía [Crear una instancia de Public Cloud](../pu
 
 #### Caso de una instancia ya existente
 
-Es posible asociar una instancia existente a una red privada. Para más información, puede consultar [esta sección de la guía correspondiente](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#in-case-of-an-existing-instance_2).
+Es posible asociar una instancia existente a una red privada. Para más información, puede consultar [esta sección](https://docs.ovh.com/us/es/public-cloud/public-cloud-vrack/#caso-de-una-instancia-ya-existente_2) de la guía correspondiente.
 
 ### Crear un VLAN ID
 
@@ -78,7 +78,7 @@ Para que los dos servicios puedan comunicarse entre sí, deben estar z etiquetad
 
 En los servidores dedicados, por defecto está en la VLAN **0**. Si quiere utilizar este ID, deberá « etiquetar » la red privada asociada a su instancia con la VLAN **0**. Para ello, no marque la casilla `Indicar un ID de VLAN` al añadir una red privada a la instancia.
 
-Para más información, consulte [esta sección](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#step-2-creating-a-vlan-in-the-vrack_1) de la guía correspondiente.
+Para más información, consulte [esta sección](https://docs.ovh.com/us/es/public-cloud/public-cloud-vrack/#etapa-2-crear-una-vlan-en-el-vrack_1) de la guía correspondiente.
 
 > [!primary]
 > En Public Cloud, puede definir un VLAN ID único por red privada.
