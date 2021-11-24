@@ -25,7 +25,23 @@ Leveraging object groups limits the number of rules necessary and simplify manag
 
 ## Instructions
 
+### Interface access
 
+First, in the vSphere interface menu, go to the `Networking and Security`{.action} dashboard.
+
+![Menu](images/en01dash.png){.thumbnail}
+
+On the left side, navigate to the `Groups and Tags`{.action} section.    
+The section shows 7 types of grouping methods:
+- Security Tags
+- IP Pools
+- Service Groups
+- Services
+- MAC Sets
+- IP Sets
+- Security Groups
+
+![GUI](images/en02groups.png){.thumbnail}
 
 
 
