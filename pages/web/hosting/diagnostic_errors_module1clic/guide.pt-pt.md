@@ -99,11 +99,11 @@ Para associar o seu domínio a outro diretório, clique em `Modificar o domínio
 
 Pode também ligar-se ao seu alojamento via [FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) e, depois, eliminar ou mover o conteúdo da pasta após o backup.
 
-## "Ocorreu um erro durante o carregamento das informações (There is not enough space on your hosting (you need at least xxx MB))"
+### "Ocorreu um erro durante o carregamento das informações (There is not enough space on your hosting (you need at least xxx MB))"
 
-![not_enough_space](images/not_enough_space.png) {.thumbnail}
+![not_enough_space](images/not_enough_space.png){.thumbnail}
 
-Esta mensagem indica que o[espaço de armazenamento](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento tem um volume de dados demasiado elevado. Deve eliminar ou deslocar um novo [módulo 1 clique](../módulos-1-clique/).
+Esta mensagem indica que o[espaço de armazenamento](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento tem um volume de dados demasiado elevado. Deve eliminar ou deslocar um novo [módulo 1 clique](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/).
 
 Neste caso, [ligue-se em FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao seu alojamento, [salvaguarde localmente](../partilhado_guia_de_utilizacao_do_filezilla/#transferencia-de-ficheiros) os seus dados e elimine os ficheiros que não são necessários para o funcionamento do seu site.
 
@@ -145,7 +145,7 @@ Se não dispõe de outras bases de dados e não deseja encomendar uma oferta com
 > Não poderemos prestar-lhe assistência nesta matéria.
 >
 
-### « Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES) »
+### "Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
