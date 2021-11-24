@@ -32,71 +32,34 @@ Ce guide concernera uniquement les sites WEB hébrgés sur les [solutions mutual
 
 ## En pratique
 
-### Sauvegarder ses données
+### Niveau débutant 
 
-#### Effectuer des sauvegardes régulièrement
+#### Effectuez des sauvegardes régulièrement <a name="backup"></a>
 
-Sauvegarder régulièrement vos données, quelle que soit la solution informatique concernée est le plus important geste à avoir en termes de sécurité informatique. Il sera toujours de réinstaller un logiciel ou de changer le disque dur de votre poste informatique, mais il est très difficile de récupérer des données une fois qu'elles ont été perdues.
+Sauvegarder régulièrement vos données, quelle que soit la solution informatique concernée est le plus important geste à avoir en termes de sécurité informatique. Il sera toujours possible de réinstaller un logiciel ou de commander un nouvel appareil, mais il est très difficile de récupérer des données une fois qu'elles ont été perdues.
 
-Pour cette première étape de ce parcours de sécurisation de votre site, commencez par sauvegarder vos bases de données en suivant les instructions de ce [guide](./exporter-son-site-web/).
+OVHcloud effectue régulièrement des sauvegardes de vos données sur son infrastruture. Pour autant une erreur de manipulation comme une opération de suppression lancée sur une base de donnes en production ou un non renovuelleemnt de vos servies peuvent entrapiner la perte définitive de vos données.
 
-Faites ensuite la même opération pour les données contenues dans l'espace FTP de votre hébergement selon ce [guide](./restauration-ftp-filezilla-espace-client/).
+Pour cette première étape de ce parcours de sécurisation de votre site, commencez par sauvegarder les données qui le composent (fichiers FTP **ET** base de données) en suivant les instructions de ce [guide](../exporter-son-site-web/). Importez-les sur votre poste ou sur un support externe, type serveur NAS ou clé USB.
 
-
-
-Guide sauvegarde ftp/base de données / Evoquer les plugins/modules de sauvegarde en ligne pour les cms
-
-https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/
-https://docs.ovh.com/fr/hosting/exporter-son-site-web/
-https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/
-
-"Juste évoquer le fait qu'il existe des plugin/modules qui permettent de faire des actions de sauvegarde (ne pas donner de nom). Indiquer juste l'utilisation de plugins régulièrement mis à jour et mis en avant par la communauté wordpress."
-
-#### Testez régulièrement votre site
-Tester régulièrement en local ou sur autre serveur les sauvegardes générées (proactivité sur la corruption de bases)
-audit de sécurité ?
-"Le test en local concerne la base de données, il est tout à fait possible d'utiliser un thème de base avec les plugins indispensables pour vérifier si la base de données est fonctionnelle. Il se pose la question des versions sql et ou Apache. Pour palier à cette problématique, client peut également mettre en place une version de test de son cms (ex: test.mondomaine.tld) directement sur son mutu en utilisant une nouvelle bdd (nécessitant donc un export/import)"
-
-
+Les logiciels de gestion de site Web (CMS) offrent aussi la possibilité d'installer des plugins de sauvegarde automatique. Consultez les forums officiels de votre CMS préféré ou contactez la [communauté OVHcloud](https://community.ovh.com/) à ce sujet.
 
 #### Mettre en place le renouvellement automatique
-https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/
-https://docs.ovh.com/fr/billing/faq-renouvellement-automatique-ovh/
 
+En cas de non-renouvellement de vos services, OVHcloud a l'obligation légale de supprimer intégralement les données de votre site, ainsi que ses sauvegardes, à l'échéance de votre abonnement. Nous envoyons des messages de rappels à nos clients afin de leur rappeler leurs échéances de renouvellement. Pour autant, ces e-mails de relance peuvent arriver dans vos spams ou l'adresse e-mail associée à votre compte OVHcloud est peut-être erronée ou n'est plus disponible.
 
-### Garder son site à jour
-#### Vérifiez que votre site est à jour
-https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#22-mettre-a-jour-votre-site-internet
-https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#etape-4-veiller-a-la-securite-de-votre-site_1
-#### Utilisez une version de PHP récente
-https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
+Surtout si vous n'avez pas la possibilité d'effectuer de sauvegardes régulières et que votre site a une place prépondérante dans votre activité professionnelle, [activez le renouvellement automatique](../../billing/renouvellement-automatique-ovh/#acceder-au-parametrage-de-vos-services) sur l'ensemble de vos services OVHcloud. Nous vous recommandons aussi de vérifier régulièrement la validité des moyens de paiement que vous avez enregistré.
 
-
-### Sécuriser activement son hébergement
-#### Mettez en place un parefeu applicatif sur votre site
-https://docs.ovh.com/fr/hosting/activation-pare-feu-applicatif/
-" Je déconseillerai l'utilisation simultanée d'un waf lié au cms et de modsecurity. L'avantage du parefeu lié à un cms réside dans la proactivité de la protection, les règles de sécurité sont régulièrement mises à jour. idem ici, proposer les plugins mis en avant par la communauté wordpress. Reconnaitre les fichiers hackés des autres relève du travail du webmaster, voir d'un spécialiste de sécu (audit du code php, javascript, etc...)"
-#### Vérfiez la présence de fichiers malveillants sur votre hébergment
-
-
-### Sécurisez les échanges de données vers vos utilisateurs
-#### Activez le https
-https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/
-https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/
-#### Protégez vos formulaires
-
-
-### Adopter les bonnes pratiques en matière de mots de passe
-#### Apprenez à générer des mots de passe complexes
+#### Adopter les bonnes pratiques en matière de mots de passe
+##### Apprenez à générer des mots de passe complexes
 https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe
-#### Utilisez un gestionnaire de mots de passe
+##### Utilisez un gestionnaire de mots de passe
 https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe
-#### Autres bonnes pratiques liées aux mots de passe
+##### Autres bonnes pratiques liées aux mots de passe
 https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#bonnes-pratiques-pour-la-gestion-de-votre-mot-de-passe
 Ne pas enregistrer ses mots de passe dans son navigateur
 cf anssi - cybermalveillance.gouv.fr
 https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#aller-plus-loin_2
-
 
 ### Sécuriser son environnement local et l'accès à son espace client OVHcloud
 #### Vérifiez vos appareils
@@ -111,6 +74,66 @@ https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/#etape-2-sauv
 #### Vérifiez vos informations personnelles
 https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#ajouter-une-adresse-e-mail-de-secours
 https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#comment-gerer-mes-informations-personnelles_1
+
+
+
+### Niveau confirmé
+
+### Garder son site à jour
+#### Vérifiez que votre site est à jour
+https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#22-mettre-a-jour-votre-site-internet
+https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#etape-4-veiller-a-la-securite-de-votre-site_1
+#### Utilisez une version de PHP récente
+https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
+
+#### Activez le https
+https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/
+https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/
+
+#### Protégez vos formulaires
+
+#### Mettez en place un parefeu applicatif sur votre site
+https://docs.ovh.com/fr/hosting/activation-pare-feu-applicatif/
+" Je déconseillerai l'utilisation simultanée d'un waf lié au cms et de modsecurity. L'avantage du parefeu lié à un cms réside dans la proactivité de la protection, les règles de sécurité sont régulièrement mises à jour. idem ici, proposer les plugins mis en avant par la communauté wordpress. Reconnaitre les fichiers hackés des autres relève du travail du webmaster, voir d'un spécialiste de sécu (audit du code php, javascript, etc...)"
+
+
+
+### Niveau expert
+
+#### Vérifiez la présence de fichiers malveillants sur votre hébergement
+
+#### Testez les sauvegardes de votre site
+
+Les sauvegardes des données de votre site (fichiers FTP et base de données) doivent être effectuées [régulièrement](#backup).
+
+Pour autant, elles ne constituent pas une sécurité absolue et vous devrez aussi tester les sauvegardes de votre bases de données, afin de vérifier qu'elles ne sont pas corrompues.
+
+Vous pourrez effectuer ces tests localement, en important vos données par exemple sur un logiciel de type [WAMP]() (Veillez à paramétrer votre solution locale afin que sa configuration corresponde en tout point à celle de nos [serveurs d'hébergement mutualisé]()).
+
+Une autre solution de test peut être de créer une **version de test** de votre site (ex : test.mondomaine.tld) dans un autre dossier de votre hébergement (il vous sera tout à fait possible d'utiliser un template de base).
+
+
+
+
+
+
+
+
+
+### Sécuriser activement son hébergement
+
+
+
+
+### Sécurisez les échanges de données vers vos utilisateurs
+
+
+
+
+
+
+
+
 
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
