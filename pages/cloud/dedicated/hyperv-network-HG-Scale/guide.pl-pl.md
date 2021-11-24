@@ -282,7 +282,7 @@ Na następnej stronie kliknij prawym przyciskiem myszy jeden z wcześniej zident
 
 Nadaj nazwę swojej usłudze *teaming*, a następnie dodaj drugi interfejs do *teaming*. Następnie otwórz dodatkowe właściwości, zdefiniuj "Teaming Mode" na "LACP" i kliknij `OK`{.action}.
 
-#### Utwórz wirtualny przełącznik w Hyper-VM
+#### Utwórz wirtualny przełącznik w Hyper-V
 
 Będziemy musieli utworzyć wirtualny switch, który połączy nasze wirtualne maszyny z *teaming*, który stworzyliśmy.
 

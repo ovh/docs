@@ -283,7 +283,7 @@ Klicken Sie auf der nächsten Seite mit der rechten Maustaste auf eine der zuvor
 
 Geben Sie einen Namen für Ihr Team ein und fügen Sie das zweite Interface hinzu. Öffnen Sie anschließend die erweiterten Einstellungen, stellen Sie "Teaming Mode" auf `LACP` ein und klicken Sie auf `OK`{.action}.
 
-#### Virtuellen Switch in Hyper-V erstellen
+#### Virtuellen Switch im Hyper-V Manager erstellen
 
 Es wird ein virtueller Switch benötigt, der die VMs an das zuvor erstellte Team bindet.
 
