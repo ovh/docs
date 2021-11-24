@@ -27,7 +27,7 @@ Leveraging object groups limits the number of rules necessary and simplify manag
 
 ### Interface access
 
-First, in the vSphere interface menu, go to the `Networking and Security`{.action} dashboard.
+In the vSphere interface menu, go to the `Networking and Security`{.action} dashboard.
 
 ![Menu](images/en01dash.png){.thumbnail}
 
@@ -42,6 +42,16 @@ The section shows 7 types of grouping methods:
 - Security Groups
 
 ![GUI](images/en02groups.png){.thumbnail}
+
+
+### Security Tags
+
+Tags are metadata added to VMs to flag and sort them easily.    
+
+To create one, in the `Security Tags`{.action} tab, click on `+ Add`{.action}.
+
+![SEC](images/en03tags.png){.thumbnail}
+
 
 
 
