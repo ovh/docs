@@ -50,7 +50,60 @@ Tags are metadata added to VMs to flag and sort them easily.
 
 To create one, in the `Security Tags`{.action} tab, click on `+ Add`{.action}.
 
-![SEC](images/en03tags.png){.thumbnail}
+![TAG](images/en03tags.png){.thumbnail}
+
+
+The tag itself is just a keyword so you can use any name for it.
+
+![TAG](images/en04tagname.png){.thumbnail}
+
+
+Once created, select it in the list and click `+ Assign VM`{.action}
+
+![TAG](images/en05tagassign.png){.thumbnail}
+
+
+Choose the VM(s) you want to assigne the tag to and use the arrows to put them in the Selected Objects section.     
+Click `OK`{.action} when done.
+
+![TAG](images/en06tagassigned.png){.thumbnail}
+
+
+Your Security Tag is done and assigned to VM(s).
+
+![TAG](images/en07tagdone.png){.thumbnail}
+
+
+### IP Pools
+
+IP Pools are collections of IPs.     
+
+To create one, in the `IP Pools`{.action} tab, click on `+ Add`{.action}.
+
+![POOL](images/en08pool.png){.thumbnail}
+
+
+A pool will need a Name, Gateway and prefix length to be useable.   
+The DNS info are optional.     
+IPs need to be added as a block (xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx).     
+Click `Add`{.action} when done.
+
+![POOL](images/en09newpool.png){.thumbnail}
+
+
+Your IP Pool is now set up and available.
+
+![POOL](images/en10pooldone.png){.thumbnail}
+
+
+### Service Groups
+
+Service Groups are collections of Services and/or Service Groups.     
+
+To create one, in the `Service Groups`{.action} tab, click on `+ Add`{.action}.
+
+![SG](images/en11serviceg.png){.thumbnail}
+
 
 
 
