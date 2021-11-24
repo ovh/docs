@@ -105,7 +105,11 @@ To create one, in the `Service Groups`{.action} tab, click on `+ Add`{.action}.
 ![SG](images/en11serviceg.png){.thumbnail}
 
 
-
+Your group will need a name and objects added.     
+The available objects will be of two types:
+- Service Groups
+- Services
+You can select various items from either types and drop them in the Selected
 
 
 ## Go further
