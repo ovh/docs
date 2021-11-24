@@ -64,7 +64,7 @@ Une fois créée, selectionnez-la et cliquez sur `Attribuer une VM`{.action}
 ![TAG](images/en05tagassign.png){.thumbnail}
 
 
-Choisissez la(les) VM(s) à attribuer puis utilisez la flêche pour les faire glisser dans la partie Objets Sélectionnés.     
+Choisissez la(les) VM(s) à attribuer puis utilisez la flèche pour les faire glisser dans la partie Objets Sélectionnés.     
 Cliquez `OK`{.action}.
 
 ![TAG](images/en06tagassigned.png){.thumbnail}
@@ -170,7 +170,7 @@ Pour créer un ensemble d'addresses IP, allez dans la section `Ensemble d'addres
 
 
 Nommez votre ensemble et entrez les addresses.        
-Les IPs peuvent etre tapées de façon unique (xxx.xxx.xxx.xxx), en plage (xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx) ou en CIDR (xxx.xxx.xxx.x/xx).     
+Les IPs peuvent être tapées de façon unique (xxx.xxx.xxx.xxx), en plage (xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx) ou en CIDR (xxx.xxx.xxx.x/xx).     
 Cliquez sur `Ajouter`{.action}. 
 
 ![IP](images/en22ipset.png){.thumbnail}
@@ -195,8 +195,8 @@ Nommez l'ensemble puis cliquez sur `Suivant`{.action}.
 ![SEC](images/en25secname.png){.thumbnail}
 
 
-Les groupes de sécurité peuvent etre remplis dynamiquement. Vous pouvez définir une ou de multiples variables pour assigner/retirer automatiquement des objets à un groupe.    
-*Cette fonctionalité n'est pas obligatoire et peut etre laissée vide*    
+Les groupes de sécurité peuvent être assignés dynamiquement. Vous pouvez définir une ou de multiples variables pour assigner/retirer automatiquement des objets à un groupe.    
+*Cette fonctionalité n'est pas obligatoire et peut être laissée vide*    
 Cliquez sur `Suivant`{.action}.
 
 ![SEC](images/en26dynamic.png){.thumbnail}
