@@ -94,5 +94,5 @@ A seguir, clique em `Finish`{.action} para validar a sua escolha.
 
 ## Quer saiba mais?
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
 

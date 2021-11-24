@@ -31,7 +31,7 @@ En algunos casos, bien debido a un aumento de la actividad o a sus nuevas necesi
 
 ## Requisitos
 
-- Haber [creado una instancia de Public Cloud](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/#3-crear-una-instancia) en su cuenta de OVHcloud.
+- Haber [creado una instancia de Public Cloud](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/#3-crear-una-instancia) en su cuenta de OVHcloud
 - [Conectarse a Horizon](../crear_un_acceso_a_horizon/)
 
 ## Procedimiento
@@ -93,4 +93,4 @@ Haga clic en `Finish`{.action} para aceptar la opción que prefiera.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
