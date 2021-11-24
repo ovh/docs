@@ -23,7 +23,7 @@ W tym przewodniku po szybkim uruchomieniu zapoznaj się z pojęciami odnoszącym
 
 ### Enterprise File Storage, co to jest?
 
-Enterprise File Storage to oferta systemu plików zarządzana przez OVHcloud i oparta na rozwiązaniu NetApp ONTAP Software-Defined Storage.
+Enterprise File Storage to oferta systemu plików zarządzana przez OVHcloud i oparta na rozwiązaniu NetApp&#174; ONTAP Software-Defined Storage.
 
 Możesz zamówić jedną lub kilka przestrzeni dyskowych między 1TiB i 29TiB na Twoim koncie.
 
@@ -46,7 +46,7 @@ Możesz zamówić jedną lub kilka przestrzeni dyskowych między 1TiB i 29TiB na
 
 ### Zasada działania puli
 
-Po zamówieniu usługi Enterprise File Storage od 1 do 29 TB za pośrednictwem konta OVHcloud otrzymujesz pojemność Netapp.
+Po zamówieniu usługi Enterprise File Storage od 1 do 29 TB za pośrednictwem konta OVHcloud otrzymujesz pojemność NetApp&#174;.
 
 Konto OVHcloud jest domyślnie kontaktem administracyjnym, technicznym i księgowym dla usługi. Więcej informacji znajdziesz w naszym przewodniku ["Zarządzanie kontaktami swoich usług"](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
 
