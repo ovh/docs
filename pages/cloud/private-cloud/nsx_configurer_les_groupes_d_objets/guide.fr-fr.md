@@ -7,17 +7,21 @@ section: NSX
 order: 09
 ---
 
-**Dernière mise à jour le 27/02/2019**
+**Dernière mise à jour le 24/11/2021**
 
 ## Objectif
 
-Les groupes d'objets permettent d'inclure plusieurs paramètres permettant ensuite de gérer des règles sur ces groupes qui s'appliqueront ensuite à tous les services pour lesquelles ces règles correspondent.
+Dans le jargon de la sécurité réseau, un objet est une entité singulière à laquelle des règles peuvent être appliquées.    
+*Exemples: addresse IP, nom de machine, service, port réseau, adresse MAC...*     
+Créer des groupes d'objet permet de limiter le nombre de règles et de simplifier leur gestion.
 
-**Ce guide explique comment effectuer ce regroupement**
+**Ce guide explique la création/gestion des groupes**
 
 ## Prérequis
 
-- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir déployer une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
 
 ## En pratique
 
