@@ -76,7 +76,7 @@ Your Security Tag is done and assigned to VM(s).
 
 ### IP Pools
 
-IP Pools are collections of IPs.     
+IP Pools are range of IPs.     
 
 To create one, in the `IP Pools`{.action} tab, click on `+ Add`{.action}.
 
@@ -85,7 +85,7 @@ To create one, in the `IP Pools`{.action} tab, click on `+ Add`{.action}.
 
 A pool will need a Name, Gateway and prefix length to be useable.   
 The DNS info are optional.     
-IPs need to be added as a block (xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx).     
+IPs need to be added as a range (xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx).     
 Click `Add`{.action} when done.
 
 ![POOL](images/en09newpool.png){.thumbnail}
@@ -127,20 +127,102 @@ They typically are linked to network ports and protocols for communications.
 
 To create one, in the `Service`{.action} tab, click on `+ Add`{.action}.
 
-![SG](images/en15service.png){.thumbnail}
+![Serv](images/en15service.png){.thumbnail}
 
 
 Most of the commonly used services are already listed but you can define new ones to allow to be more granular or create specific ports collections.     
 Click `Add`{.action} when done.
 
-![SG](images/en16newservice.png){.thumbnail}
+![Serv](images/en16newservice.png){.thumbnail}
 
 
 Your Service is now set up and available.
 
-![SG](images/en17servicedone.png){.thumbnail}
+![Serv](images/en17servicedone.png){.thumbnail}
 
 
+### MAC Sets
+
+MAC Sets are collections of MAC adresses (a MAC is a physical address of a network component).     
+
+To create one, in the `MAC Sets`{.action} tab, click on `+ Add`{.action}.
+
+![MAC](images/en18mac.png){.thumbnail}
+
+
+Name your set then add the physical addresses as needed.     
+Click `Add`{.action} when done.
+
+![MAC](images/en19macset.png){.thumbnail}
+
+
+Your Mac Set is now set up and available.
+
+![MAC](images/en20macdone.png){.thumbnail}
+
+
+### IP Sets
+
+IP sets are collections of IP adresses.     
+
+To create one, in the `IP Sets`{.action} tab, click on `+ Add`{.action}.
+
+![IP](images/en21ip.png){.thumbnail}
+
+
+Name your set then add the addresses as needed.     
+IPs can be added as single (xxx.xxx.xxx.xxx), range (xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx) or CIDR (xxx.xxx.xxx.x/xx).     
+Click `Add`{.action} when done.
+
+![IP](images/en22ipset.png){.thumbnail}
+
+
+Your IP Set is now set up and available.
+
+![IP](images/en23ipdone.png){.thumbnail}
+
+
+### Security Groups
+
+Security Groups are collections of network objects.     
+
+To create one, in the `Security Groups`{.action} tab, click on `+ Add`{.action}.
+
+![SEC](images/en24sec.png){.thumbnail}  
+
+
+Name your set then click `Next`{.action}.     
+
+![SEC](images/en25secname.png){.thumbnail}
+
+
+Security Groups allow for dynamic membership. You can define a single or set of variables that will automatically assign/unassign objects.    
+*You can leave this part empty if you do not wish to use the functionality*    
+Click `Next`{.action}.
+
+![SEC](images/en26dynamic.png){.thumbnail}
+
+
+You can now add any existing Group/Object to the Selected Object section to include them in the group.     
+Click `Next`{.action}
+
+![SEC](images/en27objects.png){.thumbnail}
+
+
+If there is a specific object that needs to be left out (a single member of a whole group you selected previously for example), find it in the Objects to Exclude window.     
+Click `Next`{.action}
+
+![SEC](images/en28exclude.png){.thumbnail}
+
+
+Review your settings and click `Finish`{.action}
+
+![SEC](images/en29review.png){.thumbnail}
+
+
+Your Security Group is now set up and available.
+
+![SEC](images/en30secdone.png){.thumbnail}
 
 
 
