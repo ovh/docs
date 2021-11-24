@@ -70,7 +70,7 @@ Cliquez `OK`{.action}.
 ![TAG](images/en06tagassigned.png){.thumbnail}
 
 
-Votre Balises de sécurité est prête et attribuée à vos VMs.
+Votre Balise de sécurité est paramétrée et fonctionnelle.
 
 ![TAG](images/en07tagdone.png){.thumbnail}
 
@@ -79,13 +79,13 @@ Votre Balises de sécurité est prête et attribuée à vos VMs.
 
 Un Pool d'adresses IP est une plage d'addresses IP.     
 
-Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
+Pour en créer un, allez dans la section `Pools d'adresses IP`{.action} et cliquez sur `+ Ajouter`{.action}.
 
 ![POOL](images/en08pool.png){.thumbnail}
 
 
 Le pool a besoin d'un nom, d'une passerelle et d'une longueur de préfixe pour être utilisable.   
-Les inormations DNS sont optionnelles.     
+Les informations DNS sont optionnelles.     
 Les IPs doivent être ajoutées sous forme de plage (xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx).     
 Cliquez sur `Ajouter`{.action}.
 
@@ -97,36 +97,36 @@ Votre Pool d'adresses IP est paramétré et fonctionnel.
 ![POOL](images/en10pooldone.png){.thumbnail}
 
 
-### Service Groups
+### Groupes de services
 
-Service Groups are collections of existing Services and/or Service Groups.     
+Un groupe de services est un ensemble de services et/ou groupes de services existants.     
 
-Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
+Pour en créer un, allez dans la section `Groupes de services`{.action} et cliquez sur `+ Ajouter`{.action}.
 
 ![SG](images/en11serviceg.png){.thumbnail}
 
 
-Your group will need a name and objects added.     
-The available objects will be of two types:
-- Service Groups
+Le groupe nécessite un nom et l'addition d'objet(s).     
+Les objets possibles sont de deux types:
+- Groupes de services
 - Services
-You can highlight various items from either types and drop them in the Selected Oblects section.     
-Click `Add`{.action} when done.
+Vous pouvez surligner des objets des deux types et les faire glisser dans la section des Objets Sélectionnés.     
+Cliquez sur `Ajouter`{.action}.
 
 ![SG](images/en12newserviceg.png){.thumbnail}
 
 
-Votre Pool d'adresses IP est paramétré et fonctionnel.
+Votre Groupe de services est paramétré et fonctionnel.
 
 ![SG](images/en14servicegdone.png){.thumbnail}
 
 
 ### Services
 
-Services are applications running at the network layer and above.     
-They typically are linked to network ports and protocols for communications.
+Les services sont des applications qui opèrent sur la couche Réseau et au-dessus.     
+Ils sont généralement liés à des ports réseau et des protocoles pour leur communication.
 
-Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
+Pour en créer un, allez dans la section `Services`{.action} et cliquez sur `+ Ajouter`{.action}.
 
 ![Serv](images/en15service.png){.thumbnail}
 
@@ -142,7 +142,7 @@ Votre Pool d'adresses IP est paramétré et fonctionnel.
 ![Serv](images/en17servicedone.png){.thumbnail}
 
 
-### MAC Sets
+### Ensemble d'addresses MAC
 
 MAC Sets are collections of MAC adresses (a MAC is a physical address of a network component).     
 
@@ -162,7 +162,7 @@ Votre Pool d'adresses IP est paramétré et fonctionnel.
 ![MAC](images/en20macdone.png){.thumbnail}
 
 
-### IP Sets
+### Ensemble d'addresses IP
 
 IP sets are collections of IP adresses.     
 
@@ -183,7 +183,7 @@ Votre Pool d'adresses IP est paramétré et fonctionnel.
 ![IP](images/en23ipdone.png){.thumbnail}
 
 
-### Security Groups
+### Groupes de sécurité
 
 Security Groups are collections of network objects.     
 
