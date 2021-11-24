@@ -25,131 +25,205 @@ Créer des groupes d'objets permet de limiter le nombre de règles et de simplif
 
 ## En pratique
 
-Les groupes peuvent être gérées de manière ponctuelle au niveau de la source ou destination des règles de Firewall par exemple, mais il peut être plus simple de la gérer de manière globale via la partie "Groupes et balides".
 
-![](images/NSXHome.PNG){.thumbnail}
+### Accès à l'interface
 
-Les groupes suivants peuvent être configurés :
+Dans le menu vSphere, allez dans le tableau de bord `Mise en réseau et sécurité`{.action}.
 
-### Groupes de sécurité
+![Menu](images/en01dash.png){.thumbnail}
 
-Les groupes de sécurité permettent de créer des groupes d'objet qui correspondront à une règle spécifique définie dans le groupe.
+Sur la gauche de l'écran, naviguez jusqu'à la section `Groupes et balises`{.action}.    
+La section offre 7 types de groupes:
+- Balises de sécurité
+- Pools d'adresses IP
+- Groupes de services 
+- Services
+- Ensemble d'addresses MAC
+- Ensemble d'addresses IP
+- Groupes de sécurité
 
-Vous pouvez ajouter un groupe de sécurité en cliquant sur le bouton `+ Ajouter`{.action}.
-
-![](images/AddSecurityGroup.PNG){.thumbnail}
-
-Vous pouvez ensuite sélectionner les membres de critères. Dans l'exemple ci-dessous, le groupe inclura toutes les VMs dont le nom dans vSphere contiendra "Test" ou "Trial". Vous pouvez cliquer sur "Add" pour ajouter des règles au membre.
-
-Le champ "Match" permet de définir si toutes les règles doivent correspondre pour l'appartenance au groupe ou si un seul critère est nécessaire.
-
-Les critères peuvent se baser sur des informations différents. Ainsi, un critère peut se baser sur le contenu du nom d'une VM, et un second dont le nom commence par des caractères particulier.
-
-![](images/DefineDynamicMembership.PNG){.thumbnail}
-
-L'étape suivante permet d'indiquer si d'autres objets sont inclus dans cette règle de sécurité, qu'ils correspondent ou non aux critères configurés précédemment.
-
-Les objets peuvent être d'autres groupes de sécurité, des cluster, et biens d'autres choses.
-
-Cette étape est optionnelle, vous pouvez directement poursuivre si vous ne souhaitez pas d'exception.
-
-![](images/selectObjectToInclude.PNG){.thumbnail}
-
-L'étape suivante est similaire mais pour que des éléments ne soient pas ajoutées au groupe de sécurité même si ils répondent aux critères.
-
-![](images/SelectObjectsToExclude.PNG){.thumbnail}
-
-Obtenez finalement le résumé du groupe de sécurité que vous pouvez vérifier avant de valider.
-
-![](images/ReadyToComplete.PNG){.thumbnail}
-
-Le groupe de sécurité est fonctionnel et peut être utilisé en tant que source ou destination d'une règle de firewall.
-
-![](images/Result.PNG){.thumbnail}
-
-### Ensembles d'adresses IP
-
-Les "Ensembles d'adresses IP" permettent de créer des groupes d'IPs qui peuvent ensuite être utilisés dans des règles de firewall ou de NAT ensuite.
-
-Rendez-vous dans la partie "Ensembles d'adresses IP" pour avoir accès au tableau associé.
-
-![](images/IPSets.PNG){.thumbnail}
-
-Cliquez sur `+ Ajouter`{.action} pour ajouter un groupe d'IP. Vous pouvez renseigner les champs suivants :
-
-- Name : Le nom du groupe d'IP, explicite pour vous afin de différenciez vos différents groupes.
-- Description : Une description facultative du groupe afin de les différencier entre eux.
-- IP Addresses : Les IPs inclues dans le groupe (IP unique, sous réseau entier ou plage précise en réspéctant la syntaxe rappelée sous le champ).
-
-![](images/NewIPSets.PNG){.thumbnail}
-
-Le groupe est créé.
-
-![](images/SummaryIPSets.PNG){.thumbnail}
+![GUI](images/en02groups.png){.thumbnail}
 
 
-### Ensembles MAC
+### Balises de sécurité
 
-Les "Ensembles MAC" permettent de créer des groupes d'adresses MAC qui peuvent ensuite être utilisés dans des règles de firewall ensuite.
+Les balises sont des metadonnées ajoutées aux VMs pour facilement les identifier et les classer.    
 
-Rendez-vous dans la partie "MAC Sets" pour avoir accès au tableau associé.
+Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
 
-![](images/MACSets.PNG){.thumbnail}
+![TAG](images/en03tags.png){.thumbnail}
 
-Cliquez sur `+ Ajouter`{.action} pour ajouter un groupe d'adresses MAC. Vous pouvez renseigner les champs suivants :
 
-- Name : Le nom du groupe d'IP, explicite pour vous afin de différenciez vos différents groupes.
-- Description : Une description facultative du groupe afin de les différencier entre eux.
-- MAC Addresses : Les adresses MAC inclues dans le groupe (au moins deux, séparées par des virgules).
+Une balise est simplement un mot clé. Vous pouvez choisir à votre guise.
 
-![](images/NewMACSet.PNG){.thumbnail}
+![TAG](images/en04tagname.png){.thumbnail}
 
-Le groupe est créé.
 
-![](images/SummaryMACSets.PNG){.thumbnail}
+Une fois créée, selectionnez-la et cliquez sur `Attribuer une VM`{.action}
 
-### Services
+![TAG](images/en05tagassign.png){.thumbnail}
 
-La partie "Services" vous permet d'avoir accès à une liste prédéfinie de services connus. Vous pourrez par exemple retrouver le service "HTTP" qui correspond au protocole TCP sur port 80 ou encore le service "HTTPS" en TCP sur le port 443.
 
-![](images/Service.PNG){.thumbnail}
+Choisissez la(les) VM(s) à attribuer puis utilisez la flêche pour les faire glisser dans la partie Objets Sélectionnés.     
+Cliquez `OK`{.action}.
 
-Cliquez sur `+ Ajouter`{.action} pour ajouter un service personnalisé. Dans le cas présent, nous ajouterons un port personnalisé pour l'accès en SSH, afin de ne pas utiliser le port 22 par défaut.
+![TAG](images/en06tagassigned.png){.thumbnail}
 
-Les options avancées permettent, dans l'exemple du TCP, d'ajouter des ports sources pour détailler le type de traffic attendu par ce service.
 
-![](images/AddService.PNG){.thumbnail}
+Votre Balises de sécurité est prête et attribuée à vos VMs.
 
-Le nouveau service est maintenant disponible pour la création de règles, par exemple firewall.
+![TAG](images/en07tagdone.png){.thumbnail}
 
-![](images/SummaryService.PNG){.thumbnail}
-
-### Groupes de services
-
-La partie "Groupes de services" vous permet de gérer les services abordés dans la partie précédente, et d'en faire des groupe qui sont complémentaires pour vos utilisations.
-
-![](images/ServiceGroups.PNG){.thumbnail}
-
-Cliquez sur `+ Ajouter`{.action} pour ajouter un groupe de services personnalisé. Cet ajout vous permet de définir les services inclus dans votre groupe de service.
-
-Afin d'ajouter les services au groupe, sélectionnez les dans la colonne de gauche et ajoutez-les dans la colonne de droite.
-
-Via le menu déroulant "Object Type", vous pouvez également inclure des groupes de service dans ce groupe de service plutôt que des services seuls.
-
-Dans l'exemple suivant, nous allons créer un service appelé "Web" permettant de gérer le HTTP et HTTPS simultannément ensuite dans les règles NSX.
-
-![](images/AddServiceGroups.PNG){.thumbnail}
-
-Le groupe de services personnalisés est ensuite disponible.
-
-![](images/SummaryServiceGroups.PNG){.thumbnail}
 
 ### Pools d'adresses IP
 
-> [!warning]
->
-> La partie "Pools d'adresses IP" est reservée aux administrateurs OVH. Une modification des pools d'IPs pourraient créer différents dysfonctionnements et entrainer une remise en place complexe.
->
+Un Pool d'adresses IP est une plage d'addresses IP.     
+
+Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
+
+![POOL](images/en08pool.png){.thumbnail}
+
+
+Le pool a besoin d'un nom, d'une passerelle et d'une longueur de préfixe pour être utilisable.   
+Les inormations DNS sont optionnelles.     
+Les IPs doivent être ajoutées sous forme de plage (xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx).     
+Cliquez sur `Ajouter`{.action}.
+
+![POOL](images/en09newpool.png){.thumbnail}
+
+
+Votre Pool d'adresses IP est paramétré et fonctionnel.
+
+![POOL](images/en10pooldone.png){.thumbnail}
+
+
+### Service Groups
+
+Service Groups are collections of existing Services and/or Service Groups.     
+
+Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
+
+![SG](images/en11serviceg.png){.thumbnail}
+
+
+Your group will need a name and objects added.     
+The available objects will be of two types:
+- Service Groups
+- Services
+You can highlight various items from either types and drop them in the Selected Oblects section.     
+Click `Add`{.action} when done.
+
+![SG](images/en12newserviceg.png){.thumbnail}
+
+
+Votre Pool d'adresses IP est paramétré et fonctionnel.
+
+![SG](images/en14servicegdone.png){.thumbnail}
+
+
+### Services
+
+Services are applications running at the network layer and above.     
+They typically are linked to network ports and protocols for communications.
+
+Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
+
+![Serv](images/en15service.png){.thumbnail}
+
+
+Most of the commonly used services are already listed but you can define new ones to allow to be more granular or create specific ports collections.     
+Click `Add`{.action} when done.
+
+![Serv](images/en16newservice.png){.thumbnail}
+
+
+Votre Pool d'adresses IP est paramétré et fonctionnel.
+
+![Serv](images/en17servicedone.png){.thumbnail}
+
+
+### MAC Sets
+
+MAC Sets are collections of MAC adresses (a MAC is a physical address of a network component).     
+
+Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
+
+![MAC](images/en18mac.png){.thumbnail}
+
+
+Name your set then add the physical addresses as needed.     
+Click `Add`{.action} when done.
+
+![MAC](images/en19macset.png){.thumbnail}
+
+
+Votre Pool d'adresses IP est paramétré et fonctionnel.
+
+![MAC](images/en20macdone.png){.thumbnail}
+
+
+### IP Sets
+
+IP sets are collections of IP adresses.     
+
+Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
+
+![IP](images/en21ip.png){.thumbnail}
+
+
+Name your set then add the addresses as needed.     
+IPs can be added as single (xxx.xxx.xxx.xxx), range (xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx) or CIDR (xxx.xxx.xxx.x/xx).     
+Click `Add`{.action} when done.
+
+![IP](images/en22ipset.png){.thumbnail}
+
+
+Votre Pool d'adresses IP est paramétré et fonctionnel.
+
+![IP](images/en23ipdone.png){.thumbnail}
+
+
+### Security Groups
+
+Security Groups are collections of network objects.     
+
+Pour en créer une, allez dans la section `Balises de sécurité`{.action} et cliquez sur `+ Ajouter`{.action}.
+
+![SEC](images/en24sec.png){.thumbnail}  
+
+
+Name your set then click `Next`{.action}.     
+
+![SEC](images/en25secname.png){.thumbnail}
+
+
+Security Groups allow for dynamic membership. You can define a single or set of variables that will automatically assign/unassign objects.    
+*You can leave this part empty if you do not wish to use the functionality*    
+Click `Next`{.action}.
+
+![SEC](images/en26dynamic.png){.thumbnail}
+
+
+You can now add any existing Group/Object to the Selected Object section to include them in the group.     
+Click `Next`{.action}
+
+![SEC](images/en27objects.png){.thumbnail}
+
+
+If there is a specific object that needs to be left out (a single member of a whole group you selected previously for example), find it in the Objects to Exclude window.     
+Click `Next`{.action}
+
+![SEC](images/en28exclude.png){.thumbnail}
+
+
+Review your settings and click `Finish`{.action}
+
+![SEC](images/en29review.png){.thumbnail}
+
+
+Votre Pool d'adresses IP est paramétré et fonctionnel.
+
+![SEC](images/en30secdone.png){.thumbnail}
 
 ## Aller plus loin
 
