@@ -43,7 +43,7 @@ A confirmation message will appear, informing you about the removal of the proje
 
 ![delete project](images/deleteproject2.png){.thumbnail}
 
-When you click on the button, an email will be sent to your contact email address, asking you to either confirm or cancel the project deletion. After clicking the confirmation link, you will be redirected to a web page where you will need to enter your account password. After entering and confirming your password, your project will be deleted.
+When you click on the button, an email will be sent to your contact email address, asking you to either confirm or cancel the project deletion. After clicking the confirmation link, you will be redirected to a web page where you will need to enter your account password.<br>After entering and confirming your password, your project will be deleted.
 
 ## Go further
 

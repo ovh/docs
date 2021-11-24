@@ -123,7 +123,7 @@ Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-h
 
 Après avoir lancé l'installation de votre module en mode avancé, vous avez reçu un e-mail indiquant que votre module ne peut pas se connecter à la base de données indiquée.
 
-Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez ce [guide](../hosting/modules-en-1-clic/#configurer-le-module).
+Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez ce [guide](../modules-en-1-clic/#configurer-le-module).
 
 Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
 

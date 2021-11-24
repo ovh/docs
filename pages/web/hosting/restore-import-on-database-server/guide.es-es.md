@@ -161,4 +161,4 @@ psql —host=servidor —port=puerto —user=usuario —password=contraseña nom
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

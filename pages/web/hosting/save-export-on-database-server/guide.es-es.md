@@ -140,4 +140,4 @@ pg_dump —host=servidor —port=puerto —user=usuario —password=contraseña 
 
 [Restaurar e importar una base de datos en su servidor de bases de datos](../restaurar-importar-base-de-datos)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -42,7 +42,8 @@ Eine Bestätigungsmeldung erscheint, die Sie über das Entfernen aller Projektre
 
 ![Projekt löschen](images/deleteproject2.png){.thumbnail}
 
-Nach Klick auf den Button wird eine E-Mail an Sie gesendet, in der Sie aufgefordert werden, das Löschen des Projekts entweder zu bestätigen oder abzubrechen. Der Bestätigungslink leitet Sie zu einer Webseite weiter, auf der Sie Ihr OVHcloud Account-Passwort eingeben müssen. Nach Eingabe und Bestätigung Ihres Passworts wird das Projekt gelöscht.
+Nach Klick auf den Button wird eine E-Mail an Sie gesendet, in der Sie aufgefordert werden, das Löschen des Projekts entweder zu bestätigen oder abzubrechen. Der Bestätigungslink leitet Sie zu einer Webseite weiter, auf der Sie Ihr OVHcloud Account-Passwort eingeben müssen.
+<br>Nach Eingabe und Bestätigung Ihres Passworts wird das Projekt gelöscht.
 
 ## Weiterführende Informationen
 
