@@ -156,4 +156,4 @@ psql --host=server --port=port --user=benutzername --password=passwort datenbank
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

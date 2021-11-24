@@ -20,19 +20,19 @@ Si se produce un error en la base de datos, es necesario que pueda restaurar una
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting SQL Privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) o [Cloud Databases](https://www.ovh.es/cloud-databases/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener contratado un plan de [hosting SQL Privado](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) o [Cloud Databases](https://www.ovh.es/cloud-databases/).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
 > [!primary]
 >
-> Tenga en cuenta que los productos [SQL Privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) y [Cloud Databases](https://www.ovh.es/cloud-databases/) no dan acceso al host, sino a las bases de datos alojadas en este, por lo que no hay accesos super usuario "root". Los comandos SQL genéricos funcionan con normalidad y los programas de tipo HeidiSQL, SQuirreL SQL o Adminer son totalmente compatibles.
+> Tenga en cuenta que los productos [SQL Privado](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) y [Cloud Databases](https://www.ovh.es/cloud-databases/) no dan acceso al host, sino a las bases de datos alojadas en este, por lo que no hay accesos super usuario "root". Los comandos SQL genéricos funcionan con normalidad y los programas de tipo HeidiSQL, SQuirreL SQL o Adminer son totalmente compatibles.
 > 
 
 ### Restaurar e importar una base de datos desde el área de clientes
 
-Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. Acceda a la pestaña `Bases de datos`.
+Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. Acceda a la pestaña `Bases de datos`.
 
 En la columna **"Copias de seguridad"**, la cifra corresponde al número de copias de seguridad disponibles para la base de datos.
 
@@ -127,7 +127,7 @@ cat nombre_de_la_base.sql | mysql —host=servidor —user=usuario —port=puert
 
 > [!warning]
 >
-> - Para evitar que alguien acceda a este archivo, que contiene datos sensibles, consulte la guía Proteger el acceso a él: [Uso de .htaccess para proteger con contraseña un directorio de su sitio web](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/)
+> - Para evitar que alguien acceda a este archivo, que contiene datos sensibles, consulte la guía Proteger el acceso a él: [Uso de .htaccess para proteger con contraseña un directorio de su sitio web](https://docs.ovh.com/us/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/)
 > - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
 >
 
@@ -155,7 +155,7 @@ psql —host=servidor —port=puerto —user=usuario —password=contraseña nom
 
 > [!warning]
 >
-> - Para evitar que alguien acceda a este archivo con datos sensibles, le recomendamos que proteja el acceso a él en la guía [Uso de .htaccess para proteger con contraseña un directorio de su sitio web](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - Para evitar que alguien acceda a este archivo con datos sensibles, le recomendamos que proteja el acceso a él en la guía [Uso de .htaccess para proteger con contraseña un directorio de su sitio web](https://docs.ovh.com/us/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
 > - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
 >
 
