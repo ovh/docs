@@ -1,6 +1,6 @@
 ---
 title: 'vRack für Public Cloud konfigurieren'
-excerpt: 'Erfahren Sie hier, wie Sie vRack mit Public Cloud Instanzen einrichten'
+excerpt: 'Erfahren Sie hier, wie Sie Ihr vRack mit Public Cloud Instanzen einrichten'
 slug: public-cloud-vrack
 section: vRack
 order: 1
