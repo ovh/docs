@@ -29,7 +29,7 @@ La configuración de la resolución **inversa DNS** de una instancia resulta esp
 
 ## Procedimiento
 
-Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Cloud de la barra de metal`{.action} y haga clic en `IP`{.action} en el menú de la izquierda.
+Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `IP`{.action} en el menú de la izquierda.
 
 En la tabla de esta página se enumeran los servicios compatibles. Puede filtrar el ID de su proyecto de Public Cloud utilizando el menú desplegable **Service**.
 
