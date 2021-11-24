@@ -1,42 +1,113 @@
 ---
 title: Utilizar o VMware Update Manager
-excerpt: ''
+excerpt: Utilize a ferramenta VMware para manter os seus hosts atualizados
 slug: utilizar_o_vmware_update_manager
 legacy_guide_number: g591
+section: Funcionalidades VMware vSphere
+order: 09
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Pré-requisitos
-Vamos apresentar a instalação do plug-in Update Manager no vSphere Client.
+**Última atualização: 23/11/2021**
 
-Deverá previamente instalar o vSPhere Cliente na sua computador:
+## Objetivo
 
+O gestor de atualizações da VMware permite manter os seus hosts atualizados ao instalar os *Bug Fixes* e Patchs de segurança, sem a intervenção das nossas equipas.     
 
-- [Instalação do vSphere client]({legacy}600)
+> [!primary]
+> As atualizações do vCenter ou as principais atualizações necessitam sempre da nossa participação.
 
+**Este guia explica o funcionamento desta ferramenta**
 
+## Requisitos
 
-## IMPORTANTE!!!
- Se utiliza a ligação RDP fornecida aquando da criação da sua conta, não será necessário efetuar a instalação do Update Manager.
+- Ter contacto com o administrador do [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), para receber os dados de acesso.
+- Ter um identificador de utilizador ativo com as permissões específicas para NSX (criado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
 
+## Instruções
 
-## 
-De forma a ser efetuado a instalação do Update Manager é necessário que instale o plugin associado disponível no seu vSphere:
+### Maintenance Mode
 
-![](images/img_156.jpg){.thumbnail}
-De seguida verá a janela dos plugins e o Update Manager encontra-se em baixo dessa janela, na qual poderá clicar em "Download and install" ou "Download installer".
+Antes de trabalhar num host, deve pô-lo em modo de manutenção.    
+De facto, a maioria das vezes, o patcher reinicia o host e isso irá limitar o impacto nas suas VMs de produção. 
 
-Uma vez efetuada essa etapa, irá aparecer um novo separador que irá aparecer no cluster e nos hosts:
+No menu da interface vSphere, aceda ao painel de controlo `Hosts and Clusters`{.action}.
 
-![](images/img_66.jpg){.thumbnail}
-É apenas necessário clicar no botão "Anexar..." e de selecionar o tipo de atualização desejada:
+![Manutenção](images/en01menu.png){.thumbnail}
 
-![](images/img_67.jpg){.thumbnail}
-Após ter selecionado e anexado as linhas de base, poderá efetuar um scan de correções e atualizações:
+À esquerda do ecrã, clique com o botão direito do rato. Na secção `Maintenance Mode`{.action}, selecione `Enter Maintenance Mode`{.action}.
 
-![](images/img_68.jpg){.thumbnail}
-Terá depois uma tabela que irá ter o resumo das correções e atualizações disponíveis, assim como as estatísticas relativas aos hosts atualizados.
-Se deseja simplesmente efetuar o download das atualizações sem efetuar as instalaçãoes, poderá utilizar o botão "Transferir" e se deseja realizar a instalação, deverá nesse caso utilizar o botão "Corrigir":
+![Manutenção](images/en02maintenance.png){.thumbnail}
 
-![](images/img_69.jpg){.thumbnail}
+Certifique-se de que a opção está selecionada na etapa seguinte e clique em `OK`{.action}.
 
+![Manutenção](images/en03enter.png){.thumbnail}
+
+Assumindo que o DRS está ativo, as suas VMs de produção serão migradas para outro host.
+
+> [!primary]
+> Se tiver personalizado o seu ambiente, poderá ter de efetuar manualmente as migrações das VMs.
+>
+
+Pode aparecer o seguinte aviso:     
+
+![Manutenção](images/en04warning.png){.thumbnail}
+
+O seu host está em modo de manutenção.
+
+![Manutenção](images/en05maintenanced.png){.thumbnail}
+
+### Update Manager
+
+Selecione o host e aceda à secção `Update`{.action}.
+Veem os diferentes estados básicos e a conformidade do host.     
+
+Deverá aplicar uma "linha de base" para verificar a conformidade.
+
+![Update](images/en06summary.png){.thumbnail}
+
+Na secção `Attached Baselines`, clique em `Attach`{.action} e `Attach Baseline or Baseline Group`{.action}.
+
+![Update](images/en07attach.png){.thumbnail}
+
+Existem linhas de base predefinidas para os diferentes níveis de correção recomendados.
+
+> [!primary]
+> No nosso exemplo, utilizamos correções críticas mas pode utilizar as duas linhas existentes ou criar outras à sua vontade para cobrir as diferentes necessidades do seu ambiente.
+>
+
+Selecione a linha de base requerida e clique em `Attach`{.action}.
+
+![Update](images/en08define.png){.thumbnail}
+
+O resumo de conformidade deve então ser atualizado.     
+
+![Update](images/en09noncompliant.png){.thumbnail}
+
+Volte à secção `Attached Baselines`, selecione todas as linhas de base associadas e clique em `Remediate`{.action}.
+
+![Update](images/en10remediate.png){.thumbnail}
+
+Selecione o host e clique novamente em `Remediate`{.action}.
+
+![Update](images/en11remediate.png){.thumbnail}
+
+O processo de atualização tem início e durará em função do número e da dimensão dos corretivos aplicados.<br>
+Se necessário, o host será reiniciado automaticamente.
+
+![Update](images/en12remediating.png){.thumbnail}
+
+No final do processo, a verificação da conformidade será relançada (ou pode ser forçada clicando na ligação) e deverá aparecer uma marca verde.
+
+![Update](images/en13compliant.png){.thumbnail}
+
+O seu host está agora atualizado.    
+
+Não se esqueça de o desativar do modo de manutenção e ele voltará para a produção.
+
+## Saiba mais
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
