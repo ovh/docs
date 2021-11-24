@@ -141,4 +141,4 @@ pg_dump —host=server —port=port —user=utente —password=password nome_dat
 
 [Ripristinare e importare un database sul tuo server di database](../ripristinare-importare-database)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

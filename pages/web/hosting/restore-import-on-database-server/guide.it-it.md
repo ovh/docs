@@ -162,4 +162,4 @@ psql —host=server —port=port —user=utente —password=password nome_databa
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

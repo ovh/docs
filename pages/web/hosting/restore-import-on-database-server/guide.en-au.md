@@ -157,4 +157,4 @@ psql --host=server --port=port --user=username --password=password database_name
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.
