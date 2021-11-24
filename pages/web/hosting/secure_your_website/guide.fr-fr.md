@@ -14,7 +14,7 @@ Ce guide vous permettra d'améliorer la sécurité de vos sites Web. Il vous per
 
 warning
 
-Ce guide concernera uniquement les produits liés à l'univers Web Cloud (Domaines, DNS, Hébergements mutualisés, E-mails MX Plan), ainsi que la sécurisation de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Ce guide concernera uniquement les sites WEB hébrgés sur les [solutions mutualisées OVHcloud]().
 
 **Découvrez comment sécuriser votre site Web.**
 
@@ -38,7 +38,9 @@ Ce guide concernera uniquement les produits liés à l'univers Web Cloud (Domain
 
 Sauvegarder régulièrement vos données, quelle que soit la solution informatique concernée est le plus important geste à avoir en termes de sécurité informatique. Il sera toujours de réinstaller un logiciel ou de changer le disque dur de votre poste informatique, mais il est très difficile de récupérer des données une fois qu'elles ont été perdues.
 
-Pour cette première étape de ce parcours de sécurisation de vos solutions OVHcloud, commencez par sauvegarder vos bases de données en suivant les instructions de ce [guide](./exportation-bases-donnees/)
+Pour cette première étape de ce parcours de sécurisation de votre site, commencez par sauvegarder vos bases de données en suivant les instructions de ce [guide](./exporter-son-site-web/).
+
+Faites ensuite la même opération pour les données contenues dans l'espace FTP de votre hébergement selon ce [guide](./restauration-ftp-filezilla-espace-client/).
 
 
 
