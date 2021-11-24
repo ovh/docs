@@ -2,7 +2,6 @@
 title: Utilizar VMware Update Manager
 excerpt: Utilice la herramienta de VMware para mantener actualizados sus hosts.
 slug: utilizar_vmware_update_manager
-legacy_guide_number: g591
 section: Funcionalidades de VMware vSphere
 order: 09
 ---
@@ -24,8 +23,8 @@ El gestor de actualizaciones de VMware permite mantener los hosts actualizados i
 
 ## Requisitos
 
-- Ser contacto administrador del [Hosted Private Cloud Infrastructure](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) para recibir las claves de conexión.
-- Tener un usuario activo con los permisos específicos de NSX (creado en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)).
+- Ser contacto administrador del [Hosted Private Cloud Infrastructure](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) para recibir las claves de conexión.
+- Tener un usuario activo con los permisos específicos de NSX (creado en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)).
 
 ## Procedimiento
 
