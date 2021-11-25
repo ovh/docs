@@ -41,7 +41,7 @@ net use z: \\10.16.100.10\nas-000041_mininas-000212
 - Montage CIFS pour un NAS ou NAS-HA :
 
 ```bash
-net use z: \\10.16.101.8\zpool-000206_partition1
+net use z: \\10.16.101.8\zpool-000206\partition1
 ```
 
 > [!alert]
