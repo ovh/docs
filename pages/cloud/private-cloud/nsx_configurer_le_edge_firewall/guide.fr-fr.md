@@ -30,97 +30,126 @@ Dans l'interface vSphere, allez dans le Tableau de bord `Mise en réseau et séc
 
 ![Menu](images/en01dash.png){.thumbnail}
 
+
 Sur la gauche de votre écran, naviguez vers `Dispositifs NSX Edge`{.action} puis cliquez sur le dispositif à paramétrer.
 
 ![NSX](images/en02nsx.png){.thumbnail}
 
 
+The Firewall tab shows the status with a simple button to stop or start the service.    
+*any change made will need to be published to be validated so you will not shut down the service at the single push of a button*     
+
+![Rule](images/en03fw.png){.thumbnail}
 
 
-Pour commencer, rendez-vous dans la partie "NSX Edges" afin de trouver la liste des Edges déjà déployées. Vous pourrez alors effectuer un double-clic sur votre Edge pour accéder à sa configuration.
+### Firewall Rule
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_1.jpg){.thumbnail}
+The basics of a firewall rule is to manage identified service(s) from specified source(s) to specified destination(s).     
 
-Cliquez sur l'onglet "Manage" puis "Firewall" afin d'accéder aux fonctionnalités de pare-feu spécifiques au trafic qui transitera via cette Edge. Dans l'exemple ci-dessous, des règles sont déjà présentes du fait du choix de cette fonctionnalité lors du déploiement.
+Click on `+ Add Rule`{.action}
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_2.png){.thumbnail}
+The new rule shows with:
+- Activation slider
+- Selection box for specific actions *(order chande, deletion...)*
+- Name
+- ID
+- Type
+- Source
+- Destination
+- Service
+- Action
+- Log slider
+- Advanced settings
 
-Vous pouvez très simplement activer ou désactiver la fonctionnalité de pare-feu de cette Edge via un simple bouton.
+![Rule](images/en03rule.png){.thumbnail}
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_3.png){.thumbnail}
 
-La désactivation du pare-feu désactive également les règles de NAT.
+Name the rule by clicking the field. ID and Type fields are automatically populated.
 
-Cliquez sur `Add Rule` (petit `+`{action} vert) afin d'ajouter une règle de pare-feu. Cela ajoute simplement une ligne supplémentaire avec des valeurs par défaut dans la liste des règle (la règle 2 dans la capture ci-dessous).
+### Source
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_4.png){.thumbnail}
+The source field defines the origin of the traffic.    
+Hover over the field and click on the `pencil`{.action} icon.     
+You can add objects and/or IP addresses as needed.     
+*If Negate Source is turned on, the rule is applied to all sources except for the sources selected.*     
+Click `Save`{.action} when ready.
 
-La règle nouvellement ajoutée se placera juste avant la dernière règle dans le cas présent car l'ordre des règles est important. La règle d'autorisation ne serait pas prise en compte si elle était placée après la règle de refus de l'intégralité du trafic. Seule la première règle qui correspond au trafic sera appliquée, les règles suivantes ne seront pas consultées.
+![Source](images/en04sourceobjects.png){.thumbnail}
+![Source](images/en05sourceIP.png){.thumbnail}
 
-Pour configurer la règle nouvellement ajoutée, il vous suffit de passer votre souris sur chacun des champs, laissant ainsi apparaître divers icônes en fonction du champ choisi ("+" ou "IP" par exemple).
 
-Aucune règle n'est appliquée avant que vous ayez cliqué sur "Publish" en haut de page. Cela sera nécessaire à chaque modification. Le bouton "Revert" permet de n'appliquer aucune nouvelle règle et de revenir à l'état en place à la dernière publication de règles.
+### Destination
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_5.png){.thumbnail}
+The destination field defines the target of the traffic.    
+Hover over the field and click on the `pencil`{.action} icon.     
+You have the same choices for destination as you had for source.    
+*If Negate Destination is turned on, the rule is applied to all destinations except for the destinations selected.*
+Click `Save`{.action} when ready.
 
-## Détails sur les champs d'une règle
+![Destination](images/en07destobjects.png){.thumbnail}
+![Destination](images/en07destIP.png){.thumbnail}
 
-Cette partie permet d'aborder les diverses possibilités que vous avez avec chacun des champs d'une règle, afin que vous puissiez ensuite configurer vos règles en fonction de vos besoins.
-
-### No.
-
-Cliquer sur le petit `+`{action} au niveau du numéro d'une règle permet d'avoir les possibilités suivantes :
-
-- "Add Above" : ajouter une règle avant la règle sélectionnée (équivalent de "Add Rule") ;
-- "Add Below" : ajouter une règle après la règle sélectionnée (équivalent de "Add Rule") ;
-- "Delete" : supprimer la règle sélectionnée ;
-- "Copy" : copier les paramètres de la règle sélectionnée ;
-- "Paste Above" : coller les paramètres précédemment copiés avant la règle sélectionnée ;
-- "Paste Below" : coller les paramètres précédemment copiés après la règle sélectionnée.
-
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_6.png){.thumbnail}
-
-### Name
-
-Cliquer sur le petit `+`{.action} au niveau de la colonne "Name" d'une règle permet simplement de nommer la règle.
-
-Il est toujours préférable de donner un nom explicite à vos règles afin de pouvoir les retrouver rapidement en cas de besoin de modification par la suite.
-
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_7.png){.thumbnail}
-
-### Source et Destination
-
-Cliquer sur le petit `+`{.action} au niveau de la colonne `Source` ou `Destination` d'une règle permet de définir plusieurs paramètres de source ou de destination du trafic. Vous pouvez sélectionner plusieurs éléments comme un cluster, une machine virtuelle ou encore un groupe d'IP ou de groupes de ports distribués.
-
-Vous avez également un bouton `IP`{.action} vous permettant de renseigner directement des IP sans passer par la liste de possibilités du bouton `+`{.action}.
-
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_8.png){.thumbnail}
-
-La source et la destination d'une même règle ne doivent pas forcément se baser sur les mêmes éléments. Vous pouvez par exemple avoir une source en provenance d'un groupe d'IP et une destination correspondant à un cluster.Vous pouvez créer des [groupes d'objets](../configurer-les-groupes-d-objets-nsx/). Cela vous permet d'indiquer par exemple que toutes les machines virtuelles qui incluent "Web" dans leur nom font partie du groupe. Ce groupe peut alors être renseigné en source ou destination pour appliquer une règle à toutes les machines virtuelles qui incluent "Web", sans avoir à modifier la règle à chaque ajout.
 
 ### Service
 
-Cliquer sur le petit `+`{.action} au niveau de la colonne "Service" d'une règle permet de définir les services concernés par la règle. Vous avez une liste exhaustive par défaut mais vous pouvez également ajouter un service personnalisé et le port associé via le bouton `New Service...`{.action}.
+The service field defines the type of traffic aimed at.    
+Hover over the field and click on the `pencil`{.action} icon.     
+You have the choice between using existing services and groups or add raw ports/protocols.    
+*Clicking on an existing service or group will show you a description with the ports and protocols involved.*
+Click `Save`{.action} when ready.
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_9.png){.thumbnail}
+![Service](images/en08servsg.png){.thumbnail}
+![Service](images/en09servdetail.png){.thumbnail}
+![Service](images/en10servport.png){.thumbnail}
 
-### "Action"
 
-Cliquer sur le petit "+" au niveau de la colonne `Action` vous permet de définir si la règle accepte ou refuse le trafic renseigné dans les champs précédents. Dans la majorité des cas, si vous disposez d'une règle de refus global, vous ajouterez principalement des règles d'autorisation.
+### Action
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_10.png){.thumbnail}
+The action field defines how to handle the traffic.    
+You have three possible options:
+- Accept. The traffic will go through.
+- Deny. The traffic will be blocked with no more communication.
+- Reject. The traffic will be blocked and a port unreachable will be sent to the source.     
+Select the desired outcome.
 
-## Exemples de règles
+![Action](images/en11action.png){.thumbnail}
 
-Dans l'exemple ci-dessous, l'utilité des règles est la suivante:
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_11.jpg){.thumbnail}
+### Log
 
-- 1 : règle par défaut permettant de ne pas restreindre les fonctionnalités de la Edge en elle-même quelles que soient vos configurations ;
-- 2 : règle qui autorise le flux HTTP (port 80) et HTTPS (port 443) vers une IP spécifique ;
-- 3 : règle qui autorise le flux ICMP (ping sur IPv4) depuis tout le réseau interne vers n'importe quelle destination ;
-- 4 : règle qui autorise plusieurs flux de protocoles sortant vers n'importe quelle destination ;
-- 5 : règle par défaut qui refuse tout le trafic n'étant pas autorisé dans les règles précédentes.
+The log slider allows you to keep a journal of events on the rule.
+
+
+### Advanced Settings
+
+You have three functions in the advanced settings:
+- a comment section
+- a statistics section
+- an advanced section that allows you to define if the target traffic is inbound, outbound or both and in case of NAT traffic, if the rule applies to the original or translated source.
+
+![Advanced](images/en12adv.png){.thumbnail}
+
+
+### Rule Order
+
+Once the rule set up, you see it in the list.   
+The number of the rule in the list defines its priority.    
+Rules are applied from top to bottom, and the first rule that matches the traffic overrides all the other rules below.    
+That means that in the case of conflicting rules, the rule with the highest priority (lowest number) will be applied.    
+You can modify the rule order by selecting a rule and using the up and down arrows.    
+
+![Order](images/en13order.png){.thumbnail}
+
+
+### Publish
+
+No creation/modification of rule will be registered until you click the `Publish`{.action} button.
+
+![Publish](images/en14publish.png){.thumbnail}
+![Publish](images/en15done.png){.thumbnail}
+
+
+Congratulations and thank you.
 
 ## Aller plus loin
 
