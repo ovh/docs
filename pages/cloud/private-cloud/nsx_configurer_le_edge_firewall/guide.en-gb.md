@@ -104,16 +104,47 @@ The action field defines how to handle the traffic.
 You have three possible options:
 - Accept. The traffic will go through.
 - Deny. The traffic will be blocked with no more communication.
-- Reject. The traffic will be blocked and a port unreachable will be sent to the source.
+- Reject. The traffic will be blocked and a port unreachable will be sent to the source.     
 Select the desired outcome.
 
 ![Action](images/en11action.png){.thumbnail}
 
 
+### Log
+
+The log slider allows you to keep a journal of events on the rule.
+
+
 ### Advanced Settings
 
+You have three functions in the advanced settings:
+- a comment section
+- a statistics section
+- an advanced section that allows you to define if the target traffic is inbound, outbound or both and in case of NAT traffic, if the rule applies to the original or translated source.
+
+![Advanced](images/en12adv.png){.thumbnail}
 
 
+### Rule Order
+
+Once the rule set up, you see it in the list.   
+The number of the rule in the list defines its priority.    
+Rules are applied from top to bottom, and the first rule that matches the traffic overrides all the other rules below.    
+That means that in the case of conflicting rules, the rule with the highest priority (lowest number) will be applied.    
+You can modify the rule order by selecting a rule and using the up and down arrows.    
+
+![Order](images/en13order.png){.thumbnail}
+
+
+### Publish
+
+No creation/modification of rule will be registered until you click the `Publish`{.action} button.
+
+![Publish](images/en14publish.png){.thumbnail}
+![Publish](images/en15done.png){.thumbnail}
+
+
+Congratulations and thank you.
 
 ## Go further
 
