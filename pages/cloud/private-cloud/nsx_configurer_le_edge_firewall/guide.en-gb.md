@@ -109,6 +109,8 @@ You have three possible options:
 - Accept. The traffic will go through.
 - Deny. The traffic will be blocked with no more communication.
 - Reject. The traffic will be blocked and a port unreachable will be sent to the source.     
+
+
 Select the desired outcome.
 
 ![Action](images/en11action.png){.thumbnail}
