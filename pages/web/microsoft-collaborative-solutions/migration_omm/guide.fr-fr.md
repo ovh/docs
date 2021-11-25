@@ -6,7 +6,7 @@ section: 'Migration d’un compte Exchange'
 order: 2
 ---
 
-**Dernière mise à jour le 08/03/2018**
+**Dernière mise à jour le 25/11/2021**
 
 ## Objectif
 
