@@ -63,7 +63,7 @@ Es können zwei Situationen auftreten:
 
 #### Fälle einer neuen Instanz
 
-Wenn Sie Hilfe benötigen, folgen Sie zunächst diesem Leitfaden:[Erstellen Ihrer ersten Public Cloud-Instanz](../public-cloud-erste-schritte/#schritt-3-instanz-erstellen){.external}. Bei der Erstellung einer Instanz können Sie in Schritt 4 ein privates Netzwerk angeben, in das Ihre Instanz integriert werden kann. Wählen Sie dann im dargestellten Drop-down-Menü Ihr zuvor erstelltes vRack aus.
+Wenn Sie Hilfe benötigen, folgen Sie zunächst diesem Leitfaden: [Erstellen Ihrer ersten Public Cloud-Instanz](../public-cloud-erste-schritte/#schritt-3-instanz-erstellen){.external}. Bei der Erstellung einer Instanz können Sie in Schritt 4 ein privates Netzwerk angeben, in das Ihre Instanz integriert werden kann. Wählen Sie dann im dargestellten Drop-down-Menü Ihr zuvor erstelltes vRack aus.
 
 #### Fälle einer bereits bestehenden Instanz
 
