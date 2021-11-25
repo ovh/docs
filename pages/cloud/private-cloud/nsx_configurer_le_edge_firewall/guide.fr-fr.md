@@ -1,19 +1,19 @@
 ---
 title: Configurer le NSX Edge Firewall
 slug: configurer-le-nsx-edge-firewall
-excerpt: Créer des règles 
+excerpt: Créer des règles de pare-feu
 legacy_guide_number: '7766384'
 section: NSX
 order: 04
 ---
 
-**Dernière mise à jour le 23/11/2021**
+**Dernière mise à jour le 25/11/2021**
 
 ## Objectif
 
-Le pare-feu permet d'appliquer des restrictions de communication par le trafic géré par la Edge, via plusieurs paramètres configurables en terme de source ou de destination par exemple.
+Le service de pare-feu NSX accepte ou refuse le trafic réseau en fonction de règles appliquées à des objets ou groupes d'objets.
 
-**Ce guide explique la configuration de ce pare-feu**
+**Ce guide explique comment créer ces règles**
 
 ## Prérequis
 
@@ -36,47 +36,47 @@ Sur la gauche de votre écran, naviguez vers `Dispositifs NSX Edge`{.action} pui
 ![NSX](images/en02nsx.png){.thumbnail}
 
 
-The Firewall tab shows the status with a simple button to stop or start the service.    
-*any change made will need to be published to be validated so you will not shut down the service at the single push of a button*     
+La section Pare-Feu montre le statut et un bouton pour démarrer ou arrêter le service.    
+*toute modification doit être publiée avant d'être active. Vous n'arrêterez pas le service d'un seul clicn*     
 
 ![Rule](images/en03fw.png){.thumbnail}
 
 
-### Firewall Rule
+### Règle de pare-feu
 
-The basics of a firewall rule is to manage identified service(s) from specified source(s) to specified destination(s).     
+La base d'une règle de pare-feu est de controller des services identifiés en provenance de sources spécifiques et en direction de destination définies.     
 
-Click on `+ Add Rule`{.action}
+Cliquez sur `+ Ajouter une règle`{.action}
 
-The new rule shows with:
-- Activation slider
-- Selection box for specific actions *(order chande, deletion...)*
-- Name
+La nouvelle règle apparait avec les champs suivant:
+- Glissière d'activation
+- Coche de sélection pour actions spécifiques *(changement de priorité, suppression...)*
+- Mon
 - ID
 - Type
 - Source
 - Destination
 - Service
 - Action
-- Log slider
-- Advanced settings
+- Glissière de journal
+- Paramètres avancés
 
 ![Rule](images/en03rule.png){.thumbnail}
 
 > [!warning]
 >
-> by default, rules have *Any* as source and destination, meaning it encompasses all traffic. It is best practices to avoid broad targets to avoid security issues.
+> par défaut, une règle à pour source et destination *Quelconque*, soit une sélection de tout le trafic. La meilleure pratique est d'éviter les règles globales pour des raisons de sécurité.
 >
 
-Name the rule by clicking the field. ID and Type fields are automatically populated.
+Nommez la règles par un clic sur le nom. Les champs ID and Type seront automatiquement remplis.
 
 ### Source
 
-The source field defines the origin of the traffic.    
-Hover over the field and click on the `pencil`{.action} icon.     
-You can add objects and/or IP addresses as needed.     
-*If Negate Source is turned on, the rule is applied to all sources except for the sources selected.*     
-Click `Save`{.action} when ready.
+La source définit l'origine du trafic.    
+Survoler le champ et cliquez sur le symbole du `crayon`{.action} icon.     
+Vous pouvez ajouter des objets et/ou des addresses IP.     
+*Si vous activez Inverser la source, la règle s'appliquera à toutes les sources sauf celles sélectionnées.*     
+Cliquez sur `Enregister`{.action}.
 
 ![Source](images/en04sourceobjects.png){.thumbnail}
 ![Source](images/en05sourceIP.png){.thumbnail}
@@ -84,11 +84,11 @@ Click `Save`{.action} when ready.
 
 ### Destination
 
-The destination field defines the target of the traffic.    
-Hover over the field and click on the `pencil`{.action} icon.     
-You have the same choices for destination as you had for source.    
-*If Negate Destination is turned on, the rule is applied to all destinations except for the destinations selected.*
-Click `Save`{.action} when ready.
+La destination définit la cible du trafic.    
+Survoler le champ et cliquez sur le symbole du `crayon`{.action} icon.         
+Les possibilités sont les mêmes que pour les sources.    
+*Si vous activez Inverser la destination, la règle s'appliquera à toutes les destinations sauf celles sélectionnées.*     
+Cliquez sur `Enregister`{.action}.
 
 ![Destination](images/en07destobjects.png){.thumbnail}
 ![Destination](images/en07destIP.png){.thumbnail}
@@ -96,11 +96,11 @@ Click `Save`{.action} when ready.
 
 ### Service
 
-The service field defines the type of traffic aimed at.    
-Hover over the field and click on the `pencil`{.action} icon.     
-You have the choice between using existing services and groups or add raw ports/protocols.    
-*Clicking on an existing service or group will show you a description with the ports and protocols involved.*
-Click `Save`{.action} when ready.
+Le service définit le type de traffic visé.    
+Survoler le champ et cliquez sur le symbole du `crayon`{.action} icon.     
+Vous pouvez utiliser des services et groupes existants ou ajouter des ports/protocoles bruts.    
+*Cliquez sur un service ou groupe existant vous montrera une descripion des ports et protocoles utilisés.*
+Cliquez sur `Enregister`{.action}.
 
 ![Service](images/en08servsg.png){.thumbnail}
 ![Service](images/en09servdetail.png){.thumbnail}
@@ -109,51 +109,51 @@ Click `Save`{.action} when ready.
 
 ### Action
 
-The action field defines how to handle the traffic.    
-You have three possible options:
-- Accept. The traffic will go through.
-- Deny. The traffic will be blocked with no more communication.
-- Reject. The traffic will be blocked and a port unreachable will be sent to the source.     
-Select the desired outcome.
+L'action définit comment le traffic sera dirigé.    
+Vous avez trois options:
+- Accepter. Le trafic est laissé passer.
+- Refuser. Le trafic est bloqué sans autre forme de communication.
+- Rejeter. Le trafic est bloqué et un message de port innaccessible est envoyé à la source.     
+Selectionnez l'option qui convient.
 
 ![Action](images/en11action.png){.thumbnail}
 
 
-### Log
+### Journal
 
-The log slider allows you to keep a journal of events on the rule.
+Activée, la glissière de journal enregistre les évenements qui concernent la règle.
 
 
-### Advanced Settings
+### Paramètres avancés
 
-You have three functions in the advanced settings:
-- a comment section
-- a statistics section
-- an advanced section that allows you to define if the target traffic is inbound, outbound or both and in case of NAT traffic, if the rule applies to the original or translated source.
+Vous aves trois fonctions restantes:
+- Une section commentaires
+- Une section statistiques
+- Une section paramètres avancés pour définir si le traffic visé est entrant, sortant ou bidirectionnel et, en cas de NAT, si la règle s'applique à la source originale ou traduite.
 
 ![Advanced](images/en12adv.png){.thumbnail}
 
 
-### Rule Order
+### Priorité
 
-Once the rule set up, you see it in the list.   
-The number of the rule in the list defines its priority.    
-Rules are applied from top to bottom, and the first rule that matches the traffic overrides all the other rules below.    
-That means that in the case of conflicting rules, the rule with the highest priority (lowest number) will be applied.    
-You can modify the rule order by selecting a rule and using the up and down arrows.    
+La règle est maintenant visible dans la liste.   
+Le nombre assigné à la règle définit sa priorité.    
+Les règles sont appliquées de haut en bas et la première règle qui s'applique au trafic annule toutes les suivantes.    
+Cela implique qu'en cas de conflit, c'est la règle avec le plus forte priorité (le plus petit nombre) qui sera appliquée.     
+Vous pouvez modifier l'ordre des règles en cliquant la coche et en utilisant les flèches haut et bas.
 
 ![Order](images/en13order.png){.thumbnail}
 
 
-### Publish
+### Publier
 
-No creation/modification of rule will be registered until you click the `Publish`{.action} button.
+La création/modification de règle n'est pas enregistrée tant que vous ne cliquez pas sur `Publier`{.action} button.
 
 ![Publish](images/en14publish.png){.thumbnail}
 ![Publish](images/en15done.png){.thumbnail}
 
 
-Congratulations and thank you.
+Bravo et merci.
 
 ## Aller plus loin
 
