@@ -407,7 +407,7 @@ Clicca [qui](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/#i
 
 ##### **Gestione delle interfacce di rete con OpenStack Horizon**
 
-Accedi all'interfaccia [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} utilizzando il metodo indicato nella [prima parte di questa guida](./#interface-horizon).
+Accedi all'interfaccia [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} utilizzando il metodo indicato nella [prima parte di questa guida](./#interfaccia-horizon).
 
 Accedi alla tua zona di lavoro:
 

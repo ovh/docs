@@ -126,7 +126,7 @@ Para continuar la configuración del vRack desde el área de cliente de OVHcloud
 
 #### Desde la APIv6 de OVHcloud
 
-Para activar y gestionar un vRack desde la APIv6 de OVHcloud, haga clic [aquí](../public-cloud/public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) (EN), para consultar la guía específica sobre este método.
+Para activar y gestionar un vRack desde la APIv6 de OVHcloud, haga clic [aquí](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) (EN), para consultar la guía específica sobre este método.
 
 ### Etapa 2: Crear una VLAN en el vRack
 
@@ -248,7 +248,7 @@ nova net-list
 ><br> - El del o de las VLAN necesarias para su configuración
 >
 
-Recuerde también lo siguiente, tal y como se indica en la [guía de uso de la API Nova](https://doc.static.ovh.net/gb/en/public-cloud/starting-with-nova-api/) (EN):
+Recuerde también lo siguiente, tal y como se indica en la [guía de uso de la API Nova](https://docs.ovh.com/gb/en/public-cloud/starting-with-nova-api/) (EN):
 
 - ID o nombre de la llave SSH OpenStack
 - ID del tipo de instancia (flavor)
