@@ -1,19 +1,18 @@
 ---
-title: Configurer le NSX Edge Firewall
-slug: configurer-le-nsx-edge-firewall
-excerpt: Créer des règles 
-legacy_guide_number: '7766384'
+title: NSX Edge Firewall Configuration
+slug: nsx-edge-firewall-configuration
+excerpt: creating firewall rules  
 section: NSX
 order: 04
 ---
 
-**Dernière mise à jour le 23/11/2021**
+**Last updated 11/25/2021**
 
 ## Objective
 
-Le pare-feu permet d'appliquer des restrictions de communication par le trafic géré par la Edge, via plusieurs paramètres configurables en terme de source ou de destination par exemple.
+The NSX firewall service restricts or allows network traffic based on rules applied to network nodes or groups.
 
-**Ce guide explique la configuration de ce pare-feu**
+**This guide explain how to create rules**
 
 ## Requirements
 
@@ -32,6 +31,14 @@ In the vSphere interface menu, go to the `Networking and Security`{.action} dash
 On the left side, navigate to the `NSX Edges`{.action} section then click on the appliance you're setting up.
 
 ![NSX](images/en02nsx.png){.thumbnail}
+
+The Firewall tab shows the status with a simple button to stop or start the service.    
+*any change made will need to be published to be validated so you will not shut down the service at the single push of a button*     
+Under the status are the default rules set on the firewall.     
+Click on `+ Add Rule`{.action}
+
+![Rule](images/en03fw.png){.thumbnail}
+
 
 
 
