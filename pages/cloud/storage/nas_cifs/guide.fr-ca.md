@@ -9,7 +9,7 @@ section: NAS
 
 ## Objectif
 
-Configurez et montez votre espacesde stockage NAS-HA OVHcloud sur votre serveur Windows via CIFS.
+Configurez et montez votre espace de stockage NAS-HA OVHcloud sur votre serveur Windows via CIFS.
 
 ## Prérequis
 
@@ -38,7 +38,7 @@ net use z: \\IP_SERVEUR_CIFS\CHEMIN_CIFS
 net use z: \\10.16.100.10\nas-000041_mininas-000212
 ```
 
-- Montage CIFS pour un NAS ou NAS-HA  :
+- Montage CIFS pour un NAS ou NAS-HA :
 
 ```bash
 net use z: \\10.16.101.8\zpool-000206_partition1

@@ -9,7 +9,7 @@ section: NAS
 
 ## Objectif
 
-Configurez et montez votre espacesde stockage NAS-HA OVHcloud sur votre serveur Windows via CIFS.
+Configurez et montez votre espace de stockage NAS-HA OVHcloud sur votre serveur Windows via CIFS.
 
 ## Prérequis
 
@@ -20,9 +20,9 @@ Configurez et montez votre espacesde stockage NAS-HA OVHcloud sur votre serveur 
 ### Configuration
 
 - (Windows Serveur 2008) Cliquez sur le menu "Démarrez" > "Tous les programmes" > "Accessoires" > "Invite de commandes".
-- (Windows Serveur 2012) Cliquez sur l'icône "PowerShell" dans la barre des tâches.
-- (Windows Serveur 2016) Cliquez sur le menu "Démarrez", puis sur l'icône du "PowerShell".
-- (Windows Serveur 2019) Cliquez sur le menu "Démarrez", puis sur l'icône du "PowerShell".
+- (Windows Serveur 2012) Cliquez sur l'icône "Windows PowerShell" dans la barre des tâches.
+- (Windows Serveur 2016) Cliquez sur le menu "Démarrez", puis sur l'icône du "Windows PowerShell".
+- (Windows Serveur 2019) Cliquez sur le menu "Démarrez", puis sur l'icône du "Windows PowerShell".
 
 Exécutez ensuite la commande suivante :
 
@@ -38,7 +38,7 @@ net use z: \\IP_SERVEUR_CIFS\CHEMIN_CIFS
 net use z: \\10.16.100.10\nas-000041_mininas-000212
 ```
 
-- Montage CIFS pour un NAS ou NAS-HA  :
+- Montage CIFS pour un NAS ou NAS-HA :
 
 ```bash
 net use z: \\10.16.101.8\zpool-000206_partition1

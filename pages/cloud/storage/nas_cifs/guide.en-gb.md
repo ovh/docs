@@ -13,16 +13,16 @@ Configure and mount an OVHcloud HA-NAS storage space on your Windows Server usin
 
 ## Requirements
 
-- a [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/), [VPS](https://www.ovhcloud.com/en-ca/vps/) or [Public Cloud Instance](https://www.ovhcloud.com/en-ca/public-cloud/) with a Windows distribution.
+- a [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/), [VPS](https://www.ovhcloud.com/en-ca/vps/) or [Public Cloud Instance](https://www.ovhcloud.com/en-ca/public-cloud/) with a Windows distribution
 - a [HA-NAS solution](https://www.ovh.com/ca/en/nas/)
 
 
 ### Settings
 
 - (Windows Server 2008) Click on the menu "Start" > "All the programs" > "Accessories" > "Command prompt".
-- (Windows Server 2012) Click the "PowerShell" icon at the bottom of the screen in the taskbar.
-- (Windows Server 2016) Click on the menu "Start", then on the "PowerShell" icon.
-- (Windows Server 2019) Click on the menu "Start", then on the "PowerShell" icon.
+- (Windows Server 2012) Click the "Windows PowerShell" icon at the bottom of the screen in the taskbar.
+- (Windows Server 2016) Click on the menu "Start", then on the "Windows PowerShell" icon.
+- (Windows Server 2019) Click on the menu "Start", then on the "Windows PowerShell" icon.
 
 Then run the following command:
 
