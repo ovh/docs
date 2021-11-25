@@ -24,7 +24,7 @@ Le DHCP permet une attribution automatique d'IPs aux machines virtuelles résida
 
 ### Accès à l'interface
 
-Dans l'interface vShere, allez dans le Tableau de bord `Mise en réseau et sécurité`{.action}.
+Dans l'interface vSphere, allez dans le Tableau de bord `Mise en réseau et sécurité`{.action}.
 
 ![Menu](images/en01dash.png){.thumbnail}
 
