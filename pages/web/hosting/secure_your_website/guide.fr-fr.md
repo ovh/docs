@@ -108,7 +108,7 @@ Les [sauvegardes des données](#backup) de votre site (fichiers FTP et base de d
 
 Pour autant, elles ne constituent pas une sécurité absolue. Vous devez notamment aussi tester les sauvegardes de votre base de données, afin de vérifier qu'elles ne sont pas corrompues.
 
-Vous pourrez effectuer ces tests localement, par exemple en important vos données sur un logiciel de type [WAMP](){.external}. Veillez alors à paramétrer votre solution locale afin que sa configuration corresponde en tous points à celle de nos [serveurs d'hébergement mutualisé]().
+Vous pourrez effectuer ces tests localement, par exemple en important vos données sur un logiciel de type [WAMP](https://www.wampserver.com/){.external}. Veillez alors à paramétrer votre solution locale afin que sa configuration corresponde en tous points à celle de nos [serveurs d'hébergement mutualisé]().
 
 Vous pouvez également créer une **version de test** de votre site (ex : test.mondomaine.tld) dans un autre dossier de votre hébergement (il vous sera tout à fait possible d'utiliser un template de base).
 
