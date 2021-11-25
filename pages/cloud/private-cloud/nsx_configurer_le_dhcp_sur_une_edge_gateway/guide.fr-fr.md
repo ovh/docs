@@ -1,7 +1,7 @@
 ---
 title: Configurer le DHCP sur une Edge NSX
 slug: configurer-le-dhcp-sur-une-edge-nsx
-excerpt: Découvrez comment attribuer des IPs à vo machines virtuelles à l'aide du service DHCP
+excerpt: "Découvrez comment attribuer des IPs à vos machines virtuelles à l'aide du service DHCP"
 section: NSX
 order: 03
 ---
@@ -10,21 +10,21 @@ order: 03
 
 ## Objectif
 
-Le DHCP permet une attribution automatique d'IPs aux machines virtuelles résidantes derrière votre NSX Edge Services Gateway.
+Le DHCP permet une attribution automatique d'adresses IP aux machines virtuelles résidentes derrière votre NSX Edge Services Gateway.
 
-**Ce guide explique comment paramètrer le service DHCP**
+**Découvrez comment paramètrer le service DHCP sur une Edge NSX.**
 
 ## Prérequis
 
-- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/) afin de recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir déployer une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
+- Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
 
 ## En pratique
 
 ### Accès à l'interface
 
-Dans l'interface vSphere, allez dans le Tableau de bord `Mise en réseau et sécurité`{.action}.
+Dans l'interface vSphere, rendez-vous dans le tableau de bord `Mise en réseau et sécurité`{.action}.
 
 ![Menu](images/en01dash.png){.thumbnail}
 
@@ -32,7 +32,7 @@ Sur la gauche de votre écran, naviguez vers `Dispositifs NSX Edge`{.action} pui
 
 ![NSX](images/en02nsx.png){.thumbnail}
 
-Dans la section `DHCP`{.action},  il y a 3 options:
+Dans la section `DHCP`{.action}, il y a 3 options :
 
 - Pools
 - Liaisons
@@ -46,83 +46,88 @@ Commençons par `Pools`{.action}.
 
 ### Menu Pools
 
-Le menu `Pools`{.action} permet d'activer les fonctions traditionnelles du DHCP.    
-Ajoutons un scope et démarrons le service.
+Le menu `Pools`{.action} permet d'activer les fonctions traditionnelles du DHCP.
 
-Cliquez sur `+ Ajouter`{.action}    
-Dans la fenêtre Nouveau DHCP Pool , remplissez les informations nécessaires :
-- Adresse IP de début est la premère IP utilisable par le service DHCP
-- Adresse IP de fin est la dernière IP utilisable par le service DHCP
-- Nom de domaine est optionnel mais peut être utile pour votre dns
-- Serveur de noms principal et secondaire sont vos paramètres dns personnalisés (vous pouvez activez la configuration automatique dns)
-- Passerelle par défaut est également optionnelle
-- Masque de sous-réseau
-- Vous pouvez activer la non expiration des baux ou modifier leur duréé si besoin.
-- D'autres options avancées sont dans la section `Options DHCP`{.action} mais sont hors du cadre de ce guide
+Ajoutons un scope et démarrons le service. Cliquez sur `+ Ajouter`{.action}.
+
+Dans la fenêtre Nouveau « DHCP Pool », remplissez les informations nécessaires :
+
+- Adresse IP de début : première IP utilisable par le service DHCP.
+- Adresse IP de fin : dernière IP utilisable par le service DHCP.
+- Nom de domaine : facultatif mais peut être utile pour votre DNS.
+- Serveur de noms principal / secondaire : ce sont vos paramètres DNS personnalisés (vous pouvez activer la « configuration automatique DNS »).
+- Passerelle par défaut : facultatif.
+- Masque de sous-réseau.
+- Vous pouvez activer la « non expiration des baux » ou modifier leur durée si besoin.
+- D'autres options avancées sont disponibles dans l'onglet `Options DHCP`{.action} mais sont hors du cadre de ce guide.
 
 ![Pool](images/en04pool.png){.thumbnail}
 
-Cliquez sur `Ajouter`{.action}.    
-Le pool DHCP est prêt mais vous devez appuyer sur `Démarrer`{.action} puis `Publier`{.action} pour lancer le service et enregistrer les changements.
+Cliquez sur `Ajouter`{.action}.
+
+Le pool DHCP est prêt mais vous devez cliquer sur `Démarrer`{.action} puis `Publier`{.action} pour lancer le service et enregistrer les changements.
 
 ![Pool](images/en05publish.png){.thumbnail}
 
-Le DHCP est opérationel.     
-Le status du service et les informations basiques sont visibles.
+Le DHCP est alors opérationel.<br>
+Le statut du service et les informations basiques sont désormais visibles.
 
 ![Pool](images/en05started.png){.thumbnail}
-
 
 ### Menu Liaisons
 
 Sur la gauche, cliquez sur `Liaisons`{.action}.    
 Cette option réserve une addresse IP à une interface réseau particulière en fonction d'informations spécifiques.    
-Cliquez sur `+ Ajouter`{.action} quand vous êtes prêts.
+
+Cliquez sur `+ Ajouter`{.action}.
 
 ![Bind](images/en06bind.png){.thumbnail}
 
-Il y a 2 façons de créer une liaison:
-- Utiliser la liaison de carte réseau de VM
-- Utiliser la liaison MAC
+Il y a 2 façons de créer une liaison :
 
-Pour la liaison de carte réseau de VM, entrez les informations suivantes:
+- Utiliser la liaison de cartes réseau de VM.
+- Utiliser la liaison MAC.
 
-- Interface: l'interface de l'Edge Services Gateway qui distribuera les addresses
-- Nom de la VM: VM cible
-- Index VM vNIC: Nom de la carte réseau cible
-- Nom d'hôte 
-- Addresse IP: Addresse réservée
-- Masque de sous-réseau
-- Nom de domaine (option)
-- Passerelle par défaut (option)
-- Vous pouvez activer la non expiration des baux ou modifier leur duréé si besoin.
+Pour la liaison de cartes réseau de VM, entrez les informations suivantes:
+
+- Interface : l'interface de la *Edge Services Gateway* qui distribuera les addresses.
+- Nom de la VM : VM cible.
+- Index VM vNIC : nom de la carte réseau cible.
+- Nom d'hôte.
+- Addresse IP : addresse réservée.
+- Masque de sous-réseau.
+- Nom de domaine (facultatif).
+- Passerelle par défaut (facultatif)
+- Vous pouvez activer la « non expiration des baux » ou modifier leur durée si besoin.
 
 ![Bind](images/en07vnicbind.png){.thumbnail}
 
 N'oubliez pas vos `Paramètres DNS`{.action}.    
-Vous pouvez les rentrez manuellement ou les configurer automatiquement.     
+Vous pouvez les renseigner manuellement ou les configurer automatiquement.     
+
 Cliquez sur `Ajouter`{.action}.
 
 ![Bind](images/en08binddns.png){.thumbnail}
 
-Cliquez sur `+ Ajouter`{.action} et sélectionnez Utiliser la liaison MAC.
+Cliquez sur `+ Ajouter`{.action} et sélectionnez `Utiliser la liaison MAC`{.action}.
 
-- Adresse MAC: Adresse MAC de la carte réseau cible  
-- Nom d'hôte 
-- Addresse IP: Addresse réservée
-- Masque de sous-réseau
-- Nom de domaine (option)
-- Passerelle par défaut (option)
+- Adresse MAC : adresse MAC de la carte réseau cible. 
+- Nom d'hôte.
+- Addresse IP : addresse réservée.
+- Masque de sous-réseau.
+- Nom de domaine (facultatif).
+- Passerelle par défaut (facultatif).
 - Vous pouvez activer la non expiration des baux ou modifier leur duréé si besoin.
 
 ![Bind](images/en09macbind.png){.thumbnail}
 
-N'oubliez toujours pas vos `Paramètres DNS`{.action}.       
+À nouveau, n'oubliez pas vos `Paramètres DNS`{.action}.
+
 Cliquez sur `Ajouter`{.action}.
 
 ![Bind](images/en10autodns.png){.thumbnail}
 
-`Publier`{.action} vos changements.
+Vous pouvez à présent `Publier`{.action} vos changements.
 
 ![Bind](images/en11publish.png){.thumbnail}
 
@@ -130,21 +135,24 @@ Les Liaisons DHCP et leurs paramètres de base sont maintenant visibles.
 
 ![Bind](images/en12done.png){.thumbnail}
 
-
 ### Menu Relais
 
-Pour la dernière option, cliquez sur `Relais`{.action}.   
-*L'ajout d'un relai DHCP induit la présente de routage existant vers les serveurs DHCP*    
-Nous allons d'abord `Modifier`{.action} la Configuration globale.    
+Pour la dernière option, cliquez sur `Relais`{.action}.
+
+> [!primary]
+> L'ajout d'un relais DHCP implique la présence de routages existants vers les serveurs DHCP.    
+
+Nous allons d'abord `Modifier`{.action} la configuration globale.    
 
 ![Relay](images/en13relay.png){.thumbnail}
 
-Vous pouvez ajouter:
-- Des objets prédéfinis dans votre NSX Edge Services Gateway
-- Les addresses IP de serveurs DHCP
-- Des noms de domaines
+Vous pouvez ajouter :
 
-Cliquez sur `Enregistrer`{.action} quand tout est rempli.
+- Des objets prédéfinis dans votre *NSX Edge Services Gateway*.
+- Les addresses IP de serveurs DHCP.
+- Des noms de domaines.
+
+Cliquez sur `Enregistrer`{.action} quand tout est complété.
 
 ![Relay](images/en14relayset.png){.thumbnail}
 
@@ -152,21 +160,20 @@ Cliquez sur `+ Ajouter`{.action} pour paramètrer un agent.
 
 ![Relay](images/en15agentadd.png){.thumbnail}
 
-La vNIC sera l'interface de la Edge Services Gateway qui fera suivre les requêtes DHCP.    
-L'Adresse IP de la passerelle est celle qui fera suivre les requêtes également.    
+La vNIC sera l'interface de la *Edge Services Gateway* qui fera suivre les requêtes DHCP.<br>   
+L'adresse IP de la passerelle est celle qui fera suivre les requêtes.
+
 Cliquez sur `Ajouter`{.action}.
 
 ![Relay](images/en16agent.png){.thumbnail}
 
-`Publier`{.action} pour enregistrer les changements.
+Cliquez sur `Publier`{.action} pour enregistrer les changements.
 
 ![Relay](images/en17publish.png){.thumbnail}
 
-Votre relai DHCP fonctionne après un petit temps d'attente.
+Votre relais DHCP fonctionnera après un petit temps d'attente.
 
 ![Relay](images/en18done.png){.thumbnail}
-
-Bravo et merci.
 
 ## Aller plus loin
 
