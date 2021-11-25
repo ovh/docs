@@ -128,10 +128,11 @@ Vous pouvez maintenant débuter la migration de vos comptes. L'interface présen
 
 - `Création multiple` : Permet d'ajouter dans la file d'attente plusieurs migrations grâce à l'import d'un fichier (CSV ou Excel). Ce dernier doit respecter un formatage précis ; nous vous recommandons d'utiliser les modèles fournis. Le fichier se présente sous cette forme:
 
-'''bash 
+``` 
 "Source Type(IMAP/Exchange/POP)";Source Server url;Source Login/Mail;Source Password;Destination Type;"Destination Url(can be leaved empty if hosted by OVH)";Destination Mail;Destination Password;Source admin mail (delegation);Destination Admin Mail (delegation)
 IMAP;myimap.server.com;mywonderfulmail@myserver.com;My_password;Exchange;https://ex3.mail.ovh.net/ews/exchange.asmx;mygreatmailaddress@mydomain.ovh;My_password2;"";""
-'''
+```
+
 Il est préférable de l'ouvrir avec un logiciel de tableur pour le compléter.
 
 - `Ajouter` : Permet d'ajouter compte par compte des migrations dans la file d'attente. Vous pourrez cependant conserver les serveurs source et de destination en tant que valeur par défaut.
