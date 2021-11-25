@@ -59,9 +59,17 @@ The new rule shows with:
 ![Rule](images/en03rule.png){.thumbnail}
 
 
-Name the rule as you wish by clicking the field. ID and Type fields are automatically populated.
+Name the rule by clicking the field. ID and Type fields are automatically populated.
 
 ### Source
+
+The source field defines the origin of the traffic.    
+Hover over the field and click on the `pencil`{.action} icon.     
+You can add objects and/or IP addresses as needed.     
+Click `Save`{.action} when ready.
+
+![Source](images/en04sourceobjects.png){.thumbnail}
+![Source](images/en05sourceIP.png){.thumbnail}
 
 
 ### Destination
