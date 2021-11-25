@@ -63,6 +63,10 @@ The new rule shows with:
 
 ![Rule](images/en03rule.png){.thumbnail}
 
+> [!warning]
+>
+> by default, rules have *Any* as source and destination, meaning it encompasses all traffic. It is best practices to avoid broad targets to avoid security issues.
+>
 
 Name the rule by clicking the field. ID and Type fields are automatically populated.
 
