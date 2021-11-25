@@ -10,9 +10,9 @@ order : 7
 
 ## Objectif
 
-Une instance flex est une instance à disque unique (50 Go) offrant un processus plus rapide pour les snapshots. Elle permet un redimensionnement vers les modèles supérieurs ou inférieurs avec un espace de stockage fixe, alors que les modèles classiques ne peuvent être que redimensionnés vers les modèles supérieurs.</br> Avec une infrastructure en constante évolution, vous pouvez avoir besoin d'augmenter l'espace de stockage de votre instance. Dans ce cas, vous devrez basculer votre instance flex sur un modèle classique. Cette action est possible uniquement depuis l'interface Horizon.
+Une instance *flex* est une instance à disque unique (50 Go) offrant un processus plus rapide pour les snapshots. Elle permet un redimensionnement vers les modèles supérieurs ou inférieurs avec un espace de stockage fixe, alors que les modèles classiques ne peuvent être que redimensionnés vers les modèles supérieurs.</br> Avec une infrastructure en constante évolution, vous pouvez avoir besoin d'augmenter l'espace de stockage de votre instance. Dans ce cas, vous devrez basculer votre instance *flex* sur un modèle classique. Cette action est possible uniquement depuis l'interface Horizon.
 
-**Ce guide vous explique comment basculer d'un modèle flex à un modèle classique et redimensionner votre instance flex depuis l'interface OpenStack Horizon.**
+**Ce guide vous explique comment basculer d'un modèle *flex* à un modèle classique et redimensionner votre instance *flex* depuis l'interface OpenStack Horizon.**
 
 ## Prérequis
 
@@ -38,7 +38,7 @@ Dans notre exemple, notre gabarit est « b2-15-flex » , nous pouvons soit reven
 ![Choisir une nouvelle flavor](images/confirmflavor.png){.thumbnail}
 
 > [!warning]
-> Veuillez noter que vous pouvez uniquement passer d'un modèle Linux à un autre modèle Linux et d'un modèle Windows à un autre modèle Windows.
+> Veuillez notez que vous pouvez uniquement passer d'un modèle Linux à un autre modèle Linux et d'un modèle Windows à un autre modèle Windows.
 >
 > Notez que l'option flexible n'est pas disponible pour tous les modèles.
 >
@@ -49,13 +49,13 @@ Cette section permet de gérer le partitionnement du disque (*Disk Partition*) e
 
 ![public-cloud](images/resize_advanced.png){.thumbnail}
 
-Pour continuer, cliquez sur le bouton `Resize`{.action} .
+Pour continuer, cliquez sur le bouton `Resize`{.action}.
 
 Une fois le processus terminé, votre instance sera basculée vers un modèle classique, avec plus d'espace de stockage.
 
 ![Nouvelle flavor appliquée](images/newflavor.png){.thumbnail}
 
-Dans le cas où vous souhaitez rebasculer à un modèle flex, vous pouvez le faire en effectuant les mêmes étapes mentionnées [ci-dessus](#flavorchoice) en sélectionnant un gabarit flex au lieu d'un gabarit classique. 
+Dans le cas où vous souhaitez rebasculer à un modèle *flex*, vous pouvez le faire en effectuant les mêmes étapes mentionnées [ci-dessus](#flavorchoice) en sélectionnant un gabarit *flex* au lieu d'un gabarit classique. 
 
 Vous pouvez également [modifier la configuration de l'instance](https://docs.ovh.com/ca/fr/public-cloud/debuter-avec-une-instance-public-cloud/#modifier-la-configuration-dune-instance) depuis votre espace client.
 
