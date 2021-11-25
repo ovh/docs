@@ -23,6 +23,20 @@ Le pare-feu permet d'appliquer des restrictions de communication par le trafic g
 
 ## En pratique
 
+
+### Accès à l'interface
+
+Dans l'interface vSphere, allez dans le Tableau de bord `Mise en réseau et sécurité`{.action}.
+
+![Menu](images/en01dash.png){.thumbnail}
+
+Sur la gauche de votre écran, naviguez vers `Dispositifs NSX Edge`{.action} puis cliquez sur le dispositif à paramétrer.
+
+![NSX](images/en02nsx.png){.thumbnail}
+
+
+
+
 Pour commencer, rendez-vous dans la partie "NSX Edges" afin de trouver la liste des Edges déjà déployées. Vous pourrez alors effectuer un double-clic sur votre Edge pour accéder à sa configuration.
 
 ![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_1.jpg){.thumbnail}
