@@ -51,7 +51,7 @@ Cliquez sur `+ Ajouter une règle`{.action}
 La nouvelle règle apparait avec les champs suivant:
 - Glissière d'activation
 - Coche de sélection pour actions spécifiques *(changement de priorité, suppression...)*
-- Mon
+- Nom
 - ID
 - Type
 - Source
