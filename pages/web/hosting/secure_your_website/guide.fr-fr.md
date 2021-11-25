@@ -96,7 +96,7 @@ Ajoutez à votre site un plugin de sécurité recommandé par l'éditeur du CMS 
 - [Drupal](https://www.drupal.fr/){.external}
 - [Prestashop](https://www.prestashop.com/fr){.external}
 
-### Étape 10. Vérifiez la présence de fichiers malveillants sur votre hébergement
+### Étape 10. Vérifiez que votre hébergement ne contient pas de fichiers malveillants
 
 Cette étape nécessite de vous connecter à votre [espace FTP](../connexion-espace-stockage-ftp-hebergement-web/). Elle implique des compétences techniques pour reconnaître d'éventuels fichiers malveillants sur votre hébergement. Si vous rencontrez des difficultés à effectuer cette vérification, n'hésitez pas à contacter nos [partenaires](https://partner.ovhcloud.com/fr/).
 
