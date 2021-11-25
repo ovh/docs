@@ -1,7 +1,7 @@
 ---
 title: Comment sécuriser votre site Web ?
 excerpt: Apprenez à renforcer la sécurité de votre site Web
-slug: securiser-votre-site
+slug: secure-website
 section: Optimiser son site
 order: 1
 ---
@@ -40,14 +40,14 @@ Vérifiez donc tout d'abord la sécurité de votre poste Windows, Mac ou Linux :
 - lancez un scan complet de votre poste, après avoir mis à jour votre logiciel antivirus / anti-malware;
 - changez régulièrement le mot de passe administrateur de votre poste (pour plus d'informations sur le choix des mots de passe, suivez les instructions de ce [guide](../../customer/tout-savoir-sur-identifiant-client/)).
 
-#### Étape 2. Sécurisez votre espace client OVHcloud
+### Étape 2. Sécurisez votre espace client OVHcloud
 
 Pour sécuriser votre compte client, suivez les instructions de ce [guide](../../customer/tout-savoir-sur-identifiant-client/).
 
 Pensez notamment à mettre à jour les [informations de votre compte client](../tout-savoir-sur-identifiant-client/#modifier-mes-informations-personnelles) et à y ajouter un **e-mail de secours**.<br>
 En cas de perte de vos identifiants et/ou d'indisponibilité de l'adresse e-mail principale de votre compte client OVHcloud, un e-mail de secours ou des informations personnelles à jour nous seront indispensables pour vous aider à retrouver l'accès à vos solutions.
 
-#### Étape 3. Effectuez régulièrement des sauvegardes de votre site <a name="backup"></a>
+### Étape 3. Effectuez régulièrement des sauvegardes de votre site <a name="backup"></a>
 
 > [!primary]
 >
@@ -61,11 +61,11 @@ Commencez par sauvegarder les données qui composent votre (fichiers FTP **ET** 
 Les logiciels de gestion de site Web (CMS) offrent aussi la possibilité d'installer des plugins de sauvegarde automatique.<br>
 Consultez les forums officiels de votre CMS préféré ou contactez la [communauté OVHcloud](https://community.ovh.com/) à ce sujet.
 
-#### Étape 4. Apprenez à reconnaître les e-mails frauduleux
+### Étape 4. Apprenez à reconnaître les e-mails frauduleux
 
 Les e-mails de phishing constituent également une menace à la sécurité de votre site, car ils peuvent contenir ou amener à l'installation de logiciels malveillants. Pour apprendre à les reconnaître et à vous en prémunir, consultez ce [guide](../customer/arnaques-fraude-phishing/).
 
-#### Étape 5. Mettre en place le renouvellement automatique
+### Étape 5. Mettre en place le renouvellement automatique
 
 En cas de non-renouvellement de vos services, OVHcloud a l'obligation légale, à l'échéance de votre abonnement, de supprimer intégralement les données liées à votre offre d'hébergement, ainsi que la totalité de leurs sauvegardes. Nous envoyons des messages de rappels à nos clients afin de leur rappeler leurs échéances de renouvellement.<br>
 Pour autant, ces e-mails de relance peuvent arriver dans vos spams, ou l'adresse e-mail associée à votre compte OVHcloud peut être erronée ou ne plus être disponible.
@@ -73,21 +73,21 @@ Pour autant, ces e-mails de relance peuvent arriver dans vos spams, ou l'adresse
 Surtout si vous n'avez pas la possibilité d'effectuer de sauvegardes régulières et que votre site a une place prépondérante dans votre activité professionnelle, [activez le renouvellement automatique](../../billing/renouvellement-automatique-ovh/#acceder-au-parametrage-de-vos-services) sur l'ensemble de vos services OVHcloud.<br>
 Nous vous recommandons aussi de vérifier régulièrement la validité des moyens de paiement que vous avez enregistrés.
 
-#### Étape 6. Vérifiez que votre site est à jour
+### Étape 6. Vérifiez que votre site est à jour
 
 Vérifiez régulièrement les mises à jour de votre site en suivant les instructions de ce [guide](../site-ferme-pour-hack/#22-mettre-a-jour-votre-site-internet).
 
 Pensez également à utiliser une version récente du [langage PHP](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) sur votre hébergement.
 
-#### Étape 7. Activez le https
+### Étape 7. Activez le https
 
 Mettez en place la connexion cryptée à votre site via le protocole **HTTPS** en suivant ce [guide](../passer-site-internet-https-ssl/).
 
-#### Étape 8. Protégez vos formulaires
+### Étape 8. Protégez vos formulaires
 
 Les formulaires des sites Internet sont des cibles privilégiées des hackers/spammers. Protégez vos formulaires de toute attaque en mettant en place des plugins de type **« CAPTCHA »**.
 
-#### Étape 9. Mettez en place un plugin de sécurité sur votre site
+### Étape 9. Mettez en place un plugin de sécurité sur votre site
 
 Ajoutez à votre site un plugin de sécurité recommandé par l'éditeur du CMS :
 
@@ -96,13 +96,13 @@ Ajoutez à votre site un plugin de sécurité recommandé par l'éditeur du CMS 
 - [Drupal](https://www.drupal.fr/){.external}
 - [Prestashop](https://www.prestashop.com/fr){.external}
 
-#### Étape 10. Vérifiez la présence de fichiers malveillants sur votre hébergement
+### Étape 10. Vérifiez la présence de fichiers malveillants sur votre hébergement
 
 Cette étape nécessite de vous connecter à votre [espace FTP](../connexion-espace-stockage-ftp-hebergement-web/). Elle implique des compétences techniques pour reconnaître d'éventuels fichiers malveillants sur votre hébergement. Si vous rencontrez des difficultés à effectuer cette vérification, n'hésitez pas à contacter nos [partenaires](https://partner.ovhcloud.com/fr/).
 
 En cas de doutes sur ce sujet, pensez également à effectuer les vérifications décrites à [l'étape 1 de ce guide](#local) et à [changer le mot de passe](../modifier-mot-de-passe-utilisateur-ftp/) de votre espace FTP.
 
-#### Étape 11. Testez les sauvegardes de votre site
+### Étape 11. Testez les sauvegardes de votre site
 
 Les [sauvegardes des données](#backup) de votre site (fichiers FTP et base de données) doivent être effectuées régulièrement.
 
