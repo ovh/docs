@@ -34,27 +34,29 @@ order: 03
 
 ## Objectif
 
-Un en-tête mail a pour rôle de retracer le chemin emprunté par celui-ci sur le réseau, de l'expéditeur au destinataire. A titre d'exemple, Il permet notamment d'identifier un e-mail malveillant ou détecter une lenteur de réception.
+Un en-tête e-mail a pour rôle de retracer le chemin emprunté par cet e-mail sur le réseau, de l'expéditeur au destinataire.<br> 
+Il permet notamment d'identifier un e-mail malveillant ou de détecter une lenteur de réception.
 
 Chaque e-mail reçu possède un en-tête (*header*) qui ne s'affiche pas par défaut lorsque vous consultez votre e-mail. Vous pouvez toutefois le récupérer sur votre client de messagerie ou votre webmail.
 
-Il est également possible d'extraire l'e-mail dans son intégralité sous forme de fichier `.eml`. Ce fichier peut vous être demandé pour analyser un e-mail malveillant que vous avez reçu. Pour récupérer un fichier `.eml`, consultez notre rubrique [Webmail](#webmail)
+Vous pouvez également extraire l'e-mail dans son intégralité sous forme de fichier `.eml`. Ce fichier peut vous être demandé pour analyser un e-mail malveillant que vous avez reçu.<br>
+Pour récupérer un fichier `.eml`, consultez notre rubrique [Webmail](#webmail)
 
-**Découvrez comment récupérer un en-tête e-mail sur votre client de messagerie**
+**Découvrez comment récupérer un en-tête e-mail sur votre client de messagerie.**
 
 ## Prérequis
 
-- Posséder une adresse e-mail sur une de nos [solutions E-mails OVHcloud](https://www.ovhcloud.com/fr/emails/) ou une solution externe.
+- Posséder une adresse e-mail sur une de nos [solutions e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/) ou une solution externe.
 - Avoir accès à l'adresse e-mail via son webmail ou un logiciel de messagerie.
 
 ## En pratique
 
 ### Comprendre le contenu d'un en-tête
 
-L'en-tête est composé de plusieurs éléments indiquant le cheminement de l'e-mail en commençant des éléments les plus récents aux plus anciens., ainsi que des informations supplémentaires. Vous trouvez ci-dessous une liste non exhaustive des éléments que vous pouvez trouver dans un en-tête ainsi que leur signification. 
+L'en-tête est composé de plusieurs éléments indiquant le cheminement de l'e-mail. Il est composé d'éléments hiérarchisés de façon antéchronologique, des plus récents jusqu'aux plus anciens, et d'informations supplémentaires.<br>
+Vous trouverez ci-dessous une liste non-exhaustive des éléments pouvant composer un en-tête, ainsi que leur signification. 
 
-- Le champ `Received` est présent dans l'en-tête à chaque passage de l'e-mail sur un serveur d'envoi (SMTP). On retrouve généralement le nom d'hôte du serveur avec son adresse IP et la date. Les champs `Received` sont classés du passage le plus récent au passage le plus ancien sur un serveur:
-
+- Le champ `Received` est présent dans l'en-tête à chaque passage de l'e-mail sur un serveur d'envoi (SMTP). On retrouve généralement le nom d'hôte du serveur avec son adresse IP et la date. Les champs `Received` sont classés du passage le plus récent au passage le plus ancien sur un serveur :
 
 <pre class="console"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
@@ -96,7 +98,7 @@ Message-ID: &ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt
 
 </code></pre>
 
-- Le champ `Received-SPF` affiche le résultat du contrôle [SPF](https://docs.ovh.com/fr/domains/le-champ-spf/) effectué sur le nom de domaine de l'expéditeur. L'argument `client-ip` permet notament de relever l'adresse IP du serveur qui a servi à expédier l'e-mail. 
+- Le champ `Received-SPF` affiche le résultat du contrôle [SPF](https://docs.ovh.com/fr/domains/le-champ-spf/) effectué sur le nom de domaine de l'expéditeur. L'argument `client-ip` permet notamment de relever l'adresse IP du serveur qui a servi à expédier l'e-mail. 
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
 
@@ -113,7 +115,7 @@ X-VR-SPAMCAUSE:
 
 </code></pre>
 
-### Logiciel de messagerie
+### Récupérer un en-tête sur un logiciel de messagerie
 
 #### Microsoft Outlook 
 
@@ -133,7 +135,7 @@ L'en-tête complet de l'e-mail apparaît dans le cadre inférieur. Vous pouvez s
 
 #### Mozilla Thunderbird
 
-Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix, puis appuyez simultanément sur les touches `Ctrl`{.action} + `U`{.action}.
+Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix, puis appuyez simultanément sur les touches `Ctrl` \+ `U`.
 
 ![emails](images/thunderbird01.png){.thumbnail}
 
@@ -141,13 +143,13 @@ L'en-tête complet de l'e-mail apparaît dans une fenêtre séparée, vous pouve
 
 #### Mail de macOS
 
-Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix, puis rendez-vous sur `Présentation`{.action} dans la barre de menu en haut, dans `Message`{.action} cliquez sur `Tous les en-têtes`.
+Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix, puis rendez-vous sur `Présentation`{.action} dans la barre de menu supérieure, puis dans `Message`{.action} et cliquez sur `Tous les en-têtes`.
 
 ![emails](images/mailmac01.png){.thumbnail}
 
 L'en-tête complet de l'e-mail apparaît dans une fenêtre séparée. Vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
 
-### Webmail <a name="webmail"></a>
+### Récupérer un en-tête sur un webmail <a name="webmail"></a>
 
 #### Roundcube
 
@@ -169,7 +171,7 @@ Pour télécharger le fichier `.eml`, sélectionnez l'e-mail de votre choix. Cli
 
 ##### **Récupérer l'en-tête**
 
-Sélectionnez l'e-mail dont vous souhaitez afficher l'en-tête. Cliquez **sur la flèche** à droite de `Répondre à tous`{.action} puis `Afficher les détails du message`{.action}. Une nouvelle fenêtre s'ouvre avec l'en-tête complet de l'e-mail, il vous offre la possibilité de le télécharger.
+Sélectionnez l'e-mail dont vous souhaitez afficher l'en-tête. Cliquez **sur la flèche** à droite de `Répondre à tous`{.action} puis sur `Afficher les détails du message`{.action}. Une nouvelle fenêtre s'ouvre avec l'en-tête complet de l'e-mail, ce qui vous permet de le télécharger.
 
 ![emails](images/owa01.png){.thumbnail}
 
@@ -179,15 +181,15 @@ Pour télécharger le fichier `.eml`, cliquez sur `(+) Nouveau`{.action} pour cr
 
 Sélectionnez l'e-mail que vous souhaitez extraire puis glissez-le dans le contenu du nouveau message. 
 
-Cliquez sur la flèche qui pointe vers le bas à côté de la pièce jointe que vous venez de générer, puis cliquez sur `télécharger`{.action} pour enregistrer le fichier sur votre machine.
+Cliquez sur la flèche qui pointe vers le bas à côté de la pièce jointe que vous venez de générer, puis cliquez sur `Télécharger`{.action} pour enregistrer le fichier sur votre machine.
 
 ![emails](images/owa02.gif){.thumbnail}
 
-### Autre client de messagerie
+### Récupérer un en-tête sur un autre client de messagerie
 
 #### Gmail
 
-Pour récupérer l'en-tête, sélectionnez l'e-mail concerné, puis cliquez sur le bouton `...`{.action} (verticaux) à droite, puis sur `Afficher la source du message`{.action}. Une nouvelle fenêtre s'ouvre avec l'en-tête complet de l'e-mail, il vous offre la possibilité de le télécharger l'e-mail au format `.eml` également.
+Pour récupérer l'en-tête, sélectionnez l'e-mail concerné, puis cliquez sur les 3 points verticaux à droite, puis sur `Afficher la source du message`{.action}. Une nouvelle fenêtre s'ouvre avec l'en-tête complet de l'e-mail, ce qui vous permet également de le télécharger au format `.eml`.
 
 ![emails](images/gmail01.png){.thumbnail}
 
