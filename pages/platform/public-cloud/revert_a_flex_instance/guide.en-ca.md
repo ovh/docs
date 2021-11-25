@@ -10,7 +10,7 @@ order: 7
 
 ## Objective
 
-A flex instance is a single size disk (50GB) instance which offers a faster process for snapshots. It allows resizing to higher or lower models with a fix storage space, whereas classic models can only be resized to higher models.</br> As your infrastructure is constantly evolving, you may need to resize your instance with the storage space. In this case, you will need to « revert » your flex instance to a classic model. This action can only be done from the Horizon interface.
+A flex instance is a single size disk (50GB) instance which offers a faster process for snapshots. It allows resizing to higher or lower models with a fix storage space, whereas classic models can only be resized to higher models.</br> As your infrastructure is constantly evolving, you may need to increase the storage space of your instance. In this case, you will need to « revert » your flex instance to a classic model. This action can only be done from the Horizon interface.
 
 **This guide shows you how to revert and resize your flex instance from the OpenStack Horizon interface.**
 
@@ -21,11 +21,11 @@ A flex instance is a single size disk (50GB) instance which offers a faster proc
 
 ## Instructions
 
-Log into the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/), and make sure you are in the correct region. You can verify this on the top left corner. 
+Log into the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and make sure you are in the correct region. You can verify this on the top left corner. 
 
 ![Region selection](images/region2021.png){.thumbnail}
 
-Next, click on the `Compute`{.action} menu on the left side and select `Instances`{.action}. Select `Resize Instance`{.action} in the drop list for the corresponding instance.
+Next, click on the `Compute`{.action} menu on the left side and click on `Instances`{.action}. Select `Resize Instance`{.action} in the drop list for the corresponding instance.
 
 ![Resize instance](images/resizeinstance2021.png){.thumbnail}
 
@@ -40,7 +40,7 @@ In our example, our flavor is « b2-15-flex » , we can either revert to a « b2
 > [!warning] 
 > Please note that you can only switch from a Linux model to another Linux model and from a Windows model to another Windows model.
 >
-> Note that the flex option is not available for all models and resizing to lower models only works for flex instance.
+> Note that the flex option is not available for all models.
 >
 
 **Advanced Options**
@@ -49,9 +49,9 @@ Use this section to manage the **Disk Partition** and **Server Group**.
 
 ![public-cloud](images/resize_advanced.png){.thumbnail}
 
-To continue, click on the `Resize`{.action} button.
+To proceed, click on the `Resize`{.action} button.
 
-Once the process is completed, you will have a classic model instance and a larger storage space.
+Once the process is completed, you instance will be reverted to a classic model with a larger storage space.
 
 ![New flavor applied](images/newflavor.png){.thumbnail}
 
