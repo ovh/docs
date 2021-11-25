@@ -34,13 +34,46 @@ On the left side, navigate to the `NSX Edges`{.action} section then click on the
 
 The Firewall tab shows the status with a simple button to stop or start the service.    
 *any change made will need to be published to be validated so you will not shut down the service at the single push of a button*     
-Under the status are the default rules set on the firewall.     
-Click on `+ Add Rule`{.action}
 
 ![Rule](images/en03fw.png){.thumbnail}
 
+### Firewall Rule
+
+The basics of a firewall rule is to manage identified service(s) from specified source(s) to specified destination(s).     
+
+Click on `+ Add Rule`{.action}
+
+The new rule shows with:
+- Activation slider
+- Selection box for specific actions *(order chande, deletion...)*
+- Name
+- ID
+- Type
+- Source
+- Destination
+- Service
+- Action
+- Log slider
+- Advanced settings
+
+![Rule](images/en03rule.png){.thumbnail}
 
 
+Name the rule as you wish by clicking the field. ID and Type fields are automatically populated.
+
+### Source
+
+
+### Destination
+
+
+### Service
+
+
+### Action
+
+
+### Advanced Settings
 
 
 ## Go further
