@@ -54,7 +54,8 @@ The new rule shows with:
 - Service
 - Action
 - Log slider
-- Advanced settings
+- Advanced settings    
+*by default, rules have any as source and destination, meaning it encompasses all traffic. it is best practices to avoid broad targets to avoid security issues.*
 
 ![Rule](images/en03rule.png){.thumbnail}
 
