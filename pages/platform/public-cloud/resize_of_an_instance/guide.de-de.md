@@ -38,7 +38,7 @@ Durch einen Anstieg der Last oder aufgrund neuer Anforderungen kann es mit der Z
 ## In der praktischen Anwendung
 
 Greifen Sie auf das [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) an und stellen Sie sicher, dass Sie sich in der richtigen Region befinden. Sie können dies in der oberen linken Ecke überprüfen.</br>
-Klicken Sie links im Menü `Compute` {.action} und wählen Sie dann `Instance` {.action} aus. Wählen Sie `Resize Instance` {.action} im Drop-down-Menü rechts neben der betreffenden Instanz aus.
+Klicken Sie links im Menü `Compute` {.action} und wählen Sie dann `Instances` {.action} aus. Wählen Sie `Resize Instance` {.action} im Drop-down-Menü rechts neben der betreffenden Instanz aus.
 
 ![Resize instance](images/resizeinstance2021.png){.thumbnail}
 

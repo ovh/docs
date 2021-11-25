@@ -38,7 +38,7 @@ In seguito allo sviluppo della tua attività o semplicemente all’evoluzione de
 ## Procedura
 
 Accedi all'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/) e assicurati di essere nella regione corretta. Puoi verificarlo nell'angolo in alto a sinistra.</br>
-Clicca sul menu `Compute`{.action} a sinistra e seleziona `Instance`{.action}. Seleziona `Resize Instance`{.action} nel menu a tendina a destra dell'istanza.
+Clicca sul menu `Compute`{.action} a sinistra e seleziona `Instances`{.action}. Seleziona `Resize Instance`{.action} nel menu a tendina a destra dell'istanza.
 
 ![Resize instance](images/resizeinstance2021.png){.thumbnail}
 

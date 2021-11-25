@@ -37,7 +37,7 @@ Jeśli Twoja działalność się rozwija i zapotrzebowanie na zasoby wzrasta, mo
 ## W praktyce
 
 Zaloguj się do [interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/) i upewnij się, że jesteś we właściwym regionie. Możesz to sprawdzić w lewym górnym rogu.</br>
-Kliknij menu `Compute`{.action} po lewej stronie, a następnie wybierz `Instance`{.action}. Wybierz `Resize Instance`{.action} z rozwijanego menu po prawej stronie odpowiedniej instancji.
+Kliknij menu `Compute`{.action} po lewej stronie, a następnie wybierz `Instances`{.action}. Wybierz `Resize Instance`{.action} z rozwijanego menu po prawej stronie odpowiedniej instancji.
 
 ![Resize instance](images/resizeinstance2021.png){.thumbnail}
 
