@@ -66,6 +66,7 @@ Name the rule by clicking the field. ID and Type fields are automatically popula
 The source field defines the origin of the traffic.    
 Hover over the field and click on the `pencil`{.action} icon.     
 You can add objects and/or IP addresses as needed.     
+*If Negate Source is turned on, the rule is applied to all sources except for the sources selected.*     
 Click `Save`{.action} when ready.
 
 ![Source](images/en04sourceobjects.png){.thumbnail}
@@ -74,14 +75,44 @@ Click `Save`{.action} when ready.
 
 ### Destination
 
+The destination field defines the target of the traffic.    
+Hover over the field and click on the `pencil`{.action} icon.     
+You have the same choices for destination as you had for source.    
+*If Negate Destination is turned on, the rule is applied to all destinations except for the destinations selected.*
+Click `Save`{.action} when ready.
+
+![Destination](images/en07destobjects.png){.thumbnail}
+![Destination](images/en07destIP.png){.thumbnail}
+
 
 ### Service
+
+The service field defines the type of traffic aimed at.    
+Hover over the field and click on the `pencil`{.action} icon.     
+You have the choice between using existing services and groups or add raw ports/protocols.    
+*Clicking on an existing service or group will show you a description with the ports and protocols involved.*
+Click `Save`{.action} when ready.
+
+![Service](images/en08servsg.png){.thumbnail}
+![Service](images/en09servdetail.png){.thumbnail}
+![Service](images/en10servport.png){.thumbnail}
 
 
 ### Action
 
+The action field defines how to handle the traffic.    
+You have three possible options:
+- Accept. The traffic will go through.
+- Deny. The traffic will be blocked with no more communication.
+- Reject. The traffic will be blocked and a port unreachable will be sent to the source.
+Select the desired outcome.
+
+![Action](images/en11action.png){.thumbnail}
+
 
 ### Advanced Settings
+
+
 
 
 ## Go further
