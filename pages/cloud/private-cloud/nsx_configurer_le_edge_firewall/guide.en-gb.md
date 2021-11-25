@@ -94,7 +94,7 @@ Click `Save`{.action} when ready.
 The service field defines the type of traffic aimed at.    
 Hover over the field and click on the `pencil`{.action} icon.     
 You have the choice between using existing services and groups or add raw ports/protocols.    
-*Clicking on an existing service or group will show you a description with the ports and protocols involved.*
+*Clicking on an existing service or group will show you a description with the ports and protocols involved.*     
 Click `Save`{.action} when ready.
 
 ![Service](images/en08servsg.png){.thumbnail}
@@ -129,9 +129,9 @@ You have three functions in the advanced settings:
 ![Advanced](images/en12adv.png){.thumbnail}
 
 
-### Rule Order
+### Priority
 
-Once the rule set up, you see it in the list.   
+Once the rule is set up, you see it in the list.   
 The number of the rule in the list defines its priority.    
 Rules are applied from top to bottom, and the first rule that matches the traffic overrides all the other rules below.    
 That means that in the case of conflicting rules, the rule with the highest priority (lowest number) will be applied.    
