@@ -24,7 +24,7 @@ DHCP allows automatic assignment of private IPs to VMs behind your NSX Edge Serv
 
 ### Interface access
 
-First, in the vSphere interface menu, go to the `Networking and Security`{.action} dashboard.
+In the vSphere interface menu, go to the `Networking and Security`{.action} dashboard.
 
 ![Menu](images/en01dash.png){.thumbnail}
 
