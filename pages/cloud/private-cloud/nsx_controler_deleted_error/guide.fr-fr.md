@@ -1,49 +1,45 @@
 ---
 title: Comprendre l'erreur "VM du contrôleur supprimée"
 slug: erreur-controleur-nsx
-excerpt: Découvrez comment comprendre l'erreur "VM du contrôleur supprimée"
+excerpt: Découvrez ce que signifie l'erreur "VM du contrôleur supprimée"
 section: NSX
 order: 11
 ---
 
-**Dernière mise à jour le 28/12/2017**
+**Dernière mise à jour le 26/11/2021**
 
 ## Objectif
 
 Dans votre interface NSX, le message *VM du contrôleur supprimée* peut apparaître.
 
-**Ce guide vous explique comment le comprendre**.
-
+**Ce guide vous explique comment interpréter ce message.**
 
 ## Prérequis
 
-- Disposer de l'option NSX.
-- Avoir créé un utilisateur avec les [droits d'accès NSX](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external}.
-
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)).
+- Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
 
 ## En pratique
 
-Depuis [l'interface NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/), partie `Installation`{.action}, le message d'erreur *VM du contrôleur supprimée* peut apparaître sous le nom du contrôleur :
+Depuis [l'interface NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/), dans le menu `Installation et mise à niveau`{.action} menu, puis l'onglet `Gestion`{.action} et la section `Nœuds de NSX controller`{.action}, le message d'erreur *VM du contrôleur supprimée* peut apparaître sous le résumé « Nœuds de contrôleur ».
 
-![Erreur VM du contrôleur supprimée](images/controllervmdeleted.JPG)
+![Erreur VM du contrôleur supprimée](images/en01control.png)
 
+Cela vient du fait qu'OVHcloud n'héberge pas de contrôleurs sur votre infrastructure, mais sur une infrastructure de gestion interne distincte afin de ne pas consommer de ressources sur vos hôtes.
 
-Cela vient du fait qu'OVH n'héberge pas de contrôleurs sur votre infrastructure, mais sur une infrastructure de gestion interne distincte afin de ne pas consommer de ressources sur la vôtre.
-
-Dans le fonctionnement standard de NSX, il est prévu que les contrôleurs se trouvent sur le même datacenter que vos machines virtuelles, ce qui explique cette erreur. Le fonctionnement de votre machine ne sera pas affecté par ce message.
+Dans le fonctionnement standard de NSX, il est prévu que les contrôleurs se trouvent sur le même datacenter que vos machines virtuelles, entrainant cette erreur. Le fonctionnement de votre infrastructure n'est en rien affecté par ce message.
 
 Dans l'interface NSX, assurez-vous simplement que le statut des contrôleurs est `Connecté`. Si c'est le cas, votre machine est fonctionnelle.
 
-
 > [!warning]
 >
-> La résolution de cette erreur via le bouton `Résoudre`{.action} provoque la suppression des contrôleurs de votre infrastructure, ce qui perturbera l'utilisation de NSX ainsi que celle du réseau de l'infrastructure. Nous vous conseillons donc de ne pas effectuer cette action. La gestion des contrôleurs NSX reste à la charge d'OVH.
+> La résolution de cette erreur via le bouton `Résoudre`{.action} provoque la suppression des contrôleurs de votre infrastructure, ce qui perturbera l'utilisation de NSX ainsi que celle du réseau de l'infrastructure. Nous vous conseillons donc de ne pas effectuer cette action. La gestion des contrôleurs NSX reste à la charge d'OVHcloud.
 > 
 
 Cela explique également l'alerte sur le tableau de bord NSX :
 
-![Alerte sur l'interface NSX](images/controllervmdeleted2.JPG)
-
+![Alerte sur l'interface NSX](images/en02control.png)
 
 ## Aller plus loin
 
