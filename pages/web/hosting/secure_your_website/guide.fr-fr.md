@@ -25,22 +25,23 @@ Il est organisé par étapes dans un ordre croissant d'importance et de difficul
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/) OVHcloud.
+- Disposer des identifiants de connexion à [l'interface administrateur de votre site](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress){.external}, ainsi qu'à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
 
 ### Étape 1. Vérifiez la sécurité de vos appareils <a name="local"></a>
 
-Cette première étape est primordiale. En effet, l'infection de votre poste informatique par un logiciel malveillant peut potentiellement donner accès à l'ensemble de vos saisies au clavier à une personne mal intentionnée. Ceci y compris pour les identifiants que vous utilisez pour vous connecter à votre espace client OVHcloud ou à l'interface d'administration de votre site.
+Cette première étape est primordiale. En effet, l'infection de votre poste informatique par un logiciel malveillant peut potentiellement donner accès, à une personne mal intentionnée, à l'ensemble de vos saisies effectuées sur votre clavier. Par conséquent, les identifiants que vous utilisez pour vous connecter à votre espace client OVHcloud ou à l'interface d'administration de votre site peuvent être compromis.
 
-Par ailleurs, le phénomène croissant des [ransomware](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/rancongiciels-ransomwares)){.external} (environ 400 cas en France en 2020) peut non seulement amener au chiffrement de l'ensemble de vos données personnelles, mais aussi mettre en péril votre activité en rendant inaccessibles l'ensemble de vos données, appareils et logiciels. 
+Par ailleurs, le phénomène croissant des [rançongiciels](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/rancongiciels-ransomwares)){.external} (environ 400 cas en France en 2020) peut non seulement amener au chiffrement de l'ensemble de vos données personnelles, mais aussi mettre en péril votre activité en rendant inaccessible l'ensemble de vos données, appareils et logiciels. 
 
 Vérifiez donc tout d'abord la sécurité de votre poste Windows, Mac ou Linux :
 
 - vérifiez les mises à jour de votre machine;
 - lancez un scan complet de votre poste, après avoir mis à jour votre logiciel antivirus / anti-malware;
-- changez régulièrement le mot de passe administrateur de votre poste (pour plus d'informations sur le choix des mots de passe, suivez les instructions de ce [guide](../../customer/tout-savoir-sur-identifiant-client/)).
+- changez régulièrement le mot de passe administrateur de votre poste (pour plus d'informations sur le choix des mots de passe, suivez les instructions de ce [guide](../../customer/tout-savoir-sur-identifiant-client/#creer-un-mot-de-passe-solide-et-unique)).
 
 ### Étape 2. Sécurisez votre espace client OVHcloud
 
