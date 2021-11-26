@@ -1,6 +1,6 @@
 ---
 title: Änderung der Größe einer Instanz
-excerpt: Änderung der Größe einer Instanz in Horizon
+excerpt: Erfahren Sie hier, wie Sie die Größe einer Instanz in Horizon ändern
 slug: nderung_der_groe_einer_instanz
 section: 'Horizon'
 legacy_guide_number: g1778
@@ -17,78 +17,78 @@ order: 08
 
 Durch einen Anstieg der Last oder aufgrund neuer Anforderungen kann es mit der Zeit dazu kommen, dass die Ressourcen Ihrer Instanz nicht mehr ausreichen. Bei der Public Cloud können Sie in diesem Fall einfach mit einigen Klicks die Ressourcen Ihrer Instanz erhöhen.
 
-**In dieser Anleitung wird die Vorgehensweise zur Änderung der Größe Ihrer Instanz über den OpenStack Horizon Manager beschrieben.**
+**Diese Anleitung erklärt die Vorgehensweise zur Änderung der Größe Ihrer Instanz über den OpenStack Horizon Manager.**
 
 > [!warning]
 >
 > Bei klassischen Modellen ist nur die Umstellung auf ein größeres Modell möglich.
-> Darüber hinaus wird die Instanz während der Operation unterbrochen.
+> Beachten Sie weiterhin, dass der Betrieb der Instanz während der Operation unterbrochen wird.
 > 
 
 > [!success]
 >
-> *Flex*-Instanzen erlauben die Anpassung auf höhere oder niedrigere Modelle aufgrund einer geschlossenen Größe einer einzelnen Disc.
+> *Flex*-Instanzen erlauben die Anpassung auf höhere oder niedrigere Modelle aufgrund einer festen Größe einer einzelnen Disk.
 > 
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) in Ihrem OVHcloud Account erstellt
-- [Sie sind im Horizon-Interface eingeloggt](../erstellung_einer_instanz_in_horizon/)
+- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
 
 ## In der praktischen Anwendung
 
-Greifen Sie auf das [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) an und stellen Sie sicher, dass Sie sich in der richtigen Region befinden. Sie können dies in der oberen linken Ecke überprüfen.</br>
-Klicken Sie links im Menü `Compute` {.action} und wählen Sie dann `Instances` {.action} aus. Wählen Sie `Resize Instance` {.action} im Drop-down-Menü rechts neben der betreffenden Instanz aus.
+Loggen Sie sich ins [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) ein wählen Sie oben links die korrekte Region aus.</br>
+Klicken Sie links im Menü auf `Compute` {.action} und wählen Sie dann `Instances` {.action} aus. Wählen Sie `Resize Instance` {.action} im Drop-down-Menü rechts neben der betreffenden Instanz aus.
 
 ![Resize instance](images/resizeinstance2021.png){.thumbnail}
 
 ### Wahl des Templates (*Flavor Choice*)
 
-Dieser Abschnitt zeigt die aktuelle Template (*old flavor*) an und erlaubt es Ihnen, eine neue Template (*new flavor*) für die Ressource der Instanz auszuwählen.
+Dieser Abschnitt zeigt das aktuelle Template (*old flavor*) an und erlaubt es Ihnen, das neue Template (*new flavor*) für die Instanz auszuwählen.
 
 ![public-cloud](images/flavorchoice.png){.thumbnail}
 
-#### Details der Templates (*Flavor Details*)
+#### Ressourcen für das Template (*Flavor Details*)
 
-In diesem Abschnitt werden die Ressourcen angezeigt, die der gewählten Template zugeordnet sind. 
+In diesem Abschnitt werden die Ressourcen angezeigt, die dem gewählten Modell zugeordnet sind. 
 
-#### Grenzen des Projekts (*Project Limits*)
+#### Limitierungen des Projekts (*Project Limits*)
 
-Sehen Sie hier die belegten Ressourcen im Vergleich zu den gesamten Projektressourcen.
+Hier sehen Sie die belegten Ressourcen im Vergleich zur Gesamtverfügbarkeit.
 
 > [!warning]
-> Bitte beachten Sie, dass Sie eine Instanz nur von einem Linux-Modell auf ein anderes Linux-Modell und von einem Windows-Modell auf ein anderes Windows-Modell anpassen können.
+> Bitte beachten Sie, dass Sie nicht von einer Linux-Instanz auf ein Windows-Modell oder umgekehrt wechseln können.
 >
 
 ### Erweiterte Optionen (*Advanced Options*)
 
-In diesem Bereich können Sie die Partitionierung der Festplatte (*Disk Partition*) und der Servergruppe (*Server Group*) verwalten.
+In diesem Bereich können Sie die Partitionierung der Festplatte (*Disk Partition*) und die Servergruppe (*Server Group*) einrichten.
 
 ![public-cloud](images/resize_advanced.png){.thumbnail}
 
 Wenn die Konfiguration abgeschlossen ist, klicken Sie auf `Resize`{.action}.
 
-### Änderung der Größe der Festplatte unter Windows
+### Änderung der Größe einer Disk unter Windows
 
-Achtung, bei einer Größenanpassung für eine Windows-Instanz wird die Größe der Partition nicht automatisch geupdatet, die Partition muss also über den Festplattenmanager **disk manager**:
+Achtung, bei einer Größenanpassung einer Windows-Instanz wird die Größe der Partition nicht automatisch geupdatet. Die Partition muss also über die Datenträgerverwaltung (**Disk Management**) angepasst werden.
 
-- Klicken Sie mit der rechten Maustaste auf `Start`{.action} und starten Sie den Festplattenmanager, indem Sie auf `Disk Management`{.action}:
+- Klicken Sie mit der rechten Maustaste auf den Windows `Start`{.action} Button und öffnen Sie die Datenträgerverwaltung, indem Sie auf `Disk Management`{.action} klicken.
 
 ![public-cloud](images/2980.png){.thumbnail}
 
-- Klicken Sie mit der rechten Maustaste auf die Hauptpartition und klicken Sie dann auf `Extend Volume`{.action}.
+- Klicken Sie rechts auf die Hauptpartition und klicken Sie dann auf `Extend Volume`{.action}.
 
 ![public-cloud](images/2981a.png){.thumbnail}
 
-- Klicken Sie auf `Next`{.action}, um auf `Extend Volume Wizard` zuzugreifen. Wählen Sie die Ressourcen der zu erweiternden Festplatte aus und klicken Sie auf `Next`{.action}. 
+- Klicken Sie im `Extend Volume Wizard` auf `Next`{.action}. Wählen Sie dann die Ressourcen der zu erweiternden Disk aus und klicken Sie auf `Next`{.action}. 
 
 ![public-cloud](images/2978a.png){.thumbnail}
 
-Klicken Sie anschließend auf `Finish`{.action}, um Ihre Auswahl zu bestätigen.
+Klicken Sie abschließend auf `Finish`{.action}, um die Änderung zu bestätigen.
 
 ![public-cloud](images/wizard2021.png){.thumbnail}
 
-- DBestätigen Sie die Erweiterung der Partition:
+- Die neue Partitionsgröße wird nun in der Datenträgerverwaltung angezeigt.
 
 ![public-cloud](images/2979.png){.thumbnail}
 
