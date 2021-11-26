@@ -1,7 +1,7 @@
 ---
-title: Monter votre NAS sur Windows Serveur via CIFS
+title: Monter votre NAS sur Windows Server via CIFS
 slug: nas/nas-cifs
-excerpt: Decouvrez comment monter un NAS sur un Windows Serveur via CIFS.
+excerpt: Decouvrez comment monter un NAS sur Windows Server via CIFS.
 section: NAS
 ---
 
@@ -9,20 +9,19 @@ section: NAS
 
 ## Objectif
 
-Configurez et montez votre espace de stockage NAS-HA OVHcloud sur votre serveur Windows via CIFS.
+Configurez et montez votre espace de stockage NAS-HA OVHcloud sur Windows Server via CIFS.
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) , un [VPS](https://www.ovhcloud.com/fr/vps/) ou une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) avec une distribution Windows.
-- Posséder une offre de [NAS-HA](https://www.ovh.com/fr/nas/).
-
+- Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) **ou** un [VPS](https://www.ovhcloud.com/fr/vps/) **ou** une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) avec une distribution Windows.
+- Une offre [NAS-HA](https://www.ovh.com/fr/nas/).
 
 ### Configuration
 
-- (Windows Serveur 2008) Cliquez sur le menu "Démarrez" > "Tous les programmes" > "Accessoires" > "Invite de commandes".
-- (Windows Serveur 2012) Cliquez sur l'icône "Windows PowerShell" dans la barre des tâches.
-- (Windows Serveur 2016) Cliquez sur le menu "Démarrez", puis sur l'icône du "Windows PowerShell".
-- (Windows Serveur 2019) Cliquez sur le menu "Démarrez", puis sur l'icône du "Windows PowerShell".
+- (Windows Server 2008) : cliquez sur le menu `Démarrer`{.action} > `Tous les programmes`{.action} > `Accessoires`{.action} > `Invite de commandes`{.action}.
+- (Windows Server 2012) : cliquez sur l'icône `Windows PowerShell`{.action} dans la barre de tâches.
+- (Windows Server 2016) : cliquez sur le menu `Démarrer`{.action}, puis sur l'icône du `Windows PowerShell`{.action}.
+- (Windows Server 2019) : cliquez sur le menu `Démarrer`{.action}, puis sur l'icône du `Windows PowerShell`{.action}.
 
 Exécutez ensuite la commande suivante :
 
@@ -44,11 +43,10 @@ net use z: \\10.16.100.10\nas-000041_mininas-000212
 net use z: \\10.16.101.8\zpool-000206\partition1
 ```
 
-> [!alert]
+> [!warning]
 >
-> L'utilisateur SMB/CIFS est "nobody", les modifications de droits avec cet utilisateur peut générer des conflits avec des droits NFS existants.
+> L'utilisateur SMB/CIFS est `nobody`, toute modification de droits effectuée par cet utilisateur peut générer des conflits avec des droits NFS existants.
 > 
-
 
 ## Aller plus loin
 
