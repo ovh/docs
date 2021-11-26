@@ -32,7 +32,9 @@ Il est organisé par étapes dans un ordre croissant d'importance et de difficul
 
 ### Étape 1. Vérifiez la sécurité de vos appareils <a name="local"></a>
 
-Cette première étape est primordiale. En effet, l'infection de votre poste de travail par un logiciel malveillant peut potentiellement donner accès à l'ensemble de vos mots de passe à une personne malveillante, y compris ceux que vous utilisez pour vous connecter à votre espace client OVHcloud ou à l'interface d'administration de votre site.
+Cette première étape est primordiale. En effet, l'infection de votre poste informatique par un logiciel malveillant peut potentiellement donner accès à l'ensemble de vos saisies au clavier à une personne mal intentionnée. Ceci y compris pour les identifiants que vous utilisez pour vous connecter à votre espace client OVHcloud ou à l'interface d'administration de votre site.
+
+Par ailleurs, le phénomène croissant des [ransomware](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/rancongiciels-ransomwares)){.external} (environ 400 cas en France en 2020) peut non seulement amener au chiffrement de l'ensemble de vos données personnelles, mais aussi mettre en péril votre activité en rendant inaccessibles l'ensemble de vos données, appareils et logiciels. 
 
 Vérifiez donc tout d'abord la sécurité de votre poste Windows, Mac ou Linux :
 
