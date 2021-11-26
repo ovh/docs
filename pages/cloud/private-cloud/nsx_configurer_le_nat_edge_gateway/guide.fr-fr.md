@@ -7,68 +7,103 @@ section: NSX
 order: 06
 ---
 
-**Dernière mise à jour le 27/02/2019**
+**Dernière mise à jour le 26/11/2021**
 
 ## Objectif
 
-Le NAT permet de gérer une redirection du trafic arrivant sur la Edge, que ce soit en privé ou en public, vers une autre destination en fonction de multiples paramètres configurables.
+NAT veut dire Translation d'address réseau(*Network Address Translation*). Cela permet de rediriger une ou de multiples addresses vers une autre.     
+Ily a deux types de NAT:
+- DNAT est le NAT de destination. Il modifie l'addresse de destination et s'applique au trafic entrant.
+- SNAT est le NAT de source. Il modifie l'addresse source et s'applique au trafic sortant.
 
-**Ce guide expliquement comment créer des règles NAT**
+**Ce guide explique comment créer des règles NAT**
 
 ## Prérequis
 
-- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir déployer une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
 
 ## En pratique
 
-Pour commencer, rendez-vous dans la partie "NSX Edges" afin de trouver la liste des Edges déjà déployées. Dans l'exemple ci-dessous nous avons déjà une Edge déployée sur laquelle il faut effectuer un double-clic.
+### Accès à l'interface
 
-![](images/content-docs-cloud-private-cloud-configure_edge_nat-images-configure_nsx_edge_nat_1.JPG){.thumbnail}
+Dans l'interface vSphere, allez dans le Tableau de bord `Mise en réseau et sécurité`{.action}.
 
-Rendez-vous dans l'onglet "NAT" afin d'avoir accès à la page de configuration des règles de NAT de la Edge sur laquelle vous êtes.
+![Menu](images/en01dash.png){.thumbnail}
 
-![](images/content-docs-cloud-private-cloud-configure_edge_nat-images-configure_nsx_edge_nat_2.PNG){.thumbnail}
 
-Pour créer une règle, cliquez sur "Add" (petit "+" vert) afin d'avoir accès à deux types de règles possibles :
+Sur la gauche de votre écran, naviguez vers `Dispositifs NSX Edge`{.action} puis cliquez sur le dispositif à paramétrer.
 
-- "Add DNAT Rule" : pour créer une règle concernant le trafic qui a pour destination vos VMs (public vers privé) ;
-- "Add SNAT Rule" : pour créer une règle concernant le trafic provenant de vos VMs (privé vers public).
+![NSX](images/en02nsx.png){.thumbnail}
 
-![](images/content-docs-cloud-private-cloud-configure_edge_nat-images-configure_nsx_edge_nat_3.PNG){.thumbnail}
 
-Le pare-feu de la Edge doit être actif pour que les règles de NAT soient prises en compte.
+Allez dans la section `NAT`{.action}.
 
-### Ajouter une règle DNAT
 
-Le choix de "Ajouter une règle DNAT" vous propose la possibilité de l'appliquer sur chaque interface réseau de la Edge.
+### DNAT
 
-Vous pouvez configurer l'IP source du trafic (ou la plage complète, en indiquant le préfixe) au niveau de la carte réseau publique de la Edge ainsi que le protocole pris en compte.
 
-Vous pouvez ensuite configurer le port appelé initialement et le router sur un port similaire ou différent en fonction du besoin vers une IP interne (ou une plage complète, en indiquant le préfixe).
+Cliquez `+ Ajouter`{.action} puis `Ajouter une règle DNAT`{.action}.
 
-![](images/content-docs-cloud-private-cloud-configure_edge_nat-images-configure_nsx_edge_nat_4.PNG){.thumbnail}
+![DNAT](images/en03nat.png){.thumbnail}
 
-### Ajouter une règle SNAT
 
-"Ajouter une règle SNAT" vous offre la possibilité de l'appliquer sur chaque interface réseau de la Edge.
+Paramétrez comme suit:
+- L'Interface de traffic entrant (pour le DNAT, votre interface publique)
+- Le protocole et sous protocoles visés
+- L'IP ou plage IP source
+- si applicable, le port source
+- L'IP de destination originale (généralement, votre IP publique)
+- si applicable, le port original
+- L'IP ou plage IP traduite
+- activez ou désactivez la règle
+- activez ou désactivez la journalisation     
 
-Vous pouvez simplement configurer l'IP privée source (ou la plage complète, en indiquant le préfixe) et l'IP publique traduite afin de permettre la sortie du trafic.
+Cliquez `Ajouter`{.action}
 
-![](images/content-docs-cloud-private-cloud-configure_edge_nat-images-configure_nsx_edge_nat_5.PNG){.thumbnail}
+![DNAT](images/en04dnat.png){.thumbnail}
 
-N'oubliez pas de publier les règles afin qu'elles soient prises en compte.
 
-### Exemple de règles
+### SNAT
 
-Vous trouverez ci-dessous un exemple de configuration NAT.
 
-- La règle 1 permet une sortie de l'intégralité de la plage privée configurée (192.168.50.0/24) quel que soit le port utilisé vers une IP publique unique configurée sur la Edge.
+Cliquez `+ Ajouter`{.action} puis `Ajouter une règle SNAT`{.action}.
 
-- La règle 2 permet une redirection d'une IP publique (Original IP Address, 213.186.33.99 qui est le DNS OVH utilisé en IP publique dans l'exemple) vers une IP privée (192.168.50.1 dans l'exemple) si l'IP publique est atteinte sur son port 80. Dans l'exemple, un appel sur le port 80 de l'IP publique redirige vers le port 80 de l'IP privée, mais le port pourrait être différent de part et d'autre.
+![SNAT](images/en03nat.png){.thumbnail}
 
-![](images/content-docs-cloud-private-cloud-configure_edge_nat-images-configure_nsx_edge_nat_6.PNG){.thumbnail}
 
-Selon votre version de NSX, des colonnes supplémentaires peuvent ou non être disponibles.
+Paramétrez comme suit:
+- L'Interface de traffic sortant
+- Le protocole et sous protocoles visés
+- L'IP ou plage IP source
+- si applicable, le port source
+- L'IP ou plage IP de destination
+- si applicable, le port de destination
+- L'IP ou plage IP traduite
+- activez ou désactivez la règle
+- activez ou désactivez la journalisation     
+
+Cliquez `Ajouter`{.action}
+
+![SNAT](images/en05snat.png){.thumbnail}
+
+
+### Publier
+
+
+Les règles crées ou modifiées ne seront enregistrées et actives qu'après un clic sur le boutton `Publier`{.action}.
+
+![PUB](images/en06publish.png){.thumbnail}
+
+
+Les règles sont maintenant fonctionnelles.
+
+![PUB](images/en07done.png){.thumbnail}
+
+
+Bravo et merci.
+
 
 ## Aller plus loin
 
