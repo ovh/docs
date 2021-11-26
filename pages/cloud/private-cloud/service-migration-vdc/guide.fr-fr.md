@@ -31,7 +31,7 @@ Ce processus comporte deux aspects :
 
 - Une infrastructure PCC (SDDC ou DC)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Hosted Private Cloud`{.action}.
-- Être connecté à votre l'interface d'administration vSphere
+- Être connecté à votre interface d'administration vSphere
 
 ## En pratique
 
@@ -46,7 +46,7 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 &emsp;&emsp;[Etape 2.1.1 Vérifier l'éligibilité de vos services](#eligible)<br />
 &emsp;&emsp;[Etape 2.1.2 Obtenir votre "serviceName"](#checkupgrade)<br />
 &emsp;&emsp;[Etape 2.1.3 Obtenir votre "planCode"](#checkupgradeto)<br />
-&emsp;&emsp;[Etape 2.1.4 Vérifier avec vos "serviceName" et "planCode" votre possibilité d'ajouter un vDC de destination](#snandpncheck)<br />
+&emsp;&emsp;[Etape 2.1.4 Vérifier avec vos "serviceName" et "planCode" votre possibilité d'ajouter un vDC Premier ou Essentials](#snandpncheck)<br />
 &emsp;&emsp;[Etape 2.1.5 Valider votre commande](#createorder)<br />
 &ensp;&ensp;[Etape 2.2 Ajouter des nouveaux hosts et datastores](#addhostandds)<br />
 &ensp;&ensp;[Etape 2.3 Convertir une datastore comme global](#converttoglobal)<br />
@@ -60,7 +60,7 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 &ensp;&ensp;[Etape 3.4 Vérifier votre réseau (vRack, IP publique)](#checknetwork)<br />
 &emsp;&emsp;[Etape 3.4.1 vRack](#vrack)<br />
 &emsp;&emsp;[Etape 3.4.2 Réseau publique](#publicnetwork)<br />
-[Etape 4 Preparer votre vDC de destination dans le contexte VMware](#preparevdcvmwarecontext)<br />
+[Etape 4 Préparer votre vDC de destination dans le contexte VMware](#preparevdcvmwarecontext)<br />
 &ensp;&ensp;[Etape 4.1 Reconfigurer VMware High Availability (HA)](#ha)<br />
 &ensp;&ensp;[Etape 4.2 Reconfigurer VMware Distributed Resource Scheduler (DRS)](#drs)<br />
 &ensp;&ensp;[Etape 4.3 Reconstruire vos resource pools](#respools)<br />
@@ -68,7 +68,7 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 &ensp;&ensp;[Etape 4.5 Activer vSAN (si pertinent)](#vsan)<br />
 &ensp;&ensp;[Etape 4.6 Recréer votre configuration réseau vSphere](#vspherenetwork)<br />
 &ensp;&ensp;[Etape 4.7 Vérifier l'organisation de votre inventaire (si pertinent)](#inventory)<br />
-&ensp;&ensp;[Etape 4.8 Configurer NSX](#nsx)<br />
+&ensp;&ensp;[Etape 4.8 Reconfigurer NSX](#nsx)<br />
 &emsp;&emsp;[Etape 4.8.1 v(x)lan Transport Zones](#transportzones)<br />
 &emsp;&emsp;[Etape 4.8.2 NSX Edges](#edges)<br />
 &emsp;&emsp;[Etape 4.8.3 NSX Distributed Logical Routing](#dlr)<br />
@@ -84,7 +84,7 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 &ensp;&ensp;[Etape 6.2 Reconfigurer Zerto Disaster Recovery (si pertinent)](#reconzerto)<br />
 &ensp;&ensp;[Etape 6.3 Recréer les règles d'affinité](#recreateaffinity)<br />
 &ensp;&ensp;[Etape 6.4 Passer les hosts en mode maintenance](#hostmm)<br />
-&ensp;&ensp;[Etape 6.5 Supprimer les anciennes datastores](#removeoldds)<br />
+&ensp;&ensp;[Etape 6.5 Supprimer les anciens datastores](#removeoldds)<br />
 &ensp;&ensp;[Etape 6.6 Supprimer les anciens hosts](#removeoldhosts)<br />
 &ensp;&ensp;[Etape 6.7 Supprimer le vDC source](#removeoldvdc)<br />
 
@@ -103,7 +103,8 @@ Voici quelques lignes directrices pour aider votre décision :
 
 - si vous utilisez ou prévoyez d'utiliser [NSX](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => vous devez ajouter un vDC de destination [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
 - si vous avez besoin que votre infrastructure VMware soit [certifiée](https://www.ovhcloud.com/fr/enterprise/certification-conformity/) (HDS, PCI-DSS, HIPA) => vous devez ajouter un vDC de destination [ Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
-- si vous n'avez pas NSX sur votre infrastructure actuelle et que vous n'avez pas besoin de certifications => vous pouvez choisir entre un vDC de destination [Essentials](https://www.ovhcloud.com/fr/managed-bare-metal /) ou [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/). En règle générale, les hosts Essentials ont un meilleur rapport coût/cœur tandis que Premier optimise le rapport coût/ram. Vous pouvez comparer [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) et [Premier hosts](https://www.ovhcloud.com/en-gb /enterprise/products/hosted-private-cloud/hosts/). 
+- si vous n'avez pas NSX sur votre infrastructure actuelle et que vous n'avez pas besoin de certifications => vous pouvez choisir entre un vDC de destination [Essentials](https://www.ovhcloud.com/fr/managed-bare-metal /) ou [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/). En règle générale, les hosts Essentials ont un meilleur rapport coût/cœur tandis que Premier optimise le rapport coût/ram. Vous pouvez comparer [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) et [Premier hosts](https://www.ovhcloud.com/en-gb /enterprise/products/hosted-private-cloud/hosts/)
+- Les options Veeam Managed Backup et Zerto Disaster Recovery sont disponibles sur Essentials et Premier
 
 ![decision tree](images/ESSorPRE.png){.thumbnail}
 
@@ -112,13 +113,13 @@ Voici quelques lignes directrices pour aider votre décision :
 
 Vous avez maintenant choisi votre gamme commerciale.
 
-En fonction de vos besoins en termes de calcul (CPU, RAM), vous pouvez sélectionner le type et le nombre d'hosts que vous souhaitez commander entre les [hosts Essentials](https://www.ovhcloud.com/fr/managed-bare-metal/options/) et les [hosts Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/hosts/). Par exemple, si vous utilisez actuellement 3xDC2016 XL+, et que vous avez choisi Essentials, vous pouvez passer à 3xESS128 (grâce à un processeur plus puissant) ou 3*ESS256 (si la RAM est votre critère de choix).
+En fonction de vos besoins en termes de calcul (CPU, RAM), vous pouvez sélectionner le type et le nombre d'hosts que vous souhaitez commander entre les [hosts Essentials](https://www.ovhcloud.com/fr/managed-bare-metal/options/) et les [hosts Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/hosts/). Par exemple, si vous utilisez actuellement 3xDC2016 XL+, et que vous avez choisi Essentials, vous pouvez passer à 3xESS128 (grâce à un processeur plus puissant) ou 3xESS256 (si la RAM est votre critère de choix).
 
 Attention, ce choix n'est pas définitif, vous pouvez commencer par 3xESS128 et passer à  3xESS256 par la suite. 
 <a name="selectdatastores"></a>
-#### Step 1.3 Select your datastores (storage) <a name="introduction"></a>
+#### Etape 1.3 Selectionner vos datastores (storage) <a name="introduction"></a>
 
-Vous avez maintenant choisi votre gamme commerciale et vos hosts. Veuillez noter que certains de vos datastores actuelles peuvent être compatibles avec les nouvelles gammes, c'est-à-dire que ces datastores peuvent être définies comme globales. Une datastore globale est une datastore partagée sur tous les clusters/vDC au sein d'une infrastructure VMware, c'est-à-dire partagé entre le vDC d'origine  et le vDC de destination. Utiliser l'API OVHcloud pour vérifier la compatibilité des datastores :
+Vous avez maintenant choisi votre gamme commerciale et vos hosts. Veuillez noter que certains de vos datastores actuelles peuvent être compatibles avec les nouvelles gammes, c'est-à-dire que ces datastores peuvent être définies comme globales. Une datastore globale est une datastore partagée sur tous les clusters/vDC au sein d'une infrastructure VMware, c'est-à-dire partagé entre le vDC d'origine  et le vDC de destination. Vous pouvez utiliser l'API OVHcloud pour vérifier la compatibilité des datastores :
 
 > [!api]
 >
@@ -131,11 +132,11 @@ Si le retour API est `TRUE`, ce datastore est compatible avec les nouvelles gamm
 Si le retour API est `FALSE`, ce datastore n'est pas compatible, il faudra alors commander de nouveaux datastores, soit des [datastores Essentials](https://www.ovhcloud.com/fr/managed-bare-metal/options/) soit des [datastores Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/datastores-nfs/).<br>
 En fonction de vos besoins en capacité de stockage, vous pouvez choisir le type et le nombre de datastores à commander.
 
-Il vous suffit de changer les datastores qui ne sont pas compatibles. Il vous sera possible de libérer les datastores qui ne sont pas compatibles à la fin du process.
+Il vous suffit de remplacer les datastores qui ne sont pas compatibles. Il vous sera possible de libérer les datastores qui ne sont pas compatibles à la fin du process.
 
 Veuillez noter que ce choix n'est pas définitif, vous pouvez commencer par 4x3Tb et passer à 2x6Tb par la suite.
 <a name="build"></a>
-### Step 2 Etape 2 Construire votre nouvelle infrastructure
+### Etape 2 Construire votre nouvelle infrastructure
 
 A la fin de l'étape 2, vous devriez avoir au sein de votre infrastructure VMware actuelle (pcc -123-123-123-123) un nouveau vDC de destination avec des hosts 2020 et des datastores globales.
 <a name="addvdc"></a>
@@ -150,7 +151,7 @@ Vous pouvez ajouter un vDC de destination en procédant comme suit :
 > @api {GET} /dedicatedCloud/{serviceName}/commercialRange/compliance
 >
 
-**Résultat attendu :** vous retrouverez la liste des gammes commerciales compatibles avec votre infrastructure VMware, dont Essentials ou Premier si vous êtes compatible. Veuillez noter que le l'ajout d'un vDC 2020 n'est pas encore disponible pour tous les services car des opérations de mise à niveau et de maintenance sont en cours. Nous vous avertirons dès que cette migration sera possible pour votre infrastructure.
+**Résultat attendu :** vous retrouverez la liste des gammes commerciales compatibles avec votre infrastructure VMware, dont Essentials ou Premier si vous êtes compatible. Veuillez noter que l'ajout d'un vDC 2020 n'est pas encore disponible pour tous les services car des opérations de mise à niveau et de maintenance sont en cours. Nous vous avertirons dès que cette migration sera possible pour votre infrastructure.
 <a name="checkupgrade"></a>
 ##### Etape 2.1.2 Obtenir votre "serviceName"
 
@@ -168,9 +169,9 @@ Vous pouvez ajouter un vDC de destination en procédant comme suit :
 > @api {GET} /order/upgrade/privateCloudManagementFee/{serviceName}
 >
 
-**Résultat attendu :** vous devriez obtenir le planCode à utiliser lors du prochain call API "pcc-management-fee-premier" or "pcc-management-fee-essentials"
+**Résultat attendu :** vous devriez obtenir le planCode à utiliser lors du prochain call API de type "pcc-management-fee-premier" or "pcc-management-fee-essentials"
 <a name="snandpncheck"></a>
-##### Etape 2.1.4 Vérifier avec vos "serviceName" et "planCode" votre possibilité d'ajouter un vDC de destination
+##### Etape 2.1.4 Vérifier avec vos "serviceName" et "planCode" votre possibilité d'ajouter un vDC Premier ou Essentials
 
 > [!api]
 >
@@ -197,7 +198,7 @@ Cet appel API génère un bon de commande qui doit être validé. Si vous n'avez
 <a name="addhostandds"></a>
 #### Etape 2.2 Ajouter des nouveaux hosts et datastores
 
-Au sein du manager OVHcloud, vous devriez voir votre nouveau vDC dans votre infrastructure. vous pouvez procéder à la commande des nouvelles ressources (sélectionnés à l'étape 1) dans le nouveau vDC de destination en suivant ce [guide d'informations sur la facturation Private Cloud (EN)](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly).
+Au sein du manager OVHcloud, vous devriez voir votre nouveau vDC dans votre infrastructure. vous pouvez procéder à la commande des nouvelles ressources (sélectionnés à l'étape 1) dans le nouveau vDC de destination en suivant ce [guide d'informations sur la facturation Private Cloud](https://docs.ovh.com/fr/private-cloud/facturation-private-cloud/#ressources-mensuelles_1).
 <a name="converttoglobal"></a>
 #### Etape 2.3 Convertir une datastore comme global
 
@@ -218,17 +219,17 @@ Exécutez l'API OVHcloud pour convertir les datastores en global:
 <a name="certs"></a>
 ##### Etape 3.1.1 Certifications
 
-Ces options sont activées par vCenter et s'appliquent à n'importe quel vDC.
+Ces options sont activées par infrastructure VMware et s'appliquent à n'importe quel vDC.
 Si une option a été activée, elle reste disponible sur le vDC de destination.
 <a name="kms"></a>
 ##### Etape 3.1.2 Key Management Server (KMS)
 
-Cette option est à activer et configurer par vCenter et s'applique à n'importe quel vDC.
+Cette option est à activer et configurer par infrastructure VMware et s'applique à n'importe quel vDC.
 Si les machines virtuelles sont protégées par le chiffrement, elles restent protégées sur le vDC de destination.
 <a name="access"></a>
 ##### Etape 3.1.3 Restrictions d'accès
 
-Pour vous connecter à la plateforme VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](../changer-la-politique-d-acces-au-vcenter/).
+Pour vous connecter à votre infrastructure VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](../changer-la-politique-d-acces-au-vcenter/).
 
 Suite au changement de politique d'accès, si celle-ci est passée en « restreinte », le nouveau vDC héritera de la politique d'accès utilisée par le vDC d'origine.
 <a name="userrights"></a>
@@ -258,11 +259,11 @@ Par défaut, dans le cadre d'une migration, le nouveau vDC sera lié au même vR
 
 Les adresses IP publiques attachées au vDC d'origine seront automatiquement disponibles pour une utilisation dans le vDC de destination.
 <a name="preparevdcvmwarecontext"></a>
-### Etape 4 Preparer votre vDC de destination dans le contexte VMware
+### Etape 4 Préparer votre vDC de destination dans le contexte VMware
 <a name="ha"></a>
 #### Etape 4.1 Reconfigurer VMware High Availability (HA)
 
-La migration implique de refaire la configuration du VMware High Availability (HA), notamment l'ordre et la priorité de boot. Consultez [notre guide sur sa configuration](../vmware-ha-high-availability/).
+L'installation d'un nouveau vDC de destination implique de refaire la configuration du VMware High Availability (HA), notamment l'ordre et la priorité de boot. Consultez [notre guide sur sa configuration](../vmware-ha-high-availability/).
 
 Voici une liste d'éléments à prendre en compte :
 
@@ -276,7 +277,7 @@ Voici une liste d'éléments à prendre en compte :
 <a name="drs"></a>
 #### Etape 4.2 Reconfigurer VMware Distributed Resource Scheduler (DRS)
 
-La migration implique la reconfiguration de la fonction VMware DRS (Distributed Resource Scheduler), en particulier des règles d'affinité ou d'anti-affinité pour les groupes d'hôtes et de VMs. Consultez notre guide sur la [configuration de VMware DRS](../vmware-drs-distributed-ressource-scheduler-new/).
+L'installation d'un nouveau vDC de destination  implique la reconfiguration de la fonction VMware DRS (Distributed Resource Scheduler), en particulier des règles d'affinité ou d'anti-affinité pour les groupes d'hôtes et de VMs. Consultez notre guide sur la [configuration de VMware DRS](../vmware-drs-distributed-ressource-scheduler-new/).
 
 Voici une liste des éléments à prendre en compte:
 
@@ -289,7 +290,7 @@ Voici une liste des éléments à prendre en compte:
 <a name="respools"></a>
 #### Etape 4.3 Reconstruire vos resource pools
 
-La migration nécessite la reconstruction des pools de ressources, notamment les réservations, les partages et les applications virtuelles. Cela s'applique également aux vApps et à toute configuration de commande de démarrage définie dans les vApps.
+L'installation d'un nouveau vDC de destination nécessite la reconstruction des pools de ressources, notamment les réservations, les partages et les applications virtuelles. Cela s'applique également aux vApps et à toute configuration de commande de démarrage définie dans les vApps.
 
 Pour plus d'informations, consultez la documentation de [VMware pour la gestion des pools de ressources](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external}.
 
@@ -304,7 +305,7 @@ Voici une liste d'éléments à prendre en compte:
 <a name="dsclusters"></a>
 #### Etape 4.4 Recréer vos Datastores Clusters (si pertinent)
 
-Si des clusters de datastores sont présents dans le vDC d'origine, la migration peut nécessiter la recréation de ces clusters de datastores sur le vDC de destination, si le même niveau de structure et le SDRS sont nécessaires.
+Si des clusters de datastores sont présents dans le vDC d'origine, l'installation d'un nouveau vDC de destination peut nécessiter la recréation de ces clusters de datastores sur le vDC de destination, si le même niveau de structure et le SDRS sont nécessaires.
 
 Voici une liste des éléments à prendre en compte:
 
@@ -319,7 +320,7 @@ Si vSAN était activé sur votre vDC d'origine, il sera nécessaire de l'activer
 <a name="vspherenetwork"></a>
 #### Etape 4.6 Recréer votre configuration réseau vSphere
 
-La migration implique la recréation des groupes de ports virtuels de vRack sur le vDC de destination pour garantir la cohérence du réseau de VMs. Si des VLAN vRack sont en cours d'utilisation sur le vRack du vDC d'origine, ils peuvent être utilisés pour étendre le domaine L2 au vDC de destination afin de permettre un plan de migration plus échelonné. Pour plus d'informations, consultez notre guide sur l'[Utilisation du cloud privé dans un vRack](../utiliser-le-private-cloud-au-sein-d-un-vrack/).
+L'installation d'un nouveau vDC de destination implique la recréation des groupes de ports virtuels de vRack sur le vDC de destination pour garantir la cohérence du réseau de VMs. Si des VLAN vRack sont en cours d'utilisation sur le vRack du vDC d'origine, ils peuvent être utilisés pour étendre le domaine L2 au vDC de destination afin de permettre un plan de migration plus échelonné. Pour plus d'informations, consultez notre guide sur l'[Utilisation du cloud privé dans un vRack](../utiliser-le-private-cloud-au-sein-d-un-vrack/).
 
 Voici une liste des éléments à prendre en compte:
 
@@ -537,11 +538,11 @@ Vous disposez désormais d'anciens datastores dans votre anciens vDC (non compat
 <a name="vmotion"></a>
 #### Etape 5.2 vMotion
 
-Comme le vDC d'origine et le vDC de destination se trouvent dans le même vCenter, VMware VMotion peut être utilisé à chaud ou à froid pour migrer des VMs.
+Comme le vDC d'origine et le vDC de destination se trouvent dans le même vCenter, VMware vMotion peut être utilisé à chaud ou à froid pour migrer des VMs.
 
-**Hot VMotion** peut être utilisé lorsque le chipset du CPU est le même entre la source et la destination (par exemple Intel à Intel).
+**Hot vMotion** peut être utilisé lorsque le chipset du CPU est le même entre la source et la destination (par exemple Intel à Intel).
 
-**Cold VMotion** peut être utilisé lorsque le chipset du CPU est différent entre la source et la destination (par exemple, AMD à Intel).
+**Cold vMotion** peut être utilisé lorsque le chipset du CPU est différent entre la source et la destination (par exemple, AMD à Intel).
 
 Voici une liste des aspects à prendre en compte:
 
@@ -628,7 +629,7 @@ Vous devez mettre les hôtes en mode maintenance en procédant comme suit :
 
 Répétez l'action pour chaque hôte.
 <a name="removeoldds"></a>
-#### Etape 6.5 Supprimer les anciennes datastores
+#### Etape 6.5 Supprimer les anciens datastores
 
 À cette étape, on peut considérer qu’il n’y a plus de données et/ou de VM sur l’ancien vDC, donc on peut supprimer des ressources.
 
@@ -665,7 +666,7 @@ Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 > Attendez la fin complète des tâches avant de poursuivre.
 >
 <a name="removeoldhosts"></a>
-#### Step 6.6 Remove old hosts
+#### Etape 6.6 Supprimer les anciens hosts
 
 Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
 
@@ -700,7 +701,7 @@ Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 > Attendez la fin complète des tâches avant de poursuivre.
 >
 <a name="removeoldvdc"></a>
-#### Step 6.7 Remove vDC
+#### Etape 6.7 Supprimer le vDC source
 
 Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
 
