@@ -10,9 +10,12 @@ order: 06
 
 ## Objective
 
-NAT stands for network address translation. It’s a way to map multiple addresses to a single one.
+NAT stands for network address translation. It’s a way to map multiple addresses to a single one.      
+There are two types of NAT:
+- DNAT stands for Destination NAT. It modifies the destination address and is used for inbound traffic.
+- SNAT stands for Souce NAT. It modifies the source address and is used for outbound traffic.
 
-**This guid explains how to create NAT rules**
+**This guide explains how to create NAT rules**
 
 ## Requirements
 
@@ -28,12 +31,21 @@ In the vSphere interface menu, go to the `Networking and Security`{.action} dash
 
 ![Menu](images/en01dash.png){.thumbnail}
 
+
 On the left side, navigate to the `NSX Edges`{.action} section then click on the appliance you're setting up.
 
 ![NSX](images/en02nsx.png){.thumbnail}
 
 
+Go to the `NAT`{.action} tab.
 
+
+### DNAT
+
+
+### SNAT
+
+### Publish
 
 Pour commencer, rendez-vous dans la partie "NSX Edges" afin de trouver la liste des Edges déjà déployées. Dans l'exemple ci-dessous nous avons déjà une Edge déployée sur laquelle il faut effectuer un double-clic.
 
