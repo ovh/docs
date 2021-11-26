@@ -6,7 +6,7 @@ section: Optimiser son site
 order: 1
 ---
 
-**Dernière mise à jour le 24/11/2021**
+**Dernière mise à jour le 26/11/2021**
 
 ## Objectif
 
@@ -54,12 +54,12 @@ En cas de perte de vos identifiants et/ou d'indisponibilité de l'adresse e-mail
 
 > [!primary]
 >
-> Sauvegarder régulièrement vos données, quelle que soit l'offre concernée, est le geste le plus important à adopter en termes de sécurité informatique. Il sera toujours possible de réinstaller un logiciel ou de commander un nouvel appareil, mais il est très difficile de récupérer des données une fois qu'elles ont été perdues.
+> Sauvegarder régulièrement vos données, quelle que soit l'offre concernée, est le geste le plus important à adopter en termes de sécurité informatique. Il sera toujours possible de réinstaller un logiciel ou de commander un nouvel appareil, mais il vous sera très difficile, voire même impossible, de récupérer des données après, par exemple, qu'elles aient été effacées par erreur ou suite à la défaillance d'un matériel.
 >
-> OVHcloud effectue régulièrement des sauvegardes de vos données sur son infrastructure. Pour autant, une erreur de manipulation comme une opération de suppression lancée sur une base de données en production, ou un non renouvellement de vos services, peut entraîner la perte définitive de vos données.
+> OVHcloud effectue régulièrement des sauvegardes de vos données sur son infrastructure. Pour autant, une erreur de manipulation comme une opération de suppression lancée manuellement sur une base de données en production, ou un non renouvellement de vos services, entraîneront la perte définitive de vos données, ainsi que toutes leurs sauvegardes.
 >
 
-Commencez par sauvegarder les données qui composent votre (fichiers FTP **ET** base de données) en suivant les instructions de ce [guide](../exporter-son-site-web/). Importez-les sur votre poste ou sur un support externe, de type serveur NAS ou clé USB.
+Commencez par sauvegarder les données qui composent votre site (fichiers FTP **ET** base de données) en suivant les instructions de ce [guide](../exporter-son-site-web/). Importez-les sur votre poste ou sur un support externe, de type serveur NAS ou clé USB.
 
 Les logiciels de gestion de site Web (CMS) offrent aussi la possibilité d'installer des plugins de sauvegarde automatique.<br>
 Consultez les forums officiels de votre CMS préféré ou contactez la [communauté OVHcloud](https://community.ovh.com/) à ce sujet.
@@ -74,13 +74,13 @@ En cas de non-renouvellement de vos services, OVHcloud a l'obligation légale, �
 Pour autant, ces e-mails de relance peuvent arriver dans vos spams, ou l'adresse e-mail associée à votre compte OVHcloud peut être erronée ou ne plus être disponible.
 
 Surtout si vous n'avez pas la possibilité d'effectuer de sauvegardes régulières et que votre site a une place prépondérante dans votre activité professionnelle, [activez le renouvellement automatique](../../billing/renouvellement-automatique-ovh/#acceder-au-parametrage-de-vos-services) sur l'ensemble de vos services OVHcloud.<br>
-Nous vous recommandons aussi de vérifier régulièrement la validité des moyens de paiement que vous avez enregistrés.
+Nous vous recommandons aussi de vérifier régulièrement la **validité des moyens de paiement** que vous avez enregistrés.
 
 ### Étape 6. Vérifiez que votre site est à jour
 
 Vérifiez régulièrement les mises à jour de votre site en suivant les instructions de ce [guide](../site-ferme-pour-hack/#22-mettre-a-jour-votre-site-internet).
 
-Pensez également à utiliser une version récente du [langage PHP](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) sur votre hébergement.
+Pensez également à utiliser une version récente du [langage informatique PHP](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) sur votre hébergement.
 
 ### Étape 7. Activez le https
 
@@ -94,7 +94,7 @@ Les formulaires des sites Internet sont des cibles privilégiées des hackers/sp
 
 Ajoutez à votre site un plugin de sécurité recommandé par l'éditeur du CMS :
 
-- [Wordpress](https://wordpress.com/fr/){.external}
+- [Wordpress](https://fr.wordpress.org/){.external}
 - [Joomla](https://www.joomla.fr/){.external}
 - [Drupal](https://www.drupal.fr/){.external}
 - [Prestashop](https://www.prestashop.com/fr){.external}
@@ -111,11 +111,15 @@ Les [sauvegardes des données](#backup) de votre site (fichiers FTP et base de d
 
 Pour autant, elles ne constituent pas une sécurité absolue. Vous devez notamment aussi tester les sauvegardes de votre base de données, afin de vérifier qu'elles ne sont pas corrompues.
 
-Vous pourrez effectuer ces tests localement, par exemple en important vos données sur un logiciel de type [WAMP](https://www.wampserver.com/){.external}. Veillez alors à paramétrer votre solution locale afin que sa configuration corresponde en tous points à celle de nos [serveurs d'hébergement mutualisé]().
+Vous pourrez effectuer ces tests localement, par exemple en important vos données sur un logiciel de type [WAMP](https://www.wampserver.com/){.external}. Veillez alors à paramétrer votre solution locale afin que sa configuration corresponde en tous points à celle de nos [serveurs d'hébergement mutualisé](https://webhosting-infos.hosting.ovh.net/).
 
 Vous pouvez également créer une **version de test** de votre site (ex : test.mondomaine.tld) dans un autre dossier de votre hébergement (il vous sera tout à fait possible d'utiliser un template de base).
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
+
+[Conseils suite au piratage de votre site WordPress](../piratage-de-votre-site-wordpress-conseils-et-cas-dusages/)
+
+[Réagir en cas de désactivation pour sécurité d’un hébergement](../site-ferme-pour-hack/)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
