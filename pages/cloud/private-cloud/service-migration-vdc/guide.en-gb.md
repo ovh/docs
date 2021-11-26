@@ -2,23 +2,23 @@
 title: Migrating an infrastructure to a new vDC
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/sddc-migration/'
-excerpt: Find out how to manage all aspects of migrating from one vDC to another vDC in the same VMware infrastructure
+excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
 slug: vdc-migration
 section: Getting started
 order: 6
 hidden: true
 ---
 
-**Last updated 23rd November 2021**
+**Last updated 26th November 2021**
+
+**This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC)  to a new destination vDC (Essentials or Premier).**
 
 > [!warning]
 >
-> The vDC migration path is not yet available to all services because upgrades and maintenance operations are in progress. We will notify you as soon as this migration is possible for your infrastructure.
+> The addition of a vDC of the latest generation and therefore the ability to move VMs to this new vDC is not yet available for all VMware infrastructures as upgrades and maintenance operations are in progress. We will notify you as soon as this option becomes available to you.
 >
 
 ## Objective
-
-**This guide explains how to upgrade from a previous (DC or SDDC) virtual DataCenter (vDC) to a new (Essentials or Premier) vDC.**
 
 In 2020, OVHcloud has launched 2 new ranges Essentials and Premier. You can now upgrade from commercial ranges prior to 2019 to the new ranges while keeping the same VMware infrastructure (pcc-123-123-123-123) using Storage Motion and vMotion.
 
@@ -43,9 +43,9 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 &ensp;&ensp;[Step 1.3 Select your datastores (storage)](#selectdatastores)<br />
 [Step 2 Build your new infrastructure](#build)<br />
 &ensp;&ensp;[Step 2.1 Add a new destination vDC](#addvdc)<br />
-&emsp;&emsp;[Step 2.1.1 Check that your datacenter is eligible to move to the target range](#eligible)<br />
-&emsp;&emsp;[Step 2.1.2 Check which of your services you can upgrade](#checkupgrade)<br />
-&emsp;&emsp;[Step 2.1.3 View what you are able to upgrade to](#checkupgradeto)<br />
+&emsp;&emsp;[Step 2.1.1 Check that your service is eligible to move to the target range](#eligible)<br />
+&emsp;&emsp;[Step 2.1.2 Get your "serviceName"](#checkupgrade)<br />
+&emsp;&emsp;[Step 2.1.3 Get your "planCode"](#checkupgradeto)<br />
 &emsp;&emsp;[Step 2.1.4 Verify you are able to upgrade with your serviceName and planCode for destination range](#snandpncheck)<br />
 &emsp;&emsp;[Step 2.1.5 Create the order](#createorder)<br />
 &ensp;&ensp;[Step 2.2 Add new hosts and Datastores](#addhostandds)<br />
@@ -68,14 +68,14 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 &ensp;&ensp;[Step 4.5 Enable vSAN (if relevant)](#vsan)<br />
 &ensp;&ensp;[Step 4.6 Recreate vSphere networking](#vspherenetwork)<br />
 &ensp;&ensp;[Step 4.7 Check inventory organisation (if relevant)](#inventory)<br />
-&ensp;&ensp;[Step 4.8 Configure NSX](#nsx)<br />
+&ensp;&ensp;[Step 4.8 Reconfigure NSX](#nsx)<br />
 &emsp;&emsp;[Step 4.8.1 v(x)lan Transport Zones](#transportzones)<br />
 &emsp;&emsp;[Step 4.8.2 NSX Edges](#edges)<br />
 &emsp;&emsp;[Step 4.8.3 NSX Distributed Logical Routing](#dlr)<br />
 &emsp;&emsp;[Step 4.8.4 NSX Distributed Firewall](#dfw)<br />
 &ensp;&ensp;[Step 4.9 Extend Zerto Disaster Recovery Protection (if relevant)](#zerto)<br />
 &emsp;&emsp;[Step 4.9.1 VPG as Source](#vpgsource)<br />
-&emsp;&emsp;[Step 4.9.2 VPG as destination](#vpgdest)<br />
+&emsp;&emsp;[Step 4.9.2 VPG as Destination](#vpgdest)<br />
 [Step 5 Migrate your workload](#migrate)<br />
 &ensp;&ensp;[Step 5.1 Storage Motion](#svmotion)<br />
 &ensp;&ensp;[Step 5.2 vMotion](#vmotion)<br />
@@ -86,7 +86,7 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 &ensp;&ensp;[Step 6.4 Put hosts in maintenance mode](#hostmm)<br />
 &ensp;&ensp;[Step 6.5 Remove old datastores](#removeoldds)<br />
 &ensp;&ensp;[Step 6.6 Remove old hosts](#removeoldhosts)<br />
-&ensp;&ensp;[Step 6.7 Remove vDC](#removeoldvdc)<br />
+&ensp;&ensp;[Step 6.7 Remove the source vDC](#removeoldvdc)<br />
 
 <a name="design"></a>
 ### Step 1 Design your infrastructure
@@ -103,13 +103,17 @@ Here are a few guidelines:
 
 - if you are using or you plan to use [NSX](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => you must upgrade to [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
 - if you need your VMware infrastructure to be [certified](https://www.ovhcloud.com/en-gb/enterprise/certification-conformity/) (HDS, PCI-DSS, HIPA) => you must upgrade to [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- if you don't have NSX on your current infrastructure and you don't have need for certifications => you can choose between [Essentials](https://www.ovhcloud.com/en-gb/managed-bare-metal/) and [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/). As a general rule of thumbs, Essentials hosts have a better cost/core ratio while Premier optimize cost/ram ratio. You can compare [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/).
+- if you don't have NSX on your current infrastructure and you don't have need for certifications => you can choose between [Essentials](https://www.ovhcloud.com/en-gb/managed-bare-metal/) and [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/). As a general rule of thumbs, Essentials hosts have a better cost/core ratio while Premier ones optimize cost/RAM ratio. You can compare [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/)
+- Veeam Managed Backup and Zerto Disaster Recovery options are available on both Essentials and Premier
+
+![decision tree](images/ESSorPRE.png){.thumbnail}
+
 <a name="selecthosts"></a>
 #### Step 1.2 Select your hosts (compute)
 
 You have now chosen your commercial range.
 
-Based on your needs in terms of compute (CPU, RAM), you can select which type and how many hosts you would order between [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/). For exemple, if you currently use 3xDC2016 XL+, and have chosen Essentials, you can upgrade to 3xESS128 (thanks to more powerful CPU) or 3*ESS256 (if RAM is your criteria). 
+Based on your needs in terms of compute (CPU, RAM), you can select which type and how many hosts you would order between [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/). For exemple, if you currently use 3xDC2016 XL+, and have chosen Essentials, you can upgrade to 3xESS128 (thanks to more powerful CPU) or 3xESS256 (if RAM is your criteria). 
 
 Please note that this choice is not definitive, you can start with the 3xESS128 and upgrade to 3xESS256 later on.
 <a name="selectdatastores"></a>
@@ -124,11 +128,11 @@ You have now chosen your commercial range and your hosts. Please note that some 
 
 **Expected return:** boolean
 
-If the API return is `true`, this datastore is compatible with the newer ranges and you can keep this datastore, you will make it global later on in the upgrade process.
+If the API return is `TRUE`, this datastore is compatible with the newer ranges and you can keep this datastore, you will make it global later on in the upgrade process.
 If the API return is `FALSE`, this datastore is not compatible, you will need to order new datastores, either [Essentials datastores](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) or [Premier datastores](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/datastores-nfs/).<br>
 Based on your needs in terms of storage capacity, you can select which type and how many datastores you would order.
 
-You only need to change the datastores that are not compatible. You will be able to release the datastores that are not compatible after you upgrade your storage.
+You only need to replace the datastores that are not compatible. You will be able to release the datastores that are not compatible after you upgrade your storage.
 
 Please note that this choice is not definitive, you can start with 4x3Tb and switch to 2x6Tb later on.
 <a name="build"></a>
@@ -140,7 +144,7 @@ At the end of step 2, you should have within your existing VMware infrastructure
 
 You can add a destination vDC following those steps:
 <a name="eligible"></a>
-##### Step 2.1.1 Check that your datacenter is eligible to move to the target range
+##### Step 2.1.1 Check that your service is eligible to move to the target range
 
 > [!api]
 >
@@ -149,7 +153,7 @@ You can add a destination vDC following those steps:
 
 **Expected return:** you will see a list of the commercial ranges compatible with your VMware infrastructure, including Essentials or Premier if you are compatible. Please note that vDC migration path is not yet available to all services because upgrades and maintenance operations are in progress. We will notify you as soon as this migration is possible for your infrastructure.
 <a name="checkupgrade"></a>
-##### Step 2.1.2 Check which of your services you can upgrade
+##### Step 2.1.2 Get your "serviceName"
 
 > [!api]
 >
@@ -158,7 +162,7 @@ You can add a destination vDC following those steps:
 
 **Expected return:** you should get "pcc-123-123-123-123/managementfee" 
 <a name="checkupgradeto"></a>
-##### Step 2.1.3 View what you are able to upgrade to
+##### Step 2.1.3 Get your "planCode"
 
 > [!api]
 >
@@ -194,7 +198,7 @@ This API call generates an order that needs to be validated. If you don’t have
 <a name="addhostandds"></a>
 #### Step 2.2 Add new hosts and Datastores
 
-In the OVHcloud Control Panel, you will see your new datacenter attached to your existing service. You can proceed with ordering new hosts and datastores (selected in step 1) in the new Destination vDC following this [Information about Dedicated Cloud billing](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) guide.
+In the OVHcloud Control Panel, you will see your new vDC attached to your existing service. You can proceed with ordering new hosts and datastores (selected in step 1) in the new Destination vDC following this [Information about Dedicated Cloud billing](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) guide.
 <a name="converttoglobal"></a>
 #### Step 2.3 Convert a datastore to a global datastore
 
@@ -259,7 +263,7 @@ The Public IP addresses attached to the source vDC will automatically be availab
 <a name="ha"></a>
 #### Step 4.1 Reconfigure VMware High Availability (HA)
 
-The migration involves reconfiguring VMware High Availability (HA), including boot order and priority. Please consult our guide about [VMware HA configuration](../vmware-ha-high-availability/).
+Setting up a new vDC involves reconfiguring VMware High Availability (HA), including boot order and priority. Please consult our guide about [VMware HA configuration](../vmware-ha-high-availability/).
 
 Here is a checklist of aspect to take into account:
 
@@ -273,7 +277,7 @@ Here is a checklist of aspect to take into account:
 <a name="drs"></a>
 #### Step 4.2 Reconfigure VMware Distributed Resource Scheduler (DRS)
 
-The migration involves reconfiguring the VMware Distributed Resource Scheduler (DRS) feature, in particular the affinity or anti-affinity rules for groups of hosts and VMs. Please consult our guide about [configuring VMware DRS](../vmware-drs-distributed-ressource-scheduler/).
+Setting up a new vDC involves reconfiguring the VMware Distributed Resource Scheduler (DRS) feature, in particular the affinity or anti-affinity rules for groups of hosts and VMs. Please consult our guide about [configuring VMware DRS](../vmware-drs-distributed-ressource-scheduler/).
 
 Here is a checklist of aspects to take into account:
 
@@ -286,7 +290,7 @@ Here is a checklist of aspects to take into account:
 <a name="respools"></a>
 #### Step 4.3 Rebuild resource pools
 
-The migration requires rebuilding resource pools including reservations, shares, and vApps. This also applies to vApps and any start-up order configuration set in the vApps.
+Setting up a new vDC requires rebuilding resource pools including reservations, shares, and vApps. This also applies to vApps and any start-up order configuration set in the vApps.
 
 For more information, consult [VMware's documentation for managing resource pools](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external}.
 
@@ -301,7 +305,7 @@ Here is a checklist of aspects to take into account:
 <a name="dsclusters"></a>
 #### Step 4.4 Recreate Datastores Clusters (if relevant)
 
-If datastore clusters are present in the source vDC, migration may involve the need to recreate these Datastore Clusters on the destination vDC if the same level of structure and SDRS is needed.
+If datastore clusters are present in the source vDC, setting up a new vDC may involve the need to recreate these Datastore Clusters on the destination vDC if the same level of structure and SDRS is needed.
 
 Here is a checklist of aspects to take into account:
 
@@ -316,7 +320,7 @@ If vSAN was enabled on your source VDC, you will need to enable it again on the 
 <a name="vspherenetwork"></a>
 #### Step 4.6 Recreate vSphere networking
 
-Migration involves recreating the vRack VLAN-backed portgroups on the destination vDC to ensure VM network consistency. If vRack VLANs are in use on the source VDC, vRack can be used to stretch the L2 domain to the destination vDC to allow for a more phased migration plan. For more information consult our guide about [Using Hosted Private Cloud within a vRack](../using-private-cloud-with-vrack/).
+Setting up a new vDC involves recreating the vRack VLAN-backed portgroups on the destination vDC to ensure VM network consistency. If vRack VLANs are in use on the source VDC, vRack can be used to stretch the L2 domain to the destination vDC to allow for a more phased migration plan. For more information consult our guide about [Using Hosted Private Cloud within a vRack](../using-private-cloud-with-vrack/).
 
 Here is a checklist of aspects to take into account:
 
@@ -522,22 +526,23 @@ The next step depends on the current configuration per [Virtual Protection Group
 
 With the migration on the new vDC, Zerto will continue to protect workload with vRA deployed on the target cluster and hosts.
 <a name="vpgdest"></a>
-##### Step 4.9.2 VPG as destination
+##### Step 4.9.2 VPG as Destination
 
 Unfortunately, there is no way to update VPG configuration, the only option is to delete the VPG and create a new one.
 <a name="migrate"></a>
 ### Step 5 Migrate your workload
 <a name="svmotion"></a>
 #### Step 5.1 Storage Motion
+
 You now have old datastores in the previous vDC (not compatible with the new ranges) and global datastores (either previous compatbile ones or new ones). You can use [Storage Motion](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-AB266895-BAA4-4BF3-894E-47F99DC7B77F.html) to move a virtual machine and its disk files from one datastore to another while the virtual machine is running. 
 <a name="vmotion"></a>
 #### Step 5.2 vMotion
 
-Since both source and destination vDC are within the same vCenter, hot or cold VMware VMotion can be used to migrate VMs.
+Since both source and destination vDC are within the same vCenter, hot or cold VMware vMotion can be used to migrate VMs.
 
-**Hot VMotion** can be used when the CPU chipset is the same between source and destination (eg Intel to Intel).
+**Hot vMotion** can be used when the CPU chipset is the same between source and destination (eg Intel to Intel).
 
-**Cold VMotion** can be used when the CPU chipset is different between source and destination (eg AMD to Intel).
+**Cold vMotion** can be used when the CPU chipset is different between source and destination (eg AMD to Intel).
 
 Here is a checklist of aspects to take into account:
 
@@ -600,7 +605,7 @@ Run the OVHcloud API to finalize the migration:
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter
 >
 
-A task is launched to :
+A task is launched to:
 
 - Check if no destination VPG still exists on the datacenter: they MUST be removed.
 - Switch the Zerto Replication option (subscription) from the old to the new vDC.
@@ -642,7 +647,7 @@ With the API, get the filer (datastore) id list:
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
 >
 
-Then for each id :
+Then for each id:
 
 > [!api]
 >
@@ -663,8 +668,6 @@ A task is created for each call, you can follow the progress with:
 <a name="removeoldhosts"></a>
 #### Step 6.6 Remove old hosts
 
-At this step, we can consider there is no longer any data and/or VM on the old vDC, so we can now remove resources.
-
 In the following instructions, `{datacenterId}` is the **old** vDC id, you can get it with the following API call:
 
 > [!api]
@@ -679,7 +682,7 @@ With the API, get the host id list:
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
 >
 
-Then for each id :
+Then for each id:
 
 > [!api]
 >
@@ -699,8 +702,6 @@ A task is created for each call, you can follow the progress with:
 >
 <a name="removeoldvdc"></a>
 #### Step 6.7 Remove vDC
-
-At this step, we can consider there is no longer any data and/or VM on the old vDC, so we can now remove resources.
 
 In the following instructions, `{datacenterId}` is the **old** vDC id, you can get it with the following API call:
 
