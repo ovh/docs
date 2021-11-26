@@ -6,19 +6,19 @@ section: NSX
 order: 04
 ---
 
-**Last updated 11/25/2021**
+**Last updated 25th November 2021**
 
 ## Objective
 
 The NSX firewall service restricts or allows network traffic based on rules applied to network nodes or groups.
 
-**This guide explain how to create rules**
+**This guide explain how to create rules.**
 
 ## Requirements
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-- Have an [NSX Edge Services Gateway](https://docs.ovh.com/gb/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/) deployed
+- being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- a deployed [NSX Edge Services Gateway](https://docs.ovh.com/gb/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
 
 ## Instructions
 
@@ -32,20 +32,24 @@ On the left side, navigate to the `NSX Edges`{.action} section then click on the
 
 ![NSX](images/en02nsx.png){.thumbnail}
 
-The Firewall tab shows the status with a simple button to stop or start the service.    
-*any change made will need to be published to be validated so you will not shut down the service at the single push of a button*     
+The Firewall tab shows the status with a simple button to stop or start the service.
+
+> [!primary]
+>
+> Any change made will need to be published to be validated, so you will not shut down the service at the single push of a button.     
 
 ![Rule](images/en03fw.png){.thumbnail}
 
-### Firewall Rule
+### Firewall Rules
 
 The basics of a firewall rule is to manage identified service(s) from specified source(s) to specified destination(s).     
 
-Click on `+ Add Rule`{.action}
+Click on `+ Add Rule`{.action}.
 
 The new rule shows with:
-- Activation slider
-- Selection box for specific actions *(order chande, deletion...)*
+
+- An activation slider
+- A selection box for specific actions (order change, deletion...)
 - Name
 - ID
 - Type
@@ -60,97 +64,103 @@ The new rule shows with:
 
 > [!warning]
 >
-> by default, rules have *Any* as source and destination, meaning it encompasses all traffic. It is best practices to avoid broad targets to avoid security issues.
+> By default, rules have *Any* as source and destination, meaning it encompasses all traffic. To avoid security issues, it is best practices to avoid broad targets.
 >
 
-Name the rule by clicking the field. ID and Type fields are automatically populated.
+Name the rule by clicking the `Name`{.action} field. ID and Type fields are automatically populated.
 
-### Source
+#### Source
 
-The source field defines the origin of the traffic.    
-Hover over the field and click on the `pencil`{.action} icon.     
-You can add objects and/or IP addresses as needed.     
-*If Negate Source is turned on, the rule is applied to all sources except for the sources selected.*     
+The source field defines the origin of the traffic.
+
+Hover over the field and click on the `pencil`{.action} icon. You can add objects and/or IP addresses as needed.     
+
+> [!primary]
+>
+> If "Negate Source" is turned on, the rule is applied to all sources except for the sources selected.
+    
 Click `Save`{.action} when ready.
 
 ![Source](images/en04sourceobjects.png){.thumbnail}
+
 ![Source](images/en05sourceIP.png){.thumbnail}
 
+#### Destination
 
-### Destination
+The destination field defines the target of the traffic.
 
-The destination field defines the target of the traffic.    
-Hover over the field and click on the `pencil`{.action} icon.     
-You have the same choices for destination as you had for source.    
-*If Negate Destination is turned on, the rule is applied to all destinations except for the destinations selected.*
+Hover over the field and click on the `pencil`{.action} icon. You have the same choices for destination as you had for source.    
+
+> [!primary]
+>
+> If "Negate Source" is turned on, the rule is applied to all destinations except for the destinations selected.
+
 Click `Save`{.action} when ready.
 
 ![Destination](images/en07destobjects.png){.thumbnail}
+
 ![Destination](images/en07destIP.png){.thumbnail}
 
+#### Service
 
-### Service
+The service field defines the type of traffic aimed at.
 
-The service field defines the type of traffic aimed at.    
-Hover over the field and click on the `pencil`{.action} icon.     
-You have the choice between using existing services and groups or add raw ports/protocols.    
-*Clicking on an existing service or group will show you a description with the ports and protocols involved.*     
+Hover over the field and click on the `pencil`{.action} icon. You have the choice between using existing services and groups or add raw ports/protocols.
+
+> [!primary]
+>
+> Clicking on an existing service or group will show you a description with the ports and protocols involved.
+
 Click `Save`{.action} when ready.
 
 ![Service](images/en08servsg.png){.thumbnail}
+
 ![Service](images/en09servdetail.png){.thumbnail}
+
 ![Service](images/en10servport.png){.thumbnail}
 
+#### Action
 
-### Action
+The action field defines how to handle the traffic.
 
-The action field defines how to handle the traffic.    
-You have three possible options:
-- Accept. The traffic will go through.
-- Deny. The traffic will be blocked with no more communication.
-- Reject. The traffic will be blocked and a port unreachable will be sent to the source.     
+You have three possible options to choose from:
 
-
-Select the desired outcome.
+- Accept: The traffic will go through.
+- Deny: The traffic will be blocked with no further communication.
+- Reject: The traffic will be blocked and a "port unreachable" message will be sent to the source.     
 
 ![Action](images/en11action.png){.thumbnail}
 
-
-### Log
+#### Log
 
 The log slider allows you to keep a journal of events on the rule.
 
-
 ### Advanced Settings
 
-You have three functions in the advanced settings:
-- a comment section
-- a statistics section
-- an advanced section that allows you to define if the target traffic is inbound, outbound or both and in case of NAT traffic, if the rule applies to the original or translated source.
+Aside from a comments section and a statistics section, the advanced settings section allows you to define if the target traffic is inbound, outbound or both. In case of NAT traffic, you can choose if the rule applies to the original or translated source.
 
 ![Advanced](images/en12adv.png){.thumbnail}
 
 
-### Priority
+### Rules priorities
 
-Once the rule is set up, you see it in the list.   
-The number of the rule in the list defines its priority.    
-Rules are applied from top to bottom, and the first rule that matches the traffic overrides all the other rules below.    
-That means that in the case of conflicting rules, the rule with the highest priority (lowest number) will be applied.    
+Once the rule is set up, you see it in the list. The number of the rule in the list defines its priority.
+
+Rules are applied from top to bottom.<br>
+The first rule that matches the traffic overrides all the other rules below.<br>
+That means that in the case of conflicting rules, the rule with the highest priority (lowest number) will be applied.
+
 You can modify the rule order by selecting a rule and using the up and down arrows.    
 
 ![Order](images/en13order.png){.thumbnail}
 
+### Publishing rules
 
-### Publish
-
-No creation/modification of rule will be registered until you click the `Publish`{.action} button.
+No creation/modification of a rule will be registered until you click the `Publish`{.action} button.
 
 ![Publish](images/en14publish.png){.thumbnail}
+
 ![Publish](images/en15done.png){.thumbnail}
-
-
-Congratulations and thank you.
 
 ## Go further
 
