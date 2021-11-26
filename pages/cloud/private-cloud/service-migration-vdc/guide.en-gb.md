@@ -2,14 +2,14 @@
 title: Migrating an infrastructure to a new vDC
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/sddc-migration/'
-excerpt: Find out how to move your workload from an existing vDC to a new vDC  in the same VMware infrastructure
+excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
 slug: vdc-migration
 section: Getting started
 order: 6
 hidden: true
 ---
 
-**Last updated 23rd November 2021**
+**Last updated 26th November 2021**
 
 **This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC)  to a new destination vDC (Essentials or Premier).**
 
@@ -103,8 +103,8 @@ Here are a few guidelines:
 
 - if you are using or you plan to use [NSX](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => you must upgrade to [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
 - if you need your VMware infrastructure to be [certified](https://www.ovhcloud.com/en-gb/enterprise/certification-conformity/) (HDS, PCI-DSS, HIPA) => you must upgrade to [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- if you don't have NSX on your current infrastructure and you don't have need for certifications => you can choose between [Essentials](https://www.ovhcloud.com/en-gb/managed-bare-metal/) and [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/). As a general rule of thumbs, Essentials hosts have a better cost/core ratio while Premier optimize cost/ram ratio. You can compare [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/)
-- Veeam Managed Backup and Zerto Disaster Recovery options are available on both  Essentials and Premier
+- if you don't have NSX on your current infrastructure and you don't have need for certifications => you can choose between [Essentials](https://www.ovhcloud.com/en-gb/managed-bare-metal/) and [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/). As a general rule of thumbs, Essentials hosts have a better cost/core ratio while Premier ones optimize cost/RAM ratio. You can compare [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/)
+- Veeam Managed Backup and Zerto Disaster Recovery options are available on both Essentials and Premier
 
 ![decision tree](images/ESSorPRE.png){.thumbnail}
 
