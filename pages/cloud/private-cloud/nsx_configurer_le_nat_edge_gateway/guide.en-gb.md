@@ -10,9 +10,9 @@ order: 06
 
 ## Objective
 
-Le NAT permet de gérer une redirection du trafic arrivant sur la Edge, que ce soit en privé ou en public, vers une autre destination en fonction de multiples paramètres configurables.
+NAT stands for network address translation. It’s a way to map multiple addresses to a single one.
 
-**Ce guide expliquement comment créer des règles NAT**
+**This guid explains how to create NAT rules**
 
 ## Requirements
 
