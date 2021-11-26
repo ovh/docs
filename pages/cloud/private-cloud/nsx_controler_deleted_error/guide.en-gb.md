@@ -5,7 +5,7 @@ excerpt: 'Find out what the “Controller VM deleted” error message means'
 section: NSX
 ---
 
-**Last updated 20th June 2018**
+**Last updated 11/26/2021**
 
 ## Objective
 
