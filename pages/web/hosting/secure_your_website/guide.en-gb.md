@@ -2,7 +2,7 @@
 title: How to secure your website?
 excerpt: Learn how to make your website more secure
 slug: secure-website
-section: Optimise your website
+section: Website optimisation
 order: 1
 ---
 
