@@ -13,16 +13,15 @@ Configure and mount an OVHcloud HA-NAS storage space on your Windows Server usin
 
 ## Requirements
 
-- a [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/), [VPS](https://www.ovhcloud.com/en-ca/vps/) or [Public Cloud Instance](https://www.ovhcloud.com/en-ca/public-cloud/) with a Windows distribution
+- a [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/) **or** a [VPS](https://www.ovhcloud.com/en-ca/vps/) **or** a [Public Cloud Instance](https://www.ovhcloud.com/en-ca/public-cloud/) with a Windows distribution
 - a [HA-NAS solution](https://www.ovhcloud.com/en-ca/)
-
 
 ### Settings
 
-- (Windows Server 2008) Click on the menu "Start" > "All the programs" > "Accessories" > "Command prompt".
-- (Windows Server 2012) Click the "Windows PowerShell" icon at the bottom of the screen in the taskbar.
-- (Windows Server 2016) Click on the menu "Start", then on the "Windows PowerShell" icon.
-- (Windows Server 2019) Click on the menu "Start", then on the "Windows PowerShell" icon.
+- **Windows Server 2008**: Click on the menu `Start`{.action} > `All the programs`{.action} > `Accessories`{.action} > `Command prompt`{.action}.
+- **Windows Server 2012**: Click the `Windows PowerShell`{.action} icon at the bottom of the screen in the taskbar.
+- **Windows Server 2016**: Click on the menu `Start`{.action}, then on the `Windows PowerShell`{.action} icon.
+- **Windows Server 2019**: Click on the menu `Start`{.action}, then on the `Windows PowerShell`{.action} icon.
 
 Then run the following command:
 
@@ -46,7 +45,7 @@ net use z: \\10.16.101.8\zpool-000206\partition1
 
 > [!alert]
 >
-> The SMB/CIFS user is "nobody", changing permissions with this user may generate conflicts with existing NFS permissions. 
+> The SMB/CIFS user is `nobody`. Changing permissions with this user may generate conflicts with existing NFS permissions. 
 > 
 
 ## Go further
