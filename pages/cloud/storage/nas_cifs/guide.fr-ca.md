@@ -18,10 +18,10 @@ Configurez et montez votre espace de stockage NAS-HA OVHcloud sur Windows Server
 
 ### Configuration
 
-- (Windows Server 2008) : cliquez sur le menu `Démarrer`{.action} > `Tous les programmes`{.action} > `Accessoires`{.action} > `Invite de commandes`{.action}.
-- (Windows Server 2012) : cliquez sur l'icône `Windows PowerShell`{.action} dans la barre de tâches.
-- (Windows Server 2016) : cliquez sur le menu `Démarrer`{.action}, puis sur l'icône du `Windows PowerShell`{.action}.
-- (Windows Server 2019) : cliquez sur le menu `Démarrer`{.action}, puis sur l'icône du `Windows PowerShell`{.action}.
+- **Windows Server 2008** : cliquez sur le menu `Démarrer`{.action} > `Tous les programmes`{.action} > `Accessoires`{.action} > `Invite de commandes`{.action}.
+- **Windows Server 2012** : cliquez sur l'icône `Windows PowerShell`{.action} dans la barre de tâches.
+- **Windows Server 2016** : cliquez sur le menu `Démarrer`{.action}, puis sur l'icône du `Windows PowerShell`{.action}.
+- **Windows Server 2019** : cliquez sur le menu `Démarrer`{.action}, puis sur l'icône du `Windows PowerShell`{.action}.
 
 Exécutez ensuite la commande suivante :
 
