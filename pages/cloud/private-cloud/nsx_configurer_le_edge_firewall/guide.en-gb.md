@@ -135,7 +135,7 @@ You have three possible options to choose from:
 
 The log slider allows you to keep a journal of events on the rule.
 
-### Advanced Settings
+#### Advanced Settings
 
 Aside from a comments section and a statistics section, the advanced settings section allows you to define if the target traffic is inbound, outbound or both. In case of NAT traffic, you can choose if the rule applies to the original or translated source.
 
