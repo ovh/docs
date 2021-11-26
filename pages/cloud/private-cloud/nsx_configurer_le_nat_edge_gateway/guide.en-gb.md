@@ -59,7 +59,7 @@ Set the parameters as follows:
 - enable or disable the rule
 - enable or disable logs on the rule     
 
-Click `+ Add`{.action}
+Click `Add`{.action}
 
 ![DNAT](images/en04dnat.png){.thumbnail}
 
@@ -83,7 +83,7 @@ Set the parameters as follows:
 - enable or disable the rule
 - enable or disable logs on the rule     
 
-Click `+ Add`{.action}
+Click `Add`{.action}
 
 ![SNAT](images/en05snat.png){.thumbnail}
 
@@ -91,7 +91,7 @@ Click `+ Add`{.action}
 ### Publish
 
 
-Rules created or modified wiill not be registered and active until you click the `+ Publish`{.action} button.
+Rules created or modified wiill not be registered and active until you click the `Publish`{.action} button.
 
 ![PUB](images/en06publish.png){.thumbnail}
 
