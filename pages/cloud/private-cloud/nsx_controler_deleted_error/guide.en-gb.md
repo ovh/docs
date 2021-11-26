@@ -16,20 +16,21 @@ In your NSX interface, you may encounter the *Controller VM deleted* message.
 
 ## Requirements
 
-- NSX option activated
-- a user with NSX access permissions
-
+- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Have a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Have an [NSX Edge Services Gateway](https://docs.ovh.com/gb/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/) deployed
+- 
 
 ## Instructions
 
-In your [NSX interface](https://docs.ovh.com/gb/en/private-cloud/accessing-NSX-interface/), under the `Installation`{.action} section, the *Controller VM deleted* error message may appear under the name of the controller:
+In your [NSX interface](https://docs.ovh.com/gb/en/private-cloud/accessing-NSX-interface/), under the `Installation and Upgrade`{.action} menu, in the `Management`{.action} tab and `NSX Controller Nodes`{.action} section, the *Controller VM deleted* error message may appear under the Controller Node summary.
 
-![Controller VM deleted error](images/controllervmdeleted.JPG)
+![Controller VM deleted error](images/en01control.png)
 
 
 This is because OVH does not host controllers on your infrastructure. They are hosted on a separate internal management infrastructure, so that they do not consume any of your infrastructure's resources.
 
-Under the standard configuration for NSX, the controllers are expected to be in the same datacentre as your virtual machines, so this explains this error message. This message will have no effect on your machine's regular functionality.
+Under the standard configuration for NSX, the controllers are expected to be in the same datacentre as your virtual machines, causing this error message. This message will have no effect on your machine's regular functionality.
 
 You just need to make sure that the status of the controllers in your NSX interface is set to `Connected`. If it is, your machine is working.
 
@@ -41,7 +42,7 @@ You just need to make sure that the status of the controllers in your NSX interf
 
 This also explains the following alert on the NSX dashboard:
 
-![Alert on NSX interface](images/controllervmdeleted2.JPG)
+![Alert on NSX interface](images/en02control.png)
 
 
 ## Go further
