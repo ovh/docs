@@ -12,7 +12,8 @@ order: 1
 
 This guide will provide you with basic knowledge to ensure that your services are always available, protect your data integrity and secure the access to your solutions. It only applies to websites hosted on OVHcloud [shared servers](https://www.ovhcloud.com/en-gb/web-hosting/).
 
-We also organized in stages with an increasing importance and technical difficulty, which means that the first steps are the most indispensable. The security of your site will be measured by the element concerning it that is least protected. We recommend that you carry out all of the actions described in this guide. However, if you experience any difficulties carrying out some of them, please do not hesitate to contact the OVHcloud [community](https://community.ovh.com/) or our [partners](https://partner.ovhcloud.com/fr/).
+This guide is organised in stages in an increasing order of technical difficulty. The security of your site will be measured by the element concerning it that is least protected. We therefore recommend that you carry out all of the actions described here.<br/>
+However, if you experience any difficulties completing some of these steps, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/en/) or our [partners](https://partner.ovhcloud.com/en-gb/).
 
 **Find out how to secure your website.**
 

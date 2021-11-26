@@ -12,7 +12,8 @@ order: 1
 
 Ce guide vous permet d’acquérir des connaissances fondamentales visant à assurer la disponibilité de vos services, à protéger l'intégrité de vos données et à sécuriser l'accès à vos solutions. Il concerne uniquement les sites Web hébergés sur les [solutions mutualisées OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
 
-Il est organisé par étapes dans un ordre croissant d'importance et de difficulté technique, ce qui signifie que les premières étapes sont les plus indispensables. La sécurité de votre site se mesurera à l'élément le concernant qui est le moins protégé. Nous vous préconisons de réaliser l'ensemble des actions décrites. Toutefois, si vous rencontrez des difficultés à réaliser certaines des opérations décrites ici, n'hésitez pas à contacter la [communauté OVHcloud](https://community.ovh.com/) ou nos [partenaires](https://partner.ovhcloud.com/fr/).
+Ce guide est organisé par étapes dans un ordre croissant de difficulté technique. La sécurité de votre site se mesurera à l'élément le concernant qui est le moins protégé. Nous vous préconisons donc de réaliser l'ensemble des actions décrites ici.<br/>
+Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre elles, n'hésitez pas à contacter la [communauté OVHcloud](https://community.ovh.com/) ou nos [partenaires](https://partner.ovhcloud.com/fr/).
 
 **Découvrez comment sécuriser votre site Web.**
 
