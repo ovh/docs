@@ -100,6 +100,88 @@ Click `Add`{.action}.
 Your profile is now available.
 
 
+#### Pools
+
+A server pool manages load balancer distribution methods and has a service monitor attached to it for health check parameters.
+
+In the `Pools`{.action} tab, click `+ Add`{.action}.     
+
+![Pools](images/en09pool.png){.thumbnail}
+
+
+Name the pool.     
+Select the Algorithm to apply:     
+- IP-HASH selects a server based on a hash of the source IP address and the total weight of all the running servers
+- LEASTCONN distributes client requests to multiple servers based on the number of connections already on the server
+- ROUND_ROBIN uses each server in turn according to the weight assigned to it
+- URI hashes the left part of the URI and divides by the total weight of the running servers. The result designates which server receives the request. This ensures that a URI is always directed to the same server if no server goes up or down.
+- HTTPHEADER looks up the HTTP header in each HTTP request
+- URL looks up the argument in the query string of each HTTP GET request    
+Choose the Monitor to be used.     
+*To make client IP addresses visible to the back-end servers, enable the Transparent option*     
+
+![Pools](images/en10genpool.png){.thumbnail}
+
+
+In the `Members`{.action} tab, `+ Add`{.action} the servers that will be used for the pool.     
+Click `Add`{.action}.
+
+![Pools](images/en11members.png){.thumbnail}
+
+Your pool is now ready for use.
+
+
+#### Virtual Servers
+
+
+A virtual server is an NSX Edge internal or uplink interface used to redirect traffic.
+
+In the `Virtual Servers`{.action} tab, click `+ Add`{.action}.     
+
+![Virtual](images/en11virtual.png){.thumbnail}
+
+
+Set all fields as needed using the previously created objects or using previously existing ones.     
+You can manually enter the IP that will be redirected or click `Select IP Address`{.action}.
+
+![Virtual](images/en12serv.png){.thumbnail}
+
+
+Select the vNIC and IP if you did.    
+Click `OK`{.action} then `Add`{.action}.
+
+![Virtual](images/en13IP.png){.thumbnail}
+
+
+Your virtual server is now active.
+
+
+#### Application Rules
+
+
+An application rule is a server-side script using the HAProxy syntax to manipulate and manage traffic.
+
+In the `Application Rules`{.action} tab, click `+ Add`{.action}.     
+
+![Rules](images/en14app.png){.thumbnail}
+
+
+Name your rule and copy your script.     
+Click `Add`{.action} when done.
+
+![Rules](images/en15rule.png){.thumbnail}
+
+You can now apply the rule in the Advanced section of your Virtual Server.
+
+
+The Load Balancer is now fully configured.
+
+![Done](images/en05enabled.png){.thumbnail}
+
+
+Congratulations and thank you.
+
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
