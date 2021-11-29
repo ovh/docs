@@ -28,7 +28,7 @@ Es wird schrittweise in einer immer größeren Reihenfolge und in immer größer
 - Sie verfügen über ein kompatibles [OVHcloud Webhosting](https://www.ovh.de/hosting/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über die [Login-Daten](../verbindung-ftp-speicher-webhosting/#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
-- Sie haben Zugriff auf die [Admin-Schnittstelle für Ihre Website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
+- Sie haben Zugriff auf die [Admin-Schnittstelle für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
 ## Beschreibung
 
