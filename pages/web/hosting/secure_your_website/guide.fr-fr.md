@@ -48,7 +48,7 @@ Vérifiez donc tout d'abord la sécurité de votre poste Windows, Mac ou Linux :
 
 Pour sécuriser votre compte client, suivez les instructions de ce [guide](../../customer/tout-savoir-sur-identifiant-client/).
 
-Pensez notamment à mettre à jour les [informations de votre compte client](../tout-savoir-sur-identifiant-client/#modifier-mes-informations-personnelles) et à y ajouter un **e-mail de secours**.<br>
+Pensez notamment à mettre à jour les [informations de votre compte client](../../customer/tout-savoir-sur-identifiant-client/#modifier-mes-informations-personnelles) et à y ajouter un **e-mail de secours**.<br>
 En cas de perte de vos identifiants et/ou d'indisponibilité de l'adresse e-mail principale de votre compte client OVHcloud, un e-mail de secours ou des informations personnelles à jour nous seront indispensables pour vous aider à retrouver l'accès à vos solutions.
 
 ### Étape 3. Effectuez régulièrement des sauvegardes de votre site <a name="backup"></a>
@@ -67,7 +67,7 @@ Consultez les forums officiels de votre CMS préféré ou contactez la [communau
 
 ### Étape 4. Apprenez à reconnaître les e-mails frauduleux
 
-Les e-mails de phishing constituent également une menace à la sécurité de votre site, car ils peuvent contenir ou amener à l'installation de logiciels malveillants. Pour apprendre à les reconnaître et à vous en prémunir, consultez ce [guide](../customer/arnaques-fraude-phishing/).
+Les e-mails de phishing constituent également une menace à la sécurité de votre site, car ils peuvent contenir ou amener à l'installation de logiciels malveillants. Pour apprendre à les reconnaître et à vous en prémunir, consultez ce [guide](../../customer/arnaques-fraude-phishing/).
 
 ### Étape 5. Mettre en place le renouvellement automatique
 
@@ -112,7 +112,7 @@ Les [sauvegardes des données](#backup) de votre site (fichiers FTP et base de d
 
 Pour autant, elles ne constituent pas une sécurité absolue. Vous devez notamment aussi tester les sauvegardes de votre base de données, afin de vérifier qu'elles ne sont pas corrompues.
 
-Vous pourrez effectuer ces tests localement, par exemple en important vos données sur un logiciel de type [WAMP](https://www.wampserver.com/){.external}. Veillez alors à paramétrer votre solution locale afin que sa configuration corresponde en tous points à celle de nos [serveurs d'hébergement mutualisé](https://webhosting-infos.hosting.ovh.net/).
+Vous pourrez effectuer ces tests localement, par exemple en important vos données sur un logiciel de type [WAMP](https://www.wampserver.com/){.external}. Veillez alors à paramétrer votre solution locale afin que sa configuration corresponde en tout point à celle de nos [serveurs d'hébergement mutualisé](https://webhosting-infos.hosting.ovh.net/).
 
 Vous pouvez également créer une **version de test** de votre site (ex : test.mondomaine.tld) dans un autre dossier de votre hébergement (il vous sera tout à fait possible d'utiliser un template de base).
 
