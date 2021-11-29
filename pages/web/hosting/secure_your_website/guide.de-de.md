@@ -1,8 +1,8 @@
 ---
-title: Wie können sie Ihre Website schützen?
-excerpt: Hier erfahren Sie, wie Sie die Sicherheit Ihrer Website erhöhen
-slug : secure-website 
-section: Website optimieren 
+title: Die Sicherheit Ihrer Website optimieren
+excerpt: Erfahren Sie hier, wie Sie die Sicherheit Ihrer Website erhöhen
+slug: website-absichern
+section: Webseitenoptimierung 
 order: 1
 ---
 
@@ -12,122 +12,121 @@ order: 1
 
 **Letzte Aktualisierung am 24.11.2021**
 
-## Einleitung
+## Ziel
 
-In dieser Anleitung erhalten Sie Grundkenntnisse, um die Verfügbarkeit Ihrer Dienstleistungen zu gewährleisten, die Integrität Ihrer Daten zu schützen und den Zugang zu Ihren Lösungen zu sichern. Es betrifft ausschließlich Webseiten, die auf den Shared Hosting [Lösungen von OVHcloud gehostet werden](https://www.ovhcloud.com/de/web-hosting/).
+Diese Anleitung bietet Ihnen grundlegendes Wissen, um die Verfügbarkeit Ihrer Dienstleistungen zu gewährleisten, die Integrität Ihrer Daten zu schützen und den Zugang zu Ihren Lösungen zu sichern. Die Maßnahmen wie hier beschrieben betreffen nur Webseiten, die auf OVHcloud [Webhosting-Diensten](https://www.ovhcloud.com/de/web-hosting/) gehostet werden.
 
-Es wird schrittweise in einer immer größeren Reihenfolge und in immer größerer technischer Schwierigkeit organisiert, was bedeutet, dass die ersten Schritte am wichtigsten sind. Die Sicherheit Ihrer Website wird an dem zugehörigen Element gemessen, das am wenigsten geschützt ist. Wir empfehlen Ihnen, alle beschriebenen Maßnahmen durchzuführen. Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operationen durchzuführen, wenden Sie sich gerne an die [OVHcloud](https://community.ovh.com/en/)-Community oder [unsere Partner](https://partner.ovhcloud.com/de/).
+Die nachstehenden Empfehlungen sind nach abnehmender Wichtigkeit und zunehmendem technischen Schwierigkeitsgrad angeordnet. Die zuerst beschriebenen Schritte sind also am wichtigsten. Die Sicherheit Ihrer Website kann danach bemessen werden, welches Element am wenigsten geschützt ist. Wir empfehlen deshalb, möglichst alle Maßnahmen durchzuführen.
 
-**Hier erfahren Sie, wie Sie Ihre Website schützen.**
+Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operationen durchzuführen, wenden Sie sich an die [OVHcloud Community](https://community.ovh.com/en/) oder [unsere Partner](https://partner.ovhcloud.com/de/directory/).
+
+**Diese Anleitung erklärt, wie Sie Ihre Website schützen.**
 
 > [!warning]
->
-> OVHcloud stellt Ihnen Dienste zur Verfügung, deren Konfiguration, Verwaltung und Verantwortung Sie selbst tragen. Es liegt daher an Ihnen, dafür zu sorgen, dass sie ordnungsgemäß funktionieren.
->
-> Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen.  Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister zu kontaktieren und/oder sich auf der Website des Herausgebers zu informieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten. Genauere Informationen finden Sie im Teil “Weiterführende Informationen“ dieses Leitfadens.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 >
 
 ## Voraussetzungen
 
-- Sie verfügen über ein kompatibles [OVHcloud Webhosting](https://www.ovh.de/hosting/).
+- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über die [Login-Daten](../verbindung-ftp-speicher-webhosting/#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
-- Sie haben Zugriff auf die [Admin-Schnittstelle für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
+- Sie haben Zugriff auf das [Admin-Interface für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
-## Beschreibung
+## In der praktischen Anwendung
 
-### Schritt 1: Überprüfen Sie die Sicherheit Ihrer Geräte <a name="local"></a>
+### Schritt 1: Überprüfen Sie die Sicherheit Ihrer lokalen Systeme <a name="local"></a>
 
-Dieser erste Schritt ist von entscheidender Bedeutung. Die Infektion Ihres Computing-Apparates mit böswilliger Software kann potenziell dazu führen, dass Sie Zugriff auf alle Ihre Eingaben auf Ihrer Tastatur haben. Daher können die Login-Daten, die Sie für die Verbindung mit Ihrem OVHcloud Kundencenter oder dem Verwaltungsinterface Ihrer Website verwenden, beeinträchtigt werden.
+Dieser erste Schritt ist von entscheidender Bedeutung. Die Infektion Ihrer Geräte mit böswilliger Software kann dazu führen, dass Angreifer Zugriff auf alle Ihre Tastatur-Eingaben haben. Jegliche Login-Daten, die Sie für die das OVHcloud Kundencenter oder dem Verwaltungsinterface Ihrer Website verwenden, könnten somit beeinträchtigt sein.
 
-Darüber hinaus kann das zunehmende Phänomen der [Ransomware](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Schadprogramme/Ransomware/ransomware_node.html){.external} (2020 in Frankreich etwa 400 Fälle) nicht nur zur Verschlüsselung aller Ihrer persönlichen Daten führen, sondern auch Ihre Aktivitäten gefährden, indem Sie alle Ihre Daten, Apparate und Software nicht mehr verfügbar machen. 
+Darüber hinaus kann das an Bedeutung zunehmende Phänomen "[Ransomware](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Schadprogramme/Ransomware/ransomware_node.html){.external}" (2020 in Frankreich etwa 400 Fälle) nicht nur zur Verschlüsselung Ihrer persönlichen Daten führen, sondern auch Ihre Geschäftstätigkeiten unterbrechen, da Ihre Software und Hardware nicht mehr funktional sind.
 
-Überprüfen Sie zunächst die Sicherheit Ihres Windows, Mac oder Linux Computer:
+Überprüfen Sie zunächst die Sicherheit Ihres Windows-, Mac- oder Linux-Systems:
 
-- Überprüfen Sie die Updates Ihrer Maschine;
-- Starten Sie einen vollständigen Scan Ihrer Stelle, nachdem Sie Ihr Anti-Virus-/Anti-Malware-Programm aktualisiert haben;
-- Ändern Sie regelmäßig das Administratorpasswort Ihres Telefons (für mehr Informationen zur Auswahl der Passwörter folgen Sie den Anweisungen in dieser [Anleitung](../../customer/alles_uber_ihre_ovh_kundenkennung/#ein-starkes-und-einzigartiges-passwort-erstellen)).
+- Überprüfen Sie Ihr Betriebssystem und Ihre Software auf Updates.
+- Führen Sie einen vollständigen Scan aus, nachdem Sie Ihr Anti-Virus-/Anti-Malware-Programm aktualisiert haben.
+- Ändern Sie regelmäßig das Administratorpasswort Ihrer Systeme (für mehr Informationen zu angemessenen Passwörtern folgen Sie den Anweisungen in [dieser Anleitung](../../customer/alles_uber_ihre_ovh_kundenkennung/#ein-starkes-und-einzigartiges-passwort-erstellen)).
 
 ### Schritt 2: Sichern Sie Ihr OVHcloud Kundencenter
 
-Um Ihre Kundenkennung zu sichern, folgen Sie den Anweisungen in dieser [Anleitung](../../customer/alles_uber_ihre_ovh_kundenkennung/).
+Um Ihren Kunden-Account abzusichern, folgen Sie den Anweisungen in [dieser Anleitung](../../customer/alles_uber_ihre_ovh_kundenkennung/).
 
-Denken Sie beispielsweise daran, die [Informationen Ihres Kundenkontos](../customer/alles_uber_ihre_ovh_kundenkennung/#personliche-daten-im-account-verwalten_1) zu aktualisieren und eine **Ersatz-E-Mail hinzuzufügen**.<br>
-Wenn Ihre Zugangsdaten verloren gehen und/oder die Haupt-E-Mail-Adresse Ihres OVHcloud Kundenkontos nicht verfügbar ist, benötigen wir eine Ersatz-E-Mail oder aktuelle persönliche Informationen, um Ihnen bei der Suche nach Ihren Lösungen zu helfen.
+Denken Sie daran, [Ihre Account-Informationen](../customer/alles_uber_ihre_ovh_kundenkennung/#personliche-daten-im-account-verwalten_1) zu aktualisieren und eine **Zweit-E-Mail-Adresse** hinzuzufügen.<br>
+Wenn Ihre Zugangsdaten verloren gehen und/oder die Haupt-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts nicht verfügbar ist, sind eine Backup-E-Mail-Adresse sowie aktuelle persönliche Daten wichtig, um Ihnen schnell weiterhelfen zu können.
 
 ### Schritt 3: Führen Sie regelmäßig Sicherungen Ihrer Seite durch <a name="backup"></a>
 
 > [!primary]
 >
-> Die regelmäßige Sicherung Ihrer Daten ist unabhängig vom betroffenen Angebot die wichtigste Maßnahme im Bereich der IT-Sicherheit. Es wird immer möglich sein, eine Software neu zu installieren oder ein neues Gerät zu bestellen, aber es ist sehr schwierig, Daten nach deren Verlust zu sammeln.
+> Die regelmäßige Sicherung Ihrer Daten ist unabhängig vom betroffenen Angebot die wichtigste Maßnahme im Bereich der IT-Sicherheit. Es wird immer möglich sein, eine Software neu zu installieren oder ein neues Gerät zu bestellen, aber es ist sehr schwierig, Daten nach deren Verlust wiederherzustellen.
 >
-> OVHcloud führt regelmäßig Sicherungen Ihrer Daten auf seiner Infrastruktur durch. Allerdings kann ein Fehler bei der Handhabung wie eine Löschung, die auf einer Datenbank im Produktivbetrieb gestartet wurde, oder die Nichtverlängerung Ihrer Dienste zum endgültigen Verlust Ihrer Daten führen.
+> OVHcloud führt regelmäßig Sicherungen aller Daten auf der Infrastruktur durch. Allerdings kann ein Fehler bei der Handhabung wie z.B. eine Löschung von Datenbanken im Produktivbetrieb  oder die Nichtverlängerung Ihrer Dienste zum endgültigen Verlust Ihrer Daten führen.
 >
 
-Speichern Sie zunächst die Daten Ihrer Datenbank (FTP-**UND**-Datenbanken Dateien), indem Sie die Anweisungen in dieser [Anleitung](../website-exportieren/ befolgen. Importieren Sie diese auf Ihrem Computer oder einem externen Support, zum Beispiel auf einem NAS Server oder einem USB Stick.
+Speichern Sie zunächst die Daten Ihrer Datenbank (FTP **UND** Datenbank-Dateien), indem Sie die Anweisungen in [dieser Anleitung](../website-exportieren/) befolgen. Importieren Sie diese auf Ihrem lokalen Gerät oder einem externen Datenträger, zum Beispiel auf einem NAS oder einem USB Laufwerk.
 
-Auch Websiteverwaltungssoftware (CMS) bietet die Möglichkeit, automatische Backup-Plugins zu installieren.<br>
+Webseitensoftware (CMS) bietet die Möglichkeit, automatische Backup-Plugins zu installieren.<br>
 Konsultieren Sie die offiziellen Foren Ihres bevorzugten CMS oder kontaktieren Sie die [OVHcloud Community](https://community.ovh.com/en/) zu diesem Thema.
 
-### Schritt 4: So erkennen Sie betrügerische E-Mails
+### Schritt 4: Betrügerische E-Mails erkennen
 
-Phishing-E-Mails stellen ebenfalls eine Bedrohung für die Sicherheit Ihrer Website dar, da sie Schadsoftware enthalten oder zur Installation bringen können. Lesen Sie in dieser [Anleitung](../../customer/e-mail-betrug-phishing/), wie Sie diese erkennen und schützen können.
+Phishing-E-Mails stellen ebenfalls eine Bedrohung für die Sicherheit Ihrer Website dar, da sie Schadsoftware enthalten deren Installation auslösen können. Lesen Sie in [dieser Anleitung](../../customer/e-mail-betrug-phishing/), wie Sie diese erkennen und sich davor schützen können.
 
 ### Schritt 5: Einrichtung der automatischen Verlängerung
 
-Wenn Ihre Dienste nicht verlängert werden, ist OVHcloud gesetzlich verpflichtet, nach Ablauf Ihres Abonnements alle Daten aus Ihrem Hosting-Angebot sowie alle zugehörigen Backups vollständig zu löschen. Wir senden unseren Kunden Erinnerungsnachrichten, um sie an die Verlängerungsfristen zu erinnern.<br>
-Diese E-Mails können jedoch in Ihren Spam-Mails eingehen, oder die E-Mail-Adresse, die zu Ihrem OVHcloud-Account gehört, kann falsch sein oder nicht mehr verfügbar sein.
+Wenn Ihre Dienste nicht verlängert werden, ist OVHcloud gesetzlich verpflichtet, nach Ablauf Ihres Abonnements alle Daten aus Ihrem Hosting-Angebot sowie alle zugehörigen Backups vollständig zu löschen. Wir senden unseren Kunden Ablaufbenachrichtigungen, um sie an die Verlängerungsfristen zu erinnern.<br>
+Diese E-Mails können jedoch in Ihren Spam-Ordnern eingehen, oder die primäre E-Mail-Adresse Ihres OVHcloud Kunden-Accounts ist möglicherweise unverfügbar.
 
-Vor allem wenn Sie nicht die Möglichkeit haben, regelmäßige Backups durchzuführen, und Ihre Website einen herausragenden Platz in Ihrer Geschäftstätigkeit einnimmt, [aktivieren Sie die automatische](../../billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#ubersicht-meine-dienste-aufrufen) Verlängerung für alle Ihre OVHcloud Dienste.<br>
-Wir empfehlen Ihnen auch, die Gültigkeit der von Ihnen hinterlegten Zahlungsmittel regelmäßig zu überprüfen.
+[Aktivieren Sie die automatische Verlängerung](../../billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste.Dies ist besonders dann zu empfehlen, wenn Ihre Website ein wichtiger Teil Ihrer Geschäftstätigkeit ist und nicht regelmäßig gesichert wird. 
+<br>Wir empfehlen Ihnen auch, die Gültigkeit der von Ihnen hinterlegten Zahlungsmittel regelmäßig zu überprüfen.
 
 ### Schritt 6: Überprüfen Sie, dass Ihre Website aktuell ist
 
-Überprüfen Sie regelmäßig die Updates Ihrer Website gemäß den Anweisungen in dieser [Anleitung](../sicherheit-hosting-deaktiviert/#22-ihre-website-aktualisieren).
+Prüfen Sie regelmäßig auf Updates für Ihre Website gemäß den Anweisungen in [dieser Anleitung](../sicherheit-hosting-deaktiviert/#22-ihre-website-aktualisieren).
 
-Denken Sie auch daran, eine aktuelle Version der [PHP](../konfiguration_von_php_fur_ein_ovh_webhosting_2014/) Sprache auf Ihrem Hosting zu verwenden.
+Denken Sie auch daran, eine aktuelle Version von [PHP](../konfiguration_von_php_fur_ein_ovh_webhosting_2014/) auf Ihrem Hosting zu verwenden.
 
 ### Schritt 7: HTTPS aktivieren
 
-Stellen Sie die verschlüsselte Verbindung zu Ihrer Website über das **HTTPS**-Protokoll gemäß dieser [Anleitung](../website-umstellen-https-ssl/) her.
+Ermöglichen Sie die verschlüsselte Verbindung zu Ihrer Website über das **HTTPS**-Protokoll gemäß [dieser Anleitung](../website-umstellen-https-ssl/).
 
 ### Schritt 8: Schützen Sie Ihre Formulare
 
-Die Formulare von Webseiten sind bevorzugte Ziele von Hackern/Spammers. Schützen Sie Ihre Formulare vor Angriffen, indem Sie **“CAPTCHA“** Plugins einrichten.
+Eingabe-Formulare auf Webseiten sind bevorzugte Ziele von Hackern/Spammern. Schützen Sie Ihre Formulare vor Angriffen, indem Sie **CAPTCHA**-Plugins einrichten.
 
 ### Schritt 9: Richten Sie ein Sicherheitsplugin auf Ihrer Seite ein
 
-Fügen Sie zu Ihrer Website ein vom Herausgeber des CMS empfohlenes Sicherheitsplugin hinzu:
+Fügen Sie Ihrer Website ein vom Herausgeber des CMS empfohlenes Sicherheitsplugin hinzu:
 
-- [Wordpress](https://wordpress.com/de/){.external}
+- [WordPress](https://wordpress.com/de/){.external}
 - [Joomla](https://www.joomla.de/){.external}
 - [Drupal](https://www.drupal.de/){.external}
 - [PrestaShop](https://www.prestashop.com/de){.external}
 
-### Schritt 10: Überprüfen Sie, dass Ihr Hosting keine böswilligen Dateien enthält
+### Schritt 10: Stellen Sie sicher, dass Ihr Hosting keine schädlichen Dateien enthält
 
-Loggen Sie sich hierzu in Ihrem [FTP Bereich](../verbindung-ftp-speicher-webhosting/) ein. Sie erfordert technische Kenntnisse, um mögliche böswillige Dateien auf Ihrem Hosting zu erkennen. Sollten Sie Schwierigkeiten haben, diese Überprüfung durchzuführen, wenden Sie sich gerne an unsere [Partner](https://partner.ovhcloud.com/de/).
+Loggen Sie sich hierzu in Ihrem [FTP-Speicherplatz](../verbindung-ftp-speicher-webhosting/) ein. Es erfordert technische Kenntnisse, um kompromittierte Dateien auf Ihrem Hosting zu erkennen. Sollten Sie Schwierigkeiten haben, diese Überprüfung durchzuführen, wenden Sie sich an unsere [Partner](https://partner.ovhcloud.com/de/directory/).
 
-Im Zweifelsfall können Sie auch die in [Schritt 1](#local) dieser Anleitung beschriebenen Überprüfungen durchführen und das [Passwort Ihres FTP-Bereichs](../ftp-benutzer-passwort-aendern/) ändern.
+Im Zweifelsfall können Sie auch die in [Schritt 1](#local) dieser Anleitung beschriebenen Überprüfungen durchführen und das [Passwort Ihres FTP-Bereichs ändern](../ftp-benutzer-passwort-aendern/).
 
-### Schritt 11: Testen Sie die Sicherungen Ihrer Seite
+### Schritt 11: Testen Sie die Backups Ihrer Seite
 
-Die [Backups](#backup) der Daten Ihrer Webseite (FTP-Dateien und Datenbanken) müssen regelmäßig durchgeführt werden.
+Die [Sicherungen](#backup) der Daten Ihrer Webseite (FTP-Dateien und Datenbanken) sollten regelmäßig durchgeführt werden. Es besteht aber keine Garantie, dass diese auch im Ernstfall Ihre Daten korrekt wiederherstellen können. Testen Sie auch die Sicherungen Ihrer Datenbank, um sicherzustellen, dass sie nicht korrupt sind.
 
-Aber sie sind keine absolute Sicherheit. Testen Sie auch die Sicherungen Ihrer Datenbank, um sicherzustellen, dass sie nicht korrupt sind.
+Sie können diese Tests lokal durchführen, etwa indem Sie Ihre Daten einer Software wie [WAMP](https://www.wampserver.com/en/){.external} importieren. Achten Sie daher darauf, Ihre lokale Lösung so einzurichten, dass die Konfiguration in allen Punkten der unserer [Shared Hosting Server entspricht](https://webhosting-infos.hosting.ovh.net/).
 
-Sie können diese Tests lokal durchführen, zum Beispiel indem Sie Ihre Daten auf ein Programm vom Typ [WAMP](https://www.wampserver.com/en/){.external} importieren. Achten Sie daher darauf, Ihre lokale Lösung so einzurichten, dass die Konfiguration in allen Punkten der unserer [Shared Hosting Server entspricht](https://webhosting-infos.hosting.ovh.net/).
+Sie können auch in einem anderen Ordner Ihres Webhostings eine **Testversion** Ihrer Webseite erstellen (z.B.: test.meinedomain.tld). (Es ist hierbei möglich, ein Basistemplate zu verwenden).
 
-Sie können auch eine **Testversion** Ihrer Webseite erstellen (z.B.: test.meinedomain.tld) in einem anderen Ordner Ihres Webhostings (es ist Ihnen vollkommen möglich, ein Basistemplate zu verwenden).
-
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="gofurther"></a>
 
 [Was tun, wenn Ihre WordPress Seite gehackt wurde?](../was_tun_wenn_ihre_wordpress_seite_gehackt_wurde/)
 
 [Was tun, wenn Ihr Hosting aus Sicherheitsgründen deaktiviert wurde?](../sicherheit-hosting-deaktiviert/)
 
-Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontaktieren Sie die [OVHcloud Partner](https://partner.ovhcloud.com/de/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, lesen Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community besuchen Sie <https://community.ovh.com/en/>.
