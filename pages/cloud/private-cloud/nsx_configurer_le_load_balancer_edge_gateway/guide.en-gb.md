@@ -1,9 +1,9 @@
 ---
-title: Set up DHCP on an NSX Edge Services appliance
-slug: setup-dhcp-nsx-edge
-excerpt: Assign IPs to your VMs through DHCP
+title: NSX Edge Load Balancer Configuration
+slug: nsx-edge-load-balancer-configuration
+excerpt: Simple steps to use the NSX Edge load balancing service
 section: NSX
-order: 03
+order: 05
 ---
 
 **Last Updated on 11/29/2021**
