@@ -12,7 +12,7 @@ Este guia permite-lhe adquirir conhecimentos fundamentais para assegurar a dispo
 
 **Saiba como proteger o seu website.**
 
-> \[!warning]
+> [!warning]
 >
 > A OVHcloud disponibiliza-lhe serviços cuja configuração e gestão são da responsabilidade do cliente. O cliente é o único responsável pelo seu bom funcionamento.
 >
@@ -21,8 +21,10 @@ Este guia permite-lhe adquirir conhecimentos fundamentais para assegurar a dispo
 
 ## Requisitos
 
-- Que oferta de alojamento Web escolher?
-- Aceder à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- um [plano OVHcloud Web Hosting](https://www.ovh.co.uk/web-hosting)
+- ter os [detalhes de login](../log-in-to-storage-ftp-web-host/#step-1-retrieve-your-login-information) para acessar o espaço de armazenamento do seu plano de hospedagem
+- acesso ao [Painel de Controlo da Nuvem OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- acesso à [interface admin para o seu site](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
 ## Instruções
 

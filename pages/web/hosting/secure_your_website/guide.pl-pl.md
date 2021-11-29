@@ -12,7 +12,7 @@ Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i tr
 
 **Dowiedz się, jak zabezpieczyć Twoją stronę WWW.**
 
-> \[!warning]
+> [!warning]
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Tobie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 >
@@ -21,8 +21,10 @@ Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i tr
 
 ## Wymagania początkowe
 
-- naszą ofertę hostingu www « Pro »
-- Dostęp do[Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- posiadanie [login details](.../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information) w celu uzyskania dostępu do przestrzeni dyskowej planu hostingu
+- dostęp do [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- dostęp do [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
 ## W praktyce
 

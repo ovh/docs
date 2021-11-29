@@ -7,16 +7,16 @@ order: 1
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 **Última actualización: 24/11/2021**
 
 ## Objetivo
 
-Esta guía explica cómo adquirir conocimientos básicos para garantizar la disponibilidad de sus servicios, proteger la integridad de sus datos y proteger el acceso a sus soluciones. Solo concierne a los sitios web alojados en las [soluciones compartidas de OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
+Esta guía explica cómo adquirir conocimientos básicos para garantizar la disponibilidad de sus servicios, proteger la integridad de sus datos y proteger el acceso a sus soluciones. Solo concierne a los sitios web alojados en las [soluciones compartidas de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).
 
-Se organiza por etapas en un orden creciente de importancia y dificultad técnica, lo que significa que los primeros pasos son los más indispensables. La seguridad de su sitio web se medirá en el elemento que le concierna, que es el menos protegido. Le recomendamos que realice todas las acciones descritas. No obstante, si tiene dificultades para realizar algunas de las operaciones que se describen en la guía, no dude en contactar con la [comunidad de OVHcloud](https://community.ovh.com/) o con nuestros [partners](https://partner.ovhcloud.com/fr/).
+Se organiza por etapas en un orden creciente de importancia y dificultad técnica, lo que significa que los primeros pasos son los más indispensables. La seguridad de su sitio web se medirá en el elemento que le concierna, que es el menos protegido. Le recomendamos que realice todas las acciones descritas. No obstante, si tiene dificultades para realizar algunas de las operaciones que se describen en la guía, no dude en contactar con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con nuestros [partners](https://partner.ovhcloud.com/es-es/).
 
 **Esta guía explica cómo proteger un sitio web.**
 
@@ -29,8 +29,10 @@ Se organiza por etapas en un orden creciente de importancia y dificultad técnic
 
 ## Requisitos
 
-- nuestro plan de web hosting Profesional
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), en la sección Dedicado > Servidores dedicados.
+- un [plan OVHcloud Web Hosting](https://www.ovhcloud.com/es-es/web-hosting/);
+- tener los detalles de [inicio de sesión](../conexion-espacio-almacenamiento-ftp-alojamiento-web/#1-obtener-los-datos-de-conexion) para acceder al espacio de almacenamiento de su plan de alojamiento;
+- acceso al [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es);
+- acceso a la [interfaz de administración de su sitio web](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}.
 
 ## Procedimiento
 
@@ -38,13 +40,13 @@ Se organiza por etapas en un orden creciente de importancia y dificultad técnic
 
 Este primer paso es fundamental. De hecho, la infección de su equipo informático por un programa malicioso puede dar acceso, a una persona malintencionada, al conjunto de las incautaciones efectuadas en su teclado. Por lo tanto, las claves que utilice para conectarse al área de cliente de OVHcloud o al panel de administración del sitio web pueden estar en peligro.
 
-Por otro lado, el creciente fenómeno de los [transplantes](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/rancongiciels-ransomwares)) {.external} (aproximadamente 400 casos en Francia en 2020) puede no solo conducir al cifrado de todos sus datos personales, sino también poner en peligro su actividad, haciendo inaccesible todos sus datos, dispositivos y programas. 
+Por otro lado, el creciente fenómeno de los [transplantes](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/rancongiciels-ransomwares){.external} (aproximadamente 400 casos en Francia en 2020) puede no solo conducir al cifrado de todos sus datos personales, sino también poner en peligro su actividad, haciendo inaccesible todos sus datos, dispositivos y programas.
 
 Compruebe en primer lugar la seguridad de su equipo Windows, Mac o Linux:
 
 - compruebe las actualizaciones de su máquina;
-- Una vez que haya actualizado el software antivirus/anti-malware, lance una exploración completa de su equipo.
-- cambie regularmente la contraseña de administrador de su puesto (para más información sobre la elección de las contraseñas, siga las instrucciones de esta [guía](../../customer/tout-savoir-sur-identifiant-client/)).
+- Una vez que haya actualizado el software antivirus/anti-malware, lance una exploración completa de su equipo;
+- cambie regularmente la contraseña de administrador de su puesto (para más información sobre la elección de las contraseñas, siga las instrucciones de esta [guía](../../customer/tout-savoir-sur-identifiant-client/).
 
 ### Paso 2 Proteja su área de cliente de OVHcloud
 

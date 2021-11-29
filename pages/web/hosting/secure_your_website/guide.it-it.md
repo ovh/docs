@@ -12,7 +12,7 @@ Il progetto è organizzato gradualmente in ordine crescente di importanza e diff
 
 **Questa guida ti mostra come proteggere il tuo sito Web.**
 
-> \[!warning]
+> [!warning]
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 >
@@ -21,8 +21,10 @@ Il progetto è organizzato gradualmente in ordine crescente di importanza e diff
 
 ## Prerequisiti
 
-- nostra offerta di Hosting Web "Pro"
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- un [piano OVHcloud Web Hosting](https://www.ovh.co.uk/web-hosting)
+- avere le [informazioni di accesso](../log-in-storage-ftp-web-hosting/#step-1-recupero-login-information) per accedere allo spazio di archiviazione del piano di hosting
+- accesso a [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- accesso all'interfaccia [admin per il sito Web](https://wordpress.org/support/article/first-steps-with-wordpress/){.External}
 
 ## Procedura
 
