@@ -7,7 +7,7 @@ section: NSX
 order: 05
 ---
 
-**Dernière mise à jour le 27/02/2019**
+**Dernière mise à jour le 29/11/2021**
 
 ## Objectif
 
@@ -15,9 +15,24 @@ La fonctionnalité d'équilibrage de charge NSX permet de répartir la charge du
 
 ## Prérequis
 
-- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir déployer une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
 
 ## En pratique
+
+### Accès à l'interface
+
+Dans l'interface vSphere, allez dans le Tableau de bord `Mise en réseau et sécurité`{.action}.
+
+![Menu](images/en01dash.png){.thumbnail}
+
+
+Sur la gauche de votre écran, naviguez vers `Dispositifs NSX Edge`{.action} puis cliquez sur le dispositif à paramétrer.
+
+![NSX](images/en02nsx.png){.thumbnail}
+
+
 
 Depuis la Edge souhaitée, rendez-vous dans la partie "Gérer" pour ensuite accéder à l'onglet "Load Balancer".
 
