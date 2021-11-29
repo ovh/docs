@@ -82,7 +82,7 @@ We also stronly recommend you to regularly check the **validity of the default p
 
 Check your website updates regularly, following the instructions in this [guide](../security-practices-hosting-disabled/#22-update-your-website).
 
-Also remember to use a recent version of the [PHP programming language](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) on your hosting plan.
+Also remember to use a recent version of the [PHP programming language](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/) on your hosting plan.
 
 ### Step 7 - Activate https
 

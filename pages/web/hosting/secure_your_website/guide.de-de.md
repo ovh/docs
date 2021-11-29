@@ -6,27 +6,29 @@ section: Website optimieren
 order: 1
 ---
 
-“Stand 24.11.2021“
+**Letzte Aktualisierung am 24.11.2021**
 
 ## Einleitung
 
-In dieser Anleitung erhalten Sie Grundkenntnisse, um die Verfügbarkeit Ihrer Dienstleistungen zu gewährleisten, die Integrität Ihrer Daten zu schützen und den Zugang zu Ihren Lösungen zu sichern. Es betrifft ausschließlich Webseiten, die auf den Shared Hosting [Lösungen von OVHcloud gehostet werden](https://www.ovhcloud.com/fr/web-hosting/).
+In dieser Anleitung erhalten Sie Grundkenntnisse, um die Verfügbarkeit Ihrer Dienstleistungen zu gewährleisten, die Integrität Ihrer Daten zu schützen und den Zugang zu Ihren Lösungen zu sichern. Es betrifft ausschließlich Webseiten, die auf den Shared Hosting [Lösungen von OVHcloud gehostet werden](https://www.ovhcloud.com/de/web-hosting/).
 
-Es wird schrittweise in einer immer größeren Reihenfolge und in immer größerer technischer Schwierigkeit organisiert, was bedeutet, dass die ersten Schritte am wichtigsten sind. Die Sicherheit Ihrer Website wird an dem zugehörigen Element gemessen, das am wenigsten geschützt ist. Wir empfehlen Ihnen, alle beschriebenen Maßnahmen durchzuführen. Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operationen durchzuführen, wenden Sie sich gerne an die [OVHcloud](https://community.ovh.com/)-Community oder [unsere Partner](https://partner.ovhcloud.com/fr/).
+Es wird schrittweise in einer immer größeren Reihenfolge und in immer größerer technischer Schwierigkeit organisiert, was bedeutet, dass die ersten Schritte am wichtigsten sind. Die Sicherheit Ihrer Website wird an dem zugehörigen Element gemessen, das am wenigsten geschützt ist. Wir empfehlen Ihnen, alle beschriebenen Maßnahmen durchzuführen. Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operationen durchzuführen, wenden Sie sich gerne an die [OVHcloud](https://community.ovh.com/en/)-Community oder [unsere Partner](https://partner.ovhcloud.com/de/).
 
 **Hier erfahren Sie, wie Sie Ihre Website schützen.**
 
-> \[!warning]
+> [!warning]
 >
 > OVHcloud stellt Ihnen Dienste zur Verfügung, deren Konfiguration, Verwaltung und Verantwortung Sie selbst tragen. Es liegt daher an Ihnen, dafür zu sorgen, dass sie ordnungsgemäß funktionieren.
 >
-> Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen.  Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister zu kontaktieren und/oder sich auf der Website des Herausgebers zu informieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten. Genauere Informationen finden Sie im Teil "Weiterführende Informationen" dieses Leitfadens.
+> Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen.  Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister zu kontaktieren und/oder sich auf der Website des Herausgebers zu informieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten. Genauere Informationen finden Sie im Teil “Weiterführende Informationen“ dieses Leitfadens.
 >
 
 ## Voraussetzungen
 
-- unser "Pro" Webhosting-Angebot entscheiden.
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) eingeloggt.
+- Sie verfügen über ein kompatibles [OVHcloud Webhosting](https://www.ovh.de/hosting/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über die [Login-Daten](../verbindung-ftp-speicher-webhosting/#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
+- Sie haben Zugriff auf die [Admin-Schnittstelle für Ihre Website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
 ## Beschreibung
 
