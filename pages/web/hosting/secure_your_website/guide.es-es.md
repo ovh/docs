@@ -1,6 +1,14 @@
 ---
-title: ¿Cómo proteger su sitio web? excerpt: Esta guía explica cómo aumentar la seguridad de su sitio web slug: secure-website section: Optimizar un sitio web 1
+title: ¿Cómo proteger su sitio web?
+excerpt: Esta guía explica cómo aumentar la seguridad de su sitio web
+slug: secure-website 
+section: Optimización del sitio web 
+order: 1
 ---
+
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
 
 **Última actualización: 24/11/2021**
 
@@ -12,7 +20,7 @@ Se organiza por etapas en un orden creciente de importancia y dificultad técnic
 
 **Esta guía explica cómo proteger un sitio web.**
 
-> \[!warning]
+> [!warning]
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
