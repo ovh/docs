@@ -7,139 +7,198 @@ section: Diagnostica
 order: 03
 ---
 
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #fff; 
+   color: #000;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.90em;
+   color: #000;
+ }
+ .small {
+     font-size: 0.90em;
+ }
+</style>
 
-## Microsoft Outlook Express
-Seleziona l'email di cui vuoi recuperare l'header.
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-Accedi a File -> Proprietà poi Dettagli.
+**Ultimo aggiornamento: 19/11/2021**
 
-Clicca su Sorgente del messaggio per recuperare l'header.
+## Obiettivo
 
+Un intestazione email ha il compito di tracciare il percorso seguito da questa email sulla rete, dal mittente al destinatario.<br>
+che permette di identificare un'email malevola o rilevare rallentamenti nella ricezione.
 
-## Microsoft Outlook 2003
-Apri l'email di cui vuoi recuperare l'header.
+Ogni email ricevuta dispone di un header (*header*) che non compare di default quando consulti la tua email. ma è possibile recuperarlo dal client di posta o dalla Webmail.
 
-Nella nuova finestra, accedi a Visualizza -> Opzioni.
+L'email può anche essere estrapolata nella sua integralità come file `.eml`. Questo file può esserti richiesto per analizzare un'email malevola ricevuta.<br>
+Per recuperare un file.`eml`, consulta la sezione [Webmail](#webmail)
 
-![](images/img_1587.jpg){.thumbnail}
-L'header completo viene visualizzato (vedi immagine).
+**Questa guida ti mostra come recuperare un intestazione email dal tuo client di posta.**
 
-![](images/img_1588.jpg){.thumbnail}
+## Prerequisiti
 
+- Disporre di un indirizzo email su una delle nostre [soluzioni OVHcloud](https://www.ovhcloud.com/it/emails/) o esterna
+- Avere accesso all'indirizzo email tramite la Webmail o un client di posta
 
-## Microsoft Outlook 2007
-Clicca con il tasto destro sull'email di cui vuoi recuperare l'header.
+## Procedura
 
-Accedi a Opzioni dei messaggi.
+### Comprendere il contenuto di un intestazione
 
-![](images/img_1590.jpg){.thumbnail}
-L'header completo viene visualizzato (vedi immagine).
+L'intestazione è composta da diversi elementi che indicano il percorso dell'email. È composto da elementi gerarchizzati in modo anecoologico, dai più recenti ai più vecchi, e da informazioni supplementari.<br>
+Di seguito è riportato un elenco non esaustivo degli elementi che possono essere costituiti da un intestazione e il loro significato. 
 
-![](images/img_1592.jpg){.thumbnail}
+- Il campo `Received` è presente nell'intestazione ad ogni passaggio dell'email su un server di invio (SMTP). In genere è possibile trovare l'hostname del server con l'indirizzo IP e la data. I record `Received` sono classificati dal passaggio più recente al passaggio più antico su un server:
 
+<pre class="console"><code>
+Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
+	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
+	for &ltjohn@mydomain.ovh&gt ; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+</code></pre>
 
-## Microsoft Outlook 2010
-Apri l'email di cui vuoi recuperare l'header.
+  *L'email è stata inviata dal server mxplan7.mail.ovh.net al server mo3005.mail-out.ovh.net il 30 giugno 2021 alle 13:12:40 (fuso orario UTC)*
 
-Nella nuova finestra, accedi alla sezione Messaggio e clicca sulla freccia che trovi a destra di Indicatori, come vedi in figura.
+- Il campo `Return-Path` corrisponde all'indirizzo di ritorno quando l'invio del messaggio non è andato a buon fine. l'indirizzo di ritorno è generalmente quello che ha effettuato l'invio. 
 
-![](images/img_1593.jpg){.thumbnail}
-L'header completo viene visualizzato (vedi immagine).
+<pre class="console"><code>
+Return-Path: &ltjohn@mydomain.ovh&gt
+</code></pre>
 
-![](images/img_1594.jpg){.thumbnail}
+- Il campo `From` designa l'indirizzo del mittente dell'email e il suo nome di visualizzazione.
 
+<pre class="console"><code>
+From: John &ltjohn@mydomain.ovh&gt
+</code></pre>
 
-## Microsoft Outlook 2013/2016
-Apri l'email di cui vuoi recuperare l'header.
+- Il record `To` designa l'indirizzo del destinatario dell'email e il suo nome di visualizzazione.
 
-Nella nuova finestra, accedi a File.
+<pre class="console"><code>
+To: Robert &ltrobert@hisdomain.ovh&gt 
+</code></pre>
 
-![](images/img_1595.jpg){.thumbnail}
-Seleziona Informazioni e poi Proprietà.
+- Il record `Subject` designa l'oggetto dell'email.
 
-![](images/img_1596.jpg){.thumbnail}
-L'header completo viene visualizzato (vedi immagine).
+<pre class="console"><code>
+Subject: Hello my friend
+</code></pre>
 
-![](images/img_1597.jpg){.thumbnail}
+- Il campo `Message-ID` designa l'identificativo univoco dell'email e termina con il nome del server d'invio (dopo "@"). 
 
+<pre class="console"><code>
+Message-ID: &ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt
+</code></pre>
 
-## Mozilla Thunderbird
-Seleziona l'email di cui vuoi recuperare l'header.
+- Il record `Received-SPF` mostra il risultato del controllo [SPF](https://docs.ovh.com/it/domains/hosting_condiviso_il_record_spf/) effettuato sul dominio del mittente. L'argomento `client-ip` permette in particolare di rilevare l'indirizzo IP del server che è server utilizzato per spedire l'email. 
 
-Premi Ctrl+U.
+<pre class="console"><code>
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
+</code></pre>
 
-![](images/img_1598.jpg){.thumbnail}
-L'header completo viene visualizzato (vedi immagine).
+- I record `X-` sono dei campi personalizzati e completano i campi standard. Vengono implementati dai server sui quali transitano le email.
 
-![](images/img_1599.jpg){.thumbnail}
+<pre class="console"><code>
+X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
+X-Ovh-Tracer-Id: 1234567891011121314
+X-VR-SPAMSTATE: OK
+X-VR-SPAMSCORE: 0
+X-VR-SPAMCAUSE: 
+</code></pre>
 
+### Recupera un header su un client di posta
 
-## Mail di Mac
-Seleziona l'email di cui vuoi recuperare l'header.
+#### Microsoft Outlook 
 
-Accedi a Presentazione -> Messaggio -> Tutti gli header.
+Per leggere l'intestazione, apri l'email che preferisci in una finestra separata cliccando su due volte nella lista.
 
-![](images/img_1569.jpg){.thumbnail}
-L'header completo viene visualizzato. A questo punto, puoi recuperarlo.
+Nella nuova finestra, clicca su `File`{.action} in alto a destra.
 
-![](images/img_1570.jpg){.thumbnail}
+![email](images/outlook01.png){.thumbnail}
 
+Seleziona `Informazioni`{.action} sulla sinistra e clicca su `Proprietà`{.action}.
 
-## Microsoft Outlook 2011 per Mac
-Clicca con il tasto destro sulla mail di cui vuoi recuperare l'header e seleziona Visualizza sorgente.
+![email](images/outlook02.png){.thumbnail}
 
-![](images/img_1565.jpg){.thumbnail}
-L'header completo viene visualizzato. A questo punto, puoi recuperarlo.
+L'intestazione completa dell'email compare nel riquadro inferiore. Puoi selezionare l'insieme del testo e copiarlo in un file.
 
-![](images/img_1566.jpg){.thumbnail}
+![email](images/outlook03.png){.thumbnail}
 
+#### Mozilla Thunderbird
 
-## Microsoft Entourage 2008 per Mac
-Seleziona l'email di cui vuoi recuperare l'header e cliccaci con il tasto destro. 
+Per visualizzare l'intestazione, seleziona l'email che preferisci e clicca simultaneamente sui tasti `Ctrl` + `U`.
 
-Seleziona Sorgente.
+![email](images/thunderbird01.png){.thumbnail}
 
-Nella nuova finestra che si apre trovi l'header completo dell'email.
+L'intestazione completa dell'email compare in una finestra separata, puoi selezionare l'intero testo e copiarlo in un file.
 
+#### Mail di macOS
 
-## Roundcube
-Seleziona l'email di cui vuoi recuperare l'header.
+Per visualizzare l'intestazione, seleziona l'email che preferisci, clicca su `Presentazione`{.action} nella barra del menu superiore, poi su `Message`{.action} e clicca su `Tutte le intestazioni`{.action}.
 
-Accedi a ... (Plus) -> Visualizza la sorgente.
+![email](images/mailmac01.png){.thumbnail}
 
-![](images/img_1600.jpg){.thumbnail}
-Nel tuo browser visualizzi l'header completo dell'email.
+L'intestazione completa dell'email compare in una finestra separata. Puoi selezionare l'insieme del testo e copiarlo in un file.
 
-![](images/img_1601.jpg){.thumbnail}
+### Recuperare un header su una Webmail <a name="webmail"></a>
 
+#### Roundcube
 
-## OWA 2013
-Seleziona l'email di cui vuoi recuperare l'header.
+##### **Recupera l'intestazione**
 
-Accedi a ... -> Visualizza i dettagli del messaggio.
+Per visualizzare l'intestazione, seleziona l'email che preferisci. Clicca sul pulsante `... Più`{.action}, poi su `< > Vedi sorgente`{.action}.
 
-![](images/img_1572.jpg){.thumbnail}
-L'header completo viene visualizzato. A questo punto, puoi recuperarlo.
+![email](images/roundcube01.png){.thumbnail}
 
-![](images/img_1573.jpg){.thumbnail}
+Si apre una nuova finestra con l'intestazione completa dell'email. Puoi selezionare l'insieme del testo e copiarlo in un file.
 
+##### **Recupera il file.eml**
 
-## OWA 2016
-Seleziona l'email di cui vuoi recuperare l'header.
+Per scaricare il file.`eml`, seleziona l'email che preferisci. Clicca sul pulsante `... Più`{.action} poi su `Scarica (.eml)`{.action}.
 
-![](images/img_3725.jpg){.thumbnail}
-Clicca sulla freccia in corrispondenza Rispondi a tutti e seleziona Visualizza dettagli del messaggio
+![email](images/roundcube02.png){.thumbnail}
 
-![](images/img_3727.jpg){.thumbnail}
-Visualizzi l'header dell'email selezionata:
+#### Outlook Web App (OWA) <a name="owa"></a>
 
-![](images/img_3728.jpg){.thumbnail}
+##### **Recupera l'intestazione**
 
+Seleziona l'email di cui vuoi visualizzare l'intestazione. Clicca **sulla freccia** a destra di `Rispondi a tutti`{.action} e poi su `Mostra i dettagli del messaggio`{.action}. Si apre una nuova finestra con l'intestazione completa dell'email, che ti permette di scaricarla.
 
-## Gmail
-Apri l'email di cui vuoi recuperare l'header.
+![email](images/owa01.png){.thumbnail}
 
-Clicca sulla freccia a destra del link di risposta. 
+##### **Recupera il file.eml**
 
-Seleziona "Visualizza originale" per aprire l'header in una nuova finestra.
+Per scaricare il file.`eml`, clicca su `(+) Nuovo`{.action} per creare una nuova email. 
 
+Seleziona l'email che vuoi estrarre e trascina nel contenuto del nuovo messaggio. 
+
+Clicca sulla freccia che punta verso il basso accanto all'allegato appena generato e poi clicca su `Scarica`{.action} per salvare il file sulla tua macchina.
+
+![email](images/owa02.gif){.thumbnail}
+
+### Recupera un intestazione su un altro client di posta
+
+#### Gmail
+
+Per recuperare l'intestazione, seleziona l'email in questione, clicca sui 3 punti verticali a destra e poi su `Mostra la fonte del messaggio`{.action}. Si apre una nuova finestra con l'intestazione completa dell'email, che ti permette di scaricarla anche in formato `.eml`.
+
+![email](images/gmail01.png){.thumbnail}
+
+#### Outlook.com
+
+Per visualizzare l'intestazione nell'interfaccia Web <Outlook.com>, consulta la sezione [Outlook Web Application](#owa) di questa guida.
+
+## Per saperne di più
+
+[FAQ E-mail](https://docs.ovh.com/it/emails/faq-emails/)
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
