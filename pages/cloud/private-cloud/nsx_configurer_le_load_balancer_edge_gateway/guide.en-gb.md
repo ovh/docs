@@ -10,9 +10,9 @@ order: 05
 
 ## Objective
 
-DHCP allows automatic assignment of private IPs to VMs behind your NSX Edge Services Gateway.
+The NSX Edge load balancing service spreads traffic from a specified public or private IP accross several defined VMs in your infrastructure.
 
-**This guide explains how to setup the DHCP service**
+**This guide explains how to setup the NSX Edge Load Balancer**
 
 ## Requirements
 
