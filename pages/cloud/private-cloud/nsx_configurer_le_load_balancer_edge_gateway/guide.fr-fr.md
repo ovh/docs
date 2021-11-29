@@ -11,7 +11,7 @@ order: 05
 
 ## Objectif
 
-La fonctionnalité d'équilibrage de charge NSX permet de répartir la charge du trafic depuis une IP publique ou privée unique vers plusieurs VMs en adressage IPs privé.
+La fonctionnalité d'équilibrage de charge NSX permet de répartir la charge du trafic depuis une IP publique ou privée unique vers plusieurs VMs de votre infrastructure.
 
 ## Prérequis
 
