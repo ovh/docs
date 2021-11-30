@@ -91,20 +91,24 @@ Installez le client AWS et configurez-le comme suit :
 ```bash
 user@host:~$ pip install awscli awscli-plugin-endpoint
 [...]
+user@host:~$ cat ~/.aws/credentials
+
+[default]
+aws_access_key_id = <access_key>
+aws_secret_access_key = <secret_key>
+
 user@host:~$ cat ~/.aws/config
+
 [plugins]
 endpoint = awscli_plugin_endpoint
 
 [profile default]
-aws_access_key_id = <access fetched in previous step>
-aws_secret_access_key = <secret fetched in previous step>
-region = <public cloud region in lower case>
+region = <region>
 s3 =
-  endpoint_url = https://s3.<public cloud region>.cloud.ovh.net
+  endpoint_url = https://s3.<region>.cloud.ovh.net
   signature_version = s3v4
-  addressing_style = virtual
 s3api =
-  endpoint_url = https://s3.<public cloud region>.cloud.ovh.net
+  endpoint_url = https://s3.<region>.cloud.ovh.net
 ```
 
 L'accès de type `hébergé virtuel` et l'accès de type `chemin d'accès` sont pris en charge dans toutes les régions, mais nous vous recommandons d'utiliser le style `hébergé virtuel` car l'accès de type `chemin d'accès` sera déprécié après le 30 septembre 2020.

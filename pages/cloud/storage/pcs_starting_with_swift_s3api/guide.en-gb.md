@@ -90,20 +90,24 @@ Install the aws client and configure it as follows:
 ```bash
 user@host:~$ pip install awscli awscli-plugin-endpoint
 [...]
+user@host:~$ cat ~/.aws/credentials
+
+[default]
+aws_access_key_id = <access_key>
+aws_secret_access_key = <secret_key>
+
 user@host:~$ cat ~/.aws/config
+
 [plugins]
 endpoint = awscli_plugin_endpoint
 
 [profile default]
-aws_access_key_id = <access fetched in previous step>
-aws_secret_access_key = <secret fetched in previous step>
-region = <public cloud region in lower case>
+region = <region>
 s3 =
-  endpoint_url = https://s3.<public cloud region>.cloud.ovh.net
+  endpoint_url = https://s3.<region>.cloud.ovh.net
   signature_version = s3v4
-  addressing_style = virtual
 s3api =
-  endpoint_url = https://s3.<public cloud region>.cloud.ovh.net
+  endpoint_url = https://s3.<region>.cloud.ovh.net
 ```
 
 Virtual hosted-style and path-style access are supported in all regions, but we recommend to use virtual hosted-style since path-style access will be deprecated after September 30, 2020.
