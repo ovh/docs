@@ -64,7 +64,7 @@ Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
  
 </code></pre>
 
-  *Here the email was sent from server mxplan7.mail.ovh.net to server mo3005.mail-out.ovh.net on 30 June 2021 at 13:12:40 (time zone UTC)*
+  *Here the email was sent from server mxplan7.mail.ovh.net to server mo3005.mail-out.ovh.net on 30 June 2021 at 13:12:40 (time zone UTC).*
 
 - The `Return-Path` field corresponds to the return address when the message failed to be sent. the return address is usually the one that sent the shipment. 
 
