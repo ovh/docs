@@ -46,66 +46,66 @@ Jede empfangene E-Mail verfügt über einen Header, der aber nicht angezeigt wir
 Sie können die gesamte E-Mail auch als `.eml` Datei exportieren. Diese Datei kann beispielweise angefordert werden, um eine unerwünschte E-Mail zu analysieren, die Sie erhalten haben.<br>
 Um eine `.eml` Datei abzurufen, gehen Sie direkt zum Abschnitt [Webmail](#webmail).
 
-**Hier erfahren Sie, wie Sie einen E-Mail-Header auf Ihrem E-Mail-Client abrufen.**
+**Diese Anleitung erklärt, wie Sie E-Mail-Header mithilfe eines E-Mail-Clients abrufen können.**
 
 ## Voraussetzungen
 
-- Sie verfügen über eine E-Mail-Adresse auf einer [unserer OVHcloud E-Mail](https://www.ovhcloud.com/de/emails/)-Lösungen oder eine externe Lösung.
-- Sie haben über Webmail oder ein E-Mail-Programm Zugriff auf die E-Mail-Adresse.
+- Sie verwenden eine E-Mail-Adresse mit einem [OVHcloud E-Mail Dienst](https://www.ovhcloud.com/de/emails/) oder einer externen Lösung.
+- Sie haben über Webmail oder eine E-Mail-Software Zugriff auf die E-Mail-Adresse.
 
 ## In der praktischen Anwendung
 
 ### Inhalt eines Headers verstehen
 
-Der Header besteht aus mehreren Elementen, die den Verlauf der E-Mail anzeigen. Es besteht aus Hierarchieelementen, die antichronitisch sind, von den neuesten bis zu den ältesten, sowie aus zusätzlichen Informationen.<br>
+Der Header setzt sich aus mehreren Elementen zusammen, die den Verlauf der E-Mail anzeigen. Diese sind umgekehrt chronologisch angeordnet, vom neuesten bis zum ältesten Eintrag, gefolgt von zusätzlichen Informationen.<br>
 Im Folgenden finden Sie eine nicht erschöpfende Liste der Elemente, aus denen ein Header bestehen kann, sowie deren Bedeutung. 
 
-- Der `Received` Eintrag ist im Header bei jedem Umzug der E-Mail auf einen Versendungsserver (SMTP) enthalten. Der Hostname des Servers wird in der Regel mit seiner IP-Adresse und dem Datum angegeben. Die Einträge für `Received` sind von der letzten Umstellung auf die älteste Umstellung auf einem Server sortiert:
+- Ein `Received` Eintrag ist im Header für jedem Durchgang der E-Mail auf einen Ausgangsserver (SMTP) enthalten. Der Hostname des Servers wird in der Regel mit seiner IP-Adresse und einem Zeitstempel angegeben. Die Einträge für `Received` sind vom letzten Durchgang zum ältesten Durchgang auf einem Server sortiert:
 
 <pre class="console"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
-	for &ltjohn@mydomain.ovh&gt ; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+	for <john@mydomain.ovh>; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-*Hier wurde die E-Mail vom Server mxplan7.mail.ovh.net zum Server mo3005.mail-out.ovh.net am 30\. Juni 2021 um 13:12:40 Uhr (UTC-Zeitzone) übertragen*
+*Hier wurde die E-Mail vom Server mxplan7.mail.ovh.net zum Server mo3005.mail-out.ovh.net am 30. Juni 2021 um 13:12:40 Uhr (UTC-Zeitzone) übertragen.*
 
-- Der `Return-Path` Eintrag entspricht der Rücksendeadresse, wenn der Versand der Nachricht fehlgeschlagen ist. Die Rücksendeadresse ist im Allgemeinen diejenige, die den Versand durchgeführt hat. 
+- Der Eintrag `Return-Path` entspricht der Rücksendeadresse, wenn der Versand der Nachricht fehlgeschlagen ist. Die Rücksendeadresse ist im Allgemeinen die Versandadresse. 
 
 <pre class="console"><code>
 Return-Path: &ltjohn@mydomain.ovh&gt
 </code></pre>
 
-- Der `From`-Eintrag bezeichnet die Adresse des Absenders der E-Mail und seinen Anzeigenamen.
+- Der `From`-Eintrag enthält die Adresse des Absenders der E-Mail und den Anzeigenamen.
 
 <pre class="console"><code>
-From: John &ltjohn@mydomain.ovh&gt
+From: John &ltjohn@mydomain.ovh&g
 </code></pre>
 
-- Der `To`-Eintrag bezeichnet die Adresse des E-Mail-Empfängers und den Anzeigenamen.
+- Der `To`-Eintrag enthält die Adresse des E-Mail-Empfängers und den Anzeigenamen.
 
 <pre class="console"><code>
-To: Robert &ltrobert@hisdomain.ovh&gt 
+To: Robert &ltrobert@hisdomain.ovh&gt
 </code></pre>
 
-- Der `Betreff` bezieht sich auf den Betreff der E-Mail.
+- `Subject` ist der Betreff der E-Mail.
 
 <pre class="console"><code>
 Subject: Hello my friend
 </code></pre>
 
-- Der Eintrag `Message-ID` bezeichnet die eindeutige Kennung der E-Mail und endet mit dem Namen des Versendungsservers (hinter dem@"). 
+- Der Eintrag `Message-ID` bezeichnet die eindeutige Kennung der E-Mail und endet mit dem Namen des Versendungsservers (nach "@"). 
 
 <pre class="console"><code>
 Message-ID: &ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt
 </code></pre>
 
-- Im Feld `Received-SPF` wird das Ergebnis der [SPF](https://docs.ovh.com/de/domains/webhosting_spf-eintrag/)-Überprüfung des Domainnamens des Absenders angezeigt. Mit dem `client-ip`-Argument wird unter anderem die IP-Adresse des Servers ermittelt, der für den Versand der E-Mail verwendet wurde. 
+- Im Feld `Received-SPF` wird das Ergebnis der [SPF](https://docs.ovh.com/de/domains/webhosting_spf-eintrag/) Überprüfung des Domainnamens des Absenders angezeigt. Mit dem `client-ip`-Argument wird unter anderem die IP-Adresse des Servers ermittelt, der für den Versand der E-Mail verwendet wurde. 
 
 <pre class="console"><code>
-Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
 </code></pre>
 
-- Die `X-`Einträge sind personalisierte Felder und dienen als Ergänzung zu den Standardfeldern. Sie werden implementiert durch die Server, auf denen die E-Mails übertragen werden.
+- Die `X-`Einträge sind individuelle Felder und dienen als Ergänzung zu den Standardfeldern. Sie werden implementiert von den Servern, die E-Mails übertragen.
 
 <pre class="console"><code>
 X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
@@ -115,17 +115,17 @@ X-VR-SPAMSCORE: 0
 X-VR-SPAMCAUSE: 
 </code></pre>
 
-### Header auf einem E-Mail-Programm abrufen
+### Header mit einer E-Mail-Software abrufen
 
 #### Microsoft Outlook 
 
 Um den Header anzuzeigen, öffnen Sie die E-Mail Ihrer Wahl mit einem Doppelklick.
 
-Klicken Sie im neuen Fenster oben rechts auf `Datei`{.action}.
+Klicken Sie im neuen Fenster oben links auf `Datei`{.action}.
 
 ![E-Mails](images/outlook01.png){.thumbnail}
 
-Wählen Sie dann links `Informationen`{.action} aus und klicken Sie auf `Eigenschaften`{.action}.
+Wählen Sie dann links `Info`{.action} aus und klicken Sie auf `Eigenschaften`{.action}.
 
 ![E-Mails](images/outlook02.png){.thumbnail}
 
@@ -163,7 +163,7 @@ Es öffnet sich ein neues Fenster mit dem vollständigen Header der E-Mail. Sie 
 
 ##### **.eml Datei speichern**
 
-Um die Datei `.eml` herunterzuladen wählen Sie eine E-Mail aus. Klicken Sie auf den `... Mehr`{.action} Danach auf `Download (.eml)`{.action}.
+Um die `.eml` Datei herunterzuladen wählen Sie eine E-Mail aus. Klicken Sie auf den `... Mehr`{.action} Danach auf `Download (.eml)`{.action}.
 
 ![E-Mails](images/roundcube02.png){.thumbnail}
 
@@ -171,17 +171,17 @@ Um die Datei `.eml` herunterzuladen wählen Sie eine E-Mail aus. Klicken Sie auf
 
 ##### **Header anzeigen**
 
-Wählen Sie die E-Mail aus, deren Header Sie anzeigen möchten. Klicken **Sie auf den Pfeil** rechts neben `Allen antworten`{.action} und dann `auf Details der Nachricht anzeigen`{.action}. Es öffnet sich ein neues Fenster mit dem vollständigen Header der E-Mail, um diese herunterzuladen.
+Wählen Sie die E-Mail aus, deren Header Sie anzeigen möchten. Klicken Sie auf den **Pfeil** rechts neben `Allen antworten`{.action} und dann auf `Nachrichtendetails anzeigen`{.action}. Es öffnet sich ein neues Fenster, in dem der vollständige Header der E-Mail abgerufen werden kann.
 
 ![E-Mails](images/owa01.png){.thumbnail}
 
 ##### **.eml Datei speichern**
 
-Um die Datei `.eml` herunterzuladen klicken Sie auf `(+) Neu`{.action}, um eine neue E-Mail zu erstellen. 
+Um die `.eml` Datei herunterzuladen klicken Sie auf `(+) Neu`{.action}, um eine neue E-Mail zu erstellen. 
 
-Wählen Sie die E-Mail aus, die Sie extrahieren möchten, und fügen Sie sie in den Inhalt der neuen Nachricht ein. 
+Wählen Sie die E-Mail aus, die Sie extrahieren möchten, und ziehen Sie sie in den Inhalt der neuen Nachricht. 
 
-Klicken Sie auf den Pfeil, der neben dem Anhang, den Sie gerade erstellt haben, nach unten zeigt, und klicken Sie dann auf `Download`{.action}, um die Datei auf Ihrer Maschine zu speichern.
+Klicken Sie auf den Pfeil der im gerade erstellten Anhang angezeigt wird, und klicken Sie dann auf `Download`{.action}, um die Datei auf Ihrem Gerät zu speichern.
 
 ![E-Mails](images/owa02.gif){.thumbnail}
 
@@ -195,7 +195,7 @@ Um den Header abzurufen, wählen Sie die betreffende E-Mail aus und klicken Sie 
 
 #### Outlook.com
 
-Um den Header im Webmail-Interface <Outlook.com> anzuzeigen, verwenden Sie den Abschnitt [Outlook Web Application](#owa) dieser Anleitung.
+Um den Header im Webmail-Interface von <Outlook.com> anzuzeigen, folgen Sie dem Abschnitt [Outlook Web Application](#owa) dieser Anleitung.
 
 ## Weiterführende Informationen
 
