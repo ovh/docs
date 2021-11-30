@@ -1,6 +1,8 @@
 ---
-title: Setting up DHCP on an NSX Edge Services appliance
+title: Configurar o DHCP num Edge NSX (EN)
 slug: setup-dhcp-nsx-edge
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/setup-dhcp-nsx-edge/'
 excerpt: Assign IPs to your VMs through DHCP
 section: NSX
 order: 03
@@ -16,9 +18,9 @@ DHCP allows automatic assignment of private IPs to VMs behind your NSX Edge Serv
 
 ## Requirements
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) to receive login credentials
-- a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
-- a deployed [NSX Edge Services Gateway](https://docs.ovh.com/us/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
+- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
+- a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
+- a deployed [NSX Edge Services Gateway](https://docs.ovh.com/pt/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
 
 ## Instructions
 

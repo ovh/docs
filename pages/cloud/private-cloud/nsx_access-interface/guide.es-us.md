@@ -1,6 +1,6 @@
 ---
-title: Auf das NSX Verwaltungsinterface zugreifen (EN)
-slug: zugriff-auf-verwaltungsinterface-nsx
+title: Acceder a la interfaz de gestión NSX (EN)
+slug: acceder-a-la-interfaz-de-gestion-nsx
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/accessing-NSX-interface/'
 excerpt: Find out how to use the NSX interface
@@ -18,8 +18,8 @@ NSX is a Software Defined Network (SDN) solution developed by VMware that is act
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) to receive login credentials.
-- Having a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- Having a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws))
 
 ## Instructions
 
@@ -51,4 +51,3 @@ You will now be able to access the NSX dashboard and all the related menus.
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
-
