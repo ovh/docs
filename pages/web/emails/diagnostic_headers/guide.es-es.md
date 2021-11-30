@@ -2,7 +2,7 @@
 title: Obtener la cabecera de un email
 slug: obtener-los-cabeceras-emails
 legacy_guide_number: 1365
-excerpt: 'Cómo recuperar una cabecera de correo electrónico en su cliente de correo'
+excerpt: Cómo recuperar una cabecera de correo electrónico en su cliente de correo
 section: Diagnóstico
 order: 03
 ---
@@ -30,7 +30,7 @@ order: 03
 </style>
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 **Última actualización: 19/11/2021**
@@ -38,12 +38,12 @@ order: 03
 ## Objetivo
 
 Una cabecera de correo permite trazar la ruta de dicho mensaje en la red desde el remitente al destinatario.<br>
-que permite, entre otras cosas, identificar un correo electrónico malicioso o detectar una lentitud de la recepción.
+Que permite, entre otras cosas, identificar un correo electrónico malicioso o detectar una lentitud de la recepción.
 
 Cada mensaje de correo electrónico recibido tiene una cabecera (*cabecera*) que no aparece de forma predeterminada al consultar el mensaje de correo. No obstante, puede cargarlo en su cliente de correo o en su webmail.
 
 También puede descargar el mensaje completo como archivo `.eml`. Es posible que se le pida que analice un mensaje de correo electrónico malicioso que haya recibido.<br>
-Para obtener un archivo `.eml`, consulte nuestra sección [Webmail](#webmail)
+Para obtener un archivo `.eml`, consulte nuestra sección [Webmail](#webmail).
 
 **Esta guía explica cómo cargar una cabecera de correo en un cliente de correo.**
 
@@ -69,7 +69,7 @@ Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 
   *Aquí el mensaje de correo electrónico se transmitió desde el servidor mxplan7.mail.ovh.net al servidor mo3005.mail-out.ovh.net el 30 de junio de 2021 a las 13:12:40 (zona horaria UTC)*
 
-- El campo `Return-Path` corresponde a la dirección de retorno cuando el mensaje no ha podido enviarse. la dirección de vuelta es generalmente la que ha realizado el envío. 
+- El campo `Return-Path` corresponde a la dirección de retorno cuando el mensaje no ha podido enviarse. La dirección de vuelta es generalmente la que ha realizado el envío. 
 
 <pre class="console"><code>
 Return-Path: &ltjohn@mydomain.ovh&gt

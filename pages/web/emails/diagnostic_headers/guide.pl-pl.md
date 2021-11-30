@@ -1,8 +1,8 @@
 ---
-title: "Pobierz nagłówek wiadomości e-mail"
+title: Pobierz nagłówek wiadomości e-mail
 slug: pobieranie-wiadomosci-e-mail
 legacy_guide_number: 1365
-excerpt: 'Dowiedz się, jak pobrać nagłówek e-mail do klienta poczty elektronicznej'
+excerpt: Dowiedz się, jak pobrać nagłówek e-mail do klienta poczty elektronicznej
 section: Diagnostyka
 order: 03
 ---
@@ -44,7 +44,7 @@ Umożliwia zwłaszcza identyfikację złośliwego e-maila lub wykrycie powolnego
 Każdy otrzymany e-mail ma nagłówek (*nagłówek*), który nie pojawia się domyślnie podczas wyświetlania wiadomości. Możesz pobrać plik z poziomu programu pocztowego lub poczty webmail.
 
 Możesz również wyodrębnić e-mail w całości w formie pliku `.eml`. Możesz zostać poproszony o przeanalizowanie otrzymanego złośliwego maila.<br>
-Aby pobrać plik `.eml`, sprawdź sekcję [Webmail](#webmail)
+Aby pobrać plik `.eml`, sprawdź sekcję [Webmail](#webmail).
 
 **Dowiedz się, jak pobrać nagłówek e-mail do klienta poczty elektronicznej.**
 
@@ -202,4 +202,4 @@ Aby wyświetlić nagłówek w interfejsie webmail <Outlook.com>, zapoznaj się z
 
 [FAQ E-mail](https://docs.ovh.com/pl/emails/faq-konta-email/)
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

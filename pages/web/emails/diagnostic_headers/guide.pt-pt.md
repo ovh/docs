@@ -43,7 +43,7 @@ Permite, nomeadamente, identificar um e-mail malicioso ou detetar um atraso na r
 Cada e-mail recebido tem um cabeçalho (*header*) que não aparece de forma padrão quando consulta o seu e-mail. No entanto, pode recuperá-lo no seu cliente de e-mail ou webmail.
 
 Também pode extrair o e-mail na sua totalidade sob a forma de ficheiro `.eml`. Este ficheiro pode ser-lhe pedido para analisar um e-mail malicioso que recebeu.<br>
-Para recuperar um ficheiro `.eml`, consulte a secção [Webmail](#webmail)
+Para recuperar um ficheiro `.eml`, consulte a secção [Webmail](#webmail).
 
 **Saiba como obter um cabeçalho de e-mail no seu cliente de e-mail.**
 

@@ -1,6 +1,6 @@
 ---
-title: 'Servizio Email: come recuperare gli header di un’email'
-excerpt: In questa guida ti mostriamo come recuperare gli header di un'email
+title: "Servizio Email: come recuperare gli header di un’email"
+excerpt: "In questa guida ti mostriamo come recuperare gli header di un'email"
 slug: servizio_email_come_recuperare_gli_header_di_unemail
 legacy_guide_number: g1365
 section: Diagnostica
@@ -40,10 +40,10 @@ order: 03
 Un intestazione email ha il compito di tracciare il percorso seguito da questa email sulla rete, dal mittente al destinatario.<br>
 che permette di identificare un'email malevola o rilevare rallentamenti nella ricezione.
 
-Ogni email ricevuta dispone di un header (*header*) che non compare di default quando consulti la tua email. ma è possibile recuperarlo dal client di posta o dalla Webmail.
+Ogni email ricevuta dispone di un header (*header*) che non compare di default quando consulti la tua email. Ma è possibile recuperarlo dal client di posta o dalla Webmail.
 
-L'email può anche essere estrapolata nella sua integralità come file `.eml`. Questo file può esserti richiesto per analizzare un'email malevola ricevuta.<br>
-Per recuperare un file.`eml`, consulta la sezione [Webmail](#webmail)
+El e-mail può anche essere estrapolata nella sua integralità come file `.eml`. Questo file può esserti richiesto per analizzare un'email malevola ricevuta.<br>
+Per recuperare un file `.eml`, consulta la sezione [Webmail](#webmail).
 
 **Questa guida ti mostra come recuperare un intestazione email dal tuo client di posta.**
 
