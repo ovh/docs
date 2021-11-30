@@ -1,9 +1,9 @@
 ---
-title: Set up DHCP on an NSX Edge Services appliance
-slug: setup-dhcp-nsx-edge
-excerpt: Assign IPs to your VMs through DHCP
+title: NSX Edge Gateway VPN Configuration 
+slug: nsx-edge-gateway-vpn-configuration
+excerpt: Use the NSX Edge VPN service to connect to remote sites
 section: NSX
-order: 03
+order: 07
 ---
 
 **Last Updated on 11/30/2021**
