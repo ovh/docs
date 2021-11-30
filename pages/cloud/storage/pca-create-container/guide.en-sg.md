@@ -3,6 +3,7 @@ title: Creating a Public Cloud Archive container
 slug: pca/create-container
 excerpt: Find out how to create your Public Cloud Archive containers in the OVHcloud Control Panel
 section: Public Cloud Archive
+order: 20
 ---
 
 **Last updated 27th October 2021**

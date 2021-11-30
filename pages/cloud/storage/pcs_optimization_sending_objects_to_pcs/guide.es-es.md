@@ -3,6 +3,7 @@ title: Optimizar los envíos hacia el Object Storage
 slug: optimizar_los_envios_hacia_el_object_storage
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1951
+order: 130
 ---
 
 **Última actualización: 27/10/2021**

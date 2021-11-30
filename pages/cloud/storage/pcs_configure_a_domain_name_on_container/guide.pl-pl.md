@@ -4,6 +4,7 @@ excerpt: Umieszczenie kontenera Object Storage za domeną
 slug: umieszczenie_kontenera_object_storage_za_domena
 section: Object Storage Standard (Swift)
 legacy_guide_number: g2006
+order: 120
 ---
 
 

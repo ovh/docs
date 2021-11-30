@@ -4,6 +4,7 @@ excerpt: Konfiguracja automatycznego usuwania obiektów
 slug: konfiguracja_automatycznego_usuwania_obiektow
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1950
+order: 70
 ---
 
 **Ostatnia aktualizacja z dnia 27/10/2021**

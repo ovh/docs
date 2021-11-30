@@ -3,6 +3,7 @@ title: FAQ - czesto zadawane pytania
 slug: pca/faq
 excerpt: FAQ
 section: Public Cloud Archive
+order: 130
 ---
 
 

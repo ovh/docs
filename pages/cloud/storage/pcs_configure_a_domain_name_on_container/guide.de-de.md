@@ -4,6 +4,7 @@ excerpt: Einem Object Storage Container eine spezifische Domain zuweisen
 section: Object Storage Standard (Swift)
 slug: einem_object_storage_container_eine_spezifische_domain_zuweisen
 legacy_guide_number: g2006
+order: 120
 ---
 
 

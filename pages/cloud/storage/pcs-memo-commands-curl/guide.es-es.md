@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/pcs/curl-commands-memo/'
 excerpt: Find here the main curl commands to manage your object containers
 section: Object Storage Standard (Swift)
+order: 90
 ---
 
 **Last updated 27th October 2021**

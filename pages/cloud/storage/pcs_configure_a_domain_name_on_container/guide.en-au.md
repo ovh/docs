@@ -3,6 +3,7 @@ title: Configure a domain name on your Object Storage container
 slug: pcs/link-domain
 excerpt: Find here how to configure a domain name on your Object Storage container
 section: Object Storage Standard (Swift)
+order: 120
 ---
 
 

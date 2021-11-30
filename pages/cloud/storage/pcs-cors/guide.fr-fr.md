@@ -3,6 +3,7 @@ title: Mettre en place CORS sur Object Storage
 slug: pcs/cors
 excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre CORS.
 section: Object Storage Standard (Swift)
+order: 50
 ---
 
 **Dernière mise à jour le 23/09/2021**

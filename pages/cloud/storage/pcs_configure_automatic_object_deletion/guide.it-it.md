@@ -4,6 +4,7 @@ excerpt: Configura la cancellazione automatica dei tuoi oggetti
 slug: configura_la_cancellazione_automatica_dei_tuoi_oggetti
 legacy_guide_number: g1950
 section: Object Storage Standard (Swift)
+order: 70
 ---
 
 **Ultimo aggiornamento: 27/10/2021**

@@ -3,6 +3,7 @@ title: Swift commands Memo
 slug: pcs/swift-commands-memo
 excerpt: Find here the main swift commands to manage your object containers
 section: Object Storage Standard (Swift)
+order: 100
 ---
 
 **Last updated 21st September 2021**

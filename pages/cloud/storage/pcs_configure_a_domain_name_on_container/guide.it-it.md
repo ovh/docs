@@ -4,6 +4,7 @@ excerpt: Configura un dominio su un container del tuo Object Storage
 slug: configura_un_dominio_su_un_container_del_tuo_object_storage
 legacy_guide_number: g2006
 section: Object Storage Standard (Swift)
+order: 120
 ---
 
 ## Obiettivo

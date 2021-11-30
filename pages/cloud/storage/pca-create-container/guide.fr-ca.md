@@ -3,6 +3,7 @@ title: Création de conteneur Public Cloud Archive
 slug: pca/creation-de-conteneur
 excerpt: Découvrez comment créer vos conteneurs Public Cloud Archive depuis votre espace client OVHcloud
 section: Public Cloud Archive
+order: 20
 ---
 
 **Dernière mise à jour le 27/10/2021**

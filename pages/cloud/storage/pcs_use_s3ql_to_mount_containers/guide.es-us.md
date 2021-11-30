@@ -3,6 +3,7 @@ title: Montar un contenedor de objetos con S3QL
 slug: montar_un_contenedor_de_objetos_con_s3ql
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1908
+order: 160
 ---
 
 **Última actualización: 27/10/2021**

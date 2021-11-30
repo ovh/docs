@@ -3,6 +3,7 @@ title: Odblokuj dane w PCA
 slug: pca/unlock
 excerpt: Przewodnik ten wyjasnia, jak zarzadzac usuga Public Cloud Archive.
 section: Public Cloud Archive
+order: 30
 ---
 
 

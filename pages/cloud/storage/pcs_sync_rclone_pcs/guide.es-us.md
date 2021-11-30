@@ -3,6 +3,7 @@ title: Utilizar el Object Storage con Rclone
 slug: sync-rclone-object-storage
 excerpt: Cómo sincronizar el Object Storage de OVH con Rclone
 section: Object Storage Standard (Swift)
+order: 140
 ---
 
 **Última actualización: 22/02/2018**

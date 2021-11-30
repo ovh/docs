@@ -4,6 +4,7 @@ excerpt: Configure a domain name on your Object Storage container
 slug: configure_a_domain_name_on_your_object_storage_container
 section: Object Storage Standard (Swift)
 legacy_guide_number: g2006
+order: 120
 ---
 
 
