@@ -1,6 +1,6 @@
 ---
-title: 'Webhosting E-Mail Anleitung zum Abruf der E-Mail-Header'
-excerpt: 'In dieser Hilfe wird beschrieben, wie Sie den Header einer E-Mail abrufen können'
+title: 'E-Mail-Header extrahieren'
+excerpt: 'Erfahren Sie hier, wie Sie die Header von E-Mails einsehen können'
 slug: webhosting_e-mail_anleitung_zum_abruf_der_e-mail-header
 section: Diagnose
 order: 03
@@ -38,13 +38,13 @@ legacy_guide_number: g1365
 
 ## Ziel
 
-Eine E-Mail-Header dient dazu, den Weg, den die E-Mail vom Absender bis zum Empfänger im Netzwerk genommen hat, nachzuverfolgen.<br>
-Es ermöglicht unter anderem die Identifizierung einer böswilligen E-Mail oder die Erkennung einer Empfangsverzögerung.
+Ein E-Mail-Header dient dazu, den Weg, den die E-Mail vom Absender bis zum Empfänger im Netzwerk genommen hat, nachzuverfolgen.<br>
+Er ermöglicht unter anderem die Identifizierung einer schädlichen E-Mail oder die Erkennung einer Empfangsverzögerung.
 
-Jede empfangene E-Mail verfügt über einen *Header*, der standardmäßig nicht angezeigt wird, wenn Sie Ihre E-Mail einsehen. Sie können es jedoch auf Ihrem E-Mail-Client oder Ihrem Webmail-Interface abrufen.
+Jede empfangene E-Mail verfügt über einen Header, der aber nicht angezeigt wird, wenn Sie Ihre E-Mail einsehen. Sie können ihn jedoch mit Ihrem E-Mail-Client oder in Ihrem Webmail-Interface abrufen.
 
-Sie können die gesamte E-Mail auch als `.eml` Datei abrufen. Diese Datei kann von Ihnen angefordert werden, um eine böswillige E-Mail zu analysieren, die Sie erhalten haben.<br>
-Um eine `.eml` Datei abzurufen, gehen Sie in den Bereich [Webmail](#webmail)
+Sie können die gesamte E-Mail auch als `.eml` Datei exportieren. Diese Datei kann beispielweise angefordert werden, um eine unerwünschte E-Mail zu analysieren, die Sie erhalten haben.<br>
+Um eine `.eml` Datei abzurufen, gehen Sie direkt zum Abschnitt [Webmail](#webmail).
 
 **Hier erfahren Sie, wie Sie einen E-Mail-Header auf Ihrem E-Mail-Client abrufen.**
 
@@ -55,7 +55,7 @@ Um eine `.eml` Datei abzurufen, gehen Sie in den Bereich [Webmail](#webmail)
 
 ## In der praktischen Anwendung
 
-### Inhalt eines Header verstehen
+### Inhalt eines Headers verstehen
 
 Der Header besteht aus mehreren Elementen, die den Verlauf der E-Mail anzeigen. Es besteht aus Hierarchieelementen, die antichronitisch sind, von den neuesten bis zu den ältesten, sowie aus zusätzlichen Informationen.<br>
 Im Folgenden finden Sie eine nicht erschöpfende Liste der Elemente, aus denen ein Header bestehen kann, sowie deren Bedeutung. 
@@ -119,7 +119,7 @@ X-VR-SPAMCAUSE:
 
 #### Microsoft Outlook 
 
-Um den Header zu lesen, öffnen Sie die E-Mail Ihrer Wahl in einem separaten Fenster mit einem Doppelklick auf dieses in der Liste.
+Um den Header anzuzeigen, öffnen Sie die E-Mail Ihrer Wahl mit einem Doppelklick.
 
 Klicken Sie im neuen Fenster oben rechts auf `Datei`{.action}.
 
@@ -135,7 +135,7 @@ Der vollständige Header der E-Mail wird unten angezeigt. Sie können den gesamt
 
 #### Mozilla Thunderbird
 
-Um den Header anzuzeigen, wählen Sie die E-Mail Ihrer Wahl aus und drücken Sie dann gleichzeitig auf die `Ctrl` \+ `U` Tasten.
+Um den Header anzuzeigen, öffnen Sie die E-Mail Ihrer Wahl und drücken Sie dann gleichzeitig auf die Tasten `Ctrl` und `U`.
 
 ![E-Mails](images/thunderbird01.png){.thumbnail}
 
@@ -143,39 +143,39 @@ Der vollständige Header der E-Mail wird in einem separaten Fenster angezeigt. S
 
 #### macOS Mail
 
-Um den Header anzuzeigen, wählen Sie die E-Mail Ihrer Wahl aus, gehen Sie dann in `Vorschau`{.action}, dann in `Message`{.action} und klicken Sie auf `Alle Header`.
+Um den Header anzuzeigen, öffnen Sie die E-Mail Ihrer Wahl. Öffnen Sie `Ansicht`{.action} und dann `Nachricht`{.action} und klicken Sie auf `Alle Header`{.action}.
 
 ![E-Mails](images/mailmac01.png){.thumbnail}
 
 Der vollständige Header der E-Mail wird in einem separaten Fenster angezeigt. Sie können den gesamten Text auswählen und in eine Datei kopieren.
 
-### Header auf einem Webmail abrufen <a name="webmail"></a>
+### Header von Webmail aus abrufen <a name="webmail"></a>
 
 #### Roundcube
 
-##### **Header abrufen**
+##### **Header anzeigen**
 
-Um den Header anzuzeigen, wählen Sie die E-Mail Ihrer Wahl aus. Klicken Sie auf den `... Mehr`{.action} auf `< > Zur Quelle`{.action}.
+Um den Header anzuzeigen, öffnen Sie die E-Mail Ihrer Wahl. Klicken Sie auf den Button `... Mehr`{.action} und auf `< > Quelle anzeigen`{.action}.
 
 ![E-Mails](images/roundcube01.png){.thumbnail}
 
 Es öffnet sich ein neues Fenster mit dem vollständigen Header der E-Mail. Sie können den gesamten Text auswählen und in eine Datei kopieren.
 
-##### **.eml Datei abrufen**
+##### **.eml Datei speichern**
 
-Um die Datei `.eml` herunterzuladen wählen Sie die E-Mail Ihrer Wahl aus. Klicken Sie auf den `... Mehr`{.action} Danach auf `Download (.eml)`{.action}.
+Um die Datei `.eml` herunterzuladen wählen Sie eine E-Mail aus. Klicken Sie auf den `... Mehr`{.action} Danach auf `Download (.eml)`{.action}.
 
 ![E-Mails](images/roundcube02.png){.thumbnail}
 
 #### Outlook Web Application (OWA) <a name="owa"></a>
 
-##### **Header abrufen**
+##### **Header anzeigen**
 
 Wählen Sie die E-Mail aus, deren Header Sie anzeigen möchten. Klicken **Sie auf den Pfeil** rechts neben `Allen antworten`{.action} und dann `auf Details der Nachricht anzeigen`{.action}. Es öffnet sich ein neues Fenster mit dem vollständigen Header der E-Mail, um diese herunterzuladen.
 
 ![E-Mails](images/owa01.png){.thumbnail}
 
-##### **.eml Datei abrufen**
+##### **.eml Datei speichern**
 
 Um die Datei `.eml` herunterzuladen klicken Sie auf `(+) Neu`{.action}, um eine neue E-Mail zu erstellen. 
 
@@ -189,13 +189,13 @@ Klicken Sie auf den Pfeil, der neben dem Anhang, den Sie gerade erstellt haben, 
 
 #### Gmail
 
-Um den Header abzurufen, wählen Sie die betreffende E-Mail aus und klicken Sie auf die 3 vertikalen Punkte rechts und dann auf `Quelle der Nachricht anzeigen`{.action}. Es öffnet sich ein neues Fenster mit dem vollständigen Header der E-Mail, damit Sie diese auch im Format `.eml` herunterladen können.
+Um den Header abzurufen, wählen Sie die betreffende E-Mail aus und klicken Sie auf die 3 vertikalen Punkte rechts. Klicken Sie dann auf `Quelle anzeigen`{.action} um ein neues Fenster mit dem vollständigen Header der E-Mail zu öffnen, den Sie auch im Format `.eml` herunterladen können.
 
 ![E-Mails](images/gmail01.png){.thumbnail}
 
 #### Outlook.com
 
-Um den Header im Webmail-Interface <Outlook.com> anzuzeigen, gehen Sie in diesem Handbuch auf den Bereich [Outlook Web Application](#owa) .
+Um den Header im Webmail-Interface <Outlook.com> anzuzeigen, verwenden Sie den Abschnitt [Outlook Web Application](#owa) dieser Anleitung.
 
 ## Weiterführende Informationen
 
