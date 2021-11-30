@@ -34,14 +34,33 @@ On the left side, navigate to the `NSX Edges`{.action} section then click on the
 ![NSX](images/en02nsx.png){.thumbnail}
 
 
-In the VPN tab, you'll notice two types of VPN
+In the `VPN`{.action} tab, you'll notice two types of VPN
 - IPsec VPN : Internet Protocol Security VPN secures traffic between two networks connected over a public network through IPSec gateways called endpoints. It is hardware agnostic.
 - L2 VPN : In the case of NSX Edge Gateway, Layer 2 VPN connects NSX appliances across multiple sites and secures the connection through IPsec. 
 
-![VPN](images/en03vpn.png){.thumbnail}
-
 
 ### IPsec VPN
+
+In the `IPsec VPN`{.action} section, click on the `Edit`{.action} button next to Global Configuration
+
+![IPSEC](images/en03vpn.png){.thumbnail}
+
+
+Set a Pre-Shared Key to be used by all connecting endpoints as needed.     
+You can add certificates if you have created any for VPN purposes in that window.   
+Click `Save`{.action} when done.
+
+![IPSEC](images/en04global.png){.thumbnail}
+
+
+In the IPsec VPN Sites, click `+ Add`{.action} section
+
+![IPSEC](images/en04bisadd.png){.thumbnail}
+
+
+
+
+
 
 ### L2 VPN
 
