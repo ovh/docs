@@ -103,10 +103,10 @@ endpoint = awscli_plugin_endpoint
 [profile default]
 region = <region>
 s3 =
-  endpoint_url = https://s3.<region>.perf.cloud.ovh.net
+  endpoint_url = https://s3.<region>.cloud.ovh.net
   signature_version = s3v4
 s3api =
-  endpoint_url = https://s3.<region>.perf.cloud.ovh.net
+  endpoint_url = https://s3.<region>.cloud.ovh.net
 ```
 
 Virtual hosted-style and path-style access are supported in all regions, but we recommend to use virtual hosted-style since path-style access will be deprecated after September 30, 2020.
