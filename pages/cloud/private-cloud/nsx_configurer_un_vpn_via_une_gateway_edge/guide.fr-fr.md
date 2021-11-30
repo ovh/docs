@@ -148,7 +148,7 @@ Vous pouvez `Démarrer`{.action} le service VPN L2 et `Publier`{.action} vos cha
 ![L2](images/en14l2clientpub.png){.thumbnail}
 
 
-Le côté client et paramétrer et la communication inter-sites est fonctionnelle.
+Le côté client est paramétré et la communication inter-sites est fonctionnelle.
 
 
 Bravo et merci.
