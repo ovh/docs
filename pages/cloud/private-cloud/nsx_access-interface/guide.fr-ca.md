@@ -43,7 +43,7 @@ Vous avez alors accès au tableau de bord NSX avec tous les menus associés.
 > curl -u "admin:xxxx" -XGET "https://nsx.pcc-x-x-x-x.ovh.com/api/4.0/firewall/globalroot-0/defaultconfig"
 > ```
 >
-> Pour des raisons de sécurité /api/1.0/ ne sont pas prises en charge.
+> Pour des raisons de sécurité, /api/1.0/ n'est pas prise en charge.
 > 
 
 
