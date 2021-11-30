@@ -52,7 +52,7 @@ To retrieve a `.eml` file, go to the [Webmail](#webmail) section below.
 
 ### Understanding the content of a header
 
-The header consists of several elements indicating the path of the email. It consists of elements in reverse chronological order, from the latest to the oldest, and additional information.<br>
+The header is composed of several elements indicating the path of the email. These are arranged in reverse chronological order, from the newest to the oldest entry, followed by additional information.<br>
 Below is a non-exhaustive list of the elements that can make up a header, along with their meaning. 
 
 - The `Received` field is present in the header each time the email is sent to an outgoing server (SMTP). The host name of the server is usually found with its IP address and a timestamp. The `Received` fields are sorted from the most recent pass to the oldest pass on a server:
