@@ -10,9 +10,9 @@ order: 07
 
 ## Objective
 
-DHCP allows automatic assignment of private IPs to VMs behind your NSX Edge Services Gateway.
+VPN creates a secured tunnel accross public networks to connect remote clients or sites to your infrastructure.
 
-**This guide explains how to setup the DHCP service**
+**This guide explains the two ways to do it through the NSX Edge Gateway**
 
 ## Requirements
 
@@ -28,11 +28,22 @@ In the vSphere interface menu, go to the `Networking and Security`{.action} dash
 
 ![Menu](images/en01dash.png){.thumbnail}
 
+
 On the left side, navigate to the `NSX Edges`{.action} section then click on the appliance you're setting up.
 
 ![NSX](images/en02nsx.png){.thumbnail}
 
 
+In the VPN tab, you'll notice two types of VPN
+- IPsec VPN : Internet Protocol Security VPN secures traffic between two networks connected over a public network through IPSec gateways called endpoints. It is hardware agnostic.
+- L2 VPN : In the case of NSX Edge Gateway, Layer 2 VPN connects NSX appliances across multiple sites and secures the connection through IPsec. 
+
+![VPN](images/en03vpn.png){.thumbnail}
+
+
+### IPsec VPN
+
+### L2 VPN
 
 ## Go further
 
