@@ -17,9 +17,23 @@ Le VPN permet la mise en place d'un tunnel IPsec entre une source et une destina
 
 ## Prérequis
 
-- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir déployer une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
 
 ## En pratique
+
+### Accès à l'interface
+
+Dans l'interface vSphere, allez dans le Tableau de bord `Mise en réseau et sécurité`{.action}.
+
+![Menu](images/en01dash.png){.thumbnail}
+
+
+Sur la gauche de votre écran, naviguez vers `Dispositifs NSX Edge`{.action} puis cliquez sur le dispositif à paramétrer.
+
+![NSX](images/en02nsx.png){.thumbnail}
+
 
 Depuis le menu de la Edge, rendez-vous dans l'onglet "Manage" puis "VPN" pour accéder à la configuration du [VPN IPsec](#ConfigurerunVPNviauneGatewayEdge-IPsecVPN)ou [VPN L2](#ConfigurerunVPNviauneGatewayEdge-L2VPN).
 
