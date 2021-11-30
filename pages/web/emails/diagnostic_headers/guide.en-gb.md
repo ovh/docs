@@ -60,7 +60,8 @@ Below is a non-exhaustive list of the elements that can make up a header, along 
 <pre class="console"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
-	for &lt;john@mydomain.ovh>; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+	for <john@mydomain.ovh>; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+ 
 </code></pre>
 
   *Here the email was sent from server mxplan7.mail.ovh.net to server mo3005.mail-out.ovh.net on 30 June 2021 at 13:12:40 (time zone UTC)*
@@ -68,19 +69,19 @@ Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 - The `Return-Path` field corresponds to the return address when the message failed to be sent. the return address is usually the one that sent the shipment. 
 
 <pre class="console"><code>
-Return-Path: &amp;ltjohn@mydomain.ovh>
+Return-Path: &ltjohn@mydomain.ovh&gt
 </code></pre>
 
 - The `From` field indicates the email sender address and display name.
 
 <pre class="console"><code>
-From: John &amp;ltjohn@mydomain.ovh>
+From: John &ltjohn@mydomain.ovh&g
 </code></pre>
 
 - The `To` field indicates the email recipient address and display name.
 
 <pre class="console"><code>
-To: Robert &amp;ltrobert@hisdomain.ovh> 
+To: Robert &ltrobert@hisdomain.ovh&gt
 </code></pre>
 
 - The `Subject` field is the subject of the email.
@@ -92,13 +93,13 @@ Subject: Hello my friend
 - The `Message-ID` field designates the unique identifier of the email and ends with the name of the outgoing server (after the "@"). 
 
 <pre class="console"><code>
-Message-ID: &amp;ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh>
+Message-ID: &ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt
 </code></pre>
 
 - The `Received-SPF` field displays the result of the [SPF](https://docs.ovh.com/gb/en/domains/web_hosting_the_spf_record/) check performed on the sender's domain name. You can use the `client-ip` argument to find the IP address of the server that sent the email. 
 
 <pre class="console"><code>
-Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh receiver=robert@hisdomain.ovh 
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
 </code></pre>
 
 - The `X-` fields are custom fields. They serve as complements to the standard fields. They are implemented by the servers that the emails pass through.
