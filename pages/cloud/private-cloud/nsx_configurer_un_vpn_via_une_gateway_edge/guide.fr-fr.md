@@ -1,19 +1,19 @@
 ---
 title: Configurer un VPN via une Gateway Edge
 slug: configurer-un-vpn-via-une-gateway-edge
-excerpt: Décrouvrez les deux options VPN que propose NSX
+excerpt: Utiliser le service VPN de la NSX Edge Gateway pour interconnecter des sites distants
 legacy_guide_number: '7766647'
 section: NSX
 order: 07
 ---
 
-**Dernière mise à jour le 27/02/2019**
+**Dernière mise à jour le 30/11/2021**
 
 ## Objectif
 
-Le VPN permet la mise en place d'un tunnel IPsec entre une source et une destination distante.
+Le VPN crée un tunnel securisé pour connecter des clients ou sites distants au travers de réseaux publics.
 
-**Ce guide explique comment établir cette solution**
+**Ce guide explique les deux façons d'établir un VPN sur la NSX Edge Gateway**
 
 ## Prérequis
 
@@ -35,112 +35,124 @@ Sur la gauche de votre écran, naviguez vers `Dispositifs NSX Edge`{.action} pui
 ![NSX](images/en02nsx.png){.thumbnail}
 
 
-Depuis le menu de la Edge, rendez-vous dans l'onglet "Manage" puis "VPN" pour accéder à la configuration du [VPN IPsec](#ConfigurerunVPNviauneGatewayEdge-IPsecVPN)ou [VPN L2](#ConfigurerunVPNviauneGatewayEdge-L2VPN).
+Dans l'onglet `VPN`{.action}, vous voyez deux types de VPN     
+- VPN IPsec : le VPN Internet Protocol Security sécurise le trafic entre deux réseaux privés connectés à travers des réseaux publics par des passerelles IPsec appellées points de terminaisons. Tout matériel compatible peut être utilisé.
+- VPN L2 : Dans le cadre de la NSX Edge Gateway, le VPN Layer 2 connecte des appliances NSX sur de multiples sites et sécurise la connection avec IPsec. 
 
-### IPsec VPN
 
-Le VPN IPsec permet la mise en place d'un tunnel VPN entre un VPN client et un VPN serveur configurés sur des systèmes différents.
+### VPN IPsec
 
-Par défaut le VPN est désactivé sur la Edge, vous pouvez cliquer sur le bouton "Démarrer" pour l'activer. Si nécessaire, vous pouvez activer les logs via la case "Activer la journalisation" et définir le niveau de ces logs via le menu déroulant "Niveau de journal".
+Dans la section `VPN IPsec`{.action}, cliquez sur `Modifier`{.action} la Configuration globale
 
-Le "statut de la configuration global" doit être "Configuré"" pour l'utilisation de certificat d'authentification au VPN.
+![IPSEC](images/en03vpn.png){.thumbnail}
 
-Vous ne pourrez pas publier vos changements si vous n'avez pas au moins un site distant de configuré.
 
-![](images/IpsecHome.PNG){.thumbnail}
+Créez la Clé pré-partagée qui sera utilisée par les points de terminaison.     
+Si vous utilisez des certificats tiers, ils peuvent être ajoutés dans cette fenêtre.   
+Cliquez `Enregistrer`{.action}.
 
-Dans notre exemple, le VPN est géré côté client et serveur par une Edge NSX de la même infrastructure, d'où l'utilisation d'une plage IP similaire. Vous pouvez néanmoins utiliser un autre dispositif due NSX pour la gestion du VPN IPsec sur votre site distant.
+![IPSEC](images/en04global.png){.thumbnail}
 
-Pour ajouter un VPN IPsec, cliquez le le bouton `Add` (petit `+`{.action} vert). Vous pourrez alors configurer les champs suivants :
 
-- Enabled : Active le VPN pour ce lien si coché.
-- Enable perfect forward secrecy (PFS) : Active la confidentialité persistante si coché.
-- Name : Le nom du VPN.
-- Local Id : L'IP publique de la Edge locale utilisée pour le VPN.
-- Local Endpoint : Similaire au "Local Id".
-- Local Subnets : La plage d'IP privée des VMs qui utiliseront le VPN derrières la Edge locale. Plusieurs plages peuvent être ajoutées, séparées par des virgules.
-- Peer Id : L'IP publique distante du système hébergeant le VPN distant. dans notre exemple, nous renseignons l'IP publique d'une Edge différente sur la même infrastructure utilisant la même plage IP.
-- Peer Endpoint : Similaire au "Peer Id".
-- Peer Subnets : La plage d'IP privée des VMs qui utiliseront le VPN derrières le VPN distant. Plusieurs plages peuvent être ajoutées, séparées par des virgules.
+Cliquez pour `+ Ajouter`{.action} un Sites VPN IPsec
 
-Les champs suivant dépendent de la configuration du VPN distant souhaité. Les configurations de part et d'autre doivent être similaire à ce niveau.
+![IPSEC](images/en04bisadd.png){.thumbnail}
 
-![](images/AddIpsecVpn.png){.thumbnail}
 
-N'oubliez pas de publier pour appliquer votre ajout de VPN ou vos modifications.
+Nommez et activez le site.    
+Sur la page `Point de terminaison`{.action}:
+- ID local est l'IP publique ou le FQDN du VPN
+- Point de terminaison local est l'adresse IP ou FQDN de la NSX Edge Gateway (généralement identique à l'ID local) 
+- Sous-réseaux locaux sont les sous-réseaux partagés par le VPN
+- ID homologue est l'IP publique ou FQDN du site distant
+- Point de terminaison homologue à pour valeur par défaut "any" mais peut être changée pour une IP ou un FQDN. *Si vous conservez "any", assurez-vous que la clé pré-partagée globale est bien renseignée.*
+- Sous-réseaux homologues sont les sous-réseaux utilisés sur le site distant
 
-![](images/Publish.PNG){.thumbnail}
+![IPSEC](images/en05newipsec.png){.thumbnail}
 
-Dans notre exemple, le site distant est configuré de manière similaire sur une autre Edge NSX, en inversant les informations "Peer" et "Local".
 
-![](images/EditIpsecVpnPeer.png){.thumbnail}
+Sur la page `Configuration de tunnel`{.action}, entrez vos paramètres de chiffrement (y compris vos certificats) puis cliquez `Ajouter`{.action}
 
-Vous pouvez vérifier l'état du tunnel via le bouton "Afficher les statistiques `IPSec`{.action}.
+![IPSEC](images/en06ipsectunnel.png){.thumbnail}
 
-![](images/TunnelVpnOk.png){.thumbnail}
 
-L'ajout d'un VPN IPsec sur une Edge NSX ajoute automatiquement une règle pour autoriser le trafic du VPN sur la Edge en question si vous avez autoriser la génération automatique de règle à la création de la Edge.
+Vous pouvez `Démarrer`{.action} le service VPN IPsec et `Publier`{.action} vos changements.
 
-![](images/IpsecRule.png){.thumbnail}
+![IPSEC](images/en07ipsecstart.png){.thumbnail}
 
-### L2 VPN
 
-Le L2 VPN vous permet de monter un tunnel VPN entre deux localisations, au même titre que le VPN IPsec, mais en se basant sur la couche 2 du modèle OSI ("Liaison de données" au lieu de la couche 3 "Réseau" via un tunnel VPN Ipsec).
+Le tunnel est fonctionnel et actif.
 
-Le L2 VPN NSX ne peut être utiliser qu'entre 2 Edges NSX, vous ne pouvez pas avoir un équipement autre pour monter le tunnel avec le L2 VPN NSX.
 
-Le L2 VPN est désactivé par défaut, vous pouvez l'activer via le bouton "Démarrer". 
+### VPN L2
 
-> [!primary]
->
-> L'activation ne pourra être publiée que si un tunnel VPN est déjà créé.
->
+Le VPN L2 utilise une architecture client-serveur.
 
-Le L2 VPN peut être configuré en mode *serveur* ou *client* en fonction de vos besoins.
 
-![](images/L2VpnHome.PNG){.thumbnail}
+#### Serveur
 
-#### L2 VPN Server
+Dans l'onglet `VPN L2`{.action}, selectionnez le mode Serveur puis `Modifier`{.action} les Détails de la configuration globale.
 
-Séléctionnez le mode **serveur** pour accèder à la configuration.
+![L2](images/en08l2.png){.thumbnail}
 
-Vous pouvez configurer le serveur de façon globale via le bouton `Modifier`{.action}. Vous pouvez configurer les paramètres suivantes :
 
-- Listener IP : L'IP publique de la Edge utilisée pour le montage du tunnel VPN.
-- Listener Port : Port d'écoute du tunnel VPN.
-- Encryption Algorithm : Algorithme similaire sur chaque Edge utilisé pour monter le tunnel VPN.
+Entrez les paramètres du serveur:
+- Adresse IP de l'écouteur est l'adresse IP publique de la NSX Edge Gateway
+- Port de l'écouteur est 443 part défaut (standard https) mais peut être changé
+- Choisissez l'Algorithme de chiffrement
+- Utiliser le certificat généré par le système ou sélectionnez un tiers si vous en avez ajouté un      
+Cliquez `OK`{.action} puis `Enregister`{.action}.
 
-Vous pouvez décocher la case "Use System Generated Certificate" pour utilisé un certificat ajouté précédemment sur la Edge (partie "Settings" puis "Certificates").
+![L2](images/en09l2global.png){.thumbnail}
 
-![](images/ServerSettings.PNG){.thumbnail}
 
-Vous pouvez ensuite cliquer sur `Add` (petit `+`{.action} vert) pour ajouter des sites distants qui pourront se connecter à votre serveur VPN. Il vous faut pour cela renseigner les champs suivants :
+De retour dans l'onglet VPN L2 , cliquez `+ Ajouter`{.action} dans Détails de la configuration du site.      
+Paramétrez le site homologue:
+- Activez le site
+- Nommez le
+- Définnissez un  ID d'utilisateur et mot de passe qui serviront à l'authentification du tunnel VPN
+- Interfaces étirées sont les interfaces internes qui communiquerons avec le site homologue. *ces interfaces doivent être en mode Trunk*      
+Cliquez sur `Ajouter`{.action}.
 
-- Enable Peer Site : Active l'autorisation de connexion pour le site distant si coché.
-- Name : Le nom donné au site distant.
-- User Id : Utilisateur utilisé pour initier le montage du tunnel VPN (doit être similaire côté serveur et client).
-- Password : Mot de passe utilisé pour initier le montage du tunnel VPN (doit être similaire côté serveur et client).
-- Stretched Intefaces : Utilisez le bouton "Select Sub Interfaces" pour sélectionner une interface de la Edge dans la liste proposée. Seules les interfaces en "Trunk" sont proposées.
+![L2](images/en10l2peer.png){.thumbnail}
 
-Si votre infrastructure n'a pas été créée initialement avec une gestion de vLANs par NSX, vous ne disposez pas de switch logique en "Trunk" et aurez une erreur pour sélectionner les "Stretched Interfaces". Dans ce cas cette fonctionnalité n'est pas utilisable.
 
-![](images/AddPeerSite.PNG){.thumbnail}
+Vous pouvez `Démarrer`{.action} le service VPN L2 et `Publier`{.action} vos changements.
 
-#### L2 VPN Client
+![L2](images/en11l2pub.png){.thumbnail}
 
-Séléctionnez le mode **client** pour accèder à la configuration.
 
-Vous pouvez configurer le client de façon globale via le bouton `Modifier`{.action}. Vous pouvez configurer les paramètres suivantes :
+Le serveur est fonctionnel et actif.
 
-- Server Address : 
-- Server Port : 
-- Encryption Algorithm : Algorithme similaire sur chaque Edge utilisé pour monter le tunnel VPN.
-- Stretched Intefaces : Utilisez le bouton "Select Sub Interfaces" pour sélectionner une interface de la Edge dans la liste proposée. Seules les interfaces en "Trunk" sont proposées.
-- Egress Optimization Gateway Address : Utilisez l'adresse IP de la passerelle des sous-interfaces ou les adresses IP vers lesquelles le trafic ne doit pas circuler dans le tunnel.
-- Unstretched Networks : Permet d'éviter l'utilisation de route statique
-- User Details : Renseignez les informations d'identification de l'utilisateur pour vous authentifier sur le serveur.
 
-![](images/AddPeerSite.PNG){.thumbnail}
+#### Client
+
+Sur le NSX coté client, dans l'onglet `VPN L2`{.action}, selectionnez le mode Client puis `Modifier`{.action} les Détails de la configuration globale
+
+![L2](images/en12l2client.png){.thumbnail}
+
+
+Les paramètres dépendent de ceux du serveur:
+- Adresse du serveur est l'IP publique du serveur
+- Port du serveur est celui défini (443 par défaut)
+- Algorithme de chiffrement doit être identique à celui du serveur
+- Cette fois, les Interfaces étirées sont celles du côté client
+- L'ID d'utilisateur et le mot de passe doivent aussi être identique à ceux du serveur   
+Cliquez `Enregistrer`{.action}.
+
+![L2](images/en13l2clientset.png){.thumbnail}
+
+
+Vous pouvez `Démarrer`{.action} le service VPN L2 et `Publier`{.action} vos changements.
+
+![L2](images/en14l2clientpub.png){.thumbnail}
+
+
+Le côté client et paramétrer et la communication inter-sites est fonctionnelle.
+
+
+Bravo et merci.
+
 
 ## Aller plus loin
 
