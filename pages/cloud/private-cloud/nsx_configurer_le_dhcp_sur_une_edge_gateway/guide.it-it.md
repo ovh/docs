@@ -18,7 +18,7 @@ DHCP allows automatic assignment of private IPs to VMs behind your NSX Edge Serv
 
 ## Requirements
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) to receive login credentials
+- being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) to receive login credentials
 - a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it))
 - a deployed [NSX Edge Services Gateway](https://docs.ovh.com/it/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
 
