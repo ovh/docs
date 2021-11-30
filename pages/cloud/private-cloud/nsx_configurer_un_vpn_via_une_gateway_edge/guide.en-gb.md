@@ -58,11 +58,100 @@ In the IPsec VPN Sites, click `+ Add`{.action} section
 ![IPSEC](images/en04bisadd.png){.thumbnail}
 
 
+Name the site and enable it.    
+On the `Endpoint`{.action} page:
+- Local Id is the public IP of the VPN or its FQDN
+- Local Endpoint is the IP address or FQDN of the NSX Edge Gateway (typically the same IP as Local ID) 
+- Local Subnets are the subnets used for the VPN
+- Peer Id is the public IP of the remote site or its FQDN
+- Peer Endpoint default value is "any" but can be changed to an IP or FQDN. *If you retain the default value, the Global PSK must be set.*
+- Peer Subnets are the internal subnets used on the peer site
+
+![IPSEC](images/en05newipsec.png){.thumbnail}
 
 
+In the `Tunnel Configuration`{.action} page, set your encryption parameters (including certificates if needed) then click `Add`{.action}
+
+![IPSEC](images/en06ipsectunnel.png){.thumbnail}
+
+
+You can now `Start`{.action} the IPsec VPN service and `Publish`{.action} all the changes made.
+
+![IPSEC](images/en07ipsecstart.png){.thumbnail}
+
+
+Your tunnel is up and active.
 
 
 ### L2 VPN
+
+L2 VPN is a Client-Server type of connection. We'll set up the Server first.
+
+
+#### Server Side
+
+In the `L2 VPN`{.action} section, select Server mode then click on the `Edit`{.action} button next to Global Configuration Details
+
+![L2](images/en08l2.png){.thumbnail}
+
+
+Set your Server Settings:
+- Listener IP is the Public IP of the NSX Edge Gateway you will use
+- Listener port is 443 by default (standard https) but can be changed
+- Choose your encryption type
+- Use system generated certificate or select an available third party one if you added one      
+Click `OK`{.action} then `Save`{.action}.
+
+![L2](images/en09l2global.png){.thumbnail}
+
+
+Back in the L2 VPN section, click `+ Add`{.action} in Site Configuration Details.      
+Set your Peer Site Settings:
+- Enable the site
+- Name it
+- Define a User Id and password that will be used to authenticate the tunnel connection
+- Stretched Interfaces are the internal interfaces that will communicate with the peer site. *those interfaces need to be trunk interfaces*      
+Click `Add`{.action}.
+
+![L2](images/en10l2peer.png){.thumbnail}
+
+
+You can now `Start`{.action} the L2 VPN service and `Publish`{.action} all the changes made.
+
+![L2](images/en11l2pub.png){.thumbnail}
+
+
+Your server is up and active.
+
+
+#### Client Side
+
+On the client NSX, in the `L2 VPN`{.action} section, select Client mode then click on the `Edit`{.action} button next to Global Configuration Details
+
+![L2](images/en12l2client.png){.thumbnail}
+
+
+The settings mirror those of the server:
+- Server Address is the public IP of the NSX server side
+- The Server Port is the one defined (443 by default but you may have changed it)
+- Use the same encryption type as the server
+- This time, the Stretched Interfaces will be the client internal ones that will be communicating with the server side
+- The User Id and password must be the same as defined on the server    
+Click `Save`{.action}.
+
+![L2](images/en13l2clientset.png){.thumbnail}
+
+
+You can now `Start`{.action} the L2 VPN service and `Publish`{.action} all the changes made.
+
+![L2](images/en14l2clientpub.png){.thumbnail}
+
+
+The client side is set and communications should flow.
+
+
+Congratulations and thank you.
+
 
 ## Go further
 
