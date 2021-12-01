@@ -33,24 +33,38 @@ Les modules en 1 clic permettent l’installation facile et rapide d’un logici
 
 Pour accéder à la partie publique de votre site suite à l'installation de votre module, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur `Modules en 1 clic`{.action}.
 
-Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant votre module puis sur Accéder au module.
+Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant votre module puis sur `Accéder au module`{.action}.
 
-primary
-
-Si votre site ne s'affiche pas correctement suite à cette manipulation, consultez nos guides de diagnostics : 
-
-- 
-
-(Liens vers la FAQ avec autres messages d'erreur (too many redirect, css cassé, blocage google, etc) à ajouter par la suite)
+> [!primary]
+>
+> Si votre site ne s'affiche pas correctement suite à cette manipulation, consultez nos guides de [Diagnostic](../) :
+>
+> - [Que faire si mon site est inaccessible ?](../erreur-serveur-inaccessible/)
+> - [Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](../erreurs-frequentes-modules-en-1-clic/)
+> - [Que faire en cas d’erreur « Votre connexion n’est pas privée » ?](../erreur-site-non-securise/)
+> - [Résoudre les erreurs les plus fréquentes liées aux bases de données](../erreurs-frequentes-bases-de-donnees/)
+> - [Résoudre l’erreur « Site non installé »](../erreur-site-non-installe/)
+> - [Que faire en cas d’erreur 500 Internal Server Error ?](../erreur-500-internal-server-error/)
+> - [Que faire en cas de page « Index of » ?](../diagnostic-index-of/)
+> - [Que faire en cas de page « 403 forbidden » ?](../diagnostic-403-forbidden/)
+>
 
 ### Accéder à l'interface administrateur de votre site
 
-(Chemin dans l'espace client)
+Pour accéder à la partie de votre site réservée aux administrateurs, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur `Modules en 1 clic`{.action}.
+
+Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant votre module puis sur `Accéder à l'interface d'administration du module`{.action}.
 
 ### Modifier le mot de passe de votre module 1 clic
 
-(Chemin dans l'espace client)
-(Chemin sur la page de connexion à l'admin cms)
+Pour modifier le mot de passe d'accès à l'interface d'administration de votre site, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur `Modules en 1 clic`{.action}.
+
+Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant votre module puis sur `Modifier le mot de passe`{.action}.
+
+Vous pouvez également modifier ce mot de passe en vous rendant directement sur la page de connexion à l'espace réservé aux administrateurs :
+
+
+
 (Que faire si vous ne recevez pas le message avec le nouveau mdp ? (à ajouter au guide module 1 clic ?))
 
 ### Supprimer votre module en 1 clic
