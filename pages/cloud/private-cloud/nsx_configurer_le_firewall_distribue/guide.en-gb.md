@@ -5,20 +5,20 @@ section: NSX
 order: 08
 ---
 
-**Last Updated on 12/01/2021**
+**Last updated on 1st December 2021**
 
 ## Objective
 
-As does the [NSX Edge Firewall](https://docs.ovh.com/gb/en/private-cloud/nsx-edge-firewall-configuration/), The distibuted firewall restricts or allows network traffic based on rules applied to network nodes or groups.       
+As does the [NSX Edge Firewall](https://docs.ovh.com/gb/en/private-cloud/nsx-edge-firewall-configuration/), the distibuted firewall restricts or allows network traffic based on rules applied to network nodes or groups.
+
 The distributed firewall optimizes traffic and bandwidth consumption by applying rules to packets before they are sent to the Edge firewall. 
 
-**This guide explains how to create rules**
+**This guide explains how to create rules.**
 
 ## Requirements
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-
+- being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 
@@ -28,24 +28,24 @@ In the vSphere interface menu, go to the `Networking and Security`{.action} dash
 
 ![Menu](images/en01dash.png){.thumbnail}
 
-
 On the left side, navigate to the `Firewall`{.action} section.
 
 ![FW](images/en02fw.png){.thumbnail}
 
 
-The distributed Firewall allows for
+The distributed Firewall allows for:
+
 - `General`{.action} rules (layer 3 and up)
 - `Ethernet`{.action} rules (layer 2)
 - `Partner Services`{.action} rules (requires integration of third party products)
 
 ![FW](images/en03layer.png){.thumbnail}
 
-
 ### Priorities
 
 Before creating rules, it is important to understand how and when they will be applied.<br>
 The Distributed Firewall has three layers ot priority:
+
 - Types
 - Sections
 - Rules
@@ -58,13 +58,13 @@ That means that Ethernet rules will have a higher priority than General ones.
 
 #### Sections
 
-Sections are rules folder that allow better segmentation and easier management.<br>
+Sections are rules folders that allow better segmentation and easier management.<br>
 Sections are applied from top to bottom.<br>
 That means that in the case of conflicting rules in different sections, the rule within the section with the highest priority will be applied.
 
 #### Rules
 
-Rule manage identified service(s) from specified source(s) to specified destination(s).<br>
+Rules manage identified service(s) from specified source(s) to specified destination(s).<br>
 Rules are applied from top to bottom.<br>
 The first rule that matches the traffic overrides all the other rules below.<br>
 That means that in the case of conflicting rules within a section, the rule with the highest priority (lowest number) will be applied.
@@ -75,7 +75,6 @@ You can add rules and sections in any tabs of the firewall.<br>
 You can modify the rule/section order by selecting a rule/section and using the up and down arrows. 
 
 ![Order](images/en04order.png){.thumbnail}
-
 
 ### Firewall Rules
 
@@ -100,7 +99,7 @@ The new rule shows with:
 
 > [!warning]
 >
-> By default, rules have *Any* as source and destination, meaning it encompasses all traffic. To avoid security issues, it is best practices to avoid broad targets.
+> By default, rules have `Any` as source and destination, meaning it encompasses all traffic. To avoid security issues, it is best practices to avoid broad targets.
 >
 
 #### Name
@@ -140,16 +139,15 @@ Click `Save`{.action} when ready.
 
 ![Destination](images/en09destip.png){.thumbnail}
 
-
 #### Service
 
 The service field defines the type of traffic aimed at.
 
-Hover over the field and click on the `pencil`{.action} icon. You have the choice between using existing services and groups or add raw ports/protocols.
+Hover over the field and click on the `pencil`{.action} icon. You have the choice between using existing services and groups or adding raw ports/protocols.
 
 > [!primary]
 >
-> Clicking on an existing service or group will show you a description with the ports and protocols involved.
+> Clicking on an existing service or group will show you a description of the ports and protocols involved.
 
 Click `Save`{.action} when ready.
 
@@ -171,7 +169,6 @@ You can add all Edge gateways or specific objects available in the list.
 Click `Save`{.action} when ready.
 
 ![Applied](images/en13appliedto.png){.thumbnail}
-
 
 #### Action
 
