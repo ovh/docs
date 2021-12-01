@@ -137,6 +137,11 @@ network:
             dhcp4: true
             match:
                 macaddress: fa:xx:xx:xx:xx:63
+            set-name: NETWORK_INTERFACE            
+        NETWORK_INTERFACE:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
             set-name: NETWORK_INTERFACE
             addresses:
             - IP_FAILOVER/32
