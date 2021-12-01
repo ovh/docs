@@ -105,7 +105,7 @@ The new rule shows with:
 
 #### Name
 
-Name the rule by clicking the `Name`{.action} field. ID and Type fields will be automatically populated.
+Name the rule by clicking the `Name`{.action} field. The ID field will be automatically populated.
 
 #### Source
 
