@@ -130,9 +130,17 @@ ip a
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Ändern Sie nicht die vorhandenen Zeilen in der Datei; fügen Sie Ihre Failover-IP wie folgt hinzu:
+Ändern Sie nicht die vorhandenen Zeilen in der Datei; fügen Sie Ihre Failover-IP in einem zweiten Block für das öffentliche Interface wie folgt hinzu:
 
 ```yaml
+network:
+    version: 2
+    ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
+            set-name: NETWORK_INTERFACE
 network:
     version: 2
     ethernets:
