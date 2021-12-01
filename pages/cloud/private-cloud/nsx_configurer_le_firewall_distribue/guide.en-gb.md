@@ -1,18 +1,17 @@
 ---
-title: Set up DHCP on an NSX Edge Services appliance
-slug: setup-dhcp-nsx-edge
-excerpt: Assign IPs to your VMs through DHCP
+title: NSX Distributed Firewall Configuration
+slug: nsx-distributed-firewall-configuration
 section: NSX
-order: 03
+order: 08
 ---
 
 **Last Updated on 12/01/2021**
 
 ## Objective
 
-DHCP allows automatic assignment of private IPs to VMs behind your NSX Edge Services Gateway.
+The distributed firewall optimizes traffic and bandwidth consumption by applying rules to packets before they are sent to the Edge firewall. 
 
-**This guide explains how to setup the DHCP service**
+**This guide explains how to create rules**
 
 ## Requirements
 
