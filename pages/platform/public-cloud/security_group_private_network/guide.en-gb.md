@@ -155,7 +155,7 @@ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_securi
 False
 ```
 
-#### Migration <a name="migration"></a>
+### Migration process <a name="migration"></a>
 
 The OpenStack regions where port security is disabled on private network ports will progressively move to a restrictive security configuration: `port_security_enabled = true`.
 
