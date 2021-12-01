@@ -50,7 +50,7 @@ Click `Save`{.action} when done.
 
 ![IPSEC](images/en04global.png){.thumbnail}
 
-In the IPsec VPN Sites, click `+ Add`{.action} section
+In the `IPsec VPN Sites` section, click `+ Add`{.action}.
 
 ![IPSEC](images/en04bisadd.png){.thumbnail}
 
