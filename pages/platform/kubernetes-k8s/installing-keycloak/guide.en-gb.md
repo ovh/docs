@@ -342,15 +342,35 @@ The first user connection required an initial password, so let's create it:
 Now you have a working keycloak, and created a User, you can go to the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb){.external}.
 Click on `Public Cloud' tab, and then in the sidebar, click on `Managed Kubernetes Service` link.
 
-Click in your your Kubernetes cluster you want to link to your OIDC provider.
-At the right, you can find the `Access and security` section.
-In this section, fill the `OIDC Provider` field
+![OVHcloud Kubernetes section](images/kube.png)
 
-...
+Click in your Kubernetes cluster you want to link to your OIDC provider.
+At the right, you can find the `Access and security` section:
 
-OIDC Provider field: xxx
+![Manager](images/manager.png)
 
-"Configurer un fournisseur OIDC"
+In this section, you can find the `OIDC provider`.
+For the moment, you should have the information message: "No OIDC provider configured".
+
+In order to add our OIDC provider, click on `...` button, and then in `Configure an OIDC provider`.
+
+![Configure an OIDC provider](images/configure-oidc-provider.png.png)
+
+You should have a new pop-up. Fill it with our Keycloak informations like this:
+
+![OIDC popup](images/popup.png)
+
+Explanation:
+
+- In `Provider URL` you should copy paste the URL to access to the previsouly defined realm: https://${your-configured-root-url}/auth/realms/${your-configured-realm-name}
+
+In my example I used the `ovh-lab-k8s-oidc-authentication` realm
+issuerUrl: https://keycloak.135.125.84.194.nip.io/auth/realms/ovh-lab-k8s-oidc-authentication
+
+- In `Client ID` you should copy paste the name of the Keycloak client previously defined.
+
+In my example I defined the client named: `k8s-oidc-auth`.
+
 
 
 TODO: xxxx
