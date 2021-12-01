@@ -190,9 +190,9 @@ Afin de pouvoir mener à bien cette manipulation, vous devez quoi qu'il arrive �
 
 ![clouddb](images/clouddb-login-information.png){.thumbnail}
 
-### Récupérer le logs de votre serveur CloudDB
+### Récupérer les logs de votre serveur CloudDB
 
-Pour vérifier les derniers logs de votre base de données, dirigez-vous vers l'onglet `Logs`{.action} de votre serveur CloudDB. Cette onglet affiche en temps réel,es alertes et les erreurs.
+Pour vérifier les derniers logs de votre base de données, dirigez-vous vers l'onglet `Logs`{.action} de votre serveur CloudDB. Cet onglet affiche en temps réel les alertes et les erreurs.
 
 ![clouddb](images/clouddb-log01.png){.thumbnail}
 
@@ -200,7 +200,7 @@ Pour récupérer l'ensemble des logs de votre serveur CloudDB, connectez-vous vi
 
 > [!warning]
 >
-> Avant de vous connecter, vérifiez que l'adresse IP du poste que vous utilisez soit bien autorisé sur votre serveur CloudDB, avec l'option `SFTP`coché. Aidez-vous de la rubrique [Autoriser la connexion à un hébergement web OVHcloud](#turstip) sur ce guide.
+> Avant de vous connecter, vérifiez que l'adresse IP du poste que vous utilisez soit bien autorisé sur votre serveur CloudDB, avec l'option `SFTP` coché. Aidez-vous de la rubrique [Autoriser la connexion à un hébergement web OVHcloud](#turstip) sur ce guide.
 
 Retrouvez les informations de connexion SFTP depuis l'onglet `Informations générales`{.action} de votre serveur CloudDB. Si vous ne connaissez pas le `Mot de passe du serveur`, cliquez sur le bouton `...`{.action} à droite pour le modifier.
 
@@ -208,7 +208,7 @@ Retrouvez les informations de connexion SFTP depuis l'onglet `Informations gén�
 
 Connectez-vous par l'intermédiaire d'un client FTP (FileZilla, Cyberduck, WinSCP, etc.).
 
-Pour FileZilla, Dans le menu `Fichier`{.action}, dirigez-vous dans le `Gestionnaire de sites`{.action}. cliquez sur `Nouveau site`{.action}, puis saisissez les paramètres relevés précédement.
+Pour FileZilla, Dans le menu `Fichier`{.action}, dirigez-vous dans le `Gestionnaire de sites`{.action}. cliquez sur `Nouveau site`{.action}, puis saisissez les paramètres relevés précédemment.
 
 ![clouddb](images/clouddb-log3.png){.thumbnail}
 
