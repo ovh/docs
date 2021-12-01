@@ -94,7 +94,7 @@ L'erreur  **429**  correspond à un nombre de requêtes trop important sur votre
 
 ![hosting](images/img_2158.jpg){.thumbnail}
 
-Un page blanche est actuellement visible sur le site.
+Une page blanche est actuellement visible sur le site.
 
 Après utilisation de FireBug sur cette page, on retrouve une erreur  **500** dans la partie réseau.
 
@@ -105,7 +105,7 @@ En l'état, il est impossible d'identifier d'où proviens le souci, vous devez d
 
 ![hosting](images/img_2161.jpg){.thumbnail}
 
-Un page blanche est actuellement visible sur le site.
+Une page blanche est actuellement visible sur le site.
 
 Après utilisation de FireBug sur cette page, on récupère comme retour  **"200 OK"**  dans la partie réseau.
 

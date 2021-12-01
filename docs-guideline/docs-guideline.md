@@ -176,6 +176,6 @@ ___
 
 ## Format
 
-All ressources are written in `markdown`. [See examples](http://commonmark.org/help/).
+All resources are written in `markdown`. [See examples](http://commonmark.org/help/).
 
 In order to write specific content, we extend the base syntax to fit our needs. [See examples](markdown-custom.md).
