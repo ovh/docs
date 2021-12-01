@@ -10,52 +10,51 @@ order: 08
 
 ## Objectif
 
-Comme le [pare-feu NSX Edge](https://docs.ovh.com/fr/private-cloud/configurer-le-nsx-edge-firewall/), Le pare-feu distribué  accepte ou refuse le trafic réseau en fonction de règles appliquées à des objets ou groupes d’objets.
+Comme le [pare-feu NSX Edge](https://docs.ovh.com/fr/private-cloud/configurer-le-nsx-edge-firewall/), le pare-feu distribué  accepte ou refuse le trafic réseau en fonction de règles appliquées à des objets ou groupes d’objets.
 Le pare-feu distribué optimise le trafic et la consommation de bande passante en appliquant des règles aux paquets avant qu'ils ne soient envoyés au pare-feu Edge.
 
 **Ce guide explique comment créer des règles.**
 
 ## Prérequis
 
-- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-
 
 ## En pratique
 
 ### Accès à l'interface
 
-Dans l'interface vSphere, allez dans le Tableau de bord `Mise en réseau et sécurité`{.action}.
+Dans l'interface vSphere, rendez-vous dans le tableau de bord `Mise en réseau et sécurité`{.action}.
 
 ![Menu](images/en01dash.png){.thumbnail}
-
 
 Sur la gauche de votre écran, naviguez vers `Pare-feu`{.action}.
 
 ![FW](images/en02fw.png){.thumbnail}
 
+Le pare-feu distribué permet trois types de paramètres :
 
-Le pare-feu distribué permet trois types de paramètres
-- `Général`{.action} pour des règles sur la couche 3 et supérieures
-- `Ethernet`{.action} pour des règles sur la couche 2
-- `Services de partenaires`{.action} pour des règles sur des services tiers (à intégrer au préalable)
+- `Général`{.action} pour des règles sur la couche 3 et supérieures.
+- `Ethernet`{.action} pour des règles sur la couche 2.
+- `Services de partenaires`{.action} pour des règles sur des services tiers (à intégrer au préalable).
 
 ![FW](images/en03layer.png){.thumbnail}
 
-
 ### Prioritié
 
-Avant de vréer de nouvelles règles, il est important de comprendre quand et comment elles seront appliquées.<br>
-Le pare-feu distribué a trois niveaux de priorisation:
+Avant de créer de nouvelles règles, il est important de comprendre quand et comment elles seront appliquées.<br>
+
+Le pare-feu distribué a trois niveaux de priorisation :
+
 - Types
 - Sections
 - Règles
 
 #### Types
 
-Le type de règle/section est définie par la couche OSI sur laquelle elle agit.<br>
+Le type de règle/section est défini par la couche OSI sur laquelle elle agit.<br>
 Les règles de couche 2 seront appliquées avant celles de couche 3 et supérieures.<br>
-Ce qui veut dires que les règles de l'onglet Ethernet seront prioritaires sur celles de l'onglet Général.
+Ce qui veut dire que les règles de l'onglet Ethernet seront prioritaires sur celles de l'onglet Général.
 
 #### Sections
 
@@ -68,7 +67,7 @@ Cela implique qu'en cas de conflit entre règles de différentes sections, c'est
 Les règles contrôlent des services identifiés, en provenance de sources spécifiques et en direction de destinations définies.<br>
 Les règles sont appliquées de haut en bas.<br>
 La première règle qui s'applique au trafic annule toutes les suivantes.<br>
-Cela implique qu'en cas de conflit entre deux règles d'une même section, c'est la règle avec le plus forte priorité (le plus petit nombre) qui sera appliquée.
+Cela implique qu'en cas de conflit entre deux règles d'une même section, c'est la règle avec la plus forte priorité (le plus petit nombre) qui sera appliquée.
 
 #### Ordre
 
@@ -76,7 +75,6 @@ Vous pouvez ajouter des règles et/ou sections dans tous les onglets du pare-feu
 Vous pouvez modifier l'ordre des règles et sections en les cochant puis en utilisant les flèches haut et bas. 
 
 ![Order](images/en04order.png){.thumbnail}
-
 
 ### Règles de pare-feu
 
@@ -98,7 +96,6 @@ La nouvelle règle apparaît avec les champs suivants :
 
 ![Rule](images/en05rule.png){.thumbnail}
 
-
 > [!warning]
 >
 > Par défaut, une règle a pour source et destination `Quelconque`, soit une sélection de tout le trafic. Pour des raisons de sécurité, il est recommandé d'éviter les règles globales.
@@ -106,7 +103,7 @@ La nouvelle règle apparaît avec les champs suivants :
 
 #### Nom
 
-Nommez la règle via un clic sur le nom. Le champs`ID` sera automatiquement complété.
+Nommez la règle via un clic sur le nom. Le champ `ID` sera automatiquement complété.
 
 #### Source
 
@@ -118,12 +115,11 @@ Survolez le champ et cliquez sur le symbole du `crayon`{.action}. Vous pouvez aj
 >
 > Si vous activez « Inverser la source », la règle s'appliquera à toutes les sources sauf celles sélectionnées.
 
-Cliquez sur `Enregister`{.action}.
+Cliquez sur `Enregistrer`{.action}.
 
 ![Source](images/en06sourceobject.png){.thumbnail}
 
 ![Source](images/en07sourceip.png){.thumbnail}
-
 
 #### Destination
 
@@ -135,12 +131,11 @@ Survolez le champ et cliquez sur le symbole du `crayon`{.action}. Les possibilit
 >
 > Si vous activez « Inverser la source », la règle s'appliquera à toutes les destinations sauf celles sélectionnées.
 
-Cliquez sur `Enregister`{.action}.
+Cliquez sur `Enregistrer`{.action}.
 
 ![Destination](images/en08destobject.png){.thumbnail}
 
 ![Destination](images/en09destip.png){.thumbnail}
-
 
 #### Service
 
@@ -152,7 +147,7 @@ Survolez le champ et cliquez sur le symbole du `crayon`{.action}. Vous pouvez ut
 >
 > Cliquer sur un service ou un groupe existant vous montrera une descripion des ports et protocoles utilisés.
 
-Cliquez sur `Enregister`{.action}.
+Cliquez sur `Enregistrer`{.action}.
 
 ![Service](images/en10serv.png){.thumbnail}
 
@@ -163,20 +158,19 @@ Cliquez sur `Enregister`{.action}.
 
 #### Appliqué à
 
-Le champ "Appliqué à" définit la portée d'une règle.
+Le champ « Appliqué à » définit la portée d'une règle.
 
 Survolez le champ et cliquez sur le symbole du `crayon`{.action}.<br>
-Par défaut, une règle est appliquée à tous les clusters sur lesquels Pare-feu distribué est installé, ce qui entraine sont application à toutes les VMs.<br>
+Par défaut, une règle est appliquée à tous les clusters sur lesquels le pare-feu distribué est installé, ce qui entraîne son application à toutes les VMs.<br>
 Vous pouvez ajouter toutes les passerelles Edge ou les objets spécifiques disponibles dans la liste.   
 
-Cliquez sur `Enregister`{.action}.
+Cliquez sur `Enregistrer`{.action}.
 
 ![Applied](images/en13appliedto.png){.thumbnail}
 
-
 #### Action
 
-L'action définit comment le traffic sera dirigé.
+L'action définit comment le trafic sera dirigé.
 
 Trois options vous sont proposées, sélectionnez celle qui vous convient :
 
@@ -194,10 +188,9 @@ S'il est activé, le bouton *slider* de journal (Log) enregistre les évenements
 
 Outre la possibilité d'ajouter des commentaires et de consulter des statistiques, une section de **paramètres avancés** vous permet de définir si le trafic visé est entrant, sortant ou bidirectionnel et de limiter les règles à l'IPv4 ou l'IPv6.
 
-Cliquez sur `Enregister`{.action}.
+Cliquez sur `Enregistrer`{.action}.
 
 ![Advanced](images/en15adv.png){.thumbnail}
-
 
 ### Publier les règles
 
