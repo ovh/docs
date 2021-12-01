@@ -163,7 +163,7 @@ This change will not affect your existing private network ports, only newly crea
 
 This will occur according to the following process:
 
-- GRA9 and SBG7 will rejoin the other regions with the default port security set on disabled.
+- GRA9 and SBG7 will join the other regions with the default port security set on **disabled**.
 - The firewall rules for new ports will not be applied until you enable it on the new port. Nothing will change for the existing ports.
 - The OpenStack regions will be upgraded to Stein.
 - The default port security will be changed to **enabled** (a global communication will be sent in time).

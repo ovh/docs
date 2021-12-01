@@ -71,9 +71,7 @@ A purchase order is then generated. Please allow pop-ups in order to be redirect
 
 ![failoverIP](images/buyfailoverip3.png){.thumbnail}
 
-You will also find the purchase order in the OVHcloud Control Panel by going to the `Dashboard`{.action}, then `View my orders`{.action}.
-
-![failoverIP](images/buyfailoverip4_2020.png){.thumbnail}
+You will also find the purchase order in the OVHcloud Control Panel: Open the `Dashboard`{.action} section, then click on `View my orders`{.action}.
 
 ## Go further
 

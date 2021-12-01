@@ -74,8 +74,6 @@ A questo punto sarà generato un buono d’ordine. Autorizza la visualizzazione 
 
 Il tuo buono d’ordine sarà disponibile anche nello Spazio Cliente, sezione `Il tuo account cliente`{.action},`I tuoi ordini`{.action}.
 
-![failoverIP](images/buyfailoverip4.png){.thumbnail}
-
 ## Per saperne di più
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>
