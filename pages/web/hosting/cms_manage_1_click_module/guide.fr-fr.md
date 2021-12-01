@@ -70,17 +70,24 @@ Vous pouvez également modifier ce mot de passe en vous rendant directement sur 
 |Prestashop|![admin_prestashop](images/admin_prestashop].png){.thumbnail}|
 |Drupal|![admin_drupal](images/admin_drupal.png){.thumbnail}|
 
-
 > [!primary]
 >
-> Que faire si vous ne recevez pas le message avec le nouveau mdp ?
+> Après 
 >
->
+> Vérifiez tout d'abord l'adresse e-mail associée à votre compte OVHcloud depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) : Cliquez sur votre nom en haut à droite de votre écran puis, dans le menu contextuel à droite de l'écran, cliquez sur vos initiales (`Gérer mon compte`{.action}).
 
 ### Supprimer votre module en 1 clic
 
-(Comment effectuer un backup > liens vers les guides)
-(Chemins / process dans l'espace client)
+> [!primary]
+>
+> Avant toute suppression de données, récupérez la sauvegarde de votre site en suivant les instructions de ce [guide](../exporter-son-site-web/).
+>
+
+Pour supprimer votre module 1 clic, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur `Modules en 1 clic`{.action}.
+
+Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant votre module puis sur `Supprimer le module`{.action}.
+
+
 
 Section "Supprimer votre module en 1 clic" : pour les clients qui ont une offre perso ou une autre offre avec toutes les bases de données créées, le fait de supprimer le module ne supprimera pas la base. La re-création d'un module ne fonctionnera donc pas en mode automatique.
 
