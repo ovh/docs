@@ -110,15 +110,15 @@ Nommez la règle via un clic sur le nom. Le champs`ID` sera automatiquement comp
 
 #### Source
 
-The source field defines the origin of the traffic.
+La source définit l'origine du trafic.
 
-Hover over the field and click on the `pencil`{.action} icon. You can add objects and/or IP addresses as needed.     
+Survolez le champ et cliquez sur le symbole du `crayon`{.action}. Vous pouvez ajouter des objets et/ou des addresses IP.
 
 > [!primary]
 >
-> If "Negate Source" is turned on, the rule is applied to all sources except for the sources selected.
-    
-Click `Save`{.action} when ready.
+> Si vous activez « Inverser la source », la règle s'appliquera à toutes les sources sauf celles sélectionnées.
+
+Cliquez sur `Enregister`{.action}.
 
 ![Source](images/en06sourceobject.png){.thumbnail}
 
@@ -127,15 +127,15 @@ Click `Save`{.action} when ready.
 
 #### Destination
 
-The destination field defines the target of the traffic.
+La destination définit la cible du trafic.
 
-Hover over the field and click on the `pencil`{.action} icon. You have the same choices for destination as you had for source.    
+Survolez le champ et cliquez sur le symbole du `crayon`{.action}. Les possibilités sont les mêmes que pour les sources.
 
 > [!primary]
 >
-> If "Negate Source" is turned on, the rule is applied to all destinations except for the destinations selected.
+> Si vous activez « Inverser la source », la règle s'appliquera à toutes les destinations sauf celles sélectionnées.
 
-Click `Save`{.action} when ready.
+Cliquez sur `Enregister`{.action}.
 
 ![Destination](images/en08destobject.png){.thumbnail}
 
@@ -144,15 +144,15 @@ Click `Save`{.action} when ready.
 
 #### Service
 
-The service field defines the type of traffic aimed at.
+Le service définit le type de trafic visé.
 
-Hover over the field and click on the `pencil`{.action} icon. You have the choice between using existing services and groups or add raw ports/protocols.
+Survolez le champ et cliquez sur le symbole du `crayon`{.action}. Vous pouvez utiliser des services et groupes existants ou ajouter des ports/protocoles bruts. 
 
 > [!primary]
 >
-> Clicking on an existing service or group will show you a description with the ports and protocols involved.
+> Cliquer sur un service ou un groupe existant vous montrera une descripion des ports et protocoles utilisés.
 
-Click `Save`{.action} when ready.
+Cliquez sur `Enregister`{.action}.
 
 ![Service](images/en10serv.png){.thumbnail}
 
@@ -163,45 +163,45 @@ Click `Save`{.action} when ready.
 
 #### Appliqué à
 
-The applied to field defines the scope of the rule.
+Le champ "Appliqué à" définit la portée d'une règle.
 
-Hover over the field and click on the `pencil`{.action} icon.<br>
-By default, the rule is set to apply to all clusters on which Distributed Firewall is installed, which means it will apply to all VMs.<br>
-You can add all Edge gateways or specific objects available in the list.   
+Survolez le champ et cliquez sur le symbole du `crayon`{.action}.<br>
+Par défaut, une règle est appliquée à tous les clusters sur lesquels Pare-feu distribué est installé, ce qui entraine sont application à toutes les VMs.<br>
+Vous pouvez ajouter toutes les passerelles Edge ou les objets spécifiques disponibles dans la liste.   
 
-Click `Save`{.action} when ready.
+Cliquez sur `Enregister`{.action}.
 
 ![Applied](images/en13appliedto.png){.thumbnail}
 
 
 #### Action
 
-The action field defines how to handle the traffic.
+L'action définit comment le traffic sera dirigé.
 
-You have three possible options to choose from:
+Trois options vous sont proposées, sélectionnez celle qui vous convient :
 
-- Allow: The traffic will go through.
-- Block: The traffic will be blocked with no further communication.
-- Reject: The traffic will be blocked and a "port unreachable" message will be sent to the source.     
+- Autoriser : Le trafic est autorisé.
+- Bloquer : Le trafic est bloqué sans autre forme de communication.
+- Rejeter : Le trafic est bloqué et un message de port inaccessible est envoyé à la source.     
 
 ![Action](images/en14action.png){.thumbnail}
 
 #### Journal
 
-The log slider allows you to keep a journal of events on the rule.
+S'il est activé, le bouton *slider* de journal (Log) enregistre les évenements qui concernent la règle.
 
 #### Paramètres avancés
 
-Aside from a comments section and a statistics section, the advanced settings section allows you to define if the target traffic is inbound, outbound or both and if you want to target IPv4, IPv6 or both.
+Outre la possibilité d'ajouter des commentaires et de consulter des statistiques, une section de **paramètres avancés** vous permet de définir si le trafic visé est entrant, sortant ou bidirectionnel et de limiter les règles à l'IPv4 ou l'IPv6.
 
-Click `Save`{.action} when ready.
+Cliquez sur `Enregister`{.action}.
 
 ![Advanced](images/en15adv.png){.thumbnail}
 
 
 ### Publier les règles
 
-No creation/modification of a rule/section will be registered until you click the `Publish`{.action} button.
+La création/modification de règles/sections n'est pas enregistrée tant que vous ne cliquez pas sur `Publier`{.action}.
 
 ![Publish](images/en16pub.png){.thumbnail}
 
