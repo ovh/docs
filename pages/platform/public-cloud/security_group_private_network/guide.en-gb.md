@@ -54,7 +54,9 @@ Depending on the region, the implementation might be different but the result is
 
 As a consequence, all the network ports (public and private) will allow every connection when you start an instance.
 
-### Adding rules
+### Managing your private firewall rules
+
+#### Adding rules
 
 If you want to configure specific rules, you can edit the default security group. Alternatively, create a new security group and associate your networking port with it.
 
@@ -117,8 +119,6 @@ Enter the following command to associate your security group with your port:
 ```bash
 openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 ```
-
-### Managing your private firewall rules
 
 #### Different behaviour depending on regions
 
