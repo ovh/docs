@@ -168,6 +168,8 @@ Hover over the field and click on the `pencil`{.action} icon.<br>
 By default, the rule is set to apply to all clusters on which Distributed Firewall is installed, which means it will apply to all VMs.<br>
 You can add all Edge gateways or specific objects available in the list.   
 
+Click `Save`{.action} when ready.
+
 ![Applied](images/en13appliedto.png){.thumbnail}
 
 
@@ -190,6 +192,8 @@ The log slider allows you to keep a journal of events on the rule.
 #### Advanced Settings
 
 Aside from a comments section and a statistics section, the advanced settings section allows you to define if the target traffic is inbound, outbound or both and if you want to target IPv4, IPv6 or both.
+
+Click `Save`{.action} when ready.
 
 ![Advanced](images/en15adv.png){.thumbnail}
 
