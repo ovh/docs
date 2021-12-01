@@ -23,17 +23,23 @@ Les modules en 1 clic permettent l’installation facile et rapide d’un logici
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovh.com/fr/hebergement-web/) permettant l'installation d'un [module en 1 clic]() (seule l'offre gratuite [Start10M]() n'est pas concernée)
-- Avoir créé un module en 1 clic sur cet hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide]())
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovh.com/fr/hebergement-web/) permettant l'installation d'un module en 1 clic (seule l'offre gratuite [Start10M](../activer-start10m/) n'est pas concernée)
+- Avoir créé un module en 1 clic sur cet hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide](../modules-en-1-clic/))
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
 
 ### Accéder à votre site
 
-(Chemin dans l'espace client)
+Pour accéder à la partie publique de votre site suite à l'installation de votre module, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur `Modules en 1 clic`{.action}.
 
-(liens vers guide troubleshooting : que faire en cas d'affichage "index of")
+Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant votre module puis sur Accéder au module.
+
+primary
+
+Si votre site ne s'affiche pas correctement suite à cette manipulation, consultez nos guides de diagnostics : 
+
+- 
 
 (Liens vers la FAQ avec autres messages d'erreur (too many redirect, css cassé, blocage google, etc) à ajouter par la suite)
 
@@ -52,9 +58,12 @@ Les modules en 1 clic permettent l’installation facile et rapide d’un logici
 (Comment effectuer un backup > liens vers les guides)
 (Chemins / process dans l'espace client)
 
+Section "Supprimer votre module en 1 clic" : pour les clients qui ont une offre perso ou une autre offre avec toutes les bases de données créées, le fait de supprimer le module ne supprimera pas la base. La re-création d'un module ne fonctionnera donc pas en mode automatique.
+
 ### Retrouver les identifiants de connexion à votre module en 1 clic
 
 (chemin dans l'esapce client)
+Section "Retrouver les identifiants de connexion à votre module en 1 clic" : l'identifiant de connexion créé automatiquement lors de la mise en place du module ne permettra l'accès au backoffice qu'à la condition que cet identifiant n'ait pas été supprimé( par exemple dans la section Utilisateurs de wordpress).
 
 ### Bonnes pratiques
 
