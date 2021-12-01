@@ -44,18 +44,40 @@ The distributed Firewall allows for
 
 ### Priorities
 
-Before creating rules, it is important to un
+Before creating rules, it is important to understand how and when they will be applied.<br>
+The Distributed Firewall has three layers ot priority:
+- Types
+- Sections
+- Rules
+
+#### Types
+
+The type of rules/sections is defined by the layer it will apply on.<br>
+Layer 2 rules will be applied before Layer 3 and up.<br>
+That means that Ethernet rules will have a higher priority than General ones.
+
+#### Sections
+
+Sections are rules folder that allow better segmentation and easier management.<br>
+Sections are applied from top to bottom.<br>
+That means that in the case of conflicting rules in different sections, the rule within the section with the highest priority will be applied.
+
+#### Rules
+
+Rule manage identified service(s) from specified source(s) to specified destination(s).<br>
 Rules are applied from top to bottom.<br>
 The first rule that matches the traffic overrides all the other rules below.<br>
-That means that in the case of conflicting rules, the rule with the highest priority (lowest number) will be applied.
+That means that in the case of conflicting rules within a section, the rule with the highest priority (lowest number) will be applied.
 
-You can modify the rule order by selecting a rule and using the up and down arrows.    
+#### Order
 
-![Order](images/en13order.png){.thumbnail}
+You can add rules and sections in any tabs of the firewall.<br>
+You can modify the rule/section order by selecting a rule/section and using the up and down arrows. 
+
+![Order](images/en04order.png){.thumbnail}
+
 
 ### Firewall Rules
-
-The basics of a firewall rule is to manage identified service(s) from specified source(s) to specified destination(s).     
 
 Click on `+ Add Rule`{.action}.
 
@@ -73,14 +95,17 @@ The new rule shows with:
 - Log slider
 - Advanced settings    
 
-![Rule](images/en03rule.png){.thumbnail}
+![Rule](images/en05rule.png){.thumbnail}
+
 
 > [!warning]
 >
 > By default, rules have *Any* as source and destination, meaning it encompasses all traffic. To avoid security issues, it is best practices to avoid broad targets.
 >
 
-Name the rule by clicking the `Name`{.action} field. ID and Type fields are automatically populated.
+#### Name
+
+Name the rule by clicking the `Name`{.action} field. ID and Type fields will be automatically populated.
 
 #### Source
 
@@ -94,9 +119,10 @@ Hover over the field and click on the `pencil`{.action} icon. You can add object
     
 Click `Save`{.action} when ready.
 
-![Source](images/en04sourceobjects.png){.thumbnail}
+![Source](images/en06sourceobject.png){.thumbnail}
 
-![Source](images/en05sourceIP.png){.thumbnail}
+![Source](images/en07sourceip.png){.thumbnail}
+
 
 #### Destination
 
@@ -110,9 +136,10 @@ Hover over the field and click on the `pencil`{.action} icon. You have the same 
 
 Click `Save`{.action} when ready.
 
-![Destination](images/en07destobjects.png){.thumbnail}
+![Destination](images/en08destobject.png){.thumbnail}
 
-![Destination](images/en07destIP.png){.thumbnail}
+![Destination](images/en09destip.png){.thumbnail}
+
 
 #### Service
 
@@ -126,11 +153,23 @@ Hover over the field and click on the `pencil`{.action} icon. You have the choic
 
 Click `Save`{.action} when ready.
 
-![Service](images/en08servsg.png){.thumbnail}
+![Service](images/en10serv.png){.thumbnail}
 
-![Service](images/en09servdetail.png){.thumbnail}
+![Service](images/en11servdetail.png){.thumbnail}
 
-![Service](images/en10servport.png){.thumbnail}
+![Service](images/en12servport.png){.thumbnail}
+
+
+#### Applied To
+
+The applied to field defines the scope of the rule.
+
+Hover over the field and click on the `pencil`{.action} icon.<br>
+By default, the rule is set to apply to all clusters on which Distributed Firewall is installed, which means it will apply to all VMs.<br>
+You can add all Edge gateways or specific objects available in the list.   
+
+![Applied](images/en13appliedto.png){.thumbnail}
+
 
 #### Action
 
@@ -138,11 +177,11 @@ The action field defines how to handle the traffic.
 
 You have three possible options to choose from:
 
-- Accept: The traffic will go through.
-- Deny: The traffic will be blocked with no further communication.
+- Allow: The traffic will go through.
+- Block: The traffic will be blocked with no further communication.
 - Reject: The traffic will be blocked and a "port unreachable" message will be sent to the source.     
 
-![Action](images/en11action.png){.thumbnail}
+![Action](images/en14action.png){.thumbnail}
 
 #### Log
 
@@ -150,18 +189,16 @@ The log slider allows you to keep a journal of events on the rule.
 
 #### Advanced Settings
 
-Aside from a comments section and a statistics section, the advanced settings section allows you to define if the target traffic is inbound, outbound or both. In case of NAT traffic, you can choose if the rule applies to the original or translated source.
+Aside from a comments section and a statistics section, the advanced settings section allows you to define if the target traffic is inbound, outbound or both and if you want to target IPv4, IPv6 or both.
 
-![Advanced](images/en12adv.png){.thumbnail}
+![Advanced](images/en15adv.png){.thumbnail}
 
 
 ### Publishing rules
 
-No creation/modification of a rule will be registered until you click the `Publish`{.action} button.
+No creation/modification of a rule/section will be registered until you click the `Publish`{.action} button.
 
-![Publish](images/en14publish.png){.thumbnail}
-
-![Publish](images/en15done.png){.thumbnail}
+![Publish](images/en16pub.png){.thumbnail}
 
 
 ## Go further
