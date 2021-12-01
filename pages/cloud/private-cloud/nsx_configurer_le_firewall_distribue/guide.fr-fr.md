@@ -70,7 +70,7 @@ Les règles sont appliquées de haut en bas.<br>
 La première règle qui s'applique au trafic annule toutes les suivantes.<br>
 Cela implique qu'en cas de conflit entre deux règles d'une même section, c'est la règle avec le plus forte priorité (le plus petit nombre) qui sera appliquée.
 
-#### Order
+#### Ordre
 
 Vous pouvez ajouter des règles et/ou sections dans tous les onglets du pare-feu.<br>
 Vous pouvez modifier l'ordre des règles et sections en les cochant puis en utilisant les flèches haut et bas. 
