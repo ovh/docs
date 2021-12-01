@@ -106,7 +106,7 @@ La nouvelle règle apparaît avec les champs suivants :
 
 #### Nom
 
-Nommez la règle via un clic sur le nom. Les champs`ID` and `Type` seront automatiquement complétés.
+Nommez la règle via un clic sur le nom. Le champs`ID` sera automatiquement complété.
 
 #### Source
 
