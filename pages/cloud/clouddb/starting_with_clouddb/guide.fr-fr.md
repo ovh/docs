@@ -152,7 +152,7 @@ Sur la fenêtre qui s'affiche, indiquez l'adresse IP ou le masque que vous dési
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
-#### Autoriser la connexion à un hébergement web OVHcloud
+#### Autoriser la connexion à un hébergement web OVHcloud <a name="trustip"></a>
 
 Pour un hébergement web OVHcloud, vous devez autoriser l'adresse IP « passerelle de sortie » (gateway) de celui-ci . 
 
@@ -189,6 +189,30 @@ Afin de pouvoir mener à bien cette manipulation, vous devez quoi qu'il arrive �
 >
 
 ![clouddb](images/clouddb-login-information.png){.thumbnail}
+
+### Récupérer le logs de votre serveur CloudDB
+
+Pour vérifier les derniers logs de votre base de données, dirigez-vous vers l'onglet `Logs`{.action} de votre serveur CloudDB. Cette onglet affiche en temps réel,es alertes et les erreurs.
+
+![clouddb](images/clouddb-log01.png){.thumbnail}
+
+Pour récupérer l'ensemble des logs de votre serveur CloudDB, connectez-vous via SFTP sur ce dernier.
+
+> [!warning]
+>
+> Avant de vous connecter, vérifiez que l'adresse IP du poste que vous utilisez soit bien autorisé sur votre serveur CloudDB, avec l'option `SFTP`coché. Aidez-vous de la rubrique [Autoriser la connexion à un hébergement web OVHcloud](#turstip) sur ce guide.
+
+Retrouvez les informations de connexion SFTP depuis l'onglet `Informations générales`{.action} de votre serveur CloudDB. Si vous ne connaissez pas le `Mot de passe du serveur`, cliquez sur le bouton `...`{.action} à droite pour le modifier.
+
+![clouddb](images/clouddb-log02.png){.thumbnail}
+
+Connectez-vous par l'intermédiaire d'un client FTP (FileZilla, Cyberduck, WinSCP, etc.).
+
+Pour FileZilla, Dans le menu `Fichier`{.action}, dirigez-vous dans le `Gestionnaire de sites`{.action}. cliquez sur `Nouveau site`{.action}, puis saisissez les paramètres relevés précédement.
+
+![clouddb](images/clouddb-log3.png){.thumbnail}
+
+Le fichier de logs, nommé `stdout.log', se trouve à la racine.
 
 ## Aller plus loin
 
