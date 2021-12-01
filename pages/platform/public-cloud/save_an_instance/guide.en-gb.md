@@ -21,9 +21,9 @@ You can create a backup of your instance at any time via the [OVHcloud Control P
 
 ## Instructions
 
-### Create a backup of an instance.
+### Creating a backup of an instance
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and select the Public Cloud tab from the `Instances`{.action} section.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), switch to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Instances`{.action} in the left-hand menu.
 
 Next, click on the `...`{.action} button to the right of the instance, then `Create a backup`{.action}.
 
@@ -37,7 +37,7 @@ Once the backup has been created, it will be available in the `Instance Backup`{
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
-### Create an automated backup of an instance.
+### Creating an automated backup of an instance
 
 In the `Instances`{.action} section, select `Create an automatic backup`{.action} in the list of available actions you can perform on the instance.
 
@@ -45,29 +45,29 @@ In the `Instances`{.action} section, select `Create an automatic backup`{.action
 
 You will need to enter the following information on the next page:
 
-#### **The workflow.** 
+#### **The workflow** 
 
 Currently, only one workflow exists. It will make a backup for the instance and its primary volume.
 
 ![public-cloud-instance-backup](images/createbackup5.png){.thumbnail}
 
-#### **The resource.** 
+#### **The resource** 
 
 Simply select the instance you want to back up.
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
-#### **The schedule.** 
+#### **The schedule** 
 
 Here, you need to define the frequency with which backups are made. There are two default options:
 
-- daily backup with a log of 7 days maximum
-- daily backup with a log of 14 days maximum
+- Daily backup with a log of 7 days maximum
+- Daily backup with a log of 14 days maximum
 
 ![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
 
     
-#### **The name.** 
+#### **The name** 
 
 This is where you set a name for the backup task. 
  
