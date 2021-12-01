@@ -6,115 +6,204 @@ section: NSX
 order: 08
 ---
 
-**Dernière mise à jour le 28/02/2019**
+**Dernière mise à jour le 01/12/2021**
 
 ## Objectif
 
-Le firewall distribué permet d'appliquer des restrictions sur l'ensemble des réseaux présent sur votre PCC. Le trafic sera directement arrêté depuis la source sans avoir besoin d'être arrêté à la destination. Il permet notamment de s'affranchir du pare-feu de vos VM.
+Comme le [pare-feu NSX Edge](https://docs.ovh.com/fr/private-cloud/configurer-le-nsx-edge-firewall/), Le pare-feu distribué  accepte ou refuse le trafic réseau en fonction de règles appliquées à des objets ou groupes d’objets.
+Le pare-feu distribué optimise le trafic et la consommation de bande passante en appliquant des règles aux paquets avant qu'ils ne soient envoyés au pare-feu Edge.
 
-**Ce guide explique comment établir cette solution.**
+**Ce guide explique comment créer des règles.**
 
 ## Prérequis
 
-- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+
 
 ## En pratique
 
-Pour commencer, cliquez sur le menu "Firewall" à gauche de l'interface pour avoir accès à la gestion du firewall distribué.
+### Accès à l'interface
 
-![](images/FirewallMenu.PNG){.thumbnail}
+Dans l'interface vSphere, allez dans le Tableau de bord `Mise en réseau et sécurité`{.action}.
 
-Vous pouvez configurer des règles de couche 3 (L3) depuis l'onglet "General" et des règles de couche 2 (L2) depuis l'onglet "Ethernet".
+![Menu](images/en01dash.png){.thumbnail}
 
-Les règles de couche 2 sont appliquées avant les règles de couche 3.
 
-Par défaut, tout le trafic de couche 2 et 3 est autorisé sur votre réseau.
+Sur la gauche de votre écran, naviguez vers `Pare-feu`{.action}.
 
-Sur l'image suivante, les icônes sous les menus permettent, dans l'ordre de gauche à droite, de :
+![FW](images/en02fw.png){.thumbnail}
 
-- ajouter une règle après la règle sélectionnée
-- ajouter une section
-- copier la règle sélectionnée
-- remonter la règle sélectionnée dans l'arborescence
-- redescendre la règle sélectionnée dans l'arborescence
-- annuler la dernière action
-- supprimer la règle sélectionnée
 
-Puis en cliquant sur le bouton `Plus`{.action} vous disposez des actions suivantes : 
+Le pare-feu distribué permet trois types de paramètres
+- `Général`{.action} pour des règles sur la couche 3 et supérieures
+- `Ethernet`{.action} pour des règles sur la couche 2
+- `Services de partenaires`{.action} pour des règles sur des services tiers (à intégrer au préalable)
 
-- déplacer vers : permettant de déplacer une règle a un numéro précis.
-- développer toutes les sections
-- réduire toutes les sections
-- activer toutes les règles séléctionnées
-- activer les journaux de règles
-- désactiver toutes les règles séléctionnées
-- désactiver les journaux de règles
+![FW](images/en03layer.png){.thumbnail}
 
-![](images/Icones.PNG){.thumbnail}
 
-### Exemple de configuration
+### Prioritié
 
-Dans l'exemple suivant :
+Avant de vréer de nouvelles règles, il est important de comprendre quand et comment elles seront appliquées.<br>
+Le pare-feu distribué a trois niveaux de priorisation:
+- Types
+- Sections
+- Règles
 
-- la règle 1 autorise tout le trafic ICMP sur tout le réseau (entrant, sortant et interne)
-- la règle 2 autorise toutes les VMs inclues dans le groupe "Web" (créé au préalable) à communiquer avec les VM inclues dans le groupe "mySQL" (créé au préalable) sur le service "MySQL" (service par défaut proposé dans la gestion des règles NSX).
-- les règles 3 à 5 sont les règles par défaut du firewall, passées à "Block" pour ne pas autoriser le trafic de manière générale si il ne correspond pas aux autorisations précédentes
+#### Types
 
-![](images/ExampleRules.PNG){.thumbnail}
+Le type de règle/section est définie par la couche OSI sur laquelle elle agit.<br>
+Les règles de couche 2 seront appliquées avant celles de couche 3 et supérieures.<br>
+Ce qui veut dires que les règles de l'onglet Ethernet seront prioritaires sur celles de l'onglet Général.
 
-Les règles s'appliquent dans l'ordre croissant. Si une règle est appliquée car elle correspond au trafic, les règles suivantes ne seront pas appliquées.
+#### Sections
 
-### Ajouter une règle de firewall distribué
+Les sections sont des dossiers de règles qui permettent une meilleure segmentation et une gestion plus aisée.<br>
+Les sections sont appliquées de haut en bas.<br>
+Cela implique qu'en cas de conflit entre règles de différentes sections, c'est la règle de la section la plus haute qui sera appliquée.
 
-L'ajout de règle est similaire que ce soit via l'onglet "General" ou "Ethernet", nous détaillerons donc simplement l'ajout de règle de manière globale avec l'exemple du menu "Global".
+#### Règles
 
-Cliquez sur `+ Ajouter une règle`{.action} "Couche de section par défaut 3) afin d'ajouter une règle de firewall. Cela ajoute simplement une ligne supplémentaire avec des valeurs par défaut dans la liste des règle (la règle 1 dans la capture ci-dessous).
+Les règles contrôlent des services identifiés, en provenance de sources spécifiques et en direction de destinations définies.<br>
+Les règles sont appliquées de haut en bas.<br>
+La première règle qui s'applique au trafic annule toutes les suivantes.<br>
+Cela implique qu'en cas de conflit entre deux règles d'une même section, c'est la règle avec le plus forte priorité (le plus petit nombre) qui sera appliquée.
 
-![](images/AddRule.PNG){.thumbnail}
+#### Order
 
-Aucune règle n'est appliquée avant que vous ayez cliqué sur "Publier", en haut de page. Cela sera nécessaire à chaque modification. Le bouton "Actualiser" permet de n'appliquer aucune nouvelle règle et de revenir à l'état en place à la dernière publication de règles.
+Vous pouvez ajouter des règles et/ou sections dans tous les onglets du pare-feu.<br>
+Vous pouvez modifier l'ordre des règles et sections en les cochant puis en utilisant les flèches haut et bas. 
 
-![](images/Publish.PNG){.thumbnail}
+![Order](images/en04order.png){.thumbnail}
 
-Pour chaque règle, plusieurs actions et champs sont disponibles : 
 
-- L'icone en début de ligne symbolisé par 3 points verticaux (![](images/pointsVerticaux.png){.thumbnail}) permet plusieurs actions : 
-	- Ajouter une règle au-dessus
-	- Ajouter une règle en dessous
-	- Copier la règle
-	- Coller la règle au-dessus
-	- Coller la règle en dessous
+### Règles de pare-feu
 
-- L'icone (![](images/iconeEnableDisable.png){.thumbnail}) situé juste après permet d'activer ou de désctiver la règle.
-- Le numéro de la règle permettant de définir dans quel ordre elle sera traitée.
-- Le nom de la règle
-- L'ID de la règle
-- La source, qui peut être une IP, ou un objet (machine virtuelle, vApp, roupe de sécurité...)
-- La destination, qui peut être une IP, ou un objet (machine virtuelle, vApp, groupe de sécurité...)
-- Le service,  faisant parti des services (AD, HTTP...) par défaut on un que vous pouvez avoir crée. Cela peut également être un port en brut si vous n'avez pas défini votre service.
-- L'élement sur lequel va être appliqué la règle, cela pourra être le pare-feu distribué ou bien votre ou vos edges
-- L'action de la règle, elle peut autoriser, bloquer ou rejeter le trafic
-- L'icone (![](images/iconeEnableDisable.png){.thumbnail}) permettant d'activé ou désactivé les journaux pour cette règle.
+Cliquez sur `+ Ajouter une règle`{.action}.
 
-Trois dernières icones sont disponibles en bout de ligne, voici leur description de gauche a droite : 
+La nouvelle règle apparaît avec les champs suivants :
 
-- Ajout d'un commentaire sur la règle
-- Paramètres avancés, permettant de préciser la direction (entrant ou sortant ou entrant et sortant), le type de paquet (IPv4 ou IPv6)
-- Les statistiques de la règle.
+- Bouton (*slider*) d'activation
+- Coche de sélection pour des actions spécifiques (changement de priorité, suppression...)
+- Nom
+- ID
+- Source
+- Destination
+- Service
+- Appliqué à
+- Action
+- Bouton (*slider*) de journal (*log*)
+- Paramètres avancés
 
-### Ajouter une section
+![Rule](images/en05rule.png){.thumbnail}
 
-Pour ajouter une section, il vous suffit de cliquer sur `Ajouter une section`{.action}.
 
-L'ajout de section présente plusieurs avantages :
+> [!warning]
+>
+> Par défaut, une règle a pour source et destination `Quelconque`, soit une sélection de tout le trafic. Pour des raisons de sécurité, il est recommandé d'éviter les règles globales.
+>
 
-- Isoler certaines règles en fonction de votre activité et de l'élément sur lequel vous appliquez vos règles.
-- Verrouiller la section pour éviter qu'un autre utilisateur effectue des modification dans le même temps
+#### Nom
+
+Nommez la règle via un clic sur le nom. Les champs`ID` and `Type` seront automatiquement complétés.
+
+#### Source
+
+The source field defines the origin of the traffic.
+
+Hover over the field and click on the `pencil`{.action} icon. You can add objects and/or IP addresses as needed.     
 
 > [!primary]
 >
-> La gestion de priorité et d'éxécution d'une section est similaire aux règles du pare-feu.
-> Une section situé en amont verra ses règles appliqué avant les règles d'une section situé en aval.
+> If "Negate Source" is turned on, the rule is applied to all sources except for the sources selected.
+    
+Click `Save`{.action} when ready.
+
+![Source](images/en06sourceobject.png){.thumbnail}
+
+![Source](images/en07sourceip.png){.thumbnail}
+
+
+#### Destination
+
+The destination field defines the target of the traffic.
+
+Hover over the field and click on the `pencil`{.action} icon. You have the same choices for destination as you had for source.    
+
+> [!primary]
+>
+> If "Negate Source" is turned on, the rule is applied to all destinations except for the destinations selected.
+
+Click `Save`{.action} when ready.
+
+![Destination](images/en08destobject.png){.thumbnail}
+
+![Destination](images/en09destip.png){.thumbnail}
+
+
+#### Service
+
+The service field defines the type of traffic aimed at.
+
+Hover over the field and click on the `pencil`{.action} icon. You have the choice between using existing services and groups or add raw ports/protocols.
+
+> [!primary]
+>
+> Clicking on an existing service or group will show you a description with the ports and protocols involved.
+
+Click `Save`{.action} when ready.
+
+![Service](images/en10serv.png){.thumbnail}
+
+![Service](images/en11servdetail.png){.thumbnail}
+
+![Service](images/en12servport.png){.thumbnail}
+
+
+#### Appliqué à
+
+The applied to field defines the scope of the rule.
+
+Hover over the field and click on the `pencil`{.action} icon.<br>
+By default, the rule is set to apply to all clusters on which Distributed Firewall is installed, which means it will apply to all VMs.<br>
+You can add all Edge gateways or specific objects available in the list.   
+
+Click `Save`{.action} when ready.
+
+![Applied](images/en13appliedto.png){.thumbnail}
+
+
+#### Action
+
+The action field defines how to handle the traffic.
+
+You have three possible options to choose from:
+
+- Allow: The traffic will go through.
+- Block: The traffic will be blocked with no further communication.
+- Reject: The traffic will be blocked and a "port unreachable" message will be sent to the source.     
+
+![Action](images/en14action.png){.thumbnail}
+
+#### Journal
+
+The log slider allows you to keep a journal of events on the rule.
+
+#### Paramètres avancés
+
+Aside from a comments section and a statistics section, the advanced settings section allows you to define if the target traffic is inbound, outbound or both and if you want to target IPv4, IPv6 or both.
+
+Click `Save`{.action} when ready.
+
+![Advanced](images/en15adv.png){.thumbnail}
+
+
+### Publier les règles
+
+No creation/modification of a rule/section will be registered until you click the `Publish`{.action} button.
+
+![Publish](images/en16pub.png){.thumbnail}
 
 ## Aller plus loin
 
