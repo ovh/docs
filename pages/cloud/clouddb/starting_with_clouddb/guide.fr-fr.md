@@ -210,7 +210,7 @@ Connectez-vous par l'intermédiaire d'un client FTP (FileZilla, Cyberduck, WinSC
 
 Pour FileZilla, Dans le menu `Fichier`{.action}, dirigez-vous dans le `Gestionnaire de sites`{.action}. cliquez sur `Nouveau site`{.action}, puis saisissez les paramètres relevés précédemment.
 
-![clouddb](images/clouddb-log3.png){.thumbnail}
+![clouddb](images/clouddb-log03.png){.thumbnail}
 
 Le fichier de logs, nommé `stdout.log`, se trouve à la racine.
 
