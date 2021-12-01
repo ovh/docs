@@ -6,8 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-
-**Dernière mise à jour le 31/08/2020**
+**Dernière mise à jour le 01/12/2021**
 
 ## Objectif
 
@@ -200,7 +199,7 @@ Pour récupérer l'ensemble des logs de votre serveur CloudDB, connectez-vous vi
 
 > [!warning]
 >
-> Avant de vous connecter, vérifiez que l'adresse IP du poste que vous utilisez soit bien autorisé sur votre serveur CloudDB, avec l'option `SFTP` coché. Aidez-vous de la rubrique [Autoriser la connexion à un hébergement web OVHcloud](#turstip) sur ce guide.
+> Avant de vous connecter, vérifiez que l'adresse IP du poste que vous utilisez est bien autorisée sur votre serveur CloudDB, avec l'option `SFTP` cochée. Aidez-vous de la rubrique [Autoriser la connexion à un hébergement web OVHcloud](#turstip) sur ce guide.
 
 Retrouvez les informations de connexion SFTP depuis l'onglet `Informations générales`{.action} de votre serveur CloudDB. Si vous ne connaissez pas le `Mot de passe du serveur`, cliquez sur le bouton `...`{.action} à droite pour le modifier.
 
@@ -208,7 +207,7 @@ Retrouvez les informations de connexion SFTP depuis l'onglet `Informations gén�
 
 Connectez-vous par l'intermédiaire d'un client FTP (FileZilla, Cyberduck, WinSCP, etc.).
 
-Pour FileZilla, Dans le menu `Fichier`{.action}, dirigez-vous dans le `Gestionnaire de sites`{.action}. cliquez sur `Nouveau site`{.action}, puis saisissez les paramètres relevés précédemment.
+Pour FileZilla, dans le menu `Fichier`{.action}, dirigez-vous dans le `Gestionnaire de sites`{.action}. Cliquez sur `Nouveau site`{.action}, puis saisissez les paramètres relevés précédemment.
 
 ![clouddb](images/clouddb-log03.png){.thumbnail}
 
