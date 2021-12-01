@@ -212,7 +212,7 @@ Pour FileZilla, Dans le menu `Fichier`{.action}, dirigez-vous dans le `Gestionna
 
 ![clouddb](images/clouddb-log3.png){.thumbnail}
 
-Le fichier de logs, nommé `stdout.log', se trouve à la racine.
+Le fichier de logs, nommé `stdout.log`, se trouve à la racine.
 
 ## Aller plus loin
 
