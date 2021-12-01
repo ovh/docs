@@ -127,7 +127,7 @@ Ouvrez le fichier de configuration réseau pour le modifier à l'aide de la comm
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Ne modifiez pas les lignes existantes dans le fichier. Ajoutez votre adresse IP fail-over en suivant l'exemple ci-dessous :
+Ne modifiez pas les lignes existantes dans le fichier de configuration. Ajoutez votre adresse IP fail-over en ajoutant un deuxième bloc de configuration pour l'interface publique, comme dans l'exemple ci-dessous :
 
 ```yaml
 network:
