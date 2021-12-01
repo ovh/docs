@@ -63,9 +63,19 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant vo
 
 Vous pouvez également modifier ce mot de passe en vous rendant directement sur la page de connexion à l'espace réservé aux administrateurs :
 
+|CMS|Page de connexion|
+|---|---|
+|Wordpress|![admin_wordpress](images/admin_wordpress.png){.thumbnail}|
+|Joomla|![admin_joomla](images/admin_joomla.png){.thumbnail}|
+|Prestashop|![admin_prestashop](images/admin_prestashop].png){.thumbnail}|
+|Drupal|![admin_drupal](images/admin_drupal.png){.thumbnail}|
 
 
-(Que faire si vous ne recevez pas le message avec le nouveau mdp ? (à ajouter au guide module 1 clic ?))
+> [!primary]
+>
+> Que faire si vous ne recevez pas le message avec le nouveau mdp ?
+>
+>
 
 ### Supprimer votre module en 1 clic
 
