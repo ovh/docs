@@ -4,93 +4,94 @@ excerpt: Ridimensiona un'istanza con Horizon
 slug: ridimensiona_unistanza
 legacy_guide_number: g1778
 section: Gestione da Horizon
+order: 08
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## 
-In seguito allo sviluppo della tua attività o semplicemente all'evoluzione delle tue esigenze, è possibile che le risorse della tua istanza non siano più sufficienti per rispondere alle tue necessità.
-Con il Public Cloud OVH, puoi aumentare le risorse della tua istanza in modo semplice e veloce.
+**Ultimo aggiornamento: 23/11/2021**
 
-Questa guida ti mostra la procedura da seguire per ridimensionare la tua istanza dall'interfaccia OpenStack Horizon.
+## Obiettivo
 
-## Attenzione:
-È possibile ridimensionare un'istanza solo verso un modello superiore.
+In seguito allo sviluppo della tua attività o semplicemente all’evoluzione delle tue esigenze, è possibile che le risorse della tua istanza non siano più sufficienti per rispondere alle tue necessità. Con il Public Cloud, puoi aumentare le risorse della tua istanza in modo semplice e veloce.
 
-Durante l'operazione l'istanza non sarà disponibile.
+**Questa guida ti mostra la procedura da seguire per ridimensionare l'istanza dall'interfaccia OpenStack Horizon.**
 
+> [!warning]
+>
+> Per i modelli classici è possibile solo il ridimensionamento verso un modello superiore.
+> Questa operazione comporta anche l'interruzione dell'istanza durante l'operazione.
+> 
 
-## Requisiti necessari
+> [!success]
+>
+> Le istanze di tipo *flex* permettono il ridimensionamento verso i modelli superiori o inferiori grazie a una dimensione di disco unica.
+> 
 
-- [Crea un utente per accedere a Horizon]({legacy}1773)
-- Un'instanza
+## Prerequisiti
 
+- [Aver creato un'istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-3-crea-unistanza) nel tuo account OVHcloud
+- [Accedere all’interfaccia Horizon](..crea_un_utente_per_accedere_a_horizon/)
 
+## Procedura
 
+Accedi all'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/) e assicurati di essere nella regione corretta. Puoi verificarlo nell'angolo in alto a sinistra.</br>
+Clicca sul menu `Compute`{.action} a sinistra e seleziona `Instances`{.action}. Seleziona `Resize Instance`{.action} nel menu a tendina a destra dell'istanza.
 
-## Ridimensiona un'istanza
-Se vuoi ridimensionare un'istanza:
+![Resize instance](images/resizeinstance2021.png){.thumbnail}
 
+### Scelta del template (*Flavor Choice*)
 
-- Accedi a Horizon
-- Clicca su Istanze nel menu a sinistra
-- Seleziona Ridimensiona l'istanza nel menu a tendina dell'istanza
+Questa sezione indica il template attuale (*old flavor*) e ti permette di selezionare un nuovo template (*new flavor*) per la risorsa dell'istanza.
 
+![public-cloud](images/flavorchoice.png){.thumbnail}
 
+#### Dettagli del template (*Flavor Details*)
 
-![](images/img_2718.jpg){.thumbnail}
+In questa sezione vengono mostrate le risorse associate al template scelto. 
 
+#### Limiti del Progetto (*Project Limits*)
 
-## Tab Scegli i parametri
-In questa sezione puoi visualizzare le dimensioni attuali e selezionare i nuovi parametri per la risorsa dell'istanza.
+Visualizza qui le risorse occupate rispetto alle risorse totali assegnate al progetto.
 
-![](images/img_2717.jpg){.thumbnail}
+> [!warning]
+> Non è possibile cambiare modelli durante il ridimensionamento di un'istanza. È possibile eseguire il ridimensionamento solo da un modello Linux a un altro modello Linux o da un modello Windows a un altro modello Windows.
+>
 
-## Tip:
-È possibile anche visualizzare le risorse tratte da quelle complessive destinate al progetto.
+### Opzioni avanzate (*Advanced Options*)
 
+Questa sezione permette di gestire il partizionamento del disco (*Disk Partition*) e del gruppo di server (*Server Group*).
 
-## Tab Opzioni avanzate
-In questa sezione puoi gestire la partizione del disco.
+![public-cloud](images/resize_advanced.png){.thumbnail}
 
-Partizione del disco: (Automatica o Manuale)
+Una volta terminata la configurazione, clicca su `Resize`{.action}.
 
-![](images/img_2652.jpg){.thumbnail}
+### Ridimensionamento del disco con Windows
 
-- Una volta completata la configurazione, clicca su Ridimensiona
+Attenzione: durante un ridimensionamento di un'istanza Windows, la dimensione della partizione non è automaticamente aggiornata, sarà quindi necessario estenderla utilizzando il **disk manager**:
 
+- Clicca con il tasto destro sul menu `Start`{.action} e avviare il disk manager cliccando su `Disk Management`{.action}:
 
+![public-cloud](images/2980.png){.thumbnail}
 
+- Clicca con il tasto destro sulla partizione principale e poi su `Extend Volume`{.action}.
 
-## Ridimensiona il disco con Windows
- Attenzione
-Quando ridimensioni un'istanza Windows, la dimensione della partizione non viene aggiornata automaticamente, è necessario spegnerla utilizzando il Gestore del disco:
+![public-cloud](images/2981a.png){.thumbnail}
 
+- Clicca su `Next`{.action} per accedere al `Extend Volume Wizard`. Scegli le risorse del disco da estendere e clicca su `Next`{.action}. 
 
-- Avvia il gestore del disco:
+![public-cloud](images/2978a.png){.thumbnail}
 
+Clicca su `Finish`{.action} per confermare la tua scelta.
 
+![public-cloud](images/wizard2021.png){.thumbnail}
 
-![](images/img_2980.jpg){.thumbnail}
+- La nuova dimensione del disco verrà visualizzata dal gestore del disco.
 
-- Clicca con il tasto destro sulla partizione principale
+![public-cloud](images/2979.png){.thumbnail}
 
+## Per saperne di più
 
-
-![](images/img_2981.jpg){.thumbnail}
-
-- Spegni la partizione principale:
-
-
-
-![](images/img_2978.jpg){.thumbnail}
-
-- Conferma l'estensione del disco:
-
-
-
-![](images/img_2979.jpg){.thumbnail}
-
-
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

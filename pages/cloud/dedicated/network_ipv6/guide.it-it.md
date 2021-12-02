@@ -21,9 +21,9 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 
 ## Prerequisiti
 
-- Un [server dedicato](https://www.ovh.it/server_dedicati/) nel tuo account OVHcloud
+- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel tuo account OVHcloud
 - Tutti i dati del tuo IPv6 (prefisso, gateway, etc.)
-- Una conoscenza basilare di reti e [SSH](https://it.wikipedia.org/wiki/Secure_Shell)
+- Una conoscenza basilare di reti e [SSH](../introduzione-ssh/)
 
 ## Procedura
 
@@ -39,6 +39,13 @@ Se per installare il tuo server utilizzi un template per il SO Linux fornito da 
 > - L’indirizzo IPv6 del server è 2607:5300:60:62ac::/64. L’IPv6_GATEWAY sarà perciò 2607:5300:60:62FF:FF:FF:FF:FF.
 > - L’indirizzo IPv6 del server è 2001:41D0:1:46e::/64. L’IPv6_GATEWAY sarà perciò 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
+> Il modo più sicuro per recuperare le informazioni di rete del tuo server è [utilizzare l'API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
+>
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/specifications/network
+
 
 ### Sistemi operativi Debian e basati su Debian
 
@@ -65,7 +72,7 @@ Il file di configurazione di rete del tuo server si trova in `/etc/network/inter
 
 Modifica il file come illustrato nell’esempio seguente. In questo esempio, il nome dell’interfaccia di rete è `eth0`. L’interfaccia del tuo server può essere diversa.
 
-```sh
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 128
@@ -85,7 +92,7 @@ Salva le tue modifiche sul file, quindi riavvia la rete o il server per applicar
 
 Puoi testare la connettività IPv6 eseguendo i comandi indicati di seguito:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -122,7 +129,7 @@ Il file di configurazione di rete del tuo server si trova in /etc/sysconfig/netw
 
 Modifica il file come illustrato nell’esempio seguente. In questo esempio, il nome dell’interfaccia di rete è eth0. L’interfaccia del tuo server può essere diversa. Inoltre, abbiamo omesso la configurazione di failover dell’IPv4 per evitare confusione, ma la configurazione dell’IPv6 viene effettuata nello stesso file di configurazione.
 
-```sh
+```console
 IPV6INIT=yes
 IPV6_AUTOCONF=no
 IPV6_DEFROUTE=yes
@@ -141,7 +148,7 @@ Salva le tue modifiche sul file, quindi riavvia la rete o il server per applicar
 
 Puoi testare la connettività IPv6 eseguendo i comandi indicati di seguito:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -172,7 +179,7 @@ Il file di configurazione di rete del tuo server si trova in `/etc/rc.conf`. Usa
 
 Modifica il file come illustrato nell’esempio seguente. In questo esempio, il nome dell’interfaccia di rete è em0. L’interfaccia del tuo server può essere diversa.
 
-```sh
+```console
 IPv6_activate_all_interfaces="YES" 
 IPv6_defaultrouter="IPv6_GATEWAY" 
 ifconfig_em0_IPv6="inet6 IPv6_Address prefixlen 64"
@@ -188,7 +195,7 @@ Salva le tue modifiche sul file, quindi riavvia la rete o il server per applicar
 
 Puoi testare la connettività IPv6 eseguendo i comandi indicati di seguito:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -218,7 +225,7 @@ Apri il file di configurazione di rete che si trova in /etc/systemd/network. A s
 
 Servendoti di un editor di testo, modifica il file aggiungendo le righe che seguono alle relative sezioni, come viene indicato nell’esempio qui sotto:
 
-```sh
+```console
 [Network]
 Destination=Gateway_Address
 
@@ -229,8 +236,9 @@ Address=IPv6_Address/64
 Destination=Gateway_Address
 Scope=link
 ```
-per aggiungere più indirizzi IPv6, aggiungi altre sezioni \[Address]
-```sh
+per aggiungere più indirizzi IPv6, aggiungi altre sezioni \[Address].
+
+```console
 [Address]
 Address=IPv6_Address_2/64
 
@@ -245,7 +253,7 @@ Salva le tue modifiche sul file, quindi riavvia la rete o il server per applicar
 
 Puoi testare la connettività IPv6 eseguendo i comandi indicati di seguito:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes

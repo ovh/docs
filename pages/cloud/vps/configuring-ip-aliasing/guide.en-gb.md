@@ -21,10 +21,10 @@ IP aliasing refers to a special network configuration for certain OVHcloud servi
 
 ## Requirements
 
-- a [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
-- a [failover IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/) or a failover IP block
-- administrative access (root) via SSH or GUI to your server
-- basic networking and administration knowledge
+- A [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
+- A [failover IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/) or a failover IP block
+- Administrative access (root) via SSH or GUI to your server
+- Basic networking and administration knowledge
 
 
 ## Instructions
@@ -123,12 +123,17 @@ Open the network configuration file for editing with the following command:
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Do not change the existing lines in the file; add your failover IP address according to the example below:
+Do not modify the existing lines in the configuration file. Add your failover IP address by adding a second configuration block for the public interface according to the example below:
 
 ```yaml
 network:
     version: 2
     ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
+            set-name: NETWORK_INTERFACE            
         NETWORK_INTERFACE:
             dhcp4: true
             match:

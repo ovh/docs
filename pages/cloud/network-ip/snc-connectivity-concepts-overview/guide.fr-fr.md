@@ -32,6 +32,8 @@ La connexion IPsec se fait via deux périphériques (par zone SecNumCloud). BGP 
 
 ## Composants de la solution SecNumCloud Connectivity
 
+![SNC Network Global Overview](images/SNC-Global-Network.svg){.thumbnail}
+
 ### Sous-réseau
 
 * Un sous-réseau est composé d’un préfixe IPv4. Taille maximale prise en charge : /24
