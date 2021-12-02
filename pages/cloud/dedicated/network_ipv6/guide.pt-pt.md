@@ -39,6 +39,12 @@ Se está a usar um template Linux fornecido pela OVHcloud para instalar o servid
 > - O endereço IPv6 do servidor é 2607:5300:60:62ac::/64. Logo, o IPv6_GATEWAY vai ser 2607:5300:60:62FF:FF:FF:FF:FF.
 > - O endereço IPv6 do servidor é 2001:41D0:1:46e::/64. Logo, o IPv6_GATEWAY vai ser 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
+> A forma mais segura de recuperar as informações de rede do seu servidor é [utilizar a API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). Execute a seguinte chamada API, indicando o nome interno do servidor (exemplo: `ns3956771.ip-169-254-10.eu`):
+>
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/specifications/network
 
 ### Distribuições Debian e baseadas em Debian
 
