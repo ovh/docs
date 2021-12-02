@@ -13,77 +13,58 @@ order: 10
 
 ## Objectif
 
-Le service SpoofGuard permet d'éviter une forme d'attaque malveillante appelée « falsification Web » ou « hameçonnage ».
+SpoofGuard protège contre l'usurpation d'adresse IP en conservant une table de référence des noms et des adresses IP des machines virtuelles. SpoofGuard conserve cette table de référence à l'aide des adresses IP que NSX Manager récupère de VMware Tools lors du démarrage initial d'une machine virtuelle.
 
-**Ce guide explique comment établir cette solution**
+**Ce guide explique comment établir une stratégie Spoofguard**
 
 ## Prérequis
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir activé le [firewall distribué](https://docs.ovh.com/fr/private-cloud/configurer-le-firewall-distribue-nsx/)
 
 
 ## En pratique
 
-### Accès à l'interface
 
 Dans l'interface vSphere, allez dans le Tableau de bord `Mise en réseau et sécurité`{.action}.
 
 ![Menu](images/en01dash.png){.thumbnail}
 
 
-Sur la gauche de votre écran, naviguez vers `Dispositifs NSX Edge`{.action} puis cliquez sur le dispositif à paramétrer.
+Sur la gauche de votre écran, naviguez vers `Spoofguard`{.action} puis cliquez `+ Ajouter`{.action} pour créer une nouvelle stratégie.<br>
+*Vous pouvez à la place editer la statégie par défaut*
 
-![NSX](images/en02nsx.png){.thumbnail}
+![SPOOF](images/en02spoof.png){.thumbnail}
 
-Pour accèder au service SpoofGuard, rendez vous dans l'interface de gestion NSX et séléctionnez le service disponible sur le bandeau latéral gauche.
 
-![](images/spoofguard.png){.thumbnail}
-
-### Créer une politique SpoofGuard
-
-Cliquez sur le bouton `+ Ajouter`{.action} pour créer une nouvelle politique.
-
-Entrez le nom de votre politique, puis activez la.
-
-Séléctionnez le mode de votre choix :
-
-- Approuver automatiquement les attributions d'adresse IP lors de leur première utilisation : pour faire confiance à toutes les sessions de propriété intellectuelle lors de l'enregistrement initial.
-
-- Inspecter et approuver manuellement toutes les attributions d'adresses IP avant leurs utilisation : pour exiger l'approbation manuelle de toutes les adresses IP.
+Nommez et activez la stratégie.<br>
+Choisissez le mode à utiliser:
+- Approuver automatiquement les attributions d'adresses IP lors de leur première utilisation
+- Inspecter et approuver manuellement toutes les attributions d'adresses IP avant leur utilisation
 > [!warning]
 >
-> Ceci entraînera une interruption de tout votre trafic réseau jusqu'à ce que vous validiez tous les couples IP/MAC**.
+> Le mode manuel bloque tout le trafic de vos VMs tant que les couples vNIC/IP ne sont pas validés.
 >
+Vous pouvez également autoriser l'adresse locale comme adresse valide dans l'espace de noms.<br>
+Cliquez sur `Suivant`{.action}.
 
-Vous pouvez également cocher la case permettant d'autoriser les adresses locales (169.254.0.0/16, fe80::/64) comme adresses valides dans l'espace de noms.
-
-![](images/spoofguard_NewPolicy1.png){.thumbnail}
-
-Séléctionnez ensuite les portGroup sur lesquels vous souhaitez appliquer votre politique.
-
-![](images/spoofguard_NewPolicy2.png){.thumbnail}
-
-Puis cliquer sur `Terminer`
-
-Votre politique est à présent ajoutée, des premières actions pourront être en attente. 
-
-![](images/spoofguard_NewPolicy3.png){.thumbnail}
-
-Après avoir cliquer sur le nombre disponible dans la colonne `Nombre total de vNic` vous arriverez sur cette interface.
-
-> [!primary]
->
-> Si vous cliquez sur les nombres disponibles dans les colonnes `En attente d'approbation` ou `Adresses IP en conflit` vous arriverez sur la même page.
->
-
-![](images/spoofguard_NewPolicy4.png){.thumbnail}
+![POLICY](images/en03settings.png){.thumbnail}
 
 
-> [!warning]
->
-> Attention à ne pas effacer les IP affectées à vos machines virtuelles sous peine d'entrainer une coupure de communication.
->
+Selectionnez les objets réseaux sur lesquels la statégie sera appliquée puis cliquez sur `Terminer`{.action}.
+
+![POLICY](images/en04network.png){.thumbnail}
+
+
+La stratégie est maintenant dans la liste et est active.<br>
+En cas d'alerte et/ou d'actions en attente, vous pouvez cliquez sur le nombre dans les colonnes En attente d'approbation ou Adresses IP en conflit.
+
+![DONE](images/en04done.png){.thumbnail}
+
+
+Bravo et merci.
+
 
 ## Aller plus loin
 
