@@ -63,7 +63,7 @@ If you are using an OVHcloud-provided Linux OS template to install your server, 
 
 #### Step 1: Use SSH to connect to your server
 
-Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server).
 
 #### Step 2: Open your server's network configuration file
 
@@ -120,7 +120,7 @@ If you are not able to ping this IPv6 address, check your configuration and try 
 
 #### Step 1: Use SSH to connect to your server
 
-Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server).
 
 
 #### Step 2: Open your server's network configuration file
@@ -170,7 +170,7 @@ If you are not able to ping this IPv6 address, check your configuration and try 
 
 #### Step 1: Use SSH to connect to your server
 
-Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server).
 
 
 #### Step 2: Open your server's network configuration file
@@ -217,7 +217,7 @@ If you are not able to ping this IPv6 address, check your configuration and try 
 
 #### Step 1: Use SSH to connect to your server
 
-Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server).
 
 #### Step 2: Open your server's network configuration file
 
@@ -273,7 +273,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Step 1: Use RDP to connect to your server
 
-Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server).
 
 
 #### Step 2: Open your server's network configuration

@@ -19,7 +19,7 @@ A **port** in the context of [OpenStack Neutron](https://docs.openstack.org/neut
 >
 > This guide only concerns configurations for private networks. For public networks the firewall rules are global.
 >
-> Please take note of the [migration details](#migration) below regarding changes to the Public Cloud OpenStack regions.
+> Please take note of the [region and migration details](#regions) below regarding changes to the Public Cloud OpenStack regions.
 
 ## Requirements
 
@@ -120,7 +120,7 @@ Enter the following command to associate your security group with your port:
 openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 ```
 
-#### Different behaviour depending on regions
+#### Different behaviour depending on regions <a name="regions"></a>
 
 The private network default configuration might be different depending on the region you are using.
 
@@ -155,7 +155,7 @@ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_securi
 False
 ```
 
-### Migration process <a name="migration"></a>
+### Migration process
 
 This will occur according to the following process:
 
