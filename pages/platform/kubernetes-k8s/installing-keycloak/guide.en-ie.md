@@ -5,7 +5,7 @@ excerpt: Easily secure applications and services deployed in an OVHcloud Managed
 section: Tutorials
 ---
 
-**Last updated 1th December, 2021.**
+**Last updated 2th December, 2021.**
 
 <style>
  pre {
@@ -337,29 +337,142 @@ The first user connection required an initial password, so let's create it:
 3) Disable the `Temporary` flag to prevent having to update the password on first login
 4) Then click on the `Set Password` button and confirm your choice
 
-### Kubernetes API Server configuration
+### Configure Keycloak instance in your Kubernetes cluster as an OIDC provider
 
 Now you have a working keycloak, and created a User, you can go to the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb){.external}.
 Click on `Public Cloud' tab, and then in the sidebar, click on `Managed Kubernetes Service` link.
 
-Click in your your Kubernetes cluster you want to link to your OIDC provider.
-At the right, you can find the `Access and security` section.
-In this section, fill the `OIDC Provider` field
+![OVHcloud Kubernetes section](images/kube.png)
 
-...
+Click in your Kubernetes cluster you want to link to your OIDC provider.
+At the right, you can find the `Access and security` section:
 
-OIDC Provider field: xxx
+![Manager](images/manager.png)
 
-"Configurer un fournisseur OIDC"
+In this section, you can find the `OIDC provider`.
+For the moment, you should have the information message: "No OIDC provider configured".
+
+In order to add our OIDC provider, click on `...` button, and then in `Configure an OIDC provider`.
+
+![Configure an OIDC provider](images/configure-oidc-provider.png.png)
+
+You should have a new pop-up. Fill it with our Keycloak informations like this:
+
+![OIDC popup](images/popup.png)
+
+Explanation:
+
+- In `Provider URL` you should copy/paste the URL to access to the previsouly defined realm: https://${your-configured-root-url}/auth/realms/${your-configured-realm-name}
+
+In my example I used the `ovh-lab-k8s-oidc-authentication` realm
+issuerUrl: https://keycloak.135.125.84.194.nip.io/auth/realms/ovh-lab-k8s-oidc-authentication
+
+- In `Client ID` you should copy/paste the name of the Keycloak client previously defined.
+
+In my example I defined the client named: `k8s-oidc-auth`.
+
+Our Kubernetes cluster is now configured with our Keycloak instances, both are linked.
+
+#### OIDC integration and configuration
+
+If it is not already done, you must install the `kubectl` plugin manager named [Krew](https://krew.sigs.k8s.io/).  
+Then, install the [oidc-login plugin](https://github.com/int128/oidc-login) to extend the capacity of the `kubectl` command line and easily configure your environment to be able to use your Keycloak server.
+
+```bash
+kubectl krew install oidc-login
+```
+
+Once `oidc-login` installed, go back to the Keycloak web interface to get your client secret.  
+
+You can find this information here:
+
+- Click on the `Clients` menu in the left column
+- Click on your previously created client (`k8s-oidc-auth` in my example)
+- Go to the `Credentials` tab ang get your `secret` value
+
+![Keycloak Clients](images/clients.png)
+
+![Keycloak Clients Secret](images/clients-credentials.png)
+
+Then, customize the following command line, with your information and execute it to be able to:
+
+- Log in to your Keycloak provider through your browser
+- Generate a token from it
+- Configure your Kubectl context to access to Kubernetes APIs with the freshly generated token
+
+Here with the information related to my example:
+
+```bash
+kubectl oidc-login setup \
+--oidc-issuer-url="https://keycloak.135.125.84.194.nip.io/auth/realms/ovh-lab-k8s-oidc-authentication" \
+--oidc-client-id="k8s-oidc-auth" \
+--oidc-client-secret="c9fbfe32-bff1-4180-b9ff-29108e42b2a5"
+```
+
+Your favorite browser will display an authentication page to your Keycloak server.  
+Log in with the credentials defined during the `user creation` step of this tutorial.
+
+Once, the authentication succeeded, you can close your browser tab on go back to your console where a message have been displayed.
+
+The `oidc-login` plugin has given you some instructions to follow to finalize the configuration of your Kubectl environment.
+
+Now, you must create a `ClusterRoleBinding` (step 3 of the oidc-login output):
+
+```bash
+# Example of output generated on my environment, please customize it with your information
+kubectl create clusterrolebinding oidc-cluster-admin --clusterrole=cluster-admin --user='https://keycloak.135.125.84.194.nip.io/auth/realms/ovh-lab-k8s-oidc-authentication#fdb220d7-ad75-4486-9866-b8f59bd6e661'
+```
+
+You can ignore the `step 4`, because we already configured the `kube-apiserver` through the OVHcloud Control plane.  
+
+Then, configure your `kubeconfig` (step 5 of the `oidc-login` output):
+
+```bash
+# Example of output generated on my environment, please customize it with your information
+kubectl config set-credentials oidc \
+  --exec-api-version=client.authentication.k8s.io/v1beta1 \
+  --exec-command=kubectl \
+  --exec-arg=oidc-login \
+  --exec-arg=get-token \
+  --exec-arg=--oidc-issuer-url=https://keycloak.135.125.84.194.nip.io/auth/realms/ovh-lab-k8s-oidc-authentication \
+  --exec-arg=--oidc-client-id=k8s-oidc-auth \
+  --exec-arg=--oidc-client-secret="c9fbfe32-bff1-4180-b9ff-29108e42b2a5"
+```
+
+And verify your cluster access (step 6 of the `oidc-login` output):
+
+```bash
+kubectl --user=oidc get nodes
+```
+
+If you could see the nodes of your Managed Kubernetes Service, congrats your Keycloak instance is up and running!
 
 
-TODO: xxxx
+## Upgrade the keycloak deployment if needed
 
+```bash
+helm upgrade ovhcloud-keycloak-lab codecentric/keycloak -n keycloak -f files/02-keycloak/01-keycloak-definition.yaml
+```
 
+## Rollout restarts the Keycloak statefulsets if needed
 
+```bash
+kubectl -n keycloak rollout restart statefulset ovh-keycloak-lab
+```
 
+## Various troubleshooting
 
-### Cleanup
+- If the `cert-manager` namespace is stuck in deleting state, see the following documentation: [namespace-stuck-in-terminating-state](https://cert-manager.io/docs/installation/helm/#namespace-stuck-in-terminating-state)
+- If the `POST` query executed to create your OIDC `kube-apiserver` flags returns you a `400` error, please check if the used `REALM` name is properly configured in the given `issuerUrl` parameter.  
+
+Example of results returned by the OVHcloud API:
+
+```bash
+Bad Request (400)
+{ "class": "Client::BadRequest", "message": "[InvalidDataError] 400: Failed to reach issuer URL for validation
+```
+
+## Cleanup
 
 To clean up all existing resources related to the Keycloak Helm chart, you can execute the following command lines:
 
