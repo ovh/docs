@@ -39,6 +39,13 @@ Si está utilizando una plantilla de OVHcloud para instalar el servidor en un si
 > - La dirección IPv6 del servidor es 2607:5300:60:62ac::/64. Por lo tanto, la IPv6_GATEWAY será 2607:5300:60:62FF:FF:FF:FF:FF.
 > - La dirección IPv6 del servidor es 2001:41D0:1:46e::/64. Por lo tanto, la IPv6_GATEWAY será 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
+> La forma más segura de obtener la información de red del servidor es [mediante la API de OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
+>
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/specifications/network
+
 
 ### Sistemas operativos Debian y basados en Debian
 
