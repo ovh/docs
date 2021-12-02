@@ -27,10 +27,10 @@ Sie können einen vorkonfigurierten Minecraft-Server mieten oder einen solchen s
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) mit mindestens 2 GB RAM in Ihrem OVHcloud Kunden-Account
-- Sie haben eine GNU/Linux Distribution auf dem Server installiert
-- Administrator-Zugang (root) über SSH auf Ihren Server
-- Sie verfügen über ein grundlegendes Verständnis der GNU/Linux-Administration
+- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Kunden-Account.
+- Sie haben eine GNU/Linux Distribution auf dem Server installiert.
+- Administrator-Zugang (root) über SSH auf Ihren Server.
+- Sie verfügen über ein grundlegendes Verständnis der GNU/Linux-Administration.
 
 ## In der praktischen Anwendung
 

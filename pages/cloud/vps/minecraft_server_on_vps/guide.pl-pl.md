@@ -27,7 +27,7 @@ Możesz wynająć lub samodzielnie skonfigurować serwer Minecraft na [serwerze 
 
 ## Wymagania początkowe
 
-- Posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud z co najmniej 2 GB RAM
+- Posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
 - Instalacja dystrybucji GNU/Linux na serwerze
 - Dostęp administratora (root) przez SSH do serwera
 - Podstawowe zrozumienie administracji GNU/Linux
