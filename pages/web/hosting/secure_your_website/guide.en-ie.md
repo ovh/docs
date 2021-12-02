@@ -10,10 +10,10 @@ order: 1
 
 ## Objective
 
-This guide will provide you with basic knowledge to ensure that your services are always available, protect your data integrity and secure the access to your solutions. It only applies to websites hosted on OVHcloud [shared servers](https://www.ovhcloud.com/en-gb/web-hosting/).
+This guide will provide you with basic knowledge to ensure that your services are always available, protect your data integrity and secure the access to your solutions. It only applies to websites hosted on OVHcloud [shared servers](https://www.ovhcloud.com/en-ie/web-hosting/).
 
 This guide is organised in stages in an increasing order of technical difficulty. The security of your site will be measured by the element concerning it that is least protected. We therefore recommend that you carry out all of the actions described here.<br/>
-However, if you experience any difficulties completing some of these steps, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/en/) or our [partners](https://partner.ovhcloud.com/en-gb/).
+However, if you experience any difficulties completing some of these steps, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/en/) or our [partners](https://www.ovhcloud.com/en-ie/web-hosting/).
 
 **Find out how to secure your website.**
 
@@ -26,9 +26,9 @@ However, if you experience any difficulties completing some of these steps, plea
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
 - having the [login details](../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
 ## Instructions
@@ -61,7 +61,7 @@ In the event of your login details being lost and/or the primary email address f
 > OVHcloud regularly backs up your data on its infrastructure. However, a handling error such as a delete operation launched manually on a live database, or a non-renewal of your services, will result in the permanent loss of your data and all their backups.
 >
 
-Start by backing up the data that makes up your (FTP **AND** database files), following the instructions in this [guide](../export-a-website/). Import them on your desktop or on an external device, such as a NAS server or an USB key.
+Start by backing up the data that makes up your (FTP **AND** database files), following the instructions in this [guide](../log-in-to-storage-ftp-web-hosting/) for FTP files and [this one](../web_hosting_database_export_guide/) for the database. Import them on your desktop or on an external device, such as a NAS server or an USB key.
 
 Website management software (CMS) also provides the ability to install automatic backup plugins.<br>
 Check the official forums for your favourite CMS or contact the [OVHcloud community](https://community.ovh.com/en/).
@@ -90,7 +90,7 @@ Set up an encrypted connection to your website via the **HTTPS** protocol by usi
 
 ### Step 8 - Protect your forms
 
-Forms on websites ca be targeted by hackers/spammers. Protect your forms against their attacks by implementing **CAPTCHA plugins** on your website.
+Forms on websites can be targeted by hackers/spammers. Protect your forms against their attacks by implementing **CAPTCHA plugins** on your website.
 
 ### Step 9 - Set up a security plugin on your site
 
@@ -103,7 +103,7 @@ Add a security plugin recommended by the CMS publisher to your website:
 
 ### Step 10 - Check that your hosting does not contain any malwares
 
-In this step, you will need to log in to your [FTP space](../log-in-to-storage-ftp-web-hosting/). It involves technical skills to recognise possible malicious files on your web hosting. If you experience any difficulties with this verification, please do not hesitate to contact our [partners](https://partner.ovhcloud.com/en-gb/).
+In this step, you will need to log in to your [FTP space](../log-in-to-storage-ftp-web-hosting/). It involves technical skills to recognise possible malicious files on your web hosting. If you experience any difficulties with this verification, please do not hesitate to contact our [partners](https://www.ovhcloud.com/en-ie/web-hosting/).
 
 If you have any doubts regarding the safety of data within your FTP server, please also carry out the checks in [step 1](#local) once again and [change the password](../modify-ftp-user-password/) on your FTP space.
 
@@ -123,8 +123,8 @@ You can also create a **test version** of your website (e.g.: test.mydomain.tld)
 
 [Responding when your hosting is deactivated for security purposes](../security-practices-hosting-disabled/)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://www.ovhcloud.com/en-ie/web-hosting/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

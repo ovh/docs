@@ -10,10 +10,10 @@ order: 1
 
 ## Objective
 
-This guide will provide you with basic knowledge to ensure that your services are always available, protect your data integrity and secure the access to your solutions. It only applies to websites hosted on OVHcloud [shared servers](https://www.ovhcloud.com/en-gb/web-hosting/).
+This guide will provide you with basic knowledge to ensure that your services are always available, protect your data integrity and secure the access to your solutions. It only applies to websites hosted on OVHcloud [shared servers](https://www.ovhcloud.com/asia/web-hosting/).
 
 This guide is organised in stages in an increasing order of technical difficulty. The security of your site will be measured by the element concerning it that is least protected. We therefore recommend that you carry out all of the actions described here.<br/>
-However, if you experience any difficulties completing some of these steps, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/en/) or our [partners](https://partner.ovhcloud.com/en-gb/).
+However, if you experience any difficulties completing some of these steps, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/en/) or our [partners](https://www.ovhcloud.com/asia/web-hosting/).
 
 **Find out how to secure your website.**
 
@@ -26,9 +26,9 @@ However, if you experience any difficulties completing some of these steps, plea
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/)
 - having the [login details](../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 - access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
 ## Instructions
@@ -103,7 +103,7 @@ Add a security plugin recommended by the CMS publisher to your website:
 
 ### Step 10 - Check that your hosting does not contain any malwares
 
-In this step, you will need to log in to your [FTP space](../log-in-to-storage-ftp-web-hosting/). It involves technical skills to recognise possible malicious files on your web hosting. If you experience any difficulties with this verification, please do not hesitate to contact our [partners](https://partner.ovhcloud.com/en-gb/).
+In this step, you will need to log in to your [FTP space](../log-in-to-storage-ftp-web-hosting/). It involves technical skills to recognise possible malicious files on your web hosting. If you experience any difficulties with this verification, please do not hesitate to contact our [partners](https://www.ovhcloud.com/asia/web-hosting/).
 
 If you have any doubts regarding the safety of data within your FTP server, please also carry out the checks in [step 1](#local) once again and [change the password](../modify-ftp-user-password/) on your FTP space.
 
@@ -123,8 +123,8 @@ You can also create a **test version** of your website (e.g.: test.mydomain.tld)
 
 [Responding when your hosting is deactivated for security purposes](../security-practices-hosting-disabled/)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://www.ovhcloud.com/asia/web-hosting/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
