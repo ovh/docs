@@ -1,80 +1,107 @@
 ---
 title: 'vRack zwischen Public Cloud und Dedicated Server einrichten'
 slug: vrack-zwischen-public-cloud-dedicated-server-einrichten
-excerpt: 'Hier erfahren Sie, wie Sie ein privates Netzwerk zwischen einer Public Cloud Instanz und einem dedizierten Server einrichten.'
+excerpt: 'Erfahren Sie hier, wie Sie ein privates Netzwerk zwischen Public Cloud Instanzen und Dedicated Servern einrichten'
 section: vRack
 ---
 
-**Stand 02.04.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Einleitung
+**Letzte Aktualisierung am 22.11.2021**
 
-Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Netzwerk, mit dem Sie das Routing zwischen zwei oder mehr OVH [Dedicated Servern](https://www.ovh.de/dedicated_server/){.external} einrichten können. Darüber hinaus können Sie auch [Public Cloud Instanzen](https://www.ovh.de/public-cloud/instances/){.external} zu Ihrem privaten Netzwerk hinzufügen, um eine Infrastruktur aus physischen und virtuellen Ressourcen zu erstellen.
+## Ziel
 
-**In dieser Anleitung erfahren Sie, wie Sie ein privates Netzwerk zwischen einer Public Cloud Instanz und einem dedizierten Server einrichten.**
+OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Netzwerk, mit dem Sie das Routing zwischen zwei oder mehr OVHcloud [Dedicated Servern](https://www.ovh.de/dedicated_server/){.external} einrichten können. Darüber hinaus können Sie auch [Public Cloud Instanzen](https://www.ovh.de/public-cloud/instances/){.external} zu Ihrem privaten Netzwerk hinzufügen, um eine Infrastruktur aus physischen und virtuellen Ressourcen zu erstellen.
+
+**Diese Anleitung erklärt, wie Sie eine Public Cloud Instanz und einen dedizierten Server über vRack verbinden.**
 
 
 ## Voraussetzungen
 
-- Sie haben einen [vRack](https://www.ovh.de/loesungen/vrack){.external} Dienst aktiviert.
-- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](https://www.ovh.de/dedicated_server/){.external}.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
-- Sie haben Zugriff auf den von Ihnen gewählten IP-Adressbereich.
+- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
+- Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) (kompatibel mit vRack) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben einen privaten IP-Adressbereich für das vRack festgelegt.
+
+## In der praktischen Anwendung
+
+### Public Cloud Projekt zum vRack hinzufügen
+
+Nachdem Ihr [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/erstellung_public_cloud_projekt/) fertig konfiguriert ist, muss es zum vRack hinzugefügt werden. Dies kann auf zwei Arten geschehen.
+
+#### Option 1: Einen neuen vRack Dienst bestellen, wenn Sie noch keinen verwenden (kostenlos).
+
+Gehen Sie zum Bereich `Bare Metal Cloud`{.action} und klicken Sie links auf den Button `Bestellen`{.action}. Wählen Sie in diesem Menü `vRack`{.action} aus.
+
+![vRack bestellen](images/orderingvrack.png){.thumbnail}
+
+Sie werden auf eine neue Seite weitergeleitet, um die Bestellung zu validieren. Die Ausführung wird einige Minuten dauern.
+
+Sobald der vRack Dienst auf Ihrem Account bereitgestellt ist, können Sie Ihr Projekt hinzufügen.
+
+Klicken Sie im Bereich `Bare Metal Cloud`{.action} auf `Network`{.action} und dann auf `vRack`{.action}. Wählen Sie Ihr vRack aus der Liste aus.
+
+![vRack](images/vrackdelivered.png){.thumbnail}
+
+Wählen Sie in der Liste der verfügbaren Dienstleistungen das Projekt aus, das Sie zum vRack hinzufügen möchten, und klicken Sie dann auf den Button `Hinzufügen`{.action}.
+
+![Projekt zum vRack hinzufügen](images/addprojectvrack.png){.thumbnail}
+
+#### Option 2: Im Public Cloud Interface ein [neues vRack erstellen oder ein bestehendes hinzufügen](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#schritt-1-vrack-aktivieren-und-verwalten).
 
 
-## Beschreibung
+### Instanz in das vRack integrieren
 
-### Public Cloud Projekt erstellen
+Es können zwei Situationen auftreten:
 
-Wenn Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt sind, gehen Sie in den Bereich `Cloud`{.action} und anschließend auf den Button `Bestellen`{.action}.
+- Die Instanz existiert noch nicht.
+- Die Instanz existiert bereits und Sie müssen sie zum vRack hinzufügen.
 
-![Ein Projekt erstellen](images/pci-project-01.png){.thumbnail}
+#### Fälle einer neuen Instanz
 
-Klicken Sie nun im Menü unter `Bestellen` auf `Cloud Projekt`{.action}.
+Wenn Sie Hilfe benötigen, folgen Sie zunächst diesem Leitfaden: [Erstellen Ihrer ersten Public Cloud-Instanz](../public-cloud-erste-schritte/#schritt-3-instanz-erstellen){.external}. Bei der Erstellung einer Instanz können Sie in Schritt 4 ein privates Netzwerk angeben, in das Ihre Instanz integriert werden kann. Wählen Sie dann im dargestellten Drop-down-Menü Ihr zuvor erstelltes vRack aus.
 
-![Ein Projekt erstellen](images/pci-project-02.png){.thumbnail}
+#### Im Fall einer bereits bestehenden Instanz
 
-Geben Sie einen Namen für Ihr Projekt ein, wählen Sie das Zahlungsmittel aus und klicken Sie anschließend auf den Button `Projekt anlegen`{.action}.
+Sie können eine bestehende Instanz einem privaten Netzwerk zuweisen. Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#im-fall-einer-bestehenden-instanz_2) der zugehörigen Anleitung.
 
-![Ein Projekt erstellen](images/pci-project-03.png){.thumbnail}
+### VLAN ID erstellen
 
-Nachdem das Projekt eingerichtet ist, aktivieren Sie die privaten Netzwerke. Klicken Sie hierzu auf der Seite des Projekts auf `Private Netzwerke aktivieren`{.action}.
+Damit beide Dienste miteinander kommunizieren können, müssen sie mit derselben **VLAN ID** "getagt" werden. 
 
-![vRack aktivieren](images/pci-vrack-01.png){.thumbnail}
+#### Verwendung der Standard-ID
 
-Wählen Sie anschließend in der Drop-down-Liste unter `Vorhandenes vRack auswählen`{.action} Ihr vRack aus.
+Die VLAN ID für dedizierte Server ist standardmäßig **0**. Um diese VLAN-ID zu verwenden, müssen Sie das mit Ihrer Instanz verbundene private Netzwerk als VLAN **0** "taggen". Setzen Sie dazu einen Haken bei `VLAN-ID festlegen`, wenn Sie Ihrer Instanz ein privates Netzwerk hinzufügen.
 
-![vRack aktivieren](images/pci-vrack-02.png){.thumbnail}
+Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#schritt-2-erstellen-eines-vlan-im-vrack_1) der entsprechenden Anleitung.
+
+> [!primary]
+> In der Public Cloud definieren Sie eine einzige VLAN ID pro privatem Netzwerk.
+>
+> Sie können nicht dieselbe VLAN-ID in zwei verschiedenen privaten Netzwerken definieren.
+
+#### Verwendung einer anderen VLAN ID
+
+Wenn Sie eine andere VLAN ID verwenden möchten:
+
+- Das mit der Public Cloud Instanz verbundene private Netzwerk muss mit dieser ID "getagt" werden.
+- In der Netzwerkkonfigurationsdatei des Dedicated Servers muss die private Netzwerkschnittstelle mit dieser ID "getagt" werden.
 
 
-### Public Cloud Instanz erstellen
+> [!primary]
+> 
+> Anders als bei Dedicated Servern ist es nicht notwendig, das VLAN direkt auf einer Public Cloud Instanz zu "taggen".
+>
 
-Klicken Sie auf der Seite Ihres Projekts auf den Button `Aktionen`{.action}.
-
-![Eine Instanz erstellen](images/pci-01.png){.thumbnail}
-
-Klicken Sie in der Drop-down-Liste auf die Option `Server hinzufügen`{.action}.
-
-![Eine Instanz erstellen](images/pci-02.png){.thumbnail}
-
-Klicken Sie dann auf den Button `Fortgeschrittene Optionen`{.action}.
-
-![Eine Instanz erstellen](images/pci-03.png){.thumbnail}
-
-Klicken Sie anschließend auf die Drop-down-Liste unter „**Zuweisung zum privaten Netzwerk:**“ und wählen Sie Ihr vRack aus. Klicken Sie nun auf `Weiter`{.action}, um zum vorherigen Fenster zurückzukehren.
-
-![Eine Instanz erstellen](images/pci-04.png){.thumbnail}
-
-Um den Vorgang abzuschließen, wählen Sie Ihre Installationsoptionen aus und klicken Sie auf den Button `Jetzt starten`{.action}.
-
-![Eine Instanz erstellen](images/pci-05.png){.thumbnail}
-
+Beispiel: Wenn Sie das mit Ihrer Instanz verbundene private Netzwerk mit der VLAN ID 2 definiert haben, muss das private Netzwerkinterface Ihres dedizierten Servers mit VLAN 2 "getagt" werden. Weitere Informationen finden Sie in folgender Anleitung: "[Mehrere VLANs im vRack erstellen](https://docs.ovh.com/de/dedicated/vrack-vlan-erstellen/)".
 
 ### Netzwerkinterfaces konfigurieren
 
-Um die Netzwerkinterfaces zwischen der neu erstellten Public Instanz und Ihrem dedizierten Server einzurichten, befolgen Sie unsere Anleitung „[Mehrere dedizierte Server im vRack konfigurieren](../mehrere-dedizierte-server-im-vrack-konfigurieren/)“
-
+Konfigurieren Sie anschließend die Netzwerkinterfaces auf Ihrer neuen Public Cloud Instanz und Ihrem Dedicated Server mithilfe dieser Anleitung: "[Mehrere dedizierte Server im vRack konfigurieren](https://docs.ovh.com/de/dedicated/mehrere-dedizierte-server-im-vrack-konfigurieren/)".
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.

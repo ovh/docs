@@ -28,6 +28,8 @@ IPsec connection is provided through two devices (per SecNumCloud zone) and BGP 
 
 ## Components
 
+![SNC Network Global Overview](images/SNC-Global-Network.svg){.thumbnail}
+
 ### Subnet
 
 * A subnet is composed of one IPv4 prefix. Maximum supported size: /24

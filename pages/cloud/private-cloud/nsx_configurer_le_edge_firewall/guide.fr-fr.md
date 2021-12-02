@@ -1,110 +1,168 @@
 ---
 title: Configurer le NSX Edge Firewall
 slug: configurer-le-nsx-edge-firewall
-excerpt: Créer des règles 
+excerpt: Créer des règles de pare-feu
 legacy_guide_number: '7766384'
 section: NSX
 order: 04
 ---
 
-**Dernière mise à jour le 27/02/2019**
+**Dernière mise à jour le 25/11/2021**
 
 ## Objectif
 
-Le pare-feu permet d'appliquer des restrictions de communication par le trafic géré par la Edge, via plusieurs paramètres configurables en terme de source ou de destination par exemple.
+Le service de pare-feu NSX accepte ou refuse le trafic réseau en fonction de règles appliquées à des objets ou groupes d'objets.
 
-**Ce guide explique la configuration de ce pare-feu**
+**Ce guide explique comment créer ces règles**
 
 ## Prérequis
 
-- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
 
 ## En pratique
 
-Pour commencer, rendez-vous dans la partie "NSX Edges" afin de trouver la liste des Edges déjà déployées. Vous pourrez alors effectuer un double-clic sur votre Edge pour accéder à sa configuration.
+### Accès à l'interface
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_1.jpg){.thumbnail}
+Dans l'interface vSphere, rendez-vous dans le tableau de bord `Mise en réseau et sécurité`{.action}.
 
-Cliquez sur l'onglet "Manage" puis "Firewall" afin d'accéder aux fonctionnalités de pare-feu spécifiques au trafic qui transitera via cette Edge. Dans l'exemple ci-dessous, des règles sont déjà présentes du fait du choix de cette fonctionnalité lors du déploiement.
+![Menu](images/en01dash.png){.thumbnail}
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_2.png){.thumbnail}
+Sur la gauche de votre écran, naviguez vers `Dispositifs NSX Edge`{.action} puis cliquez sur le dispositif à paramétrer.
 
-Vous pouvez très simplement activer ou désactiver la fonctionnalité de pare-feu de cette Edge via un simple bouton.
+![NSX](images/en02nsx.png){.thumbnail}
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_3.png){.thumbnail}
+La section Pare-Feu montre le statut et un bouton pour démarrer ou arrêter le service.
 
-La désactivation du pare-feu désactive également les règles de NAT.
+> [!primary]
+>
+> Toute modification doit être publiée avant d'être active. Vous n'arrêterez pas le service d'un seul clic.     
 
-Cliquez sur `Add Rule` (petit `+`{action} vert) afin d'ajouter une règle de pare-feu. Cela ajoute simplement une ligne supplémentaire avec des valeurs par défaut dans la liste des règle (la règle 2 dans la capture ci-dessous).
+![Rule](images/en03fw.png){.thumbnail}
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_4.png){.thumbnail}
+### Règles de pare-feu
 
-La règle nouvellement ajoutée se placera juste avant la dernière règle dans le cas présent car l'ordre des règles est important. La règle d'autorisation ne serait pas prise en compte si elle était placée après la règle de refus de l'intégralité du trafic. Seule la première règle qui correspond au trafic sera appliquée, les règles suivantes ne seront pas consultées.
+La base d'une règle de pare-feu est de contrôler des services identifiés, en provenance de sources spécifiques et en direction de destinations définies.     
 
-Pour configurer la règle nouvellement ajoutée, il vous suffit de passer votre souris sur chacun des champs, laissant ainsi apparaître divers icônes en fonction du champ choisi ("+" ou "IP" par exemple).
+Cliquez sur `+ Ajouter une règle`{.action}.
 
-Aucune règle n'est appliquée avant que vous ayez cliqué sur "Publish" en haut de page. Cela sera nécessaire à chaque modification. Le bouton "Revert" permet de n'appliquer aucune nouvelle règle et de revenir à l'état en place à la dernière publication de règles.
+La nouvelle règle apparaît avec les champs suivants :
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_5.png){.thumbnail}
+- Bouton (*slider*) d'activation
+- Coche de sélection pour des actions spécifiques (changement de priorité, suppression...)
+- Nom
+- ID
+- Type
+- Source
+- Destination
+- Service
+- Action
+- Bouton (*slider*) de journal (*log*)
+- Paramètres avancés
 
-## Détails sur les champs d'une règle
+![Rule](images/en03rule.png){.thumbnail}
 
-Cette partie permet d'aborder les diverses possibilités que vous avez avec chacun des champs d'une règle, afin que vous puissiez ensuite configurer vos règles en fonction de vos besoins.
+> [!warning]
+>
+> Par défaut, une règle a pour source et destination `Quelconque`, soit une sélection de tout le trafic. Pour des raisons de sécurité, il est recommandé d'éviter les règles globales .
+>
 
-### No.
+Nommez la règle via un clic sur le nom. Les champs`ID` and `Type` seront automatiquement complétés.
 
-Cliquer sur le petit `+`{action} au niveau du numéro d'une règle permet d'avoir les possibilités suivantes :
+#### Source
 
-- "Add Above" : ajouter une règle avant la règle sélectionnée (équivalent de "Add Rule") ;
-- "Add Below" : ajouter une règle après la règle sélectionnée (équivalent de "Add Rule") ;
-- "Delete" : supprimer la règle sélectionnée ;
-- "Copy" : copier les paramètres de la règle sélectionnée ;
-- "Paste Above" : coller les paramètres précédemment copiés avant la règle sélectionnée ;
-- "Paste Below" : coller les paramètres précédemment copiés après la règle sélectionnée.
+La source définit l'origine du trafic.
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_6.png){.thumbnail}
+Survolez le champ et cliquez sur le symbole du `crayon`{.action}. Vous pouvez ajouter des objets et/ou des addresses IP.
 
-### Name
+> [!primary]
+>
+> Si vous activez « Inverser la source », la règle s'appliquera à toutes les sources sauf celles sélectionnées.
 
-Cliquer sur le petit `+`{.action} au niveau de la colonne "Name" d'une règle permet simplement de nommer la règle.
+Cliquez sur `Enregister`{.action}.
 
-Il est toujours préférable de donner un nom explicite à vos règles afin de pouvoir les retrouver rapidement en cas de besoin de modification par la suite.
+![Source](images/en04sourceobjects.png){.thumbnail}
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_7.png){.thumbnail}
+![Source](images/en05sourceIP.png){.thumbnail}
 
-### Source et Destination
+#### Destination
 
-Cliquer sur le petit `+`{.action} au niveau de la colonne `Source` ou `Destination` d'une règle permet de définir plusieurs paramètres de source ou de destination du trafic. Vous pouvez sélectionner plusieurs éléments comme un cluster, une machine virtuelle ou encore un groupe d'IP ou de groupes de ports distribués.
+La destination définit la cible du trafic.
 
-Vous avez également un bouton `IP`{.action} vous permettant de renseigner directement des IP sans passer par la liste de possibilités du bouton `+`{.action}.
+Survolez le champ et cliquez sur le symbole du `crayon`{.action}. Les possibilités sont les mêmes que pour les sources.
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_8.png){.thumbnail}
+> [!primary]
+>
+> Si vous activez « Inverser la source », la règle s'appliquera à toutes les destinations sauf celles sélectionnées.
 
-La source et la destination d'une même règle ne doivent pas forcément se baser sur les mêmes éléments. Vous pouvez par exemple avoir une source en provenance d'un groupe d'IP et une destination correspondant à un cluster.Vous pouvez créer des [groupes d'objets](../configurer-les-groupes-d-objets-nsx/). Cela vous permet d'indiquer par exemple que toutes les machines virtuelles qui incluent "Web" dans leur nom font partie du groupe. Ce groupe peut alors être renseigné en source ou destination pour appliquer une règle à toutes les machines virtuelles qui incluent "Web", sans avoir à modifier la règle à chaque ajout.
+Cliquez sur `Enregister`{.action}.
 
-### Service
+![Destination](images/en07destobjects.png){.thumbnail}
 
-Cliquer sur le petit `+`{.action} au niveau de la colonne "Service" d'une règle permet de définir les services concernés par la règle. Vous avez une liste exhaustive par défaut mais vous pouvez également ajouter un service personnalisé et le port associé via le bouton `New Service...`{.action}.
+![Destination](images/en07destIP.png){.thumbnail}
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_9.png){.thumbnail}
 
-### "Action"
+#### Service
 
-Cliquer sur le petit "+" au niveau de la colonne `Action` vous permet de définir si la règle accepte ou refuse le trafic renseigné dans les champs précédents. Dans la majorité des cas, si vous disposez d'une règle de refus global, vous ajouterez principalement des règles d'autorisation.
+Le service définit le type de trafic visé.
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_10.png){.thumbnail}
+Survolez le champ et cliquez sur le symbole du `crayon`{.action}. Vous pouvez utiliser des services et groupes existants ou ajouter des ports/protocoles bruts. 
 
-## Exemples de règles
+> [!primary]
+>
+> Cliquer sur un service ou un groupe existant vous montrera une descripion des ports et protocoles utilisés.
 
-Dans l'exemple ci-dessous, l'utilité des règles est la suivante:
+Cliquez sur `Enregister`{.action}.
 
-![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_11.jpg){.thumbnail}
+![Service](images/en08servsg.png){.thumbnail}
 
-- 1 : règle par défaut permettant de ne pas restreindre les fonctionnalités de la Edge en elle-même quelles que soient vos configurations ;
-- 2 : règle qui autorise le flux HTTP (port 80) et HTTPS (port 443) vers une IP spécifique ;
-- 3 : règle qui autorise le flux ICMP (ping sur IPv4) depuis tout le réseau interne vers n'importe quelle destination ;
-- 4 : règle qui autorise plusieurs flux de protocoles sortant vers n'importe quelle destination ;
-- 5 : règle par défaut qui refuse tout le trafic n'étant pas autorisé dans les règles précédentes.
+![Service](images/en09servdetail.png){.thumbnail}
+
+![Service](images/en10servport.png){.thumbnail}
+
+#### Action
+
+L'action définit comment le traffic sera dirigé.
+
+Trois options vous sont proposées, sélectionnez celle qui vous convient :
+
+- Accepter : Le trafic est autorisé.
+- Refuser : Le trafic est bloqué sans autre forme de communication.
+- Rejeter : Le trafic est bloqué et un message de port inaccessible est envoyé à la source.     
+
+![Action](images/en11action.png){.thumbnail}
+
+#### Journal
+
+S'il est activé, le bouton *slider* de journal (Log) enregistre les évenements qui concernent la règle.
+
+#### Paramètres avancés
+
+Outre la possibilité d'ajouter des commentaires et de consulter des statistiques, une section de **paramètres avancés** vous permet de définir si le traffic visé est entrant, sortant ou bidirectionnel et, en cas de NAT, si la règle s'applique à la source originale ou traduite.
+
+![Advanced](images/en12adv.png){.thumbnail}
+
+### Priorités des règles
+
+La règle nouvellememnt créée est à présent visible dans la liste. 
+
+Le nombre assigné à la règle définit sa priorité.<br>
+Les règles sont appliquées de haut en bas et a première règle qui s'applique au trafic annule toutes les suivantes.
+
+Cela implique qu'en cas de conflit, c'est la règle avec le plus forte priorité (le plus petit nombre) qui sera appliquée.  
+
+Vous pouvez modifier l'ordre des règles en la cochant et en utilisant les flèches haut et bas.
+
+![Order](images/en13order.png){.thumbnail}
+
+### Publier les règles
+
+La création/modification de règles n'est pas enregistrée tant que vous ne cliquez pas sur `Publier`{.action}.
+
+![Publish](images/en14publish.png){.thumbnail}
+
+![Publish](images/en15done.png){.thumbnail}
 
 ## Aller plus loin
 

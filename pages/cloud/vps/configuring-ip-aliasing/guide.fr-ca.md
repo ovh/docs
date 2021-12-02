@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment ajouter des adresses IP fail-over à votre configur
 section: 'Réseau et IP'
 ---
 
-**Dernière mise à jour le 14 avril 2021**
+**Dernière mise à jour le 30/11/2021**
 
 ## Objectif
 
@@ -145,6 +145,7 @@ network:
             set-name: NETWORK_INTERFACE
             addresses:
             - IP_FAILOVER/32
+           
 ```
 
 > [!warning]
