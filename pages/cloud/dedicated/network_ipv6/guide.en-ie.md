@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
 section: 'Network Management'
 ---
 
-**Last updated 19th May 2020**
+**Last updated 1st December 2021**
 
 ## Objective
 
@@ -16,14 +16,14 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- a [dedicated server](https://www.ovh.ie/dedicated_servers/) in your OVHcloud account
-- all your IPv6 information (prefix, gateway etc.)
-- a basic knowledge of [SSH](http://en.wikipedia.org/wiki/Secure_Shell) and networking
+- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) in your OVHcloud account
+- All your IPv6 information (prefix, gateway etc.)
+- Basic knowledge of [SSH](../ssh-introduction/) and networking
 
 ## Instructions
 
@@ -32,13 +32,21 @@ If you are using an OVHcloud-provided Linux OS template to install your server, 
 
 > [!primary]
 >
-> The default gateway for your IPv6 block (IPv6_GATEWAY) is always xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> The default gateway for your IPv6 block (IPv6_GATEWAY) is usually xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
 >
 > For example:
 > 
 > - The IPv6 address of the server is 2607:5300:60:62ac::/64. The IPv6_GATEWAY will therefore be 2607:5300:60:62FF:FF:FF:FF:FF.
 > - The IPv6 address of the server is 2001:41D0:1:46e::/64. The IPv6_GATEWAY will therefore be 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
+> The safe way to retrieve the networking information for your server is to [use the OVHcloud API](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/). Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
+>
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/specifications/network
+>
+
 
 ### Debian and Debian-based operating systems
 
@@ -55,7 +63,7 @@ If you are using an OVHcloud-provided Linux OS template to install your server, 
 
 #### Step 1: Use SSH to connect to your server
 
-[Find more information in this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
 
 #### Step 2: Open your server's network configuration file
 
@@ -65,7 +73,7 @@ Your server's network configuration file is located in `/etc/network/interfaces`
 
 Amend the file so that it looks like the example below. In this example, the network interface is called `eth0`. The interface on your server may differ.
 
-```sh
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 128
@@ -75,7 +83,8 @@ post-up /sbin/ip -f inet6 route add default via IPv6_GATEWAY
 pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0
 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
-additional IPv6 addresses can be added by `up /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64` lines in the file.
+
+Additional IPv6 addresses can be added by `up /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64` lines in the file.
 
 #### Step 4: Save the file and apply the changes
 
@@ -85,7 +94,7 @@ Save your changes to the file and then restart the network or reboot your server
 
 You can test the IPv6 connectivity by running the commands shown below:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -122,7 +131,7 @@ Your server's network configuration file is located in /etc/sysconfig/network-sc
 
 Amend the file so that it looks like the example below. In this example, the network interface is called eth0. The interface on your server may differ. Also, we have omitted the IPv4 Failover configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
 
-```sh
+```console
 IPV6INIT=yes
 IPV6_AUTOCONF=no
 IPV6_DEFROUTE=yes
@@ -141,7 +150,7 @@ Save your changes to the file and then restart the network or reboot your server
 
 You can test the IPv6 connectivity by running the commands shown below:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -172,7 +181,7 @@ Your server's network configuration file is located in `/etc/rc.conf`. Use the c
 
 Amend the file so that it looks like the example below. In this example, the network interface is called em0. The interface on your server may differ.
 
-```sh
+```bash
 IPv6_activate_all_interfaces="YES" 
 IPv6_defaultrouter="IPv6_GATEWAY" 
 ifconfig_em0_IPv6="inet6 IPv6_Address prefixlen 64"
@@ -188,7 +197,7 @@ Save your changes to the file and then restart the network or reboot your server
 
 You can test the IPv6 connectivity by running the commands shown below:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -218,7 +227,7 @@ Open the network configuration file located in /etc/systemd/network. For demonst
 
 Using a text editor, amend the file by adding the following lines to the relevant sections as shown in the example below:
 
-```sh
+```console
 [Network]
 Destination=Gateway_Address
 
@@ -229,8 +238,9 @@ Address=IPv6_Address/64
 Destination=Gateway_Address
 Scope=link
 ```
-to add multiple IPv6 addresses, add multiple [Address] sections
-```sh
+To add multiple IPv6 addresses, add multiple [Address] sections
+
+```console
 [Address]
 Address=IPv6_Address_2/64
 
@@ -245,7 +255,7 @@ Save your changes to the file and then restart the network or reboot your server
 
 You can test the IPv6 connectivity by running the commands shown below:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -267,6 +277,7 @@ Find more information in [this guide](../getting-started-dedicated-server/#loggi
 
 
 #### Step 2: Open your server's network configuration
+
 First, right-click on the network icon in the notification area to go to the `Network and Sharing Center`{.action}.
 
 ![Network and Sharing Center](images/ipv6_network_sharing_center.png){.thumbnail}
@@ -293,9 +304,9 @@ Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`) and click `
 
 If after testing your connection you are still experiencing problems, please create a support request to review your configurations. It is necessary to provide:
 
-- the operating system name and version you are using on your server
-- the name and directory of the network configuration file 
-- the content of that file 
+- The operating system name and version you are using on your server.
+- The name and directory of the network configuration file.
+- The content of that file.
 
 
 ## Go further

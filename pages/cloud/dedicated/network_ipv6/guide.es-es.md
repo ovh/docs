@@ -21,9 +21,9 @@ El protocolo de internet versión 6 (IPv6) es la última versión del protocolo 
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/) en su cuenta de OVHcloud
+- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/) en su cuenta de OVHcloud
 - Tener toda la información relativa a su IPv6 (prefijo, puerta de enlace, etc.)
-- Tener conocimientos básicos de redes y de [SSH](https://es.wikipedia.org/wiki/Secure_Shell)
+- Tener conocimientos básicos de redes y de [SSH](../introduccion-ssh/)
 
 ## Procedimiento
 
@@ -65,7 +65,7 @@ Su archivo de configuración de red de su servidor se encuentra en `/etc/network
 
 Modifique el archivo para que quede como en el siguiente ejemplo. En este ejemplo, la interfaz de red se llama `eth0`. La interfaz de su servidor puede variar.
 
-```sh
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 128
@@ -85,7 +85,7 @@ Guarde los cambios realizados en el archivo y reinicie la red o el servidor para
 
 Puede comprobar la conectividad de la IPv6 ejecutando los comandos siguientes:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -122,7 +122,7 @@ Su archivo de configuración de red de su servidor se encuentra en /etc/sysconfi
 
 Modifique el archivo para que quede como en el siguiente ejemplo. En este ejemplo, la interfaz de red se llama eth0. La interfaz de su servidor puede variar. Además hemos omitido la configuración del IPv4 Failover para evitar confusiones, pero la configuración de la IPv6 se hace en el mismo archivo de configuración.
 
-```sh
+```console
 IPV6INIT=yes
 IPV6_AUTOCONF=no
 IPV6_DEFROUTE=yes
@@ -141,7 +141,7 @@ Guarde los cambios realizados en el archivo y reinicie la red o el servidor para
 
 Puede comprobar la conectividad de la IPv6 ejecutando los comandos siguientes:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -172,7 +172,7 @@ Su archivo de configuración de red de su servidor se encuentra en `/etc/rc.conf
 
 Modifique el archivo para que quede como en el siguiente ejemplo. En este ejemplo, la interfaz de red se llama em0. La interfaz de su servidor puede variar.
 
-```sh
+```console
 IPv6_activate_all_interfaces="YES" 
 IPv6_defaultrouter="IPv6_GATEWAY" 
 ifconfig_em0_IPv6="inet6 IPv6_Address prefixlen 64"
@@ -188,7 +188,7 @@ Guarde los cambios realizados en el archivo y reinicie la red o el servidor para
 
 Puede comprobar la conectividad de la IPv6 ejecutando los comandos siguientes:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -218,7 +218,7 @@ Abra el archivo de configuración de red ubicado en /etc/systemd/network. En est
 
 Para modificar el archivo, abra un editor de texto y añada las líneas siguientes a las secciones relevantes como se muestra en el siguiente ejemplo:
 
-```sh
+```console
 [Network]
 Destination=Gateway_Address
 
@@ -229,8 +229,9 @@ Address=IPv6_Address/64
 Destination=Gateway_Address
 Scope=link
 ```
-Para añadir varias direcciones IPv6, añada varias secciones \[Address]
-```sh
+Para añadir varias direcciones IPv6, añada varias secciones \[Address].
+
+```console
 [Address]
 Address=IPv6_Address_2/64
 
@@ -245,7 +246,7 @@ Guarde los cambios realizados en el archivo y reinicie la red o el servidor para
 
 Puede comprobar la conectividad de la IPv6 ejecutando los comandos siguientes:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes

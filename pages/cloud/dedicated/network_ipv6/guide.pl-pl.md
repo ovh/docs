@@ -21,9 +21,9 @@ IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetow
 
 ## Wymagania początkowe
 
-- [serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/) w ramach konta OVHcloud
+- [serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/) w ramach konta OVHcloud
 - wszystkie informacje o protokole IPv6 (prefiks, brama itd.)
-- podstawowa wiedza z zakresu [protokołu SSH](http://en.wikipedia.org/wiki/Secure_Shell) i sieci
+- podstawowa wiedza z zakresu [protokołu SSH](../ssh-wprowadzenie/) i sieci
 
 ## W praktyce
 
@@ -65,7 +65,7 @@ Plik konfiguracji sieci Twojego serwera znajduje się w katalogu `/etc/network/i
 
 Wprowadź zmiany w pliku, aby wyglądał podobnie do poniższego przykładu. W tym przykładzie interfejs sieciowy ma nazwę `eth0`. Interfejs na Twoim serwerze może być inny.
 
-```sh
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 128
@@ -85,7 +85,7 @@ Zapisz zmiany w pliku, a następnie uruchom ponownie sieć lub restartuj serwer 
 
 Łączność IPv6 można przetestować, wykonując poniższe polecenia:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -122,7 +122,7 @@ Plik konfiguracji sieci Twojego serwera znajduje się w katalogu /etc/sysconfig/
 
 Wprowadź zmiany w pliku, aby wyglądał podobnie do poniższego przykładu. W tym przykładzie interfejs sieciowy ma nazwę eth0. Interfejs na Twoim serwerze może być inny. Pominęliśmy też konfigurację adresu IPv4 Failover, aby uniknąć pomyłek, ale konfigurację adresu IPv6 przygotowuje się w tym samym pliku.
 
-```sh
+```console
 IPV6INIT=yes
 IPV6_AUTOCONF=no
 IPV6_DEFROUTE=yes
@@ -141,7 +141,7 @@ Zapisz zmiany w pliku, a następnie uruchom ponownie sieć lub restartuj serwer 
 
 Łączność IPv6 można przetestować, wykonując poniższe polecenia:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -172,7 +172,7 @@ Plik konfiguracji sieci Twojego serwera znajduje się w katalogu `/etc/rc.conf`.
 
 Wprowadź zmiany w pliku, aby wyglądał podobnie do poniższego przykładu. W tym przykładzie interfejs sieciowy ma nazwę em0. Interfejs na Twoim serwerze może być inny.
 
-```sh
+```console
 IPv6_activate_all_interfaces="YES" 
 IPv6_defaultrouter="IPv6_GATEWAY" 
 ifconfig_em0_IPv6="inet6 IPv6_Address prefixlen 64"
@@ -188,7 +188,7 @@ Zapisz zmiany w pliku, a następnie uruchom ponownie sieć lub restartuj serwer 
 
 Łączność IPv6 można przetestować, wykonując poniższe polecenia:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -218,7 +218,7 @@ Otwórz plik konfiguracji sieci znajdujący się w katalogu /etc/systemd/network
 
 Przy użyciu edytora tekstu wprowadź zmiany w pliku, dodając następujące wiersze w odpowiednich sekcjach (zgodnie z poniższym przykładem).
 
-```sh
+```console
 [Network]
 Destination=Gateway_Address
 
@@ -230,7 +230,8 @@ Destination=Gateway_Address
 Scope=link
 ```
 Aby dodać wiele adresów IPv6, dodaj wiele sekcji \[Address].
-```sh
+
+```console
 [Address]
 Address=IPv6_Address_2/64
 
@@ -245,7 +246,7 @@ Zapisz zmiany w pliku, a następnie uruchom ponownie sieć lub restartuj serwer 
 
 Łączność IPv6 można przetestować, wykonując poniższe polecenia:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes

@@ -5,7 +5,7 @@ excerpt: Decouvrez comment configurer des adresses IPv6 sur notre infrastructure
 section: Réseau & IP
 ---
 
-**Dernière mise à jour le 19/05/2020**
+**Dernière mise à jour le 01/12/2021**
 
 ## Objectif
 
@@ -64,7 +64,7 @@ Le fichier de configuration réseau de votre serveur est situé dans `/etc/netwo
 
 Modifiez le fichier afin qu'il ressemble à l'exemple ci-dessous. Dans cet exemple, l'interface réseau est appelée `eth0`. L'interface sur votre serveur peut être différente.
 
-```sh
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 128
@@ -84,7 +84,7 @@ Enregistrez les modifications apportées au fichier, puis relancez le réseau ou
 
 Vous pouvez tester la connectivité IPv6 en exécutant les commandes suivantes :
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -120,7 +120,7 @@ Le fichier de configuration réseau de votre serveur est situé dans `/etc/sysco
 
 Modifiez le fichier afin qu'il ressemble à l'exemple ci-dessous. Dans cet exemple, l'interface réseau est appelée eth0. L'interface sur votre serveur peut être différente. En outre, nous avons omis la configuration d’IPv4 Failover pour éviter toute confusion, mais la configuration IPv6 est réalisée dans le même fichier de configuration.
 
-```sh
+```console
 IPv6INIT=yes
 IPV6_AUTOCONF=no
 IPV6_DEFROUTE=yes
@@ -140,7 +140,7 @@ Enregistrez les modifications apportées au fichier, puis relancez le réseau ou
 
 Vous pouvez tester la connectivité IPv6 en exécutant les commandes suivantes :
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -170,7 +170,7 @@ Le fichier de configuration réseau de votre serveur est situé dans `/etc/rc.co
 
 Modifiez le fichier afin qu'il ressemble à l'exemple ci-dessous. Dans cet exemple, l'interface réseau est appelée em0. L'interface sur votre serveur peut être différente.
 
-```sh
+```console
 IPv6_activate_all_interfaces="YES" 
 IPv6_defaultrouter="IPv6_GATEWAY" 
 ifconfig_em0_IPv6="inet6 IPv6_Address prefixlen 64"
@@ -186,7 +186,7 @@ Enregistrez les modifications apportées au fichier, puis relancez le service r�
 
 Vous pouvez tester la connectivité IPv6 en exécutant les commandes suivantes :
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -216,7 +216,7 @@ Ouvrez le fichier de configuration du réseau, fichier se trouvant dans `/etc/sy
 
 Comme indiqué dans l'exemple ci-dessous, utilisez un éditeur de texte pour modifier le fichier en ajoutant aux sections concernées les lignes suivantes :
 
-```sh
+```console
 [Network]
 Destination=Gateway_Address
 
@@ -228,7 +228,8 @@ Destination=Gateway_Address
 Scope=link
 ```
 pour ajouter plusieurs adresses IPv6, ajoutez plusieurs sections \[Address].
-```sh
+
+```console
 [Address]
 Address=IPv6_Address_2/64
 
@@ -244,7 +245,7 @@ Enregistrez les modifications apportées au fichier, puis relancez le réseau ou
 
 Vous pouvez tester la connectivité IPv6 en exécutant les commandes suivantes :
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes

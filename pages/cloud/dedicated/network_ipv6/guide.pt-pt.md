@@ -21,9 +21,9 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 
 ## Requisitos
 
-- um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/) na sua conta OVHcloud;
+- um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud;
 - todos os seus dados IPv6 (prefixo, gateway, etc.);
-- ter conhecimentos básicos de [SSH](https://pt.wikipedia.org/wiki/Secure_Shell) e redes.
+- ter conhecimentos básicos de [SSH](../ssh-introducao/) e redes.
 
 ## Instruções
 
@@ -65,7 +65,7 @@ O ficheiro de configuração da rede do seu servidor encontra-se em `/etc/networ
 
 Corrija o ficheiro de modo a ficar como o exemplo abaixo. Neste exemplo, o nome da interface de rede é `eth0`. A interface do seu servidor pode ser diferente.
 
-```sh
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 128
@@ -85,7 +85,7 @@ Guarde as alterações feitas ao ficheiro e reinicie a rede ou o servidor de mod
 
 Pode testar a conetividade IPv6 introduzindo os comandos seguintes:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -122,7 +122,7 @@ O ficheiro de configuração da rede do seu servidor encontra-se em /etc/sysconf
 
 Corrija o ficheiro de modo a ficar como o exemplo abaixo. Neste exemplo, o nome da interface de rede é eth0. A interface do seu servidor pode ser diferente. Além disso, omitimos a configuração do IPv4 Failover de modo a evitar confusão, mas o IPv6 é configurado no mesmo ficheiro.
 
-```sh
+```console
 IPV6INIT=yes
 IPV6_AUTOCONF=no
 IPV6_DEFROUTE=yes
@@ -141,7 +141,7 @@ Guarde as alterações feitas ao ficheiro e reinicie a rede ou o servidor de mod
 
 Pode testar a conetividade IPv6 introduzindo os comandos seguintes:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -172,7 +172,7 @@ O ficheiro de configuração da rede do seu servidor encontra-se em`/etc/rc.conf
 
 Corrija o ficheiro de modo a ficar como o exemplo abaixo. Neste exemplo, o nome da interface de rede é em0. A interface do seu servidor pode ser diferente.
 
-```sh
+```console
 IPv6_activate_all_interfaces="YES" 
 IPv6_defaultrouter="IPv6_GATEWAY" 
 ifconfig_em0_IPv6="inet6 IPv6_Address prefixlen 64"
@@ -188,7 +188,7 @@ Guarde as alterações feitas ao ficheiro e reinicie a rede ou o servidor de mod
 
 Pode testar a conetividade IPv6 introduzindo os comandos seguintes:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -218,7 +218,7 @@ Abra o ficheiro de configuração de rede situado em /etc/systemd/network. Para 
 
 Usando um editor de texto, corrija o ficheiro acrescentando as seguintes linhas nas secções relevantes, como mostramos no exemplo abaixo:
 
-```sh
+```console
 [Network]
 Destination=Gateway_Address
 
@@ -230,7 +230,8 @@ Destination=Gateway_Address
 Scope=link
 ```
 Para adicionar múltiplos endereços IPv6, adicione múltiplas secções  \[Address].
-```sh
+
+```console
 [Address]
 Address=IPv6_Address_2/64
 
@@ -245,7 +246,7 @@ Guarde as alterações feitas ao ficheiro e reinicie a rede ou o servidor de mod
 
 Pode testar a conetividade IPv6 introduzindo os comandos seguintes:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -267,6 +268,7 @@ PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 
 
 #### Passo 2: Abrir a configuração da rede do servidor
+
 Em primeiro lugar, faça clique com o botão direito no ícone de rede situado na área de notificações. Aceda ao `Network and Sharing Center`{.action}.
 
 ![Network and Sharing Center](images/ipv6_network_sharing_center.png){.thumbnail}
@@ -297,6 +299,6 @@ Se depois de testar a sua ligação continuar a experienciar problemas, crie um 
 - o conteúdo desse ficheiro. 
 
 
-## Saiba mais
+## Quer saber mais?
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
