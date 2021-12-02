@@ -1,18 +1,20 @@
 ---
-title: Set up DHCP on an NSX Edge Services appliance
-slug: setup-dhcp-nsx-edge
-excerpt: Assign IPs to your VMs through DHCP
+title: Avoid IP spoofing with the SpoofGuard service
+slug: spoofguard
+excerpt: Set up policies to detect IP spoofing
+space_key: ND
+space_name: NSX
 section: NSX
-order: 03
+order: 10
 ---
 
-**Last Updated on 11/22/2021**
+**Last Updated on 12/02/2021**
 
 ## Objective
 
-DHCP allows automatic assignment of private IPs to VMs behind your NSX Edge Services Gateway.
+The Spoofguard service verify the legitimacy of IP addresses to protect your environment from outside intervention.
 
-**This guide explains how to setup the DHCP service**
+**This guide explains how to setup Spoofguard policies**
 
 ## Requirements
 
