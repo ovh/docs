@@ -125,6 +125,6 @@ You can also create a **test version** of your website (e.g.: test.mydomain.tld)
 
 For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://www.ovhcloud.com/en-sg/web-hosting/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
