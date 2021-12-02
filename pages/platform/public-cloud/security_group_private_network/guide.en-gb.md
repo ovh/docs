@@ -126,7 +126,7 @@ The private network default configuration might be different depending on the re
 
 In some regions the "port security" property is seen as "enabled" even if it's not applying any rule on private network. On some other regions (depending on the OpenStack version deployed), the "port security" property is seen as "enabled" but rules are applied correctly on private network.
 
-To summarize, for the following regions are running Newton OpenStack release and **no firewall rules will work** for your private networks, even if port security is enabled:
+To summarise, for the following regions are running Newton OpenStack release and **no firewall rules will work** for your private networks, even if port security is enabled:
 
 - Beauharnois: BHS1, BHS3, BHS5
 - Frankfurt: DE1
@@ -146,7 +146,7 @@ In the following regions (running Stein OpenStack release), the firewall rules f
 
 OVHcloud will progressively upgrade all Newton regions to Stein, so the port security property feature will be available.
 
-To avoid any breaking change during the upgrade, the "port security" will be set to False on all already created networks. Once a region will be upgraded in Stein OpenStack release if you want to use firewall rules on private networks you will have to set "port security" property as true.
+To avoid any breaking change during the upgrade, the "port security" will be set to False on all already created networks. Once a region will be upgraded in Stein OpenStack release, if you want to use firewall rules on private networks you will have to set the "port security" property as true.
 
 You can check whether your private network port has port security enabled:
 
