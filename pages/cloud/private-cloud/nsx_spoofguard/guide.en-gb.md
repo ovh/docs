@@ -31,7 +31,7 @@ In the vSphere interface menu, go to the `Networking and Security`{.action} dash
 
 
 On the left side, navigate to the `Spoofguard`{.action} section.<br>
-Click on `+ Add`{.action} to create a new policy.
+Click on `+ Add`{.action} to create a new policy.<br>
 *you could edit the default policy as well instead.*
 
 ![SPOOF](images/en02spoof.png){.thumbnail}
@@ -59,7 +59,7 @@ Select the Network objects the policy will apply to and click `Finish`{.action}.
 The policy is now on the list end enabled.<br>
 If there are alerts and/or pending actions for you, you will be able to click on the number in the Pending Approval & Conflicted IPs columns.
 
-![DONE](images/en04done.png){.thumbnail}
+![DONE](images/en05done.png){.thumbnail}
 
 
 Congratulations and thank you.
