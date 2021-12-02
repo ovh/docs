@@ -1,7 +1,7 @@
 ---
 title: 'Eine Failover-IP erwerben'
 slug: eine-failover-ip-erwerben
-excerpt: 'Hier erfahren Sie, wie Sie für Ihre Instanzen Failover-IP-Adressen bestellen können'
+excerpt: 'Erfahren Sie hier, wie Sie für Ihre Instanzen Failover-IP-Adressen bestellen können'
 section: 'Netzwerk und IP'
 ---
 
@@ -23,12 +23,12 @@ Diese IPFOs können nur für Instanzen desselben Projekts migriert werden.
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
-- Sie verfügen über mindestens eine Instanz. Konsultieren Sie hierzu [die Anleitung zur Erstellung einer Instanz von Ihrem Kunden-Account aus](../erstellung_einer_instanz_im_ovh_kundencenter/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben mindestens eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte) in Ihrem Kunden-Account.
 
 ## In der praktischen Anwendung
 
-Wählen Sie zuerst links `Failover IP`{.action} in Ihrem OVHcloud Kundencenter aus und dann `Failovers-IPs kaufen`{.action} im `Aktionen`{.action} Menü:
+Wählen Sie zuerst links `Failover IP`{.action} in Ihrem OVHcloud Kundencenter aus und dann `Failovers-IPs kaufen`{.action} im Menü `Aktionen`{.action}:
 
 ![failoverIP](images/buyfailoverip1.png){.thumbnail}
 
@@ -57,8 +57,7 @@ Die in Europa verfügbaren Lokalisierungen sind:
 
 > [!primary] **Verfügbarkeit**
 > 
-> Abhängig von der Verfügbarkeit von IP-Adressen ist es möglich,
-> dass einige der vorgenannten Länder nicht verfügbar sind.
+> Abhängig von der Verfügbarkeit von IP-Adressen ist es möglich, dass einige der vorgenannten Länder nicht verfügbar sind.
 > 
 
 > [!primary] **Geolokalisierung**
@@ -73,16 +72,11 @@ Anschließend wird ein Bestellschein erstellt. Erlauben Sie die Anzeige von Pop-
 
 ![failoverIP](images/buyfailoverip3.png){.thumbnail}
 
-Sie können den Bestellschein auch in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) finden, indem Sie auf `Mein Account`{.action} klicken und dann auf `Meine Bestellungen`{.action}.
+Sie können den Bestellschein auch in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) finden, indem Sie den Bereich `Dashboard`{.action} öffnen und dann auf `Meine Bestellungen anzeigen`{.action} klicken.
 
-![failoverIP](images/buyfailoverip4.png){.thumbnail}
 
 ## Weiterführende Informationen
 
-[Erstellung einer Instanz im OVHcloud Kundencenter](../erstellung_einer_instanz_im_ovh_kundencenter/)
-
-[Auf einer Public Cloud Instanz einloggen](../erster-login/)
-
-[Persistente Konfiguration der Failover-IP](../persistente_konfiguration_der_failover-ip/)
+[Eine Failover-IP konfigurieren](../persistente_konfiguration_der_failover-ip/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -132,12 +132,17 @@ Abra o ficheiro de configuração de rede para o modificar através do seguinte 
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Não altere as linhas existentes no ficheiro. Adicione o seu endereço IP Failover seguindo o exemplo abaixo:
+Não altere as linhas existentes no ficheiro de configuração. Adicione o seu endereço IP fail-over adicionando um segundo bloco de configuração para a interface pública, como no exemplo seguinte:
 
 ```yaml
 network:
     version: 2
     ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
+            set-name: NETWORK_INTERFACE            
         NETWORK_INTERFACE:
             dhcp4: true
             match:

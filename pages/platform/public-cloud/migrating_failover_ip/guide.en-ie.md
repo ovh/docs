@@ -16,9 +16,9 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 
 ## Prerequisites
 
-- at least two [Public Cloud instances](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- a failover IP address
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- At least two [Public Cloud instances](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
+- A failover IP address
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 

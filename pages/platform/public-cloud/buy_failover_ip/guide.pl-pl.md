@@ -74,8 +74,6 @@ Zostaje wygenerowane zamówienie. Zezwól na wyświetlanie wyskakujących okiene
 
 Zamówienie znajdziesz także w Panelu klienta. W tym celu przejdź do sekcji `Moje konto`{.action}, a następnie `Moje zamówienia`{.action}.
 
-![failoverIP](images/buyfailoverip4.png){.thumbnail}
-
 ## Sprawdź również
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

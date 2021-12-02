@@ -75,8 +75,6 @@ Un bon de commande sera alors généré. Veillez à autoriser l'affichage des po
 
 Vous pourrez également retrouver le bon de commande dans votre espace client, en vous rendant dans `Mon compte`{.action} puis `Mes commandes`{.action}.
 
-![failoverIP](images/buyfailoverip4.png){.thumbnail}
-
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
