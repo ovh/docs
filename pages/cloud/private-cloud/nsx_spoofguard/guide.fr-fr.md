@@ -60,7 +60,7 @@ Selectionnez les objets réseaux sur lesquels la statégie sera appliquée puis 
 La stratégie est maintenant dans la liste et est active.<br>
 En cas d'alerte et/ou d'actions en attente, vous pouvez cliquez sur le nombre dans les colonnes En attente d'approbation ou Adresses IP en conflit.
 
-![DONE](images/en04done.png){.thumbnail}
+![DONE](images/en05done.png){.thumbnail}
 
 
 Bravo et merci.
