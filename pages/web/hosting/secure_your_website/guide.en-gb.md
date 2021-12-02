@@ -35,7 +35,7 @@ However, if you experience any difficulties carrying out some of them, please do
 
 ### Step 1 - Check the security of your devices <a name="local"></a>
 
-This first step is essential. Infecting your computer with malicious software can potentially give the attacker access to all of your keyboard input. As a result, the credentials you use to log in on your OVHcloud Control Panel or the admin interface for your website would be compromised.
+This first step is essential. Infecting your computer with a malicious software can potentially give the attacker access to all of your keyboard input. As a result, the credentials you use to log in on your OVHcloud Control Panel or the admin interface for your website would be compromised.
 
 In addition, the growing phenomenon of [ransomware](https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks){.external} (about 400 cases in France in 2020) may not only lead to the encryption of all your personal data, but also jeopardise your business by making all your data, devices and software inaccessible. 
 
