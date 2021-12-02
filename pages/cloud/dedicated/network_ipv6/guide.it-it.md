@@ -39,6 +39,13 @@ Se per installare il tuo server utilizzi un template per il SO Linux fornito da 
 > - L’indirizzo IPv6 del server è 2607:5300:60:62ac::/64. L’IPv6_GATEWAY sarà perciò 2607:5300:60:62FF:FF:FF:FF:FF.
 > - L’indirizzo IPv6 del server è 2001:41D0:1:46e::/64. L’IPv6_GATEWAY sarà perciò 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
+> Il modo più sicuro per recuperare le informazioni di rete del tuo server è [utilizzare l'API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: ns3956771.ip-169-254-10.eu):
+>
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/specifications/network
+
 
 ### Sistemi operativi Debian e basati su Debian
 
