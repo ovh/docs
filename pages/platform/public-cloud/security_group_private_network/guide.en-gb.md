@@ -124,13 +124,9 @@ openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 
 The private network default configuration might be different depending on the region you are using.
 
-In some regions the "**port security**" property is disabled by default (and it cannot be enabled in most of the cases).
+In some regions the "port security" property is seen as "enabled" even if it's not applying any rule on private network. On some other regions (depending on the OpenStack version deployed), the "port security" property is seen as "enabled" but rules are applied correctly on private network.
 
-This is a property associated with a port. If port security is disabled, no security groups are implemented. This means no firewall rules are active for this port even if the OpenStack API shows the port is correctly associated with a security group.
-
-Port security is currently enabled only in some regions. OVHcloud will progressively [enable the port security property](#migration) for new ports created in other regions.
-
-To summarise, firewall rules **will not work** for your private networks in the following regions:
+To summarize, for the following regions are running Newton OpenStack release and **no firewall rules will work** for your private networks, even if port security is enabled:
 
 - Beauharnois: BHS1, BHS3, BHS5
 - Frankfurt: DE1
@@ -143,10 +139,14 @@ To summarise, firewall rules **will not work** for your private networks in the 
 - Hillsboro: US-WEST-OR-1
 - Vint Hill: US-EAST-VA-1
 
-In the following regions, the firewall rules for private networks **will work** as expected:
+In the following regions (running Stein OpenStack release), the firewall rules for private networks **will work** as expected:
 
 - Gravelines: GRA9
 - Strasbourg: SBG7
+
+OVHcloud will progressively upgrade all Newton regions to Stein, so the port security property feature will be available.
+
+To avoid any breaking change during the upgrade, the "port security" will be set to False on all already created networks. Once a region will be upgraded in Stein OpenStack release if you want to use firewall rules on private networks you will have to set "port security" property as true.
 
 You can check whether your private network port has port security enabled:
 
@@ -156,10 +156,6 @@ False
 ```
 
 ### Migration process <a name="migration"></a>
-
-The OpenStack regions where port security is disabled on private network ports will progressively move to a restrictive security configuration: `port_security_enabled = true`.
-
-This change will not affect your existing private network ports, only newly created ones are concerned.
 
 This will occur according to the following process:
 
