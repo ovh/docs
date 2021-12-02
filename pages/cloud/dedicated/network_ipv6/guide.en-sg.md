@@ -1,40 +1,52 @@
 ---
 title: 'Configuring IPv6 on dedicated servers'
 slug: network-ipv6
-excerpt: 'This guide explains how to configure IPv6 addresses on our infrastructure.'
+excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
 section: 'Network Management'
 ---
 
-**Last updated 21st February 2019**
+**Last updated 1st December 2021**
 
 ## Objective
 
-Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP). It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bit addresses instead of 32-bit addresses. Every OVHcloud Dedicated Server comes with a /64 IPv6 block. This represents over 18 quintillion IP addresses that you can use at your convenience.
+Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP). It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bit addresses instead of 32-bit addresses. Every OVHcloud dedicated server comes with a /64 IPv6 block. This represents over 18 quintillion IP addresses that you can use at your convenience.
 
-**This guide explains how to configure IPv6 addresses on our infrastructure.**
+**This guide explains how to configure IPv6 addresses on your server using various examples.**
+
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>
 
 ## Requirements
 
-- a [Dedicated Server](https://www.ovh.com/sg/dedicated-servers/){.external}
-- [IP failover(s)](https://www.ovh.com/sg/dedicated-servers/ip_failover.xml){.external} with associated virtual MAC addresses
-- all your IPv6 information (prefix, gateway etc.)
-- a basic knowledge of [SSH](http://en.wikipedia.org/wiki/Secure_Shell) and networking
+- A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) in your OVHcloud account
+- All your IPv6 information (prefix, gateway etc.)
+- Basic knowledge of [SSH](../ssh-introduction/) and networking
 
 ## Instructions
 
-If you are using an OVHcloud-provided Linux OS template to install your server, you will see that you already have the first (main) IPv6 configured right out of the box.
+If you are using an OVHcloud-provided Linux OS template to install your server, you will see that you already have the first (main) IPv6 configured out of the box.
 
-If you want to have more than one IPv6 configured on your server (or want to use it on a VM) you will need to have a failover IP configured with a vMAC. Otherwise, the IPv6 won’t be routed by our routers/switches.
 
 > [!primary]
 >
-> The default gateway for your IPv6 block (IPv6_GATEWAY) is always xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> The default gateway for your IPv6 block (IPv6_GATEWAY) is usually xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
 >
 > For example:
 > 
 > - The IPv6 address of the server is 2607:5300:60:62ac::/64. The IPv6_GATEWAY will therefore be 2607:5300:60:62FF:FF:FF:FF:FF.
 > - The IPv6 address of the server is 2001:41D0:1:46e::/64. The IPv6_GATEWAY will therefore be 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
+> The safe way to retrieve the networking information for your server is to [use the OVHcloud API](https://docs.ovh.com/sg/en/api/first-steps-with-ovh-api/). Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
+>
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/specifications/network
+>
+
 
 ### Debian and Debian-based operating systems
 
@@ -49,21 +61,19 @@ If you want to have more than one IPv6 configured on your server (or want to use
 > Once this has been done, you can apply those rules by executing the following command: `sh sysctl -p`.
 > 
 
-#### Step 1: Open an SSH connection to your server
+#### Step 1: Use SSH to connect to your server
 
-You can open up a connection to your server using the command line terminal if you're using a Linux operating system. If you're using a Windows PC, you can install PuTTy, which is a terminal emulator for Windows. It will allow you to connect to your server and run commands.
-
-You can connect to your server using its IP address and your root credentials.
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
 
 #### Step 2: Open your server's network configuration file
 
-Your server's network configuration file is located in `/etc/network/interfaces`. Use the command line to locate the file and open it for editing.
+Your server's network configuration file is located in `/etc/network/interfaces`. Use the command line to locate the file and open it for editing. Also consider creating a backup first.
 
 #### Step 3: Amend the network configuration file
 
 Amend the file so that it looks like the example below. In this example, the network interface is called `eth0`. The interface on your server may differ.
 
-```sh
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 128
@@ -74,15 +84,17 @@ pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0
 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
 
-#### Step 4: Save the file and reboot the server
+Additional IPv6 addresses can be added by `up /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64` lines in the file.
 
-Save your changes to the file and then reboot your server to apply the changes.
+#### Step 4: Save the file and apply the changes
+
+Save your changes to the file and then restart the network or reboot your server to apply the changes.
 
 #### Step 5: Test the IPv6 connectivity
 
 You can test the IPv6 connectivity by running the commands shown below:
 
-```sh
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -97,7 +109,7 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 
-If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](../ovh-rescue/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
 
 ### Fedora 26 and above
 
@@ -106,11 +118,10 @@ If you are not able to ping this IPv6 address, check your configuration and try 
 > This example has been made with CentOS 7.0. Results may vary when using other Redhat derivatives.
 >
 
-#### Step 1: Open an SSH connection to your server
+#### Step 1: Use SSH to connect to your server
 
-You can open up a connection to your server using the command line terminal if you're using a Linux operating system. If you're using a Windows PC, you can install PuTTy, which is a terminal emulator for Windows. It will allow you to connect to your server and run commands.
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
 
-You can connect to your server using its IP address and your root credentials.
 
 #### Step 2: Open your server's network configuration file
 
@@ -120,24 +131,26 @@ Your server's network configuration file is located in /etc/sysconfig/network-sc
 
 Amend the file so that it looks like the example below. In this example, the network interface is called eth0. The interface on your server may differ. Also, we have omitted the IPv4 Failover configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
 
-```sh
+```console
 IPV6INIT=yes
 IPV6_AUTOCONF=no
 IPV6_DEFROUTE=yes
 IPV6_FAILURE_FATAL=no
-IPV6ADDR=YOUR_IPv6/IPv6_PREFIX ---> (basically your IPv6 in CIDR notation)
+IPV6ADDR=YOUR_IPv6/64
+IPV6ADDR_SECONDARIES=YOUR_2nd_IPv6/64 YOUR_3rd_IPv6/64
 IPV6_DEFAULTGW=IPv6_GATEWAY
 ```
+If you need more IPv6 addresses on the machine, add them in the `IPV6ADDR_SECONDARIES` line, separated by whitespace.
 
-#### Step 4: Save the file and reboot the server
+#### Step 4: Save the file and apply the changes
 
-Save your changes to the file and then reboot your server to apply the changes.
+Save your changes to the file and then restart the network or reboot your server to apply the changes.
 
 #### Step 5: Test the IPv6 connectivity
 
 You can test the IPv6 connectivity by running the commands shown below:
 
-```sh
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -151,15 +164,14 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](../ovh-rescue/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
 
 ### FreeBSD
 
-#### Step 1: Open an SSH connection to your server
+#### Step 1: Use SSH to connect to your server
 
-You can open up a connection to your server using the command line terminal if you're using a Linux operating system. If you're using a Windows PC, you can install PuTTy, which is a terminal emulator for Windows. It will allow you to connect to your server and run commands.
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
 
-You can connect to your server using its IP address and your root credentials.
 
 #### Step 2: Open your server's network configuration file
 
@@ -167,23 +179,25 @@ Your server's network configuration file is located in `/etc/rc.conf`. Use the c
 
 #### Step 3: Amend the network configuration file
 
-Amend the file so that it looks like the example below. In this example, the network interface is called eth0. The interface on your server may differ.
+Amend the file so that it looks like the example below. In this example, the network interface is called em0. The interface on your server may differ.
 
-```sh
+```bash
 IPv6_activate_all_interfaces="YES" 
 IPv6_defaultrouter="IPv6_GATEWAY" 
-ifconfig_em0_IPv6="inet6 YOUR_IPv6 prefixlen 64"
+ifconfig_em0_IPv6="inet6 IPv6_Address prefixlen 64"
+ifconfig_em0_alias0="inet6 IPv6_Address_2 prefixlen 64"
+ifconfig_em0_alias1="inet6 IPv6_Address_3 prefixlen 64"
 ```
 
 #### Step 4: Save the file and reboot the server
 
-Save your changes to the file and then reboot your server to apply the changes.
+Save your changes to the file and then restart the network or reboot your server to apply the changes.
 
 #### Step 5: Test the IPv6 connectivity
 
 You can test the IPv6 connectivity by running the commands shown below:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -197,13 +211,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](../ovh-rescue/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
 
 ### Ubuntu 18.04
 
-#### Step 1: Open an SSH connection to your server
+#### Step 1: Use SSH to connect to your server
 
-Using a command line utility, establish an SSH connection to your server.
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
 
 #### Step 2: Open your server's network configuration file
 
@@ -213,7 +227,7 @@ Open the network configuration file located in /etc/systemd/network. For demonst
 
 Using a text editor, amend the file by adding the following lines to the relevant sections as shown in the example below:
 
-```sh
+```console
 [Network]
 Destination=Gateway_Address
 
@@ -224,16 +238,24 @@ Address=IPv6_Address/64
 Destination=Gateway_Address
 Scope=link
 ```
+To add multiple IPv6 addresses, add multiple [Address] sections
 
+```console
+[Address]
+Address=IPv6_Address_2/64
+
+[Address]
+Address=IPv6_Address_3/64
+```
 #### Step 4: Save the file and reboot the server
 
-Save your changes to the file and then reboot your server to apply the changes.
+Save your changes to the file and then restart the network or reboot your server to apply the changes.
 
 #### Step 5: Test the IPv6 connectivity
 
 You can test the IPv6 connectivity by running the commands shown below:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -249,7 +271,14 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 ### Windows Server 2012
 
-To remotely connect to your Windows server, you'll need to establish a remote desktop connection to it. First, right-click on the network icon in the notification area to go to the `Network and Sharing Center`{.action}.
+#### Step 1: Use RDP to connect to your server
+
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+
+
+#### Step 2: Open your server's network configuration
+
+First, right-click on the network icon in the notification area to go to the `Network and Sharing Center`{.action}.
 
 ![Network and Sharing Center](images/ipv6_network_sharing_center.png){.thumbnail}
 
@@ -265,9 +294,20 @@ Select `Internet Protocol Version 6`{.action}, then click `Properties`{.action}.
 
 ![Properties](images/ipv6_properties.png){.thumbnail}
 
+#### Step 3: Amend the network configuration 
+
 Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`) and click `OK`{.action}.
 
 ![Properties](images/ipv6_configuration.png){.thumbnail}
+
+### Troubleshooting
+
+If after testing your connection you are still experiencing problems, please create a support request to review your configurations. It is necessary to provide:
+
+- The operating system name and version you are using on your server.
+- The name and directory of the network configuration file.
+- The content of that file.
+
 
 ## Go further
 
