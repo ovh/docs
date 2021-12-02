@@ -12,7 +12,7 @@ order: 10
 
 ## Objective
 
-The Spoofguard service verify the legitimacy of IP addresses to protect your environment from outside intervention.
+SpoofGuard protects against IP spoofing by maintaining a reference table of VM names and IP addresses. SpoofGuard maintains this reference table by using the IP addresses that the NSX Manager retrieves from VMware Tools when a VM initially starts.
 
 **This guide explains how to setup Spoofguard policies**
 
@@ -23,17 +23,16 @@ The Spoofguard service verify the legitimacy of IP addresses to protect your env
 
 ## Instructions
 
-### Interface access
 
 In the vSphere interface menu, go to the `Networking and Security`{.action} dashboard.
 
 ![Menu](images/en01dash.png){.thumbnail}
 
 
-On the left side, navigate to the `NSX Edges`{.action} section then click on the appliance you're setting up.
+On the left side, navigate to the `Spoofguard`{.action} section.<br>
+Click on `+ Add`{.action} to create a new policy
 
-![NSX](images/en02nsx.png){.thumbnail}
-
+![SPOOF](images/en02spoof.png){.thumbnail}
 
 
 
