@@ -39,6 +39,7 @@ En installant votre serveur à l’aide d’un modèle de système d’exploitat
 > - L’adresse IPv6 du serveur est 2001:41D0:1:46e::/64. L’IPv6_GATEWAY sera alors 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
 > Le moyen le plus sûr de récupérer les informations réseau de votre serveur est d'[utiliser l'API OVHcloud](https://docs.ovh.com/ca/fr/api/api-premiers-pas/). Exécutez l'appel API suivant, en indiquant le nom interne du serveur (exemple : `ns3956771.ip-169-254-10.eu`) :
+
 > [!api]
 >
 >  @api {GET} /dedicated/server/{serviceName}/specifications/network
