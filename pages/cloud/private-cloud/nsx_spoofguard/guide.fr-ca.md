@@ -17,9 +17,9 @@ SpoofGuard protège contre l'usurpation d'adresse IP en conservant une table de 
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)).
-- Avoir activé le [firewall distribué](https://docs.ovh.com/fr/private-cloud/configurer-le-firewall-distribue-nsx/)
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/) afin de recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
+- Avoir activé le [firewall distribué](https://docs.ovh.com/ca/fr/private-cloud/configurer-le-firewall-distribue-nsx/)
 
 ## En pratique
 
