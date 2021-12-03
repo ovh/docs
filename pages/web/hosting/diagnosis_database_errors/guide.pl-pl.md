@@ -37,7 +37,7 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 #### Zweryfikuj zdarzenia w trakcie
 
-Sprawdź najpierw na stronie [http://travaux.ovh.com/](http://travaux.ovh.com/), że Twoje centrum danych, klaster hostingu, Twój prywatny serwer SQL lub Cloud Databases nie są związane z awariami infrastruktury OVHcloud.
+Sprawdź najpierw na stronie [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), że Twoje centrum danych, klaster hostingu, Twój prywatny serwer SQL lub Cloud Databases nie są związane z awariami infrastruktury OVHcloud.
 
 > [!primary]
 >
@@ -65,7 +65,7 @@ W razie potrzeby zmień [hasło do Twojej bazy danych](https://docs.ovh.com/pl/h
 
 #### Przykład dla Wordpress
 
-Jeśli Twoja strona wyświetla komunikat **"Błąd podczas logowania do bazy danych"** i nie dotyczy jej [problem](http://travaux.ovh.com/), zaloguj się przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) do hostingu, a następnie otwórz katalog zawierający Twoją stronę (domyślnie jest to folder `www`).
+Jeśli Twoja strona wyświetla komunikat **"Błąd podczas logowania do bazy danych"** i nie dotyczy jej [problem](https://web-cloud.status-ovhcloud.com/), zaloguj się przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) do hostingu, a następnie otwórz katalog zawierający Twoją stronę (domyślnie jest to folder `www`).
 
 Jeśli jest to strona Wordpress, otwórz plik `wp-config.php`.
 

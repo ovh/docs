@@ -74,7 +74,7 @@ Como alterar a palavra-passe de um endereço de e-mail:
 
 ### Há algum incidente ou manutenção em curso no meu serviço?
 
-Pode verificar as diferentes tarefas em curso no <http://travaux.ovh.net/>.
+Pode verificar as diferentes tarefas em curso no <https://web-cloud.status-ovhcloud.com/>.
 
 - Para **MXplan**, verifique na secção `E-mails`
 - Para o **E-mail Pro**, dirija-se à secção `Microsoft`
