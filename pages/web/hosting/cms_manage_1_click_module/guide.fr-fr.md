@@ -75,23 +75,27 @@ Vous pouvez également modifier ce mot de passe en vous rendant directement sur 
 > Que faire si vous n'avez pas reçu l'e-mail de réinitialisation du mot de passe administrateur de votre site ? 
 >
 > Vérifiez tout d'abord l'adresse e-mail associée à votre compte OVHcloud depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) : Cliquez sur votre nom en haut à droite de votre écran puis, dans le menu contextuel à droite de l'écran, cliquez sur vos initiales (`Gérer mon compte`{.action}).
+>
 
 ### Supprimer votre module en 1 clic
 
 > [!warning]
 >
-> La sauvegarde de vos données fait partie des opérations essentielles à la [sécurisation de vos sites](../). Nous vous conseillons d'importer régulièrement des sauvegardes de l'ensemble de vos données sur un support local, tel qu'une clé USB ou un disque dur externe, en suivant les instructions de ce [guide](../exporter-son-site-web/).
+> La sauvegarde de vos données fait partie des opérations essentielles à la [sécurisation de vos sites](../connexion-espace-stockage-ftp-hebergement-web/). Nous vous conseillons d'importer régulièrement des sauvegardes de l'ensemble de vos données sur un support local, tel qu'une clé USB ou un disque dur externe, en suivant les instructions de ce [guide](../exporter-son-site-web/).
 >
 
 #### Identifier la base de données de votre site
 
-Pour supprimer votre module 1 clic, vous devez commencer par identifier sa base de données de façon certaine. Rendez-vous pour cela dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action} 
+Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa base de données de façon certaine. Rendez-vous pour cela dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action} 
 
-Si vous disposez d'une seule base de données dans cette partie de votre espace client et que vous ne possédez pas de solutions [SQL privé]() ou [Cloud Database](), vous pouvez considérer qu'il s'agit de celle de votre site.
+Si vous disposez d'une seule base de données dans cette partie de votre espace client et que vous ne possédez pas de solutions [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) ou [Cloud Database](https://www.ovh.com/fr/cloud-databases/), vous pouvez considérer qu'il s'agit de celle de votre site.
 
-Dans le cas contraire, rendez vous dans [l'espace FTP de votre hébergement] puis retrouvez son fichier de configuration en fonction du CMS utilisé : 
+Dans le cas contraire, rendez-vous dans [l'espace FTP de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) puis retrouvez son fichier de configuration en fonction du CMS utilisé :
 
-- 
+- Pour Wordpress : le fichier **"wp-admin.php"** dans le dossier où se trouve votre site (par défaut, le dossier "www")
+- Pour Joomla : le fichier **"configuration.php"** dans le dossier où se trouve votre site (par défaut, le dossier "www")
+- Pour Drupal : le fichier **"config.php"** dans le dossier où se trouve votre site (par défaut, le dossier "www")
+- Pour Prestashop : le fichier **".php"** dans le dossier où se trouve votre site (par défaut, le dossier "www")
 
 
 #### Sauvegarder votre site
