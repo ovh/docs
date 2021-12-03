@@ -122,7 +122,7 @@ Dieser Fehler zeigt an, dass der Versand von E-Mails generell nicht möglich, wa
 - [Ihr Account wurde geschlossen](#expired)
 - [Das eingegebene Passwort ist nicht korrekt](#password)
 - [Ihr Account wurde wegen Spam-Versand blockiert](#blocked)
-- [Auf der Infrastruktur ist eine Störung aufgetreten](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+- [Auf der Infrastruktur ist eine Störung aufgetreten](https://web-cloud.status-ovhcloud.com/)
 
 ## Weiterführende Informationen
 

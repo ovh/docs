@@ -74,7 +74,7 @@ Come modificare la password di un indirizzo email:
 
 ### Sul tuo servizio è in corso un incidente o una manutenzione?
 
-È possibile verificare i diversi task in corso su <http://travaux.ovh.net/>questo
+È possibile verificare i diversi task in corso su <https://web-cloud.status-ovhcloud.com/> questo
 
 - Per **MX Plan**, verifica nella sezione `Email`
 - Per **Email Pro**, accedi alla sezione `Microsoft`

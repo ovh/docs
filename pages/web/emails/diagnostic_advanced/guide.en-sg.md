@@ -56,7 +56,7 @@ Make sure you have the right password. If necessary, you can modify it. Please r
 
 ### Is there an incident or maintenance in progress for my service?
 
-You can check the various tasks that are currently in progress on <http://status.ovh.com/> in the `Emails` section.
+You can check the various tasks that are currently in progress on <https://web-cloud.status-ovhcloud.com/> in the `Emails` section.
 
 ### Is the domain name pointing correctly to my email service?
 

@@ -240,7 +240,7 @@ So far we do not provide Multi-AZ deployments. We included this option in our ba
 
 ### How is high-availability performed ?
 
-To provide High-Availability, we use the clustering principles. Your service and your data are replicated accross mulitple nodes, preventing the overall system from a node failure. Your service is resilient mainly because we duplicated the data and configuration in multiple nodes.
+To provide High-Availability, we use the clustering principles. Your service and your data are replicated across multiple nodes, preventing the overall system from a node failure. Your service is resilient mainly because we duplicated the data and configuration in multiple nodes.
 
 The exact implementation may differ for each DBMS. Indeed, each DBMS has its own mechanisms and best practices.
 

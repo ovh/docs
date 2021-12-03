@@ -75,7 +75,7 @@ W jaki sposób zmienić hasło do konta e-mail:
 
 ### Masz problem z utrzymaniem usługi?
 
-Możesz sprawdzić różne zadania obecnie wykonywane prace na <http://travaux.ovh.net/>.
+Możesz sprawdzić różne zadania obecnie wykonywane prace na <https://web-cloud.status-ovhcloud.com/>.
 
 - Aby **MXplan**, sprawdź w sekcji `E-maile`
 - W przypadku **E-mail Pro** przejdź do sekcji `Microsoft`

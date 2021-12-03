@@ -36,7 +36,7 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 #### Auf aktuelle Störungen überprüfen
 
-Überprüfen Sie zunächst auf [http://travaux.ovh.com/](http://travaux.ovh.com/), ob Ihr Rechenzentrum, Hosting-Cluster oder SQL Private Server von einer Störung auf der OVHcloud Infrastruktur betroffen sind.
+Überprüfen Sie zunächst auf [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), ob Ihr Rechenzentrum, Hosting-Cluster oder SQL Private Server von einer Störung auf der OVHcloud Infrastruktur betroffen sind.
 
 > [!primary]
 >
@@ -64,7 +64,7 @@ Stellen Sie anschließend die **exakte** Übereinstimmung zwischen den Zugangsda
 
 #### Beispiel für WordPress
 
-Wenn Ihre Website einen Fehler des Typs **"Error establishing a database connection"** ausgibt und die zugehörige Infrastruktur nicht von einer [Störung](http://travaux.ovh.com/) betroffen ist, loggen Sie sich mit [FTP](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) ein und öffnen Sie dann das Verzeichnis in dem sich die Website befindet ("www" im Standardfall).
+Wenn Ihre Website einen Fehler des Typs **"Error establishing a database connection"** ausgibt und die zugehörige Infrastruktur nicht von einer [Störung](https://web-cloud.status-ovhcloud.com/) betroffen ist, loggen Sie sich mit [FTP](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) ein und öffnen Sie dann das Verzeichnis in dem sich die Website befindet ("www" im Standardfall).
 
 Wenn es sich um eine WordPress Website handelt, öffnen Sie die Datei `wp-config.php`.
 

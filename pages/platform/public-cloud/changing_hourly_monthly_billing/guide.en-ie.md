@@ -29,8 +29,8 @@ If you initially selected hourly billing, you can switch to monthly billing at a
 
 ## Requirements
 
-- You need to have created a [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/){.external}.
-- You must be logged in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- A [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/){.external} in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 

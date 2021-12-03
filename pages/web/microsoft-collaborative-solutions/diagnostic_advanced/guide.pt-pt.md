@@ -123,7 +123,7 @@ Este erro indica um erro geral de envio de e-mails que pode ter várias causas:
 - [A sua conta foi suspensa](#expired)
 - [A password introduzida está incorreta](#password)
 - [A sua conta foi bloqueada devido ao envio de correio indesejável](#blocked)
-- [Ocorreu um incidente na infraestrutura](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+- [Ocorreu um incidente na infraestrutura](https://web-cloud.status-ovhcloud.com/)
 
 ## Saiba mais
 

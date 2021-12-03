@@ -122,7 +122,7 @@ Este error indica un error general al enviar mensajes de correo que pueden tener
 - [Su cuenta ha sido suspendida](#expired)
 - [La contraseña introducida es incorrecta](#password)
 - [Su cuenta ha sido bloqueada por envío de correo no deseado](#blocked)
-- [Se produjo un incidente en la infraestructura](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+- [Se produjo un incidente en la infraestructura](https://web-cloud.status-ovhcloud.com/)
 
 ## Más información
 

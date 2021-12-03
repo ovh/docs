@@ -113,7 +113,7 @@ This error indicates a general email sending failure wich may have several cause
 - [Your account has been suspended](#expired)
 - [The password that was entered is incorrect](#password)
 - [Your account has been blocked for sending spam](#blocked)
-- [An incident has occurred on the infrastructure](http://status.ovh.ie/?project=30&status=all&perpage=50)
+- [An incident has occurred on the infrastructure](https://web-cloud.status-ovhcloud.com/)
 
 ## Go further
 
