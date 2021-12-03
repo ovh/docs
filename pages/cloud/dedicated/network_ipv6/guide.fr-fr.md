@@ -43,7 +43,8 @@ En installant votre serveur à l’aide d’un modèle de système d’exploitat
 
 > [!api]
 >
->  @api {GET} /dedicated/server/{serviceName}/specifications/network
+> @api {GET} /dedicated/server/{serviceName}/specifications/network
+>
 
 
 ### Debian et systèmes d’exploitation basés sur Debian
