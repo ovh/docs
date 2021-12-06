@@ -3,6 +3,7 @@ title: Optimised method for uploading files to Object Storage
 slug: optimised_method_for_uploading_files_to_object_storage
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1951
+order: 130
 ---
 
 **Last updated 27th October 2021**

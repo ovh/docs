@@ -3,6 +3,7 @@ title: Synchroniser un NAS Synology avec l’Object Storage
 slug: pcs/pcs-syno
 excerpt: Retrouvez ici comment synchroniser un NAS Synology a un conteneur.
 section: Object Storage Standard (Swift)
+order: 150
 ---
 
 

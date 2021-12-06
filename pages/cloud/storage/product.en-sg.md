@@ -3,5 +3,5 @@ title: Storage and Backup
 slug: storage
 excerpt: Get started with OVHcloud Storage and Backup solutions
 order: 06
-sections: Enterprise File Storage, Object Storage Standard (Swift), Public Cloud Archive, Veeam, Cloud Disk Array, NAS
+sections: Enterprise File Storage, Object Storage S3 High Performance, Object Storage Standard (Swift), Public Cloud Archive, Veeam, Cloud Disk Array, NAS
 ---

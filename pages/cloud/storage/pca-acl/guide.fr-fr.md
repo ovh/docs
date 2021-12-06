@@ -5,6 +5,8 @@ routes:
     canonical: 'https://docs.ovh.com/fr/storage/pcs/acl/'
 excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre les ACL dans Public Cloud Archive
 section: Public Cloud Archive
+order: 40
+order: 40
 ---
 
 **Dernière mise à jour le 23/09/2021**

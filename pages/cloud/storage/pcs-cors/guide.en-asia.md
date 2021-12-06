@@ -3,6 +3,7 @@ title: Setting up CORS on Object Storage
 slug: pcs/cors
 excerpt: Find here the concepts to implement CORS
 section: Object Storage Standard (Swift)
+order: 50
 ---
 
 **Last updated 23rd September 2021**

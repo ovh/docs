@@ -3,6 +3,7 @@ title: Gestion de vos archives avec Rsync
 slug: pca/rsync
 excerpt: Découvrez comment accéder à vos archives Public Cloud avec Rsync
 section: Public Cloud Archive
+order: 90
 ---
 
 **Dernière mise à jour le 8 décembre 2020**

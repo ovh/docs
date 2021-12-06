@@ -4,6 +4,7 @@ excerpt: Automatisches Löschen von Objekten konfigurieren
 slug: automatisches_loschen_von_objekten_konfigurieren
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1950
+order: 70
 ---
 
 

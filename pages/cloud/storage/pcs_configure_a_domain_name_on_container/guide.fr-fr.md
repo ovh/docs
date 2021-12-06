@@ -3,6 +3,7 @@ title: Lier un conteneur a un nom de domaine
 slug: pcs/link-domain
 excerpt: Retrouvez ici comment lier un nom de domaine a un conteneur.
 section: Object Storage Standard (Swift)
+order: 120
 ---
 
 **Dernière mise à jour le 27/10/2021**

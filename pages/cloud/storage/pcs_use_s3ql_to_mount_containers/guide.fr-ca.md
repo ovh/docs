@@ -3,6 +3,7 @@ title: Utiliser S3QL pour monter un conteneur de object storage
 slug: utiliser_S3QL_pour_monter_un_conteneur_de_object_storage
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1908
+order: 160
 ---
 
 **Dernière mise à jour le 27/10/2021**

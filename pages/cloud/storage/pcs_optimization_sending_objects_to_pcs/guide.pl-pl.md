@@ -3,6 +3,7 @@ title: Optymalizacja wysyłki do Object Storage
 slug: optymalizacja_wysylki_do_object_storage
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1951
+order: 130
 ---
 
 **Ostatnia aktualizacja z dnia 27/10/2021**
