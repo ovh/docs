@@ -5,7 +5,7 @@ excerpt:
 section: Object Storage S3 High Performance
 ---
 
-**Dernière mise à jour le**
+**Dernière mise à jour le 06/12/2021**
 
 ## Objectif
 
@@ -13,8 +13,8 @@ Ce guide à pour objectif de vous familiariser avec la gestion de vos conteneurs
 
 ## Prérequis
 
-- Être connecté à votre [espace client](https://www.ovh.com/manager/#/){.external}
-- Avoir créé un [utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avoir créé un [utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
 
 ## En pratique
 
@@ -32,32 +32,30 @@ Une fois votre utilisateur créé vous devez générer ses certificats S3
 
 > [!primary]
 >
-> Il n'est pas possible de créer de bucket Public Cloud Archive
+> Il n'est pas possible de créer de bucket Public Cloud Archive.
 >
 
-Connectez-vous à votre [espace client](https://www.ovh.com/manager/#/){.external} :
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Public Cloud`{.action} dans la barre de menu supérieure.
 
-1. Cliquez sur l'onglet `Public Cloud`{.action}
-1. Cliquez sur `Object Storage`{.action} dans le menu à gauche
-1. Cliquez sur  `Create an object container`{.action}
+Sélectionnez `Object Storage`{.action} dans le menu à gauche puis cliquez sur `Créer un conteneur d'objets`{.action}
 
-Si il s'agit de votre premier bucket :
+S'il s'agit de votre premier bucket, vous devriez voir cet affichage :
 
 ![pcs dashboard](images/create-container-20211005102334181.png)
 
-Si il ne s'agit pas de votre premier bucket :
+S'il ne s'agit pas de votre premier bucket :
 
 ![pcs dashboard](images/create-container-20211005115040834.png)
 
-Sélectionnez la solution High Performance et cliquez sur `Next`{.action} :
+Sélectionnez la solution High Performance et cliquez sur `Suivant`{.action} :
 
 ![Select High Performance Solution](images/HighPerf-S3-getting-started-2021102809081084.png)
 
-Sélectionnez la région de votre bucket et cliquez sur `Next`{.action} :
+Sélectionnez la région de votre bucket et cliquez sur `Suivant`{.action} :
 
 ![Select a region](images/HighPerf-S3-getting-started-20211028090916484.png)
 
-Nommez votre bucket et cliquez sur `Create the container`{.action} :  
+Nommez votre bucket et cliquez sur `Ajouter le conteneur`{.action} :  
 
 ![Container name](images/HighPerf-S3-getting-started-20211028091015710.png)  
 
@@ -72,35 +70,35 @@ Nommez votre bucket et cliquez sur `Create the container`{.action} :
 
 #### Liaison d'un utilisateur à un bucket
 
-À ce stade, vous ne pouvez pas intéragir avec votre bucket car aucun utilisateur S3 n'y est associé.
+À ce stade, vous ne pouvez pas interagir avec votre bucket car aucun utilisateur S3 n'y est associé.
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Add a user to a container`{.action}
+Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Ajouter un utilisateur à votre conteneur`{.action}.
 
 ![Add a user to a container](images/HighPerf-S3-getting-started-20211028091254996.png)
 
-Sélectionnez l'utilisateur à ajouter à votre bucket et cliquez sur `Next`{.action} :
+Sélectionnez l'utilisateur à ajouter à votre bucket et cliquez sur `Suivant`{.action} :
 
 ![Add a user to my container](images/HighPerf-S3-getting-started-20211028091356617.png)
 
-Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Next`{.action} :
+Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Suivant`{.action} :
 
 ![Add a user to my container - Role](images/HighPerf-S3-getting-started-20211028091456850.png)
 
 ### Gestion des objets
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Display objects`{.action}
+Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Afficher les objets`{.action}.
 
 ![Object Storage Dashboard](images/HighPerf-S3-getting-started-20211028093009189.png)
 
-Cliquez sur `+ Add objects`{.action}
+Cliquez sur `+ Ajouter des objets`{.action}
 
 ![Add objects](images/HighPerf-S3-getting-started-20211028093103226.png)
 
-Si besoin, définissez un préfixe, cliquez sur `Select files`{.action} puis sur `Import`{.action}
+Si besoin, définissez un préfixe, cliquez sur `Sélectionnez les fichiers`{.action} puis sur `Importer`{.action}
 
 ![Select files](images/HighPerf-S3-getting-started-2021102809321218.png)
 
-Vous pouvez maintenant intérargir avec votre objet :
+Vous pouvez maintenant interagir avec votre objet :
 
 ![Object actions](images/HighPerf-S3-getting-started-20211028093408437.png)
 
@@ -108,28 +106,31 @@ Vous pouvez maintenant intérargir avec votre objet :
 
 #### Installation
 
+Entrez la commande suivante :
+
 ```bash
 user@host:~$ pip3 install python-openstackclient awscli awscli-plugin-endpoint
 ```
 
 > [!primary]
 >
-> Installez le package `groff` si vous souhaitez utiliser l'aide en ligne de commande
+> Installez le package `groff` si vous souhaitez utiliser l'aide en ligne de commande.
 >
+
 #### Configuration
 
-Les jetons S3 sont différents, vous avez besoin de 2 paramètres (accès et secret) pour générer un jeton S3. Ces informations d'identification seront stockées en toute sécurité dans Keystone. Pour le générer :
+Les jetons S3 sont différents, vous avez besoin de 2 paramètres (accès et secret) pour générer un jeton S3. Ces informations d'identification seront stockées en toute sécurité dans Keystone. Pour le générer, suivez les étapes ci-dessous.
 
 Définissez les variables d'environnement d'OpenStack :
 
 > [!primary]
 >
-> Si besoin, téléchargez le fichier OpenRC de votre utilisateur
+> Si besoin, téléchargez le fichier OpenRC de votre utilisateur.
 >
 > ![Download Openrc file](images/HighPerf-S3-Getting-started-20211123123335113.png)
 >
 
-puis
+puis entrez :
 
 ```bash
 user@host:~$ source openrc.sh
@@ -192,7 +193,7 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 
 > [!primary]
 >
-> Si vous n'avez pas installé `awscli-plugin-endpoint`, vous devez ajouter `--endpoint-url https://s3.<region>.perf.cloud.ovh.net` à la ligne de commande
+> Si vous n'avez pas installé `awscli-plugin-endpoint`, vous devez ajouter `--endpoint-url https://s3.<region>.perf.cloud.ovh.net` à la ligne de commande.
 >
 
 > [!primary]
@@ -201,49 +202,58 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 >
 
 **Créer un bucket**
+
 ```bash
 aws s3 mb s3://<bucket_name>
 aws --endpoint-url https://s3.<region>.perf.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
 ```
 
 **Lister vos buckets**
+
 ```bash
 aws s3 ls
 ```
 
 **Uploader vos fichiers en tant qu'objets dans votre bucket**
+
 ```bash
 aws s3 cp /datas/test1 s3://<bucket_name>
 ```
 
 **Par défaut, les objets prennent le nom des fichiers mais ils peuvent être renommés**
+
 ```bash
 aws s3 cp /datas/test1 s3://<bucket_name>/other-filename
 ```
 
 **Télécharger un objet depuis un bucket**
+
 ```bash
 aws s3 cp s3://<bucket_name>/test1 .
 ```
 
 **Télécharger un objet d'un bucket vers un autre bucket**
+
 ```bash
 aws s3 cp s3://<bucket_name>/test1 s3://<bucket_name_2>
 ```
 
 **Télécharger ou téléverser un bucket entier vers l'hôte/bucket**
+
 ```bash
 aws s3 cp s3://<bucket_name> . --recursive
 aws s3 cp s3://<bucket_name> s3://<bucket_name_2> --recursive
 ```
 
 **Synchronisation des buckets**
+
 ```bash
 aws s3 sync . s3://<bucket_name>
 aws s3 sync s3://<bucket_name> s3://<bucket_name_2>
 ```
 
 **Supprimer des objets et des buckets**
+
 ```bash
 # Suppression d'un objet
 aws s3 rm s3://<bucket_name>/test1
@@ -257,6 +267,7 @@ aws s3 rb s3://<bucket_name> --force
 ```
 
 **Définir des tags sur un bucket**
+
 ```bash
 aws s3api put-bucket-tagging --bucket <bucket_name> --tagging 'TagSet=[{Key=myKey,Value=myKeyValue}]'
 aws s3api get-bucket-tagging --bucket <bucket_name>
@@ -273,11 +284,13 @@ aws s3api get-bucket-tagging --bucket <bucket_name>
 ```
 
 **Supprimer les tags sur un bucket**
+
 ```bash
 aws s3api s3api delete-bucket-tagging --bucket <bucket_name>
 ```
 
 **Définir des tags sur un objet**
+
 ```bash
 aws s3api put-object-tagging --bucket <bucket_name> --key test1 --tagging 'TagSet=[{Key=myKey,Value=myKeyValue}]'
 aws s3api get-bucket-tagging --bucket <bucket_name>
@@ -294,10 +307,11 @@ aws s3api get-bucket-tagging --bucket <bucket_name>
 ```
 
 **Supprimer les tags sur un objet**
+
 ```bash
 aws s3api s3api delete-object-tagging --bucket <bucket_name> --key test1
 ```
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
