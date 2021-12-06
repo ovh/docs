@@ -72,8 +72,6 @@ Di seguito trovi i primi step per la messa in servizio dell'immagine preinstalla
     c) Informazioni sulla licenza.*  
     d) leggere e accettare i contratti di licenza utente.  
 
-No further steps are necessary to the first configuration of this app.
-
 Per completare la prima configurazione dell'applicazione non sono necessari ulteriori step.
 
 > [!faq]
