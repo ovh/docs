@@ -27,7 +27,7 @@ Existem muitas opções para efetuar o acesso SSH. Este guia inclui alguns exemp
 
 #### Windows
 
-- [Putty](http://www.putty.org/){.external} (Gratuito)
+- [PuTTY](http://www.putty.org/){.external} (Gratuito)
 - [MobaXterm](https://mobaxterm.mobatek.net/) (versão gratuita e versão paga)
 - [SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (Pago)
 
