@@ -5,7 +5,7 @@ excerpt: 'Creates a Kubernetes cluster through Terraform'
 section: Getting started
 ---
 
-**Last updated 27th October 2021**
+**Last updated 6th December 2021**
 
 ## Objective
 
@@ -54,7 +54,7 @@ Why?
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/au/en/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) tutorial.
 
 When you have successfully generated your OVH tokens, please keep them. You'll have to define them in the coming minutes ;-).
 
@@ -134,6 +134,11 @@ resource "ovh_cloud_project_kube_nodepool" "node_pool" {
 In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA7 region, using the Kubernetes version 1.22 (the last and recommended version at the time we wrote this tutorial).
 
 And we tell Terraform to create a Node Pool with 3 Nodes with B2-7 machine type.
+
+> [!warning]
+>
+> You can't use "_" or "." as separator in a node pool name or a flavor name.
+> Else, you'll have get a "gzip: invalid header" during node pool creation.
 
 Finally, create a `output.tf` file with the following content:
 
@@ -429,6 +434,44 @@ You can now deploy your applications and/or create new clusters through Terrafor
 
 ## Known issues
 
+### "gzip: invalid header"
+
+You defined the node poolyou want to create? Ok it's time to enter `terraform apply` command.
+
+```bash
+ovh_cloud_project_kube_nodepool.node_pool[0]: Creating...
+local_file.kubeconfig[0]: Creating...
+local_file.kubeconfig[0]: Creation complete after 0s [id=c5d11f6df9df77a0b57b6c14c3be4fb48178f6ac]
+ 
+Error: calling Post /cloud/project/a212a1e43b614c4ba27a247b890fcf59/kube/90cb98f1-ad48-4f98-95c8-07188ea765cf/nodepool with params my-pool-0(d2.8): 3/3/3:
+                "gzip: invalid header"
+ 
+  on ovh_kube_cluster.tf line 10, in resource "ovh_cloud_project_kube_nodepool" "node_pool":
+  10: resource "ovh_cloud_project_kube_nodepool" "node_pool" {
+```
+
+Come on! What is happening? :-(
+
+In fact, the error message is not user friendly, we will work on it.
+If you have this "gzip: invalid header" error message, the issue is that you name the flavor or the node pool name with an invalid character: "_" or ".".
+
+API don't support theses character so that's the reason why you received this error message.
+In order to fix it, change the flavor name and/or the pool name to a good one, for example:
+
+```
+resource "ovh_cloud_project_kube_nodepool" "node_pool" {
+  service_name  = var.service_name
+  kube_id       = ovh_cloud_project_kube.my_kube_cluster.id
+  name          = "my-pool" //Warning: "_" char is not allowed!
+  flavor_name   = "b2-7"
+  desired_nodes = 3
+  max_nodes     = 3
+  min_nodes     = 3
+}
+```
+
+### "not enough xxx quotas"
+
 By default, the Public Cloud projects as well as the resources total (RAM, CPU, disk space, number of instances, etc.) you can use are limited for security reasons.
 
 When you create a new Kubernetes Node Pool, if you run out of resources in your available quota, the Nodes might be in error.
@@ -439,7 +482,7 @@ xxx can be: RAM, CPU, VM, Disk or Port.
 If this is the case, the quotas must be increased.
 In order to check your quotas and increase them, please follow this tutorial:
 
-[Increasing Public Cloud quotas](https://docs.ovh.com/au/en/public-cloud/increase-public-cloud-quota/){.external}.
+[Increasing Public Cloud quotas](https://docs.ovh.com/gb/en/public-cloud/increase-public-cloud-quota/){.external}.
 
 ## Destroy (cleanup)
 
