@@ -3,6 +3,7 @@ title: Ottimizza il trasferimento dei tuoi file verso l’Object Storage
 slug: ottimizza_il_trasferimento_dei_tuoi_file_verso_lobject_storage
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1951
+order: 130
 ---
 
 **Ultimo aggiornamento: 27/10/2021**

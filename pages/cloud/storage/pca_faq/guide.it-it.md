@@ -3,6 +3,7 @@ title: Frequently Asked Questions
 slug: pca/faq
 excerpt: Le domande piu frequenti poste dai nostri utenti
 section: Public Cloud Archive
+order: 130
 ---
 
 

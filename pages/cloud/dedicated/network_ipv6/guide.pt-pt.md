@@ -5,7 +5,7 @@ excerpt: 'Saiba como configurar endereços IPv6 na nossa infraestrutura'
 section: 'Gestão de Rede'
 ---
 
-**Última atualização: 16/06/2020**
+**Última atualização: 01/12/2021**
 
 ## Sumário
 

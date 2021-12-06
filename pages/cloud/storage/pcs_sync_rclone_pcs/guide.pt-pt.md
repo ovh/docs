@@ -2,6 +2,7 @@
 title: 'Utilizar o Object Storage com o rClone'
 slug: sync-rclone-object-storage
 section: Object Storage Standard (Swift)
+order: 140
 ---
 
 **Última atualização no dia 16/05/2018**

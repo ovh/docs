@@ -3,6 +3,7 @@ title: Capabilities and limitations
 slug: pcs/capabilities-and-limitations
 excerpt: Find here the main capacities and limitations for the management of your containers
 section: Object Storage Standard (Swift)
+order: 80
 ---
 
 **Last updated 23rd September 2021**

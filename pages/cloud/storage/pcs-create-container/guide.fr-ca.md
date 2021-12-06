@@ -3,6 +3,7 @@ title: Création de conteneur Object Storage
 slug: pcs/creation-de-conteneur
 excerpt: Découvrez comment créer vos conteneurs Object Storage depuis votre espace client OVHcloud
 section: Object Storage Standard (Swift)
+order: 110
 ---
 
 **Dernière mise à jour le 27/10/2021**

@@ -3,6 +3,7 @@ title: Gerer ses archives depuis un client Swift (Cyberduck)
 slug: pca/cyberduck
 excerpt: Découvrez comment configurer Cyberduck afin de pouvoir gérer votre Public Cloud Archive
 section: Public Cloud Archive
+order: 80
 ---
 
 **Dernière mise à jour le 18/06/2021**

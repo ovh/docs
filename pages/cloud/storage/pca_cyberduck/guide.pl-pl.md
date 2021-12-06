@@ -3,6 +3,7 @@ title: Zarzadzaj swoimi archiwami za pomoca interfejsu Swift (Cyberduck)
 slug: pca/cyberduck
 excerpt: Przewodnik ten pokazuje, jak zarzadzac usuga Public Cloud Archive.
 section: Public Cloud Archive
+order: 80
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: 'Découvrez comment configurer la suppression automatique des fichiers 
 slug: configure_automatic_object_deletion
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1950
+order: 70
 ---
 
 **Dernière mise à jour le 27/10/2021**

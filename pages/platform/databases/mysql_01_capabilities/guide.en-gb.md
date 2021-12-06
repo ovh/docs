@@ -32,6 +32,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `BHS` (Beauharnois, Canada)
 - `DE` (Frankfurt, Germany)
 - `GRA` (Gravelines, France)
+- `SBG` (Strasbourg, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
@@ -85,11 +86,11 @@ Here are the node types you can choose from:
 
 | Name    | Disk (GB) | Cores | Memory (GB) |
 | ------- | --------- | ----- | ----------- |
-| db1-7   | 50        | 2     | 7           |
-| db1-15  | 100       | 4     | 15          |
-| db1-30  | 200       | 8     | 30          |
-| db1-60  | 400       | 16    | 60          |
-| db1-120 | 400       | 32    | 120         |
+| db1-7   | 160       | 2     | 7           |
+| db1-15  | 320       | 4     | 15          |
+| db1-30  | 640       | 8     | 30          |
+| db1-60  | 1280      | 16    | 60          |
+| db1-120 | 2560      | 32    | 120         |
 
 Right now, all nodes of a given cluster should be of the same type and live in the same region.
 

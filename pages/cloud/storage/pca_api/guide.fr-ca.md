@@ -3,6 +3,7 @@ title: API Particularités
 slug: pca/api
 excerpt: Particularités de l'API Openstack Swift sur les archives publiques en nuage d'OVH
 section: Public Cloud Archive
+order: 120
 ---
 
 

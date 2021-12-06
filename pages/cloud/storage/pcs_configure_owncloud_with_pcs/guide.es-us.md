@@ -4,6 +4,7 @@ excerpt: Configurar ownCloud con el Object Storage
 section: Object Storage Standard (Swift)
 slug: configurar_owncloud_con_el_object_storage
 legacy_guide_number: g2000
+order: 170
 ---
 
 

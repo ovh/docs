@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/pcs/acl'
 excerpt: Here are the concepts for implementing ACLs in Object Storage
 section: Object Storage Standard (Swift)
+order: 40
 ---
 
 **Last updated 23rd September 2021**

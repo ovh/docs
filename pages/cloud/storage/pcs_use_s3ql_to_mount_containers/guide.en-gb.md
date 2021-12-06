@@ -3,6 +3,7 @@ title: Use S3QL to mount object storage containers
 slug: use_s3ql_to_mount_object_storage_containers
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1908
+order: 160
 ---
 
 **Last updated 27th October 2021**

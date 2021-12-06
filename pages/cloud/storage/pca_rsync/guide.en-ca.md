@@ -3,6 +3,7 @@ title: Managing your archives with Rsync
 slug: pca/rsync
 excerpt: Find out how to access your Public Cloud Archives using Rsync
 section: Public Cloud Archive
+order: 90
 ---
 
 **Last updated 8th December 2020**

@@ -4,6 +4,7 @@ excerpt: Colocar un contenedor de Object Storage detrás de un nombre de dominio
 slug: colocar_un_contenedor_de_object_storage_detras_de_un_nombre_de_dominio
 section: Object Storage Standard (Swift)
 legacy_guide_number: g2006
+order: 120
 ---
 
 ## Objetivo
