@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak skonfigurować adresy IPv6 w infrastrukturze OVHclou
 section: 'Zarządzanie siecią'
 ---
 
-**Ostatnia aktualizacja: 03-08-2020**
+**Ostatnia aktualizacja: 01/12/2021**
 
 ## Wprowadzenie
 

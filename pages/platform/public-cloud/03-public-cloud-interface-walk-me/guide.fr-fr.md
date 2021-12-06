@@ -6,7 +6,7 @@ section: Premiers pas
 order: 03
 ---
 
-**Dernière mise à jour le 18/10/2021**
+**Dernière mise à jour le 06/12/2021**
 
 ## Objectif
 
@@ -80,7 +80,7 @@ Plusieurs outils de gestion sont disponibles dans votre projet Public Cloud, ils
 |**Horizon**|C'est l'[interface graphique](https://docs.ovh.com/fr/public-cloud/presentation-dhorizon/) habituellement disponible sur OpenStack. Elle n'est pas modifiée, ce qui permet aux utilisateurs qui ont l'habitude de cette interface de retrouver leurs réflexes.|
 |**Users and Roles**|Permet de [créer des utilisateurs](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/) et de leur attribuer un rôle. Ces utilisateurs permettent notamment d'accèder directement aux APIs ou à l'interface Horizon. Vous pouvez par exemple créer un utilisateur pour vos opérations de maintenance classiques et un utilisateur pour vos outils d'automatisation, comme par exemple Terraform.|
 |**Quota and Regions**|Cet outil vous permet de piloter les localisations et les limites de ressources disponibles sur votre projet.<br><br>**Les quotas** : Suivant certains critères (nombre de factures déjà payées, utilisation d'autres produits OVHcloud), notre système met en place des quotas (des limites) au nombre de ressources que vous pouvez créer, ceci dans le but d'éviter tout problème d'impayés. Par défaut, le système augmente vos quotas automatiquement quand certains critères sont atteints. Vous pouvez cependant [effectuer une augmentation manuelle d'un quota](https://docs.ovh.com/fr/public-cloud/augmenter-le-quota-public-cloud/) depuis cet outil.<br><br>**Les régions** : Public Cloud est disponible dans plusieurs localisations dans le monde. De plus, chaque localisation peut comporter plusieurs « régions » (notion propre à OpenStack). Par exemple, pour un client européen, la zone APAC (Asie Pacifique) est désactivée par défaut. Si cela correspond à vos besoins, vous pouvez activer de nouvelles régions depuis ce menu.|
-|**SSH Keys**|Un outil qui vous permet de gérer vos clés SSH de manière centralisée.|
+|**SSH Keys**|Un outil qui vous permet de [gérer vos clés SSH](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-1-creer-des-cles-ssh) de manière centralisée.|
 |**Billing Control**|Public Cloud fonctionnant en « *pay as you go* », les factures sont éditées en fin de mois. Dans [ce menu](https://docs.ovh.com/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/), vous pourrez suivre votre consommation actuelle, voir une prévision de la prochaine facture et bien sûr retrouver vos précédentes factures.|
 |**Credit and Vouchers**|Ce menu vous permet de consulter la consommation d'un coupon, d'en ajouter un ou d'[ajouter du crédit](https://docs.ovh.com/fr/public-cloud/ajouter-du-credit-cloud/) directement sur votre projet Public Cloud.|
 |**Contacts and Rights**|Outre la possibilité de changer le contact technique ou le contact de facturation de votre projet, vous aurez la possibilité d'[ajouter d'autres contacts](https://docs.ovh.com/fr/public-cloud/changer-les-contacts-dun-projet/) (compte OVHcloud) pour administrer techniquement votre projet. Vous pouvez également ajouter des utilisateurs en consultation uniquement (« *read-only* »).|

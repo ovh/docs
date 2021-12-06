@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Last updated 26th November 2021**
+**Last updated 6th December 2021**
 
 **This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC)  to a new destination vDC (Essentials or Premier).**
 
@@ -34,6 +34,14 @@ There are two aspects involved in this process
 - access to the vSphere Control Panel
 
 ## Instructions
+
+> [!primary]
+>
+> If you want to be assisted by:
+>
+> - OVHcloud partners, who are certified and experts on our products, to assist you with your migration or perform it on your behalf, please click [this link](https://www.ovhcloud.com/en-gb/private-cloud-migration/).
+> - our OVHcloud technical experts for tailored support and advice at every stage of your migration project, please click [this link](https://www.ovhcloud.com/en-gb/private-cloud-migration/).
+>
 
 This guide will utilise the notions of a **source vDC** and a **destination vDC**. Please find an index of the tasks you will be performing:
 
