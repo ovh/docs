@@ -6,7 +6,7 @@ section: Getting started
 order: 6
 ---
 
-**Last updated 22nd November 2021**
+**Last updated 6th December 2021**
 
 ## Objective
 
@@ -28,6 +28,14 @@ There are two aspects to migrating a PCC infrastructure:
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`Private Cloud`{.action} in the `Hosted Private Cloud`{.action} section)
 
 ## Instructions
+
+> [!primary]
+>
+> If you want to be assisted by:
+>
+> - OVHcloud partners, who are certified and experts on our products, to assist you with your migration or perform it on your behalf, please click [this link](https://www.ovhcloud.com/en-gb/private-cloud-migration/).
+> - our OVHcloud technical experts for tailored support and advice at every stage of your migration project, please click [this link](https://www.ovhcloud.com/en-gb/private-cloud-migration/).
+>
 
 This guide will use the notions of a **source PCC** and a **destination Hosted Private Cloud**.
 

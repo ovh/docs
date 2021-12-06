@@ -6,7 +6,7 @@ section: Premiers pas
 order: 6
 ---
 
-**Dernière mise à jour le 22/11/2021**
+**Dernière mise à jour le 06/12/2021**
 
 ## Objectif
 
@@ -28,6 +28,14 @@ La migration d'un service Hosted Private Cloud comprend deux aspects :
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
 
 ## En pratique
+
+> [!primary]
+>
+> Si vous souhaitez être assistés par :
+>
+> - des partenaires OVHcloud, certifiés et experts sur nos produits, pour vous accompagner dans votre migration ou l'effectuer à votre place, veuillez cliquer sur [ce lien](https://www.ovhcloud.com/fr/private-cloud-migration/).
+> - nos experts techniques OVHcloud pour un accompagnement sur mesure et vous conseiller à chacune des étapes de votre projet de migration, veuillez cliquer [ce lien](https://www.ovhcloud.com/fr/private-cloud-migration/).
+>
 
 Nous aborderons dans ce guide les notions d'**infrastructure d'origine** et de **Hosted Private Cloud de destination**.
 
