@@ -46,7 +46,7 @@ Vérifiez donc tout d'abord la sécurité de votre poste Windows, Mac ou Linux :
 
 ### Étape 2. Sécurisez votre espace client OVHcloud
 
-Pour sécuriser votre compte client, suivez les instructions de ce [guide](../../customer/tout-savoir-sur-identifiant-client/).
+Pour sécuriser votre compte client, [activez la double authentification](../../customer/securiser-son-compte-avec-une-2FA/) et suivez les instructions de ce [guide](../../customer/tout-savoir-sur-identifiant-client/).
 
 Pensez notamment à mettre à jour les [informations de votre compte client](../../customer/tout-savoir-sur-identifiant-client/#modifier-mes-informations-personnelles) et à y ajouter un **e-mail de secours**.<br>
 En cas de perte de vos identifiants et/ou d'indisponibilité de l'adresse e-mail principale de votre compte client OVHcloud, un e-mail de secours ou des informations personnelles à jour nous seront indispensables pour vous aider à retrouver l'accès à vos solutions.
@@ -74,7 +74,7 @@ Les e-mails de phishing constituent également une menace à la sécurité de vo
 En cas de non-renouvellement de vos services, OVHcloud a l'obligation légale, à l'échéance de votre abonnement, de supprimer intégralement les données liées à votre offre d'hébergement, ainsi que la totalité de leurs sauvegardes. Nous envoyons des messages de rappels à nos clients afin de leur rappeler leurs échéances de renouvellement.<br>
 Pour autant, ces e-mails de relance peuvent arriver dans vos spams, ou l'adresse e-mail associée à votre compte OVHcloud peut être erronée ou ne plus être disponible.
 
-Surtout si vous n'avez pas la possibilité d'effectuer de sauvegardes régulières et que votre site a une place prépondérante dans votre activité professionnelle, [activez le renouvellement automatique](../../billing/renouvellement-automatique-ovh/#acceder-au-parametrage-de-vos-services) sur l'ensemble de vos services OVHcloud.<br>
+Si votre site a une place prépondérante dans votre activité professionnelle, [activez le renouvellement automatique](../../billing/renouvellement-automatique-ovh/#acceder-au-parametrage-de-vos-services) sur l'ensemble de vos services OVHcloud.<br>
 Nous vous recommandons aussi de vérifier régulièrement la **validité des moyens de paiement** que vous avez enregistrés.
 
 ### Étape 6. Vérifiez que votre site est à jour
@@ -85,7 +85,7 @@ Pensez également à utiliser une version récente du [langage informatique PHP]
 
 ### Étape 7. Activez le https
 
-Mettez en place la connexion cryptée à votre site via le protocole **HTTPS** en suivant ce [guide](../passer-site-internet-https-ssl/).
+Mettez en place la connexion cryptée à votre site via le protocole **HTTPS** en suivant ce [guide](../passer-site-internet-https-ssl/). L'activation de ce protocole va permettre de chiffrer l'ensemble des informations qui transitent par votre site web (notamment les saisies effectutées par vos utilisateurs sur ses formulaires).
 
 ### Étape 8. Protégez vos formulaires
 
