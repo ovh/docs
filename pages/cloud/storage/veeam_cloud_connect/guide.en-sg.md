@@ -5,7 +5,7 @@ excerpt: Find out how to use Veeam Cloud Connect
 section: Veeam
 ---
 
-**Last updated 16th July 2020**
+**Last updated 7th December 2021**
 
 ## Objective
 
