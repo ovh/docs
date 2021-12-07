@@ -85,7 +85,7 @@ Pensez également à utiliser une version récente du [langage informatique PHP]
 
 ### Étape 7. Activez le https
 
-Mettez en place la connexion cryptée à votre site via le protocole **HTTPS** en suivant ce [guide](../passer-site-internet-https-ssl/). L'activation de ce protocole va permettre de chiffrer l'ensemble des informations qui transitent par votre site web (notamment les saisies effectutées par vos utilisateurs sur ses formulaires).
+Mettez en place la connexion cryptée à votre site via le protocole **HTTPS** en suivant ce [guide](../passer-site-internet-https-ssl/). L'activation de ce protocole va permettre de chiffrer l'ensemble des informations qui transitent par votre site web (notamment les saisies effectuées par vos utilisateurs sur ses formulaires).
 
 ### Étape 8. Protégez vos formulaires
 
