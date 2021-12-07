@@ -65,7 +65,7 @@ Vous pouvez également modifier ce mot de passe en vous rendant directement sur 
 |Wordpress|Cliquez sur ![admin_wordpress](images/admin_wordpress.png){.thumbnail}|
 |Joomla|Sur cette page, cliquez sur `Go to site home page`{.action}</br>![admin_joomla1](images/admin_joomla1.png){.thumbnail} puis sur `Forgot your password?`{.action}</br>![admin_joomla2](images/admin_joomla2.png){.thumbnail}|
 |Prestashop|![admin_prestashop](images/admin_prestashop.png){.thumbnail}|
-|Drupal|Sur cette page, cliquez sur `Log in`{.action}</br>![admin_drupal1](images/admin_drupal1.png){.thumbnail} puis sur `Reset your password`{.action}</br>[admin_drupal2](images/admin_drupal2.png){.thumbnail}</br> et enfin indiquez votre nom d'utilisateur ou votre adresse e-mail de contact et cliquez sur `Soumettre`{.action}</br>![admin_drupal3](images/admin_drupal3.png){.thumbnail}|
+|Drupal|Sur cette page, cliquez sur `Log in`{.action}</br>![admin_drupal1](images/admin_drupal1.png){.thumbnail} puis sur `Reset your password`{.action}</br>![admin_drupal2](images/admin_drupal2.png){.thumbnail}</br> et enfin indiquez votre nom d'utilisateur ou votre adresse e-mail de contact et cliquez sur `Soumettre`{.action}</br>![admin_drupal3](images/admin_drupal3.png){.thumbnail}|
 
 > [!primary]
 >
