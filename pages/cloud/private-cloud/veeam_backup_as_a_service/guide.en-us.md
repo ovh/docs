@@ -5,7 +5,7 @@ excerpt: Find out how to enable and use the Veeam Managed Backup option to secur
 section: 'OVHcloud services and options'
 ---
 
-**Last updated 18th November 2020**
+**Last updated 7th December 2021**
 
 ## Objective
 
