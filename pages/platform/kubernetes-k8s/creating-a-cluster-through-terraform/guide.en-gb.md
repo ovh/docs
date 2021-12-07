@@ -20,7 +20,7 @@ If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](https://docs.ovh.com/gb/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
 - Installing [Terraform CLI](https://www.terraform.io/downloads.html){.external}
 
 ## Before you begin
@@ -137,8 +137,8 @@ And we tell Terraform to create a Node Pool with 3 Nodes with B2-7 machine type.
 
 > [!warning]
 >
-> You can't use "_" or "." as separator in a node pool name or a flavor name.
-> Else, you'll have get a "gzip: invalid header" during node pool creation.
+> You can't use "_" or "." as a separator in a node pool name or a flavor name.
+> You would obtain a "gzip: invalid header" during node pool creation.
 
 Finally, create a `output.tf` file with the following content:
 
@@ -385,7 +385,7 @@ users:
     client-key-data: <encoded_value>
 ```
 
-Now, go to the `OVHcloud Control Panel`, click on [Public Cloud](https://www.ovhcloud.com/en/public-cloud/) and then click on `Managed Kubernetes Service` section. 
+Now, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`. <br>
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
@@ -436,7 +436,7 @@ You can now deploy your applications and/or create new clusters through Terrafor
 
 ### "gzip: invalid header"
 
-You defined the node pool you want to create? Ok it's time to enter `terraform apply` command.
+You defined the node pool you want to create? So it's time to enter  the `terraform apply` command.
 
 ```bash
 ovh_cloud_project_kube_nodepool.node_pool[0]: Creating...
@@ -450,15 +450,14 @@ Error: calling Post /cloud/project/a212a1e43b614c4ba27a247b890fcf59/kube/90cb98f
   10: resource "ovh_cloud_project_kube_nodepool" "node_pool" {
 ```
 
-Come on! What is happening? :-(
+We do agree the error message is not user friendly, we will work on it. ;-)
 
-In fact, the error message is not user friendly, we will work on it.
-If you have this "gzip: invalid header" error message, the issue is that you name the flavor or the node pool name with an invalid character: "_" or ".".
+If you get this "gzip: invalid header" error message, the issue is that you name the flavor or the node pool name with an invalid character: "_" or ".".
 
-API don't support theses character so that's the reason why you received this error message.
-In order to fix it, change the flavor name and/or the pool name to a good one, for example:
+The API don't support these characters so that's the reason why you obtained this error message.
+In order to fix it, change the flavor name and/or the pool name to a correct one, for example:
 
-```
+```bash
 resource "ovh_cloud_project_kube_nodepool" "node_pool" {
   service_name  = var.service_name
   kube_id       = ovh_cloud_project_kube.my_kube_cluster.id
