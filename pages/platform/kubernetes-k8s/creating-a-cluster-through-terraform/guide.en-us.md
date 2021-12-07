@@ -5,7 +5,7 @@ excerpt: 'Creates a Kubernetes cluster through Terraform'
 section: Getting started
 ---
 
-**Last updated 6th December 2021**
+**Last updated 7th December 2021**
 
 ## Objective
 
@@ -482,7 +482,7 @@ xxx can be: RAM, CPU, VM, Disk or Port.
 If this is the case, the quotas must be increased.
 In order to check your quotas and increase them, please follow this tutorial:
 
-[Increasing Public Cloud quotas](https://docs.ovh.com/gb/us/public-cloud/increase-public-cloud-quota/){.external}.
+[Increasing Public Cloud quotas](https://docs.ovh.com/us/en/public-cloud/increase-public-cloud-quota/){.external}.
 
 ## Destroy (cleanup)
 

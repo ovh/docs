@@ -5,7 +5,7 @@ excerpt: 'Creates a Kubernetes cluster through Terraform'
 section: Getting started
 ---
 
-**Last updated 6th December 2021**
+**Last updated 7th December 2021**
 
 ## Objective
 
