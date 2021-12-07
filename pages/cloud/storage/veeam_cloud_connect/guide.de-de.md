@@ -5,7 +5,7 @@ excerpt: Einführung zu Veeam Cloud Connect
 section: Veeam
 ---
 
-**Letzte Aktualisierung am 21.09.2020**
+**Letzte Aktualisierung am 07.12.2021**
 
 ## Ziel
 
