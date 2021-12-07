@@ -84,7 +84,7 @@ Vous pouvez également modifier ce mot de passe en vous rendant directement sur 
 > La sauvegarde de vos données fait partie des opérations essentielles à la [sécurisation de vos sites](../connexion-espace-stockage-ftp-hebergement-web/). Nous vous conseillons d'importer régulièrement des sauvegardes de l'ensemble de vos données sur un support local, tel qu'une clé USB ou un disque dur externe, en suivant les instructions de ce [guide](../exporter-son-site-web/).
 >
 
-#### Identifier la base de données de votre site
+#### Identifier la base de données lié à votre module
 
 Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa base de données de façon certaine. Rendez-vous pour cela dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action} 
 
@@ -97,12 +97,13 @@ Dans le cas contraire, rendez-vous dans [l'espace FTP de votre hébergement](../
 - Pour Drupal : le fichier **"config.php"** dans le dossier où se trouve votre site (par défaut, le dossier "www")
 - Pour Prestashop : le fichier **".php"** dans le dossier où se trouve votre site (par défaut, le dossier "www")
 
+#### Sauvegarder votre module (facultatif)
 
-#### Sauvegarder votre site
+Pour sauvegarder votre module, suivez les instructions de ce [guide](../exporter-son-site-web/), afin de récupérer à la fois ses fichiers sur l'espace FTP de votre hébergement et sa base de données.
 
-Pour sauvegarder votre site, suivez les instructions de ce [guide](../exporter-son-site-web/), afin de récupérer à la fois ses fichiers sur l'espace FTP de votre hébergement et sa base de données.
+#### Supprimer le module
 
-#### Supprimer votre site
+
 
 rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur `Modules en 1 clic`{.action}.
 
