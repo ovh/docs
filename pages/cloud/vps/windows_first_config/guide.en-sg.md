@@ -15,8 +15,8 @@ After a fresh installation of a Windows Server operating system on a VPS, remote
 
 ## Requirements
 
-- a Windows [VPS](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A Windows [VPS](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 

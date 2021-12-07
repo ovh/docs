@@ -15,8 +15,8 @@ The KVM console allows you to connect directly to your VPS without the need to u
 
 ## Requirements
 
-- a [Virtual Private Server](https://www.ovhcloud.com/en/vps/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- A [Virtual Private Server](https://www.ovhcloud.com/en/vps/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
