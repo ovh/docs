@@ -5,7 +5,7 @@ excerpt: Apresentação da oferta Veeam Cloud Connect
 section: Veeam
 ---
 
-**Última atualização: 07/12/2020**
+**Última atualização: 07/12/2021**
 
 ## Objetivo
 

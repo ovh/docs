@@ -5,7 +5,7 @@ excerpt: Poznaj ofertę Veeam Cloud Connect
 section: Veeam
 ---
 
-**Ostatnia aktualizacja z dnia 07-12-2020**
+**Ostatnia aktualizacja z dnia 07-12-2021**
 
 ## Wprowadzenie
 
