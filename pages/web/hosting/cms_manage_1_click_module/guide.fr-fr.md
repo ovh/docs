@@ -74,7 +74,7 @@ Vous pouvez également modifier ce mot de passe en vous rendant directement sur 
 >
 > Que faire si vous n'avez pas reçu l'e-mail de réinitialisation du mot de passe administrateur de votre site ? 
 >
-> Vérifiez tout d'abord l'adresse e-mail associée à votre compte OVHcloud depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) : Cliquez sur votre nom en haut à droite de votre écran puis, dans le menu contextuel à droite de l'écran, cliquez sur vos initiales (`Gérer mon compte`{.action}).
+> Vérifiez tout d'abord l'adresse e-mail associée à votre compte OVHcloud depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) : Cliquez sur votre nom en haut à droite de votre écran puis, dans le menu contextuel à droite de l'écran, cliquez sur vos initiales (Bouton `Gérer mon compte`{.action}) puis sur l'onglet `Emails reçus`{.action}.
 >
 
 ### Supprimer votre module en 1 clic
@@ -90,36 +90,42 @@ Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa ba
 
 Si vous disposez d'une seule base de données dans cette partie de votre espace client et que vous ne possédez pas de solutions [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) ou [Cloud Database](https://www.ovh.com/fr/cloud-databases/), vous pouvez considérer qu'il s'agit de celle de votre site.
 
-Dans le cas contraire, rendez-vous dans [l'espace FTP de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) puis retrouvez son fichier de configuration en fonction du CMS utilisé :
+Dans le cas contraire, rendez-vous dans [l'espace FTP de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/) puis retrouvez son fichier de configuration en fonction du CMS utilisé dans le dossier où se trouve votre site (par défaut, le dossier « www ») :
 
-- Pour Wordpress : le fichier **"wp-admin.php"** dans le dossier où se trouve votre site (par défaut, le dossier "www")
-- Pour Joomla : le fichier **"configuration.php"** dans le dossier où se trouve votre site (par défaut, le dossier "www")
-- Pour Drupal : le fichier **"config.php"** dans le dossier où se trouve votre site (par défaut, le dossier "www")
-- Pour Prestashop : le fichier **".php"** dans le dossier où se trouve votre site (par défaut, le dossier "www")
+- Pour Wordpress : le fichier **« wp-config.php »**
+- Pour Joomla : le fichier **« configuration.php »**
+- Pour Drupal : le fichier **« settings.php »** (Pour le retrouver, rendez-vous dans le dossier « sites » puis « default »)
+- Pour Prestashop : le fichier **« parameters.php »** (Pour le retrouver, rendez-vous dans le dossier « app » puis « config »)
 
 #### Sauvegarder votre module (facultatif)
 
-Pour sauvegarder votre module, suivez les instructions de ce [guide](../exporter-son-site-web/), afin de récupérer à la fois ses fichiers sur l'espace FTP de votre hébergement et sa base de données.
+Pour sauvegarder votre site, suivez les instructions de ce [guide](../exporter-son-site-web/), afin de récupérer à la fois ses fichiers sur l'espace FTP de votre hébergement et sa base de données.
 
-#### Supprimer le module
-
-
-
-rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur `Modules en 1 clic`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant votre module puis sur `Supprimer le module`{.action}.
+#### Supprimer votre module
 
 > [!warning]
 >
-> La suppression du module 1 clic **n'entraîne pas automatiquement celle de sa base de données**. Pour supprimer entièrement votre module, vous devrez donc aussi vous rendre dans l'onglet Bases de données, toujours dans la partie `Web cloud`{.action}, `Hébergements`{.action} et dans l'hébergement concerné sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis cliquer à droite 
+> La suppression de votre module en 1 clic entraînera automatiquement celle de l'ensemble des sauvegardes de ses fichiers et dossiers FTP, ainsi que de sa base de données. Ces suppressions sont définitives et aucune récupération des données concernées ne sera possible ensuite.
 >
 
-Section "Supprimer votre module en 1 clic" : pour les clients qui ont une offre perso ou une autre offre avec toutes les bases de données créées, le fait de supprimer le module ne supprimera pas la base. La re-création d'un module ne fonctionnera donc pas en mode automatique.
+Pour supprimer votre module en 1 clic, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur `Modules en 1 clic`{.action}.
 
-### Retrouver les identifiants de connexion à votre module en 1 clic
+Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne désignant votre module puis sur la commande `Supprimer le module`{.action}.
 
-(chemin dans l'espace client)
-Section "Retrouver les identifiants de connexion à votre module en 1 clic" : l'identifiant de connexion créé automatiquement lors de la mise en place du module ne permettra l'accès au backoffice qu'à la condition que cet identifiant n'ait pas été supprimé( par exemple dans la section Utilisateurs de wordpress).
+> [!warning]
+>
+> Lancer la suppression de votre module 1 clic **ne va pas effacer automatiquement sa base de données**. De ce fait, si votre hébergement ne permet pas la création d'une autre base, utiliser ensuite la commande `Ajouter un module`{.action} pour créer un autre module client entraînera l'apparition du message « [Une erreur s’est produite lors du chargement des informations (You need at least one free database)](../erreurs-frequentes-modules-en-1-clic/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database) ».
+>
+> Si vous disposez d'un abonnement [Kimsufi](https://www.kimsufi.com/fr/hosting.xml) ou [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) ou si vous avez déjà créé quatre bases de données sur votre hébergement [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), vous devrez donc supprimer la base de données de votre module **AVANT** de pouvoir en créer un nouveau.
+>
+
+Pour finaliser la suppression de votre module, vous devrez donc aussi vous rendre dans l'onglet `Bases de données`{.action}, toujours dans la partie `Web cloud`{.action}, `Hébergements`{.action} et dans l'hébergement concerné sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis cliquer sur `...`{.action} à droite de la ligne désignant la base et sur le bouton `Supprimer la base de données`{.action}.
+
+### Retrouver l'identifiant administrateur de votre module en 1 clic
+
+Pour retrouver cet identifiant, vous pouvez tout d'abord rechercher l'e-mail reçu lors de la création de votre module depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) (Cliquez sur votre nom en haut à droite de votre écran puis, dans le menu contextuel à droite de l'écran, cliquez sur vos initiales (Bouton `Gérer mon compte`{.action}) puis sur l'onglet `Emails reçus`{.action}).
+
+Vous pouvez également passer 
 
 ### Bonnes pratiques
 
