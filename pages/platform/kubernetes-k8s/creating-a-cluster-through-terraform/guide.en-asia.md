@@ -54,7 +54,7 @@ Why?
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/asia/en/api/first-steps-with-ovh-api/) tutorial.
 
 When you have successfully generated your OVH tokens, please keep them. You'll have to define them in the coming minutes ;-).
 
@@ -482,7 +482,7 @@ xxx can be: RAM, CPU, VM, Disk or Port.
 If this is the case, the quotas must be increased.
 In order to check your quotas and increase them, please follow this tutorial:
 
-[Increasing Public Cloud quotas](https://docs.ovh.com/gb/en/public-cloud/increase-public-cloud-quota/){.external}.
+[Increasing Public Cloud quotas](https://docs.ovh.com/asia/en/public-cloud/increase-public-cloud-quota/){.external}.
 
 ## Destroy (cleanup)
 
