@@ -7,7 +7,7 @@ section: Services et options OVHcloud
 order: 06
 ---
 
-**Dernière mise à jour le 15/04/2020**
+**Dernière mise à jour le 07/12/2021**
 
 ## Objectif
 
@@ -28,7 +28,7 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 
 > [!primary]
 >
-> Nos offres Veeam ne sont actuellement pas compatibles avec la dernière version (10) proposée par Veeam. OVHcloud continuera de proposer la version 9.5 jusqu'à nouvel ordre. Veuillez prendre en compte ce point lors de la configuration de Veeam pour vos services.
+> Nos offres Veeam ne sont actuellement pas compatibles avec la dernière version (11) proposée par Veeam. OVHcloud continuera de proposer la version 10 jusqu'à nouvel ordre. Veuillez prendre en compte ce point lors de la configuration de Veeam pour vos services.
 >
 
 
