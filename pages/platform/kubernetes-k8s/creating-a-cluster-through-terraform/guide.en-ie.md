@@ -20,7 +20,7 @@ If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
 - Installing [Terraform CLI](https://www.terraform.io/downloads.html){.external}
 
 ## Before you begin
@@ -385,7 +385,7 @@ users:
     client-key-data: <encoded_value>
 ```
 
-Now, go to the `OVHcloud Control Panel`, click on [Public Cloud](https://www.ovhcloud.com/en-ie/public-cloud/) and then click on `Managed Kubernetes Service` section. 
+Now, go to the `OVHcloud Control Panel`, click on [Public Cloud](https://www.ovhcloud.com/en/public-cloud/) and then click on `Managed Kubernetes Service` section. 
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
@@ -560,7 +560,7 @@ Perfect, your Kubernetes cluster and associated resources (Nodes, Pods...) have 
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-ie/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en/public-cloud/kubernetes/).
 
 To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying a Hello World application](../deploying-hello-world/).
 
