@@ -6,7 +6,6 @@ routes:
 excerpt: Here are the concepts for implementing ACLs on Public Cloud Archive
 section: Public Cloud Archive
 order: 040
-order: 040
 ---
 
 **Last updated 23rd September 2021**
