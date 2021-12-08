@@ -5,34 +5,36 @@ excerpt:
 section: Object Storage S3 High Performance
 ---
 
-**Dernière mise à jour le**
+**Dernière mise à jour le 08/12/2021**
 
 ## Objectif
 
-Ce guide a pour objectif de vous montrer la gestion de vos identité et accès à vos ressources High Performance.
+Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources High Performance.
 
 ## Prérequis
 
-- Être connecté à votre [espace client](https://www.ovh.com/manager/#/){.external}
-- Avoir créé un [utilisateur S3](https://docs.ovh.com/fr/storage/highperf/debuter-avec-s3-high-performance){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Avoir créé un [utilisateur S3](https://docs.ovh.com/fr/storage/highperf/debuter-avec-s3-high-performance).
 
 ## En pratique
 
-### Actions possibles via l'espace client'
+### Actions possibles via l'espace client
+
+Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans le menu de gauche.
 
 #### Gestion des accès à un bucket via un profil
 
 Vous avez la possibilité de définir l'accès à vos buckets via des profils prédéfinis.
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Add a user to a container`{.action}
+Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Ajouter un utilisateur à votre conteneur`{.action}
 
 ![Add a user to a container](images/HighPerf-Identity-and-Access-Management-20211110113315479.png)
 
-Sélectionnez l'utilisateur à ajouter à votre bucket et cliquez sur `Next`{.action} :
+Sélectionnez l'utilisateur à ajouter à votre bucket et cliquez sur `Suivant`{.action}.
 
 ![Add a user to my container](images/HighPerf-Identity-and-Access-Management-20211110113404779.png)
 
-Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Confirm`{.action} :
+Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Confirmer`{.action}.
 
 ![Add a user to my container - Role](images/HighPerf-Identity-and-Access-Management-20211110113419531.png)
 
@@ -40,29 +42,29 @@ Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Conf
 
 Vous pouvez également définir l'accès à vos objets via des profils prédéfinis.
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre objet puis sur `Add a user to a container`{.action}
+Cliquez sur les `...`{.action} à la fin de la ligne de votre objet puis sur `Ajouter un utilisateur à votre conteneur`{.action}.
 
 ![object menu](images/HighPerf-Identity-and-Access-Management-20211110120219742.png)
 
-Sélectionnez l'utilisateur et cliquez sur `Next`{.action} :
+Sélectionnez l'utilisateur et cliquez sur `Suivant`{.action}.
 
 ![add user to my object](images/HighPerf-Identity-and-Access-Management-20211110120309990.png)
 
-Sélectionnez le profil d'accès pour cet utilisateur et cliquez sur `Confirm`{.action} :
+Sélectionnez le profil d'accès pour cet utilisateur et cliquez sur `Confirmer`{.action}.
 
 ![add role to my object](images/HighPerf-Identity-and-Access-Management-20211110120401943.png)
 
 #### Gestion avancée des accès aux ressources
 
-Vous pouvez cependant affiner les droits via l'import d'un fichier de configuration JSON. Pour cela, rendez-vous dans l'onglet `S3 Users`
+Vous pouvez cependant affiner les droits via l'import d'un fichier de configuration JSON. Pour cela, rendez-vous dans l'onglet `Utilisateurs de stratégies S3`{.action}.
 
-![](images/HighPerf-Identity-and-Access-Management-20211110113756874.png)
+![utilisateurs s3](images/HighPerf-Identity-and-Access-Management-20211110113756874.png)
 
-puis sur `Import JSON file`
+Cliquez sur les `...`{.action} à la fin de la ligne de votre utilisateur puis sur `Importer un fichier JSON`{.action}.
 
 > [!primary]
 >
-> Si vous souhaitez modifier les droits d'un utilisateur, téléchargez éventuellement le fichier de configuration JSON au préalable en cliquant sur `Download JSON file`{.action}
+> Si vous souhaitez modifier les droits d'un utilisateur, téléchargez éventuellement le fichier de configuration JSON au préalable en sélectionnant `Télécharger le fichier JSON`{.action}.
 >
 
 Quelques exemples de fichiers de configuration JSON :
@@ -120,7 +122,7 @@ Quelques exemples de fichiers de configuration JSON :
 ```
 
 
-### Liste de actions supportées
+### Liste des actions supportées
 
 | Action  | Scope  |
 |:--|:--|
@@ -134,7 +136,6 @@ Quelques exemples de fichiers de configuration JSON :
 | s3:ListBucketMultipartUploads | Bucket |
 | s3:ListMultipartUploadParts | Object |
 | s3:PutObject | Object |
-
 
 ## Aller plus loin
 
