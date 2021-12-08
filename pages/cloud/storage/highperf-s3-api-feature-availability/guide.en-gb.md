@@ -5,20 +5,22 @@ excerpt:
 section: Object Storage S3 High Performance
 ---
 
-**Last updated**
+**Last updated 8th December 2021**
 
 ## Objective
 
-This guide aims to list the S3 API features supported by High Performance
+This guide lists the S3 API features supported by High Performance.
 
 ## Instructions
 
 ### Common operations
+
 | Feature | Availability |
 |:--|:-:|
 | GET Service |	✅ |
 
 ### Bucket operations
+
 | Feature | Availability |
 |:--|:-:|
 | DELETE Bucket | ✅ |
@@ -57,6 +59,7 @@ This guide aims to list the S3 API features supported by High Performance
 | PUT Bucket website 	 
 
 ### Objects operations
+
 | Feature | Availability |
 |:--|:-:|
 | DELETE Multiple Objects | ✅ |
@@ -76,6 +79,7 @@ This guide aims to list the S3 API features supported by High Performance
 | PUT Object tagging | ✅ |
 
 ### Multiparts objects operations
+
 | Feature | Availability |
 |:--|:-:|
 | Abort Multipart Upload | ✅ |
