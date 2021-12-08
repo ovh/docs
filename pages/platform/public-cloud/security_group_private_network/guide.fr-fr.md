@@ -1,39 +1,39 @@
 ---
-title: Gestion des règles de firewall et de la sécurité des ports sur les réseaux privés
+title: Gestion des règles de firewall et sécurité des ports sur les réseaux privés
 slug: firewall_security_pci
 excerpt: Découvrez le fonctionnement des groupes de sécurité sur Public Cloud
-section: OpenStack
+section: Gestion via OpenStack
 ---
 
 **Dernière mise à jour le 30/11/2021**
 
 ## Objectif
 
-La plateforme OpenStack gère la sécurité des pare-feu en combinant les règles de connexion en groupes de **sécurité**. Les règles sont ensuite appliquées en affectant des groupes de sécurité aux ports réseau.
+La plateforme OpenStack gère la sécurité des pare-feu en combinant les règles de connexion en **groupes de sécurité**. Les règles sont ensuite appliquées en affectant des groupes de sécurité aux ports réseau.
 
-Un **port** dans le cadre d'[OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html) est un point de connexion entre les sous-réseaux et les éléments réseau (tels qu'instances, répartiteurs de charge, routeurs etc.).
+Un **port** dans le cadre d'[OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html){.external} est un point de connexion entre les sous-réseaux et les éléments réseau (tels que des instances, load-balancers, routeurs, etc...).
 
-**Ce guide explique comment les groupes de sécurité pour les réseaux privés sont gérés sur Public Cloud.**
+**Découvrez comment sont gérés les groupes de sécurité pour les réseaux privés sur Public Cloud.**
 
 > [!primary]
 >
-> Ce guide ne concerne que les configurations de réseaux privés. Pour les réseaux publics les règles de firewall sont globales.
+> Ce guide ne concerne que les configurations de réseaux privés. En ce qui concerne les réseaux publics, les règles de firewall sont globales.
 >
-> Nous vous invitons à prendre connaissance des détails de la [migration ci-dessous concernant les](#migration) changements apportés aux régions Public Cloud OpenStack.
+> Nous vous invitons à prendre connaissance des [détails de la migration](#migration) ci-dessous concernant les changements apportés aux régions Public Cloud OpenStack.
+>
 
 ## Prérequis
 
-- Préparer l’environnement pour [utiliser l’API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
-- Définition des variables d'environnement [OpenStack](../charger-les-variables-denvironnement-openstack/)
+- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/)
+- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/)
 
-
-## Instructions
+## En pratique
 
 ### Paramètres par défaut
 
 Chaque port réseau est attaché à un groupe de sécurité qui contient des règles spécifiques.
 
-Le groupe de sécurité "default" contient les règles suivantes :
+Le groupe de sécurité « default » contient les règles suivantes :
 
 ```bash
 openstack security group rule list default
@@ -56,7 +56,7 @@ En conséquence, tous les ports réseau (publics et privés) permettent chaque c
 
 ### Gérer les règles de votre firewall privé
 
-#### Ajout de règles
+#### Ajouter des règles
 
 Si vous souhaitez configurer des règles spécifiques, vous pouvez modifier le groupe de sécurité par défaut. Vous pouvez également créer un nouveau groupe de sécurité et lui associer votre port réseau.
 
@@ -120,11 +120,11 @@ Entrez la commande suivante pour associer votre groupe de sécurité à votre po
 openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 ```
 
-#### Comportement différent selon les régions
+#### Différences de comportement selon les régions
 
 La configuration par défaut du réseau privé peut être différente selon la région utilisée.
 
-Dans certaines régions, la propriété "port security" est considérée comme "enabled" même si elle n'applique aucune règle sur le réseau privé. Sur certaines autres régions (en fonction de la version d'OpenStack déployée), la propriété "port security" est vue comme "enabled" mais les règles sont correctement appliquées sur le réseau privé.
+Dans certaines régions, la propriété « port security » est considérée comme *enabled* même si elle n'applique aucune règle sur le réseau privé. Sur certaines autres régions (en fonction de la version d'OpenStack déployée), la propriété « port security » est vue comme "enabled" mais les règles sont correctement appliquées sur le réseau privé.
 
 En résumé, pour les régions suivantes sont en cours d'exécution Newton OpenStack release et **aucune règle de pare-feu ne fonctionnera** pour vos réseaux privés, même si la sécurité des ports est activée :
 
