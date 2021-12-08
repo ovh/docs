@@ -3,7 +3,7 @@ title: Degeler vos donnees stockees sur le Public Cloud Archive
 slug: pca/unlock
 excerpt: Retrouvez ici comment degeler vos archives.
 section: Public Cloud Archive
-order: 30
+order: 030
 ---
 
 
