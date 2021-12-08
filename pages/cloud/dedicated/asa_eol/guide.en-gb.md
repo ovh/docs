@@ -12,7 +12,7 @@ order: 01
 
 OVHcloud has announced the end of its support for the Bare Metal Cisco ASA Firewall solution.<br>
 Active services will be discontinued on the 28th February 2022 at 10:00 UTC, end of support date.<br>
-This step follows the discontinuation of this product since late 2019.
+This step follows the end-of-sales of this product which occurred in late 2019.
 
 You can track the operation using this [status task](https://bare-metal-servers.status-ovhcloud.com/incidents/nv71djpdxzzq).
 
