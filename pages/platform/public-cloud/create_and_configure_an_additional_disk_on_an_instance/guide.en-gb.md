@@ -1,23 +1,23 @@
 ---
-title: 'Create and configure an additional disk on an instance'
+title: 'Creating and configuring an additional disk on an instance'
 slug: create_and_configure_an_additional_disk_on_an_instance
-excerpt: 'This guide explains how to create an additional disk and then configure it on one of your instances.'
+excerpt: 'Find out how to attach a new volume to your Public Cloud instance'
 section: Storage
 order: 1
 ---
 
-**Last updated 14th November 2019**
+**Last updated 8th December 2021**
 
 ## Objective
 
 It is possible to create additional disks for your Public Cloud instances.
 This can be useful in cases where:
 
-* You want to increase your storage capacity without changing the instance model.
-* You want to have a highly available, high-performance storage.
-* You want to move your storage as well as your data to another instance.
+- You want to increase your storage capacity without changing the instance model.
+- You want to have a highly available, high-performance storage.
+- You want to move your storage as well as your data to another instance.
 
-**This guide explains how to create an additional disk and then configure it on one of your instances.**
+**This guide explains how to create an additional disk and configure it on your instance.**
 
 ## Requirements
 
@@ -27,42 +27,46 @@ This can be useful in cases where:
 
 ## Instructions
 
-Firstly, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and click the `Public Cloud`{.action} menu. Then click on the `Project`{.action} you want to create the instance.
+### Attaching a new volume
 
-Now click the `Actions`{.action} button and then select `Create a volume`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), switch to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand menu.
 
-![select project](images/attach-disk-01.png){.thumbnail}
+In this section, click on the button `Create a volume`{.action}.
 
-Now configure you options for disk type, disk size, and location. When you've finished, click the `Add`{.action} button.
+![select project](images/avolume01.png){.thumbnail}
 
-![create disk](images/attach-disk-02.png){.thumbnail}
+Follow the configuration steps in order to select options for location, disk type and disk capacity. Then enter a name for the volume and confirm by clicking on `Create the volume`{.action}.
 
-The new disk will now be displayed in your control panel.
+![create disk](images/avolume02.png){.thumbnail}
 
-![configure disk](images/attach-disk-03.png){.thumbnail}
+The new disk will now be displayed in the Control Panel.
 
-To attach the disk to an instance, click on the 3 dots on the right and then select `Attach to instance`{.action}
+![configure disk](images/avolume03.png){.thumbnail}
 
-![attach disk 01](images/attach-disk-04.png){.thumbnail}
+To the right of the volume, click on the `...`{.action} button, then select `Attach to instance`{.action}.
 
-Now choose the instance and click in `Confirm`{.action} button to attach the disk.
+![attach disk 01](images/avolume04.png){.thumbnail}
 
-![attach disk 02](images/attach-disk-05.png){.thumbnail}
+In the popup window, choose an instance from the list and click on `Confirm`{.action} to attach the disk.
 
-The process of attaching the disk to your instance will now start and it may take several minutes to complete.
+![attach disk 02](images/avolume05.png){.thumbnail}
 
-![attach disk 03](images/attach-disk-06.png){.thumbnail}
+The process of attaching the disk to your instance will now begin. This may take a few minutes to complete.
 
 > [!warning]
-You must ensure that you don’t navigate away from the Infrastructure tab while the disk is being attached. This could disrupt the process.
+Make sure to not leave the current page in your OVHcloud Control Panel while the disk is being attached. This might interrupt the process.
 >
 
-### Using Linux
+### Configuring the new disk
 
-First, establish an SSH connection to your instance and then use the command below to list the instance's disks.
+The examples below presume you are logged in as a user with elevated permissions.
 
-```
-# admin@serveur-1:~$ lsblk
+#### Using Linux
+
+Establish an [SSH connection to your instance](../public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
+
+```bash
+~$ admin@server-1:~$ lsblk
 
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
@@ -72,13 +76,13 @@ vdb 254:16 0 10G 0 disk
 
 > [!primary]
 >
-VDA usually refers to your instance's default hard disk. VDB refers to the additional disk.
+`vda` in this example refers to the default disk of the instance. The additional disk will then be labelled `vdb`.
 >
 
-Next, create a partition on the additional disk using the command below.
+Create a partition on the additional disk using the commands below.
 
-```
-# admin@serveur-1:~$ sudo fdisk /dev/vdb
+```bash
+~$ admin@server-1:~$ sudo fdisk /dev/vdb
 
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
@@ -88,9 +92,7 @@ Device does not contain a recognized partition table.
 Created a new DOS disklabel with disk identifier 0x95c4adcc.
 ```
 
-
-
-```
+```bash
 Command (m for help): n
 
 Partition type
@@ -105,9 +107,7 @@ Last sector, +sectors or +size{K,M,G,T,P} (2048-20971519, default 20971519):
 Created a new partition 1 of type 'Linux' and of size 10 GiB.
 ```
 
-
-
-```
+```bash
 Command (m for help): w
 
 The partition table has been altered.
@@ -115,10 +115,10 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-Next, format the partition using the command below.
+Next, format the new partition `vdb1` using the command below.
 
-```
-# admin@serveur-1:~$ sudo mkfs.ext4 /dev/vdb1
+```bash
+~$ admin@server-1:~$ sudo mkfs.ext4 /dev/vdb1
 mke2fs 1.42.12 (29-Aug-2014)
 Creating filesystem with 2621184 4k blocks and 655360 inodes
 Filesystem UUID: 781be788-c4be-462b-b946-88429a43c0cf
@@ -131,18 +131,17 @@ Creating journal (32768 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-Next, mount the partition with this command:
+Mount the partition with the following commands:
 
+```bash
+admin@server-1:~$ sudo mkdir /mnt/disk
+admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
 ```
-admin@serveur-1:~$ sudo mkdir /mnt/disk
-admin@serveur-1:~$ sudo mount /dev/vdb1 /mnt/disk/
-```
 
+Finally, check the mount point using this command:
 
-And finally, check the mount point using this command:
-
-```
-admin@serveur-1:~$ df -h
+```bash
+~$ admin@server-1:~$ df -h
 
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
@@ -154,44 +153,54 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 9.8G 23M 9.2G 1% /mnt/disk
 ```
 
-If you want to create a persistent mount point, you will need to change the /etc/fstab. First, use the command below to retrieve the block ID.
+> [!primary]
+>
+The mounting is not persistent because the disk will be detached when the instance reboots. In order to automate the mounting process, the `fstab` file needs to be edited.
+>
 
-```
-admin@serveur-1:~$ sudo blkid
+First, retrieve the UUID (block ID) of the new volume:
+
+```bash
+~$ admin@server-1:~$ sudo blkid
 
 /dev/vda1: UUID="51ba13e7-398b-45f3-b5f3-fdfbe556f62c" TYPE="ext4" PARTUUID="000132ff-01"
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
 ```
 
-And now you can use the block ID to change the /etc/fstab file.
+Open `/etc/fstab` with a text editor:
 
 ```
-admin@serveur-1:~$ vim /etc/fstab
+~$ sudo nano /etc/fstab
+```
 
-/etc/fstab: static file system information.
+Add the line below to the file and replace the UUID with your own:
 
-# Use 'blkid' to print the universally unique identifier for a
-# device; this may be used with UUID= as a more robust way to name devices
-# that works even if disks are added and removed. See fstab(5).
-#
-# <file system> <mount point> <type> <options> <dump> <pass>
-UUID=51ba13e7-398b-45f3-b5f3-fdfbe556f62c / ext4 defaults 0 0
+```console
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 ```
 
-### Using Windows
+Save and exit the editor. The disk should be automatically mounted after every reboot from now on.
 
-First, right-click on the `Start Menu`{.action} button and then click `Disk Management`{.action}.
+
+#### Using Windows
+
+Establish a remote desktop (RDP) connection to your Windows instance.
+
+Once logged in, right-click on the `Start Menu`{.action} button and open `Disk Management`{.action}.
 
 ![disk management](images/start-menu.png){.thumbnail}
 
-When the disk management tool opens you'll see your new disk as an unknown volume with unallocated space as shown below.
+The new disk will be displayed as an unknown volume with unallocated space.
 
 ![unknown volume](images/disk-management-01.png){.thumbnail}
 
-#### Initialising the disk using Disk Management
+If the disk is marked as offline here, it needs to be initialised first. You can use the [Windows GUI](#initDiskManagement) or the [DISKPART utility](#initDiskpart) to achieve this. Otherwise, proceed with [formatting the disk in Disk Management](#formatDiskManagement).
 
-If the disk is offline this is likely due to a policy in place on the instance. To fix this, right-click on the disk and select `Online`{.action}.
+##### **Initialising the disk in Disk Management** <a name="initDiskManagement"></a>
+
+Right-click on the disk and select `Online`{.action}. 
+
+If the disk is marked as offline here, this is likely due to a policy in place on the instance. To fix this, right-click on the disk and select `Online`{.action}.
 
 ![offline disk](images/disk-management-02.png){.thumbnail}
 
@@ -203,23 +212,23 @@ Next, select `MBR`{.action} and click `OK`{.action}.
 
 ![initialise disk](images/initialise-disk.png){.thumbnail}
 
-#### Initialising the disk using DISKPART
+##### **Initialising the disk with DISKPART** <a name="initDiskpart"></a>
 
-First, right-click on the `Start Menu`{.action} button and then click `Run`{.action}
+Right-click on the `Start Menu`{.action} button and open `Run`{.action}.
 
 ![initialise disk](images/diskpart.png){.thumbnail}
 
-Next, type `cmd` in the Run prompt and then click `OK`{.action}
+Type `cmd` and click `OK`{.action} to open the command line application.
 
 ![run prompt](images/run-prompt.png){.thumbnail}
 
-At the command prompt, type the following command to open the DISKPART utility.
+At the command prompt, open DISKPART:
 
 ```
 C:\> diskpart
 ```
 
-Next, change the disk policy with the following series of commands.
+Use the following series of DISKPART commands to set the disk to `online`:
 
 ```
 DISKPART> san
@@ -241,7 +250,7 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```
+``` 
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
@@ -271,33 +280,29 @@ DISKPART> online disk
 DiskPart successfully onlined the selected disk.
 ```
 
-#### Format the disk
+##### **Formatting the disk** <a name="formatDiskManagement"></a>
 
-Open up the Disk Management utility again, right-click the volume, then click `New Simple Volume...`{.action}
+In `Disk Management`{.action}, right-click on the new disk and select `New Simple Volume...`{.action}.
 
 ![format disk](images/format-disk-01.png){.thumbnail}
 
-Now click `Next`{.action}.
-
-![format disk](images/format-disk-02.png){.thumbnail}
-
-Now set the desired disk size. You would usually want this to be 100% of the space. When you've done this, click `Next`{.action}.
+In the wizard, click `Next`{.action} to specify the volume size. It should be set to maximum by default. Click `Next`{.action} to continue.
 
 ![format disk](images/format-disk-03.png){.thumbnail}
 
-Select a letter from the dropdown list to identify the drive, then click `Next`{.action}.
+Leave the new drive letter at default or select a different one, then click `Next`{.action}.
 
 ![format disk](images/format-disk-04.png){.thumbnail}
 
-Select the options you want for the disk then click `Next`{.action} to perform the format operation.
+Label the volume (optional) and confirm the formatting options by clicking `Next`{.action}.
 
 ![format disk](images/format-disk-05.png){.thumbnail}
 
-Finally, click  `Finish`{.action} to finalise the operation.
+In the last window, click `Finish`{.action} to format the disk.
 
 ![format disk](images/format-disk-06.png){.thumbnail}
 
-Once the disk is formatted, you can simply access it from File Explorer.
+The disk will be available as a drive in File Explorer after the operation.
 
 ## Go further
 

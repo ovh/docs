@@ -20,8 +20,8 @@ order: 5
 
 ## Requirements
 
-- a [VPS](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A [VPS](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 

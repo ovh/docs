@@ -21,8 +21,8 @@ You can make use of these instance backups for two basic purposes:
 
 ## Requirements
 
-- a backup of a [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/instance-backup/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A backup of a [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/instance-backup/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 

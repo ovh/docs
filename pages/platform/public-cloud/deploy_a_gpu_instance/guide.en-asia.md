@@ -23,7 +23,7 @@ The GPUs offered are the NVIDIA Tesla V100.
 
 ## Requirements
 
-- a Public Cloud project with access to the regions where GPUs are available (GRA3, GRA5 and BHS3)
+- A Public Cloud project with access to the regions where GPUs are available (GRA3, GRA5 and BHS3)
 
 ## Instructions
 

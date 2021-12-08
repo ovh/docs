@@ -26,8 +26,8 @@ If your VPS has become unresponsive, you should still be able to access it from 
 
 ## Requirements
 
-- a [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 
 ## Instructions

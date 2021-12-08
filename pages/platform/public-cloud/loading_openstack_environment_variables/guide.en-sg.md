@@ -15,9 +15,9 @@ By setting OpenStack environment variables on your desktop, you can use the Open
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- an OpenStack user account (please refer to [our guide on this](../configure_user_access_to_horizon/#create-an-openstack-user-account))
-- OpenStack installed on your system (please refer to [our guide on this](../prepare_the_environment_for_using_the_openstack_api/))
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- An [OpenStack user account](../configure_user_access_to_horizon/#create-an-openstack-user-account)
+- OpenStack [installed on your system](../prepare_the_environment_for_using_the_openstack_api/)
 
 ## Instructions
 

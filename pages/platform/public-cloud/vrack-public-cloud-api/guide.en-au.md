@@ -16,11 +16,11 @@ The [vRack](https://www.ovh.com.au/solutions/vrack/){.external} us a private net
 
 ## Requirements
 
-* Have a Pubblic Cloud Project
-* Create an Openstack user
-* Have basic networking knowledge
-* Consult the guide [Configuring the vRack on Public Cloud](../public-cloud-vrack) to understand the different methods to manage the vRack with the Public Cloud.
-* Consult the guide [First steps to use the OVHcloud API](../../api/first-steps-with-ovh-api/) to familiarize yourself with using the OVHcloud API.
+- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+- An [OpenStack user account](../configure_user_access_to_horizon/#create-an-openstack-user-account)
+- Basic networking knowledge
+- Consulting the guide [Configuring the vRack on Public Cloud](../public-cloud-vrack) (to understand the different methods to manage the vRack with the Public Cloud)
+- Consulting the guide [First steps to use the OVHcloud API](../../api/first-steps-with-ovh-api/) (to familiarise yourself with the OVHcloud API)
 
 ## Instructions
 
