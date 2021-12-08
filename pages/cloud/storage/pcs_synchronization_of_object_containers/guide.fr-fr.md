@@ -3,7 +3,7 @@ title: Synchroniser des conteneurs d’objets
 slug: synchroniser-des-conteneurs-dobjets
 legacy_guide_number: 1919
 section: Object Storage Standard (Swift)
-order: 60
+order: 060
 ---
 
 **Dernière mise à jour le 27/10/2021**

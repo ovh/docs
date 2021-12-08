@@ -4,7 +4,7 @@ excerpt: Configure automatic object deletion
 slug: configure_automatic_object_deletion
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1950
-order: 70
+order: 070
 ---
 
 **Last updated 27th October 2021**

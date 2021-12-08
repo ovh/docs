@@ -4,7 +4,7 @@ excerpt: Come utilizzare l'API Swift
 slug: come_utilizzare_lapi_swift
 legacy_guide_number: g1916
 section: Object Storage Standard (Swift)
-order: 10
+order: 010
 ---
 
 > [!primary]

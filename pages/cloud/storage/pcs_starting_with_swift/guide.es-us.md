@@ -4,7 +4,7 @@ excerpt: Empezar con la API Swift
 slug: empezar_con_la_api_swift
 legacy_guide_number: g1916
 section: Object Storage Standard (Swift)
-order: 10
+order: 010
 ---
 
 

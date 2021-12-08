@@ -3,7 +3,7 @@ title: Curl Command Memo
 slug: pcs/curl-commands-memo
 excerpt: Find here the main curl commands to manage your object containers
 section: Object Storage Standard (Swift)
-order: 90
+order: 090
 ---
 
 **Last updated 27th October 2021**

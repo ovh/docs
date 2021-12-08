@@ -3,7 +3,7 @@ title: "Premiers pas avec l'API Swift S3"
 excerpt: "Découvrez comment utiliser l'API Swift S3"
 slug: swift-s3api
 section: Object Storage Standard (Swift)
-order: 20
+order: 020
 ---
 
 **Dernière mise à jour le 22/09/2020**

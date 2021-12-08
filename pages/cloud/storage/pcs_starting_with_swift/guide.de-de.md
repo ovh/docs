@@ -4,7 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie die Swift API verwenden
 slug: die_ersten_schritte_mit_der_swift_api
 legacy_guide_number: g1916
 section: Object Storage Standard (Swift)
-order: 10
+order: 010
 ---
 
 **Letzte Aktualisierung am 25.05.2021**
