@@ -3,6 +3,7 @@ title: Getting started with S3 High Performance
 slug: highperf/getting-started-with-s3-high-performance
 excerpt:
 section: Object Storage S3 High Performance
+order: 020
 ---
 
 **Last updated**
@@ -53,7 +54,7 @@ Select the region of your bucket and click `Next`{.action}.
 
 ![Select a region](images/HighPerf-S3-getting-started-20211028090916484.png)
 
-Name your bucket and click `Create the container`{.action}. 
+Name your bucket and click `Create the container`{.action}.
 
 ![Container name](images/HighPerf-S3-getting-started-20211028091015710.png)  
 

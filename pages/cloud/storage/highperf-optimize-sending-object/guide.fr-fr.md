@@ -3,6 +3,7 @@ title: Optimisez l'envoi de vos fichiers vers High Performance
 slug: highperf/optimisez-l-envoi-de-vos-fichiers-vers-High-Performance
 excerpt:
 section: Object Storage S3 High Performance
+order: 040
 ---
 
 **Dernière mise à jour le 08/12/2021**
@@ -17,7 +18,7 @@ Découvrez comment optimiser l'envoi de vos fichiers vers votre bucket.
 
 ## En pratique
 
-Les commandes de transfert aws s3 sont multithreadées. À tout moment, plusieurs requêtes sont en cours. 
+Les commandes de transfert aws s3 sont multithreadées. À tout moment, plusieurs requêtes sont en cours.
 
 Par exemple, si vous téléchargez un répertoire via `aws s3 cp localdir s3://bucket/ --recursive`, l'AWS CLI pourrait télécharger en parallèle les fichiers locaux localdir/file1, localdir/file2 et localdir/file3. La valeur `max_concurrent_requests` spécifie le nombre maximum de commandes de transfert autorisées à un moment donné.
 

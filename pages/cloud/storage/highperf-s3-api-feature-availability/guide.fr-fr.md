@@ -3,6 +3,7 @@ title: Compatibilité S3
 slug: highperf/compatibilite-s3
 excerpt:
 section: Object Storage S3 High Performance
+order: 010
 ---
 
 **Dernière mise à jour le 08/12/2021**
