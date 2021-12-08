@@ -16,8 +16,8 @@ You can create multiple Instances directly in the Horizon interface, and also co
 
 ## Requirements
 
-- a [Public Cloud](https://www.ovhcloud.com/en-sg/public-cloud/){.external} project, created via your OVHcloud account
-- [access to the Horizon interface](../configure_user_access_to_horizon/){.external} 
+- A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
+- [Access to the Horizon interface](../configure_user_access_to_horizon/){.external} 
 
 ## Instructions
 

@@ -28,7 +28,7 @@ This guide will show you how to do this.
 
 ### Delegate the project.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then select `Public Cloud`{.action}. Next, click `Contacts and Rights`{.action} in the **Project Management** section.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), then select `Public Cloud`{.action}. Next, click `Contacts and Rights`{.action} in the **Project Management** section.
 
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects1.png){.thumbnail}
@@ -56,10 +56,10 @@ The OVHcloud accounts that have been added like this can access the project in t
 
 ## Go further
 
-[Access and Security in Horizon](https://docs.ovh.com/gb/en/public-cloud/access_and_security_in_horizon/)
+[Access and Security in Horizon](https://docs.ovh.com/ie/en/public-cloud/access_and_security_in_horizon/)
 
-[Accessing the Horizon interface](https://docs.ovh.com/gb/en/public-cloud/configure_user_access_to_horizon/)
+[Accessing the Horizon interface](https://docs.ovh.com/ie/en/public-cloud/configure_user_access_to_horizon/)
 
-[Getting started with a Public Cloud Instance](https://docs.ovh.com/gb/en/public-cloud/get-started-with-a-public-cloud-instance/)
+[Getting started with a Public Cloud Instance](https://docs.ovh.com/ie/en/public-cloud/get-started-with-a-public-cloud-instance/)
 
 Join our community of users on <https://community.ovh.com/en/>.

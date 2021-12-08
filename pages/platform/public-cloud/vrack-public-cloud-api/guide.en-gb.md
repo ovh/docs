@@ -16,11 +16,11 @@ OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private network so
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- an OpenStack user
-- basic networking knowledge
-- consulting the guide [Configuring vRack for Public Cloud](../public-cloud-vrack) to know the various methods available for managing a vRack for Public Cloud
-- consulting the guide [First steps with the OVHcloud API](../../api/first-steps-with-ovh-api/) to familiarise yourself with the OVHcloud APIv6
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- An [OpenStack user account](../configure_user_access_to_horizon/#create-an-openstack-user-account)
+- Basic networking knowledge
+- Consulting the guide [Configuring the vRack on Public Cloud](../public-cloud-vrack) (to understand the different methods to manage the vRack with the Public Cloud)
+- Consulting the guide [First steps to use the OVHcloud API](../../api/first-steps-with-ovh-api/) (to familiarise yourself with the OVHcloud API)
 
 ## Instructions
 

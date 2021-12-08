@@ -20,7 +20,7 @@ This guide explains how to edit your contacts.
 
 - Two OVHcloud accounts
 - A Public Cloud project
-- Be sure that both admin and billing contacts belongs to the same subsidiary
+- Admin and billing contacts in the same subsidiary
 
 ## Instructions
 
