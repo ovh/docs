@@ -94,6 +94,6 @@ Uma vez terminada a operação, *Autoscaling* é ativado para o seu projeto e a 
 
 Se atingiu o número máximo de projetos Public Cloud autorizados no sua Área de Cliente e deseja criar projetos suplementares, queira enviar um pedido às nossas equipas de suport.
 
-## Vá mais longe
-
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+## Quer saber mais?
+ 
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
