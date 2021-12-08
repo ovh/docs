@@ -19,6 +19,7 @@ In this document, we list all the features currently supported by the Data Proce
 
 At this moment, OVHcloud Data Processing supports the following engines:
 
+  - Spark 3.2.0
   - Spark 3.0.1
   - Spark 2.4.3 
 
