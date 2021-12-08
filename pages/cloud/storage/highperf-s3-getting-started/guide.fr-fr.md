@@ -72,7 +72,7 @@ Nommez votre bucket et cliquez sur `Ajouter le conteneur`{.action} :
 
 À ce stade, vous ne pouvez pas interagir avec votre bucket car aucun utilisateur S3 n'y est associé.
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Ajouter un utilisateur à votre conteneur`{.action}.
+Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Ajouter un utilisateur à un conteneur`{.action}.
 
 ![Add a user to a container](images/HighPerf-S3-getting-started-20211028091254996.png)
 
@@ -123,18 +123,16 @@ Les jetons S3 sont différents, vous avez besoin de 2 paramètres (accès et sec
 
 Définissez les variables d'environnement d'OpenStack :
 
+```bash
+user@host:~$ source openrc.sh
+```
+
 > [!primary]
 >
 > Si besoin, téléchargez le fichier OpenRC de votre utilisateur.
 >
 > ![Download Openrc file](images/HighPerf-S3-Getting-started-20211123123335113.png)
 >
-
-puis entrez :
-
-```bash
-user@host:~$ source openrc.sh
-```
 
 Enfin, avec le client python-openstack :
 

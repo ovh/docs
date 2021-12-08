@@ -42,7 +42,7 @@ Set the accesses to your bucket for this user and click `Confirm`{.action}.
 
 You can also define access to your objects via predefined profiles.
 
-Click on the `...`{.action} at the end of the line of your object and then on `Add a user to a container`{.action}.
+Click on the `...`{.action} at the end of the line of your object and then on `Add a user to my object`{.action}.
 
 ![object menu](images/HighPerf-Identity-and-Access-Management-20211110120219742.png)
 

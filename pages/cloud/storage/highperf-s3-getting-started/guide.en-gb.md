@@ -118,18 +118,16 @@ S3 tokens are different, you need 2 parameters (access and secret) to generate a
 
 Set the OpenStack environment variables:
 
+```bash
+user@host:~$ source openrc.sh
+```
+
 > [!primary]
 >
 > If necessary, download your user's OpenRC file.
 >
 > ![Download Openrc file](images/HighPerf-S3-Getting-started-20211123123335113.png)
 >
-
-Then run:
-
-```bash
-user@host:~$ source openrc.sh
-```
 
 Finally, with the python-openstack client:
 

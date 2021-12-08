@@ -26,7 +26,7 @@ Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=go
 
 Vous avez la possibilité de définir l'accès à vos buckets via des profils prédéfinis.
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Ajouter un utilisateur à votre conteneur`{.action}
+Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Ajouter un utilisateur à un conteneur`{.action}
 
 ![Add a user to a container](images/HighPerf-Identity-and-Access-Management-20211110113315479.png)
 
@@ -42,7 +42,7 @@ Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Conf
 
 Vous pouvez également définir l'accès à vos objets via des profils prédéfinis.
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre objet puis sur `Ajouter un utilisateur à votre conteneur`{.action}.
+Cliquez sur les `...`{.action} à la fin de la ligne de votre objet puis sur `Ajouter un utilisateur à mon object`{.action}.
 
 ![object menu](images/HighPerf-Identity-and-Access-Management-20211110120219742.png)
 
