@@ -84,11 +84,9 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis sur `Modifier le CDN`{.action}. 
 
-Vous pouvez également cliquer sur l'icône de stylo à droite d'une entrée Multisite, lorsque l'opton CDN est activée. Cliquez ensuite sur `Éditer votre CDN`{.action}.
-
 > [!warning]
 > 
-> Certaines options sont verrouillées sur l'offre Basic.
+> Certaines options sont verrouillées sur l'offre Basic et nécessitent la souscription au [CDN security](https://www.ovhcloud.com/fr/web-hosting/options/cdn/) ou au [CDN Advanced](https://www.ovhcloud.com/fr/web-hosting/options/cdn/)
 
 ![CDN](images/manage_sharedCDN_02.png){.thumbnail}
 
@@ -100,13 +98,13 @@ Vous pouvez également cliquer sur l'icône de stylo à droite d'une entrée Mul
 
 - **Brotli** :  type de compression permettant une optimisation de la taille de vos fichiers en cache.
 
-- **Règle de cache** : Créez jusqu'à 5 règles. Elles définissent la fréquence de rafraîchissement de mise en cache pour certaines ressources précises sur votre site. ([suivre la prochaine étape](./#creer-une-regle-de-mise-en-cache)).
+- **Règle de cache** : Créez jusqu'à 5 règles. Elles définissent la fréquence de rafraîchissement de mise en cache pour certaines ressources précises sur votre site. ([suivre la prochaine étape](#cacherules)). 
 
 Une fois vos options choisies, cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} dans la fenêtre suivante.
 
 ![CDN](images/manage_sharedCDN_03.png){.thumbnail}
 
-##### **Créer une règle de mise en cache**
+##### **Créer une règle de mise en cache** <a name="cacherules"></a>
 
 Pour ajouter une règle de cache sur l'un des éléments de votre site, dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite, puis sur `Configurer le CDN`{.action}.
 
@@ -116,7 +114,7 @@ Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`
 
 - **Nom de règle** : Attribuez un nom à votre règle.
 
-- **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans le répertoire de ce dernier. Pour les offres CDN-Basic et CDN-Security, il n'est possible de saisir qu'une extension de fichier.
+- **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL. Pour les offres CDN-Basic et CDN-Security, il n'est possible de saisir qu'une extension de fichier.
 
 - **Durée** : indiquez la durée de mise en cache de la ressource choisie.
 
@@ -130,14 +128,18 @@ Les règles apparaissent dans une liste. Vous pouvez modifier une règle en cliq
 
 Une fois vos règles configurées et vos options choisies, cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} dans la fenêtre suivante.
 
+> [!warning]
+>
+> Pour bénéficier d'un quota de règles plus élevé et d'avantage de paramètres sur la création de règle de mise en cache, vous pouvez opter pour l'option [CDN Advanced](https://www.ovhcloud.com/fr/web-hosting/options/cdn/)
+
 #### Configurer les options du CDN Security
+
+Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis sur `Modifier le CDN`{.action}. 
 
 > [!primary]
 >  les options présentées ci-dessous nécessitent la souscription au [CDN security](https://www.ovhcloud.com/fr/web-hosting/options/cdn/) ou au [CDN Advanced](https://www.ovhcloud.com/fr/web-hosting/options/cdn/)
 
 Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis `Modifier le CDN`{.action}. 
-
-Vous pouvez également cliquer sur l'icône de stylo à droite d'une entrée Multisite, lorsque l'opton CDN est activée. Cliquez ensuite sur `Éditer votre CDN`{.action}.
 
 - **Cross-Origin Resource Sharing (CORS)** : Indiquez, dans la liste, les noms de domaine extérieurs qui seront autorisés à accéder aux ressources de votre site web dans le but de les partager. 
 
@@ -148,6 +150,7 @@ Une fois la fonction activée, cliquez sur `Editer la liste des ressources exter
 Une fois votre liste complétée, cliquez sur `Confirmer`{.action}.
 
 > [!primary]
+>
 > Lorsque vous activez l'option CORS sans préciser de noms de domaine dans la liste, cela siginifie que tous les noms de domaine sont autorisés à utiliser les ressources de votre site web.
 
 - **HTTPS-redirect** : Protégez la globalité du trafic de votre site web en le redirigeant vers le protocole HTTPS de façon temporaire ou permanente.
@@ -177,6 +180,83 @@ Une fois la fonction activée, déterminez la durée de vie pendant laquelle le 
 > [!primary]
 >  
 > Le WAF est entièrement administré par OVHcloud, la liste des failles est régulièrement mise à jour.
+
+#### Configurer les options du CDN Advanced
+
+Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis sur `Modifier le CDN`{.action}. 
+
+> [!primary]
+>
+>  les options présentées ci-dessous nécessitent la souscription au [CDN Advanced](https://www.ovhcloud.com/fr/web-hosting/options/cdn/)
+
+- **Header HTTP de géolocalisation** : Connaître le pays du visiteur pour personnaliser l'expérience proposée. Le code pays est ajouté automatiquement dans le header de chaque requête pour être manipulé par votre serveur d'origine. Les éléments d'identification dans le header se présente sous les appélations  `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
+
+- **Prefetch** : Anticiper le chargement de la ressource suivante. Préchargez-la automatiquement dans le cache CDN grâce au header link de votre site web. Ce mécanisme est principalement utilisé pour charger les CSS, JavaScript, images, favicons ou encore des polices web qui sont requis par le thème du site web. 
+
+Dans l'exemple, ci-dessous, lorsque vous serez sur le page courante affichant « Hello », une sous-requète déclenchera le préchargement de la resource `/cache/style.css` .  
+
+```	
+<?php
+header("Link: </cache/style.css>; rel=prefetch");
+print 'Hello'
+?> 
+```
+
+- **Mobile redirect** :  Rediriger automatiquement les visiteurs "Mobile" vers un site web optimisé. Au choix : rediriger systématiquement vers la racine d'un autre site web, ou conserver l'URL en ne remplaçant que le domaine (ou le sous-domaine).
+
+- **Purge avancée** : Personnaliser votre purge en choisissant les éléments du cache à vider : Tout le site, un dossier, une URI, une extension de fichiers ou à l'aide d'une expression régulière personnalisée. 
+
+Depuis l'onlget Multisite, cliquez sur le bouton `...`{.action} à droite de l'entrée multisite puis sur `Purger le CDN`{.action}. 
+
+![CDN](images/manage_CDNadvanced_01.png){.thumbnail}
+
+**Query String** : Gestion de la mise en cache de contenu, basée sur les paramètres (aussi appelés *Query String*) de la requête URL. En fonction de votre configuration, choisissez le comportement du cache CDN:
+
+	- *Désactivé* : La ressource est mise en cache avec ses paramètres non triés. Ce qui va créer, par exemple, 2 itérations dans le cache du CDN pour 2 URL ayant les mêmes paramètres dans un ordre différent.
+	- *Activé - Trier les paramètres* : La ressource est mise en cache en triant ses paramètres. Un tri se fera avant de stocker l'URL dans le cache du CDN. Par exemple, seule une itération sera gardé pour 2 URL ayant les mêmes paramètres dans un ordre différent.
+	- *Activé - Ignorer les paramètres* : La ressource est mise en cache sans aucun paramètre. Le cache CDN ne tiendra pas compte des paramètres saisis dans l'URL, il stockera donc l'URL sans les paramètres dans le cache.
+
+- **Prewarm** : Forcer la mise en cache permanente de vos ressources primordiales. Le CDN anticipe et rafraîchit automatiquement le cache, sans attendre de requête de l'utilisateur.
+
+Pour définir la liste des URLs qui doivent être systématiquement rafraichies, cliquez sur `Editer la liste des URLs`{.action}
+
+![CDN](images/manage_CDNadvanced_02.png){.thumbnail}
+
+`Ajouter`{.action}, `Retirer`{.action}
+
+- **Cache rule** : Créez jusqu'à 100 règles. Elles définissent la fréquence de rafraîchissement de mise en cache pour certaines ressources précises sur votre site. ([suivre la prochaine étape](#cacherulesadv)).
+
+Une fois vos options choisies, cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} dans la fenêtre suivante.
+
+##### **Créer une règle de mise en cache avacée** <a name="cacherulesadv"></a>
+
+Pour ajouter une règle de cache sur l'un des éléments de votre site, dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite, puis sur `Configurer le CDN`{.action}.
+
+Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`{.action}.
+
+![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
+
+- **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : css
+
+- **Dossier** :  Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
+
+- **Expression régulière personnalisée** : Elle s'applique sur toutes les URI de votre site web
+
+- **Nom de règle** : Attribuez un nom à votre règle.
+
+- **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
+
+- **Durée** : indiquez la durée de mise en cache de la ressource choisie.
+
+- **Classement** :  Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
+
+Une fois vos choix réalisés, cliquez sur le bouton `Créer la règle`{.action}.
+
+Les règles apparaissent dans une liste. Vous pouvez modifier une règle en cliquant sur `...`{.action} à droite de celle-ci, puis sur `Modifier la règle`{.action}; ou la supprimer en cliquant sur `Supprimer la règle`{.action}.
+
+![CDN](images/manage_CDNadvanced_04.png){.thumbnail}
+
+Une fois vos règles configurées et vos options choisies, cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} dans la fenêtre suivante.
 
 ### Visualiser les statistiques du CDN
 
@@ -274,6 +354,7 @@ Accept-Ranges: bytes
 Transfer-Encoding: chunked
 X-IPLB-Instance: 12345
 ```
+
 Les mentions « *X-CDN* » permettent de confirmer que vous passez bien par le CDN.
 
 Dans le cas où le nom de domaine ne passe pas par le CDN, vous obtenez un résultat comme ci-dessous :
