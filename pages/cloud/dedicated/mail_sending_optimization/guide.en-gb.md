@@ -6,7 +6,7 @@ section: Tutorial
 ---
 
 
-**Last updated 30th September 2021**
+**Last updated 08th December 2021**
 
 ## Objective
 
@@ -70,7 +70,7 @@ In the **“Service”** drop-down menu, select an IPv4 address:
 
 ![Reverse IP](images/servicedropmenu.png)
 
-click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
+Click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
 
 ![Reverse IP](images/setreversedns.png)
 
@@ -99,7 +99,7 @@ To do this, please open a support request with Microsoft here: <https://support.
 
 #### To a Gmail server
 
-If your recipients are with Gmail, adding specific records (e.g. a DMAC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en).
+If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en).
 
 ### Check your information.
 
