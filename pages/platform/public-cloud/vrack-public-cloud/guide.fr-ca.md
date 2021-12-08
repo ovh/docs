@@ -18,7 +18,7 @@ Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) est un réseau privé qui
 
 - Posséder un [projet Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/creer-un-projet-public-cloud/)
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
-- Avoir [créé un utilisateur OpenStack](../../#creer-un-utilisateur-openstack) (facultatif)
+- Avoir [créé un utilisateur OpenStack](../creation-et-suppression-dun-utilisateur-openstack/#creer-un-utilisateur-openstack) (facultatif)
 - Connaissances réseaux élémentaires
 
 ## Présentation des interfaces
@@ -118,7 +118,7 @@ Cliquez sur le bouton `Pour commencer, créez un vRack`{.action}. Vous devrez al
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
-Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un VLAN dans le vRack depuis l'espace client OVHcloud](./#depuis-lespace-client-ovhcloud_2).
+Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un VLAN dans le vRack depuis l'espace client OVHcloud](./#creer-un-vlan-depuis-lespace-client-ovhcloud).
 
 #### Depuis les APIv6 OVHcloud
 
@@ -164,11 +164,11 @@ Si vous cochez la case `Définir un VLAN`, vous devrez choisir un numéro de VLA
 
 Si vous ne cochez pas la case `Définir un VLAN`, vous serez par défaut dans le VLAN 0.
 
-Dans le cas où vous devez faire communiquer des serveurs dédiés OVHcloud avec du VLAN taggué, consultez le guide suivant : [Créer plusieurs VLAN dans le vRack](../..//dedicated/creer-vlan-vrack/).
+Dans le cas où vous devez faire communiquer des serveurs dédiés OVHcloud avec du VLAN taggué, consultez le guide suivant : [Créer plusieurs VLAN dans le vRack](../../dedicated/creer-vlan-vrack/).
 
 La plage DHCP par défaut est en 10.0.0.0/16. Pour modifier cette plage IP, vous devrez obligatoirement passer par les APIv6 OVHcloud.
 
-Validez les différentes régions souhaitées, saisissez un nom pour votre réseau privé et cliquez enfin sur  `Créer`{.action} pour amorcer sa création. 
+Validez les différentes régions souhaitées, saisissez un nom pour votre réseau privé et cliquez enfin sur `Créer`{.action} pour amorcer sa création. 
 
 > [!primary]
 > La création du réseau privé peut prendre plusieurs minutes.
