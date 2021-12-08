@@ -3,6 +3,7 @@ title: Optimise the sending of your files to High Performance
 slug: highperf/optimise-the-sending-of-your-files-to-high-performance
 excerpt:
 section: Object Storage S3 High Performance
+order: 040
 ---
 
 **Last updated 8th December 2021**

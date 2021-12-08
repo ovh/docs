@@ -3,6 +3,7 @@ title: Débuter avec S3 High Performance
 slug: highperf/debuter-avec-s3-high-performance
 excerpt:
 section: Object Storage S3 High Performance
+order: 020
 ---
 
 **Dernière mise à jour le 06/12/2021**

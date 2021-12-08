@@ -3,6 +3,7 @@ title: S3 Compliancy
 slug: highperf/s3-compliancy
 excerpt:
 section: Object Storage S3 High Performance
+order: 010
 ---
 
 **Last updated 8th December 2021**

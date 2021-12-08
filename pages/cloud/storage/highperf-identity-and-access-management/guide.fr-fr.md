@@ -3,6 +3,7 @@ title: Gestion des identités et des accès
 slug: highperf/gestion-des-identites-et-des-acces
 excerpt:
 section: Object Storage S3 High Performance
+order: 030
 ---
 
 **Dernière mise à jour le 08/12/2021**

@@ -3,6 +3,7 @@ title: Identity and access management
 slug: highperf/identity-and-access-management
 excerpt:
 section: Object Storage S3 High Performance
+order: 030
 ---
 
 **Last updated 8th December 2021**
