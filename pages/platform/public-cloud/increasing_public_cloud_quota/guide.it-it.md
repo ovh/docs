@@ -39,7 +39,7 @@ In conformità ai criteri interni (anzianità, esistenza di fatture pagate, ecc.
 
 Questa procedura consente di richiedere manualmente un aumento di quota e di convalidarlo con un pagamento anticipato (credito Public cloud).
 
-Accedi allo [Spazio cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud` e seleziona il tuo progetto Public Cloud.
+Accedi allo [Spazio cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud.
 
 Clicca su `Quota and Regions`{.action} nella barra laterale sinistra.
 
@@ -65,7 +65,7 @@ Nella tabella seguente vengono indicate le risorse disponibili per ogni quota:
 |100 VMs|100|128|992GB|39TB|200|200|
 |200 VMs|200|512|3.9TB|78TB|400|400|
 
-Una volta selezionato il suo volume, clicca su `Conferma`{.azione}. Il tuo pagamento sarà elaborato al più presto.
+Una volta selezionato il suo volume, clicca su `Conferma`{.action}. Il tuo pagamento sarà elaborato al più presto.
 
 > [!warning]
 > **La procedura di fatturazione è immediata.**
@@ -79,11 +79,11 @@ Questa opzione consente di richiedere un aumento automatico e graduale della quo
 
 Non si tratta di un processo immediato e la quota di risorse viene aumentata nel corso del tempo.
 
-Accedi allo [Spazio cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud` e seleziona il tuo progetto Public Cloud.
+Accedi allo [Spazio cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud.
 
 Nella barra laterale sinistra, clicca su `Quota and Regions`{.action}. 
 
-Clicca sul pulsante `?`{.action} per maggiori informazioni su questa funzionalità, poi clicca sull' `icona interruttore`{.action} per cambiare lo stato in **Attivo**.
+Clicca sul pulsante `?`{.action} per maggiori informazioni su questa funzionalità, poi clicca sull' `icona interruttore`{.action} per cambiare lo stato in "**Attivo**".
 
 ![auto scaling](images/autoscaling.png){.thumbnail}
 
@@ -95,4 +95,4 @@ Se si è raggiunto il numero massimo di progetti Public Cloud autorizzati nello 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
