@@ -18,7 +18,7 @@ Le [vRack](https://www.ovh.com/fr/solutions/vrack/) est un réseau privé qui vo
 
 - Posséder un [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
-- Avoir [créé un utilisateur OpenStack](../../#creer-un-utilisateur-openstack) (facultatif)
+- Avoir [créé un utilisateur OpenStack](../creation-et-suppression-dun-utilisateur-openstack/#creer-un-utilisateur-openstack) (facultatif)
 - Connaissances réseaux élémentaires
 
 ## Présentation des interfaces
@@ -110,19 +110,19 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 ![sélection project](images/vrack2021-05.png){.thumbnail}
 
-Cliquez alors sur `Private network`{.action} (1) dans le menu latéral de gauche. 
+Cliquez alors sur `Private network`{.action} dans le menu latéral de gauche. 
 
 ![Private Network](images/vrack2021-02.png){.thumbnail}
 
-Cliquez sur le bouton `Pour commencer, créez un vRack`{.action} (2). Vous devrez alors choisir de créer un nouveau vRack ou d'utiliser un vRack existant. Dans notre exemple, nous allons créer un nouveau vRack. Une fois votre choix effectué, cliquez sur `Créer`{.action}.
+Cliquez sur le bouton `Pour commencer, créez un vRack`{.action}. Vous devrez alors choisir de créer un nouveau vRack ou d'utiliser un vRack existant. Dans notre exemple, nous allons créer un nouveau vRack. Une fois votre choix effectué, cliquez sur `Créer`{.action}.
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
-Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un VLAN dans le vRack depuis l'espace client OVHcloud](./#depuis-lespace-client-ovhcloud_2).
+Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un VLAN dans le vRack depuis l'espace client OVHcloud](./#creer-un-vlan-depuis-lespace-client-ovhcloud).
 
 #### Depuis les APIv6 OVHcloud
 
-Pour activer et gérer un vRack depuis les APIv6 OVHcloud, cliquez [ici](../public-cloud-vrack-apiv6/#etape-1-activer-et-gerer-un-vrack) pour consulter le [guide spécifique à cette méthode](../public-cloud-vrack-apiv6/#etape-1-activer-et-gerer-un-vrack).
+Pour activer et gérer un vRack depuis les APIv6 OVHcloud, cliquez [ici](../public-cloud-vrack-apiv6/#etape-1-activer-et-gerer-un-vrack) pour consulter le guide spécifique à cette méthode.
 
 ### Étape 2 : Créer un VLAN dans le vRack
 
@@ -164,7 +164,7 @@ Si vous cochez la case `Définir un VLAN`, vous devrez choisir un numéro de VLA
 
 Si vous ne cochez pas la case `Définir un VLAN`, vous serez par défaut dans le VLAN 0.
 
-Dans le cas où vous devez faire communiquer des serveurs dédiés OVHcloud avec du VLAN taggué, consultez le guide suivant : [Créer plusieurs VLAN dans le vRack](../..//dedicated/creer-vlan-vrack/).
+Dans le cas où vous devez faire communiquer des serveurs dédiés OVHcloud avec du VLAN taggué, consultez le guide suivant : [Créer plusieurs VLAN dans le vRack](../../dedicated/creer-vlan-vrack/).
 
 La plage DHCP par défaut est en 10.0.0.0/16. Pour modifier cette plage IP, vous devrez obligatoirement passer par les APIv6 OVHcloud.
 
