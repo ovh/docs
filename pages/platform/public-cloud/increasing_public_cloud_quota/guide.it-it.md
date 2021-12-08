@@ -39,7 +39,7 @@ In conformità ai criteri interni (anzianità, esistenza di fatture pagate, ecc.
 
 Questa procedura consente di richiedere manualmente un aumento di quota e di convalidarlo con un pagamento anticipato (credito Public cloud).
 
-Accedi allo [Spazio cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud` e seleziona il tuo progetto Public Cloud.
+Accedi allo [Spazio cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud.
 
 Clicca su `Quota and Regions`{.action} nella barra laterale sinistra.
 
