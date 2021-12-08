@@ -16,14 +16,14 @@ This guide explains how to successfully configure a Public Cloud Databases for a
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- a [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
 
 ## Instructions
 
 ### Subscribe to the service
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
 Click on the button `Create a database instance`{.action}. (`Create a service`{.action} if your project already contains databases.)
 
@@ -39,7 +39,7 @@ In this step, choose an appropriate service plan. If needed, you will be able to
 
 ![Choose plan](images/creation_opensearch02.png){.thumbnail}
 
-Please visit the [capabilities page](https://docs.ovh.com/gb/en/publiccloud/databases/) of your selected database type for detailed information on each plan's properties.
+Please visit the [capabilities page](https://docs.ovh.com/us/en/publiccloud/databases/) of your selected database type for detailed information on each plan's properties.
 
 Click on `Next`{.action} to continue.
 
@@ -57,7 +57,7 @@ You can increase the number of nodes and choose the node template in this step. 
 
 ![Order nodes](images/creation_opensearch04.png){.thumbnail}
 
-Please visit the [capabilities page](https://docs.ovh.com/gb/en/publiccloud/databases/) of your selected database type for detailed information on the hardware resources and other properties of the database installation.
+Please visit the [capabilities page](https://docs.ovh.com/us/en/publiccloud/databases/) of your selected database type for detailed information on the hardware resources and other properties of the database installation.
 
 Take note of the pricing information and click on `Next`{.action} to continue.
 
@@ -70,7 +70,7 @@ Please note that attaching to a private network is a feature we are currently wo
 
 #### Step 6: Review and confirm
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/creation_opensearch06.png){.thumbnail}
 
@@ -182,7 +182,7 @@ Please enter the name of the index that you want to create.
 #### Automatic backups
 
 OVHcloud performs daily backups for your Public Cloud Databases for the OpenSearch service.
-To find them, switch to the `Backups`{.action} tab. Backups will be created automatically, and retention time depends on the service plan. Please visit the [Public Cloud Databases for OpenSearch capabilities page](https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/capabilities/) for detailed information on each plan's properties.
+To find them, switch to the `Backups`{.action} tab. Backups will be created automatically, and retention time depends on the service plan. Please visit the [Public Cloud Databases for OpenSearch capabilities page](https://docs.ovh.com/us/en/publiccloud/databases/opensearch/capabilities/) for detailed information on each plan's properties.
 
 ![Backups](images/configure_backup.png){.thumbnail}
 
@@ -321,7 +321,7 @@ We can execute the same commands as we did with cURL:
 
 You service is now configured. To go further, 
 
-[OpenSearch capabilities](https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/capabilities/)
+[OpenSearch capabilities](https://docs.ovh.com/us/en/publiccloud/databases/opensearch/capabilities/)
 
 [OpenSearch Official documentation](https://opensearch.org/docs/latest){.external}
 
