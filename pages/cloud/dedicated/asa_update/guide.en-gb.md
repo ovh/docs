@@ -2,8 +2,15 @@
 title: 'Upgrading your Cisco ASA firewall'
 excerpt: 'Find out how to upgrade your Cisco ASA firewall'
 slug: upgrading-cisco-asa-firewall
-section: 'Advanced use'
+section: Cisco ASA Firewall
+order: 02
 ---
+
+> [!primary]
+> **End of support for the Bare Metal Cisco ASA Firewall offer**
+>
+> OVHcloud announces the end of its support for the Bare Metal Cisco ASA Firewall solution. More information is available on [this page](https://docs.ovh.com/gb/en/dedicated/cisco-asa-eol/).
+>
 
 **Last updated 28th February 2018**
 

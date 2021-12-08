@@ -5,6 +5,12 @@ slug: atualizar-firewall-cisco-asa
 section: 'Uso avançado'
 ---
 
+> [!primary]
+> **End of support for the Bare Metal Cisco ASA Firewall offer**
+>
+> OVHcloud announces the end of its support for the Bare Metal Cisco ASA Firewall solution. More information is available on [this page](https://docs.ovh.com/gb/en/dedicated/cisco-asa-eol/).
+>
+
 **Última atualização: 28/05/2018**
 
 ## Sumário
