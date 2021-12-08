@@ -151,7 +151,7 @@ Une fois votre liste complétée, cliquez sur `Confirmer`{.action}.
 
 > [!primary]
 >
-> Lorsque vous activez l'option CORS sans préciser de noms de domaine dans la liste, cela siginifie que tous les noms de domaine sont autorisés à utiliser les ressources de votre site web.
+> Lorsque vous activez l'option CORS sans préciser de noms de domaine dans la liste, cela signifie que tous les noms de domaine sont autorisés à utiliser les ressources de votre site web.
 
 - **HTTPS-redirect** : Protégez la globalité du trafic de votre site web en le redirigeant vers le protocole HTTPS de façon temporaire ou permanente.
 
@@ -171,7 +171,7 @@ Une fois la fonction activée, déterminez la durée de vie pendant laquelle le 
 
 - **Mixed content** : Forcez l’intégralité du contenu de vos pages web. Elles seront chargées de manière sécurisée, participant ainsi à une expérience utilisateur optimale. Toutes les ressources de votre site, internes comme externes, doivent être disponibles en HTTPS pour éviter une erreur du navigateur.
 
-- **Pare-feu applicatif** : Le **W**eb **A**pplcation **F**irewall (WAF) protège votre site des attaques frauduleuses telles que l’injection de code, les requêtes illégitimes ou le vol de données. Il vous couvre des principales failles connues du web en filtrant les requêtes et paquets transmis (la liste des failles est administrée par OVHcloud et régulièrement mise à jour).  
+- **Pare-feu applicatif** : Le **W**eb **A**pplication **F**irewall (WAF) protège votre site des attaques frauduleuses telles que l’injection de code, les requêtes illégitimes ou le vol de données. Il vous couvre des principales failles connues du web en filtrant les requêtes et paquets transmis (la liste des failles est administrée par OVHcloud et régulièrement mise à jour).  
 
 > [!warning]
 >
@@ -193,7 +193,7 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Prefetch** : Anticiper le chargement de la ressource suivante. Préchargez-la automatiquement dans le cache CDN grâce au header link de votre site web. Ce mécanisme est principalement utilisé pour charger les CSS, JavaScript, images, favicons ou encore des polices web qui sont requis par le thème du site web. 
 
-Dans l'exemple, ci-dessous, lorsque vous serez sur le page courante affichant « Hello », une sous-requète déclenchera le préchargement de la resource `/cache/style.css` .  
+Dans l'exemple, ci-dessous, lorsque vous serez sur la page courante affichant « Hello », une sous-requète déclenchera le préchargement de la resource `/cache/style.css` .  
 
 ```	
 <?php
@@ -228,7 +228,7 @@ Pour définir la liste des URLs qui doivent être systématiquement rafraichies,
 
 Une fois vos options choisies, cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} dans la fenêtre suivante.
 
-##### **Créer une règle de mise en cache avacée** <a name="cacherulesadv"></a>
+##### **Créer une règle de mise en cache avancée** <a name="cacherulesadv"></a>
 
 Pour ajouter une règle de cache sur l'un des éléments de votre site, dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite, puis sur `Configurer le CDN`{.action}.
 
