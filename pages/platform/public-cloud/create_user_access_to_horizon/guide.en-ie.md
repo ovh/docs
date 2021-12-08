@@ -18,8 +18,8 @@ Horizon is the graphical management interface for OpenStack. Certain features ca
 
 ## Requirements
 
-- a Public Cloud project activated
-- access to the [OVHcloud Control Panel](https://ovh.com/auth/?action=gotomanager)
+- A Public Cloud project activated
+- Access to the [OVHcloud Control Panel](https://ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 

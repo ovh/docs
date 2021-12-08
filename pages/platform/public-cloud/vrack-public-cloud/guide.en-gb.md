@@ -16,10 +16,10 @@ OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private network so
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- an OpenStack user (optional)
-- basic networking knowledge
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An OpenStack user (optional)
+- Basic networking knowledge
 
 ## Interfaces
 

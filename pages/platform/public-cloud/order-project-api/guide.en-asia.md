@@ -16,9 +16,9 @@ Creating a project is the first step in deploying [Public Cloud instances](https
 
 ## Requirements
 
-- user credentials for an active OVHcloud account
-- a valid [payment method](../../billing/manage-payment-methods/) saved in your OVHcloud account
-- consulting the [OVHcloud API first steps guide](../../api/first-steps-with-ovh-api/) to familiarise yourself with the OVHcloud APIv6
+- User credentials for an active OVHcloud account
+- A valid [payment method](../../billing/manage-payment-methods/) saved in your OVHcloud account
+- Consulting the [OVHcloud API first steps guide](../../api/first-steps-with-ovh-api/) to familiarise yourself with the OVHcloud APIv6
 
 ## Instructions
 

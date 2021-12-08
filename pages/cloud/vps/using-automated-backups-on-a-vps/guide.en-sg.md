@@ -21,9 +21,9 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- an OVHcloud [VPS service](https://www.ovhcloud.com/en-sg/vps/) already set up
-- administrative access (root) via SSH to your VPS (optional)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- An OVHcloud [VPS service](https://www.ovhcloud.com/en-sg/vps/) already set up
+- Administrative access (root) via SSH to your VPS (optional)
 
 ## Instructions
 

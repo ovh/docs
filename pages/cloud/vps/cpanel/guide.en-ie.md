@@ -15,8 +15,8 @@ cPanel is a control panel designed for web hosting. Web hosting tasks are simpli
 
 ## Requirements
 
-- a current [VPS solution](https://www.ovhcloud.com/en-ie/vps/) (VPS ranges Value, Essential, Comfort, or Elite) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A current [VPS solution](https://www.ovhcloud.com/en-ie/vps/) (VPS ranges Value, Essential, Comfort, or Elite) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
