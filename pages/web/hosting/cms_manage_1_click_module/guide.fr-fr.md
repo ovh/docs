@@ -67,7 +67,13 @@ Vous pouvez également modifier ce mot de passe en vous rendant directement sur 
 
 #### Wordpress
 
-Cliquez sur ![admin_wordpress](images/admin_wordpress.png){.thumbnail}
+Cliquez sur `Mot de passe oublié`{.action} :
+
+![admin_wordpress1](images/admin_wordpress1.png){.thumbnail}
+
+Indiquez le nom d'utilisateur ou l'adresse e-mail de votre compte administrateur sur Wordpress (par défaut, celle de votre compte OVHcloud) et cliquez sur `Générer un mot de passe`{.action} :
+
+![admin_wordpress2](images/admin_wordpress2.png){.thumbnail}
 
 #### Joomla
 
@@ -75,7 +81,8 @@ Pointez le curseur de votre souris sur le point d'interrogation à côté du cha
 
 ![admin_joomla1](images/admin_joomla1.png){.thumbnail}
 
-Indiquez l'adresse e-mail principale de votre compte OVHcloud :
+Indiquez l'adresse e-mail de votre compte administrateur sur Joomla (par défaut, celle de votre compte OVHcloud) et cliquez sur `Envoyer
+`{.action} :
 
 ![admin_joomla2](images/admin_joomla2.png){.thumbnail}
 
