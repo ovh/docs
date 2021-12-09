@@ -27,7 +27,7 @@ This document shows how to get the VPG back to normal and delete the VM replica 
 In the Zerto target site interface menu, check the `VPGs`{.action} and `VMs`{.action} dashboards.<br>
 In our example, VPG1 holds two VMs, vm1-zerto and vm2-zerto. The site sync status is functional.
 
-![Dash](Images/en01sync.png){.thumbnail}
+![Dash](images/en01sync.png){.thumbnail}
 
 
 In the source site vSphere interface, vm2-zerto is purposefully deleted.<br>
