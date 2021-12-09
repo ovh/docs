@@ -6,9 +6,9 @@ section: Utilisation avancée
 ---
 
 > [!primary]
-> **Fin de support de l'offre Bare Metal Cisco Firewall ASA**
+> **Fin de support de l'option Cisco Firewall ASA associée aux serveurs dédiés**
 >
-> OVHcloud annonce la fin de support de l’offre Bare Metal Cisco Firewall ASA. Retrouvez plus d'informations sur [cette page](https://docs.ovh.com/fr/dedicated/cisco-asa-eol/).
+> OVHcloud annonce la fin de support de l'option Cisco Firewall ASA associée aux serveurs dédiés. Retrouvez plus d'informations sur [cette page](https://docs.ovh.com/fr/dedicated/cisco-asa-eol/).
 >
 
 **Dernière mise à jour le 2018/03/01**

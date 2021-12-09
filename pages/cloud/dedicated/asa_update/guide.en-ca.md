@@ -6,9 +6,9 @@ section: Advanced
 ---
 
 > [!primary]
-> **End of support for the Bare Metal Cisco ASA Firewall offer**
+> **End of support for the Cisco ASA Firewall feature on dedicated servers**
 >
-> OVHcloud announces the end of its support for the Bare Metal Cisco ASA Firewall solution. More information is available on [this page](https://docs.ovh.com/gb/en/dedicated/cisco-asa-eol/).
+> OVHcloud announces the end of its support for the Cisco ASA Firewall feature for dedicated servers. More information is available on [this page](https://docs.ovh.com/gb/en/dedicated/cisco-asa-eol/).
 >
 
 **Last updated 2018/03/01**

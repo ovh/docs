@@ -1,6 +1,6 @@
 ---
 title: Cisco ASA Firewall end-of-support notification
-excerpt: Details on the end of support for the Cisco ASA Firewall Bare Metal offer
+excerpt: Details on the end of support for the Cisco ASA Firewall feature for dedicated servers
 slug: cisco-asa-eol
 section: Cisco ASA Firewall
 order: 01
@@ -10,7 +10,7 @@ order: 01
 
 ## Summary
 
-OVHcloud has announced the end of its support for the Bare Metal Cisco ASA Firewall solution.<br>
+OVHcloud has announced the end of its support for the Cisco ASA Firewall feature for dedicated servers.<br>
 Active services will be discontinued on the 28th February 2022 at 10:00 UTC, end of support date.<br>
 This step follows the end-of-sales of this product which occurred in late 2019.
 
@@ -18,7 +18,7 @@ You can track the operation using this [status task](https://bare-metal-servers.
 
 ## End of Life Planning
 
-Affected customers with active Cisco ASA Bare Metal Firewall services will receive an email notification about their technical and billing OVHcloud accounts in December 2021.
+Affected customers with active Cisco ASA Firewall services will receive an email notification about their technical and billing OVHcloud accounts in December 2021.
 
 ### Schedule Table
 
@@ -35,7 +35,7 @@ Affected customers with active Cisco ASA Bare Metal Firewall services will recei
 
 This end-of-life includes:
 
-- the entire Bare Metal Cisco ASA Firewall service, globally.
+- the entire Cisco ASA Firewall feature for dedicated servers, globally.
 
 ## Migration options and alternative services
 
