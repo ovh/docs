@@ -9,8 +9,8 @@ section: OVHcloud services and options
 
 ## Objective
 
-Once a VM is purposefully deleted from the source site, the Zerto VPG it is part of pauses and goes into error state.
-The VM replica files are still on the target datastore.
+Once a VM is purposefully deleted from the source site, the Zerto VPG it is part of pauses and goes into error state.<br>
+The VM replica files are still on the target datastore.<br>
 This document shows how to get the VPG back to normal and delete the VM replica from the target site.
 
 **Use the Zerto UI to delete the VM replica from the target site.**
