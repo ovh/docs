@@ -1,7 +1,7 @@
 ---
-title: 'Savoir si la fonctionalité des MAC virtuelles est supporté sur un serveur donné'
+title: 'Déterminer si la fonctionnalité des MAC virtuelles est supportée sur un serveur dédié'
 slug: network-support-virtual-mac
-excerpt: 'Découvrez comment savoir si la fonctionalité des MAC virtuelles est supporté sur un serveur donné'
+excerpt: "Découvrez comment déterminer si la fonctionalité des MAC virtuelles est supportée sur un serveur dédié via l'API OVHcloud"
 section: 'Réseau & IP'
 ---
 
@@ -9,41 +9,49 @@ section: 'Réseau & IP'
 
 ## Objectif
 
-Savoir si la fonctionalité des MAC virtuelles est supporté sur un serveur.
+Afin d'utiliser la fonctionnalité des MAC virtuelles (VMAC) sur un serveur dédié, vous devez tout d'abord déterminer si ce serveur support cette fonctionnalité.
+
 Le support de cette fonctionalité est un pré-requis de toutes les actions concernant les MAC virtuelles.
 
-**Ce guide vous explique comment savoir si la fonctionnalité des MAC virtuelles est supporté sur un serveur donné.**
-
+**Découvrez comment vérifier si votre serveur dédié supporte la fonctionnalité des MAC virtuelles.**
 
 ## Prérequis
 
 * Posséder [un serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
-* Être connecté à l'[API OVH](https://api.ovh.com/console/){.external}.
+* Être connecté à l'[API OVHcloud](https://api.ovh.com/console/){.external}.
 
+> [!primary]
+> Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/)».
 
 ## En pratique
 
 ### Obtenir l'information
 
-Une fois connecté dansl'[API OVH](https://api.ovh.com/console/){.external} , aller sur la route API [/dedicated/server/{serviceName}/specifications/network] (https://api.ovh.com/console/#/dedicated/server/%7BserviceName%7D/specifications/network#GET){.external}
+Utilisez l'appel API suivant :
 
-![SVMAC](images/support_virtual_mac_01.png){.thumbnail}
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/specifications/network
+>
 
-Mettre le com de votre serveur dans le champ "serviceName", puis cliquez sur `Execute`{.action}.
+Saisissez le nom de votre serveur dans le champ `serviceName`, puis cliquez sur `Execute`{.action}.
 
 ![SVMAC](images/support_virtual_mac_02.png){.thumbnail}
 
-Vous avez en résultat, une liste avec une entrée "vmac / supported" qui sera à "true" ou "false" (valeur booléenne).
+Vous obtenez alors une liste avec une entrée « vmac / supported » qui sera à « true » ou « false » (valeur booléenne).
 
-![SVMAC](images/support_virtual_mac_03.png){.thumbnail}
+![SVMAC](images/support_virtual_mac_04.png){.thumbnail}
 
 > [!primary]
+> **Interprétation du résultat**
 >
-> **false** : vous ne pouvez pas utiliser les fonctionnalités liées aux MAC virtuelles sur ce serveur.
+> - **false** : vous ne pouvez pas utiliser les fonctionnalités liées aux MAC virtuelles sur ce serveur.
 >
-> **true** : vous pouvez utiliser les fonctionnalités liées aux MAC virtuelles sur ce serveur.
+> - **true** : vous pouvez utiliser les fonctionnalités liées aux MAC virtuelles sur ce serveur.
 >
 
 ## Aller plus loin
+
+[Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
