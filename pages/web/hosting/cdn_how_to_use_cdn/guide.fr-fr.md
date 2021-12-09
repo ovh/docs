@@ -6,7 +6,7 @@ excerpt: 'Améliorez votre site en accélérant son chargement sur votre héberg
 section: 'Optimiser son site'
 ---
 
-**Dernière mise à jour le 26/04/2021**
+**Dernière mise à jour le 09/12/2021**
 
 ## Objectif
 
@@ -187,13 +187,13 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 > [!primary]
 >
->  les options présentées ci-dessous nécessitent la souscription au [CDN Advanced](https://www.ovhcloud.com/fr/web-hosting/options/cdn/)
+>  Les options présentées ci-dessous nécessitent la souscription au [CDN Advanced](https://www.ovhcloud.com/fr/web-hosting/options/cdn/)
 
-- **Header HTTP de géolocalisation** : Connaître le pays du visiteur pour personnaliser l'expérience proposée. Le code pays est ajouté automatiquement dans le header de chaque requête pour être manipulé par votre serveur d'origine. Les éléments d'identification dans le header se présente sous les appélations  `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
+- **Header HTTP de géolocalisation** : Déterminez le pays du visiteur pour personnaliser l'expérience proposée. Le code pays est ajouté automatiquement dans le header de chaque requête pour être manipulé par votre serveur d'origine. Les éléments d'identification dans le header se présentent sous les appellations  `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
 
-- **Prefetch** : Anticiper le chargement de la ressource suivante. Préchargez-la automatiquement dans le cache CDN grâce au header link de votre site web. Ce mécanisme est principalement utilisé pour charger les CSS, JavaScript, images, favicons ou encore des polices web qui sont requis par le thème du site web. 
+- **Prefetch** : Anticipez le chargement de la ressource suivante. Préchargez-la automatiquement dans le cache CDN grâce au *header link* de votre site web. Ce mécanisme est principalement utilisé pour charger les CSS, JavaScript, images, favicons ou encore des polices web qui sont requis par le thème du site web. 
 
-Dans l'exemple, ci-dessous, lorsque vous serez sur la page courante affichant « Hello », une sous-requète déclenchera le préchargement de la resource `/cache/style.css` .  
+Dans l'exemple, ci-dessous, lorsque vous êtes sur la page courante affichant « Hello », une sous-requète déclenche le pré-chargement de la ressource `/cache/style.css` .  
 
 ```	
 <?php
@@ -202,29 +202,29 @@ print 'Hello'
 ?> 
 ```
 
-- **Mobile redirect** :  Rediriger automatiquement les visiteurs "Mobile" vers un site web optimisé. Au choix : rediriger systématiquement vers la racine d'un autre site web, ou conserver l'URL en ne remplaçant que le domaine (ou le sous-domaine).
+- **Mobile redirect** :  Redirigez automatiquement les visiteurs « Mobile » vers un site web optimisé. Au choix : rediriger systématiquement vers la racine d'un autre site web, ou conserver l'URL en ne remplaçant que le domaine (ou le sous-domaine).
 
-- **Purge avancée** : Personnaliser votre purge en choisissant les éléments du cache à vider : Tout le site, un dossier, une URI, une extension de fichiers ou à l'aide d'une expression régulière personnalisée. 
+- **Purge avancée** : Personnalisez votre purge en choisissant les éléments du cache à vider : tout le site, un dossier, une URI, une extension de fichiers ou à l'aide d'une expression régulière personnalisée. 
 
-Depuis l'onlget Multisite, cliquez sur le bouton `...`{.action} à droite de l'entrée multisite puis sur `Purger le CDN`{.action}. 
+Depuis l'onglet Multisite, cliquez sur le bouton `...`{.action} à droite de l'entrée multisite puis sur `Purger le CDN`{.action}. 
 
 ![CDN](images/manage_CDNadvanced_01.png){.thumbnail}
 
-**Query String** : Gestion de la mise en cache de contenu, basée sur les paramètres (aussi appelés *Query String*) de la requête URL. En fonction de votre configuration, choisissez le comportement du cache CDN:
+**Query String** : Gestion de la mise en cache de contenu, basée sur les paramètres (aussi appelés *Query String*) de la requête URL. En fonction de votre configuration, choisissez le comportement du cache CDN :
 
 	- *Désactivé* : La ressource est mise en cache avec ses paramètres non triés. Ce qui va créer, par exemple, 2 itérations dans le cache du CDN pour 2 URL ayant les mêmes paramètres dans un ordre différent.
-	- *Activé - Trier les paramètres* : La ressource est mise en cache en triant ses paramètres. Un tri se fera avant de stocker l'URL dans le cache du CDN. Par exemple, seule une itération sera gardé pour 2 URL ayant les mêmes paramètres dans un ordre différent.
+	- *Activé - Trier les paramètres* : La ressource est mise en cache en triant ses paramètres. Un tri se fera avant de stocker l'URL dans le cache du CDN. Par exemple, seule une itération sera gardée pour 2 URL ayant les mêmes paramètres dans un ordre différent.
 	- *Activé - Ignorer les paramètres* : La ressource est mise en cache sans aucun paramètre. Le cache CDN ne tiendra pas compte des paramètres saisis dans l'URL, il stockera donc l'URL sans les paramètres dans le cache.
 
-- **Prewarm** : Forcer la mise en cache permanente de vos ressources primordiales. Le CDN anticipe et rafraîchit automatiquement le cache, sans attendre de requête de l'utilisateur. Cette fonction s'applique uniquement sur du contenu statique, ayant un TTL supérieur à 0, la ressource ne doit pas excéder 1GB. Une jauge vous indique le niveau de consommation des ressources en Prewarm, en fonction de la liste de vos URLs, le total des ressources appelées par ces URLs ne doit pas dépasser les 1GB.
+- **Prewarm** : Forcez la mise en cache permanente de vos ressources primordiales. Le CDN anticipe et rafraîchit automatiquement le cache, sans attendre de requête de l'utilisateur. Cette fonction s'applique uniquement sur du contenu statique, ayant un TTL supérieur à 0, et la ressource ne doit pas excéder 1GB. Une jauge vous indique le niveau de consommation des ressources en *Prewarm*, en fonction de la liste de vos URLs. Le total des ressources appelées par ces URLs ne doit pas dépasser les 1GB.
 
-Pour définir la liste des URLs qui doivent être en Prewarm, cliquez sur `Editer la liste des URLs`{.action}.
+Pour définir la liste des URLs qui doivent être en *Prewarm*, cliquez sur `Editer la liste des URLs`{.action}.
 
 ![CDN](images/manage_CDNadvanced_02.png){.thumbnail}
 
 `Ajouter`{.action}, `Retirer`{.action}
 
-- **Cache rule** : Créez jusqu'à 100 règles. Elles définissent la fréquence de rafraîchissement de mise en cache pour certaines ressources précises sur votre site. ([suivre la prochaine étape](#cacherulesadv)).
+- **Cache rule** : Créez jusqu'à 100 règles. Elles définissent la fréquence de rafraîchissement de mise en cache pour certaines ressources précises sur votre site. Poursuivez la lecture du guide à [la prochaine étape](#cacherulesadv) pour plus d'informations.
 
 Une fois vos options choisies, cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} dans la fenêtre suivante.
 
@@ -246,13 +246,13 @@ Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`
 
 - **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
 
-- **Durée** : indiquez la durée de mise en cache de la ressource choisie.
+- **Durée** : Indiquez la durée de mise en cache de la ressource choisie.
 
 - **Classement** :  Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
 
 Une fois vos choix réalisés, cliquez sur le bouton `Créer la règle`{.action}.
 
-Les règles apparaissent dans une liste. Vous pouvez modifier une règle en cliquant sur `...`{.action} à droite de celle-ci, puis sur `Modifier la règle`{.action}; ou la supprimer en cliquant sur `Supprimer la règle`{.action}.
+Les règles apparaissent dans une liste. Vous pouvez modifier une règle en cliquant sur `...`{.action} à droite de celle-ci, puis sur `Modifier la règle`{.action}. Vous pouvez la supprimer en cliquant sur `Supprimer la règle`{.action}.
 
 ![CDN](images/manage_CDNadvanced_04.png){.thumbnail}
 
@@ -268,7 +268,7 @@ Dans l'onglet `Multisites`{.action} de votre hébergement, sous le tableau, vous
 
 > [!primary]
 > 
-> L'option CDN est déjà incluse dans les offres d'hébergement web Performance ou les offres commandées avant le 19/11/20.
+> L'option CDN est déjà incluse dans les offres d'hébergement web Performance ou les offres commandées avant le 19/11/2020.
 
 #### Vider le cache du CDN
 
