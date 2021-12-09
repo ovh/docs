@@ -65,12 +65,33 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant vo
 
 Vous pouvez également modifier ce mot de passe en vous rendant directement sur la page de connexion à l'espace administrateur :
 
-|CMS|Page de connexion|
-|---|---|
-|Wordpress|Cliquez sur ![admin_wordpress](images/admin_wordpress.png){.thumbnail}|
-|Joomla|Sur cette page, cliquez sur `Go to site home page`{.action}</br>![admin_joomla1](images/admin_joomla1.png){.thumbnail}</br> puis sur `Mot de passe oublié`{.action}</br>![admin_joomla2](images/admin_joomla2.png){.thumbnail}|
-|Prestashop|![admin_prestashop](images/admin_prestashop.png){.thumbnail}|
-|Drupal|Sur cette page, cliquez sur `Réinitialiser votre mot de passe`{.action}</br>![admin_drupal1](images/admin_drupal1.png){.thumbnail}</br> puis indiquez votre nom d'utilisateur ou votre adresse e-mail de contact et cliquez sur `Se connecter`{.action}</br>![admin_drupal3](images/admin_drupal3.png){.thumbnail}|
+#### Wordpress
+
+Cliquez sur ![admin_wordpress](images/admin_wordpress.png){.thumbnail}
+
+#### Joomla
+
+Cliquez sur `Go to site home page`{.action} :
+
+![admin_joomla1](images/admin_joomla1.png){.thumbnail}
+
+Puis sur `Mot de passe oublié`{.action} :
+
+![admin_joomla2](images/admin_joomla2.png){.thumbnail}
+
+#### Prestashop
+
+![admin_prestashop](images/admin_prestashop.png){.thumbnail}
+
+#### Drupal
+
+Sur cette page, cliquez sur `Réinitialiser votre mot de passe`{.action}
+
+![admin_drupal1](images/admin_drupal1.png){.thumbnail}
+
+Puis indiquez votre nom d'utilisateur ou votre adresse e-mail de contact et cliquez sur `Se connecter`{.action}
+
+![admin_drupal3](images/admin_drupal3.png){.thumbnail}
 
 > [!primary]
 >
