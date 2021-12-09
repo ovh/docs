@@ -41,29 +41,28 @@ Back in the Zerto target site interface, the VPG pauses and goes into an error s
 ![VM](images/en03vpgerror.png){.thumbnail}
 
 
-In the `VPGs`{.action} section, check the VPG1
+In the `VPGs`{.action} section, check the VPG1 box and in the `Actions`{.action} menu, click `Edit VPG`{.action}.
+
+![VPG](images/en04vpgedit.png){.thumbnail}
 
 
+In `VMs`{.action}, remove vm2-zerto from the selected VMS (check the box then click the arrow back).<br>
+CLick `Done`{.action}.
+
+![VPG](images/en05vpgremove.png){.thumbnail}
 
 
-Click `+ Add`{.action} and select `Add DNAT Rule`{.action}.
+Click `No`{.action} in the Warning window as there is no typical need to save the recovery disk.
 
-![DNAT](images/en03nat.png){.thumbnail}
-
-Set the parameters as follows:
-
-- the interface the traffic will come from (for DNAT, your public facing interface)
-- the protocol and possibly sub-protocol targeted
-- the source IP or IP range
-- if applicable, the source port
-- the original destination IP (typically, your public facing IP)
-- if applicable, the original port targeted
-- the translated destination IP or IP range
-- enable or disable the rule
-- enable or disable logs on the rule     
+![VPG](images/en06warning.png){.thumbnail}
 
 
+The VPG will sync and will get back to a functional state with only one VM left.
 
+![DONE](images/en07green.png){.thumbnail}
+
+
+Congratulations and thank you.
 
 
 ## Go further 
