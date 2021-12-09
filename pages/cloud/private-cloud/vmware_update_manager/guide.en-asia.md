@@ -82,7 +82,19 @@ Now, the compliance summary may look very different than it used to.
 
 ![Update](images/en09noncompliant.png){.thumbnail}
 
-Back in the `Attached Baselines` section, check the box to select all assigned baselines and click on `Remediate`{.action}.
+Back in the `Attached Baselines` section, check the box to select all assigned baselines and click on `Stage`{.action}.
+
+![Update](images/en10bisstage.png){.thumbnail}
+
+Select the host and click on `Stage`{.action} again.
+
+![Update](images/en10terstagea.png){.thumbnail}
+
+The staging process starts and will last for a while.
+
+![Update](images/en10terstage.png){.thumbnail}
+
+In the `Attached Baselines` section still, check the box to select all assigned baselines and click on `Remediate`{.action}.
 
 ![Update](images/en10remediate.png){.thumbnail}
 
