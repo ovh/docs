@@ -143,11 +143,11 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Cross-Origin Resource Sharing (CORS)** : Indiquez, dans la liste, les noms de domaine extérieurs qui seront autorisés à accéder aux ressources de votre site web dans le but de les partager. 
 
-Une fois la fonction activée, cliquez sur `Editer la liste des ressources externes`{.action} pour ajouter les noms de domaine autorisés à partager vos ressources.
+	Une fois la fonction activée, cliquez sur `Editer la liste des ressources externes`{.action} pour ajouter les noms de domaine autorisés à partager vos ressources.
 
-![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
+	![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
 
-Une fois votre liste complétée, cliquez sur `Confirmer`{.action}.
+	Une fois votre liste complétée, cliquez sur `Confirmer`{.action}.
 
 > [!primary]
 >
@@ -155,15 +155,15 @@ Une fois votre liste complétée, cliquez sur `Confirmer`{.action}.
 
 - **HTTPS-redirect** : Protégez la globalité du trafic de votre site web en le redirigeant vers le protocole HTTPS de façon temporaire ou permanente.
 
-Une fois la fonction activée, cliquez sur le menu déroulant pour choisir entre `Redirection permanente (301)` ou `Redirection temporaire (302)`.
+	Une fois la fonction activée, cliquez sur le menu déroulant pour choisir entre `Redirection permanente (301)` ou `Redirection temporaire (302)`.
 
-![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
+	![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
 
 - **HTTP Strict Transport Security (HSTS)** : Imposez l’accès à votre site web en HTTPS uniquement. Votre solution web est ainsi sécurisée contre les attaques par rétrogradation (ou attaques par repli).
 
-Une fois la fonction activée, déterminez la durée de vie pendant laquelle le navigateur appliquera la fonction HSTS sur votre site web. 
+	Une fois la fonction activée, déterminez la durée de vie pendant laquelle le navigateur appliquera la fonction HSTS sur votre site web. 
 
-![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
+	![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
 
 > [!primary]
 > 
@@ -193,40 +193,41 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Prefetch** : Anticiper le chargement de la ressource suivante. Préchargez-la automatiquement dans le cache CDN grâce au header link de votre site web. Ce mécanisme est principalement utilisé pour charger les CSS, JavaScript, images, favicons ou encore des polices web qui sont requis par le thème du site web. 
 
-Dans l'exemple, ci-dessous, lorsque vous serez sur la page courante affichant « Hello », une sous-requète déclenchera le préchargement de la resource `/cache/style.css` .  
+	Dans l'exemple, ci-dessous, lorsque vous serez sur la page courante affichant « Hello », une sous-requète déclenchera le préchargement de la resource `/cache/style.css` .  
 
-```	
-<?php
-header("Link: </cache/style.css>; rel=prefetch");
-print 'Hello'
-?> 
-```
+	```	
+	<?php
+	header("Link: </cache/style.css>; rel=prefetch");
+	print 'Hello'
+	?> 
+	```
 
 - **Mobile redirect** :  Rediriger automatiquement les visiteurs "Mobile" vers un site web optimisé. Au choix : rediriger systématiquement vers la racine d'un autre site web, ou conserver l'URL en ne remplaçant que le domaine (ou le sous-domaine).
 
 - **Purge avancée** : Personnaliser votre purge en choisissant les éléments du cache à vider : Tout le site, un dossier, une URI, une extension de fichiers ou à l'aide d'une expression régulière personnalisée. 
 
-Depuis l'onlget Multisite, cliquez sur le bouton `...`{.action} à droite de l'entrée multisite puis sur `Purger le CDN`{.action}. 
+	Depuis l'onlget Multisite, cliquez sur le bouton `...`{.action} à droite de l'entrée multisite puis sur `Purger le CDN`{.action}. 
 
-![CDN](images/manage_CDNadvanced_01.png){.thumbnail}
+	![CDN](images/manage_CDNadvanced_01.png){.thumbnail}
 
-**Query String** : Gestion de la mise en cache de contenu, basée sur les paramètres (aussi appelés *Query String*) de la requête URL. En fonction de votre configuration, choisissez le comportement du cache CDN:
-
+- **Query String** : Gestion de la mise en cache de contenu, basée sur les paramètres (aussi appelés *Query String*) de la requête URL. En fonction de votre configuration, choisissez le comportement du cache CDN:
 	- *Désactivé* : La ressource est mise en cache avec ses paramètres non triés. Ce qui va créer, par exemple, 2 itérations dans le cache du CDN pour 2 URL ayant les mêmes paramètres dans un ordre différent.
 	- *Activé - Trier les paramètres* : La ressource est mise en cache en triant ses paramètres. Un tri se fera avant de stocker l'URL dans le cache du CDN. Par exemple, seule une itération sera gardé pour 2 URL ayant les mêmes paramètres dans un ordre différent.
 	- *Activé - Ignorer les paramètres* : La ressource est mise en cache sans aucun paramètre. Le cache CDN ne tiendra pas compte des paramètres saisis dans l'URL, il stockera donc l'URL sans les paramètres dans le cache.
 
 - **Prewarm** : Forcer la mise en cache permanente de vos ressources primordiales. Le CDN anticipe et rafraîchit automatiquement le cache, sans attendre de requête de l'utilisateur. Cette fonction s'applique uniquement sur du contenu statique, ayant un TTL supérieur à 0, la ressource ne doit pas excéder 1GB. Une jauge vous indique le niveau de consommation des ressources en Prewarm, en fonction de la liste de vos URLs, le total des ressources appelées par ces URLs ne doit pas dépasser les 1GB.
 
-Pour définir la liste des URLs qui doivent être en Prewarm, cliquez sur `Editer la liste des URLs`{.action}.
+	Pour définir la liste des URLs qui doivent être en Prewarm, cliquez sur `Editer la liste des URLs`{.action}.
 
-![CDN](images/manage_CDNadvanced_02.png){.thumbnail}
+	À l'aide des champs `Protocole`, `Nom de domaine` et `Chemin de la ressource`, tapez un des liens vers une ressource que vous souhaitez ajoutez à la fonction **Prewarm**, puis cliquez sur`Ajouter`{.action}.
 
-`Ajouter`{.action}, `Retirer`{.action}
+	Une liste se forme dans le cadre inférieur, avec l'ensemble des liens que vous avez listés, vous pouvez supprimer celui de votre choix en le sélectionnant, puis en cliquant sur `Retirer`{.action}.
+
+	![CDN](images/manage_CDNadvanced_02.png){.thumbnail}
 
 - **Cache rule** : Créez jusqu'à 100 règles. Elles définissent la fréquence de rafraîchissement de mise en cache pour certaines ressources précises sur votre site. ([suivre la prochaine étape](#cacherulesadv)).
 
-Une fois vos options choisies, cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} dans la fenêtre suivante.
+		Une fois vos options choisies, cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} dans la fenêtre suivante.
 
 ##### **Créer une règle de mise en cache avancée** <a name="cacherulesadv"></a>
 
