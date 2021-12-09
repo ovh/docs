@@ -1,8 +1,8 @@
 ---
-title: Supprimer la copie d'une VM du site de récupération Zerto
+title: "Supprimer la copie d'une VM du site de récupération Zerto"
 slug: suprimmer-copie-vm-zerto
-excerpt: Supprimer une VM du site de récupération quand elle est effacée du site source
-section: OVHcloud services and options
+excerpt: Découvez comment supprimer une VM du site de récupération quand elle est effacée du site source
+section: Services et options OVHcloud
 ---
 
 **Dernière mise à jour le 09/12/2021**
@@ -13,56 +13,46 @@ Quand une VM est volontairement supprimée du site source, la VPG Zerto fait une
 Les fichiers de la copie de la VM sont toujours sur le site cible.<br>
 Ce document montre comment effacer ces fichiers et remettre la VPG en fonction.
 
-**Utiliser l'interface Zerto pour supprimer une copie de VM du site cible.**
+**Utilisez l'interface Zerto pour supprimer une copie de VM du site cible.**
 
 ## Prérequis
 
-- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour Zerto (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 - Avoir déployé [Zerto Virtual Replication](https://docs.ovh.com/fr/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)
 
 ## En pratique
 
 Dans l'interface Zerto du site cible, vérifiez les tableaux de bord `VPGs`{.action} et `VMs`{.action}.<br>
-Dans notre exemple, VPG1 contient deux VMs, vm1-zerto et vm2-zerto. Le status de la synchronisation du site est fonctionnel.
+Dans notre exemple, VPG1 contient deux VMs, vm1-zerto et vm2-zerto. Le statut de la synchronisation du site est fonctionnel.
 
 ![Dash](images/en01sync.png){.thumbnail}
-
 
 Dans l'interface vSphere du site source, vm2-zerto est volontairement supprimée.<br>
 La VM et ses disques sont effacés.
 
 ![VM](images/en02vmdelete.png){.thumbnail}
 
-
 De retour dans l'interface Zerto du site cible, la VPG fait une pause dans la synchronisation et se met en erreur. La VM vm2-zerto est grisée.
 
 ![VM](images/en03vpgerror.png){.thumbnail}
 
-
-Dans l'onglet `VPGs`{.action}, cochez VPG1 et dans le menu `Actions`{.action}, cliquez `Edit VPG`{.action}.
+Dans l'onglet `VPGs`{.action}, cochez VPG1 et dans le menu `Actions`{.action}, cliquez sur `Edit VPG`{.action}.
 
 ![VPG](images/en04vpgedit.png){.thumbnail}
 
-
-Dans `VMs`{.action}, retirez vm2-zerto de la section selected VMS (cochez la VM puis cliquez sur la flèche vers l'arrière).<br>
-CLiquez `Done`{.action}.
+Dans `VMs`{.action}, retirez vm2-zerto de la section `selected VMS` (cochez la VM puis cliquez sur la flèche pointant vers la gauche).<br>
+CLiquez sur `Done`{.action}.
 
 ![VPG](images/en05vpgremove.png){.thumbnail}
 
-
-Cliquez `No`{.action} dans la fenètre d'alerte. Il n'y a généralement pas besoin sauvegarder le disque de récupération.
+Cliquez sur `No`{.action} dans la fenètre d'avertissement. Il n'y a généralement pas besoin sauvegarder le disque de récupération.
 
 ![VPG](images/en06warning.png){.thumbnail}
-
 
 La VPG va se synchroniser de nouveau et redevenir fonctionnelle avec une seule VM à l'intérieur.
 
 ![DONE](images/en07green.png){.thumbnail}
-
-
-Bravo et merci.
-
 
 ## Aller plus loin
 

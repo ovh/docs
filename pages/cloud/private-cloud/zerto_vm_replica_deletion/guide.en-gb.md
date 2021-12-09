@@ -5,7 +5,7 @@ excerpt: Remove a VM replica from a recovery site after deletion on the source s
 section: OVHcloud services and options
 ---
 
-**Last updated 12/09/2021**
+**Last updated 09th December 2021**
 
 ## Objective
 
@@ -17,10 +17,9 @@ This document shows how to get the VPG back to normal and delete the VM replica 
 
 ## Requirements 
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere as well as Zerto (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-- Have [Zerto Virtual Replication](https://docs.ovh.com/gb/en/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/) deployed
-
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere as well as Zerto (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- A deployed [Zerto Virtual Replication](https://docs.ovh.com/gb/en/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)
 
 ## Instructions
 
@@ -29,41 +28,31 @@ In our example, VPG1 holds two VMs, vm1-zerto and vm2-zerto. The site sync statu
 
 ![Dash](images/en01sync.png){.thumbnail}
 
-
 In the source site vSphere interface, vm2-zerto is purposefully deleted.<br>
 Both the VM and its disks are removed.
 
 ![VM](images/en02vmdelete.png){.thumbnail}
 
-
 Back in the Zerto target site interface, the VPG pauses and goes into an error state. The vm2-zerto is also greyed out now.
 
 ![VM](images/en03vpgerror.png){.thumbnail}
-
 
 In the `VPGs`{.action} section, check the VPG1 box and in the `Actions`{.action} menu, click `Edit VPG`{.action}.
 
 ![VPG](images/en04vpgedit.png){.thumbnail}
 
-
-In `VMs`{.action}, remove vm2-zerto from the selected VMS (check the box then click the arrow back).<br>
-CLick `Done`{.action}.
+In `VMs`{.action}, remove vm2-zerto from the `Selected VMS` (check the box then click the arrow back).<br>
+Click `Done`{.action}.
 
 ![VPG](images/en05vpgremove.png){.thumbnail}
 
-
-Click `No`{.action} in the Warning window as there is no typical need to save the recovery disk.
+Click `No`{.action} in the warning window as there is no typical need to save the recovery disk.
 
 ![VPG](images/en06warning.png){.thumbnail}
-
 
 The VPG will sync and will get back to a functional state with only one VM left.
 
 ![DONE](images/en07green.png){.thumbnail}
-
-
-Congratulations and thank you.
-
 
 ## Go further 
 
