@@ -1,69 +1,73 @@
 ---
 title: 'Créer et configurer un disque supplementaire sur une instance'
 slug: creer-et-configurer-un-disque-supplementaire-sur-une-instance
-excerpt: 'Découvrez comment créer et configurer un disque supplémentaire sur une de vos instances.'
+excerpt: 'Découvrez comment attacher un nouveau volume à votre instance Public Cloud'
 legacy_guide_number: 1863
 section: 'Stockage'
-order: 3
+order: 1
 ---
 
-**Dernière mise à jour le 14 novembre 2019**
+**Dernière mise à jour le 8 décembre 2021**
 
 ## Objectif
 
 Vous pouvez créer des disques supplémentaires pour vos instances Public Cloud.
 Cela peut être utile dans les cas suivants :
 
-* Si vous souhaitez augmenter votre capacité de stockage sans avoir à changer le modèle d’instance.
-* Si vous souhaitez disposer d’un espace de stockage hautement disponible et performant.
-* Si vous souhaitez déplacer votre stockage et vos données vers une autre instance.
+- Si vous souhaitez augmenter votre capacité de stockage sans avoir à changer le modèle d’instance.
+- Si vous souhaitez disposer d’un espace de stockage hautement disponible et performant.
+- Si vous souhaitez déplacer votre stockage et vos données vers une autre instance.
 
-**Découvrez comment créer et configurer un disque supplémentaire sur une de vos instances.**
+**Ce guide vous explique comment créer un disque supplémentaire et le configurer sur votre instance.**
 
 ## Prérequis
 
-* Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-* Avoir une [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external}dans votre compte OVHcloud.
-* Avoir accès à votre instance via SSH en tant qu'administrateur (root).
+- Être connecté à votre espace client [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Une Instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} dans votre compte OVHcloud
+- Avoir un accès administratif (root) à votre instance via SSH
 
-## En pratique
+## Instructions
 
-Tout d’abord, connectez-vous à votre [Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et cliquez sur le menu `Public Cloud`{.action}. Cliquez ensuite sur le `Projet`{.action} dans lequel vous souhaitez créer l’instance.
+### Attacher un nouveau volume
 
-Cliquez sur le bouton `Actions`{.action} puis sélectionnez `Créer un volume`{.action}.
+Connectez-vous à votre espace client [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Ensuite, ouvrez `Block Storage`{.action} dans le menu de gauche.
 
-![sélectionner le projet](images/attach-disk-01.png){.thumbnail}
+Dans cette partie, cliquez sur le bouton `Créer un volume`{.action}.
 
-Configurez maintenant vos options concernant le type, la taille et l’emplacement du disque. Lorsque vous avez terminé, cliquez sur le bouton `Ajouter`{.action}.
+![sélectionner le projet](images/avolume01.png){.thumbnail}
 
-![create disk](images/attach-disk-02.png){.thumbnail}
+Suivez les étapes de configuration afin de sélectionner les options d'emplacement, de type de disque et de capacité de disque. Renseignez alors un nom pour le volume et validez en cliquant sur `Créer le volume`{.action}.
 
-Le nouveau disque sera maintenant affiché sur votre espace client.
+![create disk](images/avolume02.png){.thumbnail}
 
-![configure disk](images/attach-disk-03.png){.thumbnail}
+Le nouveau disque s’affichera alors dans l’espace client.
 
-Pour attacher un disque à une instance, cliquez sur les trois points à droite puis sélectionnez `Attacher à l’instance`{.action}.
+![configure disk](images/avolume03.png){.thumbnail}
 
-![attach disk 01](images/attach-disk-04.png){.thumbnail}
+À droite du volume, cliquez sur le bouton `...`{.action} puis sélectionnez `Attacher à l'instance`{.action}.
 
-Sélectionnez maintenant l’instance et cliquez sur `Confirmer`{.action} pour attacher le disque.
+![attach disk 01](images/avolume04.png){.thumbnail}
 
-![attach disk 02](images/attach-disk-05.png){.thumbnail}
+Dans la fenêtre qui apparaît, choisissez une instance dans la liste et cliquez sur `Confirmer`{.action} pour attacher le disque.
 
-Le processus d’attachement du disque à votre instance va maintenant commencer et peut prendre quelques minutes.
+![attach disk 02](images/avolume05.png){.thumbnail}
 
-![attach disk 03](images/attach-disk-06.png){.thumbnail}
+Le processus d’attachement du disque à votre instance va maintenant commencer. L'opération peut prendre quelques minutes.
 
 > [!warning]
-Vous devez éviter la navigation en dehors de l’onglet Infrastructure pendant l’attachement du disque. Cela peut interrompre le processus.
+Veillez à ne pas quitter la page actuelle de votre espace client OVHcloud lorsque le disque est en cours de connexion. Cela peut interrompre le processus.
 >
 
-### Sous Linux
+### Configuration du nouveau disque
 
-En premier lieu, connectez-vous en SSH à votre instance et utilisez la commande suivante pour afficher la liste des disques de l’instance :
+Les exemples ci-dessous supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées.
 
-```
-# admin@serveur-1:~$ lsblk
+#### Sous Linux
+
+Ouvrez une connexion [SSH à votre instance](../premiers-pas-instance-public-cloud/#connect-to-instance), puis utilisez la commande ci-dessous pour lister les disques attachés.
+
+```bash
+~$ admin@server-1:~$ lsblk
 
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
@@ -73,13 +77,13 @@ vdb 254:16 0 10G 0 disk
 
 > [!primary]
 >
-VDA correspond généralement au disque dur principal de votre instance. VDB sera donc le disque supplémentaire.
+dans cet exemple, `vda` fait référence au disque par défaut de l'instance. Le disque additionnel sera alors libellé `vdb`.
 >
 
-Ensuite, créez une partition sur le disque supplémentaire à l’aide de la commande suivante :
+Créez une partition sur le disque supplémentaire en utilisant les commandes ci-dessous.
 
-```
-# admin@serveur-1:~$ sudo fdisk /dev/vdb
+```bash
+~$ admin@server-1:~$ sudo fdisk /dev/vdb
 
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
@@ -89,9 +93,7 @@ Device does not contain a recognized partition table.
 Created a new DOS disklabel with disk identifier 0x95c4adcc.
 ```
 
-
-
-```
+```bash
 Command (m for help): n
 
 Partition type
@@ -106,9 +108,7 @@ Last sector, +sectors or +size{K,M,G,T,P} (2048-20971519, default 20971519):
 Created a new partition 1 of type 'Linux' and of size 10 GiB.
 ```
 
-
-
-```
+```bash
 Command (m for help): w
 
 The partition table has been altered.
@@ -116,10 +116,10 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-Formatez la partition à l’aide de la commande suivante :
+Formatez ensuite la nouvelle partition `vdb1` à l’aide de la commande ci-dessous :
 
-```
-# admin@serveur-1:~$ sudo mkfs.ext4 /dev/vdb1
+```bash
+~$ admin@server-1:~$ sudo mkfs.ext4 /dev/vdb1
 mke2fs 1.42.12 (29-Aug-2014)
 Creating filesystem with 2621184 4k blocks and 655360 inodes
 Filesystem UUID: 781be788-c4be-462b-b946-88429a43c0cf
@@ -132,18 +132,17 @@ Creating journal (32768 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-Utilisez cette commande pour monter la partition :
+Montez la partition avec les commandes suivantes :
 
+```bash
+admin@server-1:~$ sudo mkdir /mnt/disk
+admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
 ```
-admin@serveur-1:~$ sudo mkdir /mnt/disk
-admin@serveur-1:~$ sudo mount /dev/vdb1 /mnt/disk/
-```
 
+Enfin, vérifiez le point de montage à l’aide de cette commande :
 
-Et finalement, vérifiez le point de montage avec cette commande :
-
-```
-admin@serveur-1:~$ df -h
+```bash
+~$ admin@server-1:~$ df -h
 
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
@@ -155,44 +154,54 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 9.8G 23M 9.2G 1% /mnt/disk
 ```
 
-Si vous voulez créer un point de montage persistant, vous devrez changer le /etc/fstab. Pour cela, utilisez la commande suivante pour récupérer l’identifiant du bloc (block ID).
+> [!primary]
+>
+Le montage n'est pas persistant car le disque sera détaché au redémarrage de l'instance. Afin d'automatiser le montage, il est nécessaire d'éditer le fichier `fstab`.
+>
 
-```
-admin@serveur-1:~$ sudo blkid
+Récupérez tout d'abord l'UUID (block ID) du nouveau volume :
+
+```bash
+~$ admin@server-1:~$ sudo blkid
 
 /dev/vda1: UUID="51ba13e7-398b-45f3-b5f3-fdfbe556f62c" TYPE="ext4" PARTUUID="000132ff-01"
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
 ```
 
-Maintenant vous pouvez utiliser le block ID pour changer le fichier /etc/fstab.
+Ouvrez `/etc/fstab` avec un éditeur de texte :
 
 ```
-admin@serveur-1:~$ vim /etc/fstab
+~$ sudo nano /etc/fstab
+```
 
-/etc/fstab: static file system information.
+Ajoutez la ligne ci-dessous au fichier et remplacez l'UUID par le vôtre :
 
-# Use 'blkid' to print the universally unique identifier for a
-# device; this may be used with UUID= as a more robust way to name devices
-# that works even if disks are added and removed. See fstab(5).
-# # #
-# <file system> <mount point> <type> <options> <dump> <pass>
-UUID=51ba13e7-398b-45f3-b5f3-fdfbe556f62c / ext4 defaults 0 0
+```console
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 ```
 
-### Sous Windows
+Enregistrez et quittez l'éditeur. Le disque doit être automatiquement monté à chaque redémarrage à partir de maintenant.
 
-En premier lieu, faites un clic droit sur le `Menu Démarrer`{.action} puis cliquez sur `Gestion des disques`{.action}.
 
-![](images/start-menu.png){.thumbnail}
+#### Sous Windows
 
-Lorsque l’outil de gestion des disques s’ouvre, vous verrez votre nouveau disque comme un volume inconnu avec de l'espace non alloué, comme indiqué ci-dessous :
+Établissez une connexion RDP (Remote Desktop) avec votre instance Windows.
 
-![disk management](images/disk-management-01.png){.thumbnail}
+Une fois connecté, faites un clic droit sur le bouton `Menu`{.action} Démarrer et ouvrez `Gestion`{.action} des disques.
 
-#### Initialiser le disque avec l’outil de gestion des disques
+![disk management](images/start-menu.png){.thumbnail}
 
-Si le disque est hors ligne, une politique en place sur l’instance en est probablement la cause. Pour résoudre ce problème, faites un clic droit sur le disque et sélectionnez`En ligne`{.action}.
+Le nouveau disque sera affiché en tant que volume inconnu avec de l'espace non alloué.
+
+![volume inconnu](images/disk-management-01.png){.thumbnail}
+
+Si le disque est marqué comme hors connexion ici, il doit d'abord être initialisé. Pour ce faire, vous pouvez utiliser l'interface utilisateur [Windows](#initDiskManagement) ou l'[utilitaire](#initDiskpart) DISKPART. Sinon, procédez au [formatage du disque dans Gestion](#formatDiskManagement) des disques.
+
+##### **Initialiser le disque dans Gestion des disques** <a name="initDiskManagement"></a>
+
+Faites un clic droit sur le disque et sélectionnez `Online`{.action}. 
+
+Si le disque est marqué comme hors ligne ici, cela est probablement dû à une politique en place sur l'instance. Pour résoudre ce problème, cliquez avec le bouton droit de la souris sur le disque et sélectionnez`En ligne`{.action}.
 
 ![offline disk](images/disk-management-02.png){.thumbnail}
 
@@ -204,23 +213,23 @@ Ensuite, sélectionnez `MBR`{.action} puis cliquez sur `OK`{.action}.
 
 ![initialise disk](images/initialise-disk.png){.thumbnail}
 
-#### Initialiser le disque avec DISKPART
+##### **Initialiser le disque avec DISKPART** <a name="initDiskpart"></a>
 
-En premier lieu, faites un clic droit sur le `Menu Démarrer`{.action} puis cliquez sur `Exécuter`{.action}.
+Faites un clic droit sur le bouton `Menu`{.action} Démarrer et ouvrez `Exécuter`{.action}.
 
 ![initialise disk](images/diskpart.png){.thumbnail}
 
-Ensuite, tapez `cmd` puis cliquez sur `OK`{.action}
+Tapez `cmd` et cliquez sur `OK`{.action} pour ouvrir l'application de ligne de commande.
 
 ![run prompt](images/run-prompt.png){.thumbnail}
 
-Dans l’invite de commande qui s’ouvre, tapez la commande suivante pour ouvrir l’outil DISKPART :
+À l'invite de commande, ouvrez DISKPART :
 
 ```
 C:\> diskpart
 ```
 
-Ensuite, changez la politique du disque à l’aide des commandes suivantes :
+Utilisez la série de commandes DISKPART suivante pour mettre le disque en `ligne` :
 
 ```
 DISKPART> san
@@ -231,7 +240,7 @@ SAN Policy : Offline Shared
 ```
 DISKPART> san policy = OnlineAll
 
-DiskPart successfully changed the SAN policy for the current operating system.
+DiskPart successfully changed the SAN policy for the current operating system .
 
 - Implementation of the strategy on the extra disk:
 [Code] DISKPART> list disk
@@ -242,7 +251,7 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```
+``` 
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
@@ -257,13 +266,13 @@ Disk attributes cleared successfully.
 ```
 DISKPART> attributes disk
 
-Current Read-only State : Non
-Read-only : Non
-Boot Disk : Non
-Pagefile Disk : Non
-Hibernation File Disk : Non
-Crashdump Disk : Non
-Clustered Disk : Non
+Current Read-only State : No
+Read-only : No
+Boot Disk : No
+Pagefile Disk : No
+Hibernation File Disk : No
+Crashdump Disk : No
+Clustered Disk : No
 ```
 
 ```
@@ -272,34 +281,30 @@ DISKPART> online disk
 DiskPart successfully onlined the selected disk.
 ```
 
-#### Formater le disque
+##### **Formatage du disque** <a name="formatDiskManagement"></a>
 
-Ouvrez l’outil Gestion des disques à nouveau, faites un clic droit sur le volume, puis cliquez sur `Nouveau volume simple...`{.action}
+Dans `Gestion`{.action} des disques, faites un clic droit sur le nouveau disque et sélectionnez `Nouveau volume simple...`{.action}.
 
 ![format disk](images/format-disk-01.png){.thumbnail}
 
-Cliquez ensuite sur `Suivant`{.action}.
-
-![format disk](images/format-disk-02.png){.thumbnail}
-
-Spécifiez la taille du volume souhaitée. En général, vous souhaiterez la totalité de l’espace disponible. Une fois cela fait, cliquez sur Suivant.
+Dans l'Assistant, cliquez sur `Suivant`{.action} pour spécifier la taille du volume. Par défaut, il doit être au maximum. Cliquez sur `Suivant`{.action} pour continuer.
 
 ![format disk](images/format-disk-03.png){.thumbnail}
 
-Choisissez une lettre de lecteur de la liste déroulante pour identifier le volume, puis cliquez sur `Suivant`{.action}.
+Laissez la nouvelle lettre de lecteur par défaut ou sélectionnez-en une autre, puis cliquez sur `Suivant`{.action}.
 
 ![format disk](images/format-disk-04.png){.thumbnail}
 
-Sélectionnez les options que vous souhaitez pour le volume puis cliquez sur `Suivant`{.action} pour formater le disque.
+Labellisez le volume (facultatif) et confirmez les options de formatage en cliquant sur `Suivant`{.action}.
 
 ![format disk](images/format-disk-05.png){.thumbnail}
 
-Finalement, cliquez sur `Terminer`{.action} pour effectuer le formatage.
+Dans la dernière fenêtre, cliquez sur `Terminer`{.action} pour formater le disque.
 
 ![format disk](images/format-disk-06.png){.thumbnail}
 
-Une fois le disque formaté, vous pouvez y accéder simplement depuis l’explorateur de fichiers.
+Le disque sera disponible en tant que lecteur dans l'Explorateur de fichiers après l'opération.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
