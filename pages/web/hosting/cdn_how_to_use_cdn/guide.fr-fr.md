@@ -169,7 +169,7 @@ Une fois la fonction activée, déterminez la durée de vie pendant laquelle le 
 > 
 > Lorsque que vous activez la fonction HSTS sur votre site, elle forcera le protocole HTTPS sur votre navigateur, jusqu'à la fin de la période dite "âge maximum", même après désactivation de la fonction dans votre espace client. Néanmoins, lorsque le cache est vidé sur le navigateur qui a déjà effectué une visite sur votre site, ce dernier appliquera le nouvel état de la fonction HSTS.
 
-- **Mixed content** : Forcez l’intégralité du contenu de vos pages web. Elles seront chargées de manière sécurisée, participant ainsi à une expérience utilisateur optimale. Toutes les ressources de votre site, internes comme externes, doivent être disponibles en HTTPS pour éviter une erreur du navigateur.
+- **Mixed content** : Forcez le chargement de l’intégralité du contenu de vos pages web de manière sécurisée, participant ainsi à une expérience utilisateur optimale. Toutes les ressources de votre site, internes comme externes, doivent être disponibles en HTTPS pour éviter une erreur de sécurité du navigateur.
 
 - **Pare-feu applicatif** : Le **W**eb **A**pplication **F**irewall (WAF) protège votre site des attaques frauduleuses telles que l’injection de code, les requêtes illégitimes ou le vol de données. Il vous couvre des principales failles connues du web en filtrant les requêtes et paquets transmis (la liste des failles est administrée par OVHcloud et régulièrement mise à jour).  
 
@@ -216,9 +216,9 @@ Depuis l'onlget Multisite, cliquez sur le bouton `...`{.action} à droite de l'e
 	- *Activé - Trier les paramètres* : La ressource est mise en cache en triant ses paramètres. Un tri se fera avant de stocker l'URL dans le cache du CDN. Par exemple, seule une itération sera gardé pour 2 URL ayant les mêmes paramètres dans un ordre différent.
 	- *Activé - Ignorer les paramètres* : La ressource est mise en cache sans aucun paramètre. Le cache CDN ne tiendra pas compte des paramètres saisis dans l'URL, il stockera donc l'URL sans les paramètres dans le cache.
 
-- **Prewarm** : Forcer la mise en cache permanente de vos ressources primordiales. Le CDN anticipe et rafraîchit automatiquement le cache, sans attendre de requête de l'utilisateur.
+- **Prewarm** : Forcer la mise en cache permanente de vos ressources primordiales. Le CDN anticipe et rafraîchit automatiquement le cache, sans attendre de requête de l'utilisateur. Cette fonction s'applique uniquement sur du contenu statique, ayant un TTL supérieur à 0, la ressource ne doit pas excéder 1GB. Une jauge vous indique le niveau de consommation des ressources en Prewarm, en fonction de la liste de vos URLs, le total des ressources appelées par ces URLs ne doit pas dépasser les 1GB.
 
-Pour définir la liste des URLs qui doivent être systématiquement rafraichies, cliquez sur `Editer la liste des URLs`{.action}
+Pour définir la liste des URLs qui doivent être en Prewarm, cliquez sur `Editer la liste des URLs`{.action}.
 
 ![CDN](images/manage_CDNadvanced_02.png){.thumbnail}
 
@@ -264,7 +264,7 @@ Dans l'onglet `Multisites`{.action} de votre hébergement, sous le tableau, vous
 
 ![CDN](images/manage_CDNstat_01.png){.thumbnail}
 
-### Gérer votre CDN (version historique)
+### Gérer votre CDN Business
 
 > [!primary]
 > 
