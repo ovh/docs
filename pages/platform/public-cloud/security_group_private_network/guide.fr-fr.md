@@ -48,7 +48,7 @@ openstack security group rule list default
 +--------------------------------------+-------------+-----------+-----------+------------+-----------------------+
 ```
 
-Le retour montre que toutes les connexions sont autorisées pour tout protocole et dans les deux sens.
+Le retour obtenu montre que toutes les connexions sont autorisées pour tout protocole et dans les deux sens.
 
 Selon les régions, l'implémentation peut être différente mais le résultat est identique : toutes les connexions sont autorisées.
 
@@ -85,7 +85,7 @@ openstack security group create private
 
 Cet exemple de groupe de sécurité n'a que des règles de sortie, ce qui signifie qu'aucune communication d'entrée ne sera autorisée.
 
-Pour ajouter une règle pour les connexions SSH par exemple, vous pouvez utiliser la commande suivante :
+Pour ajouter une règle pour, par exemple, les connexions SSH, vous pouvez utiliser la commande suivante :
 
 ```bash
 openstack security group rule create --protocol tcp --dst-port 22 private
@@ -124,12 +124,12 @@ openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 
 La configuration par défaut du réseau privé peut être différente selon la région utilisée.
 
-Dans certaines régions, la propriété « port security » est considérée comme *enabled* même si elle n'applique aucune règle sur le réseau privé. Sur certaines autres régions (en fonction de la version d'OpenStack déployée), la propriété « port security » est vue comme "enabled" mais les règles sont correctement appliquées sur le réseau privé.
+Dans certaines régions, la propriété « port security » est considérée comme *enabled* même si elle n'applique aucune règle sur le réseau privé. Sur certaines autres régions (en fonction de la version d'OpenStack déployée), la propriété « port security » est vue comme *enabled* mais les règles sont correctement appliquées sur le réseau privé.
 
-En résumé, pour les régions suivantes sont en cours d'exécution Newton OpenStack release et **aucune règle de pare-feu ne fonctionnera** pour vos réseaux privés, même si la sécurité des ports est activée :
+En résumé, les régions suivantes exécutent Newton OpenStack release et **aucune règle de pare-feu ne fonctionnera** pour vos réseaux privés, même si la sécurité des ports est activée :
 
 - Beauharnois : BHS1, BHS3, BHS5
-- Frankfurt : DE1
+- Francfort : DE1
 - Gravelines : GRA1, GRA3, GRA5, GRA7, GRA11
 - Strasbourg : SBG5
 - Singapour : SGP1
@@ -144,29 +144,28 @@ Dans les régions suivantes (exécutant la version Stein OpenStack), les règles
 - Gravelines : GRA9
 - Strasbourg : SBG7
 
-OVHcloud va progressivement mettre à niveau toutes les régions de Newton vers Stein, de sorte que la fonctionnalité de propriété de sécurité du port sera disponible.
+OVHcloud va progressivement mettre à niveau toutes les régions de Newton vers Stein, afin que la fonctionnalité « port security » soit disponible.
 
-Afin d'éviter tout changement d'interruption pendant la mise à niveau, la valeur False sera attribuée à la "sécurité du port" sur tous les réseaux déjà créés. Une fois qu'une région sera mise à niveau dans la version Stein OpenStack, si vous souhaitez utiliser des règles de pare-feu sur des réseaux privés, vous devrez définir la propriété "port security" sur True.
+Afin d'éviter toute interruption de service pendant la mise à jour, la valeur *False* sera attribuée à la propriété « port security » sur tous les réseaux déjà créés. Une fois qu'une région sera mise à niveau dans la version Stein OpenStack, si vous souhaitez utiliser des règles de pare-feu sur des réseaux privés, vous devrez définir la propriété « port security » sur *True*.
 
-Vous pouvez vérifier si la sécurité des ports est activée sur votre port réseau privé :
+Excéutez la commande suivante pour vérifier si la propriété « port security » est activée sur votre port de réseau privé :
 
 ```bash
 openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
 False
 ```
 
-### Migration process <a name="migration"></a>
+### Processus de migration <a name="migration"></a>
 
-Cela se produira selon le processus suivant :
+La mgration suivra le processus ci-dessous :
 
-- GRA9 et SBG7 rejoindront les autres régions avec le port par défaut security set on **disabled**.
-- Les règles de firewall pour les nouveaux ports ne seront pas appliquées tant que vous ne l'aurez pas activé sur le nouveau port. Rien ne change pour les ports existants.
+- GRA9 et SBG7 rejoindront les autres régions avec le « port security » par défaut en **disabled**.
+- Les règles de firewall pour les nouveaux ports ne seront pas appliquées tant que vous n'aurez pas activé la propriété « port security » sur le nouveau port. Rien ne change pour les ports existants.
 - Les régions OpenStack passeront à la version Stein.
-- La sécurité de port par défaut sera changée en **activé** (une communication globale sera envoyée dans le temps).
+- Le « port security » par défaut sera modifié en **activé** (une communication globale sera envoyée en temps voulu).
 - Les règles de firewall fonctionneront pour les nouveaux ports. Rien ne change pour les ports existants.
-- L'option permettant d'activer la sécurité des ports existants sera activée.
-
+- L'option permettant d'activer la propriété « port security » sur les ports existants sera activée.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
