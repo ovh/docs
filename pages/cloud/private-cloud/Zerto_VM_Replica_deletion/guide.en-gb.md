@@ -24,6 +24,45 @@ This document shows how to get the VPG back to normal and delete the VM replica 
 
 ## Instructions
 
+In the Zerto target site interface menu, check the `VPGs`{.action} and `VMs`{.action} dashboards.<br>
+In our example, VPG1 holds two VMs, vm1-zerto and vm2-zerto. The site sync status is functional.
+
+![Dash](images/en01sync.png){.thumbnail}
+
+
+In the source site vSphere interface, vm2-zerto is purposefully deleted.<br>
+Both the VM and its disks are removed.
+
+![VM](images/en02vmdelete.png){.thumbnail}
+
+
+Back in the Zerto target site interface, the VPG pauses and goes into an error state. The vm2-zerto is also greyed out now.
+
+![VM](images/en03vpgerror.png){.thumbnail}
+
+
+In the `VPGs`{.action} section, check the VPG1
+
+
+
+
+Click `+ Add`{.action} and select `Add DNAT Rule`{.action}.
+
+![DNAT](images/en03nat.png){.thumbnail}
+
+Set the parameters as follows:
+
+- the interface the traffic will come from (for DNAT, your public facing interface)
+- the protocol and possibly sub-protocol targeted
+- the source IP or IP range
+- if applicable, the source port
+- the original destination IP (typically, your public facing IP)
+- if applicable, the original port targeted
+- the translated destination IP or IP range
+- enable or disable the rule
+- enable or disable logs on the rule     
+
+
 
 
 
