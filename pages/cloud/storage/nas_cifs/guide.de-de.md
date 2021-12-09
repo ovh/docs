@@ -1,7 +1,7 @@
 ---
-title: Installieren Sie Ihr NAS auf Windows Server über CIFS
+title: NAS auf Windows Server über CIFS mounten
 slug: nas/nas-cifs
-excerpt: Diese Anleitung zeigt Ihnen, wie Sie Ihr NAS unter Windows Server über CIFS mounten können.
+excerpt: Erfahren Sie hier, wie Sie Ihr NAS unter Windows Server über CIFS mounten können
 section: NAS
 ---
 
@@ -17,33 +17,33 @@ Konfigurieren und mounten Sie einen OVHclou HA-NAS-Speicherraum auf Ihrem Window
 
 ## Voraussetzungen
 
-- einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) **oder** einen [VPS](https://www.ovhcloud.com/de/vps/) **oder** eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) mit einer Windows-Distribution
-- eine [HA-NAS](https://www.ovh.de/nas/) Lösung
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) **oder** einen [VPS](https://www.ovhcloud.com/de/vps/) **oder** eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) mit einer Windows-Distribution in Ihrem Kunden-Account.
+- Sie verfügen über eine [HA-NAS Lösung](https://www.ovh.de/nas/).
 
 ### Einstellungen
 
-- **Windows Server 2008**: Klicken Sie auf das Menü `Start`{.action} > `All the programs`{.action} > `Accessories`{.action} > `Command prompt`{.action}.
-- **Windows Server 2012**: Klicken Sie auf das Symbol `Windows PowerShell`{.action} am unteren Bildschirmrand in der Taskleiste.
-- **Windows Server 2016**: Klicken Sie auf das Menü `Start`{.action} und dann auf das Symbol `Windows PowerShell`{.action}.
-- **Windows Server 2019**: Klicken Sie auf das Menü `Start`{.action} und dann auf das Symbol `Windows PowerShell`{.action}.
+- **Windows Server 2008**: Klicken Sie auf `Start`{.action}, `All the programs`{.action}, `Accessories`{.action}, `Command prompt`{.action}.
+- **Windows Server 2012**: Klicken Sie auf das `Windows PowerShell`{.action} Icon am unteren Bildschirmrand in der Taskleiste.
+- **Windows Server 2016**: Klicken Sie auf `Start`{.action} und dann auf das `Windows PowerShell`{.action} Icon.
+- **Windows Server 2019**: Klicken Sie auf `Start`{.action} und dann auf das `Windows PowerShell`{.action} Icon.
 
 Führen Sie dann den folgenden Befehl aus:
 
-```bash
+```powershell
 net use z: \\CIFS_SERVER_IP\CIFS_PATH
 ```
 
 ### Beispiele
 
-- CIFS-Montage für eine Mini-Nas:
+- CIFS Mount für ein Mini-NAS:
 
-```bash
+```powershell
 net use z: \\10.16.100.10\nas-000041_mininas-000212
 ```
 
-- CIFS-Montage für NAS oder NAS-HA:
+- CIFS Mount für NAS oder NAS-HA:
 
-```bash
+```powershell
 net use z: \\10.16.101.8\zpool-000206\partition1
 ```
 
@@ -56,4 +56,4 @@ net use z: \\10.16.101.8\zpool-000206\partition1
 
 [Häufig gestellte Fragen zu NAS](https://docs.ovh.com/de/storage/faq-nas/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
