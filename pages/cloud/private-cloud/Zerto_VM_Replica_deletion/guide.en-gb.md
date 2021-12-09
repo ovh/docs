@@ -13,7 +13,7 @@ Once a VM is purposefully deleted from the source site, the Zerto VPG it is part
 The VM replica files are still on the target datastore.
 This document shows how to get the VPG back to normal and delete the VM replica from the target site.
 
-**Use the Zerto UI to delete the replica of the VM from the target site.**
+**Use the Zerto UI to delete the VM replica from the target site.**
 
 ## Requirements 
 
@@ -23,6 +23,7 @@ This document shows how to get the VPG back to normal and delete the VM replica 
 
 
 ## Instructions
+
 
 
 
