@@ -10,7 +10,7 @@ order: 01
 
 ## Résumé
 
-OVHcloud annonce la fin de support de l’option Cisco Firewall ASA.<br>
+OVHcloud annonce la fin de support de l’option Cisco Firewall ASA associée aux serveurs dédiés.<br>
 Les services actifs seront arrêtés au 28 Février 2022 à 10:00 UTC, date de fin de support.<br>
 Cette étape fait suite à l’arrêt de la commercialisation de ce produit depuis fin 2019.
 
