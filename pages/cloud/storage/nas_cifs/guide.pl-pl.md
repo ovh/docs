@@ -17,7 +17,7 @@ Konfiguracja i zamontowanie przestrzeni dyskowej NAS-HA OVHcloud na serwerze Win
 
 ## Wymagania początkowe
 
-- Posiadanie [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/), [VPS](https://www.ovhcloud.com/pl/vps/) **lub** [instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) z dystrybucją Windows.
+- Posiadanie [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/), **lub**  [VPS](https://www.ovhcloud.com/pl/vps/) **lub** [instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) z dystrybucją Windows.
 - Posiadanie usługi [NAS-HA](https://www.ovh.pl/nas/)
 
 ### Ustawienia

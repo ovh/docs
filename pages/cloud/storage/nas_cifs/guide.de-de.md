@@ -13,7 +13,7 @@ section: NAS
 
 ## Ziel
 
-Konfigurieren und mounten Sie einen OVHclou HA-NAS-Speicherraum auf Ihrem Windows Server mit CIFS.
+Konfigurieren und mounten Sie einen OVHcloud HA-NAS-Speicherraum auf Ihrem Windows Server mit CIFS.
 
 ## Voraussetzungen
 

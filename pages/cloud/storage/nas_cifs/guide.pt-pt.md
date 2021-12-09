@@ -22,7 +22,7 @@ Configure e monte o seu espaço de armazenamento NAS-HA OVHcloud no Windows Serv
 
 ### Configuração
 
-- **Windows Server 2008** : clique no menu `Start`{.action} > `All the programs`{.action} > `Acessories`{.action} > `Command prompt`{.action}.
+- **Windows Server 2008** : clique no menu `Start`{.action} > `All the programs`{.action} > `Accessories`{.action} > `Command prompt`{.action}.
 - **Windows Server 2012** : clique no ícone `Windows PowerShell`{.action} na barra de tarefas.
 - **Windows Server 2016** : clique no menu `Start`{.action} e, a seguir, no ícone do `Windows PowerShell`{.action}.
 - **Windows Server 2019** : clique no menu `Start`{.action} e, a seguir, no ícone do `Windows PowerShell`{.action}.
@@ -47,7 +47,7 @@ net use z: \\10.16.100.10\nas-000041_mininas-000212
 net use z: \\10.16.101.8\zpool-000206\partition1
 ```
 
-> [!warning]
+> [!alert]
 >
 > O utilizador SMB/CIFS é `nobody`, qualquer modificação de direitos efetuada por este utilizador pode gerar conflitos com direitos NFS existentes.
 > 

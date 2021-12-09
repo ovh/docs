@@ -47,7 +47,7 @@ net use z: \\10.16.100.10\nas-000041_mininas-000212
 net use z: \\10.16.101.8\zpool-000206\partition1
 ```
 
-> [!warning]
+> [!alert]
 >
 > El usuario SMB/CIFS es `nobody`, cualquier cambio de permisos efectuado por este usuario puede generar conflictos con los permisos NFS existentes.
 > 
