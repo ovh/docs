@@ -6,7 +6,7 @@ section: Horizon
 order: 7
 ---
 
-**Last updated 15th September 2021**
+**Last updated 15th November 2021**
 
 ## Objective
 
@@ -16,8 +16,8 @@ A flex instance is a single size disk (50GB) instance which offers a faster proc
 
 ## Requirements
 
-- an [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) with the flex option
-- [create an access to the Horizon interface](https://docs.ovh.com/ca/en/public-cloud/configure_user_access_to_horizon/)
+- An [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) with the flex option
+- [Access to the Horizon interface](https://docs.ovh.com/ca/en/public-cloud/configure_user_access_to_horizon/)
 
 ## Instructions
 
@@ -38,9 +38,9 @@ In our example, our flavor is « b2-15-flex » , we can either revert to a « b2
 ![Choose new flavor](images/confirmflavor.png){.thumbnail}
 
 > [!warning] 
-> Please note that you can only switch from a Linux model to another Linux model and from a Windows model to another Windows model.
+> - You can only switch from a Linux model to another Linux model and from a Windows model to another Windows model.
 >
-> Note that the flex option is not available for all models.
+> - The flex option is not available for all models.
 >
 
 **Advanced Options**
