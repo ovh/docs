@@ -75,6 +75,8 @@ Indiquez le nom d'utilisateur ou l'adresse e-mail de votre compte administrateur
 
 ![admin_wordpress2](images/admin_wordpress2.png){.thumbnail}
 
+Vous recevrez ensuite un e-mail de réinitialisation de votre mot de passe.
+
 #### Joomla
 
 Pointez le curseur de votre souris sur le point d'interrogation à côté du champ `Mot de passe`{.action} et cliquez sur `Mot de passe oublié`{.action} :
@@ -88,7 +90,13 @@ Indiquez l'adresse e-mail de votre compte administrateur sur Joomla (par défaut
 
 #### Prestashop
 
-![admin_prestashop](images/admin_prestashop.png){.thumbnail}
+Cliquez sur `Mot de passe oublié`{.action} :
+
+![admin_prestashop1](images/admin_prestashop1.png){.thumbnail}
+
+Indiquez l'adresse e-mail de votre compte administrateur sur Prestashop (par défaut, celle de votre compte OVHcloud) et cliquez sur `Envoyer le mail de réinitialisation`{.action} :
+
+![admin_prestashop2](images/admin_prestashop2.png){.thumbnail}
 
 #### Drupal
 
