@@ -71,11 +71,11 @@ Cliquez sur ![admin_wordpress](images/admin_wordpress.png){.thumbnail}
 
 #### Joomla
 
-Cliquez sur `Go to site home page`{.action} :
+Pointez le curseur de votre souris sur le point d'interrogation à côté du champ `Mot de passe`{.action} et cliquez sur `Mot de passe oublié`{.action} :
 
 ![admin_joomla1](images/admin_joomla1.png){.thumbnail}
 
-Puis sur `Mot de passe oublié`{.action} :
+Indiquez l'adresse e-mail principale de votre compte OVHcloud :
 
 ![admin_joomla2](images/admin_joomla2.png){.thumbnail}
 
