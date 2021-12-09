@@ -25,6 +25,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 - Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/){.external} dans votre espace client OVHcloud.
 - Disposer d'une [adresse IP Fail Over](https://www.ovhcloud.com/fr/bare-metal/ip/).
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Si l'IP Fail Over ou une des IP du bloc à une MAC virtuelle affectée, le serveur cible doit supporter la fonctionnalité des MAC virtuelles, voir [documentation](https://docs.ovh.com/fr/dedicated/network-support-virtual-mac/){.external}. Dans le cas contraire, les MAC virtuelle doivent être supprimées des IP Fail Over avant le déplacement.
 
 ## En pratique
 
