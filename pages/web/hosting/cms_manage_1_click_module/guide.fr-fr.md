@@ -68,9 +68,9 @@ Vous pouvez également modifier ce mot de passe en vous rendant directement sur 
 |CMS|Page de connexion|
 |---|---|
 |Wordpress|Cliquez sur ![admin_wordpress](images/admin_wordpress.png){.thumbnail}|
-|Joomla|Sur cette page, cliquez sur `Go to site home page`{.action}</br>![admin_joomla1](images/admin_joomla1.png){.thumbnail}</br> puis sur `Forgot your password?`{.action}</br>![admin_joomla2](images/admin_joomla2.png){.thumbnail}|
+|Joomla|Sur cette page, cliquez sur `Go to site home page`{.action}</br>![admin_joomla1](images/admin_joomla1.png){.thumbnail}</br> puis sur `Mot de passe oublié`{.action}</br>![admin_joomla2](images/admin_joomla2.png){.thumbnail}|
 |Prestashop|![admin_prestashop](images/admin_prestashop.png){.thumbnail}|
-|Drupal|Sur cette page, cliquez sur `Reset your password`{.action}</br>![admin_drupal2](images/admin_drupal2.png){.thumbnail}</br> puis indiquez votre nom d'utilisateur ou votre adresse e-mail de contact et cliquez sur `Soumettre`{.action}</br>![admin_drupal3](images/admin_drupal3.png){.thumbnail}|
+|Drupal|Sur cette page, cliquez sur `Réinitialiser votre mot de passe`{.action}</br>![admin_drupal1](images/admin_drupal1.png){.thumbnail}</br> puis indiquez votre nom d'utilisateur ou votre adresse e-mail de contact et cliquez sur `Se connecter`{.action}</br>![admin_drupal3](images/admin_drupal3.png){.thumbnail}|
 
 > [!primary]
 >
