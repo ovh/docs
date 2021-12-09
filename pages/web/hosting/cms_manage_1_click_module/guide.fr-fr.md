@@ -91,7 +91,7 @@ Sur cette page, cliquez sur `Réinitialiser votre mot de passe`{.action}
 
 Puis indiquez votre nom d'utilisateur ou votre adresse e-mail de contact et cliquez sur `Se connecter`{.action}
 
-![admin_drupal3](images/admin_drupal3.png){.thumbnail}
+![admin_drupal2](images/admin_drupal2.png){.thumbnail}
 
 > [!primary]
 >
