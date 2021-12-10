@@ -52,7 +52,7 @@ Dzięki tym danym będziesz mógł odnaleźć dane wymagane do logowania się do
 |Główny login FTP|Główny identyfikator FTP utworzony na Twoim hostingu. Możesz odnaleźć wszystkich użytkowników FTP Twojego hostingu w kolumnie „Login FTP” w tabeli.|
 |Główny login SSH|Główny identyfikator SSH utworzony na Twoim hostingu. Możesz odnaleźć wszystkich użytkowników SSH Twojego hostingu w kolumnie „Login FTP” w tabeli.|
 
-Jeśli nie znasz hasła użytkownika FTP lub SSH, w zależności od oferty kliknij ikonę ołówka lub przycisk `...`{.action}, a następnie wybierz `Zmień hasło`{.action}. Przewodnik techniczny [Zmień hasło użytkownika FTP](../hosting_www_ssh_na_hostingu/) pomoże w przeprowadzeniu tej operacji.
+Jeśli nie znasz hasła użytkownika FTP lub SSH, w zależności od oferty kliknij ikonę ołówka lub przycisk `...`{.action}, a następnie wybierz `Zmień hasło`{.action}. Przewodnik techniczny [Zmień hasło użytkownika FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/) pomoże w przeprowadzeniu tej operacji.
 
 ![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
 

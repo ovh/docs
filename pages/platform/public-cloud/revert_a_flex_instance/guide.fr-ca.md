@@ -2,7 +2,7 @@
 title : "Basculer d'une instance flex à une instance classique"
 slug : modifier-une-instance-flex
 excerpt: Apprenez à modifier une instance flex depuis l'interface OpenStack Horizon
-section : Horizon
+section : Gestion depuis Horizon
 order : 7
 ---
 
