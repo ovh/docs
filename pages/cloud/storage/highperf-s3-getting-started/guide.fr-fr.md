@@ -1,6 +1,6 @@
 ---
 title: Débuter avec S3 High Performance
-slug: s3/debuter-avec-s3-high-performance
+slug: s3/debuter-avec-s3
 excerpt:
 section: Object Storage S3 High Performance
 order: 020
