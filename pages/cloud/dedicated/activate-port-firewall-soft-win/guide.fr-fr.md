@@ -1,11 +1,11 @@
 ---
-title: Mettre à jour le firewall CISCO ASA
-excerpt: Découvrez comment mettre à jour votre firewall CISCO ASA
-slug: mettre-a-jour-firewall-cisco-asa
+title: Configuer le firewall software sous Windows
+excerpt: Découvrez comment configurer votre pare-feu sous Windows
+slug: Configurer-firewall-software-windows
 section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 20/02/2018**
+**Dernière mise à jour le 10/12/2021**
 
 ## Objectif
 
