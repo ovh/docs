@@ -31,9 +31,9 @@ In base alla data di attivazione o in caso di [recente migrazione del servizio](
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|
 |![email](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Il servizio è indicato nel riquadro `Abbonamento`|![email](images/mxplan-password-new-step1.png){.thumbnail}<br>Il servizio è indicato nel riquadro `Riepilogo`, sotto la voce `Referenza server`|
-|Consulta il paragrafo [Vecchia versione della soluzione MX Plan](./#vecchia-versione-della-soluzione-mx-plan_2)|Consulta il paragrafo [Nuova versione della soluzione MX Plan](./#nuova-versione-della-soluzione-mx-plan)|
+|Consulta il paragrafo [Vecchia versione della soluzione MX Plan](#mx-legacy)|Consulta il paragrafo [Nuova versione della soluzione MX Plan](#mx-new)|
 
-### Nuova versione della soluzione MX Plan
+### Nuova versione della soluzione MX Plan <a name="mx-new"></a>
 
 Se disponi della nuova versione del servizio, l’interfaccia visualizzata dovrebbe essere quella dell’immagine qui sotto. In caso contrario [torna al paragrafo precedente](./#procedura) e assicurati di aver verificato correttamente la tua versione attiva.  
 
@@ -86,7 +86,7 @@ Una volta che la modifica diventerà effettiva sarà possibile accedere all’ac
 
 - **da un client di posta compatibile**: in questo caso è necessario inserire la nuova password su tutti i dispositivi su cui è stato configurato l’account email. Potrebbe aprirsi automaticamente una finestra in cui ti verrà chiesto di inserire la nuova password. In caso contrario, consulta le nostre [guide di configurazione](../) disponibili online oppure contatta il produttore del client di posta o dell’applicazione utilizzata.
 
-### Vecchia versione della soluzione MX Plan
+### Vecchia versione della soluzione MX Plan <a name="mx-legacy"></a>
 
 Se disponi della vecchia versione del servizio, l’interfaccia visualizzata dovrebbe essere quella dell’immagine qui sotto. In caso contrario [torna al paragrafo precedente](./#procedura) e assicurati di aver verificato correttamente la tua versione attiva. 
 

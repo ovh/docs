@@ -50,7 +50,7 @@ Em primeiro lugar, verifique a segurança do seu computador Windows, MacOS ou Li
 
 ### Etapa 2: proteja a sua Área de Cliente OVHcloud
 
-Para proteger a sua conta de cliente, siga as instruções deste [guia](../../customer/saber_tudo_sobre_o_identificador_de_cliente/).
+Para proteger a sua conta de cliente, [ative a dupla autenticação](../../customer/proteger-a-sua-conta-com-uma-2FA/) e siga as instruções deste [guia](../../customer/saber_tudo_sobre_o_identificador_de_cliente/).
 
 Atualize as [informações da sua conta de cliente](../../customer/saber_tudo_sobre_o_identificador_de_cliente/#modificar-as-minhas-informacoes-pessoais) e adicione um **e-mail de segurança**.<br>
 Em caso de perda dos seus dados de acesso e/ou de indisponibilidade do endereço de e-mail principal da sua conta de cliente OVHcloud, ser-nos-á indispensável um e-mail de SOS ou informações pessoais atualizadas para o ajudar a encontrar o acesso às suas soluções.
@@ -78,8 +78,8 @@ Os e-mails de phishing também constituem uma ameaça para a segurança do seu s
 Em caso de não renovação dos seus serviços, a OVHcloud tem a obrigação legal, no final da subscrição, de eliminar integralmente os dados associados à sua oferta de alojamento, bem como a totalidade dos seus backups. Enviamos mensagens de aviso aos nossos clientes para lhes recordar os prazos de renovação.<br>
 No entanto, estes e-mails de relance podem chegar aos seus spams, ou o endereço de e-mail associado à sua conta OVHcloud pode estar errado ou já não estar disponível.
 
-Especialmente se não tiver a possibilidade de efetuar backups regulares e o seu site tiver um lugar preponderante na sua atividade profissional, [ative a renovação automática](../../billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#aceder-a-parametrizacao-dos-seus-servicos) no conjunto dos seus serviços OVHcloud.<br>
-Além disso, recomendamos que verifique regularmente a validade dos métodos de pagamento que registou.
+Se o seu site tem um lugar preponderante na sua atividade profissional, [ative a renovação automática](../../billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#aceder-a-parametrizacao-dos-seus-servicos) no conjunto dos seus serviços OVHcloud.<br>
+Além disso, recomendamos que verifique regularmente a **validade dos métodos de pagamento** que registou.
 
 ### Etapa 6: verifique que o seu site está atualizado
 
@@ -89,13 +89,13 @@ Também pode usar uma versão recente da [linguagem PHP](../configurar_o_php_num
 
 ### Etapa 7: ative o https
 
-Implemente a ligação encriptada ao seu site através do protocolo **HTTPS**, seguindo este [guia](../ativar-https-website-certificado-ssl/).
+Implemente a ligação encriptada ao seu website através do protocolo **HTTPS** seguindo este [guia](../ativar-https-website-certificado-ssl/). A ativação deste protocolo vai permitir encriptar o conjunto das informações que transitam pelo seu website (nomeadamente as introduções efetuadas pelos seus utilizadores nos seus formulários).
 
 ### Etapa 8: proteja os seus formulários
 
 Os formulários dos websites são alvos privilegiados dos hackers/spammers. Proteja os seus formulários de qualquer ataque implementando plugins do tipo **"CAPTCHA"**.
 
-### Etapa 9: Implemente um plugin de segurança no seu site
+### Etapa 9: implemente um plugin de segurança no seu site
 
 Adicione ao seu site um plugin de segurança recomendado pelo editor do CMS:
 

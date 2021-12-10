@@ -6,7 +6,7 @@ section: Website optimisation
 order: 1
 ---
 
-**Last updated 26th November 2021**
+**Last updated 10th December 2021**
 
 ## Objective
 
@@ -47,7 +47,7 @@ First, check the security of your Windows, Mac or Linux desktop:
 
 ### Step 2 - Secure the access to your OVHcloud Control Panel
 
-To secure your customer account, follow the instructions in this [guide](../../customer/all-about-your-username/).
+To secure your customer account, [enable two-factor authentication](../../customer/secure-account-with-2FA/) and follow the instructions of this [guide](../../customer/all-about-your-username/).
 
 Remember to update your [customer account informations](../../customer/all-about-your-username/#changing-your-personal-details) and to add a backup **email** to your account.<br>
 In the event of your login details being lost and/or the primary email address for your OVHcloud customer account being unavailable, a backup email or updated personal information will be essential to help you regain access to your solutions.
@@ -75,8 +75,8 @@ Phishing emails are a security threat to your website because they can contain o
 If your services are not renewed, OVHcloud has the legal obligation to delete all data associated with your hosting plan, as well as all of their backups, when your subscription expires. We systemically send follow-up e-mails to our customers reminding them of their renewal dates before the end of their actual subscription.<br>
 However, these follow-up emails may arrive in your spam or you may have the email address associated with your OVHcloud account may have been typed incorrectly by mistake or may no longer be available.
 
-Especially if you don't regurlaly back up your data and if your website represents an important part of your business activity, [enable automatic renewal](../../billing/how-to-use-automatic-renewal-at-ovh/#access-your-services-settings) for all of your OVHcloud services.<br>
-We also stronly recommend you to regularly check the **validity of the default payment method** you registered.
+If your website plays a major role in your professional activity, [enable automatic renewal](../../billing/how-to-use-automatic-renewal-at-ovh/#access-your-services-settings) across all of your OVHcloud services.<br>
+We also recommend checking regularly the **validity of the payment methods** you have registered.
 
 ### Step 6 - Check that your website is up to date
 
@@ -86,7 +86,7 @@ Also remember to use a recent version of the [PHP programming language](../how_t
 
 ### Step 7 - Activate https
 
-Set up an encrypted connection to your website via the **HTTPS** protocol by using this [guide](../activate-https-website-ssl/).
+Set up an encrypted connection to your website using the **HTTPS** protocol by following this [guide](../activate-https-website-ssl/). By enabling this protocol, you can encrypt all of the information sent via your website (particularly data entered by your users on its forms).
 
 ### Step 8 - Protect your forms
 

@@ -10,7 +10,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 24.11.2021**
+**Letzte Aktualisierung am 10.12.2021**
 
 ## Ziel
 
@@ -51,9 +51,9 @@ Darüber hinaus kann das an Bedeutung zunehmende Phänomen "[Ransomware](https:/
 
 ### Schritt 2: Sichern Sie Ihr OVHcloud Kundencenter
 
-Um Ihren Kunden-Account abzusichern, folgen Sie den Anweisungen in [dieser Anleitung](../../customer/alles_uber_ihre_ovh_kundenkennung/).
+Um Ihren Kunden-Account zu schützen, aktivieren Sie die [Zwei-Faktor-Authentifizierung](.../../customer/Account-mit-2FA-absichern/) und folgen Sie den Anweisungen in dieser [Anleitung](../../customer/alles_uber_ihre_ovh_kundenkennung/).
 
-Denken Sie daran, [Ihre Account-Informationen](../customer/alles_uber_ihre_ovh_kundenkennung/#personliche-daten-im-account-verwalten_1) zu aktualisieren und eine **Zweit-E-Mail-Adresse** hinzuzufügen.<br>
+Denken Sie daran, [Ihre Account-Informationen](../../customer/customer/alles_uber_ihre_ovh_kundenkennung/#personliche-daten-im-account-verwalten_1) zu aktualisieren und eine **Zweit-E-Mail-Adresse** hinzuzufügen.<br>
 Wenn Ihre Zugangsdaten verloren gehen und/oder die Haupt-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts nicht verfügbar ist, sind eine Backup-E-Mail-Adresse sowie aktuelle persönliche Daten wichtig, um Ihnen schnell weiterhelfen zu können.
 
 ### Schritt 3: Führen Sie regelmäßig Sicherungen Ihrer Seite durch <a name="backup"></a>
@@ -79,8 +79,8 @@ Phishing-E-Mails stellen ebenfalls eine Bedrohung für die Sicherheit Ihrer Webs
 Wenn Ihre Dienste nicht verlängert werden, ist OVHcloud gesetzlich verpflichtet, nach Ablauf Ihres Abonnements alle Daten aus Ihrem Hosting-Angebot sowie alle zugehörigen Backups vollständig zu löschen. Wir senden unseren Kunden Ablaufbenachrichtigungen, um sie an die Verlängerungsfristen zu erinnern.<br>
 Diese E-Mails können jedoch in Ihren Spam-Ordnern eingehen, oder die primäre E-Mail-Adresse Ihres OVHcloud Kunden-Accounts ist möglicherweise unverfügbar.
 
-[Aktivieren Sie die automatische Verlängerung](../../billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste.Dies ist besonders dann zu empfehlen, wenn Ihre Website ein wichtiger Teil Ihrer Geschäftstätigkeit ist und nicht regelmäßig gesichert wird. 
-<br>Wir empfehlen Ihnen auch, die Gültigkeit der von Ihnen hinterlegten Zahlungsmittel regelmäßig zu überprüfen.
+Wenn Ihre Website ein wichtiger Teil Ihrer Geschäftstätigkeiten ist, [aktivieren Sie die automatische Verlängerung](../../billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste.<br>
+Wir empfehlen Ihnen auch, die **Gültigkeit der von Ihnen hinterlegten Zahlungsmittel** regelmäßig zu überprüfen.
 
 ### Schritt 6: Überprüfen Sie, dass Ihre Website aktuell ist
 
@@ -90,7 +90,7 @@ Denken Sie auch daran, eine aktuelle Version von [PHP](../konfiguration_von_php_
 
 ### Schritt 7: HTTPS aktivieren
 
-Ermöglichen Sie die verschlüsselte Verbindung zu Ihrer Website über das **HTTPS**-Protokoll gemäß [dieser Anleitung](../website-umstellen-https-ssl/).
+Ermöglichen Sie die verschlüsselte Verbindung zu Ihrer Website über das Protokoll **HTTPS** gemäß dieser [Anleitung] (../website-umstellen-https-ssl/). Die Aktivierung dieses Protokolls erlaubt es, den Datenaustausch über Ihre Website zu verschlüsseln (insbesondere Angaben, die Benutzer in Formulare eingeben).
 
 ### Schritt 8: Schützen Sie Ihre Formulare
 

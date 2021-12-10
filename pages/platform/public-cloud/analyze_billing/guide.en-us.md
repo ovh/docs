@@ -38,9 +38,9 @@ Each cloud project has its own bill, which totals up all of the resources billed
 
 This example might provide a clear explanation of how this works.
 
-* a user launches a B2-15 instance on the 04th day of the month, at 09:40
-* on the 08th day of the month at 10:00, they add 250GB additional volume (Classic Volume)
-* they delete all of it on the 12th day of the same month at 16:30, once they have finished what they needed to do with these resources
+- A user launches a B2-15 instance on the 04th day of the month, at 09:40.
+- On the 08th day of the month at 10:00, they add 250GB additional volume (Classic Volume).
+- They delete all of it on the 12th day of the same month at 16:30, once they have finished what they needed to do with these resources.
 
 For the instance, from the 04th day of the month at 09:40 until the 12th of the month at 16:30, there are 176 hours of resource usage. They are billed at 0.111 euros per hour.
 
@@ -48,10 +48,10 @@ For the storage, from the 08th day of the month at 10:00 until the 12th of the m
 
 At the end of the month, the bill will total up to:
 
-* 176 x 0.111
-* 103 x 250 x 0.0000555556
+- 176 x 0.111
+- 103 x 250 x 0.0000555556
 
-ie. €20.97.
+i.e. €20.97.
 
 > [!primary]
 >
@@ -68,8 +68,8 @@ To view the bills for a project, go to the `Public Cloud`{.action}(1) tab in the
 
 In this screen, you can:
 
-* view details on the resources by expanding each section
-* browse logs by going to the previous or next month
+- View details on the resources by expanding each section.
+- Browse logs by going to the previous or next month.
 
 ### View your current resource usage
 
@@ -166,8 +166,8 @@ Both snapshots and images of instances (excluding the catalogue of images suppli
 
 Two elements are billed for object storage:
 
-* the storage of the objects themselves, i.e. the volume actually used in GB
-* outgoing traffic, i.e. the volume of data sent from the service, contained in HTTP body
+- The storage of the objects themselves, i.e. the volume actually used in GB.
+- Outgoing traffic, i.e. the volume of data sent from the service, contained in HTTP body.
 
 > [!primary]
 >
@@ -185,9 +185,9 @@ Two elements are billed for object storage:
 
 Three elements are billed for archive storage:
 
-* the storage of the archives themselves, i.e. the volume actually used in GB
-* incoming traffic, i.e. the volume of data sent to the service, contained in HTTP body
-* outgoing traffic, i.e. the volume of data sent from the service, contained in HTTP body
+- The storage of the archives themselves, i.e. the volume actually used in GB.
+- Incoming traffic, i.e. the volume of data sent to the service, contained in HTTP body.
+- Outgoing traffic, i.e. the volume of data sent from the service, contained in HTTP body.
 
 > [!primary]
 >
