@@ -6,7 +6,7 @@ section: Optimiser son site
 order: 1
 ---
 
-**Dernière mise à jour le 26/11/2021**
+**Dernière mise à jour le 10/12/2021**
 
 ## Objectif
 
