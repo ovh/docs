@@ -193,7 +193,7 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Prefetch** : Anticipez le chargement de la ressource suivante. Préchargez-la automatiquement dans le cache CDN grâce au *header link* de votre site web. Ce mécanisme est principalement utilisé pour charger les CSS, JavaScript, images, favicons ou encore des polices web qui sont requis par le thème du site web. 
 
-Dans l'exemple, ci-dessous, lorsque vous êtes sur la page courante affichant « Hello », une sous-requète déclenche le pré-chargement de la ressource `/cache/style.css` .  
+	Dans l'exemple, ci-dessous, lorsque vous êtes sur la page courante affichant « Hello », une sous-requète déclenche le pré-chargement de la ressource `/cache/style.css` .  
 
 	```	
 	<?php
@@ -209,8 +209,6 @@ Dans l'exemple, ci-dessous, lorsque vous êtes sur la page courante affichant «
 Depuis l'onglet Multisite, cliquez sur le bouton `...`{.action} à droite de l'entrée multisite puis sur `Purger le CDN`{.action}. 
 
 ![CDN](images/manage_CDNadvanced_01.png){.thumbnail}
-
-**Query String** : Gestion de la mise en cache de contenu, basée sur les paramètres (aussi appelés *Query String*) de la requête URL. En fonction de votre configuration, choisissez le comportement du cache CDN :
 
 - **Query String** : Gestion de la mise en cache de contenu, basée sur les paramètres (aussi appelés *Query String*) de la requête URL. En fonction de votre configuration, choisissez le comportement du cache CDN:
 	- *Désactivé* : La ressource est mise en cache avec ses paramètres non triés. Ce qui va créer, par exemple, 2 itérations dans le cache du CDN pour 2 URL ayant les mêmes paramètres dans un ordre différent.
