@@ -9,7 +9,7 @@ section: Utilisation avancée
 
 ## Objectif
 
-Les politiques anti-spam sont de plus en plus strictes. Afin de fluidifier vos envois d'e-mails et que vos destinataires les reçoivent sans blocage, des outils de sécurité, des paramétrages, sont nécessaires pour authentifier vos messages et valider leur contenu.
+Les politiques anti-spam sont de plus en plus strictes. Afin de fluidifier vos envois d'e-mails et que vos destinataires les reçoivent sans blocage des outils de sécurité, des paramétrages sont nécessaires pour authentifier vos messages et valider leur contenu.
 
 **Ce guide vous donne quelques conseils pour optimiser l'envoi de vos e-mails.**
 
@@ -26,7 +26,7 @@ Les politiques anti-spam sont de plus en plus strictes. Afin de fluidifier vos e
 
 ### Configurer le champ SPF
 
-Dans le cas d'une infrastructure dédiée (serveur dédié, VPS, instance Public Cloud ou Private Cloud), le champ SPF optimal se présente sous la forme « `v=spf1 ip4:ipv4_du_serveur ~all` ».
+Dans le cas d'une infrastructure dédiée (serveur dédié, VPS, instance Public Cloud ou Hosted Private Cloud), le champ SPF optimal se présente sous la forme :  `v=spf1 ip4:ipv4_du_serveur ~all`.
 
 > [!primary]
 >
@@ -34,41 +34,41 @@ Dans le cas d'une infrastructure dédiée (serveur dédié, VPS, instance Public
 >
 > - `+` : accepter
 > - `-` : ne pas accepter
-> - `~` : échec doux (*softfail*)
+> - `~` : échec doux (*soft fail*)
 > - `?` : neutre
 >
 
 Pour plus d'informations sur la syntaxe du champ SPF, référez-vous au lien suivant : <http://www.open-spf.org/>.
 
-Vous pouvez bien entendu aller plus loin, en configurant le champ SPF d'un domaine bien spécifique ou en spécifiant une IPv6. Pour savoir comment procéder, consultez notre guide sur [ajouter un champ SPF](https://docs.ovh.com/ca/fr/domains/le-champ-spf/).
+Vous pouvez bien entendu aller plus loin, en configurant le champ SPF d'un domaine bien spécifique ou en spécifiant une IPv6. Pour savoir comment procéder, consultez notre guide sur comment [ajouter un champ SPF](https://docs.ovh.com/ca/fr/domains/le-champ-spf/).
 
 ### Configurer le champ DKIM
 
 La configuration d'un champ DKIM (DomainKeys Identified Mail) apporte une protection supplémentaire pour éviter que vos e-mails ne soient marqués comme spam. De manière simplifiée, le DKIM est une signature permettant d'authentifier le domaine expéditeur.
 
-Cette authentification s'effectue par une clef DKIM à ajouter dans votre zone DNS. Vous trouverez différents générateurs de clefs DKIM, dont : <http://dkimcore.org/tools/keys.html>. N'hésitez pas à bien suivre les indications fournies sur le site de génération que vous choisirez.
+Cette authentification s'effectue par une clef DKIM à ajouter dans votre zone DNS. Vous trouverez différents générateurs de clefs DKIM, dont <http://dkimcore.org/tools/keys.html>. Veillez à bien suivre les indications fournies sur le site du générateur de votre choix.
 
 ### Configurer le *reverse IP*
 
 Toujours dans le but d'optimiser l'envoi et de réduire les risques de blocage de vos e-mails, un *reverse IP* doit être configuré avec votre nom de domaine.
 
-Pour commencer, vous devez d'abord créer un enregistrement A dans la zone DNS de votre domaine avec l'adresse IP de votre serveur comme cible.
+Vous devez tout d'abord créer un enregistrement A dans la zone DNS de votre domaine avec l'adresse IP de votre serveur comme cible.
 
-Si vos Serveurs DNS sont gérés par OVHcloud, veuillez consulter ce [guide](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/#acceder-a-la-gestion-dune-zone-dns-ovhcloud).
+Si vos serveurs DNS sont gérés par OVHcloud, veuillez consulter ce [guide](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/#acceder-a-la-gestion-dune-zone-dns-ovhcloud).
 
 Une fois la zone DNS de votre nom de domaine modifiée, un temps de propagation de 24 heures maximum est nécessaire afin que les modifications soient effectives.
 
 Une fois cela fait, ajoutez l'enregistrement PTR (également connu sous le nom de *reverse*) :
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, allez dans la section `Bare Metal Cloud`{.action}, puis cliquez sur la section `IP`{.action} en bas à gauche. 
+Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, rendez-vous dans l'onglet `Bare Metal Cloud`{.action}, puis cliquez sur la section `IP`{.action} en bas à gauche. 
 
 ![Reverse IP](images/ipsection.png)
 
-Dans le menu déroulant **“Service”**, sélectionnez un service avec une adresse IPv4 :
+Dans le menu déroulant **Service**, sélectionnez un service avec une adresse IPv4 :
 
 ![Reverse IP](images/servicedropmenu.png)
 
-Cliquez sur `...`{.action} dans la ligne correspondante puis sur `Modifier le reverse`{.action} :
+Cliquez sur le bouton `...`{.action} à droite de la ligne correspondante puis sur `Modifier le reverse`{.action} :
 
 ![Reverse IP](images/setreversedns.png)
 
@@ -84,25 +84,24 @@ Entrez votre nom de domaine dans la section `Reverse DNS` et cliquez sur `Valide
 >  - le *reverse* ne peut pas contenir de caractères majuscules
 >  - le *reverse* doit se terminer par un `.`
 >
-> Exemple : "MyDomain.ca" dans le champ *reverse* serait **"mydomain.ca."**
+> Exemple : « MyDomain.ca » dans le champ *reverse* serait **mydomain.ca.**
 >
 
 ### Cas spécifiques d'envois d'e-mails
 
 #### Vers un serveur Microsoft (Outlook, etc...)
  
-Microsoft utilise une politique de liste blanche. Cela signifie qu'au départ, tout se trouve sur une liste noire et une procédure spécifique est nécessaire pour faire valider votre serveur e-mail.
+Microsoft utilise une politique de liste blanche. Cela signifie qu'au départ, tout serveur se trouve sur une liste noire et une procédure spécifique est nécessaire pour faire valider votre serveur e-mail.
 
 Reportez-vous pour cela à la procédure suivante : <https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656>
 
 #### Vers un serveur Gmail
 
-L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire est chez Gmail. Voici un article de Google qui peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr).
-
+L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire est chez Gmail. Voici un article de Google qui peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr){.external}.
 
 ### Vérifier vos informations
 
-Il peut être intéressant d'utiliser un site comme [Mail Tester](http://www.mail-tester.com/) pour vérifier que tous vos paramétrages sont corrects.
+Il peut être intéressant d'utiliser un site comme [Mail Tester](http://www.mail-tester.com/) afin de vérifier que tous vos paramétrages sont corrects.
 
 ## Aller plus loin
 

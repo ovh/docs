@@ -5,7 +5,6 @@ excerpt: 'Find out how to send emails and limit the risk of them being marked as
 section: Advanced
 ---
 
-
 **Last updated 08th December 2021**
 
 ## Objective
@@ -28,11 +27,11 @@ We have provided you with this guide in order to help you with common tasks. How
 
 ### Configure the SPF record.
 
-If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Public or Private Cloud instance), the optimal SPF record is: `v=spf1 ip4:server_ipv4 ~all`. Please remember to replace 'server_ipv4' with your server's IPv4 address.
+If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Public Cloud instance or Hosted Private Cloud VM), the optimal SPF record is: `v=spf1 ip4:server_ipv4 ~all`. Please remember to replace 'server_ipv4' with your server's IPv4 address.
 
 > [!primary]
 >
-> The symbol before the **all** is very important:
+> The symbol before **all** is very important:
 >
 > - `+`: accept
 > - `-`: do not accept
@@ -99,11 +98,11 @@ To do this, please open a support request with Microsoft here: <https://support.
 
 #### To a Gmail server
 
-If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en).
+If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
 
 ### Check your information.
 
-You may want to use a website like [Mail Tester](http://www.mail-tester.com/) to check that all of your settings are correct.
+You may want to use a website like [Mail Tester](http://www.mail-tester.com/){.external} to check that all of your settings are correct.
 
 
 ## Go further
