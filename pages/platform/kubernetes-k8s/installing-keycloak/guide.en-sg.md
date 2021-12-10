@@ -48,7 +48,7 @@ What is Keycloak?
 
 __[Keycloak](https://www.keycloak.org/about)__ is an open source Identity and Access Management solution aimed at modern applications and services.  
 It makes it easy to secure applications and services with little to no code.  
-More information could be found here: [Official Keycloak documentation](https://www.keycloak.org/documentation.html)
+More information can be found here: [Official Keycloak documentation](https://www.keycloak.org/documentation.html)
 
 Why are we talking about OIDC and Keycloak?
 That's because, in this tutorial we want to:
@@ -73,7 +73,7 @@ You may need to adapt it to be able to deploy a functional Keycloak instance in 
 
 ### A cert-manager to enable HTTPS connection through Keycloak
 
-* More information could be found here: [Official cert-manager documentation](https://cert-manager.io/docs/)
+* More information can be found here: [Official cert-manager documentation](https://cert-manager.io/docs/)
 * Helm chart description: [cert-manager Helm chart](https://artifacthub.io/packages/helm/cert-manager/cert-manager)
 * Helm Chart used for the deployment: `jetstack/cert-manager`
 
@@ -147,7 +147,7 @@ You can use [neat](https://github.com/itaysk/kubectl-neat) kubectl plugin in ord
 
 ### An Ingress Nginx to publicly expose Keycloak
 
-* More information could be found here: [Official ingress-nginx documentation](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/)
+* More information can be found here: [Official ingress-nginx documentation](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/)
 * Helm chart description: [ingress-nginx Helm chart](https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx)
 * Helm Chart used for the deployment: `ingress-nginx/ingress-nginx`
 
@@ -229,7 +229,7 @@ Address: 135.125.84.194
 
 ### How to configure and deploy the Codecentric Keycloak provider?
 
-* More information could be found here: [Official Keycloak documentation](https://www.keycloak.org/documentation.html)
+* More information can be found here: [Official Keycloak documentation](https://www.keycloak.org/documentation.html)
 * Helm chart description: [codecentric Keycloak Helm chart](https://artifacthub.io/packages/helm/codecentric/keycloak)
 * Helm Chart used for the deployment: `codecentric/keycloak`
 
