@@ -6,7 +6,7 @@ section: Cisco ASA Firewall
 order: 01
 ---
 
-**Last updated 08th December 2021**
+**Last updated 10th December 2021**
 
 ## Summary
 
