@@ -49,7 +49,7 @@ First, check the security of your Windows, Mac or Linux desktop:
 
 To secure your customer account, [enable two-factor authentication](../../customer/secure-account-with-2FA/) and follow the instructions of this [guide](../../customer/all-about-your-username/).
 
-Remember to update your [customer account information](../../customer/all-about-your-username/#changing-your-personal-details) and to add a backup **email** to your account.<br>
+Remember to update your [customer account information](../../customer/all-about-your-username/#changing-your-personal-details) and to add a **backup email** to your account.<br>
 In the event of your login details being lost and/or the primary email address for your OVHcloud customer account being unavailable, a backup email as well as updated personal information will be essential to help you regain access to your services.
 
 ### Step 3 - Back up your website regularly <a name="backup"></a>
@@ -84,7 +84,7 @@ Check your website updates regularly, following the instructions in this [guide]
 
 Also remember to use a recent version of the [PHP programming language](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/) on your Web Hosting plan.
 
-### Step 7 - Activate https
+### Step 7 - Activate HTTPS
 
 Set up an encrypted connection to your website using the **HTTPS** protocol by following this [guide](../activate-https-website-ssl/). By enabling this protocol, you can encrypt all of the information sent via your website (particularly data entered by your users on its forms).
 

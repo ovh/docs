@@ -51,7 +51,7 @@ Darüber hinaus kann das an Bedeutung zunehmende Phänomen "[Ransomware](https:/
 
 ### Schritt 2: Sichern Sie Ihr OVHcloud Kundencenter
 
-Um Ihren Kundenaccount zu schützen, aktivieren Sie [Zwei-Faktor-Authentifizierung aktivieren](.../../customer/Account-mit-2FA-absichern/) und folgen Sie den Anweisungen in dieser [Anleitung](../../customer/alles_uber_ihre_ovh_kundenkennung/).
+Um Ihren Kunden-Account zu schützen, aktivieren Sie die [Zwei-Faktor-Authentifizierung](.../../customer/Account-mit-2FA-absichern/) und folgen Sie den Anweisungen in dieser [Anleitung](../../customer/alles_uber_ihre_ovh_kundenkennung/).
 
 Denken Sie daran, [Ihre Account-Informationen](../../customer/customer/alles_uber_ihre_ovh_kundenkennung/#personliche-daten-im-account-verwalten_1) zu aktualisieren und eine **Zweit-E-Mail-Adresse** hinzuzufügen.<br>
 Wenn Ihre Zugangsdaten verloren gehen und/oder die Haupt-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts nicht verfügbar ist, sind eine Backup-E-Mail-Adresse sowie aktuelle persönliche Daten wichtig, um Ihnen schnell weiterhelfen zu können.
@@ -79,7 +79,7 @@ Phishing-E-Mails stellen ebenfalls eine Bedrohung für die Sicherheit Ihrer Webs
 Wenn Ihre Dienste nicht verlängert werden, ist OVHcloud gesetzlich verpflichtet, nach Ablauf Ihres Abonnements alle Daten aus Ihrem Hosting-Angebot sowie alle zugehörigen Backups vollständig zu löschen. Wir senden unseren Kunden Ablaufbenachrichtigungen, um sie an die Verlängerungsfristen zu erinnern.<br>
 Diese E-Mails können jedoch in Ihren Spam-Ordnern eingehen, oder die primäre E-Mail-Adresse Ihres OVHcloud Kunden-Accounts ist möglicherweise unverfügbar.
 
-Wenn Ihre Website einen herausragenden Platz in Ihrer beruflichen Tätigkeit hat, [aktivieren Sie die automatische Verlängerung](../../billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste<br>
+Wenn Ihre Website ein wichtiger Teil Ihrer Geschäftstätigkeiten ist, [aktivieren Sie die automatische Verlängerung](../../billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste.<br>
 Wir empfehlen Ihnen auch, die **Gültigkeit der von Ihnen hinterlegten Zahlungsmittel** regelmäßig zu überprüfen.
 
 ### Schritt 6: Überprüfen Sie, dass Ihre Website aktuell ist
@@ -90,7 +90,7 @@ Denken Sie auch daran, eine aktuelle Version von [PHP](../konfiguration_von_php_
 
 ### Schritt 7: HTTPS aktivieren
 
-Stellen Sie die verschlüsselte Verbindung zu Ihrer Website über das Protokoll **HTTPS** gemäß dieser [Anleitung] (../website-umstellen-https-ssl/) her. Die Aktivierung dieses Protokolls erlaubt es, alle Informationen, die über Ihre Website laufen, zu verschlüsseln (insbesondere die Angaben, die Ihre Benutzer in ihren Formularen eingeben).
+Ermöglichen Sie die verschlüsselte Verbindung zu Ihrer Website über das Protokoll **HTTPS** gemäß dieser [Anleitung] (../website-umstellen-https-ssl/). Die Aktivierung dieses Protokolls erlaubt es, den Datenaustausch über Ihre Website zu verschlüsseln (insbesondere Angaben, die Benutzer in Formulare eingeben).
 
 ### Schritt 8: Schützen Sie Ihre Formulare
 
