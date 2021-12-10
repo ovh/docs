@@ -28,7 +28,7 @@ We have provided you with this guide in order to help you with common tasks. How
 
 ### Configure the SPF record.
 
-If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Public or Private Cloud instance), the optimal SPF record is: v=spf1 ip4:server_ipv4 ~all. Please remember to replace 'server_ipv4' with your server's IPv4 address.
+If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Public or Private Cloud instance), the optimal SPF record is: `v=spf1 ip4:server_ipv4 ~all`. Please remember to replace 'server_ipv4' with your server's IPv4 address.
 
 > [!primary]
 >
@@ -46,7 +46,7 @@ You can go even further by configuring the SPF record of a specific domain, or b
 
 ### Configure the DKIM record.
 
-By configuring the DKIM (DomainKeys Identified Mail) record, you add extra protection to stop your emails from getting marked as spam. In simple terms, the DKIM is a signature that enables the sender’s domain to be authenticated.
+By configuring the DKIM (DomainKeys Identified Mail) record, you add extra protection to prevent your emails from getting marked as spam. In simple terms, the DKIM is a signature that enables the sender’s domain to be authenticated.
 
 The authentication is carried out by a DKIM key that needs to be added in your DNS zone. There are different generators for DKIM keys, including: <http://dkimcore.org/tools/keys.html>. Please follow the instructions listed on your chosen generator website.
 
@@ -66,7 +66,7 @@ In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fro
 
 ![Reverse IP](images/ipsection.png)
 
-In the **“Service”** drop-down menu, select an IPv4 address:
+In the **“Service”** drop-down menu, select a service with an IPv4 address:
 
 ![Reverse IP](images/servicedropmenu.png)
 
@@ -74,12 +74,12 @@ Click on `...`{.action} in the relevant row and select `Modify the reverse path`
 
 ![Reverse IP](images/setreversedns.png)
 
-Enter your domain name on the Reverse DNS section and click on `Confirm`{.action}
+Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.action}
 
 ![Reverse IP](images/enterreverse.png)
 
 > [!primary]
-> When you enter your domain name in the reverse, it double checks immediately if the A Record is referring back to the same IP. This is used in anti-spam procedures, so your A Record must be  valid and propagated. There are certain rules to follow while entering the reverse:
+> When you enter your domain name in the reverse, it double checks immediately if the A Record is referring back to the same IP. This is used in anti-spam procedures, so your A Record must be valid and propagated. There are certain rules to follow while entering the reverse:
 > 
 >  - it cannot start with a `-`
 >  - it cannot be longer than 80 characters

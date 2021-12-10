@@ -28,7 +28,7 @@ We have provided you with this guide in order to help you with common tasks. How
 
 ### Configure the SPF record.
 
-If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Public or Private Cloud instance), the optimal SPF record is: v=spf1 ip4:server_ipv4 ~all. Please remember to replace 'server_ipv4' with your server's IPv4 address.
+If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Public or Private Cloud instance), the optimal SPF record is: `v=spf1 ip4:server_ipv4 ~all`. Please remember to replace 'server_ipv4' with your server's IPv4 address.
 
 > [!primary]
 >
@@ -66,7 +66,7 @@ In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fro
 
 ![Reverse IP](images/ipsection.png)
 
-In the **“Service”** drop-down menu, select an IPv4 address:
+In the **“Service”** drop-down menu, select a service with an IPv4 address:
 
 ![Reverse IP](images/servicedropmenu.png)
 
@@ -74,7 +74,7 @@ Click on `...`{.action} in the relevant row and select `Modify the reverse path`
 
 ![Reverse IP](images/setreversedns.png)
 
-Enter your domain name on the Reverse DNS section and click on `Confirm`{.action}
+Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.action}
 
 ![Reverse IP](images/enterreverse.png)
 
