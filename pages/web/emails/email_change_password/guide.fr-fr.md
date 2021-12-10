@@ -33,9 +33,9 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
 |![email](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement ».|![email](images/mxplan-password-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé ».|
-|Poursuivre vers « [Version historique de l'offre MX Plan](./#version-historique-de-loffre-mx-plan_2) ».|Poursuivre vers « [Nouvelle version de l'offre MX Plan](./#nouvelle-version-de-loffre-mx-plan) ».|
+|Poursuivre vers « [Version historique de l'offre MX Plan](#mx-legacy) ».|Poursuivre vers « [Nouvelle version de l'offre MX Plan](#mx-new) ».|
 
-### Nouvelle version de l'offre MX Plan
+### Nouvelle version de l'offre MX Plan <a name="mx-new"></a>
 
 Vous possédez la nouvelle version de l'offre MX Plan. Voici l'affichage que vous devez obtenir. Si ce n'est pas le cas, assurez-vous d'avoir suivi le bon cheminement [en vous reportant aux informations ci-dessus](./#en-pratique).  
 
@@ -89,9 +89,7 @@ Sur la nouvelle fenêtre qui apparaît, commencez par renseigner votre mot de pa
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
 
-
-
-### Version historique de l'offre MX Plan
+### Version historique de l'offre MX Plan  <a name="mx-legacy"></a>
 
 Vous possédez la version historique de l'offre MX Plan. Voici l'affichage que vous devez obtenir. Si ce n'est pas le cas, assurez-vous d'avoir suivi le bon cheminement [en vous reportant aux informations ci-dessus](./#en-pratique). 
 
