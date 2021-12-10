@@ -113,7 +113,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 There are two ways to configure your network depending on the operating system installed on your server:
 
-- **for Debian 8 and earlier, Ubuntu 16.04 and earlier**: use the [method based on the *interfaces* files](#interfaces)
+- **for Debian 10,11 and earlier, Ubuntu 16.04 and earlier**: use the [method based on the *interfaces* files](#interfaces)
 
 - **for Debian 9, Ubuntu 17.04 and later**: use the [method based on the *Netplan* configuration](#netplan)
 
