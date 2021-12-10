@@ -84,7 +84,7 @@ Check your website updates regularly, following the instructions in this [guide]
 
 Also remember to use a recent version of the [PHP programming language](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/) on your Web Hosting plan.
 
-### Step 7 - Activate https
+### Step 7 - Activate HTTPS
 
 Set up an encrypted connection to your website using the **HTTPS** protocol by following this [guide](../activate-https-website-ssl/). By enabling this protocol, you can encrypt all of the information sent via your website (particularly data entered by your users on its forms).
 
