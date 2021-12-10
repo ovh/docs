@@ -50,7 +50,7 @@ Per prima cosa verifica la sicurezza della tua postazione Windows, Mac o Linux:
 
 ### Step 2: proteggi il tuo Spazio Cliente OVHcloud
 
-Per proteggere il tuo account cliente, segui le istruzioni di questa [guida](../../customer/tutto_sullidentificativo_cliente_ovh/).
+Per rendere sicuro il tuo account cliente, [attiva la doppia autenticazione](../../customer/proteggi_il_tuo_account_con_2FA/) e segui le istruzioni di questa [guida](.../../customer/tutto_sullidentificativo_cliente_ovh/).
 
 In particolare, aggiorna le [informazioni del tuo account cliente](../../customer/tutto_sullidentificativo_cliente_ovh/#modifica-le-tue-informazioni-personali) e aggiungi un **email di recupero**.<br>
 In caso di perdita delle credenziali e/o indisponibilità dell'indirizzo email principale dell'account cliente OVHcloud, per aiutarti a trovare il tuo servizio è necessario un'email di recupero o informazioni personali aggiornate.
@@ -78,8 +78,8 @@ Le email di phishing rappresentano una minaccia per la sicurezza del tuo sito, i
 In caso di mancato rinnovo dei servizi, OVHcloud ha l'obbligo legale, alla scadenza del tuo abbonamento, di eliminare integralmente i dati associati alla tua offerta di hosting e tutti i loro backup. Invitiamo i nostri clienti a ricordare i termini di rinnovo.<br>
 ma è possibile che le email di recupero arrivino nello spam o l'indirizzo email associato all'account OVHcloud possa essere errato o non essere più disponibile.
 
-Specialmente se il tuo sito non ha la possibilità di effettuare backup regolari e occupa una posizione preminente nella tua attività professionale, [attiva il rinnovo automatico](../../billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#accedere-alle-impostazioni-dei-servizi) su tutti i tuoi servizi.<br>
-Ti consigliamo inoltre di verificare regolarmente la validità dei metodi di pagamento salvati.
+Se il tuo sito occupa un posto preminente nella tua attività professionale, [attiva il rinnovo automatico](../../billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#accedere-alle-impostazioni-dei-servizi) su tutti i tuoi servizi OVHcloud.<br>
+Ti consigliamo inoltre di verificare regolarmente la **validità dei metodi di pagamento** registrati.
 
 ### Step 6: verifica che il tuo sito sia aggiornato
 
@@ -89,7 +89,7 @@ Utilizza anche una versione recente del [linguaggio PHP](../configura_php_sul_tu
 
 ### Step 7: attiva l'https
 
-Attiva la connessione criptata al tuo sito tramite il protocollo **HTTPS** seguendo questa [guida](../attivare-https-su-sito-internet-tramite-certificato-ssl/).
+Attiva la connessione criptata al tuo sito tramite il protocollo **HTTPS**, seguendo questa [guida](../attivare-https-su-sito-internet-tramite-certificato-ssl/). L'attivazione di questo protocollo permetterà di cifrare l'insieme delle informazioni che transitano sul tuo sito web (in particolare le digitazioni effettuate dai tuoi utenti sui suoi formulari).
 
 ### Step 8: proteggi i tuoi moduli
 

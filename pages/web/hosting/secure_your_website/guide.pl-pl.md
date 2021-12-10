@@ -50,7 +50,7 @@ Sprawdź bezpieczeństwo komputera Windows, Mac lub Linux:
 
 ### Etap 2: zabezpiecz swój panel klienta OVHcloud
 
-Aby zabezpieczyć Twoje konto klienta, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](../../customer/identyfikator_klienta/).
+Aby zabezpieczyć Twoje konto klienta, [włącz weryfikację dwuetapową](../../customer/zabezpieczenie-konta-za-pomoca-2FA/) i postępuj zgodnie z instrukcjami zawartymi w tym przewodniku](../../customer/identyfikator_klienta/).
 
 Pamiętaj, aby zaktualizować [dane przypisane do Twojego konta klienta](../../customer/identyfikator_klienta/#jak-zarzadzac-danymi-osobowymi_1) i dodać do niego zapasowy **e-mail**.<br>
 W przypadku utraty danych do logowania i/lub niedostępności głównego adresu e-mail przypisanego do Twojego konta klienta OVHcloud, potrzebujemy wiadomości e-mail zapasowej lub aktualnych danych osobowych, które pomogą Ci w znalezieniu dostępu do Twoich rozwiązań.
@@ -78,8 +78,8 @@ Wiadomości typu phishing stanowią zagrożenie dla bezpieczeństwa Twojej stron
 W przypadku nieodnowienia Twoich usług, OVHcloud ma prawny obowiązek, w dniu wygaśnięcia Twojego abonamentu, usunięcia w całości danych związanych z Twoją usługą hostingową oraz wszystkich kopii zapasowych. Wysyłamy do naszych klientów przypomnienia o harmonogramie ich odnowienia.<br>
 E-maile ożywienia mogą pojawić się w Twojej spamie lub adres e-mail powiązany z Twoim kontem OVHcloud może być nieprawidłowy lub nie może być już dostępny.
 
-Zwłaszcza jeśli nie masz możliwości wykonywania regularnych kopii zapasowych i Twoja strona WWW ma duże znaczenie dla Twojej działalności zawodowej, [włącz automatyczne](../../billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#uzyskiwanie-dostepu-do-konfiguracji-uslug) odnawianie wszystkich usług OVHcloud.<br>
-Zalecamy również regularne sprawdzanie ważności zarejestrowanych sposobów płatności.
+Jeśli Twoja strona WWW ma duże znaczenie dla Twojej działalności zawodowej, [włącz automatyczne odnawianie](../../billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#uzyskiwanie-dostepu-do-konfiguracji-uslug) dla wszystkich Twoich usług OVHcloud<br>
+Zalecamy również regularne sprawdzanie **ważności zarejestrowanych sposobów płatności**.
 
 ### Etap 6: sprawdź, czy Twoja strona jest aktualna
 
@@ -89,7 +89,7 @@ Pamiętaj, aby na Twoim hostingu zainstalować najnowszą wersję [języka PHP](
 
 ### Etap 7: włącz https
 
-Uruchom szyfrowane połączenie ze stroną WWW za pomocą protokołu **HTTPS** zgodnie z tym [przewodnikiem](../aktywacja-https-ssl-na-stronie-WWW/).
+Uruchom szyfrowane połączenie ze stroną WWW za pomocą protokołu **HTTPS**, postępując zgodnie z instrukcjami zawartymi w tym przewodniku(../aktywacja-https-ssl-na-stronie-WWW/). Uruchomienie protokołu pozwoli Ci zaszyfrować wszystkie informacje przesyłane przez Twoją stronę WWW (w tym zapytania przesyłane przez Twoich użytkowników na formularzach).
 
 ### Etap 8: chroń swoje formularze
 
