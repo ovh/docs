@@ -206,9 +206,9 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Purge avancée** : Personnalisez votre purge en choisissant les éléments du cache à vider : tout le site, un dossier, une URI, une extension de fichiers ou à l'aide d'une expression régulière personnalisée. 
 
-Depuis l'onglet Multisite, cliquez sur le bouton `...`{.action} à droite de l'entrée multisite puis sur `Purger le CDN`{.action}. 
+	Depuis l'onglet Multisite, cliquez sur le bouton `...`{.action} à droite de l'entrée multisite puis sur `Purger le CDN`{.action}. 
 
-![CDN](images/manage_CDNadvanced_01.png){.thumbnail}
+	![CDN](images/manage_CDNadvanced_01.png){.thumbnail}
 
 - **Query String** : Gestion de la mise en cache de contenu, basée sur les paramètres (aussi appelés *Query String*) de la requête URL. En fonction de votre configuration, choisissez le comportement du cache CDN:
 	- *Désactivé* : La ressource est mise en cache avec ses paramètres non triés. Ce qui va créer, par exemple, 2 itérations dans le cache du CDN pour 2 URL ayant les mêmes paramètres dans un ordre différent.
@@ -236,19 +236,14 @@ Pour ajouter une règle de cache sur l'un des éléments de votre site, dirigez-
 Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`{.action}.
 
 ![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
-
-- **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : css
-
-- **Dossier** :  Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
-
-- **Expression régulière personnalisée** : Elle s'applique sur toutes les URI de votre site web
-
 - **Nom de règle** : Attribuez un nom à votre règle.
-
-- **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
-
+- **Type de ressource** : Choisissez parmi les choix ci-dessous:
+	- **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : css
+	- **Dossier** :  Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
+	- **Expression régulière personnalisée** : Elle s'applique sur toutes les URI de votre site web.
+	- **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
+- **Ressource** : définissez les attributs en fonction du type de ressource choisie.
 - **Durée** : Indiquez la durée de mise en cache de la ressource choisie.
-
 - **Classement** :  Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
 
 Une fois vos choix réalisés, cliquez sur le bouton `Créer la règle`{.action}.
