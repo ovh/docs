@@ -1,224 +1,438 @@
-test
 ---
-title: 'Sécuriser un serveur dédié'
-slug: securiser-un-serveur-dedie
-excerpt: 'Apprenez à sécuriser votre serveur dédié grâce à quelques conseils'
-section: 'Premiers pas'
-order: 2
+title: Mettre à jour le firewall CISCO ASA
+excerpt: Découvrez comment mettre à jour votre firewall CISCO ASA
+slug: mettre-a-jour-firewall-cisco-asa
+section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 07/05/2020**
+**Dernière mise à jour le 20/02/2018**
 
 ## Objectif
 
-Lorsque vous commandez votre serveur dédié, aucun protocole de sécurité n'est implémenté de manière native. Il vous revient donc de le sécuriser. En effet, OVHcloud ne pourra être tenu responsable d'un défaut de sécurisation de votre machine.
+Pour protéger de manière optimale votre système, votre firewall CISCO Adaptive Security Appliance (ASA) doit bénéficier des derniers patchs de mise à jour. Ceux-ci permettent de pallier les éventuelles failles de sécurité.
 
-**Apprenez à sécuriser votre serveur dédié grâce à quelques conseils.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-> [!warning]
->
-> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
->
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
->
+**Ce guide vous explique comment effectuer la mise à jour de votre firewall CISCO ASA.**
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
-- Être connecté en SSH (accès root) sous Linux ou en tant qu'administrateur sous Windows.
+- Avoir accès à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 
 ## En pratique
 
+### Désactiver l'ASA depuis l'espace client
+
+La procédure de mise à jour va nécessiter plusieurs redémarrages. Nous vous conseillons donc de désactiver l'ASA pour ne pas rendre le serveur indisponible pendant la procédure de mise à jour.
+
+Pour cela, rendez-vous dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Dédié`{.action}. Choisissez ensuite votre serveur dédié, puis `Firewall Cisco ASA`{.action}. Cliquez enfin à droite sur `Désactiver le firewall Cisco ASA`{.action}
+
+![Désactivation de l'ASA](images/customer_panel_asa_disable.png){.thumbnail}
+
+### Enregistrer la configuration
+
+#### Première méthode via l'ASDM
+
+Connectez-vous au Cisco Adaptive Security Device Manager (ou ASDM), puis choisissez `File`{.action} et `Save Running Configuration to Flash`{.action} :
+
+![Enregistrement de la configuration via ASDM](images/asa1.jpg){.thumbnail}
+
+#### Deuxième méthode en SSH
+
+Connectez-vous en SSH à l'ASA :
+
+```sh
+user@desk:~$ ssh adminovh@IP_ASA
+
+adminovh@IP_ASAs password:
+Type help or '?' for a list of available commands.
+
+asa12345> en
+Password: ********
+```
+
+Tapez ensuite la commande suivante :
+
+```sh
+asa12345# write memory
+
+Building configuration...
+Cryptochecksum: 4b86b1e4 2e731d6b 9d1fc491 a5eae0f3
+6854 bytes copied in 1.20 secs (6854 bytes/sec)
+[OK]
+```
+
+
+### Sauvegarder la configuration
+
+Créez un fichier local, par exemple `backupAsa.txt`. Connectez-vous ensuite dans ASDM et allez dans `Tools`{.action}, puis `Backup Configurations`{.action}.
+
+![Sauvegarder la configuration via ASDM 1](images/asa2.jpg){.thumbnail}
+
+Dans le menu contextuel qui s'est ouvert, choisissez le fichier local que vous avez créé précédemment (avec `Browse Local...`{.action}), puis sauvegardez la configuration avec `Backup`{.action}.
+
+![Sauvegarder la configuration via ASDM 2](images/asa3.jpg){.thumbnail}
+
+
+### Redémarrer l'ASA
+
+Cette étape est importante, car il est nécessaire de vous assurer que l'ASA fonctionne et soit accessible après un simple redémarrage.
+
+#### Première méthode via l'ASDM
+
+Connectez-vous au Cisco Adaptive Security Device Manager, puis choisissez `Tools`{.action} et `System Reload...`{.action} :
+
+![Redémarrer l'ASA via l'ASDM 1](images/asa5.jpg){.thumbnail}
+
+Pour un redémarrage immédiat, dans la fenêtre qui est apparue, choisissez dans `Reload Start Time` > `Now`{.action} > `Schedule Reload`{.action}.
+
+![Redémarrer l'ASA via l'ASDM 2](images/asa6.jpg){.thumbnail}
+
+![Redémarrer l'ASA via l'ASDM 3](images/asa7.jpg){.thumbnail}
+
+
+#### Deuxième méthode en SSH
+
+Connectez-vous en SSH à l'ASA et entrez la commande `reload` :
+
+```sh
+asa12345# reload
+
+Proceed with reload? [confirm]
+***
+*** --- START GRACEFUL SHUTDOWN ---
+Shutting down isakmp
+Shutting down File system
+
+***
+*** --- SHUTDOWN NOW ---
+```
+
+Le redémarrage pour recharger la configuration va prendre quelques minutes .
+
+
+### Réactiver l'ASA depuis l'espace client
+
+Comme pour la première étape, rendez-vous dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Dédié`{.action}. Choisissez ensuite votre serveur dédié, puis `Firewall Cisco ASA`{.action}. Enfin, cliquez à droite sur `Activer le firewall Cisco ASA`{.action}.
+
+![Activation de l'ASA](images/customer_panel_asa_enable.png){.thumbnail}
+
+
+Après le redémarrage, quand l'ASA est en marche, vérifiez que tous les services sur votre serveur fonctionnent. Si tout est fonctionnel, passez à l'étape suivante. Si vous rencontrez des blocages, effectuez les vérifications adéquates pour résoudre les dysfonctionnements avant de passer aux étapes suivantes.
+
+
+### Désactiver à nouveau l'ASA depuis l'espace client
+
+Il est à nouveau temps de désactiver l'ASA comme lors de la première étape.
+
+Pour cela, rendez-vous dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Dédié`{.action}. Choisissez ensuite votre serveur dédié puis `Firewall Cisco ASA`{.action}. Enfin, cliquez à droite sur `Désactiver le firewall Cisco ASA`{.action}.
+
+![Désactivation de l'ASA](images/customer_panel_asa_disable.png){.thumbnail}
+
+
+### Vérifier le fichier binaire actuellement utilisé
+
+#### Première méthode via l'ASDM
+
+Connectez-vous au Cisco Adaptive Security Device Manager, puis rendez-vous dans `Device Information`{.action}, puis `General`{.action}. Là, vous retrouverez votre version d'ASA et d'ASDM. Nous vous conseillons de les noter et de les conserver.
+
+![Vérifier les binaires via l'ASDM](images/asa9.jpg){.thumbnail}
+
+
+#### Deuxième méthode en SSH
+
+Connectez-vous en SSH et entrez la commande suivante :
+
+
+```sh
+asa12345# sh run | i bin
+
+boot system disk0:/asa847-30-k8.bin
+asdm image disk0:/asdm-771.bin
+```
+
+- *boot system* : la version de l'ASA
+- *asdm image* : la version de l'ASDM
+
+
+### Vérifier quel fichier binaire doit être utilisé
+
+Pour trouver le fichier binaire à utiliser, référez-vous au tableau suivant :
+
+|Version actuelle ASA|Première version vers laquelle mettre à jour|Mettre ensuite à jour vers|
+|---|---|---|
+|8.2(x) et antérieures|8.4(6)|9.1(3) et suivantes|
+|8.3(x)|8.4(6)|9.1(3) et suivantes|
+|8.4(1) jusqu'à 8.4(4)|8.4(6) ou 9.0(2+)|9.1(3) et suivantes|
+|8.4(5+)|Aucune|9.1(3) et suivantes|
+|8.5(1)|9.0(2+)|9.1(3) et suivantes|
+|8.6(1)|9.0(2+)|9.1(3) et suivantes|
+|9.0(1)|9.0(2+)|9.1(3) et suivantes|
+|9.0(2+)|Aucune|9.1(3) et suivantes|
+|9.1(1)|9.1(2)|9.1(3) et suivantes|
+|9.1(2+)|Aucune|9.1(3) et suivantes|
+|9.2(x)|Aucune|9.2(2) et suivantes|
+
+Par exemple, si votre ASA est sur une version 8.4(2), il faudra d'abord mettre à jour votre système vers la version 8.4(6), puis mettre à jour vers 8.4(7+) ou 9.2+.
+
+
+Pour plus d'informations reportez-vous à la [documentation Cisco](https://www.cisco.com/c/en/us/td/docs/security/asa/migration/upgrade/upgrade.html){.external}.
+
 > [!primary]
 >
-> Ce guide est à usage général. Il est possible que vous deviez adapter quelques commandes en fonction de la distribution et/ou du système d'exploitation que vous utilisez. Certains conseils pourront vous suggérer l'utilisation d'outil tiers. En cas de question quant à leur utilisation, veuillez vous référer à leur documentation officielle.  
+> Pour des firewall Cisco ASA avec 256 Mo de mémoire, nous vous conseillons de mettre à jour la version 8.4(x) uniquement. Les versions 9.1(x) et 9.2(x) vont utiliser quasiment l'intégralité des 256 Mo sans être en production.
 >
 
-### Mettre à jour votre système
+Vous pouvez vérifier la version que vous possédez avec l'une des deux solutions suivantes :
 
-Les développeurs de systèmes de distribution et d'exploitation proposent des mises à jour fréquentes de progiciels, très souvent pour des raisons de sécurité. **Garder votre distribution ou votre système d'exploitation à jour est primordial pour la sécurisation de votre serveur.**
+- En SSH avec cette commande :
 
-Il s'agit d'un processus en deux parties qui implique la mise à jour de la liste des paquets (la liste des applications logicielles installées) et celle des paquets en eux-mêmes.
+```
+asa12345# sh ver| i RAM
 
-#### Mettre à jour la liste des paquets
-
-Mettez à jour la liste des paquets sur votre serveur de la manière suivante :
-
-```sh
-apt-get update
+Hardware: ASA5505, 512 MB RAM, CPU CPU Geode 500 MHz
 ```
 
-#### Mettre à jour les paquets
+- Dans ASDM, partie `Tools`{.action}, puis `Command Line Interface...`{.action} :
 
-Mettez ensuite à jour les paquets sur votre serveur de la manière suivante :
+![Vérifier la version du binaire dans l'ASDM 1](images/asa10.jpg){.thumbnail}
 
-```sh
-apt-get upgrade
-```
-
-Une fois les mises à jour terminées, votre système sera entièrement à jour. Cette opération doit être effectuée de manière régulière.
+![Vérifier la version du binaire dans l'ASDM 2](images/asa11.jpg){.thumbnail}
 
 
-### Modifier le port d'écoute par défaut du service SSH
+### Retirer les fichiers binaires non utilisés
 
-L'une des premières actions à effectuer sur votre serveur est la configuration du service SSH en changeant son port d'écoute. L’écoute est, par défaut, définie sur le port 22. Nous vous conseillons d'en modifier la valeur par défaut. En effet, la plupart des tentatives de piratage de serveurs sont faites par des robots qui ciblent le port 22 en priorité. Modifier ce paramètre rendra donc votre serveur plus difficile à atteindre.
+Avant d'ajouter les nouveaux fichiers binaires, il convient de retirer les anciens.
 
-> [!primary]
->
-> Dans les exemples suivants, nous utiliserons l'éditeur de texte Linux appelé **Nano**, mais vous pouvez utiliser n'importe quel éditeur de texte qui vous permet d'éditer le fichier de configuration.
->
+#### Première méthode via l'ASDM
+Connectez-vous au Cisco Adaptive Security Device Manager. Allez ensuite dans `Tools`{.action}, puis `File Management...`{.action}.
 
-Voici la commande pour modifier le fichier de configuration du service :
+![Retirer les fichiers binaires non utilisés dans l'ASDM 1](images/asa12.jpg){.thumbnail}
 
-```sh
-nano /etc/ssh/sshd_config
-```
+Supprimez ensuite les fichiers binaires (*.bin*) non utilisés. Il ne vous restera alors plus qu'un fichier pour l'ASA et un pour l'ASDM sur le disque.
 
-Repérez ensuite la ligne suivante dans le fichier :
+![Retirer les fichiers binaires non utilisés dans l'ASDM 2](images/asa13.jpg){.thumbnail}
+
+
+#### Deuxième méthode en SSH
+
+Connectez-vous en SSH à votre ASA, puis retirez les fichiers après les avoir listés :
 
 ```sh
-# What ports, IPs and protocols we listen for Port 22
+asa12345# sh flash: | i bin
+
+128 26995116 Apr 18 2017 23:55:52 asdm-771.bin
+144 23016144 Dec 12 2016 14:35:07 asdm-721-150.bin
+138 25214976 Nov 18 2017 23:29:54 asa847-30-k8.bin
 ```
-
-Remplacez le numéro **22** par celui de votre choix puis sauvegardez et quittez le fichier de configuration. **Assurez-vous de ne pas taper un numéro de port déjà utilisé**. Il vous faut ensuite redémarrer votre serveur.
-
-Maintenant, lorsque vous demandez une connexion SSH sur votre machine, vous devrez indiquer le nouveau port :
 
 ```sh
-ssh root@VotreServeur.ovh.net -p NouveauPort
+asa12345# delete flash:asdm-781-150.bin
+
+Delete filename [asdm-721-150.bin]?
+Delete disk0:/asdm-721-150.bin? [confirm]
 ```
+
+### Ajouter et installer les fichiers binaires ASDM
+
+#### Première méthode via l'ASDM
+
+Connectez-vous au Cisco Adaptive Security Device Manager. Allez ensuite dans `Tools`{.action}, puis cliquez sur `Upgrade Software from Local Computer...`{.action}.
+
+![Ajouter et installer les fichiers binaires ASDM via l'ASDM 1](images/asa14.jpg){.thumbnail}
+
+Dans l'écran suivant choisissez :
+
+- *Image to upload* : ASDM ;
+- *Local File Patch* : tapez `Browse Local Files`{.action} et choisissez votre version du fichier binaire de l'ASDM.
+
+Validez ensuite votre choix en cliquant sur `Upload Image`{.action}, puis validez avec `Yes`{.action} pour confirmer que cette image doit devenir l'image de démarrage :
+
+![Ajouter et installer les fichiers binaires ASDM via l'ASDM 2](images/asa15.jpg){.thumbnail}
+
+![Ajouter et installer les fichiers binaires ASDM via l'ASDM 3](images/asa16.jpg){.thumbnail}
+
+
+#### Deuxième méthode en SSH
+
+Le fichier binaire doit au préalable être placé sur un serveur FTP et vous devez configurer en SSH l'ASA pour l'utiliser et en sauvegarder la configuration :
+
+```sh
+asa12345# copy ftp://USER:PASSWORD@FTP_IP/FOLDER/asdm-781.bin flash:asdm-781.bin
+
+Address or name of remote host [FTP_IP]?
+
+Source username [USER]?
+
+Source password [PASSWORD]?
+
+Source filename [asdm-781.bin]?
+
+Destination filename [asdm-781.bin]?
+
+Accessing ftp://USER:PASSWORD@FTP_IP/FOLDER/asdm-781.bin...!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Writing file disk0:/asdm-781.bin...
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+25025404 bytes copied in 41.690 secs (610375 bytes/sec)
+```
+
+```sh
+asa12345# conf t
+
+asa12345(config)# asdm image disk0:/asdm-781.bin
+asa12345(config)# end
+
+asa12345# write memory
+```
+
+### Ajouter et installer les nouveaux fichiers binaires ASA
+
+#### Première méthode via l'ASDM
+
+Connectez-vous au Cisco Adaptive Security Device Manager. Allez dans `Tools`{.action}, puis cliquez sur `Upgrade Software from Local Computer...`{.action}.
+
+![Ajouter et installer les fichiers binaires ASA via l'ASDM 1](images/asa14.jpg){.thumbnail}
+
+Dans l'écran suivant choisissez :
+
+- *Image to upload* : ASA ;
+- *Local File Patch* : tapez `Browse Local Files`{.action} et choisissez votre version du fichier binaire de l'ASA.
+
+ 
+Validez ensuite votre choix en cliquant sur `Upload Image`{.action}, puis validez avec `Yes`{.action} pour confirmer que cette image doit devenir l'image de démarrage :
+
+![Ajouter et installer les fichiers binaires ASA via l'ASDM 2](images/asa18.jpg){.thumbnail}
+
+![Ajouter et installer les fichiers binaires ASA via l'ASDM 3](images/asa20.jpg){.thumbnail}
+
+
+#### Deuxième méthode en SSH
+
+Connectez-vous en SSH et entrez ensuite les commandes suivantes :
+
+```sh
+asa12345# copy ftp://USER:PASSWORD@FTP_IP/FOLDER/asa-924.bin flash:asa-924.bin
+
+Address or name of remote host [FTP_IP]?
+
+Source username [USER]?
+
+Source password [PASSWORD]?
+
+Source filename [asa-924.bin]?
+
+Destination filename [asa-924.bin]?
+
+Accessing ftp://USER:PASSWORD@FTP_IP/FOLDER/asa-924.bin...!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Writing file disk0:/asa-924.bin...
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+28057462 bytes copied in 46.270 secs (609345 bytes/sec)
+
+asa12345# conf t
+
+asa12345(config)# asdm image disk0:/asa-924.bin
+
+asa12345(config)# end
+
+asa12345# write memory
+```
+ 
+
+### Redémarrer l'ASA
+
+Cette étape est importante, car il est indispensable de s'assurer que l'ASA fonctionne et soit accessible après un simple redémarrage.
+
+#### Première méthode via l'ASDM
+
+Connectez-vous au Cisco Adaptive Security Device Manager. Choisissez ensuite `Tools`{.action}, puis `System Reload...`{.action} :
+
+![Redémarrer l'ASA via l'ASDM 1](images/asa5.jpg){.thumbnail}
+
+Dans la fenêtre qui est apparue, pour un redémarrage immédiat, choisissez dans `Reload Start Time` : `Now`{.action}, puis cliquez sur `Schedule Reload`{.action} :
+
+![Redémarrer l'ASA via l'ASDM 2](images/asa6.jpg){.thumbnail}
+
+![Redémarrer l'ASA via l'ASDM 3](images/asa7.jpg){.thumbnail}
+
+
+#### Deuxième méthode en SSH
+
+Connectez-vous en SSH à l'ASA et entrez la commande `reload` :
+
+```sh
+asa12345# reload
+
+Proceed with reload? [confirm]
+***
+*** --- START GRACEFUL SHUTDOWN ---
+Shutting down isakmp
+Shutting down File system
+
+***
+*** --- SHUTDOWN NOW ---
+```
+
+Le redémarrage pour recharger la configuration va prendre quelques minutes.
+
+ 
 
 > [!warning]
 >
-> Veuillez noter que la modification du port par défaut de SSH ou de tout autre protocole constitue un risque potentiel. Vous pouvez constater que certains services ne peuvent pas être configurés pour être utilisés avec des ports non standard et ne fonctionneront pas si le port par défaut est modifié.
+> Si à cette étape vous n’arrivez pas à ajouter le fichier binaire de l’ASA, redémarrez pour mettre à jour l'ASDM puis retirez le binaire ASDM inutilisé pour libérer de l'espace.
+> 
+> Mettez ensuite à jour le binaire ASA en suivant la procédure détaillée ci-dessus.
 >
 
+ 
 
-### Modifier le mot de passe associé à l'utilisateur root
+### Corriger la configuration
 
-Lorsqu'un système de distribution ou d'exploitation est installé, un mot de passe est créé automatiquement pour l'accès root. Nous vous conseillons vivement de le personnaliser en le modifiant. Pour cela, ouvrez une connexion SSH à votre serveur et tapez la commande suivante :
-
-```sh
-passwd root
-```
-
-Vous devrez ensuite entrer votre nouveau mot de passe deux fois. Il convient de noter que, pour des raisons de sécurité, **le mot de passe ne sera pas affiché lors de l’écriture**. Vous ne pourrez donc pas voir les caractères saisis.
-
-Une fois cette opération effectuée, vous devrez entrer le nouveau mot de passe dès votre prochaine connexion sur le système.
-
-
-### Créer un utilisateur avec des droits restreints
-
-Nous vous recommandons de créer un compte utilisateur disposant d'un accès restreint à votre serveur pour une utilisation quotidienne. Vous pouvez créer un nouvel utilisateur avec la commande suivante :
+Pendant la mise à jour de l'ASA depuis les versions antérieures à la 8.4.6, vous trouverez cette nouvelle configuration après le redémarrage :
 
 ```sh
-adduser Nom_Utilisateur_Personnalisé
+asa12345# sh run | i permit-
+
+no arp permit-nonconnected
 ```
 
-Remplissez ensuite les informations demandées par le système (mot de passe, nom, etc.).
 
-Cet utilisateur sera autorisé à se connecter à votre système en SSH avec le mot de passe indiqué lors de la création du compte. Une fois connecté à votre système avec ces informations d'identification, si vous souhaitez effectuer des opérations nécessitant des droits d'administrateur, il suffira de taper la commande suivante :
+La configuration doit être corrigée comme suit :
 
 ```sh
-su root
+asa12345# conf t
+asa12345(config)# aarp permit-nonconnected
+asa12345(config)# end
+asa12345# write memory
+
+Building configuration...
+Cryptochecksum: 4b86b1e4 2e731d6b 9d1fc491 a5eae0f3
+6854 bytes copied in 1.20 secs (6854 bytes/sec)
+[OK]
 ```
 
-Vous devez ensuite entrer le mot de passe associé à l'utilisateur root pour valider l'opération.
+![Firewall Cisco ASA à jour](images/asa10.jpg){.thumbnail}
+
+![Firewall Cisco ASA à jour](images/asa23.jpg){.thumbnail}
 
 
-### Désactiver l'accès au serveur via l'utilisateur root
 
-L'utilisateur root est créé par défaut sur les systèmes UNIX, comme Linux ou MAC OS. L'utilisateur root dispose de tous les droits d'administration sur votre système. Il est déconseillé, voire dangereux, de laisser votre serveur dédié accessible uniquement via cet utilisateur. Ce compte peut en effet exécuter des opérations irréversibles sur votre serveur.
+### Réactiver l'ASA depuis l'espace client
 
-Nous vous recommandons vivement de désactiver l'accès direct des utilisateurs root via le protocole SSH. Pour effectuer cette opération, vous devez modifier le fichier de configuration SSH de la même manière que vous l'avez fait précédemment pour modifier le port d'accès à votre serveur.
+Comme pour la première étape, rendez-vous dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} partie `Dédié`{.action}. Choisissez ensuite votre serveur dédié puis `Firewall Cisco ASA`{.action}. Enfin, cliquez à droite sur `Activer le firewall Cisco ASA`{.action}.
 
-Pour commencer, ouvrez une connexion SSH à votre serveur et tapez la commande suivante :
-
-```sh
-nano /etc/ssh/sshd_config
-```
-
-Ensuite, repérez la section suivante et remplacez le « yes » par « no » dans la ligne `PermitRootLogin`, comme indiqué ci-dessous :
-
-```sh
-# Authentication: 
-LoginGraceTime 120
-PermitRootLogin yes 
-StrictModes yes
-```
-
-Après avoir enregistré et fermé le fichier de configuration, redémarrez le service SSH pour appliquer les modifications en utilisant la commande suivante :
-
-```sh
-/etc/init.d/ssh restart
-```
-
-### Installer et configurer le paquet Fail2ban
-
-Fail2ban est un framework de prévention contre les intrusions dont le but est de bloquer les adresses IP inconnues tentant de pénétrer dans votre système. Ce paquet est recommandé pour vous protéger contre toute attaque par force brute sur votre serveur.
-
-Pour installer Fail2ban, utilisez la commande suivante :
-
-```sh
-apt-get install fail2ban
-```
-
-Une fois le paquet installé, modifiez le fichier de configuration de ce dernier pour l’adapter à celle de votre système. Avant toute modification, nous vous recommandons de réaliser une sauvegarde du fichier de configuration en tapant la commande suivante :
-
-```sh
-cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.conf.backup
-```
-
-Apportez ensuite vos modifications sur le fichier :
-
-```sh
-nano /etc/fail2ban/jail.conf
-```
-
-Une fois ces modifications terminées, redémarrez le service à l'aide de la commande suivante :
-
-```sh
-/etc/init.d/fail2ban restart
-```
-
-Pour toute demande complémentaire concernant Fail2Ban, n’hésitez pas à consulter la [documentation officielle](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} de cet outil.
+![Activation de l'ASA](images/customer_panel_asa_enable.png){.thumbnail}
 
 
-### Configurer le pare-feu interne : iptables
 
-La distribution nue dispose d’un service de pare-feu nommé iptables. Par défaut, ce service ne possède aucune règle active. Vous pouvez le constater en tapant la commande suivante :
+Votre ASA est désormais à jour.
 
-```sh
-iptables -L
-```
+![Firewall Cisco ASA à jour](images/asa22.jpg){.thumbnail}
 
-Il est alors recommandé de créer et d’ajuster à votre utilisation des règles sur ce pare-feu. Pour plus d'informations sur la configuration des iptables, reportez-vous à la documentation officielle de votre distribution Linux.
-
-
-### Configurer le Firewall Network d’OVHcloud
-
-Les serveurs OVHcloud incluent un pare-feu à l’entrée de l’infrastructure appelé Firewall Network. Sa mise en place et sa configuration permettent le blocage des protocoles avant même leur arrivée sur votre serveur.
-
-Nous avons également un [guide](../firewall-network/){.external} pour configurer le Firewall Network.
-
-
-### Sauvegarder votre système et vos données
-
-La notion de sécurité ne se limite pas uniquement à la protection d’un système contre des attaques. La sécurisation de vos données est un élément primordial, c’est pourquoi OVHcloud vous offre 500 Go de stockage de sauvegarde gratuit avec votre serveur. Vous pouvez activer ce stockage de sauvegarde dans votre espace client et y accéder en utilisant les protocoles suivants :
-
-* FTP ;
-* FTPS ;
-* NFS ;
-* CIFS.
-
-Vous aurez besoin d'une solution de sauvegarde tierce pour répliquer vos données et les transférer vers votre stockage de sauvegarde.
-
-Pour plus d'informations sur nos solutions de stockage de sauvegarde, consultez notre [guide](../services-backup-storage/){.external} de stockage de sauvegarde.
 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
