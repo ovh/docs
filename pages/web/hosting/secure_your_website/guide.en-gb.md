@@ -49,7 +49,7 @@ First, check the security of your Windows, Mac or Linux desktop:
 
 To secure your customer account, [enable two-factor authentication](../../customer/secure-account-with-2FA/) and follow the instructions of this [guide](../../customer/all-about-your-username/).
 
-Remember to update your [customer account information](../../customer/all-about-your-username/#changing-your-personal-details) and to add a backup **email** to your account.<br>
+Remember to update your [customer account information](../../customer/all-about-your-username/#changing-your-personal-details) and to add a **backup email** to your account.<br>
 In the event of your login details being lost and/or the primary email address for your OVHcloud customer account being unavailable, a backup email as well as updated personal information will be essential to help you regain access to your services.
 
 ### Step 3 - Back up your website regularly <a name="backup"></a>
