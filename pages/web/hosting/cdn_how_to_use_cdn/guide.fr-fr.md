@@ -219,7 +219,7 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 	Pour définir la liste des URLs qui doivent être en *Prewarm*, cliquez sur `Editer la liste des URLs`{.action}.
 
-	À l'aide des champs `Protocole`, `Nom de domaine` et `Chemin de la ressource`, tapez un des liens vers une ressource que vous souhaitez ajoutez à la fonction **Prewarm**, puis cliquez sur`Ajouter`{.action}.
+	À l'aide des champs `Protocole`, `Nom de domaine` et `Chemin de la ressource`, tapez un des liens vers une ressource que vous souhaitez ajoutez à la fonction **Prewarm**, puis cliquez sur `Ajouter`{.action}.
 
 	Une liste se forme dans le cadre inférieur, avec l'ensemble des liens que vous avez listés, vous pouvez supprimer celui de votre choix en le sélectionnant, puis en cliquant sur `Retirer`{.action}.
 
