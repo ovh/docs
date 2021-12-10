@@ -120,9 +120,9 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Dos métodos para configurar su red:
 
-- **para Debian 8 e inferior, Ubuntu 16.04 e inferior**: utilice el [método basado en el archivo *interfaces*](#interfaces).
+- **para Debian 10,11 e inferior, Ubuntu 16.04 e inferior**: utilice el [método basado en el archivo *interfaces*](#interfaces).
 
-- **para Ubuntu 17.04 y versiones posteriores**: utilice el [método basado en la función *Netplan*](#netplan).
+- **para Debian 9, Ubuntu 17.04 y versiones posteriores**: utilice el [método basado en la función *Netplan*](#netplan).
 
 En algunos casos, el método a utilizar puede no ser el indicado anteriormente. Para asegurarse, navegue por el sistema para comprobar el método actual.  Visite el sitio <https://netplan.io/> para más información, si es necesario.
 
