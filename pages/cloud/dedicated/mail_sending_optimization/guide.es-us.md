@@ -26,7 +26,7 @@ Las políticas antispam cada vez son más estrictas. Para asegurarse que sus cor
 
 ### Configurar el registro SPF
 
-Si usted está usando una infraestructura dedicada (ejem. Un servidor dedicado, VPS, instancia cloud publica o privada), el SPF optimo es: v=spf1 ip4:server_ipv4 ~all. Recuerde cambiar 'server_ipv4' con la dirección IPv4 de su servidor.
+Si usted está usando una infraestructura dedicada (ejem. Un servidor dedicado, VPS, instancia cloud publica o privada), el SPF optimo es: `v=spf1 ip4:server_ipv4 ~all`. Recuerde cambiar 'server_ipv4' con la dirección IPv4 de su servidor.
 
 > [!primary]
 >
