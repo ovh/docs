@@ -1,6 +1,6 @@
 ---
 title: Optimise the sending of your files to High Performance
-slug: highperf/optimise-the-sending-of-your-files-to-high-performance
+slug: s3/optimise-the-sending-of-your-files
 excerpt:
 section: Object Storage S3 High Performance
 order: 040

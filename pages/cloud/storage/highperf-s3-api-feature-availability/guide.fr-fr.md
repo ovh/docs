@@ -1,6 +1,6 @@
 ---
 title: Compatibilité S3
-slug: highperf/compatibilite-s3
+slug: s3/compatibilite-s3
 excerpt:
 section: Object Storage S3 High Performance
 order: 010
