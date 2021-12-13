@@ -5,22 +5,21 @@ slug: Configurer-firewall-software-windows
 section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 10/12/2021**
+**Dernière mise à jour le 13/12/2021**
 
 ## Objectif
 
-Pour protéger de manière optimale votre système, votre firewall CISCO Adaptive Security Appliance (ASA) doit bénéficier des derniers patchs de mise à jour. Ceux-ci permettent de pallier les éventuelles failles de sécurité.
+Pour protéger de manière optimale votre système, votre serveur Windows Server 2019 , dispose de son propre pare-feu intégré, ça paramétrage donnera la possibilité d’augmenter les niveaux de sécurité et de garantir ainsi la disponibilité et l’intégrité de tous les éléments hébergés sur le serveur, tels que les rôles, les services, les dossiers partagés.
 
-**Ce guide vous explique comment effectuer la mise à jour de votre firewall CISCO ASA.**
+**Ce guide vous explique comment appliquer les règles du pare-feu sous Windows.**
 
 ## Prérequis
 
-- Avoir accès à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-
-
+- Disposer d’un serveur dédié dans votre espace client OVHcloud
+- Être connecté à votre serveur à un bureau distant sous Windows 
 ## En pratique
 
-### Désactiver l'ASA depuis l'espace client
+### Étape 1 :  Accéder au pare-feu Windows
 
 La procédure de mise à jour va nécessiter plusieurs redémarrages. Nous vous conseillons donc de désactiver l'ASA pour ne pas rendre le serveur indisponible pendant la procédure de mise à jour.
 
