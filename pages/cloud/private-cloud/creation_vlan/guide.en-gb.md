@@ -1,91 +1,29 @@
 ---
-title: How to create a V(x)LAN
-slug: creation-vlan-vxlan
-excerpt: Find out how to create VLANs (vRack) and VxLANs (NSX)
+title: How to create a VLAN
+slug: creation-vlan
+excerpt: Find out how to create VLANs in your vRack
 section: OVHcloud Features
 order: 02
 ---
 
-**Last updated 12th October 2020**
+**Last updated 13th December 2021**
 
 ## Objective
 
-In a Hosted Private Cloud infrastructure, you have a base of 10 VxLANs provided by NSX, and 11 VLANs provided with the vRack.
+OVHcloud sets up a base of 11 VLANs on your vRack.
 
-**This guide shows how to create additional V(x)LANs.**
+**This guide explains how to create additional VLANs.**
 
 ## Requirements
 
-- access to the vSphere Web client (HTML5)
+- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Have a user account with access to vSphere as well as the specific rights for Networking (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 
-In the Hosted Private Cloud solutions, you get two virtual distributed switches (vDS). 
+In the Hosted Private Cloud solutions, VLANs can be used to isolate private communications between different OVHcloud services that are vRack-compatible (Dedicated Server, Public Cloud, etc.). 
 
-These *vDS* have several different *portGroups*, each with their own purpose.
-
-The first vDS common to both solutions has two *portGroup* types: 
-
-- The VMnetwork that enables communication to the internet
-- VxLANs managed by NSX, allowing private communications to be isolated within the Hosted Private Cloud.
-
-The second vDS has only one type of *portGroup*: 
-
-- VLANs that can be used to isolate private communications within the Hosted Private Cloud, and between different OVHcloud services that are vRack-compatible (Dedicated Server, Public Cloud, etc.). 
-
-### VxLan - NSX 
-
-In the Hosted Private Cloud solutions, you get a first virtual switch. 
-
-On this switch, 10 VxLANs are created as standard. By giving the `NSX` permission in [the users management tab of your Control Panel](../control-panel-ovh-private-cloud/#users-tab), you can access the NSX interface and thus create additional VxLANs.
-
-First, go to the `Networking and security` view of your vSphere client, then click `Logical Switches`{.action}.
-
-Click the `+`{.action} button to start the creation:
-
-![create vxlan](images/01createVxLAN.png){.thumbnail}
-
-The first step is to name your **portGroup**:
-
-![vxlan name](images/02nameVxLAN.png){.thumbnail}
-
-Then choose the transport zone: 
-
-![transport area](images/03transportZone.png){.thumbnail}
-
-> [!primary]
->
-> The transport area controls which hosts a logical switch can reach. In a Hosted Private Cloud infrastructure, OVHcloud creates a transport zone per virtual data centre.
-> You can create a common transport zone for different virtual data centres, or you can extend existing data centres.
->
-> The control plan mode for a transport area is unicast, allowing communication between hosts to be managed using NSX controllers.
->
-
-IP address discovery limits the saturation of ARP traffic in individual VxLAN segments, that is, between virtual machines connected to the same logical switch.
-
-MAC learning builds a VLAN/MAC learning table on each vNIC. This table is stored with dvfilter data. In vMotion, dvfilter saves and restores the table to the new location. Then, the switch generates RARPs for all VLAN/MAC entries in the table. You may want to enable MAC learning if you are using virtual network adapters that are performing VLAN trunking.
-
-OVHcloud recommends using only IP address discovery.
-
-Once you have entered all of this information, you can confirm that you want to create it:
-
-![confirm creation](images/04ConfirmVxLAN.png){.thumbnail}
-
-Your portGroup is now created and functional, you will find it in the Logical Switches view: 
-
-![portgroup created](images/05VxLANcreated.png){.thumbnail}
-
-But also in the `Networking view`
-
-![portgroup created](images/06VxLANnetworking.png){.thumbnail}
-
-### VLAN - vRack
-
-You also have an additional virtual distributed switch (vDS).
-
-On this switch, 11 VLANs are created as standard (VLAN10 to VLAN20). By giving the `administrator` right on `Access to the V(x)LAN` in [the users management tab of your Control Panel](../control-panel-ovh-private-cloud/#users-tab), you can create additional VLANs.
-
-First, go to your vSphere client's `networking` view. Deploy the **vrack** folder then right-click on the **dVS** ending in *-vrack* and finally click on `New Distributed Port Group`{.action}.
+First, go to your vSphere client's `Networking` view. Deploy the **vrack** folder then right-click on the **dVS** ending in *-vrack* and finally click on `New Distributed Port Group`{.action}.
 
 ![vRack](images/07network.png){.thumbnail}
 
