@@ -123,7 +123,7 @@ During this lab, we will use the Let's Encrypt `production` environment to gener
 kubectl --namespace cert-manager apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/installing-keycloak/files/01-cert-manager/02-acme-production-issuer-http01.yaml
 ```
 
-You should have a new ClusterIssuer deployed in your cluster:
+You should have a new `ClusterIssuer` deployed in your cluster:
 
 ```
 $ kubectl get clusterissuer letsencrypt-production -o yaml -n cert-manager | kubectl neat
