@@ -114,7 +114,7 @@ Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`
 
 - **Nom de règle** : Attribuez un nom à votre règle.
 
-- **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL. Pour les offres CDN-Basic et CDN-Security, il n'est possible de saisir qu'une extension de fichier.
+- **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL. Pour les offres CDN-Basic et CDN-Security, il n'est possible de saisir qu'une extension de fichier. 
 
 - **Durée** : indiquez la durée de mise en cache de la ressource choisie.
 
@@ -171,7 +171,7 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Mixed content** : Forcez le chargement de l’intégralité du contenu de vos pages web de manière sécurisée, participant ainsi à une expérience utilisateur optimale. Toutes les ressources de votre site, internes comme externes, doivent être disponibles en HTTPS pour éviter une erreur de sécurité du navigateur.
 
-- **Pare-feu applicatif** : Le **W**eb **A**pplication **F**irewall (WAF) protège votre site des attaques frauduleuses telles que l’injection de code, les requêtes illégitimes ou le vol de données. Il vous couvre des principales failles connues du web en filtrant les requêtes et paquets transmis (la liste des failles est administrée par OVHcloud et régulièrement mise à jour).  
+- **Pare-feu applicatif** : Le **W**eb **A**pplication **F**irewall (WAF) protège votre site des attaques frauduleuses telles que l’injection de code, les requêtes illégitimes ou le vol de données. Il vous couvre des principales failles connues du web en filtrant les requêtes et paquets transmis (la liste des failles est administrée par OVHcloud et régulièrement mise à jour pour étendre votre protection).  
 
 > [!warning]
 >
@@ -300,7 +300,7 @@ Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. P
 > La mise en cache via les headers HTTP permet la mise en cache au sein du CDN mais aussi au sein du navigateur de vos utilisateurs. Ainsi, pour éviter que vos visiteurs ne visualisent une version en cache trop ancienne, il est recommandé de modifier les noms des fichiers à chaque nouvelle version.
 > 
 
-### Désactiver l'option CDN
+### Désactiver l'option CDN pour un site web
 
 Cette action permet de désactiver le CDN pour une ou plusieurs de vos entrées multisite, sans supprimer l'option CDN de votre hébergement Web.
 
@@ -310,7 +310,7 @@ Décochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis s
 
 ![CDN](images/manage_CDN_03.png){.thumbnail}
 
-### Supprimer l'option CDN
+### Supprimer l'option CDN sur votre hébergement
 
 Cette action a pour but de supprimer l'option CDN pour l'ensemble de votre hébergement Web.
 
