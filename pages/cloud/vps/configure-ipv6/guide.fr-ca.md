@@ -115,9 +115,9 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Deux méthodes existente pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
 
-- **pour Debian 10,11 et inférieure, Ubuntu 16.04 et inférieure** : utilisez la [méthode basée sur le fichier *interfaces*](#interfaces) ;
+- **pour 11 et inférieure, Ubuntu 16.04 et inférieure** : utilisez la [méthode basée sur le fichier *interfaces*](#interfaces) ;
 
-- **pour Debian 9, Ubuntu 17.04 et versions ultérieures** : utilisez la [méthode basée sur la fonction *Netplan*](#netplan).
+- **pour Ubuntu 17.04 et versions ultérieures** : utilisez la [méthode basée sur la fonction *Netplan*](#netplan).
 
 Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spécifiée ci-dessus. Pour vous en assurer, naviguez dans votre système pour vérifier la méthode active dans votre cas.  Visitez le site <https://netplan.io/> pour plus d'informations, si nécessaire.
 
