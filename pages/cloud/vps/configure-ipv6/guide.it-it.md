@@ -120,7 +120,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Esistono due metodi per configurare la tua rete in base al sistema operativo installato sul tuo server:
 
-- **per 11 e inferiore, Ubuntu 16.04 e inferiore**: utilizza il [metodo basato sul file *interfaces*](#interfaces)
+- **per Debian 11 e inferiore, Ubuntu 16.04 e inferiore**: utilizza il [metodo basato sul file *interfaces*](#interfaces)
 
 - **per Ubuntu 17.04 e versioni successive**: utilizza il [metodo basato sulla funzione *Netplan*](#netplan).
 
