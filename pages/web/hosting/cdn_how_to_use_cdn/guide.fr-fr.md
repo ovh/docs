@@ -70,7 +70,7 @@ Concernant le SEO (référencement sur les moteurs de recherche), la vitesse d'a
 
 > [!primary]
 > 
-> L'option shared CDN est déjà incluse dans les offres d'hébergement web Performance ou disponible à la commande depuis le 19/11/20. Pour les versions plus anciennes, référez-vous au paragraphe [Gérer votre CDN (version historique)](./#gerer-votre-cdn-version-historique_2).
+> L'option shared CDN est déjà incluse dans les offres d'hébergement web Performance ou disponible à la commande depuis le 19/11/20. Pour les versions plus anciennes, référez-vous au paragraphe [Gérer votre CDN Buisiness](#cdnbusiness).
 
 #### Vider le cache du Shared CDN
 
@@ -260,7 +260,7 @@ Dans l'onglet `Multisites`{.action} de votre hébergement, sous le tableau, vous
 
 ![CDN](images/manage_CDNstat_01.png){.thumbnail}
 
-### Gérer votre CDN Business
+### Gérer votre CDN Business <a name="cdnbusiness"></a>
 
 > [!primary]
 > 
@@ -295,6 +295,10 @@ Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. P
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```
+
+
+
+
 > [!warning]
 >
 > La mise en cache via les headers HTTP permet la mise en cache au sein du CDN mais aussi au sein du navigateur de vos utilisateurs. Ainsi, pour éviter que vos visiteurs ne visualisent une version en cache trop ancienne, il est recommandé de modifier les noms des fichiers à chaque nouvelle version.
