@@ -36,21 +36,27 @@ Cliquez sur `+ Ajouter`{.action} pour en ajouter un.
 Nommez le nouveau commutateur logique et choisissez vos options:
 - La Zone de transport définit quels hôtes un commutateur logique peut atteindre. Par défaut, OVHcloud crée une zone de transport par datacenter.
 - Le Mode de réplication typique est monodiffusion permettant la gestion du traffic entre les hôtes par les services NSX.
-- IP Discovery limits the saturation of ARP traffic in individual VxLAN segments and is recommended
-- MAC Learning builds a VLAN/MAC learning table on each vNIC. It is only recommended if you are using virtual network adapters that are performing VLAN trunking.<br>
-Click `Add`{.action} when done.
+- La Découverte d'adresses IP empèche la saturation du trafic ARP dans les segments VXLANs et est recommandée. 
+- L'Apprentissage MAC construit une table d’apprentissage VLAN/MAC sur chaque vNIC. Ce n'est recommandé que si vous utilisez des cartes réseau virtuelles effectuant la jonction VLAN.<br>
+Cliquez sur `Ajouter`{.action}.
 
 ![SWITCHES](images/en03new.png){.thumbnail}
 
 
-Your VxLAN is now created and functional, you will find it in the Logical Switches view
+Votre VxLAN est à présent créé et fonctionnel, vous le retrouverez dans la vue des commutateurs logiques
 
 ![SWITCHES](images/en04created.png){.thumbnail}
 
 
-It is also visible in the Networking view
+Il est également visible dans la vue Mise en réseau
 
 ![NETWORK](images/en05network.png){.thumbnail}
 
 
-Congratulations and thank you.
+Bravo et merci.
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+
