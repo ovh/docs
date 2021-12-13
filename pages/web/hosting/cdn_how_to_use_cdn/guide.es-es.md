@@ -7,14 +7,14 @@ section: 'Optimización del sitio web'
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 **Última actualización: 09/12/2021**
 
 ## Objetivo
 
-Si desea mejorar la experiencia de sus usuarios acelerando la carga de su sitio web, la técnica más eficaz es activar una CDN <i>(</i>siglas en inglés de Content Delivery Network que significan red de entrega de contenidos<i>)</i>. Esta permite guardar en caché los archivos estáticos, como imágenes, CSS y JavaScript en los servidores que se encuentran más cerca de sus clientes.
+Si desea mejorar la experiencia de sus usuarios acelerando la carga de su sitio web, la técnica más eficaz es activar una CDN (siglas en inglés de **Content Delivery Network** que significan red de entrega de contenidos). Esta permite guardar en caché los archivos estáticos, como imágenes, CSS y JavaScript en los servidores que se encuentran más cerca de sus clientes.
 
 **Cómo gestionar la opción CDN de su alojamiento web.**
 
@@ -22,14 +22,14 @@ Si desea mejorar la experiencia de sus usuarios acelerando la carga de su sitio 
 
 **¿Cómo funciona una CDN?**
 
-La CDN<i> (</i>siglas en inglés de Content Delivery Network que significan red de entrega de contenidos<i>)</i> es literalmente una red dedicada a la entrega de contenidos. Para mostrar el contenido de su sitio web, la CDN utiliza varios servidores repartidos por todo el mundo. Cuanto más cerca estén los servidores de los usuarios, más rápida será la carga de su sitio web en sus dispositivos.
+La CDN (siglas en inglés de Content Delivery Network que significan red de entrega de contenidos) es literalmente una red dedicada a la entrega de contenidos. Para mostrar el contenido de su sitio web, la CDN utiliza varios servidores repartidos por todo el mundo. Cuanto más cerca estén los servidores de los usuarios, más rápida será la carga de su sitio web en sus dispositivos.
 
 Para funcionar, cada servidor guarda en memoria caché una parte de su sitio web. Siempre se recomienda incluir en ellos los archivos llamados estáticos, como las imágenes, los archivos JavaScript y CSS que permiten el buen funcionamiento de su sitio web, pero rara vez se modifican.
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Tener contratado un [plan de alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener contratado un [plan de alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/).
 
 ## Procedimiento
 
@@ -41,7 +41,7 @@ Para funcionar, cada servidor guarda en memoria caché una parte de su sitio web
 
 ####  Si la opción CDN no está contratada o activada en su alojamiento web
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de "Opción CDN" y, seguidamente, en `Contratar una CDN`{.action} o `Activar la opción`{.action} si la opción CDN ya está incluida en el alojamiento.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de "Opción CDN" y, seguidamente, en `Contratar una CDN`{.action} o `Activar la opción`{.action} si la opción CDN ya está incluida en el alojamiento.
 
 > [!primary]
 > 
@@ -53,16 +53,16 @@ Se le redirigirá a la generación del pedido. Unos minutos después de haber ab
 
 #### Si la opción CDN ya está activada en su alojamiento web
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en el icono con forma de rueda dentada a la derecha de la entrada multisitio y, seguidamente, pulse `Modificar`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en el icono con forma de rueda dentada a la derecha de la entrada multisitio y, seguidamente, pulse `Modificar`{.action}.
 
-Marque la opción «Activar la CDN», haga clic en `Siguiente`{.action} y, seguidamente, en `Validar`{.action}.
+Marque la opción "Activar la CDN", haga clic en `Siguiente`{.action} y, seguidamente, en `Validar`{.action}.
 
 ![CDN](images/manage_CDN_01_02.gif){.thumbnail}
 
 > [!warning]
 > 
 > Si añade un nombre de dominio externo a OVHcloud en multisitio al alojamiento web, debe indicar la dirección IP de la CDN de su alojamiento en la zona DNS del nombre de dominio.<br>
-> Consulte la [lista de direcciones IP de los clústeres y alojamientos web](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/){.external} para saber qué dirección IP corresponde a la CDN de su clúster.
+> Consulte la [lista de direcciones IP de los clústeres y alojamientos web](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/) para saber qué dirección IP corresponde a la CDN de su clúster.
 
  
 **¿Por qué no puedo disfrutar de la IP geolocalizada con la opción CDN?** <br>
