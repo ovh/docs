@@ -73,7 +73,7 @@ Un e-mail va être envoyé aux contacts impliqués dans ce processus de modifica
 
 En qualité d'administrateur, vous pouvez réaliser plusieurs manipulations sur les contacts d'un service :
 
-- Nommer un nouveau contact sur la gestion technique et/ou la facturation. Une validation de votre part ainsi que de celle du nouveau contact  seront nécessaires. L'ancien contact recevra un e-mail l'informant de la modification si celle-ci arrive à son terme.
+- Nommer un nouveau contact sur la gestion technique et/ou la facturation. Une validation de votre part ainsi que de celle du nouveau contact seront nécessaires. L'ancien contact recevra un e-mail l'informant de la modification si celle-ci arrive à son terme.
 - Récupérer la gestion technique et/ou la facturation. Vous devrez valider cette demande. L'ancien contact recevra un e-mail l'informant de la modification. 
 - Désigner un nouveau contact administrateur à votre place. Une validation par e-mail de votre part ainsi que de celle du nouveau contact seront nécessaires. 
 
@@ -112,7 +112,7 @@ Le changement de contact sera effectif quelques minutes après que les deux cont
 
 ### Exemple de cas concret : confier la gestion technique de votre site à votre webmaster <a name="use-case"></a>
 
-Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](https://www.ovhcloud.com/fr/web-hosting/ecommerce-website/).<br>Vous avez fait appel à l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/) et clui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
+Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](https://www.ovhcloud.com/fr/web-hosting/ecommerce-website/).<br>Vous avez fait appel à l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/) et celui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
 
 > [!warning]
 >
