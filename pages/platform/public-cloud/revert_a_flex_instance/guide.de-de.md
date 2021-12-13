@@ -33,9 +33,11 @@ Klicken Sie links im Menü auf `Compute`{.action} und wählen Sie dann `Instance
 
 ![Resize instance](images/resizeinstance2021.png){.thumbnail}
 
-**Flavor Choice (Wahl des Templates)** <a name="flavorchoice"></a>
+**Wahl des Templates (*Flavor Choice*)** <a name="flavorchoice"></a>
 
-In diesem Abschnitt können Sie die neue instanz-Template (*flavor*) auswählen. Sie können Ihre Instanz entweder auf ein klassisches Modell umstellen und dieselbe Template beibehalten oder die Größe Ihrer Instanz durch Auswahl einer anderen Template ändern.
+Wahl des Templates (*Flavor Choice*)
+
+Dieser Abschnitt zeigt das aktuelle Template (*old flavor*) an und erlaubt es Ihnen, das neue Template (*new flavor*) für die Instanz auszuwählen.
 
 In unserem Beispiel ist unser flavor « b2-15-flex », wir können entweder zu einem « b2-15 » flavor zurückkehren oder es zu einem « b2-30 » flavor upgraden. In unserem Fall wollen wir unsere Instanz auf das klassische Modell « b2-30 » aktualisieren.
 
@@ -47,7 +49,7 @@ In unserem Beispiel ist unser flavor « b2-15-flex », wir können entweder zu e
 > - Die Flex-Option ist nicht für alle Modelle verfügbar.
 >
 
-**Advanced Options (Erweiterte Optionen)**
+**Erweiterte Optionen (*Advanced Options*)**
 
 In diesem Bereich können Sie die Partitionierung der Festplatte (*Disk Partition*) und die Servergruppe (*Server Group*) einrichten.
 
@@ -59,7 +61,7 @@ Sobald der Prozess abgeschlossen ist, wird unsere Instanz in ein klassisches Mod
 
 ![Neuer Geschmack](images/newflavor.png){.thumbnail}
 
-Falls Sie wieder zu einem Flex-Modell wechseln möchten, können Sie dies tun, indem Sie die gleichen Schritte wie [oben](#flavorchoice) ausführen und ein Flex-Flavor anstelle eines klassischen Modells auswählen. 
+Falls Sie wieder zu einem Flex-Modell wechseln möchten, können Sie dies tun, indem Sie die gleichen Schritte wie [oben](#flavorchoice) ausführen und ein Flex-Modell anstelle eines klassischen Modells auswählen. 
 
 Alternativ können Sie auch [die Konfiguration der Instanz bearbeiten](https://docs.ovh.com/de/public-cloud/die_ersten_schritte_mit_ihrer_public_cloud_instanz/#die-konfiguration-einer-instanz-bearbeiten) auf Ihr OVHcloud Kundencenter.
 

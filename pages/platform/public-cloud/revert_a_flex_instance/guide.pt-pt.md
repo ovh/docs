@@ -28,7 +28,7 @@ Ligue-se à [interface Horizon](https://horizon.cloud.ovh.net/auth/login/) e cer
 
 ![Seleção da região](images/region2021.png){.thumbnail}
 
-Clique no menu `Compute` {.action} à esquerda e selecione `Instances` {.action}. Selecione a `Resize Instance` {.action} no menu pendente à direita da instância em questão.
+Clique no menu `Compute`{.action} à esquerda e selecione `Instances`{.action}. Selecione a `Resize Instance`{.action} no menu pendente à direita da instância em questão.
 
 ![Redimensionar instância](images/resizeinstance2021.png){.thumbnail}
 
