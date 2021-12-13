@@ -25,7 +25,7 @@ La procédure de mise à jour va nécessiter plusieurs redémarrages. Nous vous 
 
 Pour cela, rendez-vous dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Dédié`{.action}. Choisissez ensuite votre serveur dédié, puis `Firewall Cisco ASA`{.action}. Cliquez enfin à droite sur `Désactiver le firewall Cisco ASA`{.action}
 
-![Désactivation de l'ASA](images/customer_panel_asa_disable.png){.thumbnail}
+![Step1](images/Step1_Stard_FW_Win.png){.thumbnail}
 
 ### Enregistrer la configuration
 
