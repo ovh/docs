@@ -29,7 +29,7 @@ Klicken Sie links im Menü auf `Compute`{.action} und wählen Sie dann `Instance
 
 ![Resize instance](images/resizeinstance2021.png){.thumbnail}
 
-**Flavor Choice** <a name="flavorchoice"></a>
+**Flavor Choice (Wahl des Templates)** <a name="flavorchoice"></a>
 
 In diesem Abschnitt können Sie die neue instanz-Template (*flavor*) auswählen. Sie können Ihre Instanz entweder auf ein klassisches Modell umstellen und dieselbe Template beibehalten oder die Größe Ihrer Instanz durch Auswahl einer anderen Template ändern.
 
@@ -43,7 +43,7 @@ In unserem Beispiel ist unser flavor « b2-15-flex », wir können entweder zu e
 > - Die Flex-Option ist nicht für alle Modelle verfügbar.
 >
 
-**Advanced Options** (Erweiterte Optionen)
+**Advanced Options (Erweiterte Optionen)**
 
 In diesem Bereich können Sie die Partitionierung der Festplatte (*Disk Partition*) und die Servergruppe (*Server Group*) einrichten.
 
