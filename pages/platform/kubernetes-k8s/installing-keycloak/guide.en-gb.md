@@ -5,7 +5,7 @@ excerpt: Secure Your OVHcloud Managed Kubernetes Cluster with Keycloak, an OpenI
 section: Tutorials
 ---
 
-**Last updated 6th December, 2021.**
+**Last updated 13th December, 2021.**
 
 <style>
  pre {
@@ -59,7 +59,7 @@ That's because in this tutorial we want to:
 - configure the `OpenIdConnect` flags available for the `kube-apiserver` component of a Managed Kubernetes Service through the OVHcloud Control Panel
 - be able to use the `kubectl` command line with the Keycloak OpenIdConnect provider configured
 
-In this tutorial we are going to install Keycloak on a freshly created OVHcloud Managed Kubernetes Service cluster, we will configure our Keycloak instance, then we will link it to our Kubernetes cluster and TODO:xxx.
+In this tutorial we are going to install Keycloak on a freshly created OVHcloud Managed Kubernetes Service cluster then we will configure Keycloak instance in our Kubernetes cluster as an OIDC provider.
 
 You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb){.external} to reinitialize your cluster before following this tutorial.
 
@@ -549,11 +549,11 @@ kubectl delete namespaces cert-manager
 
 ## Useful resources
 
-- [https://www.keycloak.org/documentation](https://www.keycloak.org/documentation){.external}
-- [https://artifacthub.io/packages/helm/codecentric/keycloak](https://artifacthub.io/packages/helm/codecentric/keycloak){.external}  
-- [https://cert-manager.io/docs/usage/ingress/](https://cert-manager.io/docs/usage/ingress/){.external}  
-- [https://www.keycloak.org/getting-started/getting-started-kube](https://www.keycloak.org/getting-started/getting-started-kube){.external}
-- [https://kubernetes.io/docs/reference/access-authn-authz/authentication/#option-1-oidc-authenticator](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#option-1-oidc-authenticator){.external}
+- [Keycloack documentation](https://www.keycloak.org/documentation){.external}
+- [ArtifactHUB keycloack](https://artifacthub.io/packages/helm/codecentric/keycloak){.external}  
+- [Cert-manager Securing Ingress Resources](https://cert-manager.io/docs/usage/ingress/){.external}  
+- [Keycloak on Kubernetes](https://www.keycloak.org/getting-started/getting-started-kube){.external}
+- [Kubernetes API Access Control documentation](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#option-1-oidc-authenticator){.external}
 
 ## Go further
 

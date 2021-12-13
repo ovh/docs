@@ -5,7 +5,7 @@ excerpt: Secure Your OVHcloud Managed Kubernetes Cluster with Keycloak, an OpenI
 section: Tutorials
 ---
 
-**Last updated 6th December, 2021.**
+**Last updated 13th December, 2021.**
 
 <style>
  pre {
@@ -59,9 +59,9 @@ That's because in this tutorial we want to:
 - configure the `OpenIdConnect` flags available for the `kube-apiserver` component of a Managed Kubernetes Service through the OVHcloud Control Panel
 - be able to use the `kubectl` command line with the Keycloak OpenIdConnect provider configured
 
-In this tutorial we are going to install Keycloak on a freshly created OVHcloud Managed Kubernetes Service cluster, we will configure our Keycloak instance, then we will link it to our Kubernetes cluster and TODO:xxx.
+In this tutorial we are going to install Keycloak on a freshly created OVHcloud Managed Kubernetes Service cluster then we will configure Keycloak instance in our Kubernetes cluster as an OIDC provider.
 
-You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=au){.external} to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
@@ -91,7 +91,7 @@ Then install the `cert-manager` operator from its Helm chart:
 helm install ovh-cert-lab jetstack/cert-manager --namespace cert-manager --create-namespace --version v1.6.1 -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/installing-keycloak/files/01-cert-manager/01-cert-manager-definition.yaml
 ```
 
-You should have new Deployments, Service, ReplicaSet and Pods runing in your cluster:
+You should have new `Deployments`, `Services`, `ReplicaSets` and `Pods` running in your cluster:
 
 ```
 $ kubectl get all -n cert-manager
@@ -123,7 +123,7 @@ During this lab, we will use the Let's Encrypt `production` environment to gener
 kubectl --namespace cert-manager apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/installing-keycloak/files/01-cert-manager/02-acme-production-issuer-http01.yaml
 ```
 
-You should have a new ClusterIssuer deployed in your cluster:
+You should have a new `ClusterIssuer` deployed in your cluster:
 
 ```
 $ kubectl get clusterissuer letsencrypt-production -o yaml -n cert-manager | kubectl neat
@@ -146,7 +146,7 @@ spec:
 
 > [!warning]
 > **Warning!**
-> You can use [neat](https://github.com/itaysk/kubectl-neat) kubectl plugin in order to remove useless informations in your Kubernetes manifests files.
+> You can use the [neat](https://github.com/itaysk/kubectl-neat) kubectl plugin in order to remove useless information in Kubernetes manifest files.
 
 ### An Ingress Nginx to publicly expose Keycloak
 
@@ -191,7 +191,7 @@ If you need to customize your `ingress-nginx` configuration, please refer to the
 > [!primary]
 >
 > Installing this `ingress-nginx` controller will order a LoadBalancer provided by OVHcloud *(this load balancer will be monthly billed)*.  
-For more information, please refer to the following documentation: [Using the OVHcloud Managed Kubernetes LoadBalancer](https://docs.ovh.com/gb/en/kubernetes/using-lb/)
+For more information, please refer to the following documentation: [Using the OVHcloud Managed Kubernetes LoadBalancer](https://docs.ovh.com/au/en/kubernetes/using-lb/)
 
 To check if the `LoadBalancer` is up and running, execute the following CLI in a console:
 
@@ -215,7 +215,7 @@ $ kubectl -n ingress-nginx get service ovh-ingress-lab-ingress-nginx-controller 
 135.125.84.194
 ```
 
-If you are using the [OVHcloud Domain name product](https://www.ovhcloud.com/en-au/domains/), you can follow this documentation to configure your DNS record to link it to the public IPv4 address associated to your LoadBalancer: [Editing an OVHcloud DNS zone](https://docs.ovh.com/au/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+If you are using the [OVHcloud Domain name product](https://www.ovhcloud.com/en-gb/domains/), you can follow this documentation to configure your DNS record to link it to the public IPv4 address associated to your LoadBalancer: [Editing an OVHcloud DNS zone](https://docs.ovh.com/au/en/domains/web_hosting_how_to_edit_my_dns_zone/).
 
 If you are using an external DNS provider, please configure your domain before reading the rest of this tutorial.
 
@@ -382,8 +382,8 @@ The first user connection required an initial password, so let's create it:
 
 ### Configure Keycloak instance in your Kubernetes cluster as an OIDC provider
 
-Now you have a working keycloak, and created a User, you can log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
-Go to the `Public Cloud`{.action} section, and then in the sidebar, click on `Managed Kubernetes Service`{.action} .
+Now you have a working keycloak, and created a User, you can log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=au).
+Go to the `Public Cloud`{.action} section, and then in the sidebar, click on `Managed Kubernetes Service`{.action}.
 
 ![OVHcloud Kubernetes section](images/kube.png)
 
@@ -403,14 +403,14 @@ You should have a new pop-up. Fill it with our Keycloak informations like this:
 
 ![OIDC popup](images/popup.png)
 
-In our example, the Provider URL is: https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication.
+In our example, the Provider URL is: `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication`.
 
-Explanation:
+Explanations:
 
-- In `Provider URL` you should copy/paste the URL to access to the previously defined realm: https://`${your-configured-root-url}`/auth/realms/`${your-configured-realm-name}`
+- In `Provider URL` field you should copy/paste the URL to access to the previously defined realm: https://`${your-configured-root-url}`/auth/realms/`${your-configured-realm-name}`
 
 In our example we used the `ovh-lab-k8s-oidc-authentication` realm
-issuerUrl: https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication
+issuerUrl: `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication`.
 
 - In `Client ID` you should copy/paste the name of the Keycloak client previously defined.
 
@@ -549,11 +549,11 @@ kubectl delete namespaces cert-manager
 
 ## Useful resources
 
-- [https://www.keycloak.org/documentation](https://www.keycloak.org/documentation){.external}
-- [https://artifacthub.io/packages/helm/codecentric/keycloak](https://artifacthub.io/packages/helm/codecentric/keycloak){.external}  
-- [https://cert-manager.io/docs/usage/ingress/](https://cert-manager.io/docs/usage/ingress/){.external}  
-- [https://www.keycloak.org/getting-started/getting-started-kube](https://www.keycloak.org/getting-started/getting-started-kube){.external}
-- [https://kubernetes.io/docs/reference/access-authn-authz/authentication/#option-1-oidc-authenticator](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#option-1-oidc-authenticator){.external}
+- [Keycloack documentation](https://www.keycloak.org/documentation){.external}
+- [ArtifactHUB keycloack](https://artifacthub.io/packages/helm/codecentric/keycloak){.external}  
+- [Cert-manager Securing Ingress Resources](https://cert-manager.io/docs/usage/ingress/){.external}  
+- [Keycloak on Kubernetes](https://www.keycloak.org/getting-started/getting-started-kube){.external}
+- [Kubernetes API Access Control documentation](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#option-1-oidc-authenticator){.external}
 
 ## Go further
 
