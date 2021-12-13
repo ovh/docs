@@ -12,7 +12,7 @@ order: 6
 
 Le plupart des services créés chez OVHcloud sont gérés par plusieurs contacts. Chacun de ces contacts est associé à un identifiant client. 
 
-**Apprenez comment gérer les contacts de vos services OVHcloud.**
+**Apprenez à gérer les contacts de vos services OVHcloud.**
 
 > [!warning]
 >
@@ -44,7 +44,7 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ## En pratique
 
-### Accéder à la gestion des contacts (<a name="gestion_des_contacts"></a>)
+### Accéder à la gestion des contacts <a name="gestion_des_contacts"></a>
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite, puis cliquez sur `Gestion des contacts`{.action}.
 
@@ -66,20 +66,18 @@ Un e-mail va être envoyé aux contacts impliqués dans ce processus de modifica
 
 > [!warning]
 >
-> Aucun changement de contact ne sera autorisé si l'ancien ou le nouveau compte client concerné ont une ou plusieurs factures impayées.
+> Aucun changement de contact ne sera autorisé si l'ancien ou le nouveau compte client concernés ont une ou plusieurs factures impayées.
 >
 
-#### Je suis contact administrateur (<a name="administrateur"></a>)
+#### Je suis contact administrateur <a name="administrateur"></a>
 
 En qualité d'administrateur, vous pouvez réaliser plusieurs manipulations sur les contacts d'un service :
 
-- Nommer un nouveau contact sur la gestion technique et/ou la facturation. Une validation de votre part ainsi que de celle du nouveau contact  seront nécessaires . L'ancien contact recevra un e-mail l'informant de la modification si celle-ci arrive à son terme.
-
+- Nommer un nouveau contact sur la gestion technique et/ou la facturation. Une validation de votre part ainsi que de celle du nouveau contact  seront nécessaires. L'ancien contact recevra un e-mail l'informant de la modification si celle-ci arrive à son terme.
 - Récupérer la gestion technique et/ou la facturation. Vous devrez valider cette demande. L'ancien contact recevra un e-mail l'informant de la modification. 
+- Désigner un nouveau contact administrateur à votre place. Une validation par e-mail de votre part ainsi que de celle du nouveau contact seront nécessaires. 
 
-- Désigner un nouveau contact administrateur à votre place. Une validation par mail de votre part ainsi que de celle du nouveau contact seront nécessaires. 
-
-#### Je suis contact technique (<a name="technique"></a>)
+#### Je suis contact technique <a name="technique"></a>
 
 Vous pouvez uniquement désigner un autre contact technique pour vous remplacer. Une validation par mail de votre part ainsi que de celle du nouveau contact technique seront nécessaires.
 
@@ -112,20 +110,25 @@ Si un seul contact a validé le changement, un message apparaîtra, vous informa
 
 Le changement de contact sera effectif quelques minutes après que les deux contacts aient validé la demande. Ils recevront ensuite un e-mail les informant que la demande a bien été traitée.
 
-### Exemple : donner la gestion technique de votre site à votre webmaster
+### Exemple de cas concret : confier la gestion technique de votre site à votre webmaster <a name="use-case"></a>
 
-Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](https://www.ovhcloud.com/fr/web-hosting/ecommerce-website/). Vous avez fait appel à l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/) et il vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
+Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](https://www.ovhcloud.com/fr/web-hosting/ecommerce-website/).<br>Vous avez fait appel à l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/) et clui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
 
 > [!warning]
 >
 > Nous vous déconseillons de donner à un tiers, quel qu'il soit, les identifiants d'accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 >
 
-Dans cette situation, donnez à votre prestataire le droit « [contact technique](#gestion_des_contacts) » sur votre hébergement OVHcloud. Cet accès lui permettra d'effectuer les manipulations nécessaires à la mise en ligne de votre site (ajout d'un domaine ou sous-domaine dans le multisite, installation d'un module en 1 clic, modification du mot de passe FTP ou de la base de données, création d'un certificat SSL, etc).
+Dans cette situation, vous pouvez confier à votre prestataire le droit « [contact technique](#gestion_des_contacts) » sur votre hébergement OVHcloud.<br>
+Cet accès lui permettra d'effectuer les manipulations nécessaires à la mise en ligne de votre site (ajout d'un domaine ou sous-domaine dans le multisite, installation d'un module en 1 clic, modification du mot de passe FTP ou de la base de données, création d'un certificat SSL, etc...).
 
-Si votre nom de domaine n'est pas relié à votre hébergement et que vous souhaitez confier les opérations nécessaires à votre webmaster, donnez-lui également le droit « [contact technique](#gestion_des_contacts) » sur la [zone DNS](../../domains/editer-ma-zone-dns/) de votre domaine.
+Si votre nom de domaine n'est pas relié à votre hébergement et que vous souhaitez aussi confier les opérations nécessaires à votre webmaster, donnez-lui alors le droit « [contact technique](#gestion_des_contacts) » sur la [zone DNS](../../domains/editer-ma-zone-dns/) de votre domaine.
 
-Le droit « [contact technique](#gestion_des_contacts) » ne permet pas de modifier les contacts administrateur ou facturation d'un service. Il ne donnera pas à votre webmaster les accès à vos factures ou commandes, au renouvellement de vos services ou à vos moyens de paiement. Il ne lui permettra pas non plus d'effectuer le [transfert de la gestion de votre nom de domaine](../../domains/transfert-sortant-dun-nom-de-domaine-generique-ou-geographique/) vers un autre hébergeur ou de [changer son propriétaire](../../domains/changement-proprietaire-domaine/). En tant que [contact administrateur](#administrateur), vous pourrez enfin à tout moment récupérer le « [contact technique](#technique) » de votre service.
+Le droit « [contact technique](#gestion_des_contacts) » ne permet pas de modifier les contacts administrateur ou facturation d'un service.<br>
+Il ne donnera pas à votre webmaster les accès à vos factures ou commandes, au renouvellement de vos services ou à vos moyens de paiement.<br>
+Il ne lui permettra pas non plus d'effectuer le [transfert de la gestion de votre nom de domaine](../../domains/transfert-sortant-dun-nom-de-domaine-generique-ou-geographique/) vers un autre hébergeur ou de [changer son propriétaire](../../domains/changement-proprietaire-domaine/).
+
+En tant que [contact administrateur](#administrateur), vous pourrez enfin à tout moment récupérer le « [contact technique](#technique) » de votre service.
 
 ### Cas particulier d’un propriétaire de domaine
 
