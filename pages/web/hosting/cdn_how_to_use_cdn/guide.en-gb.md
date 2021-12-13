@@ -6,50 +6,50 @@ legacy_guide_number: g1290
 section: 'Website optimisation'
 ---
 
-**Last updated 26th April 2021**
+**Last updated 09/12/2021**
 
 ## Objective
 
-If you want to improve user experience by speeding up your website, the most effective technique is to enable the CDN (Content Delivery Network) option. This allows you to cache static files, such as images, CSS and JavaScript, on the closest servers to your visitors.
+If you want to improve user experience by speeding up your website, the most effective technique is to enable a CDN (Content Delivery Network). This allows you to cache static files, such as images, CSS and JavaScript, on the closest servers to your visitors.
 
-**This guide explains how to manage the CDN option on your Web Hosting plan.**
+**Find out how to manage a CDN option on your web hosting plan.**
 
 ## Definition
 
 **How does a CDN work?**
 
-The CDN (Content Delivery Network) is literally a network dedicated to delivering content. It uses several servers around the world to display your website. The closer these servers are to your users, the faster your website performs for them.
+The CDN (Content Delivery Network) is literally a network dedicated to delivering content. It uses several servers around the world to display your website. The closet these servers are to your users, the faster your website performs for them.
 
-In order for this to work, each server stores a part of your website in its cached memory. It is generally advised that you include so-called "static" files: images, JavaScript files and CSS, that help your website to run but are rarely modified.
+In order to work, each server stores a part of your website in its cached memory. It is generally advised that you include so-called ‘static’ files: images, JavaScript files and CSS, that help your website to work but are rarely modified.
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- An [OVH Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}
 
 ## Instructions
 
-###  Enabling the CDN option
+###  Set up the CDN option
 
 > [!primary]
 > 
-> The CDN option is already included in the "Performance" Web Hosting plans.
+> The CDN option is already included in Performance web hosting plans.
 
-#### If the CDN option is not ordered or enabled on your Web Hosting plan
+####  If the CDN option is not ordered or enabled on your web hosting plan
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
+Log in to the OVHcloud Control [Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then select `Web Cloud`{.action}. Click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the relevant web hosting plan. Click on `...`{.action} to the right of “CDN option” then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
 
 > [!primary]
 > 
-> If you have a CDN option from before 11/19/2020, you can order the new Shared CDN offer by clicking `Upgrade CDN to a later version`{.action}.
+> If you have a CDN option before 11/19/2020, you can order the new Shared CDN offer by clicking `Update CDN to higher`{.action} version.
 
 ![CDN](images/manage_CDN_01.png){.thumbnail}
 
 You will be redirected to a page where you can generate a purchase order. Once the order is paid, the service will be available within a few minutes.
 
-#### If the CDN option is already enabled on your Web Hosting plan
+#### If the CDN option is already enabled on your web hosting plan
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
+Log in to the OVHcloud Control [Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then select `Web Cloud`{.action}. Click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the relevant web hosting plan. On the `Multisite`{.action} tab, click on the cog to the right of the multisite entry, then click on `Edit`{.action}.
 
 Select the “Activate the CDN” option, click `Next`{.action} and then `Confirm`{.action}.
 
@@ -57,126 +57,202 @@ Select the “Activate the CDN” option, click `Next`{.action} and then `Confir
 
 > [!warning]
 > 
-> If  an external (non-OVHcloud) domain name has been added to the Web Hosting as Multisite, you must enter the CDN’s IP address in the domain name’s DNS zone.<br>
-> Check the [IP address list for Web Hosting clusters](../list-of-ip-addresses-of-web-hosting-clusters/) to find the specific IP address for your cluster’s CDN.
+> If  an external (non-OVHcloud) domain name has been added to the web hosting multisite, you must enter the CDN’s IP address in the domain name’s DNS zone.<br>
+> Check the [IP address list for Web Hosting clusters](https://docs.ovh.com/gb/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/){.external} to find the specific IP address for your cluster’s CDN.
 
  
-**Why is it not possible to use a geolocated IP with the CDN option?** <br>
+**Why can't I get a geolocated IP with the CDN option?** <br>
 <br>
-The CDN uses the principle of "IP Anycast". You do not request the same server depending on your geolocation, which is very efficient for reducing the loading time of your static files. Therefore, a geolocated IP address is not needed. <br>
-In terms of SEO (search engine optimisation), the speed at which your website loads is more important that the geolocation of the IP addresses.
+The CDN uses the IP Anycast methodology. You do not request the same server depending on your geolocation, which is very efficient for reducing the loading time of your static files. Therefore, a geolocated IP address is not needed. <br>
+For SEO (search engine optimisation), the speed of your website’s display is more important than the geolocation of your hosting plan’s IP address.
 
-### Managing your Shared CDN 
+### Manage your Shared CDN 
 
 > [!primary]
 > 
-> The Shared CDN option is already included in all "Performance" Web Hosting plans, and has been available to order since 11/19/20. For older versions, please refer to the section [Managing your CDN (legacy version)](./#managing-your-cdn-legacy-version_2).
+> The CDN shared option is already included in Performance web hosting plans, and has been available to order since 11/19/20. For older versions, please refer to [Manage your CDN (historical version)](#cdnbusiness).
 
-#### Clearing the Shared CDN cache
+#### Clear the Shared CDN cache
 
-It is sometimes useful to clear the CDN cache, particularly when you modify static files - for example, when launching a new version of your site. You can clear the cache for each of your Multisite entries.
+It is sometimes useful to clear the CDN cache, particularly when you modify static files - for example, when launching a new version of your site. You can clear the cache for each of your multisite entries.
 
-Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the Multisite entry, then select `Clear CDN`{.action}.
+Go to the `Multisite`{.action} tab for your web hosting plan, click on `...`{.action} to the right of the multisite entry, then `Purge the CDN`{.action}.
 
 ![CDN](images/manage_sharedCDN_01.png){.thumbnail}
 
-#### Configuring Shared CDN options
+#### Configure Shared CDN options
 
-Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the multisite entry, then on `Modify the CDN`{.action}. 
-
-You can also click the pen icon to the right of a Multisite entry when the CDN option is enabled. Then click `Edit your CDN`{.action}.
+Go to the `Multisite`{.action} tab for your web hosting plan, click on `...`{.action} to the right of the multisite entry, then on `Modify the CDN`{.action}. 
 
 > [!warning]
 > 
-> Some options are locked on the "Personal" plan.
+> Some options are locked on the Basic solution, and require you to sign up to [CDN security](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/) or [CDN Advanced](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/)
 
 ![CDN](images/manage_sharedCDN_02.png){.thumbnail}
 
-- **Always online**: Allows CDN data to be kept online in the event of a server failure.
+- **Still online**: Allows CDN data to be kept online in the event of a server failure.
 
 - **HTTP/2**: Protocol that enables your website to perform better in terms of security and latency.
 
-- **Dev-mode**: Allows you to disable the cache during your website development.
+- **Dev-mode**\: allows you to disable the cache during your website development.
 
-- **Brotli**: Compression type that optimises the size of your cached files.
+- **Brotli**\:  compression type that optimises the size of your cached files.
 
-- **Cache rule**: Create up to 5 rules. They will set the cache refresh rate for specific resources on your site ([see section below](./#creating-a-cache-rule)).
+- **Cache** rule: Create up to 5 rules. They set the cache refresh rate for specific resources on your site. ([follow the next step](#cacherules)). 
 
 Once you have chosen your options, click `Apply configuration`{.action}, then `Confirm configuration`{.action} in the next window.
 
 ![CDN](images/manage_sharedCDN_03.png){.thumbnail}
 
-##### **Creating a cache rule**
+##### **Create a cache rule** <a name="cacherules"></a>
 
-To add a cache rule on one of your website’s elements, go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the multisite entry, then `Modify CDN`{.action}.
+To add a cache rule on one of your website’s elements, go to the `Multisite`{.action} tab for your web hosting plan, click on `...`{.action} to the right of the multisite entry, then `Configure the CDN`{.action}.
 
-Under **Cache rule**, click the `Add a rule`{.action} button.
+Under **Cache** rules, click the `Add a rule`{.action} button.
 
 ![CDN](images/manage_sharedCDN_04.png){.thumbnail}
 
-- **Rule name**: Give your rule a name.
+- **Rule** name: Give your rule a name.
 
-- **URI**: Enter the subset of resources for your website via its path in your website’s directory. For the CDN Basic and CDN Security offers, you can only enter a file extension.
+- **URI**: Enter the subset of your website’s resources via their URL path. For CDN-Basic and CDN-Security offers, you can only enter a file extension. 
 
-- **Lifespan**: specify the caching time for the chosen resource.
+- **Duration**\: specify the caching time for the chosen resource.
 
-- **Order**: Order your rules by execution order (lowest to highest).
+- **Rating**:  Order your rules by execution order (lowest to highest).
 
-Once you have made your choices, click the `Create the rule`{.action} button.
+Once you have made your choices, click the `Create rule`{.action} button.
 
-Rules will appear in the list. You can modify a rule by clicking on `...`{.action}, then on `Modify rule`{.action} or delete it by clicking `Delete the rule`{.action}.
+Rules appear in a list. You can edit a rule by clicking `...`{.action} to the right of the rule, then `Edit Rule`{.action}. or delete it by clicking `Delete Rule`{.action}.
 
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
-Once you have configured your rules and chosen your options, click `Apply configuration`{.action}, then click `Confirm configuration`{.action} in the next window.
+Once you have configured your rules and chosen your options, click `Apply configuration`{.action}, then `Confirm configuration`{.action} in the next window.
 
-#### Configuring CDN Security options
+> [!warning]
+>
+> To get a higher quota of rules and more settings than creating a cache rule, you can choose the Advanced [CDN option](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/)
+
+#### Configure CDN Security options
+
+Go to the `Multisite`{.action} tab for your web hosting plan, click on `...`{.action} to the right of the multisite entry, then on `Modify the CDN`{.action}. 
 
 > [!primary]
-> The options presented below require a subscription to [CDN Security](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/) or [CDN Advanced](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/).
+>  the options presented below require subscription to [CDN security](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/) or [CDN Advanced](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/)
 
-Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the multisite entry, then `Modify the CDN`{.action}. 
-
-You can also click the pen icon to the right of a Multisite entry when the CDN option is enabled. Then click `Edit your CDN`{.action}.
+Go to the `Multisite`{.action} tab for your web hosting plan, click on `...`{.action} to the right of the multisite entry, then `Modify the CDN`{.action}. 
 
 - **Cross-Origin Resource Sharing (CORS)**: In the list, enter the external domain names that will be authorised to access your website’s resources for the purpose of sharing them. 
 
-Once you have enabled this feature, click `Edit list of external resources`{.action}  to add the domain names that are authorised to share your resources.
+	Once you have enabled this feature, click `Edit List of External`{.action} Resources to add the domain names that are authorised to share your resources.
 
-![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
+	![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
 
-Once you have completed your list, click `Confirm`{.action}.
+	Once you have completed your list, click `Confirm`{.action}.
 
 > [!primary]
-> When you enable the CORS option without specifying any domain names in the list, all domain names will be allowed to use your website's resources.
+>
+> When you enable the CORS option without specifying any domain names in the list, this means that all domain names are allowed to use your website's resources.
 
-- **HTTPS-Redirect**: Protect all traffic to your website by redirecting it to the HTTPS protocol temporarily or permanently.
+- **HTTPS-redirect**: Protect all traffic to your website by redirecting it to HTTPS protocol temporarily or permanently.
 
-Once you have enabled the feature, click the drop-down menu to choose between `Permanent redirection (301)` or `Temporary redirection (302)`.
+	Once you have enabled the feature, click the drop-down menu to choose between `Permanent redirection (301)` or Temporary `redirection (302)`.
 
-![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
+	![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
 
-- **HTTP Strict Transport Security (HSTS)**: Force HTTPS access to your website. This way, your hosting is secure against downgrade (or rollback) attacks.
+- **HTTP Strict Transport Security (HSTS)**: Only require access to your website in HTTPS This way, your web solution is secure against downgrade (or fallback) attacks.
 
-Once the feature is enabled, determine the lifetime for which the browser will apply HSTS on your website. 
+	Once the feature is enabled, determine the lifetime for which the browser will apply HSTS on your website. 
 
-![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
+	![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
 
 > [!primary]
 > 
-> When you enable the HSTS feature on your website, it will enforce the use of the HTTPS protocol on your browser until the end of the period known as `maximum age`, even after disabling the feature in your Control Panel. However, when the cache is cleared on the browser that has already visited your site, the browser will apply the new HSTS status.
+> When you enable the HSTS feature on your website, it will force HTTPS protocol on your browser until the end of the period known as \`maximum age\`, even after disabling the feature in your Control Panel. However, when the cache is cleared on the browser that has already visited your site, the browser will apply the new HSTS status.
 
-- **Mixed content**: Enforce the integrity of all your web pages's content. Pages will be loaded securely, contributing to an optimal user experience. All of your website’s internal and external resources must be available in HTTPS, to avoid a browser error.
+- **Mixed content**: Force all content from your web pages to load securely, for the best user experience. All of your website’s resources, internal and external, must be available in HTTPS, to avoid a browser security error.
 
-- **Application** firewall: The **W**eb **A**pplication **F**irewall (WAF) protects your website from fraudulent attacks such as code injections, illegitimate requests or data theft. It covers the main known vulnerabilities on the web by filtering requests and packets transmitted (the list of vulnerabilities is managed by OVHcloud and regularly updated).  
+- **Application** firewall: The **W**eb **A**pplication **F**irewall (WAF) protects your website from fraudulent attacks such as code injections, illegitimate requests or data theft. It covers the main known vulnerabilities on the web by filtering requests and packets transmitted (the list of vulnerabilities is managed by OVHcloud, and is regularly updated to extend your protection).  
 
 > [!warning]
->  
-> For the installation of an [OVHcloud 1-click module](../web_hosting_web_hosting_modules/), the WAF must be disabled in order to prevent the installation of the module from being blocked.
+>
+> To install an OVHcloud[ 1-click ](../modules-en-1-clic/)module, the WAF must be disabled in order to prevent the module installation from being blocked.
 
 > [!primary]
 >  
 > WAF is fully managed by OVHcloud, and the list of vulnerabilities is regularly updated.
+
+#### Configure Advanced CDN options
+
+Go to the `Multisite`{.action} tab for your web hosting plan, click on `...`{.action} to the right of the multisite entry, then on `Modify the CDN`{.action}. 
+
+> [!primary]
+>
+>  The options presented below require subscription to the Advanced [CDN](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/)
+
+- **Geolocation** HTTP Header: Determine the country of the visitor to customise the proposed experience. The country code is automatically added in the header of each request to be handled by your original server. The identification elements in the header are called `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
+
+- **Prefetch**: Anticipate the next resource being loaded. Preload it automatically in the CDN cache using your website’s *header link*. This mechanism is mainly used to load CSS, JavaScript, images, favicons or web fonts that are required by the website theme. 
+
+	In the example below, when you are on the current page displaying \`Hello\`, a subquery triggers the preloading of the resource `/cache/style.css`.  
+
+	```	
+	<?php
+	header("Link: </cache/style.css>; rel=prefetch");
+	print 'Hello'
+	?> 
+	```
+
+- **Mobile redirect**:  Automatically redirect “Mobile” visitors to an optimised website. Choice: redirect systematically to the root of another website, or keep the URL by replacing only the domain (or subdomain).
+
+- **Advanced** Purge: Customise your purge by choosing which elements of the cache to clear: the entire site, a folder, a URI, a file extension, or using a custom regular expression. 
+
+	In the Multisite tab, click on the `...`{.action} button to the right of the multisite entry, then `Purge CDN`{.action}. 
+
+	![CDN](images/manage_CDNadvanced_01.png){.thumbnail}
+
+- **Query String**: Content caching management, based on the parameters (also called *Query String*) of the URL query. Depending on your configuration, choose the behaviour of the CDN cache:
+	- *Disabled*: The resource is cached with its unsorted parameters. This will create, for example, 2 iterations in the CDN cache for 2 URLs with the same parameters in a different order.
+	- *Enabled - Sort Settings*: The resource is cached by sorting its parameters. You will need to sort it before storing the URL in the CDN cache. For example, only one iteration will be kept for 2 URLs with the same settings in a different order.
+	- *Enabled - Ignore settings*: The resource is cached without any parameters. The CDN cache will not take into account the parameters entered in the URL, so it will store the URL without the parameters in the cache.
+
+- **Prewarm**: Force permanent caching of your critical resources. The CDN automatically anticipates and refreshes the cache, without waiting for a user request. This function applies only to static content, with a TTL greater than 0, and the resource must not exceed 1GB. A gauge tells you the level of resource consumption in *Prewarm*, depending on your URL list. The total resources called by these URLs must not exceed 1GB.
+
+	To define the list of URLs that should be in *Prewarm*, click `Edit URL List`{.action}.
+
+	Using the `Protocol`, `Domain Name`, and `Resource` Path fields, type one of the links to a resource that you want to add to the **Prewarm** function, and then click `Add`{.action}.
+
+	A list is created in the lower frame, with all the links you have listed, you can delete the link of your choice by selecting it, then clicking `Remove`{.action}.
+
+	![CDN](images/manage_CDNadvanced_02.png){.thumbnail}
+
+- **Cache rule**: Create up to 100 rules. They set the cache refresh rate for specific resources on your site. Continue reading the guide in [the next step](#cacherulesadv) for more information.
+
+Once you have chosen your options, click `Apply configuration`{.action}, then `Confirm configuration`{.action} in the next window.
+
+##### **Create an advanced caching rule** <a name="cacherulesadv"></a>
+
+To add a cache rule on one of your website’s elements, go to the `Multisite`{.action} tab for your web hosting plan, click on `...`{.action} to the right of the multisite entry, then `Configure the CDN`{.action}.
+
+Under **Cache** rules, click the `Add a rule`{.action} button.
+
+![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
+- **Rule** name: Give your rule a name.
+- **Resource** type: Choose from the choices below:
+	- **Extension**: Please enter a valid file extension without putting a period, for example: css
+	- **File**:  Please enter a valid path for one of the folders in the root directory of your website.
+	- **Custom** regular expression: It applies to all URIs on your website.
+	- **URI**: Enter the subset of your website’s resources via their URL path.
+- **Resource**\: set attributes based on the type of resource you choose.
+- **Duration**: Specify the cache duration for the chosen resource.
+- **Classification**:  Order your rules by execution order (lowest to highest).
+
+Once you have made your choices, click the `Create rule`{.action} button.
+
+Rules appear in a list. You can edit a rule by clicking `...`{.action} to the right of the rule, then `Edit Rule`{.action}. You can delete it by clicking `Delete Rule`{.action}.
+
+![CDN](images/manage_CDNadvanced_04.png){.thumbnail}
+
+Once you have configured your rules and chosen your options, click `Apply configuration`{.action}, then `Confirm configuration`{.action} in the next window.
 
 ### View CDN statistics
 
@@ -184,30 +260,29 @@ In the `Multisites`{.action} tab of your hosting, under the table, you can view 
 
 ![CDN](images/manage_CDNstat_01.png){.thumbnail}
 
-### Managing your CDN (legacy version)
+### Manage your Business CDN <a name="cdnbusiness"></a>
 
 > [!primary]
 > 
-> The CDN option is already included in the "Performance" Web Hosting plans or plans ordered before 11/19/20.
+> The CDN option is already included in Performance web hosting plans or plans ordered before 19/11/2020.
 
-#### Clearing the CDN cache
+#### Clear the CDN cache
 
 It is sometimes useful to clear the CDN cache, particularly when you modify static files - for example, when launching a new version of your site. In this case, you can completely clear the CDN cache.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Clear cache`{.action}.
+Log in to the OVHcloud Control [Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then select `Web Cloud`{.action}. Click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the relevant web hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Clear cache`{.action}.
 
 ![CDN](images/manage_CDN_02.png){.thumbnail}
-
 
 ### How do I cache my files in the CDN?
 
 **Using a CMS**
 
-The main CMSs distribute several plugins that allow static files to be cached so that they are automatically included by the CDN. Others automatically configure static files by enabling an integrated caching to the CMS. For further information, please refer to the official documentation for the CMS or plugin that you use.
+The main CMS offer several plugins that allow static files to be cached so that they are automatically taken into account by the CDN. Others automatically configure static files by enabling an integrated caching to the CMS. For further information, please refer to the official documentation for the CMS or plugin licensor that you use.
 
 **Without using a CMS**
 
-If you are not using a CMS, you can also use the CDN cache. To do this, you must add headers to the HTTP requests. There are several ways in which you can add these headers. One of the easiest ways is to define rules within a .htaccess file according to the file extensions.
+If you are not using a CMS, you can also use the CDN cache. To do this, you must add headers to the HTTP requests. There are several ways in which you can add these headers. One of the easiest ways is to define rules within a .htaccess file, depending on the file extensions.
 
 ```htaccess
 1. # Cache images for 1 week
@@ -222,28 +297,28 @@ If you are not using a CMS, you can also use the CDN cache. To do this, you must
 ```
 > [!warning]
 >
-> Caching by using HTTP headers results in caching within the CDN but also within your users’ browsers. Therefore, to prevent your visitors from seeing an older cached version, it is recommended that you rename the files with every new version.
+> Caching using HTTP headers results in caching within the CDN but also within your users’ browsers. Therefore, to prevent your visitors from seeing an older cached version, it is recommended that you rename the files with every new version.
 > 
 
-### Disabling the CDN option
+### Disable the CDN option for a website
 
-This action allows you to deactivate the CDN for one or more of your Multisite entries without removing the CDN option from your Web Hosting.
+This action allows you to disable the CDN for one or more of your multisite entries, without removing the CDN option from your web hosting.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant the Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
+Go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then select `Web Cloud`{.action}. Click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the relevant web hosting plan. In the `Multisite`{.action} tab, click `...`{.action} to the right of the multisite entry, then `Modify`{.action}.
 
 Untick “Activate the CDN”, click `Next`{.action} and then `Confirm`{.action}.
 
 ![CDN](images/manage_CDN_03.png){.thumbnail}
 
-### Cancelling the CDN option
+### Delete the CDN option on your web hosting plan
 
-This action will remove the CDN option from your entire Web Hosting solution.
+This action will remove the CDN option from your entire web hosting solution.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant the Web Hosting plan. Click `...`{.action} to the right of “CDN option”, then on `Cancel the CDN`{.action}.
+Go to the OVHcloud Control [Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then select `Web Cloud`{.action}. Click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the relevant web hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Cancel the CDN`{.action}.
 
 ![CDN](images/manage_CDN_04.png){.thumbnail}
 
-Click `Confirm`{.action} to continue with the cancellation.
+Click `Confirm`{.action} to confirm the cancellation.
 
 > [!warning]
 >
@@ -251,15 +326,15 @@ Click `Confirm`{.action} to continue with the cancellation.
 > 
 
 
-### Checking that your CDN is working
+### Check that your CDN is working
 
-You can confirm that the CDN is active on your domain name via a terminal with the following command:
+You can check that the CDN is active on your domain name via a terminal with the following command:
 
 ```
-curl -i http://yourpersonaldomain.ovh/
+curl -i http://yourpersonnaldomain.ovh/
 ```
 
-If your domain name is being processed by the CDN, you will receive a result like the one below:
+If your domain name is being processed by the CDN, you will receive a result like the below:
 
 ```
 HTTP/1.1 200 OK
@@ -275,9 +350,10 @@ Accept-Ranges: bytes
 Transfer-Encoding: chunked
 X-IPLB-Instance: 12345
 ```
+
 The “*X-CDN*” headers confirm that the domain is running through the CDN.
 
-If the domain name is not running through the CDN, you will receive a result similar to the following:
+If the domain name is not running through the CDN, you will receive a result like the below:
 
 ```
 HTTP/1.1 200 OK
