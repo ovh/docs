@@ -6,7 +6,7 @@ section: Kafka
 order: 1
 ---
 
-**Last updated October 25<sup>th</sup>, 2021**
+**Last updated December 13<sup>th</sup>, 2021**
 
 ## Objective
 
@@ -43,6 +43,7 @@ Kafka nodes have to be in the same region. Multi-AZ is currently not supported.
 The Public Cloud Databases offer supports the following Kafka versions:
 
 - Kafka 2.8
+- Kafka 3.0
 
 You can folllow Kafka Release Cycle on their official page : <https://kafka.apache.org/downloads>
 
