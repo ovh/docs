@@ -403,7 +403,7 @@ You should have a new pop-up. Fill it with our Keycloak informations like this:
 
 ![OIDC popup](images/popup.png)
 
-In our example, the Provider URL is: https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication.
+In our example, the Provider URL is: `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication`.
 
 Explanation:
 
