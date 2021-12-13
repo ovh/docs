@@ -106,7 +106,7 @@ Vous pouvez tous les activer si vous le souhaiter.
 
 - Enfin, nous devons attribuer un nom et, si nous le souhaitons, une description de la nouvelle règle afin de faciliter son utilisation:
 
-![Step7-01](images/step7-01.PNG){.thumbnail}
+![Step7_01](images/step7-01.PNG){.thumbnail}
 
 Cliquez sur le bouton `Terminer `{.action} pour terminer le processus et créer la nouvelle règle dans Windows Server 2019.
 
