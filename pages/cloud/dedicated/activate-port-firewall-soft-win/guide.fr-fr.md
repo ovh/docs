@@ -65,23 +65,54 @@ Dans la fenêtre suivante, vous définissez le type de port à activer:
 ### Etape 5 : Définir le type port à activer
 Dans la fenêtre suivante, nous définirons le type de port à activer:
 
-
 ![Step5](images/step5.PNG){.thumbnail}
 
 > [!primary]
 >
 > - TCP (protocole de contrôle de transmission)
-> C’est un protocole orienté connexion, c’est-à-dire qu’avec TCP, il sera possible de créer des connexions entre elles afin d’envoyer des flux de données, ce protocole >garantit que les données sont livrées au destinataire sans erreur et dans le même ordre dans lequel elles ont été envoyées. transmis.
+> C’est un protocole orienté connexion, c’est-à-dire qu’avec TCP, il sera possible de créer des connexions entre elles afin d’envoyer des flux de données, ce protocole garantit que les données sont livrées au destinataire sans erreur et dans le même ordre dans lequel elles ont été envoyées. transmis.
 >
 > - UDP (User Datagram Protocol – Protocole de datagramme utilisateur)
-> C’est un protocole non orienté vers la connexion, son développement repose sur l’échange de datagrammes et facilite l’envoi de datagrammes à travers le réseau qu’il est > nécessaire d’avoir préalablement établi une connexion avec la destination.
+> C’est un protocole non orienté vers la connexion, son développement repose sur l’échange de datagrammes et facilite l’envoi de datagrammes à travers le réseau qu’il est nécessaire d’avoir préalablement établi une connexion avec la destination.
 >
-> Nous pouvons également sélectionner la case « Tous les ports locaux » pour activer tous les ports TCP ou UDP sur le serveur qui n’est pas sécurisé, ou activer la case à >cocher « Ports locaux spécifiques » pour déterminer quel port doit être autorisé sur la base de: aux exigences. 
+> Nous pouvons également sélectionner la case « Tous les ports locaux » pour activer tous les ports TCP ou UDP sur le serveur qui n’est pas sécurisé, ou activer la case à cocher « Ports locaux spécifiques » pour déterminer quel port doit être autorisé sur la base de: aux exigences. 
 >
 
 
+### Etape 6 : Autoriser ou bloquer la connexion
+
+Pour définir l’action que cette règle va avoir, les options suivantes sont disponibles :
+
+- Autoriser la connexion
+Cette option permet une communication complète via ce port.
+
+- Autoriser la connexion si elle est sécurisée
+Cette option permet aux données d’être transmises uniquement si la connexion est authentifiée via Ipsec.
+
+- Bloquer la connexion
+Cette option empêche les données d’être acheminées via ce port.
+
+Sélectionnez l’option`Autoriser la connexion `{.action} et cliquez sur `Suivant `{.action}. 
+
+![Step6](images/step6.PNG){.thumbnail}
+
+### Etape 7 : Définir le profile et le nom du pare-feu à appliquer
+
+- Définir le profile
+Vous pouvez l'utiliser dans les profils public, de domaine ou privé.
+Vous pouvez tous les activer si vous le souhaiter.
+
+![Step7](images/step7.PNG){.thumbnail}
+
+- Enfin, nous devons attribuer un nom et, si nous le souhaitons, une description de la nouvelle règle afin de faciliter son utilisation:
+
+![Step7-01](images/step7-01.PNG){.thumbnail}
+
+Cliquez sur le bouton `Terminer `{.action} pour terminer le processus et créer la nouvelle règle dans Windows Server 2019.
 
 
+Vous pouvons apporter des modifications au niveau de sécurité de la nouvelle règle créée. 
+Avec cette méthode simple, vous pouvez créer et configurer des règles dans le pare-feu Windows Server 2019 et améliorer sa sécurité.
 
 
 ## Aller plus loin
