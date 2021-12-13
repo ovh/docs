@@ -47,14 +47,14 @@ En sélectionnant la section`Règles de trafic entrant `{.action}, toutes les r�
 
 ![Step1](images/step2.PNG){.thumbnail}
 
-###Etape 3 : Créer une nouvelle règle 
+### Etape 3 : Créer une nouvelle règle 
 Pour créer une nouvelle règle dans Windows Server 2019
 Allez dans le menu `Action `{.action}et sélectionnez « Nouvelle règle »
 Cliquez sur l’option`Nouvelle règle `{.action}située dans le panneau de droite.
 
 ![Step3](images/step3.PNG){.thumbnail}
 
-###Etape 4 : Définir le type de règle à activer
+### Etape 4 : Définir le type de règle à activer
 
 En sélectionnant cette option, l’assistant suivant s’affiche pour définir le type de règle à créer. Dans ce cas, vous selectionner la case`Port `{.action}
 
@@ -62,7 +62,7 @@ En sélectionnant cette option, l’assistant suivant s’affiche pour définir 
 
 Dans la fenêtre suivante, vous définissez le type de port à activer:
 
-###Etape 5 : Définir le type port à activer
+### Etape 5 : Définir le type port à activer
 Dans la fenêtre suivante, nous définirons le type de port à activer:
 
 
