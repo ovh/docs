@@ -405,7 +405,7 @@ You should have a new pop-up. Fill it with our Keycloak informations like this:
 
 In our example, the Provider URL is: `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication`.
 
-Explanation:
+Explanations:
 
 - In `Provider URL` you should copy/paste the URL to access to the previously defined realm: https://`${your-configured-root-url}`/auth/realms/`${your-configured-realm-name}`
 
