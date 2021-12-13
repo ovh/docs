@@ -91,7 +91,7 @@ Then install the `cert-manager` operator from its Helm chart:
 helm install ovh-cert-lab jetstack/cert-manager --namespace cert-manager --create-namespace --version v1.6.1 -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/installing-keycloak/files/01-cert-manager/01-cert-manager-definition.yaml
 ```
 
-You should have new Deployments, Service, ReplicaSet and Pods runing in your cluster:
+You should have new `Deployments`, `Services`, `ReplicaSets` and `Pods` running in your cluster:
 
 ```
 $ kubectl get all -n cert-manager
