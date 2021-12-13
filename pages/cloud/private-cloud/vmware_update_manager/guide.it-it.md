@@ -10,7 +10,7 @@ order: 09
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 23/11/2021**
+**Ultimo aggiornamento: 09/12/2021**
 
 ## Obiettivo
 
@@ -86,7 +86,19 @@ Il riassunto di conformità viene aggiornato.
 
 ![Update](images/en09noncompliant.png){.thumbnail}
 
-Ritorna alla sezione `Attached Baselines`, seleziona tutte le linee di database assegnate e clicca su `Remediate`{.action}.
+Ritorna alla sezione `Attached Baselines`, seleziona tutte le linee di base assegnate e clicca su `Stage`{.action}.
+
+![Update](images/en10bisstage.png){.thumbnail}
+
+Seleziona l'host e clicca di nuovo su `Stage`{.action}.
+
+![Update](images/en10terstagea.png){.thumbnail}
+
+Il processo di trasferimento si avvia e durerà in base al numero e alla dimensione delle patch.
+
+![Update](images/en10terstage.png){.thumbnail}
+
+Sempre nella sezione `Attached Baselines`, seleziona tutte le linee di database assegnate e clicca su `Remediate`{.action}.
 
 ![Update](images/en10remediate.png){.thumbnail}
 

@@ -10,7 +10,7 @@ order: 09
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 23.11.2021**
+**Letzte Aktualisierung am 09.12.2021**
 
 ## Ziel
 
@@ -86,7 +86,19 @@ Die Anzeige der Konformitätswerte wird anschließend aktualisiert.
 
 ![Update](images/en09noncompliant.png){.thumbnail}
 
-Gehen Sie zurück zu `Attached Baselines`, wählen Sie alle zugewiesenen *Baselines* aus und klicken Sie auf `Remediate`{.action}.
+Gehen Sie zurück in den Bereich `Attached Baselines`, wählen Sie alle zugewiesenen Basenlinien aus und klicken Sie auf `Stage`{.action}.
+
+![Update](images/en10bisstage.png){.thumbnail}
+
+Wählen Sie den Host aus und klicken Sie erneut auf `Stage`{.action}.
+
+![Update](images/en10terstagea.png){.thumbnail}
+
+Der Transferprozess wird abhängig von Anzahl und Größe der Patches gestartet und fortgesetzt.
+
+![Update](images/en10terstage.png){.thumbnail}
+
+Wählen Sie im Bereich Bereich `Attached Baselines` alle zugewiesenen Basenlinien aus und klicken Sie auf `Remediate`{.action}.
 
 ![Update](images/en10remediate.png){.thumbnail}
 
