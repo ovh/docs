@@ -407,7 +407,7 @@ In our example, the Provider URL is: `https://keycloak.example.com/auth/realms/o
 
 Explanations:
 
-- In `Provider URL` you should copy/paste the URL to access to the previously defined realm: https://`${your-configured-root-url}`/auth/realms/`${your-configured-realm-name}`
+- In `Provider URL` field you should copy/paste the URL to access to the previously defined realm: https://`${your-configured-root-url}`/auth/realms/`${your-configured-realm-name}`
 
 In our example we used the `ovh-lab-k8s-oidc-authentication` realm
 issuerUrl: `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication`.
