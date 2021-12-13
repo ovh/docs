@@ -69,7 +69,19 @@ La quantité de données enregistrée sur votre serveur d'hébergement (Hors bas
 
 Vérifiez que votre logiciel FTP est connecté en « Mode Passif » (Mode de configuration d'un serveur FTP dans lequel le serveur détermine le port de connexion).
 
-Pour FileZilla, par exemple, Cliquez sur `Édition`{.action}, puis `Paramètres`{.action}, `Connexion`{.action}, `FTP`{.action} et choisissez `Passif (recommandé)`{.action}).
+Pour [Filezilla](../mutualise-guide-utilisation-filezilla/), par exemple, Cliquez sur `Édition`{.action}, puis `Paramètres`{.action}, `Connexion`{.action}, `FTP`{.action} et choisissez `Passif (recommandé)`{.action}).
+
+Limitez également la taille de vos imports (L'import de données sur les serveurs mutualisés OVHcloud est limité à 5000 fichiers et dossiers). Effectuez vos imports en plusieurs fois en utilisant des dossiers compressés.
+
+Si vous diposez d'une formule [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), utilisez le SSH pour réaliser vos imports de fichiers sur l'espace de stockage de votre hébergement.
+
+### Je n'arrive pas à supprimer le lien symbolique « index.html » sur mon espace FTP
+
+Ce lien est installé par défaut sur les hébergements mutualisés OVHcloud. Il donne cet affichage :
+
+![site_under_construction](images/site_under_construction.png){.thumbnail}
+
+Si vous n'utilisez pas la fonctionnalité « [Module en 1 clic](../modules-en-1-clic/) », vous devrez utiliser [Filezilla](../mutualise-guide-utilisation-filezilla/), afin de le supprimer manuellement.
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
