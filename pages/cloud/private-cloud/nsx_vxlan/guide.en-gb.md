@@ -1,6 +1,6 @@
 ---
 title: How to create a VxLAN
-slug: nsx_creation-vxlan
+slug: nsx_creation_vxlan
 excerpt: Find out how to create VxLANs on the NSX Edge Gateway
 section: NSX
 ---
