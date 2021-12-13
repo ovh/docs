@@ -146,7 +146,7 @@ spec:
 
 > [!warning]
 > **Warning!**
-> You can use [neat](https://github.com/itaysk/kubectl-neat) kubectl plugin in order to remove useless informations in your Kubernetes manifests files.
+> You can use the [neat](https://github.com/itaysk/kubectl-neat) kubectl plugin in order to remove useless information in Kubernetes manifest files.
 
 ### An Ingress Nginx to publicly expose Keycloak
 
