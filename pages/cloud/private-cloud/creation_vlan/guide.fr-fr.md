@@ -1,7 +1,7 @@
 ---
 title: Création de VLANs
 slug: creation-vlan
-excerpt: Apprenez à créer des VLANs dans votre vRack
+excerpt: Apprendre à créer des VLANs dans votre vRack
 section: Fonctionnalités OVHcloud
 order: 02
 ---
