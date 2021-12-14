@@ -25,11 +25,9 @@ In the Hosted Private Cloud solutions, VLANs can be used to isolate private comm
 
 First, go to your vSphere client's `Networking`{.action} view. Deploy the **vrack** folder then right-click on the **dVS** ending in *-vrack* and finally click on `New Distributed Port Group`{.action}.
 
-![vRack](images/07network.png){.thumbnail}
-
 ![New Distributed Port Group](images/08network1.png){.thumbnail}
 
-The next step is to name your **PortGroup**:
+The next step is to name your **Port Group**:
 
 ![nominate portgroup](images/09network2.png){.thumbnail}
 

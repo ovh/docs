@@ -25,11 +25,9 @@ Dans les offres Hosted Private Cloud, les VLANs permettent d'isoler des communic
 
 En premier lieu, rendez vous dans la vue `Mise en réseau` de votre client vSphere. Déployez le dossier **vrack** puis faites un clic droit sur le **dVS** finissant par *-vrack* et enfin cliquez sur `Nouveau groupe de ports distribués`{.action}.
 
-![vRack](images/07network.png){.thumbnail}
-
 ![New Distributed Port Group](images/08network1.png){.thumbnail}
 
-Nommez alors votre **PortGroup** :
+Nommez alors votre **Port Group** :
 
 ![nommer portgroup](images/09network2.png){.thumbnail}
 
@@ -61,7 +59,7 @@ Nous laissons la [Formation du trafic](https://docs.vmware.com/en/VMware-vSphere
 
 ![lissage de traffic](images/12network5.png){.thumbnail}
 
-EN ce qui concerne le *load balacing* , selectionnez *Route basée sur le hashage IP* qui est la meilleure méthode en terme de redondance et répartition.
+En ce qui concerne le *load balacing* , selectionnez *Route basée sur le hashage IP* qui est la meilleure méthode en terme de redondance et répartition.
 
 > [!warning]
 >
