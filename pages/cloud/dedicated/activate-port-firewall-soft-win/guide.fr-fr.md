@@ -46,6 +46,7 @@ Dans la fenêtre affichée, vous trouverez des paramètres tels que:
 - Règles d’entrée et de sortie
 - Règles de sécurité de la connexion
 - Options de surveillance du pare-feu du serveur
+
 En sélectionnant la section`Règles de trafic entrant `{.action}, toutes les règles préconfigurées de Windows Server associées aux connexions réseau et aux paquets entrants s’affichent. Certaines de ces règles ne sont pas activées par défaut. Si vous souhaitez les activer, faites un clic droit. à propos de la règle et sélectionnez l’option `Activer la règle `{.action}.
 
 ![Step1](images/step2.PNG){.thumbnail}
@@ -82,7 +83,7 @@ Dans la fenêtre suivante, définissez le type de port à activer:
 
 ### Etape 6 : Autoriser ou bloquer la connexion
 
-Pour définir l’action que cette règle va avoir, les options suivantes sont disponibles :
+Pour définir l’action que cette règle va avoir, les options suivantes sont disponibles, sélectionnez celle qui vous convient :
 - Autoriser la connexion
 Cette option permet une communication complète via ce port.
 
