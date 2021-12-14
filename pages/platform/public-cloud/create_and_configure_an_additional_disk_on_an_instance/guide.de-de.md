@@ -1,11 +1,17 @@
 ---
-title: 'Erstellen zusätzlicher Festplatten für Public Cloud Instanzen'
+title: 'Zusätzliches Volume auf einer Instanz erstellen und konfigurieren'
 slug: erstellen_zustzliche_festplatte_public_cloud
-excerpt: 'Erfahren Sie hier, wie Sie eine Festplatte erstellen und für eine Ihrer Instanzen konfigurieren können'
+excerpt: 'Erfahren Sie hier, wie Sie eine neue Disk erstellen zu Ihrerr Public Cloud Instanz hinzufügen'
+legacy_guide_number: 1863
 section: 'Storage'
+order: 1
 ---
 
-**Letzte Aktualisierung am 09.01.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 08.12.2021**
 
 ## Ziel
 
@@ -13,72 +19,74 @@ Es ist möglich, zusätzliche Festplatten für Ihre OVHcloud Public Cloud Instan
 
 - Sie möchten Ihre Speicherkapazität erhöhen, ohne das Instanzmodell zu verändern.
 - Sie benötigen hochverfügbaren und leistungsfähigen Speicherplatz.
-- Sie möchten sowohl Ihren Storage als auch Ihre Daten in eine andere Instanz verschieben.
+- Sie möchten sowohl Ihren Storage als auch Ihre Daten zu einer anderen Instanz verschieben.
 
-**In dieser Anleitung wird erläutert, wie Sie einer Public Cloud Instanz eine zusätzliche Festplatte hinzufügen und diese konfigurieren.**
+**Hier erfahren Sie, wie Sie eine zusätzliche Festplatte erstellen und auf Ihrer Instanz konfigurieren.**
 
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über eine [Public Cloud-Instanz](https://www.ovhcloud.com/de/public-cloud).
-- Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH (nur Linux).
-- Sie haben Administratorzugriff auf Ihre Instanz über RDP (nur Windows).
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie Sie oben auf der Seite auf `Public Cloud`{.action}. Wählen Sie links zunächst das Projekt aus, in dem Sie die Festplatte erstellen möchten.
+### Ein neues Volume hinzufügen
 
-Klicken Sie hier auf die Schaltfläche `Volume erstellen`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Öffnen Sie `Block Storage`{.action} im linken Menü.
 
-![select project](images/attach-disk-01.png){.thumbnail}
+Klicken Sie in diesem Bereich auf den Button `Volume erstellen`{.action}.
 
-Konfigurieren Sie nun die Optionen für den Volume-Typ, die Festplattengröße und den Speicherort. Sobald Sie den Vorgang abgeschlossen haben, bestätigen Sie mit `Volume erstellen`{.action}.
+![Projekt auswählen](images/avolume01.png){.thumbnail}
 
-![create disk](images/attach-disk-02.png){.thumbnail}
+Folgen Sie den Konfigurationsschritten, um die Optionen für Standort, Volumetyp und Volumekapazität auszuwählen. Geben Sie einen Namen für das Volume ein und bestätigen Sie, indem Sie auf `Volume erstellen klicken`{.action}.
 
-Das neue Volume wird jetzt in Ihrem OVHcloud Kundencenter angezeigt.
+![create disk](images/avolume02.png){.thumbnail}
 
-![configure disk](images/attach-disk-03.png){.thumbnail}
+Die neue Disk wird anschließend im Kundencenter angezeigt.
 
-Um die Festplatte an eine Instanz anzuhängen, klicken Sie rechts auf `...`{.action} und dann `Mit Instanz verbinden`{.action}
+![configure disk](images/avolume03.png){.thumbnail}
 
-![attach disk 01](images/attach-disk-04.png){.thumbnail}
+Klicken Sie rechts neben dem Volume auf den Button `...`{.action} und wählen Sie `Mit Instanz verbinden`{.action}.
 
-Wählen Sie jetzt die Instanz und klicken Sie auf die Schaltfläche `Bestätigen`{.action}, um die Festplatte anzuhängen.
+![attach disk 01](images/avolume04.png){.thumbnail}
 
-![attach disk 02](images/attach-disk-05.png){.thumbnail}
+Wählen Sie im angezeigten Fenster eine Instanz aus der Liste aus und klicken Sie auf `Bestätigen`{.action}, um das Volume anzuhängen.
 
-Das Verbinden der Festplatte mit Ihrer Instanz wird nun gestartet. Es kann einige Minuten dauern, bis der Vorgang abgeschlossen ist.
+![attach disk 02](images/avolume05.png){.thumbnail}
 
-![attach disk 03](images/attach-disk-06.png){.thumbnail}
+Der Vorgang zum Verbinden mit der Instanz startet nun. Dieser Task kann einige Minuten in Anspruch nehmen.
 
 > [!warning]
-Achten Sie darauf, nicht vom aktuellen Bereich weg zu navigieren, während die Festplatte angehängt wird. Der Vorgang könnte unterbrochen werden.
+> Achten Sie darauf, nicht vom aktuellen Bereich weg zu navigieren, während das Volume angehängt wird. Der Vorgang könnte unterbrochen werden.
 >
 
-### Unter Linux
+### Konfiguration des neuen Volumes
 
-Stellen Sie zunächst eine SSH-Verbindung zu Ihrer Instanz her und verwenden Sie dann den folgenden Befehl, um die Festplatten der Instanz aufzulisten.
+Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Rechten eingeloggt sind.
 
-```
-# admin@serveur-1:~$ lsblk
+#### Unter Linux
+
+Stellen Sie eine [SSH-Verbindung](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
+
+```bash
+~$ admin@server-1:~$ lsblk
 
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
 └─vda1 254:1 0 10G 0 part /
 vdb 254:16 0 10G 0 disk
-
 ```
 
 > [!primary]
 >
-VDA bezieht sich normalerweise auf die Standardfestplatte Ihrer Instanz. VDB bezieht sich auf die zusätzliche Festplatte.
+> In diesem Beispiel bezieht sich `vda` auf die originäre Disk der Instanz. Die zusätzliche Disk ist demzufolge als `vdb` benannt.
 >
 
-Als nächstes erstellen Sie eine Partition auf der zusätzlichen Festplatte mithilfe des folgenden Befehls.
+Erstellen Sie eine Partition auf der zusätzlichen Disk indem Sie die nachfolgenden Befehle ausführen.
 
-```
-# admin@serveur-1:~$ sudo fdisk /dev/vdb
+```bash
+~$ admin@server-1:~$ sudo fdisk /dev/vdb
 
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
@@ -88,9 +96,7 @@ Device does not contain a recognized partition table.
 Created a new DOS disklabel with disk identifier 0x95c4adcc.
 ```
 
-
-
-```
+```bash
 Command (m for help): n
 
 Partition type
@@ -103,11 +109,9 @@ First sector (2048-20971519, default 2048):
 Last sector, +sectors or +size{K,M,G,T,P} (2048-20971519, default 20971519):
 
 Created a new partition 1 of type 'Linux' and of size 10 GiB.
-
 ```
 
-
-```
+```bash
 Command (m for help): w
 
 The partition table has been altered.
@@ -115,10 +119,10 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-Anschließend formatieren Sie die Partition mit dem folgenden Befehl:
+Formatieren Sie anschließend die neue Partition `vdb1` mit folgendem Befehl:
 
-```
-# admin@serveur-1:~$ sudo mkfs.ext4 /dev/vdb1
+```bash
+~$ admin@server-1:~$ sudo mkfs.ext4 /dev/vdb1
 mke2fs 1.42.12 (29-Aug-2014)
 Creating filesystem with 2621184 4k blocks and 655360 inodes
 Filesystem UUID: 781be788-c4be-462b-b946-88429a43c0cf
@@ -131,18 +135,17 @@ Creating journal (32768 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-Als nächstes mounten Sie die Partition:
+Mounten Sie die Partition mit folgenden Befehlen:
 
+```bash
+admin@server-1:~$ sudo mkdir /mnt/disk
+admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
 ```
-admin@serveur-1:~$ sudo mkdir /mnt/disk
-admin@serveur-1:~$ sudo mount /dev/vdb1 /mnt/disk/
-```
 
+Überprüfen Sie den Mountpunkt mit folgendem Befehl:
 
-Schließlich überprüfen Sie den Mountpoint mit dem nachfolgendem Befehl: 
-
-```
-admin@serveur-1:~$ df -h
+```bash
+~$ admin@server-1:~$ df -h
 
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
@@ -154,72 +157,81 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 9.8G 23M 9.2G 1% /mnt/disk
 ```
 
-Wenn Sie einen dauerhaften Mountpoint erstellen möchten, müssen Sie die /etc/fstab bearbeiten. Verwenden Sie zuerst den folgenden Befehl, um die Block-ID abzurufen.
+> [!primary]
+>
+Die vorherige Anpassung ist nicht persistent, da die Disk wieder getrennt wird, wenn die Instanz neu gestartet wird. Zur Automatisierung des Mountvorgangs muss die Datei `fstab` angepasst werden.
+>
 
-```
-admin@serveur-1:~$ sudo blkid
+Ermitteln Sie zunächst die UUID (Block-ID) des neuen Volumes:
+
+```bash
+~$ admin@server-1:~$ sudo blkid
 
 /dev/vda1: UUID="51ba13e7-398b-45f3-b5f3-fdfbe556f62c" TYPE="ext4" PARTUUID="000132ff-01"
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
 ```
 
-Mit der ID können Sie die Datei /etc/fstab entsprechend anpassen:
+Öffnen Sie `/etc/fstab` mit einem Texteditor:
 
 ```
-admin@serveur-1:~$ vim /etc/fstab
+~$ sudo nano /etc/fstab
+```
 
-/etc/fstab: static file system information.
+Fügen Sie die folgende Zeile zur Datei hinzu und ersetzen Sie die UUID mit Ihrer zuvor ausgelesenen:
 
-# Use 'blkid' to print the universally unique identifier for a
-# device; this may be used with UUID= as a more robust way to name devices
-# that works even if disks are added and removed. See fstab(5).
-#
-# <file system> <mount point> <type> <options> <dump> <pass>
-UUID=51ba13e7-398b-45f3-b5f3-fdfbe556f62c / ext4 defaults 0 0
+```console
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 ```
 
-### Unter Windows
+Speichern Sie und verlassen Sie den Editor. Nun sollte die Festplatte nach jedem Neustart automatisch gemountet werden.
 
-Wenn Sie sich angemeldet haben, öffnen Sie mit einem Rechtsklick auf das Windows-Symbol das Kontextmenü und wählen Sie dann `Datenträgerverwaltung`{.action}.
+#### Unter Windows
 
-![](images/start-menu.png){.thumbnail}
+Stellen Sie eine Remotedesktop-Verbindung (RDP) mit Ihrer Windows-Instanz her.
 
-Im Datenträgerverwaltungstool wird Ihre neue Festplatte wie im Bild zu sehen als unbekanntes Volume mit nicht zugewiesenem Speicherplatz angezeigt.
+Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie das `Festplattenverwaltungstool`{.action}.
 
-![disk management](images/disk-management-01.png){.thumbnail}
+![disk management](images/start-menu.png){.thumbnail}
 
-#### Initialisieren der Festplatte mit der Datenträgerverwaltung
+Die neue Disk wird als unbekanntes Volume mit nicht zugewiesenem Speicherplatz angezeigt.
 
-Wenn die Festplatte als “Offline” angezeigt wird, liegt das wahrscheinlich an einer die Instanz betreffenden Richtlinie. In diesem Fall klicken Sie mit der rechten Maustaste auf die Festplatte und wählen Sie “Online”.
+![Volume](images/disk-management-01.png){.thumbnail}
+
+Wird die Festplatte als Offline angezeigt, muss sie zuerst initialisiert werden. Sie können hierzu das [Windows GUI](#initDiskManagement) oder das [DISKPART Tool](#initDiskpart) verwenden. Falls nicht, [formatieren Sie nun die Festplatte in der Datenträgerverwaltung](#formatDiskManagement).
+
+##### **Initialisierung der Disk in der Datenträgerverwaltung** <a name="initDiskManagement"></a>
+
+Klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie `Online`{.action}. 
+
+Wenn die Festplatte hier als offline angezeigt wird, ist dies wahrscheinlich auf eine auf der Instanz vorhandene Policy zurückzuführen. Um dieses Problem zu lösen, klicken Sie mit der rechten Maustaste auf die Festplatte und wählen Sie `Online`{.action}.
 
 ![offline disk](images/disk-management-02.png){.thumbnail}
 
-Klicken Sie dann erneut mit der rechten Maustaste und wählen Sie diesmal `Datenträgerinitialisierung`{.action}.
+Klicken Sie mit der rechten Maustaste auf die Festplatte und wählen Sie dieses Mal `Festplatte initialisieren`{.action}.
 
 ![offline disk](images/disk-management-03.png){.thumbnail}
 
-Als nächstes wählen Sie `MBR`{.action} und klicken Sie auf `OK`{.action}.
+Wählen Sie `MBR`{.action} im neuen Fenster aus und klicken Sie auf `OK`{.action}.
 
-![initialise disk](images/initialise-disk.png){.thumbnail}
+![Disk-Initialisierung](images/initialise-disk.png){.thumbnail}
 
-#### Initialisierung der Festplatte mithilfe von DISKPART
+##### **Initialisierung der Disk mit DISKPART** <a name="initDiskpart"></a>
 
-Öffnen Sie mit einem Rechtsklick auf das Windows-Symbol das Kontextmenü und wählen Sie dann `Ausführen`{.action}.
+Klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie `Ausführen`{.action}.
 
-![initialise disk](images/diskpart.png){.thumbnail}
+![Disk-Initialisierung](images/diskpart.png){.thumbnail}
 
-Als nächstes geben Sie `cmd` in die Eingabeaufforderung ein und klicken Sie auf `OK`{.action}
+Geben Sie `cmd` ein und klicken Sie auf `OK`{.action}, um die Kommandozeilenanwendung zu öffnen.
 
-![run prompt](images/run-prompt.png){.thumbnail}
+![Prompt](images/run-prompt.png){.thumbnail}
 
-Geben Sie in der Kommandozeile den folgenden Befehl ein, um das Programm DISKPART zu öffnen.
+In der Eingabeaufforderung starten Sie DISKPART:
 
 ```
 C:\> diskpart
 ```
 
-Danach ändern Sie die SAN Policy mit den folgenden Befehlen.
+Verwenden Sie folgende Befehle in DISKPART, um die Festplatte als "Online" zu konfigurieren:
 
 ```
 DISKPART> san
@@ -230,7 +242,7 @@ SAN Policy : Offline Shared
 ```
 DISKPART> san policy = OnlineAll
 
-DiskPart successfully changed the SAN policy for the current operating system.
+DiskPart successfully changed the SAN policy for the current operating system .
 
 - Implementation of the strategy on the extra disk:
 [Code] DISKPART> list disk
@@ -241,7 +253,7 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```
+``` 
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
@@ -271,34 +283,30 @@ DISKPART> online disk
 DiskPart successfully onlined the selected disk.
 ```
 
-#### Die Festplatte formatieren
+##### **Festplattenformatierung** <a name="formatDiskManagement"></a>
 
-Öffnen Sie die Datenträgerverwaltung erneut, klicken Sie mit der rechten Maustaste auf den Datenträger, und danach auf `Neues einfaches Volume...`{.action}
+Klicken Sie in der `Datenträgerverwaltung`{.action} mit der rechten Maustaste auf die neue Disk und wählen Sie `Neues einfaches Volume...`{.action}.
 
-![format disk](images/format-disk-01.png){.thumbnail}
+![Disk Format](images/format-disk-01.png){.thumbnail}
 
-Klicken Sie im Wizard auf `Weiter`{.action}.
+Klicken Sie im Assistenten auf `Weiter`{.action}, um die Größe des Volumes festzulegen. Sie sollte standardmäßig auf das Maximum festgelegt sein. Klicken Sie auf `Weiter`{.action}, um fortzufahren.
 
-![format disk](images/format-disk-02.png){.thumbnail}
+![Disk Format](images/format-disk-03.png){.thumbnail}
 
-Konfigurieren Sie nun die gewünschte Festplattengröße. Normalerweise sollte diese 100% des verfügbaren Speichers einnehmen. Anschließend klicken Sie auf `Weiter`{.action}.
+Akzeptieren Sie den neuen Laufwerksbuchstaben oder wählen Sie einen anderen aus und klicken Sie dann auf `Weiter`{.action}.
 
-![format disk](images/format-disk-03.png){.thumbnail}
+![Disk Format](images/format-disk-04.png){.thumbnail}
 
-Wählen Sie aus der Dropdown-Liste einen Laufwerksbuchstaben aus und klicken Sie dann auf `Weiter`{.action}.
+Benennen Sie das Volume (optional) und bestätigen Sie die Formatierungsoptionen, indem Sie auf `Weiter`{.action} klicken.
 
-![format disk](images/format-disk-04.png){.thumbnail}
+![Disk Format](images/format-disk-05.png){.thumbnail}
 
-Wählen Sie die gewünschten Optionen für den Datenträger aus und klicken Sie dann auf `Weiter`{.action}, um den Formatierungsvorgang auszuführen.
+Klicken Sie im letzten Fenster auf `Beenden`{.action}, um die Disk zu formatieren.
 
-![format disk](images/format-disk-05.png){.thumbnail}
+![Disk Format](images/format-disk-06.png){.thumbnail}
 
-Schließlich klicken Sie auf `Fertigstellen`{.action}, um den Vorgang abzuschließen.
-
-![format disk](images/format-disk-06.png){.thumbnail}
-
-Sobald die Festplatte formatiert ist, können Sie einfach über den Datei-Explorer darauf zugreifen.
+Das Volume ist dann als Laufwerk im Dateiexplorer verfügbar.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf  <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
