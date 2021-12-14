@@ -100,6 +100,7 @@ Sélectionnez l’option`Autoriser la connexion `{.action} et cliquez sur `Suiva
 ### Etape 7 : Définir le profile et le nom du pare-feu à appliquer
 
 - Définir le profile
+
 Vous pouvez l'utiliser dans les profils public, de domaine ou privé.
 Vous pouvez tous les activer si vous le souhaiter.
 
