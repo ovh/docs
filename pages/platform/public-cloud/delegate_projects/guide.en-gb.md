@@ -28,7 +28,7 @@ This guide will show you how to do this.
 
 ### Delegate the project.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&onsuccess=https://www.ovh.com/manager/web/), then select `Public Cloud`{.action}. Next, click `Contacts and Rights`{.action} in the **Project Management** section.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then select `Public Cloud`{.action}. Next, click `Contacts and Rights`{.action} in the **Project Management** section.
 
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects1.png){.thumbnail}

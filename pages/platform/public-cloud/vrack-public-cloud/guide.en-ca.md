@@ -18,7 +18,7 @@ The [vRack](https://www.ovh.com/ca/en/solutions/vrack/) is a private network tha
 
 - a [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
-- an OpenStack user (optional)
+- an [OpenStack user](../creation-and-deletion-of-openstack-user/#create-an-openstack-user) (optional)
 - Basic networking knowledge
 
 ## Understanding interfaces
@@ -191,7 +191,7 @@ If you need assistance, follow this guide first: [Creating your first Public Clo
 ![attach new instance](images/vrack6.png){.thumbnail}
 
 > [!warning]
-> You will be able to connect your instance to *only one* vRack from the OVHcloud Control Panel.
+> You will be able to connect your instance to **only one** vRack from the OVHcloud Control Panel.
 > To add multiple interfaces, you will need to go through the OpenStack or Horizon APIs.
 >
 

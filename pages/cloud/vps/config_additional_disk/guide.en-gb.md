@@ -16,9 +16,9 @@ With OVHcloud Virtual Private Servers you have the possibility to add a secure s
 
 ## Requirements
 
-- a [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- administrative access via SSH or RDP to your VPS
+- A [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Administrative access via SSH or RDP to your VPS
 
 ## Instructions
 
@@ -196,7 +196,7 @@ If the disk is marked as offline here, it needs to be initialised first. You can
 
 ##### **Initialising the disk in Disk Management** <a name="initDiskManagement"></a>
 
- Right-click on the disk and select `Online`{.action}. 
+Right-click on the disk and select `Online`{.action}. 
 
 ![winmountdiskvps](images/disk_vps_win03.png){.thumbnail}
 

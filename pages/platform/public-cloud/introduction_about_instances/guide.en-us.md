@@ -1,8 +1,8 @@
 ---
 title: 'Public Cloud Glossary'
 slug: introduction-to-instances-and-other-cloud-based-terms
-section: Getting started
-order: 4
+section: General information
+order: 02
 ---
 
 ## Introduction

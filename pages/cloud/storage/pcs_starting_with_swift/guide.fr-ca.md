@@ -4,7 +4,7 @@ excerpt: "Découvrez comment utiliser l'API Swift"
 slug: debuter-avec-lapi-swift
 legacy_guide_number: 1916
 section: Object Storage Standard (Swift)
-order: 10
+order: 010
 ---
 
 **Dernière mise à jour le 25/06/2021**

@@ -33,9 +33,9 @@ Para ello, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?act
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
 |![Correo electrónico](images/mxplan-password-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro **Suscripción**, en el epígrafe **Producto**.|![Correo electrónico](images/mxplan-password-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro **Resumen**, en el epígrafe **Referencia del servidor**.|
-|Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](./#version-historica-de-la-solucion-mx-plan_2).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](./#nueva-version-de-la-solucion-mx-plan).|
+|Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](#mx-legacy).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](#mx-new).|
 
-### Nueva versión de la solución MX Plan
+### Nueva versión de la solución MX Plan <a name="mx-new"></a>
 
 Si dispone de la nueva versión de la solución MX Plan, la pestaña `Información general`{.action} del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](./#procedimiento) y asegúrese de que esta es su versión de la solución.  
 
@@ -87,7 +87,7 @@ Una vez que haya cambiado la contraseña, puede acceder a la dirección de corre
 
 - **Utilizar un cliente de correo compatible**: Introduzca la nueva contraseña en todos los dispositivos en los que haya configurado la dirección de correo electrónico. Es posible que aparezca una ventana de forma automática en el dispositivo solicitándole que introduzca la nueva contraseña. Si no es el caso, puede consultar nuestras [guías de configuración](../) o contactar con el editor del programa o la aplicación que utilice, ya que el procedimiento es distinto en todos ellos.
 
-### Versión histórica de la solución MX Plan
+### Versión histórica de la solución MX Plan <a name="mx-legacy"></a>
 
 Si dispone de la versión histórica de la solución MX Plan, la pestaña `Información general`{.action} del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](./#procedimiento) y asegúrese de que esta es su versión de la solución. 
 

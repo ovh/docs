@@ -5,7 +5,7 @@ excerpt: Find out how to add failover IP addresses to your VPS configuration
 section: 'Network management'
 ---
 
-**Last updated 14th April 2021**
+**Last updated 30th November 2021**
 
 ## Objective
 

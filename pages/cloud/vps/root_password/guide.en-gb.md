@@ -18,9 +18,9 @@ It may become necessary to change the root password on your GNU/Linux operating 
 
 ## Requirements
 
-- an OVHcloud [VPS](https://www.ovhcloud.com/en-gb/vps/) already set up
-- login credentials received via email after the installation (if still valid)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (for using rescue mode)
+- An OVHcloud [VPS](https://www.ovhcloud.com/en-gb/vps/) already set up
+- Login credentials received via email after the installation (if still valid)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (for using rescue mode)
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.

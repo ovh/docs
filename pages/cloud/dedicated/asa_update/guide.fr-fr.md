@@ -2,8 +2,15 @@
 title: Mettre à jour le firewall CISCO ASA
 excerpt: Découvrez comment mettre à jour votre firewall CISCO ASA
 slug: mettre-a-jour-firewall-cisco-asa
-section: Utilisation avancée
+section: Firewall Cisco ASA
+order: 02
 ---
+
+> [!primary]
+> **Fin de support de l'option Cisco Firewall ASA associée aux serveurs dédiés**
+>
+> OVHcloud annonce la fin de support de l'option Cisco Firewall ASA associée aux serveurs dédiés. Retrouvez plus d'informations sur [cette page](https://docs.ovh.com/fr/dedicated/cisco-asa-eol/).
+>
 
 **Dernière mise à jour le 20/02/2018**
 

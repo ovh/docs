@@ -19,7 +19,7 @@ OVH vous permet d’associer une adresse MAC virtuelle à une adresse IP, afin d
 * Posséder [un serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
 * Disposer d'une [adresse IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external} ou un bloc d’IP fail-over (RIPE).
 * Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-
+* Vore serveur doit supporter les MAC virtuelles. Consultez [ce guide](https://docs.ovh.com/fr/dedicated/network-support-virtual-mac/) afin de le déterminer.
 
 ## En pratique
 

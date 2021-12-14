@@ -18,7 +18,7 @@ With the OpenStack API, you can automate your management by generating scripts. 
 
 ## Requirements
 
-- **root** access to the environment you want to configure
+- **Root** access to the environment you want to configure
 
 ## Instructions
 
