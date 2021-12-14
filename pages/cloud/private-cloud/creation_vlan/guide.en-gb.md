@@ -16,14 +16,14 @@ OVHcloud sets up a base of 11 VLANs on your vRack.
 
 ## Requirements
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere as well as the specific rights for Networking (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere as well as the specific rights for Networking (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 
-In the Hosted Private Cloud solutions, VLANs can be used to isolate private communications between different OVHcloud services that are vRack-compatible (Dedicated Server, Public Cloud, etc.). 
+In the Hosted Private Cloud solutions, VLANs can be used to isolate private communications between different OVHcloud services that are vRack-compatible (Dedicated Server, Public Cloud instance, etc.). 
 
-First, go to your vSphere client's `Networking` view. Deploy the **vrack** folder then right-click on the **dVS** ending in *-vrack* and finally click on `New Distributed Port Group`{.action}.
+First, go to your vSphere client's `Networking`{.action} view. Deploy the **vrack** folder then right-click on the **dVS** ending in *-vrack* and finally click on `New Distributed Port Group`{.action}.
 
 ![vRack](images/07network.png){.thumbnail}
 
@@ -36,19 +36,19 @@ The next step is to name your **PortGroup**:
 Then configure the settings recommended by OVHcloud:
 
 - **Port binding**: Static (reserving and assigning the port to a virtual machine)
-- **Port allocation**: Elastic (Allows the number of ports to be hot-wired)
+- **Port allocation**: Elastic (allows the number of ports to be hot-wired)
 - **Number of ports**: 24
-- **VLAN type**: VLAN (The others are [PVLAN](https://kb.vmware.com/s/article/1010691){.external} and Trunk)
-- **VLAN ID**: 21 (Knowing that the ID can be configured from 1 to 4096)
+- **VLAN type**: VLAN (the others are [PVLAN](https://kb.vmware.com/s/article/1010691){.external} and Trunk)
+- **VLAN ID**: 21 (knowing that the ID can be configured from 1 to 4096)
 - Check the option *Customize default policies configuration*.
 
 ![portgroup configuration](images/10network3.png){.thumbnail}
 
-You have 3 security settings that can be activated according to your need: 
+You have 3 security settings that can be activated according to your needs: 
 
-- *Promiscuous mode*: Eliminates any filtering that the VM adapter can perform so that the guest operating system receives all observed traffic on the network.
-- *MAC address changes*: When set to **Accept**, ESXi will accept requests to change the effective MAC address to an address other than the initial MAC address.
-- *Forged transmits*: Affects traffic transmitted from a virtual machine. When set to **Accept**, ESXi does not compare the source and effective MAC addresses.
+- *Promiscuous mode*: eliminates any filtering that the VM adapter can perform so that the guest operating system receives all observed traffic on the network.
+- *MAC address changes*: when set to **Accept**, ESXi will accept requests to change the effective MAC address to an address other than the initial MAC address.
+- *Forged transmits*: affects traffic transmitted from a virtual machine. When set to **Accept**, ESXi does not compare the source and effective MAC addresses.
 
 > [!primary]
 >
@@ -57,7 +57,7 @@ You have 3 security settings that can be activated according to your need:
 
 ![security settings](images/11network4.png){.thumbnail}
 
-We leave [Traffic shaping](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html){.external} disabled.
+Leave [Traffic shaping](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html){.external} disabled.
 
 ![traffic shaping](images/12network5.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Leave the `Block All Ports` value at "No".
 
 ![portgroup finalisation](images/15network9.png){.thumbnail}
 
-You will then be presented with a summary of the changes. Click `Finish` to confirm the creation.
+You will then be presented with a summary of the changes. Click `Finish`{.action} to confirm the creation.
 
 ![portgroup finalisation](images/16network10.png){.thumbnail}
 
