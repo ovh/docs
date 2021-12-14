@@ -103,7 +103,7 @@ Vous pouvez tous les activer si vous le souhaiter.
 
 ![Step7](images/step7.PNG){.thumbnail}
 
-- Enfin, attribuez un nom et une description de la nouvelle règle afin de faciliter son utilisation:
+- Enfin, attribuez un nom et une description de la nouvelle règle (optionnel) afin de faciliter son utilisation:
 
 ![Step7_01](images/step7-01.PNG){.thumbnail}
 
