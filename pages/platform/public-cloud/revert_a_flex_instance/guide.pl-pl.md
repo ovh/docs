@@ -1,7 +1,7 @@
 ---
-title: Odwrócenie instancji flex
-slug: przywracanie-instancji-flex
-excerpt: Dowiedz się, jak przywrócić instancję typu flex w interfejsie OpenStack Horizon
+title: Zmiana instancji flex na instancję klasyczną
+slug: zmiana-instancji-flex
+excerpt: Dowiedz się, jak zmienić instancję flex w interfejsie OpenStack Horizon
 section: Zarządzanie w interfejsie Horizon
 ---
 
@@ -13,54 +13,56 @@ section: Zarządzanie w interfejsie Horizon
 
 ## Wprowadzenie
 
-Instancja *flex* to jednowymiarowa instancja dyskowa (50 GB), która przyspiesza wykonywanie snapshotów. Pozwala na zmianę rozmiaru serwera na wyższy lub niższy, z ustaloną przestrzenią dyskową, podczas gdy klasyczne modele mogą być zmieniane tylko na modele wyższe.</br> Wraz z rozwojem infrastruktury może być konieczne zwiększenie przestrzeni dyskowej instancji. W takim przypadku należy przywrócić instancję typu *flex* z klasycznego modelu. Operacja ta może zostać wykonana tylko w interfejsie Horizon.
+Instancja *flex* to instancja o unikalnym dysku (50 GB) oferująca szybszy proces wykonywania snapshotów. Umożliwia skalowanie do wyższych lub niższych modeli o stałej przestrzeni dyskowej, podczas gdy klasyczne modele mogą być skalowane tylko do wyższych modeli.
 
-</br>**Niniejszy przewodnik wyjaśnia, jak przywrócić instancję *flex* i zmienić jej rozmiar za pomocą interfejsu OpenStack Horizon.**
+Dzięki stale zmieniającej się infrastrukturze możesz zwiększyć przestrzeń dyskową Twojej instancji. W takim przypadku zmień wirtualną maszynę *flex* na klasyczny model. Operacja ta jest możliwa wyłącznie w interfejsie Horizon.
 
-## Wymagania początkowe
+**Niniejszy przewodnik wyjaśnia, jak zmienić model *flex* na model klasyczny i zmienić rozmiar instancji *flex* w interfejsie OpenStack Horizon.**
 
-- Utworzenie [instancji Public Cloud](../public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) z opcją *flex*
-- [Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)
+## Wymagania
+
+- Posiadanie [instancji Public Cloud](../public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) typu *flex*.
+- [Utworzenie dostępu do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)
 
 ## W praktyce
 
-Zaloguj się do [interfejsu](https://horizon.cloud.ovh.net/auth/login/) Horizon i sprawdź, czy wybrałeś właściwy region. Możecie to sprawdzić w lewym górnym rogu. 
+Zaloguj się do [interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/) i upewnij się, czy jesteś w odpowiednim regionie. I możecie to sprawdzić w lewym górnym rogu. 
 
 ![Wybór regionu](images/region2021.png){.thumbnail}
 
-Kliknij menu `Compute`{.action} po lewej stronie, a następnie wybierz `Instances`{.action}. Wybierz `Resize Instance`{.action} z rozwijanego menu po prawej stronie odpowiedniej instancji.
+Kliknij menu `Compute`{.action} po lewej stronie, a następnie kliknij `Instances`{.action}. Wybierz `Resize Instance`{.action} z rozwijanej listy odpowiedniej instancji.
 
 ![Zmień rozmiar instancji](images/resizeinstance2021.png){.thumbnail}
 
 **Wybór szablonu (*Flavor Choice*)** <a name="flavorchoice"></a>
 
-W tej sekcji podajemy aktualny szablon (*old flavor*) i możesz wybrać nowy szablon (*new flavor*) dla zasobów instancji.
+W tej sekcji podajemy aktualny szablon (*old flavor*), który pozwala na wybór nowego szablonu (*new flavor*) dla zasobu instancji.
 
-W naszym przykładzie zapis « b2-15-flex » umożliwia powrót do zapachu « b2-15 » lub zastąpienie zapachu « b2-30 ». W tym przypadku chcemy zmienić model instancji na klasyczny « b2-30 ».
+W naszym przykładzie nasz szablon to « b2-15-flex ». Możemy powrócić do klasycznego szablonu « b2-15 » lub zaktualizować instancję do szablonu « b2-30 », aby uzyskać więcej przestrzeni dyskowej. W naszym przypadku chcemy zaktualizować instancję do klasycznego modelu « b2-30 », aby zwiększyć przestrzeń dyskową.
 
-![Wybierz nowy model instancji](images/confirmflavor.png){.thumbnail}
+![Wybierz nową](images/confirmflavor.png){.thumbnail}
 
 > [!warning]
-> - Można przejść tylko z modelu Linux na inny model Linux i z modelu Windows na inny model Windows.
+> - Możesz przejść wyłącznie z jednego modelu Linux na inny model Linux i z jednego systemu Windows na inny model Windows.
 >
 > - Opcja *flex* nie jest dostępna dla wszystkich modeli.
 >
 
-**Zaawansowane opcje (*Advanced Options*)**
+**Opcje zaawansowane (*Advanced Options*)**
 
 Sekcja ta pozwala na zarządzanie partycjonowaniem dysku (*Disk Partition*) i grupy serwerów (*Server Group*).
 
 ![public-cloud](images/resize_advanced.png){.thumbnail}
 
-APo zakończeniu konfiguracji kliknij `Resize`{.action}.
+Aby kontynuować, kliknij przycisk `Resize`{.action}.
 
-Po zakończeniu procesu Twoja instancja zostanie przywrócona do klasycznego modelu z większą przestrzenią dyskową.
+Po zakończeniu procesu Twoja instancja zostanie przeniesiona na model klasyczny z większą przestrzenią dyskową.
 
-![Nowy model instancji](images/newflavor.png){.thumbnail}
+![Nowa aplikacja](images/newflavor.png){.thumbnail}
 
-W przypadku, gdy chcesz powrócić do modelu *flex*, możesz to zrobić wykonując te same kroki wymienione [powyżej](#flavorchoice), i wybrać model *flex* zamiast klasycznego. 
+Jeśli chcesz zmienić model *flex*, możesz to zrobić wykonując te same kroki, o których mowa [powyżej](#flavorchoice), wybierając szablon *flex* zamiast klasycznego szablonu. 
 
-Możesz również [edycja-konfiguracji-instancji](https://docs.ovh.com/pl/public-cloud/rozpoczecie_pracy_z_instancja_public_cloud/#edycja-konfiguracji-instancji) w Panelu klienta OVHcloud.
+Możesz również [edycja-konfiguracji-instancji]((https://docs.ovh.com/pl/public-cloud/rozpoczecie_pracy_z_instancja_public_cloud/#edycja-konfiguracji-instancji) w Panelu klienta.
 
 ## Sprawdź również
  
