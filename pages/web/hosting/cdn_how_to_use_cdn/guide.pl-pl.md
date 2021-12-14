@@ -28,8 +28,8 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/).
 
 ## W praktyce
 
@@ -41,7 +41,7 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ####  Jeśli opcja CDN nie jest zamówiona lub włączona na Twoim hostingu
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja GeoCache jest już zawarta w Twoim hostingu.
+Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja GeoCache jest już zawarta w Twoim hostingu.
 
 > [!primary]
 > 
@@ -53,7 +53,7 @@ Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana 
 
 #### Jeśli opcja CDN jest już włączona na Twoim hostingu
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
+Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
 
 Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
@@ -62,7 +62,7 @@ Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a nast
 > [!warning]
 > 
 > W przypadku nazwy domeny wykupionej poza OVHcloud i dodanej w opcji Multisite w hostingu WWW, należy podać adres IP Twojego hostingu w strefie DNS dla nazwy domeny.<br>
-> Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/){.external}, aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
+> Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/), aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
 
  
 **Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?** <br>
@@ -98,9 +98,9 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 - **HTTP/2**: Protokół umożliwiający zwiększenie wydajności strony www pod względem bezpieczeństwa i czasu odpowiedzi.
 
-- **Dev-mode**\: pozwala na wyłączenie cache podczas tworzenia strony.
+- **Dev-mode**: pozwala na wyłączenie cache podczas tworzenia strony.
 
-- **Brotli**\:  rodzaj kompresji pozwalającej na optymalizację rozmiaru plików w pamięci cache.
+- **Brotli**: rodzaj kompresji pozwalającej na optymalizację rozmiaru plików w pamięci cache.
 
 - **Zasada cache**: Utwórz do 5 reguł. Określają one częstotliwość odświeżania bufora dla określonych zasobów na Twojej stronie. ([postępuj zgodnie z kolejnymi krokami](#cacherules)). 
 
@@ -118,11 +118,11 @@ W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 
 - **Nazwa reguły**: Nadaj nazwę swojej regule.
 
-- **URI**: Wpisz podzbiór zasobów Twojej strony WWW, korzystając z jej ścieżki do URL. W przypadku ofert CDN-Basic i CDN-Security można podać tylko rozszerzenie pliku. 
+- **URI**: Wpisz podzbiór zasobów Twojej strony WWW, korzystając z jej ścieżki do URL. W przypadku ofert CDN-Basic i CDN-Security można podać tylko rozszerzenie pliku.
 
-- **Czas**\: wskaż czas przechowywania wybranego zasobu w pamięci cache.
+- **Czas**: wskaż czas przechowywania wybranego zasobu w pamięci cache.
 
-- **Klasyfikacja**:  Ustaw kolejność wykonywania reguł (od najniższej do najwyższej).
+- **Klasyfikacja**: Ustaw kolejność wykonywania reguł (od najniższej do najwyższej).
 
 Po dokonaniu wyboru kliknij przycisk `Utwórz regułę`{.action}.
 
@@ -134,16 +134,15 @@ Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.act
 
 > [!warning]
 >
-> Aby korzystać z wyższego limitu reguł i dodatkowych parametrów podczas tworzenia reguły cache, możesz wybrać opcję [CDN Advanced](https://www.ovhcloud.com/pl/web-hosting/options/cdn/)
+> Aby korzystać z wyższego limitu reguł i dodatkowych parametrów podczas tworzenia reguły cache, możesz wybrać opcję [CDN Advanced](https://www.ovhcloud.com/pl/web-hosting/options/cdn/).
 
 #### Konfiguracja opcji CDN Security
 
 Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawej stronie MultiSite, a następnie `Zmień CDN`{.action}. 
 
 > [!primary]
->  poniższe opcje wymagają zamówienia na CDN security[ lub ](https://www.ovhcloud.com/pl/web-hosting/options/cdn/) [CDN Advanced](https://www.ovhcloud.com/pl/web-hosting/options/cdn/)
-
-Przejdź do karty MultiSite` Twojego hostingu, kliknij `{.action}...` po prawej stronie MultiSite, a następnie `{.action}Zmień CDN` `{.action}. 
+>
+> Poniższe opcje wymagają zamówienia na [CDN security](https://www.ovhcloud.com/pl/web-hosting/options/cdn/) lub [CDN Advanced](https://www.ovhcloud.com/pl/web-hosting/options/cdn/)
 
 - **Cross-Origin Resource Sharing (CORS)**: Wpisz na liście nazwy domen zewnętrznych, które będą mogły uzyskać dostęp do zasobów Twojej strony WWW, aby je udostępnić. 
 
@@ -170,7 +169,7 @@ Przejdź do karty MultiSite` Twojego hostingu, kliknij `{.action}...` po prawej 
 	![GeoCache](images/manage_CDNsecurity_03.png){.thumbnail}
 
 > [!primary]
-> 
+>
 > Po włączeniu funkcji HSTS na Twojej stronie, zmusi ona protokół HTTPS do Twojej przeglądarki aż do końca tzw. "wieku maksymalnego", nawet po wyłączeniu funkcji w Panelu klienta. Jeśli pamięć podręczna jest usuwana z przeglądarki, która już przeprowadziła wizytę na Twojej stronie WWW, strona ta zastosuje nowy stan funkcji HSTS.
 
 - **Mixed content**: Wymuś załadowanie całej zawartości stron www w bezpieczny sposób, przyczyniając się tym samym do optymalnego doświadczenia użytkownika. Wszystkie zasoby Twojej strony WWW, zarówno wewnętrzne, jak i zewnętrzne, muszą być dostępne za pomocą protokołu HTTPS, aby uniknąć błędu w zakresie bezpieczeństwa przeglądarki.
@@ -179,7 +178,7 @@ Przejdź do karty MultiSite` Twojego hostingu, kliknij `{.action}...` po prawej 
 
 > [!warning]
 >
-> Aby instalacja [modułu za pomocą 1 kliknięcia OVHcloud](../modules-en-1-clic/) mogła zostać wyłączona, należy wyłączyć WAF.
+> Aby instalacja [modułu za pomocą 1 kliknięcia OVHcloud](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/) mogła zostać wyłączona, należy wyłączyć WAF.
 
 > [!primary]
 >  
@@ -191,7 +190,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 > [!primary]
 >
->  Poniższe opcje wymagają zamówienia usługi [CDN Advanced](https://www.ovhcloud.com/pl/web-hosting/options/cdn/)
+> Poniższe opcje wymagają zamówienia usługi [CDN Advanced](https://www.ovhcloud.com/pl/web-hosting/options/cdn/).
 
 - **Header HTTP z geolokalizacją**: Określ kraj odwiedzającego, aby spersonalizować proponowane doświadczenie. Kod kraju jest automatycznie dodawany do nagłówka każdego zapytania, aby mógł być zarządzany przez Twój serwer. Elementy identyfikacyjne w nagłówku są oznaczone `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
 
@@ -240,19 +239,20 @@ Aby dodać regułę cache do jednego z elementów Twojej strony, przejdź do kar
 W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 
 ![GeoCache](images/manage_CDNadvanced_03.png){.thumbnail}
+
 - **Nazwa reguły**: Nadaj nazwę swojej regule.
 - **Rodzaj zasobów**: Wybierz spośród poniższych opcji:
-	- **Rozszerzenie**: Wprowadź poprawne rozszerzenie plików, na przykład: css
+	- **Rozszerzenie**: Wprowadź poprawne rozszerzenie plików, na przykład css
 	- **Dokumentacja**:  Wprowadź prawidłową ścieżkę dla jednego z katalogów znajdujących się w katalogu głównym Twojej strony WWW.
-	- **Regularne spersonalizowane** wyrażenie: Dotyczy ona wszystkich URI Twojej strony WWW.
+	- **Regularne spersonalizowane**: wyrażenie: Dotyczy ona wszystkich URI Twojej strony WWW.
 	- **URI**: Wpisz podzbiór zasobów Twojej strony WWW, korzystając z jej ścieżki do URL.
-- **Zasoby**\: definiuj atrybuty według wybranego typu zasobów.
+- **Zasoby**: definiuj atrybuty według wybranego typu zasobów.
 - **Czas trwania**: Wskaż czas przechowywania wybranego zasobu w pamięci cache.
 - **Klasyfikacja**:  Ustaw kolejność wykonywania reguł (od najniższej do najwyższej).
 
 Po dokonaniu wyboru kliknij przycisk `Utwórz regułę`{.action}.
 
-Reguły znajdują się na liście. Możesz zmienić regułę klikając na...` po prawej stronie, a następnie na `{.action}Zmień regułę` `{.action}. Możesz ją usunąć, klikając `Usuń regułę`{.action}.
+Reguły znajdują się na liście. Możesz zmienić regułę klikając `...`{.action} po prawej stronie, po czym kliknij `Zmień regułę`{.action}. Możesz ją usunąć, klikając `Usuń regułę`{.action}.
 
 ![GeoCache](images/manage_CDNadvanced_04.png){.thumbnail}
 
@@ -260,7 +260,7 @@ Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.act
 
 ### Wyświetl statystyki usługi CDN
 
-W zakładce MultiSite` `{.action} Twojego hostingu, w tabeli możesz wyświetlić statystyki usługi CDN, wskazując liczbę zapytań na minutę zmierzonych w tym CDN.
+W zakładce `MultiSite`{.action} Twojego hostingu, w tabeli możesz wyświetlić statystyki usługi CDN, wskazując liczbę zapytań na minutę zmierzonych w tym CDN.
 
 ![GeoCache](images/manage_CDNstat_01.png){.thumbnail}
 
@@ -274,7 +274,7 @@ W zakładce MultiSite` `{.action} Twojego hostingu, w tabeli możesz wyświetli�
 
 Czasem konieczne może okazać się usunięcie pamięci podręcznej z GeoCache, zwłaszcza po wprowadzeniu zmian w plikach statycznych. Na przykład przy publikowaniu nowej wersji swojej witryny. Należy wówczas całkowicie wyczyścić pamięć podręczną w GeoCache.
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Wyczyść pamięć cache`{.action}.
+Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Wyczyść pamięć cache`{.action}.
 
 ![GeoCache](images/manage_CDN_02.png){.thumbnail}
 
@@ -308,9 +308,9 @@ Jeśli nie korzystasz z CMS-a, również możesz korzystać z usługi GeoCache. 
 
 Operacja ta pozwala wyłączyć CDN dla jednej lub kilku pozycji podpiętych w opcji MultiSite, bez usuwania opcji GeoCache z Twojego hostingu WWW.
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W zakładce `MultiSite`{.action} kliknij `...`{.action} po prawej stronie pozycji MultiSite, a następnie `Zmień`{.action}.
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W zakładce `MultiSite`{.action} kliknij `...`{.action} po prawej stronie pozycji MultiSite, a następnie `Zmień`{.action}.
 
-Usuń zaznaczenie opcji „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
+Usuń zaznaczenie opcji "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
 ![GeoCache](images/manage_CDN_03.png){.thumbnail}
 
@@ -318,7 +318,7 @@ Usuń zaznaczenie opcji „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action
 
 Celem tego działania jest usunięcie opcji GeoCache dla całego hostingu WWW.
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Rezygnacja z GeoCache`{.action}.
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Rezygnacja z GeoCache`{.action}.
 
 ![GeoCache](images/manage_CDN_04.png){.thumbnail}
 
@@ -327,8 +327,7 @@ Kliknij `Zatwierdź`{.action}, aby potwierdzić rezygnację.
 > [!warning]
 >
 > Otrzymasz wiadomość e-mail z procedurą rezygnacji z GeoCache. Należy postępować zgodnie z podanymi instrukcjami, aby potwierdzić lub anulować swój wniosek. 
-> 
-
+>
 
 ### Sprawdzenie, czy GeoCache działa
 
@@ -355,7 +354,7 @@ Transfer-Encoding: chunked
 X-IPLB-Instance: 12345
 ```
 
-Pozycje „*X-CDN*” stanowią potwierdzenie, że korzystasz z GeoCache.
+Pozycje "*X-CDN*" stanowią potwierdzenie, że korzystasz z GeoCache.
 
 Jeśli nazwa domeny nie wykorzystuje GeoCache, otrzymasz wynik podobny do przedstawionego poniżej:
 
@@ -370,7 +369,7 @@ Vary: Accept-Encoding
 X-IPLB-Instance: 12345
 ```
 
-Brak pozycji „*X-CDN*” oznacza, że domena nie korzysta z GeoCache.
+Brak pozycji "*X-CDN*" oznacza, że domena nie korzysta z GeoCache.
 
 ## Sprawdź również
 

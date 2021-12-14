@@ -64,7 +64,6 @@ Marque la opción "Activar la CDN", haga clic en `Siguiente`{.action} y, seguida
 > Si añade un nombre de dominio externo a OVHcloud en multisitio al alojamiento web, debe indicar la dirección IP de la CDN de su alojamiento en la zona DNS del nombre de dominio.<br>
 > Consulte la [lista de direcciones IP de los clústeres y alojamientos web](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/) para saber qué dirección IP corresponde a la CDN de su clúster.
 
- 
 **¿Por qué no puedo disfrutar de la IP geolocalizada con la opción CDN?** <br>
 <br>
 La CDN utiliza el principio de las direcciones IP Anycast. Según su geolocalización, hará peticiones a diferentes servidores, lo que reducirá el tiempo de carga de sus archivos estáticos de forma eficaz. Por ello, de nada sirve la geolocalización de la dirección IP. <br>
@@ -98,9 +97,9 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 - **HTTP/2**: Protocolo que permite mejorar el rendimiento de su sitio web en materia de seguridad y latencia.
 
-- **Dev-mode** \: permite desactivar la caché durante el desarrollo del sitio web.
+- **Dev-mode** : permite desactivar la caché durante el desarrollo del sitio web.
 
-- **Brotli**\:  tipo de compresión que permite optimizar el tamaño de los archivos en caché.
+- **Brotli** :  tipo de compresión que permite optimizar el tamaño de los archivos en caché.
 
 - **Regla de caché**: Cree hasta 5 reglas. Dichas indicaciones determinan la frecuencia de actualización del cacheado para determinados recursos del sitio web. ([seguir el siguiente paso](#cacherules)). 
 
@@ -116,17 +115,17 @@ Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla
 
 ![CDN](images/manage_sharedCDN_04.png){.thumbnail}
 
-- **Nombre de la regla**: Asigne un nombre a la regla.
+- **Nombre de la regla** : Asigne un nombre a la regla.
 
 - **URI** : Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL. En los servicios CDN-Basic y CDN-Security, solo es posible introducir una extensión de archivo. 
 
-- **Duración**\: especifique el tiempo de cacheado del recurso seleccionado.
+- **Duración** : especifique el tiempo de cacheado del recurso seleccionado.
 
-- **Clasificación**:  Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
+- **Clasificación** : clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
 
 A continuación, haga clic en el botón `Crear la regla`{.action}.
 
-Las reglas aparecen en una lista. Puede modificar una regla haciendo clic en `...`{.action} a la derecha de la regla y, seguidamente, en `Modificar la regla`{.action}. o eliminarla haciendo clic en `Eliminar regla`{.action}.
+Las reglas aparecen en una lista. Puede modificar una regla haciendo clic en `...`{.action} a la derecha de la regla y, seguidamente, en `Modificar la regla`{.action}. O eliminarla haciendo clic en `Eliminar regla`{.action}.
 
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
@@ -141,9 +140,8 @@ Una vez que haya configurado las reglas y opciones, haga clic en `Aplicar la con
 Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego en `Editar la CDN`{.action}. 
 
 > [!primary]
->  las opciones que se presentan a continuación requieren la suscripción a la [CDN Security](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/) o a la [CDN Advanced](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/)
-
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego `Editar la CDN`{.action}. 
+>
+> Las opciones que se presentan a continuación requieren la suscripción a la [CDN Security](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/) o a la [CDN Advanced](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/)
 
 - **Cross-Origin Resource Sharing (CORS)** : Indique en la lista los dominios externos que estarán autorizados a acceder a los recursos de su sitio web para compartirlos. 
 
@@ -179,7 +177,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 > [!warning]
 >
-> Para instalar un [módulo en 1 clic OVHcloud](../modules-en-1-clic/), el WAF debe desactivarse para evitar que se bloquee la instalación del módulo.
+> Para instalar un [módulo en 1 clic OVHcloud](../modulos-en-un-clic/), el WAF debe desactivarse para evitar que se bloquee la instalación del módulo.
 
 > [!primary]
 >  
@@ -210,7 +208,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 - **Purga avanzada**: Personalice su purga eligiendo los elementos de la caché a vaciar: todo el sitio web, una carpeta, una URI, una extensión de archivos o utilizando una expresión regular personalizada. 
 
-	En la pestaña "Multisitio", haga clic en el botón `...`{.action} a la derecha de la entrada multisitio y, seguidamente, en "`Purgar la CDN`{.action}". 
+	En la pestaña "Multisitio", haga clic en el botón `...`{.action} a la derecha de la entrada multisitio y, seguidamente, en `Purgar la CDN`{.action}.
 
 	![CDN](images/manage_CDNadvanced_01.png){.thumbnail}
 
@@ -219,7 +217,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 	- *Activado - Ordenar los parámetros*: El recurso se guarda en caché ordenando sus parámetros. Antes de almacenar la URL en la caché de la CDN, se ordenará su eliminación. Por ejemplo, sólo se guardará una iteración para 2 URL con los mismos parámetros en un orden diferente.
 	- *Activado - Ignorar configuración*: El recurso se guarda en caché sin ningún parámetro. La caché CDN no tendrá en cuenta los parámetros introducidos en la URL, por lo que almacenará la URL sin los parámetros en la caché.
 
-- **Prewarm** : Force el almacenamiento en caché permanente de sus recursos primordiales. La CDN anticipa y refresca la caché automáticamente, sin esperar a que el usuario le pida que la cambie. Esta función solo se aplica en contenido estático, con un TTL superior a 0, y el recurso no debe exceder de 1GB. Un indicador indica el nivel de consumo de los recursos en *Prewarm*, en función de la lista de URL que utilice. El total de recursos que utilizan estas URL no debe exceder de 1 GB.
+- **Prewarm**: Force el almacenamiento en caché permanente de sus recursos primordiales. La CDN anticipa y refresca la caché automáticamente, sin esperar a que el usuario le pida que la cambie. Esta función solo se aplica en contenido estático, con un TTL superior a 0, y el recurso no debe exceder de 1GB. Un indicador indica el nivel de consumo de los recursos en *Prewarm*, en función de la lista de URL que utilice. El total de recursos que utilizan estas URL no debe exceder de 1 GB.
 
 	Para definir la lista de URLs que deben estar en *Prewarm*, haga clic en `Editar la lista de URLs`{.action}.
 
@@ -246,7 +244,7 @@ Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla
 	- **Carpeta**:  Introduzca una ruta válida para una de las carpetas del directorio raíz de su sitio web.
 	- **Expresión regular personalizada**: y se aplica a todas las URI de su sitio web.
 	- **URI**: Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL.
-- **Recursos**\: defina los atributos en función del tipo de recurso elegido.
+- **Recursos**: defina los atributos en función del tipo de recurso elegido.
 - **Duración**: Indique el tiempo de cacheado del recurso seleccionado.
 - **Clasificación**:  Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
 
@@ -274,7 +272,7 @@ En la pestaña `Multisitios`{.action} de su alojamiento, bajo la tabla, podrá c
 
 En ocasiones, resulta útil vaciar la caché de la CDN, principalmente cuando se actualizan los archivos estáticos. Por ejemplo, cuando pone en línea una nueva versión de su sitio web. En dicho caso, vacíe por completo la caché de la CDN.
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de «Opción CDN» y, seguidamente, en `Vaciar la caché`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de "Opción CDN" y, seguidamente, en `Vaciar la caché`{.action}.
 
 ![CDN](images/manage_CDN_02.png){.thumbnail}
 
@@ -310,7 +308,7 @@ Esta acción permite desactivar la CDN para uno o más de sus registros multisit
 
 Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en `...`{.action} a la derecha de la entrada multisitio y seleccione `Editar`{.action}.
 
-Desmarque la opción «Activar la CDN», haga clic en `Siguiente`{.action} y, a continuación, en `Validar`{.action}.
+Desmarque la opción "Activar la CDN", haga clic en `Siguiente`{.action} y, a continuación, en `Validar`{.action}.
 
 ![CDN](images/manage_CDN_03.png){.thumbnail}
 
@@ -318,7 +316,7 @@ Desmarque la opción «Activar la CDN», haga clic en `Siguiente`{.action} y, a 
 
 Esta acción permite eliminar la opción CDN en todo su alojamiento web.
 
-Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de «Opción CDN» y, seguidamente, en `Anular la CDN`{.action}.
+Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de "Opción CDN" y, seguidamente, en `Anular la CDN`{.action}.
 
 ![CDN](images/manage_CDN_04.png){.thumbnail}
 
@@ -355,7 +353,7 @@ Transfer-Encoding: chunked
 X-IPLB-Instance: 12345
 ```
 
-Las indicaciones «*X-CDN*» confirman que el tráfico de su sitio web se transmite correctamente a través de la CDN.
+Las indicaciones "*X-CDN*" confirman que el tráfico de su sitio web se transmite correctamente a través de la CDN.
 
 En caso de que el dominio no se transmita por la CDN, obtendrá el siguiente resultado:
 
@@ -370,7 +368,7 @@ Vary: Accept-Encoding
 X-IPLB-Instance: 12345
 ```
 
-La ausencia de la indicación «*X-CDN*» confirma que el tráfico de su sitio web no se transmite a través de la CDN.
+La ausencia de la indicación "*X-CDN*" confirma que el tráfico de su sitio web no se transmite a través de la CDN.
 
 ## Más información
 
