@@ -109,7 +109,7 @@ Vous pouvez tous les activer si vous le souhaiter.
 
 Cliquez sur le bouton `Terminer `{.action} pour terminer le processus et créer la nouvelle règle.
 
-![Step7_02](images/step7-02.PNG){.thumbnail}
+![Step7_02](images/step7_02.PNG){.thumbnail}
 
 Vous pouvez apporter des modifications au niveau de sécurité de la nouvelle règle créée. 
 Avec cette méthode simple, vous pouvez créer et configurer des règles dans le pare-feu Windows Server et améliorer sa sécurité.
