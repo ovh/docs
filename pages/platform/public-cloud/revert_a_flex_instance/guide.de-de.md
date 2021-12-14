@@ -1,9 +1,9 @@
 ---
-title: Revertieren einer Flex-Instanz
+title: Revertierung einer Flex-Instanz
 slug: revertieren-einer-flex-instanz
-excerpt: Erfahren Sie, wie Sie eine Flex-Instanz über die OpenStack Horizon-Schnittstelle zurücksetzen können.
+excerpt: Erfahren Sie hier, wie Sie eine Flex-Instanz über OpenStack Horizon zurücksetzen können
 section: Horizon
-Order: 7
+order: 7
 ---
 
 > [!primary]
@@ -14,18 +14,20 @@ Order: 7
 
 ## Ziel
 
-Eine Flex-Instanz ist eine Single-Size-Disk (50GB), die einen schnelleren Prozess für Snapshots bietet. Es ermöglicht die Größe auf ein höheres oder niedrigeres Modell mit festem Speicherplatz, während klassische Modelle nur auf ein höheres Modell skaliert werden können.</br> Während sich Ihre Infrastruktur ständig weiterentwickelt, müssen Sie unter Umständen den Speicherplatz Ihrer Instanz erhöhen. In diesem Fall müssen Sie Ihre Flex-Instanz auf ein klassisches Modell "zurücksetzen". Diese Aktion kann nur über die Horizon-Schnittstelle durchgeführt werden.
+Eine Flex-Instanz beruht auf einer Single-Size-Disk (50GB), die einen schnelleren Prozess für Snapshots bietet. Das ermöglicht ein Wechseln auf ein höheres oder niedrigeres Modell mit festem Speicherplatz, während reguläre Instanzen nur auf ein höheres Modell skaliert werden können.
 
-</br>**Diese Anleitung zeigt Ihnen, wie Sie Ihre Flex-Instanz über die OpenStack Horizon-Oberfläche zurücksetzen und in der Größe verändern können.**
+Wenn sich Ihre Infrastruktur weiterentwickelt, müssen Sie unter Umständen den Speicherplatz Ihrer Instanz erhöhen. In diesem Fall kann eine Flex-Instanz auf ein klassisches Modell zurückgesetzt werden (Revertierung). Diese Aktion kann nur über das Horizon Interface durchgeführt werden.
+
+**Diese Anleitung zeigt Ihnen, wie Sie Ihre Flex-Instanz über die OpenStack Horizon-Oberfläche zurücksetzen und in der Größe verändern können.**
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) mit der Flex-Option
-- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/)
+- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) mit der Flex-Option.
+- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich ins [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) ein wählen Sie oben links die korrekte Region aus.
+Loggen Sie sich ins [Horizon Interface](https://horizon.cloud.ovh.net/auth/login/) ein wählen Sie oben links die korrekte Region aus.
 
 ![Region selection](images/region2021.png){.thumbnail}
 
@@ -35,35 +37,33 @@ Klicken Sie links im Menü auf `Compute`{.action} und wählen Sie dann `Instance
 
 **Wahl des Templates (*Flavor Choice*)** <a name="flavorchoice"></a>
 
-Wahl des Templates (*Flavor Choice*)
-
 Dieser Abschnitt zeigt das aktuelle Template (*old flavor*) an und erlaubt es Ihnen, das neue Template (*new flavor*) für die Instanz auszuwählen.
 
-In unserem Beispiel ist unser flavor « b2-15-flex », wir können entweder zu einem « b2-15 » flavor zurückkehren oder es zu einem « b2-30 » flavor upgraden. In unserem Fall wollen wir unsere Instanz auf das klassische Modell « b2-30 » aktualisieren.
+In diesem Beispiel ist der *flavor* "b2-15-flex". Sie können dann entweder auf "b2-15" zurücksetzen oder zu "b2-30" upgraden. Hier wird die Instanz auf das klassische Modell "b2-30" aktualisiert.
 
 ![choose new flavor](images/confirmflavor.png){.thumbnail}
 
 > [!warning]
-> - Sie können nur von einem Linux-Modell zu einem anderen Linux-Modell und von einem Windows-Modell zu einem anderen Windows-Modell wechseln.
+> - Sie können nicht von einem Linux-Modell auf ein Windows-Modell oder umgekehrt wechseln.
 >
 > - Die Flex-Option ist nicht für alle Modelle verfügbar.
 >
 
 **Erweiterte Optionen (*Advanced Options*)**
 
-In diesem Bereich können Sie die Partitionierung der Festplatte (*Disk Partition*) und die Servergruppe (*Server Group*) einrichten.
+In diesem Bereich können Sie die Partitionierung der Disk (*Disk Partition*) und die Servergruppe (*Server Group*) einrichten.
 
 ![public-cloud](images/resize_advanced.png){.thumbnail}
 
 Wenn die Konfiguration abgeschlossen ist, klicken Sie auf `Resize`{.action}.
 
-Sobald der Prozess abgeschlossen ist, wird unsere Instanz in ein klassisches Modell mit einem größeren Speicherplatz umgewandelt.
+Mit dem Abschluss der Prozedur ist die Instanz in ein klassisches Modell mit einem größeren Speicherplatz umgewandelt.
 
 ![Neuer Geschmack](images/newflavor.png){.thumbnail}
 
 Falls Sie wieder zu einem Flex-Modell wechseln möchten, können Sie dies tun, indem Sie die gleichen Schritte wie [oben](#flavorchoice) ausführen und ein Flex-Modell anstelle eines klassischen Modells auswählen. 
 
-Alternativ können Sie auch [die Konfiguration der Instanz bearbeiten](https://docs.ovh.com/de/public-cloud/die_ersten_schritte_mit_ihrer_public_cloud_instanz/#die-konfiguration-einer-instanz-bearbeiten) auf Ihr OVHcloud Kundencenter.
+Alternativ können Sie auch im OVHcloud Kundencenter [die Konfiguration der Instanz bearbeiten](https://docs.ovh.com/de/public-cloud/die_ersten_schritte_mit_ihrer_public_cloud_instanz/#die-konfiguration-einer-instanz-bearbeiten).
 
 ## Weiterführende Informationen
 
