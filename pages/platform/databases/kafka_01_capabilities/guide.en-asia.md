@@ -84,12 +84,23 @@ More information on <https://github.com/apache/kafka/blob/trunk/LICENSE>.
 
 Here are the node types you can choose from:
 
+**Business plans**
+
 | Name    | Disk (GB) | Cores | Memory (GB) |
 | ------- | --------- | ----- | ----------- |
-| db1-7   | N/A       | 2     | 7           |
-| db1-15  | N/A       | 4     | 15          |
-| db1-30  | N/A       | 8     | 30          |
-| db1-60  | N/A       | 16    | 60          |
+| db1-7   | 960       | 2     | 7           |
+| db1-15  | 1920      | 4     | 15          |
+| db1-30  | 3840      | 8     | 30          |
+| db1-60  | 7680      | 16    | 60          |
+
+**Enterprise plans**
+
+| Name    | Disk (GB) | Cores | Memory (GB) |
+| ------- | --------- | ----- | ----------- |
+| db1-7   | 1920      | 2     | 7           |
+| db1-15  | 3840      | 4     | 15          |
+| db1-30  | 7680      | 8     | 30          |
+| db1-60  | 15360     | 16    | 60          |
 
 Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
 
