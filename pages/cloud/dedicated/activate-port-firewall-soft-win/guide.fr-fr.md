@@ -23,7 +23,7 @@ Pour protéger de manière optimale votre système, votre serveur Windows Server
 
 ## Prérequis
 
-- Disposer d’un serveur dédié dans votre espace client OVHcloud
+- Disposer d’un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} dans votre espace client OVHcloud.
 - Être connecté à votre serveur à un bureau distant sous Windows 
 
 
