@@ -124,7 +124,10 @@ openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 
 La configuration par défaut du réseau privé peut être différente selon la région utilisée.
 
-Dans certaines régions, la propriété « port security » est considérée comme *enabled* même si elle n'applique aucune règle sur le réseau privé. Sur certaines autres régions (en fonction de la version d'OpenStack déployée), la propriété « port security » est vue comme *enabled* mais les règles sont correctement appliquées sur le réseau privé.
+> [!primary]
+> Dans certaines régions, la propriété « port security » est considérée comme *enabled* même si elle n'applique aucune règle sur le réseau privé. Sur certaines autres régions (en fonction de la version d'OpenStack déployée), la propriété « port security » est vue comme *enabled* mais les règles sont correctement appliquées sur le réseau privé.
+> 
+
 
 En résumé, les régions suivantes exécutent Newton OpenStack release et **aucune règle de pare-feu ne fonctionnera** pour vos réseaux privés, même si la sécurité des ports est activée :
 
