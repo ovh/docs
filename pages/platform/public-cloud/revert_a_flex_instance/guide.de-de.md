@@ -18,7 +18,7 @@ Eine Flex-Instanz beruht auf einer Single-Size-Disk (50GB), die einen schnellere
 
 Wenn sich Ihre Infrastruktur weiterentwickelt, müssen Sie unter Umständen den Speicherplatz Ihrer Instanz erhöhen. In diesem Fall kann eine Flex-Instanz auf ein klassisches Modell zurückgesetzt werden (Revertierung). Diese Aktion kann nur über das Horizon Interface durchgeführt werden.
 
-**Diese Anleitung zeigt Ihnen, wie Sie Ihre Flex-Instanz über die OpenStack Horizon-Oberfläche zurücksetzen und in der Größe verändern können.**
+**Diese Anleitung erklärt, wie Sie eine Flex-Instanz über das OpenStack Horizon Interface zurücksetzen und ihre Größe verändern können.**
 
 ## Voraussetzungen
 
