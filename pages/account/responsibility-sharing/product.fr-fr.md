@@ -1,6 +1,6 @@
 ---
 title: Partage de responsabilités
-slug: securite
+slug: responsibility sharing
 excerpt: Partage de responsabilités avec les clients sous la forme de RACI
 Sections: 
 order: 
