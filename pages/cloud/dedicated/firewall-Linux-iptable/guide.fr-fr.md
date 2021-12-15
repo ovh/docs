@@ -15,8 +15,6 @@ Lorsque vous commandez votre serveur dédié, aucun protocole de sécurité n'es
 
 **Apprenez à sécuriser votre serveur dédié grâce à iptable.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
@@ -213,10 +211,6 @@ Au prochain démarrage de votre système, iptables rechargera automatiquement le
 
 Vous pouvez configurer des règles de pare-feu iptables de base pour votre serveur Linux. 
 N'hésitez pas à expérimenter, car vous pouvez toujours supprimer les règles dont vous n'avez pas besoin, ou vider toutes les règles et recommencer.
-
-
-Il est alors recommandé de créer et d’ajuster à votre utilisation des règles sur ce pare-feu. Pour plus d'informations sur la configuration des iptables, reportez-vous à la documentation officielle de votre distribution Linux.
-
 
 
 
