@@ -1,7 +1,7 @@
 ---
 title: Deploy applications to specific Nodes and Nodes Pools
-slug: label-taint-node-pools
-excerpt: 'Find out how to deploy applications to specific Nodes and Nodes Pools, with labels and taint, on OVHcloud Managed Kubernetes'
+slug: label-nodeaffinity-node-pools
+excerpt: 'Find out how to deploy applications to specific Nodes and Nodes Pools, with labels and NodeAffinity, on OVHcloud Managed Kubernetes'
 section: Tutorials
 # order: 7
 ---
@@ -82,6 +82,8 @@ You can now choose to integrate your Kubernetes cluster into a private network u
 For this tutorial, we will configure two different node pools.
 
 Reminder: A node pool is a group of nodes sharing the same configuration, allowing you a lot of flexibility in your cluster management. 
+
+![Node pool](images/nodepool.png){.thumbnail}
 
 > [!primary]
 > You can read the [Managing node pools](../managing-nodes/) guide for more information on node pools.
@@ -293,17 +295,18 @@ nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   21h   v1.22.2
 And you can check in which node our application is running:
 
 ```bash
-$ kubectl get po -o wide
+$ kubectl get pod -o wide
 NAME                                      READY   STATUS    RESTARTS   AGE   IP         NODE                 NOMINATED NODE   READINESS GATES
 hello-world-deployment-585c6cfcd8-kntp9   1/1     Running   0          13m   10.2.8.2   hourly-node-d4f9d7   <none>           <none>
 ```
 
+With this feature you can choose and control where you want to deploy your applications.
 
 ## Where do we go from here?
 
-Thanks to this tutorial you can have in your OVHcloud Managed Kubernetes cluster, several kind of node pools and you can deploy your applications easily where we want to.
+In this tutorial you saw how to create, in your OVHcloud Managed Kubernetes cluster, several kind of node pools and how to deploy your applications easily where we want to.
 
-Thanks to the Node pool label propagation to the Node, you can also do some operations on the Nodes: taint, drain and cordon.
+But do you know that you can do several others Node operations like taint, drain and cordon thanks to Node pool labels propagation to the Nodes?
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](../).
 
