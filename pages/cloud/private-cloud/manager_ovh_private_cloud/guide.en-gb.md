@@ -6,13 +6,13 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 17th June 2020**
+**Last updated 15th December 2021**
 
 ## Objective
 
-The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage the numerous settings of your Hosted Private Cloud infrastructure.
+The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage your Hosted Private Cloud infrastructure.
 
-**This guide explains the management options available in your Control Panel.**
+**This guide explains the management options available.**
 
 ## Requirements
 
@@ -22,50 +22,39 @@ The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage the
 
 ## Instructions
 
-### General information tab
+### Interface Access
 
-Once you have navigated to the "Hosted Private Cloud" section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and selected your service under `Private Cloud`{.action} in the left-hand navigation bar, you will have access to a general overview of your Hosted Private Cloud service:
+Navigate to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and log on with your administrative credentials.
 
-![General information](images/controlpanel1.png){.thumbnail}
-
-At the top of the page, (1 on the image), you will find the name and description of your Private Cloud. Feel free to customise it – this will be very useful if you have several infrastructures. 
-
-On the left (2 on the image), all your infrastructures and the data centres of which they consist are listed.
+![LOGIN](images/en01ogin.png){.thumbnail}
 
 
-#### General information
+### Hosted Private Cloud
 
-On the main page, in the left-hand section, you will find the general information of your Private Cloud.
+Go to the "Hosted Private Cloud" section and select your service under `Private Cloud`{.action} in the left-hand navigation bar. You can rename your infrastructure by clicking the ![Pen](images/buttonpen.png){.thumbnail} in the center of the page.
 
-![General information](images/controlpanel2.png){.thumbnail}
+![HOSTED](images/en02dashboard.png){.thumbnail}
 
-- The "Description" of your infrastructure (label it here according to your needs)
-- The version number of the software
-- The OVHcloud commercial range
-- The data centre, and more precisely, the zone in which your infrastructure is located
-- The access policy of your infrastructure (`Open` or `Restricted`) 
-- The number of virtual data centres in your infrastructure
-- The number of IP address blocks (with the option to order IP blocks)
+
+#### General Information
+
+The General Information tab gives you an overview of your services.
+
+- The "Description" field is editable through the ![Dots](images/buttondots.png){.thumbnail} button
+- The "Software solution" shows the vCSA version used
+- The "Location" of your Private Cloud
+- The "Access policy" of your infrastructure (`Open` or `Restricted`) 
+- The "Number of datacenters" in your infrastructure
+- The "Number of IP blocks" you own and the option to order more through the ![Dots](images/buttondots.png){.thumbnail} button 
 - Links to your management interfaces
+- Your "Options and compliance" tab shows your enabled and disabled options with direct access to modification though the ![Dots](images/buttondots.png){.thumbnail} button
+- The "Mailing list" section allows you to sign up to the OVHcloud Hosted Private Cloud mailing list
+- The "Renewal" date section also allows for license ordering or service cancellation through the ![Dots](images/buttondots.png){.thumbnail} button
+
+![GENERAL](images/en03general.png){.thumbnail}
 
 
-#### Options and compliance
-
-The middle section provides an overview of the status of activation regarding the Private Cloud options.
-
-![Options](images/controlpanel3.png){.thumbnail}
-
-
-#### Service management
-
-In the right-hand section, you can enter an email address to sign up to the OVHcloud Hosted Private Cloud mailing list.
-
-The next renewal date of the service is also mentioned here. By clicking on the `...`{.action} button, you can order a license or initiate the cancellation of your service.
-
-![Options](images/controlpanel4.png){.thumbnail}
-
-
-### Datacentres tab
+### Datacenters
 
 On this tab, you will find a brief summary of virtual data centres in your offer.
 
