@@ -136,7 +136,7 @@ W niektórych przypadkach może to nie być metoda określona powyżej. Aby się
 Najczęściej zalecaną metodą jest utworzenie pliku konfiguracyjnego w katalogu `/etc/network/interfaces.d/`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
+nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 Dzięki temu możesz w prosty sposób oddzielić konfigurację IPv6 i przywrócić zmiany w przypadku wystąpienia błędu.

@@ -71,7 +71,7 @@ Sprawdź oficjalne fora swojego ulubionego CMS-a lub skontaktuj się z [społecz
 
 ### Etap 4: dowiedz się, jak rozpoznawać fałszywe e-maile
 
-Wiadomości typu phishing stanowią zagrożenie dla bezpieczeństwa Twojej strony, ponieważ mogą zawierać lub powodować instalację złośliwego oprogramowania. Aby dowiedzieć się, jak je rozpoznawać i chronić, zapoznaj się z tym [przewodnikiem](../customer/oszustwa-phishing/).
+Wiadomości typu phishing stanowią zagrożenie dla bezpieczeństwa Twojej strony, ponieważ mogą zawierać lub powodować instalację złośliwego oprogramowania. Aby dowiedzieć się, jak je rozpoznawać i chronić, zapoznaj się z tym [przewodnikiem](../../customer/oszustwa-phishing/).
 
 ### Etap 5: uruchom automatyczne odnawianie
 
@@ -85,7 +85,7 @@ Zalecamy również regularne sprawdzanie **ważności zarejestrowanych sposobów
 
 Regularnie sprawdź aktualizacje Twojej strony, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](../blokada-hostingu-z-powodu-wlamania/#22-aktualizacja-strony-www).
 
-Pamiętaj, aby na Twoim hostingu zainstalować najnowszą wersję [języka PHP](../hosting/konfiguracja_php_na_hostingu_www_ovh_2014/).
+Pamiętaj, aby na Twoim hostingu zainstalować najnowszą wersję [języka PHP](../konfiguracja_php_na_hostingu_www_ovh_2014/).
 
 ### Etap 7: włącz https
 
