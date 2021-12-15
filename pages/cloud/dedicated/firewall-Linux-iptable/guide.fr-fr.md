@@ -207,8 +207,7 @@ sudo iptables -D INPUT <Number>
 ```
 Remplacez <Number> par le numéro de ligne de règle que vous souhaitez supprimer.
 
-
-### Étape 7 : Enregistrez vos modifications
+### Étape 8 : Enregistrez vos modifications
 
 iptables ne conserve pas les règles que vous avez créées lors du redémarrage du système. 
 Chaque fois que vous configurez iptables sous Linux, toutes les modifications que vous apportez s'appliquent uniquement jusqu'au premier redémarrage.
