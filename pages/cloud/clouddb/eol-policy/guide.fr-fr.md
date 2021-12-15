@@ -11,11 +11,9 @@ Les bases de données managées OVH sont basées sur plusieurs versions majeures
 
 Les produits couverts par cette politique de fin de vie sont :
 
-- Les services Cloud Databases Publiques, instances SGBD dédiées joignables via le réseau publique ([voir les annonces](../clouddb-eos-eol/)).
+- Les services CloudDB, instances SGBD dédiées joignables via le réseau publique ou via le réseau Web Hosting  ([voir les annonces](../clouddb-eos-eol/)).
 
-- Les services Cloud Databases Web Hosting (également connues sous le nom de services SQLPrivé), instances SGBD dédiées joignables via le réseau Web Hosting ([voir les annonces](../privatesql-eos-eol/)).
-
-- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](../sharedsql-eos-eol/)).
+- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](https://docs.ovh.com/fr/hosting/sql_eos_eol/){.external})..
 
 # Définitions et lignes directrices de la politique de fin de vie
 
@@ -52,11 +50,9 @@ Ce type de mise à jour peut induire des comportements non souhaités sur vos ap
 
 Au lieu de mettre à jour le SGBD de votre service vers la prochaine version majeure disponible, nous pouvons décider de cesser le service, pour plusieurs raisons telles que:
 
-- La mise à jour est déconseillée par l'éditeur logiciel du SGBD sous-jacent,
+- La mise à jour est déconseillée par l'éditeur logiciel du SGBD sous-jacent.
 
-- Le SGBD a lui-même pris fin,
-
-- ...
+- Le SGBD a lui-même pris fin.
 
 La cessation peut être faite de deux façons, selon les cas:
 
