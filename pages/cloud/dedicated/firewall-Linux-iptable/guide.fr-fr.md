@@ -65,10 +65,16 @@ Une fois les mises à jour terminées, votre système sera entièrement à jour.
 
 ### Étape 2 : Installation du pare-feu iptables linux
 
-Installez iptables sur votre système si ce n'est pas encore fait avec la commande suivante:
+> [!primary]
+>
+> Il existe deux versions différentes d'iptables, pour IPv4 et IPv6. Les règles que nous couvrons dans ce didacticiel Linux iptables concernent IPv4.
+> Pour configurer iptables pour IPv6, vous devez utiliser l'utilitaire iptables6. Ces deux protocoles différents ne fonctionnent pas ensemble et doivent être configurés indépendamment
+>
+
+Iptables est installé par défaut sur la plupart des systèmes Linux. Pour confirmer qu'iptables est installé, utilisez la commande suivante :
 
 ```sh
-~#apt-get install iptable
+~#sudo apt-get install iptable
 ```
 
 En général, une commande iptables se présente comme suit :
@@ -90,14 +96,62 @@ Voici une liste de quelques options iptables courantes :
 - -X --delete-chain – Supprime la chaîne fournie.
 
 
+### Étape 3 : Vérifier l'état actuel d'iptables
+
+Pour afficher l'ensemble de règles actuel sur votre serveur, saisissez ce qui suit dans la fenêtre du terminal :
+
+```sh
+~#sudo iptables -L
+
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination
+```
+Le système affiche le statut de vos chaînes. 
+La sortie répertoriera trois chaînes :
 
 
+### Étape 3 : Activation du trafic sur localhost
 
+Pour autoriser le trafic de votre propre système (le localhost). Ajoutez la chaîne d'entrée en entrant ce qui suit :
 
+```sh
+sudo iptables -A INPUT -i lo -j ACCEPT
+```
+Cette commande configure le pare-feu pour accepter le trafic pour l'interface localhost (lo) (-i). Désormais, tout ce qui provient de votre système passera par votre pare-feu.
+Vous devez définir cette règle pour permettre aux applications de communiquer avec l'interface localhost.
 
+### Étape 4 : Autoriser le trafic sur des ports spécifiques
 
+Ces règles autorisent le trafic sur les différents ports que vous spécifiez à l'aide des commandes répertoriées ci-dessous. 
+Un port est un point de terminaison de communication spécifié pour un type spécifique de données.
 
+Pour autoriser le trafic Web HTTP, saisissez la commande suivante :
 
+```sh
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+```
+Pour autoriser uniquement le trafic SSH (Secure Shell) entrant, saisissez ce qui suit :
+
+```sh
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+```
+
+Pour autoriser le trafic Internet HTTPS, saisissez la commande suivante :
+
+```sh
+sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+```
+Les options fonctionnent comme suit :
+
+- -p – Vérifie le protocole spécifié (tcp).
+- --dport – Spécifiez le port de destination.
+- -j jump – Effectue l'action spécifiée.
 
 ### Configurer le pare-feu interne : iptables
 
