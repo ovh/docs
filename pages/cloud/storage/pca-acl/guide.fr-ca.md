@@ -8,7 +8,7 @@ section: Public Cloud Archive
 order: 040
 ---
 
-**Dernière mise à jour le 23/09/2021**
+**Dernière mise à jour le 15/12/2021**
 
 ## Objectif
 
