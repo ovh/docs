@@ -35,7 +35,8 @@ Afin d’accéder au pare-feu Windows, vous devez passer à l’itinéraire suiv
 - Démarrer
 - Cliquer sur Rechercher
 - Rechercher Pare-feu Windows sur la barre de recherche
-- Puis cliquer sur Pare-feu Windows
+- Puis cliquer sur Pare-feu Windows.
+
 Il vous faudra ensuite vous rendre sur la ligne `Configuration avancée `{.action}.
 
 ![Step1](images/step1.PNG){.thumbnail}
