@@ -10,11 +10,14 @@ order: 1
 
 ## Objective
 
+
 The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage your Hosted Private Cloud infrastructure.
 
 **This guide explains the management options available.**
 
+
 ## Requirements
+
 
 - a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
@@ -22,14 +25,17 @@ The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage you
 
 ## Instructions
 
+
 ### Interface Access
+
 
 Navigate to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and log on with your administrative credentials.
 
 ![LOGIN](images/en01ogin.png){.thumbnail}
 
 
-### Hosted Private Cloud
+### Hosted Private Cloud View
+
 
 Go to the "Hosted Private Cloud" section and select your service under `Private Cloud`{.action} in the left-hand navigation bar. You can rename your infrastructure by clicking the ![Pen](images/buttonpen.png){.thumbnail} in the center of the page.
 
@@ -37,6 +43,7 @@ Go to the "Hosted Private Cloud" section and select your service under `Private 
 
 
 #### General Information
+
 
 The General Information tab gives you an overview of your services.
 
@@ -54,50 +61,34 @@ The General Information tab gives you an overview of your services.
 ![GENERAL](images/en03general.png){.thumbnail}
 
 
-### Datacenters
+#### Datacenters
 
-On this tab, you will find a brief summary of virtual data centres in your offer.
 
-![Data centre](images/controlpanel5.png){.thumbnail}
+The Datacenters tab shows your current virtual datacenters and offers a button to add more as you need.<br>
+The [Datacenter view](./#datacenter-view) will give you more details and options. 
 
-Please refer to the [data centre view section](./#data-centre-view) below for more information.
+![DATACENTERS](images/en04datacenters.png){.thumbnail}
 
-> [!primary]
->
-> You can add another data centre from this page, this will not incur any additional charges.
-> 
 
-### Users tab
+#### Users
 
-All users who can log in to vSphere are listed in this section:
+The Users tab lists all the accounts who can log in to vSphere and allows the creation of new ones.
 
-![Users](images/controlpanel6.png){.thumbnail}
+![USERS](images/en05users.png){.thumbnail}
 
-You can create a user by clicking on the `Create User`{.action} button.
 
-For each user, their general information and the rights granted to them are specified in the table:
+You have several options when you click on the ![Dots](images/buttondots.png){.thumbnail} button next to a user
+- Edit the entries in the summary table
+- See/Change the user's rights for each Datacenter
+- Change the user's password
+- Delete the user
 
-- the user ID
-- the first name (optional)
-- the last name (optional)
-- the email address (optional)
-- the phone number (optional)
-- the right *token validator*, which allows to validate sensitive operations on a Hosted Private Cloud with the options HDS or PCI-DSS
-- the right *IP*, which allows access with the OVHcloud Network plugin
-- the right *Failover IP*, which allows to manage Failover IPs on the Hosted Private Cloud
-- the right *NSX Interface*, which allows access to the NSX interface if this option is activated on your Private Cloud
-- the *Diagnosis* status, informing you whether this user is actually enabled
+Clicking `See/Change the rights for each DC`{.action} will take you to the rights management window.
 
-You have several options when you click on the `...`{.action} button next to a user:
+![RIGHTS](images/en06rights.png){.thumbnail}
 
-- editing the entries in this table (changing the rights listed above, adding an email address, adding a phone number)
-- viewing and modifying this user's rights per data centre
-- changing this user's password
-- deleting this user
 
-Following are detailed listings of the available user rights by data centre.
-
-![User rights per data centre](images/controlpanel7.png){.thumbnail}
+Click ![Dots](images/buttondots.png){.thumbnail} and then `Modify rights`{.action} to edit those.
 
 - **vSphere access**: to set the global rights for a user in vSphere
 
@@ -127,8 +118,10 @@ Following are detailed listings of the available user rights by data centre.
 
 - **Add resources**: gives the right to add additional resources through the OVHcloud plugin in the vSphere client
 
+![RIGHTS](images/en07editrights.png){.thumbnail}
 
-### Security tab
+
+#### Security tab
 
 The vCenter access policy can be managed in this tab.
 
@@ -151,7 +144,7 @@ The second table at the bottom of the page concerns the management of Virtual Ma
 
 You can find more details about this option in [this guide](../vm-encrypt/).
 
-### Operations tab
+#### Operations tab
 
 This tab shows the history of tasks executed on your Hosted Private Cloud service.
 
@@ -165,7 +158,7 @@ The list provides details on each task, so you can verify if an operation is in 
 >
 
 
-### Windows Licence tab
+#### Windows Licence tab
 
 This tab allows you to activate Windows SPLA licences for your data centre by clicking on the button.
 
@@ -174,7 +167,7 @@ This tab allows you to activate Windows SPLA licences for your data centre by cl
 You can find more information on the [pricing page](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/images-licenses/).
 
 
-### Data centre view 
+### Datacenter View 
 
 A Hosted Private Cloud may include multiple virtual data centres. The left-hand navigation bar will list them when you select a Hosted Public Cloud service. Click on a data centre to open its dedicated management page.
 
