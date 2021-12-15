@@ -2,7 +2,7 @@
 title: Kafka MirrorMaker - Capabilities and Limitations
 slug: mirrormaker/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka MirrorMaker
-section: MirrorMaker
+section: Kafka MirrorMaker
 order: 1
 ---
 
