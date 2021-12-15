@@ -200,7 +200,7 @@ Tout d'abord, répertoriez toutes les règles en saisissant ce qui suit :
 ```sh
 sudo iptables -L --line-numbers
 ```
-![line-numbers](images/Step7-all-rules){.thumbnail}
+![line-numbers](images/Step7-all-rules.PNG){.thumbnail}
 
 Recherchez la ligne de la règle de pare-feu que vous souhaitez supprimer et exécutez cette commande :
 
