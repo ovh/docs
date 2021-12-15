@@ -36,12 +36,12 @@ apt-get update
 Utilisez la commande ci-dessous pour installer les clients Nova (application de calcul), Glance (image service) et Swift :
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt-get install python-openstackclient python-novaclient python-swiftclient -y
 ```
 
 Python3 Version
 ```sh
-apt-get install python3-openstackclient python3-novaclient -y
+apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
 ```
 
 À l'issue de cette étape, nous vous recommandons de créer un utilisateur spécial pour ne pas vous servir de l’utilisateur root.
@@ -54,9 +54,9 @@ nova help
 ```
 
 > [!primary]
-> 
+>
 > La documentation relative à l’API OpenStack est disponible [sur cette page](https://docs.openstack.org/python-openstackclient/latest/){.external}.
-> 
+>
 
 ### Sous CentOS
 
@@ -95,9 +95,9 @@ nova help
 ```
 
 > [!primary]
-> 
+>
 > La documentation relative à l’API OpenStack est disponible [sur cette page](https://docs.openstack.org/python-openstackclient/latest/){.external}.
-> 
+>
 
 ### Sous Windows
 
@@ -119,7 +119,7 @@ Passez à l’onglet `Avancé`{.action} et cliquez sur `Variables environnement`
 
 ![Paramètres de performance](images/3_preparation_openstack_environment_windows.png){.thumbnail}
 
-#### Étape 3 : configurer les variables d'environnement 
+#### Étape 3 : configurer les variables d'environnement
 
 Dans la section « Variables système », choisissez « Nouveau », attribuez le nom « PYTHON_HOME » et ajoutez le chemin jusqu'à Python. Par défaut, celui-ci sera : « C:\Python27 ».
 
