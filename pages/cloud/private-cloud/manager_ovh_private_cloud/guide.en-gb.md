@@ -28,7 +28,6 @@ The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage you
 
 ### Interface Access
 
-
 Navigate to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and log on with your administrative credentials.
 
 ![LOGIN](images/en01ogin.png){.thumbnail}
@@ -48,13 +47,13 @@ Go to the "Hosted Private Cloud" section and select your service under `Private 
 The General Information tab gives you an overview of your services.
 
 - The "Description" field is editable through the ![Dots](images/buttondots.png){.thumbnail} button
-- The "Software solution" shows the vCSA version used
+- The "Software solution" shows the vCSA version installed
 - The "Location" of your Private Cloud
 - The "Access policy" of your infrastructure (`Open` or `Restricted`) 
 - The "Number of datacenters" in your infrastructure
 - The "Number of IP blocks" you own and the option to order more through the ![Dots](images/buttondots.png){.thumbnail} button 
 - Links to your management interfaces
-- Your "Options and compliance" tab shows your enabled and disabled options with direct access to modification though the ![Dots](images/buttondots.png){.thumbnail} button
+- Your "Options and compliance" tab shows your enabled and disabled options with direct access to modification though the ![Dots](images/buttondots.png){.thumbnail} buttons
 - The "Mailing list" section allows you to sign up to the OVHcloud Hosted Private Cloud mailing list
 - The "Renewal" date section also allows for license ordering or service cancellation through the ![Dots](images/buttondots.png){.thumbnail} button
 
@@ -65,7 +64,7 @@ The General Information tab gives you an overview of your services.
 
 
 The Datacenters tab shows your current virtual datacenters and offers a button to add more as you need.<br>
-The [Datacenter view](./#datacenter-view) will give you more details and options. 
+The full Datacenter view (see lower) will give you more details and options. 
 
 ![DATACENTERS](images/en04datacenters.png){.thumbnail}
 
@@ -135,7 +134,7 @@ You can configure options settings with the buttons on the right.
 > 
 
 At the bottom of the page, you can also add or see you Key Management Servers.<br>
-Check out the [Enabling Virtual Machine Encryption](https://docs.ovh.com/gb/en/private-cloud/vm-encrypt/) guide for more details.
+Check out [Enabling Virtual Machine Encryption](https://docs.ovh.com/gb/en/private-cloud/vm-encrypt/) for more details.
 
 ![KMS](images/en09kms.png){.thumbnail}
 
@@ -171,7 +170,7 @@ The datacenter name and description can be customized by clicking the ![Pen](ima
 ![DATACENTER](images/en12datacenter.png){.thumbnail}
 
 
-#### General information tab
+#### General Information
 
 
 The General Information tab gives you an overview of your services.
@@ -179,8 +178,8 @@ The General Information tab gives you an overview of your services.
 - The "Name" and "Description" fields are editable through the ![Dots](images/buttondots.png){.thumbnail} button
 - The "Range" shows the VMware services suscribed
 - The "Hosts" and "Datastores" fields give you the quantity of each in your Private Cloud
-- The "VMs backed up" shows your backup solution status.
-- The "Disaster Recovery Plan" shows your DRA solution status.
+- The "VMs backed up" shows your backup solution status
+- The "Disaster Recovery Plan" shows your DRA solution status
 - Links to your management interfaces
 
 ![GENERAL](images/en13general.png){.thumbnail}
@@ -206,7 +205,7 @@ You can also order a one through the `Order a datastore`{.action}. button.
 
 #### Backup
 
-The Backup tab allows you to order a Veeam Backup solution.<br>
+The Backup tab allows you to activate a Veeam Backup solution.<br>
 Check out the [Activating and using Veeam Managed Backup](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/) for more details.
 
 ![BACKUP](images/en16backup.png){.thumbnail}
