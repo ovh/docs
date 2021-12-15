@@ -123,7 +123,7 @@ You can also create a **test version** of your website (e.g.: test.mydomain.tld)
 
 [Responding when your hosting is deactivated for security purposes](../security-practices-hosting-disabled/)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://www.ovhcloud.com/en/web-hosting/directory/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
 
