@@ -221,11 +221,11 @@ Once the solution activated, the Backup page also allows you to set up daily bac
 The Disaster Recovery Plan tab allows you to build a DRP plan with Zerto.<br>
 Check out [Setting up Zerto Virtual Replication for your DRP](https://docs.ovh.com/gb/en/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/) for more details.
 
-![DRP](images/en17drp.png){.thumbnail}
+![DRP](images/en18drp.png){.thumbnail}
 
 > [!warning]
 >
->  You need to have a secondary Private Cloud solution to enable any Zerto option.
+>  You need to own a secondary Private Cloud solution to enable any Zerto option.
 >
 
 
