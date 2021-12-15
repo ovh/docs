@@ -30,7 +30,7 @@ Pour protéger de manière optimale votre système, votre serveur Windows Server
 ## En pratique
 
 ### Étape 1 :  Accéder au pare-feu Windows
-Afin d’accéder au pare-feu Windows, vous devez passer à l’itinéraire suivant :
+Afin d’accéder au pare-feu Windows, vous devez passer parl’itinéraire suivant :
 
 - Démarrer
 - Cliquer sur Rechercher
