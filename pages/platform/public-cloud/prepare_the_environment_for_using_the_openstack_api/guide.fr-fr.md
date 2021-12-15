@@ -7,7 +7,7 @@ section: 'Gestion via OpenStack'
 order: 1
 ---
 
-**Dernière mise à jour le 21/01/2019**
+**Dernière mise à jour le 15/12/2021**
 
 ## Objectif
 
@@ -40,6 +40,7 @@ apt-get install python-openstackclient python-novaclient python-swiftclient -y
 ```
 
 Python3 Version
+
 ```sh
 apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
 ```

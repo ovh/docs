@@ -5,7 +5,7 @@ slug: przygotowanie_srodowiska_dla_api_openstack
 section: "Zarządzanie w OpenStack\_CLI"
 ---
 
-**Ostatnia aktualizacja z dnia 08-02-2019**
+**Ostatnia aktualizacja z dnia 15/12/2021**
 
 ## Wprowadzenie
 
@@ -34,7 +34,13 @@ apt-get update
 Użyj poniższego polecenia do instalacji klientów Nova (aplikacja obliczeniowa), Glance (usługa obrazów) i Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt-get install python-openstackclient python-novaclient python-swiftclient -y
+```
+
+Python3 Wersja
+
+```sh
+apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
 ```
 
 Po zakończeniu tego etapu zalecamy utworzenie oddzielnego użytkownika zamiast korzystania z użytkownika root.

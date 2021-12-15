@@ -6,7 +6,7 @@ legacy_guide_number: 1851
 section: 'Gestion via OpenStack'
 ---
 
-**Dernière mise à jour le 21/01/2019**
+**Dernière mise à jour le 15/12/2021**
 
 ## Objectif
 
@@ -35,7 +35,13 @@ apt-get update
 Utilisez la commande ci-dessous pour installer les clients Nova (application de calcul), Glance (image service) et Swift :
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt-get install python-openstackclient python-novaclient python-swiftclient -y
+```
+
+Python3 Version
+
+```sh
+apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
 ```
 
 À l'issue de cette étape, nous vous recommandons de créer un utilisateur spécial pour ne pas vous servir de l’utilisateur root.

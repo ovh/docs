@@ -34,7 +34,13 @@ apt-get update
 Utilice el siguiente comando para instalar los clientes Nova, Glance y Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt-get install python-openstackclient python-novaclient python-swiftclient -y
+```
+
+Python3 Versión
+
+```sh
+apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
 ```
 
 Una vez hecho esto, le recomendamos que cree un usuario específico para no utilizar el usuario *root*.
