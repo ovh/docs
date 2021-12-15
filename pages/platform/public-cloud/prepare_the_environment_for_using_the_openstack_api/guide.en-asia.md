@@ -32,7 +32,7 @@ Update the packet cache using the `apt-get update` command:
 apt-get update
 ```
 
-Use the command below to install the Nova client (compute application), Glance (image service) and Swift:
+Use the command below to install the Nova client (compute application) and Swift:
 
 ```sh
 apt-get install python-openstackclient python-novaclient python-swiftclient -y

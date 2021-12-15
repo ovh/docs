@@ -30,7 +30,7 @@ Aggiorna la cache dei pacchetti utilizzando il comando `apt-get update`:
 apt-get update
 ```
 
-Installa i client per Nova (compute), Glance (image service) e Swift:
+Installa i client per Nova (compute) e Swift:
 
 ```sh
 apt-get install python-openstackclient python-novaclient python-swiftclient -y

@@ -33,7 +33,7 @@ Mettez à jour le cache des paquets, grâce à la commande `apt-get update`:
 apt-get update
 ```
 
-Utilisez la commande ci-dessous pour installer les clients Nova (application de calcul), Glance (image service) et Swift :
+Utilisez la commande ci-dessous pour installer les clients Nova (application de calcul) et Swift :
 
 ```sh
 apt-get install python-openstackclient python-novaclient python-swiftclient -y

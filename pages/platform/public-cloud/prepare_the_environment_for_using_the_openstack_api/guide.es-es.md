@@ -31,7 +31,7 @@ Actualice la caché de los paquetes con el siguiente comando:
 apt-get update
 ```
 
-Utilice el siguiente comando para instalar los clientes Nova, Glance y Swift:
+Utilice el siguiente comando para instalar los clientes Nova y Swift:
 
 ```sh
 apt-get install python-openstackclient python-novaclient python-swiftclient -y

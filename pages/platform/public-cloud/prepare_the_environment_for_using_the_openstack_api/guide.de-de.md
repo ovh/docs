@@ -32,7 +32,7 @@ Aktualisieren Sie den Paket-Cache mit dem Befehl `apt-get update`:
 apt-get update
 ```
 
-Verwenden Sie den nachstehenden Befehl, um die Nova- (Compute-Anwendung), Glance- (Image Service) und Swift-Clients zu installieren:
+Verwenden Sie den nachstehenden Befehl, um die Nova- (Compute-Anwendung) und Swift-Clients zu installieren:
 
 ```sh
 apt-get install python-openstackclient python-novaclient python-swiftclient -y
