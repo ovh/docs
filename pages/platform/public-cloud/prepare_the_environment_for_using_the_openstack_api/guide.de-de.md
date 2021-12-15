@@ -6,7 +6,7 @@ legacy_guide_number: 1851
 section: 'OpenStack'
 ---
 
-**Stand 16.07.2019**
+**Stand 15.12.2021**
 
 ## Einleitung
 
@@ -32,10 +32,16 @@ Aktualisieren Sie den Paket-Cache mit dem Befehl `apt-get update`:
 apt-get update
 ```
 
-Verwenden Sie den nachstehenden Befehl, um die Nova- (Compute-Anwendung), Glance- (Image Service) und Swift-Clients zu installieren:
+Verwenden Sie den nachstehenden Befehl, um die Nova- (Compute-Anwendung) und Swift-Clients zu installieren:
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt-get install python-openstackclient python-novaclient python-swiftclient -y
+```
+
+Python3 Version
+
+```sh
+apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
 ```
 
 Wir empfehlen Ihnen, nach diesem Schritt einen speziellen Benutzer zu erstellen, um nicht den root-Benutzer zu verwenden.
