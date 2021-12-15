@@ -125,7 +125,7 @@ Moreover, keep in mind that the exact file names may vary.
 The best practice approach is to create a configuration file in the directory `/etc/network/interfaces.d/`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
+nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 This allows you to separate the IPv6 configuration and easily revert the changes in case of an error.

@@ -136,7 +136,7 @@ En algunos casos, el método a utilizar puede no ser el indicado anteriormente. 
 El método más utilizado es crear un archivo de configuración en el directorio `/etc/network/interfaces.d/`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
+nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 De este modo, podrá separar la configuración IPv6 y, en caso de error, restablecer fácilmente los cambios.
