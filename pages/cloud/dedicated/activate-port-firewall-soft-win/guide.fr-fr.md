@@ -113,6 +113,8 @@ Vous pouvez tous les activer si vous le souhaiter.
 
 Cliquez sur le bouton `Terminer `{.action} pour terminer le processus et créer la nouvelle règle.
 
+- Définir un nom 
+
 ![Step7_02](images/step7_02.PNG){.thumbnail}
 
 Vous pouvez apporter des modifications au niveau de sécurité de la nouvelle règle créée. 
