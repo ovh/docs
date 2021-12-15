@@ -48,7 +48,7 @@ Il s'agit d'un processus en deux parties qui implique la mise à jour de la list
 Mettez à jour la liste des paquets sur votre serveur de la manière suivante :
 
 ```sh
-apt-get update
+sudo apt-get update
 ```
 
 #### Mettre à jour les paquets
@@ -56,7 +56,7 @@ apt-get update
 Mettez ensuite à jour les paquets sur votre serveur de la manière suivante :
 
 ```sh
-~#apt-get upgrade
+sudo apt-get upgrade
 ```
 
 
@@ -74,7 +74,7 @@ Une fois les mises à jour terminées, votre système sera entièrement à jour.
 Iptables est installé par défaut sur la plupart des systèmes Linux. Pour confirmer qu'iptables est installé, utilisez la commande suivante :
 
 ```sh
-~#sudo apt-get install iptable
+sudo apt-get install iptable
 ```
 
 En général, une commande iptables se présente comme suit :
@@ -85,15 +85,15 @@ sudo iptables [option] CHAIN_rule [-j target]
 
 Voici une liste de quelques options iptables courantes :
 
-- -A --append – Ajoute une règle à une chaîne (à la fin).
-- -C --check - Recherchez une règle qui correspond aux exigences de la chaîne.
-- -D --delete – Supprime les règles spécifiées d'une chaîne.
-- -F --flush – Supprime toutes les règles.
-- -I --insert – Ajoute une règle à une chaîne à une position donnée.
-- -L --list – Affiche toutes les règles d'une chaîne.
-- -N -new-chain – Créer une nouvelle chaîne.
-- -v --verbose – Affiche plus d'informations lors de l'utilisation d'une option de liste.
-- -X --delete-chain – Supprime la chaîne fournie.
+- -A --append : Ajoute une règle à une chaîne (à la fin).
+- -C --check : Recherchez une règle qui correspond aux exigences de la chaîne.
+- -D --delete : Supprime les règles spécifiées d'une chaîne.
+- -F --flush : Supprime toutes les règles.
+- -I --insert : Ajoute une règle à une chaîne à une position donnée.
+- -L --list : Affiche toutes les règles d'une chaîne.
+- -N -new-chain : Créer une nouvelle chaîne.
+- -v --verbose : Affiche plus d'informations lors de l'utilisation d'une option de liste.
+- -X --delete-chain : Supprime la chaîne fournie.
 
 
 ### Étape 3 : Vérifier l'état actuel d'iptables
@@ -101,7 +101,7 @@ Voici une liste de quelques options iptables courantes :
 Pour afficher l'ensemble de règles actuel sur votre serveur, saisissez ce qui suit dans la fenêtre du terminal :
 
 ```sh
-~#sudo iptables -L
+sudo iptables -L
 
 Chain INPUT (policy ACCEPT)
 target     prot opt source               destination
@@ -149,27 +149,82 @@ sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 ```
 Les options fonctionnent comme suit :
 
-- -p – Vérifie le protocole spécifié (tcp).
-- --dport – Spécifiez le port de destination.
-- -j jump – Effectue l'action spécifiée.
+- -p : Vérifie le protocole spécifié (tcp).
+- --dport : Spécifiez le port de destination.
+- -j jump : Effectue l'action 
 
-### Configurer le pare-feu interne : iptables
+### Étape 5 : Contrôler le trafic par adresse IP
 
-
-La distribution nue dispose d’un service de pare-feu nommé iptables. Par défaut, ce service ne possède aucune règle active. Vous pouvez le constater en tapant la commande suivante :
+Utilisez la commande suivante pour accepter le trafic à partir d'une adresse IP spécifique.
 
 ```sh
-iptables -L
+sudo iptables -A INPUT -s votre@IP_à_autoriser -j ACCEPT
 ```
+Remplacez l'adresse IP dans la commande par l'adresse IP que vous souhaitez autoriser.
+
+
+Vous pouvez également DROP le trafic à partir d'une adresse IP 
+
+```sh
+sudo iptables -A INPUT -s votre@IP_à_bloquer -j DROP
+```
+
+Vous pouvez REJETER le trafic à partir d'une plage d'adresses IP, avec la commande suivante :
+
+```sh
+sudo iptables -A INPUT -m iprange --src-range votre@IP_debut-votre@IP_fin -j REJECT
+```
+
+Les options iptables que nous avons utilisées dans les exemples fonctionnent comme suit :
+
+- -m : Correspond à l'option spécifiée.
+- -iprange : Indique au système d'attendre une plage d'adresses IP au lieu d'une seule.
+- --src-range : Identifie la plage d'adresses IP.
+
+### Étape 6 : Suppression du trafic indésirable
+
+Si vous définissez des règles de pare-feu iptables, vous devez empêcher les accès non autorisés en supprimant tout trafic provenant d'autres ports :
+
+
+```sh
+sudo iptables -A INPUT -j DROP
+```
+L'option -A ajoute une nouvelle règle à la chaîne. Si une connexion passe par des ports autres que ceux que vous avez définis, elle sera abandonnée.
+
+### Étape 7 : Supprimer une règle
+
+Vous pouvez utiliser l'option -F pour effacer toutes les règles de pare-feu iptables. 
+Une méthode plus précise consiste à supprimer le numéro de ligne d'une règle.
+Tout d'abord, répertoriez toutes les règles en saisissant ce qui suit :
+
+```sh
+sudo iptables -L --line-numbers
+```
+Recherchez la ligne de la règle de pare-feu que vous souhaitez supprimer et exécutez cette commande :
+
+```sh
+sudo iptables -D INPUT <Number>
+```
+Remplacez <Number> par le numéro de ligne de règle que vous souhaitez supprimer.
+
+
+### Étape 7 : Enregistrez vos modifications
+
+iptables ne conserve pas les règles que vous avez créées lors du redémarrage du système. 
+Chaque fois que vous configurez iptables sous Linux, toutes les modifications que vous apportez s'appliquent uniquement jusqu'au premier redémarrage.
+
+```sh
+sudo -s iptables-save -c
+```
+Au prochain démarrage de votre système, iptables rechargera automatiquement les règles du pare-feu.
+
+Vous pouvez configurer des règles de pare-feu iptables de base pour votre serveur Linux. 
+N'hésitez pas à expérimenter, car vous pouvez toujours supprimer les règles dont vous n'avez pas besoin, ou vider toutes les règles et recommencer.
+
 
 Il est alors recommandé de créer et d’ajuster à votre utilisation des règles sur ce pare-feu. Pour plus d'informations sur la configuration des iptables, reportez-vous à la documentation officielle de votre distribution Linux.
 
 
-#
-
-Vous aurez besoin d'une solution de sauvegarde tierce pour répliquer vos données et les transférer vers votre stockage de sauvegarde.
-
-Pour plus d'informations sur nos solutions de stockage de sauvegarde, consultez notre [guide](../services-backup-storage/){.external} de stockage de sauvegarde.
 
 
 ## Aller plus loin
