@@ -217,7 +217,7 @@ Rendz-vous sur [Mise en oeuvre de Zerto Virtual Replication pour votre PRA](http
 
 > [!warning]
 >
->  Vous devez possédez une solution Private Cloud secondaire pour activer une option Zerto.
+>  Vous devez posséder une solution Private Cloud secondaire pour activer une option Zerto.
 >
 
 
