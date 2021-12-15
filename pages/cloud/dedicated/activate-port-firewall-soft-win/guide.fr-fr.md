@@ -76,9 +76,9 @@ Dans la fenêtre suivante, définissez le type de port à activer:
 >C’est un protocole orienté connexion, c’est-à-dire qu’avec TCP, il sera possible de créer des connexions entre elles afin d’envoyer des flux de données, ce protocole >garantit que les données sont livrées au destinataire sans erreur et dans le même ordre dans lequel elles ont été envoyées.
 >
 >- UDP (User Datagram Protocol – Protocole de datagramme utilisateur)
->C’est un protocole non orienté vers la connexion, son développement repose sur l’échange de datagrammes et facilite l’envoi de datagrammes à travers le réseau qu’il est >nécessaire d’avoir préalablement établi une connexion avec la destination.
+>C’est un protocole non orienté vers la connexion, son développement repose sur l’échange de datagrammes et facilite l’envoi de datagrammes à travers le réseau qu’il est nécessaire d’avoir préalablement établi une connexion avec la destination.
 >
->Nous pouvons également sélectionner la case « Tous les ports locaux » pour activer tous les ports TCP ou UDP sur le serveur qui n’est pas sécurisé, ou activer la case à >cocher « Ports locaux spécifiques » pour déterminer quel port doit être autorisé sur la base de: aux exigences. 
+>Nous pouvons également sélectionner la case `Tous les ports locaux `{.action} pour activer tous les ports TCP ou UDP sur le serveur qui n’est pas sécurisé, ou activer la case à cocher `Ports locaux spécifiques `{.action} pour déterminer quel port doit être autorisé sur la base de: aux exigences. 
 >
 
 
@@ -116,7 +116,7 @@ Cliquez sur le bouton `Terminer `{.action} pour terminer le processus et créer 
 ![Step7_02](images/step7_02.PNG){.thumbnail}
 
 Vous pouvez apporter des modifications au niveau de sécurité de la nouvelle règle créée. 
-Avec cette méthode, vous pouvez créer et configurer des règles dans le pare-feu Windows Server et améliorer sa sécurité.
+Vous pouvez utiliser ce processus pour créer et configurer des règles dans le pare-feu Windows Server et améliorer sa sécurité.
 
 
 ## Aller plus loin
