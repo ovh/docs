@@ -36,7 +36,7 @@ Afin d’accéder au pare-feu Windows, vous devez passer à l’itinéraire suiv
 - Cliquer sur Rechercher
 - Rechercher Pare-feu Windows sur la barre de recherche
 - Puis cliquer sur Pare-feu Windows
-Il vous faudra ensuite vous rendre sur la ligne `Configuration avancée `{.action}
+Il vous faudra ensuite vous rendre sur la ligne `Configuration avancée `{.action}.
 
 ![Step1](images/step1.PNG){.thumbnail}
 
@@ -60,7 +60,8 @@ Cliquez sur l’option`Nouvelle règle `{.action} située dans le panneau de dro
 
 ### Etape 4 : Définir le type de règle à activer
 
-En sélectionnant cette option, l’assistant suivant s’affiche pour définir le type de règle à créer. Dans ce cas, vous selectionner la case `Port `{.action}
+En sélectionnant cette option, l’assistant suivant s’affiche pour définir le type de règle à créer.
+Dans ce cas, vous selectionner la case `Port `{.action}.
 
 ![Step4](images/step4.PNG){.thumbnail}
 
@@ -71,13 +72,13 @@ Dans la fenêtre suivante, définissez le type de port à activer:
 
 > [!primary]
 >
-> - TCP (protocole de contrôle de transmission)
->C’est un protocole orienté connexion, c’est-à-dire qu’avec TCP, il sera possible de créer des connexions entre elles afin d’envoyer des flux de données, ce protocole >garantit que les données sont livrées au destinataire sans erreur et dans le même ordre dans lequel elles ont été envoyées. transmis.
+>- TCP (protocole de contrôle de transmission)
+>C’est un protocole orienté connexion, c’est-à-dire qu’avec TCP, il sera possible de créer des connexions entre elles afin d’envoyer des flux de données, ce protocole >garantit que les données sont livrées au destinataire sans erreur et dans le même ordre dans lequel elles ont été envoyées.
 >
 >- UDP (User Datagram Protocol – Protocole de datagramme utilisateur)
 >C’est un protocole non orienté vers la connexion, son développement repose sur l’échange de datagrammes et facilite l’envoi de datagrammes à travers le réseau qu’il est >nécessaire d’avoir préalablement établi une connexion avec la destination.
 >
-> Nous pouvons également sélectionner la case « Tous les ports locaux » pour activer tous les ports TCP ou UDP sur le serveur qui n’est pas sécurisé, ou activer la case à >cocher « Ports locaux spécifiques » pour déterminer quel port doit être autorisé sur la base de: aux exigences. 
+>Nous pouvons également sélectionner la case « Tous les ports locaux » pour activer tous les ports TCP ou UDP sur le serveur qui n’est pas sécurisé, ou activer la case à >cocher « Ports locaux spécifiques » pour déterminer quel port doit être autorisé sur la base de: aux exigences. 
 >
 
 
@@ -115,7 +116,7 @@ Cliquez sur le bouton `Terminer `{.action} pour terminer le processus et créer 
 ![Step7_02](images/step7_02.PNG){.thumbnail}
 
 Vous pouvez apporter des modifications au niveau de sécurité de la nouvelle règle créée. 
-Avec cette méthode simple, vous pouvez créer et configurer des règles dans le pare-feu Windows Server et améliorer sa sécurité.
+Avec cette méthode, vous pouvez créer et configurer des règles dans le pare-feu Windows Server et améliorer sa sécurité.
 
 
 ## Aller plus loin
