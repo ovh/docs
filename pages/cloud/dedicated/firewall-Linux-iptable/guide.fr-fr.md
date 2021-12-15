@@ -103,19 +103,11 @@ Pour afficher l'ensemble de règles actuel sur votre serveur, saisissez ce qui s
 ```sh
 sudo iptables -L
 
-Chain INPUT (policy ACCEPT)
-target     prot opt source               destination
-
-Chain FORWARD (policy ACCEPT)
-target     prot opt source               destination
-
-Chain OUTPUT (policy ACCEPT)
-target     prot opt source               destination
 ```
 Le système affiche le statut de vos chaînes. 
 La sortie répertoriera trois chaînes :
 
-
+![Check-Current-iptables](images/Check-Current-iptables.PNG){.thumbnail}
 ### Étape 3 : Activation du trafic sur localhost
 
 Pour autoriser le trafic de votre propre système (le localhost). Ajoutez la chaîne d'entrée en entrant ce qui suit :
