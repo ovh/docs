@@ -32,28 +32,27 @@ section: Tutorials
 
 ## Objective
 
-In this tutorial we are going to show you how to deploy your applications to specific `Nodes` and` Nodes Pools`, with `labels`, `taint` and `NodeAffinity` concepts, on your OVHcloud Managed Kubernetes Service.
+In this tutorial we are going to show you how to deploy your applications to specific `Nodes` and` Nodes Pools`, with `labels` and `NodeAffinity` Kubernetes concepts, on your OVHcloud Managed Kubernetes Service.
 
 We will:
 
 - create a Managed Kubernetes cluster
 - create a node pool with 3 nodes and "monthly" billing mode
 - create another node pool with autoscaling activated (0 nodes minimum and maximum 10), with "hourly" billing mode
-- deploy an application
 - deploy an application to a specific node pool (and nodes)
 
 
 ## Requirements
 
 - a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=ca)
 
 
 ## Instructions
 
 ### Cluster creation
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu and click on `Create a cluster`{.action}.
 
@@ -117,7 +116,7 @@ Click on your cluster, then on `Node pools`{.action} tab.
 We will create our second Node pool.
 Click on `Add a node pool`{.action} button.
 
-Then enter a name for your second node pool, `hourly`for example.
+Then enter a name for your second node pool, `hourly` for example.
 
 ![Name your second node pool](images/create-a-nodepool-2.png){.thumbnail}
 
@@ -128,6 +127,10 @@ Select a flavor for your new node pool, we can choose "B2-7" like our other node
 In the next step, define the size of our second node pool.
 This time, we can enable the `Autoscaling`{.action} feature.
 Define the minimum and maximum pool size in that case, 0 in minimum and 10 in maximum, for example.
+
+> [!primary]
+> By enabling anti-affinity, current and future nodes will be launched on different hypervisors (physical servers), guaranteeing higher fault tolerance.
+> 
 
 ![Define a size and autoscaling for your second node pool](images/create-a-nodepool-4.png){.thumbnail}
 
@@ -146,9 +149,9 @@ Wait, 'till its status change to `OK`.
 
 ### Check and prepare our Node pools
 
-To deploy your application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings](https://docs.ovh.com/gb/en/kubernetes/configuring-kubectl/) for `kubectl`.
+To deploy your application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings](https://docs.ovh.com/ie/en/kubernetes/configuring-kubectl/) for `kubectl`.
 
-First of all, let's display our node pools:
+When you can access to the cluster through `kubectl` command, let's display our node pools:
 
 ```bash
 $ kubectl get nodepool
@@ -188,19 +191,24 @@ It's time to discover the power of `labels` and `NodeAffinity` Kubernetes concep
 
 We have one node pool with "monthly" billing and another one with "hourly" billing. The goal to have these two node pools is to have the possibility to separate our needs depending on our applications types.
 
-TODO: xxx
+In order to deploy our application in specific nodes, we need to know what is the label of the target node pool.
+
+The thing to know is that the nodes created by Kubernetes have in their label the name of the Node Pool. Thanks to that you can ask Kubernetes to deploy applications in the wanted node pool.
+
+Let's show the labels of our running nodes:
 
 ```bash
-$ kubectl get no --show-labels
+$ kubectl get node --show-labels
 NAME                                         STATUS   ROLES    AGE     VERSION   LABELS
 nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   3h56m   v1.22.2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=GRA7,failure-domain.beta.kubernetes.io/zone=nova,kubernetes.io/arch=amd64,kubernetes.io/hostname=nodepool-cc40f90c-effb-4945-b7-node-23e81b,kubernetes.io/os=linux,node.k8s.ovh/type=standard,node.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d,topology.cinder.csi.openstack.org/zone=nova,topology.kubernetes.io/region=GRA7,topology.kubernetes.io/zone=nova
 nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   3h58m   v1.22.2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=GRA7,failure-domain.beta.kubernetes.io/zone=nova,kubernetes.io/arch=amd64,kubernetes.io/hostname=nodepool-cc40f90c-effb-4945-b7-node-4bd23f,kubernetes.io/os=linux,node.k8s.ovh/type=standard,node.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d,topology.cinder.csi.openstack.org/zone=nova,topology.kubernetes.io/region=GRA7,topology.kubernetes.io/zone=nova
 nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   3h56m   v1.22.2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=GRA7,failure-domain.beta.kubernetes.io/zone=nova,kubernetes.io/arch=amd64,kubernetes.io/hostname=nodepool-cc40f90c-effb-4945-b7-node-ef121e,kubernetes.io/os=linux,node.k8s.ovh/type=standard,node.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d,topology.cinder.csi.openstack.org/zone=nova,topology.kubernetes.io/region=GRA7,topology.kubernetes.io/zone=nova
 ```
 
-TODO: as you can see ... ndoes .. labels .. nodepool= ... so it inorder to deploy apps on node pool hourly we need to target ... nodepool=hourly
+As you can maybe see, our running Nodes got the label `nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d`.
+The format of the label is: `nodepool=<name of the nodepool>`.
 
-Let's deploy an application, only on our `hourly` node pool and let's see the behavior of the autoscaling.
+It's time to deploy an application, only on our `hourly` node pool and let's see the behavior of the AutoScaling.
 
 Create a `deployment.yaml` file with this content:
 
@@ -253,113 +261,49 @@ spec:
                 - hourly
 ```
 
-TODO: xxx
+```bash
+$ kubectl apply -f deployment.yaml
+service/hello-world created
+deployment.apps/hello-world-deployment created
+```
 
+When you apply this YAML manifest, a Pod will be first in `Pending` state. A new Node will be created. When the new Node will be successfully created, the Pod will be started in this Node.
 
 ```bash
-$ kubectl get no
-NAME                                         STATUS   ROLES    AGE     VERSION
-hourly-node-3f11a1                           Ready    <none>   46m     v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   4h49m   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   4h51m   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   4h49m   v1.22.2
-````
+$ kubectl get pod -w
+NAME                                      READY   STATUS    RESTARTS   AGE
+hello-world-deployment-585c6cfcd8-kntp9   0/1     Pending   0          12s
+hello-world-deployment-585c6cfcd8-kntp9   0/1     Pending   0          3m3s
+hello-world-deployment-585c6cfcd8-kntp9   0/1     ContainerCreating   0          3m29s
+hello-world-deployment-585c6cfcd8-kntp9   0/1     ContainerCreating   0          3m41s
+hello-world-deployment-585c6cfcd8-kntp9   1/1     Running             0          3m45s
+```
 
-TODO: xxx
+You have to wait several minutes in order to have a new Node that match with your criterias.
+
+```bash
+$ kubectl get node
+NAME                                         STATUS   ROLES    AGE   VERSION
+hourly-node-d4f9d7                           Ready    <none>   18s   v1.22.2
+nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   21h   v1.22.2
+nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   21h   v1.22.2
+nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   21h   v1.22.2
+```
+
+And you can check in which node our application is running:
 
 ```bash
 $ kubectl get po -o wide
 NAME                                      READY   STATUS    RESTARTS   AGE   IP         NODE                 NOMINATED NODE   READINESS GATES
-hello-world-deployment-585c6cfcd8-bgrt6   1/1     Running   0          53m   10.2.7.2   hourly-node-3f11a1   <none>           <none>
+hello-world-deployment-585c6cfcd8-kntp9   1/1     Running   0          13m   10.2.8.2   hourly-node-d4f9d7   <none>           <none>
 ```
-
-TODO: xxxx
-
-Cool, thanks to this tutorial we can have in our Kubernetes cluster, one node pool for our common application and another one with "hourly" billing mode with AutoScaling enabled and with only ... 
-
-
-
-TODO: usage des labels et NodeAffinity
-
-TODO: phrase / paragraphe sur l'usage des taints ?
-
-TODO: et expliquer que sans le nodeaffinity, kube va runer l'app sur les nodes disponible .. qui feat avec les besoins du pod/de l'appli ..
-
-### TODO: taint
-
-
-TODO: deployer une app
-
-TODO: deployer une app avec le NodeAffinity
-TODO: constater avec le -o wide qu'elle tourne uniquement sur les nodes du "hourly" :)
-
-TODO: continueeee
-
-- create another node pool with autoscaling activated (3 nodes minimum and maximum 10), with "hourly" billing mode
-
-
-
-----
-
-TODO: for our second node pool:
-
-Alternatively, 
-
-> [!primary]
-> By enabling anti-affinity, current and future nodes will be launched on different hypervisors (physical servers), guaranteeing higher fault tolerance. Anti-affinity node pools can only include up to 5 nodes.
-> 
-
-## Go further
-
----------
-
-label and taint node pools
-propagation to nodes
-
-Use case :
-* create a managed kubernetes cluster
-* créer un node pool en "hourly" - de 3 a 10 en autocaling
-* créer un autre node pool en "monthly" - 3 nodes
-
-* rajouter un label specifique "monthly" sur node pool monthly
-* et label "hourly" sur pay as you go
-
-* deployer un deployment avec du node affinities 
---> eh kubernetes, tu me met ces deploiement là sur mes nodes en hourly !
-
-* get pods -o wide (pour montrer sur quels nodes) ils tournent
-
------
-
-
-
-
-Let's begin by creating a `mysql-pvc.yaml` to define an initial PVC with 2 GB of allocated space:
-
-```yaml
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: mysql-pv-claim
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 2Gi
-```
-
-And apply it to the cluster:
-
-```bash
-kubectl apply -f mysql/mysql-pvc.yaml
-```
- 
 
 
 ## Where do we go from here?
 
-Now you can expand the Persistent Volumes on your OVHcloud Managed Kubernetes cluster, and adapt them to the live of your data.
+Thanks to this tutorial you can have in your OVHcloud Managed Kubernetes cluster, several kind of node pools and you can deploy your applications easily where we want to.
+
+Thanks to the Node pool label propagation to the Node, you can also do some operations on the Nodes: taint, drain and cordon.
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](../).
 
