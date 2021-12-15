@@ -1,16 +1,16 @@
 ---
-title: Kafka - Capabilities and Limitations
-slug: kafka/capabilities
-excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
-section: Kafka
+title: Kafka MirrorMaker - Capabilities and Limitations
+slug: mirrormaker/capabilities
+excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka MirrorMaker
+section: MirrorMaker
 order: 1
 ---
 
-**Last updated December 13<sup>th</sup>, 2021**
+**Last updated December 15<sup>th</sup>, 2021**
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Public Cloud Databases for Kafka offer.
+This page provides the technical capabilities and limitations of the Public Cloud Databases for Kafka MirrorMaker offer.
 We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## BETA phase
@@ -21,7 +21,7 @@ Please note that the Public Cloud Databases for Kafka offer is currently in BETA
 - the service is not ready for production;
 - there is no official support;
 - there are no contractual agreements (SLA);
-- some features are under development. You can check out our BETA vs General Availability here : <https://github.com/ovh/public-cloud-roadmap/issues/126>.
+- some features are under development. You can check out our BETA vs General Availability here : <https://github.com/ovh/public-cloud-roadmap/issues/150>.
 
 ## Capabilities and limitations
 
@@ -36,14 +36,13 @@ The Public Cloud Databases offer is available in the following regions:
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Kafka nodes have to be in the same region. Multi-AZ is currently not supported.
+Kafka MirrorMaker nodes have to be in the same region. Multi-AZ is currently not supported.
 
 ### Kafka versions
 
 The Public Cloud Databases offer supports the following Kafka versions:
 
-- Kafka 2.8
-- Kafka 3.0
+- Kafka MirrorMaker 2.0
 
 You can folllow Kafka Release Cycle on their official page : <https://kafka.apache.org/downloads>
 
@@ -51,7 +50,7 @@ You can folllow Kafka Release Cycle on their official page : <https://kafka.apac
 
 You can use any of the Kafka-recommended clients to access your cluster.
 
-Please note that Kafka Connect isn't available so far.
+Please note that Kafka Connect ais not available so far.
 
 ### Plans
 
@@ -65,13 +64,16 @@ Here is an overview of the various plans capabilities:
 
 | Plan         | Number of nodes by default | Additional nodes | Network                        |
 | ------------ | -------------------------- | ---------------- | ------------------------------ |
+| *Essential*  | 1                          | No               | Public only                    |
 | *Business*   | 3                          | No               | Public (Private vRack planned) |
 | *Enterprise* | 6                          | No               | Public (Private vRack planned) |
 
-Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network, read replicas and backup retention.
+Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network.
 
-#### Nodes and replicas
 
+#### Nodes
+
+- **Essential**: the cluster is delivered with 3 nodes by default.
 - **Business**: the cluster is delivered with 3 nodes by default.
 - **Enterprise**: the cluster is delivered with 6 nodes by default.
 
@@ -84,32 +86,38 @@ More information on <https://github.com/apache/kafka/blob/trunk/LICENSE>.
 
 Here are the node types you can choose from:
 
+**Essential plans**
+
+| Name    | Disk (GB) | Cores | Memory (GB) |
+| ------- | --------- | ----- | ----------- |
+| db1-7   | N/A       | 2     | 7           |
+| db1-15  | N/A       | 4     | 15          |
+| db1-30  | N/A       | 8     | 30          |
+
+
 **Business plans**
 
 | Name    | Disk (GB) | Cores | Memory (GB) |
 | ------- | --------- | ----- | ----------- |
-| db1-7   | 960       | 2     | 7           |
-| db1-15  | 1920      | 4     | 15          |
-| db1-30  | 3840      | 8     | 30          |
-| db1-60  | 7680      | 16    | 60          |
+| db1-7   | N/A       | 2     | 7           |
+| db1-15  | N/A       | 4     | 15          |
+| db1-30  | N/A       | 8     | 30          |
+
 
 **Enterprise plans**
 
 | Name    | Disk (GB) | Cores | Memory (GB) |
 | ------- | --------- | ----- | ----------- |
-| db1-7   | 1920      | 2     | 7           |
-| db1-15  | 3840      | 4     | 15          |
-| db1-30  | 7680      | 8     | 30          |
-| db1-60  | 15360     | 16    | 60          |
+| db1-7   | N/A       | 2     | 7           |
+| db1-15  | N/A       | 4     | 15          |
+| db1-30  | N/A       | 8     | 30          |
+
 
 Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
 
 ### Features
 
 #### Network
-
-Kafka clusters are reachable through a random port, attributed during cluster creation.
-Once your cluster is in **RUNNING** status, the Service URI will display the port to use.
 
 Public networking can be used for all the offers.
 
@@ -119,12 +127,24 @@ When using private networking, some network ports get created in the private net
 
 For both public and private networks, Ingress and Egress traffic are included in the service plans and unmetered.
 
-#### Maximum simultaneous connections
+#### Kafka replication and data retention
 
-The number of simultaneous connections in Public Cloud Databases for Kafka depends on the available total memory on the node.
-We allow approximately 100 connections per 4 GB of RAM memory, capped to a maximum of 1000 active connections.
+You can select Kafka source cluster and Kakfa Destination cluster from the same Public Cloud projet.
+External Kafka cluster are not supported so far.
 
-So for example on a server with 7 GB memory, you will get approximately 200 connections, and with 15 GB memory you will get 400 connections.
+You  need at least 2 kafka cluster to create replications flows.
+
+Replication flows allowed parameters are:
+
+- Source;
+- Target;
+- Topics;
+- Topics exclusion;
+- Sync group offset;
+- Sync interval in seconds (s);
+- Heartbeats (true/false).
+
+Data retention is only limited by your cluster storage space.
 
 #### Advanced parameters
 
@@ -144,25 +164,6 @@ As of today, you can't export logs and metrics, nor plug them into a remote tool
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
 
-#### Users and roles
-
-Creation of users is allowed via the Control Panel and API.
-
-For each user you can specify a username. Role by default is **admin**.
-
-#### Topics
-
-Creation of topics is allowed via the Control Panel and API.
-
-For each topic you can specify:
-
-- A topic name;
-- The replication factor;
-- The amount of partitions;
-- The size of partitions;
-- The retention time;
-- The minimum in-sync replication;
-- The deletion policy.
 
 ## We want your feedback!
 
