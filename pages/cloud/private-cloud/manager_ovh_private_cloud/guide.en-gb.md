@@ -164,59 +164,73 @@ More information on the [pricing page](https://www.ovhcloud.com/en-gb/enterprise
 
 ### Datacenter View 
 
-A Hosted Private Cloud may include multiple virtual datacenters. The left-hand navigation bar will list them when you select a Hosted Public Cloud service. Click on one to open its management page.
+A Hosted Private Cloud may include multiple virtual datacenters.<br>
+The left-hand navigation bar will list them when you select a Hosted Public Cloud service. Click on one to open its management page.<br>
+The datacenter name and description can be customized by clicking the ![Pen](images/buttonpen.png){.thumbnail} button.
 
 ![DATACENTER](images/en12datacenter.png){.thumbnail}
 
-You can customise the name of your data centre by clicking on the pencil icon. Below, you can add a description.
 
 #### General information tab
 
-The first page contains some information about your data centre, its range, and the number of hosts and datastores. Multiple data centres can be leveraged in a single Hosted Private Cloud infrastructure with the Dedicated Cloud and Software Defined Datacenter ranges.
 
-#### Hosts tab
+The General Information tab gives you an overview of your services.
 
-This tab lists the hosts of the selected data centre.
+- The "Name" and "Description" fields are editable through the ![Dots](images/buttondots.png){.thumbnail} button
+- The "Range" shows the VMware services suscribed
+- The "Hosts" and "Datastores" fields give you the quantity of each in your Private Cloud
+- The "VMs backed up" shows your backup solution status.
+- The "Disaster Recovery Plan" shows your DRA solution status.
+- Links to your management interfaces
 
-![Hosts](images/controlpanel12.png){.thumbnail}
-
-You can find here:
-
-- the names of the hosts
-- their profiles (M, L, L+...)
-- the billing mode (switchable via the button on the right, if the billing mode is set to hourly)
-- the host status
-- the usage in hours (if the billing mode is set to hourly)
-
-You can also order a new host from here by clicking on the button on the left.
+![GENERAL](images/en13general.png){.thumbnail}
 
 
-#### Datastores tab
+#### Hosts
 
-The tab for your datastores looks similar to the previous one.
+The Hosts tab gives a summary of your hosts in the selected datacenter.<br>
+*The billing mode is switchable via the ![Dots](images/buttondots.png){.thumbnail} button if the billing mode is set to hourly*<br>
+You can also order a one through the `Order a host`{.action}. button.
 
-![Datastores](images/controlpanel13.png){.thumbnail}
-
-You can find here:
-
-- the names of the datastores
-- their profiles
-- the hardware type (hybrid or full SSD)
-- the size
-- the billing mode
-- their status, indicating whether a datastore is correctly installed
-- the usage in hours (for hourly-billed resources only)
-
-You can also order a new host from here by clicking on the button on the left (monthly payment).
+![HOSTS](images/en14hosts.png){.thumbnail}
 
 
-#### Backup tab
+#### Datastores
 
-From this tab, you can order a Veeam Backup solution.
+The Datastores tab gives a summary of your datastores in the selected datacenter.<br>
+*The datastore mode is switchable to global via the ![Dots](images/buttondots.png){.thumbnail} button*<br>
+You can also order a one through the `Order a datastore`{.action}. button.
 
-![Backup](images/controlpanel14.png){.thumbnail}
+![DATASTORES](images/en15datastores.png){.thumbnail}
 
-You can find more details about this option in [this guide](../veeam-backup-as-a-service/).
+
+#### Backup
+
+The Backup tab allows you to order a Veeam Backup solution.<br>
+Check out the [Activating and using Veeam Managed Backup](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/) for more details.
+
+![BACKUP](images/en16backup.png){.thumbnail}
+
+
+Once the solution activated, the Backup page also allows you to set up daily backup reports.
+
+![BACKUP](images/en17backupreport.png){.thumbnail}
+
+
+#### Disaster Recovery Plan (DRP)
+
+The Disaster Recovery Plan tab allows you to build a DRP plan with Zerto.<br>
+Check out [Setting up Zerto Virtual Replication for your DRP](https://docs.ovh.com/gb/en/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/) for more details.
+
+![DRP](images/en17drp.png){.thumbnail}
+
+> [!warning]
+>
+>  You need to have a secondary Private Cloud solution to enable any Zerto option.
+>
+
+
+Congratulations and thank you.
 
 
 ## Go further
