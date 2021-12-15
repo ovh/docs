@@ -94,7 +94,7 @@ Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.acti
  
 Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server.
 
-To do this, please open a support request with Microsoft here: <https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656>
+To do this, please open a [support request](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) with Microsoft. 
 
 #### To a Gmail server
 
@@ -107,4 +107,7 @@ You may want to use a website like [Mail Tester](http://www.mail-tester.com/){.e
 
 ## Go further
 
+[Our OVHcloud partner network](https://partner.ovhcloud.com/en-sg/directory/)
+
 Join our community of users on <https://community.ovh.com/en/>.
+

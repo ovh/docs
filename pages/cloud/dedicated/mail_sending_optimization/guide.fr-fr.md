@@ -105,6 +105,6 @@ Il peut être intéressant d'utiliser un site comme [Mail Tester](http://www.mai
 
 ## Aller plus loin
 
-[Partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/)
+[Notre réseau de partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
