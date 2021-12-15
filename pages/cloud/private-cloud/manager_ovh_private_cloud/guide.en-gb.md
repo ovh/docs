@@ -121,30 +121,26 @@ Click ![Dots](images/buttondots.png){.thumbnail} and then `Modify rights`{.actio
 ![RIGHTS](images/en07editrights.png){.thumbnail}
 
 
-#### Security tab
+#### Security
 
-The vCenter access policy can be managed in this tab.
+The Security tab allows for management of vCenter access policy.<br>
+You can configure options settings with the buttons on the right.
 
-![Security settings](images/controlpanel8.png){.thumbnail}
+![SECURITY](images/en08security.png){.thumbnail}
 
-You can configure security settings with the buttons on the right:
-
-- Set the timeout for a login session.
-- Specify the number of concurrent connections allowed.
-- Change the access policy to "Restricted" or "Open", with permission by source IP. IP addresses are being managed in the table in this tab (`...`{.action} button).
 
 > [!warning]
 >
 >  If you set the access policy to "Restricted" and do not enter any IP addresses, no user will be able to connect to the vSphere client. However, virtual machines will remain accessible.
 > 
 
-- The disconnection policy decides whether to disconnect the first or last logged-in user if the limit is reached. For example, if 50 users are logged in, and a 51st user logs in, the first (or last) user to log in will be disconnected.
+At the bottom of the page, you can also add or see you Key Management Servers.<br>
+Check out the [Enabling Virtual Machine Encryption](https://docs.ovh.com/gb/en/private-cloud/vm-encrypt/) guide for more details.
 
-The second table at the bottom of the page concerns the management of Virtual Machine Encryption Key Management Servers.
+![KMS](images/en09kms.png){.thumbnail}
 
-You can find more details about this option in [this guide](../vm-encrypt/).
 
-#### Operations tab
+#### Operations
 
 This tab shows the history of tasks executed on your Hosted Private Cloud service.
 
