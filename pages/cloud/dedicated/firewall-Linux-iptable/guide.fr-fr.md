@@ -37,7 +37,7 @@ Lorsque vous commandez votre serveur dédié, aucun protocole de sécurité n'es
 > Ce guide est à usage général. Il est possible que vous deviez adapter quelques commandes en fonction de la distribution et/ou du système d'exploitation que vous utilisez. Certains conseils pourront vous suggérer l'utilisation d'outil tiers. En cas de question quant à leur utilisation, veuillez vous référer à leur documentation officielle.  
 >
 
-### Mettre à jour votre système
+### Étape 1 : Mettre à jour votre système
 
 Les développeurs de systèmes de distribution et d'exploitation proposent des mises à jour fréquentes de progiciels, très souvent pour des raisons de sécurité. **Garder votre distribution ou votre système d'exploitation à jour est primordial pour la sécurisation de votre serveur.**
 
@@ -56,10 +56,47 @@ apt-get update
 Mettez ensuite à jour les paquets sur votre serveur de la manière suivante :
 
 ```sh
-apt-get upgrade
+~#apt-get upgrade
 ```
 
+
 Une fois les mises à jour terminées, votre système sera entièrement à jour. Cette opération doit être effectuée de manière régulière.
+
+
+### Étape 2 : Installation du pare-feu iptables linux
+
+Installez iptables sur votre système si ce n'est pas encore fait avec la commande suivante:
+
+```sh
+~#apt-get install iptable
+```
+
+En général, une commande iptables se présente comme suit :
+
+```sh
+sudo iptables [option] CHAIN_rule [-j target]
+```
+
+Voici une liste de quelques options iptables courantes :
+
+- -A --append – Ajoute une règle à une chaîne (à la fin).
+- -C --check - Recherchez une règle qui correspond aux exigences de la chaîne.
+- -D --delete – Supprime les règles spécifiées d'une chaîne.
+- -F --flush – Supprime toutes les règles.
+- -I --insert – Ajoute une règle à une chaîne à une position donnée.
+- -L --list – Affiche toutes les règles d'une chaîne.
+- -N -new-chain – Créer une nouvelle chaîne.
+- -v --verbose – Affiche plus d'informations lors de l'utilisation d'une option de liste.
+- -X --delete-chain – Supprime la chaîne fournie.
+
+
+
+
+
+
+
+
+
 
 
 ### Configurer le pare-feu interne : iptables
