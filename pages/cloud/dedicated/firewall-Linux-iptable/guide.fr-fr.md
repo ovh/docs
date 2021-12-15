@@ -1,7 +1,7 @@
 ---
-title: Configuer le firewall software sous Linux IPtable
+title: Configuer le firewall software sous Linux avec IPtable
 excerpt: Découvrez comment configurer votre pare-feu sous Linux
-slug: Configurer-firewall-software-Linux-IPtable
+slug: firewall-software-Linux-IPtable
 section: Premiers pas
 order: 7
 ---
