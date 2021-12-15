@@ -142,11 +142,11 @@ Check out the [Enabling Virtual Machine Encryption](https://docs.ovh.com/gb/en/p
 
 #### Operations
 
-This tab shows the history of tasks executed on your Hosted Private Cloud service.
+The Operations tab keeps a log of all tasks executed on your infrastructure.<br>
+You can sort the list by types and if the tasks are acctionable, you'll have options available through the ![Dots](images/buttondots.png){.thumbnail} button.
 
-![Operations](images/controlpanel9.png){.thumbnail}
+![OPS](images/en10ops.png){.thumbnail}
 
-The list provides details on each task, so you can verify if an operation is in error, if a scheduled maintenance is ongoing, and more. You can change the date of a maintenance by clicking on `...`{.action}.
 
 > [!primary]
 >
@@ -154,20 +154,19 @@ The list provides details on each task, so you can verify if an operation is in 
 >
 
 
-#### Windows Licence tab
+#### Windows Licence
 
-This tab allows you to activate Windows SPLA licences for your data centre by clicking on the button.
+The Windows license tab shows your Windows SPLA licence status.<br>
+More information on the [pricing page](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/images-licenses/).
 
-![Windows SPLA Licence](images/controlpanel10.png){.thumbnail}
-
-You can find more information on the [pricing page](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/images-licenses/).
+![SPLA](images/en11spla.png){.thumbnail}
 
 
 ### Datacenter View 
 
-A Hosted Private Cloud may include multiple virtual data centres. The left-hand navigation bar will list them when you select a Hosted Public Cloud service. Click on a data centre to open its dedicated management page.
+A Hosted Private Cloud may include multiple virtual datacenters. The left-hand navigation bar will list them when you select a Hosted Public Cloud service. Click on one to open its management page.
 
-![Data centre view ](images/controlpanel11.png){.thumbnail}
+![DATACENTER](images/en12datacenter.png){.thumbnail}
 
 You can customise the name of your data centre by clicking on the pencil icon. Below, you can add a description.
 
