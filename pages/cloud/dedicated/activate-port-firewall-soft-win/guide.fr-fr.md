@@ -24,7 +24,7 @@ Pour protéger de manière optimale votre système, votre serveur Windows Server
 ## Prérequis
 
 - Disposer d’un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} dans votre espace client OVHcloud.
-- Être connecté à votre serveur à un bureau distant sous Windows 
+- Être connecté à votre serveur à un bureau distant sous Windows. 
 
 
 ## En pratique
@@ -36,7 +36,6 @@ Afin d’accéder au pare-feu Windows, vous devez passer à l’itinéraire suiv
 - Cliquer sur Rechercher
 - Rechercher Pare-feu Windows sur la barre de recherche
 - Puis cliquer sur Pare-feu Windows.
-
 Il vous faudra ensuite vous rendre sur la ligne `Configuration avancée `{.action}.
 
 ![Step1](images/step1.PNG){.thumbnail}
@@ -48,7 +47,7 @@ Dans la fenêtre affichée, vous trouverez des paramètres tels que:
 - Règles de sécurité de la connexion
 - Options de surveillance du pare-feu du serveur
 
-En sélectionnant la section`Règles de trafic entrant `{.action}, toutes les règles préconfigurées de Windows Server associées aux connexions réseau et aux paquets entrants s’affichent. Certaines de ces règles ne sont pas activées par défaut. Si vous souhaitez les activer, faites un clic droit. à propos de la règle et sélectionnez l’option `Activer la règle `{.action}.
+En sélectionnant la section`Règles de trafic entrant `{.action}, toutes les règles préconfigurées de Windows Server associées aux connexions réseau et aux paquets entrants s’affichent. Certaines de ces règles ne sont pas activées par défaut. Si vous souhaitez les activer, faites un clic droit à propos de la règle et sélectionnez l’option `Activer la règle `{.action}.
 
 ![Step1](images/step2.PNG){.thumbnail}
 
