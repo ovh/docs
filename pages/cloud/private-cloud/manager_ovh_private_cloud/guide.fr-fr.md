@@ -6,113 +6,85 @@ section: Premiers pas
 order: 1
 ---
 
-**Dernière mise à jour le 17/06/2020**
+**Dernière mise à jour le 15/12/2021**
 
 ## Objectif
 
 L'espace client OVHcloud vous propose de nombreuses options de paramétrage de votre infrastructure Private Cloud.
 
-**Ce guide vous en fait découvrir les multiples possibilités.**
+**Ce guide vous explique les multiples options possibles.**
+
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
-- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Une [Infrastrucure Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
+- Un accès à l'[OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 
 ## En pratique
 
-### Onglet général
 
-Une fois dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, vous aurez accès à un aperçu général de votre Private Cloud :
+### Accès à l'Interface
 
-![Informations générales](images/controlpanel1.png){.thumbnail}
+Naviguez vers l'[OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) et connectez vous avec un compte administrateur.
 
-En haut de la page, `1 sur l'image`, vous retrouverez le nom et la description de votre Private Cloud. N'hésitez pas à le personnaliser, cela vous sera d'une grande utilité si vous possédez plusieurs infrastructures. 
+![LOGIN](images/en01ogin.png){.thumbnail}
 
-À gauche, `2 sur l'image`, vous retrouverez votre ou vos Private Cloud ainsi que le ou les datacentres virtuels qui le composent.
+
+### Vue Hosted Private Cloud
+
+
+Dans l'onglet "Hosted Private Cloud" sélectionnez votre service dans la liste `VMWare`{.action}. Vous pouvez renommer votre infrastructure en cliquant le boutton ![Pen](images/buttonpen.png){.thumbnail} au centre de l'écran.
+
+![HOSTED](images/en02dashboard.png){.thumbnail}
 
 
 #### Informations générales
 
-Dans le tableau de gauche, vous trouverez les informations générales de votre Private Cloud.
+L'onglet Informations générales donne le résumé de vos options de Private Cloud.
 
-![Informations générales](images/controlpanel2.png){.thumbnail}
+- La "Description" est modifiable avec le bouton ![Dots](images/buttondots.png){.thumbnail}
+- La "Solution logicielle" vous donne la version vCSA installée
+- La "Localisation" de votre Private Cloud
+- La  "Politique d'accès" de votre infrastructure (`Ouverte` ou `Restreinte`) 
+- Le "Nombre de datacenters" de votre infrastructure
+- Le "Nombre de blocs IP" qui vous sont assignés et l'option d'en ajouter avec le bouton ![Dots](images/buttondots.png){.thumbnail}
+- Liens vers les interfaces de management
+- Le cadre "Options et conformité" liste les options activées et désactivées avec les boutons ![Dots](images/buttondots.png){.thumbnail} pour les modifier
+- La "Mailing list" vous permet de vous abonner à la liste de l'OVHcloud Hosted Private Cloud
+- La date de "Renouvellement" offre également la possibilité de commander der licenses ou de supprimer le service en cliquant sur ![Dots](images/buttondots.png){.thumbnail}
 
+![GENERAL](images/en03general.png){.thumbnail}
 
-- La description de votre Private Cloud (Avec la possibilité de changer son nom)
-- La version de votre Private Cloud.
-- Sa référence commerciale OVHcloud.
-- Le datacenter et plus précisément la zone dans laquelle votre infrastructure est installée.
-- La politique d'accès à votre infrastructure (`Ouvert` ou `Restreint`) avec les restrictions par IP source.
-- Le nombre de datacenters virtuels dans votre infrastructure.
-- Le nombre de blocs IP (Avec la possibilité de commander des blocs supplémentaires)
-
-
-#### Options et conformité
-
-Dans le tableau central, vous aurez un visuel sur l'état d'activation des options de votre Private Cloud.
-
-![Options](images/controlpanel3.png){.thumbnail}
-
-#### Gestion du service
-
-Dans le tableau de droite, vous pourrez gérer votre abonnement à la mailing list Private Cloud OVHcloud.
-
-Le prochain renouvellement de votre service Private Cloud y est également mentionné. À droite de cette date, le bouton `...`{.action} vous permet de commander une licence ou de supprimer votre service Private Cloud.
-
-![Options](images/controlpanel4.png){.thumbnail}
-
-Pour plus de détails sur la résiliation d'un service Private Cloud, consultez notre guide [Comment résilier le Private Cloud](../comment-resilier-le-private-cloud/).
 
 #### Datacentres
 
-Vous retrouverez dans cet onglet un court résumé des datacentres virtuels présents dans votre offre Private Cloud :
+L'onglet Datacentres montre vos datacentres virtuels existant et offre la possibilité d'en ajouter par le clic d'un bouton.<br>
+La vue Datacentre (voir plus bas), donne tous les détails et options. 
 
-![Datacenters](images/controlpanel5.png){.thumbnail}
-
-Vous verrez plus bas dans ce guide, une vue plus détaillée des datacentres virtuels.
-
-> [!primary]
->
-> Vous pouvez ajouter un autre datacentre depuis cette page, cela n'engage aucun frais supplémentaire.
-> 
-
+![DATACENTERS](images/en04datacenters.png){.thumbnail}
 
 
 #### Utilisateurs
 
-Tous les utilisateurs pouvant se connecter à vSphere seront présents dans cette partie :
+L'onglet Utilisateurs liste tous les comptes qui peuvent se connecter à vSphere et permet la création de nouveaux comptes.
 
-![Utilisateurs](images/controlpanel6.png){.thumbnail}
+![USERS](images/en05users.png){.thumbnail}
 
-Vous pouvez créer un utilisateur en cliquant sur le bouton `Créer un utilisateur`{.action} à gauche.
+Le bouton ![Dots](images/buttondots.png){.thumbnail} offre quelques options de modification des utilisateurs
+- Modifier les champs du résumé
+- Voir / Modifier les droits utilisateur par Datacentre
+- Changer le mot de passe utilisateur
+- Supprimer l'utilisateur
 
-Pour chaque utilisateur vous trouverez différentes informations sur l'utilisateur, et les droits appliqués sur l'ensemble du Private Cloud :
+Cliquer `Voir / Modifier les droits par DC`{.action} ouvre la fenêtre de gestion des droits.
 
-- L'identifiant.
-- Son prenom (facultatif).
-- Son nom de famille (facultatif).
-- l'adresse e-mail (facultative).
-- le numéro de téléphone (facultatif).
-- le droit *token validator*, permettant de valider des opérations sensibles sur des Private Cloud disposant de l'option HDS ou PCI-DSS.
-- Le droit *Ip*, permettant d'accèder au plugin OVH network.
-- Le droit *Ip Failover*, permettant de gérer les IPs Failover relié à votre Private Cloud.
-- Le droit *Interface NSX*, permettant d'accèder à l'interface NSX si l'option est activé dans votre Private Cloud.
-- le statut (Diagnostic), permettant de voir si votre utilisateur est bien créé.
+![RIGHTS](images/en06rights.png){.thumbnail}
 
-En cliquant sur le bouton `...`{.action} à droite du tableau, plusieurs choix se présentent à vous :
 
-- Modifier les entrées de ce tableau (Modification des droits vus précédemment, ajout d'une adresse email, d'un numéro de téléphone).
-- Voir et modifier les droits de cet utilisateur par datacentre.
-- Changer le mot de passe de l'utilisateur.
-- Supprimer cet utilisateur.
+Cliquez ![Dots](images/buttondots.png){.thumbnail} puis `modifier les droits`{.action}.
 
-Nous allons voir plus en détails la modification des droits par datacentre :
-
-![Droits utilisateur par datacenter](images/controlpanel7.png){.thumbnail}
-
-- `Accès vSphere`{.action} - il s'agit des droits globaux de l'utilisateur sur le vSphere :
+- **Accès vSphere**: il s'agit des droits globaux de l'utilisateur sur le vSphere :
 
 |Droits|Description|
 |---|---|
@@ -121,7 +93,7 @@ Nous allons voir plus en détails la modification des droits par datacentre :
 |Lecture/Ecriture|accès en lecture/écriture|
 |Operateur|accès réservé aux administrateurs OVHcloud|
 
-- `Accès au VM Network`{.action} - il s'agit de la gestion des droits sur la partie réseau public (appelée `VM Network` dans l'interface vSphere) :
+- **Accès au VM Network**: il s'agit de la gestion des droits sur la partie réseau public (appelée `VM Network` dans l'interface vSphere) :
 
 |Droits|Description|
 |---|---|
@@ -129,7 +101,7 @@ Nous allons voir plus en détails la modification des droits par datacentre :
 |Lecture seule|accès en lecture seule|
 |Operateur|permet de configurer des machines virtuelles (VM) sur le réseau public|
 
-- `Accès au V(X)LAN`{.action} - il s'agit de la gestion des droits sur la partie réseau privé les VXLAN pour la gamme Dedicated Cloud ou les VLAN pour la gamme SDDC :
+- **Accès au V(X)LAN**: il s'agit de la gestion des droits sur la partie réseau privé les VXLAN pour la gamme Dedicated Cloud ou les VLAN pour la gamme SDDC :
 
 |Droits|Description|
 |---|---|
@@ -138,46 +110,34 @@ Nous allons voir plus en détails la modification des droits par datacentre :
 |Operateur|permet de configurer des machines virtuelles (VM) sur le réseau privé|
 |Administrateur|permet de gérer les port groups du switch virtuel (en créer, modifier, supprimer...)|
 
-- `Ajout de ressources`{.action} - ce bouton permet d'accorder ou non le droit d'ajouter des ressources supplémentaires via le plugin OVH dans le vSphere client.
+- **Ajout de ressources**: ce bouton permet d'accorder ou non le droit d'ajouter des ressources supplémentaires via le plugin OVH dans le vSphere client.
 
 
 #### Sécurité
 
-La politique d'accès à votre vCenter est paramétrable dans cet onglet :
+L'onglet Sécurité permet le controle de la politique d'accès à votre vCenter.<br>
+Vous pouvez paramétrer les options à l'aide des boutons sur la droite de l'écran.
 
-![Paramètres de sécurité](images/controlpanel8.png){.thumbnail}
-
-Vous pourrez configurer les éléments au-dessus et dans le tableau avec les boutons disponibles sur la droite de ce dernier. Il est possible de configurer :
-
-- Le délai d'expiration d'une session de connexion.
-
-- Le nombre de connexions simultanées autorisées.
-
-- la politique d'accès, restreinte ou non, avec une autorisation par IP source. Les IP seront présentes dans le tableau.
-Il est possible de modifier ou de supprimer l'IP ou la plage en cliquant sur le bouton `...`{.action} présent sur la droite de ce tableau.
+![SECURITY](images/en08security.png){.thumbnail}
 
 > [!warning]
 >
 > Si vous mettez la politique d'accès en mode restreint et que vous ne renseignez aucune IP, aucun utilisateur ne pourra se connecter au client vSphere. Les machines virtuelles resteront toutefois accessibles.
 > 
 
+En bas de la page, vous pouvez aussi ajouter un Key Management Servers.<br>
+Rendez-vous sur [Activation du chiffrement des machines virtuelles](https://docs.ovh.com/fr/private-cloud/vm-encrypt/) pour plus de details.
 
-- La politique de déconnexion consiste à déconnecter le premier ou le dernier utilisateur connecté.
-Dans cet exemple si 50 utilisateurs sont connectés, et qu'un 51e se connecte, le premier à avoir établi la connexion sera déconnecté.
+![KMS](images/en09kms.png){.thumbnail}
 
-Un second tableau est disponible concernant l'option *VM encryption*.
-
-Vous pourrez trouver plus de détails sur cette option dans [ce guide](../vm-encrypt/).
 
 #### Opérations
 
-Dans cet onglet, vous trouverez les opérations en cours sur votre infrastructure :
+L'onglet Opérations montre le journal de toutes les tâches exécutées sur votre infrastructure.<br>
+Vous pouvez trier la liste par types et si une tâche est modifiable, vous verrez un bouton ![Dots](images/buttondots.png){.thumbnail}.
 
-![Opérations](images/controlpanel9.png){.thumbnail}
+![OPS](images/en10ops.png){.thumbnail}
 
-Vous pouvez vérifier si une opération est en erreur, si une maintenance est planifiée...
-
-Vous pouvez modifier la date d'une maintenance en cliquant sur le bouton `...`{.action} présent à droite de ce tableau.
 
 > [!primary]
 >
@@ -187,69 +147,81 @@ Vous pouvez modifier la date d'une maintenance en cliquant sur le bouton `...`{.
 
 #### Licence Windows
 
-L'onglet `Licence Windows`{.action} permet d'activer les licences SPLA Windows sur votre Private Cloud en cliquant sur le bouton situé à droite :
+L'onglet Licence Windows vous donne le statut de votre licence Windows SPLA.<br>
+Retrouvez la page des [tarifs](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/images-licenses/).
 
-![Licence SPLA Windows](images/controlpanel10.png){.thumbnail}
-
-Vous pouvez retrouver la page des tarifs [ici](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/images-licenses/){.external}.
-
+![SPLA](images/en11spla.png){.thumbnail}
 
 
-### Vue datacentre
+### Vue Datacentre
 
-Dans un Private Cloud, vous pouvez avoir plusieurs datacentres. En cliquant sur votre Private Cloud, vous les retrouverez :
+Un Hosted Private Cloud peut inclure plusieurs datacentres virtuels.<br>
+La barre de navigation à votre gauche les liste tous sous le service Hosted Public Cloud selectionné. Cliquez sur l'un d'entre eux pour ouvrir son interface de management.<br>
+Le nom et la description du datacentre sont modifiable en cliquant sur ![Pen](images/buttonpen.png){.thumbnail}.
 
-![Vue Datacenter](images/controlpanel11.png){.thumbnail}
-
-Vous pouvez personnaliser le nom de votre datacenter en cliquant sur le crayon, ainsi qu'ajouter description personnalisée.
-
-Vous retrouverez les premières informations sur votre datacenter, sa gamme, le nombre d'hôtes et de datastores.
-Il est possible de bénéficier de plusieurs datacenters dans une même offre Private Cloud en ayant des gammes Dedicated Cloud et Software Defined Datacenter.
+![DATACENTER](images/en12datacenter.png){.thumbnail}
 
 
-#### Hôtes
+#### Informations générales
 
-Ici sont présents les hôtes de votre datacenter :
 
-![Hosts](images/controlpanel12.png){.thumbnail}
+L'onglet Informations générales donne le résumé de vos options.
 
-Vous retrouverez dans cette partie :
+- Les champs "Nom" et "Description" sont modifiables via le bouton ![Dots](images/buttondots.png){.thumbnail}
+- La "Gamme" montre les services VMWare souscrits
+- Les champs "Hosts" and "Datastores" vous donnent les quantités de chaque dans votre Private Cloud
+- "VM Backupée" vous montre le statut de votre solution de sauvegarde
+- "Plan de reprise d’activité" vous montre le statut de votre solution de PRA
+- Liens vers les interfaces de management
 
-- Les noms des hôtes.
-- Leurs profils (M, L, L+...).
-- Le mode de facturation : si votre hôte est en facturation à l'heure, vous aurez la possibilité de le passer en facturation mensuelle en cliquant sur le bouton disponible à droite du tableau.
-- Le statut de l'hôte.
-- Le nombre d'heures utilisées (uniquement sur une ressource horaire).
+![GENERAL](images/en13general.png){.thumbnail}
 
-En haut à gauche de ce tableau, vous pourrez commander un nouvel hôte en paiement mensuel.
+
+#### Hosts
+
+L'onglet Hosts vous montre un résumé de vos hôtes présents sur le datacentre sélectionné.<br>
+*Le mode de facturation est modifiable via le bouton ![Dots](images/buttondots.png){.thumbnail} si votre hôte est en facturation à l'heure*<br>
+Vous pouvez également ajouter un nouvel hôte avec le bouton `Commander un Host`{.action}.
+
+![HOSTS](images/en14hosts.png){.thumbnail}
 
 
 #### Datastores
 
-Le tableau des datastores est similaire à celui des hôtes :
+L'onglet Datastores vous montre un résumé des Datastores présents sur le datacentre sélectionné.<br>
+*Vous pouvez convertir un datastore en global via le bouton ![Dots](images/buttondots.png){.thumbnail}*<br>
+Vous pouvez également ajouter un nouveau datastore avec le bouton `Commander un Datastore`{.action}.
 
-![Datastores](images/controlpanel13.png){.thumbnail}
-
-Vous retrouverez dans cette partie :
-
-- Les noms des datastores.
-- Leurs profiles.
-- Leurs types (Hybrid ou full SSD).
-- Leurs tailles.
-- Le mode de facturation.
-- Le statut du datastore, permettant de savoir s'il est correctement installé.
-- Le nombre d'heures utilisées (uniquement sur une ressource horaire).
-
-En haut à gauche de ce tableau, vous pourrez commander un nouveau datastore en paiement mensuel.
+![DATASTORES](images/en15datastores.png){.thumbnail}
 
 
 #### Backup
 
-L'onglet de backup vous permet d'activer la solution `Veeam backup`.
+L'onglet Backup vous permet d'activer une solution de sauvegarde Veeam.<br>
+Rendez-vous sur [Activer et utiliser Veeam Managed Backup](https://docs.ovh.com/fr/private-cloud/veeam-backup-as-a-service/) pour plus de détails.
 
-![Backup](images/controlpanel14.png){.thumbnail}
+![BACKUP](images/en16backup.png){.thumbnail}
 
-Pour plus d'informations sur cette option, vous pouvez consulter ce [guide](../veeam-backup-as-a-service/){.external}.
+
+Une fois le service activé, la page Backup vous permet également de planifier vos rapports de sauvergarde.
+
+![BACKUP](images/en17backupreport.png){.thumbnail}
+
+
+#### Plan de reprise d’activité (PRA)
+
+L'onglet Plan de reprise d’activité (PRA) vous permet de construire une solution de PRA avec Zerto.<br>
+Rendz-vous sur [Mise en oeuvre de Zerto Virtual Replication pour votre PRA](https://docs.ovh.com/fr/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/) pour plus de détails.
+
+![DRP](images/en17drp.png){.thumbnail}
+
+> [!warning]
+>
+>  Vous devez possédez une solution Private Cloud secondaire pour activer une option Zerto.
+>
+
+
+Bravo et merci.
 
 
 ## Aller plus loin
