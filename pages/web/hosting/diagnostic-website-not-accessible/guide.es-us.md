@@ -91,7 +91,7 @@ Su sitio web estará disponible en un plazo máximo de 48 horas.
 
 > [!warning]
 >
-> En ese caso, contacte con el webmaster o los [partners de OVHcloud](https://partner.ovhcloud.com/es/) antes de realizar cualquier operación.
+> En ese caso, contacte con el proveedor de hosting de su zona DNS, su webmaster o los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/) antes de realizar cualquier operación.
 >
 > Es posible que los servidores DNS utilizados por el dominio sean funcionales y que el problema de acceso al sitio web esté relacionado con un registro que no se encuentra o que no está en la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns). Cualquier modificación de los servidores DNS en esta situación puede hacer que sus direcciones de correo u otras aplicaciones en línea no estén disponibles.
 >
