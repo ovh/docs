@@ -11,7 +11,7 @@ order: 1
 ## Objectif
 
 La solution CloudDB permet de bénéficier d’une instance de bases de données, dont les ressources sont dédiées et garanties vous offrant performances et de flexibilité.
-Votre CloudDB est compatible avec les hébergements web OVHcloud ainsi que sur le réseau publique, à travers des IP autorisées.
+Votre solution CloudDB est liée par défaut au réseau d'hébergements web OVHcloud. Il est possible de lier celle-ci sur n'importe quel autre réseau, à travers une liste d'adresses IP autorisées.
 
 **Découvrez comment bien débuter avec la solution CloudDB.**
 
@@ -152,17 +152,17 @@ Sur la fenêtre qui s'affiche, indiquez l'adresse IP ou le masque que vous dési
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
-### Autoriser la connexion à un hébergement web OVHcloud
+### Autoriser la connexion à un hébergement web OVHcloud <a name="trustip"></a>
 
-Par défaut, votre CloudDB est automatiquement compatible avec les hébergements web OVHcloud. Si vous le souhaitez, vous pouvez néanmoins désactiver l'accès aux hébergements web OVHcloud pour votre base de données CloudDB.
+Par défaut, votre solution CloudDB est automatiquement lié aux hébergements web OVHcloud. Si vous le souhaitez, vous pouvez néanmoins désactiver l'accès des hébergements web OVHcloud à votre base de données CloudDB.
 
-Pour cela, cliquez sur l'onglet `IP autorisées`{.action} puis sur le bouton `Accès aux hébergements web OVHcloud`{.action}.
+Pour cela, cliquez sur l'onglet `IPs autorisées`{.action} puis sur le bouton `Autoriser les hébergements Web OVHcloud à accéder à la base de données`{.action}.
 
 ![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
 
 ### Lier votre site à la base de données
 
-Maintenant que votre base de données est créée, qu'un ou plusieurs utilisateurs disposent de droits sur cette dernière et qu'au minimum une adresse IP publique ou que l'accès aux hébergements web OVHcloud on été autorisées sur votre instance CloudDB, il ne reste plus qu'à lier votre site à votre base de données. Cette étape peut s'effectuer de plusieurs manières, en fonction du site ou du CMS (WordPress, Joomla!, etc.) utilisé, ainsi que de l'étape à laquelle vous vous trouvez si vous installez un site web.
+Maintenant que votre base de données est créée, qu'un ou plusieurs utilisateurs disposent de droits sur cette dernière et qu'au minimum une adresse IP publique ou que les hébergements web OVHcloud on été autorisés sur votre instance CloudDB, il ne reste plus qu'à lier votre site à votre base de données. Cette étape peut s'effectuer de plusieurs manières, en fonction du site ou du CMS (WordPress, Joomla!, etc.) utilisé, ainsi que de l'étape à laquelle vous vous trouvez si vous installez un site web.
 
 Afin de pouvoir mener à bien cette manipulation, vous devez quoi qu'il arrive être en possession de ces cinq informations :
 
