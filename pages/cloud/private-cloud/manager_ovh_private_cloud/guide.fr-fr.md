@@ -213,7 +213,7 @@ Une fois le service activé, la page Backup vous permet également de planifier 
 L'onglet Plan de reprise d’activité (PRA) vous permet de construire une solution de PRA avec Zerto.<br>
 Rendz-vous sur [Mise en oeuvre de Zerto Virtual Replication pour votre PRA](https://docs.ovh.com/fr/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/) pour plus de détails.
 
-![DRP](images/en17drp.png){.thumbnail}
+![DRP](images/en18drp.png){.thumbnail}
 
 > [!warning]
 >
