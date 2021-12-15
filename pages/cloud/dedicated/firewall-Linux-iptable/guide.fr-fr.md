@@ -108,7 +108,7 @@ Le système affiche le statut de vos chaînes.
 La sortie répertoriera trois chaînes :
 
 ![Check-Current-iptables](images/Check-Current-iptables.PNG){.thumbnail}
-### Étape 3 : Activation du trafic sur localhost
+### Étape 4 : Activation du trafic sur localhost
 
 Pour autoriser le trafic de votre propre système (le localhost). Ajoutez la chaîne d'entrée en entrant ce qui suit :
 
@@ -118,7 +118,7 @@ sudo iptables -A INPUT -i lo -j ACCEPT
 Cette commande configure le pare-feu pour accepter le trafic pour l'interface localhost (lo) (-i). Désormais, tout ce qui provient de votre système passera par votre pare-feu.
 Vous devez définir cette règle pour permettre aux applications de communiquer avec l'interface localhost.
 
-### Étape 4 : Autoriser le trafic sur des ports spécifiques
+### Étape 5 : Autoriser le trafic sur des ports spécifiques
 
 Ces règles autorisent le trafic sur les différents ports que vous spécifiez à l'aide des commandes répertoriées ci-dessous. 
 Un port est un point de terminaison de communication spécifié pour un type spécifique de données.
@@ -145,7 +145,7 @@ Les options fonctionnent comme suit :
 - --dport : Spécifiez le port de destination.
 - -j jump : Effectue l'action 
 
-### Étape 5 : Contrôler le trafic par adresse IP
+### Étape 6 : Contrôler le trafic par adresse IP
 
 Utilisez la commande suivante pour accepter le trafic à partir d'une adresse IP spécifique.
 
@@ -173,7 +173,7 @@ Les options iptables que nous avons utilisées dans les exemples fonctionnent co
 - -iprange : Indique au système d'attendre une plage d'adresses IP au lieu d'une seule.
 - --src-range : Identifie la plage d'adresses IP.
 
-### Étape 6 : Suppression du trafic indésirable
+### Étape 7 : Suppression du trafic indésirable
 
 Si vous définissez des règles de pare-feu iptables, vous devez empêcher les accès non autorisés en supprimant tout trafic provenant d'autres ports :
 
@@ -183,7 +183,7 @@ sudo iptables -A INPUT -j DROP
 ```
 L'option -A ajoute une nouvelle règle à la chaîne. Si une connexion passe par des ports autres que ceux que vous avez définis, elle sera abandonnée.
 
-### Étape 7 : Supprimer une règle
+### Étape 8 : Supprimer une règle
 
 Vous pouvez utiliser l'option -F pour effacer toutes les règles de pare-feu iptables. 
 Une méthode plus précise consiste à supprimer le numéro de ligne d'une règle.
