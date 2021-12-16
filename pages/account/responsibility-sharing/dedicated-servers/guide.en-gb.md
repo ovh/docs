@@ -1,7 +1,7 @@
 ---
 title: RACI Dedicated servers
 slug: raci-dedicated-server
-section: RACI
+section: RACI Bare Metal Cloud
 excerpt: RACI between OVHcloud and the customer for Dedicated Servers
 ---
 
