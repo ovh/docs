@@ -149,7 +149,7 @@ In the following regions (running OpenStack Stein release), the firewall rules f
 
 OVHcloud will progressively upgrade all Newton regions to Stein, so the port security property feature will be available.
 
-To avoid any breaking change during the upgrade, the "port security" will be set to "False" on all already created networks. Once a region will be upgraded to OpenStack Stein release, if you want to use firewall rules on private networks you will have to set the "port security" property as "True".
+To avoid any breaking change during the upgrade, the "port security" will be set to "False" on all already created networks. Once a region will be upgraded in Stein OpenStack release, if you want to use firewall rules on private networks you will have to set the "port security" property as "True".
 
 You can check whether your private network port has port security enabled:
 
@@ -168,7 +168,6 @@ This will occur according to the following process:
 - The default port security will be changed to **enabled** (a global communication will be sent in time).
 - The firewall rules will work for the new ports. Nothing will change for the existing ports.
 - The option to enable port security for existing ports will be activated.
-
 
 ## Go further
 

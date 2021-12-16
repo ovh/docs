@@ -113,9 +113,9 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 > Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l'original en cas de problème.
 >
 
-Deux méthodes existente pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
+Deux méthodes existent pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
 
-- **pour Debian 8 et inférieure, Ubuntu 16.04 et inférieure** : utilisez la [méthode basée sur le fichier *interfaces*](#interfaces) ;
+- **pour Debian 11 et inférieure, Ubuntu 16.04 et inférieure** : utilisez la [méthode basée sur le fichier *interfaces*](#interfaces) ;
 
 - **pour Ubuntu 17.04 et versions ultérieures** : utilisez la [méthode basée sur la fonction *Netplan*](#netplan).
 
@@ -131,7 +131,7 @@ Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spé
 La méthode la plus souvent préconisée est de créer un fichier de configuration dans le répertoire `/etc/network/interfaces.d/`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
+nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 Cela vous permet de séparer la configuration IPv6 et de rétablir facilement les modifications en cas d'erreur.
