@@ -3,6 +3,7 @@ title: Gérer ses archives depuis un client SFTP/SCP
 slug: pca/sftp
 excerpt: Retrouvez ici comment gérer et administrer vos archives Public Cloud.
 section: Public Cloud Archive
+order: 100
 ---
 
 ## Préambule

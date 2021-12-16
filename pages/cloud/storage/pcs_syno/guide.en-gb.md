@@ -3,6 +3,7 @@ title: Synchronise Synology NAS with Object Storage
 slug: pcs/pcs-syno
 excerpt: Find here how to synchronise a Synology NAS with Object Storage
 section: Object Storage Standard (Swift)
+order: 150
 ---
 **Last updated 27th October 2021**
 

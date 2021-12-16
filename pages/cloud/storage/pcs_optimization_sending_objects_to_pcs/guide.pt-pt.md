@@ -3,6 +3,7 @@ title: Otimizar os uploads para o Object Storage
 slug: otimizar_os_uploads_para_o_object_storage
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1951
+order: 130
 ---
 
 **Última atualização: 27/10/2021**

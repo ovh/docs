@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/fr/storage/pcs/capabilities-and-limitations/'
 excerpt: Retrouvez ici les principales capacités et limitations pour la gestion de vos conteneurs
 section: Public Cloud Archive
+order: 050
 ---
 
 **Dernière mise à jour le 23/09/2021**

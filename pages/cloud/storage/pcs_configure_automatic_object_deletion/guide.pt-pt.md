@@ -4,6 +4,7 @@ excerpt: Configurar a eliminação automática de objectos
 slug: configurar_a_eliminacao_automatica_de_objectos
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1950
+order: 070
 ---
 
 **Última atualização: 27/10/2021**

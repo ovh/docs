@@ -2,8 +2,8 @@
 title: FAQ
 excerpt: 'FAQ for OVHcloud Public Cloud instances'
 slug: public-cloud-faq
-section: 'Getting started'
-order: 3
+section: 'General information'
+order: 01
 ---
 
 **Last updated 3rd November 2021**
@@ -14,7 +14,7 @@ order: 3
 
 You can log in using an SSH key set that you need to configure when you create your Public Cloud instance.
 
-Please read our guide on [Creating and connecting to your first Public Cloud instance](../public-cloud-first-steps/) .
+Please read our guide on [Creating and connecting to your first Public Cloud instance](../public-cloud-first-steps/).
 
 ### I lost or I want to change my SSH key, how to proceed ?
 

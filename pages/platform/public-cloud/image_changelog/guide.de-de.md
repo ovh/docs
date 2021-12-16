@@ -2,8 +2,8 @@
 title: 'Changelogs der Images für Public Cloud & VPS '
 slug: changelog-images
 excerpt: Erfahren Sie hier die Änderungen, die an den Images für Public Cloud Instanzen und VPS Reihen vorgenommen wurden
-section: 'Erste Schritte'
-order: 8
+section: 'Allgemeine Informationen'
+order: 03
 ---
 
 > [!primary]
@@ -32,7 +32,7 @@ Dieser Bereich enthält die Changelogs für das Jahr 2021.
 --- 01 June 2021 ---
 Image: All
 Product: Public Cloud / VPS
-Travaux: https://travaux.ovh.net/?do=details&id=50873
+Task: <https://bare-metal-servers.status-ovhcloud.com/incidents/920sf4j7d8lq>
 Changelog:
 1. Adding new image: Fedora 34
 2. Adding new image: Ubuntu 21.04
@@ -49,7 +49,7 @@ Changelog:
 --- 03 February 2021 ---
 Image: All
 Product: Public Cloud / VPS
-Travaux: http://travaux.ovh.net/?do=details&id=48820
+Task: <https://bare-metal-servers.status-ovhcloud.com/incidents/58k8v7rm4crk>
 Changelog:
 1. All images contain new package / security updates from vendors since our last image updates
 2. Centos 7 - cPanel image: we disabled QEMU Guest Agent on this image due to issues caused by creation of a virtfs when allowing Jailed Shell access. This virtfs cannot be frozen by QEMU Guest Agent and therefore causes a kernel panic. Customers with previous release of this image should check [this guide for fix](https://docs.ovh.com/gb/en/vps/cpanel_auto_backup/)
@@ -62,7 +62,7 @@ Changelog:
 --- 18 January 2021 ---
 Image: All
 Product: Public Cloud / VPS
-Travaux: http://travaux.ovh.net/?do=details&id=48592
+Task: <https://bare-metal-servers.status-ovhcloud.com/incidents/961mgl7qbt35>
 Changelog:
 1. Release of new Debian 10 - Plesk image
 2. All images contain new package / security updates from vendors since our last image updates
@@ -97,7 +97,7 @@ The new Fedora 33 and Ubuntu 20.10 images are now available for all public cloud
 --- 07 October 2020 ---
 Image: Ubuntu 20.04, Ubuntu 18.04, Ubuntu 16.04, Debian 10, Debian 9, rescue-ovh
 Product: VPS 2016 - 2020 & Public Cloud
-Travaux: http://travaux.ovh.net/?do=details&id=47107
+Task: <https://bare-metal-servers.status-ovhcloud.com/incidents/2m5smflk2706>
 Changelog:
 1. Installation of qemu-guest-agent, curl & gpg
 2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image
@@ -108,14 +108,14 @@ Changelog:
 --- 08 October 2020 ---
 Image: All Debian 8 images
 Product: VPS 2016 - 2020 & Public Cloud
-Travaux: http://travaux.ovh.net/?do=details&id=47107
+Task: <https://bare-metal-servers.status-ovhcloud.com/incidents/2m5smflk2706>
 Changelog:
 We have removed the Debian 8 images from our catalogue as it has reached end of life (https://wiki.debian.org/DebianReleases). Pre-installed application images has been replaced with new ones and guides has been made available.
 
 --- 14 October 2020 ---
 Image: All Centos images
 Product: VPS 2016 - 2020 & Public Cloud
-Travaux: http://travaux.ovh.net/?do=details&id=47181
+Task: <https://bare-metal-servers.status-ovhcloud.com/incidents/ffvm20r8cwc7>
 Changelog:
 1. Installation of qemu-guest-agent, curl & gpg
 2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image. For now with pre-installed apps the manifest does not included packages installed by/for the application
@@ -124,7 +124,7 @@ Changelog:
 --- 20 October 2020 ---
 Image: Fedora 31
 Product: VPS 2016 - 2020 & Public Cloud
-Travaux: http://travaux.ovh.net/?do=details&id=47271
+Task: <https://bare-metal-servers.status-ovhcloud.com/incidents/ypzbqc575dvy>
 Changelog:
 1. Installation of qemu-guest-agent, curl & gpg
 2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image.
@@ -133,7 +133,7 @@ Changelog:
 --- 22 October 2020 ---
 Image: Fedora 32
 Product: VPS 2016 - 2020 & Public Cloud
-Travaux: http://travaux.ovh.net/?do=details&id=47324
+Task: <https://bare-metal-servers.status-ovhcloud.com/incidents/1n1fv1xhd9rn>
 Changelog:
 1. Installation of qemu-guest-agent, curl & gpg
 2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image.
@@ -142,7 +142,7 @@ Changelog:
 --- 27 October 2020 ---
 Image: Archlinux
 Product: VPS 2016 - 2020 & Public Cloud
-Travaux: http://travaux.ovh.net/?do=details&id=47409
+Task: <https://bare-metal-servers.status-ovhcloud.com/incidents/6jfb3f0f2sjz>
 Changelog:
 1. Installation of qemu-guest-agent, curl & gpg
 2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image
@@ -155,7 +155,7 @@ Changelog:
 --- 02 September 2020 ---
 Image: Centos 8
 Product: VPS 2016 - 2020 & Public Cloud
-Travaux: http://travaux.ovh.net/?do=details&id=46475
+Task: <https://bare-metal-servers.status-ovhcloud.com/incidents/99m3kb3tzgh3>
 Changelog:
 1. Qemu Guest Agent installed to improve snapshot experience
 2. Installation of pending system updates compared to previous image. Image is up-to-date as of the creation of the image.
@@ -163,7 +163,7 @@ Changelog:
 --- 21 September 2020 ---
 Image: Debian 10
 Product: VPS 2016 - 2020 & Public Cloud
-Travaux: http://travaux.ovh.net/?do=details&id=46840
+Task: <https://bare-metal-servers.status-ovhcloud.com/incidents/5m96knyn78l9>
 Changelog:
 1. Qemu Guest Agent is now installed and enabled - to improve snapshot experience
 2. curl & gpg packages are now installed

@@ -37,7 +37,7 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 
 #### Comprobar los incidentes en curso
 
-En primer lugar, compruebe en [http://travaux.ovh.com/](http://travaux.ovh.com/) que su datacenter, su cluster de alojamiento, su servidor SQL privado no se ven afectados por ningún incidente en la infraestructura de OVHcloud.
+En primer lugar, compruebe en [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) que su datacenter, su cluster de alojamiento, su servidor SQL privado no se ven afectados por ningún incidente en la infraestructura de OVHcloud.
 
 > [!primary]
 >
@@ -65,7 +65,7 @@ Cambie, si es necesario, la [contraseña de su base de datos](https://docs.ovh.c
 
 #### Ejemplo para Wordpress
 
-Si su sitio web muestra un mensaje **"Error al conectarse a la base de datos"** y no se ve afectado por un [incidente](http://travaux.ovh.com/), conéctese a [FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) a su alojamiento y abra el directorio que contiene su sitio web (por defecto es el directorio "www").
+Si su sitio web muestra un mensaje **"Error al conectarse a la base de datos"** y no se ve afectado por un [incidente](https://web-cloud.status-ovhcloud.com/), conéctese a [FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) a su alojamiento y abra el directorio que contiene su sitio web (por defecto es el directorio "www").
 
 Si se trata de un sitio web WordPress, abra el archivo **wp-config.php**.
 

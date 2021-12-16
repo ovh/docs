@@ -3,6 +3,7 @@ title: Unlock your data in the PCA
 slug: pca/unlock
 excerpt: This guide shows you how to manage your Public Cloud Archives.
 section: Public Cloud Archive
+order: 030
 ---
 
 

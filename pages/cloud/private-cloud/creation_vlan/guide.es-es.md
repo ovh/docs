@@ -1,157 +1,91 @@
 ---
-title: Creación V(x)LAN
-slug: crear-vlan-vxlan
-excerpt: Cómo crear VLAN (vRack) y VXLAN (NSX)
-section: Funcionalidades de OVHcloud
+title: Creación de VLAN (EN)
+slug: creation-vlan
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/creation-vlan/'
+excerpt: Find out how to create VLANs in your vRack
+section: OVHcloud Features
 order: 02
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
+**Last updated 13th December 2021**
 
-**Última actualización: 12/10/2020**
+## Objective
 
-## Objetivo
+OVHcloud sets up a base of 11 VLANs on your vRack.
 
-En una infraestructura Hosted Private Cloud, tendrá a su disposición 10 VXLAN de NSX y 11 VLAN con el vRack.
+**This guide explains how to create additional VLANs.**
 
-**Esta guía muestra la creación de VPS adicionales.**
+## Requirements
 
-## Requisitos
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere as well as the specific rights for Networking (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es))
 
-- Tener acceso al cliente vSphere Web (HTML5).
+## Instructions
 
-## Procedimiento
+In the Hosted Private Cloud solutions, VLANs can be used to isolate private communications between different OVHcloud services that are vRack-compatible (Dedicated Server, Public Cloud instance, etc.). 
 
-Los planes Hosted Private Cloud incluyen dos switchs virtuales distribuidos (vDS). 
-
-Estos *vDS* incluyen varios *portGroups*, cada uno de los cuales tiene su utilidad.
-
-El primer vDS común a ambos productos dispone de dos tipos de *portGroup*: 
-
-- VMnetwork que permite comunicarse a internet.
-- VXLAN gestionadas por NSX, que permite aislar las comunicaciones privadas dentro del Hosted Private Cloud.
-
-El segundo vDS solo tiene un tipo de *portGroup*: 
-
-- VLAN que permiten aislar las comunicaciones privadas dentro del Hosted Private Cloud y entre los distintos servicios de OVHcloud compatibles con el vRack (servidor dedicado, Public Cloud..). 
-
-### VxLan - NSX 
-
-En los hosted Private Cloud dispondrá de un primer switch virtual. 
-
-En este switch, 10 VXLAN son creados de base. Concediendo el permiso `NSX` en [la gestión de los usuarios de su área de cliente](../manager-ovh-private-cloud/#usuarios), podrá acceder a la interfaz NSX y así crear VXLAN adicionales.
-
-En primer lugar, acceda a la vista de `Networking and security` de su cliente vSphere y haga clic en `Logical Switches`{.action}.
-
-Haga clic en el botón `+`{.action} para comenzar la creación:
-
-![crear vxlan](images/01createVxLAN.png){.thumbnail}
-
-En primer lugar, puede asignarle un nombre a su **portGroup**:
-
-![nom vxlan](images/02nameVxLAN.png){.thumbnail}
-
-Seleccione la zona de transporte: 
-
-![zona de transporte](images/03transportZone.png){.thumbnail}
-
-> [!primary]
->
-> La zona de transporte controla a qué hosts puede llegar un conmutador lógico. En una infraestructura Hosted Private Cloud, OVHcloud crea una zona de transporte por datacenter virtual.
-> Es posible crear una zona de transporte común a los distintos datacenters virtuales o ampliar las existentes.
->
-> La forma de plan de control de una zona de transporte está en monodifusión que permite la gestión de la comunicación entre los hosts mediante los controladores NSX.
->
-
-El descubrimiento de direcciones IP permite limitar la saturación del tráfico ARP en los segmentos VXLAN individuales, es decir, entre las máquinas virtuales conectadas al mismo conmutador lógico.
-
-El aprendizaje MAC construye una tabla de aprendizaje VLAN/MAC en cada vNIC. Esta tabla se almacena con los datos dvfilter. En vMotion, dvfilter guarda y restaura la tabla en la nueva ubicación. A continuación, el conmutador genera RARP para todos los registros VLAN/MAC de la tabla. Puede que quiera activar el aprendizaje MAC si utiliza tarjetas de red virtuales que conectan VLAN.
-
-OVHcloud recomienda utilizar únicamente el descubrimiento de direcciones IP.
-
-Una vez introducidos todos los datos, puede confirmar la creación:
-
-![confirmar creación](images/04ConfirmVxLAN.png){.thumbnail}
-
-Su portGroup ya está creado y funcional. Puede verlo en la vista de los conmutadores lógicos: 
-
-![portgroup creado](images/05VxLANcreated.png){.thumbnail}
-
-Pero también en la vista de `Networking view`.
-
-![portgroup creado](images/06VxLANnetworking.png){.thumbnail}
-
-### VLAN - vRack
-
-También tiene un switch virtual distribuido (vDS) adicional.
-
-En este switch, se crean 11 VLAN de base (VLAN10 a VLAN20). Concediendo el permiso de `administrador` sobre el `acceso a la V(x)LAN` en [la gestión de los usuarios de su área de cliente](../manager-ovh-private-cloud/#usuarios){.external-link}, podrá crear VLAN adicionales.
-
-En primer lugar, acceda a la vista de `networking` de su cliente vSphere. Despliegue la carpeta **vrack**, haga clic derecho en el puerto **dVS** que termina en *-vrack*. A continuación, haga clic en `New Distributed Port Group`{.action}.
-
-![vRack](images/07network.png){.thumbnail}
+First, go to your vSphere client's `Networking`{.action} view. Deploy the **vrack** folder then right-click on the **dVS** ending in *-vrack* and finally click on `New Distributed Port Group`{.action}.
 
 ![New Distributed Port Group](images/08network1.png){.thumbnail}
 
-El siguiente paso es asignar un nombre a su **PortGroup**:
+The next step is to name your **Port Group**:
 
-![nombrar portgroup](images/09network2.png){.thumbnail}
+![nominate portgroup](images/09network2.png){.thumbnail}
 
-A continuación, configure los parámetros recomendados por OVHcloud:
+Then configure the settings recommended by OVHcloud:
 
-- **Port binding**: Static (reserva y asignación del puerto a una máquina virtual)
-- **Port allocation**: Elastic (Permite ampliar en caliente el número de puertos)
+- **Port binding**: Static (reserving and assigning the port to a virtual machine)
+- **Port allocation**: Elastic (allows the number of ports to be hot-wired)
 - **Number of ports**: 24
-- **VLAN type** : VLAN (los demás son [PVLAN](https://kb.vmware.com/s/article/1010691){.external} y Trunk)
-- **VLAN ID** : 21 (sabiendo que el ID puede configurarse de 1 a 4096)
-- Marque la opción *Customize default policies configuracion*.
+- **VLAN type**: VLAN (the others are [PVLAN](https://kb.vmware.com/s/article/1010691){.external} and Trunk)
+- **VLAN ID**: 21 (knowing that the ID can be configured from 1 to 4096)
+- Check the option *Customize default policies configuration*.
 
-![configuración portgroup](images/10network3.png){.thumbnail}
+![portgroup configuration](images/10network3.png){.thumbnail}
 
-Tiene 3 parámetros de seguridad que pueden activarse en función de sus necesidades : 
+You have 3 security settings that can be activated according to your needs: 
 
-- *Promiscuous mode* (Elimina todo filtrado de recepción que el adaptador de máquina virtual puede realizar para que el sistema operativo invitado reciba todo el tráfico observado en la red).
-- *MAC address changes* (Afecta el tráfico que recibe una máquina virtual. Si la opción está definida en **Accept**, ESXi acepta las solicitudes de modificación de la dirección MAC efectiva en una dirección diferente de la MAC inicial.)
-- *Forged transmits* (afecta al tráfico transferido desde una máquina virtual). Si la opción está configurada en **Accept**, ESXi no compara las direcciones MAC de origen con las de efecto).
+- *Promiscuous mode*: eliminates any filtering that the VM adapter can perform so that the guest operating system receives all observed traffic on the network.
+- *MAC address changes*: when set to **Accept**, ESXi will accept requests to change the effective MAC address to an address other than the initial MAC address.
+- *Forged transmits*: affects traffic transmitted from a virtual machine. When set to **Accept**, ESXi does not compare the source and effective MAC addresses.
 
 > [!primary]
 >
-> El uso más frecuente de estos 3 parámetros es el CARP, especialmente utilizado en **pfSense**.
+> The most frequent use of these 3 parameters is the CARP, especially used on **pfSense**.
 > 
 
-![configuración de seguridad](images/11network4.png){.thumbnail}
+![security settings](images/11network4.png){.thumbnail}
 
-Permite desactivar el [Traffic shaping](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html){.external}.
+Leave [Traffic shaping](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html){.external} disabled.
 
-![suavizado de tráfico](images/12network5.png){.thumbnail}
+![traffic shaping](images/12network5.png){.thumbnail}
 
-A nivel del Load Balancing, seleccione *Route Based on IP hash* que es el mejor método en cuanto a redundancia y repartición.
+In terms of load balancing, select *Route Based on IP hash*, which is the best method for redundancy and load balancing.
 
 > [!warning]
 >
-> Atención al nivel de configuración del orden de la migración, es necesario poner la conexión montante `lag1` en *Active* (conexión entre la red virtual y la red física), ya que de lo contrario no será posible la comunicación entre los hosts.
+> Be careful when configuring the failover order: It is necessary to set the `lag1` uplink to *Active* (connection between the virtual network and the physical network), otherwise no communication between the hosts will be possible.
 >
 
 ![load balancing](images/13network6.png){.thumbnail}
 
-El `Netflow` está desactivado (informe de actividad sobre los flujos de tráfico).
+The `NetFlow` is disabled (traffic flow activity report).
 
 ![netflow](images/14network7.png){.thumbnail}
 
-Deje el valor `Block All Ports` en "No".
+Leave the `Block All Ports` value at "No".
 
-![finalización de portgroup](images/15network9.png){.thumbnail}
+![portgroup finalisation](images/15network9.png){.thumbnail}
 
-A continuación, se mostrará un resumen de los cambios realizados. Haga clic en `Finish` para confirmar la creación.
+You will then be presented with a summary of the changes. Click `Finish`{.action} to confirm the creation.
 
-![finalización de portgroup](images/16network10.png){.thumbnail}
+![portgroup finalisation](images/16network10.png){.thumbnail}
 
-Aquí observamos que la **VLAN21** está bien disponible y es funcional.
+Here we can see that **VLAN21** is available and functional.
 
-![vlan creada](images/17network11.png){.thumbnail}
+![vlan created](images/17network11.png){.thumbnail}
 
-## Más información
+## Go further
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>.

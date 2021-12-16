@@ -65,7 +65,7 @@ Here is how to change the password for an email address:
 
 ### Is there an incident or maintenance in progress for my service?
 
-You can check the various tasks that are currently in progress on <http://status.ovh.com/>.
+You can check the various tasks that are currently in progress on <https://web-cloud.status-ovhcloud.com/>.
 
 - For **MXplan**, check in the `Emails` section
 - For **Exchange**, go to the `Microsoft` section

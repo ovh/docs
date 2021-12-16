@@ -72,8 +72,6 @@ Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalo
     c) Informacje o licencji.*  
     d) Czytanie i akceptowanie umów licencyjnych użytkownika.  
 
-No further steps are necessary to complete the first configuration of this application.
-
 Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
 
 > [!faq]

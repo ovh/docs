@@ -20,17 +20,17 @@ If you initially selected hourly billing, you can switch to monthly billing at a
 >
 > You cannot switch from monthly to hourly billing. If you would like to be billed at the hourly rate, you will need to delete your monthly-rate billing instance, create a new one, and select hourly billing. In this case we suggest that you do the following procedure:
 >
->- Create a snapshot of your current instance;
+>- Create a snapshot of your current instance.
 >
->- Create a new instance based on this snapshot;
+>- Create a new instance based on this snapshot.
 >
->- Delete monthly instance.
+>- Delete the monthly instance.
 >
 
 ## Requirements
 
-- You need to have created a [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/){.external}.
-- You must be logged in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
+- A [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/){.external} in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 

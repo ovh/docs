@@ -4,6 +4,7 @@ excerpt: Montowanie kontenera obiektów za pomocą S3QL
 slug: montowanie_kontenera_obiektow_za_pomoca_s3ql
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1908
+order: 160
 ---
 
 

@@ -6,6 +6,7 @@ excerpt: 'Gestionar el Object Storage con Cyberduck'
 slug: gestionar_el_object_storage_con_cyberduck
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1868
+order: 180
 ---
 
 > [!primary]

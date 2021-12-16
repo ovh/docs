@@ -4,6 +4,7 @@ excerpt: Configura un container di oggetti S3QL
 slug: configura_un_container_di_oggetti_s3ql
 legacy_guide_number: g1908
 section: Object Storage Standard (Swift)
+order: 160
 ---
 
 

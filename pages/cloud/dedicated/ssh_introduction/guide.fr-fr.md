@@ -31,9 +31,9 @@ De nombreux logiciels vous permettent de vous connecter à votre serveur en SSH.
 
 Pour vous connecter à votre serveur à partir de Windows, vous pouvez utiliser l'une des applications suivantes :
 
-- [ PuTT](http://www.putty.org/){.external} (gratuit)
-- [ MobaXterm](https://mobaxterm.mobatek.net/) (version gratuite et version payante)
-- [ SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (payant)
+- [PuTTY](http://www.putty.org/){.external} (gratuit)
+- [MobaXterm](https://mobaxterm.mobatek.net/) (version gratuite et version payante)
+- [SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (payant)
 
 Depuis les versions Windows 10 et Windows Server les plus récentes, le mode développeur vous donne accès à une console bash. Voici un lien vers la documentation Microsoft : <https://docs.microsoft.com/fr-fr/windows/wsl/install-win10>.
 

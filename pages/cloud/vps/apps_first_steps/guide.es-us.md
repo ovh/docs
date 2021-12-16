@@ -72,8 +72,6 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
     c) Información sobre la licencia.*  
     d) Leer y aceptar los contratos de licencia de usuario.  
 
-No further steps are necessary to complete the first configuration of this application.
-
 No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
 
 > [!faq]

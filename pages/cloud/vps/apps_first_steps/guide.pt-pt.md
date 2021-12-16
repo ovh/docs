@@ -72,8 +72,6 @@ Encontrará abaixo os primeiros passos para a implementação da imagem pré-ins
     c) Informações sobre a licença.*  
     d) Ler e aceitar os contratos de licença do utilizador.  
 
-No further steps are necessário ary to complete the first configuration of this application.
-
 Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
 
 > [!faq]

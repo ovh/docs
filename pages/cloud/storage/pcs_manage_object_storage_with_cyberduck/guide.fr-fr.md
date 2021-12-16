@@ -5,6 +5,7 @@ routes:
 excerpt: 'Découvrez comment utiliser votre Object Storage avec Cyberduck'
 slug: utiliser_object_storage_avec_cyberduck
 section: Object Storage Standard (Swift)
+order: 180
 ---
 
 **Dernière mise à jour le 18/06/2021**

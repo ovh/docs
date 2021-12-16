@@ -69,7 +69,7 @@ Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 
 ### ¿Hay algún incidente o mantenimiento en curso en mi servicio?
 
-Puede consultar las distintas tareas en curso en <http://travaux.ovh.net/> en este momento.
+Puede consultar las distintas tareas en curso en <https://web-cloud.status-ovhcloud.com/> en este momento.
 
 - Para **MXplan**, consulte la sección `Correo electrónico.`
 - Para **Exchange**, acceda a la sección `Microsoft.`

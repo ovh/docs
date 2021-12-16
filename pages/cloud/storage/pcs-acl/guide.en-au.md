@@ -3,6 +3,7 @@ title: Set up an Access Control List on Object Storage
 slug: pcs/acl
 excerpt: Here are the concepts for implementing ACLs in Object Storage
 section: Object Storage Standard (Swift)
+order: 040
 ---
 
 **Last updated 23rd September 2021**
@@ -36,7 +37,7 @@ Elements can be separated by spaces, as in the following example:
 - an Object Storage container
 - [OpenStack users](https://docs.ovh.com/au/en/public-cloud/creation-and-deletion-of-openstack-user/)
 - [Preparing the environment to use the OpenStack API](https://docs.ovh.com/au/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
-- [Loading the OpenStack environment variables](https://docs.ovh.com/au/en/public-cloud/set-openstack-environment-variables/) 
+- [Loading the OpenStack environment variables](https://docs.ovh.com/au/en/public-cloud/set-openstack-environment-variables/)
 
 ## Instructions
 

@@ -3,6 +3,7 @@ title: Zarządzanie Twoimi archiwami za pomocą Rsync
 slug: pca/rsync
 excerpt: Dowiedz się, jak uzyskać dostęp do Twoich archiwów Public Cloud za pomocą Rsync
 section: Public Cloud Archive
+order: 090
 ---
 
 > [!primary]

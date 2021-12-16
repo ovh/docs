@@ -32,7 +32,7 @@ Your database usage may result in anomalies on your website or error messages in
 
 #### Check ongoing incidents
 
-First, check on [http://travaux.ovh.com/](http://travaux.ovh.com/) whether your data centre, hosting cluster or Private SQL server is affected by an incident on the OVHcloud infrastructure.
+First, check on [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) whether your data centre, hosting cluster or Private SQL server is affected by an incident on the OVHcloud infrastructure.
 
 > [!primary]
 >
@@ -60,7 +60,7 @@ If necessary, change your [database password](https://docs.ovh.com/sg/en/hosting
 
 #### Example for WordPress
 
-If your website displays an **"Error establishing a database connection"** message and your hosting cluster is not affected by an [incident](http://travaux.ovh.com/), log in to the [FTP storage space](https://docs.ovh.com/sg/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting and open the directory containing your website (by default, this is the "www" folder).
+If your website displays an **"Error establishing a database connection"** message and your hosting cluster is not affected by an [incident](https://web-cloud.status-ovhcloud.com/), log in to the [FTP storage space](https://docs.ovh.com/sg/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting and open the directory containing your website (by default, this is the "www" folder).
 
 If this is a WordPress site, open the file "wp-config.php".
 

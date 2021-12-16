@@ -3,6 +3,7 @@ title: Méthode optimisée pour le téléchargement de fichiers vers Object Stor
 slug: methode_optimisee_pour_le_telechargement_de_fichiers_vers_object_storage
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1951
+order: 130
 ---
 
 **Dernière mise à jour le 27/10/2021**

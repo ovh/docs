@@ -3,6 +3,7 @@ title: Curl Command Memo
 slug: pca/curl-commands-memo
 excerpt: Find here the main curl commands for managing your Public Cloud Archive object containers
 section: Public Cloud Archive
+order: 060
 ---
 
 **Last updated 27th October 2021**

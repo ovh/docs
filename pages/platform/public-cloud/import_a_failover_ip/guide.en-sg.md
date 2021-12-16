@@ -1,12 +1,12 @@
 ---
-title: 'Import a failover IP'
+title: 'Importing a failover IP'
 slug: import_a_failover_ip
-excerpt: 'This guide explains how to import a failover IP into your OVHcloud Public Cloud project.'
+excerpt: 'Find out how to import a failover IP address into your Public Cloud Project'
 legacy_guide_number: g1883
 section: Networking
 ---
 
-**Last updated 2018/12/18**
+**Last updated 7th April 2020**
 
 ## Objective
 
@@ -22,38 +22,44 @@ Instead oy buying additional ones, you can import a failover IP address that is 
 
 ## Requirements
 
-* Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
-* A [failover IP address](https://www.ovhcloud.com/en-sg/bare-metal/ip/){.external}
+- A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
+- A [failover IP address](https://www.ovhcloud.com/en-sg/bare-metal/ip/){.external}
 
 ## Instructions
 
-Firstly, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} and click the `Publlic Cloud{.action} menu. Then click the Right Arrow side-menu to expand your list of projects.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, select `Failover IP`{.action} in the "Network" section.
 
-When you've found your project in the list, click it and then select the `Failover IP`{.action} tab.
+![IP Section](images/import.png){.thumbnail}
 
-![IP Section](images/import-failover-ip-01_2020.png){.thumbnail}
+Click on `Import a failover IP`{.action} to display all the IP addresses that can be imported into your Public Cloud project.
 
-Next, Click the `Actions`{.action} button and then click `Import an IP`{.action}.
+![IP Section](images/import1.png){.thumbnail}
 
-![Import Failover IP](images/import-failover-ip-02_2020.png){.thumbnail}
+Click on `...`{.action} next to the IP address you would like to import and click `Import this failover IP`{.action}.
 
-Next, select the failover IP you want to import and then click the `···`{.action} button beside it and click `Import this failover IP`{.action}.
+![Import Failover IP](images/import2.png){.thumbnail}
 
-![Select Failover IP](images/import-failover-ip-03_2020.png){.thumbnail}
+Confirm by clicking on `Import`{.action}.
 
-You will now see a confirmation message.
+![Import Failover IP](images/importconfirm.png){.thumbnail}
 
-![Failover Imported](images/import-failover-ip-04_2020.png){.thumbnail}
+The page will refresh and the information that the IP address was migrated successfully will appear.
 
-When the failover IP has been successfully imported, click the `···`{.action} button  next to the the failover IP and then click `Modify associated instance`{.action}.
+When the failover IP has been successfully imported, click on `...`{.action} on the right and select `Modify the associated instance`{.action}.
 
-![Attach Failover IP](images/import-failover-ip-05_2020.png){.thumbnail}
+![Import Failover IP](images/modifyinstance.png){.thumbnail}
 
-Select the instance that you would like to attach the IP to from the drop down menu and then click the `Attach`{.action} button.
+A pop-up will appear to choose the instance to which your IP address should be attached.
 
-![Attach Failover IP](images/import-failover-ip-06_2020.png){.thumbnail}
+![Import Failover IP](images/modifyinstance1.png){.thumbnail}
 
-Your failover IP will now be attached to your instance.
+Click on `Attach`{.action} to confirm. The page will display a modification message.
+
+![Import Failover IP](images/modifycompleted.png){.thumbnail}
+
+The IP address is now associated with your instance.
+The next step will be the IP configuration in your OS; please refer to our [guide](../configure_a_failover_ip).
 
 ## Go further
 

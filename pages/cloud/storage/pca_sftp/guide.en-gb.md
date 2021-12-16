@@ -3,6 +3,7 @@ title: Manage your archives with an SFTP/SCP client
 slug: pca/sftp
 excerpt: This guide shows you how to manage your Public Cloud Archives.
 section: Public Cloud Archive
+order: 100
 ---
 
 

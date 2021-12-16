@@ -27,7 +27,7 @@ Many software applications enable you to connect via SSH. To help you, here are 
 
 #### On Windows
 
-- [PuTTy](http://www.putty.org/){.external} (Free)
+- [PuTTY](http://www.putty.org/){.external} (Free)
 - [MobaXterm](https://mobaxterm.mobatek.net/) (free version and paid version)
 - [SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (Paid)
 

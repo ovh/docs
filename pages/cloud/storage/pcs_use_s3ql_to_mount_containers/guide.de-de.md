@@ -3,6 +3,7 @@ title: Einen Object Container mit S3QL mounten
 slug: einen_object_container_mit_s3ql_mounten
 section: Object Storage Standard (Swift)
 legacy_guide_number: g1908
+order: 160
 ---
 
 **Letzte Aktualisierung am 21.10.2021**

@@ -5,7 +5,7 @@ excerpt: 'Aprenda a configurar direcciones IPv6 en nuestra infraestructura'
 section: 'Gestión de redes'
 ---
 
-**Última actualización: 19/05/2020**
+**Última actualización: 01/12/2021**
 
 ## Objetivo
 
