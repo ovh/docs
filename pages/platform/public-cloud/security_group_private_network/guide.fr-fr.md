@@ -19,7 +19,7 @@ Un **port** dans le cadre d'[OpenStack Neutron](https://docs.openstack.org/neutr
 >
 > Ce guide ne concerne que les configurations de réseaux privés. En ce qui concerne les réseaux publics, les règles de firewall sont globales.
 >
-> Nous vous invitons à prendre connaissance des [détails de la migration](#migration) ci-dessous concernant les changements apportés aux régions Public Cloud OpenStack.
+> Nous vous invitons à prendre connaissance des [détails de la migration](#migration) ci-dessous concernant les changements apportés aux [régions](#regions) Public Cloud OpenStack.
 >
 
 ## Prérequis
@@ -120,7 +120,7 @@ Entrez la commande suivante pour associer votre groupe de sécurité à votre po
 openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 ```
 
-#### Différences de comportement selon les régions
+#### Différences de comportement selon les régions <a name="regions"></a>
 
 La configuration par défaut du réseau privé peut être différente selon la région utilisée.
 
