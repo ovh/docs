@@ -125,7 +125,7 @@ Um die Konfiguration des vRack über das OVHcloud Kundencenter fortzusetzen, les
 
 #### Über die OVHcloud APIv6
 
-Um ein vRack mit der OVHcloud APIv6 zu aktivieren und zu verwalten, lesen Sie bitte [diesen Abschnitt](../public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) (EN) des entsprechenden Leitfadens.
+Um ein vRack mit der OVHcloud APIv6 zu aktivieren und zu verwalten, lesen Sie bitte [diesen Abschnitt](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) (EN) des entsprechenden Leitfadens.
 
 ### Schritt 2: Erstellen eines VLAN im vRack
 
@@ -179,7 +179,7 @@ Bestätigen Sie die gewünschten Regionen, geben Sie einen Namen für Ihr privat
 
 #### Erstellen eines VLAN mit der OVHcloud APIv6
 
-Um ein VLAN mit der OVHCloud APIv6 zu erstellen, folgen Sie [diesem Abschnitt](../public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN) der entsprechenden Anleitung.
+Um ein VLAN mit der OVHCloud APIv6 zu erstellen, folgen Sie [diesem Abschnitt](https://docs.ovh.com/gb/en//public-cloud/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN) der entsprechenden Anleitung.
 
 ### Schritt 3: Instanz in das vRack integrieren
 
@@ -203,7 +203,7 @@ Folgen Sie der Anleitung zum [Erstellen einer Public Cloud-Instanz](../public-cl
 
 ##### **Über die OVHcloud APIv6**
 
-Bitte folgen Sie [diesem Abschnitt](../public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) (EN) der entsprechenden Anleitung.
+Bitte folgen Sie [diesem Abschnitt](https://docs.ovh.com/gb/en//public-cloud/public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) (EN) der entsprechenden Anleitung.
 
 ##### **Über die OpenStack APIs**
 
@@ -247,7 +247,7 @@ nova net-list
 ><br> - Die für Ihre Konfiguration erforderliche(n) VLAN(s) 
 >
 
-Beachten Sie auch die folgenden Informationen, wie in der [Anleitung zur Nova API](../starting-with-nova-api/) (EN) beschrieben:
+Beachten Sie auch die folgenden Informationen, wie in der [Anleitung zur Nova API](https://docs.ovh.com/gb/en//public-cloud/starting-with-nova-api/) (EN) beschrieben:
 
 - ID oder Name des OpenStack SSH Keys
 - ID des Instanz-Typs (Flavor)
@@ -410,7 +410,7 @@ Wählen Sie im daraufhin angezeigten Popup-Fenster die privaten Netzwerke aus, d
 
 ##### **Verwaltung der Netzwerkinterfaces über die OVHcloud APIv6**
 
-Lesen Sie [diesen Abschnitt](../public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) (EN) der entsprechenden Anleitung.
+Lesen Sie [diesen Abschnitt](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) (EN) der entsprechenden Anleitung.
 
 ##### **Verwaltung der Netzwerkinterfaces über OpenStack Horizon**
 
