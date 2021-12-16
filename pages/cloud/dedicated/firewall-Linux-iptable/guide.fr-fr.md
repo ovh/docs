@@ -14,7 +14,7 @@ order: 7
 Votre serveur dédié est équipé d'un pare-feu. Les pare-feu créent une barrière entre un réseau de confiance et un réseau non fiable. 
 Les pare-feu fonctionnent en définissant des règles qui régissent le trafic autorisé et celui qui est bloqué. Le pare-feu utilitaire développé pour les systèmes Linux est iptables.
 
-**Apprenez à sécuriser votre serveur dédié grâce à iptable.**
+**Apprenez à sécuriser votre serveur dédié grâce à iptables.**
 
 > [!warning]
 >
@@ -26,7 +26,7 @@ Les pare-feu fonctionnent en définissant des règles qui régissent le trafic a
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
-- Être connecté en SSH (accès root) sous Linux en tant qu'administrateur.
+- Être connecté en SSH (accès root) sous Linux.
 
 
 ## En pratique
@@ -66,7 +66,7 @@ Une fois les mises à jour terminées, votre système sera entièrement à jour.
 
 > [!primary]
 >
-> Il existe deux versions différentes d'iptables, pour IPv4 et IPv6. Les règles que nous couvrons dans ce didacticiel Linux iptables concernent IPv4.
+> Il existe deux versions différentes d'iptables, pour IPv4 et IPv6. Les règles que nous couvrons dans ce tutoriel Linux iptables concernent IPv4.
 > Pour configurer iptables pour IPv6, vous devez utiliser l'utilitaire iptables6. Ces deux protocoles différents ne fonctionnent pas ensemble et doivent être configurés indépendamment
 >
 
@@ -111,6 +111,8 @@ Le système affiche le statut de vos chaînes.
 La sortie répertoriera trois chaînes :
 
 ![Check-Current-iptables](images/Check-Current-iptables.PNG){.thumbnail}
+
+
 ### Étape 4 : Activation du trafic sur localhost
 
 Pour autoriser le trafic de votre propre système (le localhost). Ajoutez la chaîne d'entrée en entrant ce qui suit :
@@ -120,6 +122,7 @@ sudo iptables -A INPUT -i lo -j ACCEPT
 ```
 Cette commande configure le pare-feu pour accepter le trafic pour l'interface localhost (lo) (-i). Désormais, tout ce qui provient de votre système passera par votre pare-feu.
 Vous devez définir cette règle pour permettre aux applications de communiquer avec l'interface localhost.
+
 
 ### Étape 5 : Autoriser le trafic sur des ports spécifiques
 
@@ -148,6 +151,7 @@ Les options fonctionnent comme suit :
 - --dport : Spécifiez le port de destination.
 - -j jump : Effectue l'action 
 
+
 ### Étape 6 : Contrôler le trafic par adresse IP
 
 Utilisez la commande suivante pour accepter le trafic à partir d'une adresse IP spécifique.
@@ -158,13 +162,13 @@ sudo iptables -A INPUT -s votre@IP_à_autoriser -j ACCEPT
 Remplacez l'adresse IP dans la commande par l'adresse IP que vous souhaitez autoriser.
 
 
-Vous pouvez également DROP le trafic à partir d'une adresse IP 
+Vous pouvez également bloquer le trafic à partir d'une adresse IP 
 
 ```sh
 sudo iptables -A INPUT -s votre@IP_à_bloquer -j DROP
 ```
 
-Vous pouvez REJETER le trafic à partir d'une plage d'adresses IP, avec la commande suivante :
+Vous pouvez rejeter le trafic à partir d'une plage d'adresses IP, avec la commande suivante :
 
 ```sh
 sudo iptables -A INPUT -m iprange --src-range votre@IP_debut-votre@IP_fin -j REJECT
@@ -187,6 +191,7 @@ L'option -A ajoute une nouvelle règle à la chaîne. Si une connexion passe par
 
 ### Étape 8 : Supprimer une règle
 
+
 Vous pouvez utiliser l'option -F pour effacer toutes les règles de pare-feu iptables. 
 Une méthode plus précise consiste à supprimer le numéro de ligne d'une règle.
 Tout d'abord, répertoriez toutes les règles en saisissant ce qui suit :
@@ -203,7 +208,8 @@ sudo iptables -D INPUT <Number>
 ```
 Remplacez <Number> par le numéro de ligne de règle que vous souhaitez supprimer.
 
-### Étape 8 : Enregistrez vos modifications
+  
+ ### Étape 9 : Enregistrez vos modifications
 
 iptables ne conserve pas les règles que vous avez créées lors du redémarrage du système. 
 Chaque fois que vous configurez iptables sous Linux, toutes les modifications que vous apportez s'appliquent uniquement jusqu'au premier redémarrage.
