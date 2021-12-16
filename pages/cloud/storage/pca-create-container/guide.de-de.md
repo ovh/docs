@@ -1,7 +1,7 @@
 ---
 title: Erstellung von Public Cloud Archive Containern
 slug: pca/erstellen-von-containern
-excerpt: Hier erfahren Sie, wie Sie Ihre Public Cloud Archive Container über Ihr OVHcloud Kundencenter erstellen.
+excerpt: Erfahren Sie hier, wie Sie Ihre Public Cloud Archive Container über Ihr OVHcloud Kundencenter erstellen
 section: Public Cloud Archiv
 order: 020
 ---
@@ -10,30 +10,30 @@ order: 020
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Stand 27.10.2021**
+**Letzte Aktualisierung am 27.10.2021**
 
 ## Ziel
 
-Das Public Cloud Archive Angebot ist eine unbegrenzte Speicherlösung mit einfacher Abrechnung und Ihren Bedürfnissen angepasst. Es gibt zahlreiche Arten von Objekt-Containern:
+Public Cloud Archive ist eine unbegrenzte Speicherlösung mit einfacher Abrechnung und auf Ihren Bedarf angepasst. Es gibt mehrere Arten von Objekt-Containern:
 
-- für statisches Hosting (statische Website);
-- für privates Hosting (Beispiel: Speicherung personenbezogener Daten);
-- für öffentliches Hosting (zur Speicherung von allen öffentlich zugänglichen Daten);
-- für Cold Storage (Archivierung).
+- für statisches Hosting (statische Website)
+- für privates Hosting (Beispiel: Speicherung personenbezogener Daten)
+- für öffentliches Hosting (zur Speicherung von allen öffentlich zugänglichen Daten)
+- für Cold Storage (Archivierung)
 
 Der erste Schritt ist die Erstellung eines Containers, der Ihre Dateien zusammenfasst. 
 
-**In dieser Anleitung erfahren Sie, wie Sie über Ihr OVHcloud Kundencenter einen Container erstellen.**
+**Diese Anleitung erklärt, wie Sie über Ihr OVHcloud Kundencenter einen Container erstellen.**
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angemeldet.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 ### Erstellung eines Public Cloud Archive Containers über das OVHcloud Kundencenter
 
-Loggen Sie sich in Ihr [Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann auf `Cloud Archive`{.action} im linken Menü unter `Storage`.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Cloud Archive`{.action} unter `Storage`.
 
 Wenn es sich um Ihren ersten Container handelt:
 
@@ -45,7 +45,7 @@ Wenn Sie bereits einen oder mehrere Container erstellt haben:
 
 Wählen Sie die Region Ihres Containers aus und klicken Sie auf `Weiter`{.action}:
 
-![select a region](images/create-container-20211006094448923.png)
+![region](images/create-container-20211006094448923.png)
 
 Benennen Sie Ihren Container und klicken Sie dann auf `Container hinzufügen`{.action}:
 
@@ -55,9 +55,9 @@ Benennen Sie Ihren Container und klicken Sie dann auf `Container hinzufügen`{.a
 >
 > - [ . ]
 > - [ _ ]
-> - und Sie dürfen keine Großbuchstaben verwenden.
+> - Es dürfen weiterhin keine Großbuchstaben enthalten sein.
 >
-> Weitere Informationen finden Sie in unserer Anleitung "[Container mit einer Domain](https://docs.ovh.com/de/storage/einem_object_storage_container_eine_spezifische_domain_zuweisen/) verbinden".
+> Weitere Informationen finden Sie in unserer Anleitung zum [Verbinden eines Container mit einer Domain](https://docs.ovh.com/de/storage/einem_object_storage_container_eine_spezifische_domain_zuweisen/).
 >
 
 ![container](images/create-container-20211006094550334.png)
