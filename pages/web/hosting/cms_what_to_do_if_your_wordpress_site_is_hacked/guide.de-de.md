@@ -61,7 +61,7 @@ Bei einer solchen Anfrage kann Ihnen unser Support leider nicht behilflich sein.
 
 
 ## Wiederherstellung der Webseite
-WordPress besteht aus verschiedenen Dateien und einer Datenbank. Es ist möglich, Dateien älteren Datums wiederherzustellen. Bei OVH haben Sie für die Dateien auf Ihrem Hosting Zugriff auf eine History der letzten drei Wochen. Für die Datenbank haben Sie Zugriff auf die letzten sieben Tage.
+WordPress besteht aus verschiedenen Dateien und einer Datenbank. Es ist möglich, Dateien älteren Datums wiederherzustellen. Bei OVH haben Sie für die Dateien auf Ihrem Hosting Zugriff auf eine History der letzten zwei Wochen. Für die Datenbank haben Sie Zugriff auf die letzten sieben Tage.
 Bitte beachten Sie, dass durch eine Wiederherstellung keine Sicherheitslücken geschlossen werden. Diese müssen Sie also dennoch ermitteln und schließen.
 
 Durch die Wiederherstellung werden die Dateien durch das Backup ersetzt.

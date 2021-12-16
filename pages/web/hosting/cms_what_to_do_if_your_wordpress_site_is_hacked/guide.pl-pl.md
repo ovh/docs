@@ -57,7 +57,7 @@ W żadnym przypadku pomoc techniczna nie będzie mogła bezpośrednio pomóc Ci 
 
 
 ## Przywrócenie strony
-Wordpress składa się z plików i z bazy danych. Można przywrócić pliki z wcześniejszej daty, OVH proponuje historię z 3 tygodni dla plików dostępnych na hostingu. W przypadku bazy danych można przywrócić dane sprzed 7 dni.
+Wordpress składa się z plików i z bazy danych. Można przywrócić pliki z wcześniejszej daty, OVH proponuje historię z 2 tygodni dla plików dostępnych na hostingu. W przypadku bazy danych można przywrócić dane sprzed 7 dni.
 Przywrócenie danych nie usuwa luk w zabezpieczeniach. Po przywróceniu danych należy odszukać i naprawić lukę. 
 Operacja przywrócenia usuwa dane obecne na hostingu i zastępuje je kopią zapasową.
 

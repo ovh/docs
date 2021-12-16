@@ -61,7 +61,7 @@ Em nenhum caso o nosso suporte poderá assisti-lo neste tipo de pedidos.
 
 
 ## Restauro do website
-O Wordpress é composto por ficheiros e uma base de dados. É possível restaurar os seus ficheiros para uma data anterior. A OVH propõe-lhe um histórico de 3 semanas no que aos ficheiros diz respeito. Relativamente à base de dados é possível recuperar um backup de há 7 dias.
+O Wordpress é composto por ficheiros e uma base de dados. É possível restaurar os seus ficheiros para uma data anterior. A OVH propõe-lhe um histórico de 2 semanas no que aos ficheiros diz respeito. Relativamente à base de dados é possível recuperar um backup de há 7 dias.
 O restauro não corrige falhas de segurança, é necessário procurar a falha e corrigir a mesma.
 O restauro elimina todo o conteúdo presente no seu alojamento pelo conteúdo do backup.
 

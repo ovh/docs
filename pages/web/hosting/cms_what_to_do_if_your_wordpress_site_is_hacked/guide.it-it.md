@@ -41,7 +41,7 @@ Individuiamo la fonte dell'intrusione e analizziamo i 2 casi possibili.
 
 
 ## 
-Prima di effettuare qualsiasi ripristino, è importante verificare la data delle ultime modifiche dei tuoi file Web (FTP)  per trovare e correggere le falle di sicurezza.
+Prima di effettuare qualsiasi ripristino, è importante verificare la data delle ultime modifiche dei tuoi file Web (FTP) per trovare e correggere le falle di sicurezza.
 Non è possibile descrivere dettagliatamente la procedura che permette di identificare a colpo sicuro l'origine di qualsiasi intrusione, ma in generale un attacco è possibile a causa di una falla in uno script che l'hacker sfrutta per effettuare una richiesta HTTP.
 
 Tutte le richieste HTTP sono disponibili nei tuoi log (https://logs.ovh.net/tuo_dominio).
@@ -63,7 +63,7 @@ In nessun caso il supporto OVH potrà assisterti direttamente per questo tipo di
 
 
 ## Ripristina il tuo sito
-Wordpress è composto da file e da un database. È possibile ripristinare i tuoi file a una data anteriore. OVH propone uno storico dei file presenti sul tuo hosting di 3 settimane. Per il database, è possibile risalire fino a 7 giorni prima.
+Wordpress è composto da file e da un database. È possibile ripristinare i tuoi file a una data anteriore. OVH propone uno storico dei file presenti sul tuo hosting di 2 settimane. Per il database, è possibile risalire fino a 7 giorni prima.
 Il ripristino non corregge le falle di sicurezza, cancella semplicemente i dati presenti e li sostituisce con quelli contenuti nel backup.
 
 
