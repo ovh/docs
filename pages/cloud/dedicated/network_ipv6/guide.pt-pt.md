@@ -29,6 +29,7 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 
 Se está a usar um template Linux fornecido pela OVHcloud para instalar o servidor, vai verificar que o primeiro IPv6 (principal) já se encontra configurado.
 
+Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utilizá-lo numa VM) deve dispor de um IP fail-over configurado com um vMAC. Caso contrário, o IPv6 não poderá ser roteado pelos nossos routers/switchs.
 
 > [!primary]
 >
