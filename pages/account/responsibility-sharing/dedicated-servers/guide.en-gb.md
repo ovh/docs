@@ -1,9 +1,15 @@
 ---
 title: RACI Dedicated servers
-excerpt: Shared responsibilities between OVHcloud and the customer for Dedicated Servers
+slug: RACI-dedicated-server
+section : RACI
+excerpt: RACI between OVHcloud and the customer for Dedicated Servers
 ---
 
 **Last updated December 1st, 2021**
+
+## Objective
+
+The RACI below details shared responsibilities between OVHcloud and the customer for Dedicated Servers services. This shared model can help relieve the customer’s operational burden.
 
 | Roles |
 | --- |
