@@ -1,9 +1,15 @@
 ---
 title: RACI Serveurs Dédiés
-excerpt: Partage de responsabilités entre OVHcloud et le client pour l'utilisation des Serveurs Dédiés
+slug: RACI-serveurs-dedies
+section: RACI
+excerpt: RACI entre OVHcloud et le client pour l'utilisation des Serveurs Dédiés
 ---
 
 **Dernière mise à jour le 1er décembre 2021**
+
+## Objective
+
+Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour les services Serveurs Dédiés. Ce modèle peut aider le client à utiliser le service Serveur Dédié au mieux.
 
 | Rôles |
 | --- |
