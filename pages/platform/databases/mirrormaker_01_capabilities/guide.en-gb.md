@@ -50,7 +50,7 @@ You can folllow Kafka Release Cycle on their official page : <https://kafka.apac
 
 You can use any of the Kafka-recommended clients to access your cluster.
 
-Please note that Kafka Connect ais not available so far.
+Please note that Kafka Connect is not available so far.
 
 ### Plans
 
@@ -129,10 +129,10 @@ For both public and private networks, Ingress and Egress traffic are included in
 
 #### Kafka replication and data retention
 
-You can select Kafka source cluster and Kakfa Destination cluster from the same Public Cloud projet.
-External Kafka cluster are not supported so far.
+You can select a Kafka source cluster and a Kakfa destination cluster from the same Public Cloud project.
+External Kafka clusters are not supported so far.
 
-You  need at least 2 kafka cluster to create replications flows.
+You  need at least 2 kafka clusters to create replication flows.
 
 Replication flows allowed parameters are:
 
