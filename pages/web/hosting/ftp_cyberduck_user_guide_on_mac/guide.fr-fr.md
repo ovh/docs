@@ -8,7 +8,7 @@ section: FTP et SSH
 
 Ce guide a été réalisé avec une version gratuite de l'applicatif en version 4.5.2 téléchargée depuis le site officiel.
 
-Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovhcloud.com/fr/web-hosting/guides/){.external} disponibles.
+Retrouvez nos [différents guides mutualisés/hébergement Web](https://docs.ovh.com/fr/hosting/) disponibles.
 
 
 > [!warning]

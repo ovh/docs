@@ -18,10 +18,11 @@ Come tutti i linguaggi di programmazione, PHP si evolve con nuove funzionalità,
 Dismettiamo le vecchie versioni perché possono comportare un rischio per la tua e la nostra sicurezza.
 Quali sono i vantaggi utilizzare versioni di PHP aggiornate?
 Se decidi di utilizzare le ultime versioni di PHP riduci i rischi di hacking e usufruisci di funzionalità aggiuntive.
-Per migliorare le prestazioni del tuo sito, OVH ti offre gratis la versione PHP-FPM 5.3. Per saperne di più, clicca[qui](https://www.ovhcloud.com/it/web-hosting/ottimizzazione-php-fpm.xml).
+Per migliorare le prestazioni del tuo sito, OVH ti offre gratis la versione PHP-FPM 5.3. Per saperne di più, clicca[qui](https://docs.ovh.com/it/hosting/attiva_lottimizzazione_php_sul_tuo_hosting_condiviso_ovh/).
 Quali sono le versioni che vengono mandate in end of life e quando sono dismesse?
 
 |Versione|Fine ufficiale del supporto|End of life da + di...|
+|---|---|---|
 |4.X|7 agosto 2008|6 anni e 8 mesi|
 |5.2|6 gennaio 2011|4 anni e 3 mesi|
 |5.3|14 agosto 2014|8 mesi|

@@ -29,6 +29,7 @@ El protocolo de internet versión 6 (IPv6) es la última versión del protocolo 
 
 Si está utilizando una plantilla de OVHcloud para instalar el servidor en un sistema operativo Linux, podrá comprobar que la primera IPv6 (principal) ya viene configurada de fábrica.
 
+Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizarlo en una MV), debe disponer de una IP failover configurada con una vMAC. Si no, nuestros routers/switchs no podrán enrutar la IPv6.
 
 > [!primary]
 >

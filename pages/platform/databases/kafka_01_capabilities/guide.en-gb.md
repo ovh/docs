@@ -51,7 +51,7 @@ You can folllow Kafka Release Cycle on their official page : <https://kafka.apac
 
 You can use any of the Kafka-recommended clients to access your cluster.
 
-Please note that Kafka Connect and Kafka Mirrormaker 2 aren't available so far.
+Please note that Kafka Connect isn't available so far.
 
 ### Plans
 

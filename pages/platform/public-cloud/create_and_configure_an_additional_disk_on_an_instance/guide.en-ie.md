@@ -22,8 +22,8 @@ This can be useful in cases where:
 ## Requirements
 
 - Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- A [Public Cloud Instance](https://www.ovh.ie/public-cloud/instances/){.external} in your OVHcloud account
-- Administrative (root) access to your instance via SSH
+- A [Public Cloud Instance](https://www.ovh.ie/public-cloud/){.external} in your OVHcloud account
+- Administrative (root) access to your instance via SSH (Linux) or RDP (Windows)
 
 ## Instructions
 

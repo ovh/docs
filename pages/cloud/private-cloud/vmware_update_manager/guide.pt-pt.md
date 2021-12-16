@@ -11,7 +11,7 @@ order: 09
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 23/11/2021**
+**Última atualização: 09/12/2021**
 
 ## Objetivo
 
@@ -87,7 +87,19 @@ O resumo de conformidade deve então ser atualizado.
 
 ![Update](images/en09noncompliant.png){.thumbnail}
 
-Volte à secção `Attached Baselines`, selecione todas as linhas de base associadas e clique em `Remediate`{.action}.
+Volte à secção `Attached Baselines`, selecione todas as linhas de base atribuídas e clique em `Stage`{.action}.
+
+![Update](images/en10bisstage.png){.thumbnail}
+
+Selecione o host e clique novamente em `Stage`{.action}.
+
+![Update](images/en10terstagea.png){.thumbnail}
+
+O processo de transferência começa e durará em função do número e do tamanho dos corretivos.
+
+![Update](images/en10terstage.png){.thumbnail}
+
+Ainda na secção `Attached Baselines`, selecione todas as linhas de base atribuídas e clique em `Remediate`{.action}.
 
 ![Update](images/en10remediate.png){.thumbnail}
 

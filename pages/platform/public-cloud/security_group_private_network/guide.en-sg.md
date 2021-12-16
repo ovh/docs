@@ -19,7 +19,7 @@ A **port** in the context of [OpenStack Neutron](https://docs.openstack.org/neut
 >
 > This guide only concerns configurations for private networks. For public networks the firewall rules are global.
 >
-> Please take note of the [region and migration details](#regions) below regarding changes to the Public Cloud OpenStack regions.
+> Please take note of the [migration details](#migration) below regarding changes to the Public Cloud OpenStack [regions](#regions).
 
 ## Requirements
 
@@ -124,9 +124,12 @@ openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 
 The private network default configuration might be different depending on the region you are using.
 
-In some regions the "port security" property is seen as "enabled" even if it's not applying any rule on private network. On some other regions (depending on the OpenStack version deployed), the "port security" property is seen as "enabled" but rules are applied correctly on private network.
+> [!primary]
+>
+> In some regions the "port security" property is shown as "enabled" even when it is not applying any rule on private network. On some other regions (depending on the OpenStack version deployed), the "port security" property is shown as "enabled" but rules are applied correctly on private network.
+>
 
-To summarise, for the following regions are running Newton OpenStack release and **no firewall rules will work** for your private networks, even if port security is enabled:
+To summarise, for the following regions running OpenStack Newton **no firewall rules will work** for your private networks, even if port security is enabled:
 
 - Beauharnois: BHS1, BHS3, BHS5
 - Frankfurt: DE1
@@ -139,7 +142,7 @@ To summarise, for the following regions are running Newton OpenStack release and
 - Hillsboro: US-WEST-OR-1
 - Vint Hill: US-EAST-VA-1
 
-In the following regions (running Stein OpenStack release), the firewall rules for private networks **will work** as expected:
+In the following regions (running OpenStack Stein release), the firewall rules for private networks **will work** as expected:
 
 - Gravelines: GRA9
 - Strasbourg: SBG7
@@ -155,7 +158,7 @@ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_securi
 False
 ```
 
-### Migration process
+### Migration process <a name="migration"></a>
 
 This will occur according to the following process:
 
@@ -165,7 +168,6 @@ This will occur according to the following process:
 - The default port security will be changed to **enabled** (a global communication will be sent in time).
 - The firewall rules will work for the new ports. Nothing will change for the existing ports.
 - The option to enable port security for existing ports will be activated.
-
 
 ## Go further
 
