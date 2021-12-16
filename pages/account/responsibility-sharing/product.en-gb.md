@@ -2,10 +2,13 @@
 title: Responsibility sharing
 slug: responsibility-sharing
 excerpt: Responsibility sharing between OVHcloud and its customers
-Sections: RACI
+sections: RACI Bare Metal Cloud, RACI Public Cloud
 order: 6
 ---
 
+> [!product-section]
 >
-> - [RACI DBaaS](https://docs.ovh.com/gb/en/publiccloud/databases/responsibility-model/)
+> ### RACI Public Cloud
+>
+>  - [RACI DBaaS](https://docs.ovh.com/gb/en/publiccloud/databases/responsibility-model/)
 >
