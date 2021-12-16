@@ -93,7 +93,7 @@ Entrez votre nom de domaine dans la section `Reverse DNS` et cliquez sur `Valide
  
 Microsoft utilise une politique de liste blanche. Cela signifie qu'au départ, tout serveur se trouve sur une liste noire et une procédure spécifique est nécessaire pour faire valider votre serveur e-mail.
 
-Reportez-vous pour cela à la [procédure suivante](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656)
+Reportez-vous pour cela à la [procédure suivante](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656).
 
 #### Vers un serveur Gmail
 
