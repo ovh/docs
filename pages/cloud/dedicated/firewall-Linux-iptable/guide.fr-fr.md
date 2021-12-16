@@ -75,6 +75,10 @@ Iptables est installé par défaut sur la plupart des systèmes Linux. Pour conf
 ```sh
 sudo apt-get install iptable
 ```
+L'exemple de sortie dans Ubuntu confirme que la dernière version d'iptables est déjà présente :
+
+![version-iptables](images/step2-version-iptables.PNG){.thumbnail}
+
 
 En général, une commande iptables se présente comme suit :
 
