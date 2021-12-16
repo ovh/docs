@@ -1,7 +1,7 @@
 ---
 title: RACI Dedicated servers
-slug: RACI-dedicated-server
-section : RACI
+slug: raci-dedicated-server
+section: RACI
 excerpt: RACI between OVHcloud and the customer for Dedicated Servers
 ---
 
@@ -104,7 +104,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Ensure the security of management infrastructures (API, control pane) | R | RA |
+| Ensure the security of management infrastructures (API, control plane) | R | RA |
 | Ensure the security of OS, software and middleware installed on Dedicated Servers | RA |  |
 | Manage the security of data stored by the Customer on Dedicated Servers | RA |  |
 | Manage the physical security of equipment and infrastructures hosted at OVHcloud | I | RA |
