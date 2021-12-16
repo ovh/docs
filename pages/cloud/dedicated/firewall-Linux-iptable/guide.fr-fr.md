@@ -11,8 +11,8 @@ order: 7
 
 ## Objectif
 
-Votre serveur dédié est équipé d'un pare-feu. Les pare-feu créent une barrière entre un réseau de confiance et un réseau non fiable. 
-Les pare-feu fonctionnent en définissant des règles qui régissent le trafic autorisé et celui qui est bloqué. Le pare-feu utilitaire développé pour les systèmes Linux est iptables.
+Votre serveur dédié est équipé d'un pare-feu. Les pare-feux créent une barrière entre un réseau de confiance et un réseau non fiable. 
+Les pare-feux fonctionnent en définissant des règles qui régissent le trafic autorisé et celui qui est bloqué. Le pare-feu utilitaire développé pour les systèmes Linux est iptables.
 
 **Apprenez à sécuriser votre serveur dédié grâce à iptables.**
 
@@ -20,13 +20,14 @@ Les pare-feu fonctionnent en définissant des règles qui régissent le trafic a
 >
 > OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou avez des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
-- Être connecté en SSH (accès root) sous Linux.
+- Être connecté à un terminal (accès root ou sudo) sous Linux.
+- Le guide suivant indique les commandes pour une distribution Ubuntu Server.
 
 
 ## En pratique
@@ -67,18 +68,17 @@ Une fois les mises à jour terminées, votre système sera entièrement à jour.
 > [!primary]
 >
 > Il existe deux versions différentes d'iptables, pour IPv4 et IPv6. Les règles que nous couvrons dans ce tutoriel Linux iptables concernent IPv4.
-> Pour configurer iptables pour IPv6, vous devez utiliser l'utilitaire iptables6. Ces deux protocoles différents ne fonctionnent pas ensemble et doivent être configurés indépendamment
+> Pour configurer iptables pour IPv6, vous devez utiliser l'utilitaire iptables6. Ces deux protocoles différents ne fonctionnent pas ensemble et doivent être configurés indépendamment.
 >
 
 Iptables est installé par défaut sur la plupart des systèmes Linux. Pour confirmer qu'iptables est installé, utilisez la commande suivante :
 
 ```sh
-sudo apt-get install iptable
+sudo apt-get install iptables
 ```
 L'exemple de sortie dans Ubuntu confirme que la dernière version d'iptables est déjà présente :
 
 ![version-iptables](images/step2-version-iptables.PNG){.thumbnail}
-
 
 En général, une commande iptables se présente comme suit :
 
@@ -212,7 +212,7 @@ Remplacez <Number> par le numéro de ligne de règle que vous souhaitez supprime
  ### Étape 9 : Enregistrez vos modifications
 
 iptables ne conserve pas les règles que vous avez créées lors du redémarrage du système. 
-Chaque fois que vous configurez iptables sous Linux, toutes les modifications que vous apportez s'appliquent uniquement jusqu'au premier redémarrage.
+Chaque fois que vous configurez iptables sous Linux, toutes les modifications que vous apportez s'appliquent uniquement jusqu'au prochain redémarrage.
 
 Pour enregistrer les règles dans les systèmes basés sur Ubuntu, saisissez :
   
