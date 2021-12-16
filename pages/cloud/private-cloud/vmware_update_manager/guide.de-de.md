@@ -86,7 +86,7 @@ Die Anzeige der Konformitätswerte wird anschließend aktualisiert.
 
 ![Update](images/en09noncompliant.png){.thumbnail}
 
-Gehen Sie zurück in den Bereich `Attached Baselines`, wählen Sie alle zugewiesenen Basenlinien aus und klicken Sie auf `Stage`{.action}.
+Gehen Sie zurück in den Bereich `Attached Baselines`, wählen Sie alle zugewiesenen Baselines aus und klicken Sie auf `Stage`{.action}.
 
 ![Update](images/en10bisstage.png){.thumbnail}
 
@@ -98,7 +98,7 @@ Der Transferprozess wird abhängig von Anzahl und Größe der Patches gestartet 
 
 ![Update](images/en10terstage.png){.thumbnail}
 
-Wählen Sie im Bereich Bereich `Attached Baselines` alle zugewiesenen Basenlinien aus und klicken Sie auf `Remediate`{.action}.
+Wählen Sie im Bereich Bereich `Attached Baselines` alle zugewiesenen Baselines aus und klicken Sie auf `Remediate`{.action}.
 
 ![Update](images/en10remediate.png){.thumbnail}
 
