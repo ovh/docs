@@ -43,7 +43,7 @@ We will:
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-us/public-cloud/) in your OVHcloud account
+- a [Public Cloud project](https://us.ovhcloud.com/public-cloud/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 
