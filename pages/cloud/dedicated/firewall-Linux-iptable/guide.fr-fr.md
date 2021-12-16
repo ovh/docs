@@ -165,7 +165,6 @@ Vous pouvez REJETER le trafic à partir d'une plage d'adresses IP, avec la comma
 ```sh
 sudo iptables -A INPUT -m iprange --src-range votre@IP_debut-votre@IP_fin -j REJECT
 ```
-
 Les options iptables que nous avons utilisées dans les exemples fonctionnent comme suit :
 
 - -m : Correspond à l'option spécifiée.
