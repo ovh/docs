@@ -10,7 +10,7 @@ order: 6
 
 ## Objectif
 
-Pour protéger de manière optimale votre système, votre serveur Windows Server, dispose de son propre pare-feu intégré, ça paramétrage donnera la possibilité d’augmenter les niveaux de sécurité et de garantir ainsi la disponibilité et l’intégrité de tous les éléments hébergés sur le serveur, tels que les rôles, les services, les dossiers partagés.
+Pour protéger de manière optimale votre système, votre serveur Windows Server, dispose de son propre pare-feu intégré, ce paramétrage donnera la possibilité d’augmenter les niveaux de sécurité et de garantir ainsi la disponibilité et l’intégrité de tous les éléments hébergés sur le serveur, tels que les rôles, les services, les dossiers partagés.
 
 **Ce guide vous explique comment appliquer les règles du pare-feu sous Windows.**
 
@@ -18,7 +18,7 @@ Pour protéger de manière optimale votre système, votre serveur Windows Server
 >
 > OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou avez des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
@@ -78,7 +78,7 @@ Dans la fenêtre suivante, définissez le type de port à activer:
 >- UDP (User Datagram Protocol – Protocole de datagramme utilisateur)
 >C’est un protocole non orienté vers la connexion, son développement repose sur l’échange de datagrammes et facilite l’envoi de datagrammes à travers le réseau qu’il est nécessaire d’avoir préalablement établi une connexion avec la destination.
 >
->Nous pouvons également sélectionner la case `Tous les ports locaux `{.action} pour activer tous les ports TCP ou UDP sur le serveur qui n’est pas sécurisé, ou activer la case à cocher `Ports locaux spécifiques `{.action} pour déterminer quel port doit être autorisé sur la base de: aux exigences. 
+>Nous pouvons également sélectionner la case `Tous les ports locaux `{.action} pour activer tous les ports TCP ou UDP sur le serveur qui n’est pas sécurisé, ou activer la case à cocher `Ports locaux spécifiques `{.action} pour déterminer quel port doit être autorisé sur la base de vos exigences. 
 >
 
 
@@ -98,16 +98,16 @@ Sélectionnez l’option`Autoriser la connexion `{.action} et cliquez sur `Suiva
 
 ![Step6](images/step6.PNG){.thumbnail}
 
-### Etape 7 : Définir le profile et le nom du pare-feu à appliquer
+### Etape 7 : Définir le profil et le nom du pare-feu à appliquer
 
-- Définir le profile
+- Définir le profil
 
 Vous pouvez l'utiliser dans les profils public, de domaine ou privé.
 Vous pouvez tous les activer si vous le souhaiter.
 
 ![Step7](images/step7.PNG){.thumbnail}
 
-- Enfin, attribuez un nom et une description de la nouvelle règle (optionnel) afin de faciliter son utilisation:
+- Enfin, attribuez un nom et une description à la nouvelle règle (optionnel) afin de faciliter son utilisation:
 
 ![Step7_01](images/step7-01.PNG){.thumbnail}
 
