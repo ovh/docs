@@ -142,7 +142,7 @@ And then, choose `Hourly` billing mode for this second node pool.
 The node pool creation is now in progress. It should be available within a few minutes in your OVHcloud Control Panel.
 
 The second node pool will be first in `Installing` status.
-Wait, 'till its status change to `OK`.
+Wait, until its status change to `OK`.
 
 ![Status Installing](images/create-a-nodepool-6.png){.thumbnail}
 
