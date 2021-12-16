@@ -44,7 +44,7 @@ Uzupełnij wymagane informacje i kliknij `Finish`{.action}.
 
 Te same operacje są powtarzane na każdym datastore i dla każdej VM do ponownego zapisywania.
 
-Sprawdź parametry swoich wirtualnych maszyn (nazwa, [portgroup](../tworzenie-vlan-vxlan/), itp..) klikając prawym przyciskiem myszy na każdym z nich, a następnie wybierając `Edit Settings`{.action}.
+Sprawdź parametry swoich wirtualnych maszyn (nazwa, [portgroup](../creation-vlan/), itp..) klikając prawym przyciskiem myszy na każdym z nich, a następnie wybierając `Edit Settings`{.action}.
 
 ![zmień ustawienia](images/register-vmx-06.png){.thumbnail}
 

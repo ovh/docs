@@ -22,6 +22,7 @@ Welche PHP Versionen sind betroffen und wann werden diese deaktiviert?
 Die betroffenen PHP Versionen sind:
 
 |Version|Offizielles Supportende|Also bereits beendet seit mehr als...|
+|---|---|---|
 |4.X|7. August 2008|6 Jahren und 8 Monaten|
 |5.2|6. Januar 2011|4 Jahren und 3 Monaten|
 |5.3|14. August 2014|8 Monaten|
