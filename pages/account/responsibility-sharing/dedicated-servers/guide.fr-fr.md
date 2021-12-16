@@ -1,7 +1,7 @@
 ---
 title: RACI Serveurs Dédiés
-slug: RACI-serveurs-dedies
-section: RACI
+slug: raci-serveurs-dedies
+section: RACI Baremetal Cloud
 excerpt: RACI entre OVHcloud et le client pour l'utilisation des Serveurs Dédiés
 ---
 
@@ -61,7 +61,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Assurer l'accessibilité du Serveur Dédié sur le réseau |  | RA |
 | Administrer les applicatifs installés sur le Serveur Dédié | RA |  |
-| Décider d’ajouter / supprimer une option sur le Serveur Dédié, demander le remplacement un matériel défectueux sur le Serveur Bare Dédié | RA | I |
+| Décider d’ajouter / supprimer une option sur le Serveur Dédié, demander le remplacement d'un matériel défectueux sur le Serveur Dédié | RA | I |
 | Réaliser l’ajout / suppression des options / du matériel sur le Serveur Dédié | I | RA |
 | Adapter la configuration de l’OS aux ressources matérielles en présence | RA |  |
 
@@ -163,5 +163,5 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Opérer la destruction sécurisée des données sur les supports de stockage |  | RA |
-| Détruire les supports de stockage arrivés en fin de vie ou sur lesquels les processus de destruction sécurisé génèrent des erreurs |  | RA |
+| Détruire les supports de stockage arrivés en fin de vie ou sur lesquels le processus de destruction sécurisé génère des erreurs |  | RA |
 | Fournir une attestation de destruction (sur demande) | I | RA |
