@@ -43,7 +43,7 @@ We will:
 
 ## Requirements
 
-- a [Public Cloud project](https://us.ovhcloud.com/public-cloud/) in your OVHcloud account
+- a [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 
@@ -142,7 +142,7 @@ And then, choose `Hourly` billing mode for this second node pool.
 The node pool creation is now in progress. It should be available within a few minutes in your OVHcloud Control Panel.
 
 The second node pool will be first in `Installing` status.
-Wait, until its status change to `OK`.
+Wait until its status changes to `OK`.
 
 ![Status Installing](images/create-a-nodepool-6.png){.thumbnail}
 
@@ -161,7 +161,7 @@ hourly                                          b2-7     true          false    
 nodepool-cc40f90c-effb-4945-b7b9-05073725d62d   b2-7     false         true             false           3         3         3            3           0     100   164m
 ```
 
-Our two node pools exists and we can see the different configuration and autoscaling mode.
+Our two node pools exist and we can see the different configuration and autoscaling mode.
 
 Let's display our nodes. You should have 3 nodes running in our first node pool and 1 node in our "hourly" node pool:
 
