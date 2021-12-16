@@ -1,7 +1,7 @@
 ---
 title: RACI Serveurs Dédiés
 slug: raci-serveurs-dedies
-section: RACI Baremetal Cloud
+section: RACI Bare Metal Cloud
 excerpt: RACI entre OVHcloud et le client pour l'utilisation des Serveurs Dédiés
 ---
 
