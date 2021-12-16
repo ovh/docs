@@ -1,6 +1,6 @@
 ---
 title: Partage de responsabilités
-slug: responsibility-sharing
+slug: partage-responsabilite
 excerpt: Partage de responsabilités entre OVHcloud et ses clients
 Sections: RACI
 order: 6
