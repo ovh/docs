@@ -165,7 +165,6 @@ This will occur according to the following process:
 - The firewall rules will work for the new ports. Nothing will change for the existing ports.
 - The option to enable port security for existing ports will be activated.
 
-
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
