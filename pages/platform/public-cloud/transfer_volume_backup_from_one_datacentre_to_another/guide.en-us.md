@@ -11,7 +11,7 @@ order: 7
 
 ## Objective
 
-It may become necessary to move additional volumes from one datacentre to another, either because you would prefer to move to a newly-available datacentre, or because you want to migrate from [OVHcloud Labs](https://labs.ovh.com/){.external} (formerly RunAbove) to the [Public Cloud]({ovh_www}public-cloud/instances/){.external}.
+It may become necessary to move additional volumes from one datacentre to another, either because you would prefer to move to a newly-available datacentre, or because you want to migrate from [OVHcloud Labs](https://labs.ovh.com/){.external} (formerly RunAbove) to the [Public Cloud](https://www.ovhcloud.com/en/public-cloud/){.external}.
 
 **This guide will show you how to transfer a volume backup from one datacentre to another.**
 

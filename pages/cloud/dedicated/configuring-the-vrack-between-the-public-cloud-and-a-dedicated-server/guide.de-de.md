@@ -104,4 +104,4 @@ Konfigurieren Sie anschließend die Netzwerkinterfaces auf Ihrer neuen Public Cl
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

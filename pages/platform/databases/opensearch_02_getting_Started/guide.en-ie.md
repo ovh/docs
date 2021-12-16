@@ -82,7 +82,7 @@ Once the Public Cloud Databases for OpenSearch service is up and running, you wi
 
 The `General information`{.action} tab should inform you to create users and authorized IPs.
 
-[OpenSearch General information](images/configure_opensearch01.png){.thumbnail}
+![OpenSearch General information](images/configure_opensearch01.png){.thumbnail}
 
 #### Step 1 (mandatory): set up a user
 
@@ -207,7 +207,7 @@ For the following example, we will use the **Sample web logs**.
 
 Once imported, you can get access to the main OpenSearch dashboard created for this sample. Click on the View Data button:
 
-![Kibana Web Logs Sample](images/kibana_web_logs.png){.thumbnail}
+![Kibana Web Logs Sample](images/Kibana_web_logs.png){.thumbnail}
 
 Dashboard and queries can be edited directly through this web interface.
 

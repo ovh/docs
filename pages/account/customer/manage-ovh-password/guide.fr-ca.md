@@ -122,7 +122,7 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 ## Aller plus loin
 
-[Les recommandations de sécurité relatives aux mots de passe de l'ANSSI](https://www.ssi.gouv.fr/uploads/IMG/pdf/NP_MDP_NoteTech.pdf){.external}
+[Les recommandations de sécurité relatives aux mots de passe de l'ANSSI](https://www.ssi.gouv.fr/guide/recommandations-relatives-a-lauthentification-multifacteur-et-aux-mots-de-passe/){.external}
 
 [Les mesures de sécurité élémentaires relatives aux mots de passe définies par la CNIL](https://www.cnil.fr/fr/authentification-par-mot-de-passe-les-mesures-de-securite-elementaires){.external}
 
