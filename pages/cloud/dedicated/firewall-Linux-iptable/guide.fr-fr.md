@@ -11,7 +11,7 @@ order: 7
 
 ## Objectif
 
-Lorsque vous commandez votre serveur dédié, aucun protocole de sécurité n'est implémenté de manière native. Il vous revient donc de le sécuriser. En effet, OVHcloud ne pourra être tenu responsable d'un défaut de sécurisation de votre machine.
+Votre serveur dédié est équipé d'un pare-feu. Les pare-feu créent une barrière entre un réseau de confiance et un réseau non fiable. ils fonctionnent en définissant des règles qui régissent le trafic autorisé et celui qui est bloqué. Le pare-feu utilitaire développé pour les systèmes Linux est iptables.
 
 **Apprenez à sécuriser votre serveur dédié grâce à iptable.**
 
