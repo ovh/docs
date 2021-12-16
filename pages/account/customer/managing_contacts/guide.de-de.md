@@ -6,7 +6,13 @@ section: 'Erste Schritte'
 order: 6
 ---
 
-**Letzte Aktualisierung am 05.05.2020** 
+**Letzte Aktualisierung am 13.12.2021** 
+
+> [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+>
 
 ## Ziel
 
@@ -38,7 +44,7 @@ Die Kundenkennung (auch NIC-Handle) ist eine persönliche Kennung, die Sie per E
 
 ## In der praktischen Anwendung
 
-### Auf die Kontaktverwaltung zugreifen
+### Auf die Kontaktverwaltung zugreifen <a name="gestion_des_contacts"></a>
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Verwaltung der Kontakte`{.action} aus.
 
@@ -60,26 +66,26 @@ Wenn Sie auf der Seite der Kontaktverwaltung sind, klicken Sie rechts neben dem 
 
 Es wird eine E-Mail an die Kontakte versendet, die vom Änderungsprozess betroffen sind.
 
-#### Ich bin der Administrator-Kontakt
+> [!warning]
+>
+> Ein Kontaktwechsel ist nicht zulässig, wenn das betreffende alte oder neue Kundenkonto eine oder mehrere Rechnungen unbezahlt haben.
+>
+
+#### Ich bin der Administrator-Kontakt <a name="administrateur"></a>
 
 Als Administrator können Sie zahlreiche Aktionen zu den Kontakten eines Dienstes durchführen:
 
 - Sie können einen neuen Kontakt für die technische Verwaltung und/oder als Rechnungskontakt angeben. Die Änderung muss von Ihnen und dem neuen Kontakt bestätigt werden. Der bisherige Kontakt wird per E-Mail über die Änderung informiert, wenn diese wirksam ist.
-
 - Sie können die technische Verwaltung und/oder den Rechnungskontakt übernehmen. Die Änderungsanfrage muss von Ihnen bestätigt werden. Der bisherige Kontakt wird per E-Mail über die Änderung informiert. 
-
 - Sie können einen neuen Administrator-Kontakt an Ihrer Stelle ernennen. Die Änderung muss von Ihnen und dem neuen Kontakt bestätigt werden. 
 
-#### Ich bin technischer Kontakt
+#### Ich bin technischer Kontakt <a name="technique"></a>
 
 Sie können lediglich eine andere Person an Ihrer Stelle als technischen Kontakt ernennen. Die Änderung muss von Ihnen und dem neuen Kontakt bestätigt werden.
 
 #### Ich bin der Rechnungskontakt
 
 Sie können lediglich eine andere Person an Ihrer Stelle als Rechnungskontakt ernennen. Die Änderung muss von Ihnen und dem neuen Rechnungskontakt bestätigt werden.
-
-> [!warning]
-> Der bisherige sowie der neue Rechnungskontakt dürfen keine offenen Rechnungsbeträge haben.
 
 ### Bestätigung, Ablehnung oder Nachverfolgung einer Kontaktänderung
 
@@ -102,7 +108,21 @@ Wenn nur ein Kontakt die Änderung bestätigt hat, wird eine Meldung angezeigt, 
 
 ![Kontaktverwaltung](images/managing_contacts_07.png){.thumbnail}
 
-Wenn beide Kontakte die Änderungsanfrage bestätigt haben, wird die Änderung wenige Minuten später wirksam. Beide Kontakte erhalten dann eine E-Mail zur Bestätigung, dass die Anfrage ausgeführt wurde.
+Die Kontaktänderung wird einige Minuten nach Bestätigung der Anfrage durch die beiden Kontakte wirksam. Anschließend erhalten sie eine E-Mail, in der sie darüber informiert werden, dass die Anfrage erfolgreich bearbeitet wurde.
+
+### Beispiel: Ihrem Webmaster die technische Verwaltung Ihrer Website geben
+
+Sie haben gerade ein OVHcloud Abonnement abonniert, mit dem Sie Ihren eigenen [Onlineshop erstellen können](https://www.ovhcloud.com/de/web-hosting/ecommerce-website/). Sie haben einen unserer [Partner angerufen](https://partner.ovhcloud.com/de/directory/) und Sie um Zugriffsrechte auf Ihre OVHcloud Dienste gebeten, um Ihre Website zu erstellen.
+
+> [!warning]
+>
+> Wir empfehlen Ihnen, keinem Dritten die Zugangsdaten zu Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu geben.
+>
+Geben Sie in diesem Fall Ihrem Dienstleister das Recht auf ["technischen Kontakt"](#gestion_des_contacts) auf Ihrem OVHcloud Hosting. Dieser Zugang ermöglicht es Ihnen, die für das Online-Stellen Ihrer Website notwendigen Änderungen vorzunehmen (Hinzufügen einer Domain oder Subdomain zur Multisite, Installation eines 1-Klick-Moduls, Änderung des FTP-Passworts oder der Datenbank, Erstellung eines SSL-Zertifikats etc.).
+
+Wenn Ihre Domain nicht mit Ihrem Webhosting verbunden ist und Sie die notwendigen Operationen Ihrem Webmaster anvertrauen möchten, geben Sie ihm auch die Berechtigung "[technischer Kontakt](#gestion_des_contacts)" zur [DNS Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/) Ihrer Domain.
+
+Die Berechtigung ["technischer Kontakt"](#gestion_des_contacts) ermöglicht keine Änderung der Administrator- oder Rechnungskontakte einer Dienstleistung. Er gewährt Ihrem Webmaster keinen Zugriff auf Ihre Rechnungen oder Bestellungen, die Verlängerung Ihrer Dienstleistungen oder Zahlungsmittel. Ebenso wenig wird er es ihm erlauben, die [Verwaltung Ihrer Domain auf einen anderen Hosting](https://docs.ovh.com/de/domains/ausgehender-transfer-einer-generischen-oder-geografischen-domain/)-Anbieter zu übertragen oder den [Inhaber zu ändern](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/). Als [Administrator-Kontakt](#administrateur) können Sie jederzeit den "[technischen Kontakt](#technique)" Ihrer Dienstleistung abrufen.
 
 ### Sonderfall bei Domaininhabern
 
@@ -116,5 +136,9 @@ Die Weiterverfolgung jedes Vorgangs erfolgt per E-Mail, und es ist eine Identit�
 
 
 ## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -6,13 +6,19 @@ section: 'Getting started'
 order: 6
 ---
 
-**Last updated 10th April 2020** 
+**Last updated 13th December 2021** 
 
 ## Objective
 
 Most services created with OVHcloud are managed by several contacts. Each of these contacts is linked to a unique NIC handle (Customer ID). 
 
 **Find out how to manage contacts for your OVHcloud services.**
+
+> [!warning]
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>
 
 ## Definition
 
@@ -38,7 +44,7 @@ The NIC handle is a personal username that you receive via email when you create
 
 ## Instructions
 
-### Access contact management.
+### Access contact management. <a name="gestion_des_contacts"></a>
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `Contact management`{.action}.
 
@@ -60,26 +66,26 @@ Once you are on the Contacts page, click `...`{.action} to the right of the serv
 
 An email will be sent to the contacts you have added once you confirm this change.
 
-#### Administrative contact
+> [!warning]
+>
+> No change of contact will be allowed if the old or new customer account concerned has one or more unpaid invoices.
+>
+
+#### Administrative contact <a name="administrateur"></a>
 
 As an administrator, you can make several changes to contacts for a service. This includes:
 
 - Naming a new technical and/or billing contact. Validation is required from both you and the new contact. The previous contact will receive an email informing them of this change, if it is successful.
-
 - Managing technical and/or billing aspects. You need to confirm this request. The previous contact will receive an email informing them of this change. 
-
 - Naming a new administrative contact to replace you. Confirmation is required from both you and the new contact. 
 
-#### Technical contact
+#### Technical contact <a name="technique"></a>
 
 You can only add another technical contact to replace you. Confirmation is required from both you and the new contact.
 
 #### Billing contact
 
 You can only add another billing contact to replace you. Confirmation is required from both you and the new contact.
-
-> [!warning]
-> The old and new billing contacts must be up-to-date with their payments.
 
 ### Confirm, decline or track a contact change.
 
@@ -102,7 +108,21 @@ If only one contact has confirmed the change, a message will appear confirming t
 
 ![Contact management](images/managing_contacts_07.png){.thumbnail}
 
-Once both contacts have confirmed the request, the change will be successful within a few minutes. The two contacts will receive an email confirming that the request has been successfully processed.
+The contact change will take effect a few minutes after both contacts have validated the request. They will then receive an email informing them that the request has been processed.
+
+### Example: giving your website technical management to your webmaster
+
+You have just signed up to an OVHcloud subscription, so you can set up your own [online store](https://www.ovhcloud.com/en-gb/web-hosting/ecommerce-website/). You have contacted one of our [partners](https://partner.ovhcloud.com/en-gb/directory/), who are requesting access rights to your OVHcloud services, in order to start building your website.
+
+> [!warning]
+>
+> We do not recommend that you give any third parties access credentials to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+>
+In this situation, give your service provider the right to “[technical contact”](#gestion_des_contacts) on your OVHcloud hosting plan. With this access, they can carry out the operations required to put your website online (adding a domain or subdomain to the multisite, installing a 1-click module, changing the FTP password or the database, creating an SSL certificate, etc.).
+
+If your domain name is not linked to your hosting plan, and you wish to entrust the necessary operations to your webmaster, give him or her the “[technical contact](#gestion_des_contacts)” right on your [domain’s DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+
+You cannot change a service’s admin or billing contacts under the ‘[technical contact’](#gestion_des_contacts) right. It will not give your webmaster access to your invoices, orders, renewal of your services or payment methods. They will not be able to [transfer the management of your domain name](https://docs.ovh.com/gb/en/domains/outgoing-transfer-of-generic-or-geographical-domain-name/) to another hosting provider or [change its owner](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/). Finally, as an [administrative contact](#administrateur), you can retrieve your service’s ‘[technical contact’](#technique) at any time.
 
 ### Special case of a domain owner
 
@@ -115,5 +135,9 @@ When you ordered an OVHcloud service, you defined an owner for it. If the domain
 Each procedure is carried out by email and an identity check will be required. Detailed instructions will be provided throughout each procedure.
 
 ## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
