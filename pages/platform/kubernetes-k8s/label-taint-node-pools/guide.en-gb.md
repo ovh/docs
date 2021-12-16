@@ -161,9 +161,9 @@ hourly                                          b2-7     true          false    
 nodepool-cc40f90c-effb-4945-b7b9-05073725d62d   b2-7     false         true             false           3         3         3            3           0     100   164m
 ```
 
-Perfect, our two node pools exists and we can see the different configuration and autoscaling mode.
+Our two node pools exists and we can see the different configuration and autoscaling mode.
 
-And let's display our nodes. You should have 3 nodes running in our first node pool and 1 node in our "hourly" node pool:
+Let's display our nodes. You should have 3 nodes running in our first node pool and 1 node in our "hourly" node pool:
 
 ```bash
 $ kubectl get node
@@ -174,7 +174,7 @@ nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   163m    v1.22.2
 nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   161m    v1.22.2
 ```
 
-If you don't do anything during several minutes, the AutoScaling in "hourly" node pool will terminate the node because of innactivity:
+If you don't do anything during several minutes, the AutoScaling in "hourly" node pool will terminate the node because of inactivity:
 
 ```bash
 $ kubectl get node
@@ -183,8 +183,6 @@ nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   3h18m   v1.22.2
 nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   3h20m   v1.22.2
 nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   3h18m   v1.22.2
 ```
-
-Perfect!
 
 ### Deploying our application
 
@@ -280,7 +278,7 @@ hello-world-deployment-585c6cfcd8-kntp9   0/1     ContainerCreating   0         
 hello-world-deployment-585c6cfcd8-kntp9   1/1     Running             0          3m45s
 ```
 
-You have to wait several minutes in order to have a new Node that match with your criterias.
+You have to wait several minutes in order to have a new Node that matches your criteria.
 
 ```bash
 $ kubectl get node
@@ -303,7 +301,7 @@ With this feature you can choose and control where you want to deploy your appli
 
 ## Where do we go from here?
 
-In this tutorial you saw how to create, in your OVHcloud Managed Kubernetes cluster, several kind of node pools and how to deploy your applications easily where we want to.
+In this tutorial you saw how to create, in your OVHcloud Managed Kubernetes cluster, several kinds of node pools and how to deploy your applications easily where you want to.
 
 But do you know that you can do several others Node operations like taint, drain and cordon thanks to Node pool labels propagation to the Nodes?
 
