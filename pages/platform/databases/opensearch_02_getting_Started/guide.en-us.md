@@ -66,8 +66,6 @@ Take note of the pricing information and click on `Next`{.action} to continue.
 You can name your database in this step and decide to attach a public or private network. 
 Please note that attaching to a private network is a feature we are currently working on and public is the only network option available at this time.
 
-![Configure options](images/creation_opensearch05.png){.thumbnail}
-
 #### Step 6: Review and confirm
 
 The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/).
