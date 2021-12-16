@@ -1,9 +1,9 @@
 ---
 title: Responsibility sharing
 slug: responsibility-sharing
-excerpt: RACI specifying responsibility sharing with customers
-Sections: 
-order: 
+excerpt: Responsibility sharing between OVHcloud and its clients
+Sections: RACI
+order: 6
 ---
 
 >
