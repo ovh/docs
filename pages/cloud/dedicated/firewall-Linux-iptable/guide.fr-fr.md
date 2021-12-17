@@ -63,7 +63,7 @@ sudo apt-get upgrade
 Une fois les mises à jour terminées, votre système sera entièrement à jour. Cette opération doit être effectuée de manière régulière.
 
 
-### Étape 2 : Installation du pare-feu iptables linux
+### Étape 2 : Installation du pare-feu iptables sous Ubuntu
 
 > [!primary]
 >
