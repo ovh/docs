@@ -191,14 +191,22 @@ L'option -A ajoute une nouvelle règle à la chaîne. Si une connexion passe par
 
 ### Étape 8 : Supprimer une règle
 
-
-Vous pouvez utiliser l'option -F pour effacer toutes les règles de pare-feu iptables. 
 Une méthode plus précise consiste à supprimer le numéro de ligne d'une règle.
+
+> [!warning]
+> 
+>A ne pas utiliser sur un serveur distant !
+>
+>```sh
+>sudo iptables -P INPUT DROP 
+>```
+>
 Tout d'abord, répertoriez toutes les règles en saisissant ce qui suit :
 
 ```sh
 sudo iptables -L --line-numbers
 ```
+
 ![line-numbers](images/Step7-all-rules.PNG){.thumbnail}
 
 Recherchez la ligne de la règle de pare-feu que vous souhaitez supprimer et exécutez cette commande :
