@@ -6,11 +6,12 @@ section: Network Management
 order: 7
 ---
 
-**Last updated 7th October 2021**
+**Last updated 9th December 2021**
 
 ## Objective
 
-Failover IP addresses can be moved between the services you use. This provides an advantage since you can maintain your IP reputation, your SEO and improve the continuity of service of your applications and systems.<br>
+Failover IP addresses can be moved between the services you use. This provides an advantage since you can maintain your IP reputation, your SEO and improve the continuity of service of your applications and systems.
+
 With this technology, you can switch IP addresses from one solution to another in less than a minute, with virtually no interruption to services for your users. It is useful for service migrations (e.g. moving projects from development to production), or when switching to a backup server during a technical issue.
 
 > [!primary]
@@ -22,9 +23,15 @@ With this technology, you can switch IP addresses from one solution to another i
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) in your OVHcloud account
-- a [failover IP address](https://www.ovhcloud.com/en-sg/bare-metal/ip/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) in your OVHcloud account
+- A [failover IP address](https://www.ovhcloud.com/en-sg/bare-metal/ip/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+
+> [!warning]
+> If the failover IP address or one of the block IP addresses has a virtual MAC attached, the target server must support the vMAC functionality.
+> See [this guide](https://docs.ovh.com/sg/en/dedicated/network-support-virtual-mac/) for details.
+>
+> Otherwise, the virtual MACs must be removed from the failover IPs before the transfer.
 
 ## Instructions
 

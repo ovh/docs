@@ -6,11 +6,12 @@ section: Redes & IP
 order: 7
 ---
 
-**Última atualização: 12/03/2021**
+**Última atualização: 09/12/2021**
 
 ## Objetivo
 
 Os IP Failover podem ser migrados entre os serviços que utiliza. O interesse é não perder a sua reputação, o seu referenciamento e melhorar a continuidade do serviço das suas aplicações e sistemas.
+
 Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra em menos de um minuto, praticamente sem qualquer interrupção para os seus utilizadores. Pode ser utilizada durante as migrações de serviços (deslocação dos projetos do ambiente de desenvolvimento para o de produção, por exemplo) ou aquando da migração para um servidor de recurso em caso de falha.
 
 > [!primary]
@@ -24,7 +25,13 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 
 - Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external} na Área de Cliente OVHcloud.
 - Dispor de um [endereço IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+> [!warning]
+> Se o endereço IP Fail Over, ou um dos endereços IP do bloco, tem um MAC virtual afetado, o servidor alvo deve suportar a funcionalidade dos MAC virtuais.
+> Consulte [este guia](https://docs.ovh.com/pt/dedicated/network-support-virtual-mac/) para saber mais.
+>
+> Caso contrário, os MAC virtuais devem ser eliminados dos IP Failover antes da deslocação.
 
 ## Instruções
 

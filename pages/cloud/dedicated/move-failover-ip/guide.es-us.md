@@ -10,11 +10,12 @@ order: 7
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 19/10/2021**
+**Última actualización: 09/12/2021**
 
 ## Objetivo
 
 Las IP failover pueden moverse entre los servicios que utilice. El objetivo es no perder su reputación, su posicionamiento y mejorar la continuidad del servicio de sus aplicaciones y sistemas.
+
 Esta tecnología le permite intercambiar las direcciones IP de una solución a otra en menos de un minuto, prácticamente sin interrupciones para sus usuarios. Asimismo, este mecanismo también puede utilizarse durante la migración de servicios, transfiriendo los proyectos del entorno de desarrollo al de producción, o durante la migración hacia un servidor de backup en caso de fallo.
 
 > [!primary]
@@ -29,6 +30,12 @@ Esta tecnología le permite intercambiar las direcciones IP de una solución a o
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} en el área de cliente de OVHcloud.
 - Tener una [dirección IP failover](https://www.ovhcloud.com/es/bare-metal/ip/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+
+> [!warning]
+> Si la dirección IP failover, o una de las direcciones IP del bloque, tiene una MAC virtual afectada, el servidor de destino debe soportar la funcionalidad de las MAC virtuales.
+> Para ello, consulte [esta guía](https://docs.ovh.com/us/es/dedicated/network-support-virtual-mac/).
+>
+> En caso contrario, las MAC virtuales deben eliminarse de las IP failover antes de mover.
 
 ## Procedimiento
 
