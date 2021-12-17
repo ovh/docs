@@ -9,23 +9,23 @@ section: 'Redes & IP'
 
 ## Sumário
 
-A OVH permite-lhe associar um endereço MAC virtual a um endereço de IP, de modo a poder instalar máquinas virtuais com uma configuração bridge no seu servidor.
+A OVHcloud permite-lhe associar um endereço MAC virtual a um endereço de IP, de modo a poder instalar máquinas virtuais com uma configuração bridge no seu servidor.
 
 **Este manual explica como criar um endereço MAC virtual e como associá-lo a um IP Fail-over.**
 
 
 ## Requisitos
 
-* Dispor de um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}.
-* Dispor de um [endereço de IP Fail-over](https://www.ovh.pt/servidores_dedicados/ip_failover.xml){.external} ou de um bloco de IP Fail-over (RIPE).
-* Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-
+- Dispor de um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}.
+- Dispor de um [endereço de IP Fail-over](https://www.ovh.pt/servidores_dedicados/ip_failover.xml){.external} ou de um bloco de IP Fail-over (RIPE).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- O seu servidor deve suportar os MAC virtuais. Consulte [este guia](https://docs.ovh.com/pt/dedicated/network-support-virtual-mac/) para saber mais.
 
 ## Instruções
 
 ### Atribuir um endereço MAC
 
-Depois de aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no menu `Serviços Dedicados`{.action} e na secção `IP`{.action} na coluna à esquerda da página.
+Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no menu `Serviços Dedicados`{.action} e na secção `IP`{.action} na coluna à esquerda da página.
 
 ![IPFO](images/virtual_mac_01.png){.thumbnail}
 
@@ -63,4 +63,4 @@ Para concluir, clique no botão `...`{.action} à direita e em `Eliminar um MAC 
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

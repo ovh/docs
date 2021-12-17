@@ -9,17 +9,17 @@ section: 'Sieć & IP'
 
 ## Wprowadzenie
 
-OVH umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś mógł wdrażać na Twoim serwerze wirtualne maszyny z konfiguracją mostka sieciowego.
+OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś mógł wdrażać na Twoim serwerze wirtualne maszyny z konfiguracją mostka sieciowego.
 
 **Niniejszy przewodnik wyjaśnia, jak utworzyć wirtualny adres MAC i jak go powiązać z adresem IP Failover.**
 
 
 ## Wymagania początkowe
 
-* Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external}
-* Posiadanie [adresu IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external} lub bloku IP Failover (RIPE)
-* Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
-
+- Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external}
+- Posiadanie [adresu IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external} lub bloku IP Failover (RIPE)
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Twój serwer musi obsługiwać wirtualne adresy MAC. Zapoznaj się [z tym przewodnikiem](https://docs.ovh.com/pl/dedicated/network-support-virtual-mac/).
 
 ## W praktyce
 
