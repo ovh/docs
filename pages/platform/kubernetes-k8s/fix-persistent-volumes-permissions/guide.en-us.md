@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting permission errors when enabling persistence
+excerpt: ''
 slug: persistentvolumes-permission-errors
 section: Diagnostics
 ---
