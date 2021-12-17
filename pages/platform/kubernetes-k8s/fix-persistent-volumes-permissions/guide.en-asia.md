@@ -91,7 +91,7 @@ For example with the Helm Chart `bitnami/wordpress` which is concerned by this b
 ➱ helm install my-first-k8s-wordpress bitnami/wordpress
 ```
 
-You can see, that the pods are now up and running, which means that the permission errors related to the `persistantVolumes` is now fixed.
+You can see, that the pods are now up and running, which means that the permission errors related to the `persistentVolumes` is now fixed.
 
 ```bash
 ➱ kubectl get pods
