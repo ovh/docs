@@ -62,9 +62,9 @@ Quando aparecer a caixa de diálogo “Adicionar um MAC virtual”, selecione um
 > A eliminação de um endereço MAC é definitiva: não será possível recuperá-lo.
 > 
 
-Para eliminar um endereço MAC virtual associado a um IP Fail-over, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no menu `Bare Metal Cloud`{.action} e selecione a secção `IP`{.action}. Escolha o servidor em causa, de modo a aparecer o IP Fail-over (ou o bloco de IP) a ele associado.
+Para eliminar um endereço MAC virtual associado a um IP Fail-over, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no menu `Bare Metal Cloud`{.action} e selecione a secção `IP`{.action}. Escolha o servidor em causa, de modo a aparecer o IP Fail-over (ou o bloco de IP) a ele associado.
 
-Para concluir, clique no botão `...`{.action} à direita e em `Eliminar um MAC virtual`{.action}.
+Para concluir, clique no botão `...`{.action} à direita e em `Eliminar o MAC Virtual`{.action}.
 
 ## Quer saber mais?
 
