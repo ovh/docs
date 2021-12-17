@@ -25,11 +25,11 @@ The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage you
 
 Navigate to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and log on with your administrative credentials.
 
-![LOGIN](images/en01ogin.png){.thumbnail}
+![LOGIN](images/en01login.png){.thumbnail}
 
 ### Hosted Private Cloud View
 
-Go to the `Hosted Private Cloud`{.action} tab and select your service under `Private Cloud`{.action} in the left-hand navigation bar. You can rename your infrastructure by clicking the ![Pen](images/buttonpen.png){.thumbnail} in the center of the page.
+Go to the `Hosted Private Cloud`{.action} tab and select your service under `Private Cloud`{.action} in the left-hand navigation bar. You can rename your infrastructure by clicking the `Pencil`{.action} button in the center of the page.
 
 ![HOSTED](images/en02dashboard.png){.thumbnail}
 
@@ -37,16 +37,16 @@ Go to the `Hosted Private Cloud`{.action} tab and select your service under `Pri
 
 The General Information tab gives you an overview of your services:
 
-- The "Description" field is editable through the ![Dots](images/buttondots.png){.thumbnail} button
+- The "Description" field is editable through the `...`{.action} button 
 - The "Software solution" shows the vCSA version installed
 - The "Location" of your Hosted Private Cloud
 - The "Access policy" of your infrastructure (`Open` or `Restricted`)
 - The "Number of datacenters" in your infrastructure
-- The "Number of IP blocks" you own and the option to order more through the ![Dots](images/buttondots.png){.thumbnail} button 
+- The "Number of IP blocks" you own and the option to order more through the `...`{.action} button  
 - Links to your management interfaces
-- Your "Options and compliance" tab shows your enabled and disabled options with direct access to modification though the ![Dots](images/buttondots.png){.thumbnail} buttons
+- Your "Options and compliance" tab shows your enabled and disabled options with direct access to modification though the `...`{.action} buttons
 - The "Mailing list" section allows you to sign up to the OVHcloud Hosted Private Cloud mailing list
-- The "Renewal" date section also allows for license ordering or service cancellation through the ![Dots](images/buttondots.png){.thumbnail} button
+- The "Renewal" date section also allows for license ordering or service cancellation through the `...`{.action} button
 
 ![GENERAL](images/en03general.png){.thumbnail}
 
@@ -63,7 +63,7 @@ The Users tab lists all the accounts which can log in to vSphere and allows the 
 
 ![USERS](images/en05users.png){.thumbnail}
 
-You have several options when you click on the ![Dots](images/buttondots.png){.thumbnail} button next to a user
+You have several options when you click on the `...`{.action} button next to a user
 
 - Edit the entries in the summary table
 - See/Change the user's rights for each Datacenter
@@ -74,7 +74,7 @@ Clicking `See/Change the rights for each DC`{.action} will take you to the right
 
 ![RIGHTS](images/en06rights.png){.thumbnail}
 
-Click ![Dots](images/buttondots.png){.thumbnail} and then `Modify rights`{.action} to edit them.
+Click `...`{.action} and then `Modify rights`{.action} to edit them.
 
 - **vSphere access**: to set the global rights for a user in vSphere
 
@@ -126,7 +126,7 @@ Check out [Enabling Virtual Machine Encryption](https://docs.ovh.com/gb/en/priva
 #### Operations
 
 The Operations tab keeps a log of all tasks executed on your infrastructure.<br>
-You can sort the list by types and if the tasks are actionable, you will have options available through the ![Dots](images/buttondots.png){.thumbnail} button.
+You can sort the list by types and if the tasks are actionable, you will have options available through the `...`{.action} button.
 
 ![OPS](images/en10ops.png){.thumbnail}
 
@@ -146,7 +146,7 @@ More information on the [pricing page](https://www.ovhcloud.com/en-gb/enterprise
 
 A Hosted Private Cloud may include multiple virtual datacenters.<br>
 The left-hand navigation bar will list them when you select a Hosted Private Cloud service. Click on one to open its management page.<br>
-The datacenter name and description can be customized by clicking the ![Pen](images/buttonpen.png){.thumbnail} button.
+The datacenter name and description can be customized by clicking the `Pencil`{.action} button.
 
 ![DATACENTER](images/en12datacenter.png){.thumbnail}
 
@@ -154,7 +154,7 @@ The datacenter name and description can be customized by clicking the ![Pen](ima
 
 The General Information tab gives you an overview of your services:
 
-- The "Name" and "Description" fields are editable via the ![Dots](images/buttondots.png){.thumbnail} button
+- The "Name" and "Description" fields are editable via the `...`{.action} button
 - The "Range" shows the VMware services suscribed
 - The "Hosts" and "Datastores" fields give you the quantity of each in your Hosted Private Cloud
 - The "VMs backed up" shows your backup solution status
@@ -166,7 +166,7 @@ The General Information tab gives you an overview of your services:
 #### Hosts
 
 The Hosts tab gives a summary of your hosts in the selected datacenter.<br>
-*The billing mode is switchable via the ![Dots](images/buttondots.png){.thumbnail} button if the billing mode is set to hourly*<br>
+*The billing mode is switchable via the `...`{.action} button if the billing mode is set to hourly*<br>
 You can also order one host via the `Order a host`{.action} button.
 
 ![HOSTS](images/en14hosts.png){.thumbnail}
@@ -174,7 +174,7 @@ You can also order one host via the `Order a host`{.action} button.
 #### Datastores
 
 The Datastores tab gives a summary of your datastores in the selected datacenter.<br>
-*The datastore mode is switchable to global via the ![Dots](images/buttondots.png){.thumbnail} button*<br>
+*The datastore mode is switchable to global via the `...`{.action} button*<br>
 You can also order a datastore via the `Order a datastore`{.action} button.
 
 ![DATASTORES](images/en15datastores.png){.thumbnail}
