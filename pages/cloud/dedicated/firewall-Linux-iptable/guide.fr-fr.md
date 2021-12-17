@@ -221,7 +221,6 @@ Remplacez <Number> par le numéro de ligne de règle que vous souhaitez supprime
 
 iptables ne conserve pas les règles que vous avez créées lors du redémarrage du système. 
 Chaque fois que vous configurez iptables sous Linux, toutes les modifications que vous apportez s'appliquent uniquement jusqu'au prochain redémarrage.
-
 Pour enregistrer les règles dans les systèmes basés sur Ubuntu, saisissez :
   
 ```sh
