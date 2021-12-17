@@ -110,19 +110,20 @@ Wenn nur ein Kontakt die Änderung bestätigt hat, wird eine Meldung angezeigt, 
 
 Die Kontaktänderung wird einige Minuten nach Bestätigung der Anfrage durch die beiden Kontakte wirksam. Anschließend erhalten sie eine E-Mail, in der sie darüber informiert werden, dass die Anfrage erfolgreich bearbeitet wurde.
 
-### Beispiel: Ihrem Webmaster die technische Verwaltung Ihrer Website geben
+### Beispiel: Ihrem Webmaster die technische Verwaltung Ihrer Website erlauben
 
-Sie haben gerade ein OVHcloud Abonnement abonniert, mit dem Sie Ihren eigenen [Onlineshop erstellen können](https://www.ovhcloud.com/de/web-hosting/ecommerce-website/). Sie haben einen unserer [Partner angerufen](https://partner.ovhcloud.com/de/directory/) und Sie um Zugriffsrechte auf Ihre OVHcloud Dienste gebeten, um Ihre Website zu erstellen.
+Sie haben gerade einen OVHcloud Dienst abonniert, um Ihren eigenen [Onlineshop zu hosten](https://www.ovhcloud.com/de/web-hosting/ecommerce-website/). Sie haben einen unserer [Partner kontaktiert](https://partner.ovhcloud.com/de/directory/) und Sie werden um Zugriffsrechte auf Ihre OVHcloud Dienste gebeten, um Ihre Website erstellen zu können.
 
 > [!warning]
 >
-> Wir empfehlen Ihnen, keinem Dritten die Zugangsdaten zu Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu geben.
+> Wir empfehlen, Dritten niemals die Zugangsdaten zu Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu überlassen.
 >
-Geben Sie in diesem Fall Ihrem Dienstleister das Recht auf ["technischen Kontakt"](#gestion_des_contacts) auf Ihrem OVHcloud Hosting. Dieser Zugang ermöglicht es Ihnen, die für das Online-Stellen Ihrer Website notwendigen Änderungen vorzunehmen (Hinzufügen einer Domain oder Subdomain zur Multisite, Installation eines 1-Klick-Moduls, Änderung des FTP-Passworts oder der Datenbank, Erstellung eines SSL-Zertifikats etc.).
 
-Wenn Ihre Domain nicht mit Ihrem Webhosting verbunden ist und Sie die notwendigen Operationen Ihrem Webmaster anvertrauen möchten, geben Sie ihm auch die Berechtigung "[technischer Kontakt](#gestion_des_contacts)" zur [DNS Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/) Ihrer Domain.
+Geben Sie in diesem Fall Ihrem Dienstleister die Rolle ["technischer Kontakt"](#gestion_des_contacts) für Ihr OVHcloud Webhosting. Dieser Zugang ermöglicht es, die für das Bereitstellen Ihrer Website notwendigen Änderungen vorzunehmen (Hinzufügen von Domain oder Subdomain zur Multisite, Installation eines 1-Klick-Moduls, Änderung von FTP- und Datenbank-Passwörtern, Erstellung von SSL-Zertifikaten, etc.).
 
-Die Berechtigung ["technischer Kontakt"](#gestion_des_contacts) ermöglicht keine Änderung der Administrator- oder Rechnungskontakte einer Dienstleistung. Er gewährt Ihrem Webmaster keinen Zugriff auf Ihre Rechnungen oder Bestellungen, die Verlängerung Ihrer Dienstleistungen oder Zahlungsmittel. Ebenso wenig wird er es ihm erlauben, die [Verwaltung Ihrer Domain auf einen anderen Hosting](https://docs.ovh.com/de/domains/ausgehender-transfer-einer-generischen-oder-geografischen-domain/)-Anbieter zu übertragen oder den [Inhaber zu ändern](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/). Als [Administrator-Kontakt](#administrateur) können Sie jederzeit den "[technischen Kontakt](#technique)" Ihrer Dienstleistung abrufen.
+Wenn Ihre Domain noch nicht mit Ihrem Webhosting verbunden ist und Sie die notwendigen Schritte hierzu Ihrem Webmaster anvertrauen möchten, vergeben Sie ebenfalls die Berechtigung ["technischer Kontakt"](#gestion_des_contacts) für die [DNS Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/) Ihres Domainnamens.
+
+Die Zugangsberechtigung eines ["technischen Kontakts"](#gestion_des_contacts) ermöglicht keine Änderung der Administrator- oder Rechnungskontakte einer Dienstleistung. Er gewährt Ihrem Webmaster keinen Zugriff auf Ihre Rechnungen oder Bestellungen, die Verlängerung Ihrer Dienstleistungen oder Zahlungsmittel. Ebenfalls nicht möglich ist es, die [Verwaltung Ihres Domainnamens auf einen anderen Hosting-Provider zu übertragen](https://docs.ovh.com/de/domains/ausgehender-transfer-einer-generischen-oder-geografischen-domain/) oder den [Inhaber zu ändern](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/). Weiterhin können Sie als [Administrator-Kontakt](#administrateur) Ihrer Dienste jederzeit den ["technischen Kontakt"](#technique)" Ihrer Dienstleistung ändern.
 
 ### Sonderfall bei Domaininhabern
 
