@@ -5,11 +5,11 @@ excerpt: This guide will show you how to create a virtual MAC address and assign
 section: Network management
 ---
 
-**Last updated 2021/12/16**
+**Last updated 16th December 2021**
 
 ## Objective
 
-OVH allows you to associate a virtual MAC address with an IP address, so that you can set up virtual machines with a bridge configuration on your server.
+OVHcloud allows you to associate a virtual MAC address with an IP address, so that you can set up virtual machines with a bridge configuration on your server.
 
 **This guide will show you how to create a virtual MAC address and assign it to a failover IP address.**
 
@@ -17,7 +17,7 @@ OVH allows you to associate a virtual MAC address with an IP address, so that yo
 
 * a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}
 * a [failover IP address](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external} or a failover IP block (RIPE)
-* access to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+* access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 
 ## Instructions
@@ -39,7 +39,7 @@ When the 'Add a virtual MAC' box appears, select a type from the dropdown list, 
 
 > [!primary]
 >
-> **Type:** Refers to the virtual MAC address type ('VmWare' will be a MAC address made for the VmWare ESXi system, while 'OVH' will be for any other type of virtualisation system).
+> **Type:** Refers to the virtual MAC address type ('VmWare' will be a MAC address made for the VmWare ESXi system, while 'OVHcloud' will be for any other type of virtualisation system).
 >
 > **Name of virtual machine:** Refers to the desired name for the virtual MAC address, in order to make it easy to identify this IP/MAC pair in the future.
 >
@@ -59,7 +59,7 @@ When the 'Add a virtual MAC' box appears, select a type from the dropdown list, 
 > When a MAC address is deleted, it will not be recoverable.
 > 
 
-To remove a virtual MAC address associated with a failover IP, you must first connect to your [control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Once connected, click on the `Bare metal cloud`{.action} menu and then click the `IP`{.action} section on the left side of the page. Select the correct server, so that the failover IP (or IP block) attached to it appears.
+To remove a virtual MAC address associated with a failover IP, you must first connect to your [control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Once connected, click on the `Bare Metal Cloud`{.action} menu and then click the `IP`{.action} section on the left side of the page. Select the correct server, so that the failover IP (or IP block) attached to it appears.
 
 Finally, click on the `...`{.action} button on the right, then click `Delete the Virtual MAC`{.action}.
 

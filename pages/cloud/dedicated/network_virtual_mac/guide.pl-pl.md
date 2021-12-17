@@ -29,7 +29,7 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 
 ### Przypisanie adresu MAC
 
-Po zalogowaniu się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} kliknij menu `Bare Metal Cloud`{.action}, po czym kliknij sekcję `IP`{.action} w kolumnie po lewej stronie.
+Po zalogowaniu się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} kliknij menu `Bare Metal Cloud`{.action}, po czym kliknij sekcję `IP`{.action} w kolumnie po lewej stronie.
 
 ![IPFO](images/ipsection.png){.thumbnail}
 

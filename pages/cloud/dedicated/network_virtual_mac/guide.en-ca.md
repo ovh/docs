@@ -5,7 +5,7 @@ excerpt: This guide will show you how to create a virtual MAC address and assign
 section: Network Management
 ---
 
-**Last updated 2021/12/16**
+**Last updated 16th December 2021**
 
 ## Objective
 
@@ -58,7 +58,7 @@ When the 'Add a virtual MAC' box appears, select a type from the dropdown list, 
 > When a MAC address is deleted, it will not be recoverable.
 > 
 
-To remove a virtual MAC address associated with a failover IP, you must first connect to your [control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. Once connected, click on the `Bare metal cloud`{.action} menu and then click the `IP`{.action} section on the left side of the page. Select the correct server, so that the failover IP (or IP block) attached to it appears.
+To remove a virtual MAC address associated with a failover IP, you must first connect to your [control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. Once connected, click on the `Bare Metal Cloud`{.action} menu and then click the `IP`{.action} section on the left side of the page. Select the correct server, so that the failover IP (or IP block) attached to it appears.
 
 Finally, click on the `...`{.action} button on the right, then click `Delete the Virtual MAC`{.action}.
 
