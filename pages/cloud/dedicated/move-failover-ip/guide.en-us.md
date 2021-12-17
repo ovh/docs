@@ -23,8 +23,8 @@ With this technology, you can switch IP addresses from one solution to another i
 
 ## Requirements
 
-- A [dedicated server](https://us.ovhcloud.com/bare-metal/) in your OVHcloud account
-- A [failover IP address](https://us.ovhcloud.com/bare-metal/ip/)
+- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your OVHcloud account
+- A [failover IP address](https://www.ovhcloud.com/en/bare-metal/ip/)
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 > [!warning]
