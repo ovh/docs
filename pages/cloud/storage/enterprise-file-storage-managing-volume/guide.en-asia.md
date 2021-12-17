@@ -154,7 +154,7 @@ The mount command will be different, depending on the protocol chosen for the vo
 
 > [!primary]
 >
-> For NFS, you can refer to [this guide](../nas-nfs/).
+> For NFS, you can refer to [this guide](https://docs.ovh.com/us/en/storage/nas-nfs/).
 >
 > Note that the retrieved mount path replaces IP_NAS/NFS_PATH in that documentation.
 >
