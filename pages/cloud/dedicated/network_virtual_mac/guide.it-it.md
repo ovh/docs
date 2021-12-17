@@ -9,23 +9,23 @@ section: 'Rete e IP'
 
 ## Obiettivo
 
-OVH ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al fine di poter creare VM con una configurazione <i>bridge</i> sul tuo server.
+OVHcloud ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al fine di poter creare VM con una configurazione <i>bridge</i> sul tuo server.
 
 **Questa guida ti mostra come creare un indirizzo MAC virtuale e come associarlo a un IP Failover.**
 
 
 ## Prerequisiti
 
-* Possedere un [server dedicato](https://www.ovh.it/server_dedicati/){.external}
-* Disporre di un [indirizzo IP Failover](https://www.ovh.it/server_dedicati/ip_failover.xml){.external} o di un blocco IP Failover (RIPE)
-* Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-
+- Possedere un [server dedicato](https://www.ovh.it/server_dedicati/){.external}
+- Disporre di un [indirizzo IP Failover](https://www.ovh.it/server_dedicati/ip_failover.xml){.external} o di un blocco IP Failover (RIPE)
+- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Il tuo server deve supportare i MAC virtuali. Consulta [questa guida](https://docs.ovh.com/it/dedicated/network-support-virtual-mac/) per determinarlo.
 
 ## Procedura
 
 ### Assegna un indirizzo MAC
 
-Una volta connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Dedicato`{.action} e clicca sulla sezione `IP`{.action} nella colonna a sinistra.
+Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Dedicato`{.action} e clicca sulla sezione `IP`{.action} nella colonna a sinistra.
 
 ![IPFO](images/virtual_mac_01.png){.thumbnail}
 

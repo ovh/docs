@@ -5,27 +5,27 @@ excerpt: 'Hier erfahren Sie, wie Sie eine virtuelle MAC-Adresse erstellen und mi
 section: 'Netzwerk & IP'
 ---
 
-**Stand 03.04.2019**
+**Letzte Aktualisierung am 03.04.2019**
 
-## Einleitung
+## Ziel
 
-Bei OVH können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbinden, um virtuelle Maschinen mit Bridge-Konfiguration auf Ihrem Server einzurichten.
+Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbinden, um virtuelle Maschinen mit Bridge-Konfiguration auf Ihrem Server einzurichten.
 
 **In dieser Anleitung erfahren Sie, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Failover-IP verbinden.**
 
 
 ## Voraussetzungen
 
-* Sie verfügen über einen [dedizierten Server](https://www.ovh.de/dedicated_server/){.external}.
-* Sie haben eine [Failover-IP-Adresse](https://www.ovh.de/dedicated_server/ip_failover.xml){.external} oder einen Failover-IP-Block (RIPE).
-* Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, der [virtuelle MACs unterstützt](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/).
+- Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### MAC-Adresse zuweisen
 
-Wenn Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt sind, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und klicken Sie links im Menü auf `IP`{.action}.
+Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt sind, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und klicken Sie links im Menü auf `IP`{.action}.
 
 ![Failover-IP](images/virtual_mac_01.png){.thumbnail}
 

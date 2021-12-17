@@ -9,22 +9,22 @@ section: Network Management
 
 ## Objective
 
-OVH allows you to associate a virtual MAC address with an IP address, so that you can set up virtual machines with a bridge configuration on your server.
+OVHcloud allows you to associate a virtual MAC address with an IP address, so that you can set up virtual machines with a bridge configuration on your server.
 
 **This guide will show you how to create a virtual MAC address and assign it to a failover IP address.**
 
 ## Requirements
 
-* a [Dedicated Server](https://www.ovh.ie/dedicated_servers/){.external}
-* a [failover IP address](https://www.ovh.ie/dedicated_servers/ip_failover.xml){.external} or a failover IP block (RIPE)
-* access to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) that supports [virtual MACs](https://docs.ovh.com/ie/en/dedicated/network-support-virtual-mac/)
+- A [failover IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/){.external} or a failover IP block (RIPE)
+- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 
 ## Instructions
 
 ### Assign a MAC address
 
-To assign a virtual MAC address to a failover IP, you first need to connect to your OVH Control panel.
+To assign a virtual MAC address to a failover IP, you first need to connect to your OVHcloud Control Panel.
 
 Once connected, click the `Bare Metal Cloud`{.action} menu and then click the `IP`{.action} section on the left side of the page.
 
