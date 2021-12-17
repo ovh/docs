@@ -12,7 +12,7 @@ order: 02
 > - [Premiers pas avec les bases de données Public Cloud (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/)
 > - [Commander et gérer une base de données via API (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/order-api/)
 > - [FAQ (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/faq/)
-> - [Troubleshooting (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/troubleshooting/)
+> - [Dépannage (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/troubleshooting/)
 > - [DBMS - Politique de cycle de vie (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/lifecycle-policy/)
 > - [Partage de responsabilités (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/responsibility-model/)
 
@@ -20,7 +20,7 @@ order: 02
 >
 > ### MongoDB
 >
-> - [MongoDB - Capabilities and Limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/capabilities/)
+> - [MongoDB - Capacités et limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/capabilities/)
 > - [MongoDB - Se connecter avec CLI (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-cli/)
 > - [MongoDB - Se connecter avec PHP (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-php/)
 > - [MongoDB - Se connecter avec Python (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-python/)
@@ -30,25 +30,25 @@ order: 02
 >
 > ### MySQL
 >
-> - [MySQL - Capabilities and Limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/mysql/capabilities/)
+> - [MySQL - Capacités et limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/mysql/capabilities/)
 > - [MySQL - Se connecter avec CLI (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/mysql/connect-cli/)
 
 > [!product-section]
 >
 > ### PostgreSQL
 >
-> - [PostgreSQL - Capabilities and Limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/capabilities/)
+> - [PostgreSQL - Capacités et limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/capabilities/)
 > - [PostgreSQL - Se connecter avec CLI (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-cli/)
 >
 > ### Kafka
 >
-> - [Kafka - Capabilities and Limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/kafka/capabilities/)
+> - [Kafka - Capacités et limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/kafka/capabilities/)
 
 > [!product-section]
 >
 > ### Redis
 >
-> - [Redis - Capabilities and Limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/redis/capabilities/)
+> - [Redis - Capacités et limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/redis/capabilities/)
 > - [Redis - Se connecter avec CLI (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-cli/)
 > - [Redis - Se connecter avec PHP (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-php/)
 > - [Redis - Boostez votre CMS (exemple de WordPress) (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/redis/boost-wordpress/)
@@ -57,11 +57,11 @@ order: 02
 >
 > ### OpenSearch
 >
-> - [OpenSearch - Capabilities and Limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/capabilities/)
+> - [OpenSearch - Capacités et limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/capabilities/)
 > - [OpenSearch - Premiers pas (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/getting-started/)
 
 > [!product-section]
 >
 > ### Kafka MirrorMaker
 >
-> - [Kafka MirrorMaker - Capabilities and Limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/mirrormaker/capabilities/)
+> - [Kafka MirrorMaker - Capacités et limitations (EN)](https://docs.ovh.com/gb/en/publiccloud/databases/mirrormaker/capabilities/)
