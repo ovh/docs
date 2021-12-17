@@ -18,7 +18,7 @@ Using a `non-root` container for example is a new rule to follow for security re
 But a main drawback to use non-root containers is related to mounting persistent volumes in these containers.  
 Indeed, processes running inside these containers do not have the necessary privileges to modify the ownership of the existing filesystem in a volume.  
 
-A solution is to use the `SecurityContext` provides by Kubernetes to automatically modify the ownership of the attached volumes and to provide a `StorageClass` which support to modify the volume's filesystem.  
+A solution is to use the `SecurityContext` provided by Kubernetes to automatically modify the ownership of the attached volumes and to provide a `StorageClass` which supports modifying the volume's filesystem.  
 However, the `StorageClass` used by default for the "OVHcloud Managed Kubernetes Service" didn't support the possibility to modify the volume's filesystem.
 
 In the following documentation, we are providing some patches while waiting for an update of our service.
