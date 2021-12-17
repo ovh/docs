@@ -76,7 +76,7 @@ For example with the Helm Chart `bitnami/wordpress` which is concerned by this b
 ➱ helm uninstall my-first-k8s-wordpress
 ```
 
-And don't forget to verify if concerned `PersistentVolumeClaim` and `PersistentVolume` have been deleted before to reinstall the Helm Chart:
+And don't forget to verify if concerned `PersistentVolumeClaim` and `PersistentVolume` have been deleted before reinstalling the Helm Chart:
 
 ```bash
 ➱ kubectl get persistentvolumeclaims -A
