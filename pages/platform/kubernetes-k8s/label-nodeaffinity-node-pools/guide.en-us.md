@@ -33,6 +33,8 @@ section: Tutorials
 
 In this tutorial we are going to show you how to deploy your applications to specific `Nodes` and` Nodes Pools`, with `labels` and `NodeAffinity` Kubernetes concepts, on your OVHcloud Managed Kubernetes Service.
 
+The example chosen here will take advantage of an OVHcloud billing specificity: using monthly billing for nodes that you also plan to keep for the long term can decrease your Kubernetes costs by up to 50%. We are seeing customers with varying workloads creating a first node pool with monthly billing to cover their long-term compute needs, and adding elasticity to the cluster with a second node pool using autoscaling and hourly billing.
+
 We will:
 
 - create a Managed Kubernetes cluster
@@ -298,6 +300,8 @@ hello-world-deployment-585c6cfcd8-kntp9   1/1     Running   0          13m   10.
 ```
 
 With this feature you can choose and control where you want to deploy your applications.
+
+Note that a given label can be applied to multiple node pools and / or specific nodes only if it makes sense to you.
 
 ## Where do we go from here?
 
