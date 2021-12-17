@@ -83,6 +83,6 @@ Para migrar o endereço IP, utilize a seguinte chamada:
 - `serviceName`: a referência do servidor dedicado de destino
 - `ip`: o endereço IP Fail Over a migrar
 
-## Saiba mais
+## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

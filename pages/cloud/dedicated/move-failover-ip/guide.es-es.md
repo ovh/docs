@@ -29,7 +29,7 @@ Esta tecnología le permite intercambiar las direcciones IP de una solución a o
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external} en el área de cliente de OVHcloud.
 - Tener una [dirección IP failover](https://www.ovhcloud.com/es-es/bare-metal/ip/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 > [!warning]
 > Si la dirección IP failover, o una de las direcciones IP del bloque, tiene una MAC virtual afectada, el servidor de destino debe soportar la funcionalidad de las MAC virtuales.
