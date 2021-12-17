@@ -51,7 +51,7 @@ If you are in this case, please follow these instructions at your own risk:
 - Verify what is the `StorageClass` that you are using by default (generally the `csi-cinder-high-speed`):
 
 ```bash
-➱ kubectl get storageclasses.storage.k8s.io 
+$ kubectl get storageclasses.storage.k8s.io 
 NAME                              PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
 csi-cinder-classic                cinder.csi.openstack.org   Delete          Immediate           true                   83d
 csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Immediate           true                   83d
@@ -60,14 +60,14 @@ csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Imm
 - Delete the concerned `StorageClass` that you are using by default 
 
 ```bash
-➱ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed 
+$ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed 
 storageclass.storage.k8s.io "csi-cinder-high-speed" deleted
 ```
 
 - Create a new `StorageClass` with the required fix
 
 ```bash
-➱ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml 
+$ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml 
 storageclass.storage.k8s.io/csi-cinder-high-speed created
 ```
 
@@ -76,14 +76,14 @@ storageclass.storage.k8s.io/csi-cinder-high-speed created
 For example with the Helm Chart `bitnami/wordpress` which is concerned by this behavior:
 
 ```bash
-➱ helm uninstall my-first-k8s-wordpress
+$ helm uninstall my-first-k8s-wordpress
 ```
 
 And don't forget to verify if concerned `PersistentVolumeClaim` and `PersistentVolume` have been deleted before reinstalling the Helm Chart:
 
 ```bash
-➱ kubectl get persistentvolumeclaims -A
-➱ kubectl get persistentvolumes 
+$ kubectl get persistentvolumeclaims -A
+$ kubectl get persistentvolumes 
 ```
 
 - Reinstall the concerned Helm Chart or deployment
@@ -91,13 +91,13 @@ And don't forget to verify if concerned `PersistentVolumeClaim` and `PersistentV
 For example with the Helm Chart `bitnami/wordpress` which is concerned by this behavior:
 
 ```bash
-➱ helm install my-first-k8s-wordpress bitnami/wordpress
+$ helm install my-first-k8s-wordpress bitnami/wordpress
 ```
 
 You can see that the pods are now up and running, which means that the permission errors related to the `persistentVolumes` are now fixed.
 
 ```bash
-➱ kubectl get pods
+$ kubectl get pods
 NAME                                        READY   STATUS             RESTARTS        AGE
 my-first-k8s-wordpress-2-8554886b4b-l8tnq   1/1     Running            0               21m
 my-first-k8s-wordpress-2-mariadb-0          1/1     Running            0               21m
