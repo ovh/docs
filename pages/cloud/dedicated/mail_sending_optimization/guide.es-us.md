@@ -100,8 +100,10 @@ Si sus destinatarios son Gmail, debe de añadir los registros específicos (ejem
 
 ### Revisa su información
 
-Usted puede utilizar un sitio web como [Mail Teste](http://www.mail-tester.com/){.external} para verificar que todas sus configuración son correctas.
+Usted puede utilizar un sitio web como [Mail Tester](http://www.mail-tester.com/){.external} para verificar que todas sus configuración son correctas.
 
 ## Más información
+
+Para recibir soporte y configurar sus soluciones OVHcloud, contacte con nuestra [red de partners OVHcloud](https://partner.ovhcloud.com/es/directory/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
