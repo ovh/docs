@@ -67,7 +67,7 @@ storageclass.storage.k8s.io "csi-cinder-high-speed" deleted
 - Create a new `StorageClass` with the required fix
 
 ```bash
-➱ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/files/fixed-cinder-high-speed-storage-class.yaml 
+➱ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml 
 storageclass.storage.k8s.io/csi-cinder-high-speed created
 ```
 
