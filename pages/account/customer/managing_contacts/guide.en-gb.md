@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 6
 ---
 
-**Last updated 13th December 2021** 
+**Last updated 13th December 2021**
 
 ## Objective
 
@@ -110,19 +110,20 @@ If only one contact has confirmed the change, a message will appear confirming t
 
 The contact change will take effect a few minutes after both contacts have validated the request. They will then receive an email informing them that the request has been processed.
 
-### Example: giving your website technical management to your webmaster
+### Example: Providing access for a website's technical administration to your webmaster
 
-You have just signed up to an OVHcloud subscription, so you can set up your own [online store](https://www.ovhcloud.com/en-gb/web-hosting/ecommerce-website/). You have contacted one of our [partners](https://partner.ovhcloud.com/en-gb/directory/), who are requesting access rights to your OVHcloud services, in order to start building your website.
+You have just subscribed to an OVHcloud service with the purpose of hosting your own [online store](https://www.ovhcloud.com/en-gb/web-hosting/ecommerce-website/). You have contacted one of our [partners](https://partner.ovhcloud.com/en-gb/directory/) and they are requesting access rights to your OVHcloud services in order to start building your website.
 
 > [!warning]
 >
 > We do not recommend that you give any third parties access credentials to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 >
-In this situation, give your service provider the right to “[technical contact”](#gestion_des_contacts) on your OVHcloud hosting plan. With this access, they can carry out the operations required to put your website online (adding a domain or subdomain to the multisite, installing a 1-click module, changing the FTP password or the database, creating an SSL certificate, etc.).
 
-If your domain name is not linked to your hosting plan, and you wish to entrust the necessary operations to your webmaster, give him or her the “[technical contact](#gestion_des_contacts)” right on your [domain’s DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+In this situation, you can grant your service provider the role "[technical contact](#gestion_des_contacts)" on your OVHcloud Web Hosting plan. With this access, they can carry out the operations required to put your website online (adding a domain or subdomain to the multisite, installing a 1-click module, changing the FTP and database passwords, creating SSL certificates, etc.).
 
-You cannot change a service’s admin or billing contacts under the ‘[technical contact’](#gestion_des_contacts) right. It will not give your webmaster access to your invoices, orders, renewal of your services or payment methods. They will not be able to [transfer the management of your domain name](https://docs.ovh.com/gb/en/domains/outgoing-transfer-of-generic-or-geographical-domain-name/) to another hosting provider or [change its owner](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/). Finally, as an [administrative contact](#administrateur), you can retrieve your service’s ‘[technical contact’](#technique) at any time.
+If your domain name is not linked to your hosting plan, and you wish to entrust the necessary operations to your webmaster, give them the role "[technical contact](#gestion_des_contacts)" on your [domain name’s DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+
+You cannot change a service’s admin or billing contacts when logged in as "[technical contact](#gestion_des_contacts)". This access right will not give your webmaster access to your invoices, orders, service renewals or payment methods. They will not be able to [transfer the management of your domain name](https://docs.ovh.com/gb/en/domains/outgoing-transfer-of-generic-or-geographical-domain-name/) to another hosting provider or [change its owner](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/). Finally, as the [administrative contact](#administrateur) of your services, you can change the "[technical contact](#technique)" at any time.
 
 ### Special case of a domain owner
 
@@ -140,4 +141,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Join our community of users on <https://community.ovh.com/en/>.
