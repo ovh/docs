@@ -16,7 +16,7 @@ Learn how to optimise the sending of your files to your bucket.
 
 ## Requirements
 
-- [awscli](https://docs.ovh.com/us/es/storage/highperf/getting-started-with-s3-high-performance) installed
+- [awscli](https://docs.ovh.com/us/es/storage/s3/getting-started-with-s3/) installed
 
 ## Instructions
 
