@@ -45,7 +45,7 @@ You are impacted by this issue but your Helm Chart provider didn't offer a prope
 
 If you are in this case, please follow these instructions at your own risk:
 
-- Verify what is the `StorageClass` that you are using by default (generaly the `csi-cinder-high-speed`):
+- Verify what is the `StorageClass` that you are using by default (generally the `csi-cinder-high-speed`):
 
 ```bash
 ➱ kubectl get storageclasses.storage.k8s.io 
