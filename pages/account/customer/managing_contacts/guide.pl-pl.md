@@ -117,11 +117,14 @@ Właśnie zamówiłeś abonament OVHcloud umożliwiający utworzenie własnego [
 >
 > Odradzamy udzielenie jakiejkolwiek osobie trzeciej danych dostępowych do Twojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 >
+
 W takiej sytuacji daj swojemu dostawcy prawo do [kontaktu technicznego](#gestion_des_contacts) na Twoim hostingu OVHcloud. Dostęp do strony pozwoli mu na wykonanie operacji niezbędnych do uruchomienia strony (dodanie domeny lub subdomeny do strony podpiętej w opcji MultiSite, zainstalowanie modułu za 1 kliknięciem, zmiana hasła FTP lub bazy danych, utworzenie certyfikatu SSL, itp.).
 
 Jeśli Twoja domena nie jest powiązana z Twoim hostingiem i chcesz powierzyć niezbędne operacje webmasterowi, daj mu również prawo do "[kontaktu technicznego](#gestion_des_contacts)" w [strefie DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/) domeny.
 
-Prawo "[kontakt techniczny](#gestion_des_contacts)" nie pozwala na zmianę kontaktów administratora lub fakturowanie usługi. Dzięki niemu webmaster nie będzie miał dostępu do faktur lub zamówień, do odnowienia usług ani do sposobów płatności. Nie pozwoli mu również na [przeniesienie domeny](https://docs.ovh.com/pl/domains/transfer_wychodzacy_domeny_globalnej_lub_geograficznej/) z innego dostawcy lub na [zmianę właściciela](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/). Jako [kontakt administracyjny](#administrateur) będziesz mógł w każdym momencie pobrać "[kontakt techniczny](#technique)" Twojej usługi.
+Prawo "[kontakt techniczny](#gestion_des_contacts)" nie pozwala na zmianę kontaktów administratora lub fakturowanie usługi. Dzięki niemu webmaster nie będzie miał dostępu do faktur lub zamówień, do odnowienia usług ani do sposobów płatności. Nie pozwoli mu również na [przeniesienie domeny](https://docs.ovh.com/pl/domains/transfer_wychodzacy_domeny_globalnej_lub_geograficznej/) z innego dostawcy lub na [zmianę właściciela](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
+
+Jako [kontakt administracyjny](#administrateur) będziesz mógł w każdym momencie pobrać "[kontakt techniczny](#technique)" Twojej usługi.
 
 ### Przypadek właściciela domeny
 

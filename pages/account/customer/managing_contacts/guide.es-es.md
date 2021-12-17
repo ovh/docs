@@ -117,11 +117,14 @@ Acaba de contratar una suscripción de OVHcloud que le permitirá crear su propi
 >
 > No se recomienda proporcionar a ningún tercero las claves de acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 >
+
 En ese caso, conceda a su proveedor el derecho de "[contacto técnico](#gestion_des_contacts)" en su alojamiento de OVHcloud. Este acceso le permitirá realizar las manipulaciones necesarias para la puesta en línea de su sitio web (adición de un dominio o subdominio en el multisitio, instalación de un módulo en 1 clic, modificación de la contraseña FTP o de la base de datos, creación de un certificado SSL, etc.).
 
 Si su dominio no está asociado a su alojamiento y quiere transferir las operaciones necesarias a su webmaster, dígale también el permiso de "[contacto técnico](#gestion_des_contacts)" en la [zona DNS](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/) de su dominio.
 
-El derecho "[contacto técnico](#gestion_des_contacts)" no permite modificar los contactos administrador o la facturación de un servicio. No dará a su webmaster el acceso a sus facturas o pedidos, a la renovación de sus servicios o a sus formas de pago. Tampoco le permitirá realizar la [transferencia de la gestión de su dominio](https://docs.ovh.com/es/domains/transferencia_saliente_de_un_dominio_generico_o_geografico/) a otro proveedor de alojamiento o [cambiar su propietario](https://docs.ovh.com/es/domains/cambio-propietario-dominio/). En cualquier momento, como [contacto administrador](#administrateur), podrá obtener el "[contacto técnico](#technique)" de su servicio.
+El derecho "[contacto técnico](#gestion_des_contacts)" no permite modificar los contactos administrador o la facturación de un servicio. No dará a su webmaster el acceso a sus facturas o pedidos, a la renovación de sus servicios o a sus formas de pago. Tampoco le permitirá realizar la [transferencia de la gestión de su dominio](https://docs.ovh.com/es/domains/transferencia_saliente_de_un_dominio_generico_o_geografico/) a otro proveedor de alojamiento o [cambiar su propietario](https://docs.ovh.com/es/domains/cambio-propietario-dominio/).
+
+En cualquier momento, como [contacto administrador](#administrateur), podrá obtener el "[contacto técnico](#technique)" de su servicio.
 
 ### Caso particular de un propietario de dominio
 
