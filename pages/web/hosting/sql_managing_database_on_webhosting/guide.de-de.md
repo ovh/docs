@@ -173,4 +173,4 @@ Eine Hilfe zum Import von MySql-Datenbanken finden Sie [hier](https://www.ovhclo
 ### Eine Datenbank exportieren
 Wie exportiere ich meine SQL-Datenbank? Welche Möglichkeiten habe ich, um ein Backup meiner Datenbank zu erstellen?
 
-Eine Hilfe zum Export von Datenbanken finden Sie [hier](https://www.ovhcloud.com/de/web-hosting/guides/g1394.mutualise_guide_exportation_des_bases_de_donnees){.external}.
+Eine Hilfe zum Export von Datenbanken finden Sie [hier](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/{.external}.

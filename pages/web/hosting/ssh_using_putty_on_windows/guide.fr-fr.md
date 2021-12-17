@@ -8,7 +8,7 @@ section: FTP et SSH
 
 Pour l'aide à l'utilisation du SSH sur vos hébergements, le mieux est de consulter [ce guide sur le SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/). Attention l'option SSH n'est disponible qu'à partir des [hébergements PRO](https://www.ovhcloud.com/fr/web-hosting/professional-offer/){.external}.
 
-Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovhcloud.com/fr/web-hosting/guides/){.external} disponibles.
+Retrouvez nos différents [guides sur les hébergements Web OVHcloud](https://docs.ovh.com/fr/hosting/){.external} disponibles.
 
 > [!warning]
 >
