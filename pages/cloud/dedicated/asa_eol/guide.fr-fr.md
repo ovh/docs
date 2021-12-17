@@ -11,7 +11,7 @@ order: 01
 ## Résumé
 
 OVHcloud annonce la fin de support de l’option Cisco Firewall ASA associée aux serveurs dédiés.<br>
-Les services actifs seront arrêtés au 28 Février 2022 à 10:00 UTC, date de fin de support.<br>
+Les services actifs seront arrêtés au 31 Août 2022 à 10:00 UTC, date de fin de support.<br>
 Cette étape fait suite à l’arrêt de la commercialisation de ce produit depuis fin 2019.
 
 L’opération peut être suivie via cette [tâche travaux](https://bare-metal-servers.status-ovhcloud.com/incidents/nv71djpdxzzq).
@@ -25,7 +25,7 @@ Les clients concernés et disposant de services actifs Cisco Firewall ASA sur se
 | Jalon                 | Définition                                                                                                          | Date       |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------|------------|
 | Annonce de fin de vie | Date de la tâche travaux qui annonce la fin de support.  | 10/12/2021 |
-| Fin de support | Dernier jour pour utiliser les services. Après cette date, tous les services et supports associés seront indisponibles. | 28/02/2022 - 10:00 UTC |
+| Fin de support | Dernier jour pour utiliser les services. Après cette date, tous les services et supports associés seront indisponibles. | 31/08/2022 - 10:00 UTC |
 
 ### Frise chronologique
 
