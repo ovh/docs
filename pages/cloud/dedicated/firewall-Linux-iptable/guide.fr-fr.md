@@ -189,14 +189,15 @@ sudo iptables -A INPUT -j DROP
 ```
 L'option -A ajoute une nouvelle règle à la chaîne. Si une connexion passe par des ports autres que ceux que vous avez définis, elle sera abandonnée.
 
+> [!warning]
+> 
+>ATTENTION, si vous tapez cette commande avant d'éffectuer l'Etape 5, vous bloquerez tous les accès y compris celui en cours , l'accès ssh. Ceci est particulièrement problématique sur une machine sur laquelle vous accédez à distance. 
+>
+
 ### Étape 8 : Supprimer une règle
 
 Une méthode plus précise consiste à supprimer le numéro de ligne d'une règle.
 
-> [!warning]
-> 
->A ne pas utiliser sur un serveur distant !
->
 >```sh
 >sudo iptables -P INPUT DROP 
 >```
