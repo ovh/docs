@@ -6,7 +6,7 @@ section: Tutorials
 order: 4
 ---
 
-**Last updated April 14<sup>th</sup>, 2020.**
+**Last updated December 20 2021.**
 
 <style>
  pre {
@@ -39,7 +39,7 @@ With Helm you can:
 
 This tutorial assumes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
-We are assuming that you have the `KUBECONFIG` environment variable pointing to your KubeCtl configuration file, as described in the Quickstarter. If that's not the case, you can use the `--kubeconfig [LOCATION_OF_CONFIG_FILE]` option in both `kubectl` and `helm` calls. 
+We are assuming that you have the `KUBECONFIG` environment variable pointing to your kubectl configuration file, as described in the Quickstarter. If that's not the case, you can use the `--kubeconfig [LOCATION_OF_CONFIG_FILE]` option in both `kubectl` and `helm` calls. 
 
 ## Helm concepts
 
@@ -66,6 +66,17 @@ The simplest way to install Helm is grabbing the binary release for your platfor
 > [!primary]
 > To use alternative installation procedures, like package managers (Homebrew, Snap etc.), please refer to the [official installation doc](https://docs.helm.sh/using_helm/#installing-helm){.external}.
 
+To check if the `helm` CLI is correctly installed locally, you can display its version:
+
+```bash
+helm version
+```
+
+You can show the installed version on my side:
+
+<pre class="console"><code>$ helm version
+version.BuildInfo{Version:"v3.7.0", GitCommit:"eeac83883cb4014fe60267ec6373570374ce770b", GitTreeState:"clean", GoVersion:"go1.17"}
+</code></pre>
 
 
 ## Initialize a Helm Chart Repository
@@ -81,7 +92,7 @@ Once you have Helm ready, you can add a chart repository. The easiest way to beg
 helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
 
-Once the repository added, run `helm repo update`to make sure we get the latest list of charts 
+Once the repository added, run `helm repo update` to make sure we get the latest list of charts.
 
 <pre class="console"><code>$ helm repo add bitnami https://charts.bitnami.com/bitnami
 "bitnami" has been added to your repositories
@@ -105,40 +116,50 @@ This will install the required elements and initialize the services. And at the 
 
 
 <pre class="console"><code>$ helm install test-redis bitnami/redis --set master.persistence.enabled=false
+
 NAME: test-redis
-LAST DEPLOYED: Tue Apr 14 15:13:14 2020
+LAST DEPLOYED: Mon Dec 20 11:10:15 2021
 NAMESPACE: default
 STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 NOTES:
-** Please be patient while the chart is being deployed **
-Redis can be accessed via port 6379 on the following DNS names from within your cluster:
+CHART NAME: redis
+CHART VERSION: 15.6.7
+APP VERSION: 6.2.6
 
-test-redis-master.default.svc.cluster.local for read/write operations
-test-redis-slave.default.svc.cluster.local for read-only operations
+** Please be patient while the chart is being deployed **
+
+Redis&trade; can be accessed on the following DNS names from within your cluster:
+
+    test-redis-master.default.svc.cluster.local for read/write operations (port 6379)
+    test-redis-replicas.default.svc.cluster.local for read-only operations (port 6379)
+
 
 
 To get your password run:
 
     export REDIS_PASSWORD=$(kubectl get secret --namespace default test-redis -o jsonpath="{.data.redis-password}" | base64 --decode)
 
-To connect to your Redis server:
+To connect to your Redis&trade; server:
 
-1. Run a Redis pod that you can use as a client:
+1. Run a Redis&trade; pod that you can use as a client:
 
-   kubectl run --namespace default test-redis-client --rm --tty -i --restart='Never' \
-    --env REDIS_PASSWORD=$REDIS_PASSWORD \
-   --image docker.io/bitnami/redis:5.0.8-debian-10-r39 -- bash
+   kubectl run --namespace default redis-client --restart='Never'  --env REDISCLI_AUTH=$REDIS_PASSWORD  --image docker.io/bitnami/redis:6.2.6-debian-10-r53 --command -- sleep infinity
 
-2. Connect using the Redis CLI:
-   redis-cli -h test-redis-master -a $REDIS_PASSWORD
-   redis-cli -h test-redis-slave -a $REDIS_PASSWORD
+   Use the following command to attach to the pod:
+
+   kubectl exec --tty -i redis-client \
+   --namespace default -- bash
+
+2. Connect using the Redis&trade; CLI:
+   REDISCLI_AUTH="$REDIS_PASSWORD" redis-cli -h test-redis-master
+   REDISCLI_AUTH="$REDIS_PASSWORD" redis-cli -h test-redis-replicas
 
 To connect to your database from outside the cluster execute the following commands:
 
     kubectl port-forward --namespace default svc/test-redis-master 6379:6379 &
-    redis-cli -h 127.0.0.1 -p 6379 -a $REDIS_PASSWORD
+    REDISCLI_AUTH="$REDIS_PASSWORD" redis-cli -h 127.0.0.1 -p 6379
 </code></pre>
 
 ## Verifying your Redis
@@ -147,21 +168,28 @@ After installing the chart, follow the instructions on your console to test your
 
 
 <pre class="console"><code>s
-$ export REDIS_PASSWORD=$(kubectl get secret --namespace default test-redis \ >     -o jsonpath="{.data.redis-password}" | base64 --decode)
-$ kubectl run --namespace default test-redis-client --rm --tty -i --restart='Never' \
->     --env REDIS_PASSWORD=$REDIS_PASSWORD \
->     --image docker.io/bitnami/redis:5.0.7-debian-10-r32 -- bash
-If you don't see a command prompt, try pressing enter.
-I have no name!@test-redis-client:/$  redis-cli -h test-redis-master -a $REDIS_PASSWORD
-Warning: Using a password with '-a' or '-u' option on the command line interface may not be safe.
-test-redis-master:6379> cluster info
-ERR This instance has cluster support disabled
+$ export REDIS_PASSWORD=$(kubectl get secret --namespace default test-redis -o jsonpath="{.data.redis-password}" | base64 --decode)
+
+$ kubectl run --namespace default redis-client --restart='Never'  --env REDISCLI_AUTH=$REDIS_PASSWORD  --image docker.io/bitnami/redis:6.2.6-debian-10-r53 --command -- sleep infinity
+pod/redis-client created
+
+$ echo $REDIS_PASSWORD
+e3BUbYfAKv
+
+$ kubectl exec --tty -i redis-client \
+   --namespace default -- bash
+
+I have no name!@redis-client:/$ REDISCLI_AUTH="e3BUbYfAKv" redis-cli -h test-redis-master
 test-redis-master:6379> ping
 PONG
 test-redis-master:6379> exit
-I have no name!@test-redis-client:/$ exit
+I have no name!@redis-client:/$
+
+I have no name!@redis-client:/$ exit
 exit
-pod "test-redis-client" deleted
+
+$ kubectl delete pod redis-client
+pod "redis-client" deleted
 </code></pre>
 
 ## Cleaning up
@@ -169,8 +197,9 @@ pod "test-redis-client" deleted
 To clean up your cluster, simply delete your Redis installation. You can use `helm list` to get the Redis release, and then `helm delete [REDIS_RELEASE]`.
 
 <pre class="console"><code>$ helm list
-NAME            NAMESPACE       REVISION   UPDATED              STATUS     CHART          APP VERSION
-test-redis      default         1          2020-04-14 14:23:46  deployed   redis-10.5.7   5.0.7
+NAME      	NAMESPACE	REVISION	UPDATED                             	STATUS  	CHART       	APP VERSION
+test-redis	default  	1       	2021-12-20 11:10:15.401273 +0100 CET	deployed	redis-15.6.7	6.2.6
+
 $ helm delete test-redis
 release "test-redis" uninstalled
 </code></pre>
