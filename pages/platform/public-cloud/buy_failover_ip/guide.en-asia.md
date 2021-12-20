@@ -24,15 +24,15 @@ These failover IP addresses can only be migrated to instances in the same projec
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
-- a [Public Cloud instance](https://docs.ovh.com/asia/en/public-cloud/public-cloud-first-steps/) in your OVHcloud Control Panel.
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
+- A [Public Cloud instance](https://docs.ovh.com/asia/en/public-cloud/public-cloud-first-steps/) in your OVHcloud account.
 
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section, and select the Public Cloud project of your choice.<br>
 In the left-hand menu, click on `IP Failover`{.action} in the 'Network' section.
 
-Then click on the `Public Cloud`{.action} button and choose `Buy failover IPs`{.action}.
+Then click on the `Actions`{.action} button and choose `Buy Cloud failover IPs`{.action}.
 
 ![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
