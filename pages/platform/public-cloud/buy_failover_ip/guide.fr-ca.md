@@ -81,4 +81,4 @@ Consultez notre guide sur la [gestion des commandes OVHcloud](https://docs.ovh.c
 
 [Configurer une IP fail-over](https://docs.ovh.com/ca/fr/public-cloud/configurer_une_ip_failover/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
