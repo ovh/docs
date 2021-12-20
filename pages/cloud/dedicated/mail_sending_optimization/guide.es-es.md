@@ -52,13 +52,13 @@ La autenticación se lleva a cabo médiente una clave DKIM que debe de añadir a
 
 Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il Registro inverso con su nombre de dominio.
 
-Si los servidores DNS son gestionados por OVHcloud, consulte esta [guía](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
+Si los servidores DNS son gestionados por OVHcloud, consulte esta [guía](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse y ser efectivos.
 
 A continuación, añada el registro PTR (también conocido como registro inverso):
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y haga clic en la sección `IP`{.action} de la parte inferior izquierda. 
+En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y haga clic en la sección `IP`{.action} de la parte inferior izquierda. 
 
 ![IP inversa](images/ipsection.png)
 
@@ -104,6 +104,6 @@ Usted puede utilizar un sitio web como [Mail Tester](http://www.mail-tester.com/
 
 ## Más información
 
-Para recibir soporte y configurar sus soluciones OVHcloud, contacte con nuestra [red de partners OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para recibir soporte y configurar sus soluciones OVHcloud, contacte con nuestra [red de partners OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
