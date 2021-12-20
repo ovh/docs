@@ -107,7 +107,7 @@ You may want to use a website like [Mail Tester](http://www.mail-tester.com/){.e
 
 ## Go further
 
-To get support setting up your OVHcloud solutions, contact our [network of OVHcloud partners](https://partner.ovhcloud.com/asia/directory/)
+To get support setting up your OVHcloud solutions, contact our [network of OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
 Join our community of users on <https://community.ovh.com/en/>.
 

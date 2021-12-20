@@ -104,6 +104,6 @@ Usted puede utilizar un sitio web como [Mail Tester](http://www.mail-tester.com/
 
 ## Más información
 
-Para recibir soporte y configurar sus soluciones OVHcloud, contacte con nuestra [red de partners OVHcloud](https://partner.ovhcloud.com/es/directory/)
+Para recibir soporte y configurar sus soluciones OVHcloud, contacte con nuestra [red de partners OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
