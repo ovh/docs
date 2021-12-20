@@ -24,12 +24,12 @@ These failover IP addresses can only be migrated to instances in the same projec
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
-- a [Public Cloud instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/) in your OVHcloud Control Panel.
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- a [Public Cloud instance](https://docs.ovh.com/ie/en/public-cloud/public-cloud-first-steps/) in your OVHcloud Control Panel.
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section, and select the Public Cloud project of your choice.<br>
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section, and select the Public Cloud project of your choice.<br>
 In the left-hand menu, click on `IP Failover`{.action} in the 'Network' section.
 
 Then click on the `Public Cloud`{.action} button and choose `Buy failover IPs`{.action}.
@@ -77,10 +77,10 @@ Click on `Generate purchase order`{.action} to be automatically redirected to it
 
 You can also find the purchase order in your customer area, by going to the `Dashboard`{.action} section and clicking on `View my orders`{.action}.
 
-See our guide on [managing OVHcloud orders](https://docs.ovh.com/ca/en/billing/managing-ovh-orders/) for more details.
+See our guide on [managing OVHcloud orders](https://docs.ovh.com/ie/en/billing/managing-ovh-orders/) for more details.
 
 ## Go further
 
-[Configuring a failover IP](https://docs.ovh.com/ca/en/public-cloud/configure_a_failover_ip/)
+[Configuring a failover IP](https://docs.ovh.com/ie/en/public-cloud/configure_a_failover_ip/)
 
 Join our community of users on <https://community.ovh.com/en/>.
