@@ -9,9 +9,9 @@ section: 'VMware vSphere features'
 
 ## Objective
 
-The aim of this guide is to explain the concepts and details of setting up VMware vSAN on the OVH Private Cloud.
+Find out how to use the power of Hyperconvergence for your virtual machines with vSAN.
 
-**Find out how to use the power of Hyperconvergence for your virtual machines with vSAN.**
+**This guide explains how to set up VMware vSAN on the OVH Private Cloud.**
 
 ## Requirements
 
