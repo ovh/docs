@@ -41,27 +41,7 @@ Les pare-feux fonctionnent en définissant des règles qui régissent le trafic 
 
 Les développeurs de systèmes de distribution et d'exploitation proposent des mises à jour fréquentes de progiciels, très souvent pour des raisons de sécurité. **Garder votre distribution ou votre système d'exploitation à jour est primordial pour la sécurisation de votre serveur.**
 
-Il s'agit d'un processus en deux parties qui implique la mise à jour de la liste des paquets (la liste des applications logicielles installées) et celle des paquets en eux-mêmes.
-
-#### Mettre à jour la liste des paquets
-
-Mettez à jour la liste des paquets sur votre serveur de la manière suivante :
-
-```sh
-sudo apt-get update
-```
-
-#### Mettre à jour les paquets
-
-Mettez ensuite à jour les paquets sur votre serveur de la manière suivante :
-
-```sh
-sudo apt-get upgrade
-```
-
-
-Une fois les mises à jour terminées, votre système sera entièrement à jour. Cette opération doit être effectuée de manière régulière.
-
+Pour toute demande complémentaire concernant la sécurisation de votre serveur, n’hésitez pas à consulter la [documentation officielle](https://docs.ovh.com/fr/dedicated/securiser-un-serveur-dedie/){.external} de cette page.
 
 ### Étape 2 : Installation du pare-feu iptables sous Ubuntu
 
