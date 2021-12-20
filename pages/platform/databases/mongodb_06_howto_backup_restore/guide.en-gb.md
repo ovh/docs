@@ -16,19 +16,19 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we);
-- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account;
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
 - An up and running Public Cloud Database for MongoDB.
 
 ## Concept
 
-Public Cloud Databases performs automatic daily backups of your databases. However, you might need to perform manual backup and restore operations to double-ensure data safety on your end, or for example in order to export and import data across database instances.
+Public Cloud Databases perform automatic daily backups of your databases. However, you might need to perform manual backup and restore operations to double-ensure data safety on your end, or for example in order to export and import data across database instances.
 
 ## Instructions
 
 ### Ensure you can connect to your database
 
-Follow the guide [MongoDB - Connect with CLI](https://docs.ovh.com/us/en/publiccloud/databases/mongodb/connect-cli/) in order to ensure you can connect to your database. That step ensures IP filtering and is set up properly and that you have a suitable service URI available.
+Follow the guide [MongoDB - Connect with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-cli/) in order to ensure you can connect to your database. That step ensures IP filtering is set up properly and that you have a suitable service URI available.
 
 ### Install the MongoDB Database Tools
 
