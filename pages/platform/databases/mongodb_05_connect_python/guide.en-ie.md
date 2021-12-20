@@ -3,7 +3,7 @@ title: MongoDB - Connect with Python
 excerpt: Connect to your Public Cloud Databases for MongoDB using the Python programming language
 slug: mongodb/connect-python
 section: MongoDB
-order: 102
+order: 302
 ---
 
 **Last updated September 20th 2021**
