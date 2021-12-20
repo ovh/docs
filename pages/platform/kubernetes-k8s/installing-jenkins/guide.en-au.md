@@ -39,6 +39,34 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
+## Pre-requisites
+
+We (the OVHcloud Managed Kubernetes Service team) are working on a patch to be released in early 2022. In the meantime, please remove the default storage class and install the new one.
+
+- Delete the concerned `StorageClass` that you are using by default 
+
+```bash
+kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
+```
+
+It will delete the existing `StorageClass`:
+
+<pre class="console"><code>$ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
+storageclass.storage.k8s.io "csi-cinder-high-speed" deleted
+</code></pre>
+
+- Create a new `StorageClass` with the required fix
+
+```bash
+kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
+```
+
+It will apply the correct `StorageClass` YAML manifest:
+
+<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
+storageclass.storage.k8s.io/csi-cinder-high-speed created
+</code></pre>
+
 ## Installing the Jenkins Helm chart
 
 > [!warn]
