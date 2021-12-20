@@ -5,7 +5,7 @@ excerpt: This guide will show you how to create a virtual MAC address and assign
 section: Network management
 ---
 
-**Last updated 21st June 2018**
+**Last updated 16th December 2021**
 
 ## Objective
 

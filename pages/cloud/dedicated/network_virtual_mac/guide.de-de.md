@@ -5,7 +5,7 @@ excerpt: 'Hier erfahren Sie, wie Sie eine virtuelle MAC-Adresse erstellen und mi
 section: 'Netzwerk & IP'
 ---
 
-**Letzte Aktualisierung am 03.04.2019**
+**Letzte Aktualisierung am 16.12.2021**
 
 ## Ziel
 
@@ -19,6 +19,7 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, der [virtuelle MACs unterstützt](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/).
 - Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Ihr Server muss die virtuellen MAC-Adressen unterstützen. Ziehen Sie [diese Anleitung](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/) zu Rate, um diese zu bestimmen.
 
 
 ## In der praktischen Anwendung

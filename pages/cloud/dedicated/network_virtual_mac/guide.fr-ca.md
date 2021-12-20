@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment créer une adresse MAC virtuelle et comment l’ass
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 18/07/2018**
+**Dernière mise à jour le 16/12/2021**
 
 ## Objectif
 
