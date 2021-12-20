@@ -187,7 +187,7 @@ Copy/paste the Wordpress URL in your browser to see your new running blog:
 
 ![Installing Wordpress](images/installing-wordpress-01.png){.thumbnail}
 
-In order to log you on Admin interface, you need to use the instructions given by the Helm install to get the default username and password for your blog.
+In order to log in on the Admin interface, you need to use the instructions given by the Helm install to get the default username and password for your blog.
 
 In my case:
 
