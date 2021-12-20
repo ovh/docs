@@ -24,7 +24,6 @@ As políticas antisspam são cada vez mais rigorosas. Para simplificar o envio d
 > Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação dos serviços num servidor, recomendamos que recorra a um prestador de serviços especializado.
 > 
 
-
 ## Requisitos
 
 - Ter um servidor de e-mail já configurado
@@ -101,8 +100,6 @@ Introduza o seu domínio na secção `Reverse` e clique em `Validar`{.action}.
 A Microsoft utiliza uma política de lista branca. Isto significa que, de início, todos os servidores estão na lista negra e é necessário um procedimento específico para que o seu servidor de e-mail seja validado.
 
 Para o fazer, por favor abra um [pedido de apoio](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) com a Microsoft.
-
-Para isso, utilize o seguinte [procedimento]
 
 #### Para um servidor Gmail
 
