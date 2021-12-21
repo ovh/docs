@@ -37,11 +37,11 @@ Los módulos en 1 clic permiten la instalación fácil y rápida de un programa 
 
 Para acceder a la parte pública de su sitio web tras la instalación de un módulo en 1 clic, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Web Cloud`{.action}, `Alojamientos`{.action}, el alojamiento correspondiente y, seguidamente, en la pestaña `Módulos en 1 clic`{.action}.
 
-A continuación, haga clic en el botón `..`{.action} a la derecha de la línea correspondiente al módulo y seleccione `Acceder al módulo`{.action}.
+A continuación, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al módulo y seleccione `Acceder al módulo`{.action}.
 
 > [!primary]
 >
-> Si su sitio web no aparece correctamente debido a esta operación, consulte las guías de OVHCLOUD relativas a los alojamientos compartidos en la sección [Diagnóstico](../).
+> Si su sitio web no aparece correctamente debido a esta operación, consulte las guías de OVHCLOUD relativas a los alojamientos compartidos en la sección [Diagnóstico](https://docs.ovh.com/us/es/hosting/).
 >
 
 ### Acceder al panel de administración
@@ -118,7 +118,7 @@ Haga clic en el botón `..`{.action} a la derecha de la línea que designa el m�
 
 > [!warning]
 >
-> Si elimina el módulo 1 clic **no se eliminará automáticamente la base de datos**. Si inicia la instalación de un nuevo CMS sin haber eliminado previamente la base de datos del anterior (y su alojamiento no permite la creación automática de una nueva base de datos), el mensaje "[Se ha producido un error al cargar la información"](../erreurs-frequentes-modules-en-1-clic/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database) se mostrará en su área de cliente.
+> Si elimina el módulo 1 clic **no se eliminará automáticamente la base de datos**. Si inicia la instalación de un nuevo CMS sin haber eliminado previamente la base de datos del anterior (y su alojamiento no permite la creación automática de una nueva base de datos), el mensaje "[Se ha producido un error al cargar la información"](https://docs.ovh.com/us/es/hosting/errores-frecuentes-modulos-en-1-clic/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database) se mostrará en su área de cliente.
 >
 > Si tiene contratado [Kimsufi](https://www.kimsufi.com/fr/hosting.xml) o [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/), o si ya ha creado cuatro bases de datos en su alojamiento [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), deberá eliminar la base de datos indicada en [el paso 1](#step1) ** ANTES de poder crear un nuevo módulo en 1 clic.
 >
@@ -142,8 +142,8 @@ No instale en su sitio plugins ni plantillas que no hayan sido recomendados por 
 
 ## Más información <a name="gofurther"></a>
 
-[Resolver los errores más frecuentes asociados a los módulos en 1 clic](../erreurs-frequentes-modules-en-1-clic/).
+[Resolver los errores más frecuentes asociados a los módulos en 1 clic](https://docs.ovh.com/us/es/hosting/errores-frecuentes-modulos-en-1-clic/).
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/fr/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/>.

@@ -28,7 +28,7 @@ Los módulos en 1 clic permiten la instalación fácil y rápida de un programa 
 ## Requisitos
 
 - Tener contratado un plan de [hosting Cloud](https://www.ovhcloud.com/es-es/web-hosting/) que permita instalar un módulo en 1 clic.
-- Haber creado un módulo en 1 clic en su alojamiento (si todavía no ha realizado la instalación, siga las indicaciones de esta [guía](https://docs.ovh.com/es/hosting/modulos-en-un_clic/)).
+- Haber creado un módulo en 1 clic en su alojamiento (si todavía no ha realizado la instalación, siga las indicaciones de esta [guía](https://docs.ovh.com/es/hosting/)).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
@@ -101,11 +101,11 @@ Conéctese al [espacio FTP del alojamiento](../connexion-espace-stockage-ftp-heb
 - Para DRUPAL: **"settings.php"** (para encontrarlo, acceda a la carpeta **"sitios"** y luego a **"default"**. El nombre de la base de datos aparece con el **"database"**).
 - Para PRESTASHOP: **"parameters.php"** (para encontrarlo, acceda a la carpeta **"app"** y luego a **"config"**. El nombre de la base de su módulo aparece bajo la mención **"database_name'"**).
 
-#### 2\. guardar el módulo (opcional)
+#### 2. guardar el módulo (opcional)
 
 Para hacer copias de seguridad de su sitio web, siga las instrucciones de esta [guía](../exporter-son-site-web/) y recupere los archivos en el espacio FTP de su alojamiento y su base de datos.
 
-#### 3\. eliminar el módulo
+#### 3. eliminar el módulo
 
 > \[!alert]
 >
@@ -118,7 +118,7 @@ Haga clic en el botón `..`{.action} a la derecha de la línea que designa el m�
 
 > [!warning]
 >
-> Si elimina el módulo 1 clic **no se eliminará automáticamente la base de datos**. Si inicia la instalación de un nuevo CMS sin haber eliminado previamente la base de datos del anterior (y su alojamiento no permite la creación automática de una nueva base de datos), el mensaje "[Se ha producido un error al cargar la información"](../erreurs-frequentes-modules-en-1-clic/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database) se mostrará en su área de cliente.
+> Si elimina el módulo 1 clic **no se eliminará automáticamente la base de datos**. Si inicia la instalación de un nuevo CMS sin haber eliminado previamente la base de datos del anterior (y su alojamiento no permite la creación automática de una nueva base de datos), el mensaje "[Se ha producido un error al cargar la información](https://docs.ovh.com/es/hosting/errores-frecuentes-modulos-en-1-clic/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database)" se mostrará en su área de cliente.
 >
 > Si tiene contratado [Kimsufi](https://www.kimsufi.com/fr/hosting.xml) o [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/), o si ya ha creado cuatro bases de datos en su alojamiento [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), deberá eliminar la base de datos indicada en [el paso 1](#step1) ** ANTES de poder crear un nuevo módulo en 1 clic.
 >
@@ -142,8 +142,8 @@ No instale en su sitio plugins ni plantillas que no hayan sido recomendados por 
 
 ## Más información <a name="gofurther"></a>
 
-[Resolver los errores más frecuentes asociados a los módulos en 1 clic](../erreurs-frequentes-modules-en-1-clic/).
+[Resolver los errores más frecuentes asociados a los módulos en 1 clic](https://docs.ovh.com/es/hosting/errores-frecuentes-modulos-en-1-clic/).
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/fr/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -41,7 +41,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 
 > [!primary]
 >
-> Jeśli po wykonaniu tej operacji Twoja strona WWW nie wyświetla się poprawnie, zapoznaj się z przewodnikami OVHCLOUD dotyczącymi hostingu współdzielonego w sekcji [Diagnostyka](../).
+> Jeśli po wykonaniu tej operacji Twoja strona WWW nie wyświetla się poprawnie, zapoznaj się z przewodnikami OVHCLOUD dotyczącymi hostingu współdzielonego w sekcji [Diagnostyka](https://docs.ovh.com/pl/hosting/).
 >
 
 ### Dostęp do interfejsu administratora
@@ -118,7 +118,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 
 > [!warning]
 >
-> Usunięcie modułu 1 kliknięcia **nie spowoduje automatycznego usunięcia bazy danych**. Jeśli uruchomisz instalację nowego CMS bez wcześniejszego usunięcia bazy danych (a Twój hosting nie pozwala na automatyczne utworzenie nowej bazy), w Panelu klienta wyświetli się komunikat "[Wystąpił błąd podczas pobierania informacji (You need at least one free database)](../erreurs-frequentes-modules-en-1-clic/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database)".
+> Usunięcie modułu 1 kliknięcia **nie spowoduje automatycznego usunięcia bazy danych**. Jeśli uruchomisz instalację nowego CMS bez wcześniejszego usunięcia bazy danych (a Twój hosting nie pozwala na automatyczne utworzenie nowej bazy), w Panelu klienta wyświetli się komunikat "[Wystąpił błąd podczas pobierania informacji (You need at least one free database)](https://docs.ovh.com/pl/hosting/bledy-frameworki-moduly-za-1-kliknieciem/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database)".
 >
 > Jeśli posiadasz abonament [Kimsufi](https://www.kimsufi.com/fr/hosting.xml) lub [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) lub utworzyłeś już cztery bazy danych na hostingu [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) lub [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), usuń bazę danych zidentyfikowaną w [etapie 1](#step1) ** PRZEDADP, aby utworzyć nowy moduł za pomocą 1 kliknięcia.
 >
@@ -142,8 +142,8 @@ Nie instaluj na Twojej stronie wtyczek ani szablonów, które nie są zalecane p
 
 ## Sprawdź <a name="gofurther"></a>
 
-[Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](../erreurs-frequentes-modules-en-1-clic/).
+[Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](https://docs.ovh.com/pl/hosting/bledy-frameworki-moduly-za-1-kliknieciem/).
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/fr/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/>.

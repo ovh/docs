@@ -41,7 +41,7 @@ A seguir, clique no botão `...`{.action} à direita da linha relativa ao módul
 
 > [!primary]
 >
-> Se o website não for apresentado corretamente após esta operação, consulte os guias OVHCLOUD relativos aos alojamentos partilhados na secção [Diagnóstico](../).
+> Se o website não for apresentado corretamente após esta operação, consulte os guias OVHCLOUD relativos aos alojamentos partilhados na secção [Diagnóstico](https://docs.ovh.com/pt/hosting/).
 >
 
 ### Aceder à interface de administrador
@@ -118,7 +118,7 @@ A seguir, clique no botão `...`{.action} à direita da linha que designa o seu 
 
 > [!warning]
 >
-> A eliminação do módulo 1 clique **não levará automaticamente à eliminação da base de dados**. Se ativar a instalação de um novo CMS sem eliminar previamente a base de dados do anterior (e o alojamento não permitir a criação automática de uma nova base de dados), aparecerá a mensagem "[Ocorreu um erro durante o carregamento das informações (You need at least one free database)](../erreurs-frequentes-modules-en-1-clic/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database)" na sua Área de Cliente.
+> A eliminação do módulo 1 clique **não levará automaticamente à eliminação da base de dados**. Se ativar a instalação de um novo CMS sem eliminar previamente a base de dados do anterior (e o alojamento não permitir a criação automática de uma nova base de dados), aparecerá a mensagem "[Ocorreu um erro durante o carregamento das informações (You need at least one free database)](https://docs.ovh.com/pt/hosting/erros-frequentes-modulos-em-1-clique/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database)" na sua Área de Cliente.
 >
 > Se dispõe de uma subscrição [Kimsufi](https://www.kimsufi.com/fr/hosting.xml) ou [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) ou se já criou quatro bases de dados sobre o seu alojamento [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), deverá eliminar a base de dados identificada [no passo 1](#step1) **ANTES** de poder criar um novo módulo 1 clique.
 >
@@ -142,8 +142,8 @@ Não instale no seu site plugins ou templates que não foram recomendados pelas 
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Resolver os erros mais frequentes associados aos módulos 1 clique](../erreurs-frequentes-modules-en-1-clic/).
+[Resolver os erros mais frequentes associados aos módulos 1 clique](https://docs.ovh.com/pt/hosting/erros-frequentes-modulos-em-1-clique/).
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/fr/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

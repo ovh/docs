@@ -41,7 +41,7 @@ Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo
 
 > [!primary]
 >
-> Se il tuo sito non appare correttamente a seguito di questa operazione, consulta le guide OVHCLOUD relative agli hosting condivisi nella sezione [Diagnostica](../).
+> Se il tuo sito non appare correttamente a seguito di questa operazione, consulta le guide OVHCLOUD relative agli hosting condivisi nella sezione [Diagnostica](https://docs.ovh.com/it/hosting/).
 >
 
 ### Accedi all'interfaccia amministratore
@@ -118,7 +118,7 @@ Clicca sui tre puntini `...`{.action} a destra della linea che indica il tuo mod
 
 > [!warning]
 >
-> L'eliminazione del modulo 1 click **non comporta automaticamente l'eliminazione del database**. Se avvii l'installazione di un nuovo CMS senza aver prima eliminato il database del precedente (e il tuo hosting non consente la creazione automatica di un nuovo database), il messaggio "[Si è verificato un errore durante il caricamento delle informazioni (You need at least one free database)](../erreurs-frequentes-modules-en-1-clic/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database)" comparirà sul tuo Spazio Cliente.
+> L'eliminazione del modulo 1 click **non comporta automaticamente l'eliminazione del database**. Se avvii l'installazione di un nuovo CMS senza aver prima eliminato il database del precedente (e il tuo hosting non consente la creazione automatica di un nuovo database), il messaggio "[Si è verificato un errore durante il caricamento delle informazioni (You need at least one free database)](https://docs.ovh.com/it/hosting/errori-frequenti-moduli-in-1-click/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database)" comparirà sul tuo Spazio Cliente.
 >
 > Se disponi di un abbonamento [Kimsufi](https://www.kimsufi.com/fr/hosting.xml) o [Personale](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) o hai già creato quattro database sul tuo hosting [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), dovrai eliminare il database identificato [nello Step 1](#step1) ** PRIMA di poter creare un nuovo modulo in 1 click.
 >
@@ -142,8 +142,8 @@ Non installate sul vostro sito plugin o template che non sono stati consigliati 
 
 ## Spingiti oltre <a name="gofurther"></a>
 
-[Risolvere gli errori più frequenti associati ai moduli in 1 click](../erreurs-frequentes-modules-en-1-clic/).
+[Risolvere gli errori più frequenti associati ai moduli in 1 click](https://docs.ovh.com/it/hosting/errori-frequenti-moduli-in-1-click/).
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/fr/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
