@@ -23,8 +23,8 @@ Les modules en 1 clic permettent l’installation facile et rapide d’un logici
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovh.com/fr/hebergement-web/) permettant l'installation d'un module en 1 clic (seule l'offre gratuite [Start10M](../activer-start10m/) n'est pas concernée).
-- Avoir créé un module en 1 clic sur votre hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide](../modules-en-1-clic/)).
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovh.com/fr/hebergement-web/) permettant l'installation d'un module en 1 clic (seule l'offre gratuite [Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) n'est pas concernée).
+- Avoir créé un module en 1 clic sur votre hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide](https://docs.ovh.com/fr/hosting/modules-en-1-clic/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
@@ -90,12 +90,12 @@ Si vous disposez d'une seule base de données dans cette partie de votre espace 
 
 Dans le cas contraire, rendez-vous dans l'onglet `Multisite`{.action}. Notez le nom du `Dossier racine` : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
 
-Connectez-vous ensuite à [l'espace FTP de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/). Ouvrez le `Dossier racine` trouvé précédemment dans l'onglet `Multisite`{.action} et recherchez le fichier de configuration de votre module :
+Connectez-vous ensuite à [l'espace FTP de votre hébergement](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/). Ouvrez le `Dossier racine` trouvé précédemment dans l'onglet `Multisite`{.action} et recherchez le fichier de configuration de votre module :
 
 - Pour WORDPRESS : **« wp-config.php »** (le nom de la base de données apparaît sous la mention **« DB_NAME »**).
 - Pour JOOMLA : **« configuration.php »** (le nom de la base de données apparaît sous la mention **« public $db »**).
-- Pour DRUPAL : **« settings.php »** (Pour le retrouver, rendez-vous dans le dossier **« sites »** puis **« default »**. Le nom de la base de données apparaît sous la mention **« 'database' »**).
-- Pour PRESTASHOP : **« parameters.php »** (Pour le retrouver, rendez-vous dans le dossier **« app »** puis **« config »**. Le nom de la base de votre module apparaît sous la mention **« 'database_name' »**).
+- Pour DRUPAL : **« settings.php »** (Pour le retrouver, rendez-vous dans le dossier **« sites »** puis **« default »**. Le nom de la base de données apparaît sous la mention **« database »**).
+- Pour PRESTASHOP : **« parameters.php »** (Pour le retrouver, rendez-vous dans le dossier **« app »** puis **« config »**. Le nom de la base de votre module apparaît sous la mention **« database_name »**).
 
 #### Étape 2 : sauvegarder votre module
 

@@ -1,10 +1,14 @@
 ---
 title: Come gestire il tuo modulo in 1 click?
 excerpt: Come gestire il tuo modulo in 1 click dallo Spazio Cliente OVHcloud
-slug: gestion_module_1_clic
+slug: 1-click-module-management
 section: CMS
 order: 2
 ---
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
 **Ultimo aggiornamento: 21/12/2021**
 
@@ -18,20 +22,20 @@ I moduli in 1 click permettono di installare facilmente e rapidamente un softwar
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#aller-plus-loin) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
 >
 
 ## Prerequisiti
 
-- Disporre di un'[offerta di hosting Web Cloud](https://www.ovh.com/fr/hebergement-web/) che consenta l'installazione di un modulo in 1 click (non riguarda solo l'offerta gratuita [Start10M](../activer-start10m/))
-- Aver creato un modulo in 1 click sul tuo hosting (Se non l'hai ancora installato, segui questa [guida](../modules-en-1-clic/)).
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disporre di un'[offerta di hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/) che consenta l'installazione di un modulo in 1 click
+- Aver creato un modulo in 1 click sul tuo hosting (Se non l'hai ancora installato, segui questa [guida](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/)).
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
 ### Accedi al tuo sito
 
-Per accedere alla sezione pubblica del tuo sito in seguito all'installazione di un modulo in 1 click, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), clicca su `Web Cloud`{.action}, `Hosting`{.action}, sul tuo hosting e poi sulla scheda `CMS in 1 click`{.action}.
+Per accedere alla sezione pubblica del tuo sito in seguito all'installazione di un modulo in 1 click, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action}, `Hosting`{.action}, sul tuo hosting e poi sulla scheda `CMS in 1 click`{.action}.
 
 Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo e poi su `Accedi al modulo`{.action}.
 
@@ -42,13 +46,13 @@ Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo
 
 ### Accedi all'interfaccia amministratore
 
-Accedi alla sezione riservata agli amministratori del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), clicca su `Web Cloud`{.action}, `Hosting`{.action}, sul tuo hosting e poi sulla scheda `CMS in 1 click`{.action}.
+Accedi alla sezione riservata agli amministratori del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action}, `Hosting`{.action}, sul tuo hosting e poi sulla scheda `CMS in 1 click`{.action}.
 
 Clicca sui tre puntini `...`{.action} a destra della linea relativa al tuo modulo e poi su `Accedi all'interfaccia di amministrazione del modulo`{.action}.
 
 ### Trova l'identificativo amministratore
 
-Per prima cosa, cerca l'email ricevuta durante la creazione del tuo modulo dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)\: clicca sul tuo nome in alto a destra dello schermo e poi, nel menu che appare, clicca sulle tue iniziali (Pulsante `Gestisci il mio account`{.action}) e poi sulla scheda `Email ricevute`{.action}.
+Per prima cosa, cerca l'email ricevuta durante la creazione del tuo modulo dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)\: clicca sul tuo nome in alto a destra dello schermo e poi, nel menu che appare, clicca sulle tue iniziali (Pulsante `Gestisci il mio account`{.action}) e poi sulla scheda `Email ricevute`{.action}.
 
 e passare attraverso la scheda `CMS in 1 click`{.action} dalla sezione `Hosting`{.action} dello Spazio Cliente. L'identificativo amministratore del tuo modulo compare nella colonna `Login`.
 
@@ -63,7 +67,7 @@ In entrambi i casi, riceverai un'email di reimpostazione della password.
 >
 > Nella casella di posta corrispondente, controlla le cartelle `Spam`{.action} e `Corbeille`{.action}.
 >
-> Tutte le email inviate dai nostri servizi sono disponibili nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)\: clicca sul tuo nome in alto a destra dello schermo e, nel menu contestuale a destra dello schermo, clicca sulle tue iniziali (Pulsante `Gestisci il tuo account`{.action}) e poi sulla scheda `Email ricevute`{.action}.
+> Tutte le email inviate dai nostri servizi sono disponibili nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)\: clicca sul tuo nome in alto a destra dello schermo e, nel menu contestuale a destra dello schermo, clicca sulle tue iniziali (Pulsante `Gestisci il tuo account`{.action}) e poi sulla scheda `Email ricevute`{.action}.
 >
 > **Durata di validità dei collegamenti:**
 >
@@ -71,7 +75,7 @@ In entrambi i casi, riceverai un'email di reimpostazione della password.
 > - Dopo aver cliccato sul link, questo è valido solo per 30 minuti.
 >
 
-Per modificare la password di accesso all'interfaccia di gestione del tuo sito **attraverso lo Spazio Cliente OVHcloud**, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), clicca su `Web Cloud`{.action}, `Hosting`{.action}, sul tuo hosting e poi sulla scheda `CMS in 1 click`{.action}.
+Per modificare la password di accesso all'interfaccia di gestione del tuo sito **attraverso lo Spazio Cliente OVHcloud**, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action}, `Hosting`{.action}, sul tuo hosting e poi sulla scheda `CMS in 1 click`{.action}.
 
 Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo e poi su `Modifica la password`{.action}. Clicca su `Conferma`{.action}. Riceverai entro pochi minuti un link per reimpostare la password.
 
@@ -84,7 +88,7 @@ Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo
 
 #### Step 1: identifica il database associato al tuo modulo <a name="step1"></a>
 
-Per eliminare il tuo modulo in 1 click, è necessario iniziare ad identificarne il database in modo **sicuro**. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Clicca su `Web Cloud`{.action}, `Hosting`{.action}, sul tuo hosting e poi sulla scheda `Database`{.action}.
+Per eliminare il tuo modulo in 1 click, è necessario iniziare ad identificarne il database in modo **sicuro**. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Web Cloud`{.action}, `Hosting`{.action}, sul tuo hosting e poi sulla scheda `Database`{.action}.
 
 Se disponi di un solo database in questa parte del tuo Spazio Cliente e non disponi di soluzioni [SQL Privato](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [Cloud Database](https://www.ovh.com/fr/cloud-databases/), puoi considerare che si tratta di quello del tuo sito.
 
@@ -108,7 +112,7 @@ Per effettuare il backup del tuo sito, segui le istruzioni di questa [guida](../
 > L'eliminazione del tuo modulo in 1 click e del suo database comporta anche la cancellazione di **tutti i backup**. I dati eliminati non potranno essere recuperati in seguito.
 >
 
-Per eliminare il tuo modulo in 1 click, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), clicca su `Web Cloud`{.action}, `hosting`{.action}, sul tuo hosting e poi su `CMS in 1 click`{.action}.
+Per eliminare il tuo modulo in 1 click, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action}, `hosting`{.action}, sul tuo hosting e poi su `CMS in 1 click`{.action}.
 
 Clicca sui tre puntini `...`{.action} a destra della linea che indica il tuo modulo e poi sul comando `Elimina il modulo`{.action}.
 
@@ -119,7 +123,7 @@ Clicca sui tre puntini `...`{.action} a destra della linea che indica il tuo mod
 > Se disponi di un abbonamento [Kimsufi](https://www.kimsufi.com/fr/hosting.xml) o [Personale](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) o hai già creato quattro database sul tuo hosting [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), dovrai eliminare il database identificato [nello Step 1](#step1) ** PRIMA di poter creare un nuovo modulo in 1 click.
 >
 
-Per completare l'eliminazione del tuo modulo, clicca sulla scheda `Database`{.action}, sempre nella sezione `Web Cloud`{.action}, `Hosting`{.action} e sull'hosting interessato sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) e clicca su `...`{.action} a destra della linea che designa il database e sul pulsante ` `{.action}Elimina il database di dati.
+Per completare l'eliminazione del tuo modulo, clicca sulla scheda `Database`{.action}, sempre nella sezione `Web Cloud`{.action}, `Hosting`{.action} e sull'hosting interessato sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `...`{.action} a destra della linea che designa il database e sul pulsante ` `{.action}Elimina il database di dati.
 
 Prima di riavviare l'installazione di un nuovo modulo, verifica che le operazioni di eliminazione richieste in precedenza siano state completate tramite la scheda `Task in corso`{.action}.
 
@@ -136,7 +140,7 @@ Non installate sul vostro sito plugin o template che non sono stati consigliati 
 - [Drupal](https://www.drupal.fr/forum){.external}
 - [Prestashop](https://www.prestashop.com/forums/){.external}
 
-## Spingiti oltre <a name="aller-plus-loin"></a>
+## Spingiti oltre <a name="gofurther"></a>
 
 [Risolvere gli errori più frequenti associati ai moduli in 1 click](../erreurs-frequentes-modules-en-1-clic/).
 
