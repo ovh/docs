@@ -89,6 +89,7 @@ Verify the settings in the summary window then click `Finish`{.action}.
 ![VSAN](images/en09vsanready.png){.thumbnail}
 
 
+Go back to the cluster configuration and turn vSphere HA back on.<br>
 Your datastore is visible in the storage section and available to use.
 
 ![VSAN](images/en10vsandata.png){.thumbnail}
@@ -99,118 +100,53 @@ Your datastore is visible in the storage section and available to use.
 >
 
 
+### Turn off vSAN
 
 
-The only options we will enable are deduplication and compression. These will help you optimise data storage, by only storing duplicated data once.
-
-This process works by using high-performance flash drives, rather than standard mechanical disks.
-
-![](images/vsan_04.png){.thumbnail}
-
-The network adapters for vSAN traffic are offered automatically.
-
-Then click `Next`{.action} to select the disks you want to use for vSAN storage. As soon as you turn vSAN on, the disks are detected automatically.
-
-![](images/vsan_05.png){.thumbnail}
-
-> [!primary]
->
-> If you have deployed vSAN before and the desks are already set, they do not need to be selected again. The selection screen is empty, but you can still proceed to the next step.
->
-> ![](images/vsan_06.png){.thumbnail}
->
-
-In this new screen, you can check that the settings are all correct before you launch the process.
-
-![](images/vsan_07.png){.thumbnail}
-
-It can take a few minutes to turn vSAN on. Once it has been turned on, you can view the configuration details by clicking on the ‘vSAN’ tab.
-
-![](images/vsan_08.png){.thumbnail}
-
-> [!warning]
->
-> It is important to turn on your cluster’s high-availability feature again.
->
-
-### Turn off vSAN.
-
-> [!warning]
->
-> In vSphere 6.5, operations involving vSAN are only available in the vSphere Web Client in Flash (Flex), not in the HTML 5 interface.
->
-
-#### Evacuate the datastore.
-
-With vMotion Storage, you can evacuate all of the virtual machines hosted on the vSAN datastore, or delete the machines you are no longer using.
-
+Before turning off vSAN, make sure to evacuate all of the virtual machines hosted on the datastore, or delete the machines you are no longer using.
 Click on the ‘Datastore’ tab, and check that there are no virtual machines set up on the vSAN datastore.
 
-![](images/vsan_09.png){.thumbnail}
+![VSAN](images/en11vsanvm.png){.thumbnail}
+
 
 #### Delete disk groups.
 
-If you would like to delete all of the vSAN configuration details for your disks, you can delete the group of disks create by vSAN when you turned it on.
+To delete all of the vSAN configuration details for your disks, you need to delete the group of disks create by vSAN when you turned it on.<br>
+In the Cluster configuration menu, go down to `vSAN`{.action} then `Disk Management`{.action}.<br>
+For each disk group, click on `...`{.action} then `Remove`{.action}.<br>
 
-To do this, click on the ‘vSAN’ tab in the cluster properties, and go to the ‘Disk Management’ section.
+![VSAN](images/en12vsanremove.png){.thumbnail}
 
-![](images/vsan_11.png){.thumbnail}
 
-For each of your hosts, select the disk group concerned, and click on the delete icon just above it.
+You are given the option to migrate data. With an empty datastore, there is No data migration necessary.<br>
+Click on `Remove`{.action}.
 
-You will then be asked to confirm:
+![VSAN](images/en13vsanmig.png){.thumbnail}
 
-![](images/vsan_12.png){.thumbnail}
 
-The first two options are useful if you want to remove a host from a cluster, but keep your vSAN datastore working.
+Repeat for each of the nodes in the cluster, until the entire disk group has been cleared.<br>
+You can safely ignore  error messages regarding the health of the disk group.
 
-Since you are about to delete the entire datastore, you do not need to migrate your data. You can select the final option — ‘Do not evacuate data’.
+#### Turn off Services.
 
-The host deletion will take a few minutes.
+The same way you turned off the high-availability feature to set up vSAN, you will need to turn it off before you stop vSAN.
 
-Repeat this action for each of the nodes in the cluster, until the entire disk group has been deleted:
+![HA](images/en03ha.png){.thumbnail}
 
-![](images/vsan_13.png){.thumbnail}
 
-You can ignore any error messages that appear regarding the health of the disk group.
+Once high-availability has been turned off, you can stop the vSAN service in the cluster properties by clicking `Turn Off vSAN`{.action}
 
-#### Turn off high-availability.
+![SERVICE](images/en14vsanoff.png){.thumbnail}
 
-The same way you turned on the high-availability feature, you will need to turn it off for the cluster before you stop vSAN. To do this, go to the cluster properties, in the ‘vSphere Availability’ section, then untick the "Turn ON vSphere HA" box.
+Confirm by clicking ‘Turn Off’ in the next window.
 
-![](images/vsan_14.png){.thumbnail}
+![SERVICE](images/en15vsanconfirm.png){.thumbnail}
 
-#### Turn off vSAN.
+vSan is off.
 
-Once high-availability has been turned off, you can stop vSAN.
 
-In the cluster’s properties, click ‘Modify’.
+Congratulations and thank you.
 
-![](images/vsan_16.png){.thumbnail}
-
-Then untick the ‘Turn ON vSAN’ box.
-
-![](images/vsan_17.png){.thumbnail}
-
-Then click confirm for the request that appears:
-
-![](images/vsan_18.png){.thumbnail}
-
-> [!primary]
->
-> If high-availability has not been turned off correctly, you will receive the following error message:
->
-> ![](images/vsan_19_FR.png){.thumbnail}
->
-
-Once the operation is complete, you will receive the following confirmation message:
-
-![](images/vsan_20.png){.thumbnail}
-
-> [!warning]
->
-> If required, you will need to turn the high-availability features back on after this change, if the cluster continues to host virtual machines stored on external datastores.
->
 
 ## Go further
 
