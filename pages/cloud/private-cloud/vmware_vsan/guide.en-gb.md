@@ -59,11 +59,48 @@ Turn off vSphere HA and click `OK`{.action}.
 ![HA](images/en03ha.png){.thumbnail}
 
 
-#### vSAN Settings
+#### Turn on vSAN Service
 
-This guide is based on vSAN’s essential features. As a result, we are using the default options, which are perfectly suited to this usage:
+In the Cluster configuration menu, go down to `vSAN`{.action} then `Services`{.action}- and click on `Configure`{.action}.
 
-![](images/vsan_03.png){.thumbnail}
+![VSAN](images/en04vsan.png){.thumbnail}
+
+
+This guide is based on vSAN’s essential features so we will be using the default options.<br>
+All of our hosts are on the same site. We'll select Single site cluster and click `Next`{.action}.
+
+![VSAN](images/en05vsantype.png){.thumbnail}
+
+
+We recommend using Deduplication and Compression to optimize storage.<br>
+Click `Next`{.action}.
+
+![VSAN](images/en06vsanservices.png){.thumbnail}
+
+
+The Claim disks window assigns avalaible disks to cache or capacity (see [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external} for explanation) depending on types and sizes. You can customize it to your need.<br>
+Click `Next`{.action}.
+
+![VSAN](images/en07vsanclaim.png){.thumbnail}
+
+
+With three hosts, fault domain is set up automatically and a single failure will be tolerated.<br>
+Click `Next`{.action}.
+
+![VSAN](images/en08vsanfault.png){.thumbnail}
+
+
+Verify the settings in the summary window then click `Finish`{.action}.
+
+![VSAN](images/en09vsanready.png){.thumbnail}
+
+
+Your datastore is visible in the storage section and available to use.
+
+![VSAN](images/en10vsandata.png){.thumbnail}
+
+
+
 
 The only options we will enable are deduplication and compression. These will help you optimise data storage, by only storing duplicated data once.
 
