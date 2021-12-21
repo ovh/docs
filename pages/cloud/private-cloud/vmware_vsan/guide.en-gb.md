@@ -13,13 +13,16 @@ Find out how to use the power of Hyperconvergence for your virtual machines with
 
 **This guide explains how to set up VMware vSAN on the OVH Private Cloud.**
 
+
 ## Requirements
 
-* an [OVH Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
-* at least three vSAN hosts added
-* access to the vSphere interface
+- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Have a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Have at least three vSAN hosts
+
 
 ## Instructions
+
 
 ### What is vSAN?
 
@@ -34,20 +37,27 @@ For full concept review and technical specifications, check out the [Official VM
 >
 
 
-### Turn vSAN on.
+### Setting up vSAN
 
-> [!warning]
->
-> In vSphere 6.5, operations involving vSAN are only available in the vSphere Web Client in Flash (Flex), not in the HTML 5 interface.
->
+#### Turn off vSphere HA
 
-#### Turn off high-availability mode (vSphere HA).
+vSAN relies on the cluster’s high-availability features. But before you start any operation, you have to ensure that you have it turned off.
 
-vSAN relies on the cluster’s high-availability features. But before you start any operation, it is important to ensure that you have this mode turned off.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.
 
-To turn it off, go to the properties of the cluster you want to turn on vSAN for, in the ‘vSphere Availability’ section. Next, untick the following box:
+![Menu](images/en01hosts.png){.thumbnail}
 
-![](images/vsan_01.png){.thumbnail}
+
+On the left side, select your cluster, go in the `Configure`{.action} tab then `vSphere Availability`{.action}.<br>
+Click the `Edit`{.action} button.
+
+![Menu](images/en02cluster.png){.thumbnail}
+
+
+Turn off vSphere HA and click `OK`{.action}.
+
+![HA](images/en03ha.png){.thumbnail}
+
 
 #### vSAN Settings
 
