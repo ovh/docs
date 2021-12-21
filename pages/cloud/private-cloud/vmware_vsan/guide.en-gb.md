@@ -5,7 +5,7 @@ excerpt: 'Use the power of Hyperconvergence with vSAN'
 section: 'VMware vSphere features'
 ---
 
-**Last updated 17th September 2019**
+**Last updated 21th December 2021**
 
 ## Objective
 
