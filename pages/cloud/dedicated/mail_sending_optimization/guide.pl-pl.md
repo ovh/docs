@@ -32,7 +32,7 @@ Polityka antyspamowa jest coraz bardziej rygorystyczna. Aby ograniczyć wysyłk�
 
 ### Konfiguracja rekordu SPF
 
-W przypadku infrastruktury dedykowanej (serwer dedykowany, VPS, instancja Public Cloud lub Hosted Private Cloud) pole SPF ma postać:  `v=spf1 ip4:server_ipv4 ~all`.
+W przypadku infrastruktury dedykowanej (serwer dedykowany, VPS, instancja Public Cloud lub Hosted Private Cloud) pole SPF ma postać: `v=spf1 ip4:server_ipv4 ~all`. Pamiętaj, aby zamienić "server_ipv4" na adres IPv4 serwera.
 
 > [!primary]
 >
@@ -46,7 +46,7 @@ W przypadku infrastruktury dedykowanej (serwer dedykowany, VPS, instancja Public
 
 Aby uzyskać więcej informacji na temat składni rekordu SPF, zapoznaj się z poniższym linkiem: <http://www.open-spf.org/>.
 
-Możesz oczywiście pójść o krok dalej, konfigurując pole SPF danej domeny lub podając IPv6. Aby dowiedzieć się, jak to zrobić, zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji rekordu SPF](https://docs.ovh.com/pl/domains/uslugi_www_pole_spf/).
+Możesz oczywiście pójść o krok dalej, konfigurując rekordu SPF danej domeny lub podając IPv6. Aby dowiedzieć się, jak to zrobić, zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji rekordu SPF](https://docs.ovh.com/pl/domains/uslugi_www_pole_spf/).
 
 ### Konfiguracja rekordu DKIM
 
@@ -64,7 +64,7 @@ Jeśli Twoje serwery DNS są zarządzane przez OVHcloud, zapoznaj się z tym [pr
 
 Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny.
 
-Następnie dodaj rekord PTR (znany również jako rewers):
+Następnie dodaj rekordu PTR (znany również jako rewers):
 
 W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do zakładki `Bare Metal Cloud`{.action}, następnie kliknij sekcję `IP`{.action} na dole po lewej stronie. 
 

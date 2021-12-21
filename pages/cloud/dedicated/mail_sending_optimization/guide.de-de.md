@@ -32,7 +32,7 @@ Antispam-Strategien werden immer strikter. Um Ihren Versand von E-Mails zu optim
 
 ### SPF-Eintrag konfigurieren
 
-Bei dedizierten Infrastrukturen (Dedicated Server, VPS, Public Cloud Instanz oder Hosted Private Cloud) ist der optimale SPF-Eintrag in folgender Form:  `v=spf1 ip4:ipv4_des_servers ~all`.
+Bei dedizierten Infrastrukturen (Dedicated Server, VPS, Public Cloud Instanz oder Hosted Private Cloud) ist der optimale SPF-Eintrag in folgender Form: `v=spf1 ip4:server_ipv4 ~all`. Bitte denken Sie daran, 'server_ipv4' durch die IPv4-Adresse Ihres Servers zu ersetzen.
 
 > [!primary]
 >
@@ -46,15 +46,15 @@ Bei dedizierten Infrastrukturen (Dedicated Server, VPS, Public Cloud Instanz ode
 
 Für weitere Informationen zur Syntax des SPF-Eintrags lesen Sie folgenden Link: <http://www.open-spf.org/>.
 
-Sie können natürlich noch weiter gehen, indem Sie den SPF-Eintrag einer bestimmten Domain konfigurieren oder eine IPv6 angeben. Wie Sie Ihren SPF-Eintrag konfigurieren, lesen Sie [unsere Anleitung zur Vorgehensweise](https://docs.ovh.com/fr/domains/le-champ-spf/).
+Sie können natürlich noch weiter gehen, indem Sie den SPF-Eintrag einer bestimmten Domain konfigurieren oder eine IPv6 angeben. Wie Sie Ihren SPF-Eintrag konfigurieren, lesen Sie [einen SPF-Eintrag konfigurieren](https://docs.ovh.com/de/domains/webhosting_spf-eintrag/).
 
 ### DKIM-Eintrag konfigurieren
 
 Die Konfiguration eines DKIM-Eintrags (DomainKeys Identified Mail) bietet zusätzlichen Schutz, um zu verhindern, dass Ihre E-Mails als Spam gekennzeichnet werden. DKIM ist eine einfache Signatur, mit der die Sender-Domain authentifiziert werden kann.
 
-Diese Authentifizierung erfolgt mit einem DKIM-Schlüssel, der in Ihrer DNS-Zone hinzugefügt werden soll. Sie finden verschiedene DKIM-Schlüsselgeneratoren, darunter <http://dkimcore.org/tools/keys.html>auch. Bitte folgen Sie den Anweisungen auf der Seite des Generators Ihrer Wahl.
+Diese Authentifizierung erfolgt mit einem DKIM-Schlüssel, der in Ihrer DNS-Zone hinzugefügt werden soll. Sie finden verschiedene DKIM-Schlüsselgeneratoren, darunter <http://dkimcore.org/tools/keys.html> auch. Bitte folgen Sie den Anweisungen auf der Seite des Generators Ihrer Wahl.
 
-### Reverse konfigurieren
+### *Reverse IP* konfigurieren
 
 Um den Versand zu optimieren und das Risiko einer Blockierung Ihrer E-Mails zu verringern, muss ein IP-Reverse mit Ihrer Domain konfiguriert werden.
 
@@ -66,15 +66,15 @@ Nach der Änderung der DNS-Zone Ihrer Domain ist eine Propagationszeit von maxim
 
 Wenn Sie fertig sind, fügen Sie den PTR-Eintrag (auch bekannt als Reverse):
 
-Gehen Sie [in Ihrem OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Kundencenter auf den Tab `Bare Metal Cloud`{.action} und klicken Sie links unten auf den Bereich `IP`{.action}. 
+Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} auf den Tab `Bare Metal Cloud`{.action} und klicken Sie links unten auf den Bereich `IP`{.action}. 
 
 ![IP Reverse](images/ipsection.png)
 
-Wählen Sie im Dropdown-Menü **"Dienst "** einen Server mit einer IPv4-Adresse aus:
+Wählen Sie im Dropdown-Menü **Dienst** einen Server mit einer IPv4-Adresse aus:
 
 ![IP Reverse](images/servicedropmenu.png)
 
-Klicken Sie auf den Button `...`{.action}. rechts neben der entsprechenden Zeile und dann auf `Reverse ändern`{.action}:
+Klicken Sie auf den Button `...`{.action} rechts neben der entsprechenden Zeile und dann auf `Reverse ändern`{.action}:
 
 ![IP Reverse](images/setreversedns.png)
 
@@ -85,10 +85,10 @@ Geben Sie Ihre Domain in den Bereich `Reverse` ein und klicken Sie auf `Bestäti
 > [!primary]
 > Wenn Sie Ihren Domänennamen im Reverse-Verfahren eingeben, wird sofort überprüft, ob der A-Record auf dieselbe IP zurückverweist. Dies wird bei Anti-Spam-Verfahren verwendet, daher muss Ihr A-Record gültig sein und weitergegeben werden. Bei der Eingabe des Reverse-Verfahrens sind bestimmte Regeln zu beachten:
 >
->  - Der *Reverse* kann nicht mit einem `-`
->  - Der *Reverse* darf höchstens 80 Zeichen enthalten
->  - Der *Reverse* darf keine Großbuchstaben enthalten
->  - Der *Reverse* muss mit einem enden `.`
+>  - Der *reverse* kann nicht mit einem `-`
+>  - Der *reverse* darf höchstens 80 Zeichen enthalten
+>  - Der *reverse* darf keine Großbuchstaben enthalten
+>  - Der *reverse* muss mit einem enden `.`
 >
 > Beispiel: "MyDomain.ca" im Reverse-Feld wäre **mydomain.ca.**
 >

@@ -32,11 +32,11 @@ Le politiche anti-spam sono sempre più severe. Per rendere più fluido l'invio 
 
 ### Configura il record SPF
 
-Per le infrastrutture dedicate (server dedicati, VPS, istanze Public Cloud o Hosted Private Cloud), il record SPF ottimale si presenta come:  `v=spf1 ip4:ipv4_del_server ~all`.
+Per le infrastrutture dedicate (server dedicati, VPS, istanze Public Cloud o Hosted Private Cloud), il record SPF ottimale si presenta come: `v=spf1 ip4:server_ipv4 ~all`. Ricordati di sostituire 'server_ipv4' con l'indirizzo IPv4 del tuo server.
 
 > [!primary]
 >
-> Il simbolo davanti all'*all* è molto importante:
+> Il simbolo davanti *all* è molto importante:
 >
 > - `+`: accettare
 > - `-`: non accettare
@@ -52,7 +52,7 @@ Per maggiori informazioni sulla sintassi del record SPF, clicca su questo link: 
 
 La configurazione di un record DKIM (DomainKeys Identified Mail) offre una protezione aggiuntiva per evitare che le tue email siano contrassegnate come Spam. Il DKIM è una firma che permette di autenticare il dominio mittente.
 
-Questa autenticazione si effettua con una chiave DKIM da aggiungere alla tua zona DNS. Troverai diversi generatori di chiavi DKIM, di cui <http://dkimcore.org/tools/keys.html> . Segui le indicazioni fornite sul sito del generatore scelto.
+Questa autenticazione si effettua con una chiave DKIM da aggiungere alla tua zona DNS. Troverai diversi generatori di chiavi DKIM, di cui <http://dkimcore.org/tools/keys.html>. Segui le indicazioni fornite sul sito del generatore scelto.
 
 ### Configura il reverse (*reverse IP*)
 
@@ -83,7 +83,7 @@ Inserisci il tuo dominio nella sezione `Reverse` e clicca su `Conferma`{.action}
 ![Reverse IP](images/enterreverse.png)
 
 > [!primary]
-> Quando inserisci il tuo dominio nel reverse, verifica immediatamente se il record A restituisce lo stesso IP. Questa operazione viene utilizzata nelle procedure anti-spam e il record A deve essere valido e divulgato. Per inserire il *reverse*, è necessario seguire alcune regole:
+> Quando inserisci il tuo dominio nel reverse, verifica immediatamente se il record A restituisce lo stesso IP. Questa operazione viene utilizzata nelle procedure anti-spam e il record A deve essere valido e divulgato. Per inserire il reverse, è necessario seguire alcune regole:
 >
 >  - il reverse non può iniziare con un `-`
 >  - il reverse non può contenere più di 80 caratteri

@@ -32,7 +32,7 @@ As políticas antisspam são cada vez mais rigorosas. Para simplificar o envio d
 
 ### Configurar o registo SPF
 
-No caso de uma infraestrutura dedicada (servidor dedicado, VPS, instância Public Cloud ou Hosted Private Cloud), o campo SPF ótimo apresenta-se sob a forma:  `v=spf1 ip4:server_ipv4 ~all`.
+No caso de uma infraestrutura dedicada (servidor dedicado, VPS, instância Public Cloud ou Hosted Private Cloud), o campo SPF ótimo apresenta-se sob a forma:  `v=spf1 ip4:server_ipv4 ~all`. Não se esqueça de substituir 'server_ipv4' pelo endereço IPv4 do seu servidor.
 
 > [!primary]
 >
@@ -46,7 +46,7 @@ No caso de uma infraestrutura dedicada (servidor dedicado, VPS, instância Publi
 
 Para mais informações sobre a sintaxe do registo SPF, consulte a seguinte ligação: <http://www.open-spf.org/>.
 
-Pode, naturalmente, ir mais longe, configurando o registo SPF de um domínio específico ou especificando um IPv6. Para saber como realizar esta operação, consulte o nosso manual sobre como [configurar um registo SPF](https://docs.ovh.com/fr/domains/le-champ-spf/).
+Pode, naturalmente, ir mais longe, configurando o registo SPF de um domínio específico ou especificando um IPv6. Para saber como realizar esta operação, consulte o nosso manual sobre como [configurar o registo SPF](https://docs.ovh.com/pt/domains/partilhado_o_campo_spf/).
 
 ### Configurar o registo DKIM
 
@@ -83,7 +83,7 @@ Introduza o seu domínio na secção `Reverse` e clique em `Validar`{.action}.
 ![Reverse IP](images/enterreverse.png)
 
 > [!primary]
-> Ao introduzir o seu nome de domínio na reverse, este verifica imediatamente se o registo A remete para o mesmo IP. Isto é utilizado nos procedimentos antisspam, pelo que o seu registo A deve ser válido e propagado. Há certas regras a seguir aquando da introdução da *reverse*:
+> Ao introduzir o seu nome de domínio na reverse, este verifica imediatamente se o registo A remete para o mesmo IP. Isto é utilizado nos procedimentos antisspam, pelo que o seu registo A deve ser válido e propagado. Há certas regras a seguir aquando da introdução da reverse:
 >
 >  - a reverse não pode começar por um `-`
 >  - a reverse não pode ter mais de 80 caracteres
@@ -95,7 +95,7 @@ Introduza o seu domínio na secção `Reverse` e clique em `Validar`{.action}.
 
 ### Casos específicos de envio de e-mails
 
-#### Para um servidor Microsoft (Outlook, etc..)
+#### Para um servidor Microsoft (Outlook, etc...)
  
 A Microsoft utiliza uma política de lista branca. Isto significa que, de início, todos os servidores estão na lista negra e é necessário um procedimento específico para que o seu servidor de e-mail seja validado.
 
