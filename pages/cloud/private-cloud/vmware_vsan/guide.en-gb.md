@@ -31,12 +31,6 @@ vSAN is an object storage solution offered by VMware. It gathers a set of disks 
 For full concept review and technical specifications, check out the [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external}
 
 
-> [!warning]
->
-> For performance and resilience reasons, VMware recommends not using more than 70% of the volume of a vSAN datastore.
->
-
-
 ### Setting up vSAN
 
 #### Turn off vSphere HA
@@ -98,6 +92,11 @@ Verify the settings in the summary window then click `Finish`{.action}.
 Your datastore is visible in the storage section and available to use.
 
 ![VSAN](images/en10vsandata.png){.thumbnail}
+
+> [!warning]
+>
+> For performance and resilience reasons, VMware recommends not using more than 70% of the volume of a vSAN datastore.
+>
 
 
 
