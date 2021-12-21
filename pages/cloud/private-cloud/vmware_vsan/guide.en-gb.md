@@ -1,8 +1,8 @@
 ---
-title: 'Using VMware Hyperconvergence with vSAN'
+title: Using VMware Hyperconvergence with vSAN
 slug: vmware-vsan
-excerpt: 'Use the power of Hyperconvergence with vSAN'
-section: 'VMware vSphere features'
+excerpt: Use the power of Hyperconvergence with vSAN
+section: VMware vSphere features
 ---
 
 **Last updated 21th December 2021**
@@ -26,12 +26,13 @@ Find out how to use the power of Hyperconvergence for your virtual machines with
 
 ### What is vSAN?
 
-vSAN is an object storage solution offered by VMware. It gathers a set of disks situated directly on your VMware hosts, and presents them as a single datastore. This is known as Software-Defined Storage, or SDS. One of the advantages of vSAN is that it is fully integrated into vSphere, and can be managed directly from vCenter.
+vSAN is an object storage solution offered by VMware. It gathers a set of disks situated directly on your VMware hosts, and presents them as a single datastore. This is known as Software-Defined Storage or SDS. One of the advantages of vSAN is that it is fully integrated into vSphere, and can be managed directly from vCenter.
 
 For full concept review and technical specifications, check out the [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external}
 
 
 ### Setting up vSAN
+
 
 #### Turn off vSphere HA
 
@@ -55,7 +56,7 @@ Turn off vSphere HA and click `OK`{.action}.
 
 #### Turn on vSAN Service
 
-In the Cluster configuration menu, go down to `vSAN`{.action} then `Services`{.action}- and click on `Configure`{.action}.
+In the Cluster configuration menu, go down to `vSAN`{.action} / `Services`{.action} and click on `Configure`{.action}.
 
 ![VSAN](images/en04vsan.png){.thumbnail}
 
@@ -112,7 +113,7 @@ Click on the ‘Datastore’ tab, and check that there are no virtual machines s
 #### Delete disk groups.
 
 To delete all of the vSAN configuration details for your disks, you need to delete the group of disks create by vSAN when you turned it on.<br>
-In the Cluster configuration menu, go down to `vSAN`{.action} then `Disk Management`{.action}.<br>
+In the Cluster configuration menu, go down to `vSAN`{.action} / `Disk Management`{.action}.<br>
 For each disk group, click on `...`{.action} then `Remove`{.action}.<br>
 
 ![VSAN](images/en12vsanremove.png){.thumbnail}
