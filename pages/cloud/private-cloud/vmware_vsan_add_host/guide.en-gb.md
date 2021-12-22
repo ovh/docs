@@ -5,19 +5,62 @@ excerpt: 'Find out how to add an ESXi server to an existing vSAN cluster'
 section: 'VMware vSphere features'
 ---
 
-**Last updated 18/09/2020**
+**Last updated 22/12/2021**
 
 ## Objective
 
-This guide explains how to add an ESXi server to an existing vSAN cluster. You can add a host when you order a new server, or when you replace a faulty server.
+This guide explains how to add a new ESXi server storage to an existing vSAN cluster.
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- access to the vSphere management interface
-- an ESXi server available and integrated into a vSAN cluster
+## Requirements
+
+- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Have a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Have a [vSan Datastore](https://docs.ovh.com/gb/en/private-cloud/vmware-vsan/) deployed
 
 ## Instructions
+
+### Order a new vSan host
+
+Navigate to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and log on with your administrative credentials.
+
+![LOGIN](images/en01login.png){.thumbnail}
+
+
+In the `Hosted Private Cloud`{.action} section, Select your datacenter and go to the `Hosts`{.action} tab.<br>
+Click on the `Order a Host`{.action} button.
+
+![ORDER](images/en02order.png){.thumbnail}
+
+
+Select the fitting vSAN host for your need and click `Confirm Order`{.action}
+
+![LOGIN](images/en03hosttype.png){.thumbnail}
+
+
+Verify the recap of your order and click `Next`{.action}
+
+![LOGIN](images/en04recap.png){.thumbnail}
+
+
+Check the boxes to accept the terms and conditions and go on to the payment.
+
+![LOGIN](images/en05accept.png){.thumbnail}
+
+
+You'll get a confirmation of order with a number.
+
+![LOGIN](images/en06ordered.png){.thumbnail}
+
+
+The new host will be automatically integrated to your infrastructure and you will receive a confirmation email when it is ready for use in vSphere.
+
+
+### Add new vSan host storage to your datastore
+
+
+
 
 Since OVHcloud servers are automatically preconfigured on delivery, adding a host to a vSAN cluster simply specifies which disks will be integrated into the datastore.
 
