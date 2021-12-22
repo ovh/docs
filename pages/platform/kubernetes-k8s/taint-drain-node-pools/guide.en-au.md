@@ -1,7 +1,7 @@
 ---
-title: Deploy applications to specific Nodes and Nodes Pools
-slug: label-nodeaffinity-node-pools
-excerpt: 'Find out how to deploy applications to specific Nodes and Nodes Pools, with labels and NodeAffinity, on OVHcloud Managed Kubernetes'
+title: Taint, cordon and drain specific Nodes and Nodes Pools
+slug: taint-drain-node-pools
+excerpt: 'Find out how to do some operations on specific Nodes and Nodes Pools, like taint, drain and cordon, on OVHcloud Managed Kubernetes'
 section: Tutorials
 ---
 
@@ -27,86 +27,46 @@ section: Tutorials
  }
 </style>
 
-**Last updated 15 December 2021.**
+**Last updated 22 December 2021.**
 
 ## Objective
 
-In this tutorial we are going to show you how to deploy your applications to specific `Nodes` and` Nodes Pools`, with `labels` and `NodeAffinity` Kubernetes concepts, on your OVHcloud Managed Kubernetes Service.
+We previously show you how to deploy your applications to specific `Nodes` and `Nodes Pools`, with `labels` and `NodeAffinity` Kubernetes concepts. In this new tutorial we will show you how to do some common operations on `Nodes` and `Nodes Pools` like `taint`, `cordon` and `drain`, on your OVHcloud Managed Kubernetes Service.
 
-The example chosen here will take advantage of an OVHcloud billing specificity: using monthly billing for nodes that you also plan to keep for the long term can decrease your Kubernetes costs by up to 50%. We are seeing customers with varying workloads creating a first node pool with monthly billing to cover their long-term compute needs, and adding elasticity to the cluster with a second node pool using autoscaling and hourly billing.
-
-We will:
+Thanks to the Node Pool's labels propagation to Nodes, you will:
 
 - create a Managed Kubernetes cluster
-- create a node pool with 3 nodes and "monthly" billing mode
-- create another node pool with autoscaling activated (0 nodes minimum and maximum 10), with "hourly" billing mode
-- deploy an application to a specific node pool (and nodes)
+- create a node pool
+- create another node pool, with a different configuration and with autoscaling activated
+- taint a node
+- cordon a node
+- drain a node
 
+## Why?
+
+A node is a virtual (VM) or physical machine.
+
+Your applications, your workloads will run on Pods, and Pods are running on Nodes.
+
+But sometimes, Kubernetes scheduler can't deploy a Pod on a Node, for several reasons:
+- Node is not ready
+- Nos is unreachable
+- Out of disk
+- Network unaivalable
+- …
+
+For these uses cases, and others ones, you can do operations on Nodes. And thanks to the Node Pool's labels propagation to Nodes, you can target only Nodes about a particular Node Pool.
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-
+- a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 ### Cluster creation
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
-Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu and click on `Create a cluster`{.action}.
-
-![Create a cluster](images/creating-a-cluster1.png){.thumbnail}
-
-Or if you already have a cluster, the UI is a little bit different, you need ton click on `Create a Kubernetes cluster`{.action} button:
-
-![Create a cluster](images/creating-a-cluster1-bis.png){.thumbnail}
-
-Select a location for your new cluster.
-
-![Select a location](images/creating-a-cluster2.png){.thumbnail}
-
-Choose the minor version of Kubernetes.
-
-> [!primary]
-> We recommend to always use the last stable version. 
-> Please read our [End of life / end of support](../eos-eol-policies/) page to understand our version policy.
->
-
-![Choose the minor version of Kubernetes](images/creating-a-cluster3-bis.png){.thumbnail}
-
-You can now choose to integrate your Kubernetes cluster into a private network using OVHcloud vRack. For more information about this option, please read our guide [Using the vRack](../using_vrack/).
-
-![Choose a private network for this cluster](images/creating-a-cluster4-bis.png){.thumbnail}
-
-For this tutorial, we will configure two different node pools.
-
-Reminder: A node pool is a group of nodes sharing the same configuration, allowing you a lot of flexibility in your cluster management. 
-
-![Node pool](images/nodepool.png){.thumbnail}
-
-> [!primary]
-> You can read the [Managing node pools](../managing-nodes/) guide for more information on node pools.
->
-
-For our first node pool, choose a flavor, "B2-7" for example.
-
-![Node pool](images/creating-a-cluster5.png){.thumbnail}
-
-In the next step, define the size of the default node pool.
-
-![Default node pool](images/creating-a-cluster6-bis.png){.thumbnail}
-
-In the next step, choose `Monthly` billing mode.
-
-![Choose the billing mode](images/creating-a-cluster8-bis.png){.thumbnail}
-
-Finally, enter a name for your cluster and click on the `Send`{.action} button.
-
-![Name the cluster](images/creating-a-cluster9.png){.thumbnail}
-
-The cluster creation is now in progress. It should be available within a few minutes in your OVHcloud Control Panel.
+Follow the [cluster creation](../label-nodeaffinity-node-pools/#cluster-creation) step by step guide.
 
 ### Second node pool creation
 
@@ -119,7 +79,7 @@ Click on your cluster, then on `Node pools`{.action} tab.
 We will create our second Node pool.
 Click on `Add a node pool`{.action} button.
 
-Then enter a name for your second node pool, `hourly` for example.
+Then enter a name for your second node pool, `second-node-pool` for example.
 
 ![Name your second node pool](images/create-a-nodepool-2.png){.thumbnail}
 
@@ -129,7 +89,7 @@ Select a flavor for your new node pool, we can choose "B2-7" like our other node
 
 In the next step, define the size of our second node pool.
 This time, we can enable the `Autoscaling`{.action} feature.
-Define the minimum and maximum pool size in that case, 0 in minimum and 10 in maximum, for example.
+Define the minimum and maximum pool size in that case, 3 in minimum and 10 in maximum, for example.
 
 > [!primary]
 > By enabling anti-affinity, current and future nodes will be launched on different hypervisors (physical servers), guaranteeing higher fault tolerance.
@@ -150,164 +110,301 @@ Wait until its status changes to `OK`.
 
 ![Status OK](images/create-a-nodepool-7.png){.thumbnail}
 
-### Check and prepare our Node pools
+### Check everything is correctly configured
 
-To deploy your application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings](https://docs.ovh.com/au/en/kubernetes/configuring-kubectl/) for `kubectl`.
+To do some operations on your Nodes, through `kubectl` CLI, we invite you to follow our guide to [configuring default settings](https://docs.ovh.com/gb/en/kubernetes/configuring-kubectl/).
 
 When you can access to the cluster through `kubectl` command, let's display our node pools:
 
 ```bash
 $ kubectl get nodepool
 NAME                                            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
-hourly                                          b2-7     true          false            false           1         1         1            1           0     10    4m39s
-nodepool-cc40f90c-effb-4945-b7b9-05073725d62d   b2-7     false         true             false           3         3         3            3           0     100   164m
+nodepool-9680a2e9-3e58-48c7-b447-69f5a05c1828   b2-7     false         false            false           3         3         3            3           0     100   23h
+second-node-pool                                b2-7     true          false            false           3         3         3            3           3     10    6m54s
 ```
 
 Our two node pools exist and we can see the different configuration and autoscaling mode.
 
-Let's display our nodes. You should have 3 nodes running in our first node pool and 1 node in our "hourly" node pool:
+Let's display our nodes. You should have 3 nodes running in our first node pool and 3 nodes in our "second-node-pool" node pool:
 
 ```bash
-$ kubectl get node
+$ kubectl get nodes
 NAME                                         STATUS   ROLES    AGE     VERSION
-hourly-node-8e4db2                           Ready    <none>   3m13s   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   161m    v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   163m    v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   161m    v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready    <none>   23h     v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready    <none>   23h     v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready    <none>   23h     v1.22.2
+second-node-pool-node-1e8015                 Ready    <none>   3m44s   v1.22.2
+second-node-pool-node-86c98b                 Ready    <none>   4m10s   v1.22.2
+second-node-pool-node-fba5bf                 Ready    <none>   4m10s   v1.22.2
 ```
 
-If you don't do anything during several minutes, the AutoScaling in "hourly" node pool will terminate the node because of inactivity:
+### Cordon a Node
+
+Cordon a node means make the node unschedulable. This means that this node cannot accommodate any more pods as long as it is marked as `Unschedulable`. 
+
+![Cordon a Node](images/cordon.png)
+
+Instead of cordon each node manually:
 
 ```bash
-$ kubectl get node
-NAME                                         STATUS   ROLES    AGE     VERSION
-nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   3h18m   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   3h20m   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   3h18m   v1.22.2
+kubectl cordon my-node
 ```
 
-### Deploying our application
-
-It's time to discover the power of `labels` and `NodeAffinity` Kubernetes concepts.
-
-We have one node pool with "monthly" billing and another one with "hourly" billing. The goal to have these two node pools is to have the possibility to separate our needs depending on our applications types.
-
-In order to deploy our application in specific nodes, we need to know what is the label of the target node pool.
-
-The thing to know is that the nodes created by Kubernetes have in their label the name of the Node Pool. Thanks to that you can ask Kubernetes to deploy applications in the wanted node pool.
-
-Let's show the labels of our running nodes:
+You can cordon all the nodes in a node pool. We will show you how to cordon all nodes for `second-node-pool` for example thanks to `label`.
 
 ```bash
-$ kubectl get node --show-labels
-NAME                                         STATUS   ROLES    AGE     VERSION   LABELS
-nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   3h56m   v1.22.2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=GRA7,failure-domain.beta.kubernetes.io/zone=nova,kubernetes.io/arch=amd64,kubernetes.io/hostname=nodepool-cc40f90c-effb-4945-b7-node-23e81b,kubernetes.io/os=linux,node.k8s.ovh/type=standard,node.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d,topology.cinder.csi.openstack.org/zone=nova,topology.kubernetes.io/region=GRA7,topology.kubernetes.io/zone=nova
-nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   3h58m   v1.22.2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=GRA7,failure-domain.beta.kubernetes.io/zone=nova,kubernetes.io/arch=amd64,kubernetes.io/hostname=nodepool-cc40f90c-effb-4945-b7-node-4bd23f,kubernetes.io/os=linux,node.k8s.ovh/type=standard,node.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d,topology.cinder.csi.openstack.org/zone=nova,topology.kubernetes.io/region=GRA7,topology.kubernetes.io/zone=nova
-nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   3h56m   v1.22.2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=GRA7,failure-domain.beta.kubernetes.io/zone=nova,kubernetes.io/arch=amd64,kubernetes.io/hostname=nodepool-cc40f90c-effb-4945-b7-node-ef121e,kubernetes.io/os=linux,node.k8s.ovh/type=standard,node.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d,topology.cinder.csi.openstack.org/zone=nova,topology.kubernetes.io/region=GRA7,topology.kubernetes.io/zone=nova
+kubectl cordon -l "nodepool=second-node-pool"
 ```
 
-As you can maybe see, our running Nodes got the label `nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d`.
-The format of the label is: `nodepool=<name of the nodepool>`.
+In my example here the result I got:
 
-It's time to deploy an application, only on our `hourly` node pool and let's see the behavior of the AutoScaling.
+<pre class="console"><code>$ kubectl cordon -l "nodepool=second-node-pool"
+node/second-node-pool-node-1e8015 cordoned
+node/second-node-pool-node-86c98b cordoned
+node/second-node-pool-node-fba5bf cordoned
 
-Create a `deployment.yaml` file with this content:
+$ kubectl get nodes
+NAME                                         STATUS                     ROLES    AGE     VERSION
+nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready                      <none>   23h     v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready                      <none>   23h     v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready                      <none>   23h     v1.22.2
+second-node-pool-node-1e8015                 Ready,SchedulingDisabled   <none>   9m13s   v1.22.2
+second-node-pool-node-86c98b                 Ready,SchedulingDisabled   <none>   9m39s   v1.22.2
+second-node-pool-node-fba5bf                 Ready,SchedulingDisabled   <none>   9m39s   v1.22.2
+</code></pre>
+
+All the nodes in `second-node-pool` are now marked as `Unschedulable`.
+This means you can't deploy Pods on these nodes, on this node pool.
+
+### UnCordon a Node
+
+You can also undo your action with `uncordon` command.
+
+```bash
+kubectl uncordon -l "nodepool=second-node-pool"
+```
+
+In my example:
+
+<pre class="console"><code>
+$ kubectl uncordon -l "nodepool=second-node-pool"
+node/second-node-pool-node-1e8015 uncordoned
+node/second-node-pool-node-86c98b uncordoned
+node/second-node-pool-node-fba5bf uncordoned
+
+$ kubectl get nodes
+NAME                                         STATUS   ROLES    AGE   VERSION
+nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready    <none>   23h   v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready    <none>   23h   v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready    <none>   23h   v1.22.2
+second-node-pool-node-1e8015                 Ready    <none>   27m   v1.22.2
+second-node-pool-node-86c98b                 Ready    <none>   27m   v1.22.2
+second-node-pool-node-fba5bf                 Ready    <none>   27m   v1.22.2
+</code></pre>
+
+Nodes are in `Ready` state again.
+
+### Drain a Node
+
+You can use `kubectl drain` command to safely evict all of your pods from a node before you perform maintenance on the node or reduce the number of nodes for example. Safe evictions allow the pod's containers to gracefully terminate and will respect the `PodDisruptionBudgets` you have specified (if relevant).
+
+![Drain a Node](images/drain.png)
+
+You can drain all the nodes for `second-node-pool` thanks to `label`.
+
+```bash
+kubectl drain -l "nodepool=second-node-pool"
+```
+
+In my example:
+
+<pre class="console"><code>
+$ kubectl drain -l "nodepool=second-node-pool"
+
+node/second-node-pool-node-1e8015 cordoned
+node/second-node-pool-node-86c98b cordoned
+node/second-node-pool-node-fba5bf cordoned
+
+There are pending nodes to be drained:
+ second-node-pool-node-1e8015
+ second-node-pool-node-86c98b
+ second-node-pool-node-fba5bf
+error: cannot delete DaemonSet-managed Pods (use --ignore-daemonsets to ignore): kube-system/canal-9tc54, kube-system/kube-proxy-7l7h9, kube-system/wormhole-lxknc
+
+$ kubectl get nodes
+NAME                                         STATUS                     ROLES    AGE    VERSION
+nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready                      <none>   25h    v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready                      <none>   25h    v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready                      <none>   25h    v1.22.2
+second-node-pool-node-1e8015                 Ready,SchedulingDisabled   <none>   118m   v1.22.2
+second-node-pool-node-86c98b                 Ready,SchedulingDisabled   <none>   119m   v1.22.2
+second-node-pool-node-fba5bf                 Ready,SchedulingDisabled   <none>   119m   v1.22.2
+</code></pre>
+
+As you can see, Kubernetes can't remove `DaemonSet` objects so in order to not have this error message, ou can add the `--ignore-daemonsets` option:
+
+```bash
+kubectl drain -l "nodepool=second-node-pool" --ignore-daemonsets
+```
+
+Now you can do whatever you want on Nodes or on this node pool and after that you can uncordon the Nodes of the node pool, to come back as before the drain:
+
+```bash
+kubectl uncordon -l "nodepool=second-node-pool"
+```
+
+Nodes are again in `Ready` state.
+
+<pre class="console"><code>$ kubectl uncordon -l "nodepool=second-node-pool"
+
+kunode/second-node-pool-node-1e8015 uncordoned
+node/second-node-pool-node-86c98b uncordoned
+bnode/second-node-pool-node-fba5bf uncordoned
+
+$ kubectl get nodes
+NAME                                         STATUS   ROLES    AGE    VERSION
+nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready    <none>   25h    v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready    <none>   25h    v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready    <none>   25h    v1.22.2
+second-node-pool-node-1e8015                 Ready    <none>   122m   v1.22.2
+second-node-pool-node-86c98b                 Ready    <none>   123m   v1.22.2
+second-node-pool-node-fba5bf                 Ready    <none>   123m   v1.22.2
+</code></pre>
+
+### Taint a Node
+
+Node taints are `key:value` pairs associated with an effect.
+Multiple taints can be setted in the same Node.
+
+![Taint a Node](images/taint.png)
+
+* With `NoSchedule` taint, pods that don’t tolerate the taint can’t be schedule on the node.
+* With `PreferNoSchedule` taint, Kubernetes avoid scheduled Pods that don’t tolerate the taint.
+* With `NoExecute` taint, Pods are evicted from the Node if they are already running, else they can’t be scheduling.
+
+You can add a taint in all the nodes for `second-node-pool` thanks to `label`.
+
+Pause a node, don’t accept new workloads on it:
+
+```bash
+kubectl taint node -l "nodepool=second-node-pool" my-key=my-value:NoSchedule
+```
+
+And you can display the taints for all nodes:
+
+```bash
+kubectl get nodes  -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{.spec.taints}{"\n"}{end}'
+```
+
+In my example:
+
+<pre class="console"><code>$ kubectl taint node -l "nodepool=second-node-pool" my-key=my-value:NoSchedule
+node/second-node-pool-node-1e8015 tainted
+node/second-node-pool-node-86c98b tainted
+node/second-node-pool-node-fba5bf tainted
+
+$ kubectl get nodes  -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{.spec.taints}{"\n"}{end}'
+nodepool-9680a2e9-3e58-48c7-b4-node-874105
+nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2
+nodepool-9680a2e9-3e58-48c7-b4-node-c65648
+second-node-pool-node-1e8015
+[{"effect":"NoSchedule","key":"my-key","value":"my-value"}]
+second-node-pool-node-86c98b
+[{"effect":"NoSchedule","key":"my-key","value":"my-value"}]
+second-node-pool-node-fba5bf
+[{"effect":"NoSchedule","key":"my-key","value":"my-value"}]
+</code></pre>
+
+You can Unpause a node:
+
+```bash
+kubectl taint node -l "nodepool=second-node-pool" my-key=my-value:NoSchedule my-key:NoSchedule-
+```
+
+In my example:
+
+<pre class="console"><code>$ kubectl taint node -l "nodepool=second-node-pool" my-key:NoSchedule-
+node/second-node-pool-node-1e8015 untainted
+node/second-node-pool-node-86c98b untainted
+node/second-node-pool-node-fba5bf untainted
+</code></pre>
+
+### Taint a Node and create a pod only on these tainted nodes
+
+Another useful feature could be to taint a Node and to deploy an application only on particular nodes. 
+For example you can dedicate a set of nodes for exclusive use by a particular set of users or define a subset of nodes with specialized hardware.
+
+In order to do that you can taint `second-node-pool` nodes with a particular key and value `flavor=b2-7` for example:
+
+```bash
+kubectl taint node -l "nodepool=second-node-pool" flavor=b2-7:NoSchedule
+```
+
+In my example:
+<pre class="console"><code>$ kubectl taint node -l "nodepool=second-node-pool" flavor=b2-7:NoSchedule
+node/second-node-pool-node-1e8015 tainted
+node/second-node-pool-node-86c98b tainted
+node/second-node-pool-node-fba5bf tainted
+
+$ kubectl get nodes  -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{.spec.taints}{"\n"}{end}'
+nodepool-9680a2e9-3e58-48c7-b4-node-874105
+nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2
+nodepool-9680a2e9-3e58-48c7-b4-node-c65648
+second-node-pool-node-1e8015
+[{"effect":"NoSchedule","key":"flavor","value":"b2-7"}]
+second-node-pool-node-86c98b
+[{"effect":"NoSchedule","key":"flavor","value":"b2-7"}]
+second-node-pool-node-fba5bf
+[{"effect":"NoSchedule","key":"flavor","value":"b2-7"}]
+</code></pre>
+
+And then you can create a Pod that can be scheduled only on Nodes who have the taint `flavor=b2-7:NoSchedule`.
+
+Create a `my-pod.yaml` YAML manifest file with the following content:
 
 ```yaml
 apiVersion: v1
-kind: Service
+kind: Pod
 metadata:
-  name: hello-world
-  labels:
-    app: hello-world
+  name: my-pod
 spec:
-  type: LoadBalancer
-  ports:
-  - port: 80
-    targetPort: 80
-    protocol: TCP
-    name: http
-  selector:
-    app: hello-world
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: hello-world-deployment
-  labels:
-    app: hello-world
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: hello-world
-  template:
-    metadata:
-      labels:
-        app: hello-world
-    spec:
-      containers:
-      - name: hello-world
-        image: ovhplatform/hello
-        ports:
-        - containerPort: 80
-      affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-            - matchExpressions:
-              - key: nodepool
-                operator: In
-                values:
-                - hourly
+  containers:
+  - name: hello-world
+    image: ovhplatform/hello
+    ports:
+    - containerPort: 80
+  tolerations:
+  - key: "flavor"
+    value: "b2-7"
+    effect: "NoSchedule"
 ```
+
+Then deploy it:
 
 ```bash
-$ kubectl apply -f deployment.yaml
-service/hello-world created
-deployment.apps/hello-world-deployment created
+kubectl apply -f my-pod.yaml
 ```
 
-When you apply this YAML manifest, a Pod will be first in `Pending` state. A new Node will be created. When the new Node will be successfully created, the Pod will be started in this Node.
+And check your new Pod is running in a `second-node-pool`'s Node:
 
 ```bash
-$ kubectl get pod -w
-NAME                                      READY   STATUS    RESTARTS   AGE
-hello-world-deployment-585c6cfcd8-kntp9   0/1     Pending   0          12s
-hello-world-deployment-585c6cfcd8-kntp9   0/1     Pending   0          3m3s
-hello-world-deployment-585c6cfcd8-kntp9   0/1     ContainerCreating   0          3m29s
-hello-world-deployment-585c6cfcd8-kntp9   0/1     ContainerCreating   0          3m41s
-hello-world-deployment-585c6cfcd8-kntp9   1/1     Running             0          3m45s
+kubectl get po -o wide
 ```
 
-You have to wait several minutes in order to have a new Node that matches your criteria.
+In my example:
+<pre class="console"><code>$ kubectl apply -f my-pod.yaml
+pod/my-pod created
 
-```bash
-$ kubectl get node
-NAME                                         STATUS   ROLES    AGE   VERSION
-hourly-node-d4f9d7                           Ready    <none>   18s   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   21h   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   21h   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   21h   v1.22.2
-```
+$ kubectl get po -o wide
+NAME     READY   STATUS    RESTARTS   AGE   IP         NODE                           NOMINATED NODE   READINESS GATES
+my-pod   1/1     Running   0          4s    10.2.3.2   second-node-pool-node-86c98b   <none>           <none>
+</code></pre>
 
-And you can check in which node our application is running:
-
-```bash
-$ kubectl get pod -o wide
-NAME                                      READY   STATUS    RESTARTS   AGE   IP         NODE                 NOMINATED NODE   READINESS GATES
-hello-world-deployment-585c6cfcd8-kntp9   1/1     Running   0          13m   10.2.8.2   hourly-node-d4f9d7   <none>           <none>
-```
-
-With this feature you can choose and control where you want to deploy your applications.
-
-Note that a given label can be applied to multiple node pools and / or specific nodes only if it makes sense to you.
+Thanks to the `-o wide` option, you can verify that your Pod is running on `second-node-pool-node-86c98b` node.
 
 ## Where do we go from here?
 
-In this tutorial you saw how to create, in your OVHcloud Managed Kubernetes cluster, several kinds of node pools and how to deploy your applications easily where you want to.
-
-But do you know that you can do several others Node operations like taint, drain and cordon thanks to Node pool labels propagation to the Nodes?
+In this tutorial you saw how to do some operations on Nodes, taint, drain, cordon, uncordon and how to deploy Pods on particular nodes in your OVHcloud Managed Kubernetes cluster.
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](../).
 
