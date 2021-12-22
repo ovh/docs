@@ -238,6 +238,7 @@ Para añadir una regla de caché a uno de los elementos de su sitio, acceda a la
 Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla`{.action}.
 
 ![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
+
 - **Nombre de regla**: Asigne un nombre a la regla.
 - **Tipo de recurso**: Elija entre las siguientes opciones:
 	- **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto, por ejemplo: css

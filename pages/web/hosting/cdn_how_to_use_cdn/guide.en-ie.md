@@ -59,7 +59,6 @@ Select the “Activate the CDN” option, click `Next`{.action} and then `Confir
 > 
 > If  an external (non-OVHcloud) domain name has been added to the Web Hosting as Multisite, you must enter the CDN’s IP address in the domain name’s DNS zone.<br>
 > Check the [IP address list for Web Hosting clusters](../list-of-ip-addresses-of-web-hosting-clusters/) to find the specific IP address for your cluster’s CDN.
-
  
 **Why is it not possible to use a geolocated IP with the CDN option?** <br>
 <br>
@@ -198,7 +197,6 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 ![CDN](images/manage_CDN_02.png){.thumbnail}
 
-
 ### How do I cache my files in the CDN?
 
 **Using a CMS**
@@ -249,7 +247,6 @@ Click `Confirm`{.action} to continue with the cancellation.
 >
 > You will receive an email containing the CDN closure procedure. Please follow the instructions in the email in order to confirm or cancel the request. 
 > 
-
 
 ### Checking that your CDN is working
 

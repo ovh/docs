@@ -59,7 +59,6 @@ Select the “Activate the CDN” option, click `Next`{.action} and then `Confir
 > 
 > If  an external (non-OVHcloud) domain name has been added to the Web Hosting as Multisite, you must enter the CDN’s IP address in the domain name’s DNS zone.<br>
 > Check the [IP address list for Web Hosting clusters](../list-of-ip-addresses-of-web-hosting-clusters/) to find the specific IP address for your cluster’s CDN.
-
  
 **Why is it not possible to use a geolocated IP with the CDN option?** <br>
 <br>

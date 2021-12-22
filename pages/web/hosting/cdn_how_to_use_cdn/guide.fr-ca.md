@@ -249,7 +249,6 @@ Cliquez sur `Valider`{.action} pour confirmer la résiliation.
 > Un e-mail contenant la procédure de fermeture de votre CDN vous sera envoyé, il est nécessaire de suivre les instructions de celui-ci afin de confirmer ou annuler la demande. 
 > 
 
-
 ### Vérifier que votre CDN est en service
 
 Pour vous assurer que le CDN est bien actif sur votre nom de domaine, il est possible d'effectuer une vérification via un terminal avec la commande suivante :
