@@ -1,0 +1,32 @@
+apiVersion: triliovault.trilio.io/v1
+kind: TrilioVaultManager
+metadata:
+  labels:
+    triliovault: k8s
+  name: tvk
+spec:
+  trilioVaultAppVersion: 2.6.3
+  applicationScope: Cluster
+  # TVK components configuration, currently supports control-plane, web, exporter, web-backend, ingress-controller, admission-webhook.
+  # User can configure resources for all componentes and can configure service type and host for the ingress-controller
+  ingressConfig:
+    ###ingress class and annotation should be uncommented only when ingress controller is set to false below.
+    #ingressClass: "nginx"
+    #annotations:
+    # "key": "value"
+    host: "ovh-k8s-tvk.demo.trilio.io"
+    #tlsSecretName: ssl-certs
+  componentConfiguration:
+    web-backend:
+      resources:
+        requests:
+          memory: "400Mi"
+          cpu: "200m"
+        limits:
+          memory: "2584Mi"
+          cpu: "1000m"
+    ingress-controller:
+      enabled: true
+      service:
+        type: LoadBalancer
+
