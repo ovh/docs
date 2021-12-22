@@ -232,7 +232,7 @@ Esta acción permite desactivar la CDN para uno o más de sus registros multisit
 
 Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego en `Editar`{.action}.
 
-Desmarque la opción «Activar la CDN», haga clic en `Siguiente`{.action} y, a continuación, en `Validar`{.action}.
+Desmarque la opción "Activar la CDN", haga clic en `Siguiente`{.action} y, a continuación, en `Validar`{.action}.
 
 ![CDN](images/manage_CDN_03.png){.thumbnail}
 
@@ -242,7 +242,7 @@ Esta acción permite eliminar la opción CDN en todo su alojamiento web.
 
 Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de «Opción CDN» y, seguidamente, en `Anular la CDN`{.action}.
 
-![CDN](images/manage_CDN_04.png){.thumbnail}F
+![CDN](images/manage_CDN_04.png){.thumbnail}
 
 Pulse `Validar`{.action} para confirmar la anulación.
 
@@ -250,7 +250,6 @@ Pulse `Validar`{.action} para confirmar la anulación.
 >
 > Cuando reciba el mensaje de correo electrónico con el procedimiento de cierre de su CDN, siga las instrucciones para confirmar o cancelar la solicitud. 
 > 
-
 
 ### Comprobar que la CDN esté operativa
 

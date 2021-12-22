@@ -250,7 +250,6 @@ Click `Confirm`{.action} to continue with the cancellation.
 > You will receive an email containing the CDN closure procedure. Please follow the instructions in the email in order to confirm or cancel the request. 
 > 
 
-
 ### Checking that your CDN is working
 
 You can confirm that the CDN is active on your domain name via a terminal with the following command:

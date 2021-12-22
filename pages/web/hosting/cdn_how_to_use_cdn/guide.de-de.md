@@ -240,6 +240,7 @@ Um eine Cache-Regel zu einem der Elemente Ihrer Website hinzuzufügen, gehen Sie
 Klicken Sie unter **Cache-Regeln** auf den Button `Regel hinzufügen`{.action}.
 
 ![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
+
 - **Regelname**: Weisen Sie Ihrer Regel einen Namen zu.
 - **Ressourcenart**: Wählen Sie aus den folgenden Optionen:
 	- **Endung**: Geben Sie eine gültige Dateiendung ohne Punkt ein, zum Beispiel: css
@@ -329,7 +330,6 @@ Bestätigen Sie die Kündigung, indem Sie auf `Bestätigen`{.action} klicken.
 >
 > Sie erhalten eine E-Mail mit dem Verfahren zum Schließen Ihres CDN. Befolgen Sie die Anweisungen, um die Aktion zu bestätigen oder abzubrechen. 
 > 
-
 
 ### Überprüfen, ob Ihr CDN in Betrieb ist
 
