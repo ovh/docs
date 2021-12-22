@@ -10,9 +10,9 @@ order: 2
 
 ## Objective
 
-The 1-click modules are a quick and easy way to install an online website creation software (commonly called "CMS"). OVHcloud offers the most well-known of those solutions: WordPress, PrestaShop, Drupal and Joomla.
+The 1-click modules are a quick and easy way to install an online website creation software (commonly called "CMS"). OVHcloud offers the most well-known of those solutions: WordPress, PrestaShop, Drupal and Joomla!.
 
-**Find out how to manage your 1-click module through the OVHcloud Control Panel.**
+**This guide explains how to manage your 1-click module through the OVHcloud Control Panel.**
 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -36,7 +36,7 @@ Next, click on the `...`{.action} button to the right of the line related to you
 
 > [!primary]
 >
-> If your website does not display properly after this, please refer to the OVHcloud web hosting guides in the [Troubleshooting](https://docs.ovh.com/asia/en/hosting/) section.
+> If your website does not display properly, please refer to the OVHcloud web hosting guides in the [Troubleshooting](https://docs.ovh.com/asia/en/hosting/) section.
 >
 
 ### Access the administrator interface
@@ -49,16 +49,16 @@ Next, click on the `...`{.action} button to the right of the line related to you
 
 Click on the `1-click modules`{.action} tab in the `Hosting plans`{.action} section of your Control Panel. Your module’s admin ID will appear in the `Login` column.
 
-You can also search for the email received after the creation of your module in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia): click on your name in the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
+You can also search for the email received after the creation of your module in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia): click on your name at the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
 
 ### Change your module password
 
-You can change the administrator password of your module via the OVHcloud Control Panel or by going directly to the login page of your website’s control panel.
+You can change the administrator password of your module via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or by going directly to the login page of your website’s administration interface.
 In both cases, you will receive an email containing a link to reset your password.
 
 > [!primary]
 >
-> **What can you do if you did not receive the email to reset the admin password of your website ?**
+> **What can you do if you do not receive the email to reset the admin password of your website ?**
 >
 > Check the `Spam`{.action} and `Trash`{.action} folders in your mailbox.
 >
@@ -70,9 +70,9 @@ In both cases, you will receive an email containing a link to reset your passwor
 > - Once you click on this link, it will be valid for 30 minutes.
 >
 
-To change the password of your website’s administration interface **via the OVHcloud Control Panel**, click on `Web Cloud`{.action}, `Hosting plans`{.action}, the concerned hosting plan then on the `1-click modules`{.action} tab.
+To change the password of your website’s administration interface **via the OVHcloud Control Panel**, click on `Web Cloud`{.action}, `Hosting plans`{.action}, the relevant hosting plan then on the `1-click modules`{.action} tab.
 
-Then, click on the `...`{.action} button to the right of the line related to your module, then on `Modify password`{.action} and on `Confirm`{.action}. You will receive an email with a password reset link within a few minutes.
+Then, click on the `...`{.action} button to the right of the line related to your module, then on `Modify password`{.action} and on `Confirm`{.action}. You will receive an email with a password reset link within minutes.
 
 ### Delete your module
 
@@ -83,13 +83,13 @@ Then, click on the `...`{.action} button to the right of the line related to you
 
 #### Step 1: identify the database linked to your module <a name="step1"></a>
 
-To delete your 1-click module, you must first identify its database with **certainty**. Go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the concerned hosting plan then on the `Databases`{.action} tab.
+To delete your 1-click module, you must first identify its database with **certainty**. Go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and click on `Web Cloud`{.action}, `Hosting plans`{.action}, on your hosting plan then on the `Databases`{.action} tab.
 
-If you have only one database in this part of your control panel and you do not have a [Private SQL](https://www.ovhcloud.com/asia/web-hosting/options/private-sql/) offer, you can consider this to be your website's database.
+If you have only one database in this part of your control panel and you do not have a [Private SQL](https://www.ovhcloud.com/asia/web-hosting/options/private-sql/) offer, you can consider it to be your website's database.
 
 Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this is the directory where the files that make up your 1-click module are located on the FTP server.
 
-Then log on to the [FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting plan. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse to the configuration file for your module:
+Then log on to the [FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) of your web hosting. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse in to the configuration file of your website:
 
 - WORDPRESS: **"wp-config.php"** (the database name appears as **"DB_NAME"**).
 - JOOMLA: **"configuration.php"** (the database name appears under **"public $db"**).
@@ -113,12 +113,12 @@ Then click on the `...`{.action} button to the right of the line related to your
 
 > [!warning]
 >
-> Deleting your 1-click module **will not automatically delete its database**. If you launch the installation of a new CMS without having previously deleted the database from the previous one and if your hosting plan does not allow the automatic creation of another database, the message "[An error has occurred loading the information (You need at least one free database)](https://docs.ovh.com/asia/en/hosting/error-frequently-1-click-modules/#an-error-has-occurred-loading-the-information-you-need-at-least-one-free-database)" will appear in your control panel.
+> Deleting your 1-click module **will not automatically delete its database**. If you launch the installation of a new module without having previously deleted the database from the previous one and if your hosting plan does not allow the automatic creation of another database, the message "[An error has occurred loading the information (You need at least one free database)](https://docs.ovh.com/asia/en/hosting/error-frequently-1-click-modules/#an-error-has-occurred-loading-the-information-you-need-at-least-one-free-database)" will appear on your control panel.
 >
-> If you have a [Personal Hosting](https://www.ovhcloud.com/asia/web-hosting/personal-offer/) subscription or if you have already created all four databases of your [Professional Hosting](https://www.ovhcloud.com/asia/web-hosting/professional-offer/) or [Performance Hosting](https://www.ovhcloud.com/asia/web-hosting/performance-offer/), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
+> If you have a [Personal Hosting](https://www.ovhcloud.com/asia/web-hosting/personal-offer/) offer or if you have already created all four databases of your [Professional](https://www.ovhcloud.com/asia/web-hosting/professional-offer/) or [Performance Hosting](https://www.ovhcloud.com/asia/web-hosting/performance-offer/), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
 >
 
-To complete the removal of your module, in the `Web cloud`{.action}, `Hosting plans`{.action} sections, within the relevant hosting plan of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Databases`{.action} tab. Next, click on the `...`{.action} button to the right of the line concerning your database and on the `Delete database`{.action} button.
+To complete the removal of your module, in the `Web cloud`{.action}, `Hosting plans`{.action} sections, within the relevant hosting plan of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Databases`{.action} tab. Then, click on the `...`{.action} button on the right of the line concerning the database of your module and on `Delete database`{.action}.
 
 Before attempting to install a new module again, verify that the previously requested removal tasks have been completed in the `Ongoing jobs`{.action} tab.
 
@@ -139,6 +139,6 @@ Do not install plugins or templates that have not been recommended by the offici
 
 [Resolving the most common 1-click module errors](https://docs.ovh.com/asia/en/hosting/error-frequently-1-click-modules/).
 
-For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/asia/).
 
 Join our community on <https://community.ovh.com/en/>.

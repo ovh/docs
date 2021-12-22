@@ -14,7 +14,7 @@ order: 2
 
 ## Ziel
 
-1-Klick-Module ermöglichen die einfache und schnelle Installation von Online-Software zur Unterstützung der Erstellung von Websites (auch “CMS“ genannt). OVHcloud bietet Ihnen die bekanntesten: WordPress, PrestaShop, Drupal und Joomla.
+1-Klick-Module ermöglichen die einfache und schnelle Installation von Online-Software zur Unterstützung der Erstellung von Websites (auch “CMS“ genannt). OVHcloud bietet Ihnen die bekanntesten: WordPress, PrestaShop, Drupal und Joomla!.
 
 **Diese Anleitung erklärt, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten.**
 
@@ -52,13 +52,13 @@ Klicken Sie dann auf den Button `...`{.action} rechts neben der Zeile für Ihr M
 
 ### Administrator-Kennung anzeigen
 
-Klicken Sie im Bereich `Hosting-Pakete`{.action} in Ihrem Kundencenter auf den Tab `1-Klick-Module`{.action}. Die Administrator-ID Ihres Moduls wird in der Spalte `Login` angezeigt.
+Klicken Sie im Bereich `Hosting-Pakete`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf den Tab `1-Klick-Module`{.action}. Die Administrator-ID Ihres Moduls wird in der Spalte `Login` angezeigt.
 
-Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) abrufen: Klicken Sie oben rechts neben dem Bildschirm auf Ihren Namen und dann im kontextmenü auf den `E-Mails vom Support`{.action} Befhel.
+Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) abrufen: Klicken Sie oben rechts neben dem Bildschirm auf Ihren Namen und dann im kontextmenü auf den `E-Mails vom Support`{.action} Befhel.
 
 ### Passwort Ihres Moduls ändern
 
-Sie können das Passwort Ihres Moduls über Ihr OVHcloud Kundencenter ändern oder direkt auf die Login-Seite Ihrer Website zum Administrator-Bereich gehen.
+Sie können das Passwort Ihres Moduls über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ändern oder direkt auf die Login-Seite Ihrer Website zum Administrator-Bereich gehen.
 In beiden Fällen wird Ihnen eine E-Mail zum Zurücksetzen des Passworts zugesandt.
 
 > [!primary]
@@ -67,7 +67,7 @@ In beiden Fällen wird Ihnen eine E-Mail zum Zurücksetzen des Passworts zugesan
 >
 > Überprüfen Sie auf der betreffenden Mailbox die `Junk E-Mail`{.action} und `Gelöschte Elemente`{.action} Ordner.
 >
-> Sie finden auch alle von unseren Diensten versandten E-Mails über Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de): Klicken Sie oben rechts neben dem Bildschirm auf Ihren Namen und dann im kontextmenü auf den `E-Mails vom Support`{.action} Befhel.
+> Sie finden auch alle von unseren Diensten versandten E-Mails über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de): Klicken Sie oben rechts neben dem Bildschirm auf Ihren Namen und dann im kontextmenü auf den `E-Mails vom Support`{.action} Befhel.
 >
 > **Laufzeit der Links:**
 >
@@ -88,18 +88,18 @@ Klicken Sie dann auf den Button `...`{.action} rechts neben der Zeile für Ihr M
 
 #### Schritt 1: Die zu Ihrem Modul gehörige Datenbank identifizieren <a name="step1"></a>
 
-Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst die Datenbank mit Sicherheit **identifizieren**. Gehen Sie dazu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie auf `Cloud`{.action}, `Hosting-Pakete`{.action}, auf das betreffende Hosting und dann auf den Tab `Datenbanken`{.action}.
+Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst sein Datenbank mit Sicherheit **identifizieren**. Gehen Sie dazu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie auf `Web Cloud`{.action}, `Hosting-Pakete`{.action}, auf das betreffende Webhosting und dann auf den Tab `Datenbanken`{.action}.
 
-Wenn Sie über eine einzige Datenbank in diesem Teil Ihres Kundencenters verfügen und über keine [SQL Private](https://www.ovhcloud.com/de/web-hosting/options/private-sql/) Lösungen verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
+Wenn Sie über eine einzige Datenbank in diesem Teil Ihres Kundencenters verfügen und über keine [SQL Private](https://www.ovhcloud.com/de/web-hosting/options/private-sql/) Lösung verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
 
-Ist das nicht der Fall, gehen Sie in den Tab `Multisite`{.action}. Notieren Sie den Namen des `Wurzelverzeichnis`: Dieses Verzeichnis enthält die Dateien, aus denen Ihr 1-Klick-Modul auf dem FTP-Server besteht.
+Andere Weise, müssen Sie in den Tab `Multisite`{.action} gehen. Notieren Sie den Namen des `Wurzelverzeichnis`: Dieses Verzeichnis enthält die Dateien, aus denen Ihr 1-Klick-Modul auf dem FTP-Server besteht.
 
 Loggen Sie sich anschließend in den [FTP-Bereich](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings ein. Öffnen Sie den gefundenen `Wurzelverzeichnis` zuvor im Tab `Multisite`{.action} und suchen Sie die Konfigurationsdatei Ihres Moduls:
 
-- WORDPRESS: **“wp-config.php“**(der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
+- WORDPRESS: **“wp-config.php“** (der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
 - JOOMLA: **“configuration.php“** (der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).
 - DRUPAL: **“settings.php“** (Um ihn zu finden, gehen Sie in den Ordner **“sites“** und **“default“**. Der Name der Datenbank erscheint unter der Bezeichnung **“database“**).
-- PRESTASHOP: **“parameters.php“** (Um ihn zu finden begeben Sie sich in den Ordner **“app“** und **“config“**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **“database_name“**.
+- PRESTASHOP: **“parameters.php“** (Um ihn zu finden begeben Sie sich in den Ordner **“app“** und **“config“**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **“database_name“**).
 
 #### Schritt 2: Ihr Modul sichern
 
