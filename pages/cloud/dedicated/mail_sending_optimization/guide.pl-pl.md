@@ -83,7 +83,7 @@ Wprowadź nazwę Twojej domeny w sekcji `Rewers` i kliknij `Zatwierdź`{.action}
 ![Rewers IP](images/enterreverse.png)
 
 > [!primary]
-> Po wpisaniu domeny do rewers sprawdzi on natychmiast, czy rekord A odnosi się do tego samego IP. Jest to używane w procedurach antyspamowych, więc nagranie A musi być ważne i propagowane. Podczas wprowadzania rewers obowiązują następujące zasady:
+> Po wpisaniu domeny do rewers sprawdzi on natychmiast, czy rekordu A odnosi się do tego samego IP. Jest to używane w procedurach antyspamowych, więc rekordu A musi być ważne i propagowane. Podczas wprowadzania rewers obowiązują następujące zasady:
 >
 >  - rewers nie może się rozpocząć od `-`
 >  - rewers nie może zawierać więcej niż 80 znaków
@@ -103,7 +103,7 @@ Aby to zrobić, należy otworzyć [zgłoszenie do pomocy technicznej](https://su
 
 #### Na serwer Gmail
 
-Dodanie określonych rekordów (np. rekord DMARC) może ułatwić odbieranie e-maili, jeśli Twój odbiorca jest w Gmailu. Oto artykuł Google, który może Wam w tym pomóc: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
+Dodanie określonych rekordów (np. rekordu DMARC) może ułatwić odbieranie e-maili, jeśli Twój odbiorca jest w Gmailu. Oto artykuł Google, który może Wam w tym pomóc: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
 
 ### Sprawdź Twoje dane
 
