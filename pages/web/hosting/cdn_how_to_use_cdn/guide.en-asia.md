@@ -175,7 +175,7 @@ Once the feature is enabled, determine the lifetime for which the browser will a
 > For the installation of an [OVHcloud 1-click module](../web_hosting_web_hosting_modules/), the WAF must be disabled in order to prevent the installation of the module from being blocked.
 
 > [!primary]
->  
+> 
 > WAF is fully managed by OVHcloud, and the list of vulnerabilities is regularly updated.
 
 ### View CDN statistics
@@ -197,7 +197,6 @@ It is sometimes useful to clear the CDN cache, particularly when you modify stat
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Clear cache`{.action}.
 
 ![CDN](images/manage_CDN_02.png){.thumbnail}
-
 
 ### How do I cache my files in the CDN?
 
@@ -249,7 +248,6 @@ Click `Confirm`{.action} to continue with the cancellation.
 >
 > You will receive an email containing the CDN closure procedure. Please follow the instructions in the email in order to confirm or cancel the request. 
 > 
-
 
 ### Checking that your CDN is working
 

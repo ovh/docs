@@ -236,6 +236,7 @@ Pour ajouter une règle de cache sur l'un des éléments de votre site, dirigez-
 Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`{.action}.
 
 ![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
+
 - **Nom de règle** : Attribuez un nom à votre règle.
 - **Type de ressource** : Choisissez parmi les choix ci-dessous:
 	- **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : css

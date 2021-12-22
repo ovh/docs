@@ -152,7 +152,7 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 >
 > When you enable the CORS option without specifying any domain names in the list, all domain names will be allowed to use your website's resources.
 
-- ****HTTPS-Redirect**: Protect all traffic to your website by redirecting it to the HTTPS protocol temporarily or permanently.
+- **HTTPS-Redirect**: Protect all traffic to your website by redirecting it to the HTTPS protocol temporarily or permanently.
 
 	Once you have enabled the feature, click the drop-down menu to choose between `Permanent redirection (301)` or `Temporary redirection (302)`.
 
@@ -235,6 +235,7 @@ To add a cache rule on one of your website’s elements, go to the `Multisite`{.
 Under **Cache** rules, click the `Add a rule`{.action} button.
 
 ![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
+
 - **Rule name**: Give your rule a name.
 - **Resource type**: Choose from the options below:
 	- **Extension**: Please enter a valid file extension without putting a period, for example: css
