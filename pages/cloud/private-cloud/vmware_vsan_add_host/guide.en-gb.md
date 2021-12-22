@@ -11,7 +11,6 @@ section: 'VMware vSphere features'
 
 This guide explains how to add a new ESXi server storage to an existing vSAN cluster.
 
-## Requirements
 
 ## Requirements
 
