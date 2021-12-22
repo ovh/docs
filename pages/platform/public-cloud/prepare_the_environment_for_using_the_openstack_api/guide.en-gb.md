@@ -6,7 +6,7 @@ section: OpenStack
 order: 1
 ---
 
-**Last updated 15th December 2021**
+**Last updated December 22 2021**
 
 ## Objective
 
@@ -152,6 +152,8 @@ You can check the installation version in the CMD (command line) window that has
 ![Checking](images/6_preparation_openstack_environment_windows.png){.thumbnail}
 
 ### On MacOS
+
+You can use [HomeBrew](https://brew.sh), a package manager or MacOS.
 
 Open the terminal, and execute the following command:
 
