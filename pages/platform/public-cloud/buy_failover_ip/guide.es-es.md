@@ -32,7 +32,7 @@ Estas direcciones IP failover solo pueden migrar a las instancias de un mismo pr
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. 
 En el menú de la izquierda, haga clic en `Failover IP`{.action} en la sección `Network`.
 
-Haga clic en el botón `Acciones`{.action} y seleccione `Comprar IP Failover Cloud`{.action}.
+Haga clic en el botón `Acciones`{.action} y seleccione `Comprar direcciones IP Failover`{.action}.
 
 ![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
@@ -42,7 +42,7 @@ Se abrirá esta página:
 
 Introduzca la siguiente información:
 
-* El número de direcciones IP failvover (IPFO) deseadas (los bloques de IP no están disponibles por el momento).
+* El número de direcciones IP failover (IPFO) deseadas (los bloques de IP no están disponibles por el momento).
 * La instancia en la que se enrutarán las IP.
 * La geolocalización de las IP.
 
@@ -75,7 +75,7 @@ Geolocalizaciones disponibles en Europa:
 
 Haga clic en `Generar la orden de pedido`{.action} para redirigirla automáticamente al recibo de pedido (es necesario autorizar la visualización de los pop-ups en su navegador).
 
-También podrá consultar la orden de pedido en el área de cliente, accediendo al `panel de control`{.action} y haciendo clic en `Ver mis pedidos`{.action}.
+También podrá consultar la orden de pedido en el área de cliente, accediendo al `Panel de control`{.action} y haciendo clic en `Ver mis pedidos`{.action}.
 
 ## Más información
 

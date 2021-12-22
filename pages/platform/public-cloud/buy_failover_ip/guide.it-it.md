@@ -24,8 +24,8 @@ Questi indirizzi possono essere trasferiti esclusivamente verso le istanze di un
 
 ## Prerequisiti
 
-- - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
-- Disporre di almeno un’istanza A questo proposito, consulta [la guida per creare un’istanza dallo Spazio Cliente](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/).
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+- Disporre di almeno un’istanza. A questo proposito, consulta [la guida per creare un’istanza dallo Spazio Cliente](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/).
 
 ## Procedura
 
@@ -73,7 +73,7 @@ Per un’istanza europea puoi scegliere tra questi Paesi:
 >
 > Per verificare la disponibilità in altre aree geografiche, rivolgiti direttamente agli organi competenti. OVHcloud non interverrà nei loro confronti.
 
-Clicca su `Genera ordine`{.action} per essere reindirizzato automaticamente verso di esso (è necessario autorizzare la visualizzazione dei pop-up sul tuo browser).
+Clicca su `Genera l'ordine`{.action} per essere reindirizzato automaticamente verso di esso (è necessario autorizzare la visualizzazione dei pop-up sul tuo browser).
 
 Il buono d'ordine è disponibile anche nello Spazio Cliente, andando nella sezione `Dashboard`{.action} e cliccando su `Visualizza i tuoi ordini`{.action}.
 

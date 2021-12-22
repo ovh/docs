@@ -25,7 +25,7 @@ Estes endereços IP Failover só poderão ser migrados para as instâncias de um
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-- Dispor de, pelo menos, uma instância. Para isso, consulte [o guia para criar uma instância a partir da Área de Cliente](https://docs.ovh.com/pt/public-cloud/criar_uma_instancia_a_partir_do_espaco_cliente_ovh/).
+- Dispor de pelo menos uma instância. Para isso, consulte [o guia para criar uma instância a partir da Área de Cliente](https://docs.ovh.com/pt/public-cloud/criar_uma_instancia_a_partir_do_espaco_cliente_ovh/).
 
 ## Instruções
 
@@ -42,7 +42,7 @@ Surgirá, então, esta página:
 
 Queira introduzir as seguintes informações:
 
-* O número de IPFO pretendidas (os blocos de IP não estão disponíveis de momento).
+* O número de IP Fail Over (IPFO) pretendidas (os blocos de IP não estão disponíveis de momento).
 * A instância na qual serão roteados os IPs.
 * A geolocalização dos IPs.
 
