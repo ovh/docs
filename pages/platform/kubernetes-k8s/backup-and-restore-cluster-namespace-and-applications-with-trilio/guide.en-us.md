@@ -310,13 +310,6 @@ If the output looks like above, you installed `TVK` successfully. Next, you will
 
 By default, when installing `TVK` via `Helm`, there is no `Free Trial` license is generated. But if you download a `Free Trial` license and apply, it lets you run `TVK` for `one month` on `unlimited` cluster nodes. You can always go to the `Trilio` website and generate a new [license](https://www.trilio.io/plans) for your cluster that suits your needs (for example, you can pick the `basic license` type that lets you run `TrilioVault` indefinetly if your `cluster capacity` doesn't exceed `50 nodes`).
 
-##################################
-**Notes:**
-
-- **TrilioVault is free of charge for Kubernetes clusters with up to 10000 nodes for DigitalOcean users.**
-- `Starter Kit` examples rely on a `Cluster` license type to function properly.
-##################################
-
 ### Checking TVK Application Licensing
 
 Please run below command to see what license is available for your cluster (it is managed via the `License` CRD):
