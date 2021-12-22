@@ -1,4 +1,3 @@
-
 ---
 title: OpenSearch - configure and collect data with Logstash and Fluent Bit
 excerpt: Find out how to set up Logstash and Fluent Bit with your OpenSearch databases
