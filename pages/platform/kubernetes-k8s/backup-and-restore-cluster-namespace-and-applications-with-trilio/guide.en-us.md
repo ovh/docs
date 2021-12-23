@@ -928,7 +928,7 @@ spec:
       namespace: default
   backupComponents:
     - namespace: default
-	- namespace: demo-backup-ns
+    - namespace: demo-backup-ns
     - namespace: backend
     - namespace: monitoring
 ```
@@ -1046,3 +1046,231 @@ kubectl get all --all-namespaces
 ```
 
 In the next step, you will learn how to perform scheduled (or automatic) backups for your `OVH Managed Kubernetes Cluster` applications.
+
+## Step 6 - Scheduled Backups
+
+Taking backups automatically based on a schedule, is a really useful feature to have. It allows you to `rewind back time`, and restore the system to a previous working state if something goes wrong. This section provides an example for an automatic backup on a `15 minute` schedule (the `kube-system` namespace was picked).
+
+First, you need to create a `Policy` CRD of type `Schedule` that defines the backup schedule in `cron` format (same as `Linux` cron). Schedule polices can be used for either `BackupPlan` or `ClusterBackupPlan` CRDs. Typical schedule policy CRD looks like below (defines a `15 minute` schedule):
+
+```yaml
+kind: Policy
+apiVersion: triliovault.trilio.io/v1
+metadata:
+  name: scheduled-backup-every-15min
+  namespace: default
+spec:
+  type: Schedule
+  scheduleConfig:
+    schedule:
+      - "*/15 * * * *" # trigger every 15 minutes
+```
+
+Next, you can apply the schedule policy to a `ClusterBackupPlan` CRD for example, as seen below:
+
+```yaml
+apiVersion: triliovault.trilio.io/v1
+kind: ClusterBackupPlan
+metadata:
+  name: multi-ns-backup-plan-5min-schedule
+  namespace: default
+spec:
+  backupConfig:
+    target:
+      name: trilio-ovh-s3-target
+      namespace: default
+    schedulePolicy:
+      fullBackupPolicy:
+        name: scheduled-backup-every-15min
+        namespace: default
+  backupComponents:
+    - namespace: default
+    - namespace: demo-backup-ns
+    - namespace: backend
+```
+
+Looking at the above, you can notice that it's a basic `ClusterBackupPlan` CRD, referencing the `Policy` CRD defined earlier via the `spec.backupConfig.schedulePolicy` field. You can have separate policies created for `full` or `incremental` backups, hence the `fullBackupPolicy` or `incrementalBackupPolicy` can be specified in the spec.
+
+Now, please go ahead and create the schedule `Policy`, using the sample manifest provided by the `ovh/docs` tutorial (make sure to change directory first, where the ovh/docs Git repository was cloned on your local machine):
+
+```shell
+kubectl apply -f assets/manifests/triliovault-scheduling-policy-every-15min.yaml
+```
+
+Check that the policy resource was created:
+
+```shell
+kubectl get policies -n default
+```
+
+The output looks similar to (notice the `POLICY` type set to `Schedule`):
+
+```text
+NAMESPACE   NAME                           POLICY     DEFAULT
+default     scheduled-backup-every-15min   Schedule   false
+```
+
+Finally, create the `backupplan` resource for the `default` namespace scheduled backups:
+
+# Create the backup plan first for default namespace
+
+```shell
+kubectl apply -f assets/manifests/triliovault-multi-ns-backup-plan-every-15min.yaml
+```
+
+Check the scheduled backup plan status for `default`:
+
+```shell
+kubectl get clusterbackupplan triliovault-multi-ns-backup-plan-every-15min.yaml -n default
+```
+
+The output looks similar to (notice the `FULL BACKUP POLICY` value set to the previously created `scheduled-backup-every-5min` policy resource, as well as the `STATUS` which should be `Available`):
+
+```text
+NAME                                  TARGET                 ...   FULL BACKUP POLICY             STATUS
+multi-ns-backup-plan-15min-schedule   trilio-ovh-s3-target   ...   scheduled-backup-every-15min   Available
+```
+
+Create a `clusterbackup` resource using scheduled policy for every 15 min:
+
+# Create and trigger the scheduled backup for deafult namespace
+
+```shell
+kubectl apply -f assets/manifests/triliovault-multi-ns-backup-every-15min.yaml.yaml
+```
+
+Check the scheduled backup status for `default`:
+
+```shell
+kubectl get clusterbackup multi-ns-backup-15min-schedule -n default
+```
+
+The output looks similar to (notice the `BACKUPPLAN` value set to the previously created backup plan resource, as well as the `STATUS` which should be `Available`):
+
+```text
+NAME                             BACKUPPLAN                            BACKUP TYPE   STATUS      ...
+multi-ns-backup-15min-schedule   multi-ns-backup-plan-15min-schedule   Full          Available   ...
+```
+
+Now, you can check that backups are performed on a regular interval (15 minutes), by querying the cluster backup resource and inspect the `START TIME` column (`kubectl get clusterbackup -n default`). It should reflect the 15 minute delta.
+
+In the next step, you will learn how to set up a retention policy for your backups.
+
+## Step 7 - Backups Retention Policy
+
+The retention policy allows you to define the `number` of backups to `retain` and the `cadence` to `delete` backups as per compliance requirements. The retention policy `CRD` provides a simple `YAML` specification to define the `number` of backups to retain in terms of `days`, `weeks`, `months`, `years`, latest etc.
+
+### Using Retention Policies
+
+Retention polices can be used for either `BackupPlan` or `ClusterBackupPlan` CRDs. Typical `Policy` manifest for the `Retention` type looks like below:
+
+```yaml
+apiVersion: triliovault.trilio.io/v1
+kind: Policy
+metadata:
+  name: sample-ret-policy
+spec:
+  type: Retention
+  retentionConfig:
+    latest: 2
+    weekly: 1
+    dayOfWeek: Wednesday
+    monthly: 1
+    dateOfMonth: 15
+    monthOfYear: March
+    yearly: 1
+```
+
+Explanation for the above configuration:
+
+- `spec.type`: Defines policy type. Can be: `Retention` or `Schedule`.
+- `spec.retentionConfig`: Describes retention configuration, like what interval to use for backups retention and how many.
+- `spec.retentionConfig.latest`: Maximum number of latest backups to be retained.
+- `spec.retentionConfig.weekly`: Maximum number of backups to be retained in a week.
+- `spec.retentionConfig.dayOfWeek`: Day of the week to maintain weekly backups.
+- `spec.retentionConfig.monthly`: Maximum number of backups to be retained in a month.
+- `spec.retentionConfig.dateOfMonth`: Date of the month to maintain monthly backups.
+- `spec.retentionConfig.monthOfYear`: Month of the backup to retain for yearly backups.
+- `spec.retentionConfig.yearly`: Maximum number of backups to be retained in a year.
+
+The above retention policy translates to:
+
+- On a `weekly` basis, keep one backup each `Wednesday`.
+- On a `monthly` basis, keep one backup in the `15th` day.
+- On a `yearly` basis, keep one backup every `March`.
+- `Overall`, I want to always have the `2 most recent` backups available.
+
+The basic flow for creating a retention policy resource goes the same way as for scheduled backups. You need a `BackupPlan` or a `ClusterBackupPlan` CRD defined to reference the retention policy, and then have a `Backup` or `ClusterBackup` object to trigger the process.
+
+Typical `ClusterBackupPlan` example configuration that has retention set, looks like below:
+
+```yaml
+apiVersion: triliovault.trilio.io/v1
+kind: ClusterBackupPlan
+metadata:
+  name: multi-ns-backup-plan-15min-schedule-retention
+  namespace: default
+spec:
+  backupConfig:
+    target:
+      name: trilio-ovh-s3-target
+      namespace: default
+    retentionPolicy:
+        name: sample-ret-policy
+        namespace: default
+  backupComponents:
+    - namespace: default
+    - namespace: backend
+```
+
+Once you apply the `ClusterBackupplan`, you can check it using:
+
+```shell
+kubect get clusterbackupplan -n default
+```
+
+Output would look similar to below:
+
+```text
+NAME                                            TARGET                 RETENTION POLICY    ...		STATUS
+multi-ns-backup-plan-15min-schedule-retention   trilio-ovh-s3-target   sample-ret-policy   ...		Available  
+```
+
+Notice that it uses a `retentionPolicy` field to reference the policy in question. Of course, you can have a backup plan that has both types of policies set, so that it is able to perform scheduled backups, as well as to deal with retention strategies.
+
+### Using Cleanup Policies
+
+Having so many TVK resources each responsible with various operations like: scheduled backups, retention, etc, it is very probable for things to go wrong at some point in time. It means that some of the previously enumerated operations might fail due to various reasons, like: inaccessible storage, network issues for NFS, etc. So, what happens is that your `OVH Managed Kubernetes Cluster` will get `crowded` with many `Kubernetes objects` in a `failed state`.
+
+You need a way to garbage collect all those objects in the end and release associated resources, to avoid trouble in the future. Meet the `Cleanup Policy` CRD:
+
+```yaml
+apiVersion: triliovault.trilio.io/v1
+kind: Policy
+metadata:
+  name: garbage-collect-policy
+  namespace: tvk
+spec:
+  type: Cleanup
+  cleanupConfig:
+    backupDays: 5
+```
+
+The above cleanup policy must be defined in the `TVK` install namespace. Then, a `cron job` is created automatically for you that runs `every 30 mins`, and `deletes failed backups` based on the value specified for `backupdays` within the spec field.
+
+This is a very neat feature that TVK provides to help you deal with this kind of situation.
+
+## Conclusion
+
+In this tutorial, you learned how to perform `one time`, as well as `scheduled` backups, and to restore everything back. Having `scheduled` backups in place, is very important as it allows you to revert to a previous snapshot in time, if something goes wrong along the way. You walked through a disaster recovery scenario, as well. Next, backups retention plays an important role as well, because storage is finite and sometimes it can get expensive if too many objects are implied.
+
+All the basic tasks and operations explained in this tutorial, are meant to give you a basic introduction and understanding of what `TrilioVault for Kubernetes` is capable of. You can learn more about `TrilioVault for Kubernetes` and other interesting (or useful) topics, by following the links below:
+
+- TVK [CRD API](https://docs.trilio.io/kubernetes/architecture/apis-and-command-line-reference/custom-resource-definitions-application-1) documentation.
+- [How to Integrate Pre/Post Hooks for Backup Operations](https://docs.trilio.io/kubernetes/architecture/apis-and-command-line-reference/custom-resource-definitions-application-1/triliovault-crds#hooks), with examples given for various databases.
+- [Immutable Backups](https://docs.trilio.io/kubernetes/architecture/apis-and-command-line-reference/custom-resource-definitions-application-1/triliovault-crds#immutability), which restrict backups on the target storage to be overwritten.
+- [Helm Releases Backup](https://docs.trilio.io/kubernetes/architecture/apis-and-command-line-reference/custom-resource-definitions-application-1/triliovault-crds#type-helm-example-1-single-helm-release), which shows examples for Helm releases backup strategies.
+- [Backups Encryption](https://docs.trilio.io/kubernetes/architecture/apis-and-command-line-reference/custom-resource-definitions-application-1/triliovault-crds#type-encryption), which explains how to encrypt and protect sensitive data on the target (storage).
+- [Disaster Recovery Plan](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/disaster-recovery-plan).
+- [Multi-Cluster Management](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/multicloud-management).
+- [Restore Transforms](https://docs.trilio.io/kubernetes/overview/features-and-use-cases#restore-transforms).
