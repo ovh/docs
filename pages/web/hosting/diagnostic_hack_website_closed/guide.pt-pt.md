@@ -16,7 +16,7 @@ Se possui um website num alojamento da OVH, poderá ter recebido um e-mail infor
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Ter um serviço de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Dispor das credenciais necessárias para aceder ao espaço de armazenamento do alojamento.
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 

@@ -84,6 +84,12 @@ Estas redes privadas se basan en la tecnología vRack de OVHcloud, compartida co
 
 Para más información, consulte la guía [Configuración del vRack Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/) (EN).
 
+### ¿Puedo cambiar la IP pública de mi instancia?
+
+Las IP públicas se asignan automáticamente a las instancias, por lo que no pueden modificarse. Para controlar la IP pública de una instancia, le recomendamos que utilice una IP Failover. De este modo, cualquiera que sea la dirección pública que se haya asignado automáticamente a la instancia, puede añadir una o varias IP failover a su instancia.
+
+Para más información, consulte la guía [Comprar una IP failover](../comprar-una-ip-failover/).
+
 ## Más información
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

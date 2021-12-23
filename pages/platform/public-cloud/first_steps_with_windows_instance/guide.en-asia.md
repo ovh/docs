@@ -19,8 +19,8 @@ Once you have deployed your instance, you will need to complete the installation
 
 ## Requirements
 
-- a Public Cloud project
-- an instance [created via the OVHcloud Control Panel](../create_an_instance_in_your_ovh_customer_account/) with a Windows Desktop operating system
+- A Public Cloud project
+- An instance [created via the OVHcloud Control Panel](../create_an_instance_in_your_ovh_customer_account/) with a Windows Desktop operating system
 
 ## Instructions
 

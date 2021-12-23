@@ -23,7 +23,7 @@ Cloud credit cannot be transferred or refunded. It does not have any monetary va
 
 ## Requirements
 
-* a Public Cloud project
+- A Public Cloud project
 
 
 ## Instructions

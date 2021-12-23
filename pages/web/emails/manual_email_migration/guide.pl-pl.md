@@ -27,7 +27,7 @@ order: 01
 
 ## Wymagania początkowe
 
-- Posiadanie usługi e-mail w OVHcloud, takiej jak oferta [Exchange](https://www.ovh.pl/emaile/){.external}, [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external} lub MX Plan (w postaci pakietu MX Plan lub w postaci pakietu [hostingowego OVHcloud](https://www.ovh.pl/hosting/){.external})
+- Posiadanie usługi e-mail w OVHcloud, takiej jak oferta [Exchange](https://www.ovhcloud.com/pl/emails/){.external}, [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external} lub MX Plan (w postaci pakietu MX Plan lub w postaci pakietu [hostingowego OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
 - Posiadanie danych dostępowych do kont e-mail, które chcesz przenieść (konta źródłowe)
 - Posiadanie danych dostępowych do kont e-mail OVHcloud, na które przeniesione zostaną dane (konta docelowe)
 
@@ -46,7 +46,7 @@ Poniższe instrukcje są podzielone na dwie części:
 
 ### Outlook
 
-Jeśli posiadasz konto e-mail [Exchange OVHcloud](https://www.ovh.pl/emaile/hosted-exchange/), możesz je wyeksportować bezpośrednio w formacie PST w Panelu klienta.
+Jeśli posiadasz konto e-mail [Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/), możesz je wyeksportować bezpośrednio w formacie PST w Panelu klienta.
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. Wybierz `Microsoft`{.action} w kolumnie po lewej stronie, a następnie `Exchange`{.action}. Kliknij nazwę odpowiedniej usługi Hosted Exchange.
 

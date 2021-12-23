@@ -22,7 +22,7 @@ On OVHcloud Web Hostings, you can use scripts to automate certain operations. Cr
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/sg/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) with the necessary permissions to manage the Web Hosting plan 
 
 

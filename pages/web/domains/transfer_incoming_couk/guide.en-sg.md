@@ -49,7 +49,7 @@ After you change the TAG, the domain name owner will receive an authorisation co
 
 ### Step 3: Ordering the free transfer
 
-Once you have your authorisation code, you can create the transfer order for your domain name on the OVHcloud [website](https://www.ovh.co.uk/). This order is similar to that of a generic domain name.
+Once you have your authorisation code, you can create the transfer order for your domain name on the OVHcloud [website](https://www.ovhcloud.com/en-gb/). This order is similar to that of a generic domain name.
 
 Your domain will then be available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) within a few hours.
 

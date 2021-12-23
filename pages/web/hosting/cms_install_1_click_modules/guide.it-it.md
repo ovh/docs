@@ -15,7 +15,7 @@ I moduli in 1 click permettono di creare un sito Web in modo semplice e veloce, 
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web](https://www.ovh.it/hosting-web/){.external} attiva
+- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attiva
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Non aver salvato file nella directory in cui verrà installato il modulo
 - Aver impostato come multisito il dominio (ed eventualmente il sottodominio) che verrà utilizzato per il sito Web
@@ -26,9 +26,9 @@ I moduli in 1 click permettono di creare un sito Web in modo semplice e veloce, 
 
 Un CMS (Content Management System) consente di progettare un sito Web tramite un'interfaccia intuitiva e di semplice utilizzo. In base al tipo di progetto da realizzare è possibile scegliere tra diverse opzioni, per usufruire di una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...).
 
-Con i moduli in 1 click di OVH sono disponibili 4 CMS.  Se hai già scelto il CMS da installare, prosegui nella lettura di questa guida. In caso contrario, la nostra [pagina comparativa dei CMS](https://www.ovh.it/hosting-web/website/confronto-cms/){.external} potrebbe esserti di aiuto.
+Con i moduli in 1 click di OVH sono disponibili 4 CMS.  Se hai già scelto il CMS da installare, prosegui nella lettura di questa guida. In caso contrario, la nostra [pagina comparativa dei CMS](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external} potrebbe esserti di aiuto.
 
-Se il CMS che hai scelto non è presente fra le opzioni proposte da OVH, potrai installarlo manualmente nel tuo spazio di hosting, se compatibile con il piano attivato (per visualizzare le nostre offerte, [clicca qui]( https://www.ovh.it/hosting-web/){.external}).
+Se il CMS che hai scelto non è presente fra le opzioni proposte da OVH, potrai installarlo manualmente nel tuo spazio di hosting, se compatibile con il piano attivato (per visualizzare le nostre offerte, [clicca qui]( https://www.ovhcloud.com/it/web-hosting/){.external}).
 
 ![Logo dei CMS](images/CMS_logo.png){.thumbnail}
 
@@ -132,13 +132,13 @@ Per maggiori informazioni sulle funzionalità disponibili ti consigliamo di cons
 
 ## Per saperne di più
 
-[Scegli il CMS per il tuo sito Web]( https://www.ovh.it/hosting-web/website/confronto-cms/){.external}
+[Scegli il CMS per il tuo sito Web]( https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external}
 
 [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/){.external}
 
 [Gestire un database da un hosting condiviso]( https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
 
-Scopri la nostra soluzione [SQL Privato]( https://www.ovh.it/hosting-web/opzioni-sql.xml){.external}
+Scopri la nostra soluzione [SQL Privato]( https://www.ovhcloud.com/it/web-hosting/options/start-sql/){.external}
 
 Scopri la nostra soluzione [Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}
 

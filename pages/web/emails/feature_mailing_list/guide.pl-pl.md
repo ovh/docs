@@ -39,7 +39,7 @@ Nadawca (sender) przesyła wiadomość e-mail do odbiorców z listy mailingowej.
 
 ## Wymagania początkowe
 
-- Posiadanie usługi kont e-mail w postaci co najmniej pakietu MX Plan 100 lub [hostingu WWW](https://www.ovh.pl/hosting/){.external} obsługującego listy mailingowe.
+- Posiadanie usługi kont e-mail w postaci co najmniej pakietu MX Plan 100 lub [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external} obsługującego listy mailingowe.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce

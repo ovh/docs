@@ -30,7 +30,7 @@ O processo de mudança de agente de registo (*registar*) para os domínios de pr
 
 ## Requisitos
 
-- Ter um [domínio .uk](https://www.ovh.pt/dominios/) registado na OVHcloud
+- Ter um [domínio .uk](https://www.ovhcloud.com/pt/domains/) registado na OVHcloud
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e ter os direitos necessários para gerir o domínio (ser administrador do domínio)
 - O domínio deve estar sempre ativo, isto é, não deve ter expirado ou ser bloqueado pela OVHcloud
 - O nome de domínio não deve ser objeto de um litígio em curso no [Registo Nominet](https://www.nominet.uk/)

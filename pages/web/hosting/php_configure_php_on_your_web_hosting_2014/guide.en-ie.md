@@ -8,18 +8,18 @@ excerpt: 'Find out how to change the PHP version on an OVH Web Hosting plan'
 
 ## Objective
 
-There are many different types of website published online. With an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}, you can host whatever kind of website you want, provided it is compatible with [our infrastructures’ configuration](https://webhosting-infos.hosting.ovh.net){.external}. As a result, you may find that you want to modify the PHP version used by your Web Hosting plan.
+There are many different types of website published online. With an [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, you can host whatever kind of website you want, provided it is compatible with [our infrastructures’ configuration](https://webhosting-infos.hosting.ovh.net){.external}. As a result, you may find that you want to modify the PHP version used by your Web Hosting plan.
 
 **Find out how to change the PHP version on an OVH Web Hosting plan.**
 
 ## Requirements
 
-- a compatible [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} (excluding Cloud Web)
+- a compatible [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} (excluding Cloud Web)
 - the ability to manage the Web Hosting plan from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), or access to the information you need to connect to the storage space 
 
 ## Instructions
 
-There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVH offers the very latest PHP versions, a list of which can be found here: <https://www.ovh.ie/web-hosting/php.xml>. 
+There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVH offers the very latest PHP versions, a list of which can be found here: <https://www.ovhcloud.com/en-ie/web-hosting/uc-programming-language/>. 
 
 Because some features cannot be maintained in newer versions, **please ensure that the new PHP version you want to use is compatible with your website before you start making any changes.**
 
@@ -60,7 +60,7 @@ There are several ways you can modify your Web Hosting plan’s PHP version:
 
 - **By manually modifying a file in your storage space.** This solution is more technical, and you will need to be logged in to your storage space, so that you can modify the .ovhconfig file. Please refer to the instructions set out in this guide if you would like to use this method: [Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/configuring-file-ovhconfig/){.external}.
 
-If you are more technically experienced, please note that you can no longer modify the PHP version via an .htaccess file on the latest [OVH Web Hosting plans](https://www.ovh.ie/web-hosting/){.external}. The command that changes the PHP version in .htaccess files cannot be used to switch to the latest PHP versions on our infrastructures. Instead, you will need to edit the .ovhconfig file, which you can do by following this guide: [Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/configuring-file-ovhconfig/){.external}.
+If you are more technically experienced, please note that you can no longer modify the PHP version via an .htaccess file on the latest [OVH Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external}. The command that changes the PHP version in .htaccess files cannot be used to switch to the latest PHP versions on our infrastructures. Instead, you will need to edit the .ovhconfig file, which you can do by following this guide: [Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/configuring-file-ovhconfig/){.external}.
 
 ## Go further
 

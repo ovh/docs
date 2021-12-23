@@ -16,7 +16,7 @@ Właśnie złożyłeś zamówienie na platformę Private Exchange. Niniejszy prz
 
 ## Wymagania początkowe
 
-- Zamówienie [rozwiązania Private Exchange OVHcloud](https://www.ovh.pl/emaile/){.external}.
+- Zamówienie [rozwiązania Private Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce

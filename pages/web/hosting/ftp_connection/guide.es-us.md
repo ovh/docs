@@ -16,7 +16,7 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
@@ -43,7 +43,7 @@ Se mostrará la información relativa a su espacio de almacenamiento, así como 
 
 ![Conexión FTP](images/connect-ftp-step1.png){.thumbnail}
 
-Entre esa información se encuentran los datos necesarios para conectarse a su espacio de almacenamiento. Si necesita ayuda para identificarlos, consulte la tabla de abajo. Tenga en cuenta que algunos datos podrían no aparecer en función del [alojamiento web de OVHcloud](https://www.ovh.com/world/es/hosting/){.external} contratado.
+Entre esa información se encuentran los datos necesarios para conectarse a su espacio de almacenamiento. Si necesita ayuda para identificarlos, consulte la tabla de abajo. Tenga en cuenta que algunos datos podrían no aparecer en función del [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} contratado.
 
 |Elemento|Descripción|
 |---|---|
@@ -66,7 +66,7 @@ Existen varias formas de conectarse al espacio de almacenamiento. Continúe leye
 
 [2.2. Conexión mediante un cliente FTP](./#22-conexion-mediante-un-cliente-ftp): Le permite acceder al espacio de almacenamiento mediante un programa como FileZilla o Cyberduck. Debe tener el programa previamente instalado en su ordenador.
 
-[2.3. Conexión mediante un acceso SSH](./#23-conexion-por-ssh): Le permite acceder al espacio de almacenamiento mediante un acceso SSH. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external} son compatibles.
+[2.3. Conexión mediante un acceso SSH](./#23-conexion-por-ssh): Le permite acceder al espacio de almacenamiento mediante un acceso SSH. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} son compatibles.
 
 #### 2.1. Conexión mediante un explorador FTP
 

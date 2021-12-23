@@ -16,7 +16,7 @@ Ajouter un nom de domaine sur un service Exchange est indispensable afin de pouv
 
 ## Prérequis
 
-- Disposer d'une [solution Exchange](https://www.ovh.com/fr/emails/){.external}.
+- Disposer d'une [solution Exchange](https://www.ovhcloud.com/fr/emails/){.external}.
 - Disposer d'un ou plusieurs noms de domaine.
 - Être en mesure de pouvoir modifier la configuration de votre nom de domaine (sa zone DNS).
 - Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
@@ -40,7 +40,7 @@ Pour ajouter un nom de domaine, cliquez sur l'onglet `Domaine associés`{.action
 
 > [!warning]
 >
-> Toutes les adresses créées sur votre service Exchange seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, vous devez commander une nouvelle [solution Exchange](https://www.ovh.com/fr/emails/){.external} pour le ou les noms de domaine concernés.
+> Toutes les adresses créées sur votre service Exchange seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, vous devez commander une nouvelle [solution Exchange](https://www.ovhcloud.com/fr/emails/){.external} pour le ou les noms de domaine concernés.
 >
 
 ![Exchange](images/add_domain_exchange_step1.png){.thumbnail}
@@ -108,7 +108,7 @@ Pour rappel, toutes les adresses créées sur votre service Exchange seront en m
 
 Une fois les comptes totalement configurés, il ne vous reste plus qu’à les utiliser. Pour cela, OVH met à votre disposition le *webmail* **Outlook Web Application** (OWA) accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Pour une utilisation optimale de votre adresse Exchange sur un logiciel, assurez-vous de sa bonne compatibilité avec le service. Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, ou obtenir de l'aide concernant les fonctionnalités d'Exchange, consultez nos documentations accessibles depuis ce portail : [https://docs.ovh.com/fr/microsoft-collaborative-solutions/](https://docs.ovh.com/fr/microsoft-collaborative-solutions/){.external}.
 
-Il est possible d'acquérir des licences Outlook dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et des licences Office 365 sur la page [https://www.ovh.com/fr/office-365/](https://www.ovh.com/fr/office-365/){.external}. Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
+Il est possible d'acquérir des licences Outlook dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et des licences Office 365 sur la page [https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/){.external}. Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
 
 ## Aller plus loin
 

@@ -17,7 +17,7 @@ De E-mail Pro-accounts kunnen worden geconfigureerd met compatibele e-mailsoftwa
 
 ## Vereisten
 
-- U moet beschikken over [E-mail Pro](https://www.ovh.nl/emails/email-pro/){.external}.
+- U moet beschikken over [E-mail Pro](https://www.ovhcloud.com/nl/emails/email-pro/){.external}.
 - Er moet een Microsoft Outlook-applicatie op uw Mac zijn geïnstalleerd. 
 - U moet beschikken over de inloggegevens voor het e-mailadres waarvan u de instellingen wilt bewerken.
 
@@ -68,7 +68,7 @@ Als u handmatig instellingen in uw accountvoorkeuren moet invoeren, vindt u hier
 
 Nadat u uw e-mailadres hebt geconfigureerd, kunt u het gaan gebruiken! U kunt nu e-mails verzenden en ontvangen.
 
-OVH biedt ook een web-app met [teamwerk-functies](https://www.ovh.nl/emails/){.external}. U kunt deze applicatie bereiken via <https://pro1.mail.ovh.net>. U kunt het openen met behulp van uw e-mailinloggegevens.
+OVH biedt ook een web-app met [teamwerk-functies](https://www.ovhcloud.com/nl/emails/){.external}. U kunt deze applicatie bereiken via <https://pro1.mail.ovh.net>. U kunt het openen met behulp van uw e-mailinloggegevens.
 
 ## Verder
 

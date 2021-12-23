@@ -22,7 +22,7 @@ Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane 
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny zarejestrowanej](https://www.ovh.pl/domeny/) w OVHcloud
+- Posiadanie [domeny zarejestrowanej](https://www.ovhcloud.com/pl/domains/) w OVHcloud
 - Posiadanie uprawnień do złożenia wniosku o transfer domeny: właściciel i/lub administratorzy domeny powinni zostać poinformowani o wszczęciu takiej procedury. 
 - Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Rejestracja tej domeny trwa co najmniej 60 dni i nie została przeniesiona ani wymieniona (tj. zmiana właściciela) w ciągu ostatnich 60 dni
@@ -43,7 +43,7 @@ Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane 
 > W przypadku wątpliwości zalecamy sprawdzenie następujących zasobów:
 >
 > - strona internetowa odpowiedniego rejestru TLD;
-> - Lista [TLD dostępnych w OVHcloud](https://www.ovh.pl/domeny/cennik/);
+> - Lista [TLD dostępnych w OVHcloud](https://www.ovhcloud.com/pl/domains/tld/);
 > - [Wyjaśnienia ICANN dotyczące kodów statusu EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (aby dowiedzieć się, które kody statusu mają obecnie zastosowanie do Twojej domeny, należy przeszukać *Whois*, najlepiej korzystając ze strony internetowej odpowiedniego rejestru TLD);
 > - Twoja strona WWW oraz interfejs zarządzania nowym operatorem, zwłaszcza w przypadku pytań dotyczących procesu transferu oczekującego na połączenie.
 >

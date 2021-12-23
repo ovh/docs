@@ -11,7 +11,7 @@ hidden: true
 
 ## Objective
 
-[Public Cloud instances]({ovh_www}/public-cloud/instances/){.external} offer a flexible, pay-as-you-go solution for managing virtual resources. This means that you can add and remove resources (instances, storage, etc) as and when you need to.
+[Public Cloud instances](https://www.ovhcloud.com/en/public-cloud/){.external} offer a flexible, pay-as-you-go solution for managing virtual resources. This means that you can add and remove resources (instances, storage, etc) as and when you need to.
 
 **This guide will show you how to create your first Public Cloud project.**
 
@@ -64,7 +64,7 @@ Once you've clicked the `Add`{.action} button, you'll be prompted to complete th
 
 #### Buy cloud credit
 
-You can also pay for your [Public Cloud]({ovh_www}/public-cloud/instances/){.external} usage using cloud credit. Your first cloud credit purchase will cost $50. Any resources you use after this will consume your credit. When your credit is depleted, you can purchase more using any accepted payment method.
+You can also pay for your [Public Cloud](https://www.ovhcloud.com/en/public-cloud/){.external} usage using cloud credit. Your first cloud credit purchase will cost $50. Any resources you use after this will consume your credit. When your credit is depleted, you can purchase more using any accepted payment method.
 
 Cloud credit is non-transferable or refundable. It has no monetary value, and if it is not used within 13 months it will be lost.
 
@@ -82,9 +82,6 @@ Once you have created your project, it will be available in the left-hand menu.
 To add resources to your new project, select `Add a server`{.action} or `Add a disk`{.action}.
 
 ![add a resource](images/add-a-resource-01_2020.png){.thumbnail}
-
-
-
 
 ## Go further
 

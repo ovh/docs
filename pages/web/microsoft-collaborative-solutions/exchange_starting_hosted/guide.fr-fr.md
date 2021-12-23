@@ -16,7 +16,7 @@ Le service Hosted Exchange permet de bénéficier d’adresses e-mail profession
 
 ## Prérequis
 
-- Avoir souscrit une offre [Hosted Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external}.
+- Avoir souscrit une offre [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external}.
 - Avoir reçu l’e-mail vous confirmant l’installation de votre solution Hosted Exchange.
 - Disposer d'un nom de domaine.
 - Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
@@ -91,7 +91,7 @@ Une fois vos comptes configurés, il ne reste plus qu’à les utiliser. Pour ce
 
 Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, consultez notre documentation accessible depuis ce portail : [https://docs.ovh.com/fr/microsoft-collaborative-solutions/](https://docs.ovh.com/fr/microsoft-collaborative-solutions/){.external}. Pour une utilisation optimale de votre adresse Exchange sur un logiciel, assurez-vous de sa bonne compatibilité avec le service.
 
-OVH propose des licences Outlook dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, ainsi que des licences Office 365 sur la page [https://www.ovh.com/fr/office-365/](https://www.ovh.com/fr/office-365/){.external}. Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
+OVH propose des licences Outlook dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, ainsi que des licences Office 365 sur la page [https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/){.external}. Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
 
 > [!primary]
 >

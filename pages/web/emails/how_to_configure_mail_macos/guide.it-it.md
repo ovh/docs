@@ -17,7 +17,7 @@ Gli account MX Plan possono essere configurati su client di posta compatibili, p
 
 ## Prerequisiti
 
-- Disporre di un account email MX Plan (compreso in una soluzione MX Plan o in piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external})
+- Disporre di un account email MX Plan (compreso in una soluzione MX Plan o in piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external})
 - Aver installato l’applicazione Mail sul proprio dispositivo
 - Disporre delle credenziali associate all’account email da configurare
 

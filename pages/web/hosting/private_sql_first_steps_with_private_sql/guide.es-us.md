@@ -15,8 +15,8 @@ Esta guía explica cómo empezar con un SQL Privado.
 
 ## Requisitos
 
-- Tener un SQL Privado (incluido en un [plan de hosting](https://www.ovh.com/world/es/hosting/){.external} o contratado como [opción SQL](https://www.ovh.com/world/es/hosting/opciones-sql.xml){.external}).
-- Tener un [plan de hosting ](https://www.ovh.com/world/es/hosting/){.external} alojado en el mismo datacenter que el SQL Privado (puede consultar dicha información en el área de cliente de OVHcloud).
+- Tener un SQL Privado (incluido en un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external} o contratado como [opción SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/){.external}).
+- Tener un [plan de hosting ](https://www.ovhcloud.com/es/web-hosting/){.external} alojado en el mismo datacenter que el SQL Privado (puede consultar dicha información en el área de cliente de OVHcloud).
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 

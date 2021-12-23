@@ -28,7 +28,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 ## Requisitos
 
-- Ter uma conta de e-mail [E-mail Pro](https://www.ovh.pt/emails/email-pro/){.external}.
+- Ter uma conta de e-mail [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
 - Dispor de um programa Microsoft Outlook ou posterior.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
 

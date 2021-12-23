@@ -16,7 +16,7 @@ Ontdek hoe u uw e-mailadres kunt configureren in Outlook 2016 voor Mac
 
 ## Vereisten
 
-- U moet beschikken over een MX Plan-e-mailadres (inbegrepen bij MX Plan en in [OVH-webhosting](https://www.ovh.nl/shared-hosting/){.external}).
+- U moet beschikken over een MX Plan-e-mailadres (inbegrepen bij MX Plan en in [OVH-webhosting](https://www.ovhcloud.com/nl/web-hosting/){.external}).
 - Er moet een Microsoft Outlook-applicatie op uw Mac zijn geïnstalleerd. 
 - U moet beschikken over de inloggegevens voor het e-mailadres waarvan u de instellingen wilt bewerken.
 

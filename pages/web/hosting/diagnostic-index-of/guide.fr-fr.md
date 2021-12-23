@@ -25,7 +25,7 @@ Lorsqu’une configuration `Multisite` n’est pas correctement paramétrée, vo
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/)
+- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique

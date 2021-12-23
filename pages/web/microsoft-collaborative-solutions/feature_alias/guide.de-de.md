@@ -25,7 +25,7 @@ Ihre E-Mail-Adresse lautet beispielsweise **john.smith@mydomain.ovh** und Ihr Al
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet: [**Exchange**](https://www.ovh.de/emails/hosted-exchange/), [**E-Mail Pro**](https://www.ovh.de/emails/email-pro) oder **MX Plan** (nur neue Version, als Teil eines [OVHcloud Webhostings](https://www.ovh.de/hosting) oder separat bestellt).
+- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet: [**Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**E-Mail Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan** (nur neue Version, als Teil eines [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) oder separat bestellt).
 
 ## In der praktischen Anwendung
 

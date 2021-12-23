@@ -33,7 +33,7 @@ Os servidores DNS são geralmente utilizados por grupos de dois (primário e sec
 
 ## Requisitos
 
-- Dispor de um [domínio](https://www.ovh.pt/dominios/) registado na OVHcloud.
+- Dispor de um [domínio](https://www.ovhcloud.com/pt/domains/) registado na OVHcloud.
 - Ter as autorizações [adequadas para gerir](https://docs.ovh.com/pt/customer/gestao_dos_contactos/){.external} o domínio a partir da Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
@@ -70,7 +70,7 @@ A tabela que aparecer apresenta os servidores DNS atualmente definidos pela OVHc
 
 > [!primary]
 >
-> Quando utiliza os servidores DNS da OVHcloud, os números dos servidores não têm ligação com o(s) serviço(s) que utiliza. Apenas a opção [DNS anycast](https://www.ovh.pt/dominios/dns-anycast/) utiliza servidores DNS específicos que lhe são automaticamente atribuídos.
+> Quando utiliza os servidores DNS da OVHcloud, os números dos servidores não têm ligação com o(s) serviço(s) que utiliza. Apenas a opção [DNS anycast](https://www.ovhcloud.com/pt/domains/options/dns-anycast/) utiliza servidores DNS específicos que lhe são automaticamente atribuídos.
 
 ![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 

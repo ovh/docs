@@ -36,11 +36,11 @@ Il y a deux types de redirections :
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une [offre d’hébergement web]({ovh_www}/hebergement-web/){.external}, [l'hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external}, ou l'offre MX Plan commandée séparément.
+- Disposer d'une offre MX Plan. Celle-ci est disponible via : une [offre d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, [l'hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external}, ou l'offre MX Plan commandée séparément.
 
 ## En pratique
 
-Selon la date d'activation de votre offre MXplan ou si [celle-ci a été récemment migrée]({ovh_www}/mxplan-migration/){.external}, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre. Avant de poursuivre, vous devez identifier celle-ci. 
+Selon la date d'activation de votre offre MXplan ou si [celle-ci a été récemment migrée](https://www.ovhcloud.com/fr/web-hosting/mxplan-migration/){.external}, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre. Avant de poursuivre, vous devez identifier celle-ci. 
 
 Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie « Web ». Cliquez sur `Emails`{.action} dans la barre de services à gauche, puis choisissez le nom de l'offre concernée. Poursuivez selon la version que vous possédez.
 

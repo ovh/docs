@@ -29,7 +29,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 ## Wymagania początkowe
 
-- Posiadanie konta [Exchange](https://www.ovh.pl/emaile/hosted-exchange/).
+- Posiadanie konta [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
 - Instalacja programu Thunderbird na Twoim urządzeniu z systemem Windows.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować.
  

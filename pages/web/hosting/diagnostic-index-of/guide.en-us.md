@@ -24,7 +24,7 @@ If a `Multisite` configuration is not correctly configured, your website may dis
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions

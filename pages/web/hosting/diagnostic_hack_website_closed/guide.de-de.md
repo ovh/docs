@@ -16,7 +16,7 @@ order: 7
 
 ## Voraussetzungen
 
-- Sie besitzen ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
+- Sie besitzen ein [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
 - Sie haben die Zugangsdaten, um sich mit dem Speicherplatz Ihres Hostings zu verbinden.
 - Sie sind im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 

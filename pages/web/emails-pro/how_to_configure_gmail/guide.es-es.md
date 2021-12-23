@@ -23,7 +23,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 ## Requisitos
 
-- Tener una cuenta [Email Pro](https://www.ovh.es/emails/email-pro/){.external}.
+- Tener una cuenta [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external}.
 - Disponer del nombre de usuario y la contraseña de la cuenta Email Pro que quiera configurar.
 - Disponer de las claves de la cuenta Gmail en la que quiera configurar la dirección de correo de OVHcloud.
 

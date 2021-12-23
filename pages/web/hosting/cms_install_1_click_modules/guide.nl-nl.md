@@ -16,7 +16,7 @@ De 1-klik modules maken een eenvoudige en snelle installatie van een Website mog
 
 ## Vereisten
 
-- U moet beschikken over een [webhosting](https://www.ovh.nl/shared-hosting/){.external}.
+- U moet beschikken over een [webhosting](https://www.ovhcloud.com/nl/web-hosting/){.external}.
 - U moet erbonden zijn met de [OVH klantenruimte](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 - Bestanden hoeven niet te worden gedownload in de directory waar uw module wordt geïnstalleerd.
 - Het domein (indien gewenst met subdomein) dat gebruikt zal worden voor uw website moet aangemeld zijn als multisite.
@@ -27,9 +27,9 @@ De 1-klik modules maken een eenvoudige en snelle installatie van een Website mog
 
 Een CMS (Content Management System) stelt u in staat een website te maken via een gebruiksvriendelijke interface. Er bestaan verschillende soorten, afhankelijk van uw project. U kunt zo beschikken over een sitestructuur die gebruiksklaar is om naar wens te personaliseren (thema, tekst, enz.)
 
-OVH biedt 4 CMS met 1-klik modules. Wanneer u deze oplossing gebruikt, moet u dus in deze lijst uw keuze maken. Als u hier al een van hebt gekozen, kunt u doorgaan met de verschillende stappen van deze handleiding. Zo niet, dan kan deze [CMS vergelijking](https://www.ovh.nl/shared-hosting/website/vergelijking-cms/){.external} u helpen in uw keuze.
+OVH biedt 4 CMS met 1-klik modules. Wanneer u deze oplossing gebruikt, moet u dus in deze lijst uw keuze maken. Als u hier al een van hebt gekozen, kunt u doorgaan met de verschillende stappen van deze handleiding. Zo niet, dan kan deze [CMS vergelijking](https://www.ovhcloud.com/nl/web-hosting/uc-cms-comparison/){.external} u helpen in uw keuze.
 
-Als u een CMS wilt installeren dat niet door de OVH 1-klik modules wordt aangeboden, dan kunt u het altijd handmatig op uw hosting installeren, onder voorbehoud van de compatibiliteit van dit CMS met uw product (vind ons product [hier](https://www.ovh.nl/shared-hosting/){.external}).
+Als u een CMS wilt installeren dat niet door de OVH 1-klik modules wordt aangeboden, dan kunt u het altijd handmatig op uw hosting installeren, onder voorbehoud van de compatibiliteit van dit CMS met uw product (vind ons product [hier](https://www.ovhcloud.com/nl/web-hosting/){.external}).
 
 ![CMS logo](images/CMS_logo.png){.thumbnail}
 
@@ -136,11 +136,11 @@ Wanneer u hulp bij de functies van uw site wilt, kunt u naar de site-editor van 
 
 ## Verder
 
-[Een CMS kiezen om een website te maken](https://www.ovh.nl/shared-hosting/website/vergelijking-cms/){.external}
+[Een CMS kiezen om een website te maken](https://www.ovhcloud.com/nl/web-hosting/uc-cms-comparison/){.external}
 
 [Webhosting delen tussen verschillende sites](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/){.external}.
 
-Ontdek ons [Private SQL product](https://www.ovh.nl/shared-hosting/sql-opties.xml){.external}
+Ontdek ons [Private SQL product](https://www.ovhcloud.com/nl/web-hosting/options/start-sql/){.external}
 
 Ontdek ons [CloudDB product](https://www.ovh.nl/cloud/cloud-databases/){.external}
 

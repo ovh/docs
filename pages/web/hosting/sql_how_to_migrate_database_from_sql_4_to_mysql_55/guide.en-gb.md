@@ -9,7 +9,7 @@ hidden: true
 
 In this guide, you will find a range of information and support on migrating your databases from MySQL 4.0 to MySQL 5.6.
 
-You can also refer to the [web hosting FAQ](https://www.ovh.co.uk/web-hosting/faq/){.external} available on our website.
+You can also refer to the [web hosting FAQ](https://www.ovhcloud.com/en-gb/web-hosting/){.external} available on our website.
 
 
 > [!warning]

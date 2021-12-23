@@ -18,13 +18,13 @@ Es ist nicht immer sinnvoll, anderen Benutzern die Verwendung eines gesamten E-M
 
 > [!primary]
 >
-> Obwohl sich diese Anleitung auf unsere Exchange Dienste bezieht, können Sie den Anweisungen auch für Ihre [E-Mail Pro Accounts](https://www.ovh.de/emails/email-pro) folgen.
+> Obwohl sich diese Anleitung auf unsere Exchange Dienste bezieht, können Sie den Anweisungen auch für Ihre [E-Mail Pro Accounts](https://www.ovhcloud.com/de/emails/email-pro/) folgen.
 >
 
 
 ## Voraussetzungen
 
-- Sie haben bereits einen [OVHcloud Exchange](https://www.ovh.de/emails/hosted-exchange/) Dienst eingerichtet.
+- Sie haben bereits einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
 - Sie verfügen über Anmeldeinformationen für den Exchange Account, den Sie konfigurieren möchten.
 
 

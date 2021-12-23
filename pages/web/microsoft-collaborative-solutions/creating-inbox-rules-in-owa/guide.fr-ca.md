@@ -17,7 +17,7 @@ Avec l’option « Règles de gestion de la boîte de réception », vous pouvez
 
 ## Prérequis
 
-- une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposé parmi nos [offres d’hébergement web](https://www.ovh.com/ca/fr/hebergement-web/) ou [**Hosted Exchange**](https://www.ovh.com/ca/fr/emails/hosted-exchange/)
+- une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposé parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) ou [**Hosted Exchange**](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)
 - les paramètres de connexion de l’adresse e-mail que vous souhaitez configurer
 
 ## Instructions

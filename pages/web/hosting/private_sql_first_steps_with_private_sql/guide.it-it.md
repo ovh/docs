@@ -15,8 +15,8 @@ Il servizio SQL Privato consente di utilizzare un'istanza SQL che funziona paral
 
 ## Prerequisiti
 
-- Disporre di un'istanza SQL Privato (inclusa nelle soluzioni di [hosting Web](https://www.ovh.it/hosting-web/){.external} o attivata tramite un’[opzione SQL](https://www.ovh.it/hosting-web/opzioni-sql.xml){.external}).
-- Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo e ospitato nello stesso datacenter dell'istanza SQL Privato (questa informazione è disponibile nello Spazio Cliente OVH)
+- Disporre di un'istanza SQL Privato (inclusa nelle soluzioni di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} o attivata tramite un’[opzione SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/){.external}).
+- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo e ospitato nello stesso datacenter dell'istanza SQL Privato (questa informazione è disponibile nello Spazio Cliente OVH)
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura

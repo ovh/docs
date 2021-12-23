@@ -20,7 +20,7 @@ In caso di errore sul database, è necessario essere in grado di ripristinare un
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting SQL Privato](https://www.ovh.it/hosting-web/opzioni-sql.xml) o [Cloud Database](https://www.ovh.it/cloud-databases/)
+- Disporre di una [soluzione di hosting SQL Privato](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [Cloud Database](https://www.ovh.it/cloud-databases/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -162,4 +162,4 @@ psql —host=server —port=port —user=utente —password=password nome_databa
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

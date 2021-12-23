@@ -1,49 +1,53 @@
 ---
 title: Dostęp do interfejsu zarządzania NSX
 slug: dostep-interfejs-nsx
-excerpt: Poznaj interfejs NSX
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/accessing-NSX-interface/'
+excerpt: Find out how to use the NSX interface
 section: NSX
 order: 1
 ---
 
-**Ostatnia aktualizacja z dnia 03-09-2020**
+**Last updated 17th November 2021**
 
-## Wprowadzenie
+## Objective
 
-NSX to rozwiązanie Software Defined Network (SDN) stworzone przez VMware, które aktywowane jest z poziomu vCenter i sterowane bezpośrednio z interfejsu vSphere. Za pomocą NSX skonfigurujesz zasady dostępu do swoich sieci, utworzysz politykę bezpieczeństwa oraz wdrożysz różne usługi sieciowe niezbędne do zbudowania infrastruktury.
+NSX is a Software Defined Network (SDN) solution developed by VMware that is activated from the vCenter and managed directly from the vSphere interface. With NSX, you can configure rules to access your networks, create your security policy, and quickly deploy the various network services needed to build your infrastructure.
 
-**Ten przewodnik prezentuje interfejs NSX.**
+**This guide provides an introduction to the NSX interface.**
 
-## Wymagania początkowe
+## Requirements
 
-- Posiadanie aktywnego identyfikatora użytkownika z uprawnieniami dla NSX.
-- Dostęp do [interfejsu vSphere](../polaczenie-interfejs-vsphere/)
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- Having a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl))
 
-## W praktyce
+## Instructions
 
-VMWare NSX jest dostępny tylko z poziomu interfejsu vSphere.
+VMWare NSX is only available from the vSphere web client.
 
-Na stronie głównej klienta vSphere kliknij kategorię `Networking and Security`{.action} w menu po lewej stronie:
+From the vSphere web client homepage, click on `Networking and Security`{.action} in the left-hand side of your screen.
+You can also click on `Networking and Security`{.action} in the main menu.
 
-![Networking and Security](images/nsx01.png){.thumbnail}
+![Networking and Security](images/Inter01en.png){.thumbnail}
 
-Masz teraz dostęp do strony głównej NSX oraz wszystkich menu.
+You will now be able to access the NSX dashboard and all the related menus.
+
+![Networking and Security](images/Inter02en.png){.thumbnail}
 
 
 > [!primary]
 >
-> Aby uzyskać dostęp do API NSX, użyj linku https://nsx.pcc-x-x-x-x.ovh.com/api
+> To access the NSX API, you have to use https://nsx.pcc-x-x-x-x.ovh.com/api
 >
-> Przykład pokazujący, jak przywrócić konfigurację firewall: 
+> For example, to retrieve your firewall configuration:
 >
 > ```
 > curl -u "admin:xxxx" -XGET "https://nsx.pcc-x-x-x-x.ovh.com/api/4.0/firewall/globalroot-0/defaultconfig"
 > ```
 >
-> Ze względów bezpieczeństwa /api/1.0/ nie są obsługiwane.
-> 
+> For security reasons, /api/1.0/ is not supported.
+>
 
+## Go further
 
-## Sprawdź również
-
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>.

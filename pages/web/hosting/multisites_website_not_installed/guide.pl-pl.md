@@ -27,7 +27,7 @@ W przeglądarce internetowej możesz wyświetlić nie zainstalowaną stronę **b
 
 ## Wymagania początkowe
 
-- Posiadanie [Oferta Hostingu](https://www.ovh.pl/hosting/)
+- Posiadanie [Oferta Hostingu](https://www.ovhcloud.com/pl/web-hosting/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Posiadanie również [Strefa DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/), do której przypisana jest Twoja domena
 

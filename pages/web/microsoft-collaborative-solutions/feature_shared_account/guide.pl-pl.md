@@ -24,7 +24,7 @@ Konto **współdzielone** to skrzynka e-mail współdzielona między kilka kont 
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Wykupienie usługi [Exchange OVHcloud](https://www.ovh.pl/emaile/hosted-exchange/).
+- Wykupienie usługi [Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
 
 ## W praktyce
 

@@ -24,7 +24,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ## Prérequis
 
-- Disposer d’un compte e-mail [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external}.
+- Disposer d’un compte e-mail [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external}.
 - Disposer du logiciel Microsoft Outlook ou ultérieur.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 

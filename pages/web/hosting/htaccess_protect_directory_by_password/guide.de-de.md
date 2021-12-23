@@ -26,7 +26,7 @@ Es kann notwendig sein, den Zugang zu einem Teil Ihrer Website mittels Zugangsda
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 - Sie verfügen über die [Login-Daten](../verbindung-ftp-speicher-webhosting/#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
 
@@ -70,7 +70,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Wenn Sie über ein Webhosting [Pro](https://www.ovh.de/hosting/hosting-pro.xml) oder [Performance](https://www.ovh.de/hosting/performance-hosting.xml) verfügen, loggen Sie sich via [SSH](../webhosting_ssh_auf_ihren_webhostings/) in Ihrem Hosting ein. Führen Sie folgenden Befehl aus:
+Wenn Sie über ein Webhosting [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) oder [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) verfügen, loggen Sie sich via [SSH](../webhosting_ssh_auf_ihren_webhostings/) in Ihrem Hosting ein. Führen Sie folgenden Befehl aus:
 
 ```bash
 php crypter.php
@@ -78,7 +78,7 @@ php crypter.php
 
 > [!warning]s
 >
-> Aus Sicherheitsgründen wird die Verwendung von SSH empfohlen. Wenn Sie jedoch über ein Webhosting [Basic](https://www.ovh.de/hosting/hosting-basic.xml) verfügen und nicht auf [Pro](https://www.ovh.de/hosting/hosting-pro.xml) oder [Performance](https://www.ovh.de/hosting/performance-hosting.xml) wechseln möchten, können Sie auch die Datei “crypter.php“ über Ihren Webbrowser ausführen (einfach die URL öffen, zum Beispiel: https://ihrdomainname.ovh/crypter.php).
+> Aus Sicherheitsgründen wird die Verwendung von SSH empfohlen. Wenn Sie jedoch über ein Webhosting [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) verfügen und nicht auf [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) oder [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) wechseln möchten, können Sie auch die Datei “crypter.php“ über Ihren Webbrowser ausführen (einfach die URL öffen, zum Beispiel: https://ihrdomainname.ovh/crypter.php).
 >
 > Wenn Sie weitere Fragen zur Vorgehensweise zur Verschlüsselung Ihrer Passwörter haben, kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/). Wir werden Sie bei diesen Fragen nicht unterstützen können.
 >

@@ -16,8 +16,8 @@ You can manage an SSL certificate on your Web Hosting plan. You can either order
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/sg/web-hosting/){.external}
-- at least one [domain name](https://www.ovh.com/sg/domains/){.external}
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external}
+- at least one [domain name](https://www.ovhcloud.com/en-sg/domains/){.external}
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
@@ -31,7 +31,7 @@ The guide sections below describe the options available when managing an SSL cer
 
 ### Enabling SSL on a multisite <a name="multisite"></a>
 
-Depending on which [SSL certificate](https://www.ovh.com/sg/web-hosting/shared-ssl.xml){.external} you would like to order, you can activate a secure SSL connection on one or more of your multisites. To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} in the services bar on the left-hand side and select the plan concerned. Click on the `Multisite`{.action} tab.
+Depending on which [SSL certificate](https://www.ovhcloud.com/en-sg/web-hosting/options/ssl/){.external} you would like to order, you can activate a secure SSL connection on one or more of your multisites. To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} in the services bar on the left-hand side and select the plan concerned. Click on the `Multisite`{.action} tab.
 
 The table displayed will contain all of the domain names that have been added to your Web Hosting plan. In the "SSL" column, you will see the activation status for secure SSL connections on your multisites. 
 
@@ -64,10 +64,10 @@ Once you have submitted the activation request, the SSL secure connection status
 
 ### Enabling SSL on your Web Hosting plan <a name="enablessl"></a>
 
-With an OVHcloud Web Hosting plan, you can choose from a range of [SSL certificate solutions](https://www.ovh.com/sg/web-hosting/shared-ssl.xml){.external}:
+With an OVHcloud Web Hosting plan, you can choose from a range of [SSL certificate solutions](https://www.ovhcloud.com/en-sg/web-hosting/options/ssl/){.external}:
 
-- a free Let's Encrypt SSL certificate ([included with compatible Web Hosting plans](https://www.ovh.com/sg/web-hosting/shared-ssl.xml){.external})
-- a paid SSL certificate ([available as an option with compatible Web Hosting plans](https://www.ovh.com/sg/web-hosting/shared-ssl.xml){.external})
+- a free Let's Encrypt SSL certificate ([included with compatible Web Hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/options/ssl/){.external})
+- a paid SSL certificate ([available as an option with compatible Web Hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/options/ssl/){.external})
 - importing an SSL certificate ordered from another provider
 
 To start activating your certificate, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} in the services bar on the left-hand side and select the plan concerned. Click on the `General information`{.action} tab. Beneath "SSL certificate", the word "No" should be visible, showing that no SSL certificates have been set up on your Web Hosting plan.
@@ -84,7 +84,7 @@ If the word "Yes" is visible, an SSL certificate has already been set up on the 
 
 ![managessl](images/manage-ssl-step1.png){.thumbnail}
 
-In the window that appears, select the SSL certificate you would like to order. Depending on the [Web Hosting plan](https://www.ovh.com/sg/web-hosting/){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
+In the window that appears, select the SSL certificate you would like to order. Depending on the [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
 
 ![managessl](images/manage-ssl-step2.png){.thumbnail}
 

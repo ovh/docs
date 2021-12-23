@@ -27,8 +27,8 @@ The preconfigured Core Rule Set (CRS) of our *ModSecurity* protects your website
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}
-- at least one [domain name](https://www.ovh.ie/domains/){.external} attached to the hosting
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}
+- at least one [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} attached to the hosting
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 

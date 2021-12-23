@@ -16,7 +16,7 @@ Die SQL-Server Privat und Cloud Databases geben Ihnen die Möglichkeit, auf die 
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting mit SQL Private](https://www.ovh.de/hosting/sql-optionen.xml) in Ihrem Kunden-Account oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie haben ein [OVHcloud Webhosting mit SQL Private](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) in Ihrem Kunden-Account oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -35,7 +35,7 @@ Hier können Sie wichtige Informationen zu Ihrer SQL-Instanz einsehen. Wir bitte
 |RAM|Zeigt den für Ihre Instanz verfügbaren Arbeitsspeicher sowie eventuelle Überschreitungen der RAM-Kapazität. Ihr Datenbankserver verfügt über dedizierte und garantierte Ressourcen: den RAM-Speicher. Falls nötig, können Sie Ihren RAM skalieren und eine Warnmeldung erhalten, wenn Sie sämtliche RAM-Ressourcen Ihrer Instanz verwenden.|
 |Infrastruktur|Zeigt die von Ihrer Instanz verwendete Infrastruktur an. Hierbei handelt es es sich um eine interne Information der  OVHcloud Infrastruktur.|
 |Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem Rechenzentrum des Webhostings übereinstimmt, auf dem Ihre Website aktuell (oder in Zukunft) gehostet wird.|
-|Host|Zeigt den OVHcloud Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine interne Information der  OVHcloud Infrastruktur, die im Rahmen unserer Kommunikation zu [OVHcloud Störungen](http://travaux.ovh.net/){.external} verwendet werden kann.|
+|Host|Zeigt den OVHcloud Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine interne Information der  OVHcloud Infrastruktur, die im Rahmen unserer Kommunikation zu [OVHcloud Störungen](https://web-cloud.status-ovhcloud.com/){.external} verwendet werden kann.|
 
 ![Allgemeine Informationen](images/privatesql01-General-information.png){.thumbnail}
 

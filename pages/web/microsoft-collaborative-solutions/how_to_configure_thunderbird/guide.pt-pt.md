@@ -25,7 +25,7 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 
 ## Requisitos
 
-- Ter um endereço de [Exchange](https://www.ovh.pt/emails/hosted-exchange/).
+- Ter um endereço de [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
 - Dispor do software Thunderbird instalado no seu Windows.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
  

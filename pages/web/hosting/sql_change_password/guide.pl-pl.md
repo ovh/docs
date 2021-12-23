@@ -16,7 +16,7 @@ Baza danych (z ang.*database* lub w skrócie „DB”) umożliwia przechowywanie
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
+- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Dostęp do interfejsu zarządzania hostingiem w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 > [!warning]

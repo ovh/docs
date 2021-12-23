@@ -16,7 +16,7 @@ With the Exchange service, you can set up professional email addresses, and use 
 
 ## Requirements
 
-- an [Exchange](https://www.ovh.co.uk/emails/){.external} service
+- an [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external} service
 - access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions

@@ -24,7 +24,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- an [OVHcloud Exchange account](https://www.ovh.com/world/emails/hosted-exchange/){.external}
+- an [OVHcloud Exchange account](https://www.ovhcloud.com/en/emails/hosted-exchange/){.external}
 - the Mail app installed on your iOS device
 - login credentials for the email account to be configured
 

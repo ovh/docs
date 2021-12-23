@@ -38,7 +38,7 @@ The sender sends an email to the mailing list. The moderator receives an email w
 
 ## Requirements
 
-- an MX Plan 100 minimum or [web hosting plan](https://www.ovh.co.uk/web-hosting/){.external} eligible for mailing lists
+- an MX Plan 100 minimum or [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} eligible for mailing lists
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions

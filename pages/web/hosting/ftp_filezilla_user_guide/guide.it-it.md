@@ -75,7 +75,7 @@ Dopo aver inserito tutte le informazioni, clicca su Connessione rapida per acced
 
 ## Connessione SFTP
 L'SFTP (che sta per SSH File Transfer Protocol) è una connessione FTP sulla porta 22 e permette di accedere in maniera sicura.
-Questo tipo di connessione è possibile soltanto a partire dall'offerta [Pro](https://www.ovh.it/hosting-web/).
+Questo tipo di connessione è possibile soltanto a partire dall'offerta [Pro](https://www.ovhcloud.com/it/web-hosting/).
 Ti permette di modificare i diritti dei file non modificabili in FTP sulla porta 21 ad esempio.
 
 Nel riquadro verde in alto, per accedere al server remoto, ti chiediamo:

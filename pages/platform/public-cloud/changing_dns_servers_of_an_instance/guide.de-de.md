@@ -1,74 +1,84 @@
 ---
-title: 'Die DNS-Server einer Instanz anpassen'
+title: "DNS Server einer Public Cloud Instanz ändern"
 slug: die-dns-server-einer-instanz-aendern
-excerpt: 'Erfahren Sie hier, wie Sie den vorkonfigurierten DNS-Server einer Public Cloud Instanz ändern'
+excerpt: 'Erfahren Sie hier, wie Sie den vorkonfigurierten DNS-Server einer Public Cloud Instanz anpassen'
 section: 'Netzwerk und IP'
 legacy_guide_number: 1985
 ---
 
-**Letzte Aktualisierung am 16.11.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 29.10.2020**
 
 ## Ziel
 
-Der OVHcloud DNS-Server wird auf einer Public Cloud Instanz voreingestellt (213.186.33.99). Sie haben die Möglichkeit, diesen zu ändern oder weitere hinzuzufügen. DNS-Server werden jedoch vom DHCP-Server automatisch konfiguriert und Sie werden Sie nicht einfach dadurch ändern können, dass Sie die Datei `resolv.conf` bearbeiten. 
+Der OVHcloud DNS-Server wird auf einer Public Cloud Instanz voreingestellt (z.B. 213.186.33.99).<br>
+Sie können einen sekundären Server hinzufügen oder diese Konfiguration durch Ihre eigene ersetzen. Die DNS-Server werden jedoch vom DHCP-Server automatisch konfiguriert und Sie werden die DNS-Konfiguration nicht ändern können, indem Sie die Datei `resolv.conf` bearbeiten.
+ 
+**Diese Anleitung erklärt, wie Sie die DHCP-Konfiguration einer Instanz anpassen, um die DNS-Server zu ändern.**
 
-**Diese Anleitung erklärt, wie Sie vorgehen können, um die DHCP-Konfiguration Ihrer Instanz zu ändern. Anschließend können Sie die DNS-Server anpassen.**
+> [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen spezialisierten Dienstleister zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+>
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem Kunden-Account.
+- Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH oder RDP.
+- Grundlegende Kenntnisse der Netzwerkverwaltung.
 
 ## In der praktischen Anwendung
 
-### Auf Debian/Ubuntu
+Verbinden Sie sich über SSH mit Ihrer Instanz. Weitere Informationen hierzu finden Sie in der Anleitung zum [Einloggen auf einer Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#connect-to-instance).
 
-- Verbinden Sie sich über SSH mit der Instanz.
-- Wechseln Sie zu root.
+Wechseln Sie zum Root-Benutzer. Falls nötig lesen Sie unsere [Anleitung zu diesem Thema](https://docs.ovh.com/de/public-cloud/root-rechte_erlangen_und_passwort_festlegen/).
 
-> [!success]
->
-> Sie können die Datei resolv.conf auslesen, um zu überprüfen welcher der konfigurierte DNS-Server ist:
-> 
-> cat /etc/resolv.conf
-> 
-> 
-> domain openstacklocal
-> search openstacklocal
-> nameserver 213.186.33.99
->
+### Debian / Ubuntu
 
-- Editieren Sie die Datei /etc/dhcp/dhclient.conf mit den gewünschten DNS-Servern. Sie haben in Bezug auf diese Konfiguration zwei Möglichkeiten:
+Bearbeiten Sie die Datei `/etc/dhcp/dhclient.conf` mithilfe eines Texteditors Ihrer Wahl, um die gewünschten DNS Server zu konfigurieren.
 
-Sie können einen zusätzlichen DNS-Server hinzufügen:
+Hier können Sie verschiedene "Statements" nutzen, um die DNS Server Ihrer Wahl hinzuzufügen. Fügen Sie die betreffende Zeile hinzu und ersetzen Sie dabei IP1/IP2 jeweils mit deren IP-Adressen.
+
+- Um DNS-Server hinzuzufügen, die den voreingestellten Server ersetzen, fügen Sie diese Zeile hinzu:
   
-```
-supersede domain-name-servers 127.0.0.1;
+```console
+supersede domain-name-servers IP1, IP2;
 ```
 
-Sie können den vorkonfigurierten DNS-Server ersetzen:
+- Um DNS-Server hinzuzufügen, die den standardmäßig konfigurierten vorgezogen werden:
     
+```console
+prepend domain-name-servers IP1, IP2;
 ```
-prepend domain-name-servers 127.0.0.1;
+
+- Um DNS-Server hinzuzufügen, die nur verwendet werden, wenn der vorkonfigurierte Server nicht verfügbar ist:
+    
+```console
+append domain-name-servers IP1, IP2;
 ```
- 
-- Überprüfen Sie, dass die Konfiguration angewendet wurde (dies kann einige Minuten dauern):
+
+Speichern Sie Ihre Änderungen der Konfigurationsdatei und schließen Sie den Editor.
+
+Überprüfen Sie, ob die Konfiguration korrekt übernommen wurde mit folgendem Befehl:
 
 ```bash
 cat /etc/resolv.conf
 
 domain openstacklocal
 search openstacklocal
-nameserver 127.0.0.1
-nameserver 213.186.33.99
+nameserver IP1
+nameserver IP2
 ```
 
-### Auf CentOS / Fedora 
+### CentOS/Fedora
 
-- Verbinden Sie sich über SSH mit der Instanz.
-- Wechseln Sie zu root.
-- Überprüfen Sie die aktuelle Konfiguration mithilfe des Befehls nmcli:
+Überprüfen Sie die aktuelle Konfiguration mit dem Befehl `nmcli`:
 
-```
+```bash
 nmcli
  
 eth0: connected to System eth0
@@ -91,62 +101,67 @@ DNS configuration:
         servers: 127.0.0.1 213.186.33.99
         interface: eth0
 ```
-- Rufen Sie den Namen Ihrer öffentlichen Schnittstelle ab:
 
-```
+Überprüfen Sie den Namen Ihres öffentlichen Interface:
+
+```bash
 nmcli connection show
  
-NAME     UUID            TYP     GERÄT
+NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ```
-- Deaktivieren Sie die automatische DNS-Konfiguration und geben Sie die gewünschten DNS ein:
 
-```
-nmcli con mod "Name Ihrer Schnittstelle" ipv4.ignore-auto-dns yes
-nmcli con mod "Name Ihrer Schnittstelle"  ipv4.dns "127.0.0.1 213.186.33.99"
-```
-- Konfiguration anwenden:
+Deaktivieren Sie die automatische Änderung der DNS-Einstellungen und fügen Sie die IP-Adressen der DNS Server hinzu (ersetzen Sie IP1/IP2), die Sie konfigurieren möchten. (Ersetzen Sie `System eth0` mit dem zuvor abgerufenen Wert.)
 
+```bash
+nmcli con mod "System eth0" ipv4.ignore-auto-dns yes
+nmcli con mod "System eth0" ipv4.dns "IP1 IP2"
 ```
-nmcli con down "Name Ihrer Schnittstelle" && nmcli con up "Name Ihrer Schnittstelle"
-```
-- Überprüfen Sie, dass die Konfiguration richtig angewendet wurde:
 
+Wenden Sie die Konfiguration an. (Ersetzen Sie `System eth0` mit dem zuvor abgerufenen Wert.)
+
+```bash
+nmcli con down "System eth0" && nmcli con up "System eth0"
 ```
+
+Überprüfen Sie, dass die Konfiguration korrekt übernommen wurde:
+
+```bash
 nmcli | grep -E 'DNS|server|interface'
  
 DNS configuration:
-        servers: 127.0.0.1 213.186.33.99
+        servers: IP1 IP2
         interface: eth0
 ```
 
-### Auf Windows
+### Windows
 
-- Verbinden Sie sich über Remote Desktop oder über die VNC-Konsole. Sie können die Anleitung [Auf einer Public Cloud Instanz einloggen](../erster-login/){.external} konsultieren.
+Loggen Sie sich über eine Remote-Verbindung (RDP) oder mit der VNC-Konsole auf der Instanz ein. Weitere Informationen hierzu finden Sie in der Anleitung zum [Einloggen auf einer Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#connect-to-instance).
 
-- Gehen Sie zu den Netzwerk-Einstellungen.
+Öffnen Sie die `Netzwerkeinstellungen`{.action}.
 
-![change-dns-servers](images/changednsservers1.png){.thumbnail}
+![DNS Server ändern](images/changednsservers1.png){.thumbnail}
 
-- Öffnen Sie dann zu der IPv4-Konfiguration der öffentlichen Netzwerk-Schnittstelle.
+Gehen Sie über die Systemsteuerung zur IPv4-Konfiguration Ihrer öffentlichen Netzwerkschnittstelle.
 
-![change-dns-servers](images/changednsservers2.png){.thumbnail}
+![DNS Server ändern](images/changednsservers2.png){.thumbnail}
 
-- Fügen Sie Ihre DNS-Server hinzu. 
+Fügen Sie die gewünschten Server in den `Erweiterten Einstellungen`{.action} hinzu.
 
-![change-dns-servers](images/changednsservers3.png){.thumbnail}
+![DNS Server ändern](images/changednsservers3.png){.thumbnail}
 
-> [!success]
+> [!primary]
 >
-Über Powershell ermöglicht Ihnen der Befehl nslookup zu überprüfen, welche DNS-Server standardmäßig verwendet werden.
+In PowerShell kann mit dem Befehl `nslookup` überprüft werden, welche DNS-Server konfiguriert sind.
 >
 
-## Weiterführende Informationen
 
-[Auf einer Public Cloud Instanz einloggen](../erster-login/)
+## Weiterführende Informationen <a name="gofurther"></a>
 
-[Root-Rechte erlangen und Passwort festlegen](../root-rechte_erlangen_und_passwort_festlegen/)
+[Eine erste Public Cloud Instanz erstellen und sich damit verbinden](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/)
 
-[Hostname einer Public Cloud Instanz ändern](../hostname-einer-instanz-aendern/)
+[Root-Rechte erlangen und Passwort festlegen](https://docs.ovh.com/de/public-cloud/root-rechte_erlangen_und_passwort_festlegen/)
+
+[Hostname einer Public Cloud Instanz ändern](https://docs.ovh.com/de/public-cloud/hostname-einer-instanz-aendern/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

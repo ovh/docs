@@ -31,7 +31,7 @@ También puede ocurrir que, debido a una detección de anomalías, nuestros robo
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting](https://www.ovh.es/hosting/) de OVHcloud.
+- Tener contratado un plan de [hosting](https://www.ovhcloud.com/es-es/web-hosting/) de OVHcloud.
 - Disponer de las [claves de conexión](../conexion-espacio-almacenamiento-ftp-alojamiento-web/#1-obtener-los-datos-de-conexion) al espacio de almacenamiento del alojamiento.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 

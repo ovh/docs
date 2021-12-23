@@ -39,7 +39,7 @@ Istnieje możliwość konfiguracji kilku rekordów MX dla jednej domeny. Każdem
 
 ### Etap 2: znajomość konfiguracji MX OVH
 
-Zapoznaj się z przedstawioną poniżej konfiguracją MX OVH przewidzianą dla rozwiązań MX Plan (występującą samodzielnie lub włączoną do oferty [hostingu](https://www.ovh.pl/hosting//){.external} oraz [Exchange](https://www.ovh.pl/emaile/){.external}. Na serwerach poczty elektronicznej OVH zainstalowane jest oprogramowanie antyspamowe i antywirusowe.
+Zapoznaj się z przedstawioną poniżej konfiguracją MX OVH przewidzianą dla rozwiązań MX Plan (występującą samodzielnie lub włączoną do oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting//){.external} oraz [Exchange](https://www.ovhcloud.com/pl/emails/){.external}. Na serwerach poczty elektronicznej OVH zainstalowane jest oprogramowanie antyspamowe i antywirusowe.
 
 |Domena|TTL|Typ rekordu|Priorytet|Adres docelowy|
 |---|---|---|---|---|

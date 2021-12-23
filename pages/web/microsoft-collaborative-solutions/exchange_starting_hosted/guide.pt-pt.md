@@ -15,7 +15,7 @@ O serviço Hosted Exchange permite beneficiar de endereços de e-mail profission
 
 ## Requisitos
 
-- Ter uma oferta [Hosted Exchange](https://www.ovh.pt/emails/hosted-exchange/){.external}.
+- Ter uma oferta [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}.
 - Ter recebido o e-mail com a confirmação da instalação da solução Hosted Exchange.
 - Dispor de um domínio.
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
@@ -90,7 +90,7 @@ As contas foram configuradas e estão prontas a usar. Para isso, a OVH disponibi
 
 Se quiser, também pode configurar o seu endereço de e-mail num software (cliente) de correio eletrónico ou dispositivo externo (smartphone ou tablet), consulte os manuais da OVH sobre as [soluções colaborativas da Microsoft](https://docs.ovh.com/pt/microsoft-collaborative-solutions/){.external}. Para uma utilização otimizada do seu endereço Exchange num software, certifique-se de que seja compatível com o serviço.
 
-A OVH propõe licenças Outlook que poderá contratar na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, assim como as licenças Office 365, que poderá contratar através da página [Office 365 da OVH](https://www.ovh.pt/office-365/){.external}. Caso pretenda usufruir do software de correio eletrónico Outlook ou de outros programas da suite Office, recomendamos uma destas soluções.
+A OVH propõe licenças Outlook que poderá contratar na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, assim como as licenças Office 365, que poderá contratar através da página [Office 365 da OVH](https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/){.external}. Caso pretenda usufruir do software de correio eletrónico Outlook ou de outros programas da suite Office, recomendamos uma destas soluções.
 
 > [!primary]
 >

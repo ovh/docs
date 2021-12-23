@@ -16,7 +16,7 @@ Une base de données (*database*, « DB » ou « BDD ») permet de stocker des �
 
 ## Prérequis
 
-- Disposer d'une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'une offre d’[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 > [!warning]

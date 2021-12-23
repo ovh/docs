@@ -9,7 +9,7 @@ hidden: true
 ## Informacoes gerais
 Uma base de dados, muitas vezes designada como "BDD" ou "DB" (database) é um elemento estruturado e organizado que permite o armazenamento de grandes quantidades de informações (adição, atualização, pesquisa de dados). O SQL é a linguagem que permite solicitar à base a inclusão, edição, recuperação e eliminação de dados.
 
-O número de bases de dados e o seu tamanho máximo difere de acordo com o tipo de oferta de alojamento partilhado do qual dispões. Poderá encontrar os diferentes serviços de alojamento partilhado OVH [aqui](https://www.ovh.pt/alojamento-partilhado/){.external}
+O número de bases de dados e o seu tamanho máximo difere de acordo com o tipo de oferta de alojamento partilhado do qual dispões. Poderá encontrar os diferentes serviços de alojamento partilhado OVH [aqui](https://www.ovhcloud.com/pt/web-hosting/){.external}
 
 Somente os alojamentos partilhados da OVH podem aceder a estas bases de dados. A OVH não permite igualmente a ligação a partir do "exterior" a uma base de dados criada no serviço de alojamento partilhado.
 

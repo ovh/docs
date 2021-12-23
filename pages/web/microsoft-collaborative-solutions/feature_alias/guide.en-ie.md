@@ -21,7 +21,7 @@ For example, your email address is **john.smith@mydomain.ovh** and you create an
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- an email service with OVHcloud: [**Exchange**](https://www.ovh.ie/emails/hosted-exchange/){.external}, [**Email Pro**](https://www.ovh.ie/emails/email-pro/){.external} or **MX Plan** (new version only, included in an [OVHcloud Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} or ordered separately as a standalone solution)
+- an email service with OVHcloud: [**Exchange**](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/){.external}, [**Email Pro**](https://www.ovhcloud.com/en-ie/emails/email-pro/){.external} or **MX Plan** (new version only, included in an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} or ordered separately as a standalone solution)
 
 ## Instructions
 

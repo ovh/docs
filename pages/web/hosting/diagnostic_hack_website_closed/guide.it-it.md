@@ -16,7 +16,7 @@ Se hai pubblicato il tuo sito su un hosting Web OVH, potresti ricevere un messag
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} attivo
+- Disporre di un piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
 - Disporre delle credenziali di accesso allo spazio di storage dell’hosting
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
 

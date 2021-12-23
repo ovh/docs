@@ -16,7 +16,7 @@ You can configure email addresses on a range of email clients, provided they are
 
 ## Requirements
 
-- You need to have an MX Plan email address, available as part of our [Web Hosting plans](https://www.ovh.com/sg/web-hosting/).
+- You need to have an MX Plan email address, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/).
 - You need to have the Mail app installed on your device.
 - You need to have the appropriate credentials for the email address you would like to configure.
 

@@ -114,7 +114,7 @@ Para contratar un certificado SSL, abra la pestaña `Certificado SSL`{.action} y
 
 |Elemento|Función|
 |---|---|
-|Tipo de certificado|Gratuito (Let's Encrypt), Comodo DV o Comodo EV (más información en la [web de ovh](https://www.ovh.com/world/es/hosting/ssl_compartido.xml))|
+|Tipo de certificado|Gratuito (Let's Encrypt), Comodo DV o Comodo EV (más información en la [web de ovh](https://www.ovhcloud.com/es/web-hosting/options/ssl/))|
 |Fully Qualified Domain Name (FQDN)|Indique el dominio o dominios correspondientes|
 
 Si opta por un certificado Comodo EV, también deberá introducir la información de contacto y jurisdiccional.

@@ -16,8 +16,8 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external} dans votre espace client OVHcloud.
-- Posséder une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} dans votre espace client OVHcloud.
+- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique

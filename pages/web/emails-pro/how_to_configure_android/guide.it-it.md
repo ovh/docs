@@ -23,7 +23,7 @@ order: 5
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Email Pro](https://www.ovh.it/emails/email-pro/){.external}
+- Disporre di una soluzione [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
 - Aver installato l’applicazione Gmail sul proprio dispositivo, che puoi scaricare da Google Play Store
 - Disporre delle credenziali associate all’account email da configurare
 
@@ -93,7 +93,7 @@ Se devi inserire manualmente dei campi tecnici nelle preferenze del tuo account,
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVHcloud propone un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external}, disponibile alla pagina [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} e accessibile con le credenziali del tuo indirizzo email.
+OVHcloud propone un’applicazione Web con [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}, disponibile alla pagina [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} e accessibile con le credenziali del tuo indirizzo email.
 
 ## Per saperne di più
 

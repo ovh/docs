@@ -15,7 +15,7 @@ Konta Exchange można skonfigurować w różnych kompatybilnych programach poczt
 
 ## Wymagania początkowe
 
-- Wykupienie konta e-mail [Exchange](https://www.ovh.pl/emaile/){.external}
+- Wykupienie konta e-mail [Exchange](https://www.ovhcloud.com/pl/emails/){.external}
 - Instalacja aplikacji Poczta na Twoim urządzeniu
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
@@ -62,7 +62,7 @@ Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skon
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVH oferuje również aplikację internetową [funkcje do pracy zespołowej](https://www.ovh.pl/emaile/){.external}. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+OVH oferuje również aplikację internetową [funkcje do pracy zespołowej](https://www.ovhcloud.com/pl/emails/){.external}. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ## Sprawdź również
 

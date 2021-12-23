@@ -15,7 +15,7 @@ L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VP
 
 > [!warning]
 >
-> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://marketplace.ovhcloud.com/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ## Prérequis
@@ -113,9 +113,9 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 > Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l'original en cas de problème.
 >
 
-Deux méthodes existente pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
+Deux méthodes existent pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
 
-- **pour Debian 8 et inférieure, Ubuntu 16.04 et inférieure** : utilisez la [méthode basée sur le fichier *interfaces*](#interfaces) ;
+- **pour Debian 11 et inférieure, Ubuntu 16.04 et inférieure** : utilisez la [méthode basée sur le fichier *interfaces*](#interfaces) ;
 
 - **pour Ubuntu 17.04 et versions ultérieures** : utilisez la [méthode basée sur la fonction *Netplan*](#netplan).
 
@@ -131,7 +131,7 @@ Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spé
 La méthode la plus souvent préconisée est de créer un fichier de configuration dans le répertoire `/etc/network/interfaces.d/`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
+nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 Cela vous permet de séparer la configuration IPv6 et de rétablir facilement les modifications en cas d'erreur.
@@ -421,5 +421,7 @@ echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-network-c
 Pour revenir à une gestion automatique de votre réseau par Cloud-init, supprimez le fichier nouvellement créé ou déplacez-le dans un autre répertoire.
 
 ## Aller plus loin
+
+[OVHcloud Marketplace](https://marketplace.ovhcloud.com/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

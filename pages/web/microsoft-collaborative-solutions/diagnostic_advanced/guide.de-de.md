@@ -21,7 +21,7 @@ Da es eine Vielzahl von Gründen für mögliche Fehler bei Exchange-Accounts gib
 
 ## Voraussetzungen
 
-- Sie haben einen [OVHcloud Exchange](https://www.ovh.de/emails/hosted-exchange/) Dienst eingerichtet.
+- Sie haben einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
 - Sie verfügen über die Login-Daten für den zu überprüfenden Exchange Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
@@ -122,7 +122,7 @@ Dieser Fehler zeigt an, dass der Versand von E-Mails generell nicht möglich, wa
 - [Ihr Account wurde geschlossen](#expired)
 - [Das eingegebene Passwort ist nicht korrekt](#password)
 - [Ihr Account wurde wegen Spam-Versand blockiert](#blocked)
-- [Auf der Infrastruktur ist eine Störung aufgetreten](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+- [Auf der Infrastruktur ist eine Störung aufgetreten](https://web-cloud.status-ovhcloud.com/)
 
 ## Weiterführende Informationen
 

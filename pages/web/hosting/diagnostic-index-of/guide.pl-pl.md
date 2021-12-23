@@ -29,7 +29,7 @@ Jeśli konfiguracja `MultiSite` nie jest poprawnie skonfigurowana, Twoja strona 
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovh.pl/hosting/)
+- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce

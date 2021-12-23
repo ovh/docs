@@ -16,7 +16,7 @@ order: 1
 
 ## Voraussetzungen
 
-- Sie besitzen ein [Webhosting](https://www.ovh.de/hosting/) Angebot.
+- Sie besitzen ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot.
 - Sie sind in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager) eingeloggt.
 - Das Verzeichnis, in dem Ihr Modul installiert wird, enthält keine anderen Dateien.
 - Die Domain (und gegebenenfalls die Subdomain) Ihrer Website ist als Multisite registriert.
@@ -27,9 +27,9 @@ order: 1
 
 Ein CMS (Content Management System) ermöglicht es Ihnen, eine Website über ein einfaches Interface einzurichten. Es gibt verschiedene Arten von CMS, die von Ihren individuellen Projekten abhängen. So können Sie auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.).
 
-Bei OVH stehen Ihnen 4 CMS als 1-Klick-Module zur Verfügung. Wenn Sie diese Lösung verwenden möchten, wählen Sie eines dieser CMS. Wenn Sie Ihre Wahl bereits getroffen haben, können Sie den nächsten Abschnitt überspringen und das Tutorial fortsetzen. Sollten Sie noch auf der Suche nach dem richtigen CMS sein, kann Ihnen dieser [CMS Vergleich](https://www.ovh.de/hosting/website/cms-vergleich/) bei Ihrer Auswahl helfen.
+Bei OVH stehen Ihnen 4 CMS als 1-Klick-Module zur Verfügung. Wenn Sie diese Lösung verwenden möchten, wählen Sie eines dieser CMS. Wenn Sie Ihre Wahl bereits getroffen haben, können Sie den nächsten Abschnitt überspringen und das Tutorial fortsetzen. Sollten Sie noch auf der Suche nach dem richtigen CMS sein, kann Ihnen dieser [CMS Vergleich](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/) bei Ihrer Auswahl helfen.
 
-Wenn Sie ein CMS installieren möchten, das nicht als OVH 1-Klick-Modul angeboten wird, können Sie es manuell auf Ihrem Hosting installieren, sofern dieses CMS mit Ihrem Webhosting Angebot kompatibel ist (die Details zu unseren Angeboten finden Sie [hier](https://www.ovh.de/hosting/)).
+Wenn Sie ein CMS installieren möchten, das nicht als OVH 1-Klick-Modul angeboten wird, können Sie es manuell auf Ihrem Hosting installieren, sofern dieses CMS mit Ihrem Webhosting Angebot kompatibel ist (die Details zu unseren Angeboten finden Sie [hier](https://www.ovhcloud.com/de/web-hosting/)).
 
 ![CMS-Logos](images/CMS_logo.png){.thumbnail}
 
@@ -138,13 +138,13 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 
 ## Weiterführende Informationen
 
-[Finden Sie das richtige CMS für Ihre Website](https://www.ovh.de/hosting/website/cms-vergleich/){.external}
+[Finden Sie das richtige CMS für Ihre Website](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/){.external}
 
 [Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
 
 [Verwaltung einer Datenbank in Ihrem Webhosting](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external}
 
-Entdecken Sie unsere [SQL Private Angebote](https://www.ovh.de/hosting/sql-optionen.xml){.external}
+Entdecken Sie unsere [SQL Private Angebote](https://www.ovhcloud.com/de/web-hosting/options/start-sql/){.external}
 
 Entdecken Sie unsere [CloudDB Angebote](https://www.ovh.de/cloud/cloud-databases/){.external}
 

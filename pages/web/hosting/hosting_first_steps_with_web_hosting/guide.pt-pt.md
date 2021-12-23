@@ -16,9 +16,9 @@ O alojamento web da OVH oferece várias possibilidades de utilização e configu
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Ter um serviço de [alojamento web OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Ter recebido o e-mail com a confirmação da instalação do alojamento web.
-- Ter um [domínio](https://www.ovh.pt/dominios/){.external} (endereço que permite identificar e aceder ao seu site).
+- Ter um [domínio](https://www.ovhcloud.com/pt/domains/){.external} (endereço que permite identificar e aceder ao seu site).
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
@@ -31,7 +31,7 @@ O alojamento web OVH permite criar um site novo com toda a facilidade, ou alojar
 
  Os sites podem ser criados de forma «manual», usando código web e programação, ou através de um CMS (Content Management System), a solução mais rápida e fácil. A primeira opção é mais complexa e morosa, mas permite criar um projeto original, concebido de raiz para necessidades específicas. A segunda assenta na utilização de um CMS, que disponibiliza modelos de site personalizáveis prontos a usar. Esta opção dispensa qualquer competência técnica.
 
-Na Área de Cliente existe uma ferramenta que permite instalar um CMS com 1 clique. O cliente pode optar entre vários CMS: WordPress, PrestaShop, Drupal e Joomla. Se tiver dúvidas relativamente à escolha do CMS, veja esta [análise comparativa](https://www.ovh.pt/alojamento-partilhado/website/comparacao-cms/){.external} e selecione a opção mais adequada para um blogue, um site normal, uma loja online... Se o CMS pretendido não estiver disponível para instalação automática (através dos Módulos 1 clique), pode instalá-lo de forma manual.
+Na Área de Cliente existe uma ferramenta que permite instalar um CMS com 1 clique. O cliente pode optar entre vários CMS: WordPress, PrestaShop, Drupal e Joomla. Se tiver dúvidas relativamente à escolha do CMS, veja esta [análise comparativa](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/){.external} e selecione a opção mais adequada para um blogue, um site normal, uma loja online... Se o CMS pretendido não estiver disponível para instalação automática (através dos Módulos 1 clique), pode instalá-lo de forma manual.
 
 - **Transferir um site para a OVH**
 
@@ -84,7 +84,7 @@ Atenção! Este processo pode variar de acordo com o tipo de site. Se precisar d
 
 ### 3 - Criar endereços de e-mail
 
-A utilização dos serviços de e-mail incluídos no [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} é opcional. Para criar e usar um ou vários endereços de e-mail associados ao seu domínio, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No menu à esquerda, selecione `E-mails`{.action} e clique no alojamento contratado. No separador`E-mails`{.action}, clique no botão `Criar um endereço de e-mail`{.action}.
+A utilização dos serviços de e-mail incluídos no [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} é opcional. Para criar e usar um ou vários endereços de e-mail associados ao seu domínio, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No menu à esquerda, selecione `E-mails`{.action} e clique no alojamento contratado. No separador`E-mails`{.action}, clique no botão `Criar um endereço de e-mail`{.action}.
 
 ![Criar um endereço de e-mail](images/create_an_email_address.png){/thumbnail}
 

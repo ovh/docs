@@ -21,7 +21,7 @@ Si vous souhaitez installer d'autres modules/CMS, consultez le guide [Installer 
 
 Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu){.external}, ils ont généralement besoin d'une plateforme d'hébergement comprenant un serveur FTP, une base de données, et un nom de domaine.
 
-Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
+Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 
 *Si vous souhaitez installer Prestashop de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [Installer son site avec les modules en 1 clic](../modules-en-1-clic/){.ref}
 

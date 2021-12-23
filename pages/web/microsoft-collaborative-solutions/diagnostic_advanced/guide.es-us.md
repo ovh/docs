@@ -20,7 +20,7 @@ Los errores en las cuentas de correo Exchange pueden tener múltiples causas. Un
 
 ## Requisitos
 
-- Tener una [solución Exchange de OVHcloud](https://www.ovh.com/world/es/emails/hosted-exchange/) ya instalada.
+- Tener una [solución Exchange de OVHcloud](https://www.ovhcloud.com/es/emails/hosted-exchange/) ya instalada.
 - Disponer de las claves de acceso para la cuenta Exchange que debe verificar.
 - Estar conectado al [área de cliente de OVHcloud.](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
@@ -122,7 +122,7 @@ Este error indica un error general al enviar mensajes de correo que pueden tener
 - [Su cuenta ha sido suspendida](#expired)
 - [La contraseña introducida es incorrecta](#password)
 - [Su cuenta ha sido bloqueada por envío de correo no deseado](#blocked)
-- [Se produjo un incidente en la infraestructura](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+- [Se produjo un incidente en la infraestructura](https://web-cloud.status-ovhcloud.com/)
 
 ## Más información
 

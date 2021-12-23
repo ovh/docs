@@ -16,7 +16,7 @@ Vous venez d’acquérir une solution E-mail Pro. Celle-ci vous permet de béné
 
 ## Prérequis
 
-- Disposer d'une offre [E-mail Pro]({ovh_www}/emails/email-pro/){.external}.
+- Disposer d'une offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external}.
 - Avoir reçu l’e-mail vous confirmant l’installation de votre solution E-mail Pro.
 - Disposer d'un nom de domaine.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.

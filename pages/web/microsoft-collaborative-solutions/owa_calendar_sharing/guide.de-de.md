@@ -17,7 +17,7 @@ Mit dieser Exchange Funktion können Sie anderen Personen Zugriff auf Ihre Kalen
 
 ## Voraussetzungen
 
-- Sie haben bereits einen [OVHcloud Exchange](https://www.ovh.de/emails/) Dienst eingerichtet.
+- Sie haben bereits einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/) Dienst eingerichtet.
 - Sie haben Zugriff auf Ihren Exchange Account (E-Mail-Adresse und Passwort)
 
 

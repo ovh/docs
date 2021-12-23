@@ -44,7 +44,7 @@ Nuestros servicios de alojamiento web son compatibles con algunos de los sistema
 WordPress es un <i>software</i> basado en la web que puede usar para crear un blog o un sitio web. Está basado en la tecnología PHP e incluye diversas herramientas que incluyen un corrector ortográfico y complementos de optimización del motor de búsqueda (SEO).
 
 
-- [Módulo WordPress](https://www.ovh.es/hosting/website/wordpress.xml)
+- [Módulo WordPress](https://www.ovhcloud.com/es-es/web-hosting/uc-wordpress-website/)
 
 El equipo de asistencia de OVHcloud no está autorizado a responder a preguntas relacionadas con la configuración de WordPress.
 
@@ -65,7 +65,7 @@ Joomla! es un <i>software</i> galardonado fácil de usar que permite crear sitio
 La comunidad de Joomla! es muy grande y proporciona ayuda y otras contribuciones en todas las áreas relacionadas con los CMS (ayuda, documentación, soporte, temas, etc.).
 
 
-- [Módulo Joomla!](https://www.ovh.es/hosting/website/joomla.xml)
+- [Módulo Joomla!](https://www.ovhcloud.com/es-es/web-hosting/uc-joomla-website/)
 
 El equipo de asistencia de OVHcloud no está autorizado a responder a preguntas relacionadas con la configuración de Joomla!.
 
@@ -88,7 +88,7 @@ El <i>software</i> sigue siendo objeto de mejoras constantes desde 2005. La vers
 
 
 
-- [Módulo PrestaShop](https://www.ovh.es/hosting/website/prestashop.xml)
+- [Módulo PrestaShop](https://www.ovhcloud.com/es-es/web-hosting/uc-prestashop-website/)
 
 El equipo de asistencia de OVHcloud no está autorizado a responder a preguntas relacionadas con la configuración de PrestaShop.
 
@@ -109,7 +109,7 @@ Consulte el foro dedicado a la solución
 ### Drupal
 Drupal es una plataforma gratuita de código abierto basada en PHP que se creó en 2000. Drupal permite crear sitios web dinámicos de forma rápida. También se puede personalizar y se utiliza en un 1 % de los sitios web de todo el mundo. 
 
--  [Módulo Drupal](https://www.ovh.es/hosting/website/drupal.xml)
+-  [Módulo Drupal](https://www.ovhcloud.com/es-es/web-hosting/uc-drupal-website/)
 
 El equipo de asistencia de OVHcloud no está autorizado a responder a preguntas relacionadas con la configuración de Drupal.
 
@@ -133,6 +133,6 @@ Consulte los foros dedicados a [Drupal](https://www.drupal.org).
 
 [Alojar varios sitios web en su plan de alojamiento web](../configurar-un-multisitio-en-un-alojamiento-web/){.external}
 
-Consulte nuestras [soluciones de alojamiento web](https://www.ovh.es/hosting/){.external}
+Consulte nuestras [soluciones de alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

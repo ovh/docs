@@ -16,8 +16,8 @@ As bases de dados, utilizadas pela maioria dos sistemas de gestão de conteúdos
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
-- Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Ter um serviço de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Consoante o método de backup utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou às informações que lhe permitem aceder à base de dados.
 
 ## Instruções
@@ -30,7 +30,7 @@ Antes de começar, deve escolher o método que quer utilizar para recuperar a c�
 
 - **Utilizar um script que realize o backup**: esta solução requer a criação de um script registado no alojamento web da OVH, de modo a viabilizar a cópia de segurança. São necessários conhecimentos específicos para criar este script.
 
-- **Realizar a cópia de segurança através de um comando SSH**: deverá ligar-se ao seu espaço de armazenamento através do protocolo SSH e utilizar comandos para interagir com o espaço. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançados, bem como um plano de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} específico.
+- **Realizar a cópia de segurança através de um comando SSH**: deverá ligar-se ao seu espaço de armazenamento através do protocolo SSH e utilizar comandos para interagir com o espaço. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançados, bem como um plano de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external} específico.
 
 Tenha em conta que algumas destas operações se realizam fora da interface da OVH e, por isso, deverá executá-las de forma autónoma. A seguir disponibilizamos algumas informações, mas, se precisar de ajuda, entre em contacto com um webmaster. 
 

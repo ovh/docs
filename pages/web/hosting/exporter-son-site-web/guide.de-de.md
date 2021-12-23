@@ -15,7 +15,7 @@ In dieser Anleitung werden die Schritte zum Exportieren aller Elemente einer Web
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting).
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -42,7 +42,7 @@ Wenn Sie alle nötigen Informationen bereit haben, können Sie Ihre Dateien auf 
 - **FTP- oder SFTP-kompatibles Programm verwenden**: Installieren Sie einen FTP-Client auf Ihrem Computer, wie [FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla). Kontaktieren Sie den Herausgeber der eingesetzten Anwendung, falls Sie für deren Verwendung Hilfe brauchen, da OVHcloud keine Unterstützung zu externer Software anbieten kann.
 
 
-- **SSH-Zugang verwenden**: Um auf Ihren Speicherplatz zuzugreifen, müssen die entsprechenden Befehle in einem Terminal ausgeführt werden. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein kompatibles [OVHcloud Webhosting](https://www.ovh.de/hosting) erforderlich. Weitere Informationen hierzu finden Sie in unserer [Anleitung](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings). 
+- **SSH-Zugang verwenden**: Um auf Ihren Speicherplatz zuzugreifen, müssen die entsprechenden Befehle in einem Terminal ausgeführt werden. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein kompatibles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) erforderlich. Weitere Informationen hierzu finden Sie in unserer [Anleitung](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings). 
 
 #### 1.2 Dateien von Ihrem Speicherplatz herunterladen
 

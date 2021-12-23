@@ -21,14 +21,14 @@ In caso di assenza al tuo ufficio, puoi installare una segreteria email che lasc
 
 ## Prerequisiti
 
-- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'offerta di [hosting Web](https://www.ovh.it/hosting-web/){.external}, l'[hosting gratuito Start 10M](https://www.ovh.it/domini/offerta_hosting_start10m.xml){.external} incluso con un dominio (attivato in precedenza) o la soluzione MX Plan ordinata separatamente.
+- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}, l'[hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} incluso con un dominio (attivato in precedenza) o la soluzione MX Plan ordinata separatamente.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
 > [!primary]
 >
-> Se il tuo indirizzo email è su un'offerta [**Exchange**](https://www.ovh.it/emails/hosted-exchange/), [**Email Pro**](https://www.ovh.it/emails/email-pro/) o non hai una sezione `Gestione delle risposte automatiche`{.action} nel tuo MXplan, dovrai creare la risposta automatica dalla tua Webmail utilizzando la documentazione ["Installare una risposta automatica dall'interfaccia OWA"](../../microsoft-collaborative-solutions/exchange_2016_imposta_una_risposta_automatica_con_owa/).
+> Se il tuo indirizzo email è su un'offerta [**Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/) o non hai una sezione `Gestione delle risposte automatiche`{.action} nel tuo MXplan, dovrai creare la risposta automatica dalla tua Webmail utilizzando la documentazione ["Installare una risposta automatica dall'interfaccia OWA"](../../microsoft-collaborative-solutions/exchange_2016_imposta_una_risposta_automatica_con_owa/).
 
 ### Crea la risposta automatica
 

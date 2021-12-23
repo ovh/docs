@@ -27,11 +27,15 @@ section: Tutorials
  }
 </style>
 
-**Last updated 14 June, 2021.**
+**Last updated 19<sup>th</sup> October 2021.**
 
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and you have deployed there an application using the OVHcloud Managed Kubernetes LoadBalancer. If you want to know more on those topics, please look at the [using the OVHcloud Managed Kubernetes LoadBalancer](../using-lb/) documentation.
+
+> [!warning]
+> When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your K8S application.
+> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#network)
 
 ## The problem
 
@@ -39,7 +43,7 @@ When you deploy your HTTP services in `NodePort` mode, you directly recover the 
 
 When deploying the services in `LoadBalancer` mode, things are a bit different, our Load Balancer acts like a proxy, and the `Remote Address` will give you the IP address of the Load Balancer. How can you get the source IP of the request in this case?
 
-This tutorial describe how to deploy a `LoadBalancer` service on OVHcloud Managed Kubernetes and preserve the source IP.
+This tutorial describes how to deploy a `LoadBalancer` service on OVHcloud Managed Kubernetes and preserve the source IP.
 
 ## Getting the request's source IP behind the LoadBalancer
 
@@ -51,7 +55,9 @@ In this tutorial we are using the most basic Ingress Controller: [NGINX Ingress 
 
 ### 1. Installing the NGINX Ingress Controller
 
-We can deploy the official **NGINX Ingress Controller** with the manifest file or with the Helm chart. Please choose one way or the other and follow the corresponding paragraph.
+We can deploy the official **NGINX Ingress Controller** with the manifest file or with the Helm chart.  
+Please choose one way or the other and follow the corresponding paragraph.
+
 #### 1. Installing with the manifest file
 
 ```bash
@@ -82,7 +88,9 @@ role.rbac.authorization.k8s.io/ingress-nginx-admission created
 rolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created
 serviceaccount/ingress-nginx-admission created
 </code></pre>
+
 #### 2. Installing with the Helm chart
+
 ```bash
 helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create-namespace
 ```
@@ -149,11 +157,12 @@ kubectl get service ingress-nginx-controller -n ingress-nginx
 You should see your newly created Ingress service:
 
 <pre class="console"><code>$ kubectl get service ingress-nginx-controller -n ingress-nginx
-NAME                                     TYPE                    CLUSTER-IP   EXTERNAL-IP       PORT(S)                                            AGE
+NAME                       TYPE           CLUSTER-IP    EXTERNAL-IP       PORT(S)                      AGE
 ingress-nginx-controller   LoadBalancer   10.3.81.157   xxx.xxx.xxx.xxx   80:xxxxx/TCP,443:xxxxx/TCP   4m32s</code></pre>
 
 > [!warning]
 > As the `LoadBalancer` creation is asynchronous, and the provisioning of the Load Balancer can take several minutes,  you can get a `<pending>` at `EXTERNAL-IP` while the Load Balancer is setting up. In this case, please wait some minutes and try again.
+
 ### 2. Patching the Ingress Controller
 
 Now you need to patch the Ingress controller to support the proxy protocol.
@@ -171,6 +180,7 @@ aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32
 </code></pre>
 
 We can update the NGINX Ingress Controller configuration with manifest files or with Helm. Please choose one way or the other and follow the corresponding paragraph.
+
 #### 2. Patching with manifest files
 
 Copy the next YAML snippet in a `patch-ingress-controller-service.yml` file:
@@ -210,6 +220,7 @@ You should see the configuration being patched and the controller pod deleted (a
 configmap/ ingress-nginx-controller patched
 $ kubectl -n ingress-nginx patch configmap  ingress-nginx-controller -p "$(cat patch-ingress-controller-configmap.yml)"
 configmap/ ingress-nginx-controller patched</code></pre>
+
 #### 3. Patching with Helm
 
 Copy the next YAML snippet in a `values.yaml` file and modify the `proxy-real-ip-cidr` parameter accordingly:
@@ -277,6 +288,7 @@ If TLS is enabled for the Ingress, a Secret containing the certificate and key m
     tls.crt: <base64 encoded cert>
     tls.key: <base64 encoded key>
   type: kubernetes.io/tls</code></pre>
+
 ### 4. Testing
 
 > [!warning]

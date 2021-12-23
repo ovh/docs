@@ -27,7 +27,7 @@ section: PHP
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovh.pl/hosting/){.external} z dostępem SSH
+- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external} z dostępem SSH
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 

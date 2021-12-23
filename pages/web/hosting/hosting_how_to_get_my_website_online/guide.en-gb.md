@@ -10,15 +10,15 @@ order: 2
 
 ## Objective
 
-There are many different types of website you can put online. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVH Web Hosting space](https://www.ovh.co.uk/web-hosting/){.external} lets you host the site you want, provided that it is compatible with the [configuration of our infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
+There are many different types of website you can put online. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVH Web Hosting space](https://www.ovhcloud.com/en-gb/web-hosting/){.external} lets you host the site you want, provided that it is compatible with the [configuration of our infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Find out how to publish a website on your OVHcloud Web Hosting plan.**
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}
 - an email confirming that your Web Hosting plan has been set up
-- a [domain name](https://www.ovh.co.uk/domains/){.external} which can be used to access your website
+- a [domain name](https://www.ovhcloud.com/en-gb/domains/){.external} which can be used to access your website
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
@@ -73,7 +73,7 @@ Once you have everything you need, there are three different ways of connecting 
 
 - **Using FTP- or SFTP-compatible software.** You will need to install a compatible program on your computer (e.g. FileZilla). Since OVHcloud did not create the software package you have installed, please contact the software’s publisher if you are encountering difficulties in using it.
 
-- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} are required to use this type of access.
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} are required to use this type of access.
 
 #### 3. Upload the files to the storage space.
 
@@ -102,7 +102,7 @@ If you are migrating an existing website, you can recover your existing database
 
 #### 2. Create the database at OVHcloud (optional).
 
-If you already have a database and wish to use it (from an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} or a [Private SQL](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external} or [Cloud DB solution](https://www.ovh.co.uk/cloud/cloud-databases/){.external}), you will need your username and password, the name of the database and the address of the server. You can now go on to the next step.
+If you already have a database and wish to use it (from an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} or a [Private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/){.external} or [Cloud DB solution](https://www.ovh.co.uk/cloud/cloud-databases/){.external}), you will need your username and password, the name of the database and the address of the server. You can now go on to the next step.
 
 If you want to create a new database with OVHcloud, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then click on `Hosting`{.action} in the services bar on the left. Select the name of the Hosting plan concerned, and click on the `Database`{.action} tab.
 

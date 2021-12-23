@@ -16,7 +16,7 @@ La soluzione Email Pro permette di usufruire di un servizio di posta elettronica
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Email Pro](https://www.ovh.it/emails/email-pro/){.external}
+- Disporre di una soluzione [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
 - Aver ricevuto l’email di conferma dell’installazione di Email Pro
 - Disporre di un dominio OVH
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}

@@ -2,27 +2,25 @@
 title: Colocar un contenedor de Object Storage detrás de un nombre de dominio
 excerpt: Colocar un contenedor de Object Storage detrás de un nombre de dominio
 slug: colocar_un_contenedor_de_object_storage_detras_de_un_nombre_de_dominio
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g2006
+order: 120
 ---
 
+## Objetivo
 
-## 
 Si crea un contenedor de tipo público, todo el mundo podrá acceder a sus datos, lo cual es una buena opción para compartir sus archivos en internet.
 
 Sin embargo, para poder compartir sus archivos con sus amigos, por ejemplo, deberá proporcionarles una larga URL que suele ser difícil de retener. Además, también es posible que quiera utilizar esos objetos en su sitio web sin tener que utilizar por ello un dominio distinto.
 
 Esta guía explica cómo configurar un dominio en sus contenedores para facilitar el acceso a ellos proporcionando una URL personalizada.
 
-
 ## Requisitos
+
 Para seguir todos los pasos de esta guía, es necesario:
 
-
-- [Añadir espacios de almacenamiento](https://docs.ovh.com/us/es/storage/horizon_crear_un_contenedor_de_objetos/)
+- [Añadir espacios de almacenamiento](https://docs.ovh.com/gb/en/storage/pcs/create-container/) (EN)
 - Tener un dominio registrado
-
-
 
 
 ## La teoría
@@ -61,11 +59,11 @@ Para que sea entendido por el Object Storage, el CNAME debe respetar las siguien
 ```
 
 
-Por ejemplo, para un contenedor llamado «staticct» y un proyecto «123xxxx456» localizado en SBG1:
+Por ejemplo, para un contenedor llamado «staticct» y un proyecto «123xxxx456» localizado en SBG:
 
 
 ```
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -73,7 +71,7 @@ Así pues, el registro DNS en este caso será:
 
 
 ```
-static IN CNAME staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+static IN CNAME staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -98,11 +96,11 @@ Al igual que el CNAME, debe respetar las siguientes reglas (no olvide sustituir 
 ```
 
 
-Por ejemplo, para un contenedor llamado «staticct» y un proyecto «123xxxx456» localizado en SBG1:
+Por ejemplo, para un contenedor llamado «staticct» y un proyecto «123xxxx456» localizado en SBG:
 
 
 ```
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -110,7 +108,7 @@ Así pues, el registro DNS en este caso será:
 
 
 ```
-_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -118,7 +116,7 @@ Si no quiere utilizar un subdominio, puede hacer lo siguiente:
 
 
 ```
-_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -126,9 +124,9 @@ Por último, hay que añadir un registro A para el (sub)dominio apuntando a la d
 
 
 ```
-dig storage.sbg1.cloud.ovh.net
-dig storage.gra1.cloud.ovh.net
-dig storage.bhs1.cloud.ovh.net
+dig storage.sbg.cloud.ovh.net
+dig storage.gra.cloud.ovh.net
+dig storage.bhs.cloud.ovh.net
 ```
 
 

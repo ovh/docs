@@ -16,7 +16,7 @@ De MX Plan-adressen kunnen worden geconfigureerd met compatibele e-mailsoftware.
 
 ## Vereisten
 
-- U moet beschikken over een MX Plan-e-mailadres (inbegrepen bij MX Plan en in [OVH-webhosting](https://www.ovh.nl/shared-hosting/){.external}).
+- U moet beschikken over een MX Plan-e-mailadres (inbegrepen bij MX Plan en in [OVH-webhosting](https://www.ovhcloud.com/nl/web-hosting/){.external}).
 - U moet Microsoft Outlook 2016 op uw apparaat hebben geïnstalleerd.
 - U moet beschikken over de inloggegevens voor het e-mailadres waarvan u de instellingen wilt bewerken.
 

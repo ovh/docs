@@ -3,11 +3,12 @@ title: Configura un dominio su un container del tuo Object Storage
 excerpt: Configura un dominio su un container del tuo Object Storage
 slug: configura_un_dominio_su_un_container_del_tuo_object_storage
 legacy_guide_number: g2006
-section: Object Storage
+section: Object Storage Standard (Swift)
+order: 120
 ---
 
+## Obiettivo
 
-## 
 Quando crei un container di tipo Public, chiunque può accedere ai tuoi dati.
 È la soluzione ideale per condividere file via Internet, ad esempio con i tuoi amici, ma per farlo devi fornire un URL lungo e complicato da ricordare.
 In più, se vuoi pubblicare contenuti sul tuo sito, utilizzare il suo stesso dominio potrebbe risultare più semplice: in questo modo, infatti, puoi condividere i tuoi dati grazie a un URL personalizzato e quindi più semplice da ricordare.
@@ -19,8 +20,6 @@ Questa guida ti mostra come configurare un dominio sui tuoi container per facili
 
 - [Aggiungi storage al tuo Cloud](https://docs.ovh.com/gb/en/storage/pcs/create-container/)
 - un dominio
-
-
 
 
 ## In teoria
@@ -56,11 +55,11 @@ Per essere interpretato dall'Object Storage, il record CNAME deve rispettare reg
 ```
 
 
-Esempio: per un container staticct e un progetto 123xxxx456 utilizzato su SBG1
+Esempio: per un container staticct e un progetto 123xxxx456 utilizzato su SBG
 
 
 ```
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -68,7 +67,7 @@ il tuo record DNS sarà
 
 
 ```
-static IN CNAME staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+static IN CNAME staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -101,11 +100,11 @@ Come per il record CNAME, sostituisci le [VARIABILI] con i valori corretti:
 ```
 
 
-Esempio: per un container staticct e un progetto 123xxxx456 utilizzato su SBG1
+Esempio: per un container staticct e un progetto 123xxxx456 utilizzato su SBG
 
 
 ```
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -113,7 +112,7 @@ il tuo record DNS sarà
 
 
 ```
-_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -121,7 +120,7 @@ Se non vuoi utilizzare un sottodominio, esegui questo comando:
 
 
 ```
-_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -130,9 +129,9 @@ Per farlo, esegui questi comandi:
 
 
 ```
-dig storage.sbg1.cloud.ovh.net
-dig storage.gra1.cloud.ovh.net
-dig storage.bhs1.cloud.ovh.net
+dig storage.sbg.cloud.ovh.net
+dig storage.gra.cloud.ovh.net
+dig storage.bhs.cloud.ovh.net
 ```
 
 

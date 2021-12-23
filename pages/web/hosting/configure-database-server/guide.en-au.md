@@ -16,7 +16,7 @@ With the Private SQL database servers, you can influence your server’s global 
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovh.com.au/web-hosting/sql-options.xml)
+- a [Private SQL Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
@@ -35,7 +35,7 @@ You can also view important information on your SQL instance. Please take a few 
 |RAM|Shows the RAM available for your instance, also shows if you are close to exceeding the RAM limit. Your database server has dedicated, guaranteed resources: its RAM. If required, you can scale the RAM, and receive warnings if you are consuming all of your instance’s RAM resources.|
 |Infrastructure|Shows the infrastructure used by your instance. This information is inherent to the OVHcloud infrastructure.|
 |Datacentre|Shows the datacentre in which the instance has been created. Verify that your instance is hosted in is the same datacentre as the OVHcloud Web Hosting plan that your website is based (or will be based) on.|
-|Host|Shows the OVHcloud server your instance has been created in. This information is inherent to the OVHcloud infrastructure, and can be used in our communications on [OVHcloud incidents](http://travaux.ovh.net/){.external}.|
+|Host|Shows the OVHcloud server your instance has been created in. This information is inherent to the OVHcloud infrastructure, and can be used in our communications on [OVHcloud incidents](https://web-cloud.status-ovhcloud.com/){.external}.|
 
 ![General information](images/privatesql01-General-information.png){.thumbnail}
 

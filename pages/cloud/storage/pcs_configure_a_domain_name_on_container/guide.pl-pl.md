@@ -2,12 +2,14 @@
 title: Umieszczenie kontenera Object Storage za domeną
 excerpt: Umieszczenie kontenera Object Storage za domeną
 slug: umieszczenie_kontenera_object_storage_za_domena
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g2006
+order: 120
 ---
 
 
-## 
+## Wprowadzenie
+
 Gdy tworzysz Publiczny kontener, wszyscy mają dostęp do Twoich danych. Jest do rozwiązanie dobre w przypadku udostępniania plików w Internecie. 
 Aby móc udostępniać pliki znajomym, musisz dostarczyć im długi adres URL, który jest trudny do zapamiętania. 
 Być może będziesz chciał korzystać z tych obiektów na swojej stronie www bez potrzeby korzystania z innej nazwy domeny. 
@@ -15,14 +17,10 @@ Dzięki nazwie domeny będziesz mógł dostarczyć własny adres URL do udostęp
 
 Przewodnik ten wyjaśnia, jak skonfigurować domenę na kontenerach, aby ułatwić dostęp do nich.
 
-
 ## Wymagania
 
-- [Dodanie przestrzeni dyskowej](https://docs.ovh.com/gb/en/storage/pcs/create-container/)
+- [Dodanie przestrzeni dyskowej](https://docs.ovh.com/gb/en/storage/pcs/create-container/) (EN)
 - Domena
-
-
-
 
 ## W teorii
 Gdy zapytanie HTTP dociera na Object Storage OpenStack, wykonywana jest weryfikacja na poziomie nagłówka "hosta". Jeśli różni się on od aktualnej nazwy hosta, system stwierdzi, że jest to wpis mapowany i wykona zapytanie DNS, aby uzyskać pełny wpis DNS, który odnosi się do hosta. Jeśli wpis DNS zostanie odnaleziony, odpowiedź zostanie podzielona, w celu odnalezienia i odłączenia kontenera, konta i szukanego obiektu. Następnie zapytanie zostanie przepisane. 
@@ -57,11 +55,11 @@ Pole CNAME musi przestrzegać następujących reguł, aby było rozpoznawane prz
 ```
 
 
-Przykład: Kontener o nazwie staticct i projekt 123xxxx456 używany w SBG1:
+Przykład: Kontener o nazwie staticct i projekt 123xxxx456 używany w SBG:
 
 
 ```
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -69,7 +67,7 @@ Wpis DNS będzie następujący:
 
 
 ```
-static IN CNAME staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+static IN CNAME staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -102,11 +100,11 @@ Musisz dostosować [ZMIENNE], aby odnosiły się one do prawidłowych wartości:
 ```
 
 
-Przykład: Kontener o nazwie staticct i projekt 123xxxx456 używany w SBG1:
+Przykład: Kontener o nazwie staticct i projekt 123xxxx456 używany w SBG:
 
 
 ```
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -114,7 +112,7 @@ Wpis DNS będzie następujący:
 
 
 ```
-_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -122,7 +120,7 @@ Jeśli nie chcesz używać subdomeny:
 
 
 ```
-_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -130,9 +128,9 @@ Ostatnim Étapem konfiguracji pola TXT jest dodanie pola A dla (sub)domeny. Pole
 
 
 ```
-dig storage.sbg1.cloud.ovh.net
-dig storage.gra1.cloud.ovh.net
-dig storage.bhs1.cloud.ovh.net
+dig storage.sbg.cloud.ovh.net
+dig storage.gra.cloud.ovh.net
+dig storage.bhs.cloud.ovh.net
 ```
 
 

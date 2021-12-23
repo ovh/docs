@@ -11,7 +11,7 @@ section: 'Getting started'
 
 ### What do I do if my website isn't working properly? 
 
-There are several possible reasons why your website may not be working properly. To identify the cause, start by logging in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and check that all of your services have been successfully renewed and are active. Once you have checked this, verify that there are no ongoing maintenance tasks by visiting the [Travaux webpage](http://travaux.ovh.net/){.external}. If all your services are active and no maintenance tasks are affecting your website, you can carry out a more in-depth diagnostic by reading our ["Diagnostic" guides](../). 
+There are several possible reasons why your website may not be working properly. To identify the cause, start by logging in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and check that all of your services have been successfully renewed and are active. Once you have checked this, verify that there are no ongoing maintenance tasks by visiting the [Status page](https://web-cloud.status-ovhcloud.com/){.external}. If all your services are active and no maintenance tasks are affecting your website, you can carry out a more in-depth diagnostic by reading our ["Diagnostic" guides](../). 
 
 **Tips and tricks**: If your website suddenly goes down after an action on your part, you can restore the content via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To do this, go to the `FTP - SSH` tab on your hosting page, and click the `Restore a backup`{.action} button on the right of your screen. For detailed instructions, you can use the following documentation: [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel).
 
@@ -42,11 +42,11 @@ Once you have logged in to the OVHcloud Control Panel, you can manage different 
 
 To put your website online via OVHcloud, you need to have a domain name corresponding to the address of your future website (e.g. ovh.com). You also need to have a web hosting space to set up your website. Please read the following guide: [Publishing a website on your web hosting plan](../web_hosting_how_to_get_my_website_online).
 
-**Tips and tricks**: To help you build your website, OVHcloud offers 1-click modules like WordPress, PrestaShop, Joomla!, and Drupal. You can find them [here](https://www.ovh.co.uk/web-hosting/website/). You can also use the following documentation: [Setting up your website with 1-click modules](../web_hosting_web_hosting_modules).
+**Tips and tricks**: To help you build your website, OVHcloud offers 1-click modules like WordPress, PrestaShop, Joomla!, and Drupal. You can find them [here](https://www.ovhcloud.com/en-gb/web-hosting/uc-website/). You can also use the following documentation: [Setting up your website with 1-click modules](../web_hosting_web_hosting_modules).
 
 ### How do I migrate my website and emails to OVHcloud? 
 
-To migrate your website and emails to OVHcloud, you need to have an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/) and an [OVHcloud email solution](https://www.ovh.co.uk/emails/). You can then connect to your Web Hosting plan’s FTP server, in order to transfer your website’s files on to it. If you currently have a database, it is also worth creating a dump of it. 
+To migrate your website and emails to OVHcloud, you need to have an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) and an [OVHcloud email solution](https://www.ovhcloud.com/en-gb/emails/). You can then connect to your Web Hosting plan’s FTP server, in order to transfer your website’s files on to it. If you currently have a database, it is also worth creating a dump of it. 
 
 To migrate emails, you will need to recreate your accounts at OVHcloud, then use our [OMM migration tool (OVH Mail Migrator)](https://omm.ovh.net/). You can find it [here](https://omm.ovh.net/). 
 

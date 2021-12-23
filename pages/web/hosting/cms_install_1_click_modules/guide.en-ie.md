@@ -19,7 +19,7 @@ order: 1
 
 ## Requirements
 
-- an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/)
+- an [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - no files stored in the directory that your module will be installed in
 - The website’s domain (with a subdomain, if applicable) must be declared as a multisite.
@@ -30,9 +30,9 @@ order: 1
 
 You can use a CMS (Content Management System) to build your website via an easy-to-use interface. There are several types, each designed to suit certain projects. By using a CMS, you will get a ready-to-use website template that you can customise with a variety of themes, texts, and much more.
 
-OVH offers a selection of 4 CMSs as 1-click modules. By using this solution, you will need to choose from this list. If you have already chosen a CMS from the list, you can start following the steps in this tutorial. If have not yet chosen which CMS to use, this [CMS comparison page](https://www.ovh.ie/web-hosting/website/cms-comparison/) can help you decide which one would best suit your project.
+OVH offers a selection of 4 CMSs as 1-click modules. By using this solution, you will need to choose from this list. If you have already chosen a CMS from the list, you can start following the steps in this tutorial. If have not yet chosen which CMS to use, this [CMS comparison page](https://www.ovhcloud.com/en-ie/web-hosting/uc-cms-comparison/) can help you decide which one would best suit your project.
 
-If you would like to install a CMS that isn’t offered as an OVH 1-click module, you can install it manually on your web hosting plan, provided that the CMS is compatible with your plan (see our web hosting plans [here](https://www.ovh.ie/web-hosting/).
+If you would like to install a CMS that isn’t offered as an OVH 1-click module, you can install it manually on your web hosting plan, provided that the CMS is compatible with your plan (see our web hosting plans [here](https://www.ovhcloud.com/en-ie/web-hosting/).
 
 ![CMS logos](images/CMS_logo.png){.thumbnail}
 
@@ -141,11 +141,11 @@ Below, we've included some links from these CMS publishers, to help you get star
 
 ## Go further
 
-[Choosing a CMS for building your website](https://www.ovh.ie/web-hosting/website/cms-comparison/){.external}
+[Choosing a CMS for building your website](https://www.ovhcloud.com/en-ie/web-hosting/uc-cms-comparison/){.external}
 
 [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/multisites-configuring-multiple-websites/)
 
-See our [Private SQL services](https://www.ovh.ie/web-hosting/sql-options.xml){.external}
+See our [Private SQL services](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/){.external}
 
 See our [CloudDB solutions](https://www.ovh.ie/cloud/cloud-databases/){.external}
 

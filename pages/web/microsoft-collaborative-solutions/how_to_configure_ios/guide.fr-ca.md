@@ -25,7 +25,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 ## Prérequis
 
-- Disposer d'un [compte e-mail Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external}.
+- Disposer d'un [compte e-mail Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}.
 - Disposer de l’application Mail installée sur votre appareil iOS.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -62,7 +62,7 @@ Vous pouvez effectuer un test d'envoi pour vérifier que le compte est correctem
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose également une application web disposant des [fonctions collaboratives Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external} accessible à l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
+OVHcloud propose également une application web disposant des [fonctions collaboratives Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external} accessible à l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
 
 > [!primary]
 >

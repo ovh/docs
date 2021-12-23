@@ -10,13 +10,13 @@ order: 2
 
 ## Wprowadzenie
 
-Niniejszy przewodnik przedstawia etapy procedury eksportu wszystkich elementów Twojej witryny internetowej w standardowym formacie z poziomu [hostingu WWW OVHcloud](https://www.ovh.pl/hosting/){.external}.
+Niniejszy przewodnik przedstawia etapy procedury eksportu wszystkich elementów Twojej witryny internetowej w standardowym formacie z poziomu [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 
 **Dowiedz się, jak wyeksportować swoją witrynę internetową w hostingu OVHcloud.**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu WWW OVHcloud](https://www.ovh.pl/hosting/){.external}
+- Posiadanie [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
@@ -42,7 +42,7 @@ Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz pobrać pli
 
 - **program kompatybilny z protokołem FTP lub SFTP**: zainstaluj na Twoim komputerze odpowiedni program, np. [ FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/). Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
 
-- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową. Do tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz [posiadanie hostingu OVHcloud](https://www.ovh.pl/hosting/){.external}. Aby uzyskać więcej informacji, zapoznaj się z naszą instrukcją [„Korzystanie z dostępu SSH do hostingu WWW”](https://docs.ovh.com/pl/hosting/hosting_www_ssh_na_hostingu/){.external}. 
+- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową. Do tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz [posiadanie hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}. Aby uzyskać więcej informacji, zapoznaj się z naszą instrukcją [„Korzystanie z dostępu SSH do hostingu WWW”](https://docs.ovh.com/pl/hosting/hosting_www_ssh_na_hostingu/){.external}. 
 
 #### 1.2 Pobranie plików z przestrzeni dyskowej.
 

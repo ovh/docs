@@ -16,7 +16,7 @@ Si tiene un sitio web en un alojamiento de OVH, podría recibir en algún moment
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 - Disponer de las claves necesarias para conectarse al espacio de almacenamiento del alojamiento.
 - Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
 

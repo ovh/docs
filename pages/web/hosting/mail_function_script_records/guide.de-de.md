@@ -16,14 +16,14 @@ Automatische E-Mails werden über ein Skript versendet. Sie werden beispielsweis
 
 ## Voraussetzungen
 
-- Sie besitzen ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
+- Sie besitzen ein [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
 - Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 > [!primary]
 >
 > Diese Anleitung bezieht sich nur auf E-Mails, die über Skripte auf Ihrem OVH Webhosting versendet werden.
 >
-> Wenn Sie E-Mail-Adressen aus Ihrem MX Plan Angebot oder Ihrem [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot verwalten möchten, gehen Sie in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `E-Mails`{.action}.
+> Wenn Sie E-Mail-Adressen aus Ihrem MX Plan Angebot oder Ihrem [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot verwalten möchten, gehen Sie in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `E-Mails`{.action}.
 >
 
 ## Beschreibung

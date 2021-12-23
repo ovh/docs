@@ -26,7 +26,7 @@ excerpt: Saiba como instalar e dar os primeiros passos em Composer
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} com acesso SSH.
+- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} com acesso SSH.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 

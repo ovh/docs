@@ -23,7 +23,7 @@ Les comptes E-mail Pro peuvent être configurés sur un logiciel de messagerie c
 
 ## Prérequis
 
-- Disposer d'une offre [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external}.
+- Disposer d'une offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external}.
 - Disposer de l'application Mail installée sur votre appareil.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -95,7 +95,7 @@ Si vous êtes amené à renseigner manuellement des paramètres dans les préfé
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose une application web disposant de [fonctions collaboratives](https://www.ovh.com/fr/emails/){.external} accessible sur l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez y accéder grâce aux identifiants relatifs à votre adresse e-mail. 
+OVH propose une application web disposant de [fonctions collaboratives](https://www.ovhcloud.com/fr/emails/){.external} accessible sur l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez y accéder grâce aux identifiants relatifs à votre adresse e-mail. 
 
 ## Aller plus loin
 

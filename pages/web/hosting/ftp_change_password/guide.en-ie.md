@@ -16,7 +16,7 @@ OVH Web Hosting plans provide you with access to a storage space you can use to 
 
 ## Requirements
 
-- You must have an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}.
+- You must have an [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}.
 - You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Instructions
@@ -31,7 +31,7 @@ The table will provide you with a list of FTP user accounts created on your Web 
 
 ### Step 2: Modify the FTP user password
 
-There are two ways you can modify an FTP user's password, depending on which [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} you are using:
+There are two ways you can modify an FTP user's password, depending on which [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} you are using:
 
 - **For Web Hosting plans that can only have one FTP user** (Start 10M, Kimsufi Web and Personal): Click on the pencil icon in the `Password`{.action} column of the table, enter the new password in the field, and confirm the change.
 
@@ -58,7 +58,7 @@ The password change will require a few minutes to take effect.
 
 Once you have modified the FTP user password, you can then access your storage space.
 
-There are several ways of doing this, depending on which [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} you are using:
+There are several ways of doing this, depending on which [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} you are using:
 
 - **Using FTP Explorer:** Enables you to access your storage space via your browser. To use it, stay in the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
 

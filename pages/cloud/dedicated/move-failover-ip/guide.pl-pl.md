@@ -6,12 +6,22 @@ section: Sieć & IP
 order: 7
 ---
 
-**Ostatnia aktualizacja z dnia 12-03-2021**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 09-12-2021**
 
 ## Wprowadzenie
 
 IP Failover mogą być przenoszone między Twoimi usługami. Chodzi o to, aby nie tracić reputacji i lepszego pozycjonowania Twoich aplikacji i systemów.
+
 Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiązaniami w czasie krótszym niż jedna minuta, praktycznie bez przerwy w dostępie do Twoich użytkowników. Mechanizm ten może być wykorzystywany w trakcie migracji usługi, podczas przenoszenia projektów ze środowiska programistycznego do środowiska produkcyjnego i przełączania usług na serwer backup w przypadku usterki.
+
+> [!primary]
+> IP Failover nie może być przenoszone między strefami. Na przykład adres IP zlokalizowany w centrum danych SBG może zostać przeniesiony do GRA lub RBX, ale nie może zostać przeniesiony do BHS.
+>
+> Migracja dotyczy tylko całych bloków danych. Nie można przenieść pojedynczych adresów IP wewnątrz bloku.
 
 **Dowiedz się, jak przenieść adres IP Failover z Panelu klienta OVHcloud lub poprzez API OVHcloud**
 
@@ -19,12 +29,21 @@ Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiąza
 
 - Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} w Panelu klienta
 - Posiadanie [adresu IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/)
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+
+> [!warning]
+> Jeśli adres IP Fail Over lub jeden z adresów IP bloku, ma przypisany wirtualny adres MAC, serwer docelowy musi obsługiwać funkcje wirtualnych adresów MAC.
+> Zapoznaj się [z tym przewodnikiem](https://docs.ovh.com/pl/dedicated/network-support-virtual-mac/).
+>
+> W przeciwnym razie wirtualne adresy MAC muszą zostać usunięte z adresów IP Failover przed przeniesieniem.
 
 ## W praktyce
 
 > [!primary]
-> IP Failover nie może być przenoszone między strefami. Na przykład adres IP zlokalizowany w centrum danych SBG może zostać przeniesiony do GRA lub RBX, ale nie może zostać przeniesiony do BHS
+> Przeniesienie bloku IP zawierającego unikalne wirtualne adresy MAC między dwoma serwerami powoduje tymczasowe zawieszenie tych adresów. Pojawią się one na nowym serwerze po zakończeniu przenoszenia.
+>
+> Z drugiej strony, bloki zawierające zduplikowane wirtualne adresy MAC nie mogą być przenoszone. Usuń zduplikowany wirtualny adres MAC z bloku, który chcesz przenieść.
+
 
 ### Przenieś IP w Panelu klienta OVHcloud
 
@@ -71,4 +90,4 @@ Aby przenieść adres IP, użyj następującego połączenia:
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

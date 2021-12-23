@@ -16,8 +16,8 @@ Visibilité Pro est une solution de référencement local vous permettant de gé
 
 ## Prérequis
 
-- Disposer d’une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
-- Disposer d’une offre [Visibilité Pro](https://www.ovh.com/fr/hebergement-web/referencement-local.xml){.external}.
+- Disposer d’une offre d’[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Disposer d’une offre [Visibilité Pro](https://www.ovhcloud.com/fr/web-hosting/options/pro-visibility/){.external}.
 - Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
@@ -32,7 +32,7 @@ Positionnez-vous ensuite sur l'onglet `Visibilité Pro`{.action}.
 
 Le tableau qui apparaît affiche les solutions Visibilité Pro commandées et liées à votre offre d'hébergement web. Chaque ligne correspond à une solution Visibilité Pro permettant de gérer le référencement local d'un seul établissement.
 
-Si vous possédez plusieurs établissements et souhaitez gérer leur référencement local de la même manière, nous vous recommandons d'effectuer un test de référencement local depuis la page : <https://www.ovh.com/fr/hebergement-web/referencement-local.xml>, puis de souscrire une solution Visibilité Pro pour chacun d'entre eux.
+Si vous possédez plusieurs établissements et souhaitez gérer leur référencement local de la même manière, nous vous recommandons d'effectuer un test de référencement local depuis la page : <https://www.ovhcloud.com/fr/web-hosting/options/pro-visibility/>, puis de souscrire une solution Visibilité Pro pour chacun d'entre eux.
 
 Pour accéder à l'interface de gestion de la solution Visibilité Pro, cliquez sur le bouton représentant trois points à droite de la ligne concernée, puis sur `Accéder à l'interface`{.action}.
 

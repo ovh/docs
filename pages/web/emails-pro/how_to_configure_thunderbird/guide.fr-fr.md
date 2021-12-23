@@ -25,7 +25,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ## Prérequis
 
-- Disposer d’une adresse [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/).
+- Disposer d’une adresse [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/).
 - Disposer du logiciel Thunderbird installé sur votre Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
  

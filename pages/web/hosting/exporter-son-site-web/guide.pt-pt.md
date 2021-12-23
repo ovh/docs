@@ -10,13 +10,13 @@ order: 2
 
 ## Sumário
 
-Este guia mostra-lhe as etapas para exportar todos os elementos do seu website para o formato padrão, a partir de um [alojamento web OVHcloud.](https://www.ovh.pt/alojamento-partilhado/){.external}.
+Este guia mostra-lhe as etapas para exportar todos os elementos do seu website para o formato padrão, a partir de um [alojamento web OVHcloud.](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 
 **Descubra como exportar o seu website OVHcloud.**
 
 ## Requisitos
 
-- Ter um [plano de alojamento web OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Ter um [plano de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
@@ -42,7 +42,7 @@ Quando tiver obtido todos os elementos, a recuperação dos seus ficheiros no es
 
 - **Utilizar um programa compatível com o protocolo FTP ou SFTP**: terá de instalar no seu computador um programa compatível, como o [ FileZilla ](../partilhado_guia_de_utilizacao_do_filezilla/). Sugerimos que contacte o editor do programa instalado caso deseje obter ajuda na sua utilização, OVHcloud não criou esse programa;
 
-- **Utilizar um acesso SSH**: terá de utilizar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos mais avançados, bem como um [plano de alojamento web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external} específica. Para mais informações, pode consultar o nosso guia  ["Utilizar o acesso SSH do seu alojamento web"](../partilhado_o_ssh_nos_alojamentos_partilhados/){.external}. 
+- **Utilizar um acesso SSH**: terá de utilizar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos mais avançados, bem como um [plano de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} específica. Para mais informações, pode consultar o nosso guia  ["Utilizar o acesso SSH do seu alojamento web"](../partilhado_o_ssh_nos_alojamentos_partilhados/){.external}. 
 
 #### 1.2 Transferir os ficheiros a partir do seu espaço de armazenamento
 

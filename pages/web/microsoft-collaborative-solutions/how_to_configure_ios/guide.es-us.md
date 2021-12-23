@@ -29,7 +29,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 ## Requisitos
 
-- Disponer de una [cuenta de correo Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external}.
+- Disponer de una [cuenta de correo Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external}.
 - Tener la aplicación Mail instalada en su dispositivo iOS.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
@@ -66,7 +66,7 @@ Si lo desea, puede realizar una prueba de envío para comprobar que la cuenta es
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que tiene las [funciones colaborativas de Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external} y está disponible en la dirección <https://www.ovh.com/world/es/mail/>. Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud también ofrece una aplicación web que tiene las [funciones colaborativas de Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external} y está disponible en la dirección <https://www.ovh.com/world/es/mail/>. Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 > [!primary]
 >

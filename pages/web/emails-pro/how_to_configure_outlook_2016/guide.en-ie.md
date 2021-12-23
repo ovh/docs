@@ -23,7 +23,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- an [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} account
+- an [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/){.external} account
 - Microsoft Outlook 2016 or later installed on your device
 - login credentials for the email account to be configured
 
@@ -65,7 +65,7 @@ For **POP** configuration, the values are:
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.ie/emails/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](../../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovhcloud.com/en-ie/emails/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](../../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
 
 ### Retrieving a backup of your email address
 

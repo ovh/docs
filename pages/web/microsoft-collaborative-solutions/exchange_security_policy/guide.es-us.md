@@ -16,7 +16,7 @@ El servicio de correo de OVHcloud permite disfrutar de direcciones de correo pro
 
 ## Requisitos
 
-- Tener un [plan de correo en OVHcloud](https://www.ovh.com/world/es/emails/hosted-exchange/){.external}.
+- Tener un [plan de correo en OVHcloud](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y accedido a la sección `«Web»`{.action}.
 
 ## Procedimiento
@@ -25,8 +25,8 @@ En un servicio de correo, es posible configurar la política de seguridad para a
 
 - reforzar la seguridad de las cuentas de correo cuando los usuarios intentan conectarse;
 - aumentar la seguridad de las contraseñas de las cuentas del servicio de correo;
-- reforzar la comprobación de los mensajes entrantes en nuestros servidores destinados a sus direcciones de correo (solo para las cuentas [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external});
-- determinar cómo se mostrarán los mensajes no deseados en sus buzones de correo (solo para las cuentas [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external}).
+- reforzar la comprobación de los mensajes entrantes en nuestros servidores destinados a sus direcciones de correo (solo para las cuentas [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external});
+- determinar cómo se mostrarán los mensajes no deseados en sus buzones de correo (solo para las cuentas [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external}).
 
 Para acceder a la política de seguridad de su servicio de correo, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), y diríjase a la sección `Web Cloud`{.action}.
 

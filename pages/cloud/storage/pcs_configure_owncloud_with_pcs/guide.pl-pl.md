@@ -2,12 +2,13 @@
 title: Konfiguracja Owncloud dla Object Storage
 excerpt: Konfiguracja Owncloud dla Object Storage
 slug: konfiguracja_owncloud_dla_object_storage
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g2000
+order: 170
 ---
 
 
-## 
+##
 [Owncloud](https://owncloud.org/) to aplikacja do przechowywania danych online i zarządzania plikami.
 Proponuje ona funkcjonalności takie jak na przykład synchronizowanie między kilkoma urządzeniami.
 Można również dodawać zewnętrzną przestrzeń dyskową, zwłaszcza Object Storage OpenStack.
@@ -81,7 +82,7 @@ W interfejsie tym można:
 
 
 Po zaakceptowaniu uzyskasz dostęp do interfejsu OwnCloud.
-W interfejsie tym włączymy aplikację pozwalającą nam na dodanie obsługi zewnętrznej przestrzeni dyskowej. 
+W interfejsie tym włączymy aplikację pozwalającą nam na dodanie obsługi zewnętrznej przestrzeni dyskowej.
 Kliknij na przycisk "Plik" w górnym lewym rogu i wybierz "Aplikacja":
 
 ![](images/img_3327.jpg){.thumbnail}
@@ -114,6 +115,5 @@ Po wpisaniu wszystkich informacji i sprawdzeniu ich poprawności, czerwony kwadr
 ![](images/img_3330.jpg){.thumbnail}
 
 
-## 
+##
 [Przewodniki Cloud]({legacy}1785)
-

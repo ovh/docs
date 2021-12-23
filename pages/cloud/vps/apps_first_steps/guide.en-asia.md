@@ -16,7 +16,7 @@ OVHcloud offers VPS customers pre-installed application images for quick and eas
 
 ## Requirements
 
-- a [VPS](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account.
+- A [VPS](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account
 
 ## Instructions
 
@@ -26,14 +26,14 @@ Using the [OVHcloud Control Panel](../getting-started-vps/) / API, install your 
 
 #### cPanel
 
-This section will explain the first steps specifically for the cPanel pre-installed image. Steps marked with * will have FAQ at the end of the steps.
+This section will explain the first steps specifically for the cPanel pre-installed image. Steps marked with \* will have FAQ at the end of the steps.
 
 1. Open the email from us which contains your application login details.
 2. Click on the URL for cPanel in the email.
 
 > [!primary]
 >
-> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the "whmlogin" command to generate a new link.
+> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the "sudo whmlogin" command to generate a new link.
 >
 
 <ol start="3">
@@ -49,7 +49,7 @@ No further steps are necessary to complete the first configuration of this appli
 > [!faq]
 >
 > Can I use my own nameservers?
->> Yes, you can. But you need to make sure you create glue records with your domain registrar. For example if you want "ns1.mydomain.com" and "ns2.mydomain.com", you must set up glue records for both which must point to the IP of your server. If your domain is registered with OVHcloud, you can follow [this guide.](../../domains/glue_registry/#step-1-add-the-glue-records). Please note that this can take 24 hours to create.
+>> Yes, you can. But you need to make sure you create glue records with your domain registrar. For example if you want "ns1.mydomain.com" and "ns2.mydomain.com", you must set up glue records for both which must point to the IP of your server. If your domain is registered with OVHcloud, you can follow [this guide](../../domains/glue_registry/#step-1-add-the-glue-records). Please note that this can take 24 hours to create.
 > Why set root password?
 >> WHM by default uses the root user for authentication and the one time link allows access to complete first setup and change root password. Next time you log in to WHM you must use the root user and the password you have set.
 > Where is my licence for cPanel?
@@ -57,7 +57,7 @@ No further steps are necessary to complete the first configuration of this appli
 
 #### Plesk
 
-This section will explain the first steps specifically for the Plesk pre-installed image. Steps marked with * will have FAQ at the end of the steps.
+This section will explain the first steps specifically for the Plesk pre-installed image. Steps marked with \* will have FAQ at the end of the steps.
 
 1. Open the email from OVHcloud which contains your application login details.
 2. Click on the URL for Plesk in the email.
@@ -117,13 +117,13 @@ If your domain is registered with OVHcloud you can follow [this guide](../../dom
 <br>If your domain is registered with another company you will need to contact them for assistance to set up your `A` records.
 
 <ol start="2">
-<li>You may need to wait 24 hours before the two records propagate fully. You can always check it with [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.</li>
+<li>You may need to wait 24 hours before the two records propagate fully. You can always check it with <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.</li>
 <li>SSH into your server with the CentOS user and execute the following commands to install Certbot.</li>
 </ol>
 
 > [!warning]
 >
-> Replace personaldomain.ovh in the commands to your own domain name.
+> Replace personaldomain.ovh in the commands with your own domain name.
 >
 
 ```sh

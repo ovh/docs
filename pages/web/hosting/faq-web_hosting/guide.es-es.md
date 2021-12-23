@@ -11,7 +11,7 @@ section: 'Primeros pasos'
 
 ### ¿Qué hacer si mi sitio web no funciona bien? 
 
-Existen varios motivos por los que un sitio web puede funcionar de forma incorrecta. Para identificar la causa del fallo, compruebe en primer lugar que ha renovado todos sus servicios y que estos están activos, desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. A continuación, consulte las tareas en progreso desde la página [Status](http://travaux.ovh.net/){.external} de OVHcloud. Si todos los servicios están activos y no hay tareas que afecten a su sitio, deberá realizar un diagnóstico más profundo desde la sección «Diagnóstico» de [esta página](../). 
+Existen varios motivos por los que un sitio web puede funcionar de forma incorrecta. Para identificar la causa del fallo, compruebe en primer lugar que ha renovado todos sus servicios y que estos están activos, desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. A continuación, consulte las tareas en progreso desde la página [Status](https://web-cloud.status-ovhcloud.com/){.external} de OVHcloud. Si todos los servicios están activos y no hay tareas que afecten a su sitio, deberá realizar un diagnóstico más profundo desde la sección «Diagnóstico» de [esta página](../). 
 
 **Ideas y consejos**: Si su sitio deja de estar disponible tras una acción realizada por usted, puede restaurar el contenido directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para ello, acceda la pestaña `FTP - SSH` de su alojamiento y haga clic en el botón `Restaurar una copia de seguridad`{.action}, situado en la parte derecha. Para más información, consulte la siguiente documentación: [Restaurar el espacio de almacenamiento de un alojamiento web](../restaurar-espacio-almacenamiento-alojamiento-web).
 
@@ -39,11 +39,11 @@ Una vez conectado al área de cliente, podrá gestionar los accesos a su servido
 
 Para publicar su sitio web en OVHcloud, debe disponer de un nombre de dominio, que corresponderá a la dirección desde la que el sitio web estará accesible (ejemplo: «ovh.com»). Asimismo, debe disponer de un alojamiento web en el que publicar su sitio web. Puede consultar la siguiente documentación: [Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet).
 
-**Ideas y consejos**: Para ayudarle a crear su sitio web, OVHcloud pone a su disposición módulos en un clic como WordPress, PrestaShop, Joomla o Drupal. Acceda a ellos [aquí](https://www.ovh.es/hosting/website/). También puede consultar la siguiente documentación: [Instalar un sitio web con un módulo en un clic](../modulos-en-un-clic).
+**Ideas y consejos**: Para ayudarle a crear su sitio web, OVHcloud pone a su disposición módulos en un clic como WordPress, PrestaShop, Joomla o Drupal. Acceda a ellos [aquí](https://www.ovhcloud.com/es-es/web-hosting/uc-website/). También puede consultar la siguiente documentación: [Instalar un sitio web con un módulo en un clic](../modulos-en-un-clic).
 
 ### ¿Cómo migrar mi sitio web y mis mensajes de correo electrónico a OVHcloud? 
 
-Para migrar su sitio web y su correo a OVHcloud, debe tener un [plan de alojamiento web](https://www.ovh.es/hosting/){.external} y una [solución de correo](https://www.ovh.es/emails/){.external} contratados con OVHcloud. Para transferir los archivos de su sitio web, deberá conectarse al servidor FTP de su alojamiento. Si actualmente dispone de una base de datos, le recomendamos que realice una copia de seguridad. 
+Para migrar su sitio web y su correo a OVHcloud, debe tener un [plan de alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external} y una [solución de correo](https://www.ovhcloud.com/es-es/emails/){.external} contratados con OVHcloud. Para transferir los archivos de su sitio web, deberá conectarse al servidor FTP de su alojamiento. Si actualmente dispone de una base de datos, le recomendamos que realice una copia de seguridad. 
 
 Para migrar el correo, deberá volver crear sus cuentas en OVHcloud y utilizar la herramienta de migración [OMM (OVHcloud Mail Migrator)](https://omm.ovh.net/) que encontrará [aquí](https://omm.ovh.net/). 
 

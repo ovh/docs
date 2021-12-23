@@ -22,7 +22,7 @@ You can configure Email Pro accounts on email clients and online interfaces, if 
 
 ## Requirements
 
-- an [Email Pro](https://www.ovh.ie/emails/email-pro/) solution
+- an [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) solution
 - credentials for the Email Pro account you would like to configure
 - credentials for the Gmail account you want to configure the OVHcloud Email Pro account on
 

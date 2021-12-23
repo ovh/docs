@@ -120,7 +120,7 @@ En esta etapa, accederá a la dirección IP de su alojamiento y la añadirá a s
 
 Si su sitio web no está alojado en la infraestructura de OVHcloud o si está gestionado por otro proveedor, contacte con el servicio de soporte correspondiente.
 
-Si su sitio web está alojado en uno de nuestros [planes de hosting Cloud](https://www.ovh.es/hosting/), abra la pestaña `Alojamientos`{.action} a la izquierda de su pantalla y seleccione el alojamiento correspondiente.
+Si su sitio web está alojado en uno de nuestros [planes de hosting Cloud](https://www.ovhcloud.com/es-es/web-hosting/), abra la pestaña `Alojamientos`{.action} a la izquierda de su pantalla y seleccione el alojamiento correspondiente.
 
 En la pestaña `Información general`{.action}, copie la dirección IPV4 y/o IPV6 de su dominio.
 

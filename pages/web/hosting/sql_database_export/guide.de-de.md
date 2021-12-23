@@ -17,8 +17,8 @@ Fast alle Content Management Systeme (CMS) wie WordPress oder Joomla! verwenden 
 
 ## Voraussetzungen
 
-- Sie haben ein [Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
-- Ihr [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot beinhaltet eine Datenbank.
+- Sie haben ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
+- Ihr [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot beinhaltet eine Datenbank.
 - Je nach der verwendeten Backup-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhosting Angebots über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder die erforderlichen Login-Daten, um sich mit der Datenbank zu verbinden.
 
 ## Beschreibung
@@ -31,7 +31,7 @@ Bevor Sie beginnen, wählen Sie die Methode aus, die Sie für den Export des Bac
 
 - **Backup über ein Skript erstellen**: Hierzu muss zunächst ein Skript geschrieben und auf Ihrem OVH Webhosting gespeichert werden. Für das Schreiben des Skripts sind spezifische technische Kenntnisse erforderlich.
 
-- **Backup über einen SSH-Befehl erstellen**: Verbinden Sie sich hierfür via SSH mit Ihrem Speicherplatz und verwenden Sie die entsprechenden Befehle für die Erstellung des Backups. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot erforderlich.
+- **Backup über einen SSH-Befehl erstellen**: Verbinden Sie sich hierfür via SSH mit Ihrem Speicherplatz und verwenden Sie die entsprechenden Befehle für die Erstellung des Backups. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot erforderlich.
 
 Einige der oben aufgeführten Methoden lassen sich nicht über ein OVH Interface ausführen. Daher können wir Ihnen nicht sagen, wie diese umzusetzen sind. Im Folgenden geben wir Ihnen hierzu einige Informationen, sie ersetzen jedoch nicht die Unterstützung eines Webmasters. 
 

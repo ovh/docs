@@ -16,7 +16,7 @@ Los planes de hosting de OVH incluyen un certificado SSL gratuito. Dicho certifi
 
 ## Requisitos
 
-- Tener un [certificado SSL](https://www.ovh.es/ssl/){.external} instalado en su [alojamiento web de OVH](https://www.ovh.es/hosting/){.external}.
+- Tener un [certificado SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external} instalado en su [alojamiento web de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 - Tener al menos un sitio web instalado y accesible en su alojamiento web de OVH.
 - Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
 

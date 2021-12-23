@@ -3,6 +3,7 @@ title: "Restaurer l'espace de stockage de son hébergement web"
 slug: restauration-ftp-filezilla-espace-client
 excerpt: "Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web"
 section: 'FTP et SSH'
+hidden: true
 ---
 
 **Dernière mise à jour le 05/05/2020**
@@ -15,7 +16,7 @@ Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stocka
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} (ne fonctionne pas avec un hébergement Cloud Web).
+- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} (ne fonctionne pas avec un hébergement Cloud Web).
 - Selon la méthode utilisée, disposer d’un accès à la gestion de l’offre d’hébergement web depuis l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} ou du mot de passe de l'utilisateur FTP vous permettant d'accéder à votre espace de stockage. 
 
 ## En pratique

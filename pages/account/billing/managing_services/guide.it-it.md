@@ -88,7 +88,7 @@ Per effettuare l’operazione clicca sui tre puntini in corrispondenza del servi
 
 #### Elimina immediatamente un servizio
 
-Questa azione, disponibile esclusivamente per gli [hosting Web](https://www.ovh.it/hosting-web/){.external}, comporta la rimozione immediata della soluzione selezionata: significa che il servizio verrà eliminato prima della data di scadenza, senza attendere il termine del contratto.
+Questa azione, disponibile esclusivamente per gli [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}, comporta la rimozione immediata della soluzione selezionata: significa che il servizio verrà eliminato prima della data di scadenza, senza attendere il termine del contratto.
 
 **Ti ricordiamo che l'eliminazione di un servizio è un'operazione irreversibile che comporta la cancellazione definitiva di tutti i dati ad esso associati e non dà diritto ad alcun rimborso.**  
 

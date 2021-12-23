@@ -20,7 +20,7 @@ Un database («DB») permette di conservare elementi cosiddetti dinamici quali, 
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting SQL Privato](https://www.ovh.it/hosting-web/opzioni-sql.xml){.external} o [Cloud Database](https://www.ovh.it/cloud-databases/){.external}
+- Disporre di una [soluzione di hosting SQL Privato](https://www.ovhcloud.com/it/web-hosting/options/start-sql/){.external} o [Cloud Database](https://www.ovh.it/cloud-databases/){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura

@@ -26,8 +26,8 @@ Nos hébergements web sont compatibles IPv6 depuis 2011. Mais l'activation de ce
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} dans votre espace client OVHcloud.
-- Posséder une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} dans votre espace client OVHcloud.
+- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique

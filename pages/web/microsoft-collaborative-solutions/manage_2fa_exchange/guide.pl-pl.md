@@ -17,7 +17,7 @@ Możesz wzmocnić bezpieczeństwo swojego konta Exchange za pomocą weryfikacji 
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Exchange OVHcloud](https://www.ovh.pl/emaile/hosted-exchange/){.external}.
+- Wykupienie usługi [Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Zainstalowanie aplikacji OTP na smartfonie lub tablecie z systemem Android lub iOS.
 

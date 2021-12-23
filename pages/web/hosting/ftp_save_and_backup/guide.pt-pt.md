@@ -15,7 +15,7 @@ A sua solução de alojamento web da OVH dá-lhe acesso a um espaço de armazena
 
 ## Requisitos
 
-- Ter um [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} (não funciona com um alojamento Cloud Web).
+- Ter um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} (não funciona com um alojamento Cloud Web).
 - Consoante o método utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou dispor da palavra-passe do utilizador FTP que lhe permite aceder ao seu espaço de armazenamento. 
 
 ## Instruções

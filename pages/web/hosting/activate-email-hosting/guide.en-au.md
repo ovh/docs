@@ -16,8 +16,8 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 ## Requirements
 
-- a [domain name](https://www.ovh.com.au/domains/){.external} registered with OVHcloud
-- an [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/)
+- a [domain name](https://www.ovhcloud.com/en-au/domains/){.external} registered with OVHcloud
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) with the necessary permissions to manage the Web Hosting plan
 
 ## Instructions

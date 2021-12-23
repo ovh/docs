@@ -22,7 +22,7 @@ Os endereços de e-mail do serviço MX Plan podem ser configurados num software 
 
 ## Requisitos
 
-- Dispor de um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}).
+- Dispor de um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}).
 - Ter a aplicação Microsoft Outlook instalada no seu dispositivo Mac.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 

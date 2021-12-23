@@ -23,7 +23,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 ## Prérequis
 
-- Disposer d'une offre [Exchange](https://www.ovh.com/fr/emails/){.external}.
+- Disposer d'une offre [Exchange](https://www.ovhcloud.com/fr/emails/){.external}.
 - Disposer du logiciel Microsoft Outlook 2016 ou ultérieur, installé sur votre ordinateur.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 - Le champ SRV d'OVHcloud doit être correctement configuré dans la zone DNS du nom de domaine, n'hésitez pas à consulter notre guide [Ajouter un nom de domaine sur son service Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/ajouter-domaine-exchange/).

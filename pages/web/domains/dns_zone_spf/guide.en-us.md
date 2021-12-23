@@ -48,8 +48,8 @@ When configuring an SPF, make sure to include all the sending sources for the em
 
 The OVHcloud configuration applies to these solutions:
 
-- MX Plan standalone or included in an OVHcloud [Web Hosting plan](https://www.ovh.com/world/web-hosting/){.external};
-- [Hosted Exchange](https://www.ovh.com/world/emails/hosted-exchange/){.external}.
+- MX Plan standalone or included in an OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external};
+- [Hosted Exchange](https://www.ovhcloud.com/en/emails/hosted-exchange/){.external}.
 
 When you order one of these solutions, we recommend using an SPF record with OVHcloud information in your domain name's DNS zone. It looks like this:
 

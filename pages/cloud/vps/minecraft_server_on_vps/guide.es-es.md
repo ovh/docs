@@ -27,7 +27,7 @@ Puede contratar un servidor Minecraft preconstruido o configurarlo usted mismo e
 
 ## Requisitos
 
-- Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud, con un mínimo de 2 GB de RAM.
+- Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud.
 - Haber instalado una distribución GNU/Linux en el servidor.
 - Tener acceso de administrador (root) por SSH a su servidor.
 - Tener una comprensión básica de la administración GNU/Linux.

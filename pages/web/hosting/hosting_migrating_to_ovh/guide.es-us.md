@@ -51,7 +51,7 @@ Teniendo en cuenta esta posibilidad, OVHcloud pone a su disposición dos procedi
 
 #### 1. Contratar un alojamiento web con OVHcloud
 
-Puede contratar su alojamiento en el [sitio web de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}. No solicite todavía la transferencia del dominio; espere a más adelante. Una vez recibido el pago, se iniciará la instalación del alojamiento. Recibirá un mensaje de correo electrónico cuando la instalación haya finalizado.
+Puede contratar su alojamiento en el [sitio web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}. No solicite todavía la transferencia del dominio; espere a más adelante. Una vez recibido el pago, se iniciará la instalación del alojamiento. Recibirá un mensaje de correo electrónico cuando la instalación haya finalizado.
 
 #### 2. Transferir el sitio web
 

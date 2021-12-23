@@ -17,7 +17,7 @@ section: 'Configurazione smartphone/tablet compatibile Exchange'
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange](https://www.ovh.it/emails/){.external}
+- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/){.external}
 - Aver installato l’applicazione Gmail sul proprio dispositivo, che puoi scaricare da Google Play Store
 - Disporre delle credenziali associate all’account email da configurare
 
@@ -68,7 +68,7 @@ Invia un’email di test per verificare la corretta configurazione dell’accoun
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovh.it/emails/){.external}. Accedi a questo link [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} utilizzando le credenziali del tuo account.
+OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}. Accedi a questo link [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} utilizzando le credenziali del tuo account.
 
 ## Per saperne di più
 

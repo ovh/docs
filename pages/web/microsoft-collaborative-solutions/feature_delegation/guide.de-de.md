@@ -16,7 +16,7 @@ Mit Exchange verfügen Sie über professionelle E-Mail-Adressen mit erweiterten 
 
 ## Voraussetzungen
 
-- Sie besitzen ein [Exchange](https://www.ovh.de/emails/){.external} Angebot.
+- Sie besitzen ein [Exchange](https://www.ovhcloud.com/de/emails/){.external} Angebot.
 - Sie verfügen über mindestens zwei aktive Exchange Accounts, die auf derselben OVHcloud Exchange Plattform eingerichtet sind.
 - Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
 - Sie verfügen über die Login-Informationen für den Exchange Account, dem Sie neue Berechtigungen zuweisen möchten.

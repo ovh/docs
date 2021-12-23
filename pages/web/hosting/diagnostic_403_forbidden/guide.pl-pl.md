@@ -31,7 +31,7 @@ Może się również zdarzyć, że po wykryciu anomalii nasze roboty związane z
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovh.pl/hosting/) OVHcloud
+- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) OVHcloud
 - Posiadanie [danych do logowania](../logowanie-przestrzen-dyskowa-ftp-hosting-web/#etap-1-pobranie-informacji-niezbednych-do-logowania) do przestrzeni dyskowej Twojego hostingu
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 

@@ -20,7 +20,7 @@ Błędy na kontach e-mail Exchange mogą mieć wiele przyczyn. Automatyczna diag
 
 ## Wymagania początkowe
 
-- Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovh.pl/emaile/hosted-exchange/)
+- Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
 - Posiadanie danych identyfikacyjnych konta Exchange do sprawdzenia
 - Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
@@ -122,7 +122,7 @@ Ten błąd wskazuje na ogólną niepowodzenie wysyłki e-maili, które może mie
 - [Twoje konto zostało zawieszone](#expired)
 - [Podane hasło jest nieprawidłowe.](#password)
 - [Twoje konto zostało zablokowane z powodu wysyłania niechcianej poczty](#blocked)
-- [Wystąpił problem z infrastrukturą](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+- [Wystąpił problem z infrastrukturą](https://web-cloud.status-ovhcloud.com/)
 
 ## Sprawdź również
 

@@ -16,7 +16,7 @@ Questa guida ti mostra come configurare un indirizzo email MX Plan su Android tr
 
 ## Prerequisiti
 
-- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [Web hosting OVH](https://www.ovh.it/hosting-web/){.external}
+- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [Web hosting OVH](https://www.ovhcloud.com/it/web-hosting/){.external}
 - Aver installato l’applicazione Gmail sul proprio dispositivo, che puoi scaricare da Google Play Store
 - Disporre delle credenziali associate all’account email da configurare
 

@@ -42,7 +42,7 @@ Utiliser la commande suivante pour créer une clé RSA de 4096 bits :
 ```sh
 # ssh-keygen -b 4096
 ```
-L'utilisation de l'option « -t » avec la commande ci-dessus vous permet de spécifier une méthode de cryptage différente, par exemple :
+L'utilisation de l'option « -t » avec la commande ci-dessus vous permet de spécifier une méthode de chiffrement différente, par exemple :
 
 ```sh
 # ssh-keygen -t ed25519 -a 256
@@ -150,7 +150,7 @@ Supprimez de votre fichier « authorized_keys » la clé qui correspond à l'u
 
 ### Importer votre clé SSH dans l’espace client OVHcloud
 
-L’espace client OVHcloud vous permet de stocker des clés publiques créées en utilisant l'un des types de cryptage pris en charge (actuellement RSA, ECDSA, ED25519). 
+L’espace client OVHcloud vous permet de stocker des clés publiques créées en utilisant l'un des types de chiffrement pris en charge (actuellement RSA, ECDSA, ED25519). 
 
 Ouvrez la barre de navigation latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Produits et services`{.action}.
 

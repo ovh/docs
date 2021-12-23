@@ -16,8 +16,8 @@ Dank SQL Private können Sie eine SQL-Instanz mit einem OVH Webhosting verbinden
 
 ## Voraussetzungen
 
-- Sie verfügen über eine SQL Private Instanz (im [Webhosting Angebot](https://www.ovh.de/hosting/){.external} enthalten oder als [SQL-Option](https://www.ovh.de/hosting/sql-optionen.xml){.external} zusätzlich bestellt).
-- Ihr [Webhosting](https://www.ovh.de/hosting/){.external} befindet sich im gleichen Rechenzentrum wie Ihre SQL Private Instanz (diese Information finden Sie in Ihrem OVH Kundencenter).
+- Sie verfügen über eine SQL Private Instanz (im [Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} enthalten oder als [SQL-Option](https://www.ovhcloud.com/de/web-hosting/options/start-sql/){.external} zusätzlich bestellt).
+- Ihr [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} befindet sich im gleichen Rechenzentrum wie Ihre SQL Private Instanz (diese Information finden Sie in Ihrem OVH Kundencenter).
 - Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 ## Beschreibung

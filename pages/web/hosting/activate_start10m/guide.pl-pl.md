@@ -14,16 +14,16 @@ section: 'Pierwsze kroki'
 
 ## Wprowadzenie
 
-Dzięki [Start10M](https://www.ovh.pl/domeny/oferta_serwer_start10m.xml){.external}, OVHcloud oferuje hosting WWW o rozmiarze 10 MB oraz konto e-mail o pojemności 5 GB. Z tego przewodnika dowiesz się, jak włączyć hosting Start 10M w swojej [domenie](https://www.ovh.pl/domeny/){.external}.
+Dzięki [Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external}, OVHcloud oferuje hosting WWW o rozmiarze 10 MB oraz konto e-mail o pojemności 5 GB. Z tego przewodnika dowiesz się, jak włączyć hosting Start 10M w swojej [domenie](https://www.ovhcloud.com/pl/domains/){.external}.
 
 > [!warning]
-> Ten darmowy hosting o rozmiarze 10 MB jest przeznaczony do prostej strony WWW **bez bazy danych**. Jeśli chcesz uruchomić stronę WWW zawierającą kilka stron i wymagającą bazy danych, taką jak CMS (na przykład: Worpdress, Joomla, Prestashop, Drupal, itp.). Prosimy o zamówienie jednej z [naszych ofert hostingu www na naszej stronie](https://www.ovh.pl/hosting/) internetowej lub w [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+> Ten darmowy hosting o rozmiarze 10 MB jest przeznaczony do prostej strony WWW **bez bazy danych**. Jeśli chcesz uruchomić stronę WWW zawierającą kilka stron i wymagającą bazy danych, taką jak CMS (na przykład: Worpdress, Joomla, Prestashop, Drupal, itp.). Prosimy o zamówienie jednej z [naszych ofert hostingu www na naszej stronie](https://www.ovhcloud.com/pl/web-hosting/) internetowej lub w [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 **Dowiedz się, jak włączyć darmowy hosting Start 10M**
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovh.pl/domeny/){.external} odłączonej od hostingu WWW w Panelu klienta OVHcloud
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external} odłączonej od hostingu WWW w Panelu klienta OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
@@ -44,7 +44,7 @@ Pojawi się okno aktywacyjne. W **etapie 1** wyświetla się przypomnienie ofert
 | Rekord DNS MX 	| Serwery e-mail OVHcloud zostaną zastosowane dla domeny. 	|
 
 > [!primary]
-> Pamiętaj, że nie ma bazy danych zawartej w ofercie darmowego hostingu Start 10M. Jeśli Twój projekt wymaga utworzenia bazy danych, zapoznaj się z naszą [ofertą hostingu WWW](https://www.ovh.pl/hosting/), która je zawiera.
+> Pamiętaj, że nie ma bazy danych zawartej w ofercie darmowego hostingu Start 10M. Jeśli Twój projekt wymaga utworzenia bazy danych, zapoznaj się z naszą [ofertą hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/), która je zawiera.
 
 **W etapie 3** przypominamy sobie cennik ofert. W **etapie 4** zapoznaj się z regulaminami i zatwierdź zamówienie.
 

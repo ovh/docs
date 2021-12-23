@@ -41,7 +41,7 @@ Oprócz [zarządzania kontaktami](../../customer/zarzadzanie_kontaktami/), zarej
 > W przypadku wątpliwości zalecamy sprawdzenie następujących zasobów:
 >
 > - strona internetowa odpowiedniego rejestru TLD;
-> - Lista [TLD dostępnych na OVHcloud](https://www.ovh.pl/domeny/cennik/);
+> - Lista [TLD dostępnych na OVHcloud](https://www.ovhcloud.com/pl/domains/tld/);
 > - sekcja `Operacje w trakcie`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby sprawdzić aktualizacje statusu domeny.
 >
 

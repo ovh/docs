@@ -16,7 +16,7 @@ OVH Web Hosting plans provide you with access to a storage space you can use to 
 
 ## Requirements
 
-- an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}
+- an [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}
 - access to the `Web Cloud`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
@@ -43,7 +43,7 @@ The information about your storage space will appear, along with a table listing
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
 
-With this information, you should be able to find the items you need to log in to the storage space. If you are having trouble identifying this information, you can use the table below. Please note that some information may not appear, depending on which [OVH Web Hosting plan]({ovh_www}/web-hosting/){.external} you are using.
+With this information, you should be able to find the items you need to log in to the storage space. If you are having trouble identifying this information, you can use the table below. Please note that some information may not appear, depending on which [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} you are using.
 
 |Information|Description|
 |---|---|
@@ -66,7 +66,7 @@ There are several ways you can access your storage space. We recommend reading t
 
 [2. Log in via an FTP program](./#2-log-in-via-an-ftp-program): Gives you access to your storage space via a program (e.g. FileZilla or Cyberduck). You will need to install the program on your computer beforehand.
 
-[3. Log in via SSH](./#3-log-in-via-ssh): Gives you access to your storage space via SSH. More advanced knowledge and a specific [OVH web hosting plan](https://www.ovh.ie/web-hosting/){.external} are required to use this method.
+[3. Log in via SSH](./#3-log-in-via-ssh): Gives you access to your storage space via SSH. More advanced knowledge and a specific [OVH web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} are required to use this method.
 
 #### 1. Log in via FTP Explorer.
 

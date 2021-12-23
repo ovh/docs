@@ -62,7 +62,7 @@ Dal browser del vostro computer o da uno smartphone, andate sull'indirizzo <http
 
 ### Non riesco a connettermi alla Webmail
 
-Assicurati di avere la password giusta. Se necessario, è possibile modificarlo. Verifica che la doppia autenticazione sia attiva ([solo Exchange](https://www.ovh.it/emails/hosted-exchange/)).
+Assicurati di avere la password giusta. Se necessario, è possibile modificarlo. Verifica che la doppia autenticazione sia attiva ([solo Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/)).
 
 Come modificare la password di un indirizzo email:
 
@@ -74,7 +74,7 @@ Come modificare la password di un indirizzo email:
 
 ### Sul tuo servizio è in corso un incidente o una manutenzione?
 
-È possibile verificare i diversi task in corso su <http://travaux.ovh.net/>questo
+È possibile verificare i diversi task in corso su <https://web-cloud.status-ovhcloud.com/> questo
 
 - Per **MX Plan**, verifica nella sezione `Email`
 - Per **Email Pro**, accedi alla sezione `Microsoft`
@@ -121,6 +121,7 @@ Di seguito trovi la maggior parte dei codici di risposta negativi SMTP utilizzat
 |502|Ordine non implementato|I parametri o le opzioni utilizzati durante l'invio dell'email con il tuo server SMTP sono riconosciuti ma disattivati nella sua configurazione. Contatta il tuo provider di servizi|
 |503|Il server ha riscontrato una brutta sequenza di comandi|In genere è necessario verificare l'autenticazione. Assicurati di essere autenticato correttamente sul server SMTP al livello di configurazione del tuo client di posta|
 |504|Parametro di comando non implementato|I parametri o le opzioni utilizzati durante l'invio dell'email con il tuo server SMTP sono riconosciuti ma disattivati nella sua configurazione. Contatta il tuo provider di servizi|
+|535|Perdita durante l'autenticazione|Le informazioni utente/password sono eliminate o l'invio è potenzialmente bloccato sul tuo indirizzo email. Dallo Spazio Cliente OVHcloud è possibile verificare lo stato dell'indirizzo email Se l'account è stato bloccato per Spam, è possibile sbloccare la password. Per maggiori informazioni, consulta la nostra guida [Che fare in caso di account bloccato per invio di Spam ?](https://docs.ovh.com/it/microsoft-collaborative-solutions/blocco-per-spam/)|
 |550|Azione richiesta non effettuata: casella di posta non disponibile|Il server di posta di destinazione non ha potuto verificare l'indirizzo email utilizzato. Questo problema è causato principalmente da un indirizzo email di destinazione non valido, ma può anche significare che il server di posta di destinazione ha problemi di firewall o di connettività. Verifica l'indirizzo email del destinatario e/o riprova|
 |551|Utenti non locali|Questo viene generalmente utilizzato come strategia di prevenzione contro lo spam. Ti ricordiamo che il corriere di posta non è autorizzato per alcun motivo a trasferire il tuo messaggio verso un server diverso dal tuo. Contatta il tuo provider di servizi|
 |552|Azione di messaggistica richiesta interrotta: spazio di storage superato|L'utente che hai cercato di contattare non ha più spazio disponibile per ricevere messaggi. Purtroppo, l'unica soluzione è contattare il destinatario con un altro metodo|

@@ -5,7 +5,7 @@ excerpt: 'Find out how to instantiate a VPS with the pre-installed cPanel applic
 section: 'Advanced usage'
 ---
 
-**Last updated 22nd September 2021**
+**Last updated 14th October 2021**
 
 ## Objective
 
@@ -15,8 +15,8 @@ cPanel is a control panel designed for web hosting. Web hosting tasks are simpli
 
 ## Requirements
 
-- a current [VPS solution](https://www.ovhcloud.com/en-gb/vps/) (VPS ranges Value, Essential, Comfort, or Elite) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A current [VPS solution](https://www.ovhcloud.com/en-gb/vps/) (VPS ranges Value, Essential, Comfort, or Elite) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
@@ -46,7 +46,7 @@ The URL above allows you to log in without credentials (user and password) to yo
 
 > [!primary]
 >
-> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the “whmlogin” command to generate a new link.
+> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the “sudo whmlogin” command to generate a new link.
 >
 
 #### Step 1: Read and accept the terms of cPanel

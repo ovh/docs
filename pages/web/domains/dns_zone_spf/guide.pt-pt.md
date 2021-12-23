@@ -52,9 +52,9 @@ Resumindo, o registo SPF deve incluir a origem (<i>source</i>) de envio dos e-ma
 
 A configuração da OVHcloud aplica-se às seguintes soluções:
 
-- MX Plan sozinho ou incluído numa oferta de [alojamento web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external};
-- [E-mail Pro](https://www.ovh.pt/emails/email-pro/){.external};
-- [Hosted Exchange](https://www.ovh.pt/emails/hosted-exchange/){.external}.
+- MX Plan sozinho ou incluído numa oferta de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external};
+- [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external};
+- [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}.
 
 Ao encomendar uma destas soluções, recomendamos que utilize um registo SPF com as informações da OVHcloud na zona DNS do seu domínio. Exemplo de parâmetros OVH:
 
@@ -62,7 +62,7 @@ Ao encomendar uma destas soluções, recomendamos que utilize um registo SPF com
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-Esta configuração não se aplica às ofertas Provider Exchange ou [Private Exchange](https://www.ovh.pt/emails/hosted-exchange/){.external}.
+Esta configuração não se aplica às ofertas Provider Exchange ou [Private Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}.
 
 Para a oferta Exchange Provider, a configuração é a seguinte:
 
@@ -111,7 +111,7 @@ Na nova janela, irá visualizar vários registos DNS. Para adicionar um SPF, tem
 
 - [Adicionar um registo TXT](#txtrecord): para utilizadores experientes ou que já disponham do registo completo. Por exemplo, o seu fornecedor de solução de e-mail transmite-lhe o valor.
 - [Adicionar um registo SPF](#spfrecord): para os utilizadores que não possuem a totalidade do registo. Por exemplo, dispõe apenas de um endereço de IP ou do nome do host do servidor de e-mail.
-- [Adicionar um registo SPF ](#spfrecordovhcloud)e utilizar **a configuração da OVHcloud**: para os utilizadores que apenas possuem as ofertas de e-mail OVHcloud no seu nome de domínio (exceto [Private Exchange](https://www.ovh.pt/emails/hosted-exchange/){.external} e Exchange Provider).
+- [Adicionar um registo SPF ](#spfrecordovhcloud)e utilizar **a configuração da OVHcloud**: para os utilizadores que apenas possuem as ofertas de e-mail OVHcloud no seu nome de domínio (exceto [Private Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external} e Exchange Provider).
 
 ![domínio](images/spf_records_add_entry.png){.thumbnail}
 

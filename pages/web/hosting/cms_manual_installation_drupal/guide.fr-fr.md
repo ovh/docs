@@ -27,7 +27,7 @@ Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide](../mutual
 
 Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/w/index.php?title=Systeme_de_gestion_de_contenu&redirect=no){.external}, ils ont généralement besoin d'une plateforme d'hébergement comprenant un serveur FTP, une base de données, et un nom de domaine.
 
-Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/fr/hebergement-web/){.external}.
+Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 
 *Si vous souhaitez installer Drupal de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [](../modules-en-1-clic/)
 

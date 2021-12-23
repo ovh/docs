@@ -16,7 +16,7 @@ Mit OVH Webhosting Angeboten verfügen Sie über einen Speicherplatz für das On
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
+- Sie verfügen über ein [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
 - Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 ## Vorgehensweise
@@ -31,7 +31,7 @@ Die angezeigte Tabelle enthält die auf Ihrem OVH Webhosting erstellten FTP-Benu
 
 ### Schritt 2: Passwort eines FTP-Benutzers ändern
 
-Entsprechend Ihrem [Webhosting Angebot](https://www.ovh.de/hosting/){.external} bestehen zwei mögliche Vorgehensweisen zur Änderung des Passworts eines FTP-Benutzers:
+Entsprechend Ihrem [Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} bestehen zwei mögliche Vorgehensweisen zur Änderung des Passworts eines FTP-Benutzers:
 
 - **für Angebote, mit denen nur ein FTP-Benutzer angelegt werden kann** (Start 10M und Basic): Klicken Sie in der Tabelle in der Spalte `Passwort`{.action} auf das Bleistift-Symbol, geben Sie im Textfeld das neue Passwort ein und bestätigen Sie die Änderung.
 
@@ -58,7 +58,7 @@ Die Änderung benötigt einige Minuten, bis sie wirksam ist.
 
 Nachdem Sie das Passwort des FTP-Benutzers geändert haben, können Sie auf Ihren Speicherplatz zugreifen.
 
-Entsprechend Ihrem [OVH Webhosting Angebot](https://www.ovh.de/hosting/){.external} gibt es hierzu mehrere mögliche Vorgehensweisen:
+Entsprechend Ihrem [OVH Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} gibt es hierzu mehrere mögliche Vorgehensweisen:
 
 - **FTP-Explorer verwenden**: Ermöglicht es Ihnen, über einen Webbrowser auf Ihren Speicherplatz zuzugreifen. Bleiben Sie für diese Option in dem Tab `FTP - SSH`{.action} und klicken Sie auf den Button `FTP Explorer`{.action}.
 

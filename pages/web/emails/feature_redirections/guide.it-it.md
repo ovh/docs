@@ -36,11 +36,11 @@ Esistono due tipi di reindirizzamenti:
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVH]({ovh_www}/hosting-web/){.external}, un [hosting gratuito Start 10M]({ovh_www}/domini/offerta_hosting_start10m.xml){.external} o una soluzione MX Plan ordinata separatamente)
+- Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external}, un [hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} o una soluzione MX Plan ordinata separatamente)
 
 ## Procedura
 
-In base alla data di attivazione della soluzione MXplan o in caso di [recente migrazione del servizio]({ovh_www}/mxplan-migration/){.external}, la versione disponibile sarà differente. Per verificare quella attiva 
+In base alla data di attivazione della soluzione MXplan o in caso di [recente migrazione del servizio](https://www.ovhcloud.com/it/web-hosting/mxplan-migration/){.external}, la versione disponibile sarà differente. Per verificare quella attiva 
 
 accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione “Web” e seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
 

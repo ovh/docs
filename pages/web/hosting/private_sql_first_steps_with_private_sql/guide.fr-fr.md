@@ -16,8 +16,8 @@ Le service SQL Privé permet de bénéficier d’une instance SQL fonctionnant d
 
 ## Prérequis
 
-- Disposer d'une instance SQL Privé (incluse dans une offre d'[hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} ou commandée via une [option SQL](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external}).
-- Disposer d'un [hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} hébergé sur le même centre de données que votre instance SQL Privé (cette information est visible dans l'espace client OVHcloud).
+- Disposer d'une instance SQL Privé (incluse dans une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} ou commandée via une [option SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external}).
+- Disposer d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} hébergé sur le même centre de données que votre instance SQL Privé (cette information est visible dans l'espace client OVHcloud).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 

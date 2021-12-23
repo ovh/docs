@@ -28,7 +28,7 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Exchange E-Mail Account](https://www.ovh.de/emails/hosted-exchange/){.external}.
+- Sie verfügen über einen [Exchange E-Mail Account](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external}.
 - Die Mail App ist auf Ihrem iOS Gerät installiert.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 
@@ -64,7 +64,7 @@ Sie können eine Test-E-Mail versenden, um zu überprüfen, ob der Account korre
 
 Sobald Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-OVHcloud bietet auch eine Webanwendung mit [kollaborativen Exchange-Funktionen](https://www.ovh.de/emails/){.external} an, unter <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+OVHcloud bietet auch eine Webanwendung mit [kollaborativen Exchange-Funktionen](https://www.ovhcloud.com/de/emails/){.external} an, unter <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 > [!primary]
 >

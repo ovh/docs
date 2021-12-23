@@ -17,8 +17,8 @@ Databases worden gebruikt in vrijwel alle moderne content management systemen (C
 
 ## Vereisten
 
-- U moet beschikken over een [OVH-webhosting plan](https://www.ovh.nl/shared-hosting/){.external}.
-- U moet een database hebben die is gemaakt als onderdeel van een [OVH-webhostingplan](https://www.ovh.nl/shared-hosting/){.external}.
+- U moet beschikken over een [OVH-webhosting plan](https://www.ovhcloud.com/nl/web-hosting/){.external}.
+- U moet een database hebben die is gemaakt als onderdeel van een [OVH-webhostingplan](https://www.ovhcloud.com/nl/web-hosting/){.external}.
 - U moet in het bezit zijn van de backup die u in uw database wilt importeren of u moet het kunnen ophalen.
 - Afhankelijk van de importmethode die u gebruikt, moet u het webhostingpakket vanuit uw OVH Control Panel kunnen beheren of over de informatie beschikken die u nodig hebt om verbinding te maken met de database.
 
@@ -34,7 +34,7 @@ Voordat u aan de slag gaat, moet u kiezen welke methode u gaat gebruiken om de b
 
 - **Voer de import uit met behulp van een script**: deze oplossing vereist het schrijven van een script, gehost op uw OVH webhostingplan, dat de import zal uitvoeren. Het schrijven van dit script vereist een zeker niveau van technische kennis.
 
-- **Voer de import uit middels een SSH-commandoregel**: bij deze oplossing gebruikt u het SSH-protocol om u in te loggen op uw opslagruimte en vervolgens commando‘s te gebruiken om met die opslagruimte te communiceren. Er is meer geavanceerde kennis en een specifiek [OVH-hostingplan](https://www.ovh.nl/shared-hosting/){.external} vereist om dit type toegang te gebruiken.
+- **Voer de import uit middels een SSH-commandoregel**: bij deze oplossing gebruikt u het SSH-protocol om u in te loggen op uw opslagruimte en vervolgens commando‘s te gebruiken om met die opslagruimte te communiceren. Er is meer geavanceerde kennis en een specifiek [OVH-hostingplan](https://www.ovhcloud.com/nl/web-hosting/){.external} vereist om dit type toegang te gebruiken.
 
 Enkele van de procedures zijn niet opgenomen in de OVH-interface. U zult daarom op uw eigen kennis moeten vertrouwen om deze procedures te volgen. We hebben hieronder enkele instructies uiteengezet, maar deze zijn geen vervanging voor de hulp van een webmaster.
 

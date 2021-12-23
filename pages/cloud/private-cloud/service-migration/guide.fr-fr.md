@@ -6,7 +6,7 @@ section: Premiers pas
 order: 6
 ---
 
-**Dernière mise à jour le 12/02/2021**
+**Dernière mise à jour le 06/12/2021**
 
 ## Objectif
 
@@ -28,6 +28,14 @@ La migration d'un service Hosted Private Cloud comprend deux aspects :
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
 
 ## En pratique
+
+> [!primary]
+>
+> Si vous souhaitez être assistés par :
+>
+> - des partenaires OVHcloud, certifiés et experts sur nos produits, pour vous accompagner dans votre migration ou l'effectuer à votre place, veuillez cliquer sur [ce lien](https://www.ovhcloud.com/fr/private-cloud-migration/).
+> - nos experts techniques OVHcloud pour un accompagnement sur mesure et vous conseiller à chacune des étapes de votre projet de migration, veuillez cliquer [ce lien](https://www.ovhcloud.com/fr/private-cloud-migration/).
+>
 
 Nous aborderons dans ce guide les notions d'**infrastructure d'origine** et de **Hosted Private Cloud de destination**.
 
@@ -155,13 +163,21 @@ La migration implique la recréation des groupes de ports virtuels de vRack sur 
 Voici une liste des éléments à prendre en compte:
 
 - Type de VLAN de groupe de ports
-- Paramètres de sécurité
+- Paramètres de sécurité (**Important dans le cas où le mode promiscuité (*promiscuous mode*) est nécessaire**)
 - Paramètres de Teaming et de Failover
 - Allocation des ressources réseau du client
 
 Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](../creation-vlan-vxlan/#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
 
 **Conseils d'automatisation :** L'applet de commande Powercli « Export-VDPortGroup » peut récupérer des informations de Portgroups virtuels distribués qui peuvent ensuite être importées dans le Distributed Switch de destination à l'aide de l'applet de commande « New-VDPortgroup -BackupPath ».
+
+> [!warning]
+>
+> - Certaines appliances de routage virtuel telles que pfSense utilisent CARP pour fournir de la haute disponibilité.
+> - Les VMs qui utilisent CARP auront besoin que le « *Promiscuous Mode* » soit activé dans les paramètres de sécurité d'un groupe de ports.
+> - Vous pouvez peut activer ce paramètre sur le vRack vDS du vDC de destination.
+> - Cependant, si le « *Promiscuous Mode* » doit être activé sur le portgroup « VM Network » du nouveau vDC, merci d’ouvrir un ticket auprès du support OVHcloud avant la migration, afin de maintenir la connectivité durant la migration.
+>
 
 ##### **1.7 Configuration de Veeam Backup**
 

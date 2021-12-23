@@ -18,12 +18,12 @@ Vous trouverez dans ce guide toutes les adresses IP des hébergements web OVHclo
 > [!primary]
 >
 > Les adresses IP de l'option CDN sont "Anycast".
-> C'est à dire qu'elles n'ont pas besoin de géolocalisation ([Plus d'informations ici](https://www.ovh.com/fr/hebergement-web/cdn.xml)).
+> C'est à dire qu'elles n'ont pas besoin de géolocalisation ([Plus d'informations ici](https://www.ovhcloud.com/fr/web-hosting/options/cdn/)).
 > 
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-- Posséder une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 
 ## En pratique
 

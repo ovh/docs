@@ -17,7 +17,7 @@ This OVHcloud feature allows you to set up an automatic email responder that wil
 
 ## Requirements
 
-- a [Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external} 
+- a [Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external} 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions

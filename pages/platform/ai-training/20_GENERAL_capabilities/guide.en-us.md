@@ -73,4 +73,4 @@ Only the HTTP layer is accessible.
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 

@@ -9,42 +9,42 @@ section: Getting started
 
 ## Objective
 
-For our new [Cloud Web](https://www.ovh.ie/web-hosting/cloud-web.xml) solution, we have combined 20 years of experience in web hosting with the power of our Public Cloud. Like our standard hosting plans, your websites are hosted on a service that is managed 24/7. However, [Cloud Web](https://www.ovh.ie/web-hosting/cloud-web.xml) offers an even wider range of features, and higher performance levels for hardware such as SSD disks.
+For our new [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) solution, we have combined 20 years of experience in web hosting with the power of our Public Cloud. Like our standard hosting plans, your websites are hosted on a service that is managed 24/7. However, [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) offers an even wider range of features, and higher performance levels for hardware such as SSD disks.
 
 **Find out how to get started with a Cloud Web hosting plan.**
 
 ## Requirements
 
-- a [Cloud Web hosting plan](https://www.ovh.ie/web-hosting/cloud-web.xml)
+- a [Cloud Web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/)
 - an email confirming that your hosting plan has been set up
-- a [domain name](https://www.ovh.ie/domains/) for your website
+- a [domain name](https://www.ovhcloud.com/en-ie/domains/) for your website
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
 ### Step 1: Define your project.
 
-OVH [Cloud Web](https://www.ovh.ie/web-hosting/cloud-web.xml) hosting offers a wider range of configuration options than standard web hosting plans, so that you can tailor your plan to suit your project. To ensure that your project is a success, it is important to have a clear idea of your objective. To do this, you should:
+OVH [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) hosting offers a wider range of configuration options than standard web hosting plans, so that you can tailor your plan to suit your project. To ensure that your project is a success, it is important to have a clear idea of your objective. To do this, you should:
 
 - **Define what you want to set up.** Are you creating a blog, or an online store? Do you want to share your passion, or boost your company’s online profile? It is best to define your project clearly before you get started.
 
 - **Research the technical requirements for setting up your project.** Your project may have specific technical requirements. Make sure you are aware of them in advance.
 
-- **Ensure that your project is technically compatible with Cloud Web hosting.** Need a particular runtime software type or SQL? If you have not already done so, check that what you need is available with your [Cloud Web](https://www.ovh.ie/web-hosting/cloud-web.xml) hosting plan.
+- **Ensure that your project is technically compatible with Cloud Web hosting.** Need a particular runtime software type or SQL? If you have not already done so, check that what you need is available with your [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) hosting plan.
 
 Once you have explored the various options available and carefully defined your project, you can then start getting it online.
 
 ### Step 2: Choose a runtime software application.
 
-With [Cloud Web](https://www.ovh.ie/web-hosting/cloud-web.xml), you can choose from a range of different coding languages to build your project. If you would like to use a language other than PHP, which is the default selection, you will need to select a runtime software application that corresponds to your coding language.
+With [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/), you can choose from a range of different coding languages to build your project. If you would like to use a language other than PHP, which is the default selection, you will need to select a runtime software application that corresponds to your coding language.
 
 The languages currently available are PHP and Node.js.
 
-To access the runtime software applications for your [Cloud Web](https://www.ovh.ie/web-hosting/cloud-web.xml) hosting plan, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software`{.action} tab.
+To access the runtime software applications for your [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) hosting plan, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software`{.action} tab.
 
 When you set up your hosting plan, a runtime software application will be created automatically. It is included as the `Default choice` in the table that appears. To modify a runtime software that has already been set, click on the three dots next to it, then `Modify`{.action}. 
 
-Depending on which [Cloud Web](https://www.ovh.ie/web-hosting/cloud-web.xml) hosting plan you have chosen, you can also add additional runtime software applications by clicking the `Actions`{.action} button, then `Add a runtime software application`{.action}. Please note that the maximum number of runtime software applications will vary, depending on which [Cloud Web](https://www.ovh.ie/web-hosting/cloud-web.xml) solution you have ordered.
+Depending on which [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) hosting plan you have chosen, you can also add additional runtime software applications by clicking the `Actions`{.action} button, then `Add a runtime software application`{.action}. Please note that the maximum number of runtime software applications will vary, depending on which [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) solution you have ordered.
 
 Once you have done this, please ensure that you have the runtime software application (or applications) required for your project before you continue:
 
@@ -52,7 +52,7 @@ Once you have done this, please ensure that you have the runtime software applic
 
 ### Step 3: Create environment variables (optional).
 
-If you would like to deploy your project several times in different environments (e.g. development, test and production), you will need to provide variables in order for your code to run properly. To do this, [Cloud Web](https://www.ovh.ie/web-hosting/cloud-web.xml) prompts you to define environment variables that can be accessed by the code for your website or web application.
+If you would like to deploy your project several times in different environments (e.g. development, test and production), you will need to provide variables in order for your code to run properly. To do this, [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) prompts you to define environment variables that can be accessed by the code for your website or web application.
 
 For example, this way you can leave out the .env file in the PHP Laravel framework, as described in this guide: <https://laravel.com/docs/5.6/configuration>.
 
@@ -86,7 +86,7 @@ Make sure you replace the generic information included in these scripts (e.g. DB
 
 ### Step 4: Configure the additional domains as multisites (optional).
 
-Now that the technical environment of your [Cloud Web](https://www.ovh.ie/web-hosting/cloud-web.xml) hosting plan is ready, you can configure additional domain names on it as multisites. This way, you can partition your space in order to host several websites on it, for example. If you would like to do this for your project, in the section for the Cloud Web hosting plan concerned, click on the `Multisite`{.action} tab.
+Now that the technical environment of your [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) hosting plan is ready, you can configure additional domain names on it as multisites. This way, you can partition your space in order to host several websites on it, for example. If you would like to do this for your project, in the section for the Cloud Web hosting plan concerned, click on the `Multisite`{.action} tab.
 
 The table displayed will contain all of the domain names that have been added to your hosting plan. Some of these will have been created automatically, when your hosting plan was set up. To add a new one, click on the `Add a domain or subdomain`{.action} button, and follow the instructions that appear. The method may be different, depending on whether the domain name concerned is registered with OVH. 
 
@@ -111,9 +111,9 @@ There are two ways of setting up your project. Once you have picked the techniqu
 
 #### 1. Use our 1-click modules.
 
-By using our 1-click modules, you will get a ready-to-use website template that you can customise with a variety of themes, texts, and much more. OVH offers four structures with its 1-click modules. You can find out more about them by browsing our webpage on [Creating a website with 1-click modules](https://www.ovh.ie/web-hosting/website/){.external}.
+By using our 1-click modules, you will get a ready-to-use website template that you can customise with a variety of themes, texts, and much more. OVH offers four structures with its 1-click modules. You can find out more about them by browsing our webpage on [Creating a website with 1-click modules](https://www.ovhcloud.com/en-ie/web-hosting/uc-website/){.external}.
 
-If your choice of method involves using our 1-click modules, stay on the section for the [Cloud Web](https://www.ovh.ie/web-hosting/cloud-web.xml) hosting plan concerned, click on the  `1-click modules`{.action} tab, then click `Add a module`{.action}. You can then choose whether to install it in ‘basic’ mode (non-customisable), or ‘advanced’ mode (customisable).
+If your choice of method involves using our 1-click modules, stay on the section for the [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) hosting plan concerned, click on the  `1-click modules`{.action} tab, then click `Add a module`{.action}. You can then choose whether to install it in ‘basic’ mode (non-customisable), or ‘advanced’ mode (customisable).
 
 If you need more information on OVH 1-click modules, please read our guide: [Setting up your website with 1-click modules](https://docs.ovh.com/ie/en/hosting/web_hosting_web_hosting_modules/){.external}.
 
@@ -159,7 +159,7 @@ There are several OVH DNS records. We will focus on two particular records, whic
 
 #### 2. Check and/or modify the DNS records.
 
-Now that you are more familiar with the OVH DNS records for your [Cloud Web](https://www.ovh.ie/web-hosting/cloud-web.xml) hosting plan and your OVH email solution, you can check if they have been configured properly, and edit them if required. These two changes must be made with the service provider managing your domain name’s DNS configuration (DNS zone).
+Now that you are more familiar with the OVH DNS records for your [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) hosting plan and your OVH email solution, you can check if they have been configured properly, and edit them if required. These two changes must be made with the service provider managing your domain name’s DNS configuration (DNS zone).
 
 > [!warning]
 >

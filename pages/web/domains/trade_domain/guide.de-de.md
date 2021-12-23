@@ -41,7 +41,7 @@ Neben der Angabe von [Kontakten](../../customer/verwaltung-der-kontakte/) erford
 > Wir empfehlen, im Zweifelsfall folgende Ressourcen zu Rate zu ziehen:
 >
 > - die Webseite der zuständigen TLD-Registry
-> - die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovh.de/domains/preise/)
+> - die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovhcloud.com/de/domains/tld/)
 > - den Bereich `Laufende Operationen`{.action} im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), um laufende Updates des Domainnamens zu überprüfen.
 >
 

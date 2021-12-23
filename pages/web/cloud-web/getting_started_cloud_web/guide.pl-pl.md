@@ -15,9 +15,9 @@ Oferta hostingu Cloud Web łączy w sobie 20 lat doświadczenia OVH w zakresie h
 
 ## Wymagania początkowe
 
-- Posiadanie hostingu SSD [Cloud Web](https://www.ovh.pl/hosting/cloud-web.xml)
+- Posiadanie hostingu SSD [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/)
 - Otrzymanie wiadomość e-mail z potwierdzeniem, że usługa Cloud Web została zainstalowana
-- Posiadanie [domeny](https://www.ovh.pl/domeny/), pod którą dostępna będzie Twoja strona WWW
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/), pod którą dostępna będzie Twoja strona WWW
 - Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
@@ -30,7 +30,7 @@ Hosting z dyskami SSD, Cloud Web, oferuje więcej możliwości konfiguracji niż
 
 - **pobierz wymagania techniczne niezbędne do instalacji**: istnieje możliwość, że z projektem, który chcesz zainstalować, wiążą się specyficzne wymagania techniczne.  Zapoznaj się z nimi przed instalacją;
 
-- **upewnij się, że Twój projekt jest kompatybilny z hostingiem Cloud Web**: potrzebny Ci określony framework lub SQL? Jeśli jeszcze tego nie zrobiłeś, upewnij się, że jest on dostępny wraz z Twoim hostingiem [Cloud Web](https://www.ovh.pl/hosting/cloud-web.xml).
+- **upewnij się, że Twój projekt jest kompatybilny z hostingiem Cloud Web**: potrzebny Ci określony framework lub SQL? Jeśli jeszcze tego nie zrobiłeś, upewnij się, że jest on dostępny wraz z Twoim hostingiem [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/).
 
 Po wybraniu różnych możliwości i określeniu ram Twojego projektu możesz przystąpić do jego umieszczenia w sieci.
 
@@ -44,7 +44,7 @@ Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do
 
 Framework jest automatycznie tworzony podczas instalacji hostingu. Oznaczony jest jako `Wybór domyślny` w tabeli, która się wyświetli. Aby zmodyfikować wcześniej skonfigurowany framework, kliknij trzy kropki po jego prawej stronie, a następnie `Modyfikuj`{.action}. 
 
-Możesz również dodawać frameworki, jeśli pozwala na to wybrana oferta [Cloud Web](https://www.ovh.pl/hosting/cloud-web.xml). W tym celu kliknij przycisk `Operacje`{.action}, a następnie `Dodaj framework`{.action}. Pamiętaj, że maksymalna liczba frameworków zależy od oferty Cloud Web, którą zamówiłeś.
+Możesz również dodawać frameworki, jeśli pozwala na to wybrana oferta [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/). W tym celu kliknij przycisk `Operacje`{.action}, a następnie `Dodaj framework`{.action}. Pamiętaj, że maksymalna liczba frameworków zależy od oferty Cloud Web, którą zamówiłeś.
 
 Zanim przejdziesz do kolejnych kroków, upewnij się, że posiadasz framework lub frameworki niezbędne do Twojego projektu.
 
@@ -111,7 +111,7 @@ Aby zainstalować Twój projekt, masz do dyspozycji dwie możliwości. Powtarzaj
 
 #### 1. Użycie modułów CMS OVH
 
-W tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVH proponuje cztery moduły CMS, o których możesz dowiedzieć się więcej na stronie [„Twoja strona WWW dzięki modułom CMS”](https://www.ovh.pl/hosting/website/){.external}.
+W tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVH proponuje cztery moduły CMS, o których możesz dowiedzieć się więcej na stronie [„Twoja strona WWW dzięki modułom CMS”](https://www.ovhcloud.com/pl/web-hosting/uc-website/){.external}.
 
 Jeśli decydujesz się na skorzystanie z modułów CMS OVH, kliknij zakładkę `Moduły CMS`{.action}, a następnie `Dodaj moduł`{.action}.  Będziesz mógł wówczas rozpocząć instalację w trybie „podstawowym” (bez personalizacji) lub „zaawansowanym” (z możliwością personalizacji niektórych elementów).
 

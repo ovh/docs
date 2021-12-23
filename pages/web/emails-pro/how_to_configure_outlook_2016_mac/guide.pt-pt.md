@@ -22,7 +22,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 ## Requisitos
 
-- Ter o serviço [Email Pro](https://www.ovh.pt/emails/email-pro/){.external}.
+- Ter o serviço [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
 - Ter a aplicação Microsoft Outlook instalada no seu dispositivo Mac.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 

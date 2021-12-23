@@ -16,7 +16,7 @@ If you wish to increase the security on your Exchange account, you can enable tw
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](https://www.ovh.ie/emails/hosted-exchange) already set up
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) already set up
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - an OTP mobile application installed on your Android or iOS smartphone or tablet
 

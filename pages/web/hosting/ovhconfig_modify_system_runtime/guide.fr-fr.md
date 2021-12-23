@@ -10,13 +10,13 @@ order: 3
 
 ## Objectif
 
-Sur le web, il existe une multitude de sites internet. Qu’il s’agisse de créer un blog ou une boutique en ligne, de partager une passion ou de promouvoir une activité professionnelle, votre [hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external} vous permet d’héberger le site internet que vous souhaitez, dans la mesure où celui-ci est compatible avec la [configuration de nos infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
+Sur le web, il existe une multitude de sites internet. Qu’il s’agisse de créer un blog ou une boutique en ligne, de partager une passion ou de promouvoir une activité professionnelle, votre [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} vous permet d’héberger le site internet que vous souhaitez, dans la mesure où celui-ci est compatible avec la [configuration de nos infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Apprenez à modifier la configuration de votre hébergement web OVHcloud depuis votre espace client.**
 
 ## Prérequis
 
-- Disposer d’une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external} (sauf Cloud Web).
+- Disposer d’une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} (sauf Cloud Web).
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
@@ -99,7 +99,7 @@ Une fois votre choix effectué, il existe deux possibilités pour réaliser ce c
 
 #### Version de PHP
 
-Il existe aujourd'hui plusieurs versions du langage de programmation PHP. Comme à l'accoutumée, les évolutions de versions apportent des correctifs divers ainsi que l'ajout ou l'arrêt de fonctionnalités. OVHcloud propose les dernières versions majeures de PHP dont vous pouvez retrouver la liste en cliquant sur ce lien : <https://www.ovh.com/fr/hebergement-web/php.xml>. 
+Il existe aujourd'hui plusieurs versions du langage de programmation PHP. Comme à l'accoutumée, les évolutions de versions apportent des correctifs divers ainsi que l'ajout ou l'arrêt de fonctionnalités. OVHcloud propose les dernières versions majeures de PHP dont vous pouvez retrouver la liste en cliquant sur ce lien : <https://www.ovhcloud.com/fr/web-hosting/uc-programming-language/>. 
 
 Du fait que certaines fonctionnalités peuvent ne pas être maintenues au fil des nouvelles versions, **assurez-vous avant d'entamer tout changement que la nouvelle version de PHP souhaitée est compatible avec votre site internet.**
 

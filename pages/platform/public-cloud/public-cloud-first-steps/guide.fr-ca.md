@@ -116,7 +116,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 
 [PuTTY](https://putty.org/){.external} est un logiciel client SSH Open Source doté d'une interface utilisateur graphique, disponible sous Windows et d'autres OS. Vous pouvez l'utiliser pour vous connecter à distance à un serveur Linux. Son logiciel compagnon, PuTTY Key Generator (PuTTYgen), peut être utilisé pour créer des clés SSH.
 
-Tout d'abord, téléchargez PuTTY depuis le [site Web officiel](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), s'il n'est pas déjà installé. Le package d'installation standard recommandé inclut PuTTYgen, mais il est également disponible en tant que fichier standalone. Pour déterminer si PuTTY estdéj disponible sur votre poste de travail, consultez le menu « Programmes » ou utilisez la recherche Windows.
+Tout d'abord, téléchargez PuTTY depuis le [site Web officiel](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), s'il n'est pas déjà installé. Le package d'installation standard recommandé inclut PuTTYgen, mais il est également disponible en tant que fichier standalone. Pour déterminer si PuTTY est déjà disponible sur votre poste de travail, consultez le menu « Programmes » ou utilisez la recherche Windows.
 
 Ouvrez PuTTYgen et sélectionnez un algorithme de chiffrement pris en charge. L'exemple ci-dessous utilise RSA. Entrez 4096 comme nombre de bits, puis cliquez sur le bouton `Generate`{.action}.
 
@@ -202,11 +202,9 @@ L'étape 4 permet de configurer des options supplémentaires.
 - Vous pouvez connecter les instances à un réseau privé existant (vRack).
 - Vous pouvez activer les sauvegardes automatiques pour vos instances. Tenez compte des informations relatives aux prix et aux options de rotation.
 
-When you have applied your choices, click `Next`{.action} to proceed to the final step and decide on a billing method.
+Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour passer à la dernière étape et définir votre mode de facturation.
 
 ![billing select](images/instance-creation-05.png){.thumbnail}
-
-Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour passer à la dernière étape et définir votre mode de facturation.
 
 > [!warning]
 >

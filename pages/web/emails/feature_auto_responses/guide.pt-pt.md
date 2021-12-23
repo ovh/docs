@@ -21,14 +21,14 @@ Em caso de ausência no seu escritório, pode configurar um respondedor de e-mai
 
 ## Requisitos
 
-- Dispor do serviço MX Plan Está disponível através de: um plano de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, o [alojamento gratuito Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external} incluído com um domínio (previamente ativado) ou a oferta MX Plan encomendada separadamente.
+- Dispor do serviço MX Plan Está disponível através de: um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, o [alojamento gratuito Start 10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} incluído com um domínio (previamente ativado) ou a oferta MX Plan encomendada separadamente.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 > [!primary]
 >
-> Se o seu endereço de e-mail estiver numa oferta [**Exchange**](https://www.ovh.pt/emails/hosted-exchange/), [**Email Pro**](https://www.ovh.pt/emails/email-pro/) ou não existir nenhuma secção de `Gestão das respostas automáticas`{.action} no seu MXplan, deverá criar a resposta automática a partir do seu webmail, ajudando-o na documentação ["Criar uma resposta automática a partir da interface OWA"](../../microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/).
+> Se o seu endereço de e-mail estiver numa oferta [**Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/) ou não existir nenhuma secção de `Gestão das respostas automáticas`{.action} no seu MXplan, deverá criar a resposta automática a partir do seu webmail, ajudando-o na documentação ["Criar uma resposta automática a partir da interface OWA"](../../microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/).
 
 ### Criação da resposta automática
 

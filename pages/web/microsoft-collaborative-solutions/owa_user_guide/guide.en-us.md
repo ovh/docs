@@ -16,7 +16,7 @@ With OVHcloud Hosted Exchange you can send and receive your emails using a devic
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovh.com/world/web-hosting/), or [**Hosted Exchange**](https://www.ovh.com/world/emails/hosted-exchange/))
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en/web-hosting/), or [**Hosted Exchange**](https://www.ovhcloud.com/en/emails/hosted-exchange/))
 - login credentials for the email address you want to configure
 
 ## Instructions

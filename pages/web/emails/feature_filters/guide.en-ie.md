@@ -23,7 +23,7 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 
 ## Requirements
 
-- an MX Plan email solution or a [Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} 
+- an MX Plan email solution or a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 

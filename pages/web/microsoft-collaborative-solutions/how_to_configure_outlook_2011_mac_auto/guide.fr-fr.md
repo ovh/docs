@@ -9,7 +9,7 @@ hidden: true
 
 Avant de réaliser ces manipulations, assurez-vous que le champ SRV de votre nom de domaine est correctement configuré.
 
-Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides.
+Cliquez [ici](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external} pour retrouver nos différents guides.
 
 
 > [!warning]

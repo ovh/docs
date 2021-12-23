@@ -22,7 +22,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients und We
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [E-Mail Pro](https://www.ovh.de/emails/email-pro/) Lösung.
+- Sie verfügen über eine [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Lösung.
 - Sie haben die Login-Daten des E-Mail Pro Accounts, den Sie einrichten möchten.
 - Sie haben die Login-Daten des Gmail-Accounts, auf dem Sie den E-Mail Pro Account einrichten möchten.
 

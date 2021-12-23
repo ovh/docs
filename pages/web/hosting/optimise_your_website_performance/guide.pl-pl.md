@@ -18,9 +18,9 @@ Zawiera podstawowe informacje o tym, co wpływa na wydajność witryn internetow
 > W tym przykładzie zastosowania opisano korzystanie z rozwiązań OVHcloud wraz z narzędziami zewnętrznymi oraz działania do wykonania w konkretnym kontekście. Działania te trzeba dostosować do poszczególnych sytuacji. W przypadku trudności z wykonaniem działań należy się skontaktować z dostawcą konkretnych usług i/lub omówić problem ze społecznością na stronie <https://community.ovh.com/en/>. OVHcloud nie może zapewnić wsparcia technicznego w tym zakresie.
 
 ## Wymagania początkowe
-- [plan hostingu WWW OVHcloud](https://www.ovh.pl/hosting/){.external}
+- [plan hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - e-mail potwierdzający skonfigurowanie planu hostingu WWW
-- [nazwa domeny](https://www.ovh.pl/domeny/){.external} umożliwiająca dostęp do witryny internetowej
+- [nazwa domeny](https://www.ovhcloud.com/pl/domains/){.external} umożliwiająca dostęp do witryny internetowej
 - dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
@@ -43,9 +43,9 @@ Odpowiedzi na te pytania pomogą skoncentrować się na konkretnych kwestiach i 
 
 Do korzystania z systemów zarządzania treścią (CMS), takich jak WordPress, PrestaShop, Joomla! czy Drupal, jest potrzebnych wiele bibliotek, aby jedna strona internetowa mogła obsłużyć wiele elementów.
 Przeglądarki internetowe muszą załadować i odczytać te wszystkie elementy.
-Na [stronie produktu](https://www.ovh.pl/hosting/){.external} przestawiamy oferty hostingu WWW zalecane do wskazanych powyżej systemów CMS.
+Na [stronie produktu](https://www.ovhcloud.com/pl/web-hosting/){.external} przestawiamy oferty hostingu WWW zalecane do wskazanych powyżej systemów CMS.
 
-Więcej informacji na temat wyboru właściwego planu znajdziesz na [tej stronie](https://www.ovh.pl/hosting/jaki_hosting_wybrac.xml){.external}.
+Więcej informacji na temat wyboru właściwego planu znajdziesz na [tej stronie](https://www.ovhcloud.com/pl/web-hosting/uc-best-web-hosting/){.external}.
 
 
 ### Krok 2: sprawdzenie wersji PHP
@@ -145,7 +145,7 @@ Poznaj [nasze rozwiązanie CDN](https://www.ovh.pl/cdn/){.external}.
 
 _Ten krok jest opcjonalny, jeśli nie korzystasz z systemu CMS._
 
-Aby mieć pewność, że korzystasz z oferty hostingu dopasowanej do potrzeb Twojego systemu CMS, zapoznaj się z porównaniem usług na [stronie produktu](https://www.ovh.pl/hosting/){.external}.
+Aby mieć pewność, że korzystasz z oferty hostingu dopasowanej do potrzeb Twojego systemu CMS, zapoznaj się z porównaniem usług na [stronie produktu](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 
 - **Korzystanie z wtyczki pamięci podręcznej:** Korzystanie z systemów zarządzania treścią (CMS) wiąże się z odwołaniami do wielu bibliotek, aby na jednej stronie internetowej mogło działać mnóstwo elementów. W celu optymalizacji systemu CMS zaleca się korzystanie z wtyczek pamięci podręcznej. Dzięki temu treść witryny internetowej nie musi być ponownie generowana przy każdym ładowaniu strony. Zalecamy wyszukanie wskazówek dotyczących wtyczek pamięci podręcznej w witrynach społeczności używanego systemu CMS (PrestaShop, WordPress, Joomla!). Pozwoli to uniknąć ponownego generowania całej treści witryny przy każdym załadowaniu strony internetowej.
 
@@ -218,7 +218,7 @@ Na przykład klauzuli „HAVING”, która może spowolnić zapytania. Nie używ
 
 #### Prywatna baza SQL
 Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, albo jeśli liczba zapytań do bazy danych jest bardzo duża, możesz skorzystać z oferty prywatnej bazy danych SQL — Private SQL. Będziesz mieć do dyspozycji więcej zasobów.
-Porównanie ofert znajdziesz na [stronie produktu](https://www.ovh.pl/hosting/opcje-sql.xml){.external}.
+Porównanie ofert znajdziesz na [stronie produktu](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/){.external}.
 
 ## Sprawdź również
 

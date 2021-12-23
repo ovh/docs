@@ -10,15 +10,15 @@ order: 2
 
 ## Objective
 
-There are a multitude of different websites on the internet. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVH Web Hosting space](https://www.ovh.ie/web-hosting/){.external} lets you host the site you want, provided it is compatible with the [configuration of our infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
+There are a multitude of different websites on the internet. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVH Web Hosting space](https://www.ovhcloud.com/en-ie/web-hosting/){.external} lets you host the site you want, provided it is compatible with the [configuration of our infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Learn how to publish a website on your OVH Web Hosting space.**
 
 ## Requirements
 
-- You must have an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}.
+- You must have an [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}.
 - You must have received an email confirming that your Web Hosting plan has been set up.
-- You must have a [domain name](https://www.ovh.ie/domains/){.external} that can be used to access your website.
+- You must have a [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} that can be used to access your website.
 - You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Instructions
@@ -27,7 +27,7 @@ There are a multitude of different websites on the internet. Whether you are cre
 
 Having a clear idea of your objective is essential if your project is to be a success. What do you want to do with your website? How will you publish it? There are several potential ways to make your project become a reality with your OVH Web Hosting plan:
 
-- **Use a turn-key site, with OVH’s 1-click modules.** This solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). OVH offers four such 1-click modules, compatible with our infrastructures, on the [“Create a website with 1-click modules”](https://www.ovh.ie/web-hosting/website/){.external} page.
+- **Use a turn-key site, with OVH’s 1-click modules.** This solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). OVH offers four such 1-click modules, compatible with our infrastructures, on the [“Create a website with 1-click modules”](https://www.ovhcloud.com/en-ie/web-hosting/uc-website/){.external} page.
 
 - **Use a turn-key website that you install manually.** This solution gives you the benefit of a ready-made website structure that you can customise (themes, text, etc.), which you install yourself on your OVH Web Hosting space.
 
@@ -72,7 +72,7 @@ Once you are in possession of all the elements, you have three different options
 
 - **Use FTP-compatible software.** You will need to install an FTP-compatible program on your computer (e.g. FileZilla). Since OVH did not create the software package you have installed, please contact its publisher if you encounter any difficulties when using it.
 
-- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} are required to use this type of access.
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} are required to use this type of access.
 
 #### 3. Uploading the files to the storage space
 
@@ -101,7 +101,7 @@ If you are migrating an existing website, you can recover your existing database
 
 #### 2. Create the database with OVH (optional)
 
-If you already have a database and wish to use it (from an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}, a [Private SQL](https://www.ovh.ie/web-hosting/sql-options.xml){.external}, or a [Cloud DB](https://www.ovh.ie/cloud/cloud-databases/){.external}) you will need your username and password, the name of the database and the address of the server. You can now proceed to the next step.
+If you already have a database and wish to use it (from an [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, a [Private SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/){.external}, or a [Cloud DB](https://www.ovh.ie/cloud/cloud-databases/){.external}) you will need your username and password, the name of the database and the address of the server. You can now proceed to the next step.
 
 If you want to create a new database with OVH, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, then click on `Hosting plans`{.action} in the services bar on the left. Select the name of the hosting plan concerned and click on the `Database`{.action} tab.
 

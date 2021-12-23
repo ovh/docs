@@ -27,7 +27,7 @@ No seu alojamento Web OVHcloud, pode utilizar scripts para automatizar certas op
 
 ## Requisitos
 
-- Ter um serviço de [alojamento Web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/).
+- Ter um serviço de [alojamento Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções

@@ -26,7 +26,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 ## Prérequis
 
-- Disposer d’une adresse e-mail [Exchange](https://www.ovh.com/fr/emails/hosted-exchange/).
+- Disposer d’une adresse e-mail [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/).
 - Disposer du logiciel Thunderbird installé sur votre Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
  

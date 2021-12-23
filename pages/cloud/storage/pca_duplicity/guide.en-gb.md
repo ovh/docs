@@ -3,6 +3,7 @@ title: Manage your archives with duplicity
 slug: pca/duplicity
 excerpt: Archive your data in PCA with duplicity
 section: Public Cloud Archive
+order: 110
 ---
 
 

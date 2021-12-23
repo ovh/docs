@@ -16,7 +16,7 @@ Uw OVH webhosting geeft u toegang tot opslagruimte waarop u uw websites kunt hos
 
 ## Vereisten
 
-- U moet beschikken over een [webhostingplan](https://www.ovh.nl/shared-hosting/){.external} (behalve Cloud Web).
+- U moet beschikken over een [webhostingplan](https://www.ovhcloud.com/nl/web-hosting/){.external} (behalve Cloud Web).
 - Afhankelijk van de gebruikte methode, moet u toegang hebben tot een webhostingplan vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, of een FTP-gebruikerswachtwoord waarmee u zich kunt inloggen op uw opslagruimte. 
 
 ## Instructies

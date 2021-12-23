@@ -11,13 +11,13 @@ order: 4
 
 ## Introductie
 
-Onder bepaalde omstandigheden kan het nodig zijn om specifieke wijzigingen aan te brengen aan uw [webhosting](https://www.ovh.nl/shared-hosting/){.external}. Om u te helpen heeft OVH een **.ovhconfig**-bestand verstrekt, waarmee u bepaalde instellingen kunt bewerken.
+Onder bepaalde omstandigheden kan het nodig zijn om specifieke wijzigingen aan te brengen aan uw [webhosting](https://www.ovhcloud.com/nl/web-hosting/){.external}. Om u te helpen heeft OVH een **.ovhconfig**-bestand verstrekt, waarmee u bepaalde instellingen kunt bewerken.
 
 Deze handleiding beschrijft hoe het .ovhconfig-bestand kan worden gewijzigd. 
 
 ## Vereisten
 
-- U moet beschikken over een [OVH webhostingplan](https://www.ovh.nl/shared-hosting/){.external} (met uitzondering van Cloud Web).
+- U moet beschikken over een [OVH webhostingplan](https://www.ovhcloud.com/nl/web-hosting/){.external} (met uitzondering van Cloud Web).
 - U moet beschikken over het wachtwoord van de FTP-gebruiker voor toegang tot uw opslagruimte. 
 
 ## Instructie
@@ -72,8 +72,8 @@ Personaliseer deze variabelen aan de hand van de configuratie die voor uw websit
 |Variabelen|Details|
 |---|---|
 |app.engine|Hiermee kan de PHP-motor worden gebruikt door uw website. Voer 'php' in om de PHP-FPM versneller in te schakelen en 'phpcgi' om het uit te schakelen.|
-|app.engine.version|Kies de PHP-versie die wordt gebruikt door de webhosting. U kunt [hier](https://www.ovh.nl/shared-hosting/php.xml){.external} een lijst met beschikbare versies vinden. Voer de gewenste versie in.|
-|http.firewall|Hiermee kunt u de bij OVH webhosting aangeboden [firewall](https://www.ovh.nl/shared-hosting/mod_security.xml){.external} in- of uitschakelen Voer 'security' in voor activering of 'none' om het te deactiveren.|
+|app.engine.version|Kies de PHP-versie die wordt gebruikt door de webhosting. U kunt [hier](https://www.ovhcloud.com/nl/web-hosting/uc-programming-language/){.external} een lijst met beschikbare versies vinden. Voer de gewenste versie in.|
+|http.firewall|Hiermee kunt u de bij OVH webhosting aangeboden [firewall](https://www.ovhcloud.com/nl/web-hosting/options/){.external} in- of uitschakelen Voer 'security' in voor activering of 'none' om het te deactiveren.|
 |environment|Hiermee kunt u uw cachegedrag beheren met statische bestanden op uw webpagina en PHP-fouten verwerken. Voer 'production' in om het cachen te maximaliseren en PHP-fouten te verbergen of 'development' opdat er geen caching wordt toegepast en PHP-fouten worden weergegeven....|
 |container.image|Hiermee kunt u de omgeving wijzigen die door uw website wordt gebruikt. Voer de gewenste motor in. U kunt deze vinden in onze handleiding: [De configuratie van uw webhosting bewerken](https://docs.ovh.com/nl/hosting/bewerking-omgeving-webhosting-configuratie/){.external}.|
 

@@ -9,7 +9,7 @@ hidden: true
 ## Informacje ogolne
 Baza danych (w skrócie "BD") to zorganizowany zbiór dużych ilości danych pozwalający na ich dodawanie, aktualizowanie i wyszukiwanie.
 
-Liczba baz danych oraz ich maksymalny rozmiar zależy od oferty hostingu www. Nasza oferta jest dostępna  [tutaj](https://www.ovh.pl/hosting/){.external}.
+Liczba baz danych oraz ich maksymalny rozmiar zależy od oferty hostingu www. Nasza oferta jest dostępna  [tutaj](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 
 OVH nie pozwala na łączenie się z zewnątrz z bazą danych utworzoną na hostingu www. Można się z nią łączyć tylko z hostingu www OVH.
 

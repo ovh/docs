@@ -18,7 +18,7 @@ Grâce à cette fonction d’Exchange, autorisez l'accès à vos calendriers par
 
 ## Prérequis
 
-- Avoir souscrit une offre [solution Exchange OVHcloud](https://www.ovh.com/ca/fr/emails/hosted-exchange/) 
+- Avoir souscrit une offre [solution Exchange OVHcloud](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/) 
 - Avoir accès à votre compte Exchange (adresse e-mail et mot de passe)
 
 ## En pratique

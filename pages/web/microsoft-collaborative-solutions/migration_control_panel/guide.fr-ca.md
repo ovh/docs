@@ -17,8 +17,8 @@ OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dan
 
 ## Prérequis
 
-- Disposer d'une adresse e-mail MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}).
-- Disposer d'un service [Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external} avec au minimum un compte non configuré (qui apparaîtra sous la forme « @configureme.me »).
+- Disposer d'une adresse e-mail MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}).
+- Disposer d'un service [Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external} avec au minimum un compte non configuré (qui apparaîtra sous la forme « @configureme.me »).
 - **Ne pas avoir paramétré de redirection sur l'adresse e-mail MX Plan que vous souhaitez migrer**.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
@@ -26,7 +26,7 @@ OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dan
 
 ### Étape 1 : délimiter votre projet
 
-Avec une adresse Exchange, vous pouvez utiliser des fonctionnalités collaboratives, telles que les calendriers et la synchronisation des contacts. Veuillez consulter la [page de l'offre Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/) pour obtenir une liste détaillée des fonctionnalités.
+Avec une adresse Exchange, vous pouvez utiliser des fonctionnalités collaboratives, telles que les calendriers et la synchronisation des contacts. Veuillez consulter la [page de l'offre Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/) pour obtenir une liste détaillée des fonctionnalités.
 
 Si vous devez migrer plusieurs comptes, nous vous conseillons de mettre en place un plan de migration.
 

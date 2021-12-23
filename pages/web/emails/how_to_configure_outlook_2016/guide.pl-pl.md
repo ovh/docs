@@ -29,7 +29,7 @@ Konta MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów poc
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](https://www.ovh.pl/hosting/){.external})
+- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
 - Posiadanie programu Microsoft Outlook 2016 lub późniejszego.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
  

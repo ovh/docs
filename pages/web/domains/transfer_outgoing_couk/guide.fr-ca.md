@@ -27,7 +27,7 @@ Le processus de changement de bureau d'enregistrement (*registrar*) pour les dom
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine .uk](https://www.ovh.com/ca/fr/domaines/) enregistré chez OVHcloud
+- Disposer d'un [nom de domaine .uk](https://www.ovhcloud.com/fr-ca/domains/) enregistré chez OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et disposer des droits nécessaires pour gérer le nom de domaine (être administrateur du domaine)
 - Le nom de domaine doit être toujours actif, c'est-à-dire qu'il ne doit pas avoir expiré ou être bloqué par OVHcloud
 - Le nom de domaine ne doit pas faire l’objet d’un litige en cours auprès du [Registre Nominet](https://www.nominet.uk/)

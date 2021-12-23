@@ -23,7 +23,7 @@ Il est possible de voir apparaître sur votre navigateur Internet la page d'erre
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/)
+- Disposer d'une [offre d'hébergement mutualisé](https://www.ovhcloud.com/fr/web-hosting/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Disposer également de la gestion de la [Zone DNS](../../domains/editer-ma-zone-dns/) à laquelle est rattachée votre nom de domaine.
 

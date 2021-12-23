@@ -16,7 +16,7 @@ La solución de alojamiento web permite disfrutar de direcciones de correo elect
 
 ## Requisitos
 
-- Tener una solución MX Plan, incluida en un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/).
+- Tener una solución MX Plan, incluida en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/).
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento

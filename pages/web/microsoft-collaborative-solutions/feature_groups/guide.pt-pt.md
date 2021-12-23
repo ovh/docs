@@ -19,7 +19,7 @@ Os grupos Exchange permitem que vários participantes comuniquem ao enviarem ema
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- Dispor de uma [solução Exchange OVHcloud](https://www.ovh.pt/emails/hosted-exchange/).
+- Dispor de uma [solução Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
 
 
 ## Instruções

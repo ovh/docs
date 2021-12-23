@@ -25,7 +25,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ## Prérequis
 
-- Disposer d'un [compte E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external}.
+- Disposer d'un [compte E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external}.
 - Disposer de l’application Mail installée sur votre appareil iOS.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -69,7 +69,7 @@ Si vous êtes amené à renseigner manuellement des champs techniques dans les p
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose également une application web disposant des [fonctions collaboratives](https://www.ovh.com/fr/emails/){.external} accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
+OVHcloud propose également une application web disposant des [fonctions collaboratives](https://www.ovhcloud.com/fr/emails/){.external} accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
 
 > [!primary]
 >

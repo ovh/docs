@@ -16,7 +16,7 @@ Wenn Sie eine E-Mail erhalten haben, die darauf hinweist, dass eine Ihrer E-Mail
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [OVHcloud E-Mail-Dienst](https://www.ovh.de/emails/).
+- Sie verfügen über einen [OVHcloud E-Mail-Dienst](https://www.ovhcloud.com/de/emails/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

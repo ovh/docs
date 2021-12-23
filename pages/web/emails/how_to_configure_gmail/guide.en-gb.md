@@ -23,7 +23,7 @@ You can configure MX Plan email addresses on email clients and online interfaces
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution and [OVHcloud Web Hosting plans](https://www.ovh.co.uk/web-hosting/){.external})
+- an MX Plan email address (included in the MX Plan solution and [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/){.external})
 - credentials for the OVHcloud email address you want to configure
 - credentials for the Gmail account you want to configure the OVHcloud email address on
 

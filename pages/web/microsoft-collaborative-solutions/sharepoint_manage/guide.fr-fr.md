@@ -18,7 +18,7 @@ Les offres SharePoint permettent de bénéficier d'un espace de stockage partag�
 ## Prérequis
 
 - Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Avoir souscrit à une plateforme [Hosted Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external} pour la commande d'une plateforme SharePoint associée.
+- Avoir souscrit à une plateforme [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external} pour la commande d'une plateforme SharePoint associée.
 
 ## En pratique
 

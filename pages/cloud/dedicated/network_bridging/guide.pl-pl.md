@@ -108,7 +108,7 @@ Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby za
 
 - Poprzednie dystrybucje:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -123,7 +123,7 @@ iface eth0 inet static
 
 - Najnowsze dystrybucje:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -138,7 +138,7 @@ iface eth0 inet static
 
 Zastąp również `eth0`, jeśli system używa przewidywanych nazw interfejsów sieciowych. Nazwy interfejsów sieciowych znajdziesz za pomocą polecenia:
 
-```sh
+```bash
 ls /sys/class/net
 ```
 
@@ -148,7 +148,7 @@ Zapisz i zamknij plik, a następnie uruchom ponownie wirtualną maszynę.
 
 Otwórz terminal na swojej wirtualnej maszynie. Po zalogowaniu otwórz plik konfiguracyjny sieci wirtualnej maszyny. Znajduje się on w `/etc/network/interfaces`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
 
-```sh
+```console
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
@@ -167,7 +167,7 @@ Teraz zapisz i zamknij plik.
 
 Następnie otwórz plik routingu maszyny wirtualnej. Znajduje się on w `/etc/sysconfig/network-scripts/route-eth`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
 
-```bash
+```console
 GATEWAY_IP dev eth0
 default via GATEWAY_IP dev eth0
 ```
@@ -183,7 +183,7 @@ Zapisz i zamknij plik, a następnie uruchom ponownie wirtualną maszynę.
 
 Otwórz terminal na swojej wirtualnej maszynie. Po zalogowaniu otwórz plik konfiguracyjny sieci wirtualnej maszyny, który znajduje się w `/etc/sysconfig/network-scripts/ifcfg-(nazwa interfejsu)`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
 
-```sh
+```console
 DEVICE=(interface-name)
 BOOTPROTO=none
 ONBOOT=yes
@@ -202,7 +202,7 @@ Zapisz i zamknij plik.
 
 Następnie otwórz plik routingu wirtualnej maszyny, który znajduje się w `/etc/sysconfig/network-scripts/route-(nazwa interfejsu)`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
 
-```bash
+```console
 GATEWAY_IP - 169.254.10.254 (nazwa interfejsu)
 NETWORK_GW_VM - 255.255.255.0 (wpisz nazwę interfejsu)
 default GATEWAY_IP
@@ -212,7 +212,7 @@ Zapisz i zamknij plik.
 
 Następnie otwórz plik routingu maszyny wirtualnej. Znajduje się on w `/etc/sysconfig/network/resolv.conf`.
 
-```bash
+```console
 nameserver 213.186.33.99
 ```
 
@@ -222,7 +222,7 @@ Po zarejestrowaniu i zamknięciu pliku uruchom ponownie sieć lub wirtualną mas
 
 Otwórz terminal na swojej wirtualnej maszynie. Po zalogowaniu otwórz plik konfiguracyjny sieci wirtualnej maszyny znajdujący się w katalogu `/etc/rc.conf`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. W tym przykładzie nazwa interfejsu to "em0". W razie potrzeby możesz go zmienić.
 
-```bash
+```console
 ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
 static_routes="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
@@ -231,7 +231,7 @@ route_net2="default GATEWAY_IP"
 
 Zapisz i zamknij plik. Następnie edytuj plik `/etc/resolv.conf`. Utwórz je, jeśli potrzebujesz.
 
-```sh
+```console
 nameserver 213.186.33.99
 ```
 
@@ -241,13 +241,13 @@ Zapisz i zamknij plik, a następnie uruchom ponownie wirtualną maszynę.
 
 Po pierwsze, połącz się przez SSH ze swoją wirtualną maszyną i otwórz plik konfiguracyjny sieci znajdujący się w `/etc/netplan/` za pomocą polecenia. Nasz plik nazywa się "50-cloud-init.yaml".
 
-```sh
+```bash
 # nano /etc/netplan/50-cloud-init.yaml
 ```
 
 Po otworzeniu pliku zmień go o następujący kod:
 
-```sh
+```yaml
 network:
     ethernets:
         (nom-interface) :
@@ -267,7 +267,7 @@ network:
 
 Po przeprowadzeniu modyfikacji, zapisz i zamknij plik, a następnie wprowadź następującą komendę:
 
-```sh
+```bash
 # netplan try
 Warning: Stopping systemd-networkd.service, but it can still be activated by:
   systemd-networkd.socket

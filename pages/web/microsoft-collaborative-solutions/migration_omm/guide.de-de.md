@@ -15,7 +15,7 @@ Der [OVH Mail Migrator](https://omm.ovh.net/){.external} ist ein von OVH entwick
 
 ## Voraussetzungen
 
-- Sie haben einen E-Mail-Dienst bei OVH, beispielsweise [Exchange](https://www.ovh.de/emails/hosted-exchange/){.external}, [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} oder MX Plan (aus dem MX Plan Angebot oder als Teil eines [OVH Webhostings](https://www.ovh.de/hosting/){.external}).
+- Sie haben einen E-Mail-Dienst bei OVH, beispielsweise [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external}, [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/){.external} oder MX Plan (aus dem MX Plan Angebot oder als Teil eines [OVH Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external}).
 - Sie verfügen über die Login-Daten für die E-Mail-Accounts, die Sie migrieren möchten (Quell-Accounts).
 - Sie verfügen über die Login-Daten der OVH E-Mail-Accounts, auf die Sie die Inhalte übertragen möchten (Ziel-Accounts).
 

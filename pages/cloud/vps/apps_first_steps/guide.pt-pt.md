@@ -37,7 +37,7 @@ Encontrará abaixo as primeiras etapas relativas à implementação da imagem pr
 
 > [!primary]
 >
-> Se a ligação já expirou, ligue-se ao seu VPS via SSH usando o utilizador CentOS e execute o comando "whmlogin" para gerar uma nova ligação.
+> Se a ligação já expirou, ligue-se ao seu VPS via SSH usando o utilizador CentOS e execute o comando « sudo whmlogin » para gerar uma nova ligação.
 >
 
 <ol start="3">
@@ -53,7 +53,7 @@ Não é necessário mais nenhuma etapa para terminar a primeira configuração d
 > [!faq]
 >
 > Posso utilizar os meus próprios servidores DNS?
->> Sim, podem. Certifique-se de que criou os registos "GLUE" com o seu agente de registo de domínio. Por exemplo, se deseja "ns1.mydomain.com" e "ns2.mydomain.com", deve configurar os registos "GLUE" para que ambos apontem para o endereço IP do seu servidor. Se o seu domínio estiver registado com a OVHcloud, pode seguir [este guia.](../../domains/glue_registry/#1-adicionar-os-registos-glue). Note que a criação pode levar 24 horas.
+>> Sim, podem. Certifique-se de que criou os registos "GLUE" com o seu agente de registo de domínio. Por exemplo, se deseja "ns1.mydomain.com" e "ns2.mydomain.com", deve configurar os registos "GLUE" para que ambos apontem para o endereço IP do seu servidor. Se o seu domínio estiver registado com a OVHcloud, pode seguir [este guia](../../domains/glue_registry/#1-adicionar-os-registos-glue). Note que a criação pode levar 24 horas.
 > Porquê definir a password root?
 >> O WHM utiliza de forma padrão o utilizador root para a autenticação. O URL de utilização única permite aceder à primeira configuração e modificar a palavra-passe root. Na próxima vez que aceder ao WHM, deverá utilizar o utilizador root e a palavra-passe que definiu.
 > Onde está a minha licença para o cPanel?
@@ -71,8 +71,6 @@ Encontrará abaixo os primeiros passos para a implementação da imagem pré-ins
     b) Uma nova palavra-passe para o utilizador "admin" que irá utilizar para se ligar à interface do Plesk.  
     c) Informações sobre a licença.*  
     d) Ler e aceitar os contratos de licença do utilizador.  
-
-No further steps are necessário ary to complete the first configuration of this application.
 
 Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
 

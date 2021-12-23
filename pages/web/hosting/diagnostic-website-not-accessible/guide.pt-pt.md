@@ -120,7 +120,7 @@ Nesta etapa, vai encontrar o endereço IP do seu alojamento e adicioná-lo à su
 
 Se o seu site não está alojado na infraestrutura da OVHcloud ou é gerido por outro fornecedor, contacte o serviço de suporte em causa.
 
-Se o seu site está alojado numa das nossas [ofertas Web Cloud](https://www.ovh.pt/alojamento-partilhado/), clique no separador `Alojamentos`{.action} à esquerda do seu ecrã e, a seguir, na oferta em causa.
+Se o seu site está alojado numa das nossas [ofertas Web Cloud](https://www.ovhcloud.com/pt/web-hosting/), clique no separador `Alojamentos`{.action} à esquerda do seu ecrã e, a seguir, na oferta em causa.
 
 No separador `Informações gerais`{.action}, copie o endereço IPV4 e/ou IPV6 do seu domínio.
 

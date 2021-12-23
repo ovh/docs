@@ -112,7 +112,7 @@ Estas limitaciones de la cuenta de prueba no existen en la solución Hosting Ple
 ## Contratacion, entrega y renovacion del servicio
 
 ### Contratar un Hosting Plesk
-Acceda a la [página de presentación de la solución Hosting Plesk](https://www.ovh.es/hosting-plesk/){.external} y elija el modelo que mejor se ajuste a sus necesidades haciendo clic en el botón `Contratar`{.action}.
+Acceda a la [página de presentación de la solución Hosting Plesk](https://www.ovhcloud.com/es-es/plesk-web-hosting/){.external} y elija el modelo que mejor se ajuste a sus necesidades haciendo clic en el botón `Contratar`{.action}.
 
 Se mostrará una página con la previsualización del pedido. Haga clic en `Continuar`{.action}.
 

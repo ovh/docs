@@ -20,8 +20,8 @@ OVHcloud bietet mehrere E-Mail-Lösungen an: MX Plan (autonom oder in einem Webh
 
 ## Voraussetzungen
 
-- Sie verfügen über eine MX Plan E-Mail-Adresse (über das MX Plan Angebot oder in einem OVHcloud Webhosting [Angebot](https://www.ovh.de/hosting/){.external}).
-- Sie verfügen über einen [Exchange](https://www.ovh.de/emails/hosted-exchange/){.external} oder [E-Mail Pro ](https://www.ovh.de/emails/email-pro/){.external} Dienst mit mindestens einem nicht konfigurierten Account (dieser wird als "@configureme.me"angezeigt).
+- Sie verfügen über eine MX Plan E-Mail-Adresse (über das MX Plan Angebot oder in einem OVHcloud Webhosting [Angebot](https://www.ovhcloud.com/de/web-hosting/){.external}).
+- Sie verfügen über einen [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external} oder [E-Mail Pro ](https://www.ovhcloud.com/de/emails/email-pro/){.external} Dienst mit mindestens einem nicht konfigurierten Account (dieser wird als "@configureme.me"angezeigt).
 - **Sie haben keine Weiterleitungen für die MX Plan E-Mail-Adresse eingerichtet, die Sie migrieren möchten.**
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
@@ -32,7 +32,7 @@ OVHcloud bietet mehrere E-Mail-Lösungen an: MX Plan (autonom oder in einem Webh
 
 Die E-Mail Pro und Exchange Lösungen verfügen über eine gemeinsame Basis für Funktionen. Je nach Verwendungszweck bestehen jedoch Unterschiede. Indem Sie eine Exchange Adresse auswählen verfügen Sie über alle kollaborativen Funktionen wie die Synchronisation des Kalenders und der Kontakte. Die E-Mail Pro Lösung bietet einige E-Mail-Adressen, diese sind jedoch auf die Verwendung über ein Webmail beschränkt.
 
-Bevor Sie fortfahren, ist es wichtig zu wissen, auf welches Angebot Sie Ihre MX Plan E-Mail-Adressen migrieren möchten. Um Ihnen bei dieser Auswahl zu helfen können Sie die [Produktseite](https://www.ovh.de/emails/) konsultieren, die einen detaillierten Vergleich der Angebote bietet. Sie haben die Möglichkeit, die Lösungen zu kombinieren und so einen oder mehrere E-Mail Pro und Exchange Accounts für eine Domain zu verwenden. Wenn Sie mehrere Accounts migrieren müssen, empfehlen wir Ihnen die Erstellung eines Migrationsplans.
+Bevor Sie fortfahren, ist es wichtig zu wissen, auf welches Angebot Sie Ihre MX Plan E-Mail-Adressen migrieren möchten. Um Ihnen bei dieser Auswahl zu helfen können Sie die [Produktseite](https://www.ovhcloud.com/de/emails/) konsultieren, die einen detaillierten Vergleich der Angebote bietet. Sie haben die Möglichkeit, die Lösungen zu kombinieren und so einen oder mehrere E-Mail Pro und Exchange Accounts für eine Domain zu verwenden. Wenn Sie mehrere Accounts migrieren müssen, empfehlen wir Ihnen die Erstellung eines Migrationsplans.
 
 
 ### Schritt 2: E-Mail Pro oder Exchange Accounts bestellen

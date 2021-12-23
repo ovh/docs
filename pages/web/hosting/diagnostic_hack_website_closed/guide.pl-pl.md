@@ -16,7 +16,7 @@ Twój hosting umożliwia Ci zamieszczenie w Internecie jednej lub kilku stron WW
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
+- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Posiadanie danych do logowania do przestrzeni dyskowej Twojego hostingu
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
 

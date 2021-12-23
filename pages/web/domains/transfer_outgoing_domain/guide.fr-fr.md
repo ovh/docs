@@ -18,7 +18,7 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/) enregistré chez OVHcloud
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/) enregistré chez OVHcloud
 - Être habilité à demander le transfert du nom de domaine : le propriétaire et/ou les personnes l'administrant doivent être informés de la demande du transfert.
 - Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Le nom de domaine doit avoir été créé il y a plus de 61 jours **et** ne doit pas avoir été transféré ou avoir changé de propriétaire durant cette période.
@@ -39,7 +39,7 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 > Nous vous recommandons de consulter les ressources suivantes en cas de doute :
 >
 > - le site Web du registre TLD correspondant;
-> - la [liste des TLD disponibles chez OVHcloud](https://www.ovh.com/fr/domaines/tarifs/);
+> - la [liste des TLD disponibles chez OVHcloud](https://www.ovhcloud.com/fr/domains/tld/);
 > - [Les explications de l'ICANN sur les codes de statut EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (pour savoir quels codes de statut s'appliquent actuellement à votre nom de domaine, effectuez une recherche *Whois*, en utilisant de préférence le site Web du registre TLD correspondant);
 > - le site Web et l'interface de gestion de votre nouveau bureau d'enregistrement, en particulier pour les questions relatives à un processus de transfert en attente.
 >

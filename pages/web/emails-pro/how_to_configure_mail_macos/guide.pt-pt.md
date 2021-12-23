@@ -23,7 +23,7 @@ As contas E-mail Pro podem ser usadas com vários softwares de e-mail (desde que
 
 ## Requisitos
 
-- Ter o serviço [E-mail Pro](https://www.ovh.pt/emails/email-pro/){.external}.
+- Ter o serviço [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
 - Ter a aplicação Mail instalada no seu dispositivo Mac.
 - Ter acesso aos dados associados ao endereço de e-mail que pretende configurar.
 
@@ -94,7 +94,7 @@ Precisa de inserir os dados de forma manual nas preferências da conta? A tabela
 
 Após a configuração, a conta de e-mail está pronta a usar! Já pode enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud disponibiliza uma aplicação web com funcionalidades de [colaboração online](https://www.ovh.pt/emails/){.external} acessível através do endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail. 
+A OVHcloud disponibiliza uma aplicação web com funcionalidades de [colaboração online](https://www.ovhcloud.com/pt/emails/){.external} acessível através do endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail. 
 
 ## Quer saber mais?
 

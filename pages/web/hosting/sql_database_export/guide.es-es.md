@@ -16,8 +16,8 @@ Las bases de datos, que hoy en día se utilizan en la mayoría de los sistemas d
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
-- Disponer de una base de datos creada en un [alojamiento web de OVH.](https://www.ovh.es/hosting/){.external}
+- Tener contratado un [plan de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
+- Disponer de una base de datos creada en un [alojamiento web de OVH.](https://www.ovhcloud.com/es-es/web-hosting/){.external}
 - Según el método de backup utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o disponer de las claves necesarias para conectarse a la base de datos.
 
 ## Procedimiento

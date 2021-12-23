@@ -16,9 +16,9 @@ Vous venez d’acquérir un hébergement web pour créer votre site internet. Ce
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
-- Disposer d'un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external} qui sera l'adresse sur laquelle votre site sera accessible.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} qui sera l'adresse sur laquelle votre site sera accessible.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 
@@ -34,7 +34,7 @@ Grâce à votre hébergement web OVHcloud, vous pouvez créer un nouveau site in
 
  Vous avez la possibilité de créer vous même votre site internet grâce à des compétences en programmation ou d'utiliser des sites clés en main comme des CMS (Content Management System). La première solution est plus technique, mais  offre la possibilité de créer un projet sur mesure. La seconde permet de bénéficier d’une structure de site prête à l’emploi sans compétences techniques requises.
 
-Depuis son espace client, OVHcloud met à la disposition de ses clients un outil permettant d'installer en 1 clic un CMS à choisir parmi WordPress, PrestaShop, Drupal et Joomla. Si vous ne savez pas quel CMS utiliser, ce [comparatif](https://www.ovh.com/ca/fr/hebergement-web/site/comparatif-cms/){.external} devrait vous aider dans votre décision. Si le CMS que vous souhaitez installer n'est pas proposé par OVHcloud, vous pouvez l'installer manuellement sur votre hébergement.
+Depuis son espace client, OVHcloud met à la disposition de ses clients un outil permettant d'installer en 1 clic un CMS à choisir parmi WordPress, PrestaShop, Drupal et Joomla. Si vous ne savez pas quel CMS utiliser, ce [comparatif](https://www.ovhcloud.com/fr-ca/web-hosting/uc-cms-comparison/){.external} devrait vous aider dans votre décision. Si le CMS que vous souhaitez installer n'est pas proposé par OVHcloud, vous pouvez l'installer manuellement sur votre hébergement.
 
 - **Migrer un site web existant vers OVHcloud**
 
@@ -92,7 +92,7 @@ Il n'existe pas de marche à suivre universelle tant les sites peuvent être dif
 
 ### Étape 3 : créer vos adresses e-mail
 
-Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}. Pour créer une une plusieurs adresses e-mail, assurez-vous dans un premier temps d'être connecté dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Dans la barre de services à gauche, rendez-vous dans la section `Emails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. Puis, dans l'onglet `Emails`{.action}, cliquez sur le bouton `Créer une adresse e-mail`{.action}.
+Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}. Pour créer une une plusieurs adresses e-mail, assurez-vous dans un premier temps d'être connecté dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Dans la barre de services à gauche, rendez-vous dans la section `Emails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. Puis, dans l'onglet `Emails`{.action}, cliquez sur le bouton `Créer une adresse e-mail`{.action}.
 
 ![Créer une adresse e-mail](images/create_an_email_address.png){/thumbnail}
 

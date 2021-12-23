@@ -21,7 +21,7 @@ You can [migrate an email address automatically](../../microsoft-collaborative-s
 
 ## Requirements
 
-- an email service with OVHcloud, such as an [Exchange](https://www.ovh.co.uk/emails/){.external}, [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} or MX Plan solution (via the MX Plan or included in an [OVHcloud web hosting solution](https://www.ovh.co.uk/web-hosting/){.external})
+- an email service with OVHcloud, such as an [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external}, [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/){.external} or MX Plan solution (via the MX Plan or included in an [OVHcloud web hosting solution](https://www.ovhcloud.com/en-gb/web-hosting/){.external})
 - access to the email accounts you want to migrate (the source accounts)
 - access to the OVHcloud email accounts that will be receiving the migrated data (the target accounts)
 
@@ -40,7 +40,7 @@ The following instructions are divided into two parts:
 
 ### Outlook
 
-If you have an [OVHcloud Exchange email account](https://www.ovh.co.uk/emails/hosted-exchange/), you can export it directly in PST format via the OVHcloud Control Panel.
+If you have an [OVHcloud Exchange email account](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/), you can export it directly in PST format via the OVHcloud Control Panel.
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Web Cloud`{.action} section. Select `Microsoft`{.action} in the left-hand column, then `Exchange`{.action}. Click the name of the concerned Hosted Exchange service.
 

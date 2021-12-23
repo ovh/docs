@@ -22,13 +22,13 @@ Mit diesem OVHcloud Feature können Sie einen automatischen E-Mail-Responder ein
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) oder MX Plan in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder MX Plan in Ihrem Kunden-Account.
 
 ## Praktische Anwendung
 
 > [!primary]
 >
-> Wenn Ihre E-Mail-Adresse Teil eines [**Exchange Dienstes**](https://www.ovh.de/emails/hosted-exchange/), [**Email Pro Dienstes**](https://www.ovh.de/emails/email-pro/) ist oder der Bereich für Auto-Antworten in Ihrem Kundencenter fehlt, können Sie automatische Antworten stattdessen über Ihr OWA-Webmail erstellen, indem Sie die Anleitung "[Einrichten einer automatischen Antwort in OWA](../../microsoft-collaborative-solutions/exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)" heranziehen.
+> Wenn Ihre E-Mail-Adresse Teil eines [**Exchange Dienstes**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro Dienstes**](https://www.ovhcloud.com/de/emails/email-pro/) ist oder der Bereich für Auto-Antworten in Ihrem Kundencenter fehlt, können Sie automatische Antworten stattdessen über Ihr OWA-Webmail erstellen, indem Sie die Anleitung "[Einrichten einer automatischen Antwort in OWA](../../microsoft-collaborative-solutions/exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)" heranziehen.
 
 ### Anlegen des Responders
 

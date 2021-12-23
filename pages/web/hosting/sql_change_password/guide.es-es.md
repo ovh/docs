@@ -16,7 +16,7 @@ Una base de datos (también llamada *database*, DB o BD) permite almacenar eleme
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 - Tener acceso a la gestión del alojamiento web desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 > [!warning]

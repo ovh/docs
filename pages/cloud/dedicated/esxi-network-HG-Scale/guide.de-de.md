@@ -70,7 +70,7 @@ Folgende Schritte sind notwendig:
 
 > [!primary]
 >
-> Die Änderungen sind im Bestellmodus (shell) statt über das grafische Interface (GUI) von ESXi vorzunehmen.
+> Die Änderungen sind im *command mode* (shell) statt über das grafische Interface (GUI) von ESXi vorzunehmen.
 >
 
 ##### **Erstellung des Aggregats im LACP-Modus auf dem vSwitch, der die öffentlichen Interfaces hat**
@@ -137,7 +137,7 @@ Um die erste verwendbare IP-Adresse zu konfigurieren, bearbeiten Sie die Netzwer
 
 > [!primary]
 >
-> Die von uns in diesem Beispiel verwendete Subnetzmaske passt zu unserem IP-Block. Ihre Subnetzmaske kann je nach Größe Ihres Blocks variieren. Wenn Sie Ihren IP-Block bestellen, erhalten Sie eine E-Mail mit der zu verwendenden Subnetzmaske.
+> Die in diesem Beispiel verwendete Subnetzmaske passt zu unserem IP-Block. Ihre Subnetzmaske kann je nach Größe Ihres Blocks variieren. Wenn Sie Ihren IP-Block bestellen, erhalten Sie eine E-Mail mit der zu verwendenden Subnetzmaske.
 >
 
 #### Beispielkonfiguration eines VM Clients mit Debian

@@ -28,7 +28,7 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 
 ## Requisitos
 
-- Ter uma [conta de e-mail Exchange](https://www.ovh.pt/emails/){.external}.
+- Ter uma [conta de e-mail Exchange](https://www.ovhcloud.com/pt/emails/){.external}.
 - Ter a aplicação Mail instalada no seu dispositivo iOS.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
@@ -66,7 +66,7 @@ Se quiser, pode efetuar um teste de envio para verificar se a conta está corret
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud também disponibiliza uma aplicação web com [funcionalidades de colaboração Exchange](https://www.ovh.pt/emails/){.external} acessível no endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
+A OVHcloud também disponibiliza uma aplicação web com [funcionalidades de colaboração Exchange](https://www.ovhcloud.com/pt/emails/){.external} acessível no endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
 
 > [!primary]
 >

@@ -36,7 +36,7 @@ Há dois tipos de reencaminhamento:
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Dispor do serviço MX Plan (incluído num plano de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, num [alojamento gratuito Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external} ou disponível em subscrição autónoma).
+- Dispor do serviço MX Plan (incluído num plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, num [alojamento gratuito Start 10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} ou disponível em subscrição autónoma).
 
 ## Instruções
 

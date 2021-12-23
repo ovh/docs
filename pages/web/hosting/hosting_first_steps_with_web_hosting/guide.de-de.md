@@ -16,9 +16,9 @@ Sie haben vor Kurzem ein Webhosting bestellt, um Ihre eigene Website zu erstelle
 
 ## Voraussetzungen
 
-- Sie besitzen ein [Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
+- Sie besitzen ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
 - Sie haben die Bestätigungs-E-Mail zur Installation Ihres Webhostings erhalten.
-- Sie besitzen eine [Domain](https://www.ovh.de/domains/){.external}, über die Ihre Website erreichbar sein wird.
+- Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/){.external}, über die Ihre Website erreichbar sein wird.
 - Sie sind in Ihrem [Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt.
 
 ## Beschreibung
@@ -33,7 +33,7 @@ Mit Ihrem OVH Webhosting Angebot können Sie eine neue Website erstellen oder ei
 
  Sie können Ihre Website entweder manuell mithilfe Ihrer eigenen Programmierkenntnisse einrichten, oder gebrauchsfertige Lösungen wie Content Management Systeme (CMS) für die Erstellung Ihrer Website verwenden. Die erste Option erfordert ein gewisses Maß an technischer Kompetenz, ermöglicht jedoch ein maßgeschneidertes Ergebnis. Mit der zweiten Lösung profitieren Sie von einer direkt einsetzbaren Website, für deren Einrichtung keine technischen Fachkenntnisse notwendig sind.
 
-Im Kundencenter stellt OVH seinen Kunden ein Tool zur Verfügung, mit dem ein CMS mit nur einem Klick installiert werden kann. Zur Auswahl stehen WordPress, PrestaShop, Drupal und Joomla. Wenn Sie noch auf der Suche nach dem richtigen CMS sind, kann Ihnen dieser [CMS Vergleich](https://www.ovh.de/hosting/website/cms-vergleich/){.external} bei Ihrer Auswahl helfen. Wenn das gewünschte CMS von OVH nicht angeboten wird, können Sie es manuell auf Ihrem Webhosting installieren.
+Im Kundencenter stellt OVH seinen Kunden ein Tool zur Verfügung, mit dem ein CMS mit nur einem Klick installiert werden kann. Zur Auswahl stehen WordPress, PrestaShop, Drupal und Joomla. Wenn Sie noch auf der Suche nach dem richtigen CMS sind, kann Ihnen dieser [CMS Vergleich](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/){.external} bei Ihrer Auswahl helfen. Wenn das gewünschte CMS von OVH nicht angeboten wird, können Sie es manuell auf Ihrem Webhosting installieren.
 
 - **Eine bestehende Website zu OVH migrieren**
 
@@ -86,7 +86,7 @@ Es gibt keine allgemeingültige Vorgehensweise, da Websites sehr unterschiedlich
 
 ### Schritt 3: Ihre E-Mail-Adressen anlegen
 
-Dieser Schritt ist optional, wenn Sie die in Ihrem [Webhosting](https://www.ovh.de/hosting/){.external} Angebot enthaltenen E-Mail-Adressen nicht nutzen möchten. Um eine oder mehrere E-Mail-Adressen anzulegen, stellen Sie zunächst sicher, dass Sie in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt sind. Dann gehen Sie im linken Menü in den Bereich `E-Mails`{.action} und klicken anschließend auf den Namen des Webhostings, das Sie gerade bestellt haben. In dem Tab `E-Mails`{.action} klicken Sie dann auf den Button `Eine E-Mail-Adresse erstellen`{.action}.
+Dieser Schritt ist optional, wenn Sie die in Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot enthaltenen E-Mail-Adressen nicht nutzen möchten. Um eine oder mehrere E-Mail-Adressen anzulegen, stellen Sie zunächst sicher, dass Sie in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt sind. Dann gehen Sie im linken Menü in den Bereich `E-Mails`{.action} und klicken anschließend auf den Namen des Webhostings, das Sie gerade bestellt haben. In dem Tab `E-Mails`{.action} klicken Sie dann auf den Button `Eine E-Mail-Adresse erstellen`{.action}.
 
 ![Eine E-Mail-Adresse anlegen](images/create_an_email_address.png){/thumbnail}
 

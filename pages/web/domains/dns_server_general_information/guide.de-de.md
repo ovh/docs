@@ -35,7 +35,7 @@ DNS Server werden in der Regel in Doppelkonfigurationen (primärer und sekundär
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bei OVHcloud registrierte [Domain](https://www.ovh.de/domains/).
+- Sie verfügen über eine bei OVHcloud registrierte [Domain](https://www.ovhcloud.com/de/domains/).
 - Sie verfügen über die [entsprechenden Berechtigungen](../../customer/verwaltung-der-kontakte/){.external} für die Verwaltung der Domain über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de
 ) mit den [erforderlichen Berechtigungen](../../customer/verwaltung-der-kontakte/) zum Verwalten der Domain
@@ -73,7 +73,7 @@ Die angezeigte Tabelle listet die DNS-Server auf, die derzeit von OVHcloud für 
 
 > [!primary]
 >
-> Wenn Sie die OVHcloud DNS Server verwenden, haben die Server-Nummern keine Verbindung zu den von Ihnen genutzten Diensten. Nur die Option [DNS Anycast](https://www.ovh.de/domains/dns-anycast/) verwendet bestimmte DNS Server, die Ihnen automatisch zugewiesen werden.
+> Wenn Sie die OVHcloud DNS Server verwenden, haben die Server-Nummern keine Verbindung zu den von Ihnen genutzten Diensten. Nur die Option [DNS Anycast](https://www.ovhcloud.com/de/domains/options/dns-anycast/) verwendet bestimmte DNS Server, die Ihnen automatisch zugewiesen werden.
 
 ![DNS-Server](images/edit-dns-server-ovh-step1.png){.thumbnail}
 

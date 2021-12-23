@@ -16,8 +16,8 @@ Wenn Sie ein Webhosting bestellt haben, ohne es direkt mit einem Domainnamen zu 
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Domainnamen](https://www.ovh.de/domains/) in Ihrem OVHcloud Kundencenter.
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/) in Ihrem OVHcloud Kundencenter.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

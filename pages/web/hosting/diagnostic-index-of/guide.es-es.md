@@ -29,7 +29,7 @@ Si una configuración `Multisitio` no está bien configurada, es posible que el 
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovh.es/hosting/).
+- Tener un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento

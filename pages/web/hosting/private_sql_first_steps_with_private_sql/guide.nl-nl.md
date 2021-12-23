@@ -16,8 +16,8 @@ Met Private SQL kunt u profiteren van een SQL-instance in combinatie met OVH-web
 
 ## Vereisten
 
-- U moet beschikken over een Private SQL-instance (inbegrepen in een [webhosting-programma](https://www.ovh.nl/shared-hosting/){.external}, of besteld via een [SQL-optie](https://www.ovh.nl/shared-hosting){.external}).
-- U moet beschikken over een[Webhosting](https://www.ovh.nl/shared-hosting/){.external} op hetzelfde datacenter als uw Private SQL-instance (u kunt deze informatie vinden in uw OVH Control Panel).
+- U moet beschikken over een Private SQL-instance (inbegrepen in een [webhosting-programma](https://www.ovhcloud.com/nl/web-hosting/){.external}, of besteld via een [SQL-optie](https://www.ovhcloud.com/nl/web-hosting/){.external}).
+- U moet beschikken over een[Webhosting](https://www.ovhcloud.com/nl/web-hosting/){.external} op hetzelfde datacenter als uw Private SQL-instance (u kunt deze informatie vinden in uw OVH Control Panel).
 - U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 ## Instructie

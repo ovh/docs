@@ -20,9 +20,9 @@ By default, only the IPv4 address is configured.
 
 ## Requirements
 
-* a Public Cloud instance (any model)
-* knowledge of SSH
-* basic network knowledge
+- A Public Cloud instance (any model)
+- Knowledge of SSH
+- Basic network knowledge
 
 ## Instructions
 

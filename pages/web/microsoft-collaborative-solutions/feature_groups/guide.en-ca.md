@@ -19,7 +19,7 @@ Exchange groups enable multiple participants to communicate by sending emails to
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- an [OVHcloud Exchange solution](https://www.ovh.com/ca/en/emails/hosted-exchange/) already set up
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/) already set up
 
 
 ## Instructions

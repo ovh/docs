@@ -6,7 +6,7 @@ section: OpenStack
 order: 1
 ---
 
-**Last updated 1st July 2019**
+**Last updated 15th December 2021**
 
 ## Objective
 
@@ -18,7 +18,7 @@ With the OpenStack API, you can automate your management by generating scripts. 
 
 ## Requirements
 
-- **root** access to the environment you want to configure
+- **Root** access to the environment you want to configure
 
 ## Instructions
 
@@ -32,10 +32,16 @@ Update the packet cache using the `apt-get update` command:
 apt-get update
 ```
 
-Use the command below to install the Nova client (compute application), Glance (image service) and Swift:
+Use the command below to install the Nova client (compute application) and Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt-get install python-openstackclient python-novaclient python-swiftclient -y
+```
+
+Python3 Version
+
+```sh
+apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
 ```
 
 After you have completed this step, we recommend creating a special user without root access.
@@ -48,9 +54,9 @@ nova help
 ```
 
 > [!primary]
-> 
+>
 > The documentation for the OpenStack API is available [here](https://docs.openstack.org/python-openstackclient/latest/){.external}.
-> 
+>
 
 ### On CentOS
 
@@ -89,9 +95,9 @@ nova help
 ```
 
 > [!primary]
-> 
+>
 > The documentation for the OpenStack API is available [here](https://docs.openstack.org/python-openstackclient/latest/){.external}.
-> 
+>
 
 ### On Windows
 
@@ -113,7 +119,7 @@ Go to the `Advanced`{.action} tab, and click `Environment Variables`{.action} to
 
 ![Performance settings](images/3_preparation_openstack_environment_windows.png){.thumbnail}
 
-#### Step 3: Configure the environment variables. 
+#### Step 3: Configure the environment variables.
 
 In the ‘System variables’ section, select ‘New’, attribute the name “PYTHON_HOME”, and add the access path to Python. By default, it will be: ‘C:\\Python27’.
 

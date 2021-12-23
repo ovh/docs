@@ -18,7 +18,7 @@ Los grupos de Exchange permiten que varios participantes puedan comunicarse a tr
 ## Requisitos
 
 - Tener acceso al [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
-- Tener una [solución Exchange de OVHcloud](https://www.ovh.es/emails/hosted-exchange/) activa.
+- Tener una [solución Exchange de OVHcloud](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) activa.
 
 
 ## Procedimiento

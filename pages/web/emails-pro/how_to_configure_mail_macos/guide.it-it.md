@@ -23,7 +23,7 @@ Questa guida ti mostra come configurare il tuo servizio Email Pro su Mail di mac
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Email Pro](https://www.ovh.it/emails/email-pro/){.external}
+- Disporre di una soluzione [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
 - Aver installato l’applicazione Mail sul proprio dispositivo 
 - Disporre delle credenziali associate all’account email da configurare
 
@@ -94,7 +94,7 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVHcloud propone un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external}, disponibile alla pagina [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} e accessibile con le credenziali del tuo account. 
+OVHcloud propone un’applicazione Web con [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}, disponibile alla pagina [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} e accessibile con le credenziali del tuo account. 
 
 ## Per saperne di più
 

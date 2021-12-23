@@ -16,14 +16,14 @@ order: 5
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement SQL Privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external} ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
+- Disposer d'une [offre d'hébergement SQL Privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external} ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
 > [!primary]
 >
-> Il est à noter que les offres [SQL Privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external} et [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au Host mais aux bases de données hébergées sur celui-ci, il n'y a pas d'accès super utilisateur  « root ». Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL  ou Adminer sont pleinement compatibles.
+> Il est à noter que les offres [SQL Privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external} et [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au Host mais aux bases de données hébergées sur celui-ci, il n'y a pas d'accès super utilisateur  « root ». Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL  ou Adminer sont pleinement compatibles.
 > 
 
 ### Restaurer et importer une base de données depuis l'espace client

@@ -14,16 +14,16 @@ order: 2
 
 ## Objetivo
 
-Com o [Start10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external}, a OVHcloud oferece-lhe um alojamento Web de 10MB e uma conta de e-mail com 5 GB de armazenamento. Este guia explica como pode ativar o alojamento Start 10M no seu [domínio](https://www.ovh.pt/dominios/){.external}.
+Com o [Start10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external}, a OVHcloud oferece-lhe um alojamento Web de 10MB e uma conta de e-mail com 5 GB de armazenamento. Este guia explica como pode ativar o alojamento Start 10M no seu [domínio](https://www.ovhcloud.com/pt/domains/){.external}.
 
 > [!warning]
-> Este alojamento gratuito de 10MB é adequado para uma simples página Web de apresentação, **não inclui uma base de dados**. Se pretender implementar um website com várias páginas e que requer uma base de dados, como um CMS (por exemplo: Worpdress, Joomla, Prestashop, Drupal, etc.), convidamo-lo a encomendar diretamente uma das [nossas ofertas de alojamento Web a partir do nosso site](https://www.ovh.pt/alojamento-partilhado/) ou da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) {.external}.
+> Este alojamento gratuito de 10MB é adequado para uma simples página Web de apresentação, **não inclui uma base de dados**. Se pretender implementar um website com várias páginas e que requer uma base de dados, como um CMS (por exemplo: Worpdress, Joomla, Prestashop, Drupal, etc.), convidamo-lo a encomendar diretamente uma das [nossas ofertas de alojamento Web a partir do nosso site](https://www.ovhcloud.com/pt/web-hosting/) ou da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) {.external}.
 
 **Saiba como ativar o alojamento gratuito Start 10M**
 
 ## Requisitos
 
-- Dispor de um [domínio](https://www.ovh.pt/dominios/){.external}, desassociado de qualquer alojamento Web, na Área de Cliente OVHcloud.
+- Dispor de um [domínio](https://www.ovhcloud.com/pt/domains/){.external}, desassociado de qualquer alojamento Web, na Área de Cliente OVHcloud.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
@@ -44,7 +44,7 @@ Aparecerá a janela de ativação. A **etapa 1** faz menção ao serviço e ao s
 | Entrada DNS MX 	| Os servidores de e-mail da OVHcloud serão aplicados no domínio. 	|
 
 > [!primary]
-> Relembramos que não existe uma base de dados incluída com o alojamento gratuito Start 10M. Se o seu projeto necessita de uma base de dados, consulte as nossas [ofertas de alojamento web](https://www.ovh.pt/alojamento-partilhado/).
+> Relembramos que não existe uma base de dados incluída com o alojamento gratuito Start 10M. Se o seu projeto necessita de uma base de dados, consulte as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
 
 **A etapa 3** recorda-lhe o preço da oferta. Na etapa 4**, **deverá ler os contratos e validar a encomenda.
 

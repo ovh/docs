@@ -30,7 +30,7 @@ El proceso de cambio de agente registrador (*registrador*) para los dominios de 
 
 ## Requisitos
 
-- Tener un [dominio .uk](https://www.ovh.com/world/es/dominios/) registrado con OVHcloud.
+- Tener un [dominio .uk](https://www.ovhcloud.com/es/domains/) registrado con OVHcloud.
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y tener los permisos necesarios para gestionar el dominio (ser administrador del dominio).
 - El dominio debe estar siempre activo, es decir, no debe haber expirado o haber sido bloqueado por OVHcloud.
 - El nombre de dominio no debe ser objeto de un litigio en curso ante el [Registro Nominet](https://www.nominet.uk/)

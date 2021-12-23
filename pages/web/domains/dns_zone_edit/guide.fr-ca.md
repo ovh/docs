@@ -178,6 +178,6 @@ Vous pouvez aussi modifier le TTL d'un enregistrement DNS. Cependant, cette mani
 
 [Ajouter un champ SPF à la configuration de son nom de domaine](../le-champ-spf/){.external}.
 
-[Protégez votre domaine contre le Cache Poisoning avec le DNSSEC](https://www.ovh.com/fr/domaines/service_dnssec.xml){.external}.
+[Protégez votre domaine contre le Cache Poisoning avec le DNSSEC](https://www.ovhcloud.com/fr/domains/dnssec/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

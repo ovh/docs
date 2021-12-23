@@ -6,11 +6,12 @@ section: 'Advanced use'
 order: 1
 ---
 
-**Last updated 24th March 2021**
+**Last updated 15th November 2021**
 
 ## Objective
 
-OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link.
+OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link.<br>
+Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) technology.
 
 **This guide explains how to configure OLA in the OVHcloud Control Panel.**
 
@@ -18,6 +19,7 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 
 - a [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- an Operating System / Hypervisor that supports the 802.3ad aggregation protocol (LACP)
 
 ## Instructions
 

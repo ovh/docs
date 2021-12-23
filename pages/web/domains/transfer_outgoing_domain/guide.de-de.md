@@ -22,7 +22,7 @@ Um unbefugte Transferanfragen zu verhindern, sind Domains in der Regel vom Regis
 
 ## Voraussetzungen
 
-- Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](https://www.ovh.de/domains/).
+- Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zum Verwalten der Domain (Domainadministrator).
 - Die Registrierung der betreffenden Domain erfolgte vor mindestens 60 Tagen und sie wurde in den letzten 60 Tagen weder transferiert noch übertragen (Inhaberwechsel).
 
@@ -42,7 +42,7 @@ Um unbefugte Transferanfragen zu verhindern, sind Domains in der Regel vom Regis
 > Wir empfehlen, im Zweifelsfall folgende Ressourcen zu Rate zu ziehen:
 >
 > - die Webseite der zuständigen TLD-Registry
-> - die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovh.de/domains/preise/)
+> - die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovhcloud.com/de/domains/tld/)
 > - [Erläuterungen der ICANN zu den EPP-Statuscodes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (um herauszufinden, welche Statuscodes derzeit für Ihre Domain gelten, führen Sie eine *Whois*-Suche aus, vorzugsweise unter Verwendung der Webseite der entsprechenden TLD-Registry)
 > - die Webseite und das Verwaltungsinterface Ihres neuen Registrars, insbesondere für Fragen im Zusammenhang mit einem ausstehenden Transferprozess
 >

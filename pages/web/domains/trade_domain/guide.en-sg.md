@@ -36,7 +36,7 @@ Besides the domain contacts, you need to provide information on the owner when r
 > We recommend to consult the following resources in case of any doubt:
 >
 > - the website of the respective TLD registry
-> - the [list of TLDs available at OVHcloud](https://www.ovh.com/sg/domains/prices/)
+> - the [list of TLDs available at OVHcloud](https://www.ovhcloud.com/en-sg/domains/tld/)
 > - the `Ongoing operations`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) to check any pending status updates of the domain name
 
 ### Step 1: Select the domain

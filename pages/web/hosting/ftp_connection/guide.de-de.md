@@ -16,7 +16,7 @@ Mit OVH Webhosting Angeboten verfügen Sie über einen Speicherplatz für das On
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
+- Sie verfügen über ein [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
 - Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
@@ -43,7 +43,7 @@ Hier werden alle zum Speicherplatz gehörigen Informationen sowie eine Tabelle a
 
 ![ftp login](images/connect-ftp-step1.png){.thumbnail}
 
-In den angezeigten Informationen finden Sie alle Elemente, die Sie für die Verbindung mit Ihrem Speicherplatz brauchen. Wenn nötig, lesen Sie die nachstehende Tabelle, um die Informationen zu identifizieren. Beachten Sie, dass je nach Ihrem [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot eventuell nicht alle Angaben angezeigt werden.
+In den angezeigten Informationen finden Sie alle Elemente, die Sie für die Verbindung mit Ihrem Speicherplatz brauchen. Wenn nötig, lesen Sie die nachstehende Tabelle, um die Informationen zu identifizieren. Beachten Sie, dass je nach Ihrem [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot eventuell nicht alle Angaben angezeigt werden.
 
 |Information|Beschreibung|
 |---|---|
@@ -66,7 +66,7 @@ Um sich mit dem Speicherplatz zu verbinden, haben Sie verschiedene Möglichkeite
 
 [2. Via FTP-Client verbinden](./#2-via-ftp-client-verbinden): So können Sie über ein Programm wie FileZilla oder Cyberduck auf Ihren Speicherplatz zugreifen. Hierzu muss das gewünschte Programm auf Ihrem PC installiert sein.
 
-[3. Via SSH-Zugriff verbinden](./#3-via-ssh-zugriff-verbinden): Verbinden Sie sich via SSH mit Ihrem Speicherplatz. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot erforderlich.
+[3. Via SSH-Zugriff verbinden](./#3-via-ssh-zugriff-verbinden): Verbinden Sie sich via SSH mit Ihrem Speicherplatz. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot erforderlich.
 
 #### 1. Via FTP-Explorer verbinden
 

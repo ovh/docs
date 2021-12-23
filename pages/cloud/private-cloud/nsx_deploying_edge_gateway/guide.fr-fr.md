@@ -1,157 +1,158 @@
 ---
 title: Comment déployer une NSX Edge Gateway
 slug: comment-deployer-une-nsx-edge-gateway
-excerpt: Découvrez comment déployer une edge gateway NSX
+excerpt: "Découvrez comment déployer une edge gateway NSX via l'interface vSphere"
 legacy_guide_number: '7766362'
 section: NSX
 order: 02
 ---
 
-**Dernière mise à jour le 27/02/2019**
+**Dernière mise à jour le 19/11/2021**
 
 ## Objectif
 
-Une *edge gataway NSX* est une appliance VMware permettant d'accèder à tous les services NSX Edge tels que le pare-feu, NAT, DHCP, VPN, l'équilibrage de charge.
+La NSX Edge Services Gateway est une appliance VMware offrant des services tels que le pare-feu, NAT, DHCP, VPN, l'équilibrage de charge et la haute disponibilité.
 
-**Ce guide explique comment procéder au déploiement de cette appliance**
+**Ce guide explique comment procéder au déploiement de cette appliance.**
 
 ## Prérequis
 
-- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 
 ## En pratique
 
-Pour commencer, rendez-vous dans la partie `NSX Edges` afin de trouver la liste des Edges déjà déployées. Dans l'exemple ci-dessous, nous avons déjà une Edge déployée nommée `TestFW`.
+Vous allez vous embarquer dans l'aventure du déploiement d'une appliance NSX.   
+Nous vous guiderons étape par étape dans l'installation d'une Edge Services Gateway avec une connection interne à votre environnement et une autre pour communiquer avec l'extérieur.    
 
-![Accueil Web](images/accueil_web.png)
+Tout d'abord, dans votre interface vSphere, allez dans le tableau de bord `Mise en réseau et sécurité`{.action}.
 
+![Menu](images/fr01dash.png){.thumbnail}
 
-Cliquez sur le bouton `Add` (petit `+` vert au dessus de la liste des Edges) afin d'ouvrir l'assistant de déploiement depuis lequel vous pourrez choisir `Edge Services Gateway`.
+Sur la gauche de votre écran, cliquez sur `Dispositifs NSX Edge`{.action}.
 
+![NSX](images/fr02nsx.png){.thumbnail}
 
-Renseignez au moins le nom de la Edge, et les autres champs en fonction de votre besoin.
+Cliquez sur `+ Ajouter`{.action} puis sur `Edge Services Gateway`{.action}.
 
+![AddNSX](images/fr03add.png){.thumbnail}
 
-Par défaut, vous pouvez laisser cochée la case `Deploy NSX Edge`, à moins que vous ayez un besoin spécifique contraire. Cela ne sera pas utile dans le cadre du déploiement de la Edge.
+### Détails de base
 
+L'assistant d'installation apparaît. Remplissez les détails de base. Seul le nom est obligatoire. Les autres champs seront créés automatiquement ou ignorés, en fonction de votre infrastucture.
 
-La case `Enable High Availability` implique qu'une seconde machine virtuelle Edge sera créée et répliquée avec la principale afin de la seconder en cas de défaillance. Ne pas cocher la case impliquera le déploiement d'une unique Edge. Quand l'option est active, il faut donc prévoir que les ressources utilisées (RAM, vCPU, disque) seront doublées.
+Quand vous êtes prêt, cliquez sur `Suivant`{.action}.    
 
-![Ajout d'un nom et d'une description](images/add_edge_service_name_desc.png)
+Laissez l'option `Déployer une VM de dispositif Edge` cochée.<br>
+Décocher l'option entrainerait la création des règles et paramètres mais l'ensemble serait inactif tant qu'une VM ne serait pas déployée.
 
+Nous laissons la « Haute Disponibilité » de coté pour le moment.
 
-Vous pouvez ensuite renseigner les accès de votre Edge. Par défaut, l'utilisateur "admin" est renseigné. Le mot de passe doit respecter les pré-requis de complexité standards (majuscules, minuscules, chiffres, caractères spéciaux, etc ...).
+![Basic](images/fr04basic.png){.thumbnail}
 
+### Paramètres
 
-La case `Enable SSH access` vous permet d'autoriser ou non les connexions en SSH directement sur la Edge (via le port 22).
+La fenêtre `Paramètres` s'affiche ensuite.   
 
+- Le compte d'administration par défaut est rempli automatiquement. Vous pouvez le changer à votre convenance.
+- Créez et confirmez un mot de passe conforme.    
+- `Génération automatique de règles` ajoute les règles de Pare-Feu, NAT, et routage pour la surveillance des services.   
+- L'option `Accès SSH` autorise un accès par console sur le port 22. Nous recommandons de la laisser désactivée par défaut et de ne l'activer que de manière temporaire quand c'est nécessaire.     
+- `Mode FIPS` impose le chiffrement et un niveau de sécurité conformes aux normes des *Federal Information Processing Standards* du gouvernement des Etats-Unis.     
+- Le niveau de journalisation peut être adapté a vos besoins.    
 
-La case `Enable auto rule generation` permet de générer automatiquement des règles afin d'autoriser le trafic de monitoring des services.
+Cliquez ensuite sur `Suivant`{.action}
 
-![Paramètres](images/add_edge_service_settings.png)
+![Settings](images/fr05settings.png){.thumbnail}
 
+### Configuration du déploiement
 
-Vous pouvez choisir le datacenter dans lequel la Edge sera déployée si vous en avez plusieurs. Il est également possible de choisir un format pour la Edge, ce qui définit ses ressources (entre autre RAM et processeur).
+Selectionnez le centre de données cible (si vous n'avez qu'un seul centre de données dans vSphere, il n'y a pas d'autre choix possible), la taille du dispositif (la taille détermine la consommation de ressources et la puissance de calcul) puis cliquez sur le bouton `+`{.action}.
 
+![Deployment](images/fr06deploy.png){.thumbnail}
 
+Dans la fenêtre suivante, selectionnez l'emplacement où le dispositif sera installé dans le centre de données.   
 
-|Format|RAM|vCPU|Disque|
-|---|---|---|---|
-|Compact|512MB|1vCPU|512MB|
-|Large|1GB|2vCPU|512MB|
-|X-Large|8GB|6vCPU|4.5GB
-|Quad Large|1GB|4vCPU|512MB
+Seuls `Cluster/Pool de ressources` et `Banque de données` sont des champs obligatoires. vSphere choisira le reste automatiquement si vous ne rentrez aucune information.
 
+Cliquez sur `Ajouter`{.action}.
 
-> [!primary]
->
-> VMWare recommande l'utilisation du format "Compact" pour des besoins de test mais pas en production, pour des questions de performances.
-> 
+![add](images/fr07add.png){.thumbnail}
 
-![Ajout du datacenter](images/add_appliance.png)
+Vous êtes de retour dans la fenêtre précédente. Cliquez sur `Suivant`{.action}.
 
+### Interface
 
-Sur cette même page, il est nécessaire de cliquer sur `Add` (petit `+` vert) afin de déployer le `NSX Edge Appliance` (la Edge en elle même). Vous devez a minima choisir le cluster et le datastore sur lesquels le déploiement de cette Edge sera effectué, mais vous pouvez également choisir un hôte et un dossier si vous le souhaitez.
+Il vous faut à présent configurer les interfaces.
 
+Cliquez sur `+ Ajouter`{.action}.
 
-![Configuration de l'interface](images/add_edge_service_config_interface.png)
+![Interfaces](images/fr08inter.png){.thumbnail}
 
+Il existe 2 sortes d'interfaces :
 
-Vous devez alors créer les interfaces réseau nécessaires au fonctionnement de votre Edge.
+- `Liaison montante` communique avec l'extérieur de votre réseau.
+- `Interne` est confinée à l'intérieur de votre environnement.
 
+Nommez une interface et choisissez `Liaison montante`. 
 
-Cliquez sur le bouton `Add` (petit `+` vert) afin de créer votre première interface réseau. Celle-ci peut être votre carte publique et la seconde votre carte privée par exemple. Nous prendrons ce cas en exemple pour la suite de ce guide.
+Cliquez sur le symbole du `crayon`{.action} pour définir comment l'interface communiquera.
 
+![Outside](images/fr09out.png){.thumbnail}
 
-![Configuration de l'interface](images/add_edge_service_config_interface.png)
+Par défaut, dans la table `Groupe de ports virtuels disctribués`{.action}, VM Network est le réseau pour l'accès extérieur (si vous avez personnalisé l'environnement, choisissez en fonction).
 
+Cliquez sur `OK`{.action}.
 
-Renseignez le nom de l'interface, si possible compréhensible par n'importe qui (par exemple `Publique`, `Externe` ou `Wan` pour la carte publique).
+![Net](images/fr10standard.png){.thumbnail}
 
+De retour dans le menu `Configurer les interfaces`, ajoutez une addresse IP et la longueur du préfixe pour la connexion. 
 
-Choisissez le type en fonction de la carte, par exemple `Uplink` pour la carte publique afin d'autoriser une communication avec l'extérieur de l'infrastructure, et `Internal` pour la carte privé afin de ne permettre que des communications locales.
+Cliquez sur `OK`{.action}.
 
+![addIP](images/fr10standard02.png){.thumbnail}
 
-Dans la partie `Connected to`, vous pouvez cliquer sur "Select" afin de choisir le réseau correspondant à votre carte. Vous aurez par exemple le `VMNetwork` pour la carte réseau publique, et divers vLANs pour la carte privée. L'interface doit passer automatiquement en état `Connecté`.
+Ajoutez une seconde interface, `Interne` cette fois.<br>
+Cliquez de nouveau sur le symbole du `crayon`{.action} et selectionnez le réseau souhaité.<br> 
+Ajoutez également l'addresse IP et la longueur du préfixe pour la vNIC.
 
+![Inside](images/fr11in.png){.thumbnail}
 
-Cliquez sur le bouton `Add` (petit `+` vert) pour avoir accès à la première ligne du tableau correspondant à la configuration IP. Vous pouvez renseigner une IP disponible en `Primary IP Address` ainsi que le préfixe de votre bloc en `Subnet Prefix Length`. Si nécessaire, vous pouvez également renseigner plusieurs IPs séparées par des virgules dans la partie `Secondary IP Address` afin d'avoir plusieurs IP sur cette même interface.
+Vos interfaces sont prêtes. Vérifiez et cliquez sur `Suivant`{.action}.
 
+![Ready](images/fr12ready.png){.thumbnail}
 
-Vous pouvez créer plusieurs cartes réseau privées ou commencer pas une seule et ajouter les suivantes ultérieurement par exemple.
+### Passerelle par défaut
 
+Configurez la passerelle par défaut pour votre accès extérieur. Ce n'est pas obligatoire et peut être effectué ou désactivé ultérieurement.
 
-![Ajout d'interface](images/add_edge_service_add_interface.png)
+Cliquez sur `Suivant`{.action}.
 
+![Gateway](images/fr13gw.png){.thumbnail}
 
-L'étape suivante vous permettra de configurer une passerelle par défaut pour la Edge.
+### Stratégie de pare-feu par défaut
 
+Activez ou désactivez la stratégie de pare-feu par défaut puis cliquez sur `Suivant`{.action}.
 
-La `vNIC` correspond au nom de votre carte publique, à sélectionner dans le menu déroulant.
+![Firewall](images/fr14fw.png){.thumbnail}
 
+### Révision
 
-La `Gateway IP` sera la passerelle du bloc publique utilisé.
+Vérifiez la configuration puis cliquez sur `Terminer`{.action}.
 
+![Review](images/fr15review.png){.thumbnail}
 
-Le MTU peut ou non être modifié en fonction de votre besoin. Un MTU de 1500 est standard et répond à tous les besoins génériques.
+Le dispositif est alors en cours de déploiement. Le statut du déploiement est indiqué comme « Occupé » et l'état du déploiement est en « Installation » jusqu'à la finalisation du déploiement.
 
+Si le déploiement échoue, un message d'erreur ainsi qu'un lien vers les logs complets seront disponibles dans la section `Échec`.
 
-![Paramètres par défaut de la gateway](images/add_edge_service_default_gateway.png)
+![Installing](images/fr16busy.png){.thumbnail}
 
+Après l'installation, le dispositif est considéré comme « Déployé ».
 
-Vous aurez ensuite la possibilité de configurer ou non des règles de firewall par défaut durant le déploiement de la Edge.
+![Final](images/fr17done.png){.thumbnail}
 
-
-La case `Configure Firewall default policy` vous donne accès aux choix suivants afin de définir les règles par défaut.
-
-
-Vous pouvez accepter ou refuser l'intégralité des connexions par défaut avec le paramètre `Default Traffic Policy` et activer ou non les logs par défaut sur les règles avec le paramètre `Logging`.
-
-
-La partie `Configure HA parameters` n'est accessible que si vous avez activé la haute disponibilité en début de déploiement en cochant la case `Enable High Availability`.
-
-
-Vous pouvez sélectionner une carte réseau particulière ou la totalité avec le champ `vNIC`.
-
-
-Le champ `Declare Dead Time` est le délai en secondes après lequel la bascule est effectuée sur la Edge secondaire en cas de perte d'accès à la Edge principale.
-
-
-![Pare-feu et haute disponibilité](images/add_edge_service_firewall_ha.png)
-
-
-Pour finir, vous avez une page récapitulative de votre configuration. Vous pouvez la vérifier et cliquer sur `Finish` ensuite pour lancer le déploiement de la Edge.
-
-
-![Ajout du service finalisé](images/add_edge_service_ready.png)
-
-
-Quelques instants plus tard, la Edge est déployée et prête à être utilisée.
-
-
-Il vous suffit de retourner dans la liste des Edges et d'effectuer un double clic sur votre Edge pour accéder à sa configuration.
-
-![Gateway ajoutée et finalisée](images/gateway_added.png)
+Bravo et bienvenue dans le monde du NSX !   
 
 ## Aller plus loin
 

@@ -16,7 +16,7 @@ Uma base de dados (*database*, “DB” ou “BDD”) permite armazenar elemento
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Ter um serviço de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Ter acesso à secção de gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!warning]

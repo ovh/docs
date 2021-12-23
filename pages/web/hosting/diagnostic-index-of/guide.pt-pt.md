@@ -29,7 +29,7 @@ Se uma configuração `Multisite` não estiver corretamente configurada, é poss
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web](https://www.ovh.pt/alojamento-partilhado/)
+- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/)
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções

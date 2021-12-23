@@ -16,7 +16,7 @@ The email addresses in your MX Plan allow you to send and receive your email thr
 
 ## Requirements
 
-- You need to have an MX Plan email address (included in [OVH Web Hosting plans](https://www.ovh.ie/web-hosting/){.external} or available separately).
+- You need to have an MX Plan email address (included in [OVH Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external} or available separately).
 - You must be able to create email addresses as part of your package.
 - You must have permission to manage the MX Plan concerned from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 

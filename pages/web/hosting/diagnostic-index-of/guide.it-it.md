@@ -25,7 +25,7 @@ Se una configurazione `Multisito` non è configurata correttamente, il tuo sito 
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting Web](https://www.ovh.it/hosting-web/)
+- Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura

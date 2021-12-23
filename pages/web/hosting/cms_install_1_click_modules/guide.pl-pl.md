@@ -15,7 +15,7 @@ Moduły OVH umożliwiają łatwe i szybkie postawienie strony internetowej (bez 
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}.
+- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Pusty katalog na hostingu, w którym zostanie zainstalowany moduł.
 - Domena (wraz z subdomeną, jeśli jest potrzebna), skonfigurowana w ramach opcji MultiSite.
@@ -27,9 +27,9 @@ Moduły OVH umożliwiają łatwe i szybkie postawienie strony internetowej (bez 
 CMS (Content Management System) umożliwiają postawienie strony internetowej za pomocą prostego w użyciu interfejsu. Istnieje wiele systemów zarządzania treścią, które mają różne przeznaczenie. Dzięki temu wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.).
 
 OVH oferuje cztery systemy zarządzania treścią do prostej i szybkiej instalacji jako gotowe moduły. Są to najpopularniejsze rozwiązania dostępne na rynku. Jeśli już dokonałeś wyboru jednego spośród CMS-ów, przejdź do kolejnego kroku tego przewodnika. 
-Jeżeli nie wiesz, który CMS jest dla Ciebie, zapoznaj się z naszym [porównaniem systemów CMS](https://www.ovh.pl/hosting/website/porownanie-cms/){.external}.
+Jeżeli nie wiesz, który CMS jest dla Ciebie, zapoznaj się z naszym [porównaniem systemów CMS](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/){.external}.
 
-Jeśli chcesz zainstalować inne rozwiązanie niż te dostępne w Panelu klienta OVH, możesz zawsze zainstalować je ręcznie na hostingu pod warunkiem, że będzie on kompatybilny z Twoją ofertą (szczegóły pakietów hostingowych znajdziesz [tutaj](https://www.ovh.pl/hosting/){.external}).
+Jeśli chcesz zainstalować inne rozwiązanie niż te dostępne w Panelu klienta OVH, możesz zawsze zainstalować je ręcznie na hostingu pod warunkiem, że będzie on kompatybilny z Twoją ofertą (szczegóły pakietów hostingowych znajdziesz [tutaj](https://www.ovhcloud.com/pl/web-hosting/){.external}).
 
 ![Dostępne w OVH CMS](images/CMS_logo.png){.thumbnail}
 
@@ -137,13 +137,13 @@ Jeśli chcesz uzyskać pomoc dotyczącą funkcjonalności Twojej strony, zachęc
 
 ## Sprawdź również
 
-[Porównanie rozwiązań CMS](https://www.ovh.pl/hosting/website/porownanie-cms/){.external}
+[Porównanie rozwiązań CMS](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/){.external}
 
 [Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
 
 [Zarządzanie bazą danych na hostingu](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}
 
-Poznaj instancje [Private SQL](https://www.ovh.pl/hosting/opcje-sql.xml){.external}
+Poznaj instancje [Private SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/){.external}
 
 Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
 

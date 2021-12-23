@@ -23,7 +23,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external}
+- Wykupienie usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external}
 - Instalacja aplikacji Microsoft Outlook na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
@@ -81,7 +81,7 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta poniżej znajdz
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową [funkcje do pracy zespołowej](https://www.ovh.pl/emaile/){.external}. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+OVHcloud oferuje również aplikację internetową [funkcje do pracy zespołowej](https://www.ovhcloud.com/pl/emails/){.external}. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ## Sprawdź również
 

@@ -104,7 +104,7 @@ Edit the file so that it reflects the configuration below (please remember to fi
 
 - For older distributions:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -119,7 +119,7 @@ iface eth0 inet static
 
 - For the latest distributions:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -134,7 +134,7 @@ iface eth0 inet static
 
 Also replace `eth0` if your system uses Predictible Network Interface Names. You can find the network interface names with the following command:
 
-```sh
+```bash
 ls /sys/class/net
 ```
 
@@ -144,7 +144,7 @@ Save and close the file, then restart your network or reboot the virtual machine
 
 Open a terminal on your virtual machine. Open the virtual machine's network configuration file located in `/etc/network/interfaces`. Edit the file so that it reflects the configuration below (please remember to fill in your own values).
 
-```sh
+```console
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
@@ -162,7 +162,7 @@ HWADDR=MY:VI:RT:UA:LM:AC
 Save and close the file.<br>
 Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/route-eth0`. Edit the file so that it reflects the configuration below (please remember to fill in your own values).
 
-```bash
+```console
 GATEWAY_IP dev eth0
 default via GATEWAY_IP dev eth0
 ```
@@ -178,7 +178,7 @@ Save and close the file, then reboot your virtual machine.
 
 Open a terminal on your virtual machine. Open the virtual machine's network configuration file located in `/etc/sysconfig/network-scripts/ifcfg-(interface-name)`. Edit the file so that it reflects the configuration below (please remember to fill in your own values).
 
-```sh
+```console
 DEVICE=(interface-name)
 BOOTPROTO=none
 ONBOOT=yes
@@ -196,7 +196,7 @@ HWADDR=MY:VI:RT:UA:LM:AC
 Save and close the file.<br>
 Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/route-(interface-name)`. Edit the file so that it reflects the configuration below (please remember to fill in your own values).
 
-```bash
+```console
 GATEWAY_IP - 169.254.10.254 (interface-name)
 NETWORK_GW_VM - 255.255.255.0 (interface-name)
 default GATEWAY_IP
@@ -205,7 +205,7 @@ default GATEWAY_IP
 Save and close the file.<br>
 Next, open the virtual machine's DNS configuration file, which is located in `/etc/resolv.conf` and add this line:
 
-```bash
+```console
 nameserver 213.186.33.99
 ```
 
@@ -215,7 +215,7 @@ After saving and closing the file, restart your network or reboot the VM.
 
 Open a terminal on your virtual machine. Open the virtual machine's network configuration file located in `/etc/rc.conf`. Edit the file so that it reflects the configuration below (please remember to fill in your own values). In this example, the interface name is `em0`. Replace this value if it does not apply.
 
-```bash
+```console
 ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
 static_routes="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
@@ -225,7 +225,7 @@ route_net2="default GATEWAY_IP"
 Save and close the file.<br>
 Next, edit or create the file `/etc/resolv.conf` and add this line.
 
-```sh
+```console
 nameserver 213.186.33.99
 ```
 
@@ -235,13 +235,13 @@ Save and close the file, then reboot your virtual machine.
 
 First, open a terminal on your virtual machine and open the network configuration file located in `/etc/netplan/` with the following command. For demonstration purposes, our file is called `50-cloud-init.yaml`.
 
-```sh
+```bash
 # nano /etc/netplan/50-cloud-init.yaml
 ```
 
 Once the file is open for editing, amend it with the following code:
 
-```sh
+```yaml
 network:
     ethernets:
         (interface-name):
@@ -261,7 +261,7 @@ network:
 
 Save and close the file, then run the following command:
 
-```sh
+```bash
 # netplan try
 Warning: Stopping systemd-networkd.service, but it can still be activated by:
   systemd-networkd.socket

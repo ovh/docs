@@ -40,7 +40,7 @@ Nos services d’hébergement web sont compatibles avec certains des systèmes d
 
 WordPress un logiciel web que vous pouvez utiliser pour créer un site ou un blog. Il est basé sur la technologie PHP et comporte une gamme variée d’outils y compris un correcteur orthographique et des plugins SEO.
 
-- [Module WordPress](https://www.ovh.com/fr/hebergement-web/site/wordpress.xml)
+- [Module WordPress](https://www.ovhcloud.com/fr/web-hosting/uc-wordpress-website/)
 
 Le service d’assistance technique OVHcloud n’est pas autorisé à répondre aux questions relatives à la configuration de WordPress.
 
@@ -56,7 +56,7 @@ Joomla! est un logiciel primé et convivial qui vous permet de créer des sites 
 
 La communauté Joomla! est très grande et peut fournir de l’assistance et des services dans tous les domaines ayant trait à ce CMS (aide, documentation, assistance technique, thèmes, etc.)
 
-- [Module Joomla!](https://www.ovh.com/fr/hebergement-web/site/joomla.xml)
+- [Module Joomla!](https://www.ovhcloud.com/fr/web-hosting/uc-joomla-website/)
 
 Le service d’assistance technique OVHcloud n’est pas autorisé à répondre aux questions relatives à la configuration de Joomla!.
 
@@ -75,7 +75,7 @@ PrestaShop a été lancé en 2005 dans le cadre d’un projet d’étudiant à l
 Depuis 2005, le logiciel fait l’objet d’améliorations constantes. La version stable 1.7.6.2 est disponible en 60 langues. Le CMS PrestaShop est actuellement le numéro mondial des solutions d’e-commerce, avec plus de 300 000 boutiques en ligne.
 
 
-- [Module PrestaShop](https://www.ovh.com/fr/hebergement-web/site/prestashop.xml)
+- [Module PrestaShop](https://www.ovhcloud.com/fr/web-hosting/uc-prestashop-website/)
 
 Le service d’assistance technique OVHcloud n’est pas autorisé à répondre aux questions relatives à la configuration de PrestaShop.
 
@@ -90,7 +90,7 @@ la solution [PrestaShop](https://www.prestashop.com/forums/).
 
 Drupal est une plate-forme open source gratuite sous PHP créée en 2000. Drupal permet de créer rapidement des sites web dynamiques. Il est personnalisable et utilisé par 1 % des sites web dans le monde. 
 
--  [Module Drupal](https://www.ovh.com/fr/hebergement-web/site/drupal.xml)
+-  [Module Drupal](https://www.ovhcloud.com/fr/web-hosting/uc-drupal-website/)
 
 Le service d’assistance technique OVHcloud n’est pas autorisé à répondre aux questions relatives à la configuration de Drupal.
 
@@ -108,6 +108,6 @@ Veuillez consulter les forums dédiés à [Drupal](https://www.drupal.org).
 
 [Partager son hébergement entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
 
-Référez-vous à nos [solutions d’hébergement web](https://www.ovh.com/fr/hebergement-web/){.external}
+Référez-vous à nos [solutions d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

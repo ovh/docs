@@ -16,7 +16,7 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E
 
 ## Voraussetzungen
 
-- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder bei einem [OVH Webhosting](https://www.ovh.de/hosting/) enthalten).
+- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder bei einem [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
 - Die Gmail-App ist auf Ihrem Gerät installiert. Sie können diese über den Google Play Store installieren.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 

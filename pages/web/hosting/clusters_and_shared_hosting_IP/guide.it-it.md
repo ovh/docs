@@ -19,12 +19,12 @@ In questa guida sono elencati tutti gli indirizzi IP degli hosting Web OVHcloud.
 > [!primary]
 >
 > Gli indirizzi IP dell’opzione CDN sono “Anycast”,
-> ovvero non hanno bisogno di geolocalizzazione ([Maggiori informazioni qui](https://www.ovh.it/hosting-web/cdn.xml)).
+> ovvero non hanno bisogno di geolocalizzazione ([Maggiori informazioni qui](https://www.ovhcloud.com/it/web-hosting/options/cdn/)).
 > 
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
+- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura

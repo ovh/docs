@@ -18,7 +18,7 @@ Según sus necesidades, es posible personalizar el nombre de los servidores DNS 
 
 ## Requisitos
 
-- Tener un [dominio](https://www.ovh.com/world/es/dominios/){.external} registrado en OVH.
+- Tener un [dominio](https://www.ovhcloud.com/es/domains/){.external} registrado en OVH.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento

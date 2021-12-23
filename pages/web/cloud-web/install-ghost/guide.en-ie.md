@@ -10,7 +10,7 @@ order: 1
 
 [Ghost](https://ghost.org/){.external} is an open-source blogging platform. Aimed at bloggers and journalists, it is specially designed to simplify the process of publishing content online. This platform is coded in JavaScript, and uses [Node.js](https://nodejs.org/){.external}, a server-side JavaScript engine for websites and APIs.
 
-With an [OVH Cloud Web hosting plan](https://www.ovh.co.uk/web-hosting/cloud-web.xml){.external}, you can use Node.js as a runtime environment for websites, then install and host Ghost, or any other application designed for use with Node.js.
+With an [OVH Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/){.external}, you can use Node.js as a runtime environment for websites, then install and host Ghost, or any other application designed for use with Node.js.
 
 In this tutorial, we will set up a blog with Ghost on an OVH Cloud Web platform, and publish it online via your domain name.
 
@@ -24,7 +24,7 @@ In this tutorial, we will set up a blog with Ghost on an OVH Cloud Web platform,
 
 ### What you need to have
 
-- a [Cloud Web hosting plan](https://www.ovh.co.uk/web-hosting/cloud-web.xml){.external}
+- a [Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/){.external}
 - Node.js enabled as a runtime environment
 - the domain name added as a multisite, and Node.js defined as its runtime environment
 - access to the `Web Cloud`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}

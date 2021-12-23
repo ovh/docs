@@ -14,7 +14,7 @@ order: 1
 Auf DNS-Servern wird die DNS-Konfiguration von Domains gespeichert. Diese Konfiguration wird üblicherweise dazu verwendet, Ihre Domain mit dem oder den Servern zu verbinden, auf denen Ihre Website oder E-Mail-Adressen gehostet werden. In den letzten Jahren haben böswillige Hacker Cache-Poisoning-Methoden für DNS-Server entwickelt, um den Traffic zu anderen Servern umzuleiten. Es gibt ein Verfahren, um Ihre Domain hiervor zu schützen: DNSSEC.
 
 **Hier erfahren Sie, wie Sie DNSSEC für Ihre Domain aktivieren, um sie vor Cache Poisoning zu schützen.**  
-Um zu verstehen, wie dieses Verfahren funktioniert, lesen Sie folgende Seite: „[DNSSEC verstehen](https://www.ovh.de/domains/dnssec_dienst.xml){.external}“
+Um zu verstehen, wie dieses Verfahren funktioniert, lesen Sie folgende Seite: „[DNSSEC verstehen](https://www.ovhcloud.com/de/domains/dnssec/){.external}“
 
 ## Voraussetzungen
 

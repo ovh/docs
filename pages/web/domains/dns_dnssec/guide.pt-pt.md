@@ -12,7 +12,7 @@ legacy_guide_number: g609
 Os servidores DNS alojam a configuração DNS de um nome de domínio. Numa utilização clássica, esta configuração permite fazer a ligação entre o seu nome de domínio e os servidores que alojam o seu website e os seus endereços de e-mail. Nos últimos anos, os piratas informáticos aperfeiçoaram os métodos de “envenenamento” dos servidores DNS, o que lhe permite desviar o tráfego para outros servidores.  O serviço DNSSEC permite proteger o domínio contra este tipo de ações.
 
 **Saiba como ativar o DNSSEC no seu domínio para o proteger do “cache poisoning”.**  
-Para compreender como funciona esta proteção, aconselhamos que consulte a seguinte página: “[Serviço DNSSEC](https://www.ovh.pt/dominios/servico_dnssec.xml){.external}”.
+Para compreender como funciona esta proteção, aconselhamos que consulte a seguinte página: “[Serviço DNSSEC](https://www.ovhcloud.com/pt/domains/dnssec/){.external}”.
 
 ## Requisitos
 

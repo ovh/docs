@@ -14,7 +14,7 @@ order: 4
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVH](https://www.ovh.pt/alojamento-partilhado/){.external} compatível.
+- Ter um serviço de [alojamento web OVH](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
@@ -36,7 +36,7 @@ order: 4
 
 ### Conexões simultâneas à base de dados
 
-- Nas ofertas de alojamento web (bases de dados partilhadas), há um limite de 30 conexões simultâneas por base de dados (200 se for a base de dados privada já incluída). Consulte as nossas [ofertas de alojamento](https://www.ovh.pt/alojamento-partilhado/) para conhecer as opções disponíveis em cada plano de alojamento web.
+- Nas ofertas de alojamento web (bases de dados partilhadas), há um limite de 30 conexões simultâneas por base de dados (200 se for a base de dados privada já incluída). Consulte as nossas [ofertas de alojamento](https://www.ovhcloud.com/pt/web-hosting/) para conhecer as opções disponíveis em cada plano de alojamento web.
 
 - Também pode encomendar bases de dados **Private SQL** suplementares, que dispõem de opções de personalização:
 
@@ -44,7 +44,7 @@ order: 4
 
     - *max_user_connections*: 50 de forma padrão, com a possibilidade de passar para 200
 
-Para saber mais, consulte as nossas [ofertas de alojamento](https://www.ovh.pt/alojamento-partilhado/) e este [guia](https://docs.ovh.com/pt/hosting/sql-privado-primeira-utilizacao/).
+Para saber mais, consulte as nossas [ofertas de alojamento](https://www.ovhcloud.com/pt/web-hosting/) e este [guia](https://docs.ovh.com/pt/hosting/sql-privado-primeira-utilizacao/).
 
 #### Conexões a partir de um servidor externo
 
@@ -65,7 +65,7 @@ Para mais informações sobre a gestão das bases de dados, consulte o guia [Cri
 
 ### PHP
 
-- É recomendável que consulte as nossas [ofertas de alojamento web](https://www.ovh.pt/alojamento-partilhado/php.xml) a fim de assegurar que o serviço de alojamento web que deseja encomendar se adequa às suas necessidades.
+- É recomendável que consulte as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/uc-programming-language/) a fim de assegurar que o serviço de alojamento web que deseja encomendar se adequa às suas necessidades.
 
 - Verifique os detalhes de configuração do seu alojamento web. Para isso, consulte a rubrica «Informações técnicas do seu alojamento web», mais abaixo neste guia. 
 

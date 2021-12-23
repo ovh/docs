@@ -26,7 +26,7 @@ Istnieje bardzo wiele programów umożliwiających połączenie za pomocą proto
 
 #### Windows
 
-- [Putty](http://www.putty.org/){.external} (darmowy)
+- [PuTTY](http://www.putty.org/){.external} (darmowy)
 - [MobaXterm](https://mobaxterm.mobatek.net/) (wersja darmowa i płatna)
 - [SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (płatny)
 

@@ -33,7 +33,7 @@ Esta es la lista de programas incluidos en la siguiente:
 
 ### Contratar una licencia
 
-Acceda a nuestra web de [OVHcloud.com](https://www.ovh.es/office-365/){.external} y seleccione el apartado "Herramientas colaborativas" de nuestra sección "Web Cloud".
+Acceda a nuestra web de [OVHcloud.com](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/){.external} y seleccione el apartado "Herramientas colaborativas" de nuestra sección "Web Cloud".
 
 También puede contratar una licencia desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Una vez conectado, seleccione `Web Cloud`{.action} en la barra superior y haga clic en el botón `Contratar`{.action} y en `o365`{.action}.
 

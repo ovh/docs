@@ -48,9 +48,9 @@ Para resolver esta anomalia, deverá:
 
 #### Verificar o endereço IP do alojamento
 
-As mensagens de erro mencionadas [acima](#objective) não significam necessariamente que o seu site está alojado numa das nossas [ofertas Web Cloud](https://www.ovh.pt/alojamento-partilhado/). Por isso, verifique o endereço IP do servidor ao qual está ligado o seu [nome de domínio](https://www.ovh.pt/dominios/).
+As mensagens de erro mencionadas [acima](#objective) não significam necessariamente que o seu site está alojado numa das nossas [ofertas Web Cloud](https://www.ovhcloud.com/pt/web-hosting/). Por isso, verifique o endereço IP do servidor ao qual está ligado o seu [nome de domínio](https://www.ovhcloud.com/pt/domains/).
 
-Para encontrar o endereço IP do seu [alojamento OVHcloud](https://www.ovh.pt/alojamento-partilhado/), clique no topo do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) nos `Web Cloud`{.action} e, no menu à esquerda, nos `Alojamentos`{.action} e escolha o alojamento em causa.
+Para encontrar o endereço IP do seu [alojamento OVHcloud](https://www.ovhcloud.com/pt/web-hosting/), clique no topo do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) nos `Web Cloud`{.action} e, no menu à esquerda, nos `Alojamentos`{.action} e escolha o alojamento em causa.
 
 No separador `Informações gerais`{.action}, tome nota do endereço IPV4 e/ou IPV6 do seu alojamento.
 
@@ -58,7 +58,7 @@ No separador `Informações gerais`{.action}, tome nota do endereço IPV4 e/ou I
 
 #### Verificar o endereço IP na zona DNS
 
-Agora tem de verificar que o endereço IP indicado na [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns) corresponde ao do seu [alojamento Web Cloud](https://www.ovh.pt/alojamento-partilhado/).
+Agora tem de verificar que o endereço IP indicado na [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns) corresponde ao do seu [alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/).
 
 Clique em `Noms de domínio`{.action} na parte superior à esquerda do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione o nome de domínio do seu site.
 
@@ -85,7 +85,7 @@ No separador `Informações gerais`{.action} do seu alojamento OVHcloud, verifiq
 
 #### Cenário 1: o seu alojamento não contém um certificado SSL
 
-Ative um [certificado SSL](https://www.ovh.pt/ssl/) no seu alojamento, seguindo as instruções deste [guia](../os-certificados-ssl-nos-alojamentos-web/).
+Ative um [certificado SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/) no seu alojamento, seguindo as instruções deste [guia](../os-certificados-ssl-nos-alojamentos-web/).
 
 #### Cenário 2: o certificado SSL do seu alojamento não funciona
 

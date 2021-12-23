@@ -28,7 +28,7 @@ E-Mail Pro Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingeri
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [E-Mail Pro Account](https://www.ovh.de/emails/email-pro/).
+- Sie verfügen über einen [E-Mail Pro Account](https://www.ovhcloud.com/de/emails/email-pro/).
 - Thunderbird ist auf Ihrem Windows-System installiert.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
  

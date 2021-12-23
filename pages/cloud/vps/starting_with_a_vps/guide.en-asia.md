@@ -22,9 +22,9 @@ If you encounter any difficulties performing these actions, please contact a spe
 
 ## Requirements
 
-- a [Virtual Private Server](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- login credentials received via email after the installation
+- A [Virtual Private Server](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Login credentials received via email after the installation
 
 ## Instructions
 

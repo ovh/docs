@@ -14,7 +14,7 @@ section: 'Web Hosting configuration'
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
@@ -36,7 +36,7 @@ section: 'Web Hosting configuration'
 
 #### Simultaneous Database Connections
 
-- On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (200 with the included Private SQL database). Plese refer to the [product page](https://www.ovh.co.uk/web-hosting/) to verify the available options of our Web Hosting plans.
+- On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (200 with the included Private SQL database). Plese refer to the [product page](https://www.ovhcloud.com/en-gb/web-hosting/) to verify the available options of our Web Hosting plans.
 
 - You can also order additional **Private SQL** databases, which have some customisation options:
 
@@ -44,7 +44,7 @@ section: 'Web Hosting configuration'
 
     - *max_user_connections*: 50 by default, with the possibility of increasing to 200
 
-Find out more on our [website](https://www.ovh.co.uk/web-hosting/sql-options.xml) and in [our guide](../getting-started-with-private-sql/).
+Find out more on our [website](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) and in [our guide](../getting-started-with-private-sql/).
 
 
 #### Connections from an external server
@@ -66,7 +66,7 @@ Please refer to [this guide](../creating-database/) for more information about m
 
 ### PHP
 
-- We recommend to consult [our website](https://www.ovh.co.uk/web-hosting/php.xml) to make sure the Web Hosting plan you would like to order will be appropriate for your hosting requirements.
+- We recommend to consult [our website](https://www.ovhcloud.com/en-gb/web-hosting/uc-programming-language/) to make sure the Web Hosting plan you would like to order will be appropriate for your hosting requirements.
 
 - You can verify the details of the configuration on our website; please see under [Web Hosting libraries](./#web-hosting-libraries) below. 
 

@@ -23,7 +23,7 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 
 ## Requirements
 
-- a [Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external} 
+- a [Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external} 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 

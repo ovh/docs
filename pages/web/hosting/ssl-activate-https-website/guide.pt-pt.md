@@ -16,7 +16,7 @@ Graças ao alojamento web da OVH, pode beneficiar de um certificado SSL. Este ú
 
 ## Requisitos
 
-- Ter um [certificado SSL](https://www.ovh.com/pt/ssl/){.external} instalado no [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Ter um [certificado SSL](https://www.ovh.com/pt/ssl/){.external} instalado no [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Dispor de, pelo menos, um website instalado e acessível no alojamento web da OVH.
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 

@@ -108,7 +108,7 @@ Modifique el archivo para que refleje la configuración que se muestra a continu
 
 - Distribuciones antiguas:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -123,7 +123,7 @@ iface eth0 inet static
 
 - Distribuciones recientes:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -138,7 +138,7 @@ iface eth0 inet static
 
 Si su sistema utiliza nombres de interfaz de red predecibles, también puede `reemplazar "eth0`". Para encontrar los nombres de la interfaz de red, utilice el siguiente comando:
 
-```sh
+```bash
 ls /sys/class/net
 ```
 
@@ -148,7 +148,7 @@ Guarde y cierre el archivo y reinicie la máquina virtual.
 
 Abra un terminal en su máquina virtual. Una vez conectado, abra el archivo de configuración de red de la máquina virtual. que se encuentra en `/etc/network/interfaces`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
 
-```sh
+```console
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
@@ -167,7 +167,7 @@ Ahora guarde y cierre el archivo.
 
 A continuación, abra el archivo de enrutado de la máquina virtual. Este se encuentra en `/etc/sysconfig/network-scripts/route-eth0`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
 
-```bash
+```console
 GATEWAY_IP dev eth0
 default via GATEWAY_IP dev eth0
 ```
@@ -183,7 +183,7 @@ Guarde y cierre el archivo y reinicie la máquina virtual.
 
 Abra un terminal en su máquina virtual. Una vez conectado, abra el archivo de configuración de red de la máquina virtual, que se encuentra en `/etc/sysconfig/network-scripts/ifcfg-(nombre de la interfaz)`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
 
-```sh
+```console
 DEVICE=(interfaz-name)
 BOOTPROTO=none
 ONBOOT=yes
@@ -222,7 +222,7 @@ Una vez que haya guardado y cerrado el archivo, reinicie su red o su máquina vi
 
 Abra un terminal en su máquina virtual. Una vez conectado, abra el archivo de configuración de red de la máquina virtual situado en la carpeta `/etc/rc.conf`. Modifique el archivo para que refleje la configuración que se muestra a continuación. En este ejemplo, el nombre de la interfaz es "em0". Puede modificarlo si fuera necesario.
 
-```bash
+```console
 ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
 static_route="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
@@ -231,7 +231,7 @@ route_net2="default GATEWAY_IP"
 
 Guarde y cierre el archivo. A continuación, edite el archivo `/etc/resolv.conf`. Créelo si es necesario.
 
-```sh
+```console
 nameserver 213.186.33.99
 ```
 
@@ -241,13 +241,13 @@ Guarde y cierre el archivo y reinicie la máquina virtual.
 
 En primer lugar, conéctese a su máquina virtual por SSH y abra el archivo de configuración de red situado en `/etc/netplan/` utilizando el siguiente comando. A efectos de demostración, nuestro archivo se denomina "50-cloud-init.yaml".
 
-```sh
+```bash
 # nano /etc/netplan/50-cloud-init.yaml
 ```
 
 Una vez abierto el archivo, cambie el archivo con el siguiente código:
 
-```sh
+```yaml
 network:
     ethernets:
         (nombre-interfaz):
@@ -267,7 +267,7 @@ network:
 
 Una vez realizados los cambios, guarde y cierre el archivo y ejecute el siguiente comando:
 
-```sh
+```bash
 # netplan try
 Warning: Stopping systemd-networkd.service, but it can still be activated by:
   systemd-networkd.socket

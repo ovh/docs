@@ -29,7 +29,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 ## Requisitos
 
-- Ter uma [conta E-mail Pro](https://www.ovh.pt/emails/email-pro/){.external}.
+- Ter uma [conta E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
 - Ter a aplicação Mail instalada no seu dispositivo iOS.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
@@ -73,7 +73,7 @@ Caso a aplicação lhe solicite para inserir manualmente alguns dados técnicos 
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud também disponibiliza uma aplicação web com [funcionalidades de colaboração](https://www.ovh.pt/emails/){.external} acessível em <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
+A OVHcloud também disponibiliza uma aplicação web com [funcionalidades de colaboração](https://www.ovhcloud.com/pt/emails/){.external} acessível em <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
 
 > [!primary]
 >

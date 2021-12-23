@@ -30,7 +30,7 @@ Die Fehlermeldung `Seite nicht installiert` bedeutet entweder, dass die DNS-Zone
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über die erforderlichen Berechtigungen zum Verwalten der [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/) des Domainnamens.
 

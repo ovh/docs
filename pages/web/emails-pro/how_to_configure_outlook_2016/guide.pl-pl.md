@@ -28,7 +28,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external}
+- Posiadanie konta e-mail [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external}
 - Posiadanie programu Microsoft Outlook lub późniejszego.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 

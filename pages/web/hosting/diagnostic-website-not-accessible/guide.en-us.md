@@ -116,7 +116,7 @@ In this step, you will find your hosting plan’s IP address, then add it to you
 
 If your site is not hosted on the OVHcloud infrastructure or is managed by another provider, please contact the concerned support service.
 
-If your site is hosted on one of our [Cloud web offers](https://www.ovh.com/world/web-hosting/), click on the `Hosting plans`{.action} tab on the left-hand side of your screen and choose the web hosting offer which contains your website.
+If your site is hosted on one of our [Cloud web offers](https://www.ovhcloud.com/en/web-hosting/), click on the `Hosting plans`{.action} tab on the left-hand side of your screen and choose the web hosting offer which contains your website.
 
 In the `General information`{.action} tab, copy the IPV4 and/or IPV6 address of your domain name.
 

@@ -16,7 +16,7 @@ Si vous souhaitez augmenter la sécurité de votre compte Exchange, vous pouvez 
 
 ## Prérequis
 
-- Disposer d'une offre [Exchange OVHcloud](https://www.ovh.com/fr/emails/){.external}.
+- Disposer d'une offre [Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/){.external}.
 - Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir installé une application OTP sur un smartphone ou une tablette Android ou iOS.
 

@@ -22,7 +22,7 @@ Para evitar las transferencias de dominio no autorizadas, los dominios suelen es
 
 ## Requisitos
 
-- Tener un [dominio](https://www.ovh.es/dominios/) registrado con OVHcloud.
+- Tener un [dominio](https://www.ovhcloud.com/es-es/domains/) registrado con OVHcloud.
 - Estar facultado para solicitar la transferencia del dominio. El propietario y las personas que lo administren deben haber sido informados.
 - Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - El registro del dominio en cuestión data de hace al menos 60 días y no ha sido transferido ni intercambiado (es decir, el cambio de propietario) en los últimos 60 días.
@@ -43,7 +43,7 @@ Para evitar las transferencias de dominio no autorizadas, los dominios suelen es
 > En caso de duda, le recomendamos que consulte los siguientes recursos:
 >
 > - el sitio web del registro TLD correspondiente;
-> - la [lista de TLD disponibles en OVHcloud](https://www.ovh.es/dominios/precios/);
+> - la [lista de TLD disponibles en OVHcloud](https://www.ovhcloud.com/es-es/domains/tld/);
 > - [Las explicaciones de la ICANN sobre los códigos de estado EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (para saber qué códigos de estado se aplican actualmente a su nombre de dominio, realice una búsqueda *Whois*, utilizando preferentemente el sitio web del registro TLD correspondiente);
 > - el sitio web y la interfaz de gestión de su nuevo agente registrador, especialmente en lo que respecta a las cuestiones relativas a un proceso de transferencia pendiente.
 >

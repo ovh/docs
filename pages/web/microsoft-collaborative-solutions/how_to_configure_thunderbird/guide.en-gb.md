@@ -24,7 +24,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- an [OVHcloud Exchange account](https://www.ovh.co.uk/emails/hosted-exchange/)
+- an [OVHcloud Exchange account](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/)
 - Thunderbird software installed on your Windows system
 - login credentials for the email account to be configured
  

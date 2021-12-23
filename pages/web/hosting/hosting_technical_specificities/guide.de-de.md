@@ -34,7 +34,7 @@ section: 'Webhosting-Konfiguration'
 
 ### Simultane Verbindungen mit der Datenbank
 
-- Für Webhosting Angebote (geteilte Datenbanken) gilt ein Limit von 30 simultanen Verbindungen je Datenbank (200 bei enthaltener Private SQL Datenbank). Die verfügbaren Optionen für die einzelnen Webhosting Angebote können Sie auf der [Webhosting Produktseite](https://www.ovh.de/hosting/) nachlesen.
+- Für Webhosting Angebote (geteilte Datenbanken) gilt ein Limit von 30 simultanen Verbindungen je Datenbank (200 bei enthaltener Private SQL Datenbank). Die verfügbaren Optionen für die einzelnen Webhosting Angebote können Sie auf der [Webhosting Produktseite](https://www.ovhcloud.com/de/web-hosting/) nachlesen.
 
 - Darüber hinaus können Sie auch zusätzliche **Private SQL** Datenbanken bestellen und weiter anpassen:
 
@@ -42,7 +42,7 @@ section: 'Webhosting-Konfiguration'
 
     - *max_user_connections*: standardmäßig 50, bis zu 200 möglich
 
-Weitere Informationen hierzu finden Sie auf der [Webhosting Produktseite](https://www.ovh.de/hosting/) und in unserer [Anleitung](../erste-schritte-mit-sql-private/).
+Weitere Informationen hierzu finden Sie auf der [Webhosting Produktseite](https://www.ovhcloud.com/de/web-hosting/) und in unserer [Anleitung](../erste-schritte-mit-sql-private/).
 
 #### Verbindungen über einen externen Server
 
@@ -63,7 +63,7 @@ Weitere Informationen zur Verwaltung von Datenbanken finden Sie in der Anleitung
 
 ### PHP
 
-- Wir empfehlen Ihnen, die Details der [Webhosting Angebote](https://www.ovh.de/hosting/php.xml) auf unserer Website nachzulesen, um sicherzustellen, dass das gewünschte Angebot Ihren Anforderungen entspricht.
+- Wir empfehlen Ihnen, die Details der [Webhosting Angebote](https://www.ovhcloud.com/de/web-hosting/uc-programming-language/) auf unserer Website nachzulesen, um sicherzustellen, dass das gewünschte Angebot Ihren Anforderungen entspricht.
 
 - Sie können die Konfigurationsdetails Ihres Webhostings überprüfen. Gehen Sie hierzu zum Abschnitt [„Technische Konfigurationen der Webhostings“](./#technische-konfigurationen-der-webhostings) am Ende dieser Anleitung. 
 

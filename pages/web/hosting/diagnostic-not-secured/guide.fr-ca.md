@@ -44,9 +44,9 @@ Afin de résoudre cette anomalie, vous devrez :
 
 #### Vérifier l'adresse IP de l'hébergement
 
-Les messages d'erreur mentionnés [plus haut](#objectif) ne signifient pas forcément que votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovh.com/ca/fr/hebergement-web/). Vous devez donc vérifier l'adresse IP du serveur auquel est relié votre [nom de domaine](https://www.ovh.com/ca/fr/domaines/).
+Les messages d'erreur mentionnés [plus haut](#objectif) ne signifient pas forcément que votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/). Vous devez donc vérifier l'adresse IP du serveur auquel est relié votre [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/).
 
-Pour retrouver l'adresse IP de votre [hébergement OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/), cliquez en haut de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) sur `Web Cloud`{.action} puis, dans le menu de gauche, sur `Hébergements`{.action} et choisissez l'hébergement concerné.
+Pour retrouver l'adresse IP de votre [hébergement OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/), cliquez en haut de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) sur `Web Cloud`{.action} puis, dans le menu de gauche, sur `Hébergements`{.action} et choisissez l'hébergement concerné.
 
 Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IPV6 de votre hébergement.
 
@@ -54,7 +54,7 @@ Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IP
 
 #### Vérifier l'adresse IP dans la zone DNS
 
-Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) correspond bien à celle de votre [hébergement Web Cloud](https://www.ovh.com/ca/fr/hebergement-web/).
+Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) correspond bien à celle de votre [hébergement Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
 
 Cliquez sur `Noms de domaine`{.action} en haut à gauche de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez le nom de domaine de votre site.
 

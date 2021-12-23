@@ -15,7 +15,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili p
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange](https://www.ovh.it/emails/){.external}
+- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/){.external}
 - Aver installato l'applicazione Microsoft Outlook sul proprio Mac
 - Disporre delle credenziali associate allíaccount email da configurare
 
@@ -56,7 +56,7 @@ Per verificare la corretta configurazione dell'account esegui un test di invio.
 
 Una volta configurato l'indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovh.it/emails/){.external}. Accedi a questo link [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} utilizzando le credenziali del tuo account.
+OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}. Accedi a questo link [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} utilizzando le credenziali del tuo account.
 
 ## Per saperne di più
 

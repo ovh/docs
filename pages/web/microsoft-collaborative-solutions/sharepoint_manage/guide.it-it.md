@@ -16,7 +16,7 @@ Le offerte SharePoint ti consentono di usufruire di uno spazio di storage condiv
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Aver attivato un’offerta [Hosted Exchange](https://www.ovh.it/emails/hosted-exchange/){.external} per poter ordinare una piattaforma SharePoint associata.
+- Aver attivato un’offerta [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external} per poter ordinare una piattaforma SharePoint associata.
 
 ## Procedura
 

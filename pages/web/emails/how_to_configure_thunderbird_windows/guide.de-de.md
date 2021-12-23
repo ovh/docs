@@ -27,7 +27,7 @@ MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingericht
 
 ## Voraussetzungen
 
-- Sie verfügen über eine MX Plan E-Mail-Adresse (als MX Plan Dienst oder in einem [OVHcloud Webhosting](https://www.ovh.de/hosting/) enthalten).
+- Sie verfügen über eine MX Plan E-Mail-Adresse (als MX Plan Dienst oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
 - Thunderbird ist auf Ihrem Windows-System installiert.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 

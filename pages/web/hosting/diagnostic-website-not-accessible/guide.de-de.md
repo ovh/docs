@@ -118,7 +118,7 @@ In diesem Schritt ermitteln Sie die IP-Adresse Ihres Hostings und fügen sie zu 
 
 Wenn Ihre Website nicht auf der OVHcloud Infrastruktur gehostet ist oder von einem anderen Anbieter verwaltet wird, kontaktieren Sie bitte den zuständigen Support.
 
-Wenn Ihre Website auf einem unserer [Hosting-Angebote](https://www.ovh.de/hosting/) gehostet wird, klicken Sie links auf den Tab `Hosting-Pakete`{.action} und anschließend auf das entsprechende Angebot.
+Wenn Ihre Website auf einem unserer [Hosting-Angebote](https://www.ovhcloud.com/de/web-hosting/) gehostet wird, klicken Sie links auf den Tab `Hosting-Pakete`{.action} und anschließend auf das entsprechende Angebot.
 
 Kopieren Sie im Tab `Allgemeine Informationen`{.action} die IPv4- und/oder IPv6-Adresse Ihrer Domain.
 

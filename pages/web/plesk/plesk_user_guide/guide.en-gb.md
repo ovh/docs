@@ -114,7 +114,7 @@ These limitations are only linked to the demo account and will not be present on
 ## Order, delivery and renewal of service
 
 ### Order a Plesk Web Hosting
-1. Go to [the Plesk Web Hosting page](https://www.ovh.co.uk/plesk-webhosting/){.external}
+1. Go to [the Plesk Web Hosting page](https://www.ovhcloud.com/en-gb/plesk-web-hosting/){.external}
 1. Then choose the offer that suits your needs by clicking on the button "**Order**"
 1. You will see on the next page a preview of your order, click on "**Purchase**"
 1. Please log in if you already have an OVH customer account. You can create one if you do not.

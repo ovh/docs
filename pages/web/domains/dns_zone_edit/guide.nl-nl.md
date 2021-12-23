@@ -104,6 +104,6 @@ U kunt ook de TTL van een individueel DNS-record wijzigen. U kunt dit slechts vo
 
 [Toevoegen van een SPF-veld aan de configuratie van uw domeinnaam](https://docs.ovh.com/nl/domains/het_spf_veld/){.external}.
 
-[Bescherm uw data tegen DNS Cache Poisoning met DNSSEC](https://www.ovh.nl/domains/dnssec_dienst.xml){.external}.
+[Bescherm uw data tegen DNS Cache Poisoning met DNSSEC](https://www.ovhcloud.com/nl/domains/dnssec/){.external}.
 
 Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

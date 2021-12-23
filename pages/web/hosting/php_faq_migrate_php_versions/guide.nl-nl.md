@@ -17,7 +17,7 @@ Zoals alle programmeertalen, blijft PHP evolueren. De wijzigingen brengen nieuwe
 Deze oudere versies worden niet onderhouden en vormen dus  veiligheidsrisico's voor OVH en zijn gebruikers, daarom gaan we deze deactiveren.
 Wat zijn de voordelen van de overgang naar de nieuwe PHP-versies voor de gebruiker?
 Door het migreren van uw site naar de meest recente PHP versies, zult u minder risico lopen op veiligheidsrisico's (pirating), terwijl u gebruik kunt gaan maken van nieuwe functies en onze support.
-Bovendien biedt OVH gratis PHP-FPM optimalisatie om uw prestaties te verbeteren (vanaf versie 5.3), klik [hier](https://www.ovh.com/fr/hebergement-web/optimisation-php-fpm.xml) voor meer informatie.
+Bovendien biedt OVH gratis PHP-FPM optimalisatie om uw prestaties te verbeteren (vanaf versie 5.3), klik [hier](https://www.ovhcloud.com/fr/web-hosting/optimisation-php-fpm.xml) voor meer informatie.
 Welke versies betreft het en vanaf wanneer worden deze gedeactiveerd?
 Hieronder vindt u de getroffen versies:
 

@@ -16,7 +16,7 @@ Si desea optimizar la seguridad de su cuenta Exchange, puede activar la doble au
 
 ## Requisitos
 
-- Tener un plan [Exchange de OVHcloud](https://www.ovh.es/emails/){.external}.
+- Tener un plan [Exchange de OVHcloud](https://www.ovhcloud.com/es-es/emails/){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Haber instalado una aplicación OTP en un teléfono inteligente o en una tableta con sistema operativo Android o iOS.
 

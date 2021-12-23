@@ -44,9 +44,9 @@ To solve this issue, you will need to:
 
 #### Check the hosting IP address
 
-The error messages mentioned [above](#objective) do not necessarily mean that your website is hosted on one of our [Web Cloud offers](https://www.ovh.com/world/web-hosting/). For this reason, you will need to check the IP address of the server your [domain name](https://www.ovh.com/world/domains/) is attached to.
+The error messages mentioned [above](#objective) do not necessarily mean that your website is hosted on one of our [Web Cloud offers](https://www.ovhcloud.com/en/web-hosting/). For this reason, you will need to check the IP address of the server your [domain name](https://www.ovhcloud.com/en/domains/) is attached to.
 
-To find the IP address of your [OVHcloud hosting plan](https://www.ovh.com/world/web-hosting/), click on `Web Cloud`{.action} in the top of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), then on `Hosting plans`{.action} in the left-hand menu.
+To find the IP address of your [OVHcloud hosting plan](https://www.ovhcloud.com/en/web-hosting/), click on `Web Cloud`{.action} in the top of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), then on `Hosting plans`{.action} in the left-hand menu.
 
 In the `General information`{.action} tab, note the IPV4 and/or IPV6 address of your Web hosting.
 
@@ -54,7 +54,7 @@ In the `General information`{.action} tab, note the IPV4 and/or IPV6 address of 
 
 #### Check the IP address in the DNS zone
 
-You now need to check that the IP address listed in the [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) corresponds to the one of your [Web Cloud hosting plan](https://www.ovh.com/world/web-hosting/).
+You now need to check that the IP address listed in the [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) corresponds to the one of your [Web Cloud hosting plan](https://www.ovhcloud.com/en/web-hosting/).
 
 Click on `Domain names`{.action} in the top left-hand corner of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select your website’s domain name.
 
@@ -81,7 +81,7 @@ In the `General information`{.action} tab of the concerned hosting plan within y
 
 #### Scenario 1: your web hosting plan does not contain any SSL certificate
 
-Activate an [SSL certificate](https://www.ovh.com/world/web-hosting/shared-ssl.xml) on your Web Hosting plan by following the instructions in this [guide](../ssl-certificates-on-web-hosting-plans/).
+Activate an [SSL certificate](https://www.ovhcloud.com/en/web-hosting/options/ssl/) on your Web Hosting plan by following the instructions in this [guide](../ssl-certificates-on-web-hosting-plans/).
 
 #### Scenario 2: the SSL certificate on your Web hosting plan does not work
 

@@ -18,13 +18,13 @@ Nem sempre convém delegar o uso ilimitado de uma conta de e-mail. A funcionalid
 
 > [!primary]
 >
-> Embora este guia se refira aos nossos serviços Exchange, as instruções aplicam-se igualmente às contas [E-mail Pro](https://www.ovh.pt/emails/email-pro/).
+> Embora este guia se refira aos nossos serviços Exchange, as instruções aplicam-se igualmente às contas [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
 >
 
 
 ## Requisitos
 
-- Dispor de um serviço [Exchange OVHcloud](https://www.ovh.pt/emails/hosted-exchange/).
+- Dispor de um serviço [Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
 - Ter acesso à conta Exchange (com endereço de e-mail e palavra-passe).
 
 

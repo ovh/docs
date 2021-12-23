@@ -15,7 +15,7 @@ With an OVH Web Hosting plan, you get a storage space to host your websites on. 
 
 ## Requirements
 
-- a [Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} (please note that this does not work with Cloud Web)
+- a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} (please note that this does not work with Cloud Web)
 - Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, or have the FTP user password required to access your storage space. 
 
 ## Instructions

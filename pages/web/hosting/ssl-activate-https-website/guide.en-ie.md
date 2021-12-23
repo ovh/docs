@@ -16,7 +16,7 @@ With an OVH Web Hosting plan, you can get a free SSL certificate. An SSL certifi
 
 ## Requirements
 
-- an [SSL certificate](https://www.ovh.co.uk/ssl/){.external} set up on your [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}
+- an [SSL certificate](https://www.ovhcloud.com/en-ie/web-hosting/options/ssl/){.external} set up on your [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}
 - at least one website set up and accessible via your OVH Web Hosting plan
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 

@@ -19,7 +19,7 @@ Usługi Hosted Exchange i Private Exchange umożliwiają elastyczne zarządzenie
 ## Wymagania początkowe
 
 - Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Wykupienie usługi [Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external}.
+- Wykupienie usługi [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}.
 
 ## W praktyce
 

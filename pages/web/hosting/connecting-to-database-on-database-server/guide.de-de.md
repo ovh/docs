@@ -16,14 +16,14 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein entsprech
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [SQL Private Webhosting](https://www.ovh.de/hosting/sql-optionen.xml) oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie verfügen über ein [SQL Private Webhosting](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Beachten Sie, dass die Dienste [SQL Private](https://www.ovh.de/hosting/sql-optionen.xml) und [Cloud Databases](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Host gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
+> Beachten Sie, dass die Dienste [SQL Private](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und [Cloud Databases](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Host gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 > 
 
 ### Mit einer MySQL oder MariaDB Datenbank verbinden 

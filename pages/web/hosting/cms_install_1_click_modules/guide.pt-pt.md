@@ -15,7 +15,7 @@ Os Módulos 1 clique permitem instalar um CMS, uma ferramenta para criar um site
 
 ## Requisitos
 
-- Dispor de um serviço de [alojamento web](https://www.ovh.pt/alojamento-partilhado/).
+- Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth//).
 - Aceder à secção multisite e adicionar o domínio (ou subdomínio) que ficará associado ao seu site.
 - O diretório (pasta) onde o módulo será instalado tem que estar vazio.
@@ -26,9 +26,9 @@ Os Módulos 1 clique permitem instalar um CMS, uma ferramenta para criar um site
 
 Um CMS (Content Management System) é uma interface que permite criar e editar um site de forma muito simples. Com um CMS, toda a gente pode criar e gerir um site. Cada CMS tem vantagens ou funcionalidades diferentes, adequadas às necessidades de cada tipo de site (e.g. blogue, loja online, site normal). Com um CMS pode criar um site personalizado. Basta escolher um dos temas (designs) disponíveis, e adicionar texto, imagens....
 
-A OVH disponibiliza 4 CMS que podem ser instalados com os módulos 1 clique. Antes de avançar com esta operação, escolha o CMS. De seguida, siga as instruções indicadas neste manual. Se precisar de ajuda, consulte [a nossa página de comparação entre CMS](https://www.ovh.pt/alojamento-partilhado/website/comparacao-cms/).
+A OVH disponibiliza 4 CMS que podem ser instalados com os módulos 1 clique. Antes de avançar com esta operação, escolha o CMS. De seguida, siga as instruções indicadas neste manual. Se precisar de ajuda, consulte [a nossa página de comparação entre CMS](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/).
 
-Para usar um CMS não incluído nos Módulos 1 clique, deverá instalá-lo manualmente. Este CMS terá que ser compatível com as características da sua oferta (e.g. versão PHP). Veja as várias ofertas [aqui](https://www.ovh.pt/alojamento-partilhado/)).
+Para usar um CMS não incluído nos Módulos 1 clique, deverá instalá-lo manualmente. Este CMS terá que ser compatível com as características da sua oferta (e.g. versão PHP). Veja as várias ofertas [aqui](https://www.ovhcloud.com/pt/web-hosting/)).
 
 ![Logo CMS](images/CMS_logo.png){.thumbnail}
 
@@ -135,13 +135,13 @@ Se precisar de ajuda para usar as funcionalidades de gestão do seu site, aceda 
 
 ## Quer saber mais? Clique nos links abaixo
 
-[Escolher um CMS para criar um *site*](https://www.ovh.pt/alojamento-partilhado/website/comparacao-cms/){.external}.
+[Escolher um CMS para criar um *site*](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/){.external}.
 
 [Como usar o meu alojamento com vários sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} (versão PT disponível em breve).
 
 [Gestão de uma base de dados a partir de um alojamento partilhado](https://docs.ovh.com/pt/hosting/gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external}
 
-Veja a nossa [oferta SQL Privé](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml){.external}
+Veja a nossa [oferta SQL Privé](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/){.external}
 
 Veja a nossa [oferta CloudDB](https://www.ovh.pt/cloud/cloud-databases/){.external}
 

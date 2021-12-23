@@ -16,7 +16,7 @@ Jeśli wykupiłeś hosting w OVH, możesz uzyskać bezpłatny certyfikat SSL. Ce
 
 ## Wymagania początkowe
 
-- Posiadanie [certyfikatu SSL](https://www.ovh.pl/ssl/){.external} zainstalowanego na [hostingu OVH](https://www.ovh.pl/hosting/){.external}
+- Posiadanie [certyfikatu SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external} zainstalowanego na [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Posiadanie co najmniej jednej strony WWW zainstalowanej i dostępnej na Twoim hostingu OVH
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
 

@@ -17,9 +17,9 @@ U heeft onlangs een webhosting plan aangeschaft om uw website te kunnen maken. M
 
 ## Vereisten
 
-- U moet beschikken over een [OVH-webhosting plan](https://www.ovh.nl/shared-hosting/){.external}.
+- U moet beschikken over een [OVH-webhosting plan](https://www.ovhcloud.com/nl/web-hosting/){.external}.
 - U moet een e-mail hebben ontvangen met daarin de bevestiging dat uw webhosting is geïnstalleerd.
-- U moet beschikken over een [domeinnaam](https://www.ovh.nl/domains/){.external}, wat het adres zal worden waarop uw website te vinden zal zijn.
+- U moet beschikken over een [domeinnaam](https://www.ovhcloud.com/nl/domains/){.external}, wat het adres zal worden waarop uw website te vinden zal zijn.
 - U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 ## Instructie
@@ -34,7 +34,7 @@ Met uw OVH-webhosting kunt u een nieuwe website bouwen of een bestaande website 
 
  U heeft de mogelijkheid uw eigen website te bouwen als u voldoende vaardigheden heeft om te programmeren, of door gebruik te maken van kant-en-klaar websites als CMS (Content Management System). De eerste oplossing vereist bepaalde technische vaardigheden, maar biedt de mogelijkheid een project meer op maat te bouwen. De tweede biedt de mogelijkheid gebruik te maken van een structuur die klaar is voor gebruik, zonder er veel  technische vaardigheden nodig te hebben.
 
-Vanuit het Control Panel biedt OVH de klant een tool waarmee deze met 1 klik een CMS kan installeren en kan kiezen uit WordPress, PrestaShop, Drupal en Joomla. Als u niet weet welke CMS het beste bij u past dan kan dit [vergelijkend overzicht](https://www.ovh.nl/shared-hosting/website/vergelijking-cms/){.external} u helpen bij uw keuze. Indien de CMS die u wilt installeren niet door OVH wordt aangeboden, kunt u deze handmatig op uw hosting installeren.
+Vanuit het Control Panel biedt OVH de klant een tool waarmee deze met 1 klik een CMS kan installeren en kan kiezen uit WordPress, PrestaShop, Drupal en Joomla. Als u niet weet welke CMS het beste bij u past dan kan dit [vergelijkend overzicht](https://www.ovhcloud.com/nl/web-hosting/uc-cms-comparison/){.external} u helpen bij uw keuze. Indien de CMS die u wilt installeren niet door OVH wordt aangeboden, kunt u deze handmatig op uw hosting installeren.
 
 - **Migratie van uw website naar OVH**
 
@@ -87,7 +87,7 @@ Er bestaat geen universeel stappenplan omdat de websites behoorlijk van elkaar k
 
 ### Stap 3: Creëer uw e-mailadressen 
 
-Deze stap is niet verplicht als u geen gebruik wenst te maken van de e-mailadressen die zijn inbegrepen bij uw [webhosting](https://www.ovh.nl/shared-hosting/){.external}. Om één of meer e-mailadressen aan te maken, dient u te zijn ingelogd op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga in het menu aan de linkerkant naar het gedeelte `E-mails`{.action}, en klik vervolgens op de naam van de webhosting die u hebt besteld. Klik vervolgens in de tab `E-mails`{.action} op de knop `Maak een e-mailadres aan`{.action}.
+Deze stap is niet verplicht als u geen gebruik wenst te maken van de e-mailadressen die zijn inbegrepen bij uw [webhosting](https://www.ovhcloud.com/nl/web-hosting/){.external}. Om één of meer e-mailadressen aan te maken, dient u te zijn ingelogd op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga in het menu aan de linkerkant naar het gedeelte `E-mails`{.action}, en klik vervolgens op de naam van de webhosting die u hebt besteld. Klik vervolgens in de tab `E-mails`{.action} op de knop `Maak een e-mailadres aan`{.action}.
 
 ![Een e-mailadres aanmaken](images/create_an_email_address.png){/thumbnail}
 

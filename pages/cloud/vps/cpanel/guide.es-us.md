@@ -5,7 +5,11 @@ slug: cpanel
 section: 'Uso avanzado'
 ---
 
-**Última actualización: 16/09/2021**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+**Última actualización: 14/10/2021**
 
 
 ## Objectivo
@@ -44,7 +48,7 @@ Una vez que reciba el email con el enlace único, por favor proceda al enlace pa
 
 > [!primary]
 >
-> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando "whmlogin" para generar un nuevo enlace.
+> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando "sudo whmlogin" para generar un nuevo enlace.
 >
 
 La URL anterior permite iniciar sesión sin credenciales (usuario y contraseña) en su administrador WHM.

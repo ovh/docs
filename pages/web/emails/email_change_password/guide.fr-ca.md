@@ -16,7 +16,7 @@ Les adresses e-mail de l’offre MX Plan vous permettent d’envoyer et de recev
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}, l'[hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external}, ou l'offre MX Plan commandée séparément.
+- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, l'[hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external}, ou l'offre MX Plan commandée séparément.
 - Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](https://www.ovh.com/ca/fr/mail/){.external} Outlook Web Messenger (OWA).
 
 > [!primary]
@@ -33,9 +33,9 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/a
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
 |![email](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement ».|![email](images/mxplan-password-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé ».|
-|Poursuivre vers « [Version historique de l'offre MX Plan](./#version-historique-de-loffre-mx-plan_2) ».|Poursuivre vers « [Nouvelle version de l'offre MX Plan](./#nouvelle-version-de-loffre-mx-plan) ».|
+|Poursuivre vers « [Version historique de l'offre MX Plan](#mx-legacy) ».|Poursuivre vers « [Nouvelle version de l'offre MX Plan](#mx-new) ».|
 
-### Nouvelle version de l'offre MX Plan
+### Nouvelle version de l'offre MX Plan <a name="mx-new"></a>
 
 Vous possédez la nouvelle version de l'offre MX Plan. Voici l'affichage que vous devez obtenir. Si ce n'est pas le cas, assurez-vous d'avoir suivi le bon cheminement [en vous reportant aux informations ci-dessus](./#en-pratique).  
 
@@ -89,7 +89,7 @@ Une fois le mot de passe modifié, vous pouvez accéder à l'adresse e-mail. Pou
 
 - **Utiliser un logiciel de messagerie compatible** : vous devez renseigner le nouveau mot de passe sur tous les appareils où l’adresse e-mail a été configurée. Pour cela, il se peut qu'une fenêtre apparaisse automatiquement, vous demandant de le renseigner. Dans le cas contraire, [aidez-vous de nos guides de configuration](../) ou rapprochez-vous de l'éditeur du logiciel ou de l'aplication que vous utilisez, cette manipulation étant inhérente à ce dernier.
 
-### Version historique de l'offre MX Plan
+### Version historique de l'offre MX Plan  <a name="mx-legacy"></a>
 
 Vous possédez la version historique de l'offre MX Plan. Voici l'affichage que vous devez obtenir. Si ce n'est pas le cas, assurez-vous d'avoir suivi le bon cheminement [en vous reportant aux informations ci-dessus](./#en-pratique). 
 

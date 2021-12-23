@@ -38,7 +38,7 @@ Besides the [three contacts](../../customer/managing-contacts/), you need to pro
 > We recommend to consult the following resources in case of any doubt:
 >
 > - the website of the respective TLD registry
-> - the [list of TLDs available at OVHcloud](https://www.ovh.ie/domains/prices/)
+> - the [list of TLDs available at OVHcloud](https://www.ovhcloud.com/en-ie/domains/tld/)
 > - the `Ongoing operations`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) to check any pending status updates of the domain name
 
 ### Step 1: Select the domain

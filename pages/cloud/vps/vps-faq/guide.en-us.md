@@ -56,7 +56,7 @@ This will help you make the right choice from our VPS solutions:
 
 Using a VPS requires basic knowledge of server administration. It is essential for managing the operating system (Linux or Windows) installed on the machine, and configuring the applications. Think you might need a VPS, but don’t have the technical knowledge required? We recommend getting in touch with one of our partners. 
 
-If you would like to get guaranteed resources but don't know how to manage servers, we would recommend Performance web [hosting plans](https://www.ovh.com/world/web-hosting/).
+If you would like to get guaranteed resources but don't know how to manage servers, we would recommend Performance web [hosting plans](https://www.ovhcloud.com/en/web-hosting/).
 
 ### How do I connect to my VPS?
 

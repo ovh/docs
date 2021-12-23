@@ -37,7 +37,7 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
 
 > [!primary]
 >
-> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando "whmlogin" para generar un nuevo enlace.
+> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando « sudo whmlogin » para generar un nuevo enlace.
 >
 
 <ol start="3">
@@ -53,7 +53,7 @@ No es necesario realizar ningún otro paso para finalizar la primera configuraci
 > [!faq]
 >
 > ¿Puedo utilizar mis propios servidores DNS?
->> Sí, puede. Asegúrese de crear los registros Glue con su agente registrador de dominios. Por ejemplo, si quiere "ns1.mydomain.com" y "ns2.mydomain.com", debe configurar los registros Glue para que ambos apunten a la dirección IP de su servidor. Si tiene su dominio registrado con OVHcloud, puede seguir [esta guía.](../../domains/glue_record/#1-anadir-los-registros-glue) La creación puede tardar 24 horas.
+>> Sí, puede. Asegúrese de crear los registros Glue con su agente registrador de dominios. Por ejemplo, si quiere "ns1.mydomain.com" y "ns2.mydomain.com", debe configurar los registros Glue para que ambos apunten a la dirección IP de su servidor. Si tiene su dominio registrado con OVHcloud, puede seguir [esta guía](../../domains/glue_record/#1-anadir-los-registros-glue) La creación puede tardar 24 horas.
 > ¿Por qué establecer la contraseña root?
 >> WHM utiliza por defecto el usuario root para la autenticación. La URL de un solo uso permite acceder a la primera configuración y cambiar la contraseña root. La próxima vez que se conecte a WHM, deberá utilizar el usuario root y la contraseña que haya establecido.
 > ¿Dónde está mi licencia para cPanel?
@@ -71,8 +71,6 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
     b) Una nueva contraseña para el usuario "admin" que utilizará para conectarse a la interfaz de Plesk.  
     c) Información sobre la licencia.*  
     d) Leer y aceptar los contratos de licencia de usuario.  
-
-No further steps are necessary to complete the first configuration of this application.
 
 No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
 
@@ -124,7 +122,7 @@ Si su dominio está registrado en OVHcloud, puede seguir [esta guía.](../../dom
 <br>Si su dominio está registrado con otra empresa, deberá contactar con ella para solicitar ayuda sobre la configuración de sus registros `A`.
 
 <ol start="2">
-  <li>Tal vez tengan que esperar 24 horas antes de que ambos registros se propaguen por completo. Todavía puede comprobarlo con [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx) {.external}. Si la dirección IP de su dominio aparece en mxtoolbox del mismo modo que la de su servidor, puede pasar a la siguiente etapa.</li>
+  <li>Tal vez tengan que esperar 24 horas antes de que ambos registros se propaguen por completo. Todavía puede comprobarlo con <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. Si la dirección IP de su dominio aparece en mxtoolbox del mismo modo que la de su servidor, puede pasar a la siguiente etapa.</li>
 
   <li>Conéctese al servidor por SSH con el usuario CentOS y ejecute los siguientes comandos para instalar Cura:</li>
 </ol>

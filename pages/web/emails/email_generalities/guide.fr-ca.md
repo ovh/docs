@@ -16,7 +16,7 @@ Vous venez d'acquérir une solution MX Plan. Celle-ci vous permet de bénéficie
 
 ## Prérequis
 
-- Posséder une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}, l'[hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external} ou l'offre MX Plan commandée séparément.
+- Posséder une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, l'[hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external} ou l'offre MX Plan commandée séparément.
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
@@ -64,7 +64,7 @@ Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utilise
 
 ##### 1. Utiliser le webmail Outlook Web Access (OWA)
 
-Accédez à la page « [Connexion au webmail]({ovh_www}/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
+Accédez à la page « [Connexion au webmail](https://www.ovh.com/ca/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
 Lors d'une première connexion au webmail, vous êtes invité à définir la langue de l'interface ainsi que le fuseau horaire sur lequel vous vous trouvez. Votre boîte de réception s'affiche ensuite. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail OWA, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)](../utilisation-owa/){.external} ».
 
@@ -129,7 +129,7 @@ Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utilise
 
 ##### 1. Utiliser le webmail RoundCube
 
-Accédez à la page « [Connexion au webmail]({ovh_www}/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
+Accédez à la page « [Connexion au webmail](https://www.ovh.com/ca/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
 Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail RoundCube, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](../utilisation-roundcube/){.external} ».
 

@@ -84,6 +84,12 @@ Prywatne sieci opierają się na technologii vRack używanej również przez inn
 
 Zapraszamy do zapoznania się z przewodnikiem [Konfiguracja usługi vRack Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/) (EN).
 
+### Czy mogę zmienić publiczny adres IP mojej instancji?
+
+Publiczne adresy IP są automatycznie przypisane do instancji i dlatego nie można ich zmienić. Zalecamy użycie adresu IP Failover, aby zarządzać publicznym adresem IP instancji. W ten sposób, bez względu na publiczny adres przypisany automatycznie do instancji, możesz dodać jeden lub kilka adresów IP failover do Twojej instancji.
+
+Zapraszamy do zapoznania się z przewodnikiem [Wykupienie adresu IP Failover](../wykupienie_adresu_ip_failover/).
+
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

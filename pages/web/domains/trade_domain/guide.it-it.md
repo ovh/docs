@@ -40,7 +40,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](../../customer/ges
 > In caso di dubbi, consulta queste risorse:
 >
 > - il sito web del registro TLD corrispondente;
-> - la [lista dei TLD disponibili su OVHcloud](https://www.ovh.it/domini/tariffe/);
+> - la [lista dei TLD disponibili su OVHcloud](https://www.ovhcloud.com/it/domains/tld/);
 > - sezione `Operazioni in corso`{.action} dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per verificare gli aggiornamenti dello stato del dominio.
 >
 

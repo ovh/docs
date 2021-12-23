@@ -10,13 +10,13 @@ order: 3
 
 ## Sumário
 
-Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja online, quer seja para partilhar uma paixão ou promover a sua atividade profissional, o seu [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} permite-lhe alojar o site que quiser, na medida em que seja compatível com a [configuração das nossas infraestruturas](https://webhosting-infos.hosting.ovh.net){.external}.
+Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja online, quer seja para partilhar uma paixão ou promover a sua atividade profissional, o seu [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external} permite-lhe alojar o site que quiser, na medida em que seja compatível com a [configuração das nossas infraestruturas](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Saiba como alterar a configuração do seu alojamento web da OVH a partir da Área de Cliente.**
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} (excluindo o Cloud Web).
+- Ter um serviço de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external} (excluindo o Cloud Web).
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
@@ -96,7 +96,7 @@ Existem duas possibilidades para realizar esta alteração:
 
 #### Versão de PHP
 
-Atualmente, existem várias versões da linguagem de programação PHP. As versões mais recentes incluem correções, e incorporam ou dispensam determinadas funcionalidades. A OVH propõe as principais versões mais recentes de PHP que poderá consultar na seguinte ligação: <https://www.ovh.pt/alojamento-partilhado/php.xml>.
+Atualmente, existem várias versões da linguagem de programação PHP. As versões mais recentes incluem correções, e incorporam ou dispensam determinadas funcionalidades. A OVH propõe as principais versões mais recentes de PHP que poderá consultar na seguinte ligação: <https://www.ovhcloud.com/pt/web-hosting/uc-programming-language/>.
 
 Uma vez que as novas versões podem não incluir determinadas funcionalidades, **certifique-se de que a nova versão de PHP é compatível com o seu website antes de realizar qualquer alteração.**
 

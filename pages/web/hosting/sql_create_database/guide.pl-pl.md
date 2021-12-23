@@ -16,7 +16,7 @@ Baza danych (DB, ang. database) służy do przechowywania tak zwanych elementów
 
 ## Wymagania początkowe
 
-- [pakiet hostingu WWW OVHcloud](https://www.ovh.pl/hosting/)
+- [pakiet hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
 - dostępna baza danych zawarta w Twojej usłudze hostingu WWW
 - dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) z uprawnieniami niezbędnymi do zarządzania hostingiem WWW 
 
@@ -42,7 +42,7 @@ W wyświetlonym oknie dialogowym wybierz odpowiednie informacje, a następnie kl
 
 |Informacje|Opis|  
 |---|---|  
-|Silnik bazy danych|Wybierz silnik, z którego będzie korzystać baza danych. W ramach usługi [hostingu WWW OVHcloud](https://www.ovh.pl/hosting/) są dostępne tylko bazy danych z silnikiem MySQL.|  
+|Silnik bazy danych|Wybierz silnik, z którego będzie korzystać baza danych. W ramach usługi [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) są dostępne tylko bazy danych z silnikiem MySQL.|  
 |Wersja bazy danych|Wybierz wersję silnika bazy danych. Sprawdź, czy Twoja strona internetowa jest zgodna z wybraną wersją. |  
 |Typ bazy danych|Wybierz rozmiar bazy danych. Rozmiar odnosi się do dostępnego miejsca na przechowywanie danych w bazie.|   
 
@@ -106,7 +106,7 @@ Aby sprawdzić, czy są dostępne migawki oraz ich sygnaturę czasową utworzeni
 
 **Zbyt dużo połączeń**
 
-Bazy danych w ramach hostingu WWW mają limit 30 jednoczesnych połączeń (zmienna systemowa *max_connections*). Aby zapobiec takim błędom, należy zoptymalizować żądania SQL. Jeśli mimo tego problem będzie się powtarzać, należy rozważyć podjęcie innych środków, tj. wybór prywatnej bazy danych SQL (Private SQL) lub [zmianę pakietu hostingu na wyższy](https://www.ovh.pl/hosting/jaki_hosting_wybrac.xml). 
+Bazy danych w ramach hostingu WWW mają limit 30 jednoczesnych połączeń (zmienna systemowa *max_connections*). Aby zapobiec takim błędom, należy zoptymalizować żądania SQL. Jeśli mimo tego problem będzie się powtarzać, należy rozważyć podjęcie innych środków, tj. wybór prywatnej bazy danych SQL (Private SQL) lub [zmianę pakietu hostingu na wyższy](https://www.ovhcloud.com/pl/web-hosting/uc-best-web-hosting/). 
 
 **Błędy połączenia typu „nie można znaleźć”**
 

@@ -12,7 +12,7 @@ section: Per iniziare
 
 ### Cosa fare se il tuo sito Web non funziona? 
 
-Il malfunzionamento del tuo sito Internet potrebbe essere dovuto a diversi motivi. Per capirne la causa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e verifica che tutti i tuoi servizi siano stati rinnovati correttamente e siano quindi attivi. Una volta effettuata la verifica, consulta gli [interventi in corso](http://travaux.ovh.net/){.external}. Se i tuoi servizi sono attivi e nessun intervento in corso sta avendo un impatto sul tuo sito, ti invitiamo a effettuare una diagnostica più approfondita, consultando le [nostre guide di diagnostica](../).
+Il malfunzionamento del tuo sito Internet potrebbe essere dovuto a diversi motivi. Per capirne la causa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e verifica che tutti i tuoi servizi siano stati rinnovati correttamente e siano quindi attivi. Una volta effettuata la verifica, consulta gli [interventi in corso](https://web-cloud.status-ovhcloud.com/){.external}. Se i tuoi servizi sono attivi e nessun intervento in corso sta avendo un impatto sul tuo sito, ti invitiamo a effettuare una diagnostica più approfondita, consultando le [nostre guide di diagnostica](../).
 
 **Consigli e suggerimenti**: Se, in seguito a un’errata manipolazione da parte tua, il tuo sito appare improvvisamente non disponibile, puoi ripristinarne il contenuto dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Per farlo, clicca sulla scheda `FTP-SSH` del tuo hosting e clicca sul pulsante `Ripristina backup`{.action}, a destra dello schermo. Inoltre, puoi consultare questa guida: [Ripristinare i dati dello spazio di storage di un hosting Web](../web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/).
 
@@ -44,11 +44,11 @@ Una volta connesso al tuo Spazio Cliente, puoi gestire i diversi accessi, tra cu
 
 Per pubblicare il tuo sito su OVHcloud, è necessario disporre di un dominio attivo, che corrisponderà all’indirizzo del tuo sito (ad esempio: ovh.com). Inoltre è necessario disporre di un piano di hosting Web attivo su cui mettere online il sito. Per maggiori informazioni su come eseguire questa operazione, consulta la guida: [Mettere online un sito Internet su un hosting Web](../hosting_condiviso_come_mettere_online_il_tuo_sito/)
 
-**Consigli e suggerimenti**: Per la creazione del tuo sito Internet, OVHcloud mette a tua disposizione vari moduli in 1 click, tra cui Wordpress, Prestashop, Joomla e Drupal. Per consultarli, clicca [qui](https://www.ovh.it/hosting-web/website/). Puoi anche consultare [la nostra documentazione](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/).
+**Consigli e suggerimenti**: Per la creazione del tuo sito Internet, OVHcloud mette a tua disposizione vari moduli in 1 click, tra cui Wordpress, Prestashop, Joomla e Drupal. Per consultarli, clicca [qui](https://www.ovhcloud.com/it/web-hosting/uc-website/). Puoi anche consultare [la nostra documentazione](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/).
 
 ### Come migrare il tuo sito Internet e le tue email in OVHcloud?  
 
-Per migrare il tuo sito Internet e le tue email in OVHcloud, è necessario disporre di un piano di hosting Web attivo [piano di hosting Web attivo](https://www.ovh.it/hosting-web/){.external} e di un [servizio di posta elettronica OVHcloud](https://www.ovh.it/mail/){.external}. Dopodiché potrai accedere al server FTP del tuo hosting Web per trasferire i file del tuo sito. Se attualmente disponi di un database, ricordati di effettuare un backup dei dati. 
+Per migrare il tuo sito Internet e le tue email in OVHcloud, è necessario disporre di un piano di hosting Web attivo [piano di hosting Web attivo](https://www.ovhcloud.com/it/web-hosting/){.external} e di un [servizio di posta elettronica OVHcloud](https://www.ovh.it/mail/){.external}. Dopodiché potrai accedere al server FTP del tuo hosting Web per trasferire i file del tuo sito. Se attualmente disponi di un database, ricordati di effettuare un backup dei dati. 
 
 Per migrare le email, è necessario ricreare i tuoi account in OVHcloud e utilizzare il nostro tool di migrazione [OMM (OVH Mail Migrator)](https://omm.ovh.net/) disponibile [qui](https://omm.ovh.net/). 
 

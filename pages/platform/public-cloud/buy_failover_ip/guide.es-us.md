@@ -74,8 +74,6 @@ Se generará un recibo de pedido. Asegúrese de autorizar la visualización de l
 
 También podrá encontrar el recibo de pedido en el área de cliente seleccionando `«Panel de control»,`{.action} y, seguidamente, `«Ver mis pedidos»`{.action}.
 
-![failoverIP](images/buyfailoverip4_2020.png){.thumbnail}
-
 ## Más información
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -74,8 +74,6 @@ Será, então, gerada uma nota de encomenda. Assegure-se de que autoriza a apres
 
 Poderá também consultar a nota de encomenda na sua Área de Cliente, entrando em `A minha conta`{.action}, e `As minhas encomendas`{.action}.
 
-![failoverIP](images/buyfailoverip4.png){.thumbnail}
-
 ## Quer saber mais?
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>

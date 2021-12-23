@@ -12,7 +12,7 @@ section: 'Erste Schritte'
 
 ### Was tun, wenn mein Webhosting nicht korrekt funktioniert? 
 
-Es gibt mehrere mögliche Ursachen für eine Fehlfunktion Ihrer Website. Um diese zu ermitteln, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und stellen Sie sicher, dass alle Ihre Dienste verlängert wurden und aktiv sind. Wenn Sie damit fertig sind, überprüfen Sie die laufenden Wartungsarbeiten auf der [OVH Status-Seite](http://travaux.ovh.net/){.external} (Travaux). Sind alle Ihre Dienste aktiv und wird keine Wartungsarbeit durchgeführt, die Ihre Website beeinträchtigt, können Sie eine tiefgründigere Diagnose durchführen. Befolgen Sie hierzu [unsere Diagnose-Anleitungen](../).
+Es gibt mehrere mögliche Ursachen für eine Fehlfunktion Ihrer Website. Um diese zu ermitteln, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und stellen Sie sicher, dass alle Ihre Dienste verlängert wurden und aktiv sind. Wenn Sie damit fertig sind, überprüfen Sie die laufenden Wartungsarbeiten auf der [OVHcloud Status-Seite](https://web-cloud.status-ovhcloud.com/). Sind alle Ihre Dienste aktiv und wird keine Wartungsarbeit durchgeführt, die Ihre Website beeinträchtigt, können Sie eine tiefgründigere Diagnose durchführen. Befolgen Sie hierzu [unsere Diagnose-Anleitungen](../).
 
 **Tipps und Tricks**: Ist Ihre Website plötzlich nach einer Aktion Ihrerseits nicht mehr verfügbar, können Sie deren Inhalt über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} wiederherstellen. Gehen Sie hierzu in den Tab `FTP - SSH` Ihres Webhostings und klicken Sie rechts auf den Button `Backup wiederherstellen`{.action}. Weitere Informationen zur Vorgehensweise finden Sie in der folgenden Dokumentation: [Den Speicherplatz Ihres Webhostings wiederherstellen](../webhosting-speicherplatz-wiederherstellen/).
 
@@ -44,11 +44,11 @@ Sobald Sie in Ihrem Kundencenter eingeloggt sind, können Sie die verschiedenen 
 
 Um Ihre Website bei OVHcloud online zu stellen, benötigen Sie einen Domainnamen, der der Adresse entspricht, über die Ihre Website verfügbar sein wird (Beispiel: ovh.com). Darüber hinaus benötigen Sie ein Webhosting, auf dem Sie Ihre Website einrichten können. Weitere Informationen hierzu finden Sie in der folgenden Anleitung: [Eine Website auf Ihrem Webhosting online stellen](../webhosting_meine_seite_online_stellen/).
 
-**Tipps und Tricks**: Um Ihnen bei der Erstellung Ihrer Website zu helfen, stellt Ihnen OVHcloud 1-Klick-Module wie WordPress, PrestaShop, Joomla oder Drupal zur Verfügung. Diese finden Sie [hier](https://www.ovh.de/hosting/website/). Weitere Informationen finden Sie in [unserer Dokumentation](../webhosting_installation_von_webhosting-modulen/).
+**Tipps und Tricks**: Um Ihnen bei der Erstellung Ihrer Website zu helfen, stellt Ihnen OVHcloud 1-Klick-Module wie WordPress, PrestaShop, Joomla oder Drupal zur Verfügung. Diese finden Sie [hier](https://www.ovhcloud.com/de/web-hosting/uc-website/). Weitere Informationen finden Sie in [unserer Dokumentation](../webhosting_installation_von_webhosting-modulen/).
 
 ### Wie migriere ich meine Website und E-Mails zu OVHcloud? 
 
-Um Ihre Website und E-Mails zu OVHcloud zu migrieren, benötigen Sie ein [OVHcloud Webhosting Angebot](https://www.ovh.de/hosting/){.external} sowie eine [OVHcloud E-Mail Lösung](https://www.ovh.de/emails/){.external}. Anschließend können Sie sich auf dem FTP-Server Ihres Hostings einloggen, um auf diesen die Dateien Ihrer Website zu übertragen. Wenn Sie bereits über eine Datenbank verfügen, denken Sie daran, für diese ein Backup durchzuführen. 
+Um Ihre Website und E-Mails zu OVHcloud zu migrieren, benötigen Sie ein [OVHcloud Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} sowie eine [OVHcloud E-Mail Lösung](https://www.ovhcloud.com/de/emails/){.external}. Anschließend können Sie sich auf dem FTP-Server Ihres Hostings einloggen, um auf diesen die Dateien Ihrer Website zu übertragen. Wenn Sie bereits über eine Datenbank verfügen, denken Sie daran, für diese ein Backup durchzuführen. 
 
 Um Ihre E-Mails zu migrieren, müssen Ihre Accounts bei OVHcloud erneut erstellt werden. Verwenden Sie anschließend unser Migrationstool [OMM (OVH Mail Migrator)](https://omm.ovh.net/). Dieses finden Sie [hier](https://omm.ovh.net/). 
 

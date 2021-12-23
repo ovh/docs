@@ -19,7 +19,7 @@ In base alle esigenze, il nome dei server DNS dei domini OVH può essere persona
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovh.it/domini/){.external} registrato in OVH  
+- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} registrato in OVH  
 - Avere accesso alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura

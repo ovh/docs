@@ -16,7 +16,7 @@ Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Ma
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
+- Disporre di un piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external}
 - Avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]

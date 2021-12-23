@@ -16,7 +16,7 @@ Exchange Accounts können auf einem kompatiblen E-Mail-Client eingerichtet werde
 
 ## Voraussetzungen
 
-- Sie besitzen ein [Exchange](https://www.ovh.de/emails/){.external} Angebot.
+- Sie besitzen ein [Exchange](https://www.ovhcloud.com/de/emails/){.external} Angebot.
 - Die Mail App ist auf Ihrem Gerät installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
@@ -75,7 +75,7 @@ Sie finden die Server-Informationen im [OVH Kundencenter](https://www.ovh.com/au
 
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
-Eine OVH Webanwendung mit [kollaborativen Funktionen](https://www.ovh.de/emails/){.external} ist verfügbar unter [https://www.ovh.de/emails/](https://www.ovh.de/mail/){.external}. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+Eine OVH Webanwendung mit [kollaborativen Funktionen](https://www.ovhcloud.com/de/emails/){.external} ist verfügbar unter [https://www.ovhcloud.com/de/emails/](https://www.ovh.de/mail/){.external}. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 ## Weiterführende Informationen
 

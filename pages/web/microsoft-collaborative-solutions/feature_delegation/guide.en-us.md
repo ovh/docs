@@ -16,7 +16,7 @@ With the OVHcloud Exchange service, you can set up professional email addresses,
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](https://www.ovh.com/world/emails/hosted-exchange/) already set up
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en/emails/hosted-exchange/) already set up
 - at least two active Exchange accounts, configured on the same OVHcloud Exchange platform
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - credentials for the Exchange account that will be delegated new permissions

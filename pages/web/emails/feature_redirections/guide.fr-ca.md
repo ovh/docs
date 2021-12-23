@@ -36,7 +36,7 @@ Il y a deux types de redirections :
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une [offre d’hébergement web]({ovh_www}/hebergement-web/){.external}, [l'hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external}, ou l'offre MX Plan commandée séparément.
+- Disposer d'une offre MX Plan. Celle-ci est disponible via : une [offre d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, [l'hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external}, ou l'offre MX Plan commandée séparément.
 
 ## En pratique
 

@@ -17,11 +17,11 @@ We improve our offers continuously. You can follow and submit ideas to add to ou
 
 Please note that the Public Cloud Databases for Redis offer is currently in BETA Phase, meaning:
 
-- the service is free during BETA phase;
-- the service is not ready for production;
-- there is no official support;
-- there are no contractual agreements (SLA);
-- some features are under development. You can check out our BETA vs General Availability here : <https://github.com/ovh/public-cloud-roadmap/issues/121>.
+- The service is free during BETA phase.
+- The service is not ready for production.
+- There is no official support.
+- There are no contractual agreements (SLA).
+- Some features are under development. You can check out our BETA vs General Availability here: <https://github.com/ovh/public-cloud-roadmap/issues/121>.
 
 ## Capabilities and limitations
 
@@ -44,7 +44,7 @@ The Public Cloud Databases offer supports the following Redis versions:
 
 - Redis 6.2
 
-You can folllow Redis Release Cycle on their official page : <https://redis.io/topics/releases>
+You can folllow Redis Release Cycle on their official page: <https://redis.io/topics/releases>
 
 ### Redis clients
 
@@ -97,7 +97,7 @@ Right now, all nodes of a given cluster should be of the same type and distribut
 
 #### Network
 
-Redis clusters are reachable through default port 6379.
+Redis clusters are reachable through default port 20182.
 
 Public networking can be used for all the offers.
 
@@ -109,10 +109,9 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 
 #### Maximum simultaneous connections
 
-The number of simultaneous connections in Public Cloud Databases for PostgreSQL depends on the available total memory on the node.
-We allow approximately 100 connections per 4 GB of RAM memory, capped to a maximum of 1000 active connections.
+The number of simultaneous connections in Public Cloud Databases for Redis depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers. 
 
-So for example on a server with 7 GB memory, you will get approximately 200 connections and with 15 GB memory you will get 400 connections.
+So for example on a server with 7GB memory, you will get up to 7 \* 4096 = 28672 simultaneous connections.
 
 #### Advanced parameters
 
@@ -131,8 +130,8 @@ We do not currently support Redis advanced parameters.
 Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
 As of today, you can't export logs and metrics, nor plug them into a remote tool.
 
-- **Logs retention :** 1000 lines of logs;
-- **Metrics retention :** 1 calendar month.
+- **Logs retention**: 1000 lines of logs
+- **Metrics retention**: 1 calendar month
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
 
@@ -140,7 +139,7 @@ Please note that if the database instance is deleted, logs and metrics are also 
 
 Creation of users is allowed via the Control Panel and API.
 
-For each user you can specify :
+For each user you can specify:
 
 - Username
 - Keys (such as "cached:*")
@@ -148,7 +147,7 @@ For each user you can specify :
 - Commands (such as "-@all +get")
 - Channels (such as "*")
 
-You can follow the official Redis documentation about users and ACL : <https://redis.io/topics/acl>.
+You can follow the official Redis documentation about users and ACL: <https://redis.io/topics/acl>.
 
 ## We want your feedback!
 

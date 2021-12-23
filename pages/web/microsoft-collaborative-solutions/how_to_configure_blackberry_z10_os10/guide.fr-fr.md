@@ -9,7 +9,7 @@ order: 3
 
 Avant de réaliser ces manipulations, assurez-vous que le champ SRV de votre nom de domaine est correctement configuré. [Un guide est disponible ici](https://www.ovh.com/fr/exchange/guides/g1311.exchange_20132016_premiere_configuration_du_service){.external} pour la mise en place du champ SRV sur votre nom de domaine.
 
-Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides.
+Cliquez [ici](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external} pour retrouver nos différents guides.
 
 > [!warning]
 >

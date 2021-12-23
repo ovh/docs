@@ -16,7 +16,7 @@ Datenbanken (DBs) werden verwendet, um sogenannte dynamische Elemente wie Kommen
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.de/hosting) Angebot.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot.
 - Ihnen steht eine in Ihrem Webhosting enthaltene Datenbank zur Verfügung.
 - Sie haben Zugriff zum [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und verfügen über die erforderlichen Berechtigungen zur Verwaltung des Webhostings. 
 
@@ -42,7 +42,7 @@ Wählen Sie im daraufhin geöffneten Fenster die passenden Informationen aus und
 
 |Information|Beschreibung|  
 |---|---|  
-|Datenbank-Engine|Wählen Sie die Engine aus, die die Datenbank verwenden wird. In einem [OVHcloud Webhosting Angebot](https://www.ovh.de/hosting) enthaltene Datenbanken sind ausschließlich mit MySQL-Engine verfügbar.|  
+|Datenbank-Engine|Wählen Sie die Engine aus, die die Datenbank verwenden wird. In einem [OVHcloud Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) enthaltene Datenbanken sind ausschließlich mit MySQL-Engine verfügbar.|  
 |Datenbankversion|Wählen Sie die von der Datenbank-Engine verwendete Version aus. Stellen Sie sicher, dass Ihre Website mit der gewählten Version kompatibel ist. |  
 |Datenbanktyp|Wählen Sie die Größe der Datenbank aus. Die Größe bezieht sich auf den Speicherplatz, der Ihrer Datenbank zum Speichern von Daten zur Verfügung steht.|   
 
@@ -105,7 +105,7 @@ Um die verfügbaren Snapshots zu überprüfen und deren Erstellungszeitpunkt ein
 
 **Too many connections**
 
-Webhosting-Datenbanken sind auf 30 Simultanverbindungen begrenzt (Systemvariable *max_connections*). SQL-Anfragen sollten daher entsprechend optimiert werden, um diesen Fehler zu vermeiden. Besteht das Problem weiterhin, sollten Sie alternative Maßnahmen in Erwägung ziehen, zum Beispiel den Wechsel auf eine Private-SQL-Datenbank oder ein [Upgrade Ihres Webhostings](https://www.ovh.de/hosting/welches_hosting_waehlen.xml). 
+Webhosting-Datenbanken sind auf 30 Simultanverbindungen begrenzt (Systemvariable *max_connections*). SQL-Anfragen sollten daher entsprechend optimiert werden, um diesen Fehler zu vermeiden. Besteht das Problem weiterhin, sollten Sie alternative Maßnahmen in Erwägung ziehen, zum Beispiel den Wechsel auf eine Private-SQL-Datenbank oder ein [Upgrade Ihres Webhostings](https://www.ovhcloud.com/de/web-hosting/uc-best-web-hosting/). 
 
 **Verbindungsfehler und „not found“-Meldungen**
 

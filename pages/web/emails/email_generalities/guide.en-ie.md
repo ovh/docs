@@ -16,7 +16,7 @@ If you have just purchased an MX Plan solution, you can have email addresses, wh
 
 ## Requirements
 
-- an MX plan solution, available via a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}, [the free Start10M Hosting plan](https://www.ovh.ie/domains/start10m_hosting_offer.xml){.external} or an MX Plan solution ordered separately
+- an MX plan solution, available via a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, [the free Start10M Hosting plan](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/){.external} or an MX Plan solution ordered separately
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions

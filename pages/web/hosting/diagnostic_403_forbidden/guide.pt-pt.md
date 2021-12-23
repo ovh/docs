@@ -31,7 +31,7 @@ Também pode acontecer que, após uma deteção de anomalias, os nossos robôs d
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web](https://www.ovh.pt/alojamento-partilhado/) OVHcloud.
+- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) OVHcloud.
 - Dispor dos [dados de acesso](../aceder-espaco-de-armazenamento-ftp-alojamento-web/#1-recuperar-as-informacoes-de-acesso) ao espaço de armazenamento do seu alojamento.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 

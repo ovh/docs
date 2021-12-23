@@ -10,15 +10,15 @@ order: 2
 
 ## Objetivo
 
-Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere crear un blog o una tienda online como compartir una afición o promover una actividad profesional, los [planes de hosting de OVH](https://www.ovh.es/hosting/){.external} le permiten alojar cualquier sitio web, siempre que sea compatible con la [configuración de nuestras infraestructuras](https://webhosting-infos.hosting.ovh.net){.external}.
+Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere crear un blog o una tienda online como compartir una afición o promover una actividad profesional, los [planes de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external} le permiten alojar cualquier sitio web, siempre que sea compatible con la [configuración de nuestras infraestructuras](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Esta guía explica cómo publicar en internet un sitio web alojado en un plan de hosting de OVH.**
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
-- Disponer de un [dominio](https://www.ovh.es/dominios/){.external} con el que poder acceder a su sitio web.
+- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} con el que poder acceder a su sitio web.
 - Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
@@ -27,7 +27,7 @@ Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere c
 
 Para llevar su proyecto a buen puerto, es importante tener una visión clara de su objetivo. ¿Qué quiere conseguir con su sitio web? ¿Cómo quiere publicarlo? Los alojamientos web de OVH le ofrecen diversas posibilidades para hacer realidad su proyecto:
 
-- **Crear un sitio web llave en mano con los módulos en un clic de OVH**: Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVH ofrece cuatro módulos en un clic compatibles con nuestras infraestructuras, que puede consultar en la página [Crear un sitio web con los CMS más populares](https://www.ovh.es/hosting/website/){.external}.
+- **Crear un sitio web llave en mano con los módulos en un clic de OVH**: Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVH ofrece cuatro módulos en un clic compatibles con nuestras infraestructuras, que puede consultar en la página [Crear un sitio web con los CMS más populares](https://www.ovhcloud.com/es-es/web-hosting/uc-website/){.external}.
 
 - **Crear un sitio web llave en mano con instalación manual**: Esta solución permite tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.), pero que deberá instalar usted mismo en su alojamiento web de OVH.
 
@@ -80,7 +80,7 @@ Una vez que disponga de todos los datos necesarios, podrá conectarse a su espac
 
 - **Cliente FTP o SFTP**: Deberá instalar en su ordenador un programa compatible con el protocolo FTP o SFTP (por ejemplo, FileZilla). Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del programa.
 
-- **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVH](https://www.ovh.es/hosting/){.external} son compatibles.
+- **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external} son compatibles.
 
 #### 2.3. Cargar los archivos en el espacio de almacenamiento
 
@@ -109,7 +109,7 @@ Si va a migrar un sitio web que ya existe, descargue la base de datos desde su a
 
 #### 3.2. Crear la base de datos en OVH (opcional)
 
-Si ya dispone de una base de datos (incluida con un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}, una solución [SQL Privado](https://www.ovh.es/hosting/opciones-sql.xml){.external} o [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}), necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
+Si ya dispone de una base de datos (incluida con un [plan de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external}, una solución [SQL Privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/){.external} o [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}), necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
 
 Si quiere crear una nueva base de datos en OVH, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `Bases de datos`{.action}.
 

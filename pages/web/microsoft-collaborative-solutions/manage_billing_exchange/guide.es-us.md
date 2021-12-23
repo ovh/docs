@@ -18,7 +18,7 @@ Los servicios Hosted Exchange y Private Exchange permiten una gestión flexible 
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-- Tener contratado un plan [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external}.
+- Tener contratado un plan [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external}.
 
 ## Procedimiento
 

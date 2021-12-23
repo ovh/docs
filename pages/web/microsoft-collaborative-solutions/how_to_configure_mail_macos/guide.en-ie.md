@@ -16,7 +16,7 @@ You can configure Exchange accounts on a range of email clients, provided they a
 
 ## Requirements
 
-- You must have an [Exchange](https://www.ovh.ie/emails/){.external} solution.
+- You must have an [Exchange](https://www.ovhcloud.com/en-ie/emails/){.external} solution.
 - You need to have the Mail app installed on your device.
 - You need to have the appropriate credentials for the email address you would like to configure.
 
@@ -75,7 +75,7 @@ To find the server details you need, log in to your [OVH Control Panel](https://
 
 Once you have configured your email address, you can start using it to send and receive emails straight away!
 
-OVH also offers a web application that includes various [collaborative features](https://www.ovh.ie/emails/){.external}. You can access it here, using your email credentials: <https://www.ovh.ie/mail/>.
+OVH also offers a web application that includes various [collaborative features](https://www.ovhcloud.com/en-ie/emails/){.external}. You can access it here, using your email credentials: <https://www.ovh.ie/mail/>.
 
 ## Go further
 

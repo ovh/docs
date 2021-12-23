@@ -20,8 +20,8 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 
 ## Voraussetzungen
 
-- Sie haben ein kompatibles [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
-- Sie besitzen eine oder mehrere [Domainnamen](https://www.ovh.de/domains/){.external}.
+- Sie haben ein kompatibles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+- Sie besitzen eine oder mehrere [Domainnamen](https://www.ovhcloud.com/de/domains/){.external}.
 - Sie sind berechtigt, die Konfiguration Ihrer Domains (die [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen)) zu ändern.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
@@ -63,7 +63,7 @@ Dieser Schritt gilt nur, wenn Sie "Eine bei OVHcloud registrierte Domain hinzuf�
 > [!primary]
 > Um eine Subdomain hinzuzufügen, wählen Sie zuerst die Hauptdomain aus der Liste aus (Beispiel: mydomain.ovh). Im nächsten Schritt können Sie die Subdomain angeben (Beispiel: **blog**.mydomain.ovh).
 
-Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [Webhosting-Angebot](https://www.ovh.de/hosting/){.external} sind manche Optionen gegebenenfalls nicht verfügbar.
+Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} sind manche Optionen gegebenenfalls nicht verfügbar.
 
 ![multisite](images/add-multisite-step2.png){.thumbnail}
 
@@ -72,10 +72,10 @@ Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [
 |Domains|Die ausgewählte Domain wird in der Standardeinstellung automatisch angezeigt. Sie können dort eine Subdomain hinzufügen (zum Beispiel **blog**.mydomain.ovh) und gleichzeitig die zugehörige www-Subdomain erstellen (zum Beispiel **www.blog**.mydomain.ovh). Diese Domain ist die Internetadresse der Website, die Sie online stellen möchten.|
 |Wurzelverzeichnis|Legen Sie den Ordner auf Ihrem Speicherplatz fest, auf den die Domain verweist. Die Dateien der Website müssen in diesem Ordner liegen. Bei blog.mydomain.ovh zum Beispiel könnte das Wurzelverzeichnis "blog" sein. Sollte das Verzeichnis nicht existieren, wird es automatisch erstellt.|
 |SSL|Mit SSL können Sie für die ausgewählte Domain eine verschlüsselte Verbindung (HTTPS://) einrichten. Weitere Informationen finden Sie auf unserer Seite zu [SSL-Zertifikaten](https://www.ovh.de/ssl/){.external}. Wenn Sie SSL und CDN (Content Delivery Network) aktivieren, können Sie auch das **HTTP/2**-Protokoll verwenden (letzteres ist standardmäßig in unserem Rechenzentrum in Gravelines aktiviert).|
-|CDN aktivieren|Hier können Sie für die ausgewählte Domain ein CDN aktivieren (Caching statischer Inhalte Ihrer Website, beispielsweise Bilder). Weitere Informationen finden Sie auf unserer Seite zum [Content Delivery Network](https://www.ovh.de/hosting/cdn.xml){.external}. Wenn Sie SSL und CDN aktivieren, können Sie auch das **HTTP/2**-Protokoll verwenden (letzteres ist standardmäßig in unserem Rechenzentrum in Gravelines aktiviert).|
-|IP des Landes|Bei diesem Punkt können Sie für die ausgewählte Domain eine geolokalisierte IP-Adresse aus einer Länderliste auswählen. Weitere Informationen hierzu finden Sie auf unserer Seite zu [IPs und Geolokalisierung](https://www.ovh.de/hosting/ip.xml){.external}.|
-|Firewall aktivieren|Hier können Sie für die ausgewählte Domain eine Firewall (Anfragenanalyse) aktivieren. Weitere Informationen finden Sie auf unserer Seite zu [ModSecurity](https://www.ovh.de/hosting/mod_security.xml){.external}.|
-|Getrennte Logs|Sie können hier für die ausgewählte Domain einen neuen Bereich für separate Logs aktivieren. Wählen Sie aus einer Liste eine Domain aus, die als Zugangsname für den neuen Bereich verwendet wird. Weitere Informationen finden Sie auf [unserer Seite zu detaillierten Statistiken](https://www.ovh.de/hosting/website_statistiken.xml){.external}.|
+|CDN aktivieren|Hier können Sie für die ausgewählte Domain ein CDN aktivieren (Caching statischer Inhalte Ihrer Website, beispielsweise Bilder). Weitere Informationen finden Sie auf unserer Seite zum [Content Delivery Network](https://www.ovhcloud.com/de/web-hosting/options/cdn/){.external}. Wenn Sie SSL und CDN aktivieren, können Sie auch das **HTTP/2**-Protokoll verwenden (letzteres ist standardmäßig in unserem Rechenzentrum in Gravelines aktiviert).|
+|IP des Landes|Bei diesem Punkt können Sie für die ausgewählte Domain eine geolokalisierte IP-Adresse aus einer Länderliste auswählen. Weitere Informationen hierzu finden Sie auf unserer Seite zu [IPs und Geolokalisierung](https://www.ovhcloud.com/de/web-hosting/options/){.external}.|
+|Firewall aktivieren|Hier können Sie für die ausgewählte Domain eine Firewall (Anfragenanalyse) aktivieren. Weitere Informationen finden Sie auf unserer Seite zu [ModSecurity](https://www.ovhcloud.com/de/web-hosting/options/){.external}.|
+|Getrennte Logs|Sie können hier für die ausgewählte Domain einen neuen Bereich für separate Logs aktivieren. Wählen Sie aus einer Liste eine Domain aus, die als Zugangsname für den neuen Bereich verwendet wird. Weitere Informationen finden Sie auf [unserer Seite zu detaillierten Statistiken](https://www.ovhcloud.com/de/web-hosting/uc-website-traffic-analysis/){.external}.|
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. Überprüfen Sie die angezeigte Zusammenfassung.
 
@@ -115,13 +115,13 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 > ![Multisite](images/add-multisite-external-step4.png){.thumbnail}
 >
 
- Passen Sie nun die Optionen zum Hinzufügen der Domain an. Einige Optionen Ihres [Webhostings](https://www.ovh.de/hosting/){.external} können nicht direkt beim Hinzufügen der Domain aktiviert werden. Sie können die Optionen erst im Anschluss verwenden, indem Sie die Multisite-Einstellungen ändern, nachdem die Domain hinzugefügt wurde.
+ Passen Sie nun die Optionen zum Hinzufügen der Domain an. Einige Optionen Ihres [Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} können nicht direkt beim Hinzufügen der Domain aktiviert werden. Sie können die Optionen erst im Anschluss verwenden, indem Sie die Multisite-Einstellungen ändern, nachdem die Domain hinzugefügt wurde.
 
 |Information|Beschreibung|
 |---|---|
 |Domain|Geben Sie hier die Domain ein, die Sie verwenden möchten. Fügen Sie bei Bedarf eine Subdomain hinzu (**blog**.mydomain.ovh) und erstellen Sie gleichzeitig die zugehörige www-Subdomain (zum Beispiel **www.blog**.mydomain.ovh). Diese Domain entspricht der Internetadresse der Website, die Sie online stellen möchten. Bitte beachten Sie, dass Sie die Rechte für die Änderung der DNS-Konfiguration benötigen, um die Domain hinzuzufügen.|
 |Wurzelverzeichnis| Legen Sie den Ordner auf Ihrem Speicherplatz fest, auf den die Domain verweist. Die Dateien der Website müssen in diesem Ordner liegen. Bei blog.mydomain.ovh zum Beispiel könnte das Wurzelverzeichnis "blog" sein. Sollte das Verzeichnis nicht existieren, wird es automatisch erstellt.|
-|IPv6 aktivieren|Hier können Sie für die angegebene Domain das IPv6-Protokoll aktivieren. Weitere Informationen hierzu finden Sie auf unserer Seite zu [IPs und Geolokalisierung](https://www.ovh.de/hosting/ip.xml){.external}.|
+|IPv6 aktivieren|Hier können Sie für die angegebene Domain das IPv6-Protokoll aktivieren. Weitere Informationen hierzu finden Sie auf unserer Seite zu [IPs und Geolokalisierung](https://www.ovhcloud.com/de/web-hosting/options/){.external}.|
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. Überprüfen Sie die angezeigte Zusammenfassung.
 
@@ -150,7 +150,7 @@ Möchten Sie Ihre Website hingegen manuell installieren, tragen Sie alle zugehö
 >
 > Wenn Sie mehrere Websites hinzufügen möchten, müssen Sie diese Schritte wiederholen.
 >
-> Achten Sie darauf, wie viele Websites Sie auf einem Webhosting betreiben. Je mehr Websites Sie einrichten, umso mehr Ressourcen Ihres Hostings werden beansprucht. Die [Webhosting-Vergleichsseite](https://www.ovh.de/hosting/){.external} gibt an, wie viele Websites Sie auf Ihrem Speicherplatz hosten können.
+> Achten Sie darauf, wie viele Websites Sie auf einem Webhosting betreiben. Je mehr Websites Sie einrichten, umso mehr Ressourcen Ihres Hostings werden beansprucht. Die [Webhosting-Vergleichsseite](https://www.ovhcloud.com/de/web-hosting/){.external} gibt an, wie viele Websites Sie auf Ihrem Speicherplatz hosten können.
 >
 
 ## Weiterführende Informationen

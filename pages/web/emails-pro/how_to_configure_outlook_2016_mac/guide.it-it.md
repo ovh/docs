@@ -23,7 +23,7 @@ Gli account Email Pro possono essere configurati su diversi client di posta comp
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Email Pro](https://www.ovh.it/emails/email-pro/){.external}
+- Disporre di una soluzione [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
 - Aver installato l'applicazione Microsoft Outlook sul proprio Mac
 - Disporre delle credenziali associate all'account email da configurare
 
@@ -82,7 +82,7 @@ Se devi inserire manualmente le impostazioni nelle preferenze del tuo account, p
 
 Una volta configurato l'indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVHcloud propone anche un'applicazione Web con [funzionalità collaborative](https://www.ovh.com/fr/emails/){.external}, disponibile all'indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external}. Puoi collegarti utilizzando le credenziali del tuo account.
+OVHcloud propone anche un'applicazione Web con [funzionalità collaborative](https://www.ovhcloud.com/fr/emails/){.external}, disponibile all'indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external}. Puoi collegarti utilizzando le credenziali del tuo account.
 
 ## Per saperne di più
 

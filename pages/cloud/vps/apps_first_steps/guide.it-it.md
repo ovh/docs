@@ -37,7 +37,7 @@ Di seguito trovi i primi step per la messa in servizio dell'immagine preinstalla
 
 > [!primary]
 >
-> Se il link è già scaduto, connettiti al tuo VPS via SSH usando l'utente CentOS ed esegui il comando "whmlogin" per generare un nuovo link.
+> Se il link è già scaduto, connettiti al tuo VPS via SSH usando l'utente CentOS ed esegui il comando « sudo whmlogin » per generare un nuovo link.
 >
 
 <ol start="3">
@@ -71,8 +71,6 @@ Di seguito trovi i primi step per la messa in servizio dell'immagine preinstalla
     b) Una nuova password per l'utente "admin" che utilizzerai per accedere all'interfaccia di Plesk.  
     c) Informazioni sulla licenza.*  
     d) leggere e accettare i contratti di licenza utente.  
-
-No further steps are necessary to the first configuration of this app.
 
 Per completare la prima configurazione dell'applicazione non sono necessari ulteriori step.
 
@@ -124,7 +122,7 @@ Se il tuo dominio è registrato in OVHcloud, consulta [questa guida.](../../doma
 <br>Se il tuo dominio è registrato presso un'altra società, contatta quest'ultima per ottenere assistenza sulla configurazione dei record `A`.
 
 <ol start="2">
-  <li>Forse dovrai aspettare 24 ore prima che le due registrazioni si propaghino completamente. È sempre possibile verificarlo con [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. Se l'indirizzo IP del tuo dominio viene visualizzato su mxtoolbox nello stesso modo del tuo server, passa allo step successivo.</li>
+  <li>Forse dovrai aspettare 24 ore prima che le due registrazioni si propaghino completamente. È sempre possibile verificarlo con <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. Se l'indirizzo IP del tuo dominio viene visualizzato su mxtoolbox nello stesso modo del tuo server, passa allo step successivo.</li>
 
   <li>Accedi in SSH al tuo server con l'utente CentOS ed esegui questi comandi per installare Cerbot:</li>
 </ol>

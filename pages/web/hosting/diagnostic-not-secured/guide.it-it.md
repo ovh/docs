@@ -48,9 +48,9 @@ Per risolvere questa anomalia, è necessario:
 
 #### Verifica l'indirizzo IP dell'hosting
 
-I messaggi di errore menzionati [sopra](#objective) non significano necessariamente che il tuo sito è ospitato su una delle nostre [offerte Web Cloud](https://www.ovh.it/hosting-web/). Dovrai quindi verificare l'indirizzo IP del server al quale è collegato il tuo [dominio](https://www.ovh.it/domini/).
+I messaggi di errore menzionati [sopra](#objective) non significano necessariamente che il tuo sito è ospitato su una delle nostre [offerte Web Cloud](https://www.ovhcloud.com/it/web-hosting/). Dovrai quindi verificare l'indirizzo IP del server al quale è collegato il tuo [dominio](https://www.ovhcloud.com/it/domains/).
 
-Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](https://www.ovh.it/hosting-web/), clicca su `Web Cloud`{.action} nel menu a sinistra `Hosting`{.action} e seleziona l'hosting interessato.
+Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/), clicca su `Web Cloud`{.action} nel menu a sinistra `Hosting`{.action} e seleziona l'hosting interessato.
 
 Nella scheda `Informazioni generali`{.action}, inserisci l'indirizzo IPV4 e/o IPV6 del tuo hosting.
 
@@ -58,7 +58,7 @@ Nella scheda `Informazioni generali`{.action}, inserisci l'indirizzo IPV4 e/o IP
 
 #### Verifica l'indirizzo IP nella zona DNS
 
-A questo punto è necessario verificare che l'indirizzo IP indicato nella [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) corrisponda a quello del tuo [hosting Web Cloud](https://www.ovh.it/hosting-web/).
+A questo punto è necessario verificare che l'indirizzo IP indicato nella [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) corrisponda a quello del tuo [hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/).
 
 Clicca su `Nomi di dominio`{.action} in alto a sinistra del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona il dominio del tuo sito.
 
@@ -85,7 +85,7 @@ Nella scheda `Informazioni generali`{.action} dell'hosting OVHcloud, verifica la
 
 #### Scenario 1: il tuo hosting non contiene un certificato SSL
 
-Attiva un [certificato SSL](https://www.ovh.it/ssl/) sul tuo hosting seguendo le istruzioni di questa [guida](../i_certificati_ssl_sugli_hosting_web_ovh/).
+Attiva un [certificato SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/) sul tuo hosting seguendo le istruzioni di questa [guida](../i_certificati_ssl_sugli_hosting_web_ovh/).
 
 #### Scenario 2: il certificato SSL del tuo hosting non funziona
 

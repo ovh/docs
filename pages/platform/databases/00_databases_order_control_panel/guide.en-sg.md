@@ -6,13 +6,13 @@ section: General information
 order: 1
 ---
 
-**Last updated June 14<sup>th</sup>, 2021**
+**Last updated 11th October 2021**
 
 ## Objective
 
 OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance.
 
-**This guide explains how to order a MongoDB database solution in the OVHcloud Control Panel.**
+**This guide explains how to order a database solution in the OVHcloud Control Panel.**
 
 ## Requirements
 
@@ -25,21 +25,21 @@ OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deplo
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
-Click on the button `Create a database instance`{.action}.
+Click on the button `Create a database instance`{.action}. (`Create a service`{.action} if your project already contains databases.)
 
-#### Step 1: Choose your database
+#### Step 1: Select your database type
 
-Select a version to install from the drop-down menu inside the `MongoDB`{.action} box. Click on `Next`{.action} to continue.
+Click on the type of database you want to use and then select the version to install from the respective drop-down menu. Click on `Next`{.action} to continue.
 
 ![Choose database](images/creation_mongo01.png){.thumbnail}
 
 #### Step 2: Select a solution
 
-In this step, choose an appropriate service plan.
+In this step, choose an appropriate service plan. You will be able to upgrade the plan after creation.
 
 ![Choose plan](images/creation_mongo02.png){.thumbnail}
 
-Please visit the [MongoDB capabilities page](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/capabilities/) for detailed information on each plan's properties.
+Please visit the [capabilities page](https://docs.ovh.com/sg/en/publiccloud/databases/) of your selected database type for detailed information on each plan's properties.
 
 Click on `Next`{.action} to continue.
 
@@ -57,7 +57,7 @@ You can increase the number of nodes and choose the node model in this step. The
 
 ![Order nodes](images/creation_mongo04.png){.thumbnail}
 
-Please visit the [MongoDB capabilities page](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/capabilities/) for detailed information on the hardware resources and other properties of the database installation.
+Please visit the [capabilities page](https://docs.ovh.com/sg/en/publiccloud/databases/) of your selected database type for detailed information on the hardware resources and other properties of the database installation.
 
 Take note of the pricing information and click on `Next`{.action} to continue.
 
@@ -71,9 +71,9 @@ You can name your database in this step and decide to attach a private network.
 
 ![Attach network](images/creation_mongo06.png){.thumbnail}
 
-If you already have a private subnet available, check the box **Private** and select it from the drop-down menu. Note that this option is not available for an **Essential** plan.
+If you already have a private subnet available, check the box **Private** and select it from the drop-down menu. Note that this option might not be available for the selected service type.
 
-You can be forwarded to create a private network or subnet by clicking on the respective links. Bear in mind that you will have to restart the order process afterwards.
+You can be forwarded to create a private network or subnet by clicking on the respective links. You will have to start the database order process anew in that case.
 
 Please follow [this guide](https://docs.ovh.com/sg/en/public-cloud/public-cloud-vrack/) for detailed instructions.
 
@@ -91,8 +91,6 @@ Please continue with the [Database Management guide](https://docs.ovh.com/sg/en/
 > For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you [whitelist the suitable IP addresses](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/managing-service/#configuring-authorised-ips) in order to successfully access your database.
 
 ## Go further
-
-[MongoDB capabilities](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/capabilities/)
 
 [Managing a MongoDB service from the OVHcloud Control Panel](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/managing-service/)
 

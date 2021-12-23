@@ -18,7 +18,7 @@ Mit OVHcloud Webhosting Angeboten erhalten Sie einen Speicherplatz zum Online-St
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.de/hosting/){.external} Angebot mit SSH-Zugang.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot mit SSH-Zugang.
 - Sie verfügen über die erforderlichen Informationen, um sich via SSH mit Ihrem Speicherplatz zu verbinden.
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
@@ -32,7 +32,7 @@ Gehen Sie in der angezeigten Tabelle zur Spalte „SSH“ und überprüfen Sie, 
 
 ![SSH verwenden](images/use-ssh-step1.png){.thumbnail}
 
-Ist der SSH-Zugang nicht aktiv, klicken Sie rechts neben dem betreffenden Benutzer auf den Button `...`{.action} und dann auf `Bearbeiten`{.action}. Aktivieren Sie im daraufhin angezeigten Fenster den SSH-Zugang und schließen Sie die Änderung ab. Wenn Sie den Zugang nicht aktivieren können, überprüfen Sie, dass [Ihr OVHcloud Webhosting](https://www.ovh.de/hosting/){.external} über einen SSH-Zugang verfügt.
+Ist der SSH-Zugang nicht aktiv, klicken Sie rechts neben dem betreffenden Benutzer auf den Button `...`{.action} und dann auf `Bearbeiten`{.action}. Aktivieren Sie im daraufhin angezeigten Fenster den SSH-Zugang und schließen Sie die Änderung ab. Wenn Sie den Zugang nicht aktivieren können, überprüfen Sie, dass [Ihr OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} über einen SSH-Zugang verfügt.
 
 ### Schritt 2: Erforderliche Verbindungsinformationen abrufen
 

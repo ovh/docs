@@ -16,7 +16,7 @@ Votre hébergement web vous permet de mettre en ligne un ou plusieurs sites inte
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'une offre d'[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Être en possession des identifiants permettant de se connecter à l'espace de stockage de votre hébergement.
 - Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
 

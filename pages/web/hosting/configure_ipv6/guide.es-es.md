@@ -29,8 +29,8 @@ Desde 2011, nuestros alojamientos web son compatibles con IPv6. Sin embargo, la 
 
 ## Requisitos
 
-- Disponer de un [dominio](https://www.ovh.es/dominios/){.external} en su área de cliente de OVHcloud.
-- Tener contratado un [plan de hosting](https://www.ovh.es/hosting/){.external}.
+- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} en su área de cliente de OVHcloud.
+- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento

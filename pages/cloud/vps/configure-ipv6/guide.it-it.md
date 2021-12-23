@@ -120,9 +120,9 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Esistono due metodi per configurare la tua rete in base al sistema operativo installato sul tuo server:
 
-- **per Debian 8 e inferiore, Ubuntu 16.04 e inferiore**\: utilizza il [metodo basato sul file *interfaces*](#interfaces)
+- **per Debian 11 e inferiore, Ubuntu 16.04 e inferiore**: utilizza il [metodo basato sul file *interfaces*](#interfaces)
 
-- **per Ubuntu 17.04 e versioni successive**\: utilizza il [metodo basato sulla funzione *Netplan*](#netplan).
+- **per Ubuntu 17.04 e versioni successive**: utilizza il [metodo basato sulla funzione *Netplan*](#netplan).
 
 In alcuni casi, il metodo da utilizzare potrebbe non essere quello indicato sopra. Verifica il metodo attivo nel tuo caso e, per verificarlo, accedi al tuo sistema.  Se necessario, consulta il sito <https://netplan.io/> per maggiori informazioni.
 
@@ -136,7 +136,7 @@ In alcuni casi, il metodo da utilizzare potrebbe non essere quello indicato sopr
 Il metodo più frequente consigliato è creare un file di configurazione nella directory `/etc/network/interfaces.d/`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
+nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 In questo modo è possibile separare la configurazione IPv6 e ripristinare facilmente le modifiche in caso di errore.

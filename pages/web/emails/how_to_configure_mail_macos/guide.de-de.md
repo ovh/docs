@@ -16,7 +16,7 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf einem kompatiblen E-Mail-Cli
 
 ## Voraussetzungen
 
-- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder bei einem [OVH Webhosting](https://www.ovh.de/hosting/){.external} enthalten).
+- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder bei einem [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} enthalten).
 - Die Mail App ist auf Ihrem Gerät installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 

@@ -40,7 +40,7 @@ Una vez realizada la comprobación, debe decidir si quiere activar los registros
 |¿Activar los registros mínimos?|Detalles|
 |---|---|
 |Sí|Seleccione esta opción si quiere personalizar usted mismo la zona DNS.|
-|No|Seleccione esta opción si tiene previsto utilizar servicios de OVHcloud como un [alojamiento web](https://www.ovh.com/world/es/hosting/){.external}, ya que la zona está preconfigurada para ello.|
+|No|Seleccione esta opción si tiene previsto utilizar servicios de OVHcloud como un [alojamiento web](https://www.ovhcloud.com/es/web-hosting/){.external}, ya que la zona está preconfigurada para ello.|
 
 ![Creación de la zona DNS](images/dns-zone-create-step2.png){.thumbnail}
 

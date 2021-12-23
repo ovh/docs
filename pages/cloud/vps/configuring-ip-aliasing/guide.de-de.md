@@ -9,7 +9,7 @@ section: 'Netzwerk und IP'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 27.04.2021**
+**Letzte Aktualisierung am 30.11.2021**
 
 ## Ziel
 
@@ -130,12 +130,17 @@ ip a
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Ändern Sie nicht die vorhandenen Zeilen in der Datei; fügen Sie Ihre Failover-IP wie folgt hinzu:
+Ändern Sie nicht die vorhandenen Zeilen in der Datei; fügen Sie Ihre Failover-IP in einem zweiten Block für das öffentliche Interface wie folgt hinzu:
 
 ```yaml
 network:
     version: 2
     ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
+            set-name: NETWORK_INTERFACE            
         NETWORK_INTERFACE:
             dhcp4: true
             match:

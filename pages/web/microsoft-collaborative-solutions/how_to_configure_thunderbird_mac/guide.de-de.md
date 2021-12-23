@@ -28,7 +28,7 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Exchange Account](https://www.ovh.de/emails/hosted-exchange/){.external}.
+- Sie verfügen über einen [Exchange Account](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external}.
 - Thunderbird ist auf Ihrem macOS-System installiert.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
  

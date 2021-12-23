@@ -17,7 +17,7 @@ order: 2
 
 ## Prérequis
 
-- Disposer d'un service e-mail chez OVH, tel qu'une offre [Exchange](https://www.ovh.com/fr/emails/){.external}, [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external} ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}).
+- Disposer d'un service e-mail chez OVH, tel qu'une offre [Exchange](https://www.ovhcloud.com/fr/emails/){.external}, [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external} ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}).
 - Disposer des identifiants relatifs aux comptes e-mail que vous souhaitez migrer (les comptes source).
 - Disposer des identifiants relatifs aux comptes e-mail OVH qui reçoivent les données migrées (les comptes de destination).
 

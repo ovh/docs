@@ -41,7 +41,7 @@ Wählen Sie nach der Überprüfung des Domainnamens aus, ob Sie die minimalen Ei
 |Minimale Einträge aktivieren?|Details|
 |---|---|
 |Ja|Wählen Sie diese Option, wenn Sie Ihre DNS-Zone später selbst anpassen möchten.|
-|Nein|Wählen Sie diese Option, wenn Sie OVH Dienste wie zum Beispiel ein [Webhosting](https://www.ovh.de/hosting/){.external} Angebot nutzen möchten. Die DNS-Zone ist hierfür bereits vorkonfiguriert.|
+|Nein|Wählen Sie diese Option, wenn Sie OVH Dienste wie zum Beispiel ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot nutzen möchten. Die DNS-Zone ist hierfür bereits vorkonfiguriert.|
 
 ![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 

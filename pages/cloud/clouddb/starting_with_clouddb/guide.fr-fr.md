@@ -6,8 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-
-**Dernière mise à jour le 31/08/2020**
+**Dernière mise à jour le 01/12/2021**
 
 ## Objectif
 
@@ -152,7 +151,7 @@ Sur la fenêtre qui s'affiche, indiquez l'adresse IP ou le masque que vous dési
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
-#### Autoriser la connexion à un hébergement web OVHcloud
+#### Autoriser la connexion à un hébergement web OVHcloud <a name="trustip"></a>
 
 Pour un hébergement web OVHcloud, vous devez autoriser l'adresse IP « passerelle de sortie » (gateway) de celui-ci . 
 
@@ -189,6 +188,30 @@ Afin de pouvoir mener à bien cette manipulation, vous devez quoi qu'il arrive �
 >
 
 ![clouddb](images/clouddb-login-information.png){.thumbnail}
+
+### Récupérer les logs de votre serveur CloudDB
+
+Pour vérifier les derniers logs de votre base de données, dirigez-vous vers l'onglet `Logs`{.action} de votre serveur CloudDB. Cet onglet affiche en temps réel les alertes et les erreurs.
+
+![clouddb](images/clouddb-log01.png){.thumbnail}
+
+Pour récupérer l'ensemble des logs de votre serveur CloudDB, connectez-vous via SFTP sur ce dernier.
+
+> [!warning]
+>
+> Avant de vous connecter, vérifiez que l'adresse IP du poste que vous utilisez est bien autorisée sur votre serveur CloudDB, avec l'option `SFTP` cochée. Aidez-vous de la rubrique [Autoriser la connexion à un hébergement web OVHcloud](#turstip) sur ce guide.
+
+Retrouvez les informations de connexion SFTP depuis l'onglet `Informations générales`{.action} de votre serveur CloudDB. Si vous ne connaissez pas le `Mot de passe du serveur`, cliquez sur le bouton `...`{.action} à droite pour le modifier.
+
+![clouddb](images/clouddb-log02.png){.thumbnail}
+
+Connectez-vous par l'intermédiaire d'un client FTP (FileZilla, Cyberduck, WinSCP, etc.).
+
+Pour FileZilla, dans le menu `Fichier`{.action}, dirigez-vous dans le `Gestionnaire de sites`{.action}. Cliquez sur `Nouveau site`{.action}, puis saisissez les paramètres relevés précédemment.
+
+![clouddb](images/clouddb-log03.png){.thumbnail}
+
+Le fichier de logs, nommé `stdout.log`, se trouve à la racine.
 
 ## Aller plus loin
 

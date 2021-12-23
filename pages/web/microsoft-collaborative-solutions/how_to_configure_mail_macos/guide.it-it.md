@@ -16,7 +16,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 
 ## Prerequisiti
 
-- Disporre di un’offerta [Exchange](https://www.ovh.it/emails/){.external}
+- Disporre di un’offerta [Exchange](https://www.ovhcloud.com/it/emails/){.external}
 - Aver installato l’applicazione Mail sul proprio dispositivo
 - Disporre delle credenziali associate all’account email da configurare 
 
@@ -75,7 +75,7 @@ Per ritrovare questo server, accedi al tuo [Spazio Cliente OVH](https://www.ovh.
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH propone un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external}, disponibile alla pagina <https://pro1.mail.ovh.net> e accessibile con le credenziali del tuo account.
+OVH propone un’applicazione Web con [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}, disponibile alla pagina <https://pro1.mail.ovh.net> e accessibile con le credenziali del tuo account.
 
 ## Per saperne di più
 

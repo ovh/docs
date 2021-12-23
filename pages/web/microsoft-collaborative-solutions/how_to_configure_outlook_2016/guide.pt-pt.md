@@ -27,7 +27,7 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 
 ## Requisitos
 
-- Ter o serviço [E-mail Pro](https://www.ovh.pt/emails/){.external}.
+- Ter o serviço [E-mail Pro](https://www.ovhcloud.com/pt/emails/){.external}.
 - Dispor do programa Microsoft Outlook 2016 ou posterior, instalado no seu computador.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
 - O campo SRV da OVHcloud deve estar corretamente configurado na zona DNS do domínio. Por favor, consulte o nosso guia [Adicionar um domínio ao serviço Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/).

@@ -29,8 +29,8 @@ Os nossos alojamentos web são compatíveis com IPv6 desde 2011. Mas a ativaçã
 
 ## Requisitos
 
-- Dispor de um [nome de domínio](https://www.ovh.pt/dominios/){.external} na sua Área de Cliente OVHcloud.
-- Ter um serviço de [alojamento Web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external} na sua Área de Cliente OVHcloud.
+- Ter um serviço de [alojamento Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções

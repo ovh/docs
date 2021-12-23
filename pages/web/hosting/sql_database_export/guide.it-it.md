@@ -17,8 +17,8 @@ Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Ma
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
-- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
+- Disporre di una soluzione di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external}
 - In base al metodo di backup scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o disporre dei dati di connessione al database
 
 ## Procedura
@@ -31,7 +31,7 @@ Prima di iniziare, è necessario indicare il metodo con cui intendi recuperare i
 
 - **script**: per utilizzare questa soluzione è necessario creare uno script e salvarlo sull’hosting Web OVH e richiede quindi competenze specifiche.
 
-- **comando SSH**: questa soluzione richiede l’accesso allo spazio di storage tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso.  Sono quindi necessarie competenze tecniche avanzate e una soluzione di[ hosting Web OVH](https://www.ovh.it/hosting-web/){.external} compatibile.
+- **comando SSH**: questa soluzione richiede l’accesso allo spazio di storage tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso.  Sono quindi necessarie competenze tecniche avanzate e una soluzione di[ hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} compatibile.
 
 Alcune delle opzioni elencate non vengono eseguite in un’interfaccia OVH, e non possiamo quindi fornire assistenza sul loro utilizzo. Le informazioni contenute in questa guida potrebbero esserti di aiuto per effettuare l’operazione ma non si sostituiscono all’aiuto di un webmaster. 
 

@@ -281,4 +281,4 @@ In this example, the `Url` is `https://8e3ac445-0b47-4eea-9269-19a36b7213c7.note
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 

@@ -16,8 +16,8 @@ Aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de conten
 
 ## Prérequis
 
-- Disposer d'une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
-- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
+- Disposer d'une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
+- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 - Selon la méthode de sauvegarde utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} ou des informations permettant de se connecter à la base de données.
 
 ## En pratique
@@ -30,7 +30,7 @@ Avant de commencer cette manipulation, vous devez définir la méthode que vous 
 
 - **Utiliser un script réalisant la sauvegarde** : cette solution nécessite de créer un script enregistré sur votre hébergement web OVHcloud, afin de pouvoir réaliser la sauvegarde. Des connaissances spécifiques pour cette création sont nécessaires.
 
-- **Réaliser la sauvegarde depuis une commande SSH** : cette solution nécessite de vous connecter à votre espace de stockage via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
+- **Réaliser la sauvegarde depuis une commande SSH** : cette solution nécessite de vous connecter à votre espace de stockage via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
 
 Certaines des méthodes ci-dessus ne sont pas inhérentes à une interface OVHcloud. Vous devrez donc, pour ces dernières, réaliser la manipulation selon vos propres connaissances. Quelques informations sont présentes ci-dessous, mais elles ne peuvent se substituer à l’aide d’un webmaster. 
 

@@ -19,7 +19,7 @@ Mit Exchange Gruppen können mehrere Benutzer durch Senden von E-Mails an eine G
 ## Voraussetzungen
 
 - Zugriff auf das [ OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-- eine [OVHcloud Exchange Lösung](https://www.ovh.de/emails/hosted-exchange/), die bereits eingerichtet ist
+- eine [OVHcloud Exchange Lösung](https://www.ovhcloud.com/de/emails/hosted-exchange/), die bereits eingerichtet ist
 
 
 ## In der praktischen Anwendung

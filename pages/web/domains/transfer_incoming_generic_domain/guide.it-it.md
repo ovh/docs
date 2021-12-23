@@ -46,7 +46,7 @@ La procedura di trasferimento prevede diversi step, tra cui l'avvio di contatti 
 
 > [!warning]
 >
-> La procedura esatta di trasferimento del dominio può variare, in particolare per alcune TLD del codice del paese (ccTLD, quali .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, ecc.) e per alcune TLD speciali (.am, .fm, ecc.). In base all'estensione del tuo dominio, potrebbero essere necessari requisiti aggiuntivi. Ti consigliamo di verificare le informazioni mostrate per l'estensione in questione dal nostro sito Web: <https://www.ovh.it/domini/tariffe/>.
+> La procedura esatta di trasferimento del dominio può variare, in particolare per alcune TLD del codice del paese (ccTLD, quali .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, ecc.) e per alcune TLD speciali (.am, .fm, ecc.). In base all'estensione del tuo dominio, potrebbero essere necessari requisiti aggiuntivi. Ti consigliamo di verificare le informazioni mostrate per l'estensione in questione dal nostro sito Web: <https://www.ovhcloud.com/it/domains/tld/>.
 >
 
 ### Step 1: verifica le informazioni del proprietario del dominio
@@ -77,11 +77,11 @@ Ti ricordiamo che, non essendo OVHcloud il Registrar del tuo dominio al momento 
 
 ### Step 3: richiedere il trasferimento di un dominio in OVHcloud
 
-Una volta sbloccato il dominio e ottenuto il codice, è possibile ordinarne il trasferimento in OVHcloud dal [nostro sito](https://www.ovh.it/domini/). Inserisci il nome del tuo dominio e segui la procedura d’ordine.
+Una volta sbloccato il dominio e ottenuto il codice, è possibile ordinarne il trasferimento in OVHcloud dal [nostro sito](https://www.ovhcloud.com/it/domains/). Inserisci il nome del tuo dominio e segui la procedura d’ordine.
 
 Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella casella accanto al tuo dominio Se non disponi ancora del codice di trasferimento, seleziona la casella `Inserisci il codice di trasferimento successivamente`{.action}. Prima di proseguire, assicurati di essere in grado di recuperare questo codice. Ricordati che il trasferimento non verrà avviato fino a quando non verrà fornito un codice valido.
 
-È inoltre possibile completare l'ordine con un [hosting Web](https://www.ovh.it/hosting-web/){.external} e altre soluzioni OVHcloud. Per effettuare questa operazione è necessario migrare i servizi verso OVHcloud. Questa guida, intitolata "[Migrare un sito e un servizio di posta in OVHcloud](../../hosting/migrare-un-sito-in-ovh/)", fornisce alcune istruzioni su come procedere.
+È inoltre possibile completare l'ordine con un [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} e altre soluzioni OVHcloud. Per effettuare questa operazione è necessario migrare i servizi verso OVHcloud. Questa guida, intitolata "[Migrare un sito e un servizio di posta in OVHcloud](../../hosting/migrare-un-sito-in-ovh/)", fornisce alcune istruzioni su come procedere.
 
 > [!warning]
 >

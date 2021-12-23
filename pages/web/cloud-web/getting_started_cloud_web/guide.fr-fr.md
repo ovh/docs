@@ -16,9 +16,9 @@ Notre offre d’hébergement Cloud Web allie nos vingt ans d’expérience dans 
 
 ## Prérequis
 
-- Disposer d'une offre d'hébergement [Cloud Web](https://www.ovh.com/fr/hebergement-web/cloud-web.xml).
+- Disposer d'une offre d'hébergement [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
 - Avoir reçu l’e-mail vous confirmant l’installation de votre hébergement Cloud Web.
-- Disposer d’un [nom de domaine](https://www.ovh.com/fr/domaines/) qui sera l’adresse à laquelle votre site sera accessible.
+- Disposer d’un [nom de domaine](https://www.ovhcloud.com/fr/domains/) qui sera l’adresse à laquelle votre site sera accessible.
 - Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 
@@ -32,7 +32,7 @@ Afin de coller au mieux à votre projet, l'hébergement Cloud Web offre plus de 
 
 - **récupérer les prérequis techniques pour l'installation** : il est possible que le projet que vous souhaitez installer nécessite des prérequis techniques particuliers. Assurez-vous d'en prendre connaissance au préalable ;
 
-- **s'assurer de la compatibilité technique de votre projet avec l'hébergement Cloud Web** : besoin d'un moteur d'exécution ou d'un SQL en particulier ? Si ce n'est pas encore fait, assurez-vous que celui-ci est disponible avec votre hébergement [Cloud Web](https://www.ovh.com/fr/hebergement-web/cloud-web.xml).
+- **s'assurer de la compatibilité technique de votre projet avec l'hébergement Cloud Web** : besoin d'un moteur d'exécution ou d'un SQL en particulier ? Si ce n'est pas encore fait, assurez-vous que celui-ci est disponible avec votre hébergement [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
 
 Après avoir évalué les différentes possibilités qui s'offrent à vous et délimité avec précision votre projet, vous pouvez à présent débuter sa mise en ligne.
 
@@ -46,7 +46,7 @@ Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connecte
 
 Un moteur est automatiquement créé lors de l'installation de votre hébergement. Il est renseigné comme `Choix par défaut` dans le tableau qui s'affiche. Pour modifier un moteur déjà paramétré, cliquez sur les trois points à droite de celui-ci, puis sur `Modifier`{.action}. 
 
-Vous pouvez également ajouter des moteurs d'exécution supplémentaires selon votre offre [Cloud Web](https://www.ovh.com/fr/hebergement-web/cloud-web.xml) en cliquant sur le bouton `Actions`{.action}, puis sur `Ajouter un moteur d'exécution`{.action}. Notez que le nombre maximum de moteurs d’exécution est dépendant de l’offre Cloud Web que vous avez commandée.
+Vous pouvez également ajouter des moteurs d'exécution supplémentaires selon votre offre [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) en cliquant sur le bouton `Actions`{.action}, puis sur `Ajouter un moteur d'exécution`{.action}. Notez que le nombre maximum de moteurs d’exécution est dépendant de l’offre Cloud Web que vous avez commandée.
 
 Dès lors, assurez-vous de disposer du ou des moteurs d'exécution nécessaires à votre projet avant de poursuivre.
 
@@ -113,7 +113,7 @@ Deux démarches sont possibles pour réaliser l'installation de votre projet. R�
 
 #### 1. Utiliser nos modules en 1 clic
 
-Cette solution vous permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVH en propose quatre avec ses modules en 1 clic à découvrir sur la page [« Créer un site internet avec les modules en 1 clic »](https://www.ovh.com/fr/hebergement-web/site/){.external}.
+Cette solution vous permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVH en propose quatre avec ses modules en 1 clic à découvrir sur la page [« Créer un site internet avec les modules en 1 clic »](https://www.ovhcloud.com/fr/web-hosting/uc-website/){.external}.
 
 Si votre choix se porte sur l'utilisation de nos modules en 1 clic, toujours positionné sur l'hébergement Cloud Web concerné, cliquez sur l'onglet `Modules en 1 clic`{.action}, puis sur `Ajouter un module`{.action}. Vous pourrez alors initier une installation en mode « simple » (non personnalisable) ou en mode « avancé » (possibilité de personnaliser certains éléments).
 

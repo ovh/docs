@@ -10,7 +10,7 @@ hidden: true
 Le service SQL Privé a été conçu pour les besoins importants ou spécifiques sur les bases de données. Avec un serveur SQL Privé, vous disposez de votre propre serveur de base de données tout en bénéficiant de la tranquillité d'un hébergement géré par OVH. Vous disposez de ressources réservées à votre seul usage et non de ressources partagées.
 
 - Consultez l'offre depuis [notre
-site](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external} .
+site](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external} .
 
 
 ## Généralités

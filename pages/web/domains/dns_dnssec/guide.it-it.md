@@ -14,11 +14,11 @@ legacy_guide_number: g609
 I server DNS contengono le configurazioni dei domini che, convenzionalmente, consentono di collegare il dominio a uno o più server che ospitano un sito Internet o caselle email. Negli ultimi anni alcuni hacker hanno sviluppato tecniche di poisoning a danno dei server DNS, riuscendo a reindirizzare il traffico verso le proprie macchine. Utilizzare DNSSEC è una valida soluzione per proteggere i domini da questo tipo di attacchi.
 
 **Questa guida ti mostra come attivare il protocollo DNSSEC per rendere sicuro il tuo dominio in caso di DNS Cache Poisoning.**  
-Per maggiori informazioni sul funzionamento di questa protezione, consulta la pagina relativa al [servizio DNSSEC](https://www.ovh.it/domini/servizio_dnssec.xml){.external}.
+Per maggiori informazioni sul funzionamento di questa protezione, consulta la pagina relativa al [servizio DNSSEC](https://www.ovhcloud.com/it/domains/dnssec/){.external}.
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovh.it/domini/){.external} registrato in OVH
+- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} registrato in OVH
 - L’estensione del dominio deve essere compatibile con DNSSEC
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
 

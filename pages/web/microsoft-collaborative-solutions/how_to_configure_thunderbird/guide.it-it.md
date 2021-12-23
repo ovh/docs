@@ -29,7 +29,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 
 ## Prerequisiti
 
-- Disporre di un account email [Exchange](https://www.ovh.it/emails/hosted-exchange/)
+- Disporre di un account email [Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/)
 - Aver installato il software Thunderbird sul tuo Windows
 - Disporre delle credenziali associate all’indirizzo email da configurare
  

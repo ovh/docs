@@ -1,49 +1,47 @@
 ---
-title: 'Die Fehlermeldung „Controller-VM wurde gelöscht“ verstehen'
+title: 'Die Fehlermeldung “Controller VM deleted” verstehen (EN)'
 slug: error-controller-nsx
-excerpt: 'Hier erfahren Sie, was es mit der Fehlermeldung „Controller-VM wurde gelöscht“ auf sich hat.'
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/error-controller-nsx/'
+excerpt: 'Find out what the “Controller VM deleted” error message means'
 section: NSX
 ---
 
-**Stand 16.08.2018**
+**Last updated 26th November 2021**
 
-## Einleitung
+## Objective
 
-In Ihrem NSX-Interface erscheint womöglich die Meldung *Controller-VM wurde gelöscht*.
+In your NSX interface, you may encounter the *Controller VM deleted* message.
 
-**In dieser Anleitung erklären wir Ihnen, was diese Fehlermeldung bedeutet**.
+**This guide will explain what this message means.**
 
+## Requirements
 
-## Voraussetzungen
+- being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) to receive login credentials
+- a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de))
+- a deployed [NSX Edge Services Gateway](https://docs.ovh.com/de/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
 
-- Sie verfügen über die NSX-Option.
-- Sie haben einen Benutzer mit NSX-Zugriffsrechten erstellt.
+## Instructions
 
+In your [NSX interface](https://docs.ovh.com/de/private-cloud/zugriff-auf-verwaltungsinterface-nsx/), under the `Installation and Upgrade`{.action} menu, in the `Management`{.action} tab and `NSX Controller Nodes`{.action} section, the *Controller VM deleted* error message may appear under the "Controller Node" summary.
 
-## Beschreibung
+![Controller VM deleted error](images/en01control.png)
 
-Im [NSX-Interface](https://docs.ovh.com/gb/en/private-cloud/accessing-NSX-interface/), Menü-Bereich `Installation`{.action}, kann die Fehlermeldung *Controller-VM wurde gelöscht* unter einem Controller-Namen erscheinen:
+This is because OVHcloud does not host controllers on your infrastructure. They are hosted on a separate internal management infrastructure, so that they do not consume any of your infrastructure's resources.
 
-![Fehler Controller-VM wurde gelöscht](images/controllervmdeleted.JPG){.thumbnail}
+Under the standard configuration for NSX, the controllers are expected to be in the same datacentre as your virtual machines, causing this error message. This message will have no effect on your machine's regular functionality.
 
-
-Diese Meldung erscheint, weil OVH die Controller nicht auf Ihrer Nutzer-Infrastruktur hostet, sondern auf einer separaten internen Verwaltungsinfrastruktur, um so Ihre Ressourcen zu schonen.
-
-Die Funktionsweise von NSX sieht allerdings standardmäßig vor, dass die Controller sich im gleichen Datacenter befinden wie Ihre virtuellen Maschinen – und deshalb erscheint diese Fehlermeldung. Die Funktionalität Ihrer Maschine wird hierdurch jedoch in keiner Weise beeinträchtigt.
-
-Überprüfen Sie einfach in Ihrem NSX-Interface, ob der Status des Controllers als `Verbunden` angegeben ist. Ist dies der Fall, funktioniert Ihre Maschine.
-
+You just need to make sure that the status of the controllers in your NSX interface is set to `Connected`. If it is, your machine is working.
 
 > [!warning]
 >
-> Der Fehler kann nicht über den Button `Resolve`{.action} (Beheben) beseitigt werden, da hierdurch Ihre Controller von der Infrastruktur gelöscht werden, was die Nutzung von NSX sowie auch des Infrastrukturnetzwerks beeinträchtigen würde. Deshalb raten wir Ihnen von diesem Vorgehen dringend ab. Für die Verwaltung der NSX Controller ist weiterhin OVH verantwortlich.
+> Resolving this error by clicking on `Resolve`{.action} will delete the controllers from your infrastructure, which will mean you can no longer use NSX or the infrastructure’s network properly. We would therefore advise against doing this. OVHcloud is still responsible for the administration of the NSX controllers.
 > 
 
-Genau aus diesem Grund erscheint übrigens auch der Warnhinweis im NSX-Dashboard:
+This also explains the following alert on the NSX dashboard:
 
-![Warnung im NSX-Interface](images/controllervmdeleted2.JPG){.thumbnail}
+![Alert on NSX interface](images/en02control.png)
 
+## Go further
 
-## Weiterführende Informationen
-
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>.

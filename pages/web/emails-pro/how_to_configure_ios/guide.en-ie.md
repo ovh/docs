@@ -26,7 +26,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- an [OVHcloud Email Pro account](https://www.ovh.ie/emails/email-pro/){.external}
+- an [OVHcloud Email Pro account](https://www.ovhcloud.com/en-ie/emails/email-pro/){.external}
 - the Mail app installed on your iOS device
 - login credentials for the email account to be configured
 
@@ -70,7 +70,7 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that includes [collaborative features](https://www.ovh.ie/emails/){.external}, accessible via <https://www.ovh.ie/mail/>. You can log in using your email credentials.
+OVHcloud also offers a web application that includes [collaborative features](https://www.ovhcloud.com/en-ie/emails/){.external}, accessible via <https://www.ovh.ie/mail/>. You can log in using your email credentials.
 
 > [!primary]
 >

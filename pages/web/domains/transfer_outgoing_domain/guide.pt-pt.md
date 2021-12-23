@@ -22,7 +22,7 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 
 ## Requisitos
 
-- Ter um [domínio](https://www.ovh.pt/dominios/) registado na OVHcloud
+- Ter um [domínio](https://www.ovhcloud.com/pt/domains/) registado na OVHcloud
 - Ter o direito de solicitar a transferência do nome de domínio: o proprietário e/ou os administradores devem ser informados do pedido de transferência.
 - Ter acesso à secção de gestão do domínio na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - O registo do nome de domínio em questão data de há pelo menos 60 dias e não foi transferido ou trocado (ou seja, a mudança de proprietário) durante os últimos 60 dias
@@ -43,7 +43,7 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 > Em caso de dúvida, recomendamos que consulte os seguintes recursos:
 >
 > - O sítio Web do registo TLD correspondente;
-> - a [lista dos TLD disponíveis na OVHcloud](https://www.ovh.pt/dominios/precos/);
+> - a [lista dos TLD disponíveis na OVHcloud](https://www.ovhcloud.com/pt/domains/tld/);
 > - [Explicações do ICANN sobre os códigos de estado EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (para saber que códigos de estado se aplicam atualmente ao seu nome de domínio, efetue uma pesquisa *Whois*, utilizando de preferência o website do registo TLD correspondente);
 > - o website e a interface de gestão do seu novo agente de registo, especialmente para as questões relativas a um processo de transferência pendente.
 >

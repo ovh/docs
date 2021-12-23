@@ -16,7 +16,7 @@ Mit Hosted Exchange verfügen Sie über professionelle E-Mail-Adressen mit erwei
 
 ## Voraussetzungen
 
-- Sie haben ein [Hosted Exchange](https://www.ovh.de/emails/hosted-exchange/) Angebot.
+- Sie haben ein [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Angebot.
 - Sie haben die E-Mail mit der Installationsbestätigung für Ihr Hosted Exchange Angebot erhalten.
 - Sie besitzen eine Domain.
 - Sie sind in Ihrem [Kundencenter](https://ovh.com/auth/?action=gotomanager) eingeloggt.

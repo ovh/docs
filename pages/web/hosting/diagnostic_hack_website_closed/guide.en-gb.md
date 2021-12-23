@@ -16,7 +16,7 @@ Your Web Hosting plan allows you to upload one or more websites. You may have re
 
 ## Requirements
 
-- an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
+- an [OVH Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}
 - the permissions necessary to connect to your hosting plan’s storage space
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 

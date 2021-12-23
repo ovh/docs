@@ -15,7 +15,7 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 ## Wymagania początkowe
 
-- Wykupienie [usługi Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external}.
+- Wykupienie [usługi Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}.
 - Zarejestrowana domena lub kilka domen.
 - Możliwość modyfikacji konfiguracji Twojej domeny (jej strefy DNS).
 - Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
@@ -39,7 +39,7 @@ Aby dodać domenę, kliknij w zakładkę `Przypisane domeny`{.action}. Tabela wy
 
 > [!warning]
 >
-> Wszystkie konta e-mail utworzone w ramach Twojej usługi Exchange mogą wyświetlać w katalogu wszystkie adresy e-mail powiązane z usługą Exchange, również te, które mają różne nazwy domen. Aby wyłączyć ten sposób wyświetlania kont w domenach, musisz zamówić nową [usługę Exchange](https://www.ovh.pl/emaile/){.external} dla wybranych domen.
+> Wszystkie konta e-mail utworzone w ramach Twojej usługi Exchange mogą wyświetlać w katalogu wszystkie adresy e-mail powiązane z usługą Exchange, również te, które mają różne nazwy domen. Aby wyłączyć ten sposób wyświetlania kont w domenach, musisz zamówić nową [usługę Exchange](https://www.ovhcloud.com/pl/emails/){.external} dla wybranych domen.
 >
 
 ![Exchange](images/add_domain_exchange_step1.png){.thumbnail}
@@ -108,7 +108,7 @@ Wszystkie konta e-mail utworzone w ramach Twojej usługi Exchange mogą wyświet
 Po skonfigurowaniu Twoich kont możesz zacząć ich używać. OVH udostępnia w tym celu interfejs Webmail **Outlook Web Application** (OWA) dostępny pod linkiem [https://www.ovh.pl/mail/](https://www.ovh.pl/mail/){.external}. 
 Abyś mógł korzystać z konta Exchange w sposób optymalny, upewnij się, czy jest ono kompatybilne z Twoim programem pocztowym. Jeśli chcesz skonfigurować Twoje konto e-mail na smartfonie, tablecie lub programie pocztowym lub jeśli chcesz uzyskać pomoc w zakresie funkcji Exchange, skorzystaj z naszej dokumentacji dostępnej tutaj: [https://docs.ovh.com/pl/microsoft-collaborative-solutions/](https://docs.ovh.com/pl/microsoft-collaborative-solutions/){.external}.
 
-OVH oferuje licencje Outlook w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a ponadto licencje Office 365 na stronie [https://www.ovh.pl/office-365/](https://www.ovh.pl/office-365/){.external}. Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
+OVH oferuje licencje Outlook w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a ponadto licencje Office 365 na stronie [https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/){.external}. Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
 
 ## Sprawdź również
 
