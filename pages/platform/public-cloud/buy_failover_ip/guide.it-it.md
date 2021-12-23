@@ -6,6 +6,10 @@ legacy_guide_number: g2030
 section: Rete
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
 **Ultimo aggiornamento: 21/12/2021**
 
 ## Obiettivo
@@ -77,7 +81,7 @@ Clicca su `Genera l'ordine`{.action} per essere reindirizzato automaticamente ve
 
 Il buono d'ordine è disponibile anche nello Spazio Cliente, andando nella sezione `Dashboard`{.action} e cliccando su `Visualizza i tuoi ordini`{.action}.
 
-Per maggiori informazioni, consulta la nostra guida sulla [gestione degli ordini OVHcloud](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/).
+Per maggiori informazioni, consulta la nostra guida sulla [gestione degli ordini OVHcloud](https://docs.ovh.com/it/billing/gestire-ordini-ovh/).
 
 ## Per saperne di più
 
