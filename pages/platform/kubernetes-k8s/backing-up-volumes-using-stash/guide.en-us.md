@@ -173,8 +173,7 @@ The easiest way to install Stash is via Helm, using the chart from [AppsCode Cha
 
 First of all, you need to [get a license](https://stash.run/docs/v2021.11.24/setup/install/community/#get-a-license).
 
-TODO: Note if you want to use an enterprise edition please folwo this link instead...
-
+Note: if you want to use an enterprise edition please [follow this link](https://stash.run/docs/v2021.11.24/setup/install/enterprise/#get-an-enterprise-license) instead.
 
 You should receive your license by email. Save it, you'll need it in the `helm install` command.
 

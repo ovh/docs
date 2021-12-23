@@ -3,7 +3,7 @@ title: 'Configurar a rede em ESXi nas gamas High Grade & SCALE'
 slug: esxi-network-hg-scale
 excerpt: 'Saiba como configurar a rede ESXi nas gamas High Grade & SCALE.'
 section: 'Utilização avançada'
-order: 6
+order: 7
 ---
 
 > [!primary]
