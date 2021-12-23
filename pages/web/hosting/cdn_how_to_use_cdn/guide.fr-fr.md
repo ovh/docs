@@ -6,7 +6,7 @@ excerpt: 'Améliorez votre site en accélérant son chargement sur votre héberg
 section: 'Optimiser son site'
 ---
 
-**Dernière mise à jour le 09/12/2021**
+**Dernière mise à jour le 23/12/2021**
 
 ## Objectif
 
@@ -24,8 +24,8 @@ Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre sit
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
 
 ## En pratique
 
@@ -37,7 +37,7 @@ Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre sit
 
 ####  Si l'option CDN n'est pas commandée ou activée sur votre hébergement Web
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Commander un CDN`{.action} ou `Activer l'option`{.action} si l'option CDN est déjà incluse dans votre hébergement.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Commander un CDN`{.action} ou `Activer l'option`{.action} si l'option CDN est déjà incluse dans votre hébergement.
 
 > [!primary]
 > 
@@ -49,7 +49,7 @@ Vous serez redirigé vers la génération du bon de commande. Une fois la comman
 
 #### Si l'option CDN est déjà activée sur votre hébergement Web
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur la roue crantée à droite de l'entrée multisite puis cliquez sur `Modifier`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur la roue crantée à droite de l'entrée multisite puis cliquez sur `Modifier`{.action}.
 
 Cochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
@@ -58,7 +58,7 @@ Cochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur 
 > [!warning]
 > 
 > Dans le cas d'un nom de domaine externe à OVHcloud ajouté en multisite sur l'hébergement web, vous devez mentionner l'adresse IP du CDN de votre hébergement dans la zone DNS du nom de domaine.<br>
-> Consultez la [liste des adresses IP des clusters et hébergement web](../liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external} pour retrouver l'adresse IP spécifique du CDN de votre cluster.
+> Consultez la [liste des adresses IP des clusters et hébergement web](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/) pour retrouver l'adresse IP spécifique du CDN de votre cluster.
 
  
 **Pourquoi ne puis-je pas bénéficier de l'IP géolocalisée avec l'option CDN ?** <br>
@@ -70,7 +70,7 @@ Concernant le SEO (référencement sur les moteurs de recherche), la vitesse d'a
 
 > [!primary]
 > 
-> L'option shared CDN est déjà incluse dans les offres d'hébergement web Performance ou disponible à la commande depuis le 19/11/20. Pour les versions plus anciennes, référez-vous au paragraphe [Gérer votre CDN Buisiness](#cdnbusiness).
+> L'option shared CDN est déjà incluse dans les offres d'hébergement web Performance ou disponible à la commande depuis le 19/11/20. Pour les versions plus anciennes, référez-vous au paragraphe [Gérer votre CDN Business](#cdnbusiness).
 
 #### Vider le cache du Shared CDN
 
@@ -175,10 +175,10 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 > [!warning]
 >
-> Pour l'installation d'un [module en 1 clic OVHcloud](../modules-en-1-clic/), le WAF doit être désactivé afin d’éviter que l'installation du module ne soit bloquée.
+> Pour l'installation d'un [module en 1 clic OVHcloud](https://docs.ovh.com/fr/hosting/modules-en-1-clic/), le WAF doit être désactivé afin d’éviter que l'installation du module ne soit bloquée.
 
 > [!primary]
->  
+>
 > Le WAF est entièrement administré par OVHcloud, la liste des failles est régulièrement mise à jour.
 
 #### Configurer les options du CDN Advanced
@@ -237,15 +237,16 @@ Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`
 
 ![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
 
-- **Nom de règle** : Attribuez un nom à votre règle.
-- **Type de ressource** : Choisissez parmi les choix ci-dessous:
-	- **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : css
-	- **Dossier** :  Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
-	- **Expression régulière personnalisée** : Elle s'applique sur toutes les URI de votre site web.
-	- **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
-- **Ressource** : définissez les attributs en fonction du type de ressource choisie.
-- **Durée** : Indiquez la durée de mise en cache de la ressource choisie.
-- **Classement** :  Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
+
+* **Nom de règle** : Attribuez un nom à votre règle.
+* **Type de ressource** : Choisissez parmi les choix ci-dessous:
+    * **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : css
+    * **Dossier** :  Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
+    * **Expression régulière personnalisée** : Elle s'applique sur toutes les URI de votre site web.
+    * **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
+* **Ressource** : définissez les attributs en fonction du type de ressource choisie.
+* **Durée** : Indiquez la durée de mise en cache de la ressource choisie.
+* **Classement** :  Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
 
 Une fois vos choix réalisés, cliquez sur le bouton `Créer la règle`{.action}.
 
@@ -257,7 +258,7 @@ Une fois vos règles configurées et vos options choisies, cliquez sur `Applique
 
 ### Visualiser les statistiques du CDN
 
-Dans l'onglet `Multisites`{.action} de votre hébergement, sous le tableau, vous pouvez visualiser les statistiques de votre CDN, indiquant le nombre de requêtes par minutes mesurées sur celui-ci.
+Dans l'onglet `Multisite`{.action} de votre hébergement, sous le tableau, vous pouvez visualiser les statistiques de votre CDN, indiquant le nombre de requêtes par minutes mesurées sur celui-ci.
 
 ![CDN](images/manage_CDNstat_01.png){.thumbnail}
 
@@ -271,7 +272,7 @@ Dans l'onglet `Multisites`{.action} de votre hébergement, sous le tableau, vous
 
 Il est parfois utile de vider le cache du CDN, notamment lorsque vous modifiez vos fichiers statiques. Par exemple lors de la mise en production d'une nouvelle version de votre site. Dans ce cas, vous pouvez vider totalement le cache du CDN.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Vider le cache`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Vider le cache`{.action}.
 
 ![CDN](images/manage_CDN_02.png){.thumbnail}
 
@@ -297,19 +298,16 @@ Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. P
 9. </FilesMatch>
 ```
 
-
-
-
 > [!warning]
 >
 > La mise en cache via les headers HTTP permet la mise en cache au sein du CDN mais aussi au sein du navigateur de vos utilisateurs. Ainsi, pour éviter que vos visiteurs ne visualisent une version en cache trop ancienne, il est recommandé de modifier les noms des fichiers à chaque nouvelle version.
-> 
+>
 
 ### Désactiver l'option CDN pour un site web
 
 Cette action permet de désactiver le CDN pour une ou plusieurs de vos entrées multisite, sans supprimer l'option CDN de votre hébergement Web.
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur `...`{.action} à droite de l'entrée multisite puis sur `Modifier`{.action}.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur `...`{.action} à droite de l'entrée multisite puis sur `Modifier`{.action}.
 
 Décochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
@@ -319,7 +317,7 @@ Décochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis s
 
 Cette action a pour but de supprimer l'option CDN pour l'ensemble de votre hébergement Web.
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Résilier le CDN`{.action}.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Résilier le CDN`{.action}.
 
 ![CDN](images/manage_CDN_04.png){.thumbnail}
 
@@ -327,9 +325,8 @@ Cliquez sur `Valider`{.action} pour confirmer la résiliation.
 
 > [!warning]
 >
-> Un e-mail contenant la procédure de fermeture de votre CDN vous sera envoyé, il est nécessaire de suivre les instructions de celui-ci afin de confirmer ou annuler la demande. 
+> Un e-mail contenant la procédure de fermeture de votre CDN vous sera envoyé. Il est nécessaire de suivre les instructions de celui-ci afin de confirmer ou annuler la demande. 
 > 
-
 
 ### Vérifier que votre CDN est en service
 
@@ -375,4 +372,4 @@ L'absence de la mention « *X-CDN* » indique que vous ne passez pas à travers 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external}.
+Échangez avec notre communauté d’utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/).

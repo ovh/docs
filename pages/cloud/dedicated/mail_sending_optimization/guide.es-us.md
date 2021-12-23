@@ -5,6 +5,10 @@ slug: optimizar-envio-correo-electronico
 section: Uso avanzado
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 **Última actualización: 16/12/2021**
 
 ## Objectivo
@@ -38,9 +42,9 @@ Si usted está usando una infraestructura dedicada (ejem. Un servidor dedicado, 
 > - `?`: neutro
 >
 
-Para más información sobre el registro SPF, vaya a la siguiente página: <http://www.open-spf.org/>
+Para más información sobre el registro SPF, vaya a la siguiente página: <http://www.open-spf.org/>.
 
-Usted puede encontrar más información sobre como configurar el registro SPF para un dominio, o especificando directamente la dirección IPv6. Puede encontrar como hacerlo en la siguiente guía: [Añadir un registro SPF a la configuración del dominio](../../domains/web_hosting_el_registro_spf/)
+Usted puede encontrar más información sobre como configurar el registro SPF para un dominio, o especificando directamente la dirección IPv6. Puede encontrar como hacerlo en la siguiente guía: [Añadir un registro SPF a la configuración del dominio](../../domains/web_hosting_el_registro_spf/).
 
 ### Configurar el registro DKIM
 
@@ -52,13 +56,13 @@ La autenticación se lleva a cabo médiente una clave DKIM que debe de añadir a
 
 Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il Registro inverso con su nombre de dominio.
 
-Si los servidores DNS son gestionados por OVHcloud, consulte esta [guía](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
+Si los servidores DNS son gestionados por OVHcloud, consulte esta [guía](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse y ser efectivos.
 
 A continuación, añada el registro PTR (también conocido como registro inverso):
 
-En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y haga clic en la sección `IP`{.action} de la parte inferior izquierda. 
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y haga clic en la sección `IP`{.action} de la parte inferior izquierda. 
 
 ![IP inversa](images/ipsection.png)
 

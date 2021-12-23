@@ -83,10 +83,10 @@ The cluster will take a few minutes to become fully usable. You can check its st
 
 The call returns an object describing the cluster. Its **status** property will transition to `READY` when the cluster becomes available.
 
-### Step 4: Whitelist the IP addresses or blocks you want to access your cluster from
+### Step 4: Authorize the IP addresses or blocks you want to access your cluster from
 
 > [!warning]
-> For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you whitelist the suitable IP addresses in order to successfully access your database.
+> For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you authorize the suitable IP addresses in order to successfully access your database.
 
 Declare the IP address blocks allowed to connect to your cluster with:
 

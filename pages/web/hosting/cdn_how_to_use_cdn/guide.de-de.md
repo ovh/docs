@@ -10,7 +10,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 09.12.2021**
+**Letzte Aktualisierung am 23.12.2021**
 
 ## Ziel
 
@@ -241,15 +241,16 @@ Klicken Sie unter **Cache-Regeln** auf den Button `Regel hinzufügen`{.action}.
 
 ![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
 
-- **Regelname**: Weisen Sie Ihrer Regel einen Namen zu.
-- **Ressourcenart**: Wählen Sie aus den folgenden Optionen:
-	- **Endung**: Geben Sie eine gültige Dateiendung ohne Punkt ein, zum Beispiel: css
-	- **Ordner**:  Geben Sie einen gültigen Pfad zu einem Ordner im Wurzelverzeichnis Ihrer Website an.
-	- **Eigener regulärer Ausdruck**: Gilt für alle URIs Ihrer Website.
-	- **URI**: Geben Sie die Teilmenge der Ressourcen Ihrer Website über den URL-Pfad ein.
-- **Ressource**: Definieren Sie die Attribute abhängig vom gewählten Ressourcentyp.
-- **Laufzeit**: Geben Sie die Cache-Dauer der ausgewählten Ressource an.
-- **Reihenfolge**: Sortieren Sie Ihre Regeln (von der niedrigsten zur höchsten) nach Ausführungsreihenfolge.
+
+* **Regelname**: Weisen Sie Ihrer Regel einen Namen zu.
+* **Ressourcenart**: Wählen Sie aus den folgenden Optionen:
+    * **Endung**: Geben Sie eine gültige Dateiendung ohne Punkt ein, zum Beispiel: css
+    * **Ordner**:  Geben Sie einen gültigen Pfad zu einem Ordner im Wurzelverzeichnis Ihrer Website an.
+    * **Eigener regulärer Ausdruck**: Gilt für alle URIs Ihrer Website.
+    * **URI**: Geben Sie die Teilmenge der Ressourcen Ihrer Website über den URL-Pfad ein.
+* **Ressource**: Definieren Sie die Attribute abhängig vom gewählten Ressourcentyp.
+* **Laufzeit**: Geben Sie die Cache-Dauer der ausgewählten Ressource an.
+* **Reihenfolge**: Sortieren Sie Ihre Regeln (von der niedrigsten zur höchsten) nach Ausführungsreihenfolge.
 
 Wenn Sie Ihre Auswahl vorgenommen haben, klicken Sie auf den Button `Regel erstellen`{.action}.
 

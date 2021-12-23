@@ -11,7 +11,7 @@ order: 1
 >
 
 
-**Ostatnia aktualizacja dnia 17/11/2021**
+**Ostatnia aktualizacja dnia 21/12/2021**
 
 ## Wprowadzenie
 
