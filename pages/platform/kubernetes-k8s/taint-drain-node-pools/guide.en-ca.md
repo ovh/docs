@@ -49,18 +49,19 @@ A node is a virtual (VM) or physical machine.
 Your applications, your workloads will run on Pods, and Pods are running on Nodes.
 
 But sometimes, Kubernetes scheduler can't deploy a Pod on a Node, for several reasons:
+
 - Node is not ready
 - Node is unreachable
 - Out of disk
-- Network unavailable
+- Network is unavailable
 - …
 
-For these uses cases, and others ones, you can do operations on Nodes. And thanks to the Node Pool's labels propagation to Nodes, you can target only Nodes within a particular Node Pool.
+For these use cases, and other ones as well, you can do operations on Nodes. And thanks to the Node Pool's labels propagation to Nodes, you can target only Nodes within a particular Node Pool.
 
 ## Requirements
 
 - a [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
@@ -74,10 +75,10 @@ Now, your Kubernetes cluster is up and running. You can see it in your OVHcloud 
 
 ![Select your cluster](images/create-a-nodepool-1.png){.thumbnail}
 
-Click on your cluster, then on `Node pools`{.action} tab.
+Click on your cluster, then on the `Node pools`{.action} tab.
 
 We will create our second Node pool.
-Click on `Add a node pool`{.action} button.
+Click on the `Add a node pool`{.action} button.
 
 Then enter a name for your second node pool, `second-node-pool` for example.
 
@@ -87,7 +88,7 @@ Select a flavor for your new node pool, we can choose "D2-8", a different flavor
 
 ![Select a flavor for your second node pool](images/create-a-nodepool-3.png){.thumbnail}
 
-In the next step, define the size of our second node pool.
+In the next step, define the size of your second node pool.
 This time, we can enable the `Autoscaling`{.action} feature.
 Define the minimum and maximum pool size in that case, 3 in minimum and 10 in maximum, for example.
 
@@ -97,7 +98,7 @@ Define the minimum and maximum pool size in that case, 3 in minimum and 10 in ma
 
 ![Define a size and autoscaling for your second node pool](images/create-a-nodepool-4.png){.thumbnail}
 
-And then, choose `Hourly` billing mode for this second node pool.
+Choose `Hourly` billing mode for this second node pool.
 
 ![Billing mode](images/create-a-nodepool-5.png){.thumbnail}
 
@@ -114,7 +115,7 @@ Wait until its status changes to `OK`.
 
 To do some operations on your Nodes, through `kubectl` CLI, we invite you to follow our guide to [configuring default settings](../configuring-kubectl/).
 
-When you can access to the cluster through `kubectl` command, let's display our node pools:
+When you can access the cluster through `kubectl` command, let's display our node pools:
 
 ```bash
 $ kubectl get nodepool
@@ -125,7 +126,7 @@ second-node-pool                                d2-8     true          false    
 
 Our two node pools exist and we can see the different configuration and autoscaling mode.
 
-Let's display our nodes. You should have 3 nodes running in our first node pool and 3 nodes in our "second-node-pool" node pool:
+Let's display our nodes. We should have 3 nodes running in our first node pool and 3 nodes in our "second-node-pool" node pool:
 
 ```bash
 $ kubectl get nodes
@@ -156,7 +157,7 @@ You can cordon all the nodes in a node pool. We will show you how to cordon all 
 kubectl cordon -l "nodepool=second-node-pool"
 ```
 
-In my example here the result I got:
+In our example, here is the result we got:
 
 <pre class="console"><code>$ kubectl cordon -l "nodepool=second-node-pool"
 
@@ -179,13 +180,13 @@ This means you can't deploy Pods on these nodes, on this node pool.
 
 ### UnCordon a Node
 
-You can also undo your action with `uncordon` command.
+You can also undo your action with the`uncordon` command.
 
 ```bash
 kubectl uncordon -l "nodepool=second-node-pool"
 ```
 
-In my example:
+In our example:
 
 <pre class="console"><code>$ kubectl uncordon -l "nodepool=second-node-pool"
 
@@ -209,7 +210,7 @@ Nodes are in `Ready` state again.
 
 You can use `kubectl drain` command to safely evict all of your pods from a node before you perform maintenance on the node or reduce the number of nodes for example. Safe evictions allow the pod's containers to gracefully terminate and will respect the `PodDisruptionBudgets` you have specified (if relevant).
 
-A `PDB` limits the number pods of a replicated application that are down/terminated simultaneously from voluntary disruptions, allowing for higher availability while permitting the cluster administrator to manage the clusters nodes. If you are interested about this topic, we recommand you the Kubernetes official documentation: [Specifying a Disruption Budget for your Application](https://kubernetes.io/docs/tasks/run-application/configure-pdb/).
+A `PDB` limits the number pods of a replicated application that are down/terminated simultaneously from voluntary disruptions, allowing for higher availability while permitting the cluster administrator to manage the clusters nodes. If you are interested about this topic, we recommend you to read the Kubernetes official documentation: [Specifying a Disruption Budget for your Application](https://kubernetes.io/docs/tasks/run-application/configure-pdb/).
 
 ![Drain a Node](images/drain.png)
 
@@ -219,7 +220,7 @@ You can drain all the nodes for `second-node-pool` thanks to `label`.
 kubectl drain -l "nodepool=second-node-pool"
 ```
 
-In my example:
+In our example:
 
 <pre class="console"><code>$ kubectl drain -l "nodepool=second-node-pool"
 
@@ -243,13 +244,13 @@ second-node-pool-node-5fda8f                 Ready,SchedulingDisabled   <none>  
 second-node-pool-node-c355db                 Ready,SchedulingDisabled   <none>   5m42s   v1.22.2
 </code></pre>
 
-As you can see, Kubernetes can't remove `DaemonSet` objects so in order to not have this error message, ou can add the `--ignore-daemonsets` option:
+As you can see, Kubernetes can't remove `DaemonSet` objects, so in order to not have this error message, you can add the `--ignore-daemonsets` option:
 
 ```bash
 kubectl drain -l "nodepool=second-node-pool" --ignore-daemonsets
 ```
 
-As shown in the console output, draining a node also cordons its. You can do whatever you want on Nodes as you are sure they do not run any workloads. Do not forget to uncordon the Nodes of the node pool, to allow workloads to be run again:
+As shown in the console output, draining a node also cordons it. You can do whatever you want on Nodes as you are sure they do not run any workloads. Do not forget to uncordon the Nodes of the node pool, to allow workloads to be run again:
 
 ```bash
 kubectl uncordon -l "nodepool=second-node-pool"
@@ -280,7 +281,7 @@ Multiple taints can be setted in the same Node.
 
 ![Taint a Node](images/taint.png)
 
-* With `NoSchedule` taint, pods that don’t tolerate the taint can’t be schedule on the node.
+* With `NoSchedule` taint, pods that don’t tolerate the taint can’t be scheduled on the node.
 * With `PreferNoSchedule` taint, Kubernetes avoid scheduled Pods that don’t tolerate the taint.
 * With `NoExecute` taint, Pods are evicted from the Node if they are already running, additionally to not being schedulable.
 
@@ -292,13 +293,13 @@ Pause a node, don’t accept new workloads on it:
 kubectl taint node -l "nodepool=second-node-pool" my-key=my-value:NoSchedule
 ```
 
-And you can display the taints for all nodes:
+You can display the taints for all nodes:
 
 ```bash
 kubectl get nodes  -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{.spec.taints}{"\n"}{end}'
 ```
 
-In my example:
+In our example:
 
 <pre class="console"><code>$ kubectl taint node -l "nodepool=second-node-pool" my-key=my-value:NoSchedule
 
@@ -318,13 +319,13 @@ second-node-pool-node-c355db
 [{"effect":"NoSchedule","key":"my-key","value":"my-value"}]
 </code></pre>
 
-You can Unpause a node:
+You can unpause a node:
 
 ```bash
 kubectl taint node -l "nodepool=second-node-pool" my-key:NoSchedule-
 ```
 
-In my example:
+In our example:
 
 <pre class="console"><code>$ kubectl taint node -l "nodepool=second-node-pool" my-key:NoSchedule-
 
@@ -338,13 +339,14 @@ node/second-node-pool-node-c355db untainted
 Another useful feature could be to taint a Node and to deploy an application only on particular nodes. 
 For example you can dedicate a set of nodes for exclusive use by a particular set of users or define a subset of nodes with specialized hardware.
 
-In order to do that you can taint `second-node-pool` nodes with a particular key and value `flavor=d2-8` for example:
+In order to do that, you can taint `second-node-pool` nodes with a particular key and value `flavor=d2-8` for example:
 
 ```bash
 kubectl taint node -l "nodepool=second-node-pool" flavor=d2-8:NoSchedule
 ```
 
-In my example:
+In our example:
+
 <pre class="console"><code>$ kubectl taint node -l "nodepool=second-node-pool" flavor=d2-8:NoSchedule
 node/second-node-pool-node-519613 tainted
 node/second-node-pool-node-5fda8f tainted
@@ -362,7 +364,7 @@ second-node-pool-node-c355db
 [{"effect":"NoSchedule","key":"flavor","value":"d2-8"}]
 </code></pre>
 
-And then you can create a Pod that can be scheduled only on Nodes who have the taint `flavor=d2-8:NoSchedule`.
+And then you can create a Pod that can be scheduled only on Nodes which have the taint `flavor=d2-8:NoSchedule`.
 
 Create a `my-pod.yaml` YAML manifest file with the following content:
 
@@ -395,7 +397,8 @@ And check your new Pod is running in a `second-node-pool`'s Node:
 kubectl get pod -o wide
 ```
 
-In my example:
+In our example:
+
 <pre class="console"><code>$ kubectl apply -f my-pod.yaml
 
 pod/my-pod created
