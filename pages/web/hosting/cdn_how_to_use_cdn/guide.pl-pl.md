@@ -10,7 +10,7 @@ section: 'Optymalizacja strony WWW'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 09-12-2021**
+**Ostatnia aktualizacja z dnia 23-12-2021**
 
 ## Wprowadzenie
 
@@ -240,15 +240,16 @@ W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 
 ![GeoCache](images/manage_CDNadvanced_03.png){.thumbnail}
 
-- **Nazwa reguły**: Nadaj nazwę swojej regule.
-- **Rodzaj zasobów**: Wybierz spośród poniższych opcji:
-	- **Rozszerzenie**: Wprowadź poprawne rozszerzenie plików, na przykład css
-	- **Dokumentacja**:  Wprowadź prawidłową ścieżkę dla jednego z katalogów znajdujących się w katalogu głównym Twojej strony WWW.
-	- **Regularne spersonalizowane**: wyrażenie: Dotyczy ona wszystkich URI Twojej strony WWW.
-	- **URI**: Wpisz podzbiór zasobów Twojej strony WWW, korzystając z jej ścieżki do URL.
-- **Zasoby**: definiuj atrybuty według wybranego typu zasobów.
-- **Czas trwania**: Wskaż czas przechowywania wybranego zasobu w pamięci cache.
-- **Klasyfikacja**:  Ustaw kolejność wykonywania reguł (od najniższej do najwyższej).
+
+* **Nazwa reguły**: Nadaj nazwę swojej regule.
+* **Rodzaj zasobów**: Wybierz spośród poniższych opcji:
+    * **Rozszerzenie**: Wprowadź poprawne rozszerzenie plików, na przykład css
+    * **Dokumentacja**:  Wprowadź prawidłową ścieżkę dla jednego z katalogów znajdujących się w katalogu głównym Twojej strony WWW.
+    * **Regularne spersonalizowane**: wyrażenie: Dotyczy ona wszystkich URI Twojej strony WWW.
+    * **URI**: Wpisz podzbiór zasobów Twojej strony WWW, korzystając z jej ścieżki do URL.
+* **Zasoby**: definiuj atrybuty według wybranego typu zasobów.
+* **Czas trwania**: Wskaż czas przechowywania wybranego zasobu w pamięci cache.
+* **Klasyfikacja**:  Ustaw kolejność wykonywania reguł (od najniższej do najwyższej).
 
 Po dokonaniu wyboru kliknij przycisk `Utwórz regułę`{.action}.
 

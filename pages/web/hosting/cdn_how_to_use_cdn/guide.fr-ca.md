@@ -6,7 +6,7 @@ excerpt: 'Améliorez votre site en accélérant son chargement sur votre héberg
 section: 'Optimiser son site'
 ---
 
-**Dernière mise à jour le 09/12/2021**
+**Dernière mise à jour le 23/12/2021**
 
 ## Objectif
 
@@ -237,15 +237,16 @@ Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`
 
 ![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
 
-- **Nom de règle** : Attribuez un nom à votre règle.
-- **Type de ressource** : Choisissez parmi les choix ci-dessous:
-	- **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : css
-	- **Dossier** :  Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
-	- **Expression régulière personnalisée** : Elle s'applique sur toutes les URI de votre site web.
-	- **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
-- **Ressource** : définissez les attributs en fonction du type de ressource choisie.
-- **Durée** : Indiquez la durée de mise en cache de la ressource choisie.
-- **Classement** :  Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
+
+* **Nom de règle** : Attribuez un nom à votre règle.
+* **Type de ressource** : Choisissez parmi les choix ci-dessous:
+    * **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : css
+    * **Dossier** :  Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
+    * **Expression régulière personnalisée** : Elle s'applique sur toutes les URI de votre site web.
+    * **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
+* **Ressource** : définissez les attributs en fonction du type de ressource choisie.
+* **Durée** : Indiquez la durée de mise en cache de la ressource choisie.
+* **Classement** :  Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
 
 Une fois vos choix réalisés, cliquez sur le bouton `Créer la règle`{.action}.
 

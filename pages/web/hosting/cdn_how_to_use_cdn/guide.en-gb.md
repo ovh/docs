@@ -6,7 +6,7 @@ legacy_guide_number: g1290
 section: 'Website optimisation'
 ---
 
-**Last updated 9th December 2021**
+**Last updated 23rd December 2021**
 
 ## Objective
 
@@ -236,15 +236,16 @@ Under **Cache** rules, click the `Add a rule`{.action} button.
 
 ![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
 
-- **Rule name**: Give your rule a name.
-- **Resource type**: Choose from the options below:
-	- **Extension**: Please enter a valid file extension without putting a period, for example: css
-	- **File**:  Please enter a valid path for one of the folders in the root directory of your website.
-	- **Custom regular expression**: It applies to all URIs on your website.
-	- **URI**: Enter the subset of your website’s resources via their URL path.
-- **Resource**: set attributes based on the type of resource you choose.
-- **Lifespan**: Specify the cache duration for the chosen resource.
-- **Order**: Order your rules by execution order (lowest to highest).
+
+* **Rule name**: Give your rule a name.
+* **Resource type**: Choose from the options below:
+    * **Extension**: Please enter a valid file extension without putting a period, for example: css
+    * **File**:  Please enter a valid path for one of the folders in the root directory of your website.
+    * **Custom regular expression**: It applies to all URIs on your website.
+    * **URI**: Enter the subset of your website’s resources via their URL path.
+* **Resource**: set attributes based on the type of resource you choose.
+* **Lifespan**: Specify the cache duration for the chosen resource.
+* **Order**: Order your rules by execution order (lowest to highest).
 
 Once you have made your choices, click the `Create rule`{.action} button.
 
@@ -264,7 +265,7 @@ In the `Multisite`{.action} tab of your hosting, under the table, you can view t
 
 > [!primary]
 > 
-> The CDN option is already included in the "Performance" Web Hosting plans or plans ordered before 11/19/20.
+> The CDN option is already included in the "Performance" Web Hosting plans or plans ordered before November 19th, 2020.
 
 #### Clearing the CDN cache
 

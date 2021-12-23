@@ -10,7 +10,7 @@ legacy_guide_number: g1290
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 09/12/2021**
+**Ultimo aggiornamento: 23/12/2021**
 
 ## Obiettivo
 
@@ -240,15 +240,16 @@ Seleziona **Regole di cache** e clicca sul pulsante `Aggiungi una regola`{.actio
 
 ![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
 
-- **Regola**: Assegna un nome alla tua regola.
-- **Tipo di risorsa**: Scegli tra le seguenti opzioni:
-	- **Estensione**: Inserisci un'estensione di file valida senza apportare modifiche, ad esempio: css
-	- **Cartella**:  Inserisci un percorso valido per una delle cartelle presenti nella directory di root del tuo sito web.
-	- **Espressione regolare personalizzata**: e si applica a tutti gli URI del tuo sito Web.
-	- **URI**: Indica la sottounità di risorse del tuo sito Web, tramite il percorso che conduce all'URL.
-- **Risorsa**: definisci gli attributi in funzione del tipo di risorsa scelta.
-- **Durata**: Indica la durata di messa in cache della risorsa scelta.
-- **Classificazione**:  Classifica per ordine di esecuzione le tue regole (da minimo a massimo).
+
+* **Regola**: Assegna un nome alla tua regola.
+* **Tipo di risorsa**: Scegli tra le seguenti opzioni:
+    * **Estensione**: Inserisci un'estensione di file valida senza apportare modifiche, ad esempio: css
+    * **Cartella**:  Inserisci un percorso valido per una delle cartelle presenti nella directory di root del tuo sito web.
+    * **Espressione regolare personalizzata**: e si applica a tutti gli URI del tuo sito Web.
+    * **URI**: Indica la sottounità di risorse del tuo sito Web, tramite il percorso che conduce all'URL.
+* **Risorsa**: definisci gli attributi in funzione del tipo di risorsa scelta.
+* **Durata**: Indica la durata di messa in cache della risorsa scelta.
+* **Classificazione**:  Classifica per ordine di esecuzione le tue regole (da minimo a massimo).
 
 Una volta effettuate le scelte, clicca sul pulsante `Crea la regola`{.action}.
 
