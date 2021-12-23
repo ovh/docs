@@ -61,6 +61,6 @@ To ensure your data is safe, all inbound and outbound traffic to your database s
 
 ## Go further
 
-[Public Cloud Databases documentation](https://docs.ovh.com/gb/en/publiccloud/databases/),
+[Public Cloud Databases documentation](https://docs.ovh.com/gb/en/publiccloud/databases/)
 
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
