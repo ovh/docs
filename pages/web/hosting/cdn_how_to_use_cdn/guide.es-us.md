@@ -10,7 +10,7 @@ section: 'Optimización del sitio web'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 09/12/2021**
+**Última actualización: 23/12/2021**
 
 ## Objetivo
 
@@ -239,15 +239,16 @@ Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla
 
 ![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
 
-- **Nombre de regla**: Asigne un nombre a la regla.
-- **Tipo de recurso**: Elija entre las siguientes opciones:
-	- **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto, por ejemplo: css
-	- **Carpeta**:  Introduzca una ruta válida para una de las carpetas del directorio raíz de su sitio web.
-	- **Expresión regular personalizada**: y se aplica a todas las URI de su sitio web.
-	- **URI**: Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL.
-- **Recursos**: defina los atributos en función del tipo de recurso elegido.
-- **Duración**: Indique el tiempo de cacheado del recurso seleccionado.
-- **Clasificación**:  Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
+
+* **Nombre de regla**: Asigne un nombre a la regla.
+* **Tipo de recurso**: Elija entre las siguientes opciones:
+    * **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto, por ejemplo: css
+    * **Carpeta**:  Introduzca una ruta válida para una de las carpetas del directorio raíz de su sitio web.
+    * **Expresión regular personalizada**: y se aplica a todas las URI de su sitio web.
+    * **URI**: Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL.
+* **Recursos**: defina los atributos en función del tipo de recurso elegido.
+* **Duración**: Indique el tiempo de cacheado del recurso seleccionado.
+* **Clasificación**:  Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
 
 A continuación, haga clic en el botón `Crear la regla`{.action}.
 

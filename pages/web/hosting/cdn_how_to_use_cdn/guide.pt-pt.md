@@ -11,7 +11,7 @@ section: 'Otimizar o meu site'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 09/12/2021**
+**Última atualização: 23/12/2021**
 
 ## Objetivo
 
@@ -243,15 +243,16 @@ Sob a menção **Regras de cache**, clique no botão `Adicionar uma regra`{.acti
 
 ![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
 
-- **Nome da regra**: Atribua um nome à sua regra.
-- **Tipo de recurso**: Escolha entre as opções seguintes:
-	- **Extensão**: Introduza uma extensão de ficheiro válida sem que tenha de o aperfeiçoar, por exemplo: css
-	- **Pasta**:  Introduza um caminho válido para uma das pastas presentes no diretório raiz do seu website.
-	- **Expressão regular personalizada**: Aplica-se a todas as URI do seu website.
-	- **URI**: Indique o subconjunto de recursos do seu website através do seu caminho no URL.
-- **Recurso**\: defina os atributos em função do tipo de recurso escolhido.
-- **Duração**: Indique a duração de implementação de cache do recurso selecionado.
-- **Classificação**:  Classifique as suas regras por ordem de execução (da mais baixa à mais elevada).
+
+* **Nome da regra**: Atribua um nome à sua regra.
+* **Tipo de recurso**: Escolha entre as opções seguintes:
+    * **Extensão**: Introduza uma extensão de ficheiro válida sem que tenha de o aperfeiçoar, por exemplo: css
+    * **Pasta**:  Introduza um caminho válido para uma das pastas presentes no diretório raiz do seu website.
+    * **Expressão regular personalizada**: Aplica-se a todas as URI do seu website.
+    * **URI**: Indique o subconjunto de recursos do seu website através do seu caminho no URL.
+* **Recurso**: defina os atributos em função do tipo de recurso escolhido.
+* **Duração**: Indique a duração de implementação de cache do recurso selecionado.
+* **Classificação**:  Classifique as suas regras por ordem de execução (da mais baixa à mais elevada).
 
 Depois de escolher, clique no botão `Criar a regra`{.action}.
 
