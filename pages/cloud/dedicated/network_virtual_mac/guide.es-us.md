@@ -5,7 +5,7 @@ excerpt: 'Cómo crear una dirección MAC virtual y asociarle una IP failover'
 section: 'Red e IP'
 ---
 
-**Última actualización: 30/10/2018**
+**Última actualización: 16/12/2021**
 
 ## Objetivo
 
@@ -25,13 +25,13 @@ OVHcloud permite asociar una dirección MAC virtual a una dirección IP para pod
 
 ### Asignar una dirección MAC
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda al menú `Dedicado`{.action} y haga clic en `IP`{.action} en la columna izquierda.
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda al menú `Bare Metal Cloud`{.action} y haga clic en `IP`{.action} en la columna izquierda.
 
-![IPFO](images/virtual_mac_01_2020.png){.thumbnail}
+![IPFO](images/ipsection.png){.thumbnail}
 
 Localice su dirección IP failover (o su bloque) en la lista, haga clic en el botón `···`{.action} situado al final de la línea correspondiente para ver la lista de opciones y seleccione `Añadir una MAC virtual`{.action}.
 
-![IPFO](images/virtual_mac_02.png){.thumbnail}
+![IPFO](images/addvmac.png){.thumbnail}
 
 En el cuadro de diálogo, seleccione un tipo en la lista desplegable, introduzca el nombre de la máquina virtual y haga clic en `Aceptar`{.action}.
 
@@ -54,10 +54,10 @@ En el cuadro de diálogo, seleccione un tipo en la lista desplegable, introduzca
 > Si elimina una dirección MAC, no será posible recuperarla más adelante.
 > 
 
-Para eliminar una dirección MAC virtual asociada a una IP failover, en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} acceda al menú `Dedicado`{.action} y haga clic en `IP`{.action} en la columna izquierda. Seleccione el servidor para ver las IP failover o bloques de IP asociados.
+Para eliminar una dirección MAC virtual asociada a una IP failover, en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} acceda al menú `Bare Metal Cloud`{.action} y haga clic en `IP`{.action} en la columna izquierda. Seleccione el servidor para ver las IP failover o bloques de IP asociados.
 
-Por último, haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Eliminar una MAC virtual`{.action}.
+Por último, haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Eliminar la MAC virtual`{.action}.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -3,7 +3,7 @@ title: MongoDB - Connect with PHP
 excerpt: Connect to your Public Cloud Databases for MongoDB using the PHP programming language
 slug: mongodb/connect-php
 section: MongoDB
-order: 101
+order: 301
 ---
 
 **Last updated 13th September 2021**
