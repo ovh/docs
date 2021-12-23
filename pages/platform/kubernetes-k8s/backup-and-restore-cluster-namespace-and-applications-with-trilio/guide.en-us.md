@@ -150,7 +150,7 @@ In order for `TrilioVault` to work correctly and to backup your `PVCs`, `OVH Man
 kubectl get storageclass
 ```
 
-The output should look similar to (notice the provisioner is [dobs.csi.digitalocean.com](https://github.com/digitalocean/csi-digitalocean)):
+The output should look similar to (notice the provisioner is [hostpath.csi.k8s.io](https://github.com/kubernetes-csi/csi-driver-host-path):
 
 ```text
 NAME                        PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
@@ -894,4 +894,155 @@ NAME                                                           COMPLETIONS   DUR
 job.batch/mysql-qa-helm-release-full-backup-metamover-9w7s0y   1/1           28s        9m2s
 ```
 
+Next step deals with whole cluster backup and restore, thus covering a disaster recovery scenario.
 
+## Step 5 - Backup and Restore Whole Cluster Example
+
+In this step, you will simulate a `disaster recovery` scenario. The whole `OVH Managed Kubernetes Cluster` will be deleted, and then the important applications restored from a previous backup.
+
+Next, you will perform the following tasks:
+
+- `Create` the `multi-namespace backup`, using a `ClusterBackupPlan` CRD that targets `all important namespaces` from your `OVH Managed Kubernetes Cluster`.
+- `Delete` the `OVH Managed Kubernetes Cluster`, using `OVH Cloud Web Console`.
+- Create a new `OVH Managed Kubernetes Cluster`, using `OVH Cloud Web Console`.
+- `Re-install` TVK and configure the OVH Object Staorge bucket as S3 target (you're going to use the same S3 bucket, where your important backups are stored)
+- `Restore` all the important applications by using the TVK web console.
+- `Check` the `OVH Managed Kubernetes Cluster` applications integrity.
+
+### Creating the OVH Managed Kubernetes Cluster Backup using TVK Multi-Namespace backup feature
+
+The main idea here is to perform a `OVH Managed Kubernetes Cluster` `backup` by including `all important namespaces`, that hold your essential `applications` and `configurations`. Basically, we cannot name it a full cluster backup and restore, but rather a `multi-namespace` backup and restore operation. In practice this is all that's needed, because everything is `namespaced` in `Kubernetes`. You will also learn how to perform a cluster restore operation via `location` from the `target`. The same flow applies when you need to perform cluster migration.
+
+Typical `ClusterBackupPlan` manifest targeting multiple namespaces looks like below:
+
+```yaml
+apiVersion: triliovault.trilio.io/v1
+kind: ClusterBackupPlan
+metadata:
+  name: ovh-multi-ns-backup-plan
+  namespace: default
+spec:
+  backupConfig:
+    target:
+      name: trilio-ovh-s3-target
+      namespace: default
+  backupComponents:
+    - namespace: default
+	- namespace: demo-backup-ns
+    - namespace: backend
+    - namespace: monitoring
+```
+
+Notice that `kube-system` (or other OVH Managed Kubernetes Cluster related namespaces) is not included in the list. Usually, those are not required, unless there is a special case requiring some settings to be persisted at that level.
+
+Typical `ClusterBackup` manifest targeting multiple namespaces looks like below:
+
+```yaml
+apiVersion: triliovault.trilio.io/v1
+kind: ClusterBackup
+metadata:
+  name: multi-ns-backup
+  namespace: default
+spec:
+  type: Full
+  clusterBackupPlan:
+    name: ovh-multi-ns-backup-plan
+    namespace: default
+```
+
+Steps to initiate a backup for all important namespaces in your OVH Managed Kubernetes Cluster:
+
+1. First, change directory where the `ovh/docs` Git repository was cloned on your local machine:
+
+    ```shell
+    cd docs
+    ```
+
+2. Then, open and inspect the `ClusterBackupPlan` and `ClusterBackup` manifest files provided in the `docs` repository.
+
+    ```shell
+    cat assets/manifests/multi-ns-backup-plan.yaml
+    cat assets/manifests/multi-ns-backup.yaml
+    ```
+
+3. Create the `ClusterBackupPlan` resource, using `kubectl`:
+
+    ```shell
+    kubectl apply -f assets/manifests/multi-ns-backup-plan.yaml
+    ```
+
+Now, inspect the `ClusterBackupPlan` status, using `kubectl`:
+
+```shell
+kubectl get clusterbackupplan multi-ns-backup-plan -n default
+```
+
+The output looks similar to (notice the `STATUS` column value which should be set to `Available`):
+
+```text
+NAME                            TARGET                 ...		STATUS
+ovh-multi-ns-backup-plan		trilio-ovh-s3-target   ...		Available
+```
+
+4. Finally, create the `ClusterBackup` resource, using `kubectl`:
+	
+	```shell
+	kubectl apply -f assets/manifests/multi-ns-cluster-backup.yaml
+	```
+
+Next, check the `ClusterBackup` status, using `kubectl`:
+
+```shell
+kubectl get clusterbackup multi-ns-cluster-backup -n default
+```
+
+The output looks similar to (notice the `STATUS` column value which should be set to `Available`, as well as the `PERCENTAGE COMPLETE` set to `100`):
+
+```text
+NAME           		BACKUPPLAN             		BACKUP TYPE   STATUS		...		COMPLETE
+multi-ns-backup   	ovh-multi-ns-backup-plan	Full          Avilable		...		100                               
+```
+
+If the output looks like above then all your important application namespaces were backed up successfully.
+
+**Note:**
+
+Please bear in mind that it may take a while for the full cluster backup to finish, depending on how many namespaces and associated resources are involved in the process.
+
+You can also open the web console main dashboard and inspect the `multi-namespace` backup (notice how all the important namespaces that were backed up are highlighted in green color, in a honeycomb structure)
+
+### Re-creating the `OVH Managed Kubernetes Cluster` and Restoring Applications
+
+An important aspect to keep in mind is that whenever you destroy a `OVH Managed Kubernetes Cluster` and then restore it, a new `Load Balancer` with a new external `IP` is created as well when `TVK` restores your `ingress` controller. So, please make sure to update your OVH Managed DNS `A records` accordingly.
+
+Now, delete the whole `OVH Managed Kubernetes Cluster` using the OVH Cloud Web Console (https://ca.ovh.com/manager/public-cloud)
+
+Next, re-create the cluster as described in [Creating a OVH Managed Kubernetes Cluster] (https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/#instructions).
+
+To perform the restore operation, you need to install the `TVK` application as described in [Step 1 - Installing TrilioVault for Kubernetes](#step-1---installing-triliovault-for-kubernetes). Please make sure to use the `same Helm Chart version` - this is important!
+
+After the installation finishes successfully, configure the `TVK` target as described in [Step 2 - Creating a TrilioVault Target to Store Backups](#step-2---creating-a-triliovault-target-to-store-backups), and point it to the same ` OVH S3 bucket` where your backup data is located. Also, please make sure that `target browsing` is enabled.
+
+Next, verify and activate a new license as described in the [TrilioVault Application Licensing](#triliovault-application-licensing) section.
+
+To get access to the web console user interface, please consult [Getting Access to the TVK Web Management Console](#getting-access-to-the-tvk-web-management-console) section.
+
+Then, navigate to `Resource Management -> TVK Namespace -> Targets` (in case of `ovh/docs` the TVK Namespace is `tvk`)
+
+Going further, browse the target and list the available backups by clicking on the `Actions` button from the right. Then, select `Launch Browser` option from the pop-up menu (for this to work the target must have the `enableBrowsing` flag set to `true`)
+
+Now, click on the `multi-ns-backup-plan` item from the list, and then click and expand the `multi-ns-backup` item from the right sub-window
+
+To start the restore process, click on the `Restore` button. A progress window will be displayed similar to
+
+After a while, if the progress window looks like below, then the `multi-namespace` restore operation completed successfully
+
+### Checking OVH Managed Kubernetes Cluster Applications State
+
+First, verify all cluster `Kubernetes` resources (you should have everything in place):
+
+```shell
+kubectl get all --all-namespaces
+```
+
+In the next step, you will learn how to perform scheduled (or automatic) backups for your `OVH Managed Kubernetes Cluster` applications.
