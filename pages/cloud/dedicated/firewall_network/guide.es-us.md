@@ -47,7 +47,7 @@ Confirme la operación haciendo clic en `Aceptar`{.action}.
 
 Una vez creado el firewall, es necesario activarlo y configurarlo. Para ello, vuelva a hacer clic en el botón `···`{.action} situado al final de la línea correspondiente a la IPv4 y seleccione `Activar el firewall`{.action} (1). Repita el proceso y seleccione `Configurar el firewall`{.action} (2).
 
-![Activación de la configuración](images/activationconfig_2020.png){.thumbnail}
+![Activación de la configuración](images/activationconfig.png){.thumbnail}
 
 Es posible añadir hasta **20 reglas por IP**.
 
@@ -70,7 +70,7 @@ Es posible añadir hasta **20 reglas por IP**.
 
 Para añadir una regla, haga clic en el botón `Añadir una regla`{.action}.
 
-![Añadir una regla](images/ajoutregle1_2020.png){.thumbnail}
+![Añadir una regla](images/ajoutregle1.png){.thumbnail}
 
 Para cada regla es necesario seleccionar:
 
@@ -82,7 +82,7 @@ Para cada regla es necesario seleccionar:
 - el puerto de destino (TCP y UDP)
 - las opciones TCP (solo TCP)
 
-![Añadir una regla](images/ajoutregle4_2020.png){.thumbnail}
+![Añadir una regla](images/ajoutregle4.png){.thumbnail}
 
 
 > [!primary]
@@ -95,7 +95,7 @@ Para cada regla es necesario seleccionar:
 
 Para dejar abiertos únicamente los puertos SSH (22), HTTP (80), HTTPS (443) y UDP (10000), autorizando el ICMP, utilice las reglas de la siguiente imagen:
 
-![Ejemplo de configuración](images/exemple_2020.png){.thumbnail}
+![Ejemplo de configuración](images/exemple.png){.thumbnail}
 
 Las reglas se ordenan cronológicamente de 0 (la primera regla leída) a 19 (la última regla leída). La cadena deja de recorrerse en el momento en el que pueda aplicarse una regla al paquete recibido.
 

@@ -9,7 +9,7 @@ section: 'Rete e IP'
 
 ## Obiettivo
 
-Per proteggere la propria infrastruttura e i server dei propri clienti, OVH propone il Firewall Network, un’opzione configurabile e integrata al sistema **anti-DDoS** (VAC) che permette di limitare l’esposizione di un servizio agli attacchi provenienti dalla rete pubblica.
+Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud propone il Firewall Network, un’opzione configurabile e integrata al sistema **anti-DDoS** (VAC) che permette di limitare l’esposizione di un servizio agli attacchi provenienti dalla rete pubblica.
 
 **Questa guida ti mostra la procedura da seguire per configurare il servizio.**
 
@@ -24,8 +24,8 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVH prop
 
 ## Prerequisiti
 
-- Disporre di un servizio OVH compatibile con il Firewall Network ([server dedicati](https://www.ovh.it/server_dedicati/){.external}, [VPS](https://www.ovh.it/vps/){.external}, [istanze Public Cloud](https://www.ovh.it/public-cloud/istanze/){.external}, [Private Cloud](https://www.ovh.it/private-cloud/){.external}, [IP Failover](https://www.ovh.it/server_dedicati/ip_failover.xml){.external}, ecc...).
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un servizio OVHcloud compatibile con il Firewall Network ([server dedicati](https://www.ovh.it/server_dedicati/){.external}, [VPS](https://www.ovh.it/vps/){.external}, [istanze Public Cloud](https://www.ovh.it/public-cloud/istanze/){.external}, [Private Cloud](https://www.ovh.it/private-cloud/){.external}, [IP Failover](https://www.ovh.it/server_dedicati/ip_failover.xml){.external}, ecc...).
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 
 ## Procedura
@@ -37,7 +37,7 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVH prop
 > Il Firewall Network protegge gli IP associati a una macchina. Non è quindi possibile effettuare una configurazione globale del server, ma sarà necessario eseguirne una per ciascun IP separatamente.
 > 
 
-Dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nella sezione `Dedicato`{.action} > `IP`{.action}, clicca sul pulsante `...`{.action} a destra dell’IPv4 in questione e seleziona `Crea Firewall`{.action}:
+Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nella sezione `Dedicato`{.action} > `IP`{.action}, clicca sul pulsante `...`{.action} a destra dell’IPv4 in questione e seleziona `Crea Firewall`{.action}:
 
 ![Attivazione del Firewall Network](images/firewall_creation.png){.thumbnail}
 
@@ -62,7 +62,7 @@ A questo punto è possibile attivare e configurare il firewall cliccando di nuov
 > [!primary]
 >
 > - Di default, la frammentazione UDP è bloccata. Se utilizzi una VPN, ricorda di configurare correttamente il valore della tua Maximum Transmission Unit (MTU) in fase di attivazione del Firewall Network. Su OpenVPN, ad esempio, puoi selezionare `MTU test`{.action}.
-> - Le regole del Firewall Network non vengono applicate all’interno della rete OVH e non hanno quindi alcun impatto sulle connessioni di questa rete.
+> - Le regole del Firewall Network non vengono applicate all’interno della rete OVHcloud e non hanno quindi alcun impatto sulle connessioni di questa rete.
 >
 
 

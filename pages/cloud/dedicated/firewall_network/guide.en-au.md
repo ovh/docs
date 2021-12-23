@@ -10,7 +10,7 @@ section: Network Management
 
 To protect its global infrastructure and its customers’ servers, OVHcloud offers a firewall that can be configured and integrated into the **Anti-DDoS** (VAC) solution: the Firewall Network. This is an option that will enable you to limit how much your service is exposed to attacks from the public network.
 
-**This guide will take you through the steps for its configuration**.
+**This guide will show you how to configure your Network Firewall.**
 
 
 > [!primary]
@@ -39,15 +39,15 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 You can enable and configure it manually from the Control Panel in the `IP`{.action} section, by clicking on the gear icon to the right of the relevant IPv4.
 1
-![Enabling the Firewall Network](images/firewall_creation_2020.png){.thumbnail}
+![Enabling the Firewall Network](images/firewall_creation.png){.thumbnail}
 
 - You will then be asked for confirmation:
 
-![Confirmation](images/creationvalid_2020.png){.thumbnail}
+![Confirmation](images/creationvalid.png){.thumbnail}
 
 - You can then `Enable the firewall`{.action} and `Configure the Firewall`{.action} by clicking once more on the gear icon next to the IPv4:
 
-![Applying the rules in the configuration](images/activationconfig_2020.png){.thumbnail}
+![Applying the rules in the configuration](images/activationconfig.png){.thumbnail}
 
 You can set up to **20 rules per IP**.
 
@@ -63,7 +63,7 @@ You can set up to **20 rules per IP**.
 > [!primary]
 >
 > - The UDP fragmentation is blocked (DROP) as a default setting. When you enable the Firewall Network, if you use a VPN, remember to correctly configure your maximum transmission unit (MTU). For example, on OpenVPN, you can tick `MTU test`{.action}.
-> - The Firewall Network is not taken into account within the OVH network, so the rules set up do not affect the connections in this internal network.
+> - The Firewall Network is not taken into account within the OVHcloud network, so the rules set up do not affect the connections in this internal network.
 >
 
 
@@ -72,7 +72,7 @@ You can set up to **20 rules per IP**.
 To add a rule, right-click on `Add a rule`{.action}:
 
 
-![Add a rule](images/ajoutregle1_2020.png){.thumbnail}
+![Add a rule](images/ajoutregle1.png){.thumbnail}
 
 For each rule you must choose:
 
@@ -85,7 +85,7 @@ For each rule you must choose:
 - the TCP options (TCP only)
 
 
-![Details on adding a rule](images/ajoutregle4_2020.png){.thumbnail}
+![Details on adding a rule](images/ajoutregle4.png){.thumbnail}
 
 
 > [!primary]
@@ -103,12 +103,33 @@ To make sure that only the SSH (22), HTTP (80), HTTPS (443), and UDP (on port 10
 
 The rules are sorted chronologically from 0 (the first rule read) to 19 (the last). The chain stops being scanned as soon as a rule is applied to the packet.
 
-For example, a packet for TCP port 80 will be captured by rule 2 and the rules that come after will not be tested. A packet for TCP port 25 will only be captured at the last rule (19) which will block it, because OVH does not authorise communication on port 25 in the previous rules.
+For example, a packet for TCP port 80 will be captured by rule 2 and the rules that come after will not be tested. A packet for TCP port 25 will only be captured at the last rule (19) which will block it, because OVHcloud does not authorise communication on port 25 in the previous rules.
 
 > [!warning]
 >
 > If anti-DDoS mitigation is enabled, your Firewall Network rules will be applied, even if you have disabled them. If you wish to disable it, remember to delete your rules.
 > 
+
+### Configuring Armor
+
+> [!primary]
+> By default, Armor is pre-configured with certain rules that OVHcloud has determined work with the most common games. However, for customers with a Game Dedicated Server, we allow you to go a step further and configure rules for ports as well.
+>
+
+In order to configure rules for your ports in Armor, you will first need to log into the OVHcloud Control Panel.<br>
+Next, go to the `Bare Metal Cloud`{.action} and click on the `IP`{.action} section on the left-hand sidebar. Click on the `...`{.action} next to the IP address of your Game Server and click on `Configure the GAME firewall`{.action}.
+
+![Game_wall](images/GAMEwall2021.png){.thumbnail}
+
+On the following screen, click the `Add a rule`{.action}. button to add a rule to Armor.
+
+![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
+
+Enable the ports as needed on the following screen and click on the `Confirm`{.action} button when you are finished adding your rules. You have now successfully configured Armor.
+
+### Conclusion
+
+Having read this tutorial, you should now be able to configure the Network Firewall as well as Armor to enhance the security of your OVHcloud services.
 
 ## Go further
 

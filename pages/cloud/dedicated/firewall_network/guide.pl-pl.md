@@ -9,7 +9,7 @@ section: 'Sieć & IP'
 
 ## Wprowadzenie
 
-Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVH udostępniło zaporę ogniową, z możliwością wprowadzenia własnej konfiguracji, w pełni zintegrowaną z rozwiązaniem **Anty-DDoS (VAC)**: Network Firewall . Jest to rozwiązanie filtrujące ataki z sieci publicznej na usługi naszych klientów.
+Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud udostępniło zaporę ogniową, z możliwością wprowadzenia własnej konfiguracji, w pełni zintegrowaną z rozwiązaniem **Anty-DDoS (VAC)**: Network Firewall . Jest to rozwiązanie filtrujące ataki z sieci publicznej na usługi naszych klientów.
 
 **Ten przewodnik wyjaśnia, jak skonfigurować zaporę Network Firewall w Panelu klienta.**
 
@@ -24,8 +24,8 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVH udost�
 
 ## Wymagania początkowe
 
-- Korzystanie z usługi OVH ze zintegrowaną zaporą ogniową, Network Firewall: ([serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/){.external}, [serwer VPS](https://www.ovh.pl/vps/){.external}, [instancje Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pl/private-cloud/){.external}, [IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external}, etc.)
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Korzystanie z usługi OVHcloud ze zintegrowaną zaporą ogniową, Network Firewall: ([serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/){.external}, [serwer VPS](https://www.ovh.pl/vps/){.external}, [instancje Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pl/private-cloud/){.external}, [IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external}, etc.)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 
 ## W praktyce
@@ -61,7 +61,7 @@ Do dyspozycji masz **20 reguł dla każdego adresu IP**.
 > [!primary]
 >
 > - Fragmentacja UDP jest domyślnie zablokowana (DROP).  Jeśli używasz sieci VPN, to podczas aktywacji firewalla, pamiętaj, aby poprawnie skonfigurować maksymalną jednostkę transmisji (MTU). Na przykład na OpenVPN możesz zaznaczyć `MTU test`{.action}.
-> - Reguły skonfigurowane w Network Firewallu nie są brane pod uwagę wewnątrz sieci OVH.  Wprowadzone reguły nie mają wpływu na połączenia w wewnętrznej sieci OVH.
+> - Reguły skonfigurowane w Network Firewallu nie są brane pod uwagę wewnątrz sieci OVHcloud.  Wprowadzone reguły nie mają wpływu na połączenia w wewnętrznej sieci OVHcloud.
 >
 
 
@@ -99,7 +99,7 @@ Aby pozostawić otwarte tylko porty SSH (22), HTTP (80), HTTPS (443), UDP (na po
 
 Reguły są uporządkowane chronologicznie, od 0 (pierwsza odczytana reguła) do 19 (ostatnia odczytana reguła) i w tym porządku są uruchamiane dla pakietów.  Reguły przestają być sprawdzane, w chwili gdy jedna z nich dotyczy odebranego pakietu.
 
-Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez regułę 2, wtedy kolejne reguły nie są już aplikowane.  Pakiet przeznaczony dla portu 25/TCP zostanie przechwycony tylko przy ostatniej regule (19), która zablokuje go, ponieważ OVH nie zezwala na żadną komunikację na porcie 25 w poprzednich regułach.
+Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez regułę 2, wtedy kolejne reguły nie są już aplikowane.  Pakiet przeznaczony dla portu 25/TCP zostanie przechwycony tylko przy ostatniej regule (19), która zablokuje go, ponieważ OVHcloud nie zezwala na żadną komunikację na porcie 25 w poprzednich regułach.
 
 > [!warning]
 >
