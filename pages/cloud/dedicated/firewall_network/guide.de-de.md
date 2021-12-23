@@ -116,6 +116,23 @@ Im Beispiel wird ein Paket für den TCP-Port 80 von der Regel 2 angenommen, die 
 > Wenn Sie die DDoS-Schutz-Funktion aktivieren, werden automatisch auch Ihre Firewall Network Regeln aktiviert, auch wenn Sie die Firewall deaktiviert haben. Um Firewall Network vollständig zu deaktivieren, denken Sie also bitte daran, Ihre Regeln zu löschen.
 > 
 
+### Armor Firewall konfigurieren (Game Firewall)
+
+> [!primary]
+> Die Armor Firewall ist standardmäßig mit bestimmten Regeln vorkonfiguriert, die OVHcloud für die gängigsten Spiele festgelegt hat. Für Kunden, die über einen dedizierten Game Server verfügen, erlauben wir Ihnen jedoch, einen Schritt weiter zu gehen und auch Regeln für Ports zu konfigurieren.
+>
+
+Um die Regeln Ihrer Ports in Armor zu konfigurieren müssen Sie sich zuerst in Ihrem OVHcloud Kundencenter einloggen.<br>
+Gehen Sie anschließend in das Menü `Bare Metal Cloud`{.action} und klicken Sie links im Menü auf den Abschnitt `IP`{.action}. Klicken Sie auf `...`{.action}. neben der IP-Adresse Ihres Gameservers und anschließend auf `Game Firewall konfigurieren`{.action}.
+
+![Game_wall](images/GAMEwall2021.png){.thumbnail}
+
+Klicken Sie auf dem folgenden Bildschirm auf den Button `Regel hinzufügen`{.action}, um Armor hinzuzufügen.
+
+![configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
+
+Aktivieren Sie die Ports nach Bedarf auf dem folgenden Bildschirm und klicken Sie auf `Bestätigen`{.action}, wenn Sie Ihre Regeln hinzugefügt haben. Die Armor Firewall wurde nun erfolgreich konfiguriert.
+
 ## Weiterführende Informationen
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

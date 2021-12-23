@@ -41,7 +41,7 @@ Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OV
 > A Firewall Network foi concebida para proteger os endereços de IP associados a uma máquina. Cada IP deverá ser configurado de forma independente. Não é possível realizar uma configuração simultânea dos IP do servidor.
 > 
 
-Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, vá à secção `IP`{.action} e clique em `...`{.action} para ativar a firewall no IPv4 pretendido.
+Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda ao menu `Bare Metal Cloud`{.action} e clique na secção `IP`{.action} na barra lateral esquerda. Clique em `...`{.action} para ativar a firewall no IPv4 pretendido.
 
 ![Ativação da Firewall Network](images/firewall_creation.png){.thumbnail}
 
@@ -109,6 +109,23 @@ Por exemplo, um pacote destinado à porta 80/TCP é identificado pela regra 2 e 
 >
 > Em caso de ativação da mitigação Anti-DDoS, as regras da Firewall Network serão ativadas, mesmo tendo sido desativadas anteriormente. Se optar  pela desativação, não se esqueça de eliminar as regras.
 > 
+
+### Configurar a firewall Armor (Firewall Game)
+
+> [!primary]
+> Por predefinição, a firewall Armor está pré-configurada com certas regras que a OVHcloud determinou funcionar com os jogos mais comuns. No entanto, para os clientes que disponham de um servidor dedicado Game, permitimos-lhe ir mais longe e configurar igualmente regras para as portas.
+>
+
+Para configurar as regras das suas portas no Armor, primeiro tem de aceder à Área de Cliente OVHcloud.<br>
+De seguida, aceda ao menu `Bare Metal Cloud`{.action} e clique na secção `IP`{.action} na barra lateral esquerda. Clique em `...`{.action} junto do endereço IP do seu servidor de jogo e, a seguir, em `Configurar a Firewall Game`{.action}.
+
+![Game_wall](images/GAMEwall2021.png){.thumbnail}
+
+No ecrã seguinte, clique no botão `Adicionar uma regra`{.action} para adicionar uma regra ao Armor.
+
+![Configura_Armor](images/ConfigureArmor2021.png){.thumbnail}
+
+Ative as portas conforme as suas necessidades no ecrã seguinte e clique no botão `Confirmar`{.action} quando acabou de adicionar as suas regras. A firewall Armor foi configurada com sucesso.
 
 ## Quer saber mais?
 

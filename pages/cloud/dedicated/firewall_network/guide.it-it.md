@@ -109,6 +109,23 @@ Un pacchetto destinato alla porta 80/TCP, ad esempio, verrà catturato dalla reg
 > Se è in corso una mitigazione anti-DDoS, le regole vengono applicate anche se il Firewall Network è stato disabilitato. In caso di disattivazione, quindi, ricordati di eliminare le regole configurate.
 > 
 
+### Configura il Firewall Armor (Firewall Game)
+
+> [!primary]
+> Di default, il firewall Armor è preconfigurato con alcune regole che OVHcloud ha determinato di funzionare con i giochi più comuni. Tuttavia, per i clienti che dispongono di un server dedicato Game, ti permettiamo di andare oltre e configurare regole per le porte.
+>
+
+Per configurare le regole delle porte in Armor, accedi allo Spazio Cliente OVHcloud.<br>
+In seguito accedi al menu `Bare Metal Cloud`{.action} e clicca sulla sezione `IP`{.action} nella barra laterale sinistra. Clicca sui `...`{.action} in corrispondenza dell'indirizzo IP del tuo server di gioco e poi su `Configura il Firewall Game`{.action}.
+
+![Game_wall](images/GAMEwall2021.png){.thumbnail}
+
+Clicca sul pulsante `Aggiungi una regola`{.action} per aggiungere una regola ad Armor.
+
+![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
+
+Attiva le porte in base alle tue esigenze sullo schermo successivo e clicca sul pulsante `Conferma`{.action} quando hai finito di aggiungere le tue regole. Il firewall Armor è stato configurato correttamente.
+
 ## Per saperne di più
 
 Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.

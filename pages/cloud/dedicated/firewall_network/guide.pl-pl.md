@@ -110,6 +110,23 @@ Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez re
 > W chwili gdy włącza się ochrona Anty-DDoS, Twoje reguły zdefiniowane w usłudze Network Firewall zostaną uaktywnione, nawet jeśli je wyłączyłeś. W przypadku dezaktywacji firewalla, pamiętaj o usunięciu reguł.
 > 
 
+### Konfiguracja zapory sieciowej Armor (Firewall Game)
+
+> [!primary]
+> Domyślnie firewall Armor jest wstępnie skonfigurowany z niektórymi zasadami, które OVHcloud ustalił podczas uruchamiania najpopularniejszych gier. Jednak w przypadku klientów posiadających serwer dedykowany Game możemy pójść o krok dalej i skonfigurować reguły dla portów.
+>
+
+Aby skonfigurować reguły portów w trybie Armor, należy najpierw zalogować się do Panelu klienta OVHcloud.<br>
+Następnie przejdź do menu `Bare Metal Cloud`{.action} i kliknij sekcję `IP`{.action} na pasku bocznym po lewej stronie. Kliknij `...`{.action} obok adresu IP serwera gier, a następnie `Konfiguracja firewall game`{.action}.
+
+![Game_wall](images/GAMEwall2021.png){.thumbnail}
+
+Na następnym ekranie kliknij przycisk `Dodaj regułę`{.action}, aby dodać regułę do Armor.
+
+![Konfiguruj_Armor](images/ConfigureArmor2021.png){.thumbnail}
+
+Włącz porty zgodnie z Twoimi potrzebami na kolejnym ekranie i kliknij przycisk `Zatwierdź`{.action}, gdy zakończysz dodawanie reguł. Firewall Armor został już skonfigurowany.
+
 ## Sprawdź również
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
