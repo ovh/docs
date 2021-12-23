@@ -12,7 +12,7 @@ order: 90
 
 OVHcloud Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance.
 
-**This guide lists and explainssecurity measures implemented for the Cloud Databases services.**
+**This guide lists and explains security measures implemented for the Cloud Databases services.**
 
 ## Certifications & Compliance
 
