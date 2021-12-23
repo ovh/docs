@@ -20,7 +20,7 @@ The aim of this guide is to explain how vSAN fault domains work and how they are
 
 ## Instructions
 
-### How they work
+### How Fault Domain work
 
 A fault domain refers to a set of servers, storage devices, or network components that are grouped within a physical location in the data centre and can be collectively assigned during a failure.
 
