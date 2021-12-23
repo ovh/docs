@@ -3,7 +3,7 @@ title: 'Wykupienie adresu IP Failover'
 excerpt: 'Dowiedz się, jak zamawiać adresy IP Failover dla swoich instancji'
 slug: wykupienie_adresu_ip_failover
 legacy_guide_number: g2030
-section: 'Zarządzanie w Panelu klienta OVH'
+section: 'Sieć'
 ---
 
 > [!primary]
