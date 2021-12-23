@@ -37,7 +37,7 @@ In order for this to work, each server stores a part of your website in its cach
 
 #### If the CDN option is not ordered or enabled on your Web Hosting plan
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of "CDN option", then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
 
 > [!primary]
 > 
@@ -58,7 +58,7 @@ Select the “Activate the CDN” option, click `Next`{.action} and then `Confir
 > [!warning]
 > 
 > If  an external (not registered with OVHcloud) domain name has been added to the Web Hosting as Multisite, you must enter the CDN’s IP address in the domain name’s DNS zone.<br>
-> Check the [IP address list for Web Hosting clusters](../list-of-ip-addresses-of-web-hosting-clusters/) to find the specific IP address for your cluster’s CDN.
+> Check the [IP address list for Web Hosting clusters](https://docs.ovh.com/gb/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/) to find the specific IP address for your cluster’s CDN.
 
  
 **Why is it not possible to use a geolocated IP with the CDN option?** <br>
@@ -85,7 +85,7 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the multisite entry, then on `Modify the CDN`{.action}.
 
 > [!warning]
-> 
+>
 > Some options are locked on the Basic solution and require you to sign up to [CDN Security](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/) or [CDN Advanced](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/).
 
 ![CDN](images/manage_sharedCDN_02.png){.thumbnail}
@@ -165,7 +165,7 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 	![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
 
 > [!primary]
-> 
+>
 > When you enable the HSTS feature on your website, it will enforce the use of the HTTPS protocol on your browser until the end of the period known as `maximum age`, even after disabling the feature in your Control Panel. However, when the cache is cleared on the browser that has already visited your site, the browser will apply the new HSTS status.
 
 - **Mixed content**: Enforce the integrity of all your web pages's content. Pages will be loaded securely, contributing to an optimal user experience. All of your website’s internal and external resources must be available in HTTPS, to avoid a browser error.
@@ -173,11 +173,11 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 - **Application firewall**: The **W**eb **A**pplication **F**irewall (WAF) protects your website from fraudulent attacks such as code injections, illegitimate requests or data theft. It covers the main known vulnerabilities on the web by filtering requests and packets transmitted (the list of vulnerabilities is managed by OVHcloud and regularly updated). 
 
 > [!warning]
->  
-> For the installation of an [OVHcloud 1-click module](../web_hosting_web_hosting_modules/), the WAF must be disabled in order to prevent the installation of the module from being blocked.
+>
+> For the installation of an [OVHcloud 1-click module](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/), the WAF must be disabled in order to prevent the installation of the module from being blocked.
 
 > [!primary]
->  
+>
 > WAF is fully managed by OVHcloud, and the list of vulnerabilities is regularly updated.
 
 #### Configuring CDN Advanced options
@@ -256,7 +256,7 @@ Once you have configured your rules and chosen your options, click `Apply config
 
 ### Viewing CDN statistics
 
-In the `Multisites`{.action} tab of your hosting, under the table, you can view the statistics of your CDN, indicating the number of requests per minute measured on it.
+In the `Multisite`{.action} tab of your hosting, under the table, you can view the statistics of your CDN, indicating the number of requests per minute measured on it.
 
 ![CDN](images/manage_CDNstat_01.png){.thumbnail}
 
@@ -270,7 +270,7 @@ In the `Multisites`{.action} tab of your hosting, under the table, you can view 
 
 It is sometimes useful to clear the CDN cache, particularly when you modify static files - for example, when launching a new version of your site. In this case, you can completely clear the CDN cache.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Clear cache`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of "CDN option", then on `Clear cache`{.action}.
 
 ![CDN](images/manage_CDN_02.png){.thumbnail}
 
@@ -307,7 +307,7 @@ This action allows you to deactivate the CDN for one or more of your Multisite e
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant the Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
 
-Untick “Activate the CDN”, click `Next`{.action} and then `Confirm`{.action}.
+Untick "Activate the CDN", click `Next`{.action} and then `Confirm`{.action}.
 
 ![CDN](images/manage_CDN_03.png){.thumbnail}
 
@@ -324,8 +324,6 @@ Click `Confirm`{.action} to continue with the cancellation.
 > [!warning]
 >
 > You will receive an email containing the CDN closure procedure. Please follow the instructions in the email in order to confirm or cancel the request.
-> 
-
 
 ### Checking that your CDN is working
 
