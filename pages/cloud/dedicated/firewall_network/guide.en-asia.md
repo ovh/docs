@@ -4,7 +4,7 @@ slug: firewall-network
 section: Network Management
 ---
 
-**Last updated 16/11/2018**
+**Last updated 23rd December 2021**
 
 ## Objective
 
@@ -37,11 +37,11 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 > The Firewall Network protects the IPs that are associated with a machine. You must therefore configure each IP separately; it is not possible to configure the server as a whole.
 > 
 
-Log in to the [OVHcloud Control Panel](ttps://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, go to the `IP`{.action} section, and click on `...`{.action} to activate the firewall on an IPv4.
+In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then click on the `IP`{.action} section at the bottom of the column on the left of the page. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Create Firewall`{.action}.
 
 ![Enabling the Firewall Network](images/firewall_creation.png){.thumbnail}
 
-- You will then be asked for confirmation:
+- You will then be asked to confirm:
 
 ![Confirmation](images/creationvalid.png){.thumbnail}
 
@@ -70,7 +70,6 @@ You can set up to **20 rules per IP**.
 ### Configuring the Firewall Network
 
 To add a rule, click on `Add a rule`{.action}:
-
 
 ![Add a rule](images/ajoutregle1.png){.thumbnail}
 
@@ -130,6 +129,7 @@ Enable the ports as needed on the following screen and click on the `Confirm`{.a
 ### Conclusion
 
 Having read this tutorial, you should now be able to configure the Network Firewall as well as Armor to enhance the security of your OVHcloud services.
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

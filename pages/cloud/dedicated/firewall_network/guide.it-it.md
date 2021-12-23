@@ -5,7 +5,7 @@ excerpt: 'Scopri come configurare un Firewall Network'
 section: 'Rete e IP'
 ---
 
-**Ultimo aggiornamento: 27/11/2018**
+**Ultimo aggiornamento: 23/12/2021**
 
 ## Obiettivo
 
@@ -37,7 +37,7 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 > Il Firewall Network protegge gli IP associati a una macchina. Non è quindi possibile effettuare una configurazione globale del server, ma sarà necessario eseguirne una per ciascun IP separatamente.
 > 
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nella sezione `Dedicato`{.action} > `IP`{.action}, clicca sul pulsante `...`{.action} a destra dell’IPv4 in questione e seleziona `Crea Firewall`{.action}:
+Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nella sezione `Bare Metal Cloud`{.action} > `IP`{.action}, clicca sul pulsante `...`{.action} a destra dell’IPv4 in questione e seleziona `Crea Firewall`{.action}:
 
 ![Attivazione del Firewall Network](images/firewall_creation.png){.thumbnail}
 

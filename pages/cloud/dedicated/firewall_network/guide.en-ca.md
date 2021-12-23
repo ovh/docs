@@ -4,7 +4,7 @@ slug: firewall-network
 section: Network Management
 ---
 
-**Last updated 2018/01/18**
+**Last updated 23rd December 2021**
 
 ## Objective
 
@@ -37,11 +37,11 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 > The Firewall Network protects the IPs that are associated with a machine. You must therefore configure each IP separately; it is not possible to configure the server as a whole.
 > 
 
-You can enable and configure it manually from the Control Panel in the `IP`{.action} section, by clicking on the gear icon to the right of the relevant IPv4.
+In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then click on the `IP`{.action} section at the bottom of the column on the left of the page. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Create Firewall`{.action}.
 
 ![Enabling the Firewall Network](images/firewall_creation.png){.thumbnail}
 
-- You will then be asked for confirmation:
+- You will then be asked to confirm:
 
 ![Confirmation](images/creationvalid.png){.thumbnail}
 

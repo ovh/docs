@@ -5,7 +5,7 @@ slug: network-firewall
 section: 'Sieć & IP'
 ---
 
-**Ostatnia aktualizacja z dnia 08-11-2018**
+**Ostatnia aktualizacja z dnia 23-12-2021**
 
 ## Wprowadzenie
 

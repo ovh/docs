@@ -5,7 +5,7 @@ slug: firewall-network
 section: 'Redes & IP'
 ---
 
-**Última atualização: 21/09/2018**
+**Última atualização: 23/12/2021**
 
 ## Sumário
 

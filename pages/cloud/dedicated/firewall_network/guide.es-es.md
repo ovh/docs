@@ -9,14 +9,14 @@ section: 'Red e IP'
 
 ## Objetivo
 
-Para proteger su infraestructura mundial y los servidores de sus clientes, OVH ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el firewall de red. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
+Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el firewall de red. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
 
 **Esta guía explica cómo configurar el firewall de red.**
 
 
 > [!primary]
 >
-> Para más información sobre la solución anti-DDoS de OVH, consulte la página <https://www.ovh.es/anti-ddos/>.
+> Para más información sobre la solución anti-DDoS de OVHcloud, consulte la página <https://www.ovh.es/anti-ddos/>.
 > 
 
 ![El VAC en detalle](images/vac-inside.png){.thumbnail}
@@ -24,8 +24,8 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVH o
 
 ## Requisitos
 
-- Tener contratado un servicio de OVH que utilice el firewall de red ([servidores dedicados](https://www.ovh.es/servidores_dedicados/){.external}, [VPS](https://www.ovh.es/vps/){.external}, [instancias de Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external}, [Private Cloud](https://www.ovh.es/private-cloud/){.external}, [IP Failover](https://www.ovh.es/servidores_dedicados/ip_failover.xml){.external}...).
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Dedicado`{.action}.
+- Tener contratado un servicio de OVHcloud que utilice el firewall de red ([servidores dedicados](https://www.ovh.es/servidores_dedicados/){.external}, [VPS](https://www.ovh.es/vps/){.external}, [instancias de Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external}, [Private Cloud](https://www.ovh.es/private-cloud/){.external}, [IP Failover](https://www.ovh.es/servidores_dedicados/ip_failover.xml){.external}...).
+- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 
 ## Procedimiento
@@ -37,7 +37,8 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVH o
 > El firewall de red protege las direcciones IP asociadas a una máquina. Es necesario configurar cada IP de forma independiente; no es posible configurar directamente el servidor.
 > 
 
-En la columna izquierda del área de cliente de OVH, haga clic en `IP`{.action}. En la pestaña `IP`{.action}, haga clic en el botón `···`{.action} situado al final de la línea correspondiente a la IPv4 en la que quiera activar el cortafuegos y seleccione `Crear firewall`{.action}.
+Conéctese al área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} de la barra de herramientas y seleccione la sección `IP`{.action} situada en la esquina inferior izquierda de la página.<br>
+Haga clic en el botón `···`{.action} situado al final de la línea correspondiente a la IPv4 en la que quiera activar el cortafuegos y seleccione `Crear firewall`{.action}.
 
 ![Activación del firewall de red](images/firewall_creation.png){.thumbnail}
 
@@ -54,7 +55,7 @@ Es posible añadir hasta **20 reglas por IP**.
 > [!warning]
 >
 > El firewall se activa automáticamente en cada ataque DDoS y no es posible desactivarlo hasta que el ataque haya finalizado. Por ese motivo, es importante mantener las reglas de firewall actualizadas.
-> Las IP de OVH no tienen ninguna regla configurada por defecto, por lo que pueden establecerse todas las conexiones.
+> Las IP de OVHcloud no tienen ninguna regla configurada por defecto, por lo que pueden establecerse todas las conexiones.
 > No olvide comprobar regularmente sus reglas de firewall (si las tiene), aunque lo haya desactivado.
 > 
 
@@ -62,7 +63,7 @@ Es posible añadir hasta **20 reglas por IP**.
 > [!primary]
 >
 > - La fragmentación UDP está bloqueada (DROP) por defecto. Si utiliza una VPN, al activar el firewall de red no olvide configurar correctamente su MTU (unidad de transmisión máxima). Por ejemplo, en OpenVPN, puede marcar `MTU test`{.action}.
-> - El firewall de red no actúa dentro de la red de OVH, por lo que las reglas creadas no afectan a las conexiones internas.
+> - El firewall de red no actúa dentro de la red de OVHcloud, por lo que las reglas creadas no afectan a las conexiones internas.
 >
 
 
