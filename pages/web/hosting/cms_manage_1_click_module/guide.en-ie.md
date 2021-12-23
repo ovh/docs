@@ -49,11 +49,11 @@ Next, click on the `...`{.action} button to the right of the line for your modul
 
 Click on the `1-click modules`{.action} tab in the `Hosting plans`{.action} section of your Control Panel. Your module’s admin ID will appear in the `Login` column.
 
-You can also search for the email received after the creation of your module from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie): click on your name in the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
+You can also search for the email received after the creation of your module from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie): click on your name at the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
 
 ### Change your module password
 
-You can change the administrator password of your module via the OVHcloud Control Panel or by going directly to the login page of your website’s control panel.
+You can change the administrator password of your module via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) or by going directly to the login page of your website’s admin interface.
 In both cases, you will receive an email containing a link to reset your password.
 
 > [!primary]
@@ -62,7 +62,7 @@ In both cases, you will receive an email containing a link to reset your passwor
 >
 > Check the `Spam`{.action} and `Trash`{.action} folders in your mailbox.
 >
-> You can also view all emails sent by our services from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie): click on your name in the top right-hand corner of the screen, then in the context menu, click on `Service emails`{.action}.
+> You can also view all emails sent by our services from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie): click on your name at the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
 >
 > **Link validity period:**
 >
@@ -89,7 +89,7 @@ If you have only one database in this part of your control panel and you do not 
 
 Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this is the directory where the files that make up your 1-click module are located on the FTP server.
 
-Then log on to the [FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting plan. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse to the configuration file for your module:
+Then log on to the [FTP space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting plan. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse to the configuration file for your module:
 
 - WORDPRESS: **"wp-config.php"** (the database name appears as **"DB_NAME"**).
 - JOOMLA: **"configuration.php"** (the database name appears under **"public $db"**).
@@ -139,6 +139,6 @@ Do not install plugins or templates that have not been recommended by the offici
 
 [Resolving the most common 1-click module errors](https://docs.ovh.com/ie/en/hosting/error-frequently-1-click-modules/).
 
-For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
 
 Join our community on <https://community.ovh.com/en/>.

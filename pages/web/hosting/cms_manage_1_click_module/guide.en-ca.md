@@ -49,11 +49,11 @@ Next, click on the `...`{.action} button to the right of the line for your modul
 
 Click on the `1-click modules`{.action} tab in the `Hosting plans`{.action} section of your Control Panel. Your module’s admin ID will appear in the `Login` column.
 
-You can also search for the email received after the creation of your module from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca): click on your name in the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
+You can also search for the email received after the creation of your module from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca): click on your name at the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
 
 ### Change your module password
 
-You can change the administrator password of your module via the OVHcloud Control Panel or by going directly to the login page of your website’s control panel.
+You can change the administrator password of your module via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or by going directly to the login page of your website’s admin interface.
 In both cases, you will receive an email containing a link to reset your password.
 
 > [!primary]
@@ -62,7 +62,7 @@ In both cases, you will receive an email containing a link to reset your passwor
 >
 > Check the `Spam`{.action} and `Trash`{.action} folders in your mailbox.
 >
-> You can also view all emails sent by our services from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca): click on your name in the top right-hand corner of the screen, then in the context menu, click on `Service emails`{.action}.
+> You can also view all emails sent by our services from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca): click on your name at the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
 >
 > **Link validity period:**
 >
@@ -83,13 +83,13 @@ Then, click on the `...`{.action} button to the right of the line related to you
 
 #### Step 1: identify the database linked to your module <a name="step1"></a>
 
-To delete your 1-click module, you must first identify its database with **certainty**. Go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the concerned hosting plan then on the `Databases`{.action} tab.
+To delete your 1-click module, you must first identify its database with **certainty**. Go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the relevant hosting plan then on the `Databases`{.action} tab.
 
 If you have only one database in this part of your control panel and you do not have a [Private SQL](https://www.ovhcloud.com/en-ca/web-hosting/options/private-sql/) offer, you can consider this to be your website's database.
 
 Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this is the directory where the files that make up your 1-click module are located on the FTP server.
 
-Then log on to the [FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting plan. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse to the configuration file for your module:
+Then log on to the [FTP space](https://docs.ovh.com/ca/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting plan. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse to the configuration file for your module:
 
 - WORDPRESS: **"wp-config.php"** (the database name appears as **"DB_NAME"**).
 - JOOMLA: **"configuration.php"** (the database name appears under **"public $db"**).
@@ -118,7 +118,7 @@ Then click on the `...`{.action} button to the right of the line related to your
 > If you have a [Personal Hosting](https://www.ovhcloud.com/en-ca/web-hosting/personal-offer/) subscription or if you have already created all four databases of your [Professional Hosting](https://www.ovhcloud.com/en-ca/web-hosting/professional-offer/) or [Performance Hosting](https://www.ovhcloud.com/en-ca/web-hosting/performance-offer/), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
 >
 
-To complete the removal of your module, in the `Web cloud`{.action}, `Hosting plans`{.action} sections, within the relevant hosting plan of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Databases`{.action} tab. Next, click on the `...`{.action} button to the right of the line concerning your database and on the `Delete database`{.action} button.
+To complete the removal of your module, in the `Web cloud`{.action}, `Hosting plans`{.action} sections, within the relevant hosting plan of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Databases`{.action} tab. Next, click on the `...`{.action} button to the right of the line concerning your database and then `Delete database`{.action}.
 
 Before attempting to install a new module again, verify that the previously requested removal tasks have been completed in the `Ongoing jobs`{.action} tab.
 
@@ -139,6 +139,6 @@ Do not install plugins or templates that have not been recommended by the offici
 
 [Resolving the most common 1-click module errors](https://docs.ovh.com/ca/en/hosting/error-frequently-1-click-modules/).
 
-For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-ca/).
 
 Join our community on <https://community.ovh.com/en/>.

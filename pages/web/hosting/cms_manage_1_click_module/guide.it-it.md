@@ -52,9 +52,9 @@ Clicca sui tre puntini `...`{.action} a destra della linea relativa al tuo modul
 
 ### Trova l'identificativo amministratore
 
-Per prima cosa, cerca l'email ricevuta durante la creazione del tuo modulo dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)\: clicca sul tuo nome in alto a destra dello schermo e poi, nel menu che appare, clicca sulle tue iniziali (Pulsante `Gestisci il mio account`{.action}) e poi sulla scheda `Email ricevute`{.action}.
+Clicca sulla scheda `Moduli in 1 click`{.action} nella sezione `Hosting`{.action} dello Spazio Cliente. Nella colonna `Login`, l'identificativo amministratore del tuo modulo è visibile:
 
-e passare attraverso la scheda `CMS in 1 click`{.action} dalla sezione `Hosting`{.action} dello Spazio Cliente. L'identificativo amministratore del tuo modulo compare nella colonna `Login`.
+Puoi anche ricercare l'email ricevuta durante la creazione del tuo modulo dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it): clicca sul tuo nome in alto a destra e poi su `Email di servizio`{.action}.
 
 ### Modifica la password del tuo modulo
 
@@ -67,7 +67,7 @@ In entrambi i casi, riceverai un'email di reimpostazione della password.
 >
 > Nella casella di posta corrispondente, controlla le cartelle `Spam`{.action} e `Corbeille`{.action}.
 >
-> Tutte le email inviate dai nostri servizi sono disponibili nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)\: clicca sul tuo nome in alto a destra dello schermo e, nel menu contestuale a destra dello schermo, clicca sulle tue iniziali (Pulsante `Gestisci il tuo account`{.action}) e poi sulla scheda `Email ricevute`{.action}.
+> Puoi anche ricercare l'email ricevuta durante la creazione del tuo modulo dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it): clicca sul tuo nome in alto a destra e poi su `Email di servizio`{.action}.
 >
 > **Durata di validità dei collegamenti:**
 >
@@ -83,31 +83,31 @@ Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo
 
 > [!warning]
 >
-> Il backup dei tuoi dati è una delle operazioni principali per la [sicurezza dei tuoi siti](../secure-website). Ti consigliamo di importare regolarmente e **prima di eliminare** il backup dei tuoi dati su un supporto locale, come una chiavetta USB o un hard disk esterno, seguendo le istruzioni di questa [guida](../exporter-son-site-web/).
+> Il backup dei tuoi dati è una delle operazioni principali per la [sicurezza dei tuoi siti](https://docs.ovh.com/it/hosting/secure-website/). Ti consigliamo di importare regolarmente e **prima di eliminare** il backup dei tuoi dati su un supporto locale, come una chiavetta USB o un hard disk esterno, seguendo le istruzioni di questa [guida](https://docs.ovh.com/gb/en/hosting/export-a-website/).
 >
 
 #### Step 1: identifica il database associato al tuo modulo <a name="step1"></a>
 
 Per eliminare il tuo modulo in 1 click, è necessario iniziare ad identificarne il database in modo **sicuro**. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Web Cloud`{.action}, `Hosting`{.action}, sul tuo hosting e poi sulla scheda `Database`{.action}.
 
-Se disponi di un solo database in questa parte del tuo Spazio Cliente e non disponi di soluzioni [SQL Privato](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [Cloud Database](https://www.ovh.com/fr/cloud-databases/), puoi considerare che si tratta di quello del tuo sito.
+Se disponi di un solo database in questa parte del tuo Spazio Cliente e non disponi di soluzioni [SQL Privato](https://www.ovhcloud.com/it/web-hosting/options/private-sql/), puoi considerare che si tratta di quello del tuo sito.
 
-In caso contrario, clicca sulla scheda `Multisito`{.action}. Annota il nome della `Cartella di root`\: è la directory in cui sono presenti i file che costituiscono il tuo modulo in 1 click sul server FTP.
+In caso contrario, clicca sulla scheda `Multisito`{.action}. Annota il nome della `Cartella di root`: è la directory in cui sono presenti i file che costituiscono il tuo modulo in 1 click sul server FTP.
 
-Accedi allo [spazio FTP del tuo hosting](../connexion-espace-stockage-ftp-hebergement-web/). Apri la `Cartella di root` trovata precedentemente nella scheda `Multisito`{.action} e cerca il file di configurazione del tuo modulo:
+Accedi allo [spazio FTP del tuo hosting](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/). Apri la `Cartella di root` trovata precedentemente nella scheda `Multisito`{.action} e cerca il file di configurazione del tuo modulo:
 
 - Per WORDPRESS: **"wp-config.php"** (il nome del database compare con la dicitura **"DB_NAME"**).
-- Per JOOMLA: **"configurazione.php"** (il nome del database compare con la dicitura **"public $db"**).
-- Per DRUPAL: **"settings.php"** (Per ritrovarlo, accedi alla cartella **"site"** e **"default"**. Il nome del database compare con la dicitura "**database"**.
-- Per PRESTASHOP: **"parameters.php"** (Per ritrovarlo, accedi alla cartella **"app"** e **"config"**. Il nome del database del tuo modulo compare con la dicitura **"**).
+- Per JOOMLA: **"configuration.php"** (il nome del database compare con la dicitura **"public $db"**).
+- Per DRUPAL: **"settings.php"** (Per ritrovarlo, accedi alla cartella **"site"** e **"default"**. Il nome del database compare con la dicitura **"database"**.
+- Per PRESTASHOP: **"parameters.php"** (Per ritrovarlo, accedi alla cartella **"app"** e **"config"**. Il nome del database del tuo modulo compare con la dicitura **"database_name"**).
 
 #### Step 2: salvare il tuo modulo (facoltativo)
 
-Per effettuare il backup del tuo sito, segui le istruzioni di questa [guida](../exporter-son-site-web/) per recuperare sia i file sullo spazio FTP del tuo hosting che i database.
+Per effettuare il backup del tuo sito, segui le istruzioni di questa [guida](https://docs.ovh.com/gb/en/hosting/export-a-website/) per recuperare sia i file sullo spazio FTP del tuo hosting che i database.
 
 #### Step 3: elimina il tuo modulo
 
-> \[!alert]
+> [!alert]
 >
 > L'eliminazione del tuo modulo in 1 click e del suo database comporta anche la cancellazione di **tutti i backup**. I dati eliminati non potranno essere recuperati in seguito.
 >
@@ -118,27 +118,27 @@ Clicca sui tre puntini `...`{.action} a destra della linea che indica il tuo mod
 
 > [!warning]
 >
-> L'eliminazione del modulo 1 click **non comporta automaticamente l'eliminazione del database**. Se avvii l'installazione di un nuovo CMS senza aver prima eliminato il database del precedente (e il tuo hosting non consente la creazione automatica di un nuovo database), il messaggio "[Si è verificato un errore durante il caricamento delle informazioni (You need at least one free database)](https://docs.ovh.com/it/hosting/errori-frequenti-moduli-in-1-click/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database)" comparirà sul tuo Spazio Cliente.
+> L'eliminazione del modulo 1 click **non comporta automaticamente l'eliminazione del database**. Se avvii l'installazione di un nuovo CMS senza aver prima eliminato il database del precedente (e il tuo hosting non consente la creazione automatica di un nuovo database), il messaggio "[Si è verificato un errore durante il caricamento delle informazioni (You need at least one free database)](hhttps://docs.ovh.com/it/hosting/errori-frequenti-moduli-in-1-click/#si-e-verificato-un-errore-durante-il-caricamento-delle-informazioni-you-need-at-least-one-free-database)" comparirà sul tuo Spazio Cliente.
 >
-> Se disponi di un abbonamento [Kimsufi](https://www.kimsufi.com/fr/hosting.xml) o [Personale](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) o hai già creato quattro database sul tuo hosting [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), dovrai eliminare il database identificato [nello Step 1](#step1) ** PRIMA di poter creare un nuovo modulo in 1 click.
+> Se disponi di un abbonamento [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) o hai già creato quattro database sul tuo hosting [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), dovrai eliminare il database identificato nello [Step 1](#step1) **PRIMA** di poter creare un nuovo modulo in 1 click.
 >
 
-Per completare l'eliminazione del tuo modulo, clicca sulla scheda `Database`{.action}, sempre nella sezione `Web Cloud`{.action}, `Hosting`{.action} e sull'hosting interessato sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `...`{.action} a destra della linea che designa il database e sul pulsante ` `{.action}Elimina il database di dati.
+Per completare l'eliminazione del tuo modulo, clicca sulla scheda `Database`{.action}, sempre nella sezione `Web Cloud`{.action}, `Hosting`{.action} e sull'hosting interessato sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `...`{.action} a destra della linea che designa il database e sul pulsante `Elimina il database`{.action} di dati.
 
-Prima di riavviare l'installazione di un nuovo modulo, verifica che le operazioni di eliminazione richieste in precedenza siano state completate tramite la scheda `Task in corso`{.action}.
+Prima di riavviare l'installazione di un nuovo modulo, verifica che le operazioni di eliminazione richieste in precedenza siano state completate tramite la scheda `Operazioni in corso`{.action}.
 
 ### Buone prassi
 
-Rendi sicuro il tuo sito seguendo le istruzioni di questa [guida](../secure-website/).
+Rendi sicuro il tuo sito seguendo le istruzioni di questa [guida](https://docs.ovh.com/it/hosting/secure-website/).
 
 Aggiungi strumenti di test del tipo CAPTCHA ai moduli del tuo sito.
 
 Non installate sul vostro sito plugin o template che non sono stati consigliati dalle comunità ufficiali del vostro CMS: 
 
-- [WordPress](https://wpfr.net/){.external}
-- [Joomla!](https://forum.joomla.fr/){.external}
-- [Drupal](https://www.drupal.fr/forum){.external}
-- [Prestashop](https://www.prestashop.com/forums/){.external}
+- [WordPress](https://wordpress.org/){.external}
+- [Joomla](https://community.joomla.org/){.external}
+- [Drupal](https://www.drupal.org/community){.external}
+- [PrestaShop](https://www.prestashop.com/it){.external}
 
 ## Spingiti oltre <a name="gofurther"></a>
 
@@ -146,4 +146,4 @@ Non installate sul vostro sito plugin o template che non sono stati consigliati 
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

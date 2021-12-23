@@ -135,10 +135,10 @@ Adicione ferramentas de teste do tipo CAPTCHA aos formulários do seu site.
 
 Não instale no seu site plugins ou templates que não foram recomendados pelas comunidades oficiais do seu CMS: 
 
-- [WordPress](https://wpfr.net/){.external}
-- [Joomla](https://forum.joomla.fr/){.external}
-- [Drupal](https://www.drupal.fr/forum){.external}
-- [PrestaShop](https://www.prestashop.com/forums/){.external}
+- [WordPress](https://wordpress.org/){.external}
+- [Joomla](https://community.joomla.org/){.external}
+- [Drupal](https://www.drupal.org/community){.external}
+- [PrestaShop](https://www.prestashop.com/en){.external}
 
 ## Quer saber mais? <a name="gofurther"></a>
 

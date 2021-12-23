@@ -36,12 +36,12 @@ Next, click on the `...`{.action} button to the right of the line related to you
 
 > [!primary]
 >
-> If your website does not display properly after this, please refer to the OVHCLOUD web hosting guides in the [Troubleshooting](../) section.
+> If your website does not display properly after this, please refer to the OVHcloud web hosting guides in the [Troubleshooting](https://docs.ovh.com/gb/en/hosting/) section.
 >
 
 ### Access the administrator interface
 
-To access the admin section of your 1-click module, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the relevant hosting plan then click on the `1-click modules`{.action} tab.
+To access the admin section of your 1-click module, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the relevant hosting plan then on the `1-click modules`{.action} tab.
 
 Next, click on the `...`{.action} button to the right of the line for your module then `Access the module's administration interface`{.action}.
 
@@ -49,11 +49,11 @@ Next, click on the `...`{.action} button to the right of the line for your modul
 
 Click on the `1-click modules`{.action} tab in the `Hosting plans`{.action} section of your Control Panel. Your module’s admin ID will appear in the `Login` column.
 
-You can also search for the email received after the creation of your module from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr): click on your name in the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
+You can also search for the email received after the creation of your module from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB): click on your name in the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
 
 ### Change your module password
 
-You can change the administrator password of your module via the OVHcloud Control Panel or by going directly to the login page of your website’s control panel.
+You can change the administrator password of your module via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or by going directly to the login page of your website’s admin interface.
 In both cases, you will receive an email containing a link to reset your password.
 
 > [!primary]
@@ -62,7 +62,7 @@ In both cases, you will receive an email containing a link to reset your passwor
 >
 > Check the `Spam`{.action} and `Trash`{.action} folders in your mailbox.
 >
-> You can also view all emails sent by our services from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr): click on your name in the top right-hand corner of the screen, then in the context menu, click on `Service emails`{.action}.
+> You can also view all emails sent by our services from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB): click on your name in the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
 >
 > **Link validity period:**
 >

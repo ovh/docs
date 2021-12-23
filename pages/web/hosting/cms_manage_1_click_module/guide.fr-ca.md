@@ -54,7 +54,7 @@ Vous pouvez également rechercher l'e-mail reçu lors de la création de votre m
 
 ### Modifier le mot de passe de votre module
 
-Vous pouvez modifier le mot de passe de votre module depuis votre espace client OVHcloud ou en vous rendant directement sur la page de connexion à l'espace administrateur de votre site Web.
+Vous pouvez modifier le mot de passe de votre module depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou en vous rendant directement sur la page de connexion à l'espace administrateur de votre site Web.
 Dans les deux cas, un e-mail de réinitialisation de mot de passe vous sera envoyé.
 
 > [!primary]
@@ -79,27 +79,27 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant vo
 
 > [!warning]
 >
-> La sauvegarde de vos données fait partie des opérations essentielles à la [sécurisation de vos sites](https://docs.ovh.com/fr/hosting/secure-website/). Nous vous conseillons d'importer régulièrement et **avant toute suppression** la sauvegarde de vos données sur un support local, tel qu'une clé USB ou un disque dur externe, en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/exporter-son-site-web/).
+> La sauvegarde de vos données fait partie des opérations essentielles à la [sécurisation de vos sites](https://docs.ovh.com/ca/fr/hosting/secure-website/). Nous vous conseillons d'importer régulièrement et **avant toute suppression** la sauvegarde de vos données sur un support local, tel qu'une clé USB ou un disque dur externe, en suivant les instructions de ce [guide](https://docs.ovh.com/ca/fr/hosting/exporter-son-site-web/).
 >
 
 #### Étape 1 : identifier la base de données lié à votre module <a name="step1"></a>
 
 Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa base de données de façon **certaine**. Rendez-vous pour cela dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action}.
 
-Si vous disposez d'une seule base de données dans cette partie de votre espace client et que vous ne possédez pas de solutions [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) ou [Cloud Database](https://www.ovh.com/fr/cloud-databases/), vous pouvez considérer qu'il s'agit de celle de votre site.
+Si vous disposez d'une seule base de données dans cette partie de votre espace client et que vous ne possédez pas de solutions [SQL privé](https://www.ovhcloud.com/fr-ca/web-hosting/options/private-sql/), vous pouvez considérer qu'il s'agit de celle de votre site.
 
 Dans le cas contraire, rendez-vous dans l'onglet `Multisite`{.action}. Notez le nom du `Dossier racine` : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
 
-Connectez-vous ensuite à [l'espace FTP de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/). Ouvrez le `Dossier racine` trouvé précédemment dans l'onglet `Multisite`{.action} et recherchez le fichier de configuration de votre module :
+Connectez-vous ensuite à [l'espace FTP de votre hébergement](https://docs.ovh.com/ca/en/hosting/log-in-to-storage-ftp-web-hosting/). Ouvrez le `Dossier racine` trouvé précédemment dans l'onglet `Multisite`{.action} et recherchez le fichier de configuration de votre module :
 
 - Pour WORDPRESS : **« wp-config.php »** (le nom de la base de données apparaît sous la mention **« DB_NAME »**).
 - Pour JOOMLA : **« configuration.php »** (le nom de la base de données apparaît sous la mention **« public $db »**).
-- Pour DRUPAL : **« settings.php »** (Pour le retrouver, rendez-vous dans le dossier **« sites »** puis **« default »**. Le nom de la base de données apparaît sous la mention **« 'database' »**).
-- Pour PRESTASHOP : **« parameters.php »** (Pour le retrouver, rendez-vous dans le dossier **« app »** puis **« config »**. Le nom de la base de votre module apparaît sous la mention **« 'database_name' »**).
+- Pour DRUPAL : **« settings.php »** (Pour le retrouver, rendez-vous dans le dossier **« sites »** puis **« default »**. Le nom de la base de données apparaît sous la mention **« database »**).
+- Pour PRESTASHOP : **« parameters.php »** (Pour le retrouver, rendez-vous dans le dossier **« app »** puis **« config »**. Le nom de la base de votre module apparaît sous la mention **« database_name »**).
 
 #### Étape 2 : sauvegarder votre module
 
-Pour sauvegarder votre site, suivez les instructions de ce [guide](https://docs.ovh.com/fr/hosting/exporter-son-site-web/), afin de récupérer à la fois ses fichiers sur l'espace FTP de votre hébergement et sa base de données.
+Pour sauvegarder votre site, suivez les instructions de ce [guide](https://docs.ovh.com/ca/fr/hosting/exporter-son-site-web/), afin de récupérer à la fois ses fichiers sur l'espace FTP de votre hébergement et sa base de données.
 
 #### Étape 3 : supprimer votre module
 
@@ -114,9 +114,9 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne désignant vo
 
 > [!warning]
 >
-> La suppression de votre module 1 clic **n'entraînera pas automatiquement celle de sa base de données**. Si vous lancez l'installation d'un nouveau CMS sans avoir supprimé préalablement la base de données du précédent (et que votre hébergement ne permet pas la création automatique d'une nouvelle base), le message « [Une erreur s’est produite lors du chargement des informations (You need at least one free database)](https://docs.ovh.com/fr/hosting/erreurs-frequentes-modules-en-1-clic/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database) » s'affichera sur votre espace client.
+> La suppression de votre module 1 clic **n'entraînera pas automatiquement celle de sa base de données**. Si vous lancez l'installation d'un nouveau CMS sans avoir supprimé préalablement la base de données du précédent (et que votre hébergement ne permet pas la création automatique d'une nouvelle base), le message « [Une erreur s’est produite lors du chargement des informations (You need at least one free database)](https://docs.ovh.com/ca/fr/hosting/erreurs-frequentes-modules-en-1-clic/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database) » s'affichera sur votre espace client.
 >
-> Si vous disposez d'un abonnement [Kimsufi](https://www.kimsufi.com/fr/hosting.xml) ou [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) ou si vous avez déjà créé quatre bases de données sur votre hébergement [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), vous devrez donc supprimer la base de données identifiée à [l'étape 1](#step1) **AVANT** de pouvoir créer un nouveau module en 1 clic.
+> Si vous disposez d'un hébergement [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/personal-offer/) ou si vous avez déjà créé quatre bases de données sur votre hébergement [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), vous devrez donc supprimer la base de données identifiée à [l'étape 1](#step1) **AVANT** de pouvoir créer un nouveau module en 1 clic.
 >
 
 Pour finaliser la suppression de votre module, rendez-vous donc dans l'onglet `Bases de données`{.action}, toujours dans la partie `Web cloud`{.action}, `Hébergements`{.action} et dans l'hébergement concerné sur votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis cliquer sur `...`{.action} à droite de la ligne désignant la base et sur le bouton `Supprimer la base de données`{.action}.
@@ -125,7 +125,7 @@ Avant de relancer l'installation d'un nouveau module, vérifiez que les tâches 
 
 ### Bonnes pratiques
 
-Sécurisez votre site en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/secure-website/).
+Sécurisez votre site en suivant les instructions de ce [guide](https://docs.ovh.com/ca/fr/hosting/secure-website/).
 
 Ajoutez des outils de test de type CAPTCHA sur les formulaires de votre site.
 
@@ -138,7 +138,7 @@ N'installez pas sur votre site de plugins ou de templates qui n'ont pas été re
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](https://docs.ovh.com/fr/hosting/erreurs-frequentes-modules-en-1-clic/).
+[Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](https://docs.ovh.com/ca/fr/hosting/erreurs-frequentes-modules-en-1-clic/).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 

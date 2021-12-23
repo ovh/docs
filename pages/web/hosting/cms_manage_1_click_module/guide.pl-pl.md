@@ -22,7 +22,7 @@ Moduły za 1 kliknięciem pozwalają na szybką i prostą instalację internetow
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -41,7 +41,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 
 > [!primary]
 >
-> Jeśli po wykonaniu tej operacji Twoja strona WWW nie wyświetla się poprawnie, zapoznaj się z przewodnikami OVHCLOUD dotyczącymi hostingu współdzielonego w sekcji [Diagnostyka](https://docs.ovh.com/pl/hosting/).
+> Jeśli po wykonaniu tej operacji Twoja strona WWW nie wyświetla się poprawnie, zapoznaj się z przewodnikami OVHcloud dotyczącymi hostingu współdzielonego w sekcji [Diagnostyka](https://docs.ovh.com/pl/hosting/).
 >
 
 ### Dostęp do interfejsu administratora
@@ -101,13 +101,13 @@ Zaloguj się do [przestrzeni FTP Twojego hostingu](../connexion-espace-stockage-
 - Dla DRUPAL: **"settings.php"** (Aby go znaleźć, przejdź do folderu **"strony"**, a następnie **"default"**. Nazwa bazy danych pojawia się pod pozycją **"database"**).
 - W przypadku PRESTASHOP: **"parameters.php"** (Aby go znaleźć, przejdź do folderu **"app"**, a następnie **"config"**. Nazwa bazy modułu pojawia się pod nagłówkiem **"database_name"**).
 
-#### Etap 2: zapisz moduł (opcjonalnie)
+#### Etap 2: zapisz moduł
 
 Aby wykonać kopię zapasową Twojej strony WWW, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](../exporter-son-site-web/), aby pobrać jej pliki zarówno z przestrzeni FTP, jak i z bazy danych.
 
 #### Etap 3: usuń moduł
 
-> \[!alert]
+> [!alert]
 >
 > Usunięcie modułu za 1 kliknięciem i bazy danych spowoduje usunięcie wszystkich kopii **zapasowych** modułu. Usunięte dane nie będą mogły zostać później odzyskane.
 >
@@ -135,15 +135,15 @@ Dodaj narzędzia testowe typu CAPTCHA do formularzy na Twojej stronie.
 
 Nie instaluj na Twojej stronie wtyczek ani szablonów, które nie są zalecane przez oficjalne społeczności Twojego CMS: 
 
-- [WordPress](https://wpfr.net/){.external}
-- [Joomla](https://forum.joomla.fr/){.external}
-- [Drupal](https://www.drupal.fr/forum){.external}
-- [PrestaShop](https://www.prestashop.com/forums/){.external}
+- [WordPress](https://wordpress.org/){.external}
+- [Joomla](https://community.joomla.org/){.external}
+- [Drupal](https://www.drupal.org/community){.external}
+- [PrestaShop](https://www.prestashop.com/en){.external}
 
-## Sprawdź <a name="gofurther"></a>
+## Sprawdź również <a name="gofurther"></a>
 
 [Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](https://docs.ovh.com/pl/hosting/bledy-frameworki-moduly-za-1-kliknieciem/).
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/>.
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
