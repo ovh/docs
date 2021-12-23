@@ -5,11 +5,15 @@ excerpt: 'Hier erfahren Sie, wie Sie Firewall Network konfigurieren.'
 section: 'Netzwerk & IP'
 ---
 
-**Stand 08.11.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
 
-## Einleitung
+**Letzte Aktualisierung am 23.12.2021**
 
-Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet OVH eine konfigurierbare Firewall an, die in die **Anti-DDoS** (VAC) Lösung integriert ist: Firewall Network. Mithilfe dieser Option kann die Anfälligkeit der Dienste für Angriffe aus dem öffentlichen Netz begrenzt werden.
+## Ziel
+
+Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet OVHcloud eine konfigurierbare Firewall an, die in die **Anti-DDoS** (VAC) Lösung integriert ist: Firewall Network. Mithilfe dieser Option kann die Anfälligkeit der Dienste für Angriffe aus dem öffentlichen Netz begrenzt werden.
 
 **In dieser Anleitung erklären wir Ihnen, wie Sie Firewall Network konfigurieren.**
 
@@ -24,8 +28,8 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 
 ## Voraussetzungen
 
-- Sie haben eine OVH Dienstleistung abonniert, in der die Firewall Network Option enthalten ist ([Dedicated Server](https://www.ovh.de/dedicated_server/){.external}, [VPS](https://www.ovh.de/virtual_server/){.external}, [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.de/private-cloud/){.external}, [Failover-IP](https://www.ovh.de/dedicated_server/ip_failover.xml){.external}, ...)
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
+- Sie haben eine OVHcloud Dienstleistung abonniert, in der die Firewall Network Option enthalten ist ([Dedicated Server](https://www.ovh.de/dedicated_server/){.external}, [VPS](https://www.ovh.de/virtual_server/){.external}, [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.de/private-cloud/){.external}, [Failover-IP](https://www.ovh.de/dedicated_server/ip_failover.xml){.external}, ...)
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Sie verfügen über grundlegende Netzwerkkenntnisse.
 
 
@@ -38,7 +42,7 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 > Firewall Network schützt die IP-Adressen, die mit einer Maschine verbunden sind. Daher ist es notwendig, jede IP-Adresse einzeln zu konfigurieren, eine globale Serverkonfiguration ist nicht möglich.
 > 
 
-Wenn Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt sind, gehen Sie in den Bereich `IP`{.action} und klicken Sie auf `...`{.action}, um die Firewall für die gewünschte IPv4-Adresse zu aktivieren.
+Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt sind, gehen Sie in den Bereich `IP`{.action} und klicken Sie auf `...`{.action}, um die Firewall für die gewünschte IPv4-Adresse zu aktivieren.
 
 ![Aktivierung der Firewall Network](images/firewall_creation.png){.thumbnail}
 
@@ -65,7 +69,7 @@ Sie können bis zu **20 Regeln für jede IP** festlegen.
 > [!primary]
 >
 > - Die UDP-Fragmentierung (DROP) ist standardmäßig blockiert. Wenn Sie ein VPN verwenden, denken Sie bitte nach der Aktivierung des Firewall Network daran, Ihre maximale Übertragungseinheit (MTU) korrekt zu konfigurieren. Auf OpenVPN können Sie z. B. `MTU Test`{.action} ankreuzen.
-> - Firewall Network hat keinen Einfluss auf die Verbindungen innerhalb des OVH Netzwerks. Die definierten Regeln haben also keine Auswirkungen auf die Verbindungen im internen Netzwerk.
+> - Firewall Network hat keinen Einfluss auf die Verbindungen innerhalb des OVHcloud Netzwerks. Die definierten Regeln haben also keine Auswirkungen auf die Verbindungen im internen Netzwerk.
 >
 
 
@@ -105,7 +109,7 @@ Um nur die Ports für SSH (22), HTTP (80), HTTPS (443) und UDP (auf Port 10000) 
 
 Die Regeln sind chronologisch geordnet von 0 (erste angewandte Regel) bis 19 (zuletzt angewandte Regel). Die chronologische Überprüfung der Regelkette wird abgebrochen, sobald eine Regel auf das empfangene Paket zutrifft.
 
-Im Beispiel wird ein Paket für den TCP-Port 80 von der Regel 2 angenommen, die nachfolgenden Regeln werden also nicht getestet. Ein Paket, das für TCP-Port 25 bestimmt ist, wird nur von der letzten Regel (Nummer 19) abgefangen. Die Regel 19 blockiert daraufhin das Paket, da OVH in den vorherigen Regeln keine Kommunikation auf Port 25 zulässt.
+Im Beispiel wird ein Paket für den TCP-Port 80 von der Regel 2 angenommen, die nachfolgenden Regeln werden also nicht getestet. Ein Paket, das für TCP-Port 25 bestimmt ist, wird nur von der letzten Regel (Nummer 19) abgefangen. Die Regel 19 blockiert daraufhin das Paket, da OVHcloud in den vorherigen Regeln keine Kommunikation auf Port 25 zulässt.
 
 > [!warning]
 >

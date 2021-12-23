@@ -105,10 +105,10 @@ Par exemple, un paquet pour le port 80/TCP sera capturé par la règle 2 et les 
 > Si notre solution anti-DDoS limite une attaque, votre Firewall Network sera activé, même si vous l'avez désactivé par défaut. Si vous souhaitez le désactiver, n'oubliez pas de supprimer vos règles.
 > 
 
-### Configurer Armor (Firewall Game)
+### Configurer le pare-feu Armor (Firewall Game)
 
 > [!primary]
-> Par défaut, Armor est préconfiguré avec certaines règles qu'OVHcloud a déterminé fonctionner avec les jeux les plus courants. Cependant, pour les clients disposant d’un serveur dédié Game, nous vous permettons d’aller plus loin et de configurer également des règles pour les ports.
+> Par défaut, le pare-feu Armor est préconfiguré avec certaines règles qu'OVHcloud a déterminé fonctionner avec les jeux les plus courants. Cependant, pour les clients disposant d’un serveur dédié Game, nous vous permettons d’aller plus loin et de configurer également des règles pour les ports.
 >
 
 Afin de configurer les règles de vos ports en Armor, vous devez d'abord vous connecter à votre espace client OVHcloud.<br>
@@ -116,11 +116,11 @@ Ensuite, rendez-vous dans le menu `Bare Metal Cloud`{.action} et cliquez sur la 
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 
-Sur l’écran suivant, cliquez sur le bouton `Ajouter une règle`{.action}. pour ajouter une règle à Armor.
+Sur l’écran suivant, cliquez sur le bouton `Ajouter une règle`{.action} pour ajouter une règle à Armor.
 
 ![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
 
-Activez les ports selon vos besoins sur l'écran suivant et cliquez sur le bouton `Confirmer`{.action} lorsque vous avez fini d'ajouter vos règles. L'Armor a maintenant été configuré avec succès.
+Activez les ports selon vos besoins sur l'écran suivant et cliquez sur le bouton `Confirmer`{.action} lorsque vous avez fini d'ajouter vos règles. Le pare-feu Armor a maintenant été configuré avec succès.
 
 ## Aller plus loin
 
