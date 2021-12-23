@@ -33,13 +33,13 @@ Para funcionar, cada servidor guarda en memoria caché una parte de su sitio web
 
 ## Procedimiento
 
-###  Activar la opción CDN
+### Activar la opción CDN
 
 > [!primary]
-> 
+>
 > La opción CDN ya está incluida en los planes de alojamiento web Performance.
 
-####  Si la opción CDN no está contratada o activada en su alojamiento web
+#### Si la opción CDN no está contratada o activada en su alojamiento web
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de "Opción CDN" y, seguidamente, en `Contratar una CDN`{.action} o `Activar la opción`{.action} si la opción CDN ya está incluida en el alojamiento.
 
@@ -72,7 +72,7 @@ En cuanto al SEO (posicionamiento en los motores de búsqueda), la velocidad de 
 ### Gestionar su CDN compartido 
 
 > [!primary]
-> 
+>
 > La opción Shared CDN ya está incluida en los planes de hosting Performance o está disponible para contratar desde el 19/11/20. Para las versiones más antiguas, consulte el apartado [Gestionar su CDN (versión histórica)](#cdnbusiness).
 
 #### Vaciar la caché del Shared CDN
@@ -143,7 +143,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 >
 > Las opciones que se presentan a continuación requieren la suscripción a la [CDN Security](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/) o a la [CDN Advanced](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/)
 
-- **Cross-Origin Resource Sharing (CORS)** : Indique en la lista los dominios externos que estarán autorizados a acceder a los recursos de su sitio web para compartirlos. 
+- **Cross-Origin Resource Sharing (CORS)** : Indique en la lista los dominios externos que estarán autorizados a acceder a los recursos de su sitio web para compartirlos.
 
 	Una vez activada la función, haga clic en `Editar la lista de recursos externos`{.action} para añadir los dominios autorizados a compartir sus recursos.
 
@@ -173,23 +173,23 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 - **Mixed content**: Force la carga de todo el contenido de sus páginas web de forma segura, participando así en una experiencia de usuario óptima. Todos los recursos de su sitio web, tanto internos como externos, deben estar disponibles en HTTPS para evitar un error de seguridad del navegador.
 
-- **Firewall de aplicación**: El **W**eb **A**pplication **F**irewall (WAF) protege su sitio web de ataques fraudulentos como la inyección de código, las peticiones ilegítimas o el robo de datos. Cubre los principales fallos conocidos de la red filtrando las peticiones y los paquetes transmitidos (la lista de fallos es administrada por OVHcloud y se actualiza periódicamente para aumentar su protección).  
+- **Firewall de aplicación**: El **W**eb **A**pplication **F**irewall (WAF) protege su sitio web de ataques fraudulentos como la inyección de código, las peticiones ilegítimas o el robo de datos. Cubre los principales fallos conocidos de la red filtrando las peticiones y los paquetes transmitidos (la lista de fallos es administrada por OVHcloud y se actualiza periódicamente para aumentar su protección).
 
 > [!warning]
 >
-> Para instalar un [módulo en 1 clic OVHcloud](../modulos-en-un-clic/), el WAF debe desactivarse para evitar que se bloquee la instalación del módulo.
+> Para instalar un [módulo en 1 clic OVHcloud](https://docs.ovh.com/es/hosting/modulos-en-un-clic/), el WAF debe desactivarse para evitar que se bloquee la instalación del módulo.
 
 > [!primary]
->  
+>
 > El WAF está íntegramente administrado por OVHcloud. La lista de fallos se actualiza regularmente.
 
 #### Configurar las opciones de la CDN Advanced
 
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego en `Editar la CDN`{.action}. 
+Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego en `Editar la CDN`{.action}.
 
 > [!primary]
 >
->  Las opciones que se presentan a continuación requieren la suscripción a la [CDN Advanced](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/)
+> Las opciones que se presentan a continuación requieren la suscripción a la [CDN Advanced](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/)
 
 - **Header HTTP de geolocalización**: Determine el país del visitante para personalizar la experiencia propuesta. El código de país se añade automáticamente en la cabecera de cada petición para que su servidor original la manipule. Los elementos de identificación en la cabecera se presentan bajo los nombres `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
 
@@ -197,18 +197,18 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 	En el ejemplo de abajo, cuando se encuentra en la página actual que muestra "Hello", una subpetición inicia la precarga de la fuente `/cache/style.css` .  
 
-	```	
+	```
 	<?php
 	header("Link: </cache/style.css>; rel=prefetch");
 	print 'Hello'
-	?> 
+	?>
 	```
 
 - **Móvil redirect**:  Redirija automáticamente a los visitantes "Móvil" hacia un sitio web optimizado. A elegir: redirigir sistemáticamente hacia la raíz de otro sitio web, o conservar la URL sustituyendo únicamente el dominio (o el subdominio).
 
 - **Purga avanzada**: Personalice su purga eligiendo los elementos de la caché a vaciar: todo el sitio web, una carpeta, una URI, una extensión de archivos o utilizando una expresión regular personalizada. 
 
-	En la pestaña "Multisitio", haga clic en el botón `...`{.action} a la derecha de la entrada multisitio y, seguidamente, en `Purgar la CDN`{.action}.
+	En la pestaña `Multisitio`{.action}, haga clic en el botón `...`{.action} a la derecha de la entrada multisitio y, seguidamente, en `Purgar la CDN`{.action}.
 
 	![CDN](images/manage_CDNadvanced_01.png){.thumbnail}
 
@@ -266,7 +266,7 @@ En la pestaña `Multisitios`{.action} de su alojamiento, bajo la tabla, podrá c
 ### Gestionar su CDN Business <a name="cdnbusiness"></a>
 
 > [!primary]
-> 
+>
 > La opción CDN ya está incluida en los planes de hosting Performance o en los planes contratados antes del 19/11/2020.
 
 #### Vaciar la caché de la CDN
@@ -298,16 +298,16 @@ En caso de no utilizar ningún sistema de gestión de contenidos, puede disponer
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```
+
 > [!warning]
 >
 > El almacenamiento en caché a través de los encabezados HTTP permite almacenar en caché tanto en la CDN como en el navegador de sus usuarios. Así, para que sus visitantes no visualicen una versión en caché muy antigua, se recomienda modificar los nombres de los archivos en cada nueva versión.
-> 
 
 ### Desactivar la opción CDN para un sitio web
 
 Esta acción permite desactivar la CDN para uno o más de sus registros multisitio, sin eliminar la opción CDN de su alojamiento web.
 
-Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en `...`{.action} a la derecha de la entrada multisitio y seleccione `Editar`{.action}.
+Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en `...`{.action} a la derecha de la entrada multisitio y seleccione `Editar`{.action}.
 
 Desmarque la opción "Activar la CDN", haga clic en `Siguiente`{.action} y, a continuación, en `Validar`{.action}.
 
@@ -326,8 +326,7 @@ Pulse `Validar`{.action} para confirmar la anulación.
 > [!warning]
 >
 > Cuando reciba el mensaje de correo electrónico con el procedimiento de cierre de su CDN, siga las instrucciones para confirmar o cancelar la solicitud. 
-> 
-
+>
 
 ### Comprobar que la CDN esté operativa
 
