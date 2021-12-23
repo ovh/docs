@@ -94,11 +94,11 @@ In the fourth step of creation, we attach it to the private network we created b
 
 ![Setting-up PCI - Attaching to a private network](images/vrack-example-05.png){.thumbnail}
 
-After instance creation, click on the name of the newly created instance, and then scroll down a little in order to see the connection details in the OVHcloud Control Panel.
+After instance creation, click on the name of the new created instance, and then scroll down a little in order to see the connection details in the OVHcloud Control Panel.
 
 ![Setting-up PCI - SSH connection information](images/vrack-example-05-bis.png){.thumbnail}
 
-If we log in to the instance using SSH, we can see that it has two network interfaces, one attached to the public IP address we use to log in, the other attached to the private network:
+If we log in to the instance using SSH, we can see that it has two network interfaces, one attached to the public IP address we used to log in, the other attached to the private network:
 
 <pre class="console"><code>$ ssh ubuntu@141.95.174.113
 The authenticity of host '141.95.174.113 (141.95.174.113)' can't be established.
