@@ -6,7 +6,11 @@ legacy_guide_number: g2030
 section: Rete
 ---
 
-**Ultimo aggiornamento: 21/11/2019**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 21/12/2021**
 
 ## Obiettivo
 
@@ -19,27 +23,32 @@ Per rispondere a queste esigenze, puoi acquistare un indirizzo IP Failover per l
 
 Questi indirizzi possono essere trasferiti esclusivamente verso le istanze di uno stesso progetto.
 
-Questa guida ti mostra come acquistare un IP Failover per il tuo progetto Public Cloud OVHcloud.
+**Questa guida ti mostra come acquistare un IP Failover per il tuo progetto Public Cloud OVHcloud.**
 
 
 ## Prerequisiti
-- Disporre di almeno un’istanza A questo proposito, consulta [la guida per creare un’istanza dallo Spazio Cliente](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/).
+
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+- Disporre di almeno un’istanza. A questo proposito, consulta [la guida per creare un’istanza dallo Spazio Cliente](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/).
 
 ## Procedura
 
-Per iniziare, seleziona il menu`Failover IP`{.action} dalla sezione Cloud del tuo Spazio Cliente OVHcloud e poi clicca su `Acquista IP failover`:
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul menu `Public Cloud`{.action} e seleziona il relativo progetto Public Cloud.<br>
+Nel menu a sinistra, clicca su `Failover IP`{.action} nella sezione `Network`.
 
-![failoverIP](images/buyfailoverip1.png){.thumbnail}
+Clicca sul pulsante `Azioni`{.action} e poi su `Acquista IP Failover`{.action}.
 
-Nella nuova finestra
+![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
-![failoverIP](images/buyfailoverip2.png){.thumbnail}
+Nella nuova finestra:
+
+![failoverIP](images/buyfailoverip2-2021.png){.thumbnail}
 
 inserisci le informazioni richieste:
 
-* il numero di indirizzi IP Failover che vuoi acquistare (i blocchi IP non sono attualmente disponibili).
-* l’istanza a cui vuoi associare i tuoi IP Failover
-* la geolocalizzazione degli indirizzi IP 
+* Il numero di indirizzi IP Failover che vuoi acquistare (i blocchi IP non sono attualmente disponibili).
+* L’istanza a cui vuoi associare i tuoi IP Failover
+* La geolocalizzazione degli indirizzi IP 
 
 Infine è necessario accettare le condizioni generali di servizio.
 
@@ -68,12 +77,14 @@ Per un’istanza europea puoi scegliere tra questi Paesi:
 >
 > Per verificare la disponibilità in altre aree geografiche, rivolgiti direttamente agli organi competenti. OVHcloud non interverrà nei loro confronti.
 
-A questo punto sarà generato un buono d’ordine. Autorizza la visualizzazione dei pop-up per essere reindirizzato al tuo buono d’ordine.
+Clicca su `Genera l'ordine`{.action} per essere reindirizzato automaticamente verso di esso (è necessario autorizzare la visualizzazione dei pop-up sul tuo browser).
 
-![failoverIP](images/buyfailoverip3.png){.thumbnail}
+Il buono d'ordine è disponibile anche nello Spazio Cliente, andando nella sezione `Dashboard`{.action} e cliccando su `Visualizza i tuoi ordini`{.action}.
 
-Il tuo buono d’ordine sarà disponibile anche nello Spazio Cliente, sezione `Il tuo account cliente`{.action},`I tuoi ordini`{.action}.
+Per maggiori informazioni, consulta la nostra guida sulla [gestione degli ordini OVHcloud](https://docs.ovh.com/it/billing/gestire-ordini-ovh/).
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>
+[Configura un IP Failover](https://docs.ovh.com/it/public-cloud/configura-un-ip-failover/)
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>
