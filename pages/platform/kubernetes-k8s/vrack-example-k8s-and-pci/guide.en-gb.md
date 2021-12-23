@@ -94,7 +94,7 @@ In the fourth step of creation, we attach it to the private network we created b
 
 ![Setting-up PCI - Attaching to a private network](images/vrack-example-05.png){.thumbnail}
 
-After instance creation, click on the name of the new created instance, and then scroll down a little in order to see the connection details in the OVHcloud Control Panel.
+After instance creation, click on the name of the newly created instance, and then scroll down a little in order to see the connection details in the OVHcloud Control Panel.
 
 ![Setting-up PCI - SSH connection information](images/vrack-example-05-bis.png){.thumbnail}
 
