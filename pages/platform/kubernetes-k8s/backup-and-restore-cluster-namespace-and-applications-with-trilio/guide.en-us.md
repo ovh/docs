@@ -118,10 +118,10 @@ After finishing this tutorial, you should be able to:
 - [Step 3 - Getting to Know the TVK Web Management Console](#step-3---getting-to-know-the-tvk-web-management-console)
   - [Getting Access to the TVK Web Management Console](#getting-access-to-the-tvk-web-management-console)
   - [Exploring the TVK Web Console User Interface](#exploring-the-tvk-web-console-user-interface)
-- [Step 4 - Namespaced Backup and Restore Example](#step-4---namespaced-backup-and-restore-example)
-  - [Creating the Ambassador Helm Release Backup](#creating-the-ambassador-helm-release-backup)
-  - [Deleting the Ambassador Helm Release and Resources](#deleting-the-ambassador-helm-release-and-resources)
-  - [Restoring the Ambassador Helm Release Backup](#restoring-the-ambassador-helm-release-backup)
+- [Step 4 - Helm Release Backup and Restore Example](#step-4---helm-release-backup-and-restore-example)
+  - [Creating mysql-qa Helm Release Backup](#creating-mysql-qa-helm-release-backup)
+  - [Deleting mysql-qa Helm Release and Resources](#deleting-mysql-qa-helm-release-and-resources)
+  - [Restoring mysql-qa Helm Release Backup](#restoring-mysql-qa-helm-release-backup)
   - [Verifying Applications Integrity after Restoration](#verifying-applications-integrity-after-restoration)
 - [Step 5 - Backup and Restore Whole Cluster Example](#step-5---backup-and-restore-whole-cluster-example)
   - [Creating the OVH Managed Kubernetes Cluster Backup](#creating-the-ovh-managed-kubernetes-cluster-backup)
@@ -620,7 +620,7 @@ Next, you will perform the following tasks:
 - `Restore` the `mysql-qa` Helm release, via `Restore` CRD.
 - `Check` the `mysql-qa` Helm release resources restoration.
 
-### Creating a mysql-qa helm release
+### Creating mysql-qa helm release
 
 	```shell
 	helm repo add stable https://charts.helm.sh/stable
@@ -656,7 +656,7 @@ The output looks similar to below:
 
 This shows that the mysql-qa helm release is `ready` state to be backedup.
 
-### Creating the mysql-qa Helm Release Backup
+### Creating mysql-qa Helm Release Backup
 
 To perform backups for a single application at the namespace level (or Helm release), a `BackupPlan` followed by a `Backup` CRD is required. A `BackupPlan` allows you to:
 
@@ -717,36 +717,35 @@ Steps to initiate the `mysql-qa` Helm release one time backup:
 1. First, make sure that the `mysql-qa` is deployed in your cluster by following steps  from (pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/guide.en-us.md#step-4---Creating the mysql-qa Helm Release Backup) section.
 2. Next, change directory where the `docs` Git repository was cloned on your local machine:
 
-    ```shell
-    cd docs/
-    ```
+    	```shell
+    	cd docs/
+    	```
 
 3. Then, open and inspect the mysql-qa helm release `BackupPlan` and `Backup` manifest files provided in the `pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/guide.en-us.md` repository, using an editor of your choice (preferably with `YAML` lint support). You can use [VS Code](https://code.visualstudio.com) for example:
 
-    ```shell
-    code assets/manifests/mysql-qa-helm-release-backup-plan.yaml
-
-    code assets/manifests/mysql-qa-helm-release-backup.yaml
-    ```
+    	```shell
+    	cat assets/manifests/mysql-qa-helm-release-backup-plan.yaml
+	cat assets/manifests/mysql-qa-helm-release-backup.yaml
+    	```
 
 4. Create the `BackupPlan` resource, using `kubectl`:
 
-    ```shell
-    kubectl apply -f assets/manifests/mysql-qa-helm-release-backup-plan.yaml
-    ```
+    	```shell
+	kubectl apply -f assets/manifests/mysql-qa-helm-release-backup-plan.yaml
+    	```
 
 Now, inspect the `BackupPlan` status (targeting the `mysql-qa` Helm release), using `kubectl`:
 
-```shell
-kubectl get backupplan mysql-qa-helm-release-backup-plan -n demo-backup-ns
-```
+	```shell
+	kubectl get backupplan mysql-qa-helm-release-backup-plan -n demo-backup-ns
+	```
 
 The output looks similar to (notice the `STATUS` column value which should be set to `Available`):
 
-```text
-NAME                                  TARGET				...   STATUS
-mysql-qa-helm-release-backup-plan   trilio-ovh-s3-target	...   Available
-```
+	```text
+	NAME                                  TARGET			...   STATUS
+	mysql-qa-helm-release-backup-plan   trilio-ovh-s3-target	...   Available
+	```
 
 5. Finally, create a `Backup` resource, using `kubectl`:
 
@@ -778,7 +777,7 @@ After all the `mysql-qa` Helm release components finish uploading to the `S3` ta
 	kubectl get backup mysql-qa-helm-release-full-backup -n demo-backup-ns
 	```
 
-# The output looks similar to (notice that the `STATUS` changed to `Available`, and `PERCENTAGE` is `100`)
+The output looks similar to (notice that the `STATUS` changed to `Available`, and `PERCENTAGE` is `100`)
 
 	```text
 	NAME                                BACKUPPLAN                          BACKUP TYPE   STATUS      ...   PERCENTAGE
@@ -787,25 +786,23 @@ After all the `mysql-qa` Helm release components finish uploading to the `S3` ta
 
 If the output looks like above, you successfully backed up the `mysql-qa` Helm release. You can go ahead and see how `TrilioVault` stores `Kubernetes` metadata by listing the `TrilioVault S3 Bucket` contents.
 
-Finally, you can check that the backup is available in the web console as well, by navigating to `Resource Management -> demo-backup-ns -> Backup Plans` (notice that it's in the `Available` state, and that the `mysql-qa` Helm release was backed up in the `Component Details` sub-view):
+Finally, you can check that the backup is available in the web console as well, by navigating to `Resource Management -> demo-backup-ns -> Backup Plans` (notice that it's in the `Available` state, and that the `mysql-qa` Helm release was backed up in the `Component Details` sub-view)
 
-![mysql-qa Helm Release Backup](assets/images/mysql-qa_tvk_backup.png)
-
-### Deleting the mysql-qa Helm Release and Resources
+### Deleting mysql-qa Helm Release and Resources
 
 Now, go ahead and simulate a disaster, by intentionally deleting the `mysql-qa` Helm release:
 
-```shell
-helm delete mysql-qa -n demo-backup-ns
-```
+	```shell
+	helm delete mysql-qa -n demo-backup-ns
+	```
 
 Next, check that the namespace resources were deleted (listing should be empty):
 
-```shell
-kubectl get all -n demo-backup-ns
-```
+	```shell
+	kubectl get all -n demo-backup-ns
+	```
 
-### Restoring the mysql-qa Helm Release Backup
+### Restoring mysql-qa Helm Release Backup
 
 **Important notes:**
 
@@ -840,28 +837,28 @@ Explanation for the above configuration:
 
 First, inspect the `Restore` CRD example from the `ovh/docs` Git repository:
 
-```shell
-code assets/manifests/mysql-qa-helm-release-restore.yaml
-```
+	```shell
+	cat assets/manifests/mysql-qa-helm-release-restore.yaml
+	```
 
 Then, create the `Restore` resource using `kubectl`:
 
-```shell
-kubectl apply -f assets/manifests/mysql-qa-helm-release-restore.yaml
-```
+	```shell
+	kubectl apply -f assets/manifests/mysql-qa-helm-release-restore.yaml
+	```
 
 Finally, inspect the `Restore` object status:
 
-```shell
-kubectl get restore mysql-qa-helm-release-restore -n demo-restore-ns
-```
+	```shell
+	kubectl get restore mysql-qa-helm-release-restore -n demo-restore-ns
+	```
 
 The output looks similar to (notice the STATUS column set to `Completed`, as well as the `PERCENTAGE COMPLETED` set to `100`):
 
-```text
-NAME                            STATUS      DATA SIZE   START TIME             END TIME               PERCENTAGE COMPLETED   DURATION
-mysql-qa-helm-release-restore   Completed   0           2021-11-25T15:06:52Z   2021-11-25T15:07:35Z   100                    43.524191306s
-```
+	```text
+	NAME                            STATUS      DATA SIZE   START TIME             END TIME               PERCENTAGE COMPLETED   DURATION
+	mysql-qa-helm-release-restore   Completed   0           2021-11-25T15:06:52Z   2021-11-25T15:07:35Z   100                    43.524191306s
+	```
 
 If the output looks like above, then the `mysql-qa` Helm release `restoration` process completed successfully.
 
@@ -869,30 +866,29 @@ If the output looks like above, then the `mysql-qa` Helm release `restoration` p
 
 Check that all the `demo-restore-ns` namespace `resources` are in place and running:
 
-```shell
-kubectl get all -n demo-restore-ns
-```
+	```shell
+	kubectl get all -n demo-restore-ns
+	```
 
 The output looks similar to:
 
-```text
+	```text
+	NAME                                                           READY   STATUS      RESTARTS   AGE
+	pod/mysql-qa-665f6fb548-m8tnd                                  1/1     Running     0          91m
+	pod/mysql-qa-helm-release-full-backup-metamover-9w7s0y-x8867   0/1     Completed   0          9m2s
 
-NAME                                                           READY   STATUS      RESTARTS   AGE
-pod/mysql-qa-665f6fb548-m8tnd                                  1/1     Running     0          91m
-pod/mysql-qa-helm-release-full-backup-metamover-9w7s0y-x8867   0/1     Completed   0          9m2s
+	NAME               TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+	service/mysql-qa   ClusterIP   10.3.227.118   <none>        3306/TCP   91m
 
-NAME               TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
-service/mysql-qa   ClusterIP   10.3.227.118   <none>        3306/TCP   91m
+	NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
+	deployment.apps/mysql-qa   1/1     1            1           91m
 
-NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/mysql-qa   1/1     1            1           91m
+	NAME                                  DESIRED   CURRENT   READY   AGE
+	replicaset.apps/mysql-qa-665f6fb548   1         1         1       91m
 
-NAME                                  DESIRED   CURRENT   READY   AGE
-replicaset.apps/mysql-qa-665f6fb548   1         1         1       91m
-
-NAME                                                           COMPLETIONS   DURATION   AGE
-job.batch/mysql-qa-helm-release-full-backup-metamover-9w7s0y   1/1           28s        9m2s
-```
+	NAME                                                           COMPLETIONS   DURATION   AGE
+	job.batch/mysql-qa-helm-release-full-backup-metamover-9w7s0y   1/1           28s        9m2s
+	```
 
 Next step deals with whole cluster backup and restore, thus covering a disaster recovery scenario.
 
@@ -954,35 +950,35 @@ Steps to initiate a backup for all important namespaces in your OVH Managed Kube
 
 1. First, change directory where the `ovh/docs` Git repository was cloned on your local machine:
 
-    ```shell
-    cd docs
-    ```
+    	```shell
+	cd docs
+	```
 
 2. Then, open and inspect the `ClusterBackupPlan` and `ClusterBackup` manifest files provided in the `docs` repository.
 
-    ```shell
-    cat assets/manifests/multi-ns-backup-plan.yaml
-    cat assets/manifests/multi-ns-backup.yaml
-    ```
+	```shell
+    	cat assets/manifests/multi-ns-backup-plan.yaml
+    	cat assets/manifests/multi-ns-backup.yaml
+    	```
 
 3. Create the `ClusterBackupPlan` resource, using `kubectl`:
 
-    ```shell
-    kubectl apply -f assets/manifests/multi-ns-backup-plan.yaml
-    ```
+    	```shell
+    	kubectl apply -f assets/manifests/multi-ns-backup-plan.yaml
+    	```
 
 Now, inspect the `ClusterBackupPlan` status, using `kubectl`:
 
-```shell
-kubectl get clusterbackupplan multi-ns-backup-plan -n default
-```
+	```shell
+	kubectl get clusterbackupplan multi-ns-backup-plan -n default
+	```
 
 The output looks similar to (notice the `STATUS` column value which should be set to `Available`):
 
-```text
-NAME                            TARGET                 ...		STATUS
-ovh-multi-ns-backup-plan		trilio-ovh-s3-target   ...		Available
-```
+	```text
+	NAME                            TARGET                 ...		STATUS
+	ovh-multi-ns-backup-plan		trilio-ovh-s3-target   ...		Available
+	```
 
 4. Finally, create the `ClusterBackup` resource, using `kubectl`:
 	
@@ -992,16 +988,16 @@ ovh-multi-ns-backup-plan		trilio-ovh-s3-target   ...		Available
 
 Next, check the `ClusterBackup` status, using `kubectl`:
 
-```shell
-kubectl get clusterbackup multi-ns-cluster-backup -n default
-```
+	```shell
+	kubectl get clusterbackup multi-ns-cluster-backup -n default
+	```
 
 The output looks similar to (notice the `STATUS` column value which should be set to `Available`, as well as the `PERCENTAGE COMPLETE` set to `100`):
 
-```text
-NAME           		BACKUPPLAN             		BACKUP TYPE   STATUS		...		COMPLETE
-multi-ns-backup   	ovh-multi-ns-backup-plan	Full          Avilable		...		100                               
-```
+	```text
+	NAME           		BACKUPPLAN             		BACKUP TYPE   STATUS		...		COMPLETE
+	multi-ns-backup   	ovh-multi-ns-backup-plan	Full          Avilable		...		100                               
+	```
 
 If the output looks like above then all your important application namespaces were backed up successfully.
 
@@ -1041,9 +1037,9 @@ After a while, if the progress window looks like below, then the `multi-namespac
 
 First, verify all cluster `Kubernetes` resources (you should have everything in place):
 
-```shell
-kubectl get all --all-namespaces
-```
+	```shell
+	kubectl get all --all-namespaces
+	```
 
 In the next step, you will learn how to perform scheduled (or automatic) backups for your `OVH Managed Kubernetes Cluster` applications.
 
@@ -1093,64 +1089,64 @@ Looking at the above, you can notice that it's a basic `ClusterBackupPlan` CRD, 
 
 Now, please go ahead and create the schedule `Policy`, using the sample manifest provided by the `ovh/docs` tutorial (make sure to change directory first, where the ovh/docs Git repository was cloned on your local machine):
 
-```shell
-kubectl apply -f assets/manifests/triliovault-scheduling-policy-every-15min.yaml
-```
+	```shell
+	kubectl apply -f assets/manifests/triliovault-scheduling-policy-every-15min.yaml
+	```
 
 Check that the policy resource was created:
 
-```shell
-kubectl get policies -n default
-```
+	```shell
+	kubectl get policies -n default
+	```
 
 The output looks similar to (notice the `POLICY` type set to `Schedule`):
 
-```text
-NAMESPACE   NAME                           POLICY     DEFAULT
-default     scheduled-backup-every-15min   Schedule   false
-```
+	```text
+	NAMESPACE   NAME                           POLICY     DEFAULT
+	default     scheduled-backup-every-15min   Schedule   false
+	```
 
 Finally, create the `backupplan` resource for the `default` namespace scheduled backups:
 
 # Create the backup plan first for default namespace
 
-```shell
-kubectl apply -f assets/manifests/triliovault-multi-ns-backup-plan-every-15min.yaml
-```
+	```shell
+	kubectl apply -f assets/manifests/triliovault-multi-ns-backup-plan-every-15min.yaml
+	```
 
 Check the scheduled backup plan status for `default`:
 
-```shell
-kubectl get clusterbackupplan triliovault-multi-ns-backup-plan-every-15min.yaml -n default
-```
+	```shell
+	kubectl get clusterbackupplan triliovault-multi-ns-backup-plan-every-15min.yaml -n default
+	```
 
 The output looks similar to (notice the `FULL BACKUP POLICY` value set to the previously created `scheduled-backup-every-5min` policy resource, as well as the `STATUS` which should be `Available`):
 
-```text
-NAME                                  TARGET                 ...   FULL BACKUP POLICY             STATUS
-multi-ns-backup-plan-15min-schedule   trilio-ovh-s3-target   ...   scheduled-backup-every-15min   Available
-```
+	```text
+	NAME                                  TARGET                 ...   FULL BACKUP POLICY             STATUS
+	multi-ns-backup-plan-15min-schedule   trilio-ovh-s3-target   ...   scheduled-backup-every-15min   Available
+	```
 
 Create a `clusterbackup` resource using scheduled policy for every 15 min:
 
 # Create and trigger the scheduled backup for deafult namespace
 
-```shell
-kubectl apply -f assets/manifests/triliovault-multi-ns-backup-every-15min.yaml.yaml
-```
+	```shell
+	kubectl apply -f assets/manifests/triliovault-multi-ns-backup-every-15min.yaml.yaml
+	```
 
 Check the scheduled backup status for `default`:
 
-```shell
-kubectl get clusterbackup multi-ns-backup-15min-schedule -n default
-```
+	```shell
+	kubectl get clusterbackup multi-ns-backup-15min-schedule -n default
+	```
 
 The output looks similar to (notice the `BACKUPPLAN` value set to the previously created backup plan resource, as well as the `STATUS` which should be `Available`):
 
-```text
-NAME                             BACKUPPLAN                            BACKUP TYPE   STATUS      ...
-multi-ns-backup-15min-schedule   multi-ns-backup-plan-15min-schedule   Full          Available   ...
-```
+	```text
+	NAME                             BACKUPPLAN                            BACKUP TYPE   STATUS      ...
+	multi-ns-backup-15min-schedule   multi-ns-backup-plan-15min-schedule   Full          Available   ...
+	```
 
 Now, you can check that backups are performed on a regular interval (15 minutes), by querying the cluster backup resource and inspect the `START TIME` column (`kubectl get clusterbackup -n default`). It should reflect the 15 minute delta.
 
@@ -1225,16 +1221,16 @@ spec:
 
 Once you apply the `ClusterBackupplan`, you can check it using:
 
-```shell
-kubect get clusterbackupplan -n default
-```
+	```shell
+	kubect get clusterbackupplan -n default
+	```
 
 Output would look similar to below:
 
-```text
-NAME                                            TARGET                 RETENTION POLICY    ...		STATUS
-multi-ns-backup-plan-15min-schedule-retention   trilio-ovh-s3-target   sample-ret-policy   ...		Available  
-```
+	```text
+	NAME                                            TARGET                 RETENTION POLICY    ...		STATUS
+	multi-ns-backup-plan-15min-schedule-retention   trilio-ovh-s3-target   sample-ret-policy   ...		Available  
+	```
 
 Notice that it uses a `retentionPolicy` field to reference the policy in question. Of course, you can have a backup plan that has both types of policies set, so that it is able to perform scheduled backups, as well as to deal with retention strategies.
 
