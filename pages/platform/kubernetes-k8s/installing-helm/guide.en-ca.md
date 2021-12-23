@@ -72,7 +72,7 @@ To check if the `helm` CLI is correctly installed locally, you can display its v
 helm version
 ```
 
-You can show the installed version on my side:
+You can show the installed version:
 
 <pre class="console"><code>$ helm version
 version.BuildInfo{Version:"v3.7.0", GitCommit:"eeac83883cb4014fe60267ec6373570374ce770b", GitTreeState:"clean", GoVersion:"go1.17"}
