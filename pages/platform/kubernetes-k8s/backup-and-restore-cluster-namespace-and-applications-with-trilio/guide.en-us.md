@@ -87,15 +87,10 @@ For more information, please refer to the [TVK CRDs](https://docs.trilio.io/kube
 
 ### Backup and Restore Workflow
 
-Whenever you want to `backup` an application, you start by creating a `BackupPlan` (or `ClusterBackupPlan`) CRD, followed by a `Backup` (or `ClusterBackup`) object. Trilio `Backup Controller` is notified about the change and performs backup object inspection and validation (i.e. whether it is `cluster` backup, `namespace` backup, etc.). Then, it spawns worker pods (`Metamover`, `Datamover`) responsible with moving the actual data (Kubernetes metadata, PVs data) to the backend storage (or `Target`), such as `DigitalOcean Spaces`.
+Whenever you want to `backup` an application, you start by creating a `BackupPlan` (or `ClusterBackupPlan`) CRD, followed by a `Backup` (or `ClusterBackup`) object. Trilio `Backup Controller` is notified about the change and performs backup object inspection and validation (i.e. whether it is `cluster` backup, `namespace` backup, etc.). Then, it spawns worker pods (`Metamover`, `Datamover`) responsible with moving the actual data (Kubernetes metadata, PVs data) to the backend storage (or `Target`), such as `OVH Object Storage`.
 
-Similarly whenever you create a `Restore` object, the `Restore Controller` is notified to restore from a `Backup` object. Then, Trilio `Restore Controller` spawns worker nodes (`Metamover`, `Datamover`), responsible with moving backup data out of the `DigitalOcean Spaces` storage (Kubernetes metadata, PVs data). Finally, the restore process is initiated from the particular backup object.
+Similarly whenever you create a `Restore` object, the `Restore Controller` is notified to restore from a `Backup` object. Then, Trilio `Restore Controller` spawns worker nodes (`Metamover`, `Datamover`), responsible with moving backup data out of the `OVH Object Storage` (Kubernetes metadata, PVs data). Finally, the restore process is initiated from the particular backup object.
 
-######### NEED NOT BE INCLUDED
-Below is a diagram that shows the `Backup/Restore` workflow for `TVK`:
-
-![Trilio Backup/Restore Workflow](assets/images/trilio_bk_res_wf.png)
-#########
 
 `Trilio` is ideal for the `disaster` recovery use case, as well as for `snapshotting` your application state, prior to performing `system operations` on your `cluster`, like `upgrades`. For more details on this topic, please visit the [Trilio Features](https://docs.trilio.io/kubernetes/overview/features-and-use-cases) and [Trilio Use Case](https://docs.trilio.io/kubernetes/overview/use-cases) official page.
 
@@ -145,10 +140,7 @@ To complete this tutorial, you need the following:
 1. A [OVH S3 Object Storage Container/Bucket](https://docs.ovh.com/ca/en/storage/pcs/create-container/) and `access` keys. Save the `access` and `secret` keys in a safe place for later use.
 2. A [Git](https://git-scm.com/downloads) client, to clone the `OVH Docs` repository.
 3. [Helm](https://www.helms.sh), for managing `TrilioVault Operator` releases and upgrades.
-
-4. [Doctl](https://github.com/digitalocean/doctl/releases), for `DigitalOcean` API interaction.
-
-5. [Kubectl](https://kubernetes.io/docs/tasks/tools), for `Kubernetes` interaction.
+4.[Kubectl](https://kubernetes.io/docs/tasks/tools), for `Kubernetes` interaction.
 
 **Important note:**
 
@@ -386,7 +378,6 @@ kubectl get license -n tvk
 kubectl describe license <YOUR_LICENSE_NAME_HERE> -n tvk 
 ```
 
-------------------------------------------------------------------------------------------------------
 In the next step, you will learn how to define the storage backend for `TrilioVault` to store backups, called a `target`.
 
 ## Step 2 - Creating a TrilioVault Target to Store Backups
@@ -616,3 +607,291 @@ Next, you will learn how to perform backup and restore operations for specific u
 
 - Specific `namespace(s)` backup and restore.
 - Whole `cluster` backup and restore.
+
+## Step 4 - Helm Release Backup and Restore Example
+
+In this step, you will learn how to create a `one-time backup` for an entire `helm release` from your `OVH Managed Kubernetes Cluster` and `restore` it afterwards, making sure that all the resources related to the helm release are re-created. The namespace in question is `demo-backup-ns`. TVK has a neat feature that allows you to perform backups at a higher level than just Helm releases, meaning: complete namespaces, `Label based application`, and `Operator based application`. You will learn how to accomplish such a task, in the steps to follow.
+
+Next, you will perform the following tasks:
+
+- `Create` the `demo-backup-ns` namespace and create a `mysql-qa` helm release for the MySQL Database
+- Perform a namespace `backup`, via `BackupPlan` and `Backup` CRDs.
+- `Delete` the `mysql-qa` Helm release.
+- `Restore` the `mysql-qa` Helm release, via `Restore` CRD.
+- `Check` the `mysql-qa` Helm release resources restoration.
+
+### Creating a mysql-qa helm release
+
+	```shell
+	helm repo add stable https://charts.helm.sh/stable
+	helm repo update
+	helm install mysql-qa --set mysqlRootPassword=triliopass stable/mysql -n demo-backup-ns
+	```
+
+To verify if the helm release is deployed correctly, run below command:
+
+	```shell
+	helm ls -n demo-backup-ns
+	```
+
+The output looks similar to below:
+
+	```text
+	NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
+	mysql-qa        demo-backup-ns  1               2021-12-23 08:23:01.849247691 +0000 UTC deployed        mysql-1.6.9     5.7.30
+	```
+
+Next, verify that `mysql-qa` deployment is up and running:
+
+	```shell
+	kubectl get deployments -n demo-backup-ns
+	```
+	
+The output looks similar to below:
+
+	```text
+	NAME       READY   UP-TO-DATE   AVAILABLE   AGE
+	mysql-qa   1/1     1            1           2m5s
+	```
+
+This shows that the mysql-qa helm release is `ready` state to be backedup.
+
+### Creating the mysql-qa Helm Release Backup
+
+To perform backups for a single application at the namespace level (or Helm release), a `BackupPlan` followed by a `Backup` CRD is required. A `BackupPlan` allows you to:
+
+- Specify a `target` where backups should be `stored`.
+- Define a set of resources to backup (e.g.: `namespace` or `Helm releases`).
+- `Encryption`, if you want to encrypt your backups on the target (this is a very nice feature for securing your backups data).
+- Define `schedules` for `full` or `incremental` type backups.
+- Define `retention` policies for your backups.
+
+In other words a `BackupPlan` is a definition of `'what'`, `'where'`, `'to'` and `'how'` of the backup process, but it doesn't perform the actual backup. The `Backup` CRD is responsible with triggering the actual backup process, as dictated by the `BackupPlan` spec.
+
+Typical `BackupPlan` CRD looks like below:
+
+```yaml
+apiVersion: triliovault.trilio.io/v1
+kind: BackupPlan
+metadata:
+  name: mysql-qa-helm-release-backup-plan
+  namespace: demo-backup-ns
+spec:
+  backupConfig:
+    target:
+      name: trilio-ovh-s3-target
+      namespace: demo-backup-ns
+  backupPlanComponents:
+    helmReleases:
+      - mysql-qa
+```
+
+Explanation for the above configuration:
+
+- `spec.backupConfig.target.name`: Tells `TVK` what target `name` to use for storing backups.
+- `spec.backupConfig.target.namespace`: Tells `TVK` in what namespace the target was created.
+- `spec.backupComponents`: Defines a `list` of `resources` to back up (can be `namespaces` or `Helm releases`).
+
+Typical `Backup` CRD looks like below:
+
+```yaml
+apiVersion: triliovault.trilio.io/v1
+kind: Backup
+metadata:
+  name: mysql-qa-helm-release-full-backup
+  namespace: demo-backup-ns
+spec:
+  type: Full
+  backupPlan:
+    name: mysql-qa-helm-release-backup-plan
+    namespace: demo-backup-ns
+```
+
+Explanation for the above configuration:
+
+- `spec.type`: Specifies backup type (e.g. `Full` or `Incremental`).
+- `spec.backupPlan`: Specifies the `BackupPlan` which this `Backup` should use.
+
+Steps to initiate the `mysql-qa` Helm release one time backup:
+
+1. First, make sure that the `mysql-qa` is deployed in your cluster by following steps  from (pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/guide.en-us.md#step-4---Creating the mysql-qa Helm Release Backup) section.
+2. Next, change directory where the `docs` Git repository was cloned on your local machine:
+
+    ```shell
+    cd docs/
+    ```
+
+3. Then, open and inspect the mysql-qa helm release `BackupPlan` and `Backup` manifest files provided in the `pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/guide.en-us.md` repository, using an editor of your choice (preferably with `YAML` lint support). You can use [VS Code](https://code.visualstudio.com) for example:
+
+    ```shell
+    code assets/manifests/mysql-qa-helm-release-backup-plan.yaml
+
+    code assets/manifests/mysql-qa-helm-release-backup.yaml
+    ```
+
+4. Create the `BackupPlan` resource, using `kubectl`:
+
+    ```shell
+    kubectl apply -f assets/manifests/mysql-qa-helm-release-backup-plan.yaml
+    ```
+
+Now, inspect the `BackupPlan` status (targeting the `mysql-qa` Helm release), using `kubectl`:
+
+```shell
+kubectl get backupplan mysql-qa-helm-release-backup-plan -n demo-backup-ns
+```
+
+The output looks similar to (notice the `STATUS` column value which should be set to `Available`):
+
+```text
+NAME                                  TARGET				...   STATUS
+mysql-qa-helm-release-backup-plan   trilio-ovh-s3-target	...   Available
+```
+
+5. Finally, create a `Backup` resource, using `kubectl`:
+
+	```shell
+	kubectl apply -f assets/manifests/mysql-qa-helm-release-backup.yaml
+	```
+	
+Now, inspect the `Backup` status (targeting the `mysql-qa` Helm release), using `kubectl`:
+
+	```shell
+	kubect get backup mysql-qa-helm-release-full-backup -n demo-backup-ns
+	```
+Next, check the `Backup` object status, using `kubectl`:
+
+	```shell
+	kubectl get backup mysql-qa-helm-release-full-backup -n demo-backup-ns
+	```
+
+The output looks similar to (notice the `STATUS` column value which should be set to `InProgress`, as well as the `BACKUP TYPE` set to `Full`):
+
+	```text
+	NAME                                BACKUPPLAN                          BACKUP TYPE   STATUS       ...
+	mysql-qa-helm-release-full-backup   mysql-qa-helm-release-backup-plan   Full          InProgress   ...                                  
+	```
+
+After all the `mysql-qa` Helm release components finish uploading to the `S3` target, you should get below results:
+
+	```shell
+	kubectl get backup mysql-qa-helm-release-full-backup -n demo-backup-ns
+	```
+
+# The output looks similar to (notice that the `STATUS` changed to `Available`, and `PERCENTAGE` is `100`)
+
+	```text
+	NAME                                BACKUPPLAN                          BACKUP TYPE   STATUS      ...   PERCENTAGE
+	mysql-qa-helm-release-full-backup   mysql-qa-helm-release-backup-plan   Full          Available   ...   100
+	```
+
+If the output looks like above, you successfully backed up the `mysql-qa` Helm release. You can go ahead and see how `TrilioVault` stores `Kubernetes` metadata by listing the `TrilioVault S3 Bucket` contents.
+
+Finally, you can check that the backup is available in the web console as well, by navigating to `Resource Management -> demo-backup-ns -> Backup Plans` (notice that it's in the `Available` state, and that the `mysql-qa` Helm release was backed up in the `Component Details` sub-view):
+
+![mysql-qa Helm Release Backup](assets/images/mysql-qa_tvk_backup.png)
+
+### Deleting the mysql-qa Helm Release and Resources
+
+Now, go ahead and simulate a disaster, by intentionally deleting the `mysql-qa` Helm release:
+
+```shell
+helm delete mysql-qa -n demo-backup-ns
+```
+
+Next, check that the namespace resources were deleted (listing should be empty):
+
+```shell
+kubectl get all -n demo-backup-ns
+```
+
+### Restoring the mysql-qa Helm Release Backup
+
+**Important notes:**
+
+- If restoring into the same namespace, ensure that the original application components have been removed. Especially the PVC of application are deleted.
+- If restoring to another cluster (migration scenario), ensure that `TrilioVault for Kubernetes` is running in the remote namespace/cluster as well. To restore into a new cluster (where the Backup CR does not exist), `source.type` must be set to `location`. Please refer to the [Custom Resource Definition Restore Section](https://docs.trilio.io/kubernetes/architecture/apis-and-command-line-reference/custom-resource-definitions-application-1/triliovault-crds#example-5-restore-from-specific-location-migration-scenario) to view a `restore` by `location` example.
+- When you delete the `demo-backup-ns` namespace, the load balancer resource associated with the mysql-qa service will be deleted as well. So, when you restore the `mysq-qa` service, the `LB` will be recreated by `OVH Cloud`. The issue is that you will get a `NEW IP` address for your `LB`, so you will need to `adjust` the `A records` for getting `traffic` into your domains hosted on the cluster.
+
+To restore a specific `Backup`, you need to create a `Restore` CRD. Typical `Restore` CRD looks like below:
+
+```yaml
+apiVersion: triliovault.trilio.io/v1
+kind: Restore
+metadata:
+  name: mysql-qa-helm-release-restore
+  namespace: demo-restore-ns
+spec:
+  source:
+    type: Backup
+    backup:
+      name: mysql-qa-helm-release-full-backup
+      namespace: demo-backup-ns
+  skipIfAlreadyExists: true
+```
+
+Explanation for the above configuration:
+
+- `spec.source.type`: Specifies what backup type to restore from.
+- `spec.source.backup`: Contains a reference to the backup object to restore from.
+- `spec.skipIfAlreadyExists`: Specifies whether to skip restore of a resource if it already exists in the namespace restored.
+
+`Restore` allows you to restore the last successful `Backup` for an application. It is used to restore a single `namespaces` or `Helm release`, protected by the `Backup` CRD. The `Backup` CRD is identified by its name: `mysql-qa-helm-release-full-backup`.
+
+First, inspect the `Restore` CRD example from the `ovh/docs` Git repository:
+
+```shell
+code assets/manifests/mysql-qa-helm-release-restore.yaml
+```
+
+Then, create the `Restore` resource using `kubectl`:
+
+```shell
+kubectl apply -f assets/manifests/mysql-qa-helm-release-restore.yaml
+```
+
+Finally, inspect the `Restore` object status:
+
+```shell
+kubectl get restore mysql-qa-helm-release-restore -n demo-restore-ns
+```
+
+The output looks similar to (notice the STATUS column set to `Completed`, as well as the `PERCENTAGE COMPLETED` set to `100`):
+
+```text
+NAME                            STATUS      DATA SIZE   START TIME             END TIME               PERCENTAGE COMPLETED   DURATION
+mysql-qa-helm-release-restore   Completed   0           2021-11-25T15:06:52Z   2021-11-25T15:07:35Z   100                    43.524191306s
+```
+
+If the output looks like above, then the `mysql-qa` Helm release `restoration` process completed successfully.
+
+### Verifying Applications Integrity after Restoration
+
+Check that all the `demo-restore-ns` namespace `resources` are in place and running:
+
+```shell
+kubectl get all -n demo-restore-ns
+```
+
+The output looks similar to:
+
+```text
+
+NAME                                                           READY   STATUS      RESTARTS   AGE
+pod/mysql-qa-665f6fb548-m8tnd                                  1/1     Running     0          91m
+pod/mysql-qa-helm-release-full-backup-metamover-9w7s0y-x8867   0/1     Completed   0          9m2s
+
+NAME               TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+service/mysql-qa   ClusterIP   10.3.227.118   <none>        3306/TCP   91m
+
+NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/mysql-qa   1/1     1            1           91m
+
+NAME                                  DESIRED   CURRENT   READY   AGE
+replicaset.apps/mysql-qa-665f6fb548   1         1         1       91m
+
+NAME                                                           COMPLETIONS   DURATION   AGE
+job.batch/mysql-qa-helm-release-full-backup-metamover-9w7s0y   1/1           28s        9m2s
+```
+
+

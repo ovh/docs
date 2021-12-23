@@ -1,0 +1,15 @@
+kind: Target
+metadata:
+  name: trilio-ovh-s3-target
+spec:
+  type: ObjectStore
+  vendor: Other
+  objectStoreCredentials:
+    url: "https://<YOUR_OVH_OBJECT_STORAGE_BUCKET_ENDPOINT_URL_HERE>"
+    bucketName: "<YOUR_OVH_STORAGE_BUCKET_NAME_HERE>"
+    region: "<YOUR_OVH_OBJECT_STORAGE_BUCKET_REGION_HERE>"
+    credentialSecret:
+      name: trilio-ovh-s3-target-secret
+      namespace: demo-backup-ns
+  thresholdCapacity: 100Gi
+
