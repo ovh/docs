@@ -259,6 +259,87 @@ Done
 
 Our first GPU workload are just started up and done its task in our OVHcloud Managed Kubernetes cluster. Easy!
 
+### Running Load Test GPU Application
+
+After deploying your first application using GPU, you can now run a load test GPU application. 
+
+To do that you have to use the `nvidia-smi` (System Management Interface) in any container with the proper runtime. 
+
+To see this in action, create a `my-load-gpu-pod.yml` YAML manifest file with the following content:
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dcgmproftester
+spec:
+  restartPolicy: OnFailure
+  containers:
+  - name: dcgmproftester
+    image: nvidia/samples:dcgmproftester-2.0.10-cuda11.0-ubuntu18.04
+    args: ["--no-dcgm-validation", "-t 1004", "-d 240"]
+    resources:
+      limits:
+        nvidia.com/gpu: 1
+    securityContext:
+      capabilities:
+        add: ["SYS_ADMIN"]
+```
+
+Apply it:
+
+```bash
+kubectl apply -f my-load-gpu-pod.yml -n default
+```
+
+And watch the Pod startup:
+
+```bash
+kubectl get pod -n default -w
+```
+
+This will create a Pod using the Nvidia `dcgmproftester` to generate a test GPU load:
+
+<pre class="console"><code>$ kubectl apply -f my-load-gpu-pod.yml -n default
+pod/dcgmproftester created
+
+$ kubectl get po -w
+NAME             READY   STATUS      RESTARTS   AGE
+...
+dcgmproftester   1/1     Running     0          7s
+</code></pre>
+
+Then, execute into the pod:
+
+```bash
+kubectl exec -it dcgmproftester -- nvidia-smi -n default
+```
+
+<pre class="console"><code>$ kubectl exec -it dcgmproftester -- nvidia-smi
+
+Fri Dec 24 13:36:50 2021
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.82.01    Driver Version: 470.82.01    CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-PCIE...  On   | 00000000:00:07.0 Off |                    0 |
+| N/A   47C    P0   214W / 250W |    491MiB / 16160MiB |     79%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
++-----------------------------------------------------------------------------+
+</code></pre>
+
+You can see your test load under `GPU-Util` (third column), along with other information such as `Memory-Usage` (second column).
+
 ## Go further
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
