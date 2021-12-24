@@ -1,29 +1,39 @@
 ---
-title: 'Transfer przychodzący domeny .co.uk'
-excerpt: 'Dowiedz się, jak wykonać transfer domeny .co.uk do OVH'
-slug: uslugi_www_transfer_domeny_couk
-legacy_guide_number: g2026
+title: 'Transfer domeny.uk do OVHcloud'
+legacy_guide_number: 2026
+slug: web_hosting_how_to_transfer_a_couk_domain_name
+excerpt: 'W tym przewodniku znajdziesz różne informacje dotyczące transferu domeny .uk lub podobnej do OVHcloud'
 section: Transfer
+order: 4
 ---
 
-## Wymagania
-Jeśli chcesz przenieść domenę .co.uk do OVH, upewnij się, że spełniasz poniższe wymagania:
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
+**Ostatnia aktualizacja z dnia 22/06/2020**
 
-- Domena jest aktywna (nie wygasła). *
-- Domena nie jest zablokowana u aktualnego operatora. *
-- Dane właściciela domeny w bazie [whois](https://www.ovh.pl/cgi-bin/whois.pl) są aktualne. *
+## Wprowadzenie
 
-* Obowiązkowe
+Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
 
+**Dowiedz się, jak przenieść domenę .uk (lub podobną) na OVHcloud**
 
-Aktualnego operatora domeny możesz sprawdzić w bazie [whois](https://www.ovh.pl/cgi-bin/whois.pl).
+> [!warning]
+>
+> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
+>
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+>
 
-![](images/img_3485.jpg){.thumbnail}
+## Wymagania początkowe
 
+- Twoja domena nie może być usunięta ani usunięta.
+- Domena nie może zostać zablokowana u Twojego operatora. 
+- Dane kontaktowe właściciela muszą być aktualne w [bazie whois](https://www.nominet.uk/whois/){.external} domeny.
+- Otrzymasz kod autoryzacyjny, który zostanie wysłany na adres e-mail właściciela. 
 
-## Rozszerzenia objęte opisaną procedurą
-
+## Rozszerzenia
 - .co.uk
 - .me.uk
 - .org.uk
@@ -31,58 +41,49 @@ Aktualnego operatora domeny możesz sprawdzić w bazie [whois](https://www.ovh.p
 - .plc.uk
 - .uk.
 
+## W praktyce
 
+### Procedura transferu
 
+#### Etap 1: Zmiana APR dla domeny
 
-## Etap 1: Zmiana TAG-u domeny
-Aby przenieść domenę do OVH, należy złożyć zamówienie. Transfer jest darmowy i jest zarządzany przez system TAG-ów.
-W pierwszej kolejności należy wskazać TAG OVH u aktualnego operatora. 
-TAG OVH to "OVH-FR".
-Lista TAG-ów poszczególnych operatorów jest dostępna na oficjalnej stronie registry [Nominet](http://www.nominet.uk/registrar-list).
-Jeśli nie uda Ci się zmienić TAG-u domeny u aktualnego operatora, możesz wykonać tę operację w Registry.
+Aby móc przenieść domenę do OVHcloud, należy najpierw podać TAG OVHcloud u obecnego operatora. OVHcloud otrzymuje oznaczenie "OVH-FR". Lista TAGS poszczególnych operatorów jest dostępna na oficjalnej stronie internetowej [Nominet](http://www.nominet.uk/registrar-list){.external}.
 
-W tym celu przejdź na tę stronę registry: [Manage your domain - Change registrar](http://www.nominet.org.uk/uk-domain-names/manage-your-domain/change-registrar).
-Uwaga: Nominet pobiera opłatę za tę operację.
+> [!primary]
+>
+> Jeśli nie możesz wykonać modyfikacji Tag domeny za pomocą
+> Twój obecny rejestr - możesz złożyć wniosek w Rejestrze
+> Zmień nazwę użytkownika.
+> Przekieruj się na stronę Registry: "Manage your domain - Change registrar".
+> Uwaga, ta operacja jest płatna przez Nominet.
+>
 
+#### Etap 2: Uzyskanie kodu autoryzacji transferu
 
-## Etap 2: Transfer domeny do OVH
-Po zmodyfikowaniu TAG-u domena zostanie przeniesiona do OVH automatycznie w ciągu kilku godzin.
+Po zmianie APR właściciel domeny po kilku minutach otrzyma e-mail z kodem autoryzacyjnym ("authcode"). Certyfikat, ważny przez 5 dni, pozwoli rozpocząć (bezpłatnie) zamawianie domeny w OVHcloud.
 
+#### Etap 3: Bezpłatne zamówienie na transfer
 
-## Etap 3: Potwierdzenie kontaktów
-Następnie właściciel domeny otrzyma e-mail na adres wskazany w bazie whois. 
-W formularzu trzeba będzie wskazać kontakty domeny w trybie normalnym lub w trybie zaawansowanym:
+Po uzyskaniu kodu autoryzacyjnego możesz wyszukać i rozpocząć transfer domeny na [stronę OVHcloud](https://www.ovhcloud.com/pl/). Zamówienie jest podobne do innych domen globalnych.
 
-Tryb normalny:
+Twoja domena zostanie wyświetlona w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w ciągu kilku godzin.
 
-- Wskażidentyfikator klienta, który będzie kontaktem administracyjnym, technicznym i księgowym tej domeny.
-- Zaznacz pola, aby zezwolić na transfer i kliknij na "zapisz".
+### Przydatne informacje
 
+#### Koszt transferu domeny z rozszerzeniem .uk (lub równorzędny)
 
+Transfer jest bezpłatny.
 
-![](images/img_3487.jpg){.thumbnail}
-Tryb zaawansowany:
+#### Ważność kodeksu autoryzacji
 
-- Wpisz poszczególne identyfikatory dla kontaktu administracyjnego, technicznego i księgowego domeny.
-- Zaznacz pola, aby zezwolić na transfer i kliknij na "zapisz".
+Kod autoryzacji jest generowany automatycznie po zmianie GAR. Jeśli zamówienie nie zostanie zrealizowane w ciągu 5 dni, transfer zostanie anulowany.
 
+#### Odnowienie domeny po transferze
 
+Transfer jest darmowy. Data wygaśnięcia domeny po jego przeniesieniu będzie taka sama jak przed jego przeniesieniem. Aby odnowić usługę po jej przeniesieniu, przejdź na [stronę OVHcloud](https://www.ovh.co.uk/cgi-bin/order/renew.cgi).
 
-![](images/img_3486.jpg){.thumbnail}
+## Sprawdź również <a name="gofurther"></a>
 
+[Transfer domeny do OVHcloud](https://docs.ovh.com/pl/domains/przeniesienie-domeny-globalnej/)
 
-## Etap 4: Zakończenie
-Po kilku godzinach domena pojawi się w panelu klienta.
-
-
-## Koszt transferu domeny .co.uk i innych rozszerzeń .uk
-Transfer jest darmowy.
-
-
-## Czas trwania transferu domeny .co.uk i innych rozszerzeń .uk
-Jeśli potwierdzisz transfer w e-mailu wysłanym do właściciela, transfer zostanie wykonany w ciągu około 24 godzin.
-
-
-## Odnowienie domeny po transferze
-Transfer jest darmowy, więc data wygaśnięcia domeny po transferze nie ulegnie zmianie. Aby odnowić domenę, należy przejść na stronę [ovh.pl](https://www.ovh.pl).
-
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

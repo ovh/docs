@@ -1,23 +1,23 @@
 ---
 title: 'Transferir um domínio .uk para a OVHcloud'
 legacy_guide_number: 2026
-slug: transferir-dominio-couk
+slug: web_hosting_how_to_transfer_a_couk_domain_name
 excerpt: 'Neste guia encontrará diferentes informações relativas à transferência de um nome de domínio .uk ou equiparado para a OVHcloud'
 section: Transferência
-order: 3
+order: 4
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 10/06/2020**
+**Última atualização: 22/06/2020**
 
 ## Objetivo
 
 A transferência de um nome de domínio .uk (ou equiparado) requer uma abordagem específica.
 
-**Descubra como transferir um domínio .uk (ou equiparado) para a OVHcloud**
+***Descubra como transferir um domínio .uk (ou equiparado) para a OVHcloud**
 
 > [!warning]
 >
@@ -80,8 +80,10 @@ O código de autorização é gerado automaticamente após a modificação da TA
 
 #### Renovação do domínio na sequência de uma transferência
 
-Como a transferência é gratuita, a data de expiração do domínio após a transferência será a mesma que antes da transferência. Para o renovar após a transferência, aceda [ao site OVHcloud](https://www.ovh.com/cgi-bin/order/renew.cgi).
+Como a transferência é gratuita, a data de expiração do domínio após a transferência será a mesma que antes da transferência. Para o renovar após a transferência, aceda ao [site OVHcloud](https://www.ovh.co.uk/cgi-bin/order/renew.cgi).
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+[Transferir o nome de domínio para a OVHcloud)[https://docs.ovh.com/pt/domains/transferir-o-dominio-generico/]
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
