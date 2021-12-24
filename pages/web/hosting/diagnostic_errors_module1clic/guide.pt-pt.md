@@ -16,7 +16,7 @@ order: 2
 
 A criação de um [Módulo 1 clique](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/) em modo simples ou avançado pode causar várias anomalias.
 
-**Saiba como diagnosticar os casos mais comuns de erros associados à criação de módulos 1 clique**
+**Descubra como diagnosticar os casos mais comuns de erros associados à criação de módulos 1 clique**
 
 > [!warning]
 >
