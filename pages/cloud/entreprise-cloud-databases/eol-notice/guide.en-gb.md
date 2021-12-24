@@ -85,14 +85,12 @@ Discover the Public Cloud offers and prices:
 - French (Euros): <https://www.ovhcloud.com/fr/public-cloud/databases/>.
 - English (Euros): <https://www.ovhcloud.com/en-ie/public-cloud/databases/>.
 
-
 ## Migration options
 
 There is no automatic migration option so far.
 
 You can migrate to other PostgreSQL services with native PostgreSQL commund, such as **pg_dump** and **pg_restore**.
 
-Specifi guides are under redaction for a step by step process. We will link them here and on official Public Cloud Databases documentation.
+Specific guides are under redaction for a step by step process. We will link them here and on official Public Cloud Databases documentation.
 
-
-If you need assistance, please contact our support direclty. We provide a catalog of professional services.
+If you need assistance, please contact our support directly. We provide a catalog of professional services.
