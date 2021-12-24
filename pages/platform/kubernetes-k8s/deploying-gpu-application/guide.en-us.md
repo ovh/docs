@@ -52,6 +52,10 @@ So you need to create a node pool with `t1` flavor type.
 
 If you already have an OVHcloud Kubernetes cluster with a node pool with `t1` flavor type, you can skip the following `Autoscaling GPU Node Pool creation` step.
 
+> [!warning]
+>GPU Virtual machines are extremely powerful and significantly more expensive than general purpose nodes. If you are usually using OVHcloud Public Cloud at small scale and/or are a new user, you may need to [raise your Public Cloud quota](https://docs.ovh.com/us/en/public-cloud/increase-public-cloud-quota/) to enable access to those type of machines for your project. Also note that these machines are only available in some of our public cloud regions.
+>
+
 ### Autoscaling GPU Node Pool creation
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
