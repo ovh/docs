@@ -91,10 +91,10 @@ Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this
 
 Then log on to the [FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) of your web hosting. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse in to the configuration file of your website:
 
-- WORDPRESS: **"wp-config.php"** (the database name appears as **"DB_NAME"**).
-- JOOMLA: **"configuration.php"** (the database name appears under **"public $db"**).
-- DRUPAL: **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
-- PRESTASHOP: **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
+- Wordpress: **"wp-config.php"** (the database name appears as **"DB_NAME"**).
+- Joomla!: **"configuration.php"** (the database name appears under **"public $db"**).
+- Drupal: **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
+- Prestashop: **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
 
 #### Step 2: backup your data
 
@@ -131,7 +131,7 @@ Add CAPTCHA-type testing tools to the forms on your website.
 Do not install plugins or templates that have not been recommended by the official website or community of your CMS:
 
 - [WordPress](https://wordpress.org/){.external}
-- [Joomla](https://community.joomla.org/){.external}
+- [Joomla!](https://community.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/community){.external}
 - [PrestaShop](https://www.prestashop.com/en){.external}
 

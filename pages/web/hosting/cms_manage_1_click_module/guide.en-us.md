@@ -131,7 +131,7 @@ Add CAPTCHA-type testing tools to the forms on your website.
 Do not install plugins or templates that have not been recommended by the official website or community of your CMS:
 
 - [WordPress](https://wordpress.org/){.external}
-- [Joomla](https://community.joomla.org/){.external}
+- [Joomla!](https://community.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/community){.external}
 - [PrestaShop](https://www.prestashop.com/en){.external}
 

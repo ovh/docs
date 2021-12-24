@@ -67,7 +67,7 @@ In entrambi i casi, riceverai un'email di reimpostazione della password.
 >
 > Nella casella di posta corrispondente, controlla le cartelle `Spam`{.action} e `Corbeille`{.action}.
 >
-> Puoi anche ricercare l'email ricevuta durante la creazione del tuo modulo dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it): clicca sul tuo nome in alto a destra e poi su `Email di servizio`{.action}.
+> Tutte le email inviate dai nostri servizi sono disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it): clicca sul nome in alto a destra dello schermo e, nel menu contestuale a destra dello schermo, clicca su `Email di servizio`{.action}.
 >
 > **Durata di validità dei collegamenti:**
 >
@@ -97,7 +97,7 @@ In caso contrario, clicca sulla scheda `Multisito`{.action}. Annota il nome dell
 Accedi allo [spazio FTP del tuo hosting](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/). Apri la `Cartella di root` trovata precedentemente nella scheda `Multisito`{.action} e cerca il file di configurazione del tuo modulo:
 
 - Per WORDPRESS: **"wp-config.php"** (il nome del database compare con la dicitura **"DB_NAME"**).
-- Per JOOMLA: **"configuration.php"** (il nome del database compare con la dicitura **"public $db"**).
+- Per JOOMLA!: **"configuration.php"** (il nome del database compare con la dicitura **"public $db"**).
 - Per DRUPAL: **"settings.php"** (Per ritrovarlo, accedi alla cartella **"site"** e **"default"**. Il nome del database compare con la dicitura **"database"**.
 - Per PRESTASHOP: **"parameters.php"** (Per ritrovarlo, accedi alla cartella **"app"** e **"config"**. Il nome del database del tuo modulo compare con la dicitura **"database_name"**).
 

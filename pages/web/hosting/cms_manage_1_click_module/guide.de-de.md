@@ -96,10 +96,10 @@ Andere Weise, müssen Sie in den Tab `Multisite`{.action} gehen. Notieren Sie de
 
 Loggen Sie sich anschließend in den [FTP-Bereich](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings ein. Öffnen Sie den gefundenen `Wurzelverzeichnis` zuvor im Tab `Multisite`{.action} und suchen Sie die Konfigurationsdatei Ihres Moduls:
 
-- WORDPRESS: **“wp-config.php“** (der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
-- JOOMLA: **“configuration.php“** (der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).
-- DRUPAL: **“settings.php“** (Um ihn zu finden, gehen Sie in den Ordner **“sites“** und **“default“**. Der Name der Datenbank erscheint unter der Bezeichnung **“database“**).
-- PRESTASHOP: **“parameters.php“** (Um ihn zu finden begeben Sie sich in den Ordner **“app“** und **“config“**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **“database_name“**).
+- Wordpress: **“wp-config.php“** (der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
+- Joomla!: **“configuration.php“** (der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).
+- Drupal: **“settings.php“** (Um ihn zu finden, gehen Sie in den Ordner **“sites“** und **“default“**. Der Name der Datenbank erscheint unter der Bezeichnung **“database“**).
+- Prestashop: **“parameters.php“** (Um ihn zu finden begeben Sie sich in den Ordner **“app“** und **“config“**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **“database_name“**).
 
 #### Schritt 2: Ihr Modul sichern
 
@@ -136,7 +136,7 @@ Fügen Sie auf den Formularen Ihrer Website CAPTCHA Testwerkzeuge hinzu.
 Installieren Sie auf Ihrer Seite keine Plugins oder Templates, die von den offiziellen Communitys Ihres CMS nicht empfohlen wurden: 
 
 - [WordPress](https://wordpress.org/){.external}
-- [Joomla](https://community.joomla.org/){.external}
+- [Joomla!](https://community.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/community){.external}
 - [PrestaShop](https://www.prestashop.com/de){.external}
 

@@ -132,7 +132,7 @@ Ajoutez des outils de test de type CAPTCHA sur les formulaires de votre site.
 N'installez pas sur votre site de plugins ou de templates qui n'ont pas été recommandés par les communautés officielles de votre CMS : 
 
 - [Wordpress](https://wpfr.net/){.external}
-- [Joomla](https://forum.joomla.fr/){.external}
+- [Joomla!](https://forum.joomla.fr/){.external}
 - [Drupal](https://www.drupal.fr/forum){.external}
 - [Prestashop](https://www.prestashop.com/forums/){.external}
 

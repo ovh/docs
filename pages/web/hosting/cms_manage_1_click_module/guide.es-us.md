@@ -67,7 +67,7 @@ En ambos casos, recibirá un mensaje de correo electrónico con el fin de restau
 >
 > Compruebe las carpetas `Spams`{.action} y `Papelera`{.action} en la cuenta de correo correspondiente.
 >
-> También puede consultar el mensaje de correo electrónico recibido al crear el módulo desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws): haga clic en su nombre en la esquina superior derecha de la pantalla y, en el menú que aparece, haga clic en `Emails de servicio`{.action}.
+> También puede consultar todos los mensajes enviados por nuestros servicios desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws): haga clic en su nombre en la esquina superior derecha de su pantalla y, en el menú contextual situado a la derecha de la pantalla, haga clic en `Emails de servicio`{.action}.
 >
 > **Duración de validez de los enlaces :**
 >
@@ -97,11 +97,11 @@ En caso contrario, abra la pestaña `Multisitio`{.action}. Anote el nombre de la
 Conéctese al [espacio FTP del alojamiento](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/). Abra la `Carpeta raíz` encontrada anteriormente en la pestaña `Multisitio`{.action} y busque el archivo de configuración de su módulo:
 
 - Para WORDPRESS: **"wp-config.php"** (el nombre de la base de datos aparece con el texto **"DB_NAME"**).
-- Para JOOMLA: **"configuracion.php"** (el nombre de la base de datos aparece bajo el término **"public $db"**).
-- Para DRUPAL: **"settings.php"** (para encontrarlo, acceda a la carpeta **"sitios"** y luego a **"default"**. El nombre de la base de datos aparece con el **"database"**).
+- Para JOOMLA!: **"configuration.php"** (el nombre de la base de datos aparece bajo el término **"public $db"**).
+- Para DRUPAL: **"settings.php"** (para encontrarlo, acceda a la carpeta **"sites"** y luego a **"default"**. El nombre de la base de datos aparece con el **"database"**).
 - Para PRESTASHOP: **"parameters.php"** (para encontrarlo, acceda a la carpeta **"app"** y luego a **"config"**. El nombre de la base de su módulo aparece bajo la mención **"database_name'"**).
 
-#### Etapa 2: guardar el módulo (opcional)
+#### Etapa 2: guardar el módulo
 
 Para hacer copias de seguridad de su sitio web, siga las instrucciones de esta [guía](https://docs.ovh.com/gb/en/hosting/export-a-website/) y recupere los archivos en el espacio FTP de su alojamiento y su base de datos.
 
@@ -136,7 +136,7 @@ Añada herramientas de test de tipo CAPTCHA a los formularios de su sitio web.
 No instale en su sitio plugins ni plantillas que no hayan sido recomendados por las comunidades oficiales de su CMS: 
 
 - [WordPress](https://wordpress.org/){.external}
-- [Joomla](https://community.joomla.org/){.external}
+- [Joomla!](https://community.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/community){.external}
 - [PrestaShop](https://www.prestashop.com/es){.external}
 

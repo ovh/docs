@@ -14,7 +14,7 @@ order: 2
 
 ## Objetivo
 
-Os módulos 1 clique permitem a instalação fácil e rápida de um software on-line de assistência à criação de um website (vulgarmente denominado "CMS"). A OVHcloud propõe-lhe os mais conhecidos: WordPress, PrestaShop, Drupal e Joomla.
+Os módulos 1 clique permitem a instalação fácil e rápida de um software on-line de assistência à criação de um website (vulgarmente denominado "CMS"). A OVHcloud propõe-lhe os mais conhecidos: WordPress, PrestaShop, Drupal e Joomla!.
 
 **Saiba como gerir o módulo 1 clique na Área de Cliente OVHcloud.**
 
@@ -35,39 +35,39 @@ Os módulos 1 clique permitem a instalação fácil e rápida de um software on-
 
 ### Aceder ao seu site
 
-Para aceder à parte pública do seu site após a instalação de um módulo 1 clique, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e no separador `Módulos 1 clique`{.action}.
+Para aceder à parte pública do seu site após a instalação de um módulo 1 clique, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e no separador `Módulos "1 clique"`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita da linha relativa ao módulo e, a seguir, em `Aceder ao módulo`{.action}.
 
 > [!primary]
 >
-> Se o website não for apresentado corretamente após esta operação, consulte os guias OVHCLOUD relativos aos alojamentos partilhados na secção [Diagnóstico](https://docs.ovh.com/pt/hosting/).
+> Se o website não for apresentado corretamente após esta operação, consulte os guias OVHcloud relativos aos alojamentos partilhados na secção [Diagnóstico](https://docs.ovh.com/pt/hosting/).
 >
 
 ### Aceder à interface de administrador
 
-Para aceder à parte do seu site reservada aos administradores, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e, a seguir, no separador `Módulos 1 clique`{.action}.
+Para aceder à parte do seu site reservada aos administradores, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e, a seguir, no separador `Módulos "1 clique"`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita da linha relativa ao módulo e, a seguir, em `Aceder à interface de administração do módulo`{.action}.
 
 ### Encontrar o identificador de administrador
 
-Comece por procurar o e-mail recebido durante a criação do módulo a partir da Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)\: clique no seu nome no canto superior direito do ecrã e, no menu que aparecer, clique nas suas iniciais (Botão `Gerir a minha conta`{.action}) e, a seguir, no separador `E-mails recebidos`{.action}).
+Clique no separador `Módulos "1 clique"`{.action} a partir da parte `Alojamentos`{.action} da sua Área de Cliente. O identificador administrador do seu módulo aparece na coluna `Nome de utilizador`.
 
-Pode também passar pelo separador `Módulos 1 clique`{.action} a partir da secção `Alojamentos`{.action} da sua Área de Cliente. O identificador de administrador do módulo aparece na coluna `Login`.
+Também pode procurar o e-mail recebido durante a criação do módulo a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt): clique no seu nome no canto superior direito do ecrã e, no menu que aparecer, clique em `E-mails de serviço`{.action}.
 
 ### Modificar a palavra-passe do seu módulo
 
-Pode alterar a palavra-passe do módulo a partir da Área de Cliente OVHcloud ou através de uma ligação direta à página de acesso ao espaço de administrador do seu website.
+Pode alterar a palavra-passe do módulo a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou através de uma ligação direta à página de acesso ao espaço de administrador do seu website.
 Em ambos os casos, ser-lhe-á enviado um e-mail de reinicialização da password.
 
 > [!primary]
 >
 > **O que fazer se não tiver recebido o e-mail de reinicialização da password administrador do seu site?**
 >
-> Na caixa de e-mail em causa, verifique as pastas `Spams`{.action} e `Corbeille`{.action}.
+> Na caixa de e-mail em causa, verifique as pastas `Spams`{.action} e `Elementos suprimidos`{.action}.
 >
-> Pode igualmente encontrar o conjunto dos e-mails enviados pelos nossos serviços a partir do seu [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)\: clique no seu nome no canto superior direito do ecrã e, no menu contextual à direita do ecrã, clique nas suas iniciais (Botão `Gerir a minha conta`{.action}) e, a seguir, no separador `E-mails recebidos`{.action}.
+> Pode igualmente encontrar o conjunto dos e-mails enviados pelos nossos serviços a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt): clique no seu nome no canto superior direito do seu ecrã e, no menu contextual à direita do ecrã, clique em `E-mails de serviço`{.action}.
 >
 > **Duração dos vínculos:**
 >
@@ -75,70 +75,70 @@ Em ambos os casos, ser-lhe-á enviado um e-mail de reinicialização da password
 > - Depois de clicar na ligação, esta só é válida durante 30 minutos.
 >
 
-Para alterar a palavra-passe de acesso à interface de administração do seu site **através da Área de Cliente OVHcloud**, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e no separador `Módulos 1 clique`{.action}.
+Para alterar a palavra-passe de acesso à interface de administração do seu website **através da Área de Cliente OVHcloud**, clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e no separador `Modules "1 clique"`{.action}.
 
-A seguir, clique no botão `...`{.action} à direita da linha relativa ao seu módulo e, a seguir, em `Alterar a palavra-passe`{.action}. Por fim, clique em `Validar`{.action}. Receberá dentro de alguns minutos por e-mail um link de reinicialização da sua password.
+A seguir, clique no botão `...`{.action} à direita da linha relativa ao seu módulo e depois `Alterar palavra-passe`{.action}. Clique em `Validar`{.action}. Receberá dentro de alguns minutos por e-mail um link de reinicialização da sua password.
 
 ### Eliminar o módulo
 
 > [!warning]
 >
-> O backup dos seus dados faz parte das operações essenciais à [segurança dos seus websites](../secure-website). Sugerimos que importe regularmente e **antes de eliminar** o backup dos seus dados para um suporte local, como uma pen USB ou um disco rígido externo, de acordo com as instruções deste [manual](../exporter-son-site-web/).
+> O backup dos seus dados faz parte das operações essenciais à [segurança dos seus websites](https://docs.ovh.com/pt/hosting/secure-website/). Sugerimos que importe regularmente e **antes de eliminar** o backup dos seus dados para um suporte local, como uma pen USB ou um disco rígido externo, de acordo com as instruções deste [manual](https://docs.ovh.com/pt/hosting/exportar-o-seu-website/).
 >
 
-#### 1 - identificar a base de dados do módulo <a name="step1"></a>
+#### Etapa 1: identificar a base de dados do módulo <a name="step1"></a>
 
-Para eliminar o módulo 1 clique, deve começar por identificar a sua base de dados de forma **segura**. Para isso, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e, a seguir, no separador `Bases de dados`{.action}.
+Para eliminar o módulo 1 clique, deve começar por identificar a sua base de dados de forma **segura**. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e, a seguir, no separador `Bases de dados`{.action}.
 
-Se dispõe de uma única base de dados nesta parte da sua Área de Cliente e não dispõe de soluções [SQL privado](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) ou [Cloud Database](https://www.ovh.com/fr/cloud-databases/), pode considerar que se trata do seu site.
+Se dispõe de uma única base de dados nesta parte da sua Área de Cliente e não dispõe de soluções [SQL privado](https://www.ovhcloud.com/pt/web-hosting/options/private-sql/), pode considerar que se trata do seu site.
 
-Caso contrário, clique no separador `Multisite`{.action}. Tome nota do nome da `Pasta raiz`\: trata-se do diretório no qual se encontram os ficheiros que constituem o seu módulo 1 clique no servidor FTP.
+Caso contrário, clique no separador `Multisite`{.action}. Tome nota do nome da `Pasta raiz`: trata-se do diretório no qual se encontram os ficheiros que constituem o seu módulo 1 clique no servidor FTP.
 
-Aceda ao espaço FTP [do seu alojamento](../connexion-espace-stockage-ftp-hebergement-web/). Abra a `Pasta raiz` encontrada anteriormente no separador `Multi-site`{.action} e procure o ficheiro de configuração do seu módulo:
+Aceda ao [espaço FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento. Abra a `Pasta raiz` encontrada anteriormente no separador `Multisite`{.action} e procure o ficheiro de configuração do seu módulo:
 
 - Para WORDPRESS: **"wp-config.php"** (o nome da base de dados aparece com a menção **"DB_NAME"**).
-- Para JOOMLA: **"configuracao.php"** (o nome da base de dados aparece com a menção **"public $db"**).
+- Para JOOMLA: **"configuration.php"** (o nome da base de dados aparece com a menção **"public $db"**).
 - Para o DRUPAL: **"settings.php"** (Para encontrá-lo, aceda à pasta **"sites"** e **"default"**. O nome da base de dados aparece sob a menção **"database""**).
 - Para PRESTASHOP: **"parameters.php"** (Para o encontrar, aceda à pasta **"app"** e **"config"**. O nome da base do módulo aparece na rubrica **"database_name"**.
 
-#### Etapa 2: guardar o seu módulo (facultativo)
+#### Etapa 2: guardar o seu módulo
 
-Para guardar o seu site, siga as instruções deste [guia](../exporter-son-site-web/) para recuperar os seus ficheiros no espaço FTP do seu alojamento e a sua base de dados.
+Para guardar o seu site, siga as instruções deste [guia](https://docs.ovh.com/pt/hosting/exportar-o-seu-website/) para recuperar os seus ficheiros no espaço FTP do seu alojamento e a sua base de dados.
 
 #### Etapa 3: eliminar o módulo
 
-> \[!alert]
+> [!alert]
 >
 > A eliminação do módulo 1 clique e da base de dados irá também resultar **na eliminação de todos os backups**. Os dados eliminados não poderão ser recuperados posteriormente.
 >
 
-Para eliminar o módulo 1 clique, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e em `Módulos 1 clique`{.action}.
+Para eliminar o módulo 1 clique, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e em `Módulos "1 clique"`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita da linha que designa o seu módulo e, a seguir, no comando `Eliminar o módulo`{.action}.
 
 > [!warning]
 >
-> A eliminação do módulo 1 clique **não levará automaticamente à eliminação da base de dados**. Se ativar a instalação de um novo CMS sem eliminar previamente a base de dados do anterior (e o alojamento não permitir a criação automática de uma nova base de dados), aparecerá a mensagem "[Ocorreu um erro durante o carregamento das informações (You need at least one free database)](https://docs.ovh.com/pt/hosting/erros-frequentes-modulos-em-1-clique/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database)" na sua Área de Cliente.
+> A eliminação do módulo 1 clique **não levará automaticamente à eliminação da base de dados**. Se ativar a instalação de um novo CMS sem eliminar previamente a base de dados do anterior (e o alojamento não permitir a criação automática de uma nova base de dados), aparecerá a mensagem "[Ocorreu um erro aquando do carregamento das informações (You need at least one free database)](https://docs.ovh.com/pt/hosting/erros-frequentes-modulos-em-1-clique/#ocorreu-um-erro-aquando-do-carregamento-das-informacoes-you-need-at-least-one-free-database)" na sua Área de Cliente.
 >
-> Se dispõe de uma subscrição [Kimsufi](https://www.kimsufi.com/fr/hosting.xml) ou [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) ou se já criou quatro bases de dados sobre o seu alojamento [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), deverá eliminar a base de dados identificada [no passo 1](#step1) **ANTES** de poder criar um novo módulo 1 clique.
+> Se dispõe de uma subscrição [Hosting Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) ou se já criou quatro bases de dados sobre o seu alojamento [Hosting Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Hosting Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), deverá eliminar a base de dados identificada [no passo 1](#step1) **ANTES** de poder criar um novo módulo 1 clique.
 >
 
-Para terminar a eliminação do módulo, aceda ao separador `Bases de dados`{.action}, ainda na secção `Web cloud`{.action}, `Alojamentos`{.action} e no alojamento em causa, na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e clique em `...`{.action} à direita da linha que designa a base e no botão` `{.action}Eliminar a base de dados de dados.
+Para terminar a eliminação do módulo, aceda ao separador `Bases de dados`{.action}, ainda na secção `Web cloud`{.action}, `Alojamentos`{.action} e no alojamento em causa, na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e clique em `...`{.action} à direita da linha que designa a base e no botão `Eliminar base de dados`{.action}.
 
-Antes de reiniciar a instalação de um novo módulo, verifique que as tarefas de eliminação solicitadas anteriormente foram finalizadas através do separador `Tarefas em curso`{.action}.
+Antes de reiniciar a instalação de um novo módulo, verifique que as tarefas de eliminação solicitadas anteriormente foram finalizadas através do separador `operações em curso`{.action}.
 
 ### Boas práticas
 
-Para proteger o seu site, siga as instruções deste [guia](../secure-website/).
+Para proteger o seu site, siga as instruções deste [guia](https://docs.ovh.com/pt/hosting/secure-website/).
 
 Adicione ferramentas de teste do tipo CAPTCHA aos formulários do seu site.
 
 Não instale no seu site plugins ou templates que não foram recomendados pelas comunidades oficiais do seu CMS: 
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla](https://community.joomla.org/){.external}
+- [Wordpress](https://wordpress.org/){.external}
+- [Joomla!](https://community.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/community){.external}
-- [PrestaShop](https://www.prestashop.com/en){.external}
+- [Prestashop](https://www.prestashop.com/pt){.external}
 
 ## Quer saber mais? <a name="gofurther"></a>
 
