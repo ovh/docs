@@ -135,10 +135,10 @@ Fügen Sie auf den Formularen Ihrer Website CAPTCHA Testwerkzeuge hinzu.
 
 Installieren Sie auf Ihrer Seite keine Plugins oder Templates, die von den offiziellen Communitys Ihres CMS nicht empfohlen wurden: 
 
-- [WordPress](https://wordpress.org/){.external}
+- [Wordpress](https://wordpress.org/){.external}
 - [Joomla!](https://community.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/community){.external}
-- [PrestaShop](https://www.prestashop.com/de){.external}
+- [Prestashop](https://www.prestashop.com/de){.external}
 
 ## Mehr <a name="gofurther"></a>
 
