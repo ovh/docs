@@ -140,7 +140,7 @@ Installieren Sie auf Ihrer Seite keine Plugins oder Templates, die von den offiz
 - [Drupal](https://www.drupal.org/community){.external}
 - [Prestashop](https://www.prestashop.com/de){.external}
 
-## Mehr <a name="gofurther"></a>
+## Weiterführende Informationen <a name="gofurther"></a>
 
 [Die häufigsten Fehler bei 1-Klick-Modulen beheben](https://docs.ovh.com/de/hosting/fehler-bei-1-klick-modulen/).
 
