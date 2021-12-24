@@ -81,7 +81,7 @@ Ce lien est installé par défaut sur les hébergements mutualisés OVHcloud. Il
 
 ![site_under_construction](images/site_under_construction.png){.thumbnail}
 
-Si vous n'utilisez pas la fonctionnalité « [Module en 1 clic](../modules-en-1-clic/) », vous devrez utiliser [Filezilla](../mutualise-guide-utilisation-filezilla/), afin de le supprimer manuellement.
+Si vous n'utilisez pas la fonctionnalité « [Module en 1 clic](../modules-en-1-clic/) », vous devrez utiliser [Net2FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer), afin de le supprimer manuellement.
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
