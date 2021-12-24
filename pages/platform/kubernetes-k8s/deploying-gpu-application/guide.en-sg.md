@@ -46,6 +46,8 @@ You also need to have [Helm](https://docs.helm.sh/) installed on your workstatio
 
 To get the best and most cost-effective benefit from GPUs on OVHcloud Managed Kubernetes, and to take advantage of cluster autoscaling, we recommend that you create separate GPU node pools in your Kubernetes clusters.
 
+![GPU Node Pool](images/gpu-node-pool.png){.thumbnail}
+
 The GPU operator, that you will install, should run on Kubernetes nodes that are equipped with GPUs.
 
 So you need to create a node pool with `t1` flavor type.
