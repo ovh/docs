@@ -1,6 +1,6 @@
 ---
 title: Connect OVHcloud Managed Kubernetes service to OVHcloud Managed MySQL service
-slug: working-with-managed-mysql
+slug: connect-kubernetes-to-managed-mysql
 excerpt: "Find out how to connect OVHcloud Managed Kubernetes to an OVHcloud Managed MySQL database"
 section: Tutorials
 ---
@@ -51,13 +51,13 @@ Click on the button `Create a database instance`{.action}. (`Create a service`{.
 
 Click on the MySQL database and then select the version to install from the drop-down menu. Click on `Next`{.action} to continue.
 
-![Choose MySQL database](images/working-with-managed-mysql01.png){.thumbnail}
+![Choose MySQL database](images/connect-kubernetes-to-managed-mysql01.png){.thumbnail}
 
 ### Step 2: Select a solution
 
 In this step, choose an appropriate service plan. You will be able to upgrade the plan after creation.
 
-![Choose plan](images/working-with-managed-mysql02.png){.thumbnail}
+![Choose plan](images/connect-kubernetes-to-managed-mysql02.png){.thumbnail}
 
 Please visit the [capabilities page](../mysql/capabilities) for detailed information on each plan's properties.
 
@@ -67,7 +67,7 @@ Click on `Next`{.action} to continue.
 
 Choose the geographical region of the data centre in which your database will be hosted.
 
-![Choose region](images/working-with-managed-mysql03.png){.thumbnail}
+![Choose region](images/connect-kubernetes-to-managed-mysql03.png){.thumbnail}
 
 Click on `Next`{.action} to continue.
 
@@ -75,7 +75,7 @@ Click on `Next`{.action} to continue.
 
 You can choose the node model in this step. The initial and maximum numbers of nodes depends on the solution chosen in step 2.
 
-![Order nodes](images/working-with-managed-mysql04.png){.thumbnail}
+![Order nodes](images/connect-kubernetes-to-managed-mysql04.png){.thumbnail}
 
 Please visit the [capabilities page](../mysql/capabilities/) for detailed information on the hardware resources and other properties of the MySQL database installation.
 
@@ -85,7 +85,7 @@ Take note of the pricing information and click on `Next`{.action} to continue.
 
 You can name your database in this step.
 
-![Configure options](images/working-with-managed-mysql05.png){.thumbnail}
+![Configure options](images/connect-kubernetes-to-managed-mysql05.png){.thumbnail}
 
 ### Connecting a private network (optional)
 
@@ -95,13 +95,13 @@ For now, the solution is not compatible with private networks.
 
 The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](../../api/first-steps-with-ovh-api/).
 
-![Confirm order](images/working-with-managed-mysql06.png){.thumbnail}
+![Confirm order](images/connect-kubernetes-to-managed-mysql06.png){.thumbnail}
 
 Within a few minutes your new database service will be deployed. Messages in the OVHcloud Control Panel will inform you when the database is ready to use.
 
 You know your database is ready when cluster status is "Ready", node status is green, and number of users is set to "1 user".
 
-![Control Panel DB ok](images/working-with-managed-mysql08.png){.thumbnail}
+![Control Panel DB ok](images/connect-kubernetes-to-managed-mysql08.png){.thumbnail}
 
 ## Whitelist your OVHcloud Managed Kubernetes cluster
 
@@ -112,11 +112,11 @@ To allow access from your OVHcloud Managed Kubernetes service to the database, c
 
 Get your Kubernetes cluster nodes IP addresses from the Compute / Instances menu on the left.
 
-![Nodes IPs list](images/working-with-managed-mysql09.png){.thumbnail}
+![Nodes IPs list](images/connect-kubernetes-to-managed-mysql09.png){.thumbnail}
 
 Following the related documentation [whitelist the suitable IP addresses](../mongodb/managing-service/#configuring-authorised-ips), add your k8s cluster node IPs to the whitelist
 
-![Db completed setup](images/working-with-managed-mysql10.png){.thumbnail}
+![Db completed setup](images/connect-kubernetes-to-managed-mysql10.png){.thumbnail}
 
 ## Test connection from k8s to MySQL db
 
@@ -143,7 +143,7 @@ The parameters you need to know are :
 
     Get it after reset it.
 
-![Password reseted](images/working-with-managed-mysql11.png){.thumbnail}
+![Password reseted](images/connect-kubernetes-to-managed-mysql11.png){.thumbnail}
 
 Now connect to the database with the command
 
@@ -266,7 +266,7 @@ WordPress Admin URL: http://135.125.83.116/admin
 
 And putting the URL in your browser will take you to the new blog:
 
-![Installing Wordpress](images/working-with-managed-mysql12.png){.thumbnail}
+![Installing Wordpress](images/connect-kubernetes-to-managed-mysql12.png){.thumbnail}
 
 You also use the instructions given by the helm install to get the default username and password for your blog.
 
@@ -278,7 +278,7 @@ $ echo Password: $(kubectl get secret --namespace default my-wordpress -o jsonpa
 Password: GSPSIXwGok
 </code></pre>
 
-![Installing Wordpress](images/working-with-managed-mysql13.png){.thumbnail}
+![Installing Wordpress](images/connect-kubernetes-to-managed-mysql13.png){.thumbnail}
 
 You have a working Wordpress on your OVHcloud Managed Kubernetes Service, storing datas on your OVHcloud Managed MySQL, congratulations!
 
