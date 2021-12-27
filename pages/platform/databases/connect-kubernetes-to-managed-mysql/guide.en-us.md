@@ -10,7 +10,7 @@ section: Tutorials
      font-size: 14px;
  }
  pre.console {
-   background-color: #300A24; 
+   background-color: #300A24;
    color: #ccc;
    font-family: monospace;
    padding: 5px;
@@ -33,9 +33,9 @@ In this tutorial, we are going to show you how to connect your OVHcloud Managed 
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../../kubernetes/deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../../../kubernetes/deploying-hello-world/).
 
-You need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../../kubernetes/installing-helm/) tutorial.
+You need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../../../kubernetes/installing-helm/) tutorial.
 
 Finally, you need to be able to order a database solution in the OVHcloud Control Panel, as explained at [Getting started with Public Cloud Databases](../getting-started/).
 
@@ -93,7 +93,7 @@ For now, the solution is not compatible with private networks.
 
 ### Step 6: Summary and confirmation
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](../../api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](../../../api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/connect-kubernetes-to-managed-mysql06.png){.thumbnail}
 
@@ -105,8 +105,12 @@ You know your database is ready when cluster status is "Ready", node status is g
 
 ## Whitelist your OVHcloud Managed Kubernetes cluster
 
-For security reasons the default network configuration doesn't allow any incoming connections. 
-To allow access from your OVHcloud Managed Kubernetes service to the database, cluster nodes IPs have to be whitelisted.
+> [!warning]
+> For security reasons the default network configuration doesn't allow any incoming connections. 
+> To allow access from your OVHcloud Managed Kubernetes service to the database, cluster nodes IPs have to be whitelisted.
+> Adding kubernetes cluster nodes IPs to the whitelist is not recommended on production environnment, and must only be done for testing.
+> In the near future, we will write a guide on how using vrack, and how to interconnect your different managed services.
+
 
 ### Add kubernetes cluster nodes IPs to the DB whitelist
 
@@ -175,7 +179,7 @@ For this tutorial we are using the [Wordpress Helm chart](https://github.com/bit
 
 ### Pre-requisites
 
-As described on tutorial [Installing WordPress on OVHcloud Managed Kubernetes](../../kubernetes/installing-wordpress/#installing-the-wordpress-helm-chart), remove the default storage class and install the new one.
+As described on tutorial [Installing WordPress on OVHcloud Managed Kubernetes](../../../kubernetes/installing-wordpress/#installing-the-wordpress-helm-chart), remove the default storage class and install the new one.
 
 ```
 kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
@@ -185,12 +189,12 @@ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platfo
 
 ### Customizing your install
 
- Maybe you would like your username to be different, or be able to set your password..
+By default, the Helm chart installs the Wordpress and a MariaDB on the K8s cluster. As you want to use your OVHcloud Managed MySQL, you need to customize the Helm installation by setting the URL, user and password of your database.
 
 In order to customize your install, without having to leave the simplicity of using helm and the Wordpress helm chart, you can simply set some of the [configurable parameters of the WordPress chart](https://github.com/helm/charts/tree/master/stable/wordpress#configuration){.external}. 
 Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`)
 
-Otions to set for accessing the Managed MySQL database are
+Options to set for accessing the Managed MySQL database are
 ```
 mariadb.enabled=false
 externalDatabase.host=mysql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net
@@ -232,7 +236,7 @@ To access your WordPress site from outside the cluster follow the steps below:
    echo "WordPress URL: http://$SERVICE_IP/"
    echo "WordPress Admin URL: http://$SERVICE_IP/admin"
 
-2. Open a browser and access WordPress using the obtained URL.
+2. Open a browser and access WordPress using the obtained URL.  
 
 3. Login with the following credentials below to see your blog:
 
@@ -240,6 +244,9 @@ To access your WordPress site from outside the cluster follow the steps below:
   echo Password: $(kubectl get secret --namespace default my-wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
 
 </code></pre>
+
+> [!Warning]
+> Be sure your MySQL database defaultdb is clean before executing the helm install command. If a previous installation is detected, parameters like user and password won't be updated, so the k8s configuration will mismatch with the database one.
 
 As the instructions say, you will need to wait a few moments to get the `LoadBalancer` URL.
 You can test if the `LoadBalancer` is ready using:
@@ -269,8 +276,6 @@ And putting the URL in your browser will take you to the new blog:
 ![Installing Wordpress](images/connect-kubernetes-to-managed-mysql12.png){.thumbnail}
 
 You also use the instructions given by the helm install to get the default username and password for your blog.
-
-In my case:
 
 <pre class="console"><code>$ echo Username: user
 Username: user
