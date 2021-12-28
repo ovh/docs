@@ -13,10 +13,9 @@ The aim of this guide is to explain how vSAN fault domains work and how they are
 
 ## Requirements
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-- Have a [vSan Datastore](https://docs.ovh.com/gb/en/private-cloud/vmware-vsan/) deployed
-
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- A deployed [vSan Datastore](https://docs.ovh.com/gb/en/private-cloud/vmware-vsan/)
 
 ## Instructions
 
