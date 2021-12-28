@@ -111,6 +111,23 @@ Por ejemplo, para un paquete destinado al puerto 80/TCP, se aplicará la regla 2
 > Si se activa la mitigación anti-DDoS, las reglas del firewall de red se activarán aunque lo haya desactivado. Por lo tanto, recuerde eliminar las reglas si desactiva el firewall.
 > 
 
+### Configurar el firewall de red Armor (Firewall Game)
+
+> [!primary]
+> Por defecto, el cortafuegos Armor está preconfigurado con algunas reglas que OVHcloud ha determinado que funcionan con los juegos más comunes. Sin embargo, para los clientes que dispongan de un servidor dedicado Game, le ofrecemos la posibilidad de ir más lejos y configurar también las reglas para los puertos.
+>
+
+Para configurar las reglas de sus puertos en Armor, debe conectarse primero al área de cliente de OVHcloud.<br>
+A continuación, acceda al menú `Bare Metal Cloud`{.action} y haga clic en la sección `IP`{.action} de la columna izquierda. Haga clic en `..`{.action} junto a la dirección IP del servidor de juego y, seguidamente, en `Configurar el firewall «Game»`{.action}".
+
+![Game_wall](images/GAMEwall2021.png){.thumbnail}
+
+En la siguiente pantalla, haga clic en el botón `Añadir una regla`{.action} para añadir una regla a Armor.
+
+![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
+
+Active los puertos según sus necesidades en la siguiente pantalla y haga clic en el botón `Confirmar`{.action} cuando haya terminado de añadir las reglas. El firewall Armor se ha configurado correctamente.
+
 ## Más información
 
 Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.

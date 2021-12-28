@@ -41,7 +41,7 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud u
 > Network Firewall chroni adresy IP powiązane z serwerem.  Należy zatem skonfigurować reguły dla każdego adresu IP oddzielnie. Wprowadzenie wspólnej konfiguracji dla całego serwera nie jest możliwe.
 > 
 
-Po zalogowaniu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `IP`{.action} i kliknij `...`{.action}, aby aktywować zaporę na wybranym adresie IPv4.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action}, a następnie sekcję `IP`{.action} w dolnej części kolumny po lewej stronie. Kliknij `...`{.action}, aby aktywować zaporę na wybranym adresie IPv4.
 
 ![Aktywacja Network Firewall ](images/firewall_creation.png){.thumbnail}
 
@@ -110,7 +110,7 @@ Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez re
 > W chwili gdy włącza się ochrona Anty-DDoS, Twoje reguły zdefiniowane w usłudze Network Firewall zostaną uaktywnione, nawet jeśli je wyłączyłeś. W przypadku dezaktywacji firewalla, pamiętaj o usunięciu reguł.
 > 
 
-### Konfiguracja zapory sieciowej Armor (Firewall Game)
+### Konfiguracja zapory Armor (Firewall Game)
 
 > [!primary]
 > Domyślnie firewall Armor jest wstępnie skonfigurowany z niektórymi zasadami, które OVHcloud ustalił podczas uruchamiania najpopularniejszych gier. Jednak w przypadku klientów posiadających serwer dedykowany Game możemy pójść o krok dalej i skonfigurować reguły dla portów.

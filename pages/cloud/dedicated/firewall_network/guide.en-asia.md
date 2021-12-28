@@ -116,7 +116,7 @@ For example, a packet for TCP port 80 will be captured by rule 2 and the rules t
 >
 
 In order to configure rules for your ports in Armor, you will first need to log into the OVHcloud Control Panel.<br>
-Next, go to the `Bare Metal Cloud`{.action} and click on the `IP`{.action} section on the left-hand sidebar. Click on the `...`{.action} next to the IP address of your Game Server and click on `Configure the GAME firewall`{.action}.
+In the `Bare Metal Cloud`{.action} menu, click on the `IP`{.action} section on the left-hand sidebar. Click on the `...`{.action} next to the IP address of your Game Server and click on `Configure the GAME firewall`{.action}.
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 
@@ -128,7 +128,7 @@ Enable the ports as needed on the following screen and click on the `Confirm`{.a
 
 ### Conclusion
 
-Having read this tutorial, you should now be able to configure the Network Firewall as well as Armor to enhance the security of your OVHcloud services.
+Having read this tutorial, you should now be able to configure the Network Firewall as well as Armor (for Game dedicated servers) to enhance the security of your OVHcloud services.
 
 ## Go further
 
