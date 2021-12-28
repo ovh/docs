@@ -14,8 +14,8 @@ order: 2
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) of which you are an administrative contact (to receive login credentials)
-- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Have a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 
 ## Instructions
@@ -41,15 +41,8 @@ You will arrive at this interface:
 
 ![Connecting to vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
 
-The `Home`{.action} page provides accces to the main menus of your vCenter. You will be able to perform various actions, such as:
+The `Home`{.action} page provides accces to the main menus of your vCenter. 
 
-- deploying a virtual machine by going to `Hosts and Clusters`{.action}
-- browsing your datastores.
-
-> [!warning]
->
-> *NSX Edge* management is not yet available in the web client.
->
 
 ### Using the Flash web client
 
@@ -63,11 +56,7 @@ You can then access this interface:
 
 ![Connecting to the vSphere interface](images/connection_interface_w.png){.thumbnail}
 
-On the `Home`{.action} page you can find your vCenter main menus. You will be able to perform a number of actions, such as:
-
-- deploying a virtual machine by going to `Hosts and Clusters`{.action}
-- if you have this option, using NSX by going to `Networking & Security`{.action}
-- browsing your data stores.
+On the `Home`{.action} page you can find your vCenter main menus. 
 
 
 ## Go further
