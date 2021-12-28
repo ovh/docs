@@ -28,7 +28,7 @@ You want to migrate your email addresses on an Exchange platform to another Exch
 
 - a "**source**" platform with configured [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/){.external} accounts
 - a "**destination**" platform with [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/){.external} or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](https://www.ovh.co.uk/web-hosting/){.external}). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
@@ -94,7 +94,7 @@ To do this, select the Exchange service concerned in the services bar on the lef
 
 > [!primary]
 >
-> If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated when you go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+> If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated when you go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 >
 
 To modify the configuration, click on the red box and carry out the requested operation. It can take between 4 and a maximum of 24 hours for DNS changes to propagate fully.

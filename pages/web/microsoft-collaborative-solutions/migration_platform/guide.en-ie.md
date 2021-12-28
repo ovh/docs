@@ -75,7 +75,7 @@ In the `Email accounts`{.action} tab for your platform, click on the `...`{.acti
 
 Migrate the source email account to your new platform's account using our [OMM tool](https://omm.ovh.net/) (OVH Mail Migrator).
 
-For more information on OMM, please read our guide on [Migrating email accounts via the OVH Mail Migrator](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/).
+For more information on OMM, please read our guide on [Migrating email accounts via the OVH Mail Migrator](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_email_account_migration_-_ovh_mail_migrator/).
 
 ![email-migration](images/migration_platform06.png){.thumbnail}
 
