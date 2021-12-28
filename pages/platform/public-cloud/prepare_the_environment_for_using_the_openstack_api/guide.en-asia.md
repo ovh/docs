@@ -6,7 +6,7 @@ section: OpenStack
 order: 1
 ---
 
-**Last updated 15th December 2021**
+**Last updated December 22 2021**
 
 ## Objective
 
@@ -150,6 +150,38 @@ If the operation is completed properly, you will see a summary:
 You can check the installation version in the CMD (command line) window that has just opened, by entering ‘python-V’ from any system location.
 
 ![Checking](images/6_preparation_openstack_environment_windows.png){.thumbnail}
+
+### On MacOS
+
+You can use [HomeBrew](https://brew.sh), a package manager or MacOS.
+
+Open the terminal, and execute the following command:
+
+```bash
+brew install openstackclient
+```
+
+Use the command below to install the Nova client (compute application) and Swift:
+
+For Python2:
+
+```sh
+pip install python-novaclient
+pip install python-swiftclient
+```
+
+For Python3:
+```sh
+pip3 install python-novaclient
+pip3 install python-swiftclient
+```
+
+To access the help tools, run the following command:
+
+```sh
+openstack --help
+nova help
+```
 
 ## Go further
 
