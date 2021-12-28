@@ -28,7 +28,7 @@ Vous souhaitez migrer vos adresses e-mail présentes sur une plateforme Exchange
 
 - Disposer d'une plateforme **«source»** avec des comptes [Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}  configurés.
 - Disposer d'une plateforme de **«destination»** avec des comptes [Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external} ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVH](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}). Cette plateforme doit disposer de comptes non configurés ou disponibles pour accueillir les adresses e-mail qui doivent être migrées.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=fr){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
@@ -93,7 +93,7 @@ Pour cela, sélectionnez le service ou Exchange concerné dans la barre de servi
 
 > [!primary]
 >
-> Si vous venez juste de réaliser la migration ou de modifier un enregistrement DNS de votre domaine, il se peut que l’affichage dans l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=fr){.external} nécessite quelques heures pour se mettre à jour.
+> Si vous venez juste de réaliser la migration ou de modifier un enregistrement DNS de votre domaine, il se peut que l’affichage dans l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} nécessite quelques heures pour se mettre à jour.
 >
 
 Pour modifier la configuration, cliquez sur la pastille rouge et réalisez la manipulation demandée. Cette dernière nécessite un temps de propagation de 4 à 24 heures maximum avant d’être pleinement effective.
