@@ -4,7 +4,7 @@ slug: vmware-vsan
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/vmware-vsan/'
 excerpt: Use the power of Hyperconvergence with vSAN
-section: VMware vSphere features
+section: Funcionalidades de VMware vSphere
 ---
 
 **Last updated 21st December 2021**
