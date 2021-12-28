@@ -40,7 +40,7 @@ Using GPUs with Kubernetes allows you to extend the scalability of Kubernetes to
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
-You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
 ## Prerequisites
 
@@ -48,15 +48,17 @@ To get the best and most cost-effective benefit from GPUs on OVHcloud Managed Ku
 
 ![GPU Node Pool](images/gpu-node-pool.png){.thumbnail}
 
-The GPU operator, that you will install, should run on Kubernetes nodes that are equipped with GPUs.
+The GPU operator that you will install should run on Kubernetes nodes that are equipped with GPUs.
 
 So you need to create a node pool with `t1` flavor type.
 
 If you already have an OVHcloud Kubernetes cluster with a node pool with `t1` flavor type, you can skip the following `Autoscaling GPU Node Pool creation` step.
 
 > [!warning]
->GPU Virtual machines are extremely powerful and significantly more expensive than general purpose nodes. If you are usually using OVHcloud Public Cloud at small scale and/or are a new user, you may need to [raise your Public Cloud quota](https://docs.ovh.com/gb/en/public-cloud/increase-public-cloud-quota/) to enable access to those type of machines for your project. Also note that these machines are only available in some of our public cloud regions.
+>GPU Virtual machines are extremely powerful and significantly more expensive than general purpose nodes. If you are usually using OVHcloud Public Cloud at small scale and/or are a new user, you may need to [raise your Public Cloud quota](https://docs.ovh.com/gb/en/public-cloud/increase-public-cloud-quota/) to enable access to those type of machines for your project. Also note that these machines are only available in some of our Public Cloud regions.
 >
+
+## Instructions
 
 ### Autoscaling GPU Node Pool creation
 
@@ -66,26 +68,26 @@ Access the administration UI for your OVHcloud Managed Kubernetes clusters by cl
 
 ![Select your cluster](images/create-a-nodepool-1.png){.thumbnail}
 
-Click on your cluster, then on `Node pools`{.action} tab.
+Click on your cluster, then on the `Node pools`{.action} tab.
 
 We will create our special GPU Node Pool.
-Click on `Add a node pool`{.action} button.
+Click on `Add a node pool`{.action}.
 
 Then enter a name for your GPU node pool, `gpu-node-pool` for example.
 
 ![Name your GPU node pool](images/create-a-nodepool-2.png){.thumbnail}
 
-Select a flavor for your new node pool, click on `GPU`{.action} tab. you can choose "T1-45" for example.
+Select a flavor for your new node pool, then click on the `GPU`{.action} tab. You can choose "T1-45" for example.
 
 ![Select a flavor for your GPU node pool](images/create-a-nodepool-3.png){.thumbnail}
 
-In the next step, define the size of our GPU node pool.
+In the next step, define the size of your GPU node pool.
 You can enable the `Autoscaling`{.action} feature.
 Define the minimum and maximum pool size in that case, 3 in minimum and 10 in maximum, for example.
 
 ![Define a size and autoscaling for your GPU node pool](images/create-a-nodepool-4.png){.thumbnail}
 
-And then, choose `Hourly` billing mode for this GPU node pool.
+Then, choose `Hourly` billing mode for this GPU node pool.
 
 ![Billing mode](images/create-a-nodepool-5.png){.thumbnail}
 
@@ -99,8 +101,6 @@ kubectl get node --show-labels | grep "node.k8s.ovh/type=gpu"
 
 ![GPU nodes](images/create-a-nodepool-6.png){.thumbnail}
 
-## Instructions
-
 ### NVIDIA GPU Operator
 
 The [NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator) uses the [Operator Framework](https://github.com/operator-framework/getting-started) within Kubernetes to automate the management of all NVIDIA software components needed to provision GPU. These components include the NVIDIA drivers (to enable CUDA), Kubernetes device plugin for GPUs, the NVIDIA Container Runtime, automatic node labelling, DCGM based monitoring and others.
@@ -108,7 +108,6 @@ The [NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator) uses the [Oper
 ![NVIDIA GPU Kubernetes Operator](images/nvidia-gpu-operator.jpeg)
 
 If you are interested about the operator, feel free to read the [NVIDIA GPU operator official documentation](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/overview.html).
-
 
 ### Installing the NVIDIA GPU Operator Helm chart
 
@@ -121,7 +120,7 @@ helm repo add nvidia https://nvidia.github.io/gpu-operator
 helm repo update
 ```
 
-This will add you the NVIDIA repository and update all of your repositories: 
+This will add the NVIDIA repository and update all of your repositories: 
 
 <pre class="console"><code>$ helm repo add nvidia https://nvidia.github.io/gpu-operator
 helm repo update
@@ -239,7 +238,7 @@ cuda-vectoradd   0/1     ContainerCreating   0          4s
 cuda-vectoradd   0/1     Completed   0          35s
 </code></pre>
 
-When the `cuda-vectoradd` have started, runned and completed its task, watch the logs with the following command:
+When the `cuda-vectoradd` has started, run and completed its task, watch the logs with the following command:
 
 ```bash
 kubectl logs cuda-vectoradd -n default
@@ -254,7 +253,7 @@ Test PASSED
 Done
 </code></pre>
 
-Our first GPU workload are just started up and done its task in our OVHcloud Managed Kubernetes cluster. Easy!
+Our first GPU workload is just started up and has done its task in our OVHcloud Managed Kubernetes cluster.
 
 ### Running Load Test GPU Application
 
@@ -339,6 +338,6 @@ You can see your test load under `GPU-Util` (third column), along with other inf
 
 ## Go further
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](../).
 
 Join our [community of users](https://community.ovh.com/en/).
