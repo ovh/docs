@@ -35,7 +35,7 @@ In this tutorial, we are going to show you how to connect your OVHcloud Managed 
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../../../kubernetes/deploying-hello-world/).
 
-You need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../../../kubernetes/installing-helm/) tutorial.
+You need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../../../kubernetes/installing-helm/) tutorial.
 
 Finally, you need to be able to order a database solution in the OVHcloud Control Panel, as explained at [Getting started with Public Cloud Databases](../getting-started/).
 
@@ -45,7 +45,7 @@ Finally, you need to be able to order a database solution in the OVHcloud Contro
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
-Click on the button `Create a database instance`{.action}. (`Create a service`{.action} if your project already contains databases.)
+Click on the `Create a database instance`{.action} button. (`Create a service`{.action} if your project already contains databases.)
 
 ### Step 1: Select MySQL database
 
@@ -65,7 +65,7 @@ Click on `Next`{.action} to continue.
 
 ### Step 3: Select a location
 
-Choose the geographical region of the data centre in which your database will be hosted.
+Choose the geographical region of the data center in which your database will be hosted.
 
 ![Choose region](images/connect-kubernetes-to-managed-mysql03.png){.thumbnail}
 
@@ -73,7 +73,7 @@ Click on `Next`{.action} to continue.
 
 ### Step 4: Configure database nodes
 
-You can choose the node model in this step. The initial and maximum numbers of nodes depends on the solution chosen in step 2.
+You can choose the node model in this step. The initial and maximum numbers of nodes depends on the chosen solution in step 2.
 
 ![Order nodes](images/connect-kubernetes-to-managed-mysql04.png){.thumbnail}
 
@@ -87,54 +87,49 @@ You can name your database in this step.
 
 ![Configure options](images/connect-kubernetes-to-managed-mysql05.png){.thumbnail}
 
-### Connecting a private network (optional)
-
-For now, the solution is not compatible with private networks.
-
 ### Step 6: Summary and confirmation
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](../../../api/first-steps-with-ovh-api/).
+The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](../../../api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/connect-kubernetes-to-managed-mysql06.png){.thumbnail}
 
 Within a few minutes your new database service will be deployed. Messages in the OVHcloud Control Panel will inform you when the database is ready to use.
 
-You know your database is ready when cluster status is "Ready", node status is green, and number of users is set to "1 user".
+Your database is ready when cluster status is "Ready", node status is green, and number of users is set to "1 user".
 
-![Control Panel DB ok](images/connect-kubernetes-to-managed-mysql08.png){.thumbnail}
+![Green statuses on Database Control Panel](images/connect-kubernetes-to-managed-mysql08.png){.thumbnail}
 
 ## Whitelist your OVHcloud Managed Kubernetes cluster
 
 > [!warning]
 > For security reasons the default network configuration doesn't allow any incoming connections. 
 > To allow access from your OVHcloud Managed Kubernetes service to the database, cluster nodes IPs have to be whitelisted.
-> Adding kubernetes cluster nodes IPs to the whitelist is not recommended on production environnment, and must only be done for testing.
-> In the near future, we will write a guide on how using vrack, and how to interconnect your different managed services.
+> Adding Kubernetes cluster nodes IPs to the whitelist is not recommended on production environnment, and must only be done for testing.
+> Soon, we will write a guide on using vrack, and how to interconnect your various managed services.
 
-
-### Add kubernetes cluster nodes IPs to the DB whitelist
+### Add Kubernetes cluster nodes IPs to the DB whitelist
 
 Get your Kubernetes cluster nodes IP addresses from the Compute / Instances menu on the left.
 
-![Nodes IPs list](images/connect-kubernetes-to-managed-mysql09.png){.thumbnail}
+![Nodes IPs list on Instances Control Panel](images/connect-kubernetes-to-managed-mysql09.png){.thumbnail}
 
-Following the related documentation [whitelist the suitable IP addresses](../mongodb/managing-service/#configuring-authorised-ips), add your k8s cluster node IPs to the whitelist
+Following the related documentation [whitelist the suitable IP addresses](../mongodb/managing-service/#configuring-authorised-ips), add your Kubernetes cluster node IPs to the whitelist.
 
-![Db completed setup](images/connect-kubernetes-to-managed-mysql10.png){.thumbnail}
+![Green statuses and authorized IPs setted on Database Control Panel](images/connect-kubernetes-to-managed-mysql10.png){.thumbnail}
 
-## Test connection from k8s to MySQL db
+## Test connection from Kubernetes cluster to MySQL DataBase
 
-An easy and quick way to test the connection is to start a MySQL client inside a pod, and use the CLI to connect to the db.
+An easy and quick way to test the connection is to start a MySQL client inside a pod, and use the Command Line Interface (CLI) to connect to the db.
 
 ### Start a MySQL client inside a pod
 
-```
+```sh
 kubectl run mysql-client --image=mysql:8 -it --rm --restart=Never -- /bin/bash
 ```
-You are now inside the pod you just created on your cluster, you can simply use the MySQL CLI to connect to your manages MySQL database.
+You are now inside the pod you just created on your cluster, you can simply use the MySQL CLI to connect to your managed MySQL database.
 
-The parameters you need to know are :
-* the db Host, the db port
+The useful parameters are:
+* the db Host, the db Port
 
     Get them from the "General Information tab"
 * the db Name
@@ -145,13 +140,13 @@ The parameters you need to know are :
     Get it from the "Users" tab, usually "avnadmin"
 * the db Password
 
-    Get it after reset it.
+    Get it after you reset it.
 
 ![Password reseted](images/connect-kubernetes-to-managed-mysql11.png){.thumbnail}
 
-Now connect to the database with the command
+Now connect to the database with the following command
 
-```
+```sh
 mysql -uavnadmin -pxxxxxxxxxxxxxx -hmysql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net -P20184 defaultdb
 ```
 
@@ -181,7 +176,7 @@ For this tutorial we are using the [Wordpress Helm chart](https://github.com/bit
 
 As described on tutorial [Installing WordPress on OVHcloud Managed Kubernetes](../../../kubernetes/installing-wordpress/#installing-the-wordpress-helm-chart), remove the default storage class and install the new one.
 
-```
+```sh
 kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
 
 kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
@@ -189,17 +184,17 @@ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platfo
 
 ### Customizing your install
 
-By default, the Helm chart installs the Wordpress and a MariaDB on the K8s cluster. As you want to use your OVHcloud Managed MySQL, you need to customize the Helm installation by setting the URL, user and password of your database.
+By default, the Helm chart installs the Wordpress and a MariaDB on the Kubernetes cluster. As you want to use your OVHcloud Managed MySQL database, you need to customize the Helm installation by setting the URL, user and password of your database.
 
-In order to customize your install, without having to leave the simplicity of using helm and the Wordpress helm chart, you can simply set some of the [configurable parameters of the WordPress chart](https://github.com/helm/charts/tree/master/stable/wordpress#configuration){.external}. 
-Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`)
+In order to customize your install, without having to leave the simplicity of using Helm and the Wordpress Helm chart, you can simply set some of the [WordPress chart configurable parameters](https://github.com/helm/charts/tree/master/stable/wordpress#configuration){.external}.
+Then you can add it to your `helm install` command with the `--set` option (`--set param1=value1,param2=value2`)
 
-Options to set for accessing the Managed MySQL database are
+Options to set for accessing the Managed MySQL database are:
 ```
 mariadb.enabled=false
-externalDatabase.host=mysql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net
+externalDatabase.host=mysql-abcdefgh-ijklmnopq.database.cloud.ovh.net
 externalDatabase.user=avnadmin
-externalDatabase.password=xxxxxxxxx
+externalDatabase.password=mYStrongPasswOrdHere
 externalDatabase.database=defaultdb
 externalDatabase.port=20184
 ```
@@ -207,7 +202,7 @@ externalDatabase.port=20184
 This will install the needed elements (a Wordpress pod for the webserver with the Worpdress PHP code),
 allocate the persistent volumes and initialize the services. And at the end, it will give you the connection parameters for your new Wordpress:
 
-<pre class="console"><code>$ helm install my-wordpress bitnami/wordpress --set allowOverrideNone=true,mariadb.enabled=false,externalDatabase.host=mysql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net,externalDatabase.user=avnadmin,externalDatabase.password=xxxxxxxxx,externalDatabase.database=defaultdb,externalDatabase.port=20184
+<pre class="console"><code>$ helm install my-wordpress bitnami/wordpress --set allowOverrideNone=true,mariadb.enabled=false,externalDatabase.host=mysql-abcdefgh-ijklmnopq.database.cloud.ovh.net,externalDatabase.user=avnadmin,externalDatabase.password=mYStrongPasswOrdHere,externalDatabase.database=defaultdb,externalDatabase.port=20184
 NAME: my-wordpress
 LAST DEPLOYED: Thu Dec 23 15:49:33 2021
 NAMESPACE: default
@@ -246,12 +241,12 @@ To access your WordPress site from outside the cluster follow the steps below:
 </code></pre>
 
 > [!Warning]
-> Be sure your MySQL database defaultdb is clean before executing the helm install command. If a previous installation is detected, parameters like user and password won't be updated, so the k8s configuration will mismatch with the database one.
+> Make sure your MySQL defaultdb database is clean before running the helm install command. If a previous installation is detected, settings such as user and password will not be updated, so the configuration inside of the Kubernetes cluster will not match that of the database.
 
 As the instructions say, you will need to wait a few moments to get the `LoadBalancer` URL.
 You can test if the `LoadBalancer` is ready using:
 
-```
+```sh
 kubectl get svc --namespace default -w my-wordpress
 ```
 
@@ -273,9 +268,9 @@ WordPress Admin URL: http://135.125.83.116/admin
 
 And putting the URL in your browser will take you to the new blog:
 
-![Installing Wordpress](images/connect-kubernetes-to-managed-mysql12.png){.thumbnail}
+![Wordpress login screen](images/connect-kubernetes-to-managed-mysql12.png){.thumbnail}
 
-You also use the instructions given by the helm install to get the default username and password for your blog.
+You can also use the instructions given by the `helm install` command to get the default username and password for your blog.
 
 <pre class="console"><code>$ echo Username: user
 Username: user
@@ -283,7 +278,7 @@ $ echo Password: $(kubectl get secret --namespace default my-wordpress -o jsonpa
 Password: GSPSIXwGok
 </code></pre>
 
-![Installing Wordpress](images/connect-kubernetes-to-managed-mysql13.png){.thumbnail}
+![Wordpress admin dashboard](images/connect-kubernetes-to-managed-mysql13.png){.thumbnail}
 
 You have a working Wordpress on your OVHcloud Managed Kubernetes Service, storing datas on your OVHcloud Managed MySQL, congratulations!
 
@@ -291,8 +286,8 @@ You have a working Wordpress on your OVHcloud Managed Kubernetes Service, storin
 
 To clean up your cluster, simply use Helm to delete your Wordpress blog.
 
-```bash
-helm delete my-wordpress
+```sh
+helm uninstall my-wordpress
 ```
 
 It will delete your Wordpress and its associated resources from your cluster:
