@@ -6,7 +6,7 @@ section: OpenStack
 order: 1
 ---
 
-**Last updated December 22 2021**
+**Last updated 22nd December 2021**
 
 ## Objective
 
@@ -24,7 +24,7 @@ With the OpenStack API, you can automate your management by generating scripts. 
 
 ### On Debian
 
-Open the terminal, and connect to the environment you want to prepare via SSH.
+Open the terminal and connect to the environment you want to prepare via SSH.
 
 Update the packet cache using the `apt-get update` command:
 
@@ -60,7 +60,7 @@ nova help
 
 ### On CentOS
 
-Open the terminal, and connect to the environment you want to prepare via SSH.
+Open the terminal and connect to the environment you want to prepare via SSH.
 
 Update the packet cache using the following command:
 
@@ -153,9 +153,9 @@ You can check the installation version in the CMD (command line) window that has
 
 ### On MacOS
 
-You can use [HomeBrew](https://brew.sh), a package manager or MacOS.
+You can use [HomeBrew](https://brew.sh), a package manager for MacOS.
 
-Open the terminal, and execute the following command:
+Open the terminal and execute the following command:
 
 ```bash
 brew install openstackclient
@@ -171,6 +171,7 @@ pip install python-swiftclient
 ```
 
 For Python3:
+
 ```sh
 pip3 install python-novaclient
 pip3 install python-swiftclient

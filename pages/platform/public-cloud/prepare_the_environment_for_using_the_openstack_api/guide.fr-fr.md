@@ -154,9 +154,9 @@ Vous pouvez vérifier la version d'installation dans la fenêtre CMD (ligne de c
 
 ### Sous MacOS
 
-Vous pouvez utiliser [HomeBrew](https://brew.sh), c'est un gestionnaire de packet pour MacOS.
+Vous pouvez utiliser [HomeBrew](https://brew.sh), un gestionnaire de paquets pour MacOS.
 
-Ouvrez le terminal et taper la commande suivante :
+Ouvrez le terminal et entrez la commande suivante :
 
 ```bash
 brew install openstackclient
@@ -172,6 +172,7 @@ pip install python-swiftclient
 ```
 
 Pour Python3 :
+
 ```sh
 pip3 install python-novaclient
 pip3 install python-swiftclient
