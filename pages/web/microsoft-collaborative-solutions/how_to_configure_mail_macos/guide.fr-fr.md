@@ -10,7 +10,7 @@ order: 3
 
 ## Objectif
 
-Les comptes Exchange peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. L'application Mail sur macOS est disponible gratuitement sur tout les Mac.
+Les comptes Exchange peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. L'application Mail sur macOS est disponible gratuitement sur tous les Mac.
 
 **Découvrez comment configurer votre adresse e-mail Exchange sur Mail de macOS.**
 
@@ -31,16 +31,17 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 ### Ajouter le compte
 
-- **Lors du premier démarrage de l'application** : Un assistant de configuration s'affiche directement et vous invite à choisir votre type de compte.
+- **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche directement et vous invite à choisir votre type de compte.
 
-- **Si un compte a déjà été paramétré** : Cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Comptes`{.action}.
+- **Si un compte a déjà été paramétré** : cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Comptes`{.action}.
 
 | | |
 |---|---|
 |![mailmac](images/mail-mac-exchange01.png){.thumbnail}|Sélectionnez `Exchange`{.action}|
 |Saisissez le **Nom** de votre compte e-mail et votre **Adresse e-mail**, puis cliquez sur `Se connecter`{.action}|![mailmac](images/mail-mac-exchange02.png){.thumbnail}|
-|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|Sur la fenêtre suivante, cliquez sur `Cofiguration manuelle`{.action} : <br>- Définissez le **Nom** qui s'affichera dans l'interface de naivagation <br>- laissez votre **adresse e-mail**<br>- Laissez votre **Mot de passe** déjà saisie <br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action}|
-|En plus de vos e-mails, vous pouvez sélectionnez d'autres fonctionnalités Exchange que vous souhaitez gérer depuis mac.|![mailmac](images/mail-mac-exchange04.png){.thumbnail}|
+|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|Dans la fenêtre suivante, cliquez sur `Cofiguration manuelle`{.action} : <br>- Définissez le **Nom** qui s'affichera dans l'interface de navigation <br>- Laissez votre **adresse e-mail**<br>- Laissez votre **Mot de passe** déjà saisi <br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action}|
+|En plus de vos e-mails, vous pouvez sélectionner d'autres fonctionnalités Exchange que vous souhaitez gérer depuis l'application Mail.|![mailmac](images/mail-mac-exchange04.png){.thumbnail}|
+
 ### Utiliser l'adresse e-mail
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.

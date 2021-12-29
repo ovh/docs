@@ -10,7 +10,7 @@ order: 3
 
 ## Objectif
 
-Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. L'application Mail sur macOS est disponible gratuitement sur tout les Mac.
+Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. L'application Mail sur macOS est disponible gratuitement sur tous les Mac.
 
 **Découvrez comment configurer votre adresse E-mail Pro sur Mail de macOS.**
 
@@ -39,15 +39,15 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ### Ajouter le compte
 
-- **Lors du premier démarrage de l'application** : Un assistant de configuration s'affiche directement et vous invite à choisir votre type de compte.
+- **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche directement et vous invite à choisir votre type de compte.
 
-- **Si un compte a déjà été paramétré** : Cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Comptes`{.action}.
+- **Si un compte a déjà été paramétré** : cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Comptes`{.action}.
 
 | | |
 |---|---|
 |![mailmac](images/mail-mac-emailpro01.png){.thumbnail}|Sélectionnez `Autre compte Mail`{.action} puis cliquez sur `Compte Mail`{.action}.|
-|Saisissez dans la fenêtre **Ajouter un compte Mail** les informations suivantes: <br>- le **Nom** de votre compte e-mail <br>- Votre **Adresse e-mail** <br>- Le **Mot de passe** de votre adresse e-mail |![mailmac](images/mail-mac-emailpro02.png){.thumbnail}|
-|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Sur la fenêtre suivante complétez les informations suivantes: <br>- Laissez votre **Adresse e-mail** déjà saissie <br>- Saisissez votre adresse e-mail complète dans **Nom d'utilisateur** <br>- Laissez votre **Mot de passe** déjà saisie <br>- Sélectionnez `POP` ou `IMAP`(recommandé) dans **Type de compte**<br>- Saisissez `pro**?**.mail.ovh.net` dans **Serveur de réception** (remplacez bien «**?**» par le numéro de votre serveur)<br>-Saisissez également `pro**?**.mail.ovh.net` dans **Serveur d'envoi** (remplacez bien «**?**» par le numéro de votre serveur)<br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action}|
+|Saisissez, dans la fenêtre « **Ajouter un compte Mail** », les informations suivantes : <br>- le **Nom** de votre compte e-mail <br>- Votre **Adresse e-mail** <br>- Le **Mot de passe** de votre adresse e-mail |![mailmac](images/mail-mac-emailpro02.png){.thumbnail}|
+|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Dans la fenêtre suivante, complétez les informations : <br>- Laissez votre **Adresse e-mail** déjà saisie <br>- Saisissez votre adresse e-mail complète dans **Nom d'utilisateur** <br>- Laissez votre **Mot de passe** déjà saisi <br>- Sélectionnez `POP` ou `IMAP`(recommandé) dans **Type de compte**<br>- Saisissez `pro**?**.mail.ovh.net` dans **Serveur de réception** (remplacez bien «**?**» par le numéro de votre serveur)<br>-Saisissez également `pro**?**.mail.ovh.net` dans **Serveur d'envoi** (remplacez bien «**?**» par le numéro de votre serveur)<br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action}|
 
 ### Utiliser l'adresse e-mail
 
