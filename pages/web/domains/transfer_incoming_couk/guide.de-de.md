@@ -1,7 +1,7 @@
 ---
 title: 'Transfer einer .uk-Domain zu OVHcloud'
 legacy_guide_number: 2026
-slug: web_hosting_how_to_transfer_a_couk_domain_name
+slug: webhosting_anleitung_zum_transfer_einer_couk_domain
 excerpt: 'In dieser Anleitung finden Sie verschiedene Informationen zum Transfer einer .uk-Domain oder einer ähnlichen Domain zu OVHcloud'
 section: Transfer
 order: 4
