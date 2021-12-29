@@ -64,7 +64,7 @@ Here is a comparative matrix:
 | PostgreSQL available versions          | PostgreSQL 9.6, 10, 11           | PostgreSQL 10, 11, 12, 13, 14 |
 | Infrastructure platform                | Baremetal servers                | Public Cloud virtual machines |
 | Dedicated resources                    | Yes                              | Yes                           |
-| High Availability (clustering)         | Yes. minimum 3 nodes             | Yes. minimum 3 nodes          |
+| High Availability (clustering)         | Yes. minimum 3 nodes             | Yes. minimum 2 nodes          |
 | Automatic daily backups                | Yes                              | Yes                           |
 | Observability tools (metrics and logs) | Partially                        | Yes                           |
 | Public network                         | Yes                              | Yes                           |

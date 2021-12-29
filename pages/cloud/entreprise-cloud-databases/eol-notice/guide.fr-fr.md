@@ -58,13 +58,13 @@ Une documentation complète est disponible sur <https://docs.ovh.com/gb/en/publi
 
 Voici une matrice comparative :
 
-| Feature                                | Enterprise Cloud Databases (EOL) | Public Cloud Databases (new)  |
+| Fonctionnalité                                | Enterprise Cloud Databases (EOL) | Public Cloud Databases (nouveau)  |
 |----------------------------------------|----------------------------------|-------------------------------|
 | Services managés | Oui | Oui |
 | Versions disponibles de PostgreSQL | PostgreSQL 9.6, 10, 11 | PostgreSQL 10, 11, 12, 13, 14 |
 | Plateforme d'infrastructure | Serveurs Baremetal | Machines virtuelles Public Cloud |
 | Ressources dédiées | Oui | Oui |
-| Haute disponibilité (clustering) | Oui. minimum 3 nodes | Oui. minimum 3 nodes |
+| Haute disponibilité (clustering) | Oui. minimum 3 nodes | Oui. minimum 2 nodes |
 | Sauvegardes automatiques quotidiennes | Oui | Oui |
 | Outils d’observabilité (métriques et logs) | Partiellement | Oui |
 | Réseau public | Oui | Oui |
