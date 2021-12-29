@@ -38,9 +38,9 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 | | |
 |---|---|
 |![mailmac](images/mail-mac-exchange01.png){.thumbnail}|Sélectionnez `Exchange`{.action}|
-|- Saisissez le **Nom** de votre compte e-mail et votre **Adresse e-mail**, puis cliquez sur `Se connecter`{.action}<br>- Le **Mot de passe** de votre adresse e-mail |![mailmac](images/mail-mac-exchange02.png){.thumbnail}|
-|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|Sur la fenêtre suivante, cliquez sur `Cofiguration manuelle`{.action}<br>- Définissez le **Nom** qui s'affichera dans l'interface de naivagation <br>- laissez votre **adresse e-mail**<br>- Laissez votre **Mot de passe** déjà saisie <br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action}|
-|En plus de vos e-mail, vous pouvez sélectionnez les autres fonctionnalités Exchange que vous souhaitez gérer depuis mac.|![mailmac](images/mail-mac-exchange04.png){.thumbnail}|
+|Saisissez le **Nom** de votre compte e-mail et votre **Adresse e-mail**, puis cliquez sur `Se connecter`{.action}|![mailmac](images/mail-mac-exchange02.png){.thumbnail}|
+|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|Sur la fenêtre suivante, cliquez sur `Cofiguration manuelle`{.action} : <br>- Définissez le **Nom** qui s'affichera dans l'interface de naivagation <br>- laissez votre **adresse e-mail**<br>- Laissez votre **Mot de passe** déjà saisie <br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action}|
+|En plus de vos e-mails, vous pouvez sélectionnez d'autres fonctionnalités Exchange que vous souhaitez gérer depuis mac.|![mailmac](images/mail-mac-exchange04.png){.thumbnail}|
 ### Utiliser l'adresse e-mail
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
@@ -49,14 +49,14 @@ OVHcloud propose aussi une application web permettant d'accéder à votre adress
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
-Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **mailmac** » de notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter_1).
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Mail sur Mac OS** » de notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter_1).
 
 ### Modifier les paramètres existants
 
 Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
 
- Cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Préférences`{.action}.
-- Sélectionez le compte concerné dans la colonne de gauche puis cliquez sur `Réglages du serveur`{.action}.
+- Cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Préférences`{.action}.
+- Sélectionez le compte concerné dans la colonne de gauche, puis cliquez sur `Réglages du serveur`{.action}.
 
 ![mailmac](images/mail-mac-exchange05.png){.thumbnail}
 

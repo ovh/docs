@@ -47,7 +47,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 |---|---|
 |![mailmac](images/mail-mac-emailpro01.png){.thumbnail}|Sélectionnez `Autre compte Mail`{.action} puis cliquez sur `Compte Mail`{.action}.|
 |Saisissez dans la fenêtre **Ajouter un compte Mail** les informations suivantes: <br>- le **Nom** de votre compte e-mail <br>- Votre **Adresse e-mail** <br>- Le **Mot de passe** de votre adresse e-mail |![mailmac](images/mail-mac-emailpro02.png){.thumbnail}|
-|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Sur la fenêtre suivante complétez les informations : <br>- Laissez votre **Adresse e-mail** déjà saissie <br>- Saisissez votre adresse e-mail complète dans **Nom d'utilisateur** <br>- Laissez votre **Mot de passe** déjà saisie <br>- Sélectionnez `POP` ou `IMAP`(recommandé) dans **Type de compte**<br>- Saisissez `pro**?**.mail.ovh.net`dans **Serveur de réception** (remplacez bien «**?**» par le numéro de votre serveur)<br>-Saisissez également `pro**?**.mail.ovh.net`dans **Serveur d'envoi**(remplacez bien «**?**» par le numéro de votre serveur)<br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action}|
+|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Sur la fenêtre suivante complétez les informations suivantes: <br>- Laissez votre **Adresse e-mail** déjà saissie <br>- Saisissez votre adresse e-mail complète dans **Nom d'utilisateur** <br>- Laissez votre **Mot de passe** déjà saisie <br>- Sélectionnez `POP` ou `IMAP`(recommandé) dans **Type de compte**<br>- Saisissez `pro**?**.mail.ovh.net` dans **Serveur de réception** (remplacez bien «**?**» par le numéro de votre serveur)<br>-Saisissez également `pro**?**.mail.ovh.net` dans **Serveur d'envoi** (remplacez bien «**?**» par le numéro de votre serveur)<br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action}|
 
 ### Utiliser l'adresse e-mail
 
@@ -57,16 +57,14 @@ OVHcloud propose aussi une application web permettant d'accéder à votre adress
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
-Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **mailmac** » de notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter_1).
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Mail sur Mac OS** » de notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter_1).
 
 ### Modifier les paramètres existants
 
 Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
 
-- Cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Comptes`{.action}.
-- Sélectionez le compte concerné dans la colonne de gauche puis cliquez sur `Avancé`{.action}.
-- Dans le cadre **Nom d'hôte**, vérifiez que celui-ci est conforme ou modifiez-le.
-- Cliquez sur `OK`{.action} pour valider.
+- Cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Préférences`{.action}.
+- Sélectionez le compte concerné dans la colonne de gauche, puis cliquez sur `Réglages du serveur`{.action}.
 
 ![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
 
