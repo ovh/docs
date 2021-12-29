@@ -1,7 +1,7 @@
 ---
-title: Analytics Data Platform - End-Of-Support notice
-excerpt: Details on the End-Of-Support of Analytics Data Platform
-slug: analytics-data-platform-end-of-support
+title: Analytics Data Platform - End-Of-Life notice
+excerpt: Details on the End-Of-Life of Analytics Data Platform
+slug: analytics-data-platform-eol
 section: Announcements
 order: 01
 ---
@@ -10,12 +10,12 @@ order: 01
 
 ## Summary
 
-OVHcloud has announced the end of support of its Analytics Data Platform solution (preinstalled Apache Hadoop Big Data Clusters).<br>
+OVHcloud has announced the end of life of its Analytics Data Platform solution (preinstalled Apache Hadoop Big Data Clusters).<br>
 Active services can be kept by customers but will no longer be supported after February 1st 2022, end of support date.<br>
 
 You can track the operation using this [status task](https://public-cloud.status-ovhcloud.com/incidents/kdkvvxjw5m9d).
 
-## End of Support Planning
+## End of Life Planning
 
 Affected customers with active Analytics Data Platform services have received an email notification on their technical and billing OVHcloud accounts.
 
@@ -30,8 +30,8 @@ Affected customers with active Analytics Data Platform services have received an
 
 ![Timeline](images/timeline.png){.thumbnail}
 
-## End of support scope
+## End of life scope
 
-This end-of-support includes:
+This end-of-life includes:
 
 - All Analytics Data Platforms public offers, worldwide.
