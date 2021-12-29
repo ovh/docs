@@ -67,10 +67,13 @@ swift stat <container>
 
 ### CORS Metadata Definition
 
-> [!primary]  
+CORS specifies a wildcard character *, which permits access to all user agents, regardless of domain, protocol, or host. While there are valid use cases for this approach, it also permits a malicious actor to create a convincing facsimile of a user interface, and trick users into revealing authentication credentials. Please carefully evaluate your use case and the relevant documentation for any risk to your organization.
+
+
+> [!primary]
 >
-> The use of wildcards is authorised but not recommended: `http://*.example.com`
->
+> The CORS specification does not support using this wildcard as a part of a URI. Setting allowed_origin to * would work, while *.example.com would not.
+> 
 
 > [!warning]  
 >

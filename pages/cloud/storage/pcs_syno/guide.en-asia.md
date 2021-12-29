@@ -21,6 +21,11 @@ This is compatible with OVH Public Cloud Object Storage and lets you back up you
 
 ## DiskStation Manager 6.0 configuration
 
+> [!warning]
+>
+> Synology solutions such as DiskStation or Hyperbackup are not compatible with the Public Cloud Archive
+>
+
 ### Retrieve your OpenStack credentials
 To sync your NAS Synology, you need your OpenStack credentials.
 

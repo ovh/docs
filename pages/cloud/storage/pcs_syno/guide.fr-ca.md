@@ -22,6 +22,11 @@ Celui ci est compatible avec l'Object Storage du Public Cloud OVH et vous permet
 
 ## Configuration de DiskStation Manager 6.0
 
+> [!warning]
+>
+> Les solutions Synology telles que DiskStation ou Hyperbackup ne sont pas compatible avec l'offre Public Cloud Archive
+>
+
 ### Recuperation de vos identifiants Openstack
 Afin de configurer la synchronisation de votre NAS Synology, vous devez être en possession des identifiants de votre utilisateur OpenStack.
 
