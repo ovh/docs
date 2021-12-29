@@ -142,7 +142,7 @@ Wybierz, lub nie, dodatkowe opcje opisane poniżej, a następnie kliknij `Zatwie
 
 ![cloud databases - bazy danych na instancji](images/clouddb-add-import-step3.png){.thumbnail} 
 
-### Autoryzacja adresu IP
+### Autoryzacja adresu IP <a name="trustip"></a>
 
 Aby uzyskać dostęp do instancji CloudDB, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.  Aby to zrobić, przejdź do zakładki `Autoryzowane adresy IP`{.action}, następnie kliknij `Dodaj adres IP/maskę`{.action}.
 
@@ -172,6 +172,30 @@ Aby pomyślnie zakończyć tę operację, potrzebne Ci będą następujące info
 >
 
 ![cloud databases - bazy danych na instancji](images/clouddb-login-information.png){.thumbnail}
+
+### Pobierz logi Twojego serwera CloudDB
+
+Aby sprawdzić najnowsze logi bazy danych, przejdź do zakładki `Logs`{.action} Twojego serwera CloudDB. W zakładce wyświetlają się alerty i błędy w czasie rzeczywistym.
+
+![clouddb](images/clouddb-log01.png){.thumbnail}
+
+Aby pobrać wszystkie logi Twojego serwera CloudDB, zaloguj się przez SFTP do tego serwera.
+
+> [!warning]
+>
+> Przed zalogowaniem upewnij się, że adres IP poczty, której używasz jest poprawnie autoryzowany na serwerze CloudDB z opcją `SFTP` zaznaczoną. Skorzystaj z sekcji [Zezwalaj na logowanie do hostingu OVHcloud](#turstip) w tym przewodniku.
+
+Dane do logowania SFTP znajdziesz w zakładce `Informacje ogólne`{.action} Twojego serwera CloudDB. Jeśli nie znasz `hasła do serwera`, kliknij przycisk `...`{.action} po prawej stronie, aby go zmienić.
+
+![clouddb](images/clouddb-log02.png){.thumbnail}
+
+Zaloguj się za pośrednictwem klienta FTP (FileZilla, Cyberduck, WinSCP, itp.).
+
+W przypadku FileZilla w menu `Plik`{.action} przejdź do `Zarządzanie stronami`{.action}. Kliknij przycisk `Nowa strona`{.action}, po czym wprowadź wcześniej ustawienia.
+
+![clouddb](images/clouddb-log03.png){.thumbnail}
+
+Plik logów zatytułowany `stdout.log` znajduje się w katalogu głównym.
 
 ## Sprawdź również
 

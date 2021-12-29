@@ -147,7 +147,7 @@ Wenn Sie möchten, können Sie nun die nachstehenden Zusatzoptionen auswählen. 
 
 ![clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
-### IP-Adresse autorisieren
+### IP-Adresse autorisieren <a name="trustip"></a>
 
 Damit auf Ihre CloudDB Instanz zugegriffen werden kann, müssen zunächst die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit dieser verbinden dürfen. Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
 
@@ -177,6 +177,30 @@ Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden k
 >
 
 ![clouddb](images/clouddb-login-information.png){.thumbnail}
+
+### Die Logs Ihres CloudDB Servers abrufen
+
+Um die neuesten Logs Ihrer Datenbank zu überprüfen, gehen Sie auf den Tab `Logs`{.action} Ihres CloudDB Servers. Dieser Tab zeigt in Echtzeit Alarme und Fehler an.
+
+![clouddb](images/clouddb-log01.png) {.thumbnail}
+
+Um alle Logs Ihres CloudDB Servers abzurufen, loggen Sie sich via SFTP mit diesem ein.
+
+> [!warning]
+>
+> Bevor Sie sich verbinden, überprüfen Sie, ob die IP-Adresse des von Ihnen genutzten Telefons auf Ihrem CloudDB Server mit der angekreuzten Option "SFTP`"erlaubt ist. Lesen Sie die Anleitung [Die Verbindung zu einem OVHcloud Webhosting erlauben](#turstip).
+
+Die SFTP-Verbindungsinformationen finden Sie im Tab `Allgemeine Informationen`{.action} Ihres CloudDB Servers. Wenn Sie das `Passwort des Servers` nicht kennen, klicken Sie auf die Schaltfläche Kfz `...`{.action} rechts, um ihn zu bearbeiten.
+
+![clouddb](images/clouddb-log02.png) {.thumbnail}
+
+Verbinden Sie sich über einen FTP-Client (FileZilla, Cyberduck, WinSCP...).
+
+Für FileZilla gehen Sie im Menü `Datei`{.action} auf den Bereich `Site Manager`{.action}. Klicken Sie auf `Neue Website`{.action} und geben Sie die oben aufgeführten Einstellungen ein.
+
+![clouddb](images/clouddb-log03.png) {.thumbnail}
+
+Die Log-Datei mit dem Namen stknoten `stdout.log` befindet sich am Wurzelverzeichnis.
 
 ## Weiterführende Informationen
 
