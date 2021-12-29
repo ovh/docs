@@ -111,7 +111,7 @@ Par exemple, un paquet pour le port 80/TCP sera capturé par la règle 2 et les 
 > Par défaut, le pare-feu Armor est préconfiguré avec certaines règles qu'OVHcloud a déterminé fonctionner avec les jeux les plus courants. Cependant, pour les clients disposant d’un serveur dédié Game, nous vous permettons d’aller plus loin et de configurer également des règles pour les ports.
 >
 
-Afin de configurer les règles de vos ports en Armor, vous devez d'abord vous connecter à votre espace client OVHcloud.<br>
+Afin de configurer les règles de vos ports sur Armor, vous devez d'abord vous connecter à votre espace client OVHcloud.<br>
 Ensuite, rendez-vous dans le menu `Bare Metal Cloud`{.action} et cliquez sur la section `IP`{.action} dans la barre latérale de gauche. Cliquez sur `...`{.action} à côté de l'adresse IP de votre serveur de jeu puis sur `Configurer le firewall game`{.action}.
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}

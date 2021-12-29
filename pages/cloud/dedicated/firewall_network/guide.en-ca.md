@@ -121,7 +121,7 @@ In the `Bare Metal Cloud`{.action} menu, click on the `IP`{.action} section on t
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 
-On the following screen, click the `Add a rule`{.action}. button to add a rule to Armor.
+On the following screen, click the `Add a rule`{.action} button to add a rule to Armor.
 
 ![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
 
