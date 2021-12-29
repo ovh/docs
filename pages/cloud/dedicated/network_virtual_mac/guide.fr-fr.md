@@ -9,7 +9,7 @@ section: 'Réseau & IP'
 
 ## Objectif
 
-OVH vous permet d’associer une adresse MAC virtuelle à une adresse IP, afin de pouvoir mettre en place des machines virtuelles avec une configuration bridge sur votre serveur.
+OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, afin de pouvoir mettre en place des machines virtuelles avec une configuration bridge sur votre serveur.
 
 **Ce guide vous explique comment créer une adresse MAC virtuelle et comment l’associer à une adresse IP fail-over.**
 
