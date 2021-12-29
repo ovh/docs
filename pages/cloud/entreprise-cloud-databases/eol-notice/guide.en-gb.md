@@ -15,8 +15,7 @@ OVHcloud has announced the end of its Enterprise Cloud Databases solution (manag
 Active services will be supported until June 13th 2022, when support ends.
 All operations can be tracked via [the official status task](https://public-cloud.status-ovhcloud.com/incidents/961szlvn03b1).
 
-New managed databases offers are available, see the **Workarounds** section.
-
+New managed databases offers are available, see the [workaround](#workaround) section of this guide.
 
 ## End of Life Planning
 
@@ -45,17 +44,12 @@ This End of Life involves:
 - All Enterprise Cloud databases services and solutions (free or paid) worldwide. 
 - OVHcloud /cloudDB/enterprise/* API endpoints
 
-These offers relates to:
-French website: <https://www.ovhcloud.com/fr/enterprise/products/enterprise-cloud-databases/>.
-English website: <https://www.ovhcloud.com/en-ie/enterprise/products/enterprise-cloud-databases/>.
-
-
 This end of life **does not concern**:
 
 - Web Hosting Databases;
 - Public Cloud Databases.
 
-## Workaround
+## Workaround <a name="workaround"></a>
 
 OVHcloud does have alternatives to migrate.
 In our Public Cloud universe, we provide Managed PostgreSQL clusters compatible with your services.
@@ -89,7 +83,7 @@ Discover the Public Cloud offers and prices:
 
 There is no automatic migration option so far.
 
-You can migrate to other PostgreSQL services with native PostgreSQL commund, such as **pg_dump** and **pg_restore**.
+You can migrate to other PostgreSQL services with native PostgreSQL commands, such as **pg_dump** and **pg_restore**.
 
 Specific guides are under redaction for a step by step process. We will link them here and on official Public Cloud Databases documentation.
 
