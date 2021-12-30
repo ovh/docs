@@ -5,7 +5,7 @@ excerpt: 'Find out how to get started with the CloudDB service'
 section: 'Getting started'
 ---
 
-**Last updated 24th April 2020**
+**Last updated 30th December 2021**
 
 ## Objective
 
@@ -142,7 +142,7 @@ Finally, choose whether or not the additional options set out below should apply
 
 ![clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
-### Authorise an IP address
+### Authorise an IP address <a name="trustip"></a>
 
 In order for your CloudDB instance to be accessible, you must enter the IP addresses or ranges that can connect to your database. To do this, click on the `Authorised IPs`{.action} tab, then click `Add an IP address/mask`{.action}.
 
@@ -189,6 +189,30 @@ No matter which method you choose to follow, you must have the following five pi
 >
 
 ![clouddb](images/clouddb-login-information.png){.thumbnail}
+
+### Retrieve your CloudDB server logs
+
+To check your database’s latest logs, go to the `Logs`{.action} tab of your CloudDB server. This tab displays alerts and errors in real time.
+
+![clouddb](images/clouddb-log01.png){.thumbnail}
+
+To retrieve all logs for your CloudDB server, log in via SFTP on it.
+
+> [!warning]
+>
+> Before logging in, check that the IP address of the workstation you are using is authorised on your CloudDB server, with the `SFTP` option ticked. Use the [Authorise connection to an OVHcloud web hosting plan](#trustip) section of this guide.
+
+You can find the SFTP login details in the `General information`{.action} tab of your CloudDB server. If you do not know the `Server password`, click the `...`{.action} button on the right to modify it.
+
+![clouddb](images/clouddb-log02.png){.thumbnail}
+
+Log in via an FTP client (FileZilla, Cyberduck, WinSCP, etc.).
+
+For FileZilla, in the `File`{.action} menu, go to the `Site Manager`{.action}. Click `New Site`{.action}, and enter the settings you have listed.
+
+![clouddb](images/clouddb-log03.png){.thumbnail}
+
+The log file, named `stdout.log`, is located at the root.
 
 ## Go further
 
