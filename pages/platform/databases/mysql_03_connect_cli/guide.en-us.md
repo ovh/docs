@@ -2,7 +2,7 @@
 title: MySQL - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for MySQL using the Command Line Interface (CLI)
 slug: mysql/connect-cli
-section: MySQL
+section: MySQL - Guides
 order: 100
 ---
 
