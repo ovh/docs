@@ -7,7 +7,7 @@ section: OVHcloud Features
 order: 01
 ---
 
-**Last updated 17th August 2020**
+**Last updated 30th December 2021**
 
 ## Objective
 
@@ -17,8 +17,9 @@ IP blocks can be used to make your services accessible online.
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
-* a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external} on your OVHcloud account
+- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Have a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+
 
 ## Instructions
 
@@ -57,7 +58,7 @@ You will need to fill in several fields in order to create your IP block.
 
 > [!success]
 >
-> The setup fee for an IP block is £1.70 ex. VAT/IP.  This means that for a `/28` block that includes 16 IPs, you will pay £27.20 before delivery.
+> There is a one time setup fee for an IP block that will be due before delivery.
 >  
 > IP address renewal is free of charge.
 >
