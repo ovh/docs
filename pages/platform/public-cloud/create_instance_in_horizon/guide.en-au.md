@@ -51,8 +51,7 @@ You will then need to fill in the information requested. If you need to do so, y
 |Disk partitioning|Choose between "automatic" or "manual".|
 |Configuration disk|Configure OpenStack to write metadata on to a specific configuration disk that will be attached to the Instance when it is launched.|
 
-> [!warning]
-> Although the Key Pair field is not mandatory in the Horizon interface to create an instance, it is absolutely necessary to register an SSH key to be able to connect to an instance. Without an SSH key, you will be required to reboot the instance in rescue mode to either create a password or add an SSH key to the appropriate file.
+> [!warning] Although the "Key Pair" field is not mandatory in the Horizon interface when creating an instance, registering an SSH key is absolutely necessary to be able to connect to an instance. Without an SSH key, you will be required to reboot the instance in rescue mode to either create a password or add an SSH key to the appropriate file.
 >
 
 Once you are ready to launch the Instances, click the `Launch Instance`{.action} button.

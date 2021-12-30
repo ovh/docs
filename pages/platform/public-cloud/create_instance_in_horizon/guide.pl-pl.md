@@ -51,6 +51,9 @@ Wprowadź następnie odpowiednie dane. W razie potrzeby skorzystaj z poniższej 
 |Partycjonowanie dysku|Wybierz: „automatyczne” lub „ręczne”.|
 |Dysk konfiguracyjny|Skonfiguruj OpenStack, aby zapisać metadane na dysku konfiguracyjnym, który zostanie przypisany do instancji w momencie jej uruchomienia.|
 
+> [!warning] Chociaż pole "Key Pair" nie jest obowiązkowe w interfejsie Horizon podczas tworzenia instancji, rejestracja klucza SSH jest absolutnie konieczna, aby móc połączyć się z instancją. Bez klucza SSH będziesz musiał zrestartować instancję w trybie Rescue, aby móc utworzyć hasło lub dodać klucz SSH do odpowiedniego pliku.
+>
+
 Kiedy jesteś gotowy, aby uruchomić instancję lub instancje, kliknij przycisk `Launch instance`{.action}.
 
 ![createinstance](images/create-instance-step3.png){.thumbnail}

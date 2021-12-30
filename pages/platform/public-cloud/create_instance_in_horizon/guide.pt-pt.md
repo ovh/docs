@@ -51,6 +51,9 @@ Deverá preencher as diferentes informações. Caso seja necessário, consulte a
 |Particionamento do disco|Escolha entre “automático” ou “manual”|
 |Disco de configuração|Configure o OpenStack para escrever os metadados num disco de configuração específico que ficará associado à instância no momento do lançamento|
 
+> [!warning] Embora o campo "Key Pair" não seja obrigatório na interface Horizon aquando da criação de uma instância, o registo de uma chave SSH é absolutamente necessário para poder ligar-se a uma instância. Sem chave SSH, será obrigado a reiniciar a instância em modo rescue para poder criar uma palavra-passe ou adicionar uma chave SSH ao ficheiro adequado.
+>
+
 Assim que estiver pronto para lançar a(s) instância(s) pretendida(s), clique no botão `Iniciar`{.action}.
 
 ![createinstance](images/create-instance-step3.png){.thumbnail}
