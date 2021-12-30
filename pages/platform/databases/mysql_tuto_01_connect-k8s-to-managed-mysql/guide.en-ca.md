@@ -36,11 +36,11 @@ In this tutorial, we are going to show you how to connect your OVHcloud Managed 
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../../../kubernetes/deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](https://docs.ovh.com/ca/en/kubernetes/deploying-hello-world/).
 
-You need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../../../kubernetes/installing-helm/) tutorial.
+You need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](https://docs.ovh.com/ca/en/kubernetes/installing-helm/) tutorial.
 
-Finally, you need to be able to order a database solution in the OVHcloud Control Panel, as explained in our [Getting started with Public Cloud Databases](../getting-started/) guide.
+Finally, you need to be able to order a database solution in the OVHcloud Control Panel, as explained in our [Getting started with Public Cloud Databases](https://docs.ovh.com/ca/en/publiccloud/databases/getting-started/) guide.
 
 ## Instructions
 
@@ -64,7 +64,7 @@ In this step, choose an appropriate service plan. You will be able to upgrade th
 
 ![Choose plan](images/connect-kubernetes-to-managed-mysql02.png){.thumbnail}
 
-Please visit the [capabilities page](../mysql/capabilities) for detailed information on each plan's properties.
+Please visit the [capabilities page](https://docs.ovh.com/ca/en/publiccloud/databases/mysql/capabilities/) for detailed information on each plan's properties.
 
 Click `Next`{.action} to continue.
 
@@ -82,7 +82,7 @@ You can choose the node model in this step. The initial and maximum numbers of n
 
 ![Order nodes](images/connect-kubernetes-to-managed-mysql04.png){.thumbnail}
 
-Please visit the [capabilities page](../mysql/capabilities/) for detailed information on the hardware resources and other properties of the MySQL database installation.
+Please visit the [capabilities page](https://docs.ovh.com/ca/en/publiccloud/databases/mysql/capabilities/) for detailed information on the hardware resources and other properties of the MySQL database installation.
 
 Take note of the pricing information and click `Next`{.action} to continue.
 
@@ -94,7 +94,7 @@ You can name your database in this step.
 
 #### Step 6: Summary and confirmation
 
-The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](../../../api/first-steps-with-ovh-api/).
+The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/ca/en/api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/connect-kubernetes-to-managed-mysql06.png){.thumbnail}
 
@@ -118,7 +118,7 @@ Get your Kubernetes cluster nodes IP addresses from the Compute / Instances menu
 
 ![Nodes IPs list on Instances Control Panel](images/connect-kubernetes-to-managed-mysql09.png){.thumbnail}
 
-Following the related documentation on how to [authorise the suitable IP addresses](../mongodb/managing-service/#configuring-authorised-ips), add your Kubernetes cluster node IPs to the authorised list.
+Following the related documentation on how to [authorise the suitable IP addresses](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/managing-service/#configuring-authorised-ips), add your Kubernetes cluster node IPs to the authorised list.
 
 ![Green statuses and authorized IPs setted on Database Control Panel](images/connect-kubernetes-to-managed-mysql10.png){.thumbnail}
 
@@ -136,17 +136,17 @@ You are now inside the pod you just created on your cluster, you can simply use 
 
 The useful parameters are:
 
-* the db Host, the db Port
-    Get them from the "General Information tab"
+- The db Host, the db Port
+    - Get them from the "General Information tab"
 
-* the db Name
-    Get it from the "Databases" tab, usually "defaultdb"
+- The db Name
+    - Get it from the "Databases" tab, usually "defaultdb"
 
-* the db User
-    Get it from the "Users" tab, usually "avnadmin"
+- The db User
+    - Get it from the "Users" tab, usually "avnadmin"
 
-* the db Password
-    Get it after you reset it.
+- The db Password
+    - Get it after you reset it.
 
 ![Password reseted](images/connect-kubernetes-to-managed-mysql11.png){.thumbnail}
 
@@ -180,7 +180,7 @@ For this tutorial we are using the [Wordpress Helm chart](https://github.com/bit
 
 #### Pre-requisites
 
-As described in the [Installing WordPress on OVHcloud Managed Kubernetes](../../../kubernetes/installing-wordpress/#installing-the-wordpress-helm-chart) tutorial, remove the default storage class and install the new one.
+As described in the [Installing WordPress on OVHcloud Managed Kubernetes](https://docs.ovh.com/ca/en/kubernetes/installing-wordpress/#installing-the-wordpress-helm-chart) tutorial, remove the default storage class and install the new one.
 
 ```sh
 kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
