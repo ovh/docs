@@ -5,7 +5,11 @@ legacy_guide_number: 2216
 excerpt: 'Scopri come utilizzare la soluzione CloudDB'
 ---
 
-**Ultimo aggiornamento: 12/07/2018**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 30/12/2021**
 
 ## Obiettivo
 
@@ -184,7 +188,7 @@ Per recuperare tutti i log del tuo server CloudDB, accedi via SFTP a quest'ultim
 
 > [!warning]
 >
-> Prima di connetterti verifica che l'indirizzo IP della postazione utilizzata sia autorizzato sul tuo server CloudDB, con l'opzione `SFTP` selezionata. Per maggiori informazioni, consulta la sezione [Autorizza la connessione a un hosting Web OVHcloud](#turstip) di questa guida.
+> Prima di connetterti verifica che l'indirizzo IP della postazione utilizzata sia autorizzato sul tuo server CloudDB, con l'opzione `SFTP` selezionata. Per maggiori informazioni, consulta la sezione [Autorizza la connessione a un hosting Web OVHcloud](#trustip) di questa guida.
 
 Le informazioni di connessione SFTP sono disponibili nella scheda `Informazioni generali`{.action} del tuo server CloudDB. Se non ricordi la `password del server`, clicca sul pulsante `...`{.action} a destra per modificarlo.
 
@@ -200,4 +204,4 @@ Il file di log, chiamato `stdout.log`, si trova alla radice.
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -9,7 +9,11 @@ excerpt: 'In dieser Anleitung erfahren Sie, wie Sie die CloudDB Lösung verwende
 section: 'Erste Schritte'
 ---
 
-**Stand 07.12.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
+
+**Stand 30.12.2021**
 
 ## Einleitung
 
@@ -188,7 +192,7 @@ Um alle Logs Ihres CloudDB Servers abzurufen, loggen Sie sich via SFTP mit diese
 
 > [!warning]
 >
-> Bevor Sie sich verbinden, überprüfen Sie, ob die IP-Adresse des von Ihnen genutzten Telefons auf Ihrem CloudDB Server mit der angekreuzten Option "SFTP`"erlaubt ist. Lesen Sie die Anleitung [Die Verbindung zu einem OVHcloud Webhosting erlauben](#turstip).
+> Bevor Sie sich verbinden, überprüfen Sie, ob die IP-Adresse des von Ihnen genutzten Telefons auf Ihrem CloudDB Server mit der angekreuzten Option "SFTP`"erlaubt ist. Lesen Sie die Anleitung [Die Verbindung zu einem OVHcloud Webhosting erlauben](#trustip).
 
 Die SFTP-Verbindungsinformationen finden Sie im Tab `Allgemeine Informationen`{.action} Ihres CloudDB Servers. Wenn Sie das `Passwort des Servers` nicht kennen, klicken Sie auf die Schaltfläche Kfz `...`{.action} rechts, um ihn zu bearbeiten.
 

@@ -6,7 +6,11 @@ legacy_guide_number: 2216
 section: 'Primeiros passos'
 ---
 
-**Última atualização: 28/06/2018**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 30/12/2021**
 
 ## Sumário
 
@@ -177,7 +181,7 @@ Durante este procedimento, serão solicitadas cinco informações essenciais:
 
 #### Obter os logs do seu servidor CloudDB
 
-Para verificar os últimos logs da sua base de dados, aceda ao separador `Logs` {.action} do seu servidor CloudDB. Este separador apresenta em tempo real os alertas e os erros.
+Para verificar os últimos logs da sua base de dados, aceda ao separador `Logs`{.action} do seu servidor CloudDB. Este separador apresenta em tempo real os alertas e os erros.
 
 ![clouddb](images/clouddb-log01.png) {.thumbnail}
 
@@ -185,15 +189,15 @@ Para obter o conjunto dos logs do seu servidor CloudDB, ligue-se através de SFT
 
 > [!warning]
 >
-> Antes de se conectar, verifique que o endereço de IP do computador que utiliza é autorizado no seu servidor CloudDB, com a opção "SFTP`" selecionada. Para mais informações, consulte a secção [Autorizar a ligação a um alojamento web da OVHcloud](#turstip) neste guia.
+> Antes de se conectar, verifique que o endereço de IP do computador que utiliza é autorizado no seu servidor CloudDB, com a opção "SFTP`" selecionada. Para mais informações, consulte a secção [Autorizar a ligação a um alojamento web da OVHcloud](#trustip) neste guia.
 
-Encontre as informações de ligação SFTP a partir do separador `Informações gerais` {.action} do seu servidor CloudDB. Se não sabe a palavra-passe do servidor`, clique no botão ^ o..{.ação} à direita para o modificar.
+Encontre as informações de ligação SFTP a partir do separador `Informações gerais`{.action} do seu servidor CloudDB. Se não sabe a palavra-passe do servidor, clique no botão `...`{.action} à direita para o modificar.
 
 ![clouddb](images/clouddb-log02.png) {.thumbnail}
 
 Ligue-se através de um cliente FTP (FileZilla, Cyberduck, WinSCP, etc.).
 
-Para o FileZilla, no menu `Ficheiro` {.action}, dirija-se ao gestor dos websites` {.action. Clique em `Novo site` {.action} e introduza os parâmetros anteriormente identificados.
+Para o FileZilla, no menu `Ficheiro`{.action}, dirija-se ao `Gestor dos websites`{.action}. Clique em `Novo site`{.action} e introduza os parâmetros anteriormente identificados.
 
 ![clouddb](images/clouddb-log03.png) {.thumbnail}
 

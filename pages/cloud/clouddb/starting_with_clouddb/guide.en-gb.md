@@ -5,7 +5,7 @@ excerpt: 'Find out how to get started with the CloudDB service'
 section: 'Getting started'
 ---
 
-**Last updated 24th April 2020**
+**Last updated 30th December 2021**
 
 ## Objective
 
@@ -200,9 +200,9 @@ To retrieve all logs for your CloudDB server, log in via SFTP on it.
 
 > [!warning]
 >
-> Before logging in, check that the IP address of the workstation you are using is authorised on your CloudDB server, with the `SFTP` option ticked. Use the [Authorise connection to an OVHcloud web hosting plan](#turstip) section of this guide.
+> Before logging in, check that the IP address of the workstation you are using is authorised on your CloudDB server, with the `SFTP` option ticked. Use the [Authorise connection to an OVHcloud web hosting plan](#trustip) section of this guide.
 
-You can find the SFTP login details in the `General information`{.action} tab of your CloudDB server. If you do not know the `Server password`, click the `...`{.action} button. on the right to modify it.
+You can find the SFTP login details in the `General information`{.action} tab of your CloudDB server. If you do not know the `Server password`, click the `...`{.action} button on the right to modify it.
 
 ![clouddb](images/clouddb-log02.png){.thumbnail}
 

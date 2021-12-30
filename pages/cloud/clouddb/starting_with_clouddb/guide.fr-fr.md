@@ -199,7 +199,7 @@ Pour récupérer l'ensemble des logs de votre serveur CloudDB, connectez-vous vi
 
 > [!warning]
 >
-> Avant de vous connecter, vérifiez que l'adresse IP du poste que vous utilisez est bien autorisée sur votre serveur CloudDB, avec l'option `SFTP` cochée. Aidez-vous de la rubrique [Autoriser la connexion à un hébergement web OVHcloud](#turstip) sur ce guide.
+> Avant de vous connecter, vérifiez que l'adresse IP du poste que vous utilisez est bien autorisée sur votre serveur CloudDB, avec l'option `SFTP` cochée. Aidez-vous de la rubrique [Autoriser la connexion à un hébergement web OVHcloud](#trustip) sur ce guide.
 
 Retrouvez les informations de connexion SFTP depuis l'onglet `Informations générales`{.action} de votre serveur CloudDB. Si vous ne connaissez pas le `Mot de passe du serveur`, cliquez sur le bouton `...`{.action} à droite pour le modifier.
 

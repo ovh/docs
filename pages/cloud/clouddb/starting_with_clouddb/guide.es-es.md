@@ -5,7 +5,11 @@ excerpt: 'Cómo empezar a utilizar la solución Cloud Databases'
 section: 'Primeros pasos'
 ---
 
-**Última actualización: 03/07/2018**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 30/12/2021**
 
 ## Objetivo
 
@@ -175,7 +179,7 @@ Para poder realizar esta operación, deberá disponer de los siguientes datos:
 
 ### Obtener los logs de su servidor CloudDB
 
-Para comprobar los últimos logs de la base de datos, acceda a la pestaña "Logs`{.action}" del servidor Cloud Databases. Esta pestaña muestra en tiempo real las alertas y errores.
+Para comprobar los últimos logs de la base de datos, acceda a la pestaña `Logs`{.action} del servidor Cloud Databases. Esta pestaña muestra en tiempo real las alertas y errores.
 
 ![clouddb](images/clouddb-log01.png) {.thumbnail}
 
@@ -183,7 +187,7 @@ Para conocer todos los logs de su servidor Cloud Databases, conéctese por SFTP 
 
 > [!warning]
 >
-> Antes de conectarse, compruebe que la dirección IP del equipo que utilice esté autorizada en su servidor Cloud Databases, con la opción `SFTP` marcada. Para más información, consulte la sección [Autorizar la conexión a un alojamiento web de OVHcloud](#turstip) de esta guía.
+> Antes de conectarse, compruebe que la dirección IP del equipo que utilice esté autorizada en su servidor Cloud Databases, con la opción `SFTP` marcada. Para más información, consulte la sección [Autorizar la conexión a un alojamiento web de OVHcloud](#trustip) de esta guía.
 
 Puede consultar la información de conexión SFTP en la pestaña `Información general`{.action} de su servidor Cloud Databases. Si no conoce la `Contraseña del servidor`, haga clic en el botón `...`{.action} a la derecha para modificarlo.
 
@@ -199,4 +203,4 @@ El archivo de logs, llamado `stdout.log`, se encuentra en la raíz.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

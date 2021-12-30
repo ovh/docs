@@ -5,7 +5,11 @@ excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania CloudDB'
 section: 'Pierwsze kroki'
 ---
 
-**Ostatnia aktualizacja dnia 2018-05-15**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja dnia 30-12-2021**
 
 ## Wprowadzenie
 
@@ -183,7 +187,7 @@ Aby pobrać wszystkie logi Twojego serwera CloudDB, zaloguj się przez SFTP do t
 
 > [!warning]
 >
-> Przed zalogowaniem upewnij się, że adres IP poczty, której używasz jest poprawnie autoryzowany na serwerze CloudDB z opcją `SFTP` zaznaczoną. Skorzystaj z sekcji [Zezwalaj na logowanie do hostingu OVHcloud](#turstip) w tym przewodniku.
+> Przed zalogowaniem upewnij się, że adres IP poczty, której używasz jest poprawnie autoryzowany na serwerze CloudDB z opcją `SFTP` zaznaczoną. Skorzystaj z sekcji [Zezwalaj na logowanie do hostingu OVHcloud](#trustip) w tym przewodniku.
 
 Dane do logowania SFTP znajdziesz w zakładce `Informacje ogólne`{.action} Twojego serwera CloudDB. Jeśli nie znasz `hasła do serwera`, kliknij przycisk `...`{.action} po prawej stronie, aby go zmienić.
 
