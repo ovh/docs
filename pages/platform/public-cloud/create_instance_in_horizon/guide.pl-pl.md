@@ -16,7 +16,7 @@ Istnieje możliwość tworzenia instancji bezpośrednio w interfejsie Horizon. M
 
 ## Wymagania początkowe
 
-- Utworzenie projektu [Public Cloud]({ovh_www}/public-cloud/instances/){.external} na Twoim koncie OVH
+- Utworzenie projektu [Public Cloud]({ovh_www}/public-cloud/instances/){.external} na Twoim koncie OVHcloud
 - [Dostęp do interfejsu Horizon](../tworzenie_dostepu_do_interfejsu_horizon/){.external}
 
 ## W praktyce
