@@ -159,8 +159,6 @@ hello-world   LoadBalancer   10.3.234.211   51.178.69.47   80:31885/TCP   6m54s
 > [!primary]
 > If under `EXTERNAL-IP` you get `<pending>`, don't worry, the provisioning of the LoadBalancer can take a minute or two, please try again in a few moments.
 
-For each service you deploy with LoadBalancer type, you will get a new sub-domain `XXXXXX.lb.c1.gra.k8s.ovh.net` to access the service. In my example that URL to access the service would be `http://6d6regsa9pc.lb.c1.gra.k8s.ovh.net`
-
 ### Step 5 - Test your service
 
 If you point your web browser to the service URL, the `hello-world` service will answer you:
