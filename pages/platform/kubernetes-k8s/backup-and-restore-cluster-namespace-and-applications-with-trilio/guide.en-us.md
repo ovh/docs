@@ -140,7 +140,7 @@ To complete this tutorial, you need the following:
 1. A [OVH S3 Object Storage Container/Bucket](https://docs.ovh.com/ca/en/storage/pcs/create-container/) and `access` keys. Save the `access` and `secret` keys in a safe place for later use.
 2. A [Git](https://git-scm.com/downloads) client, to clone the `OVH Docs` repository.
 3. [Helm](https://www.helms.sh), for managing `TrilioVault Operator` releases and upgrades.
-4.[Kubectl](https://kubernetes.io/docs/tasks/tools), for `Kubernetes` interaction.
+4. [Kubectl](https://kubernetes.io/docs/tasks/tools), for `Kubernetes` interaction.
 
 **Important note:**
 
@@ -150,7 +150,7 @@ In order for `TrilioVault` to work correctly and to backup your `PVCs`, `OVH Man
 kubectl get storageclass
 ```
 
-The output should look similar to (notice the provisioner is [hostpath.csi.k8s.io](https://github.com/kubernetes-csi/csi-driver-host-path):
+The output should look similar to (notice the provisioner is [hostpath.csi.k8s.io](https://github.com/kubernetes-csi/csi-driver-host-path)):
 
 ```text
 NAME                        PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
@@ -197,8 +197,8 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 
     ```text
     NAME                                            CHART VERSION   APP VERSION     DESCRIPTION
-	triliovault-operator/k8s-triliovault-operator   2.6.3           2.6.3           K8s-TrilioVault-Operator is an operator designe...
-	triliovault/k8s-triliovault                     2.6.3           2.6.3           K8s-TrilioVault provides data protection and re...
+	triliovault-operator/k8s-triliovault-operator   2.6.4           2.6.4           K8s-TrilioVault-Operator is an operator designe...
+	triliovault/k8s-triliovault                     2.6.4           2.6.4           K8s-TrilioVault provides data protection and re...
 
     ```
 
@@ -206,7 +206,7 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 3. The chart of interest is `triliovault-operator/k8s-triliovault-operator`, which will install `TrilioVault for Kubernetes Operator` on the cluster. You can run `helm install` command to install the Operator. Install `TrilioVault for Kubernetes Operator` using `Helm`:
 
     ```shell
-    TRILIOVAULT_CHART_VERSION="2.6.3"
+    TRILIOVAULT_CHART_VERSION="2.6.4"
 
     helm install triliovault-operator triliovault-operator/k8s-triliovault-operator --version "${TRILIOVAULT_CHART_VERSION}" \
       --namespace tvk \
@@ -215,7 +215,7 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 
     **Note:**
 
-    A `specific` version for the `TrilioVault-Operator` Helm chart is used. In this case `2.6.3` is picked, which maps to the `2.6.3` version of the application (see the output from `Step 2.`). It’s good practice in general, to lock on a specific version. This helps to have predictable results, and allows versioning control via `Git`.
+    A `specific` version for the `TrilioVault-Operator` Helm chart is used. In this case `2.6.4` is picked, which maps to the `2.6.4` version of the application (see the output from `Step 2.`). It’s good practice in general, to lock on a specific version. This helps to have predictable results, and allows versioning control via `Git`.
 
 Now, please check your `TVK` deployment:
 
@@ -227,7 +227,7 @@ The output looks similar to the following (`STATUS` column should display `deplo
 
 ```text
 NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
-triliovault-operator    tvk             1               2021-12-21 08:13:41.644264863 +0000 UTC deployed        k8s-triliovault-operator-2.6.3  2.6.3
+triliovault-operator    tvk             1               2021-12-21 08:13:41.644264863 +0000 UTC deployed        k8s-triliovault-operator-2.6.4  2.6.4
 
 ```
 
@@ -244,12 +244,12 @@ NAME                                			READY   UP-TO-DATE   AVAILABLE   AGE
 triliovault-operator-k8s-triliovault-operator   1/1     1            1           3d
 ```
 
-Now, you can install `TrilioVault Manager Application` using yaml definition (pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/assets/manifests/triliovault-manager-v2.6.3.yaml)
+Now, you can install `TrilioVault Manager Application` using yaml definition (pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/assets/manifests/triliovault-manager-v2.6.4.yaml)
 
 Run the `kubectl` command to install the `Triliovault Manager` using the yaml
 
 ```shell
-kubectl apply -f assets/manifests/triliovault-manager-v2.6.3.yaml -n tvk
+kubectl apply -f assets/manifests/triliovault-manager-v2.6.4.yaml -n tvk
 ```
 
 Now, please check your `TVK` deployment: 
@@ -262,7 +262,7 @@ The output looks similar to the following (`STATUS` column should display `deplo
 
 ```text
 NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
-tvk-tvk                 tvk             1               2021-12-21 08:18:06.817766759 +0000 UTC deployed        k8s-triliovault-2.6.3           2.6.3
+tvk-tvk                 tvk             1               2021-12-21 08:18:06.817766759 +0000 UTC deployed        k8s-triliovault-2.6.4           2.6.4
 ```
 
 Next, verify that `TrilioVault` is up and running:
@@ -293,14 +293,14 @@ The output should look similar to below
 
 ```text
 NAME                  TRILIOVAULT-VERSION   SCOPE     STATUS     RESTORE-NAMESPACES
-triliovault-manager   2.6.3                 Cluster   Deployed
+triliovault-manager   2.6.4                 Cluster   Deployed
 ```
 
 If the output looks like above, you installed `TVK` successfully. Next, you will learn how to check license type and validity, as well as how to renew.
 
 ### TrilioVault Application Licensing
 
-By default, when installing `TVK` via `Helm`, there is no `Free Trial` license is generated. But if you download a `Free Trial` license and apply, it lets you run `TVK` for `one month` on `unlimited` cluster nodes. You can always go to the `Trilio` website and generate a new [license](https://www.trilio.io/plans) for your cluster that suits your needs (for example, you can pick the `basic license` type that lets you run `TrilioVault` indefinetly if your `cluster capacity` doesn't exceed `50 nodes`).
+By default, when installing `TVK` via `Helm`, there is no `Free Trial` license is generated. But if you download a `Free Trial` license and apply, it lets you run `TVK` for `one month` on `unlimited` cluster nodes. You can always go to the `Trilio` website and generate a new [license](https://www.trilio.io/plans) for your cluster that suits your needs (for example, you can pick the `basic license` type that lets you run `TrilioVault` indefinetly if your `cluster capacity` doesn't exceed `50 nodes` or 100 vCPUs).
 
 ### Checking TVK Application Licensing
 
@@ -481,16 +481,23 @@ If the output looks like above, then you configured the S3 target object success
 
 In case the target object fails to become healthy, you can inspect the logs from the `trilio-ovh-s3-target-validator` Pod to find the issue:
 
-```shell
-# First, you need to find the target validator
-kubectl get pods -n tvk | grep trilio-ovh-s3-target-validator
+First, you need to find the target validator
 
-# Output looks similar to:
-# trilio-ovh-s3-target-validator-tio99a-6lz4q              1/1     Running     0          104s
+	```shell
+	kubectl get pods -n tvk | grep trilio-ovh-s3-target-validator
+	```
 
-# Now, fetch logs data
-kubectl logs pod/trilio-ovh-s3-target-validator-tio99a-6lz4q -n tvk
-```
+The output looks similar to:
+
+	```text
+	trilio-ovh-s3-target-validator-tio99a-6lz4q              1/1     Running     0          104s
+	```
+
+Now, fetch logs data
+
+	```shell
+	kubectl logs pod/trilio-ovh-s3-target-validator-tio99a-6lz4q -n tvk
+	```
 
 The output looks similar to (notice the exception as an example):
 
@@ -1270,3 +1277,5 @@ All the basic tasks and operations explained in this tutorial, are meant to give
 - [Disaster Recovery Plan](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/disaster-recovery-plan).
 - [Multi-Cluster Management](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/multicloud-management).
 - [Restore Transforms](https://docs.trilio.io/kubernetes/overview/features-and-use-cases#restore-transforms).
+- [Velero Integration to Monitor Velero Backups](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/monitoring-velero-with-triliovault-for-kubernetes).
+

@@ -5,7 +5,7 @@ metadata:
     triliovault: k8s
   name: tvk
 spec:
-  trilioVaultAppVersion: 2.6.3
+  trilioVaultAppVersion: 2.6.4
   applicationScope: Cluster
   # TVK components configuration, currently supports control-plane, web, exporter, web-backend, ingress-controller, admission-webhook.
   # User can configure resources for all componentes and can configure service type and host for the ingress-controller
