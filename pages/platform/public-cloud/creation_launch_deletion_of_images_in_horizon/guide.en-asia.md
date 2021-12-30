@@ -6,6 +6,8 @@ section: Horizon
 order: 6
 ---
 
+**Last updated 30th December 2021**
+
 ## Objective
 
 You can add custom images via the OpenStack Horizon interface. For example, you can use it to import images from your old virtual machines to the Public Cloud, provided that they are in a compatible format.
@@ -15,7 +17,7 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 
 ## Requirements
 
-- Access to the Horizon interface
+- [Access to the Horizon interface](https://docs.ovh.com/asia/en/public-cloud/configure_user_access_to_horizon/)
 - Access to the Images menu in the OpenStack Horizon interface 
 
 
@@ -41,7 +43,8 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 - Image file (Send from your local desktop)
 - Image format (\*):
 
-|—|—|
+|||
+|---|---|
 |AKI|Amazon Kernel Image|
 |AMI|Amazon Machine Image|
 |ARI|Amazon Ramdisk Image|
@@ -51,6 +54,8 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 |VDI|VirtualBox format|
 |VHD|Microsoft format|
 |VMDK|VMware format|
+
+<br>
 
 - Architecture: x86_64
 - Minimum disk space (in GB): if not specified, the default value will be 0.

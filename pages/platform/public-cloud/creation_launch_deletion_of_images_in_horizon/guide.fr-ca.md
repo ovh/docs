@@ -74,3 +74,7 @@ Dans la colonne  **Actions**  il est possible :
 
 
 ![public-cloud](images/horizon_delete_image.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
