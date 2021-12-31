@@ -182,7 +182,7 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
     ```shell
     git clone https://github.com/ovh/docs.git
 
-    cd docs/
+    cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
     ```
 
 2. Next, add the `TrilioVault` Helm repository, and list the available charts:
@@ -197,11 +197,10 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 
     ```text
     NAME                                            CHART VERSION   APP VERSION     DESCRIPTION
-	triliovault-operator/k8s-triliovault-operator   2.6.4           2.6.4           K8s-TrilioVault-Operator is an operator designe...
-	triliovault/k8s-triliovault                     2.6.4           2.6.4           K8s-TrilioVault provides data protection and re...
+    triliovault-operator/k8s-triliovault-operator   2.6.4           2.6.4           K8s-TrilioVault-Operator is an operator designe...
+    triliovault/k8s-triliovault                     2.6.4           2.6.4           K8s-TrilioVault provides data protection and re...
 
     ```
-
     
 3. The chart of interest is `triliovault-operator/k8s-triliovault-operator`, which will install `TrilioVault for Kubernetes Operator` on the cluster. You can run `helm install` command to install the Operator. Install `TrilioVault for Kubernetes Operator` using `Helm`:
 
@@ -228,7 +227,6 @@ The output looks similar to the following (`STATUS` column should display `deplo
 ```text
 NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
 triliovault-operator    tvk             1               2021-12-21 08:13:41.644264863 +0000 UTC deployed        k8s-triliovault-operator-2.6.4  2.6.4
-
 ```
 
 Next, verify that `TrilioVault-Operator` is up and running:
@@ -240,7 +238,7 @@ kubectl get deployments -n tvk
 The output looks similar to the following (deployment pods must be in the `Ready` state):
 
 ```text
-NAME                                			READY   UP-TO-DATE   AVAILABLE   AGE
+NAME                                		READY   UP-TO-DATE   AVAILABLE   AGE
 triliovault-operator-k8s-triliovault-operator   1/1     1            1           3d
 ```
 
@@ -261,8 +259,8 @@ helm ls -n tvk
 The output looks similar to the following (`STATUS` column should display `deployed`):
 
 ```text
-NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
-tvk-tvk                 tvk             1               2021-12-21 08:18:06.817766759 +0000 UTC deployed        k8s-triliovault-2.6.4           2.6.4
+NAME		NAMESPACE	REVISION	UPDATED                                 STATUS		CHART			APP VERSION
+tvk-tvk         tvk             1               2021-12-21 08:18:06.817766759 +0000 UTC deployed        k8s-triliovault-2.6.4   2.6.4
 ```
 
 Next, verify that `TrilioVault` is up and running:
@@ -283,7 +281,7 @@ k8s-triliovault-web                             1/1     1            1          
 k8s-triliovault-web-backend                     1/1     1            1           3d
 ```
 
-You can also check if the TVM Customer Resource is created.
+You can also check if the TVM Custom Resource is created.
 
 ```shell
 kubectl get tvm -n tvk
@@ -394,12 +392,12 @@ metadata:
   namespace: tvk
 spec:
   type: ObjectStore
-  vendor: Other
+  vendor: Other								# e.g. AWS for AWS S3 Storage
   enableBrowsing: true
   objectStoreCredentials:
     bucketName: <YOUR_OVH_OBJECT_STORAGE_BUCKET_NAME_HERE>
-    region: <YOUR_OVH_OBJECT_STORAGE_BUCKET_REGION_HERE>    # e.g.: bhs5
-    url: "https://<YOUR_OVH_OBJECT_STORAGE_BUCKET_ENDPOINT_HERE>"  	# e.g.: storage.bhs.cloud.ovh.net
+    region: <YOUR_OVH_OBJECT_STORAGE_BUCKET_REGION_HERE>    		# e.g.: bhs5 for OVH Object Storage or 'us-est-1 etc' for AWS S3
+    url: "https://<YOUR_OVH_OBJECT_STORAGE_BUCKET_ENDPOINT_HERE>"  	# e.g.: storage.bhs5.cloud.ovh.net for OVH
     credentialSecret:
       name: trilio-ovh-s3-target
       namespace: tvk
@@ -435,7 +433,7 @@ Steps to create a `Target` for `TrilioVault`:
 1. First, change directory where the `ovh/docs` Git repository was cloned on your local machine:
 
     ```shell
-    cd docs
+    cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
     ```
 
 2. Next, create the Kubernetes secret containing your target S3 bucket credentials (please replace the `<>` placeholders accordingly):
@@ -450,7 +448,7 @@ Steps to create a `Target` for `TrilioVault`:
 3. Then, open and inspect the `Target` manifest file provided in the `docs` repository, using an editor of your choice (preferably with `YAML` lint support). You can use [VS Code](https://code.visualstudio.com) for example:
 
     ```shell
-    code assets/manifests/triliovault-ovh-s3-target.yaml
+    cat assets/manifests/triliovault-ovh-s3-target.yaml
     ```
 
 4. Now, please replace the `<>` placeholders accordingly for your OVH Object Storage `Trilio` bucket, like: `bucketName`, `region`,  `url` and `credentialSecret`.
@@ -465,14 +463,14 @@ What happens next is, `TrilioVault` will spawn a `worker job` named `trilio-ovh-
 Now, please go ahead and check if the `Target` resource created earlier is `healthy`:
 
 ```shell
-kubectl get target trilio-ovh-s3-target  -n tvk
+kubectl get target trilio-ovh-s3-target -n tvk
 ```
 
 The output looks similar to (notice the `STATUS` column value - should be `Available`, meaning it's in a `healthy` state):
 
 ```text
 NAME                   TYPE          THRESHOLD CAPACITY   VENDOR   STATUS      BROWSING ENABLED
-trilio-ovh-s3-target   ObjectStore   10Gi                 Other    Available
+trilio-ovh-s3-target   ObjectStore   10Gi                 Other    Available   Enabled
 ```
 
 If the output looks like above, then you configured the S3 target object successfully.
@@ -490,7 +488,7 @@ First, you need to find the target validator
 The output looks similar to:
 
 	```text
-	trilio-ovh-s3-target-validator-tio99a-6lz4q              1/1     Running     0          104s
+	trilio-ovh-s3-target-validator-tio99a-6lz4q	1/1     Running     0          104s
 	```
 
 Now, fetch logs data
@@ -584,9 +582,7 @@ Finally download the `kubeconfig` file for your OVH Managed Kubernetes Cluster p
 
 After following the above presented steps, you can access the console in your web browser by navigating to: http://ovh-k8s-tvk.demo.trilio.io. When asked for the `kubeconfig` file, please select the one that you created in the last command from above.
 
-**Note:**
-
-Please keep the generated `kubeconfig` file safe because it contains sensitive data.
+**Note:**  Please keep the generated `kubeconfig` file safe because it contains sensitive data.
 
 ### Exploring the TVK Web Console User Interface
 
@@ -725,7 +721,7 @@ Steps to initiate the `mysql-qa` Helm release one time backup:
 2. Next, change directory where the `docs` Git repository was cloned on your local machine:
 
     	```shell
-    	cd docs/
+    	cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
     	```
 
 3. Then, open and inspect the mysql-qa helm release `BackupPlan` and `Backup` manifest files provided in the `pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/guide.en-us.md` repository, using an editor of your choice (preferably with `YAML` lint support). You can use [VS Code](https://code.visualstudio.com) for example:
@@ -738,7 +734,7 @@ Steps to initiate the `mysql-qa` Helm release one time backup:
 4. Create the `BackupPlan` resource, using `kubectl`:
 
     	```shell
-	kubectl apply -f assets/manifests/mysql-qa-helm-release-backup-plan.yaml
+	kubectl apply -f assets/manifests/mysql-qa-helm-release-backup-plan.yaml -n demo-backup-ns
     	```
 
 Now, inspect the `BackupPlan` status (targeting the `mysql-qa` Helm release), using `kubectl`:
@@ -757,7 +753,7 @@ The output looks similar to (notice the `STATUS` column value which should be se
 5. Finally, create a `Backup` resource, using `kubectl`:
 
 	```shell
-	kubectl apply -f assets/manifests/mysql-qa-helm-release-backup.yaml
+	kubectl apply -f assets/manifests/mysql-qa-helm-release-backup.yaml -n demo-backup-ns
 	```
 	
 Now, inspect the `Backup` status (targeting the `mysql-qa` Helm release), using `kubectl`:
@@ -1008,9 +1004,7 @@ The output looks similar to (notice the `STATUS` column value which should be se
 
 If the output looks like above then all your important application namespaces were backed up successfully.
 
-**Note:**
-
-Please bear in mind that it may take a while for the full cluster backup to finish, depending on how many namespaces and associated resources are involved in the process.
+**Note:**  Please bear in mind that it may take a while for the full cluster backup to finish, depending on how many namespaces and associated resources are involved in the process.
 
 You can also open the web console main dashboard and inspect the `multi-namespace` backup (notice how all the important namespaces that were backed up are highlighted in green color, in a honeycomb structure)
 
