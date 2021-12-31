@@ -7,13 +7,20 @@ section: Services et options OVHcloud
 order: 02
 ---
 
-**Dernière mise à jour le 02/07/2020**
+**Dernière mise à jour le 31/12/2021**
 
 ## Objectif
 
 Le vRack, c’est la possibilité de connecter différents services cloud de OVHcloud entre eux, au sein d’un ou plusieurs réseaux privés sécurisés (VLAN).
 
-**Ce guide explique comment le mettre en place**
+**Ce guide explique comment mettre en place cette solution**
+
+
+## Prérequis
+
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+
 
 ## En pratique
 
@@ -23,7 +30,7 @@ Lors de la livraison de votre service [Hosted Private Cloud](https://www.ovhclou
 
 ![Datacenter](images/vRackDatacenter.PNG){.thumbnail}
 
-Il est possible de déplacer le *datacenter* de votre Hosted Private Cloud dans un autre vRack en cliquant sur le bouton `Déplacer`{.action}
+Il est possible de déplacer le *datacenter* de votre Hosted Private Cloud dans un autre vRack en cliquant sur le bouton `Déplacer`{.action}.
 
 ### Client vSphere
 
