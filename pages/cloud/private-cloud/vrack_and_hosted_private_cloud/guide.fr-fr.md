@@ -14,12 +14,10 @@ Le produit [vRack](https://www.ovh.com/fr/solutions/vrack/){.external} permet d'
 
 **Ce guide explique les compatibilités de Hosted Private Cloud avec le produit vRack.**
 
-
 ## Prérequis
 
-- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-
 
 ## Contexte technique
 
