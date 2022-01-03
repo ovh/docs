@@ -6,7 +6,7 @@ section: Object Storage Standard (Swift)
 order: 050
 ---
 
-**Dernière mise à jour le 23/09/2021**
+**Dernière mise à jour le 03/01/2022**
 
 ## Objectif
 
@@ -67,7 +67,7 @@ swift stat <conteneur>
 
 ### Définition des métadonnées CORS
 
-CORS spécifie un caractère générique *, qui autorise l'accès à tous les agents utilisateurs, indépendamment du domaine, du protocole ou de l'hôte. Bien qu'il existe des cas d'utilisation valables pour cette approche, elle permet également à un acteur malveillant de créer un fac-similé convaincant d'une interface utilisateur et d'inciter les utilisateurs à révéler leurs informations d'authentification. Veuillez évaluer soigneusement votre cas d'utilisation et la documentation pertinente pour tout risque pour votre organisation.
+CORS spécifie un caractère générique *, qui autorise l'accès à tous les agents utilisateurs, indépendamment du domaine, du protocole ou de l'hôte. Bien qu'il existe des cas d'utilisation valables pour cette approche, elle permet également à un acteur malveillant de créer un fac-similé convaincant d'une interface utilisateur et d'inciter les utilisateurs à révéler leurs informations d'authentification. Veuillez évaluer soigneusement votre cas d'utilisation et la documentation pertinente pour éviter tout risque pour votre organisation.
 
 
 > [!primary]
