@@ -32,7 +32,7 @@ order: 01
 
 ## Objective
 
-In this tutorial, we are going to show you how to build a <img src="images/strapi-logo-monogram-purple.png" alt="strapi logo" width="12px"> [Strapi](https://strapi.io/){.external} application using the OVHcloud managed <img src="images/postgre-logo.png" alt="postgre logo" width="12px"> [PostgreSQL](https://www.postgresql.org/){.external} database [service](https://www.ovhcloud.com/fr/public-cloud/postgresql/).
+In this tutorial, we are going to show you how to build a <img src="images/strapi-logo-monogram-purple.png" alt="strapi logo" width="12px"> [Strapi](https://strapi.io/){.external} application using the OVHcloud managed <img src="images/postgre-logo.png" alt="postgre logo" width="12px"> [PostgreSQL](https://www.postgresql.org/){.external} database [service](https://www.ovhcloud.com/en-gb/public-cloud/postgresql/).
 
 ## Before you begin
 
