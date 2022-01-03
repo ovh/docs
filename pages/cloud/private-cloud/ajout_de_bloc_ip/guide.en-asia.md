@@ -7,7 +7,7 @@ section: OVHcloud Features
 order: 01
 ---
 
-**Last updated 8th July 2020**
+**Last updated 30th December 2021**
 
 ## Objective
 
@@ -17,8 +17,8 @@ An IP address block can be used to make your services available over the Interne
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/asia/enterprise/products/hosted-private-cloud/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/asia/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia))
 
 ## Instructions
 
@@ -56,7 +56,7 @@ Several fields will be required to create your IP block:
 
 > [!success]
 >
-> The activation fee for a block is 2€ ex. VAT / IP. For example, a /28 block with 16 IPs will have a one-time fee of 32€ ex. VAT.
+> There is a one time setup fee for an IP block that will be due before delivery.
 >  
 > IP block renewals will be free of charge.
 >

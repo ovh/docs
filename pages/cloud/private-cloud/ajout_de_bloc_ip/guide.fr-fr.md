@@ -17,9 +17,8 @@ Un bloc IP peut vous servir à rendre vos services accessibles sur Internet.
 
 ## Prérequis
 
-- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-
 
 ## En pratique
 
@@ -58,7 +57,7 @@ Plusieurs champs seront à remplir pour la création de votre bloc IP
 
 > [!success]
 >
-> Vous devrez vous acquittez des frais d'activation de votre bloc IP avant livraison.
+> Vous devrez vous acquitter des frais d'activation de votre bloc IP avant livraison.
 >  
 > Les frais de renouvellement sont eux gratuits.
 >
