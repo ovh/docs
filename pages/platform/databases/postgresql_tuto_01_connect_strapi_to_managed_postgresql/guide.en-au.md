@@ -189,9 +189,10 @@ You can follow these different tutorials if you need to install some of the tool
 
 We want to use the latest LTS version of nodejs, so inside your development environment, use this command:
 
-```
+```sh
 $ nvm use 16.13.1
 ```
+
 <pre class="console"><code>$ nvm use 16.13.1
 Now using node v16.13.1 (npm v8.1.2)
 </code></pre>
@@ -201,7 +202,7 @@ Now using node v16.13.1 (npm v8.1.2)
 Strapi offers a simple way to install its product, with yarn.
 Run the following command in a terminal:
 
-```
+```sh
 yarn create strapi-app my-strapi
 ```
 
@@ -338,7 +339,7 @@ Save and exit the file.
 
 Launch the strapi application with the yarn command:
 
-```
+```sh
 yarn develop
 ```
 
@@ -420,7 +421,7 @@ Then press the `Save`{.action} button.
 
 As described above, connect to the PosgreSQL database with psql command line interface.
 
-```
+```sh
 $ psql --dbname=defaultdb  --host=postgresql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net --port=20184 --username=avnadmin  --password
 ```
 
@@ -438,7 +439,7 @@ Then find, in the `up_users` table, our previously created entry. Here the user 
 
 To clean your Strapi, make sure it is closed by pressing `CTRL+C`{.action} in the terminal you used to launch it, then delete your installation folder.
 
-```
+```sh
 rm -rf /home/my/app/path/my-strapi/
 ```
 
