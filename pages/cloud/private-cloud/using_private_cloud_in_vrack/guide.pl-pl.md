@@ -10,13 +10,18 @@ order: 02
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 02-07-2020**
+**Ostatnia aktualizacja z dnia 31-12-2021**
 
 ## Wprowadzenie
 
 vRack umożliwia podłączenie różnych usług cloud OVHcloud w ramach jednej lub kilku zabezpieczonych prywatnych sieci (VLAN).
 
 **Niniejszy przewodnik wyjaśnia, jak go uruchomić**
+
+## Wymagania początkowe
+
+- Posiadanie statusu kontaktu administratora infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
+- Posiadanie aktywnego identyfikatora użytkownika [utworzonego w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 

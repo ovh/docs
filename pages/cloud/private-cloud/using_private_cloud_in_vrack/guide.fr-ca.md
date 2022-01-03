@@ -6,13 +6,18 @@ section: Services et options OVHcloud
 order: 02
 ---
 
-**Dernière mise à jour le 02/07/2020**
+**Dernière mise à jour le 31/12/2021**
 
 ## Objectif
 
 Le vRack, c’est la possibilité de connecter différents services cloud de OVHcloud entre eux, au sein d’un ou plusieurs réseaux privés sécurisés (VLAN).
 
 **Ce guide explique comment le mettre en place**
+
+## Prérequis
+
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
 
 ## En pratique
 
