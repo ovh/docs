@@ -3,7 +3,7 @@ title: Utilisez High Pperformance avec Owncloud
 slug: s3/owncloud
 excerpt:
 section: Object Storage S3 High Performance
-order: xxx
+order: 170
 ---
 
 
