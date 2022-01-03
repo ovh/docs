@@ -15,12 +15,10 @@ Le vRack, c’est la possibilité de connecter différents services cloud de OVH
 
 **Ce guide explique comment mettre en place cette solution**
 
-
 ## Prérequis
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-
 
 ## En pratique
 
