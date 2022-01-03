@@ -6,7 +6,7 @@ section: Pierwsze kroki
 order: 3
 ---
 
-**Ostatnia aktualizacja z dnia 01-09-2020**
+**Ostatnia aktualizacja z dnia 28-12-2021**
 
 ## Wprowadzenie
 
@@ -18,7 +18,8 @@ Ten system pozwoli Ci na dostęp tylko do folderu "upload-vpn" w Twoich datastor
 
 ## Wymagania początkowe
 
-- Posiadanie aktywnego użytkownika utworzonego w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie statusu kontaktu administratora infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
+- Posiadanie aktywnego identyfikatora użytkownika [utworzonego w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 

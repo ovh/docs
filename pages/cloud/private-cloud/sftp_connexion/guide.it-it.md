@@ -6,7 +6,7 @@ section: Per iniziare
 order: 3
 ---
 
-**Ultimo aggiornamento: 25/06/2020**
+**Ultimo aggiornamento: 28/12/2021**
 
 ## Obiettivo
 
@@ -18,7 +18,8 @@ Questo metodo permette però di accedere esclusivamente alla cartella “upload-
 
 ## Prerequisiti
 
-- Disporre di un account utente creato dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
+- Avere un utente attivo [creato nello Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
