@@ -5,7 +5,7 @@ excerpt: 'Find out how to log in to your Private Cloud via SFTP'
 section: 'Getting started'
 ---
 
-**Last updated 25th June 2020**
+**Last updated 28th December 2021**
 
 ## Objective
 
@@ -17,9 +17,8 @@ You will however only be able to access the "upload-vpn" folder of your datastor
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/)
-- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
-
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
 
 ## Instructions
 

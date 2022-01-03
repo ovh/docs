@@ -6,7 +6,7 @@ section: Introdução
 order: 2
 ---
 
-**Última atualização: 29/07/2020**
+**Última atualização: 28/12/2021**
 
 ## Objetivo
 
@@ -14,8 +14,8 @@ order: 2
 
 ## Requisitos
 
-- Ser um contacto administrador do Hosted Private Cloud, pois é este contacto que recebe as credenciais de ligação.
-- Ter criado um utilizador ativo na Área de Cliente.
+- Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), para receber dados de acesso.
+- Ter um identificador de utilizador ativo [criado na Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
@@ -39,15 +39,7 @@ A seguir, deverá aceder à seguinte interface:
 
 ![Ligação à interface vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
 
-A página `Home`{.action} permite consultar os grandes menus do seu vCenter. Poderá efetuar diferentes ações, tais como.
-
-- Implementar uma máquina virtual acedendo à secção `Hosts and Clusters`{.action};
-- Consultar os seus datastores
-
-> [!warning]
->
-> A gestão das aplicações *NSX Edge* ainda não é suportada neste web client.
->
+A página `Home`{.action} permite consultar os grandes menus do seu vCenter.
 
 ### Utilização do web client flash
 
@@ -61,12 +53,7 @@ A seguir, deverá aceder à seguinte interface:
 
 ![Ligação à interface vSphere](images/connection_interface_w.png){.thumbnail}
 
-A página `Home`{.action} permite consultar os grandes menus do seu vCenter. Poderá efetuar diferentes ações, tais como.
-
-- Implementar uma máquina virtual acedendo à secção `Hosts and Clusters`{.action};
-- Se beneficiar desta opção, utilize o NSX acedendo à secção `Network & Security`{.action};
-- Consultar os seus datastores.
-
+A página `Home`{.action} permite consultar os grandes menus do seu vCenter.
 
 ## Quer saber mais?
 

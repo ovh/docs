@@ -6,7 +6,7 @@ section: Pierwsze kroki
 order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 01-09-2020**
+**Ostatnia aktualizacja z dnia 28-12-2021**
 
 ## Wprowadzenie
 
@@ -14,9 +14,8 @@ order: 2
 
 ## Wymagania początkowe
 
-- Pełnienie funkcji kontaktu administracyjnego dla usługi Private Cloud.
-- Utworzenie aktywnego użytkownika w Panelu klienta.
-
+- Posiadanie statusu kontaktu administratora infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
+- Posiadanie aktywnego identyfikatora użytkownika [utworzonego w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -40,15 +39,7 @@ Przejdź do interfejsu:
 
 ![Logowanie do interfejsu vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
 
-Na stronie `Home`{.action} odnajdziesz menu główne Twojego vCenter. Będziesz mógł wykonać różne czynności, takie jak:
-
-- Wdrożenie maszyny wirtualnej po przejściu do `Hosts and Clusters`{.action};
-- Przeglądanie datastores.
-
-> [!warning]
->
-> Zarządzanie urządzeniami *NSX Edge* nie jest jeszcze możliwe w przypadku tego klienta webowego.
->
+Na stronie `Home`{.action} odnajdziesz menu główne Twojego vCenter.
 
 ### Wykorzystanie web client flash
 
@@ -62,12 +53,7 @@ Przejdź do interfejsu:
 
 ![Logowanie do interfejsu vSphere](images/connection_interface_w.png){.thumbnail}
 
-Na stronie `Home`{.action} odnajdziesz menu główne Twojego vCenter. Będziesz mógł wykonać różne czynności, takie jak:
-
-- Wdrożenie maszyny wirtualnej po przejściu do `Hosts and Clusters`{.action};
-- O ile dysponujesz tą opcją, wykorzystanie NSX po przejściu do `Network & Security`{.action};
-- Przeglądanie datastores.
-
+Na stronie `Home`{.action} odnajdziesz menu główne Twojego vCenter.
 
 ## Sprawdź również
 
