@@ -14,9 +14,8 @@ order: 2
 
 ## Prérequis
 
-- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-
 
 ## En pratique
 
@@ -42,7 +41,6 @@ Vous accéderez ensuite à cette interface :
 
 La page `Home`{.action} permet de retrouver les grands menus de votre vCenter.
 
-
 ### Utilisation du web client flash
 
 Le web client flash est disponible sur l’interface web de votre Private Cloud à l’adresse : <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (remplacez pcc-xxx-xx-xx-xxx.ovh.com par l’adresse de votre Private Cloud).
@@ -56,7 +54,6 @@ Vous accéderez ensuite à cette interface :
 ![Connexion à l'interface vSphere](images/connection_interface_w.png){.thumbnail}
 
 La page `Home`{.action} permet de retrouver les grands menus de votre vCenter. 
-
 
 ## Aller plus loin
 

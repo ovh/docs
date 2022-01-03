@@ -14,9 +14,8 @@ order: 2
 
 ## Requirements
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 
@@ -43,7 +42,6 @@ You will arrive at this interface:
 
 The `Home`{.action} page provides accces to the main menus of your vCenter. 
 
-
 ### Using the Flash web client
 
 The Flash web client is available on the Private Cloud web interface at this URL: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (replace pcc-xxx-xxx-xxx-xxx.ovh.com with your Private Cloud address).
@@ -57,7 +55,6 @@ You can then access this interface:
 ![Connecting to the vSphere interface](images/connection_interface_w.png){.thumbnail}
 
 On the `Home`{.action} page you can find your vCenter main menus. 
-
 
 ## Go further
 
