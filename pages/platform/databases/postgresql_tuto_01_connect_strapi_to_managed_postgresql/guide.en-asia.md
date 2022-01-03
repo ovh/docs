@@ -1,6 +1,6 @@
 ---
 title: PostgreSQL - Tutorial - Build a Strapi app connected to OVHcloud Managed PostgreSQL service
-slug: postgresql/postgresql-tuto-01-connect-strapi-to-managed-postgresql
+slug: postgresql/tutorial-connect-strapi-to-managed-postgresql
 excerpt: "Find out how to build a Strapi application connected to an OVHcloud Managed PostgreSQL service"
 section: PostgreSQL - Tutorials
 order: 01
@@ -28,11 +28,11 @@ order: 01
  }
 </style>
 
-**Last updated 31th December 2021.**
+**Last updated 31st December 2021.**
 
 ## Objective
 
-In this tutorial, we are going to show you how to build a <img src="images/strapi-logo-monogram-purple.png" alt="strapi logo" width="12px">  [Strapi](https://strapi.io/){.external} application using the [OVHcloud](https://www.ovhcloud.com/) managed <img src="images/postgre-logo.png" alt="postgre logo" width="12px"> [PostgreSQL](https://www.postgresql.org/){.external} database [service](https://www.ovhcloud.com/fr/public-cloud/postgresql/).
+In this tutorial, we are going to show you how to build a <img src="images/strapi-logo-monogram-purple.png" alt="strapi logo" width="12px"> [Strapi](https://strapi.io/){.external} application using the OVHcloud managed <img src="images/postgre-logo.png" alt="postgre logo" width="12px"> [PostgreSQL](https://www.postgresql.org/){.external} database [service](https://www.ovhcloud.com/fr/public-cloud/postgresql/).
 
 ## Before you begin
 
@@ -52,7 +52,7 @@ Click on the `Create a database instance`{.action} button. (`Create a service`{.
 
 #### Step 1: Select PostgreSQL database
 
-Click on the PostgreSQL database and then select the version to install from the drop-down menu. Click `Next`{.action} to continue.
+Click on the PostgreSQL database and then select the version to install from the drop-down menu.
 
 ![Choose PostgreSQL database](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql01.png){.thumbnail}
 
@@ -112,7 +112,7 @@ Your database is ready when cluster status is "Ready", node status is green, and
 
 > [!warning]
 > For security reasons the default network configuration doesn't allow any incoming connections. 
-> To allow access from your application or development environment to your PostgreSQL database service, you must add your IP addresses to the service whitelist.
+> To allow access from your application or development environment to your PostgreSQL database service, you must add your IP addresses to the service authorised list.
 
 #### Add your IPs to the DB authorised list
 
@@ -127,10 +127,13 @@ An easy and quick way to test the connection is using the Postgre Command Line I
 > 💡 Tip : If you are familiar with [Docker](https://www.docker.com/){.external} or [Kubernetes](https://kubernetes.io/){.external}, you can use the psql tool inside a postgres Docker [image](https://hub.docker.com/_/postgres){.external} instead of installing the tool locally.
 >
 > Examples :
+>
 > ```sh
 > $ kubectl run postgres-client --image=postgres:latest -it --rm --restart=Never -- /bin/bash
 > ```
+>
 > or
+>
 > ```
 > $ docker run -it --rm postgres /bin/bash
 > ```
@@ -138,17 +141,12 @@ An easy and quick way to test the connection is using the Postgre Command Line I
 
 #### Connect to the database
 
-The useful parameters are:
-
 - The db Host, the db Port
     - Get them from the "General Information tab"
-
 - The db Name
     - Get it from the "Databases" tab, usually "defaultdb"
-
 - The db User
     - Get it from the "Users" tab, usually "avnadmin"
-
 - The db Password
     - Get it after you reset it.
 
@@ -159,7 +157,8 @@ Now connect to the database with the following command
 ```sh
 psql --dbname=defaultdb  --host=postgresql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net --port=20184 --username=avnadmin  --password 
 ```
-Enter the password and press Enter
+
+Enter the password and press `Enter`{.action}.
 
 <pre class="console"><code>$ psql --dbname=defaultdb  --host=postgresql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net --port=20184 --username=avnadmin  --password
 Password: 
@@ -172,20 +171,24 @@ defaultdb=>
 
 Setup is done, your Managed PostgreSQL database is fully operational, let's go further and use it with <img src="images/strapi-logo-monogram-purple.png" alt="strapi logo" width="12px"> [Strapi](https://strapi.io/){.external}.
 
-### Before beginning, repare your environment
+### Before beginning, prepare your environment
 
 What you need here is to check your nodejs and yarn versions.
 According to the official documention on [github](https://github.com/strapi/strapi){.external}, check that your existent nodejs installation matches with "NodeJS >= 12 <= 16".
 
-❗ No specific version of yarn is specified, this tutorial was made with the 1.22.17 one.
-You can follow this different tuorials if you need to install some of the tools:
+> [!warning]
+> No specific version of yarn is specified, this tutorial was made with the 1.22.17 one.
+
+You can follow these different tutorials if you need to install some of the tools:
+
 - [nodejs](https://nodejs.org/en/download/package-manager/){.external}
 - [nvm](https://github.com/nvm-sh/nvm){.external}
 - [yarn](https://classic.yarnpkg.com/lang/en/docs/install/){.external}
 
 ### Declare the nodejs version
 
-We want to use the latest LTS version of nodejs, so inside your development environment, use this command :
+We want to use the latest LTS version of nodejs, so inside your development environment, use this command:
+
 ```
 $ nvm use 16.13.1
 ```
@@ -195,14 +198,15 @@ Now using node v16.13.1 (npm v8.1.2)
 
 ### Setup a new instance of Strapi
 
-Strapi offers a simple way to install his product, with yarn.
+Strapi offers a simple way to install its product, with yarn.
 Run the following command in a terminal:
+
 ```
 yarn create strapi-app my-strapi
 ```
 
-You will be prompted to choose between the Quickstart or Custom method, select Custom and press Enter.
-If you choose the Quickstart one, default parameters will be applied and a server will automaticly start.
+You will be prompted to choose between the Quickstart or Custom method, select Custom and press `Enter`{.action}.
+If you choose the Quickstart one, default parameters will be applied and a server will automatically start.
 
 <pre class="console"><code>$ yarn create strapi-app my-strapi
 yarn create v1.22.17
@@ -218,7 +222,7 @@ success Installed "create-strapi-app@4.0.2" with binaries:
 ❯ Custom (manual settings) 
 </code></pre>
 
-On next step, select postgres and press Enter
+On the next step, select `postgres` and press `Enter`{.action}.
 
 <pre class="console"><code>
 ? Choose your installation type Custom (manual settings)
@@ -228,7 +232,7 @@ On next step, select postgres and press Enter
   mysql
 </code></pre>
 
-Then, enter your PostgreSQL database parameters, and select No when prompted for enabling SSL connection (We will review that point later)
+Then, enter your PostgreSQL database parameters, and select `No` when prompted for enabling SSL connection (We will review that point later).
 
 <pre class="console"><code>
 ? Choose your installation type Custom (manual settings)
@@ -269,8 +273,8 @@ You can start by doing:
 Done in 662.54s.
 </code></pre>
 
-You could now start you strapi application with yarn commands as described above, but we need before to modify a SSL parameter.
-If you don't, this is what happen :
+You could now start you strapi application with yarn commands as described above, but before that, we need to modify an SSL parameter.<br>
+If you don't, this is what will happen:
 
 <pre class="console"><code>$ yarn develop
 yarn run v1.22.17
@@ -295,12 +299,12 @@ error Command failed with exit code 1.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 </code></pre>
 
-This is a known bug, you can follow the issue here: https://github.com/strapi/strapi/issues/12058.
+This is a known bug, you can follow the issue here: <https://github.com/strapi/strapi/issues/12058>.
 
-Whe fix it by manually modifying the database configuration file.
-Open the config/database.js file.
+We can fix this by manually modifying the database configuration file.<br>
+Open the `config/database.js` file.
 
-It must be like:
+It should be similar to that:
 
 <pre class="console"><code>
 module.exports = ({ env }) => ({
@@ -318,11 +322,13 @@ module.exports = ({ env }) => ({
 });
 </code></pre>
 
-Replace the line
+Replace the following line:
+
 <pre class="console"><code>ssl: env.bool('DATABASE_SSL', false),
 </code></pre>
 
-with this one
+with this one:
+
 <pre class="console"><code>ssl: { rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), },
 </code></pre>
 
@@ -331,6 +337,7 @@ Save and exit the file.
 ### Start Strapi
 
 Launch the strapi application with the yarn command:
+
 ```
 yarn develop
 ```
@@ -389,33 +396,35 @@ Create your first administrator 💻 by going to the administration panel at:
 [2021-12-31 13:26:36.173] http: GET /admin/fde9b1ad0670d29a2516.png (1 ms) 200
 </code></pre>
 
-Congratulations! You have just finished the setup, the server starts end open your browser on the admin login creation page http://localhost:1337/admin/auth/register-admin.
+Congratulations! You have just finished the setup, the server starts and opens your browser on the admin login creation page http://localhost:1337/admin/auth/register-admin.
 
 ![Strapi admin login creation page](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql12.png){.thumbnail}
 
-Fill the form fields as requested, and press the Let's start button.
+Fill the form fields as requested, and press the `Let's start`{.action} button.
 
 ![Strapi dashboard page](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql13.png){.thumbnail}
 
-You are now using a Strapi connected to a OVHcloud managed PostgreSQL database.
+You are now using a Strapi connected to an OVHcloud managed PostgreSQL database.
 
 ### Controls
 
 #### Add an entry to Strapi
 
-Using the admin interface, click on the Content Manager menu, and add a user like:
+Using the admin interface, click on the `Content Manager`{.action} menu, and add a user, such as:
 
 ![Strapi create user page](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql14.png){.thumbnail}
 
-Then press the Save button.
+Then press the `Save`{.action} button.
 
 #### Check the database
 
-As describe above, connect to the PosgreSQL database with psql command line interface.
+As described above, connect to the PosgreSQL database with psql command line interface.
+
 ```
 $ psql --dbname=defaultdb  --host=postgresql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net --port=20184 --username=avnadmin  --password
 ```
-Then find in the up_users table our previous created entry, here the user named "demo":
+
+Then find, in the `up_users` table, our previously created entry. Here the user is named "demo":
 
 <pre class="console"><code>defaultdb=> SELECT id,username,email,created_at FROM public.up_users WHERE username='demo';
  id | username |      email      |       created_at       
@@ -424,16 +433,16 @@ Then find in the up_users table our previous created entry, here the user named 
 (1 row)
 </code></pre>
 
-Congratulations! This tutorial is over.
 
 ### Cleaning up
 
-To clean your Strapi, make sure it is closed by pressing CTRL+C in the terminal you used to launch it, then delete your installation folder.
+To clean your Strapi, make sure it is closed by pressing `CTRL+C`{.action} in the terminal you used to launch it, then delete your installation folder.
+
 ```
 rm -rf /home/my/app/path/my-strapi/
 ```
 
-To clean your PostgreSQL, use the manager to delete your managed PostgreSQL service:
+To clean your PostgreSQL, use the OVHcloud Control Panel to delete your managed PostgreSQL service:
 
 ![delete service menu](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql15.png){.thumbnail}
 
