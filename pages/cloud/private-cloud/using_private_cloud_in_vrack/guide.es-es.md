@@ -18,6 +18,11 @@ El vRack permite conectar distintos servicios cloud de OVHcloud entre sí, dentr
 
 **Esta guía explica cómo aplicarla**
 
+## Requisitos
+
+- Ser contacto administrador de la infraestructura [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), para recibir claves de conexión.
+- Tener un usuario activo (creado en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+
 ## Procedimiento
 
 ### Área de cliente
