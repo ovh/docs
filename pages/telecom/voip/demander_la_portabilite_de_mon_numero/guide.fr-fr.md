@@ -6,7 +6,7 @@ section: 'Numéros ou alias'
 order: 1
 ---
 
-**Dernière mise à jour le 28/01/2020**
+**Dernière mise à jour le 10/12/2021**
 
 ## Objectif
 
@@ -49,23 +49,30 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliquez sur `Demander une portabilité`{.action}.
 
-![numberport](images/porting-number-step1.png){.thumbnail}
+![numberport](images/porta-request.png){.thumbnail}
 
 Dans la page qui apparaît, deux types de demandes sont proposés. Poursuivez la lecture de cette documentation selon celui choisi.
 
-- 2.1 [Porter un numéro isolé](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#21-porter-un-numero-isole){.external}.
+- [Porter un numéro isolé](#numero-isole).
+- [Porter une tranche de numéros](#tranche-numeros).
 
-- 2.2 [Porter une tranche de numéros](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#22-porter-une-tranche-de-numeros){.external}.
+> [!primary]
+> **Cas particulier des numéros spéciaux**
+>
+> La portabilité d'un numéro spécial de Services à Valeur Ajoutée (SVA) nécessitant la validation de justificatifs d'identité spécifiques, reportez-vous d'abord à la sous-partie «[Porter un numéro spécial de Services à Valeur Ajoutée (SVA)](#numero-special) » de ce guide.
+>
+> Les numéros spéciaux (SVA) ne pouvant faire l'objet d'une demande de portabilité en numéro isolé, vous devez utiliser la demande de [portabilité d'une tranche de numéros](#tranche-numeros).
+>
 
-#### 2.1 Porter un numéro isolé
+#### Porter un numéro isolé <a name="numero-isole"></a>
 
-Cochez la case `Un numéro isolé`{.action} et renseignez le numéro isolé que vous souhaitez porter au format international (par exemple, « 0033100000000 » pour un numéro français). Ensuite, indiquez le *RIO* du numéro concerné, sélectionnez la date souhaitée de la portabilité, puis cliquez sur `Suivant`{.action}.
+Cochez la case `Un numéro isolé`{.action} et renseignez le numéro isolé que vous souhaitez porter au format international (par exemple, « 0033100000000 » pour un numéro français). Indiquez ensuite le *RIO* du numéro concerné, sélectionnez la date souhaitée de la portabilité, puis cliquez sur `Suivant`{.action}.
 
-![numberport](images/porting-number-step2.png){.thumbnail}
+![numberport](images/porting-number-step2-2021.png){.thumbnail}
 
 Dans la page suivante, renseignez avec précision les informations personnelles du titulaire de la ligne ainsi que l'adresse complète d'installation de cette dernière. Précisez également si vous souhaitez voir apparaître votre numéro dans l'annuaire. Une fois ces données complétées, cliquez sur le bouton `Suivant`{.action}.
 
-![numberport](images/porting-number-step3.png){.thumbnail}
+![numberport](images/porting-number-step3-2021.png){.thumbnail}
 
 Assurez-vous maintenant que le groupe de facturation qui apparaît est bien celui dans lequel le numéro porté doit être intégré. Si ce n'est pas le cas, modifiez-le en choisissant le bon groupe dans le menu déroulant.
 
@@ -75,13 +82,13 @@ Si vous souhaitez utiliser un autre type de configuration pour ce numéro (comme
 
 Vos choix faits, cliquez sur `Suivant`{.action}.
 
-![numberport](images/porting-number-step4.png){.thumbnail}
+![numberport](images/porting-number-step4-2021.png){.thumbnail}
 
-La dernière étape vérifie l'exactitude des informations que vous avez renseignées. Si celles-ci sont valides, il ne vous reste plus qu'à finaliser votre demande de portabilité en cliquant sur `Commander`{.action} puis en validant le bon de commande qui vous sera présenté. 
+La dernière étape consiste à finaliser votre demande de portabilité. Prenez connaissance des contrats liés à la portabilité et validez leur acceptation. Cliquez ensuite sur `Commander`{.action} et validez le bon de commande qui vous sera présenté. 
 
 Dès lors, pour suivre l'avancement de votre demande, reportez-vous aux informations de l'étape 3 « [Suivre une demande de portabilité](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation. 
 
-#### 2.2 Porter une tranche de numéros
+#### Porter une tranche de numéros <a name="tranche-numeros"></a>
 
 Pour porter tout ou partie des numéros d'une tranche, cochez la case `Un ou plusieurs numéros appartenant à une tranche de numéros (SDA)`{.action}. 
 
@@ -93,11 +100,11 @@ Renseignez alors le numéro de tête de ligne de la tranche concernée au format
 
 Sélectionnez la date souhaitée de la portabilité, puis cliquez sur `Suivant`{.action}.
 
-![numberport](images/porting-number-step5.png){.thumbnail}
+![numberport](images/porting-number-step5-2021.png){.thumbnail}
 
 Dans la page suivante, renseignez avec précision les informations personnelles du titulaire de la ligne ainsi que l'adresse complète d'installation de cette dernière. Précisez également si vous souhaitez voir apparaître vos numéros dans l'annuaire. Une fois ces données complétées, cliquez sur le bouton `Suivant`{.action}.
 
-![numberport](images/porting-number-step6.png){.thumbnail}
+![numberport](images/porting-number-step3-2021.png){.thumbnail}
 
 Assurez-vous maintenant que le groupe de facturation qui apparaît est bien celui dans lequel les numéros portés doivent être intégrés. Si ce n'est pas le cas, modifiez-le en choisissant le bon groupe dans le menu déroulant.
 
@@ -107,15 +114,15 @@ Si vous souhaitez utiliser un autre type de configuration pour ce numéro (comme
 
 Vos choix faits, cliquez sur `Suivant`{.action}.
 
-![numberport](images/porting-number-step7.png){.thumbnail}
+![numberport](images/porting-number-step4-2021.png){.thumbnail}
 
 La dernière étape vérifie l'exactitude des informations que vous avez renseignées.
 
 Verifiez bien que l'adresse et le nom du titulaire correspondent. En cas d'erreur, utilisez le bouton `Modification d'informations`{.action} prévu à cet effet.
 
-Si les informations sont valides, finalisez votre demande de portabilité en cliquant sur `Commander`{.action} puis en validant le bon de commande qui vous sera présenté. 
+Si les informations sont valides, prenez connaissance des contrats liés à la portabilité et validez leur acceptation. Finalisez votre demande de portabilité en cliquant sur `Commander`{.action} puis en validant le bon de commande qui vous sera présenté.
 
-Dès lors, vous recevrez un mandat de portabilité autorisant OVHcloud à porter les numéros souhaités. Complétez puis retournez-nous ce mandat daté et signé de moins de 3 mois, **depuis votre espace client**, au format PDF. 
+Dès lors, vous recevrez un mandat de portabilité autorisant OVHcloud à porter les numéros souhaités. Complétez puis retournez-nous ce mandat daté et signé de moins de 3 mois, **depuis votre espace client**, au format PDF.
 
 Pour cela, sélectionnez votre groupe de téléphonie dans la barre de services à gauche puis cliquez sur `Consulter mes portabilités en cours`{.action}. Cliquez alors sur `Attacher mon mandat de portabilité signé`{.action}, sous la demande de portabilité concernée, pour importer le mandat au format PDF.
 
@@ -130,17 +137,28 @@ Avant la validation manuelle du mandat par nos services techniques, vous pouvez,
 
 Pour suivre l'avancement de votre demande de portabilité, reportez-vous aux informations décrites dans l'étape 3 « [Suivre une demande de portabilité](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation.
 
+#### Porter un numéro spécial de Services à Valeur Ajoutée (SVA) <a name="numero-special"></a>
+
+L'exploitation de numéros de Services à Valeur Ajoutée (SVA) nécessite d'être en conformité avec le cadre réglementaire défini par l'ARCEP.
+<br>Lors de la portabilité d'un numéro SVA, vous devez fournir à OVHcloud des justificatifs de l'identité de votre entreprise.
+
+Une fois le numéro spécial à porter renseigné (au format international) dans le champ prévu à cet effet, cliquez sur le bouton `Vérifier l'identité`{.action}. Vous serez alors redirigé vers la procédure de vérification d'identité.
+
+> [!primary]
+> Pour plus d'informations sur cette procédure, consultez notre guide « [Valider votre identité pour l'exploitation d'un numéro spécial SVA](https://docs.ovh.com/fr/voip/validation-identite-numeros-speciaux-sva) ».
+>
+
 ### Étape 3 : suivre une demande de portabilité
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez le groupe de facturation sur lequel a été demandée la portabilité.
 
 Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliquez sur `Consulter mes portabilités en cours`{.action}.
 
-![numberport](images/porting-number-step8.png){.thumbnail}
+![numberport](images/porting-number-step8-2021.png){.thumbnail}
 
 Dans la page qui apparaît, vous trouverez l'état de vos demandes de portabilité. L'image ci-dessous montre par exemple l'avancement pour un numéro isolé.
 
-![numberport](images/porting-number-step9.png){.thumbnail}
+![numberport](images/porting-number-step9-2021.png){.thumbnail}
 
 Si, durant le processus, vous souhaitez annuler votre demande de portabilité, vous pouvez le faire, au plus tard jusqu'à 72 heures avant la date de portabilité, grâce au bouton `Annuler la portabilité ?`{.action}.
 
@@ -153,7 +171,7 @@ Vous trouverez ci-dessous un récapitulatif des différentes étapes du **proces
 |Demande envoyée à l'opérateur|La demande est envoyée à l'opérateur cédant|2 heures|
 |Accusé de l'opérateur reçu|L'opérateur cédant valide la réception de la demande|2 jours|
 |Rapport intermédiaire de l'opérateur reçu|Après vérification des informations, l'opérateur confirme le lancement de la procédure de portabilité vers OVHcloud|1 jour ouvré|
-|Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Pour vous aider, reportez-vous aux informations décrites dans l'étape 4 « [Préparer la configuration des numéros portés](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-4-preparer-la-configuration-des-numeros-portes){.external} »|11 jours|
+|Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Pour vous aider, reportez-vous aux informations décrites dans l'étape 4 « [Préparer la configuration des numéros portés](#preparer-configuration-numero) »|11 jours|
 |Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVHcloud configure le numéro sur son réseau (déclaration *APNF* et routage). La portabilité est terminée et le numéro opérationnel|3 jours ouvrés|
 
 Vous trouverez ci-dessous un récapitulatif des différentes étapes du **processus de portabilité d'une tranche de numéros** chez OVHcloud :
@@ -166,14 +184,14 @@ Vous trouverez ci-dessous un récapitulatif des différentes étapes du **proces
 |Demande envoyée à l'opérateur|Suite à la validation du mandat, la demande est envoyée à l'opérateur cédant|2 heures|
 |Accusé de l'opérateur reçu|L'opérateur cédant valide la réception de la demande|2 jours|
 |Rapport intermédiaire de l'opérateur reçu|L'opérateur cédant vérifie l'ensemble de la tranche de numéros SDA|5 jours ouvrés|
-|Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Afin de vous aider, reportez-vous aux informations décrites dans l'étape 4 « [Préparer la configuration des numéros portés](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-4-preparer-la-configuration-des-numeros-portes){.external} »| - |
+|Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Afin de vous aider, reportez-vous aux informations décrites dans l'étape 4 « [Préparer la configuration des numéros portés](#preparer-configuration-numero) »| - |
 |Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVHcloud configure les numéros sur son réseau (déclaration *APNF* et routage). Il faut en moyenne 24h pour le déploiement APNF aprés la portabilité du numéro. Pendant ces 24h, les opérateurs doivent mettre à jour leur table de routage afin que les appels arrivent bien chez OVHcloud. La portabilité est terminée et les numéros opérationnels|3 jours ouvrés|
 
-### Étape 4 : préparer la configuration des numéros portés
+### Étape 4 : préparer la configuration des numéros portés <a name="preparer-configuration-numero"></a>
 
 Vous avez la possibilité de préparer la configuration du ou des numéros portés 48 heures avant que celle-ci soit effective. Ceci peut vous permettre de limiter, voire d'éviter, une coupure de service lors de votre changement d'opérateur pour OVHcloud.
 
-Pour cela, et selon la configuration que vous souhaitez mettre en place sur vos numéros, reportez-vous aux instructions décrites dans notre documentation « [Choisir et appliquer une configuration pour un numéro alias](https://docs.ovh.com/fr/voip/quelle-configuration-est-adaptee-a-mes-besoins/){.external} ».
+Pour cela, et selon la configuration que vous souhaitez mettre en place sur vos numéros, reportez-vous aux instructions décrites dans notre documentation « [Choisir et appliquer une configuration pour un numéro alias](../quelle-configuration-est-adaptee-a-mes-besoins/) ».
 
 ## Aller plus loin
 
