@@ -28,7 +28,7 @@ cf : [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/highper
 Pour configurer rclone, éditez ou créez le fichier `~/.config/rclone/rclone.conf` et ajoutez-y ceci :
 
 ```bash
-[<remote_name>]
+[<profile_name>]
 type = s3
 provider = Other
 env_auth = false
@@ -46,32 +46,32 @@ RClone est maintenant prêt à être utilisé.
 
 Lister tous les buckets
 ```bash
-$ rclone lsd <remote_name>:
+$ rclone lsd <profile_name>:
 ```
 
 Créer un nouveau bucket
 ```bash
-$ rclone mkdir <remote_name>:mybucket
+$ rclone mkdir <profile_name>:mybucket
 ```
 
 Lister le contenu d'un bucket
 ```bash
-$ rclone ls <remote_name>:mybucket
+$ rclone ls <profile_name>:mybucket
 ```
 
 Synchroniser /home/user/documents vers un bucket
 ```bash
-$ rclone sync /home/user/documents <remote_name>:mybucket
+$ rclone sync /home/user/documents <profile_name>:mybucket
 ```
 
 Copier un fichier /home/user/file.txt dans un bucket
 ```bash
-$ rclone copy /home/user/file.txt <remote_name>:mybucket
+$ rclone copy /home/user/file.txt <profile_name>:mybucket
 ```
 
 Télécharger un fichier file.txt depuis un bucket
 ```bash
-$ rclone copy <remote_name>:mybucket/file.txt fichier.txt
+$ rclone copy <profile_name>:mybucket/file.txt fichier.txt
 ```
 
 Vous trouverez sur le site officiel de rClone une documentation précise des actions possibles: [Documentation officielle rClone](https://rclone.org/docs/){.external}.
