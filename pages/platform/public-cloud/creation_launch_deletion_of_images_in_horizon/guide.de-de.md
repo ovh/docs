@@ -39,7 +39,7 @@ In dieser Hilfe werden die Erstellung, der Start und die Löschung von Abbildern
 
 Hier müssen einige verpflichtende (*) oder optionale Angaben gemacht werden:
 
-- Image name (Name des Image) (*)
+- Image name (Name des Images) (*)
 - Image description (Beschreibung des Images)
 - Image file (Abbilddatei) (Upload von Ihrem lokalen Computer)
 - Image format (Formatieren) (*):
