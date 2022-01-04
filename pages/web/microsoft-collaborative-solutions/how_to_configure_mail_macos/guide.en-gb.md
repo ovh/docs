@@ -1,86 +1,64 @@
 ---
 title: Configuring your Exchange account on the macOS Mail app
 slug: exchange-automatic-configuration-on-mail-mac
-excerpt: Find out how to configure your Exchange email account on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra
 section: Email clients
 ---
 
-**Last updated 20th February 2018**
+**Last updated 28/12/2021**
 
 ## Objective
 
-You can configure Exchange accounts on a range of email clients, provided they are compatible. By doing so, you can use your email address with your preferred application, and benefit from Exchange's collaborative features.
+You can configure Exchange accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application. The Mail app on macOS is available for free on all Macs.
 
-**Find out how to configure your Exchange email account on the Mail app, for the following macOS operating systems: El Capitan, Sierra and High Sierra.**
+**Find out how to configure your Exchange email address on the macOS Mail app.**
 
+> [!warning]
+>
+> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> 
+> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+> 
 
 ## Requirements
 
-- You must have an [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external} solution.
-- You need to have the Mail app installed on your device.
-- You need to have the appropriate credentials for the email address you would like to configure.
-
-> [!primary]
->
-> This guide can be used for the following macOS versions: El Capitan, Sierra, High Sierra.
->
-
+- You must have an [Exchange email address](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) .
+- You need to have Mail installed on your Mac.
+- You need to have the required credentials for the email address you would like to configure.
+ 
 ## Instructions
 
-There are two ways of adding your email address to the Mail app:
+### Add account
 
-- **Via our Apple Devices tool:** Click on the following link and follow the configuration steps:  <https://autodiscover.mail.ovh.net/AppleDevices/>
+- **When the application** is first started: a setup wizard will appear, prompting you to choose your account type.
 
-- **Via the Mail app configuration assistant:** Launch the Mail app on your device.
+- **If an account has already been set up**: click `Mail`{.action} in the menu bar at the top of your screen, then `Accounts`{.action}.
 
-From this point onwards, this guide will only cover configuration using the Mail app.
+| | |
+|---|---|
+|![mailmac](images/mail-mac-exchange01.png){.thumbnail}|Select `Exchange`{.action}|
+|Enter the **Name** of your e-mail account and your  **E-mail Address**, then click `Sign in`{.action}|![mailmac](images/mail-mac-exchange02.png){.thumbnail}|
+|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|In the next window, click `Configure Manually`{.action} : <br>- Define the **Name** that will be displayed in the navigation interface <br>- Leave your **Email Address**<br>- Leave your **Password** already entered <br><br>To complete the configuration, click `Sign In`{.action}|
+|In addition to your emails, you can select other Exchange features that you want to manage from your Mac.|![mailmac](images/mail-mac-exchange04.png){.thumbnail}|
 
-### Step 1: Add the account
+### Use email address
 
-Once you have launched the Mail app on your device, you can add an account in two different ways:
+Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-- **When you open the app for the first time:** A window will appear, asking you to select a service provider for your Mail account. Select `Exchange`{.action}, then continue.
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using an account in the OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/) interface, or Using an email address via the RoundCube webmail.
 
-- **If you have already added an account:** Click `Mail`{.action} at the top of your screen, then `Add account`{.action}. Select `Exchange`{.action}, then continue.
+### Retrieve a backup of your email address
 
-![Exchange](images/configuration-mail-macos-step1.png){.thumbnail}
+If you need to make any changes that could lead to the loss of your email account data, we advise backing up the email account concerned beforehand. To do this, please read the “**Export**” section in the “**Mail on macOS**” section of our guide on [Manually migrating your email address](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/#exporting).
 
-Enter your account information:
+### Modify existing settings
 
-|Information|Description| 
-|---|---| 
-|Name|Enter the sender name that you wish to be displayed when sending emails from this address.|
-|Email address|Enter your full email address.|
-|Password|Enter your email address' password.|  
+If your email account has already been set up and you need to access the account settings to change them:
 
-Click on the `Log in`{.action} button. If the information you have entered is correct, and if the domain name is correctly configured on your Exchange service, your account will be connected.
+- Click `Mail`{.action} in the menu bar at the top of your screen, then click `Preferences`{.action}.
+- Select the account in the left-hand column, then click `Server`{.action} Settings.
 
-![Exchange](images/configuration-mail-macos-step2.png){.thumbnail}
-
-When you are asked to select the apps you want to use with your account, ensure that `Mail`{.action} is ticked, so that the application will work correctly with your email address. Other applications can also use some of some of Exchange’s collaborative features, so tick the ones you would like to make use of in this way. Once you have done so, click `Done`{.action}.
-
-To check that the account has been correctly configured, you can send a test email.
-
-![Exchange](images/configuration-mail-macos-step3.png){.thumbnail}
-
-If you experience any issues connecting your account, we recommend:
-
-- Checking the domain name configuration of your Exchange service in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Click on the `Associated domains`{.action} tab, then look in the `Diagnostic`{.action} column of the table.
-
-- Trying to enter the connection URL for your Exchange service. Enter this URL, ignoring the security certificate alert, then fill in the `Internal URL`{.action} and `External URL`{.action} fields with the details of your Exchange server.
-
-To find the server details you need, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and go to the Exchange service concerned. Click on the `General Information`{.action} tab. The relevant server and its details can be found in the `Connection`{.action} section.
-
-### Step 2: Use the email address
-
-Once you have configured your email address, you can start using it to send and receive emails straight away!
-
-OVH also offers a web application that includes various [collaborative features](https://www.ovhcloud.com/en-gb/emails/){.external}. You can access it here, using your email credentials: <https://www.ovh.co.uk/mail/>.
+![mailmac](images/mail-mac-exchange05.png){.thumbnail}
 
 ## Go further
-
-[Configuring an email address on the macOS Mail app](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/){.external}.
-
-[Configuring your Email Pro account on the macOS Mail app](https://docs.ovh.com/gb/en/emails-pro/configuring-email-pro-macos-mail/){.external}.
-
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+  
+Join our community of users on <https://community.ovh.com/en/>.

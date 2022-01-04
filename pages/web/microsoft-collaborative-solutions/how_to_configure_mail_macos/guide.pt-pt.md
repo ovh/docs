@@ -1,22 +1,21 @@
+---
+title: Configurar uma conta Exchange no Mail do macOS
+slug: exchange-configuracao-mail-mac
+section: Configuração do software cliente de e-mail Exchange
+order: 3
+---
 
----
-title: 'Configurar um endereço de e-mail no Mail do macOS'
-slug: email_partilhado_guia_de_configuracao_de_mail_para_mac_-_el_capitan
-section: Configuração num computador
-order: 03
----
+**Última atualização: 28/12/2021**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 28/12/2021**
-
 ## Objetivo
 
-As contas MX Plan podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir. A aplicação Mail no macOS está disponível gratuitamente em todos os Mac.
+As contas Exchange podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir. A aplicação Mail no macOS está disponível gratuitamente em todos os Mac.
 
-**Saiba como configurar o seu endereço de e-mail MX Plan no Mail do macOS.**
+**Saiba como configurar o seu endereço de e-mail Exchange no Mail do macOS.**
 
 > [!warning]
 >
@@ -27,7 +26,7 @@ As contas MX Plan podem ser configuradas em vários softwares de e-mail compatí
 
 ## Requisitos
 
-- Ter um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}).
+- Dispor de um endereço de e-mail [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
 - Ter o software Mail instalado no seu Mac.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
  
@@ -35,15 +34,16 @@ As contas MX Plan podem ser configuradas em vários softwares de e-mail compatí
 
 ### Adicionar a conta
 
-- **No início da aplicação**\: um assistente de configuração aparece diretamente e convida-o a escolher o seu tipo de conta.
+- **No início da aplicação**: um assistente de configuração aparece diretamente e convida-o a escolher o seu tipo de conta.
 
-- **Se uma conta já estiver configurada**\: clique em `Mail`{.action} na barra de menu no topo do ecrã e, a seguir, em `Contas`{.action}.
+- **Se uma conta já estiver configurada**: clique em `Mail`{.action} na barra de menu no topo do ecrã e, a seguir, em `Contas`{.action}.
 
 | | |
 |---|---|
-|![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Selecione `Outra conta Mail`{.action} e clique em `Conta Mail`{.action}.|
-|Introduza na janela "**Adicionar uma conta Mail**" as seguintes informações: <br>\- o **Nome** da sua conta de e-mail <br>\- O seu **endereço de e-mail** <br>\- A **password** do seu endereço de e-mail |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
-|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Na janela seguinte, preencha as informações: <br>\- Deixe o seu **endereço de e-mail** já introduzido <br>\- Introduza o seu endereço de e-mail completo em **Nome de utilizador** <br>\- Deixe a sua **password** já introduzida <br>\- Selecione `POP` ou `IMAP` (recomendado) no **Tipo de conta**<br>\- Introduza `ssl0.ovh.net` no **Servidor de receção** <br>\- Introduza igualmente `ssl0.ovh.net` no **Servidor de envio**<br><br>Para terminar a configuração, clique em `Ligar-se`{.action}|
+|![mailmac](images/mail-mac-exchange01.png){.thumbnail}|Selecione `Exchange`{.action}|
+|Introduza o **Nome** da sua conta de e-mail e o seu **endereço de e-mail**, e clique em `Aceder`{.action}|![mailmac](images/mail-mac-exchange02.png){.thumbnail}|
+|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|Na janela seguinte, clique em `Cofiguração manual`{.action}: <br>- Defina o **Nome** que aparecerá na interface de navegação <br>- Deixe o seu **endereço de e-mail**<br>- Deixe a sua **password** já introduzida <br><br>Para terminar a configuração, clique em `Ligar-se`{.action}|
+|Além dos seus e-mails, pode selecionar outras funcionalidades Exchange que deseja gerir a partir do seu Mac.|![mailmac](images/mail-mac-exchange04.png){.thumbnail}|
 
 ### Utilizar o endereço de e-mail
 
@@ -60,9 +60,9 @@ Se tiver de efetuar uma operação suscetível de causar a perda dos dados da su
 Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros da conta para os alterar:
 
 - Clique em `Mail`{.action} na barra de menu no topo do ecrã e, a seguir, em `Preferências`{.action}.
-- Selecione a conta em causa na coluna da esquerda e clique em `Regulações do servidor`{.action}.
+- Selecione a conta em causa na coluna da esquerda e, em seguida, clique em `Regulações do servidor`{.action}.
 
-![mailmac](images/mail-mac-mxplan04.png){.thumbnail}
+![mailmac](images/mail-mac-exchange05.png){.thumbnail}
 
 ## Quer saber mais?
  

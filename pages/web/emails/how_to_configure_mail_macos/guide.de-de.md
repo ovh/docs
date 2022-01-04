@@ -1,97 +1,68 @@
 ---
 title: 'Konfiguration Ihrer E-Mail-Adresse auf macOS Mail'
 slug: anleitung-mail-konfiguration-auf-macos
-excerpt: 'Hier erfahren Sie, wie Sie eine MX Plan Adresse auf der Mail App von macOS El Capitan, Sierra und High Sierra einrichten.'
 section: 'E-Mail Clients'
 order: 6
 ---
 
-**Stand 27.06.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Einleitung
+**Letzte Aktualisierung am 28.12.2021**
 
-E-Mail-Adressen aus dem MX Plan Angebot können auf einem kompatiblen E-Mail-Client eingerichtet werden. So können Sie Ihre bevorzugte App für den Versand und den Empfang Ihrer E-Mails verwenden.
+## Ziel
 
-**In dieser Anleitung erfahren Sie, wie Sie Ihre MX Plan E-Mail-Adresse auf der Mail App von macOS El Capitan, Sierra und High Sierra einrichten.**
+MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden. Die Mail App auf macOS ist auf allen Mac kostenlos verfügbar.
+
+**So konfigurieren Sie Ihre MX Plan E-Mail-Adresse auf macOS Mail.**
+
+> [!warning]
+>
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> 
 
 ## Voraussetzungen
 
-- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder bei einem [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} enthalten).
-- Die Mail App ist auf Ihrem Gerät installiert.
+- Sie verfügen über eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem OVHcloud Webhosting [enthalten](https://www.ovhcloud.com/de/web-hosting/){.external}).
+- Sie verfügen über das auf Ihrem Mac installierte Mail-Programm.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
+ 
+## In der praktischen Anwendung
 
-> [!primary]
->
-> Diese Anleitung gilt für folgende macOS Versionen: El Capitan, Sierra, High Sierra.
->
+### Account hinzufügen
 
-## Beschreibung
+- **Beim ersten Start der Anwendung**\: Es wird direkt ein Konfigurationsassistent angezeigt und Sie werden gebeten, Ihren Kontotyp zu wählen.
 
-Es gibt zwei Möglichkeiten, um Ihre E-Mail-Adresse zur Mail App hinzuzufügen:
+- **Wenn ein Account bereits eingerichtet wurde**\: Klicken Sie auf `Mail`{.action} im Menü oben auf Ihrem Bildschirm und dann auf `Accounts`{.action}.
 
-- **In nur wenigen Klicks über unser Apple Devices Tool**: Klicken Sie auf den Link [https://autodiscover.mail.ovh.net/AppleDevices/](https://autodiscover.mail.ovh.net/AppleDevices/){.external} und folgen Sie den Konfigurationsschritten.
-
-- **Folgen Sie dem Konfigurationsassistenten der Mail App**: Starten Sie die Mail App auf Ihrem Gerät.
-
-Die vorliegende Anleitung beschreibt von hier an nur die Konfiguration über die Mail App.
-
-### Schritt 1: Account hinzufügen
-
-Nachdem Sie die Mail App auf Ihrem Gerät gestartet haben, können Sie einen Account auf zwei Arten hinzufügen:
-
-- **Wenn Sie die App zum ersten Mal starten**, öffnet sich ein Fenster, in dem Sie einen Anbieter für Ihren E-Mail-Account auswählen können. Wählen Sie `Anderen Mail-Account hinzufügen`{.action} und fahren Sie fort.
-
-- **Wenn Sie bereits einen Account eingerichtet haben**, klicken Sie auf `Mail`{.action} am oberen Rand Ihres Bildschirms und anschließend auf `Account hinzufügen`{.action}. Wählen Sie `Anderen Mail-Account hinzufügen`{.action} und fahren Sie fort.
-
-![mx plan](images/configuration-mail-macos-step1.png){.thumbnail}
-
-Geben Sie Ihre Account-Daten ein:
-
-|Information|Beschreibung|
+| | |
 |---|---|
-|Name|Geben Sie die vollständige E-Mail-Adresse ein.|
-|E-Mail-Adresse|Geben Sie die vollständige E-Mail-Adresse ein.|
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
+|![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Wählen Sie `Anderen Mail-Account`{.action} aus und klicken Sie auf `Mail-Account`{.action}.|
+|Geben Sie im Fenster "**Mail Account hinzufügen**" folgende Informationen ein: <br>- **Name** Ihres E-Mail Accounts <br>\- Ihre **E-Mail Adresse** <br>- **Passwort** Ihrer E-Mail-Adresse |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
+|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Geben Sie im folgenden Fenster die Informationen ein: <br>\- Lassen Sie Ihre **E-Mail**-Adresse bereits eingeben <br>\- Geben Sie Ihre vollständige E-Mail-**Adresse unter Benutzername ein** <br>\- Lassen Sie Ihr **Passwort** bereits eingegeben <br>\- Wählen Sie `POP` oder `IMAP` (empfohlen) in **Account-Typ** aus<br>\- Geben Sie `ssl0.ovh.net`in **Empfangsserver ein** <br>\- Geben Sie auch `ssl0.ovh.net` in **Versendungsserver ein**<br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Anmelden`{.action}|
 
-Klicken Sie auf `Anmelden`{.action}. Es erscheint eine Nachricht, die Sie auffordert, fortzufahren und anschließend weitere Informationen einzugeben.
+### E-Mail-Adresse verwenden
 
-|Information|Beschreibung|
-|---|---|
-|Accounttyp|Wir empfehlen, die Standardauswahl **IMAP** zu verwenden. Sie können auch **POP** im Drop-down-Menü auswählen (dann werden Ihre E-Mails lokal in Ihrer Outlook-Anwendung gespeichert).|
-|Server für eintreffende E-Mails|Geben Sie den Server "ssl0.ovh.net" ein.|
-|Server für ausgehende E-Mails|Geben Sie den Server "ssl0.ovh.net" ein.|
+Wenn Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-Klicken Sie erneut auf `Anmelden`{.action}. Wenn Ihre Angaben korrekt sind, wird die Verbindung zu Ihrem Account hergestellt.
+OVHcloud bietet auch eine Webanwendung, mit der Sie über einen Webbrowser auf Ihre E-Mail-Adresse zugreifen können. Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Für Fragen zur Verwendung lesen Sie unsere Anleitung [Ihren Account über OWA](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/) oder [E-Mail-Adresse über das RoundCube Webmail verwenden](https://docs.ovh.com/de/emails/webmail_verwendung_von_roundcube/).
 
-![mx plan](images/configuration-mail-macos-step2.png){.thumbnail}
+### Backup Ihrer E-Mail-Adresse abrufen
 
-Stellen Sie sicher, dass Sie bei der Wahl der Anwendungen `Mail`{.action} ausgewählt lassen, damit die App den Account verwenden kann. Klicken Sie anschließend auf `Fertig`{.action}.
+Wenn Sie eine Änderung vornehmen müssen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt "**Exportieren**"im Abschnitt "**Mail auf Mac OS**"unserer Anleitung [E-Mail-Adresse manuell migrieren](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/#exportieren).
 
-Sie können eine Test-E-Mail versenden, um zu überprüfen, ob der Account korrekt eingerichtet ist.
+### Bestehende Einstellungen ändern
 
-Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwenden Sie die folgenden technischen Einstellungen für unser MX Plan Angebot:
+Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Account-Einstellungen zugreifen müssen, um diese zu ändern:
 
-- **IMAP-Konfiguration**
+- Klicken Sie auf `Mail`{.action} im Menü oben auf Ihrem Bildschirm und dann auf `Einstellungen`{.action}.
+- Wählen Sie in der linken Spalte den betreffenden Account aus und klicken Sie auf `Einstellungen des Servers`{.action}.
 
-|Servertyp|Servername|SSL|Port|
-|---|---|---|---|
-|Für eintreffende E-Mails|ssl0.ovh.net|Ja|993|
-|Für ausgehende E-Mails|ssl0.ovh.net|Ja|465| 
-
-- **POP-Konfiguration**
-
-|Servertyp|Servername|SSL|Port|
-|---|---|---|---|
-|Für eintreffende E-Mails|ssl0.ovh.net|Ja|995|
-|Für ausgehende E-Mails|ssl0.ovh.net|Ja|465|
-
-### Schritt 2: E-Mail-Adresse verwenden
-
-Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
-
-Eine OVH Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können, ist verfügbar unter [https://www.ovh.de/mail/](https://www.ovh.de/mail/){.external}. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
-
+![mailmac](images/mail-mac-mxplan04.png){.thumbnail}
 
 ## Weiterführende Informationen
-
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+ 
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
