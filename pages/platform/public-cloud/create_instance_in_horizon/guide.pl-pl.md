@@ -39,21 +39,21 @@ Wprowadź następnie odpowiednie dane. W razie potrzeby skorzystaj z poniższej 
 
 |Informacja|Szczegóły|
 |---|---|
-|Strefa dostępności|Pozostaw „nova” (wybór domyślny).|
-|Nazwa instancji|Wpisz wybraną nazwę tworzonej instancji.|
-|Szablon|Wybierz typ instancji.|
-|Liczba instancji|Wpisz liczbę instancji, które chcesz utworzyć.|
-|Źródło uruchomienia instancji|Wybierz źródło uruchomienia instancji (np. “Uruchomienie z obrazu” lub “Uruchomienie ze snapshota”).|
-|Nazwa obrazu|Wybierz obraz instancji (wyłącznie w przypadku uruchamiania instancji z obrazu).|
-|Snaphot instancji|Wybierz snapshot instancji (wyłącznie w przypadku uruchamiania instancji ze snapshota).|
-|Para kluczy|Wybierz klucz SSH, aby zalogować się do instancji (możesz utworzyć klucz, klikając symbol “+” ).|
-|Grupy zabezpieczeń|Wybierz grupę zabezpieczeń dla instancji (autoryzacja otwarcia portów).|
-|Wybrane sieci|Wybierz z listy sieć lub sieci dla instancji, które tworzysz.|
-|Spersonalizowane źródło skryptu|Wybierz źródło: “bezpośredni wpis” lub “plik”.|
-|Dane skryptu:|Wprowadź kod skryptu w odpowiednie pole (maksymalnie 16 kb).|
-|Plik skryptu|Kliknij “Przeglądaj”, aby wybrać skrypt poinstalacyjny.|
-|Partycjonowanie dysku|Wybierz: “automatyczne” lub “ręczne”.|
-|Dysk konfiguracyjny|Skonfiguruj OpenStack, aby zapisać metadane na dysku konfiguracyjnym, który zostanie przypisany do instancji w momencie jej uruchomienia.|
+|Availability Zone|Pozostaw „nova” (wybór domyślny).|
+|Instance Name|Wpisz wybraną nazwę tworzonej instancji.|
+|Flavor|Wybierz typ instancji.|
+|Count|Wpisz liczbę instancji, które chcesz utworzyć.|
+|Select Boot Source|Wybierz źródło uruchomienia instancji (np. “Uruchomienie z obrazu” lub “Uruchomienie ze snapshot”).|
+|Device Name|Wybierz obraz instancji (wyłącznie w przypadku uruchamiania instancji z obrazu).|
+|Instance Snapshot|Wybierz snapshot instancji (wyłącznie w przypadku uruchamiania instancji ze snapshota).|
+|Key Pair|Wybierz klucz SSH, aby zalogować się do instancji (możesz utworzyć klucz, klikając symbol “+” ).|
+|Security Groups|Wybierz grupę zabezpieczeń dla instancji (autoryzacja otwarcia portów).|
+|Networks|Wybierz z listy sieć lub sieci dla instancji, które tworzysz.|
+|Configuration|Wybierz źródło: “bezpośredni wpis” lub “plik”.|
+|Customization Script:|Wprowadź kod skryptu w odpowiednie pole (maksymalnie 16 kb).|
+|Load Customization Script from a file|Kliknij “Przeglądaj”, aby wybrać skrypt poinstalacyjny.|
+|Disk Partition|Wybierz: “automatyczne” lub “ręczne”.|
+|Configuration drive|Skonfiguruj OpenStack, aby zapisać metadane na dysku konfiguracyjnym, który zostanie przypisany do instancji w momencie jej uruchomienia.|
 
 > [!warning] Chociaż pole "Key Pair" nie jest obowiązkowe w interfejsie Horizon podczas tworzenia instancji, rejestracja klucza SSH jest absolutnie konieczna, aby móc połączyć się z instancją. Bez klucza SSH będziesz musiał zrestartować instancję w trybie Rescue, aby móc utworzyć hasło lub dodać klucz SSH do odpowiedniego pliku.
 >
