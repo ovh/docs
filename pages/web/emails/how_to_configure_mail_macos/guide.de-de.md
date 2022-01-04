@@ -42,7 +42,7 @@ MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingericht
 |---|---|
 |![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Wählen Sie `Anderen Mail-Account`{.action} aus und klicken Sie auf `Mail-Account`{.action}.|
 |Geben Sie im Fenster "**Mail Account hinzufügen**" folgende Informationen ein: <br>- **Name** Ihres E-Mail Accounts <br>\- Ihre **E-Mail Adresse** <br>- **Passwort** Ihrer E-Mail-Adresse |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
-|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Geben Sie im folgenden Fenster die Informationen ein: <br>\- Lassen Sie Ihre **E-Mail**-Adresse bereits eingeben <br>\- Geben Sie Ihre vollständige E-Mail-**Adresse unter Benutzername ein** <br>\- Lassen Sie Ihr **Passwort** bereits eingegeben <br>\- Wählen Sie `POP` oder `IMAP` (empfohlen) in **Account-Typ** aus<br>\- Geben Sie `ssl0.ovh.net`in **Empfangsserver ein** <br>\- Geben Sie auch `ssl0.ovh.net` in **Versendungsserver ein**<br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Anmelden`{.action}|
+|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Geben Sie im folgenden Fenster die Informationen ein: <br>\- Lassen Sie Ihre **E-Mail**-Adresse bereits eingeben <br>\- Geben Sie Ihre vollständige E-Mail-**Adresse unter Benutzername ein** <br>\- Lassen Sie Ihr **Passwort** bereits eingegeben <br>\- Wählen Sie `POP` oder `IMAP` (empfohlen) in **Account-Type** aus<br>\- Geben Sie `ssl0.ovh.net` in **Empfangsserver ein** <br>\- Geben Sie auch `ssl0.ovh.net` in **Versendungsserver ein**<br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Anmelden`{.action}|
 
 ### E-Mail-Adresse verwenden
 
