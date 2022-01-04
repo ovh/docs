@@ -27,7 +27,7 @@ A seguir, clique em `Compute`{.action} no menu à esquerda e, de seguida, em `In
 
 ![createinstance](images/create-instance-step1.png){.thumbnail}
 
-A nova página que aparece permite visualizar as instâncias atualmente lançadas. Para iniciar uma nova instância, clique no botão `Lançar uma instância`{.action}.
+A nova página que aparece permite visualizar as instâncias atualmente lançadas. Para iniciar uma nova instância, clique no botão `Launch Instance`{.action}.
 
 ![createinstance](images/create-instance-step2.png){.thumbnail}
 
@@ -54,7 +54,7 @@ Deverá preencher as diferentes informações. Caso seja necessário, consulte a
 > [!warning] Embora o campo "Key Pair" não seja obrigatório na interface Horizon aquando da criação de uma instância, o registo de uma chave SSH é absolutamente necessário para poder ligar-se a uma instância. Sem chave SSH, será obrigado a reiniciar a instância em modo rescue para poder criar uma palavra-passe ou adicionar uma chave SSH ao ficheiro adequado.
 >
 
-Assim que estiver pronto para lançar a(s) instância(s) pretendida(s), clique no botão `Iniciar`{.action}.
+Assim que estiver pronto para lançar a(s) instância(s) pretendida(s), clique no botão `Launch Instance`{.action}.
 
 ![createinstance](images/create-instance-step3.png){.thumbnail}
 

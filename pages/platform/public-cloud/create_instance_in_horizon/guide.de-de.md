@@ -6,7 +6,7 @@ section: 'Horizon'
 legacy_guide_number: g1772
 ---
 
-**Letzte Aktualisierung am 16.07.2019**
+**Letzte Aktualisierung am 04.01.2022**
 
 ## Ziel
 
@@ -23,11 +23,11 @@ Sie haben die Möglichkeit, Instanzen direkt über das Horizon-Interface zu erst
 
 Um eine Instanz zu erstellen, loggen Sie sich zunächst im Horizon-Interface ein. Wenn Sie hierbei Hilfe brauchen, lesen Sie unsere Anleitung [Auf das Horizon-Interface zugreifen](../erstellung_eines_zugangs_zu_horizon/){.external}.
 
-Klicken Sie dann im linken Menü auf `Compute`{.action} und anschließend auf `Instanzen`{.action}.
+Klicken Sie dann im linken Menü auf `Compute`{.action} und anschließend auf `Instances`{.action}.
 
 ![Instanz erstellen](images/create-instance-step1.png){.thumbnail}
 
-Auf der angezeigten Seite können Sie die bereits gestarteten Instanzen einsehen. Um eine neue Instanz zu starten, klicken Sie auf den Button `Instanz starten`{.action}.
+Auf der angezeigten Seite können Sie die bereits gestarteten Instanzen einsehen. Um eine neue Instanz zu starten, klicken Sie auf den Button `Launch Instance`{.action}.
 
 ![Instanz erstellen](images/create-instance-step2.png){.thumbnail}
 
@@ -54,7 +54,7 @@ Geben Sie dann die angeforderten Informationen ein. Falls Sie beim Ausfüllen de
 > [!warning] Obwohl das Feld "Key Pair" bei der Erstellung einer Instanz im Horizon-Interface nicht obligatorisch ist, ist die Speicherung eines SSH-Schlüssels absolut notwendig, um sich mit einer Instanz verbinden zu können. Ohne SSH-Schlüssel müssen Sie die Instanz im Rescue-Modus neu starten, um ein Passwort zu erstellen oder einen SSH-Schlüssel in der entsprechenden Datei hinzuzufügen.
 >
 
-Sobald Sie bereit sind, um die gewünschten Instanzen zu starten, klicken Sie auf den Button `Starten`{.action}.
+Sobald Sie bereit sind, um die gewünschten Instanzen zu starten, klicken Sie auf den Button `Launch Instance`{.action}.
 
 ![Instanz erstellen](images/create-instance-step3.png){.thumbnail}
 

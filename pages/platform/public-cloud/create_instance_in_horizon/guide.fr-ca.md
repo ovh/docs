@@ -27,7 +27,7 @@ Cliquez ensuite sur `Compute`{.action} dans le menu de gauche, puis sur `Instanc
 
 ![createinstance](images/create-instance-step1.png){.thumbnail}
 
-La page qui s'affiche permet de visualiser les instances lancées actuellement. Pour en démarrer une nouvelle, cliquez sur le bouton `Lancer une instance`{.action}.
+La page qui s'affiche permet de visualiser les instances lancées actuellement. Pour en démarrer une nouvelle, cliquez sur le bouton `Launch Instance`{.action}.
 
 ![createinstance](images/create-instance-step2.png){.thumbnail}
 
@@ -54,7 +54,7 @@ Vous devez alors compléter différentes informations. Si nécessaire, aidez-vou
 > [!warning] Bien que le champ "Key Pair" ne soit pas obligatoire dans l'interface Horizon lors de la création d'une instance, l'enregistrement d'une clé SSH est absolument nécessaire pour pouvoir se connecter à une instance. Sans clé SSH, vous serez amené à redémarrer l'instance en mode rescue pour pourvoir créer un mot de passe ou ajouter une clé SSH dans le fichier approprié.
 >
 
-Dès que vous êtes prêt à lancer la ou les instances souhaitées, cliquez sur le bouton `Démarrer`{.action}.
+Dès que vous êtes prêt à lancer la ou les instances souhaitées, cliquez sur le bouton `Launch Instance`{.action}.
 
 ![createinstance](images/create-instance-step3.png){.thumbnail}
 
