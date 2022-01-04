@@ -33,7 +33,7 @@ Dodawanie spersonalizowanych obrazów jest możliwe w interfejsie OpenStack Hori
 
 ![public-cloud](images/horizon_images.png){.thumbnail}
 
-- Można uruchomić obraz z adresu URL lub utworzyć obraz klikając na przycisk Utwórz obraz. Otworzy się następujące menu:
+- Można uruchomić obraz z adresu URL lub utworzyć obraz klikając na przycisk `Create Image`{.action}. Otworzy się następujące menu:
 
 ![public-cloud](images/horizon_create_image.png){.thumbnail}
 

@@ -57,7 +57,7 @@ Ci sono vari campi da completare, alcuni obbligatori (*) e altri facoltativi:
 |VHD|Microsoft format|
 |VMDK|VMware format|
 
-- Architettura (Architecture): x86_64
+- Architecture (Architettura): x86_64
 - Spazio disco minimo (in GB): se non specificato, il valore di default è 0.
 - RAM minima (in MB): se non specificato, il valore di default è 0.
 

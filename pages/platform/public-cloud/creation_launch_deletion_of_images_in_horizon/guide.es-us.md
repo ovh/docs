@@ -54,7 +54,7 @@ Cumplimente el formulario. Los campos marcados con asterisco (*) son obligatorio
 |VHD|Microsoft format|
 |VMDK|VMware format|
 
-- Arquitectura (Architecture): x86_64
+- Architecture (Arquitectura): x86_64
 - Disco mínimo (GB): si no indica nada, el valor por defecto es 0.
 - Memoria RAM mínima (MB): si no indica nada, el valor por defecto es 0.
 
@@ -73,7 +73,7 @@ Utilizando el menú desplegable de la columna **Actions** es posible:
 ![](images/horizon_launch_image.png){.thumbnail}
 
 - editar los detalles de la imagen (solo para las imágenes que haya creado usted);
-- eliminar la imagen (solo para las imágenes que haya creado usted), en cuyo caso deberá confirmar la acción haciendo clic en el botón «Eliminar imagen».
+- eliminar la imagen (solo para las imágenes que haya creado usted), en cuyo caso deberá confirmar la acción haciendo clic en el botón `Delete Image`{.action}.
 
 ![](images/horizon_delete_image.png){.thumbnail}
 

@@ -34,7 +34,7 @@ Esta operação permite-lhe, por exemplo, importar as suas imagens das antigas m
 
 ![public-cloud](images/horizon_images.png){.thumbnail}
 
-- É agora possível iniciar uma imagem a partir de um URL ou criar uma através do botão "Criar uma imagem", o que abrirá o seguinte menu:
+- É agora possível iniciar uma imagem a partir de um URL ou criar uma através do botão `Create Image`{.action}, o que abrirá o seguinte menu:
 
 ![public-cloud](images/horizon_create_image.png){.thumbnail}
 
@@ -58,7 +58,7 @@ Diferentes campos terão de ser preenchidos e alguns deles são obrigatórios (*
 |VMDK|VMware format|
 
 
-- Arquitetura (Architecture): x86_64
+- Architecture (Arquitetura): x86_64
 - Espaço de disco mínimo (em GB) : se não for especificado, o valor padrão será 0.
 - RAM mínima (em MB): se não for especificado, o valor padrão será 0.
 

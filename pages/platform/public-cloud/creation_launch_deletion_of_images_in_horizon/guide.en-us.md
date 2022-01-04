@@ -33,7 +33,7 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 
 ![public-cloud](images/horizon_images.png){.thumbnail}
 
-- You can then launch an image from a URL, or create a custom image by clicking the Create Image button, which opens the following menu:
+- You can then launch an image from a URL, or create a custom image by clicking the `Create Image`{.action} button, which opens the following menu:
 
 
 ![public-cloud](images/horizon_create_image.png){.thumbnail}
