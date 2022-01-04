@@ -6,7 +6,7 @@ section: Horizon
 order: 4
 ---
 
-**Last updated 27th March 2018**
+**Last updated 30th December 2021**
 
 ## Objective
 
@@ -37,7 +37,7 @@ You will then need to fill in the information requested. If you need to do so, y
 |---|---|
 |Availability zone|Leave "nova" (default choice).|
 |Instance name|Specify the name you want for the Instance that will be launched.|
-|Template|Select the type of Instance to launch.|
+|Template (Flavor)|Select the type of Instance to launch.|
 |Count|Specify the number of Instances to launch.|
 |Instance launch source|Select the source for launching an instance (e.g. "Launch from an image" or "Launch from a snapshot").|
 |Image name|Select the Instance image (only when launching from an image).|

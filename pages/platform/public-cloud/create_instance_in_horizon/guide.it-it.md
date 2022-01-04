@@ -6,7 +6,11 @@ section: Gestione da Horizon
 legacy_guide_number: g1772
 ---
 
-**Ultimo aggiornamento: 21/08/2019**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 31/12/2021**
 
 ## Obiettivo
 
@@ -47,7 +51,7 @@ A questo punto completa i campi con le informazioni richieste aiutandoti, se nec
 |Networks|Seleziona dalla lista la rete o le reti tra quelle disponibili|
 |Configuration|Indica la sorgente inserendo direttamente lo script o caricando un file|
 |Customization Script|Inserisci il codice dello script (massimo 16 KB)|
-|Load Customization Script from a fi|Seleziona lo script di post-installazione|
+|Load Customization Script from a file|Seleziona lo script di post-installazione|
 |Disk Partition|Scegli tra “Automatica” o “Manuale”|
 |Configuration Drive|Configura OpenStack per scrivere i metadati su un disco di configurazione specifico che all’avvio sarà associato all’istanza.|
 
