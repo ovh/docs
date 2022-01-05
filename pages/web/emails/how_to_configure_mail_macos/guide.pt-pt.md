@@ -1,4 +1,3 @@
-
 ---
 title: 'Configurar um endereço de e-mail no Mail do macOS'
 slug: email_partilhado_guia_de_configuracao_de_mail_para_mac_-_el_capitan
