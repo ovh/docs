@@ -6,7 +6,7 @@ order: 03
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zaproponuj zmianę" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 28-12-2021**
@@ -21,12 +21,12 @@ Konta MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów poc
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "Sprawdź również".
 > 
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
+- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/))
 - Instalacja programu Mail na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
  
@@ -34,15 +34,15 @@ Konta MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów poc
 
 ### Dodaj konto
 
-- **Podczas pierwszego uruchomienia aplikacji**\: wyświetli się asystent konfiguracji i poprosi o wybór typu konta.
+- **Podczas pierwszego uruchomienia aplikacji**: wyświetli się asystent konfiguracji i poprosi o wybór typu konta.
 
-- **Jeśli konto zostało wcześniej skonfigurowane**\: kliknij `Mail`{.action} na pasku menu na górze ekranu, a następnie kliknij `Konta`{.action}.
+- **Jeśli konto zostało wcześniej skonfigurowane**: kliknij `Mail`{.action} na pasku menu na górze ekranu, a następnie kliknij `Konta`{.action}.
 
 | | |
 |---|---|
 |![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Wybierz `Inne konto Mail`{.action}, a następnie kliknij `Konto Mail`{.action}.|
-|W oknie "**Dodaj konto Mail**" wpisz następujące informacje: <br>- **Nazwa** konta e-mail <br>\- Twój **adres e-mail** <br>- **Hasło** do Twojego konta e-mail |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
-|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|W następnym oknie wprowadź informacje: <br>\- Pozostaw Twój **adres e-mail**, który został wcześniej wpisany <br>\- Wpisz pełny adres e-mail w **Nazwisko użytkownika** <br>\- Zostaw **hasło** już wprowadzone <br>\- Wybierz `POP` lub `IMAP` (zalecane) w **Typ konta**<br>\- Wpisz `ssl0.ovh.net` w **Serwerze odbiorczym** <br>\- Wprowadź również `ssl0.ovh.net` w **Serwerze poczty wychodzącej**<br><br>Aby dokończyć konfigurację, kliknij `Zaloguj się`{.action}|
+|W oknie "**Dodaj konto Mail**" wpisz następujące informacje: <br>- **Nazwa** konta e-mail <br>- Twój **adres e-mail** <br>- **Hasło** do Twojego konta e-mail |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
+|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|W następnym oknie wprowadź informacje: <br>- Pozostaw Twój **adres e-mail**, który został wcześniej wpisany <br>- Wpisz pełny adres e-mail w **Nazwisko użytkownika** <br>- Zostaw **hasło** już wprowadzone <br>- Wybierz `POP` lub `IMAP` (zalecane) w **Typ konta**<br>- Wpisz `ssl0.ovh.net` w **Serwerze odbiorczym** <br>- Wprowadź również `ssl0.ovh.net` w **Serwerze poczty wychodzącej**<br><br>Aby dokończyć konfigurację, kliknij `Zaloguj się`{.action}|
 
 ### Użyj konta e-mail
 
