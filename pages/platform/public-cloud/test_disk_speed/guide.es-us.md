@@ -111,4 +111,6 @@ En este ejemplo, podemos ver cómo las prestaciones del disco corresponden a 891
 
 ## Más información
 
+[Crear y configurar un disco adicional en una instancia](https://docs.ovh.com/us/es/public-cloud/crear_y_configurar_un_disco_adicional_en_una_instancia/)
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

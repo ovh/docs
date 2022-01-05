@@ -111,5 +111,7 @@ Nel nostro esempio, le prestazioni del disco corrispondono a circa 891 IOPS.
 
 
 ## Per saperne di più
+
+[Crea e configura un disco aggiuntivo sulla tua istanza](https://docs.ovh.com/it/public-cloud/crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/)
   
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -109,5 +109,7 @@ write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 
 
 ## Quer saber mais?
+
+[Criar e configurar um disco suplementar numa instância](https://docs.ovh.com/pt/public-cloud/criar_e_configurar_um_disco_suplementar_numa_instancia/)
  
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

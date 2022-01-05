@@ -109,5 +109,7 @@ write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 In diesem Beispiel liefert die getestete Festplatte also etwa 891 IOPS.
 
 ## Weiterführende Informationen
+
+[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](https://docs.ovh.com/de/public-cloud/erstellen_zustzliche_festplatte_public_cloud/)
  
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

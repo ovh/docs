@@ -110,5 +110,7 @@ W tym przypadku możemy zobaczyć, że wydajność dysku to 891 iops.
 
 
 ## Sprawdź również
+
+[Zarządzanie wolumenem instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/)
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
