@@ -6,7 +6,7 @@ order: 03
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 **Última actualización: 28/12/2021**
@@ -21,12 +21,12 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado "Más información" de esta guía.
 > 
 
 ## Requisitos
 
-- Disponer de una cuenta MX Plan (incluida en un MX Plan o en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}).
+- Disponer de una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/)).
 - Tener el programa Mail instalado en su Mac.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
  
@@ -34,21 +34,21 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 ### Añadir la cuenta
 
-- **En la primera ejecución de la aplicación**\: se le mostrará directamente un asistente de configuración, que le pedirá que elija el tipo de cuenta.
+- **En la primera ejecución de la aplicación**: se le mostrará directamente un asistente de configuración, que le pedirá que elija el tipo de cuenta.
 
-- **Si ya ha configurado** una cuenta: haga clic en `Mail`{.action} en el menú superior y seleccione `Cuentas`{.action}.
+- **Si ya ha configurado una cuenta**: haga clic en `Mail`{.action} en el menú superior y seleccione `Cuentas`{.action}.
 
 | | |
 |---|---|
 |![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Seleccione `Otra cuenta de correo`{.action} y haga clic en `Cuentas de correo`{.action}.|
-|Introduzca en la ventana "**Añadir cuenta de correo**" la siguiente información: <br>\- el **nombre** de su cuenta de correo <br>\- Su **dirección de correo electrónico** <br>\- La **contraseña** de su dirección de correo electrónico |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
-|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Introduzca la información en la siguiente ventana: <br>\- Deje su **dirección de correo electrónico** ya introducida <br>\- Introduzca su dirección de correo electrónico completa en el **Nombre de usuario** <br>\- Deje su **contraseña** ya introducida <br>\- Seleccione `POP` o `IMAP` (recomendado) en **Tipo de cuenta**<br>\- Introduzca `ssl0.ovh.net` en el **servidor de recepción** <br>\- Introduzca también `ssl0.ovh.net` en el **servidor de envío**<br><br>Para finalizar la configuración, haga clic en `Conectar`{.action}|
+|Introduzca en la ventana "**Añadir cuenta de correo**" la siguiente información: <br>- el **nombre** de su cuenta de correo <br>- Su **dirección de correo electrónico** <br>- La **contraseña** de su dirección de correo electrónico |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
+|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Introduzca la información en la siguiente ventana: <br>- Deje su **dirección de correo electrónico** ya introducida <br>- Introduzca su dirección de correo electrónico completa en el **Nombre de usuario** <br>- Deje su **contraseña** ya introducida <br>\- Seleccione `POP` o `IMAP` (recomendado) en **Tipo de cuenta**<br>- Introduzca `ssl0.ovh.net` en el **servidor de recepción** <br>- Introduzca también `ssl0.ovh.net` en el **servidor de envío**<br><br>Para finalizar la configuración, haga clic en `Conectar`{.action}|
 
 ### Utilizar la dirección de correo
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/) o [Utilizar su dirección de correo desde el webmail Roundcube](https://docs.ovh.com/es/emails/webmail_guia_de_uso_de_roundcube/).
+OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Usar Outlook Web App con una cuenta Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/).
 
 ### Obtener una copia de seguridad de su dirección de correo
 
