@@ -1,13 +1,13 @@
 ---
-title: 'Les erreurs récurrentes lors de l’utilisation d’un logiciel FTP'
-excerpt: 'Retrouvez ici les anomalies liées à votre logiciel FTP les plus fréquentes'
+title: 'Résoudre les erreurs récurrentes lors de l’utilisation d’un logiciel FTP'
+excerpt: 'Retrouvez ici les anomalies les plus fréquentes liées à votre logiciel FTP'
 slug: mutualise-les-problemes-ftp-recurrents
 legacy_guide_number: 1996
 section: 'FTP et SSH'
 order: 3
 ---
 
-**Dernière mise à jour le 04/01/2022**
+**Dernière mise à jour le 05/01/2022**
 
 ## Objectif
 
@@ -39,7 +39,8 @@ Si les données que vous souhaitez échanger par ce biais ne sont pas confidenti
 
 Dans le cas contraire, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action} puis `Hébergements`{.action}. Sélectionnez l'hébergement concerné puis choisissez l'onglet `FTP-SSH`{.action}.
 
-Cliquez sur le bouton `...`{.action} à droite de la ligne de l'utilisateur FTP concerné puis sur `Modifier`{.action}. Choisissez SFTP ou SSH (si vous disposez d'un [hébergement Pro](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml)), cliquez sur `Suivant`{.action} puis `Valider`{.action}.
+Cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP concerné puis sur `Modifier`{.action}.<br>
+Choisissez SFTP ou SSH (si vous disposez d'un [hébergement Pro](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml)), cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
 > [!primary]
 >
@@ -48,9 +49,9 @@ Cliquez sur le bouton `...`{.action} à droite de la ligne de l'utilisateur FTP 
 
 ### J'ai transféré mes fichiers avec un logiciel FTP, mais mon site ne s'affiche pas.
 
-Vérifiez tout d'abord que les fichiers et dossiers de votre site sont bien présents dans le [Dossier racine](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#3-telecharger-les-fichiers-sur-lespace-de-stockage) de votre hébergement.
+Vérifiez tout d'abord que les fichiers et dossiers de votre site sont bien présents dans le [dossier racine](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#3-telecharger-les-fichiers-sur-lespace-de-stockage) de votre hébergement.
 
-Si vous avez réalisé une modification dans vos [serveurs ou votre zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) il y a moins de 48 heures, patientez et redémarrer régulièrement vos appareils afin de vider leurs caches.
+Si vous avez réalisé une modification dans vos [serveurs ou votre zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) il y a moins de 48 heures, patientez et redémarrez régulièrement vos appareils afin de vider leur cache.
 
 ### Mes identifiants FTP ne fonctionnent pas.
 
@@ -62,7 +63,7 @@ Le manque d'espace sur votre hébergement mutualisé peut entraîner des dysfonc
 
 Pour vérifier l'espace de stockage restant sur votre hébergement, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action} puis `Hébergements`{.action}. Sélectionnez l'hébergement concerné.
 
-La quantité de données enregistrée sur votre serveur d'hébergement (Hors bases de données) apparaît dans la partie `Informations générales`{.action}, `Espace disque`{.action} :
+La quantité de données enregistrée sur votre serveur d'hébergement (hors bases de données) apparaît dans la partie `Informations générales` > `Espace disque`.
 
 ![disk_space](images/disk_space.png){.thumbnail}
 
@@ -70,9 +71,9 @@ La quantité de données enregistrée sur votre serveur d'hébergement (Hors bas
 
 Vérifiez que votre logiciel FTP est connecté en « Mode Passif » (Mode de configuration d'un serveur FTP dans lequel le serveur détermine le port de connexion).
 
-Pour [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/), par exemple, cliquez sur `Édition`{.action}, puis `Paramètres`{.action}, `Connexion`{.action}, `FTP`{.action} et choisissez `Passif (recommandé)`{.action}.
+Par exemple pour [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/), cliquez sur `Édition`{.action}, puis `Paramètres`{.action}, `Connexion`{.action}, `FTP`{.action} et choisissez `Passif (recommandé)`{.action}.
 
-Limitez également la taille de vos transferts de données (Vous ne pourrez pas envoyer plus de **5000 fichiers et dossiers** sur les serveurs mutualisés OVHcloud en un seul transfert). Effectuez vos imports en plusieurs fois si nécessaire en utilisant des dossiers compressés.
+Limitez également la taille de vos transferts de données (vous ne pourrez pas envoyer plus de **5000 fichiers et dossiers** sur les serveurs mutualisés OVHcloud en un seul transfert). Effectuez vos imports en plusieurs fois si nécessaire en utilisant des dossiers compressés.
 
 Si vous disposez d'une [formule Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), utilisez de préférence le [protocole SSH](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/) pour réaliser vos imports de fichiers sur l'espace de stockage de fichiers de votre hébergement.
 
@@ -82,7 +83,7 @@ Ce lien est installé par défaut sur les hébergements mutualisés OVHcloud. Il
 
 ![site_under_construction](images/site_under_construction.png){.thumbnail}
 
-Si vous n'avez pas utilisé la fonctionnalité « [Module en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) » pour créer votre site, vous devrez utiliser le logiciel [Net2FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer) accessible via [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) afin de supprimer manuellement la page « Site en construction ».
+Si vous n'avez pas utilisé la fonctionnalité « [Module en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) » pour créer votre site, vous devrez utiliser le logiciel [Net2FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer) accessible via l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) afin de supprimer manuellement la page « Site en construction ».
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
