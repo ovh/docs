@@ -124,4 +124,4 @@ Si los datos son correctos, podrá interactuar con su espacio de almacenamiento.
 
 [Web hosting: SSH en alojamiento compartido](../web_hosting_ssh_en_alojamiento_compartido/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

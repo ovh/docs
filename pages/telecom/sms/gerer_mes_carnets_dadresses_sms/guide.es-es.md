@@ -104,4 +104,4 @@ Para editar o eliminar un contacto, haga clic en el icono con forma de tres punt
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

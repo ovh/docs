@@ -186,4 +186,4 @@ Il numero del dispositivo _sg_ verrà mostrato in questo modo: `/dev/sg0`, `/dev
 
 [Configurare un RAID hardware](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (in inglese)
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -165,4 +165,4 @@ Da questo momento è possibile completare l'installazione del sito o la migrazio
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/]( https://www.ovh.it/community/)
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>

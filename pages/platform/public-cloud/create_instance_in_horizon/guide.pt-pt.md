@@ -6,7 +6,11 @@ legacy_guide_number: g1772
 section: Gestão a partir do Horizon
 ---
 
-**Última atualização: 23/04/2019**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 31/12/2021**
 
 ## Sumário
 
@@ -16,7 +20,7 @@ Tem a possibilidade de criar instâncias diretamente a partir da interface Horiz
 
 ## Requisitos
 
-- Dispor de um projeto [Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external} na sua conta OVH.
+- Dispor de um projeto [Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external} na sua conta OVHcloud.
 - [Ter acesso à interface Horizon](../criar_um_acesso_a_interface_horizon/){.external}. 
 
 ## Instruções
@@ -27,7 +31,7 @@ A seguir, clique em `Compute`{.action} no menu à esquerda e, de seguida, em `In
 
 ![createinstance](images/create-instance-step1.png){.thumbnail}
 
-A nova página que aparece permite visualizar as instâncias atualmente lançadas. Para iniciar uma nova instância, clique no botão `Lançar uma instância`{.action}.
+A nova página que aparece permite visualizar as instâncias atualmente lançadas. Para iniciar uma nova instância, clique no botão `Launch Instance`{.action}.
 
 ![createinstance](images/create-instance-step2.png){.thumbnail}
 
@@ -51,7 +55,10 @@ Deverá preencher as diferentes informações. Caso seja necessário, consulte a
 |Particionamento do disco|Escolha entre “automático” ou “manual”|
 |Disco de configuração|Configure o OpenStack para escrever os metadados num disco de configuração específico que ficará associado à instância no momento do lançamento|
 
-Assim que estiver pronto para lançar a(s) instância(s) pretendida(s), clique no botão `Iniciar`{.action}.
+> [!warning] Embora o campo "Key Pair" não seja obrigatório na interface Horizon aquando da criação de uma instância, o registo de uma chave SSH é absolutamente necessário para poder ligar-se a uma instância. Sem chave SSH, será obrigado a reiniciar a instância em modo rescue para poder criar uma palavra-passe ou adicionar uma chave SSH ao ficheiro adequado.
+>
+
+Assim que estiver pronto para lançar a(s) instância(s) pretendida(s), clique no botão `Launch Instance`{.action}.
 
 ![createinstance](images/create-instance-step3.png){.thumbnail}
 
