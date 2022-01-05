@@ -1,21 +1,20 @@
 ---
-title: 'Configurar una cuenta de correo electrónico en Mail de macOS'
-slug: correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan
-section: Configuración en el ordenador
-order: 03
+title: Configurar una cuenta Exchange en Mail de macOS
+slug: configuracion-mail-macos
+section: Configuración del cliente de correo Exchange
 ---
+
+**Última actualización: 28/12/2021**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 28/12/2021**
-
 ## Objetivo
 
-Es posible configurar sus cuentas MX Plan en el cliente de correo que usted utilice, siempre que sea compatible, para poder acceder a ellas desde cualquiera de sus dispositivos. La aplicación Mail en macOS está disponible gratuitamente en todos los Mac.
+Es posible configurar sus cuentas Exchange en el cliente de correo electrónico que usted utilice, siempre que sea compatible. para poder acceder a ellas desde cualquiera de sus dispositivos. La aplicación Mail en macOS está disponible gratuitamente en todos los Mac.
 
-**Esta guía explica cómo configurar una cuenta MX Plan en Mail de macOS.**
+**Esta guía explica cómo configurar una cuenta de correo Exchange en Mail de macOS.**
 
 > [!warning]
 >
@@ -26,7 +25,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 ## Requisitos
 
-- Disponer de una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/)).
+- Disponer de una dirección de correo [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/).
 - Tener el programa Mail instalado en su Mac.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
  
@@ -36,19 +35,20 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 - **En la primera ejecución de la aplicación**: se le mostrará directamente un asistente de configuración, que le pedirá que elija el tipo de cuenta.
 
-- **Si ya ha configurado una cuenta**: haga clic en `Mail`{.action} en el menú superior y seleccione `Cuentas`{.action}.
+- **Si ya ha configurado** una cuenta: haga clic en `Mail`{.action} en el menú superior y seleccione `Cuentas`{.action}.
 
 | | |
 |---|---|
-|![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Seleccione `Otra cuenta de correo`{.action} y haga clic en `Cuentas de correo`{.action}.|
-|Introduzca en la ventana "**Añadir cuenta de correo**" la siguiente información: <br>- el **nombre** de su cuenta de correo <br>- Su **dirección de correo electrónico** <br>- La **contraseña** de su dirección de correo electrónico |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
-|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Introduzca la información en la siguiente ventana: <br>- Deje su **dirección de correo electrónico** ya introducida <br>- Introduzca su dirección de correo electrónico completa en el **Nombre de usuario** <br>- Deje su **contraseña** ya introducida <br>\- Seleccione `POP` o `IMAP` (recomendado) en **Tipo de cuenta**<br>- Introduzca `ssl0.ovh.net` en el **servidor de recepción** <br>- Introduzca también `ssl0.ovh.net` en el **servidor de envío**<br><br>Para finalizar la configuración, haga clic en `Conectar`{.action}|
+|![mailmac](images/mail-mac-exchange01.png){.thumbnail}|Seleccione `Exchange`{.action}|
+|Introduzca el **Nombre** de su cuenta e-mail y su **dirección de correo electrónico** y haga clic en `Conectarse`{.action}|![mailmac](images/mail-mac-exchange02.png){.thumbnail}|
+|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|En la siguiente ventana, haga clic en `Configuración manual`{.action}: <br>- Defina el **Nombre** que se mostrará en la interfaz de navegación <br>- Deje su **dirección de correo electrónico**<br>- Deje su **contraseña** ya introducida <br><br>Para finalizar la configuración, haga clic en `Conectar`{.action}|
+|Además de los mensajes de correo, puede seleccionar otras funcionalidades Exchange que quiera gestionar desde su Mac.|![mailmac](images/mail-mac-exchange04.png){.thumbnail}|
 
 ### Utilizar la dirección de correo
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.com/world/es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Usar Outlook Web App con una cuenta](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/) o [Roundcube](https://docs.ovh.com/us/es/emails/webmail_guia_de_uso_de_roundcube/).
+OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.com/world/es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta desde la interfaz OWA](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/).
 
 ### Obtener una copia de seguridad de su dirección de correo
 
@@ -61,7 +61,7 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 - En la parte superior de la pantalla, haga clic en `Correo electrónico`{.action} y seleccione `Preferencias`{.action}.
 - Seleccione la cuenta correspondiente en la columna de la izquierda y haga clic en `Ajustes del servidor`{.action}.
 
-![mailmac](images/mail-mac-mxplan04.png){.thumbnail}
+![mailmac](images/mail-mac-exchange05.png){.thumbnail}
 
 ## Más información
   
