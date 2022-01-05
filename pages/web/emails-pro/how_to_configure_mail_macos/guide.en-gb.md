@@ -17,23 +17,22 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 > 
-> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the "Go further" section of this guide.
 > 
 
 ## Requirements
 
-- an [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) address
-- You need to have Mail installed on your Mac.
+- an [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) address.
+- You need to have **Mail** installed on your Mac.
 - You need to have the required credentials for the email address you would like to configure.
  
 ## Instructions
 
 > [!warning]
 >
-> In our example, we use the server comment: pro**?*.mail.ovh.net. You will need to replace the “?” by the number designating the server for your Email Pro service.
+> In our example, we use a server "pro**?**.mail.ovh.net" (Please replace the "?" by the number designating the server for your Email Pro service).
 > 
-> You can find this figure in your  [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Web Cloud`{.action} section, then `Email Pro`{.action}
-> in the left-hand column. The server name is visible in the **Connection** box on the `General`{.action} Information tab.
+> You can find this number in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, then `Email Pro`{.action} in the left-hand column. The server name is visible in the **Connection** box on the `General`{.action} Information tab.
 > 
 
 ### Add account
