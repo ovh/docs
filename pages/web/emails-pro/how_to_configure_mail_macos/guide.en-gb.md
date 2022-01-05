@@ -37,32 +37,32 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ### Add account
 
-- **When the application** is first started: a setup wizard will appear, prompting you to choose your account type.
+- **When the application is first started**: a setup wizard will appear, prompting you to choose your account type.
 
-- **If an account has already been set up**: click `Mail`{.action} in the menu bar at the top of your screen, then `Accounts`{.action}.
+- **If an account has already been set up**: click `Mail`{.action} in the menu bar at the top of your screen, then click on `Accounts`{.action}.
 
 | | |
 |---|---|
-|![mailmac](images/mail-mac-emailpro01.png){.thumbnail}|Select `Add Other Account...`{.action} account, then click `Mail account`{.action} .|
-|Enter the following information in the “**Add Mail** Account” window: <br>- your email account **name** <br>- Your email **address** <br>- Your email **password** |![mailmac](images/mail-mac-emailpro02.png){.thumbnail}|
-|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|In the next window, enter the information: <br>- Leave your **Email** address already entered <br>- Enter your full email address in **Username** <br>- Leave your **Password** already entered <br>- Select `POP` or `IMAP` (recommended) in Account **type**<br>- Enter `pro**?**.mail.ovh.net` in **Incoming Mail Server** (replace “**?**” with your server number)<br>-Also enter `pro**?**.mail.ovh.net` in **Outgoing Mail Server** (replace`**?**` with your server number)<br><br>To complete the configuration, click `Log in`{.action}|
+|![mailmac](images/mail-mac-emailpro01.png){.thumbnail}|Select `Add Other Account`{.action} account, then click on `Mail account`{.action}.|
+|Enter the following information in the "**Add Mail Account**" window: <br>- your email account **Name** <br>- Your **Email address** <br>- Your email **Password** |![mailmac](images/mail-mac-emailpro02.png){.thumbnail}|
+|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|In the next window, enter the information: <br>- Leave your **Email address** already entered <br>- Enter your full email address in **Username** <br>- Leave your **Password** already entered <br>- Select `POP` or `IMAP`(recommended) in **Account type**<br>- Enter `pro**?**.mail.ovh.net` in **Incoming Mail Server** (replace "**?**" with your server number)<br>- Also enter `pro**?**.mail.ovh.net` in **Outgoing Mail Server** (replace "**?**" by your server number)<br><br>To complete the configuration, click on `Log in`{.action}.|
 
 ### Use email address
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using an account in the OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/) interface, or Using an email address via the RoundCube webmail.
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using an account in the OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/) interface or use your email address via the RoundCube webmail.
 
 ### Retrieve a backup of your email address
 
-If you need to make any changes that could lead to the loss of your email account data, we advise backing up the email account concerned beforehand. To do this, please read the “**Export**” section in the “**Mail on macOS**” section of our guide on [Manually migrating your email address](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/#exporting).
+If you need to make any changes that could lead to the loss of your email account data, we advise backing up the email account concerned beforehand. To do this, please read the "**Export**" section in the "**Mail on macOS**" section of our guide on [Manually migrating your email address](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/#exporting).
 
 ### Modify existing settings
 
 If your email account has already been set up and you need to access the account settings to change them:
 
-- Click `Mail`{.action} in the menu bar at the top of your screen, then click `Preferences`{.action}.
-- Select the account in the left-hand column, then click `Server`{.action} Settings.
+- Click on `Mail`{.action} in the menu bar at the top of your screen then on `Preferences`{.action}.
+- Select the account in the left-hand column, then click on `Server Settings`{.action}.
 
 ![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
 
