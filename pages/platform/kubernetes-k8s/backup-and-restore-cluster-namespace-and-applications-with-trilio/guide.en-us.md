@@ -188,9 +188,9 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 2. Next, add the `TrilioVault` Helm repository, and list the available charts:
 
     ```shell
+    helm repo add triliovault-operator http://charts.k8strilio.net/trilio-stable/k8s-triliovault-operator
     helm repo add triliovault http://charts.k8strilio.net/trilio-stable/k8s-triliovault
-
-    helm search repo triliovault
+    helm search repo triliovault-operator
     ```
 
     The output looks similar to the following:
@@ -198,8 +198,7 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
     ```text
     NAME                                            CHART VERSION   APP VERSION     DESCRIPTION
     triliovault-operator/k8s-triliovault-operator   2.6.4           2.6.4           K8s-TrilioVault-Operator is an operator designe...
-    triliovault/k8s-triliovault                     2.6.4           2.6.4           K8s-TrilioVault provides data protection and re...
-
+    triliovault/k8s-triliovault-operator            0.9.0           0.9.0           K8s-TrilioVault-Operator is an operator designe...
     ```
     
 3. The chart of interest is `triliovault-operator/k8s-triliovault-operator`, which will install `TrilioVault for Kubernetes Operator` on the cluster. You can run `helm install` command to install the Operator. Install `TrilioVault for Kubernetes Operator` using `Helm`:
@@ -207,9 +206,7 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
     ```shell
     TRILIOVAULT_CHART_VERSION="2.6.4"
 
-    helm install triliovault-operator triliovault-operator/k8s-triliovault-operator --version "${TRILIOVAULT_CHART_VERSION}" \
-      --namespace tvk \
-      --create-namespace
+    helm install triliovault-operator triliovault-operator/k8s-triliovault-operator --version "${TRILIOVAULT_CHART_VERSION}" --namespace tvk --create-namespace
     ```
 
     **Note:**
