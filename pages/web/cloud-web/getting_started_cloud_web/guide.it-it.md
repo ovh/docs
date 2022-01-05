@@ -203,4 +203,4 @@ Per maggiori informazioni su questo servizio, consulta la nostra guida [Guida al
 
 [Guida all’utilizzo di RoundCube](https://docs.ovh.com/it/emails/webmail_guida_allutilizzo_di_roundcube/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>

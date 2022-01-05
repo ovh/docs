@@ -181,4 +181,4 @@ Ya puede finalizar la instalación de su sitio web o la migración de su base de
 
 [Todo sobre el SQL Privado](https://docs.ovh.com/es/hosting/todo_sobre_el_sql_privado/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

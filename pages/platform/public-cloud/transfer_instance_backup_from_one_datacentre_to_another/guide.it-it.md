@@ -143,4 +143,4 @@ Per effettuare questa operazione, esegui il seguente comando utilizzando l’ide
 
 [Trasferire il backup di un disco aggiuntivo da un datacenter a un altro](https://docs.ovh.com/it/public-cloud/trasferisci_il_backup_di_un_disco_aggiutivo_da_un_datacenter_a_un_altro/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
