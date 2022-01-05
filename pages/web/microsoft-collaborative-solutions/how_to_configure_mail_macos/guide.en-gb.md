@@ -10,7 +10,7 @@ order: 3
 
 ## Objective
 
-You can configure Exchange accounts on email clients, if they are compatible. By doing though, you can use your email address through your preferred email application. The Mail app on macOS is available for free on all Macs.
+You can configure Exchange accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application. The Mail app on macOS is available for free on all Macs.
 
 **Find out how to configure your Exchange email address on the macOS Mail app.**
 
