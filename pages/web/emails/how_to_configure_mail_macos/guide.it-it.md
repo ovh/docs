@@ -21,12 +21,12 @@ Gli account MX Plan possono essere configurati su client di posta compatibili, p
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVH non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVH non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
 > 
 
 ## Prerequisiti
 
-- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
 - Disporre del software Mail installato sul tuo Mac
 - Disporre delle credenziali associate all’indirizzo email da configurare
  
@@ -34,15 +34,15 @@ Gli account MX Plan possono essere configurati su client di posta compatibili, p
 
 ### Aggiungi l'account
 
-- **Al primo avvio dell'applicazione**\: un assistente di configurazione apparirà direttamente e ti inviterà a scegliere il tipo di account.
+- **Al primo avvio dell'applicazione**: un assistente di configurazione apparirà direttamente e ti inviterà a scegliere il tipo di account.
 
-- **Se è già stato impostato** un account: clicca su `Mail`{.action} in alto nello schermo e poi su `Account`{.action}.
+- **Se è già stato impostato un account**: clicca su `Mail`{.action} in alto nello schermo e poi su `Account`{.action}.
 
 | | |
 |---|---|
 |![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Seleziona `Altro account Mail`{.action} e clicca su `Account Mail`{.action}.|
-|Nella finestra "**Aggiungi account Mail**" inserisci le seguenti informazioni: <br>\- il **Nome** del tuo account email <br>\- Il tuo **indirizzo email** <br>\- La **password** del tuo indirizzo email |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
-|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Nella nuova finestra, inserisci le informazioni: <br>\- Lascia il tuo **indirizzo email** già inserito <br>\- Inserisci il tuo indirizzo email completo nel **nome utente** <br>\- Lascia la tua **password** già inserita <br>\- Seleziona `POP` o `IMAP` (consigliato) in **Tipo di account**<br>\- Inserisci `ssl0.ovh.net` sul **server di ricezione** <br>\- Inserisci anche `ssl0.ovh.net` sul **server di invio**<br><br>Per completare la configurazione, clicca su `Accedi`{.action}|
+|Nella finestra "**Aggiungi account Mail**" inserisci le seguenti informazioni: <br>- il **Nome** del tuo account email <br>- Il tuo **indirizzo email** <br>- La **password** del tuo indirizzo email |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
+|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Nella nuova finestra, inserisci le informazioni: <br>- Lascia il tuo **indirizzo email** già inserito <br>- Inserisci il tuo indirizzo email completo nel **nome utente** <br>- Lascia la tua **password** già inserita <br>- Seleziona `POP` o `IMAP`(consigliato) in **Tipo di account**<br>- Inserisci `ssl0.ovh.net` sul **server di ricezione** <br>- Inserisci anche `ssl0.ovh.net` sul **server di invio**<br><br>Per completare la configurazione, clicca su `Accedi`{.action}|
 
 ### Utilizza l'indirizzo email
 
@@ -52,7 +52,7 @@ OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indir
 
 ### Recuperare un backup del tuo indirizzo email
 
-Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione consulta il paragrafo "**Esporta**" nella sezione "**Mail su Mac OS**" della nostra guida [Migrare manualmente il tuo indirizzo email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/#esportare).
+Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione consulta il paragrafo "**Esporta**" nella sezione "**Mail su Mac OS**" della nostra guida [Migra manualmente il tuo indirizzo email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/#esportare).
 
 ### Modifica i parametri esistenti
 
