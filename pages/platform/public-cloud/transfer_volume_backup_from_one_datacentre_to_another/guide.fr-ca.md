@@ -107,7 +107,7 @@ Pour démarrer le processus de transfert, vous devez d'abord charger de nouvelle
 
 > [!warning]
 >
-Si vous transférez votre sauvegarde vers un datacenter dans le même projet, il vous suffit de modifier la variable OS\_REGION\_NAME.
+Si vous transférez votre sauvegarde vers un datacenter dans le même projet, il vous suffit de modifier la variable OS_REGION_NAME.
 >
 
 ```sh 

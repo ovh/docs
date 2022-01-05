@@ -11,13 +11,13 @@ order: 11
 
 ## Objectif
 
-Vous pouvez avoir besoin de déplacer des volumes additionnels d'un datacenter à un autre, soit parce qu'un nouveau centre de données est disponible, soit parce que vous souhaitez migrer d'[OVH Labs](https://labs.ovh.com/){.external} vers [Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
+Vous pouvez avoir besoin de déplacer des volumes additionnels d'un datacenter à un autre, soit parce qu'un nouveau centre de données est disponible, soit parce que vous souhaitez migrer d'[OVHcloud Labs](https://labs.ovh.com/){.external} vers [Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
 
 **Découvrez comment transférer une sauvegarde de volume d'un datacenter à un autre.**
 
 ## Prérequis
 
-* Posséder une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} dans votre compte OVH.
+* Posséder une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} dans votre compte OVHcloud.
 * Disposer d’un accès administrateur (root) à votre datacenter via SSH.
 * Lire le guide « [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/){.external} » (recommandé).
 
@@ -107,7 +107,7 @@ Pour démarrer le processus de transfert, vous devez d'abord charger de nouvelle
 
 > [!warning]
 >
-Si vous transférez votre sauvegarde vers un datacenter dans le même projet, il vous suffit de modifier la variable OS\_REGION\_NAME.
+Si vous transférez votre sauvegarde vers un datacenter dans le même projet, il vous suffit de modifier la variable OS_REGION_NAME.
 >
 
 ```sh 
