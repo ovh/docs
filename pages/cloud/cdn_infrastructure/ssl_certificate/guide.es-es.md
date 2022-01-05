@@ -72,4 +72,4 @@ Una vez activado el certificado, podrá ver lo siguiente en el área de cliente:
 
 [Primera configuración de un dominio](https://docs.ovh.com/es/cdn-infrastructure/primera-configuracion-dominio-en-cdn/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

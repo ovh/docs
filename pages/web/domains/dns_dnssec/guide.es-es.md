@@ -59,4 +59,4 @@ La activación o desactivación de DNSSEC en un dominio puede tardar hasta 24 ho
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

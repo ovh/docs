@@ -214,4 +214,4 @@ Si tiene un servidor con RAID por software, deberá reconstruir el RAID usted mi
 [Modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/){.external}
 
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

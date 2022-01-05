@@ -142,4 +142,4 @@ Para crear la instancia a partir del backup, ejecute el siguiente comando utiliz
 
 [Transferir el backup de un volumen entre datacenters](https://docs.ovh.com/gb/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/){.external} (en inglés)
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

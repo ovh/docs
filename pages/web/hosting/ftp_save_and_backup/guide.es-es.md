@@ -131,4 +131,4 @@ Una vez que se haya conectado, solo tiene que restaurar los archivos que desee. 
 
 [Web hosting: Guía de uso de Cyberduck (Mac)](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_cyberduck_mac/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

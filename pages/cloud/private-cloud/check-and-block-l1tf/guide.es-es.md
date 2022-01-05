@@ -93,4 +93,4 @@ Para más información, consulte el apartado «Resolution», punto 3, de [este a
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external-link}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>{.external-link}.
