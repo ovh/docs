@@ -30,7 +30,7 @@ Quer seja para comparar as performances entre os diferentes discos, quer seja pa
 
 O comando de que precisa para verificar a velocidade do seu disco chama-se `fio`. Não está presente por predefinição no seu servidor.
 
-Para instalar`, estabeleça uma ligação SSH à sua instância e execute o seguinte comando:
+Para instalar `fio`, estabeleça uma ligação SSH à sua instância e execute o seguinte comando:
 
 
 ```
@@ -47,7 +47,7 @@ root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwri
 
 > [!primary]
 >
-É necessário adaptar o argumento --numjobs em função do número de CPUs que a sua instância dispõe.
+> É necessário adaptar o argumento --numjobs em função do número de CPUs que a sua instância dispõe.
 >
 > Além disso, é possível encontrar a lista dos argumentos e as suas funções diretamente no [manual do fio](https://github.com/axboe/fio/blob/master/HOWTO).
 >

@@ -48,7 +48,7 @@ root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwri
 
 > [!primary]
 >
-Należy dostosować argument --numjobs do liczby CPU, którą dysponuje Twoja instancja. 
+> Należy dostosować argument --numjobs do liczby CPU, którą dysponuje Twoja instancja. 
 >
 > Listę argumentów i funkcji można odnaleźć w [podręczniku fio](https://github.com/axboe/fio/blob/master/HOWTO).
 >

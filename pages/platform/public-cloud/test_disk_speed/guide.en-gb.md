@@ -36,15 +36,15 @@ root@server:~$ apt-get install fio
 To test your disk speed, run the following command:
 
 ```
-root@serveur:~$ fio 
+root@server:~$ fio 
 --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
 > [!primary]
 >
-Please note that you will need to modify the `--numjobs` argument to reflect the number of CPUs that your instance has.
+> Please note that you will need to modify the `--numjobs` argument to reflect the number of CPUs that your instance has.
 >
-You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO).
+> You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO).
 >
 
 To test the speed of an additional disk, you will need to mount the disk with the following command: 
