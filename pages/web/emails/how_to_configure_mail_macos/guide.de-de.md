@@ -38,6 +38,7 @@ MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingericht
 
 - **Wenn ein Account bereits eingerichtet wurde** : Klicken Sie auf `Mail`{.action} im Menü oben auf Ihrem Bildschirm und dann auf `Accounts`{.action}.
 
+|||
 |---|---|
 |![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Wählen Sie `Anderen Mail-Account`{.action} aus und klicken Sie auf `Mail-Account`{.action}.|
 |Geben Sie im Fenster "**Mail Account hinzufügen**" folgende Informationen ein: <br>- **Name** Ihres E-Mail Accounts <br>- Ihre **E-Mail Adresse** <br>- **Passwort** Ihrer E-Mail-Adresse|![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
