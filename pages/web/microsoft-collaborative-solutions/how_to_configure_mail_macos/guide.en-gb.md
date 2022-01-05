@@ -23,9 +23,9 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- You must have an [Exchange email address](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/).
-- You need to have Mail installed on your Mac.
-- You need to have the required credentials for the email address you would like to configure.
+- an [Exchange email address](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/).
+- **Mail** installed on your Mac.
+- the required credentials for the email address you would like to configure.
  
 ## Instructions
 
