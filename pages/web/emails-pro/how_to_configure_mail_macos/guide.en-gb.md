@@ -23,8 +23,8 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 ## Requirements
 
 - an [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) address.
-- You need to have **Mail** installed on your Mac.
-- You need to have the required credentials for the email address you would like to configure.
+- **Mail** installed on your Mac.
+- the required credentials for the email address you would like to configure.
  
 ## Instructions
 
