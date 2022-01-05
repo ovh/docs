@@ -270,4 +270,4 @@ mount /dev/md2 /home
 
 [Gestire il RAID Hardware](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (in inglese)
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

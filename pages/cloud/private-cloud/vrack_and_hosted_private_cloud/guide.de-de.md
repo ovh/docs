@@ -10,13 +10,18 @@ order: 01
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 07.01.2020**
+**Letzte Aktualisierung am 31.12.2021**
 
 ## Ziel
 
 Mit unserer Netzwerklösung [vRack](https://www.ovh.de/loesungen/vrack/){.external} können Sie mehrere OVHcloud Dienste untereinander verbinden und sie über ein oder mehrere VLANs kommunizieren lassen. Einige Konfigurationen sind allerdings nicht mit Hosted Private Cloud kompatibel.
 
 **In dieser Anleitung wird erläutert, wie Hosted Private Cloud mit dem vRack kompatibel ist.**
+
+## Voraussetzungen
+
+- Sie sind Administrator-Kontakt für die Infrastruktur [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um Login-Daten zu erhalten.
+- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 
 ## Technischer Hintergrund
 

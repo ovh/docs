@@ -1,52 +1,96 @@
 ---
-title: 'Les problemes recurrents lors de l’utilisation d’un logiciel FTP'
+title: 'Résoudre les erreurs récurrentes lors de l’utilisation d’un logiciel FTP'
+excerpt: 'Retrouvez ici les anomalies les plus fréquentes liées à votre logiciel FTP'
 slug: mutualise-les-problemes-ftp-recurrents
 legacy_guide_number: 1996
-excerpt: 'Retrouvez ici les informations sur les problemes recurrents que vous pouvez rencontrer sur votre logiciel FTP'
 section: 'FTP et SSH'
+order: 3
 ---
 
-Vous trouverez dans ce guide différentes solutions aux problèmes de FTP que vous pouvez rencontrer.
+**Dernière mise à jour le 05/01/2022**
 
-Pour réaliser une connexion FTP, vous pouvez vous aider de se guide : [Utilisation logiciel FileZilla avec votre hebergement](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/){.external}
+## Objectif
 
+L'utilisation de logiciels FTP lors de la connexion à votre [hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/) peut engendrer différentes anomalies. Ce guide vous permettra de résoudre les plus courantes d'entre elles.
 
-## Problemes recurrents
+**Découvrez comment résoudre les erreurs liées aux logiciels FTP.**
 
-### J'ai transfere mes fichiers avec un logiciel FTP, mais rien ne s'affiche
-- Il faut pour cela vérifier que les fichiers de votre site soient bien présents dans le répertoire /www de votre hébergement.
-- Si vous avez réalisé une modification dans votre zone DNS, il peut y avoir un délai de propagation de 4 à 24 heures.
-- En cas d'erreur 500, "Internal server error", veuillez consulter ce guide : [Que faire en cas d’erreur 500 Internal Server Error ?](https://docs.ovh.com/fr/hosting/erreur-500-internal-server-error/){.external}
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+>
 
+## Prérequis
 
-### Mes codes ftp ne fonctionnent pas
-Vérifiez bien que vous recopiez correctement le mot de passe. Le mieux est de le copier/coller (Ctrl-C Ctrl-V sous windows). Attention à la confusion entre l (L) et 1 (un) ainsi que O (la lettre o) et 0 (zéro). Si cela ne fonctionne pas, les identifiants utilisés ne sont probablement pas correctes.
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
+## En pratique
 
-### Quel espace me reste-t-il sur mon site ?
-Le manque d'espace sur votre hébergement mutualisé peut générer des dysfonctionnements si vous tenter de mettre en ligne de nouveaux fichiers.
+### « Ce serveur ne supporte pas FTP sur TLS » (FileZilla)
 
-- Pour vérifier cela, vous devez vous connectez à votre [espaceclient](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} .
-- Sélectionnez votre plateforme d'hébergement.
+![filezilla_error](images/filezilla_error.png){.thumbnail}
 
+Ce message sur le logiciel [FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) indique que vous n'avez pas activé l'option SFTP ou SSH depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). De ce fait, les informations échangées entre votre serveur d'hébergement OVHcloud et votre ordinateur ne seront pas chiffrées.
 
-![hosting](images/img_3298.jpg){.thumbnail}
+Si les données que vous souhaitez échanger par ce biais ne sont pas confidentielles, cliquez sur `OK`{.action}.
 
-Un récapitulatif apparaît avec le quota d'utilisation de votre espace FTP.
+Dans le cas contraire, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action} puis `Hébergements`{.action}. Sélectionnez l'hébergement concerné puis choisissez l'onglet `FTP-SSH`{.action}.
 
+Cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP concerné puis sur `Modifier`{.action}.<br>
+Choisissez SFTP ou SSH (si vous disposez d'un [hébergement Pro](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml)), cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
-![hosting](images/img_3299.jpg){.thumbnail}
+> [!primary]
+>
+> Pour tout autre message d'erreur, consultez la section `Diagnostic` de nos guides [Hébergements Web](../).
+>
 
+### J'ai transféré mes fichiers avec un logiciel FTP, mais mon site ne s'affiche pas.
 
-### Je n'arrive pas a envoyer mes fichiers sur le serveur ftp ?
-il faut se connecter en mode passif (Mode de configuration d'un serveur FTP dans lequel c'est le serveur FTP lui-même qui détermine le port de connexion) dans votre client ftp, pour filezilla par exemple, vous allez dans (Édition-> Paramètres -> Connexion -> Paramètres Pare-feu -> Mode passif).
+Vérifiez tout d'abord que les fichiers et dossiers de votre site sont bien présents dans le [dossier racine](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#3-telecharger-les-fichiers-sur-lespace-de-stockage) de votre hébergement.
 
+Si vous avez réalisé une modification dans vos [serveurs ou votre zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) il y a moins de 48 heures, patientez et redémarrez régulièrement vos appareils afin de vider leur cache.
 
-## Informations utiles
+### Mes identifiants FTP ne fonctionnent pas.
 
-### A quoi sert le repertoire cgi-bin ?
-Le répertoire cgi-bin n'est pas lisible directement à partir de serveur web. C'est un répertoire qui est en parallèle de www. Il existe donc les sécurités suivantes :
+Si vous ne parvenez pas à vous authentifier, modifiez votre mot de passe FTP en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
 
-- Les fichiers mis dans le répertoire cgi-bin ne peuvent être lus. Ils peuvent uniquement être exécutés. Vous ne pouvez pas y placer par exemple les images gif ou jpeg. Leur lecture provoquera l'erreur,
-- Puisqu'aucun fichier ne peut être lu dans cgi-bin, vous pouvez y placer les fichiers de bases de données en texte par exemple que vous souhaitez protéger,
-- L'exécution des scripts cgi à partir de cgi-bin se fait via un alias de votre site. Vous ne pouvez pas exécuter les scripts autrement qu'avec votre domaine.
+### Je rencontre des erreurs aléatoires sur mon site.
+
+Le manque d'espace sur votre hébergement mutualisé peut entraîner des dysfonctionnements sur votre site lorsque vous tentez de le modifier ou de le mettre à jour.
+
+Pour vérifier l'espace de stockage restant sur votre hébergement, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action} puis `Hébergements`{.action}. Sélectionnez l'hébergement concerné.
+
+La quantité de données enregistrée sur votre serveur d'hébergement (hors bases de données) apparaît dans la partie `Informations générales` > `Espace disque`.
+
+![disk_space](images/disk_space.png){.thumbnail}
+
+### Je n'arrive pas à transférer mes fichiers vers le serveur FTP.
+
+Vérifiez que votre logiciel FTP est connecté en « Mode Passif » (Mode de configuration d'un serveur FTP dans lequel le serveur détermine le port de connexion).
+
+Par exemple pour [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/), cliquez sur `Édition`{.action}, puis `Paramètres`{.action}, `Connexion`{.action}, `FTP`{.action} et choisissez `Passif (recommandé)`{.action}.
+
+Limitez également la taille de vos transferts de données (vous ne pourrez pas envoyer plus de **5000 fichiers et dossiers** sur les serveurs mutualisés OVHcloud en un seul transfert). Effectuez vos imports en plusieurs fois si nécessaire en utilisant des dossiers compressés.
+
+Si vous disposez d'une [formule Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), utilisez de préférence le [protocole SSH](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/) pour réaliser vos imports de fichiers sur l'espace de stockage de fichiers de votre hébergement.
+
+### Je n'arrive pas à supprimer le lien symbolique « index.html » sur mon espace FTP
+
+Ce lien est installé par défaut sur les hébergements mutualisés OVHcloud. Il donne cet affichage :
+
+![site_under_construction](images/site_under_construction.png){.thumbnail}
+
+Si vous n'avez pas utilisé la fonctionnalité « [Module en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) » pour créer votre site, vous devrez utiliser le logiciel [Net2FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer) accessible via l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) afin de supprimer manuellement la page « Site en construction ».
+
+## Aller plus loin <a name="aller-plus-loin"></a>
+
+[Utilisation du logiciel FileZilla avec votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -7,7 +7,7 @@ section: Funkcje OVH
 order: 01
 ---
 
-**Ostatnia aktualizacja z dnia 25-06-2020**
+**Ostatnia aktualizacja z dnia 30-12-2022**
 
 ## Wprowadzenie
 
@@ -17,8 +17,8 @@ Blok IP umożliwia udostępnianie witryn w Internecie.
 
 ## Wymagania początkowe
 
-* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-* Posiadanie [infrastruktury Hosted Private Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud.
+- Posiadanie statusu kontaktu administratora infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
+- Posiadanie aktywnego identyfikatora użytkownika [utworzonego w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -53,11 +53,11 @@ Utworzenie bloku IP wymaga wypełnienia następujących pól
 - Nazwa sieci (informacja widoczna w bazie WHOIS bloku IP).
 - Szacowana liczba klientów (ile klientów będzie docelowo hostowanych pod tymi adresami IP).
 - Opis sieci (informacja widoczna w bazie WHOIS bloku IP).
-- Wykorzystanie \[informacje dotyczące wykorzystania (WWW, SSL, Cloud itp.)].
+- Wykorzystanie (informacje dotyczące wykorzystania (WWW, SSL, Cloud itp.)).
 
 > [!success]
 >
-> Koszt aktywacji bloku wynosi 2 EUR netto za adres IP. Tym samym za blok `/28` zawierający 16 adresów IP otrzymasz formularz zamówienia w wysokości 32 EUR netto do opłacenia przed dostawą.
+> Opłać koszty aktywacji bloku IP przed dostawą.
 >  
 > Adresy IP są odnawiane za darmo.
 >

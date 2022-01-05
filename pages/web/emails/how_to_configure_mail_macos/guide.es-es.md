@@ -64,5 +64,9 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 ![mailmac](images/mail-mac-mxplan04.png){.thumbnail}
 
 ## Más información
-  
+
+[Configurar una cuenta Email Pro en Mail de macOS](https://docs.ovh.com/es/emails-pro/configurar-email-pro-mail-macos/){.external}
+
+[Configurar una cuenta Exchange en Mail de macOS](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-mail-macos/){.external}
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

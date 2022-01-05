@@ -122,4 +122,4 @@ Se le informazioni sono corrette, potrai eseguire operazioni sullo spazio di sto
 
 [Utilizzare la connessione SSH su un hosting condiviso](../hosting_condiviso_il_protocollo_ssh/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

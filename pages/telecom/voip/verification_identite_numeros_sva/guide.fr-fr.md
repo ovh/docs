@@ -4,7 +4,6 @@ slug: validation-identite-numeros-speciaux-sva
 excerpt: "Découvrez comment valider votre identité depuis l'espace client OVHcloud afin d'exploiter un numéro spécial SVA"
 section: Administratif
 order: 4
-hidden: true
 ---
 
 **Dernière mise à jour le 10/12/2021**

@@ -5,7 +5,11 @@ excerpt: 'Erfahren Sie hier, wie Sie die Sicherheit Ihres Accounts bei OVHcloud 
 section: Sicherheit
 ---
 
-**Letzte Aktualisierung am 16.04.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 03.01.2022**
 
 ## Ziel
 
@@ -30,7 +34,6 @@ Hierzu stellen wir Ihnen drei verschiedene Methoden zur Verfügung:
 - **per mobiler OTP-Applikation**. Installieren Sie eine mobile OTP-Applikation auf Ihrem Smartphone oder Tablet mit Android oder iOS. Ordnen Sie dann die Applikation Ihrem Account bei OVHcloud zu. Die Applikation generiert einen für kurze Zeit gültigen Code zur einmaligen Verwendung, wenn Sie sich bei Ihrem Account bei OVHcloud anmelden möchten.
 Ist die Applikation Ihrem Account einmal zugewiesen, benötigen Sie keine Internetverbindung für Ihr Peripheriegerät mehr, um die Codes zu generieren;
 
-
 - **per Sicherheitsschlüssel U2F**. Bei dieser Methode müssen Sie einen U2F-Sicherheitsschlüssel per USB an Ihren Computer anschließen, wenn Sie sich mit Ihrem Account bei OVHcloud verbinden. Die Authentifizierung geschieht nun automatisch. Diese Methode bietet eine höhere Sicherheitsstufe, da die Ausrüstung dafür unabhängig und völlig separat von Ihrem Computer, Smartphone oder Tablet ist. Sie ist Gefährdungen aufgrund von Hacking somit weniger ausgesetzt. 
 
 ### Schritt 1: Aktivieren Sie Ihre erste Methode der Zwei-Faktor-Authentifizierung
@@ -54,10 +57,7 @@ Sie können sie in ihrem Kundencenter löschen oder erneut erstellen:
 > [!warning]
 >
 > Wir möchten Sie daran erinnern, dass die Notfall-Codes unbedingt gespeichert und gültig sein müssen. Sollte(n) die von Ihnen gewählte(n) Sicherheitsmethode(n) nicht verfügbar sein (Diebstahl oder Verlust Ihres Telefons oder Ihres Sicherheitsschlüssels), kann der Zugang zu Ihrem Kundencenter gesperrt werden.
-> 
-> 
-> 
-
+>
 
 ### Schritt 3: Verbinden Sie sich unter Verwendung der Zwei-Faktor-Authentifizierung mit dem Kundencenter
 
@@ -75,8 +75,7 @@ Wenn Ihr Peripheriegerät (Mobiltelefon/Smartphone/Sicherheitsschlüssel) verlor
 
 Auch können Sie einen der Sicherheitscodes verwenden, die Ihnen zur Verfügung gestellt wurden. 
 
-
-### Ein Peripheriegerät entfernen, das mit der Zwei-Faktor-Authentifizierung verbunden ist
+### Ein Peripheriegerät entfernen, das mit der Zwei-Faktor-Authentifizierung verbunden ist <a name="delete-device"></a>
 
 > [!warning]
 >
@@ -99,6 +98,36 @@ Klicken Sie danach auf `Sicherheit`{.action} (Schritt 1 auf dem Bild unten), dan
 
 ![2FA](images/hub2FAc.png){.thumbnail}
 
+### Die Zwei-Faktor-Authentifizierung vollständig deaktivieren <a name="disable-2fa"></a>
+
+#### Wenn Sie keinen Zugriff mehr auf Ihr OVHcloud Kunden-Account haben
+
+Um die Zwei-Faktor-Authentifizierung für Ihren OVHcloud Kunden-Account vollständig zu deaktivieren, müssen **alle** hierfür registrierten Geräte gelöscht **und die Notfall-Codes deaktiviert werden**.
+
+Um die Peripheriegeräte zu entfernen, lesen Sie den [entsprechenden Abschnitt dieser Anleitung](#delete-device).
+
+Wenn alle Ihre Geräte gelöscht sind, deaktivieren Sie die Notfall-Codes, indem Sie auf den Button `2FA-Codes deaktivieren`{.action} klicken.
+
+![2FA Codes](images/disabling-codes.png){.thumbnail}
+
+#### Wenn Sie keinen Zugriff mehr auf Ihr OVHcloud Kundencenter haben
+
+Wenn sie nicht mehr über gültige Geräte Zugang haben oder keine gültigen Notfall-Codes erinnern, können Sie der Zwei-Faktor-Authentifizierung entfernen. In diesem Fall können Sie unsere Support-Teams kontaktieren.
+
+Bevor Sie uns wenden, bereiten Sie bitte folgende Unterlagen vor:
+
+|OVHcloud Account-Typ|Vorzulegende Nachweise|
+|---|---|
+|Privatperson|- Beidseitige Kopie eines Identitätsnachweises (Personalausweis, Führerschein, Reisepass), ausgestellt auf den Inhaber des OVHcloud Kunden-Accounts|
+|Unternehmen|- Identitätsnachweis (Personalausweis, Führerschein, Reisepass) des Unternehmens berechtigten Person (sensible Daten können versteckt werden, nur der vollständige Name und das Ablaufdatum sichtbar sein müssen)<br><br>- Handelsregisterauszug des Unternehmens|
+
+Kontaktieren Sie den OVHcloud Support unter +49 681 906730 Uhr, sobald Ihre Unterlagen vorberaiten. Die genannten Unterlagen müssen uns über eine E-Mail-Adresse zugesandt werden, die in Ihrem OVHcloud-Account gespeichert ist. 
+
+> [!warning]
+>
+>  Ihre Dokumente müssen Sie uns schicken aus eine E-Mail-Adresse welche mit Ihrem OVHcloud Kunden-Account verbunden ist.
+
+Nach Überprüfung Ihrer Dokumente kann ein Support-Agent die Zwei-Faktor-Authentifizierung manuell aus Ihre OVHcloud-Account deaktivieren.
 
 ## Weiterführende Informationen
 

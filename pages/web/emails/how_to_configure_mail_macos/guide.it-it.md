@@ -64,5 +64,5 @@ Se il tuo account email è già configurato e devi accedere alle impostazioni de
 ![mailmac](images/mail-mac-mxplan04.png){.thumbnail}
 
 ## Per saperne di più
-  
+
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

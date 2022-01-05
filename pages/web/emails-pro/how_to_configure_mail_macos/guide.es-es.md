@@ -72,5 +72,9 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 ![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
 
 ## Más información
-  
+
+[Configurar una dirección de correo electrónico incluida con un plan de hosting o un MX Plan en Mail de macOS](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}
+
+[Configurar una cuenta Exchange en Mail de macOS](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-mail-macos/){.external}
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

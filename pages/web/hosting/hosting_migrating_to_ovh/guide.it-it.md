@@ -180,4 +180,4 @@ Il tuo sito Web, i tuoi account email e il tuo dominio adesso sono in OVH!
 
 [Gestire un database da un hosting condiviso](https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/).
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -10,13 +10,18 @@ order: 01
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 06/01/2021**
+**Última atualização: 31/12/2021**
 
 ## Objetivo
 
 O produto [vRack](https://www.ovh.pt/solucoes/vrack/){.external} permite interligar vários produtos da OVHcloud e fazê-los comunicar entre si através de 1 ou várias vlan. Algumas configurações não são compatíveis com a solução Hosted Private Cloud.
 
 **Este manual explica a compatibilidade do Hosted Private Cloud com o produto vRack.**
+
+## Requisitos
+
+- Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), para receber dados de acesso.
+- Ter um identificador de utilizador ativo [criado na Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Contexto
 

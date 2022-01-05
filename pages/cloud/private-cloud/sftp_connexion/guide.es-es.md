@@ -6,7 +6,7 @@ section: Primeros pasos
 order: 3
 ---
 
-**Última actualización: 25/06/2020**
+**Última actualización: 28/12/2021**
 
 ## Objetivo
 
@@ -18,7 +18,8 @@ Este sistema solo le permitirá acceder a la carpeta «upload-vpn» de sus datas
 
 ## Requisitos
 
-- Haber creado una cuenta de usuario desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Ser contacto administrador de la infraestructura [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), para recibir claves de conexión.
+- Tener un usuario activo (creado en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 

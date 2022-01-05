@@ -64,4 +64,4 @@ OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](
 
 [Configurare un account Email Pro su Outlook 2016 per Mac](https://docs.ovh.com/it/emails-pro/configurazione-outlook-2016-mac/){.external}
 
-Contatta la nostra Community di utenti all'indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
