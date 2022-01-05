@@ -18,7 +18,7 @@ Plesk è un’interfaccia di gestione server di semplice utilizzo, disponibile a
 > 
 > OVH mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a muovere i primi passi nell’utilizzo di Plesk sulle istanze Public Cloud OVH. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato o rivolgerti alla [Community OVH](https://www.ovh.it/community/){.external} per confrontarti con altri utenti.
+> Questa guida ti aiuta a muovere i primi passi nell’utilizzo di Plesk sulle istanze Public Cloud OVH. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato o rivolgerti alla [Community OVH](https://community.ovh.com/en/) per confrontarti con altri utenti.
 >
 
 ## Prerequisiti
@@ -97,4 +97,4 @@ Una volta aggiunta la nuova chiave, il tipo di licenza visualizzato in alto a de
 
 [Documentazione ufficiale Plesk](https://docs.plesk.com/it-IT/onyx/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

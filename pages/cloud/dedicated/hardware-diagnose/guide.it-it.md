@@ -86,4 +86,4 @@ Questo test comprende sia una verifica dell’accesso al disco che un controllo 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

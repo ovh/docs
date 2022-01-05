@@ -433,4 +433,4 @@ Il tuo ASA è ora aggiornato.
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

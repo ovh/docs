@@ -128,4 +128,4 @@ Attiva le porte in base alle tue esigenze sullo schermo successivo e clicca sul 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

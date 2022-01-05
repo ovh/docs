@@ -72,4 +72,4 @@ Accedi all’interfaccia protetta utilizzando il link contenuto nell’email ric
 
 [Utilizzare l’interfaccia sicura](../interfaccia-sicura/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

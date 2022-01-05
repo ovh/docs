@@ -84,4 +84,4 @@ Adesso che hai creato il template, scopri come [creare un <i>pool</i>](https://d
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

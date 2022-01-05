@@ -81,4 +81,4 @@ Una volta inserite le informazioni, prosegui con gli step successivi e clicca su
 
 [Modificare una zona DNS OVH](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -87,4 +87,4 @@ In questo esempio l’indirizzo IP testato è annunciato a **Gravelines**, come 
 
 [Configurare un blocco di indirizzi IP nella vRack](https://docs.ovh.com/it/dedicated/configurare-blocco-ip-nella-vRack/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

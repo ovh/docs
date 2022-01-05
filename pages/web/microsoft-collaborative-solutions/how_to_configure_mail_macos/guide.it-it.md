@@ -83,4 +83,4 @@ OVH propone un’applicazione Web con [funzionalità collaborative](https://www.
 
 [Configurare un account Email Pro su Mail di macOS](https://docs.ovh.com/it/emails-pro/configurare-email-pro-mail-macos/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>
