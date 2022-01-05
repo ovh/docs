@@ -77,7 +77,18 @@ Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihrer betreffenden Plattform auf `
 
 #### Schritt 3: Migrieren
 
-Migrieren Sie den Quell-Account mithilfe unseres [OMM Tools](https://omm.ovh.net/) (OVH Mail Migrator) auf den Account Ihrer Ziel-Plattform.
+> [!warning]
+>
+> Nur die Daten Ihrer E-Mail Accounts werden migriert (E-Mails, Kontakte, Kalender, Posteingangsregeln usw.). Die Funktionen Ihrer Plattform müssen auf der neuen Plattform neu aufgebaut werden:
+>
+> - [Alias](https://docs.ovh.com/de/microsoft-collaborative-solutions/email-alias/)
+> - [Übertragung von Rechten](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2013_send_as_versand_als/)
+> - [Gruppen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_verwendung_der_gruppen_mailinglisten/)
+> - Externe Kontakte
+> - [Fußzeile](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_automatische_signatur_-_disclaimer/)
+
+Migrieren Sie den Quell-E-Mail-Account mithilfe unseres Tools [OMM](https://omm.ovh.net/) (OVH Mail Migrator) auf das Konto Ihrer neuen Plattform.
+> Wenn Sie mehrere E-Mail-Accounts migrieren müssen, empfehlen wir Ihnen, den Modus [Projekt](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/#mehrfachmigration-durchfuhren-und-verfolgen-projekt) über [OMM](https://omm.ovh.net/Project/Create) zu verwenden, damit Sie eine Tabelle im CSV-Format importieren können, die die Informationen der zu migrierenden E-Mail-Accounts enthält.
 
 Weitere Informationen zu OMM finden Sie in unserer Anleitung "[E-Mail-Accounts über den OVH Mail Migrator migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/)".
 
