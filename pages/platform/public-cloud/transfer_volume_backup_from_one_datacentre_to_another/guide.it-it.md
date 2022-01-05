@@ -50,7 +50,7 @@ root@server:~$ openstack volume list
 
 
 ```sh
-root@server:~$ nova volume-detach a8b6b5f1-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
+root@server:~$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
 ```
 
 Crea un backup sotto forma di immagine utilizzando questo comando:

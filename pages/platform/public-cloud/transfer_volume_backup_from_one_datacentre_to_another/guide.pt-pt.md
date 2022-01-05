@@ -10,7 +10,7 @@ section: Armazenamento
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 05/01/2021**
+**Última atualização: 05/01/2022**
 
 ## Objetivo
 
@@ -78,22 +78,21 @@ root@server:~$ openstack image create --disk-format qcow2 --container-format bar
 
 Execute o seguinte comando para listar as imagens disponíveis:
 
-
-```
-root@server:~$ glance image-list
-+--------------------------------------+------------------------+-------------+------------------+-------------+--------+
-| ID | Name | Disk Format | Container Format | Size | Status |
-+--------------------------------------+------------------------+-------------+------------------+-------------+--------+
-| c17f13b5-587f-4304-b550-eb939737289a | Centos 7 | raw | bare | 2149580800 | active |
-| 73958794-ecf6-4e68-ab7f-1506eadac05b | Debian 7 | raw | bare | 2149580800 | active |
-| bdcb5042-3548-40d0-b06f-79551d3b4377 | Debian 8 | raw | bare | 2149580800 | active |
-| 7250cc02-ccc1-4a46-8361-a3d6d9113177 | Fedora 19 | raw | bare | 2149580800 | active |
-| 57b9722a-e6e8-4a55-8146-3e36a477eb78 | Fedora 20 | raw | bare | 2149580800 | active |
-| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume | qcow2 | bare | 319356928 | active |
-| 3bda2a66-5c24-4b1d-b850-83333b580674 | Ubuntu 12.04 | raw | bare | 2149580800 | active |
-| 9bfac38c-688f-4b63-bf3b-69155463c0e7 | Ubuntu 14.04 | raw | bare | 10737418240 | active |
-| 6a123897-a5bb-46cd-8f5d-ecf9ab9877f2 | Windows-Server-2012-r2 | raw | bare | 21474836480 | active |
-+--------------------------------------+------------------------+-------------+------------------+-------------+--------+
+```sh
+root@server:~$ openstack image list
++--------------------------------------+-----------------------------------------------+--------+
+| ID                                   | Name                                          | Status |
++--------------------------------------+-----------------------------------------------+--------+
+| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume                                   | active |
+| 73958794-ecf6-4e68-ab7f-1506eadac05b | Debian 7                                      | active |
+| bdcb5042-3548-40d0-b06f-79551d3b4377 | Debian 8                                      | active |
+| 7250cc02-ccc1-4a46-8361-a3d6d9113177 | Fedora 19                                     | active |
+| 57b9722a-e6e8-4a55-8146-3e36a477eb78 | Fedora 20                                     | active |
+| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume                                   | active |
+| 3bda2a66-5c24-4b1d-b850-83333b580674 | Ubuntu 12.04                                  | active |
+| 9bfac38c-688f-4b63-bf3b-69155463c0e7 | Ubuntu 14.04                                  | active |
+| 6a123897-a5bb-46cd-8f5d-ecf9ab9877f2 | Windows-Server-2012-r2                        | active |
++--------------------------------------+-----------------------------------------------+--------+
 ```
 
 
@@ -108,7 +107,7 @@ Por fim, execute este comando para descarregar o backup:
 
 
 ```sh
-root@server:~$ glance image-download --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
+root@server:~$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
 ```
 
 ### Transferir o backup para outro centro de dados
@@ -195,6 +194,6 @@ root@server:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c
 
 ## Quer saber mais?
 
-[Transferir a cópia de segurança de uma instância de um datacenter para outro](https://docs.ovh.com/pt/public-cloud/transferir-a-copia-de-seguranca-de-uma-instancia-de-um-datacenter-para-outro/)
+[Transferir a cópia de segurança de uma instância de um datacenter para outro](../transferir-a-copia-de-seguranca-de-uma-instancia-de-um-datacenter-para-outro/){.external}.
  
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
