@@ -6,7 +6,7 @@ excerpt: Descubra como utilizador o OVH Mail Migrator
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
 **Última atualização: 08/03/2018**
@@ -38,7 +38,7 @@ Consulte este manual em função da migração mais adequada ao seu projeto.
 
 ### Realizar uma migração única
 
-Aceda à página <https://omm.ovh.net/>, passe o rato no separador `Migration` {.action} na barra de menu no topo da página e clique em `Nova migração` {.action}.
+Aceda à página <https://omm.ovh.net/>, passe o rato no separador `Migration`{.action} na barra de menu no topo da página e clique em `Nova migração`{.action}.
 
 ![omm](images/omm-migration-create.png){.thumbnail}
 
@@ -67,7 +67,7 @@ A página que aparece então detalha o seguimento da migração. Considere conse
 Existem dois caminhos para aceder ao acompanhamento de uma migração única:
 
 - a partir do e-mail recebido notificando-o de que a migração começou;
-- a partir da página da ferramenta, <https://omm.ovh.net/>passando o rato no separador `Migration` {.action} na barra de menu no topo da página e clicando em `Seguimento / Sincronizar` {.action}. Deverá indicar o `ID de migração` {.ação} e a `Conta source` {.ação} em causa.
+- a partir da página da ferramenta, <https://omm.ovh.net/>passando o rato no separador `Migration`{.action} na barra de menu no topo da página e clicando em `Seguimento / Sincronizar`{.action}. Deverá indicar o `ID de migração`{.action} e a `Conta source`{.action} em causa.
 
 ![omm](images/omm-migration-track.png){.thumbnail}
 
@@ -81,7 +81,7 @@ A página que aparece permite-lhe seguir o progresso da sua migração. Uma mens
 
 ### Migrar por ficheiro
 
-Ligado à página <https://omm.ovh.net/>, passe o rato no separador `PST / ICS / VCF` {.action} na barra de menu no topo da página e, em função da migração que deseja realizar, clique em `Nova migração PST` {.ação}, `Nova migração ICS` {.ação} ou `Nova migração VCF` {.ação}.
+Ligado à página <https://omm.ovh.net/>, passe o rato no separador `PST / ICS / VCF`{.action} na barra de menu no topo da página e, em função da migração que deseja realizar, clique em `Nova migração PST`{.action}, `Nova migração ICS`{.action} ou `Nova migração VCF`{.action}.
 
 Aqui, deve estar na posse do ficheiro com o conteúdo que pretende migrar.
 
@@ -101,7 +101,7 @@ Existem dois caminhos para aceder ao acompanhamento de uma migração por fichei
 
 - a partir do e-mail recebido notificando-o de que a migração começou;
 
-- a partir da página da ferramenta, <https://omm.ovh.net/> passando o rato no separador `Migration` {.action} na barra de menu no topo da página e clicando em `Seguimento / Sincronizar` {.action}. De seguida, deverá introduzir o `Identificador de migração` {.ação} e a `Conta de destino` {.ação} em causa.
+- a partir da página da ferramenta, <https://omm.ovh.net/> passando o rato no separador `Migration`{.action} na barra de menu no topo da página e clicando em `Seguimento / Sincronizar`{.action}. De seguida, deverá introduzir o `Identificador de migração`{.action} e a `Conta de destino`{.action} em causa.
 
 ![omm](images/omm-migration-track.png){.thumbnail}
 
@@ -114,7 +114,7 @@ A página que aparece permite-lhe seguir o progresso da sua migração. Uma mens
 
 ### Realizar e seguir uma migração múltipla (modo projeto)
 
-Aceda à página <https://omm.ovh.net/>, passe o rato no separador `Projeto` {.action} na barra de menu no topo da página e clique em `Novo projeto de migrações múltiplas` {.action}.
+Aceda à página <https://omm.ovh.net/>, passe o rato no separador `Projeto`{.action} na barra de menu no topo da página e clique em `Novo projeto de migrações múltiplas`{.action}.
 
 ![omm](images/omm-migration-project.png){.thumbnail}
 
@@ -138,7 +138,7 @@ Pode desde já começar as suas migrações de contas. Para isso, vários separa
 |Opções|Permite personalizar os elementos que a ferramenta OVH Mail Migrator deve migrar, bem como o número de pedidos simultâneos que a ferramenta pode efetuar quando realiza as migrações.|
 |Terminar sessão|Permite que se desligue da página de acompanhamento do projeto; isto permite-lhe identificar-se para seguir um eventual outro projeto de migração.|
 
-Se pretender aceder de novo ao seguimento do seu projeto de migração, ligue-se à página <https://omm.ovh.net/> , passe o rato no separador `Projeto` {.action} na barra de menu no topo da página, e clique em `Seguir um projeto` {.action}. Deverá indicar o `ID do projeto de migração` {.action} e a `palavra-passe` {.action} associada a este último.
+Se pretender aceder de novo ao seguimento do seu projeto de migração, ligue-se à página <https://omm.ovh.net/> , passe o rato no separador `Projeto`{.action} na barra de menu no topo da página, e clique em `Seguir um projeto`{.action}. Deverá indicar o `ID do projeto de migração`{.action} e a `palavra-passe`{.action} associada a este último.
 
 ## Quer saber mais?
  

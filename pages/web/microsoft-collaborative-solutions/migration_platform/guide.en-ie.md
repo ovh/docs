@@ -84,6 +84,7 @@ In the `Email accounts`{.action} tab for your platform, click on the `...`{.acti
 > - [Footer](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_20132016_how_to_create_an_automatic_signature/)
 
 Migrate the source email account to your new platform account using our [OMM](https://omm.ovh.net/) tool (OVH Mail Migrator).
+
 > If you need to migrate several email accounts, we recommend using the [Project](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/#carrying-out-and-tracking-a-multiple-migration-project-mode) mode via [OMM](https://omm.ovh.net/Project/Create). You can use this mode to import a CSV table containing the information for the email accounts you want to migrate.
 
 For more information on OMM, please read our guide on [Migrating email accounts via the OVH Mail Migrator](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_email_account_migration_-_ovh_mail_migrator/).

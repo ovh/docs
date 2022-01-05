@@ -89,6 +89,7 @@ Nella scheda `Account email`{.action} della tua piattaforma, clicca sui tre punt
 > - [Firma](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_firma_automatica_-_disclaimer/)
 
 Migra l'account email "sorgente" verso l'account della tua nuova piattaforma con l'aiuto del nostro tool [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
+
 > Se vuoi migrare più account email, ti consigliamo di utilizzare la modalità [Project](https://docs.ovh.com/it/microsoft-collaborative-solutions/migrazione-account-email-con-ovh-mail-migrator/#realizza-e-monitora-una-progetto-di-migrazione-multipla) via [OMM](https://omm.ovh.net/Project/Create), per importare una tabella in formato CSV contenente le informazioni degli account email da migrare.
 
 Per maggiori informazioni su OMM, consulta la guida [Migrare account email via OVH Mail Migrator](https://docs.ovh.com/it/microsoft-collaborative-solutions/migrazione-account-email-con-ovh-mail-migrator/).
