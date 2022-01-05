@@ -33,6 +33,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 
 - **If an account has already been set up**: click `Mail`{.action} in the menu bar at the top of your screen, then `Accounts`{.action}.
 
+|||
 |---|---|
 |![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Select `Add Other Account`{.action}, then click on `Mail account`{.action}.|
 |Enter the following information in the "**Add Mail Account**" window: <br>- your email account **name** <br>- Your **Email address** <br>- Your email **password**|![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
