@@ -440,4 +440,4 @@ Su ASA ya estará actualizado.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](http://community.ovh.com){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

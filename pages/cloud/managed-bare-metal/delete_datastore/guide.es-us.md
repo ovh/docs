@@ -45,4 +45,4 @@ Puede consultar el progreso de la operación en la zona **Recent Tasks**.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://community.ovh.com/en/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
