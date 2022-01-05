@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to test the number of input/output operat
 section: Storage
 ---
 
-**Last updated 4th April 2019**
+**Last updated 4th January 2022**
 
 ## Objective
 
