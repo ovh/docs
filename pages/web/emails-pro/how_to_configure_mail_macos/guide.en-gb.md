@@ -45,7 +45,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 |---|---|
 |![mailmac](images/mail-mac-emailpro01.png){.thumbnail}|Select `Add Other Account`{.action} account, then click on `Mail account`{.action}.|
 |Enter the following information in the "**Add Mail Account**" window: <br>- your email account **Name** <br>- Your **Email address** <br>- Your email **Password** |![mailmac](images/mail-mac-emailpro02.png){.thumbnail}|
-|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|In the next window, enter the information: <br>- Leave your **Email address** already entered <br>- Enter your full email address in **Username** <br>- Leave your **Password** already entered <br>- Select `POP` or `IMAP`(recommended) in **Account type**<br>- Enter `pro**?**.mail.ovh.net` in **Incoming Mail Server** (replace "**?**" with your server number)<br>- Also enter `pro**?**.mail.ovh.net` in **Outgoing Mail Server** (replace "**?**" by your server number)<br><br>To complete the configuration, click on `Log in`{.action}.|
+|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|In the next window, enter the information: <br>- Leave your **Email address** already entered <br>- Enter your full email address in **Username** <br>- Leave your **Password** already entered <br>- Select `POP` or `IMAP`(recommended) in **Account type**<br>- Enter `pro?.mail.ovh.net` in **Incoming Mail Server** (replace "**?**" with your server number)<br>- Also enter `pro?.mail.ovh.net` in **Outgoing Mail Server** (replace "**?**" by your server number)<br><br>To complete the configuration, click on `Log in`{.action}.|
 
 ### Use email address
 
