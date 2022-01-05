@@ -21,7 +21,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção "Quer saber mais?" deste guia.
 > 
 
 ## Requisitos
@@ -34,10 +34,9 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 > [!warning]
 >
-> No nosso exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço E-mail Pro.
+> No nosso exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o "?" pelo número que designa o servidor do seu serviço E-mail Pro.
 > 
-> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e depois `E-mail Pro`{.action}
-> na coluna da esquerda. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na rubrica `Web Cloud`{.action} e depois `E-mail Pro`{.action} na coluna da esquerda. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 > 
 
 ### Adicionar a conta
@@ -50,13 +49,13 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 |---|---|
 |![mailmac](images/mail-mac-emailpro01.png){.thumbnail}|Selecione `Outra conta Mail`{.action} e clique em `Conta Mail`{.action}.|
 |Introduza na janela "**Adicionar uma conta Mail**" as seguintes informações: <br>- o **Nome** da sua conta de e-mail <br>- O seu **endereço de e-mail** <br>- A **password** do seu endereço de e-mail |![mailmac](images/mail-mac-emailpro02.png){.thumbnail}|
-|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Na janela seguinte, preencha as informações: <br>- Deixe o seu **endereço de e-mail** já introduzido <br>- Introduza o seu endereço de e-mail completo em **Nome de utilizador** <br>- Deixe a sua **password** já introduzida <br>- Selecione `POP` ou `IMAP`(recomendado) no **Tipo de conta**<br>- Introduza `pro****.mail.ovh.net` no **Servidor de receção** (substitua "**?**" pelo número do seu servidor)<br>-Introduza igualmente `pro**?**.mail.ovh.net` no **Servidor de envio** (substitua "**?**" pelo número do seu servidor)<br><br>Para terminar a configuração, clique em `Ligar-se`{.action}|
+|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Na janela seguinte, preencha as informações: <br>- Deixe o seu **endereço de e-mail** já introduzido <br>- Introduza o seu endereço de e-mail completo em **Nome de utilizador** <br>- Deixe a sua **password** já introduzida <br>- Selecione `POP` ou `IMAP`(recomendado) no **Tipo de conta**<br>- Introduza `pro?.mail.ovh.net` no **Servidor de receção** (substitua "**?**" pelo número do seu servidor)<br>-Introduza igualmente `pro?.mail.ovh.net` no **Servidor de envio** (substitua "**?**" pelo número do seu servidor)<br><br>Para terminar a configuração, clique em `Ligar-se`{.action}|
 
 ### Utilizar o endereço de e-mail
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço <https://www.ovh.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Consultar a sua conta a partir da interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/) ou [Utilizar o seu endereço de e-mail a partir do webmail RoundCube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/).
+A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço <https://www.ovh.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Utilizar o Outlook Web App com uma conta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/).
 
 ### Recuperar um backup do seu endereço de e-mail
 
