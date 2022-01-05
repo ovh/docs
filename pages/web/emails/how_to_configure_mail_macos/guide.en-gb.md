@@ -35,7 +35,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 
 |---|---|
 |![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Select `Add Other Account`{.action}, then click on `Mail account`{.action}.|
-|Enter the following information in the "**Add Mail Account**" window: <br>- your email account **name** <br>- Your **Email address** <br>- Your email **password** |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
+|Enter the following information in the "**Add Mail Account**" window: <br>- your email account **name** <br>- Your **Email address** <br>- Your email **password**|![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
 |![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|In the next window, enter the information: <br>- Leave your **Email address** already entered <br>- Enter your full email address in **Username** <br>- Leave your **Password** already entered <br>- Select `POP` or `IMAP`(recommended) in **Account type**<br>- Type `ssl0.ovh.net` in **Incoming Mail Server**<br>- Also enter `ssl0.ovh.net` in **Outgoing Mail Server**<br><br>To complete the configuration, click on `Sign in`{.action}|
 
 ### Use email address
