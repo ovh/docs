@@ -21,12 +21,12 @@ As contas MX Plan podem ser configuradas em vários softwares de e-mail compatí
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção "Quer saber mais?" deste guia.
 > 
 
 ## Requisitos
 
-- Ter um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}).
+- Ter um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)).
 - Ter o software Mail instalado no seu Mac.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
  
@@ -34,21 +34,21 @@ As contas MX Plan podem ser configuradas em vários softwares de e-mail compatí
 
 ### Adicionar a conta
 
-- **No início da aplicação**\: um assistente de configuração aparece diretamente e convida-o a escolher o seu tipo de conta.
+- **No início da aplicação**: um assistente de configuração aparece diretamente e convida-o a escolher o seu tipo de conta.
 
-- **Se uma conta já estiver configurada**\: clique em `Mail`{.action} na barra de menu no topo do ecrã e, a seguir, em `Contas`{.action}.
+- **Se uma conta já estiver configurada**: clique em `Mail`{.action} na barra de menu no topo do ecrã e, a seguir, em `Contas`{.action}.
 
 | | |
 |---|---|
 |![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Selecione `Outra conta Mail`{.action} e clique em `Conta Mail`{.action}.|
-|Introduza na janela "**Adicionar uma conta Mail**" as seguintes informações: <br>\- o **Nome** da sua conta de e-mail <br>\- O seu **endereço de e-mail** <br>\- A **password** do seu endereço de e-mail |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
-|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Na janela seguinte, preencha as informações: <br>\- Deixe o seu **endereço de e-mail** já introduzido <br>\- Introduza o seu endereço de e-mail completo em **Nome de utilizador** <br>\- Deixe a sua **password** já introduzida <br>\- Selecione `POP` ou `IMAP` (recomendado) no **Tipo de conta**<br>\- Introduza `ssl0.ovh.net` no **Servidor de receção** <br>\- Introduza igualmente `ssl0.ovh.net` no **Servidor de envio**<br><br>Para terminar a configuração, clique em `Ligar-se`{.action}|
+|Introduza na janela "**Adicionar uma conta Mail**" as seguintes informações: <br>- O **Nome** da sua conta de e-mail <br>- O seu **endereço de e-mail** <br>- A **password** do seu endereço de e-mail |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
+|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Na janela seguinte, preencha as informações: <br>- Deixe o seu **endereço de e-mail** já introduzido <br>- Introduza o seu endereço de e-mail completo em **Nome de utilizador** <br>- Deixe a sua **password** já introduzida <br>- Selecione `POP` ou `IMAP`(recomendado) no **Tipo de conta**<br>- Introduza `ssl0.ovh.net` no **Servidor de receção** <br>- Introduza igualmente `ssl0.ovh.net` no **Servidor de envio**<br><br>Para terminar a configuração, clique em `Ligar-se`{.action}|
 
 ### Utilizar o endereço de e-mail
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço <https://www.ovh.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Consultar a sua conta a partir da interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/) ou [Utilizar o seu endereço de e-mail a partir do webmail RoundCube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/).
+A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço <https://www.ovh.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Utilizar o Outlook Web App com uma conta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/) ou utilizar o seu endereço de e-mail a partir do [webmail RoundCube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/).
 
 ### Recuperar um backup do seu endereço de e-mail
 
