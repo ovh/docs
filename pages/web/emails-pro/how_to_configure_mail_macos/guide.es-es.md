@@ -6,7 +6,7 @@ order: 4
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 **Última actualización: 28/12/2021**
@@ -21,7 +21,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado "Más información" de esta guía.
 > 
 
 ## Requisitos
@@ -34,33 +34,32 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 > [!warning]
 >
-> En nuestro ejemplo, utilizamos el nombre del servidor: pro**?**.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Email Pro.
+> En nuestro ejemplo, utilizamos el nombre del servidor: pro**?**.mail.ovh.net. Debe reemplazar el "?" por el número que designa el servidor del servicio Email Pro.
 > 
-> Encontrará esta cifra en el [área de cliente de OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Email Pro.`{.action}
-> en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **«Conexión»** de la pestaña `Información General`{.action}.
+> Encontrará esta cifra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Email Pro.`{.action} en la columna de la izquierda. El nombre del servidor puede verse en el recuadro "**Conexión**" de la pestaña `Información General`{.action}.
 > 
 
 ### Añadir la cuenta
 
 - **En la primera ejecución de la aplicación**: se le mostrará directamente un asistente de configuración, que le pedirá que elija el tipo de cuenta.
 
-- **Si ya ha configurado** una cuenta: haga clic en `Mail`{.action} en el menú superior y seleccione `Cuentas`{.action}.
+- **Si ya ha configurado una cuenta**: haga clic en `Mail`{.action} en el menú superior y seleccione `Cuentas`{.action}.
 
 | | |
 |---|---|
 |![mailmac](images/mail-mac-emailpro01.png){.thumbnail}|Seleccione `Otra cuenta de correo`{.action} y haga clic en `Cuentas de correo`{.action}.|
 |Introduzca en la ventana "**Añadir cuenta de correo**" la siguiente información: <br>- el **nombre** de su cuenta de correo <br>- Su **dirección de correo electrónico** <br>- La **contraseña** de su dirección de correo electrónico |![mailmac](images/mail-mac-emailpro02.png){.thumbnail}|
-|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Introduzca la información en la siguiente ventana: <br>- Deje su **dirección de correo electrónico** ya introducida <br>- Introduzca su dirección de correo electrónico completa en el **Nombre de usuario** <br>- Deje su **contraseña** ya introducida <br>- Seleccione `POP` o `IMAP`(recomendado) en **Tipo de cuenta**<br>- Introduzca `pro**?**.mail.ovh.net` en el **Servidor de recepción** (sustituya "**?**" por el número de su servidor)<br>-Introduzca también `pro**?**.mail.ovh.net` en el **servidor de envío** (sustituya "**?**" por el número de su servidor)<br><br>Para finalizar la configuración, haga clic en `Conectar`{.action}|
+|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Introduzca la información en la siguiente ventana: <br>- Deje su **dirección de correo electrónico** ya introducida <br>- Introduzca su dirección de correo electrónico completa en el **Nombre** de usuario <br>- Deje su **contraseña** ya introducida <br>- Seleccione `POP` o `IMAP`(recomendado) en **Tipo de cuenta**<br>- Introduzca `pro?.mail.ovh.net` en el **Servidor de recepción** (sustituya "**?**" por el número de su servidor)<br>-Introduzca también `pro?.mail.ovh.net` en el **servidor de envío** (sustituya "**?**" por el número de su servidor)<br><br>Para finalizar la configuración, haga clic en `Conectar`{.action}|
 
 ### Utilizar la dirección de correo
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/) o [Utilizar su dirección de correo desde el webmail Roundcube](https://docs.ovh.com/es/emails/webmail_guia_de_uso_de_roundcube/).
+OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Usar Outlook Web App con una cuenta Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/).
 
 ### Obtener una copia de seguridad de su dirección de correo
 
-Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar**" de la sección "**Correo electrónico en Mac OS**" de nuestra guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/#exportar).
+Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar**" de la sección "**Correo electrónico en Mac OS**" de nuestra guía [Migrar manualmente una dirección de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/#exportar).
 
 
 ### Modificar los parámetros existentes
