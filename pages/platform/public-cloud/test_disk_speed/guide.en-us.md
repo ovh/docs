@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to test the number of input/output operat
 section: Storage
 ---
 
-**Last 2019/04/04**
+**Last updated 4th April 2019**
 
 ## Objective
 
@@ -15,7 +15,7 @@ You'll probably be called upon to check the speed of your disks when you carry o
 
 ## Requirements
 
-- A [Public Cloud Instance](https://www.ovhcloud.com/en/public-cloud/){.external} in your OVH account
+- A [Public Cloud Instance](https://www.ovhcloud.com/en/public-cloud/){.external} in your OVHcloud account
 - Administrative (root) access to your instance via SSH
 
 ## Instructions
@@ -49,7 +49,7 @@ You can retrieve a list of arguments and their functions directly from the [fio 
 To test the speed of an additional disk, you will need to mount the disk with the following command: 
 
 ```
-root@serveur:~$ cd /mnt/disk
+root@server:~$ cd /mnt/disk
 ```
 
 ### Analyse the data
@@ -117,4 +117,4 @@ We can see that disk performance is approximately 891 IOPS.
 
 [Add storage space](../add_storage_space/){.external}
 
-Join our community of users on https://community.ovh.com/en/.
+Join our community of users on <https://community.ovh.com/en/>.

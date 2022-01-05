@@ -6,33 +6,39 @@ legacy_guide_number: g1956
 section: Almacenamiento
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
 
-## 
+**Última actualización: 04/04/2019**
+
+## Objetivo
+
 Es probable que desee comprobar la velocidad de sus discos, ya sea para comparar el rendimiento de las distintas unidades o para comprobar si las prestaciones son las correctas. 
 
-Esta guía explica cómo verificar el número de entradas/salidas por segundo (IOPS) que sus discos son capaces de realizar, tanto para los discos de instancias como para los discos adicionales.
+**Esta guía explica cómo verificar el número de entradas/salidas por segundo (IOPS) que sus discos son capaces de realizar, tanto para los discos de instancias como para los discos adicionales.**
 
 
 ## Requisitos
 
-- Una instancia 
-- Un disco adicional
+- Tener una [instancia Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud
+- Tener acceso administrativo (root) a esta instancia por SSH (solo para Linux).
 
 
+## Procedimiento
 
+### Instalar el pedido de prueba
 
-## Instalación
-El comando necesario para realizar esta operación no está disponible por defecto, por lo que deberá instalarlo: 
+El comando que necesita para comprobar la velocidad del disco se denomina `fio`. No está presente por defecto en el servidor.
 
+Para instalar el `fio`, conéctese a su instancia por SSH y ejecute el siguiente comando:
 
 ```
-root@serveur:~$ apt-get install fio
+root@server:~$ apt-get install fio
 ```
 
+### Probar la velocidad del disco:
 
-
-
-## Comprobación
 Si desea comprobar la velocidad de sus discos, ejecute el siguiente comando: 
 
 
@@ -40,21 +46,22 @@ Si desea comprobar la velocidad de sus discos, ejecute el siguiente comando:
 root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
+> [!primary] 
+>
+> Deberá adaptar el argumento `--numjobs` al número de CPU de su instancia. 
+> 
+> Puede consultar la lista de argumentos y sus funciones directamente en el [manual de fio](https://github.com/axboe/fio/blob/master/HOWTO).
+> 
 
-Atención: 
-Deberá adaptar el argumento --numjobs al número de CPU de su instancia. 
-Puede consultar la lista de argumentos y sus funciones directamente en el [manual de fio](https://github.com/axboe/fio/blob/master/HOWTO).
 Para comprobar el rendimiento de un disco adicional, deberá acceder a una de las carpetas del punto de montaje. 
 
 
 ```
-root@serveur:~$ cd /mnt/disk
+root@server:~$ cd /mnt/disk
 ```
 
+### Analizar los datos
 
-
-
-## Análisis
 Tras ejecutar este comando, obtendrá un resultado similar al siguiente: 
 
 
@@ -92,7 +99,6 @@ Disk stats (read/write):
 vda: ios=0/300294, merge=0/1455, ticks=0/7431952, in_queue=7433124, util=99.05%
 ```
 
-
 La información que nos interesa corresponde a las IOPS, que podemos encontrar en la línea 6 del resultado: 
 
 
@@ -100,5 +106,9 @@ La información que nos interesa corresponde a las IOPS, que podemos encontrar e
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 
-
 En este ejemplo, podemos ver cómo las prestaciones del disco corresponden a 891 iops aproximadamente.
+
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
