@@ -67,7 +67,7 @@ No, es necesario desvincular un volumen antes de poder aumentarlo.
 
 ## ¿Cuántos volúmenes adicionales puedo asociar a cada instancia?
 
-Puede asociar hasta 26 volúmenes adicionales por instancia.
+Puede asociar hasta 25 volúmenes adicionales por instancia.
 
 ## ¿Cómo están protegidos mis servidores?
 
