@@ -6,55 +6,63 @@ legacy_guide_number: g1956
 section: Storage
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## 
+**Ultimo aggiornamento: 04/01/2022**
+
+## Obiettivo
+
 Eseguire un test della velocità dei tuoi dischi è necessario per confrontare le loro prestazioni o semplicemente per verificare che siano corrette.
 
-Questa guida ti mostra la procedura da seguire per testare il numero di operazioni input/output al secondo (IOPS) effettuate da tutti i dischi associati alle tue istanze.
+**Questa guida ti mostra la procedura da seguire per testare il numero di operazioni input/output al secondo (IOPS) effettuate da tutti i dischi associati alle tue istanze.**
 
 
-## Requisiti necessari
+## Prerequisiti
 
-- Un'istanza
-- Un disco aggiuntivo
-
-
+- Disporre di una [istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}
+- Avere accesso amministrativo (root) a questa istanza via SSH (solo per Linux)
 
 
-## Installazione
-Il comando da eseguire per effettuare questa operazione non è disponibile di default, è necessario installarlo:
+## Procedura
+
+### Installare il comando di test
+
+Il comando necessario per verificare la velocità del disco si chiama `fio` Non è presente di default sul tuo server.
+
+Per installare `fio`, connettiti all'istanza in SSH ed esegui il comando:
 
 
 ```
-root@serveur:~$ apt-get install fio
+root@server:~$ apt-get install fio
 ```
 
+### Testare la velocità del disco
 
-
-
-## Test
 Esegui il test dei tuoi dischi con questo comando:
 
 
 ```
-root@serveur:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --fsync=32 --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
+root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --fsync=32 --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
+> [!primary]
+>
+> È necessario adattare l'argomento --numjobs al numero di CPU della tua istanza.
+>
+> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO).
+>
 
-Attenzione!
-È necessario adattare l'argomento --numjobs al numero di CPU della tua istanza.
-Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO).
 Per testare le performance di un disco aggiuntivo, è necessario cambiare la directory del tuo ambiente di lavoro.
 
 
 ```
-root@serveur:~$ cd /mnt/disk
+root@server:~$ cd /mnt/disk
 ```
 
+### Analizzare i dati
 
-
-
-## Analisi
 Il comando restituisce un risultato di questo tipo:
 
 
@@ -92,7 +100,6 @@ Disk stats (read/write):
 vda: ios=0/300294, merge=0/1455, ticks=0/7431952, in_queue=7433124, util=99.05%
 ```
 
-
 L'informazione corrispondente agli IOPS è indicata nella riga 6 del risultato:
 
 
@@ -100,10 +107,11 @@ L'informazione corrispondente agli IOPS è indicata nella riga 6 del risultato:
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 
-
 Nel nostro esempio, le prestazioni del disco corrispondono a circa 891 IOPS.
 
 
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
+## Per saperne di più
 
+[Crea e configura un disco aggiuntivo sulla tua istanza](https://docs.ovh.com/it/public-cloud/crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/)
+  
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
