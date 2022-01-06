@@ -10,7 +10,7 @@ order: 2
 
 ## Objectif
 
-[OVH Mail Migrator](https://omm.ovh.net/){.external} est un outil créé par OVHcloud. Il permet de migrer vos comptes e-mail vers vos adresses e-mail OVHcloud ou service e-mail externe. Le processus prend en charge différents types de contenus, tels que les e-mails, les contacts, les calendriers et les tâches, tant que ces derniers sont compatibles avec vos adresses e-mails.
+[OVH Mail Migrator](https://omm.ovh.net/){.external} est un outil créé par OVHcloud. Il permet de migrer vos comptes e-mail vers vos adresses e-mail OVHcloud ou un service e-mail externe. Le processus prend en charge différents types de contenus, tels que les e-mails, les contacts, les calendriers et les tâches, tant que ces derniers sont compatibles avec vos adresses e-mails.
 
 **Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVH Mail Migrator.**
 
@@ -19,7 +19,7 @@ order: 2
 
 - Disposer d'un service e-mail chez OVHcloud, tel qu'une offre [Exchange](https://www.ovhcloud.com/fr/emails/){.external}, [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external} ou MX Plan (via l'offre MX Plan seule ou incluse dans une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}).
 - Disposer des identifiants relatifs aux comptes e-mail que vous souhaitez migrer (les comptes e-mail source).
-- Disposer des identifiants relatifs aux comptes e-mail destination.
+- Disposer des identifiants relatifs aux comptes e-mail de destination.
 
 ## En pratique
 
@@ -43,7 +43,7 @@ Sur la page qui s'affiche, complétez maintenant les informations pour chaque pa
 
 |Information|Description|
 |---|---|
-|Type de serveur|Sélectionnez le type de serveur correspondant à vos comptes. Si l'un d'eux est une adresse OVHcloud, **Hosted by OVHcloud (Autodetect)** peut vous permettre de compléter automatiquement les informations à l'exeption du mot de passe.|
+|Type de serveur|Sélectionnez le type de serveur correspondant à vos comptes. Si l'un d'eux est une adresse OVHcloud, **Hosted by OVHcloud (Autodetect)**, cela vous permet de compléter automatiquement les informations, à l'exeption du mot de passe.|
 |URL du serveur|Renseignez l'adresse du serveur où sont hébergés vos comptes. Ce champ peut être complété automatiquement lors du choix du type de serveur.|
 |Login|Saisissez l'adresse e-mail complète.|
 |Compte administrateur avec délégation|Ce champ apparaît uniquement avec certains types de serveurs.|
@@ -114,28 +114,30 @@ Depuis la page <https://omm.ovh.net/>, dans l'onglet `Projet`{.action} au dessus
 
 Complétez les informations du **Nouveau projet**:
 
-- Définissez un nom à votre projet de migration.
+- Donnez un nom à votre projet de migration.
 - Un mot de passe pour accèder à l'interface de suivi de votre projet de migration.
 - une adresse e-mail pour être notifié sur l'avancement de votre projet de migration.
 
-Cliquez sur `Créer le projet`{.action}. La page suivante vous permet de gérer et suivre votre projet de migration. Conserver bien **le numéro du projet** affiché au dessus.
+Cliquez sur `Créer le projet`{.action}. La page suivante vous permet de gérer et suivre votre projet de migration. Conservez bien **le numéro du projet** affiché au dessus.
 
 ![omm](images/omm-migration-project01.png){.thumbnail}
 
 Vous pouvez maintenant débuter la migration de vos comptes. L'interface présente différents onglets :
 
-- `Continuer` : Permet de suivre l'avancement des migrations sur votre projet. Vous disposer d'un bouton permettant de mettre en attente et de reprendre les migrations en cours.
+- `Continuer` : Permet de suivre l'avancement des migrations sur votre projet. Vous disposez d'un bouton permettant de mettre en attente et de reprendre les migrations en cours.
 
-- `Création multiple` : Permet d'ajouter dans la file d'attente plusieurs migrations grâce à l'import d'un fichier (CSV ou Excel). Ce dernier doit respecter un formatage précis ; nous vous recommandons d'utiliser les modèles fournis. Le fichier se présente sous cette forme:
+- `Création multiple` : Permet d'ajouter dans la file d'attente plusieurs migrations grâce à l'import d'un fichier (CSV ou Excel). Ce dernier doit respecter un formatage précis; nous vous recommandons d'utiliser les modèles fournis. Le fichier se présente sous cette forme:
 
 ``` 
+
 "Source Type(IMAP/Exchange/POP)";Source Server url;Source Login/Mail;Source Password;Destination Type;"Destination Url(can be leaved empty if hosted by OVH)";Destination Mail;Destination Password;Source admin mail (delegation);Destination Admin Mail (delegation)
 IMAP;myimap.server.com;mywonderfulmail@myserver.com;My_password;Exchange;https://ex3.mail.ovh.net/ews/exchange.asmx;mygreatmailaddress@mydomain.ovh;My_password2;"";""
+
 ```
 
 Il est préférable de l'ouvrir avec un logiciel de tableur pour le compléter.
 
-- `Ajouter` : Permet d'ajouter compte par compte des migrations dans la file d'attente. Vous pourrez cependant conserver les serveurs source et de destination en tant que valeur par défaut.
+- `Ajouter` : Permet d'ajouter, compte par compte, des migrations dans la file d'attente. Vous pourrez cependant conserver les serveurs source et de destination en tant que valeurs par défaut.
 
 ![omm](images/omm-migration-project02.png){.thumbnail}
 
