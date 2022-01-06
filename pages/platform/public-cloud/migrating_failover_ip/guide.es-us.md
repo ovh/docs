@@ -35,7 +35,7 @@ En nuestro ejemplo, una IP failover se enruta hacia "Instancia_A" y queremos red
 
 Haga clic en los 3 puntos a la derecha de la IP failover y a seleccione `Modificar la instancia asociada`{.action}.
 
-![migrar IP failover](images/modify3.2022.png){.thumbnail}
+![migrar IP failover](images/modify1.2022.png){.thumbnail}
 
 Haga clic en la casilla junto al servidor de destino
 

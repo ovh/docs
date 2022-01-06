@@ -36,7 +36,7 @@ No nosso exemplo, um IP failover é rodado para "Instância_A" e nós queremos r
 
 Clique nos três pontos à direita do IP Failover e depois em `Alterar a instância associada`{.action}. 
 
-![ip-failover](images/modify3.2022.png){.thumbnail}
+![ip-failover](images/modify1.2022.png){.thumbnail}
 
 Clique na opção junto ao servidor de destino
 

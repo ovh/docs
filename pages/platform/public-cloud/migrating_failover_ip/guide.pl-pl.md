@@ -36,7 +36,7 @@ W naszym przykładzie adres IP failover przekierowywany jest na "Instance_A" i c
 
 Kliknij na `...`{.action} obok IP failover i wybierz `Zmień przypisaną instancję`{.action}.
 
-![](images/modify3.2022.png){.thumbnail}
+![](images/modify1.2022.png){.thumbnail}
 
 Kliknij pole obok serwera docelowego.
 

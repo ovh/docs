@@ -6,6 +6,10 @@ legacy_guide_number: g1890
 section: 'Netzwerk und IP'
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
 **Letzte Aktualisierung am 09.04.2020**
 
 ## Ziel
@@ -22,14 +26,14 @@ IP-Adressen migrieren zu können bedeutet, die Möglichkeit eines Dienstausfalls
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken im linken Menü auf `Failover IP`{.action} unter "Network".
-In diesem Beispiel soll die auf „Instance_A“ geroutete Failover-IP zu „Instance_B“ migriert werden.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken im linken Menü auf `Failover IP`{.action} unter **Network**.
+In diesem Beispiel soll die auf “Instance_A“ geroutete Failover-IP zu “Instance_B“ migriert werden.
 
 ![](images/failover2022.png){.thumbnail}
 
 Klicken Sie auf `...`{.action} neben der Failover-IP und dann auf „Verbundene Instanz bearbeiten“.
 
-![](images/modify3.2022.png){.thumbnail}
+![](images/modify1.2022.png){.thumbnail}
 
 Wählen Sie den Zielserver aus der Liste über die Checkbox aus.
 

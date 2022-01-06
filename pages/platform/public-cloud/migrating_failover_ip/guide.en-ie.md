@@ -29,7 +29,7 @@ In our example, a failover IP is routed to "Instance_A" and we want to redirect 
 
 Click on `...`{.action} next to the failover IP and select `Modify associated instance`{.action}.
 
-![migrating failover IP](images/modify3.2022.png){.thumbnail}
+![migrating failover IP](images/modify1.2022.png){.thumbnail}
 
 Choose the destination server from the list by clicking the checkbox.
 

@@ -37,7 +37,7 @@ Nel nostro esempio, un IP Failover è indirizzato verso "Instance_A" e vogliamo 
 
 Clicca sui tre puntini a destra dell’indirizzo IP Failover e poi su `Modifica l’istanza associata`{.action}.
 
-![IP-failover](images/modify3.2022.png){.thumbnail}
+![IP-failover](images/modify1.2022.png){.thumbnail}
 
 Clicca sulla casella accanto al server di destinazione
 

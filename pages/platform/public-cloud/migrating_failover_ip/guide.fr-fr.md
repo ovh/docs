@@ -32,7 +32,7 @@ Dans notre exemple, une IP failover est routée vers "Instance_A" et nous voulon
 
 Cliquez sur les 3 points à droite de l’IP failover, puis sur `Modifier l’instance associée`{.action}.
 
-![migrating failover ip](images/modify3.2022.png){.thumbnail}
+![migrating failover ip](images/modify1.2022.png){.thumbnail}
 
 Cliquez sur la case à côté du serveur de destination.
 
