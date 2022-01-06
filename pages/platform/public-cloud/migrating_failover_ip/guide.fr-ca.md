@@ -19,28 +19,30 @@ Ce guide vous explique comment basculer une IP Failover d'une instance à une au
 ## Prérequis
 - Au moins deux instances Public Cloud démarrées
 - Une IP Failover
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique 
 
 ### Migration de l'IP Fail Over
 
-Tout d’abord, cliquez sur la section IP Failover sous la rubrique Network dans le menu de gauche de votre espace client Public Cloud OVHcloud. Vous verrez alors que l’IP failover est acheminée vers l’instance_A et nous voulons la rediriger vers l’instance_B.
+Tout d’abord, connectez-vous à l’[Espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Public Cloud`{.action} et sélectionnez le service Public Cloud concerné. Sélectionnez ensuite Failover IP dans la partie **Network** .
+Dans notre exemple, une IP failover est routée vers "Instance_A" et nous voulons la rediriger vers "Instance_B".
 
-![migrating failover ip](images/failover.png){.thumbnail}
+![migrating failover ip](images/failover2022.png){.thumbnail}
 
 Cliquez sur les 3 points à droite de l’IP failover, puis sur `Modifier l’instance associée`{.action}.
 
-![migrating failover ip](images/modify.png){.thumbnail}
+![migrating failover ip](images/modify3.2022.png){.thumbnail}
 
 Cliquez sur la case à côté du serveur de destination.
 
 ![migrating failover ip](images/modify1.png){.thumbnail}
 
-- Cliquez sur Joindre
+- Cliquez sur `Associer`{.action}.
 
 - Après quelques secondes, votre espace client sera mis à jour et le message suivant s’affichera, confirmant que la migration a été effectuée avec succès :
 
-![migrating failover ip](images/modify2.png){.thumbnail}
+![migrating failover ip](images/modify2.2022.png){.thumbnail}
 
 
 
@@ -52,5 +54,9 @@ Cliquez sur la case à côté du serveur de destination.
 > 
 
 ## Aller plus loin
+
+[Configurer une IP fail-over](https://docs.ovh.com/ca/fr/public-cloud/configurer_une_ip_failover/)
+
+[Importer une IP Fail Over](https://docs.ovh.com/ca/fr/public-cloud/importer-une-ip-fail-over/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

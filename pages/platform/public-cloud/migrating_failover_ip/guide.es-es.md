@@ -14,21 +14,24 @@ Esta guía explica cómo migrar una IP de conmutación de una instancia a otra. 
 - Migrar un sitio web a su «nueva versión»
 - Ejecutar su actividad en un servidor replicado mientras realiza un mantenimiento o ejecuta una actualización en el servidor de producción.
 
-## Requisitos:
+## Requisitos
 
 - Tener al menos dos instancias de Public Cloud ejecutándose
-- Tener una IP de conmutación
+- Tener una IP Failover
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
-- Para comenzar, haga clic en la sección «IP de conmutación» a continuación de «Red» en el menú de la izquierda. Entonces podrá ver que nuestra IP de conmutación está enrutada hacia la instancia A, pero queremos redireccionarla hacia la instancia B.
+### Migración de la IP failover
 
-![migrar IP failover](images/failover.png){.thumbnail}
+En primer lugar, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el servicio Public Cloud correspondiente. A continuación, seleccione Failover IP en el apartado **Network** .
+En nuestro ejemplo, una IP failover se enruta hacia "Instancia_A" y queremos redirigirla hacia "Instancia_B".
+
+![migrar IP failover](images/failover2022.png){.thumbnail}
 
 Haga clic en los 3 puntos a la derecha de la IP de conmutación y, a continuación, modifique la instancia asociada.
 
-![migrar IP failover](images/modify.png){.thumbnail}
+![migrar IP failover](images/modify3.2022.png){.thumbnail}
 
 Haga clic en la casilla junto al servidor de destino
 
@@ -38,11 +41,17 @@ Haga clic en la casilla junto al servidor de destino
 
 - Pasados unos segundos, el panel de control se actualizará y se mostrará el siguiente mensaje, confirmando que la migración se ha realizado correctamente:
 
-![migrar IP failover](images/modify2.png){.thumbnail}
+![migrar IP failover](images/modify2.2022.png){.thumbnail}
 
 
-La IP de conmutación puede configurarse en el servidor de destino antes o después de realizar la migración. Si está preconfigurada, comenzará a responder en cuanto se haya realizado la operación de enrutamiento.
+> [!success]
+> La IP de conmutación puede configurarse en el servidor de destino antes o después de realizar la migración. Si está preconfigurada, comenzará a responder en cuanto se haya realizado la operación de enrutamiento (*routing*).
+>
 
 ## Más información
+
+[Configurar una IP failover](https://docs.ovh.com/es/public-cloud/configurer-une-ip-failover/)
+
+[Importar una IP Failover](https://docs.ovh.com/es/public-cloud/importar_una_ip_failover/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

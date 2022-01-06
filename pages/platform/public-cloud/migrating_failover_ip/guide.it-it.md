@@ -18,18 +18,22 @@ Questa guida ti mostra come trasferire un failover IP da un’istanza all’altr
 ## Prerequisiti
 
 - Almeno due istanze Public Cloud attive
-- Un IP Failover
+- Un indirizzo IP Failover
+- Aver accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 
 ## Procedura
 
-- Per prima cosa, vai alla sezione Network del menu a sinistra e clicca su Failover IP. Come puoi notare, l’indirizzo IP Failover è instradato all’istanza_A e noi intendiamo reindirizzarlo verso l’istanza_B.
+### Migrazione dell'IP Failover
 
-![IP-failover](images/failover.png){.thumbnail}
+Per prima cosa, Accedi alla sezione `Public Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona il tuo servizio. Seleziona Failover IP nella sezione **Network**.
+Nel nostro esempio, un IP Failover è indirizzato verso "Instance_A" e vogliamo reindirizzarlo verso "Instance_B".
+
+![IP-failover](images/failover2022.png){.thumbnail}
 
 Clicca sui tre puntini a destra dell’indirizzo IP Failover e poi su ‘Modifica l’istanza associata’.
 
-![IP-failover](images/modify.png){.thumbnail}
+![IP-failover](images/modify3.2022.png){.thumbnail}
 
 Clicca sulla casella accanto al server di destinazione
 
@@ -39,14 +43,17 @@ Clicca sulla casella accanto al server di destinazione
 
 - Dopo alcuni secondi il tuo spazio cliente sarà aggiornato e visualizzerai un messaggio di conferma dell’avvenuta migrazione.
 
-![IP-failover](images/modify2.png){.thumbnail}
+![IP-failover](images/modify2.2022.png){.thumbnail}
 
-
-L’indirizzo IP può essere configurato sul server di destinazione prima o dopo aver effettuato la migrazione. Se è preconfigurato, inizierà a rispondere non appena il processo di instradamento (<i>routing</i>) sarà terminato.
-
+> [!success]
+>
+> L’indirizzo IP può essere configurato sul server di destinazione prima o dopo aver effettuato la migrazione. Se è preconfigurato, inizierà a rispondere non appena il processo di instradamento (<i>routing</i>) sarà terminato.
+>
 
 ## Per saperne di più
 
-[Ritorna all’indice delle guide Cloud]({legacy}1785)
+[Configura un IP failover](https://docs.ovh.com/it/public-cloud/configura-un-ip-failover/)
+
+[Importa un IP Failover](https://docs.ovh.com/it/public-cloud/importa_un_ip_failover/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
