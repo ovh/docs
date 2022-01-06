@@ -29,7 +29,7 @@ W tym przewodniku wyjaśniono, jak przenieść adres IP Failover (używany w prz
 
 ### Migracja IP Failover
 
-Po pierwsze zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud{.action} i wybierz odpowiednią usługę Public Cloud. Następnie wybierz Failover IP w części **Network**.
+Po pierwsze zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiednią usługę Public Cloud. Następnie wybierz Failover IP w części **Network**.
 W naszym przykładzie adres IP failover przekierowywany jest na "Instance_A" i chcemy go przekierować na "Instance_B".
 
 ![](images/failover2022.png){.thumbnail}

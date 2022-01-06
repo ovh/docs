@@ -21,7 +21,7 @@ Este guia explica como poderá migrar um IP Failover de uma instância para outr
 
 ## Requisitos
 
-- Dispor de, no mínimo, duas instâncias [Public Cloud iniciadas](https://www.ovhcloud.com/pt/public-cloud/){.external}
+- Dispor de, no mínimo, duas instâncias [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} iniciadas
 - Um IP Failover
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
@@ -34,7 +34,7 @@ No nosso exemplo, um IP failover é rodado para "Instância_A" e nós queremos r
 
 ![ip-failover](images/failover2022.png){.thumbnail}
 
-Clique nos três pontos à direita do IP Failover e depois em Modificar a instância associada. 
+Clique nos três pontos à direita do IP Failover e depois em `Alterar a instância associada`{.action}. 
 
 ![ip-failover](images/modify3.2022.png){.thumbnail}
 
@@ -42,7 +42,7 @@ Clique na opção junto ao servidor de destino
 
 ![ip-failover](images/modify1.png){.thumbnail}
 
-- Clique em Associar
+- Clique em `Associar`{.action}
 
 - Após alguns segundos, a área de cliente será atualizada e surgirá a seguinte mensagem a confirmar que a migração foi bem-sucedida:
 

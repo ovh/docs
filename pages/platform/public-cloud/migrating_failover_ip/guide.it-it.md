@@ -6,7 +6,11 @@ legacy_guide_number: g1890
 section: Rete
 ---
 
-**Ultimo aggiornamento 04/12/2019**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento 06/01/2022**
 
 ## Obiettivo
 Questa guida ti mostra come trasferire un failover IP da un’istanza all’altra. Questa operazione, che permette generalmente di ridurre o eliminare i casi di indisponibilità del servizio, potrebbe essere necessaria, ad esempio, per:
@@ -31,7 +35,7 @@ Nel nostro esempio, un IP Failover è indirizzato verso "Instance_A" e vogliamo 
 
 ![IP-failover](images/failover2022.png){.thumbnail}
 
-Clicca sui tre puntini a destra dell’indirizzo IP Failover e poi su ‘Modifica l’istanza associata’.
+Clicca sui tre puntini a destra dell’indirizzo IP Failover e poi su `Modifica l’istanza associata`{.action}.
 
 ![IP-failover](images/modify3.2022.png){.thumbnail}
 
@@ -39,7 +43,7 @@ Clicca sulla casella accanto al server di destinazione
 
 ![IP-failover](images/modify1.png){.thumbnail}
 
-- Clicca su Associa
+- Clicca su `Associa`{.action}.
 
 - Dopo alcuni secondi il tuo spazio cliente sarà aggiornato e visualizzerai un messaggio di conferma dell’avvenuta migrazione.
 

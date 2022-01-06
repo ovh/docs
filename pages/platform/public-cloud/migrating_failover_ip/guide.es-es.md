@@ -6,7 +6,11 @@ legacy_guide_number: g1890
 section: 'Red e IP'
 ---
 
-**Última actualización: 4/12/2019**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 06/01/2022**
 
 ## Objetivo
 Esta guía explica cómo migrar una IP de conmutación de una instancia a otra. Por lo general, esta acción limita o elimina la posibilidad de que su servidor esté inaccesible y le permite:
@@ -29,7 +33,7 @@ En nuestro ejemplo, una IP failover se enruta hacia "Instancia_A" y queremos red
 
 ![migrar IP failover](images/failover2022.png){.thumbnail}
 
-Haga clic en los 3 puntos a la derecha de la IP de conmutación y, a continuación, modifique la instancia asociada.
+Haga clic en los 3 puntos a la derecha de la IP failover y a seleccione `Modificar la instancia asociada`{.action}.
 
 ![migrar IP failover](images/modify3.2022.png){.thumbnail}
 
@@ -37,7 +41,7 @@ Haga clic en la casilla junto al servidor de destino
 
 ![migrar IP failover](images/modify1.png){.thumbnail}
 
-- Haga clic en «Adjuntar»
+- Haga clic en `Asociar`{.action}.
 
 - Pasados unos segundos, el panel de control se actualizará y se mostrará el siguiente mensaje, confirmando que la migración se ha realizado correctamente:
 
