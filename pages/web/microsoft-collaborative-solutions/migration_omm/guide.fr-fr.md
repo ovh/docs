@@ -87,7 +87,7 @@ Sur la page qui s'affiche, complétez les informations du **compte de destinatio
 
 Si les informations renseignées sont correctes, vous serez invité à sélectionner le fichier sur votre ordinateur. Ensuite, appuyez sur le bouton `Upload`{.action} et patientez pendant le téléchargement ; ceci peut prendre un certain temps selon la taille du fichier. Vous pouvez consulter l'état d'avancement du téléchargement depuis la présente page.
 
-Une fois le fichier téléchargé sur OMM, renseignez de nouveau le mot de passe du **compte de destination** puis cliquez sur `Démarrer la migration`{.action}. Si les informations indiquées sont correctes, vous pourrez lancer la migration en appuyant de nouveau sur le bouton `Démarrer la migration`{.action}.
+Une fois le fichier téléchargé sur OMM, renseignez de nouveau le mot de passe du **compte de destination** puis cliquez sur `Démarrer la migration`{.action}. Si les informations indiquées sont correctes, vous pourrez lancer la migration en cliquant sur le bouton `Démarrer la migration`{.action}.
 
 La page qui apparaît alors détaille le suivi de la migration. Pensez à conserver l'`Identifiant de migration`{.action} affiché et patientez jusqu'à la fin de la migration ; ce délai est variable selon le nombre d'éléments à migrer. Si vous souhaitez accéder de nouveau à ce suivi, poursuivez vers la section ci-dessous.
 
