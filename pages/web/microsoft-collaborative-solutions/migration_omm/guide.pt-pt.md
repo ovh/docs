@@ -26,7 +26,7 @@ excerpt: Descubra como utilizador o OVH Mail Migrator
 
 ## Instruções
 
-[OVH Mail Migrator](https://omm.ovh.net/){.external} est accessible depuis la page <https://omm.ovh.net/>. Ele gere três tipos de migrações e permite segui-las.
+[OVH Mail Migrator](https://omm.ovh.net/){.external} está acessível a partir da página <https://omm.ovh.net/>. Ele gere três tipos de migrações e permite segui-las.
 
 |Tipo de migração|Descrição|
 |---|---|
