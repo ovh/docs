@@ -16,8 +16,8 @@ Le [vRack](https://www.ovh.com/fr/solutions/vrack/) est un réseau privé qui vo
 
 ## Prérequis
 
-- Posséder un projet Public Cloud.
-- Avoir créer un utilisateur OpenStack.
+- Posséder un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
+- [Avoir créer un utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/#creer-un-compte-utilisateur-openstack).
 - Connaissances réseaux élémentaires.
 - Consulter le guide [Configuration du vRack Public Cloud](../public-cloud-vrack) pour connaître les différentes méthodes proposées pour gérer le vRack Public Cloud OVHcloud.
 - Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
