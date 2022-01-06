@@ -15,7 +15,7 @@ The products covered by this EOL policy are:
 
 - Cloud Databases Web Hosting services (also known as PrivateSQL services), dedicated DBMS instances reachable on the Web Hosting network ([see announcements](../privatesql-eos-eol/guide.en-gb.md)).
 
-- SharedSQL Web Hosting services, MySQL databases reachable on the Web Hosting network ([see announcements](../sharedsql-eos-eol/guide.en-gb.md)).
+- SharedSQL Web Hosting services, MySQL databases reachable on the Web Hosting network ([see announcements](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
 # General policy guidelines and definitions
 
