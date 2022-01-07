@@ -5,11 +5,17 @@ slug: activate-windows-vm-hyperv
 section: 'Tutorial'
 ---
 
-**Last updated 6 January 2022**
+**Last updated 6th January 2022**
 
 ## Objective
 
-**This guide provides some basic information on creating virtual machines within Hyper-V on a Windows Server licensed with OVHcloud.**
+**This tutorial provides some basic information on creating virtual machines within Hyper-V on a Windows Server licensed with OVHcloud.**
+
+> [!warning]
+> This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
+>
+> If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this tutorial.
+>
 
 ## Requirements
 
@@ -19,7 +25,7 @@ section: 'Tutorial'
 
 ## Instructions
 
-This guide assumes that you have already installed the Hyper-V role and have access to the Hyper-V Manager. If you have not done this, you can refer to Microsoft's guide to installing the Hyper-V role [here](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}
+This tutorial assumes that you have already installed the Hyper-V role and have access to the Hyper-V Manager. If you have not done this, you can refer to Microsoft's guide to installing the Hyper-V role [here](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}
 
 
 ### Creating a NAT Network
@@ -32,6 +38,7 @@ Name SwitchType NetAdapterInterfaceDescription
 ---- ---------- ------------------------------
 NAT Internal
 ```
+
 After that, confirm the adaptor has been successfully created with:
 
 ```sh
@@ -68,7 +75,7 @@ D0-50-99-D7-2C-8A      10 Gbps
 In our case, we see our "NAT" adapter ID is 24.
 
 
-Next, Let's create a NAT network that will allow our VM to connect the internet; we will be able to see the information of it once it's been executed:
+Next, Let's create a NAT network that will allow our VM to connect to the internet; we will be able to see the information of it once it's been executed:
 
 ```sh
 PS C:\Windows\system32> New-NetIPAddress -IPAddress 192.168.0.1 -PrefixLength 24 -InterfaceIndex 24
@@ -100,6 +107,7 @@ PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
 SkipAsSource : False
 PolicyStore : PersistentStore
 ```
+
 > [!primary]
 > 
 > Note: The IPAddress value will be the internal gateway IP for our VM to be configured; it will connect the WinNAT service inside the host to
@@ -127,7 +135,8 @@ Active : True
 
 > [!primary]
 > 
-> The Name parameter will define the name of this network, aswell as the InternalIPInterfaceAddressPrefix parameter will connect to the network desired; in our case, the network is the one created before:
+> The Name parameter will define the name of this network, as well as the InternalIPInterfaceAddressPrefix parameter will connect to the network desired; in our case, the network is the one created before:
+>
 > - 192.168.0.0 is the network IP
 > - 192.168.0.1 is the gateway for your virtual machines
 > - 192.168.0.2 - 192.168.0.254 will be used as IPs for your virtual machines
