@@ -122,7 +122,7 @@ Following the related documentation on how to [authorise the suitable IP address
 
 ### Test connection to the PostgreSQL DataBase
 
-An easy and quick way to test the connection is using the Postgre Command Line Interface (CLI) [psql](https://docs.postgresql.fr/14/app-psql.html){.external}.
+A quick and easy way to test the connection is to use the Postgre Command Line Interface (CLI) [psql](https://docs.postgresql.fr/14/app-psql.html){.external}.
 
 > 💡 Tip : If you are familiar with [Docker](https://www.docker.com/){.external} or [Kubernetes](https://kubernetes.io/){.external}, you can use the psql tool inside a postgres Docker [image](https://hub.docker.com/_/postgres){.external} instead of installing the tool locally.
 >
@@ -173,10 +173,10 @@ defaultdb=>
 
 Setup is done, your Managed PostgreSQL database is fully operational, let's go further and use it with <img src="images/strapi-logo-monogram-purple.png" alt="strapi logo" width="12px"> [Strapi](https://strapi.io/){.external}.
 
-### Before beginning, prepare your environment
+### Before you begin, prepare your environment
 
-What you need here is to check your nodejs and yarn versions.
-According to the official documention on [github](https://github.com/strapi/strapi){.external}, check that your existent nodejs installation matches with "NodeJS >= 12 <= 16".
+What you need here is to check your `nodejs` and `yarn` versions.
+According to the official documention on [GitHub](https://github.com/strapi/strapi){.external}, check that your existent nodejs installation matches with "NodeJS >= 12 <= 16".
 
 > [!warning]
 > No specific version of yarn is specified, this tutorial was made with the 1.22.17 one.
@@ -208,7 +208,7 @@ Run the following command in a terminal:
 yarn create strapi-app my-strapi
 ```
 
-You will be prompted to choose between the Quickstart or Custom method, select Custom and press `Enter`{.action}.
+You will be prompted to choose between the Quickstart or Custom method, select `Custom`{.action} and press `Enter`{.action}.
 If you choose the Quickstart one, default parameters will be applied and a server will automatically start.
 
 <pre class="console"><code>$ yarn create strapi-app my-strapi
@@ -235,7 +235,7 @@ On the next step, select `postgres` and press `Enter`{.action}.
   mysql
 </code></pre>
 
-Then, enter your PostgreSQL database parameters, and select `Yes` when prompted for enabling SSL connection.
+Then, enter your PostgreSQL database parameters, and select `Yes`{.action} when prompted for enabling SSL connection.
 
 <pre class="console"><code>
 ? Choose your installation type Custom (manual settings)
@@ -276,7 +276,7 @@ You can start by doing:
 Done in 662.54s.
 </code></pre>
 
-If you prefered choose `No` when prompted for enabling SSL connection, this is what happen:
+If you prefered choose `No`{.action} when prompted for enabling SSL connection, this is what happen:
 
 <pre class="console"><code>$ yarn develop
 yarn run v1.22.17
@@ -303,7 +303,7 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 
 This is a known bug, you can follow the issue here: <https://github.com/strapi/strapi/issues/12058>.
 
-We can fix this by manually modifying the database configuration file.<br>
+We can fix it by manually modifying the database configuration file.<br>
 Open the `config/database.js` file.
 
 It should be similar to that:
@@ -324,24 +324,23 @@ module.exports = ({ env }) => ({
 });
 </code></pre>
 
-Replace the following line:
+Replace the line:
 
 <pre class="console"><code>ssl: env.bool('DATABASE_SSL', false),
 </code></pre>
 
-with this one:
+with this line:
 
 <pre class="console"><code>ssl: { rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), },
 </code></pre>
 
 Save and exit the file.
 
-Now, if you choosed `Yes` when prompted for enabling SSL connection, get the CA certificate from the OVHcloud Control Panel:
-
+Now, if you choosed `Yes` when prompted for enabling SSL connection, go getting the CA certificate accessible from the OVHcloud Control Panel:
 
 ![Download certificate](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql16.png){.thumbnail}
 
-and save the generated file into the `config` folder, just beside the `database.js` file, and give it the name `ca-certificate.crt`
+Save the generated file into the `config` folder, just beside the `database.js` file, and rename it as `ca-certificate.crt`
 Now open the `config/database.js`, and edit the `ssl` block as:
 
 <pre class="console"><code>
@@ -363,7 +362,7 @@ module.exports = ({ env }) => ({
 </code></pre>
 
 where `${__dirname}` is the `config` folder location.
-Save and exit the file, configuration is done!
+Save and exit the file, the configuration is done!
 
 ### Start Strapi
 
@@ -427,7 +426,7 @@ Create your first administrator 💻 by going to the administration panel at:
 [2021-12-31 13:26:36.173] http: GET /admin/fde9b1ad0670d29a2516.png (1 ms) 200
 </code></pre>
 
-Congratulations! You have just finished the setup, the server starts and opens your browser on the admin login creation page http://localhost:1337/admin/auth/register-admin.
+Congratulations! You have just finished the setup, the server starts end open your browser on the admin login creation page http://localhost:1337/admin/auth/register-admin.
 
 ![Strapi admin login creation page](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql12.png){.thumbnail}
 
@@ -435,7 +434,7 @@ Fill the form fields as requested, and press the `Let's start`{.action} button.
 
 ![Strapi dashboard page](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql13.png){.thumbnail}
 
-You are now using a Strapi connected to an OVHcloud managed PostgreSQL database.
+You are now using a Strapi app connected to an OVHcloud managed PostgreSQL database.
 
 ### Controls
 
