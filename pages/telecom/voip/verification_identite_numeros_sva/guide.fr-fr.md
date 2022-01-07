@@ -6,7 +6,7 @@ section: Administratif
 order: 4
 ---
 
-**Dernière mise à jour le 10/12/2021**
+**Dernière mise à jour le 07/01/2022**
 
 ## Objectif
 
@@ -29,7 +29,7 @@ Vos justificatifs d'identité pouvant expirer dans le temps, vous pourrez égale
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez votre groupe de téléphonie.
 
-Cliquez soit sur l'onglet `Commande de numéros`{.action} soit sur `Commander un numéro`{.action} dans le menu « Je veux... ».
+Que vous commandiez un nouveau numéro ou souhaitiez valider votre identité pour un numéro déjà en exploitation, cliquez  sur l'onglet `Commande de numéros`{.action} ou sur `Commander un numéro`{.action} dans le menu « Je veux... ».
 
 ![commande de numéro](images/sva-commande.png){.thumbnail}
 
@@ -41,11 +41,17 @@ Vous accédez alors aux différents types de numéros. Cliquez sur `Vérifier l'
 
 Choisissez si vous êtes un « Professionnel » ou un « Professionnel revendeur » puis renseignez précisément les coordonnées demandées.
 
-![renseigner coordonnées](images/sva-coordonnees.png){.thumbnail}
+![renseigner coordonnées](images/sva-coordonnees01.png){.thumbnail}
+![renseigner coordonnées](images/sva-coordonnees02.png){.thumbnail}
+![renseigner coordonnées](images/sva-coordonnees03.png){.thumbnail}
 
 ### Ajouter des bénéficiaires
 
-Si vous êtes le seul bénéficiaire, cochez la case « Mon représentant est bénéficiaire ». Dans le cas contraire, cliquez sur `+ Ajouter un bénéficiaire`{.action} et renseignez les coordonnées du bénéficiaire.
+Si vous êtes le seul bénéficiaire, cochez la case « Mon représentant est bénéficiaire ». 
+
+![représentant bénéficiairs](images/beneficiaire.png){.thumbnail}
+
+Dans le cas contraire, cliquez sur `+ Ajouter un bénéficiaire`{.action} et renseignez les coordonnées du bénéficiaire.
 
 > [!primary]
 > Vous pouvez ajouter jusqu'à 4 bénéficiaires.
