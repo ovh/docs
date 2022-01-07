@@ -1,17 +1,9 @@
 ---
-<<<<<<< HEAD
 title: Utilisez High Performance avec S3cmd
 slug: s3/s3cmd
 excerpt:
 section: Object Storage S3 High Performance
 order: 130
-=======
-title: Utilisez High Pperformance avec S3cmd
-slug: s3/s3cmd
-excerpt:
-section: Object Storage S3 High Performance
-order: 130 
->>>>>>> abcbfbfc1371d5ed8fe6e1b5f01663200139053f
 ---
 
 **Dernière mise à jour le 3/01/2022**

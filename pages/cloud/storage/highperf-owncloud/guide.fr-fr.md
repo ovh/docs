@@ -1,22 +1,12 @@
 ---
-<<<<<<< HEAD
 title: Utilisez High Performance avec Owncloud
-=======
-title: Utilisez High Pperformance avec Owncloud
->>>>>>> abcbfbfc1371d5ed8fe6e1b5f01663200139053f
 slug: s3/owncloud
 excerpt:
 section: Object Storage S3 High Performance
 order: 170
 ---
 
-
-
-<<<<<<< HEAD
 **Dernière mise à jour le 3/01/2022**
-=======
-**Dernière mise à jour le 9/12/2021**
->>>>>>> abcbfbfc1371d5ed8fe6e1b5f01663200139053f
 
 ## Objectif
 
@@ -30,11 +20,7 @@ Ce guide explique comment configurer le stockage dans Owncloud pour utiliser un 
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
 - Connaître vos informations d'identification S3 (access_key et secret_access_key).
 
-<<<<<<< HEAD
 cf : [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3-high-performance)
-=======
-cf : [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/highperf/debuter-avec-s3-high-performance)
->>>>>>> abcbfbfc1371d5ed8fe6e1b5f01663200139053f
 
 ## En pratique
 
