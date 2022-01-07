@@ -100,6 +100,11 @@ $ mount /dev/sdb1 /mnt/restore
 
 Sie können jetzt zu diesem Ordner wechseln und auf Ihre Backup-Daten zugreifen.
 
+> [!warning]
+> Bitte beachten Sie, dass bei der Demontage des Backups ein Neustart des Servers erfolgt.
+>
+
+
 ### Optimale Vorgehensweise zur Backup-Erstellung
 
 Die Funktion „Automatisches Backup“ basiert auf VPS Snapshots. Es wird empfohlen, die folgenden Schritte zu befolgen, um Probleme zu vermeiden, bevor Sie diese Option verwenden.
