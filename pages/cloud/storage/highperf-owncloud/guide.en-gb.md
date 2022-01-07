@@ -1,0 +1,77 @@
+---
+title: Use High Performance with Owncloud
+slug: s3/owncloud
+excerpt:
+section: Object Storage S3 High Performance
+order: 170
+---
+
+**Last updated on 3rd January 2022**
+
+## Objective
+
+Owncloud is a suite of client-server software for creating and using file hosting services.
+
+This guide explains how to set up storage in Owncloud to use a High Performance bucket.
+
+## Requirements
+
+- Have created a bucket
+- Have created a user and defined the required access rights on the bucket
+- Know your S3 credentials (access_key and secret_access_key).
+
+See [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3)
+
+## Instructions
+
+If needed, install the `External Storage: S3` plugin from the `Market`{.action}
+
+![](images/HighPerf-Owncloud-20211209131331778.png)
+
+Search for the `External Storage: S3` plugin
+
+![](images/HighPerf-Owncloud-20211209131556714.png)
+
+And `install it`{.action}
+
+![](images/HighPerf-Owncloud-20211209131648711.png)
+
+Go to the `Settings`{.action}
+
+![](images/HighPerf-Owncloud-20211209131942821.png)
+
+Then :
+1. in `Storage`{.action}
+2. enable `Enable external storage`{.action}
+3. name your folder
+4. add an `Amazon S3 compatible storage (SDK v3)`{.action}
+
+![](images/HighPerf-Owncloud-20211209143008822.png)
+
+Fill in the following information:
+
+1. Enter the name of your bucket
+2. Set the host as: `s3.<region>.perf.cloud.ovh.net`
+3. Set the port to 443
+4. Specify the region
+5. Activate SSL
+6. Enter your access key
+7. Enter your secret key
+
+![](images/HighPerf-Owncloud-20211209133630272.png)
+
+Go to `Files`{.action}
+
+![](images/HighPerf-Owncloud-20211209133730832.png)
+
+Then in `External storage`{.action}
+
+![](images/HighPerf-Owncloud-2021120913382299.png)
+
+Result
+
+![](images/HighPerf-Owncloud-20211209140757288.png)
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en){.external}.
