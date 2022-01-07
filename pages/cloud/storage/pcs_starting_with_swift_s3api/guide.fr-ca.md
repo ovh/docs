@@ -23,7 +23,7 @@ Le middleware Swift s3api qui assure la compatibilité de l'API S3 a été activ
 
 ### Définir les variables d'environnement OpenStack
 
- ```bash
+```bash
 user@host:~$ source <user_name>-openrc.sh
 Please enter your OpenStack Password for project <project_name> as user <user_name>:
 
