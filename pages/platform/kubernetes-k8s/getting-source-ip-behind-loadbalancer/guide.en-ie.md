@@ -168,7 +168,7 @@ ingress-nginx-controller   LoadBalancer   10.3.81.157   xxx.xxx.xxx.xxx   80:xxx
 Now you need to patch the Ingress controller to support the proxy protocol.
 
 > [!Warning]
-> Depends on your Kubernetes cluster is working with private network or not, the proxy protocol configuration differs.Follow the tutorial parts according to your setup.
+> Depends on your Kubernetes cluster is working with private network or not, the proxy protocol configuration differs. Follow the tutorial parts according to your setup.
 
 #### 1a. [PUBLIC NETWORK ONLY] Get the list of the egress load balancer IPs 
 
