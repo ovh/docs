@@ -57,7 +57,7 @@ S'applique au minimum 6 mois après l'annonce de fin de vie.
 Elle survient après la date de fin de support.
 
 Quand un service de bases de données managées OVHcloud devient obsolète, il peut entrer dans les deux cas listés ci-après.
-Comme il peut y avoir des conséquences sur votre service, une notification vous sera envoyée par email au minimum un mois avant la période d'obsolescence.
+Comme il peut y avoir des conséquences sur votre service, une notification vous sera envoyée par e-mail au minimum un mois avant la période d'obsolescence.
 
 **Mise à jour majeure du service**
 
