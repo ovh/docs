@@ -27,7 +27,7 @@ Disposer d'une ou plusieurs des offres suivantes:
 
 Les produits couverts par cette politique de fin de vie sont :
 
-- Les services Cloud Databases Publics, instances SGBD dédiées joignables via le réseau publique ([voir les annonces](../clouddb-eos-eol/)).
+- Les services Cloud Databases Publics, instances SGBD dédiées joignables via le réseau public ([voir les annonces](../clouddb-eos-eol/)).
 
 - Les services Cloud Databases Web Hosting (également connues sous le nom de services SQLPrivé), instances SGBD dédiées joignables via le réseau Web Hosting ([voir les annonces](../privatesql-eos-eol/)).
 
