@@ -18,7 +18,7 @@ En esos casos, puede utilizar el modo de rescate para reconfigurar su instancia 
 
 ## Requisitos
 
-* Tener una [instancia de Public Cloud](https://www.ovh.com/world/es/public-cloud/){.external} en su cuenta de OVHcloud
+* Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} en su cuenta de OVHcloud
 * Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 * Tener acceso a la instancia por SSH como administrador (usuario raíz).
 

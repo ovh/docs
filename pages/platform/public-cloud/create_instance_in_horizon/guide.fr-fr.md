@@ -51,7 +51,9 @@ Vous devez alors compléter différentes informations. Si nécessaire, aidez-vou
 |Partitionnement du disque|Choisissez entre « automatique » ou « manuel »|
 |Disque de configuration|Configurez OpenStack pour écrire les métadonnées sur un disque de configuration spécifique qui sera attaché à l'instance au moment de son lancement|
 
-> [!warning] Bien que le champ "Key Pair" ne soit pas obligatoire dans l'interface Horizon lors de la création d'une instance, l'enregistrement d'une clé SSH est absolument nécessaire pour pouvoir se connecter à une instance. Sans clé SSH, vous serez amené à redémarrer l'instance en mode rescue pour pourvoir créer un mot de passe ou ajouter une clé SSH dans le fichier approprié.
+> [!warning] 
+> 
+> Bien que le champ "Key Pair" ne soit pas obligatoire dans l'interface Horizon lors de la création d'une instance, l'enregistrement d'une clé SSH est absolument nécessaire pour pouvoir se connecter à une instance. Sans clé SSH, vous serez amené à redémarrer l'instance en mode rescue pour pourvoir créer un mot de passe ou ajouter une clé SSH dans le fichier approprié.
 >
 
 Dès que vous êtes prêt à lancer la ou les instances souhaitées, cliquez sur le bouton `Launch Instance`{.action}.

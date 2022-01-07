@@ -18,7 +18,7 @@ Si vous avez atteint la capacité de stockage maximale de votre disque suppléme
 ## Prérequis
 
 * Une [Instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/){.external} dans votre compte OVHcloud.
-* Un [disque supplémentaire](https://www.ovh.com/ca/fr/public-cloud/block-storage/){.external} attaché à votre instance.
+* Un [disque supplémentaire](https://www.ovhcloud.com/fr-ca/public-cloud/block-storage/){.external} attaché à votre instance.
 * Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 * Disposer d’un accès administratif (root) à votre instance via SSH (pour Linux uniquement).
 * Disposer d’un accès administratif à votre instance via RDP (pour Windows uniquement).

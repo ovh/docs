@@ -104,6 +104,10 @@ $ mount /dev/sdb1 /mnt/restore
 
 Teraz możesz się przełączyć do tego folderu i uzyskać dostęp do danych kopii zapasowej.
 
+> [!warning]
+> Podczas odmontowywania kopii zapasowej nastąpi restart serwera.
+>
+
 ### Dobre praktyki w zakresie korzystania z automatycznych kopii zapasowych
 
 Funkcja automatycznych kopii zapasowych opiera się na snapshotach VPS. Zalecamy, aby przed rozpoczęciem korzystania z tej opcji postępować zgodnie z poniższymi instrukcjami.

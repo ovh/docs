@@ -55,7 +55,9 @@ Geben Sie dann die angeforderten Informationen ein. Falls Sie beim Ausfüllen de
 |Disk Partition|Wählen Sie zwischen “Automatisch” oder “Manuell”|
 |Configuration Drive|Hier können Sie OpenStack so konfigurieren, dass die Metadaten auf eine bestimmte Konfigurationsfestplatte geschrieben werden, die beim Start an die Instanz angehängt wird|
 
-> [!warning] Obwohl das Feld "Key Pair" bei der Erstellung einer Instanz im Horizon-Interface nicht obligatorisch ist, ist die Speicherung eines SSH-Schlüssels absolut notwendig, um sich mit einer Instanz verbinden zu können. Ohne SSH-Schlüssel müssen Sie die Instanz im Rescue-Modus neu starten, um ein Passwort zu erstellen oder einen SSH-Schlüssel in der entsprechenden Datei hinzuzufügen.
+> [!warning] 
+>
+> Obwohl das Feld "Key Pair" bei der Erstellung einer Instanz im Horizon-Interface nicht obligatorisch ist, ist die Speicherung eines SSH-Schlüssels absolut notwendig, um sich mit einer Instanz verbinden zu können. Ohne SSH-Schlüssel müssen Sie die Instanz im Rescue-Modus neu starten, um ein Passwort zu erstellen oder einen SSH-Schlüssel in der entsprechenden Datei hinzuzufügen.
 >
 
 Sobald Sie bereit sind, um die gewünschten Instanzen zu starten, klicken Sie auf den Button `Launch Instance`{.action}.
