@@ -27,7 +27,7 @@ Disposer d'une ou plusieurs des offres suivantes:
 
 Les produits couverts par cette politique de fin de vie sont :
 
-- Les services Cloud Databases Publiques, instances SGBD dédiées joignables via le réseau publique ([voir les annonces](../clouddb-eos-eol/)).
+- Les services Cloud Databases Publics, instances SGBD dédiées joignables via le réseau publique ([voir les annonces](../clouddb-eos-eol/)).
 
 - Les services Cloud Databases Web Hosting (également connues sous le nom de services SQLPrivé), instances SGBD dédiées joignables via le réseau Web Hosting ([voir les annonces](../privatesql-eos-eol/)).
 
@@ -40,24 +40,24 @@ Les produits couverts par cette politique de fin de vie sont :
 #### **Annonce de fin de vie**
 
 C'est la publication des dates de fin de vente et de fin de support. En règle générale, OVHcloud respectera un délai de 90 jours entre l'annonce d'une fin de vie et son application.
-Cette annonce apparaîtra sur le site web docs.ovh.com.
+Cette annonce apparaîtra sur le site web <docs.ovh.com>.
 
 #### **Fin de vente**
 
-La dernière date pour commander un produit. Comme annoncé précédemment, cette date est au moins 90 jours après l'annonce de fin de vie.
+La dernière date pour commander un produit. Comme annoncé précédemment, cette règle s'applique au minimum 90 jours après l'annonce de fin de vie.
 
 #### **Fin de support**
 
 La date jusqu'à laquelle le client peut bénéficier d’une assistance pour le produit selon les modalités du contrat de service ou les conditions générales de la garantie.
 Après cette date, le produit ne fait plus l'objet de services d'assistance et est considéré comme obsolète.
-En règle générale, cette date est au moins 6 mois après l'annonce de fin de vie.
+S'applique au minimum 6 mois après l'annonce de fin de vie.
 
 #### **Période d'obsolescence**
 
-C'est la période juste après la date de fin de support.
+Elle survient après la date de fin de support.
 
 Quand un service de bases de données managées OVHcloud devient obsolète, il peut entrer dans les deux cas listés ci-après.
-Comme il peut y avoir un impact sur votre service, une notification vous sera envoyée par email au moins un mois avant la période d'obsolescence.
+Comme il peut y avoir des conséquences sur votre service, une notification vous sera envoyée par email au minimum un mois avant la période d'obsolescence.
 
 **Mise à jour majeure du service**
 
