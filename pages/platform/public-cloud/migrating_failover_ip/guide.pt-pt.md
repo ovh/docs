@@ -42,7 +42,7 @@ Clique na opção junto ao servidor de destino
 
 ![ip-failover](images/modify1.png){.thumbnail}
 
-- Clique em `Associar`{.action}
+- Clique em `Associar`{.action}.
 
 - Após alguns segundos, a área de cliente será atualizada e surgirá a seguinte mensagem a confirmar que a migração foi bem-sucedida:
 
@@ -51,7 +51,7 @@ Clique na opção junto ao servidor de destino
 
 > [!primary]
 >
-> O IP poderá ser configurado no servidor de destino antes de efetuar a migração, ou após, como preferir. Se já estiver pré-configurado, passará a responder assim que a operação de migração terminar.
+> O IP poderá ser configurado no servidor de destino antes de efetuar a migração, ou após, como preferir. Se já estiver pré-configurado, passará a responder assim que a operação de migração (*routing*) terminar.
 > 
 
 ## Quer saber mais?

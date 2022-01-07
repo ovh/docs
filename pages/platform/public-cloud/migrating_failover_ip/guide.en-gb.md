@@ -36,7 +36,7 @@ Choose the destination server from the list by clicking the checkbox.
 
 ![migrating failover IP](images/modify1.png){.thumbnail}
 
-Confirm with `Attach`{.action}.
+Confirm by clicking on `Attach`{.action}.
 
 After a few seconds the Control Panel will be updated and a confirmation message will be displayed if the migration was done sucessfully.
 
