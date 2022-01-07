@@ -68,9 +68,7 @@ It creates the `namespace`, `serviceaccount`, `role` and all the other Kubernete
 
 <pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud/deploy.yaml
 namespace/ingress-nginx created
-kind: Service
 serviceaccount/ingress-nginx created
-# Please edit the object below. Lines beginning with a '#' will be ignored,
 configmap/ingress-nginx-controller created
 clusterrole.rbac.authorization.k8s.io/ingress-nginx created
 clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx created
