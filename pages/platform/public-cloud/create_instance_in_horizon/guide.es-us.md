@@ -19,7 +19,7 @@ Es posible crear instancias directamente en Horizon. Desde esta interfaz podrá,
 
 ## Requisitos
 
-- Tener un proyecto de [Public Cloud](https://www.ovh.com/world/es/public-cloud/){.external} en su cuenta de OVHcloud.
+- Tener un proyecto de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} en su cuenta de OVHcloud.
 - [Estar conectado a Horizon](../crear_un_acceso_a_horizon/){.external}. 
 
 ## Procedimiento

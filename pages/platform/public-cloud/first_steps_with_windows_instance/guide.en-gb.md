@@ -11,7 +11,7 @@ order: 6
 
 ## Objective
 
-You can use a Public Cloud instance if you would like to host websites using IIS, or if you want to host applications that are only compatible with Windows. Our instances can be installed on [Windows Desktop](https://www.ovh.co.uk/public-cloud/prices/){.external} operating systems.
+You can use a Public Cloud instance if you would like to host websites using IIS, or if you want to host applications that are only compatible with Windows. Our instances can be installed on [Windows Desktop](https://www.ovhcloud.com/en-gb/public-cloud/prices/){.external} operating systems.
 
 Once you have deployed your instance, you will need to complete the installation via the VNC console.
 
