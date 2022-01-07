@@ -157,12 +157,12 @@ The useful parameters are:
 Now connect to the database with the following command
 
 ```sh
-psql --dbname=defaultdb  --host=postgresql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net --port=20184 --username=avnadmin  --password 
+psql --dbname=defaultdb  --host=postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.ovh.net --port=20184 --username=avnadmin  --password 
 ```
 
 Enter the password and press `Enter`{.action}.
 
-<pre class="console"><code>$ psql --dbname=defaultdb  --host=postgresql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net --port=20184 --username=avnadmin  --password
+<pre class="console"><code>$ psql --dbname=defaultdb  --host=postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.ovh.net --port=20184 --username=avnadmin  --password
 Password: 
 psql (14.1 (Debian 14.1-1.pgdg110+1))
 SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
@@ -241,7 +241,7 @@ Then, enter your PostgreSQL database parameters, and select `Yes`{.action} when 
 ? Choose your installation type Custom (manual settings)
 ? Choose your default database client postgres
 ? Database name: defaultdb
-? Host: postgresql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net
+? Host: postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.ovh.net
 ? Port: 20184
 ? Username: avnadmin
 ? Password: ********************
@@ -276,7 +276,7 @@ You can start by doing:
 Done in 662.54s.
 </code></pre>
 
-If you prefered choose `No`{.action} when prompted for enabling SSL connection, this is what happen:
+If you prefer to choose `No` when prompted to enable SSL connection, this is what happens:
 
 <pre class="console"><code>$ yarn develop
 yarn run v1.22.17
@@ -313,11 +313,11 @@ module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
-      host: env('DATABASE_HOST', 'postgresql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net'),
+      host: env('DATABASE_HOST', 'postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.ovh.net'),
       port: env.int('DATABASE_PORT', 20184),
       database: env('DATABASE_NAME', 'defaultdb'),
       user: env('DATABASE_USERNAME', 'avnadmin'),
-      password: env('DATABASE_PASSWORD', 'xxxxxxxxxxxxxxxxx'),
+      password: env('DATABASE_PASSWORD', 'MyStrongPassword'),
       ssl: env.bool('DATABASE_SSL', false),
     },
   },
@@ -336,25 +336,23 @@ with this line:
 
 Save and exit the file.
 
-Now, if you choosed `Yes` when prompted for enabling SSL connection, go getting the CA certificate accessible from the OVHcloud Control Panel:
+Now, if you choose `Yes` when prompted to enable SSL connection, get the CA certificate from the OVHcloud Control Panel:
 
 ![Download certificate](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql16.png){.thumbnail}
 
 Save the generated file into the `config` folder, just beside the `database.js` file, and rename it as `ca-certificate.crt`
-Now open the `config/database.js`, and edit the `ssl` block as:
+Now open the `config/database.js` file and emodify the `ssl` block as follows:
 
 <pre class="console"><code>
-const fs = require('fs');
-
 module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
-      host: env('DATABASE_HOST', 'postgresql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net'),
+      host: env('DATABASE_HOST', 'postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.ovh.net'),
       port: env.int('DATABASE_PORT', 20184),
       database: env('DATABASE_NAME', 'defaultdb'),
       user: env('DATABASE_USERNAME', 'avnadmin'),
-      password: env('DATABASE_PASSWORD', 'xxxxxxxxxxxxxxxxx'),
+      password: env('DATABASE_PASSWORD', 'MyStrongPassword'),
       ssl: {
 	      ca: fs.readFileSync(`${__dirname}/ca-certificate.crt`).toString(),
       }
@@ -450,10 +448,10 @@ Then press the `Save`{.action} button.
 
 #### Check the database
 
-As described above, connect to the PosgreSQL database with psql command line interface.
+As described above, connect to the PosgreSQL database with `psql` command line interface.
 
 ```sh
-$ psql --dbname=defaultdb  --host=postgresql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net --port=20184 --username=avnadmin  --password
+$ psql --dbname=defaultdb  --host=postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.ovh.net --port=20184 --username=avnadmin  --password
 ```
 
 Then find, in the `up_users` table, our previously created entry. Here the user is named "demo":
