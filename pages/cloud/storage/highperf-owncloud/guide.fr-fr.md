@@ -26,19 +26,19 @@ cf : [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debu
 
 Si besoin, installez le plugin `External Storage: S3` depuis le `Market`{.action}
 
-![](images/HighPerf-Owncloud-20211209131331778.png)
+![Owncloud open Market](images/HighPerf-Owncloud-20211209131331778.png)
 
 Rechercher le plugin `External Storage: S3`
 
-![](images/HighPerf-Owncloud-20211209131556714.png)
+![Owncloud plugin External Storage S3](images/HighPerf-Owncloud-20211209131556714.png)
 
 Et `installez le`{.action}
 
-![](images/HighPerf-Owncloud-20211209131648711.png)
+![Owncloud install plugin](images/HighPerf-Owncloud-20211209131648711.png)
 
 Allez dans les `Paramètres`{.action}
 
-![](images/HighPerf-Owncloud-20211209131942821.png)
+![Owncloud open Settings](images/HighPerf-Owncloud-20211209131942821.png)
 
 Puis :
 1. dans `Storage`{.action}
@@ -46,7 +46,7 @@ Puis :
 3. nommez votre dossier
 4. ajoutez un stockage de type `Amazon S3 compatible (SDK v3)`{.action}
 
-![](images/HighPerf-Owncloud-20211209143008822.png)
+![Owncloud create AWS S3 storage](images/HighPerf-Owncloud-20211209143008822.png)
 
 Renseignez les informations suivantes:
 
@@ -58,19 +58,19 @@ Renseignez les informations suivantes:
 6. Renseigner votre clé d'accès
 7. Renseigner votre clé secrète
 
-![](images/HighPerf-Owncloud-20211209133630272.png)
+![Owncloud complete AWS S3 storage](images/HighPerf-Owncloud-20211209133630272.png)
 
 Allez dans `Files`{.action}
 
-![](images/HighPerf-Owncloud-20211209133730832.png)
+![Ownclopud open Files](images/HighPerf-Owncloud-20211209133730832.png)
 
 Puis dans `External storage`{.action}
 
-![](images/HighPerf-Owncloud-2021120913382299.png)
+![Ownclopud Files External Storage](images/HighPerf-Owncloud-2021120913382299.png)
 
 Résultat
 
-![](images/HighPerf-Owncloud-20211209140757288.png)
+![Ownclopud Bucket listing](images/HighPerf-Owncloud-20211209140757288.png)
 
 ## Aller plus loin
 
