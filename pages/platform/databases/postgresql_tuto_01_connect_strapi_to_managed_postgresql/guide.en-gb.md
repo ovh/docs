@@ -129,13 +129,13 @@ An easy and quick way to test the connection is using the Postgre Command Line I
 > Examples :
 >
 > ```sh
-> $ kubectl run postgres-client --image=postgres:latest -it --rm --restart=Never -- /bin/bash
+> kubectl run postgres-client --image=postgres:latest -it --rm --restart=Never -- /bin/bash
 > ```
 >
 > or
 >
 > ```
-> $ docker run -it --rm postgres /bin/bash
+> docker run -it --rm postgres /bin/bash
 > ```
 >
 
@@ -192,7 +192,7 @@ You can follow these different tutorials if you need to install some of the tool
 We want to use the latest LTS version of nodejs, so inside your development environment, use this command:
 
 ```sh
-$ nvm use 16.13.1
+nvm use 16.13.1
 ```
 
 <pre class="console"><code>$ nvm use 16.13.1
@@ -235,7 +235,7 @@ On the next step, select `postgres` and press `Enter`{.action}.
   mysql
 </code></pre>
 
-Then, enter your PostgreSQL database parameters, and select `No` when prompted for enabling SSL connection (We will review that point later).
+Then, enter your PostgreSQL database parameters, and select `Yes` when prompted for enabling SSL connection.
 
 <pre class="console"><code>
 ? Choose your installation type Custom (manual settings)
@@ -245,7 +245,7 @@ Then, enter your PostgreSQL database parameters, and select `No` when prompted f
 ? Port: 20184
 ? Username: avnadmin
 ? Password: ********************
-? Enable SSL connection: No
+? Enable SSL connection: Yes
 
 Creating a project with custom database options.
 Creating a new Strapi application at /home/my/app/path/my-strapi.
@@ -276,8 +276,7 @@ You can start by doing:
 Done in 662.54s.
 </code></pre>
 
-You could now start you strapi application with yarn commands as described above, but before that, we need to modify an SSL parameter.<br>
-If you don't, this is what will happen:
+If you prefered choose `No` when prompted for enabling SSL connection, this is what happen:
 
 <pre class="console"><code>$ yarn develop
 yarn run v1.22.17
@@ -336,6 +335,35 @@ with this one:
 </code></pre>
 
 Save and exit the file.
+
+Now, if you choosed `Yes` when prompted for enabling SSL connection, get the CA certificate from the OVHcloud Control Panel:
+
+
+![Download certificate](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql16.png){.thumbnail}
+
+and save the generated file into the `config` folder, just beside the `database.js` file, and give it the name `ca-certificate.crt`
+Now open the `config/database.js`, and edit the `ssl` block as:
+
+<pre class="console"><code>
+module.exports = ({ env }) => ({
+  connection: {
+    client: 'postgres',
+    connection: {
+      host: env('DATABASE_HOST', 'postgresql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net'),
+      port: env.int('DATABASE_PORT', 20184),
+      database: env('DATABASE_NAME', 'defaultdb'),
+      user: env('DATABASE_USERNAME', 'avnadmin'),
+      password: env('DATABASE_PASSWORD', 'xxxxxxxxxxxxxxxxx'),
+      ssl: {
+	      ca: fs.readFileSync(`${__dirname}/ca-certificate.crt`).toString(),
+      }
+    },
+  },
+});
+</code></pre>
+
+where `${__dirname}` is the `config` folder location.
+Save and exit the file, configuration is done!
 
 ### Start Strapi
 
