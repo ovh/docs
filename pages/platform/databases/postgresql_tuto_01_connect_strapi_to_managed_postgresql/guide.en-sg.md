@@ -344,6 +344,8 @@ Save the generated file into the `config` folder, just beside the `database.js` 
 Now open the `config/database.js` file and modify the `ssl` block as follows:
 
 <pre class="console"><code>
+const fs = require('fs');
+
 module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
