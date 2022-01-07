@@ -55,7 +55,9 @@ A questo punto completa i campi con le informazioni richieste aiutandoti, se nec
 |Disk Partition|Scegli tra “Automatica” o “Manuale”|
 |Configuration Drive|Configura OpenStack per scrivere i metadati su un disco di configurazione specifico che all’avvio sarà associato all’istanza.|
 
-> [!warning] Anche se il campo "Key Pair" non è obbligatorio nell'interfaccia Horizon durante la creazione di un'istanza, la registrazione di una chiave SSH è assolutamente necessaria per potersi connettere a un'istanza. Senza chiave SSH, dovrai riavviare l'istanza in modalità Rescue per creare una password o aggiungere una chiave SSH nel file appropriato.
+> [!warning] 
+>
+> Anche se il campo "Key Pair" non è obbligatorio nell'interfaccia Horizon durante la creazione di un'istanza, la registrazione di una chiave SSH è assolutamente necessaria per potersi connettere a un'istanza. Senza chiave SSH, dovrai riavviare l'istanza in modalità Rescue per creare una password o aggiungere una chiave SSH nel file appropriato.
 >
 
 Quando tutto è pronto, clicca su `Launch Instance`{.action} per avviare le istanze desiderate.
