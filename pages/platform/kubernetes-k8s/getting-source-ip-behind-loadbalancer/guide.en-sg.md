@@ -178,7 +178,7 @@ kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadat
 
 You should see something like this:
 
-<pre class="console"><code>$ kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.> k8s\.ovh\.net/egress-ips}"
+<pre class="console"><code>$ kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
 aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32
 </code></pre>
 
