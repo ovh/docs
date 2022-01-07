@@ -63,6 +63,13 @@ It is not possible to interact with Apache Spark cluster via command line.
 
 - GRA (Gravelines in France) 
 
+### IP range to allow
+
+If you need to allow a list of IPs in your application network configuration (for example to allow connections to one of your databases), know that the ODP jobs will run on hosts
+with IP within a range depending on the region:
+
+- 164.132.38.64/26 for GRA (164.132.38.64 - 164.132.38.127)
+
 ### Storage
 
 - Before submitting a job, you will need to upload your job into your OVHcloud Object Storage account. 
@@ -93,4 +100,4 @@ If you would like to increase the quotas for Data Processing you will need to in
 Please send us your questions, feedback and suggestions to improve the service: 
 
 - On OVHcloud community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/)
-- On our public [Gitter](https://gitter.im/ovh/data-processing)
+- On our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**

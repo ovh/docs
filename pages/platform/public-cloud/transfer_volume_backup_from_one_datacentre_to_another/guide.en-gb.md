@@ -22,7 +22,7 @@ Before following these steps, it’s recommended that you first complete this gu
 
 You will also need the following:
 
-* a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} in your OVH account
+* a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} in your OVHcloud account
 * administrative (root) access to your datacentre via SSH
 
 > [!primary]
@@ -185,5 +185,7 @@ root@server:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c
 ```
 
 ## Go further
+
+[Transfer an instance backup from one datacentre to another](../transfer_instance_backup_from_one_datacentre_to_another/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

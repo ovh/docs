@@ -3,6 +3,7 @@ title: Databases
 slug: only-in-english
 excerpt: Disponible en anglais uniquement
 section: Premiers pas
+hidden: true
 ---
 
 ## Disponible en anglais uniquement

@@ -94,4 +94,4 @@ OVH propone un’applicazione Web per accedere al tuo account email direttamente
 
 [Configurare un account Exchange nell’applicazione Posta per Windows 10](../../microsoft-collaborative-solutions/configurazione-posta-windows-10/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

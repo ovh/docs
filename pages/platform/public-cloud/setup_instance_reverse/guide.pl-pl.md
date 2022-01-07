@@ -1,58 +1,55 @@
 ---
-title: Konfiguracja rewersu DNS instancji
-excerpt: Konfiguracja rewersu DNS instancji
+title: "Konfiguracja rewersu DNS instancji Public Cloud"
+excerpt: Dowiedz się, jak wdrożyć rewers DNS
 slug: konfiguracja_rewersu_dns_instancji
 legacy_guide_number: g1940
 section: Zarządzanie w Panelu klienta OVH
+order: 7
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
 
-## 
-W niektórych sytuacjach, na przykład w ramach konfiguracji serwera mailowego, konieczne będzie skonfigurowanie rewersu DNS dla instancji. 
-Przewodnik ten wyjaśnia, jak skonfigurować rewers DNS dla adresów IP Twoich instancji.
+**Ostatnia aktualizacja z dnia 12-11-2021**
 
+## Wprowadzenie
 
-## Wstępne wymagania
+Rewers **DNS** to uzupełnienie konfiguracji "klasycznej" serwerów DNS, która pozwala na konwersję domeny na adres IP (rekord typu **A**). Dzięki tego typu zapytaniu, adres IP może zostać usunięty w nazwie domeny (rejestracja typu **PTR**). Oznacza to, że zapytania DNS na danym adresie IP będą miały nazwę domeny.
 
-- Instancja
-- Wpis A w strefie DNS wskazujący na Twój adres IP
+Konfiguracja **rewersu DNS** instancji jest szczególnie przydatna przy wysyłaniu e-maili. Ryzyko odrzucenia wiadomości przez system ochrony przed spamem zostanie zmniejszone, jeśli adres IP Twojego serwera poczty wychodzącej zostanie poprawnie rozwiązany w Twojej domenie.
 
+**Dowiedz się, jak skonfigurować rewers DNS dla adresu lub adresów IP instancji Public Cloud.**
 
+## Wymagania początkowe
 
+- Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
+- Nazwa domeny z polem `A` wskazującym na instancję
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
-## 
+## W praktyce
 
-- Sprawdź adres IP swojej instancji w części Cloud w panelu klienta OVH:
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i kliknij w menu po lewej stronie `IP`{.action}.
 
+Tabela na tej stronie zawiera listę usług, które możesz spełnić. ID Twojego projektu Public Cloud można filtrować z rozwijanego menu **Service**.
 
+![Rewers DNS](images/reversecp01.png){.thumbnail}
 
-![](images/img_3024.jpg){.thumbnail}
+Kliknij `...`{.action} w linii odpowiedniego adresu IP i wybierz `Zmień rewers`{.action}.
 
-- Przejdź do części Dedykowane w panelu klienta.
+![Rewers DNS](images/reversecp02.png){.thumbnail}
 
+W nowym oknie wprowadź rewers i kliknij `Zatwierdź`{.action}.
 
+Rewers możesz również edytować bezpośrednio na ikonie kolumny **Reverse** tabeli.
 
-![](images/img_3025.jpg){.thumbnail}
+> [!primary]
+>
+Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy pole `A` jest poprawnie skonfigurowane w strefie DNS Twojej domeny. Uwaga, modyfikacja [strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/) może trwać do 24 godzin, jeśli ostatnio zmieniłeś pole `A`.
+>
 
-- Przejdź do części IP i wybierz ID projektu w części Usługa:
+## Sprawdź również <a name="gofurther"></a>
 
+[Utwórz pierwszą instancję Public Cloud i połącz się z nią](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
 
-
-![](images/img_3026.jpg){.thumbnail}
-
-- Wybierz Zmień rewers klikając na ikonkę z prawej strony adresu IP.
-
-- Wprowadź rewers DNS w odpowiednim polu i kliknij na Zatwierdź.
-
-
-
-![](images/img_3028.jpg){.thumbnail}
-Aby etap ten został poprawnie wykonany, najpierw należy poczekać na propagację strefy DNS, jeśli pole A zostało niedawno dodane.
-Rewers DNS jest już widoczny na liście adresów IP Twojego projektu.
-
-![](images/img_3029.jpg){.thumbnail}
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

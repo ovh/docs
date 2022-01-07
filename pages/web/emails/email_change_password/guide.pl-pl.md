@@ -33,9 +33,9 @@ W tym celu zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=got
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
 |![E-mail](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”.|![E-mail](images/mxplan-password-new-step1.png){.thumbnail}<br>Znajdź Oznaczenie serwera w polu „Informacje ogólne”|
-|Przejdź do [Poprzedniej wersja usługi MX Plan](./#poprzednia-wersja-uslugi-mx-plan_2)|Przejdź do [Nowej wersji usługi MX Plan](./#nowa-wersja-uslugi-mx-plan).|
+|Przejdź do [Poprzedniej wersja usługi MX Plan](#mx-legacy)|Przejdź do [Nowej wersji usługi MX Plan](#mx-new).|
 
-### Nowa wersja usługi MX Plan
+### Nowa wersja usługi MX Plan <a name="mx-new"></a>
 
 Posiadasz nową wersję usługi MX Plan. Powinno Ci się wyświetlić takie okno. Jeśli tak nie jest, upewnij się, czy wybrałeś właściwą ścieżkę, [sprawdzając powyższe informacje](./#w-praktyce).  
 
@@ -87,7 +87,7 @@ Po zmianie hasła możesz zalogować się do konta e-mail. Możesz to zrobić na
 
 - **Użyj kompatybilnego programu pocztowego**: konieczne jest wprowadzenie nowego hasła we wszystkich urządzeniach, w których konto e-mail zostało skonfigurowane. W przypadku niektórych programów pocztowych okno, do którego należy wpisać nowe hasło do konta e-mail wyświetli się automatycznie. Jeśli tak się nie stanie, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem używanego przez Ciebie oprogramowania.
 
-### Poprzednia wersja usługi MX Plan
+### Poprzednia wersja usługi MX Plan <a name="mx-legacy"></a>
 
 Posiadasz starszą wersję usługi MX Plan. Powinno Ci się wyświetlić takie okno. Jeśli tak nie jest, upewnij się, czy wybrałeś właściwą ścieżkę, [sprawdzając powyższe informacje](./#w-praktyce). 
 

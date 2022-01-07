@@ -70,7 +70,7 @@ Voici comment modifier le mot de passe d'une adresse e-mail :
 
 ### Y a-t-il un incident ou une maintenance en cours sur mon service ?
 
-Vous pouvez vérifier les différentes tâches travaux actuellement en cours sur <http://travaux.ovh.net/>.
+Vous pouvez vérifier les différentes tâches travaux actuellement en cours sur <https://web-cloud.status-ovhcloud.com/>.
 
 - Pour **MXplan**, vérifiez dans la section `E-mails`
 - Pour **E-mail Pro**, dirigez-vous dans la section `Microsoft`

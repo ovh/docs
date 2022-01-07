@@ -30,8 +30,8 @@ Performing checks in rescue mode helps to determine whether an issue is software
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- an OVHcloud [VPS service](https://www.ovhcloud.com/en-gb/vps/) already set up
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An OVHcloud [VPS service](https://www.ovhcloud.com/en-gb/vps/) already set up
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.

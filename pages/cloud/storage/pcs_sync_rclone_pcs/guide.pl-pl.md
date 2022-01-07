@@ -1,7 +1,8 @@
 ---
 title: Wykorzystanie Object Storage z rClone
 slug: synchronizacja-Rclone-object-storage
-section: Object Storage
+section: Object Storage Standard (Swift)
+order: 140
 ---
 
 **Ostatnia aktualizacja dnia 2018-01-22**

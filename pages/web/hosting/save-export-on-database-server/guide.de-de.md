@@ -135,4 +135,4 @@ pg_dump --host=server --port=port --user=benutzername --password=passwort datenb
 
 [Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren](../datenbank-importieren)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

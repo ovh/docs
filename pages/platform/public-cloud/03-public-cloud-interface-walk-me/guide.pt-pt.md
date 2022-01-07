@@ -10,7 +10,7 @@ order: 03
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 10/11/2021**
+**Última atualização: 06/12/2021**
 
 ## Objetivo
 
@@ -84,7 +84,7 @@ Encontram-se disponíveis várias ferramentas de gestão no seu projeto Public C
 |**Horizon**|Esta é a [interface gráfica](https://docs.ovh.com/pt/public-cloud/horizon/) geralmente disponível no OpenStack. Não é alterada, o que permite aos utilizadores habituados a esta interface encontrar os seus reflexos.|
 |**Users and Roles**|Permite [criar utilizadores](https://docs.ovh.com/pt/public-cloud/criar-e-eliminar-um-utilizador-openstack/) e atribuir-lhes um papel. Estes utilizadores permitem, nomeadamente, aceder diretamente às API ou à interface Horizon. Por exemplo, pode criar um utilizador para as suas operações de manutenção clássicas e um utilizador para as suas ferramentas de automatização, como por exemplo o Terraform.|
 |**Quota and regions**|Esta ferramenta permite-lhe controlar as localizações e os limites de recursos disponíveis no seu projeto.<br><br>**Limites**: De acordo com certos critérios (número de faturas já pagas, utilização de outros produtos da OVHcloud), o nosso sistema implementa quotas (limites) no número de recursos que pode criar, com o objetivo de evitar qualquer problema de pagamentos em atraso. Por predefinição, o sistema aumenta os seus limites automaticamente quando determinados critérios são atingidos. No entanto, pode [aumentar manualmente uma quota](https://docs.ovh.com/pt/public-cloud/aumentar_a_quota_public_cloud/#aumentando-manualmente-a-cota-de-recursos) a partir desta ferramenta.<br><br>**Localizações**: O Public Cloud está disponível em várias localizações em todo o mundo. Além disso, cada localização pode incluir várias "regiões" (conceito específico de OpenStack). Por exemplo, para um cliente europeu, a zona APAC (Ásia-Pacífico) é desativada por predefinição. Se isso corresponder às suas necessidades, pode ativar novas regiões a partir deste menu.|
-|**SSH Keys**|Uma ferramenta que lhe permite gerir as suas chaves SSH de forma centralizada.|
+|**SSH Keys**|Uma ferramenta que lhe permite [gerir as suas chaves SSH](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#1o-passo-criacao-de-chaves-ssh) de forma centralizada.|
 |**Billing Control**|Uma vez que o Public Cloud baseia-se na faturação *pay as you go*, ou seja, as faturas são editadas no final do mês. [Neste menu](https://docs.ovh.com/pt/public-cloud/informacoes-sobre-o-metodo-de-faturacao-cloud/), poderá seguir o seu consumo atual, ver uma previsão da próxima fatura e, claro, encontrar as suas faturas anteriores.|
 |**Credit and Vouchers**|Este menu permite-lhe consultar o consumo de um cupão, adicionar um ou [adicionar crédito](https://docs.ovh.com/pt/public-cloud/adicionar-um-credito-cloud/) diretamente no seu projeto Public Cloud.|
 |**Contacts and Rights**|Além da possibilidade de alterar o contacto técnico ou o contacto de faturação do seu projeto, terá a possibilidade de [adicionar outros contactos](https://docs.ovh.com/pt/public-cloud/alterar_os_contactos_de_um_projeto/) (conta OVHcloud) para administrar tecnicamente o seu projeto. Também pode adicionar utilizadores apenas em consulta *read-only*.|

@@ -119,7 +119,7 @@ Cette erreur indique un échec général d'envoi d'e-mails pouvant avoir plusieu
 - [Votre compte a été suspendu](#expired)
 - [Le mot de passe entré est incorrect](#password)
 - [Votre compte a été bloqué pour l'envoi de courrier indésirable](#blocked)
-- [Un incident s'est produit sur l'infrastructure](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+- [Un incident s'est produit sur l'infrastructure](https://web-cloud.status-ovhcloud.com/)
 
 ## Aller plus loin
 

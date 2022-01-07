@@ -279,7 +279,7 @@ On the following page, right-click one of private interfaces identified earlier 
 
 Next, give your team a name, add the second interface to the team, then expand the Additional Properties and set "Teaming Mode" to `LACP`, and finally click `OK`{.action}.
 
-#### Create the Virtual Switch in Hyper-VM
+#### Create the Virtual Switch in Hyper-V Manager
 
 We will need to create a virtual switch that will link our VMs to the Team that we created.
 

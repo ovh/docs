@@ -3,6 +3,7 @@ title: Caratteristiche delle API
 slug: pca/api
 excerpt: Caratteristiche delle API OpenStack Swift per la soluzione OVH Public Cloud Archive
 section: Public Cloud Archive
+order: 120
 ---
 
 

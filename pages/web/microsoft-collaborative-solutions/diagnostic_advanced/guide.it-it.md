@@ -123,7 +123,7 @@ Questo errore indica un errore generale nell'invio di email che può avere diver
 - [Il tuo account è stato sospeso](#expired)
 - [La password inserita non è corretta](#password)
 - [Il tuo account è stato bloccato per invio di posta indesiderata](#blocked)
-- [Si è verificato un incidente sull'infrastruttura](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+- [Si è verificato un incidente sull'infrastruttura](https://web-cloud.status-ovhcloud.com/)
 
 ## Per saperne di più
 

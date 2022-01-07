@@ -75,7 +75,7 @@ By changing the runtime environment, you can edit certain technical values for y
 |Environment|Legacy|Stable|Stable64|
 |---|---|---|---|
 |architecture|32 bits|32 bits|64 bits|
-|Minimum PHP version|5.6|7.3|7.4|
+|Maximum PHP version|5.6|7.3|7.4|
 |Openssl|1.0.1t|1.0.1t|1.1.1d|
 |Python|2.7 and 3.4|2.7 and 3.7|2.7 and 3.7|
 |Ruby|2.1|2.1|2.5|

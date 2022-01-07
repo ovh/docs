@@ -6,7 +6,7 @@ section: Getting started
 order: 03
 ---
 
-**Last updated 29th October 2021**
+**Last updated 6th December 2021**
 
 ## Objective
 
@@ -80,7 +80,7 @@ There are several management tools available in your Public Cloud project, they 
 |**Horizon**|This is the [graphical interface](https://docs.ovh.com/sg/en/public-cloud/horizon/) usually available on OpenStack. It is not altered, which allows users who are used to this interface to easily navigate it.|
 |**Users and Roles**|Allows you to [create users](https://docs.ovh.com/sg/en/public-cloud/creation-and-deletion-of-openstack-user/) and assign them a role. These users can also access the APIs or the Horizon interface directly. For example, you can create a user for your standard maintenance operations, and a user for your automation tools, such as Terraform.|
 |**Quota and Regions**|This tool allows you to control the locations and resource limits available on your project.<br><br>**Quotas**: Based on certain criteria (number of bills already paid, use of other OVHcloud products), our system sets quotas (limits) on the number of resources you can create, in order to avoid any outstanding amounts. By default, the system increases your quotas automatically when certain criteria are met. However, you can [manually increase a quota](https://docs.ovh.com/sg/en/public-cloud/increase-public-cloud-quota/#increasing-your-resources-quota-manually) from this tool.<br><br>**Regions**: Public Cloud is available in several locations around the world. Furthermore, each location can contain several “regions” (a concept unique to OpenStack). For example, for a European customer, the APAC (Asia Pacific) zone is disabled by default. If it suits your needs, you can activate new regions from this menu.|
-|**SSH Keys**|A tool that allows you to manage your SSH keys in a centralised way.|
+|**SSH Keys**|A tool that allows you to [manage your SSH keys](https://docs.ovh.com/sg/en/public-cloud/public-cloud-first-steps/#step-1-creating-ssh-keys) in a centralised way.|
 |**Billing Control**|Since the Public Cloud is based on *pay as you go*, invoices are issued at the end of the month. In [this menu](https://docs.ovh.com/sg/en/public-cloud/information-on-cloud-billing-options/), you can track your current usage, see a forecast for the next invoice, and of course see your previous invoices.|
 |**Credit and Vouchers**|This menu allows you to view the consumption of a voucher, add a voucher, or [add credit](https://docs.ovh.com/sg/en/public-cloud/add-cloud-credit/) directly to your Public Cloud project.|
 |**Contacts and Rights**|In this menu, you can add users (OVHcloud account) in read-only and read-write mode.|

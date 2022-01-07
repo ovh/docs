@@ -26,7 +26,7 @@ I software che consentono una connessione tramite SSH sono numerosi. Eccone alcu
 
 #### Per Windows
 
-- [Putty](http://www.putty.org/){.external} (gratuito)
+- [PuTTY](http://www.putty.org/){.external} (gratuito)
 - [MobaXterm](https://mobaxterm.mobatek.net/) (versione gratuita e a pagamento)
 - [SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (a pagamento)
 
@@ -103,4 +103,4 @@ In caso di dubbi, consulta la documentazione del client SSH che stai utilizzando
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

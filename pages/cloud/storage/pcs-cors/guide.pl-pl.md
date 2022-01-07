@@ -4,10 +4,11 @@ slug: pcs/cors
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/pcs/cors'
 excerpt: Find here the concepts to implement CORS
-section: Object Storage
+section: Object Storage Standard (Swift)
+order: 050
 ---
 
-**Last updated 23rd September 2021**
+**Last updated 3rd January 2022**
 
 ## Objective
 
@@ -68,10 +69,13 @@ swift stat <container>
 
 ### CORS Metadata Definition
 
+CORS specifies a wildcard character *, which permits access to all user agents, regardless of domain, protocol, or host. While there are valid use cases for this approach, it also permits a malicious actor to create a convincing facsimile of a user interface, and trick users into revealing authentication credentials. Please carefully evaluate your use case and the relevant documentation to avoid any risk for your organization.
+
+
 > [!primary]
 >
-> The use of wildcards is authorised but not recommended: `http://*.example.com`
->
+> The CORS specification does not support using this wildcard as a part of a URI. Setting allowed_origin to * would work, while *.example.com would not.
+> 
 
 > [!warning]
 >
@@ -79,7 +83,7 @@ swift stat <container>
 >
 
 ```bash
-swift post -H 'X-Container-Meta-Access-Control-Allow-Origin: http://example.com'
+swift post -H 'X-Container-Meta-Access-Control-Allow-Origin: http://example.com' <container>
 swift post -H 'X-Container-Meta-Access-Control-Max-Age:3600' <container>
 swift post -H 'X-Container-Meta-Access-Control-Expose-Headers:X-Container-Meta-Access-Control-Allow-Origin' <container>
 # stat

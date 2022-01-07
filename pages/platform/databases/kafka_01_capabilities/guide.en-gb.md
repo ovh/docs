@@ -6,7 +6,7 @@ section: Kafka
 order: 1
 ---
 
-**Last updated October 25<sup>th</sup>, 2021**
+**Last updated December 13<sup>th</sup>, 2021**
 
 ## Objective
 
@@ -43,6 +43,7 @@ Kafka nodes have to be in the same region. Multi-AZ is currently not supported.
 The Public Cloud Databases offer supports the following Kafka versions:
 
 - Kafka 2.8
+- Kafka 3.0
 
 You can folllow Kafka Release Cycle on their official page : <https://kafka.apache.org/downloads>
 
@@ -50,7 +51,7 @@ You can folllow Kafka Release Cycle on their official page : <https://kafka.apac
 
 You can use any of the Kafka-recommended clients to access your cluster.
 
-Please note that Kafka Connect and Kafka Mirrormaker 2 aren't available so far.
+Please note that Kafka Connect isn't available so far.
 
 ### Plans
 
@@ -83,12 +84,23 @@ More information on <https://github.com/apache/kafka/blob/trunk/LICENSE>.
 
 Here are the node types you can choose from:
 
+**Business plans**
+
 | Name    | Disk (GB) | Cores | Memory (GB) |
 | ------- | --------- | ----- | ----------- |
-| db1-7   | N/A       | 2     | 7           |
-| db1-15  | N/A       | 4     | 15          |
-| db1-30  | N/A       | 8     | 30          |
-| db1-60  | N/A       | 16    | 60          |
+| db1-7   | 960       | 2     | 7           |
+| db1-15  | 1920      | 4     | 15          |
+| db1-30  | 3840      | 8     | 30          |
+| db1-60  | 7680      | 16    | 60          |
+
+**Enterprise plans**
+
+| Name    | Disk (GB) | Cores | Memory (GB) |
+| ------- | --------- | ----- | ----------- |
+| db1-7   | 1920      | 2     | 7           |
+| db1-15  | 3840      | 4     | 15          |
+| db1-30  | 7680      | 8     | 30          |
+| db1-60  | 15360     | 16    | 60          |
 
 Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
 

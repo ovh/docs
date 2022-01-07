@@ -23,10 +23,10 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 
 ## Requirements
 
-- a [Virtual Private Server](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account, with 2 GB of RAM minimum
-- installing a GNU/Linux distribution on the server
-- administrative access (root) via SSH or remote desktop (Windows) to your server
-- a basic understanding of GNU/Linux administration
+- A [Virtual Private Server](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account
+- A GNU/Linux distribution installed on the server
+- Administrative access (root) via SSH to your server
+- A basic understanding of GNU/Linux administration
 
 ## Instructions
 

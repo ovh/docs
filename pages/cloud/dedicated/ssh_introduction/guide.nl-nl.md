@@ -28,7 +28,7 @@ U kunt met vele softwaretoepassingen verbinding maken in SSH. Hier vindt u enkel
 
 #### Windows
 
-- [Putty](http://www.putty.org/){.external} (gratis)
+- [PuTTY](http://www.putty.org/){.external} (gratis)
 - [MobaXterm](https://mobaxterm.mobatek.net/) (gratis versie en betaalde versie)
 - [SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (Betaald)
 

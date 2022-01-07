@@ -3,10 +3,14 @@ title: 'Wykupienie adresu IP Failover'
 excerpt: 'Dowiedz się, jak zamawiać adresy IP Failover dla swoich instancji'
 slug: wykupienie_adresu_ip_failover
 legacy_guide_number: g2030
-section: 'Zarządzanie w Panelu klienta OVH'
+section: 'Sieć'
 ---
 
-**Ostatnia aktualizacja z dnia 21-11-2019**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 21-12-2021**
 
 ## Wprowadzenie
 
@@ -19,21 +23,25 @@ Aby spełnić te potrzeby, możesz wykupić adres IP Failover dla swoich instanc
 
 Te adresy IP Failover można migrować tylko do instancji tego samego projektu.
 
-Z tego przewodnika dowiesz się, jak wykupić adres IP Failover na potrzeby projektu Public Cloud OVHcloud.
-
+**Z tego przewodnika dowiesz się, jak wykupić adres IP Failover na potrzeby projektu Public Cloud OVHcloud.**
 
 ## Wymagania początkowe
+
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Posiadanie co najmniej jednej instancji. W tym celu zapoznaj się z [przewodnikiem dotyczącym tworzenia instancji w Panelu klienta](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/).
 
 ## W praktyce
 
-Najpierw w Panelu klienta wybierz menu `Failover IP`{.action}, a następnie z zaproponowanych działań wybierz `Zamów IP Failover`{.action}:
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.<br>
+W menu po lewej stronie kliknij `Failover IP`{.action} w sekcji `Network`.
 
-![failoverIP](images/buyfailoverip1.png){.thumbnail}
+Następnie kliknij przycisk `Operacje`{.action}, po czym wybierz `Zamów adresy IP Failover`{.action}.
+
+![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
 Wówczas wyświetli się ta strona:
 
-![failoverIP](images/buyfailoverip2.png){.thumbnail}
+![failoverIP](images/buyfailoverip2-2021.png){.thumbnail}
 
 Wpisz następujące informacje:
 
@@ -68,15 +76,15 @@ Dostępne geolokalizacje w Europie to:
 >
 > W przypadku weryfikacji w innych bazach prosimy o bezpośredni kontakt z zainteresowanymi organizacjami. OVHcloud nie będzie podejmować wobec nich żadnych działań.
 
-Zostaje wygenerowane zamówienie. Zezwól na wyświetlanie wyskakujących okienek, aby mogło nastąpić automatycznie przekierowanie do zamówienia.
+Kliknij `Zamów`{.action}, aby zostać przekierowanym automatycznie do niego (wyświetlanie okienek pop-ups musi być dozwolone w Twojej przeglądarce).
 
-![failoverIP](images/buyfailoverip3.png){.thumbnail}
+Zamówienie znajdziesz również w Panelu klienta. W tym celu przejdź do `Dashboard`{.action}, a następnie kliknij `Wyświetl moje zamówienia`{.action}.
 
-Zamówienie znajdziesz także w Panelu klienta. W tym celu przejdź do sekcji `Moje konto`{.action}, a następnie `Moje zamówienia`{.action}.
-
-![failoverIP](images/buyfailoverip4.png){.thumbnail}
+Więcej informacji znajdziesz w przewodniku dotyczącym [zarządzania zamówieniami OVHcloud](https://docs.ovh.com/pl/billing/zarzadzanie-zamowieniami-ovh/).
 
 ## Sprawdź również
+
+[Konfiguracja IP Failover](https://docs.ovh.com/pl/public-cloud/konfiguracja-adresu-ip-failover/)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
 

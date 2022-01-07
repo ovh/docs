@@ -1,51 +1,63 @@
 ---
-title: 'Eliminar un proyecto'
+title: 'Eliminar un proyecto de Public Cloud'
 excerpt: 'Cómo eliminar un proyecto de Public Cloud'
 slug: eliminar_un_proyecto
 legacy_guide_number: g2129
 section: 'Gestión del proyecto'
+order: 2
 ---
 
-**Última actualización: 6/12/2019**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+**Última actualización: 17/11/2021**
 
 ## Objetivo
 
-Cuando ya no necesite su proyecto de [Public Cloud]({ovh_www}/public-cloud/){.external}, puede eliminarlo directamente desde el panel de control, accediendo al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+Si ya no necesita un [proyecto de Public Cloud](https://www.ovhcloud.com/es/public-cloud/), puede eliminarlo directamente desde el área de cliente de [OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
-Cuando elimine su proyecto de Public Cloud, se creará una factura final en concepto del resto de lo que debe pagar.
+Al eliminar un proyecto de Public Cloud, se emitirá una factura final en la que se indicará el importe pendiente de pago.
 
 > [!warning]
 >
-Tenga en cuenta que eliminar un proyecto no es lo mismo que desactivar sus instancias de Public Cloud. Cuando elimina un proyecto, se suprimen los recursos que contiene. Esta acción no puede deshacerse.
+La eliminación de un proyecto es diferente de la desactivación de las instancias de Public Cloud.<br>
+Al eliminar un proyecto, los recursos que contiene se pierden definitivamente. Esta acción es irreversible.
 >
 
-**Esta guía le mostrará cómo eliminar un proyecto de Public Cloud.**
+**Esta guía explica cómo eliminar un proyecto de Public Cloud desde el área de cliente de OVHcloud.**
 
 ## Requisitos
 
-* un proyecto [Public Cloud]({ovh_www}/public-cloud/){.external} en su cuenta de OVHcloud
-* Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
+- Un [proyecto de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud
+- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
-En primer lugar, inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} para acceder al panel de control y, seguidamente, haga clic en el menú `Public Cloud`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione `Public Cloud`{.action} en el menú superior.
 
-A continuación, haga clic en `Configuración del proyecto`{.action}, debajo de «Gestión de proyectos».
+Seleccione su proyecto y haga clic en `Project settings`{.action} en la sección `Project Management`, situada en la esquina inferior izquierda.
 
-![cloud menu](images/deleteproject.png){.thumbnail}
+![menu](images/deleteproject.png){.thumbnail}
 
-Después, haga clic en la pestaña `Eliminar proyecto`{.action}.
+Haga clic en el botón `Eliminar proyecto`{.action}.
 
-![compute tab](images/deleteproject1.png){.thumbnail}
+![eliminar el proyecto](images/deleteproject1.png){.thumbnail}
 
-Verá un mensaje de confirmación que enumera los recursos que serán aparcados o suprimidos cuando se elimine el proyecto. Lea detenidamente el mensaje y haga clic en `Eliminar proyecto`{.action} si desea continuar.
+Se mostrará un mensaje de confirmación informándole de la eliminación de los recursos del proyecto, a excepción de las direcciones IP failover asociadas. 
 
-![compute tab](images/deleteproject2.png){.thumbnail}
+Haga clic en `Eliminar proyecto`{.action} para continuar. 
 
-Cuando haga clic en el botón «Eliminar», se le enviará un correo electrónico en el que se le preguntará si quiere confirmar o cancelar la eliminación del proyecto. Tras hacer clic en el enlace de confirmación, se le redirigirá a una página web en la que deberá introducir la contraseña de su cuenta. Tras introducir y confirmar su contraseña, su proyecto será eliminado.
+![eliminar el proyecto](images/deleteproject2.png){.thumbnail}
+
+Al hacer clic en este botón, recibirá un mensaje de correo electrónico en la dirección de contacto para confirmar o cancelar la eliminación del proyecto.<br>
+Una vez que haga clic en el enlace de confirmación que aparece en el mensaje de correo electrónico, será redirigido a una página web en la que deberá introducir la contraseña de su cuenta.<br>
+Una vez que haya introducido y confirmado la contraseña, el proyecto se eliminará.
 
 ## Más información
 
-[Primeros pasos con Public Cloud](../public-cloud-primeros-pasos)
+[Cree su primer proyecto de Public Cloud](https://docs.ovh.com/us/es/public-cloud/crear_su_primer_proyecto_de_public_cloud/)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+[Crear una primera instancia de Public Cloud y conectarse a ella](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/)
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/>.

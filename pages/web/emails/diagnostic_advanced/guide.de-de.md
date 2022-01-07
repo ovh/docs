@@ -75,7 +75,7 @@ So ändern Sie das Passwort einer E-Mail-Adresse:
 
 ### Ist mein Dienst von einer Störung oder Wartung betroffen?
 
-Sie können alle aktuellen Tasks auf <http://travaux.ovh.net/> überprüfen:
+Sie können alle aktuellen Tasks auf <https://web-cloud.status-ovhcloud.com/> überprüfen:
 
 - Für **MXplan** überprüfen Sie im Bereich `E-Mails`
 - Für **E-Mail Pro** gehen Sie in den Bereich `Microsoft`

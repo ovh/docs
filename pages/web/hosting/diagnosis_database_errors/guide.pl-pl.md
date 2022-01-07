@@ -37,7 +37,7 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 #### Zweryfikuj zdarzenia w trakcie
 
-Sprawdź najpierw na stronie [http://travaux.ovh.com/](http://travaux.ovh.com/), że Twoje centrum danych, klaster hostingu, Twój prywatny serwer SQL lub Cloud Databases nie są związane z awariami infrastruktury OVHcloud.
+Sprawdź najpierw na stronie [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), że Twoje centrum danych, klaster hostingu, Twój prywatny serwer SQL lub Cloud Databases nie są związane z awariami infrastruktury OVHcloud.
 
 > [!primary]
 >
@@ -65,7 +65,7 @@ W razie potrzeby zmień [hasło do Twojej bazy danych](https://docs.ovh.com/pl/h
 
 #### Przykład dla Wordpress
 
-Jeśli Twoja strona wyświetla komunikat **"Błąd podczas logowania do bazy danych"** i nie dotyczy jej [problem](http://travaux.ovh.com/), zaloguj się przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) do hostingu, a następnie otwórz katalog zawierający Twoją stronę (domyślnie jest to folder `www`).
+Jeśli Twoja strona wyświetla komunikat **"Błąd podczas logowania do bazy danych"** i nie dotyczy jej [problem](https://web-cloud.status-ovhcloud.com/), zaloguj się przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) do hostingu, a następnie otwórz katalog zawierający Twoją stronę (domyślnie jest to folder `www`).
 
 Jeśli jest to strona Wordpress, otwórz plik `wp-config.php`.
 
@@ -126,7 +126,7 @@ Jeśli korzystasz z oferty **Performance**, sprawdź [metoda 2](#methode2).
 Możesz również przenieść dane na nową bazę:
 
 - Zamów w razie potrzeby [bazę danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) o wyższej wielkości, a następnie uruchom [kreacja](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/);
-- Wykonaj [eksport swoich danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/), następnie [je importować](https://docs.ovh.com/pl/hosting/hosting-guide-import-bazy-danych-mysql/) w nowej bazie;
+- Wykonaj [eksport swoich danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/), następnie [je importować](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/) w nowej bazie;
 - Wprowadź dane dostępowe nowej bazy danych do [pliku konfiguracyjnego](#config_file) swojej strony.
 
 > [!primary]

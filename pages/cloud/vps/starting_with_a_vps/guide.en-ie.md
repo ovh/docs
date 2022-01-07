@@ -24,9 +24,9 @@ If you encounter any difficulties performing these actions, please contact a spe
 
 ## Requirements
 
-- a [Virtual Private Server](https://www.ovhcloud.com/en-ie/vps) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- login credentials received via email after the installation
+- A [Virtual Private Server](https://www.ovhcloud.com/en-ie/vps) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Login credentials received via email after the installation
 
 
 ## Instructions

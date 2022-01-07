@@ -6,7 +6,7 @@ section: Diagnostica
 order: 2
 ---
 
-**Ultimo aggiornamento: 24/06/2021**
+**Ultimo aggiornamento: 08/10/2021**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -83,7 +83,7 @@ Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fro
 
 Per installare il tuo modulo su un database già utilizzato, è necessario utilizzare la [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) di installazione di un nuovo **CMS in 1 click**.
 
-Per recuperare le credenziali del tuo database, consulta le nostre [FAQ](https://www.ovhcloud.com/it/web-hosting/).
+Per recuperare le credenziali del tuo database, consulta le nostre [guida](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#configura-il-modulo).
 
 ### "La directory di installazione non è vuota"
 
@@ -99,19 +99,70 @@ Per collegare il tuo dominio a un'altra directory, clicca su `Modifica il domini
 
 Accedi al tuo hosting via [FTP](../accedere-spazio-storage-ftp-hosting-web/) e, dopo averlo salvato, elimina o trasferisci il contenuto della cartella.
 
+### "Si è verificato un errore durante il caricamento delle informazioni (There is not enough space on your hosting (you need at least xxx MB))"
+
+![not_enough_space](images/not_enough_space.png){.thumbnail}
+
+Questo messaggio indica che lo [spazio di storage](../accedere-spazio-storage-ftp-hosting-web/) del tuo hosting comporta un volume di dati troppo elevato. È quindi necessario eliminarne o spostarne uno prima di poter installare un nuovo [modulo in 1 click](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/).
+
+In questa situazione, [connettiti in FTP](../accedere-spazio-storage-ftp-hosting-web/) al tuo hosting, [copia in locale](../accedere-spazio-storage-ftp-hosting-web/) i tuoi dati, poi elimina i file che non sono necessari al funzionamento del tuo sito.
+
+> [!primary]
+>
+> Per maggiori informazioni sui dati da eliminare per diminuire la quantità di dati presenti sul tuo hosting, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/).<br>
+> Non saremo in grado di fornirti assistenza al riguardo.
+
 ### "Impossibile accedere al database" <a name="delete-the-module"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
 Dopo aver avviato l'installazione del tuo modulo in modalità avanzata, hai ricevuto un'email che ti informa che il tuo modulo non può connettersi al database indicato. 
 
-È quindi necessario verificare le credenziali del tuo database. Per trovarli, consulta le nostre [FAQ](https://www.ovhcloud.com/it/web-hosting/).
+È quindi necessario verificare le credenziali del tuo database. Per trovarli, consulta la nostra [guida](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#configura-il-modulo).
 
 Elimina il tuo modulo dalla scheda `CMS in 1 click`{.action}:
 
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
 
 Riavvia l'installazione di un nuovo modulo.
+
+### "You have insufficient rights on this database."
+
+![insufficient_rights](images/insufficient_rights.png){.thumbnail}
+
+Il tuo database non può più essere modificato perché la quantità di dati che contiene supera il limite autorizzato. Questo messaggio compare durante l'installazione di un modulo in [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo).
+
+installa il tuo modulo passando per [modalità "singola"](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-base-di-un-modulo) o scegli un altro database al momento dell'installazione in modalità avanzata. Se necessario, ordina una [offerta di database](https://www.ovh.it/hosting-web/opzioni-sql.xml) complementare.
+
+Se non disponi di altri database e non desideri ordinare un'offerta complementare, [importa una copia del tuo database](../web_hosting_come_esportare_un_database/#procedura) e rimuovi i dati inutili.
+
+> [!warning]
+>
+> **Eliminare elementi nel tuo database può causare un'interruzione del sito.**
+>
+> Per maggiori informazioni, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/).<br>
+> Non saremo in grado di fornirti assistenza al riguardo.
+>
+
+### "Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
+
+![cant_connect](images/cant_connect.png){.thumbnail}
+
+Hai avviato l'installazione di un modulo in 1 click in [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) su un database situato su un [server SQL privato](../iniziare-a-utilizzare-sql-privato/). Questo messaggio di errore è stato inviato via email. Ciò significa che l'utente registrato durante l'installazione non dispone dei diritti sufficienti sul database o che gli identificativi indicati sono errati.
+
+In questa situazione, modifica prima i [diritti dell'utente](../creare-database-e-utente/#gestire-i-diritti-degli-utenti) affinché disponga dei diritti **Administratore** o en **Lettura/scrittura** sulla base dei dati.
+
+Verifica i suoi identificativi anche collegandoti direttamente al tuo [server di database](../connessione-database-server-bdd/#procedura) e riavvia l'installazione del tuo modulo.
+
+### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
+
+![cant_connect_server](images/cant_connect_server.png){.thumbnail}
+
+Hai avviato l'installazione di un modulo in 1 click in [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) su un database situato su un [server SQL privato](../iniziare-a-utilizzare-sql-privato/). Questo messaggio di errore è stato inviato via email. Significa che il nome del server di database indicato non è corretto.
+
+Accedi alla sezione `Web cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla scheda `Database`{.action} dello schermo.
+
+Clicca sull'offerta corrispondente: il nome del server da utilizzare è indicato sotto `Nome host` nella sottoparte `SQL` di `Informazioni di login`.
 
 ### Il tuo dominio non è proposto durante la creazione del modulo
 
@@ -136,7 +187,7 @@ Questa anomalia può avere diverse cause:
 
 - Di recente hai effettuato una modifica nella tua zona o sui tuoi server [DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) o un [trasferimento di domini](../../domains/trasferire-un-dominio-generico-in-ovh/). Attendi il completamento di queste operazioni (48 ore per la modifica dei tuoi DNS). Riavvia anche i tuoi dispositivi (PC, smartphone, box, ecc...) e svuota la cache del tuo browser.
 
-- Il tuo dominio è sempre associato al tuo hosting precedente. In questo caso, modifica la tua [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1) o i tuoi [server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#modifica-i-server-dns) o contatta il tuo precedente hosting provider.
+- Il tuo dominio è sempre associato al tuo hosting precedente. In questo caso, modifica la tua [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1) o i tuoi [Server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#modifica-i-server-dns) o contatta il tuo precedente hosting provider.
 
 ## Per saperne di più <a name="gofurther"></a>
 

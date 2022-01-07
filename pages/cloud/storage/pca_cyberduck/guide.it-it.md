@@ -1,8 +1,9 @@
 ---
-title: Gestisci i tuoi archivi con un client Swift
+title: Gestisci i tuoi archivi con un client Swift (Cyberduck)
 slug: pca/cyberduck
 excerpt: Come configurare Cyberduck per gestire il tuo Public Cloud Archive
 section: Public Cloud Archive
+order: 080
 ---
 
 > [!primary]
@@ -18,6 +19,13 @@ Public Cloud Archive (PCA) è una soluzione di archiviazione gestibile tramite l
 Il client Swift Cyberduck è una delle soluzioni disponibili ed è facilmente configurabile. Online puoi trovare anche altre interfacce con una configurazione simile a quella che ti stiamo per presentare.
 
 **Questa guida ti mostra come configurare Cyberduck per gestire il tuo Public Cloud Archive utilizzando un'interfaccia grafica basata sulle API OpenStack.**
+
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+>
+> Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo sito. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+>
 
 ## Prerequisiti
 

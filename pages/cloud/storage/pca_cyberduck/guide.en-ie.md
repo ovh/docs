@@ -1,8 +1,9 @@
 ---
-title: Managing your archives with a Swift client
+title: Managing your archives with a Swift client (Cyberduck)
 slug: pca/cyberduck
 excerpt: This guide shows you how to configure Cyberduck to manage your Public Cloud Archives.
 section: Public Cloud Archive
+order: 080
 ---
 
 **Last updated 18th June 2021**
@@ -16,6 +17,13 @@ There are graphical interface solutions that seamlessly make use of the OpenStac
 Other interfaces can be found on the Internet and configuration is similar to the configuration explained in this guide.
 
 **This guide will explain how to configure Cyberduck to manage your Object Storage using a GUI based on Openstack APIs.**
+
+> [!warning]
+>
+> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+>
 
 ## Requirements
 

@@ -24,15 +24,9 @@ hidden: true
 Ce guide ne s'applique pas aux adresses emails Exchange.
 
 
-### Prérequis
+## Prérequis
 - Disposez d'une adresse e-mail mutualisé OVHcloud fonctionnelle
 - Disposer du logiciel Outlook 2013
-
-
-## Guide video
-
-### Configuration Outlook 2013 en Imap
-<video preload="auto" poster="https://www.ovh.com/fr/images/videos/guides/1286/Outlook_2013_Imap_final_quality_60.jpg" style="width: 90%; margin: auto 5%;" controls="controls" id="" class="videoGuide video-js">     <source type="video/mp4" src="https://www.ovh.com/fr/images/videos/guides/1286/Outlook_2013_Imap_final_quality_60.mp4"></source>     <source type="video/webm" src="https://www.ovh.com/fr/images/videos/guides/1286/Outlook_2013_Imap_final_quality_60.webm"></source>     <source type="video/ogv" src="https://www.ovh.com/fr/images/videos/guides/1286/Outlook_2013_Imap_final_quality_60.ogv"></source>     <track default="default" src="https://www.ovh.com/fr/images/videos/guides/1286/Outlook_2013_Imap_final_quality_60.vtt" srclang="fr" kind="subtitles" label="French"></track> </video>
 
 ## Configuration Outlook 2013
 

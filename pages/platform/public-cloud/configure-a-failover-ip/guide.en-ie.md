@@ -21,10 +21,10 @@ You may need to configure failover IP addresses on your instances, for example i
 
 ## Requirements
 
-- a [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- a [failover IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/) or a failover IP block
-- administrative access (root) via SSH or GUI to your instance
-- basic networking and administration knowledge
+- A [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
+- A [failover IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/) or a failover IP block
+- Administrative access (root) via SSH or GUI to your instance
+- Basic networking and administration knowledge
 
 ## Instructions
 
@@ -273,7 +273,6 @@ Enter your failover IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP addre
 Back in the section "IP Addresses", verify that the failover IP address was added correctly.
 
 ![current IP configuration](images/pleskip4-4.png){.thumbnail}
-
 
 
 ### Troubleshooting

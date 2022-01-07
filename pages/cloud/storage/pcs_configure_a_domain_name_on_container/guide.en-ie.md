@@ -2,25 +2,23 @@
 title: Configure a domain name on your Object Storage container
 excerpt: Configure a domain name on your Object Storage container
 slug: configure_a_domain_name_on_your_object_storage_container
-section: Object Storage
+section: Object Storage Standard (Swift)
 legacy_guide_number: g2006
+order: 120
 ---
 
 
-## 
+## Objective
+
 When you create a Public storage container anyone can access your data. It is the ideal solution for sharing files over the Internet but to do so you have to provide a long URL which is difficult to remember. 
 In addition, if you want to use this content on your own website it may be simpler to use your own domain name. This means you can share your data with a customised URL that is easier to remember. 
 
 This guide shows you how to configure a domain on your container.
 
-
 ## Prerequisites
 
-- [Add storage space](https://docs.ovh.com/gb/en/storage/pcs/create-container/)
+- [Add storage space](https://docs.ovh.com/ie/en/storage/pcs/create-container/)
 - A domain name
-
-
-
 
 ## In theory
 When OpenStack Object Storage receives an HTTP request, the host header is checked. If the host header differs from the current hostname, the system treats it as a mapped record and sends a DNS request for the full hostname. 
@@ -55,11 +53,11 @@ To be interpreted by the Object Storage, the CNAME record must conform to specif
 ```
 
 
-For example, for a container named staticct and a project named 123xxxx456 to be used in sur SBG1:
+For example, for a container named staticct and a project named 123xxxx456 to be used in SBG:
 
 
 ```
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -67,7 +65,7 @@ Your DNS record will be:
 
 
 ```
-static IN CNAME staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+static IN CNAME staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -100,11 +98,11 @@ As with the CNAME, replace [VARIABLES] to the correct value.
 ```
 
 
-For example, for a container named staticct, in project 123xxxx456 used in SBG1:
+For example, for a container named staticct, in project 123xxxx456 used in SBG:
 
 
 ```
-staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -112,7 +110,7 @@ Your DNS record will be:
 
 
 ```
-_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -120,7 +118,7 @@ If you do not want to use a subdomain, you can use the following command:
 
 
 ```
-_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg1.cloud.ovh.net.
+_swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
 
@@ -129,9 +127,9 @@ To do this, use the following commad:
 
 
 ```
-dig storage.sbg1.cloud.ovh.net
-dig storage.gra1.cloud.ovh.net
-dig storage.bhs1.cloud.ovh.net
+dig storage.sbg.cloud.ovh.net
+dig storage.gra.cloud.ovh.net
+dig storage.bhs.cloud.ovh.net
 ```
 
 

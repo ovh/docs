@@ -2,7 +2,8 @@
 title: Capacités et limitations
 slug: pcs/capabilities-and-limitations
 excerpt: Retrouvez ici les principales capacités et limitations pour la gestion de vos conteneurs
-section: Object Storage
+section: Object Storage Standard (Swift)
+order: 080
 ---
 
 **Dernière mise à jour le 23/09/2021**
@@ -257,7 +258,7 @@ Il n'y a pas de limite au nombre de conteneurs dans un stockage.
 
 ### Keystone API version
 
-La version actuelle de keystone est la 3, la v2 étant obsolète depuis plusieures années : <http://travaux.ovh.net/?do=details&id=42179>
+La version actuelle de keystone est la 3, la v2 étant obsolète depuis plusieures années : <https://public-cloud.status-ovhcloud.com/incidents/gwqhdkprm136>
 
 ## Aller plus loin
 

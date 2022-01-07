@@ -23,10 +23,10 @@ IPv6 is the latest version of the *Internet Protocol*. Each OVHcloud VPS server 
 
 ## Requirements
 
-- a [Virtual Private Server](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account
-- administrative access (root) via SSH or remote desktop (Windows) to your server
-- a basic understanding of networking
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) / to the [OVHcloud API](https://api.ovh.com/console/)
+- A [Virtual Private Server](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account
+- Administrative access (root) via SSH or remote desktop (Windows) to your server
+- A basic understanding of networking
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) / to the [OVHcloud API](https://api.ovh.com/console/)
 
 ## Instructions
 
@@ -113,9 +113,9 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 There are two ways to configure your network depending on the operating system installed on your server:
 
-- **for Debian 8 and earlier, Ubuntu 16.04 and earlier**: use the [method based on the *interfaces* files](#interfaces)
+- **for Debian 11 and earlier, Ubuntu 16.04 and earlier**: use the [method based on the *interfaces* files](#interfaces)
 
-- **for Debian 9, Ubuntu 17.04 and later**: use the [method based on the *Netplan* configuration](#netplan)
+- **for Ubuntu 17.04 and later**: use the [method based on the *Netplan* configuration](#netplan)
 
 In some cases (such as Debian 9), the appropriate method may not be the one specified above. To make sure, browse your system to check which one is active. Visit <https://netplan.io/> for more information, if necessary.<br>
 Moreover, keep in mind that the exact file names may vary.
@@ -125,7 +125,7 @@ Moreover, keep in mind that the exact file names may vary.
 The best practice approach is to create a configuration file in the directory `/etc/network/interfaces.d/`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
+nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 This allows you to separate the IPv6 configuration and easily revert the changes in case of an error.

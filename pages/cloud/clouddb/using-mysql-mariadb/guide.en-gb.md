@@ -16,7 +16,7 @@ Do you want to use MySQL or MariaDB ? Learn how to create and manage your databa
 - To have viewed [the CloudDB guide](../getting-started-with-clouddb/)
 
 ### What is a MySQL database?
-MySQL is relational database management system developed for increased read performance, unlike other systems
+MySQL is a relational database management system developed for increased read performance, unlike other systems
 
 This is an open-source engine, whose parent company is Oracle.
 

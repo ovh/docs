@@ -5,11 +5,15 @@ slug: firewall-network
 section: 'Redes & IP'
 ---
 
-**Última atualização: 21/09/2018**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 23/12/2021**
 
 ## Sumário
 
-Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OVH propõe uma firewall com várias opções de configuração integrada na solução **Anti-DDoS**: a Firewall Network. Esta opção permite limitar a exposição dos serviços aos ataques provenientes da rede pública.
+Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OVHcloud propõe uma firewall com várias opções de configuração integrada na solução **Anti-DDoS**: a Firewall Network. Esta opção permite limitar a exposição dos serviços aos ataques provenientes da rede pública.
 
 **Este manual explica como configurar a Firewall Network.**
 
@@ -24,8 +28,8 @@ Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OV
 
 ## Requisitos
 
-- Dispor de um serviço OVH com Firewall Network incluída: [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}, [VPS](https://www.ovh.pt/vps/){.external}, [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pt/private-cloud/){.external}, [IP Failover](https://www.ovh.pt/servidores_dedicados/ip_failover.xml){.external}, etc.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Dispor de um serviço OVHcloud com Firewall Network incluída: [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}, [VPS](https://www.ovh.pt/vps/){.external}, [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pt/private-cloud/){.external}, [IP Failover](https://www.ovh.pt/servidores_dedicados/ip_failover.xml){.external}, etc.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 
 ## Instruções
@@ -37,7 +41,7 @@ Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OV
 > A Firewall Network foi concebida para proteger os endereços de IP associados a uma máquina. Cada IP deverá ser configurado de forma independente. Não é possível realizar uma configuração simultânea dos IP do servidor.
 > 
 
-Depois de aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, vá à secção `IP`{.action} e clique em `...`{.action} para ativar a firewall no IPv4 pretendido.
+Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda ao menu `Bare Metal Cloud`{.action} e clique na secção `IP`{.action} na barra lateral esquerda. Clique em `...`{.action} para ativar a firewall no IPv4 pretendido.
 
 ![Ativação da Firewall Network](images/firewall_creation.png){.thumbnail}
 
@@ -62,7 +66,7 @@ Pode definir até **20 regras para cada IP**.
 > [!primary]
 >
 > - A fragmentação UDP está bloqueada por predefinição (DROP). Após a ativação da Firewall Network, e se usar uma VPN, deverá configurar corretamente a maximum transmission unit (MTU). Por exemplo, em OpenVPN, pode selecionar `MTU test`{.action}.
-> - A Firewall Network não produz efeitos dentro da rede OVH. Ou seja, as regras implementadas não irão afetar as ligações dentro da rede OVH.
+> - A Firewall Network não produz efeitos dentro da rede OVHcloud. Ou seja, as regras implementadas não irão afetar as ligações dentro da rede OVHcloud.
 >
 
 
@@ -99,13 +103,30 @@ Para garantir que só ficarão abertas as portas SSH (22), HTTP (80), HTTPS (443
 
 As regras são ordenadas sequencialmente de 0 (primeira regra lida) a 19 (última regra lida). A sequência de leitura é interrompida a partir do momento em que uma regra é aplicada ao pacote recebido.
 
-Por exemplo, um pacote destinado à porta 80/TCP é identificado pela regra 2 e esta é executada. As regras seguintes já não serão acionadas. Um pacote destinado à porta 25/TCP só poderá ser identificado pela última regra (19), e será bloqueado. Nas regras precedentes, a OVH não autoriza qualquer comunicação na porta 25.
+Por exemplo, um pacote destinado à porta 80/TCP é identificado pela regra 2 e esta é executada. As regras seguintes já não serão acionadas. Um pacote destinado à porta 25/TCP só poderá ser identificado pela última regra (19), e será bloqueado. Nas regras precedentes, a OVHcloud não autoriza qualquer comunicação na porta 25.
 
 > [!warning]
 >
 > Em caso de ativação da mitigação Anti-DDoS, as regras da Firewall Network serão ativadas, mesmo tendo sido desativadas anteriormente. Se optar  pela desativação, não se esqueça de eliminar as regras.
 > 
 
+### Configurar a firewall Armor (Firewall Game)
+
+> [!primary]
+> Por predefinição, a firewall Armor está pré-configurada com certas regras que a OVHcloud determinou funcionar com os jogos mais comuns. No entanto, para os clientes que disponham de um servidor dedicado Game, permitimos-lhe ir mais longe e configurar igualmente regras para as portas.
+>
+
+Para configurar as regras das suas portas no Armor, primeiro tem de aceder à Área de Cliente OVHcloud.<br>
+De seguida, aceda ao menu `Bare Metal Cloud`{.action} e clique na secção `IP`{.action} na barra lateral esquerda. Clique em `...`{.action} junto do endereço IP do seu servidor de jogo e, a seguir, em `Configurar a Firewall Game`{.action}.
+
+![Game_wall](images/GAMEwall2021.png){.thumbnail}
+
+No ecrã seguinte, clique no botão `Adicionar uma regra`{.action} para adicionar uma regra ao Armor.
+
+![Configura_Armor](images/ConfigureArmor2021.png){.thumbnail}
+
+Ative as portas conforme as suas necessidades no ecrã seguinte e clique no botão `Confirmar`{.action} quando acabou de adicionar as suas regras. A firewall Armor foi configurada com sucesso.
+
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: [Comunidade OVH.](https://community.ovh.com/en/)
+Fale com a nossa comunidade de utilizadores <https://community.ovh.com/en/>.

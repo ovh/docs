@@ -1,7 +1,7 @@
 ---
 title: Rebuilding manifests to retrieve inaccessible objects
 slug: pcs/rebuild-manifests
-section: Object Storage
+section: Object Storage Standard (Swift)
 hidden: true
 ---
 

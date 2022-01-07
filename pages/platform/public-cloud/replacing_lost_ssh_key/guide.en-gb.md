@@ -19,8 +19,8 @@ To regain access, we have provided you with a [rescue mode](../put_an_instance_i
 
 ## Requirements
 
-- a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- access to your instance via SSH
+- A [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to your instance via SSH
 
 ## Instructions
 

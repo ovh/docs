@@ -27,7 +27,7 @@ Es gibt sehr viele Programme, die eine SSH-Verbindung ermöglichen. Hier ein paa
 
 #### Auf Windows
 
-- [Putty](http://www.putty.org/){.external} (kostenlos)
+- [PuTTY](http://www.putty.org/){.external} (kostenlos)
 - [MobaXterm](https://mobaxterm.mobatek.net/) (erhältlich als kostenlose und kostenpflichtige Version)
 - [SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (kostenpflichtig)
 

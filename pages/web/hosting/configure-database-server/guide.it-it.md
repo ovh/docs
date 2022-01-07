@@ -35,7 +35,7 @@ In questa interfaccia vengono mostrate anche le informazioni principali della tu
 |RAM|Indica la memoria disponibile sulla tua istanza e segnala l’eventuale raggiungimento della soglia limite. I database server dispongono di risorse dedicate e garantite: la sua memoria RAM. Se necessario, è possibile aumentarla e ricevere una notifica in caso di utilizzo di tutte le risorse disponibili.|
 |Infrastruttura|Indica l’infrastruttura utilizzata dall’istanza. Questa informazione è relativa all'infrastruttura di OVHcloud.|
 |Datacenter|Indica il datacenter in cui è stata creata l’istanza. Assicurati che il datacenter dell'istanza sia lo stesso dell'hosting Web OVHcloud in cui è (o sarà) ospitato il tuo sito.|
-|Host|Indica il server OVHcloud in cui è stata creata l'istanza. Questa informazione è relativa all'infrastruttura OVHcloud e può essere utilizzata nelle comunicazioni relative agli [incidenti](http://travaux.ovh.net/).|
+|Host|Indica il server OVHcloud in cui è stata creata l'istanza. Questa informazione è relativa all'infrastruttura OVHcloud e può essere utilizzata nelle comunicazioni relative agli [incidenti](https://web-cloud.status-ovhcloud.com/).|
 
 ![Informazioni generali](images/privatesql01-General-information.png){.thumbnail}
 

@@ -1,124 +1,177 @@
 ---
 title: Configurer le Load Balancer NSX Edge
 slug: configurer-le-load-balancer-nsx-edge
-excerpt: 
+excerpt: Utiliser le service d'équilibrage de charge du NSX Edge
 legacy_guide_number: '7766591'
 section: NSX
 order: 05
 ---
 
-**Dernière mise à jour le 27/02/2019**
+**Dernière mise à jour le 29/11/2021**
 
 ## Objectif
 
-La fonctionnalité d'équilibrage de charge NSX permet de répartir la charge du trafic depuis une IP publique ou privée unique vers plusieurs VMs en adressage IPs privé.
+La fonctionnalité d'équilibrage de charge NSX permet de répartir la charge du trafic depuis une IP publique ou privée unique vers plusieurs VMs de votre infrastructure.
 
 ## Prérequis
 
-- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
 
 ## En pratique
 
-Depuis la Edge souhaitée, rendez-vous dans la partie "Gérer" pour ensuite accéder à l'onglet "Load Balancer".
+### Accès à l'interface
 
-![](images/GlobalConfiguration.PNG){.thumbnail}
+Dans l'interface vSphere, rendez-vous dans le tableau de bord `Mise en réseau et sécurité`{.action}.
+
+![Menu](images/en01dash.png){.thumbnail}
+
+Sur la gauche de votre écran, naviguez vers `Dispositifs NSX Edge`{.action} puis cliquez sur le dispositif à paramétrer.
+
+![NSX](images/en02nsx.png){.thumbnail}
+
+L'onglet `Équilibrage de charge` donne le statut du service et ses fonctions de base.
 
 ### Configuration globale
 
-Vous pouvez alors visualiser le menu "configuration globale" disposant d'un bouton `Modifier`{.action} vous permettant de configurer les options suivantes.
+Allez dans `Configuration globale`{.action} puis cliquez sur `Modifier`{.action}.
 
-- Enable Load Balancer : Active la fonctionnalité de Load Balancer si coché.
-- Enable Accelerator : Utilise le Load Balancer de couche 4 (réseau) le plus rapide plutôt que de couche 7 (applicatif) si coché.
-- Logging : Active le logs du Load Balancer si coché. Le type de log conservé est défini par le menu déroulant "Log Level".
-- Enable Service Insertion : Permet au Load Balancer d'utiliser les "Third Party Appliance" de revendeurs si coché.
+![Global](images/en03edit.png){.thumbnail}
 
-![](images/EditGlobal.PNG){.thumbnail}
+Activez les options nécessaires :
 
-### Profils d'application
+- Équilibrage de charge : service global.
+- Accélération : activée, le moteur d'équilibrage fonctionne sur la couche 4 (plus rapide) contre la couche 7 si désactivée. 
+- Journalisation : capture les logs pour le service (niveau de journalisation personnalisable).
 
-Le menu "Profils d'application" permet de gérer des profils sur la partie haute et des certificats sur la partie basse. Ces profils sont utilisés pour configurer le Load Balancer en lui même.
+Cliquez sur `Sauvegarder`{.action}.
 
-![](images/ApplicationProfiles.PNG){.thumbnail}
+![Global](images/en04conf.png){.thumbnail}
 
-Pour ajouter un "Profil d'application", vous pouvez cliquer sur `Add` (petit `+`{.action} vert).
+Le service est maintenant actif.
 
-Vous pouvez configurer les paramètres suivants :
+#### Surveillance des services
 
-- Name : Nom du profil, le plus explicite possible pour vous.
-- Type : Le type de trafic utilisé pour le Load Balancing. Les types disponibles selon votre utilisation sont TCP, UDP, HTTP et HTTPS.
-- Persistence : Le moyen utilisé par le Load Balancer pour identifier une session et rediriger cette session toujours vers le même serveur final.
+La surveillance d'un service définit les paramètres de contrôle pour un type de trafic réseau. Lorsque la surveillance d'un service est associée à un pool, les membres sont monitorés en fonction des paramètres de cette surveillance.
 
-Les autres champs permettent d'affiner le suivi de la répartition selon votre besoin.
+Par défaut, trois services sont monitorés par NSX Edge :
 
-![](images/NewProfil.PNG){.thumbnail}
+- TCP
+- HTTP
+- HTTPS
 
-### Surveillance des services
+Dans `Surveillance des services`{.action} cliquez sur `+ Ajouter`{.action}.     
 
-Par défaut, 3 monitorings sont en place, en TCP, HTTP et HTTPS.
+![Monitor](images/en07service.png){.thumbnail}
 
-![](images/ServiceMonitoring.PNG){.thumbnail}
+Nommez et choisissez le type de service. Vous pouvez également personnaliser tous les autres paramètres.
 
-Vous pouvez utiliser le bouton `Add` (petit `+`{.action} vert) pour ajouter des règles de monitoring personnalisées.
+Cliquez sur `Ajouter`{.action}.
 
-### Pools
+![Monitor](images/en08monitor.png){.thumbnail}
 
-Un pool est une liste de serveurs ou d'IPs vers lesquels le Load Balancer va répartir le trafic.
+Le service est désormais surveillé.
 
-![](images/Pools.PNG){.thumbnail}
+#### Profils d'application
 
-Cliquez sur le bouton `Add` (petit `+`{.action} vert) afin de créer un nouveau pool. Cela vous permet de configurer les champs suivants :
+Un profil d'application définit comment diriger un type particulier de trafic réseau. Après avoir configuré un profil, vous l'associerez à un serveur virtuel.
 
-- Name : Le nom du pool, si possible explicite pour ne pas confondre les pools entre eux.
-- Description : Complément d'information vous permettant de savoir à quoi vous sert le pool par rapport aux autres.
-- Algorithm : Défini le type de répartition entre les serveurs finaux.
-    - IP\_HASH : Cet algorithme effectue une fonction de hashage (hash) sur l'adresse IP source puis divise le résultat par le nombre de serveurs actuellement actifs. La même adresse IP source sera alors toujours redirigée vers le même serveur tant que celui-ci reste actif.
+Dans `Profils d'application`{.action}, cliquez sur `+ Ajouter`{.action}.         
 
-    - LEAST\_CONN : Sélectionne le serveur qui a le moins de connexions actives, c'est le paramètre recommandé pour de longues sessions avec peu de trafic. L'algorithme *RoundRobin* est appliqué sur les groupes de serveurs qui ont le même nombre de connexion actives.
+![Profiles](images/en06app.png){.thumbnail}
 
-    - ROUND\_ROBIN : Sélectionne les serveurs les uns après les autres pour chaque connexion, c'est l'algorithme par défaut.
+Choisissez le type et nommez le profil. 
 
-    - URI : Cet algorithme effectue une fonction de hashage (hash) sur une partie, ou sur l'URI entière, puis divise le résultat par le nombre de serveurs actuellement actifs. Le même URI sera alors toujours redirigée vers le même serveur tant que celui-ci reste actif.
+Configurez les paramètres en fonction du type sélectionné.
 
-- Algorithm Parameters : Permet d'ajouter des règles spécifiques d'algorithme.
-- Monitors : Applique le monitoring choisi parmi les "Services Monitoring" configurés dans le menu associé.
+Notez les deux paramètres suivants :
 
-![](images/NewPool.PNG){.thumbnail}
+- La persistance garde les données de session attachées à un cookie ou à l'adresse IP d'origine.
+- Insérer l'en-tête HTTP X-Forwarded-For garde l'IP d'origine des connections client qui traversent l'équilibreur de charge.
 
-Vous pouvez finalement ajouter des membres au pool via le bouton `Add` (petit `+`{.action} vert"). Vous pouvez configurer les champs suivants :
+Cliquez sur `Ajouter`{.action}.
 
-- Name : Le nom du membre.
-- IP Address / VC Container : Un des serveurs finaux qui recevra le trafic réparti. Vous pouvez entrer manuellement une IP ou cliquer sur "Select" pour choisir directement un élément de l'infrastructure comme une VM.
-- Port : Le port sur lequel sera redirigé le trafic.
-- Monitor Port : Le port surveillé sur le membre pour définir son fonctionnement.
+![Profiles](images/en06profile.png){.thumbnail}
 
-Nous prendrons l'exemple de 2 membres mais vous pouvez en ajouter plus.
+Le profil est alors disponible.
 
-![](images/ExemplePools.PNG){.thumbnail}
+#### Pools
 
-### Serveurs virtuels
+Un pool de serveurs traite la charge distribuée par l'équilibreur de charge et est associé à une surveillance de service pour son monitoring.
 
-Le menu "Serveurs virtuels" vous permet de configurer les points d'entrée publics de vos Load Balancer. L'IP configurée doit être une IP de la Edge.
+Dans `Pools`{.action}, cliquez sur `+ Ajouter`{.action}.     
 
-![](images/VirtualServers.PNG){.thumbnail}
+![Pools](images/en09pool.png){.thumbnail}
 
-Pour ajouter un **Serveur virtuel**, cliquez sur le bouton `Add` (petit `+`{.action} vert). Vous pouvez alors configurer les champs suivants :
+Nommez le pool.
 
-- Enable Virtual Server : Active le "Serveur virtuel" si coché.
-- Application Profile : Permet d'utiliser un "Profil d'application" configuré précédemment.
-- Name : Le nom du "Serveur virtuel".
-- IP Address : Indiquez manuellement une IP publique de la Edge ou sélectionnez la depuis le bouton "Select IP Address" vous proposant toutes les IPs publiques de la Edge.
-- Protocol : Le protocole utilisé pour la répartition de charge.
-- Port : Le port utilisé par la répartition de charge.
-- Default Pool : Sélectionnez un "Pool" créé et configuré précédemment.
+Selectionnez l'Algorithme à appliquer :
 
-Votre **Serveur virtuel** est ensuite prêt et fonctionnel.
+- **IP-HASH** sélectionne un serveur en fonction d'un hachage de l'adresse IP source et du poids total de tous les serveurs en cours d'exécution.
+- **LEASTCONN** répartit les demandes clients aux serveurs en fonction du nombre de connexions déjà actives sur ce dernier.
+- **ROUND_ROBIN** utilise chaque serveur à tour de rôle en fonction du poids attribué.
+- **URI** hashe la partie gauche de l'URI et divise par le poids total des serveurs en cours d'exécution. Le résultat désigne quel serveur reçoit la requête. Cela garantit qu'une URI est toujours dirigée vers le même serveur s'il fonctionne.
+- **HTTPHEADER** regarde l'en-tête HTTP dans chaque requête.
+- **URL** regarde l'argument dans la chaîne de requête de chaque requête HTTP GET.
 
-![](images/ExempleVirtualServer.PNG){.thumbnail}
+Choisissez le service à surveiller.
 
 > [!primary]
 >
-> En cas de besoin de mise en place de certificat SSL, n’hésitez pas à vous référer à la [documentation officielle VMware](https://kb.vmware.com/s/article/2113945).
->
+> Utiliser le mode Transparent rend l'addresse IP client visible aux serveurs back-end.
+
+![Pools](images/en10genpool.png){.thumbnail}
+
+Dans l'onglet `Membres`{.action}, cliquez sur`+ Ajouter`{.action} pour ajouter les serveurs à utiliser.
+
+Cliquez sur `Ajouter`{.action}.
+
+![Pools](images/en11members.png){.thumbnail}
+
+Votre pool est alors défini.
+
+#### Serveurs virtuels
+
+Un serveur virtuel est une interface interne ou externe de la NSX Edge utilisée pour rediriger le trafic.
+
+Dans `Serveurs virtuels`{.action} cliquez sur `+ Ajouter`{.action}.     
+
+![Virtual](images/en11virtual.png){.thumbnail}
+
+Remplissez les champs avec les objets précédemment crées ou déjà existants.
+
+Entrez l'adresse IP à rediriger manuellement ou cliquez sur `Sélectionner une addresse IP`{.action}.
+
+![Virtual](images/en12serv.png){.thumbnail}
+
+Choisissez la vNIC etl'IP.
+
+Cliquez sur `OK`{.action} puis sur `Ajouter`{.action}.
+
+![Virtual](images/en13IP.png){.thumbnail}
+
+Votre serveur virtuel est désormais actif.
+
+#### Règles d'application
+
+Une règle d'application est un script appliqué au serveur utilisant la syntaxe HAProxy pour manipuler le trafic.
+
+Dans `Règles d'application`{.action}, cliquez sur `+ Ajouter`{.action}.     
+
+![Rules](images/en14app.png){.thumbnail}
+
+Nommez la règle et copiez votre script.   
+
+Cliquez sur `Ajouter`{.action}.
+
+![Rules](images/en15rule.png){.thumbnail}
+
+Vous pouvez appliquer la règle dans l'onglet `Mise en réseau` de votre serveur virtuel.
+
+L'équilibrage de charge est désormais paramètré.
+
+![Done](images/en05enabled.png){.thumbnail}
 
 ## Aller plus loin
 

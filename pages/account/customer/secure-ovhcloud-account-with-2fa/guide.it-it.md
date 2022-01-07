@@ -5,7 +5,11 @@ excerpt: 'Come rendere più sicuro il tuo account OVHcloud attivando la doppia a
 section: Sicurezza
 ---
 
-**Ultimo aggiornamento: 16/04/2020**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 30/12/2021**
 
 ## Obiettivo
 
@@ -29,7 +33,6 @@ Ti proponiamo tre diversi metodi:
 
 - **tramite applicazione mobile OTP**. Installa un’applicazione mobile OTP sul tuo smartphone o tablet Android o iOS e poi associala al tuo account OVHcloud. Ad ogni tentativo di connessione, verrà generato un codice monouso che rimarrà valido per un breve lasso di tempo.
 Dopo aver associato per la prima volta l’applicazione al tuo account, non sarà più necessario essere connessi a Internet sul tuo dispositivo perché i codici siano generati.
-
 
 - **tramite chiave di sicurezza U2F**. Questo metodo richiede il collegamento di una chiave USB di sicurezza U2F al tuo computer ogni volta che accedi al tuo account OVHcloud. L’autenticazione avviene quindi automaticamente. Questo metodo offre un livello di sicurezza più elevato, poiché si basa su uno strumento di sicurezza indipendente, completamente separato dal tuo computer, smartphone o tablet e meno esposto al rischio di pirateria.
 
@@ -56,7 +59,6 @@ Puoi eliminarli o rigenerarli dal tuo Spazio Cliente:
 > Ti ricordiamo che è fondamentale salvare i codici di riserva e assicurarsi che siano validi. Se uno o più metodi di sicurezza da te selezionati non sono disponibili (per furto o perdita del telefono o della chiave di sicurezza), l’accesso al tuo Spazio Cliente potrebbe essere bloccato.
 > 
 
-
 ### Step 3: accedere allo Spazio Cliente con la doppia autenticazione
 
 Una volta attivata la doppia autenticazione, nella schermata di login appare il metodo di sicurezza selezionato. Se vuoi utilizzarne un altro, clicca su `Prova un altro metodo`{.action}.
@@ -73,8 +75,7 @@ Se il tuo dispositivo (telefono cellulare/smartphone/chiave di sicurezza) è sta
 
 È inoltre possibile utilizzare uno dei codici di sicurezza a tua disposizione. 
 
-
-### Rimuovere un dispositivo collegato alla doppia autenticazione
+### Rimuovere un dispositivo collegato alla doppia autenticazione <a name="delete-device"></a>
 
 > [!warning]
 >
@@ -97,6 +98,35 @@ Clicca su `Sicurezza`{.action}(primo step nell’immagine qui di seguito) e poi 
 
 ![2FA](images/hub2FAc.png){.thumbnail}
 
+### Disattiva completamente la doppia autenticazione <a name="disable-2fa"></a>
+
+#### Se hai accesso allo Spazio Cliente OVHcloud
+
+Per disattivare completamente la doppia autenticazione sul tuo account OVHcloud, è necessario eliminare **tutte** le periferiche **e disattivare anche i codici di backup**.
+
+Per eliminare ogni periferica, consulta la [sezione dedicata di questa guida](#delete-device).
+
+Una volta eliminati tutti i dispositivi, disattiva i codici di sicurezza cliccando sul pulsante `Disattiva i codici 2FA`{.action}.
+
+![2FA codes](images/disabling-codes.png){.thumbnail}
+
+#### Se non hai più accesso allo Spazio Cliente OVHcloud
+
+Se non disponi più di periferiche valide e non disponi più di codici di sicurezza validi, puoi richiedere la disattivazione della doppia autenticazione contattando il nostro supporto.
+
+Prima di contattarci, dovete raccogliere i seguenti elementi giustificativi:
+
+|Tipo di account OVHcloud|Giustificativi da fornire|
+|---|---|
+|Privato|- Documento d'identità (carta d'identità, patente di guida, passaporto) con indicazione del nome completo, della data di nascita e di scadenza, a nome del titolare dell'account OVH Cloud|
+|Società|- Documenti d'identità di una persona autorizzata a rappresentare l'impresa (carta d'identità, patente di guida, passaporto) con indicazione del nome completo, della data di nascita e di scadenza.<br><br>- Documenti comprovanti le coordinate della società e la persona che rappresenta la società.|
+
+Una volta raccolti i giustificativi, contatta il supporto OVHcloud al +39 02 5560 0423. 
+
+> [!warning]
+> I giustificativi da inviare devono provenire da un indirizzo email registrato sul tuo account OVHcloud.
+
+Dopo aver verificato i documenti, un consulente può disattivare manualmente la doppia autenticazione sul tuo account OVHcloud.
 
 ## Per saperne di più
 

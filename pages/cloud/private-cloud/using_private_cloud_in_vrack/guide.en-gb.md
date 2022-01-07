@@ -7,13 +7,18 @@ section: OVHcloud Features
 order: 2
 ---
 
-**Last updated 13th July 2020**
+**Last updated 31st December 2021**
 
 ## Objective
 
 The OVHcloud vRack feature makes it possible to connect different cloud services with each other, within one or more secure private networks (VLANs).
 
-**This guide explains how to set this up with a Hosted Private Cloud infrastructure.**
+**This guide explains how to set the solution up with a Hosted Private Cloud infrastructure.**
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 

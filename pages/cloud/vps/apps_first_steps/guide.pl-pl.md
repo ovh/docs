@@ -53,7 +53,7 @@ Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigu
 > [!faq]
 >
 > Czy mogę korzystać z własnych serwerów DNS?
->> Tak, możesz. Upewnij się, że tworzysz rekordy GLUE z Twoim operatorem domeny. Na przykład, jeśli chcesz "ns1.mydomain.com" i "ns2.mydomain.com", musisz skonfigurować rekordy "GLUE", aby oba wskazywały na adres IP Twojego serwera. Jeśli Twoja domena jest zarejestrowana w OVHcloud, zapoznaj się [z tym przewodnikiem.](../../domains/glue_registry/#etap-1-dodanie-rekordow-glue) Tworzenie może trwać 24 godziny.
+>> Tak, możesz. Upewnij się, że tworzysz rekordy GLUE z Twoim operatorem domeny. Na przykład, jeśli chcesz "ns1.mydomain.com" i "ns2.mydomain.com", musisz skonfigurować rekordy "GLUE", aby oba wskazywały na adres IP Twojego serwera. Jeśli Twoja domena jest zarejestrowana w OVHcloud, zapoznaj się [z tym przewodnikiem](../../domains/glue_registry/#etap-1-dodanie-rekordow-glue). Tworzenie może trwać 24 godziny.
 > Dlaczego warto zdefiniować hasło root?
 >> WHM używa domyślnie użytkownika root do uwierzytelniania. Unikalny adres URL umożliwia dostęp do pierwszej konfiguracji i zmianę hasła root. Następnym razem, gdy zalogujesz się do WHM, będziesz musiał użyć użytkownika root i hasła, które ustaliłeś.
 > Gdzie moja licencja na cPanel?
@@ -71,8 +71,6 @@ Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalo
     b) Nowe hasło dla użytkownika "admin", którego będziesz używał do logowania się do interfejsu Plesk.  
     c) Informacje o licencji.*  
     d) Czytanie i akceptowanie umów licencyjnych użytkownika.  
-
-No further steps are necessary to complete the first configuration of this application.
 
 Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
 

@@ -68,8 +68,6 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
     c) Des informations sur la licence.*  
     d) De lire et accepter les contrats de licence utilisateur.  
 
-No further steps are necessary to complete the first configuration of this application.
-
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
 > [!faq]

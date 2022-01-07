@@ -16,9 +16,9 @@ With OVHcloud Virtual Private Servers you have the possibility to add a secure s
 
 ## Requirements
 
-- a [VPS](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- administrative access via SSH or RDP to your VPS
+- A [VPS](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Administrative access via SSH or RDP to your VPS
 
 ## Instructions
 

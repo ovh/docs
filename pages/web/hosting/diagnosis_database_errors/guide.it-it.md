@@ -37,7 +37,7 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 
 #### Verifica gli incidenti in corso
 
-Per prima cosa verifica su [http://travaux.ovh.com/](http://travaux.ovh.com/) che il tuo datacenter, il tuo cluster di hosting, il tuo server SQL privato o Cloud Database non sia interessato da un incidente sull'infrastruttura OVHcloud.
+Per prima cosa verifica su [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) che il tuo datacenter, il tuo cluster di hosting, il tuo server SQL privato o Cloud Database non sia interessato da un incidente sull'infrastruttura OVHcloud.
 
 
 > [!primary]
@@ -65,7 +65,7 @@ Modifica, se necessario, la [password del tuo database](https://docs.ovh.com/it/
 
 ##### Esempio per Wordpress
 
-Se il tuo sito visualizza un messaggio **"Errore durante la connessione al database"** e non è interessato da un [incidente](http://travaux.ovh.com/), accedi al tuo hosting e apri la directory contenente il tuo sito (di default la cartella `wwww`) ...
+Se il tuo sito visualizza un messaggio **"Errore durante la connessione al database"** e non è interessato da un [incidente](https://web-cloud.status-ovhcloud.com/), accedi al tuo hosting e apri la directory contenente il tuo sito (di default la cartella `wwww`) ...
 
 Se il tuo sito è Wordpress, apri il file `wp-config.php`.
 

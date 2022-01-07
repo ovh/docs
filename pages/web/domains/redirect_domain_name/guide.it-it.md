@@ -169,4 +169,4 @@ Redirect temp / http://altro_sito_web.tld/sito/
 
 [Come modificare la mia zona DNS?](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>

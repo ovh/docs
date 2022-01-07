@@ -10,7 +10,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 22.04.2021**
+**Letzte Aktualisierung am 23.12.2021**
 
 ## Ziel
 
@@ -29,7 +29,7 @@ Jeder Server speichert einen Teil Ihrer Webseite im Cache, um die Funktion zu ge
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
 
 ## In der praktischen Anwendung
 
@@ -51,7 +51,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Sie werden zum Bestellformular weitergeleitet. Sobald die Bestellung bezahlt wurde, ist Ihre Dienstleistung innerhalb weniger Minuten verfügbar.
 
-#### Wenn die CDN-Option bereits für Ihr Webhosting aktiviert ist
+#### Wenn die CDN Option bereits für Ihr Webhosting aktiviert ist
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web`{.action} links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. Klicken Sie auf dem Tab `Multisite`{.action} auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `Domain bearbeiten`{.action}.
 
@@ -64,17 +64,18 @@ Haken Sie "CDN aktivieren" an, klicken Sie auf `Weiter`{.action} und dann auf `B
 > Wenn dem Webhosting unter `Multisite`{.action} eine externe Domain hinzugefügt wurde, müssen Sie die IP-Adresse des CDN Ihres Hostings in der DNS-Zone des Domainnamens angeben.
 >
 > Im [Verzeichnis von IP-Adressen für die Webhosting Cluster](../verzeichnis-der-ip-adressen-web-hosting-cluster) finden Sie die spezifische IP-Adresse des CDN Ihres Clusters.
+
  
 **Warum kann ich mit der CDN-Option nicht von geolokalisierten IPs profitieren?**    
 
 Das CDN basiert auf dem Prinzip der Anycast-IP. Statische Dateien werden effizienter bereitgestellt, indem nicht derselbe Server je nach Standort angefragt wird. Eine IP-Geolokalisierung ist daher nicht erforderlich.  
-Bezüglich SEO (Suchmaschinenoptimierung) ist die Geschwindigkeit der Anzeige Ihrer Webseite wichtiger als die Geolokalisierung der IP-Adressen Ihres Hostings.
+Bezüglich SEO (Suchmaschinenoptimierung) ist die Ladegeschwindigkeit Ihrer Webseite wichtiger als die Geolokalisierung der IP-Adressen Ihres Hostings.
 
 ### Shared CDN verwalten 
 
 > [!primary]
 > 
-> Die Shared CDN-Option ist bereits in den Webhosting-Angeboten der Reihe "Performance" enthalten und seit dem 19.11.20 zur Bestellung verfügbar. Für ältere Versionen lesen Sie den Abschnitt "[CDN verwalten (Legacy)](./#cdn-verwalten-legacy_2)".
+> Die Shared CDN-Option ist bereits in den Webhosting-Angeboten der Reihe "Performance" enthalten und seit dem 19.11.20 zur Bestellung verfügbar. Für ältere Versionen lesen Sie den Abschnitt "[CDN Business verwalten](#cdnbusiness)".
 
 #### Den Shared CDN-Cache leeren
 
@@ -86,11 +87,11 @@ Gehen Sie zum Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.ac
 
 #### Shared CDN-Optionen konfigurieren
 
-Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `CDN bearbeiten`{.action}. 
+Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `CDN bearbeiten`{.action}.
 
 > [!warning]
 > 
-> Einige Optionen sind für das Hosting-Angebot "Basic" nicht verfügbar.
+> Einige Optionen sind für das Hosting-Angebot "Basic" nicht verfügbar und erfordern die Aktivierung von [CDN Security](https://www.ovhcloud.com/de/web-hosting/options/cdn/)  oder [CDN Advanced](https://www.ovhcloud.com/de/web-hosting/options/cdn/).
 
 ![CDN](images/manage_sharedCDN_02.png){.thumbnail}
 
@@ -108,7 +109,7 @@ Wenn Sie Ihre Optionen ausgewählt haben, klicken Sie auf `Konfiguration anwende
 
 ![CDN](images/manage_sharedCDN_03.png){.thumbnail}
 
-##### **Eine Cache-Regel erstellen**
+##### **Eine Cache-Regel erstellen** <a name="cacherules"></a>
 
 Um eine Cache-Regel zu einem der Elemente Ihrer Seite hinzuzufügen, gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und anschließend auf `CDN konfigurieren`{.action}.
 
@@ -132,35 +133,41 @@ Die Regeln erscheinen in der Liste. Sie können sie ändern, indem Sie auf `...`
 
 Klicken Sie nach der Konfiguration Ihrer Regeln und Optionen auf `Konfiguration anwenden`{.action} und dann auf `Bestätigen`{.action}.
 
+> [!warning]
+>
+> Um eine höhere Quota an Regeln und zusätzliche Einstellungen für die Erstellung von Cache-Regeln zu erhalten, können Sie sich für die [CDN Advanced Option](https://www.ovhcloud.com/de/web-hosting/options/cdn/) entscheiden.
+
 #### CDN Security Optionen konfigurieren
+
+Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann `CDN bearbeiten`{.action}. 
 
 > [!primary]
 >  Für die unten aufgeführten Optionen ist [CDN Security](https://www.ovhcloud.com/de/web-hosting/options/cdn/) oder [CDN Advanced](https://www.ovhcloud.com/de/web-hosting/options/cdn/) erforderlich.
 
-Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann `CDN bearbeiten`{.action}. 
 
 - **Cross-Origin Resource Sharing (CORS)**: Geben Sie in der Liste die externen Domainnamen an, die auf die Ressourcen Ihrer Website zugreifen dürfen.
 
-Wenn die Funktion aktiviert ist, klicken Sie auf `Liste der externen Ressourcen bearbeiten`{.action}, um die Domainnamen hinzuzufügen, die Ihre Ressourcen teilen dürfen.
+	Wenn die Funktion aktiviert ist, klicken Sie auf `Liste der externen Ressourcen bearbeiten`{.action}, um die Domainnamen hinzuzufügen, die Ihre Ressourcen teilen dürfen.
 
-![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
+	![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
 
-Nachdem Sie Ihre Liste fertiggestellt haben, klicken Sie auf `Bestätigen`{.action}.
+	Nachdem Sie Ihre Liste fertiggestellt haben, klicken Sie auf `Bestätigen`{.action}.
 
 > [!primary]
-> Wenn Sie die CORS Option aktivieren, ohne in der Liste Domains anzugeben, bedeutet dies, dass alle Domainnamen die Ressourcen Ihrer Website verwenden dürfen.
+>
+> Wenn Sie die CORS-Option aktivieren, ohne in der Liste Domains anzugeben, bedeutet dies, dass alle Domainnamen die Ressourcen Ihrer Website verwenden dürfen.
 
 - **HTTPS-Redirect**: Schützen Sie den gesamten Traffic Ihrer Website, indem Sie ihn vorübergehend oder dauerhaft auf das HTTPS-Protokoll umleiten.
 
-Wenn die Funktion aktiviert ist, klicken Sie auf das Dropdown-Menü, um zwischen `Permanente Weiterleitung (301)` und `Temporäre Weiterleitung (302)` zu wählen.
+	Wenn die Funktion aktiviert ist, klicken Sie auf das Dropdown-Menü, um zwischen `Permanente Weiterleitung (301)` und `Temporäre Weiterleitung (302)` zu wählen.
 
-![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
+	![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
 
 - **HTTP Strict Transport Security (HSTS)**: Machen Sie Ihre Website nur über HTTPS zugänglich. Auf diese Weise ist Ihr Hosting sicher vor Downgrade- (oder Rollback-) Angriffen.
 
-Wenn die Funktion aktiviert ist, legen Sie den Zeitraum fest, in dem der Browser die HSTS-Funktion auf Ihrer Website anwenden wird. 
+	Wenn die Funktion aktiviert ist, legen Sie den Zeitraum fest, in dem der Browser die HSTS-Funktion auf Ihrer Website anwenden wird.
 
-![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
+	![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
 
 > [!primary]
 > 
@@ -171,25 +178,99 @@ Wenn die Funktion aktiviert ist, legen Sie den Zeitraum fest, in dem der Browser
 - **Application Firewall**: Die **W**eb **A**pplication **F**irewall (WAF) schützt Ihre Seite vor betrügerischen Angriffen wie Code-Injection, unzulässige Anfragen oder Datendiebstahl. Es deckt die wichtigsten bekannten Sicherheitsgefahren im Web ab, indem die übertragenen Anfragen und Pakete gefiltert werden (die Liste der Schwachstellen wird von OVHcloud verwaltet und regelmäßig aktualisiert).  
 
 > [!warning]
-> 
-> Für die Installation eines [1-Klick-Moduls von OVHcloud](../webhosting_installation_von_webhosting-modulen/) muss das WAF deaktiviert werden, um eine Blockierung der Installation des Moduls zu vermeiden.
+>
+> Vor der Installation eines OVHcloud [1-Klick-Moduls](../webhosting_installation_von_webhosting-modulen/) muss WAF deaktiviert werden, um eine Blockierung der Installation des Moduls zu vermeiden.
 
 > [!primary]
 >  
-> Das WAF wird vollständig von OVHcloud verwaltet, die Liste der Schwachstellen wird regelmäßig aktualisiert.
+> Die WAF wird vollständig von OVHcloud verwaltet. Die Liste der Schwachstellen wird regelmäßig aktualisiert.
 
-### Die CDN Statistiken anzeigen
+#### Konfiguration der CDN Advanced-Optionen
+
+Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann `CDN bearbeiten`{.action}.  
+
+> [!primary]
+>
+>  Die unten aufgeführten Optionen erfordern das Abo eines [CDN Advanced](https://www.ovhcloud.com/de/web-hosting/options/cdn/).
+
+- **Geolocation HTTP Header**: Bestimmen Sie das Land des Besuchers, um die Ausgabe entsprechend anzupassen. Der Ländercode wird automatisch im Header jeder Anfrage hinzugefügt, um von Ihrem Original-Server bearbeitet zu werden. Die Identifikationselemente im Header werden unter den Bezeichnungen `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City` angegeben.
+
+- **Prefetch**: Planen Sie das Laden der nächsten Ressource. Laden Sie sie automatisch im CDN Cache mithilfe des *header link* Ihrer Website. Dieser Mechanismus wird hauptsächlich verwendet, um CSS, JavaScript, Bilder, Favicons oder Schriftarten zu laden, die von der Website angefordert werden. 
+
+	Im folgenden Beispiel wird, wenn die aktuelle Seite "Hello" anzeigt, eine Subanfrage das Vorladen der Ressource`/cache/style.css` auslösen.  
+
+	```	
+	<?php
+	header("Link: </cache/style.css>; rel=prefetch");
+	print 'Hello'
+	?> 
+	```
+
+- **Mobile redirect**: Leiten Sie die Benutzer von Mobilgerät-Browsern automatisch auf eine optimierte Website um. Wahlweise systematisch umgeleitet auf den Root einer anderen Website oder die URL wird beibehalten, indem nur die Domain (oder die Subdomain) ersetzt wird.
+
+- **Advanced Purge**: Individualiseren Sie die Leerung, indem Sie die zu löschenden Elemente des Caches auswählen: die gesamte Webseite, ein Ordner, eine URI, eine Dateierweiterung oder einen regulären Ausdruck. 
+
+	Klicken Sie im Tab Multisite auf den Button `...`{.action}. rechts neben dem Multisite-Eintrag und dann auf `Cache leeren`{.action}. 
+
+	![CDN](images/manage_CDNadvanced_01.png){.thumbnail}
+
+- **Query String**: Verwaltung des Inhalte-Caching basierend auf den Parametern (auch *Query String* genannt) der Anfrage-URL. Wählen Sie abhängig von Ihrer Konfiguration das Verhalten des CDN Caches aus:
+	- *Deaktiviert*: Die Ressource wird mit unsortierten Parametern in den Cache gelegt. Dies führt zum Beispiel zu 2 Iterationen im CDN Cache für 2 URLs mit den gleichen Einstellungen in einer anderen Reihenfolge.
+	- *Aktiviert - Einstellungen sortieren*: Die Ressource wird durch Sortieren ihrer Parameter in den Cache gelegt. Es wird sortiert, bevor die URL im CDN Cache gespeichert wird. So wird zum Beispiel nur eine Iteration für 2 URL mit den gleichen Parametern in einer anderen Reihenfolge gespeichert.
+	- *Aktiviert - Einstellungen ignorieren*: Die Ressource wird ohne Parameter gecached. Der CDN Cache berücksichtigt die in der URL eingegebenen Parameter nicht, er speichert die URL also ohne die Parameter im Cache.
+
+- **Prewarm**: Erzwingt das permanente Caching Ihrer wichtigsten Ressourcen. Das CDN antizipiert und aktualisiert den Cache automatisch, ohne auf eine benutzerseitige Anfrage zu warten. Diese Funktion gilt nur für statischen Inhalt mit einer TTL über 0 und einer Ressource von höchstens 1 GB. Ein Messindikator gibt den Ressourcenverbrauch in *Prewarm* an, abhängig von der Liste Ihrer URLs. Der Gesamtumfang der von diesen URLs aufgerufenen Ressourcen darf 1 GB nicht überschreiten.
+
+	Um die URL-Liste zu definieren, die in *Prewarm* enthalten sein sollen, klicken Sie auf `Die Liste der URLs bearbeiten`{.action}.
+
+	Geben Sie mithilfe der Felder `Protokoll`, `Domainname` und `Pfad der Ressource` einen Link zu einer Ressource ein, die Sie zur **Prewarm**-Funktion hinzufügen möchten, und klicken Sie dann auf `Hinzufügen`{.action}.
+
+	Im unteren wird eine Liste mit allen Links, die Sie erzeugt haben, aufgebaut. Sie können die Links Ihrer Wahl löschen, indem Sie diese auswählen, und dann auf `Entfernen `{.action} klicken.
+
+	![CDN](images/manage_CDNadvanced_02.png){.thumbnail}
+
+- **Cache rule**: Erstellen Sie bis zu 100 Regeln. Mit ihnen wird die Häufigkeit der Cache-Aktualisierungen für bestimmte Ressourcen Ihrer Website definiert. Weitere Informationen finden Sie im [nächsten Schritt](#cacherulesadv).
+
+Klicken Sie nach der Konfiguration Ihrer Optionen auf `Konfiguration anwenden`{.action} und dann auf `Bestätigen`{.action}.
+
+##### **Eine erweiterte Cache-Regel erstellen** <a name="cacherulesadv"></a>
+
+Um eine Cache-Regel zu einem der Elemente Ihrer Website hinzuzufügen, gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und anschließend auf `CDN bearbeiten`{.action}.
+
+Klicken Sie unter **Cache-Regeln** auf den Button `Regel hinzufügen`{.action}.
+
+![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
+
+
+* **Regelname**: Weisen Sie Ihrer Regel einen Namen zu.
+* **Ressourcenart**: Wählen Sie aus den folgenden Optionen:
+    * **Endung**: Geben Sie eine gültige Dateiendung ohne Punkt ein, zum Beispiel: css
+    * **Ordner**:  Geben Sie einen gültigen Pfad zu einem Ordner im Wurzelverzeichnis Ihrer Website an.
+    * **Eigener regulärer Ausdruck**: Gilt für alle URIs Ihrer Website.
+    * **URI**: Geben Sie die Teilmenge der Ressourcen Ihrer Website über den URL-Pfad ein.
+* **Ressource**: Definieren Sie die Attribute abhängig vom gewählten Ressourcentyp.
+* **Laufzeit**: Geben Sie die Cache-Dauer der ausgewählten Ressource an.
+* **Reihenfolge**: Sortieren Sie Ihre Regeln (von der niedrigsten zur höchsten) nach Ausführungsreihenfolge.
+
+Wenn Sie Ihre Auswahl vorgenommen haben, klicken Sie auf den Button `Regel erstellen`{.action}.
+
+Die Regeln erscheinen in einer Liste. Sie können eine Regel ändern, indem Sie auf `...`{.action} rechts von dieser und dann auf `Die Regel ändern`{.action} klicken. Sie können die Regel löschen, indem Sie auf `Die Regel löschen`{.action} klicken.
+
+![CDN](images/manage_CDNadvanced_04.png){.thumbnail}
+
+Klicken Sie nach der Konfiguration Ihrer Regeln und Optionen auf `Konfiguration anwenden`{.action} und dann auf `Bestätigen`{.action}.
+
+### Die CDN-Statistiken anzeigen
 
 Im Tab `Multisite`{.action} Ihres Webhostings können Sie unter der Tabelle die Statistiken Ihres CDN einsehen, die die Anzahl der registrierten Anfragen pro Minute anzeigen.
 
 ![CDN](images/manage_CDNstat_01.png){.thumbnail}
 
-
-### CDN verwalten (Legacy)
+### Ihr CDN Business verwalten <a name="cdnbusiness"></a>
 
 > [!primary]
 > 
-> Die CDN-Option ist bereits in den Webhosting-Angeboten der Reihe „Performance“ oder in vor dem 19.11.20 bestellten Angeboten enthalten.
+> Die CDN-Option ist bereits in den Webhosting-Angeboten der Reihe „Performance“ oder in vor dem 19.11.20 bestellten Angeboten enthalten..
 
 #### Den CDN-Cache leeren
 
@@ -209,7 +290,7 @@ Die wichtigsten CMS erlauben die Installation zahlreicher Plugins, mit denen das
 
 Sie können auch dann vom CDN-Cache profitieren, wenn Sie kein CMS verwenden. Hierzu müssen Sie bei HTTP-Anfragen Header hinzufügen. Es gibt verschiedene Methoden zum Hinzufügen dieser Header. Am einfachsten definieren Sie Regeln in einer *.htaccess* Datei basierend auf Dateierweiterungen.
 
-```
+```htaccess
 # Bilder eine Woche lang zwischenspeichern
     <FilesMatch "\.(jpg|jpeg|png|gif)$">
     Header-Set Cache-Control "max-age=604800, public"
@@ -226,7 +307,7 @@ Sie können auch dann vom CDN-Cache profitieren, wenn Sie kein CMS verwenden. Hi
 > Das Caching über HTTP-Header ermöglicht das Zwischenspeichern innerhalb des CDN, aber auch innerhalb des Browsers Ihrer Benutzer. Um zu verhindern, dass Ihre Besucher eine zu alte zwischengespeicherte Version verwenden, wird empfohlen, die Namen der Dateien bei jeder neuen Version zu ändern.
 > 
 
-### Die CDN-Option deaktivieren
+### Die CDN-Option für eine Website deaktivieren
 
 Diese Aktion ermöglicht die Deaktivierung des CDN für einen oder mehrere Ihrer Multisite-Einträge, ohne die CDN-Option von Ihrem Webhosting zu entfernen.
 
@@ -251,18 +332,17 @@ Bestätigen Sie die Kündigung, indem Sie auf `Bestätigen`{.action} klicken.
 > Sie erhalten eine E-Mail mit dem Verfahren zum Schließen Ihres CDN. Befolgen Sie die Anweisungen, um die Aktion zu bestätigen oder abzubrechen. 
 > 
 
-
 ### Überprüfen, ob Ihr CDN in Betrieb ist
 
 Um sicherzustellen, dass das CDN für Ihren Domainnamen aktiv ist, können Sie eine Überprüfung über ein Terminal mit dem folgenden Befehl durchführen:
 
-```
+```bash
 curl -i http://yourpersonaldomain.ovh/
 ```
 
 Wenn Ihr Domain-Name vom CDN unterstützt wird, erhalten Sie das folgende Ergebnis:
 
-```sh
+```console
 HTTP/1.1 200 OK
 Date: Mon, 01 Jan 2020 00:00:00 GMT
 Content-Type: text/html; charset=UTF-8
@@ -275,12 +355,14 @@ X-Cacheable: Cacheable
 Accept-Ranges: bytes
 Transfer-Encoding: chunked
 X-IPLB-Instance: 12345
+
 ```
+
 Die Ausgaben vom Typ "X-CDN" bestätigen, dass Ihr CDN funktioniert.
 
 Falls der Domainname das CDN nicht verwendet, erhalten Sie das folgende Ergebnis:
 
-```sh
+```console
 HTTP/1.1 200 OK
 Date: Mon, 01 Jan 2020 00:00:00 GMT
 Content-Type: text/html; charset=UTF-8
@@ -294,5 +376,5 @@ X-IPLB-Instance: 12345
 Das Fehlen von "X-CDN" zeigt an, dass der Aufruf der Domain das CDN nicht durchlaufen hat.
 
 ## Weiterführende Informationen
-
+ 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -5,6 +5,12 @@ slug: mettre-a-jour-firewall-cisco-asa
 section: Utilisation avancée
 ---
 
+> [!primary]
+> **Fin de support de l'option Cisco Firewall ASA associée aux serveurs dédiés**
+>
+> OVHcloud annonce la fin de support de l'option Cisco Firewall ASA associée aux serveurs dédiés. Retrouvez plus d'informations sur [cette page](https://docs.ovh.com/fr/dedicated/cisco-asa-eol/).
+>
+
 **Dernière mise à jour le 2018/03/01**
 
 ## Objectif

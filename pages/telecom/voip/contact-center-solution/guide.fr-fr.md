@@ -6,7 +6,7 @@ section: 'Numéros ou alias'
 order: 7
 ---
 
-**Dernière mise à jour le 25/08/2021**
+**Dernière mise à jour le 16/11/2021**
 
 ## Objectif
 
@@ -338,7 +338,7 @@ Trois options de présentation du numéro, sur le téléphone qui reçoit l'appe
 
 ![Optionsccs](images/numeropres2.png){.thumbnail}
 
-### Consulter le tableau de bord <a name="tableau-de-bord"></a>
+### Tableau de bord <a name="tableau-de-bord"></a>
 
 Le tableau de bord vous permet d'obtenir des statistiques détaillées sur les appels reçus par votre numéro configuré en CCS et par les différentes files le composant.
 Vous pourrez également obtenir des informations en temps réel sur les appels en cours sur votre numéro ainsi que sur la disponibilité de chaque ligne.
@@ -346,6 +346,42 @@ Vous pourrez également obtenir des informations en temps réel sur les appels e
 Pour consulter le tableau de bord, cliquez sur l'onglet `Consultation`{.action} puis sur `Tableau de bord`{.action}.
 
 ![Tableau de bord](images/tableau2021.png){.thumbnail}
+
+Le tableau de bord vous permet également d'interagir sur les appels en cours reçus par les membres de vos files d'appels.
+
+#### Écouter ou chuchoter <a name="ecouter-chuchoter"></a>
+
+Cette fonction vous permet d'écouter une communication en cours ou de chuchoter à l'un et/ou l'autre des interlocuteurs.
+
+Cliquez sur le bouton `...`{.action} à droite d'un appel en cours puis sur `Écouter ou chuchoter`{.action}.
+
+![écouter ou chuchoter](images/tableau01.png){.thumbnail}
+
+Choisissez alors l'option souhaitée parmi :
+
+- Écouter
+- Écouter et chuchoter à l'agent
+- Écouter et chuchoter à tous
+
+![écouter ou chuchoter](images/tableau02.png){.thumbnail}
+
+Saisissez un numéro de téléphone dans le champ prévu à cet effet et cliquez sur `Confirmer`{.action}. Ce numéro sera alors mis en relation avec la communication en cours.
+
+#### Transférer l'appel
+
+Vous pouvez transférer un appel en cours en cliquant sur le bouton `...`{.action} à droite d'un appel en cours puis sur `Transférer l'appel`{.action}.
+
+Saisissez le numéro destinataire du transfert et cliquez sur `Transférer`{.action}.
+
+![transférer l'appel](images/tableau03.png){.thumbnail}
+
+#### Mettre fin à l'appel
+
+Vous pouvez raccrocher un appel en cours en cliquant sur le bouton `...`{.action} à droite d'un appel en cours puis sur `Mettre fin à l'appel`{.action}.
+
+Cliquez alors sur `Raccrocher`{.action}.
+
+![raccrocher l'appel](images/tableau04.png){.thumbnail}
 
 ### Consulter les enregistrements <a name="enregistrements"></a>
 

@@ -37,7 +37,7 @@ A utilização das suas bases de dados pode dar origem a um certo número de ano
 
 #### Verificar os incidentes em curso
 
-Em [http://travaux.ovh.com/](http://travaux.ovh.com/), verifique primeiro se o seu datacenter, cluster de alojamento ou servidor SQL privado não está afetado por um incidente na infraestrutura OVHcloud.
+Em [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), verifique primeiro se o seu datacenter, cluster de alojamento ou servidor SQL privado não está afetado por um incidente na infraestrutura OVHcloud.
 
 > [!primary]
 >
@@ -65,7 +65,7 @@ Altere, se necessário, a [palavra-passe da sua base de dados](https://docs.ovh.
 
 #### Exemplo para Wordpress
 
-Se o seu website apresentar uma mensagem **"Erro durante a ligação à base de dados"** e que este não é afetado por [incidente](http://travaux.ovh.com/), ligue-se em [FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao seu alojamento e abra o diretório que contém o seu website (por predefinição, trata-se do dossier `www`).
+Se o seu website apresentar uma mensagem **"Erro durante a ligação à base de dados"** e que este não é afetado por [incidente](https://web-cloud.status-ovhcloud.com/), ligue-se em [FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao seu alojamento e abra o diretório que contém o seu website (por predefinição, trata-se do dossier `www`).
 
 Se se tratar de um site Wordpress, abra o ficheiro `wp-config.php`.
 

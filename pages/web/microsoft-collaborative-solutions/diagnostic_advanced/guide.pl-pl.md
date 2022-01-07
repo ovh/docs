@@ -122,7 +122,7 @@ Ten błąd wskazuje na ogólną niepowodzenie wysyłki e-maili, które może mie
 - [Twoje konto zostało zawieszone](#expired)
 - [Podane hasło jest nieprawidłowe.](#password)
 - [Twoje konto zostało zablokowane z powodu wysyłania niechcianej poczty](#blocked)
-- [Wystąpił problem z infrastrukturą](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+- [Wystąpił problem z infrastrukturą](https://web-cloud.status-ovhcloud.com/)
 
 ## Sprawdź również
 

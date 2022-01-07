@@ -5,11 +5,15 @@ slug: network-firewall
 section: 'Sieć & IP'
 ---
 
-**Ostatnia aktualizacja z dnia 08-11-2018**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 23-12-2021**
 
 ## Wprowadzenie
 
-Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVH udostępniło zaporę ogniową, z możliwością wprowadzenia własnej konfiguracji, w pełni zintegrowaną z rozwiązaniem **Anty-DDoS (VAC)**: Network Firewall . Jest to rozwiązanie filtrujące ataki z sieci publicznej na usługi naszych klientów.
+Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud udostępniło zaporę ogniową, z możliwością wprowadzenia własnej konfiguracji, w pełni zintegrowaną z rozwiązaniem **Anty-DDoS (VAC)**: Network Firewall . Jest to rozwiązanie filtrujące ataki z sieci publicznej na usługi naszych klientów.
 
 **Ten przewodnik wyjaśnia, jak skonfigurować zaporę Network Firewall w Panelu klienta.**
 
@@ -24,8 +28,8 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVH udost�
 
 ## Wymagania początkowe
 
-- Korzystanie z usługi OVH ze zintegrowaną zaporą ogniową, Network Firewall: ([serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/){.external}, [serwer VPS](https://www.ovh.pl/vps/){.external}, [instancje Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pl/private-cloud/){.external}, [IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external}, etc.)
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Korzystanie z usługi OVHcloud ze zintegrowaną zaporą ogniową, Network Firewall: ([serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/){.external}, [serwer VPS](https://www.ovh.pl/vps/){.external}, [instancje Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pl/private-cloud/){.external}, [IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external}, etc.)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 
 ## W praktyce
@@ -37,7 +41,7 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVH udost�
 > Network Firewall chroni adresy IP powiązane z serwerem.  Należy zatem skonfigurować reguły dla każdego adresu IP oddzielnie. Wprowadzenie wspólnej konfiguracji dla całego serwera nie jest możliwe.
 > 
 
-Po zalogowaniu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `IP`{.action} i kliknij `...`{.action}, aby aktywować zaporę na wybranym adresie IPv4.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action}, a następnie sekcję `IP`{.action} w dolnej części kolumny po lewej stronie. Kliknij `...`{.action}, aby aktywować zaporę na wybranym adresie IPv4.
 
 ![Aktywacja Network Firewall ](images/firewall_creation.png){.thumbnail}
 
@@ -61,7 +65,7 @@ Do dyspozycji masz **20 reguł dla każdego adresu IP**.
 > [!primary]
 >
 > - Fragmentacja UDP jest domyślnie zablokowana (DROP).  Jeśli używasz sieci VPN, to podczas aktywacji firewalla, pamiętaj, aby poprawnie skonfigurować maksymalną jednostkę transmisji (MTU). Na przykład na OpenVPN możesz zaznaczyć `MTU test`{.action}.
-> - Reguły skonfigurowane w Network Firewallu nie są brane pod uwagę wewnątrz sieci OVH.  Wprowadzone reguły nie mają wpływu na połączenia w wewnętrznej sieci OVH.
+> - Reguły skonfigurowane w Network Firewallu nie są brane pod uwagę wewnątrz sieci OVHcloud.  Wprowadzone reguły nie mają wpływu na połączenia w wewnętrznej sieci OVHcloud.
 >
 
 
@@ -99,12 +103,29 @@ Aby pozostawić otwarte tylko porty SSH (22), HTTP (80), HTTPS (443), UDP (na po
 
 Reguły są uporządkowane chronologicznie, od 0 (pierwsza odczytana reguła) do 19 (ostatnia odczytana reguła) i w tym porządku są uruchamiane dla pakietów.  Reguły przestają być sprawdzane, w chwili gdy jedna z nich dotyczy odebranego pakietu.
 
-Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez regułę 2, wtedy kolejne reguły nie są już aplikowane.  Pakiet przeznaczony dla portu 25/TCP zostanie przechwycony tylko przy ostatniej regule (19), która zablokuje go, ponieważ OVH nie zezwala na żadną komunikację na porcie 25 w poprzednich regułach.
+Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez regułę 2, wtedy kolejne reguły nie są już aplikowane.  Pakiet przeznaczony dla portu 25/TCP zostanie przechwycony tylko przy ostatniej regule (19), która zablokuje go, ponieważ OVHcloud nie zezwala na żadną komunikację na porcie 25 w poprzednich regułach.
 
 > [!warning]
 >
 > W chwili gdy włącza się ochrona Anty-DDoS, Twoje reguły zdefiniowane w usłudze Network Firewall zostaną uaktywnione, nawet jeśli je wyłączyłeś. W przypadku dezaktywacji firewalla, pamiętaj o usunięciu reguł.
 > 
+
+### Konfiguracja zapory Armor (Firewall Game)
+
+> [!primary]
+> Domyślnie firewall Armor jest wstępnie skonfigurowany z niektórymi zasadami, które OVHcloud ustalił podczas uruchamiania najpopularniejszych gier. Jednak w przypadku klientów posiadających serwer dedykowany Game możemy pójść o krok dalej i skonfigurować reguły dla portów.
+>
+
+Aby skonfigurować reguły portów w trybie Armor, należy najpierw zalogować się do Panelu klienta OVHcloud.<br>
+Następnie przejdź do menu `Bare Metal Cloud`{.action} i kliknij sekcję `IP`{.action} na pasku bocznym po lewej stronie. Kliknij `...`{.action} obok adresu IP serwera gier, a następnie `Konfiguracja firewall game`{.action}.
+
+![Game_wall](images/GAMEwall2021.png){.thumbnail}
+
+Na następnym ekranie kliknij przycisk `Dodaj regułę`{.action}, aby dodać regułę do Armor.
+
+![Konfiguruj_Armor](images/ConfigureArmor2021.png){.thumbnail}
+
+Włącz porty zgodnie z Twoimi potrzebami na kolejnym ekranie i kliknij przycisk `Zatwierdź`{.action}, gdy zakończysz dodawanie reguł. Firewall Armor został już skonfigurowany.
 
 ## Sprawdź również
 

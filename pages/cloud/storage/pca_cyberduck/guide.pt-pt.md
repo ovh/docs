@@ -1,8 +1,9 @@
 ---
-title: Gerir os seus arquivos a partir de um cliente Swift
+title: Gerir os seus arquivos a partir de um cliente Swift (Cyberduck)
 slug: pca/cyberduck
 excerpt: Saiba como configurar o Cyberduck para gerir o seu Public Cloud Archive
 section: Public Cloud Archive
+order: 080
 ---
 
 > [!primary]
@@ -20,6 +21,13 @@ Existem, portanto, soluções gráficas que utilizam de forma invisível APIs Op
 Estão também disponíveis outras interfaces, cuja configuração é semelhante à que iremos apresentar-lhe.
 
 **Saiba como configurar o Cyberduck para poder gerir o seu Public Cloud Archive com a ajuda de uma interface gráfica baseada nas API OpenStack.**
+
+> [!warning]
+>
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+>
+> Este guia explica como implementar algumas medidas para otimizar a performance e a segurança do seu sistema. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+>
 
 ## Requisitos
 

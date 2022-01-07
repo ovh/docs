@@ -3,6 +3,7 @@ title: Zarządzanie adresami IP Failover
 slug: zarzadzanie_adresami-ip-failover
 excerpt: Dowiedz się, co to są adresy IP Failover i jak je przenosić pomiędzy usługami OVH korzystając z Panelu klienta
 section: Sieć
+hiden: true
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-26**

@@ -6,13 +6,18 @@ section: OVHcloud features
 order: 01
 ---
 
-**Last updated 7th January 2021**
+**Last updated 31st December 2021**
 
 ## Objective
 
 With our [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} solution, you can connect multiple OVHcloud products to one another, and connect them via one or more VLANs. Some configurations however are not compatible with the Hosted Private Cloud solution.
 
 **This guide explains Hosted Private Cloud compatibility with the OVHcloud vRack.**
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Technical background
 

@@ -3,6 +3,7 @@ title: Verwaltung Ihrer Archive mit Rsync
 slug: pca/rsync
 excerpt: Erfahren Sie hier, wie Sie mit Rsync auf Ihre Public Cloud Archive zugreifen
 section: Public Cloud Archive
+order: 090
 ---
 
 > [!primary]
@@ -19,7 +20,7 @@ OVHcloud Public Cloud Archive ist eine Speicherlösung, die hauptsächlich über
 
 ## Voraussetzungen
 
-### Rsync 
+### Rsync
 
 [Rsync](https://rsync.samba.org/) ist ein Open Source Tool, das schnellen und inkrementellen Datentransfer ermöglicht.<br>
 Vorkompilierte Binärdateien sind für die meisten Betriebssystemdistributionen verfügbar. Überprüfen Sie deshalb zunächst, ob Sie ein Rsync-Paket mit Ihren Installationstools für Standard-Pakete auf Ihrem Betriebssystem installieren können.
@@ -73,7 +74,6 @@ Da Rsync Server gepatcht wurde, um mit der Swift-API zu funktionieren, werden di
 
 > —inplace: Anstelle der Standardmethode, eine neue Kopie der Datei zu erstellen und nach Abschluss des Vorgangs zu verschieben, schreibt Rsync die aktualisierten Daten direkt in die Zieldatei.
 >
-> -W, --whole-file: Deaktiviert den Delta-Transfer-Algorithmus von Rsync und sendet die gesamte Datei in unverändertem Zustand.
 
 Darüber hinaus ist auf Clientseite nur ein Teil der Optionen erlaubt:
 

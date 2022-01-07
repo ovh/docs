@@ -16,7 +16,7 @@ OVHcloud offers VPS customers pre-installed application images for quick and eas
 
 ## Requirements
 
-- a [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account.
+- A [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
 
 ## Instructions
 
@@ -26,7 +26,7 @@ Using the [OVHcloud Control Panel](../getting-started-vps/) / API, install your 
 
 #### cPanel
 
-This section will explain the first steps specifically for the cPanel pre-installed image. Steps marked with * will have FAQ at the end of the steps.
+This section will explain the first steps specifically for the cPanel pre-installed image. Steps marked with \* will have FAQ at the end of the steps.
 
 1. Open the email from us which contains your application login details.
 2. Click on the URL for cPanel in the email.
@@ -49,7 +49,7 @@ No further steps are necessary to complete the first configuration of this appli
 > [!faq]
 >
 > Can I use my own nameservers?
->> Yes, you can. But you need to make sure you create glue records with your domain registrar. For example if you want "ns1.mydomain.com" and "ns2.mydomain.com", you must set up glue records for both which must point to the IP of your server. If your domain is registered with OVHcloud, you can follow [this guide.](../../domains/glue_registry/#step-1-add-the-glue-records). Please note that this can take 24 hours to create.
+>> Yes, you can. But you need to make sure you create glue records with your domain registrar. For example if you want "ns1.mydomain.com" and "ns2.mydomain.com", you must set up glue records for both which must point to the IP of your server. If your domain is registered with OVHcloud, you can follow [this guide](../../domains/glue_registry/#step-1-add-the-glue-records). Please note that this can take 24 hours to create.
 > Why set root password?
 >> WHM by default uses the root user for authentication and the one time link allows access to complete first setup and change root password. Next time you log in to WHM you must use the root user and the password you have set.
 > Where is my licence for cPanel?
@@ -57,7 +57,7 @@ No further steps are necessary to complete the first configuration of this appli
 
 #### Plesk
 
-This section will explain the first steps specifically for the Plesk pre-installed image. Steps marked with * will have FAQ at the end of the steps.
+This section will explain the first steps specifically for the Plesk pre-installed image. Steps marked with \* will have FAQ at the end of the steps.
 
 1. Open the email from OVHcloud which contains your application login details.
 2. Click on the URL for Plesk in the email.
@@ -123,7 +123,7 @@ If your domain is registered with OVHcloud you can follow [this guide](../../dom
 
 > [!warning]
 >
-> Replace personaldomain.ovh in the commands to your own domain name.
+> Replace personaldomain.ovh in the commands with your own domain name.
 >
 
 ```sh

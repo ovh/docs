@@ -240,7 +240,7 @@ So far we do not provide Multi-AZ deployments. We included this option in our ba
 
 ### How is high-availability performed ?
 
-To provide High-Availability, we use the clustering principles. Your service and your data are replicated accross mulitple nodes, preventing the overall system from a node failure. Your service is resilient mainly because we duplicated the data and configuration in multiple nodes.
+To provide High-Availability, we use the clustering principles. Your service and your data are replicated across multiple nodes, preventing the overall system from a node failure. Your service is resilient mainly because we duplicated the data and configuration in multiple nodes.
 
 The exact implementation may differ for each DBMS. Indeed, each DBMS has its own mechanisms and best practices.
 
@@ -332,7 +332,7 @@ Each database instance is strongly secured through multiple actions:
 
 Once you start a new database instance, the default values are:
 
-- Zero access to IPs or IPs ranges. Nothing is whitelisted (ACL).
+- Zero access to IPs or IPs ranges. Nothing is authorized (ACL).
 - 1 user created (admin) but not configured. You have to reset the password.
 
 To sum-up, initially your database cannot be accessed. It's made on purpose to protect your data from unsolicited connections.
@@ -402,7 +402,7 @@ To connect to a database instance, please make sure to:
 
 - have a database instance up and running. Be sure it's not in "maintenance" or "setting up" mode.
 - have at least 1 user configured (user login and password).
-- have a least 1 whitelisted IP. It has to be the IP which will access your database (your computer, your dedicated server, ...). For troubleshooting purposes only, you can also add the "0.0.0.0" IP so that it will allow "any" connection. Remove it after your tests are done.
+- have a least 1 authorized IP. It has to be the IP which will access your database (your computer, your dedicated server, ...). For troubleshooting purposes only, you can also add the "0.0.0.0" IP so that it will allow "any" connection. Remove it after your tests are done.
 - know your database instance connection parameters: host address, port, security mode.
 
 Once you are ready, you can test the connection via the DBMS official command line interface OR with classic application code such as Python, PHP, java...

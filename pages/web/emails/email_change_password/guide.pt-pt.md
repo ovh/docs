@@ -33,9 +33,9 @@ Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&fro
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
 |![email](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção “Subscrição”.|![email](images/mxplan-password-new-step1.png){.thumbnail}<br>Consulte a Referência do servidor na secção “Resumo”.|
-|Continuar a ler na secção “[Versão antiga da oferta MX Plan](./#versao-antiga-da-oferta-mx-plan)”.|Continuar a ler na secção “[Nova versão da oferta MX Plan](./#nova-versao-da-oferta-mx-plan)”.|
+|Continuar a ler na secção “[Versão antiga da oferta MX Plan](#mx-legacy)”.|Continuar a ler na secção “[Nova versão da oferta MX Plan](#mx-new)”.|
 
-### Nova versão da oferta MX Plan
+### Nova versão da oferta MX Plan <a name="mx-new"></a>
 
 Se possuir a nova versão da oferta MX Plan, a secção “Informações gerais” deverá apresentar as mesmas informações que a imagem abaixo. Caso contrário, [volte para a secção anterior](./#instrucoes) e certifique-se de que está a consultar a versão correta.  
 
@@ -87,7 +87,7 @@ Depois de alterar a palavra-passe, poderá aceder ao endereço de e-mail. Para i
 
 - **Utilizar um software de mensagens compatível**: deverá introduzir a nova palavra-passe em todos os dispositivos onde estiver configurado o endereço de e-mail. Para isso, é possível que apareça uma nova janela automática, solicitando-lhe a nova palavra-passe. Caso contrário, [consulte os nossos manuais de configuração](https://docs.ovh.com/pt/emails/) ou entre em contacto com o editor do software ou da aplicação que utiliza, pois esta operação é inerente a este último.
 
-### Versão antiga da oferta MX Plan
+### Versão antiga da oferta MX Plan <a name="mx-legacy"></a>
 
 Se possuir a versão antiga da oferta MX Plan, a secção “Informações gerais” deverá apresentar as mesmas informações que a imagem abaixo. Caso contrário, [volte para a secção anterior](./#instrucoes) e certifique-se de que está a consultar a versão correta. 
 
