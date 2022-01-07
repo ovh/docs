@@ -341,7 +341,7 @@ Now, if you choose `Yes` when prompted to enable SSL connection, get the CA cert
 ![Download certificate](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql16.png){.thumbnail}
 
 Save the generated file into the `config` folder, just beside the `database.js` file, and rename it as `ca-certificate.crt`
-Now open the `config/database.js` file and emodify the `ssl` block as follows:
+Now open the `config/database.js` file and modify the `ssl` block as follows:
 
 <pre class="console"><code>
 module.exports = ({ env }) => ({
