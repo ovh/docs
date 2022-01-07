@@ -29,7 +29,7 @@ In such circumstances, you can use the rescue mode to reconfigure your instance 
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), switch to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Instances`{.action} in the left-hand menu.
 
-![control panel](images/rescue2022.png){.thumbnail}
+![control panel](images/compute.png){.thumbnail}
 
 Click on `...`{.action} in the row of the instance concerned and select `Reboot in rescue mode`{.action}.
 
@@ -72,7 +72,7 @@ Your data will now be accessible from the `/mnt` folder.
 
 Once you have completed your tasks, you can deactivate rescue mode by rebooting your instance from the Control Panel interface. To execute this, click on `...`{.action} and select `Exit rescue mode`{.action}.
 
-![control panel](images/rescueexit2022.png){.thumbnail}
+![control panel](images/rescueexit.png){.thumbnail}
 
 ### Activating rescue mode using the OpenStack API
 

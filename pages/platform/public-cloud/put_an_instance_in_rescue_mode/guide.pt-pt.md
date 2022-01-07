@@ -30,7 +30,7 @@ Primeiro, inicie sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?act
 
 Em seguida, selecione o seu projeto Public Cloud no menu lateral situado à esquerda do ecrã e vá até Instâncias.
 
-![área de cliente](images/rescue2022.png){.thumbnail}
+![área de cliente](images/compute.png){.thumbnail}
 
 Clique nos três pontos situados à direita da instância e selecione a opção `Reiniciar em modo rescue`{.action}.
 
@@ -73,7 +73,7 @@ A sua informação estará agora disponível a partir da pasta /mnt.
 
 Após concluir as suas tarefas, pode desativar o modo rescue reiniciando normalmente a sua instância. Para o fazer, clique na seta voltada para baixo na sua instância e selecione `Sair do modo rescue`{.action}.
 
-![área de cliente](images/rescueexit2022.png){.thumbnail}
+![área de cliente](images/rescueexit.png){.thumbnail}
 
 ### Ativar o modo rescue usando a API OpenStack
 

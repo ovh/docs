@@ -29,7 +29,7 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 
 Klicken Sie im Interface für die Instanzen auf `...`{.action} rechts neben der Instanz und wählen Sie `Neustart im Rescue-Modus`{.action}.
 
-![control panel](images/rescue2022.png){.thumbnail}
+![control panel](images/compute.png){.thumbnail}
 
 Sie sehen nun den Dialog "Neustart im Rescue-Modus". Klicken Sie auf die Dropdown-Liste, um die Distribution auszuwählen, die Sie im Rescue-Modus verwenden möchten, und klicken Sie dann auf `Neu starten`{.action}.
 
@@ -68,7 +68,7 @@ Ihre Daten sind jetzt über den Ordner /mnt abrufbar.
 
 Sobald Sie Ihre Maßnahmen beendet haben, können Sie den Rescue-Modus deaktivieren, indem Sie Ihre Instanz in der Instanzenverwaltung neu starten. Klicken Sie dazu auf `...`{.action} und wählen Sie `Rescue-Modus verlassen`{.action}.
 
-![control panel](images/rescueexit2022.png){.thumbnail}
+![control panel](images/rescueexit.png){.thumbnail}
 
 ### Den Rescue-Modus mit der OpenStack API aktivieren
 

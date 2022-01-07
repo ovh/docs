@@ -28,7 +28,7 @@ Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth
 
 Poi, seleziona il tuo progetto Public Cloud dal menu a sinistra e vai su Istanze.
 
-![Spazio Cliente](images/rescue2022.png){.thumbnail}
+![Spazio Cliente](images/compute.png){.thumbnail}
 
 Quindi, clicca sui tre puntini a destra dell’istanza e seleziona `Riavvia in modalità Rescue`{.action}
 
@@ -71,7 +71,7 @@ A questo punto i tuoi dati sono accessibili nella cartella /mnt.
 
 Una volta completate queste operazioni, è possibile disattivare la modalità Rescue riavviando normalmente la tua istanza. Per farlo, clicca sulla freccia verso il basso e seleziona `Esci dalla modalità Rescue`{.action}.
 
-![Spazio Cliente](images/rescueexit2022.png){.thumbnail}
+![Spazio Cliente](images/rescueexit.png){.thumbnail}
 
 ### Attiva la modalità Rescue con le API OpenStack
 

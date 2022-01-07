@@ -30,7 +30,7 @@ Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?act
 
 Następnie wybierz projekt Public Cloud z menu bocznego po lewej stronie ekranu i przejdź do pozycji Instancje.
 
-![control panel](images/rescue2022.png){.thumbnail}
+![control panel](images/compute.png){.thumbnail}
 
 Kliknij ikonę z trzema kropkami (po prawej stronie instancji) i wybierz `Restartuj w trybie ratunkowym`{.action}.
 
@@ -73,7 +73,7 @@ Dane będą dostępne w folderze /mnt.
 
 Po wykonaniu wszystkich zadań można zdezaktywować tryb ratunkowy przez zrestartowanie instancji w trybie normalnym. Aby to zrobić, kliknij strzałkę menu rozwijanego instancji i wybierz pozycję `Wyjdź z trybu ratunkowego`{.action}.
 
-![control panel](images/rescueexit2022.png){.thumbnail}
+![control panel](images/rescueexit.png){.thumbnail}
 
 ### Aktywacja trybu ratunkowego przy użyciu interfejsu API OpenStack
 
