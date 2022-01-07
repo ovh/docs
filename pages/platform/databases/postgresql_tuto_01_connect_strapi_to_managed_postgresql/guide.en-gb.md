@@ -108,15 +108,15 @@ Your database is ready when cluster status is "Ready", node status is green, and
 
 ![Green statuses on Database Control Panel](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql08.png){.thumbnail}
 
-### Authorise your IP address
+### Authorize your IP address
 
 > [!warning]
 > For security reasons the default network configuration doesn't allow any incoming connections. 
-> To allow access from your application or development environment to your PostgreSQL database service, you must add your IP addresses to the service authorised list.
+> To allow access from your application or development environment to your PostgreSQL database service, you must add your IP addresses to the service authorized list.
 
-#### Add your IPs to the DB authorised list
+#### Add your IPs to the DB authorized list
 
-Following the related documentation on how to [authorise the suitable IP addresses](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/managing-service/#configuring-authorised-ips), add your IPs to the authorised list.
+Following the related documentation on how to [authorize the suitable IP addresses](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/managing-service/#configuring-authorized-ips), add your IPs to the authorized list.
 
 ![Green statuses and authorized IPs setted on Database Control Panel](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql10.png){.thumbnail}
 
