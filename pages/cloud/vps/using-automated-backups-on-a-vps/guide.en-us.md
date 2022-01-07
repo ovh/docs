@@ -99,7 +99,12 @@ $ mount /dev/sdb1 /mnt/restore
 ```
 
 You can now switch to this folder and access your backup data.
+                                       
 
+> [!warning]
+> Please note that a server reboot will occur when the backup is unmounted.
+>                   
+                                                                                
 ### Best practice for using auto-backups
 
 The Automated Backup functionality is based on VPS snapshots. We recommend to follow the steps below to prevent any issues before using this option.
