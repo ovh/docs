@@ -13,7 +13,7 @@ section: 'Tutorial'
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/){.external} with Windows Server installed.
+- A [dedicated server](https://www.ovhcloud.com/en-asia/bare-metal/){.external} with Windows Server installed.
 - The Hyper-V role installed
 - A Windows License provided by OVHcloud
 
