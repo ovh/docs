@@ -1,26 +1,26 @@
 ---
-title: Utilisez High Performance avec S3cmd
+title: Utiliser High Performance avec S3cmd
 slug: s3/s3cmd
-excerpt:
+excerpt: Découvrez comment configurer S3cmd afin de gérer vos buckets et objets
 section: Object Storage S3 High Performance
 order: 130
 ---
 
-**Dernière mise à jour le 3/01/2022**
+**Dernière mise à jour le 03/01/2022**
 
 ## Objectif
 
-S3cmd est un outil de ligne de commande gratuit et un client de gestion des données dans des espaces de stockage qui utilisent le protocole S3, tels que Google Cloud Storage ou DreamHost DreamObjects, OVH Object Storage S3 High Performance.
+S3cmd est un outil de ligne de commande gratuit et un client de gestion des données dans des espaces de stockage qui utilisent le protocole S3, tels que OVHcloud Object Storage S3 High Performance, Google Cloud Storage ou DreamHost DreamObjects.
 
-Ce guide explique comment configurer S3cmd afin gérer vos buckets et objets.
+**Ce guide explique comment configurer S3cmd afin gérer vos buckets et objets.**
 
 ## Prérequis
 
 - Avoir créé un bucket
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
-- Connaître vos informations d'identification S3 (access_key et secret_access_key).
+- Connaître vos informations d'identification S3 (access_key et secret_access_key)
 
-cf : [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/highperf/debuter-avec-s3-high-performance)
+Consultez notre guide « [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3-high-performance) » pour plus de détails.
 
 ## En pratique
 
@@ -85,37 +85,43 @@ S3cmd est maintenant prêt à être utilisé.
 
 **Exemples de commande**
 
-Lister tous les buckets
+Lister tous les buckets :
+
 ```bash
 $ s3cmd ls
 ```
 
-Créer un nouveau bucket
+Créer un nouveau bucket :
+
 ```bash
 $ s3cmd mb s3://BUCKET
 ```
 
-Lister le contenu d'un bucket
+Lister le contenu d'un bucket :
+
 ```bash
 $ s3cmd ls s3://BUCKET[/PREFIX]
 ```
 
-Synchroniser /home/user/documents vers un bucket
+Synchroniser `/home/user/documents` vers un bucket :
+
 ```bash
 $ s3cmd sync /home/user/documents s3://BUCKET[/PREFIX]
 ```
 
-Copier un fichier /home/user/file.txt dans un bucket
+Copier un fichier `/home/user/file.txt` dans un bucket :
+
 ```bash
 $ s3cmd put FILE [FILE...] s3://BUCKET[/PREFIX]
 ```
 
-Télécharger un fichier file.txt depuis un bucket
+Télécharger un fichier `file.txt` depuis un bucket :
+
 ```bash
 $ s3cmd get s3://BUCKET/OBJECT LOCAL_FILE
 ```
 
-Vous trouverez sur le site officiel de S3cmd une documentation précise des actions possibles: [Documentation officielle S3cmd](https://s3tools.org/usage){.external}.
+Vous trouverez sur le site officiel de S3cmd une documentation détaillée des actions possibles: [Documentation officielle S3cmd](https://s3tools.org/usage){.external}.
 
 ## Aller plus loin
 

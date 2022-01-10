@@ -1,7 +1,7 @@
 ---
 title: Use High Performance with Owncloud
 slug: s3/owncloud
-excerpt:
+excerpt: Learn how to set up storage in Owncloud to use a High Performance bucket
 section: Object Storage S3 High Performance
 order: 170
 ---
@@ -12,35 +12,36 @@ order: 170
 
 Owncloud is a suite of client-server software for creating and using file hosting services.
 
-This guide explains how to set up storage in Owncloud to use a High Performance bucket.
+**This guide explains how to set up storage in Owncloud to use a High Performance bucket.**
 
 ## Requirements
 
-- Have created a bucket
-- Have created a user and defined the required access rights on the bucket
-- Know your S3 credentials (access_key and secret_access_key).
+- A bucket
+- A user with the required access rights on the bucket
+- Your S3 credentials (access_key and secret_access_key)
 
-See [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3)
+See our [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3) guide.
 
 ## Instructions
 
-If needed, install the `External Storage: S3` plugin from the `Market`{.action}
+If needed, install the `External Storage: S3` plugin from the `Market`{.action}.
 
 ![Owncloud open Market](images/HighPerf-Owncloud-20211209131331778.png)
 
-Search for the `External Storage: S3` plugin
+Search for the `External Storage: S3` plugin.
 
 ![Owncloud plugin External Storage S3](images/HighPerf-Owncloud-20211209131556714.png)
 
-And `install it`{.action}
+And `install`{.action} it.
 
 ![Owncloud install plugin](images/HighPerf-Owncloud-20211209131648711.png)
 
-Go to the `Settings`{.action}
+Go to the `Settings`{.action}.
 
 ![Owncloud open Settings](images/HighPerf-Owncloud-20211209131942821.png)
 
 Then :
+
 1. in `Storage`{.action}
 2. enable `Enable external storage`{.action}
 3. name your folder
@@ -60,17 +61,17 @@ Fill in the following information:
 
 ![Owncloud complete AWS S3 storage](images/HighPerf-Owncloud-20211209133630272.png)
 
-Go to `Files`{.action}
+Go to `Files`{.action}.
 
-![Ownclopud open Files](images/HighPerf-Owncloud-20211209133730832.png)
+![Owncloud open Files](images/HighPerf-Owncloud-20211209133730832.png)
 
-Then in `External storage`{.action}
+Then in `External storage`{.action}.
 
-![Ownclopud Files External Storage](images/HighPerf-Owncloud-2021120913382299.png)
+![Owncloud Files External Storage](images/HighPerf-Owncloud-2021120913382299.png)
 
-Result
+The result should be similar to this:
 
-![Ownclopud Bucket listing](images/HighPerf-Owncloud-20211209140757288.png)
+![Owncloud Bucket listing](images/HighPerf-Owncloud-20211209140757288.png)
 
 ## Go further
 

@@ -1,19 +1,18 @@
 ---
-title: Utilisez High Performance avec rClone
+title: Utiliser High Performance avec Rclone
 slug: s3/rclone
-excerpt:
+excerpt: Découvrez comment configurer Rclone afin de synchroniser vos fichiers vers et depuis High Performance
 section: Object Storage S3 High Performance
 order: 110
 ---
 
-**Dernière mise à jour le 3/01/2022**
+**Dernière mise à jour le 03/01/2022**
 
 ## Objectif
 
-
 Rclone est un outil de sauvegarde qui peut se synchroniser vers et depuis divers backends de stockage, et peut être utilisé sur Windows, macOS et Linux.
 
-Ce guide explique comment configurer RClone afin de synchroniser vos fichier vers et depuis High Performance.
+**Ce guide explique comment configurer Rclone afin de synchroniser vos fichiers vers et depuis High Performance.**
 
 ## Prérequis
 
@@ -21,11 +20,11 @@ Ce guide explique comment configurer RClone afin de synchroniser vos fichier ver
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
 - Connaître vos informations d'identification S3 (access_key et secret_access_key).
 
-cf : [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/highperf/debuter-avec-s3-high-performance)
+Consultez notre guide « [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3-high-performance) » pour plus de détails.
 
 ## En pratique
 
-Pour configurer rclone, éditez ou créez le fichier `~/.config/rclone/rclone.conf` et ajoutez-y ceci :
+Pour configurer Rclone, éditez ou créez le fichier `~/.config/rclone/rclone.conf` et ajoutez-y ceci :
 
 ```bash
 [<profile_name>]
@@ -44,37 +43,43 @@ RClone est maintenant prêt à être utilisé.
 
 **Exemples de commande**
 
-Lister tous les buckets
+Lister tous les buckets :
+
 ```bash
 $ rclone lsd <profile_name>:
 ```
 
-Créer un nouveau bucket
+Créer un nouveau bucket :
+
 ```bash
 $ rclone mkdir <profile_name>:mybucket
 ```
 
-Lister le contenu d'un bucket
+Lister le contenu d'un bucket :
+
 ```bash
 $ rclone ls <profile_name>:mybucket
 ```
 
-Synchroniser /home/user/documents vers un bucket
+Synchroniser `/home/user/documents` vers un bucket :
+
 ```bash
 $ rclone sync /home/user/documents <profile_name>:mybucket
 ```
 
-Copier un fichier /home/user/file.txt dans un bucket
+Copier un fichier `/home/user/file.txt` dans un bucket :
+
 ```bash
 $ rclone copy /home/user/file.txt <profile_name>:mybucket
 ```
 
-Télécharger un fichier file.txt depuis un bucket
+Télécharger un fichier `file.txt` depuis un bucket :
+
 ```bash
 $ rclone copy <profile_name>:mybucket/file.txt fichier.txt
 ```
 
-Vous trouverez sur le site officiel de rClone une documentation précise des actions possibles: [Documentation officielle rClone](https://rclone.org/docs/){.external}.
+Vous trouverez sur le site officiel de Rclone une documentation précise des actions possibles: [Documentation officielle rClone](https://rclone.org/docs/){.external}.
 
 ## Aller plus loin
 

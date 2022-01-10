@@ -13,51 +13,48 @@ This guide is intended to show you how to configure Veeam to use your Object Sto
 
 ## Requirements
 
-- Have created a bucket
-- Have created a user and defined the required access rights on the bucket
-- Know your S3 credentials (access_key and secret_access_key).
+- A bucket
+- A user with the required access rights on the bucket
+- Your S3 credentials (access_key and secret_access_key).
 
-See [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3)
+See our [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3) guide.
 
 ## Instructions
 
 ### Adding S3 Compatible Object Storage
 
-#### Step 1. Launch New Object Repository Wizard
+#### Step 1 - Launch New Object Repository Wizard
 
 To launch the New Object Repository wizard, do one of the following:
 
-- Open the **Backup Infrastructure** view. In the inventory pane select the **Backup Repositories** node and click **Add Repository** on the ribbon. In the Add Backup Repository dialog, select **Object Storage** > `S3 Compatible`{.action}.
+- Open the **Backup Infrastructure** view. In the inventory pane, select the **Backup Repositories** node and click `Add Repository`{.action} on the ribbon. In the **Add Backup Repository** dialog, select `Object Storage`{.action} > `S3 Compatible`{.action}.
 
-- Open the **Backup Infrastructure** view. In the inventory pane right-click the **Backup Repositories** node and select **Add Backup Repository**. In the **Add Backup Repository** dialog, select **Object Storage** > `S3 Compatible`{.action}.
+- Open the **Backup Infrastructure** view. In the inventory pane, right-click the **Backup Repositories** node and select **Add Backup Repository**. In the **Add Backup Repository** dialog, select `Object Storage`{.action} > `S3 Compatible`{.action}.
 
 ![Launch New Object Repository Wizard](images/highperf-veeam-20220103142309570.png)
 
-#### Step 2. Specify Object Storage Name
+#### Step 2 - Specify Object Storage Name
 
 At the **Name** step of the wizard, specify a name and description for the object storage repository:
 
 - In the **Name** field, specify a name for the new object storage repository.
-
 - In the **Description** field, enter an optional description. The default description contains information about the user who added the object storage repository, date and time when the object storage repository was added.
 
-If you wish to limit the maximum number of tasks that can be processed at once, select the **Limit concurrent tasks to N** check box.
+If you wish to limit the maximum number of tasks that can be processed at once, select the **Limit concurrent tasks to #** check box.
 
 ![Specify Object Storage Name](images/highperf-veeam-2022010416461795.png)
 
-#### Step 3. Specify Object Storage Account
+#### Step 3 - Specify Object Storage Account
 
 At the **Account** step of the wizard, specify the connection settings:
 
-- In the **Service point** field, specify an endpoint address of your S3 Compatible object storage: `https://s3.<region>.perf.cloud.ovh.net`
-
+- In the **Service point** field, specify an endpoint address of your S3 Compatible object storage: `https://s3.<region>.perf.cloud.ovh.net`.
 - In the **Region** field, specify a region: `<region>`.
-
 - From the **Credentials** drop-down list, select user credentials to access your S3 Compatible object storage.
 
-If you already have a credentials record that was configured in advance, select it from the drop-down list. Otherwise, click **Add** and provide your access and secret keys. You can also click the **Manage cloud accounts** link to add, edit or remove a credentials record.
+If you already have a credentials record that was configured in advance, select it from the drop-down list. Otherwise, click `Add`{.action} and provide your access and secret keys. You can also click the `Manage cloud accounts`{.action} link to add, edit or remove a credentials record.
 
-To use a gateway server, select the Use the following gateway server check box and choose an appropriate server from the list. You may want to use a gateway server, for example, if your organization has NAT or different types of firewalls and your access to the internet is limited.
+To use a gateway server, select the **Use the following gateway server** check box and choose an appropriate server from the list. You may want to use a gateway server, for example, if your organization has NAT or different types of firewalls and your access to the internet is limited.
 
 You can select any Microsoft Windows or Linux server that is added to your backup infrastructure and has internet connection. By default, the role of a gateway server is assigned to the machine where Veeam Backup & Replication is installed.
 
@@ -65,16 +62,14 @@ If you choose not to use a gateway server, make sure that all scale-out reposito
 
 ![Step 3. Specify Object Storage Account](images/highperf-veeam-20220104174350437.png)
 
-#### Step 4. Specify Object Storage Settings
+#### Step 4 - Specify Object Storage Settings
 
 At the **Bucket** step of the wizard, specify the bucket and folder that will be used to store data:
 
-1. From the **Bucket** drop-down list, select a bucket.  
-Make sure that the bucket where you want to store your backup data was created in advance.
-
+1. From the **Bucket** drop-down list, select a bucket. Make sure that the bucket where you want to store your backup data was created in advance.
 2. In the **Select Folder** field, select a cloud folder to which you want to map your object storage repository.
 
-To select a folder, click **Browse** and either select an existing folder or create a new one by clicking **New Folder**.
+To select a folder, click `Browse`{.action} and either select an existing folder or create a new one by clicking `New Folder`{.action}.
 
 To define a soft limit that can be exceeded temporarily for your object storage consumption, select the **Limit object storage consumption to** check box and provide the value in TB or PB.
 
@@ -82,12 +77,11 @@ To prohibit deletion of blocks of data from object storage, select the **Make re
 
 ![Step 4. Specify Object Storage Settings](images/highperf-veeam-20220104180054702.png)
 
-#### Étape 5. Finir de travailler avec l'assistant
+#### Step 5 - Finish working with the wizard
 
 At the **Summary** step of the wizard, complete the object storage repository configuration:
 
 - Review details of the object storage repository.
-
 - Click `Finish`{.action} to exit the wizard.
 
 ![Step 5. Finish Working with Wizard](images/highperf-veeam-20220104180210797.png)

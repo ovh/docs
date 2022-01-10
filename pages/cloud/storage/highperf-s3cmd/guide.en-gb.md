@@ -1,7 +1,7 @@
 ---
 title: Use High Performance with S3cmd
 slug: s3/s3cmd
-excerpt:
+excerpt: Learn how to configure S3cmd to manage your buckets and objects
 section: Object Storage S3 High Performance
 order: 130
 ---
@@ -10,17 +10,17 @@ order: 130
 
 ## Objective
 
-S3cmd is a free command line tool and client for managing data in storage spaces that use the S3 protocol, such as Google Cloud Storage or DreamHost DreamObjects, OVH Object Storage S3 High Performance.
+S3cmd is a free command line tool and client for managing data in storage spaces that use the S3 protocol, such as OVHcloud Object Storage S3 High Performance, Google Cloud Storage or DreamHost DreamObjects.
 
-This guide explains how to configure S3cmd to manage your buckets and objects.
+**This guide explains how to configure S3cmd to manage your buckets and objects.**
 
 ## Requirements
 
-- Have created a bucket
-- Have created a user and set the required access rights on the bucket
-- Know your S3 credentials (access_key and secret_access_key).
+- A bucket
+- A user with the required access rights on the bucket
+- Your S3 credentials (access_key and secret_access_key).
 
-See: [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3)
+See our [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3) guide.
 
 ## Instructions
 
@@ -85,17 +85,20 @@ S3cmd is now ready to be used.
 
 **Command examples**
 
-List all buckets
+List all buckets:
+
 ```bash
 $ s3cmd ls
 ```
 
-Create a new bucket
+Create a new bucket:
+
 ```bash
 $ s3cmd mb s3://BUCKET
 ```
 
-List the contents of a bucket
+List the contents of a bucket:
+
 ```bash
 $ s3cmd ls s3://BUCKET[/PREFIX]
 ```
@@ -105,17 +108,19 @@ Synchronise /home/user/documents to a bucket
 $ s3cmd sync /home/user/documents s3://BUCKET[/PREFIX]
 ```
 
-Copy a file /home/user/file.txt into a bucket
+Copy a file /home/user/file.txt into a bucket:
+
 ```bash
 $ s3cmd put FILE [FILE...] s3://BUCKET[/PREFIX]
 ```
 
-Download a file file.txt from a bucket
+Download a file file.txt from a bucket:
+
 ```bash
 $ s3cmd get s3://BUCKET/OBJECT LOCAL_FILE
 ```
 
-You will find on the official S3cmd website a precise documentation of the possible actions: [Official S3cmd documentation](https://s3tools.org/usage){.external}.
+You will find a detailed documentation of the possible actions on the [official S3cmd documentation](https://s3tools.org/usage){.external}.
 
 ## Go further
 

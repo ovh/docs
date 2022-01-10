@@ -1,7 +1,7 @@
 ---
 title: Use High Performance with Nextcloud
 slug: s3/nextcloud
-excerpt:
+excerpt: Learn how to set up storage in Nextcloud to use a High Performance bucket
 section: Object Storage S3 High Performance
 order: 120
 ---
@@ -12,15 +12,15 @@ order: 120
 
 Nextcloud is a suite of client-server software for creating and using file hosting services.
 
-This guide explains how to set up storage in Nextcloud to use a High Performance bucket.
+**This guide explains how to set up storage in Nextcloud to use a High Performance bucket.**
 
 ## Requirements
 
-- Have created a bucket
-- Have created a user and set the required access rights on the bucket
-- Know your S3 credentials (access_key and secret_access_key).
+- A bucket
+- A user with the required access rights on the bucket
+- Your S3 credentials (access_key and secret_access_key)
 
-See: [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3)
+See our [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3) guide.
 
 ## Instructions
 
@@ -28,24 +28,24 @@ See: [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/stora
 
 #### Activate the *External storage support* application
 
-Click on your profile at the top right and then on `Apps`{.action}
+Click on your profile at the top right and then on `Apps`{.action}.
 
 ![Main menu](images/HighPerf-nextcloud-20211206101650679.png)
 
-Select the `Disabled Apps`{.action} menu
+Select the `Disabled Apps`{.action} in the left panel.
+
 Locate the **External storage support** application and click `Enable`{.action}
 
 ![Disabled Apps](images/HighPerf-nextcloud-20211206101817393.png)
 
 #### Configuration
 
-Click on your avatar at the top right and then on `Settings`{.action}
+Click on your avatar at the top right then on `Settings`{.action}.
 
 ![Main menu](images/HighPerf-nextcloud-20211206101913852.png)
 
-
 1. Select the `External storage`{.action} menu
-2. Create a storage type *Amazon S3*.
+2. Create an *Amazon S3* storage type.
 3. Name your destination folder
 4. Specify the name of your bucket
 5. Set the host as: `s3.<region>.perf.cloud.ovh.net`
@@ -58,23 +58,25 @@ Click on your avatar at the top right and then on `Settings`{.action}
 
 ![External Storage Amazon S3 completed](images/HighPerf-nextcloud-20211206102607233.png)
 
-Open the `Files`{.action} application, select the `External storage`{.action} menu and then your `bucket`{.action}
+Open the `Files`{.action} application, select the `External storage`{.action} menu then your `bucket`{.action}.
 
 ![Files External Storage](images/HighPerf-nextcloud-20211206102749423.png)
 
-Result
+The result should be similar to this:
 
 ![Files External Storage Bucket](images/HighPerf-nextcloud-20211206102844377.png)
 
 ### Configuration from the CLI
 
 First, the **External storage support** application must be enabled:
+
 ```bash
 $ php occ app:enable files_external
 files_external enabled
 ```
 
-Check that S3 is supported on your installation
+Check that S3 is supported on your installation:
+
 ```bash
 $ php occ files_external:backends storage amazons3
   - name: Amazon S3
@@ -97,6 +99,7 @@ $ php occ files_external:backends storage amazons3
 ```
 
 Mount your S3 bucket on Nextcloud as a **OVH_hp-bucket** mount point:
+
 ```bash
 $ php occ files_external:create -c bucket=hp-bucket \
                                 -c hostname=s3.<region>.perf.cloud.ovh.net \
@@ -111,6 +114,7 @@ Storage created with id 4
 ```
 
 Validate your settings:
+
 ```bash
 $ php occ files_external:verify 4
   - status: ok
@@ -119,6 +123,7 @@ $ php occ files_external:verify 4
 ```
 
 Verify and update the settings if necessary:
+
 ```bash
 $ php occ files_external:list
   +----------+----------------+-----------+---------------------+-----------------+---------+------------------+-------------------+
@@ -130,6 +135,7 @@ $ php occ files_external:list
 ```
 
 Start indexing the new storage:
+
 ```bash
 $ php occ files:scan -vvv --path /admin/files/OVH_hp-bucket
 Starting scan for user 1 out of 1 (admin)
@@ -143,10 +149,10 @@ Starting scan for user 1 out of 1 (admin)
 +---------+-------+--------------+
 ```
 
-
 ### Set your bucket as primary storage
 
-Edit your `config/config.php` file and add
+Edit your `config/config.php` file and add:
+
 ```php
 'objectstore' => array(
         'class' => 'OC\\Files\\ObjectStore\\S3',

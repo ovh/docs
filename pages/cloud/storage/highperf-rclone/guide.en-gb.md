@@ -1,7 +1,7 @@
 ---
-title: Utilisez High Performance avec rClone
+title: Use High Performance with rClone
 slug: s3/rclone
-excerpt:
+excerpt: Learn how to set up Rclone to synchronize your files to and from High Performance.
 section: Object Storage S3 High Performance
 order: 110
 ---
@@ -10,22 +10,21 @@ order: 110
 
 ## Objective
 
-
 Rclone is a backup tool that can sync to and from various storage backends, and can be used on Windows, macOS and Linux.
 
-This guide explains how to set up RClone to synchronize your files to and from High Performance.
+**This guide explains how to set up Rclone to synchronize your files to and from High Performance.**
 
 ## Requirements
 
-- Have created a bucket
-- Have created a user and defined the required access rights on the bucket
-- Know your S3 credentials (access_key and secret_access_key).
+- A bucket
+- A user and defined the required access rights on the bucket
+- Your S3 credentials (access_key and secret_access_key)
 
-See [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3)
+See our [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3) guide.
 
 ## Instructions
 
-To configure rclone, edit or create the file `~/.config/rclone/rclone.conf` and add this:
+To configure Rclone, edit or create the `~/.config/rclone/rclone.conf` file and add this:
 
 ```bash
 [<remote_name>]
@@ -40,41 +39,47 @@ region = <region>
 location_constraint = <region>
 ```
 
-RClone is now ready for use.
+Rclone is now ready for use.
 
 **Command examples**
 
-List all buckets
+List all buckets:
+
 ```bash
 $ rclone lsd <remote_name>:
 ```
 
-Create a new bucket
+Create a new bucket:
+
 ```bash
 $ rclone mkdir <remote_name>:mybucket
 ```
 
-List the contents of a bucket
+List the contents of a bucket:
+
 ```bash
 $ rclone ls <remote_name>:mybucket
 ```
 
-Synchronise /home/user/documents to a bucket
+Synchronise `/home/user/documents` to a bucket:
+
 ```bash
 $ rclone sync /home/user/documents <remote_name>:mybucket
 ```
 
-Copy a file /home/user/file.txt into a bucket
+Copy a file `/home/user/file.txt` into a bucket:
+
 ```bash
 $ rclone copy /home/user/file.txt <remote_name>:mybucket
 ```
 
-Download a file file.txt from a bucket
+Download a file `file.txt` from a bucket:
+
 ```bash
 $ rclone copy <remote_name>:mybucket/file.txt fichier.txt
 ```
 
-You will find on the official rClone website a precise documentation of the possible actions: [Official rClone documentation](https://rclone.org/docs/){.external}.
+You will find on the official rClone website a detailed documentation of the possible actions: [Official rClone documentation](https://rclone.org/docs/){.external}.
 
 ## Go further
 
