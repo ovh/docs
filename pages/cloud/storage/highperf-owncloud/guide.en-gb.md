@@ -26,19 +26,19 @@ See our [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/st
 
 If needed, install the `External Storage: S3` plugin from the `Market`{.action}.
 
-![Owncloud open Market](images/HighPerf-Owncloud-20211209131331778.png)
+![Owncloud open Market](images/HighPerf-Owncloud-20211209131331778.png){.thumbnail}
 
 Search for the `External Storage: S3` plugin.
 
-![Owncloud plugin External Storage S3](images/HighPerf-Owncloud-20211209131556714.png)
+![Owncloud plugin External Storage S3](images/HighPerf-Owncloud-20211209131556714.png){.thumbnail}
 
 And `install`{.action} it.
 
-![Owncloud install plugin](images/HighPerf-Owncloud-20211209131648711.png)
+![Owncloud install plugin](images/HighPerf-Owncloud-20211209131648711.png){.thumbnail}
 
 Go to the `Settings`{.action}.
 
-![Owncloud open Settings](images/HighPerf-Owncloud-20211209131942821.png)
+![Owncloud open Settings](images/HighPerf-Owncloud-20211209131942821.png){.thumbnail}
 
 Then :
 
@@ -47,7 +47,7 @@ Then :
 3. name your folder
 4. add an `Amazon S3 compatible storage (SDK v3)`{.action}
 
-![Owncloud create AWS S3 storage](images/HighPerf-Owncloud-20211209143008822.png)
+![Owncloud create AWS S3 storage](images/HighPerf-Owncloud-20211209143008822.png){.thumbnail}
 
 Fill in the following information:
 
@@ -59,19 +59,19 @@ Fill in the following information:
 6. Enter your access key
 7. Enter your secret key
 
-![Owncloud complete AWS S3 storage](images/HighPerf-Owncloud-20211209133630272.png)
+![Owncloud complete AWS S3 storage](images/HighPerf-Owncloud-20211209133630272.png){.thumbnail}
 
 Go to `Files`{.action}.
 
-![Owncloud open Files](images/HighPerf-Owncloud-20211209133730832.png)
+![Owncloud open Files](images/HighPerf-Owncloud-20211209133730832.png){.thumbnail}
 
 Then in `External storage`{.action}.
 
-![Owncloud Files External Storage](images/HighPerf-Owncloud-2021120913382299.png)
+![Owncloud Files External Storage](images/HighPerf-Owncloud-2021120913382299.png){.thumbnail}
 
 The result should be similar to this:
 
-![Owncloud Bucket listing](images/HighPerf-Owncloud-20211209140757288.png)
+![Owncloud Bucket listing](images/HighPerf-Owncloud-20211209140757288.png){.thumbnail}
 
 ## Go further
 

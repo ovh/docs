@@ -17,7 +17,7 @@ Ce guide a pour objectif de vous montrer comment configurer Veeam pour utiliser 
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
 - Connaître vos informations d'identification S3 (access_key et secret_access_key)
 
-Consultez notre guide « [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3-high-performance) » pour plus de détails.
+Consultez notre guide « [Débuter avec S3 High Performance](https://doc.static.ovh.net/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
 
 ## En pratique
 
@@ -31,7 +31,7 @@ Pour lancer l'assistant **Nouveau référentiel d'objets**, effectuez l'une des 
 
 - Ouvrez la vue **Infrastructure de sauvegarde**. Dans le panneau d'inventaire, faites un clic-droit sur le nœud **Dépôts de sauvegarde** et sélectionnez `Ajouter un dépôt de sauvegarde`{.action}. Dans la boîte de dialogue **Add Backup Repository**, sélectionnez `Object Storage`{.action} > `S3 Compatible`{.action}.
 
-![Launch New Object Repository Wizard](images/highperf-veeam-20220103142309570.png)
+![Launch New Object Repository Wizard](images/highperf-veeam-20220103142309570.png){.thumbnail}
 
 #### Étape 2 - spécifier le nom du stockage d'objets
 
@@ -42,7 +42,7 @@ Pour lancer l'assistant **Nouveau référentiel d'objets**, effectuez l'une des 
 
 Si vous souhaitez limiter le nombre maximum de tâches pouvant être traitées en même temps, cochez la case **Limiter les tâches simultanées à N**.
 
-![Specify Object Storage Name](images/highperf-veeam-2022010416461795.png)
+![Specify Object Storage Name](images/highperf-veeam-2022010416461795.png){.thumbnail}
 
 #### Étape 3 - spécifier le compte de stockage d'objets
 
@@ -62,7 +62,7 @@ Vous pouvez sélectionner tout serveur Microsoft Windows ou Linux ajouté à vot
 
 Si vous choisissez de ne pas utiliser un serveur passerelle, assurez-vous que toutes les extensions de référentiel scale-out ont un accès direct à Internet.
 
-![Step 3. Specify Object Storage Account](images/highperf-veeam-20220104174350437.png)
+![Step 3. Specify Object Storage Account](images/highperf-veeam-20220104174350437.png){.thumbnail}
 
 #### Étape 4 - spécifier les paramètres du stockage d'objets
 
@@ -77,7 +77,7 @@ Pour définir une limite souple qui peut être dépassée temporairement pour vo
 
 Pour interdire la suppression de blocs de données du stockage d'objets, cochez la case **Make recent backups immutable for** et indiquez la période d'immuabilité.
 
-![Step 4. Specify Object Storage Settings](images/highperf-veeam-20220104180054702.png)
+![Step 4. Specify Object Storage Settings](images/highperf-veeam-20220104180054702.png){.thumbnail}
 
 #### Étape 5 - finir de travailler avec l'assistant
 
@@ -86,7 +86,7 @@ Pour interdire la suppression de blocs de données du stockage d'objets, cochez 
 - Examinez les détails du référentiel de stockage d'objets.
 - Cliquez sur `Finish`{.action} pour quitter l'assistant.
 
-![Step 5. Finish Working with Wizard](images/highperf-veeam-20220104180210797.png)
+![Step 5. Finish Working with Wizard](images/highperf-veeam-20220104180210797.png){.thumbnail}
 
 ## Aller plus loin
 

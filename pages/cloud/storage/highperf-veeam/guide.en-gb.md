@@ -31,7 +31,7 @@ To launch the New Object Repository wizard, do one of the following:
 
 - Open the **Backup Infrastructure** view. In the inventory pane, right-click the **Backup Repositories** node and select **Add Backup Repository**. In the **Add Backup Repository** dialog, select `Object Storage`{.action} > `S3 Compatible`{.action}.
 
-![Launch New Object Repository Wizard](images/highperf-veeam-20220103142309570.png)
+![Launch New Object Repository Wizard](images/highperf-veeam-20220103142309570.png){.thumbnail}
 
 #### Step 2 - Specify Object Storage Name
 
@@ -42,7 +42,7 @@ At the **Name** step of the wizard, specify a name and description for the objec
 
 If you wish to limit the maximum number of tasks that can be processed at once, select the **Limit concurrent tasks to N** check box.
 
-![Specify Object Storage Name](images/highperf-veeam-2022010416461795.png)
+![Specify Object Storage Name](images/highperf-veeam-2022010416461795.png){.thumbnail}
 
 #### Step 3 - Specify Object Storage Account
 
@@ -60,7 +60,7 @@ You can select any Microsoft Windows or Linux server that is added to your backu
 
 If you choose not to use a gateway server, make sure that all scale-out repository extents have direct internet access.
 
-![Step 3. Specify Object Storage Account](images/highperf-veeam-20220104174350437.png)
+![Step 3. Specify Object Storage Account](images/highperf-veeam-20220104174350437.png){.thumbnail}
 
 #### Step 4 - Specify Object Storage Settings
 
@@ -75,7 +75,7 @@ To define a soft limit that can be exceeded temporarily for your object storage 
 
 To prohibit deletion of blocks of data from object storage, select the **Make recent backups immutable for** check box and specify the immutability period.
 
-![Step 4. Specify Object Storage Settings](images/highperf-veeam-20220104180054702.png)
+![Step 4. Specify Object Storage Settings](images/highperf-veeam-20220104180054702.png){.thumbnail}
 
 #### Step 5 - Finish working with the wizard
 
@@ -84,7 +84,7 @@ At the **Summary** step of the wizard, complete the object storage repository co
 - Review details of the object storage repository.
 - Click `Finish`{.action} to exit the wizard.
 
-![Step 5. Finish Working with Wizard](images/highperf-veeam-20220104180210797.png)
+![Step 5. Finish Working with Wizard](images/highperf-veeam-20220104180210797.png){.thumbnail}
 
 ## Go further
 
