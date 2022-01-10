@@ -4,7 +4,7 @@ slug: managed-db-life-cycle-policy
 section: 'Technical resources'
 ---
 
-**Last updated 07/01/2022**
+**Last updated 7th January 2022**
 
 ## Objective
 
@@ -16,10 +16,10 @@ OVHcloud managed databases offer several Database Management Systems (DBMS), suc
 
 You must have one or more of the following options:
 
-- A [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)  that includes databases.
+- A [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that includes databases
 - A [Start SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) database pack
-- A  [private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/) server.
-- A Cloud Databases server.
+- A [Private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/) server
+- A Cloud Databases server
 
 ## Instructions
 
@@ -51,7 +51,7 @@ The product concerned can no longer be ordered after this date. As previously an
 
 The date until which the customer can receive support for the product under the terms of the service contract or the general terms of the guarantee.
 After this date, the product is no longer supported and is considered obsolete.
-Applies at least 6 months after end of life announcement.
+It applies at least 6 months after end of life announcement.
 
 #### **Period of obsolescence**
 
