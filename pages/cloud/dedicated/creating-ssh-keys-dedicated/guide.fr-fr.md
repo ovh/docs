@@ -176,4 +176,4 @@ Si vous avez copié l'intégralité de la chaine, l'identifiant qui suit la clé
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
