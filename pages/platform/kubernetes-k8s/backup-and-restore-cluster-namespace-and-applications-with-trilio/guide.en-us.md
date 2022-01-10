@@ -393,10 +393,10 @@ spec:
   enableBrowsing: true
   objectStoreCredentials:
     bucketName: <YOUR_OVH_OBJECT_STORAGE_BUCKET_NAME_HERE>
-    region: <YOUR_OVH_OBJECT_STORAGE_BUCKET_REGION_HERE>    		# e.g.: bhs5 for OVH Object Storage or 'us-est-1 etc' for AWS S3
+    region: <YOUR_OVH_OBJECT_STORAGE_BUCKET_REGION_HERE>    		# e.g.: bhs5 for OVH Object Storage or 'us-est-1` etc for AWS S3
     url: "https://<YOUR_OVH_OBJECT_STORAGE_BUCKET_ENDPOINT_HERE>"  	# e.g.: storage.bhs5.cloud.ovh.net for OVH
     credentialSecret:
-      name: trilio-ovh-s3-target
+      name: trilio-ovh-s3-target-secret
       namespace: tvk
   thresholdCapacity: 10Gi
 ```
@@ -415,7 +415,7 @@ To access `S3` storage, each target needs to know bucket credentials. A `Kuberne
 apiVersion: v1
 kind: Secret
 metadata:
-  name: trilio-ovh-s3-target
+  name: trilio-ovh-s3-target-secret
   namespace: tvk
 type: Opaque
 stringData:
@@ -423,7 +423,7 @@ stringData:
   secretKey: <YOUR_OVH_OBJECT_STORAGE_BUCKET_SECRET_KEY_HERE>    	# value must be base64 encoded
 ```
 
-Notice that the secret name is `trilio-ovh-s3-target`, and it's referenced by the `spec.objectStoreCredentials.credentialSecret` field of the `Target` CRD explained earlier. The `secret` can be in the same `namespace` where `TrilioVault` was installed (defaults to `tvk`), or in another namespace of your choice. Just make sure that you reference the namespace correctly. On the other hand, please make sure to `protect` the `namespace` where you store `TrilioVault` secrets via `RBAC`, for `security` reasons.
+Notice that the secret name is `trilio-ovh-s3-target-secret`, and it's referenced by the `spec.objectStoreCredentials.credentialSecret` field of the `Target` CRD explained earlier. The `secret` can be in the same `namespace` where `TrilioVault` was installed (defaults to `tvk`), or in another namespace of your choice. Just make sure that you reference the namespace correctly. On the other hand, please make sure to `protect` the `namespace` where you store `TrilioVault` secrets via `RBAC`, for `security` reasons.
 
 Steps to create a `Target` for `TrilioVault`:
 
@@ -436,7 +436,7 @@ Steps to create a `Target` for `TrilioVault`:
 2. Next, create the Kubernetes secret containing your target S3 bucket credentials (please replace the `<>` placeholders accordingly):
 
     ```shell
-    kubectl create secret generic trilio-ovh-s3-target \
+    kubectl create secret generic trilio-ovh-s3-target-secret \
       --namespace=tvk \
       --from-literal=accessKey="<YOUR_OVH_OBJECT_STORAGE_BUCKET_ACCESS_KEY_HERE>" \
       --from-literal=secretKey="<YOUR_OVH_OBJECT_STORAGE_BUCKET_SECRET_KEY_HERE>"
