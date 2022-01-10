@@ -1,30 +1,32 @@
 ---
-title: Utiliser High Performance avec S3cmd
+title: Utilizar High Performance con S3cmd (EN)
 slug: s3/s3cmd
-excerpt: Découvrez comment configurer S3cmd afin de gérer vos buckets et objets
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/s3cmd'
+excerpt: Learn how to configure S3cmd to manage your buckets and objects
 section: Object Storage S3 High Performance
 order: 130
 ---
 
-**Dernière mise à jour le 03/01/2022**
+**Last updated on 3rd January 2022**
 
-## Objectif
+## Objective
 
-S3cmd est un outil de ligne de commande gratuit et un client de gestion des données dans des espaces de stockage qui utilisent le protocole S3, tels que OVHcloud Object Storage S3 High Performance, Google Cloud Storage ou DreamHost DreamObjects.
+S3cmd is a free command line tool and client for managing data in storage spaces that use the S3 protocol, such as OVHcloud Object Storage S3 High Performance, Google Cloud Storage or DreamHost DreamObjects.
 
-**Ce guide explique comment configurer S3cmd afin gérer vos buckets et objets.**
+**This guide explains how to configure S3cmd to manage your buckets and objects.**
 
-## Prérequis
+## Requirements
 
-- Avoir créé un bucket
-- Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
-- Connaître vos informations d'identification S3 (access_key et secret_access_key)
+- A bucket
+- A user with the required access rights on the bucket
+- Your S3 credentials (access_key and secret_access_key).
 
-Consultez notre guide « [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
+See our [Getting started with S3 High Performance](https://docs.ovh.com/es/storage/s3/getting-started-with-s3) guide.
 
-## En pratique
+## Instructions
 
-Pour configurer s3cmd, exécutez la commande suivante :
+To configure s3cmd, run the following command:
 
 ```bash
 $ s3cmd --configure
@@ -81,48 +83,47 @@ Save settings? [y/N] y
 Configuration saved to '/home/user/.s3cfg'  
 ```
 
-S3cmd est maintenant prêt à être utilisé.
+S3cmd is now ready to be used.
 
-**Exemples de commande**
+**Command examples**
 
-Lister tous les buckets :
+List all buckets:
 
 ```bash
 $ s3cmd ls
 ```
 
-Créer un nouveau bucket :
+Create a new bucket:
 
 ```bash
 $ s3cmd mb s3://BUCKET
 ```
 
-Lister le contenu d'un bucket :
+List the contents of a bucket:
 
 ```bash
 $ s3cmd ls s3://BUCKET[/PREFIX]
 ```
 
-Synchroniser `/home/user/documents` vers un bucket :
-
+Synchronise /home/user/documents to a bucket
 ```bash
 $ s3cmd sync /home/user/documents s3://BUCKET[/PREFIX]
 ```
 
-Copier un fichier `/home/user/file.txt` dans un bucket :
+Copy a file /home/user/file.txt into a bucket:
 
 ```bash
 $ s3cmd put FILE [FILE...] s3://BUCKET[/PREFIX]
 ```
 
-Télécharger un fichier `file.txt` depuis un bucket :
+Download a file file.txt from a bucket:
 
 ```bash
 $ s3cmd get s3://BUCKET/OBJECT LOCAL_FILE
 ```
 
-Vous trouverez sur le site officiel de S3cmd une documentation détaillée des actions possibles: [Documentation officielle S3cmd](https://s3tools.org/usage){.external}.
+You will find a detailed documentation of the possible actions on the [official S3cmd documentation](https://s3tools.org/usage){.external}.
 
-## Aller plus loin
+## Go further
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en){.external}.
