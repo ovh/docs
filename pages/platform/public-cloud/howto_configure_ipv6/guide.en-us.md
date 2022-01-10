@@ -40,7 +40,7 @@ Here is a short glossary of the terms used in this tutorial:
 
 ### Retrieve your network information.
 
-Log in to the OVHcloud Control Panel, click on the `Public Cloud`{.action} section menu, select your Public Cloud project and click on `Instances`{.action} in the left side menu. Then click on the `...`{.action} next to the correspending instance and click on `Instance details`{.action}.
+Log in to the OVHcloud Control Panel, click on the `Public Cloud`{.action} section menu, select your Public Cloud project and click on `Instances`{.action} in the left side menu. Then, click on the `...`{.action} next to the correspending instance and click on `Instance details`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
