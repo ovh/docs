@@ -30,19 +30,19 @@ See our [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/st
 
 Click on your profile at the top right and then on `Apps`{.action}.
 
-![Main menu](images/HighPerf-nextcloud-20211206101650679.png)
+![Main menu](images/HighPerf-nextcloud-20211206101650679.png){.thumbnail}
 
 Select the `Disabled Apps`{.action} in the left panel.
 
 Locate the **External storage support** application and click `Enable`{.action}
 
-![Disabled Apps](images/HighPerf-nextcloud-20211206101817393.png)
+![Disabled Apps](images/HighPerf-nextcloud-20211206101817393.png){.thumbnail}
 
 #### Configuration
 
 Click on your avatar at the top right then on `Settings`{.action}.
 
-![Main menu](images/HighPerf-nextcloud-20211206101913852.png)
+![Main menu](images/HighPerf-nextcloud-20211206101913852.png){.thumbnail}
 
 1. Select the `External storage`{.action} menu
 2. Create an *Amazon S3* storage type.
@@ -56,15 +56,15 @@ Click on your avatar at the top right then on `Settings`{.action}.
 10. Fill in your secret key
 11. `Validate`{.action}
 
-![External Storage Amazon S3 completed](images/HighPerf-nextcloud-20211206102607233.png)
+![External Storage Amazon S3 completed](images/HighPerf-nextcloud-20211206102607233.png){.thumbnail}
 
 Open the `Files`{.action} application, select the `External storage`{.action} menu then your `bucket`{.action}.
 
-![Files External Storage](images/HighPerf-nextcloud-20211206102749423.png)
+![Files External Storage](images/HighPerf-nextcloud-20211206102749423.png){.thumbnail}
 
 The result should be similar to this:
 
-![Files External Storage Bucket](images/HighPerf-nextcloud-20211206102844377.png)
+![Files External Storage Bucket](images/HighPerf-nextcloud-20211206102844377.png){.thumbnail}
 
 ### Configuration from the CLI
 

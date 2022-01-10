@@ -20,7 +20,7 @@ Nextcloud est une suite de logiciels client-serveur pour créer et utiliser des 
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
 - Connaître vos informations d'identification S3 (access_key et secret_access_key)
 
-Consultez notre guide « [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3-high-performance) » pour plus de détails.
+Consultez notre guide « [Débuter avec S3 High Performance](https://doc.static.ovh.net/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
 
 ## En pratique
 
@@ -30,19 +30,19 @@ Consultez notre guide « [Débuter avec S3 High Performance](https://docs.ovh.co
 
 Cliquez sur votre profil en haut à droite puis sur `Apps`{.action}.
 
-![Main menu](images/HighPerf-nextcloud-20211206101650679.png)
+![Main menu](images/HighPerf-nextcloud-20211206101650679.png){.thumbnail}
 
 Sélectionnez le menu `Disabled Apps`{.action} dans le menu de gauche.
 
 Repérez l'application **External storage support** et cliquez sur `Enable`{.action}.
 
-![Disabled Apps](images/HighPerf-nextcloud-20211206101817393.png)
+![Disabled Apps](images/HighPerf-nextcloud-20211206101817393.png){.thumbnail}
 
 #### Configuration
 
 Cliquez sur votre avatar en haut à droite puis sur `Settings`{.action}.
 
-![Main menu](images/HighPerf-nextcloud-20211206101913852.png)
+![Main menu](images/HighPerf-nextcloud-20211206101913852.png){.thumbnail}
 
 1. Sélectionnez le menu `External storage`{.action}
 2. Créez un stockage de type *Amazon S3*
@@ -56,15 +56,15 @@ Cliquez sur votre avatar en haut à droite puis sur `Settings`{.action}.
 10. Renseignez votre clé secrète
 11. `Validez`{.action}
 
-![External Storage Amazon S3 completed](images/HighPerf-nextcloud-20211206102607233.png)
+![External Storage Amazon S3 completed](images/HighPerf-nextcloud-20211206102607233.png){.thumbnail}
 
 Ouvrez l'application `Files`{.action}, sélectionnez le menu `External storage`{.action} puis votre `bucket`{.action}.
 
-![Files External Storage](images/HighPerf-nextcloud-20211206102749423.png)
+![Files External Storage](images/HighPerf-nextcloud-20211206102749423.png){.thumbnail}
 
 Voici le résultat que vous devez obtenir :
 
-![Files External Storage Bucket](images/HighPerf-nextcloud-20211206102844377.png)
+![Files External Storage Bucket](images/HighPerf-nextcloud-20211206102844377.png){.thumbnail}
 
 ### Configuration depuis le CLI
 
