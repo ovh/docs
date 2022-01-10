@@ -40,7 +40,7 @@ Pour lancer l'assistant **Nouveau référentiel d'objets**, effectuez l'une des 
 - Dans le champ **Nom**, indiquez un nom pour le nouveau référentiel de stockage d'objets.
 - Dans le champ **Description**, saisissez une description facultative. La description par défaut contient des informations sur l'utilisateur qui a ajouté le référentiel de stockage d'objets, ainsi que la date et l'heure auxquelles le référentiel de stockage d'objets a été ajouté.  
 
-Si vous souhaitez limiter le nombre maximum de tâches pouvant être traitées en même temps, cochez la case **Limiter les tâches simultanées à #**.
+Si vous souhaitez limiter le nombre maximum de tâches pouvant être traitées en même temps, cochez la case **Limiter les tâches simultanées à N**.
 
 ![Specify Object Storage Name](images/highperf-veeam-2022010416461795.png)
 

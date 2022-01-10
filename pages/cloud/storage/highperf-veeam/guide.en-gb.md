@@ -40,7 +40,7 @@ At the **Name** step of the wizard, specify a name and description for the objec
 - In the **Name** field, specify a name for the new object storage repository.
 - In the **Description** field, enter an optional description. The default description contains information about the user who added the object storage repository, date and time when the object storage repository was added.
 
-If you wish to limit the maximum number of tasks that can be processed at once, select the **Limit concurrent tasks to #** check box.
+If you wish to limit the maximum number of tasks that can be processed at once, select the **Limit concurrent tasks to N** check box.
 
 ![Specify Object Storage Name](images/highperf-veeam-2022010416461795.png)
 
