@@ -1,3 +1,4 @@
+apiVersion: triliovault.trilio.io/v1
 kind: Target
 metadata:
   name: trilio-ovh-s3-target
@@ -10,6 +11,6 @@ spec:
     region: "<YOUR_OVH_OBJECT_STORAGE_BUCKET_REGION_HERE>"
     credentialSecret:
       name: trilio-ovh-s3-target-secret
-      namespace: demo-backup-ns
+      namespace: tvk
   thresholdCapacity: 100Gi
 
