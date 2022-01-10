@@ -7,7 +7,7 @@ section: Networking
 order: 10
 ---
 
-**Last updated 9th April 2020**
+**Last updated 6th January 2022**
 
 ## Objective
 
@@ -23,24 +23,24 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 
 ## Instructions
 
-First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, select Failover IP in the “Network” section.
+First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, select Failover IP in the **Network** section.
 In our example, a failover IP is routed to "Instance_A" and we want to redirect it towards "Instance_B".
 
-![migrating failover IP](images/failover.png){.thumbnail}
+![migrating failover IP](images/failover2022.png){.thumbnail}
 
 Click on `...`{.action} next to the failover IP and select `Modify associated instance`{.action}.
 
-![migrating failover IP](images/modify.png){.thumbnail}
+![migrating failover IP](images/modify1.2022.png){.thumbnail}
 
 Choose the destination server from the list by clicking the checkbox.
 
 ![migrating failover IP](images/modify1.png){.thumbnail}
 
-Confirm with `Attach`{.action}.
+Confirm by clicking on `Attach`{.action}.
 
 After a few seconds the Control Panel will be updated and a confirmation message will be displayed if the migration was done sucessfully.
 
-![migrating failover IP](images/modify2.png){.thumbnail}
+![migrating failover IP](images/modify2.2022.png){.thumbnail}
 
 > [!primary]
 >
