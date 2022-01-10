@@ -67,7 +67,7 @@ No, per poter aumentare la dimensione di un volume è necessario scollegarlo.
 
 ### C'è un numero massimo di volumi aggiuntivi associabili alle istanze?
 
-Sì, a ogni istanza si può associare un massimo di 26 volumi aggiuntivi.
+Sì, a ogni istanza si può associare un massimo di 25 volumi aggiuntivi.
 
 ### In che modo vengono protetti i server?
 

@@ -11,7 +11,7 @@ hidden: true
 
 ## Objective
 
-[OVH Public Cloud Storage](https://www.ovh.com/ca/en/public-cloud/storage/){.external} offers an unlimited storage solution with simple billing that can be adapted to suit your needs.
+[OVH Public Cloud Storage](https://www.ovhcloud.com/en-ca/public-cloud/storage/){.external} offers an unlimited storage solution with simple billing that can be adapted to suit your needs.
 
 Our object containers include:
 

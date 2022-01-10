@@ -75,4 +75,4 @@ Per compiere questa operazione, e a seconda della tuo piano di hosting, hai a di
 [Utilizzo del software FileZilla con il tuo hosting](https://docs.ovh.com/it/hosting/hosting_condiviso_il_protocollo_ssh/){.external}.
 
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

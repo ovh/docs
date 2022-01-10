@@ -142,4 +142,4 @@ Scopri la nostra soluzione [SQL Privato]( https://www.ovhcloud.com/it/web-hostin
 
 Scopri la nostra soluzione [Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

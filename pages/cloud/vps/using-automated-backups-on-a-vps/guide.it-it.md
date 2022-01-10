@@ -104,6 +104,10 @@ $ mount /dev/sdb1 /mnt/restore
 
 Ora puoi passare a questa cartella e accedere ai tuoi dati di backup.
 
+> [!warning]
+> Ti ricordiamo che il server si riavvierà durante lo smontaggio del backup.
+>
+
 ### Best practice per l'utilizzo del backup automatico
 
 La funzionalità di backup automatico è basata sugli Snapshot VPS. Prima di utilizzare questa opzione, ti consigliamo di seguire gli step qui sotto per evitare anomalie.
