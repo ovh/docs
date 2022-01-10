@@ -2,7 +2,7 @@
 title: PostgreSQL - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the Command Line Interface (CLI)
 slug: postgresql/connect-cli
-section: PostgreSQL
+section: PostgreSQL - Guides
 order: 100
 ---
 

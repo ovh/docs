@@ -2,7 +2,7 @@
 title: PostgreSQL - Available extensions
 slug: postgresql/extensions
 excerpt: List of available PostgreSQL extensions
-section: PostgreSQL
+section: PostgreSQL - Guides
 order: 2
 ---
 
