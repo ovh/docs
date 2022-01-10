@@ -9,7 +9,7 @@ section: vRack
 
 ## Objective
 
-The [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVH dedicated servers](https://www.ovhcloud.com/en-gb/bare-metal/){.external}.
+The [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](https://www.ovhcloud.com/en-gb/bare-metal/){.external}.
 
 **Learn how to set the announcement zone of an IP block in vRack.**
 
