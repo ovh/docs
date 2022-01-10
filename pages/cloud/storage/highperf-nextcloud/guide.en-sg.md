@@ -1,81 +1,81 @@
 ---
-title: Utiliser High Performance avec Nextcloud
+title: Use High Performance with Nextcloud
 slug: s3/nextcloud
-excerpt: Découvrez comment configurer le stockage dans Nextcloud pour utiliser un bucket High Performance
+excerpt: Learn how to set up storage in Nextcloud to use a High Performance bucket
 section: Object Storage S3 High Performance
 order: 120
 ---
 
-**Dernière mise à jour le 03/01/2022**
+**Last updated on 3rd January 2022**
 
-## Objectif
+## Objective
 
-Nextcloud est une suite de logiciels client-serveur pour créer et utiliser des services d'hébergement de fichiers.
+Nextcloud is a suite of client-server software for creating and using file hosting services.
 
-**Ce guide explique comment configurer le stockage dans Nextcloud pour utiliser un bucket High Performance.**
+**This guide explains how to set up storage in Nextcloud to use a High Performance bucket.**
 
-## Prérequis
+## Requirements
 
-- Avoir créé un bucket
-- Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
-- Connaître vos informations d'identification S3 (access_key et secret_access_key)
+- A bucket
+- A user with the required access rights on the bucket
+- Your S3 credentials (access_key and secret_access_key)
 
-Consultez notre guide « [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
+See our [Getting started with S3 High Performance](https://docs.ovh.com/sg/en/storage/s3/getting-started-with-s3) guide.
 
-## En pratique
+## Instructions
 
-### Configuration depuis l'interface graphique
+### Configuration from the graphical interface
 
-#### Activation de l'application *External storage support*
+#### Activate the *External storage support* application
 
-Cliquez sur votre profil en haut à droite puis sur `Apps`{.action}.
+Click on your profile at the top right and then on `Apps`{.action}.
 
 ![Main menu](images/HighPerf-nextcloud-20211206101650679.png){.thumbnail}
 
-Sélectionnez le menu `Disabled Apps`{.action} dans le menu de gauche.
+Select the `Disabled Apps`{.action} in the left panel.
 
-Repérez l'application **External storage support** et cliquez sur `Enable`{.action}.
+Locate the **External storage support** application and click `Enable`{.action}
 
 ![Disabled Apps](images/HighPerf-nextcloud-20211206101817393.png){.thumbnail}
 
 #### Configuration
 
-Cliquez sur votre avatar en haut à droite puis sur `Settings`{.action}.
+Click on your avatar at the top right then on `Settings`{.action}.
 
 ![Main menu](images/HighPerf-nextcloud-20211206101913852.png){.thumbnail}
 
-1. Sélectionnez le menu `External storage`{.action}
-2. Créez un stockage de type *Amazon S3*
-3. Nommez votre dossier de destination
-4. Indiquez le nom de votre bucket
-5. Définissez l'hôte comme tel : `s3.<region>.perf.cloud.ovh.net`
-6. Définissez le port : 443
-7. Indiquez la région
-8. Activez SSL
-9. Renseignez votre clé d'accès
-10. Renseignez votre clé secrète
-11. `Validez`{.action}
+1. Select the `External storage`{.action} menu
+2. Create an *Amazon S3* storage type.
+3. Name your destination folder
+4. Specify the name of your bucket
+5. Set the host as: `s3.<region>.perf.cloud.ovh.net`
+6. Set the port to 443
+7. Specify the region
+8. Activate SSL
+9. Enter your access key
+10. Fill in your secret key
+11. `Validate`{.action}
 
 ![External Storage Amazon S3 completed](images/HighPerf-nextcloud-20211206102607233.png){.thumbnail}
 
-Ouvrez l'application `Files`{.action}, sélectionnez le menu `External storage`{.action} puis votre `bucket`{.action}.
+Open the `Files`{.action} application, select the `External storage`{.action} menu then your `bucket`{.action}.
 
 ![Files External Storage](images/HighPerf-nextcloud-20211206102749423.png){.thumbnail}
 
-Voici le résultat que vous devez obtenir :
+The result should be similar to this:
 
 ![Files External Storage Bucket](images/HighPerf-nextcloud-20211206102844377.png){.thumbnail}
 
-### Configuration depuis le CLI
+### Configuration from the CLI
 
-Tout d'abord, l'application **External storage support** doit être activée :
+First, the **External storage support** application must be enabled:
 
 ```bash
 $ php occ app:enable files_external
 files_external enabled
 ```
 
-Vérifiez que S3 est supporté sur votre installation :
+Check that S3 is supported on your installation:
 
 ```bash
 $ php occ files_external:backends storage amazons3
@@ -98,7 +98,7 @@ $ php occ files_external:backends storage amazons3
       - secret: password
 ```
 
-Montez votre bucket S3 sur Nextcloud comme point de montage **OVH_hp-bucket** :
+Mount your S3 bucket on Nextcloud as a **OVH_hp-bucket** mount point:
 
 ```bash
 $ php occ files_external:create -c bucket=hp-bucket \
@@ -113,7 +113,7 @@ $ php occ files_external:create -c bucket=hp-bucket \
 Storage created with id 4
 ```
 
-Validez vos paramètres :
+Validate your settings:
 
 ```bash
 $ php occ files_external:verify 4
@@ -122,7 +122,7 @@ $ php occ files_external:verify 4
   - message
 ```
 
-Vérifiez et mettez à jour les paramètres si nécessaire :
+Verify and update the settings if necessary:
 
 ```bash
 $ php occ files_external:list
@@ -134,7 +134,7 @@ $ php occ files_external:list
 
 ```
 
-Lancez l'indexation du nouveau stockage :
+Start indexing the new storage:
 
 ```bash
 $ php occ files:scan -vvv --path /admin/files/OVH_hp-bucket
@@ -149,9 +149,9 @@ Starting scan for user 1 out of 1 (admin)
 +---------+-------+--------------+
 ```
 
-### Définir votre bucket comme stockage principal
+### Set your bucket as primary storage
 
-Editez votre fichier `config/config.php` et ajoutez :
+Edit your `config/config.php` file and add:
 
 ```php
 'objectstore' => array(
@@ -170,6 +170,6 @@ Editez votre fichier `config/config.php` et ajoutez :
 ),
 ```
 
-## Aller plus loin
+## Go further
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en){.external}.
