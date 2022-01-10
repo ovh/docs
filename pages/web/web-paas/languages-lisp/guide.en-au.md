@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  
@@ -125,7 +125,7 @@ Given a relationship defined in `.platform.app.yaml`:
 
 ```yaml
 relationships:
-  pg: postgresql:postgresql
+    pg: postgresql:postgresql
 ```
 
 The following would access that relationship, and provide your Lisp program the credentials to connect to a PostgreSQL instance. Add this to your `.asd` file:

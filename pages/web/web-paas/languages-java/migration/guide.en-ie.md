@@ -4,7 +4,7 @@ slug: migration
 section: Java
 ---
 
-**Last updated 11th May 2021**
+**Last updated 7th January 2022**
 
 
 
@@ -34,12 +34,12 @@ To run a Java application at Web PaaS you will need:
 
 ## Monolith/Single Application
 
-To start a Java application, you need to understand the [Web PaaS structure](../../overview-structure).  At minimum you will need three [YAML files](../../configuration-yaml):
+To start a Java application, you need to understand the [Web PaaS structure](../../overview-structure).
+At minimum, you to configure your [application](../../configuration/app/_index.md)
+and have two [YAML files](../../configuration/yaml.md) (though they can be blank if you don't need them):
 
-1\. [Application](../../configuration-app)
-
-2\. [Route](../../configuration-routes)
-
+* [Routes](../../configuration/routes/_index.md)
+* [Services](../../configuration/services/_index.md)
 
 ### Application
 
@@ -58,15 +58,15 @@ web:
 
 1\. [A Java version](../#supported-versions), e,g.: `java:11`
 
-2\. [The build defines what happens when building the application](../../configuration-app/build#build), This build process will typically generate an executable file such as a uber-jar e.g.: `mvn clean package`
+2\. [Hooks define what happens when building the application](../../configuration-app/hooks). This build process typically generates an executable file such as a uber-jar e.g.: `mvn clean package`
 
-3\. [The commands key defines the command to launch the application](../../configuration-app/web#commands). E.g.:  `java -jar file.jar`
+3\. [The commands key defines the command to launch the application](../../configuration-app/app-reference#commands). E.g.:  `java -jar file.jar`
 
 4\. In the start's command needs to receive the port where the application will execute thought the `PORT` environment. That is trivial if your application follows the port bind principle. E.g.: `java -jar jar --port=$PORT`
 
 
 > [!primary]  
-> Be aware that after the build, it creates a read-only system. You have the [mount option to create a writable folder](../../configuration-app/storage#mounts).
+> Be aware that after the build, it creates a read-only system. You have the [mount option to create a writable folder](../../configuration-app/app-reference#mounts).
 > 
 ### Route
 
@@ -74,11 +74,11 @@ web:
 # .platform/routes.yaml
 
 "https://{default}/":
-  type: upstream
-  upstream: [1]
+    type: upstream
+    upstream: [1]
 "https://www.{default}/":
-  type: redirect
-  to: "https://{default}/"
+    type: redirect
+    to: "https://{default}/"
 ```
 
 1\. It defines the application will link in the route, e.g.: `"app:http"`
@@ -98,8 +98,8 @@ You have the option to use several languages in microservices. If you're using J
 
 [Web PaaS supports multiple applications](../../configuration-app/multi-app) and there are two options:
 
-* [One application YAML file to each application](../../configuration-app)
-* [Aggregate all applications in a single file with applications.yaml](../../configuration-app/multi-app#applicationsyaml)
+* One application YAML file to each application
+* Aggregate all applications in a single file with an `applications.yaml` file
 
 | Article                                                      | Content                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -116,9 +116,9 @@ You have the option to use several languages in microservices. If you're using J
 
 ## Access to services included at Web PaaS
 
-[Web PaaS has services managed by Web PaaS itself such as database, cache and search engine](../../configuration-services). However, you can use a database or any services such as a transition process, just be aware of the [firewall](../../configuration-app/firewall).
+[Web PaaS has services managed by Web PaaS itself such as database, cache and search engine](../../configuration-services). However, you can use a database or any services such as a transition process, just be aware of the [firewall](../..//configuration/app/app-reference.md#firewall).
 
-When applications need to access a service, it is important to include the [Relationships key](../../configuration-app/relationships), because. by default an application may not talk to any other container within a project it includes others projects as a microservices architecture.
+When applications need to access a service, it is important to include the [Relationships key](../../configuration/app/app-reference.md#relationships), because. by default an application may not talk to any other container within a project it includes others projects as a microservices architecture.
 
 To connect to a service from your deployed application, you will need to pass the relationships information into your application's configuration.  The way to do so varies with the application.  The most common mechanisms are listed below.
 

@@ -5,7 +5,7 @@ section: Administration
 order: 11
 ---
 
-**Last updated 21st June 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  
@@ -40,9 +40,9 @@ The management console displays all the activity happening on your environments.
 
 ### Header
 
-Within a project's environment, the management console exposes 4 main actions and 4 drop-down command options that you can use to interface with your environments.
+Within a project's environment, the management console exposes 4 main actions (Redeploy, Branch, Merge, and Sync) and 3 drop-down command options (URLs, SSH, and Code) that you can use to interface with your environments.
 
-![Header](images/header-new.png "0.5")
+![Header](images/header-new.png "0.3")
 
 #### Branch
 
@@ -84,6 +84,7 @@ These options are provided in a separate dialog box that will appear when you cl
 
 ![sync confirmation cli](images/header-sync-box.png "0.4")
 
+Be aware that sync uses the [Backup](../administration-backup-and-restore#backups-and-downtime) mechanism and will have the same caveats.
 
 Note that `Sync` is only available if your branch has no unmerged commits, and can be fast-forwarded.
 
@@ -91,7 +92,7 @@ It is good practice to take a backup of your environment before performing a syn
 
 #### Backup
 
-Creating a backup for an environment means saving a copy of the environment so that it can be restored. You will see the backup in the activity feed of your environment in the Web PaaS management console where you can trigger the restore by clicking on the `restore` link. 
+Creating a backup for an environment means saving a copy of the environment so that it can be restored. You will see the backup in the activity feed of your environment in the Web PaaS management console where you can trigger the restore by clicking on the `restore` link. For more information please refer [here](../administration-backup-and-restore).
 
 After clicking `Backup` a dialog box will appear that will provide commands to execute future merges from the command line using the Web PaaS CLI.
 
@@ -113,21 +114,28 @@ to restore an existing backup.
 
 #### URLs
 
-The URLs pull-down exposes the domains that can be used to access application environments from the web.
-
-#### GIT
-
-The "Git" pull-down displays the commands to use to clone the codebase via Git. If you are using Web PaaS as your primary remote repository, the command shown will clone from the project. Otherwise if you have set up an [external integration](../integrations-source), the command will clone directly from the integrated remote repository.
-
-If the project uses an external integration to a repository that you have not been given access to, you will not be able to clone until your access has been updated.
-
-#### CLI
-
-The CLI pull-down displays the commands to get your project set up locally with the Web PaaS CLI.
+The URLs drop-down exposes the domains that can be used to access application environments from the web.
 
 #### SSH
 
-The SSH pull-down display the commands to access your project over SSH.
+The SSH drop-down displays the commands to access your project using SSH.
+
+#### Code
+
+##### CLI
+
+The **CLI** tab displays the command to get your project set up locally with the Web PaaS CLI.
+
+##### GIT
+
+The **Git** tab displays the command to clone the codebase via Git.
+If you're using Web PaaS as your primary remote repository, the command clones from the project.
+If you have set up an [external integration](../integrations-source), the command clones directly from the integrated remote repository.
+
+If the project uses an external integration to a repository that you have not been given access to, you will not be able to clone until your access has been updated. See [User access and integrations](../administration-users#user-access-and-integrations) for more information.
+
+
+
 
 ### Configuration settings
 
@@ -141,7 +149,7 @@ Select the application container on the left to show more detailed information f
 
 ![Service tab - App Overview](images/app-overview.png "0.7")
 
-The "Overview" tab gives you metadata information regarding the application. It tells you what size container it has been configured for, the amount of persistent disk, the number of active workers and cron jobs, as well as the command to ssh into that container.
+The "Overview" tab gives you metadata information regarding the application. It tells you what size container it has been configured for, the amount of persistent disk, the number of active workers and cron jobs, and the command to SSH into that container.
 
 ![Service tab - App Crons](images/app-crons.png "0.7")
 

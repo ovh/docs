@@ -4,7 +4,7 @@ slug: kafka
 section: Services
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  
@@ -16,7 +16,7 @@ It is a framework for storing, reading and analyzing streaming data. See the [Ka
 
 ## Supported versions
 
-| **Grid** | 
+| **Grid** |  **Dedicated Generation 3** |
 |----------------------------------|  
 |  2.1 |  
 |  2.2 |  
@@ -31,7 +31,7 @@ The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](../
 ```json  
 {
     "service": "kafka25",
-    "ip": "169.254.46.170",
+    "ip": "169.254.209.147",
     "hostname": "t7lv3t3ttyh3vyrzgqguj5upwy.kafka25.service._.eu-3.platformsh.site",
     "cluster": "rjify4yjcwxaa-master-7rqtwti",
     "host": "kafka.internal",
@@ -62,25 +62,7 @@ relationships:
     kafkaqueue: "queuekafka:kafka"
 ```  
 
-> You will need to use `kafka` type when defining the service
->
-> ```yaml
-> # .platform/services.yaml
-> service_name:
->       type: kafka:version
->	disk:512
-> ```
->
-> and the endpoint `kafka` when defining the relationship
->
-> ```yaml
-> # .platform.app.yaml
->  relationships:
->       relationship_name: “service_name:kafka”
-> ```
->
-> Your `service_name` and `relationship_name` are defined by you, but we recommend making them distinct from each other.
->
+
 
 
 You can then use the service in a configuration file of your application with something like:

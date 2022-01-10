@@ -5,7 +5,7 @@ section: Development
 order: 5
 ---
 
-**Last updated 26th February 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  
@@ -20,7 +20,7 @@ A number of different log files are available depending on the application conta
 
 Although the files in `/var/log` are writable, they should not be written to directly. Only write to it via standard logging mechanisms, such as your application's logging facility.  If your application has its own logging mechanism that should be written to a dedicated logs mount in your application.
 
-All log files are trimmed to 100 MB automatically. But if you need to have complete logs, you can set up cron which will upload them to third-party storage. [Contextual Code](https://www.contextualcode.com/) made a [simple and well-described example](https://gitlab.com/contextualcode/platformsh-store-logs-at-s3) how to achieve it.
+All log files are trimmed to 100 MB automatically. But if you need to have complete logs, you can set up cron which will upload them to third-party storage. [Contextual Code](https://www.contextualcode.com/) made a [basic and well-described example](https://gitlab.com/contextualcode/platformsh-store-logs-at-s3) how to achieve it.
 
 ### `access.log`
 
@@ -52,7 +52,52 @@ nginx-level errors that occur once nginx has fully started will be recorded here
 
 ### `php.access.log`
 
-On a PHP container, the php.access.log contains a record of all requests to the PHP service.
+On a PHP container, the `php.access.log` contains a record of all requests to the PHP service.
+These requests are split in several parts into the logs.
+
+The `php.access.log` may look similar the following:
+
+```txt
+2021-07-01T13:57:12Z HEAD 200 284.288 ms 10240 kB 38.69% /
+2021-07-01T13:57:13Z POST 200 162.106 ms 10240 kB 61.69% /wp-cron.php?doing_wp_cron=0123456.789
+2021-07-01T14:02:13Z HEAD 200 305.745 ms 10240 kB 39.25% /
+2021-07-01T14:02:13Z POST 200 168.507 ms 10240 kB 65.28% /wp-cron.php?doing_wp_cron=0123457.789
+```
+
+It is consisting of several parts. 
+Let's have a look first, at how the log is formatted, which we can get from PHP's settings.
+
+```bash
+web@app.0:~$ cat -n /etc/php/7.4-zts/fpm/pool.d/www.conf  | grep "access.format"
+   319	;access.format = "%R - %u %t \"%m %r%Q%q\" %s %f %{mili}d %{kilo}M %C%%"
+```
+Please note that the path may change based on the version of PHP you are using. 
+
+The final `access.format` value contains the following:
+
+- `%R` : remote IP address
+
+- `%u` : remote user
+
+- `%t` : server time of receiving request (timestamp)
+
+- `%m` : HTTP request methods - more details can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+
+- `%r` : request uri
+
+- `%s` : HTTP response status codes - more details can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+- `%f` : script filename
+
+- `%d` : time taken to serve request (in miliseconds)
+
+- `%M` : peak memory allocated by php (in kilobytes)
+
+- `%C` : CPU used by each request
+
+
+Not all of these are always displayed. 
+In the previous example for instance, `%R`, `%u` and `%f` are not shown.
 
 ### `post_deploy.log`
 

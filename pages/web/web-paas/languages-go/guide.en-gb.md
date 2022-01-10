@@ -5,46 +5,48 @@ section: Languages
 order: 4
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  
 
-Web PaaS supports building and deploying applications written in Go using Go modules.  They are compiled during the Build hook phase, and support both committed dependencies and download-on-demand.
+Web PaaS supports building and deploying applications written in Go using Go modules. They are compiled during the Build hook phase, and support both committed dependencies and download-on-demand.
 
 ## Supported versions
 
 | **Grid** | 
 |----------------------------------|  
-|  1.11 |  
-|  1.12 |  
-|  1.13 |  
-|  1.14 |  
-|  1.15 |  
+|  1.16 |  
+|  1.17 |  
 
 To specify a Go container, use the `type` property in your `.platform.app.yaml`.
 
 
 ```yaml   
-type: 'golang:1.15'
+type: 'golang:1.17'
 ```  
 
 
 ## Deprecated versions
 
-The following container versions are also available.  However, due to their lack of [Go module](https://golang.org/cmd/go/#hdr-Modules__module_versions__and_more) support and the difficulties in supporting the GOPATH during the Web PaaS build they are not recommended.
+The following container versions are also available. However, they are not maintained upstream and as a consequence not recommended to use.
 
-- 1.10  
 - 1.8  
-- 1.9
+- 1.9  
+- 1.10  
+- 1.11  
+- 1.12  
+- 1.13  
+- 1.14  
+- 1.15
 
 ## Go modules
 
-The recommended way to handle Go dependencies on Web PaaS is using Go module support in Go 1.11 and later.  That allows the build process to use `go build` directly without any extra steps, and you can specify an output executable file of your choice.  (See the examples below.)
+The recommended way to handle Go dependencies on Web PaaS is using Go module support in Go 1.11 and later. That allows the build process to use `go build` directly without any extra steps, and you can specify an output executable file of your choice. (See the examples below.)
 
 ## Web PaaS variables
 
-Web PaaS exposes relationships and other configuration as [environment variables](../development-variables).  To make them easier to access you should use the provided [Config Reader library](https://github.com/platformsh/config-reader-go).  Most notably, it allows a program to determine at runtime what HTTP port it should listen on and what the credentials are to access [other services](../configuration-services).
+Web PaaS exposes relationships and other configuration as [environment variables](../development-variables). To make them easier to access you should use the provided [Config Reader library](https://github.com/platformsh/config-reader-go). Most notably, it allows a program to determine at runtime what HTTP port it should listen on and what the credentials are to access [other services](../configuration-services).
 
 ```go
 package main
@@ -73,7 +75,7 @@ func main() {
 
 ## Building and running the application
 
-Assuming your `go.mod` and `go.sum` files are present in your repository, the application may be built with a simple `go build` command that will produce a working executable.  You can then start it from the `web.commands.start` directive.  Note that the start command _must_ run in the foreground. Should the program terminate for any reason it will be automatically restarted.
+Assuming your `go.mod` and `go.sum` files are present in your repository, the application may be built with the command `go build`, which produces a working executable. You can then start it from the `web.commands.start` directive. Note that the start command _must_ run in the foreground. Should the program terminate for any reason it will be automatically restarted.
 
 The following basic `.platform.app.yaml` file is sufficient to run most Go applications.
 
@@ -100,18 +102,18 @@ web:
         /:
             # Route all requests to the Go app, unconditionally.
             # If you want some files served directly by the web server without hitting Go, see
-            # https://docs.ovh.com/gb/en/web-paas/configuration-app/web/
+            # https://docs.platform.sh/configuration/app/app-reference.html
             allow: false
             passthru: true
 
 disk: 1024
 ```
 
-Note that there will still be an Nginx proxy server sitting in front of your application.  If desired, certain paths may be served directly by Nginx without hitting your application (for static files, primarily) or you may route all requests to the Go application unconditionally, as in the example above.
+Note that there will still be an Nginx proxy server sitting in front of your application. If desired, certain paths may be served directly by Nginx without hitting your application (for static files, primarily) or you may route all requests to the Go application unconditionally, as in the example above.
 
 ## Project templates
 
-Web PaaS offers a project templates for Go applications using the structure described above.  It can be used as a starting point or reference for building your own website or web application.
+Web PaaS offers a project templates for Go applications using the structure described above. It can be used as a starting point or reference for building your own website or web application.
 
 
 ### Hugo 
@@ -143,21 +145,6 @@ Web PaaS offers a project templates for Go applications using the structure desc
  
 [View the repository](https://github.com/platformsh-templates/golang) on GitHub.
 
-### Beego 
-
-![image](images/beego.png)
-
-<p>This template demonstrates building the Beego framework for Web PaaS using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Beego is a popular web framework written in Go.</p>
-  
-#### Features
-- Go 1.14<br />  
-- MariaDB 10.4<br />  
-- Automatic TLS certificates<br />  
-- Git module-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/beego) on GitHub.
-
 ### Echo 
 
 ![image](images/BasicGo.png)
@@ -172,6 +159,21 @@ Web PaaS offers a project templates for Go applications using the structure desc
 - Git module-based build<br />  
  
 [View the repository](https://github.com/platformsh-templates/echo) on GitHub.
+
+### Beego 
+
+![image](images/beego.png)
+
+<p>This template demonstrates building the Beego framework for Web PaaS using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>Beego is a popular web framework written in Go.</p>
+  
+#### Features
+- Go 1.14<br />  
+- MariaDB 10.4<br />  
+- Automatic TLS certificates<br />  
+- Git module-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/beego) on GitHub.
 
 ### Gin 
 

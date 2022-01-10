@@ -4,7 +4,7 @@ slug: influxdb
 section: Services
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  
@@ -16,7 +16,7 @@ It exposes an HTTP API for client interaction. See the [InfluxDB documentation](
 
 ## Supported versions
 
-| **Grid** | 
+| **Grid** |  **Dedicated Generation 3** |
 |----------------------------------|  
 |  1.2 |  
 |  1.3 |  
@@ -30,7 +30,7 @@ The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](../
 ```json  
 {
     "service": "influxdb18",
-    "ip": "169.254.234.110",
+    "ip": "169.254.229.191",
     "hostname": "duqbjfn7t4dwr2fi2o7bsvqafy.influxdb18.service._.eu-3.platformsh.site",
     "cluster": "rjify4yjcwxaa-master-7rqtwti",
     "host": "influxdb.internal",
@@ -61,25 +61,7 @@ relationships:
     influxtimedb: "timedb:influxdb"
 ```  
 
-> You will need to use `influxdb` type when defining the service
->
-> ```yaml
-> # .platform/services.yaml
-> service_name:
->       type: influxdb:version
->	disk:256
-> ```
->
-> and the endpoint `influxdb` when defining the relationship
->
-> ```yaml
-> # .platform.app.yaml
->  relationships:
->       relationship_name: “service_name:influxdb”
-> ```
->
-> Your `service_name` and `relationship_name` are defined by you, but we recommend making them distinct from each other.
->
+
 
 
 You can then use the service in a configuration file of your application with something like:
@@ -109,7 +91,7 @@ InfluxDB includes its own [export mechanism](https://docs.influxdata.com/influxd
 webpaas tunnel:open
 ```
 
-That will open an SSH tunnel to all services on your current environment, and produce output something like the following:
+That opens an SSH tunnel to all services on your current environment and produce output like the following:
 
 ```bash
 SSH tunnel opened on port 30000 to relationship: influxtimedb

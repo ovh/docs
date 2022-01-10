@@ -4,7 +4,7 @@ slug: headless-chrome
 section: Services
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  
@@ -17,9 +17,15 @@ Puppeteer can be used to generate PDFs and screenshots of web pages, automate fo
 
 ## Supported versions
 
-| **Grid** | 
+| **Grid** |  **Dedicated Generation 3** |
 |----------------------------------|  
 |  73 |  
+|  80 |  
+|  81 |  
+|  83 |  
+|  84 |  
+|  86 |  
+|  91 |  
 
 ## Relationship
 
@@ -30,7 +36,7 @@ The format exposed in the `$PLATFORM_RELATIONSHIPS` [environment variable](../..
     "service": "headless",
     "ip": "169.254.73.96",
     "hostname": "3rxha4e2w4yv36lqlypy7qlkza.headless.service._.eu-3.platformsh.site",
-    "cluster": "moqwtrvgc63mo-master-7rqtwti",
+    "cluster": "moqwtrvgc63mo-main-7rqtwti",
     "host": "headless.internal",
     "rel": "http",
     "scheme": "http",
@@ -56,7 +62,7 @@ In your `.platform/services.yaml`:
 
 ```yaml   
 headlessbrowser:
-    type: chrome-headless:73
+    type: chrome-headless:91
 ```  
 
 
@@ -68,24 +74,8 @@ relationships:
     chromeheadlessbrowser: "headlessbrowser:http"
 ```  
 
-> You will need to use `chrome-headless` type when defining the service
->
-> ```yaml
-> # .platform/services.yaml
-> service_name:
->  	type: chrome-headless:version
-> ```
->
-> and the endpoint `http` when defining the relationship
->
-> ```yaml
-> # .platform.app.yaml
->  relationships:
->    	relationship_name: “service_name:http”
-> ```
->
-> Your service_name and relationship_name are defined by you, but we recommend making them distinct from each other.
->
+
+{{< endpoint-description "chrome-headless" >}}
 
 After configuration, include Puppeteer as a dependency in your `package.json`:
 

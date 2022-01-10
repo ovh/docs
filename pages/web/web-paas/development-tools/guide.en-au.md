@@ -5,7 +5,7 @@ section: Development
 order: 5
 ---
 
-**Last updated 11th May 2021**
+**Last updated 7th January 2022**
 
 
 ## Git
@@ -23,8 +23,8 @@ Before getting started, make sure you have it installed on your computer to be a
 
 ## SSH
 
-Secure Shell (SSH) is a secure, encrypted connection between your computer and the Web PaaS environment.  That includes connecting to your Git repository.  SSH offers two secure types of authentication, key-based and certificate-based.  We support both.
+Secure Shell (SSH) is a secure, encrypted connection between your computer and the Web PaaS environment.  That includes connecting to your Git repository.  SSH offers two secure types of authentication, based on keys or certificates.  We support both.
 
-Certificate-based authentication will be used automatically when you use the [WebPaas CLI](../development-cli) and run `webpaas ssh`.  You may force a login using `webpaas login -f` on the command line, provided you have a web browser available.
+Certificates are used automatically when you use the [Web PaaS CLI](../development-cli) and run almost any command.  You may force a login using `webpaas login -f` on the command line, provided you have a web browser available.
 
-If you wish to use keypair authentication, see the [SSH page](../development-ssh#keypair-based-authentication).
+To use key pairs, see the [SSH page](../development-ssh#authenticate-with-ssh-keys).

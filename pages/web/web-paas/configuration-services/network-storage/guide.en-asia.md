@@ -4,7 +4,7 @@ slug: network-storage
 section: Services
 ---
 
-**Last updated 12th February 2021**
+**Last updated 7th January 2022**
 
 
 
@@ -16,12 +16,16 @@ The network storage service enables a new kind of `mount` that refers to a share
 
 ## Supported versions
 
-| **Grid** | 
+| **Grid** |  **Dedicated Generation 3** |
 |----------------------------------|  
 |  1.0 |  
 
+This service is a reference to a version of our network storage implementation, not to a version of a 3rd party application. `network-storage` 2.0 will *not* work on the Grid. We recommend using version 1.0 unless you are a [Dedicated Generation 3](../../(dedicated-gen-3-overview) user. 
 
-(This is a reference to a version of our network storage implementation, not to a version of a 3rd party application.)
+> [!primary]  
+> It is not possible to upgrade or downgrade the network storage service version while keeping existing data in place. Changing the service version will require the service to be reinitialized. Any change to the service version will result in existing data becoming inaccessible.
+> 
+
 
 ## Define the service
 
@@ -95,7 +99,7 @@ In this example, `app1` will have access to the entire `uploads` directory by wr
 
 ## Worker instances
 
-When defining a [Worker](../../configuration-app/workers) instance it is important to keep in mind what mount behavior is desired.  Unless the `mounts` block is defined within the `web` and `workers` sections separately, a top level `mounts` block will apply to both instances.  However, `local` mounts will be a separate storage area for each instance while `service` mounts will refer to the same file system.  For example:
+When defining a [Worker](../../configuration-app/app-reference#workers) instance it is important to keep in mind what mount behavior is desired.  Unless the `mounts` block is defined within the `web` and `workers` sections separately, a top level `mounts` block will apply to both instances.  However, `local` mounts will be a separate storage area for each instance while `service` mounts will refer to the same file system.  For example:
 
 ```yaml
 name: app

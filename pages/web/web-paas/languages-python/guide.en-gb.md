@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  
@@ -45,10 +45,10 @@ type: 'python:3.9'
 
 ```yaml
 hooks:
-  build: |
-    pip install -r requirements.txt
-    pip install -e .
-    pip install gunicorn
+    build: |
+        pip install -r requirements.txt
+        pip install -e .
+        pip install gunicorn
 ```
 
    These are installed as global dependencies in your environment.
@@ -58,8 +58,8 @@ hooks:
 
 ```yaml
 web:
-  commands:
-    start: "gunicorn -b 0.0.0.0:$PORT project.wsgi:application"
+    commands:
+        start: "gunicorn -b 0.0.0.0:$PORT project.wsgi:application"
 ```
 
    This assumes the WSGI file is `project/wsgi.py` and the WSGI application object is named `application` in the WSGI file.
@@ -69,14 +69,14 @@ web:
 
 ```yaml
 web:
-  locations:
-    "/":
-      root: ""
-      passthru: true
-      allow: false
-    "/static":
-      root: "static/"
-      allow: true
+    locations:
+        "/":
+            root: ""
+            passthru: true
+            allow: false
+        "/static":
+            root: "static/"
+            allow: true
 ```
 
    This configuration asks our web server to handle HTTP requests at "/static" to serve static files stored in `/app/static/` folder while everything else is forwarded to your application server.
@@ -100,8 +100,8 @@ Then, set up the routes to your application in `.platform/routes.yaml`.
 
 ```yaml
 "https://{default}/":
-  type: upstream
-  upstream: "app:http"
+    type: upstream
+    upstream: "app:http"
 ```
 
 Here is the complete `.platform.app.yaml` file:
@@ -111,22 +111,22 @@ name: app
 type: python:2.7
 
 web:
-  commands:
-    start: "gunicorn -b $PORT project.wsgi:application"
-  locations:
-    "/":
-      root: ""
-      passthru: true
-      allow: false
-    "/static":
-      root: "static/"
-      allow: true
+    commands:
+        start: "gunicorn -b $PORT project.wsgi:application"
+    locations:
+        "/":
+            root: ""
+            passthru: true
+            allow: false
+        "/static":
+            root: "static/"
+            allow: true
 
 hooks:
-  build: |
-    pip install -r requirements.txt
-    pip install -e .
-    pip install gunicorn
+    build: |
+        pip install -r requirements.txt
+        pip install -e .
+        pip install gunicorn
 
 mounts:
    tmp:
@@ -150,8 +150,8 @@ The above Gunicorn based WSGI example can be modified to use the Python 3.5+ asy
 
 ```yaml
 web:
-  commands:
-    start: "gunicorn -b $PORT -k gaiohttp project.wsgi:application"
+    commands:
+        start: "gunicorn -b $PORT -k gaiohttp project.wsgi:application"
 ```
 
 3\. Add `aiohttp` as pip dependency in your build hook.
@@ -159,10 +159,10 @@ web:
 
 ```yaml
 hooks:
-  build: |
-    pip install -r requirements.txt
-    pip install -e .
-    pip install gunicorn aiohttp
+    build: |
+        pip install -r requirements.txt
+        pip install -e .
+        pip install gunicorn aiohttp
 ```
 
 ## Accessing services
@@ -228,21 +228,19 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/django2) on GitHub.
 
-### Python 3 running UWSGI 
+### Pelican 
 
-![image](images/python.png)
+![image](images/pelican.png)
 
-<p>This template provides the most basic configuration for running a custom Python 3.7 project.  It includes the `platformshconfig` package and demonstrates using it to connect to MariaDB and Redis.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.  The application runs through the UWSGI runner.</p>
-<p>Python is a general purpose scripting language often used in web development.</p>
+<p>This template provides a basic Pelican skeleton.  Only content files need to be committed, as Pelican itself is downloaded at build time via the Pipfile.  All files are generated at build time, so at runtime only static files need to be served.</p>
+<p>Pelican is a static site generator written in Python and using Jinja for templating.</p>
   
 #### Features
 - Python 3.8<br />  
-- MariaDB 10.4<br />  
-- Redis 5.0<br />  
 - Automatic TLS certificates<br />  
 - Pipfile-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/python3-uwsgi) on GitHub.
+[View the repository](https://github.com/platformsh-templates/pelican) on GitHub.
 
 ### Wagtail 
 
@@ -290,22 +288,6 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/django3) on GitHub.
 
-### Basic Python 3 
-
-![image](images/basicpython3.png)
-
-<p>This template provides the most basic configuration for running a custom Python 3.7 project.  It includes the `platformshconfig` package and demonstrates using it to connect to MariaDB and Redis.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.  The application starts as a bare Python process with no separate runner.</p>
-<p>Python is a general purpose scripting language often used in web development.</p>
-  
-#### Features
-- Python 3.8<br />  
-- MariaDB 10.4<br />  
-- Redis 5.0<br />  
-- Automatic TLS certificates<br />  
-- Pipfile-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/python3) on GitHub.
-
 ### Pyramid 
 
 ![image](images/pyramid.png)
@@ -322,17 +304,35 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/pyramid) on GitHub.
 
-### Pelican 
+### Basic Python 3 
 
-![image](images/pelican.png)
+![image](images/basicpython3.png)
 
-<p>This template provides a basic Pelican skeleton.  Only content files need to be committed, as Pelican itself is downloaded at build time via the Pipfile.  All files are generated at build time, so at runtime only static files need to be served.</p>
-<p>Pelican is a static site generator written in Python and using Jinja for templating.</p>
+<p>This template provides the most basic configuration for running a custom Python 3.7 project.  It includes the `platformshconfig` package and demonstrates using it to connect to MariaDB and Redis.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.  The application starts as a bare Python process with no separate runner.</p>
+<p>Python is a general purpose scripting language often used in web development.</p>
   
 #### Features
 - Python 3.8<br />  
+- MariaDB 10.4<br />  
+- Redis 5.0<br />  
 - Automatic TLS certificates<br />  
 - Pipfile-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/pelican) on GitHub.
+[View the repository](https://github.com/platformsh-templates/python3) on GitHub.
+
+### Python 3 running UWSGI 
+
+![image](images/python.png)
+
+<p>This template provides the most basic configuration for running a custom Python 3.7 project.  It includes the `platformshconfig` package and demonstrates using it to connect to MariaDB and Redis.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.  The application runs through the UWSGI runner.</p>
+<p>Python is a general purpose scripting language often used in web development.</p>
+  
+#### Features
+- Python 3.8<br />  
+- MariaDB 10.4<br />  
+- Redis 5.0<br />  
+- Automatic TLS certificates<br />  
+- Pipfile-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/python3-uwsgi) on GitHub.
 

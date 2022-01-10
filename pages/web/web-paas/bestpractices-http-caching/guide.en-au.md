@@ -2,9 +2,10 @@
 title: HTTP caching
 slug: bestpractices-http-caching
 section: Best practices
+order: 10
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  

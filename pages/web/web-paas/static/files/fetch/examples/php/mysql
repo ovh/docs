@@ -36,9 +36,9 @@ try {
     $conn->query($sql);
 
     // Insert data.
-    $sql = "INSERT INTO People (name, city) VALUES 
-        ('Neil Armstrong', 'Moon'), 
-        ('Buzz Aldrin', 'Glen Ridge'), 
+    $sql = "INSERT INTO People (name, city) VALUES
+        ('Neil Armstrong', 'Moon'),
+        ('Buzz Aldrin', 'Glen Ridge'),
         ('Sally Ride', 'La Jolla');";
     $conn->query($sql);
 

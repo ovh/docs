@@ -4,18 +4,21 @@ slug: ini
 section: Php
 ---
 
-**Last updated 31st March 2021**
+**Last updated 7th January 2022**
 
 
 
 ## Objective  
 
-There are two ways to customize `php.ini` values for your application. The recommended method is to use the [`variables` property](../../configuration-app/variables) of `.platform.app.yaml` to set ini values using the `php` prefix. For example, to increase the PHP memory limit you'd put the following in `.platform.app.yaml`:
+There are two ways to customize `php.ini` values for your application.
+The recommended method is to use the [`variables` property](/configuration/app/app-reference.m#variables)
+of `.platform.app.yaml` to set `ini` values using the `php` prefix.
+For example, to increase the PHP memory limit you'd put the following in `.platform.app.yaml`:
 
 ```yaml
 variables:
-   php:
-       memory_limit: 256M
+    php:
+        memory_limit: "256M"
 ```
 
 It's also possible to provide a custom `php.ini` file in the repository in the root of the application (where your `.platform.app.yaml` file is).
@@ -30,8 +33,8 @@ Another example is to set the timezone of the PHP runtime (though, the timezone 
 
 ```yaml
 variables:
-   php:
-       "date.timezone": "Europe/Paris"
+    php:
+        date.timezone: "Europe/Paris"
 ```
 
 or
@@ -50,8 +53,8 @@ A common recommendation for securing a PHP installation is to disable certain bu
 
 ```yaml
 variables:
-   php:
-       "disable_functions": "pcntl_exec,pcntl_fork"
+    php:
+        disable_functions: "pcntl_exec,pcntl_fork"
 ```
 
 Common functions to disable include:

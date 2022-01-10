@@ -4,7 +4,7 @@ slug: apachesolr-module
 section: Drupal7
 ---
 
-**Last updated 11th May 2021**
+**Last updated 7th January 2022**
 
 
 # Using Solr with the module Apache Solr Search on Drupal 7.x

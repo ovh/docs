@@ -5,7 +5,7 @@ section: Development
 order: 5
 ---
 
-**Last updated 11th May 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  
@@ -13,7 +13,7 @@ order: 5
 While Web PaaS is great as a tool for hosting an application during both development and production, it's naturally not the ideal place to edit code.  You can't, in fact, as the file system is read-only (as it should be). The proper place to edit your code is on your computer.
 
 
-You must have an [SSH key](../development-tools#ssh) already configured on your account, and have both [Git](../development-tools#git) and the [Web PaaS CLI](../development-cli) installed before continuing.
+You need to have both [Git](../development-tools#git) and the [Web PaaS CLI](../development-cli) installed before continuing.
 
 ## Download the code
 
@@ -68,7 +68,7 @@ Web root: ~/htdocs/my-project/_www
 
 Because the `webpaas build` command will run locally, any runtime or tools used in your build process need to be available in your local environment, or the build will fail.  It may also result in side effects, such as the installation on your local computer of packages referenced in your `dependencies` block.
 
-If that is undesireable, a local virtual machine will let you create an enclosed local development environment that won't affect your main system.
+If that is undesirable, a local virtual machine will let you create an enclosed local development environment that won't affect your main system.
 
 ## Running the code
 

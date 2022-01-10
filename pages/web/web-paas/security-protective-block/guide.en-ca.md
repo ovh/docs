@@ -5,7 +5,7 @@ section: Security
 order: 8
 ---
 
-**Last updated 11th May 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  
@@ -45,13 +45,13 @@ If nonetheless you want to opt out of the protective block, you simply need to s
 
 ```yaml
 preflight:
-   enabled: false
+    enabled: false
 ```
 
 You can also explicitly opt-out of some specific check like this:
 
 ```yaml
 preflight:
-   enabled: true
-   ignore_rules: [ "drupal:SA-CORE-2014-005" ]
+    enabled: true
+    ignore_rules: [ "drupal:SA-CORE-2014-005" ]
 ```

@@ -5,5 +5,5 @@ section: Integrations
 hidden: true
 ---
 
-**Last updated 11th May 2021**
+**Last updated 7th January 2022**
 

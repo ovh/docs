@@ -4,7 +4,7 @@ slug: xdebug
 section: Php
 ---
 
-**Last updated 31st March 2021**
+**Last updated 7th January 2022**
 
 
 
@@ -12,7 +12,7 @@ section: Php
 
 [Xdebug](https://xdebug.org/) is a real-time debugger extension for PHP.  While usually used for local development, it can also be helpful for debugging aberrant behavior on the server.  It is available on Web PaaS Grid instances running PHP 7.2 and higher.
 
-As configured on Web PaaS, it avoids any runtime overhead for non-debug requests, even in production, and only allows SSH-tunneled connections to avoid any security issues.
+As configured on Web PaaS, it avoids any runtime overhead for non-debug requests, even in production, and only allows connections via SSH tunnels to avoid any security issues.
 
 ## Setting up Xdebug
 
@@ -38,8 +38,8 @@ If you have the [router cache](../../configuration-routes/cache) enabled, you wi
 "https://{default}/":
     # ...
     cache:
-      enabled: true
-      cookies: ['/^SS?ESS/', 'XDEBUG_SESSION']
+        enabled: true
+        cookies: ['/^SS?ESS/', 'XDEBUG_SESSION']
 ```
 
 ## Using Xdebug
@@ -51,6 +51,10 @@ From your local checkout of your application, run `webpaas environment:xdebug` (
 By default, Xdebug operates on port 9000.  Generally, it is best to configure your IDE to use that port.  If you wish to use an alternate port use the `--port` flag.
 
 To close the tunnel and terminate the debug connection, press `Ctrl-C`.
+
+> [!primary]  
+> Note that because you have several VMs running but your tunnel is connected to only one of them, your requests won't always reach the same host. 
+> 
 
 ### Install an Xdebug helper
 

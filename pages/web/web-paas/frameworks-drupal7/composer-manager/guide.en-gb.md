@@ -4,7 +4,7 @@ slug: composer-manager
 section: Drupal7
 ---
 
-**Last updated 11th May 2021**
+**Last updated 7th January 2022**
 
 
 
@@ -69,22 +69,22 @@ Create a build hook in your `.platform.app.yaml` file that will install Composer
 
 ```yaml
 hooks:
-  build: |
-    # Install Composer dependencies.
-    cd composer
-    composer install --no-interaction --optimize-autoloader --no-dev
+    build: |
+        # Install Composer dependencies.
+        cd composer
+        composer install --no-interaction --optimize-autoloader --no-dev
 ```
 
 Replace `composer` with whatever the path to the composer directory is. Note that if using the `drupal` build flavor with Drush Make, then the `composer` directory may have been moved into the same directory as your modules, like `public/sites/default`. It can be moved back via another line in the build hook:
 
 ```yaml
 hooks:
-  build: |
-    # Move the Composer directory (back) to the application root.
-    mv public/sites/default/composer composer
-    # Install Composer dependencies.
-    cd composer
-    composer install --no-interaction --optimize-autoloader --no-dev
+    build: |
+        # Move the Composer directory (back) to the application root.
+        mv public/sites/default/composer composer
+        # Install Composer dependencies.
+        cd composer
+        composer install --no-interaction --optimize-autoloader --no-dev
 ```
 
 The `composer install` command may also be further customized as desired.

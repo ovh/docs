@@ -5,22 +5,22 @@ section: Development
 order: 5
 ---
 
-**Last updated 26th February 2021**
+**Last updated 7th January 2022**
 
 
 ## Pull code from a private Git repository
 
 Let's say you're building a module (*or theme, library...*) which is stored in a private Git repository that you have access to, and you want to use it on your project. Web PaaS allows you to include code dependencies that are stored in external private Git repositories.
 
-To grant Web PaaS access to your private Git repository, you need to add the project public SSH key to the deploy keys of your Git repository.
+To grant Web PaaS access to your private Git repository, you need to add the project's public SSH key to the deploy keys of your Git repository.
 
 You can copy your project's public key by going to the Settings tab on the management console and then clicking the Deploy Key tab on the left hand side.
 
 ![Deploy Key](images/settings-deploy-key.png)
 
-If your private repository is on GitHub, go to the target repository's settings page. Go to *Deploy Keys* and click *Add deploy key*. Paste the public SSH key in and submit. By default, on github, deploy keys are read only, so you don't need to worry about the system pushing code to the private repository.
+If your private repository is on GitHub, go to the target repository's settings page. Go to **Deploy Keys** and click **Add deploy key**. Paste the public key and submit. The GitHub default, is for deploy keys to be read only, so you don't need to worry about the system pushing code to the private repository.
 
-If you're using Drupal for example, you can now use your private module by adding it to your make file:
+If you're using Drupal, for example, you can now use your private module by adding it to your make file:
 
 ```ini
 ; Add private repository from GitHub

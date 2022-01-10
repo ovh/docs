@@ -4,7 +4,7 @@ slug: dns
 section: Steps
 ---
 
-**Last updated 11th May 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  
@@ -28,6 +28,14 @@ We don't want that.  You don't want that.  Using a CNAME DNS record pointing at 
 The DNS specification was originally published in 1987 in [RFC 1034](https://tools.ietf.org/html/rfc1034) and [RFC 1035](https://tools.ietf.org/html/rfc1035), long before name-based HTTP hosting became prevalent.  Those RFCs plus the many follow-ups to clarify and expand on it are somewhat vague on the behavior of CNAME, but it's generally understood that an apex domain (`example.com`) may not be used as an alias in a CNAME record.  That creates a problem if you want to use an apex domain with any container-based managed hosting service like Web PaaS, because of the point above.
 
 There's a [detailed thread](https://serverfault.com/questions/613829/why-cant-a-cname-record-be-used-at-the-apex-aka-root-of-a-domain) on the subject that provides more technical detail.
+
+## Where should the CNAME point to?
+
+You can access the CNAME target from your terminal by using the CLI and the command:
+
+```bash
+webpaas environment:info edge_hostname
+```
 
 ## Handling Apex domains
 

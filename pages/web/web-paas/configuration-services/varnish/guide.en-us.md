@@ -4,7 +4,7 @@ slug: varnish
 section: Services
 ---
 
-**Last updated 31st March 2021**
+**Last updated 7th January 2022**
 
 
 
@@ -16,10 +16,12 @@ However, it is possible to configure a Varnish instance as part of an applicatio
 
 ## Supported versions
 
-| **Grid** | 
+| **Grid** |  **Dedicated Generation 3** |
 |----------------------------------|  
-|  5.6 |  
+|  5.1 |  
+|  5.2 |  
 |  6.0 |  
+|  6.3 |  
 
 ## How it works
 
@@ -40,7 +42,7 @@ Add the following to your `.platform/services.yaml` file:
 
 ```yaml   
 varnish:
-    type: varnish:6.0
+    type: varnish:6.3
     relationships:
         application: 'app:http'
     configuration:
@@ -171,9 +173,9 @@ You can then access the `varnishstats` relationship over HTTP at the following p
 Note that because of the circular relationship issue noted above this cannot be done on the application that Varnish is forwarding to.  It will need to be run on a separate application container.
 
 To access the Varnish endpoint:
-- Connect to your cluster [using ssh](../../development-ssh) or through the CLI `webpaas ssh -p <project id>`,
+- Connect to your cluster [using ssh](../../development-ssh) or through the CLI: `webpaas ssh -p <project id>`,
 
-- Display the [relationships array](../../configuration-app/relationships) with `echo $PLATFORM_RELATIONSHIPS | base64 -d | jq '.'`,
+- Display the [relationships array](../app/app-reference.md#relationships) with `echo $PLATFORM_RELATIONSHIPS | base64 -d | jq '.'`,
 
 - Query Varnish with `curl varnishstats.internal:8081/stats`, for example, to access the statistics directly. Be sure to update the request according to the name of the relationship.
 

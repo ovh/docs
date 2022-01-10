@@ -4,7 +4,7 @@ slug: tethered
 section: Local
 ---
 
-**Last updated 11th May 2021**
+**Last updated 7th January 2022**
 
 
 # Tethered Local
@@ -23,14 +23,14 @@ Note that other Web PaaS environment configuration such as the routes or applica
 
 For the local web server the approach will vary depending on your language.
 
-* For a self-serving language (Go or Node.js), simply run the program locally.
-* For PHP, you may install your own copy of Nginx (or Apache) and PHP-FPM, or simply use the built-in PHP web server.  Be aware however that by default the PHP web server will ignore environment variables by default.  You will need to explicitly instruct it to read them, like so: `php -S -d variables_order=EGPCS localhost:8001`.  That will start a basic web server capable of running PHP, serving the current directory, on port 8001, using available environment variables.  See the [PHP manual](https://www.php.net/manual/en/features.commandline.webserver.php) for more information.
+* For a self-serving language (Go or Node.js), just run the program locally.
+* For PHP, you may install your own copy of Nginx (or Apache) and PHP-FPM, or just use the built-in PHP web server. Be aware however that by default the PHP web server will ignore environment variables by default. You will need to explicitly instruct it to read them, like so: `php -S -d variables_order=EGPCS localhost:8001`. That will start a basic web server capable of running PHP, serving the current directory, on port 8001, using available environment variables. See the [PHP manual](https://www.php.net/manual/en/features.commandline.webserver.php) for more information.
 * For other languages it is recommended that you install your own copy of Nginx or Apache.
 * A virtual machine or Docker image is also a viable option.
 
 ## SSH tunneling
 
-Now that the code is running, it needs to connect it to its services.  For that, open an SSH tunnel to the current project.
+Now that the code is running, it needs to connect it to its services. For that, open an SSH tunnel to the current project.
 
 ```bash
 $ webpaas tunnel:open

@@ -30,19 +30,15 @@
     <path d="M480 524.75L480 490" id="d3ChOLl291"/>
     <path d="M376.07 120L320 120L320 540L270 540" id="b25gUS2xrt"/>
     <text id="a6vPlOGZH" x="148.03" y="58.11" font-size="14" font-family="Overpass" font-weight="normal" font-style="normal" letter-spacing="0" alignment-baseline="before-edge" transform="matrix(1 0 0 1 12.484373434455112 51.88524590164176)" style="line-height:100%" xml:space="preserve" dominant-baseline="text-before-edge">
-        <tspan x="158.03" dy="0em" alignment-baseline="before-edge" dominant-baseline="text-before-edge" text-anchor="middle">Git Push</tspan>
+        <tspan x="158.03" dy="0em" alignment-baseline="before-edge" dominant-baseline="text-before-edge" text-anchor="middle">Git push or activation</tspan>
     </text>
-    <style id="overpass700normal">
-    </style>
     <text id="adtQUBHky" x="148.03" y="58.11" font-size="14" font-family="Overpass" font-weight="normal" font-style="normal" letter-spacing="0" alignment-baseline="before-edge" transform="matrix(1 0 0 1 331.9672131147559 471.8852459016417)" style="line-height:100%" xml:space="preserve" dominant-baseline="text-before-edge">
         <tspan x="158.03" dy="0em" alignment-baseline="before-edge" dominant-baseline="text-before-edge" text-anchor="middle">Serve requests</tspan>
     </text>
-    <text id="afdfbnHCi" x="148.03" y="58.11" font-size="12" font-family="Overpass" font-weight="normal" font-style="normal" letter-spacing="0" alignment-baseline="before-edge" transform="matrix(1 0 0 1 11.967213114755936 124.34426229508438)" style="line-height:100%" xml:space="preserve" dominant-baseline="text-before-edge">
+    <text id="afdfbnHCi" x="146.8" y="58.11" font-size="12" font-family="Overpass" font-weight="normal" font-style="normal" letter-spacing="0" alignment-baseline="before-edge" transform="matrix(1 0 0 1 13.196721311477262 194.18032786885544)" style="line-height:100%" xml:space="preserve" dominant-baseline="text-before-edge">
         <tspan x="158.03" dy="0em" alignment-baseline="before-edge" dominant-baseline="text-before-edge" text-anchor="middle">Pull container image</tspan>
     </text>
-    <style id="overpassnormalnormal">
-    </style>
-    <text id="cbGZZKBPb" x="146.8" y="58.11" font-size="12" font-family="Overpass" font-weight="normal" font-style="normal" letter-spacing="0" alignment-baseline="before-edge" transform="matrix(1 0 0 1 13.196721311477262 194.18032786885544)" style="line-height:100%" xml:space="preserve" dominant-baseline="text-before-edge">
+    <text id="cbGZZKBPb" x="148.03" y="58.11" font-size="12" font-family="Overpass" font-weight="normal" font-style="normal" letter-spacing="0" alignment-baseline="before-edge" transform="matrix(1 0 0 1 11.967213114755936 124.34426229508438)" style="line-height:100%" xml:space="preserve" dominant-baseline="text-before-edge">
         <tspan x="156.8" dy="0em" alignment-baseline="before-edge" dominant-baseline="text-before-edge" text-anchor="middle">Validate configuration</tspan>
     </text>
     <text id="a3ljEoGWNi" x="148.03" y="58.11" font-size="12" font-family="Overpass" font-weight="normal" font-style="normal" letter-spacing="0" alignment-baseline="before-edge" transform="matrix(1 0 0 1 11.967213114755936 264.01639344262645)" style="line-height:100%" xml:space="preserve" dominant-baseline="text-before-edge">
@@ -212,10 +208,10 @@
             <use xlink:href="#adtQUBHky" opacity="1" fill="#ffffff" fill-opacity="1"/>
         </g>
         <g id="f4iGyCSlMk">
-            <use xlink:href="#afdfbnHCi" opacity="1" fill="#171719" fill-opacity="1"/>
+            <use xlink:href="#cbGZZKBPb" opacity="1" fill="#171719" fill-opacity="1"/>
         </g>
         <g id="cL5Pt61u">
-            <use xlink:href="#cbGZZKBPb" opacity="1" fill="#171719" fill-opacity="1"/>
+            <use xlink:href="#afdfbnHCi" opacity="1" fill="#171719" fill-opacity="1"/>
         </g>
         <g id="fMq5pLPZI">
             <use xlink:href="#a3ljEoGWNi" opacity="1" fill="#171719" fill-opacity="1"/>

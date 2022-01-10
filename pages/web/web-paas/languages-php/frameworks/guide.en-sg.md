@@ -4,7 +4,7 @@ slug: frameworks
 section: Php
 ---
 
-**Last updated 25th May 2021**
+**Last updated 7th January 2022**
 
 
 
@@ -64,8 +64,8 @@ Symfony FAQs, how-to guides and other tutorials right on [Web PaaS Community](ht
 
 ### Templates
 
-* [Symfony 3](https://github.com/platformsh-templates/symfony3)
 * [Symfony 4](https://github.com/platformsh-templates/symfony4)
+* [Symfony 5](https://github.com/platformsh-templates/symfony5)
 
 ## TYPO3
 

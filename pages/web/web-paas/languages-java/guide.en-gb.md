@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 7th January 2022**
 
 
 ## Objective  
@@ -18,9 +18,9 @@ Java is a general-purpose programming language, and one of the most popular in t
 
 | **Grid** | 
 |----------------------------------|  
+|  8 |  
 |  11 |  
 |  12 |  
-|  8 |  
 |  13 |  
 |  14 |  
 
@@ -73,34 +73,61 @@ A number of project templates for major Java applications are available on GitHu
  
 [View the repository](https://github.com/platformsh-templates/quarkus) on GitHub.
 
-### Payara Micro 
+### Jetty 
 
-![image](images/payaramicro.png)
+![image](images/jetty.jpeg)
 
-<p>This project provides a starter kit for Payara Micro projects hosted on Web PaaS.  It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
-<p>Payara Micro is an Open Source, lightweight Java EE (Jakarta EE) microservices deployments.</p>
+<p>This template provides an Eclipse Jetty Web server and javax.servlet container, plus support for HTTP/2, WebSocket, OSGi, JMX, JNDI, JAAS and many other integrations.  Jetty itself is downloaded on the fly in the build hook based on the provided `pom.xml` file.</p>
+<p>Eclipse Jetty is used in a wide variety of projects and products, both in development and production. Jetty can be easily embedded in devices, tools, frameworks, application servers, and clusters.</p>
   
 #### Features
 - Java 11<br />  
 - Automatic TLS certificates<br />  
 - Maven-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/microprofile-payara) on GitHub.
+[View the repository](https://github.com/platformsh-templates/jetty) on GitHub.
 
-### Spring MVC, Maven, MongoDB 
+### Micronaut 
 
-![image](images/springgradle.png)
+![image](images/micronaut.png)
 
-<p>This template demonstrates building a Spring MVC application. It uses Maven to build the application and deploy it to Web PaaS.</p>
-<p>A sample Hello World application is provided as a starting point.  It includes a MongoDB database, and the sample application shows how to make the database connection. The example code also demonstrates how to access the Web PaaS environment variables using the Web PaaS Config Reader library.</p>
+<p>This project provides a starter kit for Micronaut projects hosted on Web PaaS.  It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
+<p>Micronaut is a modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications.</p>
   
 #### Features
 - Java 11<br />  
-- MongoDB 3.6<br />  
 - Automatic TLS certificates<br />  
 - Maven-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/spring-mvc-maven-mongodb) on GitHub.
+[View the repository](https://github.com/platformsh-templates/micronaut) on GitHub.
+
+### KumuluzEE 
+
+![image](images/kumuluzee.png)
+
+<p>This project provides a starter kit for KumuluzEE Eclipse MicroProfile projects hosted on Web PaaS. It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
+<p>KumuluzEE is a lightweight framework for developing microservices using standard Java, Java EE / Jakarta EE technologies and migrating existing Java applications to microservices. KumuluzEE packages microservices as standalone JARs. KumuluzEE microservices are lightweight and optimized for size and start-up time.</p>
+  
+#### Features
+- Java 11<br />  
+- Automatic TLS certificates<br />  
+- Maven-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/microprofile-kumuluzee) on GitHub.
+
+### Open Liberty 
+
+![image](images/openliberty.png)
+
+<p>This project provides a starter kit for Open Liberty Eclipse MicroProfile projects hosted on Web PaaS.  It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
+<p>Open Liberty is a highly composable, fast to start, dynamic application server runtime environment.</p>
+  
+#### Features
+- Java 11<br />  
+- Automatic TLS certificates<br />  
+- Maven-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/microprofile-openliberty) on GitHub.
 
 ### Spring Boot, Gradle, Mysql 
 
@@ -117,77 +144,6 @@ A number of project templates for major Java applications are available on GitHu
  
 [View the repository](https://github.com/platformsh-templates/spring-boot-gradle-mysql) on GitHub.
 
-### Micronaut 
-
-![image](images/micronaut.png)
-
-<p>This project provides a starter kit for Micronaut projects hosted on Web PaaS.  It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
-<p>Micronaut is a modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications.</p>
-  
-#### Features
-- Java 11<br />  
-- Automatic TLS certificates<br />  
-- Maven-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/micronaut) on GitHub.
-
-### Jetty 
-
-![image](images/jetty.jpeg)
-
-<p>This template provides an Eclipse Jetty Web server and javax.servlet container, plus support for HTTP/2, WebSocket, OSGi, JMX, JNDI, JAAS and many other integrations.  Jetty itself is downloaded on the fly in the build hook based on the provided `pom.xml` file.</p>
-<p>Eclipse Jetty is used in a wide variety of projects and products, both in development and production. Jetty can be easily embedded in devices, tools, frameworks, application servers, and clusters.</p>
-  
-#### Features
-- Java 11<br />  
-- Automatic TLS certificates<br />  
-- Maven-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/jetty) on GitHub.
-
-### Apache Tomcat 
-
-![image](images/Tomcat.png)
-
-<p>This project provides a starter kit for Apache Tomcat hosted on Web PaaS.  Tomcat itself is downloaded on the fly in the build hook based on the provided `pom.xml` file.</p>
-<p>Apache Tomcat is an open-source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and WebSocket technologies.</p>
-  
-#### Features
-- Java 11<br />  
-- Automatic TLS certificates<br />  
-- Maven-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/tomcat) on GitHub.
-
-### Spring, Kotlin, Maven 
-
-![image](images/springkotlin.png)
-
-<p>This template demonstrates building a Spring MVC application in the Kotlin language. It uses Maven to build the application and deploy it to Web PaaS.</p>
-<p>>A sample Hello World application is provided as a starting point.  It includes an Oracle MySQL database, and the sample application shows how to make the database connection. The example code also demonstrates how to access the Web PaaS environment variables.</p>
-  
-#### Features
-- Java 11<br />  
-- MySQL 8.0<br />  
-- Automatic TLS certificates<br />  
-- Maven-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/spring-kotlin) on GitHub.
-
-### Wildfly 
-
-![image](images/wildfly.png)
-
-<p>This project provides a starter kit for Wildfly Eclipse MicroProfile projects hosted on Web PaaS.  It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
-<p>WildFly is a flexible, lightweight, managed application runtime that helps you build amazing applications.</p>
-  
-#### Features
-- Java 11<br />  
-- Automatic TLS certificates<br />  
-- Maven-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/microprofile-wildfly) on GitHub.
-
 ### Spring Boot, Maven, Mysql 
 
 ![image](images/springgradle.png)
@@ -203,48 +159,33 @@ A number of project templates for major Java applications are available on GitHu
  
 [View the repository](https://github.com/platformsh-templates/spring-boot-maven-mysql) on GitHub.
 
-### Jenkins 
+### Payara Micro 
 
-![image](images/jenkins.png)
+![image](images/payaramicro.png)
 
-<p>This project provides a starter kit for Jenkins projects hosted on Web PaaS.  The Jenkins `.war` file is downloaded during the build hook and not included in the repository.</p>
-<p>Jenkins is an open source automation server written in Java. Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery.</p>
-  
-#### Features
-- Java 11<br />  
-- Automatic TLS certificates<br />  
-- Jenkins downloaded on the fly during build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/jenkins) on GitHub.
-
-### Thorntail 
-
-![image](images/Thorntail.png)
-
-<p>This project provides a starter kit for Thorntail Eclipse MicroProfile projects hosted on Web PaaS.  It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
-<p>Thorntail offers an innovative approach to packaging and running Java EE applications by packaging them with just enough of the server runtime to "java -jar" your application. It's MicroProfile compatible, too.</p>
+<p>This project provides a starter kit for Payara Micro projects hosted on Web PaaS.  It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
+<p>Payara Micro is an Open Source, lightweight Java EE (Jakarta EE) microservices deployments.</p>
   
 #### Features
 - Java 11<br />  
 - Automatic TLS certificates<br />  
 - Maven-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/microprofile-thorntail) on GitHub.
+[View the repository](https://github.com/platformsh-templates/microprofile-payara) on GitHub.
 
-### Helidon 
+### Apache Tomcat 
 
-![image](images/helidon.png)
+![image](images/Tomcat.png)
 
-<p>This project provides a starter kit for Helidon Eclipse MicroProfile projects hosted on Web PaaS.  It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
-<p>Helidon is a collection of Java libraries for writing microservices that run on a fast web core powered by Netty.</p>
-<p>Helidon is designed to be simple to use, with tooling and examples to get you going quickly. Since Helidon is just a collection of libraries running on a fast Netty core, there is no extra overhead or bloat.</p>
+<p>This project provides a starter kit for Apache Tomcat hosted on Web PaaS.  Tomcat itself is downloaded on the fly in the build hook based on the provided `pom.xml` file.</p>
+<p>Apache Tomcat is an open-source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and WebSocket technologies.</p>
   
 #### Features
 - Java 11<br />  
 - Automatic TLS certificates<br />  
 - Maven-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/microprofile-helidon) on GitHub.
+[View the repository](https://github.com/platformsh-templates/tomcat) on GitHub.
 
 ### xwiki 
 
@@ -261,19 +202,19 @@ A number of project templates for major Java applications are available on GitHu
  
 [View the repository](https://github.com/platformsh-templates/xwiki) on GitHub.
 
-### Open Liberty 
+### Jenkins 
 
-![image](images/openliberty.png)
+![image](images/jenkins.png)
 
-<p>This project provides a starter kit for Open Liberty Eclipse MicroProfile projects hosted on Web PaaS.  It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
-<p>Open Liberty is a highly composable, fast to start, dynamic application server runtime environment.</p>
+<p>This project provides a starter kit for Jenkins projects hosted on Web PaaS.  The Jenkins `.war` file is downloaded during the build hook and not included in the repository.</p>
+<p>Jenkins is an open source automation server written in Java. Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery.</p>
   
 #### Features
 - Java 11<br />  
 - Automatic TLS certificates<br />  
-- Maven-based build<br />  
+- Jenkins downloaded on the fly during build<br />  
  
-[View the repository](https://github.com/platformsh-templates/microprofile-openliberty) on GitHub.
+[View the repository](https://github.com/platformsh-templates/jenkins) on GitHub.
 
 ### Apache TomEE 
 
@@ -289,17 +230,76 @@ A number of project templates for major Java applications are available on GitHu
  
 [View the repository](https://github.com/platformsh-templates/microprofile-tomee) on GitHub.
 
-### KumuluzEE 
+### Wildfly 
 
-![image](images/kumuluzee.png)
+![image](images/wildfly.png)
 
-<p>This project provides a starter kit for KumuluzEE Eclipse MicroProfile projects hosted on Web PaaS. It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
-<p>KumuluzEE is a lightweight framework for developing microservices using standard Java, Java EE / Jakarta EE technologies and migrating existing Java applications to microservices. KumuluzEE packages microservices as standalone JARs. KumuluzEE microservices are lightweight and optimized for size and start-up time.</p>
+<p>This project provides a starter kit for Wildfly Eclipse MicroProfile projects hosted on Web PaaS.  It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
+<p>WildFly is a flexible, lightweight, managed application runtime that helps you build amazing applications.</p>
   
 #### Features
 - Java 11<br />  
 - Automatic TLS certificates<br />  
 - Maven-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/microprofile-kumuluzee) on GitHub.
+[View the repository](https://github.com/platformsh-templates/microprofile-wildfly) on GitHub.
+
+### Thorntail 
+
+![image](images/Thorntail.png)
+
+<p>This project provides a starter kit for Thorntail Eclipse MicroProfile projects hosted on Web PaaS.  It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
+<p>Thorntail offers an innovative approach to packaging and running Java EE applications by packaging them with just enough of the server runtime to "java -jar" your application. It's MicroProfile compatible, too.</p>
+  
+#### Features
+- Java 11<br />  
+- Automatic TLS certificates<br />  
+- Maven-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/microprofile-thorntail) on GitHub.
+
+### Spring, Kotlin, Maven 
+
+![image](images/springkotlin.png)
+
+<p>This template demonstrates building a Spring MVC application in the Kotlin language. It uses Maven to build the application and deploy it to Web PaaS.</p>
+<p>>A sample Hello World application is provided as a starting point.  It includes an Oracle MySQL database, and the sample application shows how to make the database connection. The example code also demonstrates how to access the Web PaaS environment variables.</p>
+  
+#### Features
+- Java 11<br />  
+- MySQL 8.0<br />  
+- Automatic TLS certificates<br />  
+- Maven-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/spring-kotlin) on GitHub.
+
+### Spring MVC, Maven, MongoDB 
+
+![image](images/springgradle.png)
+
+<p>This template demonstrates building a Spring MVC application. It uses Maven to build the application and deploy it to Web PaaS.</p>
+<p>A sample Hello World application is provided as a starting point.  It includes a MongoDB database, and the sample application shows how to make the database connection. The example code also demonstrates how to access the Web PaaS environment variables using the Web PaaS Config Reader library.</p>
+  
+#### Features
+- Java 11<br />  
+- MongoDB 3.6<br />  
+- Automatic TLS certificates<br />  
+- Maven-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/spring-mvc-maven-mongodb) on GitHub.
+
+### Helidon 
+
+![image](images/helidon.png)
+
+<p>This project provides a starter kit for Helidon Eclipse MicroProfile projects hosted on Web PaaS.  It includes a minimalist application skeleton that is intended for you to use as a starting point and modify for your own needs, along with the Web PaaS Config Reader to simplify accessing Web PaaS environment variables.</p>
+<p>Helidon is a collection of Java libraries for writing microservices that run on a fast web core powered by Netty.</p>
+<p>Helidon is designed to be simple to use, with tooling and examples to get you going quickly. Since Helidon is just a collection of libraries running on a fast Netty core, there is no extra overhead or bloat.</p>
+  
+#### Features
+- Java 11<br />  
+- Automatic TLS certificates<br />  
+- Maven-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/microprofile-helidon) on GitHub.
 
