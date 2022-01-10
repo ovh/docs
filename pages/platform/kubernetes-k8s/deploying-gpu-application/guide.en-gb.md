@@ -1,5 +1,5 @@
 ---
-title: Deploying a GPU application on OVHcloud Managed Kubernetes
+title: Deploying a GPU application on OVHcloud Managed Kubernetes Service
 slug: deploying-gpu-application
 excerpt: 'Find out how to deploy a GPU application on OVHcloud Managed Kubernetes'
 section: Tutorials
@@ -134,7 +134,7 @@ Update Complete. ⎈Happy Helming!⎈
 Install the GPU Operator in the `gpu-operator` namespace:
 
 ```bash
-$ helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace --wait
+helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace --wait
 ```
 
 You should have a GPU operator installed and running:
