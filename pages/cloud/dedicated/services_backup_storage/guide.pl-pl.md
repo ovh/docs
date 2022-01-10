@@ -455,4 +455,4 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
