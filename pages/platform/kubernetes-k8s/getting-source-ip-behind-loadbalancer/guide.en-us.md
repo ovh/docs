@@ -35,7 +35,7 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 > [!warning]
 > When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your K8S application.
-> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#network)
+> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en/public-cloud/prices/#network)
 
 ## The problem
 
@@ -68,9 +68,7 @@ It creates the `namespace`, `serviceaccount`, `role` and all the other Kubernete
 
 <pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud/deploy.yaml
 namespace/ingress-nginx created
-kind: Service
 serviceaccount/ingress-nginx created
-# Please edit the object below. Lines beginning with a '#' will be ignored,
 configmap/ingress-nginx-controller created
 clusterrole.rbac.authorization.k8s.io/ingress-nginx created
 clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx created
@@ -167,7 +165,10 @@ ingress-nginx-controller   LoadBalancer   10.3.81.157   xxx.xxx.xxx.xxx   80:xxx
 
 Now you need to patch the Ingress controller to support the proxy protocol.
 
-#### 1. Get the list of the egress load balancer IPs
+> [!Warning]
+> Depends on your Kubernetes cluster is working with private network or not, the proxy protocol configuration differs. Follow the tutorial parts according to your setup.
+
+#### 1a. [PUBLIC NETWORK ONLY] Get the list of the egress load balancer IPs 
 
 ```bash
 kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
@@ -178,6 +179,12 @@ You should see something like this:
 <pre class="console"><code>$ kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
 aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32
 </code></pre>
+
+#### 1b. [PRIVATE NETWORK ONLY] Get the list of the egress load balancer IPs
+
+We will use this [10.0.0.0/20] CIDR notation later.
+
+### Patching methods
 
 We can update the NGINX Ingress Controller configuration with manifest files or with Helm. Please choose one way or the other and follow the corresponding paragraph.
 
@@ -199,13 +206,24 @@ And apply it in  your cluster:
 kubectl -n ingress-nginx patch service ingress-nginx-controller -p "$(cat patch-ingress-controller-service.yml)"
 ```
 
-Copy the next YAML snippet in a `patch-ingress-controller-configmap.yml` file and modify the `proxy-real-ip-cidr` parameter accordingly:
+Copy the next YAML snippet in a `patch-ingress-controller-configmap.yml` file and modify the `proxy-real-ip-cidr` parameter according to your cluster configuration:
+
+#### a. [PUBLIC NETWORK ONLY]
 
 ```yaml
 data:
   use-proxy-protocol: "true"
   real-ip-header: "proxy_protocol"
   proxy-real-ip-cidr: "aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32"
+```
+
+#### b. [PRIVATE NETWORK ONLY]
+
+```yaml
+data:
+  use-proxy-protocol: "true"
+  real-ip-header: "proxy_protocol"
+  proxy-real-ip-cidr: "10.0.0.0/20"
 ```
 
 And apply it in  your cluster:
@@ -223,7 +241,9 @@ configmap/ ingress-nginx-controller patched</code></pre>
 
 #### 3. Patching with Helm
 
-Copy the next YAML snippet in a `values.yaml` file and modify the `proxy-real-ip-cidr` parameter accordingly:
+Copy the next YAML snippet in a `values.yaml` file and modify the `proxy-real-ip-cidr` parameter according to your cluster configuration:
+
+#### a. [PUBLIC NETWORK ONLY]
 
 ```yaml
 controller:
@@ -235,6 +255,20 @@ controller:
     use-proxy-protocol: "true"
     real-ip-header: "proxy_protocol"
     proxy-real-ip-cidr: "aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32"
+```
+
+#### a. [PRIVATE NETWORK ONLY]
+
+```yaml
+controller:
+  service:
+    externalTrafficPolicy: "Local"
+    annotations:
+      service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol: "v2"
+  config:
+    use-proxy-protocol: "true"
+    real-ip-header: "proxy_protocol"
+    proxy-real-ip-cidr: "10.0.0.0/20"
 ```
 
 And upgrade your Helm release:
@@ -325,39 +359,48 @@ spec:
         app: echo
     spec:
       containers:
-        - name: echo
-          image: mendhak/http-https-echo
-          ports:
-            - containerPort: 80
-            - containerPort: 443
+      - name: echo
+        image: mendhak/http-https-echo
+        ports:
+        - containerPort: 80
+        - containerPort: 443
 
 ---
 
 apiVersion: v1
 kind: Service
-metadata:
+metadata:  
   name: echo-service
   namespace: echo
 spec:
   selector:
     app: echo
-  ports:
-    - name: http
-      port: 80
-      targetPort: 80
-      protocol: TCP
+  ports:  
+  - name: http
+    port: 80
+    targetPort: 80
+    protocol: TCP
 
 ---
 
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: echo-ingress
   namespace: echo
+  annotations:
+    kubernetes.io/ingress.class: nginx
 spec:
-  backend:
-    serviceName: echo-service
-    servicePort: 80
+  rules:
+  - http:
+      paths:
+        - path: "/"
+          pathType: Prefix
+          backend:
+            service:
+              name: echo-service
+              port:
+                number: 80
 ```
 
 And deploy it on your cluster:
