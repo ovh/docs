@@ -21,7 +21,7 @@ Vous pouvez créer une librairie de fichiers ISO à utiliser pour vos déploieme
 
 ## En pratique
 
-### Creation de la librairie
+### Création de la librairie
 
 Dans l'interface vSphere, allez dans la section `Stockage`{.action}.<br>
 Choisissez la banque de données qui abritera la librairie (préférez les espaces de stockage partagés aux stockage locaux pour éviter les problèmes d'accès).<br>
