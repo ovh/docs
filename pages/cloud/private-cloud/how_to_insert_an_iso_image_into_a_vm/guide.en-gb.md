@@ -1,31 +1,77 @@
 ---
-title: How to insert an ISO image into a VM
-excerpt: How do you insert an ISO image into a virtual machine?
-slug: how_to_insert_an_iso_image_into_a_vm
+title: How to connect an ISO image to a VM
+excerpt: How do you connect an ISO image to a virtual machine?
+slug: connect_iso_to_vm
 legacy_guide_number: g1438
 section: Getting started
 ---
 
+**Last Updated on 01/11/2022**
 
-## VMs and templates
-You can change this in VM and Templates under the Cloud section where your VMs are listed.
+## Objective
 
-![](images/img_1976.jpg){.thumbnail}
+You can set up an ISO library in your infrastructure to be used for OS and software deployment.
+
+**This guide will run you through the process**
+
+## Requirements
+
+- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Have a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+
+## Instructions
+
+### Library Creation
+
+In the vSphere interface menu, go to the `Storage`{.action} section.<br>
+Choose the Datastore you will be building the library in (prefer Shared Storage over Local to avoid file access issues).<br>
+In the `Files`{.action} tab, Click on `New Folder`{.action}.
+
+![FOLDER](images/en01newfolder.png){.thumbnail}
 
 
-## 
-Right click on the VM rules under rules, and go to "Hardware Configuration".
+After naming your folder (ISOs in our study case), select it and click `Upload Files`{.action}.
 
-![](images/img_1977.jpg){.thumbnail}
-
-![](images/img_1978.jpg){.thumbnail}
+![UPLOAD](images/en02upload.png){.thumbnail}
 
 
-## 
-Once you're in the Virtual DVD drive, click on "Existing ISO image" and then select the ISO you want
-to upload to the VM.
-The ISO can come from the OVH library or your own library.
-Don't forget to tick the "Share file instead of copying it" box, otherwise you will have to wait for the ISO to copy over to the host.
+Browse to the iso file(s) you wish to upload and click `Open`{.action}.
 
-![](images/img_1979.jpg){.thumbnail}
+![BROWSE](images/en03browse.png){.thumbnail}
 
+
+Your library is set. You can add more ISO images as you need and as storage space allows.
+
+![LIBRARY](images/en04library.png){.thumbnail}
+
+
+### Connect Image to VM
+
+In the vSphere interface menu, go to the `Hosts & Clusters`{.action} section.<br>
+Right click on the VM you need the ISO image attached to and click on `Edit Settings`{.action}.<br>
+
+![EDIT](images/en05edit.png){.thumbnail}
+
+
+Change the CD/DVD drive setting to Datastore ISO File.
+
+![ISO](images/en06dataiso.png){.thumbnail}
+
+
+In the browsing window that pops up, navigate to the library previously created and select the image you wish to use.
+<br>
+Click on `OK`{.action}.
+
+![SELECT](images/en07choose.png){.thumbnail}
+
+Back in the Edit Settings, make sure the Connect box is checked and click `OK`{.action}.
+
+![CONNECT](images/en08connect.png){.thumbnail}
+
+
+The ISO image is now connected to your VM and can be accessed as if it were a physical media.
+
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
