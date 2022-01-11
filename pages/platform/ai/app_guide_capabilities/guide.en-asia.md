@@ -122,11 +122,11 @@ API endpoints to manage your AI Apps can be found here:
 
 #### Command line interface (CLI)
 
-AI Apps is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](https://docs.ovh.com/gb/en/ai-training/install-client/){.external}.
+AI Apps is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](https://docs.ovh.com/asia/en/ai-training/install-client/){.external}.
 
 ## Going further
 
-Browse the full [AI Apps documentation](https://docs.ovh.com/gb/en/ai/){.external} to further understand the main concepts and get started.
+Browse the full [AI Apps documentation](https://docs.ovh.com/asia/en/ai/){.external} to further understand the main concepts and get started.
 
 ## We want your feedback!
 
