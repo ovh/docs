@@ -35,7 +35,7 @@ After naming your folder (ISOs in our study case), select it and click `Upload F
 ![UPLOAD](images/en02upload.png){.thumbnail}
 
 
-Browse to the iso file(s) you wish to upload and click `Open`{.action}.
+Browse to the ISO file(s) you wish to upload and click `Open`{.action}.
 
 ![BROWSE](images/en03browse.png){.thumbnail}
 
