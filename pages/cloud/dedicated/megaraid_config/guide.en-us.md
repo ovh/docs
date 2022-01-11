@@ -29,31 +29,31 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 
 ### Using the OVHcloud Control Panel
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, click on the `Bare Metal Cloud`{.action} menu and select your server.
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, click on the `Bare Metal Cloud`{.action} menu and then select your server by going to `Dedicated Servers`{.action} in the left-hand sidebar. 
 
-Next, on the `General Information`{.action} tab, click the `Reinstall`{.action} button to install a new operating system with your custom RAID 0 configuration.
+In the **General Information** tab, look for « System (OS) » and click on `...`{.action} then on `Install`{.action} button to install a new operating system with your custom RAID 0 configuration.
 
 Now select **Install from an OVHcloud template** and then click `Next`{.action}.
 
-![megaraid](images/server_installation_raid0_01.png){.thumbnail}
+![megaraid](images/server_installation_raid0_1.png){.thumbnail}
 
 Select the operating system you want to install and then click `Next`{.action}.
 
-Tick the boxes for **Customise the RAID hardware configuration** and **Customise the partition configuration**, then click `Next`{.action}.
+Tick the boxes for **Customise the hardware RAID configuration** and **Customise the partition configuration**, then click `Next`{.action}.
 
-![megaraid](images/server_installation_raid0_02.png){.thumbnail}
+![megaraid](images/server_installation_raid0_2.png){.thumbnail}
 
 Select raid0 from the RAID drop-down list and click `Next`{.action}.
 
-![megaraid](images/server_installation_raid0_03.png){.thumbnail}
+![megaraid](images/server_installation_raid0_3.png){.thumbnail}
 
 Configure the partitions as you see fit and then click `Next`{.action}.
 
-![megaraid](images/server_installation_raid0_04.png){.thumbnail}
+![megaraid](images/server_installation_raid0_4.png){.thumbnail}
 
 Finally, click `Confirm`{.action}.
 
-![megaraid](images/server_installation_raid0_05.png){.thumbnail}
+![megaraid](images/server_installation_raid0_5.png){.thumbnail}
 
 After your server has been installed, check the partition sizes by logging on to the server via SSH and running the following command:
 
@@ -63,25 +63,25 @@ df -h
 
 ### Using rescue mode
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, click on the `Bare Metal Cloud`{.action} menu and select your server.
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, click on the `Bare Metal Cloud`{.action} menu and then select your server by going to `Dedicated Servers`{.action} in the left-hand sidebar. 
 
-On the `General Information`{.action} tab, click the `Modify`{.action} button to change the boot system.
+In the **General Information** tab, look for « Boot » and click on `...`{.action} then on `Edit`{.action} button to change the boot system.
 
-![megaraid](images/rescue_mode_raid0_01_2020.png){.thumbnail}
+![megaraid](images/rescue_mode_raid0_1.png){.thumbnail}
 
-Next, select `Boot on rescue mode`{.action} then select `rescue64-pro`{.action} from the drop-down list.
+Next, select `Boot in rescue mode`{.action} then select `rescue64-pro`{.action} from the drop-down list.
 
-Now, type your email address in the `Get your updated username`{.action} field.
+In the field **Send new login details to the following email address:**, specify an alternative email address if you do not want the login credentials sent to your customer account’s primary address.
 
 ![megaraid](images/rescue_mode_raid0_02.png){.thumbnail}
 
 Click `Next`{.action} and then click `Confirm`{.action} on the following screen.
 
-![megaraid](images/rescue_mode_raid0_03.png){.thumbnail}
+![megaraid](images/rescue_mode_raid0_3.png){.thumbnail}
 
-Click the `Restart`{.action} button in the [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}.
+Once the change is completed, click on `...`{.action} next to “Status” in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode.
 
-![megaraid](images/server_installation_raid0_06_2020.png){.thumbnail}
+![megaraid](images/server_installation_raid0_6.png){.thumbnail}
 
 When your server reboots, log in to it via SSH using the rescue mode credentials that were emailed to you.
 
