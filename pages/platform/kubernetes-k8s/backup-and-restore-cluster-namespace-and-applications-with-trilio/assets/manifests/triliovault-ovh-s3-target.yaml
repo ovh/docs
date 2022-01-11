@@ -6,9 +6,9 @@ spec:
   type: ObjectStore
   vendor: Other
   objectStoreCredentials:
-    url: "https://<YOUR_OVH_OBJECT_STORAGE_BUCKET_ENDPOINT_URL_HERE>"
-    bucketName: "<YOUR_OVH_STORAGE_BUCKET_NAME_HERE>"
-    region: "<YOUR_OVH_OBJECT_STORAGE_BUCKET_REGION_HERE>"
+    url: "https://s3.bhs.cloud.ovh.net"
+    bucketName: "demo-ovh-s3-bucket"
+    region: "bhs"
     credentialSecret:
       name: trilio-ovh-s3-target-secret
       namespace: tvk

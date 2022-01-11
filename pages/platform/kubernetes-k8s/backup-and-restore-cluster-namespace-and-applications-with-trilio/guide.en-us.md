@@ -137,7 +137,7 @@ After finishing this tutorial, you should be able to:
 
 To complete this tutorial, you need the following:
 
-1. A [OVH S3 Object Storage Container/Bucket](https://docs.ovh.com/ca/en/storage/pcs/create-container/) and `access` keys. Save the `access` and `secret` keys in a safe place for later use.
+1. A [OVH S3 Object Storage Container/Bucket](https://docs.ovh.com/ca/en/storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel) and create a `S3 User` which will have permission to access the Object Storage Container.
 2. A [Git](https://git-scm.com/downloads) client, to clone the `OVH Docs` repository.
 3. [Helm](https://www.helms.sh), for managing `TrilioVault Operator` releases and upgrades.
 4. [Kubectl](https://kubernetes.io/docs/tasks/tools), for `Kubernetes` interaction.
@@ -379,6 +379,12 @@ In the next step, you will learn how to define the storage backend for `TrilioVa
 
 `TrilioVault` needs to know first where to store your backups. TrilioVault refers to the storage backend by using the `target` term, and it's managed via a special `CRD` named `Target`. The following target types are supported: `S3` and `NFS`. For `OVH Cloud` and the purpose of the `Tuturial`, it makes sense to rely on the `S3` storage type because it's `cheap` and `scalable`. To benefit from an enhanced level of protection you can create multiple target types (for both `S3` and `NFS`), so that your data is kept safe in multiple places, thus achieving backup redundancy.
 
+To create Target at the OVH Object Storage using S3 Swift API, use the [link](https://docs.ovh.com/ca/en/storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel). Create `S3 user` in the tab next to Object Storage Container. Now, from `Users and Roles` assign the `Administrator` priviledges to the S3 user.
+
+Next is to create an `Access Key` and `Secret Key` to access the `S3 Object Storage Container` using the [Getting Started with the Swift S3 API](https://docs.ovh.com/gb/en/storage/getting_started_with_the_swift_S3_API/) tutorial.
+Save the `Access key` and `Secret key` used in AWS CLI `~/.aws/credentails` file. It is required to create a target `secret` later.
+Take a note of the S3 endpoint URL `s3.endpoint_url` provided in the AWS CLI `~/.aws/config` file. It is required to create a `Target` later.
+
 Typical `Target` definition looks like below:
 
 ```yaml
@@ -389,12 +395,12 @@ metadata:
   namespace: tvk
 spec:
   type: ObjectStore
-  vendor: Other								# e.g. AWS for AWS S3 Storage
+  vendor: Other								# e.g. `AWS` for AWS S3 Storage and `Other` for OVH Obejct Storage
   enableBrowsing: true
   objectStoreCredentials:
     bucketName: <YOUR_OVH_OBJECT_STORAGE_BUCKET_NAME_HERE>
-    region: <YOUR_OVH_OBJECT_STORAGE_BUCKET_REGION_HERE>    		# e.g.: bhs5 for OVH Object Storage or 'us-est-1` etc for AWS S3
-    url: "https://<YOUR_OVH_OBJECT_STORAGE_BUCKET_ENDPOINT_HERE>"  	# e.g.: storage.bhs5.cloud.ovh.net for OVH
+    region: <YOUR_OVH_OBJECT_STORAGE_BUCKET_REGION_HERE>    		# e.g.: `bhs` region for OVH Object Storage or `us-est-1` etc for AWS S3
+    url: "https://<YOUR_OVH_OBJECT_STORAGE_BUCKET_ENDPOINT_HERE>"  	# e.g.: `https://s3.bhs.cloud.ovh.net` for S3 Object Storage Container in `bhs` region
     credentialSecret:
       name: trilio-ovh-s3-target-secret
       namespace: tvk
