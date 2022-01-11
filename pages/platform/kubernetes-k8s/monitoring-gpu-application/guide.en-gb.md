@@ -217,7 +217,7 @@ export GRAFANA_URL=$(kubectl get svc kube-prometheus-stack-1641827066-grafana -n
 echo Grafana URL: http://$GRAFANA_URL
 ```
 
-You should obtain the follwoing result:
+You should obtain the following result:
 
 <pre class="console"><code>$ export PROMETHEUS_URL=$(kubectl get svc kube-prometheus-stack-1641-prometheus -n prometheus -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
@@ -236,36 +236,133 @@ As you already deployed DCGM with NVIDIA GPU Operator, DCGM should already start
 
 ![Prometheus](images/prometheus.png)
 
+You can also go to the Grafana interface. Open your browser and point to `http://$GRAFANA_URL` value using the credentials bellow:
 
-TODO: xx
-
-grafana URL
-
-login: admin
-password: prom-operator
-
-(on a copié le `adminPassword` qq part au dessus dans ce tutoriel ..)
-
+- Login: `admin`
+- Password: `prom-operator` (by default)
 
 ![Grafana](images/grafana.png)
 
-TODO: xx
+![Grafana Home Page](images/grafana-home-page.png)
 
 ### DCGM Dashboard in Grafana
 
-To add a dashboard for DCGM, you can use a standard dashboard that NVIDIA has made available, which can also be customized.
+You have a running Prometheus and Grafana, no you need to add a dashboard for `DCGM`.
+To do that, you can use a standard dashboard that NVIDIA released, which can also be customized.
+
+To add the dashboard, in the Grafana sidebar, click on `+` button -> `Import`:
+
+![Grafana Import menu](images/grafana-import.png)
+
+Import the NVIDIA dashboard from https://grafana.com/grafana/dashboards/12239, click on `Load` button:
+
+![Grafana Import menu](images/grafana-import-dashboard.png)
+
+Then choose `Prometheus` as the data source in the drop down menu and click on `Import` button:
+
+![Grafana Import menu](images/grafana-import-dashboard-2.png)
+
+You should now see your new dashboard:
+
+![Grafana NVIDIA DCGM Exporter Dashboard](images/grafana-dcgm-exporter-dashboard.png)
+
+If you followed the [Deploying a GPU application on OVHcloud Managed Kubernetes](../deploying-gpu-application) tutorial, you should see metrics like in our example.
+
+You can click on `instance` drop down menu in order to visualize GPU metrics for another Node for example:
+
+![Grafana NVIDIA DCGM Exporter Dashboard other node](images/grafana-dcgm-exporter-dashboard-2.png)
+
+### Visualize metrics for running applications
+
+Now we have a monitoring working stack and a dashboard for visualize our data, it's time to run an application in order to retrieve GPU metrics and viualize interesting data.
+
+As a complex and interesting application using GPU, you can use the standard [DeepStream Intelligent Video Analytics Demo](https://catalog.ngc.nvidia.com/orgs/nvidia/helm-charts/video-analytics-demo) available on the NGC registry. 
+
+You can deploy the application through NVIDIA Helm chart:
+
+```bash
+helm fetch https://helm.ngc.nvidia.com/nvidia/charts/video-analytics-demo-0.1.4.tgz && \
+helm install video-analytics-demo-0.1.4.tgz --generate-name
+```
+
+You should have a result like this:
+
+<pre class="console"><code>$ helm fetch https://helm.ngc.nvidia.com/nvidia/charts/video-analytics-demo-0.1.4.tgz && \
+helm install video-analytics-demo-0.1.4.tgz --generate-name
+NAME: video-analytics-demo-0-1641911286
+LAST DEPLOYED: Tue Jan 11 15:28:09 2022
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+NOTES:
+1. Get the RTSP URL by running these commands:
+  export NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1641911286)
+  export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
+  echo rtsp://$NODE_IP:$NODE_PORT/ds-test
+
+2.Get the WebUI URL by running these commands:
+  export ANT_NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1641911286-webui)
+  export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
+  echo http://$NODE_IP:$ANT_NODE_PORT/WebRTCApp/play.html?name=videoanalytics
+  Disclaimer:
+  Note: Due to the output from DeepStream being real-time via RTSP, you may experience occasional hiccups in the video stream depending on network conditions.
+</code></pre>
+
+You can check if the application is running correctly:
+
+<pre class="console"><code>$ kubectl get pod -n default
+NAME                                                       READY   STATUS      RESTARTS   AGE
+cuda-vectoradd                                             0/1     Completed   0          18d
+dcgmproftester                                             0/1     Completed   0          18d
+gpu-demo                                                   1/1     Running     0          18d
+video-analytics-demo-0-1641911286-6dd579cd6-8rsl6          1/1     Running     0          2m49s
+video-analytics-demo-0-1641911286-webui-7fb477cbbf-jcz9p   1/1     Running     0          2m49s
+</code></pre>
+
+`video-analytics-demo-*` and `video-analytics-demo-*-webui-*` Pods are running.
+
+The demo can be viewed in the browser by pointing to the address following the following instructions:
+
+```bash
+export ANT_NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1641911286-webui)
+export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
+echo http://$NODE_IP:$ANT_NODE_PORT/WebRTCApp/play.html\?name\=videoanalytics
+http://51.83.111.178:31115/WebRTCApp/play.html?name=videoanalytics
+```
+
+Result:
+
+<pre class="console"><code>$ export ANT_NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1641911286-webui)
+
+$ export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
+
+$ echo Video URL: http://$NODE_IP:$ANT_NODE_PORT/WebRTCApp/play.html\?name\=videoanalytics\~
+Video URL: http://51.83.111.178:31115/WebRTCApp/play.html?name=videoanalytics~
+</code></pre>
+
+Open the application URL in your browser:
+
+![GPU Demo](images/gpu-demo.png)
+
+Click on the `play` button (the button with a triangle) to start the application:
+
+![GPU Demo Started](images/gpu-demo-started.png)
+
+Now you can check the metrics in Grafana and watch the evolution of the charts:
+
+![Grafana Demo GPU metrics](images/grafana-gpu-metrics.png)
+![Grafana Demo GPU metrics](images/grafana-gpu-metrics-2.png)
+![Grafana Demo GPU metrics](images/grafana-gpu-metrics-3.png)
+
+The screenshots are showing GPU utilization and memory allocation on the GPU as long as the application is running.
 
 
-TODO: ....
-
-
-importer l'existant, regarder si on a du traffic
-
-
-sinon générer du traffic d'une app installée dans letutoriel deploy et regarder les metris qui bougent sur grafana !
 
 TODO: et créer une alerte si on depasse un seuil ????
 
+TODO: supprimer les load balancer avant publication du tuto !!!
+
+TODO: informer maxime de la creation du tuto (et devrel)
 
 ## Go further
 
